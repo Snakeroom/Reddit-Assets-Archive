@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.81e6f82ff43f1d673f2b.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.55372195f84d26c91210.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, a, t) {
@@ -1665,4 +1665,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.81e6f82ff43f1d673f2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.55372195f84d26c91210.js.map

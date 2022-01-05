@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.c9153c3eca429b8b8b58.js
-// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.ae5d264fac4942542785.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -1474,7 +1474,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: p.ib(t)
+								subreddit: p.jb(t)
 							}
 						})
 					}
@@ -2245,7 +2245,7 @@
 					const s = Object(i.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
 						post: u.I(e, n.id),
-						subreddit: u.jb(e, s),
+						subreddit: u.kb(e, s),
 						...p(e, t)
 					}
 				},
@@ -2258,7 +2258,7 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: s.SUBREDDIT_HOVERCARD,
-					subreddit: u.kb(t, e),
+					subreddit: u.lb(t, e),
 					screen: u.ab(t)
 				}),
 				g = (e, t) => n => ({
@@ -2267,7 +2267,7 @@
 					action: o.c.VIEW,
 					noun: s.ITEM_POST,
 					post: u.I(n, t),
-					subreddit: u.kb(n, e),
+					subreddit: u.lb(n, e),
 					screen: u.ab(n)
 				}),
 				E = (e, t) => n => ({
@@ -2276,26 +2276,26 @@
 					action: o.c.CLICK,
 					noun: s.ITEM_POST,
 					post: u.I(n, t),
-					subreddit: u.kb(n, e),
+					subreddit: u.lb(n, e),
 					screen: u.ab(n)
 				}),
 				_ = e => t => ({
 					...h(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT
 				}),
 				j = e => t => ({
 					...h(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				C = e => t => ({
 					...h(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -2352,4 +2352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.c9153c3eca429b8b8b58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.ae5d264fac4942542785.js.map

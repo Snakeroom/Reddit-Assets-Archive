@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.463808f13098d48c9d38.js
-// Retrieved at 1/5/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.72e9a81a50cdb87f5b2c.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2071,7 +2071,7 @@
 							action: "click",
 							noun: e,
 							screen: Object(y.ab)(t),
-							subreddit: Object(y.ib)(t)
+							subreddit: Object(y.jb)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -4833,7 +4833,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: h.ib(t)
+								subreddit: h.jb(t)
 							}
 						})
 					}
@@ -7158,7 +7158,7 @@
 					const r = Object(a.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
 						post: u.I(e, n.id),
-						subreddit: u.jb(e, r),
+						subreddit: u.kb(e, r),
 						...h(e, t)
 					}
 				},
@@ -7171,7 +7171,7 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: r.SUBREDDIT_HOVERCARD,
-					subreddit: u.kb(t, e),
+					subreddit: u.lb(t, e),
 					screen: u.ab(t)
 				}),
 				_ = (e, t) => n => ({
@@ -7180,7 +7180,7 @@
 					action: o.c.VIEW,
 					noun: r.ITEM_POST,
 					post: u.I(n, t),
-					subreddit: u.kb(n, e),
+					subreddit: u.lb(n, e),
 					screen: u.ab(n)
 				}),
 				x = (e, t) => n => ({
@@ -7189,26 +7189,26 @@
 					action: o.c.CLICK,
 					noun: r.ITEM_POST,
 					post: u.I(n, t),
-					subreddit: u.kb(n, e),
+					subreddit: u.lb(n, e),
 					screen: u.ab(n)
 				}),
 				y = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT
 				}),
 				v = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				w = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -7237,7 +7237,7 @@
 					source: s.COMMUNITY_WIDGETS,
 					action: o.c.CLICK,
 					noun: r.SEE_MORE,
-					widget: Object(i.vb)(n, {
+					widget: Object(i.wb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -7248,7 +7248,7 @@
 					action: o.c.CLICK,
 					noun: r.REREDDIT_PROMO,
 					post: i.I(n, e),
-					subreddit: i.ib(n),
+					subreddit: i.jb(n),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -7925,4 +7925,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.463808f13098d48c9d38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.72e9a81a50cdb87f5b2c.js.map

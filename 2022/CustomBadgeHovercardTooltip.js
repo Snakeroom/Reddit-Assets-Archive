@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.4cf0027ba9373a46c499.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.a9e96e1d2d86dcd1e706.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -105,7 +105,7 @@
 						noun: "custom_badges_hover_card",
 						correlationId: this.correlationId,
 						...E.o(e),
-						subreddit: E.ib(e)
+						subreddit: E.jb(e)
 					}))
 				}
 				onOpenUploadDialog() {
@@ -150,7 +150,7 @@
 								noun: "custom_badge_hover_open_learn_more",
 								correlationId: this.correlationId,
 								...E.o(e),
-								subreddit: E.ib(e)
+								subreddit: E.jb(e)
 							}))
 						}
 					}, s.a.createElement(C.a, {
@@ -675,7 +675,7 @@
 			})), r.d(t, "p", (function() {
 				return N
 			})), r.d(t, "k", (function() {
-				return j
+				return w
 			})), r.d(t, "r", (function() {
 				return k
 			})), r.d(t, "y", (function() {
@@ -851,7 +851,7 @@
 			! function(e) {
 				e[e.Fetched = 0] = "Fetched", e[e.Fetching = 1] = "Fetching", e[e.NotFetched = 2] = "NotFetched"
 			}(D || (D = {}));
-			const w = {
+			const j = {
 					prices: {},
 					member: "Supporter",
 					memberPlural: "Supporters",
@@ -860,11 +860,11 @@
 					membership: "Membership",
 					membershipAlt: "Supporter Membership"
 				},
-				j = (e, t) => Object.values(e.products.models).filter(e => e.type === a.a.Membership && t && e.subredditId === t),
+				w = (e, t) => Object.values(e.products.models).filter(e => e.type === a.a.Membership && t && e.subredditId === t),
 				B = (e, t) => {
 					if (!t) return {};
-					const r = w.prices;
-					j(e, t).forEach(e => {
+					const r = j.prices;
+					w(e, t).forEach(e => {
 						e.price && e.currency && (r[e.currency] = e.price)
 					});
 					const n = h(e, t);
@@ -872,15 +872,15 @@
 				},
 				k = (e, t) => {
 					var r, n, s, o;
-					const c = (null === (o = null === (s = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || w;
+					const c = (null === (o = null === (s = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || j;
 					return {
 						prices: B(e, t),
-						member: c.member || w.member,
-						memberPlural: c.memberPlural || w.memberPlural,
-						memberAlt: c.memberAlt || w.memberAlt,
-						memberAltPlural: c.memberAltPlural || w.memberAltPlural,
-						membership: c.membership || w.membership,
-						membershipAlt: c.membershipAlt || w.membershipAlt
+						member: c.member || j.member,
+						memberPlural: c.memberPlural || j.memberPlural,
+						memberAlt: c.memberAlt || j.memberAlt,
+						memberAltPlural: c.memberAltPlural || j.memberAltPlural,
+						membership: c.membership || j.membership,
+						membershipAlt: c.membershipAlt || j.membershipAlt
 					}
 				},
 				F = e => {
@@ -939,4 +939,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.4cf0027ba9373a46c499.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.a9e96e1d2d86dcd1e706.js.map

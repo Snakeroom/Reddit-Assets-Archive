@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatorStats.f501c2320a50e602525a.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatorStats.d2273cf4081a037d0dfd.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatorStats"], {
 		"./src/reddit/components/CreatorStats/Stats.tsx": function(t, e, a) {
@@ -326,9 +326,9 @@
 						action: N.c.VIEW,
 						noun: "aggregate_stats",
 						source: "creator_stats",
-						subreddit: Object(k.ib)(e),
+						subreddit: Object(k.jb)(e),
 						post: Object(k.I)(e, t),
-						userSubreddit: Object(k.rb)(e)
+						userSubreddit: Object(k.sb)(e)
 					}))(t.post.id))
 				}, [e, t.post.id, d]), n.a.createElement("div", {
 					className: x.a.container
@@ -404,8 +404,8 @@
 					noun: t,
 					source: "creator_stats",
 					post: Object(k.I)(a, e),
-					subreddit: Object(k.ib)(a),
-					userSubreddit: Object(k.rb)(a)
+					subreddit: Object(k.jb)(a),
+					userSubreddit: Object(k.sb)(a)
 				}))(a, t.post.id))))), d === c.b.Available && l && n.a.createElement(T.a, {
 					isUserOp: p,
 					upvoteRatio: t.post.upvoteRatio || void 0,
@@ -419,4 +419,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.f501c2320a50e602525a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.d2273cf4081a037d0dfd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f4d30ea9afdd6a7ca14f.js
-// Retrieved at 1/5/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.703c8c86758b57bd7558.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -9030,7 +9030,7 @@
 					source: "meta",
 					action: e,
 					noun: "feed_claim_points_banner",
-					subreddit: Object(s.ib)(t)
+					subreddit: Object(s.jb)(t)
 				}),
 				r = () => a("view"),
 				o = () => a("tap"),
@@ -9073,7 +9073,7 @@
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(s.jb)(t, e)
+					subreddit: Object(s.kb)(t, e)
 				})
 		},
 		"./src/reddit/helpers/trackers/followers.ts": function(e, t, n) {
@@ -13737,4 +13737,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f4d30ea9afdd6a7ca14f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.703c8c86758b57bd7558.js.map

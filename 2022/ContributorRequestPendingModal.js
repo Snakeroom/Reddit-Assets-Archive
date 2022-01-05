@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.8ca16c68a2641441338e.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.70fa746ac24f5353981f.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestPendingModal", "ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/PendingModal/index.m.less": function(e, t, n) {
@@ -388,14 +388,14 @@
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: s.ib(t)
+					subreddit: s.jb(t)
 				}),
 				r = e => t => ({
 					...s.o(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: s.ib(t)
+					subreddit: s.jb(t)
 				})
 		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, n) {
@@ -413,4 +413,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.8ca16c68a2641441338e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.70fa746ac24f5353981f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.cad4070cdaed8212b770.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.2f3e9491c1c81ed32251.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
@@ -7,7 +7,7 @@
 			r.d(t, "b", (function() {
 				return p
 			})), r.d(t, "c", (function() {
-				return j
+				return g
 			})), r.d(t, "a", (function() {
 				return x
 			}));
@@ -16,8 +16,8 @@
 				o = r("./src/lib/makeActionCreator/index.ts"),
 				s = r("./src/lib/sentry/index.ts"),
 				c = r("./src/reddit/endpoints/gold/productCatalog/index.ts"),
-				i = r("./src/reddit/selectors/user.ts"),
-				d = r("./src/reddit/actions/toaster.ts"),
+				d = r("./src/reddit/selectors/user.ts"),
+				i = r("./src/reddit/actions/toaster.ts"),
 				l = r("./src/reddit/models/Toast/index.ts"),
 				u = r("./src/reddit/actions/post.ts"),
 				m = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
@@ -28,8 +28,8 @@
 					apiContext: o
 				}) => {
 					t(b());
-					const d = r(),
-						l = Object(i.K)(d);
+					const i = r(),
+						l = Object(d.K)(i);
 					try {
 						const r = !l,
 							a = await Object(c.b)({
@@ -47,44 +47,44 @@
 						});
 						t(f(e))
 					}
-				}, h = Object(o.a)(m.m), O = Object(o.a)(m.n), g = Object(o.a)(m.l), j = (e, t) => async (r, o, {
-					apiContext: i
+				}, h = Object(o.a)(m.m), O = Object(o.a)(m.n), j = Object(o.a)(m.l), g = (e, t) => async (r, o, {
+					apiContext: d
 				}) => {
 					r(h());
 					try {
 						const a = await Object(c.c)({
 							awardId: e,
-							context: i(),
+							context: d(),
 							correlationId: t
 						});
 						if (!a.ok) throw new Error(a.error && a.error.type || "Unknown error");
 						const n = a.body;
 						if (!n.coinPackages || !n.coinPackages.length) throw new Error(`Recommended coin packages returned empty for award id ${e}`);
 						r(O(n))
-					} catch (d) {
-						Object(n.b)() || console.error(d), s.c.captureException(d);
+					} catch (i) {
+						Object(n.b)() || console.error(i), s.c.captureException(i);
 						const e = a.fbt._("There was an error fetching purchasable coins package", null, {
 							hk: "47Fxzt"
 						});
-						r(g(e))
+						r(j(e))
 					}
 				}, _ = Object(o.a)(m.h), x = () => async (e, t, {
 					gqlContext: r
 				}) => {
-					var o, i;
+					var o, d;
 					try {
 						const t = await Object(c.a)(r());
 						if (t.ok) {
 							const r = t.body.data.claimAwardOffer;
 							if (null === (o = r.errors) || void 0 === o ? void 0 : o.length) throw new Error(r.errors.map(e => e.message).join(" | "));
-							if (!(null === (i = r.awards) || void 0 === i ? void 0 : i.length)) throw new Error("Got empty award list on free award offer claim");
+							if (!(null === (d = r.awards) || void 0 === d ? void 0 : d.length)) throw new Error("Got empty award list on free award offer claim");
 							if (!r.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(_({
 								awards: r.awards
 							})), e(Object(u.B)())
 						}
 					} catch (m) {
-						Object(n.b)() || console.error(m), e(Object(d.f)({
+						Object(n.b)() || console.error(m), e(Object(i.f)({
 							kind: l.b.Error,
 							text: a.fbt._("Sorry, something went wrong. Try Claiming again.", null, {
 								hk: "FWjud"
@@ -116,8 +116,8 @@
 				o = r("./node_modules/react/index.js"),
 				s = r.n(o),
 				c = r("./node_modules/react-redux/es/index.js"),
-				i = r("./src/higherOrderComponents/asModal/index.tsx"),
-				d = r("./src/lib/timeUntil/index.ts"),
+				d = r("./src/higherOrderComponents/asModal/index.tsx"),
+				i = r("./src/lib/timeUntil/index.ts"),
 				l = r("./src/reddit/helpers/trackers/freeAwardOffer.ts"),
 				u = r("./src/reddit/hooks/useTracking.ts"),
 				m = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
@@ -127,21 +127,21 @@
 				p = r("./src/reddit/components/LottieAnimation/util.ts"),
 				h = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				O = r("./src/reddit/components/Econ/ClaimFreeAwardModal/index.m.less"),
-				g = r.n(O);
+				j = r.n(O);
 			const {
-				fbt: j
+				fbt: g
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), _ = "https://www.redditstatic.com/gold/awards/animations/free_award", x = (e, t) => {
 				var r;
 				return (null === (r = null == e ? void 0 : e.assets) || void 0 === r ? void 0 : r.length) && (null == t ? void 0 : t.icon) && (e.assets[0].u = t.icon.url, e.assets[0].p = ""), e
 			};
-			t.default = Object(i.a)((function() {
+			t.default = Object(d.a)((function() {
 				const e = Object(u.a)(),
 					t = Object(c.d)(),
 					r = Object(c.e)(e => Object(w.b)(e)),
-					[a, i] = Object(o.useState)(null);
+					[a, d] = Object(o.useState)(null);
 				Object(o.useEffect)(() => {
 					Object(p.a)(`${_}/opening.json`).then(e => {
-						i(e)
+						d(e)
 					}), e(Object(l.b)())
 				}, []);
 				const O = () => {
@@ -149,41 +149,41 @@
 				};
 				let k = !1;
 				return s.a.createElement(h.e, {
-					className: g.a.body
+					className: j.a.body
 				}, s.a.createElement("button", {
 					onClick: O,
-					className: g.a.closeButton
+					className: j.a.closeButton
 				}, s.a.createElement(h.b, null)), !r && s.a.createElement(s.a.Fragment, null, s.a.createElement(f.a, {
 					assetUrl: `${_}/flying.json`,
 					loop: !0,
-					className: g.a.flyingAnimation,
+					className: j.a.flyingAnimation,
 					onClick: () => {
 						k || (e(Object(l.a)("redeem")), t(Object(m.a)()), k = !0, setTimeout(() => {
 							k = !1
 						}, 1e4))
 					}
 				}), s.a.createElement("p", {
-					className: g.a.description
-				}, j._("Open it! Open it! (Just click, it’s easy)", null, {
+					className: j.a.description
+				}, g._("Open it! Open it! (Just click, it’s easy)", null, {
 					hk: "2RWqvN"
 				}))), r && a && s.a.createElement(s.a.Fragment, null, s.a.createElement(f.a, {
 					assetData: x(a, r),
-					className: g.a.openingAnimation,
+					className: j.a.openingAnimation,
 					onClick: n.a
 				}), s.a.createElement("h2", {
-					className: g.a.awardTitle
-				}, j._("It's the {awardName} Award!", [j._param("awardName", r.name)], {
+					className: j.a.awardTitle
+				}, g._("It's the {awardName} Award!", [g._param("awardName", r.name)], {
 					hk: "41wWKZ"
 				})), r.endsAt && s.a.createElement("p", {
-					className: g.a.awardDescription
-				}, j._("Give it away in the next {awardEndDate} before it disappears.", [j._param("awardEndDate", Object(d.a)(new Date(r.endsAt)))], {
+					className: j.a.awardDescription
+				}, g._("Give it away in the next {awardEndDate} before it disappears.", [g._param("awardEndDate", Object(i.a)(new Date(r.endsAt)))], {
 					hk: "gmYKH"
 				})), s.a.createElement("div", {
-					className: g.a.awardMore
+					className: j.a.awardMore
 				}, s.a.createElement(h.r, {
-					className: g.a.awardButton,
+					className: j.a.awardButton,
 					onClick: O
-				}, j._("Go Forth and Award", null, {
+				}, g._("Go Forth and Award", null, {
 					hk: "1OuNXO"
 				})))))
 			}))
@@ -191,9 +191,9 @@
 		"./src/reddit/helpers/trackers/freeAwardOffer.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return i
-			})), r.d(t, "a", (function() {
 				return d
+			})), r.d(t, "a", (function() {
+				return i
 			})), r.d(t, "c", (function() {
 				return l
 			}));
@@ -207,15 +207,15 @@
 					}),
 					correlationId: Object(a.e)(a.a.GoldPayment, !1),
 					profile: s.R(e),
-					subreddit: s.ib(e)
+					subreddit: s.jb(e)
 				}),
-				i = () => e => ({
+				d = () => e => ({
 					source: "free_award_offer",
 					action: "view",
 					noun: "page",
 					...c(e)
 				}),
-				d = e => t => ({
+				i = e => t => ({
 					source: "free_award_offer",
 					action: "click",
 					noun: e,
@@ -230,4 +230,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.cad4070cdaed8212b770.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.2f3e9491c1c81ed32251.js.map

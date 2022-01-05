@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.1530b96e855648e67f7a.js
-// Retrieved at 1/5/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.71e6d67319233771364a.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3913,7 +3913,7 @@
 					source: o.COMMUNITY_WIDGETS,
 					action: r.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(i.vb)(n, {
+					widget: Object(i.wb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -3924,7 +3924,7 @@
 					action: r.c.CLICK,
 					noun: s.REREDDIT_PROMO,
 					post: i.I(n, e),
-					subreddit: i.ib(n),
+					subreddit: i.jb(n),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -4399,4 +4399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.1530b96e855648e67f7a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.71e6d67319233771364a.js.map

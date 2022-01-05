@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.144b6ed90e155c6a81f2.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.85a0e5384ad1bde25dbf.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -124,8 +124,8 @@
 				S || (S = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
 			var O = s("./node_modules/lodash/debounce.js"),
-				j = s.n(O),
-				k = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				k = s.n(O),
+				j = s("./src/reddit/icons/svgs/Search/index.tsx"),
 				I = s("./src/reddit/selectors/user.ts"),
 				B = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
 				N = s.n(B);
@@ -138,7 +138,7 @@
 						this.setState({
 							query: e.target.value
 						}, this.dispatchOnChange)
-					}, this.dispatchOnChange = j()(() => {
+					}, this.dispatchOnChange = k()(() => {
 						this.props.onChange(this.state.query)
 					}, R), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
@@ -160,7 +160,7 @@
 					}, d.a.createElement("button", {
 						className: N.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, d.a.createElement(k.a, {
+					}, d.a.createElement(j.a, {
 						className: N.a.searchIcon
 					})), d.a.createElement("input", {
 						ref: e => this.elementRef = e,
@@ -211,7 +211,7 @@
 							action: "change",
 							noun: "gif_tooltip_search",
 							correlationId: this.props.correlationId,
-							subreddit: this.props.subreddit.id ? v.jb(t, this.props.subreddit.id) : void 0,
+							subreddit: this.props.subreddit.id ? v.kb(t, this.props.subreddit.id) : void 0,
 							post: v.k(t),
 							search: {
 								query: e
@@ -238,7 +238,7 @@
 								action: "select",
 								noun: "gif_tooltip_result",
 								correlationId: this.props.correlationId,
-								subreddit: this.props.subreddit.id ? v.jb(e, this.props.subreddit.id) : void 0,
+								subreddit: this.props.subreddit.id ? v.kb(e, this.props.subreddit.id) : void 0,
 								post: v.k(e),
 								actionInfo: {
 									...t.actionInfo,
@@ -506,4 +506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.144b6ed90e155c6a81f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.85a0e5384ad1bde25dbf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.a67519ce94a8da421b10.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.29efe53e23a20d8861e6.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CommunitySettings-ModPnSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -660,4 +660,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.a67519ce94a8da421b10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.29efe53e23a20d8861e6.js.map

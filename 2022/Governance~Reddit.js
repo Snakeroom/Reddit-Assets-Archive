@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.b827ca52796d92fafe7c.js
-// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.f6f667b795856bf49f81.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2843,7 +2843,7 @@
 						source: O.b.Chat,
 						action: O.a.OptOut,
 						noun: "down_to_chat_subreddit",
-						subreddit: Object(y.ib)(e),
+						subreddit: Object(y.jb)(e),
 						setting: {
 							oldValue: t,
 							value: r
@@ -3077,7 +3077,7 @@
 				...h.o(e),
 				screen: h.ab(e),
 				profile: h.R(e),
-				subreddit: h.ib(e)
+				subreddit: h.jb(e)
 			});
 			var g = r("./src/reddit/helpers/trackers/postComposer.ts"),
 				S = r("./src/reddit/models/Gold/Powerups/index.ts"),
@@ -6345,7 +6345,7 @@
 				const {
 					nsfwSessionSetting: A,
 					refreshNsfwSessionSettingExpiryTime: C
-				} = Object(m.a)(), R = Object(a.e)(E.eb), N = e => e.subredditOrProfileRestrictedName ? `${e.subredditOrProfileRestrictedName} ${e.searchQuery}` : e.searchQuery, k = Object(O.a)({
+				} = Object(m.c)(), R = Object(a.e)(E.eb), N = e => e.subredditOrProfileRestrictedName ? `${e.subredditOrProfileRestrictedName} ${e.searchQuery}` : e.searchQuery, k = Object(O.a)({
 					includeNsfwResults: R && A,
 					multireddit: null,
 					searchItem: c,
@@ -6767,44 +6767,6 @@
 					onCloseDropdown: I
 				}))
 			}
-		},
-		"./src/reddit/components/SearchNSFWToggle/hooks.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return d
-			}));
-			var s = r("./src/lib/constants/index.ts"),
-				n = r("./src/reddit/hooks/useLocalStorage.ts");
-			const a = 30 * s.kb,
-				c = () => Date.now() + a,
-				o = () => ({
-					allowNsfwSearchResults: !1,
-					expires: c()
-				}),
-				d = () => {
-					const [e, t] = Object(n.a)("allow-nsfw-search-results", o());
-					return {
-						get nsfwSessionSetting() {
-							if (e.expires < Date.now()) {
-								const e = o();
-								return t(e), e.allowNsfwSearchResults
-							}
-							return e.allowNsfwSearchResults
-						},
-						refreshNsfwSessionSettingExpiryTime: () => {
-							t({
-								allowNsfwSearchResults: e.allowNsfwSearchResults,
-								expires: c()
-							})
-						},
-						setNsfwSessionSetting: e => {
-							t({
-								allowNsfwSearchResults: e,
-								expires: c()
-							})
-						}
-					}
-				}
 		},
 		"./src/reddit/components/SubredditForkingCTA/index.tsx": function(e, t, r) {
 			"use strict";
@@ -8349,7 +8311,7 @@
 					profile: n.R(e),
 					post: n.I(e, t),
 					media: n.B(e, t),
-					subreddit: n.ib(e),
+					subreddit: n.jb(e),
 					comment: n.j(e, t)
 				}),
 				c = ({
@@ -8363,20 +8325,20 @@
 					profile: n.R(e),
 					post: n.I(e, t),
 					media: n.B(e, t),
-					subreddit: n.ib(e),
+					subreddit: n.jb(e),
 					comment: n.j(e, t)
 				}),
 				o = e => t => ({
 					source: "online_presence",
 					action: "view",
 					noun: "user",
-					user: n.pb(t),
-					subreddit: n.ib(t),
+					user: n.qb(t),
+					subreddit: n.jb(t),
 					post: n.I(t, e),
 					actionInfo: n.d(t),
 					app: n.h(t),
 					referrer: n.X(t),
-					session: n.db(t)
+					session: n.eb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/commentList.ts": function(e, t, r) {
@@ -8393,7 +8355,7 @@
 					noun: "bottom",
 					...n.o(e),
 					listing: n.z(e, t),
-					subreddit: n.ib(e)
+					subreddit: n.jb(e)
 				})
 			}
 		},
@@ -8642,7 +8604,7 @@
 					return e => ({
 						..._(e, s),
 						actionInfo: B(e, 0, r),
-						subreddit: p.jb(e, t)
+						subreddit: p.kb(e, t)
 					})
 				},
 				V = (e, t, r) => {
@@ -8657,7 +8619,7 @@
 					return e => ({
 						...O(e, n),
 						actionInfo: B(e, 0, r),
-						subreddit: p.jb(e, t) || null,
+						subreddit: p.kb(e, t) || null,
 						source: y,
 						action: c.c.VIEW,
 						noun: s.ITEM_SUBREDDIT
@@ -8679,7 +8641,7 @@
 					return e => ({
 						...O(e, a),
 						actionInfo: B(e, 0, n),
-						subreddit: p.jb(e, r) || null,
+						subreddit: p.kb(e, r) || null,
 						post: p.I(e, t) || null,
 						source: y,
 						action: c.c.CLICK,
@@ -8691,7 +8653,7 @@
 					return e => ({
 						...O(e, n),
 						actionInfo: B(e, 0, r),
-						subreddit: p.jb(e, t) || null,
+						subreddit: p.kb(e, t) || null,
 						source: y,
 						action: c.c.CLICK,
 						noun: s.ITEM_SUBREDDIT
@@ -8702,7 +8664,7 @@
 					return e => ({
 						...O(e, a),
 						actionInfo: B(e, 0, r),
-						subreddit: p.jb(e, t) || null,
+						subreddit: p.kb(e, t) || null,
 						post: n ? p.I(e, n) : null,
 						source: y,
 						action: c.c.CLICK,
@@ -8714,7 +8676,7 @@
 					return e => ({
 						...O(e, a),
 						actionInfo: B(e, 0, r),
-						subreddit: p.jb(e, t) || null,
+						subreddit: p.kb(e, t) || null,
 						post: n ? p.I(e, n) : null,
 						source: y,
 						action: c.c.CLICK,
@@ -8726,7 +8688,7 @@
 					return e => ({
 						...O(e, n),
 						actionInfo: B(e, 0, r),
-						subreddit: p.jb(e, t) || null,
+						subreddit: p.kb(e, t) || null,
 						source: y,
 						action: c.c.CLICK,
 						noun: s.ITEM_SUBREDDIT_HIDE
@@ -8737,7 +8699,7 @@
 					return e => ({
 						...O(e, n),
 						actionInfo: B(e, 0, r),
-						subreddit: p.jb(e, t) || null,
+						subreddit: p.kb(e, t) || null,
 						source: y,
 						action: c.c.CLICK,
 						noun: s.HEADER_SUBREDDIT
@@ -8815,8 +8777,8 @@
 			const a = e => ({
 					...n.o(e),
 					screen: n.ab(e),
-					subreddit: n.ib(e),
-					userSubreddit: n.rb(e)
+					subreddit: n.jb(e),
+					userSubreddit: n.sb(e)
 				}),
 				c = e => ({
 					id: e.id,
@@ -9146,47 +9108,6 @@
 					experimentName: e,
 					experimentEligibilitySelector: t
 				}))
-			}
-		},
-		"./src/reddit/hooks/useLocalStorage.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return o
-			}));
-			var s = r("./node_modules/react/index.js"),
-				n = r("./src/reddit/helpers/localStorage/index.ts");
-			const a = {},
-				c = (e, t, r) => (a[e] || (a[e] = {
-					callbacks: [],
-					value: r
-				}), a[e].callbacks.push(t), {
-					deregister: () => {
-						const {
-							callbacks: r
-						} = a[e], s = r.indexOf(t);
-						s > -1 && r.splice(s, 1)
-					},
-					emit: r => {
-						a[e].value !== r && (a[e].value = r, a[e].callbacks.forEach(e => {
-							e !== t && e(r)
-						}))
-					}
-				});
-
-			function o(e, t) {
-				const r = Object(s.useRef)(null);
-				let a;
-				a = Object(n.B)(e);
-				const [o, d] = Object(s.useState)(null != a ? a : t);
-				return Object(s.useEffect)(() => (r.current = c(e, d, t), () => {
-					var e;
-					return null === (e = r.current) || void 0 === e ? void 0 : e.deregister()
-				}), [e, t]), Object(s.useEffect)(() => {
-					var e;
-					null === (e = r.current) || void 0 === e || e.emit(o)
-				}, [o]), [o, function(t) {
-					Object(n.Db)(e, t), d(t)
-				}]
 			}
 		},
 		"./src/reddit/hooks/useTheme.ts": function(e, t, r) {
@@ -26951,4 +26872,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b827ca52796d92fafe7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.f6f667b795856bf49f81.js.map

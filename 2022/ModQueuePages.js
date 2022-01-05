@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.4d676827f763af706780.js
-// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.f7a0673ec6fb51e35a08.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3810,7 +3810,7 @@
 						source: "post_flair_picker",
 						action: "click",
 						noun: e,
-						subreddit: Object(_.jb)(t, this.props.subredditId)
+						subreddit: Object(_.kb)(t, this.props.subredditId)
 					}));
 					const t = Object(C.c)(e.flairs);
 					this.state = {
@@ -4677,7 +4677,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: h.ib(t)
+								subreddit: h.jb(t)
 							}
 						})
 					}
@@ -5517,7 +5517,7 @@
 								action: "click",
 								noun: s,
 								screen: Object(x.ab)(e),
-								subreddit: Object(x.ib)(e)
+								subreddit: Object(x.jb)(e)
 							})))
 						})(s.layout),
 						i = () => e.toggleTooltip(d),
@@ -5909,7 +5909,7 @@
 					const s = Object(i.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
 						post: m.I(e, n.id),
-						subreddit: m.jb(e, s),
+						subreddit: m.kb(e, s),
 						...h(e, t)
 					}
 				},
@@ -5922,7 +5922,7 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: s.SUBREDDIT_HOVERCARD,
-					subreddit: m.kb(t, e),
+					subreddit: m.lb(t, e),
 					screen: m.ab(t)
 				}),
 				g = (e, t) => n => ({
@@ -5931,7 +5931,7 @@
 					action: o.c.VIEW,
 					noun: s.ITEM_POST,
 					post: m.I(n, t),
-					subreddit: m.kb(n, e),
+					subreddit: m.lb(n, e),
 					screen: m.ab(n)
 				}),
 				v = (e, t) => n => ({
@@ -5940,26 +5940,26 @@
 					action: o.c.CLICK,
 					noun: s.ITEM_POST,
 					post: m.I(n, t),
-					subreddit: m.kb(n, e),
+					subreddit: m.lb(n, e),
 					screen: m.ab(n)
 				}),
 				E = e => t => ({
 					...p(t),
-					subreddit: m.jb(t, e) || null,
+					subreddit: m.kb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT
 				}),
 				_ = e => t => ({
 					...p(t),
-					subreddit: m.jb(t, e) || null,
+					subreddit: m.kb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				C = e => t => ({
 					...p(t),
-					subreddit: m.jb(t, e) || null,
+					subreddit: m.kb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -5988,7 +5988,7 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: o.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(a.vb)(n, {
+					widget: Object(a.wb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -5999,7 +5999,7 @@
 					action: o.c.CLICK,
 					noun: s.REREDDIT_PROMO,
 					post: a.I(n, e),
-					subreddit: a.ib(n),
+					subreddit: a.jb(n),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -6763,4 +6763,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.4d676827f763af706780.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f7a0673ec6fb51e35a08.js.map

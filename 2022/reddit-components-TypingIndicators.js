@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.3f7030022144523b125a.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.3debc38b2cf5b38d6bdb.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TypingIndicators", "ReadingIndicator"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, s, t) {
@@ -282,7 +282,7 @@
 					reason: s.toString()
 				}),
 				post: i.I(t, e),
-				subreddit: i.ib(t)
+				subreddit: i.jb(t)
 			}))();
 			var m = t("./src/reddit/hooks/useClassNameOnMount.ts"),
 				b = t("./src/reddit/hooks/useTracking.ts"),
@@ -429,4 +429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.3f7030022144523b125a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TypingIndicators.3debc38b2cf5b38d6bdb.js.map

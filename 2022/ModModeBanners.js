@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.d9b5c66f50f49dd158f9.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.59a7d2e1b85eaf9d1272.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -1022,7 +1022,7 @@
 					profile: n.R(e),
 					post: n.I(e, t),
 					media: n.B(e, t),
-					subreddit: n.ib(e),
+					subreddit: n.jb(e),
 					comment: n.j(e, t)
 				}),
 				d = ({
@@ -1036,20 +1036,20 @@
 					profile: n.R(e),
 					post: n.I(e, t),
 					media: n.B(e, t),
-					subreddit: n.ib(e),
+					subreddit: n.jb(e),
 					comment: n.j(e, t)
 				}),
 				c = e => t => ({
 					source: "online_presence",
 					action: "view",
 					noun: "user",
-					user: n.pb(t),
-					subreddit: n.ib(t),
+					user: n.qb(t),
+					subreddit: n.jb(t),
 					post: n.I(t, e),
 					actionInfo: n.d(t),
 					app: n.h(t),
 					referrer: n.X(t),
-					session: n.db(t)
+					session: n.eb(t)
 				})
 		},
 		"./src/reddit/icons/fonts/IgnoreReport/index.tsx": function(e, t, s) {
@@ -1186,4 +1186,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.d9b5c66f50f49dd158f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.59a7d2e1b85eaf9d1272.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.201c2863004de08240b8.js
-// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.6fe63a0905af4aad098e.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -1978,7 +1978,7 @@
 					profile: s.R(e),
 					post: s.I(e, t),
 					media: s.B(e, t),
-					subreddit: s.ib(e),
+					subreddit: s.jb(e),
 					comment: s.j(e, t)
 				}),
 				c = ({
@@ -1992,20 +1992,20 @@
 					profile: s.R(e),
 					post: s.I(e, t),
 					media: s.B(e, t),
-					subreddit: s.ib(e),
+					subreddit: s.jb(e),
 					comment: s.j(e, t)
 				}),
 				d = e => t => ({
 					source: "online_presence",
 					action: "view",
 					noun: "user",
-					user: s.pb(t),
-					subreddit: s.ib(t),
+					user: s.qb(t),
+					subreddit: s.jb(t),
 					post: s.I(t, e),
 					actionInfo: s.d(t),
 					app: s.h(t),
 					referrer: s.X(t),
-					session: s.db(t)
+					session: s.eb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/commentsPage.ts": function(e, t, n) {
@@ -2044,7 +2044,7 @@
 						action: o.c.CLICK,
 						...Object(a.o)(e),
 						screen: Object(a.ab)(e),
-						subreddit: Object(a.ib)(e),
+						subreddit: Object(a.jb)(e),
 						post: t ? Object(a.I)(e, t) : null,
 						profile: Object(a.R)(e),
 						correlationId: Object(s.c)(s.a.CommentComposer)
@@ -2102,7 +2102,7 @@
 					action: "click",
 					...Object(a.o)(t),
 					screen: Object(a.ab)(t),
-					subreddit: Object(a.ib)(t),
+					subreddit: Object(a.jb)(t),
 					post: Object(a.I)(t, e)
 				}), j = e => Object(i.a)({
 					noun: "edit",
@@ -2931,4 +2931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.201c2863004de08240b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.6fe63a0905af4aad098e.js.map

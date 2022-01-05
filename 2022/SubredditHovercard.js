@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.0cddd17ed8e58fb82699.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.21ba209746c1cb926868.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -249,7 +249,7 @@
 					action: "click",
 					noun: t,
 					post: s ? a.I(o, s) : void 0,
-					subreddit: a.jb(o, e),
+					subreddit: a.kb(o, e),
 					screen: a.ab(o)
 				}),
 				c = (e, t) => s => ({
@@ -257,7 +257,7 @@
 					action: "view",
 					noun: "hover_subreddit_hovercard",
 					post: t ? a.I(s, t) : void 0,
-					subreddit: a.jb(s, e),
+					subreddit: a.kb(s, e),
 					screen: a.ab(s)
 				});
 			var u = s("./node_modules/react-redux/es/index.js"),
@@ -294,7 +294,7 @@
 			}
 			const {
 				fbt: H
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = O.a.wrapped(T.b, "SubredditIcon", S.a), A = O.a.wrapped(f.a, "SubredditNameDisplay", S.a), M = O.a.div("SubredditDescription", S.a), k = O.a.div("SubredditNameContainer", S.a), L = O.a.div("SubredditInfoContainer", S.a), D = O.a.div("Subscribers", S.a), U = O.a.div("Online", S.a), B = O.a.div("Count", S.a), R = O.a.div("CountLabel", S.a), Z = O.a.div("Container", S.a), F = O.a.div("CardContainer", S.a), K = e => r.a.createElement(L, null, r.a.createElement(D, null, r.a.createElement(B, null, Object(E.b)(e.subredditAboutInfo.subscribers)), r.a.createElement(R, null, H._({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = O.a.wrapped(T.b, "SubredditIcon", S.a), A = O.a.wrapped(f.a, "SubredditNameDisplay", S.a), k = O.a.div("SubredditDescription", S.a), M = O.a.div("SubredditNameContainer", S.a), L = O.a.div("SubredditInfoContainer", S.a), D = O.a.div("Subscribers", S.a), U = O.a.div("Online", S.a), B = O.a.div("Count", S.a), R = O.a.div("CountLabel", S.a), Z = O.a.div("Container", S.a), F = O.a.div("CardContainer", S.a), K = e => r.a.createElement(L, null, r.a.createElement(D, null, r.a.createElement(B, null, Object(E.b)(e.subredditAboutInfo.subscribers)), r.a.createElement(R, null, H._({
 				"*": "Members",
 				_1: " Member"
 			}, [H._plural(e.subredditAboutInfo.subscribers)], {
@@ -324,7 +324,7 @@
 					className: t,
 					id: n,
 					style: c
-				}, r.a.createElement(F, null, r.a.createElement(k, null, r.a.createElement(g, {
+				}, r.a.createElement(F, null, r.a.createElement(M, null, r.a.createElement(g, {
 					subredditOrProfile: u,
 					shouldHideNsfwIcon: s
 				}), r.a.createElement(A, {
@@ -336,7 +336,7 @@
 					subredditAboutInfo: p
 				}), r.a.createElement(y.a, {
 					subreddit: u
-				}), r.a.createElement(M, null, Object(N.a)(p.publicDescription || "", 140)), r.a.createElement(j.n, {
+				}), r.a.createElement(k, null, Object(N.a)(p.publicDescription || "", 140)), r.a.createElement(j.n, {
 					onClick: v,
 					to: `${u.url}`,
 					target: a ? "_blank" : void 0,
@@ -865,4 +865,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.0cddd17ed8e58fb82699.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.21ba209746c1cb926868.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.5665118b4ce84f66da2e.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.200947ff2c534afcf263.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -224,8 +224,8 @@
 				g = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
 				I = s("./src/reddit/components/Collection/PostAndPostEventMeta/index.tsx"),
 				y = s("./src/reddit/components/PostContainer/index.tsx"),
-				j = s("./src/reddit/components/SubredditNameLink/index.tsx"),
-				k = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
+				k = s("./src/reddit/components/SubredditNameLink/index.tsx"),
+				j = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
 				f = s("./src/reddit/constants/posts.ts"),
 				S = s("./src/reddit/selectors/posts.ts"),
 				P = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/PostItem/index.m.less"),
@@ -301,13 +301,13 @@
 						className: D.a.postBodyWrapper
 					}, !s && r && i.a.createElement("div", {
 						className: Object(c.a)(D.a.subredditContainer)
-					}, i.a.createElement(j.a, {
+					}, i.a.createElement(k.a, {
 						className: D.a.subredditLink,
 						to: r.url,
 						onClick: this.onSubredditNameClick
 					}, r.displayText), n ? i.a.createElement("div", {
 						className: D.a.subredditSubscribeLargeButton
-					}, i.a.createElement(k.a, {
+					}, i.a.createElement(j.a, {
 						identifier: {
 							name: r.name,
 							type: f.a.SUBREDDIT
@@ -315,7 +315,7 @@
 						postId: e.id,
 						shouldReverseColor: !0,
 						getEventFactory: this.getSubscribeEventFactory
-					})) : i.a.createElement(k.a, {
+					})) : i.a.createElement(j.a, {
 						className: D.a.subredditSubscribeButton,
 						getEventFactory: this.getSubscribeEventFactory,
 						doNotHideOtherSubscribeButtons: !0,
@@ -490,7 +490,7 @@
 				subreddit: x.R,
 				subredditAboutInfo: x.t
 			}), y = Object(r.b)(I);
-			class j extends i.a.Component {
+			class k extends i.a.Component {
 				constructor() {
 					super(...arguments), this.hasFiredViewEvent = !1, this.trackViewEvent = () => {
 						const {
@@ -596,7 +596,7 @@
 					}, c))))
 				}
 			}
-			t.a = y(Object(m.c)(j))
+			t.a = y(Object(m.c)(k))
 		},
 		"./src/reddit/components/EventPost/PostEventMeta/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1014,7 +1014,7 @@
 					const n = Object(c.b)(s) ? s.belongsTo.id : s.subredditId;
 					return {
 						post: u.I(e, s.id),
-						subreddit: u.jb(e, n),
+						subreddit: u.kb(e, n),
 						...m(e, t)
 					}
 				},
@@ -1027,7 +1027,7 @@
 					source: "global",
 					action: r.c.VIEW,
 					noun: n.SUBREDDIT_HOVERCARD,
-					subreddit: u.kb(t, e),
+					subreddit: u.lb(t, e),
 					screen: u.ab(t)
 				}),
 				C = (e, t) => s => ({
@@ -1036,7 +1036,7 @@
 					action: r.c.VIEW,
 					noun: n.ITEM_POST,
 					post: u.I(s, t),
-					subreddit: u.kb(s, e),
+					subreddit: u.lb(s, e),
 					screen: u.ab(s)
 				}),
 				x = (e, t) => s => ({
@@ -1045,26 +1045,26 @@
 					action: r.c.CLICK,
 					noun: n.ITEM_POST,
 					post: u.I(s, t),
-					subreddit: u.kb(s, e),
+					subreddit: u.lb(s, e),
 					screen: u.ab(s)
 				}),
 				_ = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: i.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: n.HEADER_SUBREDDIT
 				}),
 				O = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: i.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				g = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: i.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -1073,4 +1073,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.5665118b4ce84f66da2e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.200947ff2c534afcf263.js.map

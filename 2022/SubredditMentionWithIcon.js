@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.05a47329de14cbfe3f67.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.df3481a93b00fed03131.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -436,7 +436,7 @@
 				v = Object(m.a)(p.c),
 				N = Object(m.a)(p.b),
 				y = Object(m.a)(p.a),
-				j = e => async (t, s, {
+				g = e => async (t, s, {
 					gqlContext: n
 				}) => {
 					const i = s(),
@@ -504,7 +504,7 @@
 						}
 					}))
 				};
-			var g = s("./src/reddit/actions/subredditTopContent.ts"),
+			var j = s("./src/reddit/actions/subredditTopContent.ts"),
 				T = s("./src/reddit/actions/tooltip.ts"),
 				k = s("./src/reddit/components/ContentTooltip/index.tsx"),
 				P = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/SubredditItem/index.tsx"),
@@ -646,11 +646,11 @@
 				subredditName: t,
 				isHoverable: s
 			}) => ({
-				subredditDataRequested: t => e(j(t)),
+				subredditDataRequested: t => e(g(t)),
 				showTooltip: s => {
 					e(Object(T.f)({
 						tooltipId: s
-					})), e(Object(g.d)(t))
+					})), e(Object(j.d)(t))
 				},
 				onHideTooltip: () => e(Object(T.i)())
 			})), ce = 600;
@@ -1057,8 +1057,8 @@
 						className: "hiddenImg"
 					}))
 				},
-				j = e => e.isOutbound ? Object(f.a)(e).button : e.placeholderImage ? "transparent" : Object(f.a)(e).line,
-				g = e => {
+				g = e => e.isOutbound ? Object(f.a)(e).button : e.placeholderImage ? "transparent" : Object(f.a)(e).line,
+				j = e => {
 					const t = S(e),
 						s = t && {
 							background: Object(h.g)(Object(f.a)(e).placeholder, t, C(e))
@@ -1068,7 +1068,7 @@
 						"data-click-id": "image",
 						style: {
 							...s,
-							borderColor: j(e)
+							borderColor: g(e)
 						}
 					}, (!e.placeholderImage || e.showContentType) && r.a.createElement(u.a, {
 						className: Object(o.a)(e.contentTypeClassName, x.a.contentType, {
@@ -1107,11 +1107,11 @@
 						text: v,
 						theme: N,
 						usePreview: y
-					} = e, j = !N.subredditContext.shouldShowNSFWContent && (f.isNSFW || !(!a || !a.isNSFW)) && !c, g = S({
+					} = e, g = !N.subredditContext.shouldShowNSFWContent && (f.isNSFW || !(!a || !a.isNSFW)) && !c, j = S({
 						placeholderImage: I,
 						redditStyle: E,
 						theme: N
-					}), T = P(e), k = d ? O.SourceElement.PostImage : O.SourceElement.ListingPostImage, L = D(f, t, g, j, v, N, T, l, C, _, E, u, m, h, i), w = Object(p.D)(f);
+					}), T = P(e), k = d ? O.SourceElement.PostImage : O.SourceElement.ListingPostImage, L = D(f, t, j, g, v, N, T, l, C, _, E, u, m, h, i), w = Object(p.D)(f);
 					return Object(n.a)(w) && !_ && w.indexOf("redditmedia") < 0 ? r.a.createElement("div", {
 						className: Object(o.a)(x.a.container, y ? x.a.usePreview : "", s)
 					}, r.a.createElement(b.b, {
@@ -1175,7 +1175,7 @@
 							theme: c
 						}))
 					}
-					return r.a.createElement(g, {
+					return r.a.createElement(j, {
 						className: t,
 						contentTypeClassName: E,
 						placeholderImage: s,
@@ -1348,7 +1348,7 @@
 			})), s.d(t, "w", (function() {
 				return y
 			})), s.d(t, "B", (function() {
-				return g
+				return j
 			})), s.d(t, "t", (function() {
 				return T
 			})), s.d(t, "u", (function() {
@@ -1468,12 +1468,12 @@
 				e.POPULAR_CAROUSEL = "popular_carousel", e.SEARCH_DROPDOWN = "search_dropdown"
 			}(v || (v = {}));
 			const N = (e, t, s) => {
-					Object(h.a)(j(e, t, s, o.c.CLICK))
+					Object(h.a)(g(e, t, s, o.c.CLICK))
 				},
 				y = (e, t, s) => {
-					Object(h.a)(j(e, t, s, o.c.VIEW))
+					Object(h.a)(g(e, t, s, o.c.VIEW))
 				},
-				j = (e, t, s, n) => {
+				g = (e, t, s, n) => {
 					const i = Object(m.a)(e, l.d.dropdown).filter(e => !e.post || !e.post.isSponsored).findIndex(e => e.id === t.id) + 1;
 					return {
 						...b.o(e),
@@ -1499,7 +1499,7 @@
 						}
 					}
 				},
-				g = (e, t, s, n, i, r, a) => {
+				j = (e, t, s, n, i, r, a) => {
 					Object(h.a)({
 						...b.o(e),
 						...Object(c.f)(e, s, n, i, r, t),
@@ -1580,7 +1580,7 @@
 					return e => ({
 						...E(e, n),
 						actionInfo: q(e, 0, s),
-						subreddit: b.jb(e, t)
+						subreddit: b.kb(e, t)
 					})
 				},
 				W = (e, t, s) => {
@@ -1595,7 +1595,7 @@
 					return e => ({
 						...O(e, i),
 						actionInfo: q(e, 0, s),
-						subreddit: b.jb(e, t) || null,
+						subreddit: b.kb(e, t) || null,
 						source: f,
 						action: o.c.VIEW,
 						noun: n.ITEM_SUBREDDIT
@@ -1617,7 +1617,7 @@
 					return e => ({
 						...O(e, r),
 						actionInfo: q(e, 0, i),
-						subreddit: b.jb(e, s) || null,
+						subreddit: b.kb(e, s) || null,
 						post: b.I(e, t) || null,
 						source: f,
 						action: o.c.CLICK,
@@ -1629,7 +1629,7 @@
 					return e => ({
 						...O(e, i),
 						actionInfo: q(e, 0, s),
-						subreddit: b.jb(e, t) || null,
+						subreddit: b.kb(e, t) || null,
 						source: f,
 						action: o.c.CLICK,
 						noun: n.ITEM_SUBREDDIT
@@ -1640,7 +1640,7 @@
 					return e => ({
 						...O(e, r),
 						actionInfo: q(e, 0, s),
-						subreddit: b.jb(e, t) || null,
+						subreddit: b.kb(e, t) || null,
 						post: i ? b.I(e, i) : null,
 						source: f,
 						action: o.c.CLICK,
@@ -1652,7 +1652,7 @@
 					return e => ({
 						...O(e, r),
 						actionInfo: q(e, 0, s),
-						subreddit: b.jb(e, t) || null,
+						subreddit: b.kb(e, t) || null,
 						post: i ? b.I(e, i) : null,
 						source: f,
 						action: o.c.CLICK,
@@ -1664,7 +1664,7 @@
 					return e => ({
 						...O(e, i),
 						actionInfo: q(e, 0, s),
-						subreddit: b.jb(e, t) || null,
+						subreddit: b.kb(e, t) || null,
 						source: f,
 						action: o.c.CLICK,
 						noun: n.ITEM_SUBREDDIT_HIDE
@@ -1675,7 +1675,7 @@
 					return e => ({
 						...O(e, i),
 						actionInfo: q(e, 0, s),
-						subreddit: b.jb(e, t) || null,
+						subreddit: b.kb(e, t) || null,
 						source: f,
 						action: o.c.CLICK,
 						noun: n.HEADER_SUBREDDIT
@@ -1736,4 +1736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.05a47329de14cbfe3f67.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.df3481a93b00fed03131.js.map

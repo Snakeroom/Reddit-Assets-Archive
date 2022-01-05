@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.4a5c8115247eb72ca450.js
-// Retrieved at 1/5/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.cf030a17f87c3b728bc7.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3165,7 +3165,7 @@
 				source: "community",
 				action: "set_frequency",
 				noun: e,
-				subreddit: S.ib(t)
+				subreddit: S.jb(t)
 			});
 			var P = s("./src/reddit/hooks/useTracking.ts"),
 				T = s("./src/reddit/icons/svgs/CommunityDefault/filled.tsx");
@@ -3455,13 +3455,13 @@
 							source: "sticky_banner",
 							action: J.c.CLICK,
 							noun: e,
-							subreddit: S.ib(t)
+							subreddit: S.jb(t)
 						}))(t) : (e => t => ({
 							...S.o(t),
 							source: "id_banner",
 							action: J.c.CLICK,
 							noun: e,
-							subreddit: S.ib(t)
+							subreddit: S.jb(t)
 						}))(t)
 					},
 					identifier: {
@@ -7229,7 +7229,7 @@
 									...s.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: b.ib(t)
+								subreddit: b.jb(t)
 							}
 						})
 					}
@@ -9729,7 +9729,7 @@
 					const r = Object(o.b)(s) ? s.belongsTo.id : s.subredditId;
 					return {
 						post: u.I(e, s.id),
-						subreddit: u.jb(e, r),
+						subreddit: u.kb(e, r),
 						...b(e, t)
 					}
 				},
@@ -9742,7 +9742,7 @@
 					source: "global",
 					action: i.c.VIEW,
 					noun: r.SUBREDDIT_HOVERCARD,
-					subreddit: u.kb(t, e),
+					subreddit: u.lb(t, e),
 					screen: u.ab(t)
 				}),
 				x = (e, t) => s => ({
@@ -9751,7 +9751,7 @@
 					action: i.c.VIEW,
 					noun: r.ITEM_POST,
 					post: u.I(s, t),
-					subreddit: u.kb(s, e),
+					subreddit: u.lb(s, e),
 					screen: u.ab(s)
 				}),
 				_ = (e, t) => s => ({
@@ -9760,26 +9760,26 @@
 					action: i.c.CLICK,
 					noun: r.ITEM_POST,
 					post: u.I(s, t),
-					subreddit: u.kb(s, e),
+					subreddit: u.lb(s, e),
 					screen: u.ab(s)
 				}),
 				v = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: n.DISCOVERY_UNIT,
 					action: i.c.CLICK,
 					noun: r.HEADER_SUBREDDIT
 				}),
 				y = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: n.DISCOVERY_UNIT,
 					action: i.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				k = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: n.DISCOVERY_UNIT,
 					action: i.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -9808,7 +9808,7 @@
 					source: n.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: r.SEE_MORE,
-					widget: Object(a.vb)(s, {
+					widget: Object(a.wb)(s, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -9819,7 +9819,7 @@
 					action: i.c.CLICK,
 					noun: r.REREDDIT_PROMO,
 					post: a.I(s, e),
-					subreddit: a.ib(s),
+					subreddit: a.jb(s),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -10826,4 +10826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.4a5c8115247eb72ca450.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.cf030a17f87c3b728bc7.js.map

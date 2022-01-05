@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.0abb06adfa42378c5953.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.9eeb8f454e32316d21bd.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EditCommunityDescriptionModal"], {
 		"./src/lib/hooks/useMutation.ts": function(e, t, o) {
@@ -219,7 +219,7 @@
 						pageType: "community",
 						reason: t
 					},
-					subreddit: Object(s.ib)(o)
+					subreddit: Object(s.jb)(o)
 				}),
 				a = (e, t, o) => r => ({
 					...Object(s.o)(r),
@@ -233,7 +233,7 @@
 							reason: o
 						}
 					},
-					subreddit: Object(s.ib)(r)
+					subreddit: Object(s.jb)(r)
 				}),
 				c = e => t => ({
 					...Object(s.o)(t),
@@ -245,7 +245,7 @@
 						pageType: "community",
 						reason: "expanded_module"
 					},
-					subreddit: Object(s.ib)(t)
+					subreddit: Object(s.jb)(t)
 				}),
 				i = e => t => ({
 					...Object(s.o)(t),
@@ -257,7 +257,7 @@
 						pageType: "community",
 						reason: "collapses_module"
 					},
-					subreddit: Object(s.ib)(t)
+					subreddit: Object(s.jb)(t)
 				}),
 				d = (e, t) => o => ({
 					...Object(s.o)(o),
@@ -268,7 +268,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(s.ib)(o)
+					subreddit: Object(s.jb)(o)
 				}),
 				u = (e, t) => o => ({
 					...Object(s.o)(o),
@@ -279,7 +279,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(s.ib)(o)
+					subreddit: Object(s.jb)(o)
 				}),
 				l = (e, t) => o => ({
 					...Object(s.o)(o),
@@ -290,7 +290,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(s.ib)(o)
+					subreddit: Object(s.jb)(o)
 				})
 		},
 		"./src/reddit/hooks/useGqlContext.ts": function(e, t, o) {
@@ -322,4 +322,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.0abb06adfa42378c5953.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.9eeb8f454e32316d21bd.js.map

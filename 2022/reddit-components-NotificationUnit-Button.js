@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.99111180a04b12df1c4d.js
-// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.33c05209e0f27293cf6c.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -1462,7 +1462,7 @@
 					profile: r.R(e),
 					post: r.I(e, t),
 					media: r.B(e, t),
-					subreddit: r.ib(e),
+					subreddit: r.jb(e),
 					comment: r.j(e, t)
 				}),
 				c = ({
@@ -1476,20 +1476,20 @@
 					profile: r.R(e),
 					post: r.I(e, t),
 					media: r.B(e, t),
-					subreddit: r.ib(e),
+					subreddit: r.jb(e),
 					comment: r.j(e, t)
 				}),
 				i = e => t => ({
 					source: "online_presence",
 					action: "view",
 					noun: "user",
-					user: r.pb(t),
-					subreddit: r.ib(t),
+					user: r.qb(t),
+					subreddit: r.jb(t),
 					post: r.I(t, e),
 					actionInfo: r.d(t),
 					app: r.h(t),
 					referrer: r.X(t),
-					session: r.db(t)
+					session: r.eb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/commentsPage.ts": function(e, t, n) {
@@ -1528,7 +1528,7 @@
 						action: o.c.CLICK,
 						...Object(d.o)(e),
 						screen: Object(d.ab)(e),
-						subreddit: Object(d.ib)(e),
+						subreddit: Object(d.jb)(e),
 						post: t ? Object(d.I)(e, t) : null,
 						profile: Object(d.R)(e),
 						correlationId: Object(r.c)(r.a.CommentComposer)
@@ -1586,7 +1586,7 @@
 					action: "click",
 					...Object(d.o)(t),
 					screen: Object(d.ab)(t),
-					subreddit: Object(d.ib)(t),
+					subreddit: Object(d.jb)(t),
 					post: Object(d.I)(t, e)
 				}), j = e => Object(a.a)({
 					noun: "edit",
@@ -2397,4 +2397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.99111180a04b12df1c4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.33c05209e0f27293cf6c.js.map

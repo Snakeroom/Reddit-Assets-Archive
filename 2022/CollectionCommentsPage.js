@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.6cfc9b49fb15d922b221.js
-// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.214dcf0d886ce55dbf1a.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -559,7 +559,7 @@
 						const n = s().posts.instances[g] ? e.queryParams.instanceId : M.postId;
 						t(Object(h.b)(n))
 					}
-					E ? Object(P.d)(s(), t, e) : Object(P.e)(s(), t, e), Object(N.v)(s(), !0)
+					E ? Object(P.d)(s(), t, e) : Object(P.e)(s(), t, e), Object(N.w)(s(), !0)
 				}, Y = Object(n.a)(W.c), Q = (e, t, s, o) => async (n, i, a) => {
 					const d = Object(r.a)(e, t, s, o),
 						c = i();
@@ -1852,7 +1852,7 @@
 						sort: o,
 						source: n
 					}),
-					userSubreddit: Object(I.rb)(r)
+					userSubreddit: Object(I.sb)(r)
 				}),
 				T = (e, t) => s => ({
 					source: "comment_highlighting",
@@ -1860,8 +1860,8 @@
 					noun: e
 				}),
 				N = e => ({
-					subreddit: Object(I.ib)(e),
-					userSubreddit: Object(I.rb)(e)
+					subreddit: Object(I.jb)(e),
+					userSubreddit: Object(I.sb)(e)
 				}),
 				L = e => t => ({
 					source: "contest_mode",
@@ -7368,7 +7368,7 @@
 				}) => t, N.J, N.K, E.d, q, (e, t, s, o, n, r) => !t && !s && !o && !n && !e && r),
 				G = Object(c.a)((e, {
 					post: t
-				}) => t, P.c, T.Y, T.ib, (e, t, s, o) => {
+				}) => t, P.c, T.Y, T.jb, (e, t, s, o) => {
 					const n = !!e && void 0 !== e.isEligibleForLinkedPosts;
 					let r, i = "";
 					if (e && (r = {
@@ -8013,7 +8013,7 @@
 					...Object(o.o)(e),
 					media: Object(o.B)(e, t),
 					profile: Object(o.R)(e),
-					subreddit: Object(o.ib)(e) || Object(o.lb)(e, t)
+					subreddit: Object(o.jb)(e) || Object(o.mb)(e, t)
 				}),
 				r = e => t => ({
 					source: "post",
@@ -10017,4 +10017,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.6cfc9b49fb15d922b221.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.214dcf0d886ce55dbf1a.js.map

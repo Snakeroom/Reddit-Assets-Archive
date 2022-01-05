@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.485d3cbfcd25dcee3597.js
-// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.ceeaa22708f334c7245c.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1110,7 +1110,7 @@
 					const {
 						sendEvent: e
 					} = this.props;
-					e(Object(T.w)())
+					e(Object(T.x)())
 				}
 				componentWillUnmount() {
 					clearTimeout(this.timeout), this.props.clearErrors()
@@ -1751,7 +1751,7 @@
 					action: "click",
 					noun: "invite_via_email",
 					...s.o(t),
-					subreddit: s.ib(t),
+					subreddit: s.jb(t),
 					actionInfo: s.d(t),
 					correlationId: Object(a.e)(a.a.SubredditCreation, !1)
 				}),
@@ -1760,7 +1760,7 @@
 					action: "view",
 					noun: "modal",
 					...s.o(e),
-					subreddit: s.ib(e),
+					subreddit: s.jb(e),
 					actionInfo: s.d(e),
 					correlationId: Object(a.c)(a.a.SubredditCreation)
 				}),
@@ -1769,7 +1769,7 @@
 					action: "click",
 					noun: e,
 					...s.o(t),
-					subreddit: s.ib(t),
+					subreddit: s.jb(t),
 					actionInfo: s.d(t),
 					correlationId: Object(a.c)(a.a.SubredditCreation)
 				})
@@ -2038,4 +2038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.485d3cbfcd25dcee3597.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.ceeaa22708f334c7245c.js.map

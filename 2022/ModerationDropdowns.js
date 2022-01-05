@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.1c12319c7a2c113a8891.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.f68bf21a4a766f046927.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, s) {
@@ -359,7 +359,7 @@
 						source: "post_flair_picker",
 						action: "click",
 						noun: e,
-						subreddit: Object(C.jb)(t, this.props.subredditId)
+						subreddit: Object(C.kb)(t, this.props.subredditId)
 					}));
 					const t = Object(E.c)(e.flairs);
 					this.state = {
@@ -1081,7 +1081,7 @@
 					...Object(n.o)(e),
 					post: Object(n.I)(e, t),
 					predictions: Object(n.O)(e, t),
-					subreddit: Object(n.ib)(e)
+					subreddit: Object(n.jb)(e)
 				}),
 				r = e => t => ({
 					...o(t, e),
@@ -1290,4 +1290,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.1c12319c7a2c113a8891.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.f68bf21a4a766f046927.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fd5ba9f475ca55082fc5.js
-// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5791a2291906c9d4e038.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4142,7 +4142,7 @@
 					if (t) {
 						const s = a.B(e, t.post.id),
 							o = a.I(e, t.post.id),
-							n = a.ib(e);
+							n = a.jb(e);
 						if (t.post.authorInfo && o && (o.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const o = Object(r.j)(e, {
@@ -4157,7 +4157,7 @@
 						}
 					}
 					return {
-						subreddit: a.ib(e)
+						subreddit: a.jb(e)
 					}
 				},
 				d = (e, t, s) => {
@@ -4367,7 +4367,7 @@
 					action: "click",
 					noun: "subscribe",
 					...i(t, e),
-					targetSubreddit: a.ib(t)
+					targetSubreddit: a.jb(t)
 				}),
 				M = (e, t) => s => ({
 					source: "stream_player",
@@ -4454,7 +4454,7 @@
 				source: "post",
 				action: o.c.CLICK,
 				noun: "share_chat",
-				subreddit: Object(n.ib)(e)
+				subreddit: Object(n.jb)(e)
 			})
 		},
 		"./src/reddit/icons/fonts/DropdownTriangle/index.tsx": function(e, t, s) {
@@ -5055,7 +5055,7 @@
 							noun: o,
 							post: s && Object(ge.I)(n, s),
 							screen: Object(ge.ab)(n),
-							subreddit: Object(ge.jb)(n, t)
+							subreddit: Object(ge.kb)(n, t)
 						})))("removal_reasons", this.props.subredditId, this.props.postId)
 					})
 				}
@@ -7847,4 +7847,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.fd5ba9f475ca55082fc5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5791a2291906c9d4e038.js.map

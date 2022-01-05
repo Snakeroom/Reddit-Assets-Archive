@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.dcc4a6a794fcd0bcd319.js
-// Retrieved at 1/5/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.003fff5a37fb5ca3a07a.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -5185,7 +5185,7 @@
 					source: n.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: r.SEE_MORE,
-					widget: Object(o.vb)(s, {
+					widget: Object(o.wb)(s, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -5196,7 +5196,7 @@
 					action: i.c.CLICK,
 					noun: r.REREDDIT_PROMO,
 					post: o.I(s, e),
-					subreddit: o.ib(s),
+					subreddit: o.jb(s),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -6683,4 +6683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.dcc4a6a794fcd0bcd319.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.003fff5a37fb5ca3a07a.js.map

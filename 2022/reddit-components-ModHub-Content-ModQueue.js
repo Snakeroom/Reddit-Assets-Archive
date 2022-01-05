@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.a85d65e83d95dd704994.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.8c8a1138f2cacb9c5289.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -1287,7 +1287,7 @@
 								action: "click",
 								noun: o,
 								screen: Object(x.ab)(e),
-								subreddit: Object(x.ib)(e)
+								subreddit: Object(x.jb)(e)
 							})))
 						})(o.layout),
 						i = () => e.toggleTooltip(l),
@@ -1355,4 +1355,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.a85d65e83d95dd704994.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.8c8a1138f2cacb9c5289.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.89939c10a5734512455b.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.dd3e99a013b25ecee18b.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsEmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx": function(e, t, s) {
@@ -187,10 +187,10 @@
 				y = s("./src/reddit/selectors/telemetry.ts"),
 				v = s("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
 				S = s("./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx"),
-				_ = s("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
-				C = s("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
-				j = s("./src/reddit/components/RichTextEditor/emotes/SpecialMemberships/tooltip.m.less"),
-				k = s.n(j);
+				j = s("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
+				_ = s("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
+				C = s("./src/reddit/components/RichTextEditor/emotes/SpecialMemberships/tooltip.m.less"),
+				k = s.n(C);
 			const w = e => `tooltip-emote-${e}`,
 				I = ["blink", "bush", "chug", "clappy", "confused", "cuddle", "dab", "dance", "default", "oof", "respect", "soon", "unfortunately", "wow"].map(e => `https://meta.redditmedia.com/img/fortnitebr/emotes/${e}-2x.gif`);
 			class O extends a.a.Component {
@@ -225,19 +225,19 @@
 									...t.actionInfo,
 									reason: this.state.emoteBeingTyped ? "type" : "click"
 								},
-								subreddit: y.ib(e)
+								subreddit: y.jb(e)
 							}
 						})
 					}, this.onEmoteClick = e => {
 						let t = this.props.editorState;
-						const s = Object(C.f)(t);
+						const s = Object(_.f)(t);
 						if (s && this.state.emoteBeingTyped) {
 							const e = t.getSelection();
 							t = o.EditorState.forceSelection(t, e.merge({
 								anchorOffset: e.getFocusOffset() - s.length - 1
 							}))
 						}
-						t = Object(C.g)(e, t), this.props.onChange(t), this.closeTooltip()
+						t = Object(_.g)(e, t), this.props.onChange(t), this.closeTooltip()
 					}, this.onKeyPressedInTooltip = e => {
 						e.keyCode === b.a.ArrowDown ? this.handleDownArrow(e) : e.keyCode === b.a.ArrowLeft ? this.handleLeftArrow() : e.keyCode === b.a.ArrowRight ? this.handleRightArrow() : e.keyCode === b.a.ArrowUp ? this.handleUpArrow(e) : e.keyCode === b.a.Escape && (this.returnFocusToEditor(), this.closeTooltip())
 					}, this.handleUpArrow = e => {
@@ -291,7 +291,7 @@
 						editorState: e
 					} = this.props, t = e.getLastChangeType();
 					if (t !== v.d && t !== v.a) return;
-					const s = Object(C.f)(e);
+					const s = Object(_.f)(e);
 					if (!s) return void(this.state.emoteBeingTyped && this.setState({
 						isTooltipVisible: !1,
 						emoteBeingTyped: null
@@ -318,7 +318,7 @@
 						let n = o.EditorState.forceSelection(e, i.merge({
 							anchorOffset: i.getFocusOffset() - t.length - 2
 						}));
-						n = Object(C.g)(s[0], n), this.props.onChange(n)
+						n = Object(_.g)(s[0], n), this.props.onChange(n)
 					}
 					this.setState({
 						isTooltipVisible: !1,
@@ -362,7 +362,7 @@
 						className: k.a.emotePackTitle
 					}, e.title), a.a.createElement("div", {
 						className: k.a.emotes
-					}, e.emotes.map(e => a.a.createElement(_.a, {
+					}, e.emotes.map(e => a.a.createElement(j.a, {
 						key: e.id,
 						className: k.a.emoteButton,
 						id: w(e.id),
@@ -388,7 +388,7 @@
 								action: "click",
 								noun: "emoji_tooltip_open_learn_more",
 								...y.o(e),
-								subreddit: y.ib(e)
+								subreddit: y.jb(e)
 							}))
 						}
 					}, i.fbt._("Get More Emotes", null, {
@@ -525,4 +525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.89939c10a5734512455b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.dd3e99a013b25ecee18b.js.map

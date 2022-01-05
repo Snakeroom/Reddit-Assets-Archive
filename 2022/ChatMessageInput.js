@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.d51fa2104a95915d4fb3.js
-// Retrieved at 1/4/2022, 10:50:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.e94b4916421df5e6e406.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -910,7 +910,7 @@
 					if (t) {
 						const s = i.B(e, t.post.id),
 							r = i.I(e, t.post.id),
-							n = i.ib(e);
+							n = i.jb(e);
 						if (t.post.authorInfo && r && (r.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const r = Object(a.j)(e, {
@@ -925,7 +925,7 @@
 						}
 					}
 					return {
-						subreddit: i.ib(e)
+						subreddit: i.jb(e)
 					}
 				},
 				c = (e, t, s) => {
@@ -1135,7 +1135,7 @@
 					action: "click",
 					noun: "subscribe",
 					...o(t, e),
-					targetSubreddit: i.ib(t)
+					targetSubreddit: i.jb(t)
 				}),
 				S = (e, t) => s => ({
 					source: "stream_player",
@@ -1808,4 +1808,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.d51fa2104a95915d4fb3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.e94b4916421df5e6e406.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.cf690a7509ec12be96b7.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.1231d138bcecdf124d0f.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -502,7 +502,7 @@
 							action: "click",
 							noun: e,
 							screen: Object(_.ab)(t),
-							subreddit: Object(_.ib)(t)
+							subreddit: Object(_.jb)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -1723,7 +1723,7 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: n.SEE_MORE,
-					widget: Object(o.vb)(s, {
+					widget: Object(o.wb)(s, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -1734,7 +1734,7 @@
 					action: i.c.CLICK,
 					noun: n.REREDDIT_PROMO,
 					post: o.I(s, e),
-					subreddit: o.ib(s),
+					subreddit: o.jb(s),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -2645,4 +2645,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.cf690a7509ec12be96b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.1231d138bcecdf124d0f.js.map

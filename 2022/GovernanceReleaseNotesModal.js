@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.ef1129121c1a0d6985de.js
-// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.d6c0dd456276ba623e62.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -722,20 +722,20 @@
 					post: e.releaseNote
 				})))
 			}
-			var T = n("./src/reddit/controls/Button/index.tsx"),
-				k = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+			var k = n("./src/reddit/controls/Button/index.tsx"),
+				T = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
 				C = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideChange/index.m.less"),
 				S = n.n(C);
 
 			function N(e) {
 				return o.a.createElement("div", {
 					className: Object(p.a)(S.a.container, e.className)
-				}, !e.isFirst && o.a.createElement(T.o, {
+				}, !e.isFirst && o.a.createElement(k.o, {
 					className: S.a.prev,
 					onClick: e.onPrevSlide
-				}, o.a.createElement(k.a, {
+				}, o.a.createElement(T.a, {
 					className: S.a.arrow
-				})), o.a.createElement(T.l, {
+				})), o.a.createElement(k.l, {
 					onClick: e.isLast ? e.onClose : e.onNextSlide
 				}, e.isLast ? s.fbt._("done", null, {
 					hk: "2XjG3a"
@@ -964,7 +964,7 @@
 		"./src/reddit/components/Media/ImageBox/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return k
+				return T
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -991,8 +991,8 @@
 				O = n("./src/reddit/components/Media/ImageBox/index.m.less"),
 				I = n.n(O);
 
-			function T() {
-				return (T = Object.assign || function(e) {
+			function k() {
+				return (k = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -1000,14 +1000,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const k = e => e > 2 * v.e,
+			const T = e => e > 2 * v.e,
 				C = e => {
 					const t = Object(d.a)(I.a.image, b.g, e.className, {
 							[I.a.mShowCentered]: e.showCentered,
 							[I.a.mShowBlurred]: e.shouldBlur
 						}),
 						n = {};
-					return e.showFull || e.isTall || (n.maxHeight = `${v.j}px`), e.isListing || e.isTall && k(e.height) || (n.maxHeight = `${v.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`), o.a.createElement("img", {
+					return e.showFull || e.isTall || (n.maxHeight = `${v.j}px`), e.isListing || e.isTall && T(e.height) || (n.maxHeight = `${v.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`), o.a.createElement("img", {
 						alt: e.altText || s.fbt._("Post image", null, {
 							hk: "3KfCgs"
 						}),
@@ -1074,8 +1074,8 @@
 					...t
 				}) => {
 					const n = Object(v.L)(t.height, t.width),
-						r = k(t.height) && n;
-					return o.a.createElement(S, T({}, t, {
+						r = T(t.height) && n;
+					return o.a.createElement(S, k({}, t, {
 						className: `${n?`${j.a} `:""}${t.className||""}`
 					}), t.isListing ? o.a.createElement("div", {
 						className: t.contentImageClassName
@@ -1295,15 +1295,15 @@
 					isListing: j,
 					className: O,
 					showCentered: I,
-					originalSource: T
-				} = e, k = Object(a.d)();
+					originalSource: k
+				} = e, T = Object(a.d)();
 
 				function C(e) {
-					k(e ? Object(l.r)(h) : Object(l.E)(h))
+					T(e ? Object(l.r)(h) : Object(l.E)(h))
 				}
 
 				function S() {
-					return k(Object(l.z)({
+					return T(Object(l.z)({
 						postId: h
 					}))
 				}
@@ -1312,7 +1312,7 @@
 					const {
 						target: t
 					} = e;
-					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && k(Object(l.s)(h))
+					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && T(Object(l.s)(h))
 				}, 200);
 
 				function M(e) {
@@ -1321,16 +1321,16 @@
 
 				function L(e) {
 					var t;
-					(o || B(e), c) || (t = e.timeStamp, k(Object(l.A)(h, t)))
+					(o || B(e), c) || (t = e.timeStamp, T(Object(l.A)(h, t)))
 				}
 
 				function R(e) {
-					k(Object(l.q)(h, e.timeStamp))
+					T(Object(l.q)(h, e.timeStamp))
 				}
 
 				function B(e) {
 					! function(e) {
-						k(Object(l.D)({
+						T(Object(l.D)({
 							metadata: e,
 							postId: h
 						}))
@@ -1343,7 +1343,7 @@
 				}
 
 				function P(e) {
-					s || L(e), o || B(e), k(Object(l.C)(h))
+					s || L(e), o || B(e), T(Object(l.C)(h))
 				}
 
 				function D() {
@@ -1377,7 +1377,7 @@
 						[y.a.centered]: I
 					})
 				}, i.a.createElement("a", {
-					href: T,
+					href: k,
 					target: "_blank",
 					rel: "noopener noreferrer"
 				}, D()))
@@ -1641,9 +1641,9 @@
 			})), n.d(t, "t", (function() {
 				return I
 			})), n.d(t, "p", (function() {
-				return T
-			})), n.d(t, "o", (function() {
 				return k
+			})), n.d(t, "o", (function() {
+				return T
 			})), n.d(t, "q", (function() {
 				return C
 			})), n.d(t, "s", (function() {
@@ -1679,8 +1679,8 @@
 				j = c.a.sup("Sup", a.a),
 				O = c.a.table("Table", a.a),
 				I = c.a.tr("Tr", a.a),
-				T = c.a.td("Tdl", a.a),
-				k = c.a.td("Tdc", a.a),
+				k = c.a.td("Tdl", a.a),
+				T = c.a.td("Tdc", a.a),
 				C = c.a.td("Tdr", a.a),
 				S = c.a.th("Thl", a.a),
 				N = c.a.th("Thc", a.a),
@@ -1761,7 +1761,7 @@
 						rtJsonElementProps: x,
 						useExplicitTextColor: v,
 						shouldBlur: y
-					} = e, O = s.document, I = [], T = e.mediaMetadata || null, k = j(O), C = w(O);
+					} = e, O = s.document, I = [], k = e.mediaMetadata || null, T = j(O), C = w(O);
 					if (y && !r) return i.a.createElement(_, {
 						className: Object(a.a)(u.j, n)
 					}, i.a.createElement("div", {
@@ -1770,8 +1770,8 @@
 						className: g.a.unblurButton,
 						onClick: d
 					}, Object(l.b)(!!o, !!c))));
-					if (-1 !== k)
-						for (let i = k; i <= C; i++) {
+					if (-1 !== T)
+						for (let i = T; i <= C; i++) {
 							const e = O[i];
 							switch (e.e) {
 								case p.k:
@@ -1781,19 +1781,19 @@
 									I.push(f.d(i));
 									break;
 								case p.b:
-									I.push(f.a(e, T, x, i));
+									I.push(f.a(e, k, x, i));
 									break;
 								case p.c:
 									I.push(f.b(e, i));
 									break;
 								case p.p:
-									I.push(f.f(e, T, x, i));
+									I.push(f.f(e, k, x, i));
 									break;
 								case p.z:
-									I.push(f.h(e, T, x, i));
+									I.push(f.h(e, k, x, i));
 									break;
 								case p.u:
-									I.push(f.g(e, T, x, i));
+									I.push(f.g(e, k, x, i));
 									break;
 								case p.h:
 									I.push(Object(b.a)(e, i));
@@ -1801,7 +1801,7 @@
 								case p.m:
 								case p.a:
 								case p.D:
-									I.push(...Object(b.b)(e, i, T, h, m, t))
+									I.push(...Object(b.b)(e, i, k, h, m, t))
 							}
 						}
 					return v ? i.a.createElement(_, {
@@ -1862,7 +1862,7 @@
 			n.d(t, "a", (function() {
 				return I
 			})), n.d(t, "b", (function() {
-				return k
+				return T
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -1933,7 +1933,7 @@
 					showCentered: !0,
 					showFull: !0
 				}))),
-				T = (e, t, n) => {
+				k = (e, t, n) => {
 					const s = e.c;
 					let r = "";
 					return n && (n.e === p.s ? r = n.s.u : n.e === p.r ? r = n.s.gif : n.e === p.t && (r = (e => {
@@ -1945,9 +1945,9 @@
 						title: s
 					}, s || r) : null
 				},
-				k = (e, t, n, s, r, a) => {
+				T = (e, t, n, s, r, a) => {
 					const d = p.E(n, e.id);
-					if (s) return [T(e, t, d)];
+					if (s) return [k(e, t, d)];
 					const l = [];
 					return d ? d.e === p.s ? l.push((({
 						id: e,
@@ -2133,7 +2133,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: p.ib(t)
+								subreddit: p.jb(t)
 							}
 						})
 					}
@@ -2170,8 +2170,8 @@
 				j = n("./src/reddit/components/RichTextJson/media.tsx"),
 				O = n("./src/reddit/components/RichTextJson/SpoilerText.tsx"),
 				I = n("./src/reddit/components/SubredditMention/index.tsx"),
-				T = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
-				k = n("./src/reddit/helpers/isComment.ts"),
+				k = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
+				T = n("./src/reddit/helpers/isComment.ts"),
 				C = n("./src/reddit/helpers/isPost.ts"),
 				S = n("./src/reddit/helpers/richTextJson/index.ts"),
 				N = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
@@ -2324,7 +2324,7 @@
 								t: e.t,
 								f: e.f
 							}, 0);
-							if (Object(T.b)(e.u)) return a.a.createElement(c.w, {
+							if (Object(k.b)(e.u)) return a.a.createElement(c.w, {
 								to: e.u,
 								key: n,
 								title: e.a
@@ -2332,7 +2332,7 @@
 							let r, o;
 							const i = Object(N.a)(t),
 								d = t.renderingObjectInfo;
-							return d && Object(C.b)(d) && (r = d.postId), d && Object(k.b)(d) && (o = d.id, r = d.postId), a.a.createElement(c.a, {
+							return d && Object(C.b)(d) && (r = d.postId), d && Object(T.b)(d) && (o = d.id, r = d.postId), a.a.createElement(c.a, {
 								href: e.u,
 								key: n,
 								title: e.a,
@@ -2702,7 +2702,7 @@
 					const s = Object(a.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
 						post: u.I(e, n.id),
-						subreddit: u.jb(e, s),
+						subreddit: u.kb(e, s),
 						...p(e, t)
 					}
 				},
@@ -2715,7 +2715,7 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: s.SUBREDDIT_HOVERCARD,
-					subreddit: u.kb(t, e),
+					subreddit: u.lb(t, e),
 					screen: u.ab(t)
 				}),
 				g = (e, t) => n => ({
@@ -2724,7 +2724,7 @@
 					action: o.c.VIEW,
 					noun: s.ITEM_POST,
 					post: u.I(n, t),
-					subreddit: u.kb(n, e),
+					subreddit: u.lb(n, e),
 					screen: u.ab(n)
 				}),
 				v = (e, t) => n => ({
@@ -2733,26 +2733,26 @@
 					action: o.c.CLICK,
 					noun: s.ITEM_POST,
 					post: u.I(n, t),
-					subreddit: u.kb(n, e),
+					subreddit: u.lb(n, e),
 					screen: u.ab(n)
 				}),
 				_ = e => t => ({
 					...h(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT
 				}),
 				E = e => t => ({
 					...h(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				y = e => t => ({
 					...h(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -2900,4 +2900,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.ef1129121c1a0d6985de.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.d6c0dd456276ba623e62.js.map

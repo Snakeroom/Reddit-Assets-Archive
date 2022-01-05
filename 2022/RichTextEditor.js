@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.d91563833ba1dce92a6c.js
-// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.c70e66bcc4fa7cb3e609.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -2298,7 +2298,7 @@
 					source: "toxicity_modal",
 					...b.o(e),
 					screen: b.ab(e),
-					subreddit: b.ib(e)
+					subreddit: b.jb(e)
 				}),
 				_ = e => t => ({
 					action: h.c.VIEW,
@@ -3867,7 +3867,7 @@
 						action: n.c.CLICK,
 						...Object(c.o)(e),
 						screen: Object(c.ab)(e),
-						subreddit: Object(c.ib)(e),
+						subreddit: Object(c.jb)(e),
 						post: t ? Object(c.I)(e, t) : null,
 						profile: Object(c.R)(e),
 						correlationId: Object(s.c)(s.a.CommentComposer)
@@ -3925,7 +3925,7 @@
 					action: "click",
 					...Object(c.o)(t),
 					screen: Object(c.ab)(t),
-					subreddit: Object(c.ib)(t),
+					subreddit: Object(c.jb)(t),
 					post: Object(c.I)(t, e)
 				}), _ = e => Object(d.a)({
 					noun: "edit",
@@ -3958,14 +3958,14 @@
 					source: e,
 					action: "click",
 					noun: "request_to_join_button",
-					subreddit: n.ib(t)
+					subreddit: n.jb(t)
 				}),
 				r = e => t => ({
 					...n.o(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_submit",
-					subreddit: n.ib(t)
+					subreddit: n.jb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/restrictedCommunity.ts": function(e, t, o) {
@@ -3981,14 +3981,14 @@
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: n.ib(t)
+					subreddit: n.jb(t)
 				}),
 				r = e => t => ({
 					...n.o(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: n.ib(t)
+					subreddit: n.jb(t)
 				})
 		},
 		"./src/reddit/icons/svgs/Help/index.tsx": function(e, t, o) {
@@ -4127,4 +4127,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.d91563833ba1dce92a6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.c70e66bcc4fa7cb3e609.js.map

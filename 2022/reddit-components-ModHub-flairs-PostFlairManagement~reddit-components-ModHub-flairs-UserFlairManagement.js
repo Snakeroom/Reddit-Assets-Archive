@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.cdbddeb4f3101a04e6d3.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.f5b73733356f81451885.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, a) {
@@ -307,8 +307,8 @@
 			const E = e => e === f.d.LinkFlair ? "postflairmanagement" : "userflairmanagement",
 				v = e => ({
 					...C.o(e),
-					subreddit: C.ib(e),
-					userSubreddit: C.rb(e)
+					subreddit: C.jb(e),
+					userSubreddit: C.sb(e)
 				}),
 				x = e => t => a => ({
 					...v(a),
@@ -1962,7 +1962,7 @@
 								action: "click",
 								noun: s,
 								screen: Object(b.ab)(e),
-								subreddit: Object(b.ib)(e)
+								subreddit: Object(b.jb)(e)
 							})))
 						})(s.layout),
 						l = () => e.toggleTooltip(r),
@@ -2003,4 +2003,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.cdbddeb4f3101a04e6d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.f5b73733356f81451885.js.map

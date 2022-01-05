@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2081adc0922645158549.js
-// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b2d764d73bce38b34adf.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -4377,7 +4377,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: b.ib(t)
+								subreddit: b.jb(t)
 							}
 						})
 					}
@@ -5161,7 +5161,7 @@
 					const r = Object(i.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
 						post: u.I(e, n.id),
-						subreddit: u.jb(e, r),
+						subreddit: u.kb(e, r),
 						...b(e, t)
 					}
 				},
@@ -5174,7 +5174,7 @@
 					source: "global",
 					action: a.c.VIEW,
 					noun: r.SUBREDDIT_HOVERCARD,
-					subreddit: u.kb(t, e),
+					subreddit: u.lb(t, e),
 					screen: u.ab(t)
 				}),
 				w = (e, t) => n => ({
@@ -5183,7 +5183,7 @@
 					action: a.c.VIEW,
 					noun: r.ITEM_POST,
 					post: u.I(n, t),
-					subreddit: u.kb(n, e),
+					subreddit: u.lb(n, e),
 					screen: u.ab(n)
 				}),
 				x = (e, t) => n => ({
@@ -5192,26 +5192,26 @@
 					action: a.c.CLICK,
 					noun: r.ITEM_POST,
 					post: u.I(n, t),
-					subreddit: u.kb(n, e),
+					subreddit: u.lb(n, e),
 					screen: u.ab(n)
 				}),
 				O = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: r.HEADER_SUBREDDIT
 				}),
 				v = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				y = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -5824,4 +5824,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2081adc0922645158549.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b2d764d73bce38b34adf.js.map

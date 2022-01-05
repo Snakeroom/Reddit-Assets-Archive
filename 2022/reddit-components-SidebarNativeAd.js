@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.35904b97cd959c8b2953.js
-// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.24eeca801f8eb281e437.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2077,8 +2077,8 @@
 			const a = e => ({
 					...o.o(e),
 					screen: o.ab(e),
-					subreddit: o.ib(e),
-					userSubreddit: o.rb(e)
+					subreddit: o.jb(e),
+					userSubreddit: o.sb(e)
 				}),
 				c = e => ({
 					awardId: e.id,
@@ -2173,7 +2173,7 @@
 					noun: n,
 					goldPurchase: c(e),
 					profile: o.S(r, t),
-					subreddit: o.jb(r, t)
+					subreddit: o.kb(r, t)
 				}),
 				h = (e, t) => b(e, t, "disable_in_community"),
 				v = (e, t) => b(e, t, "enable_in_community")
@@ -2264,8 +2264,8 @@
 					correlationId: Object(c.b)(e) || Object(i.e)(i.a.GildingFlow, !1),
 					post: t ? o.I(e, t) : void 0,
 					screen: o.ab(e),
-					subreddit: o.ib(e),
-					userSubreddit: o.rb(e)
+					subreddit: o.jb(e),
+					userSubreddit: o.sb(e)
 				}),
 				m = e => t => ({
 					...u(t, e),
@@ -2494,7 +2494,7 @@
 						correlationId: a.r(e) || Object(m.e)(m.a.GoldPayment, !1),
 						post: n ? c.I(e, n) : null,
 						screen: c.ab(e),
-						subreddit: n ? c.ib(e) : null,
+						subreddit: n ? c.jb(e) : null,
 						goldPurchase: {
 							...h ? Object(f.a)(h) : null,
 							type: g,
@@ -2676,7 +2676,7 @@
 					source: "avatar",
 					action: "click",
 					noun: "try_this_look_post",
-					snoovatar: s.gb(e)
+					snoovatar: s.hb(e)
 				}),
 				u = e => ({
 					...s.o(e),
@@ -2686,14 +2686,14 @@
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: s.gb(e)
+					snoovatar: s.hb(e)
 				}),
 				m = e => ({
 					...s.o(e),
 					source: "avatar_builder",
 					action: "click",
 					noun: "close",
-					snoovatar: s.gb(e)
+					snoovatar: s.hb(e)
 				}),
 				p = e => ({
 					source: "nav",
@@ -2707,7 +2707,7 @@
 					action: e,
 					noun: "community_spaces",
 					...s.o(n),
-					snoovatar: s.gb(n),
+					snoovatar: s.hb(n),
 					actionInfo: {
 						paneName: "avatar_community_spaces" + (t ? "_control" : "")
 					}
@@ -2720,7 +2720,7 @@
 					action: t,
 					noun: n,
 					...s.o(r),
-					snoovatar: s.gb(r)
+					snoovatar: s.hb(r)
 				}),
 				_ = g("anniversary_achievement", "view", "anniversary_achievement"),
 				y = g("anniversary_achievement", "click", "close"),
@@ -2741,7 +2741,7 @@
 					actionInfo: {
 						pageType: "onboarding"
 					},
-					snoovatar: s.gb(r)
+					snoovatar: s.hb(r)
 				}),
 				k = e => C("onboarding", "click", e),
 				I = () => C("avatar", "view", "onboarding")
@@ -3675,4 +3675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.35904b97cd959c8b2953.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.24eeca801f8eb281e437.js.map

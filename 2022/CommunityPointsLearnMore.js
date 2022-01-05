@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.31aa93b08c070819029c.js
-// Retrieved at 1/4/2022, 11:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.85da9ba7d8e5f6ee0468.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, o) {
@@ -1411,7 +1411,7 @@
 					source: "meta",
 					action: e,
 					noun: "feed_claim_points_banner",
-					subreddit: Object(n.ib)(t)
+					subreddit: Object(n.jb)(t)
 				}),
 				i = () => a("view"),
 				r = () => a("tap"),
@@ -1454,7 +1454,7 @@
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(n.jb)(t, e)
+					subreddit: Object(n.kb)(t, e)
 				})
 		},
 		"./src/reddit/icons/svgs/ArrowRightThin/index.tsx": function(e, t, o) {
@@ -4143,4 +4143,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.31aa93b08c070819029c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.85da9ba7d8e5f6ee0468.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.ab1d5106b46c45ddf315.js
-// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.11aec1217551e13725c7.js
+// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4695,7 +4695,7 @@
 					if (t) {
 						const a = c.B(e, t.post.id),
 							s = c.I(e, t.post.id),
-							n = c.ib(e);
+							n = c.jb(e);
 						if (t.post.authorInfo && s && (s.authorId = t.post.authorInfo.id), a) {
 							a.streamPublicId = t.stream.stream_id, a.id = t.stream.stream_id;
 							const s = Object(r.j)(e, {
@@ -4710,7 +4710,7 @@
 						}
 					}
 					return {
-						subreddit: c.ib(e)
+						subreddit: c.jb(e)
 					}
 				},
 				i = (e, t, a) => {
@@ -4920,7 +4920,7 @@
 					action: "click",
 					noun: "subscribe",
 					...o(t, e),
-					targetSubreddit: c.ib(t)
+					targetSubreddit: c.jb(t)
 				}),
 				I = (e, t) => a => ({
 					source: "stream_player",
@@ -6069,4 +6069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ab1d5106b46c45ddf315.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.11aec1217551e13725c7.js.map
