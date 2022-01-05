@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.f1cc18eeafb526025606.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.99111180a04b12df1c4d.js
+// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -138,9 +138,9 @@
 				M = n("./src/reddit/helpers/dom/index.ts"),
 				U = n("./src/reddit/helpers/localStorage/index.ts"),
 				F = n("./src/reddit/helpers/trackers/commentsPage.ts"),
-				B = n("./src/reddit/models/Comment/index.ts"),
-				G = n("./src/reddit/models/PostDraft/index.ts"),
-				J = n("./src/reddit/models/RichTextJson/index.ts"),
+				J = n("./src/reddit/models/Comment/index.ts"),
+				B = n("./src/reddit/models/PostDraft/index.ts"),
+				G = n("./src/reddit/models/RichTextJson/index.ts"),
 				W = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
 				H = n("./src/reddit/models/Toast/index.ts"),
 				Q = n("./src/reddit/selectors/comments.ts"),
@@ -297,10 +297,10 @@
 					apiContext: c
 				}) => {
 					const i = e === S.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(J.G)(t)) r(pe({
+					if (!t || "object" == typeof t && Object(G.G)(t)) r(pe({
 						editorMode: e,
 						draftKey: n,
-						content: i ? J.i : ""
+						content: i ? G.i : ""
 					})), r(Object(u.c)(e));
 					else {
 						r(Object(u.b)(n));
@@ -326,7 +326,7 @@
 					singleOpen: n
 				}) => async (o, r) => {
 					const s = r(),
-						m = Object(c.a)(G.c.replyToComment, t);
+						m = Object(c.a)(B.c.replyToComment, t);
 					if (!Object(Y.K)(r())) return o(Object(d.j)()), void o(Object(a.k)({
 						actionSource: a.a.Reply,
 						redirectUrl: Object(Q.m)(r(), {
@@ -359,12 +359,12 @@
 					let y;
 					if (y = O ? {
 							commentMode: p,
-							draftType: G.c.replyToComment,
+							draftType: B.c.replyToComment,
 							rtJson: f,
 							text: `${b}\n`
 						} : j || {
 							commentMode: p,
-							draftType: G.c.replyToComment,
+							draftType: B.c.replyToComment,
 							rtJson: f,
 							text: ""
 						}, Object(Y.M)(s)) {
@@ -416,7 +416,7 @@
 							text: r,
 							commentMode: t,
 							rteState: null,
-							draftType: G.c.edit,
+							draftType: B.c.edit,
 							hasFocus: !0
 						}
 					})))
@@ -542,7 +542,7 @@
 						hk: "3ebRql"
 					})));
 					else {
-						const c = t === B.a.FOLLOWED,
+						const c = t === J.a.FOLLOWED,
 							i = {
 								id: e,
 								expiresAt: Date.now() + 6048e5
@@ -587,11 +587,11 @@
 			})), n.d(t, "q", (function() {
 				return F
 			})), n.d(t, "j", (function() {
-				return B
-			})), n.d(t, "g", (function() {
-				return G
-			})), n.d(t, "f", (function() {
 				return J
+			})), n.d(t, "g", (function() {
+				return B
+			})), n.d(t, "f", (function() {
+				return G
 			})), n.d(t, "o", (function() {
 				return Q
 			})), n.d(t, "p", (function() {
@@ -743,7 +743,7 @@
 						moreCommentsItem: c,
 						...j.error
 					}))
-				}, F = Object(f.a)(O.b, x.a.upvoted), B = Object(f.a)(O.b, x.a.downvoted), G = Object(c.a)(R.j), J = Object(c.a)(R.i), W = Object(c.a)(R.e), H = Object(c.a)(R.f), Q = (Object(c.a)(R.c), Object(c.a)(R.d), ({
+				}, F = Object(f.a)(O.b, x.a.upvoted), J = Object(f.a)(O.b, x.a.downvoted), B = Object(c.a)(R.j), G = Object(c.a)(R.i), W = Object(c.a)(R.e), H = Object(c.a)(R.f), Q = (Object(c.a)(R.c), Object(c.a)(R.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -1048,7 +1048,7 @@
 					M = K === O.a.PostReply ? A : null === (n = null == k ? void 0 : k.comment) || void 0 === n ? void 0 : n.id,
 					U = (null === (r = null == k ? void 0 : k.post) || void 0 === r ? void 0 : r.id) || (null === (y = null === (j = null == k ? void 0 : k.comment) || void 0 === j ? void 0 : j.postInfo) || void 0 === y ? void 0 : y.id),
 					F = null === (g = null === (x = null == k ? void 0 : k.awarding) || void 0 === x ? void 0 : x.award) || void 0 === g ? void 0 : g.id,
-					B = null === (v = null === (C = null == k ? void 0 : k.awarding) || void 0 === C ? void 0 : C.awarder) || void 0 === v ? void 0 : v.id;
+					J = null === (v = null === (C = null == k ? void 0 : k.awarding) || void 0 === C ? void 0 : C.awarder) || void 0 === v ? void 0 : v.id;
 				return (() => {
 					switch (K) {
 						case O.a.LifecyclePostSuggestions:
@@ -1107,16 +1107,16 @@
 							}))
 						}
 						case O.a.AwardReceived: {
-							if (!B) return null;
+							if (!J) return null;
 							const e = e => {
-								e.preventDefault(), F && (B ? D({
+								e.preventDefault(), F && (J ? D({
 									position: f.c.SECOND,
 									awardId: F
 								}) : T(Object(m.f)(I)))
 							};
 							return s.a.createElement(u.b, {
-								userId: B,
-								contextId: B,
+								userId: J,
+								contextId: J,
 								onClick: e,
 								isFullWidth: R,
 								priority: l.c.Tertiary,
@@ -1371,10 +1371,10 @@
 						return !(!t.isStickied || !((e, t) => {
 							const n = Object(c.c)(e, {
 								experimentEligibilitySelector: c.a,
-								experimentName: s.I,
+								experimentName: s.J,
 								expEventOverride: t
 							});
-							return !!(Object(s.hf)(n) ? void 0 : n)
+							return !!(Object(s.if)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2092,11 +2092,11 @@
 			})), n.d(t, "r", (function() {
 				return F
 			})), n.d(t, "e", (function() {
-				return B
-			})), n.d(t, "v", (function() {
-				return G
-			})), n.d(t, "K", (function() {
 				return J
+			})), n.d(t, "v", (function() {
+				return B
+			})), n.d(t, "K", (function() {
+				return G
 			})), n.d(t, "f", (function() {
 				return W
 			})), n.d(t, "i", (function() {
@@ -2285,7 +2285,7 @@
 				F = (e, {
 					id: t
 				}) => e.continueThreads.models[t],
-				B = (e, {
+				J = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.models[t] : void 0;
@@ -2293,10 +2293,10 @@
 					const o = e.authorFlair.models[n.subredditId];
 					return o ? o[n.author] : null
 				},
-				G = (e, {
+				B = (e, {
 					draftKey: t
 				}) => !!e.features.comments.submit.error[t],
-				J = (e, {
+				G = (e, {
 					draftKey: t
 				}) => {
 					const n = e.features.comments.submit.error[t];
@@ -2397,4 +2397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.f1cc18eeafb526025606.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.99111180a04b12df1c4d.js.map

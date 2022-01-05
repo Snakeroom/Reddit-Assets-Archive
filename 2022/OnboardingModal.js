@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.e709839bbda635b3816f.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.5fe5b0745f87dcef9aa4.js
+// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal", "OnboardingActions"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -332,7 +332,7 @@
 			const S = e => {
 				const t = Object(y.c)(e, {
 					experimentEligibilitySelector: y.a,
-					experimentName: _.Gb
+					experimentName: _.Hb
 				});
 				return !!Object(k.a)(t)
 			};
@@ -529,8 +529,8 @@
 				V = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				W = n("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
 				Q = n("./src/reddit/helpers/getTimeSortForListing/index.ts"),
-				U = n("./src/reddit/models/Toast/index.ts"),
-				H = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
+				H = n("./src/reddit/models/Toast/index.ts"),
+				U = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
 				z = n("./src/reddit/selectors/frontpage.ts"),
 				K = n("./src/reddit/selectors/goldPurchaseModals.ts"),
 				J = n("./src/reddit/selectors/runTimeEnvVars.ts"),
@@ -590,7 +590,7 @@
 							...h.body
 						})), n(F.f({
 							id: x,
-							kind: U.b.Error,
+							kind: H.b.Error,
 							text: r.fbt._("Sorry, we couldn't load posts for this page.", null, {
 								hk: "36ypKx"
 							}),
@@ -638,8 +638,8 @@
 						experimentEligibilitySelector: y.a,
 						experimentName: "redesign_aa"
 					});
-					const v = Object(H.a)(o, {});
-					Object(H.e)(v) && n(Object(G.j)())
+					const v = Object(U.a)(o, {});
+					Object(U.e)(v) && n(Object(G.j)())
 				}, be = () => async (e, t) => {
 					var n, r;
 					const s = t();
@@ -1087,8 +1087,8 @@
 				},
 				W = n("./node_modules/lodash/times.js"),
 				Q = n.n(W),
-				U = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
-				H = n("./src/reddit/icons/svgs/CommunityDefault/filled.tsx"),
+				H = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
+				U = n("./src/reddit/icons/svgs/CommunityDefault/filled.tsx"),
 				z = n("./src/reddit/icons/svgs/Plus/index.tsx"),
 				K = n("./src/reddit/icons/svgs/Positive/index.tsx"),
 				J = n("./src/reddit/components/Onboarding/CommunityPicker.m.less"),
@@ -1130,7 +1130,7 @@
 					toggleSelection: r,
 					topicTitle: e.topicTitle
 				})))
-			}, ee = () => o.a.createElement(o.a.Fragment, null, Q()(5, e => o.a.createElement(U.a, {
+			}, ee = () => o.a.createElement(o.a.Fragment, null, Q()(5, e => o.a.createElement(H.a, {
 				key: e,
 				fullWidth: !0,
 				large: !0
@@ -1185,7 +1185,7 @@
 				}, n && o.a.createElement("img", {
 					className: Z.a.IconWrapper,
 					src: n
-				}), !n && o.a.createElement(H.a, {
+				}), !n && o.a.createElement(U.a, {
 					className: Z.a.CommunityNoIcon
 				})), o.a.createElement("div", {
 					className: Z.a.TextSection
@@ -1559,13 +1559,13 @@
 			});
 			var We = n("./src/telemetry/helpers/sendCounter.ts");
 			var Qe = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				Ue = n("./src/reddit/icons/svgs/svgIcons.tsx"),
-				He = n("./src/reddit/selectors/experiments/econ/index.ts"),
+				He = n("./src/reddit/icons/svgs/svgIcons.tsx"),
+				Ue = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				ze = n("./node_modules/reselect/es/index.js"),
 				Ke = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Je = Object(ze.a)(e => Object(Ke.c)(e, {
 				experimentEligibilitySelector: Ke.a,
-				experimentName: Ee.Mb
+				experimentName: Ee.Nb
 			}), e => e);
 			var Ze = n("./src/reddit/selectors/experiments/survey.ts"),
 				Xe = n("./src/reddit/selectors/onboarding.ts"),
@@ -1627,9 +1627,9 @@
 				const {
 					gqlContext: t,
 					apiContext: n
-				} = e, r = Object(i.d)(), s = Object(x.a)(), c = Object(i.e)(Je) === Ee.fb.Enabled, p = c ? Oe.GENDER : Oe.INTERESTS, [b, f] = Object(a.useState)(p), [g, v] = Object(a.useState)(null), O = Object(i.e)(Xe.a), [E, j] = Object(a.useState)(!c), [_, y] = Object(a.useState)([]), [S, w] = Object(a.useState)(!1), [M, P] = Object(a.useState)({}), [F, D] = Object(a.useState)(!1), [A, B] = Object(a.useState)([]), [q, V] = Object(a.useState)([]), [W, Q] = Object(a.useState)({}), {
-					avatarImage: U,
-					fetchRandomAvatar: H,
+				} = e, r = Object(i.d)(), s = Object(x.a)(), c = Object(i.e)(Je) === Ee.gb.Enabled, p = c ? Oe.GENDER : Oe.INTERESTS, [b, f] = Object(a.useState)(p), [g, v] = Object(a.useState)(null), O = Object(i.e)(Xe.a), [E, j] = Object(a.useState)(!c), [_, y] = Object(a.useState)([]), [S, w] = Object(a.useState)(!1), [M, P] = Object(a.useState)({}), [F, D] = Object(a.useState)(!1), [A, B] = Object(a.useState)([]), [q, V] = Object(a.useState)([]), [W, Q] = Object(a.useState)({}), {
+					avatarImage: H,
+					fetchRandomAvatar: U,
 					saveAvatar: z
 				} = C();
 				Object(a.useEffect)(() => {
@@ -1682,10 +1682,10 @@
 						s(Object(R.n)()), f(Oe.COMMUNITIES), X()
 					}, [X, s]),
 					te = Object(a.useCallback)(async () => {
-						s(Object(R.e)()), H(), f(Oe.AVATAR);
+						s(Object(R.e)()), U(), f(Oe.AVATAR);
 						const e = await st(n, t, W, M);
 						e.ok ? e.reload && r(Object(l.frontpageReloaded)()) : r(nt())
-					}, [n, r, H, t, W, M, s]),
+					}, [n, r, U, t, W, M, s]),
 					ne = Object(a.useCallback)(() => {
 						f(Oe.CELEBRATION), Z()
 					}, [Z]),
@@ -1693,7 +1693,7 @@
 						z(), ne()
 					}, [z, ne]),
 					se = (() => b === Oe.GENDER ? $ : b === Oe.INTERESTS ? ee : b === Oe.COMMUNITIES ? te : re)(),
-					ae = Object(i.e)(e => b === Oe.AVATAR && Object(He.e)(e));
+					ae = Object(i.e)(e => b === Oe.AVATAR && Object(Ue.e)(e));
 				Object(a.useEffect)(() => {
 					b !== Oe.AVATAR || ae || ne()
 				}, [ae, b, ne]);
@@ -1714,7 +1714,7 @@
 					className: xe.a.header
 				}, o.a.createElement("div", {
 					className: xe.a.headerBar
-				}, o.a.createElement("div", null, oe && o.a.createElement(Ue.d, {
+				}, o.a.createElement("div", null, oe && o.a.createElement(He.d, {
 					className: xe.a.backButton,
 					onClick: ie
 				})), o.a.createElement(Qe.a, {
@@ -1758,9 +1758,9 @@
 					hk: "1x9ZNL"
 				}))), o.a.createElement(Ce, {
 					activeStep: b,
-					avatarImage: U,
+					avatarImage: H,
 					communitiesByTopic: A,
-					fetchRandomAvatar: H,
+					fetchRandomAvatar: U,
 					interests: _,
 					loadingCommunities: F,
 					loadingInterests: S,
@@ -2328,8 +2328,8 @@
 				V = h.a.wrapped(N.a, "Circle", A.a),
 				W = h.a.h3("Label", A.a),
 				Q = h.a.wrapped(S.c, "Subtext", A.a),
-				U = h.a.wrapped(m.a, "HoverTooltip", A.a),
-				H = h.a.div("ControlContainer", A.a),
+				H = h.a.wrapped(m.a, "HoverTooltip", A.a),
+				U = h.a.div("ControlContainer", A.a),
 				z = h.a.div("TextContainer", A.a),
 				K = h.a.div("ActionContainer", A.a),
 				J = ({
@@ -2389,7 +2389,7 @@
 						last: e.last
 					}, s.a.createElement(z, null, s.a.createElement(G.a, null, s.a.createElement("label", {
 						htmlFor: t
-					}, s.a.createElement(W, null, e.label))), s.a.createElement(Q, null, e.subtext)), s.a.createElement(K, null, s.a.createElement(H, null, e.tooltip && s.a.createElement(U, {
+					}, s.a.createElement(W, null, e.label))), s.a.createElement(Q, null, e.subtext)), s.a.createElement(K, null, s.a.createElement(U, null, e.tooltip && s.a.createElement(H, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
 					}), s.a.createElement(k.a, {
@@ -2452,7 +2452,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, s.a.createElement(z, null, s.a.createElement(G.a, null, s.a.createElement(W, null, e.label)), s.a.createElement(Q, null, e.subtext)), s.a.createElement(K, null, s.a.createElement(H, null, s.a.createElement(L.o, {
+				}, s.a.createElement(z, null, s.a.createElement(G.a, null, s.a.createElement(W, null, e.label)), s.a.createElement(Q, null, e.subtext)), s.a.createElement(K, null, s.a.createElement(U, null, s.a.createElement(L.o, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				fe = e => s.a.createElement(J, {
@@ -3806,4 +3806,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.e709839bbda635b3816f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.5fe5b0745f87dcef9aa4.js.map

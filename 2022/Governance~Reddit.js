@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.818cf4b4db3fdaa68163.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b827ca52796d92fafe7c.js
+// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1959,7 +1959,7 @@
 					s || c || !Object(d.e)(a) && !Object(d.d)(a) || e(Object(n.f)())
 				}, f = e => {
 					Object(c.d)(e, {
-						experimentName: a.pb
+						experimentName: a.qb
 					})
 				}
 		},
@@ -4021,7 +4021,7 @@
 			const T = e => g.d.reCaptchaEnterprise(e) && !Object(v.d)(e),
 				D = e => !!Object(j.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...a.d)),
-					experimentName: b.se
+					experimentName: b.te
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -4901,7 +4901,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(w)
 						}
-						await t(Object(s.b)(`${r.path}`)), f ? f === p.Vd.NewModule && t(Object(i.h)({
+						await t(Object(s.b)(`${r.path}`)), f ? f === p.Wd.NewModule && t(Object(i.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(o.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(T.a)(Object(g.g)()(h))), Object(I.b)(I.a.SubredditCreation)
 					} else P.error && Object(T.a)(Object(g.h)(P.error.type, E)(h)), t(k({
@@ -5336,21 +5336,21 @@
 		"./src/reddit/actions/userBlocks.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "f", (function() {
-				return u
-			})), r.d(t, "e", (function() {
 				return l
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "e", (function() {
 				return p
+			})), r.d(t, "d", (function() {
+				return b
 			})), r.d(t, "h", (function() {
-				return y
-			})), r.d(t, "b", (function() {
 				return O
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "b", (function() {
 				return _
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "c", (function() {
 				return h
+			})), r.d(t, "a", (function() {
+				return E
 			})), r.d(t, "g", (function() {
-				return S
+				return j
 			}));
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
 				n = r("./src/lib/makeActionCreator/index.ts"),
@@ -5358,23 +5358,25 @@
 				c = r("./src/reddit/actions/toaster.ts"),
 				o = r("./src/reddit/endpoints/accounts/index.ts"),
 				d = r("./src/reddit/models/Toast/index.ts"),
-				i = r("./src/reddit/selectors/user.ts");
-			const u = "USER_BLOCK__PENDING",
-				l = "USER_BLOCK__LOADED",
-				p = "USER_BLOCK__FAILED",
-				b = Object(n.a)(u),
+				i = r("./src/reddit/selectors/experiments/antievil/index.tsx"),
+				u = r("./src/reddit/selectors/user.ts");
+			const l = "USER_BLOCK__PENDING",
+				p = "USER_BLOCK__LOADED",
+				b = "USER_BLOCK__FAILED",
 				f = Object(n.a)(l),
 				m = Object(n.a)(p),
-				y = e => async (t, r, {
+				y = Object(n.a)(b),
+				O = e => async (t, r, {
 					apiContext: n
 				}) => {
-					if (r().blockUser.api.pending[e]) return;
-					t(b({
+					const u = r();
+					if (u.blockUser.api.pending[e]) return;
+					t(f({
 						username: e
 					}));
-					const i = await Object(o.a)(n(), e),
-						u = `error-block-${e}`;
-					if (i.ok) i.body.name && t(f(i.body)), i.body.id && t(Object(a.f)(i.body.id)), t(c.g(u)), t(c.f({
+					const l = await Object(o.a)(n(), e),
+						p = `error-block-${e}`;
+					if (l.ok) l.body.name && t(m(l.body)), l.body.id && t(Object(a.f)(l.body.id)), t(c.g(p)), t(c.f({
 						kind: d.b.SuccessCommunity,
 						text: s.fbt._("{username} is now blocked", [s.fbt._param("username", e)], {
 							hk: "MI2y8"
@@ -5382,11 +5384,19 @@
 					}));
 					else {
 						const r = {
-							type: i.error ? i.error.type : "Unknown error",
-							username: e
-						};
-						t(m(r)), t(c.f({
-							id: u,
+								type: l.error ? l.error.type : "Unknown error",
+								username: e
+							},
+							n = Object(i.c)(u) && "REBLOCK_RATE_LIMIT" === l.body.reason;
+						t(y(r)), t(n ? c.f({
+							id: p,
+							kind: d.b.Error,
+							text: s.fbt._("You can't block u/{username} for 24 hours after unblocking them", [s.fbt._param("username", e)], {
+								hk: "W0oUd"
+							}),
+							buttonAction: O(e)
+						}) : c.f({
+							id: p,
 							kind: d.b.Error,
 							text: s.fbt._("An error has occured. Please try again later", null, {
 								hk: "2FpsLy"
@@ -5394,19 +5404,19 @@
 							buttonText: s.fbt._("Retry", null, {
 								hk: "36rgQw"
 							}),
-							buttonAction: y(e)
+							buttonAction: O(e)
 						}))
 					}
-				}, O = "USER_UNBLOCK__PENDING", _ = "USER_UNBLOCK__SUCCESS", h = "USER_UNBLOCK__FAILED", E = Object(n.a)(O), I = Object(n.a)(_), g = Object(n.a)(h), S = e => async (t, r, {
+				}, _ = "USER_UNBLOCK__PENDING", h = "USER_UNBLOCK__SUCCESS", E = "USER_UNBLOCK__FAILED", I = Object(n.a)(_), g = Object(n.a)(h), S = Object(n.a)(E), j = e => async (t, r, {
 					apiContext: n
 				}) => {
-					const u = r(),
-						l = Object(i.k)(u),
+					const i = r(),
+						l = Object(u.k)(i),
 						p = l ? l.id : void 0,
-						b = u.user.blocked.data.filter(t => t.name === e)[0];
-					p && (t(E({
+						b = i.user.blocked.data.filter(t => t.name === e)[0];
+					p && (t(I({
 						name: e
-					})), (await Object(o.c)(n(), p, e)).ok ? (t(I({
+					})), (await Object(o.c)(n(), p, e)).ok ? (t(g({
 						name: e
 					})), b && b.id && t(Object(a.h)(b.id)), t(c.f({
 						kind: d.b.SuccessCommunity,
@@ -5418,7 +5428,7 @@
 						text: s.fbt._("An error has occured. Please try again later", null, {
 							hk: "2FpsLy"
 						})
-					})), t(g({
+					})), t(S({
 						name: e
 					}))))
 				}
@@ -6033,7 +6043,7 @@
 						subreddit: r
 					} = e, {
 						isSponsored: s
-					} = t, n = Object(c.d)(), o = Object(q.a)(), d = Object(V.a)(p.dd) === p.kd.Enabled, u = Object(c.e)(U.b), l = e => {
+					} = t, n = Object(c.d)(), o = Object(q.a)(), d = Object(V.a)(p.ed) === p.ld.Enabled, u = Object(c.e)(U.b), l = e => {
 						!u || t.media && Object(S.H)(t.media) || (e.preventDefault(), n(Object(O.ab)(Object(h.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return a.a.createElement(z, {
@@ -26602,6 +26612,36 @@
 				}) => u(e)[t] || m,
 				O = (e, t) => !!e.emojis.api.list.pending[t]
 		},
+		"./src/reddit/selectors/experiments/antievil/index.tsx": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return a
+			})), r.d(t, "b", (function() {
+				return c
+			})), r.d(t, "c", (function() {
+				return o
+			}));
+			var s = r("./src/reddit/constants/experiments.ts"),
+				n = r("./src/reddit/helpers/chooseVariant/index.ts");
+			const a = e => {
+					return Object(n.c)(e, {
+						experimentEligibilitySelector: n.a,
+						experimentName: s.g
+					}) === s.a.Enabled
+				},
+				c = e => {
+					return Object(n.c)(e, {
+						experimentEligibilitySelector: n.a,
+						experimentName: s.m
+					}) === s.Uc
+				},
+				o = e => {
+					return Object(n.c)(e, {
+						experimentEligibilitySelector: n.a,
+						experimentName: s.n
+					}) === s.Uc
+				}
+		},
 		"./src/reddit/selectors/experiments/googleOneTap.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
@@ -26625,14 +26665,14 @@
 			const d = Object(s.a)(c.c, e => !e),
 				i = Object(s.a)(e => Object(a.c)(e, {
 					experimentEligibilitySelector: e => d(e),
-					experimentName: n.pb,
+					experimentName: n.qb,
 					expEventOverride: !1
 				}), e => e),
-				u = e => e === n.V.Onetap,
-				l = e => e === n.V.OnetapAuto,
+				u = e => e === n.W.Onetap,
+				l = e => e === n.W.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.hf)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.if)(t))
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, r) {
 			"use strict";
@@ -26911,4 +26951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.818cf4b4db3fdaa68163.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b827ca52796d92fafe7c.js.map

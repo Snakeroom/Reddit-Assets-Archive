@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.6bde0891c74a5f1df30b.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.19e604228d7e053c9b7d.js
+// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -82,16 +82,16 @@
 			const m = Object(o.a)(e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: u.Fd
+					experimentName: u.Gd
 				});
-				return Object(u.hf)(t) ? void 0 : t
+				return Object(u.if)(t) ? void 0 : t
 			}, e => {
 				const t = Object(h.c)(e, {
 					experimentEligibilitySelector: h.a,
-					experimentName: u.Gd
+					experimentName: u.Hd
 				});
-				return Object(u.hf)(t) ? void 0 : t
-			}, (e, t) => e === u.Jd.Enabled && t === u.Jd.Enabled);
+				return Object(u.if)(t) ? void 0 : t
+			}, (e, t) => e === u.Kd.Enabled && t === u.Kd.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -571,19 +571,19 @@
 						subredditName: W,
 						isVisible: H
 					} = e,
-					F = Object(a.e)(e => Object(C.b)(e, k)),
-					U = F > 0,
-					G = F < p.length - 1,
+					U = Object(a.e)(e => Object(C.b)(e, k)),
+					F = U > 0,
+					G = U < p.length - 1,
 					K = Object(m.a)(),
 					Y = Object(i.useRef)(null),
 					$ = Object(i.useRef)(null),
-					[z, J] = Object(i.useState)(H ? F : -1),
-					[q, Q] = Object(i.useState)(H ? F : -1),
+					[z, J] = Object(i.useState)(H ? U : -1),
+					[q, Q] = Object(i.useState)(H ? U : -1),
 					X = Object(l.a)(H),
-					Z = Object(l.a)(F);
+					Z = Object(l.a)(U);
 				Object(i.useEffect)(() => {
-					(void 0 !== X && X !== H && H && z < 0 && q < 0 || void 0 !== Z && Z !== F && H && (z > F || q < F)) && (J(_(F, 1)), Q(D(F, p.length, 1)))
-				}, [X, F, H, z, q, Z, p.length, k]);
+					(void 0 !== X && X !== H && H && z < 0 && q < 0 || void 0 !== Z && Z !== U && H && (z > U || q < U)) && (J(_(U, 1)), Q(D(U, p.length, 1)))
+				}, [X, U, H, z, q, Z, p.length, k]);
 				const ee = Object(i.useRef)(),
 					te = Object(i.useCallback)(e => {
 						e.forEach(e => {
@@ -614,30 +614,30 @@
 					}, [t, k, T]),
 					ae = Object(i.useCallback)(() => {
 						if (!G) return;
-						const e = F + 1;
+						const e = U + 1;
 						if (e + 1 >= q) {
 							const e = D(q, p.length);
 							e !== q && Q(e)
 						}
 						se(e), K(u.b(k, e)), K(u.d(k, e + 1)), ie(e)
-					}, [G, F, ie, se, K, k, q, p.length]),
+					}, [G, U, ie, se, K, k, q, p.length]),
 					oe = Object(i.useCallback)(() => {
-						if (!U) return;
-						const e = F - 1;
+						if (!F) return;
+						const e = U - 1;
 						if (e - 1 <= z) {
 							const e = _(z);
 							e !== z && J(e)
 						}
-						const t = F + 1;
+						const t = U + 1;
 						se(e), K(u.a(k, t)), K(u.d(k, t - 1)), ie(e)
-					}, [U, F, ie, se, K, k, z]),
+					}, [F, U, ie, se, K, k, z]),
 					re = Object(i.useCallback)(() => {
-						const e = p[F] && p[F].outboundUrl;
+						const e = p[U] && p[U].outboundUrl;
 						e && K(u.c(k, e))
-					}, [K, k, F, p]);
+					}, [K, k, U, p]);
 				h(y.a.ArrowLeft, Y.current, oe), h(y.a.ArrowRight, Y.current, ae);
-				const de = p[F] && p[F].caption,
-					le = p[F] && p[F].outboundUrl,
+				const de = p[U] && p[U].caption,
+					le = p[U] && p[U].outboundUrl,
 					ce = ((e, t, s) => {
 						const i = Object(O.f)(e),
 							n = Object(O.g)(i),
@@ -706,7 +706,7 @@
 						m = s >= z && s <= q;
 					return n.a.createElement(L, {
 						slideIndex: s,
-						currentIndex: F,
+						currentIndex: U,
 						obfuscatedImage: h,
 						optimalImage: u,
 						originalImage: a.s,
@@ -722,7 +722,7 @@
 				})), !e.shouldBlur && n.a.createElement(n.a.Fragment, null, n.a.createElement(M, {
 					onClick: oe,
 					setFocusTo: $,
-					hasMoreSlides: U,
+					hasMoreSlides: F,
 					title: "Previous",
 					iconClassName: S.a.prevIcon,
 					className: S.a.prevButton
@@ -734,7 +734,7 @@
 					iconClassName: S.a.nextIcon,
 					className: S.a.nextButton
 				}))), p.length > 1 ? n.a.createElement(P, {
-					currentSlide: F + 1,
+					currentSlide: U + 1,
 					totalSlides: p.length,
 					toggleTileLayout: V && ne || void 0
 				}) : ""), !de && !le || T || B ? !!s && !T && !B && n.a.createElement("div", {
@@ -1052,8 +1052,8 @@
 				B = s("./src/reddit/components/PostList/index.tsx"),
 				W = s("./src/reddit/components/RawHTMLDisplay/Media.tsx"),
 				H = s("./src/reddit/components/RichTextJson/index.tsx"),
-				F = s("./src/reddit/constants/componentSizes.ts"),
-				U = s("./src/reddit/constants/screenWidths.ts"),
+				U = s("./src/reddit/constants/componentSizes.ts"),
+				F = s("./src/reddit/constants/screenWidths.ts"),
 				G = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				K = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
 				Y = s("./src/reddit/helpers/getRichTextContent/index.ts"),
@@ -1113,7 +1113,7 @@
 				pe = 1200,
 				be = 75,
 				ge = "player.js",
-				xe = F.r + F.q,
+				xe = U.r + U.q,
 				fe = e => u.a.createElement("div", {
 					className: Object(g.a)(de.a.visibilityWrapper, {
 						[de.a.displayNone]: !e.isVisible
@@ -1317,7 +1317,7 @@
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(X.j, this.state.viewportHeight),
 						s = Math.min(pe, 16 * t / 9);
-					s === pe && (t = 9 * pe / 16), e = this.state.viewportWidth >= U.c ? this.state.viewportWidth < F.l ? this.state.viewportWidth - xe - 2 * be : this.state.viewportWidth - xe - F.e - 2 * be : this.state.viewportWidth - 2 * be;
+					s === pe && (t = 9 * pe / 16), e = this.state.viewportWidth >= F.c ? this.state.viewportWidth < U.l ? this.state.viewportWidth - xe - 2 * be : this.state.viewportWidth - xe - U.e - 2 * be : this.state.viewportWidth - 2 * be;
 					const i = this.state.viewportHeight - 2 * be;
 					if (s > e) {
 						t *= e / s, s = e
@@ -1425,10 +1425,10 @@
 						forcePause: I,
 						shouldPause: j,
 						shouldStop: L,
-						viewportWidth: F
+						viewportWidth: U
 					} = this.state;
 					if (!g.media) return null;
-					const U = I || j,
+					const F = I || j,
 						G = L,
 						{
 							source: z,
@@ -1448,7 +1448,7 @@
 							...ie,
 							className: t,
 							forceAspectRatio: a,
-							viewportWidth: F
+							viewportWidth: U
 						},
 						oe = this.shouldBlur(),
 						re = !((null === (e = g.pollData) || void 0 === e ? void 0 : e.isPrediction) && !o),
@@ -1611,7 +1611,7 @@
 								width: r ? void 0 : t,
 								postId: g.id,
 								shouldLoad: !0,
-								shouldPause: c && U,
+								shouldPause: c && F,
 								source: z,
 								originalSource: g.media.content
 							}))))
@@ -1644,7 +1644,7 @@
 								autoPlay: "boolean" == typeof j ? !j : void 0,
 								isExpando: r,
 								shouldLoad: !0,
-								shouldPause: U,
+								shouldPause: F,
 								shouldStop: G,
 								hlsSource: g.media.hlsUrl,
 								mpegDashSource: g.media.dashUrl,
@@ -1676,7 +1676,7 @@
 								canLoad: C,
 								postId: g.id,
 								postTitle: g.title,
-								shouldPause: U || G,
+								shouldPause: F || G,
 								url: g.media.hlsUrl
 							}));
 						case X.o.IMAGE:
@@ -2048,4 +2048,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.6bde0891c74a5f1df30b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.19e604228d7e053c9b7d.js.map

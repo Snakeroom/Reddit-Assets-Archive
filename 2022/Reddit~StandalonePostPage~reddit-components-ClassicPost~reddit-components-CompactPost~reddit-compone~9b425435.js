@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.616fc95225459e5f39ee.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.2bba40d46e61228a614a.js
+// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/hooks/usePrevious.ts": function(e, t, r) {
@@ -3068,8 +3068,8 @@
 					}) || !!Object(s.l)(e, {
 						postId: t
 					}) || Object(a.H)(e))(e, t),
-					experimentName: n.P
-				}) === n.Tc
+					experimentName: n.Q
+				}) === n.Uc
 			}
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, r) {
@@ -3101,25 +3101,25 @@
 					if (Object(a.a)(e)) return !1;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.o
+						experimentName: n.p
 					});
-					return t === n.u.VoteCountOnly || t === n.u.CommentCountOnly || t === n.u.VoteAndCommentCount
+					return t === n.v.VoteCountOnly || t === n.v.CommentCountOnly || t === n.v.VoteAndCommentCount
 				},
 				l = e => {
 					if (Object(i.c)(e) || Object(a.a)(e)) return !1;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.o
+						experimentName: n.p
 					});
-					return t === n.u.VoteCountOnly || t === n.u.VoteAndCommentCount
+					return t === n.v.VoteCountOnly || t === n.v.VoteAndCommentCount
 				},
 				u = e => {
 					if (Object(i.c)(e) || Object(a.a)(e)) return !1;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.o
+						experimentName: n.p
 					});
-					return t === n.u.CommentCountOnly || t === n.u.VoteAndCommentCount
+					return t === n.v.CommentCountOnly || t === n.v.VoteAndCommentCount
 				},
 				m = (e, {
 					post: t
@@ -3132,10 +3132,10 @@
 					const r = e.posts.models[t];
 					if (Object(i.c)(e) || !r || r.isSponsored || r.isScoreHidden || r.score >= c || Object(a.a)(e)) return !1;
 					const o = Object(s.d)(e, {
-							experimentName: n.o
+							experimentName: n.p
 						}),
 						d = null == o ? void 0 : o.variant;
-					return d === n.u.VoteCountOnly || d === n.u.VoteAndCommentCount
+					return d === n.v.VoteCountOnly || d === n.v.VoteAndCommentCount
 				},
 				f = (e, {
 					postId: t
@@ -3143,17 +3143,17 @@
 					const r = e.posts.models[t];
 					if (Object(i.c)(e) || !r || r.isSponsored || r.numComments >= c || Object(a.a)(e)) return !1;
 					const o = Object(s.d)(e, {
-							experimentName: n.o
+							experimentName: n.p
 						}),
 						d = null == o ? void 0 : o.variant;
-					return d === n.u.CommentCountOnly || d === n.u.VoteAndCommentCount
+					return d === n.v.CommentCountOnly || d === n.v.VoteAndCommentCount
 				},
 				b = e => {
 					if (Object(a.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.Hb
-					}) === n.Xb.Enabled
+						experimentName: n.Ib
+					}) === n.Yb.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, r) {
@@ -3166,8 +3166,8 @@
 			const s = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.fe
-				}) === n.Tc
+					experimentName: n.ge
+				}) === n.Uc
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
@@ -3466,4 +3466,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.616fc95225459e5f39ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.2bba40d46e61228a614a.js.map

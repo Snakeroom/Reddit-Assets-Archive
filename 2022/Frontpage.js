@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.dcdbb6ad4509967880d0.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.ab1d5106b46c45ddf315.js
+// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -322,12 +322,12 @@
 				d = a("./src/reddit/constants/promo.ts"),
 				u = a("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts");
 			var m = function() {
-					const e = Object(u.a)(i.Sb.Bottom_cell),
-						t = Object(u.a)(i.Sb.Bottom_cell_dismissible),
-						a = Object(u.a)(i.Sb.Bottom_cell_dismissible_immediate_trigger),
-						s = Object(u.a)(i.Sb.Bottom_cell_signup_upsell_copy),
-						n = Object(u.a)(i.Sb.Bottom_cell_surprise_install_copy),
-						r = Object(u.a)(i.Sb.Bottom_sheet);
+					const e = Object(u.a)(i.Tb.Bottom_cell),
+						t = Object(u.a)(i.Tb.Bottom_cell_dismissible),
+						a = Object(u.a)(i.Tb.Bottom_cell_dismissible_immediate_trigger),
+						s = Object(u.a)(i.Tb.Bottom_cell_signup_upsell_copy),
+						n = Object(u.a)(i.Tb.Bottom_cell_surprise_install_copy),
+						r = Object(u.a)(i.Tb.Bottom_sheet);
 					return e || s || n ? d.b.SignupUpsellCell : t || a ? d.b.SignupUpsellCellDismissible : r ? d.b.SignupUpsellBottomSheet : null
 				},
 				p = a("./src/reddit/hooks/promo/useIsPromoShown.ts");
@@ -351,7 +351,7 @@
 					const a = function(e = b) {
 						const {
 							showPromo: t
-						} = Object(l.a)(), a = m(), r = Object(p.a)(a), d = Object(u.a)(i.Sb.Bottom_cell_dismissible_immediate_trigger);
+						} = Object(l.a)(), a = m(), r = Object(p.a)(a), d = Object(u.a)(i.Tb.Bottom_cell_dismissible_immediate_trigger);
 						return s.useMemo(() => c()(() => {
 							if (!r && a) {
 								const e = document.getElementById(o.d),
@@ -427,7 +427,7 @@
 			const A = e => {
 				const t = Object(O.c)(e, {
 					experimentEligibilitySelector: O.a,
-					experimentName: N.Gb
+					experimentName: N.Hb
 				});
 				return !!Object(j.a)(t)
 			};
@@ -2497,15 +2497,15 @@
 			function Ze(e) {
 				return Object(Re.c)(e, {
 					experimentEligibilitySelector: Re.a,
-					experimentName: De.z
+					experimentName: De.A
 				})
 			}
 			var qe = a("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(Re.c)(e, {
-					experimentName: De.yd,
+					experimentName: De.zd,
 					experimentEligibilitySelector: Re.a
 				}), qe.a),
-				Ve = Object(u.a)(Ue, e => e === De.zd.Enabled);
+				Ve = Object(u.a)(Ue, e => e === De.Ad.Enabled);
 			var We = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ge = a("./src/reddit/selectors/user.ts");
 			var He = a("./src/reddit/selectors/seo/linksModule.ts"),
@@ -2524,7 +2524,7 @@
 					frontpageLinks: He.b,
 					isOver18: Ge.eb,
 					isInBFFSLeaderboardExperiment: function(e) {
-						return Ze(e) === De.y.RotateEven
+						return Ze(e) === De.z.RotateEven
 					},
 					bffsLeaderboardVariant: Ze,
 					inRpanTopVideoEntrypointExperiment: We.e,
@@ -2535,8 +2535,8 @@
 						return (!t || !a) && function(e) {
 							return Object(Re.c)(e, {
 								experimentEligibilitySelector: Ge.K,
-								experimentName: De.Nb
-							}) === De.Tc
+								experimentName: De.Ob
+							}) === De.Uc
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: d.a,
@@ -2560,7 +2560,7 @@
 						}
 					}
 					let o, i, l, d, u;
-					a && t === De.y.RotateEven ? (o = Be.u, i = Be.n, l = Be.s, d = Be.a) : (o = Be.t, i = Be.j, l = Be.r, d = []), u = [o, ...d, ...l], s && u.unshift(i);
+					a && t === De.z.RotateEven ? (o = Be.u, i = Be.n, l = Be.s, d = Be.a) : (o = Be.t, i = Be.j, l = Be.r, d = []), u = [o, ...d, ...l], s && u.unshift(i);
 					const m = u[n()(u.length - 1)];
 					u = [], m.id !== o.id && u.push(o), s && m.id !== i.id && u.push(i);
 					let p = [...d, ...l];
@@ -5939,8 +5939,8 @@
 			const o = e => n.e[Object(r.Q)(e, {})] === n.d.Card,
 				i = e => Object(c.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: s.jb
-				}) === s.Rb.Treatment
+					experimentName: s.kb
+				}) === s.Sb.Treatment
 		},
 		"./src/reddit/selectors/experiments/econ/avatarBanner.ts": function(e, t, a) {
 			"use strict";
@@ -5956,7 +5956,7 @@
 			function c(e) {
 				return Object(n.c)(e, {
 					experimentEligibilitySelector: r.K,
-					experimentName: s.jc
+					experimentName: s.kc
 				})
 			}
 			const o = 31536e3;
@@ -5975,9 +5975,9 @@
 				return function(e) {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.ic
-					}) === s.Vc.Enabled
-				}(e) ? l.Achievements : t === s.Wc.ControlBanner ? l.CommunitySpacesControl : t === s.Wc.EnabledBanner ? l.CommunitySpaces : null
+						experimentName: s.jc
+					}) === s.Wc.Enabled
+				}(e) ? l.Achievements : t === s.Xc.ControlBanner ? l.CommunitySpacesControl : t === s.Xc.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -6009,19 +6009,19 @@
 					experimentName: e,
 					experimentEligibilitySelector: i,
 					throttledVariants: {
-						[n.Sb.Bottom_cell_dismissible]: e,
-						[n.Sb.Bottom_cell_dismissible_immediate_trigger]: e,
-						[n.Sb.Bottom_sheet]: e
+						[n.Tb.Bottom_cell_dismissible]: e,
+						[n.Tb.Bottom_cell_dismissible_immediate_trigger]: e,
+						[n.Tb.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const d = l(n.mb, !0),
-				u = l(n.nb, !0),
-				m = l(n.ob, !0),
-				p = l(n.mb, !1),
-				b = l(n.nb, !1),
-				h = l(n.ob, !1)
+			const d = l(n.nb, !0),
+				u = l(n.ob, !0),
+				m = l(n.pb, !0),
+				p = l(n.nb, !1),
+				b = l(n.ob, !1),
+				h = l(n.pb, !1)
 		},
 		"./src/reddit/selectors/live.ts": function(e, t, a) {
 			"use strict";
@@ -6069,4 +6069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.dcdbb6ad4509967880d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ab1d5106b46c45ddf315.js.map

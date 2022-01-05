@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e13366cd6c4c718cf485.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f3742ff9d7f90f43e7d9.js
+// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -231,8 +231,8 @@
 				}),
 				C = Object(o.a)(d.c),
 				T = Object(o.a)(d.b),
-				P = Object(o.a)(d.a),
-				N = Object(o.a)(d.h),
+				N = Object(o.a)(d.a),
+				P = Object(o.a)(d.h),
 				k = (Object(o.a)(d.i), Object(o.a)(d.g), () => async (e, t, {
 					gqlContext: r
 				}) => {
@@ -243,7 +243,7 @@
 					if (s.ok) {
 						const t = j(s.body.data);
 						e(C(t))
-					} else e(P({
+					} else e(N({
 						error: s.error
 					}))
 				}),
@@ -275,7 +275,7 @@
 						}
 						if (!e.length && !m.length) return
 					}
-					o(N({
+					o(P({
 						identifiers: m,
 						nameIdentifiers: e,
 						profileModels: d().profiles.models,
@@ -313,7 +313,7 @@
 							text: 1 === e.length && "profile" === e[0].type ? t ? s : c : t ? a : d
 						}))
 					} else {
-						o(N({
+						o(P({
 							identifiers: m,
 							nameIdentifiers: e,
 							profileModels: d().profiles.models,
@@ -948,8 +948,8 @@
 					isOnlineStatusLoadTest: y,
 					isProfileIcon: C,
 					omitResponsivePresenceWrapper: T,
-					onPresenceIndicatorInViewport: P,
-					shouldShowPresenceIndicator: N,
+					onPresenceIndicatorInViewport: N,
+					shouldShowPresenceIndicator: P,
 					user: k,
 					userName: D,
 					isProfileAvatarChangeFixEnabled: U,
@@ -996,13 +996,13 @@
 					className: j.a.nftAnimation,
 					assetUrl: `${i.a.assetPath}/img/snoovatars/nft_comment_animation.json`,
 					loop: !0
-				}), G, N && (F || E && x) && o.a.createElement(m.default, {
+				}), G, P && (F || E && x) && o.a.createElement(m.default, {
 					showPresence: !0,
 					isHighlighted: h,
-					onceInViewport: P
-				}), (N || y) && !E && z && o.a.createElement(d.a, {
+					onceInViewport: N
+				}), (P || y) && !E && z && o.a.createElement(d.a, {
 					variables: W,
-					onData: N ? q : v,
+					onData: P ? q : v,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -1088,7 +1088,7 @@
 			r.d(t, "a", (function() {
 				return T
 			})), r.d(t, "c", (function() {
-				return P
+				return N
 			}));
 			var n = r("./node_modules/lodash/omit.js"),
 				s = r.n(n),
@@ -1175,11 +1175,11 @@
 						metadata: s
 					}
 				},
-				P = (e, t, r) => {
+				N = (e, t, r) => {
 					const n = T(t, r, e.href);
 					return e.href = n.url, n.metadata
 				},
-				N = ({
+				P = ({
 					isSponsored: e,
 					source: t
 				}) => !!(e && (null == t ? void 0 : t.outboundUrl)),
@@ -1218,11 +1218,11 @@
 						onClick: () => r(u, _, i, p)
 					})) : a.a.createElement("a", E({}, S, {
 						onMouseDown: r => {
-							if (!N(e)) return !(1 !== r.button && 2 !== r.button && !r.ctrlKey) || void C(r.currentTarget, h, v, n);
-							t.current = P(r.currentTarget, p, o)
+							if (!P(e)) return !(1 !== r.button && 2 !== r.button && !r.ctrlKey) || void C(r.currentTarget, h, v, n);
+							t.current = N(r.currentTarget, p, o)
 						},
 						onClick: () => {
-							f && (N(e) && (I(f, O.a.Click, t.current), Object(g.a)(f, b)), d(f, O.a.Click), r(u, _, i, p))
+							f && (P(e) && (I(f, O.a.Click, t.current), Object(g.a)(f, b)), d(f, O.a.Click), r(u, _, i, p))
 						},
 						onMouseLeave: e => {
 							l || ((e, t) => {
@@ -1326,9 +1326,9 @@
 			})), r.d(t, "r", (function() {
 				return T
 			})), r.d(t, "o", (function() {
-				return P
-			})), r.d(t, "s", (function() {
 				return N
+			})), r.d(t, "s", (function() {
+				return P
 			})), r.d(t, "c", (function() {
 				return k
 			})), r.d(t, "l", (function() {
@@ -1479,13 +1479,13 @@
 								sort: c = o.Eb,
 								t: a = o.Fb
 							} = i;
-							Object(S.a)(P(s, c, r, n, a)(t));
+							Object(S.a)(N(s, c, r, n, a)(t));
 							break
 						}
 						case o.Mb.PROFILE_PRIVATE: {
 							const s = Object(d.d)(e, t);
 							if (!s) return;
-							Object(S.a)(N(s)(n, r)(t));
+							Object(S.a)(P(s)(n, r)(t));
 							break
 						}
 						case o.Mb.FOLLOWERS:
@@ -1648,7 +1648,7 @@
 						adblock: v.e(o)
 					}
 				},
-				P = (e, t, r, n, s) => o => {
+				N = (e, t, r, n, s) => o => {
 					const i = v.U(o, e);
 					i && (i.sort = t, s && (i.sortTime = s));
 					const {
@@ -1670,7 +1670,7 @@
 						adblock: v.e(o)
 					}
 				},
-				N = e => (t, r) => n => {
+				P = e => (t, r) => n => {
 					const s = !n.profilePrivatePage.api.error[e] && !n.profilePrivatePage.api.pending[e];
 					return {
 						source: "global",
@@ -1989,9 +1989,9 @@
 			})), r.d(t, "e", (function() {
 				return T
 			})), r.d(t, "n", (function() {
-				return P
-			})), r.d(t, "m", (function() {
 				return N
+			})), r.d(t, "m", (function() {
+				return P
 			})), r.d(t, "b", (function() {
 				return k
 			})), r.d(t, "d", (function() {
@@ -2228,11 +2228,11 @@
 						post: c ? d.I(e, c) : void 0
 					}
 				},
-				P = (e, t, r, n, s) => i => ({
+				N = (e, t, r, n, s) => i => ({
 					...x(i, t, r, n, e, s),
 					action: o.c.VIEW
 				}),
-				N = (e, t, r, n) => s => ({
+				P = (e, t, r, n) => s => ({
 					...m(s, r),
 					source: u.SEARCH,
 					action: o.c.VIEW,
@@ -2528,7 +2528,7 @@
 					return n ? n * s.Rb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(n.a)(e => Object(c.c)(e, {
-					experimentName: o.Md,
+					experimentName: o.Nd,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -2539,11 +2539,11 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(s.a)(n.r)
+			const o = Object(s.a)(n.s)
 		},
 		"./src/redditGQL/operations/SubscribedSubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"13af47cf5fb3"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.e13366cd6c4c718cf485.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f3742ff9d7f90f43e7d9.js.map
