@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.32e33d675c014fbf425b.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.de6e284a5730d4010518.js
+// Retrieved at 1/6/2022, 6:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, o) {
@@ -2119,86 +2119,88 @@
 						hk: "2FFsru"
 					})), i.a.createElement("section", null, i.a.createElement("h3", null, v._("Community Rules", null, {
 						hk: "2q9cMn"
-					})), v._('{=Communities have a lot of flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.}{=Here is a non-exhaustive list of factors that can be used to shape distribution rules:}{=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")Post flair (e.g., "reduce karma from COMEDY flairs to 10%")Posts vs comments (e.g., "double comment karma")Per post or per comment (e.g., "limit max karma from a single post to 1k karma")Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")Post or comment body length (e.g., "comments over 240 characters should get 2x karma")A specific post (e.g., "don\'t count karma from the daily discussion")Making a post or comment (e.g., "making a post reduces karma by 25")Membership (e.g., "users with a membership get 25% bonus to karma they earned")}{=For example, here are some rules adopted by r/CryptoCurrency for their distribution of Moons:}{=Double comment karma to encourage more comments than postsLimit karma earned from any individual post or comment to 1000Only count 10% of karma earned on "media" or "comedy" postsBonus Points for users who vote in polls15000 cap on Points earned by any single user per month}{=In addition to the community rules, Reddit sets some default rules to exclude the following from Community Point calculations and distribution:}{=Karma earned on removed posts and comments does not count (including karma earned before removal)Karma earned on stickied or distinguished content does not countPermabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.}', [v._param("=Communities have a lot of flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.", i.a.createElement("p", null, v._("Communities have a lot of flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.", null, {
-						hk: "2vVhLB"
+					})), v._('{=Communities have a lot of flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.}{=Here is a non-exhaustive list of factors that can be used to shape distribution rules:}{=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")Post flair (e.g., "reduce karma from COMEDY flairs to 10%")Posts vs comments (e.g., "double comment karma")Per post or per comment (e.g., "limit max karma from a single post to 1k karma")Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")Post or comment body length (e.g., "comments over 240 characters should get 2x karma")A specific post (e.g., "don\'t count karma from the daily discussion")Making a post or comment (e.g., "making a post reduces karma by 25")Membership (e.g., "users with a membership get 25% bonus to karma they earned")}{=For example, here are some rules adopted by r/CryptoCurrency for their distribution of Moons:}{=Double comment karma to encourage more comments than postsLimit karma earned from any individual post or comment to 1000Only count 10% of karma earned on "media" or "comedy" postsBonus Points for users who vote in polls15000 cap on Points earned by any single user per month}{=In addition to the community rules, Reddit sets some default rules to exclude the following from Community Point calculations and distribution:}{=Karma earned on removed posts and comments does not count (including karma earned before removal)Karma earned on stickied or distinguished content does not countPermabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.Only votes within 3 days of a post\'s creation time are counted (including on comments of that post)}', [v._param("=Communities have a lot of flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.", i.a.createElement("p", null, v._("Communities have a lot of flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.", null, {
+						hk: "3Xaiuw"
 					}))), v._param("=Here is a non-exhaustive list of factors that can be used to shape distribution rules:", i.a.createElement("p", null, v._("Here is a non-exhaustive list of factors that can be used to shape distribution rules:", null, {
-						hk: "1nu08l"
+						hk: "MbWwj"
 					}))), v._param('=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")Post flair (e.g., "reduce karma from COMEDY flairs to 10%")Posts vs comments (e.g., "double comment karma")Per post or per comment (e.g., "limit max karma from a single post to 1k karma")Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")Post or comment body length (e.g., "comments over 240 characters should get 2x karma")A specific post (e.g., "don\'t count karma from the daily discussion")Making a post or comment (e.g., "making a post reduces karma by 25")Membership (e.g., "users with a membership get 25% bonus to karma they earned")', i.a.createElement("ul", null, v._('{=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")}{=Post flair (e.g., "reduce karma from COMEDY flairs to 10%")}{=Posts vs comments (e.g., "double comment karma")}{=Per post or per comment (e.g., "limit max karma from a single post to 1k karma")}{=Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")}{=Post or comment body length (e.g., "comments over 240 characters should get 2x karma")}{=A specific post (e.g., "don\'t count karma from the daily discussion")}{=Making a post or comment (e.g., "making a post reduces karma by 25")}{=Membership (e.g., "users with a membership get 25% bonus to karma they earned")}', [v._param('=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")', i.a.createElement("li", null, v._('Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")', null, {
-						hk: "4xHPpZ"
+						hk: "1HyO61"
 					}))), v._param('=Post flair (e.g., "reduce karma from COMEDY flairs to 10%")', i.a.createElement("li", null, v._('Post flair (e.g., "reduce karma from COMEDY flairs to 10%")', null, {
-						hk: "2V8S87"
+						hk: "1b3f9W"
 					}))), v._param('=Posts vs comments (e.g., "double comment karma")', i.a.createElement("li", null, v._('Posts vs comments (e.g., "double comment karma")', null, {
-						hk: "4mWp4d"
+						hk: "1fBdy5"
 					}))), v._param('=Per post or per comment (e.g., "limit max karma from a single post to 1k karma")', i.a.createElement("li", null, v._('Per post or per comment (e.g., "limit max karma from a single post to 1k karma")', null, {
-						hk: "3CqJao"
+						hk: "2UgeUG"
 					}))), v._param('=Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")', i.a.createElement("li", null, v._('Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")', null, {
-						hk: "rBU9P"
+						hk: "4p142H"
 					}))), v._param('=Post or comment body length (e.g., "comments over 240 characters should get 2x karma")', i.a.createElement("li", null, v._('Post or comment body length (e.g., "comments over 240 characters should get 2x karma")', null, {
-						hk: "4vy1wF"
+						hk: "3zG3aJ"
 					}))), v._param('=A specific post (e.g., "don\'t count karma from the daily discussion")', i.a.createElement("li", null, v._('A specific post (e.g., "don\'t count karma from the daily discussion")', null, {
-						hk: "334yK3"
+						hk: "qvWxJ"
 					}))), v._param('=Making a post or comment (e.g., "making a post reduces karma by 25")', i.a.createElement("li", null, v._('Making a post or comment (e.g., "making a post reduces karma by 25")', null, {
-						hk: "2RcOT1"
+						hk: "1g0WTN"
 					}))), v._param('=Membership (e.g., "users with a membership get 25% bonus to karma they earned")', i.a.createElement("li", null, v._('Membership (e.g., "users with a membership get 25% bonus to karma they earned")', null, {
-						hk: "27Isxm"
+						hk: "3g8RRT"
 					})))], {
-						hk: "1euHij"
+						hk: "458Sc2"
 					}))), v._param("=For example, here are some rules adopted by r/CryptoCurrency for their distribution of Moons:", i.a.createElement("p", null, v._("For example, here are some rules adopted by r/CryptoCurrency for their distribution of Moons:", null, {
-						hk: "3bzbpV"
+						hk: "2X8CkF"
 					}))), v._param('=Double comment karma to encourage more comments than postsLimit karma earned from any individual post or comment to 1000Only count 10% of karma earned on "media" or "comedy" postsBonus Points for users who vote in polls15000 cap on Points earned by any single user per month', i.a.createElement("ul", null, v._('{=Double comment karma to encourage more comments than posts}{=Limit karma earned from any individual post or comment to 1000}{=Only count 10% of karma earned on "media" or "comedy" posts}{=Bonus Points for users who vote in polls}{=15000 cap on Points earned by any single user per month}', [v._param("=Double comment karma to encourage more comments than posts", i.a.createElement("li", null, v._("{=Double comment karma to encourage more comments than posts}", [v._param("=Double comment karma to encourage more comments than posts", i.a.createElement("a", {
 						href: "/r/CryptoCurrency/comments/k12wnd/moon_proposal_double_comment_karma/",
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, v._("Double comment karma to encourage more comments than posts", null, {
-						hk: "1YxI7f"
+						hk: "1AI9P9"
 					})))], {
-						hk: "2dbys4"
+						hk: "qGZcO"
 					}))), v._param("=Limit karma earned from any individual post or comment to 1000", i.a.createElement("li", null, v._("{=Limit karma earned from any individual post or comment to 1000}", [v._param("=Limit karma earned from any individual post or comment to 1000", i.a.createElement("a", {
 						href: "/r/CryptoCurrency/comments/lm8she/limit_post_karma_to_1k_and_limit_comment_karma_to/",
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, v._("Limit karma earned from any individual post or comment to 1000", null, {
-						hk: "3GAoHU"
+						hk: "29kgT2"
 					})))], {
-						hk: "1h39GY"
+						hk: "zwJol"
 					}))), v._param('=Only count 10% of karma earned on "media" or "comedy" posts', i.a.createElement("li", null, v._('{=Only count 10% of karma earned on "media" or "comedy" posts}', [v._param('=Only count 10% of karma earned on "media" or "comedy" posts', i.a.createElement("a", {
 						href: "/r/CryptoCurrency/comments/lm99v3/change_moon_distribution_for_comedy_posts_and/",
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, v._('Only count 10% of karma earned on "media" or "comedy" posts', null, {
-						hk: "1pcdeG"
+						hk: "BQ9GV"
 					})))], {
-						hk: "17iSxS"
+						hk: "2Pn0x2"
 					}))), v._param("=Bonus Points for users who vote in polls", i.a.createElement("li", null, v._("{=Bonus Points for users who vote in polls}", [v._param("=Bonus Points for users who vote in polls", i.a.createElement("a", {
 						href: "/r/CryptoCurrency/comments/m7ehzz/proposal_5_bonus_moons_for_anyone_who_votes_on/",
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, v._("Bonus Points for users who vote in polls", null, {
-						hk: "4cWM8X"
+						hk: "2CgZdm"
 					})))], {
-						hk: "2kKdz7"
+						hk: "3oPCNG"
 					}))), v._param("=15000 cap on Points earned by any single user per month", i.a.createElement("li", null, v._("{=15000 cap on Points earned by any single user per month}", [v._param("=15000 cap on Points earned by any single user per month", i.a.createElement("a", {
 						href: "/r/CryptoCurrency/comments/mrn758/15000_karma_cap_on_moon_distribution/",
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, v._("15000 cap on Points earned by any single user per month", null, {
-						hk: "1B7YrM"
+						hk: "s17Vl"
 					})))], {
-						hk: "2Qt5JS"
+						hk: "VEI28"
 					})))], {
-						hk: "48NDdK"
+						hk: "2CnBXv"
 					}))), v._param("=In addition to the community rules, Reddit sets some default rules to exclude the following from Community Point calculations and distribution:", i.a.createElement("p", null, v._("In addition to the community rules, Reddit sets some default rules to exclude the following from Community Point calculations and distribution:", null, {
-						hk: "3uOYng"
-					}))), v._param("=Karma earned on removed posts and comments does not count (including karma earned before removal)Karma earned on stickied or distinguished content does not countPermabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.", i.a.createElement("ul", null, v._("{=Karma earned on removed posts and comments does not count (including karma earned before removal)}{=Karma earned on stickied or distinguished content does not count}{=Permabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.}", [v._param("=Karma earned on removed posts and comments does not count (including karma earned before removal)", i.a.createElement("li", null, v._("Karma earned on removed posts and comments does not count (including karma earned before removal)", null, {
-						hk: "Gphg7"
+						hk: "4dIyOu"
+					}))), v._param("=Karma earned on removed posts and comments does not count (including karma earned before removal)Karma earned on stickied or distinguished content does not countPermabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.Only votes within 3 days of a post's creation time are counted (including on comments of that post)", i.a.createElement("ul", null, v._("{=Karma earned on removed posts and comments does not count (including karma earned before removal)}{=Karma earned on stickied or distinguished content does not count}{=Permabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.}{=Only votes within 3 days of a post's creation time are counted (including on comments of that post)}", [v._param("=Karma earned on removed posts and comments does not count (including karma earned before removal)", i.a.createElement("li", null, v._("Karma earned on removed posts and comments does not count (including karma earned before removal)", null, {
+						hk: "22FdTP"
 					}))), v._param("=Karma earned on stickied or distinguished content does not count", i.a.createElement("li", null, v._("Karma earned on stickied or distinguished content does not count", null, {
-						hk: "my2gf"
+						hk: "2yVTZQ"
 					}))), v._param("=Permabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.", i.a.createElement("li", null, v._("Permabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.", null, {
-						hk: "2oME9G"
+						hk: "3Jlzwi"
+					}))), v._param("=Only votes within 3 days of a post's creation time are counted (including on comments of that post)", i.a.createElement("li", null, v._("Only votes within 3 days of a post's creation time are counted (including on comments of that post)", null, {
+						hk: "1BIe3S"
 					})))], {
-						hk: "4xmZEL"
+						hk: "3pkPi3"
 					})))], {
-						hk: "RAB4S"
+						hk: "2PfFnZ"
 					})), i.a.createElement("section", null, i.a.createElement("h3", null, v._("Deciding Community Rules", null, {
 						hk: "2BDpM6"
 					})), v._("{=Moderator teams can design an initial set of distribution rules for their subreddit when they launch Community Points. After Points have been launched, the community can continue to make changes to the distribution rules throughGovernance Polls}", [v._param("=Moderator teams can design an initial set of distribution rules for their subreddit when they launch Community Points. After Points have been launched, the community can continue to make changes to the distribution rules throughGovernance Polls", i.a.createElement("p", null, v._("Moderator teams can design an initial set of distribution rules for their subreddit when they launch Community Points. After Points have been launched, the community can continue to make changes to the distribution rules through {=Governance Polls}.", [v._param("=Governance Polls", i.a.createElement(b.a, {
@@ -2473,7 +2475,7 @@
 						hk: "1id0Ri"
 					})), i.a.createElement("p", null, N._("Subreddits can use Community Points information in their Automod rules. Specifically, they can use the following rules:", null, {
 						hk: "2m6VU8"
-					})), i.a.createElement("pre", null, i.a.createElement("code", null, "---\nauthor: has_special_membership: true | false\nspecial_membership_age: > 1 day points_balance: > 10000000000000 # in wei\nlocked_points_balance: > 10000000000000 # in wei\n---")), i.a.createElement("p", null, N._("Locked points is the total number of Points the user has directly earned in the community to date.", null, {
+					})), i.a.createElement("pre", null, i.a.createElement("code", null, "---\nauthor: has_special_membership: true | false\nspecial_membership_age: > 1 day\npoints_balance: > 10000000000000 # in wei\nlocked_points_balance: > 10000000000000 # in wei\n---")), i.a.createElement("p", null, N._("Locked points is the total number of Points the user has directly earned in the community to date.", null, {
 						hk: "3B9CVv"
 					})), i.a.createElement("h3", null, N._("Examples", null, {
 						hk: "33UWVC"
@@ -2959,8 +2961,8 @@
 				U = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Footer/index.m.less"),
 				H = o.n(U);
 			const {
-				fbt: K
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), J = () => i.a.createElement("div", {
+				fbt: J
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), K = () => i.a.createElement("div", {
 				className: H.a.container
 			}, i.a.createElement("footer", {
 				className: H.a.content
@@ -2968,14 +2970,14 @@
 				className: H.a.logo
 			}), i.a.createElement("span", {
 				className: H.a.copyright
-			}, K._("© 2021 Reddit, Inc.", null, {
+			}, J._("© 2021 Reddit, Inc.", null, {
 				hk: "2AJJq2"
 			})), i.a.createElement("span", {
 				className: H.a.spacer
 			}), i.a.createElement(b.a, {
 				className: H.a.link,
 				to: h("introduction")
-			}, K._("Community Points Documentation", null, {
+			}, J._("Community Points Documentation", null, {
 				hk: "KW8cc"
 			})), i.a.createElement("span", {
 				className: H.a.spacer
@@ -2984,7 +2986,7 @@
 				href: "https://www.redditinc.com/policies/previews-terms",
 				target: "_blank",
 				rel: "noopener noreferrer"
-			}, K._("Previews Terms of Use", null, {
+			}, J._("Previews Terms of Use", null, {
 				hk: "4lPHBN"
 			}))));
 			var Q = o("./src/lib/loadableAction/index.ts"),
@@ -3523,8 +3525,8 @@
 			var Ue = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/FAQ/index.m.less"),
 				He = o.n(Ue);
 			const {
-				fbt: Ke
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), Je = ({
+				fbt: Je
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), Ke = ({
 				className: e
 			}) => i.a.createElement("div", {
 				className: e
@@ -3533,12 +3535,12 @@
 			}, i.a.createElement("img", {
 				className: He.a.snoo,
 				src: `${n.a.assetPath}/img/communityPoints/landingPage/faq_v3.png`,
-				alt: Ke._("FAQ Snoo", null, {
+				alt: Je._("FAQ Snoo", null, {
 					hk: "DXQ0O"
 				})
 			}), i.a.createElement("h2", {
 				className: He.a.subtitle
-			}, Ke._("Want to know more?", null, {
+			}, Je._("Want to know more?", null, {
 				hk: "3vbn1B"
 			})), i.a.createElement(X.t, {
 				Icon: Object(_.b)("topic_reading"),
@@ -3549,11 +3551,11 @@
 				to: h("introduction")
 			}, i.a.createElement("span", {
 				className: He.a.docTextFull
-			}, Ke._("Community Points Documentation", null, {
+			}, Je._("Community Points Documentation", null, {
 				hk: "3nnz6o"
 			})), i.a.createElement("span", {
 				className: He.a.docTextShort
-			}, Ke._("Community Points Doc", null, {
+			}, Je._("Community Points Doc", null, {
 				hk: "1E9Ckc"
 			})))));
 			var Qe = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Features/feature.m.less"),
@@ -3820,13 +3822,13 @@
 					className: pt.a.featuresSection
 				}), i.a.createElement(mt, {
 					className: pt.a.vaultSection
-				}), i.a.createElement(Je, {
+				}), i.a.createElement(Ke, {
 					className: pt.a.faqSection
 				}), i.a.createElement(ze, {
 					className: pt.a.cryptoFutureSection
 				}), i.a.createElement(lt, {
 					className: pt.a.joinWaitlistSection
-				}))), !o && i.a.createElement(J, null))
+				}))), !o && i.a.createElement(K, null))
 			};
 			const bt = ({
 				anchorId: e
@@ -4143,4 +4145,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.32e33d675c014fbf425b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.de6e284a5730d4010518.js.map
