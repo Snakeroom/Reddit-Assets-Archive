@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.00c39bb4ca27c0a15519.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.85741671a04d89257738.js
+// Retrieved at 1/6/2022, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -77,9 +77,9 @@
 				i = n("./node_modules/lodash/debounce.js"),
 				o = n.n(i),
 				r = n("./node_modules/lodash/isEmpty.js"),
-				l = n.n(r),
-				a = n("./node_modules/react/index.js"),
-				d = n.n(a),
+				a = n.n(r),
+				l = n("./node_modules/react/index.js"),
+				d = n.n(l),
 				c = n("./node_modules/react-redux/es/index.js"),
 				m = n("./node_modules/reselect/es/index.js"),
 				u = n("./src/reddit/actions/contentControls/index.ts"),
@@ -217,20 +217,20 @@
 				z = n.n(Z);
 			var Q = ({
 					isLoading: e
-				}) => a.createElement("div", {
+				}) => l.createElement("div", {
 					className: Object(V.a)(z.a.container, Object(J.a)({
 						isLoading: !1
 					}))
-				}, K()(3).map(t => a.createElement("div", {
+				}, K()(3).map(t => l.createElement("div", {
 					key: t,
 					className: z.a.section
-				}, a.createElement("div", {
+				}, l.createElement("div", {
 					className: Object(V.a)(z.a.sectionTitle, Object(J.b)({
 						isLoading: e
 					}))
-				}), a.createElement("div", {
+				}), l.createElement("div", {
 					className: z.a.line
-				}), K()(2).map(t => a.createElement("div", {
+				}), K()(2).map(t => l.createElement("div", {
 					key: t,
 					className: Object(V.a)(z.a.sectionBodyRow, Object(J.b)({
 						isLoading: e
@@ -253,11 +253,11 @@
 				}, d.a.createElement("div", {
 					className: ie.a.labelText
 				}, e.label), e.children)),
-				le = (e, t, n) => {
+				ae = (e, t, n) => {
 					let s = Math.abs(parseInt(e, 10));
 					return Number.isInteger(s) ? (void 0 !== t && s < t && (s = t), void 0 !== n && s > n && (s = n), s) : null
 				};
-			const ae = e => null !== e ? e.toString() : "",
+			const le = e => null !== e ? e.toString() : "",
 				de = e => e.map(e => e.trim().toLowerCase()).filter(Boolean);
 			var ce = e => {
 					const {
@@ -293,14 +293,14 @@
 							max: s,
 							minLimit: i,
 							maxLimit: o
-						} = this.props, r = Math.min(i, 1), l = le(e.target.value, r, o), a = {
-							min: "min" === t ? l : n,
-							max: "max" === t ? l : s
+						} = this.props, r = Math.min(i, 1), a = ae(e.target.value, r, o), l = {
+							min: "min" === t ? a : n,
+							max: "max" === t ? a : s
 						};
 						this.props.onChange({
-							...a,
+							...l,
 							clientErrors: ce({
-								...a,
+								...l,
 								maxLimit: o,
 								minLimit: i
 							})
@@ -310,7 +310,7 @@
 							min: e,
 							max: t
 						} = this.props, n = this.minInputRef.current, s = this.maxInputRef.current;
-						n.value = ae(e), s.value = ae(t)
+						n.value = le(e), s.value = le(t)
 					}
 				}
 				render() {
@@ -320,13 +320,13 @@
 						maxLimit: n,
 						min: i,
 						minLimit: o
-					} = this.props, r = e.map(e => e.message), l = e.some(e => "both" === e.field), a = l || e.some(e => "min" === e.field), c = l || e.some(e => "max" === e.field);
+					} = this.props, r = e.map(e => e.message), a = e.some(e => "both" === e.field), l = a || e.some(e => "min" === e.field), c = a || e.some(e => "max" === e.field);
 					return d.a.createElement("div", {
 						onBlur: this.onBlur
 					}, d.a.createElement("div", null, d.a.createElement(ee.b, {
 						className: ue.a.minInput,
 						inputRef: this.minInputRef,
-						isInvalid: a,
+						isInvalid: l,
 						label: s.fbt._("min", null, {
 							hk: "1OxOYM"
 						}),
@@ -334,7 +334,7 @@
 						min: o,
 						onChange: this.onMinChange,
 						type: "number",
-						value: ae(i)
+						value: le(i)
 					}), d.a.createElement(ee.b, {
 						className: ue.a.maxInput,
 						inputRef: this.maxInputRef,
@@ -346,7 +346,7 @@
 						min: o,
 						onChange: this.onMaxChange,
 						type: "number",
-						value: ae(t)
+						value: le(t)
 					})), d.a.createElement($.a, {
 						className: ue.a.errorMessages,
 						messages: r
@@ -837,28 +837,9 @@
 							hk: "4C6oi2"
 						})
 					}
-				}, {
-					name: "hatefulContentThresholdIdentity",
-					title: () => s.fbt._("Identity based insults", null, {
-						hk: "92Dsx"
-					}),
-					descriptions: {
-						[N.a.Off]: () => s.fbt._("No content that contains identity based insults will be held for review.", null, {
-							hk: "1ry3dq"
-						}),
-						[N.a.Lenient]: () => s.fbt._("Some content that contains identity based insults will be held for review.", null, {
-							hk: "4rvRfN"
-						}),
-						[N.a.Moderate]: () => s.fbt._("Most content that contains identity based insults will be held for review.", null, {
-							hk: "3K50ly"
-						}),
-						[N.a.Strict]: () => s.fbt._("All content that contains identity based insults will be held for review.", null, {
-							hk: "2Qzbxi"
-						})
-					}
 				}],
-				lt = n("./src/reddit/components/ModHub/ContentControls/FormSections/HatefulContentFilters/index.m.less"),
-				at = n.n(lt);
+				at = n("./src/reddit/components/ModHub/ContentControls/FormSections/HatefulContentFilters/index.m.less"),
+				lt = n.n(at);
 
 			function dt(e) {
 				const {
@@ -866,11 +847,11 @@
 					onChange: n
 				} = e, i = "enabled" === Object(_e.a)("automated_reporting_wordlist"), o = Object(qe.a)();
 				return d.a.createElement("fieldset", null, d.a.createElement("legend", {
-					className: at.a.title
+					className: lt.a.title
 				}, s.fbt._("Automated Filtering", null, {
 					hk: "18gDSg"
 				})), i && d.a.createElement(d.a.Fragment, null, d.a.createElement("div", {
-					className: at.a.description,
+					className: lt.a.description,
 					key: "desc"
 				}, s.fbt._("Choose the content and keywords your community doesn’t allow. Posts and comments that violate the requirements you set will be automatically removed and reported.", null, {
 					hk: "2jHN3G"
@@ -930,11 +911,11 @@
 						})))
 					}
 				}))), d.a.createElement("div", {
-					className: at.a.options
+					className: lt.a.options
 				}, rt.map(e => {
 					const s = t.hatefulContentFilters[e.name];
 					return d.a.createElement(ot, {
-						className: at.a.filter,
+						className: lt.a.filter,
 						key: e.name,
 						currentLevel: s,
 						name: e.name,
@@ -1051,7 +1032,7 @@
 				Tt = e => Object.keys(e).some(t => {
 					if ("hatefulContentFilters" === t) return !1;
 					const n = e[t];
-					return n.enabled && !(l()(n.clientErrors) && l()(n.serverErrors))
+					return n.enabled && !(a()(n.clientErrors) && a()(n.serverErrors))
 				});
 			class Lt extends d.a.Component {
 				constructor() {
@@ -1215,7 +1196,7 @@
 					}, this.onRepostFrequencyChange = e => {
 						const {
 							formState: t
-						} = this.props, n = le(e.target.value, 1, I);
+						} = this.props, n = ae(e.target.value, 1, I);
 						this.props.onChange({
 							repostFrequency: {
 								...t.repostFrequency,
@@ -1398,7 +1379,7 @@
 						min: 1,
 						onChange: this.onRepostFrequencyChange,
 						type: "number",
-						value: ae(e.repostFrequency.days)
+						value: le(e.repostFrequency.days)
 					}))
 				}
 			}
@@ -1426,8 +1407,8 @@
 						bodyRestrictionPolicy: i,
 						domainBlacklist: o,
 						domainWhitelist: r,
-						guidelinesText: l,
-						isFlairRequired: a,
+						guidelinesText: a,
+						isFlairRequired: l,
 						linkRepostAge: d,
 						linkRestrictionPolicy: c,
 						titleBlacklistedStrings: m,
@@ -1440,8 +1421,8 @@
 						...U,
 						hatefulContentFilters: e.hatefulContentFilters,
 						guidelines: {
-							enabled: !(!l || !l.trim()),
-							guidelineText: l || "",
+							enabled: !(!a || !a.trim()),
+							guidelineText: a || "",
 							clientErrors: []
 						},
 						titleRequiredStrings: {
@@ -1498,7 +1479,7 @@
 							days: d
 						},
 						flairRequirement: {
-							enabled: a
+							enabled: l
 						}
 					}
 				};
@@ -1596,7 +1577,7 @@
 							postRequirements: s,
 							hatefulContentFilters: i
 						} = Ht(n, t);
-						if (l()(s) && l()(i)) return;
+						if (a()(s) && a()(i)) return;
 						this.setState({
 							isSavePending: !0
 						});
@@ -1626,7 +1607,7 @@
 							} = e, {
 								hatefulContentFilters: s,
 								postRequirements: i
-							} = Ht(t, n), o = !l()(s) || !l()(i);
+							} = Ht(t, n), o = !a()(s) || !a()(i);
 							return o !== e.hasUnsavedChanges ? {
 								hasUnsavedChanges: o
 							} : null
@@ -1777,4 +1758,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.00c39bb4ca27c0a15519.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.85741671a04d89257738.js.map
