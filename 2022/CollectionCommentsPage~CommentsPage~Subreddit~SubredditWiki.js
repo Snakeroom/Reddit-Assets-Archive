@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e0fd913945e35dfb143c.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.ecf779d3fa8bb0351ec9.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -823,7 +823,7 @@
 			const m = ({
 				space: e
 			}) => {
-				const t = Object(d.e)(c.X),
+				const t = Object(d.e)(c.W),
 					r = e === n.MODAL,
 					i = e === n.INFEED_UNIT;
 				return o.a.createElement("div", {
@@ -1681,12 +1681,12 @@
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const Z = Object(d.u)(),
 				Y = [G.Mb.SUBREDDIT, G.Mb.COMMENTS, G.Mb.COLLECTION_COMMENTS],
-				K = Object(i.c)({
+				J = Object(i.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && Y.indexOf(t.pageLayer.meta.name) > -1,
 					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.N)(t.pageLayer)
 				});
-			var J = Z(Object(a.b)(K, (e, t) => ({
+			var K = Z(Object(a.b)(J, (e, t) => ({
 					onTurnOffMetaFilter: () => e(Object(P.p)({
 						subredditId: t.subredditId,
 						forceState: !1
@@ -1782,7 +1782,7 @@
 				layout: e.layout,
 				disableFullscreen: e.disableFullscreen,
 				maxWidth: e.maxWidth
-			}, e.subredditId && s.a.createElement(s.a.Fragment, null, s.a.createElement(J, {
+			}, e.subredditId && s.a.createElement(s.a.Fragment, null, s.a.createElement(K, {
 				homeUrl: e.homeUrl,
 				isTopBannerVariant: e.isTopBannerVariant,
 				subredditId: e.subredditId
@@ -2259,7 +2259,7 @@
 				C = m.a.wrapped(o.a, "RawHTMLDisplay", y.a);
 			var I = Object(a.b)(() => Object(i.c)({
 					forceRedditStyle: x.l,
-					isNightmodeOn: v.X
+					isNightmodeOn: v.W
 				}))(e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -2342,10 +2342,10 @@
 				truncateThreshold: e.truncateThreshold,
 				widget: e.widget
 			}));
-			const K = Object(i.c)({
+			const J = Object(i.c)({
 					stylesheet: e => e.stylesheets
 				}),
-				J = Object(a.b)(K),
+				K = Object(a.b)(J),
 				$ = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
 			class X extends s.a.Component {
 				constructor() {
@@ -2384,7 +2384,7 @@
 					}))
 				}
 			}
-			var Q = J(X),
+			var Q = K(X),
 				ee = r("./src/reddit/components/Widgets/Image/ImageFrame.m.less"),
 				te = r.n(ee);
 			var re = m.a.div("ImageFrame", te.a),
@@ -2465,7 +2465,7 @@
 				ke = m.a.div("LinkContainer", fe.a),
 				Oe = Object(i.c)({
 					userIsBanned: he.bb,
-					userIsLoggedIn: v.K
+					userIsLoggedIn: v.J
 				});
 			var Ne = Object(a.b)(Oe)(e => {
 					const {
@@ -3170,4 +3170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.e0fd913945e35dfb143c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.ecf779d3fa8bb0351ec9.js.map

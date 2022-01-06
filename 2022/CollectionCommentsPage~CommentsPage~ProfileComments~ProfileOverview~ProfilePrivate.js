@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.71e6d67319233771364a.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.57edacc8741c49ddfa86.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -596,7 +596,7 @@
 				}, _ = e => async (t, n, {
 					apiContext: s
 				}) => {
-					if (!Object(v.K)(n())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(v.J)(n())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
 					const o = n().features.comments.models[e];
 					if (!o) return;
 					const r = o.isLocked ? m.l : m.e;
@@ -1316,8 +1316,8 @@
 				}))
 			};
 			var D = n("./src/lib/addQueryParams/index.ts"),
-				H = n("./src/reddit/actions/comment/index.ts"),
-				W = n("./src/reddit/actions/post.ts"),
+				W = n("./src/reddit/actions/comment/index.ts"),
+				H = n("./src/reddit/actions/post.ts"),
 				U = n("./src/reddit/components/HumanDate/index.tsx"),
 				V = n("./src/reddit/helpers/path/index.ts");
 			const G = e => {
@@ -1340,7 +1340,7 @@
 						}),
 						id: l,
 						onClick: e => {
-							z(c, n.id), d && (e.preventDefault(), c(Object(W.Y)(Object(V.b)(o), n.postId)))
+							z(c, n.id), d && (e.preventDefault(), c(Object(H.Y)(Object(V.b)(o), n.postId)))
 						},
 						onMouseEnter: m,
 						onMouseLeave: m,
@@ -1361,9 +1361,9 @@
 					}))
 				},
 				X = (e, t, n) => {
-					window.removeEventListener("focus", n), e(Object(H.g)({
+					window.removeEventListener("focus", n), e(Object(W.g)({
 						commentListNodeId: t
-					})), window.setTimeout(() => e(Object(H.g)({
+					})), window.setTimeout(() => e(Object(W.g)({
 						commentListNodeId: t
 					})), 5e3)
 				};
@@ -1777,12 +1777,12 @@
 					renderContractorBadge: !!w,
 					collapsed: s
 				}), N);
-				if (i.isDeleted) return r.a.createElement(He, Re({}, e, {
+				if (i.isDeleted) return r.a.createElement(We, Re({}, e, {
 					className: Object(d.a)(n, Fe.a.container, {
 						[Fe.a.collapsed]: s
 					})
 				}));
-				if (s) return r.a.createElement(We, Re({}, e, {
+				if (s) return r.a.createElement(He, Re({}, e, {
 					className: Object(d.a)(n, Fe.a.container, {
 						[Fe.a.collapsed]: s
 					})
@@ -1861,7 +1861,7 @@
 					tooltipType: I ? g.c.Lightbox : void 0
 				}))
 			});
-			const He = e => {
+			const We = e => {
 					const {
 						childrenInfo: t,
 						collapsed: n,
@@ -1888,7 +1888,7 @@
 						childrenInfo: t
 					}))
 				},
-				We = e => {
+				He = e => {
 					const {
 						comment: t,
 						className: n,
@@ -3265,7 +3265,7 @@
 				}, e.bottomButtonText)))),
 				I = Object(d.c)({
 					hideNSFWPref: E.C,
-					nightmode: E.X
+					nightmode: E.W
 				}),
 				j = Object(i.b)(I)(e => r.a.createElement("div", {
 					className: Object(c.a)(k.a.communityItemContainer, {
@@ -3439,10 +3439,10 @@
 						s = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
-						o = Object(v.X)(e);
+						o = Object(v.W)(e);
 					return s || o
 				},
-				nigtmode: v.X,
+				nigtmode: v.W,
 				subredditId: m.n,
 				topPostVariant: b.d
 			}));
@@ -4381,10 +4381,10 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.je,
+					experimentName: o.he,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === o.re.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === o.pe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				c = Object(s.a)(i.H, a, (e, t) => d(e, t));
 			Object(s.a)((e, t) => t, a, (e, t) => d(e, t))
 		},
@@ -4399,4 +4399,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.71e6d67319233771364a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate.57edacc8741c49ddfa86.js.map

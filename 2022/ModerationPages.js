@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.0b4fbcc30d0259acfca4.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.cc466e2dc90d1864e798.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -513,7 +513,7 @@
 					if (s) return;
 					a || n && !s || await t(Object(N.subredditDataRequested)(e, k, {}))
 				} else C && await t(Object(P.e)(C));
-				if (!Object(ge.K)(n()) && _ !== r.ec.Moderators && _ !== r.ec.SubredditRules && _ !== r.ec.Contributors) return void Object(m.a)(t, n());
+				if (!Object(ge.J)(n()) && _ !== r.ec.Moderators && _ !== r.ec.SubredditRules && _ !== r.ec.Contributors) return void Object(m.a)(t, n());
 				if (Object(p.i)(n(), !0, k, C), !_) return;
 				let K, V, z, X, Q, J, Y, Z, $, ee = !1;
 				switch (_) {
@@ -596,7 +596,7 @@
 				}
 				const te = n(),
 					ne = !!k && Object(pe.jb)(te),
-					se = Object(ge.H)(te),
+					se = Object(ge.G)(te),
 					ae = k ? Object(y.U)(te, {
 						subredditName: k.toLowerCase()
 					}) : Object(be.q)(te, {
@@ -2126,7 +2126,7 @@
 							await n(Object(l.o)(t.name))
 						}
 					})(), (async () => {
-						const s = Object(O.nb)(a, {
+						const s = Object(O.mb)(a, {
 							userName: t
 						});
 						if (!s) return;
@@ -3908,7 +3908,7 @@
 				}) => {
 					const {
 						audioRoom: t
-					} = e, n = () => Math.floor(10 * Math.random() + 1), r = Object(b.e)(h.X), [i, d] = Object(s.useState)(!1), [l, c] = Object(s.useState)(n());
+					} = e, n = () => Math.floor(10 * Math.random() + 1), r = Object(b.e)(h.W), [i, d] = Object(s.useState)(!1), [l, c] = Object(s.useState)(n());
 					return Object(s.useEffect)(() => {
 						const e = setInterval(() => {
 							d(!0), setTimeout(() => d(!1), 3500), c(n())
@@ -6966,7 +6966,7 @@
 				allowChatPostCreation: (e, t) => Object(M.b)(e, t.subredditId),
 				isBroadcastingEnabled: (e, t) => Object(P.c)(e, t.subredditId),
 				isChatPostsCreationEnabled: (e, t) => Object(M.c)(e, t.subredditId),
-				isEmployee: F.H,
+				isEmployee: F.G,
 				notificationSettings: A.b,
 				restrictions: R.m,
 				settings: (e, t) => Object(R.T)(e, t.subredditId),
@@ -8219,11 +8219,11 @@
 			const {
 				fbt: H
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), W = c.a.wrapped(P, "PrivateKey", B.a), q = c.a.div("ButtonsContainer", B.a), G = c.a.div("Container", B.a), K = c.a.div("ContainerExp", B.a), V = c.a.div("Description", B.a), z = c.a.div("PrivateSubredditDetails", B.a), X = c.a.div("PrivateSubredditDescription", B.a), Q = c.a.h3("PrivateSubredditName", B.a), J = c.a.a("Link", B.a), Y = c.a.wrapped(N.n, "LinkRouterButton", B.a), Z = c.a.wrapped(N.m, "LinkButton", B.a), $ = c.a.wrapped(N.q, "SecondaryLinkRouterButton", B.a), ee = c.a.wrapped(N.p, "SecondaryLinkButton", B.a), te = c.a.wrapped(Y, "GoHomeLinkButton", B.a), ne = c.a.wrapped(h.a, "CreateCommunityButton", B.a), se = c.a.img("Image", B.a), ae = c.a.img("ImagePlaceholder", B.a), re = c.a.wrapped(Y, "LeftLinkRouterButton", B.a), oe = c.a.wrapped(Z, "LeftLinkButton", B.a), ie = c.a.wrapped(ee, "SecondaryLeftLinkButton", B.a), de = c.a.wrapped($, "SecondaryLeftLinkRouterButton", B.a), le = c.a.h3("Title", B.a), ce = c.a.div("PageBody", B.a), me = c.a.div("QuarantineMessageWrapper", B.a), ue = Object(l.c)({
-				isLoggedIn: F.J,
+				isLoggedIn: F.I,
 				origin: D.j,
 				user: F.k,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(F.K)(e)) return !1;
+					if (!Object(F.J)(e)) return !1;
 					const t = Object(L.d)(e);
 					if (!t) return !1;
 					const n = Object(F.f)(e, t);
@@ -8679,8 +8679,8 @@
 			const E = "create-community-button",
 				v = x.a.wrapped(c.c, "StyledTooltip", f.a),
 				_ = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.ib)(e),
-					userIsSuspended: h.R
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.hb)(e),
+					userIsSuspended: h.Q
 				});
 			t.a = Object(o.b)(_, (e, {
 				eventSource: t
@@ -10174,7 +10174,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(g.nb)(e, {
+				user: (e, t) => Object(g.mb)(e, {
 					userName: t.username
 				})
 			});
@@ -10494,7 +10494,7 @@
 			const Ae = Object(o.c)({
 					activeTooltipId: h.a,
 					currentUser: g.k,
-					isLoggedIn: g.K,
+					isLoggedIn: g.J,
 					hideNSFWPref: g.C,
 					moderatorPermissions: (e, {
 						subredditId: t
@@ -10512,7 +10512,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: g.nb,
+					user: g.mb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(f.d)(e, {
@@ -19168,7 +19168,7 @@
 				ce = f.a.div("TickText", U.a),
 				me = f.a.div("PreSubText", U.a),
 				ue = Object(i.c)({
-					isNightModeOn: F.X
+					isNightModeOn: F.W
 				}),
 				pe = Object(r.b)(ue)(e => a.a.createElement(Q, {
 					last: e.last,
@@ -20716,10 +20716,10 @@
 					error: B.f,
 					isCreatePending: B.j,
 					isEmailInviteExperimentEnabled: U.a,
-					isEmployee: W.H,
+					isEmployee: W.G,
 					crosspostId: B.i,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(W.ib)(e),
-					userIsSuspended: W.R,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(W.hb)(e),
+					userIsSuspended: W.Q,
 					allTags: H.e,
 					existingTags: H.f,
 					newTags: H.g,
@@ -22115,7 +22115,7 @@
 					isChatPost: u.d,
 					isCurrentUserProfilePost: h.l,
 					isExpanded: h.m,
-					isLoggedIn: f.K,
+					isLoggedIn: f.J,
 					showPromotedCTA: g.a,
 					moderatorPermissions: p.l,
 					modModeEnabled: l.S,
@@ -25891,7 +25891,7 @@
 						profileName: t.match.params.profileName
 					})
 				}),
-				Qe = Object(i.b)(() => Object(d.a)(Ge, I.H, x.Q, Ve, I.eb, O.jb, Xe, ze, Ke, (e, t) => t.match.params.pageName, e => e, ({
+				Qe = Object(i.b)(() => Object(d.a)(Ge, I.G, x.Q, Ve, I.db, O.jb, Xe, ze, Ke, (e, t) => t.match.params.pageName, e => e, ({
 					contentGateInfo: e
 				}, t, n, {
 					moderatorPermissions: s
@@ -26171,7 +26171,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: s.Tc
 				});
-				return !(!t || Object(s.if)(t))
+				return !(!t || Object(s.gf)(t))
 			}
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
@@ -26301,10 +26301,10 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: a.je,
+					experimentName: a.he,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === a.re.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.pe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(s.a)(o.H, i, (e, t) => d(e, t));
 			Object(s.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -26583,4 +26583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0b4fbcc30d0259acfca4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.cc466e2dc90d1864e798.js.map

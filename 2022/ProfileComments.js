@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.45ed38bbf7b0e844b595.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.70095e83bf51cb809765.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, s) {
@@ -298,8 +298,8 @@
 				K = s("./node_modules/lodash/noop.js"),
 				R = s.n(K),
 				G = s("./src/reddit/actions/ads/index.ts"),
-				U = s("./src/reddit/actions/comment/list.ts"),
-				J = s("./src/reddit/actions/post.ts"),
+				J = s("./src/reddit/actions/comment/list.ts"),
+				U = s("./src/reddit/actions/post.ts"),
 				H = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				Q = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
 				V = s("./src/reddit/helpers/trackers/post.ts"),
@@ -348,13 +348,13 @@
 				},
 				re = Object(c.c)(se),
 				oe = Object(i.b)(re, e => ({
-					onBottomViewed: (t, s) => e(Object(U.c)(t, s)),
+					onBottomViewed: (t, s) => e(Object(J.c)(t, s)),
 					adBrandSafetyStatusReceived: t => {
 						e(G.d({
 							isViewSafe: t
 						}))
 					},
-					openPost: t => e(Object(J.L)(t)),
+					openPost: t => e(Object(U.L)(t)),
 					fireAdPixelsOfType: R.a,
 					trackOnPostEnteredViewport: R.a
 				}), (e, t, s) => ({
@@ -403,7 +403,7 @@
 				}).apply(this, arguments)
 			}
 			const Ce = Object(N.u)(),
-				Pe = Object(c.a)(N.D, ee.eb, (e, {
+				Pe = Object(c.a)(N.D, ee.db, (e, {
 					location: t
 				}) => o()([...Object(m.a)(t.search)]), N.Q, (e, {
 					match: t
@@ -411,7 +411,7 @@
 					match: t
 				}) => Object(xe.j)(e, {
 					profileName: t.params.profileName
-				}), ee.K, (e, {
+				}), ee.J, (e, {
 					match: t
 				}) => Object(ee.f)(e, d.ic + t.params.profileName), je.a, (e, t, s, r, o, n, a, i, c) => {
 					const {
@@ -517,4 +517,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.45ed38bbf7b0e844b595.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.70095e83bf51cb809765.js.map

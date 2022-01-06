@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.dc2794362cc7c1596ee7.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.a6966f71e872eb7202aa.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -190,11 +190,11 @@
 			const {
 				fbt: H
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = d.a.wrapped(D, "PrivateKey", U.a), G = d.a.div("ButtonsContainer", U.a), z = d.a.div("Container", U.a), W = d.a.div("ContainerExp", U.a), K = d.a.div("Description", U.a), Z = d.a.div("PrivateSubredditDetails", U.a), J = d.a.div("PrivateSubredditDescription", U.a), V = d.a.h3("PrivateSubredditName", U.a), Y = d.a.a("Link", U.a), Q = d.a.wrapped(R.n, "LinkRouterButton", U.a), X = d.a.wrapped(R.m, "LinkButton", U.a), $ = d.a.wrapped(R.q, "SecondaryLinkRouterButton", U.a), ee = d.a.wrapped(R.p, "SecondaryLinkButton", U.a), te = d.a.wrapped(Q, "GoHomeLinkButton", U.a), ne = d.a.wrapped(b.a, "CreateCommunityButton", U.a), re = d.a.img("Image", U.a), ae = d.a.img("ImagePlaceholder", U.a), oe = d.a.wrapped(Q, "LeftLinkRouterButton", U.a), se = d.a.wrapped(X, "LeftLinkButton", U.a), ie = d.a.wrapped(ee, "SecondaryLeftLinkButton", U.a), le = d.a.wrapped($, "SecondaryLeftLinkRouterButton", U.a), ce = d.a.h3("Title", U.a), de = d.a.div("PageBody", U.a), ue = d.a.div("QuarantineMessageWrapper", U.a), me = Object(c.c)({
-				isLoggedIn: N.J,
+				isLoggedIn: N.I,
 				origin: F.j,
 				user: N.k,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(N.K)(e)) return !1;
+					if (!Object(N.J)(e)) return !1;
 					const t = Object(M.d)(e);
 					if (!t) return !1;
 					const n = Object(N.f)(e, t);
@@ -535,8 +535,8 @@
 			const k = "create-community-button",
 				v = y.a.wrapped(d.c, "StyledTooltip", E.a),
 				g = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.ib)(e),
-					userIsSuspended: b.R
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.hb)(e),
+					userIsSuspended: b.Q
 				});
 			t.a = Object(s.b)(g, (e, {
 				eventSource: t
@@ -625,4 +625,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.dc2794362cc7c1596ee7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.a6966f71e872eb7202aa.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.5ba9e4394cd8a113089f.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.4597101b4c7edffaad1d.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -786,7 +786,7 @@
 				u = n("./src/reddit/models/Flair/index.ts"),
 				m = n("./src/reddit/selectors/user.ts");
 			const p = Object(c.c)({
-					labelNSFW: m.U
+					labelNSFW: m.T
 				}),
 				b = Object(i.b)(p),
 				f = e => {
@@ -1543,7 +1543,7 @@
 								experimentName: o.J,
 								expEventOverride: t
 							});
-							return !!(Object(o.if)(n) ? void 0 : n)
+							return !!(Object(o.gf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2509,4 +2509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.5ba9e4394cd8a113089f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.4597101b4c7edffaad1d.js.map

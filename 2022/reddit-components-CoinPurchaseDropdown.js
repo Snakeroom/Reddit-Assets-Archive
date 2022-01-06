@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.586a18e324ea81bb8d71.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.1c87412e61a58ef7be1d.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1084,7 +1084,7 @@
 				}) => {
 					t(m());
 					const d = r(),
-						l = Object(i.K)(d);
+						l = Object(i.J)(d);
 					try {
 						const r = !l,
 							n = await Object(a.b)({
@@ -1247,8 +1247,8 @@
 				U = r("./src/reddit/hooks/useLocale.ts"),
 				H = r("./src/reddit/models/Gold/Premium/index.ts"),
 				G = r("./src/reddit/selectors/crypto/points.ts"),
-				K = r("./src/reddit/selectors/experiments/econStorefrontClaim.ts"),
-				z = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				z = r("./src/reddit/selectors/experiments/econStorefrontClaim.ts"),
+				K = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				q = r("./src/reddit/selectors/user.ts"),
 				W = r("./src/reddit/components/LottieAnimation/index.tsx"),
 				V = r("./src/reddit/controls/Button/index.tsx"),
@@ -1291,22 +1291,22 @@
 						})
 					}, n)))
 				},
-				Q = r("./src/reddit/components/CompactCoinPurchaseList/index.m.less"),
-				J = r.n(Q);
+				J = r("./src/reddit/components/CompactCoinPurchaseList/index.m.less"),
+				Q = r.n(J);
 			const X = Object(E.c)({
-					coinPackages: z.d,
+					coinPackages: K.d,
 					communityPointsConversionEnabled: F.d.spPointsCoinConversion,
 					communityPointsName: (e, t) => {
 						var r;
 						const n = Object(D.r)(e, t);
 						return null === (r = Object(G.b)(e, null == n ? void 0 : n.id)) || void 0 === r ? void 0 : r.name
 					},
-					isFreeAwardEventEnabled: e => Object(K.a)(e) && Object(z.g)(e),
+					isFreeAwardEventEnabled: e => Object(z.a)(e) && Object(K.g)(e),
 					isPremiumCoinStoreUpsellEnabled: v.v,
 					isPremiumSubscriber: q.t,
-					premiumPackages: z.l,
-					purchaseCatalogError: z.n,
-					purchaseCatalogPending: z.o
+					premiumPackages: K.l,
+					purchaseCatalogError: K.n,
+					purchaseCatalogPending: K.o
 				}),
 				ee = Object(_.b)(X, e => ({
 					onClickClaimFreeAward: () => e(Object(L.h)(M.a.ECON_CLAIM_FREE_AWARD_MODAL)),
@@ -1337,7 +1337,7 @@
 							type: w.b.Reddit,
 							currency: w.a
 						}), i = {
-							buttonClass: J.a.premiumButtonStyle,
+							buttonClass: Q.a.premiumButtonStyle,
 							buttonSubtext: s ? P.fbt._("{number of bonus coins} bonus coins", [P.fbt._param("number of bonus coins", s)], {
 								hk: "YgHAT"
 							}) : void 0,
@@ -1423,13 +1423,13 @@
 							isFreeAwardEventEnabled: e
 						} = this.props;
 						return e ? o.a.createElement($, {
-							buttonClass: J.a.freeAwardButton,
+							buttonClass: Q.a.freeAwardButton,
 							buttonText: P.fbt._("Claim", null, {
 								hk: "OUYUl"
 							}),
 							icon: o.a.createElement(W.a, {
 								assetUrl: "https://www.redditstatic.com/gold/awards/animations/free_award/flying.json",
-								className: J.a.presentAnimation,
+								className: Q.a.presentAnimation,
 								loop: !0,
 								onClick: this.handleClickFreeAward
 							}),
@@ -1495,13 +1495,13 @@
 					return n ? o.a.createElement("div", {
 						className: e
 					}, o.a.createElement("div", {
-						className: J.a.loaderContainer
+						className: Q.a.loaderContainer
 					}, o.a.createElement(R.a, {
 						sizePx: 80
 					}))) : r || !t.length ? o.a.createElement("div", {
 						className: e
 					}, o.a.createElement("div", {
-						className: J.a.errorContainer
+						className: Q.a.errorContainer
 					}, P.fbt._("Oops, something went wrong", null, {
 						hk: "4EQRS8"
 					}))) : o.a.createElement("div", {
@@ -1858,4 +1858,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.586a18e324ea81bb8d71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.1c87412e61a58ef7be1d.js.map

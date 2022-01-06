@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.b856b1a5493c461ed540.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.0cf2236f2b6ff5843b41.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, o) {
@@ -71,7 +71,7 @@
 				E = e => async (t, o, {
 					apiContext: s
 				}) => {
-					if (!Object(k.K)(o())) return t(Object(a.j)()), void t(Object(m.k)({
+					if (!Object(k.J)(o())) return t(Object(a.j)()), void t(Object(m.k)({
 						actionSource: m.a.Save,
 						redirectUrl: Object(R.m)(o(), {
 							commentId: e
@@ -272,7 +272,7 @@
 				}, R = e => async (t, o, {
 					apiContext: s
 				}) => {
-					if (!Object(f.K)(o())) return void t(Object(i.i)(m.a.LOGIN_MODAL_ID));
+					if (!Object(f.J)(o())) return void t(Object(i.i)(m.a.LOGIN_MODAL_ID));
 					const n = o().features.comments.models[e];
 					if (!n) return;
 					const r = n.isLocked ? l.l : l.e;
@@ -1028,4 +1028,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.b856b1a5493c461ed540.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.0cf2236f2b6ff5843b41.js.map

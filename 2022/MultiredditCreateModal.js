@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.2113325a39589416bc34.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.1f39f93df250c677b89b.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, r) {
@@ -23,15 +23,15 @@
 			})), r.d(t, "createPending", (function() {
 				return H
 			})), r.d(t, "createSuccess", (function() {
-				return K
-			})), r.d(t, "createRequested", (function() {
 				return Q
+			})), r.d(t, "createRequested", (function() {
+				return K
 			})), r.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
 				return B
 			})), r.d(t, "duplicateFailure", (function() {
-				return $
-			})), r.d(t, "duplicatePending", (function() {
 				return J
+			})), r.d(t, "duplicatePending", (function() {
+				return $
 			})), r.d(t, "duplicateSuccess", (function() {
 				return V
 			})), r.d(t, "duplicateRequested", (function() {
@@ -235,7 +235,7 @@
 							multiredditsModelsState: n.multireddits.models
 						}))
 					}
-				}, W = Object(c.a)(L.e), H = Object(c.a)(L.f), K = Object(c.a)(L.g), Q = ({
+				}, W = Object(c.a)(L.e), H = Object(c.a)(L.f), Q = Object(c.a)(L.g), K = ({
 					description: e,
 					displayName: t,
 					shouldNavigate: r
@@ -262,7 +262,7 @@
 						const {
 							id: e
 						} = l;
-						if (await s(K({
+						if (await s(Q({
 								multireddit: S(m.body.data),
 								multiredditsModelsState: c.multireddits.models,
 								userId: e
@@ -306,7 +306,7 @@
 						sort: u,
 						t: Object(q.a)(u, g)
 					}))
-				}, $ = Object(c.a)(L.k), J = Object(c.a)(L.l), V = Object(c.a)(L.m), X = ({
+				}, J = Object(c.a)(L.k), $ = Object(c.a)(L.l), V = Object(c.a)(L.m), X = ({
 					description: e,
 					displayName: t,
 					fromName: r,
@@ -318,7 +318,7 @@
 						m = Object(I.k)(l);
 					if (!m || !m.displayText) return;
 					const b = Object(N.h)((s || m.displayText).toLowerCase(), r.toLowerCase());
-					d(J());
+					d($());
 					const j = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(O.a)(`${e.apiUrl}/api/multi/copy`),
 						data: {
@@ -348,7 +348,7 @@
 							}),
 							buttonAction: Object(n.b)(e.url)
 						}))
-					} else d($(j.error)), d(Object(p.f)({
+					} else d(J(j.error)), d(Object(p.f)({
 						text: i.fbt._("Something went wrong duplicating {multiName}", [i.fbt._param("multiName", r)], {
 							hk: "4bzN2D"
 						})
@@ -478,7 +478,7 @@
 					apiContext: o
 				}) => {
 					const c = n();
-					if (!Object(I.K)(c)) return;
+					if (!Object(I.J)(c)) return;
 					d(ue());
 					const l = await (({
 						context: e,
@@ -1273,4 +1273,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.2113325a39589416bc34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.1f39f93df250c677b89b.js.map

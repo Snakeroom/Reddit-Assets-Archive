@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.acd14bf3562cc14e3674.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.39e843a85f806615cb30.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -21,7 +21,7 @@
 				apiContext: n
 			}) => {
 				const u = a();
-				if (Object(d.K)(u))
+				if (Object(d.J)(u))
 					if (Object(l.f)(u)) await Object(o.g)(n(), e, t);
 					else {
 						await Object(r.d)(e);
@@ -1080,7 +1080,7 @@
 					isSubscribed: o
 				}));
 				return r && r.enableFollowers ? i : null
-			}, xe = e => Object(r.e)(t => Object(F.nb)(t, {
+			}, xe = e => Object(r.e)(t => Object(F.mb)(t, {
 				userName: e
 			})), fe = e => Object(r.e)(t => Object(D.db)(t, {
 				identifier: {
@@ -1132,7 +1132,7 @@
 			})), ge = e => {
 				const t = Object(r.e)(F.k),
 					s = Object(r.e)(F.C),
-					a = Object(r.e)(F.eb);
+					a = Object(r.e)(F.db);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!a && !s))))
 			}
 		},
@@ -1666,4 +1666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.acd14bf3562cc14e3674.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.39e843a85f806615cb30.js.map

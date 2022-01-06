@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.df3481a93b00fed03131.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.3709bb3f2a7b25111d06.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -587,13 +587,13 @@
 				}))(H),
 				K = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				V = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				Q = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
-				z = s.n(Q);
-			const G = Object(K.u)(),
+				G = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
+				Q = s.n(G);
+			const z = Object(K.u)(),
 				J = Object(c.c)({
 					isFakeSubreddit: K.y
 				});
-			var Y = G(Object(a.b)(J)(({
+			var Y = z(Object(a.b)(J)(({
 					className: e,
 					showSubreddit: t,
 					...s
@@ -602,27 +602,27 @@
 					return o.a.createElement("div", {
 						className: Object(L.a)(A.a.container, e)
 					}, o.a.createElement("div", {
-						className: z.a.mainBody
+						className: Q.a.mainBody
 					}, o.a.createElement("div", {
-						className: z.a.content
+						className: Q.a.content
 					}, o.a.createElement("div", null, o.a.createElement("div", {
-						className: Object(L.a)(z.a.title, n)
+						className: Object(L.a)(Q.a.title, n)
 					}), t && o.a.createElement("div", {
-						className: Object(L.a)(z.a.meta, n)
+						className: Object(L.a)(Q.a.meta, n)
 					})), o.a.createElement("div", {
-						className: z.a.flatlist
+						className: Q.a.flatlist
 					}, o.a.createElement("div", {
-						className: Object(L.a)(z.a.flatlistExpando, n)
+						className: Object(L.a)(Q.a.flatlistExpando, n)
 					}), o.a.createElement("div", {
-						className: z.a.flatlistSeparator
+						className: Q.a.flatlistSeparator
 					}), o.a.createElement("div", {
-						className: Object(L.a)(z.a.flatlistItemOne, n)
+						className: Object(L.a)(Q.a.flatlistItemOne, n)
 					}), o.a.createElement("div", {
-						className: Object(L.a)(z.a.flatlistItemTwo, n)
+						className: Object(L.a)(Q.a.flatlistItemTwo, n)
 					}))), o.a.createElement("div", {
-						className: z.a.thumbnailContainer
+						className: Q.a.thumbnailContainer
 					}, o.a.createElement("div", {
-						className: Object(L.a)(z.a.thumbnail, n)
+						className: Object(L.a)(Q.a.thumbnail, n)
 					}))))
 				})),
 				X = s("./src/reddit/components/SubredditMention/SubredditIcon/index.tsx"),
@@ -637,7 +637,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), re = e => `subreddit-mention-${e}`, oe = Object(c.c)({
 				haveError: C.d,
 				hideNSFWPref: te.C,
-				isEmployee: te.H,
+				isEmployee: te.G,
 				isPending: C.c,
 				postIds: C.f,
 				subreddit: S.a,
@@ -1378,11 +1378,11 @@
 			})), s.d(t, "f", (function() {
 				return V
 			})), s.d(t, "g", (function() {
-				return Q
-			})), s.d(t, "i", (function() {
-				return z
-			})), s.d(t, "k", (function() {
 				return G
+			})), s.d(t, "i", (function() {
+				return Q
+			})), s.d(t, "k", (function() {
+				return z
 			})), s.d(t, "l", (function() {
 				return J
 			})), s.d(t, "j", (function() {
@@ -1612,7 +1612,7 @@
 						noun: n.ITEM_POST
 					})
 				},
-				Q = (e, t, s, i) => {
+				G = (e, t, s, i) => {
 					const r = F();
 					return e => ({
 						...O(e, r),
@@ -1624,7 +1624,7 @@
 						noun: n.ITEM_POST_SUBREDDIT
 					})
 				},
-				z = (e, t, s) => {
+				Q = (e, t, s) => {
 					const i = F();
 					return e => ({
 						...O(e, i),
@@ -1635,7 +1635,7 @@
 						noun: n.ITEM_SUBREDDIT
 					})
 				},
-				G = (e, t, s, i) => {
+				z = (e, t, s, i) => {
 					const r = F();
 					return e => ({
 						...O(e, r),
@@ -1736,4 +1736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.df3481a93b00fed03131.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.3709bb3f2a7b25111d06.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.bebd14b19e633dc19f06.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.00de0648ea09d6601abd.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -914,7 +914,7 @@
 				h = n.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(r.b)(() => Object(i.c)({
-					isNightmodeOn: m.X
+					isNightmodeOn: m.W
 				}));
 			t.a = f(e => {
 				const t = {
@@ -1012,7 +1012,7 @@
 						style: t
 					}, e.children)
 				},
-				P = Object(i.b)(() => Object(c.a)(v.G, C.db, (e, {
+				P = Object(i.b)(() => Object(c.a)(v.G, C.cb, (e, {
 					isSponsored: t,
 					postId: n
 				}) => t && n ? Object(v.b)(e, n) : null, _.a, j.d, v.H, (e, t, n, s, o, r) => ({
@@ -2999,12 +2999,12 @@
 						rtJsonElementProps: r
 					});
 					switch (s) {
-						case b.Pe.SmIcon:
+						case b.Ne.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: r
 							});
-						case b.Pe.SmIconHc:
+						case b.Ne.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -3555,10 +3555,10 @@
 						s = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
-						o = Object(x.X)(e);
+						o = Object(x.W)(e);
 					return s || o
 				},
-				nigtmode: x.X,
+				nigtmode: x.W,
 				subredditId: u.n,
 				topPostVariant: b.d
 			}));
@@ -4762,12 +4762,12 @@
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Je
+						experimentName: s.He
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Pe.SmIcon || t === s.Pe.SmIconHc
+					return t === s.Ne.SmIcon || t === s.Ne.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -4790,4 +4790,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.bebd14b19e633dc19f06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.00de0648ea09d6601abd.js.map

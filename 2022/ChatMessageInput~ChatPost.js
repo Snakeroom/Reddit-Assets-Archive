@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.ae5d264fac4942542785.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.9479c79e360868326f4d.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -314,7 +314,7 @@
 				p = n.n(h);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				x = Object(o.b)(() => Object(a.c)({
-					isNightmodeOn: m.X
+					isNightmodeOn: m.W
 				}));
 			t.a = x(e => {
 				const t = {
@@ -412,7 +412,7 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(a.b)(() => Object(c.a)(j.G, O.db, (e, {
+				N = Object(a.b)(() => Object(c.a)(j.G, O.cb, (e, {
 					isSponsored: t,
 					postId: n
 				}) => t && n ? Object(j.b)(e, n) : null, _.a, C.d, j.H, (e, t, n, s, r, o) => ({
@@ -1934,12 +1934,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.Pe.SmIcon:
+						case b.Ne.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.Pe.SmIconHc:
+						case b.Ne.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: n,
 								isHoverable: !0,
@@ -2324,12 +2324,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Je
+						experimentName: s.He
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Pe.SmIcon || t === s.Pe.SmIconHc
+					return t === s.Ne.SmIcon || t === s.Ne.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2352,4 +2352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.ae5d264fac4942542785.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.9479c79e360868326f4d.js.map

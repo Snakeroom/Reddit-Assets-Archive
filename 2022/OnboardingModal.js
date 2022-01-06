@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.5fe5b0745f87dcef9aa4.js
-// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.fe221fc0ce98af66823b.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal", "OnboardingActions"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -190,7 +190,7 @@
 					const s = t(),
 						a = Object(m.e)(s),
 						o = Object(m.d)(s),
-						d = Object(b.J)(s);
+						d = Object(b.I)(s);
 					if (a || !o) return;
 					e(h());
 					let p = !1;
@@ -265,7 +265,7 @@
 						i = Object(m.g)(o);
 					if (Object(m.f)(o) || null === i || "client" === i) {
 						const n = null === (s = null === (r = Object(p.b)(t())) || void 0 === r ? void 0 : r.routeMatch) || void 0 === s ? void 0 : s.route.chunk,
-							i = Object(b.K)(o);
+							i = Object(b.J)(o);
 						return Object(a.i)(() => e(E()), {
 							name: "getFocusedVerticalsRequested",
 							page: n,
@@ -350,7 +350,7 @@
 						sort: l,
 						t: u,
 						correlationId: m
-					} = t, p = Object(N.T)(e) || Object(N.K)(e), g = Object(I.q)(e), h = {
+					} = t, p = Object(N.S)(e) || Object(N.J)(e), g = Object(I.q)(e), h = {
 						adContext: {
 							layout: i ? i.toUpperCase() : b.a.Card,
 							reddaid: e.user.reddaid,
@@ -565,8 +565,8 @@
 					const b = ce()();
 					t.correlationId = b;
 					const f = null === (c = null === (i = Object(I.b)(u)) || void 0 === i ? void 0 : i.routeMatch) || void 0 === c ? void 0 : c.route.chunk,
-						g = Object(N.K)(u),
-						h = await Object(m.i)(() => R(a.gqlContext(), T(u, t), Object(N.T)(u), t.statsdPathsForExperiments), {
+						g = Object(N.J)(u),
+						h = await Object(m.i)(() => R(a.gqlContext(), T(u, t), Object(N.S)(u), t.statsdPathsForExperiments), {
 							name: "fetchFrontpageData",
 							isLoggedIn: g,
 							page: f
@@ -645,7 +645,7 @@
 					const s = t();
 					if (Object(ne.a)(s)) return;
 					const a = null === (r = null === (n = Object(I.b)(t())) || void 0 === n ? void 0 : n.routeMatch) || void 0 === r ? void 0 : r.route.chunk,
-						o = Object(N.K)(s);
+						o = Object(N.J)(s);
 					return Object(m.i)(() => e(Object(te.d)()), {
 						name: "frontpageLinksRequested",
 						page: a,
@@ -699,7 +699,7 @@
 								t && (f.clickUrl = t)
 							}
 							f.correlationId = s.listings.postOrder.correlationIds[u];
-							const g = () => R(r(), T(s, f), Object(N.T)(s), p),
+							const g = () => R(r(), T(s, f), Object(N.S)(s), p),
 								h = await g(),
 								x = {
 									...h.body,
@@ -2406,7 +2406,7 @@
 				le = h.a.div("TickText", A.a),
 				ue = h.a.div("PreSubText", A.a),
 				me = Object(i.c)({
-					isNightModeOn: F.X
+					isNightModeOn: F.W
 				}),
 				pe = Object(a.b)(me)(e => s.a.createElement(J, {
 					last: e.last,
@@ -3774,7 +3774,7 @@
 				v = e => e.focusedVerticals.category,
 				O = e => e.focusedVerticals.lastLoadedEnv,
 				C = e => {
-					const t = Object(i.J)(e),
+					const t = Object(i.I)(e),
 						n = s.d.geoSubredditRecommendationDULoggedIn(e),
 						r = s.d.geoSubredditRecommendationDULoggedOut(e);
 					return t && n || !t && r
@@ -3806,4 +3806,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.5fe5b0745f87dcef9aa4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.fe221fc0ce98af66823b.js.map

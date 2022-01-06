@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.7c2a1b73a354d00c4454.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.333af635429d6bd79692.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -147,9 +147,9 @@
 			})), r.d(t, "myMultiredditsRequested", (function() {
 				return G
 			})), r.d(t, "createFailure", (function() {
-				return z
-			})), r.d(t, "createPending", (function() {
 				return W
+			})), r.d(t, "createPending", (function() {
+				return z
 			})), r.d(t, "createSuccess", (function() {
 				return H
 			})), r.d(t, "createRequested", (function() {
@@ -363,7 +363,7 @@
 							multiredditsModelsState: d.multireddits.models
 						}))
 					}
-				}, z = Object(c.a)(R.e), W = Object(c.a)(R.f), H = Object(c.a)(R.g), Q = ({
+				}, W = Object(c.a)(R.e), z = Object(c.a)(R.f), H = Object(c.a)(R.g), Q = ({
 					description: e,
 					displayName: t,
 					shouldNavigate: r
@@ -373,7 +373,7 @@
 					const c = n(),
 						l = Object(P.k)(c);
 					if (!l) return;
-					i(W());
+					i(z());
 					const m = await ((e, t, r) => Object(h.a)(Object(f.a)(e, [x.a]), {
 						endpoint: Object(E.a)(`${e.apiUrl}/api/multi`),
 						data: {
@@ -404,7 +404,7 @@
 								hk: "258cY9"
 							})
 						}))
-					} else i(z(m.error))
+					} else i(W(m.error))
 				}, V = () => async (e, t, {
 					apiContext: r
 				}) => {
@@ -606,7 +606,7 @@
 					apiContext: a
 				}) => {
 					const c = d();
-					if (!Object(P.K)(c)) return;
+					if (!Object(P.J)(c)) return;
 					n(ue());
 					const l = await (({
 						context: e,
@@ -1169,15 +1169,15 @@
 				A = r("./src/reddit/controls/Button/index.tsx"),
 				B = r("./src/reddit/models/Multireddit/index.ts"),
 				G = r("./src/reddit/components/MultiredditInfo/ObsoleteMultiredditInfo/SubredditsOrProfilesList.tsx"),
-				z = r("./src/reddit/components/MultiredditInfo/ObsoleteMultiredditInfo/index.m.less"),
-				W = r.n(z),
+				W = r("./src/reddit/components/MultiredditInfo/ObsoleteMultiredditInfo/index.m.less"),
+				z = r.n(W),
 				H = r("./src/lib/lessComponent.tsx");
-			const Q = H.a.div("SidebarTopSpacer", W.a),
-				V = H.a.div("ModalTopSpacer", W.a),
-				K = H.a.div("SidebarTitleContainer", W.a),
-				Z = H.a.div("SidebarTitle", W.a),
-				Y = H.a.wrapped(M.a, "SidebarFlair", W.a),
-				X = H.a.div("Attributon", W.a),
+			const Q = H.a.div("SidebarTopSpacer", z.a),
+				V = H.a.div("ModalTopSpacer", z.a),
+				K = H.a.div("SidebarTitleContainer", z.a),
+				Z = H.a.div("SidebarTitle", z.a),
+				Y = H.a.wrapped(M.a, "SidebarFlair", z.a),
+				X = H.a.div("Attributon", z.a),
 				J = ({
 					children: e,
 					className: t
@@ -1192,8 +1192,8 @@
 				}) => {
 					const i = !r || "number" != typeof r.height || r.height > 152;
 					return o.a.createElement("div", null, o.a.createElement(J, {
-						className: Object(u.a)(W.a.FadingDescription, {
-							[W.a.shouldFade]: i
+						className: Object(u.a)(z.a.FadingDescription, {
+							[z.a.shouldFade]: i
 						})
 					}, e), i && o.a.createElement(A.r, {
 						onClick: t
@@ -1235,7 +1235,7 @@
 						type: q.a.PROFILE
 					})) || []];
 					return o.a.createElement("div", {
-						className: Object(u.a)(W.a.Component, e.className)
+						className: Object(u.a)(z.a.Component, e.className)
 					}, l(), m(), o.a.createElement(G.b, {
 						isSidebar: d,
 						onSeeMoreDetails: i,
@@ -1636,8 +1636,8 @@
 				Ae = r("./src/reddit/components/SidebarSectionHeader/index.m.less"),
 				Be = r.n(Ae),
 				Ge = H.a.div("Component", Be.a),
-				ze = r("./src/reddit/components/SidebarStickyBottom/index.tsx"),
-				We = r("./src/reddit/constants/zIndex.ts"),
+				We = r("./src/reddit/components/SidebarStickyBottom/index.tsx"),
+				ze = r("./src/reddit/constants/zIndex.ts"),
 				He = r("./src/reddit/controls/TextButton/index.tsx"),
 				Qe = r("./src/reddit/helpers/trackers/idCard.ts"),
 				Ve = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
@@ -1668,7 +1668,7 @@
 				}, o.a.createElement(m.b, null)))),
 				$e = e => o.a.createElement(Je, Xe({}, e, {
 					overlayCustomStyles: {
-						zIndex: We.b
+						zIndex: ze.b
 					},
 					withOverlay: !0
 				})),
@@ -1745,7 +1745,7 @@
 					}) : null, n && o.a.createElement(Fe, {
 						multireddit: r,
 						multiUsername: s
-					}), o.a.createElement(ze.a, null))
+					}), o.a.createElement(We.a, null))
 				}
 			}
 			t.a = st(it)
@@ -1917,8 +1917,8 @@
 			}
 			const f = Object(o.c)({
 					currentUser: c.k,
-					isNightMode: c.X,
-					isPresenceUserPrefEnabled: c.P,
+					isNightMode: c.W,
+					isPresenceUserPrefEnabled: c.O,
 					shouldHideNSFW: c.C
 				}),
 				x = Object(d.b)(f);
@@ -2672,4 +2672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.7c2a1b73a354d00c4454.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit~reddit-components-AdHocMultiredditSidebar.333af635429d6bd79692.js.map

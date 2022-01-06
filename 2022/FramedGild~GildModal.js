@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b2d764d73bce38b34adf.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.6afce1c007c739a74f31.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -1856,7 +1856,7 @@
 				}) => {
 					t(p());
 					const d = n(),
-						l = Object(c.K)(d);
+						l = Object(c.J)(d);
 					try {
 						const n = !l,
 							r = await Object(i.b)({
@@ -2813,7 +2813,7 @@
 					isAnonymous: S.f,
 					iFramed: S.g,
 					isGildPending: S.e,
-					isEmployee: F.H,
+					isEmployee: F.G,
 					isRecommendedCoinPackagePending: M.p,
 					message: S.c,
 					postOrComment: (e, {
@@ -3217,7 +3217,7 @@
 				b = n.n(p);
 			const h = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(a.b)(() => Object(o.c)({
-					isNightmodeOn: m.X
+					isNightmodeOn: m.W
 				}));
 			t.a = f(e => {
 				const t = {
@@ -3315,7 +3315,7 @@
 						style: t
 					}, e.children)
 				},
-				S = Object(o.b)(() => Object(c.a)(v.G, j.db, (e, {
+				S = Object(o.b)(() => Object(c.a)(v.G, j.cb, (e, {
 					isSponsored: t,
 					postId: n
 				}) => t && n ? Object(v.b)(e, n) : null, O.a, y.d, v.H, (e, t, n, r, s, a) => ({
@@ -4762,12 +4762,12 @@
 						rtJsonElementProps: a
 					});
 					switch (r) {
-						case h.Pe.SmIcon:
+						case h.Ne.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: a
 							});
-						case h.Pe.SmIconHc:
+						case h.Ne.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5787,12 +5787,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: r.Je
+						experimentName: r.He
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.Pe.SmIcon || t === r.Pe.SmIconHc
+					return t === r.Ne.SmIcon || t === r.Ne.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5824,4 +5824,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b2d764d73bce38b34adf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.6afce1c007c739a74f31.js.map

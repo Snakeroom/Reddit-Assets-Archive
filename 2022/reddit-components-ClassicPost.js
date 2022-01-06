@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.1c7ec442d4fa27f275f6.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.f85a72f42db9c1937d48.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1954,7 +1954,7 @@
 				}) => {
 					const {
 						audioRoom: t
-					} = e, n = () => Math.floor(10 * Math.random() + 1), o = Object(f.e)(b.X), [a, c] = Object(s.useState)(!1), [d, l] = Object(s.useState)(n());
+					} = e, n = () => Math.floor(10 * Math.random() + 1), o = Object(f.e)(b.W), [a, c] = Object(s.useState)(!1), [d, l] = Object(s.useState)(n());
 					return Object(s.useEffect)(() => {
 						const e = setInterval(() => {
 							c(!0), setTimeout(() => c(!1), 3500), l(n())
@@ -3324,7 +3324,7 @@
 					}) => Object(p.q)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: F.db
+					shouldOpenPostInNewTab: F.cb
 				}),
 				K = e => {
 					const {
@@ -3525,7 +3525,7 @@
 					isChatPost: m.d,
 					isCurrentUserProfilePost: b.l,
 					isExpanded: b.m,
-					isLoggedIn: x.K,
+					isLoggedIn: x.J,
 					showPromotedCTA: h.a,
 					moderatorPermissions: p.l,
 					modModeEnabled: d.S,
@@ -4712,13 +4712,13 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: r.je,
+					experimentName: r.he,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.re.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.pe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(i.H, a, (e, t) => c(e, t));
 			Object(s.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.1c7ec442d4fa27f275f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.f85a72f42db9c1937d48.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.24eeca801f8eb281e437.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.173e557e6505a9c95534.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -922,7 +922,7 @@
 						share: l,
 						source: u
 					} = e, m = n();
-					s && Object(d.a)(Object(a.e)(s)(m)), Object(c.K)(m) ? await t(Object(o.h)(i.a.SNOOVATAR_MODAL, {
+					s && Object(d.a)(Object(a.e)(s)(m)), Object(c.J)(m) ? await t(Object(o.h)(i.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u
 					})) : await t(Object(r.i)())
@@ -1512,7 +1512,7 @@
 					}) => Object(p.q)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: F.db
+					shouldOpenPostInNewTab: F.cb
 				}),
 				Z = e => {
 					const {
@@ -2658,7 +2658,7 @@
 				d = (e, t) => n => {
 					const {
 						id: r
-					} = Object(i.nb)(n, {
+					} = Object(i.mb)(n, {
 						userName: t
 					});
 					return {
@@ -3554,7 +3554,7 @@
 					minSize: t,
 					userName: n
 				}) => {
-					const r = Object(c.nb)(e, {
+					const r = Object(c.mb)(e, {
 						userName: n
 					});
 					if (r && r.awardedLastMonth && r.awardedLastMonth.topAward) return f(e, {
@@ -3675,4 +3675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.24eeca801f8eb281e437.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.173e557e6505a9c95534.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.642e3f8166ab16d1c60f.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.20a61100e3857deaea91.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -494,7 +494,7 @@
 							await n(Object(d.o)(t.name))
 						}
 					})(), (async () => {
-						const r = Object(y.nb)(s, {
+						const r = Object(y.mb)(s, {
 							userName: t
 						});
 						if (!r) return;
@@ -758,7 +758,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(v.nb)(e, {
+				user: (e, t) => Object(v.mb)(e, {
 					userName: t.username
 				})
 			});
@@ -1078,7 +1078,7 @@
 			const Le = Object(o.c)({
 					activeTooltipId: f.a,
 					currentUser: v.k,
-					isLoggedIn: v.K,
+					isLoggedIn: v.J,
 					hideNSFWPref: v.C,
 					moderatorPermissions: (e, {
 						subredditId: t
@@ -1096,7 +1096,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: v.nb,
+					user: v.mb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(x.d)(e, {
@@ -3641,7 +3641,7 @@
 					subredditId: t,
 					username: n
 				}) => {
-					const r = Object(o.nb)(e, {
+					const r = Object(o.mb)(e, {
 						userName: n
 					});
 					if (!r) return;
@@ -3671,4 +3671,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.642e3f8166ab16d1c60f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.20a61100e3857deaea91.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.694d545a4aaf0ba367e4.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.5e67e3ab80db23fdc6ea.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -131,7 +131,7 @@
 					audioRoom: n
 				} = e, {
 					recordingStatus: u
-				} = n, [E, f] = Object(o.useState)(new Set), [h, g] = Object(o.useState)(new Set), x = Object(r.e)(l.X), [O, P] = Object(o.useState)(-1), _ = e => {
+				} = n, [E, f] = Object(o.useState)(new Set), [h, g] = Object(o.useState)(new Set), x = Object(r.e)(l.W), [O, P] = Object(o.useState)(-1), _ = e => {
 					const t = e ? Array.from(h) : Array.from(E);
 					return null == t ? void 0 : t.map((t, n) => {
 						return e ? s.a.createElement("div", {
@@ -382,7 +382,7 @@
 			}) => {
 				const n = Object(b.eb)(),
 					a = Object(b.x)(n),
-					r = Object(s.e)(v.X);
+					r = Object(s.e)(v.W);
 				return o.a.createElement("div", h({}, t, {
 					className: Object(p.a)(e, f.a.container, {
 						[f.a.commentsPage]: a,
@@ -493,7 +493,7 @@
 				className: n,
 				...a
 			}) => {
-				const r = Object(s.e)(v.X),
+				const r = Object(s.e)(v.W),
 					i = Math.floor(100 * e / t);
 				return o.a.createElement("div", M({
 					className: Object(p.a)(B.a.container, n, {
@@ -516,11 +516,11 @@
 				D = n("./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/index.tsx"),
 				U = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
 				$ = n("./src/reddit/actions/economics/helpers/index.ts"),
-				G = n("./src/reddit/actions/economics/predictions/index.ts"),
-				X = n("./src/reddit/actions/post.ts"),
+				W = n("./src/reddit/actions/economics/predictions/index.ts"),
+				G = n("./src/reddit/actions/post.ts"),
 				H = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
 				z = n("./src/reddit/helpers/trackers/predictions.ts"),
-				W = n("./src/reddit/hooks/useToast.tsx"),
+				X = n("./src/reddit/hooks/useToast.tsx"),
 				Z = n("./src/reddit/models/Vote/index.ts"),
 				q = n("./src/reddit/selectors/experiments/econ/index.ts");
 			const {
@@ -556,7 +556,7 @@
 						r = Object(s.e)(v.e),
 						i = Object(s.e)(q.n),
 						c = Object(d.a)(),
-						u = Object(W.a)(),
+						u = Object(X.a)(),
 						{
 							startDelayedUpvoteAnimation: m
 						} = Object(H.a)(n.id),
@@ -594,14 +594,14 @@
 								selectedNumberTokens: t.amount
 							}));
 							try {
-								await a(Object(G.r)({
+								await a(Object(W.r)({
 									coinPackageId: t.id,
 									selectedOptionId: P,
 									price: t.amount,
 									pollId: p,
 									tournamentId: e,
 									tournamentPostId: n.id
-								})), i && h < Z.a.upvoted && (a(Object(X.jb)(f)), a(Object(X.jb)(p)), m()), O(!1), _(null), y(!0)
+								})), i && h < Z.a.upvoted && (a(Object(G.jb)(f)), a(Object(G.jb)(p)), m()), O(!1), _(null), y(!0)
 							} catch (o) {
 								O(!1), _(null), u(K._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
@@ -640,7 +640,7 @@
 					post: e,
 					predictions: t
 				}) => {
-					const n = Object(s.e)(v.X),
+					const n = Object(s.e)(v.W),
 						a = t.reduce((e, {
 							userSelection: t
 						}) => t ? e + 1 : e, 0),
@@ -818,4 +818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.694d545a4aaf0ba367e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.5e67e3ab80db23fdc6ea.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.59a7d2e1b85eaf9d1272.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.268de0a7ec421209e272.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -29,7 +29,7 @@
 			})), s.d(t, "d", (function() {
 				return q
 			})), s.d(t, "a", (function() {
-				return J
+				return X
 			})), s.d(t, "b", (function() {
 				return W
 			})), s.d(t, "n", (function() {
@@ -71,7 +71,7 @@
 				S = e => async (t, s, {
 					apiContext: o
 				}) => {
-					if (!Object(C.K)(s())) return t(Object(a.j)()), void t(Object(l.k)({
+					if (!Object(C.J)(s())) return t(Object(a.j)()), void t(Object(l.k)({
 						actionSource: l.a.Save,
 						redirectUrl: Object(R.m)(s(), {
 							commentId: e
@@ -219,7 +219,7 @@
 						commentsPageKey: t,
 						isCollapsed: i
 					})), 0 === s && o(c, !0), Object(u.d)()
-				}, X = Object(d.a)(T.r), J = e => t => t(X({
+				}, J = Object(d.a)(T.r), X = e => t => t(J({
 					draftKey: e
 				})), W = Object(d.a)(T.a), V = Object(d.a)(T.E), Y = Object(d.a)(T.b), ee = Object(d.a)(T.u)
 		},
@@ -272,7 +272,7 @@
 				}, R = e => async (t, s, {
 					apiContext: o
 				}) => {
-					if (!Object(f.K)(s())) return void t(Object(c.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(f.J)(s())) return void t(Object(c.i)(l.a.LOGIN_MODAL_ID));
 					const n = s().features.comments.models[e];
 					if (!n) return;
 					const r = n.isLocked ? m.l : m.e;
@@ -1186,4 +1186,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.59a7d2e1b85eaf9d1272.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.268de0a7ec421209e272.js.map

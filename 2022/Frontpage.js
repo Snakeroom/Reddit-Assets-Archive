@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.11aec1217551e13725c7.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b6908a0bafa46da3c30d.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -445,7 +445,7 @@
 						sort: d,
 						t: u,
 						correlationId: m
-					} = t, p = Object(S.T)(e) || Object(S.K)(e), g = Object(C.q)(e), f = {
+					} = t, p = Object(S.S)(e) || Object(S.J)(e), g = Object(C.q)(e), f = {
 						adContext: {
 							layout: o ? o.toUpperCase() : b.a.Card,
 							reddaid: e.user.reddaid,
@@ -660,8 +660,8 @@
 					const b = ie()();
 					t.correlationId = b;
 					const h = null === (i = null === (o = Object(C.b)(u)) || void 0 === o ? void 0 : o.routeMatch) || void 0 === i ? void 0 : i.route.chunk,
-						g = Object(S.K)(u),
-						f = await Object(m.i)(() => T(r.gqlContext(), P(u, t), Object(S.T)(u), t.statsdPathsForExperiments), {
+						g = Object(S.J)(u),
+						f = await Object(m.i)(() => T(r.gqlContext(), P(u, t), Object(S.S)(u), t.statsdPathsForExperiments), {
 							name: "fetchFrontpageData",
 							isLoggedIn: g,
 							page: h
@@ -740,7 +740,7 @@
 					const n = t();
 					if (Object(ae.a)(n)) return;
 					const r = null === (s = null === (a = Object(C.b)(t())) || void 0 === a ? void 0 : a.routeMatch) || void 0 === s ? void 0 : s.route.chunk,
-						c = Object(S.K)(n);
+						c = Object(S.J)(n);
 					return Object(m.i)(() => e(Object(te.d)()), {
 						name: "frontpageLinksRequested",
 						page: r,
@@ -794,7 +794,7 @@
 								t && (h.clickUrl = t)
 							}
 							h.correlationId = n.listings.postOrder.correlationIds[u];
-							const g = () => T(s(), P(n, h), Object(S.T)(n), p),
+							const g = () => T(s(), P(n, h), Object(S.S)(n), p),
 								f = await g(),
 								_ = {
 									...f.body,
@@ -2502,10 +2502,10 @@
 			}
 			var qe = a("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(Re.c)(e, {
-					experimentName: De.zd,
+					experimentName: De.xd,
 					experimentEligibilitySelector: Re.a
 				}), qe.a),
-				Ve = Object(u.a)(Ue, e => e === De.Ad.Enabled);
+				Ve = Object(u.a)(Ue, e => e === De.yd.Enabled);
 			var We = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ge = a("./src/reddit/selectors/user.ts");
 			var He = a("./src/reddit/selectors/seo/linksModule.ts"),
@@ -2517,12 +2517,12 @@
 			const Xe = "c1020",
 				Ye = "videos",
 				$e = Object(u.c)({
-					isMod: Ge.L,
-					isLoggedIn: Ge.J,
+					isMod: Ge.K,
+					isLoggedIn: Ge.I,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
 					currentUser: Ge.k,
 					frontpageLinks: He.b,
-					isOver18: Ge.eb,
+					isOver18: Ge.db,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return Ze(e) === De.z.RotateEven
 					},
@@ -2534,7 +2534,7 @@
 							a = !!Object(Ke.M)(e, Xe);
 						return (!t || !a) && function(e) {
 							return Object(Re.c)(e, {
-								experimentEligibilitySelector: Ge.K,
+								experimentEligibilitySelector: Ge.J,
 								experimentName: De.Ob
 							}) === De.Uc
 						}(e)
@@ -5460,7 +5460,7 @@
 				isCommentCountAnimationEnabled: Z.d,
 				isVoteCountAnimationEnabled: Z.h,
 				isCountAnimShadowTestEnabled: Z.e,
-				isLoggedIn: G.K,
+				isLoggedIn: G.J,
 				isPopular: I.E,
 				isRpanDuVisible: e => Object(W.a)(e, {
 					listingName: K.R
@@ -5671,7 +5671,7 @@
 			const d = Object(s.a)(i.a, (e, {
 					listingName: t
 				}) => {
-					const a = Object(o.ub)(e);
+					const a = Object(o.tb)(e);
 					if (!a) return !1;
 					let s;
 					if (-1 === [r.R, "r/popular"].indexOf(t)) {
@@ -5955,7 +5955,7 @@
 
 			function c(e) {
 				return Object(n.c)(e, {
-					experimentEligibilitySelector: r.K,
+					experimentEligibilitySelector: r.J,
 					experimentName: s.kc
 				})
 			}
@@ -6069,4 +6069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.11aec1217551e13725c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b6908a0bafa46da3c30d.js.map

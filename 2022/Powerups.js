@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.4af8e77d583bbdf93b84.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.01f0328f80ccc7d0494f.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -656,7 +656,7 @@
 			const u = ({
 				space: e
 			}) => {
-				const t = Object(i.e)(c.X),
+				const t = Object(i.e)(c.W),
 					a = e === n.MODAL,
 					o = e === n.INFEED_UNIT;
 				return l.a.createElement("div", {
@@ -1402,7 +1402,7 @@
 			}) => r.a.createElement(r.a.Fragment, null, r.a.createElement(f, {
 				hideBolt: e
 			}), r.a.createElement(_, null), r.a.createElement(w, null)), v = () => {
-				const e = Object(o.e)(m.X);
+				const e = Object(o.e)(m.W);
 				return r.a.createElement("div", {
 					className: p.a.ctaButtonCirclesAndBolt
 				}, r.a.createElement("div", {
@@ -1525,9 +1525,9 @@
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), f = ({
 				openModal: e
 			}) => {
-				const t = Object(l.e)(p.X),
+				const t = Object(l.e)(p.W),
 					a = Object(l.e)(u.b),
-					r = Object(l.e)(p.K),
+					r = Object(l.e)(p.J),
 					h = a ? b._("Come together to level up the whole community", null, {
 						hk: "n9eu8"
 					}) : b._("Level up the whole community", null, {
@@ -1716,7 +1716,7 @@
 			const j = k()(["wallstreetbets", "pennystocks", "tiktokcringe", "lgbt", "python", "unexpected", "chloe", "pewdiepiesubmissions", "roastme", "jacksepticeye", "thebachelor", "taylorswift", "bigbrother", "belowdeck", "blackpink"], 3),
 				M = () => {
 					const e = Object(N.a)(),
-						t = Object(r.e)(S.X),
+						t = Object(r.e)(S.W),
 						a = Object(y.a)(),
 						n = () => {
 							e((() => e => ({
@@ -1754,7 +1754,7 @@
 			const {
 				fbt: B
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var q = Object(i.a)(({
+			var W = Object(i.a)(({
 					closeModal: e
 				}) => {
 					var t;
@@ -1827,8 +1827,8 @@
 						space: h.b.MODAL
 					}))
 				}),
-				A = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/reddit/controls/Button/index.tsx")),
-				W = a("./src/reddit/icons/svgs/SnooFacepalm/index.tsx"),
+				q = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/reddit/controls/Button/index.tsx")),
+				A = a("./src/reddit/icons/svgs/SnooFacepalm/index.tsx"),
 				H = a("./src/reddit/selectors/gold/powerups/modSignup.ts"),
 				L = a("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				R = a("./src/reddit/components/PowerupsSignUpModal/MultiSubredditForm.m.less"),
@@ -1875,14 +1875,14 @@
 						text: n,
 						disabled: r
 					})
-				})), !r && !o && s.a.createElement(A.t, {
+				})), !r && !o && s.a.createElement(q.t, {
 					className: D.a.selectAllButton,
 					onClick: () => {
 						t(c ? [] : l.map(({
 							id: e
 						}) => e))
 					},
-					priority: A.c.Secondary,
+					priority: q.c.Secondary,
 					isFullWidth: !0
 				}, c ? U._("Deselect all", null, {
 					hk: "46i6br"
@@ -1895,7 +1895,7 @@
 				z = a.n(Y);
 			const {
 				fbt: G
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), X = ({
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), Z = ({
 				className: e,
 				disabled: t,
 				onClick: a,
@@ -1907,21 +1907,21 @@
 				}) : G._("Turn on Powerups", null, {
 					hk: "AuDZE"
 				});
-				return s.a.createElement(A.k, {
+				return s.a.createElement(q.k, {
 					className: Object(E.a)(e, z.a.button, {
 						[z.a.loading]: n
 					}),
 					disabled: t || n,
 					onClick: a,
-					priority: A.c.Primary,
+					priority: q.c.Primary,
 					isFullWidth: !0
 				}, n ? s.a.createElement(Q.a, {
 					sizePx: 12,
 					center: !0
 				}) : o)
 			};
-			var Z = a("./src/reddit/components/PowerupsSignUpModal/index.m.less"),
-				J = a.n(Z);
+			var J = a("./src/reddit/components/PowerupsSignUpModal/index.m.less"),
+				X = a.n(J);
 			const {
 				fbt: K
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), $ = Object(i.a)(({
@@ -1995,22 +1995,22 @@
 					hk: "2cx1IK"
 				});
 				return s.a.createElement("div", {
-					className: J.a.container,
+					className: X.a.container,
 					"data-testid": "powerups-signup-modal"
 				}, s.a.createElement("div", {
-					className: J.a.body
+					className: X.a.body
 				}, s.a.createElement("div", {
-					className: J.a.headerImageContainer
+					className: X.a.headerImageContainer
 				}, s.a.createElement("img", {
-					className: J.a.headerImage,
+					className: X.a.headerImage,
 					alt: "Powerup heroes",
 					src: `${l.a.assetPath}/img/powerups/powerups-rangers-static.png`
 				})), s.a.createElement("div", {
-					className: J.a.titleContainer
+					className: X.a.titleContainer
 				}, s.a.createElement("h1", {
-					className: J.a.titleText
+					className: X.a.titleText
 				}, P), s.a.createElement("h2", {
-					className: J.a.subtitleText
+					className: X.a.subtitleText
 				}, O)), !c && s.a.createElement(V, {
 					onChange: g,
 					subredditIdsSelected: p,
@@ -2018,14 +2018,14 @@
 					wasSuccessful: w,
 					allEnabled: u
 				}), v && s.a.createElement("div", {
-					className: J.a.errorContainer
-				}, s.a.createElement(W.a, {
-					className: J.a.errorIcon
+					className: X.a.errorContainer
+				}, s.a.createElement(A.a, {
+					className: X.a.errorIcon
 				}), s.a.createElement("span", {
-					className: J.a.errorText
+					className: X.a.errorText
 				}, K._("Something went wrong.", null, {
 					hk: "N6RFp"
-				}))), !w && !u && s.a.createElement(X, {
+				}))), !w && !u && s.a.createElement(Z, {
 					disabled: 0 === p.length,
 					onClick: async () => {
 						o((e => t => ({
@@ -2045,19 +2045,19 @@
 					isLoading: b,
 					wasError: v
 				}), (w || u) && c && s.a.createElement(s.a.Fragment, null, s.a.createElement("p", {
-					className: J.a.successText
+					className: X.a.successText
 				}, K._("Let your community know about Powerups with a pinned post", null, {
 					hk: "3bII20"
-				})), s.a.createElement(A.t, {
-					className: J.a.successButton,
+				})), s.a.createElement(q.t, {
+					className: X.a.successButton,
 					to: `/${i[0].displayText}/submit`,
-					kind: A.b.InternalLink,
-					priority: A.c.Primary,
+					kind: q.b.InternalLink,
+					priority: q.c.Primary,
 					isFullWidth: !0
 				}, K._("Spread the word", null, {
 					hk: "1f68Nj"
 				}))), s.a.createElement("footer", {
-					className: J.a.footer
+					className: X.a.footer
 				}, K._("Heads up—once you turn on Powerups you can’t turn it off.", null, {
 					hk: "3YQxrF"
 				}))), s.a.createElement(m.a, {
@@ -2150,7 +2150,7 @@
 					className: se.a.perkDescription
 				}, t)),
 				ie = () => {
-					const e = Object(r.e)(S.X),
+					const e = Object(r.e)(S.W),
 						t = Object(r.e)(H.b);
 					return s.a.createElement("div", {
 						className: Object(E.a)(se.a.perksSection, {
@@ -2206,7 +2206,7 @@
 			const {
 				fbt: ge
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), be = () => {
-				const e = Object(r.e)(S.X);
+				const e = Object(r.e)(S.W);
 				return Object(r.e)(H.b) ? s.a.createElement("div", {
 					className: he.a.powerupStepsSection
 				}, s.a.createElement("div", {
@@ -2298,7 +2298,7 @@
 					onOverlayClick: u,
 					className: _e.a.modalBody,
 					overlayClassName: _e.a.modalOverlay
-				}), !a && c && s.a.createElement(q, {
+				}), !a && c && s.a.createElement(W, {
 					withOverlay: !0,
 					closeModal: p,
 					onOverlayClick: p
@@ -2307,4 +2307,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.4af8e77d583bbdf93b84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.01f0328f80ccc7d0494f.js.map

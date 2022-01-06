@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.b59dbc43e834b6ddc41e.js
-// Retrieved at 1/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.817945c0402965473be6.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -965,7 +965,7 @@
 					coinBalance: x.e,
 					gildThingId: P.s,
 					isIframed: y.g,
-					nightmode: x.X,
+					nightmode: x.W,
 					savedCardsPending: P.w,
 					selectedAward: f.b,
 					selectedPayment: P.c,
@@ -1966,4 +1966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.b59dbc43e834b6ddc41e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.817945c0402965473be6.js.map

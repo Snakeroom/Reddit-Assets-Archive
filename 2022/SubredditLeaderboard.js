@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f88488b02f1f9470f531.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.9dae52af79055ddb0733.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -55,7 +55,7 @@
 				}, f = e => async (t, n) => {
 					await t(Object(s.a)());
 					const r = n(),
-						a = Object(g.L)(r);
+						a = Object(g.K)(r);
 					if (Object(b.a)(r, e)) return;
 					const i = e && Object(p.e)(r, {
 							categoryName: e
@@ -1299,10 +1299,10 @@
 						r = t.redditStyle || Object(h.l)(e, {
 							subredditId: n
 						}),
-						s = Object(y.X)(e);
+						s = Object(y.W)(e);
 					return r || s
 				},
-				nigtmode: y.X,
+				nigtmode: y.W,
 				subredditId: u.n,
 				topPostVariant: g.d
 			}));
@@ -2110,7 +2110,7 @@
 					hasNextPage: (e, {
 						categoryId: t
 					}) => Object(W.b)(e, t),
-					isMod: R.L,
+					isMod: R.K,
 					rankings: (e, {
 						categoryId: t
 					}) => Object(M.M)(e, t),
@@ -2198,8 +2198,8 @@
 			}
 			var q = Object(u.c)(Q(z)),
 				J = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				U = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				K = n.n(U);
+				K = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
+				U = n.n(K);
 
 			function V() {
 				return (V = Object.assign || function(e) {
@@ -2217,7 +2217,7 @@
 					className: r,
 					isActive: s,
 					tabIndex: a
-				} = e, o = Object(c.a)(K.a.categoryLink, s && K.a.active, r);
+				} = e, o = Object(c.a)(U.a.categoryLink, s && U.a.active, r);
 				return i.a.createElement("li", null, i.a.createElement(J.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
@@ -2271,7 +2271,7 @@
 						onItemClick: l
 					} = this.props, {
 						isExpanded: u
-					} = this.state, m = !u && d && n * d, b = a + (e ? n * e.length : 0), g = Object(c.a)(K.a.categoryList, u && K.a.expanded), h = e => !(!o || o !== Object($.g)(e)), y = i.a.createElement("ul", {
+					} = this.state, m = !u && d && n * d, b = a + (e ? n * e.length : 0), g = Object(c.a)(U.a.categoryList, u && U.a.expanded), h = e => !(!o || o !== Object($.g)(e)), y = i.a.createElement("ul", {
 						className: g,
 						style: {
 							height: m || b
@@ -2288,7 +2288,7 @@
 						}, e.name === p.m ? p.k : e.displayText || e.name)
 					}));
 					return i.a.createElement("div", {
-						className: Object(c.a)(K.a.categoryListContainer, r)
+						className: Object(c.a)(U.a.categoryListContainer, r)
 					}, y)
 				}
 				render() {
@@ -2299,16 +2299,16 @@
 						header: r,
 						headerClassName: s,
 						initialNumberOfCategories: a
-					} = this.props, o = t && a && t.length > a, d = Object(c.a)(n, K.a.container);
+					} = this.props, o = t && a && t.length > a, d = Object(c.a)(n, U.a.container);
 					return i.a.createElement(X.a, {
 						className: d,
 						contentOnly: !0
 					}, i.a.createElement("div", {
-						className: Object(c.a)(K.a.header, s)
+						className: Object(c.a)(U.a.header, s)
 					}, i.a.createElement("h2", null, r || ee._("Categories", null, {
 						hk: "46zLMb"
 					}))), this.renderCategoryList(), o && i.a.createElement(Y.r, {
-						className: Object(c.a)(K.a.button, e),
+						className: Object(c.a)(U.a.button, e),
 						onClick: this.toggleExpanded
 					}, o && !this.state.isExpanded ? ee._("Show More", null, {
 						hk: "1pCiqD"
@@ -2380,7 +2380,7 @@
 				Ee = (e, {
 					match: t
 				}) => Object(g.b)(t.params.categoryName || ""),
-				xe = Object(m.gf)(p.i),
+				xe = Object(m.ef)(p.i),
 				_e = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: xe
@@ -2509,4 +2509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f88488b02f1f9470f531.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.9dae52af79055ddb0733.js.map

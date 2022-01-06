@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.967d5bca1a212be6306d.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.7ae6a4ffca273dca38d1.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -20,7 +20,7 @@
 				b = n("./src/reddit/selectors/user.ts");
 			const p = () => async (e, t) => {
 				const n = t();
-				if (!(Object(b.K)(n) || Object(b.J)(n))) return Object(d.a)(e, n);
+				if (!(Object(b.J)(n) || Object(b.I)(n))) return Object(d.a)(e, n);
 				Object(u.b)(n) ? (e(f()), e(g()), await e(h())) : e(Object(i.c)("/"))
 			}, f = () => Object(a.k)({
 				actionSource: a.a.NotificationsInbox,
@@ -31,7 +31,7 @@
 				const n = t(),
 					i = Object(m.g)(t()),
 					s = !(!i || !i.length),
-					a = Object(b.K)(n) || Object(b.J)(n);
+					a = Object(b.J)(n) || Object(b.I)(n);
 				if (s || !a || !Object(u.b)(n)) return;
 				const o = {
 					first: 10
@@ -620,7 +620,7 @@
 				isInboxPostEmbedEnabled: O.a,
 				isPending: R.e,
 				todayNotifications: R.i,
-				userId: B.pb
+				userId: B.ob
 			});
 			var H = Object(d.b)(W, e => ({
 					clearMessageTabBadgeCount: () => e(Object(u.b)()),
@@ -733,4 +733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.967d5bca1a212be6306d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.7ae6a4ffca273dca38d1.js.map

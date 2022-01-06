@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.865aa296057501edb859.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.874e206059aedfc9d5ed.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -116,7 +116,7 @@
 					const r = t(),
 						n = Object(p.e)(r),
 						i = Object(p.d)(r),
-						c = Object(b.J)(r);
+						c = Object(b.I)(r);
 					if (n || !i) return;
 					e(v());
 					let u = !1;
@@ -191,7 +191,7 @@
 						d = Object(p.g)(i);
 					if (Object(p.f)(i) || null === d || "client" === d) {
 						const s = null === (r = null === (o = Object(u.b)(t())) || void 0 === o ? void 0 : o.routeMatch) || void 0 === r ? void 0 : r.route.chunk,
-							d = Object(b.K)(i);
+							d = Object(b.J)(i);
 						return Object(n.i)(() => e(O()), {
 							name: "getFocusedVerticalsRequested",
 							page: s,
@@ -824,12 +824,12 @@
 					if (!T.platform.currentPage) return;
 					if (200 !== T.platform.currentPage.status) return;
 					const N = Object(b.m)(s(), S),
-						L = Object(f.nb)(T, {
+						L = Object(f.mb)(T, {
 							userName: y
 						}).id;
 					t(C.m({
 						title: Ee(s(), y)
-					})), Object(f.M)(T) && Object(f.Q)(T, y) && t(Object(x.f)());
+					})), Object(f.L)(T) && Object(f.P)(T, y) && t(Object(x.f)());
 					const M = [t(Object(d.q)()), t(w.b(S, N)), t(j.b(S)), t(g.o(y)), t(j.g(y)), t(P.l(y, L))];
 					await Promise.all(M)
 				}, Ee = (e, t) => Object(b.q)(e, {
@@ -1154,7 +1154,7 @@
 					hideNSFWPref: k.C,
 					flairStyleTemplate: ne.U,
 					isCurrentUserProfilePost: I.l,
-					isLoggedIn: k.K,
+					isLoggedIn: k.J,
 					isActive: I.j,
 					showPromotedCTA: ve.a,
 					moderatorPermissions: w.l,
@@ -1223,7 +1223,7 @@
 						postId: Me,
 						postIds: Fe,
 						onceInViewport: Ae
-					} = e, Be = !!e.redditStyle || !!e["data-redditstyle"], Re = Be ? void 0 : u, Ve = Object(l.a)(fe), Ke = ve && Ve, Ue = Object(a.a)(fe), We = Object(c.a)(fe), Ge = Object(U.c)(je), De = Object(V.d)(je), He = !!je.media && je.media.type === y.o.RTJSON, qe = Le && He, ze = s ? s - H.a : void 0, Xe = !!je.recommendationContext, Qe = !(X && J || re) || Xe && J, Je = (e => e === le.me.OnlyTitles)(we) && !Object(de.a)(je), Ze = (e => e === le.me.MediumHeight)(we) && !Object(de.a)(je), Ye = (e => {
+					} = e, Be = !!e.redditStyle || !!e["data-redditstyle"], Re = Be ? void 0 : u, Ve = Object(l.a)(fe), Ke = ve && Ve, Ue = Object(a.a)(fe), We = Object(c.a)(fe), Ge = Object(U.c)(je), De = Object(V.d)(je), He = !!je.media && je.media.type === y.o.RTJSON, qe = Le && He, ze = s ? s - H.a : void 0, Xe = !!je.recommendationContext, Qe = !(X && J || re) || Xe && J, Je = (e => e === le.ke.OnlyTitles)(we) && !Object(de.a)(je), Ze = (e => e === le.ke.MediumHeight)(we) && !Object(de.a)(je), Ye = (e => {
 						var t;
 						const {
 							post: s,
@@ -1674,7 +1674,7 @@
 					H = K && Object(O.h)(K),
 					q = Object(i.e)(e => {
 						if (!H) return !0;
-						const t = Object(C.tb)(e, F.author || "");
+						const t = Object(C.sb)(e, F.author || "");
 						return !t || t.enableFollowers
 					});
 				return n.a.createElement("div", {
@@ -2756,7 +2756,7 @@
 					location: t
 				}) => r()([...Object(c.a)(t.search)]),
 				ss = Object(p.u)(),
-				os = Object(a.a)(p.D, wt.eb, ts, p.Q, (e, {
+				os = Object(a.a)(p.D, wt.db, ts, p.Q, (e, {
 					match: t
 				}) => t.params.profileName, (e, {
 					match: t
@@ -2768,7 +2768,7 @@
 					match: t
 				}) => !Object(Z.n)(e, {
 					profileName: t.params.profileName
-				}), wt.K, (e, {
+				}), wt.J, (e, {
 					match: t
 				}) => Object(wt.f)(e, u.ic + t.params.profileName), $t.a, (e, t, s, o, r, n, i, {
 					sort: d,
@@ -2974,7 +2974,7 @@
 					experimentEligibilitySelector: r.a,
 					experimentName: o.pc
 				});
-				return !(!t || Object(o.if)(t))
+				return !(!t || Object(o.gf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -3118,7 +3118,7 @@
 				y = e => e.focusedVerticals.category,
 				g = e => e.focusedVerticals.lastLoadedEnv,
 				P = e => {
-					const t = Object(d.J)(e),
+					const t = Object(d.I)(e),
 						s = r.d.geoSubredditRecommendationDULoggedIn(e),
 						o = r.d.geoSubredditRecommendationDULoggedOut(e);
 					return t && s || !t && o
@@ -3137,7 +3137,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const d = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.if)(t)
+					return Boolean(t) && !Object(r.gf)(t)
 				},
 				a = Object(o.a)(d, n.d, (e, t) => e && !t)
 		},
@@ -3930,4 +3930,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.865aa296057501edb859.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.874e206059aedfc9d5ed.js.map

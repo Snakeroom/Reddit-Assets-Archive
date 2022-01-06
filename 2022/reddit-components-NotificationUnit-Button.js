@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.33c05209e0f27293cf6c.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.55acc96c3fbc93fc0cf9.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -157,7 +157,7 @@
 				}) => async (n, o) => {
 					const r = o();
 					if (!!r.features.comments.drafts[t])
-						if (Object(Y.M)(r) && e) {
+						if (Object(Y.L)(r) && e) {
 							const o = Z({
 								hasFocus: e,
 								draftKey: t
@@ -327,7 +327,7 @@
 				}) => async (o, r) => {
 					const s = r(),
 						m = Object(c.a)(B.c.replyToComment, t);
-					if (!Object(Y.K)(r())) return o(Object(d.j)()), void o(Object(a.k)({
+					if (!Object(Y.J)(r())) return o(Object(d.j)()), void o(Object(a.k)({
 						actionSource: a.a.Reply,
 						redirectUrl: Object(Q.m)(r(), {
 							commentId: t
@@ -367,7 +367,7 @@
 							draftType: B.c.replyToComment,
 							rtJson: f,
 							text: ""
-						}, Object(Y.M)(s)) {
+						}, Object(Y.L)(s)) {
 						const n = le({
 							parentCommentId: t,
 							commentsPageKey: e,
@@ -641,7 +641,7 @@
 				E = e => async (t, n, {
 					apiContext: o
 				}) => {
-					if (!Object(S.K)(n())) return t(Object(a.j)()), void t(Object(m.k)({
+					if (!Object(S.J)(n())) return t(Object(a.j)()), void t(Object(m.k)({
 						actionSource: m.a.Save,
 						redirectUrl: Object(g.m)(n(), {
 							commentId: e
@@ -1374,7 +1374,7 @@
 								experimentName: s.J,
 								expEventOverride: t
 							});
-							return !!(Object(s.if)(n) ? void 0 : n)
+							return !!(Object(s.gf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2397,4 +2397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.33c05209e0f27293cf6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.55acc96c3fbc93fc0cf9.js.map

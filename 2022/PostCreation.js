@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.32ade0dc3407d62620c0.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.2616f9213d7ee8384648.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1117,7 +1117,7 @@
 				}) => async (n, o) => {
 					const s = o();
 					if (!!s.features.comments.drafts[t])
-						if (Object(Y.M)(s) && e) {
+						if (Object(Y.L)(s) && e) {
 							const o = $({
 								hasFocus: e,
 								draftKey: t
@@ -1287,7 +1287,7 @@
 				}) => async (o, s) => {
 					const r = s(),
 						l = Object(a.a)(V.c.replyToComment, t);
-					if (!Object(Y.K)(s())) return o(Object(c.j)()), void o(Object(d.k)({
+					if (!Object(Y.J)(s())) return o(Object(c.j)()), void o(Object(d.k)({
 						actionSource: d.a.Reply,
 						redirectUrl: Object(K.m)(s(), {
 							commentId: t
@@ -1327,7 +1327,7 @@
 							draftType: V.c.replyToComment,
 							rtJson: h,
 							text: ""
-						}, Object(Y.M)(r)) {
+						}, Object(Y.L)(r)) {
 						const n = me({
 							parentCommentId: t,
 							commentsPageKey: e,
@@ -1601,7 +1601,7 @@
 				I = e => async (t, n, {
 					apiContext: o
 				}) => {
-					if (!Object(w.K)(n())) return t(Object(d.j)()), void t(Object(l.k)({
+					if (!Object(w.J)(n())) return t(Object(d.j)()), void t(Object(l.k)({
 						actionSource: l.a.Save,
 						redirectUrl: Object(E.m)(n(), {
 							commentId: e
@@ -4062,7 +4062,7 @@
 						share: l,
 						source: u
 					} = e, m = n();
-					r && Object(d.a)(Object(i.e)(r)(m)), Object(c.K)(m) ? await t(Object(s.h)(a.a.SNOOVATAR_MODAL, {
+					r && Object(d.a)(Object(i.e)(r)(m)), Object(c.J)(m) ? await t(Object(s.h)(a.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u
 					})) : await t(Object(o.i)())
@@ -6167,7 +6167,7 @@
 				u = n("./src/reddit/models/Flair/index.ts"),
 				m = n("./src/reddit/selectors/user.ts");
 			const p = Object(c.c)({
-					labelNSFW: m.U
+					labelNSFW: m.T
 				}),
 				h = Object(i.b)(p),
 				b = e => {
@@ -9961,7 +9961,7 @@
 					}) => Object(p.q)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: F.db
+					shouldOpenPostInNewTab: F.cb
 				}),
 				X = e => {
 					const {
@@ -11341,8 +11341,8 @@
 			}
 			const f = Object(i.c)({
 					currentUser: d.k,
-					isNightMode: d.X,
-					isPresenceUserPrefEnabled: d.P,
+					isNightMode: d.W,
+					isPresenceUserPrefEnabled: d.O,
 					shouldHideNSFW: d.C
 				}),
 				g = Object(a.b)(f);
@@ -12037,10 +12037,10 @@
 						o = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
-						s = Object(g.X)(e);
+						s = Object(g.W)(e);
 					return o || s
 				},
-				nigtmode: g.X,
+				nigtmode: g.W,
 				subredditId: u.n,
 				topPostVariant: b.d
 			}));
@@ -14310,7 +14310,7 @@
 					allowCrosspostableOnly: t,
 					includeUserProfile: n,
 					substring: o.rawString
-				}), e => Object(Q.ib)(e) && Object(q.j)(e), (e, t, n) => {
+				}), e => Object(Q.hb)(e) && Object(q.j)(e), (e, t, n) => {
 					const {
 						suggestedItems: o,
 						fallbackItems: s,
@@ -15247,7 +15247,7 @@
 								experimentName: r.J,
 								expEventOverride: t
 							});
-							return !!(Object(r.if)(n) ? void 0 : n)
+							return !!(Object(r.gf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -17472,7 +17472,7 @@
 				d = (e, t) => n => {
 					const {
 						id: o
-					} = Object(a.nb)(n, {
+					} = Object(a.mb)(n, {
 						userName: t
 					});
 					return {
@@ -20466,7 +20466,7 @@
 					if (!s) return d.fbt._("A destination community is required to crosspost", null, {
 						hk: "3haidF"
 					});
-					const i = r ? Object(I.fb)(e, {
+					const i = r ? Object(I.eb)(e, {
 						userId: s
 					}) : s;
 					if (i) {
@@ -21053,7 +21053,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), as = `${It.a.assetPath}/img/snoo-drafts.png`, is = 3, cs = ne.a.div("Wrapper", os.a), ds = ne.a.div("TitleRow", os.a), ls = ne.a.span("DraftsNumber", os.a), us = ne.a.div("DetailsContainer", os.a), ms = ne.a.wrapped(le.a, "ButtonRow", os.a), ps = ne.a.wrapped(ge.o, "CancelButton", os.a), hs = ne.a.div("CloseWrapper", os.a), bs = ne.a.wrapped(ho.a, "Close", os.a), fs = ne.a.div("Empty", os.a), gs = ne.a.img("EmptyImage", os.a), Cs = ne.a.p("EmptyText", os.a), xs = Object(a.c)({
 				drafts: P.c,
 				isPending: P.b,
-				maxDrafts: I.W
+				maxDrafts: I.V
 			}), vs = Object(r.b)(xs);
 			class _s extends s.a.PureComponent {
 				constructor() {
@@ -24187,7 +24187,7 @@
 					eventSchedule: T.p,
 					includeUserProfile: I.h,
 					isChanged: T.H,
-					isNameEditable: I.M,
+					isNameEditable: I.L,
 					isPostSubmitEnabled: Hn,
 					isScheduledPost: T.S,
 					flair: T.r,
@@ -24196,7 +24196,7 @@
 					linkBody: T.U,
 					markdownBody: T.V,
 					rteBody: T.gb,
-					maxDrafts: I.W,
+					maxDrafts: I.V,
 					modalId: k.a,
 					needsCaptcha: T.Y,
 					nextSubreddit: T.Z,
@@ -25930,14 +25930,14 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-					experimentName: o.Ld,
+					experimentName: o.Jd,
 					experimentEligibilitySelector: s.a
-				}) === o.Ud.Enabled,
+				}) === o.Sd.Enabled,
 				a = e => Object(s.c)(e, {
-					experimentName: o.Md,
+					experimentName: o.Kd,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === o.Vd.Enabled
+				}) === o.Td.Enabled
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -26044,7 +26044,7 @@
 					minSize: t,
 					userName: n
 				}) => {
-					const o = Object(c.nb)(e, {
+					const o = Object(c.mb)(e, {
 						userName: n
 					});
 					if (o && o.awardedLastMonth && o.awardedLastMonth.topAward) return h(e, {
@@ -26427,4 +26427,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.32ade0dc3407d62620c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2616f9213d7ee8384648.js.map

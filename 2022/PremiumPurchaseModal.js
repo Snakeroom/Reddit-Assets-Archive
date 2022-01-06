@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.2239874a4b8e6e4c0ad6.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.207bc9541a65110f0bc1.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1423,8 +1423,8 @@
 			var J = r("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				$ = r("./src/reddit/components/StripePaymentForm/index.tsx"),
 				K = r("./src/reddit/hooks/useLocale.ts"),
-				X = r("./src/reddit/hooks/useStripePromise.ts");
-			var z = e => a.a.createElement("div", {
+				z = r("./src/reddit/hooks/useStripePromise.ts");
+			var X = e => a.a.createElement("div", {
 				className: A.a.premiumPurchaseHeader,
 				style: {
 					backgroundImage: `url("${s.a.assetPath}/img/gold/premium-hero-g.jpg")`
@@ -1451,7 +1451,7 @@
 				"data-redditstyle": !0
 			})));
 			var Z = e => {
-				const t = Object(X.a)(),
+				const t = Object(z.a)(),
 					r = Object(K.b)(),
 					n = Object(L.b)(e.total, {
 						locale: r,
@@ -1472,7 +1472,7 @@
 					d = s ? Q : Y;
 				return a.a.createElement(G.Elements, {
 					stripe: t
-				}, a.a.createElement(a.a.Fragment, null, a.a.createElement(z, {
+				}, a.a.createElement(a.a.Fragment, null, a.a.createElement(X, {
 					onCloseClick: e.onCloseModal,
 					userName: e.userName
 				}), a.a.createElement("div", {
@@ -1543,7 +1543,7 @@
 						const t = Object(v.a)(e);
 						return null === t ? void 0 : t
 					},
-					nightmode: C.X,
+					nightmode: C.W,
 					passthrough: g.e,
 					selectedPayment: g.c,
 					stripeErrorMessage: g.j,
@@ -3370,4 +3370,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.2239874a4b8e6e4c0ad6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.207bc9541a65110f0bc1.js.map

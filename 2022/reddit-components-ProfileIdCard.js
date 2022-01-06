@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.c2f64e358a6eff76bbfa.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.68985e1b1ab51998b151.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -768,7 +768,7 @@
 				U = r.n(S);
 			const F = Object(i.a)(h.j, (e, {
 					profileName: t
-				}) => Object(v.tb)(e, t), (e, t) => ({
+				}) => Object(v.sb)(e, t), (e, t) => ({
 					karma: {
 						...p.a,
 						...null == t ? void 0 : t.karma,
@@ -1464,7 +1464,7 @@
 						url: "testing" === n ? "https://nft.reddit.com" : `https://nft.reddit.com/n/${r}`,
 						badge: n
 					}
-				})(p), [p]), E = Object(a.e)(d.X);
+				})(p), [p]), E = Object(a.e)(d.W);
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 					className: Object(i.a)(f.a.container, I)
 				}, s.a.createElement(c.a, {
@@ -1924,8 +1924,8 @@
 					coinsToSpend: C.e,
 					givePremiumModalIsOpen: Q.c,
 					hasFetchedModerators: v.k,
-					isEmployee: C.H,
-					isLoggedIn: C.K,
+					isEmployee: C.G,
+					isLoggedIn: C.J,
 					profile: v.j,
 					crisisFlowEnabled: q.b,
 					chatInviteLinkSharing: Z.a
@@ -2168,12 +2168,12 @@
 				structuredStyle: (e, t) => Object(I.m)(e, Object(v.m)(e, t.profileName)),
 				userHasSubreddit: (e, {
 					profileName: t
-				}) => Object(C.ob)(e, {
+				}) => Object(C.nb)(e, {
 					userName: t
 				}),
 				user: (e, {
 					profileName: t
-				}) => Object(C.nb)(e, {
+				}) => Object(C.mb)(e, {
 					userName: t
 				}),
 				page: h.b,
@@ -2689,7 +2689,7 @@
 					action: "click",
 					noun: "block_user",
 					targetUser: {
-						id: Object(a.nb)(t, {
+						id: Object(a.mb)(t, {
 							userName: e
 						}).id
 					},
@@ -2700,7 +2700,7 @@
 					action: "click",
 					noun: "unblock_user",
 					targetUser: {
-						id: Object(a.nb)(t, {
+						id: Object(a.mb)(t, {
 							userName: e
 						}).id
 					},
@@ -2906,7 +2906,7 @@
 					return !!r && r.includes(t)
 				},
 				i = (e, t) => {
-					const r = Object(n.nb)(e, {
+					const r = Object(n.mb)(e, {
 						userName: t
 					});
 					return !!r && o(e, r.id)
@@ -2952,7 +2952,7 @@
 				a = r("./src/reddit/selectors/user.ts");
 			const o = e => Object(s.c)(e, {
 				experimentName: n.F,
-				experimentEligibilitySelector: () => Object(a.J)(e)
+				experimentEligibilitySelector: () => Object(a.I)(e)
 			}) === n.Uc
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
@@ -2966,11 +2966,11 @@
 				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = r("./src/reddit/selectors/user.ts");
 			const o = e => n.c.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: a.K,
+					experimentEligibilitySelector: a.J,
 					experimentName: n.i
 				}),
 				i = e => n.e.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: a.K,
+					experimentEligibilitySelector: a.J,
 					experimentName: n.l
 				})
 		},
@@ -3010,4 +3010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.c2f64e358a6eff76bbfa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.68985e1b1ab51998b151.js.map

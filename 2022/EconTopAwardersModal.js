@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.46a954faa4943f1a9b8b.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.f51dadfb09ef8334723f.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -535,7 +535,7 @@
 							await r(Object(i.o)(t.name))
 						}
 					})(), (async () => {
-						const a = Object(N.nb)(n, {
+						const a = Object(N.mb)(n, {
 							userName: t
 						});
 						if (!a) return;
@@ -1247,7 +1247,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(v.nb)(e, {
+				user: (e, t) => Object(v.mb)(e, {
 					userName: t.username
 				})
 			});
@@ -1567,7 +1567,7 @@
 			const Te = Object(o.c)({
 					activeTooltipId: f.a,
 					currentUser: v.k,
-					isLoggedIn: v.K,
+					isLoggedIn: v.J,
 					hideNSFWPref: v.C,
 					moderatorPermissions: (e, {
 						subredditId: t
@@ -1585,7 +1585,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: v.nb,
+					user: v.mb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(x.d)(e, {
@@ -2716,4 +2716,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.46a954faa4943f1a9b8b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.f51dadfb09ef8334723f.js.map

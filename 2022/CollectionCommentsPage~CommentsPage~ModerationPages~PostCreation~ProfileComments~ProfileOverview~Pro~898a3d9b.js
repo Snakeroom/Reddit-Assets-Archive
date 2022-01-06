@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.4b568789919c0e6f98ee.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.379e4440f56e6bfe447d.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -102,12 +102,12 @@
 				L = O.a.div("FlatItem", g.a),
 				P = O.a.span("FlatListDotSpacer", g.a),
 				w = O.a.wrapped(k, "LinkContainer", g.a),
-				M = O.a.div("Content", g.a),
-				N = O.a.div("ThumbnailContainer", g.a),
+				N = O.a.div("Content", g.a),
+				M = O.a.div("ThumbnailContainer", g.a),
 				R = Object(c.c)({
 					isCurrentUserProfilePost: E.l,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Mb.TOPIC),
-					shouldOpenPostInNewTab: v.db
+					shouldOpenPostInNewTab: v.cb
 				}),
 				B = Object(a.b)(R);
 			t.c = Object(f.b)(B(e => {
@@ -133,7 +133,7 @@
 					d = t;
 				return a && !a.media ? o.a.createElement(w, {
 					className: d
-				}, o.a.createElement(M, null, o.a.createElement(C, null, o.a.createElement(m.a, c)), D(a), a.source && o.a.createElement(b.a, {
+				}, o.a.createElement(N, null, o.a.createElement(C, null, o.a.createElement(m.a, c)), D(a), a.source && o.a.createElement(b.a, {
 					post: a
 				}), H(e)), U(e)) : o.a.createElement(k, {
 					className: d
@@ -190,7 +190,7 @@
 						hk: "xPYWL"
 					}))
 				},
-				U = e => o.a.createElement(N, null, o.a.createElement(h.a, {
+				U = e => o.a.createElement(M, null, o.a.createElement(h.a, {
 					post: e.post
 				}))
 		},
@@ -297,7 +297,7 @@
 				b = s.n(p);
 			const h = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				x = Object(o.b)(() => Object(a.c)({
-					isNightmodeOn: m.X
+					isNightmodeOn: m.W
 				}));
 			t.a = x(e => {
 				const t = {
@@ -395,7 +395,7 @@
 						style: t
 					}, e.children)
 				},
-				P = Object(a.b)(() => Object(c.a)(g.G, j.db, (e, {
+				P = Object(a.b)(() => Object(c.a)(g.G, j.cb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(g.b)(e, s) : null, _.a, O.d, g.H, (e, t, s, n, r, o) => ({
@@ -418,11 +418,11 @@
 					onClick: () => {
 						e.isSponsored && e.post.postId && Object(f.a)(e.post, e.pageType)
 					}
-				}, M(e)) : e.isListing && e.postPermalink ? o.a.createElement(i.a, {
+				}, N(e)) : e.isListing && e.postPermalink ? o.a.createElement(i.a, {
 					target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 					to: e.sendGoodVisitEvent ? Object(m.a)(e.postPermalink, void 0, t) : Object(m.a)(e.postPermalink),
 					onClick: e.onPostMediaClick
-				}, M(e)) : M(e)
+				}, N(e)) : N(e)
 			});
 			const w = (e, t) => o.a.createElement(T, {
 					altText: t.altText,
@@ -441,7 +441,7 @@
 					src: Object(l.a)(t.source),
 					width: t.width
 				}),
-				M = ({
+				N = ({
 					onClick: e,
 					...t
 				}) => {
@@ -691,12 +691,12 @@
 					e.persist(), P(e)
 				}
 
-				function M(e) {
+				function N(e) {
 					var t;
 					(o || R(e), c) || (t = e.timeStamp, I(Object(l.A)(p, t)))
 				}
 
-				function N(e) {
+				function M(e) {
 					I(Object(l.q)(p, e.timeStamp))
 				}
 
@@ -715,7 +715,7 @@
 				}
 
 				function B(e) {
-					n || M(e), o || R(e), I(Object(l.C)(p))
+					n || N(e), o || R(e), I(Object(l.C)(p))
 				}
 
 				function D() {
@@ -729,8 +729,8 @@
 						key: p,
 						loop: !0,
 						onBufferingChange: T,
-						onLoadStart: N,
-						onLoadedData: M,
+						onLoadStart: M,
+						onLoadedData: N,
 						onLoadedMetadata: R,
 						onPause: L,
 						onPlaying: B,
@@ -825,10 +825,10 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const M = e => o.a.createElement("span", w({
+			const N = e => o.a.createElement("span", w({
 					className: P.a.removalReason
 				}, e), e.children),
-				N = () => n.fbt._("Archived", null, {
+				M = () => n.fbt._("Archived", null, {
 					hk: "zv3q3"
 				}),
 				R = () => n.fbt._("Comments are locked", null, {
@@ -911,13 +911,13 @@
 				}, V))), J.isArchived && o.a.createElement(r.Fragment, null, o.a.createElement(g.a, {
 					isFilled: !0,
 					className: Object(c.a)(P.a.icon, P.a.archivedIcon),
-					desc: N(),
+					desc: M(),
 					id: z,
 					onMouseEnter: W(z),
 					onMouseLeave: A
 				}), o.a.createElement(u.c, w({
 					tooltipId: z,
-					text: N()
+					text: M()
 				}, V))), J.isLocked && !K && o.a.createElement(r.Fragment, null, o.a.createElement(O.a, {
 					isFilled: !0,
 					className: Object(c.a)(P.a.icon, P.a.lockIcon),
@@ -971,7 +971,7 @@
 					text: n.fbt._("Add a removal reason", null, {
 						hk: "1YDo3"
 					})
-				}), (J.modRemovalReason || J.modNote) && o.a.createElement(M, {
+				}), (J.modRemovalReason || J.modNote) && o.a.createElement(N, {
 					onMouseEnter: W(Q),
 					onMouseLeave: A
 				}, n.fbt._("Removal reason", null, {
@@ -1415,7 +1415,7 @@
 			})), s.d(t, "a", (function() {
 				return w
 			})), s.d(t, "w", (function() {
-				return M
+				return N
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -1447,7 +1447,7 @@
 				L = c.a.th("Thl", i.a),
 				P = c.a.th("Thc", i.a),
 				w = (c.a.th("Thr", i.a), c.a.wrapped(e => r.a.createElement(o.b, e), "A", i.a)),
-				M = c.a.wrapped(d.a, "A", i.a)
+				N = c.a.wrapped(d.a, "A", i.a)
 		},
 		"./src/reddit/components/RichTextJson/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1825,9 +1825,9 @@
 			s.d(t, "c", (function() {
 				return w
 			})), s.d(t, "d", (function() {
-				return M
-			})), s.d(t, "a", (function() {
 				return N
+			})), s.d(t, "a", (function() {
+				return M
 			})), s.d(t, "b", (function() {
 				return R
 			})), s.d(t, "f", (function() {
@@ -1951,10 +1951,10 @@
 						key: s
 					}, o)
 				},
-				M = e => i.a.createElement(c.e, {
+				N = e => i.a.createElement(c.e, {
 					key: e
 				}),
-				N = (e, t, s, n) => {
+				M = (e, t, s, n) => {
 					const r = e.c;
 					if (!r) return;
 					const o = r.length,
@@ -1988,13 +1988,13 @@
 				D = (e, t, s, n) => {
 					switch (e.e) {
 						case p.b:
-							return N(e, t, s, n);
+							return M(e, t, s, n);
 						case p.c:
 							return R(e, n);
 						case p.k:
 							return w(e, s, n);
 						case p.l:
-							return M(n);
+							return N(n);
 						case p.p:
 							return B(e, t, s, n);
 						case p.u:
@@ -2372,12 +2372,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case h.Pe.SmIcon:
+						case h.Ne.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case h.Pe.SmIconHc:
+						case h.Ne.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2867,12 +2867,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Je
+						experimentName: n.He
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Pe.SmIcon || t === n.Pe.SmIconHc
+					return t === n.Ne.SmIcon || t === n.Ne.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2895,4 +2895,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.4b568789919c0e6f98ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.379e4440f56e6bfe447d.js.map

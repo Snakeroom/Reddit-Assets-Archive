@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.55372195f84d26c91210.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.4604d97848a8dda19701.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, a, t) {
@@ -690,7 +690,7 @@
 			}) => l.a.createElement(l.a.Fragment, null, l.a.createElement(k, {
 				hideBolt: e
 			}), l.a.createElement(f, null), l.a.createElement(_, null)), y = () => {
-				const e = Object(s.e)(d.X);
+				const e = Object(s.e)(d.W);
 				return l.a.createElement("div", {
 					className: p.a.ctaButtonCirclesAndBolt
 				}, l.a.createElement("div", {
@@ -813,9 +813,9 @@
 			} = t("./node_modules/fbt/lib/FbtPublic.js"), k = ({
 				openModal: e
 			}) => {
-				const a = Object(o.e)(p.X),
+				const a = Object(o.e)(p.W),
 					t = Object(o.e)(u.b),
-					l = Object(o.e)(p.K),
+					l = Object(o.e)(p.J),
 					h = t ? b._("Come together to level up the whole community", null, {
 						hk: "n9eu8"
 					}) : b._("Level up the whole community", null, {
@@ -1266,7 +1266,7 @@
 				tournamentName: "2020 Eurocup"
 			}], Y = () => {
 				const e = Object(b.a)(),
-					a = Object(s.e)(F.X),
+					a = Object(s.e)(F.W),
 					t = Object(B.a)(),
 					r = () => {
 						e((() => e => ({
@@ -1368,7 +1368,7 @@
 						hk: "3KIWZw"
 					})
 				}],
-				K = () => {
+				Q = () => {
 					const e = Object(b.a)();
 					return l.a.createElement("div", {
 						className: G.a.faqSection
@@ -1412,8 +1412,8 @@
 						hk: "1eOLlL"
 					}))))
 				};
-			var Q = t("./src/reddit/pages/Predictions/Incentives.m.less"),
-				Z = t.n(Q);
+			var K = t("./src/reddit/pages/Predictions/Incentives.m.less"),
+				Z = t.n(K);
 			const {
 				fbt: R
 			} = t("./node_modules/fbt/lib/FbtPublic.js"), J = [{
@@ -1477,7 +1477,7 @@
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 			a.default = () => {
 				const e = Object(b.a)(),
-					a = Object(s.e)(F.X),
+					a = Object(s.e)(F.W),
 					[t, c] = Object(r.useState)(!1);
 				Object(r.useEffect)(() => {
 					e((() => e => ({
@@ -1608,7 +1608,7 @@
 					className: ee.a.howItWorksStepDescription
 				}, ae._("Mods choose the correct answers, so they control who wins the tournament!", null, {
 					hk: "4gxz6G"
-				}))))), l.a.createElement(K, null), l.a.createElement("div", {
+				}))))), l.a.createElement(Q, null), l.a.createElement("div", {
 					className: ee.a.tryOutSection
 				}, l.a.createElement("h2", {
 					className: ee.a.tryOutHeading
@@ -1642,7 +1642,7 @@
 				}))
 			};
 			const te = () => {
-				const e = Object(s.e)(F.X);
+				const e = Object(s.e)(F.W);
 				return l.a.createElement("div", {
 					className: ee.a.ctaButtonCirclesAndBolt
 				}, l.a.createElement("div", {
@@ -1665,4 +1665,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.55372195f84d26c91210.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.4604d97848a8dda19701.js.map

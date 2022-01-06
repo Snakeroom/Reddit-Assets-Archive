@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/WrappedReddit.316002dbeace557c100d.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/WrappedReddit.8c6f8a249e0f720d17d6.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["WrappedReddit", "PushNotifications"], {
 		"./assets/fonts/RedditSans/font.less": function(a, e, c) {},
@@ -256,7 +256,7 @@
 				C = c("./src/reddit/selectors/user.ts");
 			let Z = !1;
 			const N = async (a, e) => {
-				const c = Object(C.J)(a);
+				const c = Object(C.I)(a);
 				if (Z) return;
 				if (Z = !0, Object(p.a)(a) !== d.c.NotificationsSupported) return;
 				await Object(o.a)();
@@ -934,7 +934,7 @@
 				}) => {
 					var t, l;
 					const r = e();
-					if (!Object(L.K)(r)) return Object(p.a)(a, r);
+					if (!Object(L.J)(r)) return Object(p.a)(a, r);
 					a(w());
 					const n = await (async (a, e) => {
 						return await Object(o.a)(a, {
@@ -2595,4 +2595,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.316002dbeace557c100d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.8c6f8a249e0f720d17d6.js.map

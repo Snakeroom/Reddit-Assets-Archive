@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.59ee2ce3aaf22abf0068.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.f9b66b4294b184a07078.js
+// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -149,13 +149,13 @@
 				}).apply(this, arguments)
 			}
 			const W = 10,
-				H = Object(i.c)({
+				X = Object(i.c)({
 					coinBalance: F.e,
-					isEmployee: F.H,
+					isEmployee: F.G,
 					isPending: _.b,
 					recipientName: _.d
 				}),
-				X = Object(c.b)(H, e => ({
+				H = Object(c.b)(X, e => ({
 					closeModal: () => e(Object(D.b)()),
 					onGivePremium: (t, n, s, o, a) => {
 						e(((e, t, n, s) => async (o, a, {
@@ -346,7 +346,7 @@
 				}
 			}
 			const z = Object(d.a)(Object(u.c)(V));
-			t.default = X(e => a.a.createElement(z, G({}, e, {
+			t.default = H(e => a.a.createElement(z, G({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeModal
 			})))
@@ -851,4 +851,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.59ee2ce3aaf22abf0068.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.f9b66b4294b184a07078.js.map
