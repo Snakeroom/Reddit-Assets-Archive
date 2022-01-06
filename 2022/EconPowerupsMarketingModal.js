@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.97cdf4c0e771d9081430.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.dd88291bb0be6da6f8f7.js
+// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return y
+				return j
 			}));
 			var n = r("./node_modules/react/index.js"),
 				o = r.n(n),
@@ -94,7 +94,7 @@
 				E = Object.prototype,
 				x = E.hasOwnProperty,
 				k = E.toString,
-				j = function(e) {
+				y = function(e) {
 					return _.reduce((function(t, r) {
 						if (x.call(e, r)) {
 							var n = "root" === r && "[object String]" === k.call(e[r]);
@@ -103,7 +103,7 @@
 						return t
 					}), {})
 				},
-				y = function(e) {
+				j = function(e) {
 					var t, r;
 
 					function n() {
@@ -118,7 +118,7 @@
 							}
 							t.targetNode = e && Object(s.findDOMNode)(e)
 						})), v(w(t), "observe", (function() {
-							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = m(j(t.props)), t.target = t.targetNode, e = w(t), i.has(e.observer) || i.set(e.observer, new Set), i.get(e.observer).add(e), e.observer.observe(e.target), !0) : (f.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
+							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = m(y(t.props)), t.target = t.targetNode, e = w(t), i.has(e.observer) || i.set(e.observer, new Set), i.get(e.observer).add(e), e.observer.observe(e.target), !0) : (f.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
 						})), v(w(t), "unobserve", (function(e) {
 							! function(e, t) {
@@ -154,7 +154,7 @@
 						}) : null
 					}, n
 				}(o.a.Component);
-			v(y, "displayName", "IntersectionObserver")
+			v(j, "displayName", "IntersectionObserver")
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, r) {
 			"use strict";
@@ -481,15 +481,15 @@
 				E = r("./src/reddit/helpers/trackers/powerups.ts"),
 				x = r("./src/reddit/hooks/useScrollGradient.ts"),
 				k = r("./src/reddit/hooks/useTracking.ts"),
-				j = r("./src/reddit/selectors/gold/powerups/index.ts"),
-				y = r("./src/reddit/selectors/user.ts"),
+				y = r("./src/reddit/selectors/gold/powerups/index.ts"),
+				j = r("./src/reddit/selectors/user.ts"),
 				N = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/async.tsx"),
 				P = r("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
 				O = r("./src/reddit/models/Gold/Powerups/index.ts"),
 				C = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				M = r("./src/reddit/selectors/experiments/econ/powerupsAward.ts");
 			const S = [O.a.CommentRecognition, O.a.PowerupsAward, O.a.CommunityGear, O.a.CommentsWithGifs, O.a.CommentsWithEmoji, O.a.Achievements, O.a.HeroStatus, O.a.HdVideo],
-				I = Object(i.a)([M.b, C.j], (e, t) => {
+				I = Object(i.a)([M.b, C.k], (e, t) => {
 					let r = S;
 					return e || (r = r.filter(e => e !== O.a.PowerupsAward)), t || (r = r.filter(e => e !== O.a.CommunityGear)), r
 				});
@@ -532,7 +532,7 @@
 				currentSubredditId: c.s,
 				powerups: (e, t) => {
 					const r = Object(c.s)(e);
-					return r ? Object(j.k)(e, {
+					return r ? Object(y.k)(e, {
 						subredditId: r
 					}) : null
 				},
@@ -543,8 +543,8 @@
 					currentSubredditId: t,
 					powerups: r,
 					subreddit: c
-				} = e, i = Object(s.d)(), l = Object(k.a)(), v = Object(s.e)(e => !Object(y.s)(e)), {
-					container: j,
+				} = e, i = Object(s.d)(), l = Object(k.a)(), v = Object(s.e)(e => !Object(j.s)(e)), {
+					container: y,
 					isScrollGradientVisible: P,
 					calculateGradientVisibility: O
 				} = Object(x.a)(!0);
@@ -569,7 +569,7 @@
 					className: D.a.container
 				}, o.a.createElement("div", {
 					className: Object(d.a)(D.a.main),
-					ref: j,
+					ref: y,
 					onScroll: O
 				}, o.a.createElement(h.a, {
 					onClick: C,
@@ -962,4 +962,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.97cdf4c0e771d9081430.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.dd88291bb0be6da6f8f7.js.map

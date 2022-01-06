@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.0744c3ace2093bffa7e9.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.f833b0301c0b56b97c83.js
+// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -1035,7 +1035,7 @@
 					isCommentCountAnimation: N,
 					isCountAnimShadowTestEnabled: M,
 					isBlockingInterstitialEnabled: F
-				} = e, R = Object(i.d)(), A = p && !c && !x, L = c && !u, B = Object(C.a)(), D = Object(O.a)(h.ed) === h.ld.Enabled, W = r.a.createElement(S, {
+				} = e, R = Object(i.d)(), A = p && !c && !x, L = c && !u, B = Object(C.a)(), D = Object(O.a)(h.fd) === h.md.Enabled, W = r.a.createElement(S, {
 					hasModPostPerms: s,
 					isCountAnimShadowTestEnabled: !!M,
 					isChatPost: n,
@@ -4764,11 +4764,11 @@
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: i.J,
 				experimentName: n.Lb
-			}), e => e === n.Uc)
+			}), e => e === n.Vc)
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
 			e.exports = JSON.parse('{"id":"01538085cb58"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.0744c3ace2093bffa7e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.f833b0301c0b56b97c83.js.map

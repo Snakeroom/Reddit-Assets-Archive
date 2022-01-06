@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.4b80b87e945c835cc244.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.d9171e9f826e7db399f0.js
+// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -2594,7 +2594,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!n.m[t]
 					},
-					importAsync: () => Promise.all([n.e(0), n.e(1)]).then(n.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
+					importAsync: () => Promise.all([n.e(3), n.e(4)]).then(n.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -3430,7 +3430,7 @@
 				c = ({
 					className: e
 				}) => {
-					return Object(o.e)(a.t) ? r.a.createElement(d, {
+					return Object(o.e)(a.u) ? r.a.createElement(d, {
 						className: e
 					}) : r.a.createElement(i, {
 						className: e
@@ -4781,9 +4781,9 @@
 			function te({
 				subredditId: e
 			}) {
-				const t = Object(o.e)(a.s),
-					n = Object(o.e)(a.r),
-					s = Object(o.e)(a.q);
+				const t = Object(o.e)(a.t),
+					n = Object(o.e)(a.s),
+					s = Object(o.e)(a.r);
 				return r.a.createElement("div", {
 					className: ee.a.container
 				}, t && r.a.createElement(w, {
@@ -10015,12 +10015,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case h.Ne.SmIcon:
+						case h.Oe.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.Ne.SmIconHc:
+						case h.Oe.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -10473,7 +10473,7 @@
 					communityFlairSortedKeys: (e, {
 						subredditId: t
 					}) => Object(Be.c)(e, t),
-					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Pe.Ud.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Pe.Vd.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
@@ -15092,7 +15092,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e("CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress"), n.e(0), n.e("NewCommunityProgress")]).then(n.bind(null, "./src/reddit/components/NewCommunityProgress/NewCommunityProgress.tsx")),
+				importAsync: () => Promise.all([n.e("CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress"), n.e(3), n.e("NewCommunityProgress")]).then(n.bind(null, "./src/reddit/components/NewCommunityProgress/NewCommunityProgress.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -15118,7 +15118,7 @@
 						subredditId: t
 					})),
 					g = Object(a.e)(p.a),
-					v = g !== u.Ud.NewModule;
+					v = g !== u.Vd.NewModule;
 				return (null === (s = null == f ? void 0 : f.cards) || void 0 === s ? void 0 : s.length) > 0 && v ? o.a.createElement(h, {
 					closeModuleOnMount: !!e && e !== m.g.Large,
 					subredditId: t,
@@ -16450,15 +16450,15 @@
 			const a = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: s.wc
+						experimentName: s.xc
 					});
-					return !(!t || Object(s.gf)(t))
+					return !(!t || Object(s.hf)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: s.wc
-					}) === s.Zc.ListingEnabled
+						experimentName: s.xc
+					}) === s.ad.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
@@ -16515,14 +16515,14 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(r.c)(e, {
-					experimentName: s.Jd,
-					experimentEligibilitySelector: r.a
-				}) === s.Sd.Enabled,
-				a = e => Object(r.c)(e, {
 					experimentName: s.Kd,
+					experimentEligibilitySelector: r.a
+				}) === s.Td.Enabled,
+				a = e => Object(r.c)(e, {
+					experimentName: s.Ld,
 					experimentEligibilitySelector: r.a,
 					expEventOverride: !1
-				}) === s.Td.Enabled
+				}) === s.Ud.Enabled
 		},
 		"./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -16644,8 +16644,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.ee
-				}) === s.Uc
+					experimentName: s.fe
+				}) === s.Vc
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, n) {
@@ -16658,8 +16658,8 @@
 				o = n("./src/reddit/selectors/meta.ts");
 			const a = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: s.te
-			}) === s.Ae.Enabled
+				experimentName: s.ue
+			}) === s.Be.Enabled
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -17075,12 +17075,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.He
+						experimentName: s.Ie
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Ne.SmIcon || t === s.Ne.SmIconHc
+					return t === s.Oe.SmIcon || t === s.Oe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -17220,4 +17220,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.4b80b87e945c835cc244.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.d9171e9f826e7db399f0.js.map

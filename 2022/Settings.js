@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.900c5cc67d287220a1e0.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.11532c71f661007a3659.js
+// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -4814,7 +4814,7 @@
 				url: P,
 				isHovercard: I
 			}) => {
-				const A = Object(r.e)(e => !_ && !!j && Object(l.h)(e));
+				const A = Object(r.e)(e => !_ && !!j && Object(l.i)(e));
 				return a.a.createElement(a.a.Fragment, null, a.a.createElement(u.a, {
 					bannerBackgroundImage: e,
 					editMode: !!s,
@@ -6039,7 +6039,7 @@
 					cancelSubscriptionModalIsOpen: Object(ge.b)("settings_optout_modal_id"),
 					premiumBenefitsModalIsOpen: Object(ge.b)("premium_benefits_modal_id"),
 					premiumFeedbackModalIsOpen: Object(ge.b)("premium_feedback_modal_id"),
-					isPremiumImprovedCancellationEnabled: ve.w,
+					isPremiumImprovedCancellationEnabled: ve.x,
 					goldExpiration: _e.o,
 					hasAndroidSubscription: _e.p,
 					hasIosSubscription: _e.v,
@@ -13583,7 +13583,7 @@
 			const o = e => Object(a.c)(e, {
 				experimentName: s.F,
 				experimentEligibilitySelector: () => Object(r.I)(e)
-			}) === s.Uc
+			}) === s.Vc
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -13737,4 +13737,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.900c5cc67d287220a1e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.11532c71f661007a3659.js.map

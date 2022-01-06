@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.1d5b6681e6b2679a0ba5.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.cde57e67766db6a376af.js
+// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -35,10 +35,10 @@
 				I = n("./src/reddit/controls/Button/index.tsx"),
 				x = n("./src/reddit/controls/InternalLink/index.tsx"),
 				_ = n("./src/reddit/icons/fonts/index.tsx"),
-				U = n("./src/reddit/selectors/experiments/onlineIndicator.ts"),
-				f = n("./src/reddit/selectors/subreddit.ts"),
-				E = n("./src/reddit/selectors/telemetry.ts"),
-				O = n("./src/reddit/selectors/user.ts"),
+				f = n("./src/reddit/selectors/experiments/onlineIndicator.ts"),
+				E = n("./src/reddit/selectors/subreddit.ts"),
+				O = n("./src/reddit/selectors/telemetry.ts"),
+				U = n("./src/reddit/selectors/user.ts"),
 				N = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
 				C = n.n(N);
 			const j = l.a.wrapped(b.a, "CurrentUserIcon", C.a);
@@ -67,11 +67,11 @@
 					}
 				},
 				M = Object(a.c)({
-					currentUser: O.k,
-					isPresenceConsumptionExpEnabled: U.c,
-					isPresenceTogglePref: O.O,
-					subreddit: f.w,
-					subredditAboutInfo: f.t
+					currentUser: U.k,
+					isPresenceConsumptionExpEnabled: f.c,
+					isPresenceTogglePref: U.O,
+					subreddit: E.w,
+					subredditAboutInfo: E.t
 				}),
 				g = Object(c.b)(M, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
@@ -117,33 +117,33 @@
 							media: (o || r) && !e.isNSFW
 						}
 					}(i, a),
-					U = e => {
+					f = e => {
 						c(t => ({
 							source: "post_composer_du",
 							action: "click",
 							noun: h(e),
-							...E.o(t)
+							...O.o(t)
 						}))
 					},
-					f = () => {
-						U(d.Vb.POST), s(m)
+					E = () => {
+						f(d.Vb.POST), s(m)
 					},
-					O = t && n,
+					U = t && n,
 					N = e ? o.a.createElement(x.a, {
 						className: C.a.UserIconWrapper,
 						to: e.url
 					}, o.a.createElement(j, {
 						className: C.a.UserIcon,
-						shouldShowPresenceIndicator: O
+						shouldShowPresenceIndicator: U
 					})) : null;
 				return o.a.createElement("div", {
 					className: C.a.Container
 				}, N, o.a.createElement("input", {
 					name: "createPost",
 					className: C.a.Input,
-					onChange: f,
-					onClick: f,
-					onKeyPress: f,
+					onChange: E,
+					onClick: E,
+					onKeyPress: E,
 					placeholder: r.fbt._("Create Post", null, {
 						hk: "OcnKS"
 					}),
@@ -155,7 +155,7 @@
 					kind: I.b.InternalLink,
 					size: I.d.M,
 					id: P.Media,
-					onClick: () => U(d.Vb.MEDIA),
+					onClick: () => f(d.Vb.MEDIA),
 					onMouseEnter: () => u(P.Media),
 					onMouseLeave: () => u(P.Media),
 					to: m + k(d.Vb.MEDIA),
@@ -172,7 +172,7 @@
 					size: I.d.M,
 					"aria-label": v(),
 					id: P.Link,
-					onClick: () => U(d.Vb.LINK_ONLY),
+					onClick: () => f(d.Vb.LINK_ONLY),
 					onMouseEnter: () => u(P.Link),
 					onMouseLeave: () => u(P.Link),
 					to: m + k(d.Vb.LINK_ONLY),
@@ -255,30 +255,30 @@
 			const c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ge
-					}) === r.Uc
+						experimentName: r.he
+					}) === r.Vc
 				},
 				i = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.fe
-					}) === r.Uc
+						experimentName: r.ge
+					}) === r.Vc
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Wd
-					}) === r.Uc
+						experimentName: r.Xd
+					}) === r.Vc
 				},
 				d = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Vd
-					}) === r.Uc
+						experimentName: r.Wd
+					}) === r.Vc
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.1d5b6681e6b2679a0ba5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.cde57e67766db6a376af.js.map

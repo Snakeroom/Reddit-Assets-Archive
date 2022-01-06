@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2616f9213d7ee8384648.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.d98a77317f08553b7d92.js
+// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -5540,7 +5540,7 @@
 				c = ({
 					className: e
 				}) => {
-					return Object(r.e)(a.t) ? s.a.createElement(d, {
+					return Object(r.e)(a.u) ? s.a.createElement(d, {
 						className: e
 					}) : s.a.createElement(i, {
 						className: e
@@ -9969,7 +9969,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, s = Object(a.d)(), i = Object(V.a)(), c = Object(z.a)(m.ed) === m.ld.Enabled, l = Object(a.e)(A.b), u = e => {
+					} = t, s = Object(a.d)(), i = Object(V.a)(), c = Object(z.a)(m.fd) === m.md.Enabled, l = Object(a.e)(A.b), u = e => {
 						!l || t.media && Object(O.H)(t.media) || (e.preventDefault(), s(Object(g.ab)(Object(x.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Y, {
@@ -15247,7 +15247,7 @@
 								experimentName: r.J,
 								expEventOverride: t
 							});
-							return !!(Object(r.gf)(n) ? void 0 : n)
+							return !!(Object(r.hf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -20242,7 +20242,7 @@
 						subredditName: h
 					} = (null == p ? void 0 : p.urlParams) || {},
 					b = Object(r.e)(e => Object(S.C)(e, h)),
-					f = Object(r.e)(pn.o);
+					f = Object(r.e)(pn.p);
 				return s.a.createElement(z.a, {
 					withOverlay: !0,
 					onOverlayClick: e,
@@ -22752,7 +22752,7 @@
 					}),
 					allowPolls: T.d,
 					votingLengthDropdownIsOpen: e => e.tooltipId === Bc,
-					isPredictionCreationTabEnabled: pn.o
+					isPredictionCreationTabEnabled: pn.p
 				});
 			class zc extends s.a.Component {
 				constructor(e) {
@@ -23223,7 +23223,7 @@
 					rteState: T.gb,
 					shouldAllowBodyText: T.ib,
 					subreddit: y.r,
-					isPredictionCreationTabEnabled: pn.o
+					isPredictionCreationTabEnabled: pn.p
 				}),
 				Vd = Object(r.b)(Wd, (e, {
 					onChange: t,
@@ -23658,7 +23658,7 @@
 				}) => {
 					const n = Object(r.d)(),
 						a = Object(r.e)(pn.b),
-						c = Object(r.e)(pn.p),
+						c = Object(r.e)(pn.q),
 						l = Object(r.e)(e => Object(hn.b)(e, {
 							subredditId: t
 						})),
@@ -23750,7 +23750,7 @@
 					submissionType: T.a,
 					subreddit: y.r,
 					title: T.rb,
-					isPredictionsCreationTabEnabled: pn.o
+					isPredictionsCreationTabEnabled: pn.p
 				}),
 				Ol = Object(r.b)(El, (e, {
 					onChange: t,
@@ -24015,7 +24015,7 @@
 					submissionType: T.a,
 					subreddit: y.r,
 					isImageGalleryCreationEnabled: T.N,
-					isPredictionCreationTabEnabled: pn.o
+					isPredictionCreationTabEnabled: pn.p
 				}),
 				su = Object(r.b)(ou, (e, t) => ({
 					onChange: (n, o) => {
@@ -24522,7 +24522,7 @@
 							pageLayer: i
 						})), d = Object(r.e)(e => c && Object(he.h)(e, {
 							subredditId: c.id
-						})), l = Object(r.e)(pn.m);
+						})), l = Object(r.e)(pn.n);
 						return s.a.useEffect(() => c && c.allowPredictions ? d ? t(!0) : l ? void Promise.resolve(a(Object(an.h)(c.id))).then(e => {
 							t(Boolean(e)), o(Boolean(e))
 						}) : t(!1) : t(!1), [a, c, d, l]), {
@@ -25930,14 +25930,14 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-					experimentName: o.Jd,
-					experimentEligibilitySelector: s.a
-				}) === o.Sd.Enabled,
-				a = e => Object(s.c)(e, {
 					experimentName: o.Kd,
+					experimentEligibilitySelector: s.a
+				}) === o.Td.Enabled,
+				a = e => Object(s.c)(e, {
+					experimentName: o.Ld,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === o.Td.Enabled
+				}) === o.Ud.Enabled
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -26427,4 +26427,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2616f9213d7ee8384648.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d98a77317f08553b7d92.js.map

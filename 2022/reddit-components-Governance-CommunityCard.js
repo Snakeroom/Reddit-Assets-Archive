@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.08f34228d2d0e5ab67c6.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.8e41a3e1250a306add40.js
+// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -196,9 +196,9 @@
 			})), n.d(t, "g", (function() {
 				return L
 			})), n.d(t, "d", (function() {
-				return M
-			})), n.d(t, "e", (function() {
 				return R
+			})), n.d(t, "e", (function() {
+				return M
 			})), n.d(t, "h", (function() {
 				return G
 			}));
@@ -234,7 +234,7 @@
 				T = Object(s.a)(E.v),
 				S = Object(s.a)(E.w),
 				L = Object(s.a)(E.x),
-				M = (e, t) => async (n, r, {
+				R = (e, t) => async (n, r, {
 					apiContext: s,
 					gqlContext: o
 				}) => {
@@ -277,7 +277,7 @@
 						pollId: e,
 						error: i.error || i.errors[0].message
 					})), Object(_.a)(n, i.error || i.errors[0].messsage)
-				}, R = (e, t) => async (n, s, {
+				}, M = (e, t) => async (n, s, {
 					apiContext: a
 				}) => {
 					var l;
@@ -448,8 +448,8 @@
 				T = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				S = n("./src/reddit/endpoints/governance/crypto.ts"),
 				L = n("./src/reddit/helpers/governance/ethereum.ts"),
-				M = n("./src/reddit/icons/svgs/Settings/index.tsx"),
-				R = n("./src/reddit/models/Toast/index.ts"),
+				R = n("./src/reddit/icons/svgs/Settings/index.tsx"),
+				M = n("./src/reddit/models/Toast/index.ts"),
 				G = n("./src/reddit/selectors/tooltip.ts"),
 				D = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
 				U = n.n(D);
@@ -489,7 +489,7 @@
 						role: "menu",
 						onClick: n,
 						id: V
-					}, i.a.createElement(M.a, {
+					}, i.a.createElement(R.a, {
 						className: U.a.settingsIcon
 					})), t && i.a.createElement(B, {
 						tooltipId: V,
@@ -541,7 +541,7 @@
 						e(Object(f.h)({
 							subredditId: t.subredditId
 						})), e(Object(w.f)({
-							kind: R.b.SuccessCommunityGreen,
+							kind: M.b.SuccessCommunityGreen,
 							text: s.fbt._("Wallet removed successfully!", null, {
 								hk: "3LDwnT"
 							})
@@ -950,7 +950,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), n.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal"), n.e("reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"), n.e("reddit-components-Governance-TransactionModals-ClaimPointsModal")]).then(n.bind(null, "./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.tsx")),
+				importAsync: () => Promise.all([n.e(0), n.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal"), n.e("reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"), n.e("reddit-components-Governance-TransactionModals-ClaimPointsModal")]).then(n.bind(null, "./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -1220,7 +1220,7 @@
 			}
 			const d = 4001;
 			async function l(e, t, r, o) {
-				const [i, a] = await Promise.all([Promise.all([n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				const [i, a] = await Promise.all([Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await c();
 				const d = new i.providers.Web3Provider(s()).getSigner(),
 					l = new i.Contract(e, a, d),
@@ -1249,7 +1249,7 @@
 			};
 			const m = 1;
 			async function b(e, t, r, s, o) {
-				const i = await Promise.all([n.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+				const i = await Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: a
 					} = i,
@@ -1739,4 +1739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.08f34228d2d0e5ab67c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.8e41a3e1250a306add40.js.map

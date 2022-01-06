@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.1c87412e61a58ef7be1d.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.d42a5bfb76b5838bb571.js
+// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1302,7 +1302,7 @@
 						return null === (r = Object(G.b)(e, null == n ? void 0 : n.id)) || void 0 === r ? void 0 : r.name
 					},
 					isFreeAwardEventEnabled: e => Object(z.a)(e) && Object(K.g)(e),
-					isPremiumCoinStoreUpsellEnabled: v.v,
+					isPremiumCoinStoreUpsellEnabled: v.w,
 					isPremiumSubscriber: q.t,
 					premiumPackages: K.l,
 					purchaseCatalogError: K.n,
@@ -1858,4 +1858,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.1c87412e61a58ef7be1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.d42a5bfb76b5838bb571.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.7c3f10007db8f006fcb4.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.c245f5f9ceb6db341459.js
+// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/lib/constants/specialMembership.ts": function(A, e, t) {
@@ -507,7 +507,7 @@
 					const e = this.resolve(A);
 					return !1 !== this.resolved[e] && !!t.m[e]
 				},
-				importAsync: () => Promise.all([t.e("vendors~CryptoLibEthers~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-compon~fb9f1732"), t.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal"), t.e("reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"), t.e("reddit-components-Governance-TransactionModals-ClaimPointsModal")]).then(t.bind(null, "./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.tsx")),
+				importAsync: () => Promise.all([t.e(0), t.e("vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal"), t.e("reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"), t.e("reddit-components-Governance-TransactionModals-ClaimPointsModal")]).then(t.bind(null, "./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/index.tsx")),
 				requireAsync(A) {
 					const e = this.resolve(A);
 					return this.resolved[e] = !1, this.importAsync(A).then(A => (this.resolved[e] = !0, A))
@@ -1623,4 +1623,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.7c3f10007db8f006fcb4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.c245f5f9ceb6db341459.js.map

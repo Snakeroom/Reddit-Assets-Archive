@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.c95cb745499bcc77629c.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing.14a45168f9c02d58291f.js
+// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -224,7 +224,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!n.m[t]
 					},
-					importAsync: () => Promise.all([n.e(0), n.e(1)]).then(n.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
+					importAsync: () => Promise.all([n.e(3), n.e(4)]).then(n.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -669,8 +669,8 @@
 						[D.a.isDisabled]: e
 					})
 				})),
-				G = R.a.div("DropdownRowDisabled", D.a),
-				V = Object(l.u)({
+				V = R.a.div("DropdownRowDisabled", D.a),
+				G = Object(l.u)({
 					isFrontpage: l.z,
 					isProfilePage: l.I,
 					pageLayer: e => e
@@ -690,7 +690,7 @@
 						tooltipId: t || W
 					}))
 				}));
-			var q = R.a.wrapped(V(z(Object(d.c)(e => r.a.createElement("div", {
+			var q = R.a.wrapped(G(z(Object(d.c)(e => r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && r.a.createElement(H, null, w.fbt._("Sort", null, {
@@ -710,7 +710,7 @@
 					tooltipId: e.dropdownId || W
 				}, t, {
 					renderContentsHidden: !0
-				}), e.disabled ? r.a.createElement(G, null, w.fbt._("Coming soon", null, {
+				}), e.disabled ? r.a.createElement(V, null, w.fbt._("Coming soon", null, {
 					hk: "taPqm"
 				})) : (e.sortOptions || ((e, t, n, s, r) => {
 					const o = [b.W.HOT, b.W.NEW, b.W.TOP, b.W.RISING];
@@ -1386,8 +1386,8 @@
 				}
 			}
 			var Ue = Me(Object(o.b)(He)(Object(d.c)(Fe))),
-				Ge = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				Ve = n.n(Ge);
+				Ve = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
+				Ge = n.n(Ve);
 			const Ke = Object(l.u)({
 					isProfilePage: l.I,
 					pageLayer: e => e
@@ -1433,7 +1433,7 @@
 						updateSortPreference: u
 					} = this.props;
 					return r.a.createElement("div", {
-						className: Object(a.a)(Ve.a.Container, t),
+						className: Object(a.a)(Ge.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
 					}, r.a.createElement(Ue, {
@@ -1446,7 +1446,7 @@
 						sortOptions: c,
 						timeSort: l
 					}), !o && r.a.createElement(m.a, {
-						className: Ve.a.LayoutSwitch,
+						className: Ge.a.LayoutSwitch,
 						subredditId: d
 					}))
 				}
@@ -2657,7 +2657,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!n.m[t]
 				},
-				importAsync: () => Promise.all([n.e("CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress"), n.e(0), n.e("NewCommunityProgress")]).then(n.bind(null, "./src/reddit/components/NewCommunityProgress/NewCommunityProgress.tsx")),
+				importAsync: () => Promise.all([n.e("CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress"), n.e(3), n.e("NewCommunityProgress")]).then(n.bind(null, "./src/reddit/components/NewCommunityProgress/NewCommunityProgress.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2683,7 +2683,7 @@
 						subredditId: t
 					})),
 					w = Object(a.e)(p.a),
-					y = w !== u.Ud.NewModule;
+					y = w !== u.Vd.NewModule;
 				return (null === (s = null == f ? void 0 : f.cards) || void 0 === s ? void 0 : s.length) > 0 && y ? o.a.createElement(h, {
 					closeModuleOnMount: !!e && e !== m.g.Large,
 					subredditId: t,
@@ -2711,15 +2711,15 @@
 			const a = e => {
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: s.wc
+						experimentName: s.xc
 					});
-					return !(!t || Object(s.gf)(t))
+					return !(!t || Object(s.hf)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
-						experimentName: s.wc
-					}) === s.Zc.ListingEnabled
+						experimentName: s.xc
+					}) === s.ad.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2842,4 +2842,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.c95cb745499bcc77629c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing.14a45168f9c02d58291f.js.map

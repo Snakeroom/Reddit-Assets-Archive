@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.1d91018f1b78221b0dfe.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.abf58c30ed3e0435f1c7.js
+// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -2830,7 +2830,7 @@
 				url: N,
 				isHovercard: T
 			}) => {
-				const P = Object(i.e)(e => !x && !!I && Object(l.h)(e));
+				const P = Object(i.e)(e => !x && !!I && Object(l.i)(e));
 				return n.a.createElement(n.a.Fragment, null, n.a.createElement(m.a, {
 					bannerBackgroundImage: e,
 					editMode: !!r,
@@ -2934,7 +2934,7 @@
 					}
 				}),
 				g = e => {
-					const t = Object(o.e)(e => Object(f.l)(e));
+					const t = Object(o.e)(e => Object(f.m)(e));
 					return i.a.createElement(a.a, {
 						className: e.className
 					}, i.a.createElement(v, {
@@ -6683,4 +6683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.1d91018f1b78221b0dfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.abf58c30ed3e0435f1c7.js.map

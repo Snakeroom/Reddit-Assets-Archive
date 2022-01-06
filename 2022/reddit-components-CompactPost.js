@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.4d1654cfd72983687464.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.d0fc18380f2329ca4e20.js
+// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -632,11 +632,11 @@
 				passive: !0
 			};
 
-			function W(e) {
+			function V(e) {
 				return e.split("-")[0]
 			}
 
-			function V(e) {
+			function W(e) {
 				return e.split("-")[1]
 			}
 
@@ -648,8 +648,8 @@
 				var t, n = e.reference,
 					s = e.element,
 					o = e.placement,
-					r = o ? W(o) : null,
-					i = o ? V(o) : null,
+					r = o ? V(o) : null,
+					i = o ? W(o) : null,
 					a = n.x + n.width / 2 - s.width / 2,
 					c = n.y + n.height / 2 - s.height / 2;
 				switch (r) {
@@ -970,7 +970,7 @@
 								r = n.adaptive,
 								i = void 0 === r || r,
 								a = {
-									placement: W(t.placement),
+									placement: V(t.placement),
 									popper: t.elements.popper,
 									popperRect: t.rects.popper,
 									gpuAcceleration: o
@@ -1046,7 +1046,7 @@
 								r = void 0 === o ? [0, 0] : o,
 								i = D.reduce((function(e, n) {
 									return e[n] = function(e, t, n) {
-										var s = W(e),
+										var s = V(e),
 											o = [C, O].indexOf(s) >= 0 ? -1 : 1,
 											r = "function" == typeof n ? n(Object.assign(Object.assign({}, t), {}, {
 												placement: e
@@ -1076,12 +1076,12 @@
 								n = e.options,
 								s = e.name;
 							if (!t.modifiersData[s]._skip) {
-								for (var o = n.mainAxis, r = void 0 === o || o, i = n.altAxis, a = void 0 === i || i, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, x = W(h), _ = c || (x === h || !f ? [Z(h)] : function(e) {
-										if (W(e) === S) return [];
+								for (var o = n.mainAxis, r = void 0 === o || o, i = n.altAxis, a = void 0 === i || i, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, x = V(h), _ = c || (x === h || !f ? [Z(h)] : function(e) {
+										if (V(e) === S) return [];
 										var t = Z(e);
 										return [K(e), t, K(t)]
 									}(h)), E = [h].concat(_).reduce((function(e, n) {
-										return e.concat(W(n) === S ? function(e, t) {
+										return e.concat(V(n) === S ? function(e, t) {
 											void 0 === t && (t = {});
 											var n = t,
 												s = n.placement,
@@ -1091,9 +1091,9 @@
 												a = n.flipVariations,
 												c = n.allowedAutoPlacements,
 												d = void 0 === c ? D : c,
-												l = V(s),
+												l = W(s),
 												u = (l ? a ? M : M.filter((function(e) {
-													return V(e) === l
+													return W(e) === l
 												})) : w).filter((function(e) {
 													return d.indexOf(e) >= 0
 												})).reduce((function(t, n) {
@@ -1102,7 +1102,7 @@
 														boundary: o,
 														rootBoundary: r,
 														padding: i
-													})[W(n)], t
+													})[V(n)], t
 												}), {});
 											return Object.keys(u).sort((function(e, t) {
 												return u[e] - u[t]
@@ -1117,8 +1117,8 @@
 										}) : n)
 									}), []), v = t.rects.reference, k = t.rects.popper, T = new Map, N = !0, I = E[0], P = 0; P < E.length; P++) {
 									var L = E[P],
-										A = W(L),
-										R = V(L) === j,
+										A = V(L),
+										R = W(L) === j,
 										F = [O, y].indexOf(A) >= 0,
 										B = F ? "width" : "height",
 										U = se(t, {
@@ -1185,8 +1185,8 @@
 									padding: u,
 									altBoundary: l
 								}),
-								_ = W(t.placement),
-								E = V(t.placement),
+								_ = V(t.placement),
+								E = W(t.placement),
 								S = !E,
 								w = H(_),
 								k = "x" === w ? "y" : "x",
@@ -1255,7 +1255,7 @@
 								s = e.name,
 								o = n.elements.arrow,
 								r = n.modifiersData.popperOffsets,
-								i = W(n.placement),
+								i = V(n.placement),
 								a = H(i),
 								c = [C, g].indexOf(i) >= 0 ? "height" : "width";
 							if (o && r) {
@@ -1974,8 +1974,8 @@
 				F = n("./src/reddit/components/ModModeFilteredReason/helpers.ts"),
 				B = n("./src/reddit/components/ModModeReports/index.tsx"),
 				U = n("./src/reddit/components/ModModeReports/helpers.ts"),
-				W = n("./src/reddit/components/ModToolsFlatlist/index.tsx"),
-				V = n("./src/reddit/components/OneFeed/PostRecommendationContext.tsx"),
+				V = n("./src/reddit/components/ModToolsFlatlist/index.tsx"),
+				W = n("./src/reddit/components/OneFeed/PostRecommendationContext.tsx"),
 				H = n("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				Y = n("./src/reddit/components/PostBadges/index.tsx"),
 				G = n("./src/reddit/components/PostContainer/index.tsx"),
@@ -2107,7 +2107,7 @@
 						sendEvent: Te,
 						shouldShowGalleryTileOption: Ne,
 						showPromotedCTA: Pe
-					} = this.props, Me = !!fe.media && fe.media.type === b.o.RTJSON, De = _e && Me, Le = Object(q.b)(fe.id, g), Ae = Object(ue.a)(te), Re = Object(de.a)(te), Fe = Object(le.a)(te), Be = `-mod-actions-menu-${fe.id}`, Ue = `voting-arrows-${fe.id}`, We = !!r && Object(h.e)(r) === fe.author, Ve = Object(F.d)(fe), He = Object(U.c)(fe), Ye = Object(D.a)("View--Reports", fe.id, je), Ge = Object(U.a)(fe), qe = !(g || E || v), ze = fe.media && fe.media.type === b.o.LIVEVIDEO, Ze = e => Te(Object(f.h)(fe.id, e)), Qe = Object(c.t)(fe, x), {
+					} = this.props, Me = !!fe.media && fe.media.type === b.o.RTJSON, De = _e && Me, Le = Object(q.b)(fe.id, g), Ae = Object(ue.a)(te), Re = Object(de.a)(te), Fe = Object(le.a)(te), Be = `-mod-actions-menu-${fe.id}`, Ue = `voting-arrows-${fe.id}`, Ve = !!r && Object(h.e)(r) === fe.author, We = Object(F.d)(fe), He = Object(U.c)(fe), Ye = Object(D.a)("View--Reports", fe.id, je), Ge = Object(U.a)(fe), qe = !(g || E || v), ze = fe.media && fe.media.type === b.o.LIVEVIDEO, Ze = e => Te(Object(f.h)(fe.id, e)), Qe = Object(c.t)(fe, x), {
 						source: Ke
 					} = Qe, Xe = o.a.createElement(G.a, {
 						className: Object(d.a)(ve.a.compactPostStyles, ye.a.postContainer, Object(m.a)(this.props), t),
@@ -2174,7 +2174,7 @@
 					}), o.a.createElement("div", {
 						className: ye.a.topLine,
 						"data-click-id": "body"
-					}, !!fe.recommendationContext && o.a.createElement(V.a, {
+					}, !!fe.recommendationContext && o.a.createElement(W.a, {
 						content: fe.recommendationContext.content,
 						layout: u.g.Compact,
 						post: fe
@@ -2214,7 +2214,7 @@
 						modModeEnabled: ne,
 						numComments: fe.numComments,
 						type: u.g.Compact
-					}), o.a.createElement(W.a, {
+					}), o.a.createElement(V.a, {
 						className: ye.a.modToolsFlatlist,
 						isOverlay: !1,
 						layout: Z,
@@ -2230,7 +2230,7 @@
 						hasModPostPerms: Ae,
 						hasModFullPerms: Fe,
 						isOverlay: !1,
-						isPostAuthor: We,
+						isPostAuthor: Ve,
 						modModeEnabled: ne,
 						post: fe,
 						tooltipId: Be
@@ -2279,7 +2279,7 @@
 						post: fe,
 						adLinkContent: Qe,
 						isCompact: !0
-					})), ne && Ae && Ve && o.a.createElement("div", {
+					})), ne && Ae && We && o.a.createElement("div", {
 						className: ye.a.modModeBannerWrapper
 					}, o.a.createElement(R.a, {
 						thing: fe
@@ -3186,8 +3186,8 @@
 				F = n("./src/reddit/selectors/user.ts"),
 				B = n("./src/reddit/components/PostTitle/index.m.less"),
 				U = n.n(B),
-				W = n("./src/config.ts"),
-				V = n("./src/reddit/hooks/useClickSourceData.ts"),
+				V = n("./src/config.ts"),
+				W = n("./src/reddit/hooks/useClickSourceData.ts"),
 				H = n("./src/reddit/hooks/useExperimentVariant.ts"),
 				Y = n("./src/reddit/hooks/usePostContext.ts"),
 				G = n("./src/reddit/hooks/useTheme.ts"),
@@ -3281,7 +3281,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: s
-					} = t, o = Object(i.d)(), a = Object(V.a)(), c = Object(H.a)(p.ed) === p.ld.Enabled, l = Object(i.e)(R.b), u = e => {
+					} = t, o = Object(i.d)(), a = Object(W.a)(), c = Object(H.a)(p.fd) === p.md.Enabled, l = Object(i.e)(R.b), u = e => {
 						!l || t.media && Object(g.H)(t.media) || (e.preventDefault(), o(Object(x.ab)(Object(E.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(K, {
@@ -3418,7 +3418,7 @@
 					}), r.a.createElement("div", {
 						className: U.a.postTitleVisibility,
 						dangerouslySetInnerHTML: {
-							__html: `\n              <img alt="" src="${W.a.assetPath}/img/renderTimingPixel.png" style="width: 1px; height: 1px;" onLoad="(__markFirstPostVisible || function(){})();" />\n            `
+							__html: `\n              <img alt="" src="${V.a.assetPath}/img/renderTimingPixel.png" style="width: 1px; height: 1px;" onLoad="(__markFirstPostVisible || function(){})();" />\n            `
 						}
 					}), this.getDynamicStyleTags())
 				}
@@ -4580,13 +4580,13 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.m
-					}) === s.Uc
+					}) === s.Vc
 				},
 				a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.n
-					}) === s.Uc
+					}) === s.Vc
 				}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, n) {
@@ -4599,13 +4599,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.he,
+					experimentName: o.ie,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.pe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.qe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(i.H, a, (e, t) => c(e, t));
 			Object(s.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.4d1654cfd72983687464.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.d0fc18380f2329ca4e20.js.map

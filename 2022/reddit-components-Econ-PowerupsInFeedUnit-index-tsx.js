@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.c0d5a565f8c0e58654a1.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.e55857fa752699783b55.js
+// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -328,8 +328,8 @@
 				I = a("./src/reddit/components/Econ/PowerupsInFeedUnit/PostUnlock/CommunityGearUnit.m.less"),
 				P = a.n(I),
 				U = a("./src/higherOrderComponents/asModal/index.tsx"),
-				j = a("./src/lib/opener/index.ts"),
-				A = a("./src/reddit/actions/snoovatar.ts"),
+				A = a("./src/lib/opener/index.ts"),
+				j = a("./src/reddit/actions/snoovatar.ts"),
 				M = a("./src/reddit/actions/toaster.ts"),
 				k = a("./src/reddit/actions/urlRequested.ts"),
 				T = a("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
@@ -353,7 +353,7 @@
 					i = Object(n.e)(L.a),
 					[c, u] = Object(o.useState)(!1);
 				Object(o.useEffect)(() => {
-					a(Object(d.o)()), s(Object(A.c)())
+					a(Object(d.o)()), s(Object(j.c)())
 				}, [s, a]);
 				const _ = async () => s(Object(k.a)("/user/me", !0)), p = H._("Nice! Ready to update your avatar?", null, {
 					hk: "20KFjx"
@@ -379,9 +379,9 @@
 					className: q.a.legalTextContainer
 				}, r.a.createElement("span", null, m()), r.a.createElement("a", {
 					href: E,
-					target: j.d.BLANK,
+					target: A.d.BLANK,
 					className: q.a.learnMoreLink,
-					rel: j.c
+					rel: A.c
 				}, b()))), r.a.createElement("div", {
 					className: q.a.buttonsRow
 				}, r.a.createElement(x.t, {
@@ -401,7 +401,7 @@
 							c = Object(S.a)(n, [F.d[e]]).map(e => e.id);
 						try {
 							u(!0);
-							const e = await s(Object(A.e)(c, r, {
+							const e = await s(Object(j.e)(c, r, {
 								set_avatar_to_profile: !0,
 								source: "powerups_post_upsell"
 							}));
@@ -573,7 +573,7 @@
 								subredditId: t
 							}),
 							d = Object(b.w)(e) && Object(m.s)(e);
-						return n || o ? i && r && Object(_.j)(e) ? s.UNLOCKED_COMMUNITY_GEAR : d ? s.UNLOCKED_UNAPPLIED_FROM_PREMIUM : s.HIDDEN : c && r && Object(_.j)(e) ? s.POWERUPS_COMMUNITY_GEAR : s.POWERUPS_DEFAULT
+						return n || o ? i && r && Object(_.k)(e) ? s.UNLOCKED_COMMUNITY_GEAR : d ? s.UNLOCKED_UNAPPLIED_FROM_PREMIUM : s.HIDDEN : c && r && Object(_.k)(e) ? s.POWERUPS_COMMUNITY_GEAR : s.POWERUPS_DEFAULT
 					})(e, {
 						subredditId: v.id,
 						subredditName: v.name
@@ -694,9 +694,9 @@
 			})), a.d(t, "u", (function() {
 				return U
 			})), a.d(t, "r", (function() {
-				return j
-			})), a.d(t, "a", (function() {
 				return A
+			})), a.d(t, "a", (function() {
+				return j
 			})), a.d(t, "s", (function() {
 				return M
 			})), a.d(t, "c", (function() {
@@ -738,8 +738,8 @@
 				I = o.a.div("ModalMain", u.a),
 				P = o.a.textarea("TextArea", u.a),
 				U = o.a.wrapped(i.l, "WarningButton", u.a),
-				j = o.a.wrapped(i.l, "PrimaryButton", u.a),
-				A = o.a.wrapped(i.o, "CancelButton", u.a),
+				A = o.a.wrapped(i.l, "PrimaryButton", u.a),
+				j = o.a.wrapped(i.o, "CancelButton", u.a),
 				M = o.a.wrapped(i.r, "RemoveButton", u.a),
 				k = ({
 					className: e,
@@ -1174,4 +1174,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.c0d5a565f8c0e58654a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.e55857fa752699783b55.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.cc466e2dc90d1864e798.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.6022db466e8412db5e87.js
+// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -8585,7 +8585,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!n.m[t]
 					},
-					importAsync: () => Promise.all([n.e(0), n.e(1)]).then(n.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
+					importAsync: () => Promise.all([n.e(3), n.e(4)]).then(n.bind(null, "./src/reddit/components/ContentSurvey/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -17131,7 +17131,7 @@
 				url: N,
 				isHovercard: T
 			}) => {
-				const M = Object(r.e)(e => !E && !!k && Object(l.h)(e));
+				const M = Object(r.e)(e => !E && !!k && Object(l.i)(e));
 				return a.a.createElement(a.a.Fragment, null, a.a.createElement(u.a, {
 					bannerBackgroundImage: e,
 					editMode: !!s,
@@ -26169,9 +26169,9 @@
 			const r = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.Tc
+					experimentName: s.Uc
 				});
-				return !(!t || Object(s.gf)(t))
+				return !(!t || Object(s.hf)(t))
 			}
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
@@ -26301,10 +26301,10 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: a.he,
+					experimentName: a.ie,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === a.pe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.qe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(s.a)(o.H, i, (e, t) => d(e, t));
 			Object(s.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -26583,4 +26583,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.cc466e2dc90d1864e798.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.6022db466e8412db5e87.js.map
