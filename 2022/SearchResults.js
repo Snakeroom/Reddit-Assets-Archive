@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.3c245b38a4a6b5956d8f.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.f7be0f5dd9c3a27cc65f.js
+// Retrieved at 1/10/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -5361,7 +5361,7 @@
 
 				function I(e) {
 					O.isSponsored && w || T(e), O.isSponsored && function(e) {
-						w || (e.stopPropagation(), e.preventDefault()), x(Object(y.o)(O.id, c, d, a, f))
+						w || (e.stopPropagation(), e.preventDefault()), x(Object(y.p)(O.id, c, d, a, f))
 					}(e)
 				}
 				return O.isBlank ? o.a.createElement(W.BlankPost, {
@@ -5758,11 +5758,11 @@
 				Nt = Object(i.b)(Tt, (e, t) => ({
 					...Object(kt.b)(e),
 					trackOnPostEnteredViewport: e => {
-						t.sendEvent(Object(y.m)(t.listingKey, e, {
+						t.sendEvent(Object(y.n)(t.listingKey, e, {
 							...t.searchOptions,
 							id: e,
 							eventType: "post"
-						}, Object(Qe.b)(t))), t.sendEvent(Object(y.n)(t.listingKey, e, {
+						}, Object(Qe.b)(t))), t.sendEvent(Object(y.o)(t.listingKey, e, {
 							...t.searchOptions,
 							id: e,
 							eventType: "post"
@@ -6692,7 +6692,7 @@
 							sendEvent: t,
 							subreddit: s
 						} = this.props;
-						t(Object(h.s)(!!s, e))
+						t(Object(h.t)(!!s, e))
 					}
 				}
 				render() {
@@ -9498,4 +9498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.3c245b38a4a6b5956d8f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f7be0f5dd9c3a27cc65f.js.map

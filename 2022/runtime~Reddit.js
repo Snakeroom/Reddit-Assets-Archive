@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.6f4d4656d44123f6a98b.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.61954793135ece2e0931.js
+// Retrieved at 1/10/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1327,7 +1327,7 @@
 						"ModQueue~ModQueuePages~ModerationPages": "b0cc07ea05ec2a6e2b7e",
 						ModQueuePages: "4f76b06312129c3affa8",
 						GovernanceReleaseNotesModal: "c636bf7d2865e9433690",
-						SearchResults: "3c245b38a4a6b5956d8f",
+						SearchResults: "f7be0f5dd9c3a27cc65f",
 						"Multireddit~reddit-components-AdHocMultiredditSidebar": "333af635429d6bd79692",
 						Multireddit: "9200ca4b6ab033d7ab5a",
 						ProfilePosts: "1b289bd257227d785ad9",
@@ -1446,7 +1446,7 @@
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
 						ModListing: "c2ef4f48dc78b642d29d",
-						Subreddit: "0d215b62a78e4157354f",
+						Subreddit: "b6d0bd6636868c33988e",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "b1b748750a6395dcc18f",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "628798681ce3de29e0b0",
 						PublicAccessNetwork: "b2bed224f3776b04b975",
@@ -1481,7 +1481,7 @@
 						ReportFlowNew: "688698f53428001f252b",
 						ReredditLink: "da49ee0bbf081e92fdeb",
 						RichTextJsonEmoteTooltip: "f7ef6d496dcbbbc999a2",
-						SubredditMentionWithIcon: "3709bb3f2a7b25111d06",
+						SubredditMentionWithIcon: "acab52eb3d13f2ec9361",
 						UserAchievementFlair: "8d22b51a42594818958e",
 						VideoShareModal: "6055139f373aee4d4c1d",
 						"index~reddit-components-Econ-Prediction": "72ef1b3394a2fa5ac546",
@@ -1514,7 +1514,7 @@
 						NewCommunityProgress: "bee3e398c3859f37aab0",
 						FeaturedLiveEntrypointAnnouncement: "30c34587f8e3e7661cee",
 						FeaturedLiveEntrypointAnnouncementsCarousel: "9d83bfe9fa8633c524de",
-						Trending: "c71525bd7536aef14f5c",
+						Trending: "2638d1ce234692d40ef2",
 						"reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts": "200947ff2c534afcf263",
 						"reddit-components-InFeedPostCreation": "00e0cf9c6f20a10e7f65",
 						"reddit-components-TabBadger-Component": "796bc9d4ad28398f6cbe",
@@ -1665,4 +1665,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.6f4d4656d44123f6a98b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.61954793135ece2e0931.js.map
