@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.119fbd5c09a5b532d471.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.ecd08eab9e0310bb00a5.js
+// Retrieved at 1/10/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, i) {
@@ -357,7 +357,8 @@
 			e.exports = {
 				editorWrapper: "VBa-xDMEbFi3vsO4id4OC",
 				textareaAutosize: "_6Ej82J4aTDK36LLOcpFbC",
-				mIsFullHeight: "aZb6a46diyLdUQJynW3aD"
+				mIsFullHeight: "aZb6a46diyLdUQJynW3aD",
+				shouldPadContent: "_1BSXh-_TPEzV9jw2pP-m8p"
 			}
 		},
 		"./src/reddit/components/ResizableAutosizeTextarea/index.tsx": function(e, t, i) {
@@ -393,14 +394,16 @@
 				}, t),
 				u = ({
 					isFullHeight: e,
-					textAreaRef: t,
-					...i
+					shouldPadContent: t,
+					textAreaRef: i,
+					...n
 				}) => s.a.createElement(a.a, l({
 					className: Object(r.a)(c.a.textareaAutosize, {
-						[c.a.mIsFullHeight]: e
+						[c.a.mIsFullHeight]: e,
+						[c.a.shouldPadContent]: t
 					}),
-					innerRef: t
-				}, i));
+					innerRef: i
+				}, n));
 			class p extends s.a.Component {
 				constructor(e) {
 					super(e), this.editorHeight = null, this.editorRef = null, this.editorStyleMutationObserver = null, this.onEditorStyleChanged = () => {
@@ -442,7 +445,6 @@
 						editorWrapperRef: this.setEditorWrapperRef,
 						initialHeight: t
 					}, s.a.createElement(u, l({}, o, {
-						children: !0,
 						isFullHeight: !!a,
 						textAreaRef: i
 					})))
@@ -2169,4 +2171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.119fbd5c09a5b532d471.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.ecd08eab9e0310bb00a5.js.map

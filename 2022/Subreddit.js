@@ -1,55 +1,7 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.d9171e9f826e7db399f0.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c58bd0e6b54e9c5f5aca.js
+// Retrieved at 1/10/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "Frontpage~ModListing", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
-		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
-			var s = n("./node_modules/lodash/_baseClamp.js"),
-				r = n("./node_modules/lodash/_copyArray.js"),
-				o = n("./node_modules/lodash/_shuffleSelf.js");
-			e.exports = function(e, t) {
-				return o(r(e), s(t, 0, e.length))
-			}
-		},
-		"./node_modules/lodash/_baseRandom.js": function(e, t) {
-			var n = Math.floor,
-				s = Math.random;
-			e.exports = function(e, t) {
-				return e + n(s() * (t - e + 1))
-			}
-		},
-		"./node_modules/lodash/_baseSampleSize.js": function(e, t, n) {
-			var s = n("./node_modules/lodash/_baseClamp.js"),
-				r = n("./node_modules/lodash/_shuffleSelf.js"),
-				o = n("./node_modules/lodash/values.js");
-			e.exports = function(e, t) {
-				var n = o(e);
-				return r(n, s(t, 0, n.length))
-			}
-		},
-		"./node_modules/lodash/_shuffleSelf.js": function(e, t, n) {
-			var s = n("./node_modules/lodash/_baseRandom.js");
-			e.exports = function(e, t) {
-				var n = -1,
-					r = e.length,
-					o = r - 1;
-				for (t = void 0 === t ? r : t; ++n < t;) {
-					var a = s(n, o),
-						i = e[a];
-					e[a] = e[n], e[n] = i
-				}
-				return e.length = t, e
-			}
-		},
-		"./node_modules/lodash/sampleSize.js": function(e, t, n) {
-			var s = n("./node_modules/lodash/_arraySampleSize.js"),
-				r = n("./node_modules/lodash/_baseSampleSize.js"),
-				o = n("./node_modules/lodash/isArray.js"),
-				a = n("./node_modules/lodash/_isIterateeCall.js"),
-				i = n("./node_modules/lodash/toInteger.js");
-			e.exports = function(e, t, n) {
-				return t = (n ? a(e, t, n) : void 0 === t) ? 1 : i(t), (o(e) ? s : r)(e, t)
-			}
-		},
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
 			e.exports = {
 				Component: "_2Qq40Mz_DMe0iARkTh8cZn",
@@ -17220,4 +17172,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.d9171e9f826e7db399f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c58bd0e6b54e9c5f5aca.js.map
