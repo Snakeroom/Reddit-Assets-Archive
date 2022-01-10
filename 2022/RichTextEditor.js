@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.2ac6442041f33307efb2.js
-// Retrieved at 1/10/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.5b400086fb57cf8997e8.js
+// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "ReadingIndicator"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -725,10 +725,10 @@
 				H = n("./src/reddit/models/RichTextJson/index.ts"),
 				q = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
 				K = n("./src/reddit/models/Toast/index.ts"),
-				V = n("./src/reddit/selectors/comments.ts"),
-				X = n("./src/reddit/selectors/commentSelector.ts"),
-				G = n("./src/reddit/selectors/platform.ts"),
-				J = n("./src/reddit/selectors/posts.ts"),
+				X = n("./src/reddit/selectors/comments.ts"),
+				G = n("./src/reddit/selectors/commentSelector.ts"),
+				J = n("./src/reddit/selectors/platform.ts"),
+				V = n("./src/reddit/selectors/posts.ts"),
 				Z = n("./src/reddit/selectors/user.ts"),
 				Q = n("./src/reddit/actions/comment/index.ts"),
 				Y = n("./src/reddit/actions/comment/constants.ts");
@@ -757,7 +757,7 @@
 					gqlContext: c
 				}) => {
 					const l = a(),
-						u = Object(G.e)(l);
+						u = Object(J.e)(l);
 					let m = "";
 					if (u && (m = u.name), z.d.enableToxicityWarning(l)) {
 						if (!(await R(c(), m, o, s))) return void i(Object(d.i)(ie))
@@ -784,13 +784,13 @@
 						let o;
 						o = C.body, u(ne({
 							...o,
-							headCommentId: Object(V.w)(g, {
+							headCommentId: Object(X.w)(g, {
 								commentsPageKey: t
 							}),
 							commentsPageKey: t,
 							draftKey: n
 						}));
-						const s = Object(J.H)(b(), {
+						const s = Object(V.H)(b(), {
 							postId: e
 						});
 						u(Object(l.z)(s, f.a.CommentSubmitted))
@@ -819,7 +819,7 @@
 						draftKey: a,
 						formData: c,
 						editorMode: l
-					} = e, u = n(), m = Object(G.e)(u);
+					} = e, u = n(), m = Object(J.e)(u);
 					let p = "";
 					if (m && (p = m.name), z.d.enableToxicityWarning(u)) {
 						if (!(await R(o(), p, c, l))) return void t(Object(d.i)(ie))
@@ -863,7 +863,7 @@
 					}));
 					else {
 						if (_.error && _.error.type === s.Jb) {
-							const e = Object(X.b)(m, {
+							const e = Object(G.b)(m, {
 								commentId: r
 							});
 							if (!e) return;
@@ -911,7 +911,7 @@
 						l = Object(i.a)(U.c.replyToComment, t);
 					if (!Object(Z.J)(s())) return o(Object(c.j)()), void o(Object(d.k)({
 						actionSource: d.a.Reply,
-						redirectUrl: Object(V.m)(s(), {
+						redirectUrl: Object(X.m)(s(), {
 							commentId: t
 						})
 					}));
@@ -1564,10 +1564,10 @@
 				H = n("./src/lib/classNames/index.ts"),
 				q = n("./src/reddit/constants/keycodes.ts"),
 				K = n("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
-				V = n("./src/realtime/GQLSubscription/async.tsx"),
-				X = n("./src/reddit/components/TypingIndicators/index.tsx"),
-				G = n("./src/reddit/components/TypingIndicators/constants.ts"),
-				J = n("./src/reddit/constants/componentSizes.ts"),
+				X = n("./src/realtime/GQLSubscription/async.tsx"),
+				G = n("./src/reddit/components/TypingIndicators/index.tsx"),
+				J = n("./src/reddit/components/TypingIndicators/constants.ts"),
+				V = n("./src/reddit/constants/componentSizes.ts"),
 				Z = n("./src/reddit/constants/componentTestIds.ts"),
 				Q = n("./src/reddit/selectors/activeModalId.ts"),
 				Y = n("./src/reddit/selectors/comments.ts"),
@@ -1614,9 +1614,9 @@
 						this.props.onCancel(), this.onBlur()
 					}, this.setUserStoppedTyping = r()(() => this.setState({
 						isUserTyping: !1
-					}), G.g), this.detectBreakout = () => {
+					}), J.g), this.detectBreakout = () => {
 						if (!this.wrapperEl || !this.wrapperEl.parentElement || this.props.isTopLevelComment) return;
-						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < J.c,
+						const e = this.wrapperEl.parentElement.getBoundingClientRect().width < V.c,
 							t = this.getWrapperHeight();
 						e === this.state.breakOut && t === this.state.wrapperHeight || k.a.write(() => {
 							this.setState({
@@ -1737,7 +1737,7 @@
 				getWrapperHeight() {
 					if (!this.textAreaRef) return;
 					const e = Object(l.findDOMNode)(this.textAreaRef);
-					return e instanceof Element ? e.getBoundingClientRect().height + xe + ye + J.o : void 0
+					return e instanceof Element ? e.getBoundingClientRect().height + xe + ye + V.o : void 0
 				}
 				render() {
 					const {
@@ -1771,7 +1771,7 @@
 						breakOut: N,
 						wrapperHeight: W,
 						isUserTyping: L
-					} = this.state, q = Object(K.a)(l), J = c.draftType === se.c.edit;
+					} = this.state, q = Object(K.a)(l), V = c.draftType === se.c.edit;
 					return d.a.createElement("div", {
 						"data-test-id": Z.b,
 						className: Object(H.a)(de.a.Wrapper, s, {
@@ -1785,7 +1785,7 @@
 						style: {
 							height: N ? W : void 0
 						}
-					}, F && L && d.a.createElement(V.a, {
+					}, F && L && d.a.createElement(X.a, {
 						variables: this.realtimeGQLVariables,
 						onData: a.a,
 						queryKey: "userIsTypingOnPost"
@@ -1794,14 +1794,14 @@
 						isAuthorDeleted: !1
 					}, A))], {
 						hk: "4pMWAk"
-					}))), R && d.a.createElement(X.default, {
-						minTimeVisible: G.e,
-						minNumUsersTyping: G.d,
+					}))), R && d.a.createElement(G.default, {
+						minTimeVisible: J.e,
+						minNumUsersTyping: J.d,
 						postId: M
 					}), d.a.createElement(v.a, {
 						breakOut: N,
 						depth: i,
-						isEditing: J
+						isEditing: V
 					}, k && d.a.createElement("div", {
 						className: de.a.userIcon
 					}, d.a.createElement(_e, null)), d.a.createElement("div", {
@@ -1998,10 +1998,10 @@
 				H = n("./src/reddit/selectors/comments.ts"),
 				q = n("./src/reddit/selectors/economics.ts"),
 				K = n("./src/reddit/selectors/gold/enabledFeatures.ts"),
-				V = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				X = n("./src/reddit/components/TypingIndicators/constants.ts"),
-				G = n("./src/reddit/helpers/trackers/commentsPage.ts"),
-				J = n("./src/reddit/selectors/experiments/typingIndicators.ts"),
+				X = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				G = n("./src/reddit/components/TypingIndicators/constants.ts"),
+				J = n("./src/reddit/helpers/trackers/commentsPage.ts"),
+				V = n("./src/reddit/selectors/experiments/typingIndicators.ts"),
 				Z = n("./src/reddit/components/TypingIndicators/index.m.less"),
 				Q = n.n(Z),
 				Y = n("./src/reddit/components/CommentCreation/RichtextCommentForm/index.m.less"),
@@ -2129,9 +2129,9 @@
 							subredditId: o
 						})
 					},
-					isTypingIndicatorsUIEnabled: (e, t) => !!t.isTopLevelComment && Object(J.b)(e),
-					isTypingIndicatorsReadTestEnabled: (e, t) => !!t.isTopLevelComment && Object(J.d)(e),
-					isTypingIndicatorsWriteTestEnabled: (e, t) => !!t.isTopLevelComment && Object(J.e)(e)
+					isTypingIndicatorsUIEnabled: (e, t) => !!t.isTopLevelComment && Object(V.b)(e),
+					isTypingIndicatorsReadTestEnabled: (e, t) => !!t.isTopLevelComment && Object(V.d)(e),
+					isTypingIndicatorsWriteTestEnabled: (e, t) => !!t.isTopLevelComment && Object(V.e)(e)
 				}),
 				de = (e, t) => ({
 					cancelModalToggled: () => e(Object(M.i)(Object(R.a)(t.draftKey)))
@@ -2204,7 +2204,7 @@
 					}, this.onSwitchEditorMode = (e, t) => {
 						this.props.onSwitchMode(e, t, this.props.draftKey)
 					}, this.onTrackToolbarClick = (e, t) => {
-						Object(O.e)(O.a.CommentComposer, !1), this.props.sendEvent(Object(G.h)(e, t))
+						Object(O.e)(O.a.CommentComposer, !1), this.props.sendEvent(Object(J.h)(e, t))
 					};
 					const {
 						postId: t,
@@ -2291,9 +2291,9 @@
 					} = this.props, {
 						cancelModalText: q,
 						breakOut: K,
-						formHeight: V,
-						rteState: G
-					} = this.state, J = Object(R.a)(c), Z = i.draftType === F.c.edit, Q = l !== F.c.replyToPost;
+						formHeight: X,
+						rteState: J
+					} = this.state, V = Object(R.a)(c), Z = i.draftType === F.c.edit, Q = l !== F.c.replyToPost;
 					return d.a.createElement("div", {
 						className: Object(m.a)($.a.FormWrapper, n, {
 							[$.a.isTopLevelComment]: v,
@@ -2303,7 +2303,7 @@
 						}),
 						ref: this.setEditorWrapperRef,
 						style: {
-							height: K ? V : void 0
+							height: K ? X : void 0
 						}
 					}, U && !N && d.a.createElement(f.a, {
 						variables: this.realtimeGQLVariables,
@@ -2315,8 +2315,8 @@
 					}, I))], {
 						hk: "4pMWAk"
 					}))), N && d.a.createElement(te, {
-						minTimeVisible: X.e,
-						minNumUsersTyping: X.d,
+						minTimeVisible: G.e,
+						minNumUsersTyping: G.d,
 						postId: E
 					}), d.a.createElement(w.a, {
 						breakOut: K,
@@ -2329,12 +2329,12 @@
 						destSubreddit: r,
 						editorType: W.a.Comment,
 						initialHeight: B ? void 0 : this.props.initialHeight,
-						initialMinHeight: B ? X.c : void 0,
+						initialMinHeight: B ? G.c : void 0,
 						isCommentBoxDesignEnabled: p,
 						isExpanded: h,
 						isTypingIndicatorsExperimentEnabled: B,
 						isTypingIndicatorsWriteTestEnabled: H,
-						rteState: G,
+						rteState: J,
 						rteRef: this.setRTEComponentRef,
 						domRef: this.setRTEDomElementRef,
 						noBorder: B,
@@ -2354,7 +2354,7 @@
 						trackToolbarClick: this.onTrackToolbarClick,
 						toolbarPosition: "bottom",
 						renderToolbar: this.getToolbarRenderer(Q, c, y, C, p, S, M, B)
-					})), this.state.showError ? Object(T.c)(u) : null, e === J && d.a.createElement(g.a, {
+					})), this.state.showError ? Object(T.c)(u) : null, e === V && d.a.createElement(g.a, {
 						actionText: s.fbt._("Discard", null, {
 							hk: "1kJ5PR"
 						}),
@@ -2371,11 +2371,11 @@
 						withOverlay: !0
 					}), d.a.createElement(A.a, {
 						editKey: c,
-						hasValue: P.a.hasContent(G)
+						hasValue: P.a.hasContent(J)
 					}))
 				}
 			}
-			t.a = ue(le(Object(V.c)(me)))
+			t.a = ue(le(Object(X.c)(me)))
 		},
 		"./src/reddit/components/CommentCreation/ToolbarSelector.m.less": function(e, t, n) {
 			e.exports = {
@@ -4541,37 +4541,37 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.df
+						experimentName: o.ef
 					}) === o.Vc
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.ef
+						experimentName: o.ff
 					}) === o.Vc
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.cf
+						experimentName: o.df
 					});
-					return t === o.Ve.UIChangesOnly || t === o.Ve.TypingIndicators || t === o.Ve.IndicatorsPlusCTA
+					return t === o.We.UIChangesOnly || t === o.We.TypingIndicators || t === o.We.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: o.cf
+							experimentName: o.df
 						}),
 						n = null == t ? void 0 : t.variant;
-					return n === o.Ve.TypingIndicators || n === o.Ve.IndicatorsPlusCTA
+					return n === o.We.TypingIndicators || n === o.We.IndicatorsPlusCTA
 				},
 				u = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.cf
+						experimentName: o.df
 					});
-					return (null == t ? void 0 : t.variant) === o.Ve.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.We.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -4582,4 +4582,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.2ac6442041f33307efb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.5b400086fb57cf8997e8.js.map

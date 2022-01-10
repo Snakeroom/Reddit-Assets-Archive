@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.5aa141a79ba88082c9d9.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.c2ef4f48dc78b642d29d.js
+// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -496,9 +496,9 @@
 			})), r.d(t, "hideSubredditSuccess", (function() {
 				return q
 			})), r.d(t, "hideSubredditPending", (function() {
-				return K
-			})), r.d(t, "hideSubredditFailed", (function() {
 				return V
+			})), r.d(t, "hideSubredditFailed", (function() {
+				return K
 			})), r.d(t, "unhideSubredditSuccess", (function() {
 				return W
 			})), r.d(t, "unhideSubredditPending", (function() {
@@ -655,8 +655,8 @@
 				return t in i.gc && i.gc[t]
 			}
 			const q = Object(a.a)(N.c),
-				K = Object(a.a)(N.b),
-				V = Object(a.a)(N.a),
+				V = Object(a.a)(N.b),
+				K = Object(a.a)(N.a),
 				W = Object(a.a)(N.l),
 				Q = Object(a.a)(N.k),
 				J = Object(a.a)(N.j),
@@ -665,7 +665,7 @@
 				}) => {
 					const o = s(),
 						i = Object(k.k)(o),
-						[a, d, c, u] = t ? [K, q, V, _] : [Q, W, J, j];
+						[a, d, c, u] = t ? [V, q, K, _] : [Q, W, J, j];
 					if (!i || !i.displayText) return;
 					const {
 						currentPage: l
@@ -2182,14 +2182,14 @@
 					noun: e ? "unfiltered_subreddits" : "filtered_subreddits"
 				});
 			var q = r("./src/reddit/routes/modListing/index.ts");
-			const K = e => e.modListingPage.filteredSubreddits.api.pending;
-			var V = r("./src/reddit/constants/keycodes.ts"),
+			const V = e => e.modListingPage.filteredSubreddits.api.pending;
+			var K = r("./src/reddit/constants/keycodes.ts"),
 				W = r("./src/reddit/layout/row/Inline/index.tsx"),
 				Q = r("./src/reddit/components/ModListingSidebar/HideCommunities/HideInput/index.m.less"),
 				J = r.n(Q);
 			const G = Object(d.c)({
 				apiError: e => e.modListingPage.filteredSubreddits.api.error,
-				isApiPending: K
+				isApiPending: V
 			});
 			class z extends i.a.Component {
 				constructor() {
@@ -2206,7 +2206,7 @@
 					}, this.onChange = e => {
 						this.setSubredditInput(e.target.value)
 					}, this.onKeyPress = e => {
-						e.key === V.b.Enter && this.submitInput()
+						e.key === K.b.Enter && this.submitInput()
 					}, this.canSubmitInput = () => this.state.subredditInput && !this.props.isApiPending
 				}
 				render() {
@@ -2251,7 +2251,7 @@
 				oe = r.n(ne);
 			const ie = Y.a.wrapped(Z.b, "SubredditIcon", oe.a),
 				ae = Object(d.c)({
-					isApiPending: K,
+					isApiPending: V,
 					subredditOrProfile: (e, t) => {
 						const r = Object(se.w)(e, {
 							subredditName: t.subredditName
@@ -2766,7 +2766,7 @@
 					result: H
 				});
 			const q = {};
-			var K = (e = q, t) => {
+			var V = (e = q, t) => {
 					switch (t.type) {
 						case I.g: {
 							const {
@@ -2804,12 +2804,12 @@
 							return e
 					}
 				},
-				V = Object(s.c)({
+				K = Object(s.c)({
 					api: M,
 					models: P,
 					pageInfo: B,
 					search: U,
-					userOrder: K
+					userOrder: V
 				}),
 				W = r("./src/reddit/actions/moderationLog/constants.ts");
 			const Q = {};
@@ -3364,13 +3364,13 @@
 							return e
 					}
 				},
-				Ke = Object(s.c)({
+				Ve = Object(s.c)({
 					error: He,
 					pending: qe
 				});
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			const Ve = {};
-			var We = (e = Ve, t) => {
+			const Ke = {};
+			var We = (e = Ke, t) => {
 					switch (t.type) {
 						case n.F: {
 							const {
@@ -3404,7 +3404,7 @@
 				},
 				Qe = Object(s.c)({
 					data: We,
-					api: Ke
+					api: Ve
 				}),
 				Je = Object(s.c)({
 					editableModerators: ae,
@@ -3874,12 +3874,12 @@
 							return e
 					}
 				},
-				Kt = Object(s.c)({
+				Vt = Object(s.c)({
 					api: Dt,
 					itemOrder: Ht,
 					loadMore: qt
 				});
-			var Vt = (e = null, t) => {
+			var Kt = (e = null, t) => {
 				switch (t.type) {
 					case Xe.w:
 					case Xe.v:
@@ -3902,7 +3902,7 @@
 					}
 				},
 				Qt = Object(s.c)({
-					error: Vt,
+					error: Kt,
 					pending: Wt
 				});
 			const Jt = {};
@@ -3958,7 +3958,7 @@
 					moderatedCommunitiesOrder: gt,
 					modqueue: Ct,
 					reports: Ft,
-					spam: Kt,
+					spam: Vt,
 					unmoderated: Yt
 				});
 			var $t = (e = null, t) => {
@@ -4162,7 +4162,7 @@
 				});
 			t.a = Object(s.c)({
 				approvedSubmitters: w,
-				flairedUsers: V,
+				flairedUsers: K,
 				moderationLog: oe,
 				moderators: Je,
 				modQueue: Zt,
@@ -4220,14 +4220,14 @@
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(n.c)(e, {
-					experimentName: s.Kd,
-					experimentEligibilitySelector: n.a
-				}) === s.Td.Enabled,
-				i = e => Object(n.c)(e, {
 					experimentName: s.Ld,
+					experimentEligibilitySelector: n.a
+				}) === s.Ud.Enabled,
+				i = e => Object(n.c)(e, {
+					experimentName: s.Md,
 					experimentEligibilitySelector: n.a,
 					expEventOverride: !1
-				}) === s.Ud.Enabled
+				}) === s.Vd.Enabled
 		},
 		"./src/reddit/selectors/gold/powerups/modSignup.ts": function(e, t, r) {
 			"use strict";
@@ -4324,4 +4324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.5aa141a79ba88082c9d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.c2ef4f48dc78b642d29d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4a4eb1f67301fe8f224f.js
-// Retrieved at 1/10/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.461a49c2ca250db5a952.js
+// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -4021,7 +4021,7 @@
 			const T = e => g.d.reCaptchaEnterprise(e) && !Object(v.d)(e),
 				D = e => !!Object(j.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...a.d)),
-					experimentName: b.se
+					experimentName: b.te
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -4901,7 +4901,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(w)
 						}
-						await t(Object(s.b)(`${r.path}`)), f ? f === p.Vd.NewModule && t(Object(i.h)({
+						await t(Object(s.b)(`${r.path}`)), f ? f === p.Wd.NewModule && t(Object(i.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(o.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(T.a)(Object(g.g)()(E))), Object(I.b)(I.a.SubredditCreation)
 					} else P.error && Object(T.a)(Object(g.h)(P.error.type, h)(E)), t(k({
@@ -26623,7 +26623,7 @@
 				l = e => e === n.W.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.J, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(n.hf)(t))
+				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(n.if)(t))
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, r) {
 			"use strict";
@@ -26902,4 +26902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4a4eb1f67301fe8f224f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.461a49c2ca250db5a952.js.map

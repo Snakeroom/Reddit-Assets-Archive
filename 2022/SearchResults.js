@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.b6fa1f38c52bd1944e88.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.3c245b38a4a6b5956d8f.js
+// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2960,7 +2960,7 @@
 						showTimestamp: j = !0,
 						subredditOrProfile: E,
 						tooltipType: D
-					} = e, H = Object(o.d)(), U = Object(f.a)(), W = Object(o.e)(oe.a), q = Object(o.e)(de.d), G = Object(o.e)(de.g) || ["popular", "all"].includes(q || ""), z = Object(o.e)(ae.b), J = !(!v.isSponsored || !W || Object(p.hf)(W));
+					} = e, H = Object(o.d)(), U = Object(f.a)(), W = Object(o.e)(oe.a), q = Object(o.e)(de.d), G = Object(o.e)(de.g) || ["popular", "all"].includes(q || ""), z = Object(o.e)(ae.b), J = !(!v.isSponsored || !W || Object(p.if)(W));
 					Object(r.useEffect)(() => {
 						J && H(Object(m.d)(v.author))
 					}, []);
@@ -7208,12 +7208,12 @@
 						rtJsonElementProps: o
 					});
 					switch (r) {
-						case h.Oe.SmIcon:
+						case h.Pe.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case h.Oe.SmIconHc:
+						case h.Pe.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -9428,10 +9428,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: n.ie,
+					experimentName: n.je,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === n.qe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === n.re.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(r.a)(i.H, a, (e, t) => c(e, t));
 			Object(r.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -9458,12 +9458,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Ie
+						experimentName: r.Je
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.Oe.SmIcon || t === r.Oe.SmIconHc
+					return t === r.Pe.SmIcon || t === r.Pe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -9498,4 +9498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.b6fa1f38c52bd1944e88.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.3c245b38a4a6b5956d8f.js.map

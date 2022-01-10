@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.e63ffc91683bfe87fcda.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.834ef91e1cdf6d022f84.js
+// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -374,8 +374,8 @@
 				E = n("./src/reddit/models/Media/index.ts"),
 				_ = n("./src/reddit/selectors/experiments/goodVisitSearchFeed.ts"),
 				j = n("./src/reddit/selectors/posts.ts"),
-				O = n("./src/reddit/selectors/telemetry.ts"),
-				C = n("./src/reddit/selectors/user.ts"),
+				C = n("./src/reddit/selectors/telemetry.ts"),
+				O = n("./src/reddit/selectors/user.ts"),
 				v = n("./src/reddit/constants/tracking.ts"),
 				y = n("./src/reddit/components/Media/ImageBox/index.m.less"),
 				w = n.n(y);
@@ -412,10 +412,10 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(a.b)(() => Object(c.a)(j.G, C.cb, (e, {
+				N = Object(a.b)(() => Object(c.a)(j.G, O.cb, (e, {
 					isSponsored: t,
 					postId: n
-				}) => t && n ? Object(j.b)(e, n) : null, _.a, O.d, j.H, (e, t, n, s, r, o) => ({
+				}) => t && n ? Object(j.b)(e, n) : null, _.a, C.d, j.H, (e, t, n, s, r, o) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: n,
@@ -656,8 +656,8 @@
 				}))
 			}
 			var j = n("./src/reddit/components/Media/VideoBox/index.m.less"),
-				O = n.n(j);
-			const C = Object(c.c)({
+				C = n.n(j);
+			const O = Object(c.c)({
 				autoplayPref: h.b,
 				consumed: p.a,
 				loadTimes: p.f,
@@ -672,7 +672,7 @@
 					loadTimes: s,
 					metadata: o,
 					started: c
-				} = Object(i.e)(t => C(t, e)), {
+				} = Object(i.e)(t => O(t, e)), {
 					postId: h,
 					shouldLoad: p,
 					source: b,
@@ -739,7 +739,7 @@
 					const e = {};
 					return w && (e.margin = "0 auto"), v || (e.maxHeight = `${m.e}px`), a.a.createElement(_, {
 						autoplay: t,
-						className: Object(d.a)(u.a, O.a.styledVideo),
+						className: Object(d.a)(u.a, C.a.styledVideo),
 						height: x,
 						isListing: v,
 						isNotCardView: f,
@@ -762,8 +762,8 @@
 					})
 				}
 				return v ? P() : a.a.createElement("div", {
-					className: Object(d.a)(O.a.container, y, {
-						[O.a.centered]: w
+					className: Object(d.a)(C.a.container, y, {
+						[C.a.centered]: w
 					})
 				}, a.a.createElement("a", {
 					href: I,
@@ -972,9 +972,9 @@
 			})), n.d(t, "u", (function() {
 				return j
 			})), n.d(t, "d", (function() {
-				return O
-			})), n.d(t, "l", (function() {
 				return C
+			})), n.d(t, "l", (function() {
+				return O
 			})), n.d(t, "m", (function() {
 				return v
 			})), n.d(t, "n", (function() {
@@ -1015,8 +1015,8 @@
 				E = c.a.strong("B", i.a),
 				_ = c.a.em("I", i.a),
 				j = c.a.span("U", i.a),
-				O = e => r.a.createElement("del", e),
-				C = c.a.sub("Sub", i.a),
+				C = e => r.a.createElement("del", e),
+				O = c.a.sub("Sub", i.a),
 				v = c.a.sup("Sup", i.a),
 				y = c.a.table("Table", i.a),
 				w = c.a.tr("Tr", i.a),
@@ -1039,7 +1039,7 @@
 		"./src/reddit/components/RichTextJson/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return C
+				return O
 			})), n.d(t, "b", (function() {
 				return v
 			})), n.d(t, "a", (function() {
@@ -1085,9 +1085,9 @@
 						}))
 					}
 				}))),
-				O = e => e.e === p.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== p.u || !!e.c && !e.c.every(e => e.e === p.A && !e.t),
-				C = e => r()(e, O),
-				v = e => e.findIndex(O),
+				C = e => e.e === p.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== p.u || !!e.c && !e.c.every(e => e.e === p.A && !e.t),
+				O = e => r()(e, C),
+				v = e => e.findIndex(C),
 				y = e => {
 					const {
 						altText: t,
@@ -1101,9 +1101,9 @@
 						renderMediaAsLinks: h,
 						rtJsonElementProps: f,
 						useExplicitTextColor: E,
-						shouldBlur: O
-					} = e, y = s.document, w = [], I = e.mediaMetadata || null, T = v(y), k = C(y);
-					if (O && !r) return a.a.createElement(_, {
+						shouldBlur: C
+					} = e, y = s.document, w = [], I = e.mediaMetadata || null, T = v(y), k = O(y);
+					if (C && !r) return a.a.createElement(_, {
 						className: Object(i.a)(u.j, n)
 					}, a.a.createElement("div", {
 						className: g.a.unblurButtonContainer
@@ -1233,8 +1233,8 @@
 			}
 			const _ = /\/(\w+)\/asset\/(\w+)\//,
 				j = g.a.wrapped(b.a, "A", f.a),
-				O = g.a.wrapped(l.a, "ImageBox", f.a),
-				C = g.a.wrapped(e => o.a.createElement("p", e), "Caption", f.a),
+				C = g.a.wrapped(l.a, "ImageBox", f.a),
+				O = g.a.wrapped(e => o.a.createElement("p", e), "Caption", f.a),
 				v = g.a.div("Placeholder", f.a),
 				y = g.a.wrapped(({
 					className: e,
@@ -1304,7 +1304,7 @@
 						showCentered: !0,
 						showFull: !0,
 						width: t.x
-					}, o.a.createElement(O, {
+					}, o.a.createElement(C, {
 						altText: r,
 						originalSource: t.u,
 						postId: e,
@@ -1394,7 +1394,7 @@
 					}))))(d, t, !!e.c, r)) : l.push(((e, t) => o.a.createElement(y, {
 						e,
 						key: t
-					}))(e.e, t)), e.c && l.push(((e, t) => o.a.createElement(C, {
+					}))(e.e, t)), e.c && l.push(((e, t) => o.a.createElement(O, {
 						key: t
 					}, e))(e.c, `caption${t}`)), l
 				}
@@ -1446,7 +1446,7 @@
 			! function(e) {
 				e[e.Inside = 0] = "Inside", e[e.Outside = 1] = "Outside"
 			}(j || (j = {}));
-			class O extends i.a.Component {
+			class C extends i.a.Component {
 				constructor() {
 					super(...arguments), this.mouseLocation = j.Outside, this.state = {
 						tooltipOpen: !1
@@ -1507,7 +1507,7 @@
 					})) : null
 				}
 			}
-			var C = Object(u.c)(O),
+			var O = Object(u.c)(C),
 				v = n("./src/reddit/components/RichTextJson/media.tsx"),
 				y = n("./src/reddit/components/RichTextJson/SpoilerText.tsx"),
 				w = n("./src/reddit/components/SubredditMention/index.tsx"),
@@ -1648,7 +1648,7 @@
 						else if (r.e === h.m || r.e === h.a) {
 							if (r.id.startsWith("emote|")) {
 								const e = h.E(t, r.id);
-								e && s.push(i.a.createElement(C, {
+								e && s.push(i.a.createElement(O, {
 									key: o,
 									node: r,
 									media: e
@@ -1862,7 +1862,7 @@
 		"./src/reddit/components/SubredditMention/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return O
+				return C
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -1922,7 +1922,7 @@
 					userVariant: f.a
 				}),
 				j = Object(o.b)(_),
-				O = ({
+				C = ({
 					isFeatureFlagEnabled: e,
 					isUserInTreatment: t,
 					subredditName: n,
@@ -1934,12 +1934,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case b.Oe.SmIcon:
+						case b.Pe.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case b.Oe.SmIconHc:
+						case b.Pe.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: n,
 								isHoverable: !0,
@@ -1952,7 +1952,7 @@
 							})
 					}
 				};
-			t.b = j(O)
+			t.b = j(C)
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2175,7 +2175,7 @@
 			})), n.d(t, "d", (function() {
 				return j
 			})), n.d(t, "e", (function() {
-				return O
+				return C
 			}));
 			var s, r, o = n("./src/reddit/constants/tracking.ts"),
 				a = n("./src/reddit/helpers/isComment.ts"),
@@ -2293,7 +2293,7 @@
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
-				O = e => t => ({
+				C = e => t => ({
 					...h(t),
 					subreddit: u.kb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
@@ -2324,12 +2324,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Ie
+						experimentName: s.Je
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.Oe.SmIcon || t === s.Oe.SmIconHc
+					return t === s.Pe.SmIcon || t === s.Pe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2352,4 +2352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.e63ffc91683bfe87fcda.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.834ef91e1cdf6d022f84.js.map

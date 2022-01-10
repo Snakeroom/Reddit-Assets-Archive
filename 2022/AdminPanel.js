@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.12d9421dea0c3e3a9e34.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.2bb269c4d8314a01ad21.js
+// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -1917,4 +1917,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.12d9421dea0c3e3a9e34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.2bb269c4d8314a01ad21.js.map

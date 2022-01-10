@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.b433ddf3038a54d70f12.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.3fed1db0b1a00619bf48.js
+// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -3370,4 +3370,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.b433ddf3038a54d70f12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.3fed1db0b1a00619bf48.js.map
