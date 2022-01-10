@@ -1,23 +1,7 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.29efe53e23a20d8861e6.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.d674e60a581425917cd4.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CommunitySettings-ModPnSettings"], {
-		"./node_modules/lodash/times.js": function(e, t, n) {
-			var a = n("./node_modules/lodash/_baseTimes.js"),
-				s = n("./node_modules/lodash/_castFunction.js"),
-				o = n("./node_modules/lodash/toInteger.js"),
-				i = 9007199254740991,
-				r = 4294967295,
-				d = Math.min;
-			e.exports = function(e, t) {
-				if ((e = o(e)) < 1 || e > i) return [];
-				var n = r,
-					c = d(e, r);
-				t = s(t), e -= r;
-				for (var l = a(c, t); ++n < e;) t(n);
-				return l
-			}
-		},
 		"./src/reddit/components/CommunitySettings/ModPnSettings/index.m.less": function(e, t, n) {
 			e.exports = {
 				TitleContainer: "_1h0ywddtivk9McccMAYdrx",
@@ -73,7 +57,7 @@
 						}
 					}
 				},
-				_ = e => t => {
+				S = e => t => {
 					return {
 						source: "mod_pn_settings",
 						action: "click",
@@ -84,7 +68,7 @@
 						}
 					}
 				},
-				S = e => t => {
+				_ = e => t => {
 					const n = u.o(t),
 						a = e.id,
 						s = e.id.toUpperCase();
@@ -140,7 +124,7 @@
 						color: "var(--newCommunityTheme-active)"
 					}, e), {}),
 					b = n ? a : s,
-					_ = u.replace("{count}", `${b}`);
+					S = u.replace("{count}", `${b}`);
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement(c.p, {
 					on: !n,
 					onClick: () => {
@@ -165,7 +149,7 @@
 							currentRange: d[e.target.value]
 						})
 					},
-					label: _,
+					label: S,
 					disabled: n || t,
 					hideSubtext: !0,
 					className: x.a.RangeSetting
@@ -222,7 +206,7 @@
 				return o.isAuto ? `${o.autoRange}` : `${o.currentRange}`
 			}
 
-			function j({
+			function k({
 				isSectionDisabled: e,
 				layoutData: t,
 				pushPage: n,
@@ -269,9 +253,9 @@
 						return null
 				}
 			}
-			var k = n("./src/reddit/components/Settings/shared/SectionHeading.tsx");
+			var w = n("./src/reddit/components/Settings/shared/SectionHeading.tsx");
 
-			function w({
+			function j({
 				layoutData: e,
 				pushPage: t,
 				sectionId: n,
@@ -290,7 +274,7 @@
 					const e = a[l.id];
 					u = !e.isEnabled
 				}
-				return i.a.createElement("div", null, !!r && i.a.createElement(k.a, null, r), c.map(n => i.a.createElement(j, {
+				return i.a.createElement("div", null, !!r && i.a.createElement(w.a, null, r), c.map(n => i.a.createElement(k, {
 					isSectionDisabled: u,
 					key: n.id,
 					layoutData: e,
@@ -319,7 +303,7 @@
 					{
 						title: m,
 						description: p,
-						sections: _
+						sections: S
 					} = g;
 				return Object(o.useEffect)(() => {
 					u(b(n))
@@ -328,7 +312,7 @@
 				}, r && i.a.createElement(c.f, {
 					onClick: e,
 					"data-testid": "mod-pns-back-button"
-				}, i.a.createElement(P.a, null)), i.a.createElement(R.b, null, m)), i.a.createElement(k.a, null, !!p && p.replace("{community}", d)), _.map(e => i.a.createElement(w, {
+				}, i.a.createElement(P.a, null)), i.a.createElement(R.b, null, m)), i.a.createElement(w.a, null, !!p && p.replace("{community}", d)), S.map(e => i.a.createElement(j, {
 					sectionId: e,
 					layoutData: t,
 					settings: s,
@@ -480,7 +464,7 @@
 					}(n, t);
 					if (!a) return;
 					const s = await G(h(), a);
-					if (s.ok && E(S(n)), !s.ok) {
+					if (s.ok && E(_(n)), !s.ok) {
 						const {
 							id: t
 						} = e;
@@ -493,11 +477,11 @@
 					}
 				}, K), []);
 				if (b || !a) return i.a.createElement(N.a, null);
-				const j = L[L.length - 1],
-					k = L.length > 1;
+				const k = L[L.length - 1],
+					w = L.length > 1;
 				return i.a.createElement(O, {
-					pageId: j,
-					showBackButton: k,
+					pageId: k,
+					showBackButton: w,
 					updateSetting: (e, t) => {
 						const n = l[e],
 							a = {
@@ -517,7 +501,7 @@
 					layoutData: a,
 					settings: l,
 					pushPage: e => {
-						v([...L, e]), E(_(e))
+						v([...L, e]), E(S(e))
 					},
 					goBack: () => {
 						if (1 === L.length) return;
@@ -660,4 +644,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.29efe53e23a20d8861e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.d674e60a581425917cd4.js.map

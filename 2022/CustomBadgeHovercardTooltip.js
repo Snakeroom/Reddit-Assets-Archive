@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.a9e96e1d2d86dcd1e706.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.e2c27bc904c9aa63ee3e.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -390,22 +390,6 @@
 				function(e) {
 					e.Comment = "comment", e.Post = "post", e.Profile = "profile", e.Subreddit = "subreddit"
 				}(c || (c = {}))
-		},
-		"./src/reddit/models/Product/index.ts": function(e, t, r) {
-			"use strict";
-			var n;
-
-			function s(e) {
-				return e.substring(e.lastIndexOf("|") + 1)
-			}
-			r.d(t, "a", (function() {
-					return n
-				})), r.d(t, "b", (function() {
-					return s
-				})),
-				function(e) {
-					e.Badge = "badge", e.EmotesPack = "emotes_pack", e.Giphy = "giphy", e.Membership = "membership"
-				}(n || (n = {}))
 		},
 		"./src/reddit/reducers/economics/paymentSystems/index.ts": function(e, t, r) {
 			"use strict";
@@ -939,4 +923,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.a9e96e1d2d86dcd1e706.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.e2c27bc904c9aa63ee3e.js.map

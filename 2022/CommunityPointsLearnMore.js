@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.32148a0c6b6819864fa6.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.791210b72abdb6961773.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, o) {
@@ -1470,43 +1470,6 @@
 				d: "M8.56569 0.234315C8.25327 -0.0781049 7.74673 -0.0781049 7.43431 0.234315C7.12189 0.546734 7.12189 1.05327 7.43431 1.36569L13.2686 7.2H0.8C0.358172 7.2 0 7.55817 0 8C0 8.44183 0.358172 8.8 0.8 8.8H13.2686L7.43431 14.6343C7.12189 14.9467 7.12189 15.4533 7.43431 15.7657C7.74673 16.0781 8.25327 16.0781 8.56569 15.7657L15.7657 8.56569C16.0781 8.25327 16.0781 7.74673 15.7657 7.43431L8.56569 0.234315Z"
 			}))
 		},
-		"./src/reddit/models/Payments/index.ts": function(e, t, o) {
-			"use strict";
-			var n, a, i, r;
-			o.d(t, "b", (function() {
-					return a
-				})), o.d(t, "a", (function() {
-					return i
-				})),
-				function(e) {
-					e.PayPal = "paypal", e.Stripe = "stripe"
-				}(n || (n = {})),
-				function(e) {
-					e.PayPal = "PAYPAL", e.Stripe = "STRIPE"
-				}(a || (a = {})),
-				function(e) {
-					e.NewPayPal = "new-paypal", e.NewStripe = "new-stripe", e.SavedPayPal = "saved-paypal", e.SavedStripe = "saved-stripe"
-				}(i || (i = {})),
-				function(e) {
-					e.Comment = "comment", e.Post = "post", e.Profile = "profile", e.Subreddit = "subreddit"
-				}(r || (r = {}))
-		},
-		"./src/reddit/models/Product/index.ts": function(e, t, o) {
-			"use strict";
-			var n;
-
-			function a(e) {
-				return e.substring(e.lastIndexOf("|") + 1)
-			}
-			o.d(t, "a", (function() {
-					return n
-				})), o.d(t, "b", (function() {
-					return a
-				})),
-				function(e) {
-					e.Badge = "badge", e.EmotesPack = "emotes_pack", e.Giphy = "giphy", e.Membership = "membership"
-				}(n || (n = {}))
-		},
 		"./src/reddit/pages/meta/CommunityPointsLearnMorePage/Carousel/index.m.less": function(e, t, o) {
 			e.exports = {
 				carousel: "_3vQyUlP9YLzmdL2rsquLS-",
@@ -1789,7 +1752,7 @@
 				} = o("./node_modules/fbt/lib/FbtPublic.js");
 			var I = o("./src/reddit/selectors/user.ts"),
 				T = o("./node_modules/fbt/lib/FbtPublic.js");
-			const x = [{
+			const V = [{
 				key: "introduction",
 				name: T.fbt._("Intro", null, {
 					hk: "373VV7"
@@ -1890,8 +1853,8 @@
 					})
 				}]
 			}];
-			var V = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Documentation/menu.m.less"),
-				R = o.n(V);
+			var R = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Documentation/menu.m.less"),
+				x = o.n(R);
 			const M = ({
 					className: e,
 					onClickItem: t
@@ -1900,19 +1863,19 @@
 						n = m(o),
 						a = Object(r.e)(I.W);
 					return i.a.createElement("div", {
-						className: Object(u.a)(R.a.container, e)
-					}, i.a.createElement("nav", null, i.a.createElement("ol", null, x.map(e => i.a.createElement("div", {
+						className: Object(u.a)(x.a.container, e)
+					}, i.a.createElement("nav", null, i.a.createElement("ol", null, V.map(e => i.a.createElement("div", {
 						key: e.name,
-						className: R.a.section
+						className: x.a.section
 					}, e.pages.length > 1 && i.a.createElement("h4", {
-						className: R.a.categoryHeader
+						className: x.a.categoryHeader
 					}, e.name), i.a.createElement("ol", null, e.pages.map(({
 						key: e,
 						name: o
 					}) => i.a.createElement(A, {
 						key: e,
 						className: Object(u.a)({
-							[R.a.nightmode]: a
+							[x.a.nightmode]: a
 						}),
 						active: e === n,
 						name: o,
@@ -1930,8 +1893,8 @@
 					to: h(a),
 					onClick: n
 				}, i.a.createElement("li", {
-					className: Object(u.a)(R.a.menuItem, {
-						[R.a.active]: t
+					className: Object(u.a)(x.a.menuItem, {
+						[x.a.active]: t
 					}, e)
 				}, o)),
 				{
@@ -1953,10 +1916,10 @@
 					fbt: D
 				} = o("./node_modules/fbt/lib/FbtPublic.js"),
 				{
-					fbt: L
+					fbt: q
 				} = o("./node_modules/fbt/lib/FbtPublic.js"),
 				{
-					fbt: q
+					fbt: L
 				} = o("./node_modules/fbt/lib/FbtPublic.js");
 			var Y = o("./node_modules/react-router-redux/es/index.js");
 			const W = ({
@@ -2454,18 +2417,18 @@
 					})))], {
 						hk: "1UBYiX"
 					})), null),
-					tipping: i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, L._("Tipping", null, {
+					tipping: i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, q._("Tipping", null, {
 						hk: "2SJg5w"
-					})), i.a.createElement("h2", null, L._("Community Points can be tipped to other community members for their contributions to the community.", null, {
+					})), i.a.createElement("h2", null, q._("Community Points can be tipped to other community members for their contributions to the community.", null, {
 						hk: "4bInOA"
-					})), L._("{=If someone makes a great post or comment or bot for the community, you can tip them with Points. Just tap on their user avatar or Points balance and choose the option from the menu.}", [L._param("=If someone makes a great post or comment or bot for the community, you can tip them with Points. Just tap on their user avatar or Points balance and choose the option from the menu.", i.a.createElement("p", null, L._("If someone makes a great post or comment or bot for the community, you can tip them with Points. Just tap on their user avatar or Points balance and choose the option from the menu.", null, {
+					})), q._("{=If someone makes a great post or comment or bot for the community, you can tip them with Points. Just tap on their user avatar or Points balance and choose the option from the menu.}", [q._param("=If someone makes a great post or comment or bot for the community, you can tip them with Points. Just tap on their user avatar or Points balance and choose the option from the menu.", i.a.createElement("p", null, q._("If someone makes a great post or comment or bot for the community, you can tip them with Points. Just tap on their user avatar or Points balance and choose the option from the menu.", null, {
 						hk: "1VWiCc"
 					})))], {
 						hk: "19OPwT"
 					}), i.a.createElement("img", {
 						className: g.a.largeCenteredImage,
 						src: `${n.a.assetPath}/img/communityPoints/landingPage/docs/user_card.png`,
-						alt: L._("Tipping Community Points", null, {
+						alt: q._("Tipping Community Points", null, {
 							hk: "2otVJZ"
 						})
 					})), null),
@@ -2486,59 +2449,59 @@
 					})), i.a.createElement("pre", null, i.a.createElement("code", null, "---\nauthor:\n    points_balance: 0\nparent_submission:\n    title (starts-with): Core Contributors Discussion Thread\n    flair_text: Discussion\ntype: submission\naction: filter\nmessage_subject: Pending Approval\nmessage: Our apologies, but in order to limit spam your submission has been automatically removed and is pending moderator approval.\nmodmail_subject: Post From Young Account\nmodmail: /u/{{author}}'s [{{kind}}]({{permalink}}) is pending moderator approval. Please visit the moderation queue to review the post.\n---")), i.a.createElement("p", null, N._("Thank Special Members for supporting the community.", null, {
 						hk: "43lDxM"
 					})), i.a.createElement("pre", null, i.a.createElement("code", null, "---\nauthor:\n    has_special_membership: true\ntype: submission\ncomment_stickied: true\ncomment_locked: true\ncomment: {{author}}, thank you for supporting the community!\n---"))), null),
-					vault: i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, q._("Vault", null, {
+					vault: i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, L._("Vault", null, {
 						hk: "JRmsq"
-					})), i.a.createElement("h2", null, q._("The Vault is an embedded crypto wallet in the Reddit app and the home for Community Points.", null, {
+					})), i.a.createElement("h2", null, L._("The Vault is an embedded crypto wallet in the Reddit app and the home for Community Points.", null, {
 						hk: "u3o8z"
-					})), q._("{=Reddit Vault is a crypto wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app.}{=In your Vault, you can view Community Points from multiple subreddits, tip them to other users, and spend them on things like Special Memberships.}{=The Vault corresponds to a public Ethereum address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).}", [q._param("=Reddit Vault is a crypto wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app.", i.a.createElement("p", null, q._("Reddit Vault is a crypto wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app.", null, {
+					})), L._("{=Reddit Vault is a crypto wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app.}{=In your Vault, you can view Community Points from multiple subreddits, tip them to other users, and spend them on things like Special Memberships.}{=The Vault corresponds to a public Ethereum address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).}", [L._param("=Reddit Vault is a crypto wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app.", i.a.createElement("p", null, L._("Reddit Vault is a crypto wallet developed by Reddit to help users manage their Community Points from inside of the Reddit app.", null, {
 						hk: "2oW65r"
-					}))), q._param("=In your Vault, you can view Community Points from multiple subreddits, tip them to other users, and spend them on things like Special Memberships.", i.a.createElement("p", null, q._("In your Vault, you can view Community Points from multiple subreddits, tip them to other users, and spend them on things like Special Memberships.", null, {
+					}))), L._param("=In your Vault, you can view Community Points from multiple subreddits, tip them to other users, and spend them on things like Special Memberships.", i.a.createElement("p", null, L._("In your Vault, you can view Community Points from multiple subreddits, tip them to other users, and spend them on things like Special Memberships.", null, {
 						hk: "3ZpDnr"
-					}))), q._param("=The Vault corresponds to a public Ethereum address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", i.a.createElement("p", null, q._("The Vault corresponds to a public Ethereum address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", null, {
+					}))), L._param("=The Vault corresponds to a public Ethereum address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", i.a.createElement("p", null, L._("The Vault corresponds to a public Ethereum address. This is the address on the blockchain where your Community Points are stored and that you control. You can see the address by going into your Vault settings (3 dots at the top of the Vault screen).", null, {
 						hk: "Or0FC"
 					})))], {
 						hk: "4iSGcP"
-					}), i.a.createElement("section", null, i.a.createElement("h3", null, q._("Create a Vault", null, {
+					}), i.a.createElement("section", null, i.a.createElement("h3", null, L._("Create a Vault", null, {
 						hk: "1h3rBm"
-					})), q._("{=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.}{=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Ethereum blockchain where the record of your Community Points is stored. The private key is the only way to access and use the Community Points in your Vault.}{=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.}", [q._param("=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", i.a.createElement("p", null, q._("Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", null, {
+					})), L._("{=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.}{=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Ethereum blockchain where the record of your Community Points is stored. The private key is the only way to access and use the Community Points in your Vault.}{=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.}", [L._param("=Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", i.a.createElement("p", null, L._("Users who are subscribed to subreddits with Community Points should see Vault in the app menu on the official Reddit Android & iOS apps. When you open Vault for the first time, you will be prompted to create a Vault or restore one that you created earlier.", null, {
 						hk: "1XxPFd"
-					}))), q._param("=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Ethereum blockchain where the record of your Community Points is stored. The private key is the only way to access and use the Community Points in your Vault.", i.a.createElement("p", null, q._("When you create your Vault, you will receive a public address and a private key. The public address is your address on the Ethereum blockchain where the record of your Community Points is stored. The private key is the only way to access and use the Community Points in your Vault.", null, {
+					}))), L._param("=When you create your Vault, you will receive a public address and a private key. The public address is your address on the Ethereum blockchain where the record of your Community Points is stored. The private key is the only way to access and use the Community Points in your Vault.", i.a.createElement("p", null, L._("When you create your Vault, you will receive a public address and a private key. The public address is your address on the Ethereum blockchain where the record of your Community Points is stored. The private key is the only way to access and use the Community Points in your Vault.", null, {
 						hk: "4h0atv"
-					}))), q._param("=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", i.a.createElement("p", null, q._("This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", null, {
+					}))), L._param("=This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", i.a.createElement("p", null, L._("This private key is very important. Whoever has the private key will be able to have full control over your Community Points, and if you lose the private key you could lose access to your Community Points. For that reason, it's very important to make sure it is stored securely and properly backed up.", null, {
 						hk: "1RTGVt"
 					})))], {
 						hk: "2QyHrm"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, q._("Backup & Recovery", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, L._("Backup & Recovery", null, {
 						hk: "4f33gk"
-					})), q._("{=You have two options to back up your private key.}{=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.}{=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault or in other wallets. Keep this safe — we recommend using a password manager like LastPass.}{=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.}{=There are two corresponding ways to recover your Vault.}{=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.}{=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.}{=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.}", [q._param("=You have two options to back up your private key.", i.a.createElement("p", null, q._("You have two options to back up your private key.", null, {
+					})), L._("{=You have two options to back up your private key.}{=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.}{=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault or in other wallets. Keep this safe — we recommend using a password manager like LastPass.}{=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.}{=There are two corresponding ways to recover your Vault.}{=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.}{=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.}{=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.}", [L._param("=You have two options to back up your private key.", i.a.createElement("p", null, L._("You have two options to back up your private key.", null, {
 						hk: "1FIBMf"
-					}))), q._param("=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", i.a.createElement("p", null, q._("The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", null, {
+					}))), L._param("=The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", i.a.createElement("p", null, L._("The first option is to back it up in a secure way with Reddit. In this option, you encrypt your private key with a unique Vault Password that only you know (separate from your Reddit password) and store the encrypted version on Reddit. Since it is encrypted, Reddit is not able to see your private key and cannot use it.", null, {
 						hk: "2VBUWJ"
-					}))), q._param("=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault or in other wallets. Keep this safe — we recommend using a password manager like LastPass.", i.a.createElement("p", null, q._("The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault or in other wallets. Keep this safe — we recommend using a password manager like LastPass.", null, {
+					}))), L._param("=The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault or in other wallets. Keep this safe — we recommend using a password manager like LastPass.", i.a.createElement("p", null, L._("The second option is to save a Recovery Phrase somewhere secure. The recovery phrase is 12 words in a particular order that can be used to recreate your private key within Vault or in other wallets. Keep this safe — we recommend using a password manager like LastPass.", null, {
 						hk: "DrBLW"
-					}))), q._param("=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", i.a.createElement("p", null, q._("It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", null, {
+					}))), L._param("=It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", i.a.createElement("p", null, L._("It is very important that you never give your Vault Password or Recovery Phrase to anyone else, ever. No Reddit employee will ever ask you for either of them.", null, {
 						hk: "3oZe4I"
-					}))), q._param("=There are two corresponding ways to recover your Vault.", i.a.createElement("p", null, q._("There are two corresponding ways to recover your Vault.", null, {
+					}))), L._param("=There are two corresponding ways to recover your Vault.", i.a.createElement("p", null, L._("There are two corresponding ways to recover your Vault.", null, {
 						hk: "jlR9X"
-					}))), q._param("=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", i.a.createElement("p", null, q._("You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", null, {
+					}))), L._param("=You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", i.a.createElement("p", null, L._("You can recover Vaults that you backed up with Reddit through the Vault signup flow. When you go to create a new Vault, you will be presented with older Vaults that you made that are backed up with Reddit. If you choose to recover one of those, you will be prompted for the password you set when you created it. If you want to switch to another Vault, you can sign out of your current Vault through the settings.", null, {
 						hk: "4xWnCz"
-					}))), q._param("=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", i.a.createElement("p", null, q._("You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", null, {
+					}))), L._param("=You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", i.a.createElement("p", null, L._("You can also recover a Vault using the Recovery Phrase. When you start to create a Vault, you will see an option to use your Recovery Phrase. Enter in the 12 words in the same order that they were provided when you first created the Vault.", null, {
 						hk: "iuwnh"
-					}))), q._param("=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.", i.a.createElement("p", null, q._("Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is {=finalized}. Every time you create or recover a Vault, it is immediately set as your active Vault.", [q._param("=finalized", i.a.createElement(b.a, {
+					}))), L._param("=Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is finalized Every time you create or recover a Vault, it is immediately set as your active Vault.", i.a.createElement("p", null, L._("Note that you can only have one active Vault at any time. In each distribution, your Community Points will be sent to the Vault that is actively associated with your account at the time that distribution is {=finalized}. Every time you create or recover a Vault, it is immediately set as your active Vault.", [L._param("=finalized", i.a.createElement(b.a, {
 						to: h("distribution-process")
-					}, q._("finalized", null, {
+					}, L._("finalized", null, {
 						hk: "4ulHIk"
 					})))], {
 						hk: "2j04B5"
 					})))], {
 						hk: "28GGHl"
-					})), i.a.createElement("section", null, i.a.createElement("h3", null, q._("Using Vault on web", null, {
+					})), i.a.createElement("section", null, i.a.createElement("h3", null, L._("Using Vault on web", null, {
 						hk: "4lZpy1"
-					})), q._("{=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.}{=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.}{=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.}", [q._param("=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", i.a.createElement("p", null, q._("Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", null, {
+					})), L._("{=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.}{=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.}{=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.}", [L._param("=Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", i.a.createElement("p", null, L._("Users who have backed up their Vault to Reddit servers with a password can also use their Vault on desktop web (new Reddit). For example, you can sign up for Special Memberships and send Points to other users.", null, {
 						hk: "3Q0UIE"
-					}))), q._param("=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", i.a.createElement("p", null, q._("When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", null, {
+					}))), L._param("=When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", i.a.createElement("p", null, L._("When you use your Points on web, your encrypted key is downloaded to your browser and you will be prompted for the password you used to create it.", null, {
 						hk: "1dq5v2"
-					}))), q._param("=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", i.a.createElement("p", null, q._("If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", null, {
+					}))), L._param("=If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", i.a.createElement("p", null, L._("If you would like to use your Vault on web, but have not backed up your Vault to Reddit servers, you can create a backup by going to Vault Settings on your mobile device.", null, {
 						hk: "1tITN"
 					})))], {
 						hk: "1xjedp"
@@ -3007,7 +2970,7 @@
 						}),
 						className: ee.a.logo,
 						to: "/",
-						onClick: () => e(Object(Q.a)(() => Promise.all([o.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), o.e("Frontpage~ModListing"), o.e("Frontpage")]).then(o.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
+						onClick: () => e(Object(Q.a)(() => o.e("Frontpage").then(o.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
 					}, i.a.createElement(z.a, {
 						className: ee.a.snoo
 					}), i.a.createElement(Z.a, {
@@ -3287,14 +3250,14 @@
 			var Ie = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Benefits/index.m.less"),
 				Te = o.n(Ie);
 			const {
-				fbt: xe
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), Ve = ({
+				fbt: Ve
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), Re = ({
 				className: e
 			}) => {
 				const [t, o] = Object(a.useState)(null), [n, r] = Object(a.useState)(null);
 				return Object(a.useEffect)(() => {
 					if (null === n) return;
-					const e = document.getElementById(Re(n));
+					const e = document.getElementById(xe(n));
 					if (!e) return;
 					const t = e.getBoundingClientRect().top;
 					(t < 0 || t > window.innerHeight) && e.scrollIntoView({
@@ -3307,7 +3270,7 @@
 					anchorId: "benefits"
 				}), i.a.createElement("h2", {
 					className: Te.a.title
-				}, xe._("Take your community to the next level", null, {
+				}, Ve._("Take your community to the next level", null, {
 					hk: "PqrYm"
 				})), i.a.createElement("div", {
 					className: Object(u.a)(Te.a.benefitsContainer, {
@@ -3316,7 +3279,7 @@
 				}, Me.map((e, n) => i.a.createElement(Se, {
 					key: n,
 					data: e,
-					anchorId: Re(n),
+					anchorId: xe(n),
 					isExpanded: null !== t && n === t,
 					isHidden: null !== t && n !== t,
 					onClickExpand: () => {
@@ -3326,74 +3289,74 @@
 						o(null), r(n)
 					}
 				}))))
-			}, Re = e => `expandable-text-${e}`, Me = [{
-				title: xe._("Reward the community, for real", null, {
+			}, xe = e => `expandable-text-${e}`, Me = [{
+				title: Ve._("Reward the community, for real", null, {
 					hk: "26o9ra"
 				}),
-				subtitle: xe._("Earn something valuable for all the hours you put into your community.", null, {
+				subtitle: Ve._("Earn something valuable for all the hours you put into your community.", null, {
 					hk: "SQfOp"
 				}),
-				body: xe._("Community Points are a way for Redditors to own a piece of their favorite communities. Moderators and content creators earn Points by contributing to the community, and they can spend their Points on special features, display their Points as reputation in the community, and vote with their Points to weigh in on community decisions.", null, {
+				body: Ve._("Community Points are a way for Redditors to own a piece of their favorite communities. Moderators and content creators earn Points by contributing to the community, and they can spend their Points on special features, display their Points as reputation in the community, and vote with their Points to weigh in on community decisions.", null, {
 					hk: "Xdxas"
 				}),
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/reward_the_community_v3.png`,
 				backgroundColor: "#E2D399"
 			}, {
-				title: xe._("Unlock special features", null, {
+				title: Ve._("Unlock special features", null, {
 					hk: "49hRJ2"
 				}),
-				subtitle: xe._("Buy community features with Community Points, like Special Memberships and awards.", null, {
+				subtitle: Ve._("Buy community features with Community Points, like Special Memberships and awards.", null, {
 					hk: "11dSn1"
 				}),
-				body: xe._("Community Points unlock special features in subreddits that adopt them. For example, they can be used to purchase Special Memberships, which give users access to community-themed badges, highlighted usernames, and the ability to embed rich media in their comments. Or they can be converted to Coins that can be used in the subreddit to give out awards.", null, {
+				body: Ve._("Community Points unlock special features in subreddits that adopt them. For example, they can be used to purchase Special Memberships, which give users access to community-themed badges, highlighted usernames, and the ability to embed rich media in their comments. Or they can be converted to Coins that can be used in the subreddit to give out awards.", null, {
 					hk: "19OcvD"
 				}),
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/premium_features_v3.png`,
 				backgroundColor: "#B3F1FF"
 			}, {
-				title: xe._("Encourage better content and conversation", null, {
+				title: Ve._("Encourage better content and conversation", null, {
 					hk: "3EKFJU"
 				}),
-				subtitle: xe._("Use Community Points as an incentive to shape content and behavior in your community.", null, {
+				subtitle: Ve._("Use Community Points as an incentive to shape content and behavior in your community.", null, {
 					hk: "3fIFZj"
 				}),
-				body: xe._("Community Points introduce a powerful incentive system that communities can customize to their needs. Want to see more long-form text posts and comments? Reward this kind of content more. Want to see fewer low-effort memes? Give out fewer Points for them. (Or reward memes even more, it&apos;s up to you and your community!)", null, {
+				body: Ve._("Community Points introduce a powerful incentive system that communities can customize to their needs. Want to see more long-form text posts and comments? Reward this kind of content more. Want to see fewer low-effort memes? Give out fewer Points for them. (Or reward memes even more, it&apos;s up to you and your community!)", null, {
 					hk: "3rbD1b"
 				}),
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/hq_content_v3.png`,
 				backgroundColor: "#E3D7F4"
 			}, {
-				title: xe._("Empower the community", null, {
+				title: Ve._("Empower the community", null, {
 					hk: "4xbWZA"
 				}),
-				subtitle: xe._("Use polls to let the community weigh in on important decisions, including how Community Points should be distributed.", null, {
+				subtitle: Ve._("Use polls to let the community weigh in on important decisions, including how Community Points should be distributed.", null, {
 					hk: "S9sAC"
 				}),
-				body: xe._("Subreddits can create polls where votes are weighted according to how many Points users have earned in the community. Instead of seeing only the loudest comments, measure how long-term members actually feel and use this mechanism to evolve how your community makes decisions.", null, {
+				body: Ve._("Subreddits can create polls where votes are weighted according to how many Points users have earned in the community. Instead of seeing only the loudest comments, measure how long-term members actually feel and use this mechanism to evolve how your community makes decisions.", null, {
 					hk: "SD836"
 				}),
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/get_input_v3.png`,
 				backgroundColor: "#A7EAD0"
 			}, {
-				title: xe._("Use Points as a flexible tool", null, {
+				title: Ve._("Use Points as a flexible tool", null, {
 					hk: "16j4nt"
 				}),
-				subtitle: xe._("Give out Points as prizes for events and contests and integrate Points with community bots such as Automod.", null, {
+				subtitle: Ve._("Give out Points as prizes for events and contests and integrate Points with community bots such as Automod.", null, {
 					hk: "4qJAr"
 				}),
-				body: xe._("Points are a flexible tool you can use for many purposes in your community. Community Points can be prizes for community events, such as a trivia thread. Points can also be used with community bots, including Automod, to do things like host a discussion thread only for core community contributors or thank Special Members when they make a post.", null, {
+				body: Ve._("Points are a flexible tool you can use for many purposes in your community. Community Points can be prizes for community events, such as a trivia thread. Points can also be used with community bots, including Automod, to do things like host a discussion thread only for core community contributors or thank Special Members when they make a post.", null, {
 					hk: "2dx02y"
 				}),
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/community_together_v3.png`,
 				backgroundColor: "#FFC2C2"
 			}, {
-				title: xe._("Customize your Points", null, {
+				title: Ve._("Customize your Points", null, {
 					hk: "4jECbt"
 				}),
-				subtitle: xe._("Each subreddit creates its own Community Points token, with a custom name and symbol.", null, {
+				subtitle: Ve._("Each subreddit creates its own Community Points token, with a custom name and symbol.", null, {
 					hk: "2hgheb"
 				}),
-				body: xe._("Every subreddit&apos;s Community Points are unique to it, with a name chosen by the community and a symbol to match. These tokens live on the blockchain, which means they are owned and controlled fully by the community.", null, {
+				body: Ve._("Every subreddit&apos;s Community Points are unique to it, with a name chosen by the community and a symbol to match. These tokens live on the blockchain, which means they are owned and controlled fully by the community.", null, {
 					hk: "lbmXo"
 				}),
 				imageSrc: `${n.a.assetPath}/img/communityPoints/landingPage/customize_points_v3.png`,
@@ -3463,11 +3426,11 @@
 			var Fe = o("./src/higherOrderComponents/asModal/index.tsx"),
 				Oe = o("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
 				De = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/CryptoFuture/carouselModal.m.less"),
-				Le = o.n(De);
-			const qe = Object(Fe.a)(({
+				qe = o.n(De);
+			const Le = Object(Fe.a)(({
 				onClose: e
 			}) => i.a.createElement("div", {
-				className: Le.a.container
+				className: qe.a.container
 			}, i.a.createElement(Oe.a, {
 				onClick: e,
 				highContrast: !0
@@ -3514,7 +3477,7 @@
 					onClick: () => o(!0)
 				}, Ge._("A New Frontier", null, {
 					hk: "4GrPd2"
-				})))), t && i.a.createElement(qe, {
+				})))), t && i.a.createElement(Le, {
 					className: We.a.modal,
 					overlayClassName: We.a.modalOverlay,
 					withOverlay: !0,
@@ -3810,7 +3773,7 @@
 					className: pt.a.container
 				}, i.a.createElement(te, null), o ? i.a.createElement(W, null) : i.a.createElement(i.a.Fragment, null, i.a.createElement(Be, {
 					className: pt.a.communityPointsSection
-				}), i.a.createElement(Ve, {
+				}), i.a.createElement(Re, {
 					className: pt.a.benefitsSection
 				}), i.a.createElement("img", {
 					className: pt.a.spiral,
@@ -3847,302 +3810,7 @@
 				fadeIn: "_2ashSgNv6fi7q6NVcCU4dt",
 				carouselContainer: "_8QI7ZAOT4cHsCBC8o8eLo"
 			}
-		},
-		"./src/reddit/selectors/economics.ts": function(e, t, o) {
-			"use strict";
-			o.d(t, "c", (function() {
-				return b
-			})), o.d(t, "o", (function() {
-				return f
-			})), o.d(t, "a", (function() {
-				return g
-			})), o.d(t, "x", (function() {
-				return w
-			})), o.d(t, "f", (function() {
-				return v
-			})), o.d(t, "i", (function() {
-				return k
-			})), o.d(t, "q", (function() {
-				return _
-			})), o.d(t, "h", (function() {
-				return P
-			})), o.d(t, "z", (function() {
-				return E
-			})), o.d(t, "l", (function() {
-				return C
-			})), o.d(t, "n", (function() {
-				return S
-			})), o.d(t, "e", (function() {
-				return I
-			})), o.d(t, "d", (function() {
-				return T
-			})), o.d(t, "j", (function() {
-				return x
-			})), o.d(t, "p", (function() {
-				return V
-			})), o.d(t, "k", (function() {
-				return A
-			})), o.d(t, "r", (function() {
-				return j
-			})), o.d(t, "y", (function() {
-				return B
-			})), o.d(t, "u", (function() {
-				return F
-			})), o.d(t, "v", (function() {
-				return O
-			})), o.d(t, "b", (function() {
-				return D
-			})), o.d(t, "w", (function() {
-				return L
-			})), o.d(t, "s", (function() {
-				return q
-			})), o.d(t, "t", (function() {
-				return Y
-			})), o.d(t, "g", (function() {
-				return W
-			})), o.d(t, "m", (function() {
-				return G
-			}));
-			o("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = o("./src/reddit/featureFlags/index.ts"),
-				a = o("./src/reddit/helpers/economics/sortBadges.ts"),
-				i = o("./src/reddit/helpers/richTextJson/index.ts"),
-				r = o("./src/reddit/models/Badge/index.ts"),
-				s = o("./src/reddit/models/Badge/managementPage.ts"),
-				l = o("./src/reddit/models/Payments/index.ts"),
-				u = o("./src/reddit/models/Product/index.ts"),
-				c = o("./src/reddit/reducers/economics/paymentSystems/index.ts"),
-				d = o("./src/reddit/reducers/economics/subredditPremium/index.ts"),
-				m = o("./src/reddit/selectors/commentSelector.ts"),
-				h = o("./src/reddit/selectors/gold/powerups/index.ts"),
-				p = o("./src/reddit/selectors/gold/powerups/benefitSettings.ts");
-			const y = [],
-				b = (e, t) => {
-					const o = e.economics.subredditPremium[t];
-					if (o && o.status === d.a.Fetched) {
-						const e = o.data.subscription,
-							t = e && e.active;
-						if (t) {
-							let e = Object.keys(t);
-							return e.length > 1 && (e = e.filter(e => "provisional_membership" !== e)), t[e[0]] || null
-						}
-					}
-					return null
-				},
-				f = (e, t) => {
-					const o = b(e, t);
-					return o && o.endsAt || null
-				};
-			var g;
-			! function(e) {
-				e[e.DontKnow = 0] = "DontKnow", e[e.NotSubscribed = 1] = "NotSubscribed", e[e.Subscribed = 2] = "Subscribed"
-			}(g || (g = {}));
-			const w = (e, t) => {
-					const o = e.economics.subredditPremium[t];
-					if (o && o.status === d.a.Fetched) {
-						const o = f(e, t),
-							n = Date.now();
-						return o && n < o ? g.Subscribed : g.NotSubscribed
-					}
-					return g.DontKnow
-				},
-				v = (e, t) => {
-					const o = e.user.account,
-						n = e.economics.subredditPremium[t];
-					if (o && n && n.status === d.a.Fetched) {
-						const n = ((e.users.appliedBadges[o.id] || {})[t] || y).map(t => e.badges.models[t]).filter(Boolean);
-						if (n) return {
-							[s.a.Loyalty]: n.find(e => e.placement === r.a.First),
-							[s.a.Achievement]: n.find(e => e.placement === r.a.Second),
-							[s.a.Cosmetic]: n.find(e => !e.placement)
-						}
-					}
-					return {
-						[s.a.Loyalty]: void 0,
-						[s.a.Achievement]: void 0,
-						[s.a.Cosmetic]: void 0
-					}
-				};
-
-			function k(e, t) {
-				return (null == e ? void 0 : e.length) ? Object(a.a)(e.map(e => t[e]).filter(Boolean)) : y
-			}
-			const _ = (e, t, o) => {
-					var a;
-					if (!n.d.spBadges(e)) return y;
-					return k(null === (a = e.users.appliedBadges[o]) || void 0 === a ? void 0 : a[t], e.badges.models)
-				},
-				P = (e, t) => {
-					const o = e.economics.subredditPremium[t.subredditId];
-					if (o && o.status === d.a.Fetched) {
-						const e = o.raw.collections[t.collectionId];
-						if (e) return {
-							highlight: e.extra && e.extra.style && e.extra.style.color,
-							title: e.title
-						}
-					}
-				};
-
-			function E(e, t) {
-				const o = (e.economics.me.data.specialMemberships || {})[t];
-				return !!(o && o.settings && o.settings.optOut)
-			}
-
-			function C(e, t) {
-				const {
-					badge: o,
-					subredditId: n
-				} = t, a = e.user.account ? e.user.account.id : void 0;
-				if (Object(r.e)(o) && o.userId === a) return o;
-				const i = e.badges.models,
-					s = e.user.ownedBadges[n] || {},
-					l = Object(r.e)(o) ? o.type : o.id;
-				return Object.keys(s).map(e => i[e]).find(e => e && e.type === l)
-			}
-
-			function S(e, t, o, n) {
-				const a = e.economics.subredditPremium[t];
-				if (a && a.status === d.a.Fetched) {
-					if (o === s.a.Loyalty || o === s.a.Achievement) return a.data.collections[o];
-					if (o === s.a.Cosmetic && n) return a.data.collections[o][n]
-				}
-				return y
-			}
-
-			function I(e, t) {
-				const o = S(e, t, s.a.Loyalty).find(e => "membership" === e.id);
-				return o ? [].concat(o.locked, o.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : y
-			}
-
-			function T(e, t) {
-				const o = e.economics.subredditPremium[t];
-				if (o && o.status === d.a.Fetched) {
-					const e = o.data.collections[s.a.Cosmetic];
-					return Object.values(e).reduce((e, t) => e.concat(t), []).reduce((e, t) => e.concat(t.locked, t.unlocked), []).filter(r.f)
-				}
-				return y
-			}
-
-			function x(e, t) {
-				return S(e, t, s.a.Cosmetic, s.c.Gallery).some(e => e.locked.some(e => Object(r.f)(e) || !!e.price))
-			}
-			const V = e => {
-				const t = [],
-					o = e.economics.paymentSystems;
-				if (o.status === c.a.Fetched && o.data.stripe && o.data.stripe.sources) {
-					const e = o.data.stripe.sources;
-					for (const o in e) {
-						const n = e[o];
-						t.push({
-							display: `${n.brand} •••• ${n.last4}`,
-							id: o,
-							type: l.a.SavedStripe
-						})
-					}
-				}
-				if (o.status === c.a.Fetched && o.data.braintree && o.data.braintree.sources) {
-					const e = o.data.braintree.sources;
-					for (const o in e) {
-						const n = e[o];
-						"PayPal" === n.brand && t.push({
-							display: "PayPal",
-							id: n.id,
-							type: l.a.SavedPayPal
-						})
-					}
-				}
-				return t
-			};
-			var R;
-			! function(e) {
-				e[e.Fetched = 0] = "Fetched", e[e.Fetching = 1] = "Fetching", e[e.NotFetched = 2] = "NotFetched"
-			}(R || (R = {}));
-			const M = {
-					prices: {},
-					member: "Supporter",
-					memberPlural: "Supporters",
-					memberAlt: "Subreddit Supporter",
-					memberAltPlural: "Subreddit Supporters",
-					membership: "Membership",
-					membershipAlt: "Supporter Membership"
-				},
-				A = (e, t) => Object.values(e.products.models).filter(e => e.type === u.a.Membership && t && e.subredditId === t),
-				N = (e, t) => {
-					if (!t) return {};
-					const o = M.prices;
-					A(e, t).forEach(e => {
-						e.price && e.currency && (o[e.currency] = e.price)
-					});
-					const n = b(e, t);
-					return n && n.price && n.currency && (o[n.currency] = n.price), o
-				},
-				j = (e, t) => {
-					var o, n, a, i;
-					const r = (null === (i = null === (a = null === (n = null === (o = e.features) || void 0 === o ? void 0 : o.crypto) || void 0 === n ? void 0 : n.points) || void 0 === a ? void 0 : a[t || ""]) || void 0 === i ? void 0 : i.nomenclature) || M;
-					return {
-						prices: N(e, t),
-						member: r.member || M.member,
-						memberPlural: r.memberPlural || M.memberPlural,
-						memberAlt: r.memberAlt || M.memberAlt,
-						memberAltPlural: r.memberAltPlural || M.memberAltPlural,
-						membership: r.membership || M.membership,
-						membershipAlt: r.membershipAlt || M.membershipAlt
-					}
-				},
-				B = e => {
-					const t = e.economics.paymentSystems;
-					return !!(t.status === c.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
-				},
-				F = (e, t) => {
-					const o = e.user.ownedBadges[t] || {};
-					return !!Object.keys(o).length
-				},
-				O = e => {
-					const t = e.economics.paymentSystems;
-					return t.status === c.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
-				},
-				D = (e, {
-					subredditId: t
-				}) => {
-					if (!t) return;
-					return e.economics.emotes[t]
-				},
-				L = (e, t) => {
-					const o = t && e.economics.gifs[t];
-					return !!o && o.hasGifProduct
-				},
-				q = (e, t, o) => {
-					if (Object(h.r)(e, {
-							subredditId: t
-						})) return !0;
-					const n = "replyToPost" !== o && Object(m.b)(e, {
-						commentId: o
-					});
-					return !(!n || !Object(i.a)(n))
-				},
-				Y = (e, t, o) => {
-					if (!Object(p.b)(e, {
-							subredditId: t
-						})) return !1;
-					if (Object(h.s)(e, {
-							subredditId: t
-						})) return !0;
-					const a = "replyToPost" !== o && Object(m.b)(e, {
-						commentId: o
-					});
-					if (a && Object(i.b)(a)) return !0;
-					const r = n.d.spGiphy(e),
-						s = L(e, t);
-					return !(!r || !s) || r && s
-				},
-				W = (e, t, o) => {
-					if (t) {
-						const n = e.economics.banners.dismissedBanners[t];
-						if (n && n.data) return !!n.data[o]
-					}
-				},
-				G = e => e.economics.pointsCopy.data
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.32148a0c6b6819864fa6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.791210b72abdb6961773.js.map

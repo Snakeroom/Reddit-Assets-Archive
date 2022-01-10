@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserDataRequestPage.bbbebceff112f97a5ddb.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserDataRequestPage.5857d3f7942d2b5fe9f8.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserDataRequestPage"], {
 		"./src/reddit/actions/userDataRequest.ts": function(e, t, a) {
@@ -180,19 +180,6 @@
 				n = a.n(r);
 			t.a = s.a.input("input", n.a)
 		},
-		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, a) {
-			"use strict";
-			var s = a("./node_modules/react/index.js"),
-				r = a.n(s);
-			t.a = e => r.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 22",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, r.a.createElement("g", null, r.a.createElement("path", {
-				d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z",
-				fill: "inherit"
-			})))
-		},
 		"./src/reddit/pages/UserDataRequestPage/index.m.less": function(e, t, a) {
 			e.exports = {
 				content: "_3qJUY_gGVLANgFyCUSMc4L",
@@ -220,7 +207,7 @@
 		"./src/reddit/pages/UserDataRequestPage/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t), a.d(t, "PrivacyLawType", (function() {
-				return L
+				return P
 			}));
 			var s = a("./node_modules/fbt/lib/FbtPublic.js"),
 				r = a("./node_modules/react/index.js"),
@@ -247,10 +234,10 @@
 			}(g || (g = {}));
 			var R = a("./src/reddit/selectors/user.ts"),
 				_ = a("./src/reddit/selectors/userDataRequest.ts"),
-				v = a("./node_modules/reselect/es/index.js"),
-				q = a("./src/reddit/pages/UserDataRequestPage/index.m.less"),
-				N = a.n(q);
-			const y = Object(v.c)({
+				q = a("./node_modules/reselect/es/index.js"),
+				v = a("./src/reddit/pages/UserDataRequestPage/index.m.less"),
+				N = a.n(v);
+			const y = Object(q.c)({
 					currentUser: R.k,
 					userDataExportEligibility: _.a,
 					userDataRequestPageLoadingApiState: _.b
@@ -264,26 +251,26 @@
 					dismissErrorToast: () => e(o.g("requestUserDataExportErrorToast"))
 				})),
 				k = "2005-06-23",
-				w = new Date,
-				C = () => (new Date).toISOString().substr(0, 10),
-				F = new Date(w.setDate(w.getDate() - 90)).toISOString().substr(0, 10);
-			var L;
+				F = new Date,
+				w = () => (new Date).toISOString().substr(0, 10),
+				C = new Date(F.setDate(F.getDate() - 90)).toISOString().substr(0, 10);
+			var P;
 			! function(e) {
 				e.NO_LAW_CITED = "", e.GDPR = "GDPR", e.CCPA = "CCPA", e.OTHER = "OTHER"
-			}(L || (L = {}));
-			const P = [{
+			}(P || (P = {}));
+			const L = [{
 				getName: () => s.fbt._("General Data Protection Regulation (GDPR)", null, {
 					hk: "4srHXP"
 				}),
-				value: L.GDPR
+				value: P.GDPR
 			}, {
 				getName: () => "California Consumer Privacy Act (CCPA)",
-				value: L.CCPA
+				value: P.CCPA
 			}, {
 				getName: () => s.fbt._("Other", null, {
 					hk: "1g37Qn"
 				}),
-				value: L.OTHER
+				value: P.OTHER
 			}];
 			class I extends n.a.Component {
 				constructor(e) {
@@ -331,7 +318,7 @@
 							if (i < a) return s.fbt._("The start date must be before the end date", null, {
 								hk: "17dRot"
 							});
-							if (i > Date.parse(n)) return s.fbt._("The latest allowed end date is today: {maxAllowedDate}", [s.fbt._param("maxAllowedDate", C())], {
+							if (i > Date.parse(n)) return s.fbt._("The latest allowed end date is today: {maxAllowedDate}", [s.fbt._param("maxAllowedDate", w())], {
 								hk: "3sJbkJ"
 							});
 							if (a < Date.parse(r)) return s.fbt._("The earliest allowed start date is Reddit launch date: {minAllowedDate}", [s.fbt._param("minAllowedDate", k)], {
@@ -416,7 +403,7 @@
 						value: this.state.privacyLawCited,
 						name: "privacyLaws",
 						onChange: this.addPrivacyLaw
-					}, P.map(e => n.a.createElement(p.a, {
+					}, L.map(e => n.a.createElement(p.a, {
 						key: e.value,
 						className: N.a.radioOption,
 						showButton: !0,
@@ -524,16 +511,16 @@
 						dataRequestSubmissionPending: !1,
 						dataRequestSubmissionSuccess: !1,
 						exportRange: g.BOUNDED,
-						exportStartDate: F,
-						exportEndDate: C(),
+						exportStartDate: C,
+						exportEndDate: w(),
 						minAllowedDate: k,
-						maxAllowedDate: C(),
-						privacyLawCited: L.NO_LAW_CITED
+						maxAllowedDate: w(),
+						privacyLawCited: P.NO_LAW_CITED
 					}
 				}
 				render() {
 					if (!this.props.currentUser) return null;
-					const e = this.state.dataRequestSubmissionPending || !this.props.userDataExportEligibility || !this.props.userDataRequestPageLoadingApiState.success || this.state.privacyLawCited === L.NO_LAW_CITED;
+					const e = this.state.dataRequestSubmissionPending || !this.props.userDataExportEligibility || !this.props.userDataRequestPageLoadingApiState.success || this.state.privacyLawCited === P.NO_LAW_CITED;
 					return n.a.createElement("div", {
 						className: this.props.className
 					}, n.a.createElement("div", {
@@ -552,4 +539,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserDataRequestPage.bbbebceff112f97a5ddb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserDataRequestPage.5857d3f7942d2b5fe9f8.js.map

@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/index.af5ed923955c8f83c6d9.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.08fe800fd049dee5f659.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["index"], {
+	["index", "EconHelperActions"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
 			"use strict";
 			var a = n("./node_modules/react/index.js"),
@@ -103,10 +103,38 @@
 				stopColor: "#FFAB39"
 			}))))
 		},
+		"./src/reddit/components/Econ/Audio/index.m.less": function(e, t, n) {
+			e.exports = {
+				liveContainer: "reBgd-KYxGiWr_ZyzPgr_",
+				userRow: "poHPrsWD-JtPCRh7foOm-",
+				isListener: "_3DcaFqbAKhkVLYT6i2vxLy",
+				listener: "_3fwbxY1I7EhKfr8MK7xT0S",
+				speaker: "_1zEocOo_0euorSuKdx4-t2",
+				snoovatar: "_23HWId-tu5O6LulDxLoVD1",
+				userIcon: "Xzl_H3G7Qyd756Y0rQz4w",
+				classic: "_2XdJHCLvUWJ2gdGBnugD5t",
+				buttonContainer: "_2yhW3k4B2CUUSvt-3mqV3S",
+				muteContainer: "_3mxKqH41iEa2lxIov7Eup-",
+				muteIcon: "_18bneLE5nnOdUrY8P-eepo",
+				fullRow: "_2cJzNEK-EGk9V7LDTIEFb-",
+				endedContainer: "_21e_ZHJXEi7zMZ6XWWBz",
+				speakerRings: "_1XlH7yy1d0pGBQ0hDDAaDv",
+				fadein: "gReZnzbKn95aY9xCmFx8M",
+				reverb: "_3ZoXC3S9OH5sdTAi4tFt7Z",
+				fadeout: "_3os88AwHIpr1NBABjT_1zz",
+				nightMode: "z6LY0qX0g0puWE-RPF8XB",
+				liveClassicContainer: "_3JLTqaLlFv8aPfzi9eQazu",
+				classicSpeaker: "QsNKjj4EDQH2hYFYQB6T4",
+				endedClassicContainer: "_2YXJIDv8TLzRj5vNdYs-_t",
+				metaStatus: "OvWqIzFfbWF0I-5FMZ18I",
+				isLive: "_3Vqz8YzNczoVWpOtpwXAit",
+				processingButton: "nxYqAuGeco2RA9q0e9ECw"
+			}
+		},
 		"./src/reddit/components/Econ/Audio/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "AudioPostBody", (function() {
-				return E
+				return v
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = n("./src/config.ts"),
@@ -122,8 +150,8 @@
 				p = n("./src/reddit/components/Econ/Audio/MuteIcon.tsx"),
 				b = n("./src/reddit/components/Econ/Audio/SpeakerRings.tsx");
 			const {
-				fbt: v
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), E = ({
+				fbt: f
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = ({
 				post: e,
 				isRecordingEnabled: t = !1
 			}) => {
@@ -131,8 +159,8 @@
 					audioRoom: n
 				} = e, {
 					recordingStatus: u
-				} = n, [E, f] = Object(o.useState)(new Set), [h, g] = Object(o.useState)(new Set), x = Object(r.e)(l.W), [O, P] = Object(o.useState)(-1), _ = e => {
-					const t = e ? Array.from(h) : Array.from(E);
+				} = n, [v, h] = Object(o.useState)(new Set), [g, E] = Object(o.useState)(new Set), x = Object(r.e)(l.W), [O, _] = Object(o.useState)(-1), P = e => {
+					const t = e ? Array.from(g) : Array.from(v);
 					return null == t ? void 0 : t.map((t, n) => {
 						return e ? s.a.createElement("div", {
 							key: `audioPostAvatar--${t}`,
@@ -140,7 +168,7 @@
 						}, s.a.createElement("img", {
 							className: Object(i.a)(m.a.snoovatar, m.a.isListener),
 							src: `${a.a.assetPath}/img/talk/avatars/${t}.png`,
-							alt: v._("Reddit Talk", null, {
+							alt: f._("Reddit Talk", null, {
 								hk: "XNl4V"
 							})
 						})) : s.a.createElement("div", {
@@ -153,7 +181,7 @@
 						}), s.a.createElement("img", {
 							className: m.a.snoovatar,
 							src: `${a.a.assetPath}/img/talk/avatars/${t}.png`,
-							alt: v._("Reddit Talk", null, {
+							alt: f._("Reddit Talk", null, {
 								hk: "XNl4V"
 							})
 						}), n !== O && s.a.createElement("div", {
@@ -167,13 +195,13 @@
 					const e = new Set;
 					for (; e.size < 13;) {
 						const t = j();
-						e.has(t) || (E.size < 6 ? E.add(t) : h.size < 7 && h.add(t), e.add(t))
+						e.has(t) || (v.size < 6 ? v.add(t) : g.size < 7 && g.add(t), e.add(t))
 					}
-					f(E), g(h)
-				}, [E, h]), Object(o.useEffect)(() => {
+					h(v), E(g)
+				}, [v, g]), Object(o.useEffect)(() => {
 					const e = setInterval(() => {
 						const e = Math.floor(6 * Math.random());
-						P(e), setTimeout(() => P(-1), 3500)
+						_(e), setTimeout(() => _(-1), 3500)
 					}, 4e3);
 					return () => clearInterval(e)
 				}, []);
@@ -184,7 +212,7 @@
 						"data-testid": "audioroom-card-ended"
 					}, s.a.createElement(p.a, {
 						className: m.a.muteIcon
-					}), s.a.createElement("p", null, v._("This talk has ended", null, {
+					}), s.a.createElement("p", null, f._("This talk has ended", null, {
 						hk: "3ygafp"
 					}))) : s.a.createElement(s.a.Fragment, null, s.a.createElement("a", {
 						href: `https://www.reddit.com/talk/${n.roomId}`,
@@ -194,16 +222,16 @@
 						"data-testid": `audioroom-card-${n.isLive?"live":"ended"}`
 					}, s.a.createElement("div", {
 						className: Object(i.a)(m.a.userRow)
-					}, _(!1)), s.a.createElement("div", {
+					}, P(!1)), s.a.createElement("div", {
 						className: Object(i.a)(m.a.userRow, m.a.isListener)
-					}, _(!0))), s.a.createElement("div", {
+					}, P(!0))), s.a.createElement("div", {
 						className: m.a.buttonContainer
 					}, !n.isLive && u === d.a.Processing && s.a.createElement(c.a, {
 						kind: c.b.Button,
 						priority: c.c.Primary,
 						className: m.a.processingButton,
 						disabled: !0
-					}, v._("Creating Recording...", null, {
+					}, f._("Creating Recording...", null, {
 						hk: "4gtXIC"
 					})), !n.isLive && u === d.a.Available && s.a.createElement(c.a, {
 						kind: c.b.ExternalLink,
@@ -211,7 +239,7 @@
 						href: `https://www.reddit.com/talk/${n.roomId}`,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, v._("Listen to Recording", null, {
+					}, f._("Listen to Recording", null, {
 						hk: "tBHae"
 					})), n.isLive && s.a.createElement(c.a, {
 						kind: c.b.ExternalLink,
@@ -219,7 +247,7 @@
 						href: `https://www.reddit.com/talk/${n.roomId}`,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, v._("Tune In", null, {
+					}, f._("Tune In", null, {
 						hk: "1NLAor"
 					}))))
 				})() : (() => n.isLive ? s.a.createElement("a", {
@@ -230,18 +258,18 @@
 					"data-testid": "audioroom-card-live"
 				}, s.a.createElement("div", {
 					className: Object(i.a)(m.a.userRow)
-				}, _(!1)), s.a.createElement("div", {
+				}, P(!1)), s.a.createElement("div", {
 					className: Object(i.a)(m.a.userRow, m.a.isListener)
-				}, _(!0))) : s.a.createElement("div", {
+				}, P(!0))) : s.a.createElement("div", {
 					className: m.a.endedContainer,
 					"data-testid": "audioroom-card-ended"
 				}, s.a.createElement(p.a, {
 					className: m.a.muteIcon
-				}), s.a.createElement("p", null, v._("This talk has ended", null, {
+				}), s.a.createElement("p", null, f._("This talk has ended", null, {
 					hk: "3ygafp"
 				}))))()
 			};
-			t.default = E
+			t.default = v
 		},
 		"./src/reddit/components/Econ/Prediction/Confetti/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -363,12 +391,12 @@
 				m = n("./src/reddit/selectors/poll/index.ts"),
 				p = n("./src/lib/classNames/index.ts"),
 				b = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				v = n("./src/reddit/selectors/user.ts"),
-				E = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less"),
-				f = n.n(E);
+				f = n("./src/reddit/selectors/user.ts"),
+				v = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less"),
+				h = n.n(v);
 
-			function h() {
-				return (h = Object.assign || function(e) {
+			function g() {
+				return (g = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -376,17 +404,17 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const g = ({
+			const E = ({
 				className: e,
 				...t
 			}) => {
 				const n = Object(b.fb)(),
 					a = Object(b.x)(n),
-					r = Object(s.e)(v.W);
-				return o.a.createElement("div", h({}, t, {
-					className: Object(p.a)(e, f.a.container, {
-						[f.a.commentsPage]: a,
-						[f.a.isNightMode]: r
+					r = Object(s.e)(f.W);
+				return o.a.createElement("div", g({}, t, {
+					className: Object(p.a)(e, h.a.container, {
+						[h.a.commentsPage]: a,
+						[h.a.isNightMode]: r
 					}),
 					onClick: e => {
 						e.stopPropagation()
@@ -395,17 +423,17 @@
 			};
 			var x = n("./src/reddit/components/Econ/Prediction/Confetti/index.tsx"),
 				O = n("./src/reddit/controls/InternalLink/index.tsx"),
-				P = n("./src/reddit/selectors/posts.ts"),
-				_ = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
-				j = n.n(_);
+				_ = n("./src/reddit/selectors/posts.ts"),
+				P = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/ViewTournamentLink/index.m.less"),
+				j = n.n(P);
 			const {
 				fbt: y
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), k = ({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = ({
 				className: e,
 				postId: t
 			}) => {
 				const n = Object(d.a)(),
-					a = Object(s.e)(e => Object(P.V)(e, {
+					a = Object(s.e)(e => Object(_.V)(e, {
 						postId: t
 					}));
 				return o.a.createElement(O.a, {
@@ -421,9 +449,9 @@
 					hk: "1QaAgH"
 				}))
 			};
-			var N = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
+			var k = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
 				w = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionPostCard/index.m.less"),
-				I = n.n(w);
+				N = n.n(w);
 			const {
 				fbt: C
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), A = ({
@@ -431,19 +459,19 @@
 				description: t,
 				cta: n
 			}) => o.a.createElement("section", {
-				className: I.a.container
+				className: N.a.container
 			}, o.a.createElement(x.a, {
-				className: I.a.confetti
-			}), o.a.createElement(N.a, {
-				className: I.a.image
+				className: N.a.confetti
+			}), o.a.createElement(k.a, {
+				className: N.a.image
 			}), o.a.createElement("div", {
-				className: I.a.label
+				className: N.a.label
 			}, o.a.createElement("div", {
-				className: I.a.header
-			}, e), o.a.createElement("div", null, t)), n), S = ({
+				className: N.a.header
+			}, e), o.a.createElement("div", null, t)), n), T = ({
 				postId: e
 			}) => {
-				const t = Object(s.e)(t => Object(P.V)(t, {
+				const t = Object(s.e)(t => Object(_.V)(t, {
 					postId: e
 				}));
 				return o.a.createElement(A, {
@@ -454,13 +482,13 @@
 						hk: "vGyB7"
 					}),
 					cta: o.a.createElement(O.a, {
-						className: I.a.cta,
+						className: N.a.cta,
 						to: `${null==t?void 0:t.url}predictions/`
 					}, C._("View Results", null, {
 						hk: "1UFWjc"
 					}))
 				})
-			}, T = ({
+			}, S = ({
 				postId: e
 			}) => o.a.createElement(A, {
 				header: C._("Your predictions are in!", null, {
@@ -469,8 +497,8 @@
 				description: C._("May the odds be ever in your favor", null, {
 					hk: "1Brw70"
 				}),
-				cta: o.a.createElement(k, {
-					className: I.a.cta,
+				cta: o.a.createElement(I, {
+					className: N.a.cta,
 					postId: e
 				})
 			});
@@ -493,7 +521,7 @@
 				className: n,
 				...a
 			}) => {
-				const r = Object(s.e)(v.W),
+				const r = Object(s.e)(f.W),
 					i = Math.floor(100 * e / t);
 				return o.a.createElement("div", M({
 					className: Object(p.a)(B.a.container, n, {
@@ -514,20 +542,20 @@
 			};
 			var R = n("./src/reddit/icons/fonts/index.tsx"),
 				D = n("./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/index.tsx"),
-				U = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
-				$ = n("./src/reddit/actions/economics/helpers/index.ts"),
-				W = n("./src/reddit/actions/economics/predictions/index.ts"),
-				G = n("./src/reddit/actions/post.ts"),
-				H = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
-				z = n("./src/reddit/helpers/trackers/predictions.ts"),
+				z = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
+				W = n("./src/reddit/actions/economics/helpers/index.ts"),
+				U = n("./src/reddit/actions/economics/predictions/index.ts"),
+				H = n("./src/reddit/actions/post.ts"),
+				G = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
+				Y = n("./src/reddit/helpers/trackers/predictions.ts"),
 				X = n("./src/reddit/hooks/useToast.tsx"),
-				Z = n("./src/reddit/models/Vote/index.ts"),
-				q = n("./src/reddit/selectors/experiments/econ/index.ts");
+				K = n("./src/reddit/models/Vote/index.ts"),
+				$ = n("./src/reddit/selectors/experiments/econ/index.ts");
 			const {
-				fbt: K
+				fbt: q
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var Y = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentPrediction/index.m.less"),
-				J = n.n(Y);
+			var Z = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/TournamentPrediction/index.m.less"),
+				J = n.n(Z);
 
 			function Q() {
 				return (Q = Object.assign || function(e) {
@@ -553,63 +581,63 @@
 					cancelAction: p
 				} = function(e, t, n) {
 					const a = Object(s.d)(),
-						r = Object(s.e)(v.e),
-						i = Object(s.e)(q.o),
+						r = Object(s.e)(f.e),
+						i = Object(s.e)($.o),
 						c = Object(d.a)(),
 						u = Object(X.a)(),
 						{
 							startDelayedUpvoteAnimation: m
-						} = Object(H.a)(n.id),
+						} = Object(G.a)(n.id),
 						{
 							id: p,
 							endsAt: b,
-							options: E
+							options: v
 						} = t,
 						{
-							id: f,
-							voteState: h
+							id: h,
+							voteState: g
 						} = n,
-						g = t.userSelection,
+						E = t.userSelection,
 						[x, O] = o.a.useState(!1),
-						[P, _] = o.a.useState(null),
+						[_, P] = o.a.useState(null),
 						[j, y] = o.a.useState(!1),
-						k = b < Date.now();
+						I = b < Date.now();
 					return {
 						isLoading: x,
 						isShowingVoteAnimation: j,
-						selectedOption: E.find(({
+						selectedOption: v.find(({
 							id: e
-						}) => e === P),
+						}) => e === _),
 						selectOption: e => {
-							k || g || _(e.id)
+							I || E || P(e.id)
 						},
 						predict: async t => {
-							if (t.currency === l.a.Coins && t.amount > r) return Object($.promptUserToBuyMoreCoins)(), void c(z.b);
-							if (k) return u(K._("Error: Failed to make prediction. This prediction has already ended", null, {
+							if (t.currency === l.a.Coins && t.amount > r) return Object(W.promptUserToBuyMoreCoins)(), void c(Y.b);
+							if (I) return u(q._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
-							})), void _(null);
-							if (!p || !P) throw new Error("Invalid arguments, optionId and pollId must be strings");
-							O(!0), c(Object(z.o)({
+							})), void P(null);
+							if (!p || !_) throw new Error("Invalid arguments, optionId and pollId must be strings");
+							O(!0), c(Object(Y.o)({
 								pollId: p,
 								selectedNumberTokens: t.amount
 							}));
 							try {
-								await a(Object(W.r)({
+								await a(Object(U.r)({
 									coinPackageId: t.id,
-									selectedOptionId: P,
+									selectedOptionId: _,
 									price: t.amount,
 									pollId: p,
 									tournamentId: e,
 									tournamentPostId: n.id
-								})), i && h < Z.a.upvoted && (a(Object(G.jb)(f)), a(Object(G.jb)(p)), m()), O(!1), _(null), y(!0)
+								})), i && g < K.a.upvoted && (a(Object(H.jb)(h)), a(Object(H.jb)(p)), m()), O(!1), P(null), y(!0)
 							} catch (o) {
-								O(!1), _(null), u(K._("Error: Failed to make prediction, please try again later", null, {
+								O(!1), P(null), u(q._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
 								}))
 							}
 						},
 						cancelAction: o.a.useCallback(() => {
-							_(null)
+							P(null)
 						}, []),
 						hideAnimation: o.a.useCallback(() => {
 							y(!1)
@@ -620,7 +648,7 @@
 					prediction: e,
 					selectedOptionId: c ? c.id : null,
 					onSelectOption: u
-				}, r)), !!c && o.a.createElement(U.a, {
+				}, r)), !!c && o.a.createElement(z.a, {
 					className: J.a.modal,
 					isCreatingVote: i,
 					onOverlayClick: p,
@@ -640,7 +668,7 @@
 					post: e,
 					predictions: t
 				}) => {
-					const n = Object(s.e)(v.W),
+					const n = Object(s.e)(f.W),
 						a = t.reduce((e, {
 							userSelection: t
 						}) => t ? e + 1 : e, 0),
@@ -734,12 +762,12 @@
 							noun: "predicted_all_post"
 						}))(e.id);
 						a(t)
-					}, [e.id, n, b, a]), n === u.a.Closed ? o.a.createElement(g, null, o.a.createElement(S, {
+					}, [e.id, n, b, a]), n === u.a.Closed ? o.a.createElement(E, null, o.a.createElement(T, {
 						postId: e.id
-					})) : o.a.createElement(g, null, b ? o.a.createElement(ae, {
+					})) : o.a.createElement(E, null, b ? o.a.createElement(ae, {
 						post: e,
 						predictions: p
-					}) : o.a.createElement(T, {
+					}) : o.a.createElement(S, {
 						postId: e.id
 					}))
 				};
@@ -815,7 +843,119 @@
 						status: null == r ? void 0 : r.predictionStatus
 					}) : 0
 				}
+		},
+		"./src/reddit/models/Audio/index.ts": function(e, t, n) {
+			"use strict";
+			var a, o;
+
+			function s(e) {
+				return Boolean(e.audioRoom)
+			}
+			n.d(t, "a", (function() {
+					return o
+				})), n.d(t, "b", (function() {
+					return s
+				})),
+				function(e) {
+					e.Unknown = "UNKNOWN", e.Twilio = "TWILIO"
+				}(a || (a = {})),
+				function(e) {
+					e[e.NotAvailable = 0] = "NotAvailable", e[e.Processing = 1] = "Processing", e[e.Available = 2] = "Available", e[e.Removed = 3] = "Removed"
+				}(o || (o = {}))
+		},
+		"./src/reddit/models/Badge/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return a
+			})), n.d(t, "e", (function() {
+				return i
+			})), n.d(t, "f", (function() {
+				return c
+			})), n.d(t, "d", (function() {
+				return u
+			})), n.d(t, "c", (function() {
+				return o
+			})), n.d(t, "b", (function() {
+				return s
+			}));
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			var a, o, s, r = n("./src/config.ts");
+
+			function i(e) {
+				return "userId" in e
+			}
+
+			function c(e) {
+				return !(!e.extra || !e.extra.membership) && !!e.extra.membership.included
+			}
+
+			function d(e, t, n) {
+				const a = n.media[0],
+					o = Object.keys(a);
+				if (a["0x0"]) return a["0x0"];
+				let s = {
+					width: 1 / 0,
+					height: 1 / 0,
+					url: ""
+				};
+				if (o.forEach(n => {
+						const o = a[n],
+							[r, i] = n.split("x").map(e => parseInt(e));
+						(r < s.width && r >= e || i < s.height && i >= t) && (s = {
+							height: i,
+							width: r,
+							url: o
+						})
+					}), !s.url && o.length) {
+					const e = Object.keys(a)[0],
+						t = a[e],
+						[n, o] = e.split("x").map(e => parseInt(e));
+					s = {
+						height: o,
+						width: n,
+						url: t
+					}
+				}
+				return s.url
+			}
+
+			function l(e) {
+				return e.startsWith("https") ? e : `${r.a.assetPath}/${e}`
+			}
+
+			function u(e, t, n) {
+				const a = d(e, t, n),
+					o = d(2 * e, 2 * t, n);
+				return {
+					url: l(a),
+					url2x: l(o)
+				}
+			}! function(e) {
+				e.First = "p1", e.Second = "p2"
+			}(a || (a = {})),
+			function(e) {
+				e.ActivityTab = "activityTab", e.ChatTab = "chatTab", e.MessageTab = "messageTab", e.ChatHasNewMessages = "chatHasNewMessages", e.ChatUnreadMessages = "chatUnreadMessages"
+			}(o || (o = {})),
+			function(e) {
+				e.Numbered = "NUMBERED", e.Filled = "FILLED"
+			}(s || (s = {}))
+		},
+		"./src/reddit/models/Product/index.ts": function(e, t, n) {
+			"use strict";
+			var a;
+
+			function o(e) {
+				return e.substring(e.lastIndexOf("|") + 1)
+			}
+			n.d(t, "a", (function() {
+					return a
+				})), n.d(t, "b", (function() {
+					return o
+				})),
+				function(e) {
+					e.Badge = "badge", e.EmotesPack = "emotes_pack", e.Giphy = "giphy", e.Membership = "membership"
+				}(a || (a = {}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.af5ed923955c8f83c6d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.08fe800fd049dee5f659.js.map

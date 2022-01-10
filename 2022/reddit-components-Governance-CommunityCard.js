@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.00b38b2cba1d2cb4c471.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.69926a2227701c8a3620.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -135,9 +135,9 @@
 			})), n.d(t, "u", (function() {
 				return g
 			})), n.d(t, "v", (function() {
-				return x
-			})), n.d(t, "w", (function() {
 				return N
+			})), n.d(t, "w", (function() {
+				return x
 			})), n.d(t, "x", (function() {
 				return j
 			}));
@@ -162,8 +162,8 @@
 				h = "GOVERNANCE__TRANSFER_PENDING",
 				O = "GOVERNANCE__TRANSFER_SUCCESS",
 				g = "GOVERNANCE__WALLETS_FETCH_FAILURE",
-				x = "GOVERNANCE__WALLETS_FETCH_PENDING",
-				N = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
+				N = "GOVERNANCE__WALLETS_FETCH_PENDING",
+				x = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
 				j = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, n) {
@@ -223,8 +223,8 @@
 				h = Object(s.a)(E.c),
 				O = Object(s.a)(E.e),
 				g = (Object(s.a)(E.f), Object(s.a)(E.g), Object(s.a)(E.h)),
-				x = Object(s.a)(E.i),
-				N = Object(s.a)(E.j),
+				N = Object(s.a)(E.i),
+				x = Object(s.a)(E.j),
 				j = Object(s.a)(E.k),
 				k = Object(s.a)(E.q),
 				w = Object(s.a)(E.r),
@@ -239,7 +239,7 @@
 					gqlContext: o
 				}) => {
 					let i, c = r().polls.models[e];
-					if (n(N({
+					if (n(x({
 							pollId: e
 						})), (i = c.type === u.a.GA ? await ((e, t, n) => Object(l.a)(e, {
 								...m,
@@ -273,7 +273,7 @@
 							} = c, t = s.posts.models[e];
 							t && t.voteState === v.a.notVoted && n(Object(a.jb)(e))
 						}
-					} else n(x({
+					} else n(N({
 						pollId: e,
 						error: i.error || i.errors[0].message
 					})), Object(_.a)(n, i.error || i.errors[0].messsage)
@@ -437,8 +437,8 @@
 				e.Initial = "initial_distribution", e.Mod = "moderator_election"
 			}(r || (r = {}));
 			var g = n("./src/reddit/selectors/crypto/claims.ts"),
-				x = n("./src/reddit/selectors/user.ts"),
-				N = n("./src/higherOrderComponents/asTooltip.tsx"),
+				N = n("./src/reddit/selectors/user.ts"),
+				x = n("./src/higherOrderComponents/asTooltip.tsx"),
 				j = n("./src/lib/copyToClipboard/index.ts"),
 				k = n("./src/reddit/actions/governance/errorToast.ts"),
 				w = n("./src/reddit/actions/toaster.ts"),
@@ -453,9 +453,9 @@
 				G = n("./src/reddit/selectors/tooltip.ts"),
 				D = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
 				U = n.n(D);
-			const B = Object(N.a)(P.a),
+			const B = Object(x.a)(P.a),
 				V = "BlockchainWalletInfo--SettingsMenu";
-			class W extends i.a.PureComponent {
+			class F extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onCopyToClipboard = () => {
 						Object(j.a)(this.props.publicAddress || "")
@@ -521,7 +521,7 @@
 					})))) : null
 				}
 			}
-			const F = Object(u.c)({
+			const W = Object(u.c)({
 					dropdownIsOpen: Object(G.b)(V),
 					isEthereumProvider: (e, {
 						subredditId: t
@@ -530,7 +530,7 @@
 						subredditId: t
 					}) => Object(d.b)(e, t)
 				}),
-				H = Object(a.b)(F, (e, t) => ({
+				H = Object(a.b)(W, (e, t) => ({
 					onGovernanceError: t => {
 						Object(k.a)(e, t)
 					},
@@ -548,7 +548,7 @@
 						}))
 					}
 				}));
-			var Z = Object(A.b)(H(W)),
+			var Z = Object(A.b)(H(F)),
 				q = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				$ = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
 				Y = n.n($);
@@ -722,7 +722,7 @@
 				isEthereumProvider: (e, {
 					subredditId: t
 				}) => Object(d.a)(e, t),
-				isLoggedIn: x.J,
+				isLoggedIn: N.J,
 				nextAvailableClaim: g.b
 			});
 			var de = Object(a.b)(ce, e => ({
@@ -774,8 +774,8 @@
 				}))),
 				Oe = n("./src/reddit/actions/modal.ts"),
 				ge = n("./src/reddit/components/Economics/SubredditPremium/SidebarCards/SidebarButton/index.tsx"),
-				xe = n("./src/reddit/constants/modals.ts"),
-				Ne = n("./src/reddit/icons/svgs/Coin/index.tsx"),
+				Ne = n("./src/reddit/constants/modals.ts"),
+				xe = n("./src/reddit/icons/svgs/Coin/index.tsx"),
 				je = n("./src/reddit/icons/svgs/Send/index.tsx"),
 				ke = n("./src/reddit/components/Governance/CommunityCard/UsePoints/index.m.less"),
 				we = n.n(ke);
@@ -810,8 +810,8 @@
 				}), Ie._("Transfer", null, {
 					hk: "1MQW1Y"
 				})), n && i.a.createElement(ge.a, {
-					onClick: () => t(Object(Oe.h)(xe.a.CONVERT_TO_COINS))
-				}, i.a.createElement(Ne.a, {
+					onClick: () => t(Object(Oe.h)(Ne.a.CONVERT_TO_COINS))
+				}, i.a.createElement(xe.a, {
 					className: we.a.icon
 				}), Ie._("Convert to Reddit Coins", null, {
 					hk: "lqkYM"
@@ -1393,26 +1393,6 @@
 				d: "M10,1.5 C14.687,1.5 18.5,5.313 18.5,10 C18.5,14.687 14.687,18.5 10,18.5 C5.314,18.5 1.5,14.687 1.5,10 C1.5,5.313 5.314,1.5 10,1.5 Z M7.879,12.122 C6.709,10.952 6.709,9.049 7.879,7.879 C9.012,6.746 10.988,6.746 12.121,7.879 C12.512,8.269 13.145,8.269 13.535,7.879 C13.926,7.489 13.926,6.855 13.535,6.465 C12.591,5.52 11.336,5 10,5 C8.664,5 7.409,5.52 6.465,6.465 C4.516,8.414 4.516,11.586 6.465,13.536 C7.409,14.48 8.664,15 10,15 C11.336,15 12.591,14.48 13.535,13.536 C13.926,13.145 13.926,12.512 13.535,12.122 C13.145,11.731 12.512,11.731 12.121,12.122 C10.988,13.255 9.012,13.255 7.879,12.122 Z"
 			}))
 		},
-		"./src/reddit/icons/svgs/QuarantineWarning/index.tsx": function(e, t, n) {
-			"use strict";
-			var r = n("./node_modules/react/index.js"),
-				s = n.n(r);
-			t.a = ({
-				className: e
-			}) => s.a.createElement("svg", {
-				className: e,
-				viewBox: "0 0 12 12",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", {
-				fillRule: "evenodd"
-			}, s.a.createElement("path", {
-				d: "M0 12h12V0H0z",
-				fill: "none"
-			}), s.a.createElement("path", {
-				d: "M6.367 6.704a.376.376 0 0 1-.734 0l-.75-3.5a.376.376 0 0 1 .367-.454h1.5a.376.376 0 0 1 .367.454l-.75 3.5zm.166 2.701A.756.756 0 0 1 6 9.622a.74.74 0 0 1-.75-.75c0-.097.023-.195.06-.285a.74.74 0 0 1 .158-.24.778.778 0 0 1 1.065 0 .74.74 0 0 1 .157.24.76.76 0 0 1 .06.285c0 .203-.083.39-.217.533zm5.284-.373l-4.5-8.25a1.5 1.5 0 0 0-2.634 0l-4.5 8.25A1.501 1.501 0 0 0 1.5 11.25h9a1.5 1.5 0 0 0 1.317-2.218z",
-				fill: "inherit"
-			})))
-		},
 		"./src/reddit/icons/svgs/Send/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
@@ -1739,4 +1719,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.00b38b2cba1d2cb4c471.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.69926a2227701c8a3620.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.f943ea8f1666719e00ec.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.0e59560683ab09199a52.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "ReadingIndicator"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -131,6 +131,7 @@
 				}))]
 			}
 		},
+		"./node_modules/draft-js/dist/Draft.css": function(e, t, n) {},
 		"./node_modules/line-height/lib/line-height.js": function(e, t, n) {
 			var o = n("./node_modules/computed-style/dist/computedStyle.commonjs.js");
 			e.exports = function(e) {
@@ -313,6 +314,13 @@
 				return t.src_pseudo_letter = "(?:(?![><｜]|" + t.src_ZPCc + ")" + t.src_Any + ")", t.src_ip4 = "(?:(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)", t.src_auth = "(?:(?:(?!" + t.src_ZCc + "|[@/\\[\\]()]).)+@)?", t.src_port = "(?::(?:6(?:[0-4]\\d{3}|5(?:[0-4]\\d{2}|5(?:[0-2]\\d|3[0-5])))|[1-5]?\\d{1,4}))?", t.src_host_terminator = "(?=$|[><｜]|" + t.src_ZPCc + ")(?!-|_|:\\d|\\.-|\\.(?!$|" + t.src_ZPCc + "))", t.src_path = "(?:[/?#](?:(?!" + t.src_ZCc + "|[><｜]|[()[\\]{}.,\"'?!\\-]).|\\[(?:(?!" + t.src_ZCc + "|\\]).)*\\]|\\((?:(?!" + t.src_ZCc + "|[)]).)*\\)|\\{(?:(?!" + t.src_ZCc + '|[}]).)*\\}|\\"(?:(?!' + t.src_ZCc + '|["]).)+\\"|\\\'(?:(?!' + t.src_ZCc + "|[']).)+\\'|\\'(?=" + t.src_pseudo_letter + "|[-]).|\\.{2,3}[a-zA-Z0-9%/]|\\.(?!" + t.src_ZCc + "|[.]).|" + (e && e["---"] ? "\\-(?!--(?:[^-]|$))(?:-*)|" : "\\-+|") + "\\,(?!" + t.src_ZCc + ").|\\!(?!" + t.src_ZCc + "|[!]).|\\?(?!" + t.src_ZCc + "|[?]).)+|\\/)?", t.src_email_name = '[\\-;:&=\\+\\$,\\"\\.a-zA-Z0-9_]+', t.src_xn = "xn--[a-z0-9\\-]{1,59}", t.src_domain_root = "(?:" + t.src_xn + "|" + t.src_pseudo_letter + "{1,63})", t.src_domain = "(?:" + t.src_xn + "|(?:" + t.src_pseudo_letter + ")|(?:" + t.src_pseudo_letter + "(?:-(?!-)|" + t.src_pseudo_letter + "){0,61}" + t.src_pseudo_letter + "))", t.src_host = "(?:(?:(?:(?:" + t.src_domain + ")\\.)*" + t.src_domain + "))", t.tpl_host_fuzzy = "(?:" + t.src_ip4 + "|(?:(?:(?:" + t.src_domain + ")\\.)+(?:%TLDS%)))", t.tpl_host_no_ip_fuzzy = "(?:(?:(?:" + t.src_domain + ")\\.)+(?:%TLDS%))", t.src_host_strict = t.src_host + t.src_host_terminator, t.tpl_host_fuzzy_strict = t.tpl_host_fuzzy + t.src_host_terminator, t.src_host_port_strict = t.src_host + t.src_port + t.src_host_terminator, t.tpl_host_port_fuzzy_strict = t.tpl_host_fuzzy + t.src_port + t.src_host_terminator, t.tpl_host_port_no_ip_fuzzy_strict = t.tpl_host_no_ip_fuzzy + t.src_port + t.src_host_terminator, t.tpl_host_fuzzy_test = "localhost|www\\.|\\.\\d{1,3}\\.|(?:\\.(?:%TLDS%)(?:" + t.src_ZPCc + "|>|$))", t.tpl_email_fuzzy = "(^|[><｜]|\\(|" + t.src_ZCc + ")(" + t.src_email_name + "@" + t.tpl_host_fuzzy_strict + ")", t.tpl_link_fuzzy = "(^|(?![.:/\\-_@])(?:[$+<=>^`|｜]|" + t.src_ZPCc + "))((?![$+<=>^`|｜])" + t.tpl_host_port_fuzzy_strict + t.src_path + ")", t.tpl_link_no_ip_fuzzy = "(^|(?![.:/\\-_@])(?:[$+<=>^`|｜]|" + t.src_ZPCc + "))((?![$+<=>^`|｜])" + t.tpl_host_port_no_ip_fuzzy_strict + t.src_path + ")", t
 			}
 		},
+		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
+			e.exports = function(e, t, n, o) {
+				var s = null == e ? 0 : e.length;
+				for (o && s && (n = e[--s]); s--;) n = t(n, e[s], s, e);
+				return n
+			}
+		},
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
 			var o = n("./node_modules/lodash/_baseClamp.js"),
 				s = n("./node_modules/lodash/_copyArray.js"),
@@ -321,11 +329,61 @@
 				return r(s(e), o(t, 0, e.length))
 			}
 		},
+		"./node_modules/lodash/_baseEachRight.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_baseForOwnRight.js"),
+				s = n("./node_modules/lodash/_createBaseEach.js")(o, !0);
+			e.exports = s
+		},
+		"./node_modules/lodash/_baseExtremum.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/isSymbol.js");
+			e.exports = function(e, t, n) {
+				for (var s = -1, r = e.length; ++s < r;) {
+					var i = e[s],
+						a = t(i);
+					if (null != a && (void 0 === c ? a == a && !o(a) : n(a, c))) var c = a,
+						d = i
+				}
+				return d
+			}
+		},
+		"./node_modules/lodash/_baseFilter.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_baseEach.js");
+			e.exports = function(e, t) {
+				var n = [];
+				return o(e, (function(e, o, s) {
+					t(e, o, s) && n.push(e)
+				})), n
+			}
+		},
+		"./node_modules/lodash/_baseForOwnRight.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_baseForRight.js"),
+				s = n("./node_modules/lodash/keys.js");
+			e.exports = function(e, t) {
+				return e && o(e, t, s)
+			}
+		},
+		"./node_modules/lodash/_baseForRight.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_createBaseFor.js")(!0);
+			e.exports = o
+		},
+		"./node_modules/lodash/_baseGt.js": function(e, t) {
+			e.exports = function(e, t) {
+				return e > t
+			}
+		},
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
 			var n = Math.floor,
 				o = Math.random;
 			e.exports = function(e, t) {
 				return e + n(o() * (t - e + 1))
+			}
+		},
+		"./node_modules/lodash/_baseRange.js": function(e, t) {
+			var n = Math.ceil,
+				o = Math.max;
+			e.exports = function(e, t, s, r) {
+				for (var i = -1, a = o(n((t - e) / (s || 1)), 0), c = Array(a); a--;) c[r ? a : ++i] = e, e += s;
+				return c
 			}
 		},
 		"./node_modules/lodash/_baseSampleSize.js": function(e, t, n) {
@@ -336,6 +394,41 @@
 				var n = r(e);
 				return s(n, o(t, 0, n.length))
 			}
+		},
+		"./node_modules/lodash/_baseWhile.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_baseSlice.js");
+			e.exports = function(e, t, n, s) {
+				for (var r = e.length, i = s ? r : -1;
+					(s ? i-- : ++i < r) && t(e[i], i, e););
+				return n ? o(e, s ? 0 : i, s ? i + 1 : r) : o(e, s ? i + 1 : 0, s ? r : i)
+			}
+		},
+		"./node_modules/lodash/_charsEndIndex.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_baseIndexOf.js");
+			e.exports = function(e, t) {
+				for (var n = e.length; n-- && o(t, e[n], 0) > -1;);
+				return n
+			}
+		},
+		"./node_modules/lodash/_createRange.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_baseRange.js"),
+				s = n("./node_modules/lodash/_isIterateeCall.js"),
+				r = n("./node_modules/lodash/toFinite.js");
+			e.exports = function(e) {
+				return function(t, n, i) {
+					return i && "number" != typeof i && s(t, n, i) && (n = i = void 0), t = r(t), void 0 === n ? (n = t, t = 0) : n = r(n), i = void 0 === i ? t < n ? 1 : -1 : r(i), o(t, n, i, e)
+				}
+			}
+		},
+		"./node_modules/lodash/_escapeHtmlChar.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_basePropertyOf.js")({
+				"&": "&amp;",
+				"<": "&lt;",
+				">": "&gt;",
+				'"': "&quot;",
+				"'": "&#39;"
+			});
+			e.exports = o
 		},
 		"./node_modules/lodash/_shuffleSelf.js": function(e, t, n) {
 			var o = n("./node_modules/lodash/_baseRandom.js");
@@ -351,11 +444,87 @@
 				return e.length = t, e
 			}
 		},
+		"./node_modules/lodash/chunk.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_baseSlice.js"),
+				s = n("./node_modules/lodash/_isIterateeCall.js"),
+				r = n("./node_modules/lodash/toInteger.js"),
+				i = Math.ceil,
+				a = Math.max;
+			e.exports = function(e, t, n) {
+				t = (n ? s(e, t, n) : void 0 === t) ? 1 : a(r(t), 0);
+				var c = null == e ? 0 : e.length;
+				if (!c || t < 1) return [];
+				for (var d = 0, l = 0, u = Array(i(c / t)); d < c;) u[l++] = o(e, d, d += t);
+				return u
+			}
+		},
+		"./node_modules/lodash/dropRightWhile.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_baseIteratee.js"),
+				s = n("./node_modules/lodash/_baseWhile.js");
+			e.exports = function(e, t) {
+				return e && e.length ? s(e, o(t, 3), !0, !0) : []
+			}
+		},
+		"./node_modules/lodash/escape.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_escapeHtmlChar.js"),
+				s = n("./node_modules/lodash/toString.js"),
+				r = /[&<>"']/g,
+				i = RegExp(r.source);
+			e.exports = function(e) {
+				return (e = s(e)) && i.test(e) ? e.replace(r, o) : e
+			}
+		},
+		"./node_modules/lodash/filter.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_arrayFilter.js"),
+				s = n("./node_modules/lodash/_baseFilter.js"),
+				r = n("./node_modules/lodash/_baseIteratee.js"),
+				i = n("./node_modules/lodash/isArray.js");
+			e.exports = function(e, t) {
+				return (i(e) ? o : s)(e, r(t, 3))
+			}
+		},
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
 			var o = n("./node_modules/lodash/_baseFlatten.js"),
 				s = n("./node_modules/lodash/map.js");
 			e.exports = function(e, t) {
 				return o(s(e, t), 1)
+			}
+		},
+		"./node_modules/lodash/includes.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_baseIndexOf.js"),
+				s = n("./node_modules/lodash/isArrayLike.js"),
+				r = n("./node_modules/lodash/isString.js"),
+				i = n("./node_modules/lodash/toInteger.js"),
+				a = n("./node_modules/lodash/values.js"),
+				c = Math.max;
+			e.exports = function(e, t, n, d) {
+				e = s(e) ? e : a(e), n = n && !d ? i(n) : 0;
+				var l = e.length;
+				return n < 0 && (n = c(l + n, 0)), r(e) ? n <= l && e.indexOf(t, n) > -1 : !!l && o(e, t, n) > -1
+			}
+		},
+		"./node_modules/lodash/maxBy.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_baseExtremum.js"),
+				s = n("./node_modules/lodash/_baseGt.js"),
+				r = n("./node_modules/lodash/_baseIteratee.js");
+			e.exports = function(e, t) {
+				return e && e.length ? o(e, r(t, 2), s) : void 0
+			}
+		},
+		"./node_modules/lodash/range.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_createRange.js")();
+			e.exports = o
+		},
+		"./node_modules/lodash/reduceRight.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_arrayReduceRight.js"),
+				s = n("./node_modules/lodash/_baseEachRight.js"),
+				r = n("./node_modules/lodash/_baseIteratee.js"),
+				i = n("./node_modules/lodash/_baseReduce.js"),
+				a = n("./node_modules/lodash/isArray.js");
+			e.exports = function(e, t, n) {
+				var c = a(e) ? o : i,
+					d = arguments.length < 3;
+				return c(e, r(t, 4), n, d, s)
 			}
 		},
 		"./node_modules/lodash/sampleSize.js": function(e, t, n) {
@@ -366,6 +535,28 @@
 				a = n("./node_modules/lodash/toInteger.js");
 			e.exports = function(e, t, n) {
 				return t = (n ? i(e, t, n) : void 0 === t) ? 1 : a(t), (r(e) ? o : s)(e, t)
+			}
+		},
+		"./node_modules/lodash/takeWhile.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_baseIteratee.js"),
+				s = n("./node_modules/lodash/_baseWhile.js");
+			e.exports = function(e, t) {
+				return e && e.length ? s(e, o(t, 3)) : []
+			}
+		},
+		"./node_modules/lodash/trimEnd.js": function(e, t, n) {
+			var o = n("./node_modules/lodash/_baseToString.js"),
+				s = n("./node_modules/lodash/_castSlice.js"),
+				r = n("./node_modules/lodash/_charsEndIndex.js"),
+				i = n("./node_modules/lodash/_stringToArray.js"),
+				a = n("./node_modules/lodash/toString.js"),
+				c = n("./node_modules/lodash/_trimmedEndIndex.js");
+			e.exports = function(e, t, n) {
+				if ((e = a(e)) && (n || void 0 === t)) return e.slice(0, c(e) + 1);
+				if (!e || !(t = o(t))) return e;
+				var d = i(e),
+					l = r(d, i(t)) + 1;
+				return s(d, 0, l).join("")
 			}
 		},
 		"./node_modules/react-autosize-textarea/lib/TextareaAutosize.js": function(e, t, n) {
@@ -654,8 +845,8 @@
 				T = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts"),
 				O = n("./src/reddit/models/PostCreationForm/index.ts"),
 				w = n("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
-				I = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const R = (e, t, n, o) => {
+				R = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const I = (e, t, n, o) => {
 					let s, r;
 					if (o === O.i.MARKDOWN) s = n.text, r = null;
 					else {
@@ -690,7 +881,7 @@
 					}
 					return Object(x.a)(Object(E.a)(e, [C.a]), {
 						method: s.jb.POST,
-						endpoint: Object(v.a)(Object(w.a)(Object(I.a)(`${e.apiUrl}/api/comment.json`))),
+						endpoint: Object(v.a)(Object(w.a)(Object(R.a)(`${e.apiUrl}/api/comment.json`))),
 						data: i
 					}).then(e => e.ok ? e.body.json ? e.body.json.errors.length ? {
 						...e,
@@ -760,7 +951,7 @@
 						u = Object(J.e)(l);
 					let m = "";
 					if (u && (m = u.name), z.d.enableToxicityWarning(l)) {
-						if (!(await R(c(), m, o, s))) return void i(Object(d.i)(ie))
+						if (!(await I(c(), m, o, s))) return void i(Object(d.i)(ie))
 					}
 					i(de(e, t, n, o, s, r))
 				}, ce = e => e.rteState ? b.a.toRichTextJSON(e.rteState) : e.rtJson || e.text, de = (e, t, n, r, i, a, c) => async (u, b, {
@@ -822,7 +1013,7 @@
 					} = e, u = n(), m = Object(J.e)(u);
 					let p = "";
 					if (m && (p = m.name), z.d.enableToxicityWarning(u)) {
-						if (!(await R(o(), p, c, l))) return void t(Object(d.i)(ie))
+						if (!(await I(o(), p, c, l))) return void t(Object(d.i)(ie))
 					}
 					t(ue({
 						commentsPageKey: r,
@@ -1033,7 +1224,7 @@
 								})
 							}
 							return Object(x.a)(Object(E.a)(e, [C.a]), {
-								endpoint: Object(v.a)(Object(I.a)(Object(w.a)(`${e.apiUrl}/api/editusertext`))),
+								endpoint: Object(v.a)(Object(R.a)(Object(w.a)(`${e.apiUrl}/api/editusertext`))),
 								method: s.jb.POST,
 								data: a
 							}).then(e => e.ok ? e.body.json ? e.body.json.errors.length ? {
@@ -1070,7 +1261,7 @@
 						draftKey: o,
 						error: u.error
 					}))
-				}, we = Object(r.a)(Y.z), Ie = Object(r.a)(Y.y), Re = Object(r.a)(Y.A), Se = (e, t) => async (n, o, {
+				}, we = Object(r.a)(Y.z), Re = Object(r.a)(Y.y), Ie = Object(r.a)(Y.A), Se = (e, t) => async (n, o, {
 					apiContext: r
 				}) => {
 					const i = o();
@@ -1094,10 +1285,10 @@
 						...e,
 						error: e.error || Object(j.a)()
 					}))(r(), e);
-					a.ok ? n(Re({
+					a.ok ? n(Ie({
 						id: e,
 						postId: t
-					})) : n(Ie({
+					})) : n(Re({
 						id: e,
 						error: a.error
 					}))
@@ -1498,8 +1689,8 @@
 				T = n("./src/reddit/components/CommentCreation/ToolbarSelector.m.less"),
 				O = n.n(T),
 				w = n("./src/lib/lessComponent.tsx");
-			const I = 310,
-				R = w.a.div("Container", O.a);
+			const R = 310,
+				I = w.a.div("Container", O.a);
 			class S extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -1509,7 +1700,7 @@
 						if (!e) return;
 						const {
 							width: t
-						} = e.getBoundingClientRect(), n = t < I ? "compact" : "full";
+						} = e.getBoundingClientRect(), n = t < R ? "compact" : "full";
 						n !== this.state.toolbarType && k.a.write(() => {
 							this.setState({
 								toolbarType: n
@@ -1524,7 +1715,7 @@
 					window.removeEventListener("resize", this.selectToolbar)
 				}
 				render() {
-					return d.a.createElement(R, {
+					return d.a.createElement(I, {
 						innerRef: this.setContainerRef
 					}, this.state.toolbarType ? this.props.children(this.state.toolbarType) : null)
 				}
@@ -1758,8 +1949,8 @@
 						isExpanded: T,
 						isOverlay: O,
 						isTopLevelComment: w,
-						isTypingIndicatorsExperimentEnabled: I,
-						isTypingIndicatorsUIEnabled: R,
+						isTypingIndicatorsExperimentEnabled: R,
+						isTypingIndicatorsUIEnabled: I,
 						isTypingIndicatorsWriteTestEnabled: F,
 						onSwitchMode: D,
 						postId: M,
@@ -1778,8 +1969,8 @@
 							[de.a.isTopLevelComment]: w,
 							[de.a.mExpanded]: T,
 							[de.a.mRedesign]: k,
-							[de.a.isTypingIndicatorsCommentForm]: I,
-							[de.a.isOverlay]: I && O
+							[de.a.isTypingIndicatorsCommentForm]: R,
+							[de.a.isOverlay]: R && O
 						}),
 						ref: this.setWrapperRef,
 						style: {
@@ -1789,12 +1980,12 @@
 						variables: this.realtimeGQLVariables,
 						onData: a.a,
 						queryKey: "userIsTypingOnPost"
-					}), !I && !k && w && d.a.createElement(me, null, d.a.createElement(pe, null, o.fbt._("Comment as {authorLink}", [o.fbt._param("authorLink", d.a.createElement(h.a, {
+					}), !R && !k && w && d.a.createElement(me, null, d.a.createElement(pe, null, o.fbt._("Comment as {authorLink}", [o.fbt._param("authorLink", d.a.createElement(h.a, {
 						author: A,
 						isAuthorDeleted: !1
 					}, A))], {
 						hk: "4pMWAk"
-					}))), R && d.a.createElement(G.default, {
+					}))), I && d.a.createElement(G.default, {
 						minTimeVisible: J.e,
 						minNumUsersTyping: J.d,
 						postId: M
@@ -1805,12 +1996,12 @@
 					}, k && d.a.createElement("div", {
 						className: de.a.userIcon
 					}, d.a.createElement(_e, null)), d.a.createElement("div", {
-						className: I ? void 0 : Object(H.a)(de.a.FormWrapper, {
+						className: R ? void 0 : Object(H.a)(de.a.FormWrapper, {
 							[de.a.pending]: x,
 							[de.a.focused]: c.hasFocus
 						})
 					}, d.a.createElement(fe, {
-						className: I ? de.a.isTypingIndicatorsEditorWrapper : void 0,
+						className: R ? de.a.isTypingIndicatorsEditorWrapper : void 0,
 						innerRef: this.setTextAreaRef,
 						autoFocus: t && !r,
 						disabled: x,
@@ -1820,19 +2011,19 @@
 						onEditorResize: this.props.onEditorResize,
 						onFocus: this.onFocus,
 						onKeyDown: this.handleKeyDown,
-						placeholder: k || I ? o.fbt._("Add a comment", null, {
+						placeholder: k || R ? o.fbt._("Add a comment", null, {
 							hk: "39ZBm0"
 						}) : o.fbt._("What are your thoughts?", null, {
 							hk: "4or1AH"
 						}),
-						shouldPadContent: I,
+						shouldPadContent: R,
 						value: B
 					}), (!k || T) && d.a.createElement(j.a, {
 						className: Object(H.a)(de.a.FormFooter, {
-							[ae.a.typingIndicatorsFooter]: I
+							[ae.a.typingIndicatorsFooter]: R
 						}),
 						cancelButtonEnabled: u !== se.c.replyToPost,
-						isTypingIndicatorsExperimentEnabled: I,
+						isTypingIndicatorsExperimentEnabled: R,
 						onSubmit: this.onSubmit,
 						onCancel: this.onCancel,
 						pending: x,
@@ -1981,8 +2172,8 @@
 				T = n("./src/reddit/controls/ErrorText/index.tsx"),
 				O = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				w = n("./src/reddit/components/CommentCreation/ExpandingFormDiv.tsx"),
-				I = n("./src/reddit/components/CommentCreation/FormFooter/index.tsx"),
-				R = n("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
+				R = n("./src/reddit/components/CommentCreation/FormFooter/index.tsx"),
+				I = n("./src/reddit/components/CommentCreation/getCancelModalId.ts"),
 				S = n("./src/reddit/models/PostCreationForm/index.ts"),
 				F = n("./src/reddit/models/PostDraft/index.ts"),
 				D = n("./src/reddit/actions/comment/authoring.ts"),
@@ -2069,7 +2260,7 @@
 						userCanUseEmojis: u.userCanUseEmojis,
 						userCanUseGifs: u.userCanUseGifs
 					} : void 0;
-					return d.a.createElement(I.a, {
+					return d.a.createElement(R.a, {
 						cancelButtonEnabled: e,
 						className: Object(m.a)($.a.FormFooter, {
 							[$.a.mRedesign]: n,
@@ -2134,7 +2325,7 @@
 					isTypingIndicatorsWriteTestEnabled: (e, t) => !!t.isTopLevelComment && Object(V.e)(e)
 				}),
 				de = (e, t) => ({
-					cancelModalToggled: () => e(Object(M.i)(Object(R.a)(t.draftKey)))
+					cancelModalToggled: () => e(Object(M.i)(Object(I.a)(t.draftKey)))
 				}),
 				le = Object(l.b)(ce, de),
 				ue = Object(B.u)();
@@ -2280,7 +2471,7 @@
 						isTopLevelComment: v,
 						userCanUseEmojis: j,
 						userCanUseGifs: O,
-						userName: I,
+						userName: R,
 						emojisEnabled: S,
 						gifsEnabled: M,
 						isTypingIndicatorsExperimentEnabled: B,
@@ -2293,7 +2484,7 @@
 						breakOut: K,
 						formHeight: X,
 						rteState: J
-					} = this.state, V = Object(R.a)(c), Z = i.draftType === F.c.edit, Q = l !== F.c.replyToPost;
+					} = this.state, V = Object(I.a)(c), Z = i.draftType === F.c.edit, Q = l !== F.c.replyToPost;
 					return d.a.createElement("div", {
 						className: Object(m.a)($.a.FormWrapper, n, {
 							[$.a.isTopLevelComment]: v,
@@ -2310,9 +2501,9 @@
 						onData: a.a,
 						queryKey: "postTypingIndicator"
 					}), !B && !p && v && d.a.createElement(oe, null, d.a.createElement(ie, null, s.fbt._("Comment as {authorLink}", [s.fbt._param("authorLink", d.a.createElement(_.a, {
-						author: I,
+						author: R,
 						isAuthorDeleted: !1
-					}, I))], {
+					}, R))], {
 						hk: "4pMWAk"
 					}))), N && d.a.createElement(te, {
 						minTimeVisible: G.e,
@@ -2522,17 +2713,17 @@
 				T = n("./src/reddit/models/User/index.ts"),
 				O = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				w = n("./src/reddit/selectors/comments.ts"),
-				I = n("./src/reddit/selectors/experiments/commentBox.ts"),
-				R = n("./src/reddit/selectors/activeModalId.ts"),
+				R = n("./src/reddit/selectors/experiments/commentBox.ts"),
+				I = n("./src/reddit/selectors/activeModalId.ts"),
 				S = n("./src/reddit/selectors/experiments/antievil/index.tsx"),
 				F = n("./src/reddit/selectors/posts.ts");
 			const D = Object(O.u)(),
 				M = Object(c.c)({
-					activeModalId: R.a,
+					activeModalId: I.a,
 					contributorRequestPending: (e, {
 						pageLayer: t
 					}) => Object(O.b)(e, t, f.e.Comment),
-					isCommentBoxDesignEnabled: I.a,
+					isCommentBoxDesignEnabled: R.a,
 					userName: e => e.user.account ? Object(T.e)(e.user.account) : "",
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
 					hasError: w.v,
@@ -2877,11 +3068,11 @@
 				T = C.a.div("ModeWrapper", E.a),
 				O = C.a.wrapped(d.a, "MarkdownHelpButton", E.a),
 				w = C.a.div("Toolbar", E.a),
-				I = Object(a.c)({
+				R = Object(a.c)({
 					activeModalId: g.a,
 					isConverting: e => Object(x.a)(e)
 				}),
-				R = Object(i.b)(I, (e, t) => ({
+				I = Object(i.b)(R, (e, t) => ({
 					onChange: n => {
 						e(Object(c.c)(n)), t.onChange && t.onChange(n)
 					},
@@ -2993,7 +3184,7 @@
 					text: n
 				})
 			});
-			t.a = R(S)
+			t.a = I(S)
 		},
 		"./src/reddit/components/PostCreationForm/Prompt/PromptModal.m.less": function(e, t, n) {
 			e.exports = {
@@ -3205,8 +3396,8 @@
 				T = n("./src/reddit/components/RichTextEditor/index.tsx"),
 				O = n("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
 				w = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				I = n("./src/reddit/controls/ErrorText/index.tsx"),
-				R = n("./src/reddit/helpers/richTextEditor/index.ts"),
+				R = n("./src/reddit/controls/ErrorText/index.tsx"),
+				I = n("./src/reddit/helpers/richTextEditor/index.ts"),
 				S = n("./src/reddit/selectors/user.ts"),
 				F = n("./src/reddit/controls/Button/index.tsx"),
 				D = n("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -3362,7 +3553,7 @@
 							[A.a.isPending]: !!i
 						}),
 						destSubreddit: this.props.destSubreddit,
-						editorType: R.a.Post,
+						editorType: I.a.Post,
 						initialHeight: this.state.editorHeight,
 						rteState: g,
 						onChange: this.onRichPostChange,
@@ -3395,7 +3586,7 @@
 						sizePx: 10
 					}) : o.fbt._("Save", null, {
 						hk: "4yMsMq"
-					}))), a.a.createElement(I.a, {
+					}))), a.a.createElement(R.a, {
 						className: A.a.errorMessages,
 						messages: C
 					}), a.a.createElement(y.a, {
@@ -3577,16 +3768,16 @@
 				}, [k, e, E]);
 				const {
 					className: w,
-					shouldMount: I,
-					onTransitionEnd: R
+					shouldMount: R,
+					onTransitionEnd: I
 				} = Object(m.a)({
 					defaultClass: b.a.readingIndicator,
 					addedClass: b.a.isDisplayed,
 					mountCondition: !!k
 				}), S = Object(p.a)();
 				return Object(a.useEffect)(() => {
-					I && S(Object(u.q)(s, E))
-				}, [S, I, s]), Object(a.useEffect)(() => () => {
+					R && S(Object(u.q)(s, E))
+				}, [S, R, s]), Object(a.useEffect)(() => () => {
 					g.current && clearTimeout(g.current), x.current && clearTimeout(x.current), O.current && clearTimeout(O.current)
 				}, []), c.a.createElement(c.a.Fragment, null, n && c.a.createElement(d.a, {
 					variables: h,
@@ -3596,9 +3787,9 @@
 					variables: _,
 					onData: e ? v : i.a,
 					queryKey: "usersReadingIndicator"
-				}), I && c.a.createElement("div", {
+				}), R && c.a.createElement("div", {
 					className: w,
-					onTransitionEnd: R
+					onTransitionEnd: I
 				}, o.fbt._("{number of users reading} people here", [o.fbt._param("number of users reading", f(j.current))], {
 					hk: "3foy5g"
 				}), c.a.createElement(l.a, {
@@ -3862,7 +4053,7 @@
 		"./src/reddit/components/RichTextEditor/Toolbar/PowerupButtonsWrapper.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return R
+				return I
 			}));
 			var o = n("./node_modules/react/index.js"),
 				s = n.n(o),
@@ -3916,15 +4107,15 @@
 						subredditHasPowerups: C,
 						subredditId: v,
 						useIconName: j
-					} = e, k = v ? Object(m.j)(u.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, v) : 0, T = C && k < x && h && 0 === b.length, [O, w] = Object(o.useState)(T), I = Object(i.d)();
+					} = e, k = v ? Object(m.j)(u.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, v) : 0, T = C && k < x && h && 0 === b.length, [O, w] = Object(o.useState)(T), R = Object(i.d)();
 					Object(o.useEffect)(() => {
 						O && v && setTimeout(() => {
-							Object(m.R)(u.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, v), I(Object(d.f)({
+							Object(m.R)(u.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, v), R(Object(d.f)({
 								tooltipId: y
 							}))
 						}, E)
-					}, [I, O, v]);
-					const R = C ? r.fbt._("Add Emoji", null, {
+					}, [R, O, v]);
+					const I = C ? r.fbt._("Add Emoji", null, {
 						hk: "3EV4aU"
 					}) : r.fbt._("Add Emote", null, {
 						hk: "3dXLr8"
@@ -3942,10 +4133,10 @@
 							className: g.a.smile
 						}),
 						iconName: j ? "emoji" : void 0,
-						tooltip: O ? void 0 : R,
+						tooltip: O ? void 0 : I,
 						enabled: t.emote.isEnabled,
 						onClick: e => {
-							O && (I(Object(d.j)({
+							O && (R(Object(d.j)({
 								tooltipId: y
 							})), w(!1)), a(e)
 						}
@@ -3984,8 +4175,8 @@
 				})
 			}
 			var w = n("./src/reddit/components/RichTextEditor/Toolbar/PowerupButtonsWrapper.m.less"),
-				I = n.n(w);
-			const R = ({
+				R = n.n(w);
+			const I = ({
 				controlsState: e,
 				destSubreddit: t,
 				emojisEnabled: n,
@@ -3995,7 +4186,7 @@
 				onGifButtonClick: a,
 				userCanUseGifs: c
 			}) => s.a.createElement("div", {
-				className: I.a.powerupButtons
+				className: R.a.powerupButtons
 			}, n && s.a.createElement(v, {
 				controlsState: e,
 				subredditId: null == t ? void 0 : t.id,
@@ -4095,7 +4286,7 @@
 				const {
 					className: O,
 					shouldMount: w,
-					onTransitionEnd: I
+					onTransitionEnd: R
 				} = Object(m.a)({
 					defaultClass: f.a.typingIndicator,
 					addedClass: f.a.isDisplayed,
@@ -4111,7 +4302,7 @@
 					queryKey: "postTypingIndicator"
 				}), w && r.a.createElement("div", {
 					className: O,
-					onTransitionEnd: I
+					onTransitionEnd: R
 				}, r.a.createElement(a.a, {
 					iconsKey: b,
 					memberIconClassName: f.a.offsetMemberIcon,
@@ -4582,4 +4773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.f943ea8f1666719e00ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.0e59560683ab09199a52.js.map

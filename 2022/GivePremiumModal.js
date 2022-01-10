@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.f9b66b4294b184a07078.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.f80287255374d0f1ce5a.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -11,20 +11,20 @@
 			"use strict";
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/react/index.js"),
-				a = n.n(o),
+				i = n.n(o),
 				c = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/helpers/createEmojiText/index.tsx"),
+				a = n("./src/reddit/helpers/createEmojiText/index.tsx"),
 				r = n("./src/reddit/icons/fonts/Coin/index.tsx"),
 				l = n("./src/reddit/components/CoinBalance/index.m.less"),
 				d = n.n(l);
-			t.a = e => a.a.createElement("div", {
+			t.a = e => i.a.createElement("div", {
 				className: Object(c.a)(d.a.coinBalance, e.className),
 				"data-redditstyle": !0
-			}, Object(i.a)(s.fbt._("Coin balance:: {Coin icon placeholder}{coinBalance}", [s.fbt._param("Coin icon placeholder", ":coin:"), s.fbt._param("coinBalance", e.coinBalance.toLocaleString())], {
+			}, Object(a.a)(s.fbt._("Coin balance:: {Coin icon placeholder}{coinBalance}", [s.fbt._param("Coin icon placeholder", ":coin:"), s.fbt._param("coinBalance", e.coinBalance.toLocaleString())], {
 				hk: "2x0upn"
 			}), {
-				":coin:": a.a.createElement(r.a, null)
-			}), " ", a.a.createElement("a", {
+				":coin:": i.a.createElement(r.a, null)
+			}), " ", i.a.createElement("a", {
 				href: "/coins",
 				onClick: e.onWhatAreCoinsLinkClick,
 				target: "_blank"
@@ -53,9 +53,9 @@
 			n.r(t);
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/react/index.js"),
-				a = n.n(o),
+				i = n.n(o),
 				c = n("./node_modules/react-redux/es/index.js"),
-				i = n("./node_modules/reselect/es/index.js"),
+				a = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/reddit/components/GivePremiumModal/index.m.less"),
 				l = n.n(r),
 				d = n("./src/higherOrderComponents/asModal/index.tsx"),
@@ -66,19 +66,19 @@
 				b = n("./src/lib/constants/index.ts"),
 				x = n("./src/lib/makeActionCreator/index.ts"),
 				f = n("./src/reddit/actions/toaster.ts"),
-				k = n("./src/lib/makeApiRequest/index.ts"),
-				E = n("./src/lib/omitHeaders/index.ts"),
-				g = n("./src/reddit/constants/headers.ts"),
-				v = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
-			var C = async (e, t, n, s, o, a) => {
+				g = n("./src/lib/makeApiRequest/index.ts"),
+				O = n("./src/lib/omitHeaders/index.ts"),
+				E = n("./src/reddit/constants/headers.ts"),
+				k = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
+			var C = async (e, t, n, s, o, i) => {
 				const c = {
 					recipient: n,
 					months: t,
 					is_anonymous: s,
 					message: o,
-					correlation_id: a
+					correlation_id: i
 				};
-				return Object(k.a)(Object(E.a)(e, [g.a]), {
+				return Object(g.a)(Object(O.a)(e, [E.a]), {
 					method: b.jb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: c
@@ -86,15 +86,15 @@
 					...e
 				} : e.error && e.error.type ? e : {
 					...e,
-					error: Object(v.a)(e)
+					error: Object(k.a)(e)
 				})
-			}, O = n("./src/reddit/helpers/correlationIdTracker.ts"), I = n("./src/reddit/models/Toast/index.ts"), _ = n("./src/reddit/selectors/premium.ts"), y = n("./src/reddit/actions/gold/constants.ts");
+			}, v = n("./src/reddit/helpers/correlationIdTracker.ts"), _ = n("./src/reddit/models/Toast/index.ts"), I = n("./src/reddit/selectors/premium.ts"), y = n("./src/reddit/actions/gold/constants.ts");
 			Object(x.a)(y.y), Object(x.a)(y.A), Object(x.a)(y.z), Object(x.a)(y.C);
-			const w = Object(x.a)(y.x),
-				j = Object(x.a)(y.w),
-				N = e => async (t, n) => {
-					await t(j(e));
-					const o = Object(_.a)(n());
+			const j = Object(x.a)(y.x),
+				w = Object(x.a)(y.w),
+				S = e => async (t, n) => {
+					await t(w(e));
+					const o = Object(I.a)(n());
 					if (o) {
 						const n = ((e, t) => {
 							switch (!0) {
@@ -111,36 +111,36 @@
 							}
 						})(e, o);
 						t(Object(f.f)({
-							kind: I.b.Error,
+							kind: _.b.Error,
 							duration: f.a,
 							text: n
 						}))
 					}
-				}, S = Object(x.a)(y.B), M = e => async (t, n) => {
+				}, N = Object(x.a)(y.B), T = e => async (t, n) => {
 					const o = n(),
-						a = Object(_.d)(o);
-					t(S(e));
-					const c = s.fbt._("Success! You’ve given Premium to {recipient username}!", [s.fbt._param("recipient username", `u/${a}`)], {
+						i = Object(I.d)(o);
+					t(N(e));
+					const c = s.fbt._("Success! You’ve given Premium to {recipient username}!", [s.fbt._param("recipient username", `u/${i}`)], {
 						hk: "3cBrLk"
 					});
 					t(Object(f.f)({
-						kind: I.b.SuccessCommunity,
+						kind: _.b.SuccessCommunity,
 						text: c
 					}))
 				};
-			var D = n("./src/reddit/actions/gold/modals.ts"),
-				T = n("./src/reddit/components/CoinBalance/index.tsx"),
-				P = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+			var P = n("./src/reddit/actions/gold/modals.ts"),
+				D = n("./src/reddit/components/CoinBalance/index.tsx"),
+				M = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				R = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
-				L = n("./src/reddit/controls/DropdownSelector/index.tsx"),
-				A = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				B = n("./src/reddit/controls/TextButton/index.tsx"),
-				K = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				U = n("./src/reddit/models/Gold/Premium/index.ts"),
-				F = n("./src/reddit/selectors/user.ts");
+				A = n("./src/reddit/controls/DropdownSelector/index.tsx"),
+				B = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				L = n("./src/reddit/controls/TextButton/index.tsx"),
+				U = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				F = n("./src/reddit/models/Gold/Premium/index.ts"),
+				G = n("./src/reddit/selectors/user.ts");
 
-			function G() {
-				return (G = Object.assign || function(e) {
+			function K() {
+				return (K = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -149,40 +149,40 @@
 				}).apply(this, arguments)
 			}
 			const W = 10,
-				X = Object(i.c)({
-					coinBalance: F.e,
-					isEmployee: F.G,
-					isPending: _.b,
-					recipientName: _.d
+				H = Object(a.c)({
+					coinBalance: G.e,
+					isEmployee: G.G,
+					isPending: I.b,
+					recipientName: I.d
 				}),
-				H = Object(c.b)(X, e => ({
-					closeModal: () => e(Object(D.b)()),
-					onGivePremium: (t, n, s, o, a) => {
-						e(((e, t, n, s) => async (o, a, {
+				V = Object(c.b)(H, e => ({
+					closeModal: () => e(Object(P.b)()),
+					onGivePremium: (t, n, s, o, i) => {
+						e(((e, t, n, s) => async (o, i, {
 							apiContext: c
 						}) => {
-							o(w());
+							o(j());
 							try {
-								const a = await C(c(), t, e, n, s, Object(O.c)(O.a.GiftPremiumFlow));
-								if (a.error) await o(N(a));
+								const i = await C(c(), t, e, n, s, Object(v.c)(v.a.GiftPremiumFlow));
+								if (i.error) await o(S(i));
 								else {
-									const e = a.body;
-									await o(M(e)), Object(O.b)(O.a.GiftPremiumFlow)
+									const e = i.body;
+									await o(T(e)), Object(v.b)(v.a.GiftPremiumFlow)
 								}
-							} catch (i) {
-								await o(N(i))
+							} catch (a) {
+								await o(S(a))
 							}
-						})(t, n, s, o ? a : ""))
+						})(t, n, s, o ? i : ""))
 					}
 				}));
-			class V extends a.a.PureComponent {
+			class X extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						includeMessage: !1,
 						isAnonymous: !0,
 						message: "",
 						messageTypeEventSent: !1,
-						selectedPackage: U.a.PREMIUM_1_MONTH
+						selectedPackage: F.a.PREMIUM_1_MONTH
 					}, this.handleEscapeKey = e => {
 						const {
 							closeModal: t
@@ -196,10 +196,10 @@
 						} = this.props, {
 							includeMessage: s,
 							isAnonymous: o,
-							message: a,
+							message: i,
 							selectedPackage: c
 						} = this.state;
-						n(Object(h.clickConfirmEvent)()), e(t, c.monthsOfPremium, o, s, a)
+						n(Object(h.clickConfirmEvent)()), e(t, c.monthsOfPremium, o, s, i)
 					}, this.onClickClose = () => {
 						const {
 							closeModal: e,
@@ -260,8 +260,8 @@
 						coinBalance: e,
 						isEmployee: t
 					} = this.props;
-					return Object(U.d)(e, t).map(e => ({
-						displayText: Object(U.e)(e),
+					return Object(F.d)(e, t).map(e => ({
+						displayText: Object(F.e)(e),
 						value: e
 					}))
 				}
@@ -273,44 +273,44 @@
 						recipientName: o
 					} = this.props, {
 						includeMessage: c,
-						isAnonymous: i,
+						isAnonymous: a,
 						message: r,
 						selectedPackage: d
-					} = this.state, u = Object(U.e)(d), p = c ? [l.a.messageInputOpen] : "";
-					return a.a.createElement(P.e, {
+					} = this.state, u = Object(F.e)(d), p = c ? [l.a.messageInputOpen] : "";
+					return i.a.createElement(M.e, {
 						className: e
-					}, a.a.createElement(P.i, null, a.a.createElement(K.a, null, a.a.createElement(P.q, null, s.fbt._("Give Premium", null, {
+					}, i.a.createElement(M.i, null, i.a.createElement(U.a, null, i.a.createElement(M.q, null, s.fbt._("Give Premium", null, {
 						hk: "4APAYj"
-					})), a.a.createElement(B.a, {
+					})), i.a.createElement(L.a, {
 						onClick: this.onClickClose
-					}, a.a.createElement(P.b, null)))), a.a.createElement("div", {
+					}, i.a.createElement(M.b, null)))), i.a.createElement("div", {
 						className: l.a.modalMain
-					}, a.a.createElement("span", {
+					}, i.a.createElement("span", {
 						className: l.a.description
 					}, s.fbt._("Use coins to give Premium to {recipient username}:", [s.fbt._param("recipient username", `u/${o}`)], {
 						hk: "1cRm3J"
-					})), a.a.createElement(L.b, {
+					})), i.a.createElement(A.b, {
 						className: l.a.dropdownSelector,
 						displayText: u,
 						options: this.getDropdownMenuItems(),
 						onSelect: this.onClickOption
-					}), a.a.createElement("div", {
+					}), i.a.createElement("div", {
 						className: Object(m.a)(l.a.menuContent, p)
-					}, a.a.createElement("div", null, a.a.createElement(R.a, {
+					}, i.a.createElement("div", null, i.a.createElement(R.a, {
 						className: l.a.checkbox,
-						isSelected: i,
+						isSelected: a,
 						text: s.fbt._("Make my gift anonymous", null, {
 							hk: "2XfgGX"
 						}),
 						onClick: this.handleToggleAnonymous
-					})), a.a.createElement("div", null, a.a.createElement(R.a, {
+					})), i.a.createElement("div", null, i.a.createElement(R.a, {
 						className: l.a.checkbox,
 						isSelected: c,
 						text: s.fbt._("Add a message", null, {
 							hk: "I4chZ"
 						}),
 						onClick: this.handleToggleIncludeMessage
-					})), a.a.createElement(P.t, {
+					})), i.a.createElement(M.t, {
 						className: Object(m.a)(l.a.textArea, p),
 						"data-redditstyle": !0,
 						value: r,
@@ -321,23 +321,23 @@
 						placeholder: s.fbt._("Type here...", null, {
 							hk: "1O7V4Q"
 						})
-					}))), a.a.createElement(P.g, null, a.a.createElement(K.a, {
+					}))), i.a.createElement(M.g, null, i.a.createElement(U.a, {
 						className: l.a.coinCountSection
-					}, a.a.createElement(T.a, {
+					}, i.a.createElement(D.a, {
 						className: l.a.coinCount,
 						coinBalance: t
-					}), a.a.createElement("div", {
+					}), i.a.createElement("div", {
 						className: l.a.actions
-					}, a.a.createElement(P.a, {
+					}, i.a.createElement(M.a, {
 						onClick: this.onClickClose
 					}, s.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), a.a.createElement(P.r, {
+					})), i.a.createElement(M.r, {
 						className: l.a.confirmButton,
 						"data-redditstyle": !0,
 						disabled: n,
 						onClick: this.onGivePremium
-					}, n ? a.a.createElement(A.a, {
+					}, n ? i.a.createElement(B.a, {
 						className: l.a.loadingIcon,
 						sizePx: W
 					}) : s.fbt._("Confirm", null, {
@@ -345,8 +345,8 @@
 					}))))))
 				}
 			}
-			const z = Object(d.a)(Object(u.c)(V));
-			t.default = H(e => a.a.createElement(z, G({}, e, {
+			const z = Object(d.a)(Object(u.c)(X));
+			t.default = V(e => i.a.createElement(z, K({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeModal
 			})))
@@ -364,16 +364,16 @@
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
-				a = n("./src/lib/classNames/index.ts"),
+				i = n("./src/lib/classNames/index.ts"),
 				c = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
-				i = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
+				a = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
 				r = n("./src/reddit/controls/CheckboxWithLabel/index.m.less"),
 				l = n.n(r);
 			t.a = e => o.a.createElement("button", {
 				"aria-checked": e.isSelected,
 				"aria-disabled": e.disabled,
 				autoFocus: e.autoFocus,
-				className: Object(a.a)(l.a.checkboxLabel, e.className),
+				className: Object(i.a)(l.a.checkboxLabel, e.className),
 				disabled: e.disabled,
 				onClick: e.onClick,
 				type: "button",
@@ -381,114 +381,11 @@
 			}, o.a.createElement("span", {
 				tabIndex: -1,
 				className: l.a.labelContent
-			}, e.isSelected ? o.a.createElement(i.a, {
+			}, e.isSelected ? o.a.createElement(a.a, {
 				className: l.a.checkboxSelected
 			}) : o.a.createElement(c.a, {
 				className: l.a.checkbox
 			}), e.text))
-		},
-		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return f
-			}));
-			var s = n("./node_modules/lodash/throttle.js"),
-				o = n.n(s),
-				a = n("./node_modules/react/index.js"),
-				c = n.n(a),
-				i = n("./src/lib/classNames/index.ts"),
-				r = n("./src/reddit/controls/UnstyledInternalLink/index.tsx"),
-				l = n("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"),
-				d = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				m = n("./src/reddit/layout/row/InlineButton/index.tsx"),
-				u = n("./src/reddit/controls/Dropdown/index.m.less"),
-				p = n.n(u),
-				h = n("./src/reddit/controls/Dropdown/row.m.less"),
-				b = n.n(h);
-
-			function x() {
-				return (x = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			class f extends c.a.Component {
-				constructor() {
-					super(...arguments), this.handleMouseMove = o()(() => {
-						const {
-							props: e
-						} = this;
-						e.handleActivateRow && e.handleActivateRow(e.index)
-					}, 500)
-				}
-				render() {
-					const {
-						props: e
-					} = this, t = e.skipRoleAttr ? null : {
-						role: "menuitem"
-					}, n = Object(i.a)(b.a.iconWrapper, e.iconWrapperClassName);
-					return e.href ? c.a.createElement(r.a, x({}, t, {
-						id: e.id,
-						className: e.className,
-						onBlur: e.onBlur,
-						onClick: e.onClick,
-						onMouseDown: e.onMouseDown,
-						onMouseMove: this.handleMouseMove,
-						onKeyDown: e.onKeydown,
-						rel: e.rel,
-						to: e.href,
-						disabled: e.disabled
-					}), e.children && c.a.createElement("span", {
-						className: n
-					}, e.children), c.a.createElement("span", {
-						className: Object(i.a)(b.a.text, e.textClassName)
-					}, e.displayText)) : c.a.createElement(m.a, x({}, t, {
-						id: e.id,
-						className: e.className,
-						disabled: e.disabled,
-						onBlur: e.onBlur,
-						onClick: e.onClick,
-						onKeyDown: e.onKeydown,
-						onMouseDown: e.onMouseDown,
-						onMouseMove: o()(this.handleMouseMove, 500)
-					}), e.children && (e.noIcon ? c.a.createElement("div", null, e.children) : c.a.createElement("span", {
-						className: n
-					}, e.children)), e.displayText && c.a.createElement("span", {
-						className: Object(i.a)(b.a.text, e.textClassName)
-					}, e.displayText), e.showSelectedCheckmark && e.isSelected && c.a.createElement(d.a, {
-						className: b.a.checkmark
-					}), e.showDropdownTriangle && c.a.createElement(l.a, {
-						className: p.a.dropdownTriangle
-					}))
-				}
-			}
-			t.b = ({
-				className: e,
-				...t
-			}) => {
-				const n = Object(i.a)(b.a.row, e, {
-					[b.a.mIsInteractive]: !t.noHover,
-					[b.a.mIsSelected]: t.isSelected,
-					[b.a.topics]: t.isTopicsStyle
-				});
-				return c.a.createElement(f, x({
-					className: n
-				}, t))
-			}
-		},
-		"./src/reddit/controls/Dropdown/row.m.less": function(e, t, n) {
-			e.exports = {
-				iconWrapper: "pthKOcceozMuXLYrLlbL1",
-				text: "_2-cXnP74241WI7fpcpfPmg",
-				row: "_3LwUIE7yX7CZQKmD2L87vf",
-				topics: "kR_ljR-F8vtc-ORj1uipB",
-				checkmark: "_3Iua3qlR9JiTwjjk6NKye1",
-				mIsSelected: "_1IKtbRloF_LV1hPqMzP3MC",
-				mIsInteractive: "_1oYEKCssGFjqxQ9jJMNj5G"
-			}
 		},
 		"./src/reddit/controls/DropdownSelector/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -511,9 +408,9 @@
 			}));
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
-				a = n("./src/reddit/controls/DropdownSelector/index.m.less"),
-				c = n.n(a),
-				i = n("./src/lib/classNames/index.ts"),
+				i = n("./src/reddit/controls/DropdownSelector/index.m.less"),
+				c = n.n(i),
+				a = n("./src/lib/classNames/index.ts"),
 				r = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				l = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				d = n("./src/reddit/icons/fonts/index.tsx");
@@ -587,7 +484,7 @@
 					} = this.props;
 					return e.map((e, s) => o.a.createElement(r.b, {
 						key: s + e.displayText,
-						className: Object(i.a)(c.a.menuOption, {
+						className: Object(a.a)(c.a.menuOption, {
 							[c.a.topics]: n
 						}),
 						noIcon: Boolean(e.icon),
@@ -605,7 +502,7 @@
 						className: t,
 						displayText: n,
 						isCompactStyle: s,
-						isTopicsStyle: a,
+						isTopicsStyle: i,
 						menuItemsClassName: r,
 						name: u,
 						isSaving: p,
@@ -616,15 +513,15 @@
 					return o.a.createElement("div", {
 						ref: this.containerRef,
 						id: this.props.id,
-						className: Object(i.a)(c.a.dropdownMenu, t, {
-							[c.a.topics]: a
+						className: Object(a.a)(c.a.dropdownMenu, t, {
+							[c.a.topics]: i
 						})
 					}, o.a.createElement("button", {
 						onClick: this.handleDropdownClick,
-						className: Object(i.a)(e, c.a.selector, {
+						className: Object(a.a)(e, c.a.selector, {
 							[c.a.compact]: s
 						}, {
-							[c.a.topics]: a
+							[c.a.topics]: i
 						}),
 						name: u,
 						role: "menu",
@@ -642,8 +539,8 @@
 					}) : o.a.createElement(d.a, {
 						name: "caret_down"
 					})), o.a.createElement("div", {
-						className: Object(i.a)(c.a.menuItems, r, {
-							[c.a.topics]: a
+						className: Object(a.a)(c.a.menuItems, r, {
+							[c.a.topics]: i
 						}),
 						onMouseDown: m,
 						ref: this.menuItems
@@ -652,28 +549,15 @@
 			}
 			t.b = u
 		},
-		"./src/reddit/controls/UnstyledInternalLink/index.m.less": function(e, t, n) {
-			e.exports = {
-				unstyledInternalLink: "_39Glgtoolpdt4PIzcnjPSW"
-			}
-		},
-		"./src/reddit/controls/UnstyledInternalLink/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./src/lib/lessComponent.tsx"),
-				o = n("./src/reddit/controls/InternalLink/index.tsx"),
-				a = n("./src/reddit/controls/UnstyledInternalLink/index.m.less"),
-				c = n.n(a);
-			t.a = s.a.wrapped(o.a, "unstyledInternalLink", c.a)
-		},
 		"./src/reddit/helpers/createEmojiText/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return a
+				return i
 			}));
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s);
 
-			function a(e, t) {
+			function i(e, t) {
 				const n = e.toString().split(":");
 				return n.length % 2 == 0 ? e : n.reduce((e, n, s) => (s % 2 == 0 ? e.push(n) : "" === n ? e.push(":") : `:${n}:` in t ? e.push(t[`:${n}:`]) : e.push(`:${n}:`), e), []).map((e, t) => o.a.createElement(o.a.Fragment, {
 					key: t
@@ -708,7 +592,7 @@
 					}
 					return s.I.VALIDATION_ERROR
 				},
-				a = e => {
+				i = e => {
 					const t = e.body;
 					return {
 						type: o(t.json.errors),
@@ -722,15 +606,15 @@
 					const t = e.body;
 					return !e.ok && t && t.json && t.json.errors ? {
 						...e,
-						error: a(e)
+						error: i(e)
 					} : e
 				};
-			t.a = a
+			t.a = i
 		},
 		"./src/reddit/helpers/trackers/givePremium.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "clickGivePremiumEvent", (function() {
-				return i
+				return a
 			})), n.d(t, "viewGivePremiumModalEvent", (function() {
 				return r
 			})), n.d(t, "selectPremiumPackageEvent", (function() {
@@ -748,14 +632,14 @@
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts"),
 				o = n("./src/reddit/helpers/correlationIdTracker.ts"),
-				a = n("./src/reddit/selectors/gild.ts");
+				i = n("./src/reddit/selectors/gild.ts");
 			const c = e => ({
 					...s.o(e),
-					correlationId: Object(a.b)(e) || Object(o.e)(o.a.GiftPremiumFlow, !1),
+					correlationId: Object(i.b)(e) || Object(o.e)(o.a.GiftPremiumFlow, !1),
 					screen: s.ab(e),
 					subreddit: s.jb(e)
 				}),
-				i = () => e => ({
+				a = () => e => ({
 					...c(e),
 					source: "profile",
 					action: "click",
@@ -814,41 +698,19 @@
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
-				a = n("./src/lib/classNames/index.ts"),
+				i = n("./src/lib/classNames/index.ts"),
 				c = n("./src/reddit/constants/colors.ts"),
-				i = n("./src/reddit/icons/fonts/helpers.tsx"),
+				a = n("./src/reddit/icons/fonts/helpers.tsx"),
 				r = n("./src/reddit/icons/fonts/Coin/index.m.less"),
 				l = n.n(r);
 			const d = n("./src/lib/lessComponent.tsx").a.wrapped(e => o.a.createElement("i", {
-				className: Object(a.a)(e.className, Object(i.b)("coins", e.isFilled)),
+				className: Object(i.a)(e.className, Object(a.b)("coins", e.isFilled)),
 				style: {
 					color: e.fillColor || c.a.gold
 				}
 			}), "CoinIcon", l.a);
 			t.a = d
-		},
-		"./src/reddit/icons/fonts/DropdownTriangle/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				o = n.n(s),
-				a = n("./src/reddit/icons/fonts/helpers.tsx");
-			t.a = e => o.a.createElement("i", {
-				className: `${Object(a.b)("caret_down",e.isFilled)} ${e.className}`
-			})
-		},
-		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				o = n.n(s);
-			t.a = e => o.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 22",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, o.a.createElement("g", null, o.a.createElement("path", {
-				d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z",
-				fill: "inherit"
-			})))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.f9b66b4294b184a07078.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.f80287255374d0f1ce5a.js.map

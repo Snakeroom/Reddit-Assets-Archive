@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.ca754b7491a45f081c1f.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.06e795ff46d192c7bda4.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -230,20 +230,20 @@
 					hk: "40XHkp"
 				}),
 				T = Object(o.a)(d.c),
-				C = Object(o.a)(d.b),
-				N = Object(o.a)(d.a),
+				N = Object(o.a)(d.b),
+				C = Object(o.a)(d.a),
 				k = Object(o.a)(d.h),
 				P = (Object(o.a)(d.i), Object(o.a)(d.g), () => async (e, t, {
 					gqlContext: r
 				}) => {
 					const n = t();
 					if (!n.user.account || n.subscriptions.api.fetched) return;
-					e(C());
+					e(N());
 					const s = await Object(p.a)(r());
 					if (s.ok) {
 						const t = j(s.body.data);
 						e(T(t))
-					} else e(N({
+					} else e(C({
 						error: s.error
 					}))
 				}),
@@ -991,8 +991,8 @@
 					isOnlineOverrideValue: x,
 					isOnlineStatusLoadTest: y,
 					isProfileIcon: T,
-					omitResponsivePresenceWrapper: C,
-					onPresenceIndicatorInViewport: N,
+					omitResponsivePresenceWrapper: N,
+					onPresenceIndicatorInViewport: C,
 					shouldShowPresenceIndicator: k,
 					user: P,
 					userName: w,
@@ -1029,7 +1029,7 @@
 				}, []), Y = Object(s.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(l.a)(z, $, Y.current), C ? G : o.a.createElement("div", {
+				return Object(l.a)(z, $, Y.current), N ? G : o.a.createElement("div", {
 					className: Object(n.a)(j.a.userIconWrapper, {
 						[j.a.nftUserIcon]: g,
 						[j.a.hasHeadShotWrapper]: H,
@@ -1043,7 +1043,7 @@
 				}), G, k && (B || E && x) && o.a.createElement(m.default, {
 					showPresence: !0,
 					isHighlighted: I,
-					onceInViewport: N
+					onceInViewport: C
 				}), (k || y) && !E && K && o.a.createElement(d.a, {
 					variables: W,
 					onData: k ? q : v,
@@ -1130,9 +1130,9 @@
 		"./src/reddit/controls/OutboundLink/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return C
-			})), r.d(t, "c", (function() {
 				return N
+			})), r.d(t, "c", (function() {
+				return C
 			}));
 			var n = r("./node_modules/lodash/omit.js"),
 				s = r.n(n),
@@ -1198,7 +1198,7 @@
 						})
 					}(e.href))
 				},
-				C = (e, t, r) => {
+				N = (e, t, r) => {
 					let n, s = null;
 					if (e && t && /^(http|https):\/\/([a-z]+\.)?reddit.com/.test(r)) {
 						s = Object(h.a)(e, t, O.a.Click);
@@ -1219,8 +1219,8 @@
 						metadata: s
 					}
 				},
-				N = (e, t, r) => {
-					const n = C(t, r, e.href);
+				C = (e, t, r) => {
+					const n = N(t, r, e.href);
 					return e.href = n.url, n.metadata
 				},
 				k = ({
@@ -1263,7 +1263,7 @@
 					})) : a.a.createElement("a", E({}, _, {
 						onMouseDown: r => {
 							if (!k(e)) return !(1 !== r.button && 2 !== r.button && !r.ctrlKey) || void T(r.currentTarget, I, v, n);
-							t.current = N(r.currentTarget, p, o)
+							t.current = C(r.currentTarget, p, o)
 						},
 						onClick: () => {
 							f && (k(e) && (h(f, O.a.Click, t.current), Object(g.a)(f, b)), d(f, O.a.Click), r(u, S, c, p))
@@ -1364,7 +1364,7 @@
 			r.d(t, "k", (function() {
 				return T
 			})), r.d(t, "f", (function() {
-				return N
+				return C
 			})), r.d(t, "q", (function() {
 				return k
 			})), r.d(t, "r", (function() {
@@ -1470,7 +1470,7 @@
 							} = e.match, {
 								sort: d = (s.sort ? s.sort : o.W.HOT)
 							} = c, u = i.t, b = a === O.a;
-							Object(x.a)(N({
+							Object(x.a)(C({
 								key: s.listingKey,
 								sort: d,
 								timerType: r,
@@ -1488,7 +1488,7 @@
 							} = e.match, i = s.sort ? s.sort : o.X, {
 								sort: a = i
 							} = c;
-							Object(x.a)(N({
+							Object(x.a)(C({
 								key: s.listingKey,
 								sort: a,
 								timerType: r,
@@ -1610,11 +1610,11 @@
 							b && oe(t, !0)
 					}
 				},
-				C = e => ({
+				N = e => ({
 					...E.o(e),
 					userPreferences: E.rb(e)
 				}),
-				N = ({
+				C = ({
 					key: e,
 					sort: t,
 					timerType: r,
@@ -1633,7 +1633,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(i),
+						...N(i),
 						actionInfo: E.d(i, {
 							success: d,
 							...u
@@ -1664,7 +1664,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(o),
+						...N(o),
 						actionInfo: E.d(o, {
 							success: a
 						}),
@@ -1687,7 +1687,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(o),
+						...N(o),
 						actionInfo: E.d(o, {
 							success: a
 						}),
@@ -1709,7 +1709,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(o),
+						...N(o),
 						actionInfo: E.d(o, {
 							success: a
 						}),
@@ -1726,7 +1726,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(n),
+						...N(n),
 						actionInfo: E.d(n, {
 							success: s
 						}),
@@ -1744,7 +1744,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(c),
+						...N(c),
 						actionInfo: E.d(c, {
 							success: a
 						}),
@@ -1773,7 +1773,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(n),
+						...N(n),
 						actionInfo: E.d(n, {
 							success: s
 						}),
@@ -1789,7 +1789,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...N(e),
 						actionInfo: E.d(e, {
 							success: t
 						})
@@ -1800,7 +1800,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...N(e),
 						actionInfo: E.d(e, {
 							success: t
 						}),
@@ -1815,7 +1815,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...N(e),
 						profile: E.S(e, Object(h.m)(e, r)),
 						subreddit: E.kb(e, Object(I.C)(e, t)),
 						userSubreddit: E.sb(e),
@@ -1827,7 +1827,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...N(e),
 						actionInfo: E.d(e)
 					})
 				},
@@ -1836,7 +1836,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...N(e),
 						actionInfo: E.d(e)
 					})
 				},
@@ -1848,7 +1848,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...N(e),
 						actionInfo: E.d(e, {
 							success: c
 						}),
@@ -1864,7 +1864,7 @@
 					action: "view",
 					noun: "page",
 					correlationId: Object(S.c)(S.a.GoldPayment),
-					...C(r),
+					...N(r),
 					timer: E.pb(e, t),
 					adblock: E.e(r)
 				}),
@@ -1872,14 +1872,14 @@
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...C(e)
+					...N(e)
 				}),
 				q = (e, t) => r => ({
 					source: "premium_marketing",
 					action: "view",
 					noun: "page",
 					correlationId: Object(S.c)(S.a.GoldPayment),
-					...C(r),
+					...N(r),
 					timer: E.pb(e, t),
 					adblock: E.e(r)
 				}),
@@ -1887,20 +1887,20 @@
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...C(e)
+					...N(e)
 				}),
 				K = (e, t) => r => ({
 					source: "appeal",
 					action: "view",
 					noun: "page",
-					...C(r),
+					...N(r),
 					timer: E.pb(e, t)
 				}),
 				V = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...C(r),
+					...N(r),
 					timer: E.pb(e, t)
 				}),
 				$ = () => e => ({
@@ -1908,25 +1908,25 @@
 					action: "view",
 					noun: "screen",
 					subreddit: E.jb(e),
-					...C(e)
+					...N(e)
 				}),
 				Y = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...C(e)
+					...N(e)
 				}),
 				X = () => e => ({
 					action: "view",
 					source: "global",
 					noun: "screen",
-					...C(e)
+					...N(e)
 				}),
 				Q = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...C(r),
+					...N(r),
 					customFeed: E.m(r),
 					subreddit: E.jb(r),
 					timer: E.pb(e, t),
@@ -1937,7 +1937,7 @@
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...C(e)
+					...N(e)
 				}),
 				Z = {
 					source: "global",
@@ -1951,86 +1951,90 @@
 					nsfw: n,
 					searchSwitcherType: s,
 					srShouldBeRestricted: c = !0,
-					originElement: i
+					originElement: i,
+					treatment: a
 				}) => {
-					var a, d, u, l;
-					const b = E.ib(r),
-						m = (null === (d = null === (a = e.platform.currentPage) || void 0 === a ? void 0 : a.urlParams) || void 0 === d ? void 0 : d.subredditName) ? E.lb(e, e.platform.currentPage.urlParams.subredditName) : void 0,
-						f = E.bb(e, t, c, r || void 0);
+					var d, u, l, b;
+					const m = E.ib(r),
+						f = (null === (u = null === (d = e.platform.currentPage) || void 0 === d ? void 0 : d.urlParams) || void 0 === u ? void 0 : u.subredditName) ? E.lb(e, e.platform.currentPage.urlParams.subredditName) : void 0,
+						p = E.bb(e, t, c, r || void 0);
 					return {
-						...f,
-						range: null !== (u = f.range) && void 0 !== u ? u : o.Qb,
-						sort: null !== (l = f.sort) && void 0 !== l ? l : o.Pb,
+						...p,
+						range: null !== (l = p.range) && void 0 !== l ? l : o.Qb,
+						sort: null !== (b = p.sort) && void 0 !== b ? b : o.Pb,
 						originElement: null != i ? i : s,
 						nsfw: n,
+						protocolName: a,
 						queryId: Object(S.c)(S.a.SearchResults),
-						structureType: b,
-						subredditId: t.restrict_sr && (null == m ? void 0 : m.id) ? m.id : void 0,
-						subredditName: t.restrict_sr && (null == m ? void 0 : m.name) ? m.name : void 0
+						structureType: m,
+						subredditId: t.restrict_sr && (null == f ? void 0 : f.id) ? f.id : void 0,
+						subredditName: t.restrict_sr && (null == f ? void 0 : f.name) ? f.name : void 0
 					}
 				},
 				te = e => !!e && {
 					correlationId: Object(S.c)(S.a.SearchResults)
 				},
-				re = (e, t, r, n, s, c, i) => a => {
-					let d = !0;
+				re = (e, t, r, n, s, c, i, a) => d => {
+					let u = !0;
 					if (t.type.indexOf(o.ac.Posts) > -1) {
 						const {
 							api: t
-						} = a.listings.listingOrder;
-						d = d && !t.error[e] && !t.pending[e]
+						} = d.listings.listingOrder;
+						u = u && !t.error[e] && !t.pending[e]
 					}
 					if (t.type.indexOf(o.ac.Subreddits) > -1 || t.type.indexOf(o.ac.Users) > -1) {
 						const {
 							api: t
-						} = a.listings.postOrder;
-						d = d && !t.error[e] && !t.pending[e]
+						} = d.listings.postOrder;
+						u = u && !t.error[e] && !t.pending[e]
 					}
-					const u = E.G(a, s);
+					const l = E.G(d, s);
 					return {
-						...v.c(a, t),
+						...v.c(d, t),
 						...Z,
-						...E.o(a),
-						actionInfo: E.d(a, {
-							success: d,
-							paneName: u
+						...E.o(d),
+						actionInfo: E.d(d, {
+							success: u,
+							paneName: l
 						}),
 						timer: E.pb(r, n),
 						search: ee({
-							state: a,
+							state: d,
 							searchOptions: t,
 							pageLayer: null != s ? s : void 0,
 							nsfw: c,
-							searchSwitcherType: i
+							searchSwitcherType: i,
+							treatment: a
 						}),
 						...te(i),
-						userPreferences: E.db(a)
+						userPreferences: E.db(d)
 					}
 				},
-				ne = (e, t, r, n) => s => ({
-					...E.o(s),
+				ne = (e, t, r, n, s) => o => ({
+					...E.o(o),
 					...Z,
 					actionInfo: {
-						...E.d(s),
+						...E.d(o),
 						pageType: "search_dropdown"
 					},
 					search: ee({
-						state: s,
+						state: o,
 						searchOptions: e,
 						pageLayer: t,
 						nsfw: r,
-						searchSwitcherType: n,
-						originElement: E.a.SearchBar
+						searchSwitcherType: void 0,
+						originElement: E.a.SearchBar,
+						treatment: s
 					}),
 					...te(n),
-					userPreferences: E.db(s)
+					userPreferences: E.db(o)
 				}),
 				se = (e, t) => {
 					Object(x.a)({
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...N(e),
 						actionInfo: E.d(e, {
 							success: t
 						})
@@ -2041,7 +2045,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...C(e),
+						...N(e),
 						actionInfo: E.d(e, {
 							success: t
 						})
@@ -2077,9 +2081,9 @@
 			})), r.d(t, "k", (function() {
 				return y
 			})), r.d(t, "e", (function() {
-				return C
-			})), r.d(t, "o", (function() {
 				return N
+			})), r.d(t, "o", (function() {
+				return C
 			})), r.d(t, "n", (function() {
 				return k
 			})), r.d(t, "b", (function() {
@@ -2269,12 +2273,12 @@
 						discoveryUnit: c ? d.p(c) : null
 					}
 				},
-				y = (e, t, r, n, s, o) => c => C(c, e, t, r, n, s, o),
+				y = (e, t, r, n, s, o) => c => N(c, e, t, r, n, s, o),
 				T = (e, t, r, n) => {
 					var s;
 					return (null === (s = null == n ? void 0 : n.layout) || void 0 === s ? void 0 : s.viewTypeWeb) === i.b.Hero ? 0 : (null == n ? void 0 : n.postOrder) ? n.postOrder.indexOf(t) >= 0 ? n.postOrder.indexOf(t) : null : r ? d.x(e, t, r) : null
 				},
-				C = (e, t, r, n, c, i, l) => {
+				N = (e, t, r, n, c, i, l) => {
 					if (!n) {
 						n = Object(a.H)(e, {
 							postId: i
@@ -2320,7 +2324,7 @@
 						post: i ? d.I(e, i) : void 0
 					}
 				},
-				N = (e, t, r, n, s) => c => ({
+				C = (e, t, r, n, s) => c => ({
 					...x(c, t, r, n, e, s),
 					action: o.c.VIEW
 				}),
@@ -2690,4 +2694,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.ca754b7491a45f081c1f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.06e795ff46d192c7bda4.js.map

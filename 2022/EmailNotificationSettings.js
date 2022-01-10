@@ -1,68 +1,52 @@
-// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.f83154d2edb27e29fc58.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.73bdf3c1b44f6e266363.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailNotificationSettings"], {
-		"./node_modules/lodash/times.js": function(e, t, s) {
-			var n = s("./node_modules/lodash/_baseTimes.js"),
-				i = s("./node_modules/lodash/_castFunction.js"),
-				o = s("./node_modules/lodash/toInteger.js"),
-				a = 9007199254740991,
-				r = 4294967295,
-				d = Math.min;
-			e.exports = function(e, t) {
-				if ((e = o(e)) < 1 || e > a) return [];
-				var s = r,
-					c = d(e, r);
-				t = i(t), e -= r;
-				for (var l = n(c, t); ++s < e;) t(s);
-				return l
-			}
-		},
 		"./src/reddit/components/Settings/Notifications/EmailNotificationSettings/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t);
-			var n = s("./node_modules/react-redux/es/index.js"),
-				i = s("./node_modules/reselect/es/index.js"),
-				o = s("./src/reddit/actions/notificationSettingsLayout/index.ts"),
-				a = s("./src/reddit/models/NotificationSettingsLayout/index.ts"),
+			var i = s("./node_modules/react-redux/es/index.js"),
+				n = s("./node_modules/reselect/es/index.js"),
+				a = s("./src/reddit/actions/notificationSettingsLayout/index.ts"),
+				o = s("./src/reddit/models/NotificationSettingsLayout/index.ts"),
 				r = s("./src/reddit/selectors/user.ts"),
-				d = s("./src/reddit/components/Settings/Notifications/NotificationToggles.tsx");
-			const c = Object(i.c)({
+				c = s("./src/reddit/components/Settings/Notifications/NotificationToggles.tsx");
+			const d = Object(n.c)({
 					hasError: r.q,
 					rows: r.Y,
 					sections: r.Z
 				}),
-				l = Object(n.b)(c, e => ({
-					fetchNotificationSettings: () => e(Object(o.a)(a.a.Email)),
-					updateNotificationPreference: t => e(Object(o.b)(t))
-				}))(d.a);
+				l = Object(i.b)(d, e => ({
+					fetchNotificationSettings: () => e(Object(a.a)(o.a.Email)),
+					updateNotificationPreference: t => e(Object(a.b)(t))
+				}))(c.a);
 			t.default = l
 		},
 		"./src/reddit/components/Settings/Notifications/LoadingSection.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return c
+				return d
 			}));
-			var n = s("./node_modules/lodash/times.js"),
-				i = s.n(n),
-				o = s("./node_modules/react/index.js"),
-				a = s.n(o),
+			var i = s("./node_modules/lodash/times.js"),
+				n = s.n(i),
+				a = s("./node_modules/react/index.js"),
+				o = s.n(a),
 				r = s("./src/reddit/components/Settings/Notifications/index.m.less"),
-				d = s.n(r);
-			const c = ({
+				c = s.n(r);
+			const d = ({
 				rowsCount: e
-			}) => a.a.createElement("div", {
+			}) => o.a.createElement("div", {
 				role: "alert",
 				"aria-busy": "true"
-			}, a.a.createElement("div", {
-				className: d.a.loadingSectionHeader
-			}), i()(e, e => a.a.createElement("div", {
-				className: d.a.loadingToggleWrapper,
+			}, o.a.createElement("div", {
+				className: c.a.loadingSectionHeader
+			}), n()(e, e => o.a.createElement("div", {
+				className: c.a.loadingToggleWrapper,
 				key: e
-			}, a.a.createElement("span", {
-				className: d.a.loadingToggleName
-			}), a.a.createElement("span", {
-				className: d.a.loadingToggleButton
+			}, o.a.createElement("span", {
+				className: c.a.loadingToggleName
+			}), o.a.createElement("span", {
+				className: c.a.loadingToggleButton
 			}))))
 		},
 		"./src/reddit/components/Settings/Notifications/NotificationToggles.tsx": function(e, t, s) {
@@ -70,65 +54,65 @@
 			s.d(t, "a", (function() {
 				return f
 			}));
-			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
-				i = s("./node_modules/react/index.js"),
-				o = s.n(i),
-				a = s("./src/reddit/components/Settings/Notifications/Loader.ts"),
+			var i = s("./node_modules/fbt/lib/FbtPublic.js"),
+				n = s("./node_modules/react/index.js"),
+				a = s.n(n),
+				o = s("./src/reddit/components/Settings/Notifications/Loader.ts"),
 				r = s("./src/reddit/components/Settings/Notifications/LoadingSection.tsx"),
-				d = s("./src/reddit/components/Settings/shared/SectionHeading.tsx"),
-				c = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
+				c = s("./src/reddit/components/Settings/shared/SectionHeading.tsx"),
+				d = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
 				l = s("./src/reddit/helpers/trackers/notifications.ts"),
-				m = s("./src/reddit/hooks/useTracking.ts"),
-				g = s("./src/reddit/components/Settings/Notifications/index.m.less"),
-				u = s.n(g);
+				g = s("./src/reddit/hooks/useTracking.ts"),
+				m = s("./src/reddit/components/Settings/Notifications/index.m.less"),
+				u = s.n(m);
 			const f = e => {
-				Object(i.useEffect)(() => {
+				Object(n.useEffect)(() => {
 					e.fetchNotificationSettings()
 				}, []);
-				const t = Object(m.a)(),
-					s = (s, n, i) => {
-						const a = e.rows && e.rows.byId[s];
-						return a ? o.a.createElement(c.p, {
+				const t = Object(g.a)(),
+					s = (s, i, n) => {
+						const o = e.rows && e.rows.byId[s];
+						return o ? a.a.createElement(d.p, {
 							disabled: e.disabled,
-							forceOn: a.isEnabled && e.disabled,
-							key: a.displayName,
-							label: a.displayName,
-							last: i.length === n + 1,
-							on: a.isEnabled,
+							forceOn: o.isEnabled && e.disabled,
+							key: o.displayName,
+							label: o.displayName,
+							last: n.length === i + 1,
+							on: o.isEnabled,
 							onClick: () => (s => {
 								if (s.messageType) {
-									const n = e.isEmailSettings;
-									t(n ? Object(l.b)(!s.isEnabled, s.messageType) : Object(l.g)(!s.isEnabled, s.messageType))
+									const i = e.isEmailSettings;
+									t(i ? Object(l.b)(!s.isEnabled, s.messageType) : Object(l.g)(!s.isEnabled, s.messageType))
 								}
 								e.updateNotificationPreference({
 									isEnabled: !s.isEnabled,
 									messageType: s.messageType
 								})
-							})(a),
-							subtext: a.description
+							})(o),
+							subtext: o.description
 						}) : null
 					},
-					g = o.a.createElement("span", {
+					m = a.a.createElement("span", {
 						className: "errorMessage",
 						"data-testid": "error-message"
-					}, n.fbt._("There was an issue fetching your notification settings. Please try again later.", null, {
+					}, i.fbt._("There was an issue fetching your notification settings. Please try again later.", null, {
 						hk: "4pmBD4"
 					})),
 					f = e.sections && e.sections.allIds,
 					p = f && f.map(t => {
-						const n = e.sections && e.sections.byId && e.sections.byId[t];
-						if (!n) return null;
-						const i = "Moderation" === n.title;
-						return o.a.createElement("div", {
+						const i = e.sections && e.sections.byId && e.sections.byId[t];
+						if (!i) return null;
+						const n = "Moderation" === i.title;
+						return a.a.createElement("div", {
 							key: t
-						}, o.a.createElement(d.a, null, n.title), n.rows ? n.rows.map(s) : null, i && o.a.createElement("div", {
+						}, a.a.createElement(c.a, null, i.title), i.rows ? i.rows.map(s) : null, n && a.a.createElement("div", {
 							className: u.a.ModPnSettingsSubredditList,
 							"data-testid": "mod-pn-settings-subreddit-list-container"
-						}, o.a.createElement(a.b, {
+						}, a.a.createElement(o.b, {
 							handleModPnSubredditClick: e.handleModPnClick
 						})))
 					});
-				return e.hasError ? g : f && f.length > 0 ? o.a.createElement(o.a.Fragment, null, p) : o.a.createElement(r.a, {
+				return e.hasError ? m : f && f.length > 0 ? a.a.createElement(a.a.Fragment, null, p) : a.a.createElement(r.a, {
 					rowsCount: 5
 				})
 			}
@@ -150,4 +134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.f83154d2edb27e29fc58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.73bdf3c1b44f6e266363.js.map

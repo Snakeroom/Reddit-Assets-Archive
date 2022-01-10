@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.776f8135e21066921f8e.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.641ed2da229f6ba35c3f.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, a) {
@@ -109,18 +109,18 @@
 				h = a("./src/reddit/contexts/PageLayer/index.tsx"),
 				g = a("./src/reddit/controls/Button/index.tsx"),
 				b = a("./src/reddit/controls/LoadingIcon/index.tsx"),
-				x = a("./src/reddit/controls/TextButton/index.tsx"),
+				f = a("./src/reddit/controls/TextButton/index.tsx"),
 				v = a("./src/reddit/endpoints/economics/uploadedAssets.ts"),
-				f = a("./src/reddit/models/Image/index.tsx"),
-				E = a("./src/reddit/models/User/index.ts"),
+				E = a("./src/reddit/models/Image/index.tsx"),
+				x = a("./src/reddit/models/User/index.ts"),
 				_ = a("./src/reddit/selectors/activeModal.ts"),
 				C = a("./src/reddit/selectors/telemetry.ts"),
 				y = a("./src/reddit/selectors/user.ts"),
 				w = a("./src/lib/classNames/index.ts"),
-				k = a("./src/reddit/controls/FileDrop/index.tsx"),
-				N = a("./src/reddit/icons/svgs/Remove/index.tsx"),
-				S = a("./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less"),
-				O = a.n(S);
+				S = a("./src/reddit/controls/FileDrop/index.tsx"),
+				k = a("./src/reddit/icons/svgs/Remove/index.tsx"),
+				N = a("./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less"),
+				O = a.n(N);
 
 			function j() {
 				return r.a.createElement("svg", {
@@ -154,7 +154,7 @@
 					image: t,
 					onChange: a
 				} = e;
-				return r.a.createElement(k.a, {
+				return r.a.createElement(S.a, {
 					onDrop: e => a(e[0]),
 					render: s => r.a.createElement("div", {
 						className: Object(w.a)(O.a.container, {
@@ -167,7 +167,7 @@
 					}), t && r.a.createElement("button", {
 						className: O.a.trashIcon,
 						onClick: () => e.onChange()
-					}, r.a.createElement(N.a, null))), r.a.createElement("label", {
+					}, r.a.createElement(k.a, null))), r.a.createElement("label", {
 						className: O.a.dropTarget
 					}, t ? r.a.createElement("div", {
 						className: O.a.imagePreview
@@ -189,8 +189,8 @@
 				})
 			}
 			var D = a("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
-				T = a("./src/reddit/components/Economics/SubredditPremium/UploadModal/LimitedInput/index.m.less"),
-				P = a.n(T);
+				P = a("./src/reddit/components/Economics/SubredditPremium/UploadModal/LimitedInput/index.m.less"),
+				T = a.n(P);
 
 			function B() {
 				return (B = Object.assign || function(e) {
@@ -201,8 +201,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const L = 1e3;
-			class U extends r.a.Component {
+			const U = 1e3;
+			class A extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						showErrorMessage: !1
@@ -213,7 +213,7 @@
 						this.props.errorMessage && this.setState({
 							showErrorMessage: !0
 						}), this.errorMessageTimeout = void 0
-					}, L)) : this.setState({
+					}, U)) : this.setState({
 						showErrorMessage: !1
 					}))
 				}
@@ -228,23 +228,23 @@
 						...s
 					} = this.props, n = s.maxLength, o = n ? n - (this.props.value + "").length : void 0;
 					return r.a.createElement("div", {
-						className: P.a.container
+						className: T.a.container
 					}, r.a.createElement("div", {
-						className: P.a.labelRow
+						className: T.a.labelRow
 					}, r.a.createElement("div", {
-						className: P.a.label
+						className: T.a.label
 					}, a), void 0 !== o && r.a.createElement("div", {
-						className: P.a.remainingCharacters
+						className: T.a.remainingCharacters
 					}, o)), r.a.createElement(D.c, B({
-						className: Object(w.a)(P.a.input, {
-							[P.a.error]: !!this.props.value && !t
+						className: Object(w.a)(T.a.input, {
+							[T.a.error]: !!this.props.value && !t
 						})
 					}, s)), this.state.showErrorMessage && e && r.a.createElement("div", {
-						className: P.a.errorMessage
+						className: T.a.errorMessage
 					}, e))
 				}
 			}
-			var A = a("./src/reddit/controls/InternalLink/index.tsx"),
+			var L = a("./src/reddit/controls/InternalLink/index.tsx"),
 				R = a("./src/reddit/components/Economics/SubredditPremium/UploadModal/Requirements/index.m.less"),
 				F = a.n(R);
 			const {
@@ -256,30 +256,30 @@
 				return "image/png" === t || "image/x-png" === t || "image/gif" === t
 			}
 
-			function K(e) {
+			function J(e) {
 				return e.height === Z && e.width === Z
 			}
 
-			function J(e) {
+			function K(e) {
 				return e.file.size <= 1024 * q
 			}
 
 			function G(e) {
-				return z(e) && K(e) && J(e)
+				return z(e) && J(e) && K(e)
 			}
-			const W = e => r.a.createElement("li", {
+			const V = e => r.a.createElement("li", {
 				className: Object(w.a)(F.a.requirement, {
 					[F.a.error]: e.isError
 				})
 			}, e.children);
 
-			function V(e) {
+			function W(e) {
 				const {
 					image: t,
 					type: a,
 					username: s,
 					usernameColor: n
-				} = e, o = t && !z(t), i = t && !K(t), l = t && !J(t);
+				} = e, o = t && !z(t), i = t && !J(t), l = t && !K(t);
 				return r.a.createElement("div", {
 					className: F.a.container
 				}, r.a.createElement("div", {
@@ -288,19 +288,19 @@
 					hk: "3zOmGP"
 				})), r.a.createElement("div", {
 					className: F.a.requirements
-				}, r.a.createElement("ul", null, r.a.createElement(W, {
+				}, r.a.createElement("ul", null, r.a.createElement(V, {
 					isError: o
 				}, H._("PNG or GIF with transparency", null, {
 					hk: "4GzqFi"
-				})), r.a.createElement(W, {
+				})), r.a.createElement(V, {
 					isError: i
 				}, H._("Height and width exactly 120×120px", null, {
 					hk: "3WlJuk"
-				})), r.a.createElement(W, {
+				})), r.a.createElement(V, {
 					isError: l
 				}, H._("File size limited to {max-file-size} KB", [H._param("max-file-size", q)], {
 					hk: "2i3L33"
-				})), r.a.createElement(W, null, H._("Add 4px black outline", null, {
+				})), r.a.createElement(V, null, H._("Add 4px black outline", null, {
 					hk: "2mHGJn"
 				}))), r.a.createElement("br", null), a === v.b.Badge && t && n ? r.a.createElement("div", null, r.a.createElement("div", {
 					className: F.a.label
@@ -320,7 +320,7 @@
 					}
 				}, s))) : r.a.createElement(r.a.Fragment, null, H._("Follow this", null, {
 					hk: "3w0v6n"
-				}), " ", r.a.createElement(A.a, {
+				}), " ", r.a.createElement(L.a, {
 					className: F.a.link,
 					to: "https://www.reddit.com/r/FortNiteBR/wiki/badgeemojiguide"
 				}, H._("artistic guide", null, {
@@ -387,7 +387,7 @@
 					className: ae.a.title
 				}, se._("Thanks!", null, {
 					hk: "SMfWZ"
-				})), r.a.createElement(x.a, {
+				})), r.a.createElement(f.a, {
 					onClick: n
 				}, r.a.createElement(m.b, null))), r.a.createElement(m.l, {
 					className: ae.a.modalMain
@@ -442,9 +442,9 @@
 				ge = a("./src/reddit/components/Economics/SubredditPremium/UploadModal/UsernameColor/index.m.less"),
 				be = a.n(ge);
 			const {
-				fbt: xe
+				fbt: fe
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), ve = /^#?[0-9a-f]{6}$/i;
-			class fe extends r.a.Component {
+			class Ee extends r.a.Component {
 				constructor(e) {
 					super(e), this.onInputChange = e => {
 						let t = e.currentTarget.value.toLowerCase();
@@ -461,7 +461,7 @@
 						className: be.a.container
 					}, r.a.createElement("div", {
 						className: be.a.label
-					}, xe._("Username color", null, {
+					}, fe._("Username color", null, {
 						hk: "4EQjHC"
 					})), r.a.createElement("div", {
 						className: be.a.control
@@ -477,7 +477,7 @@
 						className: be.a.textInput,
 						disabled: this.props.disabled,
 						onChange: this.onInputChange,
-						placeholder: this.state.value ? void 0 : xe._("#HEX", null, {
+						placeholder: this.state.value ? void 0 : fe._("#HEX", null, {
 							hk: "4FrAf4"
 						}),
 						value: this.state.value
@@ -486,11 +486,11 @@
 					}, this.props.errorMessage))
 				}
 			}
-			var Ee = a("./src/reddit/components/Economics/SubredditPremium/UploadModal/index.m.less"),
-				_e = a.n(Ee);
+			var xe = a("./src/reddit/components/Economics/SubredditPremium/UploadModal/index.m.less"),
+				_e = a.n(xe);
 			const {
 				fbt: Ce
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), ye = e => !!e.match(/^[a-zA-Z0-9][-'!a-zA-Z0-9_ ]{0,62}[a-zA-Z0-9]$/), we = e => !!e.match(/^[a-zA-Z0-9][a-zA-Z0-9_]{0,18}[a-zA-Z0-9]$/), ke = e => !!e.match(/^[a-zA-Z0-9]{1}.{1,119}$/), Ne = /[^a-z0-9_]/g, Se = .65, Oe = .075;
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), ye = e => !!e.match(/^[a-zA-Z0-9][-'!a-zA-Z0-9_ ]{0,62}[a-zA-Z0-9]$/), we = e => !!e.match(/^[a-zA-Z0-9][a-zA-Z0-9_]{0,18}[a-zA-Z0-9]$/), Se = e => !!e.match(/^[a-zA-Z0-9]{1}.{1,119}$/), ke = /[^a-z0-9_]/g, Ne = .65, Oe = .075;
 			class je extends r.a.Component {
 				constructor(e) {
 					super(e), this.onTypeSelected = e => {
@@ -498,10 +498,10 @@
 							type: e
 						}), e === v.b.Emote && this.onEmoteNameChanged(this.state.name)
 					}, this.onImageChanged = async e => {
-						if (this.state.image && Object(f.d)(this.state.image), !e) return void this.setState({
+						if (this.state.image && Object(E.d)(this.state.image), !e) return void this.setState({
 							image: void 0
 						});
-						const t = await Object(f.f)(e);
+						const t = await Object(E.f)(e);
 						this.setState({
 							image: t
 						}), this.sendEvent("select", {
@@ -515,13 +515,13 @@
 							})
 						})
 					}, this.onEmoteNameChanged = e => {
-						e === ":" + this.state.name && (e = e.slice(1, e.length - 1)), e = e.replace(/[- ]/g, "_").toLowerCase().replace(Ne, ""), this.setState({
+						e === ":" + this.state.name && (e = e.slice(1, e.length - 1)), e = e.replace(/[- ]/g, "_").toLowerCase().replace(ke, ""), this.setState({
 							name: e
 						})
 					}, this.onUsernameColorChanged = e => {
 						let t;
 						const a = Object(s.b)(e);
-						a > Se ? t = Ce._("Darker please", null, {
+						a > Ne ? t = Ce._("Darker please", null, {
 							hk: "3ld2n2"
 						}) : a < Oe && (t = Ce._("Lighter please", null, {
 							hk: "4zH6v4"
@@ -550,7 +550,7 @@
 							})
 						})
 					}, this.closeModal = () => {
-						this.state.image && Object(f.d)(this.state.image), this.props.onClose()
+						this.state.image && Object(E.d)(this.state.image), this.props.onClose()
 					}, this.state = {
 						type: e.uploadAssetType || v.b.Badge,
 						name: "",
@@ -598,7 +598,7 @@
 					} = this.state;
 					switch (r) {
 						case v.b.Badge:
-							if (!ye(s) || !i.length || l || !ke(t + e())) return !1;
+							if (!ye(s) || !i.length || l || !Se(t + e())) return !1;
 							break;
 						case v.b.Emote:
 							if (!we(s)) return !1
@@ -655,8 +655,8 @@
 					});
 					const p = l === v.b.Badge ? ye(o) : we(o),
 						h = p ? void 0 : this.getNameErrorMessage(),
-						f = ke(s + a()),
-						E = f ? void 0 : this.getDescriptionErrorMessage();
+						E = Se(s + a()),
+						x = E ? void 0 : this.getDescriptionErrorMessage();
 					return r.a.createElement(m.e, {
 						className: _e.a.modalBody
 					}, r.a.createElement(m.i, {
@@ -665,7 +665,7 @@
 						className: _e.a.title
 					}, Ce._("Upload Badge or Emoji", null, {
 						hk: "2xnG8y"
-					})), r.a.createElement(x.a, {
+					})), r.a.createElement(f.a, {
 						disabled: c,
 						onClick: this.closeModal
 					}, r.a.createElement(m.b, null))), r.a.createElement(m.l, null, r.a.createElement(me, {
@@ -676,14 +676,14 @@
 					}, r.a.createElement(I, {
 						onChange: this.onImageChanged,
 						image: n
-					}), r.a.createElement(V, {
+					}), r.a.createElement(W, {
 						type: l,
 						image: n,
 						username: e,
 						usernameColor: d
 					})), l === v.b.Badge ? r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: _e.a.nameAndColor
-					}, r.a.createElement(U, {
+					}, r.a.createElement(A, {
 						disabled: c,
 						label: Ce._("Name", null, {
 							hk: "3bae6P"
@@ -698,12 +698,12 @@
 						value: o,
 						isValid: p,
 						errorMessage: h
-					}), r.a.createElement(fe, {
+					}), r.a.createElement(Ee, {
 						disabled: c,
 						onChange: this.onUsernameColorChanged,
 						value: d,
 						errorMessage: u
-					})), r.a.createElement(U, {
+					})), r.a.createElement(A, {
 						disabled: c,
 						label: Ce._("Description", null, {
 							hk: "Kltti"
@@ -716,9 +716,9 @@
 							hk: "k3wL9"
 						}),
 						value: s,
-						isValid: f,
-						errorMessage: E
-					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(U, {
+						isValid: E,
+						errorMessage: x
+					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(A, {
 						disabled: c,
 						label: Ce._("Ticker", null, {
 							hk: "2iIv3r"
@@ -754,7 +754,7 @@
 			const Me = Object(i.c)({
 					currentUsername: e => {
 						const t = Object(y.k)(e);
-						return t && Object(E.e)(t) || ""
+						return t && Object(x.e)(t) || ""
 					},
 					subreddit: h.r,
 					uploadAssetType: e => {
@@ -808,11 +808,11 @@
 			})), a.d(t, "b", (function() {
 				return b
 			})), a.d(t, "i", (function() {
-				return x
+				return f
 			})), a.d(t, "h", (function() {
 				return v
 			})), a.d(t, "g", (function() {
-				return f
+				return E
 			}));
 			var s = a("./src/lib/lessComponent.tsx"),
 				n = a("./src/reddit/controls/Input/ModalInput.tsx"),
@@ -828,112 +828,9 @@
 				h = s.a.wrapped(i.a, "RadioOff", d.a),
 				g = s.a.wrapped(r.a, "Checkbox", d.a),
 				b = s.a.wrapped(o.a, "CheckboxSelected", d.a),
-				x = s.a.textarea("Textarea", d.a),
+				f = s.a.textarea("Textarea", d.a),
 				v = s.a.label("StyledLabel", d.a),
-				f = s.a.input("StyledFileInput", d.a)
-		},
-		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, a) {
-			"use strict";
-			a.d(t, "a", (function() {
-				return x
-			}));
-			var s = a("./node_modules/lodash/throttle.js"),
-				n = a.n(s),
-				r = a("./node_modules/react/index.js"),
-				o = a.n(r),
-				i = a("./src/lib/classNames/index.ts"),
-				l = a("./src/reddit/controls/UnstyledInternalLink/index.tsx"),
-				c = a("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"),
-				d = a("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				m = a("./src/reddit/layout/row/InlineButton/index.tsx"),
-				u = a("./src/reddit/controls/Dropdown/index.m.less"),
-				p = a.n(u),
-				h = a("./src/reddit/controls/Dropdown/row.m.less"),
-				g = a.n(h);
-
-			function b() {
-				return (b = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var a = arguments[t];
-						for (var s in a) Object.prototype.hasOwnProperty.call(a, s) && (e[s] = a[s])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			class x extends o.a.Component {
-				constructor() {
-					super(...arguments), this.handleMouseMove = n()(() => {
-						const {
-							props: e
-						} = this;
-						e.handleActivateRow && e.handleActivateRow(e.index)
-					}, 500)
-				}
-				render() {
-					const {
-						props: e
-					} = this, t = e.skipRoleAttr ? null : {
-						role: "menuitem"
-					}, a = Object(i.a)(g.a.iconWrapper, e.iconWrapperClassName);
-					return e.href ? o.a.createElement(l.a, b({}, t, {
-						id: e.id,
-						className: e.className,
-						onBlur: e.onBlur,
-						onClick: e.onClick,
-						onMouseDown: e.onMouseDown,
-						onMouseMove: this.handleMouseMove,
-						onKeyDown: e.onKeydown,
-						rel: e.rel,
-						to: e.href,
-						disabled: e.disabled
-					}), e.children && o.a.createElement("span", {
-						className: a
-					}, e.children), o.a.createElement("span", {
-						className: Object(i.a)(g.a.text, e.textClassName)
-					}, e.displayText)) : o.a.createElement(m.a, b({}, t, {
-						id: e.id,
-						className: e.className,
-						disabled: e.disabled,
-						onBlur: e.onBlur,
-						onClick: e.onClick,
-						onKeyDown: e.onKeydown,
-						onMouseDown: e.onMouseDown,
-						onMouseMove: n()(this.handleMouseMove, 500)
-					}), e.children && (e.noIcon ? o.a.createElement("div", null, e.children) : o.a.createElement("span", {
-						className: a
-					}, e.children)), e.displayText && o.a.createElement("span", {
-						className: Object(i.a)(g.a.text, e.textClassName)
-					}, e.displayText), e.showSelectedCheckmark && e.isSelected && o.a.createElement(d.a, {
-						className: g.a.checkmark
-					}), e.showDropdownTriangle && o.a.createElement(c.a, {
-						className: p.a.dropdownTriangle
-					}))
-				}
-			}
-			t.b = ({
-				className: e,
-				...t
-			}) => {
-				const a = Object(i.a)(g.a.row, e, {
-					[g.a.mIsInteractive]: !t.noHover,
-					[g.a.mIsSelected]: t.isSelected,
-					[g.a.topics]: t.isTopicsStyle
-				});
-				return o.a.createElement(x, b({
-					className: a
-				}, t))
-			}
-		},
-		"./src/reddit/controls/Dropdown/row.m.less": function(e, t, a) {
-			e.exports = {
-				iconWrapper: "pthKOcceozMuXLYrLlbL1",
-				text: "_2-cXnP74241WI7fpcpfPmg",
-				row: "_3LwUIE7yX7CZQKmD2L87vf",
-				topics: "kR_ljR-F8vtc-ORj1uipB",
-				checkmark: "_3Iua3qlR9JiTwjjk6NKye1",
-				mIsSelected: "_1IKtbRloF_LV1hPqMzP3MC",
-				mIsInteractive: "_1oYEKCssGFjqxQ9jJMNj5G"
-			}
+				E = s.a.input("StyledFileInput", d.a)
 		},
 		"./src/reddit/controls/DropdownSelector/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -1155,19 +1052,6 @@
 				"data-testid": "LoadingIcon"
 			})
 		},
-		"./src/reddit/controls/UnstyledInternalLink/index.m.less": function(e, t, a) {
-			e.exports = {
-				unstyledInternalLink: "_39Glgtoolpdt4PIzcnjPSW"
-			}
-		},
-		"./src/reddit/controls/UnstyledInternalLink/index.tsx": function(e, t, a) {
-			"use strict";
-			var s = a("./src/lib/lessComponent.tsx"),
-				n = a("./src/reddit/controls/InternalLink/index.tsx"),
-				r = a("./src/reddit/controls/UnstyledInternalLink/index.m.less"),
-				o = a.n(r);
-			t.a = s.a.wrapped(n.a, "unstyledInternalLink", o.a)
-		},
 		"./src/reddit/endpoints/economics/uploadedAssets.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "b", (function() {
@@ -1221,29 +1105,7 @@
 				n = a("./node_modules/react-dnd-html5-backend/lib/index.js"),
 				r = a.n(n);
 			t.a = Object(s.DragDropContext)(r.a)
-		},
-		"./src/reddit/icons/fonts/DropdownTriangle/index.tsx": function(e, t, a) {
-			"use strict";
-			var s = a("./node_modules/react/index.js"),
-				n = a.n(s),
-				r = a("./src/reddit/icons/fonts/helpers.tsx");
-			t.a = e => n.a.createElement("i", {
-				className: `${Object(r.b)("caret_down",e.isFilled)} ${e.className}`
-			})
-		},
-		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, a) {
-			"use strict";
-			var s = a("./node_modules/react/index.js"),
-				n = a.n(s);
-			t.a = e => n.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 22",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, n.a.createElement("g", null, n.a.createElement("path", {
-				d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z",
-				fill: "inherit"
-			})))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.776f8135e21066921f8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.641ed2da229f6ba35c3f.js.map

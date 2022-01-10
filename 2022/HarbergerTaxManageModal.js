@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.daca124f84d1467ca3d1.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.a94114aca10a1dcb63e6.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxManageModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1258,30 +1258,6 @@
 				}
 			})
 		},
-		"./src/reddit/featureFlags/component.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return d
-			}));
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a),
-				r = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/reddit/featureFlags/index.ts");
-
-			function d(e, t, n) {
-				const a = Object(o.c)({
-					featureEnabled: t => i.d[e](t)
-				});
-				return Object(r.b)(a)(e => {
-					const {
-						featureEnabled: a,
-						...r
-					} = e, o = r;
-					return a ? s.a.createElement(t, o) : void 0 !== n ? s.a.createElement(n, o) : null
-				})
-			}
-		},
 		"./src/reddit/helpers/dragDropContext/index.ts": function(e, t, n) {
 			"use strict";
 			var a = n("./node_modules/react-dnd/lib/index.js"),
@@ -1412,4 +1388,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.daca124f84d1467ca3d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.a94114aca10a1dcb63e6.js.map

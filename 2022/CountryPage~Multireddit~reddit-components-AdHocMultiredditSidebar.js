@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.01ea74df5f2754fd330f.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.bf9d0595c784391bf676.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -44,9 +44,9 @@
 			i.r(t), i.d(t, "morePostsFailed", (function() {
 				return R
 			})), i.d(t, "morePostsLoaded", (function() {
-				return L
-			})), i.d(t, "morePostsPending", (function() {
 				return q
+			})), i.d(t, "morePostsPending", (function() {
+				return L
 			})), i.d(t, "moreOfMyMultiRequested", (function() {
 				return U
 			})), i.d(t, "myMultiredditsPending", (function() {
@@ -74,9 +74,9 @@
 			})), i.d(t, "duplicateRequested", (function() {
 				return Y
 			})), i.d(t, "addSubredditPending", (function() {
-				return J
-			})), i.d(t, "addSubredditSuccess", (function() {
 				return $
+			})), i.d(t, "addSubredditSuccess", (function() {
+				return J
 			})), i.d(t, "addSubredditFailure", (function() {
 				return ee
 			})), i.d(t, "addSubredditRequested", (function() {
@@ -197,8 +197,8 @@
 				T = i("./src/reddit/helpers/getTimeSortForListing/index.ts"),
 				F = i("./src/reddit/actions/multireddit/constants.ts");
 			const R = Object(c.a)(F.q),
-				L = Object(c.a)(F.r),
-				q = Object(c.a)(F.s),
+				q = Object(c.a)(F.r),
+				L = Object(c.a)(F.s),
 				U = e => async (t, i, s) => {
 					const {
 						gqlContext: r
@@ -215,7 +215,7 @@
 						x = c.listings.postOrder.fetchedTokens,
 						y = x[p] && x[p][h.token] || !1;
 					if (f || y) return;
-					t(q({
+					t(L({
 						key: p,
 						fetchedToken: h.token
 					}));
@@ -234,7 +234,7 @@
 							data: v
 						} = C.body,
 						_ = Object(w.a)(v);
-					C.ok && v && v.multireddit ? t(L({
+					C.ok && v && v.multireddit ? t(q({
 						fetchedToken: h.token,
 						key: p,
 						meta: c.meta,
@@ -390,7 +390,7 @@
 							hk: "4bzN2D"
 						})
 					}))
-				}, J = Object(c.a)(F.b), $ = Object(c.a)(F.c), ee = Object(c.a)(F.a), te = ({
+				}, $ = Object(c.a)(F.b), J = Object(c.a)(F.c), ee = Object(c.a)(F.a), te = ({
 					communityInfo: e,
 					identifier: t,
 					multiredditNames: i
@@ -400,7 +400,7 @@
 					const c = n(),
 						l = Object(D.k)(c);
 					if (!l || c.multireddits.api.addSubreddit.pending) return;
-					r(J({
+					r($({
 						name: t.name
 					}));
 					const {
@@ -428,7 +428,7 @@
 							}, [s.fbt._param("communityName", `${"subreddit"===t.type?a.d.subreddit:a.d.profile}${t.name}`), s.fbt._plural(i.length, "number")], {
 								hk: "9EXsM"
 							})
-						})), await r($({
+						})), await r(J({
 							communityInfo: e,
 							id: n,
 							multipaths: d,
@@ -1047,8 +1047,8 @@
 				F = i("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				R = i("./src/reddit/components/RawHTMLDisplay/index.tsx");
 
-			function L() {
-				return (L = Object.assign || function(e) {
+			function q() {
+				return (q = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var i = arguments[t];
 						for (var s in i) Object.prototype.hasOwnProperty.call(i, s) && (e[s] = i[s])
@@ -1056,7 +1056,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var q = Object(T.a)(e => o.a.createElement(R.a, L({
+			var L = Object(T.a)(e => o.a.createElement(R.a, q({
 					style: {
 						color: Object(F.a)(e).post
 					}
@@ -1074,20 +1074,20 @@
 				Z = H.a.div("SidebarTitle", G.a),
 				X = H.a.wrapped(N.a, "SidebarFlair", G.a),
 				Y = H.a.div("Attributon", G.a),
-				J = ({
+				$ = ({
 					children: e,
 					className: t
-				}) => o.a.createElement(q, {
+				}) => o.a.createElement(L, {
 					className: t,
 					html: e
 				}),
-				$ = Object(M.a)(({
+				J = Object(M.a)(({
 					children: e,
 					onSeeMoreDetails: t,
 					size: i
 				}) => {
 					const r = !i || "number" != typeof i.height || i.height > 152;
-					return o.a.createElement("div", null, o.a.createElement(J, {
+					return o.a.createElement("div", null, o.a.createElement($, {
 						className: Object(u.a)(G.a.FadingDescription, {
 							[G.a.shouldFade]: r
 						})
@@ -1119,9 +1119,9 @@
 						hk: "1AxWQt"
 					}), "· ", o.a.createElement(D.d, {
 						seconds: i.created
-					}))) : () => null, m = Object(A.f)(i) && i.description ? () => o.a.createElement(a, null, d ? o.a.createElement($, {
+					}))) : () => null, m = Object(A.f)(i) && i.description ? () => o.a.createElement(a, null, d ? o.a.createElement(J, {
 						onSeeMoreDetails: r
-					}, i.description) : o.a.createElement(q, {
+					}, i.description) : o.a.createElement(L, {
 						html: i.description
 					})) : () => null, b = [...i.subredditIds && i.subredditIds.map(e => ({
 						id: e,
@@ -1448,7 +1448,7 @@
 					recommendationsError: e => e.multireddits.api.recommendations.error,
 					recommendationsPending: e => e.multireddits.api.recommendations.pending
 				});
-			class Le extends o.a.Component {
+			class qe extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						memoizedRecommendations: this.props.recommendations,
@@ -1509,7 +1509,7 @@
 					})
 				}
 			}
-			var qe = Object(a.b)(Re, (e, t) => ({
+			var Le = Object(a.b)(Re, (e, t) => ({
 					addSubredditRequested: i => {
 						Object(A.f)(t.multireddit) && e(Object(oe.addSubredditRequested)({
 							identifier: {
@@ -1527,7 +1527,7 @@
 							toExcludeNames: i
 						}))
 					}
-				}))(Le),
+				}))(qe),
 				Ue = i("./src/reddit/components/SidebarContainer/index.tsx"),
 				Be = i("./src/reddit/components/SidebarSectionHeader/index.m.less"),
 				Ae = i.n(Be),
@@ -1550,7 +1550,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Je = Object(l.a)(e => o.a.createElement(m.e, {
+			const $e = Object(l.a)(e => o.a.createElement(m.e, {
 					className: Xe.a.modalContainer
 				}, !e.shouldHideHeader && o.a.createElement(m.i, null, o.a.createElement(Ve.a, null, o.a.createElement(m.q, null, e.multireddit.displayText), o.a.createElement(He.a, {
 					onClick: e.onCloseModal
@@ -1562,7 +1562,7 @@
 					className: Xe.a.closeBtn,
 					onClick: e.onCloseModal
 				}, o.a.createElement(m.b, null)))),
-				$e = e => o.a.createElement(Je, Ye({}, e, {
+				Je = e => o.a.createElement($e, Ye({}, e, {
 					overlayCustomStyles: {
 						zIndex: Ge.b
 					},
@@ -1633,12 +1633,12 @@
 						subredditCategory: r,
 						onSeeMoreDetails: this.openModal,
 						onSubredditClick: this.props.trackSubredditClicked
-					}), this.state.showModal ? o.a.createElement($e, {
+					}), this.state.showModal ? o.a.createElement(Je, {
 						multireddit: i,
 						subredditCategory: r,
 						onCloseModal: this.closeModal,
 						shouldHideHeader: !!r
-					}) : null, n && o.a.createElement(qe, {
+					}) : null, n && o.a.createElement(Le, {
 						multireddit: i,
 						multiUsername: s
 					}), o.a.createElement(We.a, null))
@@ -1786,34 +1786,6 @@
 				component: "_1X2juHHajDXGs8oboBFTY1",
 				headerStyles: "ySyP3_8M4Wb9GDZa0U3rV"
 			}
-		},
-		"./src/reddit/controls/MetaSeparator/index.m.less": function(e, t, i) {
-			e.exports = {
-				unstyledMetaSeparator: "_3LS4zudUBagjFS7HjWJYxo",
-				metaSeparator: "_37gsGHa8DMRAxBmQS-Ppg8"
-			}
-		},
-		"./src/reddit/controls/MetaSeparator/index.tsx": function(e, t, i) {
-			"use strict";
-			i.d(t, "a", (function() {
-				return a
-			}));
-			var s = i("./node_modules/react/index.js"),
-				r = i.n(s),
-				n = i("./src/lib/classNames/index.ts"),
-				d = i("./src/reddit/controls/MetaSeparator/index.m.less"),
-				o = i.n(d);
-			const a = e => r.a.createElement("span", {
-				className: Object(n.a)(o.a.unstyledMetaSeparator, e.className),
-				role: "presentation"
-			}, e.isSmall ? "·" : "•");
-			t.b = ({
-				className: e,
-				isSmall: t
-			}) => r.a.createElement(a, {
-				className: Object(n.a)(o.a.metaSeparator, e),
-				isSmall: t
-			})
 		},
 		"./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/DropdownEntry/index.m.less": function(e, t, i) {
 			e.exports = {
@@ -2479,4 +2451,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.01ea74df5f2754fd330f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.bf9d0595c784391bf676.js.map

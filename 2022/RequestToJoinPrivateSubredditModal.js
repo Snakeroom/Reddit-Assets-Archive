@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.35387bf312875c0c45bb.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.80aeb9f8c4cd917a06d2.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RequestToJoinPrivateSubredditModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestToJoinPrivateSubredditModal/index.m.less": function(e, t, a) {
@@ -21,11 +21,11 @@
 			"use strict";
 			a.r(t);
 			var n = a("./node_modules/fbt/lib/FbtPublic.js"),
-				s = a("./node_modules/react/index.js"),
-				r = a.n(s),
+				r = a("./node_modules/react/index.js"),
+				s = a.n(r),
 				i = a("./node_modules/react-redux/es/index.js"),
-				l = a("./src/higherOrderComponents/asModal/index.tsx"),
-				o = a("./src/reddit/actions/modal.ts"),
+				o = a("./src/higherOrderComponents/asModal/index.tsx"),
+				l = a("./src/reddit/actions/modal.ts"),
 				d = a("./src/reddit/actions/subreddit.ts"),
 				c = a("./src/reddit/actions/toaster.ts"),
 				u = a("./src/reddit/components/ModalStyledComponents/index.tsx"),
@@ -36,62 +36,62 @@
 				p = a("./src/reddit/hooks/useTracking.ts"),
 				f = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				v = a("./src/reddit/models/SubredditRestrictions/index.ts"),
-				C = a("./src/reddit/models/Toast/index.ts"),
-				S = a("./src/reddit/selectors/platform.ts"),
-				h = a("./src/reddit/components/ContributorRequestFlow/RequestToJoinPrivateSubredditModal/index.m.less"),
-				E = a.n(h),
+				S = a("./src/reddit/models/Toast/index.ts"),
+				C = a("./src/reddit/selectors/platform.ts"),
+				E = a("./src/reddit/components/ContributorRequestFlow/RequestToJoinPrivateSubredditModal/index.m.less"),
+				h = a.n(E),
 				j = a("./src/lib/lessComponent.tsx");
-			const R = j.a.wrapped(u.e, "ModalBody", E.a),
-				k = j.a.wrapped(u.b, "CloseIcon", E.a);
-			t.default = j.a.wrapped(Object(l.a)((function() {
+			const R = j.a.wrapped(u.e, "ModalBody", h.a),
+				k = j.a.wrapped(u.b, "CloseIcon", h.a);
+			t.default = j.a.wrapped(Object(o.a)((function() {
 				const e = Object(p.a)(),
 					t = Object(i.d)(),
-					[a, l] = Object(s.useState)(() => n.fbt._("I would like to join this community.", null, {
+					[a, o] = Object(r.useState)(() => n.fbt._("I would like to join this community.", null, {
 						hk: "1Cgi1B"
 					})),
-					h = Object(i.e)(S.d);
-				if (!h) return null;
-				const j = () => t(Object(o.i)(b.a.CONTRIBUTOR_REQUEST_PRIVATE_SUREDDIT)),
-					q = n.fbt._("Request to join r/{subreddit} sent", [n.fbt._param("subreddit", h)], {
+					E = Object(i.e)(C.d);
+				if (!E) return null;
+				const j = () => t(Object(l.i)(b.a.CONTRIBUTOR_REQUEST_PRIVATE_SUREDDIT)),
+					q = n.fbt._("Request to join r/{subreddit} sent", [n.fbt._param("subreddit", E)], {
 						hk: "3Ro26f"
 					}),
-					w = Object(c.e)(q, C.b.SuccessCommunity);
-				return r.a.createElement(R, {
-					className: E.a.requestModal
-				}, r.a.createElement(u.i, null, r.a.createElement(f.a, null, r.a.createElement("div", null, r.a.createElement("div", {
-					className: E.a.ModalTitle
+					y = Object(c.e)(q, S.b.SuccessCommunity);
+				return s.a.createElement(R, {
+					className: h.a.requestModal
+				}, s.a.createElement(u.i, null, s.a.createElement(f.a, null, s.a.createElement("div", null, s.a.createElement("div", {
+					className: h.a.ModalTitle
 				}, n.fbt._("Request to join", null, {
 					hk: "2VKavP"
-				})), r.a.createElement("div", {
-					className: E.a.Title
-				}, r.a.createElement("span", null, `r/${h}`))), r.a.createElement(_.a, {
+				})), s.a.createElement("div", {
+					className: h.a.Title
+				}, s.a.createElement("span", null, `r/${E}`))), s.a.createElement(_.a, {
 					onClick: j
-				}, r.a.createElement(k, null)))), r.a.createElement(u.l, null, r.a.createElement("div", {
-					className: E.a.Description
+				}, s.a.createElement(k, null)))), s.a.createElement(u.l, null, s.a.createElement("div", {
+					className: h.a.Description
 				}, n.fbt._("Write a short message to the moderators explaining why you want to join.", null, {
 					hk: "4uvu3g"
-				})), r.a.createElement(m.c, {
-					className: E.a.textarea,
+				})), s.a.createElement(m.c, {
+					className: h.a.textarea,
 					label: n.fbt._("Message to moderators", null, {
 						hk: "4sX9bQ"
 					}),
 					value: a,
-					onChange: e => l(e.target.value),
+					onChange: e => o(e.target.value),
 					state: void 0,
 					required: !0
-				})), r.a.createElement(u.g, null, r.a.createElement(u.a, {
+				})), s.a.createElement(u.g, null, s.a.createElement(u.a, {
 					"data-redditstyle": !0,
 					onClick: j
 				}, n.fbt._("Cancel", null, {
 					hk: "2TSLl5"
-				})), r.a.createElement(u.r, {
+				})), s.a.createElement(u.r, {
 					onClick: () => {
-						e(Object(x.b)(v.b.ContentGate)), t(Object(d.n)(`r/${h}`, a, v.e.View)), j(), t(Object(c.f)(w))
+						e(Object(x.b)(v.b.ContentGate)), t(Object(d.n)(`r/${E}`, a, v.e.View)), j(), t(Object(c.f)(y))
 					}
 				}, n.fbt._("Send Request", null, {
 					hk: "1UMaEr"
 				}))))
-			})), "Component", E.a)
+			})), "Component", h.a)
 		},
 		"./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -121,14 +121,14 @@
 			})), a.d(t, "b", (function() {
 				return v
 			})), a.d(t, "c", (function() {
-				return C
+				return S
 			}));
 			var n = a("./node_modules/react/index.js"),
-				s = a.n(n),
-				r = a("./src/lib/classNames/index.ts"),
+				r = a.n(n),
+				s = a("./src/lib/classNames/index.ts"),
 				i = a("./src/lib/lessComponent.tsx"),
-				l = a("./src/reddit/controls/Input/index.tsx"),
-				o = a("./src/reddit/icons/svgs/Checkmark/index.tsx"),
+				o = a("./src/reddit/controls/Input/index.tsx"),
+				l = a("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				d = a("./src/reddit/components/StructuredStyles/Forms/LabeledControl/index.m.less"),
 				c = a.n(d);
 
@@ -151,8 +151,8 @@
 			function(e) {
 				e[e.GreyFields = 1] = "GreyFields", e[e.WhiteFields = 2] = "WhiteFields"
 			}(p || (p = {}));
-			const f = e => s.a.createElement("div", {
-					className: Object(r.a)(e.isRequired && c.a.required, e.className, {
+			const f = e => r.a.createElement("div", {
+					className: Object(s.a)(e.isRequired && c.a.required, e.className, {
 						[c.a.container]: !e.isTextarea,
 						[c.a.textareaContainer]: !!e.isTextarea,
 						...!!e.isTextarea && {
@@ -161,38 +161,38 @@
 							[c.a.mWhiteField]: e.backgroundColorState === p.WhiteFields
 						}
 					})
-				}, s.a.createElement("label", {
-					className: Object(r.a)({
+				}, r.a.createElement("label", {
+					className: Object(s.a)({
 						[c.a.field]: !e.isTextarea,
 						[c.a.textareaField]: !!e.isTextarea
 					})
-				}, e.children, e.label && s.a.createElement("span", {
+				}, e.children, e.label && r.a.createElement("span", {
 					className: c.a.label
-				}, e.label), !!e.state && s.a.createElement(m, {
-					className: Object(r.a)({
+				}, e.label), !!e.state && r.a.createElement(m, {
+					className: Object(s.a)({
 						[c.a.mValid]: e.state === x.Valid,
 						[c.a.mInvalid]: e.state === x.Invalid
 					})
-				}, e.state === x.Valid && s.a.createElement(o.a, null), e.state === x.Invalid && s.a.createElement(_, null, "!")))),
+				}, e.state === x.Valid && r.a.createElement(l.a, null), e.state === x.Invalid && r.a.createElement(_, null, "!")))),
 				v = e => {
 					const {
 						backgroundColorState: t,
 						className: a,
 						inputRef: n,
 						isRequired: i,
-						label: o,
+						label: l,
 						onKeyDown: d,
 						state: m,
 						...b
 					} = e;
-					return s.a.createElement(f, {
+					return r.a.createElement(f, {
 						backgroundColorState: t,
 						className: a,
 						isRequired: i,
-						label: o,
+						label: l,
 						state: m
-					}, s.a.createElement(l.a, u({}, b, {
-						className: Object(r.a)(c.a.input, c.a.control, {
+					}, r.a.createElement(o.a, u({}, b, {
+						className: Object(s.a)(c.a.input, c.a.control, {
 							[c.a.hasState]: !!e.state
 						}),
 						"data-empty": !e.value,
@@ -200,77 +200,64 @@
 						onKeyDown: d
 					})))
 				},
-				C = e => {
+				S = e => {
 					const {
 						backgroundColorState: t,
 						className: a,
 						inputRef: n,
 						isRequired: i,
-						label: l,
-						onKeyDown: o,
+						label: o,
+						onKeyDown: l,
 						state: d,
 						...m
 					} = e;
-					return s.a.createElement(f, {
+					return r.a.createElement(f, {
 						backgroundColorState: t,
 						className: a,
 						isRequired: i,
-						label: l,
+						label: o,
 						state: d,
 						isTextarea: !0
-					}, s.a.createElement(b, u({}, m, {
-						className: Object(r.a)({
+					}, r.a.createElement(b, u({}, m, {
+						className: Object(s.a)({
 							[c.a.mWhiteField]: e.backgroundColorState === p.WhiteFields
 						}),
 						"data-empty": !e.value,
 						innerRef: n,
-						onKeyDown: o
+						onKeyDown: l
 					})))
 				}
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, t, a) {
 			"use strict";
 			var n = a("./src/lib/lessComponent.tsx"),
-				s = a("./src/reddit/controls/Input/index.m.less"),
-				r = a.n(s);
-			t.a = n.a.input("input", r.a)
+				r = a("./src/reddit/controls/Input/index.m.less"),
+				s = a.n(r);
+			t.a = n.a.input("input", s.a)
 		},
 		"./src/reddit/helpers/trackers/privateCommunity.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return s
-			})), a.d(t, "b", (function() {
 				return r
+			})), a.d(t, "b", (function() {
+				return s
 			}));
 			var n = a("./src/reddit/selectors/telemetry.ts");
-			const s = e => t => ({
+			const r = e => t => ({
 					...n.o(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_button",
 					subreddit: n.jb(t)
 				}),
-				r = e => t => ({
+				s = e => t => ({
 					...n.o(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_submit",
 					subreddit: n.jb(t)
 				})
-		},
-		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, a) {
-			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				s = a.n(n);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 22",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", null, s.a.createElement("path", {
-				d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z",
-				fill: "inherit"
-			})))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.35387bf312875c0c45bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.80aeb9f8c4cd917a06d2.js.map

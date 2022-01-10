@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.20e1217f6bbaffd9edcc.js
-// Retrieved at 1/10/2022, 3:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.51be654344e665e9b4f7.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3327,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("155789"),
+				buildNumber: Object(r.c)("155794"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1641844186"),
+				buildTimestamp: Object(r.b)("1641846150"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5908,14 +5908,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c111797f3bd05fab460b9fab6907f8f653c1fdd67-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c6da73a4a85f1a7b279ae49267d62995488b8a584-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "111797f3bd05fab460b9fab6907f8f653c1fdd67-production",
+						release: "6da73a4a85f1a7b279ae49267d62995488b8a584-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6432,7 +6432,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "111797f3bd05fab460b9fab6907f8f653c1fdd67-production",
+						releaseClient: "6da73a4a85f1a7b279ae49267d62995488b8a584-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -18554,13 +18554,14 @@
 						authors: !e[n.ac.Users] && void 0,
 						communities: !e[n.ac.Subreddits] && void 0,
 						posts: !e[n.ac.Posts] && void 0
-					};
+					},
+					be = {};
 				if (R(t)) {
 					const R = null !== (d = null === (o = null === (s = null === (r = null === (i = t.data) || void 0 === i ? void 0 : i.search) || void 0 === r ? void 0 : r.general) || void 0 === s ? void 0 : s.posts) || void 0 === o ? void 0 : o.edges) && void 0 !== d ? d : [],
-						be = null !== (w = null === (g = null === (u = null === (l = null === (a = t.data) || void 0 === a ? void 0 : a.search) || void 0 === l ? void 0 : l.general) || void 0 === u ? void 0 : u.communities) || void 0 === g ? void 0 : g.edges) && void 0 !== w ? w : [],
-						ge = null !== (N = null === (C = null === (F = null === (I = null === (O = t.data) || void 0 === O ? void 0 : O.search) || void 0 === I ? void 0 : I.general) || void 0 === F ? void 0 : F.authors) || void 0 === C ? void 0 : C.edges) && void 0 !== N ? N : [],
-						we = null === (D = null === (x = null === (A = null === (j = t.data.search) || void 0 === j ? void 0 : j.general) || void 0 === A ? void 0 : A.posts) || void 0 === x ? void 0 : x.feedMetadata) || void 0 === D ? void 0 : D.treatment,
-						ve = null !== (L = null === (P = t.data) || void 0 === P ? void 0 : P.subredditsInfoByNames) && void 0 !== L ? L : [];
+						ge = null !== (w = null === (g = null === (u = null === (l = null === (a = t.data) || void 0 === a ? void 0 : a.search) || void 0 === l ? void 0 : l.general) || void 0 === u ? void 0 : u.communities) || void 0 === g ? void 0 : g.edges) && void 0 !== w ? w : [],
+						we = null !== (N = null === (C = null === (F = null === (I = null === (O = t.data) || void 0 === O ? void 0 : O.search) || void 0 === I ? void 0 : I.general) || void 0 === F ? void 0 : F.authors) || void 0 === C ? void 0 : C.edges) && void 0 !== N ? N : [],
+						ve = null === (D = null === (x = null === (A = null === (j = t.data.search) || void 0 === j ? void 0 : j.general) || void 0 === A ? void 0 : A.posts) || void 0 === x ? void 0 : x.feedMetadata) || void 0 === D ? void 0 : D.treatment,
+						ye = null !== (L = null === (P = t.data) || void 0 === P ? void 0 : P.subredditsInfoByNames) && void 0 !== L ? L : [];
 					[pe, te] = function(e) {
 						var t;
 						let i, n = {};
@@ -18580,7 +18581,7 @@
 							}
 						}
 						return [n, i]
-					}(ve), he = we === y.o.PostSearchTrending || we === y.o.PostSearchPromotedTrend ? v.c.Trending : v.c.Default, [ie, ne, re, se, oe] = function(e, t) {
+					}(ye), he = ve === y.o.PostSearchTrending || ve === y.o.PostSearchPromotedTrend ? v.c.Trending : v.c.Default, [ie, ne, re, se, oe] = function(e, t) {
 						var i, n, r;
 						const s = {},
 							o = {},
@@ -18608,7 +18609,7 @@
 								}
 						}
 						return [s, d, o, l, a]
-					}(R, we), [de, ae, le] = function(e, t, i) {
+					}(R, ve), [de, ae, le] = function(e, t, i) {
 						var n, r, s;
 						const o = [],
 							d = {};
@@ -18617,7 +18618,7 @@
 							type: "subreddit"
 						}), d[null === (r = null == a ? void 0 : a.node) || void 0 === r ? void 0 : r.id] = Object(p.a)(a.node)[null === (s = null == a ? void 0 : a.node) || void 0 === s ? void 0 : s.id]);
 						return i && (t[i.id] = Object(h.a)(i), d[i.id] = Object(p.a)(i)[i.id]), [t, o, d]
-					}(be, re, te), [ce, ue, _e] = function(e) {
+					}(ge, re, te), [ce, ue, _e] = function(e) {
 						var t, i, n, r;
 						const s = [],
 							o = {},
@@ -18627,7 +18628,7 @@
 							type: "profile"
 						}), d[null === (i = null == a ? void 0 : a.node) || void 0 === i ? void 0 : i.profile.id] = _(a.node)[null === (r = null === (n = null == a ? void 0 : a.node) || void 0 === n ? void 0 : n.profile) || void 0 === r ? void 0 : r.id]);
 						return [s, o, d]
-					}(ge), me = {
+					}(we), me = {
 						authors: null !== (U = null === (M = null === (B = null === (k = t.data.search) || void 0 === k ? void 0 : k.general) || void 0 === B ? void 0 : B.authors) || void 0 === M ? void 0 : M.pageInfo.endCursor) && void 0 !== U ? U : null,
 						communities: null !== (H = null === (V = null === (q = null === (G = t.data.search) || void 0 === G ? void 0 : G.general) || void 0 === q ? void 0 : q.communities) || void 0 === V ? void 0 : V.pageInfo.endCursor) && void 0 !== H ? H : null,
 						listings: null,
@@ -18636,6 +18637,8 @@
 						authors: e[n.ac.Users] ? null !== (null === (Q = null === ($ = t.data.search) || void 0 === $ ? void 0 : $.general) || void 0 === Q ? void 0 : Q.authors) : void 0,
 						communities: e[n.ac.Subreddits] ? null !== (null === (X = null === (J = t.data.search) || void 0 === J ? void 0 : J.general) || void 0 === X ? void 0 : X.communities) : void 0,
 						posts: e[n.ac.Posts] ? null !== (null === (ee = null === (Z = t.data.search) || void 0 === Z ? void 0 : Z.general) || void 0 === ee ? void 0 : ee.posts) : void 0
+					}, be = {
+						[n.Zb.Posts]: null != ve ? ve : void 0
 					}
 				}
 				return {
@@ -18654,6 +18657,7 @@
 					subredditAboutInfo: le,
 					success: fe,
 					tokens: me,
+					treatment: be,
 					viewTreatment: he
 				}
 			}
@@ -31913,7 +31917,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!i.m[t]
 					},
-					importAsync: () => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("Governance~ModListing~Reddit~Subreddit"), i.e("Frontpage~ModListing"), i.e("ModListing")]).then(i.bind(null, "./src/reddit/pages/ModListing/index.tsx")),
+					importAsync: () => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"), i.e("Governance~ModListing~Reddit~Subreddit"), i.e("ModListing")]).then(i.bind(null, "./src/reddit/pages/ModListing/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -31932,7 +31936,7 @@
 				p = d()(m.map(e => Object.keys(a.W).map(t => `${e}/:sort(${a.W[t]})?`))),
 				h = e => e.startsWith(_),
 				f = {
-					action: Object(l.a)(() => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("Governance~ModListing~Reddit~Subreddit"), i.e("Frontpage~ModListing"), i.e("ModListing")]).then(i.bind(null, "./src/reddit/actions/pages/modListing/index.ts")).then(e => e.modListingPageRequested)),
+					action: Object(l.a)(() => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"), i.e("Governance~ModListing~Reddit~Subreddit"), i.e("ModListing")]).then(i.bind(null, "./src/reddit/actions/pages/modListing/index.ts")).then(e => e.modListingPageRequested)),
 					chunk: a.s.MOD_LISTING,
 					component: u,
 					exact: !0,
@@ -31975,7 +31979,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!i.m[t]
 					},
-					importAsync: () => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("vendors~PostCreation~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), i.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), i.e("Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Governance~ModListing~Reddit~Subreddit"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/pages/Subreddit/index.tsx")),
+					importAsync: () => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("vendors~PostCreation~Reddit~Subreddit"), i.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), i.e("PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3"), i.e("Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Governance~ModListing~Reddit~Subreddit"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/pages/Subreddit/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -31994,7 +31998,7 @@
 			_ = Object(d.b)(_);
 			const m = _,
 				p = {
-					action: Object(a.a)(() => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("vendors~PostCreation~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), i.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), i.e("Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Governance~ModListing~Reddit~Subreddit"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/actions/pages/subreddit.ts")).then(e => e.subredditRequested)),
+					action: Object(a.a)(() => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("vendors~PostCreation~Reddit~Subreddit"), i.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), i.e("PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3"), i.e("Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("Governance~ModListing~Reddit~Subreddit"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/actions/pages/subreddit.ts")).then(e => e.subredditRequested)),
 					chunk: o.s.SUBREDDIT,
 					component: l,
 					exact: !0,
@@ -37407,22 +37411,24 @@
 				return _
 			})), i.d(t, "n", (function() {
 				return m
-			})), i.d(t, "q", (function() {
-				return p
-			})), i.d(t, "k", (function() {
-				return h
 			})), i.d(t, "p", (function() {
+				return p
+			})), i.d(t, "r", (function() {
+				return h
+			})), i.d(t, "k", (function() {
 				return f
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "q", (function() {
 				return b
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "l", (function() {
 				return g
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "m", (function() {
 				return w
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "h", (function() {
 				return v
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "g", (function() {
 				return y
+			})), i.d(t, "i", (function() {
+				return E
 			}));
 			var n = i("./src/reddit/selectors/posts.ts");
 			const r = [],
@@ -37453,7 +37459,10 @@
 				m = (e, {
 					listingKey: t
 				}) => e.listings.authorOrder.loadMore[t],
-				p = e => {
+				p = (e, {
+					listingKey: t
+				}) => e.listings.postOrder.treatment[t],
+				h = e => {
 					const t = e.search.searchQuery;
 					if (!t) return r;
 					const i = e.search.typeahead.idsByQuery[t.toLowerCase()];
@@ -37463,16 +37472,16 @@
 						n.push(e.search.typeahead.models[t])
 					}), n
 				},
-				h = e => e.search.typeahead.idsByQuery,
-				f = e => {
+				f = e => e.search.typeahead.idsByQuery,
+				b = e => {
 					const t = e.listings.activeKey;
 					return e.search.viewTreatment[t]
 				},
-				b = e => e.search.isDropdownOpen,
-				g = e => e.search.isSubredditSearchEnabled,
-				w = (e, t) => !!o(e, t) || !s(e, t) && u(e, t).length > 0,
-				v = (e, t) => !!a(e, t) || !d(e, t) && c(e, t).length > 0,
-				y = (e, t) => !!((e, {
+				g = e => e.search.isDropdownOpen,
+				w = e => e.search.isSubredditSearchEnabled,
+				v = (e, t) => !!o(e, t) || !s(e, t) && u(e, t).length > 0,
+				y = (e, t) => !!a(e, t) || !d(e, t) && c(e, t).length > 0,
+				E = (e, t) => !!((e, {
 					listingKey: t
 				}) => e.listings.postOrder.api.pending[t])(e, t) || Object(n.O)(e, t).length > 0
 		},
@@ -44749,6 +44758,7 @@
 				origin_element: e.originElement,
 				origin_page_type: e.originPageType,
 				post_flair_name: e.postFlairName,
+				protocolName: e.protocolName,
 				query: e.query,
 				query_id: e.queryId,
 				range: e.range,
@@ -45243,4 +45253,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.20e1217f6bbaffd9edcc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.51be654344e665e9b4f7.js.map

@@ -1,75 +1,35 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.9fd112dc60848c615caa.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.7d6b36c785d4b5befa46.js
+// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
-			var r = n("./node_modules/lodash/toString.js"),
-				a = 0;
+			var a = n("./node_modules/lodash/toString.js"),
+				r = 0;
 			e.exports = function(e) {
-				var t = ++a;
-				return r(e) + t
+				var t = ++r;
+				return a(e) + t
 			}
 		},
 		"./src/lib/currency/cleanNumber/index.ts": function(e, t, n) {
 			"use strict";
 
-			function r(e) {
+			function a(e) {
 				return e.replace(/[^0-9.]/g, "").replace(/^0+/, "") || "0"
 			}
 			n.d(t, "a", (function() {
-				return r
+				return a
 			}))
-		},
-		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return i
-			})), n.d(t, "b", (function() {
-				return c
-			})), n.d(t, "c", (function() {
-				return l
-			})), n.d(t, "d", (function() {
-				return d
-			})), n.d(t, "e", (function() {
-				return u
-			})), n.d(t, "f", (function() {
-				return m
-			})), n.d(t, "g", (function() {
-				return p
-			})), n.d(t, "h", (function() {
-				return h
-			})), n.d(t, "i", (function() {
-				return b
-			})), n.d(t, "j", (function() {
-				return x
-			}));
-			var r = n("./src/lib/makeActionCreator/index.ts"),
-				a = n("./src/reddit/actions/modal.ts"),
-				s = n("./src/reddit/constants/modals.ts"),
-				o = n("./src/reddit/actions/economics/subredditPremium/constants.ts");
-			const i = Object(r.a)(o.a),
-				c = Object(r.a)(o.b),
-				l = Object(r.a)(o.c),
-				d = Object(r.a)(o.d),
-				u = Object(r.a)(o.e),
-				m = Object(r.a)(o.f),
-				p = Object(r.a)(o.g),
-				h = Object(r.a)(o.h),
-				b = Object(r.a)(o.i),
-				x = e => Object(a.h)(s.a.SUBREDDIT_PREMIUM_UPLOAD_MODAL, {
-					uploadAssetType: e
-				})
 		},
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
 				return s
 			})), n.d(t, "e", (function() {
-				return o
-			})), n.d(t, "a", (function() {
-				return i
-			})), n.d(t, "b", (function() {
 				return c
+			})), n.d(t, "a", (function() {
+				return o
+			})), n.d(t, "b", (function() {
+				return i
 			})), n.d(t, "d", (function() {
 				return l
 			})), n.d(t, "f", (function() {
@@ -83,197 +43,18 @@
 			})), n.d(t, "j", (function() {
 				return h
 			}));
-			var r = n("./src/lib/makeActionCreator/index.ts"),
-				a = n("./src/reddit/actions/harbergerTax/constants.ts");
-			const s = Object(r.a)(a.c),
-				o = Object(r.a)(a.e),
-				i = Object(r.a)(a.a),
-				c = Object(r.a)(a.b),
-				l = Object(r.a)(a.d),
-				d = Object(r.a)(a.f),
-				u = Object(r.a)(a.g),
-				m = Object(r.a)(a.h),
-				p = Object(r.a)(a.i),
-				h = Object(r.a)(a.j)
-		},
-		"./src/reddit/components/Badges/UserDisplay/index.m.less": function(e, t, n) {
-			e.exports = {
-				addCustom: "LalRrQILNjt65y-p-QlWH",
-				addCustomLink: "_3J2-xIxxxP9ISzeLWCOUVc",
-				badgeHovercard: "FyLpt0kIWG1bTDWZ8HIL1",
-				image: "_2ntJEAiwKXBGvxrJiqxx_2",
-				wrapper: "_1SqBC7PQ5dMOdF0MhPIkA8"
-			}
-		},
-		"./src/reddit/components/Badges/UserDisplay/index.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "b", (function() {
-				return C
-			})), n.d(t, "c", (function() {
-				return P
-			})), n.d(t, "a", (function() {
-				return B
-			}));
-			var r = n("./node_modules/react/index.js"),
-				a = n.n(r),
-				s = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/config.ts"),
-				c = n("./src/lib/classNames/index.ts"),
-				l = n("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
-				d = n("./src/reddit/actions/tooltip.ts"),
-				u = n("./src/higherOrderComponents/makeAsync.tsx");
-			var m = Object(u.a)({
-					ErrorComponent: () => null,
-					LoadingComponent: () => null,
-					getComponent: () => n.e("SubredditPremiumBadgeHovercardTooltip").then(n.bind(null, "./src/reddit/components/Economics/SubredditPremium/Badges/HoverCard/tooltip.tsx")).then(e => e.default)
-				}),
-				p = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				h = n("./src/reddit/featureFlags/index.ts"),
-				b = n("./src/reddit/helpers/economics/sortBadges.ts"),
-				x = n("./src/reddit/icons/svgs/AddSquare/index.tsx"),
-				f = n("./src/reddit/models/Badge/index.ts");
-			var v = Object(u.a)({
-					ErrorComponent: () => null,
-					LoadingComponent: () => null,
-					getComponent: () => n.e("CustomBadgeHovercardTooltip").then(n.bind(null, "./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/tooltip.tsx")).then(e => e.default)
-				}),
-				g = n("./src/reddit/components/Badges/UserDisplay/index.m.less"),
-				E = n.n(g);
-
-			function y() {
-				return (y = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const N = "add-custom-badge-tooltip",
-				w = 100,
-				j = 2 * w,
-				O = 24;
-			class C extends a.a.Component {
-				constructor() {
-					super(...arguments), this.mouseOverTooltip = void 0, this.enterTimeout = void 0, this.exitTimeout = void 0, this.handleMouseEnter = e => {
-						this.mouseOverTooltip && this.mouseOverTooltip !== e ? this.props.onShowTooltip(e) : (clearTimeout(this.enterTimeout), this.enterTimeout = window.setTimeout(() => {
-							this.mouseOverTooltip === e && this.props.onShowTooltip(e)
-						}, w)), this.mouseOverTooltip = e
-					}, this.handleMouseLeave = () => {
-						clearTimeout(this.exitTimeout), clearTimeout(this.enterTimeout), this.mouseOverTooltip = void 0, this.exitTimeout = window.setTimeout(() => {
-							this.mouseOverTooltip || (clearTimeout(this.enterTimeout), this.props.onHideTooltip())
-						}, j)
-					}
-				}
-				render() {
-					const {
-						badges: e
-					} = this.props;
-					if (this.props.usePlaceholder && !e.length) return a.a.createElement("img", {
-						className: Object(c.a)(E.a.image, this.props.className),
-						src: `${i.a.assetPath}/img/badges/placeholder.png`
-					});
-					const t = `${N}-${this.props.uniqueIdentifier}`,
-						n = this.props.badgeSize || O;
-					return a.a.createElement(r.Fragment, null, this.props.showAddCustom && a.a.createElement("div", {
-						className: E.a.wrapper,
-						id: t,
-						onMouseEnter: () => this.handleMouseEnter(t),
-						onMouseLeave: () => this.handleMouseLeave()
-					}, a.a.createElement("button", {
-						className: E.a.addCustomLink,
-						onClick: this.props.onOpenUploadDialog
-					}, a.a.createElement(x.a, {
-						className: E.a.addCustom
-					})), a.a.createElement(v, {
-						className: E.a.badgeHovercard,
-						subredditId: this.props.subredditId,
-						targetPosition: ["left", "bottom"],
-						tooltipId: t,
-						tooltipPosition: ["left", "top"],
-						onHideTooltip: () => this.props.onHideTooltip()
-					})), Object(b.a)(e).map(e => {
-						const t = Object(f.d)(n, n, e),
-							s = `badges-display-${e.id}-${this.props.uniqueIdentifier}`;
-						return a.a.createElement(r.Fragment, {
-							key: `badges-fragement-${e.id}`
-						}, a.a.createElement("div", {
-							className: Object(c.a)(E.a.wrapper, this.props.className),
-							key: `wrapper-${e.id}`,
-							onMouseEnter: () => this.handleMouseEnter(s),
-							onMouseLeave: () => this.handleMouseLeave()
-						}, a.a.createElement("img", {
-							className: E.a.image,
-							id: s,
-							key: e.id,
-							src: t.url2x,
-							srcSet: `${t.url}, ${t.url2x} 2x`,
-							style: {
-								height: `${n}px`
-							}
-						}), this.props.useHovercard ? a.a.createElement(m, {
-							badge: e,
-							correlationId: this.props.correlationId,
-							className: E.a.badgeHovercard,
-							key: `tooltip-${e.id}`,
-							subredditId: this.props.subredditId,
-							targetPosition: ["left", "bottom"],
-							tooltipId: s,
-							tooltipPosition: ["left", "top"],
-							userId: "userId" in this.props ? this.props.userId : void 0
-						}) : a.a.createElement(p.c, {
-							caretOnTop: !0,
-							key: `tooltip-${e.id}`,
-							tooltipId: s,
-							text: e.title
-						})))
-					}))
-				}
-			}
-			const _ = [],
-				I = Object(o.c)({
-					badgeIds: (e, {
-						subredditId: t,
-						userId: n
-					}) => {
-						var r;
-						return (null === (r = e.users.appliedBadges[n]) || void 0 === r ? void 0 : r[t]) || _
-					},
-					allBadges: e => e.badges.models,
-					useHovercard: h.d.spSpecialMemberships
-				}),
-				T = Object(o.c)({
-					badgeIds: (e, {
-						subredditId: t
-					}) => {
-						var n;
-						const r = e.user.account;
-						return r && (null === (n = e.users.appliedBadges[r.id]) || void 0 === n ? void 0 : n[t]) || _
-					},
-					allBadges: e => e.badges.models,
-					useHovercard: h.d.spSpecialMemberships
-				}),
-				k = e => ({
-					onShowTooltip: t => e(Object(d.f)({
-						tooltipId: t
-					})),
-					onHideTooltip: () => e(Object(d.i)()),
-					onOpenUploadDialog: () => e(Object(l.j)())
-				});
-
-			function M(e) {
-				const {
-					badgeIds: t,
-					allBadges: n,
-					...r
-				} = e, s = t.map(e => n[e]).filter(Boolean);
-				return a.a.createElement(C, y({
-					badges: s
-				}, r))
-			}
-			const P = Object(s.b)(I, k)(M),
-				B = Object(s.b)(T, k)(M)
+			var a = n("./src/lib/makeActionCreator/index.ts"),
+				r = n("./src/reddit/actions/harbergerTax/constants.ts");
+			const s = Object(a.a)(r.c),
+				c = Object(a.a)(r.e),
+				o = Object(a.a)(r.a),
+				i = Object(a.a)(r.b),
+				l = Object(a.a)(r.d),
+				d = Object(a.a)(r.f),
+				u = Object(a.a)(r.g),
+				m = Object(a.a)(r.h),
+				p = Object(a.a)(r.i),
+				h = Object(a.a)(r.j)
 		},
 		"./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Controls/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -346,12 +127,12 @@
 		"./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t);
-			var r = n("./node_modules/react/index.js"),
-				a = n.n(r),
+			var a = n("./node_modules/react/index.js"),
+				r = n.n(a),
 				s = n("./src/higherOrderComponents/asModal/index.tsx"),
-				o = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/components/Governance/ModalTitle/index.tsx"),
-				c = n("./src/reddit/featureFlags/component.tsx"),
+				c = n("./src/lib/classNames/index.ts"),
+				o = n("./src/reddit/components/Governance/ModalTitle/index.tsx"),
+				i = n("./src/reddit/featureFlags/component.tsx"),
 				l = n("./src/reddit/selectors/crypto/points.ts"),
 				d = n("./node_modules/react-redux/es/index.js"),
 				u = n("./src/lib/prettyPrintNumber/index.ts"),
@@ -362,9 +143,9 @@
 				x = n("./src/reddit/selectors/gov.ts"),
 				f = n("./node_modules/reselect/es/index.js"),
 				v = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Controls/index.m.less"),
-				g = n.n(v);
+				E = n.n(v);
 			const {
-				fbt: E
+				fbt: g
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const y = Object(f.c)({
 				cost: x.b,
@@ -379,46 +160,46 @@
 					className: t,
 					cost: n,
 					currentOwnerId: s,
-					currentOwnerName: i,
-					pointsDetails: c,
+					currentOwnerName: o,
+					pointsDetails: i,
 					subredditId: l
 				} = e, d = n || "0";
-				return a.a.createElement("div", {
-					className: Object(o.a)(g.a.container, t)
-				}, a.a.createElement("div", {
-					className: g.a.owner
-				}, s && a.a.createElement(r.Fragment, null, a.a.createElement("div", null, E._("Owned by", null, {
+				return r.a.createElement("div", {
+					className: Object(c.a)(E.a.container, t)
+				}, r.a.createElement("div", {
+					className: E.a.owner
+				}, s && r.a.createElement(a.Fragment, null, r.a.createElement("div", null, g._("Owned by", null, {
 					hk: "yKSxo"
-				})), a.a.createElement("div", {
-					className: g.a.ownerText
-				}, a.a.createElement(m.c, {
-					className: g.a.ownerBadge,
+				})), r.a.createElement("div", {
+					className: E.a.ownerText
+				}, r.a.createElement(m.c, {
+					className: E.a.ownerBadge,
 					subredditId: l,
 					uniqueIdentifier: "banner-purchase-modal",
 					userId: s
-				}), a.a.createElement("span", {
-					className: g.a.username
-				}, i)))), a.a.createElement("div", {
-					className: g.a.purchase
-				}, a.a.createElement("div", {
-					className: g.a.cost
-				}, a.a.createElement(p.a, {
-					className: g.a.token,
+				}), r.a.createElement("span", {
+					className: E.a.username
+				}, o)))), r.a.createElement("div", {
+					className: E.a.purchase
+				}, r.a.createElement("div", {
+					className: E.a.cost
+				}, r.a.createElement(p.a, {
+					className: E.a.token,
 					subredditId: l
-				}), Object(u.a)(Object(b.b)(d, null == c ? void 0 : c.displayConversion))), a.a.createElement(h.l, {
+				}), Object(u.a)(Object(b.b)(d, null == i ? void 0 : i.displayConversion))), r.a.createElement(h.l, {
 					onClick: e.onPurchase
-				}, E._("Proceed to Purchase", null, {
+				}, g._("Proceed to Purchase", null, {
 					hk: "21Rymw"
 				}))))
 			}));
 
 			function w(e) {
-				return a.a.createElement("svg", {
+				return r.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 32 29",
 					fill: "none",
 					xmlns: "http://www.w3.org/2000/svg"
-				}, a.a.createElement("rect", {
+				}, r.a.createElement("rect", {
 					x: "0.5",
 					y: "0.5",
 					width: "31",
@@ -427,34 +208,34 @@
 					fill: "#5E75C6",
 					"fill-opacity": "0.2",
 					stroke: "#5E75C6"
-				}), a.a.createElement("path", {
+				}), r.a.createElement("path", {
 					d: "M14 19H18V29H14V19Z",
 					fill: "#1A1A1B"
-				}), a.a.createElement("rect", {
+				}), r.a.createElement("rect", {
 					x: "3.5",
 					y: "19",
 					width: "25",
 					height: "1",
 					fill: "#1A1A1B"
-				}), a.a.createElement("circle", {
+				}), r.a.createElement("circle", {
 					cx: "28.5",
 					cy: "19.5",
 					r: "1",
 					fill: "white",
 					stroke: "#1A1A1B"
-				}), a.a.createElement("circle", {
+				}), r.a.createElement("circle", {
 					cx: "3.5",
 					cy: "19.5",
 					r: "1",
 					fill: "white",
 					stroke: "#1A1A1B"
-				}), a.a.createElement("circle", {
+				}), r.a.createElement("circle", {
 					cx: "10.5",
 					cy: "19.5",
 					r: "1",
 					fill: "white",
 					stroke: "#1A1A1B"
-				}), a.a.createElement("circle", {
+				}), r.a.createElement("circle", {
 					cx: "21.5",
 					cy: "19.5",
 					r: "1",
@@ -463,20 +244,20 @@
 				}))
 			}
 
-			function j(e) {
-				return a.a.createElement("svg", {
+			function _(e) {
+				return r.a.createElement("svg", {
 					className: e.className,
 					viewBox: "0 0 27 32",
 					fill: "none",
 					xmlns: "http://www.w3.org/2000/svg"
-				}, a.a.createElement("rect", {
+				}, r.a.createElement("rect", {
 					x: "0.5",
 					y: "0.5",
 					width: "23",
 					height: "29",
 					rx: "1.5",
 					fill: "white"
-				}), a.a.createElement("rect", {
+				}), r.a.createElement("rect", {
 					x: "0.5",
 					y: "0.5",
 					width: "23",
@@ -484,54 +265,54 @@
 					rx: "1.5",
 					fill: "#5E75C6",
 					"fill-opacity": "0.03"
-				}), a.a.createElement("rect", {
+				}), r.a.createElement("rect", {
 					x: "0.5",
 					y: "0.5",
 					width: "23",
 					height: "29",
 					rx: "1.5",
 					stroke: "#5E75C6"
-				}), a.a.createElement("circle", {
+				}), r.a.createElement("circle", {
 					cx: "20.5",
 					cy: "25.5",
 					r: "6",
 					fill: "white",
 					stroke: "#5E75C6"
-				}), a.a.createElement("circle", {
+				}), r.a.createElement("circle", {
 					cx: "18.5",
 					cy: "23.5",
 					r: "1",
 					stroke: "#1A1A1B"
-				}), a.a.createElement("circle", {
+				}), r.a.createElement("circle", {
 					cx: "22.5",
 					cy: "27.5",
 					r: "1",
 					stroke: "#1A1A1B"
-				}), a.a.createElement("path", {
+				}), r.a.createElement("path", {
 					d: "M18.084 28.2227C17.9308 28.4524 17.9929 28.7628 18.2226 28.916C18.4524 29.0692 18.7628 29.0071 18.916 28.7773L18.084 28.2227ZM22.916 22.7774C23.0692 22.5476 23.0071 22.2372 22.7773 22.084C22.5476 21.9308 22.2372 21.9929 22.084 22.2226L22.916 22.7774ZM18.916 28.7773L22.916 22.7774L22.084 22.2226L18.084 28.2227L18.916 28.7773Z",
 					fill: "#1A1A1B"
-				}), a.a.createElement("path", {
+				}), r.a.createElement("path", {
 					d: "M20 10H4.00005L4 9C4 9 8.08371 8.76179 12.5 7.5C17.1261 6.17825 20 4 20 4V10Z",
 					fill: "#5E75C6"
-				}), a.a.createElement("path", {
+				}), r.a.createElement("path", {
 					d: "M4.5 12.5V14M4.5 15.5V14M6.5 12.5V14M6.5 15.5V14M4.5 14H6.5",
 					stroke: "#1A1A1B",
 					"stroke-linecap": "round"
-				}), a.a.createElement("rect", {
+				}), r.a.createElement("rect", {
 					x: "9",
 					y: "13",
 					width: "10",
 					height: "1",
 					rx: "0.5",
 					fill: "#5E75C6"
-				}), a.a.createElement("rect", {
+				}), r.a.createElement("rect", {
 					x: "9",
 					y: "15",
 					width: "10",
 					height: "1",
 					rx: "0.5",
 					fill: "#5E75C6"
-				}), a.a.createElement("rect", {
+				}), r.a.createElement("rect", {
 					opacity: "0.4",
 					x: "4",
 					y: "18",
@@ -539,7 +320,7 @@
 					height: "1",
 					rx: "0.5",
 					fill: "#5E75C6"
-				}), a.a.createElement("rect", {
+				}), r.a.createElement("rect", {
 					opacity: "0.4",
 					x: "4",
 					y: "20",
@@ -547,7 +328,7 @@
 					height: "1",
 					rx: "0.5",
 					fill: "#5E75C6"
-				}), a.a.createElement("rect", {
+				}), r.a.createElement("rect", {
 					opacity: "0.4",
 					x: "4",
 					y: "22",
@@ -557,12 +338,12 @@
 					fill: "#5E75C6"
 				}))
 			}
-			var O = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Upsell/index.m.less"),
-				C = n.n(O);
+			var j = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Upsell/index.m.less"),
+				C = n.n(j);
 			const {
-				fbt: _
+				fbt: O
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			const I = Object(f.c)({
+			const k = Object(f.c)({
 				tokenName: (e, {
 					subredditId: t
 				}) => {
@@ -570,109 +351,109 @@
 					return (null === (n = Object(l.b)(e, t)) || void 0 === n ? void 0 : n.name) || ""
 				}
 			});
-			var T = Object(d.b)(I)((function(e) {
+			var I = Object(d.b)(k)((function(e) {
 					const {
 						className: t,
 						subredditName: n,
-						tokenName: r
+						tokenName: a
 					} = e, s = `${e.taxRate}%`;
-					return a.a.createElement("div", {
-						className: Object(o.a)(C.a.container, t)
-					}, a.a.createElement("div", {
+					return r.a.createElement("div", {
+						className: Object(c.a)(C.a.container, t)
+					}, r.a.createElement("div", {
 						className: C.a.section
-					}, a.a.createElement("div", {
+					}, r.a.createElement("div", {
 						className: C.a.image
-					}, a.a.createElement(w, {
+					}, r.a.createElement(w, {
 						className: C.a.bannerImage
-					})), a.a.createElement("div", {
+					})), r.a.createElement("div", {
 						className: C.a.textSection
-					}, a.a.createElement("div", {
+					}, r.a.createElement("div", {
 						className: C.a.title
-					}, _._("Buy r/{communityName} 's Top Banner", [_._param("communityName", n)], {
+					}, O._("Buy r/{communityName} 's Top Banner", [O._param("communityName", n)], {
 						hk: "2hXSyn"
-					})), a.a.createElement("div", {
+					})), r.a.createElement("div", {
 						className: C.a.text
-					}, _._("Set the image to whatever you want", null, {
+					}, O._("Set the image to whatever you want", null, {
 						hk: "45iv1p"
-					})))), a.a.createElement("div", {
+					})))), r.a.createElement("div", {
 						className: C.a.section
-					}, a.a.createElement("div", {
+					}, r.a.createElement("div", {
 						className: C.a.image
-					}, a.a.createElement(j, {
+					}, r.a.createElement(_, {
 						className: C.a.taxImage
-					})), a.a.createElement("div", {
+					})), r.a.createElement("div", {
 						className: C.a.textSection
-					}, a.a.createElement("div", {
+					}, r.a.createElement("div", {
 						className: C.a.title
-					}, _._("Harberger Tax", null, {
+					}, O._("Harberger Tax", null, {
 						hk: "1RH5bF"
-					})), a.a.createElement("ul", {
+					})), r.a.createElement("ul", {
 						className: C.a.text
-					}, a.a.createElement("li", null, _._("The owner sets the price for the banner", null, {
+					}, r.a.createElement("li", null, O._("The owner sets the price for the banner", null, {
 						hk: "1EnVw2"
-					})), a.a.createElement("li", null, _._("They pay a daily tax of {tax} by burning {token}", [_._param("tax", s), _._param("token", r)], {
+					})), r.a.createElement("li", null, O._("They pay a daily tax of {tax} by burning {token}", [O._param("tax", s), O._param("token", a)], {
 						hk: "2qEsqE"
-					})), a.a.createElement("li", null, _._("If the owner cannot pay the tax, the price goes to 0", null, {
+					})), r.a.createElement("li", null, O._("If the owner cannot pay the tax, the price goes to 0", null, {
 						hk: "X4H8x"
-					})), a.a.createElement("li", null, _._("Anyone can buy the banner at its advertised price", null, {
+					})), r.a.createElement("li", null, O._("Anyone can buy the banner at its advertised price", null, {
 						hk: "2k3KWy"
-					})), a.a.createElement("li", null, _._("The owner cannot refuse to sell it at that price", null, {
+					})), r.a.createElement("li", null, O._("The owner cannot refuse to sell it at that price", null, {
 						hk: "zeQCk"
 					}))))))
 				})),
-				k = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/index.m.less"),
-				M = n.n(k);
+				T = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/index.m.less"),
+				P = n.n(T);
 
-			function P(e) {
-				return a.a.createElement("div", {
-					className: Object(o.a)(M.a.container, e.className)
-				}, a.a.createElement(T, {
+			function M(e) {
+				return r.a.createElement("div", {
+					className: Object(c.a)(P.a.container, e.className)
+				}, r.a.createElement(I, {
 					subredditId: e.subreddit.id,
 					subredditName: e.subreddit.name,
 					taxRate: e.taxRate
-				}), a.a.createElement(N, {
-					className: M.a.controls,
+				}), r.a.createElement(N, {
+					className: P.a.controls,
 					subredditId: e.subreddit.id,
 					onPurchase: e.onPurchase
 				}))
 			}
 			var B = n("./node_modules/bignumber.js/bignumber.js"),
 				A = n("./src/lib/currency/cleanNumber/index.ts"),
-				H = n("./src/reddit/actions/harbergerTax/actionCreators.ts"),
-				D = n("./src/reddit/actions/toaster.ts"),
+				D = n("./src/reddit/actions/harbergerTax/actionCreators.ts"),
+				H = n("./src/reddit/actions/toaster.ts"),
 				S = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				L = n("./src/reddit/controls/FormFields/index.tsx"),
+				G = n("./src/reddit/controls/FormFields/index.tsx"),
 				F = n("./src/reddit/helpers/governance/ethereum.ts"),
-				G = n("./src/reddit/models/Toast/index.ts"),
-				R = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Section/index.m.less"),
-				V = n.n(R);
+				R = n("./src/reddit/models/Toast/index.ts"),
+				W = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Section/index.m.less"),
+				V = n.n(W);
 
-			function W(e) {
-				return a.a.createElement("article", {
-					className: Object(o.a)(e.className, V.a.container)
-				}, a.a.createElement("div", {
+			function L(e) {
+				return r.a.createElement("article", {
+					className: Object(c.a)(e.className, V.a.container)
+				}, r.a.createElement("div", {
 					className: V.a.title
-				}, e.title), a.a.createElement("div", {
+				}, e.title), r.a.createElement("div", {
 					className: V.a.description
 				}, e.description), e.children)
 			}
-			var U = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/index.m.less"),
-				q = n.n(U),
-				X = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Value/index.m.less"),
-				Y = n.n(X);
+			var X = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/index.m.less"),
+				U = n.n(X),
+				Y = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Value/index.m.less"),
+				q = n.n(Y);
 
 			function Z(e) {
-				return a.a.createElement("div", {
-					className: Object(o.a)(Y.a.container, e.className)
-				}, a.a.createElement("div", {
-					className: Y.a.label
-				}, e.label), a.a.createElement("div", {
-					className: Y.a.amount
+				return r.a.createElement("div", {
+					className: Object(c.a)(q.a.container, e.className)
+				}, r.a.createElement("div", {
+					className: q.a.label
+				}, e.label), r.a.createElement("div", {
+					className: q.a.amount
 				}, Object(u.a)(Object(b.b)(e.amount, e.tokenDisplayConversion))))
 			}
 			var z = n("./node_modules/fbt/lib/FbtPublic.js");
 			const J = .01;
-			class Q extends a.a.Component {
+			class Q extends r.a.Component {
 				constructor(e) {
 					super(e), this.handlePriceChange = e => {
 						this.setState({
@@ -686,15 +467,15 @@
 							harbergerDetails: t,
 							points: n
 						} = this.props, {
-							price: r,
-							prepayDays: a
-						} = this.state, s = null == n ? void 0 : n.contractAddress, o = t.address;
-						if (!s || !o) return this.props.onError();
-						const i = new B.BigNumber(r).multipliedBy(t.taxRate * J).multipliedBy(parseInt(a));
+							price: a,
+							prepayDays: r
+						} = this.state, s = null == n ? void 0 : n.contractAddress, c = t.address;
+						if (!s || !c) return this.props.onError();
+						const o = new B.BigNumber(a).multipliedBy(t.taxRate * J).multipliedBy(parseInt(r));
 						try {
-							await Object(F.g)(s, o, e || "0", r, i.toFixed(0)), this.props.onPurchaseComplete()
-						} catch (c) {
-							return this.props.onError(c.message)
+							await Object(F.g)(s, c, e || "0", a, o.toFixed(0)), this.props.onPurchaseComplete()
+						} catch (i) {
+							return this.props.onError(i.message)
 						}
 					}, this.state = {
 						price: e.cost || "0",
@@ -706,89 +487,89 @@
 						className: e,
 						cost: t,
 						currentOwnerId: n,
-						currentOwnerName: r,
+						currentOwnerName: a,
 						harbergerDetails: s,
-						points: i,
-						subredditId: c
+						points: o,
+						subredditId: i
 					} = this.props;
-					if (!i) throw new Error("expected points data in BannerPurchaseModal");
+					if (!o) throw new Error("expected points data in BannerPurchaseModal");
 					const l = t || "0",
 						d = this.state.price || "0",
 						x = parseInt(d) * (s.taxRate * J),
 						f = x * parseInt(this.state.prepayDays),
 						v = parseInt(l) + f,
-						g = `${s.taxRate}%`;
-					return a.a.createElement("div", {
-						className: Object(o.a)(q.a.container, e)
-					}, a.a.createElement(W, {
-						className: q.a.section,
+						E = `${s.taxRate}%`;
+					return r.a.createElement("div", {
+						className: Object(c.a)(U.a.container, e)
+					}, r.a.createElement(L, {
+						className: U.a.section,
 						description: z.fbt._("You must pay this amount to the current owner to buy the banner.", null, {
 							hk: "36sgxo"
 						}),
 						title: z.fbt._("Current price", null, {
 							hk: "EklEv"
 						})
-					}, a.a.createElement("div", {
-						className: q.a.currentPrice
-					}, a.a.createElement(S.a, {
+					}, r.a.createElement("div", {
+						className: U.a.currentPrice
+					}, r.a.createElement(S.a, {
 						amount: l,
-						subredditId: c
-					}), n && a.a.createElement("div", {
-						className: q.a.owner
+						subredditId: i
+					}), n && r.a.createElement("div", {
+						className: U.a.owner
 					}, z.fbt._("Owned by", null, {
 						hk: "JDQVM"
-					}), " ", a.a.createElement(m.c, {
-						className: q.a.ownerBadge,
-						subredditId: c,
+					}), " ", r.a.createElement(m.c, {
+						className: U.a.ownerBadge,
+						subredditId: i,
 						uniqueIdentifier: "banner-purchase-modal",
 						userId: n
-					}), a.a.createElement("span", {
-						className: q.a.username
-					}, r)))), a.a.createElement(W, {
-						className: q.a.section,
+					}), r.a.createElement("span", {
+						className: U.a.username
+					}, a)))), r.a.createElement(L, {
+						className: U.a.section,
 						description: z.fbt._("You can protect your ownership by raising the price. This also increases the daily tax. You can also lower the price to lower the tax.", null, {
 							hk: "20EBr1"
 						}),
 						title: z.fbt._("New price and tax", null, {
 							hk: "291U7z"
 						})
-					}, a.a.createElement("div", {
-						className: q.a.price
-					}, a.a.createElement(L.c, {
+					}, r.a.createElement("div", {
+						className: U.a.price
+					}, r.a.createElement(G.c, {
 						redditStyle: !0,
-						className: q.a.priceInput,
+						className: U.a.priceInput,
 						label: z.fbt._("new price", null, {
 							hk: "3eEJKs"
 						}),
 						placeholder: "0",
 						type: "text",
-						value: Object(u.a)(Object(b.b)(this.state.price, i.displayConversion)),
+						value: Object(u.a)(Object(b.b)(this.state.price, o.displayConversion)),
 						onChange: e => this.handlePriceChange(e.currentTarget.value)
-					}), a.a.createElement(p.a, {
-						className: q.a.priceToken,
-						subredditId: c
-					}), a.a.createElement("div", {
-						className: q.a.equals
-					}, "="), a.a.createElement(Z, {
+					}), r.a.createElement(p.a, {
+						className: U.a.priceToken,
+						subredditId: i
+					}), r.a.createElement("div", {
+						className: U.a.equals
+					}, "="), r.a.createElement(Z, {
 						amount: x.toFixed(2),
-						className: q.a.tax,
-						label: z.fbt._("{tax} daily tax", [z.fbt._param("tax", g)], {
+						className: U.a.tax,
+						label: z.fbt._("{tax} daily tax", [z.fbt._param("tax", E)], {
 							hk: "1kg5ZE"
 						}),
-						tokenDisplayConversion: i.displayConversion
-					}))), a.a.createElement(W, {
-						className: q.a.section,
+						tokenDisplayConversion: o.displayConversion
+					}))), r.a.createElement(L, {
+						className: U.a.section,
 						description: z.fbt._("You must deposit money to pay the daily tax. You can top this up at any time. If the balance goes to zero, the price of the banner drops to zero. If someone else buys the banner, you will be refunded any pre-paid tax you allocated.", null, {
 							hk: "3rkkNS"
 						}),
 						title: z.fbt._("Initial balance", null, {
 							hk: "3xz0g9"
 						})
-					}, a.a.createElement("div", {
-						className: q.a.prePay
-					}, a.a.createElement(L.c, {
+					}, r.a.createElement("div", {
+						className: U.a.prePay
+					}, r.a.createElement(G.c, {
 						redditStyle: !0,
-						className: q.a.prepayInput,
+						className: U.a.prepayInput,
 						label: z.fbt._("# of days to prepay", null, {
 							hk: "12YpX6"
 						}),
@@ -796,31 +577,31 @@
 						type: "text",
 						value: Object(u.a)(this.state.prepayDays),
 						onChange: e => this.handlePrepayChange(e.currentTarget.value)
-					}), a.a.createElement("div", {
-						className: q.a.times
-					}, "X"), a.a.createElement(Z, {
+					}), r.a.createElement("div", {
+						className: U.a.times
+					}, "X"), r.a.createElement(Z, {
 						amount: x.toFixed(2),
-						className: q.a.tax,
+						className: U.a.tax,
 						label: z.fbt._("Daily tax", null, {
 							hk: "UZSvX"
 						}),
-						tokenDisplayConversion: i.displayConversion || "1"
-					}), a.a.createElement("div", {
-						className: q.a.equals
-					}, "="), a.a.createElement(S.a, {
-						className: q.a.prepayTotal,
+						tokenDisplayConversion: o.displayConversion || "1"
+					}), r.a.createElement("div", {
+						className: U.a.equals
+					}, "="), r.a.createElement(S.a, {
+						className: U.a.prepayTotal,
 						amount: f.toFixed(2),
-						subredditId: c
-					}))), a.a.createElement("footer", {
-						className: q.a.footer
-					}, a.a.createElement("div", null, a.a.createElement("div", {
-						className: q.a.total
+						subredditId: i
+					}))), r.a.createElement("footer", {
+						className: U.a.footer
+					}, r.a.createElement("div", null, r.a.createElement("div", {
+						className: U.a.total
 					}, z.fbt._("Total due", null, {
 						hk: "1MTLwA"
-					})), a.a.createElement(S.a, {
+					})), r.a.createElement(S.a, {
 						amount: v.toFixed(2),
-						subredditId: c
-					})), a.a.createElement(h.l, {
+						subredditId: i
+					})), r.a.createElement(h.l, {
 						disabled: !s.address,
 						onClick: this.handlePurchase
 					}, z.fbt._("Buy", null, {
@@ -837,43 +618,43 @@
 				}) => Object(l.b)(e, t)
 			});
 			var $ = Object(d.b)(K, e => ({
-					onError: t => e(Object(D.f)({
+					onError: t => e(Object(H.f)({
 						duration: 5e3,
-						kind: G.b.Error,
+						kind: R.b.Error,
 						text: t || z.fbt._("Something wen't wrong with the purchase. Please try again later.", null, {
 							hk: "18lJda"
 						})
 					})),
-					onPurchaseComplete: () => e(Object(H.a)())
+					onPurchaseComplete: () => e(Object(D.a)())
 				}))(Q),
 				ee = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/index.m.less"),
 				te = n.n(ee);
 			const {
 				fbt: ne
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var re;
+			var ae;
 			! function(e) {
 				e[e.Info = 0] = "Info", e[e.Purchase = 1] = "Purchase"
-			}(re || (re = {}));
-			t.default = Object(c.a)("spHarberger", Object(s.a)((function(e) {
+			}(ae || (ae = {}));
+			t.default = Object(i.a)("spHarberger", Object(s.a)((function(e) {
 				var t;
 				const {
 					className: n
-				} = e, [s, c] = Object(r.useState)(re.Info), {
+				} = e, [s, i] = Object(a.useState)(ae.Info), {
 					pointsDetails: d,
 					subreddit: u
 				} = Object(l.c)(), m = null === (t = null == d ? void 0 : d.contracts) || void 0 === t ? void 0 : t.harberger, p = null == m ? void 0 : m.taxRate;
-				return m && p && u ? a.a.createElement("div", {
-					className: Object(o.a)(te.a.container, n)
-				}, a.a.createElement(i.a, {
+				return m && p && u ? r.a.createElement("div", {
+					className: Object(c.a)(te.a.container, n)
+				}, r.a.createElement(o.a, {
 					className: te.a.title
 				}, ne._("Buy Banner", null, {
 					hk: "PL5xv"
-				})), s === re.Info && a.a.createElement(P, {
+				})), s === ae.Info && r.a.createElement(M, {
 					taxRate: p,
 					subreddit: u,
-					onPurchase: () => c(re.Purchase)
-				}), s === re.Purchase && a.a.createElement($, {
+					onPurchase: () => i(ae.Purchase)
+				}), s === ae.Purchase && r.a.createElement($, {
 					className: te.a.purchase,
 					harbergerDetails: m,
 					subredditId: u.id
@@ -887,23 +668,23 @@
 		},
 		"./src/reddit/components/Governance/ModalClose/index.tsx": function(e, t, n) {
 			"use strict";
-			var r = n("./node_modules/react/index.js"),
-				a = n.n(r),
+			var a = n("./node_modules/react/index.js"),
+				r = n.n(a),
 				s = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/actions/modal.ts"),
-				c = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				c = n("./src/lib/classNames/index.ts"),
+				o = n("./src/reddit/actions/modal.ts"),
+				i = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				l = n("./src/reddit/components/Governance/ModalClose/index.m.less"),
 				d = n.n(l);
 			t.a = Object(s.b)(void 0, (e, {
 				afterClose: t
 			}) => ({
 				onClose: () => {
-					e(Object(i.f)()), t && t()
+					e(Object(o.f)()), t && t()
 				}
 			}))((function(e) {
-				return a.a.createElement(c.a, {
-					className: Object(o.a)(d.a.closeIcon, e.className),
+				return r.a.createElement(i.a, {
+					className: Object(c.a)(d.a.closeIcon, e.className),
 					onClick: e.onClose
 				})
 			}))
@@ -921,22 +702,22 @@
 			n.d(t, "a", (function() {
 				return l
 			}));
-			var r = n("./node_modules/react/index.js"),
-				a = n.n(r),
+			var a = n("./node_modules/react/index.js"),
+				r = n.n(a),
 				s = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/components/Governance/ModalClose/index.tsx"),
-				i = n("./src/reddit/components/Governance/ModalTitle/index.m.less"),
-				c = n.n(i);
+				c = n("./src/reddit/components/Governance/ModalClose/index.tsx"),
+				o = n("./src/reddit/components/Governance/ModalTitle/index.m.less"),
+				i = n.n(o);
 
 			function l(e) {
-				return a.a.createElement("div", {
-					className: Object(s.a)(c.a.container, e.className, {
-						[c.a.coloredContainer]: e.colored
+				return r.a.createElement("div", {
+					className: Object(s.a)(i.a.container, e.className, {
+						[i.a.coloredContainer]: e.colored
 					})
-				}, a.a.createElement("div", {
-					className: c.a.title
-				}, e.children), a.a.createElement(o.a, {
-					className: c.a.closeIcon
+				}, r.a.createElement("div", {
+					className: i.a.title
+				}, e.children), r.a.createElement(c.a, {
+					className: i.a.closeIcon
 				}))
 			}
 		},
@@ -947,16 +728,16 @@
 		},
 		"./src/reddit/components/Governance/Token/index.tsx": function(e, t, n) {
 			"use strict";
-			var r = n("./node_modules/react/index.js"),
-				a = n.n(r),
+			var a = n("./node_modules/react/index.js"),
+				r = n.n(a),
 				s = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/config.ts"),
-				c = n("./src/lib/classNames/index.ts"),
+				c = n("./node_modules/reselect/es/index.js"),
+				o = n("./src/config.ts"),
+				i = n("./src/lib/classNames/index.ts"),
 				l = n("./src/reddit/selectors/crypto/points.ts"),
 				d = n("./src/reddit/components/Governance/Token/index.m.less"),
 				u = n.n(d);
-			const m = Object(o.c)({
+			const m = Object(c.c)({
 				pointsDetails: (e, {
 					subredditId: t
 				}) => Object(l.b)(e, t)
@@ -965,19 +746,19 @@
 				var t;
 				const n = null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.images;
 				if (!n) return null;
-				const r = e.grey ? n.greyVector || n.grey : n.filledVector || n.filled,
-					s = `${i.a.assetPath}/${r}`;
+				const a = e.grey ? n.greyVector || n.grey : n.filledVector || n.filled,
+					s = `${o.a.assetPath}/${a}`;
 				if (e.grey && s.endsWith(".svg")) {
 					const t = `url(${s}) center/cover`;
-					return a.a.createElement("div", {
-						className: Object(c.a)(u.a.grey, e.className),
+					return r.a.createElement("div", {
+						className: Object(i.a)(u.a.grey, e.className),
 						style: {
 							mask: t,
 							WebkitMask: t
 						}
 					})
 				}
-				return a.a.createElement("img", {
+				return r.a.createElement("img", {
 					className: e.className,
 					src: s
 				})
@@ -992,35 +773,35 @@
 		},
 		"./src/reddit/components/Governance/TokenAmount/index.tsx": function(e, t, n) {
 			"use strict";
-			var r = n("./node_modules/react/index.js"),
-				a = n.n(r),
+			var a = n("./node_modules/react/index.js"),
+				r = n.n(a),
 				s = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/lib/classNames/index.ts"),
-				c = n("./src/lib/prettyPrintNumber/index.ts"),
+				c = n("./node_modules/reselect/es/index.js"),
+				o = n("./src/lib/classNames/index.ts"),
+				i = n("./src/lib/prettyPrintNumber/index.ts"),
 				l = n("./src/reddit/components/Governance/Token/index.tsx"),
 				d = n("./src/reddit/helpers/governance/tokens.ts"),
 				u = n("./src/reddit/selectors/crypto/points.ts"),
 				m = n("./src/reddit/components/Governance/TokenAmount/index.m.less"),
 				p = n.n(m);
-			const h = Object(o.c)({
+			const h = Object(c.c)({
 				pointsDetails: (e, {
 					subredditId: t
 				}) => Object(u.b)(e, t)
 			});
 			t.a = Object(s.b)(h)((function(e) {
 				var t;
-				return a.a.createElement("div", {
-					className: Object(i.a)(p.a.container, e.className, {
+				return r.a.createElement("div", {
+					className: Object(o.a)(p.a.container, e.className, {
 						[p.a.small]: e.small
 					})
-				}, a.a.createElement(l.a, {
-					className: Object(i.a)(p.a.token, {
+				}, r.a.createElement(l.a, {
+					className: Object(o.a)(p.a.token, {
 						[p.a.small]: e.small
 					}),
 					grey: e.grey,
 					subredditId: e.subredditId
-				}), Object(c.a)(Object(d.b)(e.amount, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)), e.additionalText || null)
+				}), Object(i.a)(Object(d.b)(e.amount, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)), e.additionalText || null)
 			}))
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, n) {
@@ -1042,17 +823,17 @@
 		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return E
+				return g
 			})), n.d(t, "c", (function() {
 				return y
 			}));
-			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
-				a = n("./node_modules/lodash/uniqueId.js"),
-				s = n.n(a),
-				o = n("./node_modules/raf/index.js"),
-				i = n.n(o),
-				c = n("./node_modules/react/index.js"),
-				l = n.n(c),
+			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
+				r = n("./node_modules/lodash/uniqueId.js"),
+				s = n.n(r),
+				c = n("./node_modules/raf/index.js"),
+				o = n.n(c),
+				i = n("./node_modules/react/index.js"),
+				l = n.n(i),
 				d = n("./src/lib/classNames/index.ts"),
 				u = n("./src/higherOrderComponents/asModal/index.tsx"),
 				m = n("./src/reddit/controls/Button/index.tsx"),
@@ -1075,13 +856,13 @@
 					}, l.a.createElement(m.l, {
 						className: b.a.confirmButton,
 						onClick: e.onConfirmed
-					}, r.fbt._("Ok", null, {
+					}, a.fbt._("Ok", null, {
 						hk: "2Giu9U"
 					}))))
 				}),
 				f = n("./src/reddit/controls/ErrorText/index.m.less"),
 				v = n.n(f);
-			class g extends l.a.Component {
+			class E extends l.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = l.a.createRef(), this.toggleModal = () => {
 						this.setState({
@@ -1100,7 +881,7 @@
 					this.calcTextDidOverflow()
 				}
 				calcTextDidOverflow() {
-					i()(() => {
+					o()(() => {
 						const e = this.spanRef.current;
 						if (!e) return;
 						const t = e.scrollWidth > e.clientWidth;
@@ -1114,53 +895,53 @@
 						children: e,
 						className: t,
 						errorModalBody: n,
-						errorModalTitle: a = r.fbt._("Error", null, {
+						errorModalTitle: r = a.fbt._("Error", null, {
 							hk: "2nPF4G"
 						}),
-						moreText: s = r.fbt._("More", null, {
+						moreText: s = a.fbt._("More", null, {
 							hk: "1bCAQ0"
 						})
 					} = this.props, {
-						textHasOverflowed: o,
-						isModalOpen: i
+						textHasOverflowed: c,
+						isModalOpen: o
 					} = this.state;
 					return l.a.createElement("div", {
 						className: Object(d.a)(v.a.wrapper, t)
 					}, l.a.createElement("span", {
 						className: v.a.description,
 						ref: this.spanRef
-					}, e), o && l.a.createElement("span", {
+					}, e), c && l.a.createElement("span", {
 						className: v.a.moreText,
 						onClick: this.toggleModal
-					}, s), i && l.a.createElement(x, {
+					}, s), o && l.a.createElement(x, {
 						onConfirmed: this.toggleModal,
-						title: a
+						title: r
 					}, n || e))
 				}
 			}
-			const E = e => {
+			const g = e => {
 					const {
 						className: t,
 						errorClassName: n,
-						errorModalTitle: r,
-						fallbackMessage: a,
+						errorModalTitle: a,
+						fallbackMessage: r,
 						messages: s = []
-					} = e, o = s.length ? s : a ? [a] : [];
-					return o.length ? l.a.createElement("div", {
+					} = e, c = s.length ? s : r ? [r] : [];
+					return c.length ? l.a.createElement("div", {
 						className: t
-					}, o.map((e, t) => l.a.createElement(g, {
+					}, c.map((e, t) => l.a.createElement(E, {
 						className: n,
-						errorModalTitle: r,
+						errorModalTitle: a,
 						key: t
 					}, e))) : null
 				},
-				y = e => l.a.createElement(E, {
-					fallbackMessage: r.fbt._("Something went wrong", null, {
+				y = e => l.a.createElement(g, {
+					fallbackMessage: a.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
 					messages: e
 				});
-			t.b = g
+			t.b = E
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1188,15 +969,15 @@
 			})), n.d(t, "c", (function() {
 				return x
 			})), n.d(t, "d", (function() {
-				return g
+				return E
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var r = n("./node_modules/react/index.js"),
-				a = n.n(r),
+			var a = n("./node_modules/react/index.js"),
+				r = n.n(a),
 				s = n("./src/lib/classNames/index.ts"),
-				o = n("./src/lib/lessComponent.tsx"),
-				i = n("./src/reddit/controls/ErrorText/index.tsx"),
-				c = n("./src/reddit/icons/svgs/Plus/index.tsx"),
+				c = n("./src/lib/lessComponent.tsx"),
+				o = n("./src/reddit/controls/ErrorText/index.tsx"),
+				i = n("./src/reddit/icons/svgs/Plus/index.tsx"),
 				l = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
 				d = n("./src/reddit/controls/FormFields/index.m.less"),
 				u = n.n(d);
@@ -1205,12 +986,12 @@
 				return (m = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
-						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
 					}
 					return e
 				}).apply(this, arguments)
 			}
-			const p = o.a.input("input", u.a),
+			const p = c.a.input("input", u.a),
 				h = e => {
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
@@ -1218,21 +999,21 @@
 					const {
 						label: t,
 						children: n,
-						inputRef: r,
-						className: o,
-						...i
-					} = e, c = void 0 !== e.value && "" !== e.value;
-					return a.a.createElement("div", {
-						className: Object(s.a)(u.a.inputWrapper, o, {
+						inputRef: a,
+						className: c,
+						...o
+					} = e, i = void 0 !== e.value && "" !== e.value;
+					return r.a.createElement("div", {
+						className: Object(s.a)(u.a.inputWrapper, c, {
 							[u.a.mIsInvalid]: e.isInvalid
 						}),
 						onClick: h
-					}, a.a.createElement(p, m({
+					}, r.a.createElement(p, m({
 						"aria-invalid": e.isInvalid,
-						innerRef: r
-					}, i)), e.label && a.a.createElement("label", {
+						innerRef: a
+					}, o)), e.label && r.a.createElement("label", {
 						className: Object(s.a)(u.a.label, {
-							[u.a.mHasValue]: c
+							[u.a.mHasValue]: i
 						})
 					}, e.label), e.children)
 				},
@@ -1240,37 +1021,37 @@
 					const {
 						label: t,
 						children: n,
-						inputRef: r,
-						isInvalid: o,
-						className: i,
-						redditStyle: c,
+						inputRef: a,
+						isInvalid: c,
+						className: o,
+						redditStyle: i,
 						...l
 					} = e, d = void 0 !== e.value && "" !== e.value;
-					return a.a.createElement("div", {
-						className: Object(s.a)(u.a.inputMovingLabelWrapper, i, {
-							[u.a.mIsInvalid]: o,
-							[u.a.mIsRedditStyle]: c
+					return r.a.createElement("div", {
+						className: Object(s.a)(u.a.inputMovingLabelWrapper, o, {
+							[u.a.mIsInvalid]: c,
+							[u.a.mIsRedditStyle]: i
 						}),
 						onClick: h
-					}, a.a.createElement(p, m({
-						innerRef: r
-					}, l)), e.label && a.a.createElement("label", {
+					}, r.a.createElement(p, m({
+						innerRef: a
+					}, l)), e.label && r.a.createElement("label", {
 						className: Object(s.a)(u.a.label, {
 							[u.a.mHasValue]: d
 						})
 					}, e.label), e.children)
 				},
-				f = e => a.a.createElement("div", {
+				f = e => r.a.createElement("div", {
 					className: Object(s.a)(u.a.addValueButton, e.className),
 					onClick: e.onClick
-				}, e.text, " ", a.a.createElement(c.a, {
+				}, e.text, " ", r.a.createElement(i.a, {
 					className: u.a.plus
 				}));
 			var v;
 			! function(e) {
 				e[e.ADD = 0] = "ADD", e[e.REMOVE = 1] = "REMOVE"
 			}(v || (v = {}));
-			class g extends a.a.Component {
+			class E extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						addingNewInputs: !1
@@ -1310,89 +1091,65 @@
 						values: e,
 						disabled: t,
 						label: n,
-						placeholder: r,
+						placeholder: a,
 						errors: s = []
 					} = this.props;
-					return e.map((e, o) => a.a.createElement(b, {
-						inputRef: e => this.setInputRef(e, o),
-						isInvalid: !!s[o],
+					return e.map((e, c) => r.a.createElement(b, {
+						inputRef: e => this.setInputRef(e, c),
+						isInvalid: !!s[c],
 						disabled: t,
 						type: "text",
 						label: n,
-						onChange: e => this.updateValue(e, o),
-						placeholder: r,
+						onChange: e => this.updateValue(e, c),
+						placeholder: a,
 						value: e,
 						style: {
 							paddingRight: "36px"
 						}
-					}, a.a.createElement("div", {
+					}, r.a.createElement("div", {
 						className: u.a.trashContainer,
-						onClick: () => this.removeValue(o)
-					}, a.a.createElement(l.b, {
+						onClick: () => this.removeValue(c)
+					}, r.a.createElement(l.b, {
 						className: u.a.trash
-					})), !!s[o] && a.a.createElement(i.b, {
+					})), !!s[c] && r.a.createElement(o.b, {
 						className: u.a.errorText
-					}, s[o])))
+					}, s[c])))
 				}
 				render() {
 					const {
 						className: e,
 						buttonOnTop: t,
 						values: n,
-						maxLength: r,
-						addValueText: o,
-						disabled: i
+						maxLength: a,
+						addValueText: c,
+						disabled: o
 					} = this.props;
 					this.focusedInput = null;
-					const c = !(!!r && n.length >= r) && !i;
-					return a.a.createElement("div", {
+					const i = !(!!a && n.length >= a) && !o;
+					return r.a.createElement("div", {
 						className: Object(s.a)(u.a.multiInputWrapper, e)
-					}, t && c && a.a.createElement(f, {
+					}, t && i && r.a.createElement(f, {
 						onClick: this.addValue,
-						text: o
-					}), this.renderFields(), !t && c && a.a.createElement(f, {
+						text: c
+					}), this.renderFields(), !t && i && r.a.createElement(f, {
 						onClick: this.addValue,
-						text: o
+						text: c
 					}))
 				}
-			}
-		},
-		"./src/reddit/featureFlags/component.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return c
-			}));
-			var r = n("./node_modules/react/index.js"),
-				a = n.n(r),
-				s = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/reddit/featureFlags/index.ts");
-
-			function c(e, t, n) {
-				const r = Object(o.c)({
-					featureEnabled: t => i.d[e](t)
-				});
-				return Object(s.b)(r)(e => {
-					const {
-						featureEnabled: r,
-						...s
-					} = e, o = s;
-					return r ? a.a.createElement(t, o) : void 0 !== n ? a.a.createElement(n, o) : null
-				})
 			}
 		},
 		"./src/reddit/helpers/governance/ethereum.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return a
+				return r
 			})), n.d(t, "f", (function() {
 				return s
 			})), n.d(t, "d", (function() {
-				return o
-			})), n.d(t, "e", (function() {
-				return i
-			})), n.d(t, "b", (function() {
 				return c
+			})), n.d(t, "e", (function() {
+				return o
+			})), n.d(t, "b", (function() {
+				return i
 			})), n.d(t, "a", (function() {
 				return l
 			})), n.d(t, "g", (function() {
@@ -1405,39 +1162,39 @@
 				return f
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var r = n("./node_modules/fbt/lib/FbtPublic.js");
+			var a = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function a() {
+			function r() {
 				return window.ethereum
 			}
 
 			function s() {
-				const e = a();
+				const e = r();
 				return !(!e || !e.isMetaMask)
 			}
 
-			function o() {
-				const e = a();
+			function c() {
+				const e = r();
 				return e && e.selectedAddress || null
 			}
 
-			function i() {
-				const e = a();
+			function o() {
+				const e = r();
 				return (null == e ? void 0 : e.networkVersion) || null
 			}
 
-			function c() {
-				const e = a();
+			function i() {
+				const e = r();
 				if (!e) throw new Error("Please install a web3 provider, such as MetaMask");
-				return o() ? Promise.resolve() : e.enable()
+				return c() ? Promise.resolve() : e.enable()
 			}
 			const l = 4001;
-			async function d(e, t, r, s) {
-				const [o, i] = await Promise.all([Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
-				await c();
-				const l = new o.providers.Web3Provider(a()).getSigner(),
-					d = new o.Contract(e, i, l),
-					u = await d[r](...s);
+			async function d(e, t, a, s) {
+				const [c, o] = await Promise.all([Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				await i();
+				const l = new c.providers.Web3Provider(r()).getSigner(),
+					d = new c.Contract(e, o, l),
+					u = await d[a](...s);
 				return await u.wait()
 			}
 			const u = {
@@ -1461,21 +1218,21 @@
 				}]
 			};
 			const m = 1;
-			async function p(e, t, r, a, s) {
-				const o = await Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+			async function p(e, t, a, r, s) {
+				const c = await Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
-						BigNumber: i
-					} = o,
+						BigNumber: o
+					} = c,
 					{
-						hexlify: c,
+						hexlify: i,
 						hexZeroPad: l,
 						toUtf8Bytes: p
-					} = o.utils,
-					h = i.from(r).add(s),
+					} = c.utils,
+					h = o.from(a).add(s),
 					b = m,
-					x = "0x" + [c(1)].concat([c(b), i.from(a).toHexString(), i.from(s).toHexString()].map(e => l(e, 32))).concat(c(p(""))).map(e => e.substr(2)).join("");
-				return async function(e, t, n, r) {
-					return d(e, Promise.resolve(u), "send", [t, n, r])
+					x = "0x" + [i(1)].concat([i(b), o.from(r).toHexString(), o.from(s).toHexString()].map(e => l(e, 32))).concat(i(p(""))).map(e => e.substr(2)).join("");
+				return async function(e, t, n, a) {
+					return d(e, Promise.resolve(u), "send", [t, n, a])
 				}(e, t, h.toString(), x)
 			}
 			const h = {
@@ -1496,28 +1253,28 @@
 				}]
 			};
 			async function b(e, t, n) {
-				await c();
-				const a = o() || "";
-				if (t.toLowerCase() !== a.toLowerCase()) throw new Error(r.fbt._("Please select your registered address in MetaMask: {subscriberAddress}", [r.fbt._param("subscriberAddress", t)], {
+				await i();
+				const r = c() || "";
+				if (t.toLowerCase() !== r.toLowerCase()) throw new Error(a.fbt._("Please select your registered address in MetaMask: {subscriberAddress}", [a.fbt._param("subscriberAddress", t)], {
 					hk: "3rehSL"
 				}).toString());
 				return d(e, Promise.resolve(h), "subscribe", [t, n])
 			}
 
 			function x(e) {
-				const t = a();
-				return new Promise((n, a) => {
+				const t = r();
+				return new Promise((n, r) => {
 					const s = JSON.stringify(e);
 					t.sendAsync({
 						method: "eth_signTypedData_v3",
 						params: [t.selectedAddress, s],
 						from: t.selectedAddress
 					}, (e, t) => {
-						if (e) a(e);
+						if (e) r(e);
 						else {
 							const e = t && t.result;
-							e ? n(e) : a({
-								message: r.fbt._("No signature returned from ethereum provider.", null, {
+							e ? n(e) : r({
+								message: a.fbt._("No signature returned from ethereum provider.", null, {
 									hk: "eiYBF"
 								}).toString()
 							})
@@ -1528,15 +1285,15 @@
 
 			function f(e) {
 				return new Promise((t, n) => {
-					a().sendAsync({
+					r().sendAsync({
 						method: "metamask_watchAsset",
 						params: {
 							type: "ERC20",
 							options: e
 						},
 						id: Math.round(1e5 * Math.random())
-					}, (e, r) => {
-						e || "error" in r ? n("There was an error tracking the token") : t()
+					}, (e, a) => {
+						e || "error" in a ? n("There was an error tracking the token") : t()
 					})
 				})
 			}
@@ -1546,73 +1303,43 @@
 			n.d(t, "b", (function() {
 				return s
 			})), n.d(t, "c", (function() {
-				return o
+				return c
 			})), n.d(t, "a", (function() {
-				return i
+				return o
 			}));
-			var r = n("./node_modules/bignumber.js/bignumber.js"),
-				a = n("./src/lib/prettyPrintNumber/index.ts");
+			var a = n("./node_modules/bignumber.js/bignumber.js"),
+				r = n("./src/lib/prettyPrintNumber/index.ts");
 
 			function s(e, t) {
-				const n = new r.BigNumber(e),
-					a = new r.BigNumber(t || 1);
-				return n.dividedToIntegerBy(a).toString()
+				const n = new a.BigNumber(e),
+					r = new a.BigNumber(t || 1);
+				return n.dividedToIntegerBy(r).toString()
+			}
+
+			function c(e, t) {
+				return Object(r.b)(parseInt(s(e, t), 10))
 			}
 
 			function o(e, t) {
-				return Object(a.b)(parseInt(s(e, t), 10))
-			}
-
-			function i(e, t) {
-				const n = new r.BigNumber(e),
-					a = new r.BigNumber(t || 1);
-				return n.multipliedBy(a).toFixed(0)
-			}
-		},
-		"./src/reddit/icons/svgs/AddSquare/index.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return s
-			}));
-			var r = n("./node_modules/react/index.js"),
-				a = n.n(r);
-
-			function s(e) {
-				return a.a.createElement("svg", {
-					className: e.className,
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, a.a.createElement("rect", {
-					fill: "transparent",
-					height: "18",
-					rx: "4.5",
-					strokeDasharray: "2 2",
-					strokeLinejoin: "round",
-					strokeWidth: "1",
-					width: "18",
-					x: "1",
-					y: "1"
-				}), a.a.createElement("path", {
-					clipRule: "evenodd",
-					d: "M13 9H11V7C11 6.7235 10.7765 6.5 10.5 6.5H9.5C9.2235 6.5 9 6.7235 9 7V9H7C6.724 9 6.5 9.2235 6.5 9.5V10.5C6.5 10.7765 6.724 11 7 11H9V13C9 13.2765 9.2235 13.5 9.5 13.5H10.5C10.7765 13.5 11 13.2765 11 13V11H13C13.2765 11 13.5 10.7765 13.5 10.5V9.5C13.5 9.2235 13.2765 9 13 9Z",
-					fillRule: "evenodd"
-				}))
+				const n = new a.BigNumber(e),
+					r = new a.BigNumber(t || 1);
+				return n.multipliedBy(r).toFixed(0)
 			}
 		},
 		"./src/reddit/icons/svgs/Plus/index.tsx": function(e, t, n) {
 			"use strict";
-			var r = n("./node_modules/react/index.js"),
-				a = n.n(r);
-			t.a = e => a.a.createElement("svg", {
+			var a = n("./node_modules/react/index.js"),
+				r = n.n(a);
+			t.a = e => r.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 20 20",
 				version: "1.1"
-			}, a.a.createElement("g", {
+			}, r.a.createElement("g", {
 				stroke: "none"
-			}, a.a.createElement("g", {
+			}, r.a.createElement("g", {
 				transform: "translate(-34.000000, -136.000000)",
 				fill: "inherit"
-			}, a.a.createElement("path", {
+			}, r.a.createElement("path", {
 				d: "M45.2,147.2 L48.8,147.2 C49.46272,147.2 50,146.66272 50,146 C50,145.33728 49.46272,144.8 48.8,144.8 L45.2,144.8 L45.2,141.2 C45.2,140.53728 44.66272,140 44,140 C43.33728,140 42.8,140.53728 42.8,141.2 L42.8,144.8 L39.2,144.8 C38.53728,144.8 38,145.33728 38,146 C38,146.66272 38.53728,147.2 39.2,147.2 L42.8,147.2 L42.8,150.8 C42.8,151.46272 43.33728,152 44,152 C44.66272,152 45.2,151.46272 45.2,150.8 L45.2,147.2 Z"
 			}))))
 		},
@@ -1624,33 +1351,33 @@
 		"./src/reddit/icons/svgs/Trash2/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return c
+				return i
 			}));
-			var r = n("./node_modules/react/index.js"),
-				a = n.n(r),
+			var a = n("./node_modules/react/index.js"),
+				r = n.n(a),
 				s = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/icons/svgs/Trash2/index.m.less"),
-				i = n.n(o);
-			const c = e => a.a.createElement("svg", {
-				className: Object(s.a)(i.a.icon, e.className),
+				c = n("./src/reddit/icons/svgs/Trash2/index.m.less"),
+				o = n.n(c);
+			const i = e => r.a.createElement("svg", {
+				className: Object(s.a)(o.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg",
 				onClick: e.onClick
-			}, a.a.createElement("path", {
+			}, r.a.createElement("path", {
 				d: "M16.5,2H12.71l-.85-.85A.5.5,0,0,0,11.5,1h-3a.5.5,0,0,0-.35.15L7.29,2H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h13a.5.5,0,0,0,.5-.5v-1A.5.5,0,0,0,16.5,2Z"
-			}), a.a.createElement("path", {
+			}), r.a.createElement("path", {
 				d: "M16.5,5H3.5a.5.5,0,0,0-.5.5v12A1.5,1.5,0,0,0,4.5,19h11A1.5,1.5,0,0,0,17,17.5V5.5A.5.5,0,0,0,16.5,5ZM6.75,15.5a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Z"
 			}));
-			t.b = c
+			t.b = i
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return o
-			})), n.d(t, "b", (function() {
-				return i
-			})), n.d(t, "c", (function() {
 				return c
+			})), n.d(t, "b", (function() {
+				return o
+			})), n.d(t, "c", (function() {
+				return i
 			})), n.d(t, "d", (function() {
 				return l
 			})), n.d(t, "g", (function() {
@@ -1660,18 +1387,18 @@
 			})), n.d(t, "f", (function() {
 				return m
 			}));
-			var r = n("./src/reddit/contexts/PageLayer/index.tsx");
-			const a = [],
+			var a = n("./src/reddit/contexts/PageLayer/index.tsx");
+			const r = [],
 				s = {},
-				o = (e, t) => {
+				c = (e, t) => {
 					const n = p(e, t);
 					if (n) return n.mainHeader
 				},
-				i = (e, t) => {
+				o = (e, t) => {
 					const n = p(e, t);
 					return n && n.mainHeader ? n.mainHeader.price : "0"
 				},
-				c = (e, t) => {
+				i = (e, t) => {
 					const n = p(e, t);
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
@@ -1681,20 +1408,20 @@
 				l = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				d = (e, t) => {
 					const n = l(e, t),
-						r = n && n.publicAddress;
-					if (!r) throw new Error("No wallet address found");
-					return r
+						a = n && n.publicAddress;
+					if (!a) throw new Error("No wallet address found");
+					return a
 				},
 				u = (e, t) => {
 					const n = l(e, t);
 					return n && n.amount || "0"
 				},
 				m = (e, t) => {
-					const n = Object(r.n)(e, t);
-					return n && e.subreddits.gov.releaseNotes[n] || a
+					const n = Object(a.n)(e, t);
+					return n && e.subreddits.gov.releaseNotes[n] || r
 				},
 				p = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.9fd112dc60848c615caa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.7d6b36c785d4b5befa46.js.map
