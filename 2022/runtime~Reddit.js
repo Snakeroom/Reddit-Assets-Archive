@@ -1,25 +1,25 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.832c4ad5cca88fc04ae0.js
-// Retrieved at 1/6/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.dcbdd39bba17bc2b32c1.js
+// Retrieved at 1/10/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var n, a, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) a = r[l], Object.prototype.hasOwnProperty.call(d, a) && d[a] && b.push(d[a][0]), d[a] = 0;
-		for (n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n]);
+		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
+		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
 		for (m && m(o); b.length;) b.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
 	function t() {
 		for (var e, o = 0; o < i.length; o++) {
-			for (var t = i[o], n = !0, a = 1; a < t.length; a++) {
-				var s = t[a];
-				0 !== d[s] && (n = !1)
+			for (var t = i[o], a = !0, n = 1; n < t.length; n++) {
+				var s = t[n];
+				0 !== d[s] && (a = !1)
 			}
-			n && (i.splice(o--, 1), e = r(r.s = t[0]))
+			a && (i.splice(o--, 1), e = r(r.s = t[0]))
 		}
 		return e
 	}
-	var n = {},
-		a = {
+	var a = {},
+		n = {
 			"runtime~Reddit": 0
 		},
 		d = {
@@ -28,8 +28,8 @@
 		i = [];
 
 	function r(o) {
-		if (n[o]) return n[o].exports;
-		var t = n[o] = {
+		if (a[o]) return a[o].exports;
+		var t = a[o] = {
 			i: o,
 			l: !1,
 			exports: {}
@@ -38,7 +38,7 @@
 	}
 	r.e = function(e) {
 		var o = [];
-		a[e] ? o.push(a[e]) : 0 !== a[e] && {
+		n[e] ? o.push(n[e]) : 0 !== n[e] && {
 			2: 1,
 			3: 1,
 			4: 1,
@@ -294,8 +294,8 @@
 			SpecialMembershipsGifsTooltip: 1,
 			"chat-components-OverlayReport-FormBuilder": 1,
 			ModStatsChart: 1
-		} [e] && o.push(a[e] = new Promise((function(o, t) {
-			for (var n = "chunkCSS/" + ({
+		} [e] && o.push(n[e] = new Promise((function(o, t) {
+			for (var a = "chunkCSS/" + ({
 					"reddit-pages-meta-ArbitrumPointsMigrationPage": "reddit-pages-meta-ArbitrumPointsMigrationPage",
 					"vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033": "vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033",
 					"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67",
@@ -936,32 +936,32 @@
 					SpecialMembershipsGifsTooltip: "dd359f2bc0c2ddc6cce2",
 					"chat-components-OverlayReport-FormBuilder": "ee0aad277d8aa0cf68c0",
 					ModStatsChart: "1716ac9447d14ba5fb74"
-				} [e] + "_.css", d = r.p + n, i = document.getElementsByTagName("link"), s = 0; s < i.length; s++) {
+				} [e] + "_.css", d = r.p + a, i = document.getElementsByTagName("link"), s = 0; s < i.length; s++) {
 				var c = (m = i[s]).getAttribute("data-href") || m.getAttribute("href");
-				if ("stylesheet" === m.rel && (c === n || c === d)) return o()
+				if ("stylesheet" === m.rel && (c === a || c === d)) return o()
 			}
 			var l = document.getElementsByTagName("style");
 			for (s = 0; s < l.length; s++) {
 				var m;
-				if ((c = (m = l[s]).getAttribute("data-href")) === n || c === d) return o()
+				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
 			}
 			var b = document.createElement("link");
 			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
-				var n = o && o.target && o.target.src || d,
-					i = new Error("Loading CSS chunk " + e + " failed.\n(" + n + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = n, delete a[e], b.parentNode.removeChild(b), t(i)
+				var a = o && o.target && o.target.src || d,
+					i = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], b.parentNode.removeChild(b), t(i)
 			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
 		})).then((function() {
-			a[e] = 0
+			n[e] = 0
 		})));
 		var t = d[e];
 		if (0 !== t)
 			if (t) o.push(t[2]);
 			else {
-				var n = new Promise((function(o, n) {
-					t = d[e] = [o, n]
+				var a = new Promise((function(o, a) {
+					t = d[e] = [o, a]
 				}));
-				o.push(t[2] = n);
+				o.push(t[2] = a);
 				var i, s = document.createElement("script");
 				s.charset = "utf-8", s.timeout = 120, r.nc && s.setAttribute("nonce", r.nc), s.src = function(e) {
 					return r.p + "" + ({
@@ -1440,7 +1440,7 @@
 						HarbergerTaxManageModal: "5aa75b1aace4811cb471",
 						SubredditPremiumUploadModal: "2e5e6dd4eb0db2431141",
 						"vendors~PostCreation~Subreddit": "46f5a30c7f13b908d95f",
-						PostCreation: "d98a77317f08553b7d92",
+						PostCreation: "914a97d6877bd32abe61",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "71f28c4c637cd926b6dd",
 						Settings: "11532c71f661007a3659",
@@ -1613,9 +1613,9 @@
 					var t = d[e];
 					if (0 !== t) {
 						if (t) {
-							var n = o && ("load" === o.type ? "missing" : o.type),
-								a = o && o.target && o.target.src;
-							c.message = "Loading chunk " + e + " failed.\n(" + n + ": " + a + ")", c.name = "ChunkLoadError", c.type = n, c.request = a, t[1](c)
+							var a = o && ("load" === o.type ? "missing" : o.type),
+								n = o && o.target && o.target.src;
+							c.message = "Loading chunk " + e + " failed.\n(" + a + ": " + n + ")", c.name = "ChunkLoadError", c.type = a, c.request = n, t[1](c)
 						}
 						d[e] = void 0
 					}
@@ -1628,7 +1628,7 @@
 				}), 12e4);
 				s.onerror = s.onload = i, document.head.appendChild(s)
 			} return Promise.all(o)
-	}, r.m = e, r.c = n, r.d = function(e, o, t) {
+	}, r.m = e, r.c = a, r.d = function(e, o, t) {
 		r.o(e, o) || Object.defineProperty(e, o, {
 			enumerable: !0,
 			get: t
@@ -1647,9 +1647,9 @@
 				enumerable: !0,
 				value: e
 			}), 2 & o && "string" != typeof e)
-			for (var n in e) r.d(t, n, function(o) {
+			for (var a in e) r.d(t, a, function(o) {
 				return e[o]
-			}.bind(null, n));
+			}.bind(null, a));
 		return t
 	}, r.n = function(e) {
 		var o = e && e.__esModule ? function() {
@@ -1670,4 +1670,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.832c4ad5cca88fc04ae0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.dcbdd39bba17bc2b32c1.js.map

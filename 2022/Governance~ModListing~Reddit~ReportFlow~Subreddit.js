@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.132ac4cd08f67cfb228d.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.f834871787b15fe55bef.js
+// Retrieved at 1/10/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -1201,9 +1201,9 @@
 				P = Object(g.a)(N.c),
 				U = Object(g.a)(N.e),
 				G = Object(g.a)(N.f),
-				F = Object(g.a)(N.m),
-				B = Object(g.a)(N.p),
-				q = Object(g.a)(N.l),
+				F = Object(g.a)(N.n),
+				B = Object(g.a)(N.q),
+				q = Object(g.a)(N.m),
 				M = Object(g.a)(N.b),
 				Q = (e, t, r) => async (n, i, {
 					gqlContext: s
@@ -1280,7 +1280,7 @@
 						pollId: t,
 						prediction: o.poll
 					})), o.poll
-				}, z = Object(g.a)(N.g), J = Object(g.a)(N.i), $ = Object(g.a)(N.h), V = Object(g.a)(N.k), K = e => async (t, r, {
+				}, z = Object(g.a)(N.h), J = Object(g.a)(N.j), $ = Object(g.a)(N.i), V = Object(g.a)(N.l), K = e => async (t, r, {
 					gqlContext: n
 				}) => {
 					const i = r(),
@@ -1340,7 +1340,7 @@
 						subredditId: e,
 						tournaments: n
 					}))
-				}, Z = Object(g.a)(N.a), ee = Object(g.a)(N.n), te = Object(g.a)(N.o), re = (e, t, r, n) => async (i, s, {
+				}, Z = Object(g.a)(N.a), ee = Object(g.a)(N.o), te = Object(g.a)(N.p), re = (e, t, r, n) => async (i, s, {
 					gqlContext: o
 				}) => {
 					const d = s(),
@@ -1376,41 +1376,30 @@
 							tokenIcon: u
 						}),
 						b = Object(h.a)(l);
-					i(J({
-						subredditId: e,
-						tournaments: [b]
-					}))
+					i(ie(b))
 				}, ne = (e, t) => async (r, n, {
 					gqlContext: i
 				}) => {
-					var o;
-					const d = Object(k.b)(n());
-					if (!d) throw new Error("Failed to create prediction post, no prediction drafts attached");
-					const c = await Object(I.a)(i(), {
+					const o = Object(k.b)(n());
+					if (!o) throw new Error("Failed to create prediction post, no prediction drafts attached");
+					const d = await Object(I.a)(i(), {
 							tournamentId: e,
 							isStartImmediately: !0,
 							iKey: `add-dfts-${s.a.v4()}`,
 							subredditId: t,
-							predictionDrafts: d
+							predictionDrafts: o
 						}),
-						{
-							addPredictionDrafts: a
-						} = c.body.data;
-					if (null === (o = a.errors) || void 0 === o ? void 0 : o.length) throw new Error(a.errors[0].message);
-					if (!(null == a ? void 0 : a.tournament)) throw new Error("Failed to create prediction");
-					return a.tournament
-				}, ie = Object(g.a)(N.q), se = (e, t, r) => async (t, n, {
+						c = Object(h.a)(d);
+					r(ie(c))
+				}, ie = Object(g.a)(N.g), se = (e, t, r) => async (t, n, {
 					gqlContext: i
 				}) => {
 					const s = await Object(I.n)(i(), {
 							tournamentId: e,
 							name: r
 						}),
-						{
-							updatePredictionTournament: o
-						} = s.body.data;
-					if (!o.tournament) throw new Error("Failed to update prediction name");
-					return t(ie(o.tournament)), o.tournament
+						o = Object(h.a)(s);
+					t(ie(o))
 				}, oe = e => async (t, r, {
 					gqlContext: n
 				}) => {
@@ -6365,17 +6354,35 @@
 				});
 				if (!Object(i.c)(r) || r.error) throw new Error("Failed to fetch tournaments");
 				return r.body.data.subredditInfoByName.predictionTournaments || []
-			}, v = (e, t) => Object(n.a)(e, {
-				...s,
-				variables: {
-					input: t
-				}
-			}), x = (e, t) => Object(n.a)(e, {
-				...j,
-				variables: {
-					input: t
-				}
-			}), D = (e, t) => Object(n.a)(e, {
+			}, v = async (e, t) => {
+				const r = await Object(n.a)(e, {
+					...s,
+					variables: {
+						input: t
+					}
+				});
+				if (!Object(i.c)(r) || r.error) throw new Error("Failed to create prediction");
+				const {
+					errors: o,
+					tournament: d
+				} = r.body.data.addPredictionDrafts;
+				if (null == o ? void 0 : o.length) throw new Error(o[0].message);
+				if (!d) throw new Error("Failed to create prediction");
+				return d
+			}, x = async (e, t) => {
+				const r = await Object(n.a)(e, {
+					...j,
+					variables: {
+						input: t
+					}
+				});
+				if (!Object(i.c)(r) || r.error) throw new Error("Failed to update prediction tournament");
+				const {
+					tournament: s
+				} = r.body.data.updatePredictionTournament;
+				if (!s) throw new Error("Failed to update prediction tournament");
+				return s
+			}, D = (e, t) => Object(n.a)(e, {
 				...u,
 				variables: {
 					input: t
@@ -10591,4 +10598,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.132ac4cd08f67cfb228d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.f834871787b15fe55bef.js.map

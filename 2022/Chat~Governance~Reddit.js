@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.73eff84014e679224a95.js
-// Retrieved at 1/6/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d0587e1354b6ae4024dd.js
+// Retrieved at 1/10/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3327,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("155685"),
+				buildNumber: Object(r.c)("155753"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1641514598"),
+				buildTimestamp: Object(r.b)("1641824537"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5905,14 +5905,14 @@
 					}))
 				},
 				$ = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cbce96664dbd213b5789ea55cb83d8e456581f482-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cd1cc9e892e7018bf71d3dbfcde58e08d90bc7d04-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "bce96664dbd213b5789ea55cb83d8e456581f482-production",
+						release: "d1cc9e892e7018bf71d3dbfcde58e08d90bc7d04-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6429,7 +6429,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "bce96664dbd213b5789ea55cb83d8e456581f482-production",
+						releaseClient: "d1cc9e892e7018bf71d3dbfcde58e08d90bc7d04-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -9384,29 +9384,29 @@
 				return s
 			})), i.d(t, "f", (function() {
 				return o
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "n", (function() {
 				return d
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "q", (function() {
 				return a
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "m", (function() {
 				return l
-			})), i.d(t, "g", (function() {
-				return u
-			})), i.d(t, "i", (function() {
-				return c
 			})), i.d(t, "h", (function() {
-				return _
-			})), i.d(t, "k", (function() {
-				return m
+				return u
 			})), i.d(t, "j", (function() {
+				return c
+			})), i.d(t, "i", (function() {
+				return _
+			})), i.d(t, "l", (function() {
+				return m
+			})), i.d(t, "k", (function() {
 				return p
 			})), i.d(t, "a", (function() {
 				return h
-			})), i.d(t, "n", (function() {
-				return f
 			})), i.d(t, "o", (function() {
+				return f
+			})), i.d(t, "p", (function() {
 				return b
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "g", (function() {
 				return g
 			})), i.d(t, "b", (function() {
 				return w
@@ -9426,7 +9426,7 @@
 				h = "ADD_PREDICTION_TO_TOURNAMENT",
 				f = "REMOVE_LAST_PREDICTION_FROM_TOURNAMENT",
 				b = "RESET_TOURNAMENT_PREDICTIONS",
-				g = "UPDATE_PREDICTION_TOURNAMENT_SUCCESS",
+				g = "FETCH_PREDICTION_TOURNAMENT_SUCCESS",
 				w = "CHANGE_PREDICTION_SUCCESS"
 		},
 		"./src/reddit/actions/emailVerificationTooltip.ts": function(e, t, i) {
@@ -31375,7 +31375,7 @@
 			const d = [];
 			var a = (e = d, t) => {
 				switch (t.type) {
-					case o.o:
+					case o.p:
 						return d;
 					case o.a: {
 						const {
@@ -31383,7 +31383,7 @@
 						} = t.payload;
 						return [...e, s()(i)]
 					}
-					case o.n:
+					case o.o:
 						return e.slice(0, -1);
 					default:
 						return e
@@ -31447,7 +31447,7 @@
 			const b = {};
 			var g = (e = b, t) => {
 				switch (t.type) {
-					case o.i: {
+					case o.j: {
 						const {
 							tournaments: i
 						} = t.payload;
@@ -31487,16 +31487,18 @@
 							...n
 						}
 					}
-					case o.q: {
-						const i = t.payload;
-						return e[i.tournamentId] ? {
+					case o.g: {
+						const i = t.payload,
+							{
+								tournamentId: n
+							} = i;
+						return {
 							...e,
-							[i.tournamentId]: {
-								...e[i.tournamentId],
-								name: i.name,
-								status: i.status
+							[n]: {
+								...e[n],
+								...i
 							}
-						} : e
+						}
 					}
 					default:
 						return e
@@ -31511,7 +31513,7 @@
 			var y = (e = w, t) => {
 				var i;
 				switch (t.type) {
-					case o.g: {
+					case o.h: {
 						const {
 							subredditId: i
 						} = t.payload;
@@ -31524,7 +31526,7 @@
 							}
 						}
 					}
-					case o.h: {
+					case o.i: {
 						const {
 							subredditId: i
 						} = t.payload;
@@ -31537,7 +31539,7 @@
 							}
 						}
 					}
-					case o.i: {
+					case o.j: {
 						const {
 							subredditId: n,
 							tournaments: r
@@ -45187,4 +45189,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.73eff84014e679224a95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d0587e1354b6ae4024dd.js.map

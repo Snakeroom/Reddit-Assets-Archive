@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d98a77317f08553b7d92.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.914a97d6877bd32abe61.js
+// Retrieved at 1/10/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -20265,7 +20265,7 @@
 							}
 						}));
 						try {
-							await t(Object(an.g)(b, (null == u ? void 0 : u.name) || "Predictions Tournament", (null == u ? void 0 : u.theme) || "theme_1", (null == u ? void 0 : u.token) || null)), t(Object(i.s)()), t(Object(an.u)()), t(Object(m.b)(`/r/${h}/predictions/`))
+							await t(Object(an.g)(b, (null == u ? void 0 : u.name) || "Predictions Tournament", (null == u ? void 0 : u.theme) || "theme_1", (null == u ? void 0 : u.token) || null)), t(Object(i.s)()), t(Object(an.u)()), t(Object(an.l)(h)), t(Object(m.b)(`/r/${h}/predictions/`))
 						} catch (e) {
 							t(Object(an.t)()), t(Object(cn.f)({
 								duration: 5e3,
@@ -20340,7 +20340,7 @@
 								}
 							}));
 							try {
-								await n(Object(an.a)(E.tournamentId, v)), n(Object(i.s)()), n(Object(an.u)()), n(Object(m.b)(`/r/${_.name}/predictions/`))
+								await n(Object(an.a)(E.tournamentId, v)), n(Object(i.s)()), n(Object(an.u)()), n(Object(an.l)(_.name)), n(Object(m.b)(`/r/${_.name}/predictions/`))
 							} catch (e) {
 								n(Object(an.t)()), e.message.match(/max limit/) ? n(Object(cn.f)({
 									duration: 1e4,
@@ -22716,7 +22716,7 @@
 					i = Object(r.e)(e => Object(hn.b)(e, {
 						subredditId: a
 					})) || {
-						id: Nc.j,
+						id: Nc.k,
 						name: "Predictions Tournament"
 					};
 				return Object(tc.a)(o), o ? s.a.createElement("div", {
@@ -26427,4 +26427,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d98a77317f08553b7d92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.914a97d6877bd32abe61.js.map

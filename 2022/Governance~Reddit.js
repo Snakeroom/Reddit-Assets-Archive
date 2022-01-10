@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.51cdd20b665c13b2f7b5.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.4a4eb1f67301fe8f224f.js
+// Retrieved at 1/10/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -16932,7 +16932,7 @@
 					case ge.f:
 					case G.b:
 					case G.f:
-					case Cl.k: {
+					case Cl.l: {
 						const {
 							governance: r
 						} = t.payload;
@@ -17062,8 +17062,8 @@
 							...n
 						}
 					}
-					case Cl.m:
-					case Cl.l: {
+					case Cl.n:
+					case Cl.m: {
 						const {
 							pollId: r,
 							prediction: {
@@ -17879,7 +17879,7 @@
 						case ge.f:
 						case G.b:
 						case G.f:
-						case Cl.k: {
+						case Cl.l: {
 							const {
 								governance: r,
 								posts: s
@@ -17996,7 +17996,7 @@
 					case Gd.MORE_POSTS_LOADED:
 					case Md.c:
 					case Md.d:
-					case Cl.k: {
+					case Cl.l: {
 						const r = Object(Al.g)(t.payload.meta);
 						return {
 							...e,
@@ -18350,7 +18350,7 @@
 							}
 						}
 					}
-					case Cl.p: {
+					case Cl.q: {
 						const {
 							tournamentPostId: r,
 							predictionId: s,
@@ -24459,7 +24459,7 @@
 							coins: r
 						} : e
 					}
-					case Cl.m: {
+					case Cl.n: {
 						const {
 							price: r
 						} = t.payload;
@@ -26902,4 +26902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.51cdd20b665c13b2f7b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4a4eb1f67301fe8f224f.js.map
