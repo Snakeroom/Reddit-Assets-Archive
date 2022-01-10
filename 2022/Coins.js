@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.42894e8897a509208039.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.290472828837ba4478cb.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -2294,4 +2294,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.42894e8897a509208039.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.290472828837ba4478cb.js.map

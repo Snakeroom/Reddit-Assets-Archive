@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.4f76b06312129c3affa8.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.86ab1e8d6633550cc03a.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -709,7 +709,7 @@
 							subredditId: n.subredditId
 						})
 					},
-					modModeEnabled: b.S
+					modModeEnabled: b.T
 				}),
 				M = Object(a.b)(N, (e, {
 					comment: t
@@ -3253,7 +3253,7 @@
 				Pe = n("./src/reddit/components/PostList/Placeholder.tsx");
 			const Le = Object(O.u)(),
 				Re = Object(l.c)({
-					layout: O.Q
+					layout: O.R
 				});
 			var Be = Le(Object(c.b)(Re)(e => d.a.createElement(Pe.a, {
 					isLoading: !0,
@@ -3566,10 +3566,10 @@
 					currentProfileName: O.i,
 					isCommentPermalink: O.w,
 					isCommentsPage: O.x,
-					isFrontpage: O.z,
-					isProfilePostListing: O.K,
-					isTopicPage: O.P,
-					queryParams: O.V,
+					isFrontpage: O.A,
+					isProfilePostListing: O.L,
+					isTopicPage: O.Q,
+					queryParams: O.W,
 					pageLayer: e => e
 				}),
 				St = Object(l.c)({
@@ -5464,8 +5464,8 @@
 				}, t)),
 				O = Object(h.u)(),
 				j = Object(i.c)({
-					postLayout: h.Q,
-					redditStyle: h.C
+					postLayout: h.R,
+					redditStyle: h.D
 				}),
 				I = Object(a.b)(j, e => ({
 					onListingLayoutChange: (t, n) => e(Object(l.x)(t, n)),
@@ -5821,7 +5821,7 @@
 				renderingObjectInfo: e,
 				pageLayer: t
 			}) => {
-				if (e && (Object(r.b)(e) || Object(o.b)(e))) return Object(r.b)(e) ? a.SourceElement.Comment : Object(s.x)(t) ? a.SourceElement.PostDetail : Object(s.G)(t) ? a.SourceElement.ListingPostDetail : void 0
+				if (e && (Object(r.b)(e) || Object(o.b)(e))) return Object(r.b)(e) ? a.SourceElement.Comment : Object(s.x)(t) ? a.SourceElement.PostDetail : Object(s.H)(t) ? a.SourceElement.ListingPostDetail : void 0
 			}
 		},
 		"./src/reddit/helpers/trackers/subredditMentions.ts": function(e, t, n) {
@@ -6357,7 +6357,7 @@
 						location: t
 					}) => r()([...Object(c.a)(t.search)])
 				}),
-				V = Object(d.a)(H, h.Q, f.n, (e, {
+				V = Object(d.a)(H, h.R, f.n, (e, {
 					match: t
 				}) => t.params.pageName, ({
 					queryParams: e
@@ -6763,4 +6763,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.4f76b06312129c3affa8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.86ab1e8d6633550cc03a.js.map

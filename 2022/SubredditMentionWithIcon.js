@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.acab52eb3d13f2ec9361.js
-// Retrieved at 1/10/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.216c84382ed82a60ddb9.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -587,13 +587,13 @@
 				}))(H),
 				K = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				V = s("./src/reddit/helpers/styles/mixins/loading.ts"),
-				G = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
-				Q = s.n(G);
-			const z = Object(K.u)(),
+				z = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
+				G = s.n(z);
+			const Q = Object(K.u)(),
 				J = Object(c.c)({
-					isFakeSubreddit: K.y
+					isFakeSubreddit: K.z
 				});
-			var Y = z(Object(a.b)(J)(({
+			var Y = Q(Object(a.b)(J)(({
 					className: e,
 					showSubreddit: t,
 					...s
@@ -602,27 +602,27 @@
 					return o.a.createElement("div", {
 						className: Object(L.a)(A.a.container, e)
 					}, o.a.createElement("div", {
-						className: Q.a.mainBody
+						className: G.a.mainBody
 					}, o.a.createElement("div", {
-						className: Q.a.content
+						className: G.a.content
 					}, o.a.createElement("div", null, o.a.createElement("div", {
-						className: Object(L.a)(Q.a.title, n)
+						className: Object(L.a)(G.a.title, n)
 					}), t && o.a.createElement("div", {
-						className: Object(L.a)(Q.a.meta, n)
+						className: Object(L.a)(G.a.meta, n)
 					})), o.a.createElement("div", {
-						className: Q.a.flatlist
+						className: G.a.flatlist
 					}, o.a.createElement("div", {
-						className: Object(L.a)(Q.a.flatlistExpando, n)
+						className: Object(L.a)(G.a.flatlistExpando, n)
 					}), o.a.createElement("div", {
-						className: Q.a.flatlistSeparator
+						className: G.a.flatlistSeparator
 					}), o.a.createElement("div", {
-						className: Object(L.a)(Q.a.flatlistItemOne, n)
+						className: Object(L.a)(G.a.flatlistItemOne, n)
 					}), o.a.createElement("div", {
-						className: Object(L.a)(Q.a.flatlistItemTwo, n)
+						className: Object(L.a)(G.a.flatlistItemTwo, n)
 					}))), o.a.createElement("div", {
-						className: Q.a.thumbnailContainer
+						className: G.a.thumbnailContainer
 					}, o.a.createElement("div", {
-						className: Object(L.a)(Q.a.thumbnail, n)
+						className: Object(L.a)(G.a.thumbnail, n)
 					}))))
 				})),
 				X = s("./src/reddit/components/SubredditMention/SubredditIcon/index.tsx"),
@@ -1378,11 +1378,11 @@
 			})), s.d(t, "f", (function() {
 				return V
 			})), s.d(t, "g", (function() {
-				return G
-			})), s.d(t, "i", (function() {
-				return Q
-			})), s.d(t, "k", (function() {
 				return z
+			})), s.d(t, "i", (function() {
+				return G
+			})), s.d(t, "k", (function() {
+				return Q
 			})), s.d(t, "l", (function() {
 				return J
 			})), s.d(t, "j", (function() {
@@ -1612,7 +1612,7 @@
 						noun: n.ITEM_POST
 					})
 				},
-				G = (e, t, s, i) => {
+				z = (e, t, s, i) => {
 					const r = F();
 					return e => ({
 						...O(e, r),
@@ -1624,7 +1624,7 @@
 						noun: n.ITEM_POST_SUBREDDIT
 					})
 				},
-				Q = (e, t, s) => {
+				G = (e, t, s) => {
 					const i = F();
 					return e => ({
 						...O(e, i),
@@ -1635,7 +1635,7 @@
 						noun: n.ITEM_SUBREDDIT
 					})
 				},
-				z = (e, t, s, i) => {
+				Q = (e, t, s, i) => {
 					const r = F();
 					return e => ({
 						...O(e, r),
@@ -1736,4 +1736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.acab52eb3d13f2ec9361.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.216c84382ed82a60ddb9.js.map

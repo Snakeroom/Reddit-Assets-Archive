@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.ccb796505e9d2edd429b.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c62eb36be1fb26de957b.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -3314,7 +3314,7 @@
 						}) : null
 					},
 					prediction: Jt.f,
-					modModeEnabled: Nt.S,
+					modModeEnabled: Nt.T,
 					errorMsgs: F.G,
 					replyFormOpen: F.J,
 					subreddit: Nt.r,
@@ -3675,7 +3675,7 @@
 							const r = t();
 							e(Object(Bs.j)());
 							const i = r.platform.currentPage,
-								a = Object(Nt.R)(r, i),
+								a = Object(Nt.S)(r, i),
 								d = a ? Object(Rs.a)(a, o, s) : n;
 							e(Object(re.k)({
 								actionSource: re.a.CommentMoreReplies,
@@ -6500,7 +6500,7 @@
 				pageLayer: e => e
 			}), ts = Object(a.b)(() => Object(l.c)({
 				activeModalId: be.a,
-				flairStyleTemplate: nt.U,
+				flairStyleTemplate: nt.V,
 				currentUser: _e.k,
 				crosspost: H.d,
 				hideNSFWPref: _e.C,
@@ -6520,7 +6520,7 @@
 				showPromotedCTA: ve.a,
 				post: H.H,
 				moderatorPermissions: xe.l,
-				modModeEnabled: nt.S,
+				modModeEnabled: nt.T,
 				shouldTryToShowCrosspostModal: Vt.e,
 				showAwardsPlaque: ge.a,
 				showEditFlair: dt.a,
@@ -7819,9 +7819,9 @@
 					currentProfileName: p.i,
 					isCommentPermalink: p.w,
 					isCommentsPage: p.x,
-					isFrontpage: p.z,
-					isProfilePostListing: p.K,
-					isTopicPage: p.P,
+					isFrontpage: p.A,
+					isProfilePostListing: p.L,
+					isTopicPage: p.Q,
 					pageLayer: e => e
 				})
 			}
@@ -7830,7 +7830,7 @@
 					apiError: C.c,
 					apiPending: C.d,
 					measureScrollFPS: f.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.Q)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.R)(e, t),
 					loadMore: C.g,
 					postsById: v.T,
 					postIds: Object(r.a)((e, {
@@ -7840,7 +7840,7 @@
 					}) => Object(v.E)(e, t, s, o)),
 					subredditsById: _.Y,
 					viewportDataLoaded: O.a,
-					pageReferrer: p.T,
+					pageReferrer: p.U,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: x.e
 				},
@@ -10017,4 +10017,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.ccb796505e9d2edd429b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.c62eb36be1fb26de957b.js.map

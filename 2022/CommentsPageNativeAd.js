@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.4c1c51d76678c12746d3.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.ad76963e0f548b8e845d.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -34,7 +34,7 @@
 		"./src/reddit/components/CommentsPageNativeAd/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "SearchResultsCommentsPageNativeAd", (function() {
-				return J
+				return Q
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./node_modules/react/index.js"),
@@ -84,8 +84,8 @@
 					adHeaderVariant: e.adHeaderVariant,
 					greyTextColor: e.greyTextColor
 				})),
-				I = s("./src/lib/classNames/index.ts"),
-				T = s("./src/reddit/components/Media/index.tsx"),
+				T = s("./src/lib/classNames/index.ts"),
+				I = s("./src/reddit/components/Media/index.tsx"),
 				W = s("./src/reddit/components/PlayButton/index.tsx"),
 				M = s("./src/reddit/components/Thumbnail/index.tsx"),
 				R = s("./src/reddit/icons/svgs/Close/index.tsx");
@@ -115,7 +115,7 @@
 			}) => n && n.media ? p && Object(u.N)(n.media) ? a.a.createElement("div", null, a.a.createElement(R.a, {
 				className: A.a.close,
 				onClick: t
-			}), a.a.createElement(T.a, {
+			}), a.a.createElement(I.a, {
 				className: A.a.videoPlayer,
 				post: n,
 				isNotCardView: !0,
@@ -128,7 +128,7 @@
 				showCentered: !1,
 				scrollerItemRef: c
 			})) : a.a.createElement(M.a, {
-				className: Object(I.a)(A.a.thumbnail, e),
+				className: Object(T.a)(A.a.thumbnail, e),
 				containerClassName: d,
 				crosspost: s,
 				forceShowNSFW: r,
@@ -139,7 +139,7 @@
 				url: Object(u.N)(n.media) ? void 0 : l,
 				usePreview: m
 			}) : a.a.createElement(M.a, {
-				className: Object(I.a)(A.a.thumbnail, e),
+				className: Object(T.a)(A.a.thumbnail, e),
 				containerClassName: d,
 				crosspost: s,
 				forceShowNSFW: r,
@@ -154,7 +154,7 @@
 						className: n
 					} = e, i = r && !t;
 					return a.a.createElement("div", {
-						className: t ? Object(I.a)(A.a.videoContainer, n) : Object(I.a)(A.a.thumbnailContainer, n),
+						className: t ? Object(T.a)(A.a.videoContainer, n) : Object(T.a)(A.a.thumbnailContainer, n),
 						onClick: i ? () => s(!0) : void 0
 					}, a.a.createElement(B, V({}, e, {
 						mediaExpanded: t,
@@ -168,16 +168,16 @@
 				F = s("./src/reddit/connectors/ClassicPost/index.tsx"),
 				H = s("./src/reddit/connectors/ClassicPost/searchResults.tsx"),
 				D = s("./src/reddit/helpers/path/index.ts"),
-				z = s("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
-				Z = s("./src/reddit/selectors/profile.ts");
+				Z = s("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
+				z = s("./src/reddit/selectors/profile.ts");
 			const K = Object(n.b)(() => Object(c.c)({
 				iconUrl: (e, t) => {
-					const s = Object(Z.j)(e, {
+					const s = Object(z.j)(e, {
 						profileName: t.post.author
 					});
 					if (s && s.icon) return s.icon.url
 				},
-				adHeaderVariant: e => Object(z.a)(e)
+				adHeaderVariant: e => Object(Z.a)(e)
 			}), (e, t) => ({
 				fetchProfile: () => {
 					e(Object(x.d)(t.post.author))
@@ -284,9 +284,9 @@
 					}))
 				}
 			}
-			const Y = Object(l.a)(G),
-				J = Object(H.a)(Y);
-			t.default = Object(F.a)(K(Y))
+			const J = Object(l.a)(G),
+				Q = Object(H.a)(J);
+			t.default = Object(F.a)(K(J))
 		},
 		"./src/reddit/components/PostBackgroundWrapper/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -364,14 +364,14 @@
 					isLoggedIn: g.J,
 					showPromotedCTA: h.a,
 					moderatorPermissions: u.l,
-					modModeEnabled: d.S,
+					modModeEnabled: d.T,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: x.a,
 					showMedia: d.s,
-					flairStyleTemplate: d.U
+					flairStyleTemplate: d.V
 				},
 				v = (e, {
 					postId: t
@@ -403,7 +403,7 @@
 				c = s("./src/reddit/connectors/SearchPost/searchSyntaxHighlight.tsx"),
 				d = s("./src/reddit/connectors/ClassicPost/index.tsx");
 			const l = Object(i.u)({
-					searchQuery: i.Y
+					searchQuery: i.Z
 				}),
 				m = Object(a.b)(() => Object(n.c)(d.c), d.b, (e, t, s) => ({
 					...e,
@@ -521,4 +521,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.4c1c51d76678c12746d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.ad76963e0f548b8e845d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.d93151b6710958624984.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.f27af5a75bdc1d7096bb.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -585,7 +585,7 @@
 			}
 			const Oe = Object(P.u)(),
 				_e = Object(c.c)({
-					isFakeSubreddit: P.y
+					isFakeSubreddit: P.z
 				}),
 				je = Object(o.b)(_e),
 				Ne = e => {
@@ -1777,7 +1777,7 @@
 				}
 			}
 			t.c = r.a.memo((function(e) {
-				const t = Object(p.eb)(),
+				const t = Object(p.fb)(),
 					s = Object(p.w)(t),
 					a = Object(Q.a)(),
 					n = Object(i.e)(n => Y(n, {
@@ -1821,7 +1821,7 @@
 				h = o.a.div("Container", u.a),
 				x = Object(i.a)(c.b),
 				f = Object(l.u)({
-					isProfileListingPage: l.H
+					isProfileListingPage: l.I
 				});
 			class g extends r.a.Component {
 				constructor(e) {
@@ -2255,4 +2255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.d93151b6710958624984.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.f27af5a75bdc1d7096bb.js.map

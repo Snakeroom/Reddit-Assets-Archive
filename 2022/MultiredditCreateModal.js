@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.1f39f93df250c677b89b.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.e7d3b823edf34849913b.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, r) {
@@ -23,9 +23,9 @@
 			})), r.d(t, "createPending", (function() {
 				return H
 			})), r.d(t, "createSuccess", (function() {
-				return Q
-			})), r.d(t, "createRequested", (function() {
 				return K
+			})), r.d(t, "createRequested", (function() {
+				return Q
 			})), r.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
 				return B
 			})), r.d(t, "duplicateFailure", (function() {
@@ -235,7 +235,7 @@
 							multiredditsModelsState: n.multireddits.models
 						}))
 					}
-				}, W = Object(c.a)(L.e), H = Object(c.a)(L.f), Q = Object(c.a)(L.g), K = ({
+				}, W = Object(c.a)(L.e), H = Object(c.a)(L.f), K = Object(c.a)(L.g), Q = ({
 					description: e,
 					displayName: t,
 					shouldNavigate: r
@@ -262,7 +262,7 @@
 						const {
 							id: e
 						} = l;
-						if (await s(Q({
+						if (await s(K({
 								multireddit: S(m.body.data),
 								multiredditsModelsState: c.multireddits.models,
 								userId: e
@@ -599,7 +599,7 @@
 					if (b.listings.postOrder.api.pending[e]) return;
 					n(w({
 						key: e
-					})), s.layout = f.e[Object(h.Q)(b, {})];
+					})), s.layout = f.e[Object(h.R)(b, {})];
 					const x = {
 							path: Object(j.h)(t, r).replace(/\/$/, ""),
 							includeIdentity: !0,
@@ -1273,4 +1273,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.1f39f93df250c677b89b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.e7d3b823edf34849913b.js.map

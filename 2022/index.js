@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.54f4d96b3b5b89db2d22.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.af5ed923955c8f83c6d9.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -380,7 +380,7 @@
 				className: e,
 				...t
 			}) => {
-				const n = Object(b.eb)(),
+				const n = Object(b.fb)(),
 					a = Object(b.x)(n),
 					r = Object(s.e)(v.W);
 				return o.a.createElement("div", h({}, t, {
@@ -818,4 +818,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.54f4d96b3b5b89db2d22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.af5ed923955c8f83c6d9.js.map

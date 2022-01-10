@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.1bb77c3940f0b27dbf8c.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.51133bc79ac28b3e7431.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -10165,7 +10165,7 @@
 				}
 			}
 			t.c = r.a.memo((function(e) {
-				const t = Object(p.eb)(),
+				const t = Object(p.fb)(),
 					n = Object(p.w)(t),
 					o = Object(G.a)(),
 					s = Object(a.e)(s => Z(s, {
@@ -11061,7 +11061,9 @@
 				Link: "_3Eyh3vRo5o4IfzVZXhaWAG",
 				link: "_3Eyh3vRo5o4IfzVZXhaWAG",
 				Copyright: "_34dh2eyzMvJfjCBLeoWiDD",
-				copyright: "_34dh2eyzMvJfjCBLeoWiDD"
+				copyright: "_34dh2eyzMvJfjCBLeoWiDD",
+				CountryLinkContainer: "_2G12SFsZiv6I_UJCbuf7qR",
+				countryLinkContainer: "_2G12SFsZiv6I_UJCbuf7qR"
 			}
 		},
 		"./src/reddit/components/SidebarFooter/index.tsx": function(e, t, n) {
@@ -11081,7 +11083,8 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), b = r.a.a("Link", m.a), h = Object(l.c)({
 				isNavbarLikeMwebEnabled: d.a
 			}), f = Object(a.b)(h), g = Object(c.u)({
-				isFrontpage: c.z
+				isFrontpage: c.A,
+				isCountrySitePage: c.y
 			});
 			t.a = g(f(e => e.isNavbarLikeMwebEnabled ? e.isFrontpage ? s.a.createElement(i.a, {
 				className: m.a.Widget,
@@ -11187,6 +11190,20 @@
 				href: "https://www.reddit.com/help/healthycommunities/"
 			}, p._("Mod policy", null, {
 				hk: "2gYc2T"
+			})))), e.isCountrySitePage && s.a.createElement("div", {
+				className: m.a.CountryLinkContainer
+			}, s.a.createElement("div", {
+				className: m.a.Column
+			}, s.a.createElement(b, {
+				href: "https://www.reddit.com"
+			}, p._("USA/Global", null, {
+				hk: "3nQepG"
+			}))), s.a.createElement("div", {
+				className: m.a.Column
+			}, s.a.createElement(b, {
+				href: "https://www.reddit.com/de/"
+			}, p._("Deutschland", null, {
+				hk: "383Vuj"
 			})))), s.a.createElement("div", {
 				className: m.a.Copyright
 			}, p._("Reddit Inc © {year} . All rights reserved", [p._param("year", (new Date).getFullYear().toString())], {
@@ -18216,7 +18233,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var o = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = o.eb
+			t.a = o.fb
 		},
 		"./src/reddit/hooks/usePostContext.ts": function(e, t, n) {
 			"use strict";
@@ -19336,7 +19353,7 @@
 			const b = Object(d.u)(),
 				h = Object(a.c)({
 					isEditing: l.i,
-					layout: (e, t) => t.forcedLayout || Object(d.Q)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(d.R)(e, t)
 				}),
 				f = Object(r.b)(h);
 			t.a = b(f(({
@@ -19353,7 +19370,7 @@
 				...f
 			}) => s.a.createElement("div", p({
 				className: Object(i.a)(e, m.a.styledContent, {
-					[m.a.mLargePostLayout]: b === c.g.Large || Object(d.N)(h),
+					[m.a.mLargePostLayout]: b === c.g.Large || Object(d.O)(h),
 					[m.a.mDisableFullScreen]: n && !l,
 					[m.a.mClassicWidth]: l,
 					[m.a.mIsEditing]: !!u,
@@ -23499,7 +23516,7 @@
 				fbt: yd
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), jd = () => {
 				const e = Object(r.d)(),
-					t = Object(y.eb)(),
+					t = Object(y.fb)(),
 					n = Object(r.e)(e => Object(y.r)(e, {
 						pageLayer: t
 					})),
@@ -24580,9 +24597,9 @@
 				pu = ne.a.div("TabContent", du.a),
 				bu = Object(y.u)({
 					draftId: y.v,
-					isPostCreationPage: y.F,
+					isPostCreationPage: y.G,
 					pageLayer: e => e,
-					sourcePostId: e => Object(y.W)(e).source_id
+					sourcePostId: e => Object(y.X)(e).source_id
 				}),
 				hu = Object(a.c)({
 					submissionType: w.a,
@@ -24591,7 +24608,7 @@
 					discardGoesBack: (e, {
 						pageLayer: t
 					}) => {
-						const n = Object(y.T)(e, {
+						const n = Object(y.U)(e, {
 							pageLayer: t
 						});
 						return !!n && "/" === n[0]
@@ -24933,7 +24950,7 @@
 						isPredictionCreationAllowed: t,
 						isApprovedUser: n
 					} = function() {
-						const [e, t] = s.a.useState(!1), [n, o] = s.a.useState(!1), a = Object(r.d)(), i = Object(y.eb)(), c = Object(r.e)(e => Object(y.r)(e, {
+						const [e, t] = s.a.useState(!1), [n, o] = s.a.useState(!1), a = Object(r.d)(), i = Object(y.fb)(), c = Object(r.e)(e => Object(y.r)(e, {
 							pageLayer: i
 						})), d = Object(r.e)(e => c && Object(be.h)(e, {
 							subredditId: c.id
@@ -26319,7 +26336,7 @@
 			};
 
 			function d() {
-				const e = Object(s.eb)(),
+				const e = Object(s.fb)(),
 					t = Object(o.e)(t => Object(s.r)(t, {
 						pageLayer: e
 					})),
@@ -26910,4 +26927,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.1bb77c3940f0b27dbf8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.51133bc79ac28b3e7431.js.map

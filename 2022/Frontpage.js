@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.a47fd3573cc5b1ee5fb9.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.51e774cee418b11d7c67.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -649,7 +649,7 @@
 					var o, i, l, d;
 					const u = n();
 					if (u.listings.postOrder.api.pending[e]) return;
-					const p = q.e[Object(U.Q)(u, {})];
+					const p = q.e[Object(U.R)(u, {})];
 					t.isMobile = Object(c.e)(u.meta.userAgent), t.recentPostIds = u.posts.recent, t.layout = p, t.useMockData = !!u.platform.currentPage && (!!u.platform.currentPage.queryParams.useMockData && Object(Q.b)(u)), a(le({
 						key: e
 					})); {
@@ -786,7 +786,7 @@
 									limit: l,
 									sort: i,
 									t: Object(W.a)(i, b),
-									layout: q.e[Object(U.Q)(n, {})],
+									layout: q.e[Object(U.R)(n, {})],
 									useMockData: e
 								}; {
 								const e = n.platform.lastPage,
@@ -3210,7 +3210,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!a.m[t]
 					},
-					importAsync: () => Promise.all([a.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~1f4a9acf"), a.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), a.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"), a.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), a.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), a.e("reddit-components-SidebarNativeAd")]).then(a.bind(null, "./src/reddit/components/SidebarNativeAd/index.tsx")),
+					importAsync: () => Promise.all([a.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), a.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), a.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"), a.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), a.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), a.e("reddit-components-SidebarNativeAd")]).then(a.bind(null, "./src/reddit/components/SidebarNativeAd/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -5461,14 +5461,14 @@
 				isVoteCountAnimationEnabled: Z.h,
 				isCountAnimShadowTestEnabled: Z.e,
 				isLoggedIn: G.J,
-				isPopular: I.E,
+				isPopular: I.F,
 				isRpanDuVisible: e => Object(W.a)(e, {
 					listingName: K.R
 				}),
 				rpanInjectionIndex: e => Object(W.b)(e, {
 					listingName: K.R
 				}),
-				layout: I.Q,
+				layout: I.R,
 				isBlockingInterstitialEnabled: R.b
 			}), se = () => Object(l.a)(V.k, te, ae, e => Object(W.a)(e, {
 				listingName: K.R
@@ -5936,7 +5936,7 @@
 				n = a("./src/reddit/constants/postLayout.ts"),
 				r = a("./src/reddit/contexts/PageLayer/index.tsx"),
 				c = a("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => n.e[Object(r.Q)(e, {})] === n.d.Card,
+			const o = e => n.e[Object(r.R)(e, {})] === n.d.Card,
 				i = e => Object(c.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: s.kb
@@ -6069,4 +6069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.a47fd3573cc5b1ee5fb9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.51e774cee418b11d7c67.js.map

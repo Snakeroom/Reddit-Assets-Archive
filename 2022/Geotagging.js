@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.fbd6330fa81f5a4372b0.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.8f3cedae994648d4ef7a.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, s) {
@@ -90,7 +90,7 @@
 				}(t, h, x(b, l)), {
 					highlightValue: S,
 					selectedIndex: v,
-					onKeyDown: C,
+					onKeyDown: O,
 					isClosed: k,
 					setClosed: j
 				} = function(e, t, s) {
@@ -122,7 +122,7 @@
 					className: Object(d.a)(y.a.geoInput, u),
 					name: N,
 					disabled: o,
-					onKeyDown: C,
+					onKeyDown: O,
 					value: S && S.name || t,
 					placeholder: n.fbt._("Add location", null, {
 						hk: "1BaqFd"
@@ -134,7 +134,7 @@
 						g(!0), c()
 					},
 					onBlur: () => g(!1)
-				}), f.length && !k ? a.a.createElement(O, {
+				}), f.length && !k ? a.a.createElement(C, {
 					id: l,
 					items: f.map(e => e.name),
 					selectedIndex: v,
@@ -145,7 +145,7 @@
 				}) : null)
 			}
 
-			function O(e) {
+			function C(e) {
 				const {
 					id: t,
 					items: s,
@@ -164,7 +164,7 @@
 					})
 				}, e)))
 			}
-			const C = () => {};
+			const O = () => {};
 
 			function k(e) {
 				const {
@@ -172,9 +172,9 @@
 					initialValue: s,
 					initialPlace: i,
 					disabled: l = !1,
-					onFocus: u = C,
-					onPlace: m = C,
-					onValue: b = C,
+					onFocus: u = O,
+					onPlace: m = O,
+					onValue: b = O,
 					inputClassName: p
 				} = e, h = function() {
 					const [e, t] = Object(r.useState)(!1);
@@ -287,7 +287,9 @@
 				Link: "_3Eyh3vRo5o4IfzVZXhaWAG",
 				link: "_3Eyh3vRo5o4IfzVZXhaWAG",
 				Copyright: "_34dh2eyzMvJfjCBLeoWiDD",
-				copyright: "_34dh2eyzMvJfjCBLeoWiDD"
+				copyright: "_34dh2eyzMvJfjCBLeoWiDD",
+				CountryLinkContainer: "_2G12SFsZiv6I_UJCbuf7qR",
+				countryLinkContainer: "_2G12SFsZiv6I_UJCbuf7qR"
 			}
 		},
 		"./src/reddit/components/SidebarFooter/index.tsx": function(e, t, s) {
@@ -307,7 +309,8 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), p = a.a.a("Link", m.a), h = Object(l.c)({
 				isNavbarLikeMwebEnabled: c.a
 			}), g = Object(i.b)(h), f = Object(d.u)({
-				isFrontpage: d.z
+				isFrontpage: d.A,
+				isCountrySitePage: d.y
 			});
 			t.a = f(g(e => e.isNavbarLikeMwebEnabled ? e.isFrontpage ? r.a.createElement(o.a, {
 				className: m.a.Widget,
@@ -413,6 +416,20 @@
 				href: "https://www.reddit.com/help/healthycommunities/"
 			}, b._("Mod policy", null, {
 				hk: "2gYc2T"
+			})))), e.isCountrySitePage && r.a.createElement("div", {
+				className: m.a.CountryLinkContainer
+			}, r.a.createElement("div", {
+				className: m.a.Column
+			}, r.a.createElement(p, {
+				href: "https://www.reddit.com"
+			}, b._("USA/Global", null, {
+				hk: "3nQepG"
+			}))), r.a.createElement("div", {
+				className: m.a.Column
+			}, r.a.createElement(p, {
+				href: "https://www.reddit.com/de/"
+			}, b._("Deutschland", null, {
+				hk: "383Vuj"
 			})))), r.a.createElement("div", {
 				className: m.a.Copyright
 			}, b._("Reddit Inc © {year} . All rights reserved", [b._param("year", (new Date).getFullYear().toString())], {
@@ -483,9 +500,9 @@
 				}).apply(this, arguments)
 			}
 			const v = d.e[1] + 24,
-				O = f.f + 8,
-				C = O + 152 + 16,
-				k = C + v + 8,
+				C = f.f + 8,
+				O = C + 152 + 16,
+				k = O + v + 8,
 				j = S.a.div("Container", E.a),
 				N = S.a.wrapped(({
 					className: e,
@@ -495,7 +512,7 @@
 					className: e,
 					isOverlay: t,
 					style: {
-						top: `calc(100vh - ${t?O:8}px)`
+						top: `calc(100vh - ${t?C:8}px)`
 					}
 				}, s)), "BackToTop", E.a),
 				w = ({
@@ -513,7 +530,7 @@
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
 						shouldAdSticky: this.windowHeight > k,
-						shouldFooterSticky: this.windowHeight > C
+						shouldFooterSticky: this.windowHeight > O
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
 						const {
@@ -615,17 +632,17 @@
 				E = s.n(_);
 			const {
 				fbt: S
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = u.a.div("BladeContainer", E.a), v = u.a.wrapped(h.a, "CloseIcon", E.a), O = u.a.div("LoadingTitleContainer", E.a), C = u.a.div("LoadingNavContainer", E.a), k = u.a.div("ShortLoadingNav", E.a), j = u.a.wrapped(p.a, "ThemedChevron", E.a), N = ({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = u.a.div("BladeContainer", E.a), v = u.a.wrapped(h.a, "CloseIcon", E.a), C = u.a.div("LoadingTitleContainer", E.a), O = u.a.div("LoadingNavContainer", E.a), k = u.a.div("ShortLoadingNav", E.a), j = u.a.wrapped(p.a, "ThemedChevron", E.a), N = ({
 				...e
 			}) => i.a.createElement(y, null, i.a.createElement(v, null), i.a.createElement(b.k, null, i.a.createElement(b.p, null, S._("Back to mod tools", null, {
 				hk: "1YCI0W"
-			})), i.a.createElement(b.o, null, i.a.createElement(O, null, i.a.createElement("div", {
+			})), i.a.createElement(b.o, null, i.a.createElement(C, null, i.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingTitle, e.isLoading && E.a.loading)
-			})), i.a.createElement(C, null, i.a.createElement("div", {
+			})), i.a.createElement(O, null, i.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
-			}), i.a.createElement(j, null)), i.a.createElement(C, null, i.a.createElement(k, null), i.a.createElement(j, null)), i.a.createElement(C, null, i.a.createElement("div", {
+			}), i.a.createElement(j, null)), i.a.createElement(O, null, i.a.createElement(k, null), i.a.createElement(j, null)), i.a.createElement(O, null, i.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
-			}), i.a.createElement(j, null)), i.a.createElement(C, null, i.a.createElement(k, null), i.a.createElement(j, null)), i.a.createElement(C, null, i.a.createElement("div", {
+			}), i.a.createElement(j, null)), i.a.createElement(O, null, i.a.createElement(k, null), i.a.createElement(j, null)), i.a.createElement(O, null, i.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingNav, e.isLoading && E.a.loading)
 			}), i.a.createElement(j, null))))), w = Object(c.a)({
 				getComponent: () => Object(m.a)(() => Promise.all([s.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), s.e("StructuredStyles")]).then(s.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
@@ -798,11 +815,11 @@
 				S = s("./src/reddit/helpers/name/index.ts"),
 				y = s("./src/reddit/helpers/widgets/index.tsx"),
 				v = s("./src/reddit/selectors/subreddit.ts"),
-				O = s("./src/reddit/selectors/user.ts"),
-				C = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
-				k = s.n(C);
+				C = s("./src/reddit/selectors/user.ts"),
+				O = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
+				k = s.n(O);
 			const j = Object(h.c)({
-				isLoggedIn: O.J,
+				isLoggedIn: C.J,
 				subreddit: v.R,
 				subredditAboutInfo: v.s
 			});
@@ -1009,8 +1026,8 @@
 					const t = S(e);
 					return Object(x.f)(t)
 				};
-			var O = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
-				C = s.n(O);
+			var C = s("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
+				O = s.n(C);
 			const {
 				fbt: k
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = Object(u.u)(), N = Object(a.b)(() => Object(i.c)({
@@ -1068,37 +1085,37 @@
 						title: u,
 						titleClassName: b,
 						truncateThreshold: p
-					} = this.props, h = s ? C.a.widgetContentOnly : C.a.widgetContent, g = !n && this.props.styles, f = g ? this.getWidgetBackgroundStyles() : {}, x = g ? this.getWidgetHeaderStyles() : {};
+					} = this.props, h = s ? O.a.widgetContentOnly : O.a.widgetContent, g = !n && this.props.styles, f = g ? this.getWidgetBackgroundStyles() : {}, x = g ? this.getWidgetHeaderStyles() : {};
 					return r.a.createElement("div", {
-						className: Object(o.a)(t, C.a.widgetBackground, {
-							[C.a.redditStyle]: n,
-							[C.a.clickable]: !!d,
-							[C.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
+						className: Object(o.a)(t, O.a.widgetBackground, {
+							[O.a.redditStyle]: n,
+							[O.a.clickable]: !!d,
+							[O.a.truncatedGradient]: this.state.isTruncated && !this.props.noGradient
 						}),
 						"data-redditstyle": n,
 						onClick: d,
 						style: f
 					}, u && r.a.createElement("div", {
-						className: Object(o.a)(C.a.widgetHeader, {
-							[C.a.clickable]: !!l
+						className: Object(o.a)(O.a.widgetHeader, {
+							[O.a.clickable]: !!l
 						}),
 						id: i,
 						style: x,
 						onClick: l
 					}, r.a.createElement("div", {
-						className: Object(o.a)(C.a.widgetTitle, b)
+						className: Object(o.a)(O.a.widgetTitle, b)
 					}, r.a.createElement(c.b, {
 						type: c.a.Widget
 					}, u)), a), r.a.createElement("div", {
 						className: Object(o.a)(h, {
-							[C.a.truncated]: this.state.isTruncated
+							[O.a.truncated]: this.state.isTruncated
 						}),
 						ref: this.contentRef,
 						style: {
 							maxHeight: this.state.isTruncated ? p : "none"
 						}
 					}, e), this.state.isTruncated && r.a.createElement(m.r, {
-						className: C.a.seeMore,
+						className: O.a.seeMore,
 						onClick: this.handleSeeMoreClick
 					}, k._("See More", null, {
 						hk: "4w47Qu"
@@ -1364,9 +1381,9 @@
 					to: "/"
 				}, r.a.createElement(_.l, null, "Go Home")))
 			}
-			var O = s("./src/config.ts");
+			var C = s("./src/config.ts");
 			const {
-				fbt: C
+				fbt: O
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 
 			function k() {
@@ -1374,14 +1391,14 @@
 					className: S.a.header
 				}, r.a.createElement("img", {
 					className: S.a.headerImage,
-					src: `${O.a.assetPath}/img/mtm-snoo.png`
+					src: `${C.a.assetPath}/img/mtm-snoo.png`
 				}), r.a.createElement("div", null, r.a.createElement("p", {
 					className: S.a.headerText1
-				}, C._("Okay, lets do this", null, {
+				}, O._("Okay, lets do this", null, {
 					hk: "1AIkwG"
 				})), r.a.createElement("p", {
 					className: S.a.headerText2
-				}, C._("Thank you for your help. Add a location to the communities below, and we will do the rest.", null, {
+				}, O._("Thank you for your help. Add a location to the communities below, and we will do the rest.", null, {
 					hk: "fVUF3"
 				}))))
 			}
@@ -1450,8 +1467,8 @@
 					}
 				})
 			}
-			var K = s("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
-				U = s("./src/reddit/models/Toast/index.ts");
+			var U = s("./src/reddit/icons/svgs/HamburgerClose/index.tsx"),
+				K = s("./src/reddit/models/Toast/index.ts");
 			const {
 				fbt: z
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
@@ -1480,7 +1497,7 @@
 
 				function y() {
 					o(Object(j.f)({
-						kind: U.b.SuccessMod,
+						kind: K.b.SuccessMod,
 						text: z._("Nice work!", null, {
 							hk: "2Wu6gX"
 						})
@@ -1503,7 +1520,7 @@
 					onClick: function() {
 						Y(t.id), E(R(t)), f(), s(t.id)
 					}
-				}, r.a.createElement(K.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
+				}, r.a.createElement(U.a, null))), r.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? r.a.createElement("div", {
 					className: S.a.questionContainer
 				}, r.a.createElement("div", {
 					className: S.a.question
@@ -1538,7 +1555,7 @@
 							sessionId: n
 						});
 						if (u(!1), !r.ok) return o(Object(j.f)({
-							kind: U.b.Error,
+							kind: K.b.Error,
 							text: z._("Something went wrong", null, {
 								hk: "2PnKbu"
 							}),
@@ -1648,4 +1665,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.fbd6330fa81f5a4372b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.8f3cedae994648d4ef7a.js.map

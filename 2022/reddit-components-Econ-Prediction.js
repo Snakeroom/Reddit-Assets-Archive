@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c4af5f41baf83ca0ad0d.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.cdaf4e945e8939821892.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -672,9 +672,9 @@
 				}))
 			}
 			var Q = n("./src/reddit/components/Econ/Prediction/TournamentTokenIcon/index.tsx"),
-				Z = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
-				J = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionResolvedEducationMessage/index.m.less"),
-				$ = n.n(J);
+				J = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
+				Z = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionResolvedEducationMessage/index.m.less"),
+				$ = n.n(Z);
 			const {
 				fbt: ee
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), te = ({
@@ -692,7 +692,7 @@
 				}) => e === o)) || void 0 === t ? void 0 : t.userStakeAmount) || 0, u = n ? r.a.createElement(Q.a, {
 					className: $.a.coinIcon,
 					tournamentId: n
-				}) : r.a.createElement(Z.a, {
+				}) : r.a.createElement(J.a, {
 					className: $.a.coinIcon
 				});
 				return c && !d ? r.a.createElement("div", null, r.a.createElement(Y.a, {
@@ -821,7 +821,7 @@
 					totalVoters: c
 				}), r.a.createElement("span", null, "·")), l && o > 0 && r.a.createElement("div", {
 					className: ie.a.statusBar
-				}, r.a.createElement(Z.a, {
+				}, r.a.createElement(J.a, {
 					className: ie.a.coinIcon
 				}), o, " ", me._("added by participants", null, {
 					hk: "PSq3T"
@@ -906,8 +906,8 @@
 						subredditId: e
 					})),
 					d = Object(c.x)(s),
-					l = Object(c.I)(s),
-					u = Object(c.M)(s);
+					l = Object(c.J)(s),
+					u = Object(c.N)(s);
 				if (Object(be.a)(i.name), (null == a ? void 0 : a.tournamentId) !== t) return null;
 				const {
 					name: m,
@@ -952,7 +952,7 @@
 				}),
 				Be = Object(c.u)({
 					isCommentsPage: c.x,
-					isPredictionsPage: c.N
+					isPredictionsPage: c.O
 				}),
 				Te = ({
 					className: e,
@@ -1305,7 +1305,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = s.eb
+			t.a = s.fb
 		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, n) {
 			"use strict";
@@ -1982,4 +1982,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c4af5f41baf83ca0ad0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.cdaf4e945e8939821892.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.c2ef4f48dc78b642d29d.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.0ce5daba491db881aafc.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1902,7 +1902,7 @@
 			const h = Object(c.u)(),
 				b = Object(i.c)({
 					isEditing: u.i,
-					layout: (e, t) => t.forcedLayout || Object(c.Q)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(c.R)(e, t)
 				}),
 				f = Object(o.b)(b);
 			t.a = h(f(({
@@ -1919,7 +1919,7 @@
 				...f
 			}) => n.a.createElement("div", m({
 				className: Object(a.a)(e, p.a.styledContent, {
-					[p.a.mLargePostLayout]: h === d.g.Large || Object(c.N)(b),
+					[p.a.mLargePostLayout]: h === d.g.Large || Object(c.O)(b),
 					[p.a.mDisableFullScreen]: r && !u,
 					[p.a.mClassicWidth]: u,
 					[p.a.mIsEditing]: !!l,
@@ -4324,4 +4324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.c2ef4f48dc78b642d29d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.0ce5daba491db881aafc.js.map

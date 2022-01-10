@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.b2745006399a0811ae16.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.90ec43d35b9e1772f84d.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7707,7 +7707,9 @@
 				Link: "_3Eyh3vRo5o4IfzVZXhaWAG",
 				link: "_3Eyh3vRo5o4IfzVZXhaWAG",
 				Copyright: "_34dh2eyzMvJfjCBLeoWiDD",
-				copyright: "_34dh2eyzMvJfjCBLeoWiDD"
+				copyright: "_34dh2eyzMvJfjCBLeoWiDD",
+				CountryLinkContainer: "_2G12SFsZiv6I_UJCbuf7qR",
+				countryLinkContainer: "_2G12SFsZiv6I_UJCbuf7qR"
 			}
 		},
 		"./src/reddit/components/SidebarFooter/index.tsx": function(e, t, s) {
@@ -7727,7 +7729,8 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), b = i.a.a("Link", m.a), h = Object(l.c)({
 				isNavbarLikeMwebEnabled: c.a
 			}), f = Object(a.b)(h), g = Object(d.u)({
-				isFrontpage: d.z
+				isFrontpage: d.A,
+				isCountrySitePage: d.y
 			});
 			t.a = g(f(e => e.isNavbarLikeMwebEnabled ? e.isFrontpage ? n.a.createElement(o.a, {
 				className: m.a.Widget,
@@ -7833,6 +7836,20 @@
 				href: "https://www.reddit.com/help/healthycommunities/"
 			}, p._("Mod policy", null, {
 				hk: "2gYc2T"
+			})))), e.isCountrySitePage && n.a.createElement("div", {
+				className: m.a.CountryLinkContainer
+			}, n.a.createElement("div", {
+				className: m.a.Column
+			}, n.a.createElement(b, {
+				href: "https://www.reddit.com"
+			}, p._("USA/Global", null, {
+				hk: "3nQepG"
+			}))), n.a.createElement("div", {
+				className: m.a.Column
+			}, n.a.createElement(b, {
+				href: "https://www.reddit.com/de/"
+			}, p._("Deutschland", null, {
+				hk: "383Vuj"
 			})))), n.a.createElement("div", {
 				className: m.a.Copyright
 			}, p._("Reddit Inc © {year} . All rights reserved", [p._param("year", (new Date).getFullYear().toString())], {
@@ -9334,11 +9351,11 @@
 				autoplayPref: b.b,
 				crosspostRoot: p.d,
 				crosspostSubredditOrProfile: p.e,
-				flairStyleTemplate: c.U,
+				flairStyleTemplate: c.V,
 				hideNSFWPref: b.C,
 				isActive: p.j,
 				moderatorPermissions: u.l,
-				modModeEnabled: c.S,
+				modModeEnabled: c.T,
 				showEditFlair: m.a
 			}), (e, {
 				postId: t
@@ -9641,7 +9658,7 @@
 				renderingObjectInfo: e,
 				pageLayer: t
 			}) => {
-				if (e && (Object(n.b)(e) || Object(i.b)(e))) return Object(n.b)(e) ? a.SourceElement.Comment : Object(r.x)(t) ? a.SourceElement.PostDetail : Object(r.G)(t) ? a.SourceElement.ListingPostDetail : void 0
+				if (e && (Object(n.b)(e) || Object(i.b)(e))) return Object(n.b)(e) ? a.SourceElement.Comment : Object(r.x)(t) ? a.SourceElement.PostDetail : Object(r.H)(t) ? a.SourceElement.ListingPostDetail : void 0
 			}
 		},
 		"./src/reddit/helpers/trackers/subredditMentions.ts": function(e, t, s) {
@@ -10276,7 +10293,7 @@
 					contentGateInfo: (e, {
 						match: t
 					}) => Object(R.f)(e, t.params.subredditName),
-					layout: v.Q,
+					layout: v.R,
 					over18Pref: R.db,
 					subreddit: (e, {
 						match: t
@@ -10826,4 +10843,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.b2745006399a0811ae16.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.90ec43d35b9e1772f84d.js.map

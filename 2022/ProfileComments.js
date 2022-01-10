@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.70095e83bf51cb809765.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.015a8a33f1751e5f0105.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, s) {
@@ -11,15 +11,15 @@
 			})), s.d(t, "profileCommentsFailed", (function() {
 				return B
 			})), s.d(t, "profileCommentsRequested", (function() {
-				return q
+				return R
 			})), s.d(t, "moreItemsPending", (function() {
-				return D
+				return q
 			})), s.d(t, "moreItemsLoaded", (function() {
 				return M
 			})), s.d(t, "moreItemsFailed", (function() {
-				return K
+				return D
 			})), s.d(t, "moreItemsRequested", (function() {
-				return R
+				return K
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/lodash/difference.js"),
@@ -63,7 +63,7 @@
 			const F = Object(i.a)(T.f),
 				A = Object(i.a)(T.e),
 				B = Object(i.a)(T.d),
-				q = e => async (t, s, r) => {
+				R = e => async (t, s, r) => {
 					const {
 						queryParams: o,
 						params: n
@@ -110,7 +110,7 @@
 						meta: s().meta,
 						...S
 					})), await Promise.all([t(Object(p.c)(x)), t(Object(b.q)()), t(Object(l.b)()), t(m.o(x))])
-				}, D = Object(i.a)(T.c), M = Object(i.a)(T.b), K = Object(i.a)(T.a), R = () => async (e, t, {
+				}, q = Object(i.a)(T.c), M = Object(i.a)(T.b), D = Object(i.a)(T.a), K = () => async (e, t, {
 					apiContext: s
 				}) => {
 					const r = t(),
@@ -138,7 +138,7 @@
 						}),
 						y = x && x[b.token];
 					if (O || y) return;
-					e(D({
+					e(q({
 						key: f,
 						fetchedToken: b.token
 					}));
@@ -148,7 +148,7 @@
 						sort: m,
 						t: l,
 						...a()(i, g.m),
-						layout: Object(j.Q)(r, {}).toLowerCase()
+						layout: Object(j.R)(r, {}).toLowerCase()
 					}, Object(k.a)(r));
 					if (C.ok) {
 						const t = Object(S.f)(r, {
@@ -164,7 +164,7 @@
 							meta: r.meta,
 							...s
 						}))
-					} else e(K({
+					} else e(D({
 						account: C.body.data ? C.body.data.account : null,
 						error: C.error,
 						fetchedToken: b.token,
@@ -248,7 +248,7 @@
 						})(e, t)
 					}
 				});
-			var q = A(Object(i.b)(B)(e => {
+			var R = A(Object(i.b)(B)(e => {
 				const {
 					comment: t,
 					itemId: s,
@@ -264,7 +264,7 @@
 					width: m,
 					...l
 				} = e;
-				return a.a.createElement(D, l, r && a.a.createElement(h.a, {
+				return a.a.createElement(q, l, r && a.a.createElement(h.a, {
 					isFirst: !0
 				}, n === v.g.Large ? a.a.createElement(T, S({}, e, {
 					availableWidth: m,
@@ -285,7 +285,7 @@
 					showModTools: c
 				})))
 			}));
-			const D = Object(x.a)(e => a.a.createElement("div", {
+			const q = Object(x.a)(e => a.a.createElement("div", {
 				className: Object(j.a)(_.a.backgroundMargin, {
 					[_.a.isFirstInCommentList]: e.isFirstInCommentList,
 					[_.a.isLastInCommentList]: e.isLastInCommentList
@@ -295,16 +295,16 @@
 				}
 			}, e.children));
 			var M = s("./src/reddit/components/ProfileItemList/index.tsx"),
-				K = s("./node_modules/lodash/noop.js"),
-				R = s.n(K),
+				D = s("./node_modules/lodash/noop.js"),
+				K = s.n(D),
 				G = s("./src/reddit/actions/ads/index.ts"),
 				J = s("./src/reddit/actions/comment/list.ts"),
 				U = s("./src/reddit/actions/post.ts"),
 				H = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				Q = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
-				V = s("./src/reddit/helpers/trackers/post.ts"),
-				W = s("./src/reddit/featureFlags/index.ts"),
-				$ = s("./src/reddit/selectors/comments.ts"),
+				V = s("./src/reddit/helpers/postComponentForLayout/index.tsx"),
+				W = s("./src/reddit/helpers/trackers/post.ts"),
+				$ = s("./src/reddit/featureFlags/index.ts"),
+				Q = s("./src/reddit/selectors/comments.ts"),
 				X = s("./src/reddit/selectors/posts.ts"),
 				Z = s("./src/reddit/selectors/profileComments.ts"),
 				Y = s("./src/reddit/selectors/subreddit.ts"),
@@ -315,12 +315,12 @@
 					apiError: Z.a,
 					apiPending: Z.b,
 					currentUser: ee.k,
-					measureScrollFPS: W.d.measureScrollFPS,
-					layout: N.Q,
+					measureScrollFPS: $.d.measureScrollFPS,
+					layout: N.R,
 					loadMore: Z.d,
 					subredditsById: Y.Y,
 					viewportDataLoaded: z.a,
-					commentsById: $.q,
+					commentsById: Q.q,
 					itemIds: Z.f,
 					itemIdToPostId: Z.e,
 					postsById: X.K,
@@ -355,14 +355,14 @@
 						}))
 					},
 					openPost: t => e(Object(U.L)(t)),
-					fireAdPixelsOfType: R.a,
-					trackOnPostEnteredViewport: R.a
+					fireAdPixelsOfType: K.a,
+					trackOnPostEnteredViewport: K.a
 				}), (e, t, s) => ({
 					...e,
 					...t,
 					...s,
-					postClickEventFactory: (e, t) => Object(V.h)(e, t),
-					postComponentForLayout: Q.b
+					postClickEventFactory: (e, t) => Object(W.h)(e, t),
+					postComponentForLayout: V.b
 				}));
 
 			function ne() {
@@ -374,7 +374,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ae = e => a.a.createElement(q, ne({}, e, {
+			const ae = e => a.a.createElement(R, ne({}, e, {
 					allowModToolsUnderComments: !0
 				})),
 				ie = (e => Object(H.c)(te(oe(e))))(M.a);
@@ -403,9 +403,9 @@
 				}).apply(this, arguments)
 			}
 			const Ce = Object(N.u)(),
-				Pe = Object(c.a)(N.D, ee.db, (e, {
+				Pe = Object(c.a)(N.E, ee.db, (e, {
 					location: t
-				}) => o()([...Object(m.a)(t.search)]), N.Q, (e, {
+				}) => o()([...Object(m.a)(t.search)]), N.R, (e, {
 					match: t
 				}) => t.params.profileName, (e, {
 					match: t
@@ -517,4 +517,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.70095e83bf51cb809765.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.015a8a33f1751e5f0105.js.map

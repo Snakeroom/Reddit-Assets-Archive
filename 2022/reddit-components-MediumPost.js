@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.d70a4cae26c828ca40d4.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.1b601ec349e0bff3eeb6.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -2007,7 +2007,7 @@
 			}
 			const te = () => Object(a.c)({
 					crosspost: z.d,
-					flairStyleTemplate: w.U,
+					flairStyleTemplate: w.V,
 					isActive: z.j,
 					isCurrentUserProfilePost: z.l,
 					showPromotedCTA: G.a,
@@ -2514,8 +2514,8 @@
 					return n ? `${s}--${n}` : s
 				},
 				U = Object(b.u)({
-					isProfilePostListing: b.K,
-					isSubreddit: b.M,
+					isProfilePostListing: b.L,
+					isSubreddit: b.N,
 					pageLayer: e => e
 				}),
 				V = Object(a.c)({
@@ -2524,7 +2524,7 @@
 					}) => Object(P.q)(e, {
 						postId: t.id
 					}),
-					modModeEnabled: b.S
+					modModeEnabled: b.T
 				}),
 				W = Object(i.b)(V, (e, t) => ({
 					onHideTooltip: () => e(Object(l.i)()),
@@ -3252,7 +3252,7 @@
 				}
 			}
 			t.c = r.a.memo((function(e) {
-				const t = Object(p.eb)(),
+				const t = Object(p.fb)(),
 					n = Object(p.w)(t),
 					s = Object(q.a)(),
 					o = Object(i.e)(o => X(o, {
@@ -5004,4 +5004,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.d70a4cae26c828ca40d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.1b601ec349e0bff3eeb6.js.map

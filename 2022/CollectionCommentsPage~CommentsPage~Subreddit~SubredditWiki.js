@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.3604a1184e851959850f.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.8b651627438dc5c9ee2f.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -1322,7 +1322,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!r.m[t]
 					},
-					importAsync: () => Promise.all([r.e("CollectionCommentsPage~CommentsPage~FramedGild~GildModal~GovernanceReleaseNotesModal~MembershipPaywa~1f4a9acf"), r.e("CollectionCommentsPage~CommentsPage~Frontpage~GovernanceReleaseNotesModal~ModListing~ModQueuePages~M~eb6c0aee"), r.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"), r.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), r.e("reddit-components-SidebarNativeAd")]).then(r.bind(null, "./src/reddit/components/SidebarNativeAd/index.tsx")),
+					importAsync: () => Promise.all([r.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), r.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), r.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"), r.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), r.e("reddit-components-SidebarNativeAd")]).then(r.bind(null, "./src/reddit/components/SidebarNativeAd/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -1620,14 +1620,14 @@
 						to: e.url,
 						isActive: t,
 						onClick: e => {
-							Object(d.G)(n) && !Object(d.N)(n) && e.preventDefault(), r()
+							Object(d.H)(n) && !Object(d.O)(n) && e.preventDefault(), r()
 						}
 					}, L._("Polls", null, {
 						hk: "1vWsZx"
 					})) : null
 				}),
-				B = r("./src/reddit/actions/economics/predictions/index.ts"),
-				R = r("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
+				R = r("./src/reddit/actions/economics/predictions/index.ts"),
+				B = r("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
 				D = r("./src/reddit/contexts/PageLayer/selectors.ts"),
 				H = r("./src/reddit/helpers/trackers/predictions.ts"),
 				W = r("./src/reddit/hooks/useTracking.ts"),
@@ -1640,7 +1640,7 @@
 				const t = Object(a.d)(),
 					r = Object(T.a)(),
 					i = Object(W.a)(),
-					o = Object(D.N)(r),
+					o = Object(D.O)(r),
 					[d, c] = Object(n.useState)(!1),
 					l = Object(a.e)(t => Object(F.R)(t, {
 						subredditId: e
@@ -1654,9 +1654,9 @@
 					p = Object(a.e)(t => Object(U.e)(t, {
 						subredditId: e
 					}));
-				Object(R.a)(e);
+				Object(B.a)(e);
 				return Object(n.useEffect)(() => {
-					!u || d || m || o || (t(Object(B.m)(l.name)), c(!0))
+					!u || d || m || o || (t(Object(R.m)(l.name)), c(!0))
 				}, [u, d, m, o, t, l.name]), u && m ? s.a.createElement(j, {
 					className: x.a.predictionsFilter,
 					isActive: o,
@@ -1675,16 +1675,16 @@
 					hk: "1o89m4"
 				}))) : null
 			};
-			var G = r("./src/lib/constants/index.ts");
+			var q = r("./src/lib/constants/index.ts");
 			const {
-				fbt: q
+				fbt: G
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			const Z = Object(d.u)(),
-				Y = [G.Mb.SUBREDDIT, G.Mb.COMMENTS, G.Mb.COLLECTION_COMMENTS],
+				Y = [q.Mb.SUBREDDIT, q.Mb.COMMENTS, q.Mb.COLLECTION_COMMENTS],
 				J = Object(i.c)({
 					isMetaFilterEnabled: (e, t) => !!e.subreddits.appliedFilters.meta[t.subredditId],
 					isPostsRoute: (e, t) => !!t.pageLayer && !!t.pageLayer.meta && Y.indexOf(t.pageLayer.meta.name) > -1,
-					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.N)(t.pageLayer)
+					isPredictionsPage: (e, t) => !!t.pageLayer && Object(d.O)(t.pageLayer)
 				});
 			var K = Z(Object(a.b)(J, (e, t) => ({
 					onTurnOffMetaFilter: () => e(Object(P.p)({
@@ -1707,7 +1707,7 @@
 						onClick: e => {
 							r && (e.preventDefault(), o())
 						}
-					}, q._("Posts", null, {
+					}, G._("Posts", null, {
 						hk: "36nXSp"
 					}))
 				}))),
@@ -1759,7 +1759,7 @@
 					homeUrl: t,
 					isTopBannerVariant: r,
 					pageLayer: n
-				} = e, a = !!n && !!n.meta && n.meta.name === G.Mb.SUBREDDIT_WIKI, i = `wiki/${ie.i}`, o = t.endsWith("/") ? t + i : `${t}/${i}`;
+				} = e, a = !!n && !!n.meta && n.meta.name === q.Mb.SUBREDDIT_WIKI, i = `wiki/${ie.i}`, o = t.endsWith("/") ? t + i : `${t}/${i}`;
 				return s.a.createElement(y, {
 					isActive: a,
 					isTopBannerVariant: r,
@@ -1772,7 +1772,7 @@
 			const le = Object(c.a)("spPolls", A),
 				ue = Object(d.u)(),
 				me = Object(i.c)({
-					layout: d.Q,
+					layout: d.R,
 					widget: l.f
 				}),
 				pe = Object(a.b)(me);
@@ -1919,8 +1919,8 @@
 			}
 			const k = 129,
 				O = Object(h.u)({
-					filterName: e => Object(h.V)(e)[b.g],
-					url: e => Object(h.db)(e)
+					filterName: e => Object(h.W)(e)[b.g],
+					url: e => Object(h.eb)(e)
 				}),
 				N = Object(o.c)({
 					subredditId: (e, t) => Object(_.C)(e, t.subredditName)
@@ -2167,7 +2167,7 @@
 		"./src/reddit/components/Widgets/Widget/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return Be
+				return Re
 			}));
 			var n = r("./node_modules/react/index.js"),
 				s = r.n(n),
@@ -2281,8 +2281,8 @@
 				A = {
 					isExpanded: !1
 				},
-				B = m.a.wrapped(o.a, "RawHTMLDisplay", L.a),
-				R = m.a.div("EventContainer", L.a),
+				R = m.a.wrapped(o.a, "RawHTMLDisplay", L.a),
+				B = m.a.div("EventContainer", L.a),
 				D = m.a.div("EventTitle", L.a),
 				H = m.a.div("EventDate", L.a),
 				W = m.a.div("EventLocation", L.a),
@@ -2310,14 +2310,14 @@
 					}))) : s.a.createElement(U, null, e.text)
 				}
 			}
-			var G = e => s.a.createElement(d.a, {
+			var q = e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, e.widget.data.map((t, r) => s.a.createElement(R, {
+				}, e.widget.data.map((t, r) => s.a.createElement(B, {
 					key: `${r}-${t.title}`
-				}, s.a.createElement(D, null, t.titleHtml ? s.a.createElement(B, {
+				}, s.a.createElement(D, null, t.titleHtml ? s.a.createElement(R, {
 					html: t.titleHtml
 				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(H, null, s.a.createElement(F.a, {
 					seconds: t.startTime,
@@ -2327,14 +2327,14 @@
 						r = t.getHours(),
 						n = t.getMinutes();
 					return n < 10 ? `${r}:0${n}` : `${r}:${n}`
-				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(W, null, t.locationHtml ? s.a.createElement(B, {
+				})(t.startTime), " ")), t.location && e.widget.configuration.showLocation && s.a.createElement(W, null, t.locationHtml ? s.a.createElement(R, {
 					html: t.locationHtml
 				}) : t.location), t.description && e.widget.configuration.showDescription && s.a.createElement(V, {
 					text: t.description
 				})))),
-				q = r("./src/reddit/components/TrackingHelper/index.tsx"),
+				G = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				Z = r("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx");
-			var Y = Object(q.c)(e => s.a.createElement(Z.b, {
+			var Y = Object(G.c)(e => s.a.createElement(Z.b, {
 				className: e.className,
 				communities: e.widget.data,
 				sendEvent: e.sendEvent,
@@ -2542,7 +2542,7 @@
 				Me = r("./src/reddit/components/Widgets/Base/index.tsx");
 			var Ae = e => s.a.createElement(Me.b, null, "This widget hasn't been implemented yet!");
 
-			function Be(e) {
+			function Re(e) {
 				const t = function(e) {
 					switch (e.kind) {
 						case "moderators":
@@ -2556,7 +2556,7 @@
 						case "community-list":
 							return Y;
 						case "calendar":
-							return G;
+							return q;
 						case "image":
 							return oe;
 						case "custom":
@@ -3156,7 +3156,7 @@
 				s = r("./src/reddit/constants/postLayout.ts"),
 				a = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				i = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => s.e[Object(a.Q)(e, {})] === s.d.Card,
+			const o = e => s.e[Object(a.R)(e, {})] === s.d.Card,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: n.kb
@@ -3170,4 +3170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.3604a1184e851959850f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.8b651627438dc5c9ee2f.js.map

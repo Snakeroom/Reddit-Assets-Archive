@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.93234afbbfdbfd0b2c86.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.56dc2807f42a8df9cf97.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -748,14 +748,14 @@
 					return G[e]
 				}))
 			}
-			var X = {
+			var Z = {
 				start: "end",
 				end: "start"
 			};
 
-			function Z(e) {
+			function X(e) {
 				return e.replace(/start|end/g, (function(e) {
-					return X[e]
+					return Z[e]
 				}))
 			}
 
@@ -1079,7 +1079,7 @@
 								for (var r = n.mainAxis, o = void 0 === r || r, i = n.altAxis, a = void 0 === i || i, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, m = n.altBoundary, p = n.flipVariations, f = void 0 === p || p, b = n.allowedAutoPlacements, h = t.options.placement, x = V(h), E = c || (x === h || !f ? [Q(h)] : function(e) {
 										if (V(e) === S) return [];
 										var t = Q(e);
-										return [Z(e), t, Z(t)]
+										return [X(e), t, X(t)]
 									}(h)), _ = [h].concat(E).reduce((function(e, n) {
 										return e.concat(V(n) === S ? function(e, t) {
 											void 0 === t && (t = {});
@@ -1222,11 +1222,11 @@
 											bottom: 0,
 											left: 0
 										},
-										X = Q[A],
-										Z = Q[L],
+										Z = Q[A],
+										X = Q[L],
 										J = re(0, P[D], G[D]),
-										K = S ? P[D] / 2 - U - J - X - T : Y - J - X - T,
-										$ = S ? -P[D] / 2 + U + J + Z + T : q + J + Z + T,
+										K = S ? P[D] / 2 - U - J - Z - T : Y - J - Z - T,
+										$ = S ? -P[D] / 2 + U + J + X + T : q + J + X + T,
 										ee = t.elements.arrow && v(t.elements.arrow),
 										te = ee ? "y" === w ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][w] : 0,
@@ -2016,8 +2016,8 @@
 				z = n("./src/reddit/contexts/Post/index.tsx"),
 				G = n("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
 				Q = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
-				X = n("./src/reddit/helpers/hasModPostPermissions/index.ts"),
-				Z = n("./src/reddit/helpers/search/renderMedia.tsx"),
+				Z = n("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				X = n("./src/reddit/helpers/search/renderMedia.tsx"),
 				J = n("./src/reddit/helpers/styles/mixins/index.tsx"),
 				K = n("./src/reddit/helpers/styles/mixins/index.m.less"),
 				$ = n.n(K),
@@ -2078,10 +2078,10 @@
 					}, [f, le, me.id, Ce]);
 					const Se = fe ? void 0 : E,
 						we = n || void 0,
-						je = Object(X.a)(oe),
+						je = Object(Z.a)(oe),
 						ke = Object(G.a)(oe),
 						Ne = Object(Q.a)(oe),
-						Pe = ie && X.a,
+						Pe = ie && Z.a,
 						Ie = Object(j.d)(me),
 						Te = Object(N.c)(me),
 						Me = !!me.media && me.media.type === V.o.RTJSON,
@@ -2220,7 +2220,7 @@
 							hide: !Pe,
 							report: !Pe
 						})
-					})), r.a.createElement(S.d, null))), Object(Z.a)(me, te.a, be, f, ye, K)));
+					})), r.a.createElement(S.d, null))), Object(X.a)(me, te.a, be, f, ye, K)));
 					return r.a.createElement(F.b, null, We)
 				}),
 				re = Object(z.b)(Object(Y.a)(se));
@@ -3296,7 +3296,7 @@
 						type: n
 					}, r) : r)
 				},
-				X = ({
+				Z = ({
 					className: e,
 					disableVisited: t,
 					titleColor: n,
@@ -3307,7 +3307,7 @@
 						[U.a.isVisitedEnabled]: !t
 					})
 				}), s),
-				Z = ({
+				X = ({
 					disableVisited: e,
 					nowrap: t,
 					className: n,
@@ -3335,7 +3335,7 @@
 					} = t, r = Object(i.d)(), a = Object(W.a)(), c = Object(H.a)(m.fd) === m.md.Enabled, l = Object(i.e)(R.b), u = e => {
 						!l || t.media && Object(g.H)(t.media) || (e.preventDefault(), r(Object(x.ab)(Object(_.b)(t.permalink), t.id)))
 					};
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(Z, {
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(X, {
 						nowrap: e.nowrap
 					}, o.a.createElement($, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return o.a.createElement(f.b, {
@@ -3346,7 +3346,7 @@
 					}, o.a.createElement($, e)); {
 						const r = t.media && Object(g.H)(t.media) ? Object(v.c)(t.id, n.name) : t.permalink,
 							i = e.isCommentPermalink ? Object(_.b)(r) : c ? Object(h.a)(r, void 0, a) : Object(h.a)(r);
-						return o.a.createElement(Z, {
+						return o.a.createElement(X, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, s ? ((e, t) => {
@@ -3359,7 +3359,7 @@
 								postId: e.id,
 								source: n
 							}, o.a.createElement($, t)) : o.a.createElement($, t)
-						})(t, e) : o.a.createElement(X, {
+						})(t, e) : o.a.createElement(Z, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -3475,7 +3475,7 @@
 				}
 			}
 			t.c = o.a.memo((function(e) {
-				const t = Object(p.eb)(),
+				const t = Object(p.fb)(),
 					n = Object(p.w)(t),
 					s = Object(Y.a)(),
 					r = Object(i.e)(r => J(r, {
@@ -3528,14 +3528,14 @@
 					isLoggedIn: x.J,
 					showPromotedCTA: h.a,
 					moderatorPermissions: p.l,
-					modModeEnabled: d.S,
+					modModeEnabled: d.T,
 					poll: (e, t) => {
 						const n = e.posts.metaMap[t.postId];
 						return n ? e.polls.models[n] : null
 					},
 					showEditFlair: f.a,
 					showMedia: d.s,
-					flairStyleTemplate: d.U
+					flairStyleTemplate: d.V
 				},
 				_ = (e, {
 					postId: t
@@ -3567,7 +3567,7 @@
 				c = n("./src/reddit/connectors/SearchPost/searchSyntaxHighlight.tsx"),
 				d = n("./src/reddit/connectors/ClassicPost/index.tsx");
 			const l = Object(a.u)({
-					searchQuery: a.Y
+					searchQuery: a.Z
 				}),
 				u = Object(o.b)(() => Object(i.c)(d.c), d.b, (e, t, n) => ({
 					...e,
@@ -4721,4 +4721,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.93234afbbfdbfd0b2c86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.56dc2807f42a8df9cf97.js.map

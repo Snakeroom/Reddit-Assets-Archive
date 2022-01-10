@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.88e2acd2e9fd6f50af6e.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailCollectionBanner.4597a1ffef5dbf3f143f.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailCollectionBanner"], {
 		"./src/reddit/components/EmailCollection/Banner/index.m.less": function(e, t, s) {
@@ -233,7 +233,7 @@
 				h = s("./src/lib/lessComponent.tsx");
 			const v = Object(m.u)(),
 				b = Object(r.c)({
-					layout: m.Q
+					layout: m.R
 				}),
 				x = Object(o.b)(b);
 			class f extends a.a.Component {
@@ -362,4 +362,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.88e2acd2e9fd6f50af6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailCollectionBanner.4597a1ffef5dbf3f143f.js.map

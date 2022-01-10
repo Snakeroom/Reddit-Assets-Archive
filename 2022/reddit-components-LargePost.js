@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.bb551c360de62f20dda3.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.5042ad01bbe52877fbd9.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2357,13 +2357,13 @@
 					autoplayPref: j.b,
 					activeModalId: O.a,
 					hideNSFWPref: j.C,
-					flairStyleTemplate: re.U,
+					flairStyleTemplate: re.V,
 					isCurrentUserProfilePost: w.l,
 					isLoggedIn: j.J,
 					isActive: w.j,
 					showPromotedCTA: xe.a,
 					moderatorPermissions: C.l,
-					modModeEnabled: re.S,
+					modModeEnabled: re.T,
 					posts: Se,
 					postHeightVariant: be,
 					shouldShowNsfwListingBelow: ye.b,
@@ -3484,7 +3484,7 @@
 				}
 			}
 			t.c = r.a.memo((function(e) {
-				const t = Object(p.eb)(),
+				const t = Object(p.fb)(),
 					n = Object(p.w)(t),
 					s = Object(Y.a)(),
 					o = Object(i.e)(o => J(o, {
@@ -4755,4 +4755,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.bb551c360de62f20dda3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.5042ad01bbe52877fbd9.js.map

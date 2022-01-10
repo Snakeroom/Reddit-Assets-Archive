@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.abf58c30ed3e0435f1c7.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.ffb7377f825a03c615ed.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -805,7 +805,7 @@
 						profileName: x
 					} = p;
 					let w = !1;
-					const E = c.e[Object(m.Q)(s(), {})],
+					const E = c.e[Object(m.R)(s(), {})],
 						j = x.toLowerCase(),
 						k = {
 							...n()(e.queryParams, u.m),
@@ -3746,7 +3746,9 @@
 				Link: "_3Eyh3vRo5o4IfzVZXhaWAG",
 				link: "_3Eyh3vRo5o4IfzVZXhaWAG",
 				Copyright: "_34dh2eyzMvJfjCBLeoWiDD",
-				copyright: "_34dh2eyzMvJfjCBLeoWiDD"
+				copyright: "_34dh2eyzMvJfjCBLeoWiDD",
+				CountryLinkContainer: "_2G12SFsZiv6I_UJCbuf7qR",
+				countryLinkContainer: "_2G12SFsZiv6I_UJCbuf7qR"
 			}
 		},
 		"./src/reddit/components/SidebarFooter/index.tsx": function(e, t, s) {
@@ -3766,7 +3768,8 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), h = i.a.a("Link", m.a), b = Object(c.c)({
 				isNavbarLikeMwebEnabled: l.a
 			}), f = Object(o.b)(b), v = Object(d.u)({
-				isFrontpage: d.z
+				isFrontpage: d.A,
+				isCountrySitePage: d.y
 			});
 			t.a = v(f(e => e.isNavbarLikeMwebEnabled ? e.isFrontpage ? n.a.createElement(a.a, {
 				className: m.a.Widget,
@@ -3872,6 +3875,20 @@
 				href: "https://www.reddit.com/help/healthycommunities/"
 			}, p._("Mod policy", null, {
 				hk: "2gYc2T"
+			})))), e.isCountrySitePage && n.a.createElement("div", {
+				className: m.a.CountryLinkContainer
+			}, n.a.createElement("div", {
+				className: m.a.Column
+			}, n.a.createElement(h, {
+				href: "https://www.reddit.com"
+			}, p._("USA/Global", null, {
+				hk: "3nQepG"
+			}))), n.a.createElement("div", {
+				className: m.a.Column
+			}, n.a.createElement(h, {
+				href: "https://www.reddit.com/de/"
+			}, p._("Deutschland", null, {
+				hk: "383Vuj"
 			})))), n.a.createElement("div", {
 				className: m.a.Copyright
 			}, p._("Reddit Inc © {year} . All rights reserved", [p._param("year", (new Date).getFullYear().toString())], {
@@ -5589,8 +5606,8 @@
 					x = Object(o.e)(v.e),
 					y = Object(o.e)(v.c),
 					C = Object(o.e)(v.d),
-					w = Object(p.eb)(),
-					I = Object(o.e)(e => Object(p.D)(e, {
+					w = Object(p.fb)(),
+					I = Object(o.e)(e => Object(p.E)(e, {
 						pageLayer: w
 					})),
 					_ = Object(o.e)(t => Object(g.j)(t, {
@@ -6683,4 +6700,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.abf58c30ed3e0435f1c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.ffb7377f825a03c615ed.js.map

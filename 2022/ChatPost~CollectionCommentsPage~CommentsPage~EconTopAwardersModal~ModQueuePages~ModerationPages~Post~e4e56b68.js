@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.eba662050f9af5f7ef38.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.4e93e98550513bb81e33.js
+// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1991,7 +1991,7 @@
 						Be = () => n.a.createElement(we, {
 							className: e.metaSeparatorClassName
 						}, "•"),
-						Me = Object(a.e)(e => Object(Z.Q)(e, {
+						Me = Object(a.e)(e => Object(Z.R)(e, {
 							pageLayer: c
 						})),
 						Le = $.e[Me] === $.d.Card,
@@ -2158,7 +2158,7 @@
 				b = i.a.div("Container", m.a),
 				f = Object(o.a)(d.b),
 				w = Object(c.u)({
-					isProfileListingPage: c.H
+					isProfileListingPage: c.I
 				});
 			class g extends a.a.Component {
 				constructor(e) {
@@ -3126,4 +3126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.eba662050f9af5f7ef38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~e4e56b68.4e93e98550513bb81e33.js.map
