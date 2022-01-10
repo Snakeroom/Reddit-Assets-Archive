@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.123131b77db15b18357e.js
-// Retrieved at 1/10/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.8ea1ab138dc057bbff5f.js
+// Retrieved at 1/10/2022, 6:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -14426,38 +14426,39 @@
 					isOverlayOpen: g,
 					apiPending: C,
 					treatment: O
-				} = Object(a.e)(t => Rt(t, e)), v = Object(L.a)(g), x = void 0 === C || C, y = (e, n) => u(Object(ze.v)(t, c, n, e, l, d, Object(Xe.b)({
+				} = Object(a.e)(t => Rt(t, e)), v = Object(L.a)(g), x = Object(r.useRef)(!1), y = void 0 === C || C, j = (e, n) => u(Object(ze.v)(t, c, n, e, l, d, Object(Xe.b)({
 					pageLayer: l
 				}), O));
-				let j;
+				let _;
 				Object(r.useEffect)(() => {
-					h && !T()(f) && N()
+					h && !T()(f) && I()
 				}, [h, f]), Object(r.useEffect)(() => {
-					v && !g && N()
-				}, [g, v]), p === He.c.Trending && (j = st(b));
-				const _ = Object(i.a)(c.q || ""),
-					S = Object(r.useMemo)(() => Object.values(b).find(e => e.name === Qe.l || e.name === Qe.f), [b]),
-					k = j && S;
+					v && !g && I()
+				}, [g, v]), p === He.c.Trending && (_ = st(b));
+				const S = Object(i.a)(c.q || ""),
+					k = Object(r.useMemo)(() => Object.values(b).find(e => e.name === Qe.l || e.name === Qe.f), [b]),
+					N = _ && k;
 
-				function N() {
-					if ($e.c.has(t)) {
+				function I() {
+					if ($e.c.has(t) || !x.current) {
+						x.current = !0;
 						const e = $e.c.end(t);
-						y(e, et.TimerType.InApp)
+						j(e, et.TimerType.InApp)
 					}
 				}
-				return h || k || x ? o.a.createElement(o.a.Fragment, null, k && o.a.createElement(Ve, {
-					key: j,
-					postId: j,
-					discoveryUnit: S,
+				return h || N || y ? o.a.createElement(o.a.Fragment, null, N && o.a.createElement(Ve, {
+					key: _,
+					postId: _,
+					discoveryUnit: k,
 					searchOptions: c,
 					listingKey: t
 				}, o.a.createElement(Fe, {
-					key: j,
-					discoveryUnit: S,
-					postId: j,
+					key: _,
+					discoveryUnit: k,
+					postId: _,
 					listingKey: t,
 					searchOptions: c
-				})), (h || x) && o.a.createElement(Mt, {
+				})), (h || y) && o.a.createElement(Mt, {
 					key: "posts",
 					listingKey: t,
 					listingName: n,
@@ -14469,7 +14470,7 @@
 					},
 					searchOptions: c
 				})) : o.a.createElement(w, {
-					query: _,
+					query: S,
 					type: P.Posts,
 					searchOptions: c
 				})
@@ -24108,4 +24109,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.123131b77db15b18357e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.8ea1ab138dc057bbff5f.js.map
