@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.212b03d3c5b7e79e66ea.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.163182964efb14662272.js
+// Retrieved at 1/11/2022, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, n) {
@@ -879,10 +879,10 @@
 					}
 				}),
 				R = {
-					[d.G.NONE]: c.d.None,
-					[d.G.MODERATOR]: c.d.ModDistinguished,
-					[d.G.ADMIN]: c.d.AdminDistinguished,
-					[d.G.ALUMNI_ADMIN]: c.d.AlumniDistinguished
+					[d.G.NONE]: c.e.None,
+					[d.G.MODERATOR]: c.e.ModDistinguished,
+					[d.G.ADMIN]: c.e.AdminDistinguished,
+					[d.G.ALUMNI_ADMIN]: c.e.AlumniDistinguished
 				};
 
 			function T(e, t, n) {
@@ -2008,4 +2008,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.212b03d3c5b7e79e66ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.163182964efb14662272.js.map

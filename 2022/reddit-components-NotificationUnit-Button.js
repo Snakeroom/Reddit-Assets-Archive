@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3f548aa3f6bf02730382.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3af569f28644b3a5a2d1.js
+// Retrieved at 1/11/2022, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(e, t, n) {
@@ -1264,10 +1264,10 @@
 					}
 				}),
 				S = {
-					[i.G.NONE]: c.d.None,
-					[i.G.MODERATOR]: c.d.ModDistinguished,
-					[i.G.ADMIN]: c.d.AdminDistinguished,
-					[i.G.ALUMNI_ADMIN]: c.d.AlumniDistinguished
+					[i.G.NONE]: c.e.None,
+					[i.G.MODERATOR]: c.e.ModDistinguished,
+					[i.G.ADMIN]: c.e.AdminDistinguished,
+					[i.G.ALUMNI_ADMIN]: c.e.AlumniDistinguished
 				};
 
 			function R(e, t, n) {
@@ -2397,4 +2397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3f548aa3f6bf02730382.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.3af569f28644b3a5a2d1.js.map

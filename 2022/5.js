@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/5.f2d411125b8908dfc47d.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/5.789a030d5f16358f42fc.js
+// Retrieved at 1/11/2022, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[5], {
 		"./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts": function(e, t, r) {
@@ -29,8 +29,8 @@
 					distinguishedAs: b,
 					editedAt: f,
 					id: I,
-					isGildable: j,
-					isScoreHidden: O,
+					isGildable: O,
+					isScoreHidden: j,
 					isStickied: q,
 					isSaved: y,
 					parent: A,
@@ -38,8 +38,8 @@
 					postInfo: g,
 					score: w,
 					voteState: R
-				} = e, C = "ADMIN" === b, F = "MODERATOR" === b, x = i ? Object(s.b)(i) : void 0, E = r && r.__typename === l.c.AvailableRedditor && r.isCakeDayNow || !1, S = r && r.__typename === l.c.AvailableRedditor && r.isPremiumMember || !1, G = {
-					allAwardings: x,
+				} = e, k = "ADMIN" === b, C = "MODERATOR" === b, F = i ? Object(s.b)(i) : void 0, x = r && r.__typename === l.c.AvailableRedditor && r.isCakeDayNow || !1, E = r && r.__typename === l.c.AvailableRedditor && r.isPremiumMember || !1, S = {
+					allAwardings: F,
 					associatedAward: t,
 					author: r && Object(n.b)(r) || o.E,
 					authorId: r && r.id || "",
@@ -49,14 +49,14 @@
 					distinguishType: b || "",
 					editedAt: Object(s.e)(f) / 1e3 || null,
 					id: I,
-					isAdmin: C,
-					isAuthorCakeday: E,
-					isAuthorPremium: S,
-					isGildable: j,
-					isMod: F,
+					isAdmin: k,
+					isAuthorCakeday: x,
+					isAuthorPremium: E,
+					isGildable: O,
+					isMod: C,
 					isOp: m(r, g),
 					isSaved: y,
-					isScoreHidden: O,
+					isScoreHidden: j,
 					isStickied: q,
 					markdown: c && c.markdown || "",
 					media: u(e),
@@ -81,7 +81,7 @@
 					userReports: [],
 					isSystem: !1
 				};
-				return e.postInfo && Object(a.n)(e.postInfo) ? G.subredditId = e.postInfo.subreddit.id : e.postInfo && Object(a.l)(e.postInfo) && (G.subredditId = e.postInfo.profile.id), G
+				return e.postInfo && Object(a.n)(e.postInfo) ? S.subredditId = e.postInfo.subreddit.id : e.postInfo && Object(a.l)(e.postInfo) && (S.subredditId = e.postInfo.profile.id), S
 			}
 		},
 		"./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/index.ts": function(e, t, r) {
@@ -101,15 +101,15 @@
 				l = r("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
 				u = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts");
 			const m = {
-					[s.rb.Edited]: c.j.Edited,
-					[s.rb.Modqueue]: c.j.Mod,
-					[s.rb.Reports]: c.j.Reported,
-					[s.rb.Spam]: c.j.Removed,
-					[s.rb.Unmoderated]: c.j.Unmoderated
+					[s.rb.Edited]: c.k.Edited,
+					[s.rb.Modqueue]: c.k.Mod,
+					[s.rb.Reports]: c.k.Reported,
+					[s.rb.Spam]: c.k.Removed,
+					[s.rb.Unmoderated]: c.k.Unmoderated
 				},
 				p = {
-					comments: c.i.Comment,
-					links: c.i.Post
+					comments: c.j.Comment,
+					links: c.j.Post
 				};
 
 			function h({
@@ -231,4 +231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.f2d411125b8908dfc47d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.789a030d5f16358f42fc.js.map

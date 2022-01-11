@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.8e5d7fc2634e4e73429f.js
-// Retrieved at 1/10/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.16f2c91adda2cab64ae1.js
+// Retrieved at 1/11/2022, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -1780,10 +1780,10 @@
 					}
 				}),
 				k = {
-					[d.G.NONE]: c.d.None,
-					[d.G.MODERATOR]: c.d.ModDistinguished,
-					[d.G.ADMIN]: c.d.AdminDistinguished,
-					[d.G.ALUMNI_ADMIN]: c.d.AlumniDistinguished
+					[d.G.NONE]: c.e.None,
+					[d.G.MODERATOR]: c.e.ModDistinguished,
+					[d.G.ADMIN]: c.e.AdminDistinguished,
+					[d.G.ALUMNI_ADMIN]: c.e.AlumniDistinguished
 				};
 
 			function C(e, t, n) {
@@ -2931,4 +2931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.8e5d7fc2634e4e73429f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.16f2c91adda2cab64ae1.js.map

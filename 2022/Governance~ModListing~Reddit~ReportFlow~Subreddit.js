@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.e12ebf0d82fc3ee84184.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.73b1f91a887de64b0bc8.js
+// Retrieved at 1/11/2022, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -1091,9 +1091,9 @@
 			var p = r("./src/reddit/helpers/media/index.ts"),
 				f = r("./src/redditGQL/types.ts");
 			const _ = new Map([
-					["image/png", f.e.Png],
-					["image/gif", f.e.Gif],
-					["image/jpeg", f.e.Jpeg]
+					["image/png", f.f.Png],
+					["image/gif", f.f.Gif],
+					["image/jpeg", f.f.Jpeg]
 				]),
 				m = (e, t) => async (r, n, {
 					gqlContext: i
@@ -1372,7 +1372,7 @@
 							isStartImmediately: !0,
 							subredditId: e,
 							predictionDrafts: c,
-							currency: a ? f.n.Coins : f.n.Tokens,
+							currency: a ? f.o.Coins : f.o.Tokens,
 							tokenIcon: u
 						}),
 						b = Object(h.a)(l);
@@ -10599,4 +10599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.e12ebf0d82fc3ee84184.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.73b1f91a887de64b0bc8.js.map
