@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.37f1f7c1559485fa508e.js
-// Retrieved at 1/11/2022, 3:50:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c5cad03d4f50a1099931.js
+// Retrieved at 1/11/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) d = r[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
@@ -749,7 +749,7 @@
 					Topic: "46c3555d812f06c25088",
 					UserDataRequestPage: "9c903d1c7094af13c2db",
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
-					WrappedReddit: "750caa514f04aad51cda",
+					WrappedReddit: "bb81aadc58deeafa966c",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
 					getFlairData: "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
@@ -1412,7 +1412,7 @@
 						Topic: "1267b5b636e60c3d66e0",
 						UserDataRequestPage: "5857d3f7942d2b5fe9f8",
 						UserZoomIntegration: "e14a378bfc910ff0887f",
-						WrappedReddit: "e6837f80ea8d2dda4ff4",
+						WrappedReddit: "aa51e5d7784fe13c4faf",
 						"css-vars-ponyfill": "8e6cec8301d069e523d7",
 						getFlairData: "ece217e85db5fff7a73d",
 						givePremiumTrackers: "03922ac199a2f2016953",
@@ -1654,4 +1654,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.37f1f7c1559485fa508e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c5cad03d4f50a1099931.js.map
