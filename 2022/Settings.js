@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.cfbe59fb831f00e6d127.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.d94f9f5ec2e222845237.js
+// Retrieved at 1/11/2022, 12:30:39 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -4014,10 +4014,10 @@
 					x = i && i.voteState;
 				let y = null;
 				C || (y = e ? "user_hovercard" : "profile_overview");
-				const j = Object(a.useCallback)(() => _(Object(u.f)(e ? "user_hovercard" : "profile_overview", t)), [e, _, t]);
+				const j = Object(a.useCallback)(() => _(Object(u.g)(e ? "user_hovercard" : "profile_overview", t)), [e, _, t]);
 				return o.a.createElement(m.t, {
 					onClick: () => {
-						n ? (_(u.g), C && x === b.a.notVoted && v(Object(c.jb)(C))) : j();
+						n ? (_(u.h), C && x === b.a.notVoted && v(Object(c.jb)(C))) : j();
 						const e = n ? "postify" : "copy";
 						v(Object(l.b)({
 							clickSource: y,
@@ -12894,4 +12894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.cfbe59fb831f00e6d127.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.d94f9f5ec2e222845237.js.map

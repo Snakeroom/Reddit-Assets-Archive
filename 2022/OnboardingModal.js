@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.e87738e1fcd2b8fb6419.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.442469072cbadd1d8c58.js
+// Retrieved at 1/11/2022, 12:30:39 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal", "OnboardingActions"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -768,13 +768,16 @@
 							t(Object(g.d)())
 						}, [t]),
 						o = Object(s.useCallback)(async () => {
-							if (n(Object(h.a)("save_and_continue")), e && r) try {
-								return await t(Object(g.e)(r.accessoryIds, {}, {
-									set_avatar_to_profile: !0,
-									source: "web_onboarding"
-								})), !0
-							} catch (a) {
-								f.c.captureException(a)
+							if (n(Object(h.a)("save_and_continue")), e && r) {
+								n(Object(h.e)("onboarding"));
+								try {
+									return await t(Object(g.e)(r.accessoryIds, {}, {
+										set_avatar_to_profile: !0,
+										source: "web_onboarding"
+									})), !0
+								} catch (a) {
+									f.c.captureException(a)
+								}
 							}
 							return t(Object(p.f)({
 								kind: O.b.Error,
@@ -907,7 +910,7 @@
 				}) => {
 					const n = Object(x.a)();
 					Object(s.useEffect)(() => {
-						n(Object(h.m)())
+						n(Object(h.n)())
 					}, [n]);
 					const r = Object(s.useCallback)(() => {
 							n(Object(h.a)("randomize")), t()
@@ -3389,4 +3392,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.e87738e1fcd2b8fb6419.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.442469072cbadd1d8c58.js.map
