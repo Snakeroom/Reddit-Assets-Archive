@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.4699904e7cf82232a78a.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.1f68e279b441594abdfc.js
+// Retrieved at 1/12/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -1035,7 +1035,7 @@
 					isCommentCountAnimation: N,
 					isCountAnimShadowTestEnabled: M,
 					isBlockingInterstitialEnabled: F
-				} = e, R = Object(i.d)(), A = p && !c && !x, L = c && !u, D = Object(O.a)(), B = Object(C.a)(h.fd) === h.md.Enabled, W = r.a.createElement(S, {
+				} = e, R = Object(i.d)(), A = p && !c && !x, L = c && !u, D = Object(O.a)(), B = Object(C.a)(h.gd) === h.nd.Enabled, W = r.a.createElement(S, {
 					hasModPostPerms: s,
 					isCountAnimShadowTestEnabled: !!M,
 					isChatPost: n,
@@ -4262,12 +4262,12 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: i.J,
-				experimentName: n.Lb
-			}), e => e === n.Vc)
+				experimentName: n.Mb
+			}), e => e === n.Wc)
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
 			e.exports = JSON.parse('{"id":"01538085cb58"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.4699904e7cf82232a78a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.1f68e279b441594abdfc.js.map

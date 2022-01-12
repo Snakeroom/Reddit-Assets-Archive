@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.8f5e801f026ba62d2576.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.cd0fcf1e8f1da1f91b74.js
+// Retrieved at 1/12/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -3089,7 +3089,7 @@
 				p = r("./node_modules/react-redux/es/index.js"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				b = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(b.a)(f.yc);
+			const h = Object(b.a)(f.zc);
 			let y = null;
 
 			function g() {
@@ -3349,4 +3349,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.8f5e801f026ba62d2576.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.cd0fcf1e8f1da1f91b74.js.map

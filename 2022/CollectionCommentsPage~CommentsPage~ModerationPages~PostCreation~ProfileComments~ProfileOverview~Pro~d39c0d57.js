@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.61037bbf2a31b1e1a34c.js
-// Retrieved at 1/11/2022, 12:30:39 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.3e8fc8fdb53e71949a62.js
+// Retrieved at 1/12/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57"], {
 		"./src/reddit/actions/gold/giveAward.ts": function(e, t, n) {
@@ -240,8 +240,8 @@
 				j = n("./src/reddit/models/Gold/Award.ts"),
 				I = n("./src/reddit/selectors/activeModalId.ts"),
 				C = n("./src/reddit/selectors/experiments/econLeaderboards.ts"),
-				S = n("./src/reddit/selectors/gold/awardIcon.ts"),
-				y = n("./src/reddit/contexts/Post/index.tsx"),
+				y = n("./src/reddit/selectors/gold/awardIcon.ts"),
+				S = n("./src/reddit/contexts/Post/index.tsx"),
 				k = n("./src/reddit/contexts/User/index.tsx"),
 				T = n("./node_modules/lodash/debounce.js"),
 				N = n.n(T),
@@ -771,8 +771,8 @@
 				},
 				Ie = n("./src/reddit/actions/gold/reportAward.ts"),
 				Ce = n("./src/reddit/controls/Button/index.tsx"),
-				Se = n("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
-				ye = n.n(Se);
+				ye = n("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
+				Se = n.n(ye);
 			! function(e) {
 				e[e.BEGIN = 0] = "BEGIN", e[e.REPORT_COMMUNITY_AWARD = 1] = "REPORT_COMMUNITY_AWARD", e[e.FLAG_USAGE = 2] = "FLAG_USAGE"
 			}(_e || (_e = {}));
@@ -795,14 +795,14 @@
 						onClick: () => {
 							t(Object(O.clickReportAward)(e.award, e.thing.id)), i(_e.REPORT_COMMUNITY_AWARD)
 						},
-						className: ye.a.reportStepButton
+						className: Se.a.reportStepButton
 					}, a.fbt._("This community award violates Reddit's rules.", null, {
 						hk: "2ObuGq"
 					})), r.a.createElement(Ce.o, {
 						onClick: () => {
 							t(Object(O.clickFlagAwardUsage)(e.award, e.thing.id)), i(_e.FLAG_USAGE)
 						},
-						className: ye.a.reportStepButton
+						className: Se.a.reportStepButton
 					}, a.fbt._("This award is being used inappropriately.", null, {
 						hk: "Y8giW"
 					})));
@@ -982,19 +982,19 @@
 					for (const a of Te) {
 						const e = {};
 						C[`icon${a}`] = e;
-						for (const t of I) e[t.id] = Object(S.c)({
+						for (const t of I) e[t.id] = Object(y.c)({
 							award: t,
 							postOrComment: f,
 							size: a,
 							prefersReducedMotion: O
 						})
 					}
-					const y = !!o && o.id === f.authorId;
+					const S = !!o && o.id === f.authorId;
 					return r.a.createElement(r.a.Fragment, null, n ? r.a.createElement(he, {
 						awards: I,
 						awardsCountInView: t,
 						className: s,
-						hideAddAwardButton: i || !f.isGildable || y,
+						hideAddAwardButton: i || !f.isGildable || S,
 						hideTopAwardedBadge: d,
 						icons: C,
 						isInEconLeaderboardsExperiment: l,
@@ -1028,7 +1028,7 @@
 						actionText: a.fbt._("Hide", null, {
 							hk: "4FKnfB"
 						}),
-						modalText: y ? Object(x.a)(f.id) ? a.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your post?", [a.fbt._param("awardName", this.state.selectedAward.name)], {
+						modalText: S ? Object(x.a)(f.id) ? a.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your post?", [a.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "4a7Cbu"
 						}) : a.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your comment?", [a.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "294BlY"
@@ -1050,7 +1050,7 @@
 					}))
 				}
 			}
-			t.a = Object(k.c)(Object(y.e)(Re(Object(_.c)(Le))))
+			t.a = Object(k.c)(Object(S.e)(Re(Object(_.c)(Le))))
 		},
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1143,8 +1143,8 @@
 				j = n("./src/reddit/icons/fonts/Spam/index.tsx"),
 				I = n("./src/reddit/icons/fonts/Sticky/index.tsx"),
 				C = n("./src/reddit/models/Post/index.ts"),
-				S = n("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
-				y = n("./src/reddit/selectors/posts.ts"),
+				y = n("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
+				S = n("./src/reddit/selectors/posts.ts"),
 				k = n("./src/reddit/components/PostBadges/index.m.less"),
 				T = n.n(k);
 
@@ -1187,7 +1187,7 @@
 				U = Object(i.c)({
 					isPinned: (e, {
 						post: t
-					}) => Object(y.q)(e, {
+					}) => Object(S.q)(e, {
 						postId: t.id
 					}),
 					modModeEnabled: b.T
@@ -1208,7 +1208,7 @@
 				inSubredditOrProfile: i,
 				isCompactPinnedPost: l,
 				isPinned: b,
-				isProfilePostListing: y,
+				isProfilePostListing: S,
 				modModeEnabled: k,
 				onHideTooltip: G,
 				onOpenRemovalReasonModal: U,
@@ -1219,7 +1219,7 @@
 				const W = {
 						caretOnTop: !1
 					},
-					V = Object(o.e)(S.a),
+					V = Object(o.e)(y.a),
 					J = q.isSponsored && (V === p.u.NoLockIcon || V === p.u.PromotedGrey),
 					Q = q.isRemoved && !q.modRemovalReason && !q.modNote && q.belongsTo.type === h.a.SUBREDDIT,
 					K = H("Approve", q.id, z),
@@ -1270,7 +1270,7 @@
 				}), r.a.createElement(u.c, N({
 					tooltipId: ne,
 					text: P()
-				}, W))), y && b && r.a.createElement(s.Fragment, null, r.a.createElement(I.a, {
+				}, W))), S && b && r.a.createElement(s.Fragment, null, r.a.createElement(I.a, {
 					isFilled: !0,
 					className: Object(d.a)(T.a.icon, T.a.stickyIcon),
 					desc: F(),
@@ -1686,9 +1686,9 @@
 			})), n.d(t, "l", (function() {
 				return C
 			})), n.d(t, "j", (function() {
-				return S
-			})), n.d(t, "f", (function() {
 				return y
+			})), n.d(t, "f", (function() {
+				return S
 			})), n.d(t, "g", (function() {
 				return k
 			})), n.d(t, "m", (function() {
@@ -1806,9 +1806,9 @@
 					variables: {
 						profileName: t
 					}
-				}), S = e => Object(r.a)(e, {
+				}), y = e => Object(r.a)(e, {
 					...b
-				}), y = (e, t, n) => Object(r.a)(e, {
+				}), S = (e, t, n) => Object(r.a)(e, {
 					...d,
 					variables: {
 						subredditId: t,
@@ -2221,15 +2221,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.J,
-						experimentName: a.xc
+						experimentName: a.yc
 					});
-					return !(!t || Object(a.if)(t))
+					return !(!t || Object(a.jf)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.J,
-						experimentName: a.xc
-					}) === a.ad.ListingEnabled
+						experimentName: a.yc
+					}) === a.bd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, n) {
@@ -2289,4 +2289,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.61037bbf2a31b1e1a34c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.3e8fc8fdb53e71949a62.js.map

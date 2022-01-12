@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.0ce026856a64e75206f5.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.3b8072ade29f8e8d71fc.js
+// Retrieved at 1/12/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~StandalonePostPage"], {
 		"./src/reddit/components/Econ/Audio/async.ts": function(e, t, s) {
@@ -1021,15 +1021,15 @@
 			const xt = e => {
 					return Object(bt.c)(e, {
 						experimentEligibilitySelector: bt.a,
-						experimentName: pt.cf
-					}) === pt.Vc
+						experimentName: pt.df
+					}) === pt.Wc
 				},
 				Et = e => {
 					if (Object(ht.a)(e)) return !1;
 					return Object(bt.c)(e, {
 						experimentEligibilitySelector: bt.a,
-						experimentName: pt.bf
-					}) === pt.Vc
+						experimentName: pt.cf
+					}) === pt.Wc
 				},
 				vt = (e, {
 					postId: t
@@ -1039,8 +1039,8 @@
 					});
 					return !(Object(ht.a)(e) || !s || s.isSponsored) && Object(bt.c)(e, {
 						experimentEligibilitySelector: bt.a,
-						experimentName: pt.af
-					}) === pt.Vc
+						experimentName: pt.bf
+					}) === pt.Wc
 				};
 			var gt = s("./src/reddit/constants/colors.ts"),
 				ft = s("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
@@ -1334,8 +1334,8 @@
 			const Vt = e => {
 				return Object(bt.c)(e, {
 					experimentEligibilitySelector: bt.a,
-					experimentName: pt.He
-				}) === pt.Vc
+					experimentName: pt.Ie
+				}) === pt.Wc
 			};
 			var Ut = s("./src/reddit/components/PostUnavailableBanner/index.m.less"),
 				Kt = s.n(Ut);
@@ -2210,11 +2210,11 @@
 			const a = e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: o.qc
+					experimentName: o.rc
 				});
-				return !(!t || Object(o.if)(t))
+				return !(!t || Object(o.jf)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.0ce026856a64e75206f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.3b8072ade29f8e8d71fc.js.map

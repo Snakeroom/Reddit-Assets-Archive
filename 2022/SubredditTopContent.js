@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.df281a83e72824cd7ed0.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.8477106c8ecf8e5b95b1.js
+// Retrieved at 1/12/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -385,8 +385,8 @@
 				},
 				Z = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				Y = s("./src/reddit/components/Media/index.tsx"),
-				K = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
-				X = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
+				X = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
+				K = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
 				J = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				$ = s("./src/reddit/components/PostContainer/index.tsx"),
 				ee = s("./src/reddit/components/PostTitle/index.tsx"),
@@ -490,7 +490,7 @@
 						post: p,
 						size: ee.b.Large,
 						titleColor: o && o.postTitleColor
-					}), f && g && r.a.createElement(K.a, {
+					}), f && g && r.a.createElement(X.a, {
 						className: pe.a.metaLine,
 						crosspostSubredditOrProfile: n,
 						hideNSFWPref: d,
@@ -500,7 +500,7 @@
 						className: pe.a.flexSpacer
 					}), _ && r.a.createElement("div", {
 						className: pe.a.mediaWrapper
-					}, r.a.createElement(X.a, {
+					}, r.a.createElement(K.a, {
 						className: pe.a.thumbnailWrapper,
 						thumbnailClassName: pe.a.thumbnail,
 						thumbnailContainerClassName: pe.a.thumbnailContainer,
@@ -863,9 +863,9 @@
 				f = s("./src/reddit/constants/experiments.ts"),
 				C = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				g = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(g.G)(e) || f.Qe.ShowTopContent === Object(C.c)(e, {
+			const y = e => Object(g.G)(e) || f.Re.ShowTopContent === Object(C.c)(e, {
 				experimentEligibilitySelector: C.a,
-				experimentName: f.Ke
+				experimentName: f.Le
 			});
 			var _ = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1497,7 +1497,7 @@
 						[F.a.isVisitedEnabled]: !t
 					})
 				}), a),
-				K = ({
+				X = ({
 					disableVisited: e,
 					nowrap: t,
 					className: s,
@@ -1508,7 +1508,7 @@
 						[F.a.isVisitedEnabled]: !e
 					})
 				}, a),
-				X = Object(c.c)({
+				K = Object(c.c)({
 					flairPosition: (e, {
 						pageLayer: t
 					}) => Object(p.q)(e, {
@@ -1522,10 +1522,10 @@
 						subreddit: s
 					} = e, {
 						isSponsored: a
-					} = t, n = Object(i.d)(), o = Object(R.a)(), c = Object(H.a)(u.fd) === u.md.Enabled, d = Object(i.e)(V.b), m = e => {
+					} = t, n = Object(i.d)(), o = Object(R.a)(), c = Object(H.a)(u.gd) === u.nd.Enabled, d = Object(i.e)(V.b), m = e => {
 						!d || t.media && Object(E.H)(t.media) || (e.preventDefault(), n(Object(f.ab)(Object(g.b)(t.permalink), t.id)))
 					};
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(K, {
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(X, {
 						nowrap: e.nowrap
 					}, r.a.createElement($, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return r.a.createElement(b.b, {
@@ -1536,7 +1536,7 @@
 					}, r.a.createElement($, e)); {
 						const n = t.media && Object(E.H)(t.media) ? Object(y.c)(t.id, s.name) : t.permalink,
 							i = e.isCommentPermalink ? Object(g.b)(n) : c ? Object(x.a)(n, void 0, o) : Object(x.a)(n);
-						return r.a.createElement(K, {
+						return r.a.createElement(X, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, a ? ((e, t) => {
@@ -1668,7 +1668,7 @@
 				const t = Object(p.fb)(),
 					s = Object(p.w)(t),
 					a = Object(Q.a)(),
-					n = Object(i.e)(n => X(n, {
+					n = Object(i.e)(n => K(n, {
 						...a,
 						...e,
 						isCommentPermalink: s,
@@ -1969,4 +1969,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.df281a83e72824cd7ed0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.8477106c8ecf8e5b95b1.js.map

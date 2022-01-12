@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.83a730180a303b1c8cf7.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0b5a9b8b62e1d18fe809.js
+// Retrieved at 1/12/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3028,7 +3028,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: r
-					} = t, s = Object(i.d)(), a = Object(W.a)(), c = Object(Y.a)(m.fd) === m.md.Enabled, l = Object(i.e)(R.b), u = e => {
+					} = t, s = Object(i.d)(), a = Object(W.a)(), c = Object(Y.a)(m.gd) === m.nd.Enabled, l = Object(i.e)(R.b), u = e => {
 						!l || t.media && Object(v.H)(t.media) || (e.preventDefault(), s(Object(x.ab)(Object(E.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(Q, {
@@ -4119,15 +4119,15 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.m
-					}) === r.Vc
+					}) === r.Wc
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.n
-					}) === r.Vc
+					}) === r.Wc
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.83a730180a303b1c8cf7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.0b5a9b8b62e1d18fe809.js.map

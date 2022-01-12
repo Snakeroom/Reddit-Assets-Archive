@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.0b1063b2e457f6060a4b.js
-// Retrieved at 1/12/2022, 2:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.fc35e538a9d935121dc4.js
+// Retrieved at 1/12/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -806,9 +806,9 @@
 			})), r.d(t, "n", (function() {
 				return q
 			})), r.d(t, "s", (function() {
-				return J
-			})), r.d(t, "r", (function() {
 				return Y
+			})), r.d(t, "r", (function() {
+				return J
 			})), r.d(t, "g", (function() {
 				return X
 			})), r.d(t, "q", (function() {
@@ -913,7 +913,7 @@
 						method: s.jb.GET
 					}))(r());
 					i.ok ? e(k(y(i.body))) : e(M(i.error))
-				}, L = "POST_DRAFT__SAVE_DRAFT_PENDING", F = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", V = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(i.a)(L), W = Object(i.a)(F), $ = Object(i.a)(V), K = Object(i.a)(U), Q = Object(i.a)(B), z = Object(i.a)(G), J = Object(i.a)(q), Y = e => async (t, r, {
+				}, L = "POST_DRAFT__SAVE_DRAFT_PENDING", F = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", V = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(i.a)(L), W = Object(i.a)(F), $ = Object(i.a)(V), K = Object(i.a)(U), Q = Object(i.a)(B), z = Object(i.a)(G), Y = Object(i.a)(q), J = e => async (t, r, {
 					apiContext: i
 				}) => {
 					const o = r(),
@@ -2364,39 +2364,39 @@
 				o = r("./src/reddit/selectors/experiments/index.ts"),
 				a = r("./src/reddit/selectors/experiments/utils.ts");
 			const d = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.xb,
+					experimentName: n.yb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				c = Object(s.a)(d, e => e === n.xd.Enabled),
+				c = Object(s.a)(d, e => e === n.yd.Enabled),
 				u = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.sd,
+					experimentName: n.td,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				l = Object(s.a)(c, u, (e, t) => e && t === n.wd.Enabled),
+				l = Object(s.a)(c, u, (e, t) => e && t === n.xd.Enabled),
 				b = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.Jb,
+					experimentName: n.Kb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				m = Object(s.a)(c, b, (e, t) => e && t === n.Zb.Enabled),
+				m = Object(s.a)(c, b, (e, t) => e && t === n.ac.Enabled),
 				p = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.vb,
-					experimentEligibilitySelector: o.e
-				}), a.a),
-				f = Object(s.a)(p, e => e === n.ud.ContinuousScroll),
-				h = Object(s.a)(e => Object(i.c)(e, {
 					experimentName: n.wb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				O = Object(s.a)(h, e => e === n.vd.Enabled),
+				f = Object(s.a)(p, e => e === n.vd.ContinuousScroll),
+				h = Object(s.a)(e => Object(i.c)(e, {
+					experimentName: n.xb,
+					experimentEligibilitySelector: o.e
+				}), a.a),
+				O = Object(s.a)(h, e => e === n.wd.Enabled),
 				g = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.Eb,
+					experimentName: n.Fb,
 					experimentEligibilitySelector: () => !0
 				}), a.a),
-				y = Object(s.a)(g, e => e === n.fb.Enabled)
+				y = Object(s.a)(g, e => e === n.gb.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"9d105ce5d71a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.0b1063b2e457f6060a4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.fc35e538a9d935121dc4.js.map
