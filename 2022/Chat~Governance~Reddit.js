@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.57cb2943842131b4e06d.js
-// Retrieved at 1/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e551294455fc0d40e96a.js
+// Retrieved at 1/12/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3327,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("156004"),
+				buildNumber: Object(r.c)("156008"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1642026879"),
+				buildTimestamp: Object(r.b)("1642029078"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4148,96 +4148,98 @@
 		},
 		"./src/lib/ads/index.ts": function(e, t, i) {
 			"use strict";
-			var n;
 			i.d(t, "n", (function() {
-					return n
-				})), i.d(t, "c", (function() {
-					return r
-				})), i.d(t, "e", (function() {
-					return s
-				})), i.d(t, "l", (function() {
-					return o
-				})), i.d(t, "j", (function() {
-					return d
-				})), i.d(t, "b", (function() {
-					return a
-				})), i.d(t, "a", (function() {
-					return l
-				})), i.d(t, "d", (function() {
-					return u
-				})), i.d(t, "m", (function() {
-					return c
-				})), i.d(t, "f", (function() {
-					return _
-				})), i.d(t, "k", (function() {
-					return m
-				})), i.d(t, "i", (function() {
-					return p
-				})), i.d(t, "h", (function() {
-					return h
-				})), i.d(t, "g", (function() {
-					return f
-				})), i.d(t, "r", (function() {
-					return b
-				})), i.d(t, "p", (function() {
-					return g
-				})), i.d(t, "s", (function() {
-					return w
-				})), i.d(t, "q", (function() {
-					return v
-				})), i.d(t, "o", (function() {
-					return y
-				})), i.d(t, "t", (function() {
-					return E
-				})),
-				function(e) {
-					e.muted = "muted", e.seeked = "seeked"
-				}(n || (n = {}));
-			const r = .01,
-				s = .3,
-				o = .5,
-				d = .8,
-				a = 1,
-				l = .999,
-				u = 0,
-				c = 1e3,
-				_ = 100,
-				m = 2e3,
-				p = 3e3,
-				h = 5e3,
-				f = 15e3,
-				b = [.01, .3, .5, 1],
-				g = [.01, .5, {
+				return n
+			})), i.d(t, "c", (function() {
+				return s
+			})), i.d(t, "e", (function() {
+				return o
+			})), i.d(t, "l", (function() {
+				return d
+			})), i.d(t, "j", (function() {
+				return a
+			})), i.d(t, "b", (function() {
+				return l
+			})), i.d(t, "a", (function() {
+				return u
+			})), i.d(t, "d", (function() {
+				return c
+			})), i.d(t, "m", (function() {
+				return _
+			})), i.d(t, "f", (function() {
+				return m
+			})), i.d(t, "k", (function() {
+				return p
+			})), i.d(t, "i", (function() {
+				return h
+			})), i.d(t, "h", (function() {
+				return f
+			})), i.d(t, "g", (function() {
+				return b
+			})), i.d(t, "r", (function() {
+				return g
+			})), i.d(t, "p", (function() {
+				return w
+			})), i.d(t, "s", (function() {
+				return v
+			})), i.d(t, "q", (function() {
+				return y
+			})), i.d(t, "o", (function() {
+				return E
+			})), i.d(t, "t", (function() {
+				return T
+			})), i.d(t, "u", (function() {
+				return S
+			}));
+			var n, r = i("./src/lib/constants/index.ts");
+			! function(e) {
+				e.muted = "muted", e.seeked = "seeked"
+			}(n || (n = {}));
+			const s = .01,
+				o = .3,
+				d = .5,
+				a = .8,
+				l = 1,
+				u = .999,
+				c = 0,
+				_ = 1e3,
+				m = 100,
+				p = 2e3,
+				h = 3e3,
+				f = 5e3,
+				b = 15e3,
+				g = [.01, .3, .5, 1],
+				w = [.01, .5, {
 					key: "100",
-					threshold: l
+					threshold: u
 				}, {
 					key: "TOTAL_MRC_VIEWABLE_TIME",
 					playing: !0,
-					threshold: o
+					threshold: d
 				}, {
 					key: "HALF_DURATION_80_IN_VIEW_AUDIBLE",
 					playing: !0,
 					withSound: !0,
-					threshold: d
+					threshold: a
 				}, {
 					key: "FULL_IN_VIEW_AUDIBLE_TIME",
 					playing: !0,
-					threshold: l,
+					threshold: u,
 					withSound: !0
 				}, {
 					key: "FULL_IN_VIEW_TIME",
 					playing: !0,
-					threshold: l
+					threshold: u
 				}, {
 					key: "AUDIBLE_TIME",
 					playing: !0,
 					threshold: 0,
 					withSound: !0
 				}],
-				w = e => e.map(e => e && "object" == typeof e ? e.key : Math.floor(100 * e)),
-				v = w(b),
-				y = w(g),
-				E = (e, t) => {
+				v = e => e.map(e => e && "object" == typeof e ? e.key : Math.floor(100 * e)),
+				y = v(g),
+				E = v(w),
+				T = (e, t) => {
 					let i, n = e.source,
 						r = e.callToAction;
 					if (t) {
@@ -4252,6 +4254,10 @@
 						caption: i,
 						callToAction: r
 					}
+				},
+				S = e => {
+					var t;
+					return "1" === (null == e ? void 0 : e.queryParams.p) && (null === (t = null == e ? void 0 : e.meta) || void 0 === t ? void 0 : t.name) === r.Mb.COMMENTS
 				}
 		},
 		"./src/lib/ads/store.ts": function(e, t, i) {
@@ -5908,14 +5914,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c18c569a8818e122147da5527c82ee8e596a59a3d-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ca6a91cb98298670c2e4a5a5d62d7b569634a8b53-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "18c569a8818e122147da5527c82ee8e596a59a3d-production",
+						release: "a6a91cb98298670c2e4a5a5d62d7b569634a8b53-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6432,7 +6438,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "18c569a8818e122147da5527c82ee8e596a59a3d-production",
+						releaseClient: "a6a91cb98298670c2e4a5a5d62d7b569634a8b53-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -45328,4 +45334,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.57cb2943842131b4e06d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e551294455fc0d40e96a.js.map
