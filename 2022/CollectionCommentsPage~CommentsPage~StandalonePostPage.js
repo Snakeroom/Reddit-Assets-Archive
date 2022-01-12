@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.3b8072ade29f8e8d71fc.js
-// Retrieved at 1/12/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.5ca6091b3abddb058cc7.js
+// Retrieved at 1/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~StandalonePostPage"], {
 		"./src/reddit/components/Econ/Audio/async.ts": function(e, t, s) {
@@ -1021,14 +1021,14 @@
 			const xt = e => {
 					return Object(bt.c)(e, {
 						experimentEligibilitySelector: bt.a,
-						experimentName: pt.df
+						experimentName: pt.ff
 					}) === pt.Wc
 				},
 				Et = e => {
 					if (Object(ht.a)(e)) return !1;
 					return Object(bt.c)(e, {
 						experimentEligibilitySelector: bt.a,
-						experimentName: pt.cf
+						experimentName: pt.ef
 					}) === pt.Wc
 				},
 				vt = (e, {
@@ -1039,7 +1039,7 @@
 					});
 					return !(Object(ht.a)(e) || !s || s.isSponsored) && Object(bt.c)(e, {
 						experimentEligibilitySelector: bt.a,
-						experimentName: pt.bf
+						experimentName: pt.df
 					}) === pt.Wc
 				};
 			var gt = s("./src/reddit/constants/colors.ts"),
@@ -1334,7 +1334,7 @@
 			const Vt = e => {
 				return Object(bt.c)(e, {
 					experimentEligibilitySelector: bt.a,
-					experimentName: pt.Ie
+					experimentName: pt.Ke
 				}) === pt.Wc
 			};
 			var Ut = s("./src/reddit/components/PostUnavailableBanner/index.m.less"),
@@ -2212,9 +2212,9 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.rc
 				});
-				return !(!t || Object(o.jf)(t))
+				return !(!t || Object(o.lf)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.3b8072ade29f8e8d71fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.5ca6091b3abddb058cc7.js.map

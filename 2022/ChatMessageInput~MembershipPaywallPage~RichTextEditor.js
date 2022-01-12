@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.d28549f22edfdc5edc00.js
-// Retrieved at 1/12/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.b713748566c9008795e6.js
+// Retrieved at 1/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -2631,8 +2631,8 @@
 				G = n.n(V),
 				Y = n("./src/reddit/components/RichTextEditor/helpers/modifiers.ts"),
 				Q = n("./src/reddit/components/RichTextEditor/table/helpers.ts"),
-				X = n("./node_modules/lodash/last.js"),
-				J = n.n(X),
+				J = n("./node_modules/lodash/last.js"),
+				X = n.n(J),
 				Z = n("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
 				$ = n("./src/reddit/components/RichTextEditor/helpers/forEachBlock.ts"),
 				tt = n("./node_modules/lodash/find.js"),
@@ -2704,7 +2704,7 @@
 						e = Object(Q.n)(i, n.getEndOffset());
 					l[i.getKey()] = Object(Q.j)(i, [t, e]), d = n
 				} else {
-					if (c.blocks[0].getKey() === n.getStartKey() && J()(c.blocks).getKey() === n.getEndKey()) return nt(t, "rows");
+					if (c.blocks[0].getKey() === n.getStartKey() && X()(c.blocks).getKey() === n.getEndKey()) return nt(t, "rows");
 					Object($.a)(r, n, (t, e) => {
 						l[e] = Object(Q.n)(t, 0, 0)
 					}), d = n.merge({
@@ -3188,7 +3188,7 @@
 				Gt = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/ImagePreview/index.m.less"),
 				Yt = n.n(Gt);
 			const Qt = E.a.img("Img", Yt.a);
-			var Xt = E.a.wrapped(t => {
+			var Jt = E.a.wrapped(t => {
 					const {
 						className: e,
 						url: n
@@ -3200,8 +3200,8 @@
 						src: n
 					}))
 				}, "Component", Yt.a),
-				Jt = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/Placeholder/index.m.less"),
-				Zt = n.n(Jt);
+				Xt = n("./src/reddit/components/RichTextEditor/media/MediaBlock/MediaView/Placeholder/index.m.less"),
+				Zt = n.n(Xt);
 			const $t = E.a.div("Message", Zt.a);
 			var te = E.a.wrapped(t => {
 					const {
@@ -3459,7 +3459,7 @@
 					}, l), g ? p.a.createElement(te, {
 						className: je.a.placeholder,
 						isImage: d
-					}) : d ? p.a.createElement(Xt, {
+					}) : d ? p.a.createElement(Jt, {
 						className: je.a.imagePreview,
 						url: i ? i.metadata.localUrl : c.imageUrl
 					}) : p.a.createElement(Te, {
@@ -3550,22 +3550,22 @@
 					})))
 				},
 				Qe = n("./src/reddit/components/RichTextEditor/media/MediaBlock/index.m.less"),
-				Xe = n.n(Qe);
-			const Je = t => `RTE_VIDEO_THUMBNAIL_SELECTOR_${t.getKey()}`,
+				Je = n.n(Qe);
+			const Xe = t => `RTE_VIDEO_THUMBNAIL_SELECTOR_${t.getKey()}`,
 				Ze = Object(m.a)(t => t.uploads, (t, e) => {
 					const n = Object(N.h)(e.block);
 					return n && n.uploadInfo && n.uploadInfo.uploadKey
 				}, (t, e) => e ? t[e] : void 0),
 				$e = Object(h.b)((t, e) => ({
 					upload: Ze(t, e),
-					isThumbnailSelectorOpen: Object(zt.a)(t) === Je(e.block),
+					isThumbnailSelectorOpen: Object(zt.a)(t) === Xe(e.block),
 					isRteVideoPosterEnabled: v.d.rteVideoPoster(t)
 				}), (t, e) => ({
 					onCancelUpload: e => t(Ft.i(e, !1)),
-					toggleVideoThumbnailsSelector: () => t(Object(Dt.i)(Je(e.block)))
+					toggleVideoThumbnailsSelector: () => t(Object(Dt.i)(Xe(e.block)))
 				})),
-				tn = E.a.div("MediaContainer", Xe.a),
-				en = E.a.div("Container", Xe.a);
+				tn = E.a.div("MediaContainer", Je.a),
+				en = E.a.div("Container", Je.a);
 			class nn extends p.a.Component {
 				constructor(t) {
 					super(t), this.onNativeSelectionChange = () => {
@@ -4159,7 +4159,7 @@
 						blocks: e
 					} = c;
 					e.sort(Q.b);
-					const r = Object(Q.o)(n, e[0], J()(e));
+					const r = Object(Q.o)(n, e[0], X()(e));
 					return nt(o.EditorState.set(t, {
 						selection: r
 					}), "rows")
@@ -4207,14 +4207,14 @@
 				}).apply(this, arguments)
 			}
 			const Qn = (t, e) => n => p.a.createElement(t, Yn({}, e, n)),
-				Xn = Object(Ue.f)(Hn.a),
-				Jn = Qn(Xn, {
+				Jn = Object(Ue.f)(Hn.a),
+				Xn = Qn(Jn, {
 					orientation: "up"
 				}),
-				Zn = Qn(Xn, {
+				Zn = Qn(Jn, {
 					orientation: "right"
 				}),
-				$n = Qn(Xn, {
+				$n = Qn(Jn, {
 					orientation: "left"
 				}),
 				to = Object(Ue.f)(Un.a),
@@ -4272,13 +4272,13 @@
 							hk: "3HaQQD"
 						})
 					}), p.a.createElement(Fe.c, null), p.a.createElement(co, {
-						Icon: Jn,
+						Icon: Xn,
 						onClick: () => n(ln(e, "rows", "before")),
 						tooltip: r.fbt._("Insert row above", null, {
 							hk: "1HIgn"
 						})
 					}), p.a.createElement(co, {
-						Icon: Xn,
+						Icon: Jn,
 						onClick: () => n(ln(e, "rows", "after")),
 						tooltip: r.fbt._("Insert row below", null, {
 							hk: "3t7ZU"
@@ -4656,7 +4656,7 @@
 						})
 					}), t.preventDefault(), o.EditorState.push(e, i, s ? "remove-range" : "insert-characters")
 				},
-				Xo = (t, e) => (t => {
+				Jo = (t, e) => (t => {
 					const e = t.getSelection(),
 						n = t.getCurrentContent();
 					if (!e.isCollapsed()) return ot(t);
@@ -4683,7 +4683,7 @@
 						}
 					}
 				})(t, e),
-				Jo = (t, e) => (t => {
+				Xo = (t, e) => (t => {
 					const e = t.getSelection(),
 						n = t.getCurrentContent();
 					if (!e.isCollapsed()) return ot(t); {
@@ -5027,12 +5027,12 @@
 				}, r.fbt._("Remove", null, {
 					hk: "3tYl0U"
 				})))),
-				Xr = n("./src/reddit/controls/Input/index.tsx"),
-				Jr = n("./src/reddit/components/RichTextEditor/LinksController/LinkEditorPopup/index.m.less"),
-				Zr = n.n(Jr);
+				Jr = n("./src/reddit/controls/Input/index.tsx"),
+				Xr = n("./src/reddit/components/RichTextEditor/LinksController/LinkEditorPopup/index.m.less"),
+				Zr = n.n(Xr);
 			const $r = E.a.form("EditForm", Zr.a),
 				ts = E.a.wrapped(t => p.a.createElement("div", t, t.children), "LinkEditorBox", Zr.a),
-				es = E.a.wrapped(Xr.a, "Input", Zr.a),
+				es = E.a.wrapped(Jr.a, "Input", Zr.a),
 				ns = E.a.label("Label", Zr.a),
 				os = E.a.div("HintAndButtonRow", Zr.a),
 				rs = E.a.span("InvalidUrlHint", Zr.a),
@@ -5433,7 +5433,7 @@
 					return n ? n.subreddits : []
 				}
 			});
-			class Xs extends u.Component {
+			class Js extends u.Component {
 				constructor(t) {
 					super(t), this.api = null, this.onEntrySelect = t => {
 						this.props.onSelect(this.props.subredditSuggestions[t].name)
@@ -5499,11 +5499,11 @@
 					}, Object(Gs.c)(t.name)))) : null
 				}
 			}
-			var Js = Object(h.b)(Qs, (t, e) => ({
+			var Xs = Object(h.b)(Qs, (t, e) => ({
 					onGetSubredditAutocomplete: e => {
 						t(Us.a(e))
 					}
-				}))(Xs),
+				}))(Js),
 				Zs = n("./src/reddit/selectors/comments.ts");
 			const $s = Object(m.c)({
 				commentAuthors: Zs.h
@@ -6029,7 +6029,7 @@
 						r = "";
 					const s = [];
 					if (t.forEach(t => {
-							const e = Xi(t, o, n);
+							const e = Ji(t, o, n);
 							o = e.updatedContent || o, r += e.text, s.push(...e.charList)
 						}), r.length !== s.length) throw new Error("Characters length mismatch!");
 					return {
@@ -6038,7 +6038,7 @@
 						updatedContent: o !== e ? o : void 0
 					}
 				},
-				Xi = (t, e, n) => {
+				Ji = (t, e, n) => {
 					switch (t.e) {
 						case Wn.A: {
 							const {
@@ -6046,7 +6046,7 @@
 								f: n
 							} = t;
 							return {
-								charList: Ji(e, n),
+								charList: Xi(e, n),
 								text: e
 							}
 						}
@@ -6066,7 +6066,7 @@
 								t: e
 							} = t;
 							return {
-								charList: Ji(e),
+								charList: Xi(e),
 								text: e
 							}
 						}
@@ -6075,7 +6075,7 @@
 						case Wn.C: {
 							const [n, o] = Vi[t.e], r = (t.l ? "/" : "") + n + t.t, s = o + t.t, i = Li(e, Gi[t.e], s), c = i.getLastCreatedEntityKey();
 							return {
-								charList: Ji(r, void 0, c),
+								charList: Xi(r, void 0, c),
 								text: r,
 								updatedContent: i
 							}
@@ -6087,7 +6087,7 @@
 								f: r
 							} = t, s = Li(e, F.a.LINK, o), i = s.getLastCreatedEntityKey();
 							return {
-								charList: Ji(n, r, i),
+								charList: Xi(n, r, i),
 								text: n,
 								updatedContent: s
 							}
@@ -6105,27 +6105,27 @@
 										n = t.getLastCreatedEntityKey(),
 										r = xo.a;
 									return {
-										charList: Ji(r, void 0, n),
+										charList: Xi(r, void 0, n),
 										text: r,
 										updatedContent: t
 									}
 								}
 								const s = `:${t}:`;
 								return {
-									charList: Ji(s),
+									charList: Xi(s),
 									text: s
 								}
 							}
 							return {
-								text: "", charList: Ji("")
+								text: "", charList: Xi("")
 							};
 						default:
 							return {
-								text: "", charList: Ji("")
+								text: "", charList: Xi("")
 							}
 					}
 				},
-				Ji = (t, e, n = null) => {
+				Xi = (t, e, n = null) => {
 					const r = o.CharacterMetadata.create({
 							entity: n
 						}),
@@ -6237,8 +6237,8 @@
 						[B.REDUCE_LIST_INDENT]: yo.f,
 						[B.RESET_CURRENT_AND_PREVIOUS_BLOCKS]: yo.g,
 						[B.REMOVE_EXTRA_LIST_ITEM]: yo.h,
-						[K.d]: t => Jo(t, this.props.editorType),
-						[K.b]: t => Xo(t, this.props.editorType),
+						[K.d]: t => Xo(t, this.props.editorType),
+						[K.b]: t => Jo(t, this.props.editorType),
 						[K.f]: yo.d,
 						[K.c]: t => Object(yo.c)(w.k.BOLD, t),
 						[K.e]: t => Object(yo.c)(w.k.ITALIC, t),
@@ -6702,7 +6702,7 @@
 						aboveParent: t,
 						dropdown: !0,
 						onSetPositionUpdater: this.setSuggestionDropdownPositionUpdater
-					}, e.entityText.startsWith(S.f) && p.a.createElement(Js, {
+					}, e.entityText.startsWith(S.f) && p.a.createElement(Xs, {
 						onDropdownApi: this.setSuggestionDropdownApi,
 						onSelect: this.onInternalSuggestionSelected,
 						substring: e.internalName
@@ -8036,37 +8036,37 @@
 					if (Object(i.a)(t)) return !1;
 					return Object(r.c)(t, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.ff
+						experimentName: o.hf
 					}) === o.Wc
 				},
 				a = t => {
 					return Object(r.c)(t, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.gf
+						experimentName: o.if
 					}) === o.Wc
 				},
 				l = t => {
 					if (Object(i.a)(t)) return !1;
 					const e = Object(r.c)(t, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.ef
+						experimentName: o.gf
 					});
-					return e === o.Xe.UIChangesOnly || e === o.Xe.TypingIndicators || e === o.Xe.IndicatorsPlusCTA
+					return e === o.Ze.UIChangesOnly || e === o.Ze.TypingIndicators || e === o.Ze.IndicatorsPlusCTA
 				},
 				d = t => {
 					if (Object(i.a)(t)) return !1;
 					const e = Object(s.d)(t, {
-							experimentName: o.ef
+							experimentName: o.gf
 						}),
 						n = null == e ? void 0 : e.variant;
-					return n === o.Xe.TypingIndicators || n === o.Xe.IndicatorsPlusCTA
+					return n === o.Ze.TypingIndicators || n === o.Ze.IndicatorsPlusCTA
 				},
 				u = t => {
 					if (Object(i.a)(t)) return !1;
 					const e = Object(s.d)(t, {
-						experimentName: o.ef
+						experimentName: o.gf
 					});
-					return (null == e ? void 0 : e.variant) === o.Xe.IndicatorsPlusCTA
+					return (null == e ? void 0 : e.variant) === o.Ze.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(t, e, n) {
@@ -8134,4 +8134,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.d28549f22edfdc5edc00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.b713748566c9008795e6.js.map

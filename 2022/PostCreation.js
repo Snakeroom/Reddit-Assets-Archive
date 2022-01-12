@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d8b6897f12d56ce1155d.js
-// Retrieved at 1/12/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.aa9503db55e64a703b68.js
+// Retrieved at 1/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -21851,7 +21851,7 @@
 								experimentName: r.J,
 								expEventOverride: t
 							});
-							return !!(Object(r.jf)(n) ? void 0 : n)
+							return !!(Object(r.lf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -31521,37 +31521,37 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.ff
+						experimentName: o.hf
 					}) === o.Wc
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.gf
+						experimentName: o.if
 					}) === o.Wc
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.ef
+						experimentName: o.gf
 					});
-					return t === o.Xe.UIChangesOnly || t === o.Xe.TypingIndicators || t === o.Xe.IndicatorsPlusCTA
+					return t === o.Ze.UIChangesOnly || t === o.Ze.TypingIndicators || t === o.Ze.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: o.ef
+							experimentName: o.gf
 						}),
 						n = null == t ? void 0 : t.variant;
-					return n === o.Xe.TypingIndicators || n === o.Xe.IndicatorsPlusCTA
+					return n === o.Ze.TypingIndicators || n === o.Ze.IndicatorsPlusCTA
 				},
 				u = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.ef
+						experimentName: o.gf
 					});
-					return (null == t ? void 0 : t.variant) === o.Xe.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Ze.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(e, t, n) {
@@ -31811,4 +31811,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d8b6897f12d56ce1155d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.aa9503db55e64a703b68.js.map
