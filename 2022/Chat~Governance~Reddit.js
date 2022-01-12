@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5eab41962f173eb484f4.js
-// Retrieved at 1/12/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.24dc44a6ca26ede31586.js
+// Retrieved at 1/12/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3327,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("155933"),
+				buildNumber: Object(r.c)("155934"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1642000283"),
+				buildTimestamp: Object(r.b)("1642002136"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5908,14 +5908,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cee12d9338eff916e4ad65b3cdc54325954a439af-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ca8e296aa5ff9f004678ac04c90b4d23a9db69df6-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "ee12d9338eff916e4ad65b3cdc54325954a439af-production",
+						release: "a8e296aa5ff9f004678ac04c90b4d23a9db69df6-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6432,7 +6432,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "ee12d9338eff916e4ad65b3cdc54325954a439af-production",
+						releaseClient: "a8e296aa5ff9f004678ac04c90b4d23a9db69df6-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -12126,7 +12126,7 @@
 					i(Object($.k)({
 						actionSource: e,
 						redirectUrl: t
-					})), i(Object(p.j)()), Object(ue.c)(r) && Object(B.a)(e, t), Object(k.b)(r)
+					})), i(Object(p.j)()), Object(ue.c)(r) && Object(B.b)(e, t), Object(k.b)(r)
 				}, jt = e => async (t, i) => {
 					Ct(Object(ue.d)(i())), t(Nt($.a.UserProfile, e))
 				}, At = (e, t) => async (i, n) => {
@@ -14138,61 +14138,61 @@
 		"./src/reddit/actions/users.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return V
-			})), i.d(t, "r", (function() {
 				return H
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "r", (function() {
 				return W
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "g", (function() {
 				return z
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "f", (function() {
 				return K
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "e", (function() {
 				return Y
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "k", (function() {
 				return $
+			})), i.d(t, "d", (function() {
+				return Q
 			})), i.d(t, "B", (function() {
-				return Z
-			})), i.d(t, "c", (function() {
 				return ee
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "c", (function() {
 				return te
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "s", (function() {
 				return ie
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "t", (function() {
 				return ne
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "q", (function() {
 				return re
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "z", (function() {
 				return se
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "u", (function() {
 				return oe
+			})), i.d(t, "a", (function() {
+				return de
 			})), i.d(t, "p", (function() {
-				return ae
-			})), i.d(t, "w", (function() {
 				return le
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "w", (function() {
 				return ue
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "n", (function() {
 				return ce
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "o", (function() {
 				return _e
+			})), i.d(t, "m", (function() {
+				return me
 			})), i.d(t, "v", (function() {
-				return be
-			})), i.d(t, "x", (function() {
 				return ge
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "x", (function() {
 				return we
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "i", (function() {
 				return ve
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "j", (function() {
 				return ye
+			})), i.d(t, "h", (function() {
+				return Ee
 			})), i.d(t, "y", (function() {
-				return Oe
-			})), i.d(t, "l", (function() {
 				return Ie
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "l", (function() {
 				return Re
+			})), i.d(t, "A", (function() {
+				return Fe
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				r = i("./src/lib/constants/index.ts"),
@@ -14236,7 +14236,8 @@
 			const N = 2 * r.kb;
 			var j = e => Date.now() + N < new Date(e.expires).getTime(),
 				A = i("./src/reddit/helpers/localStorage/index.ts"),
-				x = async (e, t) => {
+				x = i("./src/reddit/hooks/useSessionBlockingModal.tsx"),
+				D = async (e, t) => {
 					let i = t.accessToken;
 					await y()(async (n, s) => {
 						if (!j(t) || !i) {
@@ -14267,24 +14268,24 @@
 					}, {
 						retries: 1
 					}).catch(() => {}).finally(() => {
-						[R.d, R.e, R.h, R.i].forEach(F), Object(A.V)(null), Object(C.a)(T.b.JustLoggedOut, !0), window.location.reload()
+						[R.d, R.e, R.h, R.i].forEach(F), Object(A.V)(null), Object(x.a)(), Object(C.a)(T.b.JustLoggedOut, !0), window.location.reload()
 					})
-				}, D = i("./src/reddit/helpers/redesignOptoutCookie/index.ts"), P = i("./src/reddit/helpers/trackers/emailCollection.ts"), L = i("./src/reddit/helpers/trackers/emailVerification.ts"), k = i("./src/reddit/models/Toast/index.ts"), B = i("./src/reddit/selectors/activeModalId.ts"), M = i("./src/reddit/selectors/emailCollection.ts"), U = i("./src/reddit/selectors/notificationBanner.ts"), G = i("./src/reddit/selectors/user.ts"), q = i("./src/telemetry/index.ts");
-			const V = "USER__LOID_RECEIVED",
-				H = Object(s.a)(V),
-				W = "USER__REQUEST_PENDING",
-				z = "USER__REQUEST_LOADED",
-				K = "USER__REQUEST_FAILED",
-				Y = "USER__SESSION_TRACKER_RECEIVED",
-				$ = "USER__REDDAID_RECEIVED",
-				Q = Object(s.a)(W),
+				}, P = i("./src/reddit/helpers/redesignOptoutCookie/index.ts"), L = i("./src/reddit/helpers/trackers/emailCollection.ts"), k = i("./src/reddit/helpers/trackers/emailVerification.ts"), B = i("./src/reddit/models/Toast/index.ts"), M = i("./src/reddit/selectors/activeModalId.ts"), U = i("./src/reddit/selectors/emailCollection.ts"), G = i("./src/reddit/selectors/notificationBanner.ts"), q = i("./src/reddit/selectors/user.ts"), V = i("./src/telemetry/index.ts");
+			const H = "USER__LOID_RECEIVED",
+				W = Object(s.a)(H),
+				z = "USER__REQUEST_PENDING",
+				K = "USER__REQUEST_LOADED",
+				Y = "USER__REQUEST_FAILED",
+				$ = "USER__SESSION_TRACKER_RECEIVED",
+				Q = "USER__REDDAID_RECEIVED",
 				J = Object(s.a)(z),
 				X = Object(s.a)(K),
-				Z = e => async (t, i, {
+				Z = Object(s.a)(Y),
+				ee = e => async (t, i, {
 					apiContext: n
 				}) => {
 					if (i().users.models[e.toLowerCase()] || e === r.E) return;
-					t(Q({
+					t(J({
 						username: e
 					}));
 					const s = await Object(_.b)(n(), e);
@@ -14292,14 +14293,14 @@
 						const i = {
 							data: s.body
 						};
-						i.username = e, t(J(i))
+						i.username = e, t(X(i))
 					} else {
 						const i = s.error;
-						i.username = e, t(X(i))
+						i.username = e, t(Z(i))
 					}
-				}, ee = "USER__MYSELF_LOADED", te = Object(s.a)(ee);
+				}, te = "USER__MYSELF_LOADED", ie = Object(s.a)(te);
 
-			function ie({
+			function ne({
 				forceFetch: e
 			} = {}) {
 				return async (t, i, {
@@ -14308,20 +14309,20 @@
 					const r = i();
 					if (r.user.account && !e || !r.user.session || r.user.session.unsafeLoggedOut) return;
 					const s = await g(n());
-					s.ok && t(te(s.body))
+					s.ok && t(ie(s.body))
 				}
 			}
-			const ne = () => async (e, t, {
+			const re = () => async (e, t, {
 				apiContext: i
 			}) => {
 				const n = t().user.session;
-				Object(D.a)(), n && x(i(), n)
-			}, re = Object(s.a)(Y), se = Object(s.a)($), oe = "USER__LAYOUT_SWITCH_VIEWED", de = Object(s.a)(oe), ae = () => async (e, t, {
+				Object(P.a)(), n && D(i(), n)
+			}, se = Object(s.a)($), oe = Object(s.a)(Q), de = "USER__LAYOUT_SWITCH_VIEWED", ae = Object(s.a)(de), le = () => async (e, t, {
 				apiContext: i
 			}) => {
 				const n = t();
-				n.user.account && !n.user.account.seenLayoutSwitch && (e(de()), Object(_.c)(i()))
-			}, le = e => async (t, i, {
+				n.user.account && !n.user.account.seenLayoutSwitch && (e(ae()), Object(_.c)(i()))
+			}, ue = e => async (t, i, {
 				apiContext: n
 			}) => {
 				const s = await ((e, t) => Object(m.a)(Object(p.a)(e, [h.a]), {
@@ -14335,20 +14336,20 @@
 						}
 					}))(n(), e),
 					o = i().user.session;
-				s.ok && s.body && s.body.success ? o && x(n(), o) : t(Object(l.f)({
-					kind: k.b.Error,
+				s.ok && s.body && s.body.success ? o && D(n(), o) : t(Object(l.f)({
+					kind: B.b.Error,
 					text: "Something went wrong deactivating your account. Try again later."
 				}))
-			}, ue = "USER__UPDATE_EMAIL_PENDING", ce = "USER__UPDATE_EMAIL_SUCCESS", _e = "USER__UPDATE_EMAIL_FAILURE", me = Object(s.a)(ue), pe = Object(s.a)(ce), he = Object(s.a)(_e), fe = (e, t) => {
+			}, ce = "USER__UPDATE_EMAIL_PENDING", _e = "USER__UPDATE_EMAIL_SUCCESS", me = "USER__UPDATE_EMAIL_FAILURE", pe = Object(s.a)(ce), he = Object(s.a)(_e), fe = Object(s.a)(me), be = (e, t) => {
 				t.isEmailVerificationTooltipShowing && e(Object(o.b)())
-			}, be = e => async (t, i, {
+			}, ge = e => async (t, i, {
 				apiContext: n
 			}) => {
 				const {
 					...s
 				} = e;
-				if (Object(G.F)(i(), "changeEmail")) return;
-				t(me());
+				if (Object(q.F)(i(), "changeEmail")) return;
+				t(pe());
 				const o = await ((e, {
 						newEmail: t,
 						password: i
@@ -14364,14 +14365,14 @@
 					}))(n(), s),
 					d = i();
 				if (o.ok && o.body && o.body.success) {
-					Object(U.a)(u.a.EmailCollectionBannerId)(d) && t(Object(a.c)(u.a.EmailCollectionBannerId)), Object(M.a)(d) && Object(q.a)(Object(P.c)(d));
-					const e = Object(G.H)(d);
-					e || await t(ge()), t(pe(s.newEmail)), e && t(Te()), fe(t, d)
+					Object(G.a)(u.a.EmailCollectionBannerId)(d) && t(Object(a.c)(u.a.EmailCollectionBannerId)), Object(U.a)(d) && Object(V.a)(Object(L.c)(d));
+					const e = Object(q.H)(d);
+					e || await t(we()), t(he(s.newEmail)), e && t(Se()), be(t, d)
 				} else {
 					const e = Object(w.b)(o, "Something went wrong updating your email. Try again later.");
-					t(he(e))
+					t(fe(e))
 				}
-			}, ge = e => async (t, i, {
+			}, we = e => async (t, i, {
 				apiContext: s
 			}) => {
 				const o = await ((e, t) => Object(m.a)(Object(p.a)(e, [h.a]), {
@@ -14385,22 +14386,22 @@
 					}),
 					a = i();
 				if (o.ok && o.body && o.body.success) {
-					e && (Object(q.a)(Object(L.f)(e)(a)), fe(t, a));
-					const i = Object(B.a)(a),
+					e && (Object(V.a)(Object(k.f)(e)(a)), be(t, a));
+					const i = Object(M.a)(a),
 						n = i === c.h || i === c.p ? c.p : c.c;
 					t(Object(d.i)(n))
 				} else t(Object(l.f)({
 					duration: l.a,
-					kind: k.b.Error,
+					kind: B.b.Error,
 					text: n.fbt._("Something went wrong sending verification email. Try again later.", null, {
 						hk: "2yTdAw"
 					})
 				}))
-			}, we = "USER__SEND_RESET_EMAIL_PENDING", ve = "USER__SEND_RESET_EMAIL_SUCCESS", ye = "USER__SEND_RESET_EMAIL_FAILURE", Ee = Object(s.a)(we), Te = Object(s.a)(ve), Se = Object(s.a)(ye), Oe = e => async (t, i, {
+			}, ve = "USER__SEND_RESET_EMAIL_PENDING", ye = "USER__SEND_RESET_EMAIL_SUCCESS", Ee = "USER__SEND_RESET_EMAIL_FAILURE", Te = Object(s.a)(ve), Se = Object(s.a)(ye), Oe = Object(s.a)(Ee), Ie = e => async (t, i, {
 				apiContext: n
 			}) => {
-				if (Object(G.F)(i(), "sendResetEmail")) return;
-				t(Ee());
+				if (Object(q.F)(i(), "sendResetEmail")) return;
+				t(Te());
 				const s = await ((e, t) => Object(m.a)(Object(p.a)(e, [h.a]), {
 					method: r.jb.POST,
 					endpoint: `${e.apiUrl}/api/password`,
@@ -14411,14 +14412,14 @@
 				}))(n(), e);
 				if (!s.ok || !s.body || !s.body.success) {
 					const e = Object(w.b)(s, "Something went wrong sending the reset email. Please try again.");
-					return t(Se()), void t(Object(l.f)({
+					return t(Oe()), void t(Object(l.f)({
 						duration: l.a,
-						kind: k.b.Error,
+						kind: B.b.Error,
 						text: e
 					}))
 				}
-				t(Te())
-			}, Ie = "SET_USER_AVATAR_ICON", Re = Object(s.a)(Ie)
+				t(Se())
+			}, Re = "SET_USER_AVATAR_ICON", Fe = Object(s.a)(Re)
 		},
 		"./src/reddit/actions/video.ts": function(e, t, i) {
 			"use strict";
@@ -26280,12 +26281,14 @@
 		},
 		"./src/reddit/hooks/useSessionBlockingModal.tsx": function(e, t, i) {
 			"use strict";
-			i.d(t, "b", (function() {
+			i.d(t, "c", (function() {
 				return l
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "d", (function() {
 				return u
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "b", (function() {
 				return c
+			})), i.d(t, "a", (function() {
+				return m
 			}));
 			var n = i("./node_modules/react/index.js"),
 				r = i.n(n),
@@ -26330,6 +26333,9 @@
 						}
 					}
 					return e
+				},
+				m = () => {
+					window.sessionStorage && window.sessionStorage.removeItem("account_manager_modal_storage")
 				}
 		},
 		"./src/reddit/models/Comment/addProfileImgParam.ts": function(e, t, i) {
@@ -45255,4 +45261,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5eab41962f173eb484f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.24dc44a6ca26ede31586.js.map
