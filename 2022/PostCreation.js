@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.2b26386586bda44eeb38.js
-// Retrieved at 1/11/2022, 11:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.715921ca11882f8765d5.js
+// Retrieved at 1/12/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -10404,7 +10404,8 @@
 		"./src/reddit/components/RichTextEditor/CodeBlock/index.m.less": function(e, t, n) {
 			e.exports = {
 				CodeBlockWrapper: "_2YrwxhRxsXvszOhYWDUhMh",
-				codeBlockWrapper: "_2YrwxhRxsXvszOhYWDUhMh"
+				codeBlockWrapper: "_2YrwxhRxsXvszOhYWDUhMh",
+				codeBlockBorder: "pBkHBQ-WD19bWK2Rsi0zc"
 			}
 		},
 		"./src/reddit/components/RichTextEditor/DragController/helpers.ts": function(e, t, n) {
@@ -14798,15 +14799,22 @@
 						wrapper: m.a.createElement(ps, null)
 					}
 				});
-			var bs = n("./src/reddit/components/RichTextEditor/CodeBlock/index.m.less"),
-				fs = n.n(bs);
-			const gs = C.a.div("CodeBlockWrapper", fs.a),
-				Es = Object(U.Map)({
-					[I.f]: {
-						element: "code",
-						wrapper: m.a.createElement(gs, null)
-					}
-				});
+			var bs = n("./src/reddit/selectors/experiments/typingIndicators.ts"),
+				fs = n("./src/reddit/components/RichTextEditor/CodeBlock/index.m.less"),
+				gs = n.n(fs);
+			const Es = Object(U.Map)({
+				[I.f]: {
+					element: "code",
+					wrapper: m.a.createElement(e => {
+						const t = Object(p.e)(bs.c);
+						return m.a.createElement("div", {
+							className: Object(g.a)(gs.a.CodeBlockWrapper, {
+								[gs.a.codeBlockBorder]: t
+							})
+						}, e.children)
+					}, null)
+				}
+			});
 			var Cs = n("./node_modules/bowser/src/bowser.js"),
 				xs = n.n(Cs),
 				ys = n("./node_modules/lodash/includes.js"),
@@ -31803,4 +31811,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.2b26386586bda44eeb38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.715921ca11882f8765d5.js.map

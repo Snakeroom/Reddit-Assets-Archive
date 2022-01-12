@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.4da2a3ff00b5b7920f6b.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.8fdcc8360507f3c99ab6.js
+// Retrieved at 1/12/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -46,70 +46,68 @@
 		"./src/reddit/components/NewCommentPill/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "trackNewCommentPill", (function() {
-				return D
+				return T
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/history/esm/history.js"),
-				o = s("./src/lib/fastdom/index.ts"),
-				a = s("./node_modules/react/index.js"),
-				c = s.n(a),
-				d = s("./node_modules/react-redux/es/index.js"),
+				o = s("./node_modules/react/index.js"),
+				a = s.n(o),
+				c = s("./node_modules/react-redux/es/index.js"),
 				i = s("./node_modules/react-router-redux/es/index.js"),
 				l = s("./src/realtime/GQLSubscription/async.tsx"),
-				u = s("./src/reddit/actions/pages/comments.ts"),
-				m = s("./src/reddit/components/CommentSort/index.tsx"),
-				b = s("./src/reddit/components/Pill/index.tsx"),
-				p = s("./src/reddit/components/Pill/PillButton/index.tsx"),
-				f = s("./src/reddit/components/PostContent/index.tsx"),
-				j = s("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
-				O = s("./src/reddit/components/ReadingIndicator/index.tsx"),
-				h = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				_ = s("./src/reddit/constants/elementIds.ts"),
-				I = s("./src/reddit/constants/parameters.ts"),
-				C = s("./src/reddit/constants/tracking.ts"),
-				N = s("./src/reddit/hooks/usePostContext.ts"),
-				g = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
-				x = s("./src/reddit/selectors/experiments/typingIndicators.ts"),
-				E = s("./src/reddit/selectors/subreddit.ts"),
-				v = s("./src/reddit/selectors/telemetry.ts"),
-				y = s("./src/lib/classNames/index.ts"),
-				R = s("./src/lib/constants/index.ts"),
-				S = s("./src/lib/makeCommentsPageKey/index.ts"),
-				T = s("./src/reddit/components/NewCommentPill/index.m.less"),
-				w = s.n(T);
-			const D = (e, t) => s => ({
+				d = s("./src/reddit/actions/pages/comments.ts"),
+				u = s("./src/reddit/components/Pill/index.tsx"),
+				m = s("./src/reddit/components/Pill/PillButton/index.tsx"),
+				b = s("./src/reddit/components/PostContent/index.tsx"),
+				p = s("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
+				j = s("./src/reddit/components/ReadingIndicator/index.tsx"),
+				f = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				O = s("./src/reddit/constants/parameters.ts"),
+				h = s("./src/reddit/constants/tracking.ts"),
+				_ = s("./src/reddit/hooks/usePostContext.ts"),
+				I = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
+				C = s("./src/reddit/selectors/experiments/typingIndicators.ts"),
+				N = s("./src/reddit/selectors/subreddit.ts"),
+				g = s("./src/reddit/selectors/telemetry.ts"),
+				x = s("./src/lib/classNames/index.ts"),
+				E = s("./src/lib/constants/index.ts"),
+				v = s("./src/lib/makeCommentsPageKey/index.ts"),
+				y = s("./src/lib/scroll/index.ts"),
+				R = s("./src/reddit/components/NewCommentPill/index.m.less"),
+				S = s.n(R);
+			const T = (e, t) => s => ({
 					source: "post",
 					action: e,
 					noun: "new_comment_pill",
-					post: Object(v.I)(s, t.id),
-					subreddit: Object(E.J)(s, {
+					post: Object(g.I)(s, t.id),
+					subreddit: Object(N.J)(s, {
 						identifier: t.belongsTo
 					})
 				}),
-				P = (e, {
+				w = (e, {
 					type: t,
 					delta: s
 				}) => "add" === t ? e + (s || 0) : 0;
-			t.default = Object(h.c)(({
+			t.default = Object(f.c)(({
 				commentId: e,
 				sendEvent: t,
 				postId: s,
-				isNightMode: h,
-				isOverlay: E
+				isNightMode: f,
+				isOverlay: N
 			}) => {
-				const v = Object(a.useRef)(null),
+				const g = Object(o.useRef)(null),
 					{
-						post: T
-					} = Object(N.a)() || {},
-					[U, k] = Object(a.useReducer)(P, 0),
-					M = Object(d.e)(x.a),
-					A = Object(d.e)(e => Object(g.a)(e) || Object(g.c)(e)),
-					[L, B] = Object(a.useState)(!1);
-				Object(a.useEffect)(() => {
-					if (!T || !A) return;
-					f.d.addListeners(f.b, () => B(!0)), f.d.addListeners(f.a, () => B(!1))
-				}, [T, A]);
-				const [K, z] = Object(a.useState)(!1), W = Object(a.useRef)(), q = Object(a.useRef)(), J = Object(a.useRef)(2), X = Object(a.useMemo)(() => ({
+						post: R
+					} = Object(_.a)() || {},
+					[D, P] = Object(o.useReducer)(w, 0),
+					U = Object(c.e)(C.a),
+					k = Object(c.e)(e => Object(I.a)(e) || Object(I.c)(e)),
+					[M, A] = Object(o.useState)(!1);
+				Object(o.useEffect)(() => {
+					if (!R || !k) return;
+					b.d.addListeners(b.b, () => A(!0)), b.d.addListeners(b.a, () => A(!1))
+				}, [R, k]);
+				const [L, K] = Object(o.useState)(!1), B = Object(o.useRef)(), z = Object(o.useRef)(), W = Object(o.useRef)(2), q = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -118,96 +116,86 @@
 						}
 					}
 				}), [s]);
-				Object(a.useEffect)(() => () => {
-					v.current && clearTimeout(v.current)
+				Object(o.useEffect)(() => () => {
+					g.current && clearTimeout(g.current)
 				}, []);
-				const F = Object(d.d)(),
-					G = Object(a.useCallback)(() => {
-						if (!T) return;
-						t(D(C.c.CLICK, T)), z(!1), W.current && (clearTimeout(W.current), W.current = null), q.current && (q.current = null), J.current = 2, (() => {
+				const J = Object(c.d)(),
+					X = Object(o.useCallback)(() => {
+						if (!R) return;
+						t(T(h.c.CLICK, R)), K(!1), B.current && (clearTimeout(B.current), B.current = null), z.current && (z.current = null), W.current = 2, (() => {
 							const t = new URLSearchParams(location.search);
-							t.get(I.x) !== R.u.NEW && (t.set(I.x, R.u.NEW), F(Object(i.b)(Object(r.c)({
+							t.get(O.x) !== E.u.NEW && (t.set(O.x, E.u.NEW), J(Object(i.b)(Object(r.c)({
 								pathname: location.pathname,
 								search: t.toString()
 							}, {
-								isOverlay: E
+								isOverlay: N
 							}))));
-							const n = Object(S.a)(s, e, {
+							const n = Object(v.a)(s, e, {
 								hasSortParam: !0,
-								sort: R.u.NEW
+								sort: E.u.NEW
 							});
-							F(Object(u.commentsPageRemoveLoadedFull)({
+							J(Object(d.commentsPageRemoveLoadedFull)({
 								key: n
-							})), F(Object(u.commentsPageDataRequested)(s, e, {
+							})), J(Object(d.commentsPageDataRequested)(s, e, {
 								hasSortParam: !0,
-								sort: R.u.NEW
-							}, R.u.NEW))
-						})(), o.a.read(() => {
-							const e = E ? document.getElementById(_.d) : window,
-								t = document.getElementById(m.a);
-							if (e && t) {
-								const s = E ? t.offsetTop : t.offsetTop - 50;
-								o.a.write(() => e.scrollTo({
-									top: s,
-									behavior: "smooth"
-								}))
-							}
-						}), v.current = setTimeout(() => k({
+								sort: E.u.NEW
+							}, E.u.NEW))
+						})(), Object(y.a)(!!N), g.current = setTimeout(() => P({
 							type: "reset"
 						}), 1e3)
-					}, [T]);
-				Object(a.useEffect)(() => {
-					const e = J.current <= 0;
-					if (!U || e) return;
+					}, [R]);
+				Object(o.useEffect)(() => {
+					const e = W.current <= 0;
+					if (!D || e) return;
 					const t = Date.now();
-					(!q.current || t - q.current >= 25e3) && z(!0)
-				}, [U]), Object(a.useEffect)(() => (K && T && (W.current = setTimeout(() => {
-					z(!1), q.current = Date.now(), J.current -= 1
-				}, 5e3), t(D(C.c.VIEW, T))), () => {
-					W.current && clearTimeout(W.current)
-				}), [K, t]);
-				const H = Object(a.useCallback)(e => {
+					(!z.current || t - z.current >= 25e3) && K(!0)
+				}, [D]), Object(o.useEffect)(() => (L && R && (B.current = setTimeout(() => {
+					K(!1), z.current = Date.now(), W.current -= 1
+				}, 5e3), t(T(h.c.VIEW, R))), () => {
+					B.current && clearTimeout(B.current)
+				}), [L, t]);
+				const F = Object(o.useCallback)(e => {
 					const {
 						topLevelCommentCountChange: t
 					} = e.subscribe.data;
-					t && k({
+					t && P({
 						type: "add",
 						delta: t
 					})
 				}, []);
-				return M ? c.a.createElement(c.a.Fragment, null, c.a.createElement(l.a, {
-					variables: X,
-					onData: H,
+				return U ? a.a.createElement(a.a.Fragment, null, a.a.createElement(l.a, {
+					variables: q,
+					onData: F,
 					queryKey: "topLevelCommentCountChange"
-				}), c.a.createElement("div", {
-					className: Object(y.a)(w.a.wrapper, {
-						[w.a.isOverlayWrapper]: E,
-						[w.a.wrapperVisible]: K,
-						[w.a.joinOptimizationsM2]: !E && A && L
+				}), a.a.createElement("div", {
+					className: Object(x.a)(S.a.wrapper, {
+						[S.a.isOverlayWrapper]: N,
+						[S.a.wrapperVisible]: L,
+						[S.a.joinOptimizationsM2]: !N && k && M
 					})
-				}, c.a.createElement(b.a, {
-					className: w.a.pillContainer
-				}, c.a.createElement(p.a, {
-					className: Object(y.a)(w.a.pillButton, {
-						[w.a.isNightMode]: h
+				}, a.a.createElement(u.a, {
+					className: S.a.pillContainer
+				}, a.a.createElement(m.a, {
+					className: Object(x.a)(S.a.pillButton, {
+						[S.a.isNightMode]: f
 					}),
-					onClick: G,
-					variant: p.b.BUTTON
-				}, c.a.createElement(j.a, {
+					onClick: X,
+					variant: m.b.BUTTON
+				}, a.a.createElement(p.a, {
 					iconsKey: s,
 					shouldShowPresenceDot: !0,
 					shouldUseColoredSilhouetteIcons: !0,
-					memberIconClassName: Object(y.a)(w.a.memberIcon, {
-						[w.a.isNightMode]: h
+					memberIconClassName: Object(x.a)(S.a.memberIcon, {
+						[S.a.isNightMode]: f
 					}),
-					presenceDotOutlineClassName: Object(y.a)(w.a.presenceDotOutlineClass, {
-						[w.a.isNightMode]: h
+					presenceDotOutlineClassName: Object(x.a)(S.a.presenceDotOutlineClass, {
+						[S.a.isNightMode]: f
 					})
-				}), c.a.createElement("span", {
-					className: Object(y.a)(w.a.newCommentsText, {
-						[w.a.isNightMode]: h
+				}), a.a.createElement("span", {
+					className: Object(x.a)(S.a.newCommentsText, {
+						[S.a.isNightMode]: f
 					})
-				}, U > 1 ? n.fbt._("{number of new comments} new comments", [n.fbt._param("number of new comments", Object(O.formatPresenceNumber)(U))], {
+				}, D > 1 ? n.fbt._("{number of new comments} new comments", [n.fbt._param("number of new comments", Object(j.formatPresenceNumber)(D))], {
 					hk: "2jSNSA"
 				}) : n.fbt._("1 new comment", null, {
 					hk: "4nXICl"
@@ -221,9 +209,9 @@
 				o = s.n(r),
 				a = s("./src/lib/classNames/index.ts"),
 				c = s("./node_modules/lodash/sampleSize.js"),
-				d = s.n(c),
-				i = s("./src/reddit/helpers/getFakeUserIcons.ts"),
-				l = s("./src/reddit/hooks/useConstructor.ts"),
+				i = s.n(c),
+				l = s("./src/reddit/helpers/getFakeUserIcons.ts"),
+				d = s("./src/reddit/hooks/useConstructor.ts"),
 				u = s("./src/reddit/components/RandomBaseUserIcons/index.m.less"),
 				m = s.n(u);
 			const b = Object(n.a)({
@@ -247,22 +235,22 @@
 					}
 				}),
 				p = 8,
-				f = 20,
-				j = 3,
+				j = 20,
+				f = 3,
 				O = e => {
 					const {
 						iconsKey: t,
 						memberIconClassName: s,
-						numVisibleIcons: n = j,
+						numVisibleIcons: n = f,
 						presenceDotOutlineClassName: c,
 						shouldShowPresenceDot: u,
 						shouldUseColoredSilhouetteIcons: O,
-						numIconsToDrawFrom: h = (O ? p : f),
+						numIconsToDrawFrom: h = (O ? p : j),
 						wrapperClassName: _
 					} = e, I = Object(r.useRef)([]);
-					return Object(l.a)(() => {
-						const e = Object(i.a)(t, h, O);
-						I.current = d()(e, n)
+					return Object(d.a)(() => {
+						const e = Object(l.a)(t, h, O);
+						I.current = i()(e, n)
 					}), o.a.createElement("div", {
 						className: Object(a.a)(m.a.membersIcons, _)
 					}, I.current.map(({
@@ -311,22 +299,22 @@
 		"./src/reddit/components/ReadingIndicator/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "formatPresenceNumber", (function() {
-				return j
+				return f
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./src/lib/prettyPrintNumber/index.ts"),
 				o = s("./node_modules/lodash/noop.js"),
 				a = s.n(o),
 				c = s("./node_modules/react/index.js"),
-				d = s.n(c),
-				i = s("./src/realtime/GQLSubscription/async.tsx"),
-				l = s("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
+				i = s.n(c),
+				l = s("./src/realtime/GQLSubscription/async.tsx"),
+				d = s("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
 				u = s("./src/reddit/helpers/trackers/post.ts"),
 				m = s("./src/reddit/hooks/useClassNameOnMount.ts"),
 				b = s("./src/reddit/hooks/useTracking.ts");
 			var p = s("./src/reddit/components/ReadingIndicator/index.m.less"),
-				f = s.n(p);
-			const j = e => e > 9999 ? Object(r.b)(e) : e.toString();
+				j = s.n(p);
+			const f = e => e > 9999 ? Object(r.b)(e) : e.toString();
 			t.default = ({
 				isReadingIndicatorsExperiment: e,
 				isReadLoadTest: t,
@@ -384,33 +372,33 @@
 					shouldMount: S,
 					onTransitionEnd: T
 				} = Object(m.a)({
-					defaultClass: f.a.readingIndicator,
-					addedClass: f.a.isDisplayed,
+					defaultClass: j.a.readingIndicator,
+					addedClass: j.a.isDisplayed,
 					mountCondition: !!E
 				}), w = Object(b.a)();
 				return Object(c.useEffect)(() => {
 					S && w(Object(u.q)(r, C))
 				}, [w, S, r]), Object(c.useEffect)(() => () => {
 					h.current && clearTimeout(h.current), _.current && clearTimeout(_.current), y.current && clearTimeout(y.current)
-				}, []), d.a.createElement(d.a.Fragment, null, s && d.a.createElement(i.a, {
+				}, []), i.a.createElement(i.a.Fragment, null, s && i.a.createElement(l.a, {
 					variables: p,
 					onData: a.a,
 					queryKey: "userIsReadingPost"
-				}), (t || e) && d.a.createElement(i.a, {
+				}), (t || e) && i.a.createElement(l.a, {
 					variables: O,
 					onData: e ? g : a.a,
 					queryKey: "usersReadingIndicator"
-				}), S && d.a.createElement("div", {
+				}), S && i.a.createElement("div", {
 					className: R,
 					onTransitionEnd: T
-				}, n.fbt._("{number of users reading} people here", [n.fbt._param("number of users reading", j(x.current))], {
+				}, n.fbt._("{number of users reading} people here", [n.fbt._param("number of users reading", f(x.current))], {
 					hk: "3foy5g"
-				}), d.a.createElement(l.a, {
-					memberIconClassName: f.a.offsetMemberIcon,
+				}), i.a.createElement(d.a, {
+					memberIconClassName: j.a.offsetMemberIcon,
 					iconsKey: r,
 					numVisibleIcons: 2,
 					shouldUseColoredSilhouetteIcons: !0,
-					wrapperClassName: f.a.offsetMembersIconsWrapper
+					wrapperClassName: j.a.offsetMembersIconsWrapper
 				})))
 			}
 		},
@@ -423,13 +411,13 @@
 			const c = Array.from({
 					length: 20
 				}).map((e, t) => `${a.a.assetPath}/img/snoovatars/snoovatar_${t+1}.png`),
-				d = Array.from({
+				i = Array.from({
 					length: 8
 				}).map((e, t) => `${a.a.processingAvatarImageUrl}/defaults/v2/avatar_default_${t}.png`),
-				i = [];
+				l = [];
 			t.a = r()((e, t = 3, s) => {
-				if (!e || !t) return i;
-				const n = s ? d : c,
+				if (!e || !t) return l;
+				const n = s ? i : c,
 					r = Array.from(e).reduce((e, t) => e + t.charCodeAt(0), 0);
 				return Array.from({
 					length: t
@@ -448,21 +436,21 @@
 				addedClass: t,
 				mountCondition: s
 			}) => {
-				const [o, a] = Object(n.useState)(e), [c, d] = Object(n.useState)(!1);
+				const [o, a] = Object(n.useState)(e), [c, i] = Object(n.useState)(!1);
 				Object(n.useEffect)(() => {
-					s && d(!0)
+					s && i(!0)
 				}, [s]), Object(n.useEffect)(() => {
 					c && (s ? window.setTimeout(() => {
 						a(Object(r.a)(e, t))
 					}, 100) : a(e))
 				}, [t, e, s, c]);
-				const i = Object(n.useCallback)(() => {
-					s || d(!1)
+				const l = Object(n.useCallback)(() => {
+					s || i(!1)
 				}, [s]);
 				return {
 					className: o,
 					shouldMount: c,
-					onTransitionEnd: i
+					onTransitionEnd: l
 				}
 			}
 		},
@@ -480,4 +468,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.4da2a3ff00b5b7920f6b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.8fdcc8360507f3c99ab6.js.map
