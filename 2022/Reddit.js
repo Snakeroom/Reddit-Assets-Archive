@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.678745b711d93e9abbfb.js
-// Retrieved at 1/12/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.2ceeb6a935ff8fb942fd.js
+// Retrieved at 1/12/2022, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1226,7 +1226,7 @@
 			const m = r()(l.c),
 				p = () => async (e, t) => {
 					const n = t();
-					m(), Object(u.a)(n) && (await e(Object(i.z)()), Object(u.a)(t()) && e(Object(a.d)({
+					m(), Object(u.a)(n) && (await e(Object(i.A)()), Object(u.a)(t()) && e(Object(a.d)({
 						notificationBannerId: c.a.EmailCollectionBannerId
 					})))
 				}, b = () => async (e, t) => {
@@ -2338,7 +2338,7 @@
 							}, Object(j.a)())
 						})
 					},
-					onTwoFactorChanged: () => e(Object(m.z)(!1)),
+					onTwoFactorChanged: () => e(Object(m.A)(!1)),
 					onSSOLinkSuccess: (t, n, s) => {
 						e(h({
 							linkedIdentity: n
@@ -7407,7 +7407,7 @@
 					return m.a.createElement(jc, {
 						isEnabled: n,
 						onClick: () => {
-							t(Object(mc.g)(n)), (t => e(Object(pi.y)(t)))(!n)
+							t(Object(mc.g)(n)), (t => e(Object(pi.z)(t)))(!n)
 						},
 						title: r.fbt._("Dark Mode", null, {
 							hk: "1pZGTO"
@@ -7447,7 +7447,7 @@
 						}),
 						isEnabled: s,
 						onClick: () => {
-							t(Object(mc.h)(!s)), (t => e(Object(pi.H)({
+							t(Object(mc.h)(!s)), (t => e(Object(pi.I)({
 								showPresence: t
 							})))(!s)
 						}
@@ -8151,8 +8151,8 @@
 						tooltipId: "USER_DROPDOWN_ID"
 					})),
 					exposeNavClickV2Experiment: () => e((() => async (e, t) => Object(na.e)(t(), Kt.Md))()),
-					toggleNightmode: t => e(Object(pi.y)(t)),
-					toggleShowPresence: t => e(Object(pi.H)({
+					toggleNightmode: t => e(Object(pi.z)(t)),
+					toggleShowPresence: t => e(Object(pi.I)({
 						showPresence: t
 					})),
 					onOptIntoRedesign: () => e(Object(Hi.a)()),
@@ -16099,7 +16099,7 @@
 					}, [O]), Object(c.useEffect)(() => {
 						if (!t) return;
 						const n = Date.now();
-						Object(m.i)(t, n), e(Object(l.H)({
+						Object(m.i)(t, n), e(Object(l.I)({
 							surveyLastSeenTime: n
 						}, !1)), s(g(t.experiment_name, "display"))
 					}, [t, e, s]), {
@@ -17832,8 +17832,8 @@
 			"use strict";
 			var s = n("./src/reddit/models/ContentGate.ts");
 			t.a = (e, t, n) => {
-				let r, o, a, i, c, d, l, u;
-				return e ? e.quarantinedSubreddit ? (o = s.a.QuarantinedSubreddit, i = e.quarantineMessage, c = e.quarantineMessageHtml, d = e.quarantineRequiresEmail) : e.privateSubreddit ? (o = s.a.PrivateSubreddit, a = e.subredditDescription, l = e.isContributorRequestsDisabled, u = e.isContributorRequestTimestamp) : e.goldSubreddit ? o = s.a.GoldSubreddit : e.subredditBanned ? (o = s.a.SubredditBanned, r = e.subredditBanMessage) : e.subredditDoesNotExist ? o = s.a.SubredditDoesNotExist : e.subredditBlockedForLegalReason && (o = s.a.SubredditBlockedForLegalReason) : t && (o = s.a.Nsfw), o && n ? {
+				let r, o, a, i, c, d, l, u, m, p, b;
+				return e ? e.quarantinedSubreddit ? (o = s.a.QuarantinedSubreddit, i = e.quarantineMessage, c = e.quarantineMessageHtml, d = e.quarantineRequiresEmail) : e.privateSubreddit ? (o = s.a.PrivateSubreddit, a = e.subredditDescription, l = e.isContributorRequestsDisabled, u = e.isContributorRequestTimestamp) : e.goldSubreddit ? o = s.a.GoldSubreddit : e.subredditBanned ? (o = s.a.SubredditBanned, r = e.subredditBanMessage) : e.subredditDoesNotExist ? o = s.a.SubredditDoesNotExist : e.subredditBlockedForLegalReason ? o = s.a.SubredditBlockedForLegalReason : e.interstitialWarningMessage && (o = s.a.GatedSubreddit, m = e.interstitialWarningMessage, p = e.interstitialWarningMessageHtml, b = e.interstitialWarningMessageRTJson) : t && (o = s.a.Nsfw), o && n ? {
 					banMessage: r,
 					contentGateType: o,
 					isContributorRequestsDisabled: l,
@@ -17842,7 +17842,10 @@
 					subredditName: n,
 					quarantineMessage: i,
 					quarantineMessageHtml: c,
-					quarantineRequiresEmail: d
+					quarantineRequiresEmail: d,
+					interstitialWarningMessage: m,
+					interstitialWarningMessageHtml: p,
+					interstitialWarningMessageRTJson: b
 				} : void 0
 			}
 		},
@@ -20864,7 +20867,7 @@
 					return s
 				})),
 				function(e) {
-					e.CustomFeedDoesNotExist = "CustomFeedDoesNotExist", e.GoldSubreddit = "GoldSubreddit", e.Nsfw = "Nsfw", e.NsfwCustomFeed = "NsfwCustomFeed", e.PrivateSubreddit = "PrivateSubreddit", e.ProfileDoesNotExist = "ProfileDoesNotExist", e.ProfileDeleted = "ProfileDeleted", e.ProfileSuspended = "ProfileSuspended", e.ProfileBlockedForLegalReason = "ProfileBlockedForLegalReason", e.QuarantinedSubreddit = "QuarantinedSubreddit", e.SubredditBanned = "SubredditBanned", e.SubredditBlockedForLegalReason = "SubredditBlockedForLegalReason", e.SubredditDoesNotExist = "SubredditDoesNotExist", e.PostBlockedForLegalReason = "PostBlockedForLegalReason"
+					e.CustomFeedDoesNotExist = "CustomFeedDoesNotExist", e.GoldSubreddit = "GoldSubreddit", e.Nsfw = "Nsfw", e.NsfwCustomFeed = "NsfwCustomFeed", e.PrivateSubreddit = "PrivateSubreddit", e.ProfileDoesNotExist = "ProfileDoesNotExist", e.ProfileDeleted = "ProfileDeleted", e.ProfileSuspended = "ProfileSuspended", e.ProfileBlockedForLegalReason = "ProfileBlockedForLegalReason", e.QuarantinedSubreddit = "QuarantinedSubreddit", e.GatedSubreddit = "GatedSubreddit", e.SubredditBanned = "SubredditBanned", e.SubredditBlockedForLegalReason = "SubredditBlockedForLegalReason", e.SubredditDoesNotExist = "SubredditDoesNotExist", e.PostBlockedForLegalReason = "PostBlockedForLegalReason"
 				}(s || (s = {}))
 		},
 		"./src/reddit/models/EconManagement/index.ts": function(e, t, n) {
@@ -24111,4 +24114,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.678745b711d93e9abbfb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.2ceeb6a935ff8fb942fd.js.map

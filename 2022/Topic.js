@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.1267b5b636e60c3d66e0.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.0fa2ca19e73c36b08812.js
+// Retrieved at 1/12/2022, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./src/reddit/components/GeneralCleanup/SortViewBar/LayoutSwitch/index.m.less": function(e, t, a) {
@@ -99,7 +99,7 @@
 					redditStyle: h.D
 				}),
 				w = Object(r.b)(k, e => ({
-					onListingLayoutChange: (t, a) => e(Object(m.x)(t, a)),
+					onListingLayoutChange: (t, a) => e(Object(m.y)(t, a)),
 					openDropdown: () => e(Object(u.h)({
 						tooltipId: L
 					}))
@@ -1356,4 +1356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.1267b5b636e60c3d66e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.0fa2ca19e73c36b08812.js.map

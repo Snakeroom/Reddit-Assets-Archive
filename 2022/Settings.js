@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.d94f9f5ec2e222845237.js
-// Retrieved at 1/11/2022, 12:30:39 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.d6a7834e3ab66d09f8b1.js
+// Retrieved at 1/12/2022, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1518,7 +1518,7 @@
 				F = n("./src/reddit/selectors/externalAccount.ts");
 			const U = e => async (t, n) => {
 				await t(Object(A.t)());
-				const f = [t(Object(N.s)()), t(Object(N.z)(!0)), t(Object(p.a)())];
+				const f = [t(Object(N.s)()), t(Object(N.A)(!0)), t(Object(p.a)())];
 				n().economics.paymentSystems.status === B.a.NotFetched && f.push(t((() => async (e, t, {
 					apiContext: n
 				}) => {
@@ -3978,7 +3978,7 @@
 					hideNSFWPref: r.C
 				}),
 				c = Object(s.b)(i, e => ({
-					imageUpdateRequested: (t, n) => e(Object(o.B)(t, n))
+					imageUpdateRequested: (t, n) => e(Object(o.C)(t, n))
 				}));
 			t.a = c
 		},
@@ -11966,12 +11966,12 @@
 				}
 			}
 			const Pa = Object(r.b)(ga, e => ({
-					imageDeleteRequested: t => e(Object($s.A)(t)),
-					imagesUpdateRequested: (t, n) => e(Object($s.B)(t, n)),
+					imageDeleteRequested: t => e(Object($s.B)(t)),
+					imagesUpdateRequested: (t, n) => e(Object($s.C)(t, n)),
 					onClickSnoovatar: () => e(Object(ea.b)({
 						clickSource: "profile_overview"
 					})),
-					save: (t, n) => e(Object($s.G)(t, n)),
+					save: (t, n) => e(Object($s.H)(t, n)),
 					toggleNSFWModal: () => e(Object(C.i)("ProfileForm_NSFWConfirmDialogID"))
 				}))(Object(O.c)(Ia)),
 				Aa = Object(c.c)({
@@ -12526,7 +12526,7 @@
 				Vo = Object(ye.u)(),
 				Jo = Object(r.b)(qo, (e, t) => ({
 					changeTab: t => e(Object(i.b)(`/settings/${t}`)),
-					updatePrefs: t => e(Object($s.H)(t)),
+					updatePrefs: t => e(Object($s.I)(t)),
 					onPageViewed: () => e(Object(h.a)())
 				})),
 				Qo = {
@@ -12894,4 +12894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.d94f9f5ec2e222845237.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.d6a7834e3ab66d09f8b1.js.map

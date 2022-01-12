@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.5b4a78925b4cd1bcfced.js
-// Retrieved at 1/12/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.d4469d7f81f62054ab70.js
+// Retrieved at 1/12/2022, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, s) {
@@ -11,9 +11,9 @@
 			})), s.d(t, "profileCommentsFailed", (function() {
 				return B
 			})), s.d(t, "profileCommentsRequested", (function() {
-				return R
-			})), s.d(t, "moreItemsPending", (function() {
 				return q
+			})), s.d(t, "moreItemsPending", (function() {
+				return R
 			})), s.d(t, "moreItemsLoaded", (function() {
 				return M
 			})), s.d(t, "moreItemsFailed", (function() {
@@ -63,7 +63,7 @@
 			const F = Object(i.a)(T.f),
 				A = Object(i.a)(T.e),
 				B = Object(i.a)(T.d),
-				R = e => async (t, s, r) => {
+				q = e => async (t, s, r) => {
 					const {
 						queryParams: o,
 						params: n
@@ -101,7 +101,7 @@
 							type: v.body.reason
 						} : v.error,
 						key: y
-					})), v.body.reason === O.a.DeletedProfile && t(Object(d.p)({
+					})), v.body.reason === O.a.DeletedProfile && t(Object(d.q)({
 						profileName: x
 					})), void t(u.n(v.status));
 					const S = v.body;
@@ -110,7 +110,7 @@
 						meta: s().meta,
 						...S
 					})), await Promise.all([t(Object(p.c)(x)), t(Object(b.q)()), t(Object(l.b)()), t(m.o(x))])
-				}, q = Object(i.a)(T.c), M = Object(i.a)(T.b), D = Object(i.a)(T.a), K = () => async (e, t, {
+				}, R = Object(i.a)(T.c), M = Object(i.a)(T.b), D = Object(i.a)(T.a), K = () => async (e, t, {
 					apiContext: s
 				}) => {
 					const r = t(),
@@ -138,7 +138,7 @@
 						}),
 						y = x && x[b.token];
 					if (O || y) return;
-					e(q({
+					e(R({
 						key: f,
 						fetchedToken: b.token
 					}));
@@ -248,7 +248,7 @@
 						})(e, t)
 					}
 				});
-			var R = A(Object(i.b)(B)(e => {
+			var q = A(Object(i.b)(B)(e => {
 				const {
 					comment: t,
 					itemId: s,
@@ -264,7 +264,7 @@
 					width: m,
 					...l
 				} = e;
-				return a.a.createElement(q, l, r && a.a.createElement(h.a, {
+				return a.a.createElement(R, l, r && a.a.createElement(h.a, {
 					isFirst: !0
 				}, n === v.g.Large ? a.a.createElement(T, S({}, e, {
 					availableWidth: m,
@@ -285,7 +285,7 @@
 					showModTools: c
 				})))
 			}));
-			const q = Object(x.a)(e => a.a.createElement("div", {
+			const R = Object(x.a)(e => a.a.createElement("div", {
 				className: Object(j.a)(_.a.backgroundMargin, {
 					[_.a.isFirstInCommentList]: e.isFirstInCommentList,
 					[_.a.isLastInCommentList]: e.isLastInCommentList
@@ -374,7 +374,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ae = e => a.a.createElement(R, ne({}, e, {
+			const ae = e => a.a.createElement(q, ne({}, e, {
 					allowModToolsUnderComments: !0
 				})),
 				ie = (e => Object(H.c)(te(oe(e))))(M.a);
@@ -517,4 +517,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.5b4a78925b4cd1bcfced.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.d4469d7f81f62054ab70.js.map

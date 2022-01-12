@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.d39a02a51dad755e23b6.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.ca0f67de5101990224b9.js
+// Retrieved at 1/12/2022, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, t, s) {
@@ -262,13 +262,13 @@
 				j = s("./src/reddit/icons/svgs/Approve/index.tsx"),
 				B = s("./src/reddit/components/EmailCollection/Success/index.m.less"),
 				P = s.n(B);
-			var F = e => i.a.createElement("div", {
+			var I = e => i.a.createElement("div", {
 					className: Object(r.a)(P.a.container, e.className)
 				}, i.a.createElement(j.a, {
 					className: P.a.icon
 				})),
-				I = s("./src/reddit/helpers/styles/mixins/fonts.m.less"),
-				T = s.n(I);
+				F = s("./src/reddit/helpers/styles/mixins/fonts.m.less"),
+				T = s.n(F);
 			var R = Object(u.a)(e => i.a.createElement(_.a, {
 					className: Object(r.a)({
 						[k.a["m-responsive"]]: e.isResponsive
@@ -281,7 +281,7 @@
 						hk: "jJSSU"
 					})),
 					descriptionClassName: k.a.description,
-					icon: i.a.createElement(F, null),
+					icon: i.a.createElement(I, null),
 					onClose: e.onConfirm,
 					title: a.fbt._("Check your email", null, {
 						hk: "1aob6x"
@@ -310,7 +310,7 @@
 				}),
 				V = Object(o.b)(Y, e => ({
 					resendEmail: () => e(Object(p.x)()),
-					toggleEmailDigests: t => e(Object(J.H)({
+					toggleEmailDigests: t => e(Object(J.I)({
 						emailDigests: t
 					}))
 				}));
@@ -346,7 +346,7 @@
 							hk: "3eTpv8"
 						})), ` ${a.fbt._("to control what type of email you receive.",null,{hk:"bg4j6"})}`)),
 						descriptionClassName: z.a.description,
-						icon: i.a.createElement(F, null),
+						icon: i.a.createElement(I, null),
 						onClose: n,
 						title: a.fbt._("Verification email sent", null, {
 							hk: "3rXaUZ"
@@ -959,4 +959,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.d39a02a51dad755e23b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.ca0f67de5101990224b9.js.map

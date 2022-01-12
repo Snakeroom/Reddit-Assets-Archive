@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.c0c31bfcf2781b40e47d.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.5024552423e3b26b7ca0.js
+// Retrieved at 1/12/2022, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -344,8 +344,8 @@
 					}
 				},
 				W = s("./src/lib/omitKey/index.ts");
-			const D = {};
-			var q = (e = D, t) => {
+			const q = {};
+			var D = (e = q, t) => {
 					switch (t.type) {
 						case T.b:
 						case F.b: {
@@ -370,7 +370,7 @@
 					api: N,
 					fetchedTokens: K,
 					ids: M,
-					loadMore: q
+					loadMore: D
 				});
 			const H = {};
 			var Q = (e = H, t) => {
@@ -728,7 +728,7 @@
 							type: c.body.reason
 						} : c.error,
 						key: e
-					})), c.body.reason === _.a.DeletedProfile && o(Object(g.p)({
+					})), c.body.reason === _.a.DeletedProfile && o(Object(g.q)({
 						profileName: t
 					})), o(Object(j.n)(c.status))
 				}, Se = (e, t, s, o) => async (o, i, r) => {
@@ -767,7 +767,7 @@
 							type: c.body.reason
 						} : c.error,
 						key: e
-					})), c.body.reason === _.a.DeletedProfile && o(Object(g.p)({
+					})), c.body.reason === _.a.DeletedProfile && o(Object(g.q)({
 						profileName: t
 					})), o(Object(j.n)(c.status))
 				}, Re = e => async (t, s, o) => {
@@ -1789,4 +1789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.c0c31bfcf2781b40e47d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.5024552423e3b26b7ca0.js.map

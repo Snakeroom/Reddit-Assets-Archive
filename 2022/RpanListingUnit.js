@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.1fec472a87d327fb0fe0.js
-// Retrieved at 1/11/2022, 11:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.1c508167129a0253c12d.js
+// Retrieved at 1/12/2022, 2:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -611,10 +611,10 @@
 					}, 0)
 				}, [t, d, j]);
 				const R = Object(s.useRef)(() => {}),
-					D = Object(s.useRef)(),
-					P = Object(s.useRef)();
+					P = Object(s.useRef)(),
+					D = Object(s.useRef)();
 				R.current = Object(s.useCallback)(() => {
-					P.current = setTimeout(() => {
+					D.current = setTimeout(() => {
 						k.current();
 						const e = [...y].reverse().join("");
 						parseInt(e) < t && R.current()
@@ -628,7 +628,7 @@
 								isIntersecting: t,
 								intersectionRatio: n
 							} = e, s = 1 !== n;
-							t ? (M.current = !0, w.current || (w.current = !0, D.current = setTimeout(() => {
+							t ? (M.current = !0, w.current || (w.current = !0, P.current = setTimeout(() => {
 								k.current(), R.current()
 							}, u())), L.current > 0 && (k.current(L.current), L.current = 0)) : s && (M.current = !1)
 						})
@@ -653,7 +653,7 @@
 						M.current ? k.current(e) : L.current += e
 					}
 					return () => {
-						clearTimeout(D.current), clearTimeout(P.current), clearTimeout(A.current)
+						clearTimeout(P.current), clearTimeout(D.current), clearTimeout(A.current)
 					}
 				}, [t]);
 				const Y = Object(s.useCallback)(() => I(!0), [I]),
@@ -1331,8 +1331,8 @@
 				k = n("./src/reddit/components/ClassicPost/Placeholder.tsx"),
 				A = n("./src/reddit/components/Flatlist/index.tsx"),
 				R = n("./src/reddit/components/Flatlist/constants.ts"),
-				D = n("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
-				P = n("./src/reddit/components/HlsVideo/index.tsx"),
+				P = n("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
+				D = n("./src/reddit/components/HlsVideo/index.tsx"),
 				L = n("./src/reddit/components/OverflowMenu/index.tsx"),
 				M = n("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				F = n("./src/reddit/components/PostLeftRail/index.tsx"),
@@ -1347,7 +1347,7 @@
 				q = n.n(K);
 			const {
 				fbt: z
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), J = 20, Z = l.oc, X = l.oc, Q = Object(c.a)(P.a, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), J = 20, Z = l.oc, X = l.oc, Q = Object(c.a)(D.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(o.b)(() => Object(i.c)({
 				autoplay: N.b,
@@ -1378,7 +1378,7 @@
 				inRpanDUPreloadExperiment: j.b,
 				inRpanDuTargetingExperiment: j.c
 			}), (e, t) => ({
-				onHideRpanUnit: (n, s) => e(Object(f.D)(t.listingName, n, {
+				onHideRpanUnit: (n, s) => e(Object(f.E)(t.listingName, n, {
 					showToast: s.showToast
 				})),
 				openOverlay: t => e(Object(x.a)(t)),
@@ -1813,7 +1813,7 @@
 				oe = ({
 					onClick: e,
 					isLoggedIn: t
-				}) => r.a.createElement(D.a, {
+				}) => r.a.createElement(P.a, {
 					displayText: z._("Show me less of this", null, {
 						hk: "4t8AKC"
 					}),
@@ -2493,9 +2493,9 @@
 			})), n.d(t, "clickQuestionMarkEvent", (function() {
 				return R
 			})), n.d(t, "clickConfirmAwardEvent", (function() {
-				return D
-			})), n.d(t, "clickGetPremiumEvent", (function() {
 				return P
+			})), n.d(t, "clickGetPremiumEvent", (function() {
+				return D
 			})), n.d(t, "clickAddCoinsButtonEvent", (function() {
 				return L
 			})), n.d(t, "clickNextButtonEvent", (function() {
@@ -2638,7 +2638,7 @@
 					action: "click",
 					noun: "question"
 				}),
-				D = (e, t) => n => ({
+				P = (e, t) => n => ({
 					...u(n, e),
 					source: "give_gold",
 					action: "click",
@@ -2648,7 +2648,7 @@
 						...l(t)
 					}
 				}),
-				P = (e, t) => n => ({
+				D = (e, t) => n => ({
 					...u(n, e),
 					source: "give_gold",
 					action: "click",
@@ -4364,4 +4364,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.1fec472a87d327fb0fe0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.1c508167129a0253c12d.js.map
