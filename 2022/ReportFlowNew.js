@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.11597e0550d76fca3f44.js
-// Retrieved at 1/13/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.38dec54e502dd13633d9.js
+// Retrieved at 1/13/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, s) {
@@ -868,13 +868,13 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: r.m
-					}) === r.Vc
+					}) === r.Wc
 				},
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: r.n
-					}) === r.Vc
+					}) === r.Wc
 				}
 		},
 		"./src/redditGQL/operations/FetchBlockedRedditorsInfo.json": function(e) {
@@ -894,4 +894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.11597e0550d76fca3f44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.38dec54e502dd13633d9.js.map

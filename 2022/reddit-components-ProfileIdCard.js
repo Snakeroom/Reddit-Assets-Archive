@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.de8682f9b509eee74cbe.js
-// Retrieved at 1/13/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.aeed1df2151629a28e4c.js
+// Retrieved at 1/13/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1905,8 +1905,8 @@
 				K = r("./src/reddit/helpers/styles/mixins/loading.ts"),
 				z = r("./src/reddit/models/Gold/Premium/index.ts"),
 				Z = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
-				V = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
-				q = r("./src/reddit/selectors/premium.ts"),
+				q = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
+				V = r("./src/reddit/selectors/premium.ts"),
 				Q = r("./src/reddit/components/ProfileIdCard/footer.m.less"),
 				Y = r.n(Q);
 
@@ -1922,12 +1922,12 @@
 			const J = Object(o.c)({
 					areModeratedSubredditsPending: v.a,
 					coinsToSpend: C.e,
-					givePremiumModalIsOpen: q.c,
+					givePremiumModalIsOpen: V.c,
 					hasFetchedModerators: v.k,
 					isEmployee: C.G,
 					isLoggedIn: C.J,
 					profile: v.j,
-					crisisFlowEnabled: V.b,
+					crisisFlowEnabled: q.b,
 					chatInviteLinkSharing: Z.a
 				}),
 				$ = ({
@@ -2906,13 +2906,13 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.m
-					}) === n.Vc
+					}) === n.Wc
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.n
-					}) === n.Vc
+					}) === n.Wc
 				}
 		},
 		"./src/reddit/selectors/experiments/chatInviteLinkSharing.ts": function(e, t, r) {
@@ -2926,7 +2926,7 @@
 			const o = e => Object(s.c)(e, {
 				experimentName: n.F,
 				experimentEligibilitySelector: () => Object(a.I)(e)
-			}) === n.Vc
+			}) === n.Wc
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -2983,4 +2983,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.de8682f9b509eee74cbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.aeed1df2151629a28e4c.js.map
