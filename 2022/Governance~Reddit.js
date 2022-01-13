@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.fa514b3cd540091f5766.js
-// Retrieved at 1/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.4dd83f64ef2ba160211e.js
+// Retrieved at 1/13/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -6783,23 +6783,24 @@
 					}(e),
 					x = t.slice(0, te),
 					[U, G] = Object(s.useState)(new Array(te).fill(!1)),
-					B = !!(null === (P = m.searchQuery) || void 0 === P ? void 0 : P.trim()) && c,
-					V = 0 === l.length && !d && !B,
-					W = Object(s.useMemo)(() => l.filter(e => e.isSubreddit), [l]),
-					Q = {
+					B = !!(null === (P = m.searchQuery) || void 0 === P ? void 0 : P.trim()),
+					V = B && c,
+					W = 0 === l.length && !d && (!B || p >= 0),
+					Q = Object(s.useMemo)(() => l.filter(e => e.isSubreddit), [l]),
+					K = {
 						width: N ? `${N}px` : "inherit",
 						marginTop: "7px",
 						overflow: "auto"
 					};
-				O && (Q.zIndex = F.g), Object(s.useLayoutEffect)(() => {
+				O && (K.zIndex = F.g), Object(s.useLayoutEffect)(() => {
 					if (!r && c && document.getElementById(ee)) {
-						const e = K();
+						const e = $();
 						G(e), x.forEach((t, r) => {
 							e[r] && C((e, r) => Object(k.w)(r(), t, k.a.SEARCH_DROPDOWN))
 						})
 					}
 				}, [r, c, C]);
-				const K = () => {
+				const $ = () => {
 					const e = new Array(x.length).fill(!1);
 					return x.forEach((t, r) => {
 						if (t.id) {
@@ -6822,17 +6823,17 @@
 					tooltipId: Z,
 					noFocus: !0,
 					renderContentsHidden: !0,
-					style: Q,
+					style: K,
 					onDropdownMounted: () => {
 						if (!r && x.length > 0) {
-							const e = K();
+							const e = $();
 							G(e), x.forEach((t, r) => {
 								e[r] && C((e, r) => Object(k.w)(r(), t, k.a.SEARCH_DROPDOWN))
 							})
 						}
 					},
 					onScroll: () => {
-						const e = K();
+						const e = $();
 						x.forEach((t, r) => {
 							U[r] || !e[r] || t.post && t.post.isSponsored || C((e, r) => Object(k.w)(r(), t, k.a.SEARCH_DROPDOWN))
 						}), G(e)
@@ -6840,7 +6841,7 @@
 				}, l.map((e, t) => n.a.createElement(M, {
 					focusedItem: l[p],
 					indexOfItem: t,
-					subredditSuggestions: W,
+					subredditSuggestions: Q,
 					item: e,
 					key: e.id,
 					onClearSearchQuery: h,
@@ -6848,7 +6849,7 @@
 					onSetRecentSearch: D,
 					nightmode: f,
 					onCloseDropdown: I
-				})), V && u.map((e, t) => n.a.createElement(T, {
+				})), W && u.map((e, t) => n.a.createElement(T, {
 					searchOriginPage: y,
 					activeTooltipId: A,
 					focusedItem: i[p],
@@ -6863,7 +6864,7 @@
 					toggleTooltip: R,
 					nightmode: f,
 					onCloseDropdown: I
-				})), V && !r && t && n.a.createElement("div", {
+				})), W && !r && t && n.a.createElement("div", {
 					className: Object(o.a)(b.a.title, j.a.listItemTitle, {
 						[j.a.mWithBorder]: !!u.length
 					})
@@ -6879,7 +6880,7 @@
 					className: Object(o.a)(j.a.loadingItem, H.a.item)
 				}), n.a.createElement("div", {
 					className: Object(o.a)(j.a.loadingItem, H.a.item)
-				})), V && x.map(e => n.a.createElement(L, {
+				})), W && x.map(e => n.a.createElement(L, {
 					id: `${Z}-${e.id}`,
 					key: e.id,
 					focusedItem: i[p],
@@ -6889,7 +6890,7 @@
 					onSetRecentSearch: D,
 					onUpdateSearchQuery: w,
 					trendingItem: e
-				})), B && n.a.createElement(J, {
+				})), V && n.a.createElement(J, {
 					key: m.searchQuery,
 					searchOriginPage: y,
 					searchItem: m,
@@ -27149,4 +27150,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.fa514b3cd540091f5766.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4dd83f64ef2ba160211e.js.map
