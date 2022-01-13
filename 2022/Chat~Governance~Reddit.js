@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.22a3bc361df7bf03d211.js
-// Retrieved at 1/13/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.83b61c9fbc7d8984875e.js
+// Retrieved at 1/13/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3327,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("156049"),
+				buildNumber: Object(r.c)("156063"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1642098787"),
+				buildTimestamp: Object(r.b)("1642103798"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5914,14 +5914,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c439115bb0dd6ff450ea843a18fd0187e6cd47540-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ca8f129d6404d9997924f4f608044650e257abec1-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "439115bb0dd6ff450ea843a18fd0187e6cd47540-production",
+						release: "a8f129d6404d9997924f4f608044650e257abec1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6438,7 +6438,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "439115bb0dd6ff450ea843a18fd0187e6cd47540-production",
+						releaseClient: "a8f129d6404d9997924f4f608044650e257abec1-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -13976,8 +13976,9 @@
 					history.replaceState(history.state, "", Object(r.a)(e, t))
 				},
 				o = i("./src/reddit/actions/preferences.ts"),
-				d = i("./src/reddit/constants/parameters.ts"),
-				a = i("./src/reddit/helpers/localStorage/index.ts"),
+				d = i("./src/reddit/constants/parameters.ts");
+			i("./src/lib/makeGqlRequest/index.ts"), i("./src/redditGQL/operations/CustomerSurveyConfig.json"), i("./src/redditGQL/operations/CustomerSurveySteps.json");
+			var a = i("./src/reddit/helpers/localStorage/index.ts"),
 				l = i("./src/reddit/selectors/experiments/survey.ts"),
 				u = i("./src/reddit/selectors/platform.ts"),
 				c = i("./src/reddit/actions/survey/constants.ts");
@@ -13996,7 +13997,7 @@
 				}, E = () => async (e, t) => {
 					const i = t().user.prefs.surveyLastSeenTime,
 						n = Object(a.N)();
-					i && (!n || i > n) ? Object(a.Ob)(i) : n && (!i || n > i) && e(Object(o.I)({
+					i && (!n || i > n) ? Object(a.Pb)(i) : n && (!i || n > i) && e(Object(o.I)({
 						surveyLastSeenTime: n
 					}, !1))
 				}, T = Object(n.a)(c.a), S = (Object(n.a)(c.k), Object(n.a)(c.j)), O = Object(n.a)(c.e), I = Object(n.a)(c.l), R = () => async (e, t) => {
@@ -17153,7 +17154,7 @@
 					return r
 				})),
 				function(e) {
-					e.ANNOUNCEMENT_BANNER_SEEN_STORE = "announcement-banner-seen-store", e.ANNOUNCEMENT_BANNER_SEEN_STORE_V2 = "announcement-banner-seen-store-v2", e.AVATAR_QUICK_CREATE_EVENT_STORE = "avatar_quick_create_event_store", e.BANNER_DISMISSED_STORE = "banner_dismissed_store", e.BREAKING_NEWS_DISABLED_STORE = "breaking_news_disabled_store", e.CATEGORIES_RANKING_STORE = "categories-ranking-store", e.COMMUNITY_SURVEY_DISMISSED = "community-survey-dismissed", e.CREATE_POLLS_PAINTED_DOOR_DISMISSED_STORE = "create_polls_painted_door_dismissed_store", e.DESKTOP_NOTIFICATIONS = "desktop-notifications", e.DESKTOP_NOTIFICATIONS_PROMPT_BANNER_SEEN_STORE = "desktop_notifications_prompt_banner_seen_store", e.DESKTOP_NOTIFICATIONS_WRAPPED_REDDIT_BANNER_SEEN_STORE = "desktop_notifications_wrapped_reddit_banner_seen_store", e.DISCLAIMER_DISMISSED_STORE = "disclaimer_store", e.DOWNLOAD_OBS_DISMISSED_STORE = "download-obs-dismissed-store", e.EDITOR_MODE_HINT_SEEN_STORE = "editor-mode-hint", e.EMAIL_COLLECTION_REPROMPT_STORE = "email-collection-reprompt-store", e.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT = "emoji-promo-tooltip-display-count", e.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT = "emoji-promo-tooltip-display-count-per-subreddit", e.FEATURE_THROTTLING_STORE = "feature-throttling-store", e.FOCUS_VERTICAL_VARIANT = "FOCUS_VERTICAL_VARIANT", e.FOLLOW_STORE = "follow_store", e.GILD_DEFAULTS_STORE = "gild_defaults_store", e.GIVE_FREE_AWARD_TOOLTIP_STORE = "give_free_award_tooltip_store", e.INBOX_EXPOSURE_SEEN_STORE = "inbox-exposure-seen-store", e.INBOX_PRIVACY_POLICY_BANNER_SEEN_STORE = "inbox-privacy-policy-banner-seen-store", e.INLINE_ID_CARD_PRIMARY_TOPIC_TOOLTIP_STORE = "inline-id-card-primary-topic-tooltip-store", e.LAST_CLICKED_AD_ID = "last-clicked-ad-id", e.LAST_CLICKED_IMPRESSION_ID = "last-clicked-impression-id", e.LEGACY_INLINE_ID_CARD_EDIT_EDU_TOOLTIP_STORE = "inline-edit-edu-tooltip-store", e.LOCAL_PERSISTED_EXPERIMENTS_STORE = "local_persisted_experiments_store", e.LOW_ACTIVITY_CALL_TO_ACTION_STORE = "low-activity-call-to-action-store", e.MOD_ONBOARDING_DISMISSED_STORE = "mod-onboarding-store", e.MODAL_DISMISSED_STORE = "modal_dismissed_store", e.MODHUB_SETTING_SEEN = "modhub-setting-seen", e.OLD_COLLECTIONS_DISMISSED_KEY = "post-creation-collection-tooltip-store", e.OLD_EVENT_DISMISSED_KEY = "post-creation-event-tooltip-store", e.PAGE_TYPE_BEFORE_AD_CLICK = "page-type-before-ad-click", e.POST_CREATION_EDU_TOOLTIP_STORE = "post-creation-edu-tooltip-store", e.POWERUPS_INFEED_UNIT_VISIBILITY_STORE = "powerups-infeed-unit-visibility-store", e.POWERUPS_UNLOCKED_INFEED_UNIT_VISIBILITY_STORE = "powerups-unlocked-infeed-unit-visibility-store", e.POWERUPS_UNAPPLIED_PREMIUM_INFEED_UNIT_VISIBILITY_STORE = "powerups-unapplied-premium-infeed-unit-visibility-store", e.POWERUPS_CNC_MODULE_VISIBILITY_STORE = "powerups-cnc-module-visibility-store", e.PROFILE_PINNED_POSTS_STORE = "profile-pinned-posts-store", e.RECENT_SEARCHES_STORE = "recent_searches", e.RPAN_DU_TRACKING_START_DATE = "rpan-du-tracking-start-date", e.RPAN_START_CHATTING_SEEN_STORE = "rpan-start-chatting-seen-store", e.RPAN_USER_SETTINGS_STORE = "rpan-user-settings-store", e.SUBSCRIBED_SUBREDDIT_VISITS = "subscribed-subreddit-visits", e.SUBREDDITS_FOR_ADOPTION_STORE = "subreddits-for-adoption", e.SURVEY_LAST_SEEN = "survey-last-seen", e.SURVEY_TRIGGER_ACTION_COUNTS = "survey-trigger-action-counts", e.TIME_BEFORE_UNFOCUS = "time-before-unfocus", e.UPVOTE_TOAST_CTA_LAST_SHOWN = "upvote-toast-cta-last-shown", e.UPVOTE_TOAST_LAST_THREE = "upvote-toast-last-three"
+					e.ANNOUNCEMENT_BANNER_SEEN_STORE = "announcement-banner-seen-store", e.ANNOUNCEMENT_BANNER_SEEN_STORE_V2 = "announcement-banner-seen-store-v2", e.AVATAR_QUICK_CREATE_EVENT_STORE = "avatar_quick_create_event_store", e.BANNER_DISMISSED_STORE = "banner_dismissed_store", e.BREAKING_NEWS_DISABLED_STORE = "breaking_news_disabled_store", e.CATEGORIES_RANKING_STORE = "categories-ranking-store", e.COMMUNITY_SURVEY_DISMISSED = "community-survey-dismissed", e.CREATE_POLLS_PAINTED_DOOR_DISMISSED_STORE = "create_polls_painted_door_dismissed_store", e.DESKTOP_NOTIFICATIONS = "desktop-notifications", e.DESKTOP_NOTIFICATIONS_PROMPT_BANNER_SEEN_STORE = "desktop_notifications_prompt_banner_seen_store", e.DESKTOP_NOTIFICATIONS_WRAPPED_REDDIT_BANNER_SEEN_STORE = "desktop_notifications_wrapped_reddit_banner_seen_store", e.DISCLAIMER_DISMISSED_STORE = "disclaimer_store", e.DOWNLOAD_OBS_DISMISSED_STORE = "download-obs-dismissed-store", e.EDITOR_MODE_HINT_SEEN_STORE = "editor-mode-hint", e.EMAIL_COLLECTION_REPROMPT_STORE = "email-collection-reprompt-store", e.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT = "emoji-promo-tooltip-display-count", e.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT = "emoji-promo-tooltip-display-count-per-subreddit", e.FEATURE_THROTTLING_STORE = "feature-throttling-store", e.FOCUS_VERTICAL_VARIANT = "FOCUS_VERTICAL_VARIANT", e.FOLLOW_STORE = "follow_store", e.GILD_DEFAULTS_STORE = "gild_defaults_store", e.GIVE_FREE_AWARD_TOOLTIP_STORE = "give_free_award_tooltip_store", e.INBOX_EXPOSURE_SEEN_STORE = "inbox-exposure-seen-store", e.INBOX_PRIVACY_POLICY_BANNER_SEEN_STORE = "inbox-privacy-policy-banner-seen-store", e.INLINE_ID_CARD_PRIMARY_TOPIC_TOOLTIP_STORE = "inline-id-card-primary-topic-tooltip-store", e.LAST_CLICKED_AD_ID = "last-clicked-ad-id", e.LAST_CLICKED_IMPRESSION_ID = "last-clicked-impression-id", e.LEGACY_INLINE_ID_CARD_EDIT_EDU_TOOLTIP_STORE = "inline-edit-edu-tooltip-store", e.LOCAL_PERSISTED_EXPERIMENTS_STORE = "local_persisted_experiments_store", e.LOW_ACTIVITY_CALL_TO_ACTION_STORE = "low-activity-call-to-action-store", e.MOD_ONBOARDING_DISMISSED_STORE = "mod-onboarding-store", e.MODAL_DISMISSED_STORE = "modal_dismissed_store", e.MODHUB_SETTING_SEEN = "modhub-setting-seen", e.OLD_COLLECTIONS_DISMISSED_KEY = "post-creation-collection-tooltip-store", e.OLD_EVENT_DISMISSED_KEY = "post-creation-event-tooltip-store", e.PAGE_TYPE_BEFORE_AD_CLICK = "page-type-before-ad-click", e.POST_CREATION_EDU_TOOLTIP_STORE = "post-creation-edu-tooltip-store", e.POWERUPS_INFEED_UNIT_VISIBILITY_STORE = "powerups-infeed-unit-visibility-store", e.POWERUPS_UNLOCKED_INFEED_UNIT_VISIBILITY_STORE = "powerups-unlocked-infeed-unit-visibility-store", e.POWERUPS_UNAPPLIED_PREMIUM_INFEED_UNIT_VISIBILITY_STORE = "powerups-unapplied-premium-infeed-unit-visibility-store", e.POWERUPS_CNC_MODULE_VISIBILITY_STORE = "powerups-cnc-module-visibility-store", e.PROFILE_PINNED_POSTS_STORE = "profile-pinned-posts-store", e.RECENT_SEARCHES_STORE = "recent_searches", e.RPAN_DU_TRACKING_START_DATE = "rpan-du-tracking-start-date", e.RPAN_START_CHATTING_SEEN_STORE = "rpan-start-chatting-seen-store", e.RPAN_USER_SETTINGS_STORE = "rpan-user-settings-store", e.SUBSCRIBED_SUBREDDIT_VISITS = "subscribed-subreddit-visits", e.SUBREDDITS_FOR_ADOPTION_STORE = "subreddits-for-adoption", e.SURVEY_CONFIG = "survey-config", e.SURVEY_LAST_SEEN = "survey-last-seen", e.SURVEY_TRIGGER_ACTION_COUNTS = "survey-trigger-action-counts", e.TIME_BEFORE_UNFOCUS = "time-before-unfocus", e.UPVOTE_TOAST_CTA_LAST_SHOWN = "upvote-toast-cta-last-shown", e.UPVOTE_TOAST_LAST_THREE = "upvote-toast-last-three"
 				}(n || (n = {}));
 			const r = 1e3
 		},
@@ -23125,195 +23126,197 @@
 		"./src/reddit/helpers/localStorage/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "Db", (function() {
-				return se
-			})), i.d(t, "B", (function() {
 				return oe
-			})), i.d(t, "C", (function() {
+			})), i.d(t, "B", (function() {
 				return de
-			})), i.d(t, "V", (function() {
+			})), i.d(t, "C", (function() {
 				return ae
+			})), i.d(t, "V", (function() {
+				return le
 			})), i.d(t, "Fb", (function() {
-				return me
-			})), i.d(t, "X", (function() {
 				return pe
-			})), i.d(t, "E", (function() {
+			})), i.d(t, "X", (function() {
 				return he
-			})), i.d(t, "hb", (function() {
+			})), i.d(t, "E", (function() {
 				return fe
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "hb", (function() {
 				return be
-			})), i.d(t, "K", (function() {
+			})), i.d(t, "f", (function() {
 				return ge
-			})), i.d(t, "Lb", (function() {
+			})), i.d(t, "K", (function() {
 				return we
-			})), i.d(t, "Y", (function() {
+			})), i.d(t, "Lb", (function() {
 				return ve
-			})), i.d(t, "mb", (function() {
+			})), i.d(t, "Y", (function() {
 				return ye
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "mb", (function() {
 				return Ee
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "h", (function() {
 				return Te
-			})), i.d(t, "nb", (function() {
+			})), i.d(t, "i", (function() {
 				return Se
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "nb", (function() {
 				return Oe
-			})), i.d(t, "R", (function() {
+			})), i.d(t, "j", (function() {
 				return Ie
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "R", (function() {
 				return Re
-			})), i.d(t, "ub", (function() {
+			})), i.d(t, "q", (function() {
 				return Fe
+			})), i.d(t, "ub", (function() {
+				return Ce
 			})), i.d(t, "J", (function() {
-				return je
-			})), i.d(t, "Kb", (function() {
 				return Ae
+			})), i.d(t, "Kb", (function() {
+				return xe
 			})), i.d(t, "Jb", (function() {
-				return Pe
-			})), i.d(t, "I", (function() {
 				return Le
-			})), i.d(t, "Ib", (function() {
+			})), i.d(t, "I", (function() {
 				return ke
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "Ib", (function() {
 				return Be
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "H", (function() {
 				return Me
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "e", (function() {
 				return Ue
-			})), i.d(t, "fb", (function() {
+			})), i.d(t, "d", (function() {
 				return Ge
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "fb", (function() {
 				return qe
-			})), i.d(t, "gb", (function() {
+			})), i.d(t, "y", (function() {
 				return Ve
-			})), i.d(t, "U", (function() {
+			})), i.d(t, "gb", (function() {
 				return He
-			})), i.d(t, "Nb", (function() {
+			})), i.d(t, "U", (function() {
 				return We
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "Nb", (function() {
 				return ze
-			})), i.d(t, "ob", (function() {
+			})), i.d(t, "k", (function() {
 				return Ke
-			})), i.d(t, "T", (function() {
+			})), i.d(t, "ob", (function() {
 				return Ye
-			})), i.d(t, "kb", (function() {
+			})), i.d(t, "T", (function() {
 				return $e
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "kb", (function() {
 				return Qe
-			})), i.d(t, "pb", (function() {
+			})), i.d(t, "l", (function() {
 				return Je
-			})), i.d(t, "F", (function() {
+			})), i.d(t, "pb", (function() {
 				return Xe
-			})), i.d(t, "Gb", (function() {
+			})), i.d(t, "F", (function() {
 				return Ze
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "Gb", (function() {
 				return et
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "m", (function() {
 				return tt
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "b", (function() {
 				return it
-			})), i.d(t, "Q", (function() {
+			})), i.d(t, "c", (function() {
 				return nt
-			})), i.d(t, "rb", (function() {
+			})), i.d(t, "Q", (function() {
 				return rt
-			})), i.d(t, "ib", (function() {
+			})), i.d(t, "rb", (function() {
 				return st
+			})), i.d(t, "ib", (function() {
+				return ot
 			})), i.d(t, "r", (function() {
-				return dt
-			})), i.d(t, "xb", (function() {
 				return at
-			})), i.d(t, "Qb", (function() {
+			})), i.d(t, "xb", (function() {
 				return lt
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "Rb", (function() {
 				return ut
-			})), i.d(t, "qb", (function() {
+			})), i.d(t, "n", (function() {
 				return ct
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "qb", (function() {
 				return _t
-			})), i.d(t, "jb", (function() {
+			})), i.d(t, "g", (function() {
 				return mt
+			})), i.d(t, "jb", (function() {
+				return pt
 			})), i.d(t, "D", (function() {
-				return ht
-			})), i.d(t, "Eb", (function() {
 				return ft
-			})), i.d(t, "N", (function() {
+			})), i.d(t, "Eb", (function() {
 				return bt
-			})), i.d(t, "Ob", (function() {
+			})), i.d(t, "N", (function() {
 				return gt
-			})), i.d(t, "w", (function() {
-				return wt
-			})), i.d(t, "zb", (function() {
-				return vt
-			})), i.d(t, "Hb", (function() {
-				return yt
-			})), i.d(t, "G", (function() {
-				return Et
-			})), i.d(t, "cb", (function() {
-				return Tt
-			})), i.d(t, "ab", (function() {
-				return St
-			})), i.d(t, "x", (function() {
-				return Ot
-			})), i.d(t, "Ab", (function() {
-				return It
-			})), i.d(t, "bb", (function() {
-				return Rt
-			})), i.d(t, "P", (function() {
-				return Ft
 			})), i.d(t, "Pb", (function() {
+				return wt
+			})), i.d(t, "Ob", (function() {
+				return vt
+			})), i.d(t, "w", (function() {
+				return yt
+			})), i.d(t, "zb", (function() {
+				return Et
+			})), i.d(t, "Hb", (function() {
+				return Tt
+			})), i.d(t, "G", (function() {
+				return St
+			})), i.d(t, "cb", (function() {
+				return Ot
+			})), i.d(t, "ab", (function() {
+				return It
+			})), i.d(t, "x", (function() {
+				return Rt
+			})), i.d(t, "Ab", (function() {
+				return Ft
+			})), i.d(t, "bb", (function() {
 				return Ct
-			})), i.d(t, "eb", (function() {
+			})), i.d(t, "P", (function() {
 				return Nt
-			})), i.d(t, "O", (function() {
+			})), i.d(t, "Qb", (function() {
 				return jt
-			})), i.d(t, "S", (function() {
+			})), i.d(t, "eb", (function() {
 				return At
-			})), i.d(t, "db", (function() {
+			})), i.d(t, "O", (function() {
 				return xt
-			})), i.d(t, "L", (function() {
+			})), i.d(t, "S", (function() {
 				return Dt
-			})), i.d(t, "Mb", (function() {
+			})), i.d(t, "db", (function() {
 				return Pt
-			})), i.d(t, "W", (function() {
+			})), i.d(t, "L", (function() {
 				return Lt
+			})), i.d(t, "Mb", (function() {
+				return kt
+			})), i.d(t, "W", (function() {
+				return Bt
 			})), i.d(t, "tb", (function() {
-				return Mt
-			})), i.d(t, "sb", (function() {
-				return Ut
-			})), i.d(t, "p", (function() {
 				return Gt
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "sb", (function() {
 				return qt
-			})), i.d(t, "Z", (function() {
+			})), i.d(t, "p", (function() {
 				return Vt
-			})), i.d(t, "M", (function() {
+			})), i.d(t, "o", (function() {
 				return Ht
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "Z", (function() {
 				return Wt
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "M", (function() {
 				return zt
-			})), i.d(t, "Cb", (function() {
+			})), i.d(t, "a", (function() {
 				return Kt
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "A", (function() {
 				return Yt
-			})), i.d(t, "Bb", (function() {
+			})), i.d(t, "Cb", (function() {
 				return $t
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "z", (function() {
 				return Qt
-			})), i.d(t, "vb", (function() {
+			})), i.d(t, "Bb", (function() {
 				return Jt
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "u", (function() {
 				return Xt
-			})), i.d(t, "lb", (function() {
+			})), i.d(t, "vb", (function() {
 				return Zt
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "s", (function() {
 				return ei
-			})), i.d(t, "yb", (function() {
+			})), i.d(t, "lb", (function() {
 				return ti
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "t", (function() {
 				return ii
-			})), i.d(t, "wb", (function() {
+			})), i.d(t, "yb", (function() {
 				return ni
+			})), i.d(t, "v", (function() {
+				return ri
+			})), i.d(t, "wb", (function() {
+				return si
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/lib/localStorageAvailable/index.ts"),
@@ -23366,17 +23369,18 @@
 				RPAN_DU_TRACKING_START_DATE: $,
 				RPAN_START_CHATTING_SEEN_STORE: Q,
 				SUBSCRIBED_SUBREDDIT_VISITS: J,
-				SURVEY_LAST_SEEN: X,
-				SURVEY_TRIGGER_ACTION_COUNTS: Z,
-				TIME_BEFORE_UNFOCUS: ee,
-				UPVOTE_TOAST_CTA_LAST_SHOWN: te,
-				UPVOTE_TOAST_LAST_THREE: ie
-			} = u.b, ne = (e, t) => {
+				SURVEY_CONFIG: X,
+				SURVEY_LAST_SEEN: Z,
+				SURVEY_TRIGGER_ACTION_COUNTS: ee,
+				TIME_BEFORE_UNFOCUS: te,
+				UPVOTE_TOAST_CTA_LAST_SHOWN: ie,
+				UPVOTE_TOAST_LAST_THREE: ne
+			} = u.b, re = (e, t) => {
 				const i = e.getItem(t);
 				if (i) return JSON.parse(i)
-			}, re = (e, t, i) => e.setItem(t, JSON.stringify(i)), se = (e, t) => {
-				window.localStorage && re(window.localStorage, e, t)
-			}, oe = e => ne(localStorage, e), de = () => {
+			}, se = (e, t, i) => e.setItem(t, JSON.stringify(i)), oe = (e, t) => {
+				window.localStorage && se(window.localStorage, e, t)
+			}, de = e => re(localStorage, e), ae = () => {
 				const e = {};
 				for (const t of _) {
 					const i = localStorage.getItem(t);
@@ -23386,7 +23390,7 @@
 					} catch {}
 				}
 				return e
-			}, ae = e => {
+			}, le = e => {
 				const t = /(t2_\w+)/;
 				let i = [];
 				try {
@@ -23403,31 +23407,31 @@
 				} catch (r) {
 					return
 				}
-			}, le = (e, t, i, n) => {
-				const r = ne(e, t) || {};
-				return r[i] = n, re(e, t, r)
-			}, ue = (e, t, i, n, r) => {
-				const s = ne(e, t) || {};
-				return a()(s[i]) || (s[i] = {}), s[i][r] = n, re(e, t, s)
-			}, ce = (e, t, i) => {
-				const n = ne(e, t);
+			}, ue = (e, t, i, n) => {
+				const r = re(e, t) || {};
+				return r[i] = n, se(e, t, r)
+			}, ce = (e, t, i, n, r) => {
+				const s = re(e, t) || {};
+				return a()(s[i]) || (s[i] = {}), s[i][r] = n, se(e, t, s)
+			}, _e = (e, t, i) => {
+				const n = re(e, t);
 				return !!n && !0 === n[i]
-			}, _e = (e, t, i, n) => {
-				const r = ne(e, t);
+			}, me = (e, t, i, n) => {
+				const r = re(e, t);
 				return !(!r || !r[i]) && !0 === r[i][n]
-			}, me = (e, t) => le(localStorage, G, e, t), pe = e => ((e, t, i) => {
-				const n = ne(e, t) || {};
-				return delete n[i], re(e, t, n)
-			})(localStorage, G, e), he = e => ce(localStorage, G, e), fe = (e, t, i) => ue(localStorage, w, e, t, i), be = (e, t) => !Object(n.a)() || _e(localStorage, w, e, t), ge = e => ((e, t, i) => {
-				const n = ne(e, i);
+			}, pe = (e, t) => ue(localStorage, G, e, t), he = e => ((e, t, i) => {
+				const n = re(e, t) || {};
+				return delete n[i], se(e, t, n)
+			})(localStorage, G, e), fe = e => _e(localStorage, G, e), be = (e, t, i) => ce(localStorage, w, e, t, i), ge = (e, t) => !Object(n.a)() || me(localStorage, w, e, t), we = e => ((e, t, i) => {
+				const n = re(e, i);
 				let r = n ? n[t] : [];
 				return r = r.map(e => e.id && e.section ? e : {
 					...e,
 					section: m.c.recent,
 					id: h()()
 				})
-			})(localStorage, Y, e), we = (e, t) => ((e, t, i, n) => {
-				let r = (ne(e, n) || {})[t] || [],
+			})(localStorage, Y, e), ve = (e, t) => ((e, t, i, n) => {
+				let r = (re(e, n) || {})[t] || [],
 					s = -1;
 				r = r.map((e, t) => {
 					const n = e.id === i.id || e.searchQuery === i.searchQuery && e.subredditOrProfileRestrictedName === i.subredditOrProfileRestrictedName;
@@ -23440,207 +23444,213 @@
 				const o = {
 					[Y]: r
 				};
-				return r.unshift(i), re(e, n, o), r
-			})(localStorage, Y, e, t), ve = (e, t) => ((e, t, i, n) => {
-				const r = ne(e, n);
+				return r.unshift(i), se(e, n, o), r
+			})(localStorage, Y, e, t), ye = (e, t) => ((e, t, i, n) => {
+				const r = re(e, n);
 				let s = [];
 				if (r && r[t]) {
-					s = r[t].filter(e => !o()(e, i)), re(e, n, {
+					s = r[t].filter(e => !o()(e, i)), se(e, n, {
 						[Y]: s
 					})
 				}
 				return s
-			})(localStorage, Y, e, t), ye = (e, t) => ((e, t, i, n) => {
-				const r = ne(e, t) || {};
-				return r[i] = n, re(e, t, r)
-			})(localStorage, I, e, t), Ee = e => ((e, t, i) => {
-				const n = ne(e, t);
+			})(localStorage, Y, e, t), Ee = (e, t) => ((e, t, i, n) => {
+				const r = re(e, t) || {};
+				return r[i] = n, se(e, t, r)
+			})(localStorage, I, e, t), Te = e => ((e, t, i) => {
+				const n = re(e, t);
 				return !!n && !0 === n[i]
-			})(localStorage, I, e), Te = e => !!Ce(e), Se = e => {
-				Ne(e, "1")
-			}, Oe = (e, t) => {
-				const i = oe(e);
-				return i && i[t] ? i[t] : 0
+			})(localStorage, I, e), Se = e => !!Ne(e), Oe = e => {
+				je(e, "1")
 			}, Ie = (e, t) => {
+				const i = de(e);
+				return i && i[t] ? i[t] : 0
+			}, Re = (e, t) => {
 				if (!e) return;
-				const i = oe(e);
-				se(e, i ? {
+				const i = de(e);
+				oe(e, i ? {
 					...i,
 					[t]: i[t] + 1 || 1
 				} : {
 					[t]: 1
 				})
-			}, Re = () => {
-				const e = oe(x);
+			}, Fe = () => {
+				const e = de(x);
 				return !(!e || !0 !== e.anonymous)
-			}, Fe = e => {
-				se(x, {
+			}, Ce = e => {
+				oe(x, {
 					anonymous: e
 				})
-			}, Ce = e => Object(n.a)() && localStorage.getItem(e) || "", Ne = (e, t) => {
+			}, Ne = e => Object(n.a)() && localStorage.getItem(e) || "", je = (e, t) => {
 				Object(n.a)() && localStorage.setItem(e, t)
-			}, je = () => Te(K), Ae = () => Se(K), xe = e => se(z, e), De = () => {
-				const e = oe(z);
+			}, Ae = () => Se(K), xe = () => Oe(K), De = e => oe(z, e), Pe = () => {
+				const e = de(z);
 				if (e) return e;
-				const t = Te(H);
+				const t = Se(H);
 				t && localStorage.removeItem(H);
-				const i = Te(V);
+				const i = Se(V);
 				i && localStorage.removeItem(V);
 				const n = {
 					collectionShowTimesLeft: i ? 0 : 3,
 					eventShowTimesLeft: t ? 0 : 3
 				};
-				return xe(n), n
-			}, Pe = e => {
-				const t = De();
-				xe({
+				return De(n), n
+			}, Le = e => {
+				const t = Pe();
+				De({
 					...t,
 					eventShowTimesLeft: e
 				})
-			}, Le = () => De().eventShowTimesLeft, ke = e => {
-				const t = De();
-				xe({
+			}, ke = () => Pe().eventShowTimesLeft, Be = e => {
+				const t = Pe();
+				De({
 					...t,
 					collectionShowTimesLeft: e
 				})
-			}, Be = () => De().collectionShowTimesLeft, Me = () => oe(f) || {}, Ue = e => {
-				const t = oe(f);
+			}, Me = () => Pe().collectionShowTimesLeft, Ue = () => de(f) || {}, Ge = e => {
+				const t = de(f);
 				return t && t[e] || 0
-			}, Ge = (e, t) => {
-				const i = Me();
-				se(f, {
+			}, qe = (e, t) => {
+				const i = Ue();
+				oe(f, {
 					...i,
 					[e]: t
 				})
-			}, qe = () => {
+			}, Ve = () => {
 				const e = {
 					lastInteractionTimestamp: 0,
 					id: "-1",
 					eventViews: 0
 				};
 				if (!Object(n.a)()) return e;
-				const t = oe(g);
+				const t = de(g);
 				return t ? {
 					id: t.id,
 					lastInteractionTimestamp: parseInt(t.lastInteractionTimestamp || "0", 10),
 					eventViews: parseInt(t.eventViews, 10)
 				} : e
-			}, Ve = e => {
-				se(g, e)
-			}, He = () => {
-				return !!oe(Q)
+			}, He = e => {
+				oe(g, e)
 			}, We = () => {
-				se(Q, 1)
+				return !!de(Q)
 			}, ze = () => {
-				let e = !1;
-				return Object(n.a)() && (e = !!oe(R)), e
+				oe(Q, 1)
 			}, Ke = () => {
-				Object(n.a)() && se(R, 1)
+				let e = !1;
+				return Object(n.a)() && (e = !!de(R)), e
 			}, Ye = () => {
-				const e = Ce(T);
+				Object(n.a)() && oe(R, 1)
+			}, $e = () => {
+				const e = Ne(T);
 				return e ? "1" === e : void 0
-			}, $e = e => {
-				Ne(T, e ? "1" : "0")
-			}, Qe = () => parseInt(Ce(F)) || 0, Je = e => Ne(F, String(e)), Xe = e => {
-				return (oe(q) || {})[e] || !1
-			}, Ze = e => {
-				const t = oe(q) || {};
-				t[e] = !0, se(q, t)
-			}, et = () => oe(C) || 0, tt = () => {
-				se(C, 3)
-			}, it = () => {
-				const e = et();
-				0 !== e && se(C, e - 1)
-			}, nt = () => () => {
-				const e = Date.now(),
-					t = oe(`${j}_${l.a}`);
-				return !!t && (t < e && e < t + 2592e6)
+			}, Qe = e => {
+				je(T, e ? "1" : "0")
+			}, Je = () => parseInt(Ne(F)) || 0, Xe = e => je(F, String(e)), Ze = e => {
+				return (de(q) || {})[e] || !1
+			}, et = e => {
+				const t = de(q) || {};
+				t[e] = !0, oe(q, t)
+			}, tt = () => de(C) || 0, it = () => {
+				oe(C, 3)
+			}, nt = () => {
+				const e = tt();
+				0 !== e && oe(C, e - 1)
 			}, rt = () => () => {
+				const e = Date.now(),
+					t = de(`${j}_${l.a}`);
+				return !!t && (t < e && e < t + 2592e6)
+			}, st = () => () => {
 				const e = Date.now();
-				se(`${j}_${l.a}`, e)
-			}, st = e => {
-				se(y, e)
-			}, ot = {
+				oe(`${j}_${l.a}`, e)
+			}, ot = e => {
+				oe(y, e)
+			}, dt = {
 				dismissed: !1,
 				seen: 0
-			}, dt = () => {
+			}, at = () => {
 				if (!Object(n.a)()) return !1;
 				localStorage.removeItem(M);
-				const e = oe(L);
+				const e = de(L);
 				return !!e && (e.dismissed || e.seen >= 5)
-			}, at = () => {
-				Object(n.a)() && se(L, {
+			}, lt = () => {
+				Object(n.a)() && oe(L, {
 					dismissed: !0,
 					seen: 0
 				})
-			}, lt = () => {
-				const e = oe(L) || ot;
-				se(L, {
+			}, ut = () => {
+				const e = de(L) || dt;
+				oe(L, {
 					...e,
 					seen: Math.min(e.seen + 1, 5)
 				})
-			}, ut = () => oe(N), ct = e => {
-				se(N, e)
-			}, _t = () => Te(E), mt = () => Se(E), pt = () => {
+			}, ct = () => de(N), _t = e => {
+				oe(N, e)
+			}, mt = () => Se(E), pt = () => Oe(E), ht = () => {
 				try {
-					return oe(U)
+					return de(U)
 				} catch {
 					return
 				}
-			}, ht = () => {
-				const e = pt();
+			}, ft = () => {
+				const e = ht();
 				if (!e) return !1;
 				const t = Object(r.c)(Math.floor(new Date(e.dismissedAt).valueOf() / 1e3));
 				return 3 === e.dismissedTimes || 1 === e.dismissedTimes && t <= 3 || 2 === e.dismissedTimes && t <= 7
-			}, ft = () => {
-				const e = pt(),
+			}, bt = () => {
+				const e = ht(),
 					t = e ? e.dismissedTimes + 1 : 1;
-				se(U, {
+				oe(U, {
 					dismissedTimes: t,
 					dismissedAt: (new Date).toISOString()
 				})
-			}, bt = () => oe(X), gt = e => {
-				se(X, e), Object(c.h)().setState(e)
-			}, wt = () => Ce(k), vt = e => {
-				Ne(k, e)
-			}, yt = e => {
-				Ne(W, e)
-			}, Et = () => Ce(W), Tt = () => {
-				Ne(W, "")
-			}, St = () => {
-				Ne(k, "")
-			}, Ot = () => Ce(B), It = e => {
-				Ne(B, e)
-			}, Rt = () => {
-				Ne(B, "")
-			}, Ft = () => oe(ee), Ct = e => {
-				se(ee, e)
-			}, Nt = () => {
-				se(ee, 0)
-			}, jt = () => oe(Z), At = e => {
-				const t = jt();
-				se(Z, {
+			}, gt = () => de(Z), wt = e => {
+				oe(Z, e), Object(c.g)().setState(e)
+			}, vt = (e, t) => {
+				oe(X, {
+					lastUpdated: Date.now(),
+					surveyCooldownDays: e,
+					activeSurveys: t
+				})
+			}, yt = () => Ne(k), Et = e => {
+				je(k, e)
+			}, Tt = e => {
+				je(W, e)
+			}, St = () => Ne(W), Ot = () => {
+				je(W, "")
+			}, It = () => {
+				je(k, "")
+			}, Rt = () => Ne(B), Ft = e => {
+				je(B, e)
+			}, Ct = () => {
+				je(B, "")
+			}, Nt = () => de(te), jt = e => {
+				oe(te, e)
+			}, At = () => {
+				oe(te, 0)
+			}, xt = () => de(ee), Dt = e => {
+				const t = xt();
+				oe(ee, {
 					...t,
 					[e]: (t && t[e] || 0) + 1
-				}), Object(c.d)().setState(e)
-			}, xt = e => {
-				Object(c.d)().setState(e);
-				const t = jt();
-				se(Z, {
+				}), Object(c.c)().setState(e)
+			}, Pt = e => {
+				Object(c.c)().setState(e);
+				const t = xt();
+				oe(ee, {
 					...t,
 					[e]: 0
 				})
-			}, Dt = () => Object(n.a)() && oe($) || null, Pt = e => se($, e), Lt = () => localStorage.removeItem($), kt = () => oe(A) || [], Bt = () => {
-				const e = kt(),
+			}, Lt = () => Object(n.a)() && de($) || null, kt = e => oe($, e), Bt = () => localStorage.removeItem($), Mt = () => de(A) || [], Ut = () => {
+				const e = Mt(),
 					t = Object.keys(e).map(t => ({
 						...e[t],
 						followedPosts: e[t].followedPosts.filter(e => e.expiresAt > Date.now()),
 						followedComments: e[t].followedComments.filter(e => e.expiresAt > Date.now())
 					}));
-				se(A, t)
-			}, Mt = (e, t) => {
+				oe(A, t)
+			}, Gt = (e, t) => {
 				t && Object(n.a)() && ((e, t) => {
-					const i = kt(),
+					const i = Mt(),
 						n = i.find(e => e.userId === t);
 					let r;
 					r = n ? i.map(i => i.userId === t ? {
@@ -23650,11 +23660,11 @@
 						userId: t,
 						followedPosts: e,
 						followedComments: []
-					}], se(A, r)
+					}], oe(A, r)
 				})(e, t)
-			}, Ut = (e, t) => {
+			}, qt = (e, t) => {
 				t && Object(n.a)() && ((e, t) => {
-					const i = kt(),
+					const i = Mt(),
 						n = i.find(e => e.userId === t);
 					let r;
 					r = n ? i.map(i => i.userId === t ? {
@@ -23664,33 +23674,33 @@
 						userId: t,
 						followedComments: e,
 						followedPosts: []
-					}], se(A, r)
+					}], oe(A, r)
 				})(e, t)
-			}, Gt = e => {
+			}, Vt = e => {
 				var t;
 				if (!e || !Object(n.a)()) return;
-				return Bt(), (null === (t = kt().find(t => t.userId === e)) || void 0 === t ? void 0 : t.followedPosts) || []
-			}, qt = e => {
+				return Ut(), (null === (t = Mt().find(t => t.userId === e)) || void 0 === t ? void 0 : t.followedPosts) || []
+			}, Ht = e => {
 				var t;
 				if (!e || !Object(n.a)()) return;
-				return Bt(), (null === (t = kt().find(t => t.userId === e)) || void 0 === t ? void 0 : t.followedComments) || []
-			}, Vt = (e, t) => {
+				return Ut(), (null === (t = Mt().find(t => t.userId === e)) || void 0 === t ? void 0 : t.followedComments) || []
+			}, Wt = (e, t) => {
 				if (!e || !Object(n.a)()) return null;
-				const i = oe(J);
+				const i = de(J);
 				if (!i || !i[e] || !i[e][t]) return;
 				const r = i[e],
 					s = Object.keys(r).filter(e => e !== t).reduce((e, t) => (e[t] = r[t], e), {});
-				se(J, {
+				oe(J, {
 					...i,
 					[e]: s
 				})
-			}, Ht = (e, t) => {
+			}, zt = (e, t) => {
 				if (!e || !Object(n.a)()) return null;
-				const i = oe(J);
+				const i = de(J);
 				return i && i[e] ? i[e][t] : null
-			}, Wt = (e, t) => {
+			}, Kt = (e, t) => {
 				if (!e || !Object(n.a)()) return null;
-				const i = oe(J);
+				const i = de(J);
 				let r, s;
 				if (i && i[e]) {
 					const n = i[e][t];
@@ -23707,29 +23717,29 @@
 						[t]: 1
 					}
 				}, s = 1;
-				return se(J, r), s
-			}, zt = () => oe(te), Kt = () => {
+				return oe(J, r), s
+			}, Yt = () => de(ie), $t = () => {
 				const e = Date.now();
-				se(te, e)
-			}, Yt = () => oe(ie), $t = e => {
-				se(ie, e)
-			}, Qt = e => !!Object(n.a)() && -1 !== (oe(D) || []).indexOf(e), Jt = e => {
+				oe(ie, e)
+			}, Qt = () => de(ne), Jt = e => {
+				oe(ne, e)
+			}, Xt = e => !!Object(n.a)() && -1 !== (de(D) || []).indexOf(e), Zt = e => {
 				if (!Object(n.a)()) return;
-				if (Qt(e)) return;
-				const t = oe(D) || [];
-				se(D, [...t, e])
-			}, Xt = e => !!Object(n.a)() && -1 !== (oe(S) || []).indexOf(e), Zt = e => {
-				if (!Object(n.a)() || Xt(e)) return;
-				const t = oe(S) || [];
-				se(S, [...t, e])
-			}, ei = e => !!Object(n.a)() && -1 !== (oe(O) || []).indexOf(e), ti = e => {
-				if (!Object(n.a)() || Xt(e)) return;
-				const t = oe(O) || [];
-				se(O, [...t, e])
-			}, ii = e => !!Object(n.a)() && -1 !== (oe(P) || []).indexOf(e), ni = e => {
-				if (!Object(n.a)() || ii(e)) return;
-				const t = oe(P) || [];
-				se(P, [...t, e])
+				if (Xt(e)) return;
+				const t = de(D) || [];
+				oe(D, [...t, e])
+			}, ei = e => !!Object(n.a)() && -1 !== (de(S) || []).indexOf(e), ti = e => {
+				if (!Object(n.a)() || ei(e)) return;
+				const t = de(S) || [];
+				oe(S, [...t, e])
+			}, ii = e => !!Object(n.a)() && -1 !== (de(O) || []).indexOf(e), ni = e => {
+				if (!Object(n.a)() || ei(e)) return;
+				const t = de(O) || [];
+				oe(O, [...t, e])
+			}, ri = e => !!Object(n.a)() && -1 !== (de(P) || []).indexOf(e), si = e => {
+				if (!Object(n.a)() || ri(e)) return;
+				const t = de(P) || [];
+				oe(P, [...t, e])
 			}
 		},
 		"./src/reddit/helpers/makeProfileListingKey/index.ts": function(e, t, i) {
@@ -24850,27 +24860,25 @@
 			s.queryIds = {}
 		},
 		"./src/reddit/helpers/survey/config.json": function(e) {
-			e.exports = JSON.parse('{"survey_cooldown_days":182,"active_surveys":[{"experiment_name":"nps_survey_scroll_trigger","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":2,"sample_factor":0.5}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What\'s your main reason for feeling that way?"}]},{"experiment_name":"d2x_nps_survey_dismiss_post_trigger","trigger_event":"dismiss_post","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":3,"sample_factor":0.01}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What is the primary reason for your rating?"}]},{"experiment_name":"survey_demo_nps_1","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","follow_up_question":"What is the primary reason for your score?"}]},{"experiment_name":"survey_demo_combined_1","trigger_event":"mods_feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","follow_up_question":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","follow_up_question":"What is the primary reason for your score with moderation tools on this device?"}]},{"experiment_name":"d2x_search_survey","trigger_event":"search_view_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.05}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with search on Reddit?","follow_up_question":"What is the primary reason for your score on overall satisfaction with search?"},{"type":"CSAT","question":"How would you rate the results found on the search results page on Reddit?","follow_up_question":"What is the primary reason for your score on the quality of search results?"},{"type":"CES","question":"How easy was it to use Reddit search?","follow_up_question":"What is the primary reason for your score on the ease of searching?"}]},{"experiment_name":"d2x_search_redesign_survey","trigger_event":"search_view_redesign_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.05}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with search on Reddit?","follow_up_question":"What is the primary reason for your score on overall satisfaction with search?"},{"type":"CSAT","question":"How would you rate the results found on the search results page on Reddit?","follow_up_question":"What is the primary reason for your score on the quality of search results?"},{"type":"CES","question":"How easy was it to use Reddit search?","follow_up_question":"What is the primary reason for your score on the ease of searching?"}]},{"experiment_name":"d2x_chat_survey","trigger_event":"chat_view_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.15}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with Reddit\'s chat?","follow_up_question":"What is the primary reason for your score?"}]},{"experiment_name":"d2x_mods_survey","trigger_event":"mods_feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","follow_up_question":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","follow_up_question":"What is the primary reason for your score with moderation tools on this device?"}]},{"experiment_name":"d2x_nps_survey_dismiss_signup_trigger","trigger_event":"dismiss_signup_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.3}},"steps":[{"type":"NPS","question":"How likely are you to recommend signing up for Reddit to a friend or colleague?","follow_up_question":"What is the primary reason for your score?"}]},{"experiment_name":"d2x_nps_survey_successful_signup_trigger","trigger_event":"successful_signup_trigger","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":0.3}},"steps":[{"type":"NPS","question":"How likely are you to recommend signing up for Reddit to a friend or colleague?","follow_up_question":"What is the primary reason for your score?"}]},{"experiment_name":"d2x_belonging_survey","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":2,"sample_factor":0.1}},"steps":[{"type":"multi_choice","question":"Do you feel that Reddit is a place for you?","question_options":["Yes","No"],"follow_up_question":"What makes you feel that way?"},{"type":"multi_choice","question":"Do you feel connected to other people who also use Reddit?","question_options":["Yes","No"],"follow_up_question":"What makes you feel that way?"}]},{"experiment_name":"d2x_belonging_survey_demo","trigger_event":"feed_scroll_1_page","variants":{"enabled":{"survey_enabled":true,"trigger_threshold":1,"sample_factor":1}},"steps":[{"type":"multi_choice","question":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua?","question_options":["Lorem ipsum dolor sit consectetur adipis (1)","Lorem ipsum dolor sit consectetur adipis (2)","Lorem ipsum dolor sit consectetur adipis (3)","Lorem ipsum dolor sit consectetur adipis (4)","Lorem ipsum dolor sit consectetur adipis (5)","Lorem ipsum dolor sit consectetur adipis (6)"],"follow_up_question":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua?"}]}]}')
+			e.exports = JSON.parse('{"surveyCooldownDays":182,"activeSurveys":[{"experimentName":"nps_survey_scroll_trigger","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":2,"sampleFactor":0.5}],"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","followUpQuestion":"What\'s your main reason for feeling that way?"}]},{"experimentName":"d2x_nps_survey_dismiss_post_trigger","triggerEvent":"dismiss_post","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":3,"sampleFactor":0.01}],"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","followUpQuestion":"What is the primary reason for your rating?"}]},{"experimentName":"survey_demo_nps_1","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"survey_demo_combined_1","triggerEvent":"mods_feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","followUpQuestion":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","followUpQuestion":"What is the primary reason for your score with moderation tools on this device?"}]},{"experimentName":"d2x_search_survey","triggerEvent":"search_view_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.05}],"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with search on Reddit?","followUpQuestion":"What is the primary reason for your score on overall satisfaction with search?"},{"type":"CSAT","question":"How would you rate the results found on the search results page on Reddit?","followUpQuestion":"What is the primary reason for your score on the quality of search results?"},{"type":"CES","question":"How easy was it to use Reddit search?","followUpQuestion":"What is the primary reason for your score on the ease of searching?"}]},{"experimentName":"d2x_search_redesign_survey","triggerEvent":"search_view_redesign_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.05}],"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with search on Reddit?","followUpQuestion":"What is the primary reason for your score on overall satisfaction with search?"},{"type":"CSAT","question":"How would you rate the results found on the search results page on Reddit?","followUpQuestion":"What is the primary reason for your score on the quality of search results?"},{"type":"CES","question":"How easy was it to use Reddit search?","followUpQuestion":"What is the primary reason for your score on the ease of searching?"}]},{"experimentName":"d2x_chat_survey","triggerEvent":"chat_view_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.15}],"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with Reddit\'s chat?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"d2x_mods_survey","triggerEvent":"mods_feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","followUpQuestion":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","followUpQuestion":"What is the primary reason for your score with moderation tools on this device?"}]},{"experimentName":"d2x_nps_survey_dismiss_signup_trigger","triggerEvent":"dismiss_signup_trigger","variants":[{"variantName":"enabled","survey_enabled":true,"trigger_threshold":1,"sample_factor":0.3}],"steps":[{"type":"NPS","question":"How likely are you to recommend signing up for Reddit to a friend or colleague?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"d2x_nps_survey_successful_signup_trigger","triggerEvent":"successful_signup_trigger","variants":[{"variantName":"enabled","survey_enabled":true,"trigger_threshold":1,"sample_factor":0.3}],"steps":[{"type":"NPS","question":"How likely are you to recommend signing up for Reddit to a friend or colleague?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"d2x_belonging_survey","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":2,"sampleFactor":0.1}],"steps":[{"type":"multi_choice","question":"Do you feel that Reddit is a place for you?","question_options":["Yes","No"],"followUpQuestion":"What makes you feel that way?"},{"type":"multi_choice","question":"Do you feel connected to other people who also use Reddit?","question_options":["Yes","No"],"followUpQuestion":"What makes you feel that way?"}]},{"experimentName":"d2x_belonging_survey_demo","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"multi_choice","question":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua?","questionOptions":["Lorem ipsum dolor sit consectetur adipis (1)","Lorem ipsum dolor sit consectetur adipis (2)","Lorem ipsum dolor sit consectetur adipis (3)","Lorem ipsum dolor sit consectetur adipis (4)","Lorem ipsum dolor sit consectetur adipis (5)","Lorem ipsum dolor sit consectetur adipis (6)"],"followUpQuestion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua?"}]}]}')
 		},
 		"./src/reddit/helpers/survey/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "d", (function() {
-				return u
-			})), i.d(t, "h", (function() {
+			i.d(t, "c", (function() {
 				return c
-			})), i.d(t, "a", (function() {
-				return _
-			})), i.d(t, "c", (function() {
-				return m
-			})), i.d(t, "b", (function() {
-				return p
-			})), i.d(t, "f", (function() {
-				return h
-			})), i.d(t, "i", (function() {
-				return f
 			})), i.d(t, "g", (function() {
-				return b
+				return _
+			})), i.d(t, "b", (function() {
+				return m
+			})), i.d(t, "a", (function() {
+				return p
 			})), i.d(t, "e", (function() {
+				return h
+			})), i.d(t, "h", (function() {
+				return f
+			})), i.d(t, "f", (function() {
+				return b
+			})), i.d(t, "d", (function() {
 				return g
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -24881,15 +24889,13 @@
 					return t = t || 1, (i = i || 0) + (9301 * (e = "number" == typeof e ? e : e.split("").reduce((e, t) => t.charCodeAt(0) + e, 0)) + 49297) % 233280 / 233280 * (t - i)
 				},
 				d = i("./src/reddit/actions/survey/constants.ts"),
-				a = i("./src/reddit/helpers/localStorage/index.ts");
-			const l = i("./src/reddit/helpers/survey/config.json"),
-				u = s()(() => Object(n.a)()),
-				c = s()(() => Object(n.a)());
-			var _, m;
+				a = i("./src/reddit/helpers/localStorage/index.ts"),
+				l = i("./src/reddit/models/Survey/index.ts");
+			const u = i("./src/reddit/helpers/survey/config.json"),
+				c = s()(() => Object(n.a)()),
+				_ = s()(() => Object(n.a)());
+			var m;
 			! function(e) {
-				e.CES = "CES", e.CSAT = "CSAT", e.NPS = "NPS", e.MULTI_CHOICE = "multi_choice"
-			}(_ || (_ = {})),
-			function(e) {
 				e.dismiss_post = "dismiss_post", e.feed_scroll_1_page = "feed_scroll_1_page", e.layer_feed_scroll_1_page = "layer_feed_scroll_1_page", e.mods_feed_scroll_1_page = "mods_feed_scroll_1_page", e.videos_watched = "videos_watched", e.chat_view_trigger = "chat_view_trigger", e.search_view_trigger = "search_view_trigger", e.search_view_redesign_trigger = "search_view_redesign_trigger", e.dismiss_signup_trigger = "dismiss_signup_trigger", e.successful_signup_trigger = "successful_signup_trigger"
 			}(m || (m = {}));
 			const p = {
@@ -24913,62 +24919,61 @@
 					demoTriggerThreshold: s,
 					isSampleFactorEnabled: d
 				}) => {
-					var u;
-					const c = Object(a.O)();
-					if (n && r === e && c && c[e] && c[e] >= s) return (e => ({
-						experiment_name: "desktop_local_survey_demo",
-						trigger_event: e,
-						variants: {
-							enabled: {
-								survey_enabled: !0,
-								trigger_threshold: 1,
-								sample_factor: 1
-							}
-						},
+					var c;
+					const _ = Object(a.O)();
+					if (n && r === e && _ && _[e] && _[e] >= s) return (e => ({
+						experimentName: "desktop_local_survey_demo",
+						triggerEvent: e,
+						variants: [{
+							variantName: "enabled",
+							surveyEnabled: !0,
+							triggerThreshold: 1,
+							sampleFactor: 1
+						}],
 						steps: [{
-							type: _.CSAT,
+							type: l.a.CSAT,
 							question: "How would you rate your overall satisfaction with search on Reddit?",
-							follow_up_question: "What is the primary reason for your score on overall satisfaction with search?"
+							followUpQuestion: "What is the primary reason for your score on overall satisfaction with search?"
 						}, {
-							type: _.NPS,
+							type: l.a.NPS,
 							question: "How likely are you to recommend Reddit to a friend?",
-							follow_up_question: "What's your main reason for feeling that way?"
+							followUpQuestion: "What's your main reason for feeling that way?"
 						}, {
-							type: _.CES,
+							type: l.a.CES,
 							question: "How easy was it to use Reddit search?",
-							follow_up_question: "What is the primary reason for your score on the ease of searching?"
+							followUpQuestion: "What is the primary reason for your score on the ease of searching?"
 						}, {
-							type: _.MULTI_CHOICE,
+							type: l.a.MULTI_CHOICE,
 							question: "Do you feel that Reddit is a place for you?",
-							question_options: ["Yes", "No", "Maybe", "Not Really", "Absolutely", "Not Sure"],
-							follow_up_question: "What makes you feel that way?"
+							questionOptions: ["Yes", "No", "Maybe", "Not Really", "Absolutely", "Not Sure"],
+							followUpQuestion: "What makes you feel that way?"
 						}]
 					}))(e);
 					const m = Object(a.N)(),
-						p = 864e5 * l.survey_cooldown_days;
-					if (!c || !c[e] || m && Date.now() - m <= p) return null;
+						p = 864e5 * u.surveyCooldownDays;
+					if (!_ || !_[e] || m && Date.now() - m <= p) return null;
 					const h = [],
 						{
-							active_surveys: f
-						} = l;
+							activeSurveys: f
+						} = u;
 					for (let a = 0; a < f.length; a++) {
 						const {
-							experiment_name: n,
-							trigger_event: r,
+							experimentName: n,
+							triggerEvent: r,
 							variants: s
-						} = f[a], l = null === (u = t[n]) || void 0 === u ? void 0 : u.variant, _ = l && s[l];
-						r !== e || !c[r] || !_ || !_.survey_enabled || c[r] < _.trigger_threshold || d && o(i + n) > _.sample_factor || h.push(f[a])
+						} = f[a], l = null === (c = t[n]) || void 0 === c ? void 0 : c.variant, u = l && s.find(e => e.variantName === l);
+						r !== e || !_[r] || !u || !u.surveyEnabled || _[r] < u.triggerThreshold || d && o(i + n) > u.sampleFactor || h.push(f[a])
 					}
 					return h.length ? h[Math.floor(Math.random() * h.length)] : null
 				},
 				f = (e, t) => {
 					const {
-						trigger_event: i
+						triggerEvent: i
 					} = e;
-					Object(a.Ob)(t), Object(a.db)(i)
+					Object(a.Pb)(t), Object(a.db)(i)
 				},
-				b = () => l.active_surveys.map(e => e.experiment_name),
-				g = e => e.steps.reduce((e, t) => e + 1 + (t.follow_up_question ? 1 : 0), 0)
+				b = () => u.activeSurveys.map(e => e.experimentName),
+				g = e => e.steps.reduce((e, t) => e + 1 + (t.followUpQuestion ? 1 : 0), 0)
 		},
 		"./src/reddit/helpers/timeApiRoute/index.ts": function(e, t, i) {
 			"use strict";
@@ -29403,6 +29408,16 @@
 				u = e => d.fbt._("Anyone can view this community, but only approved users can {restrictionType}", [d.fbt._param("restrictionType", e && a[e] && a[e]() || a[s.Post]())], {
 					hk: "43LL8D"
 				})
+		},
+		"./src/reddit/models/Survey/index.ts": function(e, t, i) {
+			"use strict";
+			var n;
+			i.d(t, "a", (function() {
+					return n
+				})),
+				function(e) {
+					e.CES = "CES", e.CSAT = "CSAT", e.NPS = "NPS", e.MULTI_CHOICE = "multi_choice"
+				}(n || (n = {}))
 		},
 		"./src/reddit/models/Theme/NewColorSystem/index.ts": function(e, t, i) {
 			"use strict";
@@ -34558,28 +34573,28 @@
 				}) === t),
 				c = u({
 					experimentName: n.Rd,
-					triggerName: s.c.feed_scroll_1_page
+					triggerName: s.b.feed_scroll_1_page
 				}),
 				_ = u({
 					experimentName: "survey_demo_nps_1",
-					triggerName: s.c.feed_scroll_1_page
+					triggerName: s.b.feed_scroll_1_page
 				}),
 				m = u({
 					experimentName: "survey_demo_combined_1",
-					triggerName: s.c.feed_scroll_1_page
+					triggerName: s.b.feed_scroll_1_page
 				}),
 				p = u({
 					experimentName: "d2x_layer_survey",
-					triggerName: s.c.layer_feed_scroll_1_page,
+					triggerName: s.b.layer_feed_scroll_1_page,
 					filteringLogic: e => e.subscriptions.subredditOrder.includes("t5_32b7p")
 				}),
 				h = u({
 					experimentName: "d2x_belonging_survey",
-					triggerName: s.c.feed_scroll_1_page
+					triggerName: s.b.feed_scroll_1_page
 				}),
 				f = u({
 					experimentName: "d2x_mods_survey",
-					triggerName: s.c.mods_feed_scroll_1_page,
+					triggerName: s.b.mods_feed_scroll_1_page,
 					filteringLogic: e => {
 						const t = Object(a.e)(e);
 						return !(!t || Object(o.h)(t)) && Object(d.c)(e, {
@@ -34590,19 +34605,19 @@
 				b = e => f(e) || p(e) || c(e) || _(e) || h(e) || m(e),
 				g = u({
 					experimentName: n.Pd,
-					triggerName: s.c.dismiss_post
+					triggerName: s.b.dismiss_post
 				}),
 				w = u({
 					experimentName: n.bf,
-					triggerName: s.c.videos_watched
+					triggerName: s.b.videos_watched
 				}),
 				v = u({
 					experimentName: n.Qd,
-					triggerName: s.c.dismiss_signup_trigger
+					triggerName: s.b.dismiss_signup_trigger
 				}),
 				y = u({
 					experimentName: n.Sd,
-					triggerName: s.c.successful_signup_trigger
+					triggerName: s.b.successful_signup_trigger
 				})
 		},
 		"./src/reddit/selectors/experiments/utils.ts": function(e, t, i) {
@@ -40735,6 +40750,12 @@
 		"./src/redditGQL/operations/CreateMediaUploadLease.json": function(e) {
 			e.exports = JSON.parse('{"id":"df597bfa6e5f"}')
 		},
+		"./src/redditGQL/operations/CustomerSurveyConfig.json": function(e) {
+			e.exports = JSON.parse('{"id":"89970a6dad30"}')
+		},
+		"./src/redditGQL/operations/CustomerSurveySteps.json": function(e) {
+			e.exports = JSON.parse('{"id":"679f44f9a458"}')
+		},
 		"./src/redditGQL/operations/DestroyInviteLink.json": function(e) {
 			e.exports = JSON.parse('{"id":"af738125be66"}')
 		},
@@ -45371,4 +45392,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.22a3bc361df7bf03d211.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.83b61c9fbc7d8984875e.js.map

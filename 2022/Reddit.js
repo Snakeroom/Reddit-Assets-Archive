@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.039ddde70afcabd6ff5e.js
-// Retrieved at 1/13/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.f7d636b805bc02de5038.js
+// Retrieved at 1/13/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -15930,13 +15930,13 @@
 		"./src/reddit/components/Survey/hooks.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return _
-			})), n.d(t, "a", (function() {
 				return S
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "a", (function() {
 				return k
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "b", (function() {
 				return P
+			})), n.d(t, "c", (function() {
+				return w
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/lodash/isEqual.js"),
@@ -15948,43 +15948,44 @@
 				l = n("./src/reddit/actions/preferences.ts"),
 				u = n("./src/reddit/actions/toaster.ts"),
 				m = n("./src/reddit/helpers/survey/index.ts"),
-				p = n("./src/reddit/selectors/survey.ts"),
-				b = n("./src/reddit/selectors/telemetry.ts");
-			const h = (e, t) => {
-					const n = Object(p.c)(e),
-						s = Object(p.a)(e);
+				p = n("./src/reddit/models/Survey/index.ts"),
+				b = n("./src/reddit/selectors/survey.ts"),
+				h = n("./src/reddit/selectors/telemetry.ts");
+			const f = (e, t) => {
+					const n = Object(b.c)(e),
+						s = Object(b.a)(e);
 					if (n && s) return {
 						experiment_name: "desktop_local_survey_demo",
 						experiment_variant: `trigger_${s}`,
 						experiment_version: -1
 					};
-					const r = b.q(e, t);
+					const r = h.q(e, t);
 					return r ? {
 						experiment_name: r.name,
 						experiment_variant: r.variant,
 						experiment_version: r.version
 					} : {}
 				},
-				f = e => {
+				g = e => {
 					switch (e) {
-						case m.a.CES:
+						case p.a.CES:
 							return "ces";
-						case m.a.CSAT:
+						case p.a.CSAT:
 							return "csat";
-						case m.a.NPS:
+						case p.a.NPS:
 							return "nps";
-						case m.a.MULTI_CHOICE:
+						case p.a.MULTI_CHOICE:
 							return "multi_choice"
 					}
 				},
-				g = (e, t) => n => ({
+				C = (e, t) => n => ({
 					source: "survey",
 					action: t,
 					noun: "intro",
-					...b.o(n),
-					survey: h(n, e)
+					...h.o(n),
+					survey: f(n, e)
 				}),
-				C = ({
+				O = ({
 					action: e,
 					experimentName: t,
 					question: n,
@@ -15996,19 +15997,19 @@
 					source: "survey",
 					action: e,
 					noun: "rating",
-					...b.o(i),
+					...h.o(i),
 					survey: {
-						type: f(a),
-						min: a === m.a.NPS ? 0 : 1,
-						max: a === m.a.NPS ? 10 : 7,
+						type: g(a),
+						min: a === p.a.NPS ? 0 : 1,
+						max: a === p.a.NPS ? 10 : 7,
 						question: n,
 						question_id: r,
 						parent_question_id: o,
 						score: s,
-						...h(i, t)
+						...f(i, t)
 					}
 				}),
-				O = ({
+				v = ({
 					action: e,
 					experimentName: t,
 					question: n,
@@ -16020,17 +16021,17 @@
 					source: "survey",
 					action: e,
 					noun: "freeform_text",
-					...b.o(i),
+					...h.o(i),
 					survey: {
 						question: n,
-						type: f(r),
+						type: g(r),
 						text: s,
 						question_id: o,
 						parent_question_id: a,
-						...h(i, t)
+						...f(i, t)
 					}
 				}),
-				v = ({
+				x = ({
 					action: e,
 					experimentName: t,
 					question: n,
@@ -16044,9 +16045,9 @@
 					source: "survey",
 					action: e,
 					noun: "multi_choice",
-					...b.o(d),
+					...h.o(d),
 					survey: {
-						type: f(r),
+						type: g(r),
 						min: 0,
 						max: i,
 						text: c,
@@ -16054,61 +16055,61 @@
 						score: s,
 						question_id: o,
 						parent_question_id: a,
-						...h(d, t)
+						...f(d, t)
 					}
 				});
-			var x = n("./src/reddit/hooks/useTracking.ts"),
-				y = n("./src/reddit/models/Toast/index.ts"),
-				E = n("./src/reddit/selectors/experiments/index.ts"),
-				j = n("./src/reddit/selectors/user.ts");
-			const _ = () => {
+			var y = n("./src/reddit/hooks/useTracking.ts"),
+				E = n("./src/reddit/models/Toast/index.ts"),
+				j = n("./src/reddit/selectors/experiments/index.ts"),
+				_ = n("./src/reddit/selectors/user.ts");
+			const S = () => {
 					const e = Object(d.d)(),
 						[t, n] = Object(c.useState)(null),
-						s = Object(x.a)(),
-						r = Object(d.e)(j.i),
-						a = Object(d.e)(j.rb),
-						i = Object(d.e)(E.a, o.a),
-						u = Object(d.e)(p.c),
-						b = Object(d.e)(p.a),
-						h = Object(d.e)(p.b),
-						f = Object(d.e)(p.d),
-						C = Object(c.useMemo)(() => {
-							const e = Object(m.g)(),
+						s = Object(y.a)(),
+						r = Object(d.e)(_.i),
+						a = Object(d.e)(_.rb),
+						i = Object(d.e)(j.a, o.a),
+						u = Object(d.e)(b.c),
+						p = Object(d.e)(b.a),
+						h = Object(d.e)(b.b),
+						f = Object(d.e)(b.d),
+						g = Object(c.useMemo)(() => {
+							const e = Object(m.f)(),
 								t = {};
 							for (const n of e) t[n] = i[n];
 							return t
 						}, [i]),
 						O = Object(c.useCallback)(e => {
-							const s = Object(m.f)({
+							const s = Object(m.e)({
 								triggerName: e,
-								surveyExperimentVariants: C,
+								surveyExperimentVariants: g,
 								samplingId: r || a,
 								isDemoEnabled: u,
-								activeDemoTrigger: b,
+								activeDemoTrigger: p,
 								demoTriggerThreshold: h,
 								isSampleFactorEnabled: f
 							});
 							if (u) return void(s && n(s));
 							if (!s || s === t) return;
-							const o = C[s.experiment_name];
-							(null == o ? void 0 : o.variant) && s.variants[o.variant] && setTimeout(() => n(s), 500)
-						}, [t, C, r, a, f, u, b, h]);
+							const o = g[s.experimentName];
+							(null == o ? void 0 : o.variant) && s.variants.find(e => e.variantName === o.variant) && setTimeout(() => n(s), 500)
+						}, [t, g, r, a, f, u, p, h]);
 					return Object(c.useEffect)(() => {
-						const e = Object(m.d)(),
+						const e = Object(m.c)(),
 							t = e.subscribe(O);
 						return () => e.unsubscribe(t)
 					}, [O]), Object(c.useEffect)(() => {
 						if (!t) return;
 						const n = Date.now();
-						Object(m.i)(t, n), e(Object(l.I)({
+						Object(m.h)(t, n), e(Object(l.I)({
 							surveyLastSeenTime: n
-						}, !1)), s(g(t.experiment_name, "display"))
+						}, !1)), s(C(t.experimentName, "display"))
 					}, [t, e, s]), {
 						activeSurvey: t,
 						setActiveSurvey: n
 					}
 				},
-				S = ({
+				k = ({
 					activeStepNum: e,
 					activeSurvey: t,
 					isFollowUp: n,
@@ -16129,9 +16130,9 @@
 						isFollowUp: n,
 						textResponse: s
 					});
-					const [i, d] = Object(c.useState)(!1), l = Object(x.a)(), u = t.experiment_name, p = t.steps[e], b = null == p ? void 0 : p.type, h = null == p ? void 0 : p.question, f = Object(c.useCallback)(() => {
-						e >= 0 ? d(!0) : (o(!0), l(g(t.experiment_name, "dismiss")))
-					}, [e, t, l, o]), y = Object(c.useCallback)(() => {
+					const [i, d] = Object(c.useState)(!1), l = Object(y.a)(), u = t.experimentName, m = t.steps[e], b = null == m ? void 0 : m.type, h = null == m ? void 0 : m.question, f = Object(c.useCallback)(() => {
+						e >= 0 ? d(!0) : (o(!0), l(C(t.experimentName, "dismiss")))
+					}, [e, t, l, o]), g = Object(c.useCallback)(() => {
 						r(""), o(!0);
 						const e = {
 							question: h,
@@ -16139,18 +16140,18 @@
 							type: b,
 							action: "dismiss",
 							questionId: a.toString(),
-							questionParentId: p.type === m.a.MULTI_CHOICE && n ? `${a-1}` : null
+							questionParentId: m.type === p.a.MULTI_CHOICE && n ? `${a-1}` : null
 						};
-						l(n ? O(e) : p.type === m.a.MULTI_CHOICE ? v(e) : C(e))
-					}, [u, n, h, p, l, o, r, b, a]);
+						l(n ? v(e) : m.type === p.a.MULTI_CHOICE ? x(e) : O(e))
+					}, [u, n, h, m, l, o, r, b, a]);
 					return {
 						isLeavingModalShowing: i,
 						onClose: f,
 						onLeaveCancel: Object(c.useCallback)(() => d(!1), []),
-						onLeaveConfirm: y
+						onLeaveConfirm: g
 					}
 				},
-				k = ({
+				P = ({
 					activeSurvey: e,
 					selectedNumber: t,
 					setIsSurveyDismissed: n,
@@ -16158,18 +16159,18 @@
 					setTextResponse: r,
 					textResponse: o
 				}) => {
-					const [a, d] = Object(c.useState)(-1), [l, u] = Object(c.useState)(0), [p, b] = Object(c.useState)(!1), h = Object(x.a)(), [f, y] = Object(c.useState)(""), [E, j] = Object(c.useState)([]), _ = Object(c.useCallback)(() => {
-						var c, x;
-						const E = e.experiment_name,
+					const [a, d] = Object(c.useState)(-1), [l, u] = Object(c.useState)(0), [m, b] = Object(c.useState)(!1), h = Object(y.a)(), [f, g] = Object(c.useState)(""), [E, j] = Object(c.useState)([]), _ = Object(c.useCallback)(() => {
+						var c, y;
+						const E = e.experimentName,
 							_ = e.steps[a],
 							S = null == _ ? void 0 : _.type,
 							k = null == _ ? void 0 : _.question,
-							P = null == _ ? void 0 : _.follow_up_question,
+							P = null == _ ? void 0 : _.followUpQuestion,
 							w = e.steps[a + 1],
 							N = null == w ? void 0 : w.type,
 							I = null == w ? void 0 : w.question;
-						if (u(l + 1), w && w.question_options && j(i()(w.question_options)), -1 === a) {
-							h(g(E, "agree")), d(0);
+						if (u(l + 1), w && w.questionOptions && j(i()(w.questionOptions)), -1 === a) {
+							h(C(E, "agree")), d(0);
 							const e = {
 								question: I,
 								type: N,
@@ -16178,33 +16179,33 @@
 								questionId: `${l+1}`.toString(),
 								questionParentId: null
 							};
-							return void h(N === m.a.MULTI_CHOICE ? v({
+							return void h(N === p.a.MULTI_CHOICE ? x({
 								text: f,
 								...e
-							}) : C(e))
+							}) : O(e))
 						}
 						const M = {
 							experimentName: E,
 							type: S,
 							action: "submit",
 							questionId: l.toString(),
-							questionParentId: _.type === m.a.MULTI_CHOICE && p ? `${l-1}` : null
+							questionParentId: _.type === p.a.MULTI_CHOICE && m ? `${l-1}` : null
 						};
-						if (h(p ? O({
+						if (h(m ? v({
 								text: o,
 								question: P,
 								...M
-							}) : S === m.a.MULTI_CHOICE ? v({
+							}) : S === p.a.MULTI_CHOICE ? x({
 								question: k,
-								max: null === (c = _.question_options) || void 0 === c ? void 0 : c.length,
-								score: null === (x = _.question_options) || void 0 === x ? void 0 : x.findIndex(e => e === f),
+								max: null === (c = _.questionOptions) || void 0 === c ? void 0 : c.length,
+								score: null === (y = _.questionOptions) || void 0 === y ? void 0 : y.findIndex(e => e === f),
 								text: f,
 								...M
-							}) : C({
+							}) : O({
 								question: k,
-								score: t && t + (S === m.a.NPS ? 0 : 1),
+								score: t && t + (S === p.a.NPS ? 0 : 1),
 								...M
-							})), s(void 0), r(""), y(""), p || !P)
+							})), s(void 0), r(""), g(""), m || !P)
 							if (b(!1), a + 1 >= e.steps.length) n(!0);
 							else {
 								d(a + 1);
@@ -16215,12 +16216,12 @@
 									question: I,
 									questionId: (l + 1).toString()
 								};
-								h(N === m.a.MULTI_CHOICE ? v({
+								h(N === p.a.MULTI_CHOICE ? x({
 									text: f,
 									...e
-								}) : C(e))
+								}) : O(e))
 							}
-						else b(!0), h(O({
+						else b(!0), h(v({
 							experimentName: E,
 							action: "display",
 							type: S,
@@ -16228,13 +16229,13 @@
 							questionId: `${l+1}`,
 							questionParentId: l.toString()
 						}))
-					}, [f, y, a, e, p, o, t, h, n, s, r, l]);
+					}, [f, g, a, e, m, o, t, h, n, s, r, l]);
 					return {
 						questionOptions: E,
 						selectedOption: f,
-						setSelectedOption: y,
+						setSelectedOption: g,
 						activeStepNum: a,
-						isFollowUp: p,
+						isFollowUp: m,
 						onStepComplete: _,
 						uiStep: l,
 						setActiveStepNum: d,
@@ -16242,7 +16243,7 @@
 						setIsFollowUp: b
 					}
 				},
-				P = ({
+				w = ({
 					isSurveyDismissed: e,
 					setIsSurveyDismissed: t,
 					setActiveStepNum: n,
@@ -16259,7 +16260,7 @@
 								text: s.fbt._("Thanks for your feedback!", null, {
 									hk: "11jNYw"
 								}),
-								kind: y.b.SuccessCommunityGreen
+								kind: E.b.SuccessCommunityGreen
 							}))
 						}, 500)
 					}, [m, e, i, l, t, n, r, o, a])
@@ -19876,7 +19877,7 @@
 					return s
 				} : ct,
 				Kt = n("./src/reddit/helpers/survey/index.ts");
-			var zt = "undefined" != typeof document ? e => e => t => ((e => !!Object.keys(Kt.b).filter(t => t === e).length)(t.type) && Object(Ke.S)(Kt.b[t.type]), e(t)) : ct;
+			var zt = "undefined" != typeof document ? e => e => t => ((e => !!Object.keys(Kt.a).filter(t => t === e).length)(t.type) && Object(Ke.S)(Kt.a[t.type]), e(t)) : ct;
 			const Qt = 5 * S.kb;
 			var Jt = e => {
 					const t = Ve()(() => {
@@ -20563,7 +20564,7 @@
 								{
 									currentPage: n
 								} = t.platform;
-							if ("visible" !== document.visibilityState && (Ke.Pb(Date.now()), Object(B.a)(Object(On.a)("tab_backgrounded")(t))), (e => Object(fn.c)(e, {
+							if ("visible" !== document.visibilityState && (Ke.Qb(Date.now()), Object(B.a)(Object(On.a)("tab_backgrounded")(t))), (e => Object(fn.c)(e, {
 									experimentEligibilitySelector: e => !Object(Kn.d)(e),
 									experimentName: Xe.Qb
 								}) === Xe.dc.Enabled)(t) && "visible" === document.visibilityState && n && Object(mn.k)(n.routeMatch, c.getState(), H.TimerType.Revisit, 0, n.urlParams, !0), "visible" === document.visibilityState) {
@@ -24115,4 +24116,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.039ddde70afcabd6ff5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f7d636b805bc02de5038.js.map
