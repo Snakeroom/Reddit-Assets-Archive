@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.aad582b2f3d44bb96331.js
-// Retrieved at 1/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.e39ce0ec3b6892293809.js
+// Retrieved at 1/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2829,7 +2829,7 @@
 					showCreatePollButton: e => (e => Object(nt.c)(e, {
 						experimentEligibilitySelector: nt.a,
 						experimentName: Ae.P
-					}) === Ae.W.Treatment)(e) && !Object(Ge.g)(),
+					}) === Ae.V.Treatment)(e) && !Object(Ge.g)(),
 					shouldShowFlairPreview: (e, {
 						listingName: t
 					}) => {
@@ -3026,7 +3026,7 @@
 						onClick: m ? g : void 0,
 						headerButton: i.a.createElement("div", {
 							className: ut.a.headerButtonsContainer
-						}, !M && x && f && c !== Ae.Xd.NewModule && i.a.createElement(a.a, {
+						}, !M && x && f && c !== Ae.Wd.NewModule && i.a.createElement(a.a, {
 							className: ut.a.ModToolsLink,
 							to: f.posts ? `${x.url}about/modqueue` : `${x.url}about/`,
 							onClick: this.onClickModTools
@@ -5036,29 +5036,29 @@
 				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.yb,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.X.Enabled),
+				d = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.zb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Y.Enabled),
-				d = Object(r.a)(e => Object(i.c)(e, {
+				c = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Ab,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Z.Enabled),
-				c = Object(r.a)(e => Object(i.c)(e, {
+				l = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Bb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.ab.Enabled),
-				l = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Cb,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.bb.Enabled),
 				u = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Eb,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.db.Enabled),
-				m = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Db,
 					experimentEligibilitySelector: o.e
-				}), e => e === s.cb.Enabled)
+				}), e => e === s.cb.Enabled),
+				m = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.Cb,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.bb.Enabled)
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
 			"use strict";
@@ -5185,4 +5185,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.aad582b2f3d44bb96331.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.e39ce0ec3b6892293809.js.map

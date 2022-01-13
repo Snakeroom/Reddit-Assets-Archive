@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.ceeb7e1f50a9284adf3c.js
-// Retrieved at 1/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.c729ea858f732443450d.js
+// Retrieved at 1/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -655,39 +655,39 @@
 				c = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: a.yb,
-					experimentEligibilitySelector: c.e
-				}), i.a),
-				d = Object(s.a)(o, e => e === a.yd.Enabled),
-				u = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: a.td,
-					experimentEligibilitySelector: c.e
-				}), i.a),
-				l = Object(s.a)(d, u, (e, t) => e && t === a.xd.Enabled),
-				b = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: a.Kb,
-					experimentEligibilitySelector: c.e
-				}), i.a),
-				m = Object(s.a)(d, b, (e, t) => e && t === a.ac.Enabled),
-				h = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: a.wb,
-					experimentEligibilitySelector: c.e
-				}), i.a),
-				g = Object(s.a)(h, e => e === a.vd.ContinuousScroll),
-				f = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: a.xb,
 					experimentEligibilitySelector: c.e
 				}), i.a),
-				p = Object(s.a)(f, e => e === a.wd.Enabled),
+				d = Object(s.a)(o, e => e === a.xd.Enabled),
+				u = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: a.sd,
+					experimentEligibilitySelector: c.e
+				}), i.a),
+				l = Object(s.a)(d, u, (e, t) => e && t === a.wd.Enabled),
+				b = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: a.Jb,
+					experimentEligibilitySelector: c.e
+				}), i.a),
+				m = Object(s.a)(d, b, (e, t) => e && t === a.Zb.Enabled),
+				h = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: a.vb,
+					experimentEligibilitySelector: c.e
+				}), i.a),
+				g = Object(s.a)(h, e => e === a.ud.ContinuousScroll),
+				f = Object(s.a)(e => Object(r.c)(e, {
+					experimentName: a.wb,
+					experimentEligibilitySelector: c.e
+				}), i.a),
+				p = Object(s.a)(f, e => e === a.vd.Enabled),
 				x = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: a.Fb,
+					experimentName: a.Eb,
 					experimentEligibilitySelector: () => !0
 				}), i.a),
-				j = Object(s.a)(x, e => e === a.gb.Enabled)
+				j = Object(s.a)(x, e => e === a.fb.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"9d105ce5d71a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.ceeb7e1f50a9284adf3c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.c729ea858f732443450d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.9a42fa51eeb5808e2222.js
-// Retrieved at 1/12/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.3b8c7f4b3464386d5d76.js
+// Retrieved at 1/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal", "OnboardingActions"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -189,7 +189,7 @@
 			const S = e => {
 				const t = Object(y.c)(e, {
 					experimentEligibilitySelector: y.a,
-					experimentName: j.Ib
+					experimentName: j.Hb
 				});
 				return !!Object(k.a)(t)
 			};
@@ -385,8 +385,8 @@
 				q = n("./src/reddit/constants/postLayout.ts"),
 				W = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				Q = n("./src/reddit/helpers/frontpageCardPostCountExperiment.ts"),
-				V = n("./src/reddit/helpers/getTimeSortForListing/index.ts"),
-				H = n("./src/reddit/models/Toast/index.ts"),
+				H = n("./src/reddit/helpers/getTimeSortForListing/index.ts"),
+				V = n("./src/reddit/models/Toast/index.ts"),
 				U = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
 				z = n("./src/reddit/selectors/frontpage.ts"),
 				J = n("./src/reddit/selectors/goldPurchaseModals.ts"),
@@ -447,7 +447,7 @@
 							...h.body
 						})), n(L.f({
 							id: x,
-							kind: H.b.Error,
+							kind: V.b.Error,
 							text: r.fbt._("Sorry, we couldn't load posts for this page.", null, {
 								hk: "36ypKx"
 							}),
@@ -488,7 +488,7 @@
 						limit: h,
 						sort: c,
 						statsdPathsForExperiments: x,
-						t: Object(V.a)(c, f)
+						t: Object(H.a)(c, f)
 					})), n(F.m({
 						title: G.e()
 					})), Object(y.c)(o, {
@@ -547,7 +547,7 @@
 									isMobile: Object(o.e)(a.meta.userAgent),
 									limit: d,
 									sort: c,
-									t: Object(V.a)(c, b),
+									t: Object(H.a)(c, b),
 									layout: q.e[Object(W.R)(a, {})],
 									useMockData: e
 								}; {
@@ -595,7 +595,7 @@
 					await t(me(i, {
 						limit: m,
 						sort: s,
-						t: Object(V.a)(s, l),
+						t: Object(H.a)(s, l),
 						isRefresh: !0
 					}))
 				}
@@ -946,8 +946,8 @@
 					})))
 				},
 				Q = n("./node_modules/lodash/times.js"),
-				V = n.n(Q),
-				H = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
+				H = n.n(Q),
+				V = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
 				U = n("./src/reddit/icons/svgs/CommunityDefault/filled.tsx"),
 				z = n("./src/reddit/icons/svgs/Plus/index.tsx"),
 				J = n("./src/reddit/icons/svgs/Positive/index.tsx"),
@@ -990,7 +990,7 @@
 					toggleSelection: r,
 					topicTitle: e.topicTitle
 				})))
-			}, ee = () => o.a.createElement(o.a.Fragment, null, V()(5, e => o.a.createElement(H.a, {
+			}, ee = () => o.a.createElement(o.a.Fragment, null, H()(5, e => o.a.createElement(V.a, {
 				key: e,
 				fullWidth: !0,
 				large: !0
@@ -1166,7 +1166,7 @@
 				const e = Object(me.b)({
 					isLoading: !0
 				});
-				return o.a.createElement(o.a.Fragment, null, V()(30, t => o.a.createElement("div", {
+				return o.a.createElement(o.a.Fragment, null, H()(30, t => o.a.createElement("div", {
 					key: t,
 					className: Object(d.a)(ie.a.Placeholder, e)
 				})))
@@ -1418,14 +1418,14 @@
 				}
 			});
 			var Qe = n("./src/telemetry/helpers/sendCounter.ts");
-			var Ve = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				He = n("./src/reddit/icons/svgs/svgIcons.tsx"),
+			var He = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
+				Ve = n("./src/reddit/icons/svgs/svgIcons.tsx"),
 				Ue = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				ze = n("./node_modules/reselect/es/index.js"),
 				Je = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Ke = Object(ze.a)(e => Object(Je.c)(e, {
 				experimentEligibilitySelector: Je.a,
-				experimentName: Ee.Ob
+				experimentName: Ee.Nb
 			}), e => e);
 			var Ze = n("./src/reddit/selectors/experiments/survey.ts"),
 				Xe = n("./src/reddit/selectors/onboarding.ts"),
@@ -1487,8 +1487,8 @@
 				const {
 					gqlContext: t,
 					apiContext: n
-				} = e, r = Object(i.d)(), a = Object(x.a)(), c = Object(i.e)(Ke) === Ee.hb.Enabled, p = c ? ve.GENDER : ve.INTERESTS, [b, f] = Object(s.useState)(p), [g, O] = Object(s.useState)(null), v = Object(i.e)(Xe.a), [E, _] = Object(s.useState)(!c), [j, y] = Object(s.useState)([]), [S, T] = Object(s.useState)(!1), [M, F] = Object(s.useState)({}), [L, A] = Object(s.useState)(!1), [D, B] = Object(s.useState)([]), [q, W] = Object(s.useState)([]), [Q, V] = Object(s.useState)({}), {
-					avatarImage: H,
+				} = e, r = Object(i.d)(), a = Object(x.a)(), c = Object(i.e)(Ke) === Ee.gb.Enabled, p = c ? ve.GENDER : ve.INTERESTS, [b, f] = Object(s.useState)(p), [g, O] = Object(s.useState)(null), v = Object(i.e)(Xe.a), [E, _] = Object(s.useState)(!c), [j, y] = Object(s.useState)([]), [S, T] = Object(s.useState)(!1), [M, F] = Object(s.useState)({}), [L, A] = Object(s.useState)(!1), [D, B] = Object(s.useState)([]), [q, W] = Object(s.useState)([]), [Q, H] = Object(s.useState)({}), {
+					avatarImage: V,
 					fetchRandomAvatar: U,
 					saveAvatar: z
 				} = C();
@@ -1516,7 +1516,7 @@
 								preSelectedCommunities: s,
 								recommendedCommunities: o
 							} = e;
-						a ? (V(s), W(o)) : r(nt())
+						a ? (H(s), W(o)) : r(nt())
 					}()
 				}, [n, r, t]);
 				const J = Object(i.e)(e => Object(Ze.f)(e)),
@@ -1574,10 +1574,10 @@
 					className: xe.a.header
 				}, o.a.createElement("div", {
 					className: xe.a.headerBar
-				}, o.a.createElement("div", null, oe && o.a.createElement(He.d, {
+				}, o.a.createElement("div", null, oe && o.a.createElement(Ve.d, {
 					className: xe.a.backButton,
 					onClick: ie
-				})), o.a.createElement(Ve.a, {
+				})), o.a.createElement(He.a, {
 					className: xe.a.snooIcon
 				}), o.a.createElement("div", {
 					className: xe.a.skipContainer
@@ -1618,7 +1618,7 @@
 					hk: "1x9ZNL"
 				}))), o.a.createElement(Ce, {
 					activeStep: b,
-					avatarImage: H,
+					avatarImage: V,
 					communitiesByTopic: D,
 					fetchRandomAvatar: U,
 					interests: j,
@@ -1628,7 +1628,7 @@
 					selectedCommunities: Q,
 					selectedGenderOption: g,
 					selectedInterests: M,
-					setSelectedCommunities: V,
+					setSelectedCommunities: H,
 					setSelectedGenderOption: O,
 					setSelectedInterests: F
 				}), o.a.createElement("div", {
@@ -2079,7 +2079,7 @@
 		"./src/reddit/components/Settings/shared/Widgets.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "n", (function() {
-				return V
+				return H
 			})), n.d(t, "k", (function() {
 				return K
 			})), n.d(t, "o", (function() {
@@ -2187,8 +2187,8 @@
 			const q = Object(l.a)(b.a),
 				W = h.a.wrapped(I.a, "Circle", D.a),
 				Q = h.a.h3("Label", D.a),
-				V = h.a.wrapped(S.c, "Subtext", D.a),
-				H = h.a.wrapped(m.a, "HoverTooltip", D.a),
+				H = h.a.wrapped(S.c, "Subtext", D.a),
+				V = h.a.wrapped(m.a, "HoverTooltip", D.a),
 				U = h.a.div("ControlContainer", D.a),
 				z = h.a.div("TextContainer", D.a),
 				J = h.a.div("ActionContainer", D.a),
@@ -2226,7 +2226,7 @@
 					last: e.last
 				}, a.a.createElement(z, {
 					className: e.textContainerClassName
-				}, a.a.createElement(Q, null, e.label, e.isRequired && a.a.createElement(W, null)), a.a.createElement(V, null, e.subtext)), a.a.createElement(J, null, e.children)),
+				}, a.a.createElement(Q, null, e.label, e.isRequired && a.a.createElement(W, null)), a.a.createElement(H, null, e.subtext)), a.a.createElement(J, null, e.children)),
 				ne = h.a.div("StyledFlair", D.a),
 				re = h.a.wrapped(ne, "SpoilerFlair", D.a),
 				ae = h.a.wrapped(ne, "NSFWFlair", D.a),
@@ -2249,7 +2249,7 @@
 						last: e.last
 					}, a.a.createElement(z, null, a.a.createElement(P.a, null, a.a.createElement("label", {
 						htmlFor: t
-					}, a.a.createElement(Q, null, e.label))), a.a.createElement(V, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(U, null, e.tooltip && a.a.createElement(H, {
+					}, a.a.createElement(Q, null, e.label))), a.a.createElement(H, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(U, null, e.tooltip && a.a.createElement(V, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
 					}), a.a.createElement(k.a, {
@@ -2280,7 +2280,7 @@
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && a.a.createElement(P.a, null, a.a.createElement(Q, null, e.label)), !e.hideSubtext && a.a.createElement(V, null, " ", a.a.createElement(ue, {
+				}, !e.inModal && a.a.createElement(P.a, null, a.a.createElement(Q, null, e.label)), !e.hideSubtext && a.a.createElement(H, null, " ", a.a.createElement(ue, {
 					style: {
 						color: e.ticks[e.value].color
 					}
@@ -2312,7 +2312,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(z, null, a.a.createElement(P.a, null, a.a.createElement(Q, null, e.label)), a.a.createElement(V, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(U, null, a.a.createElement(G.o, {
+				}, a.a.createElement(z, null, a.a.createElement(P.a, null, a.a.createElement(Q, null, e.label)), a.a.createElement(H, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(U, null, a.a.createElement(G.o, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				fe = e => a.a.createElement(K, {
@@ -2324,7 +2324,7 @@
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, a.a.createElement(Y, null)), a.a.createElement(V, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(Z, {
+				}, e.label, a.a.createElement(Y, null)), a.a.createElement(H, null, e.subtext)), a.a.createElement(J, null, a.a.createElement(Z, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
@@ -2339,7 +2339,7 @@
 					className: Object(c.a)({
 						[D.a.NoColor]: e.color && "none" === e.color
 					})
-				}, e.label), a.a.createElement(V, null, e.subtext)), a.a.createElement(J, null, !!e.hintText && a.a.createElement("div", {
+				}, e.label), a.a.createElement(H, null, e.subtext)), a.a.createElement(J, null, !!e.hintText && a.a.createElement("div", {
 					className: D.a.ActionHintText
 				}, e.hintText), a.a.createElement($, {
 					onClick: e.onClick,
@@ -2364,7 +2364,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(z, null, a.a.createElement(Q, null, e.label), a.a.createElement(V, null, e.subtext)), a.a.createElement(J, null, (e => a.a.createElement("div", {
+				}, a.a.createElement(z, null, a.a.createElement(Q, null, e.label), a.a.createElement(H, null, e.subtext)), a.a.createElement(J, null, (e => a.a.createElement("div", {
 					className: D.a.DropdownWrapper,
 					onClick: e.openDropdown
 				}, a.a.createElement("span", {
@@ -2405,7 +2405,7 @@
 						htmlFor: o.id
 					}, a.a.createElement(Q, {
 						className: o.labelClassname
-					}, o.label)), a.a.createElement(V, null, o.subtext)), a.a.createElement("div", {
+					}, o.label)), a.a.createElement(H, null, o.subtext)), a.a.createElement("div", {
 						className: D.a.Wrapper__LineBreak
 					}), a.a.createElement(K, {
 						last: t,
@@ -2431,7 +2431,7 @@
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, a.a.createElement(z, null, a.a.createElement(Q, null, e.label), a.a.createElement(V, null, e.subtext)), a.a.createElement(J, null, e.children)),
+				}, a.a.createElement(z, null, a.a.createElement(Q, null, e.label), a.a.createElement(H, null, e.subtext)), a.a.createElement(J, null, e.children)),
 				Ce = e => a.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
@@ -3392,4 +3392,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.9a42fa51eeb5808e2222.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.3b8c7f4b3464386d5d76.js.map
