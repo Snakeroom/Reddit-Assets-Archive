@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9181457d05315648436e.js
-// Retrieved at 1/13/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.edaeb43b5eff769a1617.js
+// Retrieved at 1/13/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3327,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("156037"),
+				buildNumber: Object(r.c)("156040"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1642085689"),
+				buildTimestamp: Object(r.b)("1642091369"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5914,14 +5914,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cc0da0fce7b7a450d6a8fcd7a734a1dc8f9266b18-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cd1d8f9113997c0a44305bfb2e6eed31b0cbf21f9-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "c0da0fce7b7a450d6a8fcd7a734a1dc8f9266b18-production",
+						release: "d1d8f9113997c0a44305bfb2e6eed31b0cbf21f9-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6438,7 +6438,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "c0da0fce7b7a450d6a8fcd7a734a1dc8f9266b18-production",
+						releaseClient: "d1d8f9113997c0a44305bfb2e6eed31b0cbf21f9-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -11652,12 +11652,12 @@
 				}, He = e => async (t, i, {
 					apiContext: n
 				}) => {
-					const r = i(),
-						s = r.posts.models[e],
-						o = r.user.account ? r.user.account.displayText : null;
-					s && (t(Se({
+					const s = i(),
+						o = s.posts.models[e],
+						d = s.user.account ? s.user.account.displayText : null;
+					o && (t(Se({
 						[e]: {
-							approvedBy: o,
+							approvedBy: d,
 							bannedBy: null,
 							isApproved: !0,
 							isRemoved: !1,
@@ -11667,40 +11667,52 @@
 							modRemovalReason: null,
 							modReasonBy: null
 						}
-					})), (await Object(q.a)(n(), e)).ok || t(Se({
+					})), (await Object(q.a)(n(), e)).ok ? t(Object(Q.f)({
+						kind: se.b.SuccessMod,
+						text: r.fbt._("post has been approved", null, {
+							hk: "lSMdX"
+						})
+					})) : t(Se({
 						[e]: {
 							approvedBy: null,
-							bannedBy: s.bannedBy,
-							isApproved: s.isApproved,
-							isRemoved: s.isRemoved,
-							isSpam: s.isSpam,
-							modNote: s.modNote,
-							numReports: s.numReports || null,
-							modRemovalReason: s.modRemovalReason,
-							modReasonBy: s.modReasonBy
+							bannedBy: o.bannedBy,
+							isApproved: o.isApproved,
+							isRemoved: o.isRemoved,
+							isSpam: o.isSpam,
+							modNote: o.modNote,
+							numReports: o.numReports || null,
+							modRemovalReason: o.modRemovalReason,
+							modReasonBy: o.modReasonBy
 						}
 					})))
 				}, We = (e, t) => async (i, n, {
-					apiContext: r
+					apiContext: s
 				}) => {
-					const s = n(),
-						o = s.posts.models[e],
-						d = s.user.account ? s.user.account.displayText : null;
-					return !(!o || !d) && (i(Se({
+					const o = n(),
+						d = o.posts.models[e],
+						a = o.user.account ? o.user.account.displayText : null;
+					return !(!d || !a) && (i(Se({
 						[e]: {
 							approvedBy: null,
-							bannedBy: d,
+							bannedBy: a,
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), !!(await Object(q.m)(r(), e, t)).ok || (i(Se({
+					})), (await Object(q.m)(s(), e, t)).ok ? (i(Object(Q.f)({
+						kind: se.b.SuccessCommunity,
+						text: t ? r.fbt._("post has been marked as spam", null, {
+							hk: "3L0Zxk"
+						}) : r.fbt._("post has been removed", null, {
+							hk: "20WbsG"
+						})
+					})), !0) : (i(Se({
 						[e]: {
-							approvedBy: o.approvedBy,
-							bannedBy: o.bannedBy,
-							isApproved: o.isApproved,
-							isRemoved: o.isRemoved,
-							isSpam: o.isSpam
+							approvedBy: d.approvedBy,
+							bannedBy: d.bannedBy,
+							isApproved: d.isApproved,
+							isRemoved: d.isRemoved,
+							isSpam: d.isSpam
 						}
 					})), !1))
 				}, ze = (e, t, i) => async (n, s, {
@@ -11736,37 +11748,51 @@
 				}, Ke = e => async (t, i, {
 					apiContext: n
 				}) => {
-					const r = i().posts.models[e];
-					if (!r) return;
-					const s = r.isLocked ? q.u : q.i;
+					const s = i().posts.models[e];
+					if (!s) return;
+					const o = s.isLocked ? q.u : q.i;
 					t(Se({
 						[e]: {
-							isLocked: !r.isLocked
+							isLocked: !s.isLocked
 						}
-					})), (await s(n(), e)).ok || t(Se({
+					})), (await o(n(), e)).ok ? t(Object(Q.f)({
+						kind: se.b.SuccessMod,
+						text: s.isLocked ? r.fbt._("post has been unlocked", null, {
+							hk: "2Qq0lE"
+						}) : r.fbt._("post has been locked", null, {
+							hk: "31eqWW"
+						})
+					})) : t(Se({
 						[e]: {
-							isLocked: r.isLocked
+							isLocked: s.isLocked
 						}
 					}))
 				}, Ye = e => async (t, i, {
 					apiContext: n
 				}) => {
-					const r = i().posts.models[e];
-					if (!r) return;
-					const s = r.isSpoiler ? q.x : q.q,
-						o = r.isSpoiler ? r.flair.filter(e => e.type !== ie.f.Spoiler) : [...r.flair, {
+					const s = i().posts.models[e];
+					if (!s) return;
+					const o = s.isSpoiler ? q.x : q.q,
+						d = s.isSpoiler ? s.flair.filter(e => e.type !== ie.f.Spoiler) : [...s.flair, {
 							text: "spoiler",
 							type: ie.f.Spoiler
 						}];
 					t(Se({
 						[e]: {
-							isSpoiler: !r.isSpoiler,
-							flair: o
+							isSpoiler: !s.isSpoiler,
+							flair: d
 						}
-					})), (await s(n(), e)).ok || t(Se({
+					})), (await o(n(), e)).ok ? t(Object(Q.f)({
+						kind: se.b.SuccessMod,
+						text: s.isSpoiler ? r.fbt._("post has been un-marked as a spoiker", null, {
+							hk: "2Alvhw"
+						}) : r.fbt._("post has been marked as spoiler", null, {
+							hk: "3KKPx4"
+						})
+					})) : t(Se({
 						[e]: {
-							isSpoiler: r.isSpoiler,
-							flair: r.flair
+							isSpoiler: s.isSpoiler,
+							flair: s.flair
 						}
 					}))
 				}, $e = e => async (t, i, {
@@ -11787,22 +11813,29 @@
 				}, Qe = e => async (t, i, {
 					apiContext: n
 				}) => {
-					const r = i().posts.models[e];
-					if (!r) return;
-					const s = r.isNSFW ? q.v : q.j,
-						o = r.isNSFW ? r.flair.filter(e => e.type !== ie.f.Nsfw) : [...r.flair, {
+					const s = i().posts.models[e];
+					if (!s) return;
+					const o = s.isNSFW ? q.v : q.j,
+						d = s.isNSFW ? s.flair.filter(e => e.type !== ie.f.Nsfw) : [...s.flair, {
 							text: "nsfw",
 							type: ie.f.Nsfw
 						}];
 					t(Se({
 						[e]: {
-							isNSFW: !r.isNSFW,
-							flair: o
+							isNSFW: !s.isNSFW,
+							flair: d
 						}
-					})), (await s(n(), e)).ok ? await t(at(e)) : t(Se({
+					})), (await o(n(), e)).ok ? (await t(at(e)), t(Object(Q.f)({
+						kind: se.b.SuccessMod,
+						text: s.isNSFW ? r.fbt._("post has been un-marked NSFW", null, {
+							hk: "1CdkqD"
+						}) : r.fbt._("post has been marked NSFW", null, {
+							hk: "ntL3M"
+						})
+					}))) : t(Se({
 						[e]: {
-							isNSFW: r.isNSFW,
-							flair: r.flair
+							isNSFW: s.isNSFW,
+							flair: s.flair
 						}
 					}))
 				}, Je = (e, t) => async (i, n, {
@@ -11825,16 +11858,23 @@
 				}, Xe = e => async (t, i, {
 					apiContext: n
 				}) => {
-					const r = i().posts.models[e];
-					if (!r) return;
-					const s = r.ignoreReports ? q.t : q.h;
+					const s = i().posts.models[e];
+					if (!s) return;
+					const o = s.ignoreReports ? q.t : q.h;
 					t(Se({
 						[e]: {
-							ignoreReports: !r.ignoreReports
+							ignoreReports: !s.ignoreReports
 						}
-					})), (await s(n(), e)).ok || t(Se({
+					})), (await o(n(), e)).ok ? t(Object(Q.f)({
+						kind: se.b.SuccessMod,
+						text: s.ignoreReports ? r.fbt._("post has had their reports un-ignored", null, {
+							hk: "1rLaae"
+						}) : r.fbt._("post has had their reports ignored", null, {
+							hk: "3GTrjn"
+						})
+					})) : t(Se({
 						[e]: {
-							ignoreReports: r.ignoreReports
+							ignoreReports: s.ignoreReports
 						}
 					}))
 				}, Ze = (e, t, i) => async (n, s, {
@@ -45314,4 +45354,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9181457d05315648436e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.edaeb43b5eff769a1617.js.map
