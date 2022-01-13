@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4dd83f64ef2ba160211e.js
-// Retrieved at 1/13/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.6236a343f4634fcfd47c.js
+// Retrieved at 1/13/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -26865,7 +26865,7 @@
 				l = e => e === n.W.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.J, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(n.kf)(t))
+				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(n.lf)(t))
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, r) {
 			"use strict";
@@ -27116,7 +27116,7 @@
 			e.exports = JSON.parse('{"id":"eba3db8414d9"}')
 		},
 		"./src/redditGQL/operations/SubredditsCarousel.json": function(e) {
-			e.exports = JSON.parse('{"id":"c946fc6566ab"}')
+			e.exports = JSON.parse('{"id":"44cebcb48290"}')
 		},
 		"./src/redditGQL/operations/UpdateChatMessagesAsRead.json": function(e) {
 			e.exports = JSON.parse('{"id":"bfc6fe51708d"}')
@@ -27150,4 +27150,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4dd83f64ef2ba160211e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6236a343f4634fcfd47c.js.map

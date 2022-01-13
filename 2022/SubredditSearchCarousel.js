@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.c005552b9b749e4dad8b.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.1abe958bb58107806a26.js
+// Retrieved at 1/13/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditSearchCarousel"], {
 		"./src/reddit/actions/subreddit/subredditCarousel.ts": function(e, t, s) {
@@ -210,7 +210,7 @@
 					subreddit: Object(E.R)(r, {
 						subredditId: t
 					})
-				}))(s ? "unsubsribe" : "subscribe", e, t), [e, v]);
+				}))(s ? "unsubsribe" : "subscribe", e, t), [e]);
 				return d.a.createElement("div", {
 					className: Object(r.a)(h.a.carouselItem, null === h.a || void 0 === h.a ? void 0 : h.a[y])
 				}, d.a.createElement("div", {
@@ -455,8 +455,8 @@
 			}))
 		},
 		"./src/redditGQL/operations/SubredditsCarousel.json": function(e) {
-			e.exports = JSON.parse('{"id":"c946fc6566ab"}')
+			e.exports = JSON.parse('{"id":"44cebcb48290"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.c005552b9b749e4dad8b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.1abe958bb58107806a26.js.map

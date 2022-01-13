@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a.4f1fb288096783c9c327.js
-// Retrieved at 1/12/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a.1c317e69109e08a877f1.js
+// Retrieved at 1/13/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -1586,7 +1586,7 @@
 								experimentName: o.J,
 								expEventOverride: t
 							});
-							return !!(Object(o.kf)(n) ? void 0 : n)
+							return !!(Object(o.lf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2686,4 +2686,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a.4f1fb288096783c9c327.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a.1c317e69109e08a877f1.js.map
