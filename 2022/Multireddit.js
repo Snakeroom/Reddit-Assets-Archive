@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.791771d020da370f18b1.js
-// Retrieved at 1/13/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.ffeae908ec053eff340c.js
+// Retrieved at 1/13/2022, 4:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -1667,41 +1667,6 @@
 					source: "community_nav"
 				})
 		},
-		"./src/reddit/helpers/trackers/navigation.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "b", (function() {
-				return s
-			})), n.d(t, "a", (function() {
-				return i
-			})), n.d(t, "c", (function() {
-				return c
-			}));
-			n("./src/reddit/constants/categories.tsx");
-			var r = n("./src/reddit/selectors/telemetry.ts");
-			const o = e => ({
-					screen: r.ab(e),
-					profile: r.R(e),
-					subreddit: r.jb(e)
-				}),
-				s = e => t => ({
-					action: "click",
-					source: "nav",
-					noun: e,
-					...o(t)
-				}),
-				i = e => t => ({
-					...o(t),
-					source: "sort_switch",
-					action: "click",
-					noun: e
-				}),
-				c = e => t => ({
-					...o(t),
-					source: "time_sort_switch",
-					action: "click",
-					noun: e
-				})
-		},
 		"./src/reddit/helpers/trackers/subredditCreation.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
@@ -2073,4 +2038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.791771d020da370f18b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.ffeae908ec053eff340c.js.map

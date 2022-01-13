@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.ebfbe0cda316098f4e38.js
-// Retrieved at 1/13/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.2fac20ac1e788e249d1c.js
+// Retrieved at 1/13/2022, 4:50:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -1548,7 +1548,7 @@
 						className: Object(o.a)(e.rowClassName, e.sort === t ? e.rowSelectedClassName : void 0),
 						displayText: Object(v.a)(t),
 						onClick: () => {
-							e.onChange(t), e.sendEvent(Object(S.a)(t))
+							e.onChange(t), e.sendEvent(Object(S.b)(t))
 						},
 						href: {
 							pathname: r,
@@ -2048,7 +2048,7 @@
 						},
 						isSelected: e.timeSort === t,
 						onClick: () => {
-							e.onChange(t), e.sendEvent(Object(S.c)(t))
+							e.onChange(t), e.sendEvent(Object(S.d)(t))
 						}
 					})
 				}))))))),
@@ -2093,7 +2093,7 @@
 			class We extends s.a.Component {
 				constructor() {
 					super(...arguments), this.changeSort = e => {
-						this.props.onChange(e), this.props.sendEvent(Object(S.a)(e))
+						this.props.onChange(e), this.props.sendEvent(Object(S.b)(e))
 					}, this.renderSortButton = e => {
 						const {
 							sort: t,
@@ -4287,4 +4287,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.ebfbe0cda316098f4e38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.2fac20ac1e788e249d1c.js.map
