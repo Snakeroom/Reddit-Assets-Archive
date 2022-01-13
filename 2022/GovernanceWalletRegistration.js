@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.4eb19fcd4bffe2fa503a.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.0c4612f192490c7be8e8.js
+// Retrieved at 1/13/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -599,15 +599,15 @@
 					hk: "45RssI"
 				})), a.a.createElement("div", {
 					className: g.a.body
-				}, _._("Backed by {=smart contracts} developed by mod u/cslarson, Donuts are now ERC-20 tokens that you own and control on the Ethereum blockchain! Register to earn Donuts for your contributions to the subreddit and use them to buy perks in the community, like a special membership, higher weighting in polls, or the ability to control the top banner. Follow this simple wizard to register. Note: Donuts are not driven nor developed by Reddit.", [_._param("=smart contracts", a.a.createElement("a", {
+				}, _._("Backed by {=smart contracts} developed by mod u/carlslarson, Donuts are now ERC-20 tokens that you own and control on the Ethereum blockchain! Register to earn Donuts for your contributions to the subreddit and use them to buy perks in the community, like a special membership, higher weighting in polls, or the ability to control the top banner. Follow this simple wizard to register. Note: Donuts are not driven nor developed by Reddit.", [_._param("=smart contracts", a.a.createElement("a", {
 					href: "https://github.com/daonuts",
 					className: g.a.link,
 					rel: "noopener noreferrer",
 					target: "_blank"
 				}, _._("smart contracts", null, {
-					hk: "3JWdHa"
+					hk: "40dMKO"
 				})))], {
-					hk: "uGzqk"
+					hk: "4gEJ3V"
 				}))), a.a.createElement("div", {
 					className: g.a.cta
 				}, a.a.createElement("div", {
@@ -2096,4 +2096,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.4eb19fcd4bffe2fa503a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.0c4612f192490c7be8e8.js.map
