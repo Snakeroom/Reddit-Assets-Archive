@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.c0b42e8b84e913929595.js
-// Retrieved at 1/13/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.6feb05618b56825a0509.js
+// Retrieved at 1/13/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, s) {
@@ -1481,7 +1481,8 @@
 							}
 						}),
 						y = !e.isScoreHidden && f && s < C.a,
-						F = Object(x.a)(I);
+						F = Object(x.a)(I),
+						P = s < 0 ? 0 : s;
 					return a.a.createElement("div", {
 						className: Object(o.a)(w.a.score, e.className),
 						style: e.disableInlineColor ? void 0 : t,
@@ -1489,8 +1490,8 @@
 						onMouseLeave: j ? F.hide : void 0,
 						ref: j ? F.target.ref : void 0
 					}, (y || h) && a.a.createElement(a.a.Fragment, null, a.a.createElement(u.b, {
-						initialDisplayCount: s,
-						countToUpperBound: s,
+						initialDisplayCount: P,
+						countToUpperBound: P,
 						initialDelay: N,
 						subsequentRecurringDelay: N,
 						incrementDelta: N,
@@ -2299,4 +2300,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.c0b42e8b84e913929595.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.6feb05618b56825a0509.js.map

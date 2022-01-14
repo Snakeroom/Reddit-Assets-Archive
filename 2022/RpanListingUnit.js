@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.0c0e1c485823980a700e.js
-// Retrieved at 1/13/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.2fbe00052e54705d095e.js
+// Retrieved at 1/13/2022, 7:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -2222,7 +2222,8 @@
 							}
 						}),
 						k = !e.isScoreHidden && b && n < C.a,
-						A = Object(v.a)(S);
+						A = Object(v.a)(S),
+						R = n < 0 ? 0 : n;
 					return c.a.createElement("div", {
 						className: Object(r.a)(y.a.score, e.className),
 						style: e.disableInlineColor ? void 0 : t,
@@ -2230,8 +2231,8 @@
 						onMouseLeave: g ? A.hide : void 0,
 						ref: g ? A.target.ref : void 0
 					}, (k || _) && c.a.createElement(c.a.Fragment, null, c.a.createElement(u.b, {
-						initialDisplayCount: n,
-						countToUpperBound: n,
+						initialDisplayCount: R,
+						countToUpperBound: R,
 						initialDelay: w,
 						subsequentRecurringDelay: w,
 						incrementDelta: w,
@@ -4364,4 +4365,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.0c0e1c485823980a700e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.2fbe00052e54705d095e.js.map
