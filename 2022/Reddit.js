@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ee7a11d65092bcf2805e.js
-// Retrieved at 1/18/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.bde12ff6f3e0376c3146.js
+// Retrieved at 1/18/2022, 11:20:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -248,53 +248,52 @@
 		"./src/lib/notifications/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return i
-			})), n.d(t, "c", (function() {
 				return c
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return d
+			})), n.d(t, "b", (function() {
+				return l
 			}));
-			var s = n("./src/lib/getParsedUserAgent/index.ts"),
-				r = n("./src/lib/localStorageAvailable/index.ts"),
-				o = n("./src/lib/notifications/constants.ts"),
-				a = n("./src/lib/notifications/featureFlags.ts");
+			var s = n("./src/lib/delay/index.ts"),
+				r = n("./src/lib/getParsedUserAgent/index.ts"),
+				o = n("./src/lib/localStorageAvailable/index.ts"),
+				a = n("./src/lib/notifications/constants.ts"),
+				i = n("./src/lib/notifications/featureFlags.ts");
 			n("./src/lib/serviceWorker/index.ts");
-			const i = () => {
-					if (Object(a.a)() !== o.c.NotificationsSupported) return o.a.Unsupported;
-					const e = Object(r.a)() && localStorage.getItem(o.f) === o.g;
-					return "granted" === Notification.permission ? o.a.Granted : "denied" === Notification.permission ? o.a.Denied : e ? o.a.Closed : o.a.Default
+			const c = () => {
+					if (Object(i.a)() !== a.c.NotificationsSupported) return a.a.Unsupported;
+					const e = Object(o.a)() && localStorage.getItem(a.f) === a.g;
+					return "granted" === Notification.permission ? a.a.Granted : "denied" === Notification.permission ? a.a.Denied : e ? a.a.Closed : a.a.Default
 				},
-				c = () => !!Object(r.a)() && (localStorage.removeItem(o.f), !0),
-				d = async (e, t, n, a, c, d) => {
-					const l = i();
-					if (l === o.a.Unsupported) return void d();
-					if (Object(r.a)()) {
-						const t = localStorage.getItem(o.h),
+				d = () => !!Object(o.a)() && (localStorage.removeItem(a.f), !0),
+				l = async (e, t, n, i, d, l) => {
+					const u = c();
+					if (u === a.a.Unsupported) return void l();
+					if (Object(o.a)()) {
+						const t = localStorage.getItem(a.h),
 							n = (new Date).getTime();
-						if (!e && t && parseInt(t) + o.i > n) return void d();
-						localStorage.setItem(o.h, n.toString())
+						if (!e && t && parseInt(t) + a.i > n) return void l();
+						localStorage.setItem(a.h, n.toString())
 					}
-					if (!t && l === o.a.Denied) return a(!1, !0), void d();
-					if (!t && l === o.a.Granted) return c(!1), void d();
-					if (!t && l === o.a.Closed) return void d();
-					let u = o.a.Default;
-					const m = navigator.userAgent;
-					switch (Object(s.b)(m) || Object(s.f)(m) ? function(e) {
-						return new Promise(t => setTimeout(t, e))
-					}(1800).then(() => {
-						u === o.a.Default && n()
-					}) : n(), u = await Notification.requestPermission()) {
+					if (!t && u === a.a.Denied) return i(!1, !0), void l();
+					if (!t && u === a.a.Granted) return d(!1), void l();
+					if (!t && u === a.a.Closed) return void l();
+					let m = a.a.Default;
+					const p = navigator.userAgent;
+					switch (Object(r.b)(p) || Object(r.f)(p) ? Object(s.a)(1800).then(() => {
+						m === a.a.Default && n()
+					}) : n(), m = await Notification.requestPermission()) {
 						case "granted":
-							c(!0);
+							d(!0);
 							break;
 						case "denied":
-							a(!0, !0);
+							i(!0, !0);
 							break;
 						case "default":
-							d();
+							l();
 							break;
 						default:
-							a(!0, !1), localStorage.setItem(o.f, o.g)
+							i(!0, !1), localStorage.setItem(a.f, a.g)
 					}
 				}
 		},
@@ -24172,4 +24171,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ee7a11d65092bcf2805e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.bde12ff6f3e0376c3146.js.map

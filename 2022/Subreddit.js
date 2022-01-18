@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.ba694f1037fc0210433c.js
-// Retrieved at 1/13/2022, 4:50:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.aff8dd3156cefa05da33.js
+// Retrieved at 1/18/2022, 11:20:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -104,53 +104,52 @@
 		"./src/lib/notifications/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return i
-			})), n.d(t, "c", (function() {
 				return c
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return d
+			})), n.d(t, "b", (function() {
+				return l
 			}));
-			var s = n("./src/lib/getParsedUserAgent/index.ts"),
-				r = n("./src/lib/localStorageAvailable/index.ts"),
-				a = n("./src/lib/notifications/constants.ts"),
-				o = n("./src/lib/notifications/featureFlags.ts");
+			var s = n("./src/lib/delay/index.ts"),
+				r = n("./src/lib/getParsedUserAgent/index.ts"),
+				a = n("./src/lib/localStorageAvailable/index.ts"),
+				o = n("./src/lib/notifications/constants.ts"),
+				i = n("./src/lib/notifications/featureFlags.ts");
 			n("./src/lib/serviceWorker/index.ts");
-			const i = () => {
-					if (Object(o.a)() !== a.c.NotificationsSupported) return a.a.Unsupported;
-					const e = Object(r.a)() && localStorage.getItem(a.f) === a.g;
-					return "granted" === Notification.permission ? a.a.Granted : "denied" === Notification.permission ? a.a.Denied : e ? a.a.Closed : a.a.Default
+			const c = () => {
+					if (Object(i.a)() !== o.c.NotificationsSupported) return o.a.Unsupported;
+					const e = Object(a.a)() && localStorage.getItem(o.f) === o.g;
+					return "granted" === Notification.permission ? o.a.Granted : "denied" === Notification.permission ? o.a.Denied : e ? o.a.Closed : o.a.Default
 				},
-				c = () => !!Object(r.a)() && (localStorage.removeItem(a.f), !0),
-				d = async (e, t, n, o, c, d) => {
-					const l = i();
-					if (l === a.a.Unsupported) return void d();
-					if (Object(r.a)()) {
-						const t = localStorage.getItem(a.h),
+				d = () => !!Object(a.a)() && (localStorage.removeItem(o.f), !0),
+				l = async (e, t, n, i, d, l) => {
+					const u = c();
+					if (u === o.a.Unsupported) return void l();
+					if (Object(a.a)()) {
+						const t = localStorage.getItem(o.h),
 							n = (new Date).getTime();
-						if (!e && t && parseInt(t) + a.i > n) return void d();
-						localStorage.setItem(a.h, n.toString())
+						if (!e && t && parseInt(t) + o.i > n) return void l();
+						localStorage.setItem(o.h, n.toString())
 					}
-					if (!t && l === a.a.Denied) return o(!1, !0), void d();
-					if (!t && l === a.a.Granted) return c(!1), void d();
-					if (!t && l === a.a.Closed) return void d();
-					let u = a.a.Default;
-					const m = navigator.userAgent;
-					switch (Object(s.b)(m) || Object(s.f)(m) ? function(e) {
-						return new Promise(t => setTimeout(t, e))
-					}(1800).then(() => {
-						u === a.a.Default && n()
-					}) : n(), u = await Notification.requestPermission()) {
+					if (!t && u === o.a.Denied) return i(!1, !0), void l();
+					if (!t && u === o.a.Granted) return d(!1), void l();
+					if (!t && u === o.a.Closed) return void l();
+					let m = o.a.Default;
+					const p = navigator.userAgent;
+					switch (Object(r.b)(p) || Object(r.f)(p) ? Object(s.a)(1800).then(() => {
+						m === o.a.Default && n()
+					}) : n(), m = await Notification.requestPermission()) {
 						case "granted":
-							c(!0);
+							d(!0);
 							break;
 						case "denied":
-							o(!0, !0);
+							i(!0, !0);
 							break;
 						case "default":
-							d();
+							l();
 							break;
 						default:
-							o(!0, !1), localStorage.setItem(a.f, a.g)
+							i(!0, !1), localStorage.setItem(o.f, o.g)
 					}
 				}
 		},
@@ -13974,4 +13973,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.ba694f1037fc0210433c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.aff8dd3156cefa05da33.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.44abf0e6beb921bc890a.js
-// Retrieved at 1/6/2022, 7:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.185d7efaddcb0e14ba69.js
+// Retrieved at 1/18/2022, 11:20:14 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -16935,53 +16935,52 @@
 		"./src/lib/notifications/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return o
-			})), n.d(t, "c", (function() {
 				return i
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return l
+			})), n.d(t, "b", (function() {
+				return d
 			}));
-			var a = n("./src/lib/getParsedUserAgent/index.ts"),
-				s = n("./src/lib/localStorageAvailable/index.ts"),
-				c = n("./src/lib/notifications/constants.ts"),
-				r = n("./src/lib/notifications/featureFlags.ts");
+			var a = n("./src/lib/delay/index.ts"),
+				s = n("./src/lib/getParsedUserAgent/index.ts"),
+				c = n("./src/lib/localStorageAvailable/index.ts"),
+				r = n("./src/lib/notifications/constants.ts"),
+				o = n("./src/lib/notifications/featureFlags.ts");
 			n("./src/lib/serviceWorker/index.ts");
-			const o = () => {
-					if (Object(r.a)() !== c.c.NotificationsSupported) return c.a.Unsupported;
-					const e = Object(s.a)() && localStorage.getItem(c.f) === c.g;
-					return "granted" === Notification.permission ? c.a.Granted : "denied" === Notification.permission ? c.a.Denied : e ? c.a.Closed : c.a.Default
+			const i = () => {
+					if (Object(o.a)() !== r.c.NotificationsSupported) return r.a.Unsupported;
+					const e = Object(c.a)() && localStorage.getItem(r.f) === r.g;
+					return "granted" === Notification.permission ? r.a.Granted : "denied" === Notification.permission ? r.a.Denied : e ? r.a.Closed : r.a.Default
 				},
-				i = () => !!Object(s.a)() && (localStorage.removeItem(c.f), !0),
-				l = async (e, t, n, r, i, l) => {
-					const d = o();
-					if (d === c.a.Unsupported) return void l();
-					if (Object(s.a)()) {
-						const t = localStorage.getItem(c.h),
+				l = () => !!Object(c.a)() && (localStorage.removeItem(r.f), !0),
+				d = async (e, t, n, o, l, d) => {
+					const u = i();
+					if (u === r.a.Unsupported) return void d();
+					if (Object(c.a)()) {
+						const t = localStorage.getItem(r.h),
 							n = (new Date).getTime();
-						if (!e && t && parseInt(t) + c.i > n) return void l();
-						localStorage.setItem(c.h, n.toString())
+						if (!e && t && parseInt(t) + r.i > n) return void d();
+						localStorage.setItem(r.h, n.toString())
 					}
-					if (!t && d === c.a.Denied) return r(!1, !0), void l();
-					if (!t && d === c.a.Granted) return i(!1), void l();
-					if (!t && d === c.a.Closed) return void l();
-					let u = c.a.Default;
-					const h = navigator.userAgent;
-					switch (Object(a.b)(h) || Object(a.f)(h) ? function(e) {
-						return new Promise(t => setTimeout(t, e))
-					}(1800).then(() => {
-						u === c.a.Default && n()
-					}) : n(), u = await Notification.requestPermission()) {
+					if (!t && u === r.a.Denied) return o(!1, !0), void d();
+					if (!t && u === r.a.Granted) return l(!1), void d();
+					if (!t && u === r.a.Closed) return void d();
+					let h = r.a.Default;
+					const m = navigator.userAgent;
+					switch (Object(s.b)(m) || Object(s.f)(m) ? Object(a.a)(1800).then(() => {
+						h === r.a.Default && n()
+					}) : n(), h = await Notification.requestPermission()) {
 						case "granted":
-							i(!0);
+							l(!0);
 							break;
 						case "denied":
-							r(!0, !0);
+							o(!0, !0);
 							break;
 						case "default":
-							l();
+							d();
 							break;
 						default:
-							r(!0, !1), localStorage.setItem(c.f, c.g)
+							o(!0, !1), localStorage.setItem(r.f, r.g)
 					}
 				}
 		},
@@ -17162,4 +17161,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.44abf0e6beb921bc890a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.185d7efaddcb0e14ba69.js.map
