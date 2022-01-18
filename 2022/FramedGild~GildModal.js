@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ddf3f7a8133aa36bc07b.js
-// Retrieved at 1/13/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ce3cd047b6768a5f3067.js
+// Retrieved at 1/18/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2406,7 +2406,7 @@
 			}) => {
 				const n = Object(Fe.a)(),
 					o = Object(K.b)(),
-					c = Object(a.e)(e => !r && Boolean(Object(M.h)(e)) && Object(Ue.v)(e)),
+					c = Object(a.e)(e => !r && Boolean(Object(M.h)(e)) && Object(Ue.t)(e)),
 					i = c ? qe._("Get free Coins with Premium", null, {
 						hk: "3fzsqq"
 					}) : Object(Le.a)(r || 0, {
@@ -3599,4 +3599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ddf3f7a8133aa36bc07b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ce3cd047b6768a5f3067.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.5950d251806f11323eec.js
-// Retrieved at 1/13/2022, 5:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.a02c468425d23d291e6d.js
+// Retrieved at 1/18/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -97,7 +97,7 @@
 				E = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.DataWrapper
 				}))),
-				O = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				f = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.Builder
 				})));
 			t.default = function() {
@@ -110,7 +110,7 @@
 						},
 						expiration: new Date(e.expires).getTime()
 					} : null, [e]),
-					v = Object(o.e)(e => i && Object(l.h)(e));
+					v = Object(o.e)(e => i && Object(l.f)(e));
 				return Object(r.useEffect)(() => {
 					a(!0)
 				}, []), e && t ? n.a.createElement("div", {
@@ -123,11 +123,11 @@
 					authHeaders: i,
 					config: b,
 					sendEvent: u.a
-				}, n.a.createElement(O, null))) : n.a.createElement(m.a, {
+				}, n.a.createElement(f, null))) : n.a.createElement(m.a, {
 					className: _.a.content
 				})) : null
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.5950d251806f11323eec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.a02c468425d23d291e6d.js.map

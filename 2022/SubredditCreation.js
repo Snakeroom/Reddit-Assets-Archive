@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.27173e2ec04e7dfdae67.js
-// Retrieved at 1/13/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.87cc7318e58a75ce793d.js
+// Retrieved at 1/18/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -331,8 +331,8 @@
 				}, a)))
 			}
 			var k = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				O = n("./src/reddit/controls/Typography/index.tsx"),
-				S = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				S = n("./src/reddit/controls/Typography/index.tsx"),
+				O = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
 				T = n("./src/reddit/icons/svgs/Circle/index.tsx"),
 				j = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
 				I = n("./node_modules/lodash/range.js"),
@@ -357,7 +357,7 @@
 			const G = Object(d.a)(h.a),
 				H = C.a.wrapped(T.a, "Circle", A.a),
 				V = C.a.h3("Label", A.a),
-				Y = C.a.wrapped(O.c, "Subtext", A.a),
+				Y = C.a.wrapped(S.c, "Subtext", A.a),
 				J = C.a.wrapped(u.a, "HoverTooltip", A.a),
 				Q = C.a.div("ControlContainer", A.a),
 				K = C.a.div("TextContainer", A.a),
@@ -387,7 +387,7 @@
 				Z = C.a.wrapped(q, "SubtextLink", A.a),
 				U = C.a.wrapped(j.a, "LinkIcon", A.a),
 				$ = C.a.button("LinkButton", A.a),
-				ee = C.a.wrapped(S.a, "ArrowRight", A.a),
+				ee = C.a.wrapped(O.a, "ArrowRight", A.a),
 				te = e => s.a.createElement(X, {
 					direction: e.direction,
 					disabled: e.disabled,
@@ -902,8 +902,8 @@
 				y = n("./src/reddit/controls/ErrorText/index.tsx"),
 				N = n("./src/reddit/controls/RadioInput/index.tsx"),
 				k = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				O = n("./src/reddit/controls/TextButton/index.tsx"),
-				S = n("./src/reddit/helpers/trackers/emailInvite.ts"),
+				S = n("./src/reddit/controls/TextButton/index.tsx"),
+				O = n("./src/reddit/helpers/trackers/emailInvite.ts"),
 				T = n("./src/reddit/helpers/trackers/screenview.ts"),
 				j = n("./src/reddit/helpers/trackers/subredditCreation.ts"),
 				I = n("./src/reddit/icons/svgs/Admin/index.tsx"),
@@ -1066,7 +1066,7 @@
 						const {
 							sendEvent: e
 						} = this.props;
-						e(Object(S.a)("community_creation")), this.setState({
+						e(Object(O.a)("community_creation")), this.setState({
 							showEmailInviteModal: !0
 						})
 					}, this.onCloseInviteViaEmailModal = () => {
@@ -1210,7 +1210,7 @@
 						className: Object(c.a)(Q.a.field, {
 							[Q.a.isCreatePending]: t
 						})
-					}, r.a.createElement(O.a, {
+					}, r.a.createElement(S.a, {
 						className: Q.a.textButton,
 						onClick: this.onInviteViaEmailClick
 					}, a.fbt._("Invite members via email", null, {
@@ -1879,11 +1879,11 @@
 			const r = e => {
 				const t = Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: a.Vc
+					experimentName: a.Sc
 				});
-				return !(!t || Object(a.mf)(t))
+				return !(!t || Object(a.jf)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.27173e2ec04e7dfdae67.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.87cc7318e58a75ce793d.js.map

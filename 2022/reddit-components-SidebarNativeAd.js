@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.d0035b47d6157aac51d1.js
-// Retrieved at 1/13/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.f9d58b497f704f0a4324.js
+// Retrieved at 1/18/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, s) {
@@ -241,13 +241,13 @@
 			}
 			const P = 8,
 				g = 1,
-				I = y.a.div("Container", C.a),
-				k = y.a.div("PostMetaWrapper", C.a),
+				k = y.a.div("Container", C.a),
+				I = y.a.div("PostMetaWrapper", C.a),
 				T = y.a.wrapped(p.c, "PostTitle", C.a),
 				j = y.a.div("FlatList", C.a),
 				N = y.a.div("FlatItem", C.a),
 				L = y.a.span("FlatListDotSpacer", C.a),
-				M = y.a.wrapped(I, "LinkContainer", C.a),
+				M = y.a.wrapped(k, "LinkContainer", C.a),
 				v = y.a.div("Content", C.a),
 				D = y.a.div("ThumbnailContainer", C.a),
 				A = Object(c.c)({
@@ -279,11 +279,11 @@
 					d = t;
 				return a && !a.media ? o.a.createElement(M, {
 					className: d
-				}, o.a.createElement(v, null, o.a.createElement(k, null, o.a.createElement(u.a, c)), B(a), a.source && o.a.createElement(b.a, {
+				}, o.a.createElement(v, null, o.a.createElement(I, null, o.a.createElement(u.a, c)), B(a), a.source && o.a.createElement(b.a, {
 					post: a
-				}), R(e)), G(e)) : o.a.createElement(I, {
+				}), R(e)), G(e)) : o.a.createElement(k, {
 					className: d
-				}, o.a.createElement(k, null, o.a.createElement(u.a, c)), B(a), F(e), R(e))
+				}, o.a.createElement(I, null, o.a.createElement(u.a, c)), B(a), F(e), R(e))
 			}));
 			const B = e => o.a.createElement(T, {
 					isCrosspost: !0,
@@ -558,8 +558,8 @@
 					post: S,
 					shouldShowSubscribeButton: P,
 					subredditOrProfile: g,
-					tooltipType: I
-				} = e, k = !!y, T = Object(f.a)();
+					tooltipType: k
+				} = e, I = !!y, T = Object(f.a)();
 				return n.a.createElement("div", {
 					className: O.a.metaContainer
 				}, !r && !S.isSponsored && g && n.a.createElement(a.a, {
@@ -589,13 +589,13 @@
 					className: O.a.postTopMeta,
 					flairStyleTemplate: t,
 					post: S,
-					tooltipType: I
+					tooltipType: k
 				}), n.a.createElement(c.a, {
 					displayText: g ? g.displayText : null,
 					inSubredditOrProfile: !!r,
 					post: S,
-					tooltipType: I
-				}), !k && n.a.createElement(o.a, {
+					tooltipType: k
+				}), !I && n.a.createElement(o.a, {
 					hideCta: s,
 					thing: S,
 					tooltipType: C ? d.c.Lightbox : void 0
@@ -657,8 +657,8 @@
 				S = s("./src/reddit/models/Media/index.ts"),
 				P = s("./src/reddit/models/Prediction/Tournament/index.ts"),
 				g = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				I = s("./src/lib/getShortenedLink.ts"),
-				k = s("./src/reddit/components/FlairWrapper/index.tsx"),
+				k = s("./src/lib/getShortenedLink.ts"),
+				I = s("./src/reddit/components/FlairWrapper/index.tsx"),
 				T = s("./node_modules/fbt/lib/FbtPublic.js"),
 				j = s("./src/lib/prettyPrintNumber/index.ts"),
 				N = s("./src/reddit/components/Poll/PollExpiry/index.tsx"),
@@ -785,7 +785,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: r
-					} = t, n = Object(a.d)(), i = Object(W.a)(), c = Object(V.a)(u.gd) === u.nd.Enabled, l = Object(a.e)(B.b), m = e => {
+					} = t, n = Object(a.d)(), i = Object(W.a)(), c = Object(V.a)(u.dd) === u.kd.Enabled, l = Object(a.e)(B.b), m = e => {
 						!l || t.media && Object(S.H)(t.media) || (e.preventDefault(), n(Object(f.ab)(Object(h.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(X, {
@@ -841,7 +841,7 @@
 						size: e.size,
 						titleColor: e.titleColor,
 						titleType: a
-					}, t && o.a.createElement(k.a, {
+					}, t && o.a.createElement(I.a, {
 						titleFlair: t,
 						nowrap: !0,
 						post: r,
@@ -863,7 +863,7 @@
 							postId: s.id,
 							source: s.source,
 							sourceElement: n
-						}, Object(I.a)(s), !s.isSponsored && o.a.createElement(C.a, {
+						}, Object(k.a)(s), !s.isSponsored && o.a.createElement(C.a, {
 							name: "external_link",
 							className: U.a.outboundLinkIcon
 						}))
@@ -874,7 +874,7 @@
 						postId: s.id,
 						source: s.source,
 						sourceElement: n
-					}, Object(I.a)(s), !s.isSponsored && o.a.createElement(C.a, {
+					}, Object(k.a)(s), !s.isSponsored && o.a.createElement(C.a, {
 						name: "external_link",
 						className: U.a.outboundLinkIcon
 					}));
@@ -898,11 +898,11 @@
 						poll: a,
 						post: i,
 						showNSFWSpoilerFlairsOnly: c
-					} = this.props, d = s === y.b.Left, m = Object(k.b)(i), u = c ? m.filter(e => e.type === y.f.Nsfw || e.type === y.f.Spoiler) : d ? m.filter(e => Object(x.q)(e.type)) : [], p = c ? [] : d ? m.filter(e => !Object(x.q)(e.type)) : m, b = !n && !r, _ = !t && u && u.length > 0 && b, E = !t && p && p.length > 0 && b;
+					} = this.props, d = s === y.b.Left, m = Object(I.b)(i), u = c ? m.filter(e => e.type === y.f.Nsfw || e.type === y.f.Spoiler) : d ? m.filter(e => Object(x.q)(e.type)) : [], p = c ? [] : d ? m.filter(e => !Object(x.q)(e.type)) : m, b = !n && !r, _ = !t && u && u.length > 0 && b, E = !t && p && p.length > 0 && b;
 					return o.a.createElement("div", {
 						className: Object(l.a)(U.a.Component, e, i.id),
 						ref: this.props.innerRef
-					}, !c && _ && o.a.createElement(k.a, {
+					}, !c && _ && o.a.createElement(I.a, {
 						isFlairFilter: !0,
 						titleFlair: u,
 						nowrap: !0,
@@ -913,7 +913,7 @@
 					})), a && o.a.createElement(A, {
 						className: U.a.pollMeta,
 						pollId: a.id
-					}), o.a.createElement(ee, this.props), E && o.a.createElement(k.a, {
+					}), o.a.createElement(ee, this.props), E && o.a.createElement(I.a, {
 						isFlairFilter: !0,
 						titleFlair: p,
 						nowrap: !0,
@@ -1000,8 +1000,8 @@
 				S = s("./src/reddit/helpers/styles/smartTextColor.ts"),
 				P = s("./src/reddit/helpers/truncateStringWithEllipsis.ts"),
 				g = s("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
-				I = s("./src/reddit/models/NewStructuredStyles/index.ts"),
-				k = s("./src/reddit/models/Theme/index.ts"),
+				k = s("./src/reddit/models/NewStructuredStyles/index.ts"),
+				I = s("./src/reddit/models/Theme/index.ts"),
 				T = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				j = s("./src/lib/constants/index.ts"),
 				N = s("./src/reddit/models/Media/index.ts"),
@@ -1051,14 +1051,14 @@
 				Y = e => Object(P.a)(e.title, 100),
 				X = e => {
 					if (e.post.isMediaOnly) return {};
-					const t = Object(S.a)(Object(y.a)(e), I.a.actionIcon, I.b.actionIcon);
+					const t = Object(S.a)(Object(y.a)(e), k.a.actionIcon, k.b.actionIcon);
 					return {
 						color: t,
 						fill: t
 					}
 				},
 				J = e => ({
-					background: Object(k.g)(Object(T.a)(e).body, null, null) || ""
+					background: Object(I.g)(Object(T.a)(e).body, null, null) || ""
 				});
 			class Z extends o.a.Component {
 				constructor() {
@@ -1497,4 +1497,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.d0035b47d6157aac51d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.f9d58b497f704f0a4324.js.map

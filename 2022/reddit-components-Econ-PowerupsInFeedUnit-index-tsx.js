@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1e7b7087bdefe4fb68c4.js
-// Retrieved at 1/13/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.6259febdf8393e46e885.js
+// Retrieved at 1/18/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -328,8 +328,8 @@
 				N = a("./src/reddit/components/Econ/PowerupsInFeedUnit/PostUnlock/CommunityGearUnit.m.less"),
 				I = a.n(N),
 				U = a("./src/higherOrderComponents/asModal/index.tsx"),
-				k = a("./src/lib/opener/index.ts"),
-				j = a("./src/reddit/actions/snoovatar.ts"),
+				j = a("./src/lib/opener/index.ts"),
+				k = a("./src/reddit/actions/snoovatar.ts"),
 				A = a("./src/reddit/actions/toaster.ts"),
 				M = a("./src/reddit/actions/urlRequested.ts"),
 				T = a("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
@@ -354,7 +354,7 @@
 					i = Object(n.e)(q.a),
 					[c, u] = Object(r.useState)(!1);
 				Object(r.useEffect)(() => {
-					a(Object(d.o)()), s(Object(j.c)())
+					a(Object(d.o)()), s(Object(k.c)())
 				}, [s, a]);
 				const _ = async () => s(Object(M.a)("/user/me", !0)), p = H._("Nice! Ready to update your avatar?", null, {
 					hk: "20KFjx"
@@ -380,9 +380,9 @@
 					className: G.a.legalTextContainer
 				}, o.a.createElement("span", null, m()), o.a.createElement("a", {
 					href: f,
-					target: k.d.BLANK,
+					target: j.d.BLANK,
 					className: G.a.learnMoreLink,
-					rel: k.c
+					rel: j.c
 				}, b()))), o.a.createElement("div", {
 					className: G.a.buttonsRow
 				}, o.a.createElement(P.t, {
@@ -402,7 +402,7 @@
 							c = Object(S.a)(n, [B.d[e]]).map(e => e.id);
 						try {
 							u(!0), a(Object(F.e)("powerups_post_upsell"));
-							const e = await s(Object(j.e)(c, o, {
+							const e = await s(Object(k.e)(c, o, {
 								set_avatar_to_profile: !0,
 								source: "powerups_post_upsell"
 							}));
@@ -574,7 +574,7 @@
 								subredditId: t
 							}),
 							d = Object(b.w)(e) && Object(m.s)(e);
-						return n || r ? i && o && Object(_.k)(e) ? s.UNLOCKED_COMMUNITY_GEAR : d ? s.UNLOCKED_UNAPPLIED_FROM_PREMIUM : s.HIDDEN : c && o && Object(_.k)(e) ? s.POWERUPS_COMMUNITY_GEAR : s.POWERUPS_DEFAULT
+						return n || r ? i && o && Object(_.i)(e) ? s.UNLOCKED_COMMUNITY_GEAR : d ? s.UNLOCKED_UNAPPLIED_FROM_PREMIUM : s.HIDDEN : c && o && Object(_.i)(e) ? s.POWERUPS_COMMUNITY_GEAR : s.POWERUPS_DEFAULT
 					})(e, {
 						subredditId: v.id,
 						subredditName: v.name
@@ -695,9 +695,9 @@
 			})), a.d(t, "u", (function() {
 				return U
 			})), a.d(t, "r", (function() {
-				return k
-			})), a.d(t, "a", (function() {
 				return j
+			})), a.d(t, "a", (function() {
+				return k
 			})), a.d(t, "s", (function() {
 				return A
 			})), a.d(t, "c", (function() {
@@ -739,8 +739,8 @@
 				N = r.a.div("ModalMain", u.a),
 				I = r.a.textarea("TextArea", u.a),
 				U = r.a.wrapped(i.l, "WarningButton", u.a),
-				k = r.a.wrapped(i.l, "PrimaryButton", u.a),
-				j = r.a.wrapped(i.o, "CancelButton", u.a),
+				j = r.a.wrapped(i.l, "PrimaryButton", u.a),
+				k = r.a.wrapped(i.o, "CancelButton", u.a),
 				A = r.a.wrapped(i.r, "RemoveButton", u.a),
 				M = ({
 					className: e,
@@ -1388,7 +1388,7 @@
 					var t, a;
 					return !!(null === (a = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === a ? void 0 : a.marketing)
 				},
-				c = Object(s.a)(n.d, e => {
+				c = Object(s.a)(n.b, e => {
 					var t, a, s;
 					const r = null === (s = null === (a = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === a ? void 0 : a.marketing) || void 0 === s ? void 0 : s.marketingEvent;
 					return (null == r ? void 0 : r.active) ? (null == r ? void 0 : r.assetUrls) && (null == r ? void 0 : r.assetUrls[0]) : null
@@ -1396,4 +1396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1e7b7087bdefe4fb68c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.6259febdf8393e46e885.js.map
