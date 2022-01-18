@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal.cdd73e1bbb9f6e164fc9.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal.529a33a7153c5b77e090.js
+// Retrieved at 1/18/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, n) {
@@ -88,10 +88,10 @@
 					}),
 					modalText: l.a.createElement(l.a.Fragment, null, l.a.createElement("h3", null, o.fbt._("Hello, approved user! In order to create Predictions, you must first ask the Mods to start a Tournament.", null, {
 						hk: "uGQT6"
-					})), l.a.createElement("br", null), l.a.createElement("p", null, o.fbt._("{tip} Approved users have the ablity to create and resolved Predictions, but only Mods can create and end Tournaments.", [o.fbt._param("tip", l.a.createElement("span", {
+					})), l.a.createElement("br", null), l.a.createElement("p", null, o.fbt._("{tip} Approved users have the ability to create and resolve Predictions, but only Mods can create and end Tournaments.", [o.fbt._param("tip", l.a.createElement("span", {
 						className: x.a.tip
 					}, "TIP:"))], {
-						hk: "1lZMaH"
+						hk: "4b17d8"
 					}))),
 					hideCancelButton: !0
 				})
@@ -99,4 +99,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal.cdd73e1bbb9f6e164fc9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal.529a33a7153c5b77e090.js.map
