@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.79fe3dd3d6dca5345a66.js
-// Retrieved at 1/13/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.6f8e6acc4e6afd24615f.js
+// Retrieved at 1/18/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -488,9 +488,9 @@
 		"./src/reddit/actions/economics/powerups/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return h
+				return b
 			})), n.d(t, "a", (function() {
-				return x
+				return E
 			}));
 			var s = n("./node_modules/uuid/v4.js"),
 				a = n.n(s),
@@ -499,54 +499,64 @@
 				i = n("./src/lib/uploadToS3/index.ts"),
 				l = n("./src/reddit/endpoints/gold/powerups/index.ts"),
 				d = n("./src/reddit/helpers/media/index.ts"),
-				c = n("./src/reddit/actions/economics/powerups/constants.ts"),
-				m = n("./src/reddit/actions/economics/powerups/helpers.ts");
-			const u = Object(o.a)(c.b),
-				p = Object(o.a)(c.c),
-				h = ({
+				c = n("./src/reddit/selectors/user.ts"),
+				m = n("./src/reddit/actions/economics/powerups/constants.ts"),
+				u = n("./src/reddit/actions/economics/powerups/helpers.ts");
+			const p = Object(o.a)(m.b),
+				h = Object(o.a)(m.c),
+				b = ({
 					subredditId: e,
 					file: t
 				}) => async (n, s) => {
+					var o;
 					try {
-						const s = await Object(d.g)(t);
-						if (!s) throw new Error("Cannot determine file mimeType");
+						const r = s(),
+							i = null === (o = Object(c.k)(r)) || void 0 === o ? void 0 : o.id;
+						if (!i) throw new Error("Failed to get current user during emoji upload");
+						const l = await Object(d.g)(t);
+						if (!l) throw new Error("Cannot determine file mimeType");
 						const {
-							file: o,
-							width: r,
-							height: i
-						} = await Object(d.n)(t, c.a), l = await n(b({
+							file: u,
+							width: p,
+							height: h
+						} = await Object(d.n)(t, m.a), b = await n(g({
 							subredditId: e,
-							mimeType: s
-						})), m = await f({
-							file: o,
-							s3UploadLease: l
+							mimeType: l
+						}, {
+							userId: i
+						})), E = await x({
+							file: u,
+							s3UploadLease: b
+						}, {
+							subredditId: e,
+							userId: i
 						});
-						return await n(g({
+						return await n(f({
 							subredditId: e,
-							mimeType: s,
-							url: m,
-							x: r,
-							y: i,
+							mimeType: l,
+							url: E,
+							x: p,
+							y: h,
 							nonce: a()()
 						}))
-					} catch (o) {
-						throw r.c.captureException(o), o
+					} catch (i) {
+						throw r.c.captureException(i), i
 					}
-				}, b = e => async (t, n, {
-					gqlContext: s
+				}, g = (e, t) => async (n, s, {
+					gqlContext: a
 				}) => {
-					const a = await Object(l.d)(s(), {
+					const o = await Object(l.d)(a(), {
 						input: e
 					});
-					if (a.error || !a.ok) throw new Error("Failed to get emoji upload lease");
+					if (o.error || !o.ok) throw new Error(`Failed to get emoji upload lease. subredditId: ${e.subredditId}; userId: ${t.userId}`);
 					const {
-						ok: o,
-						errors: r,
-						s3UploadLease: i
-					} = a.body.data.generateCustomEmojiUploadLease;
-					if (!o || r) throw new Error(`Failed to get emoji upload lease: ${Object(m.a)(r)}`);
-					return i
-				}, g = e => async (t, n, {
+						ok: r,
+						errors: i,
+						s3UploadLease: d
+					} = o.body.data.generateCustomEmojiUploadLease;
+					if (!r || i) throw new Error(`Failed to get emoji upload lease: ${Object(u.a)(i)}. subredditId: ${e.subredditId}; userId: ${t.userId}`);
+					return d
+				}, f = e => async (t, n, {
 					gqlContext: s
 				}) => {
 					const a = await Object(l.a)(s(), {
@@ -558,25 +568,28 @@
 						errors: r,
 						emoji: i
 					} = a.body.data.createCustomEmoji;
-					if (!o || r) throw new Error(`Failed to create custom emoji: ${Object(m.a)(r)}`);
+					if (!o || r) throw new Error(`Failed to create custom emoji: ${Object(u.a)(r)}`);
 					const c = i.emojiIcon.url;
 					await Object(d.m)(c);
 					const {
-						subredditId: p
+						subredditId: m
 					} = e;
-					return t(u({
-						subredditId: p,
+					return t(p({
+						subredditId: m,
 						emoji: i
 					})), i
-				}, f = async ({
+				}, x = async ({
 					file: e,
 					s3UploadLease: t
+				}, {
+					subredditId: n,
+					userId: s
 				}) => {
-					const n = await Object(i.a)(e, t);
-					if (!n.ok) throw new Error("Failed to upload custom emoji to S3");
-					const s = n.body.PostResponse;
-					return `https://${s.Bucket}.s3.amazonaws.com/${s.Key}`
-				}, x = ({
+					const a = await Object(i.a)(e, t);
+					if (!a.ok) throw new Error(`Failed to upload custom emoji to S3. subredditId: ${n}; userId: ${s}`);
+					const o = a.body.PostResponse;
+					return `https://${o.Bucket}.s3.amazonaws.com/${o.Key}`
+				}, E = ({
 					emojiId: e,
 					subredditId: t
 				}) => async (n, s, {
@@ -596,10 +609,10 @@
 						errors: d
 					} = o.body.data.deleteCustomEmoji;
 					if (!i || d) {
-						const e = new Error(`Failed to delete custom emoji: ${Object(m.a)(d)}`);
+						const e = new Error(`Failed to delete custom emoji: ${Object(u.a)(d)}`);
 						throw r.c.captureException(e), e
 					}
-					return n(p({
+					return n(h({
 						subredditId: t,
 						emojiId: e
 					})), i
@@ -21980,4 +21993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.79fe3dd3d6dca5345a66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.6f8e6acc4e6afd24615f.js.map
