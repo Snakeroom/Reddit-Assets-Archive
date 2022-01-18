@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.85741671a04d89257738.js
-// Retrieved at 1/6/2022, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.a2e4baf76b3a97e68585.js
+// Retrieved at 1/18/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -77,9 +77,9 @@
 				i = n("./node_modules/lodash/debounce.js"),
 				o = n.n(i),
 				r = n("./node_modules/lodash/isEmpty.js"),
-				a = n.n(r),
-				l = n("./node_modules/react/index.js"),
-				d = n.n(l),
+				l = n.n(r),
+				a = n("./node_modules/react/index.js"),
+				d = n.n(a),
 				c = n("./node_modules/react-redux/es/index.js"),
 				m = n("./node_modules/reselect/es/index.js"),
 				u = n("./src/reddit/actions/contentControls/index.ts"),
@@ -128,17 +128,17 @@
 					subreddit: R.jb(t),
 					userSubreddit: R.sb(t)
 				});
-			var B = n("./src/reddit/selectors/activeModalId.ts"),
-				T = n("./src/reddit/selectors/contentControls.ts"),
+			var T = n("./src/reddit/selectors/activeModalId.ts"),
+				B = n("./src/reddit/selectors/contentControls.ts"),
 				L = n("./src/reddit/selectors/platform.ts"),
 				F = n("./src/config.ts"),
 				N = n("./src/reddit/models/HatefulContentFilters/index.ts");
 			const P = `${F.a.redditModHelpUrl}/hc/en-us/articles/360010322091`,
 				M = 2,
-				D = 300,
-				O = 400,
-				I = 90,
-				j = 1e5,
+				O = 300,
+				D = 400,
+				j = 90,
+				I = 1e5,
 				A = 15,
 				H = 40,
 				W = 5,
@@ -210,29 +210,29 @@
 					}
 				};
 			var G = n("./node_modules/lodash/times.js"),
-				K = n.n(G),
-				V = n("./src/lib/classNames/index.ts"),
+				V = n.n(G),
+				K = n("./src/lib/classNames/index.ts"),
 				J = n("./src/reddit/helpers/styles/mixins/loading.ts"),
 				Z = n("./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less"),
 				z = n.n(Z);
 			var Q = ({
 					isLoading: e
-				}) => l.createElement("div", {
-					className: Object(V.a)(z.a.container, Object(J.a)({
+				}) => a.createElement("div", {
+					className: Object(K.a)(z.a.container, Object(J.a)({
 						isLoading: !1
 					}))
-				}, K()(3).map(t => l.createElement("div", {
+				}, V()(3).map(t => a.createElement("div", {
 					key: t,
 					className: z.a.section
-				}, l.createElement("div", {
-					className: Object(V.a)(z.a.sectionTitle, Object(J.b)({
+				}, a.createElement("div", {
+					className: Object(K.a)(z.a.sectionTitle, Object(J.b)({
 						isLoading: e
 					}))
-				}), l.createElement("div", {
+				}), a.createElement("div", {
 					className: z.a.line
-				}), K()(2).map(t => l.createElement("div", {
+				}), V()(2).map(t => a.createElement("div", {
 					key: t,
-					className: Object(V.a)(z.a.sectionBodyRow, Object(J.b)({
+					className: Object(K.a)(z.a.sectionBodyRow, Object(J.b)({
 						isLoading: e
 					}))
 				}))))),
@@ -246,18 +246,18 @@
 				ie = n.n(se);
 			const oe = e => e.preventDefault();
 			var re = e => d.a.createElement("div", {
-					className: Object(V.a)(e.className, ie.a.container)
+					className: Object(K.a)(e.className, ie.a.container)
 				}, d.a.createElement("label", {
 					className: ie.a.label,
 					onClick: oe
 				}, d.a.createElement("div", {
 					className: ie.a.labelText
 				}, e.label), e.children)),
-				ae = (e, t, n) => {
+				le = (e, t, n) => {
 					let s = Math.abs(parseInt(e, 10));
 					return Number.isInteger(s) ? (void 0 !== t && s < t && (s = t), void 0 !== n && s > n && (s = n), s) : null
 				};
-			const le = e => null !== e ? e.toString() : "",
+			const ae = e => null !== e ? e.toString() : "",
 				de = e => e.map(e => e.trim().toLowerCase()).filter(Boolean);
 			var ce = e => {
 					const {
@@ -293,14 +293,14 @@
 							max: s,
 							minLimit: i,
 							maxLimit: o
-						} = this.props, r = Math.min(i, 1), a = ae(e.target.value, r, o), l = {
-							min: "min" === t ? a : n,
-							max: "max" === t ? a : s
+						} = this.props, r = Math.min(i, 1), l = le(e.target.value, r, o), a = {
+							min: "min" === t ? l : n,
+							max: "max" === t ? l : s
 						};
 						this.props.onChange({
-							...l,
+							...a,
 							clientErrors: ce({
-								...l,
+								...a,
 								maxLimit: o,
 								minLimit: i
 							})
@@ -310,7 +310,7 @@
 							min: e,
 							max: t
 						} = this.props, n = this.minInputRef.current, s = this.maxInputRef.current;
-						n.value = le(e), s.value = le(t)
+						n.value = ae(e), s.value = ae(t)
 					}
 				}
 				render() {
@@ -320,13 +320,13 @@
 						maxLimit: n,
 						min: i,
 						minLimit: o
-					} = this.props, r = e.map(e => e.message), a = e.some(e => "both" === e.field), l = a || e.some(e => "min" === e.field), c = a || e.some(e => "max" === e.field);
+					} = this.props, r = e.map(e => e.message), l = e.some(e => "both" === e.field), a = l || e.some(e => "min" === e.field), c = l || e.some(e => "max" === e.field);
 					return d.a.createElement("div", {
 						onBlur: this.onBlur
 					}, d.a.createElement("div", null, d.a.createElement(ee.b, {
 						className: ue.a.minInput,
 						inputRef: this.minInputRef,
-						isInvalid: l,
+						isInvalid: a,
 						label: s.fbt._("min", null, {
 							hk: "1OxOYM"
 						}),
@@ -334,7 +334,7 @@
 						min: o,
 						onChange: this.onMinChange,
 						type: "number",
-						value: le(i)
+						value: ae(i)
 					}), d.a.createElement(ee.b, {
 						className: ue.a.maxInput,
 						inputRef: this.maxInputRef,
@@ -346,7 +346,7 @@
 						min: o,
 						onChange: this.onMaxChange,
 						type: "number",
-						value: le(t)
+						value: ae(t)
 					})), d.a.createElement($.a, {
 						className: ue.a.errorMessages,
 						messages: r
@@ -525,7 +525,7 @@
 						min: e.titleLength.min,
 						max: e.titleLength.max,
 						minLimit: M,
-						maxLimit: D,
+						maxLimit: O,
 						errors: e.titleLength.clientErrors
 					})), d.a.createElement(xe, {
 						on: e.titleRegexes.enabled,
@@ -586,9 +586,9 @@
 				_e = n("./src/reddit/hooks/useExperimentVariant.ts"),
 				qe = n("./src/reddit/hooks/useTracking.ts"),
 				we = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/lib/memoizeByReference/index.ts")),
-				Be = n("./src/reddit/components/MultiOptionSelect/index.tsx"),
-				Te = n("./src/reddit/components/ModHub/ContentControls/MultiStringsInput/index.m.less"),
-				Le = n.n(Te);
+				Te = n("./src/reddit/components/MultiOptionSelect/index.tsx"),
+				Be = n("./src/reddit/components/ModHub/ContentControls/MultiStringsInput/index.m.less"),
+				Le = n.n(Be);
 			class Fe extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -612,7 +612,7 @@
 				render() {
 					const e = this.getOptions(this.props.strings),
 						t = e.length < this.getMaxWords();
-					return d.a.createElement(d.a.Fragment, null, d.a.createElement(Be.a, {
+					return d.a.createElement(d.a.Fragment, null, d.a.createElement(Te.a, {
 						className: Le.a.control,
 						addText: s.fbt._("Add", null, {
 							hk: "2wi3d4"
@@ -637,19 +637,19 @@
 			var Ne = n("./node_modules/lodash/clamp.js"),
 				Pe = n.n(Ne),
 				Me = n("./src/reddit/controls/DiscreteSlideSelector/Bars/index.m.less"),
-				De = n.n(Me);
+				Oe = n.n(Me);
 
-			function Oe(e) {
+			function De(e) {
 				const t = Array.from({
 					length: e.optionColors.length - 1
 				});
 				return d.a.createElement("div", {
-					className: Object(V.a)(De.a.container, e.className),
+					className: Object(K.a)(Oe.a.container, e.className),
 					style: {
 						gridTemplateColumns: `repeat(${t.length}, 1fr)`
 					}
 				}, t.map((t, n) => d.a.createElement("div", {
-					className: De.a.segment,
+					className: Oe.a.segment,
 					key: n,
 					style: {
 						backgroundColor: n < e.currentStop ? e.optionColors[e.currentStop] : void 0
@@ -657,22 +657,22 @@
 				})))
 			}
 
-			function Ie(e) {
+			function je(e) {
 				return ["0.5fr", ...Array.from({
 					length: e - 2
 				}).map(e => "1fr"), "0.5fr"].join(" ")
 			}
-			var je = n("./src/reddit/controls/DiscreteSlideSelector/Labels/index.m.less"),
-				Ae = n.n(je);
+			var Ie = n("./src/reddit/controls/DiscreteSlideSelector/Labels/index.m.less"),
+				Ae = n.n(Ie);
 
 			function He(e) {
 				return d.a.createElement("div", {
-					className: Object(V.a)(Ae.a.container, e.className),
+					className: Object(K.a)(Ae.a.container, e.className),
 					style: {
-						gridTemplateColumns: Ie(e.options.length)
+						gridTemplateColumns: je(e.options.length)
 					}
 				}, e.options.map(t => d.a.createElement("div", {
-					className: Object(V.a)(Ae.a.label, {
+					className: Object(K.a)(Ae.a.label, {
 						[Ae.a.labelSelected]: t.value === e.selected
 					}),
 					key: t.label,
@@ -684,18 +684,18 @@
 			var We = n("./node_modules/lodash/throttle.js"),
 				Ue = n.n(We),
 				Ge = n("./src/reddit/controls/DiscreteSlideSelector/ThumbRail/index.m.less"),
-				Ke = n.n(Ge);
+				Ve = n.n(Ge);
 
-			function Ve(e, t) {
+			function Ke(e, t) {
 				return 0 === e ? 0 : e === t - 1 ? -16 : -8
 			}
 
 			function Je(e) {
 				const t = d.a.useRef(!1);
 				return d.a.createElement("div", {
-					className: Object(V.a)(Ke.a.container, e.className),
+					className: Object(K.a)(Ve.a.container, e.className),
 					style: {
-						gridTemplateColumns: Ie(e.numStops)
+						gridTemplateColumns: je(e.numStops)
 					},
 					onMouseUp: e => {
 						t.current = !1
@@ -706,17 +706,17 @@
 				}, Array.from({
 					length: e.numStops
 				}).map((n, s) => d.a.createElement("div", {
-					className: Ke.a.clickArea,
+					className: Ve.a.clickArea,
 					key: s,
 					onClick: () => e.onChange(s),
 					onMouseEnter: Ue()(() => {
 						t.current && e.onChange(s)
 					}, 16)
 				})), d.a.createElement("div", {
-					className: Ke.a.thumb,
+					className: Ve.a.thumb,
 					style: {
 						left: (n = e.currentStop, s = e.numStops, `${n/(s-1)*100}%`),
-						marginLeft: Ve(e.currentStop, e.numStops)
+						marginLeft: Ke(e.currentStop, e.numStops)
 					},
 					onMouseDown: e => {
 						e.stopPropagation, t.current = !0
@@ -730,10 +730,10 @@
 			function Qe(e) {
 				const t = Pe()(e.options.findIndex(t => t.value === e.value), 0, e.options.length - 1);
 				return d.a.createElement("div", {
-					className: Object(V.a)(ze.a.container, e.className)
+					className: Object(K.a)(ze.a.container, e.className)
 				}, d.a.createElement("div", {
 					className: ze.a.barContainer
-				}, d.a.createElement(Oe, {
+				}, d.a.createElement(De, {
 					className: ze.a.bars,
 					currentStop: t,
 					optionColors: e.options.map(e => e.color)
@@ -787,7 +787,7 @@
 
 			function nt(e) {
 				return d.a.createElement("span", {
-					className: Object(V.a)($e.a.label, e.className),
+					className: Object(K.a)($e.a.label, e.className),
 					style: {
 						color: tt(e.level)
 					}
@@ -838,8 +838,8 @@
 						})
 					}
 				}],
-				at = n("./src/reddit/components/ModHub/ContentControls/FormSections/HatefulContentFilters/index.m.less"),
-				lt = n.n(at);
+				lt = n("./src/reddit/components/ModHub/ContentControls/FormSections/HatefulContentFilters/index.m.less"),
+				at = n.n(lt);
 
 			function dt(e) {
 				const {
@@ -847,11 +847,11 @@
 					onChange: n
 				} = e, i = "enabled" === Object(_e.a)("automated_reporting_wordlist"), o = Object(qe.a)();
 				return d.a.createElement("fieldset", null, d.a.createElement("legend", {
-					className: lt.a.title
+					className: at.a.title
 				}, s.fbt._("Automated Filtering", null, {
 					hk: "18gDSg"
 				})), i && d.a.createElement(d.a.Fragment, null, d.a.createElement("div", {
-					className: lt.a.description,
+					className: at.a.description,
 					key: "desc"
 				}, s.fbt._("Choose the content and keywords your community doesn’t allow. Posts and comments that violate the requirements you set will be automatically removed and reported.", null, {
 					hk: "2jHN3G"
@@ -911,11 +911,11 @@
 						})))
 					}
 				}))), d.a.createElement("div", {
-					className: lt.a.options
+					className: at.a.options
 				}, rt.map(e => {
 					const s = t.hatefulContentFilters[e.name];
 					return d.a.createElement(ot, {
-						className: lt.a.filter,
+						className: at.a.filter,
 						key: e.name,
 						currentLevel: s,
 						name: e.name,
@@ -1011,7 +1011,7 @@
 				wt = e => e.enabled && !e.guidelineText.trim() ? [s.fbt._("Guideline text cannot be empty", null, {
 					hk: "4pncO7"
 				})] : [],
-				Bt = e => {
+				Tt = e => {
 					const t = vt(e);
 					return t.guidelines.clientErrors = wt(t.guidelines), t.linkDomains.clientErrors = ft(t.linkDomains.domainsText), t.titleLength.clientErrors = (({
 						min: e,
@@ -1020,7 +1020,7 @@
 						min: e,
 						max: t,
 						minLimit: M,
-						maxLimit: D
+						maxLimit: O
 					}))(t.titleLength), t.bodyBlacklistedStrings.clientErrors = Rt(t), t.bodyRequiredStrings.clientErrors = Et(t), t.titleBlacklistedStrings.clientErrors = (e => {
 						const t = St(e);
 						return [...Ct(t.requiredStrings, t.blacklistedStrings), ...kt(t.blacklistedStrings, t.maxTitleLength)]
@@ -1029,10 +1029,10 @@
 						return [...Ct(t.requiredStrings, t.blacklistedStrings), ...kt(t.requiredStrings, t.maxTitleLength)]
 					})(t), t
 				},
-				Tt = e => Object.keys(e).some(t => {
+				Bt = e => Object.keys(e).some(t => {
 					if ("hatefulContentFilters" === t) return !1;
 					const n = e[t];
-					return n.enabled && !(a()(n.clientErrors) && a()(n.serverErrors))
+					return n.enabled && !(l()(n.clientErrors) && l()(n.serverErrors))
 				});
 			class Lt extends d.a.Component {
 				constructor() {
@@ -1196,7 +1196,7 @@
 					}, this.onRepostFrequencyChange = e => {
 						const {
 							formState: t
-						} = this.props, n = ae(e.target.value, 1, I);
+						} = this.props, n = le(e.target.value, 1, j);
 						this.props.onChange({
 							repostFrequency: {
 								...t.repostFrequency,
@@ -1230,7 +1230,7 @@
 					}, d.a.createElement("textarea", {
 						"aria-invalid": !!e.guidelines.clientErrors.length,
 						className: fe.a.textarea,
-						maxLength: O,
+						maxLength: D,
 						onChange: this.onGuidelineTextChange,
 						placeholder: s.fbt._("Example: Only make post about dogs", null, {
 							hk: "3ZbLuW"
@@ -1241,7 +1241,7 @@
 						messages: e.guidelines.clientErrors
 					}) : d.a.createElement(ct.a, {
 						className: fe.a.characterCountdown,
-						maxChars: O,
+						maxChars: D,
 						text: e.guidelines.guidelineText
 					})), d.a.createElement(xe, {
 						on: e.titleRequiredStrings.enabled,
@@ -1349,7 +1349,7 @@
 					}, d.a.createElement("textarea", {
 						"aria-invalid": !!n.length,
 						className: fe.a.domainsTextarea,
-						maxLength: j,
+						maxLength: I,
 						onBlur: this.onLinkDomainsBlur,
 						onChange: this.onLinkDomainsTextChange,
 						placeholder: s.fbt._("Example: website.com", null, {
@@ -1375,11 +1375,11 @@
 						label: s.fbt._("number of days", null, {
 							hk: "1sPFop"
 						}),
-						max: I,
+						max: j,
 						min: 1,
 						onChange: this.onRepostFrequencyChange,
 						type: "number",
-						value: le(e.repostFrequency.days)
+						value: ae(e.repostFrequency.days)
 					}))
 				}
 			}
@@ -1407,8 +1407,8 @@
 						bodyRestrictionPolicy: i,
 						domainBlacklist: o,
 						domainWhitelist: r,
-						guidelinesText: a,
-						isFlairRequired: l,
+						guidelinesText: l,
+						isFlairRequired: a,
 						linkRepostAge: d,
 						linkRestrictionPolicy: c,
 						titleBlacklistedStrings: m,
@@ -1421,8 +1421,8 @@
 						...U,
 						hatefulContentFilters: e.hatefulContentFilters,
 						guidelines: {
-							enabled: !(!a || !a.trim()),
-							guidelineText: a || "",
+							enabled: !(!l || !l.trim()),
+							guidelineText: l || "",
 							clientErrors: []
 						},
 						titleRequiredStrings: {
@@ -1479,11 +1479,11 @@
 							days: d
 						},
 						flairRequirement: {
-							enabled: l
+							enabled: a
 						}
 					}
 				};
-			const Dt = {
+			const Ot = {
 					bodyBlacklistedStrings: [],
 					bodyRegexes: [],
 					bodyRequiredStrings: [],
@@ -1500,38 +1500,38 @@
 					titleTextMaxLength: null,
 					titleTextMinLength: null
 				},
-				Ot = e => e.filter(e => !!e);
-			var It = e => {
+				Dt = e => e.filter(e => !!e);
+			var jt = e => {
 					const t = {
-							...Dt,
+							...Ot,
 							bodyRestrictionPolicy: e.bodyRequirement.restrictionPolicy,
 							guidelinesText: e.guidelines.enabled ? e.guidelines.guidelineText : null,
 							isFlairRequired: e.flairRequirement.enabled,
 							linkRepostAge: e.repostFrequency.enabled ? e.repostFrequency.days : null,
 							linkRestrictionPolicy: e.linkDomains.enabled ? e.linkDomains.restrictionPolicy : E.b.None,
 							titleBlacklistedStrings: e.titleBlacklistedStrings.enabled ? e.titleBlacklistedStrings.strings : [],
-							titleRegexes: e.titleRegexes.enabled ? Ot(e.titleRegexes.regexes) : [],
+							titleRegexes: e.titleRegexes.enabled ? Dt(e.titleRegexes.regexes) : [],
 							titleRequiredStrings: e.titleRequiredStrings.enabled ? e.titleRequiredStrings.strings : [],
 							titleTextMaxLength: e.titleLength.enabled ? e.titleLength.max : null,
 							titleTextMinLength: e.titleLength.enabled ? e.titleLength.min : null
 						},
 						n = e.bodyRequirement.restrictionPolicy !== E.a.NotAllowed,
 						s = e.bodyRequirement.restrictionPolicy === E.a.Required;
-					if (n && (t.bodyBlacklistedStrings = e.bodyBlacklistedStrings.enabled ? e.bodyBlacklistedStrings.strings : [], t.bodyRequiredStrings = s && e.bodyRequiredStrings.enabled ? e.bodyRequiredStrings.strings : [], t.bodyRegexes = e.bodyRegexes.enabled ? Ot(e.bodyRegexes.regexes) : []), e.linkDomains.enabled) {
+					if (n && (t.bodyBlacklistedStrings = e.bodyBlacklistedStrings.enabled ? e.bodyBlacklistedStrings.strings : [], t.bodyRequiredStrings = s && e.bodyRequiredStrings.enabled ? e.bodyRequiredStrings.strings : [], t.bodyRegexes = e.bodyRegexes.enabled ? Dt(e.bodyRegexes.regexes) : []), e.linkDomains.enabled) {
 						const n = mt(e.linkDomains.domainsText);
 						e.linkDomains.restrictionPolicy === E.b.Whitelist ? t.domainWhitelist = n : e.linkDomains.restrictionPolicy === E.b.Blacklist && (t.domainBlacklist = n)
 					}
 					return t
 				},
-				jt = n("./node_modules/lodash/isEqual.js"),
-				At = n.n(jt),
+				It = n("./node_modules/lodash/isEqual.js"),
+				At = n.n(It),
 				Ht = (e, t) => {
 					if (At()(e, t)) return {
 						hatefulContentFilters: {},
 						postRequirements: {}
 					};
-					const n = It(e),
-						s = It(t),
+					const n = jt(e),
+						s = jt(t),
 						i = S()(n, (e, t) => At()(e, s[t])),
 						o = {};
 					return Object.keys(t.hatefulContentFilters).forEach(n => {
@@ -1547,16 +1547,16 @@
 				Ut = 150,
 				Gt = Object(m.c)({
 					allowNavigationCallback: L.a,
-					isDiscardModalOpen: Object(B.b)(Wt),
-					isLoading: T.a,
-					contentControls: T.b
+					isDiscardModalOpen: Object(T.b)(Wt),
+					isLoading: B.a,
+					contentControls: B.b
 				}),
-				Kt = Object(c.b)(Gt, (e, t) => ({
+				Vt = Object(c.b)(Gt, (e, t) => ({
 					closeAllModals: () => e(Object(h.f)()),
 					onSave: n => e(Object(u.b)(t.subredditName, n)),
 					toggleModal: t => e(Object(h.i)(t))
 				}));
-			class Vt extends d.a.Component {
+			class Kt extends d.a.Component {
 				constructor(e) {
 					super(e), this.formBodyRef = d.a.createRef(), this.isUnmounted = !1, this.resetPendingNavigation = () => {
 						this.props.allowNavigationCallback && this.props.allowNavigationCallback(!1)
@@ -1564,37 +1564,47 @@
 						this.props.allowNavigationCallback && this.props.allowNavigationCallback(!0)
 					}, this.saveFormState = async () => {
 						const {
-							contentControls: e
+							contentControls: e,
+							sendEvent: t
 						} = this.props, {
-							initialFormState: t
+							initialFormState: n
 						} = this.state;
 						if (!e) return;
-						const n = Bt(this.state.formState);
-						if (Tt(n)) return void this.setState({
-							formState: n
+						const s = Tt(this.state.formState);
+						if (Bt(s)) return void this.setState({
+							formState: s
 						}, this.focusErrorField);
 						const {
-							postRequirements: s,
-							hatefulContentFilters: i
-						} = Ht(n, t);
-						if (a()(s) && a()(i)) return;
+							postRequirements: i,
+							hatefulContentFilters: o
+						} = Ht(s, n);
+						if (l()(i) && l()(o)) return;
 						this.setState({
 							isSavePending: !0
-						});
-						const o = await this.props.onSave({
-							hatefulContentFilters: i,
-							postRequirements: s
+						}), l()(o) || t(e => ({
+							noun: "harassment_control_level",
+							source: "community_settings",
+							action: "save",
+							setting: {
+								value: `${o.hatefulContentThresholdAbuse}`,
+								oldValue: `${this.state.initialFormState.hatefulContentFilters.hatefulContentThresholdAbuse}`
+							},
+							...Object(R.o)(e)
+						}));
+						const r = await this.props.onSave({
+							hatefulContentFilters: o,
+							postRequirements: i
 						});
 						if (!this.isUnmounted)
 							if (this.setState({
 									isSavePending: !1
-								}), o.success) this.props.sendEvent(w(It(n))), this.setState({
-								formState: n,
-								initialFormState: n,
+								}), r.success) this.props.sendEvent(w(jt(s))), this.setState({
+								formState: s,
+								initialFormState: s,
 								hasJustSaved: !0
 							});
-							else if (o.errors) {
-							const e = qt(n, o.errors);
+							else if (r.errors) {
+							const e = qt(s, r.errors);
 							this.setState({
 								formState: e
 							}, this.focusErrorField)
@@ -1607,7 +1617,7 @@
 							} = e, {
 								hatefulContentFilters: s,
 								postRequirements: i
-							} = Ht(t, n), o = !a()(s) || !a()(i);
+							} = Ht(t, n), o = !l()(s) || !l()(i);
 							return o !== e.hasUnsavedChanges ? {
 								hasUnsavedChanges: o
 							} : null
@@ -1631,7 +1641,7 @@
 								...n.formState,
 								...e
 							};
-							return t && (s = Bt(s)), {
+							return t && (s = Tt(s)), {
 								formState: s,
 								hasJustSaved: !1
 							}
@@ -1727,7 +1737,7 @@
 					}))
 				}
 			}
-			t.default = Kt(Object(x.c)(Vt))
+			t.default = Vt(Object(x.c)(Kt))
 		},
 		"./src/reddit/controls/DiscreteSlideSelector/Bars/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1758,4 +1768,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.85741671a04d89257738.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.a2e4baf76b3a97e68585.js.map
