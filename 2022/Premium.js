@@ -1,27 +1,27 @@
-// https://www.redditstatic.com/desktop2x/Premium.32b9dd13ed222de832c5.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.4ff86238fb939b3c6a8c.js
+// Retrieved at 1/18/2022, 10:40:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
-		"./src/reddit/endpoints/gold/productCatalog/index.ts": function(e, r, n) {
+		"./src/reddit/endpoints/gold/productCatalog/index.ts": function(e, r, t) {
 			"use strict";
-			n.d(r, "b", (function() {
+			t.d(r, "b", (function() {
 				return _
-			})), n.d(r, "c", (function() {
+			})), t.d(r, "c", (function() {
 				return y
-			})), n.d(r, "d", (function() {
+			})), t.d(r, "d", (function() {
 				return O
-			})), n.d(r, "a", (function() {
+			})), t.d(r, "a", (function() {
 				return w
 			}));
-			var t = n("./src/lib/constants/index.ts"),
-				a = n("./src/lib/makeApiRequest/index.ts"),
-				i = n("./src/lib/makeGqlRequest/index.ts"),
-				o = n("./src/lib/omitHeaders/index.ts"),
-				d = n("./src/redditGQL/operations/ClaimAwardOffer.json"),
-				s = n("./src/redditGQL/operations/FetchSpecialEvents.json"),
-				c = n("./src/reddit/constants/headers.ts"),
-				u = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				l = n("./src/reddit/endpoints/gold/purchase.ts");
+			var n = t("./src/lib/constants/index.ts"),
+				a = t("./src/lib/makeApiRequest/index.ts"),
+				i = t("./src/lib/makeGqlRequest/index.ts"),
+				o = t("./src/lib/omitHeaders/index.ts"),
+				d = t("./src/redditGQL/operations/ClaimAwardOffer.json"),
+				s = t("./src/redditGQL/operations/FetchSpecialEvents.json"),
+				c = t("./src/reddit/constants/headers.ts"),
+				u = t("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				l = t("./src/reddit/endpoints/gold/purchase.ts");
 			const p = e => ({
 					baselineCoins: e.baseline_coins || e.coins,
 					baselinePennies: e.baseline_pennies || e.pennies,
@@ -49,7 +49,7 @@
 						}
 					}
 				}),
-				g = e => e.map(e => ({
+				b = e => e.map(e => ({
 					defaultSignupBonusCoins: e.default_signup_bonus_coins,
 					bonusPct: e.bonus_pct,
 					description: e.description,
@@ -66,7 +66,7 @@
 					periodicalCoins: e.periodical_coins,
 					signupBonusCoins: e.signup_bonus_coins
 				})),
-				b = e => e ? {
+				g = e => e ? {
 					ctaText: e.cta_text,
 					dropdownHeaderText: e.dropdown_banner_text,
 					dropdownHeaderBackgroundAsset: e.dropdown_banner_image_url,
@@ -78,13 +78,13 @@
 				_ = async ({
 					context: e,
 					correlationId: r,
-					shouldUseCurrentOrigin: n
+					shouldUseCurrentOrigin: t
 				}) => {
 					const i = "/api/v2/gold/purchase_package_details",
-						d = n && "undefined" != typeof window ? `${window.location.origin}${i}` : `${e.apiUrl}${i}`,
+						d = t && "undefined" != typeof window ? `${window.location.origin}${i}` : `${e.apiUrl}${i}`,
 						s = Object(u.a)(d);
 					return Object(a.a)(Object(o.a)(e, [c.a]), {
-						method: t.jb.GET,
+						method: n.jb.GET,
 						endpoint: s,
 						data: {
 							correlation_id: r
@@ -96,14 +96,14 @@
 				if (!e.ok) return e;
 				const {
 					active_sale: r,
-					coin_packages: n,
-					deals: t,
+					coin_packages: t,
+					deals: n,
 					premium_packages: a
 				} = e.body, i = {
-					activeSaleConfig: b(r),
-					coinPackages: f(n),
-					dealCoinPackages: m(t),
-					premiumPackages: g(a)
+					activeSaleConfig: g(r),
+					coinPackages: f(t),
+					dealCoinPackages: m(n),
+					premiumPackages: b(a)
 				};
 				return {
 					...e,
@@ -113,15 +113,15 @@
 			const y = async ({
 				context: e,
 				awardId: r,
-				correlationId: n
+				correlationId: t
 			}) => {
 				const i = `${e.apiUrl}/api/v2/gold/recommended_coin_package_details`,
 					d = Object(u.a)(i);
 				return Object(a.a)(Object(o.a)(e, [c.a]), {
-					method: t.jb.GET,
+					method: n.jb.GET,
 					endpoint: d,
 					data: {
-						correlation_id: n,
+						correlation_id: t,
 						intended_award: r
 					}
 				}).then(l.c).then(P)
@@ -130,12 +130,12 @@
 			function P(e) {
 				if (!e.ok) return e;
 				const r = e.body,
-					n = {
+					t = {
 						coinPackages: f([r])
 					};
 				return {
 					...e,
-					body: n
+					body: t
 				}
 			}
 			const O = e => Object(i.a)(e, {
@@ -150,36 +150,36 @@
 					}
 				})
 		},
-		"./src/reddit/endpoints/gold/purchase.ts": function(e, r, n) {
+		"./src/reddit/endpoints/gold/purchase.ts": function(e, r, t) {
 			"use strict";
-			n.d(r, "c", (function() {
+			t.d(r, "c", (function() {
 				return p
-			})), n.d(r, "f", (function() {
+			})), t.d(r, "f", (function() {
 				return f
-			})), n.d(r, "e", (function() {
+			})), t.d(r, "e", (function() {
 				return m
-			})), n.d(r, "g", (function() {
-				return g
-			})), n.d(r, "h", (function() {
+			})), t.d(r, "g", (function() {
 				return b
-			})), n.d(r, "d", (function() {
+			})), t.d(r, "h", (function() {
+				return g
+			})), t.d(r, "d", (function() {
 				return _
-			})), n.d(r, "i", (function() {
+			})), t.d(r, "i", (function() {
 				return h
-			})), n.d(r, "a", (function() {
+			})), t.d(r, "a", (function() {
 				return y
-			})), n.d(r, "b", (function() {
+			})), t.d(r, "b", (function() {
 				return P
 			}));
-			var t = n("./src/lib/constants/index.ts"),
-				a = n("./src/lib/makeApiRequest/index.ts"),
-				i = n("./src/lib/makeGqlRequest/index.ts"),
-				o = n("./src/lib/omitHeaders/index.ts"),
-				d = n("./src/redditGQL/operations/ChangeStripePaymentMethod.json"),
-				s = n("./src/reddit/constants/headers.ts"),
-				c = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				u = n("./src/reddit/helpers/genericServerError/index.ts"),
-				l = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
+			var n = t("./src/lib/constants/index.ts"),
+				a = t("./src/lib/makeApiRequest/index.ts"),
+				i = t("./src/lib/makeGqlRequest/index.ts"),
+				o = t("./src/lib/omitHeaders/index.ts"),
+				d = t("./src/redditGQL/operations/ChangeStripePaymentMethod.json"),
+				s = t("./src/reddit/constants/headers.ts"),
+				c = t("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				u = t("./src/reddit/helpers/genericServerError/index.ts"),
+				l = t("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			const p = e => e.ok ? e.body.json && e.body.json.errors.length ? {
 					...e,
 					ok: !1,
@@ -193,7 +193,7 @@
 				f = async ({
 					coins: e,
 					context: r,
-					correlationId: n,
+					correlationId: t,
 					offerContext: i,
 					pennies: d,
 					rememberCard: u,
@@ -207,34 +207,34 @@
 							pennies: d,
 							remember_card: u,
 							card_id: f,
-							correlation_id: n
+							correlation_id: t
 						},
-						g = `${r.apiUrl}/api/v2/gold/stripe/buy_coins`,
-						b = Object(c.a)(g);
+						b = `${r.apiUrl}/api/v2/gold/stripe/buy_coins`,
+						g = Object(c.a)(b);
 					return Object(a.a)(Object(o.a)(r, [s.a]), {
-						method: t.jb.POST,
-						endpoint: b,
+						method: n.jb.POST,
+						endpoint: g,
 						data: m
 					}).then(p)
 				}, m = async ({
 					coins: e,
 					context: r,
-					correlationId: n,
+					correlationId: t,
 					gildParams: i,
 					isOldReddit: d,
 					offerContext: u,
 					pennies: l,
 					rememberCard: f,
 					thingId: m,
-					token: g,
-					savedCardId: b
+					token: b,
+					savedCardId: g
 				}) => {
 					const {
 						gildType: _,
 						isAnonymous: h,
 						message: y
 					} = i, P = {
-						token: g ? g.id : void 0,
+						token: b ? b.id : void 0,
 						coins: e,
 						offer_context: u,
 						pennies: l,
@@ -243,18 +243,18 @@
 						message: y ? y.trim() : "",
 						is_anonymous: h,
 						remember_card: f,
-						card_id: b,
-						correlation_id: n
+						card_id: g,
+						correlation_id: t
 					}, O = `${r.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, w = d ? O : Object(c.a)(O);
 					return Object(a.a)(Object(o.a)(r, [s.a]), {
-						method: t.jb.POST,
+						method: n.jb.POST,
 						endpoint: w,
 						data: P
 					}).then(p)
-				}, g = async ({
+				}, b = async ({
 					context: e,
 					correlationId: r,
-					gildParams: n,
+					gildParams: t,
 					isOldReddit: i,
 					pennies: d,
 					rememberCard: u,
@@ -263,65 +263,65 @@
 					savedCardId: m
 				}) => {
 					const {
-						gildType: g,
-						isAnonymous: b,
+						gildType: b,
+						isAnonymous: g,
 						message: _
-					} = n, h = {
+					} = t, h = {
 						token: f ? f.id : void 0,
 						thing_id: l,
-						award_id: g,
+						award_id: b,
 						message: _ ? _.trim() : "",
-						is_anonymous: b,
+						is_anonymous: g,
 						pennies: d,
 						remember_card: u,
 						card_id: m,
 						correlation_id: r
 					}, y = `${e.apiUrl}/api/v2/gold/stripe/buy_award`, P = i ? y : Object(c.a)(y);
 					return Object(a.a)(Object(o.a)(e, [s.a]), {
-						method: t.jb.POST,
+						method: n.jb.POST,
 						endpoint: P,
 						data: h
 					}).then(p)
-				}, b = async ({
+				}, g = async ({
 					context: e,
 					correlationId: r,
-					pennies: n,
+					pennies: t,
 					token: i
 				}) => {
 					const d = {
 							token: i.id,
-							pennies: n,
+							pennies: t,
 							correlation_id: r
 						},
 						u = `${e.apiUrl}/api/v2/gold/stripe/buy_premium_subscription`,
 						l = Object(c.a)(u);
 					return Object(a.a)(Object(o.a)(e, [s.a]), {
-						method: t.jb.POST,
+						method: n.jb.POST,
 						endpoint: l,
 						data: d
 					}).then(p)
 				}, _ = "paymentInfoUpdated", h = async e => {
 					const {
 						origin: r
-					} = window.location, n = `${r}/settings/premium`, t = new URLSearchParams({
+					} = window.location, t = `${r}/settings/premium`, n = new URLSearchParams({
 						[_]: "true"
 					}), a = await Object(i.a)(e, {
 						...d,
 						variables: {
-							successUrl: `${n}?${t}`,
-							cancelUrl: `${n}`
+							successUrl: `${t}?${n}`,
+							cancelUrl: `${t}`
 						}
 					});
 					if (!a.ok) throw new Error("Unable to update payment information");
 					return a.body.data.changeStripePaymentMethod.sessionId
 				}, y = async (e, r) => {
-					const n = {
+					const t = {
 						card_id: r
 					};
 					return Object(a.a)(Object(o.a)(e, [s.a]), {
-						method: t.jb.POST,
+						method: n.jb.POST,
 						endpoint: `${e.apiUrl}/api/v2/gold/stripe/delete_creditcard`,
-						data: n
+						data: t
 					}).then(e => e.ok ? {
 						...e
 					} : {
@@ -329,7 +329,7 @@
 						error: Object(l.a)(e)
 					})
 				}, P = async e => Object(a.a)(Object(o.a)(e, [s.a]), {
-					method: t.jb.GET,
+					method: n.jb.GET,
 					endpoint: `${e.apiUrl}/api/v2/gold/stripe/creditcards`
 				}).then(e => e.ok ? {
 					...e
@@ -338,28 +338,42 @@
 					error: Object(l.a)(e)
 				})
 		},
-		"./src/reddit/models/Gold/ProductOffer.ts": function(e, r, n) {
+		"./src/reddit/helpers/genericServerError/index.ts": function(e, r, t) {
 			"use strict";
-			n.d(r, "c", (function() {
-				return t
-			})), n.d(r, "e", (function() {
+			var n = t("./node_modules/fbt/lib/FbtPublic.js"),
+				a = t("./src/lib/constants/index.ts");
+			r.a = () => ({
+				type: a.I.SERVER_ERROR,
+				fields: [{
+					field: "",
+					msg: n.fbt._("Something went wrong.", null, {
+						hk: "RcX5A"
+					})
+				}]
+			})
+		},
+		"./src/reddit/models/Gold/ProductOffer.ts": function(e, r, t) {
+			"use strict";
+			t.d(r, "c", (function() {
+				return n
+			})), t.d(r, "e", (function() {
 				return i
-			})), n.d(r, "b", (function() {
+			})), t.d(r, "b", (function() {
 				return o
-			})), n.d(r, "a", (function() {
+			})), t.d(r, "a", (function() {
 				return d
-			})), n.d(r, "d", (function() {
+			})), t.d(r, "d", (function() {
 				return s
 			}));
-			var t, a = n("./node_modules/fbt/lib/FbtPublic.js");
+			var n, a = t("./node_modules/fbt/lib/FbtPublic.js");
 			! function(e) {
 				e.CoinConversion = "user-coins-in-subreddit", e.Powerups = "powerups", e.Premium = "premium"
-			}(t || (t = {}));
+			}(n || (n = {}));
 			const i = {
-				[t.Powerups]: () => a.fbt._("Reddit - Buy Powerups", null, {
+				[n.Powerups]: () => a.fbt._("Reddit - Buy Powerups", null, {
 					hk: "4sEI31"
 				}),
-				[t.Premium]: () => a.fbt._("Reddit - Buy Premium", null, {
+				[n.Premium]: () => a.fbt._("Reddit - Buy Premium", null, {
 					hk: "19EtMU"
 				})
 			};
@@ -371,24 +385,24 @@
 				e.GildFlow = "gild_flow", e.LowCoinBalance = "low_coin_balance", e.NewUserTargetedOffer = "new_user_targeted_offer", e.RepeatUserTargetedOffer = "repeat_user_targeted_offer", e.StorefrontFreeAward = "storefront_free_award", e.CoinSale = "coin_sale", e.AvatarNewGear = "avatar_new_gear"
 			}(d || (d = {}));
 			const s = (e, r) => {
-				const n = e && e.dealInfo && e.dealInfo.type,
-					t = "low_coin_upsell" === n,
-					a = "new_purchaser" === n,
-					i = "repeat_purchaser" === n;
-				return r ? d.GildFlow : t ? d.LowCoinBalance : a ? d.NewUserTargetedOffer : i ? d.RepeatUserTargetedOffer : void 0
+				const t = e && e.dealInfo && e.dealInfo.type,
+					n = "low_coin_upsell" === t,
+					a = "new_purchaser" === t,
+					i = "repeat_purchaser" === t;
+				return r ? d.GildFlow : n ? d.LowCoinBalance : a ? d.NewUserTargetedOffer : i ? d.RepeatUserTargetedOffer : void 0
 			}
 		},
-		"./src/reddit/models/Payments/index.ts": function(e, r, n) {
+		"./src/reddit/models/Payments/index.ts": function(e, r, t) {
 			"use strict";
-			var t, a, i, o;
-			n.d(r, "b", (function() {
+			var n, a, i, o;
+			t.d(r, "b", (function() {
 					return a
-				})), n.d(r, "a", (function() {
+				})), t.d(r, "a", (function() {
 					return i
 				})),
 				function(e) {
 					e.PayPal = "paypal", e.Stripe = "stripe"
-				}(t || (t = {})),
+				}(n || (n = {})),
 				function(e) {
 					e.PayPal = "PAYPAL", e.Stripe = "STRIPE"
 				}(a || (a = {})),
@@ -399,62 +413,62 @@
 					e.Comment = "comment", e.Post = "post", e.Profile = "profile", e.Subreddit = "subreddit"
 				}(o || (o = {}))
 		},
-		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, r, n) {
+		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, r, t) {
 			"use strict";
-			n.d(r, "q", (function() {
+			t.d(r, "q", (function() {
 				return o
-			})), n.d(r, "s", (function() {
+			})), t.d(r, "s", (function() {
 				return d
-			})), n.d(r, "r", (function() {
+			})), t.d(r, "r", (function() {
 				return s
-			})), n.d(r, "u", (function() {
+			})), t.d(r, "u", (function() {
 				return c
-			})), n.d(r, "t", (function() {
+			})), t.d(r, "t", (function() {
 				return u
-			})), n.d(r, "b", (function() {
+			})), t.d(r, "b", (function() {
 				return l
-			})), n.d(r, "p", (function() {
+			})), t.d(r, "p", (function() {
 				return p
-			})), n.d(r, "a", (function() {
+			})), t.d(r, "a", (function() {
 				return f
-			})), n.d(r, "n", (function() {
+			})), t.d(r, "n", (function() {
 				return m
-			})), n.d(r, "o", (function() {
-				return g
-			})), n.d(r, "c", (function() {
+			})), t.d(r, "o", (function() {
 				return b
-			})), n.d(r, "h", (function() {
+			})), t.d(r, "c", (function() {
+				return g
+			})), t.d(r, "h", (function() {
 				return _
-			})), n.d(r, "l", (function() {
+			})), t.d(r, "l", (function() {
 				return h
-			})), n.d(r, "w", (function() {
+			})), t.d(r, "w", (function() {
 				return y
-			})), n.d(r, "x", (function() {
+			})), t.d(r, "x", (function() {
 				return P
-			})), n.d(r, "v", (function() {
+			})), t.d(r, "v", (function() {
 				return O
-			})), n.d(r, "y", (function() {
+			})), t.d(r, "y", (function() {
 				return w
-			})), n.d(r, "f", (function() {
+			})), t.d(r, "f", (function() {
 				return j
-			})), n.d(r, "g", (function() {
+			})), t.d(r, "g", (function() {
 				return v
-			})), n.d(r, "i", (function() {
+			})), t.d(r, "i", (function() {
 				return k
-			})), n.d(r, "k", (function() {
+			})), t.d(r, "k", (function() {
 				return x
-			})), n.d(r, "j", (function() {
+			})), t.d(r, "j", (function() {
 				return C
-			})), n.d(r, "m", (function() {
-				return I
-			})), n.d(r, "e", (function() {
+			})), t.d(r, "m", (function() {
 				return S
-			})), n.d(r, "d", (function() {
-				return M
+			})), t.d(r, "e", (function() {
+				return I
+			})), t.d(r, "d", (function() {
+				return R
 			}));
-			var t = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				a = n("./src/lib/initializeClient/installReducer.ts"),
-				i = n("./src/reddit/reducers/features/goldPurchase/index.ts");
+			var n = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				a = t("./src/lib/initializeClient/installReducer.ts"),
+				i = t("./src/reddit/reducers/features/goldPurchase/index.ts");
 			Object(a.a)({
 				features: {
 					goldPurchase: i.a
@@ -468,13 +482,13 @@
 				l = e => e.features.goldPurchase.packageOfferModal.packageId,
 				p = e => e.features.goldPurchase.premiumPurchaseModal.renewInterval,
 				f = e => {
-					const r = Object(t.l)(e),
-						n = (e => e.features.goldPurchase.premiumPurchaseModal.packageId)(e);
-					return r.length && n && r.find(e => e.mobileId === n) || null
+					const r = Object(n.l)(e),
+						t = (e => e.features.goldPurchase.premiumPurchaseModal.packageId)(e);
+					return r.length && t && r.find(e => e.mobileId === t) || null
 				},
 				m = e => e.features.goldPurchase.premiumPurchaseModal.activePage,
-				g = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
-				b = e => e.features.goldPurchase.payment.paymentMethod,
+				b = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
+				g = e => e.features.goldPurchase.payment.paymentMethod,
 				_ = e => e.features.goldPurchase.payment.cardName,
 				h = e => e.features.goldPurchase.payment.postalCode,
 				y = e => e.features.goldPurchase.payment.savedCardsPending,
@@ -486,9 +500,9 @@
 				k = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
 				x = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
 				C = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				I = e => e.features.goldPurchase.payment.stripeToken.pending,
-				S = e => e.features.goldPurchase.payment.paypal.passthrough,
-				M = e => e.features.goldPurchase.payment.paypal.errorMessage
+				S = e => e.features.goldPurchase.payment.stripeToken.pending,
+				I = e => e.features.goldPurchase.payment.paypal.passthrough,
+				R = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/redditGQL/operations/ChangeStripePaymentMethod.json": function(e) {
 			e.exports = JSON.parse('{"id":"ce700fb9b230"}')
@@ -501,4 +515,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.32b9dd13ed222de832c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.4ff86238fb939b3c6a8c.js.map

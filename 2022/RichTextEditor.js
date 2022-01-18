@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.4eaf4333e6cd1743bc9e.js
-// Retrieved at 1/13/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.ca893e5d37f6d498e395.js
+// Retrieved at 1/18/2022, 10:40:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "ReadingIndicator"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -4962,6 +4962,20 @@
 				})
 			}
 		},
+		"./src/reddit/helpers/genericServerError/index.ts": function(e, t, o) {
+			"use strict";
+			var n = o("./node_modules/fbt/lib/FbtPublic.js"),
+				s = o("./src/lib/constants/index.ts");
+			t.a = () => ({
+				type: s.I.SERVER_ERROR,
+				fields: [{
+					field: "",
+					msg: n.fbt._("Something went wrong.", null, {
+						hk: "RcX5A"
+					})
+				}]
+			})
+		},
 		"./src/reddit/helpers/getFakeUserIcons.ts": function(e, t, o) {
 			"use strict";
 			var n = o("./node_modules/lodash/memoize.js"),
@@ -5303,4 +5317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.4eaf4333e6cd1743bc9e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.ca893e5d37f6d498e395.js.map

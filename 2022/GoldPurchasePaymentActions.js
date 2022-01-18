@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.c3bb1e2863a07ebb79b4.js
-// Retrieved at 1/5/2022, 10:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.8b862fb0479e1cef6c24.js
+// Retrieved at 1/18/2022, 10:40:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldPurchasePaymentActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -301,22 +301,22 @@
 									S = v(l),
 									A = v(E),
 									M = v(h),
-									T = v(j);
+									R = v(j);
 								t.useLayoutEffect((function() {
 									if (null == x.current && C && null != I.current) {
 										var t = C.create(e, i);
 										x.current = t, t.mount(I.current), t.on("ready", (function() {
 											return k(t)
-										})), t.on("change", M), t.on("blur", w), t.on("focus", S), t.on("escape", T), t.on("click", A)
+										})), t.on("change", M), t.on("blur", w), t.on("focus", S), t.on("escape", R), t.on("click", A)
 									}
 								}));
-								var R = p(i);
+								var T = p(i);
 								return t.useEffect((function() {
 									if (x.current) {
-										var e = m(i, R, ["paymentRequest"]);
+										var e = m(i, T, ["paymentRequest"]);
 										e && x.current.update(e)
 									}
-								}), [i, R]), t.useLayoutEffect((function() {
+								}), [i, T]), t.useLayoutEffect((function() {
 									return function() {
 										x.current && x.current.destroy()
 									}
@@ -346,14 +346,14 @@
 					S = _("fpxBank", E),
 					A = _("iban", E),
 					M = _("idealBank", E),
-					T = _("p24Bank", E),
-					R = _("epsBank", E),
+					R = _("p24Bank", E),
+					T = _("epsBank", E),
 					U = _("payment", E),
 					B = _("paymentRequestButton", E),
 					N = _("linkAuthentication", E),
 					$ = _("shippingAddress", E),
 					L = _("afterpayClearpayMessage", E);
-				e.AfterpayClearpayMessageElement = L, e.AuBankAccountElement = C, e.CardCvcElement = w, e.CardElement = x, e.CardExpiryElement = k, e.CardNumberElement = I, e.Elements = g, e.ElementsConsumer = j, e.EpsBankElement = R, e.FpxBankElement = S, e.IbanElement = A, e.IdealBankElement = M, e.LinkAuthenticationElement = N, e.P24BankElement = T, e.PaymentElement = U, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = $, e.useElements = function() {
+				e.AfterpayClearpayMessageElement = L, e.AuBankAccountElement = C, e.CardCvcElement = w, e.CardElement = x, e.CardExpiryElement = k, e.CardNumberElement = I, e.Elements = g, e.ElementsConsumer = j, e.EpsBankElement = T, e.FpxBankElement = S, e.IbanElement = A, e.IdealBankElement = M, e.LinkAuthenticationElement = N, e.P24BankElement = R, e.PaymentElement = U, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = $, e.useElements = function() {
 					return O("calls useElements()").elements
 				}, e.useStripe = function() {
 					return O("calls useStripe()").stripe
@@ -903,6 +903,20 @@
 					error: Object(l.a)(e)
 				})
 		},
+		"./src/reddit/helpers/genericServerError/index.ts": function(e, t, r) {
+			"use strict";
+			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
+				a = r("./src/lib/constants/index.ts");
+			t.a = () => ({
+				type: a.I.SERVER_ERROR,
+				fields: [{
+					field: "",
+					msg: n.fbt._("Something went wrong.", null, {
+						hk: "RcX5A"
+					})
+				}]
+			})
+		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "q", (function() {
@@ -999,4 +1013,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.c3bb1e2863a07ebb79b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.8b862fb0479e1cef6c24.js.map
