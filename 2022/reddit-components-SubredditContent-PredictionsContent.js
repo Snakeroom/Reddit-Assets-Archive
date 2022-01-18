@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.9d7fcc390eef9a777fd5.js
-// Retrieved at 1/18/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.be87fffbb4e5eb99c5d2.js
+// Retrieved at 1/18/2022, 1:40:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -156,14 +156,14 @@
 				O = n("./src/reddit/models/Toast/index.ts"),
 				k = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				E = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				g = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx");
+				y = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx");
 
-			function y({
+			function g({
 				isEnding: e,
 				onClose: t,
 				onConfirm: n
 			}) {
-				return c.a.createElement(g.a, {
+				return c.a.createElement(y.a, {
 					titleText: o.fbt._("End Tournament?", null, {
 						hk: "3tTAeq"
 					}),
@@ -179,7 +179,9 @@
 					onSecondaryAction: t,
 					secondaryButtonText: o.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})
+					}),
+					withOverlay: !0,
+					onOverlayClick: t
 				})
 			}
 			var C = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
@@ -226,7 +228,7 @@
 					n = Object(x.a)(),
 					[u, m] = Object(r.useState)(""),
 					[b, h] = Object(r.useState)(!1),
-					[g, C] = Object(r.useState)(!1),
+					[y, C] = Object(r.useState)(!1),
 					[v, P] = Object(r.useState)(!1),
 					[T, w] = Object(r.useState)(null),
 					{
@@ -321,8 +323,8 @@
 					onClick: M
 				}, o.fbt._("End", null, {
 					hk: "HWN7f"
-				})), v && c.a.createElement(y, {
-					isEnding: g,
+				})), v && c.a.createElement(g, {
+					isEnding: y,
 					onClose: () => {
 						P(!1)
 					},
@@ -383,9 +385,9 @@
 			})), n.d(t, "k", (function() {
 				return E
 			})), n.d(t, "i", (function() {
-				return g
-			})), n.d(t, "r", (function() {
 				return y
+			})), n.d(t, "r", (function() {
+				return g
 			})), n.d(t, "f", (function() {
 				return C
 			}));
@@ -531,13 +533,13 @@
 					action: "click",
 					noun: "start_tournament"
 				}),
-				g = () => e => ({
+				y = () => e => ({
 					...Object(r.o)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
-				y = () => e => ({
+				g = () => e => ({
 					...Object(r.o)(e),
 					source: "predictions_tab",
 					action: "view",
@@ -554,4 +556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.9d7fcc390eef9a777fd5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.be87fffbb4e5eb99c5d2.js.map
