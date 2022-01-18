@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.d931b3def88faf190eb2.js
-// Retrieved at 1/18/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.d0a278fc5d96665246c7.js
+// Retrieved at 1/18/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -359,9 +359,9 @@
 				j = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
 				k = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				I = s("./src/reddit/selectors/user.ts"),
-				M = s("./src/reddit/selectors/video.ts"),
-				N = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
-				P = s.n(N);
+				N = s("./src/reddit/selectors/video.ts"),
+				M = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
+				P = s.n(M);
 			const {
 				fbt: T
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), V = Object(d.a)(f.a, {
@@ -369,7 +369,7 @@
 			}), D = 3e3, A = Object(c.c)({
 				autoplay: I.b,
 				isOverlayOpen: x.i,
-				mutedInFeed: M.i,
+				mutedInFeed: N.i,
 				unavailableVideoUrl: j.o,
 				volumeInFeed: S.d,
 				currentStream: (e, {
@@ -856,9 +856,9 @@
 			})), s.d(t, "c", (function() {
 				return I
 			})), s.d(t, "n", (function() {
-				return M
-			})), s.d(t, "k", (function() {
 				return N
+			})), s.d(t, "k", (function() {
+				return M
 			})), s.d(t, "b", (function() {
 				return P
 			})), s.d(t, "d", (function() {
@@ -1104,13 +1104,13 @@
 					noun: "follow",
 					...a(t, e)
 				}),
-				M = e => t => ({
+				N = e => t => ({
 					source: "stream_player",
 					action: "click",
 					noun: "unfollow",
 					...a(t, e)
 				}),
-				N = e => t => ({
+				M = e => t => ({
 					source: "stream_player",
 					action: "click",
 					noun: "subscribe",
@@ -1317,7 +1317,7 @@
 			})), s.d(t, "i", (function() {
 				return j
 			})), s.d(t, "d", (function() {
-				return N
+				return M
 			})), s.d(t, "h", (function() {
 				return P
 			})), s.d(t, "k", (function() {
@@ -1473,12 +1473,12 @@
 					streamIdFromPath: s
 				}), (e, t, s, n, o) => !e || s.includes(e) || n.includes(e) ? t || o[0] : e),
 				I = Object(n.a)(v, f, S, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
-				M = Object(n.a)(v, f, (e, t) => {
+				N = Object(n.a)(v, f, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				N = Object(o.a)(Object(n.a)(k, E, (e, t) => e ? t[e] : void 0)),
+				M = Object(o.a)(Object(n.a)(k, E, (e, t) => e ? t[e] : void 0)),
 				P = Object(o.a)(Object(n.a)(I, E, (e, t) => e ? t[e] : void 0)),
-				T = Object(o.a)(Object(n.a)(M, E, (e, t) => e ? t[e] : void 0)),
+				T = Object(o.a)(Object(n.a)(N, E, (e, t) => e ? t[e] : void 0)),
 				V = (Object(o.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, E, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
 					...t[s],
 					preloadedPreviewUrl: e[s]
@@ -1511,8 +1511,8 @@
 					const o = n.stream.state;
 					return o === i.a.IS_LIVE || o === i.a.DISCONNECTED ? F.LIVE : o === i.a.ENDED && n.stream.vod_accessible ? F.VOD : F.UNAVAILABLE
 				}),
-				U = Object(n.a)(N, B, m.b, c.b, c.o, (e, t, s, n, o) => s ? n : e ? t === F.LIVE || t === F.VOD ? e.stream.hls_url : o : void 0),
-				H = Object(n.a)(N, B, R, (e, t, s) => e ? t === F.LIVE ? e.broadcast_time : t === F.VOD && s < e.broadcast_time ? s : 0 : 0),
+				U = Object(n.a)(M, B, m.b, c.b, c.o, (e, t, s, n, o) => s ? n : e ? t === F.LIVE || t === F.VOD ? e.stream.hls_url : o : void 0),
+				H = Object(n.a)(M, B, R, (e, t, s) => e ? t === F.LIVE ? e.broadcast_time : t === F.VOD && s < e.broadcast_time ? s : 0 : 0),
 				K = (e, t) => {
 					const s = h(e);
 					return !!s && s[t] && s[t].chat_disabled
@@ -1546,9 +1546,9 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(n.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: i.J,
-				experimentName: o.Mb
-			}), e => e === o.Tc)
+				experimentName: o.Nb
+			}), e => e === o.Vc)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.d931b3def88faf190eb2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.d0a278fc5d96665246c7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.14daa1d3242f91d1864f.js
-// Retrieved at 1/18/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.b64cbfc0f18cb2990c0f.js
+// Retrieved at 1/18/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages~ModerationPages"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, r) {
@@ -371,14 +371,14 @@
 					(function(e) {
 						return Object(y.c)(e, {
 							experimentEligibilitySelector: y.a,
-							experimentName: O.gd
-						}) === O.Tc
+							experimentName: O.id
+						}) === O.Vc
 					})(c()) && (async () => {
 						var e;
 						const {
 							normalizeModQueueListingFromGql: s,
 							transformGatewayParamsToGQLVariables: a
-						} = await r.e(5).then(r.bind(null, "./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/index.ts")), o = a({
+						} = await r.e(7).then(r.bind(null, "./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/index.ts")), o = a({
 							getState: c,
 							queueType: t,
 							options: n
@@ -398,7 +398,7 @@
 							gatewayResponse: p
 						})
 					})()
-				}, q = Object(n.a)(k.k), V = Object(n.a)(k.b), B = e => async (t, r, {
+				}, V = Object(n.a)(k.k), q = Object(n.a)(k.b), B = e => async (t, r, {
 					apiContext: a
 				}) => {
 					const n = r(),
@@ -415,7 +415,7 @@
 					});
 					if (p.ok) {
 						const e = p.body;
-						t(q(e)), e.moderatedAfter ? t(B()) : t(V())
+						t(V(e)), e.moderatedAfter ? t(B()) : t(q())
 					} else t(Object(u.f)({
 						kind: f.b.Error,
 						text: s.fbt._("Oh no! Something went wrong!", null, {
@@ -869,13 +869,13 @@
 						mod_note: t.modNote
 					}
 				}),
-				q = (e, t, r) => Object(D.a)(Object(T.a)(e, [U.a]), {
+				V = (e, t, r) => Object(D.a)(Object(T.a)(e, [U.a]), {
 					endpoint: Object(F.a)(`${e.apiUrl}/api/v1/modactions/removal_${r}_message/`),
 					method: k.jb.POST,
 					type: "json",
 					data: t
 				});
-			var V = r("./src/reddit/helpers/isPost.ts"),
+			var q = r("./src/reddit/helpers/isPost.ts"),
 				B = r("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				K = r("./src/reddit/helpers/routeKey/index.ts"),
 				G = r("./src/reddit/models/ModQueue/index.ts"),
@@ -986,7 +986,7 @@
 					const c = o(),
 						u = c.user.account && c.user.account.displayText,
 						i = e[0],
-						l = Object(V.a)(i) ? $.e.Post : $.e.Comment,
+						l = Object(q.a)(i) ? $.e.Post : $.e.Comment,
 						m = l === $.e.Post ? c.posts.models[i] : c.features.comments.models[i],
 						p = l === $.e.Post ? L.S : w.i;
 					if (!m || !u) return !1;
@@ -1012,7 +1012,7 @@
 									title: t.title,
 									type: s
 								},
-								o = await q(d(), Object($.h)(a, l), l);
+								o = await V(d(), Object($.h)(a, l), l);
 							if (o.ok) {
 								if (s === $.f.Public) {
 									if (n(ve()), o.body) {
@@ -1114,7 +1114,7 @@
 									title: t.title,
 									type: a
 								},
-								n = await q(c(), Object($.h)(s, $.e.Bulk), $.e.Bulk);
+								n = await V(c(), Object($.h)(s, $.e.Bulk), $.e.Bulk);
 							n.ok ? (o(je()), o(l)) : o(_e(n.error))
 						} else o(l)
 					} else o(ye(p.error))
@@ -1500,12 +1500,12 @@
 							return e
 					}
 				},
-				q = Object(s.c)({
+				V = Object(s.c)({
 					api: F,
 					result: Q
 				});
-			const V = {};
-			var B = (e = V, t) => {
+			const q = {};
+			var B = (e = q, t) => {
 					switch (t.type) {
 						case I.g: {
 							const {
@@ -1547,7 +1547,7 @@
 					api: A,
 					models: P,
 					pageInfo: D,
-					search: q,
+					search: V,
 					userOrder: B
 				}),
 				G = r("./src/reddit/actions/moderationLog/constants.ts");
@@ -2075,8 +2075,8 @@
 						return e
 				}
 			};
-			const qe = {};
-			var Ve = (e = qe, t) => {
+			const Ve = {};
+			var qe = (e = Ve, t) => {
 					switch (t.type) {
 						case a.E:
 						case a.F: {
@@ -2105,7 +2105,7 @@
 				},
 				Be = Object(s.c)({
 					error: Qe,
-					pending: Ve
+					pending: qe
 				});
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			const Ke = {};
@@ -2594,8 +2594,8 @@
 						return e
 				}
 			};
-			const qt = {};
-			var Vt = (e = qt, t) => {
+			const Vt = {};
+			var qt = (e = Vt, t) => {
 					switch (t.type) {
 						case We.p: {
 							const {
@@ -2616,7 +2616,7 @@
 				Bt = Object(s.c)({
 					api: Ut,
 					itemOrder: Qt,
-					loadMore: Vt
+					loadMore: qt
 				});
 			var Kt = (e = null, t) => {
 				switch (t.type) {
@@ -2970,4 +2970,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.14daa1d3242f91d1864f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.b64cbfc0f18cb2990c0f.js.map

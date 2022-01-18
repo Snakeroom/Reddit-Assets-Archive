@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.d089bbdc0519e480b83f.js
-// Retrieved at 1/18/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.856310074bd41e1dce3f.js
+// Retrieved at 1/18/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -658,27 +658,27 @@
 					experimentName: a.yb,
 					experimentEligibilitySelector: c.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === a.vd.Enabled),
+				d = Object(s.a)(o, e => e === a.xd.Enabled),
 				u = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: a.qd,
+					experimentName: a.sd,
 					experimentEligibilitySelector: c.e
 				}), i.a),
-				l = Object(s.a)(d, u, (e, t) => e && t === a.ud.Enabled),
+				l = Object(s.a)(d, u, (e, t) => e && t === a.wd.Enabled),
 				b = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: a.Kb,
 					experimentEligibilitySelector: c.e
 				}), i.a),
-				m = Object(s.a)(d, b, (e, t) => e && t === a.ac.Enabled),
+				m = Object(s.a)(d, b, (e, t) => e && t === a.bc.Enabled),
 				h = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: a.wb,
 					experimentEligibilitySelector: c.e
 				}), i.a),
-				g = Object(s.a)(h, e => e === a.sd.ContinuousScroll),
+				g = Object(s.a)(h, e => e === a.ud.ContinuousScroll),
 				f = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: a.xb,
 					experimentEligibilitySelector: c.e
 				}), i.a),
-				p = Object(s.a)(f, e => e === a.td.Enabled),
+				p = Object(s.a)(f, e => e === a.vd.Enabled),
 				x = Object(s.a)(e => Object(r.c)(e, {
 					experimentName: a.Fb,
 					experimentEligibilitySelector: () => !0
@@ -690,4 +690,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.d089bbdc0519e480b83f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.856310074bd41e1dce3f.js.map

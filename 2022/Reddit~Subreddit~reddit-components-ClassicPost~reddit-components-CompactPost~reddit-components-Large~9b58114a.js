@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a.44cda49612ff85c1aa24.js
-// Retrieved at 1/18/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a.2ae282141b800ab2dbb0.js
+// Retrieved at 1/18/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -1586,7 +1586,7 @@
 								experimentName: o.J,
 								expEventOverride: t
 							});
-							return !!(Object(o.jf)(n) ? void 0 : n)
+							return !!(Object(o.lf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -2356,9 +2356,9 @@
 			})), n.d(t, "L", (function() {
 				return q
 			})), n.d(t, "y", (function() {
-				return Z
-			})), n.d(t, "A", (function() {
 				return X
+			})), n.d(t, "A", (function() {
+				return Z
 			})), n.d(t, "B", (function() {
 				return Q
 			}));
@@ -2572,13 +2572,13 @@
 					const n = Object(u.b)(e, t);
 					if (n) return Object(l.W)(e, n)
 				},
-				Z = (e, {
+				X = (e, {
 					commentId: t
 				}) => {
 					var n, r;
 					return !!((null === (r = null === (n = e.pages) || void 0 === n ? void 0 : n.comments) || void 0 === r ? void 0 : r.followed) || []).find(e => e.id === t)
 				},
-				X = (e, {
+				Z = (e, {
 					commentId: t
 				}) => {
 					var n, r;
@@ -2681,9 +2681,9 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.Jb
-					}) === r.Zb.Enabled
+					}) === r.ac.Enabled
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a.44cda49612ff85c1aa24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a.2ae282141b800ab2dbb0.js.map
