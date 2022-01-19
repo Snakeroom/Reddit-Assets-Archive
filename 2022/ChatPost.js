@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.0dbbaf10fa9f580e5dbe.js
-// Retrieved at 1/18/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.78a3d91bcb57b3df6658.js
+// Retrieved at 1/19/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1453,7 +1453,7 @@
 					[pe.Admin]: {
 						color: ue.c,
 						label: s.fbt._("Admin", null, {
-							hk: "QafFM"
+							hk: "Iku1o"
 						}),
 						tooltipPrefix: "CommentTopMeta--Admin--",
 						tooltipTemplate: () => s.fbt._("Reddit admin, speaking officially", null, {
@@ -1463,7 +1463,7 @@
 					[pe.Mod]: {
 						color: ue.d,
 						label: s.fbt._("Mod", null, {
-							hk: "3l7DyF"
+							hk: "1b6Q1p"
 						}),
 						tooltipPrefix: "CommentTopMeta--Mod--",
 						tooltipTemplate: e => (e => s.fbt._("Moderator of {subredditDisplayText}, speaking officially", [s.fbt._param("subredditDisplayText", e)], {
@@ -1473,7 +1473,7 @@
 					[pe.Op]: {
 						color: ue.a,
 						label: s.fbt._("Op", null, {
-							hk: "1A74qs"
+							hk: "ERTp9"
 						}),
 						tooltipPrefix: "CommentTopMeta--OP--",
 						tooltipTemplate: () => s.fbt._("Original Poster", null, {
@@ -1483,7 +1483,7 @@
 					[pe.AlumniAdmin]: {
 						color: ue.c,
 						label: s.fbt._("Admin", null, {
-							hk: "QafFM"
+							hk: "Iku1o"
 						}),
 						tooltipPrefix: "CommentTopMeta--AdEm--",
 						tooltipTemplate: () => s.fbt._("Reddit admin emeritus", null, {
@@ -1530,7 +1530,9 @@
 					}))
 				},
 				ge = () => a.a.createElement("img", {
-					alt: "Moderator Achievement",
+					alt: s.fbt._("Moderator Achievement", null, {
+						hk: "20RhJI"
+					}),
 					className: be.a.modAchievement,
 					src: `${M.a.assetPath}/img/powerups/moderator-achievement.svg`
 				});
@@ -1722,8 +1724,10 @@
 					subredditDisplayText: y,
 					userHasNft: O
 				} = e, j = a.a.createElement(a.a.Fragment, null, a.a.createElement(Ae.b, {
+					comment: r,
 					commentId: r.id
 				}), a.a.createElement(Ae.a, {
+					comment: r,
 					commentId: r.id,
 					commentsPageKey: c
 				}));
@@ -5336,4 +5340,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.0dbbaf10fa9f580e5dbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.78a3d91bcb57b3df6658.js.map

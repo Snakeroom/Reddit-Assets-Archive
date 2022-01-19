@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.668976a0731b5aba25d9.js
-// Retrieved at 1/18/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.752625dc9902940075d9.js
+// Retrieved at 1/19/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, n) {
@@ -276,8 +276,8 @@
 					LoadingComponent: () => null
 				}),
 				G = n("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
-				q = n.n(G);
-			const V = 3500,
+				V = n.n(G);
+			const q = 3500,
 				z = 500;
 			class X extends r.a.PureComponent {
 				constructor(e) {
@@ -295,7 +295,7 @@
 							this.setState({
 								shouldAnimate: !1
 							})
-						}, V)))
+						}, q)))
 					}, this.handleOnClick = () => {
 						const {
 							onAddAward: e,
@@ -359,31 +359,31 @@
 						shouldAnimate: c
 					} = this.state, l = Object(U.a)(e.id, o.id);
 					return r.a.createElement("span", {
-						className: q.a.awardPillContainer,
+						className: V.a.awardPillContainer,
 						id: d,
 						onMouseEnter: this.handleMouseEnter,
 						onMouseLeave: this.handleMouseLeave
 					}, r.a.createElement("button", {
-						className: Object(P.a)(t, q.a.awardPill, {
-							[q.a.userGiven]: i
+						className: Object(P.a)(t, V.a.awardPill, {
+							[V.a.userGiven]: i
 						}),
 						onClick: this.handleOnClick
 					}, r.a.createElement("span", {
-						className: q.a.imageContainer
+						className: V.a.imageContainer
 					}, r.a.createElement("img", {
 						alt: e.name,
-						className: Object(P.a)(q.a.awardIcon, {
-							[q.a.hidden]: c
+						className: Object(P.a)(V.a.awardIcon, {
+							[V.a.hidden]: c
 						}),
 						id: l,
 						ref: this.imageRef,
 						src: a
 					}), c && r.a.createElement("img", {
 						alt: e.name,
-						className: q.a.animationIcon,
+						className: V.a.animationIcon,
 						src: s
 					})), r.a.createElement("span", {
-						className: q.a.count
+						className: V.a.count
 					}, n.toLocaleString())), r.a.createElement(Q, {
 						award: e,
 						onOpenReportFlow: this.handleOpenReportFlow,
@@ -1443,7 +1443,7 @@
 						}),
 						id: l,
 						onClick: e => {
-							q(c, n.id), i && (e.preventDefault(), c(Object(W.Y)(Object(Q.b)(a), n.postId)))
+							V(c, n.id), i && (e.preventDefault(), c(Object(W.Y)(Object(Q.b)(a), n.postId)))
 						},
 						onMouseEnter: m,
 						onMouseLeave: m,
@@ -1458,12 +1458,12 @@
 						seconds: n.created
 					})))
 				},
-				q = (e, t) => {
+				V = (e, t) => {
 					window.addEventListener("focus", (function n() {
-						V(e, t, n)
+						q(e, t, n)
 					}))
 				},
-				V = (e, t, n) => {
+				q = (e, t, n) => {
 					window.removeEventListener("focus", n), e(Object(U.g)({
 						commentListNodeId: t
 					})), window.setTimeout(() => e(Object(U.g)({
@@ -1591,7 +1591,7 @@
 					[pe.Admin]: {
 						color: ue.c,
 						label: s.fbt._("Admin", null, {
-							hk: "QafFM"
+							hk: "Iku1o"
 						}),
 						tooltipPrefix: "CommentTopMeta--Admin--",
 						tooltipTemplate: () => s.fbt._("Reddit admin, speaking officially", null, {
@@ -1601,7 +1601,7 @@
 					[pe.Mod]: {
 						color: ue.d,
 						label: s.fbt._("Mod", null, {
-							hk: "3l7DyF"
+							hk: "1b6Q1p"
 						}),
 						tooltipPrefix: "CommentTopMeta--Mod--",
 						tooltipTemplate: e => (e => s.fbt._("Moderator of {subredditDisplayText}, speaking officially", [s.fbt._param("subredditDisplayText", e)], {
@@ -1611,7 +1611,7 @@
 					[pe.Op]: {
 						color: ue.a,
 						label: s.fbt._("Op", null, {
-							hk: "1A74qs"
+							hk: "ERTp9"
 						}),
 						tooltipPrefix: "CommentTopMeta--OP--",
 						tooltipTemplate: () => s.fbt._("Original Poster", null, {
@@ -1621,7 +1621,7 @@
 					[pe.AlumniAdmin]: {
 						color: ue.c,
 						label: s.fbt._("Admin", null, {
-							hk: "QafFM"
+							hk: "Iku1o"
 						}),
 						tooltipPrefix: "CommentTopMeta--AdEm--",
 						tooltipTemplate: () => s.fbt._("Reddit admin emeritus", null, {
@@ -1668,7 +1668,9 @@
 					}))
 				},
 				ge = () => r.a.createElement("img", {
-					alt: "Moderator Achievement",
+					alt: s.fbt._("Moderator Achievement", null, {
+						hk: "20RhJI"
+					}),
 					className: he.a.modAchievement,
 					src: `${N.a.assetPath}/img/powerups/moderator-achievement.svg`
 				});
@@ -1860,8 +1862,10 @@
 					subredditDisplayText: I,
 					userHasNft: A
 				} = e, T = r.a.createElement(r.a.Fragment, null, r.a.createElement(ye.b, {
+					comment: o,
 					commentId: o.id
 				}), r.a.createElement(ye.a, {
+					comment: o,
 					commentId: o.id,
 					commentsPageKey: c
 				}));
@@ -2603,14 +2607,14 @@
 				}
 			}
 			var G = L(R(Q)),
-				q = n("./src/reddit/components/ModQueueList/LayoutNavigation.m.less"),
-				V = n.n(q);
+				V = n("./src/reddit/components/ModQueueList/LayoutNavigation.m.less"),
+				q = n.n(V);
 			const z = Object(m.a)(b.a),
 				X = "MODQ--SUBREDDIT_FILTER_DROPDOWN",
 				J = "MODQ--POST_TYPE_FILTER_DROPDOWN",
-				K = p.a.wrapped(x.a, "Inline", V.a),
-				Y = p.a.div("Filter", V.a),
-				Z = p.a.wrapped(h.a, "LayoutSwitch", V.a),
+				K = p.a.wrapped(x.a, "Inline", q.a),
+				Y = p.a.div("Filter", q.a),
+				Z = p.a.wrapped(h.a, "LayoutSwitch", q.a),
 				$ = e => {
 					switch (e) {
 						case "allPostTypes":
@@ -2684,7 +2688,7 @@
 						subredditName: e.subredditName
 					}))), e.showTypeFilter && o.a.createElement("div", {
 						className: Object(c.a)({
-							[V.a.filterMargin]: !e.hideSubredditFilter
+							[q.a.filterMargin]: !e.hideSubredditFilter
 						})
 					}, o.a.createElement(Y, {
 						id: J,
@@ -2822,17 +2826,17 @@
 				H = n("./src/reddit/controls/Checkbox/index.tsx"),
 				Q = n("./src/reddit/helpers/getRichTextContent/index.ts"),
 				G = n("./src/reddit/helpers/showReportIndicator/index.ts"),
-				q = n("./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less"),
-				V = n.n(q);
-			const z = p.a.div("LeftRail", V.a),
-				X = p.a.wrapped(H.a, "BulkActionCheckbox", V.a),
-				J = p.a.div("CommentColumn", V.a),
-				K = p.a.div("VoteColumn", V.a),
-				Y = p.a.wrapped(S.a, "ModToolsFlatlist", V.a),
-				Z = p.a.wrapped(W.a, "Votes", V.a),
-				$ = p.a.div("CommentContentWrapper", V.a),
-				ee = p.a.div("ParentPostTitle", V.a),
-				te = p.a.div("CommentParentWrapper", V.a),
+				V = n("./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less"),
+				q = n.n(V);
+			const z = p.a.div("LeftRail", q.a),
+				X = p.a.wrapped(H.a, "BulkActionCheckbox", q.a),
+				J = p.a.div("CommentColumn", q.a),
+				K = p.a.div("VoteColumn", q.a),
+				Y = p.a.wrapped(S.a, "ModToolsFlatlist", q.a),
+				Z = p.a.wrapped(W.a, "Votes", q.a),
+				$ = p.a.div("CommentContentWrapper", q.a),
+				ee = p.a.div("ParentPostTitle", q.a),
+				te = p.a.div("CommentParentWrapper", q.a),
 				ne = Object(T.b)(e => ({
 					renderingObjectInfo: e.comment
 				}));
@@ -2851,15 +2855,15 @@
 						toggleCheckbox: p
 					} = e, u = Object(R.d)(n), b = Object(h.c)(n);
 					return i.a.createElement(P.a, {
-						className: Object(x.a)(t, V.a.Component, V.a.UnthreadedCommentContainer, {
-							[V.a.isBanned]: !!n.bannedBy,
-							[V.a.isReported]: Object(G.a)(n)
+						className: Object(x.a)(t, q.a.Component, q.a.UnthreadedCommentContainer, {
+							[q.a.isBanned]: !!n.bannedBy,
+							[q.a.isReported]: Object(G.a)(n)
 						}),
 						clickTrackingId: n.id,
 						permalink: s
 					}, i.a.createElement(z, {
 						className: Object(x.a)({
-							[V.a.hasBorder]: !!n.bannedBy || Object(G.a)(n)
+							[q.a.hasBorder]: !!n.bannedBy || Object(G.a)(n)
 						})
 					}, m && i.a.createElement(X, {
 						isCheckboxSelected: r,
@@ -2868,7 +2872,7 @@
 						compact: !1,
 						model: n,
 						onVoteClick: d,
-						scoreClassName: V.a.score
+						scoreClassName: q.a.score
 					})), i.a.createElement(J, null, i.a.createElement(te, null, n.postTitle && i.a.createElement(ee, null, n.postTitle), n.postAuthor && i.a.createElement(L.a, {
 						comment: n
 					})), i.a.createElement($, null, i.a.createElement(M.a, {
@@ -2993,8 +2997,8 @@
 				He = n("./src/reddit/icons/fonts/Remove/index.tsx"),
 				Qe = n("./src/reddit/icons/fonts/Spam/index.tsx"),
 				Ge = n("./src/reddit/icons/fonts/Tag/index.tsx"),
-				qe = n("./src/higherOrderComponents/asTooltip.tsx"),
-				Ve = n("./src/reddit/actions/modal.ts"),
+				Ve = n("./src/higherOrderComponents/asTooltip.tsx"),
+				qe = n("./src/reddit/actions/modal.ts"),
 				ze = n("./src/reddit/components/PostFlairPicker/index.tsx"),
 				Xe = n("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
 				Je = n("./src/reddit/controls/Dropdown/index.tsx"),
@@ -3030,7 +3034,7 @@
 					onUnspoiler: () => e(Object(u.f)(we.a.Unspoiler))
 				})),
 				ct = e => e.some(e => Object(y.a)(e));
-			var lt = Object(qe.a)(it(Object(st.c)(e => i.a.createElement("div", {
+			var lt = Object(Ve.a)(it(Object(st.c)(e => i.a.createElement("div", {
 				className: Object(x.a)(rt.a.StatusList, e.className),
 				style: e.style
 			}, i.a.createElement("div", {
@@ -3105,7 +3109,7 @@
 				bt = n.n(ut);
 			const ht = "BulkAction--BulkItemFilter",
 				ft = "BulkActions--PostFlair--Modal",
-				xt = Object(qe.a)(Je.a),
+				xt = Object(Ve.a)(Je.a),
 				gt = e => i.a.createElement(Ke.b, {
 					className: Object(x.a)(bt.a.DropdownRow, e.className),
 					displayText: e.displayText,
@@ -3131,7 +3135,7 @@
 					})),
 					onRemove: () => e(Object(u.f)(we.a.Remove)),
 					onSpam: () => e(Object(u.f)(we.a.Spam)),
-					onToggleFlairModal: () => e(Object(Ve.i)(ft))
+					onToggleFlairModal: () => e(Object(qe.i)(ft))
 				})),
 				Ct = (e, t) => {
 					const n = Re()(e.map(e => t[e].flair));
@@ -4721,7 +4725,7 @@
 					}
 				}),
 				G = Object(d.b)(Q);
-			class q extends o.a.Component {
+			class V extends o.a.Component {
 				constructor() {
 					super(...arguments), this.sendEventWithName = e => () => this.props.sendEvent(t => ({
 						source: "bulk_mod_action",
@@ -4774,7 +4778,7 @@
 					}))
 				}
 			}
-			t.default = W(G(Object(p.c)(q)))
+			t.default = W(G(Object(p.c)(V)))
 		},
 		"./src/reddit/reducers/features/powerups/index.ts": function(e, t, n) {
 			"use strict";
@@ -5136,4 +5140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.668976a0731b5aba25d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.752625dc9902940075d9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.464f464bd1d3adcdc400.js
-// Retrieved at 1/19/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.08a28e5c913f8ed6c1a9.js
+// Retrieved at 1/19/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3327,10 +3327,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("156317"),
+				buildNumber: Object(r.c)("156318"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1642616796"),
+				buildTimestamp: Object(r.b)("1642618862"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5924,14 +5924,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c62257fbbfde673008b8c4fa9a59c562cd204d00a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cb072362f554d8f0202c09dc717f193dfb115a8d1-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "62257fbbfde673008b8c4fa9a59c562cd204d00a-production",
+						release: "b072362f554d8f0202c09dc717f193dfb115a8d1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6448,7 +6448,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "62257fbbfde673008b8c4fa9a59c562cd204d00a-production",
+						releaseClient: "b072362f554d8f0202c09dc717f193dfb115a8d1-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -18307,7 +18307,7 @@
 				},
 				Be = (e, t) => Object(s.a)((e, {
 					pageLayer: t
-				}) => Q(t), ue, D.m, (e, t, i) => {
+				}) => Q(t), ue, D.r, (e, t, i) => {
 					const n = e || Boolean(t);
 					return Boolean(n && i)
 				})(e, t),
@@ -21260,54 +21260,56 @@
 				_ = (e, t) => !(!e || !t || Object(o.e)(t) || !t.authorInfo) && Object(d.b)(e) === Object(d.b)(t.authorInfo),
 				m = e => e && !Object(o.e)(e) && e.authorInfo ? Object(d.b)(e.authorInfo) : null;
 			t.a = e => {
+				var t, i, o;
 				const {
-					associatedAward: t,
-					authorInfo: i,
-					awardings: o,
-					content: l,
-					createdAt: p,
-					distinguishedAs: h,
-					editedAt: f,
-					id: b,
-					isGildable: g,
-					isScoreHidden: w,
-					isStickied: v,
-					isSaved: y,
-					parent: E,
-					permalink: T,
-					postInfo: S,
-					score: O,
-					voteState: I
-				} = e, R = "ADMIN" === h, F = "MODERATOR" === h, C = o ? Object(r.b)(o) : void 0, N = i && i.__typename === u.c.AvailableRedditor && i.isCakeDayNow || !1, j = i && i.__typename === u.c.AvailableRedditor && i.isPremiumMember || !1, A = {
-					allAwardings: C,
-					associatedAward: t,
-					author: i && Object(d.b)(i) || n.E,
-					authorId: i && i.id || "",
-					body: l && l.html || "",
-					bodyMD: l && l.markdown || "",
-					created: Object(r.e)(p) / 1e3,
-					distinguishType: h || "",
-					editedAt: Object(r.e)(f) / 1e3 || null,
-					id: b,
-					isAdmin: R,
-					isAuthorCakeday: N,
-					isAuthorPremium: j,
-					isGildable: g,
-					isMod: F,
-					isOp: _(i, S),
-					isSaved: y,
-					isScoreHidden: w,
-					isStickied: v,
-					markdown: l && l.markdown || "",
+					associatedAward: l,
+					authorInfo: p,
+					awardings: h,
+					content: f,
+					createdAt: b,
+					distinguishedAs: g,
+					editedAt: w,
+					id: v,
+					isGildable: y,
+					isScoreHidden: E,
+					isStickied: T,
+					isSaved: S,
+					parent: O,
+					permalink: I,
+					postInfo: R,
+					score: F,
+					voteState: C
+				} = e, N = "ADMIN" === g, j = "MODERATOR" === g, A = h ? Object(r.b)(h) : void 0, x = p && p.__typename === u.c.AvailableRedditor && p.isCakeDayNow || !1, D = p && p.__typename === u.c.AvailableRedditor && p.isPremiumMember || !1, P = {
+					allAwardings: A,
+					associatedAward: l,
+					author: p && Object(d.b)(p) || n.E,
+					authorId: p && p.id || "",
+					body: f && f.html || "",
+					bodyMD: f && f.markdown || "",
+					created: Object(r.e)(b) / 1e3,
+					distinguishType: g || "",
+					editedAt: Object(r.e)(w) / 1e3 || null,
+					id: v,
+					isAdmin: N,
+					isAuthorCakeday: x,
+					isAuthorPremium: D,
+					isGildable: y,
+					isMod: j,
+					isOp: _(p, R),
+					isSaved: S,
+					isScoreHidden: E,
+					isStickied: T,
+					markdown: f && f.markdown || "",
 					media: c(e),
-					parentId: E && E.id,
-					permalink: `https://www.reddit.com${T}`,
-					postAuthor: m(S),
-					postId: S && S.id || "",
-					postTitle: S && S.title || null,
-					score: O || 0,
+					parentId: O && O.id,
+					permalink: `https://www.reddit.com${I}`,
+					postAuthor: m(R),
+					postId: R && R.id || "",
+					postTitle: R && R.title || null,
+					profileImage: null === (o = null === (i = null === (t = null == p ? void 0 : p.profile) || void 0 === t ? void 0 : t.styles) || void 0 === i ? void 0 : i.legacyIcon) || void 0 === o ? void 0 : o.url,
+					score: F || 0,
 					subredditId: "",
-					voteState: Object(r.d)(I),
+					voteState: Object(r.d)(C),
 					...Object(s.a)(e),
 					collapsed: !1,
 					collapsedReason: null,
@@ -21321,7 +21323,7 @@
 					userReports: [],
 					isSystem: !1
 				};
-				return e.postInfo && Object(a.n)(e.postInfo) ? A.subredditId = e.postInfo.subreddit.id : e.postInfo && Object(a.l)(e.postInfo) && (A.subredditId = e.postInfo.profile.id), A
+				return e.postInfo && Object(a.n)(e.postInfo) ? P.subredditId = e.postInfo.subreddit.id : e.postInfo && Object(a.l)(e.postInfo) && (P.subredditId = e.postInfo.profile.id), P
 			}
 		},
 		"./src/reddit/helpers/graphql/normalizeDateTime/index.ts": function(e, t, i) {
@@ -37656,42 +37658,54 @@
 		},
 		"./src/reddit/selectors/searchResults.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "e", (function() {
+			i.d(t, "i", (function() {
 				return m
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "j", (function() {
 				return p
 			})), i.d(t, "b", (function() {
 				return h
 			})), i.d(t, "c", (function() {
 				return f
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "f", (function() {
 				return b
-			})), i.d(t, "d", (function() {
-				return g
-			})), i.d(t, "a", (function() {
-				return w
-			})), i.d(t, "o", (function() {
-				return v
-			})), i.d(t, "n", (function() {
-				return y
-			})), i.d(t, "p", (function() {
-				return E
-			})), i.d(t, "r", (function() {
-				return T
-			})), i.d(t, "k", (function() {
-				return S
-			})), i.d(t, "q", (function() {
-				return O
-			})), i.d(t, "l", (function() {
-				return I
-			})), i.d(t, "m", (function() {
-				return R
-			})), i.d(t, "h", (function() {
-				return F
 			})), i.d(t, "g", (function() {
+				return g
+			})), i.d(t, "o", (function() {
+				return w
+			})), i.d(t, "h", (function() {
+				return v
+			})), i.d(t, "a", (function() {
+				return y
+			})), i.d(t, "e", (function() {
+				return E
+			})), i.d(t, "u", (function() {
+				return T
+			})), i.d(t, "s", (function() {
+				return S
+			})), i.d(t, "t", (function() {
+				return O
+			})), i.d(t, "v", (function() {
+				return I
+			})), i.d(t, "x", (function() {
+				return R
+			})), i.d(t, "p", (function() {
+				return F
+			})), i.d(t, "w", (function() {
 				return C
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "q", (function() {
 				return N
+			})), i.d(t, "r", (function() {
+				return j
+			})), i.d(t, "m", (function() {
+				return A
+			})), i.d(t, "k", (function() {
+				return x
+			})), i.d(t, "l", (function() {
+				return D
+			})), i.d(t, "n", (function() {
+				return P
+			})), i.d(t, "d", (function() {
+				return L
 			}));
 			var n = i("./src/lib/initializeClient/installReducer.ts"),
 				r = i("./node_modules/redux/es/redux.js"),
@@ -37737,23 +37751,35 @@
 				}) => e.listings.authorOrder.api.pending[t],
 				b = (e, {
 					listingKey: t
-				}) => e.listings.listingOrder.identifiers[t] || [],
+				}) => e.listings.commentOrder.api.error[t],
 				g = (e, {
 					listingKey: t
-				}) => e.listings.communityOrder.identifiers[t] || [],
+				}) => e.listings.commentOrder.api.pending[t],
 				w = (e, {
 					listingKey: t
-				}) => e.listings.authorOrder.identifiers[t] || [],
+				}) => e.listings.listingOrder.identifiers[t] || [],
 				v = (e, {
 					listingKey: t
-				}) => e.listings.communityOrder.loadMore[t],
+				}) => e.listings.communityOrder.identifiers[t] || [],
 				y = (e, {
 					listingKey: t
-				}) => e.listings.authorOrder.loadMore[t],
+				}) => e.listings.authorOrder.identifiers[t] || [],
 				E = (e, {
 					listingKey: t
+				}) => e.listings.commentOrder.identifiers[t] || [],
+				T = (e, {
+					listingKey: t
+				}) => e.listings.communityOrder.loadMore[t],
+				S = (e, {
+					listingKey: t
+				}) => e.listings.authorOrder.loadMore[t],
+				O = (e, {
+					listingKey: t
+				}) => e.listings.commentOrder.loadMore[t],
+				I = (e, {
+					listingKey: t
 				}) => e.listings.postOrder.treatment[t],
-				T = e => {
+				R = e => {
 					const t = e.search.searchQuery;
 					if (!t) return _;
 					const i = e.search.typeahead.idsByQuery[t.toLowerCase()];
@@ -37763,18 +37789,23 @@
 						n.push(e.search.typeahead.models[t])
 					}), n
 				},
-				S = e => e.search.typeahead.idsByQuery,
-				O = e => {
+				F = e => e.search.typeahead.idsByQuery,
+				C = e => {
 					const t = e.listings.activeKey;
 					return e.search.viewTreatment[t]
 				},
-				I = e => e.search.isDropdownOpen,
-				R = e => e.search.isSubredditSearchEnabled,
-				F = (e, t) => !!p(e, t) || !m(e, t) && g(e, t).length > 0,
-				C = (e, t) => !!f(e, t) || !h(e, t) && w(e, t).length > 0,
-				N = (e, t) => !!((e, {
+				N = e => e.search.isDropdownOpen,
+				j = e => e.search.isSubredditSearchEnabled,
+				A = (e, t) => !!p(e, t) || !m(e, t) && v(e, t).length > 0,
+				x = (e, t) => !!f(e, t) || !h(e, t) && y(e, t).length > 0,
+				D = (e, t) => !!g(e, t) || !b(e, t) && E(e, t).length > 0,
+				P = (e, t) => !!((e, {
 					listingKey: t
-				}) => e.listings.postOrder.api.pending[t])(e, t) || Object(c.O)(e, t).length > 0
+				}) => e.listings.postOrder.api.pending[t])(e, t) || Object(c.O)(e, t).length > 0,
+				L = (e, t) => {
+					var i, n;
+					return null === (n = null === (i = e.pages) || void 0 === i ? void 0 : i.search) || void 0 === n ? void 0 : n.comments.models[t]
+				}
 		},
 		"./src/reddit/selectors/seo/index.ts": function(e, t, i) {
 			"use strict";
@@ -40925,7 +40956,7 @@
 			e.exports = JSON.parse('{"id":"34910619f1e9"}')
 		},
 		"./src/redditGQL/operations/GeneralSearch.json": function(e) {
-			e.exports = JSON.parse('{"id":"c9708823c382"}')
+			e.exports = JSON.parse('{"id":"b7f1747b0ab7"}')
 		},
 		"./src/redditGQL/operations/ModeratedSubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"6103843fc7be"}')
@@ -45566,4 +45597,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.464f464bd1d3adcdc400.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.08a28e5c913f8ed6c1a9.js.map

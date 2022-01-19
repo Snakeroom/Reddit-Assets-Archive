@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.273016f9392ce88519c8.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.1ef1d725c5e534e488a1.js
+// Retrieved at 1/19/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -1486,8 +1486,8 @@
 				F = s("./src/reddit/selectors/user.ts"),
 				M = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
 				S = s.n(M);
-			const A = 400;
-			class D extends d.a.Component {
+			const D = 400;
+			class A extends d.a.Component {
 				constructor() {
 					super(...arguments), this.elementRef = null, this.state = {
 						query: ""
@@ -1497,7 +1497,7 @@
 						}, this.dispatchOnChange)
 					}, this.dispatchOnChange = P()(() => {
 						this.props.onChange(this.state.query)
-					}, A), this.focusOnInput = () => {
+					}, D), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
 					}
 				}
@@ -1540,7 +1540,7 @@
 			const T = Object(u.c)({
 				isNightMode: F.W
 			});
-			var z = Object(m.b)(T)(D),
+			var z = Object(m.b)(T)(A),
 				B = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
 				L = s.n(B);
 			const R = 4,
@@ -2190,41 +2190,6 @@
 				}
 			}
 		},
-		"./src/reddit/controls/Input/index.tsx": function(e, t, s) {
-			"use strict";
-			var a = s("./src/lib/lessComponent.tsx"),
-				o = s("./src/reddit/controls/Input/index.m.less"),
-				r = s.n(o);
-			t.a = a.a.input("input", r.a)
-		},
-		"./src/reddit/controls/LoadingIcon/index.m.less": function(e, t, s) {
-			e.exports = {
-				loadingIcon: "_3LwT7hgGcSjmJ7ng7drAuq",
-				spin: "ibDwUVR1CAykturOgqOS5",
-				mCentered: "_2qr28EeyPvBWAsPKl-KuWN"
-			}
-		},
-		"./src/reddit/controls/LoadingIcon/index.tsx": function(e, t, s) {
-			"use strict";
-			var a = s("./node_modules/react/index.js"),
-				o = s.n(a),
-				r = s("./src/lib/classNames/index.ts"),
-				n = s("./src/reddit/controls/LoadingIcon/index.m.less"),
-				i = s.n(n);
-			t.a = ({
-				center: e,
-				className: t,
-				sizePx: s = 10
-			}) => o.a.createElement("div", {
-				className: Object(r.a)(i.a.loadingIcon, t, {
-					[i.a.mCentered]: e
-				}),
-				style: {
-					"--sizePx": `${s}px`
-				},
-				"data-testid": "LoadingIcon"
-			})
-		},
 		"./src/reddit/helpers/economics/setupSubredditPremiumButton.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -2729,33 +2694,6 @@
 				d: "M13 9.0074c-.777 0-1.406-.63-1.406-1.406 0-.777.629-1.407 1.406-1.407.777 0 1.406.63 1.406 1.407 0 .776-.629 1.406-1.406 1.406m-3 5.581c-2.206 0-4-1.57-4-3.5 0-.276.224-.5.5-.5h7c.276 0 .5.224.5.5 0 1.93-1.794 3.5-4 3.5m-3-8.394c.777 0 1.406.63 1.406 1.407 0 .776-.629 1.406-1.406 1.406-.777 0-1.406-.63-1.406-1.406 0-.777.629-1.407 1.406-1.407m3-4.194c-4.411 0-8 3.588-8 8 0 4.411 3.589 8 8 8s8-3.589 8-8c0-4.412-3.589-8-8-8"
 			}))
 		},
-		"./src/reddit/icons/svgs/Trash2/index.m.less": function(e, t, s) {
-			e.exports = {
-				icon: "_1Fa4RPHlhrfUZuNaXK2-eP"
-			}
-		},
-		"./src/reddit/icons/svgs/Trash2/index.tsx": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return c
-			}));
-			var a = s("./node_modules/react/index.js"),
-				o = s.n(a),
-				r = s("./src/lib/classNames/index.ts"),
-				n = s("./src/reddit/icons/svgs/Trash2/index.m.less"),
-				i = s.n(n);
-			const c = e => o.a.createElement("svg", {
-				className: Object(r.a)(i.a.icon, e.className),
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg",
-				onClick: e.onClick
-			}, o.a.createElement("path", {
-				d: "M16.5,2H12.71l-.85-.85A.5.5,0,0,0,11.5,1h-3a.5.5,0,0,0-.35.15L7.29,2H3.5a.5.5,0,0,0-.5.5v1a.5.5,0,0,0,.5.5h13a.5.5,0,0,0,.5-.5v-1A.5.5,0,0,0,16.5,2Z"
-			}), o.a.createElement("path", {
-				d: "M16.5,5H3.5a.5.5,0,0,0-.5.5v12A1.5,1.5,0,0,0,4.5,19h11A1.5,1.5,0,0,0,17,17.5V5.5A.5.5,0,0,0,16.5,5ZM6.75,15.5a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Zm4,0a.75.75,0,0,1-1.5,0v-7a.75.75,0,0,1,1.5,0Z"
-			}));
-			t.b = c
-		},
 		"./src/reddit/icons/svgs/Twinkle/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -3190,8 +3128,8 @@
 				F = s("./src/reddit/components/ScrollAnimation/index.tsx"),
 				M = s("./src/reddit/helpers/richTextEditor/index.ts"),
 				S = s("./src/reddit/pages/meta/MembershipPaywallPage/getSrc.ts"),
-				A = s("./src/reddit/icons/svgs/FormattingBold/index.tsx"),
-				D = s("./src/reddit/icons/svgs/FormattingHyperlink/index.tsx"),
+				D = s("./src/reddit/icons/svgs/FormattingBold/index.tsx"),
+				A = s("./src/reddit/icons/svgs/FormattingHyperlink/index.tsx"),
 				T = s("./src/reddit/icons/svgs/FormattingItalics/index.tsx"),
 				z = s("./src/reddit/icons/svgs/FormattingMonospace/index.tsx"),
 				B = s("./src/reddit/icons/svgs/FormattingOrderedList/index.tsx"),
@@ -3530,11 +3468,11 @@
 						className: Object(m.a)(re.a.gifIcon)
 					})), o.a.createElement("div", {
 						className: re.a.divider
-					}), o.a.createElement(A.a, {
+					}), o.a.createElement(D.a, {
 						className: re.a.icon
 					}), o.a.createElement(T.a, {
 						className: re.a.icon
-					}), o.a.createElement(D.a, {
+					}), o.a.createElement(A.a, {
 						className: re.a.icon
 					}), o.a.createElement(R.a, {
 						className: re.a.icon
@@ -3873,7 +3811,7 @@
 				Fe = s.n(Ie);
 			const Me = 1e3,
 				Se = 66;
-			class Ae extends o.a.Component {
+			class De extends o.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						currentBadgeIdx: 0
@@ -3929,7 +3867,7 @@
 					}))))
 				}
 			}
-			const De = Object(i.c)({
+			const Ae = Object(i.c)({
 				styleBadges: (e, {
 					subredditId: t
 				}) => {
@@ -3940,7 +3878,7 @@
 				},
 				username: e => e.user.account && `u/${e.user.account.displayText}` || "u/username"
 			});
-			var Te = Object(r.b)(De)(Ae),
+			var Te = Object(r.b)(Ae)(De),
 				ze = s("./src/reddit/pages/meta/MembershipPaywallPage/Benefits/index.m.less"),
 				Be = s.n(ze);
 			const Le = [{
@@ -4361,8 +4299,8 @@
 				Ft = s("./src/reddit/controls/Button/index.tsx"),
 				Mt = s("./node_modules/react-router-redux/es/index.js"),
 				St = s("./src/reddit/actions/economics/subredditPremium/actionCreators.ts"),
-				At = s("./src/reddit/actions/economics/subredditPremium/thunkedActions.ts"),
-				Dt = s("./src/reddit/actions/governance/errorToast.ts"),
+				Dt = s("./src/reddit/actions/economics/subredditPremium/thunkedActions.ts"),
+				At = s("./src/reddit/actions/governance/errorToast.ts"),
 				Tt = s("./src/reddit/actions/shortcuts/close.ts"),
 				zt = s("./src/reddit/contexts/ApiContext.tsx"),
 				Bt = s("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -4485,9 +4423,9 @@
 					subreddit: t,
 					onComplete: s
 				}) => ({
-					onError: t => Object(Dt.a)(e, t),
+					onError: t => Object(At.a)(e, t),
 					onPaymentSuccessful: a => {
-						a ? e(Object(At.g)(t.id, !0)).then(() => e(Object(Tt.a)(() => {}))).then(() => s && s()).then(() => e(Object(St.c)({
+						a ? e(Object(Dt.g)(t.id, !0)).then(() => e(Object(Tt.a)(() => {}))).then(() => s && s()).then(() => e(Object(St.c)({
 							subredditId: t.id,
 							initialView: Zt.c.MyBadges
 						}))) : e(Object(Mt.b)(t.url))
@@ -4950,19 +4888,19 @@
 					text: "You'll always find the best of the best content on here, and you know it'll be from the original creator.",
 					username: "Jachael123_"
 				}]).slice(0, 3),
-				As = 1e4;
-			class Ds extends o.a.Component {
+				Ds = 1e4;
+			class As extends o.a.Component {
 				constructor() {
 					super(...arguments), this.timeoutRef = null, this.state = {
 						currentSlideIdx: 0
 					}, this.gotoNextSlide = () => {
 						this.timeoutRef && clearInterval(this.timeoutRef), this.setState({
 							currentSlideIdx: (this.state.currentSlideIdx + 1) % this.props.testimonies.length
-						}), this.timeoutRef = window.setTimeout(this.gotoNextSlide, As)
+						}), this.timeoutRef = window.setTimeout(this.gotoNextSlide, Ds)
 					}
 				}
 				componentDidMount() {
-					this.timeoutRef = window.setTimeout(this.gotoNextSlide, As)
+					this.timeoutRef = window.setTimeout(this.gotoNextSlide, Ds)
 				}
 				componentWillUnmount() {
 					this.timeoutRef && clearInterval(this.timeoutRef)
@@ -5070,7 +5008,7 @@
 					}))))
 				}
 			}
-			Ds.defaultProps = {
+			As.defaultProps = {
 				testimonies: Ss
 			};
 			var Ts = s("./src/reddit/pages/meta/MembershipPaywallPage/Thanks/index.m.less"),
@@ -5093,7 +5031,7 @@
 						className: zs.a.title
 					}, v.fbt._("The Community Thanks You", null, {
 						hk: "28CsBt"
-					})), n.testimonials && o.a.createElement(Ds, {
+					})), n.testimonials && o.a.createElement(As, {
 						flatDisplay: !0
 					}), n.testimonials && o.a.createElement("div", {
 						className: zs.a.divider
@@ -5257,7 +5195,7 @@
 						...x.o(t),
 						subreddit: x.jb(t)
 					})
-				}, o.a.createElement(Ds, null)), s && o.a.createElement(b, {
+				}, o.a.createElement(As, null)), s && o.a.createElement(b, {
 					fireOnce: !0,
 					onEnter: t => ({
 						source: "meta",
@@ -5448,4 +5386,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.273016f9392ce88519c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.1ef1d725c5e534e488a1.js.map

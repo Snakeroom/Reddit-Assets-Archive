@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.58ac16b25872b9713496.js
-// Retrieved at 1/18/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.fce4e0595c67b14e4a97.js
+// Retrieved at 1/19/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/actions/publicAccessNetwork/votes.ts": function(e, t, s) {
@@ -208,9 +208,9 @@
 			})), s.d(t, "d", (function() {
 				return k
 			})), s.d(t, "l", (function() {
-				return y
-			})), s.d(t, "t", (function() {
 				return L
+			})), s.d(t, "t", (function() {
+				return y
 			})), s.d(t, "u", (function() {
 				return j
 			})), s.d(t, "r", (function() {
@@ -255,8 +255,8 @@
 				N = n.a.header("ModalHeader", u.a),
 				I = n.a.div("ModalTitle", u.a),
 				k = n.a.div("ModalAnnotation", u.a),
-				y = n.a.div("ModalMain", u.a),
-				L = n.a.textarea("TextArea", u.a),
+				L = n.a.div("ModalMain", u.a),
+				y = n.a.textarea("TextArea", u.a),
 				j = n.a.wrapped(c.l, "WarningButton", u.a),
 				O = n.a.wrapped(c.l, "PrimaryButton", u.a),
 				S = n.a.wrapped(c.o, "CancelButton", u.a),
@@ -327,8 +327,8 @@
 				E = s.n(w);
 			const {
 				fbt: _
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = d.a.input("TextBox", E.a), N = d.a.wrapped(m.i, "ModalHeader", E.a), I = d.a.wrapped(x.a, "TextButton", E.a), k = d.a.div("FooterRow", E.a), y = e => `${e<10?"0":""}${e}`;
-			class L extends n.a.Component {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = d.a.input("TextBox", E.a), N = d.a.wrapped(m.i, "ModalHeader", E.a), I = d.a.wrapped(x.a, "TextButton", E.a), k = d.a.div("FooterRow", E.a), L = e => `${e<10?"0":""}${e}`;
+			class y extends n.a.Component {
 				constructor(e) {
 					super(e), this.componentDidMount = () => {
 						const e = Math.trunc((this.context.currentTime || 0) / 60),
@@ -336,8 +336,8 @@
 						this.setState({
 							minutes: e,
 							seconds: t,
-							displayMinutes: y(e),
-							displaySeconds: y(t),
+							displayMinutes: L(e),
+							displaySeconds: L(t),
 							useTimestamp: !1
 						})
 					}, this.onTypeChange = e => {
@@ -361,11 +361,11 @@
 						})
 					}, this.onSecondsInputBlur = () => {
 						this.setState({
-							displaySeconds: y(this.state.seconds)
+							displaySeconds: L(this.state.seconds)
 						})
 					}, this.onMinutesInputBlur = () => {
 						this.setState({
-							displayMinutes: y(this.state.minutes)
+							displayMinutes: L(this.state.minutes)
 						})
 					}, this.handleClickCopy = () => {
 						this.props.onClose(this.url)
@@ -456,7 +456,7 @@
 					}))))))
 				}
 			}
-			L.contextType = p.a, t.default = Object(c.a)(L)
+			y.contextType = p.a, t.default = Object(c.a)(y)
 		},
 		"./src/reddit/components/PublicAccessNetwork/Modals/VideoShare/VideoShareModalStyles.m.less": function(e, t, s) {
 			e.exports = {
@@ -484,9 +484,9 @@
 			})), s.d(t, "c", (function() {
 				return I
 			})), s.d(t, "d", (function() {
-				return y
-			})), s.d(t, "b", (function() {
 				return L
+			})), s.d(t, "b", (function() {
+				return y
 			})), s.d(t, "g", (function() {
 				return j
 			})), s.d(t, "h", (function() {
@@ -545,15 +545,15 @@
 					className: g.a.volumeIcon
 				})),
 				k = o.a.wrapped(u.a, "menuIcon", g.a),
-				y = "rpan-overlay-menu",
-				L = ({
+				L = "rpan-overlay-menu",
+				y = ({
 					onClick: e,
 					onHideClick: t,
 					onReportClick: s
 				}) => r.a.createElement(i.b, {
 					className: g.a.menuButton,
 					defaultButtonOutline: !0,
-					dropdownId: y,
+					dropdownId: L,
 					icon: r.a.createElement(k, null),
 					onClick: e
 				}, r.a.createElement(l.b, {
@@ -562,7 +562,7 @@
 						hk: "4lTvzy"
 					}),
 					iconWrapperClassName: g.a.overflowItemIconWrapper,
-					key: `${y}-rules`,
+					key: `${L}-rules`,
 					onClick: () => Object(c.e)(d.S, c.d.BLANK)
 				}, r.a.createElement(x.a, {
 					className: g.a.overflowItemIcon
@@ -572,7 +572,7 @@
 						hk: "3KZliI"
 					}),
 					iconWrapperClassName: g.a.overflowItemIconWrapper,
-					key: `${y}-community`,
+					key: `${L}-community`,
 					onClick: () => Object(c.e)(d.Q, c.d.BLANK)
 				}, r.a.createElement(v.c, {
 					className: g.a.overflowItemIcon
@@ -582,7 +582,7 @@
 						hk: "4oVcnd"
 					}),
 					iconWrapperClassName: g.a.overflowItemIconWrapper,
-					key: `${y}-report`,
+					key: `${L}-report`,
 					onClick: s
 				}, r.a.createElement(C.a, {
 					className: g.a.overflowItemIcon
@@ -592,7 +592,7 @@
 						hk: "1qXTIB"
 					}),
 					iconWrapperClassName: g.a.overflowItemIconWrapper,
-					key: `${y}-hide`,
+					key: `${L}-hide`,
 					onClick: t
 				}, r.a.createElement(h.a, {
 					className: g.a.overflowItemIcon
@@ -784,8 +784,8 @@
 				N = s("./src/reddit/icons/fonts/Share/index.tsx"),
 				I = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
 				k = s("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				y = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
-				L = s("./src/reddit/icons/svgs/Hide/index.tsx"),
+				L = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
+				y = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				j = s("./src/reddit/icons/svgs/Lock/index.tsx"),
 				O = s("./src/reddit/icons/svgs/Plus/index.tsx"),
 				S = s("./src/reddit/icons/svgs/Remove/index.tsx"),
@@ -1020,7 +1020,7 @@
 						width: "16px"
 					},
 					src: t
-				}) : n.a.createElement(y.a, {
+				}) : n.a.createElement(L.a, {
 					className: W.a.overflowItemIcon,
 					style: {
 						borderRadius: "16px",
@@ -1046,7 +1046,7 @@
 				iconWrapperClassName: W.a.overflowItemIconWrapper,
 				key: `${ne}-hide`,
 				onClick: t
-			}, n.a.createElement(L.a, {
+			}, n.a.createElement(y.a, {
 				className: W.a.overflowItemIcon
 			})), o && n.a.createElement(n.a.Fragment, null, n.a.createElement(x.b, {
 				className: W.a.headerItem,
@@ -1504,6 +1504,19 @@
 				className: `${Object(r.b)("menu",e.isFilled)} ${e.className}`
 			})
 		},
+		"./src/reddit/icons/fonts/Share/index.tsx": function(e, t, s) {
+			"use strict";
+			var a = s("./node_modules/react/index.js"),
+				n = s.n(a),
+				r = s("./src/lib/classNames/index.ts"),
+				o = s("./src/reddit/icons/fonts/helpers.tsx"),
+				c = s("./src/reddit/icons/fonts/commonStyles.m.less"),
+				i = s.n(c);
+			t.a = e => n.a.createElement("i", {
+				className: Object(r.a)(Object(o.b)("share", e.isFilled), i.a.shareIcon, e.className)
+			})
+		},
+		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {},
 		"./src/reddit/icons/svgs/CircledPlanet/index.tsx": function(e, t, s) {
 			"use strict";
 			var a = s("./node_modules/react/index.js"),
@@ -1582,6 +1595,23 @@
 				fill: "inherit",
 				d: "M32.5,17.5v-2.6c0-6.8-5.6-12.4-12.4-12.4h-0.2c-6.8,0-12.4,5.6-12.4,12.4v2.6C6.1,17.5,5,18.6,5,20v10c0,5.5,4.5,10,10,10h10c5.5,0,10-4.5,10-10V20C35,18.6,33.9,17.5,32.5,17.5z M12.5,17.5v-2.6c0-4.1,3.3-7.4,7.4-7.4h0.2c4.1,0,7.4,3.3,7.4,7.4v2.6H12.5z"
 			})))
+		},
+		"./src/reddit/icons/svgs/Plus/index.tsx": function(e, t, s) {
+			"use strict";
+			var a = s("./node_modules/react/index.js"),
+				n = s.n(a);
+			t.a = e => n.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 20 20",
+				version: "1.1"
+			}, n.a.createElement("g", {
+				stroke: "none"
+			}, n.a.createElement("g", {
+				transform: "translate(-34.000000, -136.000000)",
+				fill: "inherit"
+			}, n.a.createElement("path", {
+				d: "M45.2,147.2 L48.8,147.2 C49.46272,147.2 50,146.66272 50,146 C50,145.33728 49.46272,144.8 48.8,144.8 L45.2,144.8 L45.2,141.2 C45.2,140.53728 44.66272,140 44,140 C43.33728,140 42.8,140.53728 42.8,141.2 L42.8,144.8 L39.2,144.8 C38.53728,144.8 38,145.33728 38,146 C38,146.66272 38.53728,147.2 39.2,147.2 L42.8,147.2 L42.8,150.8 C42.8,151.46272 43.33728,152 44,152 C44.66272,152 45.2,151.46272 45.2,150.8 L45.2,147.2 Z"
+			}))))
 		},
 		"./src/reddit/icons/svgs/PublicAccessNetwork/index.tsx": function(e, t, s) {
 			"use strict";
@@ -1915,7 +1945,7 @@
 			})), s.d(t, "m", (function() {
 				return I
 			})), s.d(t, "i", (function() {
-				return L
+				return y
 			})), s.d(t, "d", (function() {
 				return M
 			})), s.d(t, "h", (function() {
@@ -2041,7 +2071,7 @@
 						a = t.filter(e => !s.has(e));
 					if (a.length) return a[0]
 				}),
-				y = Object(a.a)((e, {
+				L = Object(a.a)((e, {
 					streamIdFromPath: t
 				}) => t, E, (e, {
 					related: t,
@@ -2061,10 +2091,10 @@
 					});
 					return c ? c.post.id : void 0
 				}),
-				L = Object(n.a)(Object(a.a)(y, E, (e, t) => e ? t[e] : void 0)),
+				y = Object(n.a)(Object(a.a)(L, E, (e, t) => e ? t[e] : void 0)),
 				j = Object(a.a)((e, {
 					streamIdFromPath: t
-				}) => t ? Object(r.g)(t) : void 0, y, h, c.h, (e, {
+				}) => t ? Object(r.g)(t) : void 0, L, h, c.h, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: a
@@ -2137,4 +2167,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.58ac16b25872b9713496.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.fce4e0595c67b14e4a97.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.1e68cd3f7a873b551cb3.js
-// Retrieved at 1/18/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.af45219b5b141df650ad.js
+// Retrieved at 1/19/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -1799,12 +1799,13 @@
 				b = n("./src/reddit/selectors/commentSelector.ts"),
 				h = n("./src/reddit/selectors/subreddit.ts");
 			const y = (e, t) => {
-				const n = Object(b.b)(e, t),
-					r = Object(h.G)(e, t);
+				var n;
+				const r = null !== (n = t.comment) && void 0 !== n ? n : Object(b.b)(e, t),
+					s = Object(h.G)(e, t);
 				return {
-					comment: n,
-					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
-					subredditOrProfile: r
+					comment: r,
+					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
+					subredditOrProfile: s
 				}
 			};
 			var O = Object(o.b)(() => Object(i.a)(y, f.j, (e, t) => ({
@@ -1838,12 +1839,13 @@
 				}
 			}));
 			const x = (e, t) => {
-				const n = Object(b.b)(e, t),
-					r = Object(h.G)(e, t);
+				var n;
+				const r = null !== (n = t.comment) && void 0 !== n ? n : Object(b.b)(e, t),
+					s = Object(h.G)(e, t);
 				return {
-					comment: n,
-					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
-					subredditOrProfile: r
+					comment: r,
+					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
+					subredditOrProfile: s
 				}
 			};
 			var E = Object(o.b)(() => Object(i.a)(x, e => e))(e => s.a.createElement(m, {
@@ -4166,4 +4168,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.1e68cd3f7a873b551cb3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.af45219b5b141df650ad.js.map
