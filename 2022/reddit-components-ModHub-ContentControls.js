@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.a2e4baf76b3a97e68585.js
-// Retrieved at 1/18/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.0edbf274238a8e6458b5.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -123,10 +123,10 @@
 					source: "post_requirements",
 					action: "save",
 					noun: "settings",
-					...R.o(t),
+					...R.m(t),
 					postRequirement: q(e),
-					subreddit: R.jb(t),
-					userSubreddit: R.sb(t)
+					subreddit: R.hb(t),
+					userSubreddit: R.qb(t)
 				});
 			var T = n("./src/reddit/selectors/activeModalId.ts"),
 				B = n("./src/reddit/selectors/contentControls.ts"),
@@ -137,8 +137,8 @@
 				M = 2,
 				O = 300,
 				D = 400,
-				j = 90,
-				I = 1e5,
+				I = 90,
+				j = 1e5,
 				A = 15,
 				H = 40,
 				W = 5,
@@ -657,19 +657,19 @@
 				})))
 			}
 
-			function je(e) {
+			function Ie(e) {
 				return ["0.5fr", ...Array.from({
 					length: e - 2
 				}).map(e => "1fr"), "0.5fr"].join(" ")
 			}
-			var Ie = n("./src/reddit/controls/DiscreteSlideSelector/Labels/index.m.less"),
-				Ae = n.n(Ie);
+			var je = n("./src/reddit/controls/DiscreteSlideSelector/Labels/index.m.less"),
+				Ae = n.n(je);
 
 			function He(e) {
 				return d.a.createElement("div", {
 					className: Object(K.a)(Ae.a.container, e.className),
 					style: {
-						gridTemplateColumns: je(e.options.length)
+						gridTemplateColumns: Ie(e.options.length)
 					}
 				}, e.options.map(t => d.a.createElement("div", {
 					className: Object(K.a)(Ae.a.label, {
@@ -695,7 +695,7 @@
 				return d.a.createElement("div", {
 					className: Object(K.a)(Ve.a.container, e.className),
 					style: {
-						gridTemplateColumns: je(e.numStops)
+						gridTemplateColumns: Ie(e.numStops)
 					},
 					onMouseUp: e => {
 						t.current = !1
@@ -894,7 +894,7 @@
 							source: "community_settings",
 							action: "add",
 							noun: "auto_report_keyword",
-							...Object(R.o)(t),
+							...Object(R.m)(t),
 							setting: {
 								value: e,
 								oldValue: ""
@@ -903,7 +903,7 @@
 							source: "community_settings",
 							action: "remove",
 							noun: "auto_report_keyword",
-							...Object(R.o)(t),
+							...Object(R.m)(t),
 							setting: {
 								value: e,
 								oldValue: ""
@@ -1196,7 +1196,7 @@
 					}, this.onRepostFrequencyChange = e => {
 						const {
 							formState: t
-						} = this.props, n = le(e.target.value, 1, j);
+						} = this.props, n = le(e.target.value, 1, I);
 						this.props.onChange({
 							repostFrequency: {
 								...t.repostFrequency,
@@ -1349,7 +1349,7 @@
 					}, d.a.createElement("textarea", {
 						"aria-invalid": !!n.length,
 						className: fe.a.domainsTextarea,
-						maxLength: I,
+						maxLength: j,
 						onBlur: this.onLinkDomainsBlur,
 						onChange: this.onLinkDomainsTextChange,
 						placeholder: s.fbt._("Example: website.com", null, {
@@ -1375,7 +1375,7 @@
 						label: s.fbt._("number of days", null, {
 							hk: "1sPFop"
 						}),
-						max: j,
+						max: I,
 						min: 1,
 						onChange: this.onRepostFrequencyChange,
 						type: "number",
@@ -1501,7 +1501,7 @@
 					titleTextMinLength: null
 				},
 				Dt = e => e.filter(e => !!e);
-			var jt = e => {
+			var It = e => {
 					const t = {
 							...Ot,
 							bodyRestrictionPolicy: e.bodyRequirement.restrictionPolicy,
@@ -1523,15 +1523,15 @@
 					}
 					return t
 				},
-				It = n("./node_modules/lodash/isEqual.js"),
-				At = n.n(It),
+				jt = n("./node_modules/lodash/isEqual.js"),
+				At = n.n(jt),
 				Ht = (e, t) => {
 					if (At()(e, t)) return {
 						hatefulContentFilters: {},
 						postRequirements: {}
 					};
-					const n = jt(e),
-						s = jt(t),
+					const n = It(e),
+						s = It(t),
 						i = S()(n, (e, t) => At()(e, s[t])),
 						o = {};
 					return Object.keys(t.hatefulContentFilters).forEach(n => {
@@ -1589,7 +1589,7 @@
 								value: `${o.hatefulContentThresholdAbuse}`,
 								oldValue: `${this.state.initialFormState.hatefulContentFilters.hatefulContentThresholdAbuse}`
 							},
-							...Object(R.o)(e)
+							...Object(R.m)(e)
 						}));
 						const r = await this.props.onSave({
 							hatefulContentFilters: o,
@@ -1598,7 +1598,7 @@
 						if (!this.isUnmounted)
 							if (this.setState({
 									isSavePending: !1
-								}), r.success) this.props.sendEvent(w(jt(s))), this.setState({
+								}), r.success) this.props.sendEvent(w(It(s))), this.setState({
 								formState: s,
 								initialFormState: s,
 								hasJustSaved: !0
@@ -1768,4 +1768,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.a2e4baf76b3a97e68585.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.0edbf274238a8e6458b5.js.map

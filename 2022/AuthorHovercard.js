@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.149402846122d81388a4.js
-// Retrieved at 1/18/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.318fa44912dbdd35095a.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -3035,7 +3035,7 @@
 					isViewed: n,
 					type: r
 				}) => s => ({
-					...l.o(s),
+					...l.m(s),
 					action: d.c.VIEW,
 					noun: "inbox_notification",
 					source: o.Inbox,
@@ -3056,7 +3056,7 @@
 					awardId: s
 				}) => a => {
 					Object(u.a)({
-						...l.o(a),
+						...l.m(a),
 						action: "receive",
 						noun: "inbox_notification",
 						source: o.Inbox,
@@ -3081,7 +3081,7 @@
 					awardId: s,
 					position: a
 				}) => i => ({
-					...l.o(i),
+					...l.m(i),
 					action: d.c.CLICK,
 					noun: "inbox_notification",
 					source: o.Inbox,
@@ -3104,7 +3104,7 @@
 					badgeCount: e,
 					tab: t
 				}) => n => ({
-					...l.o(n),
+					...l.m(n),
 					action: d.c.VIEW,
 					noun: "inbox",
 					source: o.Inbox,
@@ -3117,7 +3117,7 @@
 					badgeCount: e,
 					tab: t
 				}) => t => ({
-					...l.o(t),
+					...l.m(t),
 					action: d.c.VIEW,
 					noun: "mini_inbox",
 					source: o.Inbox,
@@ -3129,7 +3129,7 @@
 				x = ({
 					badgeCount: e
 				}) => t => ({
-					...l.o(t),
+					...l.m(t),
 					action: d.c.CLICK,
 					noun: "inbox",
 					source: o.Nav,
@@ -3144,7 +3144,7 @@
 					type: r,
 					awardId: s
 				}) => a => ({
-					...l.o(a),
+					...l.m(a),
 					action: d.c.CLICK,
 					noun: "inbox_notification_overflow",
 					source: o.Inbox,
@@ -3166,7 +3166,7 @@
 					isViewed: n,
 					type: r
 				}) => s => ({
-					...l.o(s),
+					...l.m(s),
 					action: d.c.VIEW,
 					noun: "inbox_notification_overflow",
 					source: o.Inbox,
@@ -3186,7 +3186,7 @@
 					isViewed: r,
 					type: s
 				}) => a => ({
-					...l.o(a),
+					...l.m(a),
 					action: d.c.CLICK,
 					noun: "overflow_option",
 					source: o.Inbox,
@@ -3199,7 +3199,7 @@
 						type: s
 					},
 					actionInfo: {
-						...l.d(a),
+						...l.c(a),
 						type: e
 					}
 				}),
@@ -3210,7 +3210,7 @@
 					isViewed: r,
 					type: s
 				}) => a => ({
-					...l.o(a),
+					...l.m(a),
 					action: d.c.UNDO,
 					noun: "overflow_option",
 					source: o.Inbox,
@@ -3223,32 +3223,32 @@
 						type: s
 					},
 					actionInfo: {
-						...l.d(a),
+						...l.c(a),
 						type: e
 					}
 				}),
 				C = e => t => ({
-					...l.o(t),
+					...l.m(t),
 					action: d.c.CLICK,
 					noun: "notification_app_settings",
 					source: o.Inbox,
 					actionInfo: {
-						...l.d(t),
+						...l.c(t),
 						pageType: e
 					}
 				}),
 				E = () => e => ({
-					...l.o(e),
+					...l.m(e),
 					action: d.c.CLICK,
 					noun: "see_all",
 					source: o.Inbox,
 					actionInfo: {
-						...l.d(e),
+						...l.c(e),
 						pageType: a.MiniInbox
 					}
 				}),
 				O = () => e => ({
-					...l.o(e),
+					...l.m(e),
 					action: d.c.CLICK,
 					noun: "messages",
 					source: o.Inbox
@@ -3256,33 +3256,33 @@
 				y = ({
 					isMiniInbox: e
 				}) => t => ({
-					...l.o(t),
+					...l.m(t),
 					action: d.c.CLICK,
 					noun: "mark_all_as_read",
 					source: o.Inbox,
 					actionInfo: e ? {
-						...l.d(t),
+						...l.c(t),
 						pageType: a.MiniInbox
 					} : {}
 				}),
 				j = (e, t) => n => ({
-					...l.o(n),
+					...l.m(n),
 					action: d.c.CLICK,
 					noun: "policy_banner",
 					source: o.Inbox,
 					actionInfo: {
-						...l.d(n),
+						...l.c(n),
 						pageType: e,
 						type: t
 					}
 				}),
 				N = () => e => ({
-					...l.o(e),
+					...l.m(e),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
 					source: o.Inbox,
 					actionInfo: {
-						...l.d(e),
+						...l.c(e),
 						type: "2021Recap"
 					}
 				})
@@ -3670,4 +3670,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.149402846122d81388a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.318fa44912dbdd35095a.js.map

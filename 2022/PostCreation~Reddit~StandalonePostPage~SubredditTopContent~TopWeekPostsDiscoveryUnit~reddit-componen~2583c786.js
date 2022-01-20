@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786.2213f34526cba2ffaca3.js
-// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786.76f20151c3d0f66ed282.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -36,7 +36,7 @@
 					}
 					return {
 						...i,
-						actionInfo: Object(a.Q)(s, n)
+						actionInfo: Object(a.O)(s, n)
 					}
 				})), u(n.target, n.currentTarget, c.anchorsAndButtons) && i(n)
 			};
@@ -575,8 +575,8 @@
 					U = F > 0,
 					G = F < p.length - 1,
 					K = Object(h.a)(),
-					Y = Object(i.useRef)(null),
 					z = Object(i.useRef)(null),
+					Y = Object(i.useRef)(null),
 					[$, J] = Object(i.useState)(H ? F : -1),
 					[q, Q] = Object(i.useState)(H ? F : -1),
 					X = Object(l.a)(H),
@@ -596,7 +596,7 @@
 							}, 1e3)) : ($ < 0 || q - $ == 0) && clearTimeout(ee.current)
 						})
 					}, [$, q, p.length]);
-				Object(a.a)(z, te);
+				Object(a.a)(Y, te);
 				const se = Object(i.useCallback)(e => {
 						t(Object(x.f)({
 							postId: D,
@@ -635,7 +635,7 @@
 						const e = p[F] && p[F].outboundUrl;
 						e && K(u.c(D, e))
 					}, [K, D, F, p]);
-				m(y.a.ArrowLeft, Y.current, ae), m(y.a.ArrowRight, Y.current, oe);
+				m(y.a.ArrowLeft, z.current, ae), m(y.a.ArrowRight, z.current, oe);
 				const de = p[F] && p[F].caption,
 					le = p[F] && p[F].outboundUrl,
 					ce = ((e, t, s) => {
@@ -652,7 +652,7 @@
 					})(j, b, g);
 				return n.a.createElement("div", {
 					className: Object(r.a)(T.a.outerContainer),
-					ref: Y,
+					ref: z,
 					tabIndex: 0
 				}, S ? n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 					className: Object(r.a)(T.a.tilesWrapper, {
@@ -686,7 +686,7 @@
 				})) : n.a.createElement("div", {
 					className: T.a.slideshowContainer,
 					tabIndex: -1,
-					ref: z,
+					ref: Y,
 					onClick: e.onClickRevealBlurred,
 					style: ce
 				}, n.a.createElement("div", {
@@ -721,14 +721,14 @@
 					})
 				})), !e.shouldBlur && n.a.createElement(n.a.Fragment, null, n.a.createElement(N, {
 					onClick: ae,
-					setFocusTo: z,
+					setFocusTo: Y,
 					hasMoreSlides: U,
 					title: "Previous",
 					iconClassName: T.a.prevIcon,
 					className: T.a.prevButton
 				}), n.a.createElement(N, {
 					onClick: oe,
-					setFocusTo: z,
+					setFocusTo: Y,
 					hasMoreSlides: G,
 					title: "Next",
 					iconClassName: T.a.nextIcon,
@@ -1056,8 +1056,8 @@
 				U = s("./src/reddit/constants/screenWidths.ts"),
 				G = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				K = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
-				Y = s("./src/reddit/helpers/getRichTextContent/index.ts"),
-				z = s("./src/reddit/helpers/mediaGallery/index.tsx"),
+				z = s("./src/reddit/helpers/getRichTextContent/index.ts"),
+				Y = s("./src/reddit/helpers/mediaGallery/index.tsx"),
 				$ = s("./src/reddit/helpers/path/index.ts"),
 				J = s("./src/reddit/helpers/postHasSelfText/index.ts"),
 				q = s("./src/reddit/helpers/stripMetaLinks/fromRawHtml.ts"),
@@ -1152,7 +1152,7 @@
 						const n = Object(te.c)(e, s.id);
 						return !(void 0 !== n || !i) || !!n
 					},
-					pageType: e => Object(oe.d)(e).pageType,
+					pageType: e => Object(oe.c)(e).pageType,
 					basePixelMetadata: (e, {
 						post: t
 					}) => Object(ie.b)(e, t.id),
@@ -1353,7 +1353,7 @@
 					let a = !n.media || Object(X.N)(n.media) || Object(X.G)(n.media) || Object(X.E)(n.media) ? "" : n.media.content,
 						[r, d] = !n.media || Object(X.K)(n.media) || Object(X.M)(n.media) || Object(X.E)(n.media) ? [0, 0] : [n.media.height, n.media.width];
 					if (s && n.media && Object(X.E)(n.media)) {
-						r = Object(z.b)(n.media.mediaMetadata || {}, Object(z.c)(i), X.p, s) + X.i, d = s
+						r = Object(Y.b)(n.media.mediaMetadata || {}, Object(Y.c)(i), X.p, s) + X.i, d = s
 					}
 					if (s && n.media && (n.media.type === X.o.IMAGE || n.media.type === X.o.GIFVIDEO)) {
 						const e = ae.b(s, n.media.resolutions);
@@ -1453,7 +1453,7 @@
 						ae = this.shouldBlur(),
 						re = !((null === (e = g.pollData) || void 0 === e ? void 0 : e.isPrediction) && !a),
 						me = !(!g.isSponsored || !g.source),
-						he = Object(oe.tb)() || "",
+						he = Object(oe.rb)() || "",
 						pe = g.isSponsored ? Object(B.b)(g.id, {
 							fireAdPixelsOfType: i,
 							openPost: b
@@ -1485,7 +1485,7 @@
 					if (!g.media) return null;
 					switch (g.media.type) {
 						case X.o.RTJSON:
-							const e = Object(Y.a)(g, null);
+							const e = Object(z.a)(g, null);
 							if (null === e) return null;
 							if (!f && !Object(K.a)(g)) return null;
 							const i = g.isMeta ? Object(Q.a)(e, g.id) : e;
@@ -1709,8 +1709,8 @@
 								onPostMediaClick: this.handlePostMediaClick
 							}))));
 						case X.o.GALLERY:
-							const I = Object(z.b)(g.media.mediaMetadata || {}, Object(z.c)(c), X.p, te),
-								L = Object(z.a)(g.media.gallery, g.isSponsored);
+							const I = Object(Y.b)(g.media.mediaMetadata || {}, Object(Y.c)(c), X.p, te),
+								L = Object(Y.a)(g.media.gallery, g.isSponsored);
 							return u.a.createElement(_.a, le({}, ne, {
 								blurSrc: se ? $ : void 0,
 								isExpando: !!r,
@@ -2034,16 +2034,16 @@
 				o = s("./src/reddit/selectors/media.ts"),
 				a = s("./src/reddit/selectors/telemetry.ts");
 			const r = (e, t, s) => ({
-					gallery: a.s(e, t, s),
-					post: a.I(e, t),
-					...a.o(e)
+					gallery: a.q(e, t, s),
+					post: a.G(e, t),
+					...a.m(e)
 				}),
 				d = (e, t) => s => ({
 					...r(s, e, t),
 					action: i.c.VIEW,
 					noun: "media",
 					source: "gallery",
-					media: a.B(s, e)
+					media: a.z(s, e)
 				}),
 				l = (e, t) => s => {
 					const d = Object(n.a)(t),
@@ -2054,7 +2054,7 @@
 						noun: "outbound_url",
 						source: "gallery",
 						media: {
-							...a.B(s, e),
+							...a.z(s, e),
 							outboundUrl: t,
 							outboundDomain: d ? d.hostname : void 0
 						}
@@ -2145,4 +2145,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786.2213f34526cba2ffaca3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786.76f20151c3d0f66ed282.js.map

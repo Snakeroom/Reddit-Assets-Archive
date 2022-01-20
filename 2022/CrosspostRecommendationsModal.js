@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.4ffab6bd14b6a0b981af.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.ef39db75ae44dd9ae49a.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostRecommendationsModal"], {
 		"./src/reddit/components/CrosspostRecommendationsModal/index.m.less": function(e, t, s) {
@@ -58,12 +58,12 @@
 					})),
 					w = Object(n.useCallback)(() => {
 						a((e => t => ({
-							...Object(p.o)(t),
+							...Object(p.m)(t),
 							action: b.c.CLICK,
 							noun: "close",
 							source: x,
-							post: Object(p.I)(t, e),
-							subreddit: Object(p.jb)(t)
+							post: Object(p.G)(t, e),
+							subreddit: Object(p.hb)(t)
 						}))(t.id)), e()
 					}, [t.id]),
 					f = Object(n.useCallback)(e => {
@@ -72,12 +72,12 @@
 					}, [t.id]),
 					N = Object(n.useCallback)(() => {
 						a((e => t => ({
-							...Object(p.o)(t),
+							...Object(p.m)(t),
 							action: b.c.CLICK,
 							noun: "other_communities",
 							source: x,
-							post: Object(p.I)(t, e),
-							subreddit: Object(p.jb)(t)
+							post: Object(p.G)(t, e),
+							subreddit: Object(p.hb)(t)
 						}))(t.id)), s(Object(o.b)(`${E.b}?source_id=${t.id}`))
 					}, [t.id]);
 				return O ? (e(), null) : r.a.createElement(c.e, null, r.a.createElement(c.i, {
@@ -498,4 +498,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.4ffab6bd14b6a0b981af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.ef39db75ae44dd9ae49a.js.map

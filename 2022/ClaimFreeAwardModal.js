@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.97d7cdb38e4a38afbe5a.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.239049c5aa145d2ed815.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
@@ -7,7 +7,7 @@
 			r.d(t, "b", (function() {
 				return p
 			})), r.d(t, "c", (function() {
-				return g
+				return j
 			})), r.d(t, "a", (function() {
 				return x
 			}));
@@ -47,7 +47,7 @@
 						});
 						t(f(e))
 					}
-				}, h = Object(o.a)(m.m), O = Object(o.a)(m.n), j = Object(o.a)(m.l), g = (e, t) => async (r, o, {
+				}, h = Object(o.a)(m.m), O = Object(o.a)(m.n), g = Object(o.a)(m.l), j = (e, t) => async (r, o, {
 					apiContext: d
 				}) => {
 					r(h());
@@ -66,7 +66,7 @@
 						const e = a.fbt._("There was an error fetching purchasable coins package", null, {
 							hk: "47Fxzt"
 						});
-						r(j(e))
+						r(g(e))
 					}
 				}, _ = Object(o.a)(m.h), x = () => async (e, t, {
 					gqlContext: r
@@ -127,9 +127,9 @@
 				p = r("./src/reddit/components/LottieAnimation/util.ts"),
 				h = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				O = r("./src/reddit/components/Econ/ClaimFreeAwardModal/index.m.less"),
-				j = r.n(O);
+				g = r.n(O);
 			const {
-				fbt: g
+				fbt: j
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), _ = "https://www.redditstatic.com/gold/awards/animations/free_award", x = (e, t) => {
 				var r;
 				return (null === (r = null == e ? void 0 : e.assets) || void 0 === r ? void 0 : r.length) && (null == t ? void 0 : t.icon) && (e.assets[0].u = t.icon.url, e.assets[0].p = ""), e
@@ -149,41 +149,41 @@
 				};
 				let k = !1;
 				return s.a.createElement(h.e, {
-					className: j.a.body
+					className: g.a.body
 				}, s.a.createElement("button", {
 					onClick: O,
-					className: j.a.closeButton
+					className: g.a.closeButton
 				}, s.a.createElement(h.b, null)), !r && s.a.createElement(s.a.Fragment, null, s.a.createElement(f.a, {
 					assetUrl: `${_}/flying.json`,
 					loop: !0,
-					className: j.a.flyingAnimation,
+					className: g.a.flyingAnimation,
 					onClick: () => {
 						k || (e(Object(l.a)("redeem")), t(Object(m.a)()), k = !0, setTimeout(() => {
 							k = !1
 						}, 1e4))
 					}
 				}), s.a.createElement("p", {
-					className: j.a.description
-				}, g._("Open it! Open it! (Just click, it’s easy)", null, {
+					className: g.a.description
+				}, j._("Open it! Open it! (Just click, it’s easy)", null, {
 					hk: "2RWqvN"
 				}))), r && a && s.a.createElement(s.a.Fragment, null, s.a.createElement(f.a, {
 					assetData: x(a, r),
-					className: j.a.openingAnimation,
+					className: g.a.openingAnimation,
 					onClick: n.a
 				}), s.a.createElement("h2", {
-					className: j.a.awardTitle
-				}, g._("It's the {awardName} Award!", [g._param("awardName", r.name)], {
+					className: g.a.awardTitle
+				}, j._("It's the {awardName} Award!", [j._param("awardName", r.name)], {
 					hk: "41wWKZ"
 				})), r.endsAt && s.a.createElement("p", {
-					className: j.a.awardDescription
-				}, g._("Give it away in the next {awardEndDate} before it disappears.", [g._param("awardEndDate", Object(i.a)(new Date(r.endsAt)))], {
+					className: g.a.awardDescription
+				}, j._("Give it away in the next {awardEndDate} before it disappears.", [j._param("awardEndDate", Object(i.a)(new Date(r.endsAt)))], {
 					hk: "gmYKH"
 				})), s.a.createElement("div", {
-					className: j.a.awardMore
+					className: g.a.awardMore
 				}, s.a.createElement(h.r, {
-					className: j.a.awardButton,
+					className: g.a.awardButton,
 					onClick: O
-				}, g._("Go Forth and Award", null, {
+				}, j._("Go Forth and Award", null, {
 					hk: "1OuNXO"
 				})))))
 			}))
@@ -206,8 +206,8 @@
 						offerContext: o.a.StorefrontFreeAward
 					}),
 					correlationId: Object(a.e)(a.a.GoldPayment, !1),
-					profile: s.R(e),
-					subreddit: s.jb(e)
+					profile: s.P(e),
+					subreddit: s.hb(e)
 				}),
 				d = () => e => ({
 					source: "free_award_offer",
@@ -230,4 +230,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.97d7cdb38e4a38afbe5a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.239049c5aa145d2ed815.js.map

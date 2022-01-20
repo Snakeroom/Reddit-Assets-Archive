@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.6259febdf8393e46e885.js
-// Retrieved at 1/18/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.ae133af51ba7a8641df3.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -879,7 +879,7 @@
 						source: e,
 						action: "click",
 						noun: "edit_snoovatar",
-						...o.o(t)
+						...o.m(t)
 					};
 					return Object(r.a)(t) && Object.assign(a, i), a
 				},
@@ -893,45 +893,45 @@
 						source: e,
 						action: "click",
 						noun: "copy_avatar",
-						...o.o(a),
+						...o.m(a),
 						snoovatar: {
 							userGenerated: s
 						}
 					}
 				},
 				l = e => ({
-					...o.o(e),
+					...o.m(e),
 					source: "avatar",
 					action: "click",
 					noun: "try_this_look_post",
-					snoovatar: o.hb(e)
+					snoovatar: o.fb(e)
 				}),
 				u = e => ({
-					...o.o(e),
+					...o.m(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: o.hb(e)
+					snoovatar: o.fb(e)
 				}),
 				_ = e => ({
-					...o.o(e),
+					...o.m(e),
 					source: "avatar_builder",
 					action: "click",
 					noun: "close",
-					snoovatar: o.hb(e)
+					snoovatar: o.fb(e)
 				}),
 				p = e => ({
 					source: "nav",
 					action: "view",
 					noun: "avatar_marketing",
-					...o.o(e),
+					...o.m(e),
 					...i
 				}),
 				m = e => t => ({
-					...o.o(t),
+					...o.m(t),
 					source: "snoovatar",
 					action: "set_to_profile",
 					noun: "snoovatar",
@@ -943,8 +943,8 @@
 					source: "avatar",
 					action: e,
 					noun: "community_spaces",
-					...o.o(a),
-					snoovatar: o.hb(a),
+					...o.m(a),
+					snoovatar: o.fb(a),
 					actionInfo: {
 						paneName: "avatar_community_spaces" + (t ? "_control" : "")
 					}
@@ -956,14 +956,14 @@
 					source: e,
 					action: t,
 					noun: a,
-					...o.o(s),
-					snoovatar: o.hb(s)
+					...o.m(s),
+					snoovatar: o.fb(s)
 				}),
 				h = w("anniversary_achievement", "view", "anniversary_achievement"),
 				O = w("anniversary_achievement", "click", "close"),
 				g = w("anniversary_achievement", "click", "equip"),
 				y = e => () => t => ({
-					...o.o(t),
+					...o.m(t),
 					source: "gold_top_nav",
 					action: e,
 					noun: "quick_create_cta"
@@ -974,11 +974,11 @@
 					source: e,
 					action: t,
 					noun: a,
-					...o.o(s),
+					...o.m(s),
 					actionInfo: {
 						pageType: "onboarding"
 					},
-					snoovatar: o.hb(s)
+					snoovatar: o.fb(s)
 				}),
 				N = e => x("onboarding", "click", e),
 				I = () => x("avatar", "view", "onboarding")
@@ -1396,4 +1396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.6259febdf8393e46e885.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.ae133af51ba7a8641df3.js.map

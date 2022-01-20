@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.7a4618506bd079c52770.js
-// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.91c34c8fdb342f9227dc.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages~ModerationPages"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, r) {
@@ -435,12 +435,12 @@
 						source: "bulk_mod_action_menu",
 						action: "click",
 						noun: e,
-						...v.o(O),
-						actionInfo: v.d(O, {
+						...v.m(O),
+						actionInfo: v.c(O, {
 							count: y.length,
 							paneName: O.platform.currentPage ? O.platform.currentPage.urlParams.pageName : void 0
 						}),
-						screen: v.ab(O),
+						screen: v.Y(O),
 						correlationId: S
 					});
 					for (let t = 0; t < y.length; t++) {
@@ -450,16 +450,16 @@
 							source: "bulk_mod_action",
 							action: "click",
 							noun: s,
-							...v.o(O),
-							actionInfo: v.d(O, {
+							...v.m(O),
+							actionInfo: v.c(O, {
 								count: y.length,
 								paneName: O.platform.currentPage ? O.platform.currentPage.urlParams.pageName : void 0
 							}),
-							comment: v.j(O, r),
-							post: v.I(O, r),
-							profile: v.T(O, r),
-							screen: v.ab(O),
-							subreddit: v.mb(O, r),
+							comment: v.h(O, r),
+							post: v.G(O, r),
+							profile: v.R(O, r),
+							screen: v.Y(O),
+							subreddit: v.kb(O, r),
 							correlationId: S
 						})
 					}
@@ -2970,4 +2970,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.7a4618506bd079c52770.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.91c34c8fdb342f9227dc.js.map

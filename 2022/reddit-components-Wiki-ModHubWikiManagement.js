@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.e2ee071d03b97b323ae6.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.630ecd541ef4346c9d4b.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -1140,9 +1140,9 @@
 			var i = n("./src/reddit/models/SubredditWikiPage/index.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
-					...s.o(e),
-					subreddit: s.jb(e),
-					userSubreddit: s.sb(e)
+					...s.m(e),
+					subreddit: s.hb(e),
+					userSubreddit: s.qb(e)
 				}),
 				o = () => e => ({
 					source: "wiki",
@@ -1186,7 +1186,7 @@
 					source: "wiki",
 					action: "click",
 					noun: "hide_show_page",
-					actionInfo: s.d(t, {
+					actionInfo: s.c(t, {
 						settingValue: e ? "show" : "hide"
 					})
 				}),
@@ -1195,11 +1195,11 @@
 					source: "wiki",
 					action: "click",
 					noun: "editing_permissions",
-					actionInfo: s.d(t, {
+					actionInfo: s.c(t, {
 						settingValue: S[e]
 					})
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.e2ee071d03b97b323ae6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.630ecd541ef4346c9d4b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.8fdcc8360507f3c99ab6.js
-// Retrieved at 1/12/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.ea942125aec65da3ff05.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -79,7 +79,7 @@
 					source: "post",
 					action: e,
 					noun: "new_comment_pill",
-					post: Object(g.I)(s, t.id),
+					post: Object(g.G)(s, t.id),
 					subreddit: Object(N.J)(s, {
 						identifier: t.belongsTo
 					})
@@ -120,7 +120,7 @@
 					g.current && clearTimeout(g.current)
 				}, []);
 				const J = Object(c.d)(),
-					X = Object(o.useCallback)(() => {
+					G = Object(o.useCallback)(() => {
 						if (!R) return;
 						t(T(h.c.CLICK, R)), K(!1), B.current && (clearTimeout(B.current), B.current = null), z.current && (z.current = null), W.current = 2, (() => {
 							const t = new URLSearchParams(location.search);
@@ -154,7 +154,7 @@
 				}, 5e3), t(T(h.c.VIEW, R))), () => {
 					B.current && clearTimeout(B.current)
 				}), [L, t]);
-				const F = Object(o.useCallback)(e => {
+				const X = Object(o.useCallback)(e => {
 					const {
 						topLevelCommentCountChange: t
 					} = e.subscribe.data;
@@ -165,7 +165,7 @@
 				}, []);
 				return U ? a.a.createElement(a.a.Fragment, null, a.a.createElement(l.a, {
 					variables: q,
-					onData: F,
+					onData: X,
 					queryKey: "topLevelCommentCountChange"
 				}), a.a.createElement("div", {
 					className: Object(x.a)(S.a.wrapper, {
@@ -179,7 +179,7 @@
 					className: Object(x.a)(S.a.pillButton, {
 						[S.a.isNightMode]: f
 					}),
-					onClick: X,
+					onClick: G,
 					variant: m.b.BUTTON
 				}, a.a.createElement(p.a, {
 					iconsKey: s,
@@ -468,4 +468,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.8fdcc8360507f3c99ab6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.ea942125aec65da3ff05.js.map

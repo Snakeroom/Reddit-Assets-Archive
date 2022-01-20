@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatorStats.f9b275af538f3ca03a6f.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatorStats.f18b1dee92c4a4a24ffb.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatorStats"], {
 		"./src/reddit/components/CreatorStats/Stats.tsx": function(t, e, a) {
@@ -322,13 +322,13 @@
 					}));
 				return Object(o.useEffect)(() => {
 					d === c.b.Available && e((t => e => ({
-						...Object(k.o)(e),
+						...Object(k.m)(e),
 						action: N.c.VIEW,
 						noun: "aggregate_stats",
 						source: "creator_stats",
-						subreddit: Object(k.jb)(e),
-						post: Object(k.I)(e, t),
-						userSubreddit: Object(k.sb)(e)
+						subreddit: Object(k.hb)(e),
+						post: Object(k.G)(e, t),
+						userSubreddit: Object(k.qb)(e)
 					}))(t.post.id))
 				}, [e, t.post.id, d]), n.a.createElement("div", {
 					className: x.a.container
@@ -399,13 +399,13 @@
 							return ""
 					}
 				})(d, t.post, t.subreddit, p, a => e(((t, e) => a => ({
-					...Object(k.o)(a),
+					...Object(k.m)(a),
 					action: N.c.CLICK,
 					noun: t,
 					source: "creator_stats",
-					post: Object(k.I)(a, e),
-					subreddit: Object(k.jb)(a),
-					userSubreddit: Object(k.sb)(a)
+					post: Object(k.G)(a, e),
+					subreddit: Object(k.hb)(a),
+					userSubreddit: Object(k.qb)(a)
 				}))(a, t.post.id))))), d === c.b.Available && l && n.a.createElement(T.a, {
 					isUserOp: p,
 					upvoteRatio: t.post.upvoteRatio || void 0,
@@ -419,4 +419,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.f9b275af538f3ca03a6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.f18b1dee92c4a4a24ffb.js.map

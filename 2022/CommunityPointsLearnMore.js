@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.791210b72abdb6961773.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.07474cb846508ba3afe7.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, o) {
@@ -1407,17 +1407,17 @@
 			}));
 			var n = o("./src/reddit/selectors/telemetry.ts");
 			const a = e => t => ({
-					...Object(n.o)(t),
+					...Object(n.m)(t),
 					source: "meta",
 					action: e,
 					noun: "feed_claim_points_banner",
-					subreddit: Object(n.jb)(t)
+					subreddit: Object(n.hb)(t)
 				}),
 				i = () => a("view"),
 				r = () => a("tap"),
 				s = () => a("dismiss"),
 				l = () => e => ({
-					...Object(n.o)(e),
+					...Object(n.m)(e),
 					source: "meta",
 					action: "view",
 					noun: "points_learn_more",
@@ -1426,7 +1426,7 @@
 					}
 				}),
 				u = () => e => ({
-					...Object(n.o)(e),
+					...Object(n.m)(e),
 					source: "meta",
 					action: "view",
 					noun: "points_faq",
@@ -1435,7 +1435,7 @@
 					}
 				}),
 				c = e => t => ({
-					...Object(n.o)(t),
+					...Object(n.m)(t),
 					source: "meta",
 					action: "view",
 					noun: "points_faq_section",
@@ -1444,17 +1444,17 @@
 					}
 				}),
 				d = () => e => ({
-					...Object(n.o)(e),
+					...Object(n.m)(e),
 					source: "meta",
 					action: "click",
 					noun: "learn_more_create_vault_button"
 				}),
 				m = e => t => ({
-					...Object(n.o)(t),
+					...Object(n.m)(t),
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(n.kb)(t, e)
+					subreddit: Object(n.ib)(t, e)
 				})
 		},
 		"./src/reddit/icons/svgs/ArrowRightThin/index.tsx": function(e, t, o) {
@@ -3813,4 +3813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.791210b72abdb6961773.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.07474cb846508ba3afe7.js.map

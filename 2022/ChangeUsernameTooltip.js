@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.c74f7417b0594ca97a4c.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.42b56b2019555868d15e.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameTooltip"], {
 		"./src/reddit/components/ChangeUsernameTooltip/index.m.less": function(e, n, t) {
@@ -30,8 +30,8 @@
 				u = t("./src/reddit/controls/Button/index.tsx"),
 				l = t("./src/reddit/helpers/trackers/changeUsername.ts"),
 				p = t("./src/reddit/icons/svgs/Close/index.tsx"),
-				E = t("./src/reddit/components/ChangeUsernameTooltip/index.m.less"),
-				m = t.n(E);
+				m = t("./src/reddit/components/ChangeUsernameTooltip/index.m.less"),
+				E = t.n(m);
 			class N extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onChangeUsernameModalOpen = () => {
@@ -47,31 +47,31 @@
 				}
 				render() {
 					return r.a.createElement("div", {
-						className: m.a.container
+						className: E.a.container
 					}, r.a.createElement("div", {
-						className: m.a.topLine
+						className: E.a.topLine
 					}), r.a.createElement("button", {
-						className: m.a.closeWrapper,
+						className: E.a.closeWrapper,
 						onClick: this.onCloseTooltip
 					}, r.a.createElement(p.a, {
-						className: m.a.closeIcon
+						className: E.a.closeIcon
 					})), r.a.createElement("h5", {
-						className: m.a.title
+						className: E.a.title
 					}, s.fbt._("Do you want to change or keep this username?", null, {
 						hk: "4vHGxH"
 					})), r.a.createElement("p", {
-						className: m.a.username
+						className: E.a.username
 					}, r.a.createElement("span", {
-						className: m.a.usernamePrefix
+						className: E.a.usernamePrefix
 					}, "u/"), this.props.username), r.a.createElement("div", {
-						className: m.a.buttonWrapper
+						className: E.a.buttonWrapper
 					}, r.a.createElement(u.l, {
-						className: Object(c.a)(m.a.commonBtn, m.a.primaryBtn),
+						className: Object(c.a)(E.a.commonBtn, E.a.primaryBtn),
 						onClick: this.onChangeUsernameModalOpen
 					}, s.fbt._("Change Username", null, {
 						hk: "1nRhNE"
 					})), r.a.createElement(u.r, {
-						className: Object(c.a)(m.a.commonBtn, m.a.secondaryBtn),
+						className: Object(c.a)(E.a.commonBtn, E.a.secondaryBtn),
 						onClick: this.onKeepUsernameModalOpen
 					}, s.fbt._("Keep Username", null, {
 						hk: "GUBlZ"
@@ -85,9 +85,9 @@
 		"./src/reddit/helpers/trackers/changeUsername.ts": function(e, n, t) {
 			"use strict";
 			t.d(n, "a", (function() {
-				return E
-			})), t.d(n, "b", (function() {
 				return m
+			})), t.d(n, "b", (function() {
+				return E
 			})), t.d(n, "h", (function() {
 				return C
 			})), t.d(n, "d", (function() {
@@ -119,8 +119,8 @@
 			function(e) {
 				e.COMMENT = "comment", e.CUSTOM_FEED = "custom_feed", e.POST = "post", e.PROFILE = "profile", e.UNKNOWN = "unknown"
 			}(o || (o = {}));
-			const E = "popup",
-				m = "tooltip",
+			const m = "popup",
+				E = "tooltip",
 				N = e => {
 					if (!e) return o.UNKNOWN;
 					switch (e.type) {
@@ -141,16 +141,16 @@
 				},
 				_ = e => e.payload.args && "string" == typeof e.payload.args[0] && e.payload.args[0] || "",
 				C = (e, n) => t => ({
-					...Object(p.o)(t),
+					...Object(p.m)(t),
 					action: d.c.VIEW,
-					actionInfo: Object(p.d)(t, {
+					actionInfo: Object(p.c)(t, {
 						reason: n ? N(Object(l.a)(t)) : void 0
 					}),
 					noun: s.CHANGE_USERNAME_INITIAL,
 					source: e
 				}),
 				h = (e, n) => t => ({
-					...Object(p.o)(t),
+					...Object(p.m)(t),
 					action: d.c.CLICK,
 					noun: s.CHANGE_USERNAME_INITIAL,
 					popup: {
@@ -159,43 +159,43 @@
 					source: e
 				}),
 				O = () => e => ({
-					...Object(p.o)(e),
+					...Object(p.m)(e),
 					action: d.c.VIEW,
 					noun: s.CHANGE_USERNAME_CONFIRMATION,
-					source: E
+					source: m
 				}),
 				U = e => n => ({
-					...Object(p.o)(n),
+					...Object(p.m)(n),
 					action: d.c.CLICK,
 					noun: s.CHANGE_USERNAME_CONFIRMATION,
-					source: E,
+					source: m,
 					popup: {
 						buttonText: e
 					}
 				}),
 				T = () => e => ({
-					...Object(p.o)(e),
+					...Object(p.m)(e),
 					action: d.c.VIEW,
 					noun: s.CHANGE_USERNAME_INPUT,
-					source: E
+					source: m
 				}),
 				A = () => e => ({
-					...Object(p.o)(e),
+					...Object(p.m)(e),
 					action: d.c.CLICK,
 					noun: s.CHANGE_USERNAME_INPUT,
 					popup: {
 						buttonText: "next"
 					},
-					source: E
+					source: m
 				}),
 				I = () => e => ({
-					...Object(p.o)(e),
+					...Object(p.m)(e),
 					action: d.c.SELECT,
 					noun: s.CHANGE_USERNAME_INPUT,
-					source: E
+					source: m
 				}),
 				b = () => e => ({
-					...Object(p.o)(e),
+					...Object(p.m)(e),
 					action: d.c.VIEW,
 					noun: s.CHANGE_USERNAME_SUCCESS,
 					source: "toast"
@@ -203,4 +203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.c74f7417b0594ca97a4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.42b56b2019555868d15e.js.map

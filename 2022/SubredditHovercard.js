@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.9460e0ceb387c3f04bfe.js
-// Retrieved at 1/19/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.1e01bb8c6cb31454c11e.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -248,17 +248,17 @@
 					source: "subreddit_hovercard",
 					action: "click",
 					noun: t,
-					post: s ? a.I(o, s) : void 0,
-					subreddit: a.kb(o, e),
-					screen: a.ab(o)
+					post: s ? a.G(o, s) : void 0,
+					subreddit: a.ib(o, e),
+					screen: a.Y(o)
 				}),
 				c = (e, t) => s => ({
 					source: "subreddit_hovercard",
 					action: "view",
 					noun: "hover_subreddit_hovercard",
-					post: t ? a.I(s, t) : void 0,
-					subreddit: a.kb(s, e),
-					screen: a.ab(s)
+					post: t ? a.G(s, t) : void 0,
+					subreddit: a.ib(s, e),
+					screen: a.Y(s)
 				});
 			var u = s("./node_modules/react-redux/es/index.js"),
 				p = s("./node_modules/reselect/es/index.js"),
@@ -294,7 +294,7 @@
 			}
 			const {
 				fbt: H
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = O.a.wrapped(T.b, "SubredditIcon", S.a), A = O.a.wrapped(f.a, "SubredditNameDisplay", S.a), k = O.a.div("SubredditDescription", S.a), M = O.a.div("SubredditNameContainer", S.a), L = O.a.div("SubredditInfoContainer", S.a), D = O.a.div("Subscribers", S.a), U = O.a.div("Online", S.a), B = O.a.div("Count", S.a), R = O.a.div("CountLabel", S.a), Z = O.a.div("Container", S.a), F = O.a.div("CardContainer", S.a), K = e => r.a.createElement(L, null, r.a.createElement(D, null, r.a.createElement(B, null, Object(E.b)(e.subredditAboutInfo.subscribers)), r.a.createElement(R, null, H._({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), g = O.a.wrapped(T.b, "SubredditIcon", S.a), A = O.a.wrapped(f.a, "SubredditNameDisplay", S.a), M = O.a.div("SubredditDescription", S.a), k = O.a.div("SubredditNameContainer", S.a), L = O.a.div("SubredditInfoContainer", S.a), D = O.a.div("Subscribers", S.a), U = O.a.div("Online", S.a), B = O.a.div("Count", S.a), R = O.a.div("CountLabel", S.a), Z = O.a.div("Container", S.a), F = O.a.div("CardContainer", S.a), K = e => r.a.createElement(L, null, r.a.createElement(D, null, r.a.createElement(B, null, Object(E.b)(e.subredditAboutInfo.subscribers)), r.a.createElement(R, null, H._({
 				"*": "Members",
 				_1: " Member"
 			}, [H._plural(e.subredditAboutInfo.subscribers)], {
@@ -304,7 +304,7 @@
 				_1: " Online"
 			}, [H._plural(e.subredditAboutInfo.accountsActive)], {
 				hk: "3OMjYw"
-			})))), J = Object(I.a)(e => {
+			})))), G = Object(I.a)(e => {
 				const {
 					className: t,
 					hideNSFWPref: s,
@@ -324,7 +324,7 @@
 					className: t,
 					id: n,
 					style: c
-				}, r.a.createElement(F, null, r.a.createElement(M, null, r.a.createElement(g, {
+				}, r.a.createElement(F, null, r.a.createElement(k, null, r.a.createElement(g, {
 					subredditOrProfile: u,
 					shouldHideNsfwIcon: s
 				}), r.a.createElement(A, {
@@ -336,7 +336,7 @@
 					subredditAboutInfo: p
 				}), r.a.createElement(y.a, {
 					subreddit: u
-				}), r.a.createElement(k, null, Object(N.a)(p.publicDescription || "", 140)), r.a.createElement(j.n, {
+				}), r.a.createElement(M, null, Object(N.a)(p.publicDescription || "", 140)), r.a.createElement(j.n, {
 					onClick: v,
 					to: `${u.url}`,
 					target: a ? "_blank" : void 0,
@@ -350,25 +350,25 @@
 					style: c
 				})
 			});
-			var q = e => {
+			var J = e => {
 				const t = e.activeTooltipId === e.tooltipId;
-				return r.a.createElement(J, P({
+				return r.a.createElement(G, P({
 					isOpen: t
 				}, e))
 			};
-			const V = Object(p.c)({
+			const q = Object(p.c)({
 				activeTooltipId: v.a,
 				hideNSFWPref: h.C,
 				subreddit: b.w,
 				subredditAboutInfo: b.t
 			});
-			var G = Object(u.b)(V, e => ({
+			var V = Object(u.b)(q, e => ({
 				onHideTooltip: () => e(Object(m.i)())
 			}))(Object(d.c)(e => r.a.createElement("div", {
 				className: e.className,
 				id: e.tooltipId,
 				onMouseLeave: e.onHideTooltip
-			}, r.a.createElement(q, {
+			}, r.a.createElement(J, {
 				activeTooltipId: e.activeTooltipId,
 				hideNSFWPref: e.hideNSFWPref,
 				hoverId: e.hoverId,
@@ -403,7 +403,7 @@
 						authorOrSubredditName: e.subredditName,
 						tooltipId: t,
 						onShow: e.onShow
-					}, e.children, r.a.createElement(G, {
+					}, e.children, r.a.createElement(V, {
 						className: e.className,
 						hoverId: s,
 						postId: e.postId,
@@ -867,4 +867,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.9460e0ceb387c3f04bfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.1e01bb8c6cb31454c11e.js.map

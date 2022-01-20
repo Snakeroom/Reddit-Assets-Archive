@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.5ee3c085ed4b3c1f48c7.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.6bcee50f5e0603f9fd79.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsEmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx": function(e, t, o) {
@@ -187,8 +187,8 @@
 				y = o("./src/reddit/selectors/telemetry.ts"),
 				S = o("./src/reddit/components/RichTextEditor/constants/editorChangeTypes.ts"),
 				_ = o("./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx"),
-				j = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
-				v = o("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
+				v = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
+				j = o("./src/reddit/components/RichTextEditor/emotes/helpers.ts"),
 				I = o("./src/reddit/components/RichTextEditor/emotes/SpecialMemberships/tooltip.m.less"),
 				k = o.n(I);
 			const O = e => `tooltip-emote-${e}`,
@@ -215,7 +215,7 @@
 						})
 					}, this.sendEvent = () => {
 						this.props.sendEvent(e => {
-							const t = y.o(e);
+							const t = y.m(e);
 							return {
 								source: "meta",
 								action: "open",
@@ -225,19 +225,19 @@
 									...t.actionInfo,
 									reason: this.state.emoteBeingTyped ? "type" : "click"
 								},
-								subreddit: y.jb(e)
+								subreddit: y.hb(e)
 							}
 						})
 					}, this.onEmoteClick = e => {
 						let t = this.props.editorState;
-						const o = Object(v.f)(t);
+						const o = Object(j.f)(t);
 						if (o && this.state.emoteBeingTyped) {
 							const e = t.getSelection();
 							t = s.EditorState.forceSelection(t, e.merge({
 								anchorOffset: e.getFocusOffset() - o.length - 1
 							}))
 						}
-						t = Object(v.g)(e, t), this.props.onChange(t), this.closeTooltip()
+						t = Object(j.g)(e, t), this.props.onChange(t), this.closeTooltip()
 					}, this.onKeyPressedInTooltip = e => {
 						e.keyCode === E.a.ArrowDown ? this.handleDownArrow(e) : e.keyCode === E.a.ArrowLeft ? this.handleLeftArrow() : e.keyCode === E.a.ArrowRight ? this.handleRightArrow() : e.keyCode === E.a.ArrowUp ? this.handleUpArrow(e) : e.keyCode === E.a.Escape && (this.returnFocusToEditor(), this.closeTooltip())
 					}, this.handleUpArrow = e => {
@@ -291,7 +291,7 @@
 						editorState: e
 					} = this.props, t = e.getLastChangeType();
 					if (t !== S.d && t !== S.a) return;
-					const o = Object(v.f)(e);
+					const o = Object(j.f)(e);
 					if (!o) return void(this.state.emoteBeingTyped && this.setState({
 						isTooltipVisible: !1,
 						emoteBeingTyped: null
@@ -318,7 +318,7 @@
 						let n = s.EditorState.forceSelection(e, i.merge({
 							anchorOffset: i.getFocusOffset() - t.length - 2
 						}));
-						n = Object(v.g)(o[0], n), this.props.onChange(n)
+						n = Object(j.g)(o[0], n), this.props.onChange(n)
 					}
 					this.setState({
 						isTooltipVisible: !1,
@@ -362,7 +362,7 @@
 						className: k.a.emotePackTitle
 					}, e.title), a.a.createElement("div", {
 						className: k.a.emotes
-					}, e.emotes.map(e => a.a.createElement(j.a, {
+					}, e.emotes.map(e => a.a.createElement(v.a, {
 						key: e.id,
 						className: k.a.emoteButton,
 						id: O(e.id),
@@ -387,8 +387,8 @@
 								source: "meta",
 								action: "click",
 								noun: "emoji_tooltip_open_learn_more",
-								...y.o(e),
-								subreddit: y.jb(e)
+								...y.m(e),
+								subreddit: y.hb(e)
 							}))
 						}
 					}, i.fbt._("Get More Emotes", null, {
@@ -495,4 +495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.5ee3c085ed4b3c1f48c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.6bcee50f5e0603f9fd79.js.map

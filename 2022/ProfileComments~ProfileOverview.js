@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.5a3196520ab9d7cbe5a6.js
-// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.d734772accd107971e89.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -430,8 +430,8 @@
 						}, t)
 					}), " ")
 				}),
-				j = n("./src/reddit/constants/parameters.ts"),
-				O = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				O = n("./src/reddit/constants/parameters.ts"),
+				j = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				F = n("./src/reddit/controls/Button/index.tsx"),
 				A = n("./src/chat/controls/Svg/index.tsx");
 
@@ -477,7 +477,7 @@
 					return r > Date.now() - a
 				})(e),
 				isSeo: T.g
-			}), pe = Object(O.u)(), he = Object(o.b)(me, (e, {
+			}), pe = Object(j.u)(), he = Object(o.b)(me, (e, {
 				subredditName: t
 			}) => ({
 				continueToQuarantinedSubreddit: async () => {
@@ -509,14 +509,14 @@
 					interstitialWarningMessage: E,
 					interstitialWarningMessageHtml: C,
 					interstitialWarningMessageRTJson: S,
-					setNSFWPreference: O,
+					setNSFWPreference: j,
 					subredditDescription: F,
 					subredditName: A,
 					user: N
 				} = e, z = async () => {
-					if (i ? await O() : await Object(m.l)(), d) {
+					if (i ? await j() : await Object(m.l)(), d) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(j.h, "1"), window.location.href = e.href
+						e.searchParams.set(O.h, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (n) {
@@ -906,7 +906,7 @@
 			const C = "view--layout--FUE",
 				S = "LayoutSwitch--picker",
 				D = Object(l.a)(f.a),
-				j = {
+				O = {
 					[h.d.Card]: function(e) {
 						return s.a.createElement(k.a, E({}, e, {
 							name: "view_card"
@@ -923,7 +923,7 @@
 						}))
 					}
 				},
-				O = {
+				j = {
 					[h.d.Card]: () => r.fbt._("card", null, {
 						hk: "4qOOHu"
 					}),
@@ -962,15 +962,15 @@
 							source: "layout_switch",
 							action: "click",
 							noun: e,
-							screen: Object(w.ab)(t),
-							subreddit: Object(w.jb)(t)
+							screen: Object(w.Y)(t),
+							subreddit: Object(w.hb)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
 							layout: n,
 							onLayoutClick: r,
 							postLayout: a
-						} = this.props, o = n || h.e[a], i = e === o, l = j[e], d = O[e];
+						} = this.props, o = n || h.e[a], i = e === o, l = O[e], d = j[e];
 						return s.a.createElement(g.b, E({}, t, {
 							className: Object(c.a)(v.a.LayoutItem, {
 								[v.a.selected]: i,
@@ -1094,8 +1094,8 @@
 				C = n("./src/reddit/helpers/path/index.ts"),
 				S = n("./src/reddit/helpers/trackers/navigation.ts"),
 				D = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				j = n("./src/reddit/selectors/experiments/bestSortPopular.ts"),
-				O = n("./src/reddit/selectors/experiments/econLeaderboards.ts"),
+				O = n("./src/reddit/selectors/experiments/bestSortPopular.ts"),
+				j = n("./src/reddit/selectors/experiments/econLeaderboards.ts"),
 				F = n("./src/reddit/selectors/tooltip.ts"),
 				A = n("./src/reddit/selectors/user.ts"),
 				N = n("./src/reddit/components/ListingSort/ListingSortIcon.tsx"),
@@ -1135,8 +1135,8 @@
 					pageLayer: e => e
 				}),
 				Z = Object(b.c)({
-					isAwardListingExperimentEnabled: O.a,
-					isBestSortPopularEnabled: j.a,
+					isAwardListingExperimentEnabled: j.a,
+					isBestSortPopularEnabled: O.a,
 					user: A.k,
 					dropdownIsOpen: (e, t) => Object(F.b)(t.dropdownId || I)(e),
 					isPopularPage: d.F
@@ -1688,8 +1688,8 @@
 						}
 					})
 				}))))))),
-				je = n("./src/reddit/constants/listings.ts"),
-				Oe = n("./src/reddit/controls/Button/index.tsx"),
+				Oe = n("./src/reddit/constants/listings.ts"),
+				je = n("./src/reddit/controls/Button/index.tsx"),
 				Fe = n("./src/reddit/icons/fonts/index.tsx"),
 				Ae = n("./src/reddit/selectors/meta.ts"),
 				Ne = n("./src/reddit/components/GeneralCleanup/SortViewBar/ListingSort/index.m.less"),
@@ -1713,7 +1713,7 @@
 					isProfilePage: d.J,
 					pageLayer: e => e
 				}),
-				We = Object(b.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, j.a, A.k, d.F, O.a, Ae.i, (e, t, n, r, a, s, o) => {
+				We = Object(b.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, O.a, A.k, d.F, j.a, Ae.i, (e, t, n, r, a, s, o) => {
 					if (e) return {
 						isPopularPage: a,
 						sortOptions: e,
@@ -1738,10 +1738,10 @@
 						} = this.props, s = r ? Object(p.a)(n, {
 							sort: e
 						}) : Object(C.a)(n, `${e}/`), i = s.split("?")[0], l = r ? s.replace(i + "?", "") : void 0;
-						return a.a.createElement(Oe.t, {
+						return a.a.createElement(je.t, {
 							className: Object(o.a)(ze.a.SortLink, e === t && ze.a.selected),
-							kind: Oe.b.InternalLink,
-							priority: Oe.c.Plain,
+							kind: je.b.InternalLink,
+							priority: je.c.Plain,
 							Icon: n => a.a.createElement(R, Le({}, n, {
 								className: Object(o.a)(ze.a.SortIcon, n.className),
 								sort: e,
@@ -1768,7 +1768,7 @@
 						return a.a.createElement(a.a.Fragment, {
 							key: e
 						}, this.renderSortButton(e), o && a.a.createElement(fe, {
-							baseUrl: je.c[je.b.Popular],
+							baseUrl: Oe.c[Oe.b.Popular],
 							buttonClassName: ze.a.DropdownButton,
 							className: ze.a.CountrySort,
 							disabled: t,
@@ -2067,7 +2067,7 @@
 						isNightmodeOn: c,
 						profileName: u,
 						showModTools: p
-					} = this.props, h = u === e.author ? D : j;
+					} = this.props, h = u === e.author ? D : O;
 					return o.a.createElement(m.a, {
 						comment: e,
 						onClick: (e, t) => {
@@ -2091,8 +2091,8 @@
 					})), o.a.createElement(x, null, h(t, u, p))))
 				}
 			}
-			const D = (e, t, n) => o.a.createElement(y, null, j(e, t, n, !0, !0)),
-				j = (e, t, n, r = !1, a) => o.a.createElement(p.a, {
+			const D = (e, t, n) => o.a.createElement(y, null, O(e, t, n, !0, !0)),
+				O = (e, t, n, r = !1, a) => o.a.createElement(p.a, {
 					commentId: e,
 					commentsPageKey: "profileOverviewPageKey",
 					showFlatlist: r,
@@ -2220,7 +2220,7 @@
 						className: Object(l.a)(u.a.logIn),
 						onClick: () => {
 							n((() => e => ({
-								...Object(f.o)(e),
+								...Object(f.m)(e),
 								source: "xpromo",
 								action: "click",
 								noun: g
@@ -2232,7 +2232,7 @@
 						className: u.a.cancel,
 						onClick: () => {
 							n((() => e => ({
-								...Object(f.o)(e),
+								...Object(f.m)(e),
 								source: "xpromo",
 								action: "dismiss",
 								noun: g
@@ -2265,7 +2265,7 @@
 					const t = Object(h.b)();
 					a.a.useEffect(() => {
 						t((() => e => ({
-							...Object(f.o)(e),
+							...Object(f.m)(e),
 							source: "xpromo",
 							action: "view",
 							noun: g
@@ -2470,4 +2470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.5a3196520ab9d7cbe5a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.d734772accd107971e89.js.map

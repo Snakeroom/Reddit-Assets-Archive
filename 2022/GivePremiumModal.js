@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.8ea2d9121ead784c34ea.js
-// Retrieved at 1/13/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.da157088091c72e2505d.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -634,10 +634,10 @@
 				o = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				i = n("./src/reddit/selectors/gild.ts");
 			const c = e => ({
-					...s.o(e),
+					...s.m(e),
 					correlationId: Object(i.b)(e) || Object(o.e)(o.a.GiftPremiumFlow, !1),
-					screen: s.ab(e),
-					subreddit: s.jb(e)
+					screen: s.Y(e),
+					subreddit: s.hb(e)
 				}),
 				a = () => e => ({
 					...c(e),
@@ -713,4 +713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.8ea2d9121ead784c34ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.da157088091c72e2505d.js.map

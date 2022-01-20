@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.9191c5a86c189bee031a.js
-// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.bc5044bc7eb8e62d77c6.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./src/reddit/actions/pages/subredditLeaderboard.ts": function(e, t, n) {
@@ -1351,13 +1351,13 @@
 			var r = n("./src/reddit/constants/categories.tsx"),
 				s = n("./src/reddit/selectors/telemetry.ts");
 			const a = e => t => ({
-					...s.o(t),
+					...s.m(t),
 					action: "click",
 					noun: Object(r.d)(e),
 					source: "leaderboard_category"
 				}),
 				i = (e, t, n) => a => ({
-					...s.o(a),
+					...s.m(a),
 					action: "click",
 					noun: e,
 					source: "leaderboard_featured_category",
@@ -1367,7 +1367,7 @@
 					}
 				}),
 				o = (e, t) => n => ({
-					...s.o(n),
+					...s.m(n),
 					action: "click",
 					noun: "subreddit",
 					source: "leaderboard_subreddit",
@@ -1378,7 +1378,7 @@
 					}
 				}),
 				d = (e, t) => n => ({
-					...s.o(n),
+					...s.m(n),
 					action: "click",
 					source: "leaderboard_subreddit",
 					noun: t ? "unsubscribe" : "subscribe",
@@ -1387,10 +1387,10 @@
 					}
 				}),
 				c = (e, t, n, a) => i => ({
-					...s.o(i),
+					...s.m(i),
 					action: "click",
 					actionInfo: {
-						...s.d(i),
+						...s.c(i),
 						position: a && a
 					},
 					noun: e,
@@ -1401,7 +1401,7 @@
 					}
 				}),
 				l = (e, t) => n => ({
-					...s.o(n),
+					...s.m(n),
 					action: "view",
 					noun: "leaderboard_right_rail",
 					source: "leaderboard_right_rail",
@@ -1411,7 +1411,7 @@
 					}
 				}),
 				u = (e, t) => n => ({
-					...s.o(n),
+					...s.m(n),
 					action: "click",
 					source: "leaderboard_right_rail",
 					noun: t ? "unsubscribe" : "subscribe",
@@ -1970,4 +1970,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.9191c5a86c189bee031a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.bc5044bc7eb8e62d77c6.js.map

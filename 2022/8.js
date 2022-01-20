@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/8.7942f035958483d7d23a.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/8.6b687213c849f28fd5ea.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[8], {
 		"./src/reddit/helpers/trackers/profileIdCard.ts": function(o, t, r) {
@@ -15,8 +15,8 @@
 				o.FOLLOW = "follow", o.UNFOLLOW = "unfollow"
 			}(n || (n = {}));
 			const i = (o, t) => ({
-					...Object(e.o)(t),
-					profile: Object(e.l)(t),
+					...Object(e.m)(t),
+					profile: Object(e.j)(t),
 					subreddit: {
 						id: o
 					}
@@ -36,4 +36,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/8.7942f035958483d7d23a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/8.6b687213c849f28fd5ea.js.map

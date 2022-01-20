@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.bd6111d684e886f3aeee.js
-// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.b66291d9572bad3aaab6.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3509,10 +3509,10 @@
 			var r = n("./src/reddit/models/ScheduledPost/index.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
 			const o = e => ({
-					...s.o(e),
-					screen: s.ab(e),
-					subreddit: s.jb(e),
-					userSubreddit: s.sb(e)
+					...s.m(e),
+					screen: s.Y(e),
+					subreddit: s.hb(e),
+					userSubreddit: s.qb(e)
 				}),
 				i = e => ({
 					id: e.id,
@@ -3605,7 +3605,7 @@
 					action: "click",
 					noun: "overflow_menu",
 					...o(t),
-					actionInfo: s.d(t, {
+					actionInfo: s.c(t, {
 						pageType: e ? "recurring_posts" : "scheduled_posts"
 					})
 				}),
@@ -3633,7 +3633,7 @@
 					action: "click",
 					noun: Object(r.l)(e),
 					...o(i),
-					actionInfo: s.d(i, {
+					actionInfo: s.c(i, {
 						settingValue: t ? "true" : "false",
 						pageType: n ? "recurring_posts" : "scheduled_posts"
 					})
@@ -4130,4 +4130,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.bd6111d684e886f3aeee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.b66291d9572bad3aaab6.js.map

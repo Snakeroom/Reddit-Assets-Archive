@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.18be3f993a90dfed538f.js
-// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.0fb3dc742b6a44cd897e.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -8571,17 +8571,17 @@
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const a = e => t => ({
-					...Object(s.o)(t),
+					...Object(s.m)(t),
 					source: "meta",
 					action: e,
 					noun: "feed_claim_points_banner",
-					subreddit: Object(s.jb)(t)
+					subreddit: Object(s.hb)(t)
 				}),
 				o = () => a("view"),
 				r = () => a("tap"),
 				i = () => a("dismiss"),
 				c = () => e => ({
-					...Object(s.o)(e),
+					...Object(s.m)(e),
 					source: "meta",
 					action: "view",
 					noun: "points_learn_more",
@@ -8590,7 +8590,7 @@
 					}
 				}),
 				l = () => e => ({
-					...Object(s.o)(e),
+					...Object(s.m)(e),
 					source: "meta",
 					action: "view",
 					noun: "points_faq",
@@ -8599,7 +8599,7 @@
 					}
 				}),
 				d = e => t => ({
-					...Object(s.o)(t),
+					...Object(s.m)(t),
 					source: "meta",
 					action: "view",
 					noun: "points_faq_section",
@@ -8608,17 +8608,17 @@
 					}
 				}),
 				m = () => e => ({
-					...Object(s.o)(e),
+					...Object(s.m)(e),
 					source: "meta",
 					action: "click",
 					noun: "learn_more_create_vault_button"
 				}),
 				u = e => t => ({
-					...Object(s.o)(t),
+					...Object(s.m)(t),
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(s.kb)(t, e)
+					subreddit: Object(s.ib)(t, e)
 				})
 		},
 		"./src/reddit/helpers/trackers/followers.ts": function(e, t, n) {
@@ -8631,13 +8631,13 @@
 			var s = n("./src/reddit/constants/tracking.ts"),
 				a = n("./src/reddit/selectors/telemetry.ts");
 			const o = e => t => ({
-					...Object(a.o)(t),
+					...Object(a.m)(t),
 					action: s.c.CLICK,
 					noun: `follower_list_page_${e?"follow":"unfollow"}`,
 					source: "profile"
 				}),
 				r = () => e => ({
-					...Object(a.o)(e),
+					...Object(a.m)(e),
 					action: s.c.CLICK,
 					noun: "follower_list_cta",
 					source: "profile"
@@ -8672,7 +8672,7 @@
 				a = n("./src/telemetry/index.ts"),
 				o = n("./src/telemetry/models/Event.ts");
 			const r = e => ({
-					...s.o(e),
+					...s.m(e),
 					noun: "desktop_notification_permissions"
 				}),
 				i = e => e ? "enable" : "disable",
@@ -8705,8 +8705,8 @@
 					})
 				},
 				u = (e, t, n) => ({
-					...s.o(e),
-					actionInfo: s.d(e, {
+					...s.m(e),
+					actionInfo: s.c(e, {
 						success: t,
 						reason: n
 					}),
@@ -8734,18 +8734,18 @@
 					})
 				},
 				f = e => ({
-					...s.o(e),
+					...s.m(e),
 					noun: "push_notification"
 				}),
 				g = e => ({
 					...f(e),
-					notification: s.E(e, void 0, void 0),
+					notification: s.C(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
 				_ = (e, t) => n => ({
-					...s.o(n),
+					...s.m(n),
 					action: i(e),
 					email: {
 						type: t
@@ -8754,7 +8754,7 @@
 					source: "email_app_settings"
 				}),
 				v = (e, t) => n => ({
-					...s.o(n),
+					...s.m(n),
 					action: i(e),
 					notification: {
 						type: t
@@ -8763,7 +8763,7 @@
 					source: "notification_app_settings"
 				}),
 				C = e => t => ({
-					...s.o(t),
+					...s.m(t),
 					source: "email_app_settings",
 					action: i(e),
 					noun: "email",
@@ -8808,9 +8808,9 @@
 				o = n("./src/telemetry/models/GoldPurchase.ts"),
 				r = n("./src/reddit/helpers/correlationIdTracker.ts");
 			const i = e => ({
-					...s.o(e),
+					...s.m(e),
 					correlationId: Object(r.c)(r.a.PremiumSettings),
-					screen: s.ab(e)
+					screen: s.Y(e)
 				}),
 				c = () => e => ({
 					...i(e),
@@ -8845,7 +8845,7 @@
 					action: "view",
 					noun: "page",
 					actionInfo: {
-						...s.d(t),
+						...s.c(t),
 						reason: e
 					}
 				}),
@@ -8867,7 +8867,7 @@
 						premiumCancelReason: t
 					},
 					actionInfo: {
-						...s.d(n),
+						...s.c(n),
 						reason: e
 					}
 				}),
@@ -8877,7 +8877,7 @@
 					action: "click",
 					noun: "cancel_no",
 					actionInfo: {
-						...s.d(t),
+						...s.c(t),
 						reason: e
 					}
 				}),
@@ -8940,7 +8940,7 @@
 					action: "connect",
 					noun: "sso",
 					actionInfo: {
-						...a.d(t),
+						...a.c(t),
 						type: e
 					}
 				}),
@@ -8949,7 +8949,7 @@
 					action: "disconnect",
 					noun: "sso",
 					actionInfo: {
-						...a.d(t),
+						...a.c(t),
 						type: e
 					}
 				}),
@@ -12894,4 +12894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.18be3f993a90dfed538f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.0fb3dc742b6a44cd897e.js.map

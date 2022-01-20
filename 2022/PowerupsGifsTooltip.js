@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.4cd828b75a5a5cdd5e30.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.3ba9bf7f0c6e05558253.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -124,11 +124,11 @@
 				S || (S = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
 			var O = s("./node_modules/lodash/debounce.js"),
-				k = s.n(O),
-				j = s("./src/reddit/icons/svgs/Search/index.tsx"),
-				I = s("./src/reddit/selectors/user.ts"),
-				B = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
-				N = s.n(B);
+				j = s.n(O),
+				I = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				B = s("./src/reddit/selectors/user.ts"),
+				k = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
+				N = s.n(k);
 			const R = 400;
 			class M extends d.a.Component {
 				constructor() {
@@ -138,7 +138,7 @@
 						this.setState({
 							query: e.target.value
 						}, this.dispatchOnChange)
-					}, this.dispatchOnChange = k()(() => {
+					}, this.dispatchOnChange = j()(() => {
 						this.props.onChange(this.state.query)
 					}, R), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
@@ -160,7 +160,7 @@
 					}, d.a.createElement("button", {
 						className: N.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, d.a.createElement(j.a, {
+					}, d.a.createElement(I.a, {
 						className: N.a.searchIcon
 					})), d.a.createElement("input", {
 						ref: e => this.elementRef = e,
@@ -181,7 +181,7 @@
 				}
 			}
 			const L = Object(h.c)({
-				isNightMode: I.W
+				isNightMode: B.W
 			});
 			var P = Object(p.b)(L)(M),
 				U = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
@@ -211,12 +211,12 @@
 							action: "change",
 							noun: "gif_tooltip_search",
 							correlationId: this.props.correlationId,
-							subreddit: this.props.subreddit.id ? v.kb(t, this.props.subreddit.id) : void 0,
-							post: v.k(t),
+							subreddit: this.props.subreddit.id ? v.ib(t, this.props.subreddit.id) : void 0,
+							post: v.i(t),
 							search: {
 								query: e
 							},
-							...v.o(t)
+							...v.m(t)
 						})), this.setState({
 							loading: !1,
 							columns: [
@@ -231,15 +231,15 @@
 						e.scrollHeight - e.scrollTop === e.clientHeight && this.loadMoreResults()
 					}, 300), this.onResultClick = e => {
 						this.props.sendEvent(e => {
-							const t = v.o(e);
+							const t = v.m(e);
 							return {
 								...t,
 								source: "meta",
 								action: "select",
 								noun: "gif_tooltip_result",
 								correlationId: this.props.correlationId,
-								subreddit: this.props.subreddit.id ? v.kb(e, this.props.subreddit.id) : void 0,
-								post: v.k(e),
+								subreddit: this.props.subreddit.id ? v.ib(e, this.props.subreddit.id) : void 0,
+								post: v.i(e),
 								actionInfo: {
 									...t.actionInfo,
 									reason: this.props.hasGifProduct ? "has-gif-product" : "gif-train"
@@ -506,4 +506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.4cd828b75a5a5cdd5e30.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.3ba9bf7f0c6e05558253.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.ef35b4bba26f3906f1d3.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.5e3ffc437f0e9cb5a792.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -641,7 +641,7 @@
 				M = r("./src/reddit/components/Governance/Leaderboard/EntryUser/index.m.less"),
 				U = r.n(M);
 			const w = (e, t, r) => n => {
-				const s = L.o(n);
+				const s = L.m(n);
 				return {
 					action: e,
 					correlationId: t,
@@ -652,7 +652,7 @@
 						...s.actionInfo,
 						reason: r
 					},
-					subreddit: L.jb(n)
+					subreddit: L.hb(n)
 				}
 			};
 			const G = Object(c.c)({
@@ -1834,4 +1834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.ef35b4bba26f3906f1d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.5e3ffc437f0e9cb5a792.js.map

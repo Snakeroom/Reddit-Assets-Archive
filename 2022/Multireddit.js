@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.dff37ed2b12b70415538.js
-// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.c26a97708ad60d1c66a5.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -1625,8 +1625,8 @@
 			}));
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const o = (e, t) => ({
-					...Object(r.o)(t),
-					customFeed: Object(r.n)(t, e),
+					...Object(r.m)(t),
+					customFeed: Object(r.l)(t, e),
 					source: "custom_feeds"
 				}),
 				s = e => t => ({
@@ -1692,8 +1692,8 @@
 					source: e,
 					noun: "create_community_button",
 					action: "click",
-					...o.o(t),
-					actionInfo: o.d(t, {
+					...o.m(t),
+					actionInfo: o.c(t, {
 						settingValue: t.user.account && t.user.account.isMod ? "existing_mod" : "new_mod"
 					}),
 					correlationId: Object(r.e)(r.a.SubredditCreation, !0)
@@ -1702,8 +1702,8 @@
 					source: "community_form",
 					noun: "save_community_button",
 					action: "click",
-					...o.o(s),
-					actionInfo: o.d(s, {
+					...o.m(s),
+					actionInfo: o.c(s, {
 						settingValue: e
 					}),
 					subreddit: {
@@ -1721,16 +1721,16 @@
 					source: "community_form",
 					noun: "cancel",
 					action: "click",
-					...o.o(e),
-					actionInfo: o.d(e),
+					...o.m(e),
+					actionInfo: o.c(e),
 					correlationId: Object(r.c)(r.a.SubredditCreation)
 				}),
 				a = (e, t) => n => ({
 					source: "community_form",
 					noun: "error_message",
 					action: "view",
-					...o.o(n),
-					actionInfo: o.d(n, {
+					...o.m(n),
+					actionInfo: o.c(n, {
 						reason: e,
 						settingValue: t
 					}),
@@ -1740,29 +1740,29 @@
 					source: "user_dropdown",
 					noun: "create_community",
 					action: "click",
-					...o.o(e),
-					actionInfo: o.d(e)
+					...o.m(e),
+					actionInfo: o.c(e)
 				}),
 				l = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "view",
-					...o.o(e),
-					actionInfo: o.d(e)
+					...o.m(e),
+					actionInfo: o.c(e)
 				}),
 				u = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "click",
-					...o.o(e),
-					actionInfo: o.d(e)
+					...o.m(e),
+					actionInfo: o.c(e)
 				}),
 				m = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "dismiss",
-					...o.o(e),
-					actionInfo: o.d(e)
+					...o.m(e),
+					actionInfo: o.c(e)
 				})
 		},
 		"./src/reddit/hooks/useLocale.ts": function(e, t, n) {
@@ -2038,4 +2038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.dff37ed2b12b70415538.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.c26a97708ad60d1c66a5.js.map

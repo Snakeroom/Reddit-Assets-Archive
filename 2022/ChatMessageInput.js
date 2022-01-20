@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.70a36defe7f0c48d3d20.js
-// Retrieved at 1/19/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.62d318ec696b534ca266.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -786,8 +786,8 @@
 				q = h.a.div("CloseIconWrap", B.a),
 				Z = h.a.div("Reply", B.a),
 				V = h.a.div("ReplyAuthor", B.a),
-				W = h.a.div("ReplyComment", B.a),
-				G = h.a.wrapped(x.a, "RichTextEditor", B.a),
+				G = h.a.div("ReplyComment", B.a),
+				W = h.a.wrapped(x.a, "RichTextEditor", B.a),
 				H = h.a.wrapped(g.a, "SmallChatUserIcon", B.a),
 				K = Object(u.b)(() => Object(d.c)({
 					draft: O.i,
@@ -942,7 +942,7 @@
 						className: Object(m.a)({
 							[B.a.isLivestreaming]: s
 						})
-					}, l.a.createElement(W, {
+					}, l.a.createElement(G, {
 						onClick: this.handleCloseReply
 					}, l.a.createElement(V, null, a.fbt._("Replying to u/ {username}:", [a.fbt._param("username", h.author)], {
 						hk: "2YZre5"
@@ -962,7 +962,7 @@
 					}, l.a.createElement(X, {
 						isEditing: !!t,
 						isLivestreaming: !!s
-					}), l.a.createElement(G, {
+					}), l.a.createElement(W, {
 						className: Object(m.a)(B.a.RichTextEditor, {
 							[B.a.Livestreaming]: s && !t,
 							[B.a.Editing]: !s && t
@@ -1384,9 +1384,9 @@
 			}(a || (a = {}));
 			const i = (e, t) => {
 					if (t) {
-						const s = o.B(e, t.post.id),
-							a = o.I(e, t.post.id),
-							n = o.jb(e);
+						const s = o.z(e, t.post.id),
+							a = o.G(e, t.post.id),
+							n = o.hb(e);
 						if (t.post.authorInfo && a && (a.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const a = Object(r.j)(e, {
@@ -1401,7 +1401,7 @@
 						}
 					}
 					return {
-						subreddit: o.jb(e)
+						subreddit: o.hb(e)
 					}
 				},
 				c = (e, t, s) => {
@@ -1446,7 +1446,7 @@
 					action: "click",
 					noun: "enlarge",
 					...i(s, e),
-					actionInfo: o.d(s, {
+					actionInfo: o.c(s, {
 						position: t || 0
 					})
 				}),
@@ -1499,7 +1499,7 @@
 					playback: c(n, t, s),
 					...l(n),
 					...i(n, t),
-					actionInfo: o.d(n, {
+					actionInfo: o.c(n, {
 						referralId: a
 					})
 				}),
@@ -1579,8 +1579,8 @@
 					source: "post",
 					action: "view",
 					noun: "post",
-					profile: o.R(t),
-					screen: o.ab(t),
+					profile: o.P(t),
+					screen: o.Y(t),
 					...i(t, e)
 				}),
 				A = e => t => {
@@ -1589,8 +1589,8 @@
 						source: "post",
 						action: "consume",
 						noun: "post",
-						profile: o.R(t),
-						screen: o.ab(t),
+						profile: o.P(t),
+						screen: o.Y(t),
 						...s
 					}
 				},
@@ -1611,7 +1611,7 @@
 					action: "click",
 					noun: "subscribe",
 					...i(t, e),
-					targetSubreddit: o.jb(t)
+					targetSubreddit: o.hb(t)
 				}),
 				S = (e, t) => s => ({
 					source: "stream_player",
@@ -1925,4 +1925,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.70a36defe7f0c48d3d20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.62d318ec696b534ca266.js.map

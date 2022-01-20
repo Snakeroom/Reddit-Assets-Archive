@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.fc9c1dc7bb87ba780324.js
-// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.be8613febf8cd771fdd4.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -888,9 +888,9 @@
 			}(n || (n = {}));
 			const a = (e, t) => {
 					if (t) {
-						const s = i.B(e, t.post.id),
-							n = i.I(e, t.post.id),
-							o = i.jb(e);
+						const s = i.z(e, t.post.id),
+							n = i.G(e, t.post.id),
+							o = i.hb(e);
 						if (t.post.authorInfo && n && (n.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const n = Object(r.j)(e, {
@@ -905,7 +905,7 @@
 						}
 					}
 					return {
-						subreddit: i.jb(e)
+						subreddit: i.hb(e)
 					}
 				},
 				c = (e, t, s) => {
@@ -950,7 +950,7 @@
 					action: "click",
 					noun: "enlarge",
 					...a(s, e),
-					actionInfo: i.d(s, {
+					actionInfo: i.c(s, {
 						position: t || 0
 					})
 				}),
@@ -1003,7 +1003,7 @@
 					playback: c(o, t, s),
 					...d(o),
 					...a(o, t),
-					actionInfo: i.d(o, {
+					actionInfo: i.c(o, {
 						referralId: n
 					})
 				}),
@@ -1083,8 +1083,8 @@
 					source: "post",
 					action: "view",
 					noun: "post",
-					profile: i.R(t),
-					screen: i.ab(t),
+					profile: i.P(t),
+					screen: i.Y(t),
 					...a(t, e)
 				}),
 				k = e => t => {
@@ -1093,8 +1093,8 @@
 						source: "post",
 						action: "consume",
 						noun: "post",
-						profile: i.R(t),
-						screen: i.ab(t),
+						profile: i.P(t),
+						screen: i.Y(t),
 						...s
 					}
 				},
@@ -1115,7 +1115,7 @@
 					action: "click",
 					noun: "subscribe",
 					...a(t, e),
-					targetSubreddit: i.jb(t)
+					targetSubreddit: i.hb(t)
 				}),
 				P = (e, t) => s => ({
 					source: "stream_player",
@@ -1335,7 +1335,7 @@
 			})), s.d(t, "e", (function() {
 				return H
 			})), s.d(t, "g", (function() {
-				return K
+				return G
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/reselect/es/index.js"),
@@ -1513,7 +1513,7 @@
 				}),
 				U = Object(n.a)(N, B, m.b, c.b, c.o, (e, t, s, n, o) => s ? n : e ? t === F.LIVE || t === F.VOD ? e.stream.hls_url : o : void 0),
 				H = Object(n.a)(N, B, R, (e, t, s) => e ? t === F.LIVE ? e.broadcast_time : t === F.VOD && s < e.broadcast_time ? s : 0 : 0),
-				K = (e, t) => {
+				G = (e, t) => {
 					const s = h(e);
 					return !!s && s[t] && s[t].chat_disabled
 				}
@@ -1551,4 +1551,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.fc9c1dc7bb87ba780324.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.be8613febf8cd771fdd4.js.map

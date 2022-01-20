@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.bea6ccc02072a5b3200c.js
-// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.477fe360a80d10ad053e.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -67,11 +67,11 @@
 			})), i.d(t, "subscribeForPNs", (function() {
 				return x
 			})), i.d(t, "unsubscribeFromPNs", (function() {
-				return G
-			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
-				return W
-			})), i.d(t, "subscribeToPermissionsChange", (function() {
 				return C
+			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
+				return G
+			})), i.d(t, "subscribeToPermissionsChange", (function() {
+				return W
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/lodash/omit.js"),
@@ -129,7 +129,7 @@
 				O.j(c), await Object(a.b)(e, t, () => {
 					l || n(Object(d.o)()), n(Object(d.n)()), O.h(c)
 				}, (e, t) => {
-					n(Object(d.l)()), n(G(t ? d.a.Denied : d.a.Closed)), e && (t ? O.e(c) : O.f(c))
+					n(Object(d.l)()), n(C(t ? d.a.Denied : d.a.Closed)), e && (t ? O.e(c) : O.f(c))
 				}, e => {
 					n(Object(d.m)()), n(x()), e && O.d(c)
 				}, () => {
@@ -156,7 +156,7 @@
 				} catch (o) {
 					O.i(r, "registration_failed_uncaught_exception"), console.error(o)
 				}
-			}, G = (e, t) => async i => {
+			}, C = (e, t) => async i => {
 				try {
 					Object(f.b)(e);
 					const s = await Object(u.a)();
@@ -170,7 +170,7 @@
 						})))
 					}
 				} catch (s) {}
-			}, W = e => async (t, i) => {
+			}, G = e => async (t, i) => {
 				const n = i();
 				if (Object(f.a)(n) === d.c.NotificationsSupported) switch (Object(a.a)()) {
 					case d.a.Default:
@@ -180,7 +180,7 @@
 					case d.a.Denied:
 						t(Object(b.h)(e))
 				}
-			}, C = () => async (e, t) => {
+			}, W = () => async (e, t) => {
 				var i;
 				if (!(null === (i = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === i ? void 0 : i.query)) return;
 				const n = t();
@@ -191,13 +191,13 @@
 				s.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(G(d.a.Denied)), O.e(n);
+							e(C(d.a.Denied)), O.e(n);
 							break;
 						case d.a.Granted:
 							e(x()), O.d(n);
 							break;
 						default:
-							e(G(d.a.Default))
+							e(C(d.a.Default))
 					}
 				})(s.state)
 			}
@@ -231,7 +231,7 @@
 				s = i("./src/telemetry/index.ts"),
 				r = i("./src/telemetry/models/Event.ts");
 			const o = e => ({
-					...n.o(e),
+					...n.m(e),
 					noun: "desktop_notification_permissions"
 				}),
 				c = e => e ? "enable" : "disable",
@@ -264,8 +264,8 @@
 					})
 				},
 				b = (e, t, i) => ({
-					...n.o(e),
-					actionInfo: n.d(e, {
+					...n.m(e),
+					actionInfo: n.c(e, {
 						success: t,
 						reason: i
 					}),
@@ -293,18 +293,18 @@
 					})
 				},
 				m = e => ({
-					...n.o(e),
+					...n.m(e),
 					noun: "push_notification"
 				}),
 				h = e => ({
 					...m(e),
-					notification: n.E(e, void 0, void 0),
+					notification: n.C(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
 				O = (e, t) => i => ({
-					...n.o(i),
+					...n.m(i),
 					action: c(e),
 					email: {
 						type: t
@@ -313,7 +313,7 @@
 					source: "email_app_settings"
 				}),
 				v = (e, t) => i => ({
-					...n.o(i),
+					...n.m(i),
 					action: c(e),
 					notification: {
 						type: t
@@ -322,7 +322,7 @@
 					source: "notification_app_settings"
 				}),
 				j = e => t => ({
-					...n.o(t),
+					...n.m(t),
 					source: "email_app_settings",
 					action: c(e),
 					noun: "email",
@@ -336,4 +336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.bea6ccc02072a5b3200c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.477fe360a80d10ad053e.js.map

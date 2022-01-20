@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.e2c27bc904c9aa63ee3e.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.052a4c681dc7842733cc.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -104,8 +104,8 @@
 						action: "open",
 						noun: "custom_badges_hover_card",
 						correlationId: this.correlationId,
-						...E.o(e),
-						subreddit: E.jb(e)
+						...E.m(e),
+						subreddit: E.hb(e)
 					}))
 				}
 				onOpenUploadDialog() {
@@ -149,8 +149,8 @@
 								action: "click",
 								noun: "custom_badge_hover_open_learn_more",
 								correlationId: this.correlationId,
-								...E.o(e),
-								subreddit: E.jb(e)
+								...E.m(e),
+								subreddit: E.hb(e)
 							}))
 						}
 					}, s.a.createElement(C.a, {
@@ -659,7 +659,7 @@
 			})), r.d(t, "p", (function() {
 				return N
 			})), r.d(t, "k", (function() {
-				return w
+				return j
 			})), r.d(t, "r", (function() {
 				return k
 			})), r.d(t, "y", (function() {
@@ -835,7 +835,7 @@
 			! function(e) {
 				e[e.Fetched = 0] = "Fetched", e[e.Fetching = 1] = "Fetching", e[e.NotFetched = 2] = "NotFetched"
 			}(D || (D = {}));
-			const j = {
+			const w = {
 					prices: {},
 					member: "Supporter",
 					memberPlural: "Supporters",
@@ -844,11 +844,11 @@
 					membership: "Membership",
 					membershipAlt: "Supporter Membership"
 				},
-				w = (e, t) => Object.values(e.products.models).filter(e => e.type === a.a.Membership && t && e.subredditId === t),
+				j = (e, t) => Object.values(e.products.models).filter(e => e.type === a.a.Membership && t && e.subredditId === t),
 				B = (e, t) => {
 					if (!t) return {};
-					const r = j.prices;
-					w(e, t).forEach(e => {
+					const r = w.prices;
+					j(e, t).forEach(e => {
 						e.price && e.currency && (r[e.currency] = e.price)
 					});
 					const n = h(e, t);
@@ -856,15 +856,15 @@
 				},
 				k = (e, t) => {
 					var r, n, s, o;
-					const c = (null === (o = null === (s = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || j;
+					const c = (null === (o = null === (s = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || w;
 					return {
 						prices: B(e, t),
-						member: c.member || j.member,
-						memberPlural: c.memberPlural || j.memberPlural,
-						memberAlt: c.memberAlt || j.memberAlt,
-						memberAltPlural: c.memberAltPlural || j.memberAltPlural,
-						membership: c.membership || j.membership,
-						membershipAlt: c.membershipAlt || j.membershipAlt
+						member: c.member || w.member,
+						memberPlural: c.memberPlural || w.memberPlural,
+						memberAlt: c.memberAlt || w.memberAlt,
+						memberAltPlural: c.memberAltPlural || w.memberAltPlural,
+						membership: c.membership || w.membership,
+						membershipAlt: c.membershipAlt || w.membershipAlt
 					}
 				},
 				F = e => {
@@ -923,4 +923,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.e2c27bc904c9aa63ee3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.052a4c681dc7842733cc.js.map

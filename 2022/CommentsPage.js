@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b74f9f1ec7a9c51ae8f7.js
-// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.c36381491aa54564a1cd.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -1177,12 +1177,12 @@
 					actionInfo: {
 						pageType: t ? "post_detail" : "home"
 					},
-					listing: Object(S.z)(r, void 0, {
+					listing: Object(S.x)(r, void 0, {
 						oldSort: s,
 						sort: n,
 						source: o
 					}),
-					userSubreddit: Object(S.sb)(r)
+					userSubreddit: Object(S.qb)(r)
 				}),
 				L = (e, t) => s => ({
 					source: "comment_highlighting",
@@ -1190,8 +1190,8 @@
 					noun: e
 				}),
 				N = e => ({
-					subreddit: Object(S.jb)(e),
-					userSubreddit: Object(S.sb)(e)
+					subreddit: Object(S.hb)(e),
+					userSubreddit: Object(S.qb)(e)
 				}),
 				T = e => t => ({
 					source: "contest_mode",
@@ -2181,11 +2181,11 @@
 				He = s("./src/lib/promo/withShowSignupUpsell.tsx"),
 				qe = s("./src/reddit/selectors/telemetry.ts");
 			const Ve = e => t => ({
-				...Object(qe.o)(t),
+				...Object(qe.m)(t),
 				source: "post_detail",
 				action: "view",
 				noun: "few_comments",
-				actionInfo: Object(qe.d)(t, {
+				actionInfo: Object(qe.c)(t, {
 					reason: String(e)
 				})
 			});
@@ -3511,7 +3511,7 @@
 				}) => t, N.I, N.J, P.d, K, (e, t, s, n, o, r) => !t && !s && !n && !o && !e && r),
 				Y = Object(c.a)((e, {
 					post: t
-				}) => t, E.c, L.Y, L.jb, (e, t, s, n) => {
+				}) => t, E.c, L.W, L.hb, (e, t, s, n) => {
 					const o = !!e && void 0 !== e.isEligibleForLinkedPosts;
 					let r, i = "";
 					if (e && (r = {
@@ -3747,7 +3747,7 @@
 						className: Object(d.a)(m.a.logIn),
 						onClick: () => {
 							s((() => e => ({
-								...Object(x.o)(e),
+								...Object(x.m)(e),
 								source: "xpromo",
 								action: "click",
 								noun: C
@@ -3759,7 +3759,7 @@
 						className: m.a.cancel,
 						onClick: () => {
 							s((() => e => ({
-								...Object(x.o)(e),
+								...Object(x.m)(e),
 								source: "xpromo",
 								action: "dismiss",
 								noun: C
@@ -3792,7 +3792,7 @@
 					const t = Object(h.b)();
 					o.a.useEffect(() => {
 						t((() => e => ({
-							...Object(x.o)(e),
+							...Object(x.m)(e),
 							source: "xpromo",
 							action: "view",
 							noun: C
@@ -4124,23 +4124,23 @@
 			}));
 			var n = s("./src/reddit/selectors/telemetry.ts");
 			const o = (e, t) => ({
-					...Object(n.o)(e),
-					media: Object(n.B)(e, t),
-					profile: Object(n.R)(e),
-					subreddit: Object(n.jb)(e) || Object(n.mb)(e, t)
+					...Object(n.m)(e),
+					media: Object(n.z)(e, t),
+					profile: Object(n.P)(e),
+					subreddit: Object(n.hb)(e) || Object(n.kb)(e, t)
 				}),
 				r = e => t => ({
 					source: "post",
 					action: "click",
 					noun: "other_discussions",
-					post: Object(n.I)(t, e),
+					post: Object(n.G)(t, e),
 					...o(t, e)
 				}),
 				i = e => t => ({
 					source: "other_discussions",
 					action: "click",
 					noun: "dismiss",
-					post: Object(n.I)(t, e),
+					post: Object(n.G)(t, e),
 					...o(t, e)
 				})
 		},
@@ -5869,4 +5869,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b74f9f1ec7a9c51ae8f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.c36381491aa54564a1cd.js.map

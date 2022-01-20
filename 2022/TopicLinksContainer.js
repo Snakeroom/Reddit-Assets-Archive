@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopicLinksContainer.4cba480196b48bd4216d.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopicLinksContainer.d4219c0537662a8956f0.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopicLinksContainer"], {
 		"./src/reddit/components/IdCard/TopicLinksContainer/index.m.less": function(e, t, n) {
@@ -25,17 +25,17 @@
 				i = n("./node_modules/react/index.js"),
 				c = n.n(i),
 				a = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/reselect/es/index.js"),
-				r = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				r = n("./node_modules/reselect/es/index.js"),
+				o = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				d = n("./src/reddit/controls/Button/index.tsx"),
 				l = n("./src/reddit/constants/tracking.ts"),
-				p = n("./src/reddit/selectors/telemetry.ts");
-			var m = n("./src/reddit/icons/svgs/Tag/index.tsx"),
+				m = n("./src/reddit/selectors/telemetry.ts");
+			var p = n("./src/reddit/icons/svgs/Tag/index.tsx"),
 				_ = n("./src/reddit/selectors/seo/topicLinks.ts"),
 				u = n("./src/reddit/selectors/subreddit.ts"),
 				L = n("./src/reddit/components/IdCard/TopicLinksContainer/index.m.less"),
 				C = n.n(L);
-			const x = Object(o.c)({
+			const x = Object(r.c)({
 					subreddit: u.R,
 					topicLinks: _.a
 				}),
@@ -44,9 +44,9 @@
 					topicName: e,
 					slug: t
 				}) => {
-					const n = Object(r.b)(),
+					const n = Object(o.b)(),
 						s = Object(i.useCallback)(() => n((e => t => ({
-							...p.o(t),
+							...m.m(t),
 							action: l.c.CLICK,
 							noun: "link",
 							source: "subreddit_topic_link",
@@ -71,7 +71,7 @@
 				className: C.a.TopicsContainer
 			}, c.a.createElement("div", {
 				className: C.a.TopicListHeader
-			}, c.a.createElement(m.a, {
+			}, c.a.createElement(p.a, {
 				className: C.a.TagIcon,
 				key: "tag"
 			}), `${e.displayText} ${s.fbt._("topics",null,{hk:"2BYU7m"})}`), c.a.createElement("div", {
@@ -101,4 +101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopicLinksContainer.4cba480196b48bd4216d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopicLinksContainer.d4219c0537662a8956f0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.618445de9a079e71e6bf.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.7b7aeff166e67675a596.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Economics-SubredditPremium-LFGBanner"], {
 		"./node_modules/lodash/_arraySample.js": function(e, t, n) {
@@ -256,9 +256,9 @@
 			n.d(t, "a", (function() {
 				return S
 			})), n.d(t, "g", (function() {
-				return j
-			})), n.d(t, "b", (function() {
 				return C
+			})), n.d(t, "b", (function() {
+				return j
 			})), n.d(t, "d", (function() {
 				return w
 			})), n.d(t, "e", (function() {
@@ -314,7 +314,7 @@
 					const t = await Object(i.e)(n(), r);
 					t.ok && e(Object(E.g)(t.body))
 				}
-			}, j = (e, t) => async (n, s, {
+			}, C = (e, t) => async (n, s, {
 				apiContext: r
 			}) => {
 				const o = s().user.account,
@@ -324,7 +324,7 @@
 					const t = await Object(c.a)(r(), e, o.id);
 					n(Object(E.i)(t))
 				}
-			}, C = e => async (t, n, {
+			}, j = e => async (t, n, {
 				apiContext: s
 			}) => {
 				const r = n(),
@@ -348,11 +348,11 @@
 			}, w = (e, t) => async (n, s, {
 				apiContext: r
 			}) => {
-				await n(j(e, !0));
+				await n(C(e, !0));
 				const o = s().economics.subredditPremium[e];
 				if (o && o.status === h.a.Fetched) {
 					const s = o.data.userOwnedBadges.find(e => e.type === t.id);
-					s && (n(C({
+					s && (n(j({
 						badge: s,
 						subredditId: e,
 						placement: s.placement
@@ -382,7 +382,7 @@
 			}, x = (e, t, n) => async (s, r, {
 				apiContext: o
 			}) => {
-				if (await s(j(e, !0)), n && t) {
+				if (await s(C(e, !0)), n && t) {
 					const n = r(),
 						o = Object(g.f)(n, e),
 						a = Object(_.a)(n, t);
@@ -391,7 +391,7 @@
 							subredditId: e,
 							badge: a
 						});
-						t && await s(C({
+						t && await s(j({
 							badge: t,
 							subredditId: e
 						}))
@@ -409,7 +409,7 @@
 				} = await Object(i.c)(s(), e);
 				t(Object(E.f)({
 					wallet: r
-				})), await t(j(e.subredditId, !0))
+				})), await t(C(e.subredditId, !0))
 			}
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, n) {
@@ -579,8 +579,8 @@
 			var O = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				v = n("./src/reddit/contexts/ApiContext.tsx"),
 				S = n("./src/reddit/controls/Button/index.tsx"),
-				j = n("./src/reddit/endpoints/economics/banners.ts"),
-				C = n("./src/reddit/endpoints/economics/emojis.ts"),
+				C = n("./src/reddit/endpoints/economics/banners.ts"),
+				j = n("./src/reddit/endpoints/economics/emojis.ts"),
 				w = n("./src/reddit/helpers/economics/membershipPage.ts"),
 				I = n("./src/reddit/helpers/governanceErrorText/index.ts"),
 				x = n("./src/reddit/icons/svgs/Close/index.tsx"),
@@ -841,7 +841,7 @@
 						displayText: String(e.type[t]),
 						onClick: () => {
 							e.onChange(t), e.sendEvent(n => {
-								const s = k.o(n);
+								const s = k.m(n);
 								return {
 									source: "meta",
 									action: "click",
@@ -853,7 +853,7 @@
 										paneName: le.get(e.type),
 										reason: t
 									},
-									subreddit: k.jb(n)
+									subreddit: k.hb(n)
 								}
 							})
 						}
@@ -944,8 +944,8 @@
 									action: "click",
 									noun: "lfg_banner_generate_badge",
 									correlationId: this.props.correlationId,
-									...k.o(e),
-									subreddit: k.jb(e)
+									...k.m(e),
+									subreddit: k.hb(e)
 								})))
 							}
 						}, s.fbt._("Generate Badge", null, {
@@ -971,14 +971,14 @@
 						} = this.state;
 						if (!(s && r && o && n && t !== N.a.DontKnow)) return null;
 						const a = `${s}_${r}_${o}_badge`,
-							i = await Object(C.a)(this.props.apiContext(), {
+							i = await Object(j.a)(this.props.apiContext(), {
 								productId: a,
 								subredditId: this.props.subredditId
 							});
 						i.ok ? (this.setState({
 							show: be.Claimed
 						}), this.props.onDismissBanner(), this.props.onBadgeClaimed(a)) : this.props.onError(i.error), e && this.props.onOpenLandingPage(n, this.correlationId), this.props.sendEvent(t => {
-							const n = k.o(t);
+							const n = k.m(t);
 							return {
 								source: "meta",
 								action: "click",
@@ -988,9 +988,9 @@
 								actionInfo: {
 									...n.actionInfo,
 									reason: a,
-									paneName: j.a.LFG
+									paneName: C.a.LFG
 								},
-								subreddit: k.jb(t)
+								subreddit: k.hb(t)
 							}
 						})
 					}, this.handleDismiss = () => {
@@ -999,7 +999,7 @@
 						}) : (this.setState({
 							show: be.Dismissed
 						}), this.props.sendEvent(e => {
-							const t = k.o(e);
+							const t = k.m(e);
 							return {
 								source: "meta",
 								action: "click",
@@ -1008,16 +1008,16 @@
 								...t,
 								actionInfo: {
 									...t.actionInfo,
-									paneName: j.a.LFG
+									paneName: C.a.LFG
 								},
-								subreddit: k.jb(e)
+								subreddit: k.hb(e)
 							}
 						})), this.props.onDismissBanner()
 					}, this.handleUndoDismiss = () => {
 						this.setState({
 							show: be.Select
 						}), this.props.onUndismissBanner(), this.props.sendEvent(e => {
-							const t = k.o(e);
+							const t = k.m(e);
 							return {
 								source: "meta",
 								action: "click",
@@ -1026,9 +1026,9 @@
 								...t,
 								actionInfo: {
 									...t.actionInfo,
-									paneName: j.a.LFG
+									paneName: C.a.LFG
 								},
-								subreddit: k.jb(e)
+								subreddit: k.hb(e)
 							}
 						})
 					}, this.state = {
@@ -1045,7 +1045,7 @@
 					this.setState({
 						show: be.Select
 					}), this.props.sendEvent(e => {
-						const t = k.o(e);
+						const t = k.m(e);
 						return {
 							source: "meta",
 							action: "view",
@@ -1054,9 +1054,9 @@
 							...t,
 							actionInfo: {
 								...t.actionInfo,
-								paneName: j.a.LFG
+								paneName: C.a.LFG
 							},
-							subreddit: k.jb(e)
+							subreddit: k.hb(e)
 						}
 					})
 				}
@@ -1123,7 +1123,7 @@
 			const ve = Object(c.c)({
 					isBannerDismissed: (e, {
 						subredditId: t
-					}) => Object(N.g)(e, t, j.a.LFG),
+					}) => Object(N.g)(e, t, C.a.LFG),
 					subreddit: (e, {
 						subredditId: t
 					}) => e.subreddits.models[t],
@@ -1136,7 +1136,7 @@
 			t.default = Object(v.b)(Object(a.b)(ve, (e, {
 				subredditId: t
 			}) => ({
-				onDismissBanner: () => e(Object(u.a)(t, j.a.LFG)),
+				onDismissBanner: () => e(Object(u.a)(t, C.a.LFG)),
 				onError: t => e(Object(m.f)({
 					duration: 5e3,
 					kind: P.b.Error,
@@ -1149,7 +1149,7 @@
 				onOpenLandingPage: (t, n) => {
 					e(Object(i.b)(Object(w.a)(t.name, n)))
 				},
-				onUndismissBanner: () => e(Object(u.c)(t, j.a.LFG))
+				onUndismissBanner: () => e(Object(u.c)(t, C.a.LFG))
 			}))(Se))
 		},
 		"./src/reddit/components/Economics/SubredditPremium/LFGBanner/models.ts": function(e, t, n) {
@@ -2026,9 +2026,9 @@
 			})), n.d(t, "h", (function() {
 				return S
 			})), n.d(t, "z", (function() {
-				return j
-			})), n.d(t, "l", (function() {
 				return C
+			})), n.d(t, "l", (function() {
+				return j
 			})), n.d(t, "n", (function() {
 				return w
 			})), n.d(t, "e", (function() {
@@ -2142,12 +2142,12 @@
 					}
 				};
 
-			function j(e, t) {
+			function C(e, t) {
 				const n = (e.economics.me.data.specialMemberships || {})[t];
 				return !!(n && n.settings && n.settings.optOut)
 			}
 
-			function C(e, t) {
+			function j(e, t) {
 				const {
 					badge: n,
 					subredditId: s
@@ -2335,4 +2335,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.618445de9a079e71e6bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Economics-SubredditPremium-LFGBanner.7b7aeff166e67675a596.js.map

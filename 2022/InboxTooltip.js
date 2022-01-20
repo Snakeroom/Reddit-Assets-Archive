@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.80281f93250dbd2f2015.js
-// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.5bca0bd648efd7fa38ef.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -67,9 +67,9 @@
 			})), i.d(t, "subscribeForPNs", (function() {
 				return I
 			})), i.d(t, "unsubscribeFromPNs", (function() {
-				return E
-			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return P
+			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
+				return E
 			})), i.d(t, "subscribeToPermissionsChange", (function() {
 				return F
 			}));
@@ -129,7 +129,7 @@
 				O.j(a), await Object(c.b)(e, t, () => {
 					l || n(Object(d.o)()), n(Object(d.n)()), O.h(a)
 				}, (e, t) => {
-					n(Object(d.l)()), n(E(t ? d.a.Denied : d.a.Closed)), e && (t ? O.e(a) : O.f(a))
+					n(Object(d.l)()), n(P(t ? d.a.Denied : d.a.Closed)), e && (t ? O.e(a) : O.f(a))
 				}, e => {
 					n(Object(d.m)()), n(I()), e && O.d(a)
 				}, () => {
@@ -156,7 +156,7 @@
 				} catch (r) {
 					O.i(o, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, E = (e, t) => async i => {
+			}, P = (e, t) => async i => {
 				try {
 					Object(f.b)(e);
 					const s = await Object(u.a)();
@@ -170,7 +170,7 @@
 						})))
 					}
 				} catch (s) {}
-			}, P = e => async (t, i) => {
+			}, E = e => async (t, i) => {
 				const n = i();
 				if (Object(f.a)(n) === d.c.NotificationsSupported) switch (Object(c.a)()) {
 					case d.a.Default:
@@ -191,13 +191,13 @@
 				s.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(E(d.a.Denied)), O.e(n);
+							e(P(d.a.Denied)), O.e(n);
 							break;
 						case d.a.Granted:
 							e(I()), O.d(n);
 							break;
 						default:
-							e(E(d.a.Default))
+							e(P(d.a.Default))
 					}
 				})(s.state)
 			}
@@ -361,22 +361,22 @@
 				messagesBadgeCount: y,
 				notifications: _,
 				showBrowserNotificationsPermissionSettings: I,
-				updateInboxActivitySeenState: E,
-				userId: P
+				updateInboxActivitySeenState: P,
+				userId: E
 			}) => {
 				const F = Object(f.a)(),
-					[B, C] = Object(n.useState)("");
+					[C, B] = Object(n.useState)("");
 				return Object(n.useEffect)(() => {
 					if (S && !_.length && x) {
 						r({
 							first: 5
 						})
 					}
-					S && x && (E(), F(Object(b.q)({
+					S && x && (P(), F(Object(b.q)({
 						badgeCount: g
 					})))
 				}, [S]), s.a.createElement(l.b, {
-					activeOverflowMenuId: B,
+					activeOverflowMenuId: C,
 					clearMessageTabBadgeCount: e,
 					cursor: t,
 					decreaseSubredditNotifications: i,
@@ -399,9 +399,9 @@
 					markNotificationAsRead: N,
 					messagesBadgeCount: y,
 					notifications: _,
-					setActiveOverflowMenuId: C,
+					setActiveOverflowMenuId: B,
 					showBrowserNotificationsPermissionSettings: I,
-					userId: P
+					userId: E
 				})
 			})
 		},
@@ -434,7 +434,7 @@
 				s = i("./src/telemetry/index.ts"),
 				o = i("./src/telemetry/models/Event.ts");
 			const r = e => ({
-					...n.o(e),
+					...n.m(e),
 					noun: "desktop_notification_permissions"
 				}),
 				a = e => e ? "enable" : "disable",
@@ -467,8 +467,8 @@
 					})
 				},
 				b = (e, t, i) => ({
-					...n.o(e),
-					actionInfo: n.d(e, {
+					...n.m(e),
+					actionInfo: n.c(e, {
 						success: t,
 						reason: i
 					}),
@@ -496,18 +496,18 @@
 					})
 				},
 				m = e => ({
-					...n.o(e),
+					...n.m(e),
 					noun: "push_notification"
 				}),
 				h = e => ({
 					...m(e),
-					notification: n.E(e, void 0, void 0),
+					notification: n.C(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
 				O = (e, t) => i => ({
-					...n.o(i),
+					...n.m(i),
 					action: a(e),
 					email: {
 						type: t
@@ -516,7 +516,7 @@
 					source: "email_app_settings"
 				}),
 				j = (e, t) => i => ({
-					...n.o(i),
+					...n.m(i),
 					action: a(e),
 					notification: {
 						type: t
@@ -525,7 +525,7 @@
 					source: "notification_app_settings"
 				}),
 				x = e => t => ({
-					...n.o(t),
+					...n.m(t),
 					source: "email_app_settings",
 					action: a(e),
 					noun: "email",
@@ -539,4 +539,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.80281f93250dbd2f2015.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.5bca0bd648efd7fa38ef.js.map

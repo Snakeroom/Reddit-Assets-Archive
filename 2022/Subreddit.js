@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.b1323b2262d02f050a44.js
-// Retrieved at 1/20/2022, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.03ed3116766cda0f4601.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -1417,11 +1417,11 @@
 				N = n("./src/reddit/controls/Button/index.tsx"),
 				w = n("./src/reddit/selectors/telemetry.ts");
 			const I = e => t => ({
-				...w.o(t),
+				...w.m(t),
 				source: "community",
 				action: "set_frequency",
 				noun: e,
-				subreddit: w.jb(t)
+				subreddit: w.hb(t)
 			});
 			var P = n("./src/reddit/hooks/useTracking.ts"),
 				T = n("./src/reddit/icons/svgs/CommunityDefault/filled.tsx");
@@ -1707,17 +1707,17 @@
 					getEventFactory: e => {
 						const t = e ? "unsubscribe" : "subscribe";
 						return p ? (e => t => ({
-							...w.o(t),
+							...w.m(t),
 							source: "sticky_banner",
 							action: Z.c.CLICK,
 							noun: e,
-							subreddit: w.jb(t)
+							subreddit: w.hb(t)
 						}))(t) : (e => t => ({
-							...w.o(t),
+							...w.m(t),
 							source: "id_banner",
 							action: Z.c.CLICK,
 							noun: e,
-							subreddit: w.jb(t)
+							subreddit: w.hb(t)
 						}))(t)
 					},
 					identifier: {
@@ -4888,8 +4888,8 @@
 							source: "layout_switch",
 							action: "click",
 							noun: e,
-							screen: Object(E.ab)(t),
-							subreddit: Object(E.jb)(t)
+							screen: Object(E.Y)(t),
+							subreddit: Object(E.hb)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -8150,7 +8150,7 @@
 				Ce = n("./src/reddit/selectors/telemetry.ts"),
 				Se = n("./src/telemetry/models/Subreddit.ts");
 			const je = e => t => ({
-					...Ce.o(t),
+					...Ce.m(t),
 					action: ye.c.CLICK,
 					noun: "link",
 					source: "subreddit_subreddit_link",
@@ -8160,7 +8160,7 @@
 					}
 				}),
 				ke = e => t => n => ({
-					...Ce.o(n),
+					...Ce.m(n),
 					action: ye.c.CLICK,
 					noun: Object(Se.getSubscribeEventNoun)(e.type, t),
 					source: "subreddit_subreddit_link",
@@ -8637,7 +8637,7 @@
 						className: Object(c.a)(u.a.logIn),
 						onClick: () => {
 							n((() => e => ({
-								...Object(g.o)(e),
+								...Object(g.m)(e),
 								source: "xpromo",
 								action: "click",
 								noun: x
@@ -8649,7 +8649,7 @@
 						className: u.a.cancel,
 						onClick: () => {
 							n((() => e => ({
-								...Object(g.o)(e),
+								...Object(g.m)(e),
 								source: "xpromo",
 								action: "dismiss",
 								noun: x
@@ -8682,7 +8682,7 @@
 					const t = Object(b.b)();
 					r.a.useEffect(() => {
 						t((() => e => ({
-							...Object(g.o)(e),
+							...Object(g.m)(e),
 							source: "xpromo",
 							action: "view",
 							noun: x
@@ -9812,9 +9812,9 @@
 			}(s || (s = {}));
 			const f = "discovery_unit",
 				g = (e, t, n) => ({
-					...m.o(e),
+					...m.m(e),
 					source: f,
-					screen: m.ab(e),
+					screen: m.Y(e),
 					discoveryUnit: {
 						id: t.id,
 						type: t.unitType,
@@ -9835,12 +9835,12 @@
 				},
 				E = (e, t) => n => x(n, e, t),
 				v = (e, t, n, s) => "unitName" in t ? g(e, t, s) : ((e, t, n) => ({
-					...m.o(e),
+					...m.m(e),
 					source: "search",
-					screen: m.ab(e),
+					screen: m.Y(e),
 					search: n ? {
-						...m.bb(e, n),
-						structureType: m.c.Trending
+						...m.Z(e, n),
+						structureType: m.b.Trending
 					} : null,
 					discoveryUnit: {
 						id: t.name,
@@ -9853,7 +9853,7 @@
 					...v(e, t, r, a),
 					action: "view",
 					noun: s.ITEM_POST,
-					post: m.I(e, n)
+					post: m.G(e, n)
 				}),
 				O = ({
 					post: e,
@@ -9862,7 +9862,7 @@
 				}) => ({
 					displayQuery: decodeURIComponent(n),
 					rawQuery: t ? decodeURIComponent(t) : void 0,
-					structureType: e && e.isSponsored ? m.c.PromotedTrend : m.c.Trending
+					structureType: e && e.isSponsored ? m.b.PromotedTrend : m.b.Trending
 				});
 			var C;
 			! function(e) {
@@ -9877,7 +9877,7 @@
 				k = (e, t, n, s) => {
 					const r = Object(p.a)(e, l.d.dropdown).filter(e => !e.post || !e.post.isSponsored).findIndex(e => e.id === t.id) + 1;
 					return {
-						...m.o(e),
+						...m.m(e),
 						source: "search",
 						action: s,
 						noun: "trending",
@@ -9888,22 +9888,22 @@
 							title: d.k,
 							type: "query"
 						} : void 0,
-						actionInfo: m.d(e, {
+						actionInfo: m.c(e, {
 							paneName: n,
 							position: r
 						}),
 						search: {
-							originPageType: e.platform.currentPage ? m.v(e.platform.currentPage) : void 0,
+							originPageType: e.platform.currentPage ? m.t(e.platform.currentPage) : void 0,
 							query: t.rawQuery,
-							structureType: m.c.Trending,
-							queryId: m.cb(e, i.a.SearchResults)
+							structureType: m.b.Trending,
+							queryId: m.ab(e, i.a.SearchResults)
 						}
 					}
 				},
 				N = (e, t, n, s, r, a, i) => {
 					Object(h.a)({
-						...m.o(e),
-						...Object(c.f)(e, n, s, r, a, t),
+						...m.m(e),
+						...Object(c.g)(e, n, s, r, a, t),
 						action: o.c.VIEW,
 						noun: i ? "ad" : "post"
 					})
@@ -9929,13 +9929,22 @@
 						source: f,
 						action: o.c.CLICK,
 						noun: s.ITEM_POST,
-						post: m.I(a, t)
+						post: m.G(a, t)
 					}
 				},
-				A = (e, t, n, s) => r => a => Object(c.f)(a, r, e, t, n, s),
-				B = (e, t, n, s) => r => a => Object(c.e)(a, e, t, void 0, n, r, s),
+				A = (e, t, n, s) => r => a => Object(c.g)(a, r, e, t, n, s),
+				B = (e, t, n, s) => r => a => Object(c.f)({
+					action: o.c.CLICK,
+					state: a,
+					searchOptions: e,
+					pageLayer: t,
+					subredditOrProfileIdentifier: void 0,
+					key: n,
+					postId: r,
+					discoveryUnit: s
+				}),
 				D = (e, t, n, s) => r => a => ({
-					...Object(c.f)(a, r, e, t, n, s),
+					...Object(c.g)(a, r, e, t, n, s),
 					noun: "ad"
 				}),
 				R = (e, t) => n => r => ({
@@ -9943,7 +9952,7 @@
 					source: f,
 					action: o.c.CLICK,
 					noun: s.ITEM_POST,
-					post: m.I(r, n)
+					post: m.G(r, n)
 				}),
 				F = (e, t, n, s) => {
 					Object(h.a)(M(t, n, s)(e))
@@ -9959,7 +9968,7 @@
 						source: f,
 						action: o.c.CLICK,
 						noun: "item_post_subreddit",
-						post: m.I(r, t)
+						post: m.G(r, t)
 					}
 				},
 				U = () => ({
@@ -9973,7 +9982,7 @@
 					surface: d.d.Frontpage,
 					url: "gql.reddit.com"
 				}),
-				W = (e, t, n) => m.d(e, {
+				W = (e, t, n) => m.c(e, {
 					position: n
 				}),
 				H = (e, t, n) => {
@@ -9981,7 +9990,7 @@
 					return e => ({
 						...x(e, s),
 						actionInfo: W(e, 0, n),
-						subreddit: m.kb(e, t)
+						subreddit: m.ib(e, t)
 					})
 				},
 				V = (e, t, n) => {
@@ -9996,7 +10005,7 @@
 					return e => ({
 						...g(e, r),
 						actionInfo: W(e, 0, n),
-						subreddit: m.kb(e, t) || null,
+						subreddit: m.ib(e, t) || null,
 						source: f,
 						action: o.c.VIEW,
 						noun: s.ITEM_SUBREDDIT
@@ -10007,7 +10016,7 @@
 					return e => ({
 						...g(e, r),
 						actionInfo: W(e, 0, n),
-						post: m.I(e, t) || null,
+						post: m.G(e, t) || null,
 						source: f,
 						action: o.c.CLICK,
 						noun: s.ITEM_POST
@@ -10018,8 +10027,8 @@
 					return e => ({
 						...g(e, a),
 						actionInfo: W(e, 0, r),
-						subreddit: m.kb(e, n) || null,
-						post: m.I(e, t) || null,
+						subreddit: m.ib(e, n) || null,
+						post: m.G(e, t) || null,
 						source: f,
 						action: o.c.CLICK,
 						noun: s.ITEM_POST_SUBREDDIT
@@ -10030,7 +10039,7 @@
 					return e => ({
 						...g(e, r),
 						actionInfo: W(e, 0, n),
-						subreddit: m.kb(e, t) || null,
+						subreddit: m.ib(e, t) || null,
 						source: f,
 						action: o.c.CLICK,
 						noun: s.ITEM_SUBREDDIT
@@ -10041,8 +10050,8 @@
 					return e => ({
 						...g(e, a),
 						actionInfo: W(e, 0, n),
-						subreddit: m.kb(e, t) || null,
-						post: r ? m.I(e, r) : null,
+						subreddit: m.ib(e, t) || null,
+						post: r ? m.G(e, r) : null,
 						source: f,
 						action: o.c.CLICK,
 						noun: s.ITEM_SUBREDDIT_SUBSCRIBE
@@ -10053,8 +10062,8 @@
 					return e => ({
 						...g(e, a),
 						actionInfo: W(e, 0, n),
-						subreddit: m.kb(e, t) || null,
-						post: r ? m.I(e, r) : null,
+						subreddit: m.ib(e, t) || null,
+						post: r ? m.G(e, r) : null,
 						source: f,
 						action: o.c.CLICK,
 						noun: s.ITEM_SUBREDDIT_UNSUBSCRIBE
@@ -10065,7 +10074,7 @@
 					return e => ({
 						...g(e, r),
 						actionInfo: W(e, 0, n),
-						subreddit: m.kb(e, t) || null,
+						subreddit: m.ib(e, t) || null,
 						source: f,
 						action: o.c.CLICK,
 						noun: s.ITEM_SUBREDDIT_HIDE
@@ -10076,7 +10085,7 @@
 					return e => ({
 						...g(e, r),
 						actionInfo: W(e, 0, n),
-						subreddit: m.kb(e, t) || null,
+						subreddit: m.ib(e, t) || null,
 						source: f,
 						action: o.c.CLICK,
 						noun: s.HEADER_SUBREDDIT
@@ -10168,7 +10177,7 @@
 					isViewed: n,
 					type: s
 				}) => r => ({
-					...l.o(r),
+					...l.m(r),
 					action: d.c.VIEW,
 					noun: "inbox_notification",
 					source: o.Inbox,
@@ -10189,7 +10198,7 @@
 					awardId: r
 				}) => a => {
 					Object(u.a)({
-						...l.o(a),
+						...l.m(a),
 						action: "receive",
 						noun: "inbox_notification",
 						source: o.Inbox,
@@ -10214,7 +10223,7 @@
 					awardId: r,
 					position: a
 				}) => i => ({
-					...l.o(i),
+					...l.m(i),
 					action: d.c.CLICK,
 					noun: "inbox_notification",
 					source: o.Inbox,
@@ -10237,7 +10246,7 @@
 					badgeCount: e,
 					tab: t
 				}) => n => ({
-					...l.o(n),
+					...l.m(n),
 					action: d.c.VIEW,
 					noun: "inbox",
 					source: o.Inbox,
@@ -10250,7 +10259,7 @@
 					badgeCount: e,
 					tab: t
 				}) => t => ({
-					...l.o(t),
+					...l.m(t),
 					action: d.c.VIEW,
 					noun: "mini_inbox",
 					source: o.Inbox,
@@ -10262,7 +10271,7 @@
 				g = ({
 					badgeCount: e
 				}) => t => ({
-					...l.o(t),
+					...l.m(t),
 					action: d.c.CLICK,
 					noun: "inbox",
 					source: o.Nav,
@@ -10277,7 +10286,7 @@
 					type: s,
 					awardId: r
 				}) => a => ({
-					...l.o(a),
+					...l.m(a),
 					action: d.c.CLICK,
 					noun: "inbox_notification_overflow",
 					source: o.Inbox,
@@ -10299,7 +10308,7 @@
 					isViewed: n,
 					type: s
 				}) => r => ({
-					...l.o(r),
+					...l.m(r),
 					action: d.c.VIEW,
 					noun: "inbox_notification_overflow",
 					source: o.Inbox,
@@ -10319,7 +10328,7 @@
 					isViewed: s,
 					type: r
 				}) => a => ({
-					...l.o(a),
+					...l.m(a),
 					action: d.c.CLICK,
 					noun: "overflow_option",
 					source: o.Inbox,
@@ -10332,7 +10341,7 @@
 						type: r
 					},
 					actionInfo: {
-						...l.d(a),
+						...l.c(a),
 						type: e
 					}
 				}),
@@ -10343,7 +10352,7 @@
 					isViewed: s,
 					type: r
 				}) => a => ({
-					...l.o(a),
+					...l.m(a),
 					action: d.c.UNDO,
 					noun: "overflow_option",
 					source: o.Inbox,
@@ -10356,32 +10365,32 @@
 						type: r
 					},
 					actionInfo: {
-						...l.d(a),
+						...l.c(a),
 						type: e
 					}
 				}),
 				y = e => t => ({
-					...l.o(t),
+					...l.m(t),
 					action: d.c.CLICK,
 					noun: "notification_app_settings",
 					source: o.Inbox,
 					actionInfo: {
-						...l.d(t),
+						...l.c(t),
 						pageType: e
 					}
 				}),
 				O = () => e => ({
-					...l.o(e),
+					...l.m(e),
 					action: d.c.CLICK,
 					noun: "see_all",
 					source: o.Inbox,
 					actionInfo: {
-						...l.d(e),
+						...l.c(e),
 						pageType: a.MiniInbox
 					}
 				}),
 				C = () => e => ({
-					...l.o(e),
+					...l.m(e),
 					action: d.c.CLICK,
 					noun: "messages",
 					source: o.Inbox
@@ -10389,33 +10398,33 @@
 				S = ({
 					isMiniInbox: e
 				}) => t => ({
-					...l.o(t),
+					...l.m(t),
 					action: d.c.CLICK,
 					noun: "mark_all_as_read",
 					source: o.Inbox,
 					actionInfo: e ? {
-						...l.d(t),
+						...l.c(t),
 						pageType: a.MiniInbox
 					} : {}
 				}),
 				j = (e, t) => n => ({
-					...l.o(n),
+					...l.m(n),
 					action: d.c.CLICK,
 					noun: "policy_banner",
 					source: o.Inbox,
 					actionInfo: {
-						...l.d(n),
+						...l.c(n),
 						pageType: e,
 						type: t
 					}
 				}),
 				k = () => e => ({
-					...l.o(e),
+					...l.m(e),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
 					source: o.Inbox,
 					actionInfo: {
-						...l.d(e),
+						...l.c(e),
 						type: "2021Recap"
 					}
 				})
@@ -10434,9 +10443,9 @@
 			n("./src/reddit/constants/categories.tsx");
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
-					screen: s.ab(e),
-					profile: s.R(e),
-					subreddit: s.jb(e)
+					screen: s.Y(e),
+					profile: s.P(e),
+					subreddit: s.hb(e)
 				}),
 				a = e => t => ({
 					action: "click",
@@ -10484,8 +10493,8 @@
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
-					...Object(s.o)(e),
-					subreddit: Object(s.jb)(e)
+					...Object(s.m)(e),
+					subreddit: Object(s.hb)(e)
 				}),
 				a = {
 					source: "global",
@@ -10643,9 +10652,9 @@
 			}(s || (s = {}));
 			const i = (e, t) => {
 					if (t) {
-						const n = o.B(e, t.post.id),
-							s = o.I(e, t.post.id),
-							r = o.jb(e);
+						const n = o.z(e, t.post.id),
+							s = o.G(e, t.post.id),
+							r = o.hb(e);
 						if (t.post.authorInfo && s && (s.authorId = t.post.authorInfo.id), n) {
 							n.streamPublicId = t.stream.stream_id, n.id = t.stream.stream_id;
 							const s = Object(a.j)(e, {
@@ -10660,7 +10669,7 @@
 						}
 					}
 					return {
-						subreddit: o.jb(e)
+						subreddit: o.hb(e)
 					}
 				},
 				c = (e, t, n) => {
@@ -10705,7 +10714,7 @@
 					action: "click",
 					noun: "enlarge",
 					...i(n, e),
-					actionInfo: o.d(n, {
+					actionInfo: o.c(n, {
 						position: t || 0
 					})
 				}),
@@ -10758,7 +10767,7 @@
 					playback: c(r, t, n),
 					...d(r),
 					...i(r, t),
-					actionInfo: o.d(r, {
+					actionInfo: o.c(r, {
 						referralId: s
 					})
 				}),
@@ -10838,8 +10847,8 @@
 					source: "post",
 					action: "view",
 					noun: "post",
-					profile: o.R(t),
-					screen: o.ab(t),
+					profile: o.P(t),
+					screen: o.Y(t),
 					...i(t, e)
 				}),
 				w = e => t => {
@@ -10848,8 +10857,8 @@
 						source: "post",
 						action: "consume",
 						noun: "post",
-						profile: o.R(t),
-						screen: o.ab(t),
+						profile: o.P(t),
+						screen: o.Y(t),
 						...n
 					}
 				},
@@ -10870,7 +10879,7 @@
 					action: "click",
 					noun: "subscribe",
 					...i(t, e),
-					targetSubreddit: o.jb(t)
+					targetSubreddit: o.hb(t)
 				}),
 				L = (e, t) => n => ({
 					source: "stream_player",
@@ -10970,8 +10979,8 @@
 					source: e,
 					noun: "create_community_button",
 					action: "click",
-					...r.o(t),
-					actionInfo: r.d(t, {
+					...r.m(t),
+					actionInfo: r.c(t, {
 						settingValue: t.user.account && t.user.account.isMod ? "existing_mod" : "new_mod"
 					}),
 					correlationId: Object(s.e)(s.a.SubredditCreation, !0)
@@ -10980,8 +10989,8 @@
 					source: "community_form",
 					noun: "save_community_button",
 					action: "click",
-					...r.o(a),
-					actionInfo: r.d(a, {
+					...r.m(a),
+					actionInfo: r.c(a, {
 						settingValue: e
 					}),
 					subreddit: {
@@ -10999,16 +11008,16 @@
 					source: "community_form",
 					noun: "cancel",
 					action: "click",
-					...r.o(e),
-					actionInfo: r.d(e),
+					...r.m(e),
+					actionInfo: r.c(e),
 					correlationId: Object(s.c)(s.a.SubredditCreation)
 				}),
 				c = (e, t) => n => ({
 					source: "community_form",
 					noun: "error_message",
 					action: "view",
-					...r.o(n),
-					actionInfo: r.d(n, {
+					...r.m(n),
+					actionInfo: r.c(n, {
 						reason: e,
 						settingValue: t
 					}),
@@ -11018,29 +11027,29 @@
 					source: "user_dropdown",
 					noun: "create_community",
 					action: "click",
-					...r.o(e),
-					actionInfo: r.d(e)
+					...r.m(e),
+					actionInfo: r.c(e)
 				}),
 				l = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "view",
-					...r.o(e),
-					actionInfo: r.d(e)
+					...r.m(e),
+					actionInfo: r.c(e)
 				}),
 				u = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "click",
-					...r.o(e),
-					actionInfo: r.d(e)
+					...r.m(e),
+					actionInfo: r.c(e)
 				}),
 				m = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "dismiss",
-					...r.o(e),
-					actionInfo: r.d(e)
+					...r.m(e),
+					actionInfo: r.c(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/widgets.ts": function(e, t, n) {
@@ -11066,37 +11075,37 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: a.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(o.wb)(n, {
+					widget: Object(o.ub)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...o.o
+					...o.m
 				}),
 				c = (e, t) => n => ({
 					source: r.POST,
 					action: a.c.CLICK,
 					noun: s.REREDDIT_PROMO,
-					post: o.I(n, e),
-					subreddit: o.jb(n),
+					post: o.G(n, e),
+					subreddit: o.hb(n),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: s.REREDDIT_PROMO
 						}
 					},
-					...o.o(n)
+					...o.m(n)
 				}),
 				d = () => e => ({
 					source: r.SIDEBAR,
 					action: a.c.VIEW,
 					noun: s.TOPICS_WIDGET,
-					...o.o(e)
+					...o.m(e)
 				}),
 				l = e => t => ({
 					source: r.TOPICS_WIDGET,
 					action: a.c.CLICK,
 					noun: s.TOPIC,
-					...o.o(t),
+					...o.m(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -13435,4 +13444,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.b1323b2262d02f050a44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.03ed3116766cda0f4601.js.map

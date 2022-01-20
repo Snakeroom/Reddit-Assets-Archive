@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.f950b2823027609d7a24.js
-// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.0b1e8da4947f62c0a73d.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2494,10 +2494,10 @@
 				o = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				c = r("./src/reddit/helpers/trackers/gild.ts");
 			const s = e => ({
-					...a.o(e),
-					screen: a.ab(e),
-					subreddit: a.jb(e),
-					userSubreddit: a.sb(e)
+					...a.m(e),
+					screen: a.Y(e),
+					subreddit: a.hb(e),
+					userSubreddit: a.qb(e)
 				}),
 				i = e => ({
 					awardId: e.id,
@@ -2591,8 +2591,8 @@
 					action: "click",
 					noun: r,
 					goldPurchase: i(e),
-					profile: a.S(n, t),
-					subreddit: a.kb(n, t)
+					profile: a.Q(n, t),
+					subreddit: a.ib(n, t)
 				}),
 				h = (e, t) => b(e, t, "disable_in_community"),
 				y = (e, t) => b(e, t, "enable_in_community")
@@ -2678,20 +2678,20 @@
 					...t
 				}),
 				u = (e, t) => ({
-					...a.o(e),
-					comment: t ? a.j(e, t) : void 0,
+					...a.m(e),
+					comment: t ? a.h(e, t) : void 0,
 					correlationId: Object(i.b)(e) || Object(c.e)(c.a.GildingFlow, !1),
-					post: t ? a.I(e, t) : void 0,
-					screen: a.ab(e),
-					subreddit: a.jb(e),
-					userSubreddit: a.sb(e)
+					post: t ? a.G(e, t) : void 0,
+					screen: a.Y(e),
+					subreddit: a.hb(e),
+					userSubreddit: a.qb(e)
 				}),
 				m = e => t => ({
 					...u(t, e),
 					source: Object(s.a)(e) ? "comment" : "post",
 					action: "click",
 					noun: "give_gold",
-					feed: a.r(t)
+					feed: a.p(t)
 				}),
 				p = e => t => ({
 					...u(t, e),
@@ -2704,7 +2704,7 @@
 					source: Object(s.a)(e) ? "comment" : "post",
 					action: "click",
 					noun: "add_award",
-					feed: a.r(t)
+					feed: a.p(t)
 				}),
 				b = (e, t) => r => ({
 					...u(r, t),
@@ -2908,12 +2908,12 @@
 						packageId: l
 					} = t, b = !!r, h = o.b(e), y = h ? Object(u.getAwardTypeFromAward)(h) : null, g = b ? y : s.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, v = r ? Object(p.a)(r) ? "comment" : "post" : void 0, C = l || s.t(e), P = [...Object(c.d)(e), ...Object(c.f)(e)].filter(e => e.mobileId === C)[0], O = t.offerContext || (h && 0 === h.coinPrice ? a.a.StorefrontFreeAward : Object(a.d)(P, b)), j = P ? Math.round(1e4 * (P.baselinePennies - P.pennies) / P.baselinePennies) / 100 : 0, E = P ? Math.round(1e4 * (P.coins - P.baselineCoins) / P.coins) / 100 : 0, _ = P ? P.baselinePennies !== P.pennies ? `${j}_percent_price` : P.baselineCoins !== P.coins ? `${E}_percent_bonus` : void 0 : void 0, w = g === d.GoldPurchaseType.Premium ? n.yb : P ? P.pennies : void 0;
 					return {
-						...i.o(e),
-						comment: r ? i.j(e, r) : null,
+						...i.m(e),
+						comment: r ? i.h(e, r) : null,
 						correlationId: s.r(e) || Object(m.e)(m.a.GoldPayment, !1),
-						post: r ? i.I(e, r) : null,
-						screen: i.ab(e),
-						subreddit: r ? i.jb(e) : null,
+						post: r ? i.G(e, r) : null,
+						screen: i.Y(e),
+						subreddit: r ? i.hb(e) : null,
 						goldPurchase: {
 							...h ? Object(f.a)(h) : null,
 							type: g,
@@ -3349,4 +3349,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.f950b2823027609d7a24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.0b1e8da4947f62c0a73d.js.map

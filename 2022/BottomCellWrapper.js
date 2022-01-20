@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.23a19c9b2b2b74623cb8.js
-// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.475ef090846edbd5d6f6.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -143,35 +143,35 @@
 				e.Apple = "apple", e.Google = "google", e.Reddit = "reddit"
 			}(f || (f = {}));
 			const C = () => e => ({
-					...Object(g.o)(e),
+					...Object(g.m)(e),
 					source: "popup",
 					action: "view",
 					noun: x,
-					actionInfo: Object(g.d)(e)
+					actionInfo: Object(g.c)(e)
 				}),
 				h = () => e => ({
-					...Object(g.o)(e),
+					...Object(g.m)(e),
 					source: "popup",
 					action: "dismiss",
 					noun: x,
-					actionInfo: Object(g.d)(e)
+					actionInfo: Object(g.c)(e)
 				}),
 				j = e => t => ({
-					...Object(g.o)(t),
+					...Object(g.m)(t),
 					source: "popup",
 					action: "click",
 					noun: x,
-					actionInfo: Object(g.d)(t, {
+					actionInfo: Object(g.c)(t, {
 						popup_button_text: "signup",
 						type: e
 					})
 				}),
 				E = () => e => ({
-					...Object(g.o)(e),
+					...Object(g.m)(e),
 					source: "popup",
 					action: "click",
 					noun: x,
-					actionInfo: Object(g.d)(e, {
+					actionInfo: Object(g.c)(e, {
 						popup_button_text: "login"
 					})
 				});
@@ -443,4 +443,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.23a19c9b2b2b74623cb8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.475ef090846edbd5d6f6.js.map

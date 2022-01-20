@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/givePremiumTrackers.03922ac199a2f2016953.js
-// Retrieved at 1/5/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/givePremiumTrackers.e9dfe69b7d3ed3cd498f.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["givePremiumTrackers"], {
 		"./src/reddit/helpers/trackers/givePremium.ts": function(e, n, i) {
@@ -11,9 +11,9 @@
 			})), i.d(n, "selectPremiumPackageEvent", (function() {
 				return m
 			})), i.d(n, "triggerAnonymousEvent", (function() {
-				return a
-			})), i.d(n, "clickMessageInputEvent", (function() {
 				return d
+			})), i.d(n, "clickMessageInputEvent", (function() {
+				return a
 			})), i.d(n, "typeMessageInputEvent", (function() {
 				return l
 			})), i.d(n, "clickConfirmEvent", (function() {
@@ -25,10 +25,10 @@
 				t = i("./src/reddit/helpers/correlationIdTracker.ts"),
 				c = i("./src/reddit/selectors/gild.ts");
 			const u = e => ({
-					...r.o(e),
+					...r.m(e),
 					correlationId: Object(c.b)(e) || Object(t.e)(t.a.GiftPremiumFlow, !1),
-					screen: r.ab(e),
-					subreddit: r.jb(e)
+					screen: r.Y(e),
+					subreddit: r.hb(e)
 				}),
 				o = () => e => ({
 					...u(e),
@@ -48,13 +48,13 @@
 					action: "select",
 					noun: `premium_${e.monthsOfPremium}`
 				}),
-				a = e => n => ({
+				d = e => n => ({
 					...u(n),
 					source: "give_premium",
 					action: e,
 					noun: "anonymous"
 				}),
-				d = () => e => ({
+				a = () => e => ({
 					...u(e),
 					source: "give_premium",
 					action: "click",
@@ -81,4 +81,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/givePremiumTrackers.03922ac199a2f2016953.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/givePremiumTrackers.e9dfe69b7d3ed3cd498f.js.map

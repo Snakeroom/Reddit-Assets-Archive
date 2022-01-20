@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.d49eb509b1f889918512.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.829eff043ddf98d741a3.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, a) {
@@ -24,7 +24,7 @@
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.tsx": function(e, t, a) {
 			"use strict";
 			a.r(t), a.d(t, "ModalHeader", (function() {
-				return S
+				return j
 			})), a.d(t, "ModalTitle", (function() {
 				return k
 			})), a.d(t, "CloseIcon", (function() {
@@ -55,8 +55,8 @@
 				g = a("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
 				F = a.n(g),
 				I = a("./src/lib/lessComponent.tsx");
-			const j = I.a.wrapped(m.e, "ModalBody", F.a),
-				S = I.a.wrapped(m.i, "ModalHeader", F.a),
+			const S = I.a.wrapped(m.e, "ModalBody", F.a),
+				j = I.a.wrapped(m.i, "ModalHeader", F.a),
 				k = I.a.div("ModalTitle", F.a),
 				M = I.a.div("Title", F.a),
 				O = I.a.div("Description", F.a),
@@ -80,9 +80,9 @@
 					const e = this.props.subreddit.displayText,
 						t = this.props.subredditAboutInfo.disableContributorRequests,
 						a = this.props.theme ? Object(E.f)(this.props.theme.newCommunityTheme.widgetColors.sidebarWidgetHeaderColor) : "";
-					return o.a.createElement(j, {
+					return o.a.createElement(S, {
 						className: F.a.requestModal
-					}, o.a.createElement(S, null, o.a.createElement(C.a, null, o.a.createElement("div", null, o.a.createElement(k, {
+					}, o.a.createElement(j, null, o.a.createElement(C.a, null, o.a.createElement("div", null, o.a.createElement(k, {
 						style: {
 							color: a
 						}
@@ -290,20 +290,20 @@
 			}));
 			var r = a("./src/reddit/selectors/telemetry.ts");
 			const s = e => t => ({
-					...r.o(t),
+					...r.m(t),
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: r.jb(t)
+					subreddit: r.hb(t)
 				}),
 				n = e => t => ({
-					...r.o(t),
+					...r.m(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: r.jb(t)
+					subreddit: r.hb(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.d49eb509b1f889918512.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.829eff043ddf98d741a3.js.map

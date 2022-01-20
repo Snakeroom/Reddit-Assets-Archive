@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/WrappedReddit.e68e2384a4b2a916ac3e.js
-// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/WrappedReddit.72110046ac492da02e58.js
+// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["WrappedReddit", "PushNotifications"], {
 		"./assets/fonts/RedditSans/font.less": function(a, e, c) {},
@@ -536,7 +536,7 @@
 				l = c("./src/telemetry/index.ts"),
 				r = c("./src/telemetry/models/Event.ts");
 			const n = a => ({
-					...t.o(a),
+					...t.m(a),
 					noun: "desktop_notification_permissions"
 				}),
 				i = a => a ? "enable" : "disable",
@@ -569,8 +569,8 @@
 					})
 				},
 				u = (a, e, c) => ({
-					...t.o(a),
-					actionInfo: t.d(a, {
+					...t.m(a),
+					actionInfo: t.c(a, {
 						success: e,
 						reason: c
 					}),
@@ -598,18 +598,18 @@
 					})
 				},
 				b = a => ({
-					...t.o(a),
+					...t.m(a),
 					noun: "push_notification"
 				}),
 				E = a => ({
 					...b(a),
-					notification: t.E(a, void 0, void 0),
+					notification: t.C(a, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
 				g = (a, e) => c => ({
-					...t.o(c),
+					...t.m(c),
 					action: i(a),
 					email: {
 						type: e
@@ -618,7 +618,7 @@
 					source: "email_app_settings"
 				}),
 				_ = (a, e) => c => ({
-					...t.o(c),
+					...t.m(c),
 					action: i(a),
 					notification: {
 						type: e
@@ -627,7 +627,7 @@
 					source: "notification_app_settings"
 				}),
 				v = a => e => ({
-					...t.o(e),
+					...t.m(e),
 					source: "email_app_settings",
 					action: i(a),
 					noun: "email",
@@ -965,23 +965,23 @@
 					}))
 				};
 			var P = c("./src/reddit/constants/modals.ts"),
-				W = c("./src/reddit/selectors/telemetry.ts");
-			const U = a => e => ({
-					...W.o(e),
+				U = c("./src/reddit/selectors/telemetry.ts");
+			const W = a => e => ({
+					...U.m(e),
 					noun: "subreddit",
 					source: "recap",
 					action: "click",
-					recap: W.W(e),
+					recap: U.U(e),
 					subreddit: {
 						id: a
 					}
 				}),
 				B = a => e => ({
-					...W.o(e),
+					...U.m(e),
 					noun: "post",
 					source: "recap",
 					action: "click",
-					recap: W.W(e),
+					recap: U.U(e),
 					post: {
 						id: a
 					}
@@ -1624,11 +1624,11 @@
 						className: Object(n.a)(da.a.commentPostTitle, da.a.isEmptyImage),
 						link: e,
 						onClick: () => m(((a, e) => c => ({
-							...W.o(c),
+							...U.m(c),
 							noun: "comment unit",
 							source: "recap",
 							action: "click",
-							recap: W.W(c),
+							recap: U.U(c),
 							comment: {
 								id: a,
 								postId: e
@@ -1647,7 +1647,7 @@
 					})))], {
 						hk: "tFe3k"
 					})), u && l.a.createElement(ua, {
-						onClick: () => m(U(s)),
+						onClick: () => m(W(s)),
 						link: p,
 						subredditName: u,
 						className: da.a.isPostCard
@@ -1687,7 +1687,7 @@
 			}) => {
 				const e = Object(G.a)(),
 					c = Object(r.d)(),
-					s = a => () => e(U(a)),
+					s = a => () => e(W(a)),
 					d = Object(r.e)(a => {
 						var e;
 						return null === (e = a.user.account) || void 0 === e ? void 0 : e.email
@@ -1734,7 +1734,7 @@
 				}, [u]);
 				const N = async () => {
 					e((() => a => ({
-						...W.o(a),
+						...U.m(a),
 						source: "recap",
 						action: "click",
 						noun: "PN_enable"
@@ -1743,7 +1743,7 @@
 					c(Object(va.h)(Ma.a))
 				}, k = () => {
 					e((() => a => ({
-						...W.o(a),
+						...U.m(a),
 						source: "recap",
 						action: "click",
 						noun: "Email_enable"
@@ -1755,7 +1755,7 @@
 						})), !!(null === (c = e().user.notificationPrefs.pushSettingsLayout.rows.byId.EMAIL_DIGEST) || void 0 === c ? void 0 : c.isEnabled) && C()
 					})
 				}, O = () => e((() => a => ({
-					...W.o(a),
+					...U.m(a),
 					source: "recap",
 					action: "click",
 					noun: "learn_more"
@@ -1968,15 +1968,15 @@
 						link: p,
 						subredditName: d,
 						className: da.a.isPostCard,
-						onClick: () => f(U(m))
+						onClick: () => f(W(m))
 					}))))
 				},
 				Fa = c("./src/reddit/controls/ToggleSwitch/index.tsx"),
 				Ta = c("./src/reddit/icons/svgs/InfoRedditRecap/index.tsx"),
 				Da = c("./src/reddit/actions/snoovatarModal.ts"),
 				Pa = c("./src/reddit/icons/svgs/EditPencil/index.tsx"),
-				Wa = c("./src/reddit/pages/WrappedReddit/CardTemplates/ShareCard/index.m.less"),
-				Ua = c.n(Wa);
+				Ua = c("./src/reddit/pages/WrappedReddit/CardTemplates/ShareCard/index.m.less"),
+				Wa = c.n(Ua);
 			const {
 				fbt: Ba
 			} = c("./node_modules/fbt/lib/FbtPublic.js");
@@ -1994,89 +1994,89 @@
 					title: m,
 					subtitle: p,
 					subredditListOptional: f
-				} = a, h = Object(r.d)(), b = Object(G.a)(), E = a => () => b(U(a)), g = l.a.useMemo(() => t ? l.a.createElement(Ea, {
+				} = a, h = Object(r.d)(), b = Object(G.a)(), E = a => () => b(W(a)), g = l.a.useMemo(() => t ? l.a.createElement(Ea, {
 					src: t,
 					alt: Ba._("user avatar", null, {
 						hk: "W5MAO"
 					}),
-					className: Ua.a.shareCardImage
+					className: Wa.a.shareCardImage
 				}) : l.a.createElement(l.a.Fragment, null), [t]), _ = e ? "Redditor" : s, v = e ? l.a.createElement("img", {
 					src: `${z.a.assetPath}/img/wrappedreddit/default_avatar.png`,
 					alt: Ba._("default user avatar", null, {
 						hk: "1VMTKf"
 					}),
-					className: Ua.a.shareCardImage
+					className: Wa.a.shareCardImage
 				}) : g;
 				return l.a.createElement("div", {
-					className: Ua.a.back
+					className: Wa.a.back
 				}, l.a.createElement("div", {
-					className: Ua.a.editAvatarWrapper,
+					className: Wa.a.editAvatarWrapper,
 					onClick: () => h(Object(Da.b)({
 						clickSource: "recap"
 					}))
 				}, l.a.createElement(Pa.a, {
-					className: Ua.a.editAvatar
+					className: Wa.a.editAvatar
 				})), l.a.createElement("div", {
 					id: c,
-					className: Object(n.a)(Ua.a.shareCardImageWrrapper, {
-						[Ua.a.isPremium]: i
+					className: Object(n.a)(Wa.a.shareCardImageWrrapper, {
+						[Wa.a.isPremium]: i
 					})
 				}, l.a.createElement("div", {
-					className: Ua.a.whiteBackground
+					className: Wa.a.whiteBackground
 				}, l.a.createElement("div", {
-					className: Object(n.a)(Ua.a.backgroundWithGradient, {
-						[Ua.a.isEpicLevel]: d === u.Epic,
-						[Ua.a.isLegendaryLevel]: d === u.Legendary,
-						[Ua.a.isCommonLevel]: d === u.Common,
-						[Ua.a.isRareLevel]: d === u.Rare
+					className: Object(n.a)(Wa.a.backgroundWithGradient, {
+						[Wa.a.isEpicLevel]: d === u.Epic,
+						[Wa.a.isLegendaryLevel]: d === u.Legendary,
+						[Wa.a.isCommonLevel]: d === u.Common,
+						[Wa.a.isRareLevel]: d === u.Rare
 					})
 				}), l.a.createElement("div", {
-					className: Ua.a.infoWrapper
+					className: Wa.a.infoWrapper
 				}, l.a.createElement("div", {
-					className: Ua.a.headerWrapper
+					className: Wa.a.headerWrapper
 				}, l.a.createElement(ja.a, {
-					className: Ua.a.logo
+					className: Wa.a.logo
 				}), l.a.createElement("div", {
-					className: Ua.a.user
+					className: Wa.a.user
 				}, l.a.createElement("h1", {
-					className: Ua.a.userName
+					className: Wa.a.userName
 				}, _), l.a.createElement("h2", {
-					className: Ua.a.userLevel
+					className: Wa.a.userLevel
 				}, d)), l.a.createElement("div", {
-					className: Ua.a.userKarma
+					className: Wa.a.userKarma
 				}, Ba._("{=[userKarma]}{=KARMA}", [Ba._param("=[userKarma]", l.a.createElement("span", {
-					className: Ua.a.countKarma
+					className: Wa.a.countKarma
 				}, Ba._("{userKarma}", [Ba._param("userKarma", o)], {
 					hk: "2TQ4ZC"
 				}))), Ba._param("=KARMA", l.a.createElement("span", {
-					className: Ua.a.karma
+					className: Wa.a.karma
 				}, Ba._("KARMA", null, {
 					hk: "1hL9nO"
 				})))], {
 					hk: "2cU97Q"
 				}))), v, l.a.createElement("div", {
-					className: Ua.a.bottomWrapper
+					className: Wa.a.bottomWrapper
 				}, l.a.createElement("h2", {
-					className: Ua.a.abilityRow
+					className: Wa.a.abilityRow
 				}, Ba._("{=ABILITY}{=[title]}", [Ba._param("=ABILITY", l.a.createElement("span", {
-					className: Ua.a.abilityTitle
+					className: Wa.a.abilityTitle
 				}, Ba._("ABILITY", null, {
 					hk: "qNm74"
 				}))), Ba._param("=[title]", l.a.createElement("span", {
-					className: Ua.a.abilityValue
+					className: Wa.a.abilityValue
 				}, Ba._("{title}", [Ba._param("title", m)], {
 					hk: "w7i10"
 				})))], {
 					hk: "3liwrD"
 				})), l.a.createElement("div", {
-					className: Ua.a.cardLinesWrapper,
+					className: Wa.a.cardLinesWrapper,
 					style: {
 						background: `url(${z.a.assetPath}/img/wrappedreddit/card_lines.png)`
 					}
 				}, l.a.createElement("h1", {
-					className: Ua.a.title
+					className: Wa.a.title
 				}, p), l.a.createElement("div", {
-					className: Ua.a.subredditListWrapper
+					className: Wa.a.subredditListWrapper
 				}, l.a.createElement("div", null, null == f ? void 0 : f.filter(a => a).map((a, e) => {
 					const {
 						deeplink: c,
@@ -2087,11 +2087,11 @@
 						key: e,
 						link: c,
 						subredditName: t,
-						className: Ua.a.subreddit,
+						className: Wa.a.subreddit,
 						onClick: E(r)
 					})
 				})), l.a.createElement("p", {
-					className: Ua.a.year
+					className: Wa.a.year
 				}, 2021))))))))
 			};
 			const {
@@ -2104,34 +2104,34 @@
 				onClick: a
 			}) => l.a.createElement("div", {
 				onClick: a,
-				className: Ua.a.front
+				className: Wa.a.front
 			}, l.a.createElement("div", {
-				className: Ua.a.shareCardImageWrrapper
+				className: Wa.a.shareCardImageWrrapper
 			}, l.a.createElement("div", {
-				className: Ua.a.whiteBackground
+				className: Wa.a.whiteBackground
 			}, l.a.createElement("div", {
-				className: Object(n.a)(Ua.a.backgroundWithGradient, Ua.a.forFrontPage)
+				className: Object(n.a)(Wa.a.backgroundWithGradient, Wa.a.forFrontPage)
 			}), l.a.createElement("div", {
-				className: Object(n.a)(Ua.a.backgroundWithGradient, Ua.a.forFrontPage),
+				className: Object(n.a)(Wa.a.backgroundWithGradient, Wa.a.forFrontPage),
 				style: Va
 			}), l.a.createElement("p", {
-				className: Object(n.a)(Ua.a.textTop, Ua.a.forText)
+				className: Object(n.a)(Wa.a.textTop, Wa.a.forText)
 			}, Ya._("What kind of redditor are you?", null, {
 				hk: "3id33n"
 			})), l.a.createElement(ia, {
-				className: Ua.a.backgroundCircle
+				className: Wa.a.backgroundCircle
 			}), l.a.createElement(na, {
-				className: Ua.a.popcorn
+				className: Wa.a.popcorn
 			}), l.a.createElement(ta, {
-				className: Ua.a.dolphin
+				className: Wa.a.dolphin
 			}), l.a.createElement(ea, {
-				className: Ua.a.diamond
+				className: Wa.a.diamond
 			}), l.a.createElement(ca, {
-				className: Ua.a.dog
+				className: Wa.a.dog
 			}), l.a.createElement(ja.a, {
-				className: Ua.a.logo
+				className: Wa.a.logo
 			}), l.a.createElement("p", {
-				className: Object(n.a)(Ua.a.textBottom, Ua.a.forText)
+				className: Object(n.a)(Wa.a.textBottom, Wa.a.forText)
 			}, Ya._("Tap to reveal your secret ability", null, {
 				hk: "ZBIdy"
 			})))));
@@ -2147,21 +2147,21 @@
 					s = Object(G.a)(),
 					d = a.level === u.Common,
 					o = c && !d ? se() : ie(),
-					m = c ? Object(n.a)(Ua.a.card, Ua.a.flipCard) : Ua.a.card,
+					m = c ? Object(n.a)(Wa.a.card, Wa.a.flipCard) : Wa.a.card,
 					p = l.a.useCallback(() => {
 						t || s((() => a => ({
-							...W.o(a),
+							...U.m(a),
 							source: "recap",
 							action: "click",
 							noun: "hide_username"
 						}))()), i(!t)
 					}, [s, t]);
 				return l.a.createElement("div", {
-					className: Ua.a.headingSection
+					className: Wa.a.headingSection
 				}, o, l.a.createElement("div", {
-					className: Ua.a.cardWrapper
+					className: Wa.a.cardWrapper
 				}, l.a.createElement("div", {
-					className: Ua.a.cardContainer
+					className: Wa.a.cardContainer
 				}, l.a.createElement("div", {
 					className: m
 				}, l.a.createElement(Ga, {
@@ -2170,25 +2170,25 @@
 				}), l.a.createElement(qa, {
 					onClick: () => {
 						e(j()), s((() => a => ({
-							...W.o(a),
+							...U.m(a),
 							source: "recap",
 							action: "click",
 							noun: "ability_card",
-							recap: W.W(a)
+							recap: U.U(a)
 						}))())
 					}
 				}))), c && l.a.createElement("div", {
-					className: Ua.a.hideWrapper
+					className: Wa.a.hideWrapper
 				}, l.a.createElement("div", {
-					className: Ua.a.titleWrapper
+					className: Wa.a.titleWrapper
 				}, l.a.createElement(Ta.a, {
-					className: Ua.a.infoRedditRecap
+					className: Wa.a.infoRedditRecap
 				}), l.a.createElement("p", {
-					className: Ua.a.title
+					className: Wa.a.title
 				}, Ha._("Hide my name & avatar", null, {
 					hk: "2hHdO0"
 				}))), l.a.createElement(Fa.a, {
-					className: Ua.a.toggle,
+					className: Wa.a.toggle,
 					on: t,
 					onToggle: p
 				}))))
@@ -2251,7 +2251,7 @@
 						subredditCountSuffix: r
 					} = a,
 					n = Boolean(r),
-					i = a => () => e(U(a));
+					i = a => () => e(W(a));
 				return l.a.createElement(ma, {
 					card: a
 				}, l.a.createElement("div", {
@@ -2316,7 +2316,7 @@
 				}, l.a.createElement(ua, {
 					link: t,
 					subredditName: c,
-					onClick: () => n(U(r))
+					onClick: () => n(W(r))
 				}))))
 			};
 			const {
@@ -2327,7 +2327,7 @@
 				}) => {
 					const {
 						subredditList: e
-					} = a, c = Object(G.a)(), t = a => () => c(U(a));
+					} = a, c = Object(G.a)(), t = a => () => c(W(a));
 					return l.a.createElement(ma, {
 						card: a
 					}, l.a.createElement("div", {
@@ -2466,7 +2466,7 @@
 					}, [e]);
 				l.a.useEffect(() => {
 					a((() => a => ({
-						...W.o(a),
+						...U.m(a),
 						source: "recap",
 						action: "view",
 						noun: "recap"
@@ -2475,19 +2475,19 @@
 					u || e(D())
 				}, [u, e]), l.a.useEffect(() => () => {
 					a((() => a => ({
-						...W.o(a),
+						...U.m(a),
 						source: "recap",
 						action: "click",
 						noun: "dismiss",
-						recap: W.W(a)
+						recap: U.U(a)
 					}))())
 				}, []), l.a.useEffect(() => {
 					d.length && a((() => a => ({
-						...W.o(a),
+						...U.m(a),
 						source: "recap",
 						action: "view",
 						noun: "card",
-						recap: W.W(a)
+						recap: U.U(a)
 					}))())
 				}, [d, s]);
 				const Z = a => () => {
@@ -2505,11 +2505,11 @@
 					L = l.a.useCallback(async () => {
 						var t;
 						a((() => a => ({
-							...W.o(a),
+							...U.m(a),
 							source: "recap",
 							action: "click",
 							noun: "share",
-							recap: W.W(a)
+							recap: U.U(a)
 						}))());
 						const l = (null === (t = d[s]) || void 0 === t ? void 0 : t.id) || "",
 							r = document.getElementById(l);
@@ -2601,4 +2601,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.e68e2384a4b2a916ac3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.72110046ac492da02e58.js.map
