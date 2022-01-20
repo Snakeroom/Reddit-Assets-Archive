@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.85bb6578e7203109e4ed.js
-// Retrieved at 1/20/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.546423634fab1c0a0e42.js
+// Retrieved at 1/20/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3341,10 +3341,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("156397"),
+				buildNumber: Object(r.c)("156406"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1642697322"),
+				buildTimestamp: Object(r.b)("1642702722"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5938,14 +5938,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c58613779d4d871364bddd15051afb92e460c59b1-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ccac4f1336b7530bca89aef8be0187af83ff8583a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "58613779d4d871364bddd15051afb92e460c59b1-production",
+						release: "cac4f1336b7530bca89aef8be0187af83ff8583a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6462,7 +6462,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "58613779d4d871364bddd15051afb92e460c59b1-production",
+						releaseClient: "cac4f1336b7530bca89aef8be0187af83ff8583a-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -19673,7 +19673,7 @@
 			var b = i("./src/reddit/constants/experiments.ts"),
 				g = i("./src/reddit/helpers/chooseVariant/index.ts");
 			var w = i("./src/reddit/selectors/responsiveSettings.ts");
-			const v = new Set(["AntiEvilPlayground"].map(e => e.toLowerCase())),
+			const v = new Set(["AntiEvilPlayground", "lgbt", "dccomics", "yurop", "muaonthecheap", "loveislandusa"].map(e => e.toLowerCase())),
 				y = new Set(["uzitest", "testingtesting127", "kpkrunal"]),
 				E = new Set(["nfts", "crypto", "cryptocurrency", "gold_testing"]),
 				T = Object(u.k)(E);
@@ -45615,4 +45615,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.85bb6578e7203109e4ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.546423634fab1c0a0e42.js.map
