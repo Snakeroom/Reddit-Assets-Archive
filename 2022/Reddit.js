@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.196228b832b056b4b4e8.js
-// Retrieved at 1/20/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.c4dcee316639b294b269.js
+// Retrieved at 1/20/2022, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -17044,14 +17044,16 @@
 					display: e,
 					isFlairFilter: t,
 					onMouseDown: n,
-					...s
+					onClick: s,
+					...r
 				}) => o.a.createElement("li", {
 					className: Object(c.a)(E.a.StyledFlair, e === v.g.Cloud && E.a.cloudDisplay, {
 						[E.a.flairFilter]: t,
-						[E.a["m-selected"]]: s.isSelected
+						[E.a["m-selected"]]: r.isSelected
 					}),
+					onClick: () => null == s ? void 0 : s(Object(C.g)(r.flair)),
 					onMouseDown: n
-				}, o.a.createElement(u.b, j({}, s, {
+				}, o.a.createElement(u.b, j({}, r, {
 					className: E.a.Flair,
 					isFlairFilter: t,
 					forceSmallEmojis: !0
@@ -17062,7 +17064,7 @@
 						this.props.sendEvent(Object(O.f)(e))
 					}, this.trackFlairWidgetClear = e => this.props.sendEvent(Object(O.c)(e)), this.trackFlairOverflowClick = () => {
 						this.props.sendEvent(Object(O.d)())
-					}, this.onClick = e => {
+					}, this.onClickFlair = e => {
 						const t = {
 							id: this.props.subredditId,
 							eventType: "subreddit",
@@ -17108,6 +17110,7 @@
 						flair: e,
 						isFlairFilter: !0,
 						large: !0,
+						onClick: this.onClickFlair,
 						onMouseDown: () => this.trackFlairWidgetClick(e),
 						subredditName: t,
 						to: Object(C.e)(this.props.url, Object(C.j)(e))
@@ -21652,9 +21655,9 @@
 					const e = Object(c.d)(),
 						t = Object(c.e)(e => Object(R.a)(e, S.a.SearchResults));
 					Object(a.useEffect)(() => {
-						t ? (Object(S.d)(S.a.SearchResults, t), e(Object(m.d)({
+						t && (Object(S.d)(S.a.SearchResults, t), e(Object(m.c)({
 							key: S.a.SearchResults
-						}))) : Object(S.c)(S.a.SearchResults) || Object(S.e)(S.a.SearchResults)
+						})))
 					}, [])
 				},
 				V = (e, t) => {
@@ -24628,4 +24631,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.196228b832b056b4b4e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.c4dcee316639b294b269.js.map
