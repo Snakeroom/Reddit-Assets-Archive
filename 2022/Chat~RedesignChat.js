@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.185d7efaddcb0e14ba69.js
-// Retrieved at 1/18/2022, 11:20:14 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b024fd47f5eb28797594.js
+// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -3347,7 +3347,8 @@
 						message: h,
 						channelData: t
 					}), s.a.createElement(_.b, {
-						count: D
+						count: D,
+						className: S.a.UnreadCounter
 					}))), x && w && s.a.createElement(I.a, {
 						className: S.a.NotificationDisabledIcon,
 						isFilled: !0
@@ -3406,6 +3407,8 @@
 				itemTitleName: "_2uA0PzZKH32GoGhEYmjNQY",
 				Description: "inhRCnEPMGix0YN6H1tG-",
 				description: "inhRCnEPMGix0YN6H1tG-",
+				UnreadCounter: "_2_356AZLLuANUJ8g-ByYZA",
+				unreadCounter: "_2_356AZLLuANUJ8g-ByYZA",
 				ItemControls: "Vq8lNsMCbhivjYa37NfXE",
 				itemControls: "Vq8lNsMCbhivjYa37NfXE",
 				ChannelName: "_2O9bxNWfKdVw3DGR5RL3qM",
@@ -8528,7 +8531,7 @@
 				}, e.children), "Container", g.a),
 				v = o.a.span("TitleWithCounter", g.a),
 				_ = Object(m.a)({
-					unreadCount: p.c,
+					unreadCount: p.e,
 					hasNewMessages: p.b
 				}),
 				C = Object(c.b)(_, e => ({
@@ -9844,7 +9847,7 @@
 					const e = Object(c.d)(),
 						t = Object(c.e)(f.c),
 						n = Object(c.e)(f.G),
-						a = Object(c.e)(O.c),
+						a = Object(c.e)(O.e),
 						r = Object(c.e)(O.b),
 						l = Object(c.e)(H.e);
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
@@ -10461,7 +10464,9 @@
 				channelsFilter: "aIffTH7GLvKVJOicG6cVD",
 				ChannelsFilterItem: "_356qP5qn9Z_YK-JE6rofqz",
 				channelsFilterItem: "_356qP5qn9Z_YK-JE6rofqz",
-				selected: "_2kC1EPoYVFxUu-lQ5y-2fH"
+				selected: "_2kC1EPoYVFxUu-lQ5y-2fH",
+				UnreadIndicator: "R8HA4LyQFRtLVdgHtKFpH",
+				unreadIndicator: "R8HA4LyQFRtLVdgHtKFpH"
 			}
 		},
 		"./src/chat/controls/ChannelsFilter/index.tsx": function(e, t, n) {
@@ -10474,27 +10479,39 @@
 				o = n("./src/chat/actions/channelsFilter/index.ts"),
 				i = n("./src/chat/actions/tracking.ts"),
 				l = n("./src/chat/controls/Button/index.tsx"),
-				d = n("./src/chat/models/Channel/index.ts"),
-				u = n("./src/chat/selectors/channelsFilter.ts"),
-				h = n("./src/chat/controls/ChannelsFilter/index.m.less"),
-				m = n.n(h);
+				d = n("./src/chat/controls/Counter/index.tsx"),
+				u = n("./src/chat/models/Channel/index.ts"),
+				h = n("./src/chat/selectors/channelsFilter.ts"),
+				m = n("./src/chat/selectors/unreadCounter.ts"),
+				p = n("./src/chat/controls/ChannelsFilter/index.m.less"),
+				b = n.n(p);
+			const {
+				ALL: g,
+				DirectsOnly: f,
+				GroupsOnly: O
+			} = u.c;
 			t.a = () => {
 				const e = Object(c.d)(),
-					t = Object(c.e)(u.a),
-					n = Object(a.useCallback)(t => {
+					t = Object(c.e)(h.a),
+					n = Object(c.e)(m.c),
+					p = Object(c.e)(m.d),
+					j = Object(a.useCallback)(t => {
 						e(Object(o.d)({
 							filter: t
-						})), e(Object(i.F)(Object(d.i)(t)))
+						})), e(Object(i.F)(Object(u.i)(t)))
 					}, [e]);
 				return s.a.createElement("div", {
-					className: m.a.ChannelsFilter
-				}, Object.values(d.c).map(e => s.a.createElement(l.a, {
+					className: b.a.ChannelsFilter
+				}, Object.values(u.c).map(e => s.a.createElement(l.a, {
 					key: e,
-					onClick: () => n(e),
-					className: Object(r.a)(m.a.ChannelsFilterItem, {
-						[m.a.selected]: t === e
+					onClick: () => j(e),
+					className: Object(r.a)(b.a.ChannelsFilterItem, {
+						[b.a.selected]: t === e
 					})
-				}, d.d[e]())))
+				}, u.d[e](), (e => t !== g && t !== e && e !== g && (e === f && n || e === O && p))(e) && s.a.createElement(d.b, {
+					className: b.a.UnreadIndicator,
+					isEmptyCounter: !0
+				}))))
 			}
 		},
 		"./src/chat/controls/Checkbox/index.m.less": function(e, t, n) {
@@ -10632,10 +10649,11 @@
 					})
 				}, e) : null,
 				l = ({
-					count: e,
-					isEmptyCounter: t
+					count: e = 0,
+					isEmptyCounter: t,
+					className: n
 				}) => e || t ? s.a.createElement("span", {
-					className: Object(c.a)(o.a.UnreadCounter, {
+					className: Object(c.a)(o.a.UnreadCounter, n, {
 						[o.a.isEmpty]: t
 					})
 				}, e > 0 && (e < 100 ? e : "99+")) : null
@@ -14412,7 +14430,10 @@
 			const Fe = {
 				unreadMessages: 0,
 				hasNewMessages: !1,
-				unacceptedInvites: 0
+				unacceptedInvites: 0,
+				chatDirectUnacceptedInvites: 0,
+				chatGroupUnacceptedInvites: 0,
+				unreadMentions: 0
 			};
 			var Ge = (e = Fe, t) => {
 					switch (t.type) {
@@ -17161,4 +17182,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.185d7efaddcb0e14ba69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b024fd47f5eb28797594.js.map

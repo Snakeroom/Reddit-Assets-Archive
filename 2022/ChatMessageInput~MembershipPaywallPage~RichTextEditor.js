@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.6ce61fb41e348a386397.js
-// Retrieved at 1/19/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.acd4d572c8e8c6464e8a.js
+// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -8098,37 +8098,37 @@
 					if (Object(i.a)(t)) return !1;
 					return Object(r.c)(t, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.hf
-					}) === o.Vc
+						experimentName: o.if
+					}) === o.Wc
 				},
 				a = t => {
 					return Object(r.c)(t, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.if
-					}) === o.Vc
+						experimentName: o.jf
+					}) === o.Wc
 				},
 				l = t => {
 					if (Object(i.a)(t)) return !1;
 					const e = Object(r.c)(t, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.gf
+						experimentName: o.hf
 					});
-					return e === o.Ze.UIChangesOnly || e === o.Ze.TypingIndicators || e === o.Ze.IndicatorsPlusCTA
+					return e === o.af.UIChangesOnly || e === o.af.TypingIndicators || e === o.af.IndicatorsPlusCTA
 				},
 				d = t => {
 					if (Object(i.a)(t)) return !1;
 					const e = Object(s.d)(t, {
-							experimentName: o.gf
+							experimentName: o.hf
 						}),
 						n = null == e ? void 0 : e.variant;
-					return n === o.Ze.TypingIndicators || n === o.Ze.IndicatorsPlusCTA
+					return n === o.af.TypingIndicators || n === o.af.IndicatorsPlusCTA
 				},
 				u = t => {
 					if (Object(i.a)(t)) return !1;
 					const e = Object(s.d)(t, {
-						experimentName: o.gf
+						experimentName: o.hf
 					});
-					return (null == e ? void 0 : e.variant) === o.Ze.IndicatorsPlusCTA
+					return (null == e ? void 0 : e.variant) === o.af.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(t, e, n) {
@@ -8196,4 +8196,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.6ce61fb41e348a386397.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.acd4d572c8e8c6464e8a.js.map

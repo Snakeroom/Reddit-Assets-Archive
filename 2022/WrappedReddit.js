@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/WrappedReddit.f395d653d2a8810c7669.js
-// Retrieved at 1/18/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/WrappedReddit.e68e2384a4b2a916ac3e.js
+// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["WrappedReddit", "PushNotifications"], {
 		"./assets/fonts/RedditSans/font.less": function(a, e, c) {},
@@ -223,17 +223,17 @@
 		"./src/reddit/actions/notifications/index.ts": function(a, e, c) {
 			"use strict";
 			c.r(e), c.d(e, "initializeServiceWorkerChannel", (function() {
-				return N
-			})), c.d(e, "requestNotificationsPermissions", (function() {
 				return k
-			})), c.d(e, "subscribeForPNs", (function() {
-				return O
-			})), c.d(e, "unsubscribeFromPNs", (function() {
+			})), c.d(e, "requestNotificationsPermissions", (function() {
 				return L
-			})), c.d(e, "requestBrowserNotificationPermissionPromptByUser", (function() {
+			})), c.d(e, "subscribeForPNs", (function() {
 				return w
-			})), c.d(e, "subscribeToPermissionsChange", (function() {
+			})), c.d(e, "unsubscribeFromPNs", (function() {
 				return x
+			})), c.d(e, "requestBrowserNotificationPermissionPromptByUser", (function() {
+				return S
+			})), c.d(e, "subscribeToPermissionsChange", (function() {
+				return j
 			}));
 			var t = c("./node_modules/fbt/lib/FbtPublic.js"),
 				l = c("./node_modules/lodash/omit.js"),
@@ -252,18 +252,20 @@
 				E = c("./src/reddit/helpers/tabBadging/index.ts"),
 				g = c("./src/reddit/helpers/trackers/notifications.ts"),
 				_ = c("./src/reddit/models/Toast/index.ts"),
-				v = c("./src/reddit/selectors/meta.ts"),
-				C = c("./src/reddit/selectors/user.ts");
-			let Z = !1;
-			const N = async (a, e) => {
-				const c = Object(C.I)(a);
-				if (Z) return;
-				if (Z = !0, Object(p.a)(a) !== d.c.NotificationsSupported) return;
+				v = c("./src/reddit/constants/experiments.ts"),
+				C = c("./src/reddit/helpers/chooseVariant/index.ts");
+			var Z = c("./src/reddit/selectors/meta.ts"),
+				N = c("./src/reddit/selectors/user.ts");
+			let M = !1;
+			const k = async (a, e) => {
+				const c = Object(N.I)(a);
+				if (M) return;
+				if (M = !0, Object(p.a)(a) !== d.c.NotificationsSupported) return;
 				await Object(o.a)();
 				navigator.serviceWorker.addEventListener("message", t => {
 					const l = t.data,
 						n = l.command || l.type;
-					if ("registerWithServiceWorker" === n) M(a);
+					if ("registerWithServiceWorker" === n) O(a);
 					else if (n === E.a && c) {
 						const a = r()(l, ["command"]);
 						e(Object(f.f)(a))
@@ -271,27 +273,31 @@
 						const a = Object(b.a)(l.data.href);
 						a && a.pathname && e(Object(m.c)(a.pathname))
 					}
-				}), M(a)
-			}, M = a => {
+				}), O(a)
+			}, O = a => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
 					v2EventBoilerPlate: g.c(a)
 				})
-			}, k = (a, e, c = (() => {})) => async (t, l, r) => {
+			}, L = (a, e, c = (() => {})) => async (t, l, r) => {
 				const i = l(),
-					o = Object(v.f)(i);
+					o = Object(Z.f)(i),
+					m = (a => Object(C.c)(a, {
+						experimentName: v.Gb,
+						experimentEligibilitySelector: C.a
+					}) === v.Wc)(i);
 				if (await Object(n.a)() || o) return;
-				await N(i, t);
+				await k(i, t);
 				g.j(i), await Object(s.b)(a, e, () => {
-					t(Object(d.o)()), t(Object(d.n)()), g.h(i)
+					m || t(Object(d.o)()), t(Object(d.n)()), g.h(i)
 				}, (a, e) => {
-					t(Object(d.l)()), t(L(e ? d.a.Denied : d.a.Closed)), a && (e ? g.e(i) : g.f(i))
+					t(Object(d.l)()), t(x(e ? d.a.Denied : d.a.Closed)), a && (e ? g.e(i) : g.f(i))
 				}, a => {
-					t(Object(d.m)()), t(O()), a && g.d(i)
+					t(Object(d.m)()), t(w()), a && g.d(i)
 				}, () => {
 					t(Object(d.k)()), c()
 				})
-			}, O = a => async (e, c, l) => {
+			}, w = a => async (e, c, l) => {
 				const r = c();
 				try {
 					switch (await Object(i.b)(l.gqlContext)) {
@@ -312,7 +318,7 @@
 				} catch (n) {
 					g.i(r, "registration_failed_uncaught_exception"), console.error(n)
 				}
-			}, L = (a, e) => async c => {
+			}, x = (a, e) => async c => {
 				try {
 					Object(p.b)(a);
 					const l = await Object(o.a)();
@@ -326,17 +332,17 @@
 						})))
 					}
 				} catch (l) {}
-			}, w = a => async (e, c) => {
+			}, S = a => async (e, c) => {
 				const t = c();
 				if (Object(p.a)(t) === d.c.NotificationsSupported) switch (Object(s.a)()) {
 					case d.a.Default:
 					case d.a.Closed:
-						await e(k(!0, !0));
+						await e(L(!0, !0));
 						break;
 					case d.a.Denied:
 						e(Object(u.h)(a))
 				}
-			}, x = () => async (a, e) => {
+			}, j = () => async (a, e) => {
 				var c;
 				if (!(null === (c = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === c ? void 0 : c.query)) return;
 				const t = e();
@@ -347,13 +353,13 @@
 				l.onchange = () => (e => {
 					switch (e) {
 						case d.a.Denied:
-							a(L(d.a.Denied)), g.e(t);
+							a(x(d.a.Denied)), g.e(t);
 							break;
 						case d.a.Granted:
-							a(O()), g.d(t);
+							a(w()), g.d(t);
 							break;
 						default:
-							a(L(d.a.Default))
+							a(x(d.a.Default))
 					}
 				})(l.state)
 			}
@@ -2595,4 +2601,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.f395d653d2a8810c7669.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.e68e2384a4b2a916ac3e.js.map

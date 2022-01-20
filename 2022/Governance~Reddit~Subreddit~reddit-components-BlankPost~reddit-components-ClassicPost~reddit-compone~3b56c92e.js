@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.a04104e3e3ecf9ee22c7.js
-// Retrieved at 1/18/2022, 12:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.24162e8f8887b789f428.js
+// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -2375,27 +2375,27 @@
 					experimentName: n.yb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				c = Object(s.a)(d, e => e === n.xd.Enabled),
+				c = Object(s.a)(d, e => e === n.yd.Enabled),
 				u = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.sd,
+					experimentName: n.td,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				l = Object(s.a)(c, u, (e, t) => e && t === n.wd.Enabled),
+				l = Object(s.a)(c, u, (e, t) => e && t === n.xd.Enabled),
 				b = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: n.Kb,
+					experimentName: n.Lb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				m = Object(s.a)(c, b, (e, t) => e && t === n.bc.Enabled),
+				m = Object(s.a)(c, b, (e, t) => e && t === n.cc.Enabled),
 				p = Object(s.a)(e => Object(i.c)(e, {
 					experimentName: n.wb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				f = Object(s.a)(p, e => e === n.ud.ContinuousScroll),
+				f = Object(s.a)(p, e => e === n.vd.ContinuousScroll),
 				h = Object(s.a)(e => Object(i.c)(e, {
 					experimentName: n.xb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				O = Object(s.a)(h, e => e === n.vd.Enabled),
+				O = Object(s.a)(h, e => e === n.wd.Enabled),
 				g = Object(s.a)(e => Object(i.c)(e, {
 					experimentName: n.Fb,
 					experimentEligibilitySelector: () => !0
@@ -2407,4 +2407,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.a04104e3e3ecf9ee22c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.24162e8f8887b789f428.js.map

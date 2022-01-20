@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.c83b170b1bbe308cc82e.js
-// Retrieved at 1/19/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.eb11957731c7b1490db8.js
+// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, s) {
@@ -1691,7 +1691,7 @@
 					communityFlairSortedKeys: (e, {
 						subredditId: t
 					}) => Object(Be.c)(e, t),
-					isInNewModuleNCPV3Experiment: e => Object(We.a)(e) === ye.Wd.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(We.a)(e) === ye.Xd.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
@@ -2164,11 +2164,11 @@
 			var i = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => i.kc.Enabled === Object(n.c)(e, {
+			const o = e => i.lc.Enabled === Object(n.c)(e, {
 				experimentEligibilitySelector: r.J,
-				experimentName: i.jc
+				experimentName: i.kc
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.c83b170b1bbe308cc82e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.eb11957731c7b1490db8.js.map
