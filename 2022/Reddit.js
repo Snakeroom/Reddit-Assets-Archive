@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.d6d7db743cf1d7df527e.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d58d51c52816f3cd3954.js
+// Retrieved at 1/20/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -3029,12 +3029,12 @@
 					e(Object($e.e)(t))
 				}
 			}));
-			var at = Object(Ne.a)(ot(e => m.a.createElement(et.e, null, m.a.createElement(et.i, null, m.a.createElement(st.a, null, m.a.createElement(et.q, null, rt._("Turning off Night Mode", null, {
-					hk: "2XW7Rk"
+			var at = Object(Ne.a)(ot(e => m.a.createElement(et.e, null, m.a.createElement(et.i, null, m.a.createElement(st.a, null, m.a.createElement(et.q, null, rt._("Turning off Dark Mode", null, {
+					hk: "2RVfrK"
 				})), m.a.createElement(nt.a, {
 					onClick: e.closeModal
-				}, m.a.createElement(et.b, null)))), m.a.createElement(et.l, null, m.a.createElement(et.o, null, rt._("In order to continue styling your community, Night Mode must be turned off.", null, {
-					hk: "2qLSfr"
+				}, m.a.createElement(et.b, null)))), m.a.createElement(et.l, null, m.a.createElement(et.o, null, rt._("In order to continue styling your community, Dark Mode must be turned off.", null, {
+					hk: "2oiEiX"
 				}))), m.a.createElement(et.g, null, m.a.createElement(et.a, {
 					onClick: e.closeModal,
 					"data-redditstyle": !0
@@ -7409,7 +7409,7 @@
 							t(Object(mc.g)(n)), (t => e(Object(pi.z)(t)))(!n)
 						},
 						title: r.fbt._("Dark Mode", null, {
-							hk: "1pZGTO"
+							hk: "PaAOV"
 						})
 					})
 				},
@@ -8035,8 +8035,8 @@
 					name: "mod_mode",
 					className: dd.a.modModeIcon
 				})), m.a.createElement(fd, {
-					displayText: r.fbt._("Night Mode", null, {
-						hk: "2lyxcc"
+					displayText: r.fbt._("Dark Mode", null, {
+						hk: "1Tx6hE"
 					}),
 					isEnabled: d,
 					onClick: () => {
@@ -24618,4 +24618,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d6d7db743cf1d7df527e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d58d51c52816f3cd3954.js.map
