@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.eb11957731c7b1490db8.js
-// Retrieved at 1/19/2022, 7:10:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.7cf5e0cf8e0547cb9e77.js
+// Retrieved at 1/20/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, s) {
@@ -399,8 +399,8 @@
 				q = s("./src/reddit/constants/componentSizes.ts"),
 				K = s("./src/reddit/constants/postLayout.ts"),
 				Q = s("./src/reddit/constants/posts.ts"),
-				G = s("./src/reddit/featureFlags/index.ts"),
-				H = s("./src/reddit/helpers/getSubredditIcon/index.ts"),
+				H = s("./src/reddit/featureFlags/index.ts"),
+				G = s("./src/reddit/helpers/getSubredditIcon/index.ts"),
 				Y = s("./src/reddit/constants/tracking.ts");
 			var z = s("./src/reddit/hooks/useIntersectionObserver.ts"),
 				Z = s("./src/reddit/hooks/useWindowEvent.ts"),
@@ -414,7 +414,7 @@
 			const ne = c.a.img("SubredditIcon", ie.a),
 				re = Object(o.c)({
 					notificationLevel: $.E,
-					spPollsEnabled: G.d.spPolls,
+					spPollsEnabled: H.d.spPolls,
 					subredditInlineEditingEnabled: (e, {
 						subredditId: t
 					}) => Object(X.a)(e, {
@@ -488,7 +488,7 @@
 					var i;
 					e(t && s ? null === (i = t.getBoundingClientRect()) || void 0 === i ? void 0 : i.height : void 0)
 				})(g, f, m)), Object(z.a)(h, C, oe);
-				const E = e.subreddit && Object(H.a)(e),
+				const E = e.subreddit && Object(G.a)(e),
 					v = !!(e.theme && Object(l.a)(e).banner.showCommunityIcon && E),
 					j = s.charAt(0).toUpperCase() + s.slice(1),
 					N = !!e.subreddit && e.subredditInlineEditingEnabled,
@@ -734,6 +734,7 @@
 				mediaWrapper: "_1UmG626eNsebZt_eyKdDL4",
 				postTitleCompact: "_3wSK3_gZiuaUZtqPKu9z3M",
 				mediaImageBox: "Xqhz61TRPUo_ek11O2hcV",
+				videoStyles: "LAwAnSnoexNeHoqZmXdLD",
 				mediaImageBoxContentImage: "_2t6Z9GgOnrWn2b5Ndv_T5K",
 				postContainer: "_3Ud8ZDEFc0kXFg6R9KhDPS"
 			}
@@ -1357,8 +1358,8 @@
 				q = s("./src/reddit/components/Thumbnail/index.tsx"),
 				K = s("./src/reddit/models/Flair/index.ts"),
 				Q = s("./src/reddit/models/Subreddit/index.ts"),
-				G = s("./src/reddit/components/SidebarPostList/SmallPost/index.m.less"),
-				H = s.n(G);
+				H = s("./src/reddit/components/SidebarPostList/SmallPost/index.m.less"),
+				G = s.n(H);
 			const {
 				fbt: Y
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = e => e.type === K.f.Nsfw || e.type === K.f.Spoiler, Z = Object(c.c)({
@@ -1393,36 +1394,36 @@
 						post: t
 					}, o = Object(U.a)(Object(q.b)(r)), d = t.flair.filter(z);
 					return a.a.createElement("div", {
-						className: Object(P.a)(H.a.container, e, {
-							[H.a.redditStyle]: s
+						className: Object(P.a)(G.a.container, e, {
+							[G.a.redditStyle]: s
 						}),
 						onClick: this.onClickContainer
 					}, a.a.createElement("div", {
-						className: H.a.mainLine
+						className: G.a.mainLine
 					}, o && a.a.createElement("div", {
-						className: H.a.thumbnailContainer,
+						className: G.a.thumbnailContainer,
 						onClick: this.onClickThumbnail
 					}, a.a.createElement(q.a, r)), a.a.createElement("div", {
-						className: Object(P.a)(H.a.title, !o && H.a.titleSingle),
+						className: Object(P.a)(G.a.title, !o && G.a.titleSingle),
 						title: t.title
 					}, d.length > 0 && a.a.createElement(V.a, {
-						className: H.a.flair,
+						className: G.a.flair,
 						titleFlair: d,
 						nowrap: !0,
 						post: t
 					}), t.title)), a.a.createElement("div", {
-						className: H.a.metaLine
+						className: G.a.metaLine
 					}, i && !!n && a.a.createElement("span", {
-						className: H.a.meta
+						className: G.a.meta
 					}, Object(Q.h)(n) ? Object(T.d)(n.displayText || n.name) : Object(T.c)(n.displayText || n.name)), a.a.createElement("span", {
-						className: H.a.meta
+						className: G.a.meta
 					}, Y._({
 						"*": "{score} points",
 						_1: "1 point"
 					}, [Y._plural(t.score, "score", Object(A.b)(t.score))], {
 						hk: "1JZ0qm"
 					})), a.a.createElement("span", {
-						className: H.a.meta
+						className: G.a.meta
 					}, Y._({
 						"*": "{numComments} comments",
 						_1: "1 comment"
@@ -2171,4 +2172,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.eb11957731c7b1490db8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.7cf5e0cf8e0547cb9e77.js.map

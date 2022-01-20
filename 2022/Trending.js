@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.530b6ff88984025b19e5.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.2074c98b5f09b8dedd94.js
+// Retrieved at 1/20/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, s) {
@@ -82,6 +82,7 @@
 				mediaWrapper: "_1UmG626eNsebZt_eyKdDL4",
 				postTitleCompact: "_3wSK3_gZiuaUZtqPKu9z3M",
 				mediaImageBox: "Xqhz61TRPUo_ek11O2hcV",
+				videoStyles: "LAwAnSnoexNeHoqZmXdLD",
 				mediaImageBoxContentImage: "_2t6Z9GgOnrWn2b5Ndv_T5K",
 				postContainer: "_3Ud8ZDEFc0kXFg6R9KhDPS"
 			}
@@ -131,8 +132,8 @@
 				x = s("./src/reddit/controls/Search/RelatedSubredditMetaData.tsx"),
 				C = s("./src/reddit/helpers/name/index.ts"),
 				O = s("./src/reddit/models/Flair/index.ts"),
-				f = s("./src/reddit/models/Theme/index.ts"),
-				y = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				y = s("./src/reddit/models/Theme/index.ts"),
+				f = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				P = s("./src/reddit/components/MiniCardPost/index.m.less"),
 				j = s.n(P),
 				w = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPosts/Post/index.m.less"),
@@ -155,7 +156,7 @@
 				} = e, N = h && h.preview && h.preview.url || void 0, k = h && h.isSponsored ? "promoted_trend" : "trending", E = h && Object(l.a)(h.permalink) || "", I = O && E || g && Object(d.a)("/search", {
 					q: g.rawQuery,
 					source: k
-				}) || E, D = g ? g.subredditInfo && g.subredditInfo.icon : S && S.icon.url, U = g ? g.subredditInfo && g.subredditInfo.displayText : S && (S.displayText || S.name), V = h ? h.flair.filter(T) : [], A = h ? h.score : 0, R = h ? h.numComments : 0, F = h && h.isSponsored, L = Object(y.a)(e).body, W = `linear-gradient(\n      ${Object(n.f)(L,.2)},\n      ${Object(n.f)(L,.3)},\n      ${Object(n.f)(L,.4)},\n      ${Object(n.f)(L,.6)},\n      ${Object(n.f)(L,.8)},\n      ${L}\n    )`, M = a.a.createElement("div", {
+				}) || E, D = g ? g.subredditInfo && g.subredditInfo.icon : S && S.icon.url, U = g ? g.subredditInfo && g.subredditInfo.displayText : S && (S.displayText || S.name), V = h ? h.flair.filter(T) : [], A = h ? h.score : 0, R = h ? h.numComments : 0, L = h && h.isSponsored, F = Object(f.a)(e).body, W = `linear-gradient(\n      ${Object(n.f)(F,.2)},\n      ${Object(n.f)(F,.3)},\n      ${Object(n.f)(F,.4)},\n      ${Object(n.f)(F,.6)},\n      ${Object(n.f)(F,.8)},\n      ${F}\n    )`, M = a.a.createElement("div", {
 					id: i,
 					className: Object(o.a)(v.a.trendingPost, {
 						[v.a["m-background"]]: !!N
@@ -165,10 +166,10 @@
 				}, a.a.createElement("div", {
 					className: Object(o.a)(v.a.backgroundWrapper, j.a.backgroundWrapper, t),
 					style: {
-						background: Object(f.g)(Object(y.a)(e).body, N || Object(y.a)(e).banner.backgroundImage, "cover"),
+						background: Object(y.g)(Object(f.a)(e).body, N || Object(f.a)(e).banner.backgroundImage, "cover"),
 						"--SearchDiscoveryUnits-TrendingPosts-Post-background": W
 					}
-				}, F && a.a.createElement("div", {
+				}, L && a.a.createElement("div", {
 					className: v.a.promoted
 				}, r.fbt._("promoted", null, {
 					hk: "1mLJfa"
@@ -213,7 +214,7 @@
 				}, [r.fbt._plural(R, "number", Object(m.b)(R))], {
 					hk: "311aXY"
 				})))))));
-				return F ? a.a.createElement(u.a, {
+				return L ? a.a.createElement(u.a, {
 					post: h
 				}, M) : M
 			}))))
@@ -282,17 +283,17 @@
 					fireAdPixelsOfType: (t, s) => e(Object(m.z)(t, s)),
 					trackPostClick: t => e((e, s) => b.v(s(), t, b.a.POPULAR_CAROUSEL))
 				}))(C),
-				f = s("./src/reddit/contexts/ApiContext.tsx"),
-				y = s("./src/reddit/models/Search/index.ts"),
+				y = s("./src/reddit/contexts/ApiContext.tsx"),
+				f = s("./src/reddit/models/Search/index.ts"),
 				P = s("./src/reddit/selectors/trending.ts"),
 				j = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Container/index.tsx"),
 				w = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Placeholder/index.tsx");
 			const {
 				fbt: v
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), T = "TrendingPostsContainer", S = Object(i.b)(() => Object(a.c)({
-				trendingItems: e => Object(P.a)(e, y.d.tile)
+				trendingItems: e => Object(P.a)(e, f.d.tile)
 			}), e => ({
-				fetchTrendingItems: () => e(Object(d.b)(y.d.tile)),
+				fetchTrendingItems: () => e(Object(d.b)(f.d.tile)),
 				trackPostView: t => e((e, s) => b.w(s(), t, b.a.POPULAR_CAROUSEL))
 			})), N = 178;
 			class k extends n.a.Component {
@@ -380,7 +381,7 @@
 					return n.a.createElement(o.b, null, this.scrollChildForItem())
 				}
 			}
-			t.default = Object(f.b)(S(k))
+			t.default = Object(y.b)(S(k))
 		},
 		"./src/reddit/connectors/miniCardPost.ts": function(e, t, s) {
 			"use strict";
@@ -446,4 +447,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.530b6ff88984025b19e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.2074c98b5f09b8dedd94.js.map
