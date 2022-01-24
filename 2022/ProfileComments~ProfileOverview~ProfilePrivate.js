@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.c7a0437b7d9c92befa32.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.b5c81966974c9b49e42f.js
+// Retrieved at 1/24/2022, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -76,10 +76,10 @@
 						}
 					})), (await i(o(), e)).ok ? t(Object(c.f)({
 						kind: b.b.SuccessMod,
-						text: r.isLocked ? n.fbt._("comment has been been unlocked", null, {
-							hk: "3eImwj"
-						}) : n.fbt._("comment has been been locked", null, {
-							hk: "2Zo2mS"
+						text: r.isLocked ? n.fbt._("comment has been unlocked", null, {
+							hk: "BYjts"
+						}) : n.fbt._("comment has been locked", null, {
+							hk: "1pBDQl"
 						})
 					})) : t(Object(v.i)({
 						[e]: {
@@ -164,10 +164,10 @@
 						}
 					})), (await i(o(), e)).ok ? t(Object(c.f)({
 						kind: b.b.SuccessMod,
-						text: r.ignoreReports ? n.fbt._("comment has had their reports un-ignored", null, {
-							hk: "J3UXq"
-						}) : n.fbt._("comment has had their reports ignored", null, {
-							hk: "34JPHG"
+						text: r.ignoreReports ? n.fbt._("comment has had its reports un-ignored", null, {
+							hk: "HcpVV"
+						}) : n.fbt._("comment has had its reports ignored", null, {
+							hk: "2q4sCp"
 						})
 					})) : t(Object(v.i)({
 						[e]: {
@@ -5595,4 +5595,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.c7a0437b7d9c92befa32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.b5c81966974c9b49e42f.js.map

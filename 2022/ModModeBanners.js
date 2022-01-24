@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.eb0362da0f46294eaffc.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.9c48f67ae49c9749be36.js
+// Retrieved at 1/24/2022, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, s) {
@@ -23,15 +23,15 @@
 			})), s.d(t, "f", (function() {
 				return G
 			})), s.d(t, "o", (function() {
-				return Z
-			})), s.d(t, "p", (function() {
 				return $
+			})), s.d(t, "p", (function() {
+				return Z
 			})), s.d(t, "d", (function() {
 				return q
 			})), s.d(t, "a", (function() {
-				return X
-			})), s.d(t, "b", (function() {
 				return V
+			})), s.d(t, "b", (function() {
+				return X
 			})), s.d(t, "n", (function() {
 				return W
 			})), s.d(t, "c", (function() {
@@ -104,7 +104,7 @@
 							isSaved: r.isSaved
 						}
 					}))
-				}, M = e => `viewing-comment-${e}`, B = o.a.telemetry.commentConsumedThreshold, w = e => async (t, s) => {
+				}, B = e => `viewing-comment-${e}`, M = o.a.telemetry.commentConsumedThreshold, w = e => async (t, s) => {
 					const n = s();
 					if (!Object(k.b)(n, {
 							commentId: e
@@ -112,20 +112,20 @@
 					j.c({
 						state: n,
 						commentId: e
-					}), r.c.start(M(e));
+					}), r.c.start(B(e));
 					const d = setTimeout(() => j.a({
 						state: n,
 						commentId: e
-					}), B);
+					}), M);
 					E[e] = d
 				}, P = (e, t) => async (s, o) => {
 					const n = o(),
-						d = M(e);
+						d = B(e);
 					if (Object(k.b)(n, {
 							commentId: e
 						}) && r.c.has(d)) {
 						const s = r.c.end(d);
-						!t && s < B && (clearTimeout(E[e]), delete E[e])
+						!t && s < M && (clearTimeout(E[e]), delete E[e])
 					}
 				}, D = Object(d.a)(T.x), L = Object(d.a)(T.w), F = Object(d.a)(T.v), A = (e, t) => async (s, o, {
 					apiContext: n
@@ -173,7 +173,7 @@
 						moreCommentsItem: d,
 						...j.error
 					}))
-				}, U = Object(b.a)(O.b, v.a.upvoted), z = Object(b.a)(O.b, v.a.downvoted), K = Object(d.a)(T.j), G = Object(d.a)(T.i), Q = Object(d.a)(T.e), H = Object(d.a)(T.f), Z = (Object(d.a)(T.c), Object(d.a)(T.d), ({
+				}, U = Object(b.a)(O.b, v.a.upvoted), z = Object(b.a)(O.b, v.a.downvoted), K = Object(d.a)(T.j), G = Object(d.a)(T.i), Q = Object(d.a)(T.e), H = Object(d.a)(T.f), $ = (Object(d.a)(T.c), Object(d.a)(T.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: s
@@ -194,7 +194,7 @@
 						commentsPageKey: t,
 						isCollapsed: i
 					})), i || 0 !== a || s(e, !0), Object(u.d)()
-				}), $ = ({
+				}), Z = ({
 					commentId: e,
 					commentsPageKey: t
 				}) => async s => {
@@ -219,9 +219,9 @@
 						commentsPageKey: t,
 						isCollapsed: i
 					})), 0 === s && o(c, !0), Object(u.d)()
-				}, J = Object(d.a)(T.r), X = e => t => t(J({
+				}, J = Object(d.a)(T.r), V = e => t => t(J({
 					draftKey: e
-				})), V = Object(d.a)(T.a), W = Object(d.a)(T.E), Y = Object(d.a)(T.b), ee = Object(d.a)(T.u)
+				})), X = Object(d.a)(T.a), W = Object(d.a)(T.E), Y = Object(d.a)(T.b), ee = Object(d.a)(T.u)
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
@@ -282,10 +282,10 @@
 						}
 					})), (await d(n(), e)).ok ? t(Object(a.f)({
 						kind: b.b.SuccessMod,
-						text: r.isLocked ? o.fbt._("comment has been been unlocked", null, {
-							hk: "3eImwj"
-						}) : o.fbt._("comment has been been locked", null, {
-							hk: "2Zo2mS"
+						text: r.isLocked ? o.fbt._("comment has been unlocked", null, {
+							hk: "BYjts"
+						}) : o.fbt._("comment has been locked", null, {
+							hk: "1pBDQl"
 						})
 					})) : t(Object(x.i)({
 						[e]: {
@@ -370,10 +370,10 @@
 						}
 					})), (await d(n(), e)).ok ? t(Object(a.f)({
 						kind: b.b.SuccessMod,
-						text: r.ignoreReports ? o.fbt._("comment has had their reports un-ignored", null, {
-							hk: "J3UXq"
-						}) : o.fbt._("comment has had their reports ignored", null, {
-							hk: "34JPHG"
+						text: r.ignoreReports ? o.fbt._("comment has had its reports un-ignored", null, {
+							hk: "HcpVV"
+						}) : o.fbt._("comment has had its reports ignored", null, {
+							hk: "2q4sCp"
 						})
 					})) : t(Object(x.i)({
 						[e]: {
@@ -783,10 +783,10 @@
 			}
 			var N = C(Object(p.c)(E)),
 				S = s("./src/reddit/components/Reports/index.m.less"),
-				M = s.n(S);
+				B = s.n(S);
 			const {
-				fbt: B
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), w = r.a.div("ReportText", M.a), P = r.a.div("ReportsTitle", M.a);
+				fbt: M
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), w = r.a.div("ReportText", B.a), P = r.a.div("ReportsTitle", B.a);
 
 			function D(e) {
 				const {
@@ -798,17 +798,17 @@
 				return n.a.createElement("div", {
 					className: t
 				}, s && s.length > 0 && n.a.createElement("div", {
-					className: M.a.Reports
-				}, n.a.createElement(P, null, B._("Moderator Reports", null, {
+					className: B.a.Reports
+				}, n.a.createElement(P, null, M._("Moderator Reports", null, {
 					hk: "3hZ0oX"
 				})), s.map(([e, t]) => n.a.createElement(w, {
 					key: `mod-${t}`
 				}, `u/${t}: ${e}`))), o && o.length > 0 && n.a.createElement("div", {
-					className: M.a.Reports
-				}, n.a.createElement(P, null, B._("User Reports", null, {
+					className: B.a.Reports
+				}, n.a.createElement(P, null, M._("User Reports", null, {
 					hk: "2KeCLz"
 				})), n.a.createElement("div", {
-					className: M.a.UserReports
+					className: B.a.UserReports
 				}, o.map(([e, t, s, o]) => void 0 !== s && o ? n.a.createElement(N, {
 					key: `user-${e}`,
 					reason: e,
@@ -1212,4 +1212,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.eb0362da0f46294eaffc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.9c48f67ae49c9749be36.js.map

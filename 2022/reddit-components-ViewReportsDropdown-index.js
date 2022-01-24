@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.81c4f29c6b7925f6c85b.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.c3549e816e1fe9154aae.js
+// Retrieved at 1/24/2022, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/index.ts": function(e, t, n) {
@@ -11,7 +11,7 @@
 			})), n.d(t, "e", (function() {
 				return D
 			})), n.d(t, "h", (function() {
-				return K
+				return B
 			})), n.d(t, "l", (function() {
 				return G
 			})), n.d(t, "q", (function() {
@@ -23,19 +23,19 @@
 			})), n.d(t, "f", (function() {
 				return M
 			})), n.d(t, "o", (function() {
-				return H
+				return V
 			})), n.d(t, "p", (function() {
 				return $
 			})), n.d(t, "d", (function() {
-				return V
+				return J
 			})), n.d(t, "a", (function() {
 				return Z
 			})), n.d(t, "b", (function() {
 				return X
 			})), n.d(t, "n", (function() {
-				return W
-			})), n.d(t, "c", (function() {
 				return Y
+			})), n.d(t, "c", (function() {
+				return W
 			})), n.d(t, "k", (function() {
 				return ee
 			}));
@@ -118,7 +118,7 @@
 						commentId: e
 					}), L);
 					_[e] = c
-				}, K = (e, t) => async (n, o) => {
+				}, B = (e, t) => async (n, o) => {
 					const s = o(),
 						c = E(e);
 					if (Object(k.b)(s, {
@@ -127,7 +127,7 @@
 						const n = r.c.end(c);
 						!t && n < L && (clearTimeout(_[e]), delete _[e])
 					}
-				}, B = Object(c.a)(R.x), N = Object(c.a)(R.w), A = Object(c.a)(R.v), G = (e, t) => async (n, o, {
+				}, K = Object(c.a)(R.x), N = Object(c.a)(R.w), A = Object(c.a)(R.v), G = (e, t) => async (n, o, {
 					apiContext: s
 				}) => {
 					const r = o(),
@@ -140,7 +140,7 @@
 						} = l ? l.params : null;
 					if (!p) return;
 					const b = Object(g.t)(p);
-					n(B({
+					n(K({
 						moreCommentsId: c.id
 					}));
 					const j = await Object(f.f)(s(), b, {
@@ -173,7 +173,7 @@
 						moreCommentsItem: c,
 						...j.error
 					}))
-				}, z = Object(b.a)(O.b, v.a.upvoted), U = Object(b.a)(O.b, v.a.downvoted), F = Object(c.a)(R.j), M = Object(c.a)(R.i), Q = Object(c.a)(R.e), J = Object(c.a)(R.f), H = (Object(c.a)(R.c), Object(c.a)(R.d), ({
+				}, z = Object(b.a)(O.b, v.a.upvoted), U = Object(b.a)(O.b, v.a.downvoted), F = Object(c.a)(R.j), M = Object(c.a)(R.i), Q = Object(c.a)(R.e), H = Object(c.a)(R.f), V = (Object(c.a)(R.c), Object(c.a)(R.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -198,11 +198,11 @@
 					commentId: e,
 					commentsPageKey: t
 				}) => async n => {
-					n(J({
+					n(H({
 						commentId: e,
 						commentsPageKey: t
 					}))
-				}, V = ({
+				}, J = ({
 					commentLink: e,
 					commentsPageKey: t,
 					lineDepth: n,
@@ -221,7 +221,7 @@
 					})), 0 === n && o(d, !0), Object(l.d)()
 				}, q = Object(c.a)(R.r), Z = e => t => t(q({
 					draftKey: e
-				})), X = Object(c.a)(R.a), W = Object(c.a)(R.E), Y = Object(c.a)(R.b), ee = Object(c.a)(R.u)
+				})), X = Object(c.a)(R.a), Y = Object(c.a)(R.E), W = Object(c.a)(R.b), ee = Object(c.a)(R.u)
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, n) {
 			"use strict";
@@ -282,10 +282,10 @@
 						}
 					})), (await c(s(), e)).ok ? t(Object(a.f)({
 						kind: b.b.SuccessMod,
-						text: r.isLocked ? o.fbt._("comment has been been unlocked", null, {
-							hk: "3eImwj"
-						}) : o.fbt._("comment has been been locked", null, {
-							hk: "2Zo2mS"
+						text: r.isLocked ? o.fbt._("comment has been unlocked", null, {
+							hk: "BYjts"
+						}) : o.fbt._("comment has been locked", null, {
+							hk: "1pBDQl"
 						})
 					})) : t(Object(h.i)({
 						[e]: {
@@ -370,10 +370,10 @@
 						}
 					})), (await c(s(), e)).ok ? t(Object(a.f)({
 						kind: b.b.SuccessMod,
-						text: r.ignoreReports ? o.fbt._("comment has had their reports un-ignored", null, {
-							hk: "J3UXq"
-						}) : o.fbt._("comment has had their reports ignored", null, {
-							hk: "34JPHG"
+						text: r.ignoreReports ? o.fbt._("comment has had its reports un-ignored", null, {
+							hk: "HcpVV"
+						}) : o.fbt._("comment has had its reports ignored", null, {
+							hk: "2q4sCp"
 						})
 					})) : t(Object(h.i)({
 						[e]: {
@@ -587,7 +587,7 @@
 		"./src/reddit/components/Reports/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return B
+				return K
 			}));
 			var o = n("./node_modules/react/index.js"),
 				s = n.n(o),
@@ -672,9 +672,9 @@
 				E = n.n(P);
 			const {
 				fbt: L
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), D = r.a.div("ReportText", E.a), K = r.a.div("ReportsTitle", E.a);
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), D = r.a.div("ReportText", E.a), B = r.a.div("ReportsTitle", E.a);
 
-			function B(e) {
+			function K(e) {
 				const {
 					className: t,
 					modReports: n,
@@ -685,13 +685,13 @@
 					className: t
 				}, n && n.length > 0 && s.a.createElement("div", {
 					className: E.a.Reports
-				}, s.a.createElement(K, null, L._("Moderator Reports", null, {
+				}, s.a.createElement(B, null, L._("Moderator Reports", null, {
 					hk: "3hZ0oX"
 				})), n.map(([e, t]) => s.a.createElement(D, {
 					key: `mod-${t}`
 				}, `u/${t}: ${e}`))), o && o.length > 0 && s.a.createElement("div", {
 					className: E.a.Reports
-				}, s.a.createElement(K, null, L._("User Reports", null, {
+				}, s.a.createElement(B, null, L._("User Reports", null, {
 					hk: "2KeCLz"
 				})), s.a.createElement("div", {
 					className: E.a.UserReports
@@ -1642,8 +1642,8 @@
 						return e
 				}
 			};
-			const K = {};
-			var B = (e = K, t) => {
+			const B = {};
+			var K = (e = B, t) => {
 				switch (t.type) {
 					case d.d:
 					case d.b:
@@ -1678,7 +1678,7 @@
 				keyToChatCommentLinks: C,
 				keyToCommentThreadLinkSets: E,
 				keyToHeadCommentId: D,
-				keyToPostId: B,
+				keyToPostId: K,
 				ads: c
 			})
 		},
@@ -1723,9 +1723,9 @@
 			})), n.d(t, "z", (function() {
 				return D
 			})), n.d(t, "J", (function() {
-				return K
-			})), n.d(t, "s", (function() {
 				return B
+			})), n.d(t, "s", (function() {
+				return K
 			})), n.d(t, "D", (function() {
 				return N
 			})), n.d(t, "E", (function() {
@@ -1743,13 +1743,13 @@
 			})), n.d(t, "f", (function() {
 				return Q
 			})), n.d(t, "i", (function() {
-				return J
-			})), n.d(t, "G", (function() {
 				return H
+			})), n.d(t, "G", (function() {
+				return V
 			})), n.d(t, "C", (function() {
 				return $
 			})), n.d(t, "I", (function() {
-				return V
+				return J
 			})), n.d(t, "p", (function() {
 				return q
 			})), n.d(t, "L", (function() {
@@ -1757,9 +1757,9 @@
 			})), n.d(t, "y", (function() {
 				return X
 			})), n.d(t, "A", (function() {
-				return W
-			})), n.d(t, "B", (function() {
 				return Y
+			})), n.d(t, "B", (function() {
+				return W
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/lodash/values.js"),
@@ -1884,11 +1884,11 @@
 					commentId: t,
 					commentsPageKey: n
 				}) => !!(t && e.features.comments.isEditing[n] && e.features.comments.isEditing[n][t]),
-				K = (e, {
+				B = (e, {
 					commentId: t,
 					commentsPageKey: n
 				}) => !!(t && e.features.comments.replyFormOpen[n] && e.features.comments.replyFormOpen[n][t]),
-				B = (e, {
+				K = (e, {
 					commentsPageKey: t
 				}) => {
 					const n = t && e.features.comments.replyFormOpen[t] || {},
@@ -1951,10 +1951,10 @@
 					const n = e.features.comments.drafts[t];
 					return !!n && n.autofocusDisabled
 				},
-				J = (e, {
+				H = (e, {
 					draftKey: t
 				}) => e.features.comments.drafts[t],
-				H = (e, {
+				V = (e, {
 					commentId: t
 				}) => {
 					const n = t ? e.features.comments.submit.error[t] : void 0;
@@ -1963,7 +1963,7 @@
 				$ = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.submit.pending[t],
-				V = (e, {
+				J = (e, {
 					commentId: t
 				}) => !!t && e.features.comments.models[t].sendReplies,
 				q = e => e.features.comments.visitHighlightFilter,
@@ -1977,14 +1977,14 @@
 					var n, o;
 					return !!((null === (o = null === (n = e.pages) || void 0 === n ? void 0 : n.comments) || void 0 === o ? void 0 : o.followed) || []).find(e => e.id === t)
 				},
-				W = (e, {
+				Y = (e, {
 					commentId: t
 				}) => {
 					var n, o;
 					const s = ((null === (o = null === (n = e.pages) || void 0 === n ? void 0 : n.comments) || void 0 === o ? void 0 : o.followed) || []).find(e => e.id === t);
 					return !!(s && s.expiresAt < Date.now())
 				},
-				Y = (e, {
+				W = (e, {
 					commentId: t
 				}) => {
 					let n = Object(u.b)(e, {
@@ -2034,4 +2034,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.81c4f29c6b7925f6c85b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.c3549e816e1fe9154aae.js.map

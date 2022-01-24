@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.27b369650feed1afe090.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.8f8e166ff0ee7c95cd3b.js
+// Retrieved at 1/24/2022, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -155,8 +155,8 @@
 				F = n("./src/reddit/helpers/trackers/commentsPage.ts"),
 				G = n("./src/reddit/models/Comment/index.ts"),
 				V = n("./src/reddit/models/PostDraft/index.ts"),
-				J = n("./src/reddit/models/RichTextJson/index.ts"),
-				B = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
+				B = n("./src/reddit/models/RichTextJson/index.ts"),
+				J = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
 				$ = n("./src/reddit/models/Toast/index.ts"),
 				q = n("./src/reddit/selectors/comments.ts"),
 				Q = n("./src/reddit/selectors/commentSelector.ts"),
@@ -312,10 +312,10 @@
 					apiContext: c
 				}) => {
 					const d = e === _.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(J.G)(t)) s(pe({
+					if (!t || "object" == typeof t && Object(B.G)(t)) s(pe({
 						editorMode: e,
 						draftKey: n,
-						content: d ? J.i : ""
+						content: d ? B.i : ""
 					})), s(Object(u.c)(e));
 					else {
 						s(Object(u.b)(n));
@@ -362,11 +362,11 @@
 						const e = O.filter(e => !!e && 10 !== e.charCodeAt(0));
 						if (p === _.i.MARKDOWN) b = e.map(e => `> ${e}\n`).join("");
 						else {
-							const t = e.map(e => B.s(e, null)).map(e => B.l([e])),
-								n = B.s("", null),
-								o = B.l([n]);
+							const t = e.map(e => J.s(e, null)).map(e => J.l([e])),
+								n = J.s("", null),
+								o = J.l([n]);
 							f = {
-								document: [B.c(t), o]
+								document: [J.c(t), o]
 							}
 						}
 					}
@@ -606,7 +606,7 @@
 			})), n.d(t, "g", (function() {
 				return V
 			})), n.d(t, "f", (function() {
-				return J
+				return B
 			})), n.d(t, "o", (function() {
 				return q
 			})), n.d(t, "p", (function() {
@@ -758,7 +758,7 @@
 						moreCommentsItem: c,
 						...j.error
 					}))
-				}, F = Object(f.a)(O.b, S.a.upvoted), G = Object(f.a)(O.b, S.a.downvoted), V = Object(c.a)(C.j), J = Object(c.a)(C.i), B = Object(c.a)(C.e), $ = Object(c.a)(C.f), q = (Object(c.a)(C.c), Object(c.a)(C.d), ({
+				}, F = Object(f.a)(O.b, S.a.upvoted), G = Object(f.a)(O.b, S.a.downvoted), V = Object(c.a)(C.j), B = Object(c.a)(C.i), J = Object(c.a)(C.e), $ = Object(c.a)(C.f), q = (Object(c.a)(C.c), Object(c.a)(C.d), ({
 					commentId: e,
 					commentsPageKey: t,
 					scrollToAndRemeasure: n
@@ -774,7 +774,7 @@
 							commentsPageKey: t
 						}),
 						i = d.depth;
-					o(B({
+					o(J({
 						commentId: e,
 						commentsPageKey: t,
 						isCollapsed: a
@@ -799,7 +799,7 @@
 							commentId: e.id,
 							commentsPageKey: t
 						});
-					s(B({
+					s(J({
 						commentId: d,
 						commentsPageKey: t,
 						isCollapsed: a
@@ -867,10 +867,10 @@
 						}
 					})), (await c(s(), e)).ok ? t(Object(i.f)({
 						kind: f.b.SuccessMod,
-						text: r.isLocked ? o.fbt._("comment has been been unlocked", null, {
-							hk: "3eImwj"
-						}) : o.fbt._("comment has been been locked", null, {
-							hk: "2Zo2mS"
+						text: r.isLocked ? o.fbt._("comment has been unlocked", null, {
+							hk: "BYjts"
+						}) : o.fbt._("comment has been locked", null, {
+							hk: "1pBDQl"
 						})
 					})) : t(Object(y.i)({
 						[e]: {
@@ -955,10 +955,10 @@
 						}
 					})), (await c(s(), e)).ok ? t(Object(i.f)({
 						kind: f.b.SuccessMod,
-						text: r.ignoreReports ? o.fbt._("comment has had their reports un-ignored", null, {
-							hk: "J3UXq"
-						}) : o.fbt._("comment has had their reports ignored", null, {
-							hk: "34JPHG"
+						text: r.ignoreReports ? o.fbt._("comment has had its reports un-ignored", null, {
+							hk: "HcpVV"
+						}) : o.fbt._("comment has had its reports ignored", null, {
+							hk: "2q4sCp"
 						})
 					})) : t(Object(y.i)({
 						[e]: {
@@ -1437,8 +1437,8 @@
 					data: t
 				});
 			var V = n("./src/reddit/helpers/isPost.ts"),
-				J = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
-				B = n("./src/reddit/helpers/routeKey/index.ts"),
+				B = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
+				J = n("./src/reddit/helpers/routeKey/index.ts"),
 				$ = n("./src/reddit/models/ModQueue/index.ts"),
 				q = n("./src/reddit/models/PostDraft/index.ts"),
 				Q = n("./src/reddit/models/RemovalReason/index.ts"),
@@ -1577,14 +1577,14 @@
 							if (c.ok) {
 								if (o === Q.f.Public) {
 									if (r(ge()), c.body) {
-										const e = Object(J.a)(c.body, i),
+										const e = Object(B.a)(c.body, i),
 											t = {
 												comment: e,
 												parentId: m
 											},
 											n = Object(W.f)(a),
 											o = a.platform.currentPage && a.platform.currentPage.routeMatch;
-										let s = n && o && Object(B.a)(o, a, a.posts.models[e.postId]);
+										let s = n && o && Object(J.a)(o, a, a.posts.models[e.postId]);
 										if (s || (s = Object(k.a)(e.postId, null, {
 												sort: v.v,
 												hasSortParam: !0
@@ -2656,9 +2656,9 @@
 			})), n.d(t, "v", (function() {
 				return V
 			})), n.d(t, "K", (function() {
-				return J
-			})), n.d(t, "f", (function() {
 				return B
+			})), n.d(t, "f", (function() {
+				return J
 			})), n.d(t, "i", (function() {
 				return $
 			})), n.d(t, "G", (function() {
@@ -2856,13 +2856,13 @@
 				V = (e, {
 					draftKey: t
 				}) => !!e.features.comments.submit.error[t],
-				J = (e, {
+				B = (e, {
 					draftKey: t
 				}) => {
 					const n = e.features.comments.submit.error[t];
 					return n && n.fields ? n.fields.map(e => e.msg) : []
 				},
-				B = (e, {
+				J = (e, {
 					draftKey: t
 				}) => {
 					const n = e.features.comments.drafts[t];
@@ -2957,4 +2957,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.27b369650feed1afe090.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.8f8e166ff0ee7c95cd3b.js.map
