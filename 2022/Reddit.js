@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.7dd621fa9d8971a31354.js
-// Retrieved at 1/20/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.2b04237deb4b41342452.js
+// Retrieved at 1/24/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -5755,23 +5755,7 @@
 					Z = Object(eo.a)(K),
 					Y = Object(eo.a)(V),
 					X = ((null === (s = k.current) || void 0 === s ? void 0 : s.value) || "").trim(),
-					$ = function() {
-						const e = G && G.icon ? G.icon.url : "",
-							t = null == G ? void 0 : G.displayText,
-							n = !!G && G.isNSFW,
-							s = yo.b.text;
-						return {
-							id: $r()(),
-							searchQuery: X,
-							type: s,
-							section: yo.c.recent,
-							subredditOrProfileRestrictedName: t,
-							displayInfo: {
-								iconUrl: e,
-								isNSFW: n
-							}
-						}
-					}(),
+					$ = ge(X),
 					ee = N ? Object(xt.t)(N) : r ? Object(xt.t)(r) : void 0,
 					te = v[X];
 				Object(u.useEffect)(() => {
@@ -5853,7 +5837,40 @@
 						const t = b[e] || null,
 							n = t ? t.searchQuery : "";
 						l(e), le(n), _(t)
+					},
+					fe = () => {
+						if (V.length || ie(), M) {
+							const e = Object(Ut.K)(M.id);
+							e.length > 0 && (E(A ? e : []), f([...e, ...V]), e.forEach(e => {
+								be(vo.a.RECENT, xt.b.Recent, e.searchQuery)
+							}))
+						}
+						if (!T) {
+							(() => w(Object(so.l)()))();
+							const e = Object(to.e)(Yr()(a || {}, fo.u));
+							P(Object(Oo.u)(e, null != r ? r : void 0, i, Object(jo.b)({
+								pageLayer: r
+							}), q))
+						}
 					};
+
+				function ge(e) {
+					const t = G && G.icon ? G.icon.url : "",
+						n = null == G ? void 0 : G.displayText,
+						s = !!G && G.isNSFW,
+						r = yo.b.text;
+					return {
+						id: $r()(),
+						searchQuery: e,
+						type: r,
+						section: yo.c.recent,
+						subredditOrProfileRestrictedName: n,
+						displayInfo: {
+							iconUrl: t,
+							isNSFW: s
+						}
+					}
+				}
 				return m.a.createElement("div", {
 					className: Object(C.a)(wo.a.relativeWrapper, ys.a.container, e, {
 						"m-open": T
@@ -5875,21 +5892,23 @@
 					searchQuery: X,
 					onFormSubmit: e => {
 						e.preventDefault(), X.trim() && ((async e => {
-							var t;
-							if (re(), !X.trim()) return;
-							let n = {
+							var t, n;
+							const s = (null === (t = k.current) || void 0 === t ? void 0 : t.value) || "";
+							if (!s.trim()) return;
+							s !== X && se(s), re();
+							let r = {
 								...yo.a
 							};
-							if (j && j.searchQuery === X ? ((n = j).id || (n.id = $r()()), n.section === yo.c.recent ? me(X, n, d) : n.section === yo.c.typeahead ? pe(X, n, d, b.filter(e => e.isSubreddit)) : ue(X, X, xt.b.Search, vo.a.RECENT)) : n = $, ce(n), re(), !n.searchQuery) return;
-							const s = Object(go.a)({
+							if (j && j.searchQuery === X ? ((r = j).id || (r.id = $r()()), r.section === yo.c.recent ? me(s, r, d) : r.section === yo.c.typeahead ? pe(s, r, d, b.filter(e => e.isSubreddit)) : ue(s, s, xt.b.Search, vo.a.RECENT)) : r = ge(s), ce(r), re(), !r.searchQuery) return;
+							const o = Object(go.a)({
 								subreddit: G,
 								multireddit: H,
-								searchItem: n,
+								searchItem: r,
 								searchOptions: void 0,
 								shouldSearchSubreddit: U,
 								includeNsfwResults: z && i
 							});
-							ae(e, s), n.isTypeaheadSuggestion && de(), c(), null === (t = k.current) || void 0 === t || t.blur()
+							ae(e, o), r.isTypeaheadSuggestion && de(), c(), null === (n = k.current) || void 0 === n || n.blur()
 						})(e), P(Object(vo.k)(xt.a.FullSearchButton, Object(to.e)({
 							q: X
 						}), U, r || void 0)), re())
@@ -5897,7 +5916,7 @@
 					onFocusSearchBar: () => {
 						Object(Pr.c)(Pr.a.SearchResults) || Object(Pr.e)(Pr.a.SearchResults), P(Object(vo.k)(xt.a.SearchBar, Object(to.e)({
 							q: o
-						}), U, r || void 0))
+						}), U, r || void 0)), fe()
 					},
 					onKeyDown: e => {
 						if (e.key === kr.b.Escape || e.key === kr.b.Tab) re();
@@ -5913,21 +5932,7 @@
 					},
 					showCommunityPill: U,
 					subreddit: G,
-					toggleDropdownAndGetTrending: () => {
-						if (V.length || ie(), M) {
-							const e = Object(Ut.K)(M.id);
-							e.length > 0 && (E(A ? e : []), f([...e, ...V]), e.forEach(e => {
-								be(vo.a.RECENT, xt.b.Recent, e.searchQuery)
-							}))
-						}
-						if (!T) {
-							(() => w(Object(so.l)()))();
-							const e = Object(to.e)(Yr()(a || {}, fo.u));
-							P(Object(Oo.u)(e, null != r ? r : void 0, i, Object(jo.b)({
-								pageLayer: r
-							}), q))
-						}
-					}
+					toggleDropdownAndGetTrending: fe
 				}), m.a.createElement(po.c, {
 					container: S.current,
 					focusedItemIndex: d,
@@ -24618,4 +24623,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.7dd621fa9d8971a31354.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.2b04237deb4b41342452.js.map
