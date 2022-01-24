@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.ae367d774f00c83f3545.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.20f8e81974cbe7a28116.js
+// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -948,7 +948,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(B.sb)(null !== (d = null === (l = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== d ? d : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
+							Object(B.tb)(null !== (d = null === (l = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== d ? d : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
 							const e = i ? o.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : o.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -2329,7 +2329,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(a.pb)(s + 1)
+					})), Object(a.qb)(s + 1)
 				}
 		},
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, n) {
@@ -10860,7 +10860,7 @@
 					} = e, k = v ? Object(m.j)(u.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, v) : 0, S = O && k < C && h && 0 === b.length, [T, j] = Object(o.useState)(S), I = Object(i.d)();
 					Object(o.useEffect)(() => {
 						T && v && setTimeout(() => {
-							Object(m.R)(u.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, v), I(Object(l.f)({
+							Object(m.S)(u.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, v), I(Object(l.f)({
 								tooltipId: x
 							}))
 						}, y)
@@ -21856,7 +21856,7 @@
 								experimentName: r.J,
 								expEventOverride: t
 							});
-							return !!(Object(r.mf)(n) ? void 0 : n)
+							return !!(Object(r.nf)(n) ? void 0 : n)
 						})(n)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -25665,7 +25665,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(at.mb)(ot.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(at.nb)(ot.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -25938,14 +25938,14 @@
 				Ht = n("./src/reddit/helpers/trackers/postCollection.ts");
 			const Vt = [{
 					id: it.d,
-					getShowTimesLeft: at.I,
-					setShowTimesLeft: at.Jb,
+					getShowTimesLeft: at.J,
+					setShowTimesLeft: at.Kb,
 					tooltipShown: Ht.n,
 					tooltipDismissed: Ht.m
 				}, {
 					id: it.c,
-					getShowTimesLeft: at.H,
-					setShowTimesLeft: at.Ib,
+					getShowTimesLeft: at.I,
+					setShowTimesLeft: at.Jb,
 					tooltipShown: Ht.f,
 					tooltipDismissed: Ht.e
 				}],
@@ -31577,37 +31577,37 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.if
+						experimentName: o.jf
 					}) === o.Wc
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.jf
+						experimentName: o.kf
 					}) === o.Wc
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.hf
+						experimentName: o.if
 					});
-					return t === o.af.UIChangesOnly || t === o.af.TypingIndicators || t === o.af.IndicatorsPlusCTA
+					return t === o.bf.UIChangesOnly || t === o.bf.TypingIndicators || t === o.bf.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: o.hf
+							experimentName: o.if
 						}),
 						n = null == t ? void 0 : t.variant;
-					return n === o.af.TypingIndicators || n === o.af.IndicatorsPlusCTA
+					return n === o.bf.TypingIndicators || n === o.bf.IndicatorsPlusCTA
 				},
 				u = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.hf
+						experimentName: o.if
 					});
-					return (null == t ? void 0 : t.variant) === o.af.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.bf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(e, t, n) {
@@ -31867,4 +31867,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.ae367d774f00c83f3545.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.20f8e81974cbe7a28116.js.map

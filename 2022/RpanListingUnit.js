@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.e03811b53e504f045c32.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.5a5e991d00057ec1bb6b.js
+// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -54,13 +54,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Hd
 				});
-				return Object(u.mf)(t) ? void 0 : t
+				return Object(u.nf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Id
 				});
-				return Object(u.mf)(t) ? void 0 : t
+				return Object(u.nf)(t) ? void 0 : t
 			}, (e, t) => e === u.Ld.Enabled && t === u.Ld.Enabled);
 			var f = n("./src/config.ts");
 			var h = n("./src/reddit/selectors/user.ts");
@@ -1347,7 +1347,7 @@
 				q = n.n(K);
 			const {
 				fbt: z
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), J = 20, Z = l.oc, X = l.oc, Q = Object(c.a)(D.a, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), J = 20, X = l.oc, Z = l.oc, Q = Object(c.a)(D.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(o.b)(() => Object(i.c)({
 				autoplay: N.b,
@@ -1399,19 +1399,19 @@
 			class ne extends s.Component {
 				constructor(e) {
 					super(e), this.observableElement = r.a.createRef(), this.videoRef = r.a.createRef(), this.videoSessionManager = null, this.timerId = "rpan-du-active-watch-timer-id", this.handleSuccessfulPlayback = () => {
-						Object(E.W)()
+						Object(E.X)()
 					}, this.handleUnsuccessfulPlayback = () => {
-						const e = Number(Object(E.L)());
+						const e = Number(Object(E.M)());
 						if (e) {
-							if (Date.now() - e >= Z) {
-								Object(E.W)();
+							if (Date.now() - e >= X) {
+								Object(E.X)();
 								const e = 30 * l.B,
-									t = Date.now() - e + X;
+									t = Date.now() - e + Z;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
 							}
-						} else Object(E.Mb)(Date.now())
+						} else Object(E.Nb)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -4365,4 +4365,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.e03811b53e504f045c32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.5a5e991d00057ec1bb6b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.ae133af51ba7a8641df3.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.f89c2636ddd1e6a5b875.js
+// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -334,8 +334,8 @@
 				M = a("./src/reddit/actions/urlRequested.ts"),
 				T = a("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
 				R = a("./src/reddit/constants/avatars.ts"),
-				D = a("./src/reddit/controls/LoadingIcon/index.tsx"),
-				S = a("./src/reddit/helpers/avatar/index.ts"),
+				S = a("./src/reddit/controls/LoadingIcon/index.tsx"),
+				D = a("./src/reddit/helpers/avatar/index.ts"),
 				F = a("./src/reddit/helpers/trackers/snoovatar.ts"),
 				B = a("./src/reddit/models/Avatar/accessories.ts"),
 				L = a("./src/reddit/models/Toast/index.ts"),
@@ -399,7 +399,7 @@
 						const r = i.snoovatar,
 							o = (null == r ? void 0 : r.styles) || {},
 							n = (null == r ? void 0 : r.accessories) || [],
-							c = Object(S.a)(n, [B.d[e]]).map(e => e.id);
+							c = Object(D.a)(n, [B.d[e]]).map(e => e.id);
 						try {
 							u(!0), a(Object(F.e)("powerups_post_upsell"));
 							const e = await s(Object(k.e)(c, o, {
@@ -429,7 +429,7 @@
 						}
 					},
 					disabled: c
-				}, c ? o.a.createElement(D.a, {
+				}, c ? o.a.createElement(S.a, {
 					sizePx: 12,
 					center: !0
 				}) : o.a.createElement(o.a.Fragment, null, H._("Yes", null, {
@@ -588,7 +588,7 @@
 					E(t)
 				}, [e, h, w, E]), Object(r.useEffect)(() => {
 					if (f === s.HIDDEN) return;
-					(() => f === s.UNLOCKED_COMMUNITY_GEAR ? a(Object(d.p)()) : f === s.POWERUPS_DEFAULT ? a(Object(d.v)()) : f === s.POWERUPS_COMMUNITY_GEAR ? a(Object(d.u)()) : f === s.UNLOCKED_UNAPPLIED_FROM_PREMIUM ? a(Object(d.s)()) : void 0)(), Object(c.R)(h, e)
+					(() => f === s.UNLOCKED_COMMUNITY_GEAR ? a(Object(d.p)()) : f === s.POWERUPS_DEFAULT ? a(Object(d.v)()) : f === s.POWERUPS_COMMUNITY_GEAR ? a(Object(d.u)()) : f === s.UNLOCKED_UNAPPLIED_FROM_PREMIUM ? a(Object(d.s)()) : void 0)(), Object(c.S)(h, e)
 				}, [f, E, h, e, a, w]), f) {
 					case s.POWERUPS_DEFAULT:
 					case s.POWERUPS_COMMUNITY_GEAR:
@@ -1396,4 +1396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.ae133af51ba7a8641df3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.f89c2636ddd1e6a5b875.js.map

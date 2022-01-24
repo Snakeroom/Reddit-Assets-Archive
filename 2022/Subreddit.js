@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.03ed3116766cda0f4601.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.4823812410822d4a23cd.js
+// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -569,14 +569,14 @@
 				d = e => {
 					switch (e) {
 						case r.a.Denied:
-							i.kb(!1), Object(s.c)();
+							i.lb(!1), Object(s.c)();
 							break;
 						case r.a.Default:
 						case r.a.Granted:
-							i.kb(!0), Object(s.c)();
+							i.lb(!0), Object(s.c)();
 							break;
 						case r.a.Closed:
-							i.kb(!0)
+							i.lb(!0)
 					}
 				}
 		},
@@ -1159,7 +1159,7 @@
 				} = e, n = Object(c.f)(o.a.AWARDED_LISTING_BANNER, i.g), [u, m] = Object(s.useState)(n ? k.Hidden : k.Visible);
 				if (u === k.Hidden) return null;
 				const p = () => {
-					m(k.Visible), Object(c.hb)(o.a.AWARDED_LISTING_BANNER, !1, i.g)
+					m(k.Visible), Object(c.ib)(o.a.AWARDED_LISTING_BANNER, !1, i.g)
 				};
 				return u === k.Dismissed ? r.a.createElement("div", {
 					className: Object(a.a)(g.a.dismissedContainer, t)
@@ -1180,7 +1180,7 @@
 				})), r.a.createElement(S, null), r.a.createElement(l.a, {
 					className: g.a.close,
 					onClick: () => {
-						m(k.Dismissed), Object(c.hb)(o.a.AWARDED_LISTING_BANNER, !0, i.g)
+						m(k.Dismissed), Object(c.ib)(o.a.AWARDED_LISTING_BANNER, !0, i.g)
 					}
 				}))
 			}
@@ -1480,7 +1480,7 @@
 						o = Object(b.b)(x),
 						i = Object(b.b)(_),
 						[c, d] = function(e, t) {
-							const [n, r] = Object(s.useState)(Object(D.M)(e, t));
+							const [n, r] = Object(s.useState)(Object(D.N)(e, t));
 							return [n, Object(s.useCallback)(() => {
 								const n = Object(D.a)(e, t);
 								r(n)
@@ -1510,7 +1510,7 @@
 							e.stopPropagation(), o.visible ? v() : C()
 						}, [v, C, o.visible]),
 						T = Object(s.useCallback)(t => {
-							t === f.b.FREQUENT && Object(D.Z)(e.userId, e.subredditId)
+							t === f.b.FREQUENT && Object(D.ab)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						L = Object(s.useCallback)(s => {
 							const {
@@ -1727,7 +1727,7 @@
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(D.Z)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(D.ab)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), e.userIsSubscriber && t && e.notificationLevel && r.a.createElement("div", {
 					className: se.a.notificationButtonContainer
@@ -2548,7 +2548,7 @@
 			class v extends a.a.Component {
 				constructor(e) {
 					super(e), this.closeBanner = () => {
-						Object(u.hb)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
+						Object(u.ib)(d.a.CREATE_POST_BANNER, !0, this.props.subreddit.id), this.setState({
 							visible: !1
 						}), this.props.showToast(), this.props.sendEvent(p())
 					}, this.createPost = () => {
@@ -6443,7 +6443,7 @@
 					})),
 					h = !!n;
 				return Object(r.useEffect)(() => {
-					h && (Object(d.R)(c.b.POWERUPS_CNC_MODULE_VISIBILITY_STORE, e), x(e) || t(Object(l.c)()))
+					h && (Object(d.S)(c.b.POWERUPS_CNC_MODULE_VISIBILITY_STORE, e), x(e) || t(Object(l.c)()))
 				}, [t, h, e]), h ? a.a.createElement("a", {
 					className: f.a.feedBanner,
 					onClick: () => {
@@ -9109,7 +9109,7 @@
 						e(d.P(t, s, r, a))
 					},
 					showModalOnScroll: () => e(d.bb()),
-					surveyTriggerScrollCounted: () => e(Object(u.j)())
+					surveyTriggerScrollCounted: () => e(Object(u.k)())
 				}),
 				N = e => Object(b.b)({
 					...e
@@ -13010,7 +13010,7 @@
 						experimentEligibilitySelector: a.J,
 						experimentName: s.yc
 					});
-					return !(!t || Object(s.mf)(t))
+					return !(!t || Object(s.nf)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
@@ -13444,4 +13444,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.03ed3116766cda0f4601.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.4823812410822d4a23cd.js.map

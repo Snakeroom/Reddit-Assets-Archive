@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.55ea4477944435021bf4.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.7fad6e0ed85d23d23363.js
+// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2536,7 +2536,7 @@
 					})),
 					h = !!r;
 				return Object(n.useEffect)(() => {
-					h && (Object(c.R)(d.b.POWERUPS_CNC_MODULE_VISIBILITY_STORE, e), y(e) || t(Object(l.c)()))
+					h && (Object(c.S)(d.b.POWERUPS_CNC_MODULE_VISIBILITY_STORE, e), y(e) || t(Object(l.c)()))
 				}, [t, h, e]), h ? o.a.createElement("a", {
 					className: f.a.feedBanner,
 					onClick: () => {
@@ -3158,7 +3158,7 @@
 						e(c.P(t, s, n, o))
 					},
 					showModalOnScroll: () => e(c.bb()),
-					surveyTriggerScrollCounted: () => e(Object(u.j)())
+					surveyTriggerScrollCounted: () => e(Object(u.k)())
 				}),
 				E = e => Object(b.b)({
 					...e
@@ -6121,7 +6121,7 @@
 						experimentEligibilitySelector: o.J,
 						experimentName: s.yc
 					});
-					return !(!t || Object(s.mf)(t))
+					return !(!t || Object(s.nf)(t))
 				},
 				i = e => {
 					return Object(n.c)(e, {
@@ -6362,4 +6362,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.55ea4477944435021bf4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.7fad6e0ed85d23d23363.js.map

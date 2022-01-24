@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.6a8c94c2e48fc70ab546.js
-// Retrieved at 1/20/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.fc376d4a7cdddb99b0ed.js
+// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -5025,7 +5025,7 @@
 					update: c
 				} = e, m = Object(ie.a)(), u = Object(i.d)(), [p, h] = Object(o.useState)(n), [b, g] = Object(o.useState)(!1), [f, x] = Object(o.useState)(!0);
 				return Object(o.useEffect)(() => {
-					x(Object(re.F)("location")), Object(re.Gb)("location")
+					x(Object(re.G)("location")), Object(re.Hb)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(G.a, {
 					className: Se.a.noMarginHeading
 				}, H.fbt._("Community Location and main language", null, {
@@ -6009,10 +6009,10 @@
 			}
 			var E = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(d.i)()), Object(p.xb)()
+					e(Object(d.i)()), Object(p.yb)()
 				},
 				onViewTooltip: () => {
-					Object(p.Rb)()
+					Object(p.Sb)()
 				}
 			}))(Object(m.c)(x));
 			const _ = "editable-primary-topic-idcard";
@@ -20423,21 +20423,6 @@
 				}) : void 0
 			}
 		},
-		"./src/reddit/hooks/useGqlContext.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return o
-			}));
-			var s = n("./node_modules/react/index.js"),
-				a = n("./src/reddit/contexts/ApiContext.tsx");
-
-			function o() {
-				const {
-					gqlContext: e
-				} = Object(s.useContext)(a.a);
-				return e
-			}
-		},
 		"./src/reddit/hooks/useIsOverlay.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -21698,7 +21683,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						locationSettingSeen: Object(W.F)("location")
+						locationSettingSeen: Object(W.G)("location")
 					})
 				}
 				render() {
@@ -22425,7 +22410,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: s.Vc
 				});
-				return !(!t || Object(s.mf)(t))
+				return !(!t || Object(s.nf)(t))
 			}
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
@@ -22670,4 +22655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.6a8c94c2e48fc70ab546.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.fc376d4a7cdddb99b0ed.js.map

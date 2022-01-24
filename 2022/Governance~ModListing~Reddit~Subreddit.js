@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.5767893c4801bbb8b96a.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.5ef04098d95dde36962a.js
+// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -1356,7 +1356,7 @@
 					}
 				}),
 				i = (e, t) => {
-					t && (Object(s.zb)(e.postId), Object(s.Hb)(t)), e.impressionIdStr ? Object(s.Ab)(e.impressionIdStr) : e.impressionId && Object(s.Ab)(e.impressionId)
+					t && (Object(s.Ab)(e.postId), Object(s.Ib)(t)), e.impressionIdStr ? Object(s.Bb)(e.impressionIdStr) : e.impressionId && Object(s.Bb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/screenview.ts": function(e, t, r) {
@@ -2464,7 +2464,7 @@
 					var e;
 					null === (e = r.current) || void 0 === e || e.emit(i)
 				}, [i]), [i, function(t) {
-					Object(s.Db)(e, t), a(t)
+					Object(s.Eb)(e, t), a(t)
 				}]
 			}
 		},
@@ -2745,7 +2745,7 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: e
 				});
-				return !(!r || Object(n.mf)(r))
+				return !(!r || Object(n.nf)(r))
 			}
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, r) {
@@ -2805,4 +2805,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.5767893c4801bbb8b96a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.5ef04098d95dde36962a.js.map

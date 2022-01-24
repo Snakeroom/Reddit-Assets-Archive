@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.0f6c6e55d56ac0b27703.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.05f94447c97e9acb416a.js
+// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EditCommunityDescriptionModal"], {
 		"./src/lib/hooks/useMutation.ts": function(e, t, s) {
@@ -73,64 +73,64 @@
 				p = s("./src/reddit/constants/modals.ts"),
 				b = s("./src/reddit/controls/Button/index.tsx"),
 				_ = s("./src/reddit/endpoints/subreddit/newCommunityProgress.ts"),
-				j = s("./src/reddit/helpers/trackers/communityProgressModule.ts"),
-				y = s("./src/reddit/hooks/useTracking.ts"),
+				y = s("./src/reddit/helpers/trackers/communityProgressModule.ts"),
+				j = s("./src/reddit/hooks/useTracking.ts"),
 				f = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				O = s("./src/reddit/selectors/experiments/newCommunityProgressV3.ts"),
 				C = s("./src/reddit/selectors/platform.ts"),
-				x = s("./src/reddit/components/EditCommunityDescriptionModal/index.m.less"),
-				g = s.n(x);
+				g = s("./src/reddit/components/EditCommunityDescriptionModal/index.m.less"),
+				x = s.n(g);
 			t.default = Object(c.a)(() => {
 				const e = Object(a.e)(C.c),
 					t = Object(a.e)(t => e && Object(O.c)(t)[e]),
 					[s, c] = Object(n.useState)(""),
-					x = Object(a.d)(),
-					M = Object(y.a)(),
+					g = Object(a.d)(),
+					M = Object(j.a)(),
 					[E] = Object(i.a)(_.a);
 				if (!e || !t) return null;
-				const k = () => x(Object(d.i)(p.a.EDIT_DESCRIPTION_MODAL));
+				const k = () => g(Object(d.i)(p.a.EDIT_DESCRIPTION_MODAL));
 				return r.a.createElement(m.e, {
-					className: g.a.ModalBody
+					className: x.a.ModalBody
 				}, r.a.createElement(m.i, {
-					className: g.a.ModalHeader
+					className: x.a.ModalHeader
 				}, r.a.createElement(f.a, {
-					className: g.a.ExpandLeft
+					className: x.a.ExpandLeft
 				}, r.a.createElement(m.q, null, o.fbt._("Write a description", null, {
 					hk: "1aXT9M"
 				})), r.a.createElement(b.t, {
-					className: g.a.CloseButton,
+					className: x.a.CloseButton,
 					onClick: k,
 					priority: b.c.Plain
 				}, r.a.createElement(m.b, null)))), r.a.createElement(m.l, {
-					className: g.a.ModalMain
+					className: x.a.ModalMain
 				}, r.a.createElement(m.t, {
-					className: g.a.TextArea,
+					className: x.a.TextArea,
 					onChange: e => c(e.currentTarget.value),
 					placeholder: o.fbt._("Tell people what your community is about...", null, {
 						hk: "17XTOW"
 					}),
 					value: s
 				}), r.a.createElement("label", {
-					className: g.a.TextAreaLabel
+					className: x.a.TextAreaLabel
 				}, o.fbt._("description", null, {
 					hk: "Pkdpn"
 				}))), r.a.createElement(m.g, {
-					className: g.a.modalFooter
+					className: x.a.modalFooter
 				}, r.a.createElement(m.a, {
 					onClick: k
 				}, o.fbt._("Cancel", null, {
 					hk: "2TSLl5"
 				})), r.a.createElement(b.t, {
-					className: g.a.SaveButton,
+					className: x.a.SaveButton,
 					onClick: async () => {
-						x(Object(l.j)(e, {
+						g(Object(l.j)(e, {
 							publicDescription: s
 						}, {}, !0)), await E({
 							input: {
 								subredditId: e,
 								cardId: "add_descr"
 							}
-						}), M(Object(j.d)(t, "add_descr")), x(Object(u.b)(e)), k()
+						}), M(Object(y.d)(t, "add_descr")), g(Object(u.b)(e)), k()
 					}
 				}, o.fbt._("Save", null, {
 					hk: "4yMsMq"
@@ -293,21 +293,6 @@
 					subreddit: Object(o.hb)(s)
 				})
 		},
-		"./src/reddit/hooks/useGqlContext.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return r
-			}));
-			var o = s("./node_modules/react/index.js"),
-				n = s("./src/reddit/contexts/ApiContext.tsx");
-
-			function r() {
-				const {
-					gqlContext: e
-				} = Object(o.useContext)(n.a);
-				return e
-			}
-		},
 		"./src/redditGQL/operations/CompleteCommunityProgressCard.json": function(e) {
 			e.exports = JSON.parse('{"id":"de7c5c2c6959"}')
 		},
@@ -322,4 +307,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.0f6c6e55d56ac0b27703.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.05f94447c97e9acb416a.js.map

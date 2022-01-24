@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.0fb3dc742b6a44cd897e.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.f963af74bd6111283ea9.js
+// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -8967,21 +8967,6 @@
 					}
 				})
 		},
-		"./src/reddit/hooks/useGqlContext.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return o
-			}));
-			var s = n("./node_modules/react/index.js"),
-				a = n("./src/reddit/contexts/ApiContext.tsx");
-
-			function o() {
-				const {
-					gqlContext: e
-				} = Object(s.useContext)(a.a);
-				return e
-			}
-		},
 		"./src/reddit/hooks/useThunkDispatch.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -12894,4 +12879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.0fb3dc742b6a44cd897e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f963af74bd6111283ea9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.daac46b8ce9c99c4f9a7.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.2486074df4d2ca77ed25.js
+// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~StandalonePostPage"], {
 		"./src/reddit/components/AdLinkWrapperContent/index.m.less": function(e, t, s) {
@@ -1506,14 +1506,14 @@
 			const Ve = e => {
 					return Object(We.c)(e, {
 						experimentEligibilitySelector: We.a,
-						experimentName: Ae.gf
+						experimentName: Ae.hf
 					}) === Ae.Wc
 				},
 				Ue = e => {
 					if (Object(De.a)(e)) return !1;
 					return Object(We.c)(e, {
 						experimentEligibilitySelector: We.a,
-						experimentName: Ae.ff
+						experimentName: Ae.gf
 					}) === Ae.Wc
 				},
 				Ke = (e, {
@@ -1524,7 +1524,7 @@
 					});
 					return !(Object(De.a)(e) || !s || s.isSponsored) && Object(We.c)(e, {
 						experimentEligibilitySelector: We.a,
-						experimentName: Ae.ef
+						experimentName: Ae.ff
 					}) === Ae.Wc
 				};
 			var He = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -2873,7 +2873,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.uc
 				});
-				return !(!t || Object(o.mf)(t))
+				return !(!t || Object(o.nf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/subredditDiscovery.ts": function(e, t, s) {
@@ -2901,4 +2901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.daac46b8ce9c99c4f9a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.2486074df4d2ca77ed25.js.map
