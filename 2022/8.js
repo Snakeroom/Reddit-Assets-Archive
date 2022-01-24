@@ -1,39 +1,154 @@
-// https://www.redditstatic.com/desktop2x/8.6b687213c849f28fd5ea.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/8.b16aee66c826b1672fa5.js
+// Retrieved at 1/24/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[8], {
-		"./src/reddit/helpers/trackers/profileIdCard.ts": function(o, t, r) {
+		"./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/index.ts": function(e, t, r) {
 			"use strict";
-			r.r(t), r.d(t, "clickProfileFollowButton", (function() {
-				return l
-			})), r.d(t, "clickProfileUnfollowButton", (function() {
-				return s
+			r.r(t), r.d(t, "transformGatewayParamsToGQLVariables", (function() {
+				return h
+			})), r.d(t, "normalizeModQueueListingFromGql", (function() {
+				return q
 			}));
-			var n, c = r("./src/reddit/constants/tracking.ts"),
-				e = r("./src/reddit/selectors/telemetry.ts");
-			! function(o) {
-				o.FOLLOW = "follow", o.UNFOLLOW = "unfollow"
-			}(n || (n = {}));
-			const i = (o, t) => ({
-					...Object(e.m)(t),
-					profile: Object(e.j)(t),
-					subreddit: {
-						id: o
+			var o = r("./node_modules/Base64/base64.js"),
+				s = r("./src/lib/constants/index.ts"),
+				n = r("./src/reddit/helpers/isPost.ts"),
+				d = r("./src/reddit/selectors/commentSelector.ts"),
+				i = r("./src/reddit/selectors/platform.ts"),
+				a = r("./src/reddit/selectors/posts.ts"),
+				u = r("./src/redditGQL/types.ts"),
+				c = r("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
+				m = r("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
+				l = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts");
+			const p = {
+					[s.rb.Edited]: u.k.Edited,
+					[s.rb.Modqueue]: u.k.Mod,
+					[s.rb.Reports]: u.k.Reported,
+					[s.rb.Spam]: u.k.Removed,
+					[s.rb.Unmoderated]: u.k.Unmoderated
+				},
+				f = {
+					comments: u.j.Comment,
+					links: u.j.Post
+				};
+
+			function h({
+				getState: e,
+				queueType: t,
+				options: r
+			}) {
+				const s = e(),
+					u = Object(i.c)(s);
+				let c, m;
+				return r.only && (c = f[r.only]), r.after && (m = function(e, t) {
+					const r = Object(n.a)(t) ? Object(a.H)(e, {
+						postId: t
+					}) : Object(d.b)(e, {
+						commentId: t
+					});
+					if (r) return Object(o.btoa)(`${r.id}|${r.created}`)
+				}(s, r.after)), {
+					queueType: p[t],
+					...!!c && {
+						itemTypes: c
+					},
+					...!!u && {
+						subredditIds: [u]
+					},
+					...!!m && {
+						after: m
 					}
-				}),
-				l = o => t => ({
-					...i(o, t),
-					source: "profile",
-					action: c.c.CLICK,
-					noun: n.FOLLOW
-				}),
-				s = o => t => ({
-					...i(o, t),
-					source: "profile",
-					action: c.c.CLICK,
-					noun: n.UNFOLLOW
-				})
+				}
+			}
+			var b;
+
+			function q({
+				modQueueItems: e
+			}) {
+				const t = {
+					posts: {},
+					comments: {},
+					reports: {},
+					modqueue: [],
+					authorFlair: {}
+				};
+				return e && e.edges ? (e.edges.forEach(e => {
+					var r, o;
+					if (!e) return;
+					const {
+						node: s
+					} = e;
+					if (!s) return;
+					const {
+						__typename: n,
+						subredditInfo: d
+					} = s;
+					if (!d) return;
+					const {
+						id: i
+					} = d;
+					if (n === b.Comment) {
+						const {
+							commentInfo: e
+						} = s;
+						if (!e) return;
+						const o = Object(c.a)(e);
+						t.comments[o.id] = o, t.modqueue.push(o.id);
+						const {
+							authorInfo: n,
+							authorFlair: d
+						} = e, a = d ? null === (r = Object(m.a)(d)) || void 0 === r ? void 0 : r[0] : null;
+						t.authorFlair[i] = {
+							...t.authorFlair[i],
+							[n.name]: a
+						};
+						const u = [];
+						o.modReports.forEach(e => {
+							u.push({
+								type: "moderator",
+								reason: e[0],
+								reporter: e[1]
+							})
+						}), o.userReports.forEach(e => {
+							u.push({
+								type: "user",
+								reason: e[0]
+							})
+						}), t.reports[o.id] = u
+					}
+					if (n === b.Post) {
+						const {
+							postInfo: e
+						} = s;
+						if (!e) return;
+						const r = Object(l.f)(e);
+						t.posts[r.id] = r, t.modqueue.push(r.id);
+						const {
+							authorInfo: n,
+							authorFlair: d
+						} = e, a = d ? null === (o = Object(m.a)(d)) || void 0 === o ? void 0 : o[0] : null;
+						t.authorFlair[i] = {
+							...t.authorFlair[i],
+							[n.name]: a
+						};
+						const u = [];
+						r.modReports.forEach(e => {
+							u.push({
+								type: "moderator",
+								reason: e[0],
+								reporter: e[1]
+							})
+						}), r.userReports.forEach(e => {
+							u.push({
+								type: "user",
+								reason: e[0]
+							})
+						}), t.reports[r.id] = u
+					}
+				}), t) : t
+			}! function(e) {
+				e.Comment = "ModQueueItemComment", e.Post = "ModQueueItemPost"
+			}(b || (b = {}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/8.6b687213c849f28fd5ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/8.b16aee66c826b1672fa5.js.map

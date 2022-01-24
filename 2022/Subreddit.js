@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.5303320cf813a19063f1.js
-// Retrieved at 1/24/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.eec129baf60ccce78c32.js
+// Retrieved at 1/24/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -13364,7 +13364,7 @@
 			e.exports = JSON.parse('{"id":"d03522f8a8d4"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"07269d01f4b6"}')
+			e.exports = JSON.parse('{"id":"f43ec62fb0ed"}')
 		},
 		"./src/redditGQL/operations/UpdateInboxActivitySeenState.json": function(e) {
 			e.exports = JSON.parse('{"id":"85d656894a08"}')
@@ -13377,4 +13377,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.5303320cf813a19063f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.eec129baf60ccce78c32.js.map
