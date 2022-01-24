@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.bd33a1c9736f17d1eaf5.js
-// Retrieved at 1/24/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.90bce465a6f2865a0ca6.js
+// Retrieved at 1/24/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -4724,6 +4724,8 @@
 				input: "_161WTqM53-R3b5XBxClmEs",
 				CheckBoxWrapper: "_2q3hqWI11yqJyNydIAsXyv",
 				checkBoxWrapper: "_2q3hqWI11yqJyNydIAsXyv",
+				Deactivate: "etxcMtHSsMVcZTjNPWp5n",
+				deactivate: "etxcMtHSsMVcZTjNPWp5n",
 				UL: "HulKM8oqJogE46P-pLJi7",
 				ul: "HulKM8oqJogE46P-pLJi7"
 			}
@@ -4831,6 +4833,7 @@
 							}),
 							type: "password"
 						}), o.a.createElement(k, null, o.a.createElement(c.a, {
+							className: u.a.Deactivate,
 							isCheckboxSelected: this.state.checkbox,
 							toggleCheckbox: () => this.updateField("checkbox")(!this.state.checkbox)
 						}), o.a.createElement("label", null, s.fbt._("I understand that deactivated accounts are not recoverable", null, {
@@ -12879,4 +12882,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.bd33a1c9736f17d1eaf5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.90bce465a6f2865a0ca6.js.map

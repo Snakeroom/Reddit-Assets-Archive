@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.d57ccd24ee0d016b3bc7.js
-// Retrieved at 1/24/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c39c3fb1b75d047b9388.js
+// Retrieved at 1/24/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) d = r[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
@@ -683,7 +683,7 @@
 					EconTopAwardersModal: "929ac69619a35bde3fc0",
 					EditCommunityDescriptionModal: "bcf453272695c7541820",
 					EmailCollectionBanner: "75d3c7ec0a566b5e6671",
-					EmailVerificationModals: "b58095d93545a8377f71",
+					EmailVerificationModals: "215299919d0582021235",
 					FeaturedLiveEntrypointLegacyAnnouncement: "f09237998f935dd354b1",
 					"FramedGild~GildModal": "0f2966a947782296199a",
 					FramedGild: "0bfa153efd0be632f961",
@@ -790,7 +790,7 @@
 					PostCreation: "5565fd45d26e66fd3b49",
 					"vendors~ModStatsChart~Settings~ViewsTooltip": "31d6cfe0d16ae931b73c",
 					"vendors~Settings": "31d6cfe0d16ae931b73c",
-					Settings: "ce3ef574d803d35a467e",
+					Settings: "4cbd68b7da0eb6401514",
 					"vendors~ExportTheme~ImportTheme": "31d6cfe0d16ae931b73c",
 					ExportTheme: "31d6cfe0d16ae931b73c",
 					ImportTheme: "31d6cfe0d16ae931b73c",
@@ -1350,7 +1350,7 @@
 						EconTopAwardersModal: "ec47b877b428982d7a5a",
 						EditCommunityDescriptionModal: "05f94447c97e9acb416a",
 						EmailCollectionBanner: "4597a1ffef5dbf3f143f",
-						EmailVerificationModals: "ca0f67de5101990224b9",
+						EmailVerificationModals: "2a869ea93a6eb06da63d",
 						FeaturedLiveEntrypointLegacyAnnouncement: "70e4feb351bd79794a27",
 						"FramedGild~GildModal": "2fa5c8280a4488457969",
 						FramedGild: "4ba52b5e78d37f176c69",
@@ -1457,7 +1457,7 @@
 						PostCreation: "554170822da1d04af302",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "71f28c4c637cd926b6dd",
-						Settings: "bd33a1c9736f17d1eaf5",
+						Settings: "90bce465a6f2865a0ca6",
 						"vendors~ExportTheme~ImportTheme": "a6c2f56e10a7d38da279",
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
@@ -1663,4 +1663,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d57ccd24ee0d016b3bc7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c39c3fb1b75d047b9388.js.map
