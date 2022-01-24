@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.554170822da1d04af302.js
-// Retrieved at 1/24/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.71edb8642ecb9f034b8d.js
+// Retrieved at 1/24/2022, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -10080,25 +10080,22 @@
 					}
 				}),
 				h = 8,
-				b = 20,
-				f = 3,
-				g = e => {
+				b = 3,
+				f = e => {
 					const {
 						iconsKey: t,
 						memberIconClassName: n,
-						numVisibleIcons: o = f,
+						numVisibleIcons: o = b,
 						presenceDotOutlineClassName: a,
 						shouldShowPresenceDot: u,
-						shouldUseColoredSilhouetteIcons: g,
-						numIconsToDrawFrom: E = (g ? h : b),
-						wrapperClassName: C
-					} = e, x = Object(s.useRef)([]);
+						wrapperClassName: f
+					} = e, g = Object(s.useRef)([]);
 					return Object(d.a)(() => {
-						const e = Object(l.a)(t, E, g);
-						x.current = c()(e, o)
+						const e = Object(l.a)(t, h, !0);
+						g.current = c()(e, o)
 					}), r.a.createElement("div", {
-						className: Object(i.a)(m.a.membersIcons, C)
-					}, x.current.map(({
+						className: Object(i.a)(m.a.membersIcons, f)
+					}, g.current.map(({
 						color: e,
 						image: t
 					}, s) => {
@@ -10124,7 +10121,7 @@
 						})
 					}))
 				};
-			t.a = g
+			t.a = f
 		},
 		"./src/reddit/components/RandomBaseUserIcons/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -10242,7 +10239,6 @@
 					memberIconClassName: b.a.offsetMemberIcon,
 					iconsKey: s,
 					numVisibleIcons: 2,
-					shouldUseColoredSilhouetteIcons: !0,
 					wrapperClassName: b.a.offsetMembersIconsWrapper
 				})))
 			}
@@ -18256,7 +18252,6 @@
 					iconsKey: b,
 					memberIconClassName: f.a.offsetMemberIcon,
 					numVisibleIcons: l,
-					shouldUseColoredSilhouetteIcons: !0,
 					wrapperClassName: f.a.offsetMembersIcons
 				}), r.a.createElement("div", {
 					className: f.a.numUsersTyping
@@ -31867,4 +31862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.554170822da1d04af302.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.71edb8642ecb9f034b8d.js.map

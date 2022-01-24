@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.eec129baf60ccce78c32.js
-// Retrieved at 1/24/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.8a6ce1a449bfa09c7eb4.js
+// Retrieved at 1/24/2022, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -6283,7 +6283,8 @@
 				joinOptimizationsM2: "_3Osc6MFU-m49imecphhHPb",
 				caption: "_2TsfnDXso674GKQKeaYyJz",
 				wrapperExp: "_1rsB1M-j-PhnVlJxrOyQWm",
-				presenceDotOutline: "_1D4pwRVtd_KZqOBUCssgmm"
+				memberIcon: "DnG050aRzI2YZFy5DI13M",
+				presenceDotOutlineClass: "_1UJxCy40wXDQVKcZcKkJy7"
 			}
 		},
 		"./src/reddit/components/NewPostPill/index.tsx": function(e, t, n) {
@@ -6313,8 +6314,9 @@
 					onClick: t
 				}, r.a.createElement(i.a, {
 					iconsKey: n,
-					presenceDotOutlineClassName: u.a.presenceDotOutline,
-					shouldShowPresenceDot: !0
+					shouldShowPresenceDot: !0,
+					memberIconClassName: u.a.memberIcon,
+					presenceDotOutlineClassName: u.a.presenceDotOutlineClass
 				}), r.a.createElement("label", {
 					className: u.a.caption
 				}, m._("New Posts", null, {
@@ -6600,25 +6602,22 @@
 					}
 				}),
 				b = 8,
-				h = 20,
-				f = 3,
-				g = e => {
+				h = 3,
+				f = e => {
 					const {
 						iconsKey: t,
 						memberIconClassName: n,
-						numVisibleIcons: s = f,
+						numVisibleIcons: s = h,
 						presenceDotOutlineClassName: i,
 						shouldShowPresenceDot: u,
-						shouldUseColoredSilhouetteIcons: g,
-						numIconsToDrawFrom: x = (g ? b : h),
-						wrapperClassName: _
-					} = e, E = Object(r.useRef)([]);
+						wrapperClassName: f
+					} = e, g = Object(r.useRef)([]);
 					return Object(l.a)(() => {
-						const e = Object(d.a)(t, x, g);
-						E.current = c()(e, s)
+						const e = Object(d.a)(t, b, !0);
+						g.current = c()(e, s)
 					}), a.a.createElement("div", {
-						className: Object(o.a)(m.a.membersIcons, _)
-					}, E.current.map(({
+						className: Object(o.a)(m.a.membersIcons, f)
+					}, g.current.map(({
 						color: e,
 						image: t
 					}, r) => {
@@ -6644,7 +6643,7 @@
 						})
 					}))
 				};
-			t.a = g
+			t.a = f
 		},
 		"./src/reddit/components/RandomBaseUserIcons/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -13377,4 +13376,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.eec129baf60ccce78c32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.8a6ce1a449bfa09c7eb4.js.map
