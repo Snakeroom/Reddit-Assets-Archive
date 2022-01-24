@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.056bb068a1ad08933d57.js
-// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.f3117086713e353835a0.js
+// Retrieved at 1/24/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -40,8 +40,8 @@
 				O = n("./src/reddit/selectors/telemetry.ts"),
 				U = n("./src/reddit/selectors/user.ts"),
 				N = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
-				j = n.n(N);
-			const C = l.a.wrapped(b.a, "CurrentUserIcon", j.a);
+				C = n.n(N);
+			const j = l.a.wrapped(b.a, "CurrentUserIcon", C.a);
 			var P;
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
@@ -130,17 +130,17 @@
 					},
 					U = t && n,
 					N = e ? o.a.createElement(x.a, {
-						className: j.a.UserIconWrapper,
+						className: C.a.UserIconWrapper,
 						to: e.url
-					}, o.a.createElement(C, {
-						className: j.a.UserIcon,
+					}, o.a.createElement(j, {
+						className: C.a.UserIcon,
 						shouldShowPresenceIndicator: U
 					})) : null;
 				return o.a.createElement("div", {
-					className: j.a.Container
+					className: C.a.Container
 				}, N, o.a.createElement("input", {
 					name: "createPost",
-					className: j.a.Input,
+					className: C.a.Input,
 					onChange: E,
 					onClick: E,
 					onKeyPress: E,
@@ -149,7 +149,7 @@
 					}),
 					type: "text"
 				}), b.media && o.a.createElement(I.t, {
-					className: j.a.Button,
+					className: C.a.Button,
 					"aria-label": g(),
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
@@ -166,7 +166,7 @@
 					tooltipId: P.Media,
 					text: g()
 				})), b.link && o.a.createElement(I.t, {
-					className: j.a.Button,
+					className: C.a.Button,
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
@@ -255,30 +255,30 @@
 			const c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.je
-					}) === r.Wc
+						experimentName: r.ie
+					}) === r.Vc
 				},
 				i = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ie
-					}) === r.Wc
+						experimentName: r.he
+					}) === r.Vc
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Zd
-					}) === r.Wc
+						experimentName: r.Yd
+					}) === r.Vc
 				},
 				d = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Yd
-					}) === r.Wc
+						experimentName: r.Xd
+					}) === r.Vc
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.056bb068a1ad08933d57.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.f3117086713e353835a0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.5ef04098d95dde36962a.js
-// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.1cf5ab1b9cef143c610e.js
+// Retrieved at 1/24/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -2706,32 +2706,32 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const c = Object(s.a)(n.Mc),
-				o = Object(s.a)(n.Oc),
-				i = Object(s.a)(n.Hc),
-				a = (Object(s.a)(n.Ic), Object(s.a)(n.Gc)),
-				d = Object(s.a)(n.Kc),
-				u = Object(s.a)(n.Lc),
-				l = Object(s.a)(n.Rc),
-				b = Object(s.a)(n.Pc),
-				m = Object(s.a)(n.Qc),
-				f = Object(s.a)(n.Jc),
-				p = Object(s.a)(n.Cc),
-				O = Object(s.a)(n.Ac),
-				h = Object(s.a)(n.wc),
-				I = Object(s.a)(n.tc),
-				j = Object(s.a)(n.pc),
-				g = Object(s.a)(n.rc),
-				S = Object(s.a)(n.sc),
-				v = Object(s.a)(n.vc),
-				_ = Object(s.a)(n.qc),
-				E = Object(s.a)(n.Dc),
-				x = Object(s.a)(n.Ec),
-				y = Object(s.a)(n.Fc),
-				T = Object(s.a)(n.mc),
-				N = Object(s.a)(n.Uc),
-				C = Object(s.a)(n.Nc),
-				k = Object(s.a)(n.Sc)
+			const c = Object(s.a)(n.Lc),
+				o = Object(s.a)(n.Nc),
+				i = Object(s.a)(n.Gc),
+				a = (Object(s.a)(n.Hc), Object(s.a)(n.Fc)),
+				d = Object(s.a)(n.Jc),
+				u = Object(s.a)(n.Kc),
+				l = Object(s.a)(n.Qc),
+				b = Object(s.a)(n.Oc),
+				m = Object(s.a)(n.Pc),
+				f = Object(s.a)(n.Ic),
+				p = Object(s.a)(n.Bc),
+				O = Object(s.a)(n.zc),
+				h = Object(s.a)(n.vc),
+				I = Object(s.a)(n.sc),
+				j = Object(s.a)(n.oc),
+				g = Object(s.a)(n.qc),
+				S = Object(s.a)(n.rc),
+				v = Object(s.a)(n.uc),
+				_ = Object(s.a)(n.pc),
+				E = Object(s.a)(n.Cc),
+				x = Object(s.a)(n.Dc),
+				y = Object(s.a)(n.Ec),
+				T = Object(s.a)(n.lc),
+				N = Object(s.a)(n.Tc),
+				C = Object(s.a)(n.Mc),
+				k = Object(s.a)(n.Rc)
 		},
 		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, r) {
 			"use strict";
@@ -2745,7 +2745,7 @@
 					experimentEligibilitySelector: s.a,
 					experimentName: e
 				});
-				return !(!r || Object(n.nf)(r))
+				return !(!r || Object(n.mf)(r))
 			}
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, r) {
@@ -2787,7 +2787,7 @@
 					return n ? n * s.Rb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(n.a)(e => Object(i.c)(e, {
-					experimentName: c.Od,
+					experimentName: c.Nd,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -2805,4 +2805,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.5ef04098d95dde36962a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.1cf5ab1b9cef143c610e.js.map

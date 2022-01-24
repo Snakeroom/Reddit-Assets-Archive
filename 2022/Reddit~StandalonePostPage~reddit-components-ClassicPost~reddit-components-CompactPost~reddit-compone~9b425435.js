@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.a5a0fa9237ea8e4a69e3.js
-// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.976e80bebb11dee41633.js
+// Retrieved at 1/24/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, s) {
@@ -157,13 +157,13 @@
 						})
 					}, []);
 				Object(i.a)(k, L);
-				const [B, V] = Object(n.useState)(!1), W = Object(n.useCallback)(e => {
+				const [V, B] = Object(n.useState)(!1), W = Object(n.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: s
 						} = e, n = 1 !== s;
-						t ? V(!0) : n && V(!1)
+						t ? B(!0) : n && B(!1)
 					})
 				}, []), U = Object(n.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
@@ -220,7 +220,7 @@
 					role: "screen-reader"
 				}, [...T].reverse().join(""))), o.a.createElement("span", {
 					ref: k
-				}), B && o.a.createElement(c.a, {
+				}), V && o.a.createElement(c.a, {
 					variables: h,
 					onData: b ? m : v,
 					queryKey: x,
@@ -2278,7 +2278,7 @@
 						postId: t
 					}) || Object(c.G)(e))(e, t),
 					experimentName: n.Q
-				}) === n.Wc
+				}) === n.Vc
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -2291,13 +2291,13 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				c = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.ke,
+					experimentName: o.je,
 					experimentEligibilitySelector: r.a
 				}),
-				a = (e, t) => t === o.se.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				a = (e, t) => t === o.re.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(c.H, i, (e, t) => a(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.a5a0fa9237ea8e4a69e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.976e80bebb11dee41633.js.map

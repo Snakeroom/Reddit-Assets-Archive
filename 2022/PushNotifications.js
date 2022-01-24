@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.03db23566dfcac665a8b.js
-// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.83944405a0c25ae9c074.js
+// Retrieved at 1/24/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -63,7 +63,7 @@
 			i.r(t), i.d(t, "initializeServiceWorkerChannel", (function() {
 				return S
 			})), i.d(t, "requestNotificationsPermissions", (function() {
-				return F
+				return N
 			})), i.d(t, "subscribeForPNs", (function() {
 				return x
 			})), i.d(t, "unsubscribeFromPNs", (function() {
@@ -103,7 +103,7 @@
 				navigator.serviceWorker.addEventListener("message", n => {
 					const s = n.data,
 						o = s.command || s.type;
-					if ("registerWithServiceWorker" === o) N(e);
+					if ("registerWithServiceWorker" === o) F(e);
 					else if (o === h.a && i) {
 						const e = r()(s, ["command"]);
 						t(Object(p.f)(e))
@@ -111,19 +111,19 @@
 						const e = Object(m.a)(s.data.href);
 						e && e.pathname && t(Object(l.c)(e.pathname))
 					}
-				}), N(e)
-			}, N = e => {
+				}), F(e)
+			}, F = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
 					v2EventBoilerPlate: O.c(e)
 				})
-			}, F = (e, t, i = (() => {})) => async (n, s, r) => {
+			}, N = (e, t, i = (() => {})) => async (n, s, r) => {
 				const c = s(),
 					u = Object(_.f)(c),
 					l = (e => Object(k.c)(e, {
-						experimentName: j.Gb,
+						experimentName: j.Fb,
 						experimentEligibilitySelector: k.a
-					}) === j.Wc)(c);
+					}) === j.Vc)(c);
 				if (await Object(o.a)() || u) return;
 				await S(c, n);
 				O.j(c), await Object(a.b)(e, t, () => {
@@ -175,7 +175,7 @@
 				if (Object(f.a)(n) === d.c.NotificationsSupported) switch (Object(a.a)()) {
 					case d.a.Default:
 					case d.a.Closed:
-						await t(F(!0, !0));
+						await t(N(!0, !0));
 						break;
 					case d.a.Denied:
 						t(Object(b.h)(e))
@@ -336,4 +336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.03db23566dfcac665a8b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.83944405a0c25ae9c074.js.map
