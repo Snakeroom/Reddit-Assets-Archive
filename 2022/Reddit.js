@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ab9336f3ca2fd47da7a5.js
-// Retrieved at 1/25/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d2ac05b6a38dcde66a88.js
+// Retrieved at 1/25/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -7616,12 +7616,6 @@
 					hk: "SmUA3"
 				}),
 				url: "https://reddit.onelink.me/MRHZ/4c212f61"
-			}, {
-				noun: "gifts",
-				title: () => r.fbt._("Reddit Gifts", null, {
-					hk: "3FWQGX"
-				}),
-				url: "https://www.redditgifts.com"
 			}, {
 				noun: "rereddit",
 				title: () => r.fbt._("Rereddit", null, {
@@ -15969,10 +15963,6 @@
 				href: "https://www.reddit.com/premium"
 			}, g._("Reddit premium", null, {
 				hk: "RuO3A"
-			})), r.a.createElement(C, {
-				href: "https://redditgifts.com/"
-			}, g._("Reddit gifts", null, {
-				hk: "2XziRN"
 			})), e.isFrontpage && r.a.createElement(r.a.Fragment, null, r.a.createElement(C, {
 				href: "https://www.reddit.com/subreddits/a-1/"
 			}, g._("Communities", null, {
@@ -24760,4 +24750,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ab9336f3ca2fd47da7a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d2ac05b6a38dcde66a88.js.map

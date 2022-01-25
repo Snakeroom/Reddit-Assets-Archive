@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.e728f79c6e67457e0e4a.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.e2f0fdc768dcdf4515ad.js
+// Retrieved at 1/25/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -17577,10 +17577,6 @@
 				href: "https://www.reddit.com/premium"
 			}, g._("Reddit premium", null, {
 				hk: "RuO3A"
-			})), s.a.createElement(E, {
-				href: "https://redditgifts.com/"
-			}, g._("Reddit gifts", null, {
-				hk: "2XziRN"
 			})), e.isFrontpage && s.a.createElement(s.a.Fragment, null, s.a.createElement(E, {
 				href: "https://www.reddit.com/subreddits/a-1/"
 			}, g._("Communities", null, {
@@ -31869,4 +31865,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e728f79c6e67457e0e4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e2f0fdc768dcdf4515ad.js.map

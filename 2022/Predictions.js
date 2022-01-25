@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.4b3be670451aa3ec0502.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.225429dd010715ac3468.js
+// Retrieved at 1/25/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, a, t) {
@@ -303,13 +303,6 @@
 				href: "https://www.reddit.com/premium"
 			}, i._("reddit premium", null, {
 				hk: "3vPbLO"
-			}))), r.a.createElement("li", {
-				className: s.a.linkItem
-			}, r.a.createElement("a", {
-				className: s.a.link,
-				href: "https://redditgifts.com/"
-			}, i._("reddit gifts", null, {
-				hk: "3WNNEy"
 			}))))), r.a.createElement("div", {
 				className: Object(o.a)(s.a.linkCol, s.a.linkBoldCol)
 			}, r.a.createElement("ul", {
@@ -522,7 +515,7 @@
 			t.d(a, "b", (function() {
 				return b
 			})), t.d(a, "a", (function() {
-				return w
+				return _
 			}));
 			var n = t("./src/config.ts"),
 				r = t("./node_modules/react/index.js"),
@@ -611,7 +604,7 @@
 					className: p.a.faqSection
 				}, l.a.createElement("div", {
 					className: Object(o.a)(p.a.faqSectionContent, p.a.contentWrapper)
-				}, l.a.createElement(k, null), l.a.createElement(f, null), l.a.createElement(_, null), l.a.createElement("h2", {
+				}, l.a.createElement(k, null), l.a.createElement(f, null), l.a.createElement(w, null), l.a.createElement("h2", {
 					className: p.a.faqHeading
 				}, h._("Questions about Powerups", null, {
 					hk: "nzxYw"
@@ -677,7 +670,7 @@
 				className: p.a.circleFaqOrange
 			}), l.a.createElement("div", {
 				className: p.a.circleFaqYellowHollow
-			})), _ = () => l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
+			})), w = () => l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
 				className: Object(o.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkTopLeft)
 			}), l.a.createElement("div", {
 				className: Object(o.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkTopRight)
@@ -685,11 +678,11 @@
 				className: Object(o.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkLeft)
 			}), l.a.createElement("div", {
 				className: Object(o.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkBottomRight)
-			})), w = ({
+			})), _ = ({
 				hideBolt: e
 			}) => l.a.createElement(l.a.Fragment, null, l.a.createElement(k, {
 				hideBolt: e
-			}), l.a.createElement(f, null), l.a.createElement(_, null)), y = () => {
+			}), l.a.createElement(f, null), l.a.createElement(w, null)), y = () => {
 				const e = Object(s.e)(d.W);
 				return l.a.createElement("div", {
 					className: p.a.ctaButtonCirclesAndBolt
@@ -826,7 +819,7 @@
 					}) : b._("Come together to unlock special perks and advanced features.", null, {
 						hk: "1WTTiK"
 					}),
-					_ = t ? s.a.createElement(c.k, {
+					w = t ? s.a.createElement(c.k, {
 						onClick: e,
 						priority: c.c.Primary,
 						className: g.a.ctaButton
@@ -874,7 +867,7 @@
 					hk: "2euXqd"
 				})))], {
 					hk: "2FL5at"
-				})), _), s.a.createElement("div", {
+				})), w), s.a.createElement("div", {
 					className: g.a.headingArt
 				}, s.a.createElement("div", {
 					className: g.a.powerupsMarketingImageContainer
@@ -1063,8 +1056,8 @@
 					}), a
 				}, []) : null
 			};
-			var _ = t("./src/lib/constants/index.ts"),
-				w = t("./src/reddit/controls/Button/index.tsx");
+			var w = t("./src/lib/constants/index.ts"),
+				_ = t("./src/reddit/controls/Button/index.tsx");
 			const {
 				fbt: y
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
@@ -1084,7 +1077,7 @@
 								noun: "close"
 							}))()), n()
 						};
-						return l.a.createElement(w.k, {
+						return l.a.createElement(_.k, {
 							onClick: e,
 							isFullWidth: !0
 						}, y._("Close", null, {
@@ -1092,8 +1085,8 @@
 						}))
 					}
 					return l.a.createElement("a", {
-						href: `${a}submit?type=${_.xb}`
-					}, l.a.createElement(w.k, {
+						href: `${a}submit?type=${w.xb}`
+					}, l.a.createElement(_.k, {
 						onClick: () => {
 							const e = t.find(({
 								subredditUrl: e
@@ -1151,7 +1144,7 @@
 					backgroundImage: `url(${n.a.assetPath}/img/powerups/dotcircle.png)`
 				}
 			}), e);
-			var I = ({
+			var P = ({
 				children: e,
 				onClose: a
 			}) => l.a.createElement("div", {
@@ -1166,21 +1159,21 @@
 				className: O.a.headerImage,
 				alt: "Predictor Snoos",
 				src: `${n.a.assetPath}/img/econ/predictions/predictor_snoos.png`
-			}))), l.a.createElement(w.t, {
+			}))), l.a.createElement(_.t, {
 				"aria-label": N.fbt._("Close", null, {
 					hk: "26np07"
 				}),
 				className: O.a.closeButton,
 				Icon: Object(v.b)("close"),
 				onClick: a,
-				priority: w.c.Plain
+				priority: _.c.Plain
 			}), l.a.createElement("div", {
 				className: O.a.body
 			}, e));
 			const {
-				fbt: P
+				fbt: x
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
-			var x = Object(c.a)(({
+			var I = Object(c.a)(({
 					onClose: e
 				}) => {
 					var a;
@@ -1196,14 +1189,14 @@
 						}))())
 					}, [t]);
 					const c = Boolean(null == n ? void 0 : n.length),
-						m = c ? P._("Start a Tournament", null, {
+						m = c ? x._("Start a Tournament", null, {
 							hk: "329F3U"
-						}) : P._("Only moderators of communities that have at least {Minimum subscribers required to enable Prediction} members can turn on predictions.", [P._param("Minimum subscribers required to enable Prediction", l.a.createElement(u, {
+						}) : x._("Only moderators of communities that have at least {Minimum subscribers required to enable Prediction} members can turn on predictions.", [x._param("Minimum subscribers required to enable Prediction", l.a.createElement(u, {
 							num: 1e4
 						}))], {
 							hk: "3VaFr8"
 						});
-					return l.a.createElement(I, {
+					return l.a.createElement(P, {
 						onClose: e
 					}, l.a.createElement("div", {
 						className: O.a.titleContainer
@@ -1211,7 +1204,7 @@
 						className: O.a.titleText
 					}, m), c && l.a.createElement("h2", {
 						className: O.a.subtitleText
-					}, P._("Choose the community where you’d like to create a prediction tournament", null, {
+					}, x._("Choose the community where you’d like to create a prediction tournament", null, {
 						hk: "2Ui7Zf"
 					}))), c && l.a.createElement("div", {
 						className: O.a.radioContainer
@@ -1234,7 +1227,7 @@
 						}, t)
 					}))), !c && l.a.createElement("h3", {
 						className: O.a.disclaimer
-					}, P._("Predictions creation is only available on Web and iOS at this time.", null, {
+					}, x._("Predictions creation is only available on Web and iOS at this time.", null, {
 						hk: "J1xBl"
 					})), l.a.createElement(E, {
 						isEligibleMod: c,
@@ -1394,9 +1387,9 @@
 						className: G.a.faqMoreQuestionsHeading
 					}, N.fbt._("Have more questions? We've got answers.", null, {
 						hk: "3Entyj"
-					})), l.a.createElement(w.t, {
+					})), l.a.createElement(_.t, {
 						className: G.a.fullFaqsButton,
-						priority: w.c.Secondary,
+						priority: _.c.Secondary,
 						href: "https://mods.reddithelp.com/hc/en-us/articles/4409834282509",
 						onClick: () => {
 							e((() => e => ({
@@ -1406,7 +1399,7 @@
 								noun: "view_full_faqs"
 							}))())
 						},
-						kind: w.b.ExternalLink,
+						kind: _.b.ExternalLink,
 						target: "_blank"
 					}, N.fbt._("View Full FAQs", null, {
 						hk: "1eOLlL"
@@ -1530,7 +1523,7 @@
 					hk: "4tXdPf"
 				})))], {
 					hk: "kXZNE"
-				})), l.a.createElement(w.k, {
+				})), l.a.createElement(_.k, {
 					onClick: () => {
 						e((() => e => ({
 							...Object(g.m)(e),
@@ -1539,7 +1532,7 @@
 							noun: "start_predictions_modal"
 						}))()), m()
 					},
-					priority: w.c.Primary,
+					priority: _.c.Primary,
 					className: ee.a.ctaButton
 				}, ae._("Turn on Predictions", null, {
 					hk: "2zU4Cm"
@@ -1618,7 +1611,7 @@
 					className: ee.a.tryOutSubheading
 				}, ae._("Create a tournament and get your community predicting!", null, {
 					hk: "utApr"
-				})), l.a.createElement(w.k, {
+				})), l.a.createElement(_.k, {
 					onClick: () => {
 						e((() => e => ({
 							...Object(g.m)(e),
@@ -1627,13 +1620,13 @@
 							noun: "lets_do_this"
 						}))()), m()
 					},
-					priority: w.c.Primary,
+					priority: _.c.Primary,
 					className: ee.a.ctaLetsDoThisButton
 				}, ae._("Let's Do This!", null, {
 					hk: "2rvUWV"
 				})), l.a.createElement(te, null)), l.a.createElement(i.a, {
 					className: ee.a.footer
-				}), t && l.a.createElement(x, {
+				}), t && l.a.createElement(I, {
 					withOverlay: !0,
 					onOverlayClick: d,
 					onClose: d,
@@ -1665,4 +1658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.4b3be670451aa3ec0502.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.225429dd010715ac3468.js.map

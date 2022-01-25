@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.92b5f50d56c9656161d6.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.3e9dfce58671bb5089f5.js
+// Retrieved at 1/25/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1501,13 +1501,6 @@
 				href: "https://www.reddit.com/premium"
 			}, i._("reddit premium", null, {
 				hk: "3vPbLO"
-			}))), a.a.createElement("li", {
-				className: c.a.linkItem
-			}, a.a.createElement("a", {
-				className: c.a.link,
-				href: "https://redditgifts.com/"
-			}, i._("reddit gifts", null, {
-				hk: "3WNNEy"
 			}))))), a.a.createElement("div", {
 				className: Object(s.a)(c.a.linkCol, c.a.linkBoldCol)
 			}, a.a.createElement("ul", {
@@ -2674,4 +2667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.92b5f50d56c9656161d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.3e9dfce58671bb5089f5.js.map

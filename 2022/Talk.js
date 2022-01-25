@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.4b0d7cb998dfbcf86b7b.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.65a18ae269a0ac325a28.js
+// Retrieved at 1/25/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -159,13 +159,6 @@
 				href: "https://www.reddit.com/premium"
 			}, c._("reddit premium", null, {
 				hk: "3vPbLO"
-			}))), n.a.createElement("li", {
-				className: s.a.linkItem
-			}, n.a.createElement("a", {
-				className: s.a.link,
-				href: "https://redditgifts.com/"
-			}, c._("reddit gifts", null, {
-				hk: "3WNNEy"
 			}))))), n.a.createElement("div", {
 				className: Object(r.a)(s.a.linkCol, s.a.linkBoldCol)
 			}, n.a.createElement("ul", {
@@ -359,7 +352,7 @@
 				_ = t("./src/reddit/selectors/user.ts"),
 				E = t("./src/reddit/pages/Talk/CommunitiesWithTalk.m.less"),
 				f = t.n(E);
-			const N = [{
+			const b = [{
 					key: "relationships",
 					title: g.fbt._("Identity & Relationships", null, {
 						hk: "4AIB1A"
@@ -410,7 +403,7 @@
 						hk: "3qhrGI"
 					})
 				}],
-				b = g.fbt._("Powerups Bolt", null, {
+				N = g.fbt._("Powerups Bolt", null, {
 					hk: "1GoCTw"
 				}),
 				y = ({
@@ -446,7 +439,7 @@
 					}, i.a.createElement("div", {
 						className: f.a.communitiesContentWrapper
 					}, i.a.createElement("img", {
-						alt: b,
+						alt: N,
 						className: f.a.communitiesSectionBoltImage,
 						src: `${l.a.assetPath}/img/talk/communities-hosting.svg`
 					}), i.a.createElement("h2", {
@@ -455,7 +448,7 @@
 						hk: "2eOJeR"
 					})), i.a.createElement("div", {
 						className: Object(s.a)(f.a.communitiesSectionGrid, f.a.contentWrapper)
-					}, N.map(({
+					}, b.map(({
 						key: e,
 						title: a,
 						subreddits: t,
@@ -751,4 +744,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.4b0d7cb998dfbcf86b7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.65a18ae269a0ac325a28.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.65205280e5cb9cbe0c08.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.1c7821bef8d5fb1deeba.js
+// Retrieved at 1/25/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1349,13 +1349,6 @@
 				href: "https://www.reddit.com/premium"
 			}, i._("reddit premium", null, {
 				hk: "3vPbLO"
-			}))), a.a.createElement("li", {
-				className: s.a.linkItem
-			}, a.a.createElement("a", {
-				className: s.a.link,
-				href: "https://redditgifts.com/"
-			}, i._("reddit gifts", null, {
-				hk: "3WNNEy"
 			}))))), a.a.createElement("div", {
 				className: Object(o.a)(s.a.linkCol, s.a.linkBoldCol)
 			}, a.a.createElement("ul", {
@@ -2305,4 +2298,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.65205280e5cb9cbe0c08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.1c7821bef8d5fb1deeba.js.map

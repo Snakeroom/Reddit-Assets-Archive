@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.0804e33a3cd43ac252cd.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.3cdbe7d59993391d0edd.js
+// Retrieved at 1/25/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -366,13 +366,6 @@
 				href: "https://www.reddit.com/premium"
 			}, i._("reddit premium", null, {
 				hk: "3vPbLO"
-			}))), s.a.createElement("li", {
-				className: o.a.linkItem
-			}, s.a.createElement("a", {
-				className: o.a.link,
-				href: "https://redditgifts.com/"
-			}, i._("reddit gifts", null, {
-				hk: "3WNNEy"
 			}))))), s.a.createElement("div", {
 				className: Object(l.a)(o.a.linkCol, o.a.linkBoldCol)
 			}, s.a.createElement("ul", {
@@ -2307,4 +2300,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.0804e33a3cd43ac252cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.3cdbe7d59993391d0edd.js.map
