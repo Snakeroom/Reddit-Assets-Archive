@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.09d200a1d5b004d3dd73.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.0ddb454a3443a3f20e77.js
+// Retrieved at 1/24/2022, 7:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/PredictionQuestion/index.m.less": function(e, t, a) {
@@ -287,7 +287,7 @@
 							source: "predictions",
 							action: "click",
 							noun: "predictions_option_change"
-						}))(e))), i || (r(Object(v.s)("CHANGE_PREDICTION")), l((e => t => ({
+						}))(e))), i || (r(Object(v.t)("CHANGE_PREDICTION")), l((e => t => ({
 							...B(t, e),
 							source: "predictions",
 							action: "click",
@@ -483,7 +483,7 @@
 							noun: "premium"
 						}))({
 							postId: l
-						})), void d(Object(v.s)("SNEAK_PEEK"));
+						})), void d(Object(v.t)("SNEAK_PEEK"));
 						m((e => t => ({
 							...B(t, e),
 							source: "predictions",
@@ -1993,4 +1993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.09d200a1d5b004d3dd73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.0ddb454a3443a3f20e77.js.map

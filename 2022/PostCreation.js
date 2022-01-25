@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.71edb8642ecb9f034b8d.js
-// Retrieved at 1/24/2022, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.6a80690b30ba1b6dde57.js
+// Retrieved at 1/24/2022, 7:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -26090,9 +26090,9 @@
 							}
 						}));
 						try {
-							await t(Object(an.g)(b, (null == u ? void 0 : u.name) || "Predictions Tournament", (null == u ? void 0 : u.theme) || "theme_1", (null == u ? void 0 : u.token) || null)), t(Object(a.s)()), t(Object(an.u)()), t(Object(an.l)(h)), t(Object(m.b)(`/r/${h}/predictions/`))
+							await t(Object(an.g)(b, (null == u ? void 0 : u.name) || "Predictions Tournament", (null == u ? void 0 : u.theme) || "theme_1", (null == u ? void 0 : u.token) || null)), t(Object(a.s)()), t(Object(an.v)()), t(Object(an.l)(h)), t(Object(m.b)(`/r/${h}/predictions/`))
 						} catch (e) {
-							t(Object(an.t)()), t(Object(cn.f)({
+							t(Object(an.u)()), t(Object(cn.f)({
 								duration: 5e3,
 								kind: mn.b.Error,
 								text: bn._("Error: Failed to create prediction tournament", null, {
@@ -26164,9 +26164,9 @@
 								}
 							}));
 							try {
-								await n(Object(an.a)(O.tournamentId, x)), n(Object(a.s)()), n(Object(an.u)()), n(Object(an.l)(y.name)), n(Object(m.b)(`/r/${y.name}/predictions/`))
+								await n(Object(an.a)(O.tournamentId, x)), n(Object(a.s)()), n(Object(an.v)()), n(Object(an.l)(y.name)), n(Object(m.b)(`/r/${y.name}/predictions/`))
 							} catch (e) {
-								n(Object(an.t)()), e.message.match(/max limit/) ? n(Object(cn.f)({
+								n(Object(an.u)()), e.message.match(/max limit/) ? n(Object(cn.f)({
 									duration: 1e4,
 									kind: mn.b.Error,
 									text: Cn._("Oops, you’ve reached the limit of predictions in a single Tournament. You can always start a new Tournament after ending the current one.", null, {
@@ -28540,7 +28540,7 @@
 					a = Object(r.e)(e => Object(pn.b)(e, {
 						subredditId: i
 					})) || {
-						id: Nc.k,
+						id: Nc.n,
 						name: "Predictions Tournament"
 					};
 				return Object(tc.a)(o), o ? s.a.createElement("div", {
@@ -31862,4 +31862,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.71edb8642ecb9f034b8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6a80690b30ba1b6dde57.js.map

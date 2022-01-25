@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.ce4b1753fe96439acac9.js
-// Retrieved at 1/18/2022, 1:40:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.ed5aaa969e30891548d7.js
+// Retrieved at 1/24/2022, 7:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/timeUntil/index.ts": function(e, t, n) {
@@ -452,7 +452,7 @@
 										totalStakeAmount: e.totalStakeAmount
 									})), n(!0);
 									try {
-										await l(Object(O.q)({
+										await l(Object(O.r)({
 											coinPackageId: t.id,
 											optionId: u.id,
 											postId: o,
@@ -482,7 +482,7 @@
 							resolve: async () => {
 								if (n(!0), !s) throw new Error("Failed to create prediction, missing selected option");
 								try {
-									await c(Object(O.p)({
+									await c(Object(O.q)({
 										optionId: s,
 										postId: e
 									}))
@@ -1009,4 +1009,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.ce4b1753fe96439acac9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.ed5aaa969e30891548d7.js.map

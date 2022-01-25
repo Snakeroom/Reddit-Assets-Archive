@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.70ed8e2689b41b81656f.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.cb71a5b4feae1a31443b.js
+// Retrieved at 1/24/2022, 7:30:09 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index", "EconHelperActions"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -622,7 +622,7 @@
 								selectedNumberTokens: t.amount
 							}));
 							try {
-								await a(Object(U.r)({
+								await a(Object(U.s)({
 									coinPackageId: t.id,
 									selectedOptionId: _,
 									price: t.amount,
@@ -958,4 +958,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.70ed8e2689b41b81656f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.cb71a5b4feae1a31443b.js.map
