@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/5.d9b5158d78decad65fb1.js
-// Retrieved at 1/24/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/5.a0681a7d4d995e328eaa.js
+// Retrieved at 1/25/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[5], {
 		"./node_modules/deep-diff/index.js": function(e, t, n) {
@@ -384,11 +384,11 @@
 							allDiffs: n,
 							issueCounts: o,
 							totalIssues: r
-						}), s.d("GQL Modqueue Shadowtest Diff")
+						}), e.setExtra("bypassSampling", !0), s.d("GQL Modqueue Shadowtest Diff")
 					})
 				}
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.d9b5158d78decad65fb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.a0681a7d4d995e328eaa.js.map
