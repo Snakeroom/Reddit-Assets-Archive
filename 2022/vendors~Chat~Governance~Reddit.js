@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.a8583ce72d009653a268.js
-// Retrieved at 1/5/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.889a0681f7886e41be61.js
+// Retrieved at 1/25/2022, 4:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -473,126 +473,267 @@
 		"./node_modules/@reddit/reddit-country-url-redirects/dist/esm/index.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return j
+				return X
 			})), n.d(t, "b", (function() {
-				return l
+				return z
 			})), n.d(t, "c", (function() {
-				return b
+				return V
 			})), n.d(t, "d", (function() {
-				return _
+				return $
 			})), n.d(t, "e", (function() {
-				return d
+				return q
 			}));
-			const r = {
-				de: {
+			var r = {
+					"*": "en"
+				},
+				o = {
+					"*": "en"
+				},
+				i = {
+					"*": "en",
+					fr: "fr"
+				},
+				s = {
+					"*": "de"
+				},
+				a = {
+					"*": "fr"
+				},
+				u = {
+					"*": "es"
+				},
+				c = {
+					"*": "pt"
+				},
+				l = {
+					"*": "it"
+				},
+				d = {
+					uk: r,
+					au: o,
+					ca: i,
+					de: s,
+					fr: a,
+					es: u,
+					pt: c,
+					it: l
+				},
+				f = Object.freeze({
+					__proto__: null,
+					uk: r,
+					au: o,
+					ca: i,
+					de: s,
+					fr: a,
+					es: u,
+					pt: c,
+					it: l,
+					default: d
+				}),
+				h = {
+					"*": {
+						popular: "popular",
+						all: "all"
+					}
+				},
+				p = {
+					"*": {
+						popular: "popular",
+						all: "all"
+					}
+				},
+				m = {
+					"*": {
+						popular: "popular",
+						all: "all"
+					}
+				},
+				b = {
+					"*": {
+						popular: "popular",
+						all: "all"
+					},
+					fr: {
+						popular: "populaire",
+						all: "toute"
+					}
+				},
+				_ = {
 					"*": {
 						popular: "beliebt",
 						all: "alle"
 					}
 				},
-				mx: {
+				y = {
+					"*": {
+						popular: "populaire",
+						all: "toute"
+					}
+				},
+				v = {
 					"*": {
 						popular: "popular",
 						all: "todo"
 					}
 				},
-				fr: {
+				g = {
 					"*": {
-						popular: "populaire",
-						all: "toute"
+						popular: "popular",
+						all: "todo"
 					}
 				},
-				ca: {
-					fr: {
+				w = {
+					"*": {
+						popular: "popular",
+						all: "todo"
+					}
+				},
+				j = {
+					"*": {
+						popular: "popolare",
+						all: "tutti"
+					}
+				},
+				E = {
+					"*": {
 						popular: "populaire",
 						all: "toute"
 					},
-					"*": {
-						popular: "popular",
-						all: "all"
+					de: {
+						popular: "beliebt",
+						all: "alle"
 					}
-				}
-			};
-			var o = {
-					"": "en",
-					fr: "fr"
 				},
-				i = {
-					"": "fr",
-					de: "de",
-					it: "it"
+				x = {
+					us: h,
+					uk: p,
+					au: m,
+					ca: b,
+					de: _,
+					fr: y,
+					es: v,
+					mx: g,
+					pt: w,
+					it: j,
+					ch: E
 				},
-				s = {
-					"": "de"
-				},
-				a = {
-					"": "fr"
-				},
-				u = {
-					"": "es"
-				},
-				c = {
-					ca: o,
-					ch: i,
-					de: s,
-					fr: a,
-					mx: u
-				};
-			const l = Object.freeze({
+				S = Object.freeze({
 					__proto__: null,
-					default: {}
-				}),
-				d = Object.freeze({
-					__proto__: null,
-					ca: o,
-					ch: i,
-					de: s,
-					fr: a,
-					mx: u,
-					default: c
+					us: h,
+					uk: p,
+					au: m,
+					ca: b,
+					de: _,
+					fr: y,
+					es: v,
+					mx: g,
+					pt: w,
+					it: j,
+					ch: E,
+					default: x
 				});
-			var f, h;
+			var k, T;
 			! function(e) {
-				e.All = "all", e.Popular = "popular", e.SubredditCreation = "subredditCreation", e.SubredditLeaderboard = "subredditLeaderboard"
-			}(f || (f = {})),
+				e.Home = "", e.All = "all", e.Popular = "popular", e.Search = "search", e.SubredditCreation = "subredditCreation", e.SubredditLeaderboard = "subredditLeaderboard"
+			}(k || (k = {})),
 			function(e) {
 				e[e.OK = 200] = "OK", e[e.PermanentRedirect = 301] = "PermanentRedirect", e[e.TemporaryRedirect = 307] = "TemporaryRedirect", e[e.NotFound = 404] = "NotFound", e[e.PageGone = 410] = "PageGone"
-			}(h || (h = {}));
-			const p = ["juan_test", "juan_test2", "whatssnoo", "redditedp", "grahamisms", "snootography", "reddit_product"],
-				m = (e, t, n, o) => {
-					if (!e) return !1;
-					o = o || "*";
-					const i = "*" === (n = n || "*"),
-						s = n in r,
-						a = s && o in r[n],
-						u = e.toLowerCase() === t;
-					return !(!i || !u) || !(!s || !a) && e.toLowerCase() === r[n][o][t]
+			}(T || (T = {}));
+			const O = ["juan_test", "juan_test2", "whatssnoo", "redditedp", "grahamisms", "snootography", "reddit_product"];
+			const I = S;
+			var C = {
+					"*": "en"
 				},
-				b = (e, t, n) => m(e, f.All, t, n),
-				_ = (e, t, n) => m(e, f.Popular, t, n),
-				y = (e, t, n) => {
+				A = {
+					"*": "en"
+				},
+				R = {
+					"*": "en",
+					fr: "fr"
+				},
+				M = {
+					"*": "de"
+				},
+				P = {
+					"*": "fr"
+				},
+				N = {
+					"*": "es"
+				},
+				B = {
+					"*": "es"
+				},
+				L = {
+					"*": "pt"
+				},
+				U = {
+					"*": "it"
+				},
+				D = {
+					"*": "fr",
+					de: "de"
+				},
+				F = {
+					uk: C,
+					au: A,
+					ca: R,
+					de: M,
+					fr: P,
+					es: N,
+					mx: B,
+					pt: L,
+					it: U,
+					ch: D
+				};
+			const z = f,
+				q = Object.freeze({
+					__proto__: null,
+					uk: C,
+					au: A,
+					ca: R,
+					de: M,
+					fr: P,
+					es: N,
+					mx: B,
+					pt: L,
+					it: U,
+					ch: D,
+					default: F
+				}),
+				H = (e, t, n, r) => {
+					if (!e) return !1;
+					r = r || "*";
+					const o = "*" === (n = n || "*"),
+						i = n in I,
+						s = i && r in I[n],
+						a = e.toLowerCase() === t;
+					return !(!o || !a) || !(!i || !s) && e.toLowerCase() === I[n][r][t]
+				},
+				V = (e, t, n) => H(e, k.All, t, n),
+				$ = (e, t, n) => H(e, k.Popular, t, n);
+			const W = (e, t, n) => {
 					if (!n) return !1;
 					if (e && !t) return !0;
 					if (!(e in n)) return !1;
 					if (2 != t.length) return !1;
 					return t in n[e]
 				},
-				v = (e, t) => {
+				G = (e, t) => {
 					return !!t && (!!(void 0 === e || "" === e) || 2 == e.length && e in t)
 				},
-				g = e => p.includes(e) || p.includes(e.toLowerCase()),
-				w = e => (e.userIsAdmin = !!e.userIsAdmin, e.countrySitesAdminOnly = !!e.countrySitesAdminOnly, !e.enabledCountries && e.userIsAdmin ? e.enabledCountries = d : e.enabledCountries || (e.enabledCountries = l), e),
-				j = (e, t) => {
-					const n = (t = w(t)).countrySitesAdminOnly && t.userIsAdmin;
+				K = e => O.includes(e) || O.includes(e.toLowerCase()),
+				Y = e => (e.userIsAdmin = !!e.userIsAdmin, e.countrySitesAdminOnly = !!e.countrySitesAdminOnly, !e.enabledCountries && e.userIsAdmin ? e.enabledCountries = q : e.enabledCountries || (e.enabledCountries = z), e),
+				X = (e, t) => {
+					const n = (t = Y(t)).countrySitesAdminOnly && t.userIsAdmin;
 					if (!t.countrySitesEnabled) return e.hardcodedPath;
 					if (!e.permalink && !t.userIsAdmin) return e.hardcodedPath;
 					let r = e.hardcodedPath;
-					if (e.permalink && (r = e.permalink), !v(e.countryCode, t.enabledCountries)) return r;
-					if (!y(e.countryCode, e.languageCode, t.enabledCountries)) return r;
-					const o = e.subredditName && g(e.subredditName);
-					return n && !o ? r : t.userIsAdmin ? E(r, e.countryCode, e.languageCode) : r
+					if (e.permalink && (r = e.permalink), !G(e.countryCode, t.enabledCountries)) return r;
+					if (!W(e.countryCode, e.languageCode, t.enabledCountries)) return r;
+					const o = e.subredditName && K(e.subredditName);
+					return n && !o ? r : t.userIsAdmin ? Z(r, e.countryCode, e.languageCode) : r
 				},
-				E = (e, t, n) => {
+				Z = (e, t, n) => {
 					const r = `/${t}/${n}`,
 						o = `/${t}`,
 						i = e.startsWith(o),
@@ -35039,4 +35180,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.a8583ce72d009653a268.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.889a0681f7886e41be61.js.map
