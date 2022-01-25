@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ec47b877b428982d7a5a.js
-// Retrieved at 1/24/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.e8f2124024ba2e71ba30.js
+// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -3760,7 +3760,7 @@
 				s = a("./src/reddit/selectors/gold/topAwarded.ts"),
 				o = a("./src/reddit/selectors/telemetry.ts");
 			const d = (e, t = {}) => ({
-					...Object(n.g)(e, t),
+					...Object(n.h)(e, t),
 					correlationId: Object(r.e)(r.a.GildingFlow, !1),
 					profile: o.P(e),
 					subreddit: o.hb(e)
@@ -4074,13 +4074,13 @@
 						experimentEligibilitySelector: s.J,
 						experimentName: r.xc
 					});
-					return !(!t || Object(r.mf)(t))
+					return !(!t || Object(r.nf)(t))
 				},
 				d = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: s.J,
 						experimentName: r.xc
-					}) === r.ad.ListingEnabled
+					}) === r.bd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, a) {
@@ -4140,4 +4140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.ec47b877b428982d7a5a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.e8f2124024ba2e71ba30.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.8b862fb0479e1cef6c24.js
-// Retrieved at 1/18/2022, 10:40:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.01a386c3bdd94a913502.js
+// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldPurchasePaymentActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -349,11 +349,11 @@
 					R = _("p24Bank", E),
 					T = _("epsBank", E),
 					U = _("payment", E),
-					B = _("paymentRequestButton", E),
-					N = _("linkAuthentication", E),
-					$ = _("shippingAddress", E),
-					L = _("afterpayClearpayMessage", E);
-				e.AfterpayClearpayMessageElement = L, e.AuBankAccountElement = C, e.CardCvcElement = w, e.CardElement = x, e.CardExpiryElement = k, e.CardNumberElement = I, e.Elements = g, e.ElementsConsumer = j, e.EpsBankElement = T, e.FpxBankElement = S, e.IbanElement = A, e.IdealBankElement = M, e.LinkAuthenticationElement = N, e.P24BankElement = R, e.PaymentElement = U, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = $, e.useElements = function() {
+					N = _("paymentRequestButton", E),
+					B = _("linkAuthentication", E),
+					L = _("shippingAddress", E),
+					$ = _("afterpayClearpayMessage", E);
+				e.AfterpayClearpayMessageElement = $, e.AuBankAccountElement = C, e.CardCvcElement = w, e.CardElement = x, e.CardExpiryElement = k, e.CardNumberElement = I, e.Elements = g, e.ElementsConsumer = j, e.EpsBankElement = T, e.FpxBankElement = S, e.IbanElement = A, e.IdealBankElement = M, e.LinkAuthenticationElement = B, e.P24BankElement = R, e.PaymentElement = U, e.PaymentRequestButtonElement = N, e.ShippingAddressElement = L, e.useElements = function() {
 					return O("calls useElements()").elements
 				}, e.useStripe = function() {
 					return O("calls useStripe()").stripe
@@ -412,17 +412,17 @@
 				i = r("./src/reddit/endpoints/gold/purchase.ts"),
 				s = r("./src/reddit/selectors/goldPurchaseModals.ts"),
 				d = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const u = Object(o.a)(d.B),
-				l = Object(o.a)(d.w),
+			const u = Object(o.a)(d.F),
+				l = Object(o.a)(d.A),
 				p = Object(o.a)(d.b),
-				f = Object(o.a)(d.y),
+				f = Object(o.a)(d.C),
 				m = Object(o.a)(d.a),
-				b = Object(o.a)(d.G),
-				y = Object(o.a)(d.F),
-				h = Object(o.a)(d.E),
-				g = Object(o.a)(d.I),
-				O = Object(o.a)(d.H),
-				j = Object(o.a)(d.D),
+				b = Object(o.a)(d.K),
+				y = Object(o.a)(d.J),
+				h = Object(o.a)(d.I),
+				g = Object(o.a)(d.M),
+				O = Object(o.a)(d.L),
+				j = Object(o.a)(d.H),
 				v = (e, t) => async (r, o) => {
 					const c = o(),
 						i = Object(s.h)(c),
@@ -447,7 +447,7 @@
 							message: e
 						}))
 					}
-				}, P = Object(o.a)(d.x), _ = Object(o.a)(d.J), E = Object(o.a)(d.C), C = Object(o.a)(d.g), x = e => async (t, r, {
+				}, P = Object(o.a)(d.B), _ = Object(o.a)(d.N), E = Object(o.a)(d.G), C = Object(o.a)(d.g), x = e => async (t, r, {
 					apiContext: n
 				}) => {
 					t(C(e));
@@ -457,7 +457,7 @@
 					} catch (a) {
 						c.c.captureException(a)
 					}
-				}, I = Object(o.a)(d.z), k = Object(o.a)(d.A), w = () => async (e, t, {
+				}, I = Object(o.a)(d.D), k = Object(o.a)(d.E), w = () => async (e, t, {
 					apiContext: r
 				}) => {
 					e(I());
@@ -508,7 +508,7 @@
 				m = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				b = r("./src/reddit/selectors/goldPurchaseModals.ts"),
 				y = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const h = Object(o.a)(y.t),
+			const h = Object(o.a)(y.x),
 				g = Object(o.a)(y.e),
 				O = (e, t) => async r => {
 					r(h(e)), r(Object(u.h)(l.a.ECON_PREMIUM_PURCHASE, t))
@@ -544,7 +544,7 @@
 						});
 						r(Object(d.stripeApiError)(e))
 					}
-				}, P = Object(o.a)(y.v), _ = ({
+				}, P = Object(o.a)(y.z), _ = ({
 					packageId: e,
 					correlationId: t
 				}, r) => async (a, o, {
@@ -1013,4 +1013,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.8b862fb0479e1cef6c24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.01a386c3bdd94a913502.js.map

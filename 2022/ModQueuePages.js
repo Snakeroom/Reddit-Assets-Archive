@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.548688b31649d0e7ef7b.js
-// Retrieved at 1/24/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.fc68099e9ffec41cb0e6.js
+// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, n) {
@@ -4318,7 +4318,7 @@
 				r = n("./src/reddit/selectors/gold/topAwarded.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts");
 			const d = (e, t = {}) => ({
-					...Object(a.g)(e, t),
+					...Object(a.h)(e, t),
 					correlationId: Object(s.e)(s.a.GildingFlow, !1),
 					profile: o.P(e),
 					subreddit: o.hb(e)
@@ -4957,13 +4957,13 @@
 						experimentEligibilitySelector: r.J,
 						experimentName: s.xc
 					});
-					return !(!t || Object(s.mf)(t))
+					return !(!t || Object(s.nf)(t))
 				},
 				d = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: r.J,
 						experimentName: s.xc
-					}) === s.ad.ListingEnabled
+					}) === s.bd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
@@ -5140,4 +5140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.548688b31649d0e7ef7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.fc68099e9ffec41cb0e6.js.map

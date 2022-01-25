@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Comment.26311028fa26195da604.js
-// Retrieved at 1/24/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Comment.4cfdce5ab4ccd78b0e35.js
+// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Comment"], {
 		"./src/reddit/actions/gold/giveAward.ts": function(e, t, r) {
@@ -2187,7 +2187,7 @@
 				o = r("./src/reddit/selectors/gold/topAwarded.ts"),
 				a = r("./src/reddit/selectors/telemetry.ts");
 			const d = (e, t = {}) => ({
-					...Object(n.g)(e, t),
+					...Object(n.h)(e, t),
 					correlationId: Object(s.e)(s.a.GildingFlow, !1),
 					profile: a.P(e),
 					subreddit: a.hb(e)
@@ -2694,13 +2694,13 @@
 						experimentEligibilitySelector: o.J,
 						experimentName: s.xc
 					});
-					return !(!t || Object(s.mf)(t))
+					return !(!t || Object(s.nf)(t))
 				},
 				d = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: o.J,
 						experimentName: s.xc
-					}) === s.ad.ListingEnabled
+					}) === s.bd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, r) {
@@ -2729,7 +2729,7 @@
 			const d = Object(s.a)(e => Object(o.c)(e, {
 				experimentEligibilitySelector: a.J,
 				experimentName: n.Nb
-			}), e => e === n.Vc)
+			}), e => e === n.Wc)
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, r) {
 			"use strict";
@@ -2905,4 +2905,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.26311028fa26195da604.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.4cfdce5ab4ccd78b0e35.js.map

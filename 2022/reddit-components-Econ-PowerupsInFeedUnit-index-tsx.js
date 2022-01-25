@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.f89c2636ddd1e6a5b875.js
-// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.179eb631c4c0c57eb1ab.js
+// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -9,11 +9,11 @@
 			})), a.d(t, "a", (function() {
 				return v
 			})), a.d(t, "e", (function() {
-				return E
+				return f
 			})), a.d(t, "c", (function() {
-				return w
-			})), a.d(t, "d", (function() {
 				return h
+			})), a.d(t, "d", (function() {
+				return w
 			}));
 			var s = a("./src/lib/initializeClient/installReducer.ts"),
 				r = a("./src/lib/makeActionCreator/index.ts"),
@@ -34,13 +34,13 @@
 			const m = "SET_AVATAR_USER",
 				b = Object(r.a)(m),
 				v = "RANDOM_AVATAR_LOADED",
-				f = Object(r.a)(v),
-				E = (e, t, a) => async (s, r, {
+				E = Object(r.a)(v),
+				f = (e, t, a) => async (s, r, {
 					apiContext: o
 				}) => {
 					var u, m, b, v;
-					const f = Object(_.b)(r()),
-						E = await (async (e, t, a, s, r) => Object(c.a)(Object(d.a)(e, [l.a]), {
+					const E = Object(_.b)(r()),
+						f = await (async (e, t, a, s, r) => Object(c.a)(Object(d.a)(e, [l.a]), {
 							endpoint: `${n.a.snoovatarUrl}/api/snoovatar?skip_telemetry=true`,
 							method: i.jb.POST,
 							headers: {
@@ -52,13 +52,13 @@
 								styles: a,
 								...s
 							}
-						}))(o(), e, t, a, f);
-					if (!E.ok) throw new Error("User avatar failed to save");
-					return s(Object(p.A)(E.body)), {
-						accountIcon: null === (m = null === (u = E.body) || void 0 === u ? void 0 : u.avatar) || void 0 === m ? void 0 : m.headshot_image_url,
-						fullBodySnoovatar: null === (v = null === (b = E.body) || void 0 === b ? void 0 : b.avatar) || void 0 === v ? void 0 : v.image_url
+						}))(o(), e, t, a, E);
+					if (!f.ok) throw new Error("User avatar failed to save");
+					return s(Object(p.A)(f.body)), {
+						accountIcon: null === (m = null === (u = f.body) || void 0 === u ? void 0 : u.avatar) || void 0 === m ? void 0 : m.headshot_image_url,
+						fullBodySnoovatar: null === (v = null === (b = f.body) || void 0 === b ? void 0 : b.avatar) || void 0 === v ? void 0 : v.image_url
 					}
-				}, w = () => async (e, t, {
+				}, h = () => async (e, t, {
 					apiContext: a
 				}) => {
 					try {
@@ -70,7 +70,7 @@
 					} catch (s) {
 						o.c.captureException(s)
 					}
-				}, h = () => async (e, t, {
+				}, w = () => async (e, t, {
 					apiContext: a
 				}) => {
 					try {
@@ -78,7 +78,7 @@
 							endpoint: `${n.a.snoovatarUrl}/api/snoovatars/random:byId`,
 							method: i.jb.GET
 						}))(a());
-						t.ok && e(f(t.body))
+						t.ok && e(E(t.body))
 					} catch (s) {
 						o.c.captureException(s)
 					}
@@ -131,10 +131,10 @@
 					count: m,
 					tiersInfo: b,
 					supportersCount: v
-				} = s, f = b[1].powerupsCost, E = p >= 2, w = (null == l ? void 0 : l.filter(e => {
+				} = s, E = b[1].powerupsCost, f = p >= 2, h = (null == l ? void 0 : l.filter(e => {
 					var t;
 					return !!(null === (t = e.supporterInfo) || void 0 === t ? void 0 : t.displayName)
-				}).slice(0, 2)) || [], h = Math.min(m, f) / f, O = f - m;
+				}).slice(0, 2)) || [], w = Math.min(m, E) / E, O = E - m;
 				return r.a.createElement("div", {
 					className: Object(n.a)(u.a.container, e, {
 						[u.a.containerClickable]: !!a
@@ -143,11 +143,11 @@
 					onClick: () => null == a ? void 0 : a(m)
 				}, r.a.createElement("div", {
 					className: u.a.heroes
-				}, !!w.length && r.a.createElement("div", {
+				}, !!h.length && r.a.createElement("div", {
 					className: Object(n.a)(u.a.heroesAvatarContainer, {
-						[u.a.twoAvatarsContainer]: w.length > 1
+						[u.a.twoAvatarsContainer]: h.length > 1
 					})
-				}, w.map(e => {
+				}, h.map(e => {
 					var t, a;
 					return r.a.createElement("div", {
 						className: u.a.heroesAvatar,
@@ -169,7 +169,7 @@
 					hk: "3TGmi4"
 				}))())), r.a.createElement("p", {
 					className: u.a.title
-				}, E ? _._("Community perks are now unlocked!", null, {
+				}, f ? _._("Community perks are now unlocked!", null, {
 					hk: "3xbTTM"
 				}) : _._({
 					"*": "{powerups needed} more Powerups will unlock perks for the community",
@@ -178,7 +178,7 @@
 					hk: "2aHf4k"
 				})), r.a.createElement(i.a, {
 					className: u.a.progressBar,
-					progress: h
+					progress: w
 				}))
 			}
 		},
@@ -282,14 +282,14 @@
 				e[e.POWERUPS_DEFAULT = 0] = "POWERUPS_DEFAULT", e[e.POWERUPS_COMMUNITY_GEAR = 1] = "POWERUPS_COMMUNITY_GEAR", e[e.UNLOCKED_COMMUNITY_GEAR = 2] = "UNLOCKED_COMMUNITY_GEAR", e[e.UNLOCKED_UNAPPLIED_FROM_PREMIUM = 3] = "UNLOCKED_UNAPPLIED_FROM_PREMIUM", e[e.HIDDEN = 4] = "HIDDEN"
 			}(s || (s = {}));
 			var v = a("./src/config.ts"),
-				f = a("./src/lib/classNames/index.ts"),
-				E = a("./src/reddit/actions/gold/powerups.ts"),
-				w = a("./src/reddit/components/PowerupsCtaButton/index.tsx"),
-				h = a("./src/reddit/components/PowerupsSidebar/PowerupsBackground.tsx"),
+				E = a("./src/lib/classNames/index.ts"),
+				f = a("./src/reddit/actions/gold/powerups.ts"),
+				h = a("./src/reddit/components/PowerupsCtaButton/index.tsx"),
+				w = a("./src/reddit/components/PowerupsSidebar/PowerupsBackground.tsx"),
 				O = a("./src/reddit/components/Econ/PowerupsInFeedUnit/PostUnlock/ApplyFromPremiumUnit.m.less"),
-				g = a.n(O);
+				y = a.n(O);
 			const {
-				fbt: y
+				fbt: g
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			var C = ({
 					subredditId: e,
@@ -301,32 +301,32 @@
 							subredditId: e
 						}).displayText);
 					return o.a.createElement("div", {
-						className: Object(f.a)(g.a.container, t)
+						className: Object(E.a)(y.a.container, t)
 					}, o.a.createElement("img", {
-						className: g.a.powerupsIcon,
+						className: y.a.powerupsIcon,
 						src: `${v.a.assetPath}/img/powerups/powerups-rangers.png`,
 						"data-testid": "powerups-icon-rangers"
 					}), o.a.createElement("h2", {
-						className: g.a.title
-					}, y._("Use your Powerup to support {subreddit name}", [y._param("subreddit name", r)], {
+						className: y.a.title
+					}, g._("Use your Powerup to support {subreddit name}", [g._param("subreddit name", r)], {
 						hk: "2OMTwG"
 					})), o.a.createElement("h3", {
-						className: g.a.subtitle
-					}, y._("Go ahead, show them some love!", null, {
+						className: y.a.subtitle
+					}, g._("Go ahead, show them some love!", null, {
 						hk: "3NzF6j"
-					})), o.a.createElement(w.a, {
-						className: g.a.button,
+					})), o.a.createElement(h.a, {
+						className: y.a.button,
 						onClick: () => {
-							s(Object(d.r)()), a(Object(E.g)("in_feed_unit"))
+							s(Object(d.r)()), a(Object(f.g)("in_feed_unit"))
 						}
-					}), o.a.createElement(h.a, {
-						space: h.b.INFEED_UNIT
+					}), o.a.createElement(w.a, {
+						space: w.b.INFEED_UNIT
 					}))
 				},
-				P = a("./src/reddit/controls/Button/index.tsx"),
-				x = a("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
-				N = a("./src/reddit/components/Econ/PowerupsInFeedUnit/PostUnlock/CommunityGearUnit.m.less"),
-				I = a.n(N),
+				x = a("./src/reddit/controls/Button/index.tsx"),
+				N = a("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
+				I = a("./src/reddit/components/Econ/PowerupsInFeedUnit/PostUnlock/CommunityGearUnit.m.less"),
+				P = a.n(I),
 				U = a("./src/higherOrderComponents/asModal/index.tsx"),
 				j = a("./src/lib/opener/index.ts"),
 				k = a("./src/reddit/actions/snoovatar.ts"),
@@ -334,8 +334,8 @@
 				M = a("./src/reddit/actions/urlRequested.ts"),
 				T = a("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
 				R = a("./src/reddit/constants/avatars.ts"),
-				S = a("./src/reddit/controls/LoadingIcon/index.tsx"),
-				D = a("./src/reddit/helpers/avatar/index.ts"),
+				D = a("./src/reddit/controls/LoadingIcon/index.tsx"),
+				S = a("./src/reddit/helpers/avatar/index.ts"),
 				F = a("./src/reddit/helpers/trackers/snoovatar.ts"),
 				B = a("./src/reddit/models/Avatar/accessories.ts"),
 				L = a("./src/reddit/models/Toast/index.ts"),
@@ -345,7 +345,7 @@
 			const {
 				fbt: H
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var Y = Object(U.a)(({
+			var K = Object(U.a)(({
 				subredditId: e,
 				closeModal: t
 			}) => {
@@ -361,7 +361,7 @@
 				}), {
 					legalCopy: m,
 					learnMoreText: b,
-					url: f
+					url: E
 				} = R.a;
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 					className: G.a.modal
@@ -379,27 +379,27 @@
 				}), o.a.createElement("div", {
 					className: G.a.legalTextContainer
 				}, o.a.createElement("span", null, m()), o.a.createElement("a", {
-					href: f,
+					href: E,
 					target: j.d.BLANK,
 					className: G.a.learnMoreLink,
 					rel: j.c
 				}, b()))), o.a.createElement("div", {
 					className: G.a.buttonsRow
-				}, o.a.createElement(P.t, {
+				}, o.a.createElement(x.t, {
 					className: G.a.button,
-					priority: P.c.Secondary,
+					priority: x.c.Secondary,
 					onClick: t
 				}, H._("Go Back", null, {
 					hk: "1EHXc5"
-				})), o.a.createElement(P.t, {
+				})), o.a.createElement(x.t, {
 					className: G.a.button,
-					priority: P.c.Primary,
+					priority: x.c.Primary,
 					onClick: async () => {
 						if (a(Object(d.n)()), !i) return;
 						const r = i.snoovatar,
 							o = (null == r ? void 0 : r.styles) || {},
 							n = (null == r ? void 0 : r.accessories) || [],
-							c = Object(D.a)(n, [B.d[e]]).map(e => e.id);
+							c = Object(S.a)(n, [B.d[e]]).map(e => e.id);
 						try {
 							u(!0), a(Object(F.e)("powerups_post_upsell"));
 							const e = await s(Object(k.e)(c, o, {
@@ -429,7 +429,7 @@
 						}
 					},
 					disabled: c
-				}, c ? o.a.createElement(S.a, {
+				}, c ? o.a.createElement(D.a, {
 					sizePx: 12,
 					center: !0
 				}) : o.a.createElement(o.a.Fragment, null, H._("Yes", null, {
@@ -437,7 +437,7 @@
 				}))))))
 			});
 			const {
-				fbt: K
+				fbt: Y
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			var z = ({
 					className: e,
@@ -447,39 +447,39 @@
 						[s, n] = Object(r.useState)(!1),
 						i = () => n(!1);
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
-						className: Object(f.a)(I.a.container, e)
+						className: Object(E.a)(P.a.container, e)
 					}, o.a.createElement("div", {
-						className: I.a.header
-					}, o.a.createElement(x.a, {
-						className: I.a.powerupsBolt
+						className: P.a.header
+					}, o.a.createElement(N.a, {
+						className: P.a.powerupsBolt
 					}), o.a.createElement("div", {
-						className: I.a.headerText
+						className: P.a.headerText
 					}, o.a.createElement("h2", {
-						className: I.a.title
-					}, K._("Get the most out of Powerups", null, {
+						className: P.a.title
+					}, Y._("Get the most out of Powerups", null, {
 						hk: "4mSV6O"
 					})), o.a.createElement("h3", {
-						className: I.a.subtitle
-					}, K._("Show your support with exclusive gear", null, {
+						className: P.a.subtitle
+					}, Y._("Show your support with exclusive gear", null, {
 						hk: "2rq6cz"
 					})))), o.a.createElement("div", {
-						className: I.a.contentWrapper
+						className: P.a.contentWrapper
 					}, o.a.createElement("img", {
 						alt: "Avatar wearing community gear top",
-						className: I.a.avatarTop,
+						className: P.a.avatarTop,
 						"data-testid": "community-gear-avatar",
 						src: `${v.a.assetPath}/img/powerups/communityGear/withoutLegs/${t}.png`
 					})), o.a.createElement("div", {
-						className: I.a.buttonWrapper
-					}, o.a.createElement(P.t, {
-						priority: P.c.Secondary,
+						className: P.a.buttonWrapper
+					}, o.a.createElement(x.t, {
+						priority: x.c.Secondary,
 						onClick: () => {
 							a(Object(d.m)()), (() => n(!0))()
 						},
 						isFullWidth: !0
-					}, K._("Wear your community gear", null, {
+					}, Y._("Wear your community gear", null, {
 						hk: "1Tt2q6"
-					})))), s && o.a.createElement(Y, {
+					})))), s && o.a.createElement(K, {
 						withOverlay: !0,
 						closeModal: i,
 						onOverlayClick: i,
@@ -507,7 +507,7 @@
 					hk: "1DllPY"
 				});
 				return o.a.createElement("div", {
-					className: Object(f.a)(J.a.container, e)
+					className: Object(E.a)(J.a.container, e)
 				}, a === s.POWERUPS_DEFAULT ? o.a.createElement(() => o.a.createElement(o.a.Fragment, null, o.a.createElement("img", {
 					className: J.a.powerupsIcon,
 					src: `${v.a.assetPath}/img/powerups/powerups-rangers.png`,
@@ -531,15 +531,15 @@
 					className: J.a.supporters,
 					subredditId: t,
 					onClick: e => {
-						i(Object(d.e)("post_upsell")), r(e ? Object(E.i)(t) : Object(E.g)("in_feed_unit"))
-					}
-				}), o.a.createElement(w.a, {
-					className: J.a.button,
-					onClick: () => {
-						a === s.POWERUPS_DEFAULT ? i(Object(d.q)()) : i(Object(d.t)()), r(Object(E.g)("in_feed_unit"))
+						i(Object(d.e)("post_upsell")), r(e ? Object(f.i)(t) : Object(f.g)("in_feed_unit"))
 					}
 				}), o.a.createElement(h.a, {
-					space: h.b.INFEED_UNIT
+					className: J.a.button,
+					onClick: () => {
+						a === s.POWERUPS_DEFAULT ? i(Object(d.q)()) : i(Object(d.t)()), r(Object(f.g)("in_feed_unit"))
+					}
+				}), o.a.createElement(w.a, {
+					space: w.b.INFEED_UNIT
 				}))
 			};
 			t.default = ({
@@ -550,8 +550,8 @@
 					v = Object(n.e)(t => Object(p.R)(t, {
 						subredditId: e
 					})),
-					[f, E] = Object(r.useState)(s.HIDDEN),
-					w = Object(n.e)(e => ((e, {
+					[E, f] = Object(r.useState)(s.HIDDEN),
+					h = Object(n.e)(e => ((e, {
 						subredditId: t,
 						subredditName: a
 					}) => {
@@ -574,28 +574,28 @@
 								subredditId: t
 							}),
 							d = Object(b.w)(e) && Object(m.s)(e);
-						return n || r ? i && o && Object(_.i)(e) ? s.UNLOCKED_COMMUNITY_GEAR : d ? s.UNLOCKED_UNAPPLIED_FROM_PREMIUM : s.HIDDEN : c && o && Object(_.i)(e) ? s.POWERUPS_COMMUNITY_GEAR : s.POWERUPS_DEFAULT
+						return n || r ? i && o && Object(_.j)(e) ? s.UNLOCKED_COMMUNITY_GEAR : d ? s.UNLOCKED_UNAPPLIED_FROM_PREMIUM : s.HIDDEN : c && o && Object(_.j)(e) ? s.POWERUPS_COMMUNITY_GEAR : s.POWERUPS_DEFAULT
 					})(e, {
 						subredditId: v.id,
 						subredditName: v.name
 					})),
-					h = (e => e === s.POWERUPS_DEFAULT || e === s.POWERUPS_COMMUNITY_GEAR ? i.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE : e === s.UNLOCKED_UNAPPLIED_FROM_PREMIUM ? i.b.POWERUPS_UNAPPLIED_PREMIUM_INFEED_UNIT_VISIBILITY_STORE : e === s.UNLOCKED_COMMUNITY_GEAR ? i.b.POWERUPS_UNLOCKED_INFEED_UNIT_VISIBILITY_STORE : null)(w);
+					w = (e => e === s.POWERUPS_DEFAULT || e === s.POWERUPS_COMMUNITY_GEAR ? i.b.POWERUPS_INFEED_UNIT_VISIBILITY_STORE : e === s.UNLOCKED_UNAPPLIED_FROM_PREMIUM ? i.b.POWERUPS_UNAPPLIED_PREMIUM_INFEED_UNIT_VISIBILITY_STORE : e === s.UNLOCKED_COMMUNITY_GEAR ? i.b.POWERUPS_UNLOCKED_INFEED_UNIT_VISIBILITY_STORE : null)(h);
 				switch (Object(r.useEffect)(() => {
 					const t = ((e, t) => {
 						if (!t) return !0;
 						return Object(c.j)(t, e) >= 2
-					})(e, h) ? s.HIDDEN : w;
-					E(t)
-				}, [e, h, w, E]), Object(r.useEffect)(() => {
-					if (f === s.HIDDEN) return;
-					(() => f === s.UNLOCKED_COMMUNITY_GEAR ? a(Object(d.p)()) : f === s.POWERUPS_DEFAULT ? a(Object(d.v)()) : f === s.POWERUPS_COMMUNITY_GEAR ? a(Object(d.u)()) : f === s.UNLOCKED_UNAPPLIED_FROM_PREMIUM ? a(Object(d.s)()) : void 0)(), Object(c.S)(h, e)
-				}, [f, E, h, e, a, w]), f) {
+					})(e, w) ? s.HIDDEN : h;
+					f(t)
+				}, [e, w, h, f]), Object(r.useEffect)(() => {
+					if (E === s.HIDDEN) return;
+					(() => E === s.UNLOCKED_COMMUNITY_GEAR ? a(Object(d.p)()) : E === s.POWERUPS_DEFAULT ? a(Object(d.v)()) : E === s.POWERUPS_COMMUNITY_GEAR ? a(Object(d.u)()) : E === s.UNLOCKED_UNAPPLIED_FROM_PREMIUM ? a(Object(d.s)()) : void 0)(), Object(c.S)(w, e)
+				}, [E, f, w, e, a, h]), E) {
 					case s.POWERUPS_DEFAULT:
 					case s.POWERUPS_COMMUNITY_GEAR:
 						return o.a.createElement(Z, {
 							className: t,
 							subredditId: e,
-							inFeedDisplayState: f
+							inFeedDisplayState: E
 						});
 					case s.UNLOCKED_UNAPPLIED_FROM_PREMIUM:
 						return o.a.createElement(C, {
@@ -669,29 +669,29 @@
 			})), a.d(t, "p", (function() {
 				return v
 			})), a.d(t, "o", (function() {
-				return f
-			})), a.d(t, "f", (function() {
 				return E
+			})), a.d(t, "f", (function() {
+				return f
 			})), a.d(t, "m", (function() {
-				return w
-			})), a.d(t, "h", (function() {
 				return h
+			})), a.d(t, "h", (function() {
+				return w
 			})), a.d(t, "j", (function() {
 				return O
 			})), a.d(t, "k", (function() {
-				return g
-			})), a.d(t, "g", (function() {
 				return y
+			})), a.d(t, "g", (function() {
+				return g
 			})), a.d(t, "i", (function() {
 				return C
 			})), a.d(t, "q", (function() {
-				return P
-			})), a.d(t, "d", (function() {
 				return x
-			})), a.d(t, "l", (function() {
+			})), a.d(t, "d", (function() {
 				return N
-			})), a.d(t, "t", (function() {
+			})), a.d(t, "l", (function() {
 				return I
+			})), a.d(t, "t", (function() {
+				return P
 			})), a.d(t, "u", (function() {
 				return U
 			})), a.d(t, "r", (function() {
@@ -726,18 +726,18 @@
 				m = r.a.section("ModalBody", u.a),
 				b = r.a.section("ModalPostPreview", u.a),
 				v = r.a.p("ModalText", u.a),
-				f = r.a.div("ModalSmallText", u.a),
-				E = r.a.div("ModalDescriptionText", u.a),
-				w = r.a.div("ModalMetaText", u.a),
-				h = r.a.label("ModalFormItem", u.a),
+				E = r.a.div("ModalSmallText", u.a),
+				f = r.a.div("ModalDescriptionText", u.a),
+				h = r.a.div("ModalMetaText", u.a),
+				w = r.a.label("ModalFormItem", u.a),
 				O = r.a.wrapped(c.a, "ModalInput", u.a),
-				g = r.a.label("ModalInputLabel", u.a),
-				y = r.a.footer("ModalFooter", u.a),
+				y = r.a.label("ModalInputLabel", u.a),
+				g = r.a.footer("ModalFooter", u.a),
 				C = r.a.header("ModalHeader", u.a),
-				P = r.a.div("ModalTitle", u.a),
-				x = r.a.div("ModalAnnotation", u.a),
-				N = r.a.div("ModalMain", u.a),
-				I = r.a.textarea("TextArea", u.a),
+				x = r.a.div("ModalTitle", u.a),
+				N = r.a.div("ModalAnnotation", u.a),
+				I = r.a.div("ModalMain", u.a),
+				P = r.a.textarea("TextArea", u.a),
 				U = r.a.wrapped(i.l, "WarningButton", u.a),
 				j = r.a.wrapped(i.l, "PrimaryButton", u.a),
 				k = r.a.wrapped(i.o, "CancelButton", u.a),
@@ -847,23 +847,23 @@
 			})), a.d(t, "p", (function() {
 				return v
 			})), a.d(t, "d", (function() {
-				return f
-			})), a.d(t, "j", (function() {
 				return E
+			})), a.d(t, "j", (function() {
+				return f
 			})), a.d(t, "l", (function() {
-				return h
+				return w
 			})), a.d(t, "i", (function() {
 				return O
 			})), a.d(t, "b", (function() {
-				return g
+				return y
 			})), a.d(t, "o", (function() {
 				return C
 			})), a.d(t, "c", (function() {
-				return P
+				return x
 			})), a.d(t, "a", (function() {
-				return N
-			})), a.d(t, "n", (function() {
 				return I
+			})), a.d(t, "n", (function() {
+				return P
 			}));
 			var s = a("./src/reddit/models/Gold/ProductOffer.ts"),
 				r = a("./src/reddit/selectors/avatarMarketing.ts"),
@@ -950,27 +950,27 @@
 					}
 				}),
 				v = b("view"),
-				f = b("click"),
-				E = b("dismiss"),
-				w = (e, t, a) => () => s => ({
+				E = b("click"),
+				f = b("dismiss"),
+				h = (e, t, a) => () => s => ({
 					source: e,
 					action: t,
 					noun: a,
 					...o.m(s),
 					snoovatar: o.fb(s)
 				}),
-				h = w("anniversary_achievement", "view", "anniversary_achievement"),
-				O = w("anniversary_achievement", "click", "close"),
-				g = w("anniversary_achievement", "click", "equip"),
-				y = e => () => t => ({
+				w = h("anniversary_achievement", "view", "anniversary_achievement"),
+				O = h("anniversary_achievement", "click", "close"),
+				y = h("anniversary_achievement", "click", "equip"),
+				g = e => () => t => ({
 					...o.m(t),
 					source: "gold_top_nav",
 					action: e,
 					noun: "quick_create_cta"
 				}),
-				C = y("view"),
-				P = y("click"),
-				x = (e, t, a) => s => ({
+				C = g("view"),
+				x = g("click"),
+				N = (e, t, a) => s => ({
 					source: e,
 					action: t,
 					noun: a,
@@ -980,8 +980,8 @@
 					},
 					snoovatar: o.fb(s)
 				}),
-				N = e => x("onboarding", "click", e),
-				I = () => x("avatar", "view", "onboarding")
+				I = e => N("onboarding", "click", e),
+				P = () => N("avatar", "view", "onboarding")
 		},
 		"./src/reddit/models/Avatar/accessories.ts": function(e, t, a) {
 			"use strict";
@@ -1165,46 +1165,6 @@
 					}
 				}
 		},
-		"./src/reddit/models/Gold/ProductOffer.ts": function(e, t, a) {
-			"use strict";
-			a.d(t, "c", (function() {
-				return s
-			})), a.d(t, "e", (function() {
-				return o
-			})), a.d(t, "b", (function() {
-				return n
-			})), a.d(t, "a", (function() {
-				return i
-			})), a.d(t, "d", (function() {
-				return c
-			}));
-			var s, r = a("./node_modules/fbt/lib/FbtPublic.js");
-			! function(e) {
-				e.CoinConversion = "user-coins-in-subreddit", e.Powerups = "powerups", e.Premium = "premium"
-			}(s || (s = {}));
-			const o = {
-				[s.Powerups]: () => r.fbt._("Reddit - Buy Powerups", null, {
-					hk: "4sEI31"
-				}),
-				[s.Premium]: () => r.fbt._("Reddit - Buy Premium", null, {
-					hk: "19EtMU"
-				})
-			};
-			var n, i;
-			! function(e) {
-				e.Month = "MONTH", e.Year = "YEAR"
-			}(n || (n = {})),
-			function(e) {
-				e.GildFlow = "gild_flow", e.LowCoinBalance = "low_coin_balance", e.NewUserTargetedOffer = "new_user_targeted_offer", e.RepeatUserTargetedOffer = "repeat_user_targeted_offer", e.StorefrontFreeAward = "storefront_free_award", e.CoinSale = "coin_sale", e.AvatarNewGear = "avatar_new_gear"
-			}(i || (i = {}));
-			const c = (e, t) => {
-				const a = e && e.dealInfo && e.dealInfo.type,
-					s = "low_coin_upsell" === a,
-					r = "new_purchaser" === a,
-					o = "repeat_purchaser" === a;
-				return t ? i.GildFlow : s ? i.LowCoinBalance : r ? i.NewUserTargetedOffer : o ? i.RepeatUserTargetedOffer : void 0
-			}
-		},
 		"./src/reddit/reducers/features/avatar/index.ts": function(e, t, a) {
 			"use strict";
 			var s, r, o = a("./node_modules/redux/es/redux.js"),
@@ -1272,10 +1232,10 @@
 			var m = a("./src/reddit/actions/goldPurchaseModals/constants.ts"),
 				b = a("./src/reddit/actions/modal.ts"),
 				v = a("./src/reddit/constants/modals.ts");
-			var f = (e = null, t) => {
+			var E = (e = null, t) => {
 				var a;
 				switch (t.type) {
-					case m.o:
+					case m.s:
 						const {
 							avatarMarketingEvents: s
 						} = t.payload;
@@ -1317,7 +1277,7 @@
 						return e
 				}
 			};
-			var E = (e = null, t) => {
+			var f = (e = null, t) => {
 				switch (t.type) {
 					case n.a: {
 						const {
@@ -1334,9 +1294,9 @@
 				}
 			};
 			t.a = Object(o.c)({
-				marketing: f,
+				marketing: E,
 				avatarUser: c,
-				randomAvatar: E
+				randomAvatar: f
 			})
 		},
 		"./src/reddit/selectors/avatar.ts": function(e, t, a) {
@@ -1396,4 +1356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.f89c2636ddd1e6a5b875.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.179eb631c4c0c57eb1ab.js.map

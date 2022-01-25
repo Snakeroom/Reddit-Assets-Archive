@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/WrappedReddit.8e494271e085aa4ca979.js
-// Retrieved at 1/24/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/WrappedReddit.b0ad2deaf0a9ad4c39a6.js
+// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["WrappedReddit", "PushNotifications"], {
 		"./assets/fonts/RedditSans/font.less": function(a, e, c) {},
@@ -285,7 +285,7 @@
 					m = (a => Object(C.c)(a, {
 						experimentName: v.Fb,
 						experimentEligibilitySelector: C.a
-					}) === v.Vc)(i);
+					}) === v.Wc)(i);
 				if (await Object(n.a)() || o) return;
 				await k(i, t);
 				g.j(i), await Object(s.b)(a, e, () => {
@@ -2601,4 +2601,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.8e494271e085aa4ca979.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.b0ad2deaf0a9ad4c39a6.js.map

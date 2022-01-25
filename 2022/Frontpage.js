@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.ffcde7c13ffee8448b59.js
-// Retrieved at 1/25/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.1dd4c8a7ca010f4dffcd.js
+// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -2499,10 +2499,10 @@
 			}
 			var Ze = a("./src/reddit/selectors/experiments/utils.ts");
 			const qe = Object(u.a)(e => Object(Fe.c)(e, {
-					experimentName: Me.yd,
+					experimentName: Me.zd,
 					experimentEligibilitySelector: Fe.a
 				}), Ze.a),
-				We = Object(u.a)(qe, e => e === Me.zd.Enabled);
+				We = Object(u.a)(qe, e => e === Me.Ad.Enabled);
 			var He = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ge = a("./src/reddit/selectors/user.ts");
 			var Ve = a("./src/reddit/selectors/seo/linksModule.ts"),
@@ -2533,7 +2533,7 @@
 							return Object(Fe.c)(e, {
 								experimentEligibilitySelector: Ge.J,
 								experimentName: Me.Qb
-							}) === Me.Vc
+							}) === Me.Wc
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: d.a,
@@ -7092,7 +7092,7 @@
 						subredditId: t
 					})),
 					f = Object(c.e)(p.a),
-					y = f !== u.Wd.NewModule;
+					y = f !== u.Xd.NewModule;
 				return (null === (s = null == g ? void 0 : g.cards) || void 0 === s ? void 0 : s.length) > 0 && y ? r.a.createElement(h, {
 					closeModuleOnMount: !!e && e !== m.g.Large,
 					subredditId: t,
@@ -7429,8 +7429,8 @@
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: i,
 						experimentName: s.mc
-					}) === s.Xc.Enabled
-				}(e) ? l.Achievements : t === s.Yc.ControlBanner ? l.CommunitySpacesControl : t === s.Yc.EnabledBanner ? l.CommunitySpaces : null
+					}) === s.Yc.Enabled
+				}(e) ? l.Achievements : t === s.Zc.ControlBanner ? l.CommunitySpacesControl : t === s.Zc.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -7450,13 +7450,13 @@
 						experimentEligibilitySelector: r.J,
 						experimentName: s.xc
 					});
-					return !(!t || Object(s.mf)(t))
+					return !(!t || Object(s.nf)(t))
 				},
 				o = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: r.J,
 						experimentName: s.xc
-					}) === s.ad.ListingEnabled
+					}) === s.bd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, a) {
@@ -7546,4 +7546,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ffcde7c13ffee8448b59.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.1dd4c8a7ca010f4dffcd.js.map
