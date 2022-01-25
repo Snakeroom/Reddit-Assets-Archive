@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.66bfe143c53bf5f28818.js
-// Retrieved at 1/25/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.2654b473bfc67b3d9671.js
+// Retrieved at 1/25/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -17130,7 +17130,7 @@
 								...t
 							}
 						}
-						const s = At()(t.payload.posts, Object(Fl.h)([Fl.o])),
+						const s = At()(t.payload.posts, Object(Fl.i)([Fl.p])),
 							n = {};
 						return Object.keys(s).forEach(e => {
 							var t, r;
@@ -18148,10 +18148,10 @@
 						return e;
 					case G.b:
 					case G.f: {
-						const r = Object(Fl.g)(t.payload.meta);
+						const r = Object(Fl.h)(t.payload.meta);
 						return {
 							...e,
-							...At()(t.payload.posts, Object(Fl.h)([r, Fl.d, Fl.m, Fl.n, Fl.o, Object(Fl.a)(e), Object(Fl.b)(e), Object(Fl.j)(e), Object(Fl.k)(e), Object(Fl.i)(e)]))
+							...At()(t.payload.posts, Object(Fl.i)([r, Fl.d, Fl.n, Fl.o, Fl.p, Object(Fl.a)(e), Object(Fl.b)(e), Object(Fl.k)(e), Object(Fl.l)(e), Object(Fl.j)(e)]))
 						}
 					}
 					case fi.j:
@@ -18187,10 +18187,10 @@
 					case Kd.c:
 					case Kd.d:
 					case Gl.o: {
-						const r = Object(Fl.g)(t.payload.meta);
+						const r = Object(Fl.h)(t.payload.meta);
 						return {
 							...e,
-							...At()(t.payload.posts, Object(Fl.h)([r, Fl.d, Fl.m, Fl.n, Fl.o, Object(Fl.l)(e), Object(Fl.j)(e), Object(Fl.i)(e)]))
+							...At()(t.payload.posts, Object(Fl.i)([r, Fl.d, Fl.n, Fl.o, Fl.p, Object(Fl.m)(e), Object(Fl.k)(e), Object(Fl.j)(e)]))
 						}
 					}
 					case ei.r: {
@@ -18198,8 +18198,8 @@
 						const r = {};
 						for (const s of t.payload) {
 							const t = s,
-								n = Object(Fl.g)(t.meta);
-							Object.assign(r, At()(t.posts, Object(Fl.h)([n, Fl.d, Fl.m, Fl.n, Object(Fl.l)(e), Object(Fl.j)(e), Object(Fl.i)(e)])))
+								n = Object(Fl.h)(t.meta);
+							Object.assign(r, At()(t.posts, Object(Fl.i)([n, Fl.d, Fl.n, Fl.o, Object(Fl.m)(e), Object(Fl.k)(e), Object(Fl.j)(e)])))
 						}
 						return {
 							...e,
@@ -18207,11 +18207,11 @@
 						}
 					}
 					case $d.b: {
-						const r = Object(Fl.g)(t.payload.meta),
+						const r = Object(Fl.h)(t.payload.meta),
 							s = e[t.payload.postId];
 						return {
 							...e,
-							...At()(t.payload.posts, Object(Fl.h)([r, Fl.d, Fl.m, Fl.n, Object(Fl.l)(e), Object(Fl.j)(e), Object(Fl.i)(e)])),
+							...At()(t.payload.posts, Object(Fl.i)([r, Fl.d, Fl.n, Fl.o, Object(Fl.m)(e), Object(Fl.k)(e), Object(Fl.j)(e)])),
 							[t.payload.postId]: {
 								...s,
 								numDuplicates: t.payload.count
@@ -18221,8 +18221,8 @@
 					case Ie.e:
 					case Ne.g:
 					case H.c: {
-						const r = Object(Fl.g)(t.payload.meta),
-							s = At()(t.payload.posts, Object(Fl.h)([r, Fl.m, Fl.d, Fl.n, Object(Fl.i)(e)]));
+						const r = Object(Fl.h)(t.payload.meta),
+							s = At()(t.payload.posts, Object(Fl.i)([r, Fl.n, Fl.d, Fl.o, Object(Fl.j)(e)]));
 						return L()({
 							...e
 						}, s, (e, t) => ({
@@ -18316,7 +18316,7 @@
 						} = t.payload;
 						return {
 							...e,
-							...r.reduce((e, t) => (e[t.post.id] = Object(Fl.h)([Fl.m])(Object(Qs.f)(t.post)), e), {})
+							...r.reduce((e, t) => (e[t.post.id] = Object(Fl.i)([Fl.n])(Object(Qs.f)(t.post)), e), {})
 						}
 					}
 					case ee.s: {
@@ -18365,7 +18365,7 @@
 						} = r;
 						return {
 							...e,
-							...At()(s, Object(Fl.h)([Fl.m, Fl.n]))
+							...At()(s, Object(Fl.i)([Fl.n, Fl.o]))
 						}
 					}
 					case Mp.b:
@@ -18477,7 +18477,7 @@
 					case Gc.g: {
 						const r = t.payload.subredditTopContent;
 						return r && r.posts && Object.keys(r.posts) ? {
-							...At()(r.posts, Object(Fl.h)([Fl.m, Fl.n])),
+							...At()(r.posts, Object(Fl.i)([Fl.n, Fl.o])),
 							...e
 						} : e
 					}
@@ -18487,7 +18487,7 @@
 					case V.g:
 					case Vp.b:
 						return {
-							...At()(t.payload.posts, Object(Fl.h)([Fl.m, Fl.n])), ...e
+							...At()(t.payload.posts, Object(Fl.i)([Fl.n, Fl.o])), ...e
 						};
 					case fi.m: {
 						const {
@@ -18566,7 +18566,7 @@
 						} = t.payload;
 						return {
 							...e,
-							[r]: Object(Fl.p)(e[r], Object(Bl.a)(s))
+							[r]: Object(Fl.q)(e[r], Object(Bl.a)(s))
 						}
 					}
 					case qp.a:
@@ -27114,4 +27114,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.66bfe143c53bf5f28818.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.2654b473bfc67b3d9671.js.map

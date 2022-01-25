@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c50e2c197c7dce011496.js
-// Retrieved at 1/25/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.21a50ab546f3bce8ff27.js
+// Retrieved at 1/25/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3341,10 +3341,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("156701"),
+				buildNumber: Object(r.c)("156705"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1643122162"),
+				buildTimestamp: Object(r.b)("1643123974"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5938,14 +5938,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cc046df69dcaff1f8a99bf71d84f6444fc2b405da-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c34e45359d2af47cf651fed7118e9855fc3398702-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "c046df69dcaff1f8a99bf71d84f6444fc2b405da-production",
+						release: "34e45359d2af47cf651fed7118e9855fc3398702-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6462,7 +6462,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "c046df69dcaff1f8a99bf71d84f6444fc2b405da-production",
+						releaseClient: "34e45359d2af47cf651fed7118e9855fc3398702-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -21297,65 +21297,67 @@
 				d = i("./src/reddit/helpers/graphql/normalizeUserFromGql/index.ts"),
 				a = i("./src/reddit/models/Post/index.ts"),
 				l = i("./src/reddit/models/PostCreationForm/index.ts"),
-				u = i("./src/reddit/models/User/index.ts");
-			const c = e => ({
+				u = i("./src/reddit/models/User/index.ts"),
+				c = i("./src/reddit/reducers/posts/models/helpers.ts");
+			const _ = e => ({
 					richtextContent: e.content && e.content.richtext ? Object(r.f)(e.content.richtext) : {},
 					type: "rtjson",
 					rteMode: l.i.RICH_TEXT
 				}),
-				_ = (e, t) => !(!e || !t || Object(o.e)(t) || !t.authorInfo) && Object(d.b)(e) === Object(d.b)(t.authorInfo),
-				m = e => e && !Object(o.e)(e) && e.authorInfo ? Object(d.b)(e.authorInfo) : null;
+				m = (e, t) => !(!e || !t || Object(o.e)(t) || !t.authorInfo) && Object(d.b)(e) === Object(d.b)(t.authorInfo),
+				p = e => e && !Object(o.e)(e) && e.authorInfo ? Object(d.b)(e.authorInfo) : null;
 			t.a = e => {
 				var t, i, o;
 				const {
 					associatedAward: l,
-					authorInfo: p,
-					awardings: h,
-					content: f,
-					createdAt: b,
-					distinguishedAs: g,
-					editedAt: w,
-					id: v,
-					isGildable: y,
-					isScoreHidden: E,
-					isStickied: T,
-					isSaved: S,
-					parent: O,
-					permalink: I,
-					postInfo: R,
-					score: F,
-					voteState: C
-				} = e, N = "ADMIN" === g, j = "MODERATOR" === g, A = h ? Object(r.b)(h) : void 0, x = p && p.__typename === u.c.AvailableRedditor && p.isCakeDayNow || !1, D = p && p.__typename === u.c.AvailableRedditor && p.isPremiumMember || !1, P = {
-					allAwardings: A,
+					authorInfo: h,
+					awardings: f,
+					content: b,
+					createdAt: g,
+					distinguishedAs: w,
+					editedAt: v,
+					id: y,
+					isGildable: E,
+					isScoreHidden: T,
+					isStickied: S,
+					isSaved: O,
+					parent: I,
+					permalink: R,
+					postInfo: F,
+					score: C,
+					voteState: N
+				} = e, j = "ADMIN" === w, A = "MODERATOR" === w, x = f ? Object(r.b)(f) : void 0, D = h && h.__typename === u.c.AvailableRedditor && h.isCakeDayNow || !1, P = h && h.__typename === u.c.AvailableRedditor && h.isPremiumMember || !1, L = {
+					allAwardings: x,
+					awardCountsById: Object(c.g)(x),
 					associatedAward: l,
-					author: p && Object(d.b)(p) || n.E,
-					authorId: p && p.id || "",
-					body: f && f.html || "",
-					bodyMD: f && f.markdown || "",
-					created: Object(r.e)(b) / 1e3,
-					distinguishType: g || "",
-					editedAt: Object(r.e)(w) / 1e3 || null,
-					id: v,
-					isAdmin: N,
-					isAuthorCakeday: x,
-					isAuthorPremium: D,
-					isGildable: y,
-					isMod: j,
-					isOp: _(p, R),
-					isSaved: S,
-					isScoreHidden: E,
-					isStickied: T,
-					markdown: f && f.markdown || "",
-					media: c(e),
-					parentId: O && O.id,
-					permalink: `https://www.reddit.com${I}`,
-					postAuthor: m(R),
-					postId: R && R.id || "",
-					postTitle: R && R.title || null,
-					profileImage: null === (o = null === (i = null === (t = null == p ? void 0 : p.profile) || void 0 === t ? void 0 : t.styles) || void 0 === i ? void 0 : i.legacyIcon) || void 0 === o ? void 0 : o.url,
-					score: F || 0,
+					author: h && Object(d.b)(h) || n.E,
+					authorId: h && h.id || "",
+					body: b && b.html || "",
+					bodyMD: b && b.markdown || "",
+					created: Object(r.e)(g) / 1e3,
+					distinguishType: w || "",
+					editedAt: Object(r.e)(v) / 1e3 || null,
+					id: y,
+					isAdmin: j,
+					isAuthorCakeday: D,
+					isAuthorPremium: P,
+					isGildable: E,
+					isMod: A,
+					isOp: m(h, F),
+					isSaved: O,
+					isScoreHidden: T,
+					isStickied: S,
+					markdown: b && b.markdown || "",
+					media: _(e),
+					parentId: I && I.id,
+					permalink: `https://www.reddit.com${R}`,
+					postAuthor: p(F),
+					postId: F && F.id || "",
+					postTitle: F && F.title || null,
+					profileImage: null === (o = null === (i = null === (t = null == h ? void 0 : h.profile) || void 0 === t ? void 0 : t.styles) || void 0 === i ? void 0 : i.legacyIcon) || void 0 === o ? void 0 : o.url,
+					score: C || 0,
 					subredditId: "",
-					voteState: Object(r.d)(C),
+					voteState: Object(r.d)(N),
 					modReports: [],
 					userReports: [],
 					...Object(s.a)(e),
@@ -21369,7 +21371,7 @@
 					sendReplies: !0,
 					isSystem: !1
 				};
-				return e.postInfo && Object(a.n)(e.postInfo) ? P.subredditId = e.postInfo.subreddit.id : e.postInfo && Object(a.l)(e.postInfo) && (P.subredditId = e.postInfo.profile.id), P
+				return e.postInfo && Object(a.n)(e.postInfo) ? L.subredditId = e.postInfo.subreddit.id : e.postInfo && Object(a.l)(e.postInfo) && (L.subredditId = e.postInfo.profile.id), L
 			}
 		},
 		"./src/reddit/helpers/graphql/normalizeDateTime/index.ts": function(e, t, i) {
@@ -31857,7 +31859,7 @@
 					case h.f:
 					case f.b:
 					case f.f: {
-						const i = m()(t.payload.posts, Object(p.h)([p.o])),
+						const i = m()(t.payload.posts, Object(p.i)([p.p])),
 							n = Object.values(i).reduce((t, i) => {
 								if (Object(b.c)(i)) {
 									const {
@@ -32019,38 +32021,40 @@
 		},
 		"./src/reddit/reducers/posts/models/helpers.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "g", (function() {
+			i.d(t, "h", (function() {
 				return u
 			})), i.d(t, "a", (function() {
 				return c
 			})), i.d(t, "b", (function() {
 				return _
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "q", (function() {
 				return m
 			})), i.d(t, "e", (function() {
 				return p
 			})), i.d(t, "f", (function() {
 				return h
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "p", (function() {
 				return f
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "o", (function() {
 				return b
-			})), i.d(t, "k", (function() {
-				return g
 			})), i.d(t, "l", (function() {
+				return g
+			})), i.d(t, "m", (function() {
 				return w
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "k", (function() {
 				return v
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "j", (function() {
 				return y
 			})), i.d(t, "d", (function() {
 				return E
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "g", (function() {
 				return T
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "n", (function() {
 				return S
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "i", (function() {
 				return O
+			})), i.d(t, "c", (function() {
+				return I
 			}));
 			var n = i("./node_modules/icepick/icepick.js"),
 				r = i("./src/reddit/helpers/path/index.ts"),
@@ -32204,23 +32208,22 @@
 						outboundUrlReceived: Date.now()
 					}, e.source = t), e
 				},
-				T = e => {
+				T = (e = []) => e.reduce((e, t) => (e[t.id] = t.count, e), {}),
+				S = e => {
 					const {
 						allAwardings: t,
 						...i
-					} = e, n = {};
-					return t && t.forEach(e => {
-						n[e.id] = e.count
-					}), {
+					} = e;
+					return {
 						...i,
-						awardCountsById: n
+						awardCountsById: T(t)
 					}
 				},
-				S = e => t => {
+				O = e => t => {
 					for (let i = 0; i < e.length; i++) t = e[i](t);
 					return t
 				},
-				O = (e, t) => ({
+				I = (e, t) => ({
 					...e,
 					events: t.events,
 					source: t.source
@@ -45706,4 +45709,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c50e2c197c7dce011496.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.21a50ab546f3bce8ff27.js.map
