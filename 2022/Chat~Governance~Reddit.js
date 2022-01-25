@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8ce2864553690c1570ac.js
-// Retrieved at 1/25/2022, 4:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5a20f3a1292e44ca584e.js
+// Retrieved at 1/25/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3341,10 +3341,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("156772"),
+				buildNumber: Object(r.c)("156781"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1643143814"),
+				buildTimestamp: Object(r.b)("1643145715"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5938,14 +5938,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cdc30ff791e5cb0f1cb92d53bb931daa930ec7033-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c1d32f7fb510c1ef0643b5faaa60b410c5a7693fe-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "dc30ff791e5cb0f1cb92d53bb931daa930ec7033-production",
+						release: "1d32f7fb510c1ef0643b5faaa60b410c5a7693fe-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6462,7 +6462,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "dc30ff791e5cb0f1cb92d53bb931daa930ec7033-production",
+						releaseClient: "1d32f7fb510c1ef0643b5faaa60b410c5a7693fe-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -11183,125 +11183,123 @@
 		"./src/reddit/actions/platform.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return y
+				return v
 			})), i.d(t, "c", (function() {
-				return E
+				return y
 			})), i.d(t, "e", (function() {
-				return T
+				return E
 			})), i.d(t, "d", (function() {
-				return S
+				return T
 			})), i.d(t, "f", (function() {
-				return O
+				return S
 			})), i.d(t, "g", (function() {
-				return I
+				return O
 			})), i.d(t, "a", (function() {
-				return R
+				return I
 			})), i.d(t, "i", (function() {
-				return C
+				return R
 			})), i.d(t, "j", (function() {
-				return F
+				return C
 			})), i.d(t, "n", (function() {
-				return A
+				return j
 			})), i.d(t, "o", (function() {
-				return x
+				return A
 			})), i.d(t, "m", (function() {
-				return D
+				return x
 			})), i.d(t, "l", (function() {
-				return P
+				return D
 			})), i.d(t, "k", (function() {
-				return L
+				return P
 			})), i.d(t, "h", (function() {
-				return k
+				return L
 			}));
-			var n = i("./node_modules/history/esm/history.js"),
-				r = i("./src/lib/areUrlsEqual/index.ts"),
-				s = i("./src/lib/constants/index.ts"),
-				o = i("./src/lib/logs/errors.ts"),
-				d = i("./src/lib/makeActionCreator/index.ts"),
-				a = i("./src/lib/matchRoute/index.ts"),
-				l = (i("./src/lib/addQueryParams/index.ts"), i("./src/lib/isEqualWithoutKey/index.ts")),
-				u = i("./src/reddit/actions/tracing.ts"),
-				c = i("./src/reddit/constants/experiments.ts"),
-				_ = i("./src/reddit/constants/history.ts"),
-				m = i("./src/reddit/constants/listings.ts"),
-				p = i("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts"),
-				h = i("./src/reddit/helpers/routeKey/index.ts"),
-				f = i("./src/reddit/selectors/experiments/goodVisitSearchFeed.ts"),
-				b = i("./src/reddit/selectors/experiments/postSeo.ts");
+			var n = i("./src/lib/areUrlsEqual/index.ts"),
+				r = i("./src/lib/constants/index.ts"),
+				s = i("./src/lib/logs/errors.ts"),
+				o = i("./src/lib/makeActionCreator/index.ts"),
+				d = i("./src/lib/matchRoute/index.ts"),
+				a = (i("./src/lib/addQueryParams/index.ts"), i("./src/lib/isEqualWithoutKey/index.ts")),
+				l = i("./src/reddit/actions/tracing.ts"),
+				u = i("./src/reddit/constants/experiments.ts"),
+				c = i("./src/reddit/constants/history.ts"),
+				_ = i("./src/reddit/constants/listings.ts"),
+				m = i("./src/reddit/helpers/installGoodVisitFeedSearchTracker/index.ts"),
+				p = i("./src/reddit/helpers/routeKey/index.ts"),
+				h = i("./src/reddit/selectors/experiments/goodVisitSearchFeed.ts"),
+				f = i("./src/reddit/selectors/experiments/postSeo.ts");
 			i("./node_modules/core-js/modules/web.dom.iterable.js"), i("./src/reddit/helpers/chooseVariant/index.ts");
-			new Set([s.Mb.COMMENTS, s.Mb.INDEX, s.Mb.LISTING, s.Mb.PROFILE_COMMENTS, s.Mb.PROFILE_OVERVIEW, s.Mb.PROFILE_POSTS, s.Mb.SUBREDDIT]);
-			var g = i("./src/reddit/selectors/platform.ts"),
-				w = i("./src/reddit/selectors/telemetry.ts"),
-				v = i("./src/reddit/singleton/tracing/index.ts");
-			const y = "PLATFORM__HISTORY_LOCATION_SET",
-				E = "PLATFORM__INITIAL_REFERRER_SET",
-				T = "PLATFORM__NAVIGATION_CONFIRMATION_REQUESTED",
-				S = "PLATFORM__NAVIGATION_CONFIRMATION_DISCARDED",
-				O = "PLATFORM__PAGE_META_SET",
-				I = "PLATFORM__PAGE_STATUS_SET",
-				R = "PLATFORM__FEED_CORR_ID_SET",
-				C = e => async (t, i, n) => {
+			new Set([r.Mb.COMMENTS, r.Mb.INDEX, r.Mb.LISTING, r.Mb.PROFILE_COMMENTS, r.Mb.PROFILE_OVERVIEW, r.Mb.PROFILE_POSTS, r.Mb.SUBREDDIT]);
+			var b = i("./src/reddit/selectors/platform.ts"),
+				g = i("./src/reddit/selectors/telemetry.ts"),
+				w = i("./src/reddit/singleton/tracing/index.ts");
+			const v = "PLATFORM__HISTORY_LOCATION_SET",
+				y = "PLATFORM__INITIAL_REFERRER_SET",
+				E = "PLATFORM__NAVIGATION_CONFIRMATION_REQUESTED",
+				T = "PLATFORM__NAVIGATION_CONFIRMATION_DISCARDED",
+				S = "PLATFORM__PAGE_META_SET",
+				O = "PLATFORM__PAGE_STATUS_SET",
+				I = "PLATFORM__FEED_CORR_ID_SET",
+				R = e => async (t, i, n) => {
 					const {
 						currentPage: r
 					} = i().platform;
 					if (!r) return;
-					const s = Object(a.a)(r.url, e, i());
+					const s = Object(d.a)(r.url, e, i());
 					s && s.route.action(s.match)(t, i, n)
-				}, F = (e, t, i) => async (o, d, a) => {
-					o(((e, t, i) => (n, o, d) => {
+				}, C = (e, t, i) => async (s, o, d) => {
+					s(((e, t, i) => (s, o, d) => {
 						var a, l;
-						const u = o().platform.currentPage;
-						(!i || i.route.chunk === s.s.SUBREDDIT && m.a.has(i.match.params.subredditName.toLowerCase())) && window.location.replace(`https://www.reddit.com${e.pathname}${e.search}`);
-						const y = i ? Object(h.c)(i, o()).listingKey : null,
+						const v = o().platform.currentPage;
+						(!i || i.route.chunk === r.s.SUBREDDIT && _.a.has(i.match.params.subredditName.toLowerCase())) && window.location.replace(`https://www.reddit.com${e.pathname}${e.search}`);
+						const y = i ? Object(p.c)(i, o()).listingKey : null,
 							{
 								user: E
 							} = o(),
 							T = i && i.match && i.match.queryParams,
-							S = T && T[`experiment_${c.de}`];
-						Object(b.g)(o()), e.pathname.split("/").some(e => "comments" === e), Object(g.i)(o());
-						if (n(N({
+							S = T && T[`experiment_${u.de}`];
+						Object(f.g)(o()), e.pathname.split("/").some(e => "comments" === e), Object(b.i)(o());
+						if (s(F({
 								action: t,
 								listingKey: y,
 								location: e,
 								routeMatch: i,
 								user: E
-							})), Object(f.a)(o())) {
-							(null === (a = null == u ? void 0 : u.locationState) || void 0 === a ? void 0 : a.clickId) && p.d[u.locationState.clickId] && !p.d[u.locationState.clickId].completed && Object(p.b)(u.locationState.clickId);
-							const t = i && Object(w.u)(i);
-							(null === (l = null == e ? void 0 : e.state) || void 0 === l ? void 0 : l.clickId) && (p.d[e.state.clickId] ? Object(p.c)(e.state.clickId) : i && t && s.O.has(t) && s.N.has(e.state.clickSource) && Object(p.a)(e.state.clickId, e.state.clickSource, o, i, e.state[_.b.ClickSourceFeedCorrelationId]))
+							})), Object(h.a)(o())) {
+							(null === (a = null == v ? void 0 : v.locationState) || void 0 === a ? void 0 : a.clickId) && m.d[v.locationState.clickId] && !m.d[v.locationState.clickId].completed && Object(m.b)(v.locationState.clickId);
+							const t = i && Object(g.u)(i);
+							(null === (l = null == e ? void 0 : e.state) || void 0 === l ? void 0 : l.clickId) && (m.d[e.state.clickId] ? Object(m.c)(e.state.clickId) : i && t && r.O.has(t) && r.N.has(e.state.clickSource) && Object(m.a)(e.state.clickId, e.state.clickSource, o, i, e.state[c.b.ClickSourceFeedCorrelationId]))
 						}
-						u && Object(r.a)(u.url, e) || v.b.isEnabled
-					})(e, t, i)), await o(((e, t) => async (i, s, o) => {
-						var d, a;
-						const c = s().platform.currentPage,
-							_ = Object(n.c)((null == c ? void 0 : c.url) || "", void 0, null == c ? void 0 : c.key);
-						if (c && Object(r.a)(_, e)) return;
-						let m = !1;
-						if (v.b.isEnabled) {
-							if (Object(l.a)(null !== (a = null === (d = null == c ? void 0 : c.locationState) || void 0 === d ? void 0 : d.closeLocation) && void 0 !== a ? a : {}, e)) {
-								const e = v.b.createRootSpanId();
-								v.b.setParent(e), i(Object(u.b)(e.spanId))
-							} else m = !0
+						v && Object(n.a)(v.url, e) || w.b.isEnabled
+					})(e, t, i)), await s(((e, t) => async (i, r, s) => {
+						var o, d;
+						const u = r().platform.currentPage;
+						if (u && Object(n.a)(null == u ? void 0 : u.url, e)) return;
+						let c = !1;
+						if (w.b.isEnabled) {
+							if (Object(a.a)(null !== (d = null === (o = null == u ? void 0 : u.locationState) || void 0 === o ? void 0 : o.closeLocation) && void 0 !== d ? d : {}, e)) {
+								const e = w.b.createRootSpanId();
+								w.b.setParent(e), i(Object(l.b)(e.spanId))
+							} else c = !0
 						}
 						if (t) {
 							const {
 								match: e
 							} = t;
-							if (m) {
-								const n = v.b.createRootSpanId();
-								v.b.setParent(n), i(Object(u.b)(n.spanId));
-								const r = null == t ? void 0 : t.route.action.name,
-									d = (null == t ? void 0 : t.route) ? `${r}_${t.route.meta.name}` : "",
+							if (c) {
+								const n = w.b.createRootSpanId();
+								w.b.setParent(n), i(Object(l.b)(n.spanId));
+								const o = null == t ? void 0 : t.route.action.name,
+									d = (null == t ? void 0 : t.route) ? `${o}_${t.route.meta.name}` : "",
 									a = {
-										[v.a.HttpUrl]: e.url
+										[w.a.HttpUrl]: e.url
 									};
-								await v.b.recordRequest(d, a, async () => {
-									await t.route.action(e)(i, s, o)
+								await w.b.recordRequest(d, a, async () => {
+									await t.route.action(e)(i, r, s)
 								})
-							} else await t.route.action(e)(i, s, o)
+							} else await t.route.action(e)(i, r, s)
 						}
 					})(e, i))
-				}, N = Object(d.a)(y), j = (Object(d.a)(E), Object(d.a)(O)), A = Object(d.a)(I), x = Object(d.a)(R), D = e => async (t, i, n) => {
+				}, F = Object(o.a)(v), N = (Object(o.a)(y), Object(o.a)(S)), j = Object(o.a)(O), A = Object(o.a)(I), x = e => async (t, i, n) => {
 					const r = i(),
 						{
 							currentPage: s
@@ -11310,15 +11308,15 @@
 					const {
 						key: o
 					} = s;
-					await t(j({
+					await t(N({
 						key: o,
 						meta: e
 					}))
-				}, P = Object(d.a)(T), L = Object(d.a)(S), k = () => async (e, t, i) => {
+				}, D = Object(o.a)(E), P = Object(o.a)(T), L = () => async (e, t, i) => {
 					if (window !== window.parent) {
-						Object(o.sendRavenError)(i.apiContext(), {
+						Object(s.sendRavenError)(i.apiContext(), {
 							extra: {
-								errorType: s.t.NOT_ALLOWED_ACCESS,
+								errorType: r.t.NOT_ALLOWED_ACCESS,
 								value: "Page was unexpectedly loaded inside iframe"
 							}
 						});
@@ -46190,4 +46188,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8ce2864553690c1570ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.5a20f3a1292e44ca584e.js.map
