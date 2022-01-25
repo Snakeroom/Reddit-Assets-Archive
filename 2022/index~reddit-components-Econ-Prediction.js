@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.aab6bb3e29aef2a00f70.js
-// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.b62077161e72ceae7b65.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/PredictionQuestion/index.m.less": function(e, t, a) {
@@ -538,7 +538,7 @@
 					userSelection: b,
 					predictionStatus: _,
 					voteUpdatesRemained: x
-				} = e, g = Boolean((null == e ? void 0 : e.userSelection) && !(null == e ? void 0 : e.resolvedOptionId) && e.predictionStatus === le.b.Open && e.endsAt > Date.now()), v = Object(o.e)(t => (null == e ? void 0 : e.tournamentId) ? Object(ie.a)(t, e.tournamentId) : null), C = Object(o.e)(E.W), k = Object(o.e)(E.ob), I = Object(o.e)(E.J), [N, j] = Object(n.useState)(!1), P = i === k, M = d < Date.now(), A = M && P && !p, y = _ === le.b.Cancelled || _ === le.b.CancelInProgress, w = M || !!b || !!p || y;
+				} = e, g = Boolean((null == e ? void 0 : e.userSelection) && !(null == e ? void 0 : e.resolvedOptionId) && e.predictionStatus === le.b.Open && e.endsAt > Date.now()), v = Object(o.e)(t => (null == e ? void 0 : e.tournamentId) ? Object(ie.a)(t, e.tournamentId) : null), C = Object(o.e)(E.W), k = Object(o.e)(E.tb), I = Object(o.e)(E.J), [N, j] = Object(n.useState)(!1), P = i === k, M = d < Date.now(), A = M && P && !p, y = _ === le.b.Cancelled || _ === le.b.CancelInProgress, w = M || !!b || !!p || y;
 				return Object(n.useEffect)(() => {
 					j(!1)
 				}, [b, e]), c.a.createElement("div", ue({
@@ -1993,4 +1993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.aab6bb3e29aef2a00f70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.b62077161e72ceae7b65.js.map

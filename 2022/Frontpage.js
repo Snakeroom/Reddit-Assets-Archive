@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.1dd4c8a7ca010f4dffcd.js
-// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.2d234b3236a2474e79d5.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -7124,7 +7124,7 @@
 			const d = Object(s.a)(i.a, (e, {
 					listingName: t
 				}) => {
-					const a = Object(o.tb)(e);
+					const a = Object(o.yb)(e);
 					if (!a) return !1;
 					let s;
 					if (-1 === [r.R, "r/popular"].indexOf(t)) {
@@ -7546,4 +7546,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.1dd4c8a7ca010f4dffcd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.2d234b3236a2474e79d5.js.map

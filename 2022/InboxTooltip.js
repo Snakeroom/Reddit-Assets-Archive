@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.4b488c90a5bdf8fa8750.js
-// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.3506fcc3e61a38e851d1.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip", "PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -67,11 +67,11 @@
 			})), i.d(t, "subscribeForPNs", (function() {
 				return I
 			})), i.d(t, "unsubscribeFromPNs", (function() {
-				return P
-			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return E
-			})), i.d(t, "subscribeToPermissionsChange", (function() {
+			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
 				return F
+			})), i.d(t, "subscribeToPermissionsChange", (function() {
+				return P
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/lodash/omit.js"),
@@ -87,12 +87,12 @@
 				p = i("./src/reddit/actions/tabBadging.ts"),
 				g = i("./src/reddit/actions/toaster.ts"),
 				m = i("./src/reddit/helpers/parseUrl.ts"),
-				h = i("./src/reddit/helpers/tabBadging/index.ts"),
-				O = i("./src/reddit/helpers/trackers/notifications.ts"),
+				O = i("./src/reddit/helpers/tabBadging/index.ts"),
+				h = i("./src/reddit/helpers/trackers/notifications.ts"),
 				j = i("./src/reddit/models/Toast/index.ts"),
-				x = i("./src/reddit/constants/experiments.ts"),
-				S = i("./src/reddit/helpers/chooseVariant/index.ts");
-			var v = i("./src/reddit/selectors/meta.ts"),
+				v = i("./src/reddit/constants/experiments.ts"),
+				x = i("./src/reddit/helpers/chooseVariant/index.ts");
+			var S = i("./src/reddit/selectors/meta.ts"),
 				k = i("./src/reddit/selectors/user.ts");
 			let w = !1;
 			const N = async (e, t) => {
@@ -104,7 +104,7 @@
 					const s = n.data,
 						r = s.command || s.type;
 					if ("registerWithServiceWorker" === r) y(e);
-					else if (r === h.a && i) {
+					else if (r === O.a && i) {
 						const e = o()(s, ["command"]);
 						t(Object(p.f)(e))
 					} else if ("navigate.chat" === r) {
@@ -115,23 +115,23 @@
 			}, y = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
-					v2EventBoilerPlate: O.c(e)
+					v2EventBoilerPlate: h.c(e)
 				})
 			}, _ = (e, t, i = (() => {})) => async (n, s, o) => {
 				const a = s(),
-					u = Object(v.f)(a),
-					l = (e => Object(S.c)(e, {
-						experimentName: x.Fb,
-						experimentEligibilitySelector: S.a
-					}) === x.Wc)(a);
+					u = Object(S.f)(a),
+					l = (e => Object(x.c)(e, {
+						experimentName: v.Fb,
+						experimentEligibilitySelector: x.a
+					}) === v.Wc)(a);
 				if (await Object(r.a)() || u) return;
 				await N(a, n);
-				O.j(a), await Object(c.b)(e, t, () => {
-					l || n(Object(d.o)()), n(Object(d.n)()), O.h(a)
+				h.j(a), await Object(c.b)(e, t, () => {
+					l || n(Object(d.o)()), n(Object(d.n)()), h.h(a)
 				}, (e, t) => {
-					n(Object(d.l)()), n(P(t ? d.a.Denied : d.a.Closed)), e && (t ? O.e(a) : O.f(a))
+					n(Object(d.l)()), n(E(t ? d.a.Denied : d.a.Closed)), e && (t ? h.e(a) : h.f(a))
 				}, e => {
-					n(Object(d.m)()), n(I()), e && O.d(a)
+					n(Object(d.m)()), n(I()), e && h.d(a)
 				}, () => {
 					n(Object(d.k)()), i()
 				})
@@ -140,7 +140,7 @@
 				try {
 					switch (await Object(a.b)(s.gqlContext)) {
 						case a.a.Success:
-							Object(f.b)(d.a.Granted), O.k(o), e && t(Object(g.f)({
+							Object(f.b)(d.a.Granted), h.k(o), e && t(Object(g.f)({
 								kind: j.b.SuccessCommunity,
 								text: n.fbt._("Changes saved", null, {
 									hk: "wGH5U"
@@ -148,15 +148,15 @@
 							}));
 							break;
 						case a.a.FailedResponse:
-							O.i(o, "registration_failed_generally");
+							h.i(o, "registration_failed_generally");
 							break;
 						case a.a.FailedGqlReponse:
-							O.i(o, "registration_failed_in_gql")
+							h.i(o, "registration_failed_in_gql")
 					}
 				} catch (r) {
-					O.i(o, "registration_failed_uncaught_exception"), console.error(r)
+					h.i(o, "registration_failed_uncaught_exception"), console.error(r)
 				}
-			}, P = (e, t) => async i => {
+			}, E = (e, t) => async i => {
 				try {
 					Object(f.b)(e);
 					const s = await Object(u.a)();
@@ -170,7 +170,7 @@
 						})))
 					}
 				} catch (s) {}
-			}, E = e => async (t, i) => {
+			}, F = e => async (t, i) => {
 				const n = i();
 				if (Object(f.a)(n) === d.c.NotificationsSupported) switch (Object(c.a)()) {
 					case d.a.Default:
@@ -180,7 +180,7 @@
 					case d.a.Denied:
 						t(Object(b.h)(e))
 				}
-			}, F = () => async (e, t) => {
+			}, P = () => async (e, t) => {
 				var i;
 				if (!(null === (i = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === i ? void 0 : i.query)) return;
 				const n = t();
@@ -191,13 +191,13 @@
 				s.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(P(d.a.Denied)), O.e(n);
+							e(E(d.a.Denied)), h.e(n);
 							break;
 						case d.a.Granted:
-							e(I()), O.d(n);
+							e(I()), h.d(n);
 							break;
 						default:
-							e(P(d.a.Default))
+							e(E(d.a.Default))
 					}
 				})(s.state)
 			}
@@ -205,32 +205,33 @@
 		"./src/reddit/actions/subreddit/notifications.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return l
+				return b
 			})), i.d(t, "b", (function() {
-				return g
+				return m
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./src/lib/makeActionCreator/index.ts"),
-				o = i("./src/reddit/actions/notificationsInbox/index.ts"),
-				r = i("./src/reddit/actions/subreddit/constants.ts"),
-				a = i("./src/reddit/actions/toaster.ts"),
-				c = i("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
-				d = i("./src/reddit/models/Subreddit/index.ts"),
-				u = i("./src/reddit/models/Toast/index.ts");
-			const l = Object(s.a)(r.u),
-				b = Object(s.a)(r.t),
-				f = Object(s.a)(r.s),
-				p = e => {
+				o = i("./src/reddit/actions/notificationSettingsLayout/index.ts"),
+				r = i("./src/reddit/actions/notificationsInbox/index.ts"),
+				a = i("./src/reddit/actions/subreddit/constants.ts"),
+				c = i("./src/reddit/actions/toaster.ts"),
+				d = i("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
+				u = i("./src/reddit/models/Subreddit/index.ts"),
+				l = i("./src/reddit/models/Toast/index.ts");
+			const b = Object(s.a)(a.u),
+				f = Object(s.a)(a.t),
+				p = Object(s.a)(a.s),
+				g = e => {
 					switch (e) {
-						case d.b.OFF:
+						case u.b.OFF:
 							return n.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
 								hk: "3e1CJR"
 							});
-						case d.b.FREQUENT:
+						case u.b.FREQUENT:
 							return n.fbt._("Followed! Now you’ll get updates on new activity.", null, {
 								hk: "3JzOOa"
 							});
-						case d.b.LOW:
+						case u.b.LOW:
 							return n.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
 								hk: "4x3TS8"
 							});
@@ -238,51 +239,54 @@
 							return null
 					}
 				};
-			const g = ({
+			const m = ({
 				subredditId: e,
 				notificationLevel: t,
 				successCallback: i,
 				undoCallback: s
-			}) => async (r, g, {
-				gqlContext: m
+			}) => async (a, m, {
+				gqlContext: O
 			}) => {
-				var h, O, j;
-				r(b());
+				var h, j, v;
+				a(f());
 				const x = (e => {
 						switch (e) {
-							case d.b.FREQUENT:
+							case u.b.FREQUENT:
 								return {
 									isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
 								};
-							case d.b.LOW:
+							case u.b.LOW:
 								return {
 									isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
 								};
-							case d.b.OFF:
+							case u.b.OFF:
 							default:
 								return {
 									isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
 								}
 						}
 					})(t),
-					S = await Object(c.b)(m(), e, x);
-				if ((null === (O = null === (h = S.error) || void 0 === h ? void 0 : h.fields) || void 0 === O ? void 0 : O.length) || function(e) {
+					S = await Object(d.b)(O(), e, x);
+				if ((null === (j = null === (h = S.error) || void 0 === h ? void 0 : h.fields) || void 0 === j ? void 0 : j.length) || function(e) {
 						return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
-					}(S.body) && (null === (j = S.body.data.updateSubredditNotificationSettings.errors) || void 0 === j ? void 0 : j.length)) return r(f()), r(Object(a.f)({
-					kind: u.b.Error,
+					}(S.body) && (null === (v = S.body.data.updateSubredditNotificationSettings.errors) || void 0 === v ? void 0 : v.length)) return a(p()), a(Object(c.f)({
+					kind: l.b.Error,
 					text: n.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
 						hk: "4avFFV"
 					})
 				}));
-				S.ok && (r(l({
+				S.ok && (a(Object(o.c)({
+					subredditId: e,
+					notificationLevel: t
+				})), a(b({
 					subredditAboutInfo: {
 						[e]: {
 							notificationLevel: t
 						}
 					}
-				})), i && i(), r(s ? Object(a.f)(Object(a.e)(p(t), u.b.Undo, n.fbt._("Undo", null, {
+				})), i && i(), a(s ? Object(c.f)(Object(c.e)(g(t), l.b.Undo, n.fbt._("Undo", null, {
 					hk: "46OwLP"
-				}), Object(o.i)(e, s))) : Object(a.f)(Object(a.e)(p(t), u.b.SuccessCommunityGreen))))
+				}), Object(r.i)(e, s))) : Object(c.f)(Object(c.e)(g(t), l.b.SuccessCommunityGreen))))
 			}
 		},
 		"./src/reddit/components/InboxTooltip/index.tsx": function(e, t, i) {
@@ -302,22 +306,22 @@
 				p = i("./src/reddit/models/Subreddit/index.ts"),
 				g = i("./src/reddit/selectors/appBadges.ts"),
 				m = i("./src/reddit/selectors/experiments/inboxRedesign.ts"),
-				h = i("./src/reddit/selectors/experiments/wrappedReddit.ts"),
-				O = i("./src/reddit/selectors/notificationsInbox.tsx");
+				O = i("./src/reddit/selectors/experiments/wrappedReddit.ts"),
+				h = i("./src/reddit/selectors/notificationsInbox.tsx");
 			const j = Object(r.c)({
-					isPushNotificationsSupported: O.h,
-					cursor: O.c,
-					hasNextPage: O.d,
+					isPushNotificationsSupported: h.h,
+					cursor: h.c,
+					hasNextPage: h.d,
 					inboxBadgeCount: g.g,
-					isWrappedRedditBannerEnabled: h.a,
+					isWrappedRedditBannerEnabled: O.a,
 					isInboxInfiniteScrollEnabled: m.c,
 					isInboxPolicyBannerEnabled: m.e,
 					isInboxPostEmbedEnabled: m.a,
-					isPending: O.e,
+					isPending: h.e,
 					messagesBadgeCount: g.h,
-					notifications: e => Object(m.c)(e) ? Object(O.f)(e) : Object(O.g)(e)
+					notifications: e => Object(m.c)(e) ? Object(h.f)(e) : Object(h.g)(e)
 				}),
-				x = Object(o.b)(j, (e, {
+				v = Object(o.b)(j, (e, {
 					desktopNotificationsModalId: t
 				}) => ({
 					blockAwarder: t => e(Object(d.a)(t)),
@@ -336,7 +340,7 @@
 					showBrowserNotificationsPermissionSettings: () => e(Object(c.requestBrowserNotificationPermissionPromptByUser)(t)),
 					updateInboxActivitySeenState: () => e(Object(d.j)())
 				}));
-			t.default = x(({
+			t.default = v(({
 				clearMessageTabBadgeCount: e,
 				cursor: t,
 				decreaseSubredditNotifications: i,
@@ -349,33 +353,33 @@
 				blockAwarder: p,
 				inboxBadgeCount: g,
 				isInboxPolicyBannerEnabled: m,
-				isInboxInfiniteScrollEnabled: h,
-				isInboxPostEmbedEnabled: O,
+				isInboxInfiniteScrollEnabled: O,
+				isInboxPostEmbedEnabled: h,
 				isWrappedRedditBannerEnabled: j,
-				isLoggedIn: x,
-				isOpen: S,
-				isPending: v,
+				isLoggedIn: v,
+				isOpen: x,
+				isPending: S,
 				isPushNotificationsSupported: k,
 				markAllAsRead: w,
 				markNotificationAsRead: N,
 				messagesBadgeCount: y,
 				notifications: _,
 				showBrowserNotificationsPermissionSettings: I,
-				updateInboxActivitySeenState: P,
-				userId: E
+				updateInboxActivitySeenState: E,
+				userId: F
 			}) => {
-				const F = Object(f.a)(),
+				const P = Object(f.a)(),
 					[C, B] = Object(n.useState)("");
 				return Object(n.useEffect)(() => {
-					if (S && !_.length && x) {
+					if (x && !_.length && v) {
 						r({
 							first: 5
 						})
 					}
-					S && x && (P(), F(Object(b.q)({
+					x && v && (E(), P(Object(b.q)({
 						badgeCount: g
 					})))
-				}, [S]), s.a.createElement(l.b, {
+				}, [x]), s.a.createElement(l.b, {
 					activeOverflowMenuId: C,
 					clearMessageTabBadgeCount: e,
 					cursor: t,
@@ -390,83 +394,91 @@
 					inboxBadgeCount: g,
 					isPushNotificationsSupported: k,
 					isInboxPolicyBannerEnabled: m,
-					isInboxInfiniteScrollEnabled: h,
-					isInboxPostEmbedEnabled: O,
+					isInboxInfiniteScrollEnabled: O,
+					isInboxPostEmbedEnabled: h,
 					isWrappedRedditBannerEnabled: j,
-					isLoggedIn: x,
-					isPending: v,
+					isLoggedIn: v,
+					isPending: S,
 					markAllAsRead: w,
 					markNotificationAsRead: N,
 					messagesBadgeCount: y,
 					notifications: _,
 					setActiveOverflowMenuId: B,
 					showBrowserNotificationsPermissionSettings: I,
-					userId: E
+					userId: F
 				})
 			})
 		},
 		"./src/reddit/helpers/trackers/notifications.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "h", (function() {
-				return c
-			})), i.d(t, "d", (function() {
 				return d
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "d", (function() {
 				return u
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "e", (function() {
 				return l
+			})), i.d(t, "f", (function() {
+				return b
 			})), i.d(t, "j", (function() {
-				return f
-			})), i.d(t, "k", (function() {
 				return p
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "k", (function() {
 				return g
+			})), i.d(t, "i", (function() {
+				return m
 			})), i.d(t, "c", (function() {
 				return h
 			})), i.d(t, "b", (function() {
-				return O
-			})), i.d(t, "g", (function() {
 				return j
+			})), i.d(t, "g", (function() {
+				return v
 			})), i.d(t, "a", (function() {
 				return x
+			})), i.d(t, "l", (function() {
+				return S
+			})), i.d(t, "m", (function() {
+				return k
 			}));
 			var n = i("./src/reddit/selectors/telemetry.ts"),
 				s = i("./src/telemetry/index.ts"),
 				o = i("./src/telemetry/models/Event.ts");
-			const r = e => ({
+			var r;
+			! function(e) {
+				e.FREQUENT = "frequent", e.LOW = "low", e.OFF = "off"
+			}(r || (r = {}));
+			const a = e => ({
 					...n.m(e),
 					noun: "desktop_notification_permissions"
 				}),
-				a = e => e ? "enable" : "disable",
-				c = e => {
-					Object(s.a)({
-						...r(e),
-						action: o.c.View,
-						source: "popup"
-					})
-				},
+				c = e => e ? "enable" : "disable",
 				d = e => {
 					Object(s.a)({
-						...r(e),
-						action: o.c.Allow,
+						...a(e),
+						action: o.c.View,
 						source: "popup"
 					})
 				},
 				u = e => {
 					Object(s.a)({
-						...r(e),
-						action: o.c.Block,
+						...a(e),
+						action: o.c.Allow,
 						source: "popup"
 					})
 				},
 				l = e => {
 					Object(s.a)({
-						...r(e),
+						...a(e),
+						action: o.c.Block,
+						source: "popup"
+					})
+				},
+				b = e => {
+					Object(s.a)({
+						...a(e),
 						action: o.c.Close,
 						source: "popup"
 					})
 				},
-				b = (e, t, i) => ({
+				f = (e, t, i) => ({
 					...n.m(e),
 					actionInfo: n.c(e, {
 						success: t,
@@ -474,50 +486,50 @@
 					}),
 					noun: "push_token"
 				}),
-				f = e => {
+				p = e => {
 					Object(s.a)({
-						...b(e, !0),
+						...f(e, !0),
 						action: o.c.Request,
 						source: "notification"
 					})
 				},
-				p = e => {
+				g = e => {
 					Object(s.a)({
-						...b(e, !0),
+						...f(e, !0),
 						action: o.c.Register,
 						source: "notification"
 					})
 				},
-				g = (e, t) => {
+				m = (e, t) => {
 					Object(s.a)({
-						...b(e, !1, t),
+						...f(e, !1, t),
 						action: o.c.Bail,
 						source: "notification"
 					})
 				},
-				m = e => ({
+				O = e => ({
 					...n.m(e),
 					noun: "push_notification"
 				}),
 				h = e => ({
-					...m(e),
+					...O(e),
 					notification: n.C(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
-				O = (e, t) => i => ({
+				j = (e, t) => i => ({
 					...n.m(i),
-					action: a(e),
+					action: c(e),
 					email: {
 						type: t
 					},
 					noun: "email",
 					source: "email_app_settings"
 				}),
-				j = (e, t) => i => ({
+				v = (e, t) => i => ({
 					...n.m(i),
-					action: a(e),
+					action: c(e),
 					notification: {
 						type: t
 					},
@@ -527,10 +539,29 @@
 				x = e => t => ({
 					...n.m(t),
 					source: "email_app_settings",
-					action: a(e),
+					action: c(e),
 					noun: "email",
 					notification: {
 						type: "all"
+					}
+				}),
+				S = (e, t, i) => s => ({
+					...n.m(s),
+					action: "set_frequency",
+					noun: i,
+					source: "community_notifications",
+					subreddit: {
+						id: e,
+						name: t.toLowerCase()
+					}
+				}),
+				k = () => e => ({
+					...n.m(e),
+					action: o.c.View,
+					noun: "screen",
+					source: "global",
+					actionInfo: {
+						pageType: "community_alerts"
 					}
 				})
 		},
@@ -539,4 +570,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.4b488c90a5bdf8fa8750.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.3506fcc3e61a38e851d1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.086077047995667304b0.js
-// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.e247fca2dc073ab01e04.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -826,7 +826,7 @@
 					if (!P.platform.currentPage) return;
 					if (200 !== P.platform.currentPage.status) return;
 					const T = Object(b.m)(r(), N),
-						F = Object(v.mb)(P, {
+						F = Object(v.rb)(P, {
 							userName: g
 						}).id;
 					t(C.m({
@@ -1210,7 +1210,7 @@
 							await r(Object(c.o)(t.name))
 						}
 					})(), (async () => {
-						const s = Object(E.mb)(n, {
+						const s = Object(E.rb)(n, {
 							userName: t
 						});
 						if (!s) return;
@@ -1423,7 +1423,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(v.mb)(e, {
+				user: (e, t) => Object(v.rb)(e, {
 					userName: t.username
 				})
 			});
@@ -1761,7 +1761,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: v.mb,
+					user: v.rb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(h.d)(e, {
@@ -2912,7 +2912,7 @@
 				subreddits: function(e, {
 					profileName: t
 				}) {
-					const r = Object(m.mb)(e, {
+					const r = Object(m.rb)(e, {
 							userName: t
 						}),
 						s = Object(u.f)(e);
@@ -3537,7 +3537,7 @@
 				}) : null,
 				user: (e, {
 					subredditOrProfile: t
-				}) => t.type === l.a.PROFILE ? Object(b.mb)(e, {
+				}) => t.type === l.a.PROFILE ? Object(b.rb)(e, {
 					userName: t.name
 				}) : null
 			}), O = Object(o.b)(j, e => ({
@@ -5152,4 +5152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.086077047995667304b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.e247fca2dc073ab01e04.js.map

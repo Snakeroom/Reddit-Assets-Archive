@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.502dedd3f79233a1b980.js
-// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.6479a573625278a9c247.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -427,6 +427,14 @@
 				return c
 			})), n.d(t, "g", (function() {
 				return d
+			})), n.d(t, "h", (function() {
+				return l
+			})), n.d(t, "i", (function() {
+				return u
+			})), n.d(t, "j", (function() {
+				return m
+			})), n.d(t, "k", (function() {
+				return p
 			}));
 			const s = "NOTIFICATION_EMAIL_SETTINGS_LAYOUT__FAILED",
 				r = "NOTIFICATION_EMAIL_SETTINGS_LAYOUT__LOADED",
@@ -434,35 +442,44 @@
 				o = "NOTIFICATION_PUSH_SETTINGS_LAYOUT__FAILED",
 				i = "NOTIFICATION_PUSH_SETTINGS_LAYOUT__LOADED",
 				c = "NOTIFICATION_PUSH_SETTINGS_LAYOUT__PENDING",
-				d = "NOTIFICATION_SETTINGS_LAYOUT_UPDATED"
+				d = "NOTIFICATION_SETTINGS_LAYOUT_UPDATED",
+				l = "NOTIFICATION_SUBSCRIBED_SUBREDDITS_FAILED",
+				u = "NOTIFICATION_SUBSCRIBED_SUBREDDITS_LOADED",
+				m = "NOTIFICATION_SUBSCRIBED_SUBREDDITS_PENDING",
+				p = "NOTIFICATION_SUBSCRIBED_SUBREDDITS_UPDATED"
 		},
 		"./src/reddit/actions/notificationSettingsLayout/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return f
-			})), n.d(t, "b", (function() {
 				return x
+			})), n.d(t, "d", (function() {
+				return E
+			})), n.d(t, "e", (function() {
+				return v
 			})), n.d(t, "c", (function() {
-				return _
+				return C
+			})), n.d(t, "b", (function() {
+				return j
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
 				a = n("./src/reddit/actions/notificationSettingsLayout/constants.ts"),
 				o = n("./src/reddit/actions/toaster.ts"),
-				i = n("./src/reddit/endpoints/notificationsSettings/layoutByChannelEndpoint.ts");
-			n("./src/lib/makeGqlRequest/index.ts"), n("./src/redditGQL/operations/UserSubredditsNotificationsLevel.json");
-			var c = n("./src/reddit/models/NotificationSettingsLayout/index.ts"),
-				d = n("./src/reddit/models/Toast/index.ts");
-			const l = Object(r.a)(a.c),
-				u = Object(r.a)(a.b),
-				m = Object(r.a)(a.a),
-				p = Object(r.a)(a.f),
-				b = Object(r.a)(a.e),
-				h = Object(r.a)(a.d),
-				f = e => async (t, n, {
+				i = n("./src/reddit/endpoints/notificationsSettings/layoutByChannelEndpoint.ts"),
+				c = n("./src/lib/makeGqlRequest/index.ts"),
+				d = n("./src/redditGQL/operations/UserSubredditsNotificationsLevel.json");
+			var l = n("./src/reddit/models/NotificationSettingsLayout/index.ts"),
+				u = n("./src/reddit/models/Toast/index.ts");
+			const m = Object(r.a)(a.c),
+				p = Object(r.a)(a.b),
+				b = Object(r.a)(a.a),
+				h = Object(r.a)(a.f),
+				f = Object(r.a)(a.e),
+				g = Object(r.a)(a.d),
+				x = e => async (t, n, {
 					gqlContext: s
 				}) => {
-					e === c.a.Push ? t(p()) : t(l()), await async function(e, t, n) {
+					e === l.a.Push ? t(h()) : t(m()), await async function(e, t, n) {
 						const s = await Object(i.a)(e(), {
 							channel: t
 						});
@@ -517,28 +534,28 @@
 									}
 								}(s)
 							}(s.body);
-							t === c.a.Push ? n(b(e)) : n(u(e))
-						} else t === c.a.Push ? n(h({
+							t === l.a.Push ? n(f(e)) : n(p(e))
+						} else t === l.a.Push ? n(g({
 							error: s.error
-						})) : n(m({
+						})) : n(b({
 							error: s.error
 						}))
 					}(s, e, t)
 				};
-			const g = Object(r.a)(a.g),
-				x = e => async (t, n, {
+			const _ = Object(r.a)(a.g),
+				E = e => async (t, n, {
 					gqlContext: r
 				}) => {
-					(await Object(i.b)(r(), e)).ok ? (_(t, e), function(e) {
+					(await Object(i.b)(r(), e)).ok ? (v(t, e), function(e) {
 						e(Object(o.f)({
-							kind: d.b.SuccessCommunity,
+							kind: u.b.SuccessCommunity,
 							text: s.fbt._("Changes saved", null, {
 								hk: "UBoVR"
 							})
 						}))
 					}(t)) : function(e) {
 						e(Object(o.f)({
-							kind: d.b.Error,
+							kind: u.b.Error,
 							text: s.fbt._("We had some issues saving your changes. Please try again.", null, {
 								hk: "1OvQi6"
 							})
@@ -546,12 +563,40 @@
 					}(t)
 				};
 
-			function _(e, t) {
-				e(g({
+			function v(e, t) {
+				e(_({
 					isEnabled: t.isEnabled,
 					messageType: t.messageType
 				}))
 			}
+			const y = Object(r.a)(a.j),
+				O = Object(r.a)(a.i),
+				C = Object(r.a)(a.k),
+				S = Object(r.a)(a.h),
+				j = e => async (t, n, {
+					gqlContext: s
+				}) => {
+					var r, a;
+					t(y());
+					const i = await ((e, t) => Object(c.a)(e, {
+						...d,
+						variables: t
+					}))(s(), e);
+					if (null === (a = null === (r = i.error) || void 0 === r ? void 0 : r.fields) || void 0 === a ? void 0 : a.length) return t(S({
+						error: i.error
+					})), void t(Object(o.d)());
+					if (i.ok && i.body) {
+						const e = i.body,
+							n = e && e.data,
+							s = n && n.identity && n.identity.subscribedSubreddits,
+							r = s && s.pageInfo,
+							a = (s && s.edges).map(e => e.node);
+						t(O({
+							nodes: a,
+							pageInfo: r
+						}))
+					}
+				}
 		},
 		"./src/reddit/actions/notifications/utils.ts": function(e, t, n) {
 			"use strict";
@@ -943,32 +988,33 @@
 		"./src/reddit/actions/subreddit/notifications.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return u
+				return m
 			})), n.d(t, "b", (function() {
-				return h
+				return f
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
-				a = n("./src/reddit/actions/notificationsInbox/index.ts"),
-				o = n("./src/reddit/actions/subreddit/constants.ts"),
-				i = n("./src/reddit/actions/toaster.ts"),
-				c = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
-				d = n("./src/reddit/models/Subreddit/index.ts"),
-				l = n("./src/reddit/models/Toast/index.ts");
-			const u = Object(r.a)(o.u),
-				m = Object(r.a)(o.t),
-				p = Object(r.a)(o.s),
-				b = e => {
+				a = n("./src/reddit/actions/notificationSettingsLayout/index.ts"),
+				o = n("./src/reddit/actions/notificationsInbox/index.ts"),
+				i = n("./src/reddit/actions/subreddit/constants.ts"),
+				c = n("./src/reddit/actions/toaster.ts"),
+				d = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
+				l = n("./src/reddit/models/Subreddit/index.ts"),
+				u = n("./src/reddit/models/Toast/index.ts");
+			const m = Object(r.a)(i.u),
+				p = Object(r.a)(i.t),
+				b = Object(r.a)(i.s),
+				h = e => {
 					switch (e) {
-						case d.b.OFF:
+						case l.b.OFF:
 							return s.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
 								hk: "3e1CJR"
 							});
-						case d.b.FREQUENT:
+						case l.b.FREQUENT:
 							return s.fbt._("Followed! Now you’ll get updates on new activity.", null, {
 								hk: "3JzOOa"
 							});
-						case d.b.LOW:
+						case l.b.LOW:
 							return s.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
 								hk: "4x3TS8"
 							});
@@ -976,51 +1022,54 @@
 							return null
 					}
 				};
-			const h = ({
+			const f = ({
 				subredditId: e,
 				notificationLevel: t,
 				successCallback: n,
 				undoCallback: r
-			}) => async (o, h, {
-				gqlContext: f
+			}) => async (i, f, {
+				gqlContext: g
 			}) => {
-				var g, x, _;
-				o(m());
-				const E = (e => {
+				var x, _, E;
+				i(p());
+				const v = (e => {
 						switch (e) {
-							case d.b.FREQUENT:
+							case l.b.FREQUENT:
 								return {
 									isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
 								};
-							case d.b.LOW:
+							case l.b.LOW:
 								return {
 									isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
 								};
-							case d.b.OFF:
+							case l.b.OFF:
 							default:
 								return {
 									isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
 								}
 						}
 					})(t),
-					v = await Object(c.b)(f(), e, E);
-				if ((null === (x = null === (g = v.error) || void 0 === g ? void 0 : g.fields) || void 0 === x ? void 0 : x.length) || function(e) {
+					y = await Object(d.b)(g(), e, v);
+				if ((null === (_ = null === (x = y.error) || void 0 === x ? void 0 : x.fields) || void 0 === _ ? void 0 : _.length) || function(e) {
 						return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
-					}(v.body) && (null === (_ = v.body.data.updateSubredditNotificationSettings.errors) || void 0 === _ ? void 0 : _.length)) return o(p()), o(Object(i.f)({
-					kind: l.b.Error,
+					}(y.body) && (null === (E = y.body.data.updateSubredditNotificationSettings.errors) || void 0 === E ? void 0 : E.length)) return i(b()), i(Object(c.f)({
+					kind: u.b.Error,
 					text: s.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
 						hk: "4avFFV"
 					})
 				}));
-				v.ok && (o(u({
+				y.ok && (i(Object(a.c)({
+					subredditId: e,
+					notificationLevel: t
+				})), i(m({
 					subredditAboutInfo: {
 						[e]: {
 							notificationLevel: t
 						}
 					}
-				})), n && n(), o(r ? Object(i.f)(Object(i.e)(b(t), l.b.Undo, s.fbt._("Undo", null, {
+				})), n && n(), i(r ? Object(c.f)(Object(c.e)(h(t), u.b.Undo, s.fbt._("Undo", null, {
 					hk: "46OwLP"
-				}), Object(a.i)(e, r))) : Object(i.f)(Object(i.e)(b(t), l.b.SuccessCommunityGreen))))
+				}), Object(o.i)(e, r))) : Object(c.f)(Object(c.e)(h(t), u.b.SuccessCommunityGreen))))
 			}
 		},
 		"./src/reddit/actions/urlRequested.ts": function(e, t, n) {
@@ -12725,7 +12774,7 @@
 			const l = Object(s.a)(c.a, (e, {
 					listingName: t
 				}) => {
-					const n = Object(i.tb)(e);
+					const n = Object(i.yb)(e);
 					if (!n) return !1;
 					let s;
 					if (-1 === [a.R, "r/popular"].indexOf(t)) {
@@ -13450,4 +13499,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.502dedd3f79233a1b980.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6479a573625278a9c247.js.map

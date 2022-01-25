@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.83d2980a7356eefedd8a.js
-// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.f3e5dc197c7632c9e2f7.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -1501,7 +1501,7 @@
 					activeModalId: de.a,
 					claimedFreeAward: j.b,
 					layout: V.R,
-					userIsOp: H.pb,
+					userIsOp: H.ub,
 					subreddit: V.r,
 					isBlockedUserBannerEnabled: (e, {
 						post: t
@@ -3017,7 +3017,7 @@
 						pageLayer: n
 					}) => Object(R.E)(e, {
 						pageLayer: n
-					}) && t && s && Object(te.nb)(e, {
+					}) && t && s && Object(te.sb)(e, {
 						userName: o.author
 					}),
 					hasSubredditRules: ee.h,
@@ -4271,4 +4271,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.83d2980a7356eefedd8a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.f3e5dc197c7632c9e2f7.js.map

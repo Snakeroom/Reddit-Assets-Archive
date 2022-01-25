@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.6dbcc3ba7276ce3bceb6.js
-// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.08ecb15e0fb61cd9927e.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~StandalonePostPage"], {
 		"./src/reddit/components/AdLinkWrapperContent/index.m.less": function(e, t, s) {
@@ -1872,7 +1872,7 @@
 				showEditFlair: Re.a,
 				subredditOrProfile: U.V,
 				isEditing: V.M,
-				userIsOp: H.pb,
+				userIsOp: H.ub,
 				isVoteCountAnimation: (e, t) => !!t.isActionBarAnimationEnabled && Object(Me.f)(e, {
 					postId: t.postId
 				}),
@@ -2619,7 +2619,7 @@
 					J = D && Object(O.h)(D),
 					q = Object(r.e)(e => {
 						if (!J) return !0;
-						const t = Object(P.sb)(e, F.author || "");
+						const t = Object(P.xb)(e, F.author || "");
 						return !t || t.enableFollowers
 					});
 				return a.a.createElement("div", {
@@ -2901,4 +2901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.6dbcc3ba7276ce3bceb6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.08ecb15e0fb61cd9927e.js.map

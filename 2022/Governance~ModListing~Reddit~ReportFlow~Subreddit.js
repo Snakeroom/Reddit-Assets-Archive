@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.c50bf88e2bc1e6323235.js
-// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.9cca1045219d92d20837.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -9767,7 +9767,7 @@
 					if (!o) return null;
 					const c = Object(s.k)(e);
 					if (!(c && Object(i.e)(c).toLowerCase() === t.toLowerCase())) return o;
-					const a = Object(s.mb)(e, {
+					const a = Object(s.rb)(e, {
 						userName: t
 					});
 					return a ? a.prefShowTwitter ? o : null : o
@@ -10585,4 +10585,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.c50bf88e2bc1e6323235.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.9cca1045219d92d20837.js.map

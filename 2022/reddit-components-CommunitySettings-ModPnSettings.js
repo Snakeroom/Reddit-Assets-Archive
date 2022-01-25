@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.3f65df4e3f106f1f5e7c.js
-// Retrieved at 1/25/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.236d3a6f5f626eba9131.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CommunitySettings-ModPnSettings"], {
 		"./src/reddit/components/CommunitySettings/ModPnSettings/index.m.less": function(e, t, n) {
@@ -13,9 +13,9 @@
 		"./src/reddit/components/CommunitySettings/ModPnSettings/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "DEBOUNCE_DELAY_MS", (function() {
-				return K
+				return J
 			})), n.d(t, "default", (function() {
-				return U
+				return Q
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var a = n("./node_modules/lodash/debounce.js"),
@@ -57,7 +57,7 @@
 						}
 					}
 				},
-				S = e => t => {
+				_ = e => t => {
 					return {
 						source: "mod_pn_settings",
 						action: "click",
@@ -68,7 +68,7 @@
 						}
 					}
 				},
-				_ = e => t => {
+				S = e => t => {
 					const n = u.m(t),
 						a = e.id,
 						s = e.id.toUpperCase();
@@ -101,9 +101,9 @@
 				};
 			var y = n("./src/reddit/hooks/useTracking.ts"),
 				h = n("./src/reddit/components/CommunitySettings/ModPnSettings/index.m.less"),
-				x = n.n(h);
+				E = n.n(h);
 
-			function E({
+			function x({
 				settingLayoutData: e,
 				disabled: t,
 				isAuto: n,
@@ -124,7 +124,7 @@
 						color: "var(--newCommunityTheme-active)"
 					}, e), {}),
 					b = n ? a : s,
-					S = u.replace("{count}", `${b}`);
+					_ = u.replace("{count}", `${b}`);
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement(c.p, {
 					on: !n,
 					onClick: () => {
@@ -149,14 +149,14 @@
 							currentRange: d[e.target.value]
 						})
 					},
-					label: S,
+					label: _,
 					disabled: n || t,
 					hideSubtext: !0,
-					className: x.a.RangeSetting
+					className: E.a.RangeSetting
 				}))
 			}
 
-			function L({
+			function C({
 				isEnabled: e,
 				onChange: t,
 				settingLayoutData: n
@@ -198,7 +198,7 @@
 				})
 			}
 
-			function C(e, t, n) {
+			function L(e, t, n) {
 				const a = t.pages[e].sections.map(e => t.sections[e].rows).flat().map(e => n[e]),
 					[s] = a.filter(e => m.includes(e.id.toUpperCase()));
 				if (s && !s.isEnabled) return "Disabled";
@@ -206,7 +206,7 @@
 				return o.isAuto ? `${o.autoRange}` : `${o.currentRange}`
 			}
 
-			function k({
+			function w({
 				isSectionDisabled: e,
 				layoutData: t,
 				pushPage: n,
@@ -219,11 +219,11 @@
 						return i.a.createElement(l, {
 							pageLayoutData: a,
 							pushPage: n,
-							displayValue: a.displayValue ? C(a.id, t, s) : null
+							displayValue: a.displayValue ? L(a.id, t, s) : null
 						});
 					case "ModPnSettingsLayoutRowSectionToggle": {
 						const e = s[a.id];
-						return i.a.createElement(L, {
+						return i.a.createElement(C, {
 							settingLayoutData: a,
 							onChange: o,
 							isEnabled: e.isEnabled
@@ -240,7 +240,7 @@
 					}
 					case "ModPnSettingsLayoutRowRange": {
 						const t = s[a.id];
-						return i.a.createElement(E, {
+						return i.a.createElement(x, {
 							settingLayoutData: a,
 							disabled: e,
 							onChange: o,
@@ -253,7 +253,7 @@
 						return null
 				}
 			}
-			var w = n("./src/reddit/components/Settings/shared/SectionHeading.tsx");
+			var P = n("./src/reddit/components/Settings/shared/SectionHeading.tsx");
 
 			function j({
 				layoutData: e,
@@ -274,7 +274,7 @@
 					const e = a[l.id];
 					u = !e.isEnabled
 				}
-				return i.a.createElement("div", null, !!r && i.a.createElement(w.a, null, r), c.map(n => i.a.createElement(k, {
+				return i.a.createElement("div", null, !!r && i.a.createElement(P.a, null, r), c.map(n => i.a.createElement(w, {
 					isSectionDisabled: u,
 					key: n.id,
 					layoutData: e,
@@ -284,11 +284,11 @@
 					updateSetting: s
 				})))
 			}
-			var R = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
-				P = n("./src/reddit/components/StructuredStyles/Breadcrumbs/index.tsx"),
-				D = n("./src/reddit/components/TrackingHelper/index.tsx");
+			var k = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				R = n("./src/reddit/components/StructuredStyles/Breadcrumbs/index.tsx"),
+				O = n("./src/reddit/components/TrackingHelper/index.tsx");
 
-			function O({
+			function N({
 				goBack: e,
 				layoutData: t,
 				pageId: n,
@@ -298,21 +298,21 @@
 				subredditName: d,
 				updateSetting: l
 			}) {
-				const u = Object(D.b)(),
+				const u = Object(O.b)(),
 					g = t.pages[n],
 					{
 						title: m,
 						description: p,
-						sections: S
+						sections: _
 					} = g;
 				return Object(o.useEffect)(() => {
 					u(b(n))
 				}, [u, n]), i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
-					className: x.a.TitleContainer
+					className: E.a.TitleContainer
 				}, r && i.a.createElement(c.f, {
 					onClick: e,
 					"data-testid": "mod-pns-back-button"
-				}, i.a.createElement(P.a, null)), i.a.createElement(R.b, null, m)), i.a.createElement(w.a, null, !!p && p.replace("{community}", d)), S.map(e => i.a.createElement(j, {
+				}, i.a.createElement(R.a, null)), i.a.createElement(k.b, null, m)), i.a.createElement(P.a, null, !!p && p.replace("{community}", d)), _.map(e => i.a.createElement(j, {
 					sectionId: e,
 					layoutData: t,
 					settings: s,
@@ -321,27 +321,19 @@
 					key: e
 				})))
 			}
-			var N = n("./src/reddit/components/Settings/Notifications/LoadingState/index.tsx"),
-				M = n("./src/lib/makeGqlRequest/index.ts"),
-				T = n("./src/redditGQL/operations/GetModPnSettingsLayout.json"),
-				B = n("./src/redditGQL/operations/UpdateModPnSettingStatus.json"),
-				A = n("./src/redditGQL/operations/UpdateModPnSettingThreshold.json");
-			const I = (e, t) => Object(M.a)(e, {
-					...T,
+			var M = n("./src/reddit/components/Settings/Notifications/LoadingSection.tsx"),
+				D = n("./src/lib/makeGqlRequest/index.ts"),
+				A = n("./src/redditGQL/operations/GetModPnSettingsLayout.json"),
+				T = n("./src/redditGQL/operations/UpdateModPnSettingStatus.json"),
+				B = n("./src/redditGQL/operations/UpdateModPnSettingThreshold.json");
+			const I = (e, t) => Object(D.a)(e, {
+					...A,
 					variables: {
 						subredditIds: [t]
 					}
 				}),
-				G = (e, t) => "threshold" in t ? H(e, t) : V(e, t),
-				H = (e, t) => Object(M.a)(e, {
-					...A,
-					variables: {
-						input: {
-							...t
-						}
-					}
-				}),
-				V = (e, t) => Object(M.a)(e, {
+				V = (e, t) => "threshold" in t ? G(e, t) : q(e, t),
+				G = (e, t) => Object(D.a)(e, {
 					...B,
 					variables: {
 						input: {
@@ -349,7 +341,15 @@
 						}
 					}
 				}),
-				q = e => {
+				q = (e, t) => Object(D.a)(e, {
+					...T,
+					variables: {
+						input: {
+							...t
+						}
+					}
+				}),
+				H = e => {
 					const {
 						subredditsInfoByIds: t
 					} = e, n = {};
@@ -397,19 +397,19 @@
 					}), n
 				};
 			var Y = n("./src/reddit/hooks/useGqlContext.ts");
-			const K = 500;
+			const J = 500;
 
-			function U(e) {
+			function Q(e) {
 				const {
 					subredditId: t,
 					subredditName: n
-				} = e, [a, c] = Object(o.useState)(null), [l, u] = Object(o.useState)({}), [b, f] = Object(o.useState)(!0), h = Object(Y.a)(), x = Object(r.d)(), E = Object(y.a)(), [L, v] = Object(o.useState)(["page__root"]);
+				} = e, [a, c] = Object(o.useState)(null), [l, u] = Object(o.useState)({}), [b, f] = Object(o.useState)(!0), h = Object(Y.a)(), E = Object(r.d)(), x = Object(y.a)(), [C, v] = Object(o.useState)(["page__root"]);
 				Object(o.useEffect)(() => {
 					(async () => {
 						const e = await I(h(), t);
 						if (e && e.ok) {
 							const n = e.body,
-								a = q(n.data)[t],
+								a = H(n.data)[t],
 								s = {};
 							Object.values(a.rows).map(e => {
 								if ("ModPnSettingsLayoutRowRange" === e.__typename) {
@@ -437,10 +437,10 @@
 									}
 								}
 							}), c(a), u(s), f(!1)
-						} else x(Object(d.d)())
+						} else E(Object(d.d)())
 					})()
 				}, []);
-				const C = Object(o.useCallback)(s()(async ({
+				const L = Object(o.useCallback)(s()(async ({
 					oldSetting: e,
 					newSetting: n
 				}) => {
@@ -463,8 +463,8 @@
 						}
 					}(n, t);
 					if (!a) return;
-					const s = await G(h(), a);
-					if (s.ok && E(_(n)), !s.ok) {
+					const s = await V(h(), a);
+					if (s.ok && x(S(n)), !s.ok) {
 						const {
 							id: t
 						} = e;
@@ -473,15 +473,17 @@
 							[t]: {
 								...e
 							}
-						}), x(Object(d.d)())
+						}), E(Object(d.d)())
 					}
-				}, K), []);
-				if (b || !a) return i.a.createElement(N.a, null);
-				const k = L[L.length - 1],
-					w = L.length > 1;
-				return i.a.createElement(O, {
-					pageId: k,
-					showBackButton: w,
+				}, J), []);
+				if (b || !a) return i.a.createElement(M.a, {
+					rowsCount: 5
+				});
+				const w = C[C.length - 1],
+					P = C.length > 1;
+				return i.a.createElement(N, {
+					pageId: w,
+					showBackButton: P,
 					updateSetting: (e, t) => {
 						const n = l[e],
 							a = {
@@ -493,7 +495,7 @@
 							[e]: {
 								...a
 							}
-						}), C({
+						}), L({
 							oldSetting: n,
 							newSetting: a
 						})
@@ -501,11 +503,11 @@
 					layoutData: a,
 					settings: l,
 					pushPage: e => {
-						v([...L, e]), E(S(e))
+						v([...C, e]), x(_(e))
 					},
 					goBack: () => {
-						if (1 === L.length) return;
-						const e = [...L];
+						if (1 === C.length) return;
+						const e = [...C];
 						e.pop(), v(e)
 					},
 					subredditName: n
@@ -538,38 +540,47 @@
 				r = a.a.div("PageTitle", o.a),
 				d = a.a.div("TopBar", o.a)
 		},
-		"./src/reddit/components/Settings/Notifications/LoadingState/index.m.less": function(e, t, n) {
-			e.exports = {
-				LoadingSectionHeader: "O4PpMIHtSZRm2uXmmvBkX",
-				loadingSectionHeader: "O4PpMIHtSZRm2uXmmvBkX",
-				glimmer: "_3J09VVJDa8w9BsFag7OBI2",
-				LoadingToggleWrapper: "_3mYFgWNYqADfQo8_Ld8G3r",
-				loadingToggleWrapper: "_3mYFgWNYqADfQo8_Ld8G3r",
-				LoadingToggleName: "_3JRyG4NgltIykHiWDtHxkK",
-				loadingToggleName: "_3JRyG4NgltIykHiWDtHxkK",
-				LoadingToggleButton: "_3iDAL20rOm8LbD0TlhrWmK",
-				loadingToggleButton: "_3iDAL20rOm8LbD0TlhrWmK"
-			}
-		},
-		"./src/reddit/components/Settings/Notifications/LoadingState/index.tsx": function(e, t, n) {
+		"./src/reddit/components/Settings/Notifications/LoadingSection.tsx": function(e, t, n) {
 			"use strict";
-			var a = n("./node_modules/react/index.js"),
+			n.d(t, "a", (function() {
+				return c
+			}));
+			var a = n("./node_modules/lodash/times.js"),
 				s = n.n(a),
-				o = n("./src/lib/lessComponent.tsx"),
-				i = n("./node_modules/lodash/times.js"),
-				r = n.n(i),
-				d = n("./src/reddit/components/Settings/Notifications/LoadingState/index.m.less"),
-				c = n.n(d);
-			const l = o.a.div("LoadingSectionHeader", c.a),
-				u = o.a.div("LoadingToggleWrapper", c.a),
-				g = o.a.span("LoadingToggleName", c.a),
-				m = o.a.span("LoadingToggleButton", c.a);
-			t.a = () => s.a.createElement("div", {
+				o = n("./node_modules/react/index.js"),
+				i = n.n(o),
+				r = n("./src/reddit/components/Settings/Notifications/index.m.less"),
+				d = n.n(r);
+			const c = ({
+				rowsCount: e
+			}) => i.a.createElement("div", {
 				role: "alert",
 				"aria-busy": "true"
-			}, s.a.createElement(l, null), r()(5, e => s.a.createElement(u, {
+			}, i.a.createElement("div", {
+				className: d.a.loadingSectionHeader
+			}), s()(e, e => i.a.createElement("div", {
+				className: d.a.loadingToggleWrapper,
 				key: e
-			}, s.a.createElement(g, null), s.a.createElement(m, null))))
+			}, i.a.createElement("span", {
+				className: d.a.loadingToggleName
+			}), i.a.createElement("span", {
+				className: d.a.loadingToggleButton
+			}))))
+		},
+		"./src/reddit/components/Settings/Notifications/index.m.less": function(e, t, n) {
+			e.exports = {
+				loadingSectionHeader: "_1JAbJoDWgS5w77rjLy_a7c",
+				glimmer: "_1VqfnmhCxLKQ6Pb1zId6Ip",
+				loadingToggleWrapper: "_3hfCPonrfNQjCQe_kHaSDY",
+				loadingToggleName: "_2nmcEilpCLrMUDYAFuRPhZ",
+				loadingToggleButton: "RXOVV5JR-ysmH1CtOhOzv",
+				errorMessage: "_3wk25QxRP-Wk1zL9JaaNAH",
+				ModPnSettingsSubredditList: "_1Wq_iiOCv9Zlu6GiZmzuEY",
+				modPnSettingsSubredditList: "_1Wq_iiOCv9Zlu6GiZmzuEY",
+				communityAlert: "_1kjkPylfnJVOQOlvkz5mRN",
+				header: "_3ppHgcPj1O00wgJFJhnPgl",
+				arrow: "_2TrPYhNtc4V7otMW_Lfj3L"
+			}
 		},
 		"./src/reddit/components/StructuredStyles/Breadcrumbs/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -644,4 +655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.3f65df4e3f106f1f5e7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.236d3a6f5f626eba9131.js.map

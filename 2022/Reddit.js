@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.fe0042a4c2f5bc19d3c6.js
-// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.dc8016c98114953e5505.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1513,30 +1513,35 @@
 		"./src/reddit/actions/notificationSettingsLayout/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return f
-			})), n.d(t, "b", (function() {
 				return C
+			})), n.d(t, "d", (function() {
+				return v
+			})), n.d(t, "e", (function() {
+				return x
 			})), n.d(t, "c", (function() {
-				return O
+				return j
+			})), n.d(t, "b", (function() {
+				return S
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/makeActionCreator/index.ts"),
 				o = n("./src/reddit/actions/notificationSettingsLayout/constants.ts"),
 				a = n("./src/reddit/actions/toaster.ts"),
-				i = n("./src/reddit/endpoints/notificationsSettings/layoutByChannelEndpoint.ts");
-			n("./src/lib/makeGqlRequest/index.ts"), n("./src/redditGQL/operations/UserSubredditsNotificationsLevel.json");
-			var c = n("./src/reddit/models/NotificationSettingsLayout/index.ts"),
-				d = n("./src/reddit/models/Toast/index.ts");
-			const l = Object(r.a)(o.c),
-				u = Object(r.a)(o.b),
-				m = Object(r.a)(o.a),
-				p = Object(r.a)(o.f),
-				b = Object(r.a)(o.e),
-				h = Object(r.a)(o.d),
-				f = e => async (t, n, {
+				i = n("./src/reddit/endpoints/notificationsSettings/layoutByChannelEndpoint.ts"),
+				c = n("./src/lib/makeGqlRequest/index.ts"),
+				d = n("./src/redditGQL/operations/UserSubredditsNotificationsLevel.json");
+			var l = n("./src/reddit/models/NotificationSettingsLayout/index.ts"),
+				u = n("./src/reddit/models/Toast/index.ts");
+			const m = Object(r.a)(o.c),
+				p = Object(r.a)(o.b),
+				b = Object(r.a)(o.a),
+				h = Object(r.a)(o.f),
+				f = Object(r.a)(o.e),
+				g = Object(r.a)(o.d),
+				C = e => async (t, n, {
 					gqlContext: s
 				}) => {
-					e === c.a.Push ? t(p()) : t(l()), await async function(e, t, n) {
+					e === l.a.Push ? t(h()) : t(m()), await async function(e, t, n) {
 						const s = await Object(i.a)(e(), {
 							channel: t
 						});
@@ -1591,28 +1596,28 @@
 									}
 								}(s)
 							}(s.body);
-							t === c.a.Push ? n(b(e)) : n(u(e))
-						} else t === c.a.Push ? n(h({
+							t === l.a.Push ? n(f(e)) : n(p(e))
+						} else t === l.a.Push ? n(g({
 							error: s.error
-						})) : n(m({
+						})) : n(b({
 							error: s.error
 						}))
 					}(s, e, t)
 				};
-			const g = Object(r.a)(o.g),
-				C = e => async (t, n, {
+			const O = Object(r.a)(o.g),
+				v = e => async (t, n, {
 					gqlContext: r
 				}) => {
-					(await Object(i.b)(r(), e)).ok ? (O(t, e), function(e) {
+					(await Object(i.b)(r(), e)).ok ? (x(t, e), function(e) {
 						e(Object(a.f)({
-							kind: d.b.SuccessCommunity,
+							kind: u.b.SuccessCommunity,
 							text: s.fbt._("Changes saved", null, {
 								hk: "UBoVR"
 							})
 						}))
 					}(t)) : function(e) {
 						e(Object(a.f)({
-							kind: d.b.Error,
+							kind: u.b.Error,
 							text: s.fbt._("We had some issues saving your changes. Please try again.", null, {
 								hk: "1OvQi6"
 							})
@@ -1620,12 +1625,40 @@
 					}(t)
 				};
 
-			function O(e, t) {
-				e(g({
+			function x(e, t) {
+				e(O({
 					isEnabled: t.isEnabled,
 					messageType: t.messageType
 				}))
 			}
+			const y = Object(r.a)(o.j),
+				E = Object(r.a)(o.i),
+				j = Object(r.a)(o.k),
+				_ = Object(r.a)(o.h),
+				S = e => async (t, n, {
+					gqlContext: s
+				}) => {
+					var r, o;
+					t(y());
+					const i = await ((e, t) => Object(c.a)(e, {
+						...d,
+						variables: t
+					}))(s(), e);
+					if (null === (o = null === (r = i.error) || void 0 === r ? void 0 : r.fields) || void 0 === o ? void 0 : o.length) return t(_({
+						error: i.error
+					})), void t(Object(a.d)());
+					if (i.ok && i.body) {
+						const e = i.body,
+							n = e && e.data,
+							s = n && n.identity && n.identity.subscribedSubreddits,
+							r = s && s.pageInfo,
+							o = (s && s.edges).map(e => e.node);
+						t(E({
+							nodes: o,
+							pageInfo: r
+						}))
+					}
+				}
 		},
 		"./src/reddit/actions/notifications/utils.ts": function(e, t, n) {
 			"use strict";
@@ -8516,7 +8549,7 @@
 						pageLayer: t
 					}) => Object(zt.N)(t) && !!Object(yt.n)(e) && !Object(yt.A)(e) && Object(yt.J)(e) && !Object(yt.H)(e),
 					shouldShowChangeUsernameModals: Dd.c,
-					unreadNotifications: yt.kb
+					unreadNotifications: yt.pb
 				}),
 				zd = Object(p.b)(Kd, (e, t) => ({
 					closeChangeUsernameTooltip: () => e(Object(ci.d)()),
@@ -8703,7 +8736,7 @@
 				user: e.account
 			}))), tl = e => {
 				const t = Object(p.e)(Td.g),
-					n = Object(p.e)(yt.rb),
+					n = Object(p.e)(yt.wb),
 					s = Object(p.e)(Gs.d),
 					r = e.pageLayer,
 					o = U.a.accountManagerOrigin,
@@ -11596,9 +11629,9 @@
 		"./src/reddit/components/InboxTooltip/Component.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return X
+				return ee
 			})), n.d(t, "b", (function() {
-				return ne
+				return re
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -11760,8 +11793,10 @@
 				H = "270px",
 				W = 100,
 				q = .5,
-				V = 5;
-			class K extends o.a.Component {
+				V = 5,
+				K = 55,
+				z = 49;
+			class Q extends o.a.Component {
 				constructor() {
 					super(...arguments), this.container = o.a.createRef(), this.state = {
 						notificationHeights: F,
@@ -11778,7 +11813,7 @@
 						} = this.props, r = t || n;
 						let o = 0;
 						for (const a in e) o += e[a];
-						return 0 === o ? r ? G : s ? U : H : (r && (o += W), o)
+						return 0 === o ? r ? G : s ? U : H : (r && (o += W), o = o - K - z)
 					}, this.setNotificationHeight = (e, t) => {
 						this.setState(n => ({
 							notificationHeights: {
@@ -11879,13 +11914,13 @@
 					}, o.a.createElement("div", null)))
 				}
 			}
-			var z = n("./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts"),
-				Q = n("./src/reddit/helpers/localStorage/index.ts");
-			var J = n("./src/reddit/hooks/useInboxPrivacyPolicyBannerSeen.ts"),
-				Z = n("./src/reddit/hooks/useTracking.ts");
+			var J = n("./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts"),
+				Z = n("./src/reddit/helpers/localStorage/index.ts");
+			var Y = n("./src/reddit/hooks/useInboxPrivacyPolicyBannerSeen.ts"),
+				X = n("./src/reddit/hooks/useTracking.ts");
 
-			function Y() {
-				return (Y = Object.assign || function(e) {
+			function $() {
+				return ($ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -11893,9 +11928,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const X = [],
-				$ = d.a.div("StyledDropdown", N.a),
-				ee = ({
+			const ee = [],
+				te = d.a.div("StyledDropdown", N.a),
+				ne = ({
 					isLoggedIn: e,
 					onMessagesClick: t,
 					onBarClick: n,
@@ -11947,7 +11982,7 @@
 						className: N.a.icon
 					}))))
 				},
-				te = e => o.a.createElement("div", {
+				se = e => o.a.createElement("div", {
 					className: N.a.bottomBar
 				}, o.a.createElement(x.a, {
 					className: N.a.bottomLink,
@@ -11958,8 +11993,8 @@
 				}, s.fbt._("See All", null, {
 					hk: "3L3tFc"
 				}))),
-				ne = e => {
-					const t = Object(Z.a)(),
+				re = e => {
+					const t = Object(X.a)(),
 						{
 							clearMessageTabBadgeCount: n,
 							inboxBadgeCount: s,
@@ -11974,20 +12009,20 @@
 							userId: f
 						} = e,
 						[g, C] = function(e) {
-							const [t, n] = Object(r.useState)(Object(Q.t)(e));
+							const [t, n] = Object(r.useState)(Object(Z.t)(e));
 							return [t, Object(r.useCallback)(() => {
-								n(!0), Object(Q.zb)(e)
+								n(!0), Object(Z.zb)(e)
 							}, [])]
 						}(f),
-						[O, v] = Object(z.a)(f),
-						[x, y] = Object(J.a)(f),
+						[O, v] = Object(J.a)(f),
+						[x, y] = Object(Y.a)(f),
 						E = !(!l || !l.length),
 						j = Object(a.a)(),
 						_ = j === i.a.Closed || j === i.a.Default || j === i.a.Denied,
 						S = b && _ && !O;
-					return o.a.createElement($, null, o.a.createElement("div", {
+					return o.a.createElement(te, null, o.a.createElement("div", {
 						className: N.a.tooltipContainer
-					}, o.a.createElement(ee, {
+					}, o.a.createElement(ne, {
 						markAllAsRead: () => {
 							e.markAllAsRead(), t(Object(R.g)({
 								isMiniInbox: !0
@@ -12003,7 +12038,7 @@
 						sendInboxClickSettings: () => t(Object(R.m)(R.b.MiniInbox)),
 						onBarClick: u,
 						isLoggedIn: p
-					}), o.a.createElement(K, Y({}, e, {
+					}), o.a.createElement(Q, $({}, e, {
 						isPending: c,
 						onItemClick: u,
 						setDesktopNotificationsPromptSeen: v,
@@ -12014,7 +12049,7 @@
 						setDesktopNotificationWrappedRedditBannerSeen: () => {
 							C(), t(Object(R.o)())
 						}
-					})), (E || c) && o.a.createElement(te, {
+					})), (E || c) && o.a.createElement(se, {
 						sendInboxClickSeeAll: () => t(Object(R.l)()),
 						onBarClick: u
 					})))
@@ -12539,6 +12574,8 @@
 				warningIcon: "_2PzKGDccrg-BWzhhzJaJTs",
 				StyledDropdown: "_1i_9WvxHOe7AlJZQ6w_-X9",
 				styledDropdown: "_1i_9WvxHOe7AlJZQ6w_-X9",
+				NotificationsPageStyledDropdown: "F9Tf2jujBnMWs2mF5VyLT",
+				notificationsPageStyledDropdown: "F9Tf2jujBnMWs2mF5VyLT",
 				overflowMenuContainer: "_2UKt6pQu-os9uxZnfhPydP",
 				overflowMenuOption: "_1g8x_Z2KsTf65RBk7dRBZm",
 				placeholderWrapper: "_2iacm7sPgvO9z8gO1W7FoY",
@@ -16484,7 +16521,7 @@
 						[n, s] = Object(c.useState)(null),
 						r = Object(j.a)(),
 						a = Object(d.e)(P.i),
-						i = Object(d.e)(P.rb),
+						i = Object(d.e)(P.wb),
 						u = Object(d.e)(S.a, o.a),
 						b = Object(d.e)(h.c),
 						f = Object(d.e)(h.a),
@@ -16807,9 +16844,9 @@
 				return s ? s.emojisCustomSize : void 0
 			}, (e, t) => {
 				if (t.forceDayMode) return !1;
-				return Object(h.tb)(e).nightmode
+				return Object(h.yb)(e).nightmode
 			}, (e, t) => {
-				const n = Object(h.tb)(e);
+				const n = Object(h.yb)(e);
 				if (Object(h.J)(e)) return !n.hideNSFW;
 				const s = C(e, t);
 				if (s) {
@@ -19594,7 +19631,7 @@
 					action: "click",
 					noun: "block_user",
 					targetUser: {
-						id: Object(o.mb)(t, {
+						id: Object(o.rb)(t, {
 							userName: e
 						}).id
 					},
@@ -19605,7 +19642,7 @@
 					action: "click",
 					noun: "unblock_user",
 					targetUser: {
-						id: Object(o.mb)(t, {
+						id: Object(o.rb)(t, {
 							userName: e
 						}).id
 					},
@@ -23975,7 +24012,7 @@
 					subredditId: t,
 					username: n
 				}) => {
-					const s = Object(a.mb)(e, {
+					const s = Object(a.rb)(e, {
 						userName: n
 					});
 					if (!s) return;
@@ -24655,10 +24692,10 @@
 				o = n("./src/reddit/models/Sso/index.ts"),
 				a = n("./src/reddit/selectors/activeModalId.ts"),
 				i = n("./src/reddit/selectors/user.ts");
-			Object(s.a)(i.qb, e => !(!e || !e.length));
+			Object(s.a)(i.vb, e => !(!e || !e.length));
 			const c = Object(s.a)(i.z, e => !e),
-				d = Object(s.a)(i.qb, e => e && e.find(e => e === o.a.Apple)),
-				l = Object(s.a)(i.qb, e => !(!e || !e.includes(o.a.Google))),
+				d = Object(s.a)(i.vb, e => e && e.find(e => e === o.a.Apple)),
+				l = Object(s.a)(i.vb, e => !(!e || !e.includes(o.a.Google))),
 				u = Object(s.a)(a.a, e => !!e && [r.b, r.d, r.e, r.g].includes(e))
 		},
 		"./src/reddit/selectors/tracking.ts": function(e, t, n) {
@@ -24723,4 +24760,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-Large~9b58114a", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.fe0042a4c2f5bc19d3c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.dc8016c98114953e5505.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.073dbae7b7e074e22e31.js
-// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f3ce8007ba7d45e49343.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/timeUntil/index.ts": function(e, t, n) {
@@ -420,7 +420,7 @@
 				post: e,
 				prediction: t
 			}) => {
-				const n = Object(i.e)(m.ob),
+				const n = Object(i.e)(m.tb),
 					{
 						isLoading: a,
 						selectedVoteOption: r,
@@ -863,7 +863,7 @@
 					prediction: d.g,
 					post: u.H,
 					subredditOrProfile: u.V,
-					userId: m.ob
+					userId: m.tb
 				}),
 				ye = Object(c.u)({
 					isCommentsPage: c.x,
@@ -1009,4 +1009,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.073dbae7b7e074e22e31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f3ce8007ba7d45e49343.js.map

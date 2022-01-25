@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.1c4f1b43bcea4e722c89.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.3e4a86c717b83e32a93f.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -42,32 +42,33 @@
 		"./src/reddit/actions/subreddit/notifications.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return u
+				return m
 			})), n.d(t, "b", (function() {
-				return f
+				return g
 			}));
 			var i = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
-				a = n("./src/reddit/actions/notificationsInbox/index.ts"),
-				r = n("./src/reddit/actions/subreddit/constants.ts"),
-				o = n("./src/reddit/actions/toaster.ts"),
-				c = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
-				d = n("./src/reddit/models/Subreddit/index.ts"),
-				l = n("./src/reddit/models/Toast/index.ts");
-			const u = Object(s.a)(r.u),
-				m = Object(s.a)(r.t),
-				b = Object(s.a)(r.s),
-				p = e => {
+				a = n("./src/reddit/actions/notificationSettingsLayout/index.ts"),
+				r = n("./src/reddit/actions/notificationsInbox/index.ts"),
+				o = n("./src/reddit/actions/subreddit/constants.ts"),
+				c = n("./src/reddit/actions/toaster.ts"),
+				d = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
+				l = n("./src/reddit/models/Subreddit/index.ts"),
+				u = n("./src/reddit/models/Toast/index.ts");
+			const m = Object(s.a)(o.u),
+				b = Object(s.a)(o.t),
+				p = Object(s.a)(o.s),
+				f = e => {
 					switch (e) {
-						case d.b.OFF:
+						case l.b.OFF:
 							return i.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
 								hk: "3e1CJR"
 							});
-						case d.b.FREQUENT:
+						case l.b.FREQUENT:
 							return i.fbt._("Followed! Now you’ll get updates on new activity.", null, {
 								hk: "3JzOOa"
 							});
-						case d.b.LOW:
+						case l.b.LOW:
 							return i.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
 								hk: "4x3TS8"
 							});
@@ -75,51 +76,54 @@
 							return null
 					}
 				};
-			const f = ({
+			const g = ({
 				subredditId: e,
 				notificationLevel: t,
 				successCallback: n,
 				undoCallback: s
-			}) => async (r, f, {
-				gqlContext: g
+			}) => async (o, g, {
+				gqlContext: h
 			}) => {
-				var h, v, x;
-				r(m());
-				const E = (e => {
+				var v, x, E;
+				o(b());
+				const C = (e => {
 						switch (e) {
-							case d.b.FREQUENT:
+							case l.b.FREQUENT:
 								return {
 									isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
 								};
-							case d.b.LOW:
+							case l.b.LOW:
 								return {
 									isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
 								};
-							case d.b.OFF:
+							case l.b.OFF:
 							default:
 								return {
 									isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
 								}
 						}
 					})(t),
-					C = await Object(c.b)(g(), e, E);
-				if ((null === (v = null === (h = C.error) || void 0 === h ? void 0 : h.fields) || void 0 === v ? void 0 : v.length) || function(e) {
+					_ = await Object(d.b)(h(), e, C);
+				if ((null === (x = null === (v = _.error) || void 0 === v ? void 0 : v.fields) || void 0 === x ? void 0 : x.length) || function(e) {
 						return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
-					}(C.body) && (null === (x = C.body.data.updateSubredditNotificationSettings.errors) || void 0 === x ? void 0 : x.length)) return r(b()), r(Object(o.f)({
-					kind: l.b.Error,
+					}(_.body) && (null === (E = _.body.data.updateSubredditNotificationSettings.errors) || void 0 === E ? void 0 : E.length)) return o(p()), o(Object(c.f)({
+					kind: u.b.Error,
 					text: i.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
 						hk: "4avFFV"
 					})
 				}));
-				C.ok && (r(u({
+				_.ok && (o(Object(a.c)({
+					subredditId: e,
+					notificationLevel: t
+				})), o(m({
 					subredditAboutInfo: {
 						[e]: {
 							notificationLevel: t
 						}
 					}
-				})), n && n(), r(s ? Object(o.f)(Object(o.e)(p(t), l.b.Undo, i.fbt._("Undo", null, {
+				})), n && n(), o(s ? Object(c.f)(Object(c.e)(f(t), u.b.Undo, i.fbt._("Undo", null, {
 					hk: "46OwLP"
-				}), Object(a.i)(e, s))) : Object(o.f)(Object(o.e)(p(t), l.b.SuccessCommunityGreen))))
+				}), Object(r.i)(e, s))) : Object(c.f)(Object(c.e)(f(t), u.b.SuccessCommunityGreen))))
 			}
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, n) {
@@ -620,7 +624,7 @@
 				isInboxPostEmbedEnabled: O.a,
 				isPending: R.e,
 				todayNotifications: R.i,
-				userId: B.ob
+				userId: B.tb
 			});
 			var H = Object(d.b)(W, e => ({
 					clearMessageTabBadgeCount: () => e(Object(u.b)()),
@@ -733,4 +737,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.1c4f1b43bcea4e722c89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.3e4a86c717b83e32a93f.js.map

@@ -1,38 +1,38 @@
-// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.73bdf3c1b44f6e266363.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.6062ae8097dd50fb43ac.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailNotificationSettings"], {
-		"./src/reddit/components/Settings/Notifications/EmailNotificationSettings/index.tsx": function(e, t, s) {
+		"./src/reddit/components/Settings/Notifications/EmailNotificationSettings/index.tsx": function(e, t, i) {
 			"use strict";
-			s.r(t);
-			var i = s("./node_modules/react-redux/es/index.js"),
-				n = s("./node_modules/reselect/es/index.js"),
-				a = s("./src/reddit/actions/notificationSettingsLayout/index.ts"),
-				o = s("./src/reddit/models/NotificationSettingsLayout/index.ts"),
-				r = s("./src/reddit/selectors/user.ts"),
-				c = s("./src/reddit/components/Settings/Notifications/NotificationToggles.tsx");
+			i.r(t);
+			var s = i("./node_modules/react-redux/es/index.js"),
+				n = i("./node_modules/reselect/es/index.js"),
+				a = i("./src/reddit/actions/notificationSettingsLayout/index.ts"),
+				o = i("./src/reddit/models/NotificationSettingsLayout/index.ts"),
+				r = i("./src/reddit/selectors/user.ts"),
+				c = i("./src/reddit/components/Settings/Notifications/NotificationToggles.tsx");
 			const d = Object(n.c)({
 					hasError: r.q,
 					rows: r.Y,
 					sections: r.Z
 				}),
-				l = Object(i.b)(d, e => ({
+				l = Object(s.b)(d, e => ({
 					fetchNotificationSettings: () => e(Object(a.a)(o.a.Email)),
-					updateNotificationPreference: t => e(Object(a.b)(t))
+					updateNotificationPreference: t => e(Object(a.d)(t))
 				}))(c.a);
 			t.default = l
 		},
-		"./src/reddit/components/Settings/Notifications/LoadingSection.tsx": function(e, t, s) {
+		"./src/reddit/components/Settings/Notifications/LoadingSection.tsx": function(e, t, i) {
 			"use strict";
-			s.d(t, "a", (function() {
+			i.d(t, "a", (function() {
 				return d
 			}));
-			var i = s("./node_modules/lodash/times.js"),
-				n = s.n(i),
-				a = s("./node_modules/react/index.js"),
-				o = s.n(a),
-				r = s("./src/reddit/components/Settings/Notifications/index.m.less"),
-				c = s.n(r);
+			var s = i("./node_modules/lodash/times.js"),
+				n = i.n(s),
+				a = i("./node_modules/react/index.js"),
+				o = i.n(a),
+				r = i("./src/reddit/components/Settings/Notifications/index.m.less"),
+				c = i.n(r);
 			const d = ({
 				rowsCount: e
 			}) => o.a.createElement("div", {
@@ -49,75 +49,86 @@
 				className: c.a.loadingToggleButton
 			}))))
 		},
-		"./src/reddit/components/Settings/Notifications/NotificationToggles.tsx": function(e, t, s) {
+		"./src/reddit/components/Settings/Notifications/NotificationToggles.tsx": function(e, t, i) {
 			"use strict";
-			s.d(t, "a", (function() {
-				return f
+			i.d(t, "a", (function() {
+				return p
 			}));
-			var i = s("./node_modules/fbt/lib/FbtPublic.js"),
-				n = s("./node_modules/react/index.js"),
-				a = s.n(n),
-				o = s("./src/reddit/components/Settings/Notifications/Loader.ts"),
-				r = s("./src/reddit/components/Settings/Notifications/LoadingSection.tsx"),
-				c = s("./src/reddit/components/Settings/shared/SectionHeading.tsx"),
-				d = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
-				l = s("./src/reddit/helpers/trackers/notifications.ts"),
-				g = s("./src/reddit/hooks/useTracking.ts"),
-				m = s("./src/reddit/components/Settings/Notifications/index.m.less"),
-				u = s.n(m);
-			const f = e => {
+			var s = i("./node_modules/fbt/lib/FbtPublic.js"),
+				n = i("./node_modules/react/index.js"),
+				a = i.n(n),
+				o = i("./src/reddit/components/Settings/Notifications/Loader.ts"),
+				r = i("./src/reddit/components/Settings/Notifications/LoadingSection.tsx"),
+				c = i("./src/reddit/components/Settings/shared/SectionHeading.tsx"),
+				d = i("./src/reddit/components/Settings/shared/Widgets.tsx"),
+				l = i("./src/reddit/helpers/trackers/notifications.ts"),
+				m = i("./src/reddit/hooks/useTracking.ts"),
+				g = i("./src/reddit/icons/fonts/index.tsx"),
+				u = i("./src/reddit/components/Settings/Notifications/index.m.less"),
+				f = i.n(u);
+			const p = e => {
 				Object(n.useEffect)(() => {
 					e.fetchNotificationSettings()
 				}, []);
-				const t = Object(g.a)(),
-					s = (s, i, n) => {
-						const o = e.rows && e.rows.byId[s];
+				const t = Object(m.a)(),
+					i = (i, s, n) => {
+						const o = e.rows && e.rows.byId[i];
 						return o ? a.a.createElement(d.p, {
 							disabled: e.disabled,
 							forceOn: o.isEnabled && e.disabled,
 							key: o.displayName,
 							label: o.displayName,
-							last: n.length === i + 1,
+							last: n.length === s + 1,
 							on: o.isEnabled,
-							onClick: () => (s => {
-								if (s.messageType) {
-									const i = e.isEmailSettings;
-									t(i ? Object(l.b)(!s.isEnabled, s.messageType) : Object(l.g)(!s.isEnabled, s.messageType))
+							onClick: () => (i => {
+								if (i.messageType) {
+									const s = e.isEmailSettings;
+									t(s ? Object(l.b)(!i.isEnabled, i.messageType) : Object(l.g)(!i.isEnabled, i.messageType))
 								}
 								e.updateNotificationPreference({
-									isEnabled: !s.isEnabled,
-									messageType: s.messageType
+									isEnabled: !i.isEnabled,
+									messageType: i.messageType
 								})
 							})(o),
 							subtext: o.description
 						}) : null
 					},
-					m = a.a.createElement("span", {
+					u = a.a.createElement("span", {
 						className: "errorMessage",
 						"data-testid": "error-message"
-					}, i.fbt._("There was an issue fetching your notification settings. Please try again later.", null, {
+					}, s.fbt._("There was an issue fetching your notification settings. Please try again later.", null, {
 						hk: "4pmBD4"
 					})),
-					f = e.sections && e.sections.allIds,
-					p = f && f.map(t => {
-						const i = e.sections && e.sections.byId && e.sections.byId[t];
-						if (!i) return null;
-						const n = "Moderation" === i.title;
+					p = e.sections && e.sections.allIds,
+					b = p && p.map(t => {
+						const n = e.sections && e.sections.byId && e.sections.byId[t];
+						if (!n) return null;
+						const r = "Moderation" === n.title;
 						return a.a.createElement("div", {
 							key: t
-						}, a.a.createElement(c.a, null, i.title), i.rows ? i.rows.map(s) : null, n && a.a.createElement("div", {
-							className: u.a.ModPnSettingsSubredditList,
+						}, a.a.createElement(c.a, null, n.title), !e.isEmailSettings && "Activity" === n.title && e.handleCommunityNavClick && a.a.createElement(d.k, null, a.a.createElement("button", {
+							onClick: e.handleCommunityNavClick,
+							className: f.a.communityAlert
+						}, a.a.createElement("h3", {
+							className: f.a.header
+						}, s.fbt._("Community alerts", null, {
+							hk: "3jkfcH"
+						})), a.a.createElement(g.a, {
+							name: "forward_fill",
+							className: f.a.arrow
+						}))), n.rows ? n.rows.map(i) : null, r && a.a.createElement("div", {
+							className: f.a.ModPnSettingsSubredditList,
 							"data-testid": "mod-pn-settings-subreddit-list-container"
-						}, a.a.createElement(o.b, {
+						}, a.a.createElement(o.c, {
 							handleModPnSubredditClick: e.handleModPnClick
 						})))
 					});
-				return e.hasError ? m : f && f.length > 0 ? a.a.createElement(a.a.Fragment, null, p) : a.a.createElement(r.a, {
+				return e.hasError ? u : p && p.length > 0 ? a.a.createElement(a.a.Fragment, null, b) : a.a.createElement(r.a, {
 					rowsCount: 5
 				})
 			}
 		},
-		"./src/reddit/components/Settings/Notifications/index.m.less": function(e, t, s) {
+		"./src/reddit/components/Settings/Notifications/index.m.less": function(e, t, i) {
 			e.exports = {
 				loadingSectionHeader: "_1JAbJoDWgS5w77rjLy_a7c",
 				glimmer: "_1VqfnmhCxLKQ6Pb1zId6Ip",
@@ -134,4 +145,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.73bdf3c1b44f6e266363.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.6062ae8097dd50fb43ac.js.map

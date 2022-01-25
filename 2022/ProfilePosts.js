@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.2c256edbc319a472d6d7.js
-// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.69684089e18555d0c852.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -3017,7 +3017,7 @@
 				subreddits: function(e, {
 					profileName: t
 				}) {
-					const n = Object(m.mb)(e, {
+					const n = Object(m.rb)(e, {
 							userName: t
 						}),
 						r = Object(u.f)(e);
@@ -3650,7 +3650,7 @@
 				}) : null,
 				user: (e, {
 					subredditOrProfile: t
-				}) => t.type === d.a.PROFILE ? Object(b.mb)(e, {
+				}) => t.type === d.a.PROFILE ? Object(b.rb)(e, {
 					userName: t.name
 				}) : null
 			}), j = Object(a.b)(S, e => ({
@@ -4205,4 +4205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.2c256edbc319a472d6d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.69684089e18555d0c852.js.map

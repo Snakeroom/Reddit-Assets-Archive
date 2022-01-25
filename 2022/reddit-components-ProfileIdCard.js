@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.66c8fd67e0d071462824.js
-// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.9a029a7d6fc6be483e7c.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -768,7 +768,7 @@
 				U = r.n(S);
 			const F = Object(i.a)(v.j, (e, {
 					profileName: t
-				}) => Object(h.sb)(e, t), (e, t) => ({
+				}) => Object(h.xb)(e, t), (e, t) => ({
 					karma: {
 						...p.a,
 						...null == t ? void 0 : t.karma,
@@ -2168,12 +2168,12 @@
 				structuredStyle: (e, t) => Object(I.m)(e, Object(h.m)(e, t.profileName)),
 				userHasSubreddit: (e, {
 					profileName: t
-				}) => Object(C.nb)(e, {
+				}) => Object(C.sb)(e, {
 					userName: t
 				}),
 				user: (e, {
 					profileName: t
-				}) => Object(C.mb)(e, {
+				}) => Object(C.rb)(e, {
 					userName: t
 				}),
 				page: v.b,
@@ -2662,7 +2662,7 @@
 					action: "click",
 					noun: "block_user",
 					targetUser: {
-						id: Object(a.mb)(t, {
+						id: Object(a.rb)(t, {
 							userName: e
 						}).id
 					},
@@ -2673,7 +2673,7 @@
 					action: "click",
 					noun: "unblock_user",
 					targetUser: {
-						id: Object(a.mb)(t, {
+						id: Object(a.rb)(t, {
 							userName: e
 						}).id
 					},
@@ -2827,7 +2827,7 @@
 					return !!r && r.includes(t)
 				},
 				i = (e, t) => {
-					const r = Object(n.mb)(e, {
+					const r = Object(n.rb)(e, {
 						userName: t
 					});
 					return !!r && o(e, r.id)
@@ -2931,4 +2931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.66c8fd67e0d071462824.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.9a029a7d6fc6be483e7c.js.map

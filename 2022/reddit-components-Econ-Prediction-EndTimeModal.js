@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.38b49bb29a1ba857559b.js
-// Retrieved at 1/24/2022, 7:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.a8a0114aa55c91d4e2c1.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-EndTimeModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -196,10 +196,10 @@
 						maxDate: O,
 						minDate: D,
 						minTime: M,
-						fullMinDatetime: I,
-						formattedMinDatetime: j
+						fullMinDatetime: j,
+						formattedMinDatetime: k
 					} = Object(l.a)(e, t),
-					k = e < I,
+					I = e < j,
 					P = () => i(Object(c.g)(p.a.ECON_PREDICTIONS_CHANGE_END_TIME));
 				return s.a.createElement(d.a, {
 					withOverlay: !0,
@@ -243,12 +243,12 @@
 						min: M,
 						value: x,
 						required: !0
-					}), E, j && s.a.createElement("span", {
+					}), E, k && s.a.createElement("span", {
 						className: g.a.footer
-					}, f._("New end time has to be later than {Minimum date and time}", [f._param("Minimum date and time", j)], {
+					}, f._("New end time has to be later than {Minimum date and time}", [f._param("Minimum date and time", k)], {
 						hk: "1GjSWl"
 					}))) : "Something went wrong. Please try again.",
-					isDisabled: k || e === o
+					isDisabled: I || e === o
 				})
 			};
 			t.default = () => {
@@ -291,42 +291,50 @@
 		"./src/reddit/components/PollCreator/EndDatePicker/useEndDatePicker.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return i
+				return r
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./src/lib/timezone/index.ts"),
 				s = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/utils.ts"),
-				a = n("./src/reddit/components/PollCreator/EndDatePicker/utils.ts");
+				a = n("./src/reddit/hooks/useLocale.ts"),
+				i = n("./src/reddit/components/PollCreator/EndDatePicker/utils.ts");
 
-			function i(e, t) {
+			function r(e, t) {
 				var n;
-				const {
-					date: i,
-					time: r
-				} = Object(a.a)(e), c = Object(o.b)(), d = c ? Object(o.d)(c) : null, l = new Date, {
-					minDate: u,
-					minTime: m,
-					formattedMinDatetime: p
-				} = Object(a.c)(l), h = Object(s.a)(), b = Object(a.d)({
-					date: u,
-					time: m
-				});
+				const r = Object(a.a)(),
+					{
+						date: c,
+						time: d
+					} = Object(i.a)(e),
+					l = Object(o.b)(),
+					u = l ? Object(o.d)(l) : null,
+					m = new Date,
+					{
+						minDate: p,
+						minTime: h,
+						formattedMinDatetime: b
+					} = Object(i.c)(m, r),
+					C = Object(s.a)(),
+					g = Object(i.d)({
+						date: p,
+						time: h
+					});
 				return {
-					date: i,
-					time: r,
-					timeZoneAbbr: null !== (n = null == d ? void 0 : d.abbreviation) && void 0 !== n ? n : "",
+					date: c,
+					time: d,
+					timeZoneAbbr: null !== (n = null == u ? void 0 : u.abbreviation) && void 0 !== n ? n : "",
 					onChange: e => {
-						Object.values(e).every(e => e.length) && t(Object(a.d)({
-							date: i,
-							time: r,
+						Object.values(e).every(e => e.length) && t(Object(i.d)({
+							date: c,
+							time: d,
 							...e
 						}))
 					},
-					maxDate: h,
-					minDate: u,
-					minTime: m,
-					fullMinDatetime: b,
-					formattedMinDatetime: p
+					maxDate: C,
+					minDate: p,
+					minTime: h,
+					fullMinDatetime: g,
+					formattedMinDatetime: b
 				}
 			}
 		},
@@ -358,25 +366,24 @@
 					date: e,
 					time: t
 				}) => new Date(`${e}T${t}`),
-				c = e => e.toLocaleString("en-US", {
+				c = (e, t) => e.toLocaleString(t, {
 					month: "numeric",
 					day: "numeric",
 					year: "numeric",
 					hour: "numeric",
-					minute: "2-digit",
-					hour12: !0
+					minute: "2-digit"
 				}),
-				d = e => {
-					const t = new Date(e);
-					t.setHours(t.getHours() + 1);
+				d = (e, t) => {
+					const n = new Date(e);
+					n.setHours(n.getHours() + 1);
 					const {
-						date: n,
-						time: o
-					} = i(t);
+						date: o,
+						time: s
+					} = i(n);
 					return {
-						minDate: n,
-						minTime: o,
-						formattedMinDatetime: c(t)
+						minDate: o,
+						minTime: s,
+						formattedMinDatetime: c(n, t)
 					}
 				}
 		},
@@ -721,4 +728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.38b49bb29a1ba857559b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.a8a0114aa55c91d4e2c1.js.map

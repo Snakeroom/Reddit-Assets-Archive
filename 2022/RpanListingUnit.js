@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.d3a5c80cd46ccf7be4ca.js
-// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.77786ca4f0d78af3ba36.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -4156,7 +4156,7 @@
 					const n = Object(i.H)(e, {
 						postId: t
 					});
-					return !(!n || n.isSponsored) && (Object(a.pb)(e, {
+					return !(!n || n.isSponsored) && (Object(a.ub)(e, {
 						postId: t
 					}) || !!Object(o.l)(e, {
 						postId: t
@@ -4204,7 +4204,7 @@
 				i = n("./src/reddit/selectors/user.ts");
 			const a = (e, t) => {
 				return Object(r.c)(e, {
-					experimentEligibilitySelector: e => ((e, t) => Object(i.pb)(e, {
+					experimentEligibilitySelector: e => ((e, t) => Object(i.ub)(e, {
 						postId: t
 					}) || !!Object(o.l)(e, {
 						postId: t
@@ -4341,4 +4341,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.d3a5c80cd46ccf7be4ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.77786ca4f0d78af3ba36.js.map

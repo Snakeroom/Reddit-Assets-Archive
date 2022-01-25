@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.e9c0f759be6e6248af20.js
-// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.b8e598b4717dc4d3c9aa.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, s) {
@@ -2260,7 +2260,7 @@
 					const s = Object(i.H)(e, {
 						postId: t
 					});
-					return !(!s || s.isSponsored) && (Object(c.pb)(e, {
+					return !(!s || s.isSponsored) && (Object(c.ub)(e, {
 						postId: t
 					}) || !!Object(r.l)(e, {
 						postId: t
@@ -2278,7 +2278,7 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const c = (e, t) => {
 				return Object(o.c)(e, {
-					experimentEligibilitySelector: e => ((e, t) => Object(i.pb)(e, {
+					experimentEligibilitySelector: e => ((e, t) => Object(i.ub)(e, {
 						postId: t
 					}) || !!Object(r.l)(e, {
 						postId: t
@@ -2306,4 +2306,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.e9c0f759be6e6248af20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.b8e598b4717dc4d3c9aa.js.map

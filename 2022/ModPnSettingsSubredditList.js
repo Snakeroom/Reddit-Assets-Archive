@@ -1,39 +1,33 @@
-// https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.6885f55c8c365cff2020.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.034d9862d74031810404.js
+// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModPnSettingsSubredditList"], {
-		"./src/reddit/components/Settings/Notifications/LoadingState/index.m.less": function(e, t, n) {
-			e.exports = {
-				LoadingSectionHeader: "O4PpMIHtSZRm2uXmmvBkX",
-				loadingSectionHeader: "O4PpMIHtSZRm2uXmmvBkX",
-				glimmer: "_3J09VVJDa8w9BsFag7OBI2",
-				LoadingToggleWrapper: "_3mYFgWNYqADfQo8_Ld8G3r",
-				loadingToggleWrapper: "_3mYFgWNYqADfQo8_Ld8G3r",
-				LoadingToggleName: "_3JRyG4NgltIykHiWDtHxkK",
-				loadingToggleName: "_3JRyG4NgltIykHiWDtHxkK",
-				LoadingToggleButton: "_3iDAL20rOm8LbD0TlhrWmK",
-				loadingToggleButton: "_3iDAL20rOm8LbD0TlhrWmK"
-			}
-		},
-		"./src/reddit/components/Settings/Notifications/LoadingState/index.tsx": function(e, t, n) {
+		"./src/reddit/components/Settings/Notifications/LoadingSection.tsx": function(e, t, n) {
 			"use strict";
-			var i = n("./node_modules/react/index.js"),
+			n.d(t, "a", (function() {
+				return r
+			}));
+			var i = n("./node_modules/lodash/times.js"),
 				o = n.n(i),
-				s = n("./src/lib/lessComponent.tsx"),
-				a = n("./node_modules/lodash/times.js"),
-				d = n.n(a),
-				c = n("./src/reddit/components/Settings/Notifications/LoadingState/index.m.less"),
-				r = n.n(c);
-			const l = s.a.div("LoadingSectionHeader", r.a),
-				m = s.a.div("LoadingToggleWrapper", r.a),
-				g = s.a.span("LoadingToggleName", r.a),
-				u = s.a.span("LoadingToggleButton", r.a);
-			t.a = () => o.a.createElement("div", {
+				s = n("./node_modules/react/index.js"),
+				d = n.n(s),
+				a = n("./src/reddit/components/Settings/Notifications/index.m.less"),
+				c = n.n(a);
+			const r = ({
+				rowsCount: e
+			}) => d.a.createElement("div", {
 				role: "alert",
 				"aria-busy": "true"
-			}, o.a.createElement(l, null), d()(5, e => o.a.createElement(m, {
+			}, d.a.createElement("div", {
+				className: c.a.loadingSectionHeader
+			}), o()(e, e => d.a.createElement("div", {
+				className: c.a.loadingToggleWrapper,
 				key: e
-			}, o.a.createElement(g, null), o.a.createElement(u, null))))
+			}, d.a.createElement("span", {
+				className: c.a.loadingToggleName
+			}), d.a.createElement("span", {
+				className: c.a.loadingToggleButton
+			}))))
 		},
 		"./src/reddit/components/Settings/Notifications/ModPnSettingsSubredditList/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -53,8 +47,8 @@
 			var i = n("./node_modules/react/index.js"),
 				o = n.n(i),
 				s = n("./node_modules/react-redux/es/index.js"),
-				a = n("./src/reddit/actions/moderatingSubreddits.ts"),
-				d = n("./src/reddit/components/Settings/Notifications/LoadingState/index.tsx"),
+				d = n("./src/reddit/actions/moderatingSubreddits.ts"),
+				a = n("./src/reddit/components/Settings/Notifications/LoadingSection.tsx"),
 				c = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
 				r = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				l = n("./src/reddit/selectors/user.ts"),
@@ -66,10 +60,12 @@
 					handleModPnSubredditClick: t
 				} = e, n = Object(s.d)(), m = Object(s.e)(l.j), [u, S] = Object(i.useState)(!0);
 				return Object(i.useEffect)(() => {
-					n(Object(a.b)())
+					n(Object(d.b)())
 				}, [n]), Object(i.useEffect)(() => {
 					m.length > 0 && S(!1)
-				}, [m]), t ? u ? o.a.createElement(d.a, null) : o.a.createElement(o.a.Fragment, null, m.map(e => o.a.createElement("div", {
+				}, [m]), t ? u ? o.a.createElement(a.a, {
+					rowsCount: 5
+				}) : o.a.createElement(o.a.Fragment, null, m.map(e => o.a.createElement("div", {
 					className: g.a.ModPnSettingLink,
 					key: e.id
 				}, o.a.createElement(r.b, {
@@ -82,7 +78,22 @@
 					color: "none"
 				})))) : null
 			}
+		},
+		"./src/reddit/components/Settings/Notifications/index.m.less": function(e, t, n) {
+			e.exports = {
+				loadingSectionHeader: "_1JAbJoDWgS5w77rjLy_a7c",
+				glimmer: "_1VqfnmhCxLKQ6Pb1zId6Ip",
+				loadingToggleWrapper: "_3hfCPonrfNQjCQe_kHaSDY",
+				loadingToggleName: "_2nmcEilpCLrMUDYAFuRPhZ",
+				loadingToggleButton: "RXOVV5JR-ysmH1CtOhOzv",
+				errorMessage: "_3wk25QxRP-Wk1zL9JaaNAH",
+				ModPnSettingsSubredditList: "_1Wq_iiOCv9Zlu6GiZmzuEY",
+				modPnSettingsSubredditList: "_1Wq_iiOCv9Zlu6GiZmzuEY",
+				communityAlert: "_1kjkPylfnJVOQOlvkz5mRN",
+				header: "_3ppHgcPj1O00wgJFJhnPgl",
+				arrow: "_2TrPYhNtc4V7otMW_Lfj3L"
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.6885f55c8c365cff2020.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.034d9862d74031810404.js.map
