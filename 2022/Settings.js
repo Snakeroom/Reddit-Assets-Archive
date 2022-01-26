@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.93a46f94a7321b116457.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.d6e11fc0bf0a5a61ea09.js
+// Retrieved at 1/26/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -11075,10 +11075,10 @@
 					on: l,
 					onClick: () => g(!l, "reduceAnimationsFromAwards"),
 					label: s.fbt._("Reduce Animations", null, {
-						hk: "329Lwa"
+						hk: "3044mu"
 					}),
-					subtext: s.fbt._("Reduce award-related animations on posts and comments", null, {
-						hk: "1sut6Z"
+					subtext: s.fbt._("Reduce animations on posts, comments, and feeds", null, {
+						hk: "2q4MGT"
 					})
 				}), o.a.createElement(ee.p, {
 					on: !!p,
@@ -12935,4 +12935,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.93a46f94a7321b116457.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.d6e11fc0bf0a5a61ea09.js.map
