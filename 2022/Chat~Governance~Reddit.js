@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3f1233098c71b9bd15bf.js
-// Retrieved at 1/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d1d7e425ca5d39cce8db.js
+// Retrieved at 1/26/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3350,10 +3350,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("156876"),
+				buildNumber: Object(r.c)("156879"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1643232830"),
+				buildTimestamp: Object(r.b)("1643235600"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5947,14 +5947,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c16569b3f5f19ec8051ed8c84e293dd3514c87d4f-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c3339f875a82182b0d2529091cbecb923811789ce-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "16569b3f5f19ec8051ed8c84e293dd3514c87d4f-production",
+						release: "3339f875a82182b0d2529091cbecb923811789ce-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6471,7 +6471,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "16569b3f5f19ec8051ed8c84e293dd3514c87d4f-production",
+						releaseClient: "3339f875a82182b0d2529091cbecb923811789ce-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -12257,79 +12257,79 @@
 		"./src/reddit/actions/preferences.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "c", (function() {
-				return B
-			})), i.d(t, "i", (function() {
-				return M
-			})), i.d(t, "h", (function() {
 				return U
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "i", (function() {
 				return G
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "h", (function() {
 				return q
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "p", (function() {
 				return V
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "f", (function() {
 				return H
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "e", (function() {
 				return W
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "m", (function() {
 				return z
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "g", (function() {
 				return K
+			})), i.d(t, "o", (function() {
+				return Y
+			})), i.d(t, "r", (function() {
+				return $
 			})), i.d(t, "u", (function() {
-				return J
+				return Z
 			})), i.d(t, "d", (function() {
-				return ie
-			})), i.d(t, "x", (function() {
-				return ne
-			})), i.d(t, "y", (function() {
 				return re
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "x", (function() {
 				return se
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "y", (function() {
 				return oe
-			})), i.d(t, "G", (function() {
+			})), i.d(t, "w", (function() {
 				return de
-			})), i.d(t, "E", (function() {
+			})), i.d(t, "z", (function() {
 				return ae
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "G", (function() {
 				return le
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "E", (function() {
 				return ue
+			})), i.d(t, "a", (function() {
+				return ce
+			})), i.d(t, "q", (function() {
+				return _e
 			})), i.d(t, "F", (function() {
-				return pe
-			})), i.d(t, "I", (function() {
-				return he
-			})), i.d(t, "b", (function() {
 				return fe
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "I", (function() {
 				return be
+			})), i.d(t, "b", (function() {
+				return ge
+			})), i.d(t, "j", (function() {
+				return we
 			})), i.d(t, "l", (function() {
-				return Se
-			})), i.d(t, "k", (function() {
 				return Ie
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "k", (function() {
 				return Ce
-			})), i.d(t, "s", (function() {
-				return Fe
-			})), i.d(t, "D", (function() {
+			})), i.d(t, "A", (function() {
 				return Ne
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "s", (function() {
 				return je
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "D", (function() {
 				return Ae
-			})), i.d(t, "C", (function() {
+			})), i.d(t, "v", (function() {
 				return xe
-			})), i.d(t, "B", (function() {
+			})), i.d(t, "t", (function() {
+				return De
+			})), i.d(t, "C", (function() {
 				return Pe
+			})), i.d(t, "B", (function() {
+				return Le
 			})), i.d(t, "n", (function() {
-				return ke
+				return Be
 			})), i.d(t, "H", (function() {
-				return Me
-			})), i.d(t, "K", (function() {
-				return Ue
-			})), i.d(t, "J", (function() {
 				return Ge
+			})), i.d(t, "K", (function() {
+				return qe
+			})), i.d(t, "J", (function() {
+				return Ve
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/config.ts"),
@@ -12366,59 +12366,61 @@
 				D = i("./src/reddit/selectors/imageUploads.ts"),
 				P = i("./src/reddit/selectors/structuredStyles.ts"),
 				k = i("./src/reddit/selectors/subreddit.ts"),
-				L = i("./src/reddit/selectors/user.ts");
-			const B = "PREFERENCES__AUTOPLAY_TOGGLED",
-				M = "PREFERENCES__NIGHTMODE_TOGGLED",
-				U = "PREFERENCES__LAYOUT_CHANGED",
-				G = "PREFERENCES__SUBREDDIT_LAYOUT_CHANGED",
-				q = "PREFERENCES__CUSTOMIZE_FLYOUT_SHOWN",
-				V = "PREFERENCES__CUSTOMIZE_FLYOUT_DISMISSED",
-				H = "PREFERENCES__PROFILE_LAYOUT_CHANGED",
-				W = "PREFERENCES__HAMBURGER_TRAY_TOGGLED",
-				z = "PREFERENCES__RPAN_DU_DISMISSED",
-				K = "PREFERENCES__TOP_CONTENT_DISMISSAL_PREF_SET",
-				Y = Object(h.a)(U),
-				$ = Object(h.a)(G),
+				L = i("./src/reddit/selectors/telemetry.ts"),
+				B = i("./src/reddit/selectors/user.ts"),
+				M = i("./src/telemetry/index.ts");
+			const U = "PREFERENCES__AUTOPLAY_TOGGLED",
+				G = "PREFERENCES__NIGHTMODE_TOGGLED",
+				q = "PREFERENCES__LAYOUT_CHANGED",
+				V = "PREFERENCES__SUBREDDIT_LAYOUT_CHANGED",
+				H = "PREFERENCES__CUSTOMIZE_FLYOUT_SHOWN",
+				W = "PREFERENCES__CUSTOMIZE_FLYOUT_DISMISSED",
+				z = "PREFERENCES__PROFILE_LAYOUT_CHANGED",
+				K = "PREFERENCES__HAMBURGER_TRAY_TOGGLED",
+				Y = "PREFERENCES__RPAN_DU_DISMISSED",
+				$ = "PREFERENCES__TOP_CONTENT_DISMISSAL_PREF_SET",
 				Q = Object(h.a)(q),
 				J = Object(h.a)(V),
-				X = Object(h.a)(z),
-				Z = Object(h.a)(K),
-				ee = (Object(h.a)(H), Object(h.a)(B)),
-				te = Object(h.a)(M),
-				ie = (Object(h.a)(W), "PREFERENCES__COLLAPSED_TRAY_TOGGLED"),
-				ne = (Object(h.a)(ie), e => async (t, i, {
+				X = Object(h.a)(H),
+				Z = Object(h.a)(W),
+				ee = Object(h.a)(Y),
+				te = Object(h.a)($),
+				ie = (Object(h.a)(z), Object(h.a)(U)),
+				ne = Object(h.a)(G),
+				re = (Object(h.a)(K), "PREFERENCES__COLLAPSED_TRAY_TOGGLED"),
+				se = (Object(h.a)(re), e => async (t, i, {
 					apiContext: n
 				}) => {
-					t(Y({
+					t(Q({
 						layout: e
 					})), t(Object(g.p)())
 				}),
-				re = (e, t) => async (i, n, {
+				oe = (e, t) => async (i, n, {
 					apiContext: r
 				}) => {
 					const s = n(),
-						o = Object(L.gb)(s),
+						o = Object(B.gb)(s),
 						{
 							hasSeenCustomizeFlyout: d
 						} = s.user.prefs;
-					d || i(Q()), t && o ? (i($({
+					d || i(X()), t && o ? (i(J({
 						subredditId: t,
 						layout: e
-					})), i(Ue(t, {
+					})), i(qe(t, {
 						layout: e
-					}, !1)), d || i(he({
+					}, !1)), d || i(be({
 						hasSeenCustomizeFlyout: !0
-					}, !1))) : (i(ne(e)), i(he(d ? {
+					}, !1))) : (i(se(e)), i(be(d ? {
 						layout: e
 					} : {
 						layout: e,
 						hasSeenCustomizeFlyout: !0
 					}, !1)))
-				}, se = e => async (t, i, {
+				}, de = e => async (t, i, {
 					apiContext: n
 				}) => {
 					i().user.account && await Object(v.f)(e, n())
-				}, oe = e => async (t, i, {
+				}, ae = e => async (t, i, {
 					apiContext: s
 				}) => {
 					const d = i();
@@ -12431,18 +12433,18 @@
 						prefs: {
 							nightmode: e
 						}
-					}), t(te({
+					}), t(ne({
 						nightmode: e
 					})), t(Object(f.h)(e)), o.a.remove(w.c, {
 						domain: n.a.cookieDomain
 					}))
-				}, de = () => async (e, t, {
+				}, le = () => async (e, t, {
 					apiContext: i
 				}) => {
 					const n = t(),
 						s = n.user.prefs.topContentTimesDismissed + 1,
 						o = Date.now();
-					n.user.account ? e(he({
+					n.user.account ? e(be({
 						topContentDismissalTime: o,
 						topContentTimesDismissed: s
 					}, !1)) : Object(y.a)({
@@ -12450,7 +12452,7 @@
 							[R.d]: o,
 							[R.e]: s
 						}
-					}), e(Z({
+					}), e(te({
 						topContentDismissalTime: o,
 						topContentTimesDismissed: s
 					})), e(Object(I.f)({
@@ -12459,7 +12461,7 @@
 							hk: "4op5Wa"
 						})
 					}))
-				}, ae = (e, t, {
+				}, ue = (e, t, {
 					showToast: i = !0
 				} = {}) => async (n, s, {
 					apiContext: o
@@ -12470,10 +12472,10 @@
 						if (d) {
 							const i = e.replace(/^r\//, ""),
 								r = Object(k.C)(a, i);
-							n(Ue(r, {
+							n(qe(r, {
 								rpanDuDismissalTime: t
 							}, !1))
-						} else n(he({
+						} else n(be({
 							rpanDuDismissalTime: t
 						}, !1));
 					else Object(y.a)({
@@ -12490,31 +12492,31 @@
 							text: e
 						}))
 					}
-					n(X(t))
-				}, le = "SETTINGS__ACCOUNT_PREFS_UPDATE_SUCCESS", ue = "SETTINGS__SUBREDDIT_PREFS_UPDATED", ce = Object(h.a)("SETTINGS__UPDATE_PENDING"), _e = Object(h.a)("SETTINGS__UPDATE_FAILURE"), me = Object(h.a)(le), pe = Object(h.a)(ue), he = (e, t = !0, i = "") => async (n, s, {
+					n(ee(t))
+				}, ce = "SETTINGS__ACCOUNT_PREFS_UPDATE_SUCCESS", _e = "SETTINGS__SUBREDDIT_PREFS_UPDATED", me = Object(h.a)("SETTINGS__UPDATE_PENDING"), pe = Object(h.a)("SETTINGS__UPDATE_FAILURE"), he = Object(h.a)(ce), fe = Object(h.a)(_e), be = (e, t = !0, i = "") => async (n, s, {
 					apiContext: o
 				}) => {
-					n(ce());
+					n(me());
 					const d = u()(e, R.a),
 						l = _()(e, R.a),
 						c = [];
-					a()(d) || c.push(Object(v.i)(d, o())), a()(l) || c.push(Object(v.d)(l, o())), (await Promise.all(c)).every(e => e.ok) ? (n(me({
+					a()(d) || c.push(Object(v.i)(d, o())), a()(l) || c.push(Object(v.d)(l, o())), (await Promise.all(c)).every(e => e.ok) ? (n(he({
 						preferences: e
 					})), t && n(Object(I.f)({
 						kind: A.b.SuccessCommunity,
 						text: i || r.fbt._("Changes saved", null, {
 							hk: "2isjrZ"
 						})
-					}))) : (n(_e()), t && n(Object(I.f)({
+					}))) : (n(pe()), t && n(Object(I.f)({
 						kind: A.b.Error,
 						text: r.fbt._("Changes failed to save", null, {
 							hk: "XrtIq"
 						})
 					})))
-				}, fe = "ACCT_PREFS__SUCCESS", be = "SETTINGS__SUCCESS", ge = Object(h.a)("ACCT_PREFS__FAILURE"), we = Object(h.a)("ACCT_PREFS__PENDING"), ve = Object(h.a)(fe), ye = Object(h.a)("SETTINGS__FAILURE"), Ee = Object(h.a)("SETTINGS__PENDING"), Te = Object(h.a)(be), Se = "SETTINGS__PROFILE_IMAGE_UPDATE_SUCCESS", Oe = Object(h.a)(Se), Ie = "SETTINGS__PROFILE_IMAGE_DELETE_SUCCESS", Re = Object(h.a)(Ie), Ce = e => async (t, i, {
+				}, ge = "ACCT_PREFS__SUCCESS", we = "SETTINGS__SUCCESS", ve = Object(h.a)("ACCT_PREFS__FAILURE"), ye = Object(h.a)("ACCT_PREFS__PENDING"), Ee = Object(h.a)(ge), Te = Object(h.a)("SETTINGS__FAILURE"), Se = Object(h.a)("SETTINGS__PENDING"), Oe = Object(h.a)(we), Ie = "SETTINGS__PROFILE_IMAGE_UPDATE_SUCCESS", Re = Object(h.a)(Ie), Ce = "SETTINGS__PROFILE_IMAGE_DELETE_SUCCESS", Fe = Object(h.a)(Ce), Ne = e => async (t, i, {
 					apiContext: r
 				}) => {
-					t(Ee());
+					t(Se());
 					const s = await ((e, t) => Object(T.a)(e, {
 						endpoint: Object(S.a)(`${n.a.gatewayUrl}/desktopapi/v1/prefs`),
 						method: m.jb.GET,
@@ -12522,39 +12524,46 @@
 							timestamp: t ? Date.now() : void 0
 						}
 					}))(r(), e);
-					s.ok ? t(Te(s.body)) : t(ye())
-				}, Fe = () => async (e, t, {
+					s.ok ? t(Oe(s.body)) : t(Te())
+				}, je = () => async (e, t, {
 					apiContext: i
 				}) => {
-					e(we());
+					e(ye());
 					const n = await Object(v.b)(i());
-					n.ok ? e(ve({
+					n.ok ? e(Ee({
 						preferences: Object(p.a)(n.body)
-					})) : e(ge())
-				}, Ne = e => async (t, i, {
+					})) : e(ve())
+				}, Ae = e => async (t, i, {
 					apiContext: n
 				}) => {
 					i().user.account ? await Object(v.c)(e, n()) : Object(y.b)({
 						pref_quarantine_optin: !0
 					})
-				}, je = e => async (t, i, {
+				}, xe = e => async (t, i, {
 					apiContext: n
 				}) => {
-					i().user.account ? await Object(v.a)(e, n()) : Object(y.b)({
+					const r = i();
+					r.user.account ? await Object(v.a)(e, n()) : (Object(y.b)({
 						pref_gated_sr_optin: !0
-					})
-				}, Ae = e => async (t, i, {
+					}), Object(M.a)({
+						source: "content_gate",
+						action: "click",
+						noun: "continue",
+						subreddit: Object(L.hb)(r),
+						...Object(L.m)(r)
+					}))
+				}, De = e => async (t, i, {
 					apiContext: n
 				}) => {
-					i().user.account && await Object(v.e)(e, n()), t(ee({
+					i().user.account && await Object(v.e)(e, n()), t(ie({
 						autoplayVideo: e
 					}))
-				}, xe = (e, t) => async (i, n, r) => {
-					await De(e, t)(i, n, r)
-				}, De = (e, t) => async (i, n, s) => {
+				}, Pe = (e, t) => async (i, n, r) => {
+					await ke(e, t)(i, n, r)
+				}, ke = (e, t) => async (i, n, s) => {
 					const {
 						apiContext: o
-					} = s, d = Object(L.k)(n());
+					} = s, d = Object(B.k)(n());
 					if (!d || !d.profileId) return;
 					i(Object(O.k)(e));
 					const a = Object(x.e)(d),
@@ -12586,7 +12595,7 @@
 							}))
 						}
 						const f = decodeURIComponent(m.url);
-						if (i(Oe({
+						if (i(Re({
 								imageUrl: f,
 								key: t,
 								subredditId: d.profileId,
@@ -12604,7 +12613,7 @@
 								})
 							})), Object(N.i)(n(), t);
 							const s = Object(D.a)(n(), e);
-							i(Oe({
+							i(Re({
 								imageUrl: s ? s.url : m.url,
 								key: t,
 								subredditId: d.profileId,
@@ -12625,10 +12634,10 @@
 							})
 						}))
 					}
-				}, Pe = e => async (t, i, {
+				}, Le = e => async (t, i, {
 					apiContext: n
 				}) => {
-					const s = Object(L.k)(i());
+					const s = Object(B.k)(i());
 					if (!s || !s.profileId) return;
 					const o = Object(x.e)(s),
 						d = m.ic + o,
@@ -12639,7 +12648,7 @@
 						l = await Object(C.b)(n(), d, a);
 					if (l.ok) {
 						const n = l.body[a + "_img"];
-						t(Re({
+						t(Fe({
 							imageUrl: n,
 							key: e,
 							subredditId: s.profileId,
@@ -12656,10 +12665,10 @@
 							hk: "1y1wAY"
 						})
 					}))
-				}, ke = "SETTINGS__PROFILE_SETTINGS_UPDATE_SUCCESS", Le = Object(h.a)(ke), Be = Object(h.a)("SETTINGS__PROFILE_SETTINGS_UPDATE_FAILED"), Me = (e, t) => async (i, n, {
+				}, Be = "SETTINGS__PROFILE_SETTINGS_UPDATE_SUCCESS", Me = Object(h.a)(Be), Ue = Object(h.a)("SETTINGS__PROFILE_SETTINGS_UPDATE_FAILED"), Ge = (e, t) => async (i, n, {
 					apiContext: s
 				}) => {
-					const o = Object(L.k)(n());
+					const o = Object(B.k)(n());
 					if (!o || !o.profileId) return !1;
 					const d = [],
 						a = {
@@ -12677,7 +12686,7 @@
 						enableFollowers: l
 					}, s())), c !== _ && d.push(Object(v.i)({
 						showActiveCommunities: c
-					}, s())), (await Promise.all(d)).every(e => e.ok) ? (i(Le({
+					}, s())), (await Promise.all(d)).every(e => e.ok) ? (i(Me({
 						settings: e,
 						additional: t,
 						subredditId: o.profileId
@@ -12686,17 +12695,17 @@
 						text: r.fbt._("Changes saved", null, {
 							hk: "xEVHp"
 						})
-					})), !0) : (i(Be()), i(Object(I.f)({
+					})), !0) : (i(Ue()), i(Object(I.f)({
 						kind: A.b.Error,
 						text: r.fbt._("Changes failed to save", null, {
 							hk: "1y1wAY"
 						})
 					})), !1)
-				}, Ue = (e, t, i = !0) => async (n, s, {
+				}, qe = (e, t, i = !0) => async (n, s, {
 					apiContext: o
 				}) => {
 					const d = s().user.prefs.subreddit[e];
-					n(pe({
+					n(fe({
 						subredditId: e,
 						prefs: t
 					})), (await Object(v.j)(e, t, o())).ok ? i && n(Object(I.f)({
@@ -12704,7 +12713,7 @@
 						text: r.fbt._("Changes saved", null, {
 							hk: "xEVHp"
 						})
-					})) : (d && n(pe({
+					})) : (d && n(fe({
 						subredditId: e,
 						prefs: d
 					})), i && n(Object(I.f)({
@@ -12713,13 +12722,13 @@
 							hk: "1y1wAY"
 						})
 					})))
-				}, Ge = (e, t) => async (i, n, {
+				}, Ve = (e, t) => async (i, n, {
 					apiContext: r
 				}) => {
 					const s = n();
 					Object(k.R)(s, {
 						subredditId: e
-					}) && s.user.prefs.rememberCommunitySort && i(Ue(e, {
+					}) && s.user.prefs.rememberCommunitySort && i(qe(e, {
 						sort: t
 					}, !1))
 				}
@@ -46387,4 +46396,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3f1233098c71b9bd15bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d1d7e425ca5d39cce8db.js.map
