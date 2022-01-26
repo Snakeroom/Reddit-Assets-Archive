@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3d0b63f06a914fbc4617.js
-// Retrieved at 1/26/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.58d8b1de08f6deeae3d6.js
+// Retrieved at 1/26/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3350,10 +3350,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("156850"),
+				buildNumber: Object(r.c)("156855"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1643219803"),
+				buildTimestamp: Object(r.b)("1643223295"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5947,14 +5947,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c67dd6d47f3af4e63ff1c7cca0e9972db6b49a174-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c0a44f343c0a9288d10361ca89089c91a03dd38d7-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "67dd6d47f3af4e63ff1c7cca0e9972db6b49a174-production",
+						release: "0a44f343c0a9288d10361ca89089c91a03dd38d7-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6471,7 +6471,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "67dd6d47f3af4e63ff1c7cca0e9972db6b49a174-production",
+						releaseClient: "0a44f343c0a9288d10361ca89089c91a03dd38d7-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -19486,6 +19486,7 @@
 					crowdControlMode: e.crowd_control_mode,
 					crowdControlChatLevel: e.crowd_control_chat_level,
 					crowdControlLevel: e.crowd_control_level,
+					crowdControlPostLevel: e.crowd_control_post_level,
 					description: e.description,
 					disableContributorRequests: e.disable_contributor_requests,
 					domain: e.domain,
@@ -19541,6 +19542,7 @@
 					crowd_control_mode: e.crowdControlMode,
 					crowd_control_level: e.crowdControlLevel,
 					crowd_control_chat_level: e.crowdControlChatLevel,
+					crowd_control_post_level: e.crowdControlPostLevel,
 					disable_contributor_requests: e.disableContributorRequests,
 					description: e.description,
 					domain: e.domain,
@@ -19593,6 +19595,7 @@
 					crowdControlFilter: "crowd_control_filter",
 					crowdControlMode: "crowd_control_mode",
 					crowdControlLevel: "crowd_control_level",
+					crowdControlPostLevel: "crowd_control_post_level",
 					crowdControlChatLevel: "crowd_control_chat_level",
 					description: "description",
 					disableContributorRequests: "disable_contributor_requests",
@@ -19884,19 +19887,19 @@
 		"./src/reddit/featureFlags/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "d", (function() {
-				return S
-			})), i.d(t, "a", (function() {
 				return O
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "a", (function() {
 				return I
+			})), i.d(t, "f", (function() {
+				return R
 			})), i.d(t, "g", (function() {
-				return C
-			})), i.d(t, "b", (function() {
 				return F
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "b", (function() {
 				return N
+			})), i.d(t, "c", (function() {
+				return j
 			})), i.d(t, "e", (function() {
-				return A
+				return x
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/lodash/isNil.js"),
@@ -19914,35 +19917,36 @@
 				h = i("./src/reddit/selectors/platform.ts"),
 				f = i("./src/reddit/selectors/subreddit.ts");
 			var b = i("./src/reddit/selectors/responsiveSettings.ts");
-			const g = new Set(["AntiEvilPlayground", "lgbt", "dccomics", "yurop", "muaonthecheap", "loveislandusa", "blackladiesdating", "stpetersburgfl", "pics", "canada", "askuk", "fortnitebr", "unitedkingdom", "stopdrinking", "casualconversation", "animalsonreddit", "bisexual", "liberalgunowners", "redditsweats", "orangetheory", "fortnite", "readwithme", "dndgreentext"].map(e => e.toLowerCase())),
-				w = new Set(["uzitest", "testingtesting127", "kpkrunal"]);
-			var v = i("./src/reddit/featureFlags/subredditPoints.ts");
-			const y = new Set(["askaliberal", "asktransgender", "askwomen", "bisexual", "blackladies", "exchristian", "exmormon", "gendercynical", "girlgamers", "neoliberal", "nothowgirlswork", "progresspics", "subredditdrama", "teenagers", "thegirlsurvivalguide", "thequickbrowncorgi", "traaaaaaannnnnnnnnns", "transpositive", "trollxchromosomes", "twoxchromosomes"]);
-			var E = i("./src/reddit/featureFlags/useProductionStreamingApi.ts");
-			const T = {
-					[E.a]: () => Object(E.b)(),
+			const g = new Set(["antievilplayground", "antivegan", "banpitbulls", "belowdeck", "bettereveryloop", "bigonemild", "blackladies", "boston", "capitolconsequences", "chicagosuburbs", "churchofcovid", "coronaviruscirclejerk", "criticalrole", "crowdcontroltest", "cryptocurrencies", "desabafos", "dogtraining", "dreamsmp", "feetishh", "fragilewhiteredditor", "ftmporn", "gaylorswift", "goldentruth", "heroin", "israel", "jonbenet", "learnart", "lgbt", "liberalgunowners", "marchagainstnazis", "medicalcannabisaus", "muaonthecheap", "mvis", "news", "noveltranslations", "onlyfans_nonnude", "paranormal", "philadelphia", "phonesex", "polyamory", "protectandserve", "qanoncasualties", "roguecompany", "startrek", "suggestmeabook", "todayilearned", "trollxchromosomes", "twoxchromosomes", "vancouver", "vaxxhappened", "vegan", "walkaway", "witcher", "worldnews", "yurop", "zerowaste"].map(e => e.toLowerCase())),
+				w = new Set(["AntiEvilPlayground", "lgbt", "dccomics", "yurop", "muaonthecheap", "loveislandusa", "blackladiesdating", "stpetersburgfl", "pics", "canada", "askuk", "fortnitebr", "unitedkingdom", "stopdrinking", "casualconversation", "animalsonreddit", "bisexual", "liberalgunowners", "redditsweats", "orangetheory", "fortnite", "readwithme", "dndgreentext"].map(e => e.toLowerCase())),
+				v = new Set(["uzitest", "testingtesting127", "kpkrunal"]);
+			var y = i("./src/reddit/featureFlags/subredditPoints.ts");
+			const E = new Set(["askaliberal", "asktransgender", "askwomen", "bisexual", "blackladies", "exchristian", "exmormon", "gendercynical", "girlgamers", "neoliberal", "nothowgirlswork", "progresspics", "subredditdrama", "teenagers", "thegirlsurvivalguide", "thequickbrowncorgi", "traaaaaaannnnnnnnnns", "transpositive", "trollxchromosomes", "twoxchromosomes"]);
+			var T = i("./src/reddit/featureFlags/useProductionStreamingApi.ts");
+			const S = {
+					[T.a]: () => Object(T.b)(),
 					introModal: Object(u.d)(u.g),
 					markdownMode: u.g,
 					modQueue: Object(u.e)(u.g, u.h),
-					spBadges: v.c,
-					spBurnLinks: v.d,
-					spClaimablePoints: v.e,
-					spCustomBadgesAndEmotes: v.f,
-					spCustomCrypto: v.g,
-					spEmotes: v.h,
-					spGiphy: v.i,
-					spGovPolls: v.j,
-					spHarberger: v.k,
-					spLeaderboard: v.l,
-					spPoints: v.m,
-					spPointsCoinConversion: v.n,
-					spPolls: v.o,
-					spPublicPoints: v.p,
-					spSpecialMemberships: v.r,
-					spSpecialMembershipUpsells: v.q,
-					spSpinoffs: v.s,
-					spTipping: v.t,
-					spWalletRegistrationBanner: v.u,
+					spBadges: y.c,
+					spBurnLinks: y.d,
+					spClaimablePoints: y.e,
+					spCustomBadgesAndEmotes: y.f,
+					spCustomCrypto: y.g,
+					spEmotes: y.h,
+					spGiphy: y.i,
+					spGovPolls: y.j,
+					spHarberger: y.k,
+					spLeaderboard: y.l,
+					spPoints: y.m,
+					spPointsCoinConversion: y.n,
+					spPolls: y.o,
+					spPublicPoints: y.p,
+					spSpecialMemberships: y.r,
+					spSpecialMembershipUpsells: y.q,
+					spSpinoffs: y.s,
+					spTipping: y.t,
+					spWalletRegistrationBanner: y.u,
 					scheduledPosts: e => {
 						const t = Object(h.d)(e);
 						return !!t && Object(p.h)(e, {
@@ -19976,7 +19980,7 @@
 					},
 					enableToxicityWarning: e => {
 						const t = Object(h.d)(e);
-						return !!t && y.has(t.toLowerCase())
+						return !!t && E.has(t.toLowerCase())
 					},
 					snoovatar30: u.g,
 					geoSubredditRecommendationDULoggedIn: u.k,
@@ -19984,31 +19988,35 @@
 					subredditInlineEditing: u.l,
 					modToMemberShare: e => {
 						const t = Object(h.d)(e);
-						return !!t && w.has(t.toLowerCase())
+						return !!t && v.has(t.toLowerCase())
 					},
 					subredditMentionD2xExperiment: u.l,
 					privacySettingLocationBasedRecommendations: u.l,
 					reCaptchaEnterprise: Object(u.d)(Object(u.b)(...d.d)),
 					hatefulContentFiltersEnabled: e => {
 						const t = Object(h.d)(e);
+						return !!t && w.has(t.toLowerCase())
+					},
+					crowdControlFiltersEnabled: e => {
+						const t = Object(h.d)(e);
 						return !!t && g.has(t.toLowerCase())
 					},
 					__requiredDoNotRemove: u.k
 				},
-				S = o()(T, (e, t) => i => {
+				O = o()(S, (e, t) => i => {
 					const n = i.featureFlags.overrides[t];
 					return r()(n) ? e(i) : n
 				}),
-				O = Object.keys(T),
-				I = e => e.filter(e => "__requiredDoNotRemove" !== e),
-				R = /^feature_(.*)$/i,
-				C = e => {
-					const t = e.match(R);
+				I = Object.keys(S),
+				R = e => e.filter(e => "__requiredDoNotRemove" !== e),
+				C = /^feature_(.*)$/i,
+				F = e => {
+					const t = e.match(C);
 					if (null !== t) return t[1]
 				},
-				F = "FEATURES__FEATURE_SET",
-				N = "FEATURES__FEATURE_TOGGLED",
-				j = function(e, ...t) {
+				N = "FEATURES__FEATURE_SET",
+				j = "FEATURES__FEATURE_TOGGLED",
+				A = function(e, ...t) {
 					return function(...i) {
 						const n = e(...i);
 						return t.forEach(e => e(n, ...i)), n
@@ -20017,17 +20025,17 @@
 					featureName: e,
 					currentValue: t
 				}) => ({
-					type: N,
+					type: j,
 					payload: {
 						featureName: e,
 						currentValue: t
 					}
-				}), E.c),
-				A = ({
+				}), T.c),
+				x = ({
 					featureName: e
 				}) => (t, i) => {
-					const n = (0, S[e])(i());
-					t(j({
+					const n = (0, O[e])(i());
+					t(A({
 						featureName: e,
 						currentValue: n
 					}))
@@ -46378,4 +46386,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3d0b63f06a914fbc4617.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.58d8b1de08f6deeae3d6.js.map
