@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.bd3a4085cfc2ef212c12.js
-// Retrieved at 1/25/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.19f60a83433c990c46be.js
+// Retrieved at 1/26/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -7256,8 +7256,8 @@
 				hk: "31zojm"
 			})))), r.a.createElement("div", {
 				className: f.a.Copyright
-			}, g._("Reddit Inc © {year} . All rights reserved", [g._param("year", (new Date).getFullYear().toString())], {
-				hk: "3nJUt5"
+			}, g._("Reddit Inc © {year}. All rights reserved", [g._param("year", (new Date).getFullYear().toString())], {
+				hk: "4BrCkA"
 			}))))))
 		},
 		"./src/reddit/components/SidebarPostList/SmallPost/index.m.less": function(e, t, n) {
@@ -13495,4 +13495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.bd3a4085cfc2ef212c12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.19f60a83433c990c46be.js.map

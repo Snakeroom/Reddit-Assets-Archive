@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.e2f0fdc768dcdf4515ad.js
-// Retrieved at 1/25/2022, 3:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.0c59fcd79181c8d37dcf.js
+// Retrieved at 1/26/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -17645,8 +17645,8 @@
 				hk: "31zojm"
 			})))), s.a.createElement("div", {
 				className: f.a.Copyright
-			}, g._("Reddit Inc © {year} . All rights reserved", [g._param("year", (new Date).getFullYear().toString())], {
-				hk: "3nJUt5"
+			}, g._("Reddit Inc © {year}. All rights reserved", [g._param("year", (new Date).getFullYear().toString())], {
+				hk: "4BrCkA"
 			}))))))
 		},
 		"./src/reddit/components/SidebarSpacer/index.m.less": function(e, t, n) {
@@ -20250,8 +20250,8 @@
 				[m.a.OWN_PROFILE]: () => o.fbt._("Your profile", null, {
 					hk: "1Qoy4P"
 				}),
-				[m.a.SUBSCRIBED_TO_SUBREDDIT]: () => o.fbt._("My communities", null, {
-					hk: "2NVUpl"
+				[m.a.SUBSCRIBED_TO_SUBREDDIT]: () => o.fbt._("Your communities", null, {
+					hk: "2XzKJR"
 				}),
 				[m.a.OTHER_SUBREDDIT]: () => o.fbt._("Others", null, {
 					hk: "3WQHlu"
@@ -31865,4 +31865,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e2f0fdc768dcdf4515ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0c59fcd79181c8d37dcf.js.map
