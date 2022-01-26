@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotifications.dfc410ad27bec2121710.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotifications.60f44bd501afaa3fcaae.js
+// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotifications"], {
 		"./src/lib/notifications/token.ts": function(e, t, i) {
@@ -69,9 +69,9 @@
 			})), i.d(t, "unsubscribeFromPNs", (function() {
 				return C
 			})), i.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
-				return W
-			})), i.d(t, "subscribeToPermissionsChange", (function() {
 				return q
+			})), i.d(t, "subscribeToPermissionsChange", (function() {
+				return W
 			}));
 			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
 				s = i("./node_modules/lodash/omit.js"),
@@ -123,7 +123,7 @@
 					l = (e => Object(_.c)(e, {
 						experimentName: j.Fb,
 						experimentEligibilitySelector: _.a
-					}) === j.Wc)(c);
+					}) === j.Xc)(c);
 				if (await Object(o.a)() || d) return;
 				await S(c, n);
 				O.j(c), await Object(a.b)(e, t, () => {
@@ -170,7 +170,7 @@
 						})))
 					}
 				} catch (s) {}
-			}, W = e => async (t, i) => {
+			}, q = e => async (t, i) => {
 				const n = i();
 				if (Object(f.a)(n) === u.c.NotificationsSupported) switch (Object(a.a)()) {
 					case u.a.Default:
@@ -180,7 +180,7 @@
 					case u.a.Denied:
 						t(Object(b.h)(e))
 				}
-			}, q = () => async (e, t) => {
+			}, W = () => async (e, t) => {
 				var i;
 				if (!(null === (i = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === i ? void 0 : i.query)) return;
 				const n = t();
@@ -363,4 +363,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.dfc410ad27bec2121710.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotifications.60f44bd501afaa3fcaae.js.map

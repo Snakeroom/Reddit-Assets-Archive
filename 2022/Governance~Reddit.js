@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.226c0393e891dc9a6498.js
-// Retrieved at 1/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.e836217901efcaaf5f20.js
+// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -3462,7 +3462,7 @@
 			const T = e => g.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				D = e => !!Object(v.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...a.d)),
-					experimentName: b.ue
+					experimentName: b.ve
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -4342,7 +4342,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(w)
 						}
-						await t(Object(s.b)(`${r.path}`)), f ? f === p.Xd.NewModule && t(Object(i.h)({
+						await t(Object(s.b)(`${r.path}`)), f ? f === p.Yd.NewModule && t(Object(i.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(o.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(T.a)(Object(g.g)()(E))), Object(I.b)(I.a.SubredditCreation)
 					} else P.error && Object(T.a)(Object(g.h)(P.error.type, _)(E)), t(k({
@@ -19672,7 +19672,11 @@
 						const s = Object.keys(r);
 						return 0 === s.length ? e : s.reduce((e, t) => (r[t] && (e[t] ? e[t] = {
 							...e[t],
-							...r[t]
+							...r[t],
+							allowedPostTypes: {
+								...e[t].allowedPostTypes,
+								...r[t].allowedPostTypes
+							}
 						} : e[t] = r[t]), e), {
 							...e
 						})
@@ -19745,6 +19749,14 @@
 							...e,
 							...r
 						}
+					}
+					case oh.b: {
+						const {
+							subreddits: r
+						} = t.payload, s = r.reduce((e, t) => (t.allowedPostTypes && (e[t.id] = {
+							allowedPostTypes: t.allowedPostTypes
+						}), e), {});
+						return Object(N.merge)(e, s)
 					}
 					case ee.s: {
 						const {
@@ -24988,7 +25000,7 @@
 				l = e => e === n.W.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.J, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(n.nf)(t))
+				f = Object(s.a)(o.J, i, (e, t) => !e && !!t && !Object(n.of)(t))
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
 			"use strict";
@@ -25240,4 +25252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.226c0393e891dc9a6498.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e836217901efcaaf5f20.js.map

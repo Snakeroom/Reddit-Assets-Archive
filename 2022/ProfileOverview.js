@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.cd555c4696b5a4f7bd40.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.5f15bb29084f392e882f.js
+// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -1038,7 +1038,7 @@
 					showEditFlair: fe.a,
 					showAwardsPlaque: j.a,
 					isAudioRoomPostEnabled: O.a,
-					isRecordingEnabled: O.A
+					isRecordingEnabled: O.B
 				}), (e, {
 					postId: t
 				}) => ({
@@ -1096,7 +1096,7 @@
 						postId: Me,
 						postIds: Fe,
 						onceInViewport: Ae
-					} = e, Be = !!e.redditStyle || !!e["data-redditstyle"], Re = Be ? void 0 : u, We = Object(l.a)(fe), Ke = ve && We, Ue = Object(d.a)(fe), Ve = Object(c.a)(fe), De = Object(U.c)(je), He = Object(W.d)(je), Ge = !!je.media && je.media.type === y.o.RTJSON, Xe = Le && Ge, qe = s ? s - G.a : void 0, ze = !!je.recommendationContext, Je = !(z && Q || ne) || ze && Q, Qe = (e => e === le.ne.OnlyTitles)(we) && !Object(ae.a)(je), Ze = (e => e === le.ne.MediumHeight)(we) && !Object(ae.a)(je), Ye = (e => {
+					} = e, Be = !!e.redditStyle || !!e["data-redditstyle"], Re = Be ? void 0 : u, We = Object(l.a)(fe), Ke = ve && We, Ue = Object(d.a)(fe), Ve = Object(c.a)(fe), De = Object(U.c)(je), He = Object(W.d)(je), Ge = !!je.media && je.media.type === y.o.RTJSON, Xe = Le && Ge, qe = s ? s - G.a : void 0, ze = !!je.recommendationContext, Je = !(z && Q || ne) || ze && Q, Qe = (e => e === le.oe.OnlyTitles)(we) && !Object(ae.a)(je), Ze = (e => e === le.oe.MediumHeight)(we) && !Object(ae.a)(je), Ye = (e => {
 						var t;
 						const {
 							post: s,
@@ -2744,7 +2744,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.tc
 				});
-				return !(!t || Object(o.nf)(t))
+				return !(!t || Object(o.of)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -2801,7 +2801,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.nf)(t)
+					return Boolean(t) && !Object(n.of)(t)
 				},
 				d = Object(o.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -3591,4 +3591,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.cd555c4696b5a4f7bd40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.5f15bb29084f392e882f.js.map

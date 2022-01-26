@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.54568fa879f3e6fc6f07.js
-// Retrieved at 1/26/2022, 4:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.960b9bc00c52d7107c83.js
+// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -7366,9 +7366,9 @@
 		"./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return v
-			})), n.d(t, "b", (function() {
 				return _
+			})), n.d(t, "b", (function() {
+				return C
 			}));
 			var a = n("./node_modules/react/index.js"),
 				r = n.n(a),
@@ -7381,9 +7381,10 @@
 				u = n("./src/reddit/icons/svgs/TextPost/index.tsx"),
 				m = n("./src/reddit/icons/svgs/Video/index.tsx"),
 				h = n("./src/reddit/layout/row/Inline/index.tsx"),
-				p = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/PostTypes/index.m.less"),
-				g = n.n(p);
-			const b = [{
+				p = n("./src/reddit/icons/fonts/index.tsx"),
+				g = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/PostTypes/index.m.less"),
+				b = n.n(g);
+			const f = [{
 				type: "text",
 				Icon: u.a
 			}, {
@@ -7395,29 +7396,35 @@
 			}, {
 				type: "links",
 				Icon: c.a
+			}, {
+				type: "talks",
+				Icon: () => r.a.createElement(p.a, {
+					name: "audio"
+				})
 			}];
 
-			function f(e) {
+			function E(e) {
 				const {
 					allowedPostTypes: t,
 					className: n
 				} = e;
 				return r.a.createElement(h.a, {
-					className: Object(s.a)(g.a.rowStyle, n)
-				}, b.map(({
+					className: Object(s.a)(b.a.rowStyle, n)
+				}, f.map(({
 					type: e,
 					Icon: n
-				}) => r.a.createElement("div", {
-					className: Object(s.a)(g.a.iconWrapper, {
-						[g.a.mDisabled]: !t[e]
-					})
+				}, a) => r.a.createElement("div", {
+					className: Object(s.a)(b.a.iconWrapper, {
+						[b.a.mDisabled]: !t[e]
+					}),
+					key: a
 				}, r.a.createElement(n, null))))
 			}
-			var E = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.m.less"),
-				x = n.n(E);
-			const v = i.a.wrapped(l.b, "subredditIcon", x.a);
+			var x = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.m.less"),
+				v = n.n(x);
+			const _ = i.a.wrapped(l.b, "subredditIcon", v.a);
 
-			function _(e) {
+			function C(e) {
 				const {
 					className: t,
 					explanationText: n,
@@ -7433,23 +7440,23 @@
 					allowedPostTypes: p
 				} = l;
 				return r.a.createElement("div", {
-					className: Object(s.a)(x.a.container, {
-						[x.a.mHighlight]: a
+					className: Object(s.a)(v.a.container, {
+						[v.a.mHighlight]: a
 					}, t),
 					onClick: c
 				}, i, r.a.createElement("div", {
-					className: x.a.main
+					className: v.a.main
 				}, r.a.createElement("span", {
-					className: Object(s.a)(x.a.title, {
-						[x.a.lockTitleWithEllipsis]: d
+					className: Object(s.a)(v.a.title, {
+						[v.a.lockTitleWithEllipsis]: d
 					})
 				}, h), u && r.a.createElement("span", {
-					className: x.a.secondary
+					className: v.a.secondary
 				}, u, m && r.a.createElement(r.a.Fragment, null, r.a.createElement(o.a, null), r.a.createElement("span", {
-					className: x.a.secondary
+					className: v.a.secondary
 				}, m))), n && r.a.createElement("span", {
-					className: x.a.secondary
-				}, n)), a && p && r.a.createElement(f, {
+					className: v.a.secondary
+				}, n)), a && p && r.a.createElement(E, {
 					allowedPostTypes: p
 				}))
 			}
@@ -9143,4 +9150,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.54568fa879f3e6fc6f07.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.960b9bc00c52d7107c83.js.map

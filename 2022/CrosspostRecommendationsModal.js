@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.ef39db75ae44dd9ae49a.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.5dcffc5d257c805729db.js
+// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostRecommendationsModal"], {
 		"./src/reddit/components/CrosspostRecommendationsModal/index.m.less": function(e, t, s) {
@@ -20,8 +20,8 @@
 				r = s.n(n),
 				i = s("./node_modules/react-redux/es/index.js"),
 				o = s("./node_modules/react-router-redux/es/index.js"),
-				d = s("./node_modules/reselect/es/index.js"),
-				a = s("./src/higherOrderComponents/asModal/index.tsx"),
+				a = s("./node_modules/reselect/es/index.js"),
+				d = s("./src/higherOrderComponents/asModal/index.tsx"),
 				c = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				l = s("./src/reddit/controls/Button/index.tsx"),
 				m = s("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/RecommendedSubreddits/index.tsx"),
@@ -39,25 +39,25 @@
 			const {
 				fbt: v
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			t.default = Object(a.a)(({
+			t.default = Object(d.a)(({
 				onCloseModal: e,
 				post: t
 			}) => {
 				const s = Object(i.d)(),
-					a = Object(C.a)(),
+					d = Object(C.a)(),
 					{
 						isPending: j,
 						isError: O,
 						hasData: _,
 						items: P
-					} = Object(i.e)(Object(d.c)({
+					} = Object(i.e)(Object(a.c)({
 						isPending: k.i,
 						isError: k.e,
 						hasData: k.c,
 						items: k.b
 					})),
-					w = Object(n.useCallback)(() => {
-						a((e => t => ({
+					f = Object(n.useCallback)(() => {
+						d((e => t => ({
 							...Object(p.m)(t),
 							action: b.c.CLICK,
 							noun: "close",
@@ -66,12 +66,12 @@
 							subreddit: Object(p.hb)(t)
 						}))(t.id)), e()
 					}, [t.id]),
-					f = Object(n.useCallback)(e => {
+					w = Object(n.useCallback)(e => {
 						const n = Object(S.c)(e.name);
 						s(Object(o.b)(`${n}?source_id=${t.id}`))
 					}, [t.id]),
 					N = Object(n.useCallback)(() => {
-						a((e => t => ({
+						d((e => t => ({
 							...Object(p.m)(t),
 							action: b.c.CLICK,
 							noun: "other_communities",
@@ -87,7 +87,7 @@
 				}, v._("Crosspost to a related community", null, {
 					hk: "v80Kq"
 				})), r.a.createElement(u.a, {
-					onClick: w
+					onClick: f
 				}, r.a.createElement(c.b, null))), r.a.createElement(c.m, {
 					className: g.a.modalMetaText
 				}, v._("Share your post to another community to let other people see your post", null, {
@@ -98,7 +98,7 @@
 					isPending: j,
 					items: P,
 					itemWrapperClassName: g.a.itemWrapper,
-					onSelectRecommendation: f,
+					onSelectRecommendation: w,
 					shouldShowSubredditOnlineUsers: !0
 				})), r.a.createElement(c.g, {
 					className: g.a.modalFooter
@@ -131,24 +131,25 @@
 		"./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return k
-			})), s.d(t, "b", (function() {
 				return j
+			})), s.d(t, "b", (function() {
+				return g
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				i = s("./src/lib/classNames/index.ts"),
 				o = s("./src/lib/lessComponent.tsx"),
-				d = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				a = s("./src/reddit/controls/MetaSeparator/index.tsx"),
+				a = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				d = s("./src/reddit/controls/MetaSeparator/index.tsx"),
 				c = s("./src/reddit/icons/svgs/ImagePost/index.tsx"),
 				l = s("./src/reddit/icons/svgs/Link/index.tsx"),
 				m = s("./src/reddit/icons/svgs/TextPost/index.tsx"),
 				u = s("./src/reddit/icons/svgs/Video/index.tsx"),
 				b = s("./src/reddit/layout/row/Inline/index.tsx"),
-				p = s("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/PostTypes/index.m.less"),
-				x = s.n(p);
-			const C = [{
+				p = s("./src/reddit/icons/fonts/index.tsx"),
+				x = s("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/PostTypes/index.m.less"),
+				C = s.n(x);
+			const h = [{
 				type: "text",
 				Icon: m.a
 			}, {
@@ -160,35 +161,41 @@
 			}, {
 				type: "links",
 				Icon: l.a
+			}, {
+				type: "talks",
+				Icon: () => r.a.createElement(p.a, {
+					name: "audio"
+				})
 			}];
 
-			function h(e) {
+			function S(e) {
 				const {
 					allowedPostTypes: t,
 					className: s
 				} = e;
 				return r.a.createElement(b.a, {
-					className: Object(i.a)(x.a.rowStyle, s)
-				}, C.map(({
+					className: Object(i.a)(C.a.rowStyle, s)
+				}, h.map(({
 					type: e,
 					Icon: s
-				}) => r.a.createElement("div", {
-					className: Object(i.a)(x.a.iconWrapper, {
-						[x.a.mDisabled]: !t[e]
-					})
+				}, n) => r.a.createElement("div", {
+					className: Object(i.a)(C.a.iconWrapper, {
+						[C.a.mDisabled]: !t[e]
+					}),
+					key: n
 				}, r.a.createElement(s, null))))
 			}
-			var S = s("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.m.less"),
-				E = s.n(S);
-			const k = o.a.wrapped(d.b, "subredditIcon", E.a);
+			var E = s("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.m.less"),
+				k = s.n(E);
+			const j = o.a.wrapped(a.b, "subredditIcon", k.a);
 
-			function j(e) {
+			function g(e) {
 				const {
 					className: t,
 					explanationText: s,
 					highlight: n,
 					icon: o,
-					item: d,
+					item: a,
 					lockTitleWithEllipsis: c,
 					onClick: l,
 					secondaryText: m,
@@ -196,25 +203,25 @@
 					title: b
 				} = e, {
 					allowedPostTypes: p
-				} = d;
+				} = a;
 				return r.a.createElement("div", {
-					className: Object(i.a)(E.a.container, {
-						[E.a.mHighlight]: n
+					className: Object(i.a)(k.a.container, {
+						[k.a.mHighlight]: n
 					}, t),
 					onClick: l
 				}, o, r.a.createElement("div", {
-					className: E.a.main
+					className: k.a.main
 				}, r.a.createElement("span", {
-					className: Object(i.a)(E.a.title, {
-						[E.a.lockTitleWithEllipsis]: c
+					className: Object(i.a)(k.a.title, {
+						[k.a.lockTitleWithEllipsis]: c
 					})
 				}, b), m && r.a.createElement("span", {
-					className: E.a.secondary
-				}, m, u && r.a.createElement(r.a.Fragment, null, r.a.createElement(a.a, null), r.a.createElement("span", {
-					className: E.a.secondary
+					className: k.a.secondary
+				}, m, u && r.a.createElement(r.a.Fragment, null, r.a.createElement(d.a, null), r.a.createElement("span", {
+					className: k.a.secondary
 				}, u))), s && r.a.createElement("span", {
-					className: E.a.secondary
-				}, s)), n && p && r.a.createElement(h, {
+					className: k.a.secondary
+				}, s)), n && p && r.a.createElement(S, {
 					allowedPostTypes: p
 				}))
 			}
@@ -239,8 +246,8 @@
 				r = s("./node_modules/react/index.js"),
 				i = s.n(r),
 				o = s("./node_modules/react-redux/es/index.js"),
-				d = s("./node_modules/reselect/es/index.js"),
-				a = s("./src/lib/classNames/index.ts"),
+				a = s("./node_modules/reselect/es/index.js"),
+				d = s("./src/lib/classNames/index.ts"),
 				c = s("./src/reddit/actions/postCreation/general.ts"),
 				l = s("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
 				m = s("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -256,7 +263,7 @@
 						items: t,
 						itemWrapperClassName: s,
 						isRedditRec: o,
-						onSelectRecommendation: d,
+						onSelectRecommendation: a,
 						shouldShowSubredditOnlineUsers: c = !1
 					} = e, m = Object(p.a)(), x = Object(r.useCallback)((e, t) => {
 						m(Object(u.s)(e, t))
@@ -269,7 +276,7 @@
 						})
 					}, []);
 					return Object(b.a)(h, E), i.a.createElement(i.a.Fragment, null, t.map((e, t) => i.a.createElement("div", {
-						className: Object(a.a)(S.a.itemWrapper, s),
+						className: Object(d.a)(S.a.itemWrapper, s),
 						key: e.name
 					}, i.a.createElement(l.a, {
 						subredditName: e.name,
@@ -285,7 +292,7 @@
 							hk: "3u8Nrt"
 						}),
 						onClick: () => {
-							d(e), m(Object(u.q)(e.name, t))
+							a(e), m(Object(u.q)(e.name, t))
 						},
 						lockTitleWithEllipsis: !0,
 						shouldShowSubredditOnlineUsers: c
@@ -301,8 +308,8 @@
 						isPending: n,
 						isRedditRec: r,
 						items: o,
-						itemWrapperClassName: d,
-						onSelectRecommendation: a,
+						itemWrapperClassName: a,
+						onSelectRecommendation: d,
 						shouldShowSubredditOnlineUsers: c = !1
 					} = e;
 					return i.a.createElement("div", {
@@ -313,8 +320,8 @@
 					}), s && !n && i.a.createElement(E, {
 						isRedditRec: r,
 						items: o,
-						itemWrapperClassName: d,
-						onSelectRecommendation: a,
+						itemWrapperClassName: a,
+						onSelectRecommendation: d,
 						shouldShowSubredditOnlineUsers: c
 					}))
 				},
@@ -322,11 +329,11 @@
 					const t = Object(o.d)(),
 						{
 							isPending: s,
-							hasData: a,
+							hasData: d,
 							isChanged: l,
 							items: m,
 							isRedditRec: u
-						} = Object(o.e)(Object(d.c)({
+						} = Object(o.e)(Object(a.c)({
 							isPending: x.i,
 							hasData: x.c,
 							isChanged: x.d,
@@ -344,7 +351,7 @@
 						hk: "4BebuH"
 					})), i.a.createElement(k, {
 						contentWrapperClassName: S.a.contentWrapper,
-						hasData: a,
+						hasData: d,
 						isPending: s,
 						isRedditRec: u,
 						items: m,
@@ -367,8 +374,8 @@
 				r = s("./node_modules/react/index.js"),
 				i = s.n(r),
 				o = s("./node_modules/react-redux/es/index.js"),
-				d = s("./src/lib/classNames/index.ts"),
-				a = s("./src/lib/prettyPrintNumber/index.ts"),
+				a = s("./src/lib/classNames/index.ts"),
+				d = s("./src/lib/prettyPrintNumber/index.ts"),
 				c = s("./src/reddit/helpers/name/index.ts"),
 				l = s("./src/reddit/selectors/subreddit.ts"),
 				m = s("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.tsx"),
@@ -402,17 +409,17 @@
 				})), k = Object(c.c)(r), j = void 0 !== u ? n.fbt._({
 					"*": "{number} members",
 					_1: "1 member"
-				}, [n.fbt._plural(u, "number", C ? Object(a.b)(u) : void 0)], {
+				}, [n.fbt._plural(u, "number", C ? Object(d.b)(u) : void 0)], {
 					hk: "2SvJUX"
-				}) : void 0, g = E ? n.fbt._("{number users online in subreddit} online", [n.fbt._param("number users online in subreddit", Object(a.b)(E.accountsActive))], {
+				}) : void 0, g = E ? n.fbt._("{number users online in subreddit} online", [n.fbt._param("number users online in subreddit", Object(d.b)(E.accountsActive))], {
 					hk: "49HfzS"
 				}) : void 0, v = S ? `${j} • ${g}` : j, O = void 0 !== x ? n.fbt._({
 					"*": "{number} online",
 					_1: "1 online"
-				}, [n.fbt._plural(x, "number", C ? Object(a.b)(x) : void 0)], {
+				}, [n.fbt._plural(x, "number", C ? Object(d.b)(x) : void 0)], {
 					hk: "NgOAJ"
 				}) : void 0, _ = i.a.createElement(m.a, {
-					className: Object(d.a)(b.a.icon, {
+					className: Object(a.a)(b.a.icon, {
 						[b.a.hasExplanationText]: !!h
 					}),
 					iconUrl: s,
@@ -438,9 +445,9 @@
 				r = s.n(n),
 				i = s("./src/lib/classNames/index.ts"),
 				o = s("./src/reddit/icons/svgs/ImagePost/index.m.less"),
-				d = s.n(o);
+				a = s.n(o);
 			t.a = e => r.a.createElement("svg", {
-				className: Object(i.a)(d.a.icon, e.className),
+				className: Object(i.a)(a.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, r.a.createElement("path", {
@@ -471,9 +478,9 @@
 				r = s.n(n),
 				i = s("./src/lib/classNames/index.ts"),
 				o = s("./src/reddit/icons/svgs/TextPost/index.m.less"),
-				d = s.n(o);
+				a = s.n(o);
 			t.a = e => r.a.createElement("svg", {
-				className: Object(i.a)(d.a.icon, e.className),
+				className: Object(i.a)(a.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, r.a.createElement("path", {
@@ -498,4 +505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.ef39db75ae44dd9ae49a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.5dcffc5d257c805729db.js.map

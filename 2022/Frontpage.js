@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.bea1b02835dc4490b956.js
-// Retrieved at 1/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.4249df43d38432ed204b.js
+// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/random.js": function(e, t, a) {
@@ -2120,10 +2120,10 @@
 			}
 			var Re = a("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(m.a)(e => Object(qe.c)(e, {
-					experimentName: Be.zd,
+					experimentName: Be.Ad,
 					experimentEligibilitySelector: qe.a
 				}), Re.a),
-				Ge = Object(m.a)(Ue, e => e === Be.Ad.Enabled);
+				Ge = Object(m.a)(Ue, e => e === Be.Bd.Enabled);
 			var We = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ve = a("./src/reddit/selectors/user.ts");
 			var Ke = a("./src/reddit/selectors/seo/linksModule.ts"),
@@ -2154,7 +2154,7 @@
 							return Object(qe.c)(e, {
 								experimentEligibilitySelector: Ve.J,
 								experimentName: Be.Qb
-							}) === Be.Wc
+							}) === Be.Xc
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: d.a,
@@ -4430,8 +4430,8 @@
 					return Object(c.c)(e, {
 						experimentEligibilitySelector: i,
 						experimentName: s.mc
-					}) === s.Yc.Enabled
-				}(e) ? o.Achievements : t === s.Zc.ControlBanner ? o.CommunitySpacesControl : t === s.Zc.EnabledBanner ? o.CommunitySpaces : null
+					}) === s.Zc.Enabled
+				}(e) ? o.Achievements : t === s.ad.ControlBanner ? o.CommunitySpacesControl : t === s.ad.EnabledBanner ? o.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(o || (o = {}))
@@ -4482,4 +4482,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.bea1b02835dc4490b956.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.4249df43d38432ed204b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.b96f8d7b73a6f5e03b81.js
-// Retrieved at 1/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.ad90a978650d996de5ae.js
+// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -7567,7 +7567,7 @@
 					communityFlairSortedKeys: (e, {
 						subredditId: t
 					}) => Object(Fe.c)(e, t),
-					isInNewModuleNCPV3Experiment: e => Object(Re.a)(e) === Te.Xd.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Re.a)(e) === Te.Yd.NewModule,
 					showGovernance: we.d.spPoints,
 					showLeaderboard: we.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
@@ -11910,14 +11910,14 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: s.Md,
-					experimentEligibilitySelector: r.a
-				}) === s.Vd.Enabled,
-				i = e => Object(r.c)(e, {
 					experimentName: s.Nd,
+					experimentEligibilitySelector: r.a
+				}) === s.Wd.Enabled,
+				i = e => Object(r.c)(e, {
+					experimentName: s.Od,
 					experimentEligibilitySelector: r.a,
 					expEventOverride: !1
-				}) === s.Wd.Enabled
+				}) === s.Xd.Enabled
 		},
 		"./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -12039,8 +12039,8 @@
 				a = n("./src/reddit/selectors/meta.ts");
 			const i = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(a.d)(e) && "US" === Object(a.b)(e),
-				experimentName: s.we
-			}) === s.De.Enabled
+				experimentName: s.xe
+			}) === s.Ee.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
@@ -12324,4 +12324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.b96f8d7b73a6f5e03b81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.ad90a978650d996de5ae.js.map

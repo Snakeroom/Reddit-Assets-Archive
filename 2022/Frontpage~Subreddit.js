@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit.e629ca503d8dd6c026c3.js
-// Retrieved at 1/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit.2336898a8371349aa6b6.js
+// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -675,7 +675,7 @@
 					dropdownIsOpen: (e, t) => Object(P.b)(t.dropdownId || U)(e),
 					isPopularPage: l.F
 				}),
-				z = Object(o.b)(K, (e, {
+				Y = Object(o.b)(K, (e, {
 					dropdownId: t,
 					pageLayer: n
 				}) => ({
@@ -683,7 +683,7 @@
 						tooltipId: t || U
 					}))
 				}));
-			var Y = L.a.wrapped(G(z(Object(d.c)(e => r.a.createElement("div", {
+			var z = L.a.wrapped(G(Y(Object(d.c)(e => r.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && r.a.createElement(H, null, y.fbt._("Sort", null, {
@@ -1342,7 +1342,7 @@
 						sortOptions: o,
 						timeSort: i
 					} = this.props, c = !t && Le.has(s), d = Re.has(s), l = o.filter(e => !this.isOverflowSort(e)), u = o.filter(e => this.isOverflowSort(e) && e !== s);
-					return r.a.createElement(r.a.Fragment, null, r.a.createElement(Y, Te({}, this.props, {
+					return r.a.createElement(r.a.Fragment, null, r.a.createElement(z, Te({}, this.props, {
 						buttonClassName: Ae.a.DropdownButton,
 						className: Object(a.a)(Ae.a.SortDropdown, e),
 						rowClassName: Ae.a.DropdownRow,
@@ -1361,7 +1361,7 @@
 						rowSelectedClassName: Ae.a.DropdownRowSelected,
 						timeSort: i || b.hc,
 						wrapperClassName: Ae.a.DropdownSortWrapper
-					}), u.length > 0 && r.a.createElement(Y, Te({}, this.props, {
+					}), u.length > 0 && r.a.createElement(z, Te({}, this.props, {
 						className: Object(a.a)(Ae.a.SortOverflow, e),
 						dropdownClassName: Ae.a.Dropdown,
 						dropdownId: Be,
@@ -1385,7 +1385,7 @@
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
-				ze = Object(o.b)(null, (e, {
+				Ye = Object(o.b)(null, (e, {
 					subredditId: t
 				}) => ({
 					updateSortPreference: (n, s) => {
@@ -1398,7 +1398,7 @@
 						}
 					}
 				}));
-			class Ye extends r.a.Component {
+			class ze extends r.a.Component {
 				constructor() {
 					super(...arguments), this.blurListingBroadcast = () => {
 						u.a.setState({
@@ -1444,7 +1444,7 @@
 					}))
 				}
 			}
-			t.a = Ke(ze(Object(d.c)(Ye)))
+			t.a = Ke(Ye(Object(d.c)(ze)))
 		},
 		"./src/reddit/components/InFeedPostCreation/async.tsx": function(e, t, n) {
 			"use strict";
@@ -2713,7 +2713,7 @@
 						subredditId: t
 					})),
 					y = Object(a.e)(p.a),
-					g = y !== u.Xd.NewModule;
+					g = y !== u.Yd.NewModule;
 				return (null === (s = null == _ ? void 0 : _.cards) || void 0 === s ? void 0 : s.length) > 0 && g ? o.a.createElement(h, {
 					closeModuleOnMount: !!e && e !== m.g.Large,
 					subredditId: t,
@@ -3016,13 +3016,13 @@
 						experimentEligibilitySelector: o.J,
 						experimentName: s.xc
 					});
-					return !(!t || Object(s.nf)(t))
+					return !(!t || Object(s.of)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: o.J,
 						experimentName: s.xc
-					}) === s.bd.ListingEnabled
+					}) === s.cd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, n) {
@@ -3068,4 +3068,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~Subreddit.e629ca503d8dd6c026c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~Subreddit.2336898a8371349aa6b6.js.map

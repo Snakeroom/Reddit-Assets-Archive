@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.e7c0ecb356e78f8aa508.js
-// Retrieved at 1/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.1afccccd5ec91622cc71.js
+// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -1823,9 +1823,9 @@
 		"./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return g
-			})), i.d(t, "b", (function() {
 				return S
+			})), i.d(t, "b", (function() {
+				return j
 			}));
 			var s = i("./node_modules/react/index.js"),
 				r = i.n(s),
@@ -1838,9 +1838,10 @@
 				u = i("./src/reddit/icons/svgs/TextPost/index.tsx"),
 				m = i("./src/reddit/icons/svgs/Video/index.tsx"),
 				b = i("./src/reddit/layout/row/Inline/index.tsx"),
-				p = i("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/PostTypes/index.m.less"),
-				h = i.n(p);
-			const f = [{
+				p = i("./src/reddit/icons/fonts/index.tsx"),
+				h = i("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/PostTypes/index.m.less"),
+				f = i.n(h);
+			const x = [{
 				type: "text",
 				Icon: u.a
 			}, {
@@ -1852,29 +1853,35 @@
 			}, {
 				type: "links",
 				Icon: l.a
+			}, {
+				type: "talks",
+				Icon: () => r.a.createElement(p.a, {
+					name: "audio"
+				})
 			}];
 
-			function x(e) {
+			function y(e) {
 				const {
 					allowedPostTypes: t,
 					className: i
 				} = e;
 				return r.a.createElement(b.a, {
-					className: Object(n.a)(h.a.rowStyle, i)
-				}, f.map(({
+					className: Object(n.a)(f.a.rowStyle, i)
+				}, x.map(({
 					type: e,
 					Icon: i
-				}) => r.a.createElement("div", {
-					className: Object(n.a)(h.a.iconWrapper, {
-						[h.a.mDisabled]: !t[e]
-					})
+				}, s) => r.a.createElement("div", {
+					className: Object(n.a)(f.a.iconWrapper, {
+						[f.a.mDisabled]: !t[e]
+					}),
+					key: s
 				}, r.a.createElement(i, null))))
 			}
-			var y = i("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.m.less"),
-				O = i.n(y);
-			const g = d.a.wrapped(o.b, "subredditIcon", O.a);
+			var O = i("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.m.less"),
+				g = i.n(O);
+			const S = d.a.wrapped(o.b, "subredditIcon", g.a);
 
-			function S(e) {
+			function j(e) {
 				const {
 					className: t,
 					explanationText: i,
@@ -1890,23 +1897,23 @@
 					allowedPostTypes: p
 				} = o;
 				return r.a.createElement("div", {
-					className: Object(n.a)(O.a.container, {
-						[O.a.mHighlight]: s
+					className: Object(n.a)(g.a.container, {
+						[g.a.mHighlight]: s
 					}, t),
 					onClick: l
 				}, d, r.a.createElement("div", {
-					className: O.a.main
+					className: g.a.main
 				}, r.a.createElement("span", {
-					className: Object(n.a)(O.a.title, {
-						[O.a.lockTitleWithEllipsis]: c
+					className: Object(n.a)(g.a.title, {
+						[g.a.lockTitleWithEllipsis]: c
 					})
 				}, b), u && r.a.createElement("span", {
-					className: O.a.secondary
+					className: g.a.secondary
 				}, u, m && r.a.createElement(r.a.Fragment, null, r.a.createElement(a.a, null), r.a.createElement("span", {
-					className: O.a.secondary
+					className: g.a.secondary
 				}, m))), i && r.a.createElement("span", {
-					className: O.a.secondary
-				}, i)), s && p && r.a.createElement(x, {
+					className: g.a.secondary
+				}, i)), s && p && r.a.createElement(y, {
 					allowedPostTypes: p
 				}))
 			}
@@ -2451,4 +2458,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.e7c0ecb356e78f8aa508.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.1afccccd5ec91622cc71.js.map
