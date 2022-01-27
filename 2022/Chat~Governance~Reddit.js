@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f6949676a02515c8c2fa.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2d6886d9097f939cd406.js
+// Retrieved at 1/26/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3350,10 +3350,10 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("156888"),
+				buildNumber: Object(r.c)("156896"),
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1643238887"),
+				buildTimestamp: Object(r.b)("1643243513"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5948,14 +5948,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c63d211df0d00773f3ee08c54fea0d97e038432ef-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c2cf3748bfc6b20a1c0599df5056bc3f2e209dafd-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "63d211df0d00773f3ee08c54fea0d97e038432ef-production",
+						release: "2cf3748bfc6b20a1c0599df5056bc3f2e209dafd-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6472,7 +6472,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "63d211df0d00773f3ee08c54fea0d97e038432ef-production",
+						releaseClient: "2cf3748bfc6b20a1c0599df5056bc3f2e209dafd-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -19931,7 +19931,7 @@
 				h = i("./src/reddit/selectors/platform.ts"),
 				f = i("./src/reddit/selectors/subreddit.ts");
 			var b = i("./src/reddit/selectors/responsiveSettings.ts");
-			const g = new Set(["antievilplayground", "antivegan", "banpitbulls", "belowdeck", "bettereveryloop", "bigonemild", "blackladies", "boston", "capitolconsequences", "chicagosuburbs", "churchofcovid", "coronaviruscirclejerk", "criticalrole", "crowdcontroltest", "cryptocurrencies", "desabafos", "dogtraining", "dreamsmp", "feetishh", "fragilewhiteredditor", "ftmporn", "gaylorswift", "goldentruth", "heroin", "israel", "jonbenet", "learnart", "lgbt", "liberalgunowners", "marchagainstnazis", "medicalcannabisaus", "muaonthecheap", "mvis", "news", "noveltranslations", "onlyfans_nonnude", "paranormal", "philadelphia", "phonesex", "polyamory", "protectandserve", "qanoncasualties", "roguecompany", "startrek", "suggestmeabook", "todayilearned", "trollxchromosomes", "twoxchromosomes", "vancouver", "vaxxhappened", "vegan", "walkaway", "witcher", "worldnews", "yurop", "zerowaste"].map(e => e.toLowerCase())),
+			const g = new Set(["antievilplayground", "antivegan", "antiwork", "banpitbulls", "belowdeck", "bettereveryloop", "bigonemild", "blackladies", "boston", "capitolconsequences", "chicagosuburbs", "churchofcovid", "coronaviruscirclejerk", "criticalrole", "crowdcontroltest", "cryptocurrencies", "desabafos", "dogtraining", "dreamsmp", "feetishh", "fragilewhiteredditor", "ftmporn", "gaylorswift", "goldentruth", "heroin", "israel", "jonbenet", "learnart", "lgbt", "liberalgunowners", "marchagainstnazis", "medicalcannabisaus", "muaonthecheap", "mvis", "news", "noveltranslations", "onlyfans_nonnude", "paranormal", "philadelphia", "phonesex", "polyamory", "protectandserve", "qanoncasualties", "roguecompany", "startrek", "suggestmeabook", "todayilearned", "trollxchromosomes", "twoxchromosomes", "vancouver", "vaxxhappened", "vegan", "walkaway", "witcher", "worldnews", "yurop", "zerowaste"].map(e => e.toLowerCase())),
 				w = new Set(["AntiEvilPlayground", "lgbt", "dccomics", "yurop", "muaonthecheap", "loveislandusa", "blackladiesdating", "stpetersburgfl", "pics", "canada", "askuk", "fortnitebr", "unitedkingdom", "stopdrinking", "casualconversation", "animalsonreddit", "bisexual", "liberalgunowners", "redditsweats", "orangetheory", "fortnite", "readwithme", "dndgreentext"].map(e => e.toLowerCase())),
 				v = new Set(["uzitest", "testingtesting127", "kpkrunal"]);
 			var y = i("./src/reddit/featureFlags/subredditPoints.ts");
@@ -46406,4 +46406,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f6949676a02515c8c2fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2d6886d9097f939cd406.js.map
