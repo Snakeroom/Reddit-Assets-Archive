@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.857a1553ea2c23ba55c1.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.2aeeda70128e0cdf42c3.js
+// Retrieved at 1/26/2022, 8:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/@apollo/client/cache/core/cache.js": function(e, t, n) {
@@ -1196,7 +1196,9 @@
 		},
 		"./node_modules/@apollo/client/core/ApolloClient.js": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "b", (function() {
+				return Q
+			})), n.d(t, "a", (function() {
 				return B
 			}));
 			var r = n("./node_modules/@apollo/client/node_modules/tslib/tslib.es6.js"),
@@ -7214,4 +7216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.857a1553ea2c23ba55c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.2aeeda70128e0cdf42c3.js.map

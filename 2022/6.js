@@ -1,675 +1,394 @@
-// https://www.redditstatic.com/desktop2x/6.07d9d6f965a046fceb61.js
-// Retrieved at 1/24/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/6.f7c8fc190664e87d717e.js
+// Retrieved at 1/26/2022, 8:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[6], {
-		"./node_modules/html-to-image/es/index.js": function(t, e, n) {
+		"./node_modules/deep-diff/index.js": function(e, t, n) {
+			var s, o;
+			o = function(e) {
+				var t = ["N", "E", "A", "D"];
+
+				function n(e, t) {
+					e.super_ = t, e.prototype = Object.create(t.prototype, {
+						constructor: {
+							value: e,
+							enumerable: !1,
+							writable: !0,
+							configurable: !0
+						}
+					})
+				}
+
+				function s(e, t) {
+					Object.defineProperty(this, "kind", {
+						value: e,
+						enumerable: !0
+					}), t && t.length && Object.defineProperty(this, "path", {
+						value: t,
+						enumerable: !0
+					})
+				}
+
+				function o(e, t, n) {
+					o.super_.call(this, "E", e), Object.defineProperty(this, "lhs", {
+						value: t,
+						enumerable: !0
+					}), Object.defineProperty(this, "rhs", {
+						value: n,
+						enumerable: !0
+					})
+				}
+
+				function r(e, t) {
+					r.super_.call(this, "N", e), Object.defineProperty(this, "rhs", {
+						value: t,
+						enumerable: !0
+					})
+				}
+
+				function i(e, t) {
+					i.super_.call(this, "D", e), Object.defineProperty(this, "lhs", {
+						value: t,
+						enumerable: !0
+					})
+				}
+
+				function a(e, t, n) {
+					a.super_.call(this, "A", e), Object.defineProperty(this, "index", {
+						value: t,
+						enumerable: !0
+					}), Object.defineProperty(this, "item", {
+						value: n,
+						enumerable: !0
+					})
+				}
+
+				function l(e, t, n) {
+					var s = e.slice((n || t) + 1 || e.length);
+					return e.length = t < 0 ? e.length + t : t, e.push.apply(e, s), e
+				}
+
+				function u(e) {
+					var t = typeof e;
+					return "object" !== t ? t : e === Math ? "math" : null === e ? "null" : Array.isArray(e) ? "array" : "[object Date]" === Object.prototype.toString.call(e) ? "date" : "function" == typeof e.toString && /^\/.*\//.test(e.toString()) ? "regexp" : "object"
+				}
+
+				function c(e) {
+					var t = 0;
+					if (0 === e.length) return t;
+					for (var n = 0; n < e.length; n++) t = (t << 5) - t + e.charCodeAt(n), t &= t;
+					return t
+				}
+
+				function p(e) {
+					var t = 0,
+						n = u(e);
+					if ("array" === n) return e.forEach((function(e) {
+						t += p(e)
+					})), t + c("[type: array, hash: " + t + "]");
+					if ("object" === n) {
+						for (var s in e)
+							if (e.hasOwnProperty(s)) {
+								var o = "[ type: object, key: " + s + ", value hash: " + p(e[s]) + "]";
+								t += c(o)
+							} return t
+					}
+					return t + c("[ type: " + n + " ; value: " + e + "]")
+				}
+
+				function d(e, t, n, s, l, c, f, h) {
+					n = n || [], f = f || [];
+					var m = (l = l || []).slice(0);
+					if (null != c) {
+						if (s) {
+							if ("function" == typeof s && s(m, c)) return;
+							if ("object" == typeof s) {
+								if (s.prefilter && s.prefilter(m, c)) return;
+								if (s.normalize) {
+									var g = s.normalize(m, c, e, t);
+									g && (e = g[0], t = g[1])
+								}
+							}
+						}
+						m.push(c)
+					}
+					"regexp" === u(e) && "regexp" === u(t) && (e = e.toString(), t = t.toString());
+					var b, v, y, w, D = typeof e,
+						k = typeof t,
+						j = "undefined" !== D || f && f.length > 0 && f[f.length - 1].lhs && Object.getOwnPropertyDescriptor(f[f.length - 1].lhs, c),
+						O = "undefined" !== k || f && f.length > 0 && f[f.length - 1].rhs && Object.getOwnPropertyDescriptor(f[f.length - 1].rhs, c);
+					if (!j && O) n.push(new r(m, t));
+					else if (!O && j) n.push(new i(m, e));
+					else if (u(e) !== u(t)) n.push(new o(m, e, t));
+					else if ("date" === u(e) && e - t != 0) n.push(new o(m, e, t));
+					else if ("object" === D && null !== e && null !== t) {
+						for (b = f.length - 1; b > -1; --b)
+							if (f[b].lhs === e) {
+								w = !0;
+								break
+							} if (w) e !== t && n.push(new o(m, e, t));
+						else {
+							if (f.push({
+									lhs: e,
+									rhs: t
+								}), Array.isArray(e)) {
+								for (h && (e.sort((function(e, t) {
+										return p(e) - p(t)
+									})), t.sort((function(e, t) {
+										return p(e) - p(t)
+									}))), b = t.length - 1, v = e.length - 1; b > v;) n.push(new a(m, b, new r(void 0, t[b--])));
+								for (; v > b;) n.push(new a(m, v, new i(void 0, e[v--])));
+								for (; b >= 0; --b) d(e[b], t[b], n, s, m, b, f, h)
+							} else {
+								var A = Object.keys(e),
+									C = Object.keys(t);
+								for (b = 0; b < A.length; ++b) y = A[b], (w = C.indexOf(y)) >= 0 ? (d(e[y], t[y], n, s, m, y, f, h), C[w] = null) : d(e[y], void 0, n, s, m, y, f, h);
+								for (b = 0; b < C.length; ++b)(y = C[b]) && d(void 0, t[y], n, s, m, y, f, h)
+							}
+							f.length = f.length - 1
+						}
+					} else e !== t && ("number" === D && isNaN(e) && isNaN(t) || n.push(new o(m, e, t)))
+				}
+
+				function f(e, t, n, s, o) {
+					var r = [];
+					if (d(e, t, r, s, null, null, null, o), n)
+						for (var i = 0; i < r.length; ++i) n(r[i]);
+					return r
+				}
+
+				function h(e, t, n, s) {
+					var o = f(e, t, s ? function(e) {
+						e && s.push(e)
+					} : void 0, n);
+					return s || (o.length ? o : void 0)
+				}
+
+				function m(e, n, s) {
+					if (void 0 === s && n && ~t.indexOf(n.kind) && (s = n), e && s && s.kind) {
+						for (var o = e, r = -1, i = s.path ? s.path.length - 1 : 0; ++r < i;) void 0 === o[s.path[r]] && (o[s.path[r]] = void 0 !== s.path[r + 1] && "number" == typeof s.path[r + 1] ? [] : {}), o = o[s.path[r]];
+						switch (s.kind) {
+							case "A":
+								s.path && void 0 === o[s.path[r]] && (o[s.path[r]] = []),
+									function e(t, n, s) {
+										if (s.path && s.path.length) {
+											var o, r = t[n],
+												i = s.path.length - 1;
+											for (o = 0; o < i; o++) r = r[s.path[o]];
+											switch (s.kind) {
+												case "A":
+													e(r[s.path[o]], s.index, s.item);
+													break;
+												case "D":
+													delete r[s.path[o]];
+													break;
+												case "E":
+												case "N":
+													r[s.path[o]] = s.rhs
+											}
+										} else switch (s.kind) {
+											case "A":
+												e(t[n], s.index, s.item);
+												break;
+											case "D":
+												t = l(t, n);
+												break;
+											case "E":
+											case "N":
+												t[n] = s.rhs
+										}
+										return t
+									}(s.path ? o[s.path[r]] : o, s.index, s.item);
+								break;
+							case "D":
+								delete o[s.path[r]];
+								break;
+							case "E":
+							case "N":
+								o[s.path[r]] = s.rhs
+						}
+					}
+				}
+				return n(o, s), n(r, s), n(i, s), n(a, s), Object.defineProperties(h, {
+					diff: {
+						value: h,
+						enumerable: !0
+					},
+					orderIndependentDiff: {
+						value: function(e, t, n, s) {
+							var o = s ? function(e) {
+									e && s.push(e)
+								} : void 0,
+								r = f(e, t, o, n, !0);
+							return s || (r.length ? r : void 0)
+						},
+						enumerable: !0
+					},
+					observableDiff: {
+						value: f,
+						enumerable: !0
+					},
+					orderIndependentObservableDiff: {
+						value: function(e, t, n, s, o, r, i) {
+							return d(e, t, n, s, o, r, i, !0)
+						},
+						enumerable: !0
+					},
+					orderIndepHash: {
+						value: p,
+						enumerable: !0
+					},
+					applyDiff: {
+						value: function(e, t, n) {
+							e && t && f(e, t, (function(s) {
+								n && !n(e, t, s) || m(e, t, s)
+							}))
+						},
+						enumerable: !0
+					},
+					applyChange: {
+						value: m,
+						enumerable: !0
+					},
+					revertChange: {
+						value: function(e, t, n) {
+							if (e && t && n && n.kind) {
+								var s, o, r = e;
+								for (o = n.path.length - 1, s = 0; s < o; s++) void 0 === r[n.path[s]] && (r[n.path[s]] = {}), r = r[n.path[s]];
+								switch (n.kind) {
+									case "A":
+										! function e(t, n, s) {
+											if (s.path && s.path.length) {
+												var o, r = t[n],
+													i = s.path.length - 1;
+												for (o = 0; o < i; o++) r = r[s.path[o]];
+												switch (s.kind) {
+													case "A":
+														e(r[s.path[o]], s.index, s.item);
+														break;
+													case "D":
+													case "E":
+														r[s.path[o]] = s.lhs;
+														break;
+													case "N":
+														delete r[s.path[o]]
+												}
+											} else switch (s.kind) {
+												case "A":
+													e(t[n], s.index, s.item);
+													break;
+												case "D":
+												case "E":
+													t[n] = s.lhs;
+													break;
+												case "N":
+													t = l(t, n)
+											}
+											return t
+										}(r[n.path[s]], n.index, n.item);
+										break;
+									case "D":
+									case "E":
+										r[n.path[s]] = n.lhs;
+										break;
+									case "N":
+										delete r[n.path[s]]
+								}
+							}
+						},
+						enumerable: !0
+					},
+					isConflict: {
+						value: function() {
+							return "undefined" != typeof $conflict
+						},
+						enumerable: !0
+					}
+				}), h.DeepDiff = h, e && (e.DeepDiff = h), h
+			}(this), void 0 === (s = function() {
+				return o
+			}.call(t, n, t, e)) || (e.exports = s)
+		},
+		"./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/diffAndLog.ts": function(e, t, n) {
 			"use strict";
-			n.r(e), n.d(e, "toSvg", (function() {
-				return W
-			})), n.d(e, "toCanvas", (function() {
-				return K
-			})), n.d(e, "toPixelData", (function() {
-				return G
-			})), n.d(e, "toPng", (function() {
-				return J
-			})), n.d(e, "toJpeg", (function() {
-				return X
-			})), n.d(e, "toBlob", (function() {
-				return Q
-			})), n.d(e, "getFontEmbedCSS", (function() {
-				return Y
+			n.r(t), n.d(t, "diffAndLog", (function() {
+				return l
 			}));
-			var r = function(t, e, n, r) {
-				return new(n || (n = Promise))((function(o, i) {
-					function c(t) {
-						try {
-							s(r.next(t))
-						} catch (e) {
-							i(e)
-						}
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			var s = n("./node_modules/@sentry/minimal/esm/index.js"),
+				o = n("./node_modules/deep-diff/index.js"),
+				r = n("./src/lib/env/index.ts");
+			const i = ["comments.allAwardings", "comments.associatedAward", "comments.body", "comments.bodyMD", "comments.isAuthorCakeday", "comments.isAuthorPremium", "comments.markdown", "comments.modReportsDismissed", "comments.userReportsDismissed", "comments.isSystem", "comments.modReasonBy", "posts.allAwardings", "posts.audioRoom", "posts.isAuthorPremium", "posts.isEligibleForLinkedPosts", "posts.isEligibleForQASchema", "posts.isFollowed", "posts.isPinned", "posts.pollData", "posts.predictionTournament", "posts.previewComments", "posts.removedBy", "posts.removedByCategory", "posts.topAwardedType", "posts.modReportsDismissed", "posts.userReportsDismissed", "posts.media.markdownContent", "posts.media.content", "posts.modReasonBy", "authorFlair.cssClass", "comments.bannedAtUTC", "comments.permalink", "comments.goldCount", "posts.bannedAtUTC", "posts.liveCommentsWebsocket", "posts.thumbnail.url", "posts.discussionType", "posts.eventsOnRender", "posts.goldCount", "posts.sendReplies", "authorFlair.richtext"],
+				a = (e, t) => {
+					const n = {},
+						s = {};
+					Object.keys(e).forEach(r => {
+						const a = e[r],
+							l = t[r] || {};
+						n[r] = {}, s[r] = 0, Object.keys(a).forEach(e => {
+							const t = a[e],
+								u = l[e],
+								c = Object(o.diff)(t, u, {
+									prefilter: (e, t) => i.includes(`${r}.${e.length?`${e.join(".")}.`:""}${t}`) || i.includes(`${r}.${t}`),
+									normalize: (e, t, n, s) => n || s ? [n, s] : [n, n]
+								});
+							s[r] = c ? s[r] + c.length : (null == s ? void 0 : s[r]) || 0, c && (n[r][e] = {
+								gatewayThing: t,
+								gqlThing: u,
+								diffResult: c
+							})
+						})
+					});
+					const r = Object.keys(s).reduce((e, t) => e += s[t], 0);
+					return {
+						allDiffs: n,
+						issueCounts: s,
+						totalIssues: r
 					}
-
-					function u(t) {
-						try {
-							s(r.throw(t))
-						} catch (e) {
-							i(e)
-						}
-					}
-
-					function s(t) {
-						var e;
-						t.done ? o(t.value) : (e = t.value, e instanceof n ? e : new n((function(t) {
-							t(e)
-						}))).then(c, u)
-					}
-					s((r = r.apply(t, e || [])).next())
-				}))
-			};
-			const o = "application/font-woff",
-				i = {
-					woff: o,
-					woff2: o,
-					ttf: "application/font-truetype",
-					eot: "application/vnd.ms-fontobject",
-					png: "image/png",
-					jpg: "image/jpeg",
-					jpeg: "image/jpeg",
-					gif: "image/gif",
-					tiff: "image/tiff",
-					svg: "image/svg+xml"
 				};
 
-			function c(t) {
-				const e = function(t) {
-					const e = /\.([^./]*?)$/g.exec(t);
-					return e ? e[1] : ""
-				}(t).toLowerCase();
-				return i[e] || ""
-			}
-
-			function u(t) {
-				return -1 !== t.search(/^(data:)/)
-			}
-
-			function s(t, e) {
-				return `data:${e};base64,${t}`
-			}
-
-			function l(t) {
-				return t.split(/,/)[1]
-			}
-			const a = function() {
-				let t = 0;
-				return () => (t += 1, `u${(()=>`0000${(Math.random()*Math.pow(36,4)<<0).toString(36)}`.slice(-4))()}${t}`)
-			}();
-
-			function h(t) {
-				const e = [];
-				for (let n = 0, r = t.length; n < r; n += 1) e.push(t[n]);
-				return e
-			}
-
-			function f(t, e) {
-				const n = window.getComputedStyle(t).getPropertyValue(e);
-				return parseFloat(n.replace("px", ""))
-			}
-
-			function d(t) {
-				return t.toBlob ? new Promise(e => t.toBlob(e)) : new Promise(e => {
-					const n = window.atob(t.toDataURL().split(",")[1]),
-						r = n.length,
-						o = new Uint8Array(r);
-					for (let t = 0; t < r; t += 1) o[t] = n.charCodeAt(t);
-					e(new Blob([o], {
-						type: "image/png"
-					}))
-				})
-			}
-
-			function m(t) {
-				return new Promise((e, n) => {
-					const r = new Image;
-					r.onload = () => e(r), r.onerror = n, r.crossOrigin = "anonymous", r.decoding = "sync", r.src = t
-				})
-			}
-
-			function g(t, e, n) {
-				return r(this, void 0, void 0, (function*() {
-					const o = "http://www.w3.org/2000/svg",
-						i = document.createElementNS(o, "svg"),
-						c = document.createElementNS(o, "foreignObject");
-					return i.setAttribute("width", `${e}`), i.setAttribute("height", `${n}`), i.setAttribute("viewBox", `0 0 ${e} ${n}`), c.setAttribute("width", "100%"), c.setAttribute("height", "100%"), c.setAttribute("x", "0"), c.setAttribute("y", "0"), c.setAttribute("externalResourcesRequired", "true"), i.appendChild(c), c.appendChild(t),
-						function(t) {
-							return r(this, void 0, void 0, (function*() {
-								return Promise.resolve().then(() => (new XMLSerializer).serializeToString(t)).then(encodeURIComponent).then(t => `data:image/svg+xml;charset=utf-8,${t}`)
-							}))
-						}(i)
-				}))
-			}
-			const p = {};
-
-			function v(t, e) {
-				const n = function(t) {
-					let e = t.replace(/\?.*/, "");
-					return /ttf|otf|eot|woff2?/i.test(e) && (e = e.replace(/.*\//, "")), e
-				}(t);
-				if (null != p[n]) return p[n];
-				e.cacheBust && (t += (/\?/.test(t) ? "&" : "?") + (new Date).getTime());
-				const r = window.fetch(t).then(t => t.blob().then(e => ({
-					blob: e,
-					contentType: t.headers.get("Content-Type") || ""
-				}))).then(({
-					blob: t,
-					contentType: e
-				}) => new Promise((n, r) => {
-					const o = new FileReader;
-					o.onloadend = () => n({
-						contentType: e,
-						blob: o.result
-					}), o.onerror = r, o.readAsDataURL(t)
-				})).then(({
-					blob: t,
-					contentType: e
-				}) => ({
-					contentType: e,
-					blob: l(t)
-				})).catch(n => {
-					let r = "";
-					if (e.imagePlaceholder) {
-						const t = e.imagePlaceholder.split(/,/);
-						t && t[1] && (r = t[1])
-					}
-					let o = `Failed to fetch resource: ${t}`;
-					return n && (o = "string" == typeof n ? n : n.message), o && console.error(o), {
-						blob: r,
-						contentType: ""
-					}
-				});
-				return p[n] = r, r
-			}
-
-			function w(t, e, n) {
-				const r = `.${t}:${e}`,
-					o = n.cssText ? function(t) {
-						const e = t.getPropertyValue("content");
-						return `${t.cssText} content: '${e.replace(/'|"/g,"")}';`
-					}(n) : function(t) {
-						return h(t).map(e => {
-							return `${e}: ${t.getPropertyValue(e)}${t.getPropertyPriority(e)?" !important":""};`
-						}).join(" ")
-					}(n);
-				return document.createTextNode(`${r}{${o}}`)
-			}
-
-			function y(t, e, n) {
-				const r = window.getComputedStyle(t, n),
-					o = r.getPropertyValue("content");
-				if ("" === o || "none" === o) return;
-				const i = a();
-				try {
-					e.className = `${e.className} ${i}`
-				} catch (u) {
-					return
-				}
-				const c = document.createElement("style");
-				c.appendChild(w(i, n, r)), e.appendChild(c)
-			}
-			var b = function(t, e, n, r) {
-				return new(n || (n = Promise))((function(o, i) {
-					function c(t) {
-						try {
-							s(r.next(t))
-						} catch (e) {
-							i(e)
-						}
-					}
-
-					function u(t) {
-						try {
-							s(r.throw(t))
-						} catch (e) {
-							i(e)
-						}
-					}
-
-					function s(t) {
-						var e;
-						t.done ? o(t.value) : (e = t.value, e instanceof n ? e : new n((function(t) {
-							t(e)
-						}))).then(c, u)
-					}
-					s((r = r.apply(t, e || [])).next())
-				}))
-			};
-
-			function P(t, e) {
-				return b(this, void 0, void 0, (function*() {
-					return t instanceof HTMLCanvasElement ? function(t) {
-						return b(this, void 0, void 0, (function*() {
-							const e = t.toDataURL();
-							return "data:," === e ? Promise.resolve(t.cloneNode(!1)) : m(e)
-						}))
-					}(t) : t instanceof HTMLVideoElement && t.poster ? function(t, e) {
-						return b(this, void 0, void 0, (function*() {
-							return Promise.resolve(t.poster).then(t => v(t, e)).then(e => s(e.blob, c(t.poster) || e.contentType)).then(t => m(t))
-						}))
-					}(t, e) : Promise.resolve(t.cloneNode(!1))
-				}))
-			}
-			const x = t => null != t.tagName && "SLOT" === t.tagName.toUpperCase();
-
-			function S(t, e) {
-				return b(this, void 0, void 0, (function*() {
-					return e instanceof Element ? Promise.resolve().then(() => (function(t, e) {
-						const n = window.getComputedStyle(t),
-							r = e.style;
-						r && (n.cssText ? r.cssText = n.cssText : h(n).forEach(t => {
-							r.setProperty(t, n.getPropertyValue(t), n.getPropertyPriority(t))
-						}))
-					})(t, e)).then(() => (function(t, e) {
-						y(t, e, ":before"), y(t, e, ":after")
-					})(t, e)).then(() => (function(t, e) {
-						t instanceof HTMLTextAreaElement && (e.innerHTML = t.value), t instanceof HTMLInputElement && e.setAttribute("value", t.value)
-					})(t, e)).then(() => e) : Promise.resolve(e)
-				}))
-			}
-
-			function E(t, e, n) {
-				return b(this, void 0, void 0, (function*() {
-					return n || !e.filter || e.filter(t) ? Promise.resolve(t).then(t => P(t, e)).then(n => (function(t, e, n) {
-						var r;
-						return b(this, void 0, void 0, (function*() {
-							const o = x(t) && t.assignedNodes ? h(t.assignedNodes()) : h((null !== (r = t.shadowRoot) && void 0 !== r ? r : t).childNodes);
-							return 0 === o.length || t instanceof HTMLVideoElement ? Promise.resolve(e) : o.reduce((t, r) => t.then(() => E(r, n)).then(t => {
-								t && e.appendChild(t)
-							}), Promise.resolve()).then(() => e)
-						}))
-					})(t, n, e)).then(e => S(t, e)) : Promise.resolve(null)
-				}))
-			}
-			var C = function(t, e, n, r) {
-				return new(n || (n = Promise))((function(o, i) {
-					function c(t) {
-						try {
-							s(r.next(t))
-						} catch (e) {
-							i(e)
-						}
-					}
-
-					function u(t) {
-						try {
-							s(r.throw(t))
-						} catch (e) {
-							i(e)
-						}
-					}
-
-					function s(t) {
-						var e;
-						t.done ? o(t.value) : (e = t.value, e instanceof n ? e : new n((function(t) {
-							t(e)
-						}))).then(c, u)
-					}
-					s((r = r.apply(t, e || [])).next())
-				}))
-			};
-			const $ = /url\((['"]?)([^'"]+?)\1\)/g,
-				T = /url\([^)]+\)\s*format\((["'])([^"']+)\1\)/g,
-				R = /src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;
-
-			function L(t) {
-				const e = [];
-				return t.replace($, (t, n, r) => (e.push(r), t)), e.filter(t => !u(t))
-			}
-
-			function A(t, e, n, r, o) {
-				const i = n ? function(t, e) {
-					if (t.match(/^[a-z]+:\/\//i)) return t;
-					if (t.match(/^\/\//)) return window.location.protocol + t;
-					if (t.match(/^[a-z]+:/i)) return t;
-					const n = document.implementation.createHTMLDocument(),
-						r = n.createElement("base"),
-						o = n.createElement("a");
-					return n.head.appendChild(r), n.body.appendChild(o), e && (r.href = e), o.href = t, o.href
-				}(e, n) : e;
-				return Promise.resolve(i).then(t => o ? o(t) : v(t, r)).then(t => "string" == typeof t ? s(t, c(e)) : s(t.blob, c(e) || t.contentType)).then(n => t.replace(function(t) {
-					const e = t.replace(/([.*+?^${}()|\[\]\/\\])/g, "\\$1");
-					return new RegExp(`(url\\(['"]?)(${e})(['"]?\\))`, "g")
-				}(e), `$1${n}$3`)).then(t => t, () => i)
-			}
-
-			function N(t) {
-				return -1 !== t.search($)
-			}
-
-			function D(t, e, n) {
-				return C(this, void 0, void 0, (function*() {
-					if (!N(t)) return Promise.resolve(t);
-					const r = function(t, {
-						preferredFontFormat: e
-					}) {
-						return e ? t.replace(R, t => {
-							for (;;) {
-								const [n, , r] = T.exec(t) || [];
-								if (!r) return "";
-								if (r === e) return `src: ${n};`
+			function l({
+				gatewayResponse: e,
+				normalizedGqlResponse: t,
+				rawGqlResponse: n
+			}) {
+				if (Object(r.a)()) {
+					console.group("GQL Modqueue Shadowtest"), console.groupCollapsed("raw gql response"), console.log(n), console.groupEnd(), console.groupCollapsed("normalized gql response"), console.log(t), console.groupEnd(), console.groupCollapsed("gateway response"), console.log(e), console.groupEnd();
+					const {
+						allDiffs: s,
+						issueCounts: o,
+						totalIssues: r
+					} = a(e, t);
+					console.groupCollapsed(`diff: ${r} issues`), console.log("lhs = gateway\nrhs = gql");
+					for (const e in s) {
+						if (console.groupCollapsed(`${e}: ${o[e]} issues`), o[e] > 0)
+							for (const t in s[e]) {
+								const n = s[e][t].diffResult;
+								console.groupCollapsed(`${t}: ${n.length||0} issues`), console.log(n), console.log({
+									gql: s[e][t].gqlThing,
+									gateway: s[e][t].gatewayThing
+								}), console.groupEnd()
 							}
-						}) : t
-					}(t, n);
-					return Promise.resolve(r).then(L).then(t => t.reduce((t, r) => t.then(t => A(t, r, e, n)), Promise.resolve(r)))
-				}))
-			}
-			var _ = function(t, e, n, r) {
-				return new(n || (n = Promise))((function(o, i) {
-					function c(t) {
-						try {
-							s(r.next(t))
-						} catch (e) {
-							i(e)
-						}
+						console.groupEnd()
 					}
-
-					function u(t) {
-						try {
-							s(r.throw(t))
-						} catch (e) {
-							i(e)
-						}
-					}
-
-					function s(t) {
-						var e;
-						t.done ? o(t.value) : (e = t.value, e instanceof n ? e : new n((function(t) {
-							t(e)
-						}))).then(c, u)
-					}
-					s((r = r.apply(t, e || [])).next())
-				}))
-			};
-
-			function I(t, e) {
-				return _(this, void 0, void 0, (function*() {
-					return t instanceof Element ? Promise.resolve(t).then(t => (function(t, e) {
-						var n;
-						return _(this, void 0, void 0, (function*() {
-							const r = null === (n = t.style) || void 0 === n ? void 0 : n.getPropertyValue("background");
-							return r ? Promise.resolve(r).then(t => D(t, null, e)).then(e => (t.style.setProperty("background", e, t.style.getPropertyPriority("background")), t)) : Promise.resolve(t)
-						}))
-					})(t, e)).then(t => (function(t, e) {
-						return _(this, void 0, void 0, (function*() {
-							if ((!(t instanceof HTMLImageElement) || u(t.src)) && (!(t instanceof SVGImageElement) || u(t.href.baseVal))) return Promise.resolve(t);
-							const n = t instanceof HTMLImageElement ? t.src : t.href.baseVal;
-							return Promise.resolve(n).then(t => v(t, e)).then(t => s(t.blob, c(n) || t.contentType)).then(e => new Promise((n, r) => {
-								t.onload = n, t.onerror = r, t instanceof HTMLImageElement ? (t.srcset = "", t.src = e) : t.href.baseVal = e
-							})).then(() => t, () => t)
-						}))
-					})(t, e)).then(t => (function(t, e) {
-						return _(this, void 0, void 0, (function*() {
-							const n = h(t.childNodes).map(t => I(t, e));
-							return Promise.all(n).then(() => t)
-						}))
-					})(t, e)) : Promise.resolve(t)
-				}))
-			}
-			var H = function(t, e, n, r) {
-				return new(n || (n = Promise))((function(o, i) {
-					function c(t) {
-						try {
-							s(r.next(t))
-						} catch (e) {
-							i(e)
-						}
-					}
-
-					function u(t) {
-						try {
-							s(r.throw(t))
-						} catch (e) {
-							i(e)
-						}
-					}
-
-					function s(t) {
-						var e;
-						t.done ? o(t.value) : (e = t.value, e instanceof n ? e : new n((function(t) {
-							t(e)
-						}))).then(c, u)
-					}
-					s((r = r.apply(t, e || [])).next())
-				}))
-			};
-			const M = {};
-
-			function U(t) {
-				const e = M[t];
-				if (null != e) return e;
-				const n = window.fetch(t).then(e => ({
-					url: t,
-					cssText: e.text()
-				}));
-				return M[t] = n, n
-			}
-
-			function k(t) {
-				return H(this, void 0, void 0, (function*() {
-					return t.cssText.then(e => {
-						let n = e;
-						const r = /url\(["']?([^"')]+)["']?\)/g,
-							o = (n.match(/url\([^)]+\)/g) || []).map(e => {
-								let o = e.replace(r, "$1");
-								return o.startsWith("https://") || (o = new URL(o, t.url).href), window.fetch(o).then(t => t.blob()).then(t => new Promise((r, o) => {
-									const i = new FileReader;
-									i.onloadend = () => {
-										n = n.replace(e, `url(${i.result})`), r([e, i.result])
-									}, i.onerror = o, i.readAsDataURL(t)
-								}))
-							});
-						return Promise.all(o).then(() => n)
-					})
-				}))
-			}
-
-			function V(t) {
-				if (null == t) return [];
-				const e = [];
-				let n = t.replace(/(\/\*[\s\S]*?\*\/)/gi, "");
-				const r = new RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})", "gi");
-				for (;;) {
-					const t = r.exec(n);
-					if (null === t) break;
-					e.push(t[0])
+					console.groupEnd()
 				}
-				n = n.replace(r, "");
-				const o = /@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi,
-					i = new RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})", "gi");
-				for (;;) {
-					let t = o.exec(n);
-					if (null === t) {
-						if (null === (t = i.exec(n))) break;
-						o.lastIndex = i.lastIndex
-					} else i.lastIndex = o.lastIndex;
-					e.push(t[0])
-				}
-				return e
-			}
-
-			function j(t) {
-				return t.filter(t => t.type === CSSRule.FONT_FACE_RULE).filter(t => N(t.style.getPropertyValue("src")))
-			}
-
-			function O(t) {
-				return H(this, void 0, void 0, (function*() {
-					return new Promise((e, n) => {
-						null == t.ownerDocument && n(new Error("Provided element is not within a Document")), e(h(t.ownerDocument.styleSheets))
-					}).then(t => (function(t) {
-						return H(this, void 0, void 0, (function*() {
-							const e = [],
-								n = [];
-							return t.forEach(e => {
-								if ("cssRules" in e) try {
-									h(e.cssRules).forEach((t, r) => {
-										if (t.type === CSSRule.IMPORT_RULE) {
-											let o = r + 1;
-											const i = U(t.href).then(t => t ? k(t) : "").then(t => V(t).forEach(t => {
-												try {
-													e.insertRule(t, t.startsWith("@import") ? o += 1 : e.cssRules.length)
-												} catch (n) {
-													console.error("Error inserting rule from remote css", {
-														rule: t,
-														error: n
-													})
-												}
-											})).catch(t => {
-												console.error("Error loading remote css", t.toString())
-											});
-											n.push(i)
-										}
-									})
-								} catch (r) {
-									const o = t.find(t => null == t.href) || document.styleSheets[0];
-									null != e.href && n.push(U(e.href).then(t => t ? k(t) : "").then(t => V(t).forEach(t => {
-										o.insertRule(t, e.cssRules.length)
-									})).catch(t => {
-										console.error("Error loading remote stylesheet", t.toString())
-									})), console.error("Error inlining remote css file", r.toString())
-								}
-							}), Promise.all(n).then(() => (t.forEach(t => {
-								if ("cssRules" in t) try {
-									h(t.cssRules).forEach(t => {
-										e.push(t)
-									})
-								} catch (n) {
-									console.error(`Error while reading CSS rules from ${t.href}`, n.toString())
-								}
-							}), e))
-						}))
-					})(t)).then(j)
-				}))
-			}
-
-			function B(t, e) {
-				return H(this, void 0, void 0, (function*() {
-					return O(t).then(t => Promise.all(t.map(t => {
-						const n = t.parentStyleSheet ? t.parentStyleSheet.href : null;
-						return D(t.cssText, n, e)
-					}))).then(t => t.join("\n"))
-				}))
-			}
-			var F = function(t, e, n, r) {
-				return new(n || (n = Promise))((function(o, i) {
-					function c(t) {
-						try {
-							s(r.next(t))
-						} catch (e) {
-							i(e)
-						}
-					}
-
-					function u(t) {
-						try {
-							s(r.throw(t))
-						} catch (e) {
-							i(e)
-						}
-					}
-
-					function s(t) {
-						var e;
-						t.done ? o(t.value) : (e = t.value, e instanceof n ? e : new n((function(t) {
-							t(e)
-						}))).then(c, u)
-					}
-					s((r = r.apply(t, e || [])).next())
-				}))
-			};
-
-			function z(t, e = {}) {
-				return {
-					width: e.width || function(t) {
-						const e = f(t, "border-left-width"),
-							n = f(t, "border-right-width");
-						return t.clientWidth + e + n
-					}(t),
-					height: e.height || function(t) {
-						const e = f(t, "border-top-width"),
-							n = f(t, "border-bottom-width");
-						return t.clientHeight + e + n
-					}(t)
-				}
-			}
-
-			function W(t, e = {}) {
-				return F(this, void 0, void 0, (function*() {
+				if (Object(r.b)()) {
 					const {
-						width: n,
-						height: r
-					} = z(t, e);
-					return Promise.resolve(t).then(t => E(t, e, !0)).then(t => (function(t, e) {
-						return H(this, void 0, void 0, (function*() {
-							return (null != e.fontEmbedCSS ? Promise.resolve(e.fontEmbedCSS) : B(t, e)).then(e => {
-								const n = document.createElement("style"),
-									r = document.createTextNode(e);
-								return n.appendChild(r), t.firstChild ? t.insertBefore(n, t.firstChild) : t.appendChild(n), t
-							})
-						}))
-					})(t, e)).then(t => I(t, e)).then(t => (function(t, e) {
-						const {
-							style: n
-						} = t;
-						e.backgroundColor && (n.backgroundColor = e.backgroundColor), e.width && (n.width = `${e.width}px`), e.height && (n.height = `${e.height}px`);
-						const r = e.style;
-						return null != r && Object.keys(r).forEach(t => {
-							n[t] = r[t]
-						}), t
-					})(t, e)).then(t => g(t, n, r))
-				}))
-			}
-			const q = 16384;
-
-			function K(t, e = {}) {
-				return F(this, void 0, void 0, (function*() {
-					return W(t, e).then(m).then(n => {
-						const r = document.createElement("canvas"),
-							o = r.getContext("2d"),
-							i = e.pixelRatio || function() {
-								let t, e;
-								try {
-									e = process
-								} catch (r) {}
-								const n = e && e.env ? e.env.devicePixelRatio : null;
-								return n && (t = parseInt(n, 10), Number.isNaN(t) && (t = 1)), t || window.devicePixelRatio || 1
-							}(),
-							{
-								width: c,
-								height: u
-							} = z(t, e),
-							s = e.canvasWidth || c,
-							l = e.canvasHeight || u;
-						return r.width = s * i, r.height = l * i, e.skipAutoScale || function(t) {
-							(t.width > q || t.height > q) && (t.width > q && t.height > q ? t.width > t.height ? (t.height *= q / t.width, t.width = q) : (t.width *= q / t.height, t.height = q) : t.width > q ? (t.height *= q / t.width, t.width = q) : (t.width *= q / t.height, t.height = q))
-						}(r), r.style.width = `${s}`, r.style.height = `${l}`, e.backgroundColor && (o.fillStyle = e.backgroundColor, o.fillRect(0, 0, r.width, r.height)), o.drawImage(n, 0, 0, r.width, r.height), r
+						allDiffs: n,
+						issueCounts: o,
+						totalIssues: r
+					} = a(e, t);
+					if (r <= 0) return;
+					s.l(e => {
+						e.setExtra("info", {
+							allDiffs: n,
+							issueCounts: o,
+							totalIssues: r
+						}), e.setExtra("bypassSampling", !0), s.d("GQL Modqueue Shadowtest Diff")
 					})
-				}))
-			}
-
-			function G(t, e = {}) {
-				return F(this, void 0, void 0, (function*() {
-					const {
-						width: n,
-						height: r
-					} = z(t, e);
-					return K(t, e).then(t => {
-						return t.getContext("2d").getImageData(0, 0, n, r).data
-					})
-				}))
-			}
-
-			function J(t, e = {}) {
-				return F(this, void 0, void 0, (function*() {
-					return K(t, e).then(t => t.toDataURL())
-				}))
-			}
-
-			function X(t, e = {}) {
-				return F(this, void 0, void 0, (function*() {
-					return K(t, e).then(t => t.toDataURL("image/jpeg", e.quality || 1))
-				}))
-			}
-
-			function Q(t, e = {}) {
-				return F(this, void 0, void 0, (function*() {
-					return K(t, e).then(d)
-				}))
-			}
-
-			function Y(t, e = {}) {
-				return F(this, void 0, void 0, (function*() {
-					return B(t, e)
-				}))
+				}
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/6.07d9d6f965a046fceb61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/6.f7c8fc190664e87d717e.js.map

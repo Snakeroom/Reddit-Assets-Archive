@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.674557f7ea068b35f9fb.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.138e118fa61e319d132b.js
+// Retrieved at 1/26/2022, 8:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -11,47 +11,41 @@
 				o = a("./node_modules/react-router/esm/react-router.js"),
 				c = a("./src/config.ts"),
 				d = a("./src/lib/classNames/index.ts"),
-				i = a("./src/reddit/helpers/trackers/snoovatar.ts"),
-				l = a("./src/reddit/hooks/useTracking.ts"),
-				u = a("./src/reddit/components/SnoovatarModal/index.m.less"),
-				m = a.n(u);
+				i = a("./src/reddit/components/SnoovatarModal/index.m.less"),
+				l = a.n(i);
 			t.a = Object(o.i)(({
 				className: e,
 				match: t,
 				location: a,
 				share: o,
-				source: u
+				source: i
 			}) => {
-				const O = new URLSearchParams(a.search);
-				O.append("platform", "desktop"), Object.entries(t.params).forEach(([e, t]) => O.append(e, t)), o && Object.entries(o).forEach(([e, t]) => O.set(e, t)), u && O.set("source", u);
-				const v = Object(l.a)();
-				Object(r.useEffect)(() => {
-					v(i.q)
-				}, [v]);
-				const f = Object(n.e)(e => e.user.session),
-					j = Object(r.useRef)(null),
-					b = Object(r.useCallback)(e => {
-						f && e && e.postMessage({
+				const u = new URLSearchParams(a.search);
+				u.append("platform", "desktop"), Object.entries(t.params).forEach(([e, t]) => u.append(e, t)), o && Object.entries(o).forEach(([e, t]) => u.set(e, t)), i && u.set("source", i);
+				const m = Object(n.e)(e => e.user.session),
+					v = Object(r.useRef)(null),
+					O = Object(r.useCallback)(e => {
+						m && e && e.postMessage({
 							type: "injectAuth",
 							headers: {
-								Authorization: `Bearer ${f.accessToken}`
+								Authorization: `Bearer ${m.accessToken}`
 							},
-							expiration: new Date(f.expires).getTime()
+							expiration: new Date(m.expires).getTime()
 						}, c.a.snoovatarUrl)
-					}, [f]);
+					}, [m]);
 				return Object(r.useEffect)(() => {
 					var e;
-					return b(null === (e = null == j ? void 0 : j.current) || void 0 === e ? void 0 : e.contentWindow)
-				}, [j, b]), Object(r.useEffect)(() => {
+					return O(null === (e = null == v ? void 0 : v.current) || void 0 === e ? void 0 : e.contentWindow)
+				}, [v, O]), Object(r.useEffect)(() => {
 					const e = e => {
-						"refreshAuth" === (null == e ? void 0 : e.data) && b(e.source)
+						"refreshAuth" === (null == e ? void 0 : e.data) && O(e.source)
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
-				}, [b]), s.a.createElement("div", {
-					className: Object(d.a)(m.a.iframeContainer, e)
+				}, [O]), s.a.createElement("div", {
+					className: Object(d.a)(l.a.iframeContainer, e)
 				}, s.a.createElement("iframe", {
-					ref: j,
-					src: `${c.a.snoovatarUrl}/static/client/?${O.toString()}`
+					ref: v,
+					src: `${c.a.snoovatarUrl}/static/client/?${u.toString()}`
 				}))
 			})
 		},
@@ -72,16 +66,18 @@
 				o = a("./node_modules/react-redux/es/index.js"),
 				c = a("./src/lib/env/index.ts"),
 				d = a("./src/reddit/actions/snoovatarModal.ts"),
-				i = a("./src/reddit/selectors/activeModal.ts"),
-				l = a("./src/reddit/selectors/experiments/econ/index.ts"),
-				u = a("./src/telemetry/index.ts"),
-				m = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
-				O = a("./src/higherOrderComponents/asModal/index.tsx"),
-				v = a("./src/reddit/components/SnoovatarModal/index.m.less"),
-				f = a.n(v);
+				i = a("./src/reddit/helpers/trackers/snoovatar.ts"),
+				l = a("./src/reddit/hooks/useTracking.ts"),
+				u = a("./src/reddit/selectors/activeModal.ts"),
+				m = a("./src/reddit/selectors/experiments/econ/index.ts"),
+				v = a("./src/telemetry/index.ts"),
+				O = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
+				j = a("./src/higherOrderComponents/asModal/index.tsx"),
+				b = a("./src/reddit/components/SnoovatarModal/index.m.less"),
+				f = a.n(b);
 
-			function j() {
-				return (j = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var r in a) Object.prototype.hasOwnProperty.call(a, r) && (e[r] = a[r])
@@ -89,47 +85,53 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const b = !(Object(c.c)() || Object(c.b)()),
+			const h = !(Object(c.c)() || Object(c.b)()),
 				p = {
 					GRAPHQL_URL: r.a.gqlUrl,
-					IS_DEVELOPMENT: b,
-					IS_PRODUCTION: !b,
+					IS_DEVELOPMENT: h,
+					IS_PRODUCTION: !h,
 					MOCKING_ENABLED: !1,
 					SNOOVATAR_BASE_URL: r.a.snoovatarUrl,
 					SNOOVATAR_API_URL: `${r.a.snoovatarUrl}/api`
 				},
-				_ = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				x = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.DataWrapper
 				}))),
-				h = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				E = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.Builder
 				}))),
-				E = Object(O.a)(e => {
+				S = Object(j.a)(e => {
 					const t = Object(o.e)(e => e.user.session),
-						[a, r] = Object(s.useState)(!1),
-						c = Object(s.useMemo)(() => t ? {
+						[r, c] = Object(s.useState)(!1),
+						d = Object(s.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${t.accessToken}`
 							},
 							expiration: new Date(t.expires).getTime()
-						} : null, [t]),
-						d = Object(o.e)(e => c && Object(l.f)(e));
+						}), [t]),
+						u = Object(l.a)(),
+						j = Object(o.e)(t => {
+							var a;
+							return d && "random" !== (null === (a = e.share) || void 0 === a ? void 0 : a.avatarId) && Object(m.f)(t)
+						});
 					return Object(s.useEffect)(() => {
-						r(!0)
-					}, []), t && a ? d ? n.a.createElement(s.Suspense, {
+						(async () => {
+							await a.e(4).then(a.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
+						})(), u(i.q), c(!0)
+					}, []), t && r ? j ? n.a.createElement(s.Suspense, {
 						fallback: n.a.createElement("div", null)
-					}, n.a.createElement(_, {
-						authHeaders: c,
+					}, n.a.createElement(x, {
+						authHeaders: d,
 						config: p,
-						sendEvent: u.a
-					}, n.a.createElement(h, null))) : n.a.createElement(m.a, j({
+						sendEvent: v.a
+					}, n.a.createElement(E, null))) : n.a.createElement(O.a, _({
 						className: f.a.snoovatarModalIframeContainer
 					}, e)) : null
 				});
 			t.default = () => {
 				const e = Object(o.d)(),
-					t = Object(o.e)(e => Object(i.a)(e));
-				return n.a.createElement(E, j({}, t, {
+					t = Object(o.e)(e => Object(u.a)(e));
+				return n.a.createElement(S, _({}, t, {
 					className: f.a.snoovatarModal,
 					withOverlay: !0,
 					onOverlayClick: () => e(Object(d.a)())
@@ -138,4 +140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.674557f7ea068b35f9fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.138e118fa61e319d132b.js.map
