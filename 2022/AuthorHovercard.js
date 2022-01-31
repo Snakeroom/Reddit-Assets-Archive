@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.bdd295cc082f445b6f6b.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.a2b686ca261aaf0f1782.js
+// Retrieved at 1/31/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -1603,9 +1603,9 @@
 		"./src/reddit/components/InboxTooltip/Component.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return ee
+				return Y
 			})), n.d(t, "b", (function() {
-				return se
+				return ne
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./node_modules/react/index.js"),
@@ -1767,10 +1767,8 @@
 				W = "270px",
 				K = 100,
 				z = .5,
-				Z = 5,
-				G = 55,
-				J = 49;
-			class X extends a.a.Component {
+				Z = 5;
+			class G extends a.a.Component {
 				constructor() {
 					super(...arguments), this.container = a.a.createRef(), this.state = {
 						notificationHeights: H,
@@ -1787,7 +1785,7 @@
 						} = this.props, s = t || n;
 						let a = 0;
 						for (const o in e) a += e[o];
-						return 0 === a ? s ? R : r ? M : W : (s && (a += K), a = a - G - J)
+						return 0 === a ? s ? R : r ? M : W : (s && (a += K), a)
 					}, this.setNotificationHeight = (e, t) => {
 						this.setState(n => ({
 							notificationHeights: {
@@ -1888,13 +1886,13 @@
 					}, a.a.createElement("div", null)))
 				}
 			}
-			var q = n("./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts"),
-				V = n("./src/reddit/helpers/localStorage/index.ts");
-			var Q = n("./src/reddit/hooks/useInboxPrivacyPolicyBannerSeen.ts"),
-				Y = n("./src/reddit/hooks/useTracking.ts");
+			var J = n("./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts"),
+				X = n("./src/reddit/helpers/localStorage/index.ts");
+			var q = n("./src/reddit/hooks/useInboxPrivacyPolicyBannerSeen.ts"),
+				V = n("./src/reddit/hooks/useTracking.ts");
 
-			function $() {
-				return ($ = Object.assign || function(e) {
+			function Q() {
+				return (Q = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1902,9 +1900,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ee = [],
-				te = d.a.div("StyledDropdown", P.a),
-				ne = ({
+			const Y = [],
+				$ = d.a.div("StyledDropdown", P.a),
+				ee = ({
 					isLoggedIn: e,
 					onMessagesClick: t,
 					onBarClick: n,
@@ -1956,7 +1954,7 @@
 						className: P.a.icon
 					}))))
 				},
-				re = e => a.a.createElement("div", {
+				te = e => a.a.createElement("div", {
 					className: P.a.bottomBar
 				}, a.a.createElement(_.a, {
 					className: P.a.bottomLink,
@@ -1967,8 +1965,8 @@
 				}, r.fbt._("See All", null, {
 					hk: "3L3tFc"
 				}))),
-				se = e => {
-					const t = Object(Y.a)(),
+				ne = e => {
+					const t = Object(V.a)(),
 						{
 							clearMessageTabBadgeCount: n,
 							inboxBadgeCount: r,
@@ -1983,20 +1981,20 @@
 							userId: x
 						} = e,
 						[v, h] = function(e) {
-							const [t, n] = Object(s.useState)(Object(V.t)(e));
+							const [t, n] = Object(s.useState)(Object(X.t)(e));
 							return [t, Object(s.useCallback)(() => {
-								n(!0), Object(V.zb)(e)
+								n(!0), Object(X.zb)(e)
 							}, [])]
 						}(x),
-						[I, g] = Object(q.a)(x),
-						[_, C] = Object(Q.a)(x),
+						[I, g] = Object(J.a)(x),
+						[_, C] = Object(q.a)(x),
 						E = !(!l || !l.length),
 						O = Object(o.a)(),
 						y = O === i.a.Closed || O === i.a.Default || O === i.a.Denied,
 						j = b && y && !I;
-					return a.a.createElement(te, null, a.a.createElement("div", {
+					return a.a.createElement($, null, a.a.createElement("div", {
 						className: P.a.tooltipContainer
-					}, a.a.createElement(ne, {
+					}, a.a.createElement(ee, {
 						markAllAsRead: () => {
 							e.markAllAsRead(), t(Object(A.g)({
 								isMiniInbox: !0
@@ -2012,7 +2010,7 @@
 						sendInboxClickSettings: () => t(Object(A.m)(A.b.MiniInbox)),
 						onBarClick: u,
 						isLoggedIn: p
-					}), a.a.createElement(X, $({}, e, {
+					}), a.a.createElement(G, Q({}, e, {
 						isPending: c,
 						onItemClick: u,
 						setDesktopNotificationsPromptSeen: g,
@@ -2023,7 +2021,7 @@
 						setDesktopNotificationWrappedRedditBannerSeen: () => {
 							h(), t(Object(A.o)())
 						}
-					})), (E || c) && a.a.createElement(re, {
+					})), (E || c) && a.a.createElement(te, {
 						sendInboxClickSeeAll: () => t(Object(A.l)()),
 						onBarClick: u
 					})))
@@ -3672,4 +3670,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.bdd295cc082f445b6f6b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.a2b686ca261aaf0f1782.js.map

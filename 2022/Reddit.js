@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.d59fa57f70e3b2631ce8.js
-// Retrieved at 1/31/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d3d08e2175a1770ad6fa.js
+// Retrieved at 1/31/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -11587,9 +11587,9 @@
 		"./src/reddit/components/InboxTooltip/Component.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return ee
+				return X
 			})), n.d(t, "b", (function() {
-				return re
+				return ne
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -11751,10 +11751,8 @@
 				H = "270px",
 				W = 100,
 				q = .5,
-				V = 5,
-				K = 55,
-				z = 49;
-			class Q extends o.a.Component {
+				V = 5;
+			class K extends o.a.Component {
 				constructor() {
 					super(...arguments), this.container = o.a.createRef(), this.state = {
 						notificationHeights: F,
@@ -11771,7 +11769,7 @@
 						} = this.props, r = t || n;
 						let o = 0;
 						for (const a in e) o += e[a];
-						return 0 === o ? r ? G : s ? U : H : (r && (o += W), o = o - K - z)
+						return 0 === o ? r ? G : s ? U : H : (r && (o += W), o)
 					}, this.setNotificationHeight = (e, t) => {
 						this.setState(n => ({
 							notificationHeights: {
@@ -11872,13 +11870,13 @@
 					}, o.a.createElement("div", null)))
 				}
 			}
-			var J = n("./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts"),
-				Z = n("./src/reddit/helpers/localStorage/index.ts");
-			var Y = n("./src/reddit/hooks/useInboxPrivacyPolicyBannerSeen.ts"),
-				X = n("./src/reddit/hooks/useTracking.ts");
+			var z = n("./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts"),
+				Q = n("./src/reddit/helpers/localStorage/index.ts");
+			var J = n("./src/reddit/hooks/useInboxPrivacyPolicyBannerSeen.ts"),
+				Z = n("./src/reddit/hooks/useTracking.ts");
 
-			function $() {
-				return ($ = Object.assign || function(e) {
+			function Y() {
+				return (Y = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -11886,9 +11884,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const ee = [],
-				te = d.a.div("StyledDropdown", N.a),
-				ne = ({
+			const X = [],
+				$ = d.a.div("StyledDropdown", N.a),
+				ee = ({
 					isLoggedIn: e,
 					onMessagesClick: t,
 					onBarClick: n,
@@ -11940,7 +11938,7 @@
 						className: N.a.icon
 					}))))
 				},
-				se = e => o.a.createElement("div", {
+				te = e => o.a.createElement("div", {
 					className: N.a.bottomBar
 				}, o.a.createElement(x.a, {
 					className: N.a.bottomLink,
@@ -11951,8 +11949,8 @@
 				}, s.fbt._("See All", null, {
 					hk: "3L3tFc"
 				}))),
-				re = e => {
-					const t = Object(X.a)(),
+				ne = e => {
+					const t = Object(Z.a)(),
 						{
 							clearMessageTabBadgeCount: n,
 							inboxBadgeCount: s,
@@ -11967,20 +11965,20 @@
 							userId: g
 						} = e,
 						[f, C] = function(e) {
-							const [t, n] = Object(r.useState)(Object(Z.t)(e));
+							const [t, n] = Object(r.useState)(Object(Q.t)(e));
 							return [t, Object(r.useCallback)(() => {
-								n(!0), Object(Z.zb)(e)
+								n(!0), Object(Q.zb)(e)
 							}, [])]
 						}(g),
-						[O, v] = Object(J.a)(g),
-						[x, y] = Object(Y.a)(g),
+						[O, v] = Object(z.a)(g),
+						[x, y] = Object(J.a)(g),
 						E = !(!l || !l.length),
 						j = Object(a.a)(),
 						_ = j === i.a.Closed || j === i.a.Default || j === i.a.Denied,
 						S = b && _ && !O;
-					return o.a.createElement(te, null, o.a.createElement("div", {
+					return o.a.createElement($, null, o.a.createElement("div", {
 						className: N.a.tooltipContainer
-					}, o.a.createElement(ne, {
+					}, o.a.createElement(ee, {
 						markAllAsRead: () => {
 							e.markAllAsRead(), t(Object(R.g)({
 								isMiniInbox: !0
@@ -11996,7 +11994,7 @@
 						sendInboxClickSettings: () => t(Object(R.m)(R.b.MiniInbox)),
 						onBarClick: u,
 						isLoggedIn: p
-					}), o.a.createElement(Q, $({}, e, {
+					}), o.a.createElement(K, Y({}, e, {
 						isPending: c,
 						onItemClick: u,
 						setDesktopNotificationsPromptSeen: v,
@@ -12007,7 +12005,7 @@
 						setDesktopNotificationWrappedRedditBannerSeen: () => {
 							C(), t(Object(R.o)())
 						}
-					})), (E || c) && o.a.createElement(se, {
+					})), (E || c) && o.a.createElement(te, {
 						sendInboxClickSeeAll: () => t(Object(R.l)()),
 						onBarClick: u
 					})))
@@ -24712,4 +24710,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d59fa57f70e3b2631ce8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d3d08e2175a1770ad6fa.js.map
