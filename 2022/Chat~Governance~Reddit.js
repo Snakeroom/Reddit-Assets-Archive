@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e2c662ce12837e35c2af.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d733629e262a61a0797b.js
+// Retrieved at 2/1/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -28,7 +28,7 @@
 				l = Object(n.a)(o),
 				u = Object(n.a)(d),
 				c = e => async (t, i) => {
-					const n = Object(r.s)(i(), e);
+					const n = Object(r.t)(i(), e);
 					(null == n ? void 0 : n.length) && t(u(e))
 				}, _ = e => async (t, i) => {
 					const n = i().channels.draftMessages[e.channelId];
@@ -233,7 +233,7 @@
 				}) => {
 					var p, h, f;
 					const y = r();
-					if (Object(b.d)(y, e)) return;
+					if (Object(b.c)(y, e)) return;
 					i(g({
 						inviteLinkDataModelId: e
 					}));
@@ -275,7 +275,7 @@
 				}, C = (e, t) => async (i, n, {
 					gqlContext: r
 				}) => {
-					if (Object(b.e)(n(), e)) return;
+					if (Object(b.d)(n(), e)) return;
 					i(y({
 						inviteLinkDataModelId: e
 					}));
@@ -429,8 +429,8 @@
 						chatGroupUnacceptedInvites: r || 0
 					} : await (async (e, t) => {
 						if (Object(c.c)(e)) try {
-							const e = await Object(l.g)(t());
-							if (Object(l.j)(e.body)) return p(e.body.data)
+							const e = await Object(l.h)(t());
+							if (Object(l.k)(e.body)) return p(e.body.data)
 						} catch (i) {
 							Object(u.b)(`Error getting proxy unread count: ${i}`)
 						}
@@ -439,35 +439,73 @@
 					leading: !0
 				})
 		},
-		"./src/chat/actions/settingsDropdown/index.ts": function(e, t, i) {
+		"./src/chat/actions/settings/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "c", (function() {
-				return s
+				return m
 			})), i.d(t, "a", (function() {
-				return o
+				return p
 			})), i.d(t, "b", (function() {
-				return d
+				return h
 			})), i.d(t, "f", (function() {
-				return a
+				return f
 			})), i.d(t, "e", (function() {
-				return u
+				return g
 			})), i.d(t, "d", (function() {
-				return c
+				return w
+			})), i.d(t, "i", (function() {
+				return v
+			})), i.d(t, "h", (function() {
+				return y
+			})), i.d(t, "g", (function() {
+				return E
 			}));
-			var n = i("./src/lib/makeActionCreator/index.ts"),
-				r = i("./src/chat/selectors/settingsDropdown.ts");
-			const s = "SETTINGS__SHOW_CHAT_LINK_PROMPT_COUNT_SET",
-				o = "SETTINGS__CHAT_LINK_PROMPT_HIDE";
-			var d;
+			var n = i("./node_modules/react-router-redux/es/index.js"),
+				r = i("./src/lib/makeActionCreator/index.ts"),
+				s = i("./src/chat/actions/sidebar.ts"),
+				o = i("./src/chat/actions/theme.ts"),
+				d = i("./src/chat/customMiddleware/lastSelectedChannel.ts"),
+				a = i("./src/chat/helpers/urls/index.ts"),
+				l = i("./src/chat/models/Sidebar/index.ts"),
+				u = i("./src/chat/selectors/channels.ts"),
+				c = i("./src/chat/selectors/settings.ts"),
+				_ = i("./src/chat/selectors/sidebar.ts");
+			const m = "SETTINGS__SHOW_CHAT_LINK_PROMPT_COUNT_SET",
+				p = "SETTINGS__CHAT_LINK_PROMPT_HIDE";
+			var h;
 			! function(e) {
 				e[e.SESSION_1 = 1] = "SESSION_1", e[e.SESSION_3 = 3] = "SESSION_3", e[e.SESSION_25 = 25] = "SESSION_25", e[e.SESSION_100 = 100] = "SESSION_100", e[e.SESSION_LAST = 101] = "SESSION_LAST"
-			}(d || (d = {}));
-			const a = Object(n.a)(s),
-				l = Object(n.a)(o),
-				u = e => async (t, i) => {
-					Object(r.c)(i()) || t(a(e))
-				}, c = () => async (e, t) => {
-					Object(r.b)(t()) || e(l())
+			}(h || (h = {}));
+			const f = Object(r.a)(m),
+				b = Object(r.a)(p),
+				g = e => async (t, i) => {
+					Object(c.c)(i()) || t(f(e))
+				}, w = () => async (e, t) => {
+					Object(c.b)(t()) || e(b())
+				}, v = () => async (e, t) => {
+					const i = t();
+					if (Object(_.a)(i) === l.a.SETTINGS) {
+						e(Object(s.e)(l.a.CHANNELS));
+						const i = Object(d.b)(t());
+						if (i) {
+							const r = Object(u.h)(t(), i);
+							if (r) {
+								const t = Object(a.getChannelUrl)(r),
+									i = Object(a.getRedirectURL)(t);
+								return void e(Object(n.b)(i))
+							}
+						}
+					} else e(Object(s.e)(l.a.SETTINGS))
+				}, y = () => async (e, t) => {
+					const i = Object(u.n)(t());
+					if (!i) return;
+					const r = Object(a.themesUrl)(i);
+					e(Object(o.chatThemeSettingsClickedAction)()), e(Object(n.b)(r))
+				}, E = () => async (e, t) => {
+					const i = Object(u.n)(t());
+					if (!i) return;
+					const r = Object(a.privacyAndSupportUrl)(i);
+					e(Object(n.b)(r))
 				}
 		},
 		"./src/chat/actions/sidebar.ts": function(e, t, i) {
@@ -496,92 +534,89 @@
 		"./src/chat/actions/theme.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "GLOBAL_THEME_CHANGED", (function() {
-				return a
+				return d
 			})), i.d(t, "CHAT_THEME_CHANGED", (function() {
-				return l
+				return a
 			})), i.d(t, "CHAT_THEME_APPLIED", (function() {
-				return u
+				return l
 			})), i.d(t, "CHAT_THEME_CANCELED", (function() {
-				return c
+				return u
 			})), i.d(t, "CHAT_THEME_RESTORED", (function() {
-				return _
+				return c
 			})), i.d(t, "CHAT_THEME_PROMPT_CLICKED", (function() {
-				return m
+				return _
 			})), i.d(t, "CHAT_THEME_SETTINGS_CLICKED", (function() {
-				return p
+				return m
 			})), i.d(t, "CHAT_THEME_SHOW_PROMPT_COUNT_SET", (function() {
-				return h
+				return p
 			})), i.d(t, "MAX_SHOW_PROMPT_COUNT", (function() {
-				return g
+				return b
 			})), i.d(t, "MAX_SHOW_COLORED_SETTINGS", (function() {
-				return w
+				return g
 			})), i.d(t, "changeChatThemeAction", (function() {
-				return v
+				return w
 			})), i.d(t, "chatThemeShowPromptCountSetAction", (function() {
-				return y
+				return v
+			})), i.d(t, "chatThemeSettingsClickedAction", (function() {
+				return O
 			})), i.d(t, "clickThemePrompt", (function() {
-				return R
-			})), i.d(t, "clickThemeSettings", (function() {
-				return C
+				return I
 			})), i.d(t, "chatThemeRestoredAction", (function() {
-				return F
+				return R
 			})), i.d(t, "themeToggle", (function() {
-				return N
+				return C
 			})), i.d(t, "switchTheme", (function() {
-				return j
+				return F
 			})), i.d(t, "applyChatTheme", (function() {
-				return A
+				return N
 			})), i.d(t, "cancelChatTheme", (function() {
-				return x
+				return j
 			}));
 			var n = i("./src/lib/makeActionCreator/index.ts"),
-				r = i("./src/chat/actions/sidebar.ts"),
+				r = i("./src/chat/actions/settings/index.ts"),
 				s = i("./src/chat/constants/theme.ts"),
-				o = i("./src/chat/reducers/sidebar/sideBarAppearance/index.ts"),
-				d = i("./src/chat/selectors/theme.ts");
-			const a = "THEMES__GLOBAL_THEME_CHANGED",
-				l = "THEMES__CHAT_THEME_CHANGED",
-				u = "THEMES__CHAT_THEME_APPLIED",
-				c = "THEMES__CHAT_THEME_CANCELED",
-				_ = "THEMES__CHAT_THEME_RESTORED",
-				m = "THEMES__CHAT_THEME_PROMPT_CLICKED",
-				p = "THEMES__CHAT_THEME_SETTINGS_CLICKED",
-				h = "THEMES__CHAT_THEME_SHOW_PROMPT_COUNT_SET",
+				o = i("./src/chat/selectors/theme.ts");
+			const d = "THEMES__GLOBAL_THEME_CHANGED",
+				a = "THEMES__CHAT_THEME_CHANGED",
+				l = "THEMES__CHAT_THEME_APPLIED",
+				u = "THEMES__CHAT_THEME_CANCELED",
+				c = "THEMES__CHAT_THEME_RESTORED",
+				_ = "THEMES__CHAT_THEME_PROMPT_CLICKED",
+				m = "THEMES__CHAT_THEME_SETTINGS_CLICKED",
+				p = "THEMES__CHAT_THEME_SHOW_PROMPT_COUNT_SET",
 				{
-					REDDIT: f,
-					NIGHT: b
+					REDDIT: h,
+					NIGHT: f
 				} = s.b,
-				g = 3,
-				w = 6,
-				v = Object(n.a)(l),
-				y = Object(n.a)(h),
-				E = Object(n.a)(a),
+				b = 3,
+				g = 6,
+				w = Object(n.a)(a),
+				v = Object(n.a)(p),
+				y = Object(n.a)(d),
+				E = Object(n.a)(l),
 				T = Object(n.a)(u),
-				S = Object(n.a)(c),
+				S = Object(n.a)(_),
 				O = Object(n.a)(m),
-				I = Object(n.a)(p),
-				R = () => async (e, t) => {
-					e(Object(r.e)(o.a.THEMES)), e(O())
-				}, C = () => async (e, t) => {
-					e(Object(r.e)(o.a.THEMES)), e(I())
-				}, F = Object(n.a)(_), N = () => async (e, t) => {
+				I = () => async (e, t) => {
+					e(Object(r.h)()), e(S())
+				}, R = Object(n.a)(c), C = () => async (e, t) => {
 					const {
 						globalTheme: i
 					} = t().user.prefs;
+					e(y({
+						themeKey: i === h ? f : h
+					}))
+				}, F = e => async (t, i) => {
+					t(y({
+						themeKey: e ? f : h
+					}))
+				}, N = () => async (e, t) => {
+					const i = Object(o.a)(t());
 					e(E({
-						themeKey: i === f ? b : f
-					}))
-				}, j = e => async (t, i) => {
-					t(E({
-						themeKey: e ? b : f
-					}))
-				}, A = () => async (e, t) => {
-					const i = Object(d.a)(t());
-					e(T({
 						themeKey: i
-					})), e(Object(r.e)(o.a.CHANNELS))
-				}, x = () => async (e, t) => {
-					e(S()), e(Object(r.e)(o.a.CHANNELS))
+					}))
+				}, j = () => async (e, t) => {
+					e(T())
 				}
 		},
 		"./src/chat/actions/toast.ts": function(e, t, i) {
@@ -608,7 +643,7 @@
 				d = Object(r.a)(o),
 				a = "TOAST__UPDATE_TOAST",
 				l = Object(r.a)(a),
-				u = e => async t => {
+				u = (e = 3) => async t => {
 					setTimeout(() => t(d()), e * n.Rb)
 				}, c = (e = 3) => async t => {
 					t(l({
@@ -673,7 +708,7 @@
 					e.JOINED = "JOINED", e.INVITED = "INVITED", e.PARTIAL = "PARTIAL", e.UNSORTED = "NONE"
 				}(n || (n = {})),
 				function(e) {
-					e.BLOCK = "block", e.CREATE = "create", e.HIDE_CHANNEL = "hide", e.INVITE_LINK_SETTINGS = "invite_link_settings", e.INVITE_MEMBERS = "invite", e.DENY = "deny", e.LEAVE = "leave", e.SHARE = "share", e.SHARE_NEW_CHANNEL = "share_new", e.VIEW_JOIN = "join", e.VIEW_MEMBERS = "members", e.VIEW_NSFW_CONFIRMATION = "nsfw", e.VIEW_PRIVATE = "private", e.VIEW_INVITE = "invited"
+					e.BLOCK = "block", e.CREATE = "create", e.DENY = "deny", e.HIDE_CHANNEL = "hide", e.INVITE_LINK_SETTINGS = "invite_link_settings", e.INVITE_MEMBERS = "invite", e.LEAVE = "leave", e.PRIVACY_SUPPORT = "privacy_support", e.SHARE = "share", e.SHARE_NEW_CHANNEL = "share_new", e.START_GROUP = "start_group", e.THEMES = "themes", e.VIEW_JOIN = "join", e.VIEW_ABOUT = "about", e.VIEW_NSFW_CONFIRMATION = "nsfw", e.VIEW_PRIVATE = "private", e.VIEW_INVITE = "invited"
 				}(r || (r = {}));
 			const s = "link_sharing",
 				o = "error",
@@ -707,8 +742,8 @@
 				},
 				r = {
 					embed: {
-						width: 575,
-						height: 460
+						width: 632,
+						height: 506
 					},
 					full: {
 						width: void 0,
@@ -792,7 +827,7 @@
 					return n
 				})),
 				function(e) {
-					e.ConnectionClosed = "connectionClosed", e.ConnectionPending = "connectionPending", e.ConnectionOpen = "connectionOpen", e.SomethingWentWrong = "somethingWentWrong", e.LinkCopied = "linkCopied", e.LinkDisabled = "linkDisabled", e.ShareLinkNotFound = "shareLinkNotFound", e.ShareLinkGone = "shareLinkGone", e.ShareLinkInvalidRequest = "shareLinkInvalidRequest", e.ShareLinkRateLimit = "shareLinkRateLimit"
+					e.ConnectionClosed = "connectionClosed", e.ConnectionPending = "connectionPending", e.ConnectionOpen = "connectionOpen", e.ChangesSaved = "ChangesSaved", e.SomethingWentWrong = "somethingWentWrong", e.LinkCopied = "linkCopied", e.LinkDisabled = "linkDisabled", e.MuteNotifications = "muteNotifications", e.ShareLinkNotFound = "shareLinkNotFound", e.ShareLinkGone = "shareLinkGone", e.ShareLinkInvalidRequest = "shareLinkInvalidRequest", e.ShareLinkRateLimit = "shareLinkRateLimit", e.UnmuteNotifications = "unmuteNotifications"
 				}(n || (n = {}))
 		},
 		"./src/chat/customMiddleware/channelsFilter.ts": function(e, t, i) {
@@ -836,40 +871,38 @@
 		"./src/chat/customMiddleware/chatThemeKey.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return h
+				return m
 			})), i.d(t, "c", (function() {
-				return f
+				return p
 			}));
 			var n = i("./node_modules/lodash/once.js"),
 				r = i.n(n),
 				s = i("./src/lib/cache/index.ts"),
 				o = i("./src/lib/constants/index.ts"),
-				d = i("./src/chat/actions/sidebar.ts"),
-				a = i("./src/chat/actions/theme.ts"),
-				l = i("./src/chat/customMiddleware/noop.ts"),
-				u = i("./src/chat/reducers/sidebar/sideBarAppearance/index.ts"),
-				c = i("./src/chat/selectors/experiments.ts"),
-				_ = i("./src/chat/selectors/inviteLink.ts");
-			let m, p;
-			const h = r()(e => {
+				d = i("./src/chat/actions/theme.ts"),
+				a = i("./src/chat/customMiddleware/noop.ts"),
+				l = i("./src/chat/selectors/experiments.ts"),
+				u = i("./src/chat/selectors/inviteLink.ts");
+			let c, _;
+			const m = r()(e => {
 					const t = e.getState(),
 						i = t.user.account && t.user.account.id;
-					m = Object(s.c)(o.q.CHAT, o.y.CHAT_THEME_KEY, i || "unknown");
-					const n = Object(s.b)(m);
-					n && e.dispatch(Object(a.chatThemeRestoredAction)({
+					c = Object(s.c)(o.q.CHAT, o.y.CHAT_THEME_KEY, i || "unknown");
+					const n = Object(s.b)(c);
+					n && e.dispatch(Object(d.chatThemeRestoredAction)({
 						themeKey: n
 					}))
 				}),
-				f = r()(e => {
+				p = r()(e => {
 					const t = e.getState(),
 						i = t.user.account && t.user.account.id;
-					p = Object(s.c)(o.q.CHAT, o.y.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, i || "unknown");
-					const n = Object(s.b)(p);
+					_ = Object(s.c)(o.q.CHAT, o.y.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, i || "unknown");
+					const n = Object(s.b)(_);
 					let r = null == n ? 0 : n;
-					Object(c.p)(t) && !Object(_.f)(t) && e.dispatch(Object(a.chatThemeShowPromptCountSetAction)(++r))
+					Object(l.q)(t) && !Object(u.e)(t) && e.dispatch(Object(d.chatThemeShowPromptCountSetAction)(++r))
 				});
 			t.a = e => {
-				if ("undefined" == typeof window) return l.a;
+				if ("undefined" == typeof window) return a.a;
 				const t = e.getState(),
 					{
 						user: {
@@ -877,23 +910,20 @@
 						}
 					} = t,
 					n = i && i.id || "unknown";
-				return m = Object(s.c)(o.q.CHAT, o.y.CHAT_THEME_KEY, n), p = Object(s.c)(o.q.CHAT, o.y.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, n || "unknown"), e => t => {
+				return c = Object(s.c)(o.q.CHAT, o.y.CHAT_THEME_KEY, n), _ = Object(s.c)(o.q.CHAT, o.y.CHAT_SHOW_THEMES_PROMPT_COUNT_KEY, n || "unknown"), e => t => {
 					const i = e(t);
 					switch (t.type) {
-						case a.CHAT_THEME_APPLIED:
-							Object(s.d)(m, t.payload.themeKey, o.pc);
+						case d.CHAT_THEME_APPLIED:
+							Object(s.d)(c, t.payload.themeKey, o.pc);
 							break;
-						case a.CHAT_THEME_SHOW_PROMPT_COUNT_SET:
-							t.payload <= a.MAX_SHOW_COLORED_SETTINGS && Object(s.d)(p, t.payload, o.pc);
+						case d.CHAT_THEME_SHOW_PROMPT_COUNT_SET:
+							t.payload <= d.MAX_SHOW_COLORED_SETTINGS && Object(s.d)(_, t.payload, o.pc);
 							break;
-						case a.CHAT_THEME_PROMPT_CLICKED:
-							Object(s.d)(p, a.MAX_SHOW_PROMPT_COUNT, o.pc);
+						case d.CHAT_THEME_PROMPT_CLICKED:
+							Object(s.d)(_, d.MAX_SHOW_PROMPT_COUNT, o.pc);
 							break;
-						case a.CHAT_THEME_SETTINGS_CLICKED:
-							Object(s.d)(p, a.MAX_SHOW_COLORED_SETTINGS, o.pc);
-							break;
-						case d.b:
-							t.payload === u.a.THEMES && Object(s.d)(p, a.MAX_SHOW_PROMPT_COUNT, o.pc)
+						case d.CHAT_THEME_SETTINGS_CLICKED:
+							Object(s.d)(_, d.MAX_SHOW_COLORED_SETTINGS, o.pc)
 					}
 					return i
 				}
@@ -933,7 +963,7 @@
 						n = t.user.account && t.user.account.id,
 						r = v(n),
 						s = w(n),
-						o = Object(_.f)(t);
+						o = Object(_.e)(t);
 					let d;
 					d = i ? s && r ? s : t.meta.isRedesign ? p : i ? m : l.a.FULL : l.a.FULL, o && (d = l.a.EMBED), e.dispatch(Object(a.sizeChanged)(d)), b(d)
 				}),
@@ -991,7 +1021,7 @@
 					i = t.user.account && t.user.account.id;
 				_ = Object(d.c)(a.q.CHAT, a.y.CHAT_DRAFT_MESSAGES_KEY, i || "unknown");
 				const n = Object(d.b)(_);
-				(null == n ? void 0 : n.length) && !Object(c.f)(t) && e.dispatch(Object(l.d)(n))
+				(null == n ? void 0 : n.length) && !Object(c.e)(t) && e.dispatch(Object(l.d)(n))
 			});
 			t.a = e => {
 				if ("undefined" == typeof window) return u.a;
@@ -1092,6 +1122,39 @@
 				}
 			}
 		},
+		"./src/chat/customMiddleware/lastSelectedChannel.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "b", (function() {
+				return a
+			}));
+			var n = i("./src/lib/cache/index.ts"),
+				r = i("./src/lib/constants/index.ts"),
+				s = i("./src/chat/actions/sidebar.ts"),
+				o = i("./src/chat/customMiddleware/noop.ts");
+			let d;
+			const a = e => {
+				const t = e.user.account && e.user.account.id;
+				return d = Object(n.c)(r.q.CHAT, r.y.CHAT_LAST_SELECTED_CHANNEL_ID_KEY, t || "unknown"), Object(n.b)(d)
+			};
+			t.a = e => {
+				if ("undefined" == typeof window) return o.a;
+				const t = e.getState(),
+					{
+						user: {
+							account: i
+						}
+					} = t,
+					a = i && i.id || "unknown";
+				return d = Object(n.c)(r.q.CHAT, r.y.CHAT_LAST_SELECTED_CHANNEL_ID_KEY, a), e => t => {
+					const i = e(t);
+					switch (t.type) {
+						case s.a:
+							Object(n.d)(d, t.payload, r.pb)
+					}
+					return i
+				}
+			}
+		},
 		"./src/chat/customMiddleware/noop.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
@@ -1099,7 +1162,7 @@
 			}));
 			const n = e => t => e(t)
 		},
-		"./src/chat/customMiddleware/settingsDropdown.ts": function(e, t, i) {
+		"./src/chat/customMiddleware/settings.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
 				return _
@@ -1108,7 +1171,7 @@
 				r = i.n(n),
 				s = i("./src/lib/cache/index.ts"),
 				o = i("./src/lib/constants/index.ts"),
-				d = i("./src/chat/actions/settingsDropdown/index.ts"),
+				d = i("./src/chat/actions/settings/index.ts"),
 				a = i("./src/chat/customMiddleware/noop.ts"),
 				l = i("./src/chat/selectors/experiments.ts"),
 				u = i("./src/chat/selectors/inviteLink.ts");
@@ -1122,7 +1185,7 @@
 				c = Object(s.c)(o.q.CHAT, o.y.CHAT_CHAT_LINK_PROMPT_COUNT_KEY, r || "unknown");
 				const a = Object(s.b)(c);
 				let _ = null == a ? 0 : a;
-				Object(u.f)(t) || e.dispatch(Object(d.f)(++_))
+				Object(u.e)(t) || e.dispatch(Object(d.f)(++_))
 			});
 			t.a = e => {
 				if ("undefined" == typeof window) return a.a;
@@ -1162,10 +1225,10 @@
 					i = t.user.account && t.user.account.id;
 				c = Object(s.c)(o.q.CHAT, o.y.CHAT_UPLOAD_PROMPT_COUNT_KEY, i || "unknown");
 				const n = Object(s.b)(c),
-					r = Object(l.n)(t),
-					a = Object(l.m)(t);
+					r = Object(l.o)(t),
+					a = Object(l.n)(t);
 				let _ = null == n ? 0 : n;
-				(r || a) && !Object(u.f)(t) && e.dispatch(Object(d.d)(++_))
+				(r || a) && !Object(u.e)(t) && e.dispatch(Object(d.d)(++_))
 			});
 			t.a = e => {
 				if ("undefined" == typeof window) return a.a;
@@ -1188,32 +1251,36 @@
 		},
 		"./src/chat/endpoints/sendbird/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "j", (function() {
+			i.d(t, "k", (function() {
 				return _
-			})), i.d(t, "d", (function() {
-				return m
-			})), i.d(t, "f", (function() {
-				return p
 			})), i.d(t, "e", (function() {
+				return m
+			})), i.d(t, "g", (function() {
+				return p
+			})), i.d(t, "f", (function() {
 				return h
 			})), i.d(t, "b", (function() {
 				return f
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "j", (function() {
 				return b
 			})), i.d(t, "a", (function() {
 				return g
-			})), i.d(t, "g", (function() {
-				return w
 			})), i.d(t, "h", (function() {
+				return w
+			})), i.d(t, "i", (function() {
 				return v
 			})), i.d(t, "c", (function() {
 				return y
-			})), i.d(t, "k", (function() {
-				return E
 			})), i.d(t, "l", (function() {
-				return T
+				return E
 			})), i.d(t, "m", (function() {
+				return T
+			})), i.d(t, "o", (function() {
 				return S
+			})), i.d(t, "d", (function() {
+				return O
+			})), i.d(t, "n", (function() {
+				return I
 			}));
 			var n = i("./src/config.ts"),
 				r = i("./src/lib/constants/index.ts"),
@@ -1300,6 +1367,15 @@
 					method: r.jb.DELETE,
 					endpoint: `${n.a.sendbirdServiceUrl}/api/v1/sendbird/group_channels/${Object(u.a)(t)}/mute`,
 					headers: c
+				}), O = e => Object(s.a)(Object(d.a)(e, [a.a]), {
+					endpoint: `${n.a.sendbirdServiceUrl}/api/v1/chat/me/settings`,
+					method: r.jb.GET
+				}), I = async (e, t) => Object(s.a)(Object(d.a)(t, [a.a]), {
+					endpoint: `${n.a.sendbirdServiceUrl}/api/v1/chat/me/settings`,
+					method: r.jb.PUT,
+					data: JSON.stringify({
+						invite_policy: e
+					})
 				})
 		},
 		"./src/chat/helpers/errors.ts": function(e, t, i) {
@@ -1356,26 +1432,30 @@
 				return g
 			})), i.d(t, "inviteLinkSettingsUrl", (function() {
 				return y
-			})), i.d(t, "inviteMessageActionUrl", (function() {
+			})), i.d(t, "themesUrl", (function() {
 				return E
-			})), i.d(t, "messageActionUrl", (function() {
+			})), i.d(t, "privacyAndSupportUrl", (function() {
 				return T
-			})), i.d(t, "userActionUrl", (function() {
+			})), i.d(t, "inviteMessageActionUrl", (function() {
 				return S
-			})), i.d(t, "getSubredditFromUrl", (function() {
+			})), i.d(t, "messageActionUrl", (function() {
 				return O
-			})), i.d(t, "isRedditLink", (function() {
+			})), i.d(t, "userActionUrl", (function() {
 				return I
-			})), i.d(t, "viewProfileUrl", (function() {
+			})), i.d(t, "getSubredditFromUrl", (function() {
 				return R
-			})), i.d(t, "viewSubredditUrl", (function() {
+			})), i.d(t, "isRedditLink", (function() {
 				return C
-			})), i.d(t, "getChannelUrl", (function() {
+			})), i.d(t, "viewProfileUrl", (function() {
 				return F
-			})), i.d(t, "getChatUnitType", (function() {
+			})), i.d(t, "viewSubredditUrl", (function() {
 				return N
-			})), i.d(t, "getRedirectURL", (function() {
+			})), i.d(t, "getChannelUrl", (function() {
 				return j
+			})), i.d(t, "getChatUnitType", (function() {
+				return A
+			})), i.d(t, "getRedirectURL", (function() {
+				return x
 			}));
 			var n = i("./src/config.ts"),
 				r = i("./node_modules/query-string/index.js"),
@@ -1401,30 +1481,32 @@
 				e[e.SUBREDDIT = 0] = "SUBREDDIT", e[e.USER_PROFILE = 1] = "USER_PROFILE"
 			}(v || (v = {}));
 			const y = (e, t) => `${p(e,o.a.INVITE_LINK_SETTINGS)}/${t?"user":""}`,
-				E = (e, t, i) => ({
+				E = e => `${p(e,o.a.THEMES)}/`,
+				T = e => `${p(e,o.a.PRIVACY_SUPPORT)}/`,
+				S = (e, t, i) => ({
 					pathname: `${p(e,i)}/invite/${t}`,
 					state: {
 						isOverlay: !0
 					}
 				}),
-				T = (e, t, i) => ({
+				O = (e, t, i) => ({
 					pathname: `${p(e,i)}/message/${t}`,
 					state: {
 						isOverlay: !0
 					}
 				}),
-				S = (e, t, i, n) => `${p(e,i)}/user/${t}${n?"?"+Object(r.stringify)(n):""}`,
-				O = e => new RegExp("reddit.com").test(e) ? e.replace(/^.+reddit.com(\/r\/.+?\/).*$/g, "$1") : "",
-				I = e => {
+				I = (e, t, i, n) => `${p(e,i)}/user/${t}${n?"?"+Object(r.stringify)(n):""}`,
+				R = e => new RegExp("reddit.com").test(e) ? e.replace(/^.+reddit.com(\/r\/.+?\/).*$/g, "$1") : "",
+				C = e => {
 					const t = new RegExp(`^${n.a.redditUrl}/(r|user|u)/.+($|/)`, "i"),
 						i = new RegExp(`^${n.a.oldRedditUrl}/(r|user|u)/.+($|/)`, "i"),
 						r = new RegExp("^http://localhost:8888/(r|user|u)/.+($|/)", "i"),
 						s = new RegExp("^http://localhost:8080/(r|user|u)/.+($|/)", "i");
 					return t.test(e) || i.test(e) || r.test(e) || s.test(e)
 				},
-				R = e => e.length ? `${n.a.redditUrl}/user/${e}` : n.a.redditUrl,
-				C = e => e.length ? `${n.a.redditUrl}/r/${e}` : n.a.redditUrl,
-				F = e => {
+				F = e => e.length ? `${n.a.redditUrl}/user/${e}` : n.a.redditUrl,
+				N = e => e.length ? `${n.a.redditUrl}/r/${e}` : n.a.redditUrl,
+				j = e => {
 					const {
 						channelId: t,
 						channelState: i
@@ -1447,7 +1529,7 @@
 							return u
 					}
 				},
-				N = e => {
+				A = e => {
 					const t = e.replace(new RegExp("^http://localhost:8888/?", "gi"), "").replace(new RegExp("^http://localhost:8080/?", "gi"), "").replace(new RegExp(`^${n.a.oldRedditUrl}/?`, "gi"), "").replace(new RegExp(`^${n.a.redditUrl}/?`, "gi"), "").replace(/\/?\?.+/gi, "").replace(/\/$/gi, "").split("/"),
 						i = ("user" === t[0] || "u" === t[0] ? v.USER_PROFILE : v.SUBREDDIT) === v.SUBREDDIT ? d.c.POST : d.c.USER_POST;
 					switch (t.length) {
@@ -1473,7 +1555,7 @@
 							}
 					}
 				},
-				j = e => ({
+				x = e => ({
 					pathname: e,
 					search: location.search
 				})
@@ -1576,7 +1658,7 @@
 					lastMessage: y ? Object(a.c)(y) : void 0,
 					unreadMessageCount: p,
 					unreadMentionCount: h,
-					members: Object(u.a)(E),
+					members: Object(u.b)(E),
 					fetchingFirstMessage: !1,
 					fetchingMessages: !1,
 					fetchingMessagesError: !1,
@@ -1971,6 +2053,16 @@
 				}
 			}
 		},
+		"./src/chat/models/Sidebar/index.ts": function(e, t, i) {
+			"use strict";
+			var n;
+			i.d(t, "a", (function() {
+					return n
+				})),
+				function(e) {
+					e[e.CHANNELS = 0] = "CHANNELS", e[e.INVITED_CHANNELS = 1] = "INVITED_CHANNELS", e[e.SETTINGS = 2] = "SETTINGS"
+				}(n || (n = {}))
+		},
 		"./src/chat/models/Uploads/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "c", (function() {
@@ -2034,46 +2126,21 @@
 			"use strict";
 			i.d(t, "a", (function() {
 				return o
+			})), i.d(t, "b", (function() {
+				return d
 			}));
 			var n = i("./src/chat/models/Channel/index.ts"),
 				r = i("./node_modules/lodash/isArray.js"),
 				s = i.n(r);
-			const o = e => s()(e) && e.map(e => ({
-				id: e.user_id || e.userId,
-				name: e.nickname,
-				profileUrl: e.profile_url || e.profileUrl,
-				state: e.state,
-				isBlockedByMe: e.is_blocked_by_me || e.isBlockedByMe,
-				isModerator: Object(n.f)(e.role)
-			})).filter(Boolean) || []
-		},
-		"./src/chat/reducers/sidebar/sideBarAppearance/index.ts": function(e, t, i) {
-			"use strict";
-			i.d(t, "a", (function() {
-				return n
-			}));
-			var n, r = i("./src/chat/actions/sidebar.ts");
-			! function(e) {
-				e[e.CHANNELS = 0] = "CHANNELS", e[e.THEMES = 1] = "THEMES", e[e.INVITED_CHANNELS = 2] = "INVITED_CHANNELS"
-			}(n || (n = {}));
-			const s = {
-				isSidebarVisible: !1,
-				sideBarComponentType: n.CHANNELS
-			};
-			t.b = (e = s, t) => {
-				switch (t.type) {
-					case r.c:
-						return {
-							...e, isSidebarVisible: t.payload
-						};
-					case r.b:
-						return {
-							...e, sideBarComponentType: t.payload
-						};
-					default:
-						return e
-				}
-			}
+			const o = e => ({
+					id: e.user_id || e.userId,
+					name: e.nickname,
+					profileUrl: e.profile_url || e.profileUrl,
+					state: e.state,
+					isBlockedByMe: e.is_blocked_by_me || e.isBlockedByMe,
+					isModerator: Object(n.f)(e.role)
+				}),
+				d = e => s()(e) && e.map(o).filter(Boolean) || []
 		},
 		"./src/chat/reducers/subscribe.ts": function(e, t, i) {
 			"use strict";
@@ -2132,9 +2199,9 @@
 		},
 		"./src/chat/selectors/channels.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "u", (function() {
+			i.d(t, "v", (function() {
 				return m
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "w", (function() {
 				return p
 			})), i.d(t, "i", (function() {
 				return h
@@ -2146,74 +2213,76 @@
 				return g
 			})), i.d(t, "o", (function() {
 				return w
-			})), i.d(t, "x", (function() {
-				return v
 			})), i.d(t, "y", (function() {
+				return v
+			})), i.d(t, "z", (function() {
 				return y
 			})), i.d(t, "p", (function() {
 				return E
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "x", (function() {
 				return T
 			})), i.d(t, "r", (function() {
 				return S
-			})), i.d(t, "N", (function() {
-				return O
-			})), i.d(t, "f", (function() {
-				return I
-			})), i.d(t, "z", (function() {
-				return C
-			})), i.d(t, "C", (function() {
-				return F
-			})), i.d(t, "A", (function() {
-				return N
-			})), i.d(t, "g", (function() {
-				return j
-			})), i.d(t, "O", (function() {
-				return A
-			})), i.d(t, "B", (function() {
-				return x
-			})), i.d(t, "G", (function() {
-				return D
-			})), i.d(t, "c", (function() {
-				return P
-			})), i.d(t, "F", (function() {
-				return L
-			})), i.d(t, "b", (function() {
-				return B
-			})), i.d(t, "d", (function() {
-				return U
-			})), i.d(t, "e", (function() {
-				return G
-			})), i.d(t, "H", (function() {
-				return q
-			})), i.d(t, "M", (function() {
-				return V
-			})), i.d(t, "L", (function() {
-				return H
-			})), i.d(t, "j", (function() {
-				return W
-			})), i.d(t, "a", (function() {
-				return z
-			})), i.d(t, "I", (function() {
-				return K
-			})), i.d(t, "K", (function() {
-				return Y
 			})), i.d(t, "s", (function() {
-				return $
-			})), i.d(t, "E", (function() {
-				return Q
-			})), i.d(t, "t", (function() {
-				return J
-			})), i.d(t, "k", (function() {
-				return X
-			})), i.d(t, "J", (function() {
-				return Z
-			})), i.d(t, "l", (function() {
-				return ee
+				return O
+			})), i.d(t, "O", (function() {
+				return I
+			})), i.d(t, "f", (function() {
+				return R
+			})), i.d(t, "A", (function() {
+				return F
 			})), i.d(t, "D", (function() {
+				return N
+			})), i.d(t, "B", (function() {
+				return j
+			})), i.d(t, "g", (function() {
+				return A
+			})), i.d(t, "P", (function() {
+				return x
+			})), i.d(t, "C", (function() {
+				return D
+			})), i.d(t, "H", (function() {
+				return P
+			})), i.d(t, "c", (function() {
+				return k
+			})), i.d(t, "G", (function() {
+				return B
+			})), i.d(t, "b", (function() {
+				return M
+			})), i.d(t, "d", (function() {
+				return G
+			})), i.d(t, "e", (function() {
+				return q
+			})), i.d(t, "I", (function() {
+				return V
+			})), i.d(t, "N", (function() {
+				return H
+			})), i.d(t, "M", (function() {
+				return W
+			})), i.d(t, "j", (function() {
+				return z
+			})), i.d(t, "a", (function() {
+				return K
+			})), i.d(t, "J", (function() {
+				return Y
+			})), i.d(t, "L", (function() {
+				return $
+			})), i.d(t, "t", (function() {
+				return Q
+			})), i.d(t, "F", (function() {
+				return J
+			})), i.d(t, "u", (function() {
+				return X
+			})), i.d(t, "k", (function() {
+				return Z
+			})), i.d(t, "K", (function() {
+				return ee
+			})), i.d(t, "l", (function() {
 				return te
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "E", (function() {
 				return ie
+			})), i.d(t, "q", (function() {
+				return ne
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/lodash/values.js"),
@@ -2259,17 +2328,20 @@
 					} = e, i = E(e);
 					if (i && i.members) return i.members.filter(e => e.id !== t.account.id)
 				},
-				S = (e, t) => {
-					var i;
+				S = e => {
 					const {
-						user: n
-					} = e, r = f(e, t);
-					if (r && r.type === a.b.Direct && r.members) return null === (i = r.members.find(e => e.id !== n.account.id)) || void 0 === i ? void 0 : i.id
+						user: t
+					} = e, i = b(e);
+					if (i && i.type === a.b.Direct && i.members) return i.members.find(e => e.id !== t.account.id)
 				},
 				O = e => {
-					return !!w(e)
+					const t = S(e);
+					return null == t ? void 0 : t.id
 				},
 				I = e => {
+					return !!w(e)
+				},
+				R = e => {
 					const t = [],
 						i = e.user.account.id;
 					return r()(e.channels.models).forEach(e => {
@@ -2279,86 +2351,86 @@
 						}
 					}), t.length && t
 				},
-				R = (e, t) => {
+				C = (e, t) => {
 					const i = ((e, t) => {
 						const i = f(e, t);
 						return i && i.lastMessage
 					})(e, t);
 					return Boolean((null == i ? void 0 : i.messageType) === d.d.SYSTEM && (null == i ? void 0 : i.customType) === l.a.AWARDING)
 				},
-				C = Object(s.a)((e, t) => t, e => e.messages.models, (e, t) => r()(t).filter(t => t.channelId === e)),
-				F = e => r()(e.messages.models).filter(t => t.messageType === d.d.USER && t.channelId === e.channels.selected.channelId),
-				N = e => r()(e.messages.pending).filter(t => t.channelId === e.channels.selected.channelId),
-				j = (e, t) => {
+				F = Object(s.a)((e, t) => t, e => e.messages.models, (e, t) => r()(t).filter(t => t.channelId === e)),
+				N = e => r()(e.messages.models).filter(t => t.messageType === d.d.USER && t.channelId === e.channels.selected.channelId),
+				j = e => r()(e.messages.pending).filter(t => t.channelId === e.channels.selected.channelId),
+				A = (e, t) => {
 					var i, n;
-					if (Boolean(R(e, t))) {
+					if (Boolean(C(e, t))) {
 						const r = f(e, t);
 						return null === (n = null === (i = null == r ? void 0 : r.lastMessage) || void 0 === i ? void 0 : i.messageData.awarding) || void 0 === n ? void 0 : n.award_id
 					}
 				},
-				A = (e, t, i) => {
-					var n, r;
-					const s = Object(_.a)(e),
-						o = f(e, t),
-						u = (null == o ? void 0 : o.type) === a.b.Direct,
-						c = Boolean(N(e).length);
-					if (!u) return !1;
-					const m = S(e, t);
-					return m && e.channels.messageQuickReplyUsers[m] === m || (null === (r = null === (n = null == i ? void 0 : i.messageData) || void 0 === n ? void 0 : n.awarding) || void 0 === r ? void 0 : r.awarder_id) !== s && !c && Boolean((null == i ? void 0 : i.messageType) === d.d.SYSTEM && (null == i ? void 0 : i.customType) === l.a.AWARDING)
-				},
 				x = (e, t) => {
+					var i, n;
+					const r = Object(_.a)(e),
+						s = b(e),
+						o = (null == s ? void 0 : s.type) === a.b.Direct,
+						u = Boolean(j(e).length);
+					if (!o) return !1;
+					const c = O(e);
+					return c && e.channels.messageQuickReplyUsers[c] === c || (null === (n = null === (i = null == t ? void 0 : t.messageData) || void 0 === i ? void 0 : i.awarding) || void 0 === n ? void 0 : n.awarder_id) !== r && !u && Boolean((null == t ? void 0 : t.messageType) === d.d.SYSTEM && (null == t ? void 0 : t.customType) === l.a.AWARDING)
+				},
+				D = (e, t) => {
 					const i = v(e);
 					return i && i[t]
 				},
-				D = e => e.channels.joined.hasMoreChannels,
-				P = e => e.channels.joined.fetchingChannels,
-				k = Object(s.a)(e => e.channels.invited, e => e.channels.models, (e, t) => e.sortedKeys.map(e => t[e])),
-				L = e => e.channels.invited.hasMoreChannels,
-				B = e => e.channels.invited.fetchingChannels,
-				M = (e, t) => {
+				P = e => e.channels.joined.hasMoreChannels,
+				k = e => e.channels.joined.fetchingChannels,
+				L = Object(s.a)(e => e.channels.invited, e => e.channels.models, (e, t) => e.sortedKeys.map(e => t[e])),
+				B = e => e.channels.invited.hasMoreChannels,
+				M = e => e.channels.invited.fetchingChannels,
+				U = (e, t) => {
 					if (!Object(c.f)(e)) return t;
 					const i = Object(u.a)(e);
 					return i === a.c.DirectsOnly ? t.filter(e => e.type === a.b.Direct) : i === a.c.GroupsOnly ? t.filter(e => e.type === a.b.Group) : t
 				},
-				U = e => {
-					const t = k(e);
-					return M(e, t)
-				},
 				G = e => {
-					const t = (e => e.channels.joined.sortedKeys.map(t => e.channels.models[t]))(e);
-					return M(e, t)
+					const t = L(e);
+					return U(e, t)
 				},
 				q = e => {
+					const t = (e => e.channels.joined.sortedKeys.map(t => e.channels.models[t]))(e);
+					return U(e, t)
+				},
+				V = e => {
 					const t = v(e);
 					return t && t.inviter && t.inviter.name
 				},
-				V = e => {
+				H = e => {
 					const t = b(e);
 					return Boolean(t && t.isMessageListLoaded)
 				},
-				H = e => e.channels.isCreatingChannel,
-				W = e => {
-					const t = v(e);
+				W = e => e.channels.isCreatingChannel,
+				z = e => {
+					const t = b(e);
 					return t && t.channelState
 				},
-				z = Object(s.a)(b, e => Boolean(null == e ? void 0 : e.isModerator)),
-				K = (e, t) => {
-					const i = f(e, t);
-					return !(!i || !i.isMuted)
+				K = Object(s.a)(b, e => Boolean(null == e ? void 0 : e.isModerator)),
+				Y = e => {
+					const t = b(e);
+					return !(!t || !t.isMuted)
 				},
-				Y = (e, t) => {
+				$ = (e, t) => {
 					const i = f(e, t);
 					return Boolean(i && i.isNotifsMuted)
 				},
-				$ = (e, t) => {
+				Q = (e, t) => {
 					var i;
 					return (null === (i = e.channels.draftMessages[t]) || void 0 === i ? void 0 : i.messageValue) || ""
 				},
-				Q = e => {
+				J = e => {
 					var t;
-					return Boolean(null === (t = k(e)) || void 0 === t ? void 0 : t.length)
+					return Boolean(null === (t = L(e)) || void 0 === t ? void 0 : t.length)
 				},
-				J = Object(s.a)((e, t) => t ? e.channels.models[t] : void 0, e => Object(_.d)(e), (e, t) => {
+				X = Object(s.a)((e, t) => t ? e.channels.models[t] : void 0, e => Object(_.e)(e), (e, t) => {
 					var i;
 					if (e && (null == t ? void 0 : t.id)) {
 						const n = e.channelState === o.b.JOINED,
@@ -2387,18 +2459,18 @@
 						}
 					}
 				}),
-				X = (e, t) => {
+				Z = (e, t) => {
 					var i;
 					if (t) {
 						const n = f(e, t),
-							r = J(e, t);
+							r = X(e, t);
 						if (n) return n.type === a.b.Group ? n.name && "Group Channel" !== n.name ? n.name : n.members.map(e => e.name).join(", ") : null === (i = null == r ? void 0 : r.firstUser) || void 0 === i ? void 0 : i.name
 					}
 				},
-				Z = Object(s.a)(b, e => (null == e ? void 0 : e.type) === a.b.Direct && (null == e ? void 0 : e.members.some(e => e.state === a.e.Invited))),
-				ee = Object(s.a)((e, t) => f(e, t), e => null == e ? void 0 : e.type),
-				te = Object(s.a)((e, t) => f(e, t), e => Boolean(null == e ? void 0 : e.members.some(e => e.isBlockedByMe))),
-				ie = (e, t) => {
+				ee = Object(s.a)(b, e => (null == e ? void 0 : e.type) === a.b.Direct && (null == e ? void 0 : e.members.some(e => e.state === a.e.Invited))),
+				te = Object(s.a)((e, t) => f(e, t), e => null == e ? void 0 : e.type),
+				ie = Object(s.a)((e, t) => f(e, t), e => Boolean(null == e ? void 0 : e.members.some(e => e.isBlockedByMe))),
+				ne = (e, t) => {
 					return Object.values(e.channels.models).find(e => e.type === a.b.Direct && e.members.some(e => e.name === t))
 				}
 		},
@@ -2411,114 +2483,120 @@
 		},
 		"./src/chat/selectors/contacts.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "h", (function() {
-				return a
-			})), i.d(t, "i", (function() {
-				return l
-			})), i.d(t, "b", (function() {
-				return u
-			})), i.d(t, "c", (function() {
+			i.d(t, "i", (function() {
 				return c
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "b", (function() {
+				return _
+			})), i.d(t, "c", (function() {
 				return m
-			})), i.d(t, "d", (function() {
-				return p
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "a", (function() {
 				return h
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "d", (function() {
 				return f
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "h", (function() {
 				return b
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "j", (function() {
 				return g
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "k", (function() {
 				return w
+			})), i.d(t, "e", (function() {
+				return v
+			})), i.d(t, "f", (function() {
+				return y
+			})), i.d(t, "g", (function() {
+				return E
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = i("./node_modules/lodash/values.js"),
+			var n = i("./node_modules/lodash/sortBy.js"),
 				r = i.n(n),
-				s = i("./src/chat/selectors/channels.ts"),
-				o = i("./src/chat/selectors/members.ts"),
-				d = i("./node_modules/reselect/es/index.js");
-			const a = e => e.contacts.suggestedKeys.map(t => e.contacts.models[t]),
-				l = e => {
+				s = i("./node_modules/lodash/values.js"),
+				o = i.n(s),
+				d = i("./node_modules/reselect/es/index.js"),
+				a = i("./src/chat/selectors/channels.ts"),
+				l = i("./src/chat/selectors/members.ts"),
+				u = i("./src/chat/selectors/user.ts");
+			const c = e => {
 					const {
 						knownContacts: t,
 						models: i
-					} = e.contacts;
-					return Object.keys(t).map(e => t[e]).filter(e => e && e.loaded && e.valid).map(e => e.userId && i[e.userId]).filter(e => !!e)
+					} = e.contacts, n = Object(u.a)(e);
+					return Object.keys(t).map(e => t[e]).filter(e => e && e.loaded && e.valid && n !== e.userId).map(e => e.userId && i[e.userId]).filter(e => !!e)
 				},
-				u = (e, t) => {
-					return r()(e.contacts.models).find(e => e.id === t)
+				_ = (e, t) => {
+					return o()(e.contacts.models).find(e => e.id === t)
 				},
-				c = (e, t) => {
-					return r()(e.contacts.models).find(e => e.name.toLowerCase() === t.toLowerCase())
-				},
-				_ = (e, t) => e.contacts.knownContacts[t.toLowerCase()],
 				m = (e, t) => {
-					const i = _(e, t);
+					return o()(e.contacts.models).find(e => e.name.toLowerCase() === t.toLowerCase())
+				},
+				p = (e, t) => e.contacts.knownContacts[t.toLowerCase()],
+				h = (e, t) => {
+					const i = p(e, t);
 					return i && i.method
 				},
-				p = Object(d.a)((e, t) => Object(s.i)(e, t), e => e.contacts.models, (e, t) => {
+				f = Object(d.a)((e, t) => Object(a.i)(e, t), e => e.contacts.models, (e, t) => {
 					if (null == e ? void 0 : e.inviter) return t[e.inviter.id]
 				}),
-				h = e => e.contacts.knownContacts,
-				f = e => e.contacts.selectedUserIds,
-				b = e => f(e).length,
-				g = e => {
+				b = e => e.contacts.knownContacts,
+				g = e => e.contacts.selectedUserIds,
+				w = e => g(e).length,
+				v = e => {
 					const {
 						selectedUserIds: t
 					} = e.contacts;
 					return t.length && t.map(t => {
-						const i = u(e, t);
+						const i = _(e, t);
 						return i && i.id
 					})
 				},
-				w = (e, t) => {
-					const i = c(e, t);
+				y = (e, t) => {
+					const i = m(e, t);
 					if (i) return {
 						name: t,
 						id: i.id
 					};
-					const n = _(e, t);
+					const n = p(e, t);
 					if (n && n.userId) return {
 						name: t,
 						id: n.userId
 					};
-					const r = Object(o.c)(e, t);
+					const r = Object(l.d)(e, t);
 					return r ? {
 						name: t,
 						id: r.id
 					} : void 0
-				}
+				},
+				E = Object(d.a)(e => e.contacts.whiteListKeys, e => e.contacts.models, e => Object(u.e)(e), (e, t, i) => r()(o()(t).reduce((t, n) => n.id !== (null == i ? void 0 : i.id) ? [...t, {
+					...n,
+					isWhitelisted: e.includes(n.id)
+				}] : t, []), [e => !e.isWhitelisted, e => e.name.toLowerCase()]))
 		},
 		"./src/chat/selectors/experiments.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "t", (function() {
+			i.d(t, "u", (function() {
 				return y
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "w", (function() {
 				return E
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "q", (function() {
 				return T
 			})), i.d(t, "f", (function() {
 				return S
-			})), i.d(t, "q", (function() {
-				return O
-			})), i.d(t, "s", (function() {
-				return I
 			})), i.d(t, "r", (function() {
+				return O
+			})), i.d(t, "t", (function() {
+				return I
+			})), i.d(t, "s", (function() {
 				return R
-			})), i.d(t, "k", (function() {
-				return C
-			})), i.d(t, "m", (function() {
-				return F
-			})), i.d(t, "n", (function() {
-				return N
 			})), i.d(t, "l", (function() {
-				return j
+				return C
+			})), i.d(t, "n", (function() {
+				return F
 			})), i.d(t, "o", (function() {
+				return N
+			})), i.d(t, "m", (function() {
+				return j
+			})), i.d(t, "p", (function() {
 				return A
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "v", (function() {
 				return x
 			})), i.d(t, "c", (function() {
 				return D
@@ -2538,13 +2616,15 @@
 				return q
 			})), i.d(t, "e", (function() {
 				return V
+			})), i.d(t, "k", (function() {
+				return H
 			}));
 			i("./node_modules/lodash/isEmpty.js");
 			var n, r, s = i("./node_modules/lodash/memoize.js"),
 				o = i.n(s),
 				d = i("./node_modules/reselect/es/index.js");
 			! function(e) {
-				e.EconRpanAvatar = "web_econ_avatar_in_rpan", e.UiRefreshBubblePreset = "ui_refresh_bubble_preset", e.D2xChatNicknamePainted = "d2x_chat_nickname_painted", e.D2XChatQuickActionsChannels = "d2x_chat_quickactions_channels", e.D2xChatFilterGroupDirect = "d2x_chat_filter_group_direct", e.ChatMediaShareImages = "chat_mediashare_images", e.ChatMediaShareImagesGroups = "group_chat_mediashare_images", e.ChatImagesRenderKillSwitch = "web_chat_mediashare_images_killswitch", e.ChatInviteMessagePreview = "chat_preview_comment", e.D2XChatShortCutsSlashCommand = "d2x_chat_shortcuts_slash_command", e.ChatLinkSharingGroup = "chat_link_sharing_group", e.ChatLinkSharingDirect = "chat_link_sharing_direct", e.AEBlockedUserChatWeb = "ae_blocked_user_chat_web", e.ChatReactions = "chat_reactions", e.D2XChatReactionsKillSwitch = "d2x_chat_reactions_killswitch", e.BlockedUserChatWebKillSwitch = "d2x_blocked_user_chat_web_killswitch"
+				e.EconRpanAvatar = "web_econ_avatar_in_rpan", e.UiRefreshBubblePreset = "ui_refresh_bubble_preset", e.D2xChatNicknamePainted = "d2x_chat_nickname_painted", e.D2XChatQuickActionsChannels = "d2x_chat_quickactions_channels", e.D2xChatFilterGroupDirect = "d2x_chat_filter_group_direct", e.ChatMediaShareImages = "chat_mediashare_images", e.ChatMediaShareImagesGroups = "group_chat_mediashare_images", e.ChatImagesRenderKillSwitch = "web_chat_mediashare_images_killswitch", e.ChatInviteMessagePreview = "chat_preview_comment", e.D2XChatShortCutsSlashCommand = "d2x_chat_shortcuts_slash_command", e.ChatLinkSharingGroup = "chat_link_sharing_group", e.ChatLinkSharingDirect = "chat_link_sharing_direct", e.AEBlockedUserChatWeb = "ae_blocked_user_chat_web", e.ChatReactions = "chat_reactions", e.D2XChatReactionsKillSwitch = "d2x_chat_reactions_killswitch", e.BlockedUserChatWebKillSwitch = "d2x_blocked_user_chat_web_killswitch", e.ChatSettingsRevampKillSwitch = "d2x_chat_settings_revamp_killswitch"
 			}(n || (n = {})),
 			function(e) {
 				e.Control1 = "control_1", e.Control2 = "control_2"
@@ -2604,7 +2684,8 @@
 				U = Object(d.a)(e => v(e, n.AEBlockedUserChatWeb), e => e === a),
 				G = Object(d.a)(e => v(e, n.D2XChatReactionsKillSwitch), e => e === a),
 				q = Object(d.a)(e => v(e, n.ChatReactions), e => G(e), (e, t) => e === a && !t),
-				V = Object(d.a)(e => v(e, n.BlockedUserChatWebKillSwitch), e => e === a)
+				V = Object(d.a)(e => v(e, n.BlockedUserChatWebKillSwitch), e => e === a),
+				H = Object(d.a)(e => v(e, n.ChatSettingsRevampKillSwitch), e => e === a)
 		},
 		"./src/chat/selectors/inviteLink.ts": function(e, t, i) {
 			"use strict";
@@ -2618,8 +2699,6 @@
 				return u
 			})), i.d(t, "e", (function() {
 				return c
-			})), i.d(t, "f", (function() {
-				return _
 			}));
 			var n = i("./src/chat/actions/inviteLink/constants.ts"),
 				r = i("./src/chat/selectors/experiments.ts"),
@@ -2637,17 +2716,13 @@
 				},
 				l = (e, t) => {
 					const i = o(e, t);
-					return null == i ? void 0 : i.inviteLink
+					return Boolean(null == i ? void 0 : i.isCreateInviteLinkRequestPending)
 				},
 				u = (e, t) => {
 					const i = o(e, t);
-					return Boolean(null == i ? void 0 : i.isCreateInviteLinkRequestPending)
-				},
-				c = (e, t) => {
-					const i = o(e, t);
 					return Boolean(null == i ? void 0 : i.isRevokeInviteLinksRequestPending)
 				},
-				_ = e => {
+				c = e => {
 					const t = Object(s.g)(e),
 						i = Object(s.i)(e),
 						n = Object(s.h)(e),
@@ -2659,23 +2734,25 @@
 			"use strict";
 			i.d(t, "a", (function() {
 				return a
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "e", (function() {
 				return l
 			})), i.d(t, "b", (function() {
 				return u
-			})), i.d(t, "e", (function() {
-				return c
 			})), i.d(t, "f", (function() {
+				return c
+			})), i.d(t, "g", (function() {
 				return p
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "d", (function() {
 				return h
+			})), i.d(t, "c", (function() {
+				return f
 			}));
 			var n = i("./node_modules/lodash/sortBy.js"),
 				r = i.n(n),
 				s = i("./src/chat/models/Channel/index.ts"),
 				o = i("./src/chat/selectors/channels.ts");
 			const d = e => {
-					const t = Object(o.y)(e);
+					const t = Object(o.n)(e);
 					if (t) return e.members[t]
 				},
 				a = e => {
@@ -2736,6 +2813,10 @@
 				h = (e, t) => {
 					const i = d(e);
 					return i && i.model && i.model.find(e => e.name === t)
+				},
+				f = (e, t) => {
+					const i = d(e);
+					return i && i.model && i.model.find(e => e.id === t)
 				}
 		},
 		"./src/chat/selectors/messages.ts": function(e, t, i) {
@@ -2846,7 +2927,7 @@
 					return Boolean(r && (null === (i = null === (t = e.platform) || void 0 === t ? void 0 : t.currentPage) || void 0 === i ? void 0 : i.urlParams[0]) === n.f && r[n.e])
 				}
 		},
-		"./src/chat/selectors/settingsDropdown.ts": function(e, t, i) {
+		"./src/chat/selectors/settings.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
 				return o
@@ -2857,11 +2938,21 @@
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/reselect/es/index.js"),
-				r = i("./src/chat/actions/settingsDropdown/index.ts");
+				r = i("./src/chat/actions/settings/index.ts");
 			const s = e => e.settingsDropdown,
 				o = Object(n.a)(e => s(e), e => e.showChatLinkPromptCount !== r.b.SESSION_LAST && Object.values(r.b).includes(e.showChatLinkPromptCount)),
 				d = Object(n.a)(e => s(e), e => e.showChatLinkPromptCount === r.b.SESSION_LAST),
 				a = Object(n.a)(e => s(e), e => e.isChatLinkPromptHidden)
+		},
+		"./src/chat/selectors/sidebar.ts": function(e, t, i) {
+			"use strict";
+			i.d(t, "b", (function() {
+				return n
+			})), i.d(t, "a", (function() {
+				return r
+			}));
+			const n = e => e.sidebar.sideBarAppearance.isSidebarVisible,
+				r = e => e.sidebar.sideBarAppearance.sideBarComponentType
 		},
 		"./src/chat/selectors/telemetry.ts": function(e, t, i) {
 			"use strict";
@@ -2931,12 +3022,14 @@
 				return a
 			})), i.d(t, "d", (function() {
 				return l
+			})), i.d(t, "e", (function() {
+				return u
 			}));
 			var n = i("./src/chat/constants/theme.ts"),
 				r = i("./node_modules/reselect/es/index.js");
 			const {
 				NIGHT: s
-			} = n.b, o = e => !(e.user.prefs.globalTheme !== s), d = Object(r.a)(e => e.themes, e => e.chatPreviewThemeKey), a = Object(r.a)(e => e.themes, e => e.isShowPrompt), l = Object(r.a)(e => e.themes, e => e.isShowSparkles)
+			} = n.b, o = e => !(e.user.prefs.globalTheme !== s), d = Object(r.a)(e => e.themes, e => e.chatPreviewThemeKey), a = Object(r.a)(e => e.themes, e => e.chatPreviewThemeKey !== e.chatThemeKey), l = Object(r.a)(e => e.themes, e => e.isShowPrompt), u = Object(r.a)(e => e.themes, e => e.isShowSparkles)
 		},
 		"./src/chat/selectors/unreadCounter.ts": function(e, t, i) {
 			"use strict";
@@ -3011,13 +3104,16 @@
 				return r
 			})), i.d(t, "c", (function() {
 				return s
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "e", (function() {
 				return o
+			})), i.d(t, "d", (function() {
+				return d
 			}));
 			const n = e => e.user.account.id,
 				r = e => e.user.account.name,
 				s = e => e.user.session,
-				o = e => e.user.account
+				o = e => e.user.account,
+				d = e => e.user.prefs.invitePolicy
 		},
 		"./src/chat/tracking/events/experiment.ts": function(e, t, i) {
 			"use strict";
@@ -3199,10 +3295,10 @@
 					}
 				},
 				R = e => ({
-					number_channels: Object(u.v)(e)
+					number_channels: Object(u.w)(e)
 				}),
 				C = e => ({
-					number_pending_invites: Object(u.u)(e)
+					number_pending_invites: Object(u.v)(e)
 				}),
 				F = (e, t, i, n) => ({
 					message_type: n || (null == i ? void 0 : i.type) || Object(_.e)(e, t) || a.c.TEXT
@@ -3255,7 +3351,7 @@
 				L = e => {
 					const t = Object(u.p)(e),
 						i = !(!t || t.type !== l.b.Direct),
-						n = Object(u.w)(e),
+						n = Object(u.x)(e),
 						r = n && n.length && n[0].id;
 					return {
 						recipient_user_id: i ? r : null
@@ -3274,7 +3370,7 @@
 					}
 				},
 				U = e => ({
-					is_member: Object(u.N)(e)
+					is_member: Object(u.O)(e)
 				}),
 				G = e => {
 					const t = Object(u.o)(e);
@@ -3350,10 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("157073"),
+				buildNumber: Object(r.c)("157074"),
+				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1643730782"),
+				buildTimestamp: Object(r.b)("1643732568"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5948,14 +6045,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c9042681cd60a96d835f700739e3155809135d13e-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c9eb913498c8150dddc040e8a81be815425374ff1-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "9042681cd60a96d835f700739e3155809135d13e-production",
+						release: "9eb913498c8150dddc040e8a81be815425374ff1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6472,7 +6569,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "9042681cd60a96d835f700739e3155809135d13e-production",
+						releaseClient: "9eb913498c8150dddc040e8a81be815425374ff1-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -8705,7 +8802,7 @@
 				a = i("./src/chat/customMiddleware/containerSize.ts"),
 				l = i("./src/chat/customMiddleware/draftMessageText.ts"),
 				u = i("./src/chat/customMiddleware/inviteLinkSettings.ts"),
-				c = i("./src/chat/customMiddleware/settingsDropdown.ts"),
+				c = i("./src/chat/customMiddleware/settings.ts"),
 				_ = i("./src/chat/customMiddleware/uploadPrompt.ts"),
 				m = i("./src/chat/reducers/subscribe.ts");
 			let p;
@@ -46417,4 +46514,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e2c662ce12837e35c2af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d733629e262a61a0797b.js.map

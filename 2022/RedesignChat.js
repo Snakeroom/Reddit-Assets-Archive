@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.88732c609b4d6fd386b3.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.87c6c66ee466008db35f.js
+// Retrieved at 2/1/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -48,24 +48,24 @@
 				v = n("./src/lib/CSSVariableProvider/index.tsx"),
 				C = n("./src/lib/lessComponent.tsx"),
 				w = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
-				E = n("./src/chat/components/Root/index.tsx"),
-				y = n("./src/chat/constants/container.ts"),
+				y = n("./src/chat/components/Root/index.tsx"),
+				E = n("./src/chat/constants/container.ts"),
 				M = n("./src/chat/helpers/chatSelector.ts"),
 				_ = n("./src/chat/actions/container.ts"),
-				N = n("./src/chat/components/PortalContainer/index.m.less"),
-				P = n.n(N);
+				P = n("./src/chat/components/PortalContainer/index.m.less"),
+				N = n.n(P);
 			const {
 				embed: S,
 				hidden: B
-			} = y.b;
+			} = E.b;
 
 			function T(e) {
 				return void 0 !== e ? e : -1
 			}
 			const A = C.a.wrapped(e => a.a.createElement("div", {
 					className: e.className
-				}, e.children), "BasePortalContainer", P.a),
-				D = C.a.wrapped(e => {
+				}, e.children), "BasePortalContainer", N.a),
+				R = C.a.wrapped(e => {
 					const t = Object(O.d)(),
 						n = Object(s.useRef)(null),
 						c = e => {
@@ -85,15 +85,15 @@
 							height: `${T(S.height)}px`
 						}
 					}, e.children)
-				}, "EmbedPortalContainer", P.a),
-				R = C.a.wrapped(e => a.a.createElement("div", {
+				}, "EmbedPortalContainer", N.a),
+				D = C.a.wrapped(e => a.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${T(B.width)}px`,
 						height: `${T(B.height)}px`
 					}
-				}, e.children), "HiddenPortalContainer", P.a),
-				k = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", P.a),
+				}, e.children), "HiddenPortalContainer", N.a),
+				k = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
 				I = A,
 				L = Object(M.a)({
 					container: e => e && e.container && e.container.size
@@ -101,16 +101,16 @@
 
 			function U(e) {
 				switch (e.container) {
-					case y.a.EMBED:
-						return a.a.createElement(D, null, e.children);
-					case y.a.HIDDEN:
+					case E.a.EMBED:
 						return a.a.createElement(R, null, e.children);
-					case y.a.FULL:
+					case E.a.HIDDEN:
+						return a.a.createElement(D, null, e.children);
+					case E.a.FULL:
 						return a.a.createElement(I, null, e.children);
-					case y.a.MINIMIZED:
+					case E.a.MINIMIZED:
 						return a.a.createElement(k, null);
 					default:
-						return a.a.createElement(D, null, e.children)
+						return a.a.createElement(R, null, e.children)
 				}
 			}
 			var q = n("./src/chat/customMiddleware/channelsFilter.ts"),
@@ -122,7 +122,7 @@
 				W = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
 				K = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
 				V = n("./src/chat/customMiddleware/sendbirdToken.ts"),
-				Y = n("./src/chat/customMiddleware/settingsDropdown.ts"),
+				Y = n("./src/chat/customMiddleware/settings.ts"),
 				J = n("./src/chat/customMiddleware/title.ts"),
 				Q = n("./src/chat/customMiddleware/tokenRefresher.ts"),
 				X = n("./src/chat/customMiddleware/tracking.ts"),
@@ -161,7 +161,10 @@
 						} : null,
 						language: a,
 						loid: c,
-						prefs: r,
+						prefs: {
+							...r,
+							invitePolicy: e.user.chatSettings.invitePolicy
+						},
 						reddaid: i,
 						sessionTracker: d,
 						session: o && o.unsafeLoggedOut ? null : o
@@ -257,7 +260,7 @@
 						}
 					}, function(e, t) {
 						const n = Object(O.b)(L)(U);
-						return a.a.createElement("div", null, Object(v.d)(a.a.createElement(n, null, Object(E.a)(e, t)), document.body))
+						return a.a.createElement("div", null, Object(v.d)(a.a.createElement(n, null, Object(y.a)(e, t)), document.body))
 					}(e, t)),
 					appName: d.n.Chat,
 					history: Object(c.d)({
@@ -690,4 +693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.88732c609b4d6fd386b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.87c6c66ee466008db35f.js.map

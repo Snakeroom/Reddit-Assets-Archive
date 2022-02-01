@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.7c7b6c0b5443765922e2.js
-// Retrieved at 1/26/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.b03ac0532b492830a324.js
+// Retrieved at 2/1/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InvitedChannelsPanel"], {
 		"./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less": function(e, t, n) {
@@ -19,8 +19,8 @@
 				s = n("./node_modules/lodash/values.js"),
 				a = n.n(s),
 				o = n("./node_modules/react/index.js"),
-				r = n.n(o),
-				l = n("./node_modules/react-redux/es/index.js"),
+				l = n.n(o),
+				r = n("./node_modules/react-redux/es/index.js"),
 				d = n("./src/chat/actions/channel.ts"),
 				i = n("./src/chat/actions/sidebar.ts"),
 				h = n("./src/chat/actions/tracking.ts"),
@@ -29,42 +29,42 @@
 				_ = n("./src/chat/components/SkeletonPlaceholder/SkeletonPlaceholder.tsx"),
 				x = n("./src/chat/controls/ChannelsFilter/index.tsx"),
 				u = n("./src/chat/icons/svgs/ArrowLeft/index.tsx"),
-				p = n("./src/chat/reducers/sidebar/sideBarAppearance/index.ts"),
+				p = n("./src/chat/models/Sidebar/index.ts"),
 				j = n("./src/chat/selectors/channels.ts"),
 				O = n("./src/chat/selectors/experiments.ts"),
 				E = n("./src/chat/components/Sidebar/InvitedChannelsPanel/index.m.less"),
 				v = n.n(E);
 			t.default = () => {
-				const e = Object(l.d)();
+				const e = Object(r.d)();
 				Object(o.useEffect)(() => {
-					e(Object(h.cb)())
+					e(Object(h.db)())
 				}, [e]);
-				const t = Object(l.e)(j.d),
-					n = Object(l.e)(O.f),
-					s = Object(l.e)(j.F),
-					E = Object(l.e)(j.b);
-				return r.a.createElement(r.a.Fragment, null, r.a.createElement("button", {
+				const t = Object(r.e)(j.d),
+					n = Object(r.e)(O.f),
+					s = Object(r.e)(j.G),
+					E = Object(r.e)(j.b);
+				return l.a.createElement(l.a.Fragment, null, l.a.createElement("button", {
 					className: v.a.Header,
 					onClick: () => {
 						e(Object(i.e)(p.a.CHANNELS))
 					}
-				}, r.a.createElement(u.a, {
+				}, l.a.createElement(u.a, {
 					className: v.a.BackIcon,
 					isFilled: !0
 				}), c.fbt._("Invites", null, {
 					hk: "2zUosI"
-				})), r.a.createElement(b.a, {
+				})), l.a.createElement(b.a, {
 					loadMoreRows: () => {
 						e(Object(d.D)())
 					},
 					isLoadMoreRowsComplete: () => !s || !!E
-				}, r.a.createElement("div", {
+				}, l.a.createElement("div", {
 					className: v.a.Body
-				}, n && r.a.createElement(x.a, null), r.a.createElement(m.a, {
+				}, n && l.a.createElement(x.a, null), l.a.createElement(m.a, {
 					channels: a()(t)
-				}), E && r.a.createElement(_.d, null))))
+				}), E && l.a.createElement(_.d, null))))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.7c7b6c0b5443765922e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InvitedChannelsPanel.b03ac0532b492830a324.js.map
