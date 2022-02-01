@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.f20a9fda57a4f1d877fe.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.52fd4ee22654bf09f755.js
+// Retrieved at 2/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -2940,7 +2940,7 @@
 					id: "createPostCta",
 					kind: J.b.Modal,
 					name: "createPostCta",
-					secondButtonAction: async () => Object(H.Fb)(),
+					secondButtonAction: async () => Object(H.Gb)(),
 					secondButtonText: "Dismiss",
 					text: `There have been over ${j} visits to r/${s} in the past week. Create a new post and start the next conversation.`
 				}))
@@ -11908,4 +11908,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.f20a9fda57a4f1d877fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.52fd4ee22654bf09f755.js.map

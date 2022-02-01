@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.745235eea2010fc7a398.js
-// Retrieved at 2/1/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4153ff943b5cefc8cb1b.js
+// Retrieved at 2/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -908,7 +908,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(U.tb)(null !== (d = null === (l = null === (c = r().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== d ? d : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
+							Object(U.ub)(null !== (d = null === (l = null === (c = r().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== d ? d : [], null === (u = r().user.account) || void 0 === u ? void 0 : u.id);
 							const e = o ? s.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : s.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -1660,7 +1660,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(i.qb)(r + 1)
+					})), Object(i.rb)(r + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, n) {
@@ -2729,13 +2729,13 @@
 							domain: B.a.cookieDomain
 						});
 						const t = Object(Bt.F)(tt.a.ALPHA_CONSUMER);
-						t && Object(Bt.Y)(tt.a.ALPHA_CONSUMER), (e || t) && Object(Bt.Gb)(tt.a.REDESIGN_MODAL, !0)
+						t && Object(Bt.Z)(tt.a.ALPHA_CONSUMER), (e || t) && Object(Bt.Hb)(tt.a.REDESIGN_MODAL, !0)
 					}
 					const {
 						userHasSeenRedesignModal: e,
 						markRedesignModalAsClosed: t
 					} = this.props, n = Object(Bt.F)(tt.a.REDESIGN_MODAL);
-					!e && n ? t() : e && !n && Object(Bt.Gb)(tt.a.REDESIGN_MODAL, !0)
+					!e && n ? t() : e && !n && Object(Bt.Hb)(tt.a.REDESIGN_MODAL, !0)
 				}
 				componentDidMount() {
 					this.conditionalModalCheck(), this.setState({
@@ -5287,7 +5287,7 @@
 					ie = async () => {
 						V.length || f || (O(!0), await (() => w(Object(da.b)(va.d.dropdown)))(), O(!1))
 					}, ce = e => {
-						L && M && E(Object(Bt.Mb)({
+						L && M && E(Object(Bt.Nb)({
 							...e,
 							section: va.c.recent
 						}, M.id))
@@ -5438,7 +5438,7 @@
 					onClearSearchQuery: le,
 					onClose: re,
 					onRemoveRecentSearch: e => {
-						M && 0 !== y.length && (Object(Bt.Z)(e, M.id), E(y.filter(t => t.searchQuery !== e.searchQuery)), d(-1))
+						M && 0 !== y.length && (Object(Bt.ab)(e, M.id), E(y.filter(t => t.searchQuery !== e.searchQuery)), d(-1))
 					},
 					onSendSearchClickRecentEvent: me,
 					onSendSearchClickTypeaheadEvent: pe,
@@ -5822,7 +5822,7 @@
 						[o, i] = function(e) {
 							const [t, n] = Object(u.useState)(Object(Bt.u)(e));
 							return [t, Object(u.useCallback)(() => {
-								n(!0), Object(Bt.wb)(e)
+								n(!0), Object(Bt.xb)(e)
 							}, [])]
 						}(e.userId),
 						[c, l] = Object(Ao.a)(e.userId),
@@ -5935,7 +5935,7 @@
 						const t = n.id === e.id ? n.eventViews : 0;
 						s.eventViews = (t + 1).toString()
 					}
-					"click" === t && (s.lastInteractionTimestamp = (new Date).getTime().toString()), Object(Bt.hb)(s)
+					"click" === t && (s.lastInteractionTimestamp = (new Date).getTime().toString()), Object(Bt.ib)(s)
 				}
 			}
 			var si = ({
@@ -11199,7 +11199,7 @@
 						[f, C] = function(e) {
 							const [t, n] = Object(r.useState)(Object(Q.t)(e));
 							return [t, Object(r.useCallback)(() => {
-								n(!0), Object(Q.zb)(e)
+								n(!0), Object(Q.Ab)(e)
 							}, [])]
 						}(g),
 						[O, v] = Object(z.a)(g),
@@ -15223,8 +15223,8 @@
 						textResponse: t
 					}) => {
 						const n = Object(c.useCallback)(n => {
-							if (e && t.length) return n.preventDefault(), n.returnValue = "sure?", s.fbt._("sure?", null, {
-								hk: "2qwtTR"
+							if (e && t.length) return n.preventDefault(), n.returnValue = "sure?", s.fbt._("Are you sure?", null, {
+								hk: "1B7lB5"
 							})
 						}, [e, t]);
 						Object(c.useEffect)(() => (window.addEventListener("beforeunload", n), () => window.removeEventListener("beforeunload", n)), [n])
@@ -17540,7 +17540,7 @@
 			function a(e) {
 				const [t, n] = Object(s.useState)(Object(r.s)(e));
 				return [t, Object(s.useCallback)(() => {
-					n(!0), Object(r.mb)(e)
+					n(!0), Object(r.nb)(e)
 				}, [])]
 			}
 		},
@@ -17570,7 +17570,7 @@
 			function a(e) {
 				const [t, n] = Object(s.useState)(() => Object(r.v)(e));
 				return [t, Object(s.useCallback)(() => {
-					n(!0), Object(r.xb)(e)
+					n(!0), Object(r.yb)(e)
 				}, [e])]
 			}
 		},
@@ -18111,7 +18111,7 @@
 			const ze = 1e3;
 			class Qe extends u.a.Component {
 				constructor() {
-					super(...arguments), this.flush = Ve()(() => Object(Ke.Eb)(this.props.storageKey, this.props.value), ze)
+					super(...arguments), this.flush = Ve()(() => Object(Ke.Fb)(this.props.storageKey, this.props.value), ze)
 				}
 				componentDidMount() {
 					this.props.syncOnMount && this.sync()
@@ -18976,7 +18976,7 @@
 								{
 									currentPage: n
 								} = t.platform;
-							if ("visible" !== document.visibilityState && (Ke.Rb(Date.now()), Object(U.a)(Object(On.a)("tab_backgrounded")(t))), (e => Object(gn.c)(e, {
+							if ("visible" !== document.visibilityState && (Ke.Sb(Date.now()), Object(U.a)(Object(On.a)("tab_backgrounded")(t))), (e => Object(gn.c)(e, {
 									experimentEligibilitySelector: e => !Object(zn.d)(e),
 									experimentName: Xe.Sb
 								}) === Xe.gc.Enabled)(t) && "visible" === document.visibilityState && n && Object(mn.k)(n.routeMatch, c.getState(), H.TimerType.Revisit, 0, n.urlParams, !0), "visible" === document.visibilityState) {
@@ -18987,7 +18987,7 @@
 								if (s && e && n) {
 									const r = Date.now() - s;
 									Object(U.a)(Object(On.e)("tab_backgrounded", n)(c.getState(), r, e, t))
-								}(s || e || n || t) && (Ke.bb(), Ke.fb(), Ke.db(), Ke.cb())
+								}(s || e || n || t) && (Ke.cb(), Ke.gb(), Ke.eb(), Ke.db())
 							}
 							Object(Os.a)(c.getState()) && (null === (e = null == n ? void 0 : n.locationState) || void 0 === e ? void 0 : e.clickId) && Cs.d[n.locationState.clickId] && !Cs.d[n.locationState.clickId].completed && ("visible" !== document.visibilityState ? Object(Cs.b)(n.locationState.clickId) : Object(Cs.c)(n.locationState.clickId))
 						}), Object(zn.g)(c.getState()) && yn(c.getState), c.dispatch(Object(re.m)())
@@ -22306,4 +22306,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "Reddit~Subreddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.745235eea2010fc7a398.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4153ff943b5cefc8cb1b.js.map

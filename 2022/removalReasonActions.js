@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.f59c611cce4eafc342da.js
-// Retrieved at 1/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.1ea6b18d0d227b9c783f.js
+// Retrieved at 2/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -157,8 +157,8 @@
 				B = n("./src/reddit/models/PostDraft/index.ts"),
 				G = n("./src/reddit/models/RichTextJson/index.ts"),
 				J = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
-				q = n("./src/reddit/models/Toast/index.ts"),
-				$ = n("./src/reddit/selectors/comments.ts"),
+				$ = n("./src/reddit/models/Toast/index.ts"),
+				q = n("./src/reddit/selectors/comments.ts"),
 				W = n("./src/reddit/selectors/commentSelector.ts"),
 				z = n("./src/reddit/selectors/platform.ts"),
 				H = n("./src/reddit/selectors/posts.ts"),
@@ -217,7 +217,7 @@
 						let o;
 						o = E.body, u(ne({
 							...o,
-							headCommentId: Object($.w)(R, {
+							headCommentId: Object(q.w)(R, {
 								commentsPageKey: t
 							}),
 							commentsPageKey: t,
@@ -237,7 +237,7 @@
 							error: E.error
 						})), u(Object(O.f)({
 							duration: O.a,
-							kind: q.b.Error,
+							kind: $.b.Error,
 							text: t
 						}))
 					}
@@ -329,7 +329,7 @@
 							})), s(Object(u.c)(e))
 						} else s(Object(u.a)(n)), s(Object(O.f)({
 							duration: O.a,
-							kind: q.b.Error,
+							kind: $.b.Error,
 							text: o.fbt._("Something went wrong", null, {
 								hk: "LWFS0"
 							})
@@ -344,7 +344,7 @@
 						m = Object(c.a)(B.c.replyToComment, t);
 					if (!Object(Q.J)(s())) return o(Object(d.j)()), void o(Object(i.k)({
 						actionSource: i.a.Reply,
-						redirectUrl: Object($.m)(s(), {
+						redirectUrl: Object(q.m)(s(), {
 							commentId: t
 						})
 					}));
@@ -552,7 +552,7 @@
 				}) => {
 					var c, a, d, i, m, u;
 					n(Object(X.c)());
-					const l = e => Object(O.f)(Object(O.e)(e, q.b.Error));
+					const l = e => Object(O.f)(Object(O.e)(e, $.b.Error));
 					if (((null === (a = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === a ? void 0 : a.followed) || []).length === j.a) n(l(o.fbt._("You've reached your post follow limit", null, {
 						hk: "3ebRql"
 					})));
@@ -571,14 +571,14 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(F.tb)(null !== (m = null === (i = null === (d = s().pages) || void 0 === d ? void 0 : d.comments) || void 0 === i ? void 0 : i.followed) && void 0 !== m ? m : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
+							Object(F.ub)(null !== (m = null === (i = null === (d = s().pages) || void 0 === d ? void 0 : d.comments) || void 0 === i ? void 0 : i.followed) && void 0 !== m ? m : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
 							const e = c ? o.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : o.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
 								hk: "4EAz6O"
 							});
 							n(Object(O.f)({
-								kind: q.b.SuccessCommunityGreen,
+								kind: $.b.SuccessCommunityGreen,
 								text: e
 							}))
 						} else n(Object(X.n)(a)), n(l(o.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
@@ -894,7 +894,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: d
-					})), Object(a.qb)(s + 1)
+					})), Object(a.rb)(s + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, n) {
@@ -1165,8 +1165,8 @@
 			var B = n("./src/reddit/helpers/isPost.ts"),
 				G = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				J = n("./src/reddit/helpers/routeKey/index.ts"),
-				q = n("./src/reddit/models/ModQueue/index.ts"),
-				$ = n("./src/reddit/models/PostDraft/index.ts"),
+				$ = n("./src/reddit/models/ModQueue/index.ts"),
+				q = n("./src/reddit/models/PostDraft/index.ts"),
 				W = n("./src/reddit/models/RemovalReason/index.ts"),
 				z = n("./src/reddit/models/Toast/index.ts"),
 				H = n("./src/reddit/selectors/comments.ts"),
@@ -1315,7 +1315,7 @@
 												sort: A.v,
 												hasSortParam: !0
 											})), u === W.e.Post) {
-											const n = Object(k.a)($.c.replyToPost, m);
+											const n = Object(k.a)(q.c.replyToPost, m);
 											r(Object(C.o)({
 												...t,
 												headCommentId: Object(H.w)(d, {
@@ -1335,7 +1335,7 @@
 												}
 											}))
 										} else if (u === W.e.Comment) {
-											const e = Object(k.a)($.c.replyToComment, l.id),
+											const e = Object(k.a)(q.c.replyToComment, l.id),
 												n = Object(H.j)(d, {
 													commentId: m,
 													commentsPageKey: s
@@ -1387,7 +1387,7 @@
 					if (b.ok) {
 						const o = {
 							ids: e,
-							operation: q.a.RemovalReason,
+							operation: $.a.RemovalReason,
 							username: m,
 							options: {
 								modNote: r,
@@ -1650,4 +1650,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.f59c611cce4eafc342da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.1ea6b18d0d227b9c783f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.680b16acc0ff5203e1cb.js
-// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.4ac8df8bb9f1e33f2f7c.js
+// Retrieved at 2/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -81,10 +81,10 @@
 			}
 			var f = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.yb)()
+					e(Object(c.i)()), Object(u.zb)()
 				},
 				onViewTooltip: () => {
-					Object(u.Sb)()
+					Object(u.Tb)()
 				}
 			}))(Object(p.c)(x));
 			const T = "editable-primary-topic-idcard";
@@ -821,7 +821,7 @@
 				Q = s.n(J);
 			const {
 				fbt: Z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Y = 4, z = Object(r.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 4, Y = Object(r.c)({
 				haveData: (e, {
 					subredditId: t
 				}) => Object(R.k)(e, {
@@ -833,7 +833,7 @@
 				isLoading: e => Object(R.B)(e),
 				selectedPrimaryTag: R.x,
 				isPostUpsellModalOpen: Object(P.b)(j.a.POST_FLOW_UPSELL_MODAL_ID)
-			}), $ = Object(i.b)(z, (e, {
+			}), $ = Object(i.b)(Y, (e, {
 				subredditId: t,
 				context: s
 			}) => ({
@@ -967,7 +967,7 @@
 						onBlur: this.onBlur,
 						childClassNames: ee,
 						readOnlyMode: t ? w.a.editable : w.a.focusableReadOnly,
-						maxTopicsToDisplay: t ? void 0 : Y
+						maxTopicsToDisplay: t ? void 0 : z
 					}, !t && o.a.createElement(_.a, {
 						name: "edit"
 					}), this.renderFocusGrabber()), t && this.renderControlRow())
@@ -1647,4 +1647,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.680b16acc0ff5203e1cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.4ac8df8bb9f1e33f2f7c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.e02fce95638108ce48f5.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.0fe70266f29521acd26f.js
+// Retrieved at 2/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -63,8 +63,8 @@
 				v = t("./src/lib/constants/index.ts"),
 				A = t("./src/reddit/constants/cookie.ts"),
 				p = t("./src/reddit/constants/experiments.ts"),
-				_ = t("./src/reddit/helpers/localStorage/index.ts"),
-				h = t("./src/reddit/selectors/telemetry.ts");
+				h = t("./src/reddit/helpers/localStorage/index.ts"),
+				_ = t("./src/reddit/selectors/telemetry.ts");
 			const x = (e, {
 					id: n,
 					title: t,
@@ -82,13 +82,13 @@
 						title: "function" == typeof t ? t() : t,
 						body: "function" == typeof s ? s() : s || ""
 					},
-					...Object(h.m)(a)
+					...Object(_.m)(a)
 				}),
 				O = e => n => ({
 					source: "announcement",
 					action: e,
 					noun: "announcement",
-					...Object(h.m)(n)
+					...Object(_.m)(n)
 				});
 			var j = t("./src/reddit/hooks/useTracking.ts"),
 				C = t("./src/reddit/selectors/experiments/index.ts");
@@ -162,7 +162,7 @@
 					[t, r] = Object(a.useState)([]),
 					[d, m] = Object(a.useState)(!n),
 					[u, v] = Object(a.useState)(!0),
-					[p, h] = Object(a.useState)(0);
+					[p, _] = Object(a.useState)(0);
 				(({
 					announcements: e,
 					setActiveIndex: n,
@@ -173,7 +173,7 @@
 				}) => {
 					const r = Object(c.e)(C.a);
 					Object(a.useEffect)(() => {
-						const a = Object(_.e)(),
+						const a = Object(h.e)(),
 							c = e.filter(g(r, a)).slice(0, 5),
 							l = [...c].sort((e => (n, t) => (e[n.id] || 0) - (e[t.id] || 0))(a))[0],
 							d = c.length ? A.i.Yes : A.i.No;
@@ -181,7 +181,7 @@
 					}, [])
 				})({
 					announcements: e,
-					setActiveIndex: h,
+					setActiveIndex: _,
 					isHidden: d,
 					setVisibleAnnouncements: r,
 					visibleAnnouncements: t,
@@ -209,7 +209,7 @@
 				})({
 					activeIndex: p,
 					visibleAnnouncements: t,
-					setActiveIndex: h
+					setActiveIndex: _
 				}), D = (({
 					setIsHidden: e,
 					visibleAnnouncements: n
@@ -221,7 +221,7 @@
 								id: n,
 								maxImpressionsCount: t
 							} = e;
-							Object(_.gb)(n, t)
+							Object(h.hb)(n, t)
 						}), t(O("dismiss_all")), E(A.i.No)
 					}, [n, t, e])
 				})({
@@ -238,7 +238,7 @@
 					}, [e, s, n, t])
 				})({
 					activeIndex: p,
-					setActiveIndex: h,
+					setActiveIndex: _,
 					visibleAnnouncements: t
 				});
 				return (({
@@ -251,14 +251,14 @@
 					Object(a.useEffect)(() => {
 						if (e < 0 || e >= t.length) return void n(0);
 						const a = t[e],
-							c = Object(_.d)(a.id);
-						s(x("view", a)), Object(_.gb)(a.id, c + 1);
-						const i = Object(_.e)();
+							c = Object(h.d)(a.id);
+						s(x("view", a)), Object(h.hb)(a.id, c + 1);
+						const i = Object(h.e)();
 						t.filter(g(o, i)).length || E(A.i.No)
 					}, [e, o, s, n, t])
 				})({
 					activeIndex: p,
-					setActiveIndex: h,
+					setActiveIndex: _,
 					visibleAnnouncements: t
 				}), d ? null : o.a.createElement("div", {
 					className: w.a.Container
@@ -305,7 +305,7 @@
 				})), t.length > 1 ? o.a.createElement("div", {
 					className: w.a.Dots
 				}, t.map((e, n) => o.a.createElement("button", {
-					onClick: () => h(n),
+					onClick: () => _(n),
 					key: `announcement-carousel-dot-${n}`,
 					className: Object(i.a)(w.a.Dot, {
 						[w.a.isSelected]: n === p
@@ -317,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.e02fce95638108ce48f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.0fe70266f29521acd26f.js.map

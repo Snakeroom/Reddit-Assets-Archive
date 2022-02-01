@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.8d930e248731cad4db72.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.500500dcd6df2e17d77a.js
+// Retrieved at 2/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -948,7 +948,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(B.tb)(null !== (d = null === (l = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== d ? d : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
+							Object(B.ub)(null !== (d = null === (l = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== d ? d : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
 							const e = i ? o.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : o.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -2055,7 +2055,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(a.qb)(s + 1)
+					})), Object(a.rb)(s + 1)
 				}
 		},
 		"./src/reddit/actions/postCreation/mediaUpload.ts": function(e, t, n) {
@@ -25404,7 +25404,7 @@
 						const {
 							doNotShowOriginalContentDisclaimerClicked: e
 						} = this.props;
-						e(), Object(at.nb)(ot.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
+						e(), Object(at.ob)(ot.ORIGINAL_CONTENT_DISCLAIMER, !0), this.setState({
 							showOCDisclaimer: !1
 						})
 					}, this.handleOriginalContentClick = () => {
@@ -25678,13 +25678,13 @@
 			const Ht = [{
 					id: it.d,
 					getShowTimesLeft: at.J,
-					setShowTimesLeft: at.Kb,
+					setShowTimesLeft: at.Lb,
 					tooltipShown: Vt.n,
 					tooltipDismissed: Vt.m
 				}, {
 					id: it.c,
 					getShowTimesLeft: at.I,
-					setShowTimesLeft: at.Jb,
+					setShowTimesLeft: at.Kb,
 					tooltipShown: Vt.f,
 					tooltipDismissed: Vt.e
 				}],
@@ -30868,4 +30868,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8d930e248731cad4db72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.500500dcd6df2e17d77a.js.map

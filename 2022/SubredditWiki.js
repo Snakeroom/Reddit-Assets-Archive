@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.83ad4112ab8f3a9adbb1.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.7acf9940ec06611264e3.js
+// Retrieved at 2/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, s) {
@@ -352,7 +352,7 @@
 							e.stopPropagation(), o.visible ? E() : N()
 						}, [E, N, o.visible]),
 						T = Object(i.useCallback)(t => {
-							t === x.b.FREQUENT && Object(W.ab)(e.userId, e.subredditId)
+							t === x.b.FREQUENT && Object(W.bb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						L = Object(i.useCallback)(i => {
 							const {
@@ -569,7 +569,7 @@
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(W.ab)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(W.bb)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), e.userIsSubscriber && t && e.notificationLevel && n.a.createElement("div", {
 					className: ie.a.notificationButtonContainer
@@ -2176,4 +2176,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.83ad4112ab8f3a9adbb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.7acf9940ec06611264e3.js.map

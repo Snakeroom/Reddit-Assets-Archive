@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.6e828adfb659f4f886d6.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.ece227ca080dc561fcf6.js
+// Retrieved at 2/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -230,20 +230,20 @@
 					hk: "40XHkp"
 				}),
 				T = Object(c.a)(d.c),
-				N = Object(c.a)(d.b),
-				C = Object(c.a)(d.a),
+				C = Object(c.a)(d.b),
+				N = Object(c.a)(d.a),
 				k = Object(c.a)(d.h),
 				P = (Object(c.a)(d.i), Object(c.a)(d.g), () => async (e, t, {
 					gqlContext: r
 				}) => {
 					const n = t();
 					if (!n.user.account || n.subscriptions.api.fetched) return;
-					e(N());
+					e(C());
 					const s = await Object(p.a)(r());
 					if (s.ok) {
 						const t = S(s.body.data);
 						e(T(t))
-					} else e(C({
+					} else e(N({
 						error: s.error
 					}))
 				}),
@@ -991,8 +991,8 @@
 					isOnlineOverrideValue: x,
 					isOnlineStatusLoadTest: y,
 					isProfileIcon: T,
-					omitResponsivePresenceWrapper: N,
-					onPresenceIndicatorInViewport: C,
+					omitResponsivePresenceWrapper: C,
+					onPresenceIndicatorInViewport: N,
 					shouldShowPresenceIndicator: k,
 					user: P,
 					userName: w,
@@ -1029,7 +1029,7 @@
 				}, []), $ = Object(s.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(l.a)(K, Y, $.current), N ? G : c.a.createElement("div", {
+				return Object(l.a)(K, Y, $.current), C ? G : c.a.createElement("div", {
 					className: Object(n.a)(S.a.userIconWrapper, {
 						[S.a.nftUserIcon]: g,
 						[S.a.hasHeadShotWrapper]: H,
@@ -1043,7 +1043,7 @@
 				}), G, k && (B || E && x) && c.a.createElement(m.default, {
 					showPresence: !0,
 					isHighlighted: I,
-					onceInViewport: C
+					onceInViewport: N
 				}), (k || y) && !E && V && c.a.createElement(d.a, {
 					variables: q,
 					onData: k ? W : j,
@@ -1130,9 +1130,9 @@
 		"./src/reddit/controls/OutboundLink/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return N
-			})), r.d(t, "c", (function() {
 				return C
+			})), r.d(t, "c", (function() {
+				return N
 			}));
 			var n = r("./node_modules/lodash/omit.js"),
 				s = r.n(n),
@@ -1198,7 +1198,7 @@
 						})
 					}(e.href))
 				},
-				N = (e, t, r) => {
+				C = (e, t, r) => {
 					let n, s = null;
 					if (e && t && /^(http|https):\/\/([a-z]+\.)?reddit.com/.test(r)) {
 						s = Object(h.a)(e, t, O.a.Click);
@@ -1219,8 +1219,8 @@
 						metadata: s
 					}
 				},
-				C = (e, t, r) => {
-					const n = N(t, r, e.href);
+				N = (e, t, r) => {
+					const n = C(t, r, e.href);
 					return e.href = n.url, n.metadata
 				},
 				k = ({
@@ -1263,7 +1263,7 @@
 					})) : a.a.createElement("a", E({}, _, {
 						onMouseDown: r => {
 							if (!k(e)) return !(1 !== r.button && 2 !== r.button && !r.ctrlKey) || void T(r.currentTarget, I, j, n);
-							t.current = C(r.currentTarget, p, c)
+							t.current = N(r.currentTarget, p, c)
 						},
 						onClick: () => {
 							f && (k(e) && (h(f, O.a.Click, t.current), Object(g.a)(f, b)), d(f, O.a.Click), r(u, v, o, p))
@@ -1356,7 +1356,7 @@
 					}
 				}),
 				i = (e, t) => {
-					t && (Object(s.Ab)(e.postId), Object(s.Ib)(t)), e.impressionIdStr ? Object(s.Bb)(e.impressionIdStr) : e.impressionId && Object(s.Bb)(e.impressionId)
+					t && (Object(s.Bb)(e.postId), Object(s.Jb)(t)), e.impressionIdStr ? Object(s.Cb)(e.impressionIdStr) : e.impressionId && Object(s.Cb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/screenview.ts": function(e, t, r) {
@@ -1364,7 +1364,7 @@
 			r.d(t, "k", (function() {
 				return T
 			})), r.d(t, "f", (function() {
-				return C
+				return N
 			})), r.d(t, "q", (function() {
 				return k
 			})), r.d(t, "r", (function() {
@@ -1470,7 +1470,7 @@
 							} = e.match, {
 								sort: d = (s.sort ? s.sort : c.W.HOT)
 							} = o, u = i.t, b = a === O.a;
-							Object(x.a)(C({
+							Object(x.a)(N({
 								key: s.listingKey,
 								sort: d,
 								timerType: r,
@@ -1488,7 +1488,7 @@
 							} = e.match, i = s.sort ? s.sort : c.X, {
 								sort: a = i
 							} = o;
-							Object(x.a)(C({
+							Object(x.a)(N({
 								key: s.listingKey,
 								sort: a,
 								timerType: r,
@@ -1610,11 +1610,11 @@
 							b && ce(t, !0)
 					}
 				},
-				N = e => ({
+				C = e => ({
 					...E.m(e),
 					userPreferences: E.pb(e)
 				}),
-				C = ({
+				N = ({
 					key: e,
 					sort: t,
 					timerType: r,
@@ -1633,7 +1633,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...N(i),
+						...C(i),
 						actionInfo: E.c(i, {
 							success: d,
 							...u
@@ -1664,7 +1664,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...N(c),
+						...C(c),
 						actionInfo: E.c(c, {
 							success: a
 						}),
@@ -1687,7 +1687,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...N(c),
+						...C(c),
 						actionInfo: E.c(c, {
 							success: a
 						}),
@@ -1709,7 +1709,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...N(c),
+						...C(c),
 						actionInfo: E.c(c, {
 							success: a
 						}),
@@ -1726,7 +1726,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...N(n),
+						...C(n),
 						actionInfo: E.c(n, {
 							success: s
 						}),
@@ -1744,7 +1744,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...N(o),
+						...C(o),
 						actionInfo: E.c(o, {
 							success: a
 						}),
@@ -1773,7 +1773,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...N(n),
+						...C(n),
 						actionInfo: E.c(n, {
 							success: s
 						}),
@@ -1789,7 +1789,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...N(e),
+						...C(e),
 						actionInfo: E.c(e, {
 							success: t
 						})
@@ -1800,7 +1800,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...N(e),
+						...C(e),
 						actionInfo: E.c(e, {
 							success: t
 						}),
@@ -1815,7 +1815,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...N(e),
+						...C(e),
 						profile: E.Q(e, Object(h.m)(e, r)),
 						subreddit: E.ib(e, Object(I.C)(e, t)),
 						userSubreddit: E.qb(e),
@@ -1827,7 +1827,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...N(e),
+						...C(e),
 						actionInfo: E.c(e)
 					})
 				},
@@ -1836,7 +1836,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...N(e),
+						...C(e),
 						actionInfo: E.c(e)
 					})
 				},
@@ -1848,7 +1848,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...N(e),
+						...C(e),
 						actionInfo: E.c(e, {
 							success: o
 						}),
@@ -1864,7 +1864,7 @@
 					action: "view",
 					noun: "page",
 					correlationId: Object(v.c)(v.a.GoldPayment),
-					...N(r),
+					...C(r),
 					timer: E.nb(e, t),
 					adblock: E.d(r)
 				}),
@@ -1872,14 +1872,14 @@
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...N(e)
+					...C(e)
 				}),
 				W = (e, t) => r => ({
 					source: "premium_marketing",
 					action: "view",
 					noun: "page",
 					correlationId: Object(v.c)(v.a.GoldPayment),
-					...N(r),
+					...C(r),
 					timer: E.nb(e, t),
 					adblock: E.d(r)
 				}),
@@ -1887,20 +1887,20 @@
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...N(e)
+					...C(e)
 				}),
 				V = (e, t) => r => ({
 					source: "appeal",
 					action: "view",
 					noun: "page",
-					...N(r),
+					...C(r),
 					timer: E.nb(e, t)
 				}),
 				z = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...N(r),
+					...C(r),
 					timer: E.nb(e, t)
 				}),
 				Y = () => e => ({
@@ -1908,25 +1908,25 @@
 					action: "view",
 					noun: "screen",
 					subreddit: E.hb(e),
-					...N(e)
+					...C(e)
 				}),
 				$ = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...N(e)
+					...C(e)
 				}),
 				Z = () => e => ({
 					action: "view",
 					source: "global",
 					noun: "screen",
-					...N(e)
+					...C(e)
 				}),
 				Q = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...N(r),
+					...C(r),
 					customFeed: E.k(r),
 					subreddit: E.hb(r),
 					timer: E.nb(e, t),
@@ -1937,7 +1937,7 @@
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...N(e)
+					...C(e)
 				}),
 				J = {
 					source: "global",
@@ -2034,7 +2034,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...N(e),
+						...C(e),
 						actionInfo: E.c(e, {
 							success: t
 						})
@@ -2045,7 +2045,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...N(e),
+						...C(e),
 						actionInfo: E.c(e, {
 							success: t
 						})
@@ -2083,9 +2083,9 @@
 			})), r.d(t, "l", (function() {
 				return y
 			})), r.d(t, "f", (function() {
-				return N
-			})), r.d(t, "p", (function() {
 				return C
+			})), r.d(t, "p", (function() {
+				return N
 			})), r.d(t, "o", (function() {
 				return k
 			})), r.d(t, "c", (function() {
@@ -2273,7 +2273,7 @@
 						discoveryUnit: o ? d.n(o) : null
 					}
 				},
-				y = (e, t, r, n, s, o) => i => N({
+				y = (e, t, r, n, s, o) => i => C({
 					action: c.c.CLICK,
 					state: i,
 					searchOptions: e,
@@ -2287,7 +2287,7 @@
 					var s;
 					return (null === (s = null == n ? void 0 : n.layout) || void 0 === s ? void 0 : s.viewTypeWeb) === i.b.Hero ? 0 : (null == n ? void 0 : n.postOrder) ? n.postOrder.indexOf(t) >= 0 ? n.postOrder.indexOf(t) : null : r ? d.v(e, t, r) : null
 				},
-				N = ({
+				C = ({
 					action: e,
 					state: t,
 					searchOptions: r,
@@ -2336,7 +2336,7 @@
 						post: i ? d.G(t, i) : void 0
 					}
 				},
-				C = (e, t, r, n, s) => o => ({
+				N = (e, t, r, n, s) => o => ({
 					...x(o, t, r, n, e, s),
 					action: c.c.VIEW
 				}),
@@ -2464,7 +2464,7 @@
 					var e;
 					null === (e = r.current) || void 0 === e || e.emit(i)
 				}, [i]), [i, function(t) {
-					Object(s.Eb)(e, t), a(t)
+					Object(s.Fb)(e, t), a(t)
 				}]
 			}
 		},
@@ -2706,4 +2706,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.6e828adfb659f4f886d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.ece227ca080dc561fcf6.js.map
