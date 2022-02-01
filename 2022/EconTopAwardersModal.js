@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.c1754aa4ef20fe931ec4.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.784fb8780dda7ee3b3d8.js
+// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -442,7 +442,7 @@
 					error: G,
 					pending: W
 				});
-			var K = (e = null, t) => {
+			var q = (e = null, t) => {
 					switch (t.type) {
 						case C.r:
 						case C.p:
@@ -455,9 +455,9 @@
 							return e
 					}
 				},
-				q = Object(N.c)({
+				K = Object(N.c)({
 					api: z,
-					result: K
+					result: q
 				});
 			const Q = {};
 			var J = (e = Q, t) => {
@@ -503,7 +503,7 @@
 					inContext: U,
 					loadMore: H,
 					models: D,
-					search: q,
+					search: K,
 					userOrder: J
 				});
 			Object(j.a)({
@@ -809,8 +809,8 @@
 					LoadingComponent: () => null
 				}),
 				z = a("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
-				K = a.n(z);
-			const q = 3500,
+				q = a.n(z);
+			const K = 3500,
 				Q = 500;
 			class J extends s.a.PureComponent {
 				constructor(e) {
@@ -828,7 +828,7 @@
 							this.setState({
 								shouldAnimate: !1
 							})
-						}, q)))
+						}, K)))
 					}, this.handleOnClick = () => {
 						const {
 							onAddAward: e,
@@ -892,31 +892,31 @@
 						shouldAnimate: c
 					} = this.state, l = Object(R.a)(e.id, o.id);
 					return s.a.createElement("span", {
-						className: K.a.awardPillContainer,
+						className: q.a.awardPillContainer,
 						id: d,
 						onMouseEnter: this.handleMouseEnter,
 						onMouseLeave: this.handleMouseLeave
 					}, s.a.createElement("button", {
-						className: Object(S.a)(t, K.a.awardPill, {
-							[K.a.userGiven]: i
+						className: Object(S.a)(t, q.a.awardPill, {
+							[q.a.userGiven]: i
 						}),
 						onClick: this.handleOnClick
 					}, s.a.createElement("span", {
-						className: K.a.imageContainer
+						className: q.a.imageContainer
 					}, s.a.createElement("img", {
 						alt: e.name,
-						className: Object(S.a)(K.a.awardIcon, {
-							[K.a.hidden]: c
+						className: Object(S.a)(q.a.awardIcon, {
+							[q.a.hidden]: c
 						}),
 						id: l,
 						ref: this.imageRef,
 						src: n
 					}), c && s.a.createElement("img", {
 						alt: e.name,
-						className: K.a.animationIcon,
+						className: q.a.animationIcon,
 						src: r
 					})), s.a.createElement("span", {
-						className: K.a.count
+						className: q.a.count
 					}, a.toLocaleString())), s.a.createElement(W, {
 						award: e,
 						onOpenReportFlow: this.handleOpenReportFlow,
@@ -1892,7 +1892,7 @@
 				G = a("./src/reddit/components/Econ/TopAwardersModal/TopAwardersList/index.m.less"),
 				W = a.n(G);
 			const z = 8;
-			var K = function(e) {
+			var q = function(e) {
 					const {
 						awarders: t,
 						className: a,
@@ -1919,7 +1919,7 @@
 						onCtaClick: d
 					}))) : null
 				},
-				q = a("./src/reddit/icons/svgs/CoinV2/index.tsx"),
+				K = a("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				Q = a("./src/reddit/components/Econ/TopAwardersModal/Winners/Winner/index.m.less"),
 				J = a.n(Q);
 			var V = function(e) {
@@ -1953,7 +1953,7 @@
 						wrapperClassName: J.a.hoverCardWrapper
 					}, d) : d), a && t && n.a.createElement("div", {
 						className: J.a.score
-					}, n.a.createElement(q.a, {
+					}, n.a.createElement(K.a, {
 						className: J.a.coinIcon
 					}), a.score))
 				},
@@ -2129,7 +2129,7 @@
 					className: ee.a.giftIcon
 				}), ae._("Give Award", null, {
 					hk: "2sa45i"
-				}))), U && i && M && n.a.createElement(K, {
+				}))), U && i && M && n.a.createElement(q, {
 					awarders: h,
 					className: ee.a.list,
 					currentRank: o,
@@ -2278,15 +2278,15 @@
 				G = a("./src/reddit/actions/subredditModeration/ban.ts"),
 				W = a("./src/reddit/constants/modals.ts"),
 				z = a("./src/reddit/components/Hovercards/helpers.ts"),
-				K = a("./src/reddit/icons/fonts/index.tsx"),
-				q = a("./src/reddit/models/ModeratingSubreddits/index.ts"),
+				q = a("./src/reddit/icons/fonts/index.tsx"),
+				K = a("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				Q = a("./src/reddit/selectors/bannedUser.ts"),
 				J = a("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
 				V = a.n(J);
 			const {
 				fbt: Y
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), Z = Object(o.c)({
-				hasModMailPermissions: Object(m.b)(q.c.mail),
+				hasModMailPermissions: Object(m.b)(K.c.mail),
 				isUserBanned: (e, t) => !!Object(Q.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
@@ -2317,7 +2317,7 @@
 						onClick: () => {
 							s(this.props.user.id), o(k.e(t))
 						}
-					}, n.a.createElement(K.a, {
+					}, n.a.createElement(q.a, {
 						name: "ban",
 						isFilled: !0,
 						className: V.a.icon
@@ -2328,7 +2328,7 @@
 						onClick: () => {
 							d(), o(k.a(t))
 						}
-					}, n.a.createElement(K.a, {
+					}, n.a.createElement(q.a, {
 						name: "ban",
 						className: V.a.icon
 					}), Y._("Ban User", null, {
@@ -2338,7 +2338,7 @@
 						onClick: () => {
 							i(), o(k.d(t))
 						}
-					}, n.a.createElement(K.a, {
+					}, n.a.createElement(q.a, {
 						name: "mod_mute",
 						className: V.a.icon
 					}), Y._("Mute User", null, {
@@ -2381,7 +2381,7 @@
 					onClick: () => {
 						e.onToggleUserFlairModal(), e.sendEvent(k.c(e.contextId))
 					}
-				}, n.a.createElement(K.a, {
+				}, n.a.createElement(q.a, {
 					name: "tag",
 					className: V.a.icon
 				}), te._("Edit user flair", null, {
@@ -4072,15 +4072,15 @@
 			const o = e => {
 					const t = Object(n.c)(e, {
 						experimentEligibilitySelector: s.J,
-						experimentName: r.xc
+						experimentName: r.yc
 					});
-					return !(!t || Object(r.of)(t))
+					return !(!t || Object(r.qf)(t))
 				},
 				d = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: s.J,
-						experimentName: r.xc
-					}) === r.cd.ListingEnabled
+						experimentName: r.yc
+					}) === r.dd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, a) {
@@ -4140,4 +4140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.c1754aa4ef20fe931ec4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.784fb8780dda7ee3b3d8.js.map

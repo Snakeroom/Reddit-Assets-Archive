@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.4647a4e2567464d13cef.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.37f1065834d4665ae9a7.js
+// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -1634,7 +1634,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: a
-					} = t, r = Object(i.d)(), o = Object(H.a)(), c = Object(V.a)(u.hd) === u.od.Enabled, d = Object(i.e)(W.b), m = e => {
+					} = t, r = Object(i.d)(), o = Object(H.a)(), c = Object(V.a)(u.jd) === u.qd.Enabled, d = Object(i.e)(W.b), m = e => {
 						!d || t.media && Object(P.H)(t.media) || (e.preventDefault(), r(Object(f.ab)(Object(g.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return n.a.createElement(Y, {
@@ -2158,4 +2158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.4647a4e2567464d13cef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.37f1065834d4665ae9a7.js.map

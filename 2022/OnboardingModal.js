@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.9017f4581576f3489ca5.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.81e38d04e097a01ea915.js
+// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal", "OnboardingActions"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -189,7 +189,7 @@
 			const S = e => {
 				const t = Object(y.c)(e, {
 					experimentEligibilitySelector: y.a,
-					experimentName: j.Ib
+					experimentName: j.Jb
 				});
 				return !!Object(k.a)(t)
 			};
@@ -1425,7 +1425,7 @@
 				Je = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Ke = Object(ze.a)(e => Object(Je.c)(e, {
 				experimentEligibilitySelector: Je.a,
-				experimentName: Ee.Pb
+				experimentName: Ee.Qb
 			}), e => e);
 			var Ze = n("./src/reddit/selectors/experiments/survey.ts"),
 				Xe = n("./src/reddit/selectors/onboarding.ts"),
@@ -3392,4 +3392,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.9017f4581576f3489ca5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.81e38d04e097a01ea915.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.939b726c41b40c52e067.js
-// Retrieved at 2/1/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.8d930e248731cad4db72.js
+// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -9368,7 +9368,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: o
-					} = t, s = Object(i.d)(), a = Object(W.a)(), c = Object(V.a)(m.hd) === m.od.Enabled, d = Object(i.e)(L.b), u = e => {
+					} = t, s = Object(i.d)(), a = Object(W.a)(), c = Object(V.a)(m.jd) === m.qd.Enabled, d = Object(i.e)(L.b), u = e => {
 						!d || t.media && Object(_.H)(t.media) || (e.preventDefault(), s(Object(g.ab)(Object(C.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Q, {
@@ -30581,14 +30581,14 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-					experimentName: o.Nd,
+					experimentName: o.Pd,
 					experimentEligibilitySelector: s.a
-				}) === o.Wd.Enabled,
+				}) === o.Yd.Enabled,
 				i = e => Object(s.c)(e, {
-					experimentName: o.Od,
+					experimentName: o.Qd,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === o.Xd.Enabled
+				}) === o.Zd.Enabled
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
 			"use strict";
@@ -30611,37 +30611,37 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.kf
-					}) === o.Xc
+						experimentName: o.mf
+					}) === o.Yc
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.lf
-					}) === o.Xc
+						experimentName: o.nf
+					}) === o.Yc
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.jf
+						experimentName: o.lf
 					});
-					return t === o.cf.UIChangesOnly || t === o.cf.TypingIndicators || t === o.cf.IndicatorsPlusCTA
+					return t === o.ef.UIChangesOnly || t === o.ef.TypingIndicators || t === o.ef.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: o.jf
+							experimentName: o.lf
 						}),
 						n = null == t ? void 0 : t.variant;
-					return n === o.cf.TypingIndicators || n === o.cf.IndicatorsPlusCTA
+					return n === o.ef.TypingIndicators || n === o.ef.IndicatorsPlusCTA
 				},
 				u = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.jf
+						experimentName: o.lf
 					});
-					return (null == t ? void 0 : t.variant) === o.cf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.ef.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(e, t, n) {
@@ -30868,4 +30868,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.939b726c41b40c52e067.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8d930e248731cad4db72.js.map

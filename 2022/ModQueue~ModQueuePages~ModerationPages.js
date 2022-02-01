@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.ac2e3b01e9babdaada24.js
-// Retrieved at 1/26/2022, 8:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.71866a947a7d1f580f97.js
+// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages~ModerationPages"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, r) {
@@ -281,7 +281,7 @@
 			})), r.d(t, "b", (function() {
 				return W
 			})), r.d(t, "c", (function() {
-				return J
+				return Y
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./node_modules/fbt/lib/FbtPublic.js"),
@@ -356,8 +356,8 @@
 						if (function(e) {
 								return Object(y.c)(e, {
 									experimentEligibilitySelector: y.a,
-									experimentName: O.kd
-								}) === O.Xc
+									experimentName: O.md
+								}) === O.Yc
 							}(c())) {
 							const {
 								normalizeModQueueListingFromGql: e,
@@ -621,7 +621,7 @@
 						}), f.b.Error);
 						a(Object(u.f)(e))
 					}
-				}, $ = Object(n.a)(k.a), W = Object(n.a)(k.c), J = Object(n.a)(k.d)
+				}, $ = Object(n.a)(k.a), W = Object(n.a)(k.c), Y = Object(n.a)(k.d)
 		},
 		"./src/reddit/actions/moderationLog/constants.ts": function(e, t, r) {
 			"use strict";
@@ -636,7 +636,7 @@
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "removalReasonsPending", (function() {
-				return Y
+				return J
 			})), r.d(t, "removalReasonsLoaded", (function() {
 				return X
 			})), r.d(t, "removalReasonsFailed", (function() {
@@ -884,20 +884,20 @@
 				z = r("./src/reddit/models/RemovalReason/index.ts"),
 				$ = r("./src/reddit/models/Toast/index.ts"),
 				W = r("./src/reddit/selectors/comments.ts"),
-				J = r("./src/reddit/selectors/platform.ts");
+				Y = r("./src/reddit/selectors/platform.ts");
 			Object(a.a)({
 				features: {
 					removalReasons: S
 				}
 			});
-			const Y = Object(R.a)("REMOVALREASONS__LOAD_PENDING"),
+			const J = Object(R.a)("REMOVALREASONS__LOAD_PENDING"),
 				X = Object(R.a)("REMOVALREASONS__LOAD_SUCCESS"),
 				Z = Object(R.a)("REMOVALREASONS__LOAD_FAILED"),
 				ee = e => async (t, r, {
 					apiContext: s
 				}) => {
 					const a = r().subreddits.models[e].name;
-					t(Y());
+					t(J());
 					const n = await ((e, t) => Object(D.a)(Object(T.a)(e, [U.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: k.jb.GET
@@ -1022,7 +1022,7 @@
 												comment: e,
 												parentId: i
 											},
-											r = Object(J.f)(c),
+											r = Object(Y.f)(c),
 											s = c.platform.currentPage && c.platform.currentPage.routeMatch;
 										let a = r && s && Object(G.a)(s, c, c.posts.models[e.postId]);
 										if (a || (a = Object(I.a)(e.postId, null, {
@@ -1595,11 +1595,11 @@
 							return e
 					}
 				},
-				J = Object(s.c)({
+				Y = Object(s.c)({
 					itemOrder: z,
 					models: W
 				});
-			var Y = (e = null, t) => {
+			var J = (e = null, t) => {
 				switch (t.type) {
 					case K.b: {
 						const {
@@ -1675,8 +1675,8 @@
 					}
 				},
 				ne = Object(s.c)({
-					actions: J,
-					endCursor: Y,
+					actions: Y,
+					endCursor: J,
 					hasNextPage: Z,
 					hasPreviousPage: te,
 					moderators: se,
@@ -2169,15 +2169,15 @@
 							return e
 					}
 				},
-				Je = r("./src/reddit/actions/modQueue/constants.ts");
-			var Ye = (e = !1, t) => {
+				Ye = r("./src/reddit/actions/modQueue/constants.ts");
+			var Je = (e = !1, t) => {
 					switch (t.type) {
 						case $e.c:
 							return !0;
 						case $e.b:
 						case $e.a:
-						case Je.s:
-						case Je.r:
+						case Ye.s:
+						case Ye.r:
 							return !1;
 						default:
 							return e
@@ -2185,12 +2185,12 @@
 				},
 				Xe = Object(s.c)({
 					error: We,
-					pending: Ye
+					pending: Je
 				});
 			const Ze = {};
 			var et = (e = Ze, t) => {
 					switch (t.type) {
-						case Je.a: {
+						case Ye.a: {
 							const {
 								ids: r
 							} = t.payload, s = {};
@@ -2199,13 +2199,13 @@
 								...s
 							}
 						}
-						case Je.d: {
+						case Ye.d: {
 							const {
 								ids: r
 							} = t.payload;
 							return L()(e, r)
 						}
-						case Je.c: {
+						case Ye.c: {
 							const {
 								ids: e
 							} = t.payload, r = {};
@@ -2239,10 +2239,10 @@
 				});
 			var nt = (e = null, t) => {
 				switch (t.type) {
-					case Je.g:
-					case Je.f:
+					case Ye.g:
+					case Ye.f:
 						return null;
-					case Je.e:
+					case Ye.e:
 						return t.payload;
 					default:
 						return e
@@ -2250,10 +2250,10 @@
 			};
 			var ot = (e = !1, t) => {
 					switch (t.type) {
-						case Je.g:
+						case Ye.g:
 							return !0;
-						case Je.f:
-						case Je.e:
+						case Ye.f:
+						case Ye.e:
 							return !1;
 						default:
 							return e
@@ -2266,7 +2266,7 @@
 			const ct = {};
 			var ut = (e = ct, t) => {
 				switch (t.type) {
-					case Je.f: {
+					case Ye.f: {
 						const {
 							listingKey: r,
 							page: s,
@@ -2289,7 +2289,7 @@
 			const it = {};
 			var lt = (e = it, t) => {
 					switch (t.type) {
-						case Je.f: {
+						case Ye.f: {
 							const {
 								listingKey: r,
 								response: s
@@ -2320,11 +2320,11 @@
 							} = r;
 						return s ? null : e
 					}
-					case Je.i:
-					case Je.f:
-					case Je.m:
-					case Je.p:
-					case Je.v: {
+					case Ye.i:
+					case Ye.f:
+					case Ye.m:
+					case Ye.p:
+					case Ye.v: {
 						const {
 							response: e
 						} = t.payload, {
@@ -2332,7 +2332,7 @@
 						} = e;
 						return r
 					}
-					case Je.k: {
+					case Ye.k: {
 						const e = t.payload,
 							{
 								moderatedAfter: r
@@ -2346,11 +2346,11 @@
 			const ft = [];
 			var Ot = (e = ft, t) => {
 				switch (t.type) {
-					case Je.i:
-					case Je.f:
-					case Je.m:
-					case Je.p:
-					case Je.v: {
+					case Ye.i:
+					case Ye.f:
+					case Ye.m:
+					case Ye.p:
+					case Ye.v: {
 						const {
 							response: e
 						} = t.payload, {
@@ -2358,7 +2358,7 @@
 						} = e;
 						return r
 					}
-					case Je.k: {
+					case Ye.k: {
 						const r = t.payload,
 							{
 								listingOrder: s
@@ -2378,7 +2378,7 @@
 			};
 			var yt = (e = !1, t) => {
 				switch (t.type) {
-					case Je.b:
+					case Ye.b:
 						return !0;
 					default:
 						return e
@@ -2386,9 +2386,9 @@
 			};
 			var ht = (e = !1, t) => {
 					switch (t.type) {
-						case Je.k:
+						case Ye.k:
 							return !0;
-						case Je.b:
+						case Ye.b:
 							return !1;
 						default:
 							return e
@@ -2402,10 +2402,10 @@
 				});
 			var vt = (e = null, t) => {
 				switch (t.type) {
-					case Je.j:
-					case Je.i:
+					case Ye.j:
+					case Ye.i:
 						return null;
-					case Je.h:
+					case Ye.h:
 						return t.payload;
 					default:
 						return e
@@ -2413,10 +2413,10 @@
 			};
 			var _t = (e = !1, t) => {
 					switch (t.type) {
-						case Je.j:
+						case Ye.j:
 							return !0;
-						case Je.i:
-						case Je.h:
+						case Ye.i:
+						case Ye.h:
 							return !1;
 						default:
 							return e
@@ -2429,7 +2429,7 @@
 			const St = {};
 			var kt = (e = St, t) => {
 				switch (t.type) {
-					case Je.i: {
+					case Ye.i: {
 						const {
 							listingKey: r,
 							page: s,
@@ -2452,7 +2452,7 @@
 			const Rt = {};
 			var It = (e = Rt, t) => {
 					switch (t.type) {
-						case Je.i: {
+						case Ye.i: {
 							const {
 								listingKey: r,
 								response: s
@@ -2475,10 +2475,10 @@
 				});
 			var At = (e = null, t) => {
 				switch (t.type) {
-					case Je.n:
-					case Je.m:
+					case Ye.n:
+					case Ye.m:
 						return null;
-					case Je.l:
+					case Ye.l:
 						return t.payload;
 					default:
 						return e
@@ -2486,10 +2486,10 @@
 			};
 			var wt = (e = !1, t) => {
 					switch (t.type) {
-						case Je.n:
+						case Ye.n:
 							return !0;
-						case Je.m:
-						case Je.l:
+						case Ye.m:
+						case Ye.l:
 							return !1;
 						default:
 							return e
@@ -2502,7 +2502,7 @@
 			const Mt = {};
 			var Lt = (e = Mt, t) => {
 				switch (t.type) {
-					case Je.m: {
+					case Ye.m: {
 						const {
 							listingKey: r,
 							page: s,
@@ -2525,7 +2525,7 @@
 			const Nt = {};
 			var Ct = (e = Nt, t) => {
 					switch (t.type) {
-						case Je.m: {
+						case Ye.m: {
 							const {
 								listingKey: r,
 								response: s
@@ -2548,10 +2548,10 @@
 				});
 			var Dt = (e = null, t) => {
 				switch (t.type) {
-					case Je.q:
-					case Je.p:
+					case Ye.q:
+					case Ye.p:
 						return null;
-					case Je.o:
+					case Ye.o:
 						return t.payload;
 					default:
 						return e
@@ -2559,10 +2559,10 @@
 			};
 			var Tt = (e = !1, t) => {
 					switch (t.type) {
-						case Je.q:
+						case Ye.q:
 							return !0;
-						case Je.p:
-						case Je.o:
+						case Ye.p:
+						case Ye.o:
 							return !1;
 						default:
 							return e
@@ -2575,7 +2575,7 @@
 			const Ft = {};
 			var Qt = (e = Ft, t) => {
 				switch (t.type) {
-					case Je.p: {
+					case Ye.p: {
 						const {
 							listingKey: r,
 							page: s,
@@ -2598,7 +2598,7 @@
 			const qt = {};
 			var Vt = (e = qt, t) => {
 					switch (t.type) {
-						case Je.p: {
+						case Ye.p: {
 							const {
 								listingKey: r,
 								response: s
@@ -2621,10 +2621,10 @@
 				});
 			var Gt = (e = null, t) => {
 				switch (t.type) {
-					case Je.w:
-					case Je.v:
+					case Ye.w:
+					case Ye.v:
 						return null;
-					case Je.u:
+					case Ye.u:
 						return t.payload;
 					default:
 						return e
@@ -2632,10 +2632,10 @@
 			};
 			var Kt = (e = !1, t) => {
 					switch (t.type) {
-						case Je.w:
+						case Ye.w:
 							return !0;
-						case Je.v:
-						case Je.u:
+						case Ye.v:
+						case Ye.u:
 							return !1;
 						default:
 							return e
@@ -2648,7 +2648,7 @@
 			const zt = {};
 			var $t = (e = zt, t) => {
 				switch (t.type) {
-					case Je.v: {
+					case Ye.v: {
 						const {
 							listingKey: r,
 							page: s,
@@ -2669,9 +2669,9 @@
 				}
 			};
 			const Wt = {};
-			var Jt = (e = Wt, t) => {
+			var Yt = (e = Wt, t) => {
 					switch (t.type) {
-						case Je.v: {
+						case Ye.v: {
 							const {
 								listingKey: r,
 								response: s
@@ -2687,10 +2687,10 @@
 							return e
 					}
 				},
-				Yt = Object(s.c)({
+				Jt = Object(s.c)({
 					api: Ht,
 					itemOrder: $t,
-					loadMore: Jt
+					loadMore: Yt
 				}),
 				Xt = Object(s.c)({
 					bulkAction: at,
@@ -2699,7 +2699,7 @@
 					modqueue: Et,
 					reports: Pt,
 					spam: Bt,
-					unmoderated: Yt
+					unmoderated: Jt
 				});
 			var Zt = (e = null, t) => {
 				switch (t.type) {
@@ -2971,4 +2971,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.ac2e3b01e9babdaada24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.71866a947a7d1f580f97.js.map

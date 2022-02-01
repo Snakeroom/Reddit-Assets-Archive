@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.6936efd297ac1c025c4d.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.e9a322494398e653b764.js
+// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -463,7 +463,7 @@
 						}))
 					}
 					return a
-				}, Q = Object(i.a)(c.l), X = Object(i.a)(c.m), Y = Object(i.a)(c.k), Z = e => async (t, s) => {
+				}, Q = Object(i.a)(c.l), Y = Object(i.a)(c.m), X = Object(i.a)(c.k), Z = e => async (t, s) => {
 					const o = s();
 					if (Object(I.b)(o)) return void t(Object(a.ab)(Object(E.b)(e.permalink), e.id));
 					const r = o.platform.currentPage.locationState;
@@ -505,7 +505,7 @@
 						s(Q());
 						const i = await k(r(), e, t);
 						let a = !1;
-						if (i.ok) s(X({
+						if (i.ok) s(Y({
 							collectionId: e,
 							newDescription: t
 						})), s(Object(d.f)({
@@ -516,7 +516,7 @@
 						})), a = !0;
 						else {
 							const e = i.error;
-							s(Y(e)), s(Object(d.f)({
+							s(X(e)), s(Object(d.f)({
 								kind: y.b.Error,
 								text: o.fbt._("Something went wrong. Just don't panic.", null, {
 									hk: "4Ck6Cm"
@@ -1035,7 +1035,7 @@
 					isCommentCountAnimation: N,
 					isCountAnimShadowTestEnabled: M,
 					isBlockingInterstitialEnabled: F
-				} = e, R = Object(i.d)(), A = p && !c && !x, L = c && !u, D = Object(O.a)(), B = Object(C.a)(h.hd) === h.od.Enabled, W = r.a.createElement(S, {
+				} = e, R = Object(i.d)(), A = p && !c && !x, L = c && !u, D = Object(O.a)(), B = Object(C.a)(h.jd) === h.qd.Enabled, W = r.a.createElement(S, {
 					hasModPostPerms: s,
 					isCountAnimShadowTestEnabled: !!M,
 					isChatPost: n,
@@ -1447,8 +1447,8 @@
 				J = s("./src/reddit/helpers/trackers/modTools.ts"),
 				z = s("./src/reddit/helpers/trackers/post.ts"),
 				Q = s("./src/reddit/icons/fonts/index.tsx"),
-				X = s("./src/reddit/icons/fonts/ModActions/index.tsx"),
-				Y = s("./src/reddit/icons/fonts/Share/index.tsx"),
+				Y = s("./src/reddit/icons/fonts/ModActions/index.tsx"),
+				X = s("./src/reddit/icons/fonts/Share/index.tsx"),
 				Z = s("./src/reddit/models/Media/index.ts"),
 				$ = s("./src/reddit/models/NewStructuredStyles/index.ts"),
 				ee = s("./src/reddit/models/PostCreationForm/index.ts"),
@@ -1481,7 +1481,7 @@
 				Ce = Object(l.a)(({
 					className: e,
 					...t
-				}) => r.a.createElement(X.a, be({}, t, {
+				}) => r.a.createElement(Y.a, be({}, t, {
 					className: Object(c.a)(ue.a.modActionsIcon, e),
 					style: {
 						color: Object(G.a)(Object(U.a)(t), $.a.actionIcon, $.b.actionIcon)
@@ -1571,7 +1571,7 @@
 						pageLayer: U,
 						post: G,
 						sendEvent: H,
-						showEditFlair: X,
+						showEditFlair: Y,
 						showEditPost: $,
 						subreddit: re,
 						toggleEditStartTimeModal: ce,
@@ -1615,13 +1615,13 @@
 						ye(), Re("report")
 					}, [ye, Re]), Be = Object(n.useMemo)(() => r.a.createElement(fe, {
 						"data-click-id": "share"
-					}, r.a.createElement(Y.a, {
+					}, r.a.createElement(X.a, {
 						className: ue.a.shareIcon
 					}), r.a.createElement("span", {
 						className: ue.a.shareText
 					}, o.fbt._("share", null, {
 						hk: "1eAfZg"
-					}))), []), We = !!p && Object(te.e)(p) === G.author, Ve = Object(ne.a)("View--Reports", G.id, de), Ue = Object(ne.a)(d.nc, G.id, de), Ge = Object(S.c)(G), He = we("-mod-actions-menu", G.id, j, E), qe = Object(S.a)(G), Ke = G.postId, Je = y === W.g.Large, ze = !C && Je || f && I || Pe, Qe = !(j || C || O), Xe = !(G.authorIsBlocked && Te) && p && G.isGildable && !(G.authorIsBlocked && Ie) && !(G.unrepliableReason && Te), Ye = G.media && G.media.type === Z.o.LIVEVIDEO, Ze = !!G.recommendationContext, $e = G.isSponsored || Object(m.u)(U);
+					}))), []), We = !!p && Object(te.e)(p) === G.author, Ve = Object(ne.a)("View--Reports", G.id, de), Ue = Object(ne.a)(d.nc, G.id, de), Ge = Object(S.c)(G), He = we("-mod-actions-menu", G.id, j, E), qe = Object(S.a)(G), Ke = G.postId, Je = y === W.g.Large, ze = !C && Je || f && I || Pe, Qe = !(j || C || O), Ye = !(G.authorIsBlocked && Te) && p && G.isGildable && !(G.authorIsBlocked && Ie) && !(G.unrepliableReason && Te), Xe = G.media && G.media.type === Z.o.LIVEVIDEO, Ze = !!G.recommendationContext, $e = G.isSponsored || Object(m.u)(U);
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(c.a)(ue.a.flatlistContainer, a)
 					}, r.a.createElement(g.a, {
@@ -1636,7 +1636,7 @@
 						numComments: G.numComments,
 						isCommentCountAnimation: me,
 						isCountAnimShadowTestEnabled: _
-					}), Xe && r.a.createElement(r.a.Fragment, null, r.a.createElement(q.a, {
+					}), Ye && r.a.createElement(r.a.Fragment, null, r.a.createElement(q.a, {
 						displayText: o.fbt._("Award", null, {
 							hk: "2fZCpE"
 						}),
@@ -1732,7 +1732,7 @@
 						dropdownId: He,
 						onClick: () => H(Object(z.h)(G.id, "post_mod_action_menu"))
 					}, r.a.createElement(Ce, null), r.a.createElement(F.a, {
-						canEditFlair: h && !!X,
+						canEditFlair: h && !!Y,
 						hasModFullPerms: x,
 						hasModPostPerms: f,
 						isOverlay: !!j,
@@ -1773,7 +1773,7 @@
 						postId: Ke,
 						sendEvent: H,
 						showEditPost: !!$,
-						showEditFlair: !!X,
+						showEditFlair: !!Y,
 						useFlatlistBreakpoints: e.useFlatlistBreakpoints,
 						toggleAddEventStartTimeModal: ce,
 						toggleEditStartTimeModal: ce
@@ -1805,7 +1805,7 @@
 						onFlairChanged: L
 					}), r.a.createElement("div", {
 						className: ue.a.flexSpacer
-					})), Qe && !Ye && r.a.createElement(v.a, {
+					})), Qe && !Xe && r.a.createElement(v.a, {
 						className: Object(c.a)(ue.a.liveDiscussionWrapper, {
 							[ue.a.large]: k
 						}),
@@ -2440,8 +2440,8 @@
 				J = S.a.div("DetailsContainer", G.a),
 				z = S.a.wrapped(C.a, "ButtonRow", G.a),
 				Q = S.a.div("CloseWrapper", G.a),
-				X = S.a.wrapped(x.a, "Close", G.a),
-				Y = S.a.div("Empty", G.a),
+				Y = S.a.wrapped(x.a, "Close", G.a),
+				X = S.a.div("Empty", G.a),
 				Z = S.a.img("EmptyImage", G.a),
 				$ = S.a.p("EmptyText", G.a),
 				ee = S.a.div("FilterWrapper", G.a),
@@ -2495,14 +2495,14 @@
 					document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				renderNoCollections() {
-					return i.a.createElement(Y, null, i.a.createElement(Z, {
+					return i.a.createElement(X, null, i.a.createElement(Z, {
 						src: H
 					}), i.a.createElement($, null, n.fbt._("Your collections will live here", null, {
 						hk: "FCxWg"
 					})))
 				}
 				renderNoFilterMatches() {
-					return i.a.createElement(Y, null, i.a.createElement($, null, n.fbt._("No collection matching filter", null, {
+					return i.a.createElement(X, null, i.a.createElement($, null, n.fbt._("No collection matching filter", null, {
 						hk: "2vawdK"
 					}), ";"))
 				}
@@ -2526,7 +2526,7 @@
 						hk: "3yKovS"
 					}), i.a.createElement(Q, {
 						onClick: this.close
-					}, i.a.createElement(X, {
+					}, i.a.createElement(Y, {
 						"data-redditstyle": !0
 					}))), i.a.createElement(ee, null, i.a.createElement(se, null), i.a.createElement(te, {
 						placeholder: n.fbt._("Find a collection", null, {
@@ -2914,8 +2914,8 @@
 				J = s("./src/reddit/helpers/trackers/post.ts"),
 				z = s("./src/reddit/models/Post/index.ts"),
 				Q = s("./src/reddit/models/Prediction/Tournament/index.ts"),
-				X = s("./src/reddit/models/Subreddit/index.ts"),
-				Y = s("./src/reddit/selectors/activeModalId.ts"),
+				Y = s("./src/reddit/models/Subreddit/index.ts"),
+				X = s("./src/reddit/selectors/activeModalId.ts"),
 				Z = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				$ = s("./src/reddit/selectors/posts.ts"),
 				ee = s("./src/reddit/selectors/subreddit.ts"),
@@ -3028,13 +3028,13 @@
 					}) => {
 						if (t.isSponsored) return !1;
 						if (!s) return !1;
-						const o = s.type === X.f.User;
+						const o = s.type === Y.f.User;
 						return Object(de.r)(e, s.name, o)
 					},
 					reportingRevampEnabled: se.a,
 					videoShareModalOpen: (e, {
 						postId: t
-					}) => Object(Y.a)(e) === Object(U.a)(t)
+					}) => Object(X.a)(e) === Object(U.a)(t)
 				}), (e, {
 					postId: t,
 					isOverlay: s,
@@ -3202,7 +3202,7 @@
 						toggleAddEventStartTimeModal: x,
 						toggleEditStartTimeModal: f,
 						userIsOp: O
-					} = e, C = e.currentUser && e.currentUser.isEmployee, v = Object(q.a)(e.post), g = e.post.belongsTo.type === E.a.PROFILE || Object(X.g)(e.subredditAboutInfo), _ = e.post.belongsTo.type === E.a.PROFILE || Object(X.i)(e.subredditAboutInfo), k = t && p.isGildable, j = Object(K.a)(e.post), w = r ? void 0 : d;
+					} = e, C = e.currentUser && e.currentUser.isEmployee, v = Object(q.a)(e.post), g = e.post.belongsTo.type === E.a.PROFILE || Object(Y.g)(e.subredditAboutInfo), _ = e.post.belongsTo.type === E.a.PROFILE || Object(Y.i)(e.subredditAboutInfo), k = t && p.isGildable, j = Object(K.a)(e.post), w = r ? void 0 : d;
 					return i.a.createElement("div", null, k && i.a.createElement(xe, {
 						className: this.getBreakpointClass(W.a.Gild),
 						displayText: o.fbt._("Give Award", null, {
@@ -4263,12 +4263,12 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: i.J,
-				experimentName: n.Nb
-			}), e => e === n.Xc)
+				experimentName: n.Ob
+			}), e => e === n.Yc)
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
 			e.exports = JSON.parse('{"id":"2d7f6b3b518a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.6936efd297ac1c025c4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.e9a322494398e653b764.js.map

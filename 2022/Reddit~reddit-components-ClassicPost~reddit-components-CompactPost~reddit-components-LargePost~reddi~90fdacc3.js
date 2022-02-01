@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.65533d2e1b41983014db.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.d31b3a0bb231889655a8.js
+// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -1766,7 +1766,7 @@
 						subreddit: n
 					} = e, {
 						isSponsored: r
-					} = t, s = Object(i.d)(), a = Object(V.a)(), c = Object(W.a)(m.hd) === m.od.Enabled, l = Object(i.e)(w.b), u = e => {
+					} = t, s = Object(i.d)(), a = Object(V.a)(), c = Object(W.a)(m.jd) === m.qd.Enabled, l = Object(i.e)(w.b), u = e => {
 						!l || t.media && Object(T.H)(t.media) || (e.preventDefault(), s(Object(E.ab)(Object(O.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement(X, {
@@ -3248,15 +3248,15 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.m
-					}) === r.Xc
+					}) === r.Yc
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.n
-					}) === r.Xc
+					}) === r.Yc
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.65533d2e1b41983014db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.d31b3a0bb231889655a8.js.map
