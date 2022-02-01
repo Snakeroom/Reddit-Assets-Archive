@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.6e4454a18b0fab13c2e7.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.a80bd16444adb660c9aa.js
+// Retrieved at 2/1/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -1323,14 +1323,14 @@
 				we = O.a.div("Container", ae.a),
 				ke = e => a.a.createElement("div", null, a.a.createElement("div", null, a.a.createElement(ue, {
 					to: `/user/${e.userName}/`
-				}, `u/${e.userName}`), e.user.isEmployee && a.a.createElement(T.a, {
+				}, e.title || e.userName), e.user.isEmployee && a.a.createElement(T.a, {
 					className: ae.a.adminIcon,
 					title: x.fbt._("Reddit admin", null, {
 						hk: "15wBTE"
 					})
 				}), e.user.isGold && a.a.createElement(I.a, {
 					to: "/premium"
-				}, a.a.createElement(le, null))), a.a.createElement(me, null, e.user.username && a.a.createElement(pe, null, e.user.username, a.a.createElement(be, null, "•")), a.a.createElement(pe, null, (e.user.createdUtc || e.user.created) && a.a.createElement(D.d, {
+				}, a.a.createElement(le, null))), a.a.createElement(me, null, a.a.createElement(pe, null, `u/${e.userName}`, a.a.createElement(be, null, "•")), a.a.createElement(pe, null, (e.user.createdUtc || e.user.created) && a.a.createElement(D.d, {
 					seconds: e.user.createdUtc || e.user.created
 				})))),
 				Pe = e => {
@@ -1399,82 +1399,84 @@
 						origin: d,
 						moderatorPermissions: l,
 						prefersReducedAnimations: u,
-						sendEvent: m,
-						showAwardKarma: p,
-						style: b,
-						subredditId: f,
-						topAwardIcon: h,
-						userName: v,
-						user: g,
-						userFlair: I,
-						userIsBanned: O,
-						userProfileStyles: y,
-						acceptChats: E,
-						isCommentAuthorBlocked: C
+						profile: m,
+						sendEvent: p,
+						showAwardKarma: b,
+						style: f,
+						subredditId: h,
+						topAwardIcon: v,
+						userName: g,
+						user: I,
+						userFlair: O,
+						userIsBanned: y,
+						userProfileStyles: E,
+						acceptChats: C,
+						isCommentAuthorBlocked: j
 					} = e;
-					if (!g) return a.a.createElement(we, {
-						style: b
+					if (!I) return a.a.createElement(we, {
+						style: f
 					});
-					const j = !!r && Object(A.e)(r) === v,
-						w = !!(null == r ? void 0 : r.snoovatarFullBodyAsset),
-						k = g.accountIcon || `${_.a.assetPath}/img/snoo_user_placeholder.png`,
-						S = l && l.flair,
-						T = l && l.access,
-						B = I && I.templateIds && I.templateIds.length > 0,
-						U = I && I.displaySettings && I.displaySettings.isEnabled,
+					const w = !!r && Object(A.e)(r) === g,
+						k = !!(null == r ? void 0 : r.snoovatarFullBodyAsset),
+						S = I.accountIcon || `${_.a.assetPath}/img/snoo_user_placeholder.png`,
+						T = l && l.flair,
+						B = l && l.access,
+						U = O && O.templateIds && O.templateIds.length > 0,
+						L = O && O.displaySettings && O.displaySettings.isEnabled,
 						{
-							awardedLastMonth: L
-						} = g,
-						D = !!g.snoovatarFullBodyAsset,
-						R = g.isNSFW && s;
-					let M;
-					return M = D ? !R && y && y.bannerBackgroundImage || void 0 : R ? `${_.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, a.a.createElement(we, {
+							awardedLastMonth: D
+						} = I,
+						R = !!I.snoovatarFullBodyAsset,
+						M = I.isNSFW && s;
+					let W;
+					return W = R ? !M && E && E.bannerBackgroundImage || void 0 : M ? `${_.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, a.a.createElement(we, {
 						className: t,
 						id: o,
-						style: b
-					}, !D && M && a.a.createElement(Ne, {
+						style: f
+					}, !R && W && a.a.createElement(Ne, {
 						style: {
-							backgroundImage: `url('${M}')`
+							backgroundImage: `url('${W}')`
 						}
-					}), a.a.createElement(Ce, null, D ? a.a.createElement(H.a, {
+					}), a.a.createElement(Ce, null, R ? a.a.createElement(H.a, {
 						isHovercard: !0,
-						bannerBackgroundImage: M,
+						bannerBackgroundImage: W,
 						compact: !0,
-						currentUserHasSnoovatar: w,
-						isEmployee: g.isEmployee,
-						isGold: g.isGold,
-						isNSFW: g.isNSFW,
-						isOwnProfile: j,
+						currentUserHasSnoovatar: k,
+						isEmployee: I.isEmployee,
+						isGold: I.isGold,
+						isNSFW: I.isNSFW,
+						isOwnProfile: w,
 						onClickSnoovatar: c,
 						prefersReducedAnimations: !!u,
-						snoovatarUrl: g.snoovatarFullBodyAsset,
-						title: null,
-						userCreated: g.created,
-						username: v,
+						snoovatarUrl: I.snoovatarFullBodyAsset,
+						title: null == m ? void 0 : m.title,
+						userCreated: I.created,
+						username: g,
 						url: `/user/${e.userName}/`
 					}) : a.a.createElement(fe, null, a.a.createElement(oe, {
-						iconUrl: k,
-						isNSFW: g.isNSFW,
-						userName: v
+						iconUrl: S,
+						isNSFW: I.isNSFW,
+						userName: g
 					}), a.a.createElement(ke, {
 						origin: d,
-						user: g,
-						userName: v
+						title: null == m ? void 0 : m.title,
+						user: I,
+						userName: g
 					})), a.a.createElement(Pe, {
-						showAwardKarma: p,
-						user: g
-					}), L && a.a.createElement(F.a, {
-						recentAwardings: L,
-						topAwardIcon: h,
-						username: v
-					}), i && !j && !O && E && !C && a.a.createElement(ce, {
+						showAwardKarma: b,
+						user: I
+					}), D && a.a.createElement(F.a, {
+						recentAwardings: D,
+						topAwardIcon: v,
+						username: g
+					}), i && !w && !y && C && !j && a.a.createElement(ce, {
 						contextId: n,
-						userId: g.id,
+						userId: I.id,
 						text: x.fbt._("Start Chat", null, {
 							hk: "2mfqRE"
 						}),
 						isFullWidth: !0
-					}), g.hasUserProfile && !O && !C && !j && g.enableFollowers && a.a.createElement(ie, {
+					}), I.hasUserProfile && !y && !j && !w && I.enableFollowers && a.a.createElement(ie, {
 						identifier: {
 							name: e.user.username,
 							type: "profile"
@@ -1482,21 +1484,21 @@
 						getEventFactory: e => Object(P.g)(e ? "unfollow" : "follow", n),
 						isFullWidth: !0,
 						small: !0
-					})), T && n && !j && f && a.a.createElement($, {
+					})), B && n && !w && h && a.a.createElement($, {
 						contextId: n,
-						subredditId: f,
-						sendEvent: m,
-						username: v
-					}), S && n && B && U && f && a.a.createElement(ne, {
+						subredditId: h,
+						sendEvent: p,
+						username: g
+					}), T && n && U && L && h && a.a.createElement(ne, {
 						contextId: n,
-						subredditId: f,
-						sendEvent: m,
-						username: v
+						subredditId: h,
+						sendEvent: p,
+						username: g
 					}), a.a.createElement(N.i, {
 						contextId: n,
-						subredditId: f,
-						user: g
-					}), !(T || i) && a.a.createElement(je, null))
+						subredditId: h,
+						user: I
+					}), !(B || i) && a.a.createElement(je, null))
 				},
 				Te = Object(C.a)(Se),
 				Be = e => {
@@ -1519,6 +1521,11 @@
 					}) : void 0,
 					origin: l.j,
 					prefersReducedAnimations: g.c,
+					profile: (e, {
+						userName: t
+					}) => Object(m.j)(e, {
+						profileName: t
+					}),
 					showAwardKarma: (e, t) => {
 						return Object(f.a)(e) === t.tooltipId
 					},
@@ -1565,6 +1572,7 @@
 				onHideTooltip: e.onHideTooltip,
 				origin: e.origin,
 				prefersReducedAnimations: e.prefersReducedAnimations,
+				profile: e.profile,
 				sendEvent: e.sendEvent,
 				showAwardKarma: e.showAwardKarma,
 				subredditId: e.subredditId,
@@ -4704,4 +4712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.6e4454a18b0fab13c2e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.a80bd16444adb660c9aa.js.map
