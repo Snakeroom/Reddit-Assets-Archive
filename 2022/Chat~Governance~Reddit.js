@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6c9fbe32e6f71b965c46.js
-// Retrieved at 2/2/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e764c5967d17c18be17c.js
+// Retrieved at 2/2/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("157249"),
+				buildNumber: Object(r.c)("157252"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1643828909"),
+				buildTimestamp: Object(r.b)("1643830518"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6045,14 +6045,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c5c9d52e56faa12b2cc4d315dd229593d7171c847-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c0b9bfa8f38bd3aa00be7a7670dd315f975ec677c-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "5c9d52e56faa12b2cc4d315dd229593d7171c847-production",
+						release: "0b9bfa8f38bd3aa00be7a7670dd315f975ec677c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6569,7 +6569,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "5c9d52e56faa12b2cc4d315dd229593d7171c847-production",
+						releaseClient: "0b9bfa8f38bd3aa00be7a7670dd315f975ec677c-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -7812,20 +7812,14 @@
 		"./src/lib/search/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return o
+				return s
 			})), i.d(t, "b", (function() {
-				return d
-			})), i.d(t, "c", (function() {
-				return a
+				return o
 			}));
 			var n = i("./node_modules/decode-uri-component/index.js"),
-				r = i.n(n),
-				s = i("./src/lib/addQueryParams/index.ts");
-			const o = (e = "") => r()(e),
-				d = (e = "") => encodeURIComponent(e),
-				a = (e, t, i) => {
-					return Object(s.a)(e, i).replace(/(\?|&)(q=)([^&]*)/, (e, i, n) => e ? `${i}${n}${t}` : e)
-				}
+				r = i.n(n);
+			const s = (e = "") => r()(e),
+				o = (e = "") => encodeURIComponent(e)
 		},
 		"./src/lib/sentry/index.ts": function(e, t, i) {
 			"use strict";
@@ -17653,32 +17647,34 @@
 				return y
 			})), i.d(t, "A", (function() {
 				return E
-			})), i.d(t, "i", (function() {
-				return T
 			})), i.d(t, "C", (function() {
+				return T
+			})), i.d(t, "i", (function() {
 				return S
 			})), i.d(t, "D", (function() {
 				return O
-			})), i.d(t, "y", (function() {
-				return I
 			})), i.d(t, "E", (function() {
+				return I
+			})), i.d(t, "y", (function() {
 				return R
 			})), i.d(t, "F", (function() {
 				return C
 			})), i.d(t, "G", (function() {
 				return F
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "H", (function() {
 				return j
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "w", (function() {
 				return N
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "h", (function() {
 				return A
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "f", (function() {
 				return x
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "m", (function() {
 				return D
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "l", (function() {
 				return P
+			})), i.d(t, "u", (function() {
+				return k
 			}));
 			const n = "ampcid",
 				r = "category",
@@ -17700,19 +17696,20 @@
 				v = "sort",
 				y = "t",
 				E = "ts",
-				T = "geo_filter",
-				S = "verified",
-				O = "verifiedEmail",
-				I = "source",
-				R = "v",
-				C = "v2",
-				F = "show_source",
-				j = "signup_survey",
-				N = "force_seo",
-				A = "feature",
-				x = ["ad", "adHash", "clickUrl", y, A],
-				D = ["after", "before"],
-				P = ["ad", a, "q", "restrict_sr", "sort", "t", "type", A, l, r, s, I, w]
+				T = "type",
+				S = "geo_filter",
+				O = "verified",
+				I = "verifiedEmail",
+				R = "source",
+				C = "v",
+				F = "v2",
+				j = "show_source",
+				N = "signup_survey",
+				A = "force_seo",
+				x = "feature",
+				D = ["ad", "adHash", "clickUrl", y, x],
+				P = ["after", "before"],
+				k = ["ad", a, p, g, v, y, T, x, l, r, s, R, w]
 		},
 		"./src/reddit/constants/postCollection.ts": function(e, t, i) {
 			"use strict";
@@ -46608,4 +46605,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6c9fbe32e6f71b965c46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e764c5967d17c18be17c.js.map
