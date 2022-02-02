@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.9462c3bcb7e4abfbc031.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.a1a27916e1ee35fee1f8.js
+// Retrieved at 2/2/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -820,8 +820,8 @@
 			}
 			var rt = [{
 					name: "hatefulContentThresholdAbuse",
-					title: () => s.fbt._("Abuse and harrasment", null, {
-						hk: "1F75Gw"
+					title: () => s.fbt._("Abuse and harassment", null, {
+						hk: "2bl8VK"
 					}),
 					descriptions: {
 						[N.a.Off]: () => s.fbt._("No content that contains potentially abusive language will be automatically held for review.", null, {
@@ -1768,4 +1768,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.9462c3bcb7e4abfbc031.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.a1a27916e1ee35fee1f8.js.map
