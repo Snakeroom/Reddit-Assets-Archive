@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.a8dbca1939e86ac39144.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.502ace205c16c34e8aac.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2876,14 +2876,14 @@
 			const Le = e => ({
 					screen: Object(Me.Y)(e),
 					profile: Object(Me.P)(e),
-					subreddit: Object(Me.hb)(e)
+					subreddit: Object(Me.gb)(e)
 				}),
 				Re = (e, t) => n => ({
 					action: "load",
 					noun: e,
 					post: Object(Me.G)(n, t),
 					source: Se.b.ChatView,
-					subreddit: Object(Me.hb)(n)
+					subreddit: Object(Me.gb)(n)
 				}),
 				Pe = e => t => ({
 					source: "chat_post",
@@ -3732,7 +3732,7 @@
 					blockedRedditorsPending: rt.b,
 					chatCommentLinks: G.g,
 					isPending: G.d,
-					liveCommentsWebsocket: vn.F,
+					liveCommentsWebsocket: vn.E,
 					moreCommentsLink: G.F
 				}),
 				xn = Object(c.b)(wn, (e, t) => ({
@@ -4571,7 +4571,7 @@
 					...Object(o.h)(e, t),
 					correlationId: Object(s.e)(s.a.GildingFlow, !1),
 					profile: r.P(e),
-					subreddit: r.hb(e)
+					subreddit: r.gb(e)
 				}),
 				d = e => t => ({
 					source: "post",
@@ -5340,4 +5340,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.a8dbca1939e86ac39144.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.502ace205c16c34e8aac.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.026e2535626456e5d2f6.js
-// Retrieved at 2/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.21d90998330f28f18ba6.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -904,7 +904,7 @@
 					source: "avatar",
 					action: "click",
 					noun: "try_this_look_post",
-					snoovatar: o.fb(e)
+					snoovatar: o.eb(e)
 				}),
 				u = e => ({
 					...o.m(e),
@@ -914,14 +914,14 @@
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: o.fb(e)
+					snoovatar: o.eb(e)
 				}),
 				_ = e => ({
 					...o.m(e),
 					source: "avatar_builder",
 					action: "click",
 					noun: "close",
-					snoovatar: o.fb(e)
+					snoovatar: o.eb(e)
 				}),
 				p = e => ({
 					source: "nav",
@@ -944,7 +944,7 @@
 					action: e,
 					noun: "community_spaces",
 					...o.m(a),
-					snoovatar: o.fb(a),
+					snoovatar: o.eb(a),
 					actionInfo: {
 						paneName: "avatar_community_spaces" + (t ? "_control" : "")
 					}
@@ -957,7 +957,7 @@
 					action: t,
 					noun: a,
 					...o.m(s),
-					snoovatar: o.fb(s)
+					snoovatar: o.eb(s)
 				}),
 				w = h("anniversary_achievement", "view", "anniversary_achievement"),
 				O = h("anniversary_achievement", "click", "close"),
@@ -978,7 +978,7 @@
 					actionInfo: {
 						pageType: "onboarding"
 					},
-					snoovatar: o.fb(s)
+					snoovatar: o.eb(s)
 				}),
 				I = e => N("onboarding", "click", e),
 				P = () => N("avatar", "view", "onboarding")
@@ -1356,4 +1356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.026e2535626456e5d2f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.21d90998330f28f18ba6.js.map

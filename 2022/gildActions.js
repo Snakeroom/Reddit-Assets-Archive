@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.1b7b83d06559a0fa4c6d.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.87ec34f9325bb6e7d694.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -120,9 +120,9 @@
 				M = s("./src/reddit/helpers/awards/message.ts"),
 				q = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				F = s("./src/reddit/helpers/isPost.ts"),
-				H = s("./src/reddit/helpers/trackers/gild.ts"),
-				Q = s("./src/telemetry/index.ts"),
-				z = s("./src/reddit/endpoints/profile/info.ts"),
+				Q = s("./src/reddit/helpers/trackers/gild.ts"),
+				z = s("./src/telemetry/index.ts"),
+				H = s("./src/reddit/endpoints/profile/info.ts"),
 				B = s("./src/reddit/actions/gold/awardKarma.ts"),
 				U = s("./src/reddit/actions/gold/constants.ts"),
 				Y = s("./src/reddit/actions/gold/econPurchase.ts");
@@ -205,7 +205,7 @@
 				}, se = Object(d.a)(U.s), re = (e, t) => {
 					const {
 						id: s
-					} = t, r = Object(F.a)(s) ? Object(P.H)(e, {
+					} = t, r = Object(F.a)(s) ? Object(P.G)(e, {
 						postId: s
 					}) : Object(v.b)(e, {
 						commentId: s
@@ -254,7 +254,7 @@
 					}
 					if (t(re(d, e)), w) {
 						const e = {
-								...z.a,
+								...H.a,
 								...w.karma
 							},
 							s = e.fromAwardsReceived + f,
@@ -278,7 +278,7 @@
 							hk: "2sIK9Y"
 						}),
 						K = g.coinPrice;
-					Object(Q.a)(Object(H.viewKarmaSuccessEvent)({
+					Object(z.a)(Object(Q.viewKarmaSuccessEvent)({
 						award: g,
 						awarderKarmaEarned: f,
 						awardeeKarmaEarned: 0,
@@ -312,7 +312,7 @@
 						if (e.length) {
 							const s = Math.max(900 - D, 10),
 								r = Math.max(300 - D, 10),
-								a = Object(F.a)(b) && Object(h.p)(Object(P.H)(d, {
+								a = Object(F.a)(b) && Object(h.p)(Object(P.G)(d, {
 									postId: b
 								}));
 							setTimeout(() => t(Object(c.e)({
@@ -425,4 +425,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.1b7b83d06559a0fa4c6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.87ec34f9325bb6e7d694.js.map

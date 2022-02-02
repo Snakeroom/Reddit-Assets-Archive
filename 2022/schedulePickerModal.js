@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/schedulePickerModal.c17975c96983ce22b89d.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/schedulePickerModal.8798de980de061555745.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["schedulePickerModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -1289,7 +1289,7 @@
 						source: s.postComposer,
 						action: i.c.CLICK,
 						noun: "event_create",
-						subreddit: u.hb(e)
+						subreddit: u.gb(e)
 					})
 				},
 				f = e => {
@@ -1298,7 +1298,7 @@
 						source: s.postComposer,
 						action: i.c.CLICK,
 						noun: "event_edit",
-						subreddit: u.hb(e),
+						subreddit: u.gb(e),
 						postEvent: y(e),
 						postComposer: x(e)
 					})
@@ -1352,7 +1352,7 @@
 					const n = {
 						source: s.eventComposer,
 						action: i.c.CLICK,
-						subreddit: u.hb(e)
+						subreddit: u.gb(e)
 					};
 					return t ? {
 						...n,
@@ -1564,4 +1564,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/schedulePickerModal.c17975c96983ce22b89d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/schedulePickerModal.8798de980de061555745.js.map

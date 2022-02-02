@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestButton.3c71d13b5eb03154add3.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestButton.ce3d77180125510ea453.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestButton"], {
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/index.m.less": function(t, e, s) {
@@ -87,14 +87,14 @@
 					source: t,
 					action: "click",
 					noun: "request_to_join_button",
-					subreddit: n.hb(e)
+					subreddit: n.gb(e)
 				}),
 				o = t => e => ({
 					...n.m(e),
 					source: t,
 					action: "click",
 					noun: "request_to_join_submit",
-					subreddit: n.hb(e)
+					subreddit: n.gb(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/restrictedCommunity.ts": function(t, e, s) {
@@ -110,16 +110,16 @@
 					source: t,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: n.hb(e)
+					subreddit: n.gb(e)
 				}),
 				o = t => e => ({
 					...n.m(e),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: t,
-					subreddit: n.hb(e)
+					subreddit: n.gb(e)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestButton.3c71d13b5eb03154add3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestButton.ce3d77180125510ea453.js.map

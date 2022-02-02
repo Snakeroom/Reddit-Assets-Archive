@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.c3dce1299c0ae1fea70c.js
-// Retrieved at 2/1/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.dd0abb1bdcc5fd6e656d.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -376,7 +376,7 @@
 				}
 			};
 			const L = {};
-			var H = (e = L, t) => {
+			var F = (e = L, t) => {
 					switch (t.type) {
 						case C.n: {
 							const {
@@ -391,7 +391,7 @@
 							return e
 					}
 				},
-				F = a("./node_modules/icepick/icepick.js");
+				H = a("./node_modules/icepick/icepick.js");
 			const R = {};
 			var D = (e = R, t) => {
 				switch (t.type) {
@@ -401,7 +401,7 @@
 							subredditId: a,
 							bannedUsers: r
 						} = t.payload;
-						return Object(F.merge)(e, {
+						return Object(H.merge)(e, {
 							[a]: r
 						})
 					}
@@ -410,7 +410,7 @@
 							subredditId: a,
 							userId: r
 						} = t.payload;
-						return Object(F.unsetIn)(e, [a, r])
+						return Object(H.unsetIn)(e, [a, r])
 					}
 					default:
 						return e
@@ -501,7 +501,7 @@
 					api: P,
 					fetchedTokens: M,
 					inContext: U,
-					loadMore: H,
+					loadMore: F,
 					models: D,
 					search: K,
 					userOrder: J
@@ -790,15 +790,15 @@
 				B = a("./src/reddit/models/Gold/TopAwarded/index.ts"),
 				U = a("./src/reddit/icons/fonts/Gift/index.tsx"),
 				L = a("./src/reddit/components/AwardBadges/AddAwardPill/index.m.less"),
-				H = a.n(L);
-			var F = s.a.memo(e => s.a.createElement("button", {
-					className: Object(S.a)(e.className, H.a.addAwardPill),
+				F = a.n(L);
+			var H = s.a.memo(e => s.a.createElement("button", {
+					className: Object(S.a)(e.className, F.a.addAwardPill),
 					name: r.fbt._("Give award", null, {
 						hk: "dQR06"
 					}),
 					onClick: e.onAddAward
 				}, s.a.createElement(U.a, {
-					className: H.a.giftIcon
+					className: F.a.giftIcon
 				}))),
 				R = a("./src/reddit/helpers/awards/getAwardItemId.ts"),
 				D = a("./src/higherOrderComponents/makeAsync.tsx"),
@@ -1137,7 +1137,7 @@
 							tooltipId: `${g}-${e.id}`,
 							triggerOverlayAnimation: this.handleTriggerAnimation
 						})
-					}), !a && s.a.createElement(F, {
+					}), !a && s.a.createElement(H, {
 						className: le.a.clickablePlaqueItem,
 						onAddAward: l
 					}), !d && s.a.createElement("div", {
@@ -1839,10 +1839,10 @@
 				B = a("./src/reddit/components/UserIcon/index.tsx"),
 				U = a("./src/reddit/hooks/useLocale.ts"),
 				L = a("./src/reddit/components/Econ/TopAwardersModal/TopAwardersList/Awarder/index.m.less"),
-				H = a.n(L);
+				F = a.n(L);
 			const {
-				fbt: F
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), R = (e, t) => t ? F._("{userName} (you)", [F._param("userName", e)], {
+				fbt: H
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), R = (e, t) => t ? H._("{userName} (you)", [H._param("userName", e)], {
 				hk: "vsIHp"
 			}) : e;
 			var D = function(e) {
@@ -1858,34 +1858,34 @@
 						score: l
 					} = t, m = Object(U.a)(), u = !c.profile;
 					return n.a.createElement("div", {
-						className: Object(i.a)(H.a.container, a)
+						className: Object(i.a)(F.a.container, a)
 					}, n.a.createElement("div", {
-						className: H.a.rank
+						className: F.a.rank
 					}, d || "-"), n.a.createElement(B.a, {
-						className: H.a.icon,
+						className: F.a.icon,
 						iconUrl: c.icon ? c.icon.url : void 0,
 						isNSFW: !!c.profile && c.profile.isNsfw,
 						userName: c.name
 					}), n.a.createElement("div", {
-						className: H.a.text
+						className: F.a.text
 					}, n.a.createElement("h3", {
-						className: H.a.name
+						className: F.a.name
 					}, u ? c.name : n.a.createElement(M.a, {
 						user: c.name,
 						tooltipId: `topawarder--userhovercard--${c.name}`,
 						sendHoverCardEvent: T.a
 					}, R(c.name, c.id === r))), l > 0 && n.a.createElement("span", {
-						className: H.a.score
+						className: F.a.score
 					}, Object(S.b)(l, {
 						locale: m,
 						type: P.b.Reddit,
 						currency: P.a
 					}))), o && n.a.createElement("button", {
-						className: H.a.cta,
+						className: F.a.cta,
 						onClick: s
 					}, n.a.createElement(C.a, {
-						className: H.a.giftIcon
-					}), F._("Award", null, {
+						className: F.a.giftIcon
+					}), H._("Award", null, {
 						hk: "4BW9Zq"
 					})))
 				},
@@ -2004,7 +2004,7 @@
 					pending: r,
 					post: null
 				};
-				const s = Object(v.H)(e, {
+				const s = Object(v.G)(e, {
 						postId: t
 					}),
 					o = Object(w.b)(e, t),
@@ -2271,8 +2271,8 @@
 				B = a("./src/reddit/models/Gold/Award.ts"),
 				U = a("./src/reddit/models/User/index.ts"),
 				L = a("./src/reddit/components/HumanDate/index.tsx"),
-				H = a("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
-				F = a("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
+				F = a("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
+				H = a("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
 				R = a("./src/reddit/actions/inContextModeration.ts"),
 				D = a("./src/reddit/actions/modal.ts"),
 				G = a("./src/reddit/actions/subredditModeration/ban.ts"),
@@ -2538,7 +2538,7 @@
 						style: {
 							backgroundImage: `url('${G}')`
 						}
-					}), n.a.createElement(Ce, null, R ? n.a.createElement(F.a, {
+					}), n.a.createElement(Ce, null, R ? n.a.createElement(H.a, {
 						isHovercard: !0,
 						bannerBackgroundImage: G,
 						compact: !0,
@@ -2566,7 +2566,7 @@
 					})), n.a.createElement(ke, {
 						showAwardKarma: h,
 						user: A
-					}), L && n.a.createElement(H.a, {
+					}), L && n.a.createElement(F.a, {
 						recentAwardings: L,
 						topAwardIcon: w,
 						username: v
@@ -3771,7 +3771,7 @@
 					...Object(n.h)(e, t),
 					correlationId: Object(r.e)(r.a.GildingFlow, !1),
 					profile: o.P(e),
-					subreddit: o.hb(e)
+					subreddit: o.gb(e)
 				}),
 				i = e => t => ({
 					source: "post",
@@ -4148,4 +4148,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.c3dce1299c0ae1fea70c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.dd0abb1bdcc5fd6e656d.js.map

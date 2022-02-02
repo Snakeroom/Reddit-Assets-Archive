@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.ffa1b1489b9477ad140e.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.94f3dfb2a34d8c0df604.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -3017,7 +3017,7 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(s.hb)(t)
+					subreddit: Object(s.gb)(t)
 				}),
 				v = () => e => ({
 					...Object(s.m)(e),
@@ -3048,14 +3048,14 @@
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(s.hb)(e)
+					subreddit: Object(s.gb)(e)
 				}),
 				j = () => e => ({
 					...Object(s.m)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(s.hb)(e)
+					subreddit: Object(s.gb)(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, r) {
@@ -3101,7 +3101,7 @@
 				s = r("./src/reddit/selectors/telemetry.ts");
 			const i = e => ({
 					...s.m(e),
-					subreddit: s.hb(e),
+					subreddit: s.gb(e),
 					userSubreddit: s.qb(e)
 				}),
 				a = () => e => ({
@@ -3712,4 +3712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.ffa1b1489b9477ad140e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.94f3dfb2a34d8c0df604.js.map

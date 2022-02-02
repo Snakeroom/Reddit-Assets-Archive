@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.1ea6b18d0d227b9c783f.js
-// Retrieved at 2/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.664b69bfb9733b518ee1.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -223,7 +223,7 @@
 							commentsPageKey: t,
 							draftKey: n
 						}));
-						const s = Object(H.H)(f(), {
+						const s = Object(H.G)(f(), {
 							postId: e
 						});
 						u(Object(m.z)(s, p.a.CommentSubmitted))
@@ -1523,7 +1523,7 @@
 						action: o.c.CLICK,
 						...Object(d.m)(e),
 						screen: Object(d.Y)(e),
-						subreddit: Object(d.hb)(e),
+						subreddit: Object(d.gb)(e),
 						post: t ? Object(d.G)(e, t) : null,
 						profile: Object(d.P)(e),
 						correlationId: Object(s.c)(s.a.CommentComposer)
@@ -1581,7 +1581,7 @@
 					action: "click",
 					...Object(d.m)(t),
 					screen: Object(d.Y)(t),
-					subreddit: Object(d.hb)(t),
+					subreddit: Object(d.gb)(t),
 					post: Object(d.G)(t, e)
 				}), j = e => Object(i.a)({
 					noun: "edit",
@@ -1650,4 +1650,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.1ea6b18d0d227b9c783f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.664b69bfb9733b518ee1.js.map

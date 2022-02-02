@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.66d7a3ec2efbf3ed3557.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4d19056a7e62696bc6ed.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -169,17 +169,17 @@
 					rootMargin: "2000px 0px 2000px 0px"
 				});
 				Object(c.a)(y, W, U.current);
-				const H = Object(r.a)(t);
+				const G = Object(r.a)(t);
 				Object(s.useEffect)(() => {
-					if (void 0 !== H && H !== t) {
-						const e = t - H;
+					if (void 0 !== G && G !== t) {
+						const e = t - G;
 						D.current ? k.current(e) : M.current += e
 					}
 					return () => {
 						clearTimeout(P.current), clearTimeout(R.current), clearTimeout(F.current)
 					}
 				}, [t]);
-				const G = Object(s.useCallback)(() => g(!0), [g]),
+				const H = Object(s.useCallback)(() => g(!0), [g]),
 					K = 0 === S.length,
 					q = _ || K,
 					Y = Object(s.useRef)(((e, t) => `${t}_${e}_count_anim`)(f, n));
@@ -199,7 +199,7 @@
 						"aria-hidden": !0,
 						className: l.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: G,
+						onTransitionEnd: H,
 						style: j && S.length > 0 && !_ ? {
 							transform: `translateY(-${O&&n.length>1?100:100*(n.length-1)}%)`,
 							transitionDuration: `${(O?500:750)/1e3}s`
@@ -1440,7 +1440,7 @@
 						isReadingIndicatorsExperimentEnabled: t,
 						postId: n
 					}) => {
-						if (t && n) return Object(E.H)(e, {
+						if (t && n) return Object(E.G)(e, {
 							postId: n
 						})
 					}
@@ -1540,7 +1540,7 @@
 			const a = e => ({
 					profile: c.P(e),
 					screen: c.Y(e),
-					subreddit: c.hb(e)
+					subreddit: c.gb(e)
 				}),
 				d = (e, t, n) => s => ({
 					source: Object(i.i)(s) || n ? "post_lightbox" : "post_detail",
@@ -1616,7 +1616,7 @@
 			const r = e => ({
 					screen: Object(o.Y)(e),
 					profile: Object(o.P)(e),
-					subreddit: Object(o.hb)(e),
+					subreddit: Object(o.gb)(e),
 					userSubreddit: Object(o.qb)(e)
 				}),
 				i = e => t => ({
@@ -1692,7 +1692,7 @@
 					action: "click",
 					noun: e,
 					post: Object(o.G)(n, t),
-					subreddit: Object(o.kb)(n, t)
+					subreddit: Object(o.jb)(n, t)
 				}),
 				f = (e, t) => n => ({
 					source: "comment",
@@ -1700,14 +1700,14 @@
 					noun: e,
 					comment: Object(o.h)(n, t),
 					post: Object(o.G)(n, t),
-					subreddit: Object(o.kb)(n, t)
+					subreddit: Object(o.jb)(n, t)
 				}),
 				x = (e, t, n, s) => r => ({
 					source: e ? "comment" : "post",
 					action: "click",
 					noun: t ? "unsnooze_reporter" : "snooze_reporter",
 					post: Object(o.G)(r, n),
-					subreddit: Object(o.kb)(r, n),
+					subreddit: Object(o.jb)(r, n),
 					actionInfo: {
 						reason: s
 					},
@@ -1788,7 +1788,7 @@
 					const n = {
 						...a.m(e),
 						action: r.c.CLICK,
-						subreddit: a.hb(e)
+						subreddit: a.gb(e)
 					};
 					return void 0 === t ? n : {
 						...n,
@@ -1823,7 +1823,7 @@
 				}),
 				x = e => ({
 					...a.m(e),
-					subreddit: a.hb(e),
+					subreddit: a.gb(e),
 					source: s.postComposer
 				}),
 				h = (e, t) => n => ({
@@ -1856,7 +1856,7 @@
 				}),
 				_ = e => t => ({
 					...a.m(t),
-					subreddit: a.hb(t),
+					subreddit: a.gb(t),
 					source: s.collectionComposer,
 					action: r.c.CLICK,
 					noun: o.collectionDelete,
@@ -1925,7 +1925,7 @@
 						source: s.postComposer,
 						action: c.c.CLICK,
 						noun: "event_create",
-						subreddit: u.hb(e)
+						subreddit: u.gb(e)
 					})
 				},
 				v = e => {
@@ -1934,7 +1934,7 @@
 						source: s.postComposer,
 						action: c.c.CLICK,
 						noun: "event_edit",
-						subreddit: u.hb(e),
+						subreddit: u.gb(e),
 						postEvent: C(e),
 						postComposer: j(e)
 					})
@@ -1988,7 +1988,7 @@
 					const n = {
 						source: s.eventComposer,
 						action: c.c.CLICK,
-						subreddit: u.hb(e)
+						subreddit: u.gb(e)
 					};
 					return t ? {
 						...n,
@@ -2023,7 +2023,7 @@
 					...r.m(e)
 				}),
 				c = e => t => {
-					const n = r.hb(t),
+					const n = r.gb(t),
 						i = Object(o.x)(t, {
 							subredditId: null == n ? void 0 : n.id
 						}),
@@ -2066,7 +2066,7 @@
 						value: e ? "0" : "1",
 						oldValue: e ? "1" : "0"
 					},
-					subreddit: r.hb(t),
+					subreddit: r.gb(t),
 					...r.m(t)
 				})
 		},
@@ -2256,7 +2256,7 @@
 					}
 				},
 				l = (e, t) => {
-					const n = Object(i.H)(e, {
+					const n = Object(i.G)(e, {
 						postId: t
 					});
 					return !(!n || n.isSponsored) && (Object(c.ub)(e, {
@@ -2384,9 +2384,9 @@
 					experimentEligibilitySelector: r.a
 				}),
 				a = (e, t) => t === o.ve.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
-				d = Object(s.a)(i.H, c, (e, t) => a(e, t));
+				d = Object(s.a)(i.G, c, (e, t) => a(e, t));
 			Object(s.a)((e, t) => t, c, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.66d7a3ec2efbf3ed3557.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4d19056a7e62696bc6ed.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.27d711cae4c5995db0a4.js
-// Retrieved at 2/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.d9109b8c4f0113fea111.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "ReadingIndicator"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1012,7 +1012,7 @@
 							commentsPageKey: t,
 							draftKey: o
 						}));
-						const s = Object(V.H)(b(), {
+						const s = Object(V.G)(b(), {
 							postId: e
 						});
 						u(Object(l.z)(s, f.a.CommentSubmitted))
@@ -1489,7 +1489,7 @@
 					apiContext: s
 				}) => {
 					const r = n(),
-						i = Object(w.H)(r, {
+						i = Object(w.G)(r, {
 							postId: e
 						});
 					t ? (o(Object(x.a)(i.permalink)), Object(C.e)(e, "edit")(r)) : Object(E.d)(e, "edit")(r);
@@ -2726,7 +2726,7 @@
 					source: "toxicity_modal",
 					...b.m(e),
 					screen: b.Y(e),
-					subreddit: b.hb(e)
+					subreddit: b.gb(e)
 				}),
 				_ = e => t => ({
 					action: h.c.VIEW,
@@ -3127,7 +3127,7 @@
 					noun: e
 				}),
 				F = e => ({
-					subreddit: Object(S.hb)(e),
+					subreddit: Object(S.gb)(e),
 					userSubreddit: Object(S.qb)(e)
 				}),
 				D = e => t => ({
@@ -3241,8 +3241,8 @@
 						});
 						return !!o && o.posts
 					},
-					post: N.H,
-					postPermalink: N.G,
+					post: N.G,
+					postPermalink: N.F,
 					showCommentHighlighter: (e, {
 						postId: t
 					}) => {
@@ -3250,7 +3250,7 @@
 							n = !!Object(z.l)(e, {
 								postId: t
 							}),
-							s = Object(N.H)(e, {
+							s = Object(N.G)(e, {
 								postId: t
 							});
 						return (n || o) && !!s && !!s.previousVisits && s.previousVisits.length > 0
@@ -4916,7 +4916,7 @@
 					reason: t.toString()
 				}),
 				post: l.G(o, e),
-				subreddit: l.hb(o)
+				subreddit: l.gb(o)
 			}))();
 			var m = o("./src/reddit/hooks/useClassNameOnMount.ts"),
 				p = o("./src/reddit/hooks/useTracking.ts"),
@@ -5188,7 +5188,7 @@
 						action: n.c.CLICK,
 						...Object(c.m)(e),
 						screen: Object(c.Y)(e),
-						subreddit: Object(c.hb)(e),
+						subreddit: Object(c.gb)(e),
 						post: t ? Object(c.G)(e, t) : null,
 						profile: Object(c.P)(e),
 						correlationId: Object(s.c)(s.a.CommentComposer)
@@ -5246,7 +5246,7 @@
 					action: "click",
 					...Object(c.m)(t),
 					screen: Object(c.Y)(t),
-					subreddit: Object(c.hb)(t),
+					subreddit: Object(c.gb)(t),
 					post: Object(c.G)(t, e)
 				}), _ = e => Object(d.a)({
 					noun: "edit",
@@ -5279,14 +5279,14 @@
 					source: e,
 					action: "click",
 					noun: "request_to_join_button",
-					subreddit: n.hb(t)
+					subreddit: n.gb(t)
 				}),
 				r = e => t => ({
 					...n.m(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_submit",
-					subreddit: n.hb(t)
+					subreddit: n.gb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/restrictedCommunity.ts": function(e, t, o) {
@@ -5302,14 +5302,14 @@
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: n.hb(t)
+					subreddit: n.gb(t)
 				}),
 				r = e => t => ({
 					...n.m(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: n.hb(t)
+					subreddit: n.gb(t)
 				})
 		},
 		"./src/reddit/hooks/useClassNameOnMount.ts": function(e, t, o) {
@@ -5468,4 +5468,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.27d711cae4c5995db0a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.d9109b8c4f0113fea111.js.map

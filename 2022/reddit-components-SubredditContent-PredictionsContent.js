@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.f6fbc6949a1d44e4059c.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.cff20ef9803653e3f8ab.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -156,14 +156,14 @@
 				O = n("./src/reddit/models/Toast/index.ts"),
 				k = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				E = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				y = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx");
+				g = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx");
 
-			function g({
+			function y({
 				isEnding: e,
 				onClose: t,
 				onConfirm: n
 			}) {
-				return c.a.createElement(y.a, {
+				return c.a.createElement(g.a, {
 					titleText: o.fbt._("End Tournament?", null, {
 						hk: "3tTAeq"
 					}),
@@ -228,7 +228,7 @@
 					n = Object(x.a)(),
 					[u, m] = Object(r.useState)(""),
 					[b, h] = Object(r.useState)(!1),
-					[y, C] = Object(r.useState)(!1),
+					[g, C] = Object(r.useState)(!1),
 					[v, P] = Object(r.useState)(!1),
 					[T, N] = Object(r.useState)(null),
 					{
@@ -323,8 +323,8 @@
 					onClick: M
 				}, o.fbt._("End", null, {
 					hk: "HWN7f"
-				})), v && c.a.createElement(g, {
-					isEnding: y,
+				})), v && c.a.createElement(y, {
+					isEnding: g,
 					onClose: () => {
 						P(!1)
 					},
@@ -385,9 +385,9 @@
 			})), n.d(t, "k", (function() {
 				return E
 			})), n.d(t, "i", (function() {
-				return y
-			})), n.d(t, "r", (function() {
 				return g
+			})), n.d(t, "r", (function() {
+				return y
 			})), n.d(t, "f", (function() {
 				return C
 			}));
@@ -513,7 +513,7 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(r.hb)(t)
+					subreddit: Object(r.gb)(t)
 				}),
 				O = () => e => ({
 					...Object(r.m)(e),
@@ -533,27 +533,27 @@
 					action: "click",
 					noun: "start_tournament"
 				}),
-				y = () => e => ({
+				g = () => e => ({
 					...Object(r.m)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
-				g = () => e => ({
+				y = () => e => ({
 					...Object(r.m)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(r.hb)(e)
+					subreddit: Object(r.gb)(e)
 				}),
 				C = () => e => ({
 					...Object(r.m)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(r.hb)(e)
+					subreddit: Object(r.gb)(e)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.f6fbc6949a1d44e4059c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.cff20ef9803653e3f8ab.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.3e19bba3ef0b4a4621e5.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.2d213ba0040ab230f8eb.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1635,7 +1635,7 @@
 					action: "click",
 					noun: "invite_via_email",
 					...s.m(t),
-					subreddit: s.hb(t),
+					subreddit: s.gb(t),
 					actionInfo: s.c(t),
 					correlationId: Object(a.e)(a.a.SubredditCreation, !1)
 				}),
@@ -1644,7 +1644,7 @@
 					action: "view",
 					noun: "modal",
 					...s.m(e),
-					subreddit: s.hb(e),
+					subreddit: s.gb(e),
 					actionInfo: s.c(e),
 					correlationId: Object(a.c)(a.a.SubredditCreation)
 				}),
@@ -1653,7 +1653,7 @@
 					action: "click",
 					noun: e,
 					...s.m(t),
-					subreddit: s.hb(t),
+					subreddit: s.gb(t),
 					actionInfo: s.c(t),
 					correlationId: Object(a.c)(a.a.SubredditCreation)
 				})
@@ -1886,4 +1886,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.3e19bba3ef0b4a4621e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.2d213ba0040ab230f8eb.js.map

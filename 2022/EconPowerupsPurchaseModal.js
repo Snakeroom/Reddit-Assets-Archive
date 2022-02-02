@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.9abd003fff429d4ebf36.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.74a2d3f410552dfaa7aa.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2683,7 +2683,7 @@
 			const c = e => ({
 					...a.m(e),
 					screen: a.Y(e),
-					subreddit: a.hb(e),
+					subreddit: a.gb(e),
 					userSubreddit: a.qb(e)
 				}),
 				i = e => ({
@@ -2779,7 +2779,7 @@
 					noun: r,
 					goldPurchase: i(e),
 					profile: a.Q(n, t),
-					subreddit: a.ib(n, t)
+					subreddit: a.hb(n, t)
 				}),
 				h = (e, t) => b(e, t, "disable_in_community"),
 				g = (e, t) => b(e, t, "enable_in_community")
@@ -2870,7 +2870,7 @@
 					correlationId: Object(i.b)(e) || Object(s.e)(s.a.GildingFlow, !1),
 					post: t ? a.G(e, t) : void 0,
 					screen: a.Y(e),
-					subreddit: a.hb(e),
+					subreddit: a.gb(e),
 					userSubreddit: a.qb(e)
 				}),
 				m = e => t => ({
@@ -3102,7 +3102,7 @@
 						correlationId: c.r(e) || Object(m.e)(m.a.GoldPayment, !1),
 						post: r ? i.G(e, r) : null,
 						screen: i.Y(e),
-						subreddit: r ? i.hb(e) : null,
+						subreddit: r ? i.gb(e) : null,
 						goldPurchase: {
 							...h ? Object(f.a)(h) : null,
 							type: y,
@@ -3727,4 +3727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.9abd003fff429d4ebf36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.74a2d3f410552dfaa7aa.js.map

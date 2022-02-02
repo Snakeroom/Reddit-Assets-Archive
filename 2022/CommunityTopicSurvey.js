@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.3be477db84b3d0481034.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.5c6016843b24ecf127e8.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -937,7 +937,7 @@
 					const r = Object(d.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
 						post: l.G(e, n.id),
-						subreddit: l.ib(e, r),
+						subreddit: l.hb(e, r),
 						...p(e, t)
 					}
 				},
@@ -950,7 +950,7 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: r.SUBREDDIT_HOVERCARD,
-					subreddit: l.jb(t, e),
+					subreddit: l.ib(t, e),
 					screen: l.Y(t)
 				}),
 				h = (e, t) => n => ({
@@ -959,7 +959,7 @@
 					action: o.c.VIEW,
 					noun: r.ITEM_POST,
 					post: l.G(n, t),
-					subreddit: l.jb(n, e),
+					subreddit: l.ib(n, e),
 					screen: l.Y(n)
 				}),
 				g = (e, t) => n => ({
@@ -968,26 +968,26 @@
 					action: o.c.CLICK,
 					noun: r.ITEM_POST,
 					post: l.G(n, t),
-					subreddit: l.jb(n, e),
+					subreddit: l.ib(n, e),
 					screen: l.Y(n)
 				}),
 				S = e => t => ({
 					...b(t),
-					subreddit: l.ib(t, e) || null,
+					subreddit: l.hb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT
 				}),
 				E = e => t => ({
 					...b(t),
-					subreddit: l.ib(t, e) || null,
+					subreddit: l.hb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				v = e => t => ({
 					...b(t),
-					subreddit: l.ib(t, e) || null,
+					subreddit: l.hb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -1088,4 +1088,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.3be477db84b3d0481034.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.5c6016843b24ecf127e8.js.map

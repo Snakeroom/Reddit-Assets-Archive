@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.6bcee50f5e0603f9fd79.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.08400d73806b660b4220.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsEmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx": function(e, t, o) {
@@ -225,7 +225,7 @@
 									...t.actionInfo,
 									reason: this.state.emoteBeingTyped ? "type" : "click"
 								},
-								subreddit: y.hb(e)
+								subreddit: y.gb(e)
 							}
 						})
 					}, this.onEmoteClick = e => {
@@ -388,7 +388,7 @@
 								action: "click",
 								noun: "emoji_tooltip_open_learn_more",
 								...y.m(e),
-								subreddit: y.hb(e)
+								subreddit: y.gb(e)
 							}))
 						}
 					}, i.fbt._("Get More Emotes", null, {
@@ -495,4 +495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.6bcee50f5e0603f9fd79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.08400d73806b660b4220.js.map

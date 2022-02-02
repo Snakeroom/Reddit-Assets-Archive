@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.9288b6ec2ff9e3472854.js
-// Retrieved at 1/24/2022, 7:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.8dce59cc3365686ec710.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-ChangePredictionOutcomeModal"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, n) {
@@ -169,7 +169,7 @@
 					var e, t;
 					const n = Object(d.d)(),
 						c = Object(b.a)(),
-						o = Object(d.e)(h.S),
+						o = Object(d.e)(h.R),
 						i = () => n(Object(l.g)(m.a.ECON_PREDICTIONS_CHANGE_OUTCOME));
 					return s.a.createElement(j, {
 						withOverlay: !0,
@@ -204,7 +204,7 @@
 					...Object(c.m)(e),
 					post: Object(c.G)(e, t),
 					predictions: Object(c.M)(e, t),
-					subreddit: Object(c.hb)(e)
+					subreddit: Object(c.gb)(e)
 				}),
 				i = e => t => ({
 					...o(t, e),
@@ -258,4 +258,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.9288b6ec2ff9e3472854.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.8dce59cc3365686ec710.js.map

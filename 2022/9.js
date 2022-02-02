@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/9.691815a08068f5a18f12.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/9.f77de76d39c35db4e917.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[9], {
 		"./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/index.ts": function(e, t, r) {
@@ -40,7 +40,7 @@
 					u = Object(i.c)(s);
 				let c, m;
 				return r.only && (c = f[r.only]), r.after && (m = function(e, t) {
-					const r = Object(n.a)(t) ? Object(a.H)(e, {
+					const r = Object(n.a)(t) ? Object(a.G)(e, {
 						postId: t
 					}) : Object(d.b)(e, {
 						commentId: t
@@ -151,4 +151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/9.691815a08068f5a18f12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/9.f77de76d39c35db4e917.js.map

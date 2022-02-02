@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.93c26b30fe08fd5daa3b.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.81a46b0f9adf1c8fbadc.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1293,7 +1293,7 @@
 					loadTimes: V.f,
 					metadata: V.h,
 					mutedInFeed: V.i,
-					postUrl: L.J,
+					postUrl: L.I,
 					started: V.k,
 					volume: M.d
 				}), (e, {
@@ -2422,10 +2422,10 @@
 						style: t
 					}, e.children)
 				},
-				L = Object(o.b)(() => Object(c.a)(E.G, C.cb, (e, {
+				L = Object(o.b)(() => Object(c.a)(E.F, C.cb, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(E.b)(e, s) : null, y.a, S.c, E.H, (e, t, s, n, i, r) => ({
+				}) => t && s ? Object(E.b)(e, s) : null, y.a, S.c, E.G, (e, t, s, n, i, r) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -3574,7 +3574,7 @@
 									...s.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: p.hb(t)
+								subreddit: p.gb(t)
 							}
 						})
 					}
@@ -4207,7 +4207,7 @@
 					const n = Object(a.b)(s) ? s.belongsTo.id : s.subredditId;
 					return {
 						post: u.G(e, s.id),
-						subreddit: u.ib(e, n),
+						subreddit: u.hb(e, n),
 						...p(e, t)
 					}
 				},
@@ -4220,7 +4220,7 @@
 					source: "global",
 					action: r.c.VIEW,
 					noun: n.SUBREDDIT_HOVERCARD,
-					subreddit: u.jb(t, e),
+					subreddit: u.ib(t, e),
 					screen: u.Y(t)
 				}),
 				g = (e, t) => s => ({
@@ -4229,7 +4229,7 @@
 					action: r.c.VIEW,
 					noun: n.ITEM_POST,
 					post: u.G(s, t),
-					subreddit: u.jb(s, e),
+					subreddit: u.ib(s, e),
 					screen: u.Y(s)
 				}),
 				x = (e, t) => s => ({
@@ -4238,26 +4238,26 @@
 					action: r.c.CLICK,
 					noun: n.ITEM_POST,
 					post: u.G(s, t),
-					subreddit: u.jb(s, e),
+					subreddit: u.ib(s, e),
 					screen: u.Y(s)
 				}),
 				y = e => t => ({
 					...h(t),
-					subreddit: u.ib(t, e) || null,
+					subreddit: u.hb(t, e) || null,
 					source: i.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: n.HEADER_SUBREDDIT
 				}),
 				E = e => t => ({
 					...h(t),
-					subreddit: u.ib(t, e) || null,
+					subreddit: u.hb(t, e) || null,
 					source: i.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				S = e => t => ({
 					...h(t),
-					subreddit: u.ib(t, e) || null,
+					subreddit: u.hb(t, e) || null,
 					source: i.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -5007,4 +5007,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.93c26b30fe08fd5daa3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.81a46b0f9adf1c8fbadc.js.map

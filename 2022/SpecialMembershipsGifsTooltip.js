@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.844f357c4de12121e181.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.270b295ae4dab8e618f0.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -211,7 +211,7 @@
 							action: "change",
 							noun: "gif_tooltip_search",
 							correlationId: this.props.correlationId,
-							subreddit: this.props.subreddit.id ? v.ib(t, this.props.subreddit.id) : void 0,
+							subreddit: this.props.subreddit.id ? v.hb(t, this.props.subreddit.id) : void 0,
 							post: v.i(t),
 							search: {
 								query: e
@@ -238,7 +238,7 @@
 								action: "select",
 								noun: "gif_tooltip_result",
 								correlationId: this.props.correlationId,
-								subreddit: this.props.subreddit.id ? v.ib(e, this.props.subreddit.id) : void 0,
+								subreddit: this.props.subreddit.id ? v.hb(e, this.props.subreddit.id) : void 0,
 								post: v.i(e),
 								actionInfo: {
 									...t.actionInfo,
@@ -530,7 +530,7 @@
 						source: "meta",
 						action: e,
 						noun: "transaction",
-						subreddit: Object(i.ib)(r, s),
+						subreddit: Object(i.hb)(r, s),
 						actionInfo: {
 							settingValue: t,
 							reason: n
@@ -546,7 +546,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? Object(i.ib)(s, t) : void 0,
+					subreddit: t ? Object(i.hb)(s, t) : void 0,
 					correlationId: e,
 					...Object(i.m)(s)
 				}),
@@ -554,7 +554,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_upsell",
-					subreddit: t ? Object(i.ib)(s, t) : void 0,
+					subreddit: t ? Object(i.hb)(s, t) : void 0,
 					correlationId: e,
 					...Object(i.m)(s)
 				})
@@ -576,4 +576,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.844f357c4de12121e181.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.270b295ae4dab8e618f0.js.map

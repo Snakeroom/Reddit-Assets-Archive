@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.71208f7f559024091dab.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.fe5ae464672d658ace9e.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -1452,12 +1452,12 @@
 					measureScrollFPS: h.d.measureScrollFPS,
 					layout: (e, t) => t.forcedLayout || Object(p.R)(e, t),
 					loadMore: _.g,
-					postsById: y.T,
+					postsById: y.S,
 					postIds: Object(s.a)((e, {
 						listingKey: t,
 						listingName: n,
 						inSubredditOrProfile: r
-					}) => Object(y.E)(e, t, n, r)),
+					}) => Object(y.D)(e, t, n, r)),
 					subredditsById: S.Y,
 					viewportDataLoaded: T.a,
 					pageReferrer: p.U,
@@ -1978,10 +1978,10 @@
 					return t !== c && t !== i && (!(i + n > t) && (!(t + n > c) && !((e, t, n) => {
 						const r = n[t - 1],
 							o = n[t],
-							i = o && Object(s.H)(e, {
+							i = o && Object(s.G)(e, {
 								postId: r
 							}) || null,
-							c = o && Object(s.H)(e, {
+							c = o && Object(s.G)(e, {
 								postId: o
 							}) || null;
 						return i && i.isSponsored || c && c.isSponsored
@@ -1994,7 +1994,7 @@
 				}) => {
 					const r = t.slice().sort();
 					let o = -1;
-					const i = Object(s.A)(e, {
+					const i = Object(s.z)(e, {
 							listingKey: n.listingKey
 						}),
 						c = [];
@@ -2038,4 +2038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.71208f7f559024091dab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.fe5ae464672d658ace9e.js.map

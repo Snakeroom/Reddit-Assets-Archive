@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.e1a9b4fb66233dc6321b.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.7af5b9c02a733109a1ac.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index", "EconHelperActions"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -383,7 +383,7 @@
 				poll: Object(i.L)(e, t),
 				post: Object(i.G)(e, t),
 				predictions: Object(i.M)(e, t),
-				subreddit: Object(i.hb)(e)
+				subreddit: Object(i.gb)(e)
 			});
 			var d = n("./src/reddit/hooks/useTracking.ts"),
 				l = n("./src/reddit/models/Prediction/index.ts"),
@@ -433,7 +433,7 @@
 				postId: t
 			}) => {
 				const n = Object(d.a)(),
-					a = Object(s.e)(e => Object(_.V)(e, {
+					a = Object(s.e)(e => Object(_.U)(e, {
 						postId: t
 					}));
 				return o.a.createElement(O.a, {
@@ -471,7 +471,7 @@
 			}, e), o.a.createElement("div", null, t)), n), T = ({
 				postId: e
 			}) => {
-				const t = Object(s.e)(t => Object(_.V)(t, {
+				const t = Object(s.e)(t => Object(_.U)(t, {
 					postId: e
 				}));
 				return o.a.createElement(A, {
@@ -958,4 +958,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.e1a9b4fb66233dc6321b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.7af5b9c02a733109a1ac.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.a8a0114aa55c91d4e2c1.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.8aaa26754932b1c9b9d0.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-EndTimeModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -253,7 +253,7 @@
 			};
 			t.default = () => {
 				var e;
-				const t = Object(a.e)(i.S),
+				const t = Object(a.e)(i.R),
 					n = null === (e = null == t ? void 0 : t.pollData) || void 0 === e ? void 0 : e.votingEndTimestamp,
 					r = n ? new Date(n) : null,
 					[c, d] = Object(o.useState)(r);
@@ -687,7 +687,7 @@
 					...Object(o.m)(e),
 					post: Object(o.G)(e, t),
 					predictions: Object(o.M)(e, t),
-					subreddit: Object(o.hb)(e)
+					subreddit: Object(o.gb)(e)
 				}),
 				a = e => t => ({
 					...s(t, e),
@@ -728,4 +728,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.a8a0114aa55c91d4e2c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.8aaa26754932b1c9b9d0.js.map

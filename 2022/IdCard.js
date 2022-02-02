@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.fdeeb19dda89417cf1ea.js
-// Retrieved at 2/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.e8ce5d72703cbfea9de3.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2250,7 +2250,7 @@
 								noun: "create_post",
 								source: "id_card",
 								screen: Object(w.Y)(e),
-								subreddit: Object(w.hb)(e),
+								subreddit: Object(w.gb)(e),
 								actionInfo: Object(w.c)(e)
 							})), t || (s(), e.preventDefault())
 						},
@@ -4388,7 +4388,7 @@
 					action: r.c.CLICK,
 					source: "id_card",
 					noun: e ? "enable_community_styles" : "disable_community_styles",
-					subreddit: s.hb(t)
+					subreddit: s.gb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/lightbox.ts": function(e, t, n) {
@@ -4412,7 +4412,7 @@
 			const c = e => ({
 					profile: a.P(e),
 					screen: a.Y(e),
-					subreddit: a.hb(e)
+					subreddit: a.gb(e)
 				}),
 				d = (e, t, n) => r => ({
 					source: Object(o.i)(r) || n ? "post_lightbox" : "post_detail",
@@ -4468,7 +4468,7 @@
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => ({
 					screen: r.Y(e),
-					subreddit: r.hb(e),
+					subreddit: r.gb(e),
 					profile: r.P(e),
 					userSubreddit: r.qb(e)
 				}),
@@ -4504,14 +4504,14 @@
 					source: e,
 					action: "click",
 					noun: "request_to_join_button",
-					subreddit: r.hb(t)
+					subreddit: r.gb(t)
 				}),
 				i = e => t => ({
 					...r.m(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_submit",
-					subreddit: r.hb(t)
+					subreddit: r.gb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/restrictedCommunity.ts": function(e, t, n) {
@@ -4527,14 +4527,14 @@
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: r.hb(t)
+					subreddit: r.gb(t)
 				}),
 				i = e => t => ({
 					...r.m(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: r.hb(t)
+					subreddit: r.gb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/subredditCreation.ts": function(e, t, n) {
@@ -4656,7 +4656,7 @@
 					...i.m(e)
 				}),
 				a = e => t => {
-					const n = i.hb(t),
+					const n = i.gb(t),
 						o = Object(s.x)(t, {
 							subredditId: null == n ? void 0 : n.id
 						}),
@@ -4699,7 +4699,7 @@
 						value: e ? "0" : "1",
 						oldValue: e ? "1" : "0"
 					},
-					subreddit: i.hb(t),
+					subreddit: i.gb(t),
 					...i.m(t)
 				})
 		},
@@ -5185,4 +5185,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.fdeeb19dda89417cf1ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.e8ce5d72703cbfea9de3.js.map

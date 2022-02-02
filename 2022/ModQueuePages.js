@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.55efd71c80ff1d172de2.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.ef7aa42367dc1753a7f2.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, n) {
@@ -3121,7 +3121,7 @@
 					flairData: et.d,
 					isApiPending: Ce.a,
 					moderatorPermissions: $e.m,
-					posts: tt.K,
+					posts: tt.J,
 					selectedItems: Ce.f
 				}),
 				vt = Object(c.b)(wt, e => ({
@@ -3540,7 +3540,7 @@
 						source: "post_flair_picker",
 						action: "click",
 						noun: e,
-						subreddit: Object(C.ib)(t, this.props.subredditId)
+						subreddit: Object(C.hb)(t, this.props.subredditId)
 					}));
 					const t = Object(E.c)(e.flairs);
 					this.state = {
@@ -3894,7 +3894,7 @@
 								action: "click",
 								noun: s,
 								screen: Object(f.Y)(e),
-								subreddit: Object(f.hb)(e)
+								subreddit: Object(f.gb)(e)
 							})))
 						})(s.layout),
 						d = () => e.toggleTooltip(i),
@@ -4321,7 +4321,7 @@
 					...Object(a.h)(e, t),
 					correlationId: Object(s.e)(s.a.GildingFlow, !1),
 					profile: o.P(e),
-					subreddit: o.hb(e)
+					subreddit: o.gb(e)
 				}),
 				i = e => t => ({
 					source: "post",
@@ -5140,4 +5140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.55efd71c80ff1d172de2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.ef7aa42367dc1753a7f2.js.map

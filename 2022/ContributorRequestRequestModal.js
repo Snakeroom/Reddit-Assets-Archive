@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.829eff043ddf98d741a3.js
-// Retrieved at 1/20/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.bb53799cdc753fcfce72.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, a) {
@@ -51,9 +51,9 @@
 				E = a("./src/reddit/models/Theme/index.ts"),
 				q = a("./src/reddit/selectors/platform.ts"),
 				R = a("./src/reddit/selectors/structuredStyles.ts"),
-				y = a("./src/reddit/selectors/subreddit.ts"),
-				g = a("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
-				F = a.n(g),
+				g = a("./src/reddit/selectors/subreddit.ts"),
+				y = a("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
+				F = a.n(y),
 				I = a("./src/lib/lessComponent.tsx");
 			const S = I.a.wrapped(m.e, "ModalBody", F.a),
 				j = I.a.wrapped(m.i, "ModalHeader", F.a),
@@ -130,8 +130,8 @@
 				}
 			}
 			t.default = I.a.wrapped(Object(s.a)(Object(d.a)(Object(i.b)(() => Object(l.c)({
-				subredditAboutInfo: y.g,
-				restrictions: y.m,
+				subredditAboutInfo: g.g,
+				restrictions: g.m,
 				subreddit: q.e,
 				subredditIcon: R.b
 			}), e => ({
@@ -294,16 +294,16 @@
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: r.hb(t)
+					subreddit: r.gb(t)
 				}),
 				n = e => t => ({
 					...r.m(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: r.hb(t)
+					subreddit: r.gb(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.829eff043ddf98d741a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestRequestModal.bb53799cdc753fcfce72.js.map

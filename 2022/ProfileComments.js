@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.f6490d98bd4c1f99c5a4.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.970639e7b900749eda35.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, s) {
@@ -19,7 +19,7 @@
 			})), s.d(t, "moreItemsFailed", (function() {
 				return D
 			})), s.d(t, "moreItemsRequested", (function() {
-				return K
+				return G
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/lodash/difference.js"),
@@ -110,7 +110,7 @@
 						meta: s().meta,
 						...S
 					})), await Promise.all([t(Object(p.c)(x)), t(Object(b.q)()), t(Object(l.b)()), t(m.o(x))])
-				}, R = Object(i.a)(T.c), M = Object(i.a)(T.b), D = Object(i.a)(T.a), K = () => async (e, t, {
+				}, R = Object(i.a)(T.c), M = Object(i.a)(T.b), D = Object(i.a)(T.a), G = () => async (e, t, {
 					apiContext: s
 				}) => {
 					const r = t(),
@@ -296,8 +296,8 @@
 			}, e.children));
 			var M = s("./src/reddit/components/ProfileItemList/index.tsx"),
 				D = s("./node_modules/lodash/noop.js"),
-				K = s.n(D),
-				G = s("./src/reddit/actions/ads/index.ts"),
+				G = s.n(D),
+				K = s("./src/reddit/actions/ads/index.ts"),
 				J = s("./src/reddit/actions/comment/list.ts"),
 				U = s("./src/reddit/actions/post.ts"),
 				H = s("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -323,7 +323,7 @@
 					commentsById: Q.q,
 					itemIds: Z.f,
 					itemIdToPostId: Z.e,
-					postsById: X.K,
+					postsById: X.J,
 					estimateItemHeight: e => (e, t, s) => {
 						if (s) switch (t) {
 							case v.g.Medium:
@@ -350,13 +350,13 @@
 				oe = Object(i.b)(re, e => ({
 					onBottomViewed: (t, s) => e(Object(J.c)(t, s)),
 					adBrandSafetyStatusReceived: t => {
-						e(G.d({
+						e(K.d({
 							isViewSafe: t
 						}))
 					},
 					openPost: t => e(Object(U.L)(t)),
-					fireAdPixelsOfType: K.a,
-					trackOnPostEnteredViewport: K.a
+					fireAdPixelsOfType: G.a,
+					trackOnPostEnteredViewport: G.a
 				}), (e, t, s) => ({
 					...e,
 					...t,
@@ -517,4 +517,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.f6490d98bd4c1f99c5a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.970639e7b900749eda35.js.map

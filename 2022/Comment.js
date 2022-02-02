@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Comment.c19ae922189dcc52e5c1.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Comment.718651492e3c92df17db.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Comment"], {
 		"./src/reddit/actions/gold/giveAward.ts": function(e, t, r) {
@@ -2170,7 +2170,7 @@
 				source: "post",
 				action: s.c.CLICK,
 				noun: "share_chat",
-				subreddit: Object(n.hb)(e)
+				subreddit: Object(n.gb)(e)
 			})
 		},
 		"./src/reddit/helpers/trackers/topAwarded.ts": function(e, t, r) {
@@ -2190,7 +2190,7 @@
 					...Object(n.h)(e, t),
 					correlationId: Object(s.e)(s.a.GildingFlow, !1),
 					profile: a.P(e),
-					subreddit: a.hb(e)
+					subreddit: a.gb(e)
 				}),
 				i = e => t => ({
 					source: "post",
@@ -2905,4 +2905,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.c19ae922189dcc52e5c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.718651492e3c92df17db.js.map

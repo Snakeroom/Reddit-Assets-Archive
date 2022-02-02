@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.48d0ffbbcb76553987e0.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7810f3addb92b48ed2b9.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/timeUntil/index.ts": function(e, t, n) {
@@ -587,9 +587,9 @@
 				}))
 			}
 			var q = n("./src/reddit/components/Econ/Prediction/TournamentTokenIcon/index.tsx"),
-				Q = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
-				G = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionResolvedEducationMessage/index.m.less"),
-				Z = n.n(G);
+				G = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
+				Q = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionResolvedEducationMessage/index.m.less"),
+				Z = n.n(Q);
 			const {
 				fbt: X
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), H = ({
@@ -607,7 +607,7 @@
 				}) => e === i)) || void 0 === t ? void 0 : t.userStakeAmount) || 0, u = n ? s.a.createElement(q.a, {
 					className: Z.a.coinIcon,
 					tournamentId: n
-				}) : s.a.createElement(Q.a, {
+				}) : s.a.createElement(G.a, {
 					className: Z.a.coinIcon
 				});
 				return c && !d ? s.a.createElement("div", null, s.a.createElement(F.a, {
@@ -736,7 +736,7 @@
 					totalVoters: c
 				}), s.a.createElement("span", null, "·")), l && i > 0 && s.a.createElement("div", {
 					className: ne.a.statusBar
-				}, s.a.createElement(Q.a, {
+				}, s.a.createElement(G.a, {
 					className: ne.a.coinIcon
 				}), i, " ", ce._("added by participants", null, {
 					hk: "PSq3T"
@@ -861,8 +861,8 @@
 			const Ie = Object(a.c)({
 					isEditing: l.M,
 					prediction: d.g,
-					post: u.H,
-					subredditOrProfile: u.V,
+					post: u.G,
+					subredditOrProfile: u.U,
 					userId: m.tb
 				}),
 				ye = Object(c.u)({
@@ -1009,4 +1009,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.48d0ffbbcb76553987e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.7810f3addb92b48ed2b9.js.map

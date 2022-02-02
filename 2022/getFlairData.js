@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/getFlairData.45f6f864cbc94327c1ad.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/getFlairData.1e1a157d6c433ad1c8c0.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["getFlairData"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, r, t) {
@@ -45,7 +45,7 @@
 				u = t("./src/reddit/selectors/userFlair.ts");
 
 			function o(e) {
-				const r = n.hb(e),
+				const r = n.gb(e),
 					t = null == r ? void 0 : r.id;
 				if (!t) return;
 				const o = Object(u.d)(e, {
@@ -372,4 +372,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.45f6f864cbc94327c1ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.1e1a157d6c433ad1c8c0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.c076351c0d4d0f953749.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.f37a226647aabf4855a2.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -897,7 +897,7 @@
 						redirectUrl: R.permalink
 					}));
 					s(Object(d.B)(R.author));
-					const C = Object(x.V)(u, {
+					const C = Object(x.U)(u, {
 							postId: p ? u.features.comments.models[e].postId : u.posts.models[e].id
 						}),
 						O = f && Object(b.p)(R) || p && W(R, u);
@@ -1844,7 +1844,7 @@
 					rulesCategory: e => e.features.reportFlow.rulesCategory,
 					post: (e, {
 						postId: t
-					}) => t ? Object(ze.H)(e, {
+					}) => t ? Object(ze.G)(e, {
 						postId: t
 					}) : null,
 					reportedPending: e => e.features.reportFlow.api.pending,
@@ -1852,7 +1852,7 @@
 					sitewideRules: e => e.reportRules.sitewideRules,
 					subredditOrProfile: (e, {
 						postId: t
-					}) => t ? Object(ze.V)(e, {
+					}) => t ? Object(ze.U)(e, {
 						postId: t
 					}) : null,
 					subredditRules: e => e.subreddits.rules,
@@ -2075,7 +2075,7 @@
 			const U = Object(d.c)({
 					post: (e, {
 						postId: t
-					}) => t ? Object(T.H)(e, {
+					}) => t ? Object(T.G)(e, {
 						postId: t
 					}) : null,
 					comment: (e, {
@@ -2096,7 +2096,7 @@
 							postId: o
 						} = t, r = s ? Object(k.b)(e, {
 							commentId: s
-						}) : null, a = o ? Object(T.H)(e, {
+						}) : null, a = o ? Object(T.G)(e, {
 							postId: o
 						}) : null;
 						(r ? r.author : a ? a.author : null) || t.author;
@@ -3790,4 +3790,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.c076351c0d4d0f953749.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.f37a226647aabf4855a2.js.map

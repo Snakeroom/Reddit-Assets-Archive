@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.cc8036b6fca7ea69057c.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.16ee2e910fbe37c72ec7.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
@@ -28,8 +28,8 @@
 				w = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
 			const h = Object(a.a)(w.l),
 				j = Object(a.a)(w.m),
-				v = Object(a.a)(w.k),
-				g = Object(a.a)(w.o),
+				g = Object(a.a)(w.k),
+				v = Object(a.a)(w.o),
 				k = Object(a.a)(w.n),
 				x = Object(a.a)(w.i),
 				y = Object(a.a)(w.j),
@@ -58,12 +58,12 @@
 							const e = n.fbt._("There was an error fetching available products", null, {
 								hk: "1Uvx37"
 							});
-							t(v(e))
+							t(g(e))
 						}
 					})(null == e ? void 0 : e.correlationId));
 					const l = Object(O.a)(i);
 					if ((null == e ? void 0 : e.forceLoad) || !l) {
-						t(g());
+						t(v());
 						try {
 							const e = await (async e => {
 								const t = await Object(f.a)(e, {
@@ -170,8 +170,8 @@
 				h = r("./src/reddit/components/Econ/ClaimFreeAwardModal/index.m.less"),
 				j = r.n(h);
 			const {
-				fbt: v
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), g = "https://www.redditstatic.com/gold/awards/animations/free_award", k = (e, t) => {
+				fbt: g
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), v = "https://www.redditstatic.com/gold/awards/animations/free_award", k = (e, t) => {
 				var r;
 				return (null === (r = null == e ? void 0 : e.assets) || void 0 === r ? void 0 : r.length) && (null == t ? void 0 : t.icon) && (e.assets[0].u = t.icon.url, e.assets[0].p = ""), e
 			};
@@ -181,7 +181,7 @@
 					r = Object(s.e)(e => Object(p.b)(e)),
 					[n, d] = Object(a.useState)(null);
 				Object(a.useEffect)(() => {
-					Object(O.a)(`${g}/opening.json`).then(e => {
+					Object(O.a)(`${v}/opening.json`).then(e => {
 						d(e)
 					}), e(Object(l.b)())
 				}, []);
@@ -195,7 +195,7 @@
 					onClick: h,
 					className: j.a.closeButton
 				}, c.a.createElement(w.b, null)), !r && c.a.createElement(c.a.Fragment, null, c.a.createElement(m.a, {
-					assetUrl: `${g}/flying.json`,
+					assetUrl: `${v}/flying.json`,
 					loop: !0,
 					className: j.a.flyingAnimation,
 					onClick: () => {
@@ -205,7 +205,7 @@
 					}
 				}), c.a.createElement("p", {
 					className: j.a.description
-				}, v._("Open it! Open it! (Just click, it’s easy)", null, {
+				}, g._("Open it! Open it! (Just click, it’s easy)", null, {
 					hk: "2RWqvN"
 				}))), r && n && c.a.createElement(c.a.Fragment, null, c.a.createElement(m.a, {
 					assetData: k(n, r),
@@ -213,18 +213,18 @@
 					onClick: o.a
 				}), c.a.createElement("h2", {
 					className: j.a.awardTitle
-				}, v._("It's the {awardName} Award!", [v._param("awardName", r.name)], {
+				}, g._("It's the {awardName} Award!", [g._param("awardName", r.name)], {
 					hk: "41wWKZ"
 				})), r.endsAt && c.a.createElement("p", {
 					className: j.a.awardDescription
-				}, v._("Give it away in the next {awardEndDate} before it disappears.", [v._param("awardEndDate", Object(i.a)(new Date(r.endsAt)))], {
+				}, g._("Give it away in the next {awardEndDate} before it disappears.", [g._param("awardEndDate", Object(i.a)(new Date(r.endsAt)))], {
 					hk: "gmYKH"
 				})), c.a.createElement("div", {
 					className: j.a.awardMore
 				}, c.a.createElement(w.r, {
 					className: j.a.awardButton,
 					onClick: h
-				}, v._("Go Forth and Award", null, {
+				}, g._("Go Forth and Award", null, {
 					hk: "1OuNXO"
 				})))))
 			}))
@@ -248,7 +248,7 @@
 					}),
 					correlationId: Object(n.e)(n.a.GoldPayment, !1),
 					profile: c.P(e),
-					subreddit: c.hb(e)
+					subreddit: c.gb(e)
 				}),
 				d = () => e => ({
 					source: "free_award_offer",
@@ -294,7 +294,7 @@
 			})), r.d(t, "i", (function() {
 				return j
 			})), r.d(t, "h", (function() {
-				return v
+				return g
 			}));
 			var n = r("./node_modules/reselect/es/index.js"),
 				o = r("./src/lib/makeProductOfferKey/index.ts"),
@@ -345,11 +345,11 @@
 					var t;
 					return null === (t = e.user.productOfferSubscriptions) || void 0 === t ? void 0 : t.subscriptions
 				}, e => null == e ? void 0 : e[0]),
-				v = Object(n.a)(j, e => Boolean(null == e ? void 0 : e.isCanceled))
+				g = Object(n.a)(j, e => Boolean(null == e ? void 0 : e.isCanceled))
 		},
 		"./src/redditGQL/operations/PurchaseCatalogProductOffers.json": function(e) {
 			e.exports = JSON.parse('{"id":"4783b146aefa"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.cc8036b6fca7ea69057c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.16ee2e910fbe37c72ec7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.295fef032bad60f479b3.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.39d9c2f77a8266a9c0a9.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~Comment~CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1783,7 +1783,7 @@
 					isLoggedIn: H.J,
 					postIsArchived: (e, {
 						comment: t
-					}) => Object(U.B)(e, {
+					}) => Object(U.A)(e, {
 						postId: t.postId
 					}),
 					isBlockedUserBannerEnabled: (e, {
@@ -1798,7 +1798,7 @@
 					}),
 					postIsLocked: (e, {
 						comment: t
-					}) => Object(U.C)(e, {
+					}) => Object(U.B)(e, {
 						postId: t.postId
 					}),
 					commentPermalink: (e, {
@@ -1824,7 +1824,7 @@
 					}) : void 0,
 					subredditOrProfile: (e, {
 						comment: t
-					}) => Object(U.V)(e, {
+					}) => Object(U.U)(e, {
 						postId: t.postId
 					}),
 					reportingRevampEnabled: B.a,
@@ -1832,7 +1832,7 @@
 						comment: t
 					}) => {
 						var n;
-						return null === (n = Object(U.H)(e, {
+						return null === (n = Object(U.G)(e, {
 							postId: t.postId
 						})) || void 0 === n ? void 0 : n.unrepliableReason
 					},
@@ -3050,4 +3050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.295fef032bad60f479b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.39d9c2f77a8266a9c0a9.js.map

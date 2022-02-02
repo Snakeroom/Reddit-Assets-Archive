@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.f99e8eb5d22a16fce59c.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.a26e04ab6288ae05e783.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./src/reddit/actions/postCollection/index.ts": function(e, t, n) {
@@ -11,9 +11,9 @@
 			})), n.d(t, "g", (function() {
 				return B
 			})), n.d(t, "a", (function() {
-				return J
+				return z
 			})), n.d(t, "c", (function() {
-				return U
+				return Z
 			})), n.d(t, "h", (function() {
 				return Q
 			})), n.d(t, "f", (function() {
@@ -159,7 +159,7 @@
 				}) => {
 					if ((await k(i(), e, t)).ok) {
 						const i = r(),
-							a = Object(L.H)(i, {
+							a = Object(L.G)(i, {
 								postId: t
 							}),
 							l = a && a.title || "",
@@ -176,7 +176,7 @@
 									collectionId: e
 								}),
 								o = n && n.postIds && n.postIds[m] || "",
-								i = Object(L.H)(t, {
+								i = Object(L.G)(t, {
 									postId: o
 								});
 							i && i.permalink && s(Object(y.a)(i.permalink))
@@ -189,7 +189,7 @@
 							buttonText: o.fbt._("UNDO", null, {
 								hk: "3KPLib"
 							}),
-							buttonAction: J(e, t)
+							buttonAction: z(e, t)
 						}))
 					} else s(Object(c.f)({
 						kind: P.b.Error,
@@ -197,7 +197,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, W = Object(i.a)(l.a), H = Object(i.a)(l.t), J = (e, t) => async (n, s, {
+				}, W = Object(i.a)(l.a), J = Object(i.a)(l.t), z = (e, t) => async (n, s, {
 					apiContext: r
 				}) => {
 					const i = s();
@@ -205,11 +205,11 @@
 						n(W({
 							collectionId: e,
 							postId: t
-						})), n(H({
+						})), n(J({
 							collectionId: e,
 							postId: t
 						}));
-						const s = Object(L.H)(i, {
+						const s = Object(L.G)(i, {
 								postId: t
 							}),
 							r = Object(M.q)(i, {
@@ -232,7 +232,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, z = Object(i.a)(l.e), U = (e, t) => async (n, i, {
+				}, U = Object(i.a)(l.e), Z = (e, t) => async (n, i, {
 					apiContext: a
 				}) => {
 					const l = i();
@@ -242,7 +242,7 @@
 						} = l.platform.currentPage, a = Object(M.q)(l, {
 							collectionId: e
 						}), d = a && a.title || "", m = a && a.subredditId, u = m ? Object(S.c)(l, m) : "/";
-						n(z({
+						n(U({
 							collectionId: e,
 							collection: a
 						})), n(t ? Object(s.c)(Object(r.a)(i, ["collection"])) : Object(s.b)(u)), n(Object(c.f)({
@@ -257,10 +257,10 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, Z = Object(i.a)(l.r), Y = Object(i.a)(l.n), X = Object(i.a)(l.s), Q = (e, t) => async (n, s, {
+				}, H = Object(i.a)(l.r), Y = Object(i.a)(l.n), X = Object(i.a)(l.s), Q = (e, t) => async (n, s, {
 					apiContext: r
 				}) => {
-					n(Z());
+					n(H());
 					const i = await j(r(), e, t);
 					let a = !1;
 					if (i.ok) n(X({
@@ -1108,7 +1108,7 @@
 				fbt: v
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), M = ["right", "bottom"], L = ["right", "top"];
 			var S = Object(a.b)(() => Object(l.c)({
-					post: _.H
+					post: _.G
 				}), (e, t) => ({
 					onRemovePostFromCollection: () => e(Object(f.g)(t.collectionId, t.postId))
 				}))(e => {
@@ -1650,24 +1650,24 @@
 				})),
 				B = n("./src/reddit/components/PostingSidebar/index.tsx"),
 				W = n("./src/reddit/layout/page/Listing/index.tsx"),
-				H = n("./src/reddit/pages/ErrorPages/index.tsx"),
-				J = n("./src/reddit/selectors/postDraft.ts");
-			const z = Object(c.u)(),
-				U = Object(i.c)({
+				J = n("./src/reddit/pages/ErrorPages/index.tsx"),
+				z = n("./src/reddit/selectors/postDraft.ts");
+			const U = Object(c.u)(),
+				Z = Object(i.c)({
 					draft: (e, {
 						match: t
-					}) => Object(J.d)(e, {
+					}) => Object(z.d)(e, {
 						draftId: t.params.draftId
 					})
 				}),
-				Z = Object(r.b)(U);
+				H = Object(r.b)(Z);
 			class Y extends o.Component {
 				render() {
 					const {
 						draft: e,
 						pageLayer: t
 					} = this.props;
-					if (!t || !e) return s.a.createElement(H.b, null);
+					if (!t || !e) return s.a.createElement(J.b, null);
 					const n = e.subredditId;
 					return s.a.createElement(W.a, {
 						redditStyle: !0,
@@ -1682,8 +1682,8 @@
 					})
 				}
 			}
-			t.default = z(Z(Y))
+			t.default = U(H(Y))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.f99e8eb5d22a16fce59c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.a26e04ab6288ae05e783.js.map

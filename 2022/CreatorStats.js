@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatorStats.4008a5b726ca971ab085.js
-// Retrieved at 1/26/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatorStats.c001008f76c24e522a2c.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatorStats"], {
 		"./src/reddit/components/CreatorStats/Stats.tsx": function(t, e, a) {
@@ -256,7 +256,7 @@
 					const i = s();
 					if (!Object(b.a)(i, t)) return;
 					if (!Object(m.a)(i, t)) return;
-					const l = Object(p.H)(i, {
+					const l = Object(p.G)(i, {
 						postId: t
 					});
 					if (!(l && Object(c.d)(l.created))) return;
@@ -339,7 +339,7 @@
 						action: O.c.VIEW,
 						noun: "aggregate_stats",
 						source: "creator_stats",
-						subreddit: Object(j.hb)(a),
+						subreddit: Object(j.gb)(a),
 						post: Object(j.G)(a, t),
 						userSubreddit: Object(j.qb)(a),
 						actionInfo: Object(j.c)(a, {
@@ -416,7 +416,7 @@
 					noun: t,
 					source: "creator_stats",
 					post: Object(j.G)(a, e),
-					subreddit: Object(j.hb)(a),
+					subreddit: Object(j.gb)(a),
 					userSubreddit: Object(j.qb)(a)
 				}))(a, t.post.id))))), l === c.b.Available && u && n.a.createElement(y.a, {
 					isUserOp: p,
@@ -432,4 +432,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.4008a5b726ca971ab085.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.c001008f76c24e522a2c.js.map

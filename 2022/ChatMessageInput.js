@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.e81a04327d2b90fa26ff.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.f94bb0afeb6e7ac13d1f.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -607,7 +607,7 @@
 					postId: t
 				}) => Object(m.g)(e, {
 					commentsPageKey: Object(d.a)(t)
-				}), _.H, (e, {
+				}), _.G, (e, {
 					postId: t
 				}) => Object(m.u)(e, {
 					commentsPageKey: Object(d.a)(t)
@@ -788,8 +788,8 @@
 				V = h.a.div("ReplyAuthor", B.a),
 				G = h.a.div("ReplyComment", B.a),
 				W = h.a.wrapped(x.a, "RichTextEditor", B.a),
-				H = h.a.wrapped(g.a, "SmallChatUserIcon", B.a),
-				K = Object(u.b)(() => Object(d.c)({
+				K = h.a.wrapped(g.a, "SmallChatUserIcon", B.a),
+				H = Object(u.b)(() => Object(d.c)({
 					draft: O.i,
 					errorMsgs: O.K,
 					hasError: O.v,
@@ -798,7 +798,7 @@
 						return t ? t - 3 : 197
 					},
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					post: z.H
+					post: z.G
 				}), (e, {
 					isEditing: t,
 					comment: s,
@@ -1015,14 +1015,14 @@
 			const X = ({
 				isEditing: e,
 				isLivestreaming: t
-			}) => t ? null : e ? l.a.createElement(H, {
+			}) => t ? null : e ? l.a.createElement(K, {
 				height: 20,
 				width: 20
 			}) : l.a.createElement(g.a, {
 				height: 25,
 				width: 25
 			});
-			t.default = K(J)
+			t.default = H(J)
 		},
 		"./src/reddit/components/Econ/DefaultAvatar/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1386,7 +1386,7 @@
 					if (t) {
 						const s = o.z(e, t.post.id),
 							a = o.G(e, t.post.id),
-							n = o.hb(e);
+							n = o.gb(e);
 						if (t.post.authorInfo && a && (a.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const a = Object(r.j)(e, {
@@ -1401,7 +1401,7 @@
 						}
 					}
 					return {
-						subreddit: o.hb(e)
+						subreddit: o.gb(e)
 					}
 				},
 				c = (e, t, s) => {
@@ -1611,7 +1611,7 @@
 					action: "click",
 					noun: "subscribe",
 					...i(t, e),
-					targetSubreddit: o.hb(t)
+					targetSubreddit: o.gb(t)
 				}),
 				S = (e, t) => s => ({
 					source: "stream_player",
@@ -1925,4 +1925,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.e81a04327d2b90fa26ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.f94bb0afeb6e7ac13d1f.js.map

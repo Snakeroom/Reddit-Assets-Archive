@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.b5106ef18eabd126298f.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.0f4f641fa7bc6797f090.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -137,10 +137,10 @@
 				F = o("./src/reddit/models/PostCreationForm/index.ts"),
 				A = o("./src/reddit/selectors/activeModalId.ts"),
 				B = o("./src/reddit/components/Collection/PostItem/index.m.less"),
-				H = o.n(B);
+				W = o.n(B);
 
-			function W() {
-				return (W = Object.assign || function(e) {
+			function H() {
+				return (H = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var o = arguments[t];
 						for (var s in o) Object.prototype.hasOwnProperty.call(o, s) && (e[s] = o[s])
@@ -152,8 +152,8 @@
 				fbt: U
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
 			let X, Y;
-			const J = e => `${e}--collectionItem`,
-				z = e => {
+			const G = e => `${e}--collectionItem`,
+				J = e => {
 					const {
 						activeModalId: t,
 						addEventStartTime: o,
@@ -175,13 +175,13 @@
 						isProfilePage: O
 					} = e;
 					return n.a.createElement(I.a, {
-						className: Object(a.a)(H.a.postContainer, {
-							[H.a.isNightmodeOn]: i,
-							[H.a.isSelectedPost]: c,
-							[H.a.isProfilePage]: O
+						className: Object(a.a)(W.a.postContainer, {
+							[W.a.isNightmodeOn]: i,
+							[W.a.isSelectedPost]: c,
+							[W.a.isProfilePage]: O
 						}),
 						isOverlay: r,
-						makePostContainerId: J,
+						makePostContainerId: G,
 						post: b,
 						onClick: d,
 						eventFactory: s,
@@ -189,32 +189,32 @@
 					}, n.a.createElement("div", {
 						ref: c && v || void 0
 					}, n.a.createElement("div", {
-						className: Object(a.a)(H.a.postContent, {
-							[H.a.active]: c
+						className: Object(a.a)(W.a.postContent, {
+							[W.a.active]: c
 						})
 					}, h && n.a.createElement(j.a, {
-						className: H.a.timelineThumbnail,
-						classNameInnerThumbnail: Object(a.a)(H.a.timelineThumbnailOverride, H.a.commonThumbnailOverride),
+						className: W.a.timelineThumbnail,
+						classNameInnerThumbnail: Object(a.a)(W.a.timelineThumbnailOverride, W.a.commonThumbnailOverride),
 						post: b
 					}), n.a.createElement("div", {
-						className: H.a.postBodyWrapper
+						className: W.a.postBodyWrapper
 					}, n.a.createElement("div", {
-						className: H.a.postBody,
+						className: W.a.postBody,
 						"data-click-id": "body"
 					}, n.a.createElement(S.a, {
 						to: Object(L.b)(b.permalink),
-						className: H.a.postTitle,
+						className: W.a.postTitle,
 						style: {
 							WebkitBoxOrient: "vertical"
 						},
 						title: b.title,
 						onClick: u
 					}, b.title)), n.a.createElement("div", {
-						className: H.a.bottomline
+						className: W.a.bottomline
 					}, n.a.createElement(k.b, {
 						post: b
 					}), P && n.a.createElement(M.a, {
-						className: H.a.defaultPostOverflowMenu,
+						className: W.a.defaultPostOverflowMenu,
 						onRemoveClick: m,
 						dropdownId: `collection-post-item-${b.id}`,
 						isFutureEvent: l,
@@ -229,8 +229,8 @@
 						shouldShowDeleteButton: !1
 					}))
 				},
-				Q = j.a,
-				G = e => {
+				z = j.a,
+				Q = e => {
 					const {
 						activeModalId: t,
 						addEventStartTime: o,
@@ -251,42 +251,42 @@
 						isProfilePage: v
 					} = e, O = l && l.url || "", x = b.isSpoiler || b.isNSFW, _ = b.isScoreHidden;
 					return n.a.createElement(I.a, {
-						className: Object(a.a)(H.a.galleryPostContainer, {
-							[H.a.isSelectedPost]: d,
-							[H.a.isNightmodeOn]: r,
-							[H.a.isProfilePage]: v
+						className: Object(a.a)(W.a.galleryPostContainer, {
+							[W.a.isSelectedPost]: d,
+							[W.a.isNightmodeOn]: r,
+							[W.a.isProfilePage]: v
 						}),
 						isOverlay: c,
-						makePostContainerId: J,
+						makePostContainerId: G,
 						post: b,
 						onClick: m,
 						eventFactory: s,
 						style: h,
 						shouldAddGalleryViewability: !1
 					}, n.a.createElement("div", {
-						className: H.a.scrollToContainer,
+						className: W.a.scrollToContainer,
 						ref: d && C || void 0
 					}, O ? n.a.createElement("div", {
-						className: Object(a.a)(H.a.galleryPostImage, {
-							[H.a.blurBackground]: x
+						className: Object(a.a)(W.a.galleryPostImage, {
+							[W.a.blurBackground]: x
 						}),
 						style: {
 							backgroundImage: `url('${O}')`
 						}
-					}) : n.a.createElement(Q, {
-						className: H.a.galleryThumbnailPlaceholder,
-						thumbnailContainerClassName: H.a.thumbnailContainerClassName,
-						classNameInnerThumbnail: Object(a.a)(H.a.galleryPostPlaceholderThumbnailOverride, H.a.commonThumbnailOverride),
+					}) : n.a.createElement(z, {
+						className: W.a.galleryThumbnailPlaceholder,
+						thumbnailContainerClassName: W.a.thumbnailContainerClassName,
+						classNameInnerThumbnail: Object(a.a)(W.a.galleryPostPlaceholderThumbnailOverride, W.a.commonThumbnailOverride),
 						post: b
 					}), r && n.a.createElement("div", {
-						className: H.a.gallerySeparator
+						className: W.a.gallerySeparator
 					}), d && n.a.createElement("div", {
-						className: H.a.gallerySelectedBorder
+						className: W.a.gallerySelectedBorder
 					}), n.a.createElement("div", {
-						className: H.a.galleryPostOverlay
+						className: W.a.galleryPostOverlay
 					}, n.a.createElement("div", {
-						className: Object(a.a)(H.a.galleryBottomLine, {
-							[H.a.isScoreHidden]: _
+						className: Object(a.a)(W.a.galleryBottomLine, {
+							[W.a.isScoreHidden]: _
 						})
 					}, !_ && n.a.createElement(k.a, {
 						"data-click-id": "score"
@@ -343,21 +343,21 @@
 						displayLayout: e,
 						post: t
 					} = this.props;
-					return t ? e === g.a.TIMELINE ? n.a.createElement(z, W({}, this.props, {
+					return t ? e === g.a.TIMELINE ? n.a.createElement(J, H({}, this.props, {
 						onPostSelection: this.onPostSelection,
 						onRemovePost: this.onRemovePost,
 						onStartEventNow: this.onStartEventNow,
 						onPostTitleClick: this.onPostTitleClick
-					})) : n.a.createElement(G, W({}, this.props, {
+					})) : n.a.createElement(Q, H({}, this.props, {
 						onPostSelection: this.onPostSelection,
 						onRemovePost: this.onRemovePost,
 						onStartEventNow: this.onStartEventNow
 					})) : n.a.createElement("div", {
-						className: H.a.postContainer
+						className: W.a.postContainer
 					})
 				}
 			}
-			var V = Object(v.u)({
+			var q = Object(v.u)({
 					currentProfileName: v.i,
 					isCommentsPage: v.x,
 					isProfilePostListing: v.L,
@@ -368,9 +368,9 @@
 					galleryThumbnail: y.e,
 					isFutureEvent: y.i,
 					layout: v.R,
-					post: f.H,
+					post: f.G,
 					shouldShowCollectionPostEdits: y.s,
-					subredditOrProfile: f.V
+					subredditOrProfile: f.U
 				}), (e, {
 					collectionId: t,
 					postId: s,
@@ -388,8 +388,8 @@
 						Y && e(Y.editEventTimeRequested(s, t))
 					}
 				}))(Object(b.c)(Z))),
-				q = o("./src/reddit/components/Collection/index.m.less"),
-				K = o.n(q);
+				V = o("./src/reddit/components/Collection/index.m.less"),
+				K = o.n(V);
 			const {
 				fbt: $
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), ee = e => n.a.createElement(m.a, {
@@ -416,11 +416,11 @@
 							postId: t
 						}),
 						s = o && (o.primaryPostId || o.postIds[0]);
-					return s && Object(f.H)(e, {
+					return s && Object(f.G)(e, {
 						postId: s
 					}) || null
 				},
-				post: f.H,
+				post: f.G,
 				shouldShowThumbnail: (e, {
 					postId: t
 				}) => {
@@ -508,7 +508,7 @@
 							className: Object(a.a)({
 								[K.a.galleryContainer]: o === g.a.GALLERY
 							})
-						}, h.map(e => n.a.createElement(V, {
+						}, h.map(e => n.a.createElement(q, {
 							collectionId: C,
 							postId: e,
 							key: e,
@@ -734,4 +734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.b5106ef18eabd126298f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.0f4f641fa7bc6797f090.js.map

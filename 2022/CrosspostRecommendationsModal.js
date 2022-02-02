@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.5dcffc5d257c805729db.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.1aa563dd8b51cb97e8b9.js
+// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostRecommendationsModal"], {
 		"./src/reddit/components/CrosspostRecommendationsModal/index.m.less": function(e, t, s) {
@@ -34,8 +34,8 @@
 				S = s("./src/reddit/routes/postCreation/index.ts"),
 				E = s("./src/reddit/routes/postCreation/constants.ts"),
 				k = s("./src/reddit/selectors/experiments/postCreationSubRec.ts"),
-				j = s("./src/reddit/components/CrosspostRecommendationsModal/index.m.less"),
-				g = s.n(j);
+				g = s("./src/reddit/components/CrosspostRecommendationsModal/index.m.less"),
+				j = s.n(g);
 			const {
 				fbt: v
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
@@ -46,7 +46,7 @@
 				const s = Object(i.d)(),
 					d = Object(C.a)(),
 					{
-						isPending: j,
+						isPending: g,
 						isError: O,
 						hasData: _,
 						items: P
@@ -63,7 +63,7 @@
 							noun: "close",
 							source: x,
 							post: Object(p.G)(t, e),
-							subreddit: Object(p.hb)(t)
+							subreddit: Object(p.gb)(t)
 						}))(t.id)), e()
 					}, [t.id]),
 					w = Object(n.useCallback)(e => {
@@ -77,33 +77,33 @@
 							noun: "other_communities",
 							source: x,
 							post: Object(p.G)(t, e),
-							subreddit: Object(p.hb)(t)
+							subreddit: Object(p.gb)(t)
 						}))(t.id)), s(Object(o.b)(`${E.b}?source_id=${t.id}`))
 					}, [t.id]);
 				return O ? (e(), null) : r.a.createElement(c.e, null, r.a.createElement(c.i, {
-					className: g.a.modalHeader
+					className: j.a.modalHeader
 				}, r.a.createElement(h.a, null, r.a.createElement(c.q, {
-					className: g.a.modalTitle
+					className: j.a.modalTitle
 				}, v._("Crosspost to a related community", null, {
 					hk: "v80Kq"
 				})), r.a.createElement(u.a, {
 					onClick: f
 				}, r.a.createElement(c.b, null))), r.a.createElement(c.m, {
-					className: g.a.modalMetaText
+					className: j.a.modalMetaText
 				}, v._("Share your post to another community to let other people see your post", null, {
 					hk: "2jhFRp"
 				}))), r.a.createElement(c.l, null, r.a.createElement(m.b, {
-					contentWrapperClassName: g.a.contentWrapper,
+					contentWrapperClassName: j.a.contentWrapper,
 					hasData: _,
-					isPending: j,
+					isPending: g,
 					items: P,
-					itemWrapperClassName: g.a.itemWrapper,
+					itemWrapperClassName: j.a.itemWrapper,
 					onSelectRecommendation: w,
 					shouldShowSubredditOnlineUsers: !0
 				})), r.a.createElement(c.g, {
-					className: g.a.modalFooter
+					className: j.a.modalFooter
 				}, r.a.createElement(l.o, {
-					className: g.a.otherCommunitiesButton,
+					className: j.a.otherCommunitiesButton,
 					onClick: N
 				}, v._("OTHER COMMUNITIES", null, {
 					hk: "1dWSPt"
@@ -131,9 +131,9 @@
 		"./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return j
-			})), s.d(t, "b", (function() {
 				return g
+			})), s.d(t, "b", (function() {
+				return j
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -187,9 +187,9 @@
 			}
 			var E = s("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.m.less"),
 				k = s.n(E);
-			const j = o.a.wrapped(a.b, "subredditIcon", k.a);
+			const g = o.a.wrapped(a.b, "subredditIcon", k.a);
 
-			function g(e) {
+			function j(e) {
 				const {
 					className: t,
 					explanationText: s,
@@ -240,7 +240,7 @@
 			s.d(t, "b", (function() {
 				return k
 			})), s.d(t, "a", (function() {
-				return j
+				return g
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/react/index.js"),
@@ -325,7 +325,7 @@
 						shouldShowSubredditOnlineUsers: c
 					}))
 				},
-				j = e => {
+				g = e => {
 					const t = Object(o.d)(),
 						{
 							isPending: s,
@@ -406,14 +406,14 @@
 					shouldShowSubredditOnlineUsers: S = !1
 				} = e, E = Object(o.e)(e => Object(l.t)(e, {
 					subredditName: r
-				})), k = Object(c.c)(r), j = void 0 !== u ? n.fbt._({
+				})), k = Object(c.c)(r), g = void 0 !== u ? n.fbt._({
 					"*": "{number} members",
 					_1: "1 member"
 				}, [n.fbt._plural(u, "number", C ? Object(d.b)(u) : void 0)], {
 					hk: "2SvJUX"
-				}) : void 0, g = E ? n.fbt._("{number users online in subreddit} online", [n.fbt._param("number users online in subreddit", Object(d.b)(E.accountsActive))], {
+				}) : void 0, j = E ? n.fbt._("{number users online in subreddit} online", [n.fbt._param("number users online in subreddit", Object(d.b)(E.accountsActive))], {
 					hk: "49HfzS"
-				}) : void 0, v = S ? `${j} • ${g}` : j, O = void 0 !== x ? n.fbt._({
+				}) : void 0, v = S ? `${g} • ${j}` : g, O = void 0 !== x ? n.fbt._({
 					"*": "{number} online",
 					_1: "1 online"
 				}, [n.fbt._plural(x, "number", C ? Object(d.b)(x) : void 0)], {
@@ -505,4 +505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.5dcffc5d257c805729db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.1aa563dd8b51cb97e8b9.js.map
