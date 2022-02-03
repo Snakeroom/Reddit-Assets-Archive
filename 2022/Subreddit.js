@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.6601967071be6f189add.js
-// Retrieved at 2/3/2022, 2:00:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.9c64b6e54251dbd65fac.js
+// Retrieved at 2/3/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -8310,6 +8310,8 @@
 			"use strict";
 			n.d(t, "b", (function() {
 				return w
+			})), n.d(t, "c", (function() {
+				return L
 			}));
 			var s = n("./src/lib/isUrl/index.ts"),
 				r = n("./node_modules/react/index.js"),
@@ -8437,8 +8439,8 @@
 						placeholderImage: O,
 						redditStyle: x,
 						theme: S
-					}), I = w(e), P = d ? _.SourceElement.PostImage : _.SourceElement.ListingPostImage, T = L(f, t, N, k, j, S, I, l, y, E, x, u, p, h, r), A = Object(b.D)(f);
-					return Object(s.a)(A) && !E && A.indexOf("redditmedia") < 0 ? a.a.createElement("div", {
+					}), I = w(e), P = d ? _.SourceElement.PostImage : _.SourceElement.ListingPostImage, T = A(f, t, N, k, j, S, I, l, y, E, x, u, p, h, r), L = Object(b.D)(f);
+					return Object(s.a)(L) && !E && L.indexOf("redditmedia") < 0 ? a.a.createElement("div", {
 						className: Object(o.a)(g.a.container, C ? g.a.usePreview : "", n)
 					}, a.a.createElement(m.b, {
 						href: Object(b.D)(f),
@@ -8465,8 +8467,9 @@
 					return s && r ? r.url : t.isSponsored && r && "default" === o.url ? r.url : T(a) ? a.scrubberThumbSource : o.url
 				},
 				T = e => !!e && e.type === b.o.LIVEVIDEO,
-				L = (e, t, n, r, i, c, l, u, m, p, b, h, f, _, x) => {
-					const v = e.source && !e.isSponsored || !1;
+				L = e => e.source && !e.isSponsored || !1,
+				A = (e, t, n, r, i, c, l, u, m, p, b, h, f, _, x) => {
+					const v = L(e);
 					if (Object(s.a)(l)) {
 						const n = T(e.media),
 							s = n ? {
@@ -12250,4 +12253,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6601967071be6f189add.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.9c64b6e54251dbd65fac.js.map

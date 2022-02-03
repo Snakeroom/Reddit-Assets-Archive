@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.a786a89287629835eca3.js
-// Retrieved at 2/3/2022, 2:00:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.e6522c6b9428ac900ae5.js
+// Retrieved at 2/3/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -17509,6 +17509,8 @@
 			"use strict";
 			n.d(t, "b", (function() {
 				return P
+			})), n.d(t, "c", (function() {
+				return R
 			}));
 			var o = n("./src/lib/isUrl/index.ts"),
 				s = n("./node_modules/react/index.js"),
@@ -17636,8 +17638,8 @@
 						placeholderImage: _,
 						redditStyle: E,
 						theme: k
-					}), I = P(e), w = l ? g.SourceElement.PostImage : g.SourceElement.ListingPostImage, N = R(f, t, j, T, v, k, I, d, O, x, E, u, p, b, s), M = Object(h.D)(f);
-					return Object(o.a)(M) && !x && M.indexOf("redditmedia") < 0 ? r.a.createElement("div", {
+					}), I = P(e), w = l ? g.SourceElement.PostImage : g.SourceElement.ListingPostImage, N = M(f, t, j, T, v, k, I, d, O, x, E, u, p, b, s), R = Object(h.D)(f);
+					return Object(o.a)(R) && !x && R.indexOf("redditmedia") < 0 ? r.a.createElement("div", {
 						className: Object(i.a)(C.a.container, S ? C.a.usePreview : "", n)
 					}, r.a.createElement(m.b, {
 						href: Object(h.D)(f),
@@ -17664,8 +17666,9 @@
 					return o && s ? s.url : t.isSponsored && s && "default" === i.url ? s.url : N(r) ? r.scrubberThumbSource : i.url
 				},
 				N = e => !!e && e.type === h.o.LIVEVIDEO,
-				R = (e, t, n, s, a, c, d, u, m, p, h, b, f, g, E) => {
-					const y = e.source && !e.isSponsored || !1;
+				R = e => e.source && !e.isSponsored || !1,
+				M = (e, t, n, s, a, c, d, u, m, p, h, b, f, g, E) => {
+					const y = R(e);
 					if (Object(o.a)(d)) {
 						const n = N(e.media),
 							o = n ? {
@@ -30948,4 +30951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.a786a89287629835eca3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e6522c6b9428ac900ae5.js.map

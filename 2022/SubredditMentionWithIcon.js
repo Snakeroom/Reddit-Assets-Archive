@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.f105238a4d376754f0be.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.8c55cc8f8078522fe82d.js
+// Retrieved at 2/3/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -984,6 +984,8 @@
 			"use strict";
 			s.d(t, "b", (function() {
 				return P
+			})), s.d(t, "c", (function() {
+				return D
 			}));
 			var n = s("./src/lib/isUrl/index.ts"),
 				i = s("./node_modules/react/index.js"),
@@ -1111,8 +1113,8 @@
 						placeholderImage: v,
 						redditStyle: E,
 						theme: y
-					}), T = P(e), k = d ? O.SourceElement.PostImage : O.SourceElement.ListingPostImage, L = D(f, t, g, j, I, y, T, l, C, x, E, u, m, h, i), w = Object(p.D)(f);
-					return Object(n.a)(w) && !x && w.indexOf("redditmedia") < 0 ? r.a.createElement("div", {
+					}), T = P(e), k = d ? O.SourceElement.PostImage : O.SourceElement.ListingPostImage, L = w(f, t, g, j, I, y, T, l, C, x, E, u, m, h, i), D = Object(p.D)(f);
+					return Object(n.a)(D) && !x && D.indexOf("redditmedia") < 0 ? r.a.createElement("div", {
 						className: Object(o.a)(_.a.container, N ? _.a.usePreview : "", s)
 					}, r.a.createElement(b.b, {
 						href: Object(p.D)(f),
@@ -1139,8 +1141,9 @@
 					return n && i ? i.url : t.isSponsored && i && "default" === o.url ? i.url : L(r) ? r.scrubberThumbSource : o.url
 				},
 				L = e => !!e && e.type === p.o.LIVEVIDEO,
-				D = (e, t, s, i, c, a, l, u, b, m, p, h, f, O, E) => {
-					const S = e.source && !e.isSponsored || !1;
+				D = e => e.source && !e.isSponsored || !1,
+				w = (e, t, s, i, c, a, l, u, b, m, p, h, f, O, E) => {
+					const S = D(e);
 					if (Object(n.a)(l)) {
 						const s = L(e.media),
 							n = s ? {
@@ -1718,4 +1721,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.f105238a4d376754f0be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.8c55cc8f8078522fe82d.js.map
