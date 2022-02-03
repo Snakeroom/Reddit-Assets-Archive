@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Comment.d5f71574a844abf1a50e.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Comment.cc12d4eeba86b308bf0c.js
+// Retrieved at 2/3/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Comment"], {
 		"./src/reddit/actions/gold/giveAward.ts": function(e, t, r) {
@@ -2694,7 +2694,7 @@
 						experimentEligibilitySelector: o.K,
 						experimentName: s.yc
 					});
-					return !(!t || Object(s.qf)(t))
+					return !(!t || Object(s.of)(t))
 				},
 				d = e => {
 					return Object(n.c)(e, {
@@ -2905,4 +2905,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.d5f71574a844abf1a50e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.cc12d4eeba86b308bf0c.js.map

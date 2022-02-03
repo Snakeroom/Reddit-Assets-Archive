@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.3fd5e29410b89cbbb780.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.041682891dfbe51a762e.js
+// Retrieved at 2/3/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Kd
+					experimentName: u.Id
 				});
-				return Object(u.qf)(t) ? void 0 : t
+				return Object(u.of)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ld
+					experimentName: u.Jd
 				});
-				return Object(u.qf)(t) ? void 0 : t
-			}, (e, t) => e === u.Od.Enabled && t === u.Od.Enabled);
+				return Object(u.of)(t) ? void 0 : t
+			}, (e, t) => e === u.Md.Enabled && t === u.Md.Enabled);
 			var h = n("./src/config.ts");
 			var f = n("./src/reddit/selectors/user.ts");
 			const b = e => {
@@ -3682,21 +3682,6 @@
 					...o.m(t)
 				})
 		},
-		"./src/reddit/hooks/useExperimentVariant.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return o
-			}));
-			var s = n("./node_modules/react-redux/es/index.js"),
-				r = n("./src/reddit/helpers/chooseVariant/index.ts");
-
-			function o(e, t = r.a) {
-				return Object(s.e)(n => Object(r.c)(n, {
-					experimentName: e,
-					experimentEligibilitySelector: t
-				}))
-			}
-		},
 		"./src/reddit/hooks/useInfoTextTooltip.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -4341,4 +4326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.3fd5e29410b89cbbb780.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.041682891dfbe51a762e.js.map

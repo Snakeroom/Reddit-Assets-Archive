@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.6adf53060d540e1c5ea0.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.58e0e9a632649ba4c8f5.js
+// Retrieved at 2/3/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -8098,37 +8098,37 @@
 					if (Object(i.a)(t)) return !1;
 					return Object(r.c)(t, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.mf
+						experimentName: o.kf
 					}) === o.Yc
 				},
 				a = t => {
 					return Object(r.c)(t, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.nf
+						experimentName: o.lf
 					}) === o.Yc
 				},
 				l = t => {
 					if (Object(i.a)(t)) return !1;
 					const e = Object(r.c)(t, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.lf
+						experimentName: o.jf
 					});
-					return e === o.ef.UIChangesOnly || e === o.ef.TypingIndicators || e === o.ef.IndicatorsPlusCTA
+					return e === o.cf.UIChangesOnly || e === o.cf.TypingIndicators || e === o.cf.IndicatorsPlusCTA
 				},
 				d = t => {
 					if (Object(i.a)(t)) return !1;
 					const e = Object(s.d)(t, {
-							experimentName: o.lf
+							experimentName: o.jf
 						}),
 						n = null == e ? void 0 : e.variant;
-					return n === o.ef.TypingIndicators || n === o.ef.IndicatorsPlusCTA
+					return n === o.cf.TypingIndicators || n === o.cf.IndicatorsPlusCTA
 				},
 				u = t => {
 					if (Object(i.a)(t)) return !1;
 					const e = Object(s.d)(t, {
-						experimentName: o.lf
+						experimentName: o.jf
 					});
-					return (null == e ? void 0 : e.variant) === o.ef.IndicatorsPlusCTA
+					return (null == e ? void 0 : e.variant) === o.cf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(t, e, n) {
@@ -8196,4 +8196,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.6adf53060d540e1c5ea0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.58e0e9a632649ba4c8f5.js.map

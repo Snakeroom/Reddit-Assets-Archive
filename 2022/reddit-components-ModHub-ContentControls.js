@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.a1a27916e1ee35fee1f8.js
-// Retrieved at 2/2/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.d3b7283c9c7702afe401.js
+// Retrieved at 2/3/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -134,11 +134,11 @@
 				F = n("./src/config.ts"),
 				N = n("./src/reddit/models/HatefulContentFilters/index.ts");
 			const P = `${F.a.redditModHelpUrl}/hc/en-us/articles/360010322091`,
-				M = 2,
-				O = 300,
+				O = 2,
+				M = 300,
 				D = 400,
-				I = 90,
-				j = 1e5,
+				j = 90,
+				I = 1e5,
 				A = 15,
 				H = 40,
 				W = 5,
@@ -524,8 +524,8 @@
 						onChange: this.onTitleLengthChange,
 						min: e.titleLength.min,
 						max: e.titleLength.max,
-						minLimit: M,
-						maxLimit: O,
+						minLimit: O,
+						maxLimit: M,
 						errors: e.titleLength.clientErrors
 					})), d.a.createElement(xe, {
 						on: e.titleRegexes.enabled,
@@ -583,8 +583,8 @@
 			}
 			var Re = n("./node_modules/lodash/difference.js"),
 				ve = n.n(Re),
-				_e = n("./src/reddit/hooks/useExperimentVariant.ts"),
-				qe = n("./src/reddit/hooks/useTracking.ts"),
+				_e = n("./src/reddit/helpers/chooseVariant/index.ts");
+			var qe = n("./src/reddit/hooks/useTracking.ts"),
 				we = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/lib/memoizeByReference/index.ts")),
 				Te = n("./src/reddit/components/MultiOptionSelect/index.tsx"),
 				Be = n("./src/reddit/components/ModHub/ContentControls/MultiStringsInput/index.m.less"),
@@ -636,20 +636,20 @@
 			}
 			var Ne = n("./node_modules/lodash/clamp.js"),
 				Pe = n.n(Ne),
-				Me = n("./src/reddit/controls/DiscreteSlideSelector/Bars/index.m.less"),
-				Oe = n.n(Me);
+				Oe = n("./src/reddit/controls/DiscreteSlideSelector/Bars/index.m.less"),
+				Me = n.n(Oe);
 
 			function De(e) {
 				const t = Array.from({
 					length: e.optionColors.length - 1
 				});
 				return d.a.createElement("div", {
-					className: Object(K.a)(Oe.a.container, e.className),
+					className: Object(K.a)(Me.a.container, e.className),
 					style: {
 						gridTemplateColumns: `repeat(${t.length}, 1fr)`
 					}
 				}, t.map((t, n) => d.a.createElement("div", {
-					className: Oe.a.segment,
+					className: Me.a.segment,
 					key: n,
 					style: {
 						backgroundColor: n < e.currentStop ? e.optionColors[e.currentStop] : void 0
@@ -657,19 +657,19 @@
 				})))
 			}
 
-			function Ie(e) {
+			function je(e) {
 				return ["0.5fr", ...Array.from({
 					length: e - 2
 				}).map(e => "1fr"), "0.5fr"].join(" ")
 			}
-			var je = n("./src/reddit/controls/DiscreteSlideSelector/Labels/index.m.less"),
-				Ae = n.n(je);
+			var Ie = n("./src/reddit/controls/DiscreteSlideSelector/Labels/index.m.less"),
+				Ae = n.n(Ie);
 
 			function He(e) {
 				return d.a.createElement("div", {
 					className: Object(K.a)(Ae.a.container, e.className),
 					style: {
-						gridTemplateColumns: Ie(e.options.length)
+						gridTemplateColumns: je(e.options.length)
 					}
 				}, e.options.map(t => d.a.createElement("div", {
 					className: Object(K.a)(Ae.a.label, {
@@ -695,7 +695,7 @@
 				return d.a.createElement("div", {
 					className: Object(K.a)(Ve.a.container, e.className),
 					style: {
-						gridTemplateColumns: Ie(e.numStops)
+						gridTemplateColumns: je(e.numStops)
 					},
 					onMouseUp: e => {
 						t.current = !1
@@ -845,7 +845,12 @@
 				const {
 					formState: t,
 					onChange: n
-				} = e, i = "enabled" === Object(_e.a)("automated_reporting_wordlist"), o = Object(qe.a)();
+				} = e, i = "enabled" === function(e, t = _e.a) {
+					return Object(c.e)(n => Object(_e.c)(n, {
+						experimentName: e,
+						experimentEligibilitySelector: t
+					}))
+				}("automated_reporting_wordlist"), o = Object(qe.a)();
 				return d.a.createElement("fieldset", null, d.a.createElement("legend", {
 					className: at.a.title
 				}, s.fbt._("Automated Filtering", null, {
@@ -1019,8 +1024,8 @@
 					}) => ce({
 						min: e,
 						max: t,
-						minLimit: M,
-						maxLimit: O
+						minLimit: O,
+						maxLimit: M
 					}))(t.titleLength), t.bodyBlacklistedStrings.clientErrors = Rt(t), t.bodyRequiredStrings.clientErrors = Et(t), t.titleBlacklistedStrings.clientErrors = (e => {
 						const t = St(e);
 						return [...Ct(t.requiredStrings, t.blacklistedStrings), ...kt(t.blacklistedStrings, t.maxTitleLength)]
@@ -1196,7 +1201,7 @@
 					}, this.onRepostFrequencyChange = e => {
 						const {
 							formState: t
-						} = this.props, n = le(e.target.value, 1, I);
+						} = this.props, n = le(e.target.value, 1, j);
 						this.props.onChange({
 							repostFrequency: {
 								...t.repostFrequency,
@@ -1349,7 +1354,7 @@
 					}, d.a.createElement("textarea", {
 						"aria-invalid": !!n.length,
 						className: fe.a.domainsTextarea,
-						maxLength: j,
+						maxLength: I,
 						onBlur: this.onLinkDomainsBlur,
 						onChange: this.onLinkDomainsTextChange,
 						placeholder: s.fbt._("Example: website.com", null, {
@@ -1375,7 +1380,7 @@
 						label: s.fbt._("number of days", null, {
 							hk: "1sPFop"
 						}),
-						max: I,
+						max: j,
 						min: 1,
 						onChange: this.onRepostFrequencyChange,
 						type: "number",
@@ -1399,7 +1404,7 @@
 			var Pt = Object(c.b)(Nt)(e => d.a.createElement(d.a.Fragment, null, (e => [...e.hatefulContentFiltersEnabled ? [dt] : [], Lt, Ee])(e).map((t, n) => d.a.createElement(t, Ft({
 					key: n
 				}, e))))),
-				Mt = e => {
+				Ot = e => {
 					const {
 						bodyBlacklistedStrings: t,
 						bodyRegexes: n,
@@ -1483,7 +1488,7 @@
 						}
 					}
 				};
-			const Ot = {
+			const Mt = {
 					bodyBlacklistedStrings: [],
 					bodyRegexes: [],
 					bodyRequiredStrings: [],
@@ -1501,9 +1506,9 @@
 					titleTextMinLength: null
 				},
 				Dt = e => e.filter(e => !!e);
-			var It = e => {
+			var jt = e => {
 					const t = {
-							...Ot,
+							...Mt,
 							bodyRestrictionPolicy: e.bodyRequirement.restrictionPolicy,
 							guidelinesText: e.guidelines.enabled ? e.guidelines.guidelineText : null,
 							isFlairRequired: e.flairRequirement.enabled,
@@ -1523,15 +1528,15 @@
 					}
 					return t
 				},
-				jt = n("./node_modules/lodash/isEqual.js"),
-				At = n.n(jt),
+				It = n("./node_modules/lodash/isEqual.js"),
+				At = n.n(It),
 				Ht = (e, t) => {
 					if (At()(e, t)) return {
 						hatefulContentFilters: {},
 						postRequirements: {}
 					};
-					const n = It(e),
-						s = It(t),
+					const n = jt(e),
+						s = jt(t),
 						i = S()(n, (e, t) => At()(e, s[t])),
 						o = {};
 					return Object.keys(t.hatefulContentFilters).forEach(n => {
@@ -1598,7 +1603,7 @@
 						if (!this.isUnmounted)
 							if (this.setState({
 									isSavePending: !1
-								}), r.success) this.props.sendEvent(w(It(s))), this.setState({
+								}), r.success) this.props.sendEvent(w(jt(s))), this.setState({
 								formState: s,
 								initialFormState: s,
 								hasJustSaved: !0
@@ -1647,7 +1652,7 @@
 							}
 						})
 					};
-					const t = e.contentControls ? Mt(e.contentControls) : U;
+					const t = e.contentControls ? Ot(e.contentControls) : U;
 					this.state = {
 						areContentControlsLoaded: !!e.contentControls,
 						formState: t,
@@ -1665,7 +1670,7 @@
 						contentControls: n
 					} = this.props;
 					if (n && !this.state.areContentControlsLoaded) {
-						const e = Mt(n);
+						const e = Ot(n);
 						this.setState({
 							areContentControlsLoaded: !0,
 							formState: e,
@@ -1768,4 +1773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.a1a27916e1ee35fee1f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.d3b7283c9c7702afe401.js.map

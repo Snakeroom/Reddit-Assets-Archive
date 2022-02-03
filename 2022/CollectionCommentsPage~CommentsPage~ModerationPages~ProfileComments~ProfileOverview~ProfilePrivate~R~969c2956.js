@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.64072e0c3768702e2ca1.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.576ded4aa3542bc7bee4.js
+// Retrieved at 2/3/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -923,29 +923,27 @@
 				m = s("./src/reddit/actions/post.ts"),
 				u = s("./src/reddit/components/CountAnimation/index.tsx"),
 				b = s("./src/reddit/constants/componentTestIds.ts"),
-				h = s("./src/reddit/constants/experiments.ts"),
-				x = s("./src/reddit/constants/postLayout.ts"),
-				f = s("./src/reddit/helpers/path/index.ts"),
-				O = s("./src/reddit/hooks/useClickSourceData.ts"),
-				C = s("./src/reddit/hooks/useExperimentVariant.ts"),
-				v = s("./src/reddit/icons/fonts/Comment/index.tsx"),
-				g = s("./src/reddit/selectors/chatPost.ts"),
-				_ = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
-				k = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
-				j = s("./src/reddit/selectors/experiments/postSeo.ts"),
-				w = s("./src/reddit/selectors/posts.ts"),
-				E = s("./src/reddit/selectors/user.ts"),
-				y = s("./src/reddit/components/CommentsLink/index.m.less"),
-				I = s.n(y);
-			const P = () => 0,
-				T = Object(i.b)(() => Object(c.c)({
-					isChatPost: g.d,
-					isPostSEOEligible: j.e,
-					postPermalink: w.F,
-					shouldOpenPostInNewTab: E.db,
-					isBlockingInterstitialEnabled: _.b
+				h = s("./src/reddit/constants/postLayout.ts"),
+				x = s("./src/reddit/helpers/path/index.ts"),
+				f = s("./src/reddit/hooks/useClickSourceData.ts"),
+				O = s("./src/reddit/icons/fonts/Comment/index.tsx"),
+				C = s("./src/reddit/selectors/chatPost.ts"),
+				v = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
+				g = s("./src/reddit/selectors/experiments/postActionBarAnimation.ts"),
+				_ = s("./src/reddit/selectors/experiments/postSeo.ts"),
+				k = s("./src/reddit/selectors/posts.ts"),
+				j = s("./src/reddit/selectors/user.ts"),
+				w = s("./src/reddit/components/CommentsLink/index.m.less"),
+				E = s.n(w);
+			const y = () => 0,
+				I = Object(i.b)(() => Object(c.c)({
+					isChatPost: C.d,
+					isPostSEOEligible: _.e,
+					postPermalink: k.F,
+					shouldOpenPostInNewTab: j.db,
+					isBlockingInterstitialEnabled: v.b
 				})),
-				S = ({
+				P = ({
 					hasModPostPerms: e,
 					isCountAnimShadowTestEnabled: t,
 					isChatPost: s,
@@ -953,28 +951,28 @@
 					modModeEnabled: c,
 					numComments: l,
 					postId: b,
-					shouldShowIcon: h,
+					shouldShowIcon: x,
 					shouldShowText: f,
-					text: O,
-					type: C
+					text: C,
+					type: v
 				}) => {
-					let g;
-					g = O || (C === x.g.Compact || s || c && e ? Object(p.b)(l) : o.fbt._({
+					let _;
+					_ = C || (v === h.g.Compact || s || c && e ? Object(p.b)(l) : o.fbt._({
 						"*": "{number} comments",
 						_1: "1 comment"
 					}, [o.fbt._plural(l, "number", Object(p.b)(l))], {
 						hk: "1QeOde"
 					}));
-					const _ = Object(i.d)(),
+					const k = Object(i.d)(),
 						j = Object(n.useCallback)(e => {
 							const {
 								commentCountChange: t
 							} = e.subscribe.data;
-							0 !== t && _(Object(m.H)({
+							0 !== t && k(Object(m.H)({
 								postId: b,
 								delta: t
 							}))
-						}, [_, b]),
+						}, [k, b]),
 						w = Object(n.useRef)({
 							input: {
 								channel: {
@@ -984,27 +982,27 @@
 								}
 							}
 						}),
-						E = a && l < k.a;
-					return r.a.createElement(n.Fragment, null, h && r.a.createElement(v.a, {
-						className: I.a.commentIcon,
+						I = a && l < g.a;
+					return r.a.createElement(n.Fragment, null, x && r.a.createElement(O.a, {
+						className: E.a.commentIcon,
 						role: "presentation"
 					}), f && r.a.createElement("span", {
-						className: I.a.text
-					}, (E || t) && r.a.createElement(u.b, {
+						className: E.a.text
+					}, (I || t) && r.a.createElement(u.b, {
 						countToUpperBound: l,
-						incrementDelta: P,
-						initialDelay: P,
+						incrementDelta: y,
+						initialDelay: y,
 						initialDisplayCount: l,
 						postId: b,
 						shouldDisjointAnimation: !0,
-						subsequentRecurringDelay: P,
+						subsequentRecurringDelay: y,
 						featureName: u.a.Comment,
 						queryKey: "postCommentCount",
 						queryVariables: w.current,
 						onDataCB: j,
-						isLoadTestOnly: !!t && !E
-					}), !E && g), f && (!c || !e) && E && r.a.createElement("span", {
-						className: Object(d.a)(I.a.text, I.a.commentsText)
+						isLoadTestOnly: !!t && !I
+					}), !I && _), f && (!c || !e) && I && r.a.createElement("span", {
+						className: Object(d.a)(E.a.text, E.a.commentsText)
 					}, o.fbt._({
 						"*": "comments",
 						_1: " comment"
@@ -1012,7 +1010,7 @@
 						hk: "119Rxn"
 					})))
 				};
-			t.a = T(e => {
+			t.a = I(e => {
 				const {
 					className: t,
 					hasModPostPerms: s,
@@ -1021,47 +1019,47 @@
 					isCommentPermalink: c,
 					isCommentsPage: p,
 					isOverlay: u,
-					isPostSEOEligible: x,
-					modModeEnabled: v,
-					numComments: g,
-					onClick: _,
-					postPermalink: k,
-					shouldOpenPostInNewTab: j,
-					shouldShowIcon: w = !0,
-					shouldShowText: E = !0,
-					text: y,
-					type: P,
-					postId: T,
-					isCommentCountAnimation: N,
-					isCountAnimShadowTestEnabled: M,
-					isBlockingInterstitialEnabled: F
-				} = e, R = Object(i.d)(), A = p && !c && !x, L = c && !u, D = Object(O.a)(), B = Object(C.a)(h.jd) === h.qd.Enabled, W = r.a.createElement(S, {
+					isPostSEOEligible: h,
+					modModeEnabled: O,
+					numComments: C,
+					onClick: v,
+					postPermalink: g,
+					shouldOpenPostInNewTab: _,
+					shouldShowIcon: k = !0,
+					shouldShowText: j = !0,
+					text: w,
+					type: y,
+					postId: I,
+					isCommentCountAnimation: T,
+					isCountAnimShadowTestEnabled: S,
+					isBlockingInterstitialEnabled: N
+				} = e, M = Object(i.d)(), F = p && !c && !h, R = c && !u, A = Object(f.a)(), L = r.a.createElement(P, {
 					hasModPostPerms: s,
-					isCountAnimShadowTestEnabled: !!M,
+					isCountAnimShadowTestEnabled: !!S,
 					isChatPost: n,
-					isCommentCountAnimation: !!N,
-					modModeEnabled: v,
-					numComments: g,
-					postId: T,
-					shouldShowIcon: w,
-					shouldShowText: E,
-					text: y,
-					type: P
+					isCommentCountAnimation: !!T,
+					modModeEnabled: O,
+					numComments: C,
+					postId: I,
+					shouldShowIcon: k,
+					shouldShowText: j,
+					text: w,
+					type: y
 				});
-				return A ? r.a.createElement("div", {
-					className: Object(d.a)(I.a.commentsLink, I.a.defaultCursorWrapper, t),
-					onClick: _
-				}, W) : r.a.createElement(a.a, {
+				return F ? r.a.createElement("div", {
+					className: Object(d.a)(E.a.commentsLink, E.a.defaultCursorWrapper, t),
+					onClick: v
+				}, L) : r.a.createElement(a.a, {
 					rel: "nofollow",
 					"data-click-id": "comments",
 					"data-test-id": b.a,
-					className: Object(d.a)(I.a.commentsLink, I.a.link, t),
-					target: o || j ? "_blank" : void 0,
-					to: L ? Object(f.b)(k) : B ? Object(l.a)(k, !0, D) : Object(l.a)(k),
+					className: Object(d.a)(E.a.commentsLink, E.a.link, t),
+					target: o || _ ? "_blank" : void 0,
+					to: R ? Object(x.b)(g) : Object(l.a)(g, !0, A),
 					onClick: e => {
-						F && (e.preventDefault(), R(Object(m.Y)(Object(f.b)(k), T))), _ && _()
+						N && (e.preventDefault(), M(Object(m.Y)(Object(x.b)(g), I))), v && v()
 					}
-				}, W)
+				}, L)
 			})
 		},
 		"./src/reddit/components/ContentTooltip/index.m.less": function(e, t, s) {
@@ -4271,4 +4269,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.64072e0c3768702e2ca1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.576ded4aa3542bc7bee4.js.map
