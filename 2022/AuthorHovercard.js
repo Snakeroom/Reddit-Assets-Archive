@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.face27adbbf88e373d78.js
-// Retrieved at 2/3/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.b2e7a2c33640a1e15cb8.js
+// Retrieved at 2/3/2022, 2:00:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -438,7 +438,7 @@
 					u = (e => Object(I.c)(e, {
 						experimentName: _.Gb,
 						experimentEligibilitySelector: I.a
-					}) === _.Yc)(i);
+					}) === _.Zc)(i);
 				if (await Object(o.a)() || l) return;
 				await N(i, r);
 				g.j(i), await Object(c.b)(e, t, () => {
@@ -789,7 +789,7 @@
 							return e
 					}
 				},
-				Y = Object(w.c)({
+				Q = Object(w.c)({
 					api: T,
 					fetchedTokens: U,
 					inContext: A,
@@ -800,10 +800,10 @@
 				});
 			Object(j.a)({
 				features: {
-					banned: Y
+					banned: Q
 				}
 			});
-			const Q = Object(o.a)(C.o),
+			const Y = Object(o.a)(C.o),
 				J = Object(o.a)(C.n),
 				X = Object(o.a)(C.m),
 				$ = (e, t = {}) => async (n, r, {
@@ -814,7 +814,7 @@
 						i = Object(_.d)(e, o),
 						c = s.features.banned.fetchedTokens[i];
 					if (s.features.banned.api.pending[i] || c) return;
-					n(Q({
+					n(Y({
 						subredditId: e,
 						fetchedToken: o
 					}));
@@ -1181,9 +1181,9 @@
 				q = n("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				V = n("./src/reddit/selectors/bannedUser.ts"),
 				Z = n("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
-				Y = n.n(Z);
+				Q = n.n(Z);
 			const {
-				fbt: Q
+				fbt: Y
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), J = Object(o.c)({
 				hasModMailPermissions: Object(u.b)(q.c.mail),
 				isUserBanned: (e, t) => !!Object(V.b)(e, {
@@ -1219,8 +1219,8 @@
 					}, a.a.createElement(z.a, {
 						name: "ban",
 						isFilled: !0,
-						className: Y.a.icon
-					}), Q._("Unban User", null, {
+						className: Q.a.icon
+					}), Y._("Unban User", null, {
 						hk: "1aASyW"
 					})) : a.a.createElement(K.a, {
 						role: "button",
@@ -1229,8 +1229,8 @@
 						}
 					}, a.a.createElement(z.a, {
 						name: "ban",
-						className: Y.a.icon
-					}), Q._("Ban User", null, {
+						className: Q.a.icon
+					}), Y._("Ban User", null, {
 						hk: "3OhuLx"
 					})), n && a.a.createElement(K.a, {
 						role: "button",
@@ -1239,8 +1239,8 @@
 						}
 					}, a.a.createElement(z.a, {
 						name: "mod_mute",
-						className: Y.a.icon
-					}), Q._("Mute User", null, {
+						className: Q.a.icon
+					}), Y._("Mute User", null, {
 						hk: "3MCujH"
 					})))
 				}
@@ -1282,7 +1282,7 @@
 					}
 				}, a.a.createElement(z.a, {
 					name: "tag",
-					className: Y.a.icon
+					className: Q.a.icon
 				}), te._("Edit user flair", null, {
 					hk: "4mTxM"
 				}))),
@@ -2332,8 +2332,8 @@
 			}
 			var V = n("./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts"),
 				Z = n("./src/reddit/helpers/localStorage/index.ts");
-			var Y = n("./src/reddit/hooks/useInboxPrivacyPolicyBannerSeen.ts"),
-				Q = n("./src/reddit/hooks/useTracking.ts");
+			var Q = n("./src/reddit/hooks/useInboxPrivacyPolicyBannerSeen.ts"),
+				Y = n("./src/reddit/hooks/useTracking.ts");
 
 			function J() {
 				return (J = Object.assign || function(e) {
@@ -2410,7 +2410,7 @@
 					hk: "3L3tFc"
 				}))),
 				ne = e => {
-					const t = Object(Q.a)(),
+					const t = Object(Y.a)(),
 						{
 							clearMessageTabBadgeCount: n,
 							inboxBadgeCount: r,
@@ -2431,7 +2431,7 @@
 							}, [])]
 						}(h),
 						[x, _] = Object(V.a)(h),
-						[I, O] = Object(Y.a)(h),
+						[I, O] = Object(Q.a)(h),
 						y = !(!l || !l.length),
 						E = Object(o.a)(),
 						N = E === i.a.Closed || E === i.a.Default || E === i.a.Denied,
@@ -4667,23 +4667,23 @@
 			const s = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.nb
-				}) === r.fd.Karma,
+				}) === r.gd.Karma,
 				o = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.nb
-				}) === r.fd.Memes,
+				}) === r.gd.Memes,
 				i = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.nb
-				}) === r.fd.PnEmail,
+				}) === r.gd.PnEmail,
 				c = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.nb
-				}) === r.fd.Cats,
+				}) === r.gd.Cats,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.nb
-				}) === r.fd.Popular,
+				}) === r.gd.Popular,
 				l = e => d(e) || c(e) || i(e) || o(e) || s(e)
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, n) {
@@ -4730,4 +4730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.face27adbbf88e373d78.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.b2e7a2c33640a1e15cb8.js.map

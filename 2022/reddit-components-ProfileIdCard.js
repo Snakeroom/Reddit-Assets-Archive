@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.6d70e45f3f43ff8b4de5.js
-// Retrieved at 2/3/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.aeee6af08f94c3262cb7.js
+// Retrieved at 2/3/2022, 2:00:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1912,16 +1912,16 @@
 				G = r("./src/reddit/components/CrisisFlow/index.tsx"),
 				H = r("./src/higherOrderComponents/makeAsync.tsx"),
 				K = r("./src/lib/loadWithRetries/index.ts");
-			var z = Object(H.a)({
+			var Z = Object(H.a)({
 					getComponent: () => Object(K.a)(() => r.e("GivePremiumModal").then(r.bind(null, "./src/reddit/components/GivePremiumModal/index.tsx"))).then(e => e.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				Z = r("./src/reddit/constants/modals.ts"),
-				Y = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				q = r("./src/reddit/helpers/styles/mixins/loading.ts"),
-				V = r("./src/reddit/models/Gold/Premium/index.ts"),
-				Q = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
+				z = r("./src/reddit/constants/modals.ts"),
+				q = r("./src/reddit/helpers/correlationIdTracker.ts"),
+				V = r("./src/reddit/helpers/styles/mixins/loading.ts"),
+				Q = r("./src/reddit/models/Gold/Premium/index.ts"),
+				Y = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
 				X = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				J = r("./src/reddit/selectors/premium.ts"),
 				$ = r("./src/reddit/components/ProfileIdCard/footer.m.less"),
@@ -1945,13 +1945,13 @@
 					isLoggedIn: k.K,
 					profile: O.j,
 					crisisFlowEnabled: X.b,
-					chatInviteLinkSharing: Q.a
+					chatInviteLinkSharing: Y.a
 				}),
 				ne = ({
 					isLoading: e,
 					...t
 				}) => a.a.createElement("div", te({}, t, {
-					className: Object(L.a)(ee.a.Shimmer, Object(q.b)({
+					className: Object(L.a)(ee.a.Shimmer, Object(V.b)({
 						isLoading: e
 					}))
 				}));
@@ -1965,7 +1965,7 @@
 							onClickGivePremium: e,
 							sendEvent: t
 						} = this.props;
-						e(Object(Y.e)(Y.a.GiftPremiumFlow));
+						e(Object(q.e)(q.a.GiftPremiumFlow));
 						const {
 							clickGivePremiumEvent: n
 						} = await r.e("givePremiumTrackers").then(r.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
@@ -1997,7 +1997,7 @@
 							onClickChatInviteLink: f,
 							onClickUnblockUser: b,
 							isUserBlocked: x
-						} = this.props, g = o && Object(V.d)(n, a).length && !c || a, v = S()([(c || i) && s ? {
+						} = this.props, g = o && Object(Q.d)(n, a).length && !c || a, v = S()([(c || i) && s ? {
 							text: w.fbt._("Profile Moderation", null, {
 								hk: "4x1una"
 							}),
@@ -2114,7 +2114,7 @@
 					}, a.a.createElement(b.r, {
 						className: ee.a.expandButton,
 						onClick: this.moreOptionsToggled
-					}, s)), e && a.a.createElement(z, null), this.state.showCrisisModal && a.a.createElement(G.b, {
+					}, s)), e && a.a.createElement(Z, null), this.state.showCrisisModal && a.a.createElement(G.b, {
 						withOverlay: !0,
 						overlayCustomStyles: G.a,
 						fromUserProfile: !0,
@@ -2128,7 +2128,7 @@
 					sendEvent: n
 				}) => ({
 					addToMultiClicked: () => {
-						e(Object(F.a)(() => Promise.all([r.e("CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"), r.e("CountryPage~Multireddit"), r.e("Multireddit")]).then(r.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(R.h)(Z.a.MULTIREDDIT_ADD_SUBREDDIT))
+						e(Object(F.a)(() => Promise.all([r.e("CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"), r.e("CountryPage~Multireddit"), r.e("Multireddit")]).then(r.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(R.h)(z.a.MULTIREDDIT_ADD_SUBREDDIT))
 					},
 					onClickGivePremium: r => e(Object(M.e)({
 						correlationId: r,
@@ -2316,12 +2316,12 @@
 					prefShowSnoovatar: L,
 					snoovatarFullBodyAsset: F,
 					username: B
-				} = _, T = !!t && t.id === y, D = !(!t || !t.snoovatarFullBodyAsset), A = b && b.bannerBackgroundImage, M = !!m && m.isNSFW, R = M && s, W = !(!p || !p.userIsSubscriber), G = `/user/${B}/`, H = C && C.url === G, K = !p || p.acceptChats, z = !p || p.acceptPms, Z = I && Object(le.b)(F);
+				} = _, T = !!t && t.id === y, D = !(!t || !t.snoovatarFullBodyAsset), A = b && b.bannerBackgroundImage, M = !!m && m.isNSFW, R = M && s, W = !(!p || !p.userIsSubscriber), G = `/user/${B}/`, H = C && C.url === G, K = !p || p.acceptChats, Z = !p || p.acceptPms, z = I && Object(le.b)(F);
 				return a.a.createElement(u.a, {
 					isEmployee: S,
 					isGold: U,
 					isNSFW: M,
-					isNftPreview: Z,
+					isNftPreview: z,
 					isOverlay: i,
 					isOwnProfile: T,
 					publicDescription: p ? p.publicDescription : void 0,
@@ -2367,7 +2367,7 @@
 						allowViewSnoovatar: L,
 						profileName: B,
 						sendEvent: f,
-						userAcceptsPms: z,
+						userAcceptsPms: Z,
 						isUserBlocked: P
 					}),
 					onClickSnoovatar: d,
@@ -2903,13 +2903,13 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.m
-					}) === n.Yc
+					}) === n.Zc
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.n
-					}) === n.Yc
+					}) === n.Zc
 				}
 		},
 		"./src/reddit/selectors/experiments/chatInviteLinkSharing.ts": function(e, t, r) {
@@ -2923,7 +2923,7 @@
 			const o = e => Object(s.c)(e, {
 				experimentName: n.F,
 				experimentEligibilitySelector: () => Object(a.J)(e)
-			}) === n.Yc
+			}) === n.Zc
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -2980,4 +2980,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.6d70e45f3f43ff8b4de5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.aeee6af08f94c3262cb7.js.map
