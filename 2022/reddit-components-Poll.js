@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.283b312c0c561c0efb92.js
-// Retrieved at 2/3/2022, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.82e5bd0a61bab79c78cb.js
+// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -31,7 +31,7 @@
 				shortMonths: o,
 				locale: i = r.D
 			} = {}) {
-				const a = new Date(e * r.Rb);
+				const a = new Date(e * r.Sb);
 				return s.a ? new Intl.DateTimeFormat(i, {
 					month: o ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -64,9 +64,9 @@
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/constants/index.ts");
-			const o = [s.pc, s.pb, s.B, s.Q, s.kb, s.Rb],
+			const o = [s.qc, s.pb, s.B, s.Q, s.kb, s.Sb],
 				i = {
-					[s.Rb]: e => r.fbt._({
+					[s.Sb]: e => r.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [r.fbt._plural(e, "number")], {
@@ -96,7 +96,7 @@
 					}, [r.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[s.pc]: e => r.fbt._({
+					[s.qc]: e => r.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [r.fbt._plural(e, "number")], {
@@ -104,7 +104,7 @@
 					})
 				},
 				a = {
-					[s.Rb]: e => r.fbt._("{amount}s", [r.fbt._param("amount", String(e))], {
+					[s.Sb]: e => r.fbt._("{amount}s", [r.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
 					[s.kb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
@@ -119,13 +119,13 @@
 					[s.pb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.pc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[s.qc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[s.pb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.pc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[s.qc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -134,12 +134,12 @@
 				const c = Date.now(),
 					l = new Date(e).getTime(),
 					d = {
-						[s.pc]: "",
+						[s.qc]: "",
 						[s.pb]: "",
 						[s.B]: "",
 						[s.Q]: "",
 						[s.kb]: "",
-						[s.Rb]: ""
+						[s.Sb]: ""
 					};
 				let u = l - c;
 				if (u <= 0) return r.fbt._("a moment", null, {
@@ -282,7 +282,7 @@
 			})), n.d(t, "f", (function() {
 				return P
 			})), n.d(t, "g", (function() {
-				return w
+				return R
 			})), n.d(t, "d", (function() {
 				return k
 			})), n.d(t, "e", (function() {
@@ -318,10 +318,10 @@
 				P = Object(s.a)(h.r),
 				T = Object(s.a)(h.s),
 				S = Object(s.a)(h.t),
-				R = Object(s.a)(h.u),
-				L = Object(s.a)(h.v),
-				A = Object(s.a)(h.w),
-				w = Object(s.a)(h.x),
+				L = Object(s.a)(h.u),
+				A = Object(s.a)(h.v),
+				w = Object(s.a)(h.w),
+				R = Object(s.a)(h.x),
 				k = (e, t) => async (n, r, {
 					apiContext: s,
 					gqlContext: o
@@ -401,9 +401,9 @@
 				}, V = e => async (t, n, {
 					apiContext: r
 				}) => {
-					t(L());
+					t(A());
 					const s = await Object(b.a)(r(), e);
-					s.ok ? t(A(s.body)) : t(R({
+					s.ok ? t(w(s.body)) : t(L({
 						error: s.error
 					}))
 				}
@@ -509,7 +509,7 @@
 					const n = Object(i.a)(),
 						r = null != t ? t : n;
 					return s.a.createElement(s.a.Fragment, null, function(e, t = d.D) {
-						const n = e * d.Rb;
+						const n = e * d.Sb;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -534,7 +534,7 @@
 
 			function f(e, t, n = !1, r = d.D) {
 				const s = Object(p.e)(e, t),
-					o = new Date(e * d.Rb);
+					o = new Date(e * d.Sb);
 				let i;
 				if (s === p.a.Live || n) return m.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -622,7 +622,7 @@
 				return a.a.createElement("span", {
 					className: e.className
 				}, t ? c._("Voting closed {timeAgo}", [c._param("timeAgo", a.a.createElement(s.d, {
-					seconds: e.poll.endsAt / r.Rb
+					seconds: e.poll.endsAt / r.Sb
 				}))], {
 					hk: "3OERID"
 				}) : Object(o.a)(new Date(e.poll.endsAt)))
@@ -762,10 +762,10 @@
 					hk: "WWRIU"
 				}))
 			}
-			var R = n("./src/reddit/actions/governance/index.ts"),
-				L = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				A = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				w = n("./src/reddit/helpers/trackers/post.ts"),
+			var L = n("./src/reddit/actions/governance/index.ts"),
+				A = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				w = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				R = n("./src/reddit/helpers/trackers/post.ts"),
 				k = n("./src/reddit/selectors/crypto/points.ts"),
 				D = n("./src/reddit/components/Poll/PollExpiry/index.tsx"),
 				V = n("./src/reddit/components/Poll/PollBody/ClosedPoll/index.m.less"),
@@ -801,9 +801,9 @@
 				U = n.n(M),
 				F = n("./src/reddit/constants/elementClassNames.ts"),
 				H = n("./src/reddit/controls/Button/index.tsx"),
-				$ = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				q = n("./src/reddit/components/Poll/PollBody/OpenPoll/index.m.less"),
-				W = n.n(q);
+				q = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				$ = n("./src/reddit/components/Poll/PollBody/OpenPoll/index.m.less"),
+				W = n.n($);
 			const {
 				fbt: Z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -827,7 +827,7 @@
 								for (const t of e)
 									if (t.checked) return parseInt(t.value)
 							}(Array.from(n.elements).filter(z));
-						U()(r) || (this.props.onVoteSelection(t.options[r]), this.props.sendEvent(Object(w.g)(t.id, t.postId, r)))
+						U()(r) || (this.props.onVoteSelection(t.options[r]), this.props.sendEvent(Object(R.g)(t.id, t.postId, r)))
 					}
 				}
 				render() {
@@ -853,7 +853,7 @@
 						className: F.n,
 						disabled: this.props.voteInProgress || !this.props.userIsLoggedIn || !this.state.optionIsSelected,
 						type: "submit"
-					}, this.props.voteInProgress ? i.a.createElement($.a, {
+					}, this.props.voteInProgress ? i.a.createElement(q.a, {
 						className: W.a.loadingIcon,
 						sizePx: 20
 					}) : i.a.createElement(o.Fragment, null, this.props.votingIcon, Z._("Vote", null, {
@@ -871,7 +871,7 @@
 			const Q = Object(c.c)({
 				userIsLoggedIn: e => !!e.user.account
 			});
-			var Y = Object(a.b)(Q)(Object(L.c)(K)),
+			var Y = Object(a.b)(Q)(Object(A.c)(K)),
 				J = n("./src/reddit/components/Poll/PollBody/index.m.less"),
 				X = n.n(J);
 			class ee extends i.a.Component {
@@ -881,7 +881,7 @@
 							poll: e,
 							sendEvent: t
 						} = this.props;
-						e && t(Object(w.f)(e.id, e.postId))
+						e && t(Object(R.f)(e.id, e.postId))
 					}
 				}
 				componentDidMount() {
@@ -929,11 +929,11 @@
 				result: (e, t) => e.polls.results[t.resultType][t.pollId],
 				voteInProgress: (e, t) => !!e.polls.api.voting.pending[t.pollId]
 			});
-			var ne = Object(A.u)({
-					isCommentsPage: A.x
+			var ne = Object(w.u)({
+					isCommentsPage: w.x
 				})(Object(a.b)(te, (e, t) => ({
-					onVoteSelection: n => e(Object(R.d)(t.pollId, n.id))
-				}))(Object(L.c)(ee))),
+					onVoteSelection: n => e(Object(L.d)(t.pollId, n.id))
+				}))(Object(A.c)(ee))),
 				re = n("./src/reddit/selectors/gov.ts"),
 				se = n("./src/reddit/icons/svgs/DynamicThreshold/index.tsx"),
 				oe = n("./src/reddit/components/Poll/ResultsSelector/DecisionThreshold/index.m.less"),
@@ -1720,4 +1720,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.283b312c0c561c0efb92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.82e5bd0a61bab79c78cb.js.map

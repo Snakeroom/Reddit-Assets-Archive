@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.56202b059f436ef3b79f.js
-// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.6fc7a2f2e0993727f3af.js
+// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, s) {
@@ -1552,7 +1552,7 @@
 				he = s.n(pe);
 			const xe = 10,
 				fe = Object(c.a)((e, t) => t.subredditName, e => Object(_.a)(e, l.W.TOP, {
-					t: l.gc.WEEK
+					t: l.hc.WEEK
 				})),
 				ge = Object(c.c)({
 					discoveryUnit: e => Object(me.b)(e, {
@@ -1630,7 +1630,7 @@
 					loadMorePosts: () => e(Object(I.r)({
 						sort: l.W.TOP,
 						subredditName: t,
-						t: l.gc.WEEK
+						t: l.hc.WEEK
 					}))
 				}))(Object(de.c)(Oe)),
 				Ee = s("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx"),
@@ -2176,4 +2176,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.56202b059f436ef3b79f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.6fc7a2f2e0993727f3af.js.map

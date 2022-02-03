@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Comment.73e147a53f4e2b00235b.js
-// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Comment.db8be7c629b4c9376258.js
+// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Comment"], {
 		"./src/reddit/actions/gold/giveAward.ts": function(e, t, r) {
@@ -2905,4 +2905,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.73e147a53f4e2b00235b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.db8be7c629b4c9376258.js.map

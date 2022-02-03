@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.f9260aea370f51a0a39e.js
-// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.c128b7e9c638f16e94eb.js
+// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -91,14 +91,14 @@
 			const j = b.a.wrapped(f.a, "refreshIcon", U.a),
 				M = b.a.button("refreshButton", U.a),
 				k = e => e > 3 ? 3 : e;
-			var w = Object(E.b)(e => {
+			var S = Object(E.b)(e => {
 					const {
 						apiContext: t,
 						onSuggestedUsernameClick: n
 					} = e, [o, c] = Object(a.useState)([0, 0]), [i, l] = Object(a.useState)([]), [d, m] = Object(a.useState)(!1), u = Object(a.useCallback)(async () => {
 						m(!0), setTimeout(() => {
 							m(!1)
-						}, 10 * g.Rb);
+						}, 10 * g.Sb);
 						const e = await (e => Object(v.a)(Object(O.a)(e, [x.a]), {
 							endpoint: `${e.apiUrl}/api/v1/generate_username.json`,
 							method: g.jb.GET
@@ -144,13 +144,13 @@
 						onClick: () => n(e)
 					}, e))))
 				}),
-				S = n("./src/reddit/controls/Button/index.tsx"),
+				w = n("./src/reddit/controls/Button/index.tsx"),
 				B = n("./src/reddit/endpoints/usernameAvailable/index.ts"),
 				I = n("./src/reddit/components/Settings/ModalContainer/index.tsx"),
 				y = n("./src/reddit/components/ChangeUsernameTooltip/index.m.less"),
 				T = n.n(y),
-				R = n("./src/reddit/components/Settings/accountModals.m.less"),
-				D = n.n(R);
+				D = n("./src/reddit/components/Settings/accountModals.m.less"),
+				R = n.n(D);
 			const _ = 500,
 				Q = 20,
 				L = 3,
@@ -240,25 +240,25 @@
 						state: o
 					} = this.state, c = o === C.a.Valid, i = n === e;
 					return r.a.createElement(I.a, {
-						bodyClassName: D.a.changeUsernameModalBody,
-						className: Object(A.a)(D.a.changeUsernameModalContainer, {
-							[D.a["m-responsive"]]: t
+						bodyClassName: R.a.changeUsernameModalBody,
+						className: Object(A.a)(R.a.changeUsernameModalContainer, {
+							[R.a["m-responsive"]]: t
 						}),
 						onClose: this.onCloseModal,
 						title: this.props.title
 					}, r.a.createElement(C.b, {
-						className: Object(A.a)(D.a.input, D.a.usernameInput),
+						className: Object(A.a)(R.a.input, R.a.usernameInput),
 						errorMessage: a || void 0,
 						onChange: this.updateUsernameField,
 						spellCheck: !1,
 						successMessage: c && !i && K() || void 0,
 						value: n,
 						validityState: o || void 0
-					}), r.a.createElement(w, {
+					}), r.a.createElement(S, {
 						onSuggestedUsernameClick: this.onSuggestedUsernameClickHandler
 					}), r.a.createElement("div", {
 						className: T.a.buttonWrapper
-					}, r.a.createElement(S.l, {
+					}, r.a.createElement(w.l, {
 						className: Object(A.a)(T.a.commonBtn, T.a.primaryBtn),
 						disabled: !c,
 						onClick: this.handleContinue
@@ -271,18 +271,18 @@
 				z = n("./src/reddit/icons/svgs/Question/index.tsx"),
 				W = n("./src/reddit/icons/svgs/SnooSuperhero/index.tsx");
 			var q = e => (Object(a.useEffect)(e.onView, []), r.a.createElement(I.a, {
-					bodyClassName: D.a.confirmModalBody,
-					className: Object(A.a)(D.a.confirmModalContainer, {
-						[D.a["m-responsive"]]: e.isResponsive
+					bodyClassName: R.a.confirmModalBody,
+					className: Object(A.a)(R.a.confirmModalContainer, {
+						[R.a["m-responsive"]]: e.isResponsive
 					}),
 					description: e.description,
-					descriptionClassName: Object(A.a)(D.a.confirmModalDescription, {
-						[D.a.saveDescription]: e.isSaveConfirm
+					descriptionClassName: Object(A.a)(R.a.confirmModalDescription, {
+						[R.a.saveDescription]: e.isSaveConfirm
 					}),
-					headerClassName: D.a.confirmModalHeader,
+					headerClassName: R.a.confirmModalHeader,
 					icon: e.isSecondConfirm ? r.a.createElement(z.a, null) : r.a.createElement(W.a, null),
-					iconClassName: Object(A.a)(D.a.confirmModalIcon, {
-						[D.a.questionIcon]: e.isSecondConfirm
+					iconClassName: Object(A.a)(R.a.confirmModalIcon, {
+						[R.a.questionIcon]: e.isSecondConfirm
 					}),
 					onClose: e.onClose
 				}, r.a.createElement("div", {
@@ -291,11 +291,11 @@
 					className: T.a.usernamePrefix
 				}, "u/"), e.username), r.a.createElement("div", {
 					className: T.a.buttonWrapper
-				}, r.a.createElement(S.l, {
+				}, r.a.createElement(w.l, {
 					className: Object(A.a)(T.a.commonBtn, T.a.primaryBtn),
 					disabled: e.isSaving,
 					onClick: e.onPrimaryButtonClick
-				}, e.primaryButtonText()), r.a.createElement(S.r, {
+				}, e.primaryButtonText()), r.a.createElement(w.r, {
 					className: Object(A.a)(T.a.commonBtn, T.a.secondaryBtn),
 					disabled: e.isSaving,
 					onClick: e.onSecondaryButtonClick
@@ -827,4 +827,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.f9260aea370f51a0a39e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.c128b7e9c638f16e94eb.js.map

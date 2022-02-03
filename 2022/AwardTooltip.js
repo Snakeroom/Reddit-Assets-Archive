@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.f3ea341e1ca765f27446.js
-// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.e7a8ae446f5965b9ba06.js
+// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, r) {
@@ -106,7 +106,7 @@
 					onClickPremium: () => e(Object(i.b)("/premium")),
 					reportAward: () => e(Object(u.a)(t))
 				}));
-			class M extends n.a.Component {
+			class R extends n.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						isReported: !1
@@ -230,7 +230,7 @@
 					})), this.renderCta()))
 				}
 			}
-			t.default = y(M)
+			t.default = y(R)
 		},
 		"./src/reddit/components/ContentTooltip/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -608,9 +608,9 @@
 			}));
 			var s = r("./src/lib/constants/index.ts");
 			const o = e => !n(e) && !!e.user.prefs.subscriptionsPinned,
-				n = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== s.Mb.MODERATION_PAGES),
+				n = e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== s.Nb.MODERATION_PAGES),
 				a = e => e.user.prefs.reduceAnimationsFromAwards
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.f3ea341e1ca765f27446.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.e7a8ae446f5965b9ba06.js.map
