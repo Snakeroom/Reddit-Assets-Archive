@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.c5103b536288cb8e202f.js
-// Retrieved at 2/3/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.e7d53605f6d9459053d5.js
+// Retrieved at 2/3/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -3792,8 +3792,8 @@
 				r && Date.now() - r < 18e5 && (o = !0);
 				const [i, d] = Object(s.useState)(o ? y.Hidden : y.Visible);
 				if (Object(s.useEffect)(() => {
-						a && t === g.c.De && i === y.Visible && c(Object(m.e)())
-					}, [t, i, a, c]), !a || t !== g.c.De || i === y.Hidden) return null;
+						a && t === g.d.De && i === y.Visible && c(Object(m.e)())
+					}, [t, i, a, c]), !a || t !== g.d.De || i === y.Hidden) return null;
 				const u = () => {
 					c(Object(m.c)())
 				};
@@ -3801,7 +3801,7 @@
 					className: l.a.Container
 				}, (() => {
 					switch (t) {
-						case g.c.De:
+						case g.d.De:
 							return n.a.createElement("div", {
 								className: l.a.Banner
 							}, _._("Browsing from Germany? Check out", null, {
@@ -7546,4 +7546,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c5103b536288cb8e202f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.e7d53605f6d9459053d5.js.map

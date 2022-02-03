@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.fdd065f4cf1d654615ba.js
-// Retrieved at 2/3/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.e050443285bab457252c.js
+// Retrieved at 2/3/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -3507,7 +3507,7 @@
 						})),
 						n = Object(a.e)(e => t ? Object(N.h)(e, t.tournamentId) : []);
 					if (!t) return null;
-					if (t.status === I.m.Closed) return r.a.createElement(D, null);
+					if (t.status === I.o.Closed) return r.a.createElement(D, null);
 					const s = n.filter(e => e.predictionStatus === k.b.Open && e.endsAt > Date.now()),
 						o = s.length > 0,
 						i = s.length && s.some(e => !e.userSelection);
@@ -12250,4 +12250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.fdd065f4cf1d654615ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e050443285bab457252c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.5a5550541fbb95a4ce18.js
-// Retrieved at 2/3/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.face27adbbf88e373d78.js
+// Retrieved at 2/3/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -4387,7 +4387,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const H = [w.e.PrivateMessage, w.e.ChatMessage, w.e.ChatRequest, w.e.UsernameMention, w.e.PostReply, w.e.UpvotePost, w.e.UpvoteComment, w.e.CommentReply, w.e.ThreadReplies, w.e.TopLevelComment, w.e.NewPostActivity, w.e.UserNewFollower, w.e.PostFlairAdded, w.e.UserFlairAdded, w.e.NewPinnedPost, w.e.AwardReceived, w.e.PostFollow, w.e.TalkLive, w.e.CommentFollow, w.e.LifecyclePostSuggestions, w.e.BroadcastRecommendation, w.e.SubredditRecommendation, w.e.RedditLore, w.e.OneOff, w.e.CakeDay, w.e.ModeratedSrEngagement];
+			const H = [w.g.PrivateMessage, w.g.ChatMessage, w.g.ChatRequest, w.g.UsernameMention, w.g.PostReply, w.g.UpvotePost, w.g.UpvoteComment, w.g.CommentReply, w.g.ThreadReplies, w.g.TopLevelComment, w.g.NewPostActivity, w.g.UserNewFollower, w.g.PostFlairAdded, w.g.UserFlairAdded, w.g.NewPinnedPost, w.g.AwardReceived, w.g.PostFollow, w.g.TalkLive, w.g.CommentFollow, w.g.LifecyclePostSuggestions, w.g.BroadcastRecommendation, w.g.SubredditRecommendation, w.g.RedditLore, w.g.OneOff, w.g.CakeDay, w.g.ModeratedSrEngagement];
 			var R;
 			! function(e) {
 				e[e.TURN_ON_PN = 0] = "TURN_ON_PN", e[e.TURN_ON_PN_APP = 1] = "TURN_ON_PN_APP", e[e.VERIFY_EMAIL = 2] = "VERIFY_EMAIL", e[e.TURN_ON_DAYLY_DIGEST = 3] = "TURN_ON_DAYLY_DIGEST", e[e.DONE = 4] = "DONE"
@@ -4730,4 +4730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.5a5550541fbb95a4ce18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.face27adbbf88e373d78.js.map
