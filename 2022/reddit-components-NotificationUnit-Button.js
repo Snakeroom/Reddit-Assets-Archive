@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.67470983413e5fc14334.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.a805321b82af32ce61db.js
+// Retrieved at 2/3/2022, 11:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(t, e, o) {
@@ -170,7 +170,7 @@
 				}, et = Object(s.a)($.H), ot = Object(s.a)($.J), nt = Object(s.a)($.I), rt = Object(s.a)($.G), st = async (t, e, o, n) => {
 					const r = n.ok && n.body,
 						s = r && r.comment && r.comment.id;
-					await F.g(t, o, e, s)
+					await F.f(t, o, e, s)
 				}, it = "Toxicity_Warning__Modal", ct = (t, e, o, n, r, s) => async (i, c, {
 					gqlContext: d
 				}) => {
@@ -213,7 +213,7 @@
 						});
 						m(Object(l.z)(r, p.a.CommentSubmitted))
 					} else {
-						h.error && h.error.type === r.Jb && F.i(y, dt(s), t);
+						h.error && h.error.type === r.Jb && F.h(y, dt(s), t);
 						const e = h.error && h.error.fields && h.error.fields[0] ? h.error.fields[0].msg : n.fbt._("Something went wrong", null, {
 							hk: "LWFS0"
 						});
@@ -285,7 +285,7 @@
 								commentId: s
 							});
 							if (!t) return;
-							F.i(u, dt(l), t.postId, s)
+							F.h(u, dt(l), t.postId, s)
 						}
 						e(rt({
 							draftKey: d,
@@ -408,7 +408,7 @@
 					text: r
 				}) => async (s, i) => {
 					const c = i();
-					c.user.account && (F.d(c), s(Ct({
+					c.user.account && (F.c(c), s(Ct({
 						commentId: t,
 						commentsPageKey: o,
 						draftKey: n,
@@ -433,7 +433,7 @@
 					if (!d.user.account) return;
 					o(Rt({
 						draftKey: n
-					})), F.e(d);
+					})), F.d(d);
 					const a = d.user.account.displayText || "",
 						l = s.commentMode,
 						m = await (async (t, e, o, n, s, i) => {
@@ -494,7 +494,7 @@
 					const i = n();
 					o(St({
 						id: t
-					})), F.b(t, i);
+					})), F.a(t, i);
 					const c = await ((t, e) => Object(x.a)(Object(C.a)(t, [h.a]), {
 						endpoint: Object(R.a)(`${t.apiUrl}/api/del`),
 						method: r.jb.POST,
@@ -947,24 +947,22 @@
 		},
 		"./src/reddit/helpers/trackers/commentsPage.ts": function(t, e, o) {
 			"use strict";
-			o.d(e, "a", (function() {
-				return l
-			})), o.d(e, "g", (function() {
+			o.d(e, "f", (function() {
+				return m
+			})), o.d(e, "h", (function() {
 				return u
-			})), o.d(e, "i", (function() {
-				return b
-			})), o.d(e, "c", (function() {
-				return f
-			})), o.d(e, "f", (function() {
-				return O
 			})), o.d(e, "b", (function() {
+				return b
+			})), o.d(e, "e", (function() {
+				return f
+			})), o.d(e, "a", (function() {
+				return O
+			})), o.d(e, "c", (function() {
 				return p
 			})), o.d(e, "d", (function() {
 				return j
-			})), o.d(e, "e", (function() {
+			})), o.d(e, "g", (function() {
 				return y
-			})), o.d(e, "h", (function() {
-				return x
 			}));
 			var n = o("./src/reddit/constants/tracking.ts"),
 				r = o("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -973,11 +971,10 @@
 				c = o("./src/reddit/selectors/platform.ts"),
 				d = o("./src/reddit/selectors/telemetry.ts"),
 				a = o("./src/telemetry/index.ts");
-			const l = "comment_composer",
-				m = t => {
+			const l = t => {
 					const e = Object(c.o)(t);
 					return {
-						source: l,
+						source: "comment_composer",
 						action: n.c.CLICK,
 						...Object(d.m)(t),
 						screen: Object(d.Y)(t),
@@ -987,18 +984,18 @@
 						correlationId: Object(r.c)(r.a.CommentComposer)
 					}
 				},
-				u = async (t, e, n, r) => {
+				m = async (t, e, n, r) => {
 					const s = {
 							commentId: r,
 							commentsPageKey: n
 						},
 						c = r && Object(i.j)(t, s) || 0,
 						{
-							getFlairData: l
+							getFlairData: m
 						} = await o.e("getFlairData").then(o.bind(null, "./src/reddit/helpers/trackers/features/getFlairData.ts"));
 					return Object(a.a)({
 						noun: "comment",
-						...m(t),
+						...l(t),
 						comment: r ? Object(d.h)(t, r) : null,
 						listing: Object(d.x)(t, void 0, {
 							depth: c
@@ -1006,10 +1003,10 @@
 						commentComposer: {
 							editorMode: e
 						},
-						userFlair: l(t)
+						userFlair: m(t)
 					})
-				}, b = (t, e, o, n) => {
-					const r = m(t);
+				}, u = (t, e, o, n) => {
+					const r = l(t);
 					return Object(a.a)({
 						...r,
 						actionInfo: {
@@ -1025,15 +1022,15 @@
 							postId: o
 						}
 					})
-				}, f = t => Object(a.a)({
+				}, b = t => Object(a.a)({
 					noun: "cancel",
-					...m(t)
-				}), O = (t, e) => {
+					...l(t)
+				}), f = (t, e) => {
 					e === s.c.replyToPost && Object(a.a)({
 						noun: "input",
-						...m(t)
+						...l(t)
 					})
-				}, p = (t, e) => Object(a.a)({
+				}, O = (t, e) => Object(a.a)({
 					source: "comment",
 					noun: "delete",
 					action: "click",
@@ -1041,16 +1038,16 @@
 					screen: Object(d.Y)(e),
 					subreddit: Object(d.gb)(e),
 					post: Object(d.G)(e, t)
-				}), j = t => Object(a.a)({
+				}), p = t => Object(a.a)({
 					noun: "edit",
-					...m(t)
-				}), y = t => Object(a.a)({
+					...l(t)
+				}), j = t => Object(a.a)({
 					noun: "save_edit",
-					...m(t)
-				}), x = (t, e) => o => {
+					...l(t)
+				}), y = (t, e) => o => {
 					const n = "image_upload" === t || "video_upload" === t;
 					return {
-						...m(o),
+						...l(o),
 						noun: n ? t : "text_option",
 						commentComposer: {
 							textType: t,
@@ -1090,4 +1087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.67470983413e5fc14334.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.a805321b82af32ce61db.js.map

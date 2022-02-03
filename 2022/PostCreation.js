@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d3a695d5c9036deaf722.js
-// Retrieved at 2/3/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.9c6b31812d220f3c52ee.js
+// Retrieved at 2/3/2022, 11:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -562,7 +562,7 @@
 				}, te = Object(r.a)(X.H), ne = Object(r.a)(X.J), oe = Object(r.a)(X.I), se = Object(r.a)(X.G), re = async (e, t, n, o) => {
 					const s = o.ok && o.body,
 						r = s && s.comment && s.comment.id;
-					await U.g(e, n, t, r)
+					await U.f(e, n, t, r)
 				}, ie = "Toxicity_Warning__Modal", ae = (e, t, n, o, s, r) => async (i, a, {
 					gqlContext: c
 				}) => {
@@ -605,7 +605,7 @@
 						});
 						u(Object(d.z)(s, f.a.CommentSubmitted))
 					} else {
-						O.error && O.error.type === s.Jb && U.i(E, ce(r), e);
+						O.error && O.error.type === s.Jb && U.h(E, ce(r), e);
 						const t = O.error && O.error.fields && O.error.fields[0] ? O.error.fields[0].msg : o.fbt._("Something went wrong", null, {
 							hk: "LWFS0"
 						});
@@ -677,7 +677,7 @@
 								commentId: r
 							});
 							if (!e) return;
-							U.i(m, ce(d), e.postId, r)
+							U.h(m, ce(d), e.postId, r)
 						}
 						t(se({
 							draftKey: c,
@@ -800,7 +800,7 @@
 					text: s
 				}) => async (r, i) => {
 					const a = i();
-					a.user.account && (U.d(a), r(ye({
+					a.user.account && (U.c(a), r(ye({
 						commentId: e,
 						commentsPageKey: n,
 						draftKey: o,
@@ -825,7 +825,7 @@
 					if (!c.user.account) return;
 					n(_e({
 						draftKey: o
-					})), U.e(c);
+					})), U.d(c);
 					const l = c.user.account.displayText || "",
 						d = r.commentMode,
 						u = await (async (e, t, n, o, r, i) => {
@@ -886,7 +886,7 @@
 					const i = o();
 					n(je({
 						id: e
-					})), U.b(e, i);
+					})), U.a(e, i);
 					const a = await ((e, t) => Object(C.a)(Object(y.a)(e, [O.a]), {
 						endpoint: Object(_.a)(`${e.apiUrl}/api/del`),
 						method: s.jb.POST,
@@ -9884,7 +9884,7 @@
 		"./src/reddit/components/ReadingIndicator/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "formatPresenceNumber", (function() {
-				return f
+				return h
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/prettyPrintNumber/index.ts"),
@@ -9894,12 +9894,10 @@
 				c = n.n(a),
 				l = n("./src/realtime/GQLSubscription/async.tsx"),
 				d = n("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
-				u = n("./src/reddit/helpers/trackers/post.ts"),
-				m = n("./src/reddit/hooks/useClassNameOnMount.ts"),
-				p = n("./src/reddit/hooks/useTracking.ts");
-			var h = n("./src/reddit/components/ReadingIndicator/index.m.less"),
-				b = n.n(h);
-			const f = e => e > 9999 ? Object(s.b)(e) : e.toString();
+				u = n("./src/reddit/hooks/useClassNameOnMount.ts");
+			var m = n("./src/reddit/components/ReadingIndicator/index.m.less"),
+				p = n.n(m);
+			const h = e => e > 9999 ? Object(s.b)(e) : e.toString();
 			t.default = ({
 				isReadingIndicatorsExperiment: e,
 				isReadLoadTest: t,
@@ -9910,7 +9908,7 @@
 						teamOwner: "CONTENT_AND_COMMUNITIES",
 						postID: s
 					}), [s]),
-					h = Object(a.useMemo)(() => ({
+					m = Object(a.useMemo)(() => ({
 						input: {
 							channel: {
 								...r,
@@ -9918,7 +9916,7 @@
 							}
 						}
 					}), [s]),
-					g = Object(a.useMemo)(() => ({
+					b = Object(a.useMemo)(() => ({
 						input: {
 							channel: {
 								...r,
@@ -9926,63 +9924,61 @@
 							}
 						}
 					}), [s]),
-					E = Object(a.useRef)(null),
-					C = Object(a.useRef)(null),
-					x = Object(a.useRef)(0),
-					[y, O] = Object(a.useState)(0),
-					_ = Object(a.useCallback)(e => {
+					f = Object(a.useRef)(null),
+					g = Object(a.useRef)(null),
+					E = Object(a.useRef)(0),
+					[C, x] = Object(a.useState)(0),
+					y = Object(a.useCallback)(e => {
 						const {
 							numUsers: t
 						} = e.subscribe.data, n = () => {
-							C.current && clearTimeout(C.current), C.current = setTimeout(() => {
-								O(0), S(null), C.current = null
+							g.current && clearTimeout(g.current), g.current = setTimeout(() => {
+								x(0), v(null), g.current = null
 							}, 3e4)
 						}, o = () => setTimeout(() => {
-							x.current ? (O(x.current), x.current = null, E.current = o(), n()) : E.current = null
+							E.current ? (x(E.current), E.current = null, f.current = o(), n()) : f.current = null
 						}, 2e3);
-						E.current ? x.current = t : (O(t), x.current = null, E.current = o(), n())
+						f.current ? E.current = t : (x(t), E.current = null, f.current = o(), n())
 					}, []),
-					v = Object(a.useRef)(0),
-					[k, S] = Object(a.useState)(null),
-					T = Object(a.useRef)(null);
+					O = Object(a.useRef)(0),
+					[_, v] = Object(a.useState)(null),
+					k = Object(a.useRef)(null);
 				Object(a.useEffect)(() => {
-					if (!e) return void(k && S(null));
-					if (y >= 5) return v.current = y, void(k || S(Date.now()));
-					if (!k) return;
-					const t = Date.now() - k;
-					t >= 1e4 ? S(null) : T.current = setTimeout(() => S(null), 1e4 - t)
-				}, [k, e, y]);
+					if (!e) return void(_ && v(null));
+					if (C >= 5) return O.current = C, void(_ || v(Date.now()));
+					if (!_) return;
+					const t = Date.now() - _;
+					t >= 1e4 ? v(null) : k.current = setTimeout(() => v(null), 1e4 - t)
+				}, [_, e, C]);
 				const {
-					className: j,
-					shouldMount: I,
-					onTransitionEnd: w
-				} = Object(m.a)({
-					defaultClass: b.a.readingIndicator,
-					addedClass: b.a.isDisplayed,
-					mountCondition: !!k
-				}), P = Object(p.a)();
-				return Object(a.useEffect)(() => {
-					I && P(Object(u.q)(s, y))
-				}, [P, I, s]), Object(a.useEffect)(() => () => {
-					E.current && clearTimeout(E.current), C.current && clearTimeout(C.current), T.current && clearTimeout(T.current)
+					className: S,
+					shouldMount: T,
+					onTransitionEnd: j
+				} = Object(u.a)({
+					defaultClass: p.a.readingIndicator,
+					addedClass: p.a.isDisplayed,
+					mountCondition: !!_
+				});
+				return Object(a.useEffect)(() => () => {
+					f.current && clearTimeout(f.current), g.current && clearTimeout(g.current), k.current && clearTimeout(k.current)
 				}, []), c.a.createElement(c.a.Fragment, null, n && c.a.createElement(l.a, {
-					variables: h,
+					variables: m,
 					onData: i.a,
 					queryKey: "userIsReadingPost"
 				}), (t || e) && c.a.createElement(l.a, {
-					variables: g,
-					onData: e ? _ : i.a,
+					variables: b,
+					onData: e ? y : i.a,
 					queryKey: "usersReadingIndicator"
-				}), I && c.a.createElement("div", {
-					className: j,
-					onTransitionEnd: w
-				}, o.fbt._("{number of users reading} people here", [o.fbt._param("number of users reading", f(v.current))], {
+				}), T && c.a.createElement("div", {
+					className: S,
+					onTransitionEnd: j
+				}, o.fbt._("{number of users reading} people here", [o.fbt._param("number of users reading", h(O.current))], {
 					hk: "3foy5g"
 				}), c.a.createElement(d.a, {
-					memberIconClassName: b.a.offsetMemberIcon,
+					memberIconClassName: p.a.offsetMemberIcon,
 					iconsKey: s,
 					numVisibleIcons: 2,
-					wrapperClassName: b.a.offsetMembersIconsWrapper
+					wrapperClassName: p.a.offsetMembersIconsWrapper
 				})))
 			}
 		},
@@ -17923,92 +17919,75 @@
 				i = n("./src/realtime/GQLSubscription/async.tsx"),
 				a = n("./src/reddit/components/RandomBaseUserIcons/RandomBaseUserIcons.tsx"),
 				c = n("./src/reddit/components/ReadingIndicator/index.tsx"),
-				l = n("./src/reddit/helpers/trackers/commentsPage.ts"),
-				d = n("./src/reddit/selectors/telemetry.ts");
-			const u = (() => (e, t) => n => ({
-				source: l.a,
-				action: "view",
-				noun: "typing_indicator",
-				...d.m(n),
-				actionInfo: d.c(n, {
-					reason: t.toString()
-				}),
-				post: d.G(n, e),
-				subreddit: d.gb(n)
-			}))();
-			var m = n("./src/reddit/hooks/useClassNameOnMount.ts"),
-				p = n("./src/reddit/hooks/useTracking.ts"),
-				h = n("./src/reddit/components/TypingIndicators/constants.ts"),
-				b = n("./src/reddit/components/TypingIndicators/index.m.less"),
-				f = n.n(b);
+				l = n("./src/reddit/hooks/useClassNameOnMount.ts"),
+				d = n("./src/reddit/components/TypingIndicators/constants.ts"),
+				u = n("./src/reddit/components/TypingIndicators/index.m.less"),
+				m = n.n(u);
 			t.default = e => {
 				const t = Object(s.useRef)(null),
 					n = Object(s.useRef)(0),
 					{
-						minNumUsersTyping: l,
-						minTimeVisible: d,
-						postId: b
+						minNumUsersTyping: u,
+						minTimeVisible: p,
+						postId: h
 					} = e,
-					[g, E] = Object(s.useState)(0),
-					[C, x] = Object(s.useState)(null),
-					y = Object(p.a)(),
-					O = Object(s.useMemo)(() => ({
+					[b, f] = Object(s.useState)(0),
+					[g, E] = Object(s.useState)(null),
+					C = Object(s.useMemo)(() => ({
 						input: {
 							channel: {
 								teamOwner: "CONTENT_AND_COMMUNITIES",
 								category: "POST_TYPING_INDICATOR",
-								postID: b
+								postID: h
 							}
 						}
-					}), [b]),
-					_ = Object(s.useRef)(null),
-					v = Object(s.useRef)(null),
-					k = Object(s.useRef)(0),
-					S = Object(s.useCallback)(e => {
+					}), [h]),
+					x = Object(s.useRef)(null),
+					y = Object(s.useRef)(null),
+					O = Object(s.useRef)(0),
+					_ = Object(s.useCallback)(e => {
 						const {
 							numUsers: t
 						} = e.subscribe.data, n = () => {
-							v.current && clearTimeout(v.current), v.current = setTimeout(() => {
-								E(0), x(null), v.current = null
-							}, h.b)
+							y.current && clearTimeout(y.current), y.current = setTimeout(() => {
+								f(0), E(null), y.current = null
+							}, d.b)
 						}, o = () => setTimeout(() => {
-							k.current ? (E(k.current), k.current = null, _.current = o(), n()) : _.current = null
-						}, h.a);
-						_.current ? k.current = t : (E(t), k.current = null, _.current = o(), n())
+							O.current ? (f(O.current), O.current = null, x.current = o(), n()) : x.current = null
+						}, d.a);
+						x.current ? O.current = t : (f(t), O.current = null, x.current = o(), n())
 					}, []);
 				Object(s.useEffect)(() => {
-					if (g >= l) return n.current = g, void(C || (t.current && clearTimeout(t.current), x(Date.now())));
-					if (!C) return;
-					const e = Date.now() - C;
-					e > d ? x(null) : t.current = setTimeout(() => x(null), d - e)
-				}, [C, d, g, l]);
+					if (b >= u) return n.current = b, void(g || (t.current && clearTimeout(t.current), E(Date.now())));
+					if (!g) return;
+					const e = Date.now() - g;
+					e > p ? E(null) : t.current = setTimeout(() => E(null), p - e)
+				}, [g, p, b, u]);
 				const {
-					className: T,
-					shouldMount: j,
-					onTransitionEnd: I
-				} = Object(m.a)({
-					defaultClass: f.a.typingIndicator,
-					addedClass: f.a.isDisplayed,
-					mountCondition: !!C
+					className: v,
+					shouldMount: k,
+					onTransitionEnd: S
+				} = Object(l.a)({
+					defaultClass: m.a.typingIndicator,
+					addedClass: m.a.isDisplayed,
+					mountCondition: !!g
 				});
-				return Object(s.useEffect)(() => {
-					j && y(u(b, g))
-				}, [j, b, y]), Object(s.useEffect)(() => () => {
-					_.current && clearTimeout(_.current), v.current && clearTimeout(v.current), t.current && clearTimeout(t.current)
+				return Object(s.useEffect)(() => () => {
+					x.current && clearTimeout(x.current), y.current && clearTimeout(y.current), t.current && clearTimeout(t.current)
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(i.a, {
-					variables: O,
-					onData: S,
+					variables: C,
+					onData: _,
 					queryKey: "postTypingIndicator"
-				}), j && r.a.createElement("div", {
-					className: T,
-					onTransitionEnd: I
+				}), k && r.a.createElement("div", {
+					className: v,
+					onTransitionEnd: S
 				}, r.a.createElement(a.a, {
-					iconsKey: b,
-					memberIconClassName: f.a.offsetMemberIcon,
-					numVisibleIcons: l,
-					wrapperClassName: f.a.offsetMembersIcons
+					iconsKey: h,
+					memberIconClassName: m.a.offsetMemberIcon,
+					numVisibleIcons: u,
+					wrapperClassName: m.a.offsetMembersIcons
 				}), r.a.createElement("div", {
-					className: f.a.numUsersTyping
+					className: m.a.numUsersTyping
 				}, o.fbt._("{number of people typing} people typing...", [o.fbt._param("number of people typing", Object(c.formatPresenceNumber)(n.current))], {
 					hk: "31RibC"
 				}))))
@@ -22201,24 +22180,22 @@
 		},
 		"./src/reddit/helpers/trackers/commentsPage.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return d
-			})), n.d(t, "g", (function() {
+			n.d(t, "f", (function() {
+				return u
+			})), n.d(t, "h", (function() {
 				return m
-			})), n.d(t, "i", (function() {
-				return p
-			})), n.d(t, "c", (function() {
-				return h
-			})), n.d(t, "f", (function() {
-				return b
 			})), n.d(t, "b", (function() {
+				return p
+			})), n.d(t, "e", (function() {
+				return h
+			})), n.d(t, "a", (function() {
+				return b
+			})), n.d(t, "c", (function() {
 				return f
 			})), n.d(t, "d", (function() {
 				return g
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "g", (function() {
 				return E
-			})), n.d(t, "h", (function() {
-				return C
 			}));
 			var o = n("./src/reddit/constants/tracking.ts"),
 				s = n("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -22227,11 +22204,10 @@
 				a = n("./src/reddit/selectors/platform.ts"),
 				c = n("./src/reddit/selectors/telemetry.ts"),
 				l = n("./src/telemetry/index.ts");
-			const d = "comment_composer",
-				u = e => {
+			const d = e => {
 					const t = Object(a.o)(e);
 					return {
-						source: d,
+						source: "comment_composer",
 						action: o.c.CLICK,
 						...Object(c.m)(e),
 						screen: Object(c.Y)(e),
@@ -22241,18 +22217,18 @@
 						correlationId: Object(s.c)(s.a.CommentComposer)
 					}
 				},
-				m = async (e, t, o, s) => {
+				u = async (e, t, o, s) => {
 					const r = {
 							commentId: s,
 							commentsPageKey: o
 						},
 						a = s && Object(i.j)(e, r) || 0,
 						{
-							getFlairData: d
+							getFlairData: u
 						} = await n.e("getFlairData").then(n.bind(null, "./src/reddit/helpers/trackers/features/getFlairData.ts"));
 					return Object(l.a)({
 						noun: "comment",
-						...u(e),
+						...d(e),
 						comment: s ? Object(c.h)(e, s) : null,
 						listing: Object(c.x)(e, void 0, {
 							depth: a
@@ -22260,10 +22236,10 @@
 						commentComposer: {
 							editorMode: t
 						},
-						userFlair: d(e)
+						userFlair: u(e)
 					})
-				}, p = (e, t, n, o) => {
-					const s = u(e);
+				}, m = (e, t, n, o) => {
+					const s = d(e);
 					return Object(l.a)({
 						...s,
 						actionInfo: {
@@ -22279,15 +22255,15 @@
 							postId: n
 						}
 					})
-				}, h = e => Object(l.a)({
+				}, p = e => Object(l.a)({
 					noun: "cancel",
-					...u(e)
-				}), b = (e, t) => {
+					...d(e)
+				}), h = (e, t) => {
 					t === r.c.replyToPost && Object(l.a)({
 						noun: "input",
-						...u(e)
+						...d(e)
 					})
-				}, f = (e, t) => Object(l.a)({
+				}, b = (e, t) => Object(l.a)({
 					source: "comment",
 					noun: "delete",
 					action: "click",
@@ -22295,16 +22271,16 @@
 					screen: Object(c.Y)(t),
 					subreddit: Object(c.gb)(t),
 					post: Object(c.G)(t, e)
-				}), g = e => Object(l.a)({
+				}), f = e => Object(l.a)({
 					noun: "edit",
-					...u(e)
-				}), E = e => Object(l.a)({
+					...d(e)
+				}), g = e => Object(l.a)({
 					noun: "save_edit",
-					...u(e)
-				}), C = (e, t) => n => {
+					...d(e)
+				}), E = (e, t) => n => {
 					const o = "image_upload" === e || "video_upload" === e;
 					return {
-						...u(n),
+						...d(n),
 						noun: o ? e : "text_option",
 						commentComposer: {
 							textType: e,
@@ -30977,4 +30953,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d3a695d5c9036deaf722.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9c6b31812d220f3c52ee.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ad20dc57517caab1d61b.js
-// Retrieved at 2/3/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.38951f3e0162dd442984.js
+// Retrieved at 2/3/2022, 11:50:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -522,7 +522,7 @@
 				}, te = Object(a.a)(X.H), ne = Object(a.a)(X.J), se = Object(a.a)(X.I), re = Object(a.a)(X.G), ae = async (e, t, n, s) => {
 					const r = s.ok && s.body,
 						a = r && r.comment && r.comment.id;
-					await B.g(e, n, t, a)
+					await B.f(e, n, t, a)
 				}, oe = "Toxicity_Warning__Modal", ie = (e, t, n, s, r, a) => async (o, i, {
 					gqlContext: c
 				}) => {
@@ -565,7 +565,7 @@
 						});
 						u(Object(d.z)(r, g.a.CommentSubmitted))
 					} else {
-						y.error && y.error.type === r.Jb && B.i(C, ce(a), e);
+						y.error && y.error.type === r.Jb && B.h(C, ce(a), e);
 						const t = y.error && y.error.fields && y.error.fields[0] ? y.error.fields[0].msg : s.fbt._("Something went wrong", null, {
 							hk: "LWFS0"
 						});
@@ -637,7 +637,7 @@
 								commentId: a
 							});
 							if (!e) return;
-							B.i(m, ce(d), e.postId, a)
+							B.h(m, ce(d), e.postId, a)
 						}
 						t(re({
 							draftKey: c,
@@ -760,7 +760,7 @@
 					text: r
 				}) => async (a, o) => {
 					const i = o();
-					i.user.account && (B.d(i), a(xe({
+					i.user.account && (B.c(i), a(xe({
 						commentId: e,
 						commentsPageKey: n,
 						draftKey: s,
@@ -785,7 +785,7 @@
 					if (!c.user.account) return;
 					n(Ee({
 						draftKey: s
-					})), B.e(c);
+					})), B.d(c);
 					const l = c.user.account.displayText || "",
 						d = a.commentMode,
 						u = await (async (e, t, n, s, a, o) => {
@@ -846,7 +846,7 @@
 					const o = s();
 					n(Pe({
 						id: e
-					})), B.b(e, o);
+					})), B.a(e, o);
 					const i = await ((e, t) => Object(O.a)(Object(x.a)(e, [y.a]), {
 						endpoint: Object(E.a)(`${e.apiUrl}/api/del`),
 						method: r.jb.POST,
@@ -16789,24 +16789,22 @@
 		},
 		"./src/reddit/helpers/trackers/commentsPage.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
-				return d
-			})), n.d(t, "g", (function() {
+			n.d(t, "f", (function() {
+				return u
+			})), n.d(t, "h", (function() {
 				return m
-			})), n.d(t, "i", (function() {
-				return p
-			})), n.d(t, "c", (function() {
-				return b
-			})), n.d(t, "f", (function() {
-				return h
 			})), n.d(t, "b", (function() {
+				return p
+			})), n.d(t, "e", (function() {
+				return b
+			})), n.d(t, "a", (function() {
+				return h
+			})), n.d(t, "c", (function() {
 				return g
 			})), n.d(t, "d", (function() {
 				return f
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "g", (function() {
 				return C
-			})), n.d(t, "h", (function() {
-				return O
 			}));
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -16815,11 +16813,10 @@
 				i = n("./src/reddit/selectors/platform.ts"),
 				c = n("./src/reddit/selectors/telemetry.ts"),
 				l = n("./src/telemetry/index.ts");
-			const d = "comment_composer",
-				u = e => {
+			const d = e => {
 					const t = Object(i.o)(e);
 					return {
-						source: d,
+						source: "comment_composer",
 						action: s.c.CLICK,
 						...Object(c.m)(e),
 						screen: Object(c.Y)(e),
@@ -16829,18 +16826,18 @@
 						correlationId: Object(r.c)(r.a.CommentComposer)
 					}
 				},
-				m = async (e, t, s, r) => {
+				u = async (e, t, s, r) => {
 					const a = {
 							commentId: r,
 							commentsPageKey: s
 						},
 						i = r && Object(o.j)(e, a) || 0,
 						{
-							getFlairData: d
+							getFlairData: u
 						} = await n.e("getFlairData").then(n.bind(null, "./src/reddit/helpers/trackers/features/getFlairData.ts"));
 					return Object(l.a)({
 						noun: "comment",
-						...u(e),
+						...d(e),
 						comment: r ? Object(c.h)(e, r) : null,
 						listing: Object(c.x)(e, void 0, {
 							depth: i
@@ -16848,10 +16845,10 @@
 						commentComposer: {
 							editorMode: t
 						},
-						userFlair: d(e)
+						userFlair: u(e)
 					})
-				}, p = (e, t, n, s) => {
-					const r = u(e);
+				}, m = (e, t, n, s) => {
+					const r = d(e);
 					return Object(l.a)({
 						...r,
 						actionInfo: {
@@ -16867,15 +16864,15 @@
 							postId: n
 						}
 					})
-				}, b = e => Object(l.a)({
+				}, p = e => Object(l.a)({
 					noun: "cancel",
-					...u(e)
-				}), h = (e, t) => {
+					...d(e)
+				}), b = (e, t) => {
 					t === a.c.replyToPost && Object(l.a)({
 						noun: "input",
-						...u(e)
+						...d(e)
 					})
-				}, g = (e, t) => Object(l.a)({
+				}, h = (e, t) => Object(l.a)({
 					source: "comment",
 					noun: "delete",
 					action: "click",
@@ -16883,16 +16880,16 @@
 					screen: Object(c.Y)(t),
 					subreddit: Object(c.gb)(t),
 					post: Object(c.G)(t, e)
-				}), f = e => Object(l.a)({
+				}), g = e => Object(l.a)({
 					noun: "edit",
-					...u(e)
-				}), C = e => Object(l.a)({
+					...d(e)
+				}), f = e => Object(l.a)({
 					noun: "save_edit",
-					...u(e)
-				}), O = (e, t) => n => {
+					...d(e)
+				}), C = (e, t) => n => {
 					const s = "image_upload" === e || "video_upload" === e;
 					return {
-						...u(n),
+						...d(n),
 						noun: s ? e : "text_option",
 						commentComposer: {
 							textType: e,
@@ -22370,4 +22367,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "Reddit~Subreddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ad20dc57517caab1d61b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.38951f3e0162dd442984.js.map
