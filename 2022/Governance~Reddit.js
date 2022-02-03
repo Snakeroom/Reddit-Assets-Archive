@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.a055e7e6a860eea961ee.js
-// Retrieved at 2/3/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.c89982dcc2d4e8545f77.js
+// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -1494,7 +1494,7 @@
 					s || c || !Object(d.e)(a) && !Object(d.d)(a) || e(Object(n.f)())
 				}, f = e => {
 					Object(c.d)(e, {
-						experimentName: a.rb
+						experimentName: a.sb
 					})
 				}
 		},
@@ -3462,7 +3462,7 @@
 			const T = e => g.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				D = e => !!Object(v.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...a.d)),
-					experimentName: b.ye
+					experimentName: b.Ae
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -4342,7 +4342,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(w)
 						}
-						await t(Object(s.b)(`${r.path}`)), f ? f === p.be.NewModule && t(Object(i.h)({
+						await t(Object(s.b)(`${r.path}`)), f ? f === p.de.NewModule && t(Object(i.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(o.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(T.a)(Object(g.g)()(E))), Object(I.b)(I.a.SubredditCreation)
 					} else P.error && Object(T.a)(Object(g.h)(P.error.type, _)(E)), t(k({
@@ -25019,14 +25019,14 @@
 			const d = Object(s.a)(c.c, e => !e),
 				i = Object(s.a)(e => Object(a.c)(e, {
 					experimentEligibilitySelector: e => d(e),
-					experimentName: n.rb,
+					experimentName: n.sb,
 					expEventOverride: !1
 				}), e => e),
 				u = e => e === n.W.Onetap,
 				l = e => e === n.W.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.rf)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.tf)(t))
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
 			"use strict";
@@ -25278,4 +25278,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a055e7e6a860eea961ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.c89982dcc2d4e8545f77.js.map

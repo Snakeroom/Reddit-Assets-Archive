@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.a96f84ef94422b093f71.js
-// Retrieved at 2/3/2022, 2:00:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.528e97bf10023964c227.js
+// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -4261,12 +4261,12 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: i.K,
-				experimentName: n.Ob
-			}), e => e === n.Zc)
+				experimentName: n.Qb
+			}), e => e === n.bd)
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
 			e.exports = JSON.parse('{"id":"2d7f6b3b518a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.a96f84ef94422b093f71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.528e97bf10023964c227.js.map

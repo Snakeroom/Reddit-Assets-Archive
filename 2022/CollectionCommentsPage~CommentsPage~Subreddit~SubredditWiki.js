@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.88b0497691ef67d2bd4b.js
-// Retrieved at 2/3/2022, 2:00:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.cef1cb131a5aafa44b08.js
+// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -3584,8 +3584,8 @@
 			const o = e => s.e[Object(i.R)(e, {})] === s.d.Card,
 				c = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.kb
-				}) === n.Vb.Treatment
+					experimentName: n.lb
+				}) === n.Xb.Treatment
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, r) {
 			"use strict";
@@ -3712,4 +3712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.88b0497691ef67d2bd4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.cef1cb131a5aafa44b08.js.map

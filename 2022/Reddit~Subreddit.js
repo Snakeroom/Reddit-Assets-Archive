@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.a4ddec8b2025ea24f967.js
-// Retrieved at 2/3/2022, 2:00:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.2639ad324e3007eed1a0.js
+// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~Subreddit"], {
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, n) {
@@ -3124,27 +3124,27 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(i.a)(e => Object(r.c)(e, {
-					experimentName: s.zb,
+					experimentName: s.Ab,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.X.Enabled),
 				c = Object(i.a)(e => Object(r.c)(e, {
-					experimentName: s.Ab,
+					experimentName: s.Bb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Y.Enabled),
 				d = Object(i.a)(e => Object(r.c)(e, {
-					experimentName: s.Bb,
+					experimentName: s.Cb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Z.Enabled),
 				l = Object(i.a)(e => Object(r.c)(e, {
-					experimentName: s.Cb,
+					experimentName: s.Db,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.ab.Enabled),
 				u = Object(i.a)(e => Object(r.c)(e, {
-					experimentName: s.Eb,
+					experimentName: s.Fb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.cb.Enabled),
 				b = Object(i.a)(e => Object(r.c)(e, {
-					experimentName: s.Db,
+					experimentName: s.Eb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.bb.Enabled)
 		},
@@ -3158,14 +3158,14 @@
 			var i = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-					experimentName: i.Od,
+					experimentName: i.Qd,
 					experimentEligibilitySelector: s.a
-				}) === i.Yd.Enabled,
+				}) === i.ae.Enabled,
 				o = e => Object(s.c)(e, {
-					experimentName: i.Pd,
+					experimentName: i.Rd,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === i.Zd.Enabled
+				}) === i.be.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
@@ -3421,4 +3421,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.a4ddec8b2025ea24f967.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.2639ad324e3007eed1a0.js.map

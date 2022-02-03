@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.255832b269850dcf52a0.js
-// Retrieved at 2/3/2022, 2:00:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.eddb90b54b3d42bc25d1.js
+// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1049,7 +1049,7 @@
 						showTimestamp: _ = !0,
 						subredditOrProfile: P,
 						tooltipType: G
-					} = e, H = Object(s.d)(), U = Object(v.a)(), z = Object(s.e)(ae.a), V = Object(s.e)(le.d), q = Object(s.e)(le.g) || ["popular", "all"].includes(V || ""), K = Object(s.e)(ce.b), J = O.isSponsored || Object(a.u)(l), Q = !(!J || !z || Object(b.rf)(z));
+					} = e, H = Object(s.d)(), U = Object(v.a)(), z = Object(s.e)(ae.a), V = Object(s.e)(le.d), q = Object(s.e)(le.g) || ["popular", "all"].includes(V || ""), K = Object(s.e)(ce.b), J = O.isSponsored || Object(a.u)(l), Q = !(!J || !z || Object(b.tf)(z));
 					Object(n.useEffect)(() => {
 						Q && H(Object(p.d)(O.author))
 					}, []);
@@ -2784,7 +2784,7 @@
 				o = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(n.a)(e => Object(s.c)(e, {
-				experimentName: o.lb,
+				experimentName: o.mb,
 				experimentEligibilitySelector: s.a
 			}), e => e)
 		},
@@ -3014,4 +3014,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.255832b269850dcf52a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.eddb90b54b3d42bc25d1.js.map

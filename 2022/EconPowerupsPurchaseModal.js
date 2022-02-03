@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.25c210d8bbf9dd2d5d0e.js
-// Retrieved at 2/3/2022, 2:00:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.86c39240039e20ad0599.js
+// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -3309,7 +3309,7 @@
 				p = r("./node_modules/react-redux/es/index.js"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				b = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(b.a)(f.Bc);
+			const h = Object(b.a)(f.Dc);
 			let g = null;
 
 			function y() {
@@ -3727,4 +3727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.25c210d8bbf9dd2d5d0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.86c39240039e20ad0599.js.map

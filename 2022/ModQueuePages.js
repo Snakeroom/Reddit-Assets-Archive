@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.b2239393a17e7684e59e.js
-// Retrieved at 2/3/2022, 2:00:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.f9a64f94fdf3fe22ed94.js
+// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, n) {
@@ -4955,15 +4955,15 @@
 			const o = e => {
 					const t = Object(a.c)(e, {
 						experimentEligibilitySelector: r.K,
-						experimentName: s.zc
+						experimentName: s.Bc
 					});
-					return !(!t || Object(s.rf)(t))
+					return !(!t || Object(s.tf)(t))
 				},
 				d = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: r.K,
-						experimentName: s.zc
-					}) === s.ed.ListingEnabled
+						experimentName: s.Bc
+					}) === s.gd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
@@ -5140,4 +5140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.b2239393a17e7684e59e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f9a64f94fdf3fe22ed94.js.map

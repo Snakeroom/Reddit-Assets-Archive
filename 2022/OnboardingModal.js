@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.b87868f7c35ef8875a02.js
-// Retrieved at 2/3/2022, 2:00:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.192f3fe95ce1685c6b0e.js
+// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal", "OnboardingActions"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -189,7 +189,7 @@
 			const S = e => {
 				const t = Object(y.c)(e, {
 					experimentEligibilitySelector: y.a,
-					experimentName: j.Jb
+					experimentName: j.Kb
 				});
 				return !!Object(k.a)(t)
 			};
@@ -1425,7 +1425,7 @@
 				Je = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Ke = Object(ze.a)(e => Object(Je.c)(e, {
 				experimentEligibilitySelector: Je.a,
-				experimentName: Ee.Qb
+				experimentName: Ee.Sb
 			}), e => e);
 			var Ze = n("./src/reddit/selectors/experiments/survey.ts"),
 				Xe = n("./src/reddit/selectors/onboarding.ts"),
@@ -1487,7 +1487,7 @@
 				const {
 					gqlContext: t,
 					apiContext: n
-				} = e, r = Object(i.d)(), a = Object(x.a)(), c = Object(i.e)(Ke) === Ee.gb.Enabled, p = c ? ve.GENDER : ve.INTERESTS, [b, f] = Object(s.useState)(p), [g, O] = Object(s.useState)(null), v = Object(i.e)(Xe.a), [E, _] = Object(s.useState)(!c), [j, y] = Object(s.useState)([]), [S, T] = Object(s.useState)(!1), [M, F] = Object(s.useState)({}), [L, A] = Object(s.useState)(!1), [D, B] = Object(s.useState)([]), [q, W] = Object(s.useState)([]), [Q, V] = Object(s.useState)({}), {
+				} = e, r = Object(i.d)(), a = Object(x.a)(), c = Object(i.e)(Ke) === Ee.hb.Enabled, p = c ? ve.GENDER : ve.INTERESTS, [b, f] = Object(s.useState)(p), [g, O] = Object(s.useState)(null), v = Object(i.e)(Xe.a), [E, _] = Object(s.useState)(!c), [j, y] = Object(s.useState)([]), [S, T] = Object(s.useState)(!1), [M, F] = Object(s.useState)({}), [L, A] = Object(s.useState)(!1), [D, B] = Object(s.useState)([]), [q, W] = Object(s.useState)([]), [Q, V] = Object(s.useState)({}), {
 					avatarImage: H,
 					fetchRandomAvatar: U,
 					saveAvatar: z
@@ -3392,4 +3392,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.b87868f7c35ef8875a02.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.192f3fe95ce1685c6b0e.js.map

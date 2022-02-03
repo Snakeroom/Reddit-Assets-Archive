@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.737ad72052530b68240d.js
-// Retrieved at 2/3/2022, 2:00:10 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.ab87ad05b618f5ba5b38.js
+// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4591,7 +4591,7 @@
 						subredditId: t
 					})),
 					y = Object(a.e)(p.a),
-					_ = y !== u.be.NewModule;
+					_ = y !== u.de.NewModule;
 				return (null === (n = null == f ? void 0 : f.cards) || void 0 === n ? void 0 : n.length) > 0 && _ ? o.a.createElement(h, {
 					closeModuleOnMount: !!e && e !== m.g.Large,
 					subredditId: t,
@@ -6396,15 +6396,15 @@
 			const a = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: n.zc
+						experimentName: n.Bc
 					});
-					return !(!t || Object(n.rf)(t))
+					return !(!t || Object(n.tf)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.K,
-						experimentName: n.zc
-					}) === n.ed.ListingEnabled
+						experimentName: n.Bc
+					}) === n.gd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, r) {
@@ -6417,14 +6417,14 @@
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-					experimentName: n.Od,
+					experimentName: n.Qd,
 					experimentEligibilitySelector: s.a
-				}) === n.Yd.Enabled,
+				}) === n.ae.Enabled,
 				a = e => Object(s.c)(e, {
-					experimentName: n.Pd,
+					experimentName: n.Rd,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === n.Zd.Enabled
+				}) === n.be.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, r) {
 			"use strict";
@@ -6639,4 +6639,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.737ad72052530b68240d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.ab87ad05b618f5ba5b38.js.map
