@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.9383a5e3af2861f0176e.js
-// Retrieved at 2/3/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.06272bd6b2096b080187.js
+// Retrieved at 2/3/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) d = r[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
@@ -784,7 +784,7 @@
 					"Chat~RedesignChat": "58e1fc686d1daa76d90a",
 					RedesignChat: "6565fde54e4c1d8a98b0",
 					"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "31d6cfe0d16ae931b73c",
-					ModerationPages: "55d50acefb5bf252442a",
+					ModerationPages: "a6cb9af0cb2157907bb6",
 					CryptoHarbergerTaxManageModal: "82be4c65d5db9759d06e",
 					HarbergerTaxManageModal: "0a15a60855e5a7077999",
 					SubredditPremiumUploadModal: "c3f8c2cb9ce0d7a7fe44",
@@ -1452,7 +1452,7 @@
 						"Chat~RedesignChat": "79b21f63cbd830328597",
 						RedesignChat: "2ef2c42c43dfab2ebb47",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
-						ModerationPages: "9cbf34ed85d7f875f51c",
+						ModerationPages: "e4abedd8292cae11237d",
 						CryptoHarbergerTaxManageModal: "fb47a854948449902890",
 						HarbergerTaxManageModal: "2742096abfe0a709340b",
 						SubredditPremiumUploadModal: "a60dbd57872398ec26b8",
@@ -1667,4 +1667,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.9383a5e3af2861f0176e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.06272bd6b2096b080187.js.map
