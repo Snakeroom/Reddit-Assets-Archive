@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.ea9c1e10e26b292563c8.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.1908017838461f22d0ee.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./src/reddit/components/GeneralCleanup/SortViewBar/LayoutSwitch/index.m.less": function(e, t, a) {
@@ -440,7 +440,7 @@
 				C = a("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
 				L = a.n(C);
 			const y = Object(h.c)({
-				isLoggedIn: N.J,
+				isLoggedIn: N.K,
 				subreddit: S.R,
 				subredditAboutInfo: S.s
 			});
@@ -1021,7 +1021,7 @@
 			const {
 				fbt: oe
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), ce = Object(i.c)({
-				isLoggedIn: ne.J,
+				isLoggedIn: ne.K,
 				subreddit: se.R,
 				subredditAboutInfo: (e, {
 					subredditId: t
@@ -1356,4 +1356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.ea9c1e10e26b292563c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.1908017838461f22d0ee.js.map

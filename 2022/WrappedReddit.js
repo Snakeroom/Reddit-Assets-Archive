@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/WrappedReddit.320ed5a557bfe1236516.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/WrappedReddit.c95a6f7c8542f0ff200e.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["WrappedReddit"], {
 		"./assets/fonts/RedditSans/font.less": function(a, e, c) {},
@@ -390,7 +390,7 @@
 				}) => {
 					var l, t;
 					const r = e();
-					if (!Object(x.J)(r)) return Object(u.a)(a, r);
+					if (!Object(x.K)(r)) return Object(u.a)(a, r);
 					a(w());
 					const n = await (async (a, e) => {
 						return await Object(m.a)(a, {
@@ -440,8 +440,8 @@
 				Y = c("./src/reddit/icons/svgs/Download/index.tsx"),
 				H = c("./src/reddit/models/Toast/index.ts"),
 				G = c("./src/reddit/controls/Button/index.tsx"),
-				z = c("./src/reddit/icons/svgs/Replay/index.tsx"),
-				K = c("./src/config.ts"),
+				K = c("./src/reddit/icons/svgs/Replay/index.tsx"),
+				z = c("./src/config.ts"),
 				q = c("./src/lib/notifications/index.ts"),
 				Q = c("./src/lib/notifications/constants.ts"),
 				J = c("./src/reddit/components/Media/LoadingIcon/index.tsx"),
@@ -1451,7 +1451,7 @@
 					}),
 					className: Ua.a.shareCardImage
 				}) : t.a.createElement(t.a.Fragment, null), [l]), _ = e ? "Redditor" : i, v = e ? t.a.createElement("img", {
-					src: `${K.a.assetPath}/img/wrappedreddit/default_avatar.png`,
+					src: `${z.a.assetPath}/img/wrappedreddit/default_avatar.png`,
 					alt: Ba._("default user avatar", null, {
 						hk: "1VMTKf"
 					}),
@@ -1521,7 +1521,7 @@
 				})), t.a.createElement("div", {
 					className: Ua.a.cardLinesWrapper,
 					style: {
-						background: `url(${K.a.assetPath}/img/wrappedreddit/card_lines.png)`
+						background: `url(${z.a.assetPath}/img/wrappedreddit/card_lines.png)`
 					}
 				}, t.a.createElement("h1", {
 					className: Ua.a.title
@@ -1547,7 +1547,7 @@
 			const {
 				fbt: Ya
 			} = c("./node_modules/fbt/lib/FbtPublic.js"), Ha = {
-				background: `url(${K.a.assetPath}/img/wrappedreddit/circle_for_oranged_bg.png) center center / 200% 200% `,
+				background: `url(${z.a.assetPath}/img/wrappedreddit/circle_for_oranged_bg.png) center center / 200% 200% `,
 				position: "absolute"
 			};
 			var Ga = ({
@@ -1586,9 +1586,9 @@
 				hk: "ZBIdy"
 			})))));
 			const {
-				fbt: za
+				fbt: Ka
 			} = c("./node_modules/fbt/lib/FbtPublic.js");
-			var Ka = ({
+			var za = ({
 				card: a
 			}) => {
 				const e = Object(r.d)(),
@@ -1635,7 +1635,7 @@
 					className: Ua.a.infoRedditRecap
 				}), t.a.createElement("p", {
 					className: Ua.a.title
-				}, za._("Hide my name & avatar", null, {
+				}, Ka._("Hide my name & avatar", null, {
 					hk: "2hHdO0"
 				}))), t.a.createElement(Fa.a, {
 					className: Ua.a.toggle,
@@ -1836,7 +1836,7 @@
 				card: a
 			}) : (a => a.__typename === g)(a) ? t.a.createElement(Da, {
 				card: a
-			}) : L(a) ? t.a.createElement(Ka, {
+			}) : L(a) ? t.a.createElement(za, {
 				card: a
 			}) : (a => a.__typename === f)(a) ? t.a.createElement(_a, {
 				card: a
@@ -1847,12 +1847,12 @@
 			}) : null, se = a => t.a.createElement("div", {
 				className: Object(n.a)(te.a.background, te.a.contentWrapper),
 				style: {
-					background: `url(${K.a.assetPath}${a||"/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png"}) center center / cover `
+					background: `url(${z.a.assetPath}${a||"/img/wrappedreddit/defaultcard/main_bg_YIR_d2x.png"}) center center / cover `
 				}
 			}), ie = () => t.a.createElement("div", {
 				className: Object(n.a)(te.a.background, te.a.contentWrapper, te.a.orangedBackground)
 			}, t.a.createElement("img", {
-				src: `${K.a.assetPath}/img/wrappedreddit/circle_for_oranged_bg.png`,
+				src: `${z.a.assetPath}/img/wrappedreddit/circle_for_oranged_bg.png`,
 				className: te.a.orangedBackgroundCircle,
 				alt: re._("background circle", null, {
 					hk: "3BQ4jR"
@@ -1873,7 +1873,7 @@
 					loadCardsAgain: a
 				}) => t.a.createElement(t.a.Fragment, null, se(), t.a.createElement("div", {
 					className: te.a.errorWrapper
-				}, t.a.createElement(z.a, {
+				}, t.a.createElement(K.a, {
 					className: te.a.errorLogo
 				}), t.a.createElement("h1", {
 					className: te.a.errorTitle
@@ -2039,4 +2039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.320ed5a557bfe1236516.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.c95a6f7c8542f0ff200e.js.map

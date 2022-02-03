@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Comment.6a6f94d1ceaa892f60e0.js
-// Retrieved at 2/2/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Comment.d5f71574a844abf1a50e.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Comment"], {
 		"./src/reddit/actions/gold/giveAward.ts": function(e, t, r) {
@@ -399,7 +399,7 @@
 				V = r.n(W);
 			const z = 3500,
 				Q = 500;
-			class J extends o.a.PureComponent {
+			class Y extends o.a.PureComponent {
 				constructor(e) {
 					super(e), this.imageRef = o.a.createRef(), this.triggerAnimation = () => {
 						const {
@@ -513,7 +513,7 @@
 					}))
 				}
 			}
-			var Y = J,
+			var J = Y,
 				K = r("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				$ = r("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
 				X = r.n($);
@@ -707,7 +707,7 @@
 						const {
 							awardCountsById: t = {}
 						} = i, r = t[e.id], s = n.icon32[e.id], a = n.icon128[e.id];
-						return o.a.createElement(Y, {
+						return o.a.createElement(J, {
 							award: e,
 							className: le.a.clickablePlaqueItem,
 							count: r,
@@ -2691,14 +2691,14 @@
 				o = r("./src/reddit/selectors/user.ts");
 			const a = e => {
 					const t = Object(n.c)(e, {
-						experimentEligibilitySelector: o.J,
+						experimentEligibilitySelector: o.K,
 						experimentName: s.yc
 					});
 					return !(!t || Object(s.qf)(t))
 				},
 				d = e => {
 					return Object(n.c)(e, {
-						experimentEligibilitySelector: o.J,
+						experimentEligibilitySelector: o.K,
 						experimentName: s.yc
 					}) === s.dd.ListingEnabled
 				}
@@ -2713,7 +2713,7 @@
 				o = r("./src/reddit/selectors/runTimeEnvVars.ts"),
 				a = r("./src/reddit/selectors/user.ts");
 			const d = e => !!Object(o.b)(e) || Object(n.c)(e, {
-				experimentEligibilitySelector: a.J,
+				experimentEligibilitySelector: a.K,
 				experimentName: s.k
 			}) === s.f.Enabled
 		},
@@ -2727,7 +2727,7 @@
 				o = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = r("./src/reddit/selectors/user.ts");
 			const d = Object(s.a)(e => Object(o.c)(e, {
-				experimentEligibilitySelector: a.J,
+				experimentEligibilitySelector: a.K,
 				experimentName: n.Ob
 			}), e => e === n.Yc)
 		},
@@ -2905,4 +2905,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.6a6f94d1ceaa892f60e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.d5f71574a844abf1a50e.js.map

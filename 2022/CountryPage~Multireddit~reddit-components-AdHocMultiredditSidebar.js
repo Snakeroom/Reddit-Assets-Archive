@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.c50cba831e109878076c.js
-// Retrieved at 2/2/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.430e5f4f670e5a878367.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -74,9 +74,9 @@
 			})), i.d(t, "duplicateRequested", (function() {
 				return Y
 			})), i.d(t, "addSubredditPending", (function() {
-				return J
-			})), i.d(t, "addSubredditSuccess", (function() {
 				return $
+			})), i.d(t, "addSubredditSuccess", (function() {
+				return J
 			})), i.d(t, "addSubredditFailure", (function() {
 				return ee
 			})), i.d(t, "addSubredditRequested", (function() {
@@ -390,7 +390,7 @@
 							hk: "4bzN2D"
 						})
 					}))
-				}, J = Object(c.a)(F.b), $ = Object(c.a)(F.c), ee = Object(c.a)(F.a), te = ({
+				}, $ = Object(c.a)(F.b), J = Object(c.a)(F.c), ee = Object(c.a)(F.a), te = ({
 					communityInfo: e,
 					identifier: t,
 					multiredditNames: i
@@ -400,7 +400,7 @@
 					const c = n(),
 						l = Object(D.k)(c);
 					if (!l || c.multireddits.api.addSubreddit.pending) return;
-					r(J({
+					r($({
 						name: t.name
 					}));
 					const {
@@ -428,7 +428,7 @@
 							}, [s.fbt._param("communityName", `${"subreddit"===t.type?a.d.subreddit:a.d.profile}${t.name}`), s.fbt._plural(i.length, "number")], {
 								hk: "9EXsM"
 							})
-						})), await r($({
+						})), await r(J({
 							communityInfo: e,
 							id: n,
 							multipaths: d,
@@ -515,7 +515,7 @@
 					apiContext: a
 				}) => {
 					const c = d();
-					if (!Object(D.J)(c)) return;
+					if (!Object(D.K)(c)) return;
 					n(ue());
 					const l = await (({
 						context: e,
@@ -1074,20 +1074,20 @@
 				Z = H.a.div("SidebarTitle", G.a),
 				X = H.a.wrapped(N.a, "SidebarFlair", G.a),
 				Y = H.a.div("Attributon", G.a),
-				J = ({
+				$ = ({
 					children: e,
 					className: t
 				}) => o.a.createElement(L, {
 					className: t,
 					html: e
 				}),
-				$ = Object(M.a)(({
+				J = Object(M.a)(({
 					children: e,
 					onSeeMoreDetails: t,
 					size: i
 				}) => {
 					const r = !i || "number" != typeof i.height || i.height > 152;
-					return o.a.createElement("div", null, o.a.createElement(J, {
+					return o.a.createElement("div", null, o.a.createElement($, {
 						className: Object(u.a)(G.a.FadingDescription, {
 							[G.a.shouldFade]: r
 						})
@@ -1119,7 +1119,7 @@
 						hk: "1AxWQt"
 					}), "· ", o.a.createElement(D.d, {
 						seconds: i.created
-					}))) : () => null, m = Object(A.f)(i) && i.description ? () => o.a.createElement(a, null, d ? o.a.createElement($, {
+					}))) : () => null, m = Object(A.f)(i) && i.description ? () => o.a.createElement(a, null, d ? o.a.createElement(J, {
 						onSeeMoreDetails: r
 					}, i.description) : o.a.createElement(L, {
 						html: i.description
@@ -1550,7 +1550,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Je = Object(l.a)(e => o.a.createElement(m.e, {
+			const $e = Object(l.a)(e => o.a.createElement(m.e, {
 					className: Xe.a.modalContainer
 				}, !e.shouldHideHeader && o.a.createElement(m.i, null, o.a.createElement(Ke.a, null, o.a.createElement(m.q, null, e.multireddit.displayText), o.a.createElement(He.a, {
 					onClick: e.onCloseModal
@@ -1562,7 +1562,7 @@
 					className: Xe.a.closeBtn,
 					onClick: e.onCloseModal
 				}, o.a.createElement(m.b, null)))),
-				$e = e => o.a.createElement(Je, Ye({}, e, {
+				Je = e => o.a.createElement($e, Ye({}, e, {
 					overlayCustomStyles: {
 						zIndex: Ge.b
 					},
@@ -1633,7 +1633,7 @@
 						subredditCategory: r,
 						onSeeMoreDetails: this.openModal,
 						onSubredditClick: this.props.trackSubredditClicked
-					}), this.state.showModal ? o.a.createElement($e, {
+					}), this.state.showModal ? o.a.createElement(Je, {
 						multireddit: i,
 						subredditCategory: r,
 						onCloseModal: this.closeModal,
@@ -2458,4 +2458,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.c50cba831e109878076c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.430e5f4f670e5a878367.js.map

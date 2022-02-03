@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.6062ae8097dd50fb43ac.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.b4d79b7ac7daed588ec8.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailNotificationSettings"], {
 		"./src/reddit/components/Settings/Notifications/EmailNotificationSettings/index.tsx": function(e, t, i) {
@@ -13,8 +13,8 @@
 				c = i("./src/reddit/components/Settings/Notifications/NotificationToggles.tsx");
 			const d = Object(n.c)({
 					hasError: r.q,
-					rows: r.Y,
-					sections: r.Z
+					rows: r.Z,
+					sections: r.ab
 				}),
 				l = Object(s.b)(d, e => ({
 					fetchNotificationSettings: () => e(Object(a.a)(o.a.Email)),
@@ -52,7 +52,7 @@
 		"./src/reddit/components/Settings/Notifications/NotificationToggles.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return p
+				return b
 			}));
 			var s = i("./node_modules/fbt/lib/FbtPublic.js"),
 				n = i("./node_modules/react/index.js"),
@@ -66,7 +66,7 @@
 				g = i("./src/reddit/icons/fonts/index.tsx"),
 				u = i("./src/reddit/components/Settings/Notifications/index.m.less"),
 				f = i.n(u);
-			const p = e => {
+			const b = e => {
 				Object(n.useEffect)(() => {
 					e.fetchNotificationSettings()
 				}, []);
@@ -99,8 +99,8 @@
 					}, s.fbt._("There was an issue fetching your notification settings. Please try again later.", null, {
 						hk: "4pmBD4"
 					})),
-					p = e.sections && e.sections.allIds,
-					b = p && p.map(t => {
+					b = e.sections && e.sections.allIds,
+					p = b && b.map(t => {
 						const n = e.sections && e.sections.byId && e.sections.byId[t];
 						if (!n) return null;
 						const r = "Moderation" === n.title;
@@ -123,7 +123,7 @@
 							handleModPnSubredditClick: e.handleModPnClick
 						})))
 					});
-				return e.hasError ? u : p && p.length > 0 ? a.a.createElement(a.a.Fragment, null, b) : a.a.createElement(r.a, {
+				return e.hasError ? u : b && b.length > 0 ? a.a.createElement(a.a.Fragment, null, p) : a.a.createElement(r.a, {
 					rowsCount: 5
 				})
 			}
@@ -145,4 +145,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.6062ae8097dd50fb43ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.b4d79b7ac7daed588ec8.js.map

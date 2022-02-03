@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.14cbf31b6219180bb92d.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.4febe6c28d0b5499e8f3.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -66,7 +66,7 @@
 				}, y = e => async (t, s, {
 					apiContext: o
 				}) => {
-					if (!Object(f.J)(s())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(f.K)(s())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
 					const r = s().features.comments.models[e];
 					if (!r) return;
 					const i = r.isLocked ? m.l : m.e;
@@ -327,7 +327,7 @@
 				}) => {
 					const {
 						audioRoom: t
-					} = e, s = () => Math.floor(10 * Math.random() + 1), r = Object(b.e)(h.W), [a, d] = Object(n.useState)(!1), [c, l] = Object(n.useState)(s());
+					} = e, s = () => Math.floor(10 * Math.random() + 1), r = Object(b.e)(h.X), [a, d] = Object(n.useState)(!1), [c, l] = Object(n.useState)(s());
 					return Object(n.useEffect)(() => {
 						const e = setInterval(() => {
 							d(!0), setTimeout(() => d(!1), 3500), l(s())
@@ -1937,7 +1937,7 @@
 					}) => Object(Q.C)(e, {
 						commentId: t.postId
 					}),
-					isLoggedIn: te.J,
+					isLoggedIn: te.K,
 					moderatorPermissions: (e, {
 						comment: t
 					}) => Object(X.m)(e, {
@@ -2325,7 +2325,7 @@
 				R = Object(d.c)({
 					isCurrentUserProfilePost: v.l,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Mb.TOPIC),
-					shouldOpenPostInNewTab: E.cb
+					shouldOpenPostInNewTab: E.db
 				}),
 				A = Object(i.b)(R);
 			t.c = Object(f.b)(A(e => {
@@ -3075,7 +3075,7 @@
 						return s && s.coinPrice >= d.g
 					})
 				},
-				isNightmodeOn: v.W
+				isNightmodeOn: v.X
 			}), e => ({
 				openPost: t => e(Object(m.L)(t))
 			}));
@@ -3857,7 +3857,7 @@
 				}),
 				T = Object(m.c)({
 					isDropdownMenuOpen: e => Object(_.a)(e) === S,
-					isOwnProfile: (e, t) => Object(j.P)(e, t.profileName),
+					isOwnProfile: (e, t) => Object(j.Q)(e, t.profileName),
 					isSnoovatar30Enabled: k.d.snoovatar30,
 					isSubscriptionsPinned: I.b
 				}),
@@ -4387,7 +4387,7 @@
 				subreddits: function(e, {
 					profileName: t
 				}) {
-					const s = Object(p.rb)(e, {
+					const s = Object(p.sb)(e, {
 							userName: t
 						}),
 						n = Object(m.f)(e);
@@ -4636,7 +4636,7 @@
 				}, e.bottomButtonText)))),
 				I = Object(d.c)({
 					hideNSFWPref: g.C,
-					nightmode: g.W
+					nightmode: g.X
 				}),
 				w = Object(i.b)(I)(e => r.a.createElement("div", {
 					className: Object(c.a)(k.a.communityItemContainer, {
@@ -4836,7 +4836,7 @@
 				}) : null,
 				user: (e, {
 					subredditOrProfile: t
-				}) => t.type === l.a.PROFILE ? Object(b.rb)(e, {
+				}) => t.type === l.a.PROFILE ? Object(b.sb)(e, {
 					userName: t.name
 				}) : null
 			}), I = Object(r.b)(j, e => ({
@@ -4888,7 +4888,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: h.l,
 					isExpanded: h.m,
-					isLoggedIn: f.J,
+					isLoggedIn: f.K,
 					showPromotedCTA: x.a,
 					moderatorPermissions: u.l,
 					modModeEnabled: c.T,
@@ -5556,4 +5556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.14cbf31b6219180bb92d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.4febe6c28d0b5499e8f3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.722e1fb89065ff64dfd1.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.fb5fcf143c2dcb572364.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1561,7 +1561,7 @@
 					}) => {
 						t(O());
 						const d = r(),
-							l = Object(i.J)(d);
+							l = Object(i.K)(d);
 						try {
 							const r = !l,
 								n = await Object(o.b)({
@@ -2546,7 +2546,7 @@
 					isAnonymous: N.f,
 					iFramed: N.g,
 					isGildPending: N.e,
-					isEmployee: F.G,
+					isEmployee: F.H,
 					isRecommendedCoinPackagePending: M.q,
 					message: N.c,
 					postOrComment: (e, {
@@ -2691,7 +2691,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(p.wb)(e)
+					Object(p.yb)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -2837,7 +2837,7 @@
 					})
 				})),
 				setIsAnonymous: t => {
-					e(Object(w.setIsAnonymous)(t)), Object(p.wb)(t)
+					e(Object(w.setIsAnonymous)(t)), Object(p.yb)(t)
 				},
 				subredditAboutRequested: t => e(Object(C.u)(t)),
 				subredditLockedCoinsRequested: (t, r) => e(Object(j.a)(t, r)),
@@ -3655,4 +3655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.722e1fb89065ff64dfd1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.fb5fcf143c2dcb572364.js.map

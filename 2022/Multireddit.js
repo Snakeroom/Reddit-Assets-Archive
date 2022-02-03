@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.5c3a9e858a2d84816aab.js
-// Retrieved at 2/2/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.a1aa8f3d8797d2dab386.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -82,7 +82,7 @@
 					const o = t(),
 						s = Object(m.e)(o),
 						i = Object(m.d)(o),
-						d = Object(b.I)(o);
+						d = Object(b.J)(o);
 					if (s || !i) return;
 					e(h());
 					let p = !1;
@@ -157,7 +157,7 @@
 						c = Object(m.g)(i);
 					if (Object(m.f)(i) || null === c || "client" === c) {
 						const n = null === (o = null === (r = Object(p.b)(t())) || void 0 === r ? void 0 : r.routeMatch) || void 0 === o ? void 0 : o.route.chunk,
-							c = Object(b.J)(i);
+							c = Object(b.K)(i);
 						return Object(s.i)(() => e(T()), {
 							name: "getFocusedVerticalsRequested",
 							page: n,
@@ -306,8 +306,8 @@
 			const _ = "create-community-button",
 				y = E.a.wrapped(l.c, "StyledTooltip", h.a),
 				S = Object(c.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(f.hb)(e),
-					userIsSuspended: f.Q
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(f.ib)(e),
+					userIsSuspended: f.R
 				});
 			t.a = Object(i.b)(S, (e, {
 				eventSource: t
@@ -1377,8 +1377,8 @@
 			}
 			const x = Object(c.c)({
 					currentUser: d.k,
-					isNightMode: d.W,
-					isPresenceUserPrefEnabled: d.O,
+					isNightMode: d.X,
+					isPresenceUserPrefEnabled: d.P,
 					shouldHideNSFW: d.C
 				}),
 				h = Object(i.b)(x);
@@ -2015,7 +2015,7 @@
 				_ = e => e.focusedVerticals.category,
 				y = e => e.focusedVerticals.lastLoadedEnv,
 				S = e => {
-					const t = Object(c.I)(e),
+					const t = Object(c.J)(e),
 						n = o.d.geoSubredditRecommendationDULoggedIn(e),
 						r = o.d.geoSubredditRecommendationDULoggedOut(e);
 					return t && n || !t && r
@@ -2038,4 +2038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.5c3a9e858a2d84816aab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.a1aa8f3d8797d2dab386.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.771dab58a0c55e8e58d9.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.74bb1b603f80c5d24a56.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./src/reddit/actions/subreddit/notifications.ts": function(e, t, n) {
@@ -230,11 +230,11 @@
 			var v = n("./src/reddit/components/Settings/Notifications/LoadingSection.tsx"),
 				w = n("./src/reddit/selectors/user.ts");
 			const N = Object(o.c)({
-					cursor: w.kb,
-					hasError: w.lb,
-					hasNextPage: w.mb,
-					isPending: w.nb,
-					subreddits: w.ob
+					cursor: w.lb,
+					hasError: w.mb,
+					hasNextPage: w.nb,
+					isPending: w.ob,
+					subreddits: w.pb
 				}),
 				y = Object(c.b)(N, e => ({
 					clearSubscribedSubredditsList: () => e(Object(d.c)()),
@@ -501,4 +501,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.771dab58a0c55e8e58d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.74bb1b603f80c5d24a56.js.map

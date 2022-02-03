@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.84377d32bb4aec80026a.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.645483406f56cae06a1c.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -768,7 +768,7 @@
 				U = r.n(S);
 			const L = Object(i.a)(v.j, (e, {
 					profileName: t
-				}) => Object(h.xb)(e, t), (e, t) => ({
+				}) => Object(h.yb)(e, t), (e, t) => ({
 					karma: {
 						...p.a,
 						...null == t ? void 0 : t.karma,
@@ -1469,7 +1469,7 @@
 						url: "testing" === n ? "https://nft.reddit.com" : `https://nft.reddit.com/n/${r}`,
 						badge: n
 					}
-				})(p), [p]), E = Object(a.e)(d.W);
+				})(p), [p]), E = Object(a.e)(d.X);
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 					className: Object(i.a)(f.a.container, I)
 				}, s.a.createElement(c.a, {
@@ -1922,8 +1922,8 @@
 				q = r("./src/reddit/helpers/styles/mixins/loading.ts"),
 				V = r("./src/reddit/models/Gold/Premium/index.ts"),
 				Q = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
-				J = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
-				X = r("./src/reddit/selectors/premium.ts"),
+				X = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
+				J = r("./src/reddit/selectors/premium.ts"),
 				$ = r("./src/reddit/components/ProfileIdCard/footer.m.less"),
 				ee = r.n($);
 
@@ -1939,12 +1939,12 @@
 			const re = Object(i.c)({
 					areModeratedSubredditsPending: O.a,
 					coinsToSpend: k.e,
-					givePremiumModalIsOpen: X.c,
+					givePremiumModalIsOpen: J.c,
 					hasFetchedModerators: O.k,
-					isEmployee: k.G,
-					isLoggedIn: k.J,
+					isEmployee: k.H,
+					isLoggedIn: k.K,
 					profile: O.j,
-					crisisFlowEnabled: J.b,
+					crisisFlowEnabled: X.b,
 					chatInviteLinkSharing: Q.a
 				}),
 				ne = ({
@@ -2211,12 +2211,12 @@
 				structuredStyle: (e, t) => Object(P.m)(e, Object(O.m)(e, t.profileName)),
 				userHasSubreddit: (e, {
 					profileName: t
-				}) => Object(k.sb)(e, {
+				}) => Object(k.tb)(e, {
 					userName: t
 				}),
 				user: (e, {
 					profileName: t
-				}) => Object(k.rb)(e, {
+				}) => Object(k.sb)(e, {
 					userName: t
 				}),
 				page: C.b,
@@ -2711,7 +2711,7 @@
 					action: "click",
 					noun: "block_user",
 					targetUser: {
-						id: Object(a.rb)(t, {
+						id: Object(a.sb)(t, {
 							userName: e
 						}).id
 					},
@@ -2722,7 +2722,7 @@
 					action: "click",
 					noun: "unblock_user",
 					targetUser: {
-						id: Object(a.rb)(t, {
+						id: Object(a.sb)(t, {
 							userName: e
 						}).id
 					},
@@ -2876,7 +2876,7 @@
 					return !!r && r.includes(t)
 				},
 				i = (e, t) => {
-					const r = Object(n.rb)(e, {
+					const r = Object(n.sb)(e, {
 						userName: t
 					});
 					return !!r && o(e, r.id)
@@ -2922,7 +2922,7 @@
 				a = r("./src/reddit/selectors/user.ts");
 			const o = e => Object(s.c)(e, {
 				experimentName: n.F,
-				experimentEligibilitySelector: () => Object(a.I)(e)
+				experimentEligibilitySelector: () => Object(a.J)(e)
 			}) === n.Yc
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
@@ -2936,11 +2936,11 @@
 				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = r("./src/reddit/selectors/user.ts");
 			const o = e => n.c.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: a.J,
+					experimentEligibilitySelector: a.K,
 					experimentName: n.i
 				}),
 				i = e => n.e.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: a.J,
+					experimentEligibilitySelector: a.K,
 					experimentName: n.l
 				})
 		},
@@ -2980,4 +2980,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.84377d32bb4aec80026a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.645483406f56cae06a1c.js.map

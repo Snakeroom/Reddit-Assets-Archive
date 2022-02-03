@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.94f3dfb2a34d8c0df604.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.68c158c776ae98428694.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -975,7 +975,7 @@
 			const m = ({
 				space: e
 			}) => {
-				const t = Object(c.e)(d.W),
+				const t = Object(c.e)(d.X),
 					r = e === n.MODAL,
 					a = e === n.INFEED_UNIT;
 				return o.a.createElement("div", {
@@ -1863,9 +1863,9 @@
 						hk: "36nXSp"
 					}))
 				}))),
-				Y = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				X = r("./src/higherOrderComponents/makeAsync.tsx");
-			var Q = Object(X.a)({
+				X = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				Y = r("./src/higherOrderComponents/makeAsync.tsx");
+			var Q = Object(Y.a)({
 					ErrorComponent: () => null,
 					LoadingComponent: () => null,
 					getComponent: () => r.e("HarbergerTaxBannerPurchaseCTA").then(r.bind(null, "./src/reddit/components/Governance/HarbergerTax/BannerPurchaseCTA/index.tsx")).then(e => e.default)
@@ -1874,7 +1874,7 @@
 				te = r("./src/reddit/constants/screenWidths.ts"),
 				re = r("./src/reddit/models/Theme/index.ts"),
 				ne = r("./src/reddit/models/Theme/NewColorSystem/index.ts");
-			const se = Object(Y.a)(({
+			const se = Object(X.a)(({
 				className: e,
 				children: t,
 				isTopBannerVariant: r,
@@ -2097,7 +2097,7 @@
 				}, e.bottomButtonText)))),
 				F = Object(c.c)({
 					hideNSFWPref: y.C,
-					nightmode: y.W
+					nightmode: y.X
 				}),
 				O = Object(a.b)(F)(e => i.a.createElement("div", {
 					className: Object(d.a)(E.a.communityItemContainer, {
@@ -2468,7 +2468,7 @@
 				O = m.a.wrapped(o.a, "RawHTMLDisplay", w.a);
 			var I = Object(i.b)(() => Object(a.c)({
 					forceRedditStyle: f.l,
-					isNightmodeOn: x.W
+					isNightmodeOn: x.X
 				}))(e => s.a.createElement(c.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -2555,8 +2555,8 @@
 					stylesheet: e => e.stylesheets
 				}),
 				J = Object(i.b)($),
-				Y = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
-			class X extends s.a.Component {
+				X = (e, t, r) => `<head>\n  <link rel="stylesheet" href="${e}">\n  <link rel="stylesheet" href="${t}">\n  <base target="_blank">\n</head>\n<body>${r}</body>`;
+			class Y extends s.a.Component {
 				constructor() {
 					super(...arguments), this.storeRef = e => {
 						this.iframe = e
@@ -2575,7 +2575,7 @@
 					this.iframe && this.iframe.contentWindow && this.iframeContent && (this.iframe.contentWindow.document.body && this.iframe.contentWindow.document.body.childNodes.length || this.writeIFrameDocument())
 				}
 				renderIframeContent(e) {
-					e.widget.stylesheetUrl && e.widget.textHtml && (this.iframeContent = Y(e.stylesheet, e.widget.stylesheetUrl, e.widget.textHtml))
+					e.widget.stylesheetUrl && e.widget.textHtml && (this.iframeContent = X(e.stylesheet, e.widget.stylesheetUrl, e.widget.textHtml))
 				}
 				render() {
 					const {
@@ -2593,7 +2593,7 @@
 					}))
 				}
 			}
-			var Q = J(X),
+			var Q = J(Y),
 				ee = r("./src/reddit/components/Widgets/Image/ImageFrame.m.less"),
 				te = r.n(ee);
 			var re = m.a.div("ImageFrame", te.a),
@@ -2674,7 +2674,7 @@
 				je = m.a.div("LinkContainer", _e.a),
 				Ce = Object(a.c)({
 					userIsBanned: he.bb,
-					userIsLoggedIn: x.J
+					userIsLoggedIn: x.K
 				});
 			var Fe = Object(i.b)(Ce)(e => {
 					const {
@@ -3712,4 +3712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.94f3dfb2a34d8c0df604.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.68c158c776ae98428694.js.map

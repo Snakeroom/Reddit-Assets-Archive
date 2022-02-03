@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4d19056a7e62696bc6ed.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.d7d6d06ef55e400bca66.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -1145,7 +1145,7 @@
 				x = n("./src/reddit/components/VerticalVotes/index.m.less"),
 				h = n.n(x);
 			const O = Object(c.c)({
-					isNightMode: f.W,
+					isNightMode: f.X,
 					isAnimatingUpvotePostId: v.k
 				}),
 				C = Object(i.b)(O),
@@ -2259,7 +2259,7 @@
 					const n = Object(i.G)(e, {
 						postId: t
 					});
-					return !(!n || n.isSponsored) && (Object(c.ub)(e, {
+					return !(!n || n.isSponsored) && (Object(c.vb)(e, {
 						postId: t
 					}) || !!Object(r.l)(e, {
 						postId: t
@@ -2277,11 +2277,11 @@
 				i = n("./src/reddit/selectors/user.ts");
 			const c = (e, t) => {
 				return Object(o.c)(e, {
-					experimentEligibilitySelector: e => ((e, t) => Object(i.ub)(e, {
+					experimentEligibilitySelector: e => ((e, t) => Object(i.vb)(e, {
 						postId: t
 					}) || !!Object(r.l)(e, {
 						postId: t
-					}) || Object(i.G)(e))(e, t),
+					}) || Object(i.H)(e))(e, t),
 					experimentName: s.Q
 				}) === s.Yc
 			}
@@ -2389,4 +2389,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4d19056a7e62696bc6ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.d7d6d06ef55e400bca66.js.map

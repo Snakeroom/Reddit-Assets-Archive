@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.df7d1cb995fc664ed976.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.14763630ba83e25ef93b.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -6809,8 +6809,8 @@
 			}
 			const b = Object(l.c)({
 					currentUser: d.k,
-					isNightMode: d.W,
-					isPresenceUserPrefEnabled: d.O,
+					isNightMode: d.X,
+					isPresenceUserPrefEnabled: d.P,
 					shouldHideNSFW: d.C
 				}),
 				f = Object(i.b)(b);
@@ -8362,7 +8362,7 @@
 					allowCrosspostableOnly: t,
 					includeUserProfile: n,
 					substring: a.rawString
-				}), e => Object(Q.hb)(e) && Object(G.j)(e), (e, t, n) => {
+				}), e => Object(Q.ib)(e) && Object(G.j)(e), (e, t, n) => {
 					const {
 						suggestedItems: a,
 						fallbackItems: r,
@@ -9150,4 +9150,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.df7d1cb995fc664ed976.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.14763630ba83e25ef93b.js.map

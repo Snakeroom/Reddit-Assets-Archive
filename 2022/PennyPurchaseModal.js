@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.19278d9e6dd8e272fd5c.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.180add0b19214460f7df.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -584,7 +584,7 @@
 			const {
 				fbt: H
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var W = e => {
+			var V = e => {
 				var t;
 				const a = Object(L.a)();
 				return o.a.createElement("div", {
@@ -617,7 +617,7 @@
 					"data-redditstyle": !0
 				})))
 			};
-			var V = e => {
+			var W = e => {
 					const t = Object(L.a)(),
 						a = [];
 					if (e.purchasePackage && a.push(n.fbt._("{coinCount} will automatically be spent on this {awardName} Award.", [n.fbt._param("coinCount", Object(l.b)(e.award.coinPrice, {
@@ -675,13 +675,13 @@
 					s = e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0;
 				return o.a.createElement(r.Elements, {
 					stripe: a
-				}, o.a.createElement(o.a.Fragment, null, e.gildThingId ? o.a.createElement(V, {
+				}, o.a.createElement(o.a.Fragment, null, e.gildThingId ? o.a.createElement(W, {
 					coinBalance: e.coinBalance,
 					award: e.selectedAward,
 					purchasePackage: e.purchasePackage,
 					userName: e.userName,
 					onCloseClick: e.onCloseModal
-				}) : e.purchasePackage && o.a.createElement(W, {
+				}) : e.purchasePackage && o.a.createElement(V, {
 					coinBalance: e.coinBalance,
 					purchasePackage: e.purchasePackage,
 					userName: e.userName,
@@ -1086,7 +1086,7 @@
 					coinBalance: x.e,
 					gildThingId: P.s,
 					isIframed: y.g,
-					nightmode: x.W,
+					nightmode: x.X,
 					savedCardsPending: P.w,
 					selectedAward: f.b,
 					selectedPayment: P.c,
@@ -2003,4 +2003,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.19278d9e6dd8e272fd5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.180add0b19214460f7df.js.map

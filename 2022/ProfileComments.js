@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.bbd725cf7a3db6a0dcca.js
-// Retrieved at 2/2/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.b5af57fdd823ed0a3442.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, s) {
@@ -19,7 +19,7 @@
 			})), s.d(t, "moreItemsFailed", (function() {
 				return D
 			})), s.d(t, "moreItemsRequested", (function() {
-				return G
+				return K
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/lodash/difference.js"),
@@ -110,7 +110,7 @@
 						meta: s().meta,
 						...S
 					})), await Promise.all([t(Object(p.c)(x)), t(Object(b.q)()), t(Object(l.b)()), t(m.o(x))])
-				}, R = Object(i.a)(T.c), M = Object(i.a)(T.b), D = Object(i.a)(T.a), G = () => async (e, t, {
+				}, R = Object(i.a)(T.c), M = Object(i.a)(T.b), D = Object(i.a)(T.a), K = () => async (e, t, {
 					apiContext: s
 				}) => {
 					const r = t(),
@@ -296,8 +296,8 @@
 			}, e.children));
 			var M = s("./src/reddit/components/ProfileItemList/index.tsx"),
 				D = s("./node_modules/lodash/noop.js"),
-				G = s.n(D),
-				K = s("./src/reddit/actions/ads/index.ts"),
+				K = s.n(D),
+				G = s("./src/reddit/actions/ads/index.ts"),
 				J = s("./src/reddit/actions/comment/list.ts"),
 				U = s("./src/reddit/actions/post.ts"),
 				H = s("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -350,13 +350,13 @@
 				oe = Object(i.b)(re, e => ({
 					onBottomViewed: (t, s) => e(Object(J.c)(t, s)),
 					adBrandSafetyStatusReceived: t => {
-						e(K.d({
+						e(G.d({
 							isViewSafe: t
 						}))
 					},
 					openPost: t => e(Object(U.L)(t)),
-					fireAdPixelsOfType: G.a,
-					trackOnPostEnteredViewport: G.a
+					fireAdPixelsOfType: K.a,
+					trackOnPostEnteredViewport: K.a
 				}), (e, t, s) => ({
 					...e,
 					...t,
@@ -403,7 +403,7 @@
 				}).apply(this, arguments)
 			}
 			const Ce = Object(N.u)(),
-				Pe = Object(c.a)(N.E, ee.db, (e, {
+				Pe = Object(c.a)(N.E, ee.eb, (e, {
 					location: t
 				}) => o()([...Object(m.a)(t.search)]), N.R, (e, {
 					match: t
@@ -411,7 +411,7 @@
 					match: t
 				}) => Object(xe.j)(e, {
 					profileName: t.params.profileName
-				}), ee.J, (e, {
+				}), ee.K, (e, {
 					match: t
 				}) => Object(ee.f)(e, d.ic + t.params.profileName), je.a, (e, t, s, r, o, n, a, i, c) => {
 					const {
@@ -517,4 +517,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.bbd725cf7a3db6a0dcca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.b5af57fdd823ed0a3442.js.map

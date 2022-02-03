@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.9ce1f5f1ca028bc69025.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.88d670e8c9dc091aa81f.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/PredictionQuestion/index.m.less": function(e, t, a) {
@@ -90,7 +90,7 @@
 					isShowingHint: v,
 					...C
 				}, k) => {
-					const I = Object(o.e)(E.W),
+					const I = Object(o.e)(E.X),
 						N = d === i.id,
 						j = n || !!g || !!d || a;
 					return c.a.createElement("div", {
@@ -538,7 +538,7 @@
 					userSelection: b,
 					predictionStatus: _,
 					voteUpdatesRemained: x
-				} = e, g = Boolean((null == e ? void 0 : e.userSelection) && !(null == e ? void 0 : e.resolvedOptionId) && e.predictionStatus === le.b.Open && e.endsAt > Date.now()), v = Object(o.e)(t => (null == e ? void 0 : e.tournamentId) ? Object(ie.a)(t, e.tournamentId) : null), C = Object(o.e)(E.W), k = Object(o.e)(E.tb), I = Object(o.e)(E.J), [N, j] = Object(n.useState)(!1), P = i === k, M = d < Date.now(), A = M && P && !p, y = _ === le.b.Cancelled || _ === le.b.CancelInProgress, w = M || !!b || !!p || y;
+				} = e, g = Boolean((null == e ? void 0 : e.userSelection) && !(null == e ? void 0 : e.resolvedOptionId) && e.predictionStatus === le.b.Open && e.endsAt > Date.now()), v = Object(o.e)(t => (null == e ? void 0 : e.tournamentId) ? Object(ie.a)(t, e.tournamentId) : null), C = Object(o.e)(E.X), k = Object(o.e)(E.ub), I = Object(o.e)(E.K), [N, j] = Object(n.useState)(!1), P = i === k, M = d < Date.now(), A = M && P && !p, y = _ === le.b.Cancelled || _ === le.b.CancelInProgress, w = M || !!b || !!p || y;
 				return Object(n.useEffect)(() => {
 					j(!1)
 				}, [b, e]), c.a.createElement("div", ue({
@@ -1535,8 +1535,8 @@
 			}
 			const E = Object(r.c)({
 					currentUser: i.k,
-					isNightMode: i.W,
-					isPresenceUserPrefEnabled: i.O,
+					isNightMode: i.X,
+					isPresenceUserPrefEnabled: i.P,
 					shouldHideNSFW: i.C
 				}),
 				b = Object(s.b)(E);
@@ -1993,4 +1993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.9ce1f5f1ca028bc69025.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.88d670e8c9dc091aa81f.js.map

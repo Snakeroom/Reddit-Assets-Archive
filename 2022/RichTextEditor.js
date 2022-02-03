@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.d9109b8c4f0113fea111.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.6706b8824d99364ee3e3.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "ReadingIndicator"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -961,7 +961,7 @@
 				}) => async (o, n) => {
 					const s = n();
 					if (!!s.features.comments.drafts[t])
-						if (Object(Q.L)(s) && e) {
+						if (Object(Q.M)(s) && e) {
 							const n = $({
 								hasFocus: e,
 								draftKey: t
@@ -1131,7 +1131,7 @@
 				}) => async (n, s) => {
 					const r = s(),
 						l = Object(i.a)(H.c.replyToComment, t);
-					if (!Object(Q.J)(s())) return n(Object(c.j)()), void n(Object(d.k)({
+					if (!Object(Q.K)(s())) return n(Object(c.j)()), void n(Object(d.k)({
 						actionSource: d.a.Reply,
 						redirectUrl: Object(G.m)(s(), {
 							commentId: t
@@ -1171,7 +1171,7 @@
 							draftType: H.c.replyToComment,
 							rtJson: h,
 							text: ""
-						}, Object(Q.L)(r)) {
+						}, Object(Q.M)(r)) {
 						const o = me({
 							parentCommentId: t,
 							commentsPageKey: e,
@@ -1360,7 +1360,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(N.ub)(null !== (l = null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
+							Object(N.wb)(null !== (l = null === (d = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === d ? void 0 : d.followed) && void 0 !== l ? l : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
 							const e = i ? n.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : n.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -1601,7 +1601,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(a.rb)(s + 1)
+					})), Object(a.sb)(s + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, o) {
@@ -4791,7 +4791,7 @@
 					} = e, k = v ? Object(m.j)(u.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, v) : 0, O = E && k < x && h && 0 === b.length, [w, T] = Object(n.useState)(O), S = Object(i.d)();
 					Object(n.useEffect)(() => {
 						w && v && setTimeout(() => {
-							Object(m.S)(u.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, v), S(Object(d.f)({
+							Object(m.T)(u.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, v), S(Object(d.f)({
 								tooltipId: y
 							}))
 						}, C)
@@ -5022,8 +5022,8 @@
 			}
 			const f = Object(a.c)({
 					currentUser: d.k,
-					isNightMode: d.W,
-					isPresenceUserPrefEnabled: d.O,
+					isNightMode: d.X,
+					isPresenceUserPrefEnabled: d.P,
 					shouldHideNSFW: d.C
 				}),
 				_ = Object(i.b)(f);
@@ -5454,7 +5454,7 @@
 				s = o("./src/reddit/constants/experiments.ts"),
 				r = o("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = o("./src/reddit/selectors/user.ts");
-			const a = Object(n.a)(i.J, i.I, (e, t) => e || t),
+			const a = Object(n.a)(i.K, i.J, (e, t) => e || t),
 				c = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: s.K
@@ -5468,4 +5468,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.d9109b8c4f0113fea111.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.6706b8824d99364ee3e3.js.map

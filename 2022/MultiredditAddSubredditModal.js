@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.440585c6c304da8ceac1.js
-// Retrieved at 2/2/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.8cb5e82bea66697e3404.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -30,9 +30,9 @@
 			})), r.d(t, "createFailure", (function() {
 				return z
 			})), r.d(t, "createPending", (function() {
-				return J
-			})), r.d(t, "createSuccess", (function() {
 				return H
+			})), r.d(t, "createSuccess", (function() {
+				return J
 			})), r.d(t, "createRequested", (function() {
 				return K
 			})), r.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
@@ -244,7 +244,7 @@
 							multiredditsModelsState: n.multireddits.models
 						}))
 					}
-				}, z = Object(c.a)(M.e), J = Object(c.a)(M.f), H = Object(c.a)(M.g), K = ({
+				}, z = Object(c.a)(M.e), H = Object(c.a)(M.f), J = Object(c.a)(M.g), K = ({
 					description: e,
 					displayName: t,
 					shouldNavigate: r
@@ -254,7 +254,7 @@
 					const c = d(),
 						l = Object(R.k)(c);
 					if (!l) return;
-					s(J());
+					s(H());
 					const m = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(g.a)(`${e.apiUrl}/api/multi`),
 						data: {
@@ -271,7 +271,7 @@
 						const {
 							id: e
 						} = l;
-						if (await s(H({
+						if (await s(J({
 								multireddit: F(m.body.data),
 								multiredditsModelsState: c.multireddits.models,
 								userId: e
@@ -487,7 +487,7 @@
 					apiContext: o
 				}) => {
 					const c = n();
-					if (!Object(R.J)(c)) return;
+					if (!Object(R.K)(c)) return;
 					d(ue());
 					const l = await (({
 						context: e,
@@ -1430,4 +1430,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.440585c6c304da8ceac1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.8cb5e82bea66697e3404.js.map

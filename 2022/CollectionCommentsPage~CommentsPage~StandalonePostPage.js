@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.529fc6445b7bcbdc1316.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.26dc4c6bb3ce3589135f.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~StandalonePostPage"], {
 		"./src/reddit/components/AdLinkWrapperContent/index.m.less": function(e, t, s) {
@@ -124,7 +124,7 @@
 				F = Object(d.c)({
 					isCurrentUserProfilePost: f.l,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Mb.TOPIC),
-					shouldOpenPostInNewTab: v.cb
+					shouldOpenPostInNewTab: v.db
 				}),
 				L = Object(r.b)(F);
 			t.c = Object(E.b)(L(e => {
@@ -1872,7 +1872,7 @@
 				showEditFlair: Re.a,
 				subredditOrProfile: V.U,
 				isEditing: U.M,
-				userIsOp: H.ub,
+				userIsOp: H.vb,
 				isVoteCountAnimation: (e, t) => !!t.isActionBarAnimationEnabled && Object(Me.f)(e, {
 					postId: t.postId
 				}),
@@ -2619,7 +2619,7 @@
 					J = D && Object(O.h)(D),
 					Y = Object(r.e)(e => {
 						if (!J) return !0;
-						const t = Object(P.xb)(e, F.author || "");
+						const t = Object(P.yb)(e, F.author || "");
 						return !t || t.enableFollowers
 					});
 				return a.a.createElement("div", {
@@ -2901,4 +2901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.529fc6445b7bcbdc1316.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.26dc4c6bb3ce3589135f.js.map

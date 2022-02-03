@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.26e710f1629f8f3e8370.js
-// Retrieved at 2/2/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.f63779eac2ab2f110195.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -459,11 +459,11 @@
 			const {
 				fbt: U
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), q = d.a.wrapped(z, "PrivateKey", W.a), H = d.a.div("ButtonsContainer", W.a), M = d.a.div("Container", W.a), Z = d.a.div("ContainerExp", W.a), G = d.a.div("Description", W.a), Y = d.a.div("PrivateSubredditDetails", W.a), K = d.a.div("PrivateSubredditDescription", W.a), V = d.a.h3("PrivateSubredditName", W.a), J = d.a.a("Link", W.a), X = d.a.wrapped(F.n, "LinkRouterButton", W.a), Q = d.a.wrapped(F.m, "LinkButton", W.a), $ = d.a.wrapped(F.q, "SecondaryLinkRouterButton", W.a), ee = d.a.wrapped(F.p, "SecondaryLinkButton", W.a), te = d.a.wrapped(X, "GoHomeLinkButton", W.a), ne = d.a.wrapped(_.a, "CreateCommunityButton", W.a), re = d.a.img("Image", W.a), ae = d.a.img("ImagePlaceholder", W.a), se = d.a.wrapped(X, "LeftLinkRouterButton", W.a), oe = d.a.wrapped(Q, "LeftLinkButton", W.a), ie = d.a.wrapped(ee, "SecondaryLeftLinkButton", W.a), le = d.a.wrapped($, "SecondaryLeftLinkRouterButton", W.a), ce = d.a.h3("Title", W.a), de = d.a.div("PageBody", W.a), ue = d.a.div("InterstitialMessageWrapper", W.a), me = Object(c.c)({
-				isLoggedIn: I.I,
+				isLoggedIn: I.J,
 				origin: T.j,
 				user: I.k,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(I.J)(e)) return !1;
+					if (!Object(I.K)(e)) return !1;
 					const t = Object(B.d)(e);
 					if (!t) return !1;
 					const n = Object(I.f)(e, t);
@@ -2050,7 +2050,7 @@
 							return n && n.coinPrice >= c.g
 						})
 					},
-					isNightmodeOn: g.W
+					isNightmodeOn: g.X
 				}), e => ({
 					openPost: t => e(Object(h.L)(t))
 				}));
@@ -2470,4 +2470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.26e710f1629f8f3e8370.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview.f63779eac2ab2f110195.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.a81eeb2eaa5984aa1d00.js
-// Retrieved at 2/2/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.903b6b287653af089317.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~Subreddit"], {
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, n) {
@@ -146,7 +146,7 @@
 					const s = t(),
 						r = Object(b.e)(s),
 						o = Object(b.d)(s),
-						d = Object(m.I)(s);
+						d = Object(m.J)(s);
 					if (r || !o) return;
 					e(g());
 					let p = !1;
@@ -221,7 +221,7 @@
 						a = Object(b.g)(o);
 					if (Object(b.f)(o) || null === a || "client" === a) {
 						const n = null === (s = null === (i = Object(p.b)(t())) || void 0 === i ? void 0 : i.routeMatch) || void 0 === s ? void 0 : s.route.chunk,
-							a = Object(m.J)(o);
+							a = Object(m.K)(o);
 						return Object(r.i)(() => e(S()), {
 							name: "getFocusedVerticalsRequested",
 							page: n,
@@ -399,14 +399,14 @@
 				d = e => {
 					switch (e) {
 						case s.a.Denied:
-							a.mb(!1), Object(i.c)();
+							a.nb(!1), Object(i.c)();
 							break;
 						case s.a.Default:
 						case s.a.Granted:
-							a.mb(!0), Object(i.c)();
+							a.nb(!0), Object(i.c)();
 							break;
 						case s.a.Closed:
-							a.mb(!0)
+							a.nb(!0)
 					}
 				}
 		},
@@ -487,7 +487,7 @@
 						b = M(u);
 					if (null === a) {
 						const e = Object(I.f)(o);
-						t(R(b.nodes, e.length))
+						t(F(b.nodes, e.length))
 					}
 					t(N(b))
 				}, P = () => async (e, t, {
@@ -499,7 +499,7 @@
 					}))(n());
 					if (null === (s = null === (i = r.error) || void 0 === i ? void 0 : i.fields) || void 0 === s ? void 0 : s.length) return;
 					const o = r && r.body,
-						a = F(o).nodes.filter(e => !e.viewedAt);
+						a = R(o).nodes.filter(e => !e.viewedAt);
 					a.length && a.forEach(e => {
 						var n;
 						Object(v.n)({
@@ -518,12 +518,12 @@
 						nodes: (i && i.edges).map(e => e.node),
 						pageInfo: s
 					}
-				}, F = e => {
+				}, R = e => {
 					var t, n;
 					return {
 						nodes: null === (n = null === (t = null == e ? void 0 : e.data) || void 0 === t ? void 0 : t.notificationInbox) || void 0 === n ? void 0 : n.elements.edges.map(e => e.node)
 					}
-				}, R = (e, t) => async (n, i) => {
+				}, F = (e, t) => async (n, i) => {
 					const s = i(),
 						r = Object(I.a)(s),
 						o = ((e, t) => {
@@ -563,7 +563,7 @@
 							id: e
 						}));
 						const s = Object(I.f)(n());
-						t(R(s)), t(Object(c.f)(Object(c.e)(i.fbt._("Notification hidden", null, {
+						t(F(s)), t(Object(c.f)(Object(c.e)(i.fbt._("Notification hidden", null, {
 							hk: "1jfPqO"
 						}), w.b.SuccessCommunityGreen)))
 					} else t(Object(c.f)(Object(c.e)(i.fbt._("Failed to hide notification, please try again.", null, {
@@ -729,7 +729,7 @@
 				const n = t();
 				if (e(Object(r.m)({
 						title: Object(i.h)()
-					})), await e(Object(c.t)()), !Object(b.J)(n)) return;
+					})), await e(Object(c.t)()), !Object(b.K)(n)) return;
 				await e(Object(o.q)());
 				const p = Object(d.b)(n),
 					m = Object(l.a)(n);
@@ -825,8 +825,8 @@
 			const y = "create-community-button",
 				O = x.a.wrapped(l.c, "StyledTooltip", g.a),
 				C = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(f.hb)(e),
-					userIsSuspended: f.Q
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(f.ib)(e),
+					userIsSuspended: f.R
 				});
 			t.a = Object(o.b)(C, (e, {
 				eventSource: t
@@ -1782,10 +1782,10 @@
 						i = t.redditStyle || Object(h.l)(e, {
 							subredditId: n
 						}),
-						s = Object(g.W)(e);
+						s = Object(g.X)(e);
 					return i || s
 				},
-				nigtmode: g.W,
+				nigtmode: g.X,
 				subredditId: u.n,
 				topPostVariant: f.d
 			}));
@@ -2976,7 +2976,7 @@
 				}, M = I && s.a.createElement("div", {
 					className: Object(a.a)(m.a.sidebar, v ? m.a["m-collectionLayout"] : m.a.defaultLayout),
 					style: P
-				}, I), F = s.a.createElement(o.a, {
+				}, I), R = s.a.createElement(o.a, {
 					hideOnlyChildMargin: S,
 					className: g,
 					disableFullscreen: y,
@@ -2984,8 +2984,8 @@
 					forcedLayout: C,
 					isCollectionLayout: v
 				}, h, f);
-				let R;
-				R = _ ? s.a.createElement(s.a.Fragment, null, _[0], F, _[1]) : j ? s.a.createElement(s.a.Fragment, null, M, F) : s.a.createElement(s.a.Fragment, null, F, M);
+				let F;
+				F = _ ? s.a.createElement(s.a.Fragment, null, _[0], R, _[1]) : j ? s.a.createElement(s.a.Fragment, null, M, R) : s.a.createElement(s.a.Fragment, null, R, M);
 				const B = y ? `${E||l.a+2*c.m}px` : "100%",
 					A = Object(i.useContext)(u.a);
 				return s.a.createElement(b.a, {
@@ -3010,7 +3010,7 @@
 					style: {
 						maxWidth: B
 					}
-				}, R))))
+				}, F))))
 			}
 		},
 		"./src/reddit/models/ContentGate.ts": function(e, t, n) {
@@ -3267,7 +3267,7 @@
 				y = e => e.focusedVerticals.category,
 				O = e => e.focusedVerticals.lastLoadedEnv,
 				C = e => {
-					const t = Object(a.I)(e),
+					const t = Object(a.J)(e),
 						n = s.d.geoSubredditRecommendationDULoggedIn(e),
 						i = s.d.geoSubredditRecommendationDULoggedOut(e);
 					return t && n || !t && i
@@ -3288,7 +3288,7 @@
 			const c = e => {
 					const t = Object(s.a)(e);
 					if (!t) return null;
-					const n = Object(r.G)(e),
+					const n = Object(r.H)(e),
 						o = [];
 					for (const s of t) {
 						const t = e.subreddits.models[s];
@@ -3421,4 +3421,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.a81eeb2eaa5984aa1d00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.903b6b287653af089317.js.map

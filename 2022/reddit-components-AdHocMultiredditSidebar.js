@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.c63d8e6c40041d9a7760.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.7e4235705c8a4313fcd5.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-AdHocMultiredditSidebar"], {
 		"./src/reddit/actions/multireddit/constants.ts": function(e, t, n) {
@@ -209,11 +209,11 @@
 			})), n.d(t, "r", (function() {
 				return A
 			})), n.d(t, "a", (function() {
-				return j
+				return P
 			})), n.d(t, "s", (function() {
-				return v
+				return j
 			})), n.d(t, "c", (function() {
-				return y
+				return v
 			}));
 			var r = n("./src/lib/classNames/index.ts"),
 				o = n("./src/lib/lessComponent.tsx"),
@@ -252,9 +252,9 @@
 				N = o.a.textarea("TextArea", l.a),
 				b = o.a.wrapped(d.l, "WarningButton", l.a),
 				A = o.a.wrapped(d.l, "PrimaryButton", l.a),
-				j = o.a.wrapped(d.o, "CancelButton", l.a),
-				v = o.a.wrapped(d.r, "RemoveButton", l.a),
-				y = ({
+				P = o.a.wrapped(d.o, "CancelButton", l.a),
+				j = o.a.wrapped(d.r, "RemoveButton", l.a),
+				v = ({
 					className: e,
 					...t
 				}) => a.a.createElement(d.t, _({
@@ -289,8 +289,8 @@
 			}
 			const D = Object(d.c)({
 					currentUser: i.k,
-					isNightMode: i.W,
-					isPresenceUserPrefEnabled: i.O,
+					isNightMode: i.X,
+					isPresenceUserPrefEnabled: i.P,
 					shouldHideNSFW: i.C
 				}),
 				m = Object(a.b)(D);
@@ -457,4 +457,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.c63d8e6c40041d9a7760.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.7e4235705c8a4313fcd5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.7af5b9c02a733109a1ac.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.6a6ced468abde533cfa8.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index", "EconHelperActions"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -159,7 +159,7 @@
 					audioRoom: n
 				} = e, {
 					recordingStatus: u
-				} = n, [v, h] = Object(o.useState)(new Set), [g, E] = Object(o.useState)(new Set), x = Object(r.e)(l.W), [O, _] = Object(o.useState)(-1), P = e => {
+				} = n, [v, h] = Object(o.useState)(new Set), [g, E] = Object(o.useState)(new Set), x = Object(r.e)(l.X), [O, _] = Object(o.useState)(-1), P = e => {
 					const t = e ? Array.from(g) : Array.from(v);
 					return null == t ? void 0 : t.map((t, n) => {
 						return e ? s.a.createElement("div", {
@@ -410,7 +410,7 @@
 			}) => {
 				const n = Object(b.fb)(),
 					a = Object(b.x)(n),
-					r = Object(s.e)(f.W);
+					r = Object(s.e)(f.X);
 				return o.a.createElement("div", g({}, t, {
 					className: Object(p.a)(e, h.a.container, {
 						[h.a.commentsPage]: a,
@@ -521,7 +521,7 @@
 				className: n,
 				...a
 			}) => {
-				const r = Object(s.e)(f.W),
+				const r = Object(s.e)(f.X),
 					i = Math.floor(100 * e / t);
 				return o.a.createElement("div", M({
 					className: Object(p.a)(B.a.container, n, {
@@ -543,12 +543,12 @@
 			var R = n("./src/reddit/icons/fonts/index.tsx"),
 				D = n("./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/index.tsx"),
 				z = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
-				W = n("./src/reddit/actions/economics/helpers/index.ts"),
-				U = n("./src/reddit/actions/economics/predictions/index.ts"),
-				H = n("./src/reddit/actions/post.ts"),
-				G = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
-				Y = n("./src/reddit/helpers/trackers/predictions.ts"),
-				X = n("./src/reddit/hooks/useToast.tsx"),
+				U = n("./src/reddit/actions/economics/helpers/index.ts"),
+				H = n("./src/reddit/actions/economics/predictions/index.ts"),
+				W = n("./src/reddit/actions/post.ts"),
+				X = n("./src/reddit/components/Econ/Prediction/hooks/useDelayedUpvoteAnimation.tsx"),
+				G = n("./src/reddit/helpers/trackers/predictions.ts"),
+				Y = n("./src/reddit/hooks/useToast.tsx"),
 				K = n("./src/reddit/models/Vote/index.ts"),
 				$ = n("./src/reddit/selectors/experiments/econ/index.ts");
 			const {
@@ -584,10 +584,10 @@
 						r = Object(s.e)(f.e),
 						i = Object(s.e)($.n),
 						c = Object(d.a)(),
-						u = Object(X.a)(),
+						u = Object(Y.a)(),
 						{
 							startDelayedUpvoteAnimation: m
-						} = Object(G.a)(n.id),
+						} = Object(X.a)(n.id),
 						{
 							id: p,
 							endsAt: b,
@@ -612,24 +612,24 @@
 							k || E || P(e.id)
 						},
 						predict: async t => {
-							if (t.currency === l.a.Coins && t.amount > r) return Object(W.promptUserToBuyMoreCoins)(), void c(Y.b);
+							if (t.currency === l.a.Coins && t.amount > r) return Object(U.promptUserToBuyMoreCoins)(), void c(G.b);
 							if (k) return u(q._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
 							})), void P(null);
 							if (!p || !_) throw new Error("Invalid arguments, optionId and pollId must be strings");
-							O(!0), c(Object(Y.o)({
+							O(!0), c(Object(G.o)({
 								pollId: p,
 								selectedNumberTokens: t.amount
 							}));
 							try {
-								await a(Object(U.s)({
+								await a(Object(H.s)({
 									coinPackageId: t.id,
 									selectedOptionId: _,
 									price: t.amount,
 									pollId: p,
 									tournamentId: e,
 									tournamentPostId: n.id
-								})), i && g < K.a.upvoted && (a(Object(H.jb)(h)), a(Object(H.jb)(p)), m()), O(!1), P(null), y(!0)
+								})), i && g < K.a.upvoted && (a(Object(W.jb)(h)), a(Object(W.jb)(p)), m()), O(!1), P(null), y(!0)
 							} catch (o) {
 								O(!1), P(null), u(q._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
@@ -668,7 +668,7 @@
 					post: e,
 					predictions: t
 				}) => {
-					const n = Object(s.e)(f.W),
+					const n = Object(s.e)(f.X),
 						a = t.reduce((e, {
 							userSelection: t
 						}) => t ? e + 1 : e, 0),
@@ -958,4 +958,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.7af5b9c02a733109a1ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.6a6ced468abde533cfa8.js.map

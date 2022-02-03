@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.21cb47e76bac85c2212a.js
-// Retrieved at 2/2/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.60d0bfc10b9f81ffc31a.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -260,7 +260,7 @@
 						name: `${s.ic}${e.name}`,
 						type: e.type
 					});
-					if (!Object(x.J)(d())) return c(Object(a.k)({
+					if (!Object(x.K)(d())) return c(Object(a.k)({
 						actionSource: a.a.Subscribe
 					})), void c(Object(i.j)());
 					const f = Object(x.k)(d());
@@ -401,7 +401,7 @@
 				}) => {
 					const o = r(),
 						i = o.multireddits.models;
-					if (!Object(x.J)(o)) return;
+					if (!Object(x.K)(o)) return;
 					const a = (e = !0) => {
 							t(Object(u.f)({
 								text: n.fbt._("Sorry, failed to {followAction}", [n.fbt._param("followAction", e ? n.fbt._("follow", null, {
@@ -667,7 +667,7 @@
 				S = d.a.div("BackupImage", I.a),
 				E = Object(b.u)();
 			t.b = E(e => {
-				const t = Object(i.e)(O.W);
+				const t = Object(i.e)(O.X);
 				let r, c, d;
 				if (e.subredditOrProfile) {
 					const {
@@ -927,9 +927,9 @@
 			const v = () => {},
 				S = Object(a.c)({
 					currentUser: O.k,
-					isNightMode: O.W,
+					isNightMode: O.X,
 					shouldHideNSFW: O.C,
-					user: O.rb,
+					user: O.sb,
 					isProfileAvatarChangeFixEnabled: I.a
 				}),
 				E = Object(i.b)(S);
@@ -982,10 +982,10 @@
 						} = e, n = 1 !== r;
 						t ? z(!0) : n && z(!1)
 					})
-				}, []), $ = Object(s.useRef)({
+				}, []), X = Object(s.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(l.a)(K, Y, $.current), C ? G : c.a.createElement("div", {
+				return Object(l.a)(K, Y, X.current), C ? G : c.a.createElement("div", {
 					className: Object(n.a)(_.a.userIconWrapper, {
 						[_.a.nftUserIcon]: g,
 						[_.a.hasHeadShotWrapper]: H,
@@ -1312,7 +1312,7 @@
 					}
 				}),
 				i = (e, t) => {
-					t && (Object(s.Bb)(e.postId), Object(s.Jb)(t)), e.impressionIdStr ? Object(s.Cb)(e.impressionIdStr) : e.impressionId && Object(s.Cb)(e.impressionId)
+					t && (Object(s.Db)(e.postId), Object(s.Lb)(t)), e.impressionIdStr ? Object(s.Eb)(e.impressionIdStr) : e.impressionId && Object(s.Eb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/screenview.ts": function(e, t, r) {
@@ -1354,9 +1354,9 @@
 			})), r.d(t, "x", (function() {
 				return Y
 			})), r.d(t, "e", (function() {
-				return $
+				return X
 			})), r.d(t, "d", (function() {
-				return Q
+				return Z
 			})), r.d(t, "v", (function() {
 				return te
 			})), r.d(t, "u", (function() {
@@ -1518,7 +1518,7 @@
 							break
 						}
 						case c.Mb.SUBREDDIT_WIKI:
-							Object(x.a)(Z(r, n)(t));
+							Object(x.a)($(r, n)(t));
 							break;
 						case c.Mb.COINS:
 							Object(x.a)(B(r, n)(t)), Object(x.a)(F()(t));
@@ -1542,7 +1542,7 @@
 							l && L(t, a ? a.subredditName : null, a ? a.profileName : null);
 							break;
 						case c.Mb.SUBREDDIT_LEADERBOARD:
-							l && Object(x.a)($()(t));
+							l && Object(x.a)(X()(t));
 							break;
 						case c.Mb.SEARCH_RESULTS:
 							if (l) {
@@ -1555,7 +1555,7 @@
 							l && Object(x.a)(z()(t));
 							break;
 						case c.Mb.GEOTAGGING:
-							l && Object(x.a)(Q()(t));
+							l && Object(x.a)(Z()(t));
 							break;
 						case c.Mb.SUBREDDIT_CREATION:
 							l && Object(x.a)(Y()(t));
@@ -1870,13 +1870,13 @@
 					noun: "screen",
 					...T(e)
 				}),
-				$ = () => e => ({
+				X = () => e => ({
 					action: "view",
 					source: "global",
 					noun: "screen",
 					...T(e)
 				}),
-				Z = (e, t) => r => ({
+				$ = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -1887,13 +1887,13 @@
 					userSubreddit: E.qb(r),
 					adblock: E.d(r)
 				}),
-				Q = () => e => ({
+				Z = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					...T(e)
 				}),
-				X = {
+				Q = {
 					source: "global",
 					action: a.c.VIEW,
 					noun: "screen"
@@ -1945,7 +1945,7 @@
 					const l = E.E(d, s);
 					return {
 						...j.d(d, t),
-						...X,
+						...Q,
 						...E.m(d),
 						actionInfo: E.c(d, {
 							success: u,
@@ -1966,7 +1966,7 @@
 				},
 				re = (e, t, r, n, s) => c => ({
 					...E.m(c),
-					...X,
+					...Q,
 					actionInfo: {
 						...E.c(c),
 						pageType: "search_dropdown"
@@ -2591,7 +2591,7 @@
 					if (!Object(u.m)(e, {
 							subredditId: t
 						})) return;
-					if (Object(m.G)(e)) return O(e);
+					if (Object(m.H)(e)) return O(e);
 					const r = Object(b.F)(e, {
 						identifier: {
 							id: t,
@@ -2621,4 +2621,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.21cb47e76bac85c2212a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.60d0bfc10b9f81ffc31a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.2c324ce58718a59d88ac.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.3fd5e29410b89cbbb780.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -642,14 +642,14 @@
 						} = e, s = 1 !== n;
 						t ? V(!0) : s && V(!1)
 					})
-				}, []), B = Object(s.useRef)({
+				}, []), H = Object(s.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(a.a)(A, G, B.current);
-				const H = Object(o.a)(t);
+				Object(a.a)(A, G, H.current);
+				const B = Object(o.a)(t);
 				Object(s.useEffect)(() => {
-					if (void 0 !== H && H !== t) {
-						const e = t - H;
+					if (void 0 !== B && B !== t) {
+						const e = t - B;
 						M.current ? N.current(e) : L.current += e
 					}
 					return () => {
@@ -1345,19 +1345,19 @@
 				U = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				V = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				G = n("./src/reddit/controls/InternalLink/index.tsx"),
-				B = n("./src/reddit/controls/Score/index.tsx"),
-				H = n("./src/reddit/icons/fonts/index.tsx"),
+				H = n("./src/reddit/controls/Score/index.tsx"),
+				B = n("./src/reddit/icons/fonts/index.tsx"),
 				Y = n("./src/reddit/helpers/styles/mixins/index.m.less"),
 				W = n.n(Y),
 				K = n("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
 				q = n.n(K);
 			const {
 				fbt: z
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), J = 20, Z = l.oc, X = l.oc, Q = Object(c.a)(P.a, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, J = l.oc, X = l.oc, Q = Object(c.a)(P.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(o.b)(() => Object(i.c)({
 				autoplay: A.b,
-				isLoggedIn: A.J,
+				isLoggedIn: A.K,
 				isOverlayOpen: j.i,
 				location: (e, {
 					listingName: t
@@ -1405,19 +1405,19 @@
 			class ne extends s.Component {
 				constructor(e) {
 					super(e), this.observableElement = r.a.createRef(), this.videoRef = r.a.createRef(), this.videoSessionManager = null, this.timerId = "rpan-du-active-watch-timer-id", this.handleSuccessfulPlayback = () => {
-						Object(E.Y)()
+						Object(E.Z)()
 					}, this.handleUnsuccessfulPlayback = () => {
-						const e = Number(Object(E.M)());
+						const e = Number(Object(E.N)());
 						if (e) {
-							if (Date.now() - e >= Z) {
-								Object(E.Y)();
+							if (Date.now() - e >= J) {
+								Object(E.Z)();
 								const e = 30 * l.B,
 									t = Date.now() - e + X;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
 								})
 							}
-						} else Object(E.Ob)(Date.now())
+						} else Object(E.Qb)(Date.now())
 					}, this.onResourceRemoved = () => {
 						this.subscribeStats()
 					}, this.onError = () => {
@@ -1510,7 +1510,7 @@
 				}
 				endTimeTracker() {
 					if (this.timerId && a.c.has(this.timerId)) {
-						Math.round(a.c.end(this.timerId)) / 1e3 >= J ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
+						Math.round(a.c.end(this.timerId)) / 1e3 >= Z ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
 					}
 				}
 				componentDidMount() {
@@ -1655,7 +1655,7 @@
 				renderExpandIcon() {
 					return r.a.createElement("div", {
 						className: q.a.bigExpando
-					}, r.a.createElement(H.a, {
+					}, r.a.createElement(B.a, {
 						name: "expand",
 						className: q.a.bigExpandoIcon
 					}))
@@ -1801,7 +1801,7 @@
 						[q.a.verticalVotes]: e.isVertical,
 						[q.a.horizontalVotes]: !e.isVertical
 					})
-				}, r.a.createElement(B.a, {
+				}, r.a.createElement(H.a, {
 					className: q.a.score,
 					isScoreHidden: !0,
 					score: 0,
@@ -1812,7 +1812,7 @@
 				}) => r.a.createElement("button", {
 					className: q.a.expandoButton,
 					onClick: e
-				}, r.a.createElement(H.a, {
+				}, r.a.createElement(B.a, {
 					name: "expand",
 					className: q.a.expandoIcon
 				})),
@@ -1828,7 +1828,7 @@
 					isUserOp: !1,
 					onClick: e,
 					noBreakpoints: !0
-				}, r.a.createElement(H.a, {
+				}, r.a.createElement(B.a, {
 					name: "hide"
 				})),
 				ie = ({
@@ -1845,7 +1845,7 @@
 					iconWrapperClassName: q.a.overflowItemIconWrapper,
 					textClassName: q.a.overflowItemText,
 					onClick: e
-				}, r.a.createElement(H.a, {
+				}, r.a.createElement(B.a, {
 					name: "hide"
 				})));
 			t.default = $(Object(U.c)(ne))
@@ -2516,7 +2516,7 @@
 			})), n.d(t, "clickNextFiltersEvent", (function() {
 				return G
 			})), n.d(t, "clickPreviousFiltersEvent", (function() {
-				return B
+				return H
 			}));
 			var s = n("./src/reddit/models/Gold/Award.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts"),
@@ -2718,7 +2718,7 @@
 					action: "click",
 					noun: "next_filters"
 				}),
-				B = () => e => ({
+				H = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
@@ -4156,7 +4156,7 @@
 					const n = Object(i.G)(e, {
 						postId: t
 					});
-					return !(!n || n.isSponsored) && (Object(a.ub)(e, {
+					return !(!n || n.isSponsored) && (Object(a.vb)(e, {
 						postId: t
 					}) || !!Object(o.l)(e, {
 						postId: t
@@ -4204,11 +4204,11 @@
 				i = n("./src/reddit/selectors/user.ts");
 			const a = (e, t) => {
 				return Object(r.c)(e, {
-					experimentEligibilitySelector: e => ((e, t) => Object(i.ub)(e, {
+					experimentEligibilitySelector: e => ((e, t) => Object(i.vb)(e, {
 						postId: t
 					}) || !!Object(o.l)(e, {
 						postId: t
-					}) || Object(i.G)(e))(e, t),
+					}) || Object(i.H)(e))(e, t),
 					experimentName: s.Q
 				}) === s.Yc
 			}
@@ -4341,4 +4341,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.2c324ce58718a59d88ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.3fd5e29410b89cbbb780.js.map

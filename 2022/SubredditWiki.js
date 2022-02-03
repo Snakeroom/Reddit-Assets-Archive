@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.b758a02af6162ba741fd.js
-// Retrieved at 2/2/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.583497e330fd3f93c1e3.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, s) {
@@ -322,7 +322,7 @@
 						o = Object(p.b)(f),
 						a = Object(p.b)(O),
 						[d, c] = function(e, t) {
-							const [s, n] = Object(i.useState)(Object(W.N)(e, t));
+							const [s, n] = Object(i.useState)(Object(W.O)(e, t));
 							return [s, Object(i.useCallback)(() => {
 								const s = Object(W.a)(e, t);
 								n(s)
@@ -352,7 +352,7 @@
 							e.stopPropagation(), o.visible ? E() : j()
 						}, [E, j, o.visible]),
 						T = Object(i.useCallback)(t => {
-							t === x.b.FREQUENT && Object(W.bb)(e.userId, e.subredditId)
+							t === x.b.FREQUENT && Object(W.cb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						L = Object(i.useCallback)(i => {
 							const {
@@ -569,7 +569,7 @@
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(W.bb)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(W.cb)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), e.userIsSubscriber && t && e.notificationLevel && n.a.createElement("div", {
 					className: ie.a.notificationButtonContainer
@@ -2105,7 +2105,7 @@
 						match: t
 					}) => Object(M.f)(e, t.params.subredditName),
 					layout: C.R,
-					over18Pref: M.db,
+					over18Pref: M.eb,
 					subreddit: (e, {
 						match: t
 					}) => Object(W.w)(e, {
@@ -2130,7 +2130,7 @@
 						contentGateInfo: t,
 						subreddit: s,
 						subredditName: i
-					} = this.props, r = !!s && s.isNSFW && !M.db, o = Object(F.a)(t, r, i);
+					} = this.props, r = !!s && s.isNSFW && !M.eb, o = Object(F.a)(t, r, i);
 					if (o) return n.a.createElement(c.default, o);
 					const a = `/r/${i}/`;
 					return n.a.createElement(B.a, {
@@ -2170,10 +2170,10 @@
 				n = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
 			const o = e => i.lc.Enabled === Object(n.c)(e, {
-				experimentEligibilitySelector: r.J,
+				experimentEligibilitySelector: r.K,
 				experimentName: i.kc
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.b758a02af6162ba741fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.583497e330fd3f93c1e3.js.map

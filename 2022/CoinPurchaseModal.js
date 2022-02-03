@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.a1c467295cb3241cc704.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.594506ce07ed5bcbe57c.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1518,7 +1518,7 @@
 					}) => {
 						t(y());
 						const d = r(),
-							l = Object(i.J)(d);
+							l = Object(i.K)(d);
 						try {
 							const r = !l,
 								n = await Object(c.b)({
@@ -2156,7 +2156,7 @@
 					dealCoinPackages: v.f,
 					gildThingId: P.s,
 					isIframed: O.g,
-					nightmode: x.W,
+					nightmode: x.X,
 					savedCardsPending: P.w,
 					selectedAward: j.b,
 					selectedPayment: P.c,
@@ -3636,4 +3636,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.a1c467295cb3241cc704.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.594506ce07ed5bcbe57c.js.map

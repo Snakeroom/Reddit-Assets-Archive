@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.1cac14f2fc64d02157cf.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.672deac0deea11ef3351.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./src/reddit/actions/pages/subredditLeaderboard.ts": function(e, t, n) {
@@ -39,7 +39,7 @@
 				}, f = e => async (t, n) => {
 					await t(Object(s.a)());
 					const r = n(),
-						a = Object(p.K)(r);
+						a = Object(p.L)(r);
 					if (Object(g.a)(r, e)) return;
 					const i = e && Object(b.e)(r, {
 							categoryName: e
@@ -1571,7 +1571,7 @@
 					hasNextPage: (e, {
 						categoryId: t
 					}) => Object(W.b)(e, t),
-					isMod: A.K,
+					isMod: A.L,
 					rankings: (e, {
 						categoryId: t
 					}) => Object(M.M)(e, t),
@@ -1970,4 +1970,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.1cac14f2fc64d02157cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.672deac0deea11ef3351.js.map

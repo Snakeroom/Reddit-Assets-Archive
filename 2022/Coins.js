@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.1b0a5c66ebcdd7307ae8.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.5221d1a4ae9956f7c36f.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1033,7 +1033,7 @@
 					}) => {
 						t(y());
 						const l = r(),
-							d = Object(i.J)(l);
+							d = Object(i.K)(l);
 						try {
 							const r = !d,
 								n = await Object(o.b)({
@@ -1902,8 +1902,8 @@
 					})
 				},
 				J = r("./src/reddit/components/CollapsibleFAQ/index.tsx"),
-				Z = r("./src/reddit/components/GildMarketingDescription/index.tsx"),
-				K = r("./src/reddit/components/MarketingPageFooter/index.tsx"),
+				K = r("./src/reddit/components/GildMarketingDescription/index.tsx"),
+				Z = r("./src/reddit/components/MarketingPageFooter/index.tsx"),
 				$ = r("./src/reddit/components/PremiumMarketingBanner/index.m.less"),
 				ee = r.n($);
 			const {
@@ -2011,7 +2011,7 @@
 					coinPackages: M.d,
 					dealCoinPackages: M.f,
 					isPremiumSubscriber: L.t,
-					isLoggedIn: L.J,
+					isLoggedIn: L.K,
 					premiumPackages: M.l,
 					purchaseCatalogPending: M.o
 				}),
@@ -2090,7 +2090,7 @@
 						activeSaleConfig: e,
 						isLoading: n || !r.length,
 						onClickGetCoins: this.onClickGetCoins
-					}), this.renderGildBreakdown(), this.renderPurchase(), this.renderFAQSection(), i.a.createElement(K.a, null))
+					}), this.renderGildBreakdown(), this.renderPurchase(), this.renderFAQSection(), i.a.createElement(Z.a, null))
 				}
 				renderGildBreakdown() {
 					return i.a.createElement("div", {
@@ -2106,7 +2106,7 @@
 						hk: "3eScNB"
 					})), i.a.createElement("div", {
 						className: _.a.gridContainer
-					}, i.a.createElement(Z.a, {
+					}, i.a.createElement(K.a, {
 						className: _.a.gridItem,
 						icon: i.a.createElement("img", {
 							src: `${n.a.assetPath}/img/gold/badges/award-silver-large.png`
@@ -2120,7 +2120,7 @@
 						":coin_price:": i.a.createElement("span", {
 							className: _.a.nowrap
 						}, i.a.createElement(ne.a, null), P.q.coinPrice)
-					})), i.a.createElement(Z.a, {
+					})), i.a.createElement(K.a, {
 						className: _.a.gridItem,
 						icon: i.a.createElement("img", {
 							src: `${n.a.assetPath}/img/gold/badges/award-gold-large.png`
@@ -2137,7 +2137,7 @@
 						":coin_price:": i.a.createElement("span", {
 							className: _.a.nowrap
 						}, i.a.createElement(ne.a, null), P.n.coinPrice)
-					})), i.a.createElement(Z.a, {
+					})), i.a.createElement(K.a, {
 						className: _.a.gridItem,
 						icon: i.a.createElement("img", {
 							src: `${n.a.assetPath}/img/gold/badges/award-platinum-large.png`
@@ -2298,4 +2298,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.1b0a5c66ebcdd7307ae8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.5221d1a4ae9956f7c36f.js.map

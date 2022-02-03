@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.e1b07c017a5e8b96e122.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.30e35700b632582a1781.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -431,7 +431,7 @@
 					rel: r.c
 				}, e)))),
 				v = () => {
-					const e = Object(h.e)(_.W);
+					const e = Object(h.e)(_.X);
 					return i.a.createElement("div", {
 						className: Object(s.a)(f.a.communitiesSection, {
 							[f.a.isNightmodeOn]: e
@@ -630,7 +630,7 @@
 			var Q = t("./src/reddit/pages/Talk/index.m.less"),
 				M = t.n(Q);
 			const {
-				fbt: W
+				fbt: H
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 			a.default = () => {
 				const e = Object(u.a)();
@@ -679,16 +679,16 @@
 				}, i.a.createElement("img", {
 					className: M.a.logo,
 					src: `${l.a.assetPath}/img/talk/reddit-talk-logo.svg`,
-					alt: W._("Reddit Talk", null, {
+					alt: H._("Reddit Talk", null, {
 						hk: "XNl4V"
 					})
 				})), i.a.createElement("h2", {
 					className: M.a.subheading
-				}, W._("Live audio talks in your favorite communities", null, {
+				}, H._("Live audio talks in your favorite communities", null, {
 					hk: "pdWzZ"
 				})), i.a.createElement("p", {
 					className: Object(s.a)(M.a.description, M.a.bodyText)
-				}, W._("A new way for redditors to host AMAs, Q&As, or just hang out and have fun.", null, {
+				}, H._("A new way for redditors to host AMAs, Q&As, or just hang out and have fun.", null, {
 					hk: "3mWLSE"
 				})), i.a.createElement("div", {
 					className: Object(s.a)(M.a.modWarning, M.a.bodyText)
@@ -697,12 +697,12 @@
 				}, i.a.createElement(k.a, {
 					name: "mod",
 					className: M.a.modWarningIcon
-				})), W._("{=During our pilot, only moderators in participating communities can start talks. If you’re not a mod and are interested in hosting a talk,let us know}", [W._param("=During our pilot, only moderators in participating communities can start talks. If you’re not a mod and are interested in hosting a talk,let us know", i.a.createElement("div", null, W._("During our pilot, only moderators in participating communities can start talks. If you’re not a mod and are interested in hosting a talk, {=let us know}.", [W._param("=let us know", i.a.createElement(m.b, {
+				})), H._("{=During our pilot, only moderators in participating communities can start talks. If you’re not a mod and are interested in hosting a talk,let us know}", [H._param("=During our pilot, only moderators in participating communities can start talks. If you’re not a mod and are interested in hosting a talk,let us know", i.a.createElement("div", null, H._("During our pilot, only moderators in participating communities can start talks. If you’re not a mod and are interested in hosting a talk, {=let us know}.", [H._param("=let us know", i.a.createElement(m.b, {
 					className: M.a.inlineCta,
 					href: w,
 					rel: r.a,
 					target: "_blank"
-				}, W._("let us know", null, {
+				}, H._("let us know", null, {
 					hk: "2F4ah1"
 				})))], {
 					hk: "3k7tgj"
@@ -722,7 +722,7 @@
 						action: "click",
 						noun: "try_talk_cta"
 					}))())
-				}, W._("Try it out", null, {
+				}, H._("Try it out", null, {
 					hk: "4yOsEn"
 				})))), i.a.createElement("div", {
 					className: M.a.headingArt
@@ -744,4 +744,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.e1b07c017a5e8b96e122.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.30e35700b632582a1781.js.map

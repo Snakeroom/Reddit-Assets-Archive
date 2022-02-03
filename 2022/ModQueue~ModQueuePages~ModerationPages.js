@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.8d289b2086e66d628b7c.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.efb685d2dd024f32e2e9.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages~ModerationPages"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, r) {
@@ -66,7 +66,7 @@
 				}, g = e => async (t, r, {
 					apiContext: a
 				}) => {
-					if (!Object(y.J)(r())) return void t(Object(d.i)(i.a.LOGIN_MODAL_ID));
+					if (!Object(y.K)(r())) return void t(Object(d.i)(i.a.LOGIN_MODAL_ID));
 					const n = r().features.comments.models[e];
 					if (!n) return;
 					const o = n.isLocked ? l.l : l.e;
@@ -423,7 +423,7 @@
 							hk: "16O2Sk"
 						})
 					}))
-				}, G = Object(n.a)(k.t), K = Object(n.a)(k.s), H = Object(n.a)(k.r), z = (e, t, r) => async (a, n, {
+				}, K = Object(n.a)(k.t), G = Object(n.a)(k.s), H = Object(n.a)(k.r), z = (e, t, r) => async (a, n, {
 					apiContext: d
 				}) => {
 					a(Object(o.c)());
@@ -588,7 +588,7 @@
 							}), (() => async (e, t, {
 								apiContext: r
 							}) => {
-								e(G());
+								e(K());
 								const a = t(),
 									n = Object.keys(a.pages.modHub.modQueue.bulkAction.undoLastAction)[0],
 									d = a.pages.modHub.modQueue.bulkAction.undoLastAction[n],
@@ -597,7 +597,7 @@
 								const l = await Object(i.a)(r(), n, {
 									ids: d
 								});
-								l.ok ? e(K({
+								l.ok ? e(G({
 									...l.body,
 									operation: n,
 									ids: d,
@@ -878,8 +878,8 @@
 				});
 			var V = r("./src/reddit/helpers/isPost.ts"),
 				B = r("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
-				G = r("./src/reddit/helpers/routeKey/index.ts"),
-				K = r("./src/reddit/models/ModQueue/index.ts"),
+				K = r("./src/reddit/helpers/routeKey/index.ts"),
+				G = r("./src/reddit/models/ModQueue/index.ts"),
 				H = r("./src/reddit/models/PostDraft/index.ts"),
 				z = r("./src/reddit/models/RemovalReason/index.ts"),
 				$ = r("./src/reddit/models/Toast/index.ts"),
@@ -1024,7 +1024,7 @@
 											},
 											r = Object(Y.f)(c),
 											s = c.platform.currentPage && c.platform.currentPage.routeMatch;
-										let a = r && s && Object(G.a)(s, c, c.posts.models[e.postId]);
+										let a = r && s && Object(K.a)(s, c, c.posts.models[e.postId]);
 										if (a || (a = Object(I.a)(e.postId, null, {
 												sort: k.v,
 												hasSortParam: !0
@@ -1101,7 +1101,7 @@
 					if (p.ok) {
 						const s = {
 							ids: e,
-							operation: K.a.RemovalReason,
+							operation: G.a.RemovalReason,
 							username: i,
 							options: {
 								modNote: n,
@@ -1544,18 +1544,18 @@
 							return e
 					}
 				},
-				G = Object(s.c)({
+				K = Object(s.c)({
 					api: A,
 					models: C,
 					pageInfo: D,
 					search: q,
 					userOrder: B
 				}),
-				K = r("./src/reddit/actions/moderationLog/constants.ts");
+				G = r("./src/reddit/actions/moderationLog/constants.ts");
 			const H = {};
 			var z = (e = H, t) => {
 				switch (t.type) {
-					case K.b: {
+					case G.b: {
 						const {
 							actionIds: r,
 							key: s,
@@ -1576,7 +1576,7 @@
 			const $ = {};
 			var W = (e = $, t) => {
 					switch (t.type) {
-						case K.b: {
+						case G.b: {
 							const {
 								normalizedModerationLog: r,
 								subredditId: s
@@ -1601,7 +1601,7 @@
 				});
 			var J = (e = null, t) => {
 				switch (t.type) {
-					case K.b: {
+					case G.b: {
 						const {
 							endCursor: e
 						} = t.payload;
@@ -1614,7 +1614,7 @@
 			const X = {};
 			var Z = (e = X, t) => {
 				switch (t.type) {
-					case K.b: {
+					case G.b: {
 						const {
 							hasNextPage: r,
 							subredditId: s
@@ -1631,7 +1631,7 @@
 			const ee = {};
 			var te = (e = ee, t) => {
 				switch (t.type) {
-					case K.b: {
+					case G.b: {
 						const {
 							hasPreviousPage: r,
 							subredditId: s
@@ -1648,7 +1648,7 @@
 			const re = [];
 			var se = (e = re, t) => {
 				switch (t.type) {
-					case K.a: {
+					case G.a: {
 						const {
 							normalizedModerators: r,
 							subredditId: s
@@ -1664,7 +1664,7 @@
 			};
 			var ae = (e = null, t) => {
 					switch (t.type) {
-						case K.b: {
+						case G.b: {
 							const {
 								startCursor: e
 							} = t.payload;
@@ -2109,8 +2109,8 @@
 					pending: Ve
 				});
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			const Ge = {};
-			var Ke = (e = Ge, t) => {
+			const Ke = {};
+			var Ge = (e = Ke, t) => {
 					switch (t.type) {
 						case a.F: {
 							const {
@@ -2143,7 +2143,7 @@
 					}
 				},
 				He = Object(s.c)({
-					data: Ke,
+					data: Ge,
 					api: Be
 				}),
 				ze = Object(s.c)({
@@ -2619,7 +2619,7 @@
 					itemOrder: Qt,
 					loadMore: Vt
 				});
-			var Gt = (e = null, t) => {
+			var Kt = (e = null, t) => {
 				switch (t.type) {
 					case Ye.w:
 					case Ye.v:
@@ -2630,7 +2630,7 @@
 						return e
 				}
 			};
-			var Kt = (e = !1, t) => {
+			var Gt = (e = !1, t) => {
 					switch (t.type) {
 						case Ye.w:
 							return !0;
@@ -2642,8 +2642,8 @@
 					}
 				},
 				Ht = Object(s.c)({
-					error: Gt,
-					pending: Kt
+					error: Kt,
+					pending: Gt
 				});
 			const zt = {};
 			var $t = (e = zt, t) => {
@@ -2902,7 +2902,7 @@
 				});
 			t.a = Object(s.c)({
 				approvedSubmitters: k,
-				flairedUsers: G,
+				flairedUsers: K,
 				moderationLog: ne,
 				moderators: ze,
 				modQueue: Xt,
@@ -2971,4 +2971,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.8d289b2086e66d628b7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.efb685d2dd024f32e2e9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.63b55119c1e2c1e3cdcc.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.59a48229283c476a02e7.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -669,14 +669,14 @@
 				}
 				return t
 			}
-			var J = {
+			var q = {
 				top: "auto",
 				right: "auto",
 				bottom: "auto",
 				left: "auto"
 			};
 
-			function q(e) {
+			function J(e) {
 				var t, n = e.popper,
 					o = e.popperRect,
 					r = e.placement,
@@ -706,7 +706,7 @@
 				}
 				var k, P = Object.assign({
 					position: i
-				}, d && J);
+				}, d && q);
 				return c ? Object.assign(Object.assign({}, P), {}, ((k = {})[x] = h ? "0" : "", k[b] = f ? "0" : "", k.transform = (v.devicePixelRatio || 1) < 2 ? "translate(" + u + "px, " + m + "px)" : "translate3d(" + u + "px, " + m + "px, 0)", k)) : Object.assign(Object.assign({}, P), {}, ((t = {})[x] = h ? m + "px" : "", t[b] = f ? u + "px" : "", t.transform = "", t))
 			}
 			var G = {
@@ -948,11 +948,11 @@
 									popperRect: t.rects.popper,
 									gpuAcceleration: r
 								};
-							null != t.modifiersData.popperOffsets && (t.styles.popper = Object.assign(Object.assign({}, t.styles.popper), q(Object.assign(Object.assign({}, i), {}, {
+							null != t.modifiersData.popperOffsets && (t.styles.popper = Object.assign(Object.assign({}, t.styles.popper), J(Object.assign(Object.assign({}, i), {}, {
 								offsets: t.modifiersData.popperOffsets,
 								position: t.options.strategy,
 								adaptive: a
-							})))), null != t.modifiersData.arrow && (t.styles.arrow = Object.assign(Object.assign({}, t.styles.arrow), q(Object.assign(Object.assign({}, i), {}, {
+							})))), null != t.modifiersData.arrow && (t.styles.arrow = Object.assign(Object.assign({}, t.styles.arrow), J(Object.assign(Object.assign({}, i), {}, {
 								offsets: t.modifiersData.arrow,
 								position: "absolute",
 								adaptive: !1
@@ -1104,17 +1104,17 @@
 										H = F ? R ? E : j : R ? w : O;
 									g[D] > _[D] && (H = X(H));
 									var U = X(H),
-										J = [];
-									if (s && J.push(W[B] <= 0), i && J.push(W[H] <= 0, W[U] <= 0), J.every((function(e) {
+										q = [];
+									if (s && q.push(W[B] <= 0), i && q.push(W[H] <= 0, W[U] <= 0), q.every((function(e) {
 											return e
 										}))) {
 										N = A, M = !1;
 										break
 									}
-									S.set(A, J)
+									S.set(A, q)
 								}
 								if (M)
-									for (var q = function(e) {
+									for (var J = function(e) {
 											var t = y.find((function(t) {
 												var n = S.get(t);
 												if (n) return n.slice(0, e).every((function(e) {
@@ -1123,7 +1123,7 @@
 											}));
 											if (t) return N = t, "break"
 										}, G = f ? 3 : 1; G > 0; G--) {
-										if ("break" === q(G)) break
+										if ("break" === J(G)) break
 									}
 								t.placement !== N && (t.modifiersData[o]._skip = !0, t.placement = N, t.reset = !0)
 							}
@@ -1183,9 +1183,9 @@
 										D = S[P] - x[A],
 										W = m ? -N[B] / 2 : 0,
 										U = y === C ? M[B] : N[B],
-										J = y === C ? -N[B] : -M[B],
-										q = t.elements.arrow,
-										G = m && q ? h(q) : {
+										q = y === C ? -N[B] : -M[B],
+										J = t.elements.arrow,
+										G = m && J ? h(J) : {
 											width: 0,
 											height: 0
 										},
@@ -1199,7 +1199,7 @@
 										K = X[A],
 										Y = re(0, M[B], G[B]),
 										Q = k ? M[B] / 2 - W - Y - Z - T : U - Y - Z - T,
-										$ = k ? -M[B] / 2 + W + Y + K + T : J + Y + K + T,
+										$ = k ? -M[B] / 2 + W + Y + K + T : q + Y + K + T,
 										ee = t.elements.arrow && g(t.elements.arrow),
 										te = ee ? "y" === P ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][P] : 0,
@@ -1601,7 +1601,7 @@
 				}) => {
 					const {
 						audioRoom: t
-					} = e, n = () => Math.floor(10 * Math.random() + 1), s = Object(f.e)(h.W), [i, c] = Object(o.useState)(!1), [d, l] = Object(o.useState)(n());
+					} = e, n = () => Math.floor(10 * Math.random() + 1), s = Object(f.e)(h.X), [i, c] = Object(o.useState)(!1), [d, l] = Object(o.useState)(n());
 					return Object(o.useEffect)(() => {
 						const e = setInterval(() => {
 							c(!0), setTimeout(() => c(!1), 3500), l(n())
@@ -1659,8 +1659,8 @@
 				z = n("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
 				H = n("./src/reddit/connectors/ClassicPost/index.tsx"),
 				U = n("./src/reddit/constants/postLayout.ts"),
-				J = n("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
-				q = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
+				q = n("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
+				J = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				G = n("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				X = n("./src/reddit/helpers/search/renderMedia.tsx"),
 				Z = n("./src/reddit/helpers/styles/mixins/index.tsx"),
@@ -1724,8 +1724,8 @@
 				const ke = fe ? void 0 : v,
 					Pe = n || void 0,
 					Ce = Object(G.a)(se),
-					_e = Object(J.a)(se),
-					Se = Object(q.a)(se),
+					_e = Object(q.a)(se),
+					Se = Object(J.a)(se),
 					Me = ae && G.a,
 					Ne = Object(C.d)(ue),
 					Te = Object(S.c)(ue),
@@ -1944,7 +1944,7 @@
 				A = Object(c.c)({
 					isCurrentUserProfilePost: v.l,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== b.Mb.TOPIC),
-					shouldOpenPostInNewTab: y.cb
+					shouldOpenPostInNewTab: y.db
 				}),
 				B = Object(a.b)(A);
 			t.c = Object(x.b)(B(e => {
@@ -2508,7 +2508,7 @@
 					isChatPost: u.d,
 					isCurrentUserProfilePost: h.l,
 					isExpanded: h.m,
-					isLoggedIn: x.J,
+					isLoggedIn: x.K,
 					showPromotedCTA: b.a,
 					moderatorPermissions: m.l,
 					modModeEnabled: d.T,
@@ -2622,4 +2622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.63b55119c1e2c1e3cdcc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.59a48229283c476a02e7.js.map

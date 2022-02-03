@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.54dda9ad507be2676307.js
-// Retrieved at 2/2/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.1dca06f41bfca17b267e.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -802,12 +802,12 @@
 					if (!A.platform.currentPage) return;
 					if (200 !== A.platform.currentPage.status) return;
 					const F = Object(b.m)(s(), R),
-						P = Object(f.rb)(A, {
+						P = Object(f.sb)(A, {
 							userName: g
 						}).id;
 					t(j.m({
 						title: Te(s(), g)
-					})), Object(f.L)(A) && Object(f.P)(A, g) && t(Object(h.f)());
+					})), Object(f.M)(A) && Object(f.Q)(A, g) && t(Object(h.f)());
 					const L = [t(Object(d.q)()), t(I.b(R, F)), t(k.b(R)), t(w.o(g)), t(k.g(g)), t(O.l(g, P))];
 					await Promise.all(L)
 				}, Te = (e, t) => Object(b.q)(e, {
@@ -1789,4 +1789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.54dda9ad507be2676307.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.1dca06f41bfca17b267e.js.map

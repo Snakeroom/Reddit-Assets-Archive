@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.dcef803fb8b6b28e7504.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.d31707a9790cddd73b2d.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, r) {
@@ -569,7 +569,7 @@
 					minSize: t,
 					userName: r
 				}) => {
-					const s = Object(d.rb)(e, {
+					const s = Object(d.sb)(e, {
 						userName: r
 					});
 					if (s && s.awardedLastMonth && s.awardedLastMonth.topAward) return w(e, {
@@ -613,4 +613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.dcef803fb8b6b28e7504.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.d31707a9790cddd73b2d.js.map

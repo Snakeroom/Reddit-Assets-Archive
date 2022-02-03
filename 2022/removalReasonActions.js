@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.664b69bfb9733b518ee1.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.7dd9eaf95c7746b0d542.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -146,8 +146,8 @@
 				};
 			var N = n("./src/redditGQL/operations/UpdateCommentFollowState.json");
 			var T = n("./src/reddit/endpoints/post/index.tsx"),
-				P = n("./src/reddit/endpoints/post/convert.ts"),
-				M = n("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
+				M = n("./src/reddit/endpoints/post/convert.ts"),
+				P = n("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				L = n("./src/reddit/featureFlags/index.ts"),
 				w = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				K = n("./src/reddit/helpers/dom/index.ts"),
@@ -172,7 +172,7 @@
 				}) => async (n, o) => {
 					const s = o();
 					if (!!s.features.comments.drafts[t])
-						if (Object(Q.L)(s) && e) {
+						if (Object(Q.M)(s) && e) {
 							const o = Z({
 								hasFocus: e,
 								draftKey: t
@@ -210,7 +210,7 @@
 					const S = R.user.account.displayText,
 						_ = r.commentMode;
 					let E;
-					if (d ? (E = await Object(M.i)(j(), e, r, S), u(Object(l.a)({
+					if (d ? (E = await Object(P.i)(j(), e, r, S), u(Object(l.a)({
 							streamId: e,
 							level: E.body.automuteLevel
 						}))) : E = await D(j(), e, r, S, _), E.ok) {
@@ -319,7 +319,7 @@
 					})), s(Object(u.c)(e));
 					else {
 						s(Object(u.b)(n));
-						const r = await Object(P.a)(c(), e, a ? t : JSON.stringify(t));
+						const r = await Object(M.a)(c(), e, a ? t : JSON.stringify(t));
 						if (r.ok) {
 							const t = r.body.output;
 							s(Object(u.a)(n)), s(fe({
@@ -342,7 +342,7 @@
 				}) => async (o, s) => {
 					const r = s(),
 						m = Object(c.a)(B.c.replyToComment, t);
-					if (!Object(Q.J)(s())) return o(Object(d.j)()), void o(Object(i.k)({
+					if (!Object(Q.K)(s())) return o(Object(d.j)()), void o(Object(i.k)({
 						actionSource: i.a.Reply,
 						redirectUrl: Object(q.m)(s(), {
 							commentId: t
@@ -382,7 +382,7 @@
 							draftType: B.c.replyToComment,
 							rtJson: O,
 							text: ""
-						}, Object(Q.L)(r)) {
+						}, Object(Q.M)(r)) {
 						const n = le({
 							parentCommentId: t,
 							commentsPageKey: e,
@@ -571,7 +571,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(F.ub)(null !== (m = null === (i = null === (d = s().pages) || void 0 === d ? void 0 : d.comments) || void 0 === i ? void 0 : i.followed) && void 0 !== m ? m : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
+							Object(F.wb)(null !== (m = null === (i = null === (d = s().pages) || void 0 === d ? void 0 : d.comments) || void 0 === i ? void 0 : i.followed) && void 0 !== m ? m : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
 							const e = c ? o.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : o.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -636,7 +636,7 @@
 				}, E = e => async (t, n, {
 					apiContext: s
 				}) => {
-					if (!Object(j.J)(n())) return void t(Object(a.i)(m.a.LOGIN_MODAL_ID));
+					if (!Object(j.K)(n())) return void t(Object(a.i)(m.a.LOGIN_MODAL_ID));
 					const r = n().features.comments.models[e];
 					if (!r) return;
 					const c = r.isLocked ? u.l : u.e;
@@ -894,7 +894,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: d
-					})), Object(a.rb)(s + 1)
+					})), Object(a.sb)(s + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, n) {
@@ -1140,8 +1140,8 @@
 				D = n("./src/reddit/actions/comment/moderation.ts"),
 				N = n("./src/reddit/actions/modal.ts"),
 				T = n("./src/reddit/actions/post.ts"),
-				P = n("./src/reddit/actions/toaster.ts"),
-				M = n("./src/reddit/constants/modals.ts"),
+				M = n("./src/reddit/actions/toaster.ts"),
+				P = n("./src/reddit/constants/modals.ts"),
 				L = n("./src/lib/makeApiRequest/index.ts"),
 				w = n("./src/lib/omitHeaders/index.ts"),
 				K = n("./src/reddit/constants/headers.ts"),
@@ -1212,7 +1212,7 @@
 						n(ne({
 							subredditId: e,
 							reason: r
-						})), n(Object(P.f)({
+						})), n(Object(M.f)({
 							kind: z.b.SuccessMod,
 							text: o.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
@@ -1235,7 +1235,7 @@
 					a.ok ? (n(ce({
 						subredditId: e,
 						reason: t
-					})), n(Object(P.f)({
+					})), n(Object(M.f)({
 						kind: z.b.SuccessMod,
 						text: o.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
@@ -1253,7 +1253,7 @@
 					a.ok ? (n(me({
 						subredditId: e,
 						reasonId: t
-					})), n(Object(P.f)({
+					})), n(Object(M.f)({
 						kind: z.b.SuccessMod,
 						text: o.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
@@ -1266,7 +1266,7 @@
 					r.features.removalReasons.reasonOrder[e] && r.features.removalReasons.reasonOrder[e].length > 0 || n(ee(e)), n(be({
 						subredditId: e,
 						itemIds: t
-					})), n(Object(N.i)(M.a.ADD_REMOVAL_REASON))
+					})), n(Object(N.i)(P.a.ADD_REMOVAL_REASON))
 				}, fe = Object(h.a)("REMOVALREASONS__SUBMIT_PENDING"), pe = Object(h.a)("REMOVALREASONS__SUBMIT_SUCCESS"), je = Object(h.a)("REMOVALREASONS__SUBMIT_FAILED"), Re = Object(h.a)("REMOVALREASONS__MESSAGE_PENDING"), ye = Object(h.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), Se = Object(h.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), _e = Object(h.a)("REMOVALREASONS__MESSAGE_FAILED"), Ee = (e, t, n, o, s) => async (r, c, {
 					apiContext: a
 				}) => {
@@ -1369,7 +1369,7 @@
 						m = i.user.account && i.user.account.displayText;
 					if (!m) return;
 					c(fe());
-					const u = Object(P.f)({
+					const u = Object(M.f)({
 							kind: z.b.SuccessMod,
 							text: o.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
@@ -1650,4 +1650,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.664b69bfb9733b518ee1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.7dd9eaf95c7746b0d542.js.map

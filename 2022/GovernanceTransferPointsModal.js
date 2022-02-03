@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.2ec5c44619ce3bf57e7e.js
-// Retrieved at 1/25/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.081cf24d67e99d89a5e6.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal", "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, r) {
@@ -1390,10 +1390,10 @@
 					apiContext: s
 				}) => {
 					let o = n(),
-						a = Object(V.rb)(o, {
+						a = Object(V.sb)(o, {
 							userName: e
 						});
-					if (!(a || (await r(Object(L.B)(e)), o = n(), a = Object(V.rb)(o, {
+					if (!(a || (await r(Object(L.B)(e)), o = n(), a = Object(V.sb)(o, {
 							userName: e
 						})))) return {
 						userId: null,
@@ -2253,4 +2253,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.2ec5c44619ce3bf57e7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.081cf24d67e99d89a5e6.js.map

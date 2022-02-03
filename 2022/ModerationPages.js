@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.3e0d555819a7aa5afc3a.js
-// Retrieved at 2/2/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.8fc6437d43036572f155.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -829,7 +829,7 @@
 					if (s) return;
 					a || n && !s || await t(Object(I.subredditDataRequested)(e, k, {}))
 				} else C && await t(Object(P.e)(C));
-				if (!Object(fe.J)(n()) && v !== o.ec.Moderators && v !== o.ec.SubredditRules && v !== o.ec.Contributors) return void Object(m.a)(t, n());
+				if (!Object(fe.K)(n()) && v !== o.ec.Moderators && v !== o.ec.SubredditRules && v !== o.ec.Contributors) return void Object(m.a)(t, n());
 				if (Object(p.i)(n(), !0, k, C), !v) return;
 				let G, K, X, Z, J, Y, Q, $, ee, te = !1;
 				switch (v) {
@@ -912,7 +912,7 @@
 				}
 				const ne = n(),
 					se = !!k && Object(he.jb)(ne),
-					ae = Object(fe.G)(ne),
+					ae = Object(fe.H)(ne),
 					oe = k ? Object(y.U)(ne, {
 						subredditName: k.toLowerCase()
 					}) : Object(be.q)(ne, {
@@ -1896,7 +1896,7 @@
 				}) => {
 					const {
 						audioRoom: t
-					} = e, n = () => Math.floor(10 * Math.random() + 1), o = Object(h.e)(b.W), [i, l] = Object(s.useState)(!1), [d, c] = Object(s.useState)(n());
+					} = e, n = () => Math.floor(10 * Math.random() + 1), o = Object(h.e)(b.X), [i, l] = Object(s.useState)(!1), [d, c] = Object(s.useState)(n());
 					return Object(s.useEffect)(() => {
 						const e = setInterval(() => {
 							l(!0), setTimeout(() => l(!1), 3500), c(n())
@@ -5021,7 +5021,7 @@
 					update: c
 				} = e, m = Object(le.a)(), u = Object(i.d)(), [p, h] = Object(o.useState)(n), [b, g] = Object(o.useState)(!1), [f, x] = Object(o.useState)(!0);
 				return Object(o.useEffect)(() => {
-					x(Object(ie.G)("location")), Object(ie.Ib)("location")
+					x(Object(ie.H)("location")), Object(ie.Kb)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(K.a, {
 					className: je.a.noMarginHeading
 				}, z.fbt._("Community Location and main language", null, {
@@ -5834,7 +5834,7 @@
 				allowChatPostCreation: (e, t) => Object(M.b)(e, t.subredditId),
 				isBroadcastingEnabled: (e, t) => Object(P.c)(e, t.subredditId),
 				isChatPostsCreationEnabled: (e, t) => Object(M.c)(e, t.subredditId),
-				isEmployee: A.G,
+				isEmployee: A.H,
 				notificationSettings: F.b,
 				restrictions: R.m,
 				settings: (e, t) => Object(R.T)(e, t.subredditId),
@@ -6018,10 +6018,10 @@
 			}
 			var E = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(d.i)()), Object(p.zb)()
+					e(Object(d.i)()), Object(p.Bb)()
 				},
 				onViewTooltip: () => {
-					Object(p.Tb)()
+					Object(p.Vb)()
 				}
 			}))(Object(m.c)(x));
 			const _ = "editable-primary-topic-idcard";
@@ -7141,7 +7141,7 @@
 				F = Object(l.c)({
 					isCurrentUserProfilePost: x.l,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.Mb.TOPIC),
-					shouldOpenPostInNewTab: E.cb
+					shouldOpenPostInNewTab: E.db
 				}),
 				D = Object(r.b)(F);
 			t.c = Object(f.b)(D(e => {
@@ -15981,7 +15981,7 @@
 				ce = f.a.div("TickText", B.a),
 				me = f.a.div("PreSubText", B.a),
 				ue = Object(i.c)({
-					isNightModeOn: A.W
+					isNightModeOn: A.X
 				}),
 				pe = Object(o.b)(ue)(e => a.a.createElement(Z, {
 					last: e.last,
@@ -17529,10 +17529,10 @@
 					error: U.f,
 					isCreatePending: U.j,
 					isEmailInviteExperimentEnabled: B.a,
-					isEmployee: z.G,
+					isEmployee: z.H,
 					crosspostId: U.i,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(z.hb)(e),
-					userIsSuspended: z.Q,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(z.ib)(e),
+					userIsSuspended: z.R,
 					allTags: H.e,
 					existingTags: H.f,
 					newTags: H.g,
@@ -18887,7 +18887,7 @@
 					isChatPost: u.d,
 					isCurrentUserProfilePost: b.l,
 					isExpanded: b.m,
-					isLoggedIn: f.J,
+					isLoggedIn: f.K,
 					showPromotedCTA: g.a,
 					moderatorPermissions: p.l,
 					modModeEnabled: d.T,
@@ -21659,7 +21659,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						locationSettingSeen: Object(W.G)("location")
+						locationSettingSeen: Object(W.H)("location")
 					})
 				}
 				render() {
@@ -22106,7 +22106,7 @@
 						profileName: t.match.params.profileName
 					})
 				}),
-				Ze = Object(i.b)(() => Object(l.a)(qe, w.G, x.R, Ge, w.db, O.jb, Xe, Ke, Ve, (e, t) => t.match.params.pageName, e => e, ({
+				Ze = Object(i.b)(() => Object(l.a)(qe, w.H, x.R, Ge, w.eb, O.jb, Xe, Ke, Ve, (e, t) => t.match.params.pageName, e => e, ({
 					contentGateInfo: e
 				}, t, n, {
 					moderatorPermissions: s
@@ -22631,4 +22631,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.3e0d555819a7aa5afc3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8fc6437d43036572f155.js.map

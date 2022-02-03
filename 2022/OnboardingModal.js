@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.8c997c14a3497a1a2300.js
-// Retrieved at 2/2/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.4c96ff2c2bb31dbfe0a6.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal", "OnboardingActions"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -207,7 +207,7 @@
 						sort: l,
 						t: u,
 						correlationId: m
-					} = t, p = Object(I.S)(e) || Object(I.J)(e), g = Object(N.q)(e), h = {
+					} = t, p = Object(I.T)(e) || Object(I.K)(e), g = Object(N.q)(e), h = {
 						adContext: {
 							layout: i ? i.toUpperCase() : b.a.Card,
 							reddaid: e.user.reddaid,
@@ -422,8 +422,8 @@
 					const b = ce()();
 					t.correlationId = b;
 					const f = null === (c = null === (i = Object(N.b)(u)) || void 0 === i ? void 0 : i.routeMatch) || void 0 === c ? void 0 : c.route.chunk,
-						g = Object(I.J)(u),
-						h = await Object(m.i)(() => R(s.gqlContext(), w(u, t), Object(I.S)(u), t.statsdPathsForExperiments), {
+						g = Object(I.K)(u),
+						h = await Object(m.i)(() => R(s.gqlContext(), w(u, t), Object(I.T)(u), t.statsdPathsForExperiments), {
 							name: "fetchFrontpageData",
 							isLoggedIn: g,
 							page: f
@@ -502,7 +502,7 @@
 					const a = t();
 					if (Object(ne.a)(a)) return;
 					const s = null === (r = null === (n = Object(N.b)(t())) || void 0 === n ? void 0 : n.routeMatch) || void 0 === r ? void 0 : r.route.chunk,
-						o = Object(I.J)(a);
+						o = Object(I.K)(a);
 					return Object(m.i)(() => e(Object(te.d)()), {
 						name: "frontpageLinksRequested",
 						page: s,
@@ -556,7 +556,7 @@
 								t && (f.clickUrl = t)
 							}
 							f.correlationId = a.listings.postOrder.correlationIds[u];
-							const g = () => R(r(), w(a, f), Object(I.S)(a), p),
+							const g = () => R(r(), w(a, f), Object(I.T)(a), p),
 								h = await g(),
 								x = {
 									...h.body,
@@ -2266,7 +2266,7 @@
 				le = h.a.div("TickText", D.a),
 				ue = h.a.div("PreSubText", D.a),
 				me = Object(i.c)({
-					isNightModeOn: L.W
+					isNightModeOn: L.X
 				}),
 				pe = Object(s.b)(me)(e => a.a.createElement(K, {
 					last: e.last,
@@ -3392,4 +3392,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.8c997c14a3497a1a2300.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.4c96ff2c2bb31dbfe0a6.js.map

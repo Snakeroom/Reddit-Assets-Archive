@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.3acf420b6b27131b39c9.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.e2bb4677ed563e93fefb.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -269,7 +269,7 @@
 						share: l,
 						source: u
 					} = e, m = r();
-					s && Object(d.a)(Object(i.f)(s)(m)), Object(c.J)(m) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL, {
+					s && Object(d.a)(Object(i.f)(s)(m)), Object(c.K)(m) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u
 					})) : await t(Object(n.i)())
@@ -1964,7 +1964,7 @@
 				d = (e, t) => r => {
 					const {
 						id: n
-					} = Object(a.rb)(r, {
+					} = Object(a.sb)(r, {
 						userName: t
 					});
 					return {
@@ -2893,7 +2893,7 @@
 					minSize: t,
 					userName: r
 				}) => {
-					const n = Object(c.rb)(e, {
+					const n = Object(c.sb)(e, {
 						userName: r
 					});
 					if (n && n.awardedLastMonth && n.awardedLastMonth.topAward) return b(e, {
@@ -3014,4 +3014,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.3acf420b6b27131b39c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.e2bb4677ed563e93fefb.js.map

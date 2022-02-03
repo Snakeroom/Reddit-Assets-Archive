@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.b29c5229fa0d86eba8c4.js
-// Retrieved at 1/26/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.246bc769ad2b3b398683.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal", "GoldPurchasePaymentActions", "Premium"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1204,7 +1204,7 @@
 					}) => {
 						t(g());
 						const d = r(),
-							u = Object(i.J)(d);
+							u = Object(i.K)(d);
 						try {
 							const r = !u,
 								n = await Object(c.b)({
@@ -1344,7 +1344,7 @@
 		"./src/reddit/components/Econ/PowerupsPremiumUpsellModal/index.tsx": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "PowerupsPremiumUpsellModal", (function() {
-				return X
+				return Z
 			}));
 			var n = r("./node_modules/react/index.js"),
 				o = r.n(n),
@@ -1426,7 +1426,7 @@
 				q = r.n(F);
 			const {
 				fbt: Q
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), W = ["premium-powerups"], J = ["premium-powerups", "premium-ad-free", "premium-avatars", "premium-monthly-coins"], $ = ({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), W = ["premium-powerups"], $ = ["premium-powerups", "premium-ad-free", "premium-avatars", "premium-monthly-coins"], J = ({
 				subredditId: e
 			}) => {
 				const t = Object(a.d)(),
@@ -1519,7 +1519,7 @@
 			}, H = ({
 				premiumMonthlyCoins: e
 			}) => {
-				const t = J.map(t => A.d[t]({
+				const t = $.map(t => A.d[t]({
 					periodicalCoins: e
 				}));
 				return o.a.createElement("div", null, o.a.createElement(U, {
@@ -1557,8 +1557,8 @@
 			var Y = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/index.m.less"),
 				z = r.n(Y);
 			const {
-				fbt: Z
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), X = () => {
+				fbt: X
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = () => {
 				const e = Object(a.e)(y.s),
 					t = Object(a.d)(),
 					r = Object(b.a)();
@@ -1573,19 +1573,19 @@
 					className: z.a.container
 				}, o.a.createElement("h1", {
 					className: z.a.title
-				}, Z._("Get more with Premium!", null, {
+				}, X._("Get more with Premium!", null, {
 					hk: "YXIbY"
-				})), o.a.createElement($, {
+				})), o.a.createElement(J, {
 					subredditId: e
 				}), o.a.createElement("div", {
 					className: z.a.footer
-				}, Z._("Subscriptions automatically renew.", null, {
+				}, X._("Subscriptions automatically renew.", null, {
 					hk: "133vve"
 				})), o.a.createElement(u.a, {
 					space: u.b.MODAL
 				}))) : (s(), null)
 			};
-			t.default = Object(s.a)(X)
+			t.default = Object(s.a)(Z)
 		},
 		"./src/reddit/components/Econ/PowerupsPremiumUpsellModal/offerCard.m.less": function(e, t, r) {
 			e.exports = {
@@ -1642,7 +1642,7 @@
 			const p = ({
 				space: e
 			}) => {
-				const t = Object(i.e)(d.W),
+				const t = Object(i.e)(d.X),
 					r = e === n.MODAL,
 					s = e === n.INFEED_UNIT;
 				return c.a.createElement("div", {
@@ -2817,4 +2817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.b29c5229fa0d86eba8c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.246bc769ad2b3b398683.js.map

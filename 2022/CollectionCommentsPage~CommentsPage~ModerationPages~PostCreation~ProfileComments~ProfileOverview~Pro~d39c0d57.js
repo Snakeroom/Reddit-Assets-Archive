@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.d0d26e76f5c74da1da5d.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.23c40ac87c3fd62796d0.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57"], {
 		"./src/reddit/actions/gold/giveAward.ts": function(e, t, n) {
@@ -271,8 +271,8 @@
 				z = n("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
 				W = n.n(z);
 			const V = 3500,
-				J = 500;
-			class Q extends r.a.PureComponent {
+				Q = 500;
+			class J extends r.a.PureComponent {
 				constructor(e) {
 					super(e), this.imageRef = r.a.createRef(), this.triggerAnimation = () => {
 						const {
@@ -304,7 +304,7 @@
 							e(t), this.setState({
 								hoverStateTriggered: !0
 							})
-						}, J)
+						}, Q)
 					}, this.handleMouseLeave = () => {
 						const {
 							onHideTooltip: e
@@ -386,7 +386,7 @@
 					}))
 				}
 			}
-			var K = Q,
+			var K = J,
 				X = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				Y = n("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
 				Z = n.n(Y);
@@ -1218,11 +1218,11 @@
 				tooltipType: W,
 				pageLayer: V
 			}) => {
-				const J = {
+				const Q = {
 						caretOnTop: !1
 					},
-					Q = Object(o.e)(S.a),
-					K = (z.isSponsored || Object(d.u)(V)) && (Q === h.u.NoLockIcon || Q === h.u.PromotedGrey),
+					J = Object(o.e)(S.a),
+					K = (z.isSponsored || Object(d.u)(V)) && (J === h.u.NoLockIcon || J === h.u.PromotedGrey),
 					X = z.isRemoved && !z.modRemovalReason && !z.modNote && z.belongsTo.type === b.a.SUBREDDIT,
 					Y = G("Approve", z.id, W),
 					Z = G("Archived", z.id, W),
@@ -1242,7 +1242,7 @@
 				}), r.a.createElement(m.c, M({
 					tooltipId: ee,
 					text: P(t)
-				}, J))), z.isArchived && r.a.createElement(s.Fragment, null, r.a.createElement(O.a, {
+				}, Q))), z.isArchived && r.a.createElement(s.Fragment, null, r.a.createElement(O.a, {
 					isFilled: !0,
 					className: Object(c.a)(N.a.icon, N.a.archivedIcon),
 					desc: L(),
@@ -1252,7 +1252,7 @@
 				}), r.a.createElement(m.c, M({
 					tooltipId: Z,
 					text: L()
-				}, J))), z.isLocked && !K && r.a.createElement(s.Fragment, null, r.a.createElement(E.a, {
+				}, Q))), z.isLocked && !K && r.a.createElement(s.Fragment, null, r.a.createElement(E.a, {
 					isFilled: !0,
 					className: Object(c.a)(N.a.icon, N.a.lockIcon),
 					desc: B(),
@@ -1262,7 +1262,7 @@
 				}), r.a.createElement(m.c, M({
 					tooltipId: $,
 					text: B()
-				}, J))), n && Object(y.r)(z) && !u && r.a.createElement(s.Fragment, null, r.a.createElement(C.a, {
+				}, Q))), n && Object(y.r)(z) && !u && r.a.createElement(s.Fragment, null, r.a.createElement(C.a, {
 					isFilled: !0,
 					className: Object(c.a)(N.a.icon, N.a.stickyIcon),
 					desc: F(),
@@ -1272,7 +1272,7 @@
 				}), r.a.createElement(m.c, M({
 					tooltipId: se,
 					text: F()
-				}, J))), k && w && r.a.createElement(s.Fragment, null, r.a.createElement(C.a, {
+				}, Q))), k && w && r.a.createElement(s.Fragment, null, r.a.createElement(C.a, {
 					isFilled: !0,
 					className: Object(c.a)(N.a.icon, N.a.stickyIcon),
 					desc: H(),
@@ -1282,7 +1282,7 @@
 				}), r.a.createElement(m.c, M({
 					tooltipId: re,
 					text: H()
-				}, J))), (z.isApproved || z.approvedBy) && r.a.createElement(s.Fragment, null, r.a.createElement(x.a, {
+				}, Q))), (z.isApproved || z.approvedBy) && r.a.createElement(s.Fragment, null, r.a.createElement(x.a, {
 					isFilled: !0,
 					className: Object(c.a)(N.a.icon, N.a.approveIcon),
 					desc: Object(v.a)(z),
@@ -1292,7 +1292,7 @@
 				}), r.a.createElement(m.c, M({
 					tooltipId: Y,
 					text: Object(v.a)(z)
-				}, J))), Object(f.a)(z) && r.a.createElement(s.Fragment, null, r.a.createElement(_.a, {
+				}, Q))), Object(f.a)(z) && r.a.createElement(s.Fragment, null, r.a.createElement(_.a, {
 					isFilled: !0,
 					className: Object(c.a)(N.a.icon, N.a.removeIcon),
 					desc: Object(v.b)(z),
@@ -1313,7 +1313,7 @@
 				})), r.a.createElement(m.c, M({
 					tooltipId: te,
 					text: Object(v.b)(z)
-				}, J))), z.bannedBy && z.isSpam && r.a.createElement(s.Fragment, null, r.a.createElement(I.a, {
+				}, Q))), z.bannedBy && z.isSpam && r.a.createElement(s.Fragment, null, r.a.createElement(I.a, {
 					isFilled: !0,
 					className: Object(c.a)(N.a.icon, N.a.spamIcon),
 					desc: Object(v.d)(z),
@@ -1323,7 +1323,7 @@
 				}), r.a.createElement(m.c, M({
 					tooltipId: ae,
 					text: Object(v.d)(z)
-				}, J))), Object(g.a)(z) && !T && r.a.createElement(s.Fragment, null, r.a.createElement(j.a, {
+				}, Q))), Object(g.a)(z) && !T && r.a.createElement(s.Fragment, null, r.a.createElement(j.a, {
 					isFilled: !0,
 					className: Object(c.a)(N.a.icon, N.a.reportIcon),
 					desc: Object(v.c)(z.numReports),
@@ -1333,7 +1333,7 @@
 				}), r.a.createElement(m.c, M({
 					tooltipId: ne,
 					text: Object(v.c)(z.numReports)
-				}, J))))
+				}, Q))))
 			}))
 		},
 		"./src/reddit/components/ProfileIdCard/SnoovatarButton/TryItOn.tsx": function(e, t, n) {
@@ -2226,14 +2226,14 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const o = e => {
 					const t = Object(s.c)(e, {
-						experimentEligibilitySelector: r.J,
+						experimentEligibilitySelector: r.K,
 						experimentName: a.yc
 					});
 					return !(!t || Object(a.qf)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
-						experimentEligibilitySelector: r.J,
+						experimentEligibilitySelector: r.K,
 						experimentName: a.yc
 					}) === a.dd.ListingEnabled
 				}
@@ -2295,4 +2295,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.d0d26e76f5c74da1da5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.23c40ac87c3fd62796d0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.81a46b0f9adf1c8fbadc.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.eacf9e78b3028a479f4f.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1285,7 +1285,7 @@
 				De = 6e3,
 				Ue = 100,
 				We = Object(d.b)(() => Object(l.c)({
-					isLoggedIn: k.J,
+					isLoggedIn: k.K,
 					autoplayPref: k.b,
 					currentTime: V.c,
 					currentUser: k.k,
@@ -2324,7 +2324,7 @@
 				p = s.n(h);
 			const f = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				v = Object(r.b)(() => Object(o.c)({
-					isNightmodeOn: m.W
+					isNightmodeOn: m.X
 				}));
 			t.a = v(e => {
 				const t = {
@@ -2422,7 +2422,7 @@
 						style: t
 					}, e.children)
 				},
-				L = Object(o.b)(() => Object(c.a)(E.F, C.cb, (e, {
+				L = Object(o.b)(() => Object(c.a)(E.F, C.db, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(E.b)(e, s) : null, y.a, S.c, E.G, (e, t, s, n, i, r) => ({
@@ -5007,4 +5007,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.81a46b0f9adf1c8fbadc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.eacf9e78b3028a479f4f.js.map

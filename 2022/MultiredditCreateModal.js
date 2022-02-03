@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.119023f393cb365cd58f.js
-// Retrieved at 2/2/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.077a599e4d3a09cb5ae9.js
+// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, r) {
@@ -29,9 +29,9 @@
 			})), r.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
 				return B
 			})), r.d(t, "duplicateFailure", (function() {
-				return J
-			})), r.d(t, "duplicatePending", (function() {
 				return $
+			})), r.d(t, "duplicatePending", (function() {
+				return J
 			})), r.d(t, "duplicateSuccess", (function() {
 				return V
 			})), r.d(t, "duplicateRequested", (function() {
@@ -306,7 +306,7 @@
 						sort: u,
 						t: Object(q.a)(u, g)
 					}))
-				}, J = Object(c.a)(L.k), $ = Object(c.a)(L.l), V = Object(c.a)(L.m), X = ({
+				}, $ = Object(c.a)(L.k), J = Object(c.a)(L.l), V = Object(c.a)(L.m), X = ({
 					description: e,
 					displayName: t,
 					fromName: r,
@@ -318,7 +318,7 @@
 						m = Object(I.k)(l);
 					if (!m || !m.displayText) return;
 					const b = Object(N.h)((s || m.displayText).toLowerCase(), r.toLowerCase());
-					d($());
+					d(J());
 					const j = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(O.a)(`${e.apiUrl}/api/multi/copy`),
 						data: {
@@ -348,7 +348,7 @@
 							}),
 							buttonAction: Object(n.b)(e.url)
 						}))
-					} else d(J(j.error)), d(Object(p.f)({
+					} else d($(j.error)), d(Object(p.f)({
 						text: i.fbt._("Something went wrong duplicating {multiName}", [i.fbt._param("multiName", r)], {
 							hk: "4bzN2D"
 						})
@@ -478,7 +478,7 @@
 					apiContext: o
 				}) => {
 					const c = n();
-					if (!Object(I.J)(c)) return;
+					if (!Object(I.K)(c)) return;
 					d(ue());
 					const l = await (({
 						context: e,
@@ -1260,4 +1260,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.119023f393cb365cd58f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.077a599e4d3a09cb5ae9.js.map
