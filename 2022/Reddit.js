@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.38951f3e0162dd442984.js
-// Retrieved at 2/3/2022, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.bbd0cd4657af779de6a0.js
+// Retrieved at 2/3/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1794,36 +1794,37 @@
 				w = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				N = n("./src/reddit/models/Sso/index.ts"),
 				I = n("./src/reddit/models/Toast/index.ts"),
-				M = n("./src/reddit/selectors/accountManager.ts"),
-				T = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
-				R = n("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
-				A = n("./src/reddit/selectors/experiments/moreRepliesSignup.ts"),
-				L = n("./src/reddit/selectors/experiments/survey.ts"),
-				D = n("./src/reddit/selectors/telemetry.ts"),
-				F = n("./src/reddit/selectors/user.ts"),
-				U = n("./src/reddit/components/AccountManagerModal/IFrame/index.m.less"),
-				B = n.n(U);
-			const G = d.a.iframe("IFrame", B.a),
-				H = d.a.button("CloseButton", B.a),
-				q = d.a.wrapped(w.a, "Close", B.a),
-				W = Object(c.c)({
-					accountManagerSrc: M.c,
-					actionSource: M.a,
-					frontpageSignupVariant: T.a,
-					isBlockingInterstitialEnabled: R.b,
-					isDismissSurveyEnabled: L.a,
-					isHardBlockingInterstitialEnabled: R.c,
-					isLoggedIn: F.K,
-					isMoreRepliesSignupEnabled: A.a,
-					redirectUrl: M.b
+				M = n("./src/reddit/selectors/accountManager/index.ts"),
+				T = n("./src/reddit/selectors/accountManager/modalData.ts"),
+				R = n("./src/reddit/selectors/experiments/frontpageSignup.ts"),
+				A = n("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
+				L = n("./src/reddit/selectors/experiments/moreRepliesSignup.ts"),
+				D = n("./src/reddit/selectors/experiments/survey.ts"),
+				F = n("./src/reddit/selectors/telemetry.ts"),
+				U = n("./src/reddit/selectors/user.ts"),
+				B = n("./src/reddit/components/AccountManagerModal/IFrame/index.m.less"),
+				G = n.n(B);
+			const H = d.a.iframe("IFrame", G.a),
+				q = d.a.button("CloseButton", G.a),
+				W = d.a.wrapped(w.a, "Close", G.a),
+				V = Object(c.c)({
+					accountManagerSrc: M.a,
+					actionSource: T.a,
+					frontpageSignupVariant: R.a,
+					isBlockingInterstitialEnabled: A.b,
+					isDismissSurveyEnabled: D.a,
+					isHardBlockingInterstitialEnabled: A.c,
+					isLoggedIn: U.K,
+					isMoreRepliesSignupEnabled: L.a,
+					redirectUrl: T.b
 				}),
-				V = Object(i.b)(W, (e, t) => ({
+				K = Object(i.b)(V, (e, t) => ({
 					onDismissSignupTrigger: () => e(Object(f.d)()),
 					oniFrameLoaded: (t, n) => {
 						e((e, s) => {
 							t.contentWindow.postMessage({
 								events: {
-									...Object(D.m)(s()),
+									...Object(F.m)(s()),
 									actionSource: n
 								},
 								type: "eventData"
@@ -1845,16 +1846,16 @@
 						e(Object(C.f)(Object(C.e)(t, n)))
 					}
 				})),
-				K = ({
+				z = ({
 					data: e,
 					origin: t
 				}) => e && e.success && (e.type === v.a.ChangePassword || e.type === v.a.Close || e.type === v.a.CreateAccount || e.type === v.a.GoogleOneTapDisplayed || e.type === v.a.GoogleOneTapFlowFailed || e.type === v.a.GoogleOneTapSkipped || e.type === v.a.Login || e.type === v.a.PreferenceStatus || e.type === v.a.Register || e.type === v.a.Resize || e.type === v.a.ShowStep || e.type === v.a.SSOLinkFail || e.type === v.a.SSOLinkSuccess || e.type === v.a.SSOUnlinkFail || e.type === v.a.SSOUnlinkSuccess || e.type === v.a.Subscribe || e.type === v.a.TwoFactorChanged) && t === s.a.accountManagerOrigin,
-				z = {
+				Q = {
 					"select-account": "link_account",
 					"confirm-otp": "link_account_otp",
 					"confirm-password": "link_account_password"
 				};
-			class Q extends o.a.Component {
+			class Z extends o.a.Component {
 				constructor() {
 					super(...arguments), this.iframeRef = o.a.createRef(), this.isAccountCreated = !1, this.isSignupModalDismissed = !1, this.isSignupModalSuccessful = !1, this.trackResizing = !0, this.currentStep = null, this.state = {
 						iframeStyles: {}
@@ -1887,7 +1888,7 @@
 						const {
 							data: t
 						} = e;
-						if (this.iframeRef.current && e.source === this.iframeRef.current.contentWindow && K(e))
+						if (this.iframeRef.current && e.source === this.iframeRef.current.contentWindow && z(e))
 							if (t.type === v.a.CreateAccount) this.isAccountCreated = !0;
 							else if (t.type === v.a.Close) this.closedByUser();
 						else if (t.type === v.a.Subscribe) this.onSubscribe(t.subscriptions || t.subredditIds);
@@ -1953,7 +1954,7 @@
 							sendEvent: r
 						} = this.props;
 						if (this.currentStep) {
-							const e = z[this.currentStep];
+							const e = Q[this.currentStep];
 							e && r(Object(P.p)(e))
 						}
 						this.isSignupSurveyTriggerSource() && (this.isSignupModalDismissed = !0), n && r(Object(k.b)()), e && r(Object(S.a)()), this.close(), this.isSignupModalDismissed && t && s()
@@ -2006,18 +2007,18 @@
 					} = this.props, {
 						iframeStyles: a
 					} = this.state, i = (r === v.c.Index || r === v.c.Register) && (t === u.a.UserProfile || t === u.a.FeedPost || t === u.a.Comments || t === u.a.FeedScroll || t === u.a.CommentsScroll) && s, c = this.props.showCloseButton && !i;
-					return o.a.createElement(o.a.Fragment, null, o.a.createElement(G, {
+					return o.a.createElement(o.a.Fragment, null, o.a.createElement(H, {
 						className: n,
 						innerRef: this.iframeRef,
 						src: e,
 						style: a,
 						onLoad: this.onIFrameLoad
-					}), c && o.a.createElement(H, {
+					}), c && o.a.createElement(q, {
 						onClick: this.closedByUser
-					}, o.a.createElement(q, null)))
+					}, o.a.createElement(W, null)))
 				}
 			}
-			t.a = V(Object(O.c)(Q))
+			t.a = K(Object(O.c)(Z))
 		},
 		"./src/reddit/components/AccountManagerModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -5496,7 +5497,7 @@
 			const to = e => {
 				return Object(eo.c)(e, {
 					experimentEligibilitySelector: eo.a,
-					experimentName: Kt.me
+					experimentName: Kt.oe
 				}) === Kt.Yc
 			};
 			var no = n("./src/reddit/components/Header/QuickLinks/index.m.less"),
@@ -18818,14 +18819,14 @@
 							}))
 						}), Tn(n), Object(B.d)("enabled" === Object(gn.c)(n.getState(), {
 							experimentEligibilitySelector: gn.a,
-							experimentName: Xe.Ye,
+							experimentName: Xe.af,
 							expEventOverride: !1
 						})), Object(B.c)("enabled" === Object(gn.c)(n.getState(), {
 							experimentEligibilitySelector: gn.a,
-							experimentName: Xe.af
+							experimentName: Xe.cf
 						})), Object(B.g)("enabled" === Object(gn.c)(n.getState(), {
 							experimentEligibilitySelector: gn.a,
-							experimentName: Xe.Ze
+							experimentName: Xe.bf
 						})), Object(B.f)(vs.gqlContext), window.addEventListener("beforeunload", () => {
 							const e = n.getState(),
 								t = Object(On.a)("tab_closed")(e),
@@ -21762,14 +21763,10 @@
 				};
 			t.c = c
 		},
-		"./src/reddit/selectors/accountManager.ts": function(e, t, n) {
+		"./src/reddit/selectors/accountManager/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return E
-			})), n.d(t, "b", (function() {
-				return j
-			})), n.d(t, "c", (function() {
-				return k
+				return w
 			}));
 			var s = n("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js"),
 				r = n("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
@@ -21789,34 +21786,40 @@
 			var h = n("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				g = n("./src/reddit/selectors/experiments/magicLink.ts"),
 				f = n("./src/reddit/selectors/experiments/moreRepliesSignup.ts"),
-				C = n("./src/lib/getParsedUserAgent/index.ts");
-			const O = Object(o.a)(e => Object(m.c)(e, {
-				experimentEligibilitySelector: e => Object(C.g)(e.meta.userAgent) && Object(p.f)(e),
-				experimentName: l.Ge
-			}), e => e === l.Se.Enabled);
-			var v = n("./src/reddit/selectors/experiments/utils.ts"),
-				x = n("./src/reddit/selectors/meta.ts"),
-				y = n("./src/reddit/selectors/responsiveSettings.ts");
-			const E = e => e.accountManagerModalData.actionSource,
-				j = e => e.accountManagerModalData.redirectUrl,
-				_ = Object(o.c)({
+				C = n("./src/reddit/actions/modal.ts"),
+				O = n("./src/reddit/selectors/accountManager/modalData.ts"),
+				v = n("./src/reddit/selectors/meta.ts");
+			const x = Object(o.a)(p.f, v.b, O.a, (e, t, n) => e && "DE" === t && n === C.a.Report),
+				y = Object(o.a)(e => Object(m.c)(e, {
+					experimentEligibilitySelector: x,
+					experimentName: l.Pd
+				}), e => e === l.Zd.Enabled);
+			var E = n("./src/lib/getParsedUserAgent/index.ts");
+			const j = Object(o.a)(e => Object(m.c)(e, {
+				experimentEligibilitySelector: e => Object(E.g)(e.meta.userAgent) && Object(p.f)(e),
+				experimentName: l.Ie
+			}), e => e === l.Ue.Enabled);
+			var _ = n("./src/reddit/selectors/experiments/utils.ts"),
+				S = n("./src/reddit/selectors/responsiveSettings.ts");
+			const k = Object(o.c)({
 					frontpageSignupVariant: d.a,
 					googleOneTapVariant: u.b,
 					magicLinkVariant: g.a,
-					moreRepliesSignupVariant: e => Object(v.a)(Object(f.b)(e)),
+					moreRepliesSignupVariant: e => Object(_.a)(Object(f.b)(e)),
 					ssoLoginLinkVariant: e => Object(m.c)(e, {
 						experimentEligibilitySelector: e => !Object(p.e)(e),
-						experimentName: l.He
+						experimentName: l.Je
 					}),
 					blockingInterstitialVariant: h.d
 				}),
-				S = Object(o.c)({
+				P = Object(o.c)({
 					isGoogleSsoGisEnabled: b,
 					isMoreRepliesSignupEnabled: f.a,
-					isSafariOneTapEnabled: O,
+					isNetzDGComplianceEnabled: y,
+					isSafariOneTapEnabled: j,
 					isBlockingInterstitialEnabled: h.b
 				}),
-				k = Object(o.a)((e, t) => t.path, (e, t) => t.uiMode, E, y.a, x.i, _, S, (e, t, n, o, d, u, m) => {
+				w = Object(o.a)((e, t) => t.path, (e, t) => t.uiMode, O.a, S.a, v.i, k, P, (e, t, n, o, d, u, m) => {
 					const {
 						frontpageSignupVariant: p,
 						googleOneTapVariant: b,
@@ -21827,44 +21830,57 @@
 					} = u, {
 						isGoogleSsoGisEnabled: O,
 						isMoreRepliesSignupEnabled: v,
-						isSafariOneTapEnabled: x,
-						isBlockingInterstitialEnabled: y
+						isNetzDGComplianceEnabled: x,
+						isSafariOneTapEnabled: y,
+						isBlockingInterstitialEnabled: E
 					} = m;
-					let E = `${a.a.accountManagerOrigin}${e}`;
-					if (E = Object(i.a)(E, {
+					let j = `${a.a.accountManagerOrigin}${e}`;
+					if (j = Object(i.a)(j, {
 							experiment_d2x_2020ify_buttons: "enabled"
-						}), h && (E = Object(i.a)(E, {
-							[`experiment_${l.He}`]: h
-						})), O && (E = Object(i.a)(E, {
+						}), h && (j = Object(i.a)(j, {
+							[`experiment_${l.Je}`]: h
+						})), O && (j = Object(i.a)(j, {
 							[`experiment_${l.jd}`]: "enabled"
-						})), v && (E = Object(i.a)(E, {
+						})), v && (j = Object(i.a)(j, {
 							[`experiment_${l.Gd}`]: f
-						})), E = Object(i.a)(E, {
+						})), x && (j = Object(i.a)(j, {
+							[`experiment_${l.Pd}`]: l.Zd.Enabled
+						})), j = Object(i.a)(j, {
 							experiment_d2x_onboarding: "enabled"
-						}), x && (E = Object(i.a)(E, {
-							[`experiment_${l.Ge}`]: "enabled"
-						})), e === c.c.GoogleOneTap) return Object(i.a)(E, {
+						}), y && (j = Object(i.a)(j, {
+							[`experiment_${l.Ie}`]: "enabled"
+						})), e === c.c.GoogleOneTap) return Object(i.a)(j, {
 						[l.rb]: b
 					});
-					if (y && (E = Object(i.a)(E, {
+					if (E && (j = Object(i.a)(j, {
 							[`experiment_${l.vb}`]: C
-						})), p && (E = Object(i.a)(E, {
+						})), p && (j = Object(i.a)(j, {
 							[l.hc]: p,
 							uiMode: t
-						})), g && (E = Object(i.a)(E, {
+						})), g && (j = Object(i.a)(j, {
 							[`experiment_${l.Cd}`]: g
-						})), o && (E = Object(i.a)(E, {
+						})), o && (j = Object(i.a)(j, {
 							mweb_responsive_settings: "treatment"
 						})), d) {
 						const e = Object(s.isoLocaleToR2Language)(d);
-						d !== r.DEFAULT_LOCALE && e && (E = Object(i.a)(E, {
+						d !== r.DEFAULT_LOCALE && e && (j = Object(i.a)(j, {
 							lang: e
 						}))
 					}
-					return e === c.c.Index || e === c.c.ChangePassword ? E : E = Object(i.a)(E, {
+					return e === c.c.Index || e === c.c.ChangePassword ? j : j = Object(i.a)(j, {
 						actionSource: n
 					})
 				})
+		},
+		"./src/reddit/selectors/accountManager/modalData.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return s
+			})), n.d(t, "b", (function() {
+				return r
+			}));
+			const s = e => e.accountManagerModalData.actionSource,
+				r = e => e.accountManagerModalData.redirectUrl
 		},
 		"./src/reddit/selectors/bannedUser.ts": function(e, t, n) {
 			"use strict";
@@ -22044,7 +22060,7 @@
 					experimentEligibilitySelector: a.K,
 					experimentName: s.Uc
 				});
-				return !(!t || Object(s.of)(t))
+				return !(!t || Object(s.qf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, n) {
@@ -22163,27 +22179,27 @@
 			const o = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.ke
+						experimentName: s.me
 					}) === s.Yc
 				},
 				i = e => {
 					if (Object(a.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.je
+						experimentName: s.le
 					}) === s.Yc
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.ae
+						experimentName: s.ce
 					}) === s.Yc
 				},
 				l = e => {
 					if (Object(a.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
-						experimentName: s.Zd
+						experimentName: s.be
 					}) === s.Yc
 				}
 		},
@@ -22367,4 +22383,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "Reddit~Subreddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.38951f3e0162dd442984.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.bbd0cd4657af779de6a0.js.map

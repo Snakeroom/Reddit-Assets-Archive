@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.79339dc1cad2c6f93a47.js
-// Retrieved at 2/3/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.c5103b536288cb8e202f.js
+// Retrieved at 2/3/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -7092,7 +7092,7 @@
 						subredditId: t
 					})),
 					f = Object(c.e)(p.a),
-					y = f !== u.Yd.NewModule;
+					y = f !== u.ae.NewModule;
 				return (null === (s = null == g ? void 0 : g.cards) || void 0 === s ? void 0 : s.length) > 0 && y ? r.a.createElement(h, {
 					closeModuleOnMount: !!e && e !== m.g.Large,
 					subredditId: t,
@@ -7450,7 +7450,7 @@
 						experimentEligibilitySelector: r.K,
 						experimentName: s.yc
 					});
-					return !(!t || Object(s.of)(t))
+					return !(!t || Object(s.qf)(t))
 				},
 				o = e => {
 					return Object(n.c)(e, {
@@ -7546,4 +7546,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.79339dc1cad2c6f93a47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c5103b536288cb8e202f.js.map

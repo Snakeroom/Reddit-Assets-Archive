@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.84ac5fbfe90156a93fdf.js
-// Retrieved at 2/3/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.513d1e96322c3a45b773.js
+// Retrieved at 2/3/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -4082,7 +4082,7 @@
 						experimentEligibilitySelector: s.K,
 						experimentName: r.yc
 					});
-					return !(!t || Object(r.of)(t))
+					return !(!t || Object(r.qf)(t))
 				},
 				d = e => {
 					return Object(n.c)(e, {
@@ -4148,4 +4148,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.84ac5fbfe90156a93fdf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.513d1e96322c3a45b773.js.map

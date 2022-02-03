@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.607197c9542d9976d39b.js
-// Retrieved at 2/3/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.34712437f06bbf345bb3.js
+// Retrieved at 2/3/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -3957,12 +3957,12 @@
 						rtJsonElementProps: r
 					});
 					switch (n) {
-						case f.Ve.SmIcon:
+						case f.Xe.SmIcon:
 							return i.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: r
 							});
-						case f.Ve.SmIconHc:
+						case f.Xe.SmIconHc:
 							return i.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4880,7 +4880,7 @@
 			const r = e => {
 				return Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: n.ie
+					experimentName: n.ke
 				}) === n.Yc
 			}
 		},
@@ -4907,12 +4907,12 @@
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Oe
+						experimentName: n.Qe
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Ve.SmIcon || t === n.Ve.SmIconHc
+					return t === n.Xe.SmIcon || t === n.Xe.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5005,4 +5005,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.607197c9542d9976d39b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.34712437f06bbf345bb3.js.map

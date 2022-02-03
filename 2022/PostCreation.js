@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9c6b31812d220f3c52ee.js
-// Retrieved at 2/3/2022, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.127a601bc61b666962f1.js
+// Retrieved at 2/3/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -30665,12 +30665,12 @@
 			const r = e => Object(s.c)(e, {
 					experimentName: o.Nd,
 					experimentEligibilitySelector: s.a
-				}) === o.Wd.Enabled,
+				}) === o.Xd.Enabled,
 				i = e => Object(s.c)(e, {
 					experimentName: o.Od,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === o.Xd.Enabled
+				}) === o.Yd.Enabled
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
 			"use strict";
@@ -30693,37 +30693,37 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.kf
+						experimentName: o.mf
 					}) === o.Yc
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.lf
+						experimentName: o.nf
 					}) === o.Yc
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.jf
+						experimentName: o.lf
 					});
-					return t === o.cf.UIChangesOnly || t === o.cf.TypingIndicators || t === o.cf.IndicatorsPlusCTA
+					return t === o.ef.UIChangesOnly || t === o.ef.TypingIndicators || t === o.ef.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: o.jf
+							experimentName: o.lf
 						}),
 						n = null == t ? void 0 : t.variant;
-					return n === o.cf.TypingIndicators || n === o.cf.IndicatorsPlusCTA
+					return n === o.ef.TypingIndicators || n === o.ef.IndicatorsPlusCTA
 				},
 				u = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.jf
+						experimentName: o.lf
 					});
-					return (null == t ? void 0 : t.variant) === o.cf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.ef.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(e, t, n) {
@@ -30953,4 +30953,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9c6b31812d220f3c52ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.127a601bc61b666962f1.js.map

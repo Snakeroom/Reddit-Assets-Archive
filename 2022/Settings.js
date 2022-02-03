@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.cf998adb8605deb3040d.js
-// Retrieved at 2/3/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.51d2098d21f9e703bcd7.js
+// Retrieved at 2/3/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -9665,7 +9665,7 @@
 				xe = n("./src/reddit/constants/accountManager.ts"),
 				ye = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				je = n("./src/reddit/helpers/getAccountManagerMessageTarget/index.ts"),
-				Ee = n("./src/reddit/selectors/accountManager.ts"),
+				Ee = n("./src/reddit/selectors/accountManager/index.ts"),
 				ke = n("./src/reddit/selectors/activeModalId.ts"),
 				we = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
 				Oe = n("./src/config.ts"),
@@ -9938,7 +9938,7 @@
 				wt = Te.a.button("DeactivateButton", xt.a),
 				Ot = Te.a.div("DeactivateWrapper", xt.a),
 				St = Object(c.c)({
-					changePasswordHref: (e, t) => Object(Ee.c)(e, {
+					changePasswordHref: (e, t) => Object(Ee.a)(e, {
 						pageLayer: t.pageLayer,
 						path: xe.c.ChangePassword
 					}),
@@ -12535,4 +12535,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.cf998adb8605deb3040d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.51d2098d21f9e703bcd7.js.map

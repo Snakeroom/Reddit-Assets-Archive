@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.77b5eb87c0f53dda19d1.js
-// Retrieved at 2/3/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.fc0b6b12169f451648b8.js
+// Retrieved at 2/3/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -320,15 +320,15 @@
 				T = s("./src/reddit/constants/posts.ts"),
 				D = s("./src/lib/constants/index.ts"),
 				U = s("./src/reddit/components/HumanDate/index.tsx"),
-				W = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
-				B = s("./src/reddit/hooks/useClickSourceData.ts"),
+				B = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
+				W = s("./src/reddit/hooks/useClickSourceData.ts"),
 				V = s("./src/reddit/layout/row/Inline/index.tsx"),
 				F = s("./src/reddit/components/DiscoveryUnit/PostAuthor/index.m.less"),
 				A = s.n(F);
 			var R = e => {
 					const t = T.a.PROFILE,
-						s = Object(W.a)(e.author, t),
-						a = Object(B.a)();
+						s = Object(B.a)(e.author, t),
+						a = Object(W.a)();
 					return r.a.createElement("div", {
 						className: Object(l.a)(A.a.container, e.className)
 					}, r.a.createElement(V.a, {
@@ -345,7 +345,7 @@
 							pathname: s,
 							state: a
 						}
-					}, Object(W.b)(e.author, t)), r.a.createElement("span", {
+					}, Object(B.b)(e.author, t)), r.a.createElement("span", {
 						className: A.a.timestamp
 					}, r.a.createElement(U.d, {
 						seconds: e.created / D.Rb
@@ -356,7 +356,7 @@
 				z = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
 				q = s.n(z);
 			var G = e => {
-					const t = Object(W.a)(e.name, e.type);
+					const t = Object(B.a)(e.name, e.type);
 					return r.a.createElement("div", {
 						className: Object(l.a)(q.a.container, e.className)
 					}, r.a.createElement(Q.a, {
@@ -375,7 +375,7 @@
 						"data-click-id": "subreddit",
 						className: q.a.name,
 						to: t
-					}, Object(W.b)(e.displayText || e.name, e.type)), r.a.createElement("span", {
+					}, Object(B.b)(e.displayText || e.name, e.type)), r.a.createElement("span", {
 						className: q.a.separator
 					}, "•"), r.a.createElement("span", {
 						className: q.a.timestamp
@@ -636,11 +636,11 @@
 				Te = s.n(Me);
 			const De = 326,
 				Ue = 12,
-				We = {
+				Be = {
 					stiffness: 210,
 					damping: 30
 				},
-				Be = 100,
+				We = 100,
 				Ve = "post_carousel_item",
 				Fe = ({
 					root: e,
@@ -773,7 +773,7 @@
 						scrollIndex: d,
 						spacerWidth: Ue,
 						visibleItemsCount: m
-					}), b = e ? Be : this.getMarginLeft({
+					}), b = e ? We : this.getMarginLeft({
 						adjustment: p,
 						itemWidth: c,
 						scrollIndex: d,
@@ -785,10 +785,10 @@
 						ref: this.setContainerRef
 					}, r.a.createElement(i.Motion, {
 						defaultStyle: {
-							marginLeft: e || n ? Be : 0
+							marginLeft: e || n ? We : 0
 						},
 						style: {
-							marginLeft: Object(i.spring)(b, o || We)
+							marginLeft: Object(i.spring)(b, o || Be)
 						}
 					}, this.renderPosts), 0 !== d && r.a.createElement(C, {
 						className: Object(l.a)(Te.a.arrowLeft, t),
@@ -863,9 +863,9 @@
 				f = s("./src/reddit/constants/experiments.ts"),
 				C = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				g = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(g.H)(e) || f.We.ShowTopContent === Object(C.c)(e, {
+			const y = e => Object(g.H)(e) || f.Ye.ShowTopContent === Object(C.c)(e, {
 				experimentEligibilitySelector: C.a,
-				experimentName: f.Pe
+				experimentName: f.Re
 			});
 			var _ = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1423,9 +1423,9 @@
 				})),
 				D = s("./src/reddit/components/SEOTitle/index.tsx"),
 				U = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
-				W = s("./src/reddit/selectors/user.ts"),
-				B = s("./src/reddit/components/PostTitle/index.m.less"),
-				V = s.n(B),
+				B = s("./src/reddit/selectors/user.ts"),
+				W = s("./src/reddit/components/PostTitle/index.m.less"),
+				V = s.n(W),
 				F = s("./src/config.ts"),
 				A = s("./src/reddit/hooks/useClickSourceData.ts"),
 				R = s("./src/reddit/hooks/usePostContext.ts"),
@@ -1512,7 +1512,7 @@
 					}) => Object(u.q)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: W.db
+					shouldOpenPostInNewTab: B.db
 				}),
 				X = e => {
 					const {
@@ -1952,4 +1952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.77b5eb87c0f53dda19d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.fc0b6b12169f451648b8.js.map
