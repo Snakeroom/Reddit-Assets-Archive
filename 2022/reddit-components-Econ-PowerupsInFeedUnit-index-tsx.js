@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.3332044f2df1a9c35949.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.b453346bc5007fbb0e7c.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -287,9 +287,9 @@
 				h = a("./src/reddit/components/PowerupsCtaButton/index.tsx"),
 				w = a("./src/reddit/components/PowerupsSidebar/PowerupsBackground.tsx"),
 				O = a("./src/reddit/components/Econ/PowerupsInFeedUnit/PostUnlock/ApplyFromPremiumUnit.m.less"),
-				y = a.n(O);
+				g = a.n(O);
 			const {
-				fbt: g
+				fbt: y
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			var C = ({
 					subredditId: e,
@@ -301,21 +301,21 @@
 							subredditId: e
 						}).displayText);
 					return o.a.createElement("div", {
-						className: Object(E.a)(y.a.container, t)
+						className: Object(E.a)(g.a.container, t)
 					}, o.a.createElement("img", {
-						className: y.a.powerupsIcon,
+						className: g.a.powerupsIcon,
 						src: `${v.a.assetPath}/img/powerups/powerups-rangers.png`,
 						"data-testid": "powerups-icon-rangers"
 					}), o.a.createElement("h2", {
-						className: y.a.title
-					}, g._("Use your Powerup to support {subreddit name}", [g._param("subreddit name", r)], {
+						className: g.a.title
+					}, y._("Use your Powerup to support {subreddit name}", [y._param("subreddit name", r)], {
 						hk: "2OMTwG"
 					})), o.a.createElement("h3", {
-						className: y.a.subtitle
-					}, g._("Go ahead, show them some love!", null, {
+						className: g.a.subtitle
+					}, y._("Go ahead, show them some love!", null, {
 						hk: "3NzF6j"
 					})), o.a.createElement(h.a, {
-						className: y.a.button,
+						className: g.a.button,
 						onClick: () => {
 							s(Object(d.r)()), a(Object(f.g)("in_feed_unit"))
 						}
@@ -679,9 +679,9 @@
 			})), a.d(t, "j", (function() {
 				return O
 			})), a.d(t, "k", (function() {
-				return y
-			})), a.d(t, "g", (function() {
 				return g
+			})), a.d(t, "g", (function() {
+				return y
 			})), a.d(t, "i", (function() {
 				return C
 			})), a.d(t, "q", (function() {
@@ -731,8 +731,8 @@
 				h = r.a.div("ModalMetaText", u.a),
 				w = r.a.label("ModalFormItem", u.a),
 				O = r.a.wrapped(c.a, "ModalInput", u.a),
-				y = r.a.label("ModalInputLabel", u.a),
-				g = r.a.footer("ModalFooter", u.a),
+				g = r.a.label("ModalInputLabel", u.a),
+				y = r.a.footer("ModalFooter", u.a),
 				C = r.a.header("ModalHeader", u.a),
 				x = r.a.div("ModalTitle", u.a),
 				N = r.a.div("ModalAnnotation", u.a),
@@ -855,7 +855,7 @@
 			})), a.d(t, "i", (function() {
 				return O
 			})), a.d(t, "b", (function() {
-				return y
+				return g
 			})), a.d(t, "o", (function() {
 				return C
 			})), a.d(t, "c", (function() {
@@ -879,7 +879,7 @@
 						source: e,
 						action: "click",
 						noun: "edit_snoovatar",
-						...o.m(t)
+						...o.n(t)
 					};
 					return Object(r.a)(t) && Object.assign(a, i), a
 				},
@@ -893,45 +893,45 @@
 						source: e,
 						action: "click",
 						noun: "copy_avatar",
-						...o.m(a),
+						...o.n(a),
 						snoovatar: {
 							userGenerated: s
 						}
 					}
 				},
 				l = e => ({
-					...o.m(e),
+					...o.n(e),
 					source: "avatar",
 					action: "click",
 					noun: "try_this_look_post",
-					snoovatar: o.eb(e)
+					snoovatar: o.gb(e)
 				}),
 				u = e => ({
-					...o.m(e),
+					...o.n(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: o.eb(e)
+					snoovatar: o.gb(e)
 				}),
 				_ = e => ({
-					...o.m(e),
+					...o.n(e),
 					source: "avatar_builder",
 					action: "click",
 					noun: "close",
-					snoovatar: o.eb(e)
+					snoovatar: o.gb(e)
 				}),
 				p = e => ({
 					source: "nav",
 					action: "view",
 					noun: "avatar_marketing",
-					...o.m(e),
+					...o.n(e),
 					...i
 				}),
 				m = e => t => ({
-					...o.m(t),
+					...o.n(t),
 					source: "snoovatar",
 					action: "set_to_profile",
 					noun: "snoovatar",
@@ -943,8 +943,8 @@
 					source: "avatar",
 					action: e,
 					noun: "community_spaces",
-					...o.m(a),
-					snoovatar: o.eb(a),
+					...o.n(a),
+					snoovatar: o.gb(a),
 					actionInfo: {
 						paneName: "avatar_community_spaces" + (t ? "_control" : "")
 					}
@@ -956,29 +956,29 @@
 					source: e,
 					action: t,
 					noun: a,
-					...o.m(s),
-					snoovatar: o.eb(s)
+					...o.n(s),
+					snoovatar: o.gb(s)
 				}),
 				w = h("anniversary_achievement", "view", "anniversary_achievement"),
 				O = h("anniversary_achievement", "click", "close"),
-				y = h("anniversary_achievement", "click", "equip"),
-				g = e => () => t => ({
-					...o.m(t),
+				g = h("anniversary_achievement", "click", "equip"),
+				y = e => () => t => ({
+					...o.n(t),
 					source: "gold_top_nav",
 					action: e,
 					noun: "quick_create_cta"
 				}),
-				C = g("view"),
-				x = g("click"),
+				C = y("view"),
+				x = y("click"),
 				N = (e, t, a) => s => ({
 					source: e,
 					action: t,
 					noun: a,
-					...o.m(s),
+					...o.n(s),
 					actionInfo: {
 						pageType: "onboarding"
 					},
-					snoovatar: o.eb(s)
+					snoovatar: o.gb(s)
 				}),
 				I = e => N("onboarding", "click", e),
 				P = () => N("avatar", "view", "onboarding")
@@ -1356,4 +1356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.3332044f2df1a9c35949.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.b453346bc5007fbb0e7c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.729ecd5bf6aa6fa3af3e.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.2dcc934aff3920a49be7.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, a, t) {
@@ -1071,7 +1071,7 @@
 					if (!e) {
 						const e = () => {
 							r((() => e => ({
-								...Object(g.m)(e),
+								...Object(g.n)(e),
 								source: "start_predictions_modal",
 								action: "click",
 								noun: "close"
@@ -1092,7 +1092,7 @@
 								subredditUrl: e
 							}) => a === e);
 							e && r((e => a => ({
-								...Object(g.m)(a),
+								...Object(g.n)(a),
 								source: "start_predictions_modal",
 								action: "click",
 								noun: "create_predictions_tournament",
@@ -1182,7 +1182,7 @@
 						[o, i] = Object(r.useState)(n && (null === (a = n[0]) || void 0 === a ? void 0 : a.subredditUrl) || "");
 					Object(r.useEffect)(() => {
 						t((() => e => ({
-							...Object(g.m)(e),
+							...Object(g.n)(e),
 							source: "predictions_marketing_page",
 							action: "view",
 							noun: "start_predictions_modal"
@@ -1263,7 +1263,7 @@
 					t = Object(B.a)(),
 					r = () => {
 						e((() => e => ({
-							...Object(g.m)(e),
+							...Object(g.n)(e),
 							source: "predictions_marketing_page",
 							action: "click",
 							noun: "community"
@@ -1393,7 +1393,7 @@
 						href: "https://mods.reddithelp.com/hc/en-us/articles/4409834282509",
 						onClick: () => {
 							e((() => e => ({
-								...Object(g.m)(e),
+								...Object(g.n)(e),
 								source: "predictions_marketing_page",
 								action: "click",
 								noun: "view_full_faqs"
@@ -1477,7 +1477,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...Object(g.m)(e),
+						...Object(g.n)(e),
 						actionInfo: Object(g.c)(e, {
 							pageType: "predictions_marketing_page"
 						})
@@ -1526,7 +1526,7 @@
 				})), l.a.createElement(_.k, {
 					onClick: () => {
 						e((() => e => ({
-							...Object(g.m)(e),
+							...Object(g.n)(e),
 							source: "predictions_marketing_page",
 							action: "click",
 							noun: "start_predictions_modal"
@@ -1614,7 +1614,7 @@
 				})), l.a.createElement(_.k, {
 					onClick: () => {
 						e((() => e => ({
-							...Object(g.m)(e),
+							...Object(g.n)(e),
 							source: "predictions_marketing_page",
 							action: "click",
 							noun: "lets_do_this"
@@ -1658,4 +1658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.729ecd5bf6aa6fa3af3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.2dcc934aff3920a49be7.js.map

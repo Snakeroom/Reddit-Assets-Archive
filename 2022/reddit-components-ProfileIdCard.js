@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.3e9901d38e2fd83f9c62.js
-// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d121e05595699310cfbb.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1880,8 +1880,8 @@
 				e.FOLLOW = "follow", e.UNFOLLOW = "unfollow", e.CREATE_POST = "create_post"
 			}(n || (n = {}));
 			const v = (e, t) => ({
-				...Object(g.m)(t),
-				profile: Object(g.j)(t),
+				...Object(g.n)(t),
+				profile: Object(g.k)(t),
 				subreddit: {
 					id: e
 				}
@@ -1921,8 +1921,8 @@
 				q = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				V = r("./src/reddit/helpers/styles/mixins/loading.ts"),
 				Q = r("./src/reddit/models/Gold/Premium/index.ts"),
-				Y = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
-				X = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
+				X = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
+				Y = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				J = r("./src/reddit/selectors/premium.ts"),
 				$ = r("./src/reddit/components/ProfileIdCard/footer.m.less"),
 				ee = r.n($);
@@ -1944,8 +1944,8 @@
 					isEmployee: k.H,
 					isLoggedIn: k.K,
 					profile: O.j,
-					crisisFlowEnabled: X.b,
-					chatInviteLinkSharing: Y.a
+					crisisFlowEnabled: Y.b,
+					chatInviteLinkSharing: X.a
 				}),
 				ne = ({
 					isLoading: e,
@@ -2616,13 +2616,13 @@
 			var n = r("./src/reddit/constants/tracking.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
 			const a = e => t => ({
-					...Object(s.m)(t),
+					...Object(s.n)(t),
 					action: n.c.CLICK,
 					noun: `follower_list_page_${e?"follow":"unfollow"}`,
 					source: "profile"
 				}),
 				o = () => e => ({
-					...Object(s.m)(e),
+					...Object(s.n)(e),
 					action: n.c.CLICK,
 					noun: "follower_list_cta",
 					source: "profile"
@@ -2653,9 +2653,9 @@
 				s = r("./src/reddit/selectors/telemetry.ts"),
 				a = r("./src/reddit/selectors/user.ts");
 			const o = e => ({
-					screen: s.Y(e),
-					profile: s.P(e),
-					subreddit: s.gb(e)
+					screen: s.ab(e),
+					profile: s.R(e),
+					subreddit: s.ib(e)
 				}),
 				i = e => t => ({
 					source: "user_dropdown",
@@ -2673,7 +2673,7 @@
 					source: "nav",
 					action: "click",
 					actionInfo: {
-						pageType: t.platform.currentPage ? s.t(t.platform.currentPage) : void 0,
+						pageType: t.platform.currentPage ? s.v(t.platform.currentPage) : void 0,
 						settingValue: e ? "online" : "hidden"
 					},
 					noun: "online_presence_toggle",
@@ -2715,7 +2715,7 @@
 							userName: e
 						}).id
 					},
-					...s.m(t)
+					...s.n(t)
 				}),
 				b = e => t => ({
 					source: "profile",
@@ -2726,7 +2726,7 @@
 							userName: e
 						}).id
 					},
-					...s.m(t)
+					...s.n(t)
 				})
 		},
 		"./src/reddit/hooks/useLocale.ts": function(e, t, r) {
@@ -2980,4 +2980,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.3e9901d38e2fd83f9c62.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d121e05595699310cfbb.js.map

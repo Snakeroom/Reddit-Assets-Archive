@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.1cb070a20c994843ed23.js
-// Retrieved at 2/3/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.94603eef32a48bba4bfd.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -4508,11 +4508,11 @@
 							source: "trophy",
 							action: "click",
 							noun: "trophy",
-							...l.m(t),
+							...l.n(t),
 							actionInfo: Object(l.c)(t, {
 								paneName: "profile_about"
 							}),
-							profile: l.P(t),
+							profile: l.R(t),
 							trophy: e
 						}))({
 							id: e.id,
@@ -5109,7 +5109,7 @@
 						source: "meta",
 						action: "hover",
 						noun: "achieve_flair",
-						...i.m(a),
+						...i.n(a),
 						subreddit: {
 							id: t
 						},
@@ -5125,7 +5125,7 @@
 					source: "powerups",
 					action: "click",
 					noun: "view_your_achievements",
-					...i.m(e)
+					...i.n(e)
 				})
 		},
 		"./src/reddit/icons/fonts/DistinguishShield/index.tsx": function(e, t, s) {
@@ -5556,4 +5556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.1cb070a20c994843ed23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.94603eef32a48bba4bfd.js.map

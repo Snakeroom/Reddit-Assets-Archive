@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.95f038c672eac2117164.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.62a64d5bbc294f82bf71.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -1677,11 +1677,11 @@
 							source: "trophy",
 							action: "click",
 							noun: "trophy",
-							...d.m(t),
+							...d.n(t),
 							actionInfo: Object(d.c)(t, {
 								paneName: "profile_about"
 							}),
-							profile: d.P(t),
+							profile: d.R(t),
 							trophy: e
 						}))({
 							id: e.id,
@@ -2422,4 +2422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.95f038c672eac2117164.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.62a64d5bbc294f82bf71.js.map

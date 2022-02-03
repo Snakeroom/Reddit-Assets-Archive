@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.d3b7283c9c7702afe401.js
-// Retrieved at 2/3/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.31ac5da84f0aa78396d0.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -123,10 +123,10 @@
 					source: "post_requirements",
 					action: "save",
 					noun: "settings",
-					...R.m(t),
+					...R.n(t),
 					postRequirement: q(e),
-					subreddit: R.gb(t),
-					userSubreddit: R.qb(t)
+					subreddit: R.ib(t),
+					userSubreddit: R.sb(t)
 				});
 			var T = n("./src/reddit/selectors/activeModalId.ts"),
 				B = n("./src/reddit/selectors/contentControls.ts"),
@@ -899,7 +899,7 @@
 							source: "community_settings",
 							action: "add",
 							noun: "auto_report_keyword",
-							...Object(R.m)(t),
+							...Object(R.n)(t),
 							setting: {
 								value: e,
 								oldValue: ""
@@ -908,7 +908,7 @@
 							source: "community_settings",
 							action: "remove",
 							noun: "auto_report_keyword",
-							...Object(R.m)(t),
+							...Object(R.n)(t),
 							setting: {
 								value: e,
 								oldValue: ""
@@ -1594,7 +1594,7 @@
 								value: `${o.hatefulContentThresholdAbuse}`,
 								oldValue: `${this.state.initialFormState.hatefulContentFilters.hatefulContentThresholdAbuse}`
 							},
-							...Object(R.m)(e)
+							...Object(R.n)(e)
 						}));
 						const r = await this.props.onSave({
 							hatefulContentFilters: o,
@@ -1773,4 +1773,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.d3b7283c9c7702afe401.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.31ac5da84f0aa78396d0.js.map

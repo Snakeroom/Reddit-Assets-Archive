@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.2639ad324e3007eed1a0.js
-// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.2935f42a1cee84027dfb.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~Subreddit"], {
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, n) {
@@ -2427,7 +2427,7 @@
 					isViewed: n,
 					type: i
 				}) => s => ({
-					...l.m(s),
+					...l.n(s),
 					action: d.c.VIEW,
 					noun: "inbox_notification",
 					source: o.Inbox,
@@ -2448,7 +2448,7 @@
 					awardId: s
 				}) => r => {
 					Object(u.a)({
-						...l.m(r),
+						...l.n(r),
 						action: "receive",
 						noun: "inbox_notification",
 						source: o.Inbox,
@@ -2473,7 +2473,7 @@
 					awardId: s,
 					position: r
 				}) => a => ({
-					...l.m(a),
+					...l.n(a),
 					action: d.c.CLICK,
 					noun: "inbox_notification",
 					source: o.Inbox,
@@ -2496,7 +2496,7 @@
 					badgeCount: e,
 					tab: t
 				}) => n => ({
-					...l.m(n),
+					...l.n(n),
 					action: d.c.VIEW,
 					noun: "inbox",
 					source: o.Inbox,
@@ -2509,7 +2509,7 @@
 					badgeCount: e,
 					tab: t
 				}) => t => ({
-					...l.m(t),
+					...l.n(t),
 					action: d.c.VIEW,
 					noun: "mini_inbox",
 					source: o.Inbox,
@@ -2521,7 +2521,7 @@
 				g = ({
 					badgeCount: e
 				}) => t => ({
-					...l.m(t),
+					...l.n(t),
 					action: d.c.CLICK,
 					noun: "inbox",
 					source: o.Nav,
@@ -2536,7 +2536,7 @@
 					type: i,
 					awardId: s
 				}) => r => ({
-					...l.m(r),
+					...l.n(r),
 					action: d.c.CLICK,
 					noun: "inbox_notification_overflow",
 					source: o.Inbox,
@@ -2558,7 +2558,7 @@
 					isViewed: n,
 					type: i
 				}) => s => ({
-					...l.m(s),
+					...l.n(s),
 					action: d.c.VIEW,
 					noun: "inbox_notification_overflow",
 					source: o.Inbox,
@@ -2578,7 +2578,7 @@
 					isViewed: i,
 					type: s
 				}) => r => ({
-					...l.m(r),
+					...l.n(r),
 					action: d.c.CLICK,
 					noun: "overflow_option",
 					source: o.Inbox,
@@ -2602,7 +2602,7 @@
 					isViewed: i,
 					type: s
 				}) => r => ({
-					...l.m(r),
+					...l.n(r),
 					action: d.c.UNDO,
 					noun: "overflow_option",
 					source: o.Inbox,
@@ -2620,7 +2620,7 @@
 					}
 				}),
 				S = e => t => ({
-					...l.m(t),
+					...l.n(t),
 					action: d.c.CLICK,
 					noun: "notification_app_settings",
 					source: o.Inbox,
@@ -2630,7 +2630,7 @@
 					}
 				}),
 				v = () => e => ({
-					...l.m(e),
+					...l.n(e),
 					action: d.c.CLICK,
 					noun: "see_all",
 					source: o.Inbox,
@@ -2640,7 +2640,7 @@
 					}
 				}),
 				j = () => e => ({
-					...l.m(e),
+					...l.n(e),
 					action: d.c.CLICK,
 					noun: "messages",
 					source: o.Inbox
@@ -2648,7 +2648,7 @@
 				E = ({
 					isMiniInbox: e
 				}) => t => ({
-					...l.m(t),
+					...l.n(t),
 					action: d.c.CLICK,
 					noun: "mark_all_as_read",
 					source: o.Inbox,
@@ -2658,7 +2658,7 @@
 					} : {}
 				}),
 				w = (e, t) => n => ({
-					...l.m(n),
+					...l.n(n),
 					action: d.c.CLICK,
 					noun: "policy_banner",
 					source: o.Inbox,
@@ -2669,7 +2669,7 @@
 					}
 				}),
 				k = () => e => ({
-					...l.m(e),
+					...l.n(e),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
 					source: o.Inbox,
@@ -2693,9 +2693,9 @@
 			n("./src/reddit/constants/categories.tsx");
 			var i = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => ({
-					screen: i.Y(e),
-					profile: i.P(e),
-					subreddit: i.gb(e)
+					screen: i.ab(e),
+					profile: i.R(e),
+					subreddit: i.ib(e)
 				}),
 				r = e => t => ({
 					action: "click",
@@ -2745,37 +2745,37 @@
 					source: s.COMMUNITY_WIDGETS,
 					action: r.c.CLICK,
 					noun: i.SEE_MORE,
-					widget: Object(o.ub)(n, {
+					widget: Object(o.wb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...o.m
+					...o.n
 				}),
 				c = (e, t) => n => ({
 					source: s.POST,
 					action: r.c.CLICK,
 					noun: i.REREDDIT_PROMO,
-					post: o.G(n, e),
-					subreddit: o.gb(n),
+					post: o.I(n, e),
+					subreddit: o.ib(n),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: i.REREDDIT_PROMO
 						}
 					},
-					...o.m(n)
+					...o.n(n)
 				}),
 				d = () => e => ({
 					source: s.SIDEBAR,
 					action: r.c.VIEW,
 					noun: i.TOPICS_WIDGET,
-					...o.m(e)
+					...o.n(e)
 				}),
 				l = e => t => ({
 					source: s.TOPICS_WIDGET,
 					action: r.c.CLICK,
 					noun: i.TOPIC,
-					...o.m(t),
+					...o.n(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -3421,4 +3421,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.2639ad324e3007eed1a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.2935f42a1cee84027dfb.js.map

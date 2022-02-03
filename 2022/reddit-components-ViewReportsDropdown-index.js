@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.9a08736a559c3a55c1f4.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.29fbf88793de28004aa9.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, o) {
@@ -19,7 +19,7 @@
 			})), o.d(t, "h", (function() {
 				return y
 			})), o.d(t, "b", (function() {
-				return E
+				return I
 			}));
 			o("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = o("./node_modules/fbt/lib/FbtPublic.js"),
@@ -185,7 +185,7 @@
 						}), b.b.Error);
 						r(Object(a.f)(e))
 					}
-				}, E = (e, t, o) => async (n, r, {
+				}, I = (e, t, o) => async (n, r, {
 					apiContext: c,
 					gqlContext: d
 				}) => {
@@ -348,8 +348,8 @@
 				toggleSnooze: o => {
 					Object(O.a)(t.reportedThingId) ? e(Object(a.h)(t.reportedThingId, t.reason, o)) : e(Object(l.gb)(t.reportedThingId, t.reason, o))
 				}
-			})), E = Object(p.a)(b.a);
-			class S extends s.a.Component {
+			})), I = Object(p.a)(b.a);
+			class E extends s.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
 						const e = this.props.isSnoozed ? d.cc.None : d.cc.Snoozed;
@@ -376,7 +376,7 @@
 					}, s.a.createElement("label", {
 						htmlFor: c,
 						className: w.a.DropdownLabel
-					}, i ? "Reporter snoozed" : `${t}: ${e}`, r ? s.a.createElement(g.a, null) : s.a.createElement(h.a, null))), s.a.createElement(E, {
+					}, i ? "Reporter snoozed" : `${t}: ${e}`, r ? s.a.createElement(g.a, null) : s.a.createElement(h.a, null))), s.a.createElement(I, {
 						isOpen: r,
 						tooltipTarget: this.tooltipTarget,
 						renderContentsHidden: !0,
@@ -393,9 +393,9 @@
 					}))))))
 				}
 			}
-			var T = y(Object(u.c)(S)),
-				I = o("./src/reddit/components/Reports/index.m.less"),
-				D = o.n(I);
+			var S = y(Object(u.c)(E)),
+				T = o("./src/reddit/components/Reports/index.m.less"),
+				D = o.n(T);
 			const {
 				fbt: B
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), z = r.a.div("ReportText", D.a), N = r.a.div("ReportsTitle", D.a);
@@ -421,7 +421,7 @@
 					hk: "2KeCLz"
 				})), s.a.createElement("div", {
 					className: D.a.UserReports
-				}, n.map(([e, t, o, n]) => void 0 !== o && n ? s.a.createElement(T, {
+				}, n.map(([e, t, o, n]) => void 0 !== o && n ? s.a.createElement(S, {
 					key: `user-${e}`,
 					reason: e,
 					amount: t,
@@ -536,10 +536,10 @@
 			var n = o("./src/reddit/constants/tracking.ts"),
 				s = o("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
-					screen: Object(s.Y)(e),
-					profile: Object(s.P)(e),
-					subreddit: Object(s.gb)(e),
-					userSubreddit: Object(s.qb)(e)
+					screen: Object(s.ab)(e),
+					profile: Object(s.R)(e),
+					subreddit: Object(s.ib)(e),
+					userSubreddit: Object(s.sb)(e)
 				}),
 				i = e => t => ({
 					source: "nav",
@@ -551,14 +551,14 @@
 					source: "post_mod_action_menu",
 					action: "click",
 					noun: e,
-					post: Object(s.G)(o, t),
+					post: Object(s.I)(o, t),
 					...r(o)
 				}),
 				d = (e, t) => o => ({
 					source: "comment",
 					action: "click",
 					noun: e,
-					post: Object(s.G)(o, t),
+					post: Object(s.I)(o, t),
 					comment: Object(s.h)(o, t),
 					...r(o)
 				}),
@@ -566,7 +566,7 @@
 					source: "comment",
 					action: n.c.UNDO,
 					noun: e,
-					post: Object(s.G)(o, t),
+					post: Object(s.I)(o, t),
 					comment: Object(s.h)(o, t),
 					...r(o)
 				}),
@@ -574,7 +574,7 @@
 					source: "comment_overflow_menu",
 					action: "click",
 					noun: e,
-					post: Object(s.G)(o, t),
+					post: Object(s.I)(o, t),
 					comment: Object(s.h)(o, t),
 					...r(o)
 				}),
@@ -582,7 +582,7 @@
 					source: "mod_distinguish_menu",
 					action: "click",
 					noun: e,
-					post: Object(s.G)(o, t),
+					post: Object(s.I)(o, t),
 					comment: Object(s.h)(o, t),
 					...r(o)
 				}),
@@ -590,7 +590,7 @@
 					source: "comment_mod_action_menu",
 					action: "click",
 					noun: e,
-					post: Object(s.G)(o, t),
+					post: Object(s.I)(o, t),
 					comment: Object(s.h)(o, t),
 					...r(o)
 				}),
@@ -599,37 +599,37 @@
 					action: "click",
 					noun: e,
 					comment: Object(s.h)(o, t),
-					post: Object(s.G)(o, t),
+					post: Object(s.I)(o, t),
 					...r(o)
 				}),
 				b = (e, t) => o => ({
 					source: "post_report_menu",
 					action: "click",
 					noun: e,
-					post: Object(s.G)(o, t),
+					post: Object(s.I)(o, t),
 					...r(o)
 				}),
 				x = (e, t) => o => ({
 					source: "post",
 					action: "click",
 					noun: e,
-					post: Object(s.G)(o, t),
-					subreddit: Object(s.jb)(o, t)
+					post: Object(s.I)(o, t),
+					subreddit: Object(s.lb)(o, t)
 				}),
 				O = (e, t) => o => ({
 					source: "comment",
 					action: "click",
 					noun: e,
 					comment: Object(s.h)(o, t),
-					post: Object(s.G)(o, t),
-					subreddit: Object(s.jb)(o, t)
+					post: Object(s.I)(o, t),
+					subreddit: Object(s.lb)(o, t)
 				}),
 				f = (e, t, o, n) => r => ({
 					source: e ? "comment" : "post",
 					action: "click",
 					noun: t ? "unsnooze_reporter" : "snooze_reporter",
-					post: Object(s.G)(r, o),
-					subreddit: Object(s.jb)(r, o),
+					post: Object(s.I)(r, o),
+					subreddit: Object(s.lb)(r, o),
 					actionInfo: {
 						reason: n
 					},
@@ -727,4 +727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.9a08736a559c3a55c1f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.29fbf88793de28004aa9.js.map

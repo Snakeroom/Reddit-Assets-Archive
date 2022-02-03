@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.f9a64f94fdf3fe22ed94.js
-// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.9563b04e9c91b02f9bdd.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, n) {
@@ -3540,7 +3540,7 @@
 						source: "post_flair_picker",
 						action: "click",
 						noun: e,
-						subreddit: Object(C.hb)(t, this.props.subredditId)
+						subreddit: Object(C.jb)(t, this.props.subredditId)
 					}));
 					const t = Object(E.c)(e.flairs);
 					this.state = {
@@ -3893,8 +3893,8 @@
 								source: "layout_switch",
 								action: "click",
 								noun: s,
-								screen: Object(f.Y)(e),
-								subreddit: Object(f.gb)(e)
+								screen: Object(f.ab)(e),
+								subreddit: Object(f.ib)(e)
 							})))
 						})(s.layout),
 						d = () => e.toggleTooltip(i),
@@ -4285,7 +4285,7 @@
 						source: "meta",
 						action: "hover",
 						noun: "achieve_flair",
-						...o.m(d),
+						...o.n(d),
 						subreddit: {
 							id: t
 						},
@@ -4301,7 +4301,7 @@
 					source: "powerups",
 					action: "click",
 					noun: "view_your_achievements",
-					...o.m(e)
+					...o.n(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/topAwarded.ts": function(e, t, n) {
@@ -4320,8 +4320,8 @@
 			const d = (e, t = {}) => ({
 					...Object(a.h)(e, t),
 					correlationId: Object(s.e)(s.a.GildingFlow, !1),
-					profile: o.P(e),
-					subreddit: o.gb(e)
+					profile: o.R(e),
+					subreddit: o.ib(e)
 				}),
 				i = e => t => ({
 					source: "post",
@@ -4731,7 +4731,7 @@
 						source: "bulk_mod_action",
 						action: "click",
 						noun: e,
-						screen: Object(g.Y)(t)
+						screen: Object(g.ab)(t)
 					}))
 				}
 				render() {
@@ -5140,4 +5140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f9a64f94fdf3fe22ed94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.9563b04e9c91b02f9bdd.js.map

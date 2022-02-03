@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.89dfe8505d1eabef480d.js
-// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.9784db5c9611c8bdb42c.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -3502,7 +3502,7 @@
 					isViewed: n,
 					type: r
 				}) => a => ({
-					...l.m(a),
+					...l.n(a),
 					action: d.c.VIEW,
 					noun: "inbox_notification",
 					source: o.Inbox,
@@ -3523,7 +3523,7 @@
 					awardId: a
 				}) => s => {
 					Object(u.a)({
-						...l.m(s),
+						...l.n(s),
 						action: "receive",
 						noun: "inbox_notification",
 						source: o.Inbox,
@@ -3548,7 +3548,7 @@
 					awardId: a,
 					position: s
 				}) => i => ({
-					...l.m(i),
+					...l.n(i),
 					action: d.c.CLICK,
 					noun: "inbox_notification",
 					source: o.Inbox,
@@ -3571,7 +3571,7 @@
 					badgeCount: e,
 					tab: t
 				}) => n => ({
-					...l.m(n),
+					...l.n(n),
 					action: d.c.VIEW,
 					noun: "inbox",
 					source: o.Inbox,
@@ -3584,7 +3584,7 @@
 					badgeCount: e,
 					tab: t
 				}) => t => ({
-					...l.m(t),
+					...l.n(t),
 					action: d.c.VIEW,
 					noun: "mini_inbox",
 					source: o.Inbox,
@@ -3596,7 +3596,7 @@
 				v = ({
 					badgeCount: e
 				}) => t => ({
-					...l.m(t),
+					...l.n(t),
 					action: d.c.CLICK,
 					noun: "inbox",
 					source: o.Nav,
@@ -3611,7 +3611,7 @@
 					type: r,
 					awardId: a
 				}) => s => ({
-					...l.m(s),
+					...l.n(s),
 					action: d.c.CLICK,
 					noun: "inbox_notification_overflow",
 					source: o.Inbox,
@@ -3633,7 +3633,7 @@
 					isViewed: n,
 					type: r
 				}) => a => ({
-					...l.m(a),
+					...l.n(a),
 					action: d.c.VIEW,
 					noun: "inbox_notification_overflow",
 					source: o.Inbox,
@@ -3653,7 +3653,7 @@
 					isViewed: r,
 					type: a
 				}) => s => ({
-					...l.m(s),
+					...l.n(s),
 					action: d.c.CLICK,
 					noun: "overflow_option",
 					source: o.Inbox,
@@ -3677,7 +3677,7 @@
 					isViewed: r,
 					type: a
 				}) => s => ({
-					...l.m(s),
+					...l.n(s),
 					action: d.c.UNDO,
 					noun: "overflow_option",
 					source: o.Inbox,
@@ -3695,7 +3695,7 @@
 					}
 				}),
 				O = e => t => ({
-					...l.m(t),
+					...l.n(t),
 					action: d.c.CLICK,
 					noun: "notification_app_settings",
 					source: o.Inbox,
@@ -3705,7 +3705,7 @@
 					}
 				}),
 				y = () => e => ({
-					...l.m(e),
+					...l.n(e),
 					action: d.c.CLICK,
 					noun: "see_all",
 					source: o.Inbox,
@@ -3715,7 +3715,7 @@
 					}
 				}),
 				E = () => e => ({
-					...l.m(e),
+					...l.n(e),
 					action: d.c.CLICK,
 					noun: "messages",
 					source: o.Inbox
@@ -3723,7 +3723,7 @@
 				N = ({
 					isMiniInbox: e
 				}) => t => ({
-					...l.m(t),
+					...l.n(t),
 					action: d.c.CLICK,
 					noun: "mark_all_as_read",
 					source: o.Inbox,
@@ -3733,7 +3733,7 @@
 					} : {}
 				}),
 				C = (e, t) => n => ({
-					...l.m(n),
+					...l.n(n),
 					action: d.c.CLICK,
 					noun: "policy_banner",
 					source: o.Inbox,
@@ -3744,7 +3744,7 @@
 					}
 				}),
 				j = () => e => ({
-					...l.m(e),
+					...l.n(e),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
 					source: o.Inbox,
@@ -3791,7 +3791,7 @@
 				e.FREQUENT = "frequent", e.LOW = "low", e.OFF = "off"
 			}(o || (o = {}));
 			const i = e => ({
-					...r.m(e),
+					...r.n(e),
 					noun: "desktop_notification_permissions"
 				}),
 				c = e => e ? "enable" : "disable",
@@ -3824,7 +3824,7 @@
 					})
 				},
 				p = (e, t, n) => ({
-					...r.m(e),
+					...r.n(e),
 					actionInfo: r.c(e, {
 						success: t,
 						reason: n
@@ -3853,18 +3853,18 @@
 					})
 				},
 				v = e => ({
-					...r.m(e),
+					...r.n(e),
 					noun: "push_notification"
 				}),
 				g = e => ({
 					...v(e),
-					notification: r.C(e, void 0, void 0),
+					notification: r.E(e, void 0, void 0),
 					action: void 0,
 					source: "notification",
 					correlationId: void 0
 				}),
 				x = (e, t) => n => ({
-					...r.m(n),
+					...r.n(n),
 					action: c(e),
 					email: {
 						type: t
@@ -3873,7 +3873,7 @@
 					source: "email_app_settings"
 				}),
 				_ = (e, t) => n => ({
-					...r.m(n),
+					...r.n(n),
 					action: c(e),
 					notification: {
 						type: t
@@ -3882,7 +3882,7 @@
 					source: "notification_app_settings"
 				}),
 				I = e => t => ({
-					...r.m(t),
+					...r.n(t),
 					source: "email_app_settings",
 					action: c(e),
 					noun: "email",
@@ -3891,7 +3891,7 @@
 					}
 				}),
 				O = (e, t, n) => a => ({
-					...r.m(a),
+					...r.n(a),
 					action: "set_frequency",
 					noun: n,
 					source: "community_notifications",
@@ -3901,7 +3901,7 @@
 					}
 				}),
 				y = () => e => ({
-					...r.m(e),
+					...r.n(e),
 					action: s.c.View,
 					noun: "screen",
 					source: "global",
@@ -4730,4 +4730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.89dfe8505d1eabef480d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.9784db5c9611c8bdb42c.js.map

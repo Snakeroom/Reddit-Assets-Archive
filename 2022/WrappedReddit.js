@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/WrappedReddit.c95a6f7c8542f0ff200e.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/WrappedReddit.dd54a2fef038a829cb57.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["WrappedReddit"], {
 		"./assets/fonts/RedditSans/font.less": function(a, e, c) {},
@@ -417,21 +417,21 @@
 			var T = c("./src/reddit/constants/modals.ts"),
 				W = c("./src/reddit/selectors/telemetry.ts");
 			const U = a => e => ({
-					...W.m(e),
+					...W.n(e),
 					noun: "subreddit",
 					source: "recap",
 					action: "click",
-					recap: W.U(e),
+					recap: W.W(e),
 					subreddit: {
 						id: a
 					}
 				}),
 				B = a => e => ({
-					...W.m(e),
+					...W.n(e),
 					noun: "post",
 					source: "recap",
 					action: "click",
-					recap: W.U(e),
+					recap: W.W(e),
 					post: {
 						id: a
 					}
@@ -1074,11 +1074,11 @@
 						className: Object(n.a)(da.a.commentPostTitle, da.a.isEmptyImage),
 						link: e,
 						onClick: () => o(((a, e) => c => ({
-							...W.m(c),
+							...W.n(c),
 							noun: "comment unit",
 							source: "recap",
 							action: "click",
-							recap: W.U(c),
+							recap: W.W(c),
 							comment: {
 								id: a,
 								postId: e
@@ -1184,7 +1184,7 @@
 				}, [p]);
 				const M = async () => {
 					e((() => a => ({
-						...W.m(a),
+						...W.n(a),
 						source: "recap",
 						action: "click",
 						noun: "PN_enable"
@@ -1193,7 +1193,7 @@
 					c(Object(va.h)(Na.a))
 				}, k = () => {
 					e((() => a => ({
-						...W.m(a),
+						...W.n(a),
 						source: "recap",
 						action: "click",
 						noun: "Email_enable"
@@ -1205,7 +1205,7 @@
 						})), !!(null === (c = e().user.notificationPrefs.pushSettingsLayout.rows.byId.EMAIL_DIGEST) || void 0 === c ? void 0 : c.isEnabled) && Z()
 					})
 				}, L = () => e((() => a => ({
-					...W.m(a),
+					...W.n(a),
 					source: "recap",
 					action: "click",
 					noun: "learn_more"
@@ -1600,7 +1600,7 @@
 					o = c ? Object(n.a)(Ua.a.card, Ua.a.flipCard) : Ua.a.card,
 					u = t.a.useCallback(() => {
 						l || i((() => a => ({
-							...W.m(a),
+							...W.n(a),
 							source: "recap",
 							action: "click",
 							noun: "hide_username"
@@ -1620,11 +1620,11 @@
 				}), t.a.createElement(Ga, {
 					onClick: () => {
 						e(S()), i((() => a => ({
-							...W.m(a),
+							...W.n(a),
 							source: "recap",
 							action: "click",
 							noun: "ability_card",
-							recap: W.U(a)
+							recap: W.W(a)
 						}))())
 					}
 				}))), c && t.a.createElement("div", {
@@ -1916,7 +1916,7 @@
 					}, [e]);
 				t.a.useEffect(() => {
 					a((() => a => ({
-						...W.m(a),
+						...W.n(a),
 						source: "recap",
 						action: "view",
 						noun: "recap"
@@ -1925,19 +1925,19 @@
 					p || e(P())
 				}, [p, e]), t.a.useEffect(() => () => {
 					a((() => a => ({
-						...W.m(a),
+						...W.n(a),
 						source: "recap",
 						action: "click",
 						noun: "dismiss",
-						recap: W.U(a)
+						recap: W.W(a)
 					}))())
 				}, []), t.a.useEffect(() => {
 					d.length && a((() => a => ({
-						...W.m(a),
+						...W.n(a),
 						source: "recap",
 						action: "view",
 						noun: "card",
-						recap: W.U(a)
+						recap: W.W(a)
 					}))())
 				}, [d, i]);
 				const C = a => () => {
@@ -1955,11 +1955,11 @@
 					x = t.a.useCallback(async () => {
 						var l;
 						a((() => a => ({
-							...W.m(a),
+							...W.n(a),
 							source: "recap",
 							action: "click",
 							noun: "share",
-							recap: W.U(a)
+							recap: W.W(a)
 						}))());
 						const t = (null === (l = d[i]) || void 0 === l ? void 0 : l.id) || "",
 							r = document.getElementById(t);
@@ -2039,4 +2039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.c95a6f7c8542f0ff200e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.dd54a2fef038a829cb57.js.map

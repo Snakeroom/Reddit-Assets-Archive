@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.cef1cb131a5aafa44b08.js
-// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.4e97bac45ca28326cae4.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -2900,19 +2900,19 @@
 			const i = "poll",
 				a = "predictions",
 				o = e => ({
-					...Object(s.m)(e),
+					...Object(s.n)(e),
 					source: i,
 					action: "select",
 					noun: "poll_option"
 				}),
 				c = e => ({
-					...Object(s.m)(e),
+					...Object(s.n)(e),
 					source: i,
 					action: "select",
 					noun: "prediction_option"
 				}),
 				d = e => ({
-					...Object(s.m)(e),
+					...Object(s.n)(e),
 					source: i,
 					action: "view",
 					noun: "predict_option_modal"
@@ -2922,11 +2922,11 @@
 					selectedNumberCoins: t,
 					totalStakeAmount: r
 				}) => n => ({
-					...Object(s.m)(n),
+					...Object(s.n)(n),
 					source: i,
 					action: "confirm",
 					noun: "predict",
-					poll: Object(s.F)(n, e, !1, void 0, t),
+					poll: Object(s.H)(n, e, !1, void 0, t),
 					goldPurchase: {
 						numberCoins: r
 					}
@@ -2935,11 +2935,11 @@
 					pollId: e,
 					selectedNumberTokens: t
 				}) => r => ({
-					...Object(s.m)(r),
+					...Object(s.n)(r),
 					source: i,
 					action: "confirm",
 					noun: "predict",
-					poll: Object(s.F)(r, e, !1, void 0, void 0, t)
+					poll: Object(s.H)(r, e, !1, void 0, void 0, t)
 				}),
 				m = ({
 					pollId: e,
@@ -2949,15 +2949,15 @@
 					const o = t === n.a.Coins ? r : void 0,
 						c = t === n.a.Tokens ? r : void 0;
 					return {
-						...Object(s.m)(a),
+						...Object(s.n)(a),
 						source: i,
 						action: "close",
 						noun: "prediction_modal",
-						poll: Object(s.F)(a, e, !1, o, c)
+						poll: Object(s.H)(a, e, !1, o, c)
 					}
 				},
 				p = e => ({
-					...Object(s.m)(e),
+					...Object(s.n)(e),
 					source: i,
 					action: "click",
 					noun: "add_coins"
@@ -2965,7 +2965,7 @@
 				b = ({
 					targetUserId: e
 				}) => t => ({
-					...Object(s.m)(t),
+					...Object(s.n)(t),
 					source: a,
 					action: "click",
 					noun: "leaderboard_profile",
@@ -2976,7 +2976,7 @@
 				h = ({
 					pageType: e
 				}) => t => ({
-					...Object(s.m)(t),
+					...Object(s.n)(t),
 					source: a,
 					action: "click",
 					noun: "tournament",
@@ -2985,7 +2985,7 @@
 					}
 				}),
 				g = () => e => ({
-					...Object(s.m)(e),
+					...Object(s.n)(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2994,19 +2994,19 @@
 					}
 				}),
 				_ = () => e => ({
-					...Object(s.m)(e),
+					...Object(s.n)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
 				f = () => e => ({
-					...Object(s.m)(e),
+					...Object(s.n)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
 				x = e => t => ({
-					...Object(s.m)(t),
+					...Object(s.n)(t),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "enable_predictions",
@@ -3017,45 +3017,45 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(s.gb)(t)
+					subreddit: Object(s.ib)(t)
 				}),
 				v = () => e => ({
-					...Object(s.m)(e),
+					...Object(s.n)(e),
 					source: a,
 					action: "click",
 					noun: "next"
 				}),
 				y = () => e => ({
-					...Object(s.m)(e),
+					...Object(s.n)(e),
 					source: a,
 					action: "click",
 					noun: "add_more"
 				}),
 				w = () => e => ({
-					...Object(s.m)(e),
+					...Object(s.n)(e),
 					source: a,
 					action: "click",
 					noun: "start_tournament"
 				}),
 				k = () => e => ({
-					...Object(s.m)(e),
+					...Object(s.n)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
 				E = () => e => ({
-					...Object(s.m)(e),
+					...Object(s.n)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(s.gb)(e)
+					subreddit: Object(s.ib)(e)
 				}),
 				j = () => e => ({
-					...Object(s.m)(e),
+					...Object(s.n)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(s.gb)(e)
+					subreddit: Object(s.ib)(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, r) {
@@ -3100,9 +3100,9 @@
 			var n = r("./src/reddit/models/SubredditWikiPage/index.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
 			const i = e => ({
-					...s.m(e),
-					subreddit: s.gb(e),
-					userSubreddit: s.qb(e)
+					...s.n(e),
+					subreddit: s.ib(e),
+					userSubreddit: s.sb(e)
 				}),
 				a = () => e => ({
 					source: "wiki",
@@ -3712,4 +3712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.cef1cb131a5aafa44b08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.4e97bac45ca28326cae4.js.map

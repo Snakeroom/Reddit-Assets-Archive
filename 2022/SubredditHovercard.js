@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.e9c83059f7eefeed07d8.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.46f56ec4f412270b37a5.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -248,17 +248,17 @@
 					source: "subreddit_hovercard",
 					action: "click",
 					noun: t,
-					post: s ? a.G(o, s) : void 0,
-					subreddit: a.hb(o, e),
-					screen: a.Y(o)
+					post: s ? a.I(o, s) : void 0,
+					subreddit: a.jb(o, e),
+					screen: a.ab(o)
 				}),
 				c = (e, t) => s => ({
 					source: "subreddit_hovercard",
 					action: "view",
 					noun: "hover_subreddit_hovercard",
-					post: t ? a.G(s, t) : void 0,
-					subreddit: a.hb(s, e),
-					screen: a.Y(s)
+					post: t ? a.I(s, t) : void 0,
+					subreddit: a.jb(s, e),
+					screen: a.ab(s)
 				});
 			var u = s("./node_modules/react-redux/es/index.js"),
 				p = s("./node_modules/reselect/es/index.js"),
@@ -304,7 +304,7 @@
 				_1: " Online"
 			}, [H._plural(e.subredditAboutInfo.accountsActive)], {
 				hk: "3OMjYw"
-			})))), G = Object(I.a)(e => {
+			})))), J = Object(I.a)(e => {
 				const {
 					className: t,
 					hideNSFWPref: s,
@@ -350,25 +350,25 @@
 					style: c
 				})
 			});
-			var J = e => {
+			var q = e => {
 				const t = e.activeTooltipId === e.tooltipId;
-				return r.a.createElement(G, P({
+				return r.a.createElement(J, P({
 					isOpen: t
 				}, e))
 			};
-			const q = Object(p.c)({
+			const V = Object(p.c)({
 				activeTooltipId: v.a,
 				hideNSFWPref: h.C,
 				subreddit: b.w,
 				subredditAboutInfo: b.t
 			});
-			var V = Object(u.b)(q, e => ({
+			var G = Object(u.b)(V, e => ({
 				onHideTooltip: () => e(Object(m.i)())
 			}))(Object(d.c)(e => r.a.createElement("div", {
 				className: e.className,
 				id: e.tooltipId,
 				onMouseLeave: e.onHideTooltip
-			}, r.a.createElement(J, {
+			}, r.a.createElement(q, {
 				activeTooltipId: e.activeTooltipId,
 				hideNSFWPref: e.hideNSFWPref,
 				hoverId: e.hoverId,
@@ -403,7 +403,7 @@
 						authorOrSubredditName: e.subredditName,
 						tooltipId: t,
 						onShow: e.onShow
-					}, e.children, r.a.createElement(V, {
+					}, e.children, r.a.createElement(G, {
 						className: e.className,
 						hoverId: s,
 						postId: e.postId,
@@ -867,4 +867,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.e9c83059f7eefeed07d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.46f56ec4f412270b37a5.js.map

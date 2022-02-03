@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.528e97bf10023964c227.js
-// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.10e3265f0c508e7cda8d.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -2749,7 +2749,7 @@
 						source: "post_flair_picker",
 						action: "click",
 						noun: e,
-						subreddit: Object(g.hb)(t, this.props.subredditId)
+						subreddit: Object(g.jb)(t, this.props.subredditId)
 					}));
 					const t = Object(_.c)(e.flairs);
 					this.state = {
@@ -4002,8 +4002,8 @@
 						offerContext: r.a.StorefrontFreeAward
 					}),
 					correlationId: Object(o.e)(o.a.GoldPayment, !1),
-					profile: i.P(e),
-					subreddit: i.gb(e)
+					profile: i.R(e),
+					subreddit: i.ib(e)
 				}),
 				c = () => e => ({
 					source: "free_award_offer",
@@ -4032,11 +4032,11 @@
 			var o = s("./src/reddit/constants/tracking.ts"),
 				n = s("./src/reddit/selectors/telemetry.ts");
 			const r = () => e => ({
-				...Object(n.m)(e),
+				...Object(n.n)(e),
 				source: "post",
 				action: o.c.CLICK,
 				noun: "share_chat",
-				subreddit: Object(n.gb)(e)
+				subreddit: Object(n.ib)(e)
 			})
 		},
 		"./src/reddit/icons/fonts/Comment/index.tsx": function(e, t, s) {
@@ -4269,4 +4269,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.528e97bf10023964c227.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.10e3265f0c508e7cda8d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.ba1060a0ab65761d602b.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.10a6f59b8da1c1ab5aa1.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -118,14 +118,14 @@
 				v = s("./src/reddit/selectors/telemetry.ts"),
 				I = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
 				C = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
-			let O;
+			let j;
 
-			function N() {
-				O || (O = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
+			function O() {
+				j || (j = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
-			var S = s("./node_modules/lodash/debounce.js"),
-				G = s.n(S),
-				j = s("./src/reddit/icons/svgs/Search/index.tsx"),
+			var N = s("./node_modules/lodash/debounce.js"),
+				S = s.n(N),
+				G = s("./src/reddit/icons/svgs/Search/index.tsx"),
 				k = s("./src/reddit/selectors/user.ts"),
 				w = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
 				R = s.n(w);
@@ -138,7 +138,7 @@
 						this.setState({
 							query: e.target.value
 						}, this.dispatchOnChange)
-					}, this.dispatchOnChange = G()(() => {
+					}, this.dispatchOnChange = S()(() => {
 						this.props.onChange(this.state.query)
 					}, B), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
@@ -160,7 +160,7 @@
 					}, l.a.createElement("button", {
 						className: R.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, l.a.createElement(j.a, {
+					}, l.a.createElement(G.a, {
 						className: R.a.searchIcon
 					})), l.a.createElement("input", {
 						ref: e => this.elementRef = e,
@@ -211,12 +211,12 @@
 							action: "change",
 							noun: "gif_tooltip_search",
 							correlationId: this.props.correlationId,
-							subreddit: this.props.subreddit.id ? v.hb(t, this.props.subreddit.id) : void 0,
-							post: v.i(t),
+							subreddit: this.props.subreddit.id ? v.jb(t, this.props.subreddit.id) : void 0,
+							post: v.j(t),
 							search: {
 								query: e
 							},
-							...v.m(t)
+							...v.n(t)
 						})), this.setState({
 							loading: !1,
 							columns: [
@@ -231,15 +231,15 @@
 						e.scrollHeight - e.scrollTop === e.clientHeight && this.loadMoreResults()
 					}, 300), this.onResultClick = e => {
 						this.props.sendEvent(e => {
-							const t = v.m(e);
+							const t = v.n(e);
 							return {
 								...t,
 								source: "meta",
 								action: "select",
 								noun: "gif_tooltip_result",
 								correlationId: this.props.correlationId,
-								subreddit: this.props.subreddit.id ? v.hb(e, this.props.subreddit.id) : void 0,
-								post: v.i(e),
+								subreddit: this.props.subreddit.id ? v.jb(e, this.props.subreddit.id) : void 0,
+								post: v.j(e),
 								actionInfo: {
 									...t.actionInfo,
 									reason: this.props.hasGifProduct ? "has-gif-product" : "gif-train"
@@ -252,7 +252,7 @@
 					}
 				}
 				componentDidMount() {
-					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), N()
+					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), O()
 				}
 				componentWillUnmount() {
 					this.mounted = !1
@@ -270,7 +270,7 @@
 					} = this.state;
 					!e && s && null !== t && (await
 						function(e) {
-							return N(), O.then(t => {
+							return O(), j.then(t => {
 								return !!e.split(" ").concat(e).find(e => -1 !== t.indexOf(e.toLowerCase()))
 							}).catch(() => !1)
 						}(s) || (this.setState({
@@ -526,11 +526,11 @@
 			var i = s("./src/reddit/selectors/telemetry.ts");
 			const o = (e, t, s, o, n) => r => {
 					const a = {
-						...Object(i.m)(r),
+						...Object(i.n)(r),
 						source: "meta",
 						action: e,
 						noun: "transaction",
-						subreddit: Object(i.hb)(r, s),
+						subreddit: Object(i.jb)(r, s),
 						actionInfo: {
 							settingValue: t,
 							reason: n
@@ -546,17 +546,17 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? Object(i.hb)(s, t) : void 0,
+					subreddit: t ? Object(i.jb)(s, t) : void 0,
 					correlationId: e,
-					...Object(i.m)(s)
+					...Object(i.n)(s)
 				}),
 				c = (e, t) => s => ({
 					source: "meta",
 					action: "open",
 					noun: "gif_upsell",
-					subreddit: t ? Object(i.hb)(s, t) : void 0,
+					subreddit: t ? Object(i.jb)(s, t) : void 0,
 					correlationId: e,
-					...Object(i.m)(s)
+					...Object(i.n)(s)
 				})
 		},
 		"./src/reddit/icons/svgs/Unlock/index.tsx": function(e, t, s) {
@@ -576,4 +576,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.ba1060a0ab65761d602b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.10a6f59b8da1c1ab5aa1.js.map

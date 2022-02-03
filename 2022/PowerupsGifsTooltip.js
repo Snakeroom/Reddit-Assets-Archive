@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.9a48e5bb3f75e76659a6.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.08cd6bbcf277bc3fa40a.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -120,11 +120,11 @@
 				C = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
 			let S;
 
-			function G() {
+			function j() {
 				S || (S = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
-			var O = s("./node_modules/lodash/debounce.js"),
-				j = s.n(O),
+			var G = s("./node_modules/lodash/debounce.js"),
+				O = s.n(G),
 				I = s("./src/reddit/icons/svgs/Search/index.tsx"),
 				B = s("./src/reddit/selectors/user.ts"),
 				k = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
@@ -138,7 +138,7 @@
 						this.setState({
 							query: e.target.value
 						}, this.dispatchOnChange)
-					}, this.dispatchOnChange = j()(() => {
+					}, this.dispatchOnChange = O()(() => {
 						this.props.onChange(this.state.query)
 					}, R), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
@@ -211,12 +211,12 @@
 							action: "change",
 							noun: "gif_tooltip_search",
 							correlationId: this.props.correlationId,
-							subreddit: this.props.subreddit.id ? v.hb(t, this.props.subreddit.id) : void 0,
-							post: v.i(t),
+							subreddit: this.props.subreddit.id ? v.jb(t, this.props.subreddit.id) : void 0,
+							post: v.j(t),
 							search: {
 								query: e
 							},
-							...v.m(t)
+							...v.n(t)
 						})), this.setState({
 							loading: !1,
 							columns: [
@@ -231,15 +231,15 @@
 						e.scrollHeight - e.scrollTop === e.clientHeight && this.loadMoreResults()
 					}, 300), this.onResultClick = e => {
 						this.props.sendEvent(e => {
-							const t = v.m(e);
+							const t = v.n(e);
 							return {
 								...t,
 								source: "meta",
 								action: "select",
 								noun: "gif_tooltip_result",
 								correlationId: this.props.correlationId,
-								subreddit: this.props.subreddit.id ? v.hb(e, this.props.subreddit.id) : void 0,
-								post: v.i(e),
+								subreddit: this.props.subreddit.id ? v.jb(e, this.props.subreddit.id) : void 0,
+								post: v.j(e),
 								actionInfo: {
 									...t.actionInfo,
 									reason: this.props.hasGifProduct ? "has-gif-product" : "gif-train"
@@ -252,7 +252,7 @@
 					}
 				}
 				componentDidMount() {
-					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), G()
+					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), j()
 				}
 				componentWillUnmount() {
 					this.mounted = !1
@@ -270,7 +270,7 @@
 					} = this.state;
 					!e && s && null !== t && (await
 						function(e) {
-							return G(), S.then(t => {
+							return j(), S.then(t => {
 								return !!e.split(" ").concat(e).find(e => -1 !== t.indexOf(e.toLowerCase()))
 							}).catch(() => !1)
 						}(s) || (this.setState({
@@ -506,4 +506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.9a48e5bb3f75e76659a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.08cd6bbcf277bc3fa40a.js.map

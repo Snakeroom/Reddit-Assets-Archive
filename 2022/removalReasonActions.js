@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.ae79810b7a1414065bbe.js
-// Retrieved at 2/3/2022, 11:50:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.c230a8da62bf3013b6d1.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -1518,11 +1518,11 @@
 					return {
 						source: "comment_composer",
 						action: o.c.CLICK,
-						...Object(d.m)(e),
-						screen: Object(d.Y)(e),
-						subreddit: Object(d.gb)(e),
-						post: t ? Object(d.G)(e, t) : null,
-						profile: Object(d.P)(e),
+						...Object(d.n)(e),
+						screen: Object(d.ab)(e),
+						subreddit: Object(d.ib)(e),
+						post: t ? Object(d.I)(e, t) : null,
+						profile: Object(d.R)(e),
 						correlationId: Object(s.c)(s.a.CommentComposer)
 					}
 				},
@@ -1539,7 +1539,7 @@
 						noun: "comment",
 						...m(e),
 						comment: s ? Object(d.h)(e, s) : null,
-						listing: Object(d.x)(e, void 0, {
+						listing: Object(d.z)(e, void 0, {
 							depth: a
 						}),
 						commentComposer: {
@@ -1576,10 +1576,10 @@
 					source: "comment",
 					noun: "delete",
 					action: "click",
-					...Object(d.m)(t),
-					screen: Object(d.Y)(t),
-					subreddit: Object(d.gb)(t),
-					post: Object(d.G)(t, e)
+					...Object(d.n)(t),
+					screen: Object(d.ab)(t),
+					subreddit: Object(d.ib)(t),
+					post: Object(d.I)(t, e)
 				}), p = e => Object(i.a)({
 					noun: "edit",
 					...m(e)
@@ -1647,4 +1647,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.ae79810b7a1414065bbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.c230a8da62bf3013b6d1.js.map

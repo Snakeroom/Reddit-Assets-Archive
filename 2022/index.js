@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.6a6ced468abde533cfa8.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.bdc50701aec049486a1e.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index", "EconHelperActions"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -379,11 +379,11 @@
 				r = n("./src/reddit/helpers/predictions/index.ts"),
 				i = n("./src/reddit/selectors/telemetry.ts");
 			const c = (e, t) => ({
-				...Object(i.m)(e),
-				poll: Object(i.L)(e, t),
-				post: Object(i.G)(e, t),
-				predictions: Object(i.M)(e, t),
-				subreddit: Object(i.gb)(e)
+				...Object(i.n)(e),
+				poll: Object(i.N)(e, t),
+				post: Object(i.I)(e, t),
+				predictions: Object(i.O)(e, t),
+				subreddit: Object(i.ib)(e)
 			});
 			var d = n("./src/reddit/hooks/useTracking.ts"),
 				l = n("./src/reddit/models/Prediction/index.ts"),
@@ -428,7 +428,7 @@
 				j = n.n(P);
 			const {
 				fbt: y
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), k = ({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = ({
 				className: e,
 				postId: t
 			}) => {
@@ -449,7 +449,7 @@
 					hk: "1QaAgH"
 				}))
 			};
-			var I = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
+			var k = n("./src/reddit/components/Econ/Prediction/TournamentSnoosImage/index.tsx"),
 				w = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionPostCard/index.m.less"),
 				N = n.n(w);
 			const {
@@ -462,7 +462,7 @@
 				className: N.a.container
 			}, o.a.createElement(x.a, {
 				className: N.a.confetti
-			}), o.a.createElement(I.a, {
+			}), o.a.createElement(k.a, {
 				className: N.a.image
 			}), o.a.createElement("div", {
 				className: N.a.label
@@ -497,7 +497,7 @@
 				description: C._("May the odds be ever in your favor", null, {
 					hk: "1Brw70"
 				}),
-				cta: o.a.createElement(k, {
+				cta: o.a.createElement(I, {
 					className: N.a.cta,
 					postId: e
 				})
@@ -601,7 +601,7 @@
 						[x, O] = o.a.useState(!1),
 						[_, P] = o.a.useState(null),
 						[j, y] = o.a.useState(!1),
-						k = b < Date.now();
+						I = b < Date.now();
 					return {
 						isLoading: x,
 						isShowingVoteAnimation: j,
@@ -609,11 +609,11 @@
 							id: e
 						}) => e === _),
 						selectOption: e => {
-							k || E || P(e.id)
+							I || E || P(e.id)
 						},
 						predict: async t => {
 							if (t.currency === l.a.Coins && t.amount > r) return Object(U.promptUserToBuyMoreCoins)(), void c(G.b);
-							if (k) return u(q._("Error: Failed to make prediction. This prediction has already ended", null, {
+							if (I) return u(q._("Error: Failed to make prediction. This prediction has already ended", null, {
 								hk: "22UWEr"
 							})), void P(null);
 							if (!p || !_) throw new Error("Invalid arguments, optionId and pollId must be strings");
@@ -958,4 +958,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.6a6ced468abde533cfa8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.bdc50701aec049486a1e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.f94bb0afeb6e7ac13d1f.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.6bc6b2f5c5c309d3ca8b.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -1384,9 +1384,9 @@
 			}(a || (a = {}));
 			const i = (e, t) => {
 					if (t) {
-						const s = o.z(e, t.post.id),
-							a = o.G(e, t.post.id),
-							n = o.gb(e);
+						const s = o.B(e, t.post.id),
+							a = o.I(e, t.post.id),
+							n = o.ib(e);
 						if (t.post.authorInfo && a && (a.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const a = Object(r.j)(e, {
@@ -1401,7 +1401,7 @@
 						}
 					}
 					return {
-						subreddit: o.gb(e)
+						subreddit: o.ib(e)
 					}
 				},
 				c = (e, t, s) => {
@@ -1579,8 +1579,8 @@
 					source: "post",
 					action: "view",
 					noun: "post",
-					profile: o.P(t),
-					screen: o.Y(t),
+					profile: o.R(t),
+					screen: o.ab(t),
 					...i(t, e)
 				}),
 				A = e => t => {
@@ -1589,8 +1589,8 @@
 						source: "post",
 						action: "consume",
 						noun: "post",
-						profile: o.P(t),
-						screen: o.Y(t),
+						profile: o.R(t),
+						screen: o.ab(t),
 						...s
 					}
 				},
@@ -1611,7 +1611,7 @@
 					action: "click",
 					noun: "subscribe",
 					...i(t, e),
-					targetSubreddit: o.gb(t)
+					targetSubreddit: o.ib(t)
 				}),
 				S = (e, t) => s => ({
 					source: "stream_player",
@@ -1925,4 +1925,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.f94bb0afeb6e7ac13d1f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.6bc6b2f5c5c309d3ca8b.js.map

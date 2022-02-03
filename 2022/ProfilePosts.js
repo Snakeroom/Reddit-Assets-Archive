@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.a1ff0f118902ca163104.js
-// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.180d9c8a10de06875230.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -1326,8 +1326,8 @@
 							source: "layout_switch",
 							action: "click",
 							noun: e,
-							screen: Object(y.Y)(t),
-							subreddit: Object(y.gb)(t)
+							screen: Object(y.ab)(t),
+							subreddit: Object(y.ib)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -3138,11 +3138,11 @@
 							source: "trophy",
 							action: "click",
 							noun: "trophy",
-							...d.m(t),
+							...d.n(t),
 							actionInfo: Object(d.c)(t, {
 								paneName: "profile_about"
 							}),
-							profile: d.P(t),
+							profile: d.R(t),
 							trophy: e
 						}))({
 							id: e.id,
@@ -3270,7 +3270,7 @@
 						className: Object(c.a)(u.a.logIn),
 						onClick: () => {
 							n((() => e => ({
-								...Object(_.m)(e),
+								...Object(_.n)(e),
 								source: "xpromo",
 								action: "click",
 								noun: g
@@ -3282,7 +3282,7 @@
 						className: u.a.cancel,
 						onClick: () => {
 							n((() => e => ({
-								...Object(_.m)(e),
+								...Object(_.n)(e),
 								source: "xpromo",
 								action: "dismiss",
 								noun: g
@@ -3315,7 +3315,7 @@
 					const t = Object(b.b)();
 					s.a.useEffect(() => {
 						t((() => e => ({
-							...Object(_.m)(e),
+							...Object(_.n)(e),
 							source: "xpromo",
 							action: "view",
 							noun: g
@@ -4205,4 +4205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.a1ff0f118902ca163104.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.180d9c8a10de06875230.js.map

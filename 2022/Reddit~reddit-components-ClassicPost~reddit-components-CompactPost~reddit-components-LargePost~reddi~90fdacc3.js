@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.bc5bce1bd8338759ede0.js
-// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.f235f01ddac26d11804f.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -2432,35 +2432,35 @@
 					source: "post",
 					action: "click",
 					noun: "post_flair",
-					...s.m(n),
+					...s.n(n),
 					actionInfo: s.c(n),
 					correlationId: Object(r.c)(r.a.SearchResults),
-					post: s.G(n, e),
+					post: s.I(n, e),
 					search: {
-						...s.K(n, t),
+						...s.M(n, t),
 						query: `flair_name:'${t.postFlairName}'`,
-						queryId: s.ab(n, r.a.SearchResults)
+						queryId: s.cb(n, r.a.SearchResults)
 					},
-					subreddit: s.gb(n)
+					subreddit: s.ib(n)
 				}),
 				a = e => t => ({
 					source: "post_flair_widget",
 					action: "click",
 					noun: "post_flair_search",
-					...s.m(t),
+					...s.n(t),
 					actionInfo: s.c(t),
 					correlationId: Object(r.c)(r.a.SearchResults),
-					search: s.K(t, e),
-					subreddit: s.gb(t)
+					search: s.M(t, e),
+					subreddit: s.ib(t)
 				}),
 				c = e => t => {
 					const n = Object(o.g)(e);
 					return {
-						...s.m(t),
+						...s.n(t),
 						action: "click",
 						noun: "post_flair",
 						source: "post_flair_widget",
-						subreddit: s.gb(t),
+						subreddit: s.ib(t),
 						postFlair: {
 							id: e.templateId,
 							title: n
@@ -2468,20 +2468,20 @@
 					}
 				},
 				l = () => e => ({
-					...s.m(e),
+					...s.n(e),
 					action: "click",
 					noun: "overflow",
 					source: "post_flair_widget",
-					subreddit: s.gb(e)
+					subreddit: s.ib(e)
 				}),
 				d = e => t => {
 					const n = Object(o.g)(e);
 					return {
-						...s.m(t),
+						...s.n(t),
 						action: "click",
 						noun: "clear",
 						source: "post_flair_widget",
-						subreddit: s.gb(t),
+						subreddit: s.ib(t),
 						postFlair: {
 							id: e.templateId,
 							title: n
@@ -2490,13 +2490,13 @@
 				},
 				u = (e, t) => n => {
 					const i = Object(o.g)(e),
-						a = s.G(n, t);
+						a = s.I(n, t);
 					return {
-						...s.m(n),
+						...s.n(n),
 						action: "click",
 						noun: "post_flair",
 						source: "post",
-						subreddit: s.gb(n),
+						subreddit: s.ib(n),
 						postFlair: {
 							id: e.templateId,
 							title: i
@@ -2508,10 +2508,10 @@
 							subredditName: a ? a.subredditName : void 0,
 							postFlairName: i,
 							originElement: "post_flair",
-							queryId: s.ab(n, r.a.SearchResults),
-							originPageType: n.platform.currentPage ? s.t(n.platform.currentPage) : void 0
+							queryId: s.cb(n, r.a.SearchResults),
+							originPageType: n.platform.currentPage ? s.v(n.platform.currentPage) : void 0
 						},
-						feed: s.p(n)
+						feed: s.q(n)
 					}
 				}
 		},
@@ -2571,10 +2571,10 @@
 			var r = n("./src/reddit/models/ScheduledPost/index.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
 			const o = e => ({
-					...s.m(e),
-					screen: s.Y(e),
-					subreddit: s.gb(e),
-					userSubreddit: s.qb(e)
+					...s.n(e),
+					screen: s.ab(e),
+					subreddit: s.ib(e),
+					userSubreddit: s.sb(e)
 				}),
 				i = e => ({
 					id: e.id,
@@ -3240,4 +3240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.bc5bce1bd8338759ede0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.f235f01ddac26d11804f.js.map

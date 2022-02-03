@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.cff20ef9803653e3f8ab.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.3c17f7e06e08b51ca2a0.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -156,14 +156,14 @@
 				O = n("./src/reddit/models/Toast/index.ts"),
 				k = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				E = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
-				g = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx");
+				y = n("./src/reddit/components/PostCreationForm/Prompt/PromptModal.tsx");
 
-			function y({
+			function g({
 				isEnding: e,
 				onClose: t,
 				onConfirm: n
 			}) {
-				return c.a.createElement(g.a, {
+				return c.a.createElement(y.a, {
 					titleText: o.fbt._("End Tournament?", null, {
 						hk: "3tTAeq"
 					}),
@@ -228,7 +228,7 @@
 					n = Object(x.a)(),
 					[u, m] = Object(r.useState)(""),
 					[b, h] = Object(r.useState)(!1),
-					[g, C] = Object(r.useState)(!1),
+					[y, C] = Object(r.useState)(!1),
 					[v, P] = Object(r.useState)(!1),
 					[T, N] = Object(r.useState)(null),
 					{
@@ -323,8 +323,8 @@
 					onClick: M
 				}, o.fbt._("End", null, {
 					hk: "HWN7f"
-				})), v && c.a.createElement(y, {
-					isEnding: g,
+				})), v && c.a.createElement(g, {
+					isEnding: y,
 					onClose: () => {
 						P(!1)
 					},
@@ -385,9 +385,9 @@
 			})), n.d(t, "k", (function() {
 				return E
 			})), n.d(t, "i", (function() {
-				return g
-			})), n.d(t, "r", (function() {
 				return y
+			})), n.d(t, "r", (function() {
+				return g
 			})), n.d(t, "f", (function() {
 				return C
 			}));
@@ -396,19 +396,19 @@
 			const c = "poll",
 				s = "predictions",
 				i = e => ({
-					...Object(r.m)(e),
+					...Object(r.n)(e),
 					source: c,
 					action: "select",
 					noun: "poll_option"
 				}),
 				a = e => ({
-					...Object(r.m)(e),
+					...Object(r.n)(e),
 					source: c,
 					action: "select",
 					noun: "prediction_option"
 				}),
 				d = e => ({
-					...Object(r.m)(e),
+					...Object(r.n)(e),
 					source: c,
 					action: "view",
 					noun: "predict_option_modal"
@@ -418,11 +418,11 @@
 					selectedNumberCoins: t,
 					totalStakeAmount: n
 				}) => o => ({
-					...Object(r.m)(o),
+					...Object(r.n)(o),
 					source: c,
 					action: "confirm",
 					noun: "predict",
-					poll: Object(r.F)(o, e, !1, void 0, t),
+					poll: Object(r.H)(o, e, !1, void 0, t),
 					goldPurchase: {
 						numberCoins: n
 					}
@@ -431,11 +431,11 @@
 					pollId: e,
 					selectedNumberTokens: t
 				}) => n => ({
-					...Object(r.m)(n),
+					...Object(r.n)(n),
 					source: c,
 					action: "confirm",
 					noun: "predict",
-					poll: Object(r.F)(n, e, !1, void 0, void 0, t)
+					poll: Object(r.H)(n, e, !1, void 0, void 0, t)
 				}),
 				m = ({
 					pollId: e,
@@ -445,15 +445,15 @@
 					const i = t === o.a.Coins ? n : void 0,
 						a = t === o.a.Tokens ? n : void 0;
 					return {
-						...Object(r.m)(s),
+						...Object(r.n)(s),
 						source: c,
 						action: "close",
 						noun: "prediction_modal",
-						poll: Object(r.F)(s, e, !1, i, a)
+						poll: Object(r.H)(s, e, !1, i, a)
 					}
 				},
 				b = e => ({
-					...Object(r.m)(e),
+					...Object(r.n)(e),
 					source: c,
 					action: "click",
 					noun: "add_coins"
@@ -461,7 +461,7 @@
 				p = ({
 					targetUserId: e
 				}) => t => ({
-					...Object(r.m)(t),
+					...Object(r.n)(t),
 					source: s,
 					action: "click",
 					noun: "leaderboard_profile",
@@ -472,7 +472,7 @@
 				h = ({
 					pageType: e
 				}) => t => ({
-					...Object(r.m)(t),
+					...Object(r.n)(t),
 					source: s,
 					action: "click",
 					noun: "tournament",
@@ -481,7 +481,7 @@
 					}
 				}),
 				f = () => e => ({
-					...Object(r.m)(e),
+					...Object(r.n)(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -490,19 +490,19 @@
 					}
 				}),
 				_ = () => e => ({
-					...Object(r.m)(e),
+					...Object(r.n)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
 				j = () => e => ({
-					...Object(r.m)(e),
+					...Object(r.n)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
 				x = e => t => ({
-					...Object(r.m)(t),
+					...Object(r.n)(t),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "enable_predictions",
@@ -513,47 +513,47 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(r.gb)(t)
+					subreddit: Object(r.ib)(t)
 				}),
 				O = () => e => ({
-					...Object(r.m)(e),
+					...Object(r.n)(e),
 					source: s,
 					action: "click",
 					noun: "next"
 				}),
 				k = () => e => ({
-					...Object(r.m)(e),
+					...Object(r.n)(e),
 					source: s,
 					action: "click",
 					noun: "add_more"
 				}),
 				E = () => e => ({
-					...Object(r.m)(e),
+					...Object(r.n)(e),
 					source: s,
 					action: "click",
 					noun: "start_tournament"
 				}),
-				g = () => e => ({
-					...Object(r.m)(e),
+				y = () => e => ({
+					...Object(r.n)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
-				y = () => e => ({
-					...Object(r.m)(e),
+				g = () => e => ({
+					...Object(r.n)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(r.gb)(e)
+					subreddit: Object(r.ib)(e)
 				}),
 				C = () => e => ({
-					...Object(r.m)(e),
+					...Object(r.n)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(r.gb)(e)
+					subreddit: Object(r.ib)(e)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.cff20ef9803653e3f8ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.3c17f7e06e08b51ca2a0.js.map

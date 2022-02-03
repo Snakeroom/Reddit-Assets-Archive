@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.8a6d6a69fe7721328e00.js
-// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.7135bda6439ac0da32c0.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/humanizeDate/index.ts": function(e, t, n) {
@@ -1625,8 +1625,8 @@
 			}));
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const o = (e, t) => ({
-					...Object(r.m)(t),
-					customFeed: Object(r.l)(t, e),
+					...Object(r.n)(t),
+					customFeed: Object(r.m)(t, e),
 					source: "custom_feeds"
 				}),
 				s = e => t => ({
@@ -1692,7 +1692,7 @@
 					source: e,
 					noun: "create_community_button",
 					action: "click",
-					...o.m(t),
+					...o.n(t),
 					actionInfo: o.c(t, {
 						settingValue: t.user.account && t.user.account.isMod ? "existing_mod" : "new_mod"
 					}),
@@ -1702,7 +1702,7 @@
 					source: "community_form",
 					noun: "save_community_button",
 					action: "click",
-					...o.m(s),
+					...o.n(s),
 					actionInfo: o.c(s, {
 						settingValue: e
 					}),
@@ -1721,7 +1721,7 @@
 					source: "community_form",
 					noun: "cancel",
 					action: "click",
-					...o.m(e),
+					...o.n(e),
 					actionInfo: o.c(e),
 					correlationId: Object(r.c)(r.a.SubredditCreation)
 				}),
@@ -1729,7 +1729,7 @@
 					source: "community_form",
 					noun: "error_message",
 					action: "view",
-					...o.m(n),
+					...o.n(n),
 					actionInfo: o.c(n, {
 						reason: e,
 						settingValue: t
@@ -1740,28 +1740,28 @@
 					source: "user_dropdown",
 					noun: "create_community",
 					action: "click",
-					...o.m(e),
+					...o.n(e),
 					actionInfo: o.c(e)
 				}),
 				l = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "view",
-					...o.m(e),
+					...o.n(e),
 					actionInfo: o.c(e)
 				}),
 				u = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "click",
-					...o.m(e),
+					...o.n(e),
 					actionInfo: o.c(e)
 				}),
 				m = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "dismiss",
-					...o.m(e),
+					...o.n(e),
 					actionInfo: o.c(e)
 				})
 		},
@@ -2038,4 +2038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.8a6d6a69fe7721328e00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.7135bda6439ac0da32c0.js.map

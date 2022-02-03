@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Comment.6cb6968b13cc95b9a8a6.js
-// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Comment.73e147a53f4e2b00235b.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Comment"], {
 		"./src/reddit/actions/gold/giveAward.ts": function(e, t, r) {
@@ -2166,11 +2166,11 @@
 			var s = r("./src/reddit/constants/tracking.ts"),
 				n = r("./src/reddit/selectors/telemetry.ts");
 			const o = () => e => ({
-				...Object(n.m)(e),
+				...Object(n.n)(e),
 				source: "post",
 				action: s.c.CLICK,
 				noun: "share_chat",
-				subreddit: Object(n.gb)(e)
+				subreddit: Object(n.ib)(e)
 			})
 		},
 		"./src/reddit/helpers/trackers/topAwarded.ts": function(e, t, r) {
@@ -2189,8 +2189,8 @@
 			const d = (e, t = {}) => ({
 					...Object(n.h)(e, t),
 					correlationId: Object(s.e)(s.a.GildingFlow, !1),
-					profile: a.P(e),
-					subreddit: a.gb(e)
+					profile: a.R(e),
+					subreddit: a.ib(e)
 				}),
 				i = e => t => ({
 					source: "post",
@@ -2905,4 +2905,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.6cb6968b13cc95b9a8a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.73e147a53f4e2b00235b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.487f42af45a4e2babf09.js
-// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.055b076a17a08cabdc4a.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -143,21 +143,21 @@
 				e.Apple = "apple", e.Google = "google", e.Reddit = "reddit"
 			}(f || (f = {}));
 			const C = () => e => ({
-					...Object(g.m)(e),
+					...Object(g.n)(e),
 					source: "popup",
 					action: "view",
 					noun: x,
 					actionInfo: Object(g.c)(e)
 				}),
 				h = () => e => ({
-					...Object(g.m)(e),
+					...Object(g.n)(e),
 					source: "popup",
 					action: "dismiss",
 					noun: x,
 					actionInfo: Object(g.c)(e)
 				}),
 				j = e => t => ({
-					...Object(g.m)(t),
+					...Object(g.n)(t),
 					source: "popup",
 					action: "click",
 					noun: x,
@@ -167,7 +167,7 @@
 					})
 				}),
 				E = () => e => ({
-					...Object(g.m)(e),
+					...Object(g.n)(e),
 					source: "popup",
 					action: "click",
 					noun: x,
@@ -443,4 +443,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.487f42af45a4e2babf09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.055b076a17a08cabdc4a.js.map

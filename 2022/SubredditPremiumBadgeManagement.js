@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.4c433decdd408e5d6a75.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.1b0a842f7384d184fc83.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBadgeManagement"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, a) {
@@ -1079,8 +1079,8 @@
 									action: "click",
 									noun: "badge_gallery_paypal_purchase",
 									correlationId: this.props.correlationId,
-									...p.m(e),
-									subreddit: p.gb(e)
+									...p.n(e),
+									subreddit: p.ib(e)
 								}))
 							},
 							onSuccess: () => this.props.onPaymentSuccessful()
@@ -1663,8 +1663,8 @@
 								source: "meta",
 								action: "click",
 								noun: "subscription_myBadges_open_learn_more",
-								...ye.m(e),
-								subreddit: ye.gb(e)
+								...ye.n(e),
+								subreddit: ye.ib(e)
 							})), e.onCloseModal()
 						}
 					}, g.fbt._("Learn More", null, {
@@ -1907,8 +1907,8 @@
 								source: "meta",
 								action: "click",
 								noun: "subscription_gallery_open_learn_more",
-								...ye.m(e),
-								subreddit: ye.gb(e)
+								...ye.n(e),
+								subreddit: ye.ib(e)
 							})), e.onCloseModal()
 						}
 					}, g.fbt._("Learn More", null, {
@@ -2831,4 +2831,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.4c433decdd408e5d6a75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBadgeManagement.1b0a842f7384d184fc83.js.map

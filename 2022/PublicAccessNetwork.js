@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.af8617f3255ae767c6f3.js
-// Retrieved at 2/3/2022, 3:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.7272d0fab78473352f5a.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./src/lib/focusVisible/index.js": function(e, t, s) {
@@ -3556,9 +3556,9 @@
 			}(o || (o = {}));
 			const i = (e, t) => {
 					if (t) {
-						const s = a.z(e, t.post.id),
-							o = a.G(e, t.post.id),
-							n = a.gb(e);
+						const s = a.B(e, t.post.id),
+							o = a.I(e, t.post.id),
+							n = a.ib(e);
 						if (t.post.authorInfo && o && (o.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const o = Object(r.j)(e, {
@@ -3573,7 +3573,7 @@
 						}
 					}
 					return {
-						subreddit: a.gb(e)
+						subreddit: a.ib(e)
 					}
 				},
 				d = (e, t, s) => {
@@ -3751,8 +3751,8 @@
 					source: "post",
 					action: "view",
 					noun: "post",
-					profile: a.P(t),
-					screen: a.Y(t),
+					profile: a.R(t),
+					screen: a.ab(t),
 					...i(t, e)
 				}),
 				R = e => t => {
@@ -3761,8 +3761,8 @@
 						source: "post",
 						action: "consume",
 						noun: "post",
-						profile: a.P(t),
-						screen: a.Y(t),
+						profile: a.R(t),
+						screen: a.ab(t),
 						...s
 					}
 				},
@@ -3783,7 +3783,7 @@
 					action: "click",
 					noun: "subscribe",
 					...i(t, e),
-					targetSubreddit: a.gb(t)
+					targetSubreddit: a.ib(t)
 				}),
 				P = (e, t) => s => ({
 					source: "stream_player",
@@ -3866,11 +3866,11 @@
 			var o = s("./src/reddit/constants/tracking.ts"),
 				n = s("./src/reddit/selectors/telemetry.ts");
 			const r = () => e => ({
-				...Object(n.m)(e),
+				...Object(n.n)(e),
 				source: "post",
 				action: o.c.CLICK,
 				noun: "share_chat",
-				subreddit: Object(n.gb)(e)
+				subreddit: Object(n.ib)(e)
 			})
 		},
 		"./src/reddit/icons/fonts/Gift/index.tsx": function(e, t, s) {
@@ -4423,9 +4423,9 @@
 							source: e,
 							action: "click",
 							noun: o,
-							post: s && Object(ge.G)(n, s),
-							screen: Object(ge.Y)(n),
-							subreddit: Object(ge.hb)(n, t)
+							post: s && Object(ge.I)(n, s),
+							screen: Object(ge.ab)(n),
+							subreddit: Object(ge.jb)(n, t)
 						})))("removal_reasons", this.props.subredditId, this.props.postId)
 					})
 				}
@@ -7217,4 +7217,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.af8617f3255ae767c6f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.7272d0fab78473352f5a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopicLinksContainer.618030ac269e246bca7f.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopicLinksContainer.c7e0bb7449369e994ccf.js
+// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopicLinksContainer"], {
 		"./src/reddit/components/IdCard/TopicLinksContainer/index.m.less": function(e, t, n) {
@@ -29,8 +29,8 @@
 				o = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				d = n("./src/reddit/controls/Button/index.tsx"),
 				l = n("./src/reddit/constants/tracking.ts"),
-				m = n("./src/reddit/selectors/telemetry.ts");
-			var p = n("./src/reddit/icons/svgs/Tag/index.tsx"),
+				p = n("./src/reddit/selectors/telemetry.ts");
+			var m = n("./src/reddit/icons/svgs/Tag/index.tsx"),
 				_ = n("./src/reddit/selectors/seo/topicLinks.ts"),
 				u = n("./src/reddit/selectors/subreddit.ts"),
 				L = n("./src/reddit/components/IdCard/TopicLinksContainer/index.m.less"),
@@ -46,7 +46,7 @@
 				}) => {
 					const n = Object(o.b)(),
 						s = Object(i.useCallback)(() => n((e => t => ({
-							...m.m(t),
+							...p.n(t),
 							action: l.c.CLICK,
 							noun: "link",
 							source: "subreddit_topic_link",
@@ -71,7 +71,7 @@
 				className: C.a.TopicsContainer
 			}, c.a.createElement("div", {
 				className: C.a.TopicListHeader
-			}, c.a.createElement(p.a, {
+			}, c.a.createElement(m.a, {
 				className: C.a.TagIcon,
 				key: "tag"
 			}), `${e.displayText} ${s.fbt._("topics",null,{hk:"2BYU7m"})}`), c.a.createElement("div", {
@@ -101,4 +101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopicLinksContainer.618030ac269e246bca7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopicLinksContainer.c7e0bb7449369e994ccf.js.map
