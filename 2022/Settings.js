@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.39a700fe816c1a49af0a.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.7d6153f1414c0a2cbd20.js
+// Retrieved at 2/4/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -6810,7 +6810,7 @@
 					className: R.a.tag
 				}, "r/"), a.a.createElement(f.a, {
 					className: e.isCreateCommunity ? R.a.input : void 0,
-					disabled: !1,
+					disabled: !!e.disabled,
 					onChange: e.onChange,
 					placeholder: e.placeholder,
 					maxLength: e.maxChars,
@@ -10454,8 +10454,9 @@
 			}), $n = Object(o.b)(Xn, e => ({
 				toggleConfirmationModal: () => e(Object(C.i)("DspPage--Modal--Confirm")),
 				showSuccessToast: () => e(Object(T.f)({
-					text: Vn._("Form submitted!", null, {
-						hk: "1VuLdK"
+					kind: U.b.SuccessCommunityGreen,
+					text: Vn._("Form has been successfully submitted!", null, {
+						hk: "1ve90A"
 					})
 				})),
 				showErrorToast: () => e(Object(T.d)())
@@ -10470,16 +10471,20 @@
 							this.setState({
 								firstName: t.body.submission.first_name,
 								lastName: t.body.submission.last_name,
-								email: t.body.submission.email
+								email: t.body.submission.email,
+								isTermsAgreed: !0,
+								isResident: !0,
+								hasBeenSubmitted: !0
+							}, () => {
+								this.setState({
+									isLoading: !1
+								})
 							})
-						}
+						} else this.setState({
+							isLoading: !1
+						})
 					}, this.onSubmitClick = async () => {
-						await this.hasBeenSubmitted() ? this.props.toggleConfirmationModal() : this.submitForm()
-					}, this.hasBeenSubmitted = async () => {
-						const {
-							apiContext: e
-						} = this.props, t = e(), n = await Qn(t);
-						return !(!n.ok || !n.body || n.body.status !== Un.Submitted)
+						this.state.hasBeenSubmitted ? this.props.toggleConfirmationModal() : this.submitForm()
 					}, this.submitForm = async () => {
 						const {
 							firstName: e,
@@ -10489,9 +10494,11 @@
 						(await qn(this.props.apiContext(), e, t, n)).ok ? this.props.showSuccessToast() : this.props.showErrorToast()
 					}, this.onFirstNameChange = e => this.setState({
 						firstName: e.target.value
-					}), this.validateEmail = () => Object(A.a)(this.state.email, !0) ? null : Vn._("Invalid email address", null, {
-						hk: "9MRtH"
-					}), this.validateFirstName = () => {
+					}), this.validateEmail = () => {
+						return /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(this.state.email) ? null : Vn._("Invalid email address", null, {
+							hk: "9MRtH"
+						})
+					}, this.validateFirstName = () => {
 						return /^[^0-9_!¡?÷?¿/\\+=@#$%ˆ&*(){}|~<>;:[\]]+$/.test(this.state.firstName) ? null : Vn._("Invalid first name", null, {
 							hk: "1UxhhQ"
 						})
@@ -10527,7 +10534,9 @@
 						isTermsAgreed: !1,
 						firstNameError: null,
 						lastNameError: null,
-						emailError: null
+						emailError: null,
+						hasBeenSubmitted: !1,
+						isLoading: !0
 					}
 				}
 				componentDidMount() {
@@ -10561,7 +10570,8 @@
 						onBlur: this.onFirstNameBlur,
 						onChange: this.onFirstNameChange,
 						placeholder: e,
-						value: s
+						value: s,
+						disabled: this.state.isLoading
 					}), c && r.a.createElement(Dn.c, {
 						className: Yn.a.formError
 					}, c), r.a.createElement(ee.e, {
@@ -10573,7 +10583,8 @@
 						onBlur: this.onLastNameBlur,
 						onChange: this.onLastNameChange,
 						placeholder: t,
-						value: a
+						value: a,
+						disabled: this.state.isLoading
 					}), d && r.a.createElement(Dn.c, {
 						className: Yn.a.formError
 					}, d), r.a.createElement(ee.e, {
@@ -10585,7 +10596,8 @@
 						onBlur: this.onEmailBlur,
 						onChange: this.onEmailChange,
 						placeholder: n,
-						value: o
+						value: o,
+						disabled: this.state.isLoading
 					}), m && r.a.createElement(Dn.c, {
 						className: Yn.a.formError
 					}, m), r.a.createElement(ee.p, {
@@ -10593,7 +10605,8 @@
 							hk: "mDWOn"
 						}),
 						on: i,
-						onClick: this.handleToggleIsResident
+						onClick: this.handleToggleIsResident,
+						disabled: this.state.isLoading
 					}), r.a.createElement(ee.p, {
 						label: Vn._("I agree to the terms below", null, {
 							hk: "4ha1OS"
@@ -10602,13 +10615,16 @@
 						subtext: Vn._("Terms & Conditions", null, {
 							hk: "1xE2JX"
 						}),
-						onClick: this.handleToggleIsTermsAgreed
+						onClick: this.handleToggleIsTermsAgreed,
+						disabled: this.state.isLoading
 					}), r.a.createElement(S.a, {
 						className: Yn.a.submitButton,
 						type: "submit",
 						onClick: this.onSubmitClick,
 						disabled: !(i && l && !d && !m && !c)
-					}, Vn._("Submit", null, {
+					}, this.state.hasBeenSubmitted ? Vn._("Update", null, {
+						hk: "48IUi4"
+					}) : Vn._("Submit", null, {
 						hk: "4aU3dh"
 					})), this.props.isConfirmModalOpen && r.a.createElement(Rn.a, {
 						headerText: Vn._("Confirm re-submission", null, {
@@ -12734,4 +12750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.39a700fe816c1a49af0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.7d6153f1414c0a2cbd20.js.map

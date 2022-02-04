@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.31e530fad5bc4bc41665.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.8b94088dc06443ba018a.js
+// Retrieved at 2/4/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal", "OnboardingActions"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2443,7 +2443,7 @@
 					className: D.a.tag
 				}, "r/"), a.a.createElement(g.a, {
 					className: e.isCreateCommunity ? D.a.input : void 0,
-					disabled: !1,
+					disabled: !!e.disabled,
 					onChange: e.onChange,
 					placeholder: e.placeholder,
 					maxLength: e.maxChars,
@@ -3392,4 +3392,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.31e530fad5bc4bc41665.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.8b94088dc06443ba018a.js.map
