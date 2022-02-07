@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f06049f3755eae2f0f60.js
-// Retrieved at 2/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c21c080f4a9be9900916.js
+// Retrieved at 2/7/2022, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("157594"),
+				buildNumber: Object(r.c)("157595"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1644262296"),
+				buildTimestamp: Object(r.b)("1644263931"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5526,8 +5526,8 @@
 			var n = i("./src/lib/isFakeSubreddit/index.ts"),
 				r = i("./src/reddit/constants/page.ts");
 			const s = (e, t = !0) => {
-					const i = (e => e.map(e => "/:countryCode([a-z]{2})" + e))(e),
-						n = (e => e.map(e => "/:countryCode([a-z]{2})/:languageCode([a-z]{2})" + e))(e);
+					const i = (e => e.map(e => "/:languageCode([a-z]{2})" + e))(e),
+						n = (e => e.map(e => "/:languageCode([a-z]{2})-:countryCode([a-z]{2})" + e))(e);
 					return t ? [...n, ...i, ...e] : [...n, ...i]
 				},
 				o = e => {
@@ -5535,13 +5535,19 @@
 						subredditName: t,
 						countryCode: i,
 						languageCode: s
-					} = e, o = Object(n.c)(t, i, s), d = Object(n.b)(t, i, s);
+					} = e, o = Object(n.c)(t, {
+						countryCode: i,
+						languageCode: s
+					}), d = Object(n.b)(t, {
+						countryCode: i,
+						languageCode: s
+					});
 					let a = t;
 					return o && (a = r.d.Popular), d && (a = r.d.All), a
 				},
 				d = (e, t, i) => {
 					let n = "";
-					return t && (n += `/${t}`, n += i ? `/${i}` : ""), n + e
+					return i && (n += `/${i}`, n += t ? `-${t}` : ""), n + e
 				}
 		},
 		"./src/lib/createSignature/index.ts": function(e, t, i) {
@@ -6045,14 +6051,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c29f46752ccec7ade3be069457f2d7f25f3a97441-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c4c2f8bdeb035d4f71c2def7d0d71e1c63efde190-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "29f46752ccec7ade3be069457f2d7f25f3a97441-production",
+						release: "4c2f8bdeb035d4f71c2def7d0d71e1c63efde190-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6251,21 +6257,21 @@
 				r = i("./src/reddit/constants/page.ts");
 			const s = [r.b, r.d.Frontpage],
 				o = [...s, r.d.Mod, r.d.Friends, r.d.Topic].concat(["random", "randnsfw", "myrandom"]),
-				d = (e, t, i) => {
-					const s = e.toLowerCase();
-					return t ? Object(n.d)(s, t, i) : s === r.g
+				d = (e, t) => {
+					const i = e.toLowerCase();
+					return (null == t ? void 0 : t.languageCode) ? Object(n.d)(i, (null == t ? void 0 : t.languageCode) || "", (null == t ? void 0 : t.countryCode) || "") : i === r.g
 				},
-				a = (e, t, i) => {
-					const s = e.toLowerCase();
-					return t ? Object(n.c)(s, t, i) : s === r.a
+				a = (e, t) => {
+					const i = e.toLowerCase();
+					return (null == t ? void 0 : t.languageCode) ? Object(n.c)(i, (null == t ? void 0 : t.languageCode) || "", (null == t ? void 0 : t.countryCode) || "") : i === r.a
 				};
-			t.a = (e, t, i) => {
-				const n = e.toLowerCase(),
-					r = d(n, t, i),
-					l = a(n, t, i),
-					u = s.includes(n),
-					c = !t && o.includes(n);
-				return l || r || u || c || n.indexOf("+") > -1 || n.indexOf("-") > -1
+			t.a = (e, t) => {
+				const i = e.toLowerCase(),
+					n = d(i, t),
+					r = a(i, t),
+					l = s.includes(i),
+					u = !(null == t ? void 0 : t.languageCode) && o.includes(i);
+				return r || n || l || u || i.indexOf("+") > -1 || i.indexOf("-") > -1
 			}
 		},
 		"./src/lib/isPinnedAdminPost/index.ts": function(e, t, i) {
@@ -6569,7 +6575,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "29f46752ccec7ade3be069457f2d7f25f3a97441-production",
+						releaseClient: "4c2f8bdeb035d4f71c2def7d0d71e1c63efde190-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -6963,7 +6969,7 @@
 			const s = e => e.includes("--[sort:");
 			t.a = (e, t, i = {}) => {
 				let s = e || "";
-				return Object(r.a)(s) && Object(n.a)(s) && (s = s.split("+").sort().join("+")), i.countryCode && (s += `--[cc:'${i.countryCode}']`), t && (s += `--[sort:'${t}']`), i.after && (s += `--[after:'${i.after}']`), i.before && (s += `--[before:'${i.before}']`), i.category && (s += `--[category:'${i.category}']`), i.categoryId && (s += `--[category:'${i.categoryId}']`), i.t && (s += `--[t:'${i.t}']`), i.geo_filter && (s += `--[geo_filter:'${i.geo_filter}']`), i.isOtherDiscussions && (s += "--[onOtherDiscussions]"), i.subredditName && (s += `--[subredditName:'${i.subredditName}']`), i.topicSlug && (s += `--[topic:'${i.topicSlug}']`), s.toLowerCase()
+				return Object(r.a)(s) && Object(n.a)(s) && (s = s.split("+").sort().join("+")), i.languageCode && (i.countryCode ? s += `--[cc:'${i.languageCode}-${i.countryCode}']` : s += `--[cc:'${i.languageCode}']`), t && (s += `--[sort:'${t}']`), i.after && (s += `--[after:'${i.after}']`), i.before && (s += `--[before:'${i.before}']`), i.category && (s += `--[category:'${i.category}']`), i.categoryId && (s += `--[category:'${i.categoryId}']`), i.t && (s += `--[t:'${i.t}']`), i.geo_filter && (s += `--[geo_filter:'${i.geo_filter}']`), i.isOtherDiscussions && (s += "--[onOtherDiscussions]"), i.subredditName && (s += `--[subredditName:'${i.subredditName}']`), i.topicSlug && (s += `--[topic:'${i.topicSlug}']`), s.toLowerCase()
 			}
 		},
 		"./src/lib/makePostCreationPageKey/index.ts": function(e, t, i) {
@@ -18395,7 +18401,10 @@
 						n = q(e, {
 							pageLayer: t
 						});
-					return !!n && Object(d.a)(n, i.countryCode, i.languageCode)
+					return !!n && Object(d.a)(n, {
+						countryCode: null == i ? void 0 : i.countryCode,
+						languageCode: null == i ? void 0 : i.languageCode
+					})
 				},
 				H = (e, {
 					pageLayer: t
@@ -18406,7 +18415,10 @@
 						n = B(t),
 						r = Object(k.K)(e),
 						s = Object(C.b)(e),
-						o = !!i && Object(d.c)(i, s.countryCode, s.languageCode);
+						o = !!i && Object(d.c)(i, {
+							countryCode: s.countryCode,
+							languageCode: s.languageCode
+						});
 					return i === _.g || o || !r && n
 				},
 				W = (e, {
@@ -39125,11 +39137,16 @@
 					});
 					return i ? i.url : `/user/${t}/`
 				},
-				E = (e, t, i, n) => {
-					const r = t.toLowerCase(),
-						o = i ? `/${i}` : "",
-						d = n ? `/${n}` : "";
-					return e ? e.url : Object(s.a)(r, i, n) ? o + d + "/r/" + r + "/" : null
+				E = (e, t, i) => {
+					const n = (null == i ? void 0 : i.languageCode) || "",
+						r = (null == i ? void 0 : i.countryCode) || "",
+						o = t.toLowerCase(),
+						d = n ? `/${n}` : "",
+						a = r ? `-${r}` : "";
+					return e ? e.url : Object(s.a)(o, {
+						countryCode: r,
+						languageCode: n
+					}) ? d + a + "/r/" + o + "/" : null
 				},
 				T = (e, t) => {
 					if (!t.subredditName) return null;
@@ -39137,7 +39154,10 @@
 						n = F(e, {
 							subredditId: i
 						});
-					return E(n, t.subredditName, t.countryCode, t.languageCode)
+					return E(n, t.subredditName, {
+						languageCode: t.languageCode,
+						countryCode: t.countryCode
+					})
 				},
 				S = (e, t) => {
 					const i = F(e, {
@@ -46648,4 +46668,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f06049f3755eae2f0f60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c21c080f4a9be9900916.js.map

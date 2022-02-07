@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.aa32b043d40fc2d0ca82.js
-// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.eb31598812f6359c71f7.js
+// Retrieved at 2/7/2022, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -3075,9 +3075,18 @@
 						countryCode: z,
 						languageCode: $
 					} = (null == H ? void 0 : H.urlParams) || {},
-					X = Object(p.a)(t, z, $),
-					ie = Object(p.c)(t, z, $),
-					se = (Object(p.b)(t, z, $) || ie) && F.posts.recent.length ? {
+					X = Object(p.a)(t, {
+						countryCode: z,
+						languageCode: $
+					}),
+					ie = Object(p.c)(t, {
+						countryCode: z,
+						languageCode: $
+					}),
+					se = (Object(p.b)(t, {
+						countryCode: z,
+						languageCode: $
+					}) || ie) && F.posts.recent.length ? {
 						...r,
 						recentPostIds: F.posts.recent
 					} : r;
@@ -3262,7 +3271,9 @@
 					}
 				} else {
 					const i = Ee.ok ? void 0 : Ee.error;
-					if (Object(Ie.a)(i ? `${Ee.status}:${i.type}` : "Failed to load post listing for subreddit")(c()), 403 === Ee.status || 404 === Ee.status || 451 === Ee.status) return void d(Le(Ee, t));
+					if (Object(Ie.a)(i ? `${Ee.status}:${i.type}` : n.fbt._("Failed to load post listing for subreddit", null, {
+							hk: "3XZtlU"
+						}))(c()), 403 === Ee.status || 404 === Ee.status || 451 === Ee.status) return void d(Le(Ee, t));
 					d(Me({
 						error: !Ee.ok && Ee.error || {
 							type: u.I.NOT_FOUND_ERROR
@@ -3288,7 +3299,10 @@
 					listingKey: o
 				}).length > 0 || await n(Qe(o, e, t, r))
 			}, We = (e, t, r, n) => {
-				if (Object(p.a)(t, r, n)) {
+				if (Object(p.a)(t, {
+						countryCode: r,
+						languageCode: n
+					})) {
 					if (Object(b.a)(t)) {
 						return Object(Ce.a)(e, {
 							listingName: t
@@ -3386,7 +3400,10 @@
 						};
 					await r(Qe(e, f, t, !1))
 				}
-				if (L = L || Object(G.C)(n(), f), !Object(he.a)(y, L) && !Object(p.a)(f, d, b)) {
+				if (L = L || Object(G.C)(n(), f), !Object(he.a)(y, L) && !Object(p.a)(f, {
+						countryCode: d,
+						languageCode: b
+					})) {
 					const e = Object(O.i)(() => r(Object(I.e)(f)), {
 						name: "getTopCommunityFlair",
 						page: q,
@@ -11908,4 +11925,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.aa32b043d40fc2d0ca82.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.eb31598812f6359c71f7.js.map
