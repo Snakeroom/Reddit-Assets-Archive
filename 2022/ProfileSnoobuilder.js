@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.6b6c9e1a304c78da4bef.js
-// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.385515fa45e4f42aacd5.js
+// Retrieved at 2/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -987,32 +987,34 @@
 				s = n("./src/lib/fastdom/index.ts"),
 				i = n("./node_modules/lodash/isEqual.js"),
 				a = n.n(i),
-				o = n("./node_modules/react/index.js"),
+				o = n("./node_modules/lodash/throttle.js"),
 				c = n.n(o),
-				l = n("./node_modules/react-redux/es/index.js"),
-				d = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				u = n("./node_modules/reselect/es/index.js"),
-				m = n("./src/config.ts"),
-				p = n("./src/higherOrderComponents/asTooltip.tsx"),
-				h = n("./src/lib/classNames/index.ts"),
-				_ = n("./src/lib/constants/index.ts"),
-				b = n("./src/reddit/actions/tooltip.ts"),
-				f = n("./src/reddit/components/LayoutNavigation/ConsiderateNav.tsx"),
-				g = n("./src/reddit/constants/componentSizes.ts"),
-				x = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				y = n("./src/reddit/controls/Dropdown/index.tsx"),
-				v = n("./src/reddit/controls/InternalLink/index.tsx"),
-				E = n("./src/reddit/icons/fonts/index.tsx"),
-				k = n("./src/reddit/models/Profile/index.ts"),
-				w = n("./src/reddit/featureFlags/index.ts"),
-				C = n("./src/reddit/selectors/tooltip.ts"),
-				F = n("./src/reddit/selectors/user.ts"),
-				j = n("./src/reddit/selectors/userPrefs.ts"),
-				S = n("./src/reddit/components/ProfileNavMenu/index.m.less"),
-				D = n.n(S);
+				l = n("./node_modules/react/index.js"),
+				d = n.n(l),
+				u = n("./node_modules/react-redux/es/index.js"),
+				m = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				p = n("./node_modules/reselect/es/index.js"),
+				h = n("./src/config.ts"),
+				_ = n("./src/higherOrderComponents/asTooltip.tsx"),
+				b = n("./src/lib/classNames/index.ts"),
+				f = n("./src/lib/constants/index.ts"),
+				g = n("./src/reddit/actions/tooltip.ts"),
+				x = n("./src/reddit/components/LayoutNavigation/ConsiderateNav.tsx"),
+				y = n("./src/reddit/constants/componentSizes.ts"),
+				v = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				E = n("./src/reddit/controls/Dropdown/index.tsx"),
+				k = n("./src/reddit/controls/InternalLink/index.tsx"),
+				w = n("./src/reddit/icons/fonts/index.tsx"),
+				C = n("./src/reddit/models/Profile/index.ts"),
+				F = n("./src/reddit/featureFlags/index.ts"),
+				j = n("./src/reddit/selectors/tooltip.ts"),
+				S = n("./src/reddit/selectors/user.ts"),
+				D = n("./src/reddit/selectors/userPrefs.ts"),
+				N = n("./src/reddit/components/ProfileNavMenu/index.m.less"),
+				L = n.n(N);
 
-			function N() {
-				return (N = Object.assign || function(e) {
+			function O() {
+				return (O = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1020,22 +1022,22 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const L = Object(x.u)({
-					routeName: x.Y,
-					privateListingType: x.j
+			const z = Object(v.u)({
+					routeName: v.Y,
+					privateListingType: v.j
 				}),
-				O = Object(u.c)({
-					isDropdownMenuOpen: e => Object(C.a)(e) === P,
-					isOwnProfile: (e, t) => Object(F.Q)(e, t.profileName),
-					isSnoovatar30Enabled: w.d.snoovatar30,
-					isSubscriptionsPinned: j.b
+				P = Object(p.c)({
+					isDropdownMenuOpen: e => Object(j.a)(e) === B,
+					isOwnProfile: (e, t) => Object(S.Q)(e, t.profileName),
+					isSnoovatar30Enabled: F.d.snoovatar30,
+					isSubscriptionsPinned: D.b
 				}),
-				z = Object(p.a)(y.a),
-				P = "profile-nav-menu-tooltip",
-				A = g.g + g.r + g.q;
-			var B;
-			t.a = L(Object(l.b)(O, e => ({
-					toggleTooltip: t => e(Object(b.h)({
+				A = Object(_.a)(E.a),
+				B = "profile-nav-menu-tooltip",
+				R = y.g + y.r + y.q;
+			var M;
+			t.a = z(Object(u.b)(P, e => ({
+					toggleTooltip: t => e(Object(g.h)({
 						tooltipId: t
 					}))
 				}))(({
@@ -1044,104 +1046,110 @@
 					privateListingType: n,
 					profileName: r,
 					routeName: i,
-					toggleTooltip: l,
-					isSnoovatar30Enabled: d,
-					isSubscriptionsPinned: u
+					toggleTooltip: o,
+					isSnoovatar30Enabled: u,
+					isSubscriptionsPinned: m
 				}) => {
-					const [m, p] = Object(o.useState)(!1), _ = Object(o.useRef)(null), b = I({
-						profileName: r,
-						isOwnProfile: t,
-						routeName: i,
-						privateListingType: n,
-						isSnoovatar30Enabled: d
-					}), [x, y] = Object(o.useState)(b.filter(e => e.position === B.MENU)), [v, k] = Object(o.useState)([]), w = [], C = () => {
-						const e = document.documentElement.clientWidth - 2 * g.q,
-							t = e > A ? A : e;
-						let n = 42;
-						w.forEach(e => {
-							n += e.offsetWidth;
-							const r = b.find(t => t.text.toString().toLowerCase() === e.text);
-							r.position = n > t ? B.DROPDOWN : B.MENU
+					const [p, h] = Object(l.useState)(!1), _ = Object(l.useRef)(null), [f, g] = Object(l.useState)([]), [v, E] = Object(l.useState)([]);
+					return Object(l.useEffect)(() => {
+						const e = q({
+							profileName: r,
+							isOwnProfile: t,
+							routeName: i,
+							privateListingType: n,
+							isSnoovatar30Enabled: u
 						});
-						const r = b.filter(e => e.position === B.MENU);
-						y(e => a()(r, e) ? e : r);
-						const s = b.filter(e => e.position === B.DROPDOWN);
-						k(e => a()(s, e) ? e : s), p(s.length > 0)
-					};
-					return Object(o.useEffect)(() => (s.a.read(() => {
-						const e = _.current;
-						e && (e.childNodes.forEach((e, t) => {
-							w.push({
-								text: e.textContent.toLowerCase(),
-								offsetWidth: e.offsetWidth
-							})
-						}), C())
-					}), window.addEventListener("resize", C), () => {
-						window.removeEventListener("resize", C)
-					}), []), c.a.createElement("div", {
-						className: D.a.container
-					}, c.a.createElement(f.a, {
+						g(e.filter(e => e.position === M.MENU));
+						const o = [],
+							l = c()(() => {
+								const t = document.documentElement.clientWidth - 2 * y.q,
+									n = t > R ? R : t;
+								let r = 42;
+								o.forEach(t => {
+									r += t.offsetWidth;
+									const s = e.find(e => e.text.toString().toLowerCase() === t.text);
+									s.position = r > n ? M.DROPDOWN : M.MENU
+								});
+								const s = e.filter(e => e.position === M.MENU);
+								g(e => a()(s, e) ? e : s);
+								const i = e.filter(e => e.position === M.DROPDOWN);
+								E(e => a()(i, e) ? e : i), h(i.length > 0)
+							}, 50);
+						return s.a.read(() => {
+							const e = _.current;
+							e && (e.childNodes.forEach((e, t) => {
+								o.push({
+									text: e.textContent.toLowerCase(),
+									offsetWidth: e.offsetWidth
+								})
+							}), l())
+						}), window.addEventListener("resize", l), () => {
+							window.removeEventListener("resize", l)
+						}
+					}, [r, t, i, n, u]), d.a.createElement("div", {
+						className: L.a.container
+					}, d.a.createElement(x.a, {
 						bladeOpen: !1,
-						offsetLeft: u ? g.u : 0,
-						render: () => c.a.createElement(c.a.Fragment, null, c.a.createElement("div", {
-							className: D.a.menuContainer,
+						offsetLeft: m ? y.u : 0,
+						render: () => d.a.createElement(d.a.Fragment, null, d.a.createElement("div", {
+							className: L.a.menuContainer,
 							ref: _
-						}, x.map(e => c.a.createElement(R, N({}, e, {
+						}, f.map(e => d.a.createElement(I, O({}, e, {
 							key: e.key
-						})))), m && c.a.createElement("button", {
-							className: Object(h.a)(D.a.mainLink),
-							id: P,
-							onClick: () => l(P)
-						}, c.a.createElement(E.a, {
+						})))), p && d.a.createElement("button", {
+							className: Object(b.a)(L.a.mainLink),
+							id: B,
+							onClick: () => o(B)
+						}, d.a.createElement(w.a, {
 							name: "overflow_horizontal"
-						})), m && c.a.createElement(z, {
-							className: D.a.dropdown,
+						})), p && d.a.createElement(A, {
+							className: L.a.dropdown,
 							isOpen: e,
-							tooltipId: P
-						}, v.map(e => c.a.createElement(M, N({}, e, {
+							tooltipId: B
+						}, v.map(e => d.a.createElement(T, O({}, e, {
 							key: e.key
 						})))))
 					}))
 				})),
 				function(e) {
 					e.MENU = "menu", e.DROPDOWN = "dropdown"
-				}(B || (B = {}));
-			const R = ({
+				}(M || (M = {}));
+			const I = ({
 					isActive: e,
 					text: t,
 					url: n,
 					internal: r
-				}) => r ? c.a.createElement(v.a, {
-					className: Object(h.a)(D.a.mainLink, {
-						[D.a.isActive]: e
+				}) => r ? d.a.createElement(k.a, {
+					className: Object(b.a)(L.a.mainLink, {
+						[L.a.isActive]: e
 					}),
 					to: n
-				}, t) : c.a.createElement("a", {
-					className: Object(h.a)(D.a.mainLink, {
-						[D.a.isActive]: e
+				}, t) : d.a.createElement("a", {
+					className: Object(b.a)(L.a.mainLink, {
+						[L.a.isActive]: e
 					}),
 					href: n
 				}, t),
-				M = ({
+				T = ({
 					isActive: e,
 					internal: t,
 					url: n,
 					text: r
-				}) => t ? c.a.createElement(d.a, {
-					className: Object(h.a)(D.a.dropdownLink, {
-						[D.a.isActive]: e
+				}) => t ? d.a.createElement(m.a, {
+					className: Object(b.a)(L.a.dropdownLink, {
+						[L.a.isActive]: e
 					}),
 					to: n,
 					rel: "nofollow noopener noreferrer",
 					role: "listitem"
-				}, r) : c.a.createElement("a", {
-					className: Object(h.a)(D.a.dropdownLink),
+				}, r) : d.a.createElement("a", {
+					className: Object(b.a)(L.a.dropdownLink),
 					href: n,
 					rel: "nofollow noopener noreferrer",
 					role: "listitem",
 					target: "_blank"
 				}, r),
-				I = ({
+				q = ({
 					profileName: e,
 					isOwnProfile: t,
 					routeName: n,
@@ -1150,59 +1158,59 @@
 				}) => {
 					const a = t ? [{
 						internal: !0,
-						isActive: n === _.Mb.PROFILE_PRIVATE && s === k.b.Saved,
+						isActive: n === f.Mb.PROFILE_PRIVATE && s === C.b.Saved,
 						key: "profile.mainmenu.saved",
 						text: r.fbt._("Saved", null, {
 							hk: "2w1YRh"
 						}),
 						url: `/user/${e}/saved/`,
-						position: B.MENU
+						position: M.MENU
 					}, {
 						internal: !0,
-						isActive: n === _.Mb.PROFILE_PRIVATE && s === k.b.Hidden,
+						isActive: n === f.Mb.PROFILE_PRIVATE && s === C.b.Hidden,
 						key: "profile.mainmenu.hidden",
 						text: r.fbt._("Hidden", null, {
 							hk: "225tka"
 						}),
 						url: `/user/${e}/hidden/`,
-						position: B.MENU
+						position: M.MENU
 					}, {
 						internal: !0,
-						isActive: n === _.Mb.PROFILE_PRIVATE && s === k.b.Upvoted,
+						isActive: n === f.Mb.PROFILE_PRIVATE && s === C.b.Upvoted,
 						key: "profile.mainmenu.upvoted",
 						text: r.fbt._("Upvoted", null, {
 							hk: "RKwFZ"
 						}),
 						url: `/user/${e}/upvoted/`,
-						position: B.MENU
+						position: M.MENU
 					}, {
 						internal: !0,
-						isActive: n === _.Mb.PROFILE_PRIVATE && s === k.b.Downvoted,
+						isActive: n === f.Mb.PROFILE_PRIVATE && s === C.b.Downvoted,
 						key: "profile.mainmenu.downvoted",
 						text: r.fbt._("Downvoted", null, {
 							hk: "2F9IL4"
 						}),
 						url: `/user/${e}/downvoted/`,
-						position: B.MENU
+						position: M.MENU
 					}] : [];
 					t ? (a.push({
 						internal: !0,
-						isActive: n === _.Mb.PROFILE_PRIVATE && s === k.b.ReceivedGildings,
+						isActive: n === f.Mb.PROFILE_PRIVATE && s === C.b.ReceivedGildings,
 						key: "profile.mainmenu.receiverGildings",
 						text: r.fbt._("Awards received", null, {
 							hk: "iwLBV"
 						}),
 						url: `/user/${e}/gilded/`,
-						position: B.MENU
+						position: M.MENU
 					}), a.push({
 						internal: !0,
-						isActive: n === _.Mb.PROFILE_PRIVATE && s === k.b.GivenGildings,
+						isActive: n === f.Mb.PROFILE_PRIVATE && s === C.b.GivenGildings,
 						key: "profile.mainmenu.givenGildings",
 						text: r.fbt._("Awards given", null, {
 							hk: "2UPYZc"
 						}),
 						url: `/user/${e}/gilded/given/`,
-						position: B.MENU
+						position: M.MENU
 					})) : a.push({
 						internal: !1,
 						isActive: !1,
@@ -1210,46 +1218,46 @@
 						text: r.fbt._("Awards received (legacy)", null, {
 							hk: "1YgfYU"
 						}),
-						url: `${m.a.oldRedditUrl}/user/${e}/gilded/`,
-						position: B.MENU
+						url: `${h.a.oldRedditUrl}/user/${e}/gilded/`,
+						position: M.MENU
 					});
 					const o = i ? [{
 						internal: !0,
-						isActive: n === _.Mb.PROFILE_SNOOBUILDER,
+						isActive: n === f.Mb.PROFILE_SNOOBUILDER,
 						key: "profile.mainmenu.snoobuilder",
 						text: r.fbt._("Snoobuilder", null, {
 							hk: "3SSKff"
 						}),
 						url: `/user/${e}/snoo/`,
-						position: B.MENU
+						position: M.MENU
 					}] : [];
 					return [{
 						internal: !0,
-						isActive: n === _.Mb.PROFILE_OVERVIEW,
+						isActive: n === f.Mb.PROFILE_OVERVIEW,
 						key: "profile.mainmenu.overview",
 						text: r.fbt._("Overview", null, {
 							hk: "2IBbqy"
 						}),
 						url: `/user/${e}/`,
-						position: B.MENU
+						position: M.MENU
 					}, {
 						internal: !0,
-						isActive: n === _.Mb.PROFILE_POSTS,
+						isActive: n === f.Mb.PROFILE_POSTS,
 						key: "profile.mainmenu.posts",
 						text: r.fbt._("Posts", null, {
 							hk: "a1BoF"
 						}),
 						url: `/user/${e}/posts/`,
-						position: B.MENU
+						position: M.MENU
 					}, {
 						internal: !0,
-						isActive: n === _.Mb.PROFILE_COMMENTS,
+						isActive: n === f.Mb.PROFILE_COMMENTS,
 						key: "profile.mainmenu.comments",
 						text: r.fbt._("Comments", null, {
 							hk: "2VwjOc"
 						}),
 						url: `/user/${e}/comments/`,
-						position: B.MENU
+						position: M.MENU
 					}, ...o, ...a]
 				}
 		},
@@ -2422,4 +2430,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.6b6c9e1a304c78da4bef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.385515fa45e4f42aacd5.js.map
