@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.79b21f63cbd830328597.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.3ab2d247fa94fc53b5f7.js
+// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -127,8 +127,8 @@
 				N = n("./src/chat/models/Channel/index.ts"),
 				k = n("./src/chat/models/Channel/utils.ts"),
 				w = n("./src/chat/models/User/inviter.ts"),
-				T = n("./src/chat/models/User/member.ts");
-			var M = n("./src/chat/models/Sidebar/index.ts"),
+				M = n("./src/chat/models/User/member.ts");
+			var T = n("./src/chat/models/Sidebar/index.ts"),
 				A = n("./src/chat/selectors/channels.ts");
 			const L = (e, t) => {
 					const {
@@ -277,7 +277,7 @@
 					const {
 						channelId: a
 					} = e, s = e.type === N.b.Direct, c = e.channelState === O.b.JOINED;
-					!Object(A.h)(n(), e.channelId) && s && c && await t(Me({
+					!Object(A.h)(n(), e.channelId) && s && c && await t(Te({
 						[a]: e
 					})), t(Ie({
 						channelId: a
@@ -327,7 +327,7 @@
 					const a = n(),
 						s = e || Object(H.e)(a);
 					s && (await t(xe(s)), await F.a.markChannelAsRead(), t(Object(h.c)()))
-				}, Te = Object(o.a)(z), Me = Object(o.a)(G), Ae = Object(o.a)(V), Le = Object(o.a)(W), De = (e, t, n) => {
+				}, Me = Object(o.a)(z), Te = Object(o.a)(G), Ae = Object(o.a)(V), Le = Object(o.a)(W), De = (e, t, n) => {
 					const a = e.map(e => ({
 						user_id: e,
 						nickname: t[e].name
@@ -360,7 +360,7 @@
 							}
 						} = o;
 					if (i && l) {
-						a(Te());
+						a(Me());
 						const s = De(e, d, i);
 						if (s.length < 2) return;
 						const o = await Object(y.b)(r(), l, s, t);
@@ -387,14 +387,14 @@
 										lastMessage: void 0,
 										unreadMessageCount: e.unread_message_count,
 										unreadMentionCount: e.unread_mention_count,
-										members: Object(T.b)(e.members)
+										members: Object(M.b)(e.members)
 									}
 								}(o.body, O.b.JOINED),
 								{
 									channelId: t
 								} = e,
 								s = Object(S.getRedirectURL)(Object(S.channelUrl)(t));
-							m.sortedKeys.includes(t) ? (a(be(t)), a(Object(b.m)(t))) : h.sortedKeys.includes(t) ? (a(Object(c.b)(s)), a(Object(b.m)(t))) : (await a(Me({
+							m.sortedKeys.includes(t) ? (a(be(t)), a(Object(b.m)(t))) : h.sortedKeys.includes(t) ? (a(Object(c.b)(s)), a(Object(b.m)(t))) : (await a(Te({
 								[t]: e
 							})), a(Object(b.m)(t)), await a(Object(c.b)(s))), n && (await F.a.enterChannel(e), await a(Object(u.r)(t, n, E.c.TEXT)))
 						} else a(Ae()), a(Object(b.bb)(e));
@@ -422,7 +422,7 @@
 						if ((await Object(y.j)(a(), o, n, l)).body && d === O.a.INVITE_MEMBERS) {
 							t(Object(b.d)());
 							const e = Object(S.getRedirectURL)(Object(S.channelUrl)(Object(k.f)(l)));
-							t(Object(c.b)(e)), t(Object(m.e)(M.a.CHANNELS))
+							t(Object(c.b)(e)), t(Object(m.e)(T.a.CHANNELS))
 						} else Object(x.b)("Error inviting user to existing channel")
 					}
 				}, Be = (e, t) => async (n, a) => {
@@ -569,9 +569,9 @@
 			})), n.d(t, "d", (function() {
 				return w
 			})), n.d(t, "f", (function() {
-				return T
-			})), n.d(t, "e", (function() {
 				return M
+			})), n.d(t, "e", (function() {
+				return T
 			})), n.d(t, "g", (function() {
 				return A
 			})), n.d(t, "i", (function() {
@@ -641,10 +641,10 @@
 			}, w = () => async (e, t) => {
 				const n = Object(b.n)(t());
 				n && f.a.setMyCountPreference(n, d.c.Off).catch(m.b)
-			}, T = () => async (e, t) => {
+			}, M = () => async (e, t) => {
 				const n = Object(b.n)(t());
 				n && f.a.setMyCountPreference(n, d.c.All).catch(m.b)
-			}, M = () => async (e, t, {
+			}, T = () => async (e, t, {
 				apiContext: n
 			}) => {
 				const a = t(),
@@ -1027,7 +1027,7 @@
 		"./src/chat/actions/message/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return M
+				return T
 			})), n.d(t, "c", (function() {
 				return U
 			})), n.d(t, "o", (function() {
@@ -1122,14 +1122,14 @@
 				N = n("./src/chat/selectors/channels.ts"),
 				k = n("./src/chat/selectors/contacts.ts"),
 				w = n("./src/chat/selectors/messages.ts"),
-				T = n("./src/chat/singleton/SendbirdSDK.ts");
-			const M = "MESSAGE__ADD_ONE",
-				A = Object(o.a)(M),
+				M = n("./src/chat/singleton/SendbirdSDK.ts");
+			const T = "MESSAGE__ADD_ONE",
+				A = Object(o.a)(T),
 				L = (e, t, n) => async (a, s) => {
 					const c = s(),
 						r = Object(x.c)(n),
 						o = await D(t, c);
-					return T.a.addMessage(t, n, o).then(t => {
+					return M.a.addMessage(t, n, o).then(t => {
 						const n = {
 							[t.messageId]: t
 						};
@@ -1155,7 +1155,7 @@
 					return [...n.map(e => {
 						const n = Object(k.f)(t, e);
 						return n || a.push(e), n && n.id
-					}).filter(e => e), ...(a.length && s()(await Promise.all(a.slice(0, 3).map(e => T.a.searchMemberByName(e, !0)))) || []).map(e => e && e.id).filter(e => e)]
+					}).filter(e => e), ...(a.length && s()(await Promise.all(a.slice(0, 3).map(e => M.a.searchMemberByName(e, !0)))) || []).map(e => e && e.id).filter(e => e)]
 				}, U = "MESSAGE__ADD_PENDING_ONE", P = Object(o.a)(U), R = (e, t) => async (n, a, {
 					gqlContext: s
 				}) => {
@@ -1216,7 +1216,7 @@
 					if (!e.length) return;
 					for await (const c of e) {
 						const e = Object(N.h)(s(), c);
-						(null == e ? void 0 : e.channelId) && (await T.a.enterChannel(e), await a(F(c, t, n)))
+						(null == e ? void 0 : e.channelId) && (await M.a.enterChannel(e), await a(F(c, t, n)))
 					}
 					const r = Object(I.getRedirectURL)(Object(I.channelUrl)(e[e.length - 1]));
 					a(Object(c.b)(r))
@@ -1305,12 +1305,12 @@
 				}, te = "MESSAGE__SET_MESSAGE_LIST_IS_LOADED", ne = Object(o.a)(te), ae = "MESSAGE__DELETE_ONE", se = Object(o.a)(ae), ce = e => async (t, n) => {
 					const a = n(),
 						s = Object(w.b)(a, e);
-					s && s.messageType === u.d.USER && T.a.deleteMessage(s).then(() => t(se(s.messageId))).then(() => t(Object(c.a)()))
+					s && s.messageType === u.d.USER && M.a.deleteMessage(s).then(() => t(se(s.messageId))).then(() => t(Object(c.a)()))
 				}, re = "MESSAGE__RECEIVE_DELETE_ONE", oe = Object(o.a)(re), ie = e => async (t, n) => {
 					t(oe(e))
 				}, le = "MESSAGE__GET_PREVIOUS_MESSAGES_START", de = "MESSAGE__GET_PREVIOUS_MESSAGES_END", ue = "MESSAGE__GET_PREVIOUS_MESSAGES_ERROR", he = Object(o.a)(le), me = Object(o.a)(de), pe = Object(o.a)(ue), be = e => async (t, n) => {
 					const a = Object(N.C)(n(), "channelId");
-					t(he(a)), t(Object(d.hb)()), a && await T.a.getPreviousMessages(e).then(e => {
+					t(he(a)), t(Object(d.hb)()), a && await M.a.getPreviousMessages(e).then(e => {
 						t(me({
 							channelId: a,
 							...e
@@ -2112,9 +2112,9 @@
 			})), n.d(t, "hb", (function() {
 				return w
 			})), n.d(t, "I", (function() {
-				return T
-			})), n.d(t, "D", (function() {
 				return M
+			})), n.d(t, "D", (function() {
+				return T
 			})), n.d(t, "e", (function() {
 				return A
 			})), n.d(t, "db", (function() {
@@ -2257,9 +2257,9 @@
 				Object(b.i)(s(), e, t, n)
 			}, w = () => async (e, t) => {
 				Object(b.q)(t())
-			}, T = () => async (e, t) => {
-				Object(b.h)(t())
 			}, M = () => async (e, t) => {
+				Object(b.h)(t())
+			}, T = () => async (e, t) => {
 				Object(b.f)(t())
 			}, A = () => async (e, t) => {
 				Object(b.a)(t())
@@ -2986,7 +2986,7 @@
 			})), n.d(t, "q", (function() {
 				return N
 			})), n.d(t, "r", (function() {
-				return M
+				return T
 			})), n.d(t, "u", (function() {
 				return A
 			})), n.d(t, "l", (function() {
@@ -3047,8 +3047,8 @@
 				N = Object(i.a)(y),
 				k = Object(i.a)("USER__ACCOUNT_FETCH_PENDING"),
 				w = Object(i.a)(C),
-				T = Object(i.a)("USER__ACCOUNT_FETCH_FAILED"),
-				M = Object(i.a)(I),
+				M = Object(i.a)("USER__ACCOUNT_FETCH_FAILED"),
+				T = Object(i.a)(I),
 				A = Object(i.a)(x),
 				L = Object(i.a)(S),
 				D = () => async (e, t, {
@@ -3071,7 +3071,7 @@
 							}
 						} = i, a = Object(j.a)(t), s = Object(E.a)(n), c = !!a.prefNightmode;
 						e(w(a)), e(L(s)), e(Object(d.switchTheme)(c))
-					} else e(T(i.error))
+					} else e(M(i.error))
 				}, U = "USER__USERS_FETCH_COMPLETED", P = Object(i.a)("USER__USERS_FETCH_PENDING"), R = Object(i.a)(U), B = Object(i.a)("USER__USERS_FETCH_FAILED"), H = e => async (t, n, {
 					gqlContext: a
 				}) => {
@@ -3492,11 +3492,11 @@
 						x = Object(c.e)(t => Object(y.L)(t, e)),
 						k = Object(c.e)(g.s),
 						w = u === v.b.INVITED,
-						T = Object(a.useMemo)(() => w ? Object(C.channelAction)(e, v.a.VIEW_INVITE) : Object(C.channelUrl)(e), [w, e]),
-						M = Object(a.useMemo)(() => Object(C.getRedirectURL)(T), [T]),
+						M = Object(a.useMemo)(() => w ? Object(C.channelAction)(e, v.a.VIEW_INVITE) : Object(C.channelUrl)(e), [w, e]),
+						T = Object(a.useMemo)(() => Object(C.getRedirectURL)(M), [M]),
 						A = Object(a.useMemo)(() => r ? p : b, [p, b, r]);
 					return s.a.createElement(i.a, {
-						to: M,
+						to: T,
 						className: Object(l.a)(S.a.ChatListItem, {
 							[S.a.selected]: o,
 							[S.a.unread]: m
@@ -3735,8 +3735,8 @@
 					}) : null) : null)
 				},
 				w = n("./src/chat/controls/Title/index.tsx"),
-				T = n("./src/chat/icons/Nsfw/index.tsx"),
-				M = n("./src/chat/icons/Userpic/index.tsx"),
+				M = n("./src/chat/icons/Nsfw/index.tsx"),
+				T = n("./src/chat/icons/Userpic/index.tsx"),
 				A = n("./src/chat/selectors/user.ts"),
 				L = n("./src/chat/components/ChatMemberList/index.m.less"),
 				D = n.n(L);
@@ -3783,7 +3783,7 @@
 					}
 				}, c.a.createElement("span", {
 					className: D.a.IconContainer
-				}, h && e.isNSFW ? c.a.createElement(T.b, null) : c.a.createElement(M.a, {
+				}, h && e.isNSFW ? c.a.createElement(M.b, null) : c.a.createElement(T.a, {
 					userId: e.id
 				})), c.a.createElement(w.a, {
 					className: D.a.Title
@@ -4027,7 +4027,7 @@
 					error: x
 				}
 			};
-			var T = () => {
+			var M = () => {
 				const e = Object(o.d)(),
 					{
 						isOver: t,
@@ -4079,11 +4079,11 @@
 				}
 			};
 
-			function M(e) {
+			function T(e) {
 				const t = Object(o.d)(),
 					{
 						setFiles: n
-					} = T();
+					} = M();
 				return r.a.createElement(p, {
 					dropZoneRef: e.dropZoneRef,
 					onChange: e => {
@@ -4096,7 +4096,7 @@
 				const t = Object(o.d)(),
 					{
 						setFiles: n
-					} = T();
+					} = M();
 				return r.a.createElement(j, {
 					className: e.className,
 					onChange: e => {
@@ -4195,7 +4195,7 @@
 							isDrop: n,
 							isOver: a,
 							isLimited: s
-						} = T(),
+						} = M(),
 						c = Object(o.e)(C.K),
 						l = t.map(t => r.a.createElement("div", {
 							className: ce.a.Item,
@@ -4290,8 +4290,8 @@
 				Ne = n("./src/chat/actions/tooltip.ts"),
 				ke = n("./src/chat/components/MessageInput/constants.ts"),
 				we = n("./src/chat/constants/messages.ts"),
-				Te = n("./src/chat/icons/Snoo/index.tsx");
-			const Me = function(e, t) {
+				Me = n("./src/chat/icons/Snoo/index.tsx");
+			const Te = function(e, t) {
 					let n = "",
 						a = 0,
 						s = t,
@@ -4317,7 +4317,7 @@
 				Le = function(e, t) {
 					const {
 						word: n
-					} = Me(e, t);
+					} = Te(e, t);
 					return {
 						hasUsername: /^(@|u\/)([^\s]+)?$/g.test(n),
 						username: Ae(n)
@@ -4328,7 +4328,7 @@
 						word: a,
 						posStart: s,
 						posEnd: c
-					} = Me(e, n), r = (/^(@|u\/)/gm.exec(a) || [])[1];
+					} = Te(e, n), r = (/^(@|u\/)/gm.exec(a) || [])[1];
 					if (!a) return {
 						textUpdate: e,
 						posEndUpdate: c
@@ -4455,7 +4455,7 @@
 					commandValue: e,
 					channelId: t
 				}) => async n => {
-					e && t && Te.b.includes(e) ? n(Object(G.r)(t, e.trim(), we.c.SNOOMOJI)) : n(Object(Ne.c)({
+					e && t && Me.b.includes(e) ? n(Object(G.r)(t, e.trim(), we.c.SNOOMOJI)) : n(Object(Ne.c)({
 						tooltipId: ke.e
 					}))
 				}
@@ -4815,8 +4815,8 @@
 				})),
 				kt = n("./src/config.ts"),
 				wt = n("./src/chat/icons/svgs/ChatNew/index.tsx"),
-				Tt = n("./src/chat/icons/svgs/DisableNotifications/index.tsx"),
-				Mt = n("./src/chat/icons/svgs/EnableNotifications/index.tsx");
+				Mt = n("./src/chat/icons/svgs/DisableNotifications/index.tsx"),
+				Tt = n("./src/chat/icons/svgs/EnableNotifications/index.tsx");
 
 			function At() {
 				return (At = Object.assign || function(e) {
@@ -4987,11 +4987,11 @@
 											className: zt.a.CommandItemIcon
 										});
 									case Pe.MUTE:
-										return r.a.createElement(Tt.a, {
+										return r.a.createElement(Mt.a, {
 											className: zt.a.CommandItemIcon
 										});
 									case Pe.UNMUTE:
-										return r.a.createElement(Mt.a, {
+										return r.a.createElement(Tt.a, {
 											className: zt.a.CommandItemIcon
 										});
 									case Pe.KICK:
@@ -5072,9 +5072,9 @@
 					onPickSnoomoji: e
 				}) => {
 					const [t, n] = Object(c.useState)(!1), a = Object(o.e)(ot.g), s = Object(c.useCallback)(() => {
-						Promise.all(Te.b.map(e => new Promise(t => {
+						Promise.all(Me.b.map(e => new Promise(t => {
 							const n = new Image;
-							n.onload = () => t(), n.src = Te.a[e]
+							n.onload = () => t(), n.src = Me.a[e]
 						}))).then(() => n(!0))
 					}, []);
 					Object(c.useEffect)(() => {
@@ -5084,7 +5084,7 @@
 						className: Object(i.a)(qt.a.Scroller, {
 							[qt.a.embedded]: a
 						})
-					}, t ? r.a.createElement(Xt, null, (() => Te.b.map((t, n) => r.a.createElement(Qt, {
+					}, t ? r.a.createElement(Xt, null, (() => Me.b.map((t, n) => r.a.createElement(Qt, {
 						key: `icon-${n}`,
 						onClick: () => e(t)
 					}, r.a.createElement(Kt.a, {
@@ -5119,7 +5119,7 @@
 				constructor(e) {
 					super(e), this.fetchedFilter = "", this.isMount = !1, this.fetchSubredditChannelUsers = D()((e = "") => {
 						this.props.fetchSubredditChannelUsers(e)
-					}, xe.Sb, {
+					}, xe.Rb, {
 						leading: !0,
 						trailing: !1
 					}), this.onArrowUpListener = e => {
@@ -5365,10 +5365,10 @@
 				Nn = n("./src/lib/hooks/useOnClickOutside.ts"),
 				kn = n("./src/lib/hooks/useTooltip.ts"),
 				wn = n("./src/chat/components/MessageInput/IconButton/index.m.less"),
-				Tn = n.n(wn);
-			var Mn = e => r.a.createElement("div", {
-					className: Object(i.a)(Tn.a.IconButton, {
-						[Tn.a.active]: e.active
+				Mn = n.n(wn);
+			var Tn = e => r.a.createElement("div", {
+					className: Object(i.a)(Mn.a.IconButton, {
+						[Mn.a.active]: e.active
 					}, e.className),
 					onMouseDown: Object(u.b)(e.onMouseDown)
 				}, e.children),
@@ -5418,7 +5418,7 @@
 						role: "button",
 						tabIndex: 0,
 						onClick: h
-					}, r.a.createElement(Mn, {
+					}, r.a.createElement(Tn, {
 						className: Un.a.ImageUploader
 					}, r.a.createElement(A, null)))) : null
 				})),
@@ -6112,14 +6112,14 @@
 					})))
 				},
 				wa = n("./src/chat/components/OverlayNav/index.tsx"),
-				Ta = n("./src/chat/components/TypingIndicator/index.m.less"),
-				Ma = n.n(Ta);
+				Ma = n("./src/chat/components/TypingIndicator/index.m.less"),
+				Ta = n.n(Ma);
 			var Aa = ({
 					channelType: e
 				}) => {
 					const t = Object(o.e)(e => e.typingIndicator.usernames);
 					return (null == t ? void 0 : t.length) ? r.a.createElement("span", {
-						className: Object(i.a)(Ma.a.IndicatorText)
+						className: Object(i.a)(Ta.a.IndicatorText)
 					}, ((e, t) => e === X.b.Direct ? oe.fbt._("is typing...", null, {
 						hk: "UTaH4"
 					}) : 1 === t.length ? oe.fbt._("{firstUser} is typing...", [oe.fbt._param("firstUser", t[0])], {
@@ -6598,11 +6598,11 @@
 					d: "M14 1.9c-.1-.6.4-1.1 1.1-1.2.8-.1 1.4.3 1.5 1 .1.7-.5 1.5-1.1 1.6-.7.1-1.4-.6-1.5-1.4z"
 				})),
 				ws = n("./src/chat/components/ToastNotification/index.m.less"),
-				Ts = n.n(ws);
-			const Ms = [ys.a.ConnectionClosed, ys.a.ConnectionPending],
+				Ms = n.n(ws);
+			const Ts = [ys.a.ConnectionClosed, ys.a.ConnectionPending],
 				As = [ys.a.SomethingWentWrong, ys.a.ShareLinkRateLimit, ys.a.ShareLinkGone, ys.a.ShareLinkInvalidRequest, ys.a.ShareLinkNotFound, _.a.UnsupportedBrowser, _.a.InvalidMediaType, _.a.FileSizeLimitExceeded, _.a.ActiveFilesLimitExceeded],
 				Ls = [ys.a.LinkDisabled, ys.a.ChangesSaved, ys.a.MuteNotifications, ys.a.UnmuteNotifications],
-				Ds = e => Ms.includes(e),
+				Ds = e => Ts.includes(e),
 				Us = e => As.includes(e),
 				Ps = e => Ls.includes(e);
 			var Rs = () => {
@@ -6611,27 +6611,27 @@
 						n = Object(o.d)(),
 						a = Object(o.e)(ot.h);
 					return r.a.createElement("div", {
-						className: Object(i.a)(Ts.a.Wrapper, {
-							[Ts.a.show]: !!e || !!t
+						className: Object(i.a)(Ms.a.Wrapper, {
+							[Ms.a.show]: !!e || !!t
 						})
 					}, (e || t) && r.a.createElement("div", {
-						className: Object(i.a)(Ts.a.Content, {
-							[Ts.a.pending]: Ds(e),
-							[Ts.a.error]: Boolean(t) || Us(e),
-							[Ts.a.info]: Ps(e),
-							[Ts.a.isFullSize]: a
+						className: Object(i.a)(Ms.a.Content, {
+							[Ms.a.pending]: Ds(e),
+							[Ms.a.error]: Boolean(t) || Us(e),
+							[Ms.a.info]: Ps(e),
+							[Ms.a.isFullSize]: a
 						})
 					}, r.a.createElement("button", {
-						className: Ts.a.CloseButton,
+						className: Ms.a.CloseButton,
 						onClick: () => {
 							n(Object(v.c)(0))
 						}
 					}, r.a.createElement(te.a, {
-						className: Ts.a.CloseButtonIcon
+						className: Ms.a.CloseButtonIcon
 					})), r.a.createElement("div", {
-						className: Ts.a.InfoWrapper
+						className: Ms.a.InfoWrapper
 					}, r.a.createElement("div", {
-						className: Ts.a.Icon
+						className: Ms.a.Icon
 					}, t ? r.a.createElement(Ss, null) : e && (e => {
 						switch (e) {
 							case ys.a.LinkCopied:
@@ -6657,7 +6657,7 @@
 								return null
 						}
 					})(e)), r.a.createElement("div", {
-						className: Ts.a.Message
+						className: Ms.a.Message
 					}, t || e && (e => {
 						switch (e) {
 							case _.a.ActiveFilesLimitExceeded:
@@ -6726,7 +6726,7 @@
 								return null
 						}
 					})(e)), r.a.createElement("button", {
-						className: Ts.a.ActionButton,
+						className: Ms.a.ActionButton,
 						onClick: () => {
 							if (e) {
 								const t = (e => {
@@ -6779,7 +6779,7 @@
 				}, ((e, t) => {
 					const n = (new Date).getTime(),
 						a = Math.round(Math.abs((e - n) / xe.B)),
-						s = Math.round(Math.abs((e - n) / xe.qc));
+						s = Math.round(Math.abs((e - n) / xe.pc));
 					let c = "";
 					const r = `${a}${oe.fbt._("d",null,{hk:"1d5Wxl"})}`,
 						o = `${s}${oe.fbt._("y",null,{hk:"3DaEfY"})}`;
@@ -7064,7 +7064,7 @@
 				getComponent: () => Object(qa.a)(() => n.e("OverlayThemes").then(n.bind(null, "./src/chat/components/OverlayThemes/index.tsx"))).then(e => e.default),
 				LoadingComponent: kc
 			});
-			const Tc = e => e.userIds ? r.a.createElement(gc.a, null) : e.action === W.a.CREATE || e.action === W.a.START_GROUP ? r.a.createElement(Ya, null) : e.channelId ? e.action === W.a.VIEW_INVITE && e.channelId ? r.a.createElement(uc, {
+			const Mc = e => e.userIds ? r.a.createElement(gc.a, null) : e.action === W.a.CREATE || e.action === W.a.START_GROUP ? r.a.createElement(Ya, null) : e.channelId ? e.action === W.a.VIEW_INVITE && e.channelId ? r.a.createElement(uc, {
 				channelId: e.channelId
 			}) : e.action === W.a.VIEW_ABOUT && e.channelId ? r.a.createElement(jc, {
 				channelId: e.channelId
@@ -7086,7 +7086,7 @@
 				inviteLinkDataModelId: e.channelId,
 				isForDirect: !!e.attr
 			}) : e.action === W.a.PRIVACY_SUPPORT && e.channelId ? r.a.createElement(xc, null) : void 0 : r.a.createElement(Oc, null);
-			var Mc = n("./src/chat/selectors/platform.ts"),
+			var Tc = n("./src/chat/selectors/platform.ts"),
 				Ac = n("./src/chat/selectors/reportRevamp.ts"),
 				Lc = n("./src/chat/selectors/sidebar.ts"),
 				Dc = n("./src/chat/components/FrameContent/index.m.less"),
@@ -7100,7 +7100,7 @@
 					inReportingRevampSelector: Ac.a,
 					isImageShareEnabled: (e, t) => Object(pe.m)(e, t.match.params.channelId),
 					isChannelInPendingState: C.K,
-					queryParamsFromUrl: Mc.c
+					queryParamsFromUrl: Tc.c
 				}),
 				Bc = Object(o.b)(Rc);
 			class Hc extends r.a.Component {
@@ -7142,7 +7142,7 @@
 						case t === Bs.a.MINIMIZED:
 							return r.a.createElement(Ka.a, null);
 						default: {
-							const n = Tc({
+							const n = Mc({
 								...this.props.match.params,
 								inReportRevamp: s
 							});
@@ -7158,7 +7158,7 @@
 								className: Uc.a.Modal
 							}, n) : e && u && r.a.createElement(r.a.Fragment, null, r.a.createElement(Wa, {
 								channel: e
-							}), c && !o && r.a.createElement(M, {
+							}), c && !o && r.a.createElement(T, {
 								dropZoneRef: this.mainRef
 							}))))
 						}
@@ -7364,7 +7364,7 @@
 				N = n("./src/chat/controls/TextButton.tsx"),
 				k = n("./src/chat/components/Message/CollapsedMessage.m.less"),
 				w = n.n(k);
-			var T = Object(r.b)(void 0, (e, t) => ({
+			var M = Object(r.b)(void 0, (e, t) => ({
 					uncollapseMessage: () => {
 						e(Object(S.C)(t)), e(Object(h.R)(t.messageId))
 					},
@@ -7385,8 +7385,8 @@
 				}, a.fbt._("View Message", null, {
 					hk: "QjaEs"
 				})))), "CollapsedMessage", w.a)),
-				M = n("./src/chat/components/Message/FailedMenu.m.less"),
-				A = n.n(M);
+				T = n("./src/chat/components/Message/FailedMenu.m.less"),
+				A = n.n(T);
 			const L = x.a.div("ButtonControls", A.a),
 				D = x.a.span("Text", A.a),
 				U = x.a.wrapped(O.a, "Button", A.a);
@@ -7511,7 +7511,7 @@
 							})
 						}, [N, S, f]),
 						w = (null == k ? void 0 : k.height) && `${k.height}px`,
-						T = (null == k ? void 0 : k.width) && `${k.width}px`;
+						M = (null == k ? void 0 : k.width) && `${k.width}px`;
 					return (null == n ? void 0 : n.phase) !== q.a.PreUpload || a ? c.a.createElement("div", {
 						className: $.a.ImageWrapper
 					}, !v && E && x && c.a.createElement(W, {
@@ -7522,7 +7522,7 @@
 						className: $.a.BlurOverlay,
 						style: {
 							height: w,
-							width: T
+							width: M
 						}
 					}, ee._("Click to view", null, {
 						hk: "3QiGd9"
@@ -7535,7 +7535,7 @@
 						key: t,
 						style: {
 							height: w,
-							width: T
+							width: M
 						},
 						className: Object(o.a)($.a.MediaImage, {
 							[$.a.failed]: v
@@ -7669,8 +7669,8 @@
 				ke = n("./src/chat/components/MessageInput/constants.ts"),
 				we = n("./src/chat/controls/Svg/index.tsx");
 
-			function Te() {
-				return (Te = Object.assign || function(e) {
+			function Me() {
+				return (Me = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var a in n) Object.prototype.hasOwnProperty.call(n, a) && (e[a] = n[a])
@@ -7678,7 +7678,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var Me = e => c.a.createElement(we.a, Te({}, e, {
+			var Te = e => c.a.createElement(we.a, Me({}, e, {
 					viewBox: "0 0 20 20"
 				}), e.isFilled ? c.a.createElement("g", {
 					id: "icons_flat"
@@ -7740,7 +7740,7 @@
 								tooltipId: ke.c
 							})), n(Object(h.z)())
 						}
-					}, c.a.createElement(Me, {
+					}, c.a.createElement(Te, {
 						isFilled: !0
 					}))) : null
 				},
@@ -7886,9 +7886,9 @@
 				if (!h) return null;
 				const {
 					type: w,
-					report: M,
+					report: T,
 					collapsedInvitePreview: A
-				} = h.messageData, L = h.messageType === tt && h.error && h.clientMessageId, D = w !== rt && w !== dt && (w !== lt || w === lt && p), U = g && !L && !M, P = h.messageType === nt && U, H = ((e, t, n, s, r, o) => {
+				} = h.messageData, L = h.messageType === tt && h.error && h.clientMessageId, D = w !== rt && w !== dt && (w !== lt || w === lt && p), U = g && !L && !T, P = h.messageType === nt && U, H = ((e, t, n, s, r, o) => {
 					var i, l, d, u, h;
 					const {
 						messageType: m,
@@ -8059,7 +8059,7 @@
 					}
 				})), p && mt(h) && function(e) {
 					return Boolean(null == e ? void 0 : e.shouldCollapse)
-				}(A) ? c.a.createElement(T, {
+				}(A) ? c.a.createElement(M, {
 					channelId: h.channelId,
 					messageId: h.messageId
 				}) : H), P && F, m && c.a.createElement(ut, null), p && mt(h) && function(e) {
@@ -9259,8 +9259,8 @@
 				Kick: k
 			} = I.a;
 			var w = n("./src/lib/lessComponent.tsx"),
-				T = n("./src/chat/actions/theme.ts"),
-				M = n("./src/chat/helpers/chatSelector.ts"),
+				M = n("./src/chat/actions/theme.ts"),
+				T = n("./src/chat/helpers/chatSelector.ts"),
 				A = n("./src/chat/controls/Svg/index.tsx");
 
 			function L() {
@@ -9285,11 +9285,11 @@
 				}))),
 				U = n("./src/chat/components/ThemeSwitcher/index.m.less"),
 				P = n.n(U);
-			const R = Object(M.a)({
+			const R = Object(T.a)({
 					theme: e => e.user.prefs.globalTheme
 				}),
 				B = Object(c.b)(R, (e, t) => ({
-					changeModeClicked: () => e(Object(T.themeToggle)())
+					changeModeClicked: () => e(Object(M.themeToggle)())
 				})),
 				H = w.a.div("Wrapper", P.a);
 			B(({
@@ -9466,7 +9466,7 @@
 							}
 					}
 				},
-				Oe = Object(M.a)({
+				Oe = Object(T.a)({
 					currentUserId: pe.a,
 					channel: le.m,
 					isModerator: le.a,
@@ -9540,13 +9540,13 @@
 							...k.arrowProps.style,
 							borderBottom: "5px solid var(--prompt-tooltip-background)"
 						}
-					}, T = Object(a.useMemo)(() => (null == t ? void 0 : t.type) === re.b.Group, [t]), M = T && j && !v && (C || I);
+					}, M = Object(a.useMemo)(() => (null == t ? void 0 : t.type) === re.b.Group, [t]), T = M && j && !v && (C || I);
 					Object(a.useEffect)(() => {
 						let e;
-						return T && (e = setTimeout(() => {
+						return M && (e = setTimeout(() => {
 							null == k || k.show()
 						})), clearTimeout(e)
-					}, [T]);
+					}, [M]);
 					Object(f.a)("OverlayNavTooltip--Default", N.hide);
 					const A = a => {
 							const {
@@ -9639,7 +9639,7 @@
 						className: Object(r.a)(ge.a.Settings, {
 							[ge.a.gradient]: U && l
 						})
-					})), M && s.a.createElement(W.default, {
+					})), T && s.a.createElement(W.default, {
 						arrowProps: w,
 						popperProps: k.popperProps,
 						visible: k.visible,
@@ -9715,7 +9715,7 @@
 			xe.displayName = "NavPopout";
 			var Se = n("./src/chat/components/OverlayNavButtonGroup/index.m.less"),
 				Ne = n.n(Se);
-			var ke = Object(c.b)(() => Object(M.a)({
+			var ke = Object(c.b)(() => Object(T.a)({
 					containerSize: e => e.container.size,
 					inviterName: le.I,
 					isReady: ie.j
@@ -9761,9 +9761,9 @@
 					})))
 				}),
 				we = n("./src/chat/controls/ChannelNameInput/index.tsx"),
-				Te = n("./src/chat/controls/Counter/index.tsx");
-			var Me = n("./src/chat/components/RenameGroupInput/index.m.less"),
-				Ae = n.n(Me);
+				Me = n("./src/chat/controls/Counter/index.tsx");
+			var Te = n("./src/chat/components/RenameGroupInput/index.m.less"),
+				Ae = n.n(Te);
 			const Le = w.a.wrapped(e => s.a.createElement("span", {
 					className: Object(r.a)({
 						[Ae.a.visible]: e.isVisible
@@ -9773,7 +9773,7 @@
 				Ue = w.a.span("InputControls", Ae.a),
 				Pe = w.a.wrapped(_e.a, "CancelButton", Ae.a),
 				Re = w.a.wrapped(_e.a, "SaveButton", Ae.a),
-				Be = Object(M.a)({
+				Be = Object(T.a)({
 					isVisible: e => {
 						return (e => e.renameGroupChat)(e).ivVisible
 					}
@@ -9818,7 +9818,7 @@
 						withBackground: !0,
 						value: n,
 						maxLength: F.g
-					}, s.a.createElement(Te.a, {
+					}, s.a.createElement(Me.a, {
 						count: r
 					})), s.a.createElement(Ue, null, s.a.createElement(Pe, {
 						secondaryNoBorder: !0,
@@ -9876,7 +9876,7 @@
 				}))) : null, h && n === re.b.Group && s.a.createElement(ee.a, {
 					className: We.a.LinkIcon
 				}))
-			}, qe = Object(M.a)({
+			}, qe = Object(T.a)({
 				isEmbedded: ie.g,
 				iconMembers: (e, t) => Object(le.u)(e, t.channelId),
 				isFullSize: ie.h
@@ -10387,8 +10387,8 @@
 						channels: a
 					}), n && s.a.createElement(C.d, null))
 				}),
-				T = n("./src/chat/components/Scroller/index.tsx"),
-				M = n("./node_modules/react-router-redux/es/index.js"),
+				M = n("./src/chat/components/Scroller/index.tsx"),
+				T = n("./node_modules/react-router-redux/es/index.js"),
 				A = n("./src/chat/constants/channels.ts"),
 				L = n("./src/chat/helpers/urls/index.ts"),
 				D = n("./src/chat/icons/svgs/ChatNew/index.tsx"),
@@ -10402,7 +10402,7 @@
 						className: R.a.Button,
 						onClick: () => {
 							const n = Object(L.getRedirectURL)(Object(L.channelUrl)(A.a.CREATE));
-							t ? e(Object(l.M)()) : (e(Object(M.b)(n)), e(Object(d.l)()))
+							t ? e(Object(l.M)()) : (e(Object(T.b)(n)), e(Object(d.l)()))
 						},
 						title: i.fbt._("Start a new chat", null, {
 							hk: "3C4ek3"
@@ -10436,7 +10436,7 @@
 						isEmptyCounter: r && !a
 					}), s.a.createElement("div", {
 						className: z.a.CreateChannelWrapper
-					}, s.a.createElement(B, null))), o && s.a.createElement(H.a, null), s.a.createElement(T.a, {
+					}, s.a.createElement(B, null))), o && s.a.createElement(H.a, null), s.a.createElement(M.a, {
 						loadMoreRows: () => {
 							!t && n && e(Object(l.E)())
 						},
@@ -11819,7 +11819,7 @@
 							const t = e.getState();
 							e.dispatch(Object(d.sizeChanged)(h.a.EMBED));
 							const a = t.platform.currentPage;
-							a && a.meta && a.meta.name === o.Nb.CHAT_MINIMIZE && e.dispatch(Object(l.M)());
+							a && a.meta && a.meta.name === o.Mb.CHAT_MINIMIZE && e.dispatch(Object(l.M)());
 							const {
 								action: s,
 								noun: c,
@@ -11941,7 +11941,7 @@
 			const v = (e, t) => {
 				const n = t && t.type === o.SIZE_CHANGED ? t.payload : e.container.size,
 					a = n === p.a.MINIMIZED || n === p.a.HIDDEN,
-					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.Nb.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.Nb.CHAT_MINIMIZE;
+					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.Mb.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.Mb.CHAT_MINIMIZE;
 				return !a && s
 			};
 			t.a = e => {
@@ -11963,7 +11963,7 @@
 					})(a) : s()(() => e.dispatch(Object(d.k)()))
 				};
 				let a;
-				Object(E.a)(e.getState()) === c.Nb.CHAT_MINIMIZE ? s()(async () => {
+				Object(E.a)(e.getState()) === c.Mb.CHAT_MINIMIZE ? s()(async () => {
 					v(e.getState()) ? n() : (await e.dispatch(Object(d.k)(!1)), e.getState().sendbird.session.token && await e.dispatch(Object(i.c)()))
 				}) : n();
 				return i => g => {
@@ -12203,7 +12203,7 @@
 			let l, d;
 			const u = s()(e => {
 				Object(o.d)(l, e, 5 * i.kb)
-			}, 5 * i.Sb, {
+			}, 5 * i.Rb, {
 				leading: !1,
 				trailing: !0
 			});
@@ -13247,7 +13247,7 @@
 					isNSFW: !1
 				},
 				i = e => ({
-					created: e.date * a.Sb,
+					created: e.date * a.Rb,
 					id: e.id,
 					name: e.name,
 					profileImg: e.icon_img
@@ -13410,8 +13410,8 @@
 				N = "#3A3A3C",
 				k = "#D8DADC",
 				w = "#1A232C",
-				T = "#29292A";
-			var M = n("./src/reddit/constants/colors.ts"),
+				M = "#29292A";
+			var T = n("./src/reddit/constants/colors.ts"),
 				A = n("./src/reddit/models/NewStructuredStyles/index.ts");
 			const {
 				REDDIT: L,
@@ -13497,105 +13497,105 @@
 				G = {
 					bubble: {
 						background: F(B.BERRY),
-						color: M.a.white,
-						border: M.a.transparent,
+						color: T.a.white,
+						border: T.a.transparent,
 						link: {
-							color: M.a.white,
+							color: T.a.white,
 							textDecoration: P.UNDERLINE
 						},
 						channelsFilter: {
 							background: F(B.BERRY),
-							selected: M.a.white
+							selected: T.a.white
 						}
 					}
 				},
 				V = {
 					bubble: {
 						background: F(B.VANITY),
-						color: M.a.white,
-						border: M.a.transparent,
+						color: T.a.white,
+						border: T.a.transparent,
 						link: {
-							color: M.a.white,
+							color: T.a.white,
 							textDecoration: P.UNDERLINE
 						},
 						channelsFilter: {
 							background: F(B.VANITY),
-							selected: M.a.white
+							selected: T.a.white
 						}
 					}
 				},
 				z = {
 					bubble: {
 						background: F(B.SERIOUS),
-						color: M.a.white,
-						border: M.a.transparent,
+						color: T.a.white,
+						border: T.a.transparent,
 						link: {
-							color: M.a.white,
+							color: T.a.white,
 							textDecoration: P.UNDERLINE
 						},
 						channelsFilter: {
 							background: F(B.SERIOUS),
-							selected: M.a.white
+							selected: T.a.white
 						}
 					}
 				},
 				W = {
 					bubble: {
 						background: F(B.ROYAL),
-						color: M.a.white,
-						border: M.a.transparent,
+						color: T.a.white,
+						border: T.a.transparent,
 						link: {
-							color: M.a.white,
+							color: T.a.white,
 							textDecoration: P.UNDERLINE
 						},
 						channelsFilter: {
 							background: F(B.ROYAL),
-							selected: M.a.white
+							selected: T.a.white
 						}
 					}
 				},
 				K = {
 					bubble: {
 						background: F(B.OCEAN),
-						color: M.a.white,
-						border: M.a.transparent,
+						color: T.a.white,
+						border: T.a.transparent,
 						link: {
-							color: M.a.white,
+							color: T.a.white,
 							textDecoration: P.UNDERLINE
 						},
 						channelsFilter: {
 							background: F(B.OCEAN),
-							selected: M.a.white
+							selected: T.a.white
 						}
 					}
 				},
 				Z = {
 					bubble: {
 						background: F(B.ORANGERED),
-						color: M.a.white,
-						border: M.a.transparent,
+						color: T.a.white,
+						border: T.a.transparent,
 						link: {
-							color: M.a.white,
+							color: T.a.white,
 							textDecoration: P.UNDERLINE
 						},
 						channelsFilter: {
 							background: F(B.ORANGERED),
-							selected: M.a.white
+							selected: T.a.white
 						}
 					}
 				},
 				q = {
 					bubble: {
 						background: F(B.UNICORN),
-						color: M.a.white,
-						border: M.a.transparent,
+						color: T.a.white,
+						border: T.a.transparent,
 						link: {
-							color: M.a.white,
+							color: T.a.white,
 							textDecoration: P.UNDERLINE
 						},
 						channelsFilter: {
 							background: F(B.UNICORN),
-							selected: M.a.white
+							selected: T.a.white
 						}
 					}
 				},
@@ -13603,64 +13603,64 @@
 					activity: {
 						icon: {
 							default: U(L).actionIcon,
-							active: M.a.alienblue,
-							disable: Object(a.a)(.5, M.a.white),
-							hover: Object(a.a)(.5, M.a.white),
+							active: T.a.alienblue,
+							disable: Object(a.a)(.5, T.a.white),
+							hover: Object(a.a)(.5, T.a.white),
 							contrast: U(L).bodyText,
 							toaster: U(L).bodyText,
 							nsfw: {
-								bg: M.a.black,
-								text: M.a.white
+								bg: T.a.black,
+								text: T.a.white
 							},
 							subIcon: {
-								backgroundColor: M.a.white
+								backgroundColor: T.a.white
 							}
 						},
 						text: {
 							regular: U(L).bodyText,
-							active: M.a.alienblue,
-							fade: Object(a.a)(.4, M.a.white),
+							active: T.a.alienblue,
+							fade: Object(a.a)(.4, T.a.white),
 							light: U(L).actionIcon,
-							warning: M.a.warning,
-							highlight: M.a.white,
-							success: M.a.approved,
+							warning: T.a.warning,
+							highlight: T.a.white,
+							success: T.a.approved,
 							meta: U(L).metaText
 						},
 						button: {
-							primary: M.a.alienblue,
+							primary: T.a.alienblue,
 							secondary: U(L).metaText,
 							chatFilterColor: E
 						},
 						buttonPrimary: {
-							color: M.a.white
+							color: T.a.white
 						},
 						buttonSecondary: {
-							active: M.a.alienblue
+							active: T.a.alienblue
 						},
 						send: {
-							disable: Object(a.a)(.5, M.a.white),
-							hover: Object(a.a)(.08, M.a.op)
+							disable: Object(a.a)(.5, T.a.white),
+							hover: Object(a.a)(.08, T.a.op)
 						},
 						checkbox: {
-							checked: M.a.alienblue,
-							checkmark: M.a.white,
+							checked: T.a.alienblue,
+							checkmark: T.a.white,
 							unchecked: U(L).body,
 							uncheckedBorder: U(L).placeholder
 						},
 						input: {
-							border: M.a.defaultFlair,
-							focusColor: M.a.white,
-							focusBg: M.a.approved,
+							border: T.a.defaultFlair,
+							focusColor: T.a.white,
+							focusBg: T.a.approved,
 							ownerBg: U(L).line,
 							color: U(L).bodyText,
 							error: O,
-							channelRename: Object(a.a)(.1, M.a.white),
-							background: Object(a.f)(Object(a.a)(.3, M.a.white), .1)
+							channelRename: Object(a.a)(.1, T.a.white),
+							background: Object(a.f)(Object(a.a)(.3, T.a.white), .1)
 						},
 						link: {
-							staticUnderline: M.a.alienblue,
-							staticText: M.a.op,
-							hoverText: M.a.snoo
+							staticUnderline: T.a.alienblue,
+							staticText: T.a.op,
+							hoverText: T.a.snoo
 						},
 						minimizedPortal: {
 							backgroundColor: {
@@ -13668,21 +13668,21 @@
 								unreadFinal: U(L).highlight
 							},
 							color: {
-								unreadInitial: M.a.white,
-								unreadFinal: M.a.black
+								unreadInitial: T.a.white,
+								unreadFinal: T.a.black
 							}
 						}
 					},
 					layout: {
 						body: U(L).body,
 						colsBorder: U(L).line,
-						controlsBorder: Object(a.f)(M.a.black, .15),
+						controlsBorder: Object(a.f)(T.a.black, .15),
 						header: {
-							counterBg: M.a.snoo,
-							counterText: M.a.white
+							counterBg: T.a.snoo,
+							counterText: T.a.white
 						},
-						scrollbar: Object(a.a)(.2, M.a.white),
-						scrollbarHover: Object(a.a)(.4, M.a.white),
+						scrollbar: Object(a.a)(.2, T.a.white),
+						scrollbarHover: Object(a.a)(.4, T.a.white),
 						timeStamp: {
 							tooltip: {
 								background: U(L).body
@@ -13691,8 +13691,8 @@
 						dropdown: {
 							border: "none"
 						},
-						overlayBackground: M.a.overlayBackground,
-						overlayReportFlow: M.a.overlayReportFlow
+						overlayBackground: T.a.overlayBackground,
+						overlayReportFlow: T.a.overlayReportFlow
 					},
 					message: {
 						list: {
@@ -13701,30 +13701,30 @@
 								button: U(L).actionIcon,
 								richItem: U(L).metaText,
 								richItemBorder: U(L).postLine,
-								onlineIndicator: M.a.approved,
-								white: M.a.white
+								onlineIndicator: T.a.approved,
+								white: T.a.white
 							}
 						}
 					},
 					subreddit: {
-						iconBg: M.a.alienblue
+						iconBg: T.a.alienblue
 					},
 					sidebar: {
-						background: Object(a.f)(Object(a.a)(.3, M.a.white), .1),
+						background: Object(a.f)(Object(a.a)(.3, T.a.white), .1),
 						subreddit: {
 							background: {
-								active: M.a.alienblue,
+								active: T.a.alienblue,
 								hover: U(L).canvas
 							}
 						},
 						basic: {
 							background: {
-								active: M.a.alienblue,
+								active: T.a.alienblue,
 								hover: U(L).canvas
 							}
 						},
 						text: {
-							divider: Object(a.a)(.5, M.a.white)
+							divider: Object(a.a)(.5, T.a.white)
 						},
 						item: {
 							hover: U(L).field,
@@ -13739,9 +13739,9 @@
 						}
 					},
 					toast: {
-						pending: M.a.black,
-						success: M.a.approved,
-						error: M.a.orangered
+						pending: T.a.black,
+						success: T.a.approved,
+						error: T.a.orangered
 					},
 					skeleton: {
 						field: U(L).field,
@@ -13752,11 +13752,11 @@
 						hover: U(L).line
 					},
 					bubble: {
-						background: M.a.transparent,
+						background: T.a.transparent,
 						color: U(L).bodyText,
 						border: U(L).line,
 						link: {
-							color: M.a.op,
+							color: T.a.op,
 							textDecoration: P.NONE
 						},
 						channelsFilter: {
@@ -13803,7 +13803,7 @@
 					},
 					modal: {
 						buttonsBackground: p,
-						primaryButtonWarning: M.a.warning,
+						primaryButtonWarning: T.a.warning,
 						secondaryButton: U(L).metaText
 					}
 				},
@@ -13811,31 +13811,31 @@
 					activity: {
 						icon: {
 							default: U(D).postIcon,
-							active: M.a.alienblue,
-							disable: Object(a.a)(.5, M.a.white),
-							hover: Object(a.a)(.5, M.a.white),
+							active: T.a.alienblue,
+							disable: Object(a.a)(.5, T.a.white),
+							hover: Object(a.a)(.5, T.a.white),
 							contrast: Object(a.a)(.4, U(D).bodyText),
 							toaster: U(L).bodyText,
 							nsfw: {
-								bg: M.a.black,
-								text: M.a.white
+								bg: T.a.black,
+								text: T.a.white
 							},
 							subIcon: {
-								backgroundColor: M.a.white
+								backgroundColor: T.a.white
 							}
 						},
 						text: {
 							regular: U(D).bodyText,
-							active: M.a.alienblue,
-							fade: Object(a.a)(.4, M.a.white),
+							active: T.a.alienblue,
+							fade: Object(a.a)(.4, T.a.white),
 							light: U(D).actionIcon,
-							warning: M.a.warning,
-							highlight: M.a.white,
-							success: M.a.approved,
+							warning: T.a.warning,
+							highlight: T.a.white,
+							success: T.a.approved,
 							meta: U(D).metaText
 						},
 						button: {
-							primary: M.a.alienblue,
+							primary: T.a.alienblue,
 							secondary: U(D).metaText,
 							chatFilterColor: f
 						},
@@ -13846,29 +13846,29 @@
 							active: U(D).bodyText
 						},
 						send: {
-							disable: Object(a.a)(.5, M.a.white),
-							hover: Object(a.a)(.08, M.a.op)
+							disable: Object(a.a)(.5, T.a.white),
+							hover: Object(a.a)(.08, T.a.op)
 						},
 						checkbox: {
-							checked: M.a.alienblue,
-							checkmark: M.a.white,
+							checked: T.a.alienblue,
+							checkmark: T.a.white,
 							unchecked: U(D).body,
 							uncheckedBorder: U(D).metaText
 						},
 						input: {
-							border: M.a.defaultFlair,
-							focusColor: M.a.white,
-							focusBg: M.a.approved,
+							border: T.a.defaultFlair,
+							focusColor: T.a.white,
+							focusBg: T.a.approved,
 							ownerBg: U(D).line,
 							color: U(D).bodyText,
 							error: O,
-							channelRename: Object(a.a)(.1, M.a.white),
-							background: Object(a.f)(Object(a.a)(.3, M.a.white), .1)
+							channelRename: Object(a.a)(.1, T.a.white),
+							background: Object(a.f)(Object(a.a)(.3, T.a.white), .1)
 						},
 						link: {
-							staticUnderline: M.a.alienblue,
-							staticText: M.a.op,
-							hoverText: M.a.snoo
+							staticUnderline: T.a.alienblue,
+							staticText: T.a.op,
+							hoverText: T.a.snoo
 						},
 						minimizedPortal: {
 							backgroundColor: {
@@ -13876,18 +13876,18 @@
 								unreadFinal: U(D).highlight
 							},
 							color: {
-								unreadInitial: M.a.white,
-								unreadFinal: M.a.white
+								unreadInitial: T.a.white,
+								unreadFinal: T.a.white
 							}
 						}
 					},
 					layout: {
 						body: U(D).body,
 						colsBorder: U(D).line,
-						controlsBorder: Object(a.f)(M.a.white, .15),
+						controlsBorder: Object(a.f)(T.a.white, .15),
 						header: {
-							counterBg: M.a.snoo,
-							counterText: M.a.white
+							counterBg: T.a.snoo,
+							counterText: T.a.white
 						},
 						scrollbar: Object(a.a)(.2, U(D).bodyText),
 						scrollbarHover: Object(a.a)(.1, U(D).bodyText),
@@ -13899,8 +13899,8 @@
 						dropdown: {
 							border: U(D).line
 						},
-						overlayBackground: M.a.overlayBackground,
-						overlayReportFlow: M.a.overlayReportFlow
+						overlayBackground: T.a.overlayBackground,
+						overlayReportFlow: T.a.overlayReportFlow
 					},
 					message: {
 						list: {
@@ -13909,30 +13909,30 @@
 								button: U(D).actionIcon,
 								richItem: U(D).metaText,
 								richItemBorder: A.a.metaText,
-								onlineIndicator: M.a.approved,
-								white: M.a.white
+								onlineIndicator: T.a.approved,
+								white: T.a.white
 							}
 						}
 					},
 					subreddit: {
-						iconBg: M.a.alienblue
+						iconBg: T.a.alienblue
 					},
 					sidebar: {
-						background: Object(a.f)(Object(a.a)(.4, M.a.white), .1),
+						background: Object(a.f)(Object(a.a)(.4, T.a.white), .1),
 						subreddit: {
 							background: {
-								active: M.a.alienblue,
+								active: T.a.alienblue,
 								hover: Object(a.g)(.2, U(D).canvas)
 							}
 						},
 						basic: {
 							background: {
-								active: M.a.alienblue,
+								active: T.a.alienblue,
 								hover: Object(a.g)(.2, U(D).canvas)
 							}
 						},
 						text: {
-							divider: Object(a.a)(.5, M.a.white)
+							divider: Object(a.a)(.5, T.a.white)
 						},
 						item: {
 							hover: U(D).field,
@@ -13947,9 +13947,9 @@
 						}
 					},
 					toast: {
-						pending: M.a.black,
-						success: M.a.approved,
-						error: M.a.orangered
+						pending: T.a.black,
+						success: T.a.approved,
+						error: T.a.orangered
 					},
 					skeleton: {
 						field: U(D).field,
@@ -13960,11 +13960,11 @@
 						hover: U(D).field
 					},
 					bubble: {
-						background: M.a.transparent,
+						background: T.a.transparent,
 						color: U(D).bodyText,
 						border: U(D).line,
 						link: {
-							color: M.a.op,
+							color: T.a.op,
 							textDecoration: P.NONE
 						},
 						channelsFilter: {
@@ -14004,14 +14004,14 @@
 						dropdownItemHoverBackground: w
 					},
 					overlay: {
-						headerColor: M.a.white,
+						headerColor: T.a.white,
 						backgroundColor: U(D).body,
-						inputBackground: T,
+						inputBackground: M,
 						searchBarBackground: N
 					},
 					modal: {
 						buttonsBackground: j,
-						primaryButtonWarning: M.a.warning,
+						primaryButtonWarning: T.a.warning,
 						secondaryButton: U(D).bodyText
 					}
 				},
@@ -14307,8 +14307,8 @@
 				},
 				k = n("./node_modules/lodash/first.js"),
 				w = n.n(k),
-				T = n("./node_modules/lodash/reduce.js"),
-				M = n.n(T),
+				M = n("./node_modules/lodash/reduce.js"),
+				T = n.n(M),
 				A = n("./src/chat/actions/channel/dropdown.ts"),
 				L = n("./src/chat/actions/message/inboxScroller.ts"),
 				D = n("./src/chat/constants/channels.ts");
@@ -14323,7 +14323,7 @@
 					case b.a: {
 						const {
 							channels: n
-						} = t.payload, a = M()(e, (e, t, a) => n[a] && t.channelState === D.b.PARTIAL && (e[a] = n[a]) && e || e, {});
+						} = t.payload, a = T()(e, (e, t, a) => n[a] && t.channelState === D.b.PARTIAL && (e[a] = n[a]) && e || e, {});
 						return {
 							...n,
 							...e,
@@ -15153,7 +15153,7 @@
 				}
 			};
 			const we = {};
-			var Te = (e = we, t) => {
+			var Me = (e = we, t) => {
 					var n, a;
 					switch (t.type) {
 						case C.i: {
@@ -15205,7 +15205,7 @@
 							return e
 					}
 				},
-				Me = n("./src/chat/actions/message/reactions.ts");
+				Te = n("./src/chat/actions/message/reactions.ts");
 			const Ae = {};
 			var Le = (e = Ae, t) => {
 					switch (t.type) {
@@ -15224,7 +15224,7 @@
 								}
 							}, {})
 						}
-						case Me.a:
+						case Te.a:
 							return {
 								...e, [t.payload.messageId]: t.payload.reactions
 							};
@@ -15295,7 +15295,7 @@
 				ze = Object(a.c)({
 					firstLoaded: Se,
 					models: ke,
-					pending: Te,
+					pending: Me,
 					reactions: Le,
 					unread: Ve,
 					richUnits: Re
@@ -15587,7 +15587,7 @@
 				},
 				kt = n("./src/chat/actions/platform.ts"),
 				wt = n("./src/chat/actions/tooltip.ts");
-			var Tt = (e = null, t) => {
+			var Mt = (e = null, t) => {
 					switch (t.type) {
 						case wt.a: {
 							const {
@@ -15602,13 +15602,13 @@
 							return e
 					}
 				},
-				Mt = n("./src/chat/actions/typingIndicator.ts");
+				Tt = n("./src/chat/actions/typingIndicator.ts");
 			const At = {
 				usernames: []
 			};
 			var Lt = (e = At, t) => {
 					switch (t.type) {
-						case Mt.a: {
+						case Tt.a: {
 							const {
 								usernames: n
 							} = t.payload;
@@ -15916,7 +15916,7 @@
 				sidebar: Et,
 				themes: yt,
 				toast: Nt,
-				tooltipId: Tt,
+				tooltipId: Mt,
 				typingIndicator: Lt,
 				user: hn,
 				uploads: Kt,
@@ -16098,7 +16098,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT
+						name: s.Mb.CHAT
 					},
 					path: "/chat/"
 				},
@@ -16129,7 +16129,7 @@
 					component: l,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT_EMPTY
+						name: s.Mb.CHAT_EMPTY
 					},
 					path: "/chat/empty/"
 				},
@@ -16160,7 +16160,7 @@
 					component: u,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT_MINIMIZE
+						name: s.Mb.CHAT_MINIMIZE
 					},
 					path: "/chat/minimize/"
 				},
@@ -16171,7 +16171,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT
+						name: s.Mb.CHAT
 					},
 					path: m
 				},
@@ -16182,7 +16182,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT
+						name: s.Mb.CHAT
 					},
 					path: b
 				},
@@ -16192,7 +16192,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT
+						name: s.Mb.CHAT
 					},
 					path: ["/chat/share"]
 				};
@@ -16206,7 +16206,7 @@
 				chunk: a.s.CHAT,
 				exact: !0,
 				meta: {
-					name: a.Nb.CHAT
+					name: a.Mb.CHAT
 				},
 				path: "/chat/*"
 			};
@@ -16450,8 +16450,8 @@
 				N = n("./src/chat/constants/batchSizes.ts"),
 				k = n("./src/chat/constants/messages.ts"),
 				w = n("./src/chat/constants/sendbird.ts"),
-				T = n("./src/chat/constants/toast.ts"),
-				M = n("./src/chat/helpers/errors.ts"),
+				M = n("./src/chat/constants/toast.ts"),
+				T = n("./src/chat/helpers/errors.ts"),
 				A = n("./src/chat/models/Channel/index.ts"),
 				L = n("./src/chat/models/Channel/utils.ts"),
 				D = n("./src/chat/models/Message/index.ts"),
@@ -16483,7 +16483,7 @@
 						this.isConnected() && (this.toggleUpdateListeners(!1), await this.self.disconnect())
 					}, this.reconnect = async (e = !1) => {
 						this.dispatch(Object(x.g)({
-							toast: T.a.ConnectionPending
+							toast: M.a.ConnectionPending
 						})), e && (await this.disconnect(), await this.dispatch(Object(y.d)())), await this.dispatch(Object(C.l)()), this.dispatch(Object(C.k)())
 					}, this.switchChannel = async (e, t) => {
 						if (this.channel = e, t) return;
@@ -16543,7 +16543,7 @@
 							connectionStatus: w.b.Pending
 						},
 						n = {
-							toast: T.a.ConnectionPending
+							toast: M.a.ConnectionPending
 						};
 					e.onReconnectStarted = () => {
 						this.dispatch(Object(I.h)(t)), this.dispatch(Object(x.g)(n))
@@ -16556,8 +16556,8 @@
 						};
 					e.onReconnectSucceeded = () => {
 						this.dispatch(Object(I.h)(t)), this.dispatch(Object(x.g)({
-							toast: T.a.ConnectionOpen
-						})), Object(d.setTimeout)(() => this.dispatch(Object(x.d)()), 3 * u.Sb);
+							toast: M.a.ConnectionOpen
+						})), Object(d.setTimeout)(() => this.dispatch(Object(x.d)()), 3 * u.Rb);
 						this.dispatch(Object(v.v)(!0)), this.dispatch(Object(m.C)())
 					}, this.self.addConnectionHandler("RECONNECT_SUCCEEDED", e), this.connectionUniqueHandlerID.push("RECONNECT_SUCCEEDED")
 				}
@@ -16568,7 +16568,7 @@
 						};
 					e.onReconnectFailed = () => {
 						this.dispatch(Object(I.h)(t)), this.dispatch(Object(x.g)({
-							toast: T.a.ConnectionClosed
+							toast: M.a.ConnectionClosed
 						}))
 					}, this.self.addConnectionHandler("RECONNECT_FAILED", e), this.connectionUniqueHandlerID.push("RECONNECT_FAILED")
 				}
@@ -16824,8 +16824,8 @@
 									messages: n,
 									hasMore: a
 								})
-							} else Object(M.b)(`Error with getting previous messages from Sendbird: ${a}`), n()
-						})) : (Object(M.b)("Sendbird channel does not exist"), n())
+							} else Object(T.b)(`Error with getting previous messages from Sendbird: ${a}`), n()
+						})) : (Object(T.b)("Sendbird channel does not exist"), n())
 					})
 				}
 				addMessage(e, t, n = []) {
@@ -16833,11 +16833,11 @@
 						if (this.channel) {
 							const c = new(0, this.self.UserMessageParams);
 							c.data = t, c.message = e, n && n.length && (c.mentionType = k.b.USERS, c.mentionedUserIds = n), this.channel.sendUserMessage(c, (e, t) => {
-								if (t) Object(M.b)(`Error with sending the message to Sendbird: ${t}`), s(t);
+								if (t) Object(T.b)(`Error with sending the message to Sendbird: ${t}`), s(t);
 								else {
 									const t = Object(D.c)(e);
 									if (t && t.messageType === k.d.USER) return a(t);
-									Object(M.b)(`Unsupported message type: ${t&&t.messageType}`), s()
+									Object(T.b)(`Unsupported message type: ${t&&t.messageType}`), s()
 								}
 							})
 						}
@@ -16851,7 +16851,7 @@
 						if (this.channel) {
 							const a = e;
 							this.channel.addReaction(a, t, (e, t) => {
-								t ? Object(M.b)(`Error with adding reactions to the message on Sendbird: ${t}`) : n(e)
+								t ? Object(T.b)(`Error with adding reactions to the message on Sendbird: ${t}`) : n(e)
 							})
 						}
 					})
@@ -16861,7 +16861,7 @@
 						if (this.channel) {
 							const n = e;
 							this.channel.deleteMessage(n, (e, n) => {
-								n ? Object(M.b)(`Error with deleting the message on Sendbird: ${n}`) : t(e)
+								n ? Object(T.b)(`Error with deleting the message on Sendbird: ${n}`) : t(e)
 							})
 						}
 					})
@@ -16869,8 +16869,8 @@
 				getFirstMessage() {
 					return new Promise((e, t) => {
 						this.channel ? this.channel.getNextMessagesByTimestamp(0, !0, 1, !0, "", "", (t, n) => {
-							n ? Object(M.b)(`Error with getting first message from Sendbird: ${n}`) : e(t)
-						}) : (Object(M.b)("Sendbird channel does not exist"), t())
+							n ? Object(T.b)(`Error with getting first message from Sendbird: ${n}`) : e(t)
+						}) : (Object(T.b)("Sendbird channel does not exist"), t())
 					})
 				}
 				markChannelAsRead() {
@@ -18044,4 +18044,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.79b21f63cbd830328597.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.3ab2d247fa94fc53b5f7.js.map

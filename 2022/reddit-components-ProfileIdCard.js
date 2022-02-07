@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.56375269f8df404e3269.js
-// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.34480541bea3ec4ae0c8.js
+// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -25,7 +25,7 @@
 				shortMonths: a,
 				locale: o = n.D
 			} = {}) {
-				const i = new Date(e * n.Sb);
+				const i = new Date(e * n.Rb);
 				return s.a ? new Intl.DateTimeFormat(o, {
 					month: a ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -449,7 +449,7 @@
 					const r = Object(o.a)(),
 						n = null != t ? t : r;
 					return s.a.createElement(s.a.Fragment, null, function(e, t = l.D) {
-						const r = e * l.Sb;
+						const r = e * l.Rb;
 						return new Date(r).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -474,7 +474,7 @@
 
 			function b(e, t, r = !1, n = l.D) {
 				const s = Object(p.e)(e, t),
-					a = new Date(e * l.Sb);
+					a = new Date(e * l.Rb);
 				let o;
 				if (s === p.a.Live || r) return u.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -2980,4 +2980,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.56375269f8df404e3269.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.34480541bea3ec4ae0c8.js.map

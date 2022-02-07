@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.588f748fa7586c6410b6.js
-// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.616de2609c0b4d72de97.js
+// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(t, e, o) {
@@ -139,8 +139,8 @@
 				U = o("./src/reddit/helpers/localStorage/index.ts"),
 				F = o("./src/reddit/helpers/trackers/commentsPage.ts"),
 				W = o("./src/reddit/models/Comment/index.ts"),
-				B = o("./src/reddit/models/PostDraft/index.ts"),
-				J = o("./src/reddit/models/RichTextJson/index.ts"),
+				J = o("./src/reddit/models/PostDraft/index.ts"),
+				B = o("./src/reddit/models/RichTextJson/index.ts"),
 				H = o("./src/reddit/models/RichTextJson/nodeMakers.ts"),
 				G = o("./src/reddit/models/Toast/index.ts"),
 				V = o("./src/reddit/selectors/comments.ts"),
@@ -213,7 +213,7 @@
 						});
 						m(Object(l.z)(r, p.a.CommentSubmitted))
 					} else {
-						h.error && h.error.type === r.Kb && F.h(y, dt(s), t);
+						h.error && h.error.type === r.Jb && F.h(y, dt(s), t);
 						const e = h.error && h.error.fields && h.error.fields[0] ? h.error.fields[0].msg : n.fbt._("Something went wrong", null, {
 							hk: "LWFS0"
 						});
@@ -280,7 +280,7 @@
 						depth: c + 1
 					}));
 					else {
-						if (j.error && j.error.type === r.Kb) {
+						if (j.error && j.error.type === r.Jb) {
 							const t = Object(Y.b)(u, {
 								commentId: s
 							});
@@ -297,10 +297,10 @@
 					apiContext: i
 				}) => {
 					const c = t === S.i.RICH_TEXT;
-					if (!e || "object" == typeof e && Object(J.G)(e)) r(Ot({
+					if (!e || "object" == typeof e && Object(B.G)(e)) r(Ot({
 						editorMode: t,
 						draftKey: o,
-						content: c ? J.i : ""
+						content: c ? B.i : ""
 					})), r(Object(m.c)(t));
 					else {
 						r(Object(m.b)(o));
@@ -326,7 +326,7 @@
 					singleOpen: o
 				}) => async (n, r) => {
 					const s = r(),
-						l = Object(i.a)(B.c.replyToComment, e);
+						l = Object(i.a)(J.c.replyToComment, e);
 					if (!Object(Q.K)(r())) return n(Object(d.j)()), void n(Object(a.k)({
 						actionSource: a.a.Reply,
 						redirectUrl: Object(V.m)(r(), {
@@ -359,12 +359,12 @@
 					let y;
 					if (y = p ? {
 							commentMode: O,
-							draftType: B.c.replyToComment,
+							draftType: J.c.replyToComment,
 							rtJson: f,
 							text: `${b}\n`
 						} : j || {
 							commentMode: O,
-							draftType: B.c.replyToComment,
+							draftType: J.c.replyToComment,
 							rtJson: f,
 							text: ""
 						}, Object(Q.M)(s)) {
@@ -416,7 +416,7 @@
 							text: r,
 							commentMode: e,
 							rteState: null,
-							draftType: B.c.edit,
+							draftType: J.c.edit,
 							hasFocus: !0
 						}
 					})))
@@ -1087,4 +1087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.588f748fa7586c6410b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.616de2609c0b4d72de97.js.map

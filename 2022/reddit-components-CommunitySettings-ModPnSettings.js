@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.af84775fd639aa990916.js
-// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.8d5eb434e65dedeadca7.js
+// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CommunitySettings-ModPnSettings"], {
 		"./src/reddit/components/CommunitySettings/ModPnSettings/index.m.less": function(e, t, n) {
@@ -44,8 +44,8 @@
 			}
 			var u = n("./src/reddit/selectors/telemetry.ts"),
 				g = n("./src/redditGQL/types.ts");
-			const m = Object.values(g.k),
-				p = Object.values(g.l),
+			const m = Object.values(g.i),
+				p = Object.values(g.j),
 				b = e => t => {
 					return {
 						source: "mod_pn_settings",
@@ -206,7 +206,7 @@
 				return o.isAuto ? `${o.autoRange}` : `${o.currentRange}`
 			}
 
-			function w({
+			function j({
 				isSectionDisabled: e,
 				layoutData: t,
 				pushPage: n,
@@ -253,9 +253,9 @@
 						return null
 				}
 			}
-			var P = n("./src/reddit/components/Settings/shared/SectionHeading.tsx");
+			var w = n("./src/reddit/components/Settings/shared/SectionHeading.tsx");
 
-			function j({
+			function P({
 				layoutData: e,
 				pushPage: t,
 				sectionId: n,
@@ -274,7 +274,7 @@
 					const e = a[l.id];
 					u = !e.isEnabled
 				}
-				return i.a.createElement("div", null, !!r && i.a.createElement(P.a, null, r), c.map(n => i.a.createElement(w, {
+				return i.a.createElement("div", null, !!r && i.a.createElement(w.a, null, r), c.map(n => i.a.createElement(j, {
 					isSectionDisabled: u,
 					key: n.id,
 					layoutData: e,
@@ -312,7 +312,7 @@
 				}, r && i.a.createElement(c.f, {
 					onClick: e,
 					"data-testid": "mod-pns-back-button"
-				}, i.a.createElement(R.a, null)), i.a.createElement(k.b, null, m)), i.a.createElement(P.a, null, !!p && p.replace("{community}", d)), _.map(e => i.a.createElement(j, {
+				}, i.a.createElement(R.a, null)), i.a.createElement(k.b, null, m)), i.a.createElement(w.a, null, !!p && p.replace("{community}", d)), _.map(e => i.a.createElement(P, {
 					sectionId: e,
 					layoutData: t,
 					settings: s,
@@ -450,7 +450,7 @@
 							return {
 								subredditId: t,
 								name: n,
-								status: e.isEnabled ? g.m.Enabled : g.m.Disabled
+								status: e.isEnabled ? g.k.Enabled : g.k.Disabled
 							}
 						}
 						if (p.includes(n)) {
@@ -479,11 +479,11 @@
 				if (b || !a) return i.a.createElement(M.a, {
 					rowsCount: 5
 				});
-				const w = C[C.length - 1],
-					P = C.length > 1;
+				const j = C[C.length - 1],
+					w = C.length > 1;
 				return i.a.createElement(N, {
-					pageId: w,
-					showBackButton: P,
+					pageId: j,
+					showBackButton: w,
 					updateSetting: (e, t) => {
 						const n = l[e],
 							a = {
@@ -655,4 +655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.af84775fd639aa990916.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CommunitySettings-ModPnSettings.8d5eb434e65dedeadca7.js.map

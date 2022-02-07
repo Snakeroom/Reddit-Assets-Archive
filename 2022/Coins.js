@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.8b12a14254f023466964.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.5221d1a4ae9956f7c36f.js
+// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2061,7 +2061,7 @@
 						requestPurchaseCatalog: r
 					} = this.props;
 					e.length || t || r(this.correlationId), document.documentElement.scrollTop = document.body.scrollTop = 0;
-					const n = m.Nb.COINS;
+					const n = m.Mb.COINS;
 					E.c.has(n) && (this.props.sendEvent(Object(k.b)(C.TimerType.InApp, E.c.end(n))), this.props.sendEvent(Object(k.a)())), Object(p.a)(), this.setTargetedOfferTimeout()
 				}
 				componentDidUpdate() {
@@ -2298,4 +2298,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.8b12a14254f023466964.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.5221d1a4ae9956f7c36f.js.map

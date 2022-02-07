@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.4317d0c3cfa26c59d9ba.js
-// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.b5d2fff1bd04a5b0b68a.js
+// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -72,7 +72,7 @@
 				shortMonths: o,
 				locale: i = r.D
 			} = {}) {
-				const a = new Date(e * r.Sb);
+				const a = new Date(e * r.Rb);
 				return s.a ? new Intl.DateTimeFormat(i, {
 					month: o ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -105,9 +105,9 @@
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/constants/index.ts");
-			const o = [s.qc, s.pb, s.B, s.Q, s.kb, s.Sb],
+			const o = [s.pc, s.pb, s.B, s.Q, s.kb, s.Rb],
 				i = {
-					[s.Sb]: e => r.fbt._({
+					[s.Rb]: e => r.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [r.fbt._plural(e, "number")], {
@@ -137,7 +137,7 @@
 					}, [r.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[s.qc]: e => r.fbt._({
+					[s.pc]: e => r.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [r.fbt._plural(e, "number")], {
@@ -145,7 +145,7 @@
 					})
 				},
 				a = {
-					[s.Sb]: e => r.fbt._("{amount}s", [r.fbt._param("amount", String(e))], {
+					[s.Rb]: e => r.fbt._("{amount}s", [r.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
 					[s.kb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
@@ -160,13 +160,13 @@
 					[s.pb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.qc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[s.pc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[s.pb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.qc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[s.pc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -175,12 +175,12 @@
 				const c = Date.now(),
 					l = new Date(e).getTime(),
 					d = {
-						[s.qc]: "",
+						[s.pc]: "",
 						[s.pb]: "",
 						[s.B]: "",
 						[s.Q]: "",
 						[s.kb]: "",
-						[s.Sb]: ""
+						[s.Rb]: ""
 					};
 				let u = l - c;
 				if (u <= 0) return r.fbt._("a moment", null, {
@@ -1331,7 +1331,7 @@
 					const n = Object(i.a)(),
 						r = null != t ? t : n;
 					return s.a.createElement(s.a.Fragment, null, function(e, t = d.D) {
-						const n = e * d.Sb;
+						const n = e * d.Rb;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -1356,7 +1356,7 @@
 
 			function f(e, t, n = !1, r = d.D) {
 				const s = Object(p.e)(e, t),
-					o = new Date(e * d.Sb);
+					o = new Date(e * d.Rb);
 				let i;
 				if (s === p.a.Live || n) return m.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -1523,7 +1523,7 @@
 				return a.a.createElement("span", {
 					className: e.className
 				}, t ? c._("Voting closed {timeAgo}", [c._param("timeAgo", a.a.createElement(s.d, {
-					seconds: e.poll.endsAt / r.Sb
+					seconds: e.poll.endsAt / r.Rb
 				}))], {
 					hk: "3OERID"
 				}) : Object(o.a)(new Date(e.poll.endsAt)))
@@ -3240,4 +3240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.4317d0c3cfa26c59d9ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.b5d2fff1bd04a5b0b68a.js.map

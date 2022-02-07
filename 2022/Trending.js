@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.f2b4861db3e8b684cb58.js
-// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.820556a9cf6281f69f6c.js
+// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, s) {
@@ -447,4 +447,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.f2b4861db3e8b684cb58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.820556a9cf6281f69f6c.js.map

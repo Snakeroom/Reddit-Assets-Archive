@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.2a2608e0f9dbc15f98c5.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.0eb0321512e2d11cc56a.js
+// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, n) {
@@ -81,7 +81,7 @@
 							const {
 								subredditId: n,
 								fetchedToken: s
-							} = t.payload, r = Object(C.e)(n, s);
+							} = t.payload, r = Object(C.d)(n, s);
 							return {
 								...e,
 								[r]: !0
@@ -92,7 +92,7 @@
 							const {
 								subredditId: n,
 								fetchedToken: s
-							} = t.payload, r = Object(C.e)(n, s);
+							} = t.payload, r = Object(C.d)(n, s);
 							return {
 								...e,
 								[r]: !1
@@ -113,7 +113,7 @@
 							const {
 								fetchedToken: n,
 								subredditId: s
-							} = t.payload, r = Object(C.e)(s, n);
+							} = t.payload, r = Object(C.d)(s, n);
 							return {
 								...e,
 								[r]: !0
@@ -276,7 +276,7 @@
 				}) => {
 					const a = s(),
 						o = t.after || "",
-						d = Object(C.e)(e, o),
+						d = Object(C.d)(e, o),
 						i = a.features.banned.fetchedTokens[d];
 					if (a.features.banned.api.pending[d] || i) return;
 					n(z({
@@ -1067,4 +1067,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.2a2608e0f9dbc15f98c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.0eb0321512e2d11cc56a.js.map

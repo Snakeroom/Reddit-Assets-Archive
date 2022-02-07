@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.050eaf59dd5e20245f93.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.077a599e4d3a09cb5ae9.js
+// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, r) {
@@ -128,8 +128,8 @@
 								displayName: i.toLowerCase()
 							}
 						}).sort((e, t) => e.displayName.localeCompare(t.displayName)),
-						s = i.filter(e => !e.displayName.startsWith(a.jc)).map(e => e.id),
-						d = i.filter(e => e.displayName.startsWith(a.jc)).map(e => e.id);
+						s = i.filter(e => !e.displayName.startsWith(a.ic)).map(e => e.id),
+						d = i.filter(e => e.displayName.startsWith(a.ic)).map(e => e.id);
 					return {
 						created: e.created_utc,
 						description: e.description_md,
@@ -298,7 +298,7 @@
 						} = o,
 						O = Object(l.a)(h, u, x),
 						j = b.B in x && x[b.B].toUpperCase() || "",
-						g = a.hc[j] || !1,
+						g = a.gc[j] || !1,
 						y = Object(I.k)(i);
 					(f || y && y.displayText) && await e(Object(m.multiredditFeedRequested)(O, (f || y.displayText).toLowerCase(), p.toLowerCase(), {
 						...d()(x, b.m),
@@ -371,7 +371,7 @@
 					} = l;
 					if (!m) return;
 					const b = r.map(e => `/user/${m.toLowerCase()}/m/${e.toLowerCase()}`).join(","),
-						j = `${"profile"===t.type?a.jc:""}${t.name}`,
+						j = `${"profile"===t.type?a.ic:""}${t.name}`,
 						g = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 							endpoint: Object(O.a)(`${e.apiUrl}/api/multi/bulk_add/r/${t}`),
 							data: {
@@ -427,7 +427,7 @@
 					}));
 					const {
 						displayText: m
-					} = l, b = Object(N.h)(m, t), j = `${"profile"===s?a.jc:""}${r}`, g = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
+					} = l, b = Object(N.h)(m, t), j = `${"profile"===s?a.ic:""}${r}`, g = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(O.a)(`${e.apiUrl}/api/multi${r}r/${t}`),
 						method: a.jb.DELETE
 					}))(o(), j, b);
@@ -678,7 +678,7 @@
 						C = f.listings.postOrder.api.error[O],
 						F = f.listings.postOrder.api.pending[O],
 						N = b.B in e.queryParams && e.queryParams[b.B].toUpperCase() || "",
-						E = N in l.hc && l.hc[N];
+						E = N in l.gc && l.gc[N];
 					if (F || g && !C && !t) return void(g && (r(u.m({
 						title: Object(_.f)(i(), m)
 					})), f.sidebarPromotedPosts.firstFetch || r(Object(v.b)(T.a.MULTIREDDIT))));
@@ -1256,8 +1256,8 @@
 			e.exports = JSON.parse('{"id":"d5a173c1e5e2"}')
 		},
 		"./src/redditGQL/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"1f08d4e1bb27"}')
+			e.exports = JSON.parse('{"id":"adaefcf04472"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.050eaf59dd5e20245f93.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.077a599e4d3a09cb5ae9.js.map
