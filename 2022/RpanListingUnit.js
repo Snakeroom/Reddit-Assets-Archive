@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.c963db6c0e635ee3d36f.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.3d734eae15ac0c7d56ae.js
+// Retrieved at 2/7/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -634,7 +634,7 @@
 						})
 					}, []);
 				Object(a.a)(A, F);
-				const [U, V] = Object(s.useState)(!1), G = Object(s.useCallback)(e => {
+				const [U, V] = Object(s.useState)(!1), B = Object(s.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
@@ -642,10 +642,10 @@
 						} = e, s = 1 !== n;
 						t ? V(!0) : s && V(!1)
 					})
-				}, []), B = Object(s.useRef)({
+				}, []), G = Object(s.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(a.a)(A, G, B.current);
+				Object(a.a)(A, B, G.current);
 				const H = Object(o.a)(t);
 				Object(s.useEffect)(() => {
 					if (void 0 !== H && H !== t) {
@@ -1344,8 +1344,8 @@
 				F = n("./src/reddit/components/PostLeftRail/index.tsx"),
 				U = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				V = n("./src/reddit/controls/Dropdown/Row.tsx"),
-				G = n("./src/reddit/controls/InternalLink/index.tsx"),
-				B = n("./src/reddit/controls/Score/index.tsx"),
+				B = n("./src/reddit/controls/InternalLink/index.tsx"),
+				G = n("./src/reddit/controls/Score/index.tsx"),
 				H = n("./src/reddit/icons/fonts/index.tsx"),
 				Y = n("./src/reddit/helpers/styles/mixins/index.m.less"),
 				K = n.n(Y),
@@ -1589,7 +1589,7 @@
 				renderTitleAndDescription(e) {
 					return r.a.createElement("div", {
 						className: q.a.titleAndDescriptionContainer
-					}, r.a.createElement(G.a, {
+					}, r.a.createElement(B.a, {
 						to: this.props.location
 					}, r.a.createElement(ee, null), e && r.a.createElement(te, null)))
 				}
@@ -1603,7 +1603,7 @@
 					}))), r.a.createElement("div", {
 						className: q.a.body,
 						ref: this.observableElement
-					}, r.a.createElement(G.a, {
+					}, r.a.createElement(B.a, {
 						to: this.props.location,
 						onClick: this.onStreamClicked,
 						className: q.a.previewLink,
@@ -1616,7 +1616,7 @@
 					return r.a.createElement("div", {
 						className: q.a.body,
 						ref: this.observableElement
-					}, r.a.createElement(G.a, {
+					}, r.a.createElement(B.a, {
 						to: this.props.location,
 						onClick: this.onStreamClicked
 					}, r.a.createElement("div", {
@@ -1801,7 +1801,7 @@
 						[q.a.verticalVotes]: e.isVertical,
 						[q.a.horizontalVotes]: !e.isVertical
 					})
-				}, r.a.createElement(B.a, {
+				}, r.a.createElement(G.a, {
 					className: q.a.score,
 					isScoreHidden: !0,
 					score: 0,
@@ -2514,9 +2514,9 @@
 			})), n.d(t, "clickFilterEvent", (function() {
 				return V
 			})), n.d(t, "clickNextFiltersEvent", (function() {
-				return G
-			})), n.d(t, "clickPreviousFiltersEvent", (function() {
 				return B
+			})), n.d(t, "clickPreviousFiltersEvent", (function() {
+				return G
 			}));
 			var s = n("./src/reddit/models/Gold/Award.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts"),
@@ -2712,13 +2712,13 @@
 						filterName: e.content.markdown
 					}
 				}),
-				G = () => e => ({
+				B = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
 					noun: "next_filters"
 				}),
-				B = () => e => ({
+				G = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
@@ -4141,7 +4141,7 @@
 					const n = Object(i.G)(e, {
 						postId: t
 					});
-					return !(!n || n.isSponsored) && (Object(a.vb)(e, {
+					return !(!n || n.isSponsored || n.removedByCategory) && (Object(a.vb)(e, {
 						postId: t
 					}) || !!Object(o.l)(e, {
 						postId: t
@@ -4326,4 +4326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.c963db6c0e635ee3d36f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.3d734eae15ac0c7d56ae.js.map
