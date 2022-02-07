@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.2b160f0ef143776a2e6d.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.82a189dce1a5be06d3e3.js
+// Retrieved at 2/7/2022, 12:00:15 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-PaypalFinishPage"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -981,64 +981,59 @@
 				f = r("./src/reddit/icons/svgs/Replay/index.tsx"),
 				m = r("./src/reddit/pages/PaypalFinishPage/index.m.less"),
 				y = r.n(m);
-			const b = "r",
-				g = "o",
-				j = "p",
-				v = "approval_token_id",
-				O = "s",
-				h = "pt",
-				E = Object(c.c)({
-					paypalErrorMessage: l.d
-				}),
-				C = Object(a.b)(E);
-			var P;
+			const {
+				fbt: b
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), g = "r", j = "o", v = "p", O = "approval_token_id", h = "s", E = "pt", C = Object(c.c)({
+				paypalErrorMessage: l.d
+			}), P = Object(a.b)(C);
+			var x;
 			! function(e) {
 				e.Loading = "loading", e.Error = "error", e.Success = "success", e.Cancel = "cancel"
-			}(P || (P = {}));
-			t.default = C(e => {
+			}(x || (x = {}));
+			t.default = P(e => {
 				const {
 					params: t,
 					paypalErrorMessage: r
-				} = e, a = t[b], c = t[g], l = t[O], m = t[j], E = t[v], C = t[h], x = Object(u.a)(), S = async () => {
-					k(P.Loading), await x(Object(s.g)(m, E)) ? ((() => e.postMessage({
+				} = e, a = t[g], c = t[j], l = t[h], m = t[v], C = t[O], P = t[E], S = Object(u.a)(), w = async () => {
+					_(x.Loading), await S(Object(s.g)(m, C)) ? ((() => e.postMessage({
 						type: "paypal-finish.success",
 						data: {
 							subredditId: a,
 							orderId: c
 						}
 					}))(), setTimeout(() => {
-						window.close(), k(P.Success)
-					}, 1500)) : k(P.Error)
+						window.close(), _(x.Success)
+					}, 1500)) : _(x.Error)
 				};
 				Object(n.useEffect)(() => {
-					x(Object(i.m)({
-						title: d.e[C]()
-					})), l ? S() : ((() => e.postMessage({
+					S(Object(i.m)({
+						title: d.e[P]()
+					})), l ? w() : ((() => e.postMessage({
 						type: "paypal-finish.cancel"
 					}))(), setTimeout(() => {
-						window.close(), k(P.Cancel)
+						window.close(), _(x.Cancel)
 					}, 1500))
 				}, []);
-				const [w, k] = Object(n.useState)(P.Loading);
-				return o.a.createElement(o.a.Fragment, null, w === P.Loading && o.a.createElement(p.a, {
+				const [k, _] = Object(n.useState)(x.Loading);
+				return o.a.createElement(o.a.Fragment, null, k === x.Loading && o.a.createElement(p.a, {
 					className: y.a.loader,
 					sizePx: 60
-				}), w === P.Error && o.a.createElement("div", {
+				}), k === x.Error && o.a.createElement("div", {
 					className: y.a.details
 				}, r && o.a.createElement("div", {
 					className: y.a.error
 				}, r), o.a.createElement("button", {
-					onClick: S,
+					onClick: w,
 					className: y.a.repeatButton
 				}, o.a.createElement(f.a, {
 					className: y.a.repeatIcon
-				}))), w === P.Success && o.a.createElement("div", {
+				}))), k === x.Success && o.a.createElement("div", {
 					className: y.a.details
-				}, fbt._("Thanks for the purchase. It is safe to close this page now.", null, {
+				}, b._("Thanks for the purchase. It is safe to close this page now.", null, {
 					hk: "1cdx2b"
-				})), w === P.Cancel && o.a.createElement("div", {
+				})), k === x.Cancel && o.a.createElement("div", {
 					className: y.a.details
-				}, fbt._("It is safe to close this page.", null, {
+				}, b._("It is safe to close this page.", null, {
 					hk: "Zh0mx"
 				})))
 			})
@@ -1078,4 +1073,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.2b160f0ef143776a2e6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.82a189dce1a5be06d3e3.js.map
