@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.7d6153f1414c0a2cbd20.js
-// Retrieved at 2/4/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.9ea9a07a0757b349a0c4.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -8305,17 +8305,17 @@
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const a = e => t => ({
-					...Object(s.n)(t),
+					...Object(s.o)(t),
 					source: "meta",
 					action: e,
 					noun: "feed_claim_points_banner",
-					subreddit: Object(s.ib)(t)
+					subreddit: Object(s.jb)(t)
 				}),
 				r = () => a("view"),
 				o = () => a("tap"),
 				i = () => a("dismiss"),
 				l = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "meta",
 					action: "view",
 					noun: "points_learn_more",
@@ -8324,7 +8324,7 @@
 					}
 				}),
 				c = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "meta",
 					action: "view",
 					noun: "points_faq",
@@ -8333,7 +8333,7 @@
 					}
 				}),
 				d = e => t => ({
-					...Object(s.n)(t),
+					...Object(s.o)(t),
 					source: "meta",
 					action: "view",
 					noun: "points_faq_section",
@@ -8342,17 +8342,17 @@
 					}
 				}),
 				m = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					source: "meta",
 					action: "click",
 					noun: "learn_more_create_vault_button"
 				}),
 				u = e => t => ({
-					...Object(s.n)(t),
+					...Object(s.o)(t),
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(s.jb)(t, e)
+					subreddit: Object(s.kb)(t, e)
 				})
 		},
 		"./src/reddit/helpers/trackers/followers.ts": function(e, t, n) {
@@ -8365,13 +8365,13 @@
 			var s = n("./src/reddit/constants/tracking.ts"),
 				a = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => t => ({
-					...Object(a.n)(t),
+					...Object(a.o)(t),
 					action: s.c.CLICK,
 					noun: `follower_list_page_${e?"follow":"unfollow"}`,
 					source: "profile"
 				}),
 				o = () => e => ({
-					...Object(a.n)(e),
+					...Object(a.o)(e),
 					action: s.c.CLICK,
 					noun: "follower_list_cta",
 					source: "profile"
@@ -8413,9 +8413,9 @@
 				r = n("./src/telemetry/models/GoldPurchase.ts"),
 				o = n("./src/reddit/helpers/correlationIdTracker.ts");
 			const i = e => ({
-					...s.n(e),
+					...s.o(e),
 					correlationId: Object(o.c)(o.a.PremiumSettings),
-					screen: s.ab(e)
+					screen: s.bb(e)
 				}),
 				l = () => e => ({
 					...i(e),
@@ -8450,7 +8450,7 @@
 					action: "view",
 					noun: "page",
 					actionInfo: {
-						...s.c(t),
+						...s.d(t),
 						reason: e
 					}
 				}),
@@ -8472,7 +8472,7 @@
 						premiumCancelReason: t
 					},
 					actionInfo: {
-						...s.c(n),
+						...s.d(n),
 						reason: e
 					}
 				}),
@@ -8482,7 +8482,7 @@
 					action: "click",
 					noun: "cancel_no",
 					actionInfo: {
-						...s.c(t),
+						...s.d(t),
 						reason: e
 					}
 				}),
@@ -8545,7 +8545,7 @@
 					action: "connect",
 					noun: "sso",
 					actionInfo: {
-						...a.c(t),
+						...a.d(t),
 						type: e
 					}
 				}),
@@ -8554,7 +8554,7 @@
 					action: "disconnect",
 					noun: "sso",
 					actionInfo: {
-						...a.c(t),
+						...a.d(t),
 						type: e
 					}
 				}),
@@ -12750,4 +12750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.7d6153f1414c0a2cbd20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9ea9a07a0757b349a0c4.js.map

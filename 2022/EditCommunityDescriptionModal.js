@@ -1,27 +1,27 @@
-// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.0588098d9be84162f33c.js
-// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.6b78602c07eb243a0b8a.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EditCommunityDescriptionModal"], {
-		"./src/lib/hooks/useMutation.ts": function(e, t, s) {
+		"./src/lib/hooks/useMutation.ts": function(e, t, o) {
 			"use strict";
-			s.d(t, "a", (function() {
+			o.d(t, "a", (function() {
 				return r
 			}));
-			var n = s("./node_modules/react/index.js"),
-				o = s("./src/reddit/hooks/useGqlContext.ts");
+			var s = o("./node_modules/react/index.js"),
+				n = o("./src/reddit/hooks/useGqlContext.ts");
 
 			function r(e) {
-				const t = Object(o.a)(),
-					[s, r] = Object(n.useState)(!1),
-					[a, c] = Object(n.useState)(!1),
-					[i, d] = Object(n.useState)(null),
-					[u, l] = Object(n.useState)(null);
-				return [Object(n.useCallback)(async s => {
-					let n, o;
+				const t = Object(n.a)(),
+					[o, r] = Object(s.useState)(!1),
+					[a, c] = Object(s.useState)(!1),
+					[i, d] = Object(s.useState)(null),
+					[u, l] = Object(s.useState)(null);
+				return [Object(s.useCallback)(async o => {
+					let s, n;
 					r(!0), c(!0);
 					try {
-						if ((o = (n = await e(t(), s)).body).error) throw new Error(o.error.message);
-						l(o.data)
+						if ((n = (s = await e(t(), o)).body).error) throw new Error(n.error.message);
+						l(n.data)
 					} catch (i) {
 						d(i)
 					} finally {
@@ -30,12 +30,12 @@
 				}, [t, e]), {
 					data: u,
 					error: i,
-					pending: s,
+					pending: o,
 					called: a
 				}]
 			}
 		},
-		"./src/reddit/components/EditCommunityDescriptionModal/index.m.less": function(e, t, s) {
+		"./src/reddit/components/EditCommunityDescriptionModal/index.m.less": function(e, t, o) {
 			e.exports = {
 				ModalBody: "bHp9U-xwuQZkN1op0j8n7",
 				modalBody: "bHp9U-xwuQZkN1op0j8n7",
@@ -57,35 +57,35 @@
 				saveButton: "_1cTbZ-X_H321wG2mSECP2L"
 			}
 		},
-		"./src/reddit/components/EditCommunityDescriptionModal/index.tsx": function(e, t, s) {
+		"./src/reddit/components/EditCommunityDescriptionModal/index.tsx": function(e, t, o) {
 			"use strict";
-			s.r(t);
-			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
-				o = s("./node_modules/react/index.js"),
-				r = s.n(o),
-				a = s("./node_modules/react-redux/es/index.js"),
-				c = s("./src/higherOrderComponents/asModal/index.tsx"),
-				i = s("./src/lib/hooks/useMutation.ts"),
-				d = s("./src/reddit/actions/modal.ts"),
-				u = s("./src/reddit/actions/subreddit/questions.ts"),
-				l = s("./src/reddit/actions/subredditSettings.ts"),
-				m = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				p = s("./src/reddit/constants/modals.ts"),
-				b = s("./src/reddit/controls/Button/index.tsx"),
-				_ = s("./src/reddit/endpoints/subreddit/newCommunityProgress.ts"),
-				y = s("./src/reddit/helpers/trackers/communityProgressModule.ts"),
-				j = s("./src/reddit/hooks/useTracking.ts"),
-				f = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				O = s("./src/reddit/selectors/experiments/newCommunityProgressV3.ts"),
-				C = s("./src/reddit/selectors/platform.ts"),
-				g = s("./src/reddit/components/EditCommunityDescriptionModal/index.m.less"),
-				x = s.n(g);
+			o.r(t);
+			var s = o("./node_modules/fbt/lib/FbtPublic.js"),
+				n = o("./node_modules/react/index.js"),
+				r = o.n(n),
+				a = o("./node_modules/react-redux/es/index.js"),
+				c = o("./src/higherOrderComponents/asModal/index.tsx"),
+				i = o("./src/lib/hooks/useMutation.ts"),
+				d = o("./src/reddit/actions/modal.ts"),
+				u = o("./src/reddit/actions/subreddit/questions.ts"),
+				l = o("./src/reddit/actions/subredditSettings.ts"),
+				m = o("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				p = o("./src/reddit/constants/modals.ts"),
+				b = o("./src/reddit/controls/Button/index.tsx"),
+				_ = o("./src/reddit/endpoints/subreddit/newCommunityProgress.ts"),
+				j = o("./src/reddit/helpers/trackers/communityProgressModule.ts"),
+				y = o("./src/reddit/hooks/useTracking.ts"),
+				f = o("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				O = o("./src/reddit/selectors/experiments/newCommunityProgressV3.ts"),
+				C = o("./src/reddit/selectors/platform.ts"),
+				g = o("./src/reddit/components/EditCommunityDescriptionModal/index.m.less"),
+				x = o.n(g);
 			t.default = Object(c.a)(() => {
 				const e = Object(a.e)(C.c),
 					t = Object(a.e)(t => e && Object(O.c)(t)[e]),
-					[s, c] = Object(o.useState)(""),
+					[o, c] = Object(n.useState)(""),
 					g = Object(a.d)(),
-					M = Object(j.a)(),
+					M = Object(y.a)(),
 					[E] = Object(i.a)(_.a);
 				if (!e || !t) return null;
 				const k = () => g(Object(d.i)(p.a.EDIT_DESCRIPTION_MODAL));
@@ -95,7 +95,7 @@
 					className: x.a.ModalHeader
 				}, r.a.createElement(f.a, {
 					className: x.a.ExpandLeft
-				}, r.a.createElement(m.q, null, n.fbt._("Write a description", null, {
+				}, r.a.createElement(m.q, null, s.fbt._("Write a description", null, {
 					hk: "1aXT9M"
 				})), r.a.createElement(b.t, {
 					className: x.a.CloseButton,
@@ -106,56 +106,56 @@
 				}, r.a.createElement(m.t, {
 					className: x.a.TextArea,
 					onChange: e => c(e.currentTarget.value),
-					placeholder: n.fbt._("Tell people what your community is about...", null, {
+					placeholder: s.fbt._("Tell people what your community is about...", null, {
 						hk: "17XTOW"
 					}),
-					value: s
+					value: o
 				}), r.a.createElement("label", {
 					className: x.a.TextAreaLabel
-				}, n.fbt._("description", null, {
+				}, s.fbt._("description", null, {
 					hk: "Pkdpn"
 				}))), r.a.createElement(m.g, {
 					className: x.a.modalFooter
 				}, r.a.createElement(m.a, {
 					onClick: k
-				}, n.fbt._("Cancel", null, {
+				}, s.fbt._("Cancel", null, {
 					hk: "2TSLl5"
 				})), r.a.createElement(b.t, {
 					className: x.a.SaveButton,
 					onClick: async () => {
 						g(Object(l.j)(e, {
-							publicDescription: s
+							publicDescription: o
 						}, {}, !0)), await E({
 							input: {
 								subredditId: e,
 								cardId: "add_descr"
 							}
-						}), M(Object(y.d)(t, "add_descr")), g(Object(u.b)(e)), k()
+						}), M(Object(j.d)(t, "add_descr")), g(Object(u.b)(e)), k()
 					}
-				}, n.fbt._("Save", null, {
+				}, s.fbt._("Save", null, {
 					hk: "4yMsMq"
 				}))))
 			})
 		},
-		"./src/reddit/endpoints/subreddit/newCommunityProgress.ts": function(e, t, s) {
+		"./src/reddit/endpoints/subreddit/newCommunityProgress.ts": function(e, t, o) {
 			"use strict";
-			s.d(t, "d", (function() {
+			o.d(t, "d", (function() {
 				return d
-			})), s.d(t, "e", (function() {
+			})), o.d(t, "e", (function() {
 				return u
-			})), s.d(t, "a", (function() {
+			})), o.d(t, "a", (function() {
 				return l
-			})), s.d(t, "b", (function() {
+			})), o.d(t, "b", (function() {
 				return m
-			})), s.d(t, "c", (function() {
+			})), o.d(t, "c", (function() {
 				return p
 			}));
-			var n = s("./src/redditGQL/operations/CompleteCommunityProgressCard.json"),
-				o = s("./src/redditGQL/operations/CompleteCommunityProgressModule.json"),
-				r = s("./src/redditGQL/operations/DismissCommunityProgressCard.json"),
-				a = s("./src/redditGQL/operations/DismissCommunityProgressCardV2.json"),
-				c = s("./src/lib/makeGqlRequest/index.ts"),
-				i = s("./src/reddit/actions/subreddit/questions.ts");
+			var s = o("./src/redditGQL/operations/CompleteCommunityProgressCard.json"),
+				n = o("./src/redditGQL/operations/CompleteCommunityProgressModule.json"),
+				r = o("./src/redditGQL/operations/DismissCommunityProgressCard.json"),
+				a = o("./src/redditGQL/operations/DismissCommunityProgressCardV2.json"),
+				c = o("./src/lib/makeGqlRequest/index.ts"),
+				i = o("./src/reddit/actions/subreddit/questions.ts");
 			const d = (e, t) => Object(c.a)(e, {
 					...r,
 					variables: t
@@ -165,15 +165,15 @@
 					variables: t
 				}),
 				l = (e, t) => Object(c.a)(e, {
-					...n,
+					...s,
 					variables: t
 				}),
 				m = (e, t) => Object(c.a)(e, {
-					...o,
+					...n,
 					variables: t
 				}),
-				p = (e, t) => async (s, n, {
-					gqlContext: o
+				p = (e, t) => async (o, s, {
+					gqlContext: n
 				}) => {
 					const r = {
 						input: {
@@ -181,116 +181,116 @@
 							moduleId: t
 						}
 					};
-					await m(o(), r), s(Object(i.b)(e))
+					await m(n(), r), o(Object(i.b)(e))
 				}
 		},
-		"./src/reddit/helpers/trackers/communityProgressModule.ts": function(e, t, s) {
+		"./src/reddit/helpers/trackers/communityProgressModule.ts": function(e, t, o) {
 			"use strict";
-			s.d(t, "g", (function() {
+			o.d(t, "g", (function() {
 				return r
-			})), s.d(t, "b", (function() {
+			})), o.d(t, "b", (function() {
 				return a
-			})), s.d(t, "f", (function() {
+			})), o.d(t, "f", (function() {
 				return c
-			})), s.d(t, "c", (function() {
+			})), o.d(t, "c", (function() {
 				return i
-			})), s.d(t, "a", (function() {
+			})), o.d(t, "a", (function() {
 				return d
-			})), s.d(t, "e", (function() {
+			})), o.d(t, "e", (function() {
 				return u
-			})), s.d(t, "d", (function() {
+			})), o.d(t, "d", (function() {
 				return l
 			}));
-			var n = s("./src/reddit/selectors/telemetry.ts");
+			var s = o("./src/reddit/selectors/telemetry.ts");
 
-			function o(e, t) {
+			function n(e, t) {
 				return {
 					moduleName: e.id,
 					cardName: t
 				}
 			}
-			const r = (e, t) => s => ({
-					...Object(n.n)(s),
+			const r = (e, t) => o => ({
+					...Object(s.o)(o),
 					source: "new_community_setup",
 					action: "view",
 					noun: "progress_module",
-					progressModule: o(e),
+					progressModule: n(e),
 					actionInfo: {
 						pageType: "community",
 						reason: t
 					},
-					subreddit: Object(n.ib)(s)
+					subreddit: Object(s.jb)(o)
 				}),
-				a = (e, t, s) => r => ({
-					...Object(n.n)(r),
+				a = (e, t, o) => r => ({
+					...Object(s.o)(r),
 					source: "new_community_setup",
 					action: "click",
 					noun: "card_action_button",
-					progressModule: o(e, t),
+					progressModule: n(e, t),
 					actionInfo: {
 						pageType: "community",
-						...s && {
-							reason: s
+						...o && {
+							reason: o
 						}
 					},
-					subreddit: Object(n.ib)(r)
+					subreddit: Object(s.jb)(r)
 				}),
 				c = e => t => ({
-					...Object(n.n)(t),
+					...Object(s.o)(t),
 					source: "new_community_setup",
 					action: "click",
 					noun: "expand_progress_module",
-					progressModule: o(e),
+					progressModule: n(e),
 					actionInfo: {
 						pageType: "community",
 						reason: "expanded_module"
 					},
-					subreddit: Object(n.ib)(t)
+					subreddit: Object(s.jb)(t)
 				}),
 				i = e => t => ({
-					...Object(n.n)(t),
+					...Object(s.o)(t),
 					source: "new_community_setup",
 					action: "click",
 					noun: "collapse_progress_module",
-					progressModule: o(e),
+					progressModule: n(e),
 					actionInfo: {
 						pageType: "community",
 						reason: "collapses_module"
 					},
-					subreddit: Object(n.ib)(t)
+					subreddit: Object(s.jb)(t)
 				}),
-				d = (e, t) => s => ({
-					...Object(n.n)(s),
+				d = (e, t) => o => ({
+					...Object(s.o)(o),
 					source: "new_community_setup",
 					action: "click",
 					noun: "card_menu_button",
-					progressModule: o(e, t),
+					progressModule: n(e, t),
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(n.ib)(s)
+					subreddit: Object(s.jb)(o)
 				}),
-				u = (e, t) => s => ({
-					...Object(n.n)(s),
+				u = (e, t) => o => ({
+					...Object(s.o)(o),
 					source: "new_community_setup",
 					action: "click",
 					noun: "dismiss",
-					progressModule: o(e, t),
+					progressModule: n(e, t),
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(n.ib)(s)
+					subreddit: Object(s.jb)(o)
 				}),
-				l = (e, t) => s => ({
-					...Object(n.n)(s),
+				l = (e, t) => o => ({
+					...Object(s.o)(o),
 					source: "new_community_setup",
 					action: "click",
 					noun: "complete",
-					progressModule: o(e, t),
+					progressModule: n(e, t),
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(n.ib)(s)
+					subreddit: Object(s.jb)(o)
 				})
 		},
 		"./src/redditGQL/operations/CompleteCommunityProgressCard.json": function(e) {
@@ -307,4 +307,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.0588098d9be84162f33c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.6b78602c07eb243a0b8a.js.map

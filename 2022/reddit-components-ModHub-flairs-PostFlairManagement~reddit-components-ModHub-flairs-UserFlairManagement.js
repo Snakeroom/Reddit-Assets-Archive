@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.b47a1d153d29c894a046.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.68a67e8e64589593d393.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, a) {
@@ -306,9 +306,9 @@
 				C = a("./src/reddit/selectors/telemetry.ts");
 			const E = e => e === f.d.LinkFlair ? "postflairmanagement" : "userflairmanagement",
 				v = e => ({
-					...C.n(e),
-					subreddit: C.ib(e),
-					userSubreddit: C.sb(e)
+					...C.o(e),
+					subreddit: C.jb(e),
+					userSubreddit: C.tb(e)
 				}),
 				x = e => t => a => ({
 					...v(a),
@@ -321,7 +321,7 @@
 					source: E(t),
 					action: "toggle",
 					noun: e,
-					actionInfo: C.c(s, {
+					actionInfo: C.d(s, {
 						settingValue: a ? "on" : "off"
 					})
 				}),
@@ -340,7 +340,7 @@
 					source: E(e),
 					action: "click",
 					noun: "reorder",
-					actionInfo: C.c(a, {
+					actionInfo: C.d(a, {
 						count: t
 					})
 				}),
@@ -357,7 +357,7 @@
 					source: E(e),
 					action: "click",
 					noun: "limit_number_emojis",
-					actionInfo: C.c(a, {
+					actionInfo: C.d(a, {
 						settingValue: t
 					})
 				});
@@ -1961,8 +1961,8 @@
 								source: "layout_switch",
 								action: "click",
 								noun: s,
-								screen: Object(b.ab)(e),
-								subreddit: Object(b.ib)(e)
+								screen: Object(b.bb)(e),
+								subreddit: Object(b.jb)(e)
 							})))
 						})(s.layout),
 						l = () => e.toggleTooltip(r),
@@ -2003,4 +2003,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.b47a1d153d29c894a046.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.68a67e8e64589593d393.js.map

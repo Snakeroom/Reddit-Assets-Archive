@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.ad1e70fff6b4abe6a811.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.22382b4fab2a9f7073ed.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, s) {
@@ -435,7 +435,7 @@
 				}) => Object(_.i)(e, {
 					postId: t.id
 				}),
-				pageType: e => Object(f.c)(e).pageType
+				pageType: e => Object(f.d)(e).pageType
 			}));
 			class y extends n.a.Component {
 				constructor() {
@@ -1480,4 +1480,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.ad1e70fff6b4abe6a811.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.22382b4fab2a9f7073ed.js.map

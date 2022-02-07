@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress.a7ab2ca3e16ac4d82c66.js
-// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress.b40080e2fb4276025d5a.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress"], {
 		"./src/reddit/components/NewCommunityProgress/icons/index.tsx": function(C, e, a) {
@@ -1223,7 +1223,7 @@
 				}
 			}
 			const L = (C, e) => a => ({
-					...Object(l.n)(a),
+					...Object(l.o)(a),
 					source: "new_community_setup",
 					action: "view",
 					noun: "progress_module",
@@ -1232,10 +1232,10 @@
 						pageType: "community",
 						reason: e
 					},
-					subreddit: Object(l.ib)(a)
+					subreddit: Object(l.jb)(a)
 				}),
 				c = (C, e, a) => L => ({
-					...Object(l.n)(L),
+					...Object(l.o)(L),
 					source: "new_community_setup",
 					action: "click",
 					noun: "card_action_button",
@@ -1246,10 +1246,10 @@
 							reason: a
 						}
 					},
-					subreddit: Object(l.ib)(L)
+					subreddit: Object(l.jb)(L)
 				}),
 				n = C => e => ({
-					...Object(l.n)(e),
+					...Object(l.o)(e),
 					source: "new_community_setup",
 					action: "click",
 					noun: "expand_progress_module",
@@ -1258,10 +1258,10 @@
 						pageType: "community",
 						reason: "expanded_module"
 					},
-					subreddit: Object(l.ib)(e)
+					subreddit: Object(l.jb)(e)
 				}),
 				i = C => e => ({
-					...Object(l.n)(e),
+					...Object(l.o)(e),
 					source: "new_community_setup",
 					action: "click",
 					noun: "collapse_progress_module",
@@ -1270,10 +1270,10 @@
 						pageType: "community",
 						reason: "collapses_module"
 					},
-					subreddit: Object(l.ib)(e)
+					subreddit: Object(l.jb)(e)
 				}),
 				r = (C, e) => a => ({
-					...Object(l.n)(a),
+					...Object(l.o)(a),
 					source: "new_community_setup",
 					action: "click",
 					noun: "card_menu_button",
@@ -1281,10 +1281,10 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(l.ib)(a)
+					subreddit: Object(l.jb)(a)
 				}),
 				d = (C, e) => a => ({
-					...Object(l.n)(a),
+					...Object(l.o)(a),
 					source: "new_community_setup",
 					action: "click",
 					noun: "dismiss",
@@ -1292,10 +1292,10 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(l.ib)(a)
+					subreddit: Object(l.jb)(a)
 				}),
 				m = (C, e) => a => ({
-					...Object(l.n)(a),
+					...Object(l.o)(a),
 					source: "new_community_setup",
 					action: "click",
 					noun: "complete",
@@ -1303,7 +1303,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(l.ib)(a)
+					subreddit: Object(l.jb)(a)
 				})
 		},
 		"./src/redditGQL/operations/CompleteCommunityProgressCard.json": function(C) {
@@ -1320,4 +1320,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress.a7ab2ca3e16ac4d82c66.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress.b40080e2fb4276025d5a.js.map

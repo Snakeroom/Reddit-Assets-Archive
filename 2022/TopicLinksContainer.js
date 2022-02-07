@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopicLinksContainer.c7e0bb7449369e994ccf.js
-// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopicLinksContainer.55c7722c4115637d6395.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopicLinksContainer"], {
 		"./src/reddit/components/IdCard/TopicLinksContainer/index.m.less": function(e, t, n) {
@@ -25,8 +25,8 @@
 				i = n("./node_modules/react/index.js"),
 				c = n.n(i),
 				a = n("./node_modules/react-redux/es/index.js"),
-				r = n("./node_modules/reselect/es/index.js"),
-				o = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				o = n("./node_modules/reselect/es/index.js"),
+				r = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				d = n("./src/reddit/controls/Button/index.tsx"),
 				l = n("./src/reddit/constants/tracking.ts"),
 				p = n("./src/reddit/selectors/telemetry.ts");
@@ -35,7 +35,7 @@
 				u = n("./src/reddit/selectors/subreddit.ts"),
 				L = n("./src/reddit/components/IdCard/TopicLinksContainer/index.m.less"),
 				C = n.n(L);
-			const x = Object(r.c)({
+			const x = Object(o.c)({
 					subreddit: u.R,
 					topicLinks: _.a
 				}),
@@ -44,9 +44,9 @@
 					topicName: e,
 					slug: t
 				}) => {
-					const n = Object(o.b)(),
+					const n = Object(r.b)(),
 						s = Object(i.useCallback)(() => n((e => t => ({
-							...p.n(t),
+							...p.o(t),
 							action: l.c.CLICK,
 							noun: "link",
 							source: "subreddit_topic_link",
@@ -101,4 +101,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopicLinksContainer.c7e0bb7449369e994ccf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopicLinksContainer.55c7722c4115637d6395.js.map

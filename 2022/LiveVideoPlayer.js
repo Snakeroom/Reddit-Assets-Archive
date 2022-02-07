@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.bbcb777bc5df9412ac31.js
-// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.8484e949466bd812cf24.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -118,7 +118,7 @@
 							model: e,
 							utcTimeStamp: u
 						}))
-					} else t(S({
+					} else t(_({
 						streamId: o,
 						error: i.error,
 						utcTimeStamp: u
@@ -142,7 +142,7 @@
 						error: i.error,
 						utcTimeStamp: c
 					}))
-				}, C = (e, t) => async (s, n) => s(_(e, t)), _ = (e, t) => async (s, n, {
+				}, C = (e, t) => async (s, n) => s(S(e, t)), S = (e, t) => async (s, n, {
 					gqlContext: o
 				}) => {
 					const r = n();
@@ -164,7 +164,7 @@
 							const s = await Object(a.e)(e, t),
 								n = Date.now(),
 								o = s.body;
-							return o && o.data ? o.data : void S({
+							return o && o.data ? o.data : void _({
 								streamId: t,
 								error: s.error,
 								utcTimeStamp: n
@@ -176,7 +176,7 @@
 						models: f,
 						utcTimeStamp: i
 					}))
-				}, S = e => async t => {
+				}, _ = e => async t => {
 					t(f(e))
 				}, x = e => async t => {
 					t(y(e))
@@ -353,8 +353,8 @@
 				L = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				O = s("./src/reddit/constants/chat.ts"),
 				C = s("./src/reddit/constants/keycodes.ts"),
-				_ = s("./src/reddit/helpers/trackers/rpan.ts"),
-				S = s("./src/reddit/selectors/media.ts"),
+				S = s("./src/reddit/helpers/trackers/rpan.ts"),
+				_ = s("./src/reddit/selectors/media.ts"),
 				x = s("./src/reddit/selectors/platform.ts"),
 				j = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
 				k = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
@@ -371,7 +371,7 @@
 				isOverlayOpen: x.i,
 				mutedInFeed: M.i,
 				unavailableVideoUrl: j.o,
-				volumeInFeed: S.d,
+				volumeInFeed: _.d,
 				currentStream: (e, {
 					postId: t
 				}) => Object(k.l)(e, t)
@@ -523,11 +523,11 @@
 							currentStream: s
 						} = this.props;
 						if (!s) return void(null === (t = this.videoSessionManager) || void 0 === t || t.destroySession());
-						const n = !e.sessionDurationMs ? _.E : _.A,
+						const n = !e.sessionDurationMs ? S.E : S.A,
 							o = {
 								...e,
 								chatState: O.a.None,
-								playerType: _.a.Feed
+								playerType: S.a.Feed
 							};
 						this.props.sendEvent(n(s, o))
 					}, this.state = {
@@ -844,9 +844,9 @@
 			})), s.d(t, "o", (function() {
 				return C
 			})), s.d(t, "z", (function() {
-				return _
-			})), s.d(t, "s", (function() {
 				return S
+			})), s.d(t, "s", (function() {
+				return _
 			})), s.d(t, "y", (function() {
 				return x
 			})), s.d(t, "G", (function() {
@@ -888,9 +888,9 @@
 			}(n || (n = {}));
 			const a = (e, t) => {
 					if (t) {
-						const s = i.B(e, t.post.id),
-							n = i.I(e, t.post.id),
-							o = i.ib(e);
+						const s = i.C(e, t.post.id),
+							n = i.J(e, t.post.id),
+							o = i.jb(e);
 						if (t.post.authorInfo && n && (n.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const n = Object(r.j)(e, {
@@ -905,7 +905,7 @@
 						}
 					}
 					return {
-						subreddit: i.ib(e)
+						subreddit: i.jb(e)
 					}
 				},
 				c = (e, t, s) => {
@@ -950,7 +950,7 @@
 					action: "click",
 					noun: "enlarge",
 					...a(s, e),
-					actionInfo: i.c(s, {
+					actionInfo: i.d(s, {
 						position: t || 0
 					})
 				}),
@@ -1003,7 +1003,7 @@
 					playback: c(o, t, s),
 					...d(o),
 					...a(o, t),
-					actionInfo: i.c(o, {
+					actionInfo: i.d(o, {
 						referralId: n
 					})
 				}),
@@ -1053,7 +1053,7 @@
 					playback: c(s, e, t),
 					...a(s, e)
 				}),
-				_ = e => t => {
+				S = e => t => {
 					const s = Object(r.l)(t, e);
 					return {
 						source: "stream_chat",
@@ -1062,7 +1062,7 @@
 						...a(t, s)
 					}
 				},
-				S = (e, t, s) => n => ({
+				_ = (e, t, s) => n => ({
 					source: "stream_player",
 					action: "click",
 					noun: "confirm_subreddit",
@@ -1083,8 +1083,8 @@
 					source: "post",
 					action: "view",
 					noun: "post",
-					profile: i.R(t),
-					screen: i.ab(t),
+					profile: i.S(t),
+					screen: i.bb(t),
 					...a(t, e)
 				}),
 				k = e => t => {
@@ -1093,8 +1093,8 @@
 						source: "post",
 						action: "consume",
 						noun: "post",
-						profile: i.R(t),
-						screen: i.ab(t),
+						profile: i.S(t),
+						screen: i.bb(t),
 						...s
 					}
 				},
@@ -1115,7 +1115,7 @@
 					action: "click",
 					noun: "subscribe",
 					...a(t, e),
-					targetSubreddit: i.ib(t)
+					targetSubreddit: i.jb(t)
 				}),
 				P = (e, t) => s => ({
 					source: "stream_player",
@@ -1313,7 +1313,7 @@
 			s.d(t, "l", (function() {
 				return L
 			})), s.d(t, "m", (function() {
-				return _
+				return S
 			})), s.d(t, "i", (function() {
 				return j
 			})), s.d(t, "d", (function() {
@@ -1425,11 +1425,11 @@
 					const n = s.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? n.slice(0, e) : n
 				}),
-				_ = Object(n.a)(E, C, (e, t) => {
+				S = Object(n.a)(E, C, (e, t) => {
 					const s = t[0];
 					if (s) return e[s]
 				}),
-				S = Object(n.a)(f, (e, {
+				_ = Object(n.a)(f, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: n
@@ -1472,7 +1472,7 @@
 					listingName: t || n,
 					streamIdFromPath: s
 				}), (e, t, s, n, o) => !e || s.includes(e) || n.includes(e) ? t || o[0] : e),
-				I = Object(n.a)(v, f, S, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
+				I = Object(n.a)(v, f, _, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
 				M = Object(n.a)(v, f, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
@@ -1551,4 +1551,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.bbcb777bc5df9412ac31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.8484e949466bd812cf24.js.map

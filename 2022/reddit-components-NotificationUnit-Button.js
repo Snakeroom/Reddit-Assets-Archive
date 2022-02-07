@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.11bceb787723a6c999b5.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.588f748fa7586c6410b6.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(t, e, o) {
@@ -976,11 +976,11 @@
 					return {
 						source: "comment_composer",
 						action: n.c.CLICK,
-						...Object(d.n)(t),
-						screen: Object(d.ab)(t),
-						subreddit: Object(d.ib)(t),
-						post: e ? Object(d.I)(t, e) : null,
-						profile: Object(d.R)(t),
+						...Object(d.o)(t),
+						screen: Object(d.bb)(t),
+						subreddit: Object(d.jb)(t),
+						post: e ? Object(d.J)(t, e) : null,
+						profile: Object(d.S)(t),
 						correlationId: Object(r.c)(r.a.CommentComposer)
 					}
 				},
@@ -996,8 +996,8 @@
 					return Object(a.a)({
 						noun: "comment",
 						...l(t),
-						comment: r ? Object(d.h)(t, r) : null,
-						listing: Object(d.z)(t, void 0, {
+						comment: r ? Object(d.i)(t, r) : null,
+						listing: Object(d.A)(t, void 0, {
 							depth: c
 						}),
 						commentComposer: {
@@ -1034,10 +1034,10 @@
 					source: "comment",
 					noun: "delete",
 					action: "click",
-					...Object(d.n)(e),
-					screen: Object(d.ab)(e),
-					subreddit: Object(d.ib)(e),
-					post: Object(d.I)(e, t)
+					...Object(d.o)(e),
+					screen: Object(d.bb)(e),
+					subreddit: Object(d.jb)(e),
+					post: Object(d.J)(e, t)
 				}), p = t => Object(a.a)({
 					noun: "edit",
 					...l(t)
@@ -1087,4 +1087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.11bceb787723a6c999b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.588f748fa7586c6410b6.js.map

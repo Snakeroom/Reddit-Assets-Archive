@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.108dfa9c360a58b349cb.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.00952b653cd1dcb5758a.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57"], {
 		"./src/reddit/actions/gold/giveAward.ts": function(e, t, n) {
@@ -240,8 +240,8 @@
 				j = n("./src/reddit/models/Gold/Award.ts"),
 				I = n("./src/reddit/selectors/activeModalId.ts"),
 				C = n("./src/reddit/selectors/experiments/econLeaderboards.ts"),
-				y = n("./src/reddit/selectors/gold/awardIcon.ts"),
-				S = n("./src/reddit/contexts/Post/index.tsx"),
+				S = n("./src/reddit/selectors/gold/awardIcon.ts"),
+				y = n("./src/reddit/contexts/Post/index.tsx"),
 				k = n("./src/reddit/contexts/User/index.tsx"),
 				T = n("./node_modules/lodash/debounce.js"),
 				N = n.n(T),
@@ -771,8 +771,8 @@
 				},
 				Ie = n("./src/reddit/actions/gold/reportAward.ts"),
 				Ce = n("./src/reddit/controls/Button/index.tsx"),
-				ye = n("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
-				Se = n.n(ye);
+				Se = n("./src/reddit/components/AwardBadges/FlagAwardModal/index.m.less"),
+				ye = n.n(Se);
 			! function(e) {
 				e[e.BEGIN = 0] = "BEGIN", e[e.REPORT_COMMUNITY_AWARD = 1] = "REPORT_COMMUNITY_AWARD", e[e.FLAG_USAGE = 2] = "FLAG_USAGE"
 			}(_e || (_e = {}));
@@ -795,14 +795,14 @@
 						onClick: () => {
 							t(Object(O.clickReportAward)(e.award, e.thing.id)), i(_e.REPORT_COMMUNITY_AWARD)
 						},
-						className: Se.a.reportStepButton
+						className: ye.a.reportStepButton
 					}, a.fbt._("This community award violates Reddit's rules.", null, {
 						hk: "2ObuGq"
 					})), r.a.createElement(Ce.o, {
 						onClick: () => {
 							t(Object(O.clickFlagAwardUsage)(e.award, e.thing.id)), i(_e.FLAG_USAGE)
 						},
-						className: Se.a.reportStepButton
+						className: ye.a.reportStepButton
 					}, a.fbt._("This award is being used inappropriately.", null, {
 						hk: "Y8giW"
 					})));
@@ -982,19 +982,19 @@
 					for (const a of Te) {
 						const e = {};
 						C[`icon${a}`] = e;
-						for (const t of I) e[t.id] = Object(y.c)({
+						for (const t of I) e[t.id] = Object(S.c)({
 							award: t,
 							postOrComment: f,
 							size: a,
 							prefersReducedMotion: O
 						})
 					}
-					const S = !!o && o.id === f.authorId;
+					const y = !!o && o.id === f.authorId;
 					return r.a.createElement(r.a.Fragment, null, n ? r.a.createElement(he, {
 						awards: I,
 						awardsCountInView: t,
 						className: s,
-						hideAddAwardButton: i || !f.isGildable || S,
+						hideAddAwardButton: i || !f.isGildable || y,
 						hideTopAwardedBadge: d,
 						icons: C,
 						isInEconLeaderboardsExperiment: l,
@@ -1028,7 +1028,7 @@
 						actionText: a.fbt._("Hide", null, {
 							hk: "4FKnfB"
 						}),
-						modalText: S ? Object(x.a)(f.id) ? a.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your post?", [a.fbt._param("awardName", this.state.selectedAward.name)], {
+						modalText: y ? Object(x.a)(f.id) ? a.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your post?", [a.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "4a7Cbu"
 						}) : a.fbt._("The award giver(s) will be notified that you have hidden their {awardName} award. This action cannot be undone. Are you sure you want to hide awards of this type from your comment?", [a.fbt._param("awardName", this.state.selectedAward.name)], {
 							hk: "294BlY"
@@ -1050,7 +1050,7 @@
 					}))
 				}
 			}
-			t.a = Object(k.c)(Object(S.e)(Re(Object(_.c)(Le))))
+			t.a = Object(k.c)(Object(y.e)(Re(Object(_.c)(Le))))
 		},
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1143,8 +1143,8 @@
 				j = n("./src/reddit/icons/fonts/Report/index.tsx"),
 				I = n("./src/reddit/icons/fonts/Spam/index.tsx"),
 				C = n("./src/reddit/icons/fonts/Sticky/index.tsx"),
-				y = n("./src/reddit/models/Post/index.ts"),
-				S = n("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
+				S = n("./src/reddit/models/Post/index.ts"),
+				y = n("./src/reddit/selectors/experiments/adHeaderExperiment.ts"),
 				k = n("./src/reddit/selectors/posts.ts"),
 				T = n("./src/reddit/components/PostBadges/index.m.less"),
 				N = n.n(T);
@@ -1221,7 +1221,7 @@
 				const Q = {
 						caretOnTop: !1
 					},
-					J = Object(o.e)(S.a),
+					J = Object(o.e)(y.a),
 					K = (z.isSponsored || Object(d.u)(V)) && (J === h.u.NoLockIcon || J === h.u.PromotedGrey),
 					X = z.isRemoved && !z.modRemovalReason && !z.modNote && z.belongsTo.type === b.a.SUBREDDIT,
 					Y = G("Approve", z.id, W),
@@ -1262,7 +1262,7 @@
 				}), r.a.createElement(m.c, M({
 					tooltipId: $,
 					text: B()
-				}, Q))), n && Object(y.r)(z) && !u && r.a.createElement(s.Fragment, null, r.a.createElement(C.a, {
+				}, Q))), n && Object(S.r)(z) && !u && r.a.createElement(s.Fragment, null, r.a.createElement(C.a, {
 					isFilled: !0,
 					className: Object(c.a)(N.a.icon, N.a.stickyIcon),
 					desc: F(),
@@ -1692,9 +1692,9 @@
 			})), n.d(t, "l", (function() {
 				return C
 			})), n.d(t, "j", (function() {
-				return y
-			})), n.d(t, "f", (function() {
 				return S
+			})), n.d(t, "f", (function() {
+				return y
 			})), n.d(t, "g", (function() {
 				return k
 			})), n.d(t, "m", (function() {
@@ -1812,9 +1812,9 @@
 					variables: {
 						profileName: t
 					}
-				}), y = e => Object(r.a)(e, {
+				}), S = e => Object(r.a)(e, {
 					...b
-				}), S = (e, t, n) => Object(r.a)(e, {
+				}), y = (e, t, n) => Object(r.a)(e, {
 					...d,
 					variables: {
 						subredditId: t,
@@ -1938,8 +1938,8 @@
 			const i = (e, t = {}) => ({
 					...Object(s.h)(e, t),
 					correlationId: Object(a.e)(a.a.GildingFlow, !1),
-					profile: o.R(e),
-					subreddit: o.ib(e)
+					profile: o.S(e),
+					subreddit: o.jb(e)
 				}),
 				d = e => t => ({
 					source: "post",
@@ -2295,4 +2295,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.108dfa9c360a58b349cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57.00952b653cd1dcb5758a.js.map

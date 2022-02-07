@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.768e03621049031fc0bb.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.927fdbc9e4e0697eff77.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -2949,11 +2949,11 @@
 							source: "trophy",
 							action: "click",
 							noun: "trophy",
-							...l.n(t),
-							actionInfo: Object(l.c)(t, {
+							...l.o(t),
+							actionInfo: Object(l.d)(t, {
 								paneName: "profile_about"
 							}),
-							profile: l.R(t),
+							profile: l.S(t),
 							trophy: e
 						}))({
 							id: e.id,
@@ -3608,13 +3608,13 @@
 			var s = r("./src/reddit/constants/tracking.ts"),
 				n = r("./src/reddit/selectors/telemetry.ts");
 			const o = e => t => ({
-					...Object(n.n)(t),
+					...Object(n.o)(t),
 					action: s.c.CLICK,
 					noun: `follower_list_page_${e?"follow":"unfollow"}`,
 					source: "profile"
 				}),
 				a = () => e => ({
-					...Object(n.n)(e),
+					...Object(n.o)(e),
 					action: s.c.CLICK,
 					noun: "follower_list_cta",
 					source: "profile"
@@ -5068,4 +5068,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.768e03621049031fc0bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.927fdbc9e4e0697eff77.js.map

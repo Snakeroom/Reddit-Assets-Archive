@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.0a36bd58187dd28a15a3.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.56375269f8df404e3269.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1880,8 +1880,8 @@
 				e.FOLLOW = "follow", e.UNFOLLOW = "unfollow", e.CREATE_POST = "create_post"
 			}(n || (n = {}));
 			const v = (e, t) => ({
-				...Object(g.n)(t),
-				profile: Object(g.k)(t),
+				...Object(g.o)(t),
+				profile: Object(g.l)(t),
 				subreddit: {
 					id: e
 				}
@@ -2616,13 +2616,13 @@
 			var n = r("./src/reddit/constants/tracking.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
 			const a = e => t => ({
-					...Object(s.n)(t),
+					...Object(s.o)(t),
 					action: n.c.CLICK,
 					noun: `follower_list_page_${e?"follow":"unfollow"}`,
 					source: "profile"
 				}),
 				o = () => e => ({
-					...Object(s.n)(e),
+					...Object(s.o)(e),
 					action: n.c.CLICK,
 					noun: "follower_list_cta",
 					source: "profile"
@@ -2653,9 +2653,9 @@
 				s = r("./src/reddit/selectors/telemetry.ts"),
 				a = r("./src/reddit/selectors/user.ts");
 			const o = e => ({
-					screen: s.ab(e),
-					profile: s.R(e),
-					subreddit: s.ib(e)
+					screen: s.bb(e),
+					profile: s.S(e),
+					subreddit: s.jb(e)
 				}),
 				i = e => t => ({
 					source: "user_dropdown",
@@ -2673,7 +2673,7 @@
 					source: "nav",
 					action: "click",
 					actionInfo: {
-						pageType: t.platform.currentPage ? s.v(t.platform.currentPage) : void 0,
+						pageType: t.platform.currentPage ? s.w(t.platform.currentPage) : void 0,
 						settingValue: e ? "online" : "hidden"
 					},
 					noun: "online_presence_toggle",
@@ -2715,7 +2715,7 @@
 							userName: e
 						}).id
 					},
-					...s.n(t)
+					...s.o(t)
 				}),
 				b = e => t => ({
 					source: "profile",
@@ -2726,7 +2726,7 @@
 							userName: e
 						}).id
 					},
-					...s.n(t)
+					...s.o(t)
 				})
 		},
 		"./src/reddit/hooks/useLocale.ts": function(e, t, r) {
@@ -2980,4 +2980,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.0a36bd58187dd28a15a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.56375269f8df404e3269.js.map

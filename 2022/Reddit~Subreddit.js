@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.4d4a6704fee570aa4a64.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.7b620de1fd9d0cc5a065.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~Subreddit"], {
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, n) {
@@ -2427,7 +2427,7 @@
 					isViewed: n,
 					type: i
 				}) => s => ({
-					...l.n(s),
+					...l.o(s),
 					action: d.c.VIEW,
 					noun: "inbox_notification",
 					source: o.Inbox,
@@ -2448,7 +2448,7 @@
 					awardId: s
 				}) => r => {
 					Object(u.a)({
-						...l.n(r),
+						...l.o(r),
 						action: "receive",
 						noun: "inbox_notification",
 						source: o.Inbox,
@@ -2473,7 +2473,7 @@
 					awardId: s,
 					position: r
 				}) => a => ({
-					...l.n(a),
+					...l.o(a),
 					action: d.c.CLICK,
 					noun: "inbox_notification",
 					source: o.Inbox,
@@ -2496,7 +2496,7 @@
 					badgeCount: e,
 					tab: t
 				}) => n => ({
-					...l.n(n),
+					...l.o(n),
 					action: d.c.VIEW,
 					noun: "inbox",
 					source: o.Inbox,
@@ -2509,7 +2509,7 @@
 					badgeCount: e,
 					tab: t
 				}) => t => ({
-					...l.n(t),
+					...l.o(t),
 					action: d.c.VIEW,
 					noun: "mini_inbox",
 					source: o.Inbox,
@@ -2521,7 +2521,7 @@
 				g = ({
 					badgeCount: e
 				}) => t => ({
-					...l.n(t),
+					...l.o(t),
 					action: d.c.CLICK,
 					noun: "inbox",
 					source: o.Nav,
@@ -2536,7 +2536,7 @@
 					type: i,
 					awardId: s
 				}) => r => ({
-					...l.n(r),
+					...l.o(r),
 					action: d.c.CLICK,
 					noun: "inbox_notification_overflow",
 					source: o.Inbox,
@@ -2558,7 +2558,7 @@
 					isViewed: n,
 					type: i
 				}) => s => ({
-					...l.n(s),
+					...l.o(s),
 					action: d.c.VIEW,
 					noun: "inbox_notification_overflow",
 					source: o.Inbox,
@@ -2578,7 +2578,7 @@
 					isViewed: i,
 					type: s
 				}) => r => ({
-					...l.n(r),
+					...l.o(r),
 					action: d.c.CLICK,
 					noun: "overflow_option",
 					source: o.Inbox,
@@ -2591,7 +2591,7 @@
 						type: s
 					},
 					actionInfo: {
-						...l.c(r),
+						...l.d(r),
 						type: e
 					}
 				}),
@@ -2602,7 +2602,7 @@
 					isViewed: i,
 					type: s
 				}) => r => ({
-					...l.n(r),
+					...l.o(r),
 					action: d.c.UNDO,
 					noun: "overflow_option",
 					source: o.Inbox,
@@ -2615,32 +2615,32 @@
 						type: s
 					},
 					actionInfo: {
-						...l.c(r),
+						...l.d(r),
 						type: e
 					}
 				}),
 				S = e => t => ({
-					...l.n(t),
+					...l.o(t),
 					action: d.c.CLICK,
 					noun: "notification_app_settings",
 					source: o.Inbox,
 					actionInfo: {
-						...l.c(t),
+						...l.d(t),
 						pageType: e
 					}
 				}),
 				v = () => e => ({
-					...l.n(e),
+					...l.o(e),
 					action: d.c.CLICK,
 					noun: "see_all",
 					source: o.Inbox,
 					actionInfo: {
-						...l.c(e),
+						...l.d(e),
 						pageType: r.MiniInbox
 					}
 				}),
 				j = () => e => ({
-					...l.n(e),
+					...l.o(e),
 					action: d.c.CLICK,
 					noun: "messages",
 					source: o.Inbox
@@ -2648,33 +2648,33 @@
 				E = ({
 					isMiniInbox: e
 				}) => t => ({
-					...l.n(t),
+					...l.o(t),
 					action: d.c.CLICK,
 					noun: "mark_all_as_read",
 					source: o.Inbox,
 					actionInfo: e ? {
-						...l.c(t),
+						...l.d(t),
 						pageType: r.MiniInbox
 					} : {}
 				}),
 				w = (e, t) => n => ({
-					...l.n(n),
+					...l.o(n),
 					action: d.c.CLICK,
 					noun: "policy_banner",
 					source: o.Inbox,
 					actionInfo: {
-						...l.c(n),
+						...l.d(n),
 						pageType: e,
 						type: t
 					}
 				}),
 				k = () => e => ({
-					...l.n(e),
+					...l.o(e),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
 					source: o.Inbox,
 					actionInfo: {
-						...l.c(e),
+						...l.d(e),
 						type: "2021Recap"
 					}
 				})
@@ -2693,9 +2693,9 @@
 			n("./src/reddit/constants/categories.tsx");
 			var i = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => ({
-					screen: i.ab(e),
-					profile: i.R(e),
-					subreddit: i.ib(e)
+					screen: i.bb(e),
+					profile: i.S(e),
+					subreddit: i.jb(e)
 				}),
 				r = e => t => ({
 					action: "click",
@@ -2745,37 +2745,37 @@
 					source: s.COMMUNITY_WIDGETS,
 					action: r.c.CLICK,
 					noun: i.SEE_MORE,
-					widget: Object(o.wb)(n, {
+					widget: Object(o.xb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...o.n
+					...o.o
 				}),
 				c = (e, t) => n => ({
 					source: s.POST,
 					action: r.c.CLICK,
 					noun: i.REREDDIT_PROMO,
-					post: o.I(n, e),
-					subreddit: o.ib(n),
+					post: o.J(n, e),
+					subreddit: o.jb(n),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: i.REREDDIT_PROMO
 						}
 					},
-					...o.n(n)
+					...o.o(n)
 				}),
 				d = () => e => ({
 					source: s.SIDEBAR,
 					action: r.c.VIEW,
 					noun: i.TOPICS_WIDGET,
-					...o.n(e)
+					...o.o(e)
 				}),
 				l = e => t => ({
 					source: s.TOPICS_WIDGET,
 					action: r.c.CLICK,
 					noun: i.TOPIC,
-					...o.n(t),
+					...o.o(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -3421,4 +3421,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.4d4a6704fee570aa4a64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.7b620de1fd9d0cc5a065.js.map

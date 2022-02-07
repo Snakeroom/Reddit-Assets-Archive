@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.aca1107bbad814b1a6d4.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.63de86e120e7af147fcf.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1190,7 +1190,7 @@
 					}
 					return {
 						...r,
-						actionInfo: Object(i.Q)(n, o)
+						actionInfo: Object(i.R)(n, o)
 					}
 				})), u(o.target, o.currentTarget, l.anchorsAndButtons) && r(o)
 			};
@@ -2515,16 +2515,16 @@
 				s = n("./src/reddit/selectors/media.ts"),
 				i = n("./src/reddit/selectors/telemetry.ts");
 			const a = (e, t, n) => ({
-					gallery: i.r(e, t, n),
-					post: i.I(e, t),
-					...i.n(e)
+					gallery: i.s(e, t, n),
+					post: i.J(e, t),
+					...i.o(e)
 				}),
 				d = (e, t) => n => ({
 					...a(n, e, t),
 					action: r.c.VIEW,
 					noun: "media",
 					source: "gallery",
-					media: i.B(n, e)
+					media: i.C(n, e)
 				}),
 				c = (e, t) => n => {
 					const d = Object(o.a)(t),
@@ -2535,7 +2535,7 @@
 						noun: "outbound_url",
 						source: "gallery",
 						media: {
-							...i.B(n, e),
+							...i.C(n, e),
 							outboundUrl: t,
 							outboundDomain: d ? d.hostname : void 0
 						}
@@ -2718,4 +2718,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.aca1107bbad814b1a6d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.63de86e120e7af147fcf.js.map

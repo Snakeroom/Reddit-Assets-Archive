@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.08cd6bbcf277bc3fa40a.js
-// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.73fedec7463074cd831c.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -120,15 +120,15 @@
 				C = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
 			let S;
 
-			function j() {
+			function G() {
 				S || (S = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
-			var G = s("./node_modules/lodash/debounce.js"),
-				O = s.n(G),
-				I = s("./src/reddit/icons/svgs/Search/index.tsx"),
-				B = s("./src/reddit/selectors/user.ts"),
-				k = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
-				N = s.n(k);
+			var O = s("./node_modules/lodash/debounce.js"),
+				k = s.n(O),
+				j = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				I = s("./src/reddit/selectors/user.ts"),
+				B = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
+				N = s.n(B);
 			const R = 400;
 			class M extends d.a.Component {
 				constructor() {
@@ -138,7 +138,7 @@
 						this.setState({
 							query: e.target.value
 						}, this.dispatchOnChange)
-					}, this.dispatchOnChange = O()(() => {
+					}, this.dispatchOnChange = k()(() => {
 						this.props.onChange(this.state.query)
 					}, R), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
@@ -160,7 +160,7 @@
 					}, d.a.createElement("button", {
 						className: N.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, d.a.createElement(I.a, {
+					}, d.a.createElement(j.a, {
 						className: N.a.searchIcon
 					})), d.a.createElement("input", {
 						ref: e => this.elementRef = e,
@@ -181,7 +181,7 @@
 				}
 			}
 			const L = Object(h.c)({
-				isNightMode: B.X
+				isNightMode: I.X
 			});
 			var P = Object(p.b)(L)(M),
 				U = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
@@ -211,12 +211,12 @@
 							action: "change",
 							noun: "gif_tooltip_search",
 							correlationId: this.props.correlationId,
-							subreddit: this.props.subreddit.id ? v.jb(t, this.props.subreddit.id) : void 0,
-							post: v.j(t),
+							subreddit: this.props.subreddit.id ? v.kb(t, this.props.subreddit.id) : void 0,
+							post: v.k(t),
 							search: {
 								query: e
 							},
-							...v.n(t)
+							...v.o(t)
 						})), this.setState({
 							loading: !1,
 							columns: [
@@ -231,15 +231,15 @@
 						e.scrollHeight - e.scrollTop === e.clientHeight && this.loadMoreResults()
 					}, 300), this.onResultClick = e => {
 						this.props.sendEvent(e => {
-							const t = v.n(e);
+							const t = v.o(e);
 							return {
 								...t,
 								source: "meta",
 								action: "select",
 								noun: "gif_tooltip_result",
 								correlationId: this.props.correlationId,
-								subreddit: this.props.subreddit.id ? v.jb(e, this.props.subreddit.id) : void 0,
-								post: v.j(e),
+								subreddit: this.props.subreddit.id ? v.kb(e, this.props.subreddit.id) : void 0,
+								post: v.k(e),
 								actionInfo: {
 									...t.actionInfo,
 									reason: this.props.hasGifProduct ? "has-gif-product" : "gif-train"
@@ -252,7 +252,7 @@
 					}
 				}
 				componentDidMount() {
-					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), j()
+					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), G()
 				}
 				componentWillUnmount() {
 					this.mounted = !1
@@ -270,7 +270,7 @@
 					} = this.state;
 					!e && s && null !== t && (await
 						function(e) {
-							return j(), S.then(t => {
+							return G(), S.then(t => {
 								return !!e.split(" ").concat(e).find(e => -1 !== t.indexOf(e.toLowerCase()))
 							}).catch(() => !1)
 						}(s) || (this.setState({
@@ -506,4 +506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.08cd6bbcf277bc3fa40a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.73fedec7463074cd831c.js.map

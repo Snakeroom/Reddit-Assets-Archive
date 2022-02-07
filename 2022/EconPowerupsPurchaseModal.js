@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ff23727268172b3537b5.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.eeeb9b927bbdafbb32a7.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1214,8 +1214,8 @@
 						onClick: () => i(1)
 					})))
 				},
-				Y = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
-				J = r.n(Y);
+				J = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
+				Y = r.n(J);
 			const {
 				fbt: K
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1232,20 +1232,20 @@
 					return a.a.createElement("div", {
 						className: r
 					}, a.a.createElement("div", {
-						className: J.a.titleRow
+						className: Y.a.titleRow
 					}, a.a.createElement("span", null, K._("Powerups", null, {
 						hk: "DrcXp"
 					})), a.a.createElement("span", null, n < o ? `${n}/${o}` : n)), a.a.createElement("div", {
-						className: J.a.barRow
+						className: Y.a.barRow
 					}, a.a.createElement("div", {
-						className: J.a.track
+						className: Y.a.track
 					}), a.a.createElement("div", {
-						className: J.a.progress,
+						className: Y.a.progress,
 						style: {
 							width: `${100*s}%`
 						}
 					}), t && a.a.createElement("div", {
-						className: J.a.additionalProgress,
+						className: Y.a.additionalProgress,
 						style: {
 							width: `${100*(c-s)}%`,
 							left: `${100*s}%`
@@ -2681,10 +2681,10 @@
 				o = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				s = r("./src/reddit/helpers/trackers/gild.ts");
 			const c = e => ({
-					...a.n(e),
-					screen: a.ab(e),
-					subreddit: a.ib(e),
-					userSubreddit: a.sb(e)
+					...a.o(e),
+					screen: a.bb(e),
+					subreddit: a.jb(e),
+					userSubreddit: a.tb(e)
 				}),
 				i = e => ({
 					awardId: e.id,
@@ -2778,8 +2778,8 @@
 					action: "click",
 					noun: r,
 					goldPurchase: i(e),
-					profile: a.S(n, t),
-					subreddit: a.jb(n, t)
+					profile: a.T(n, t),
+					subreddit: a.kb(n, t)
 				}),
 				h = (e, t) => b(e, t, "disable_in_community"),
 				g = (e, t) => b(e, t, "enable_in_community")
@@ -2865,20 +2865,20 @@
 					...t
 				}),
 				u = (e, t) => ({
-					...a.n(e),
-					comment: t ? a.h(e, t) : void 0,
+					...a.o(e),
+					comment: t ? a.i(e, t) : void 0,
 					correlationId: Object(i.b)(e) || Object(s.e)(s.a.GildingFlow, !1),
-					post: t ? a.I(e, t) : void 0,
-					screen: a.ab(e),
-					subreddit: a.ib(e),
-					userSubreddit: a.sb(e)
+					post: t ? a.J(e, t) : void 0,
+					screen: a.bb(e),
+					subreddit: a.jb(e),
+					userSubreddit: a.tb(e)
 				}),
 				m = e => t => ({
 					...u(t, e),
 					source: Object(c.a)(e) ? "comment" : "post",
 					action: "click",
 					noun: "give_gold",
-					feed: a.q(t)
+					feed: a.r(t)
 				}),
 				p = e => t => ({
 					...u(t, e),
@@ -2891,7 +2891,7 @@
 					source: Object(c.a)(e) ? "comment" : "post",
 					action: "click",
 					noun: "add_award",
-					feed: a.q(t)
+					feed: a.r(t)
 				}),
 				b = (e, t) => r => ({
 					...u(r, t),
@@ -3097,12 +3097,12 @@
 						packageId: l
 					} = t, b = !!r, h = o.b(e), g = h ? Object(u.getAwardTypeFromAward)(h) : null, y = b ? g : c.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, v = r ? Object(p.a)(r) ? "comment" : "post" : void 0, E = l || c.t(e), P = [...Object(s.d)(e), ...Object(s.f)(e)].filter(e => e.mobileId === E)[0], C = t.offerContext || (h && 0 === h.coinPrice ? a.a.StorefrontFreeAward : Object(a.d)(P, b)), w = P ? Math.round(1e4 * (P.baselinePennies - P.pennies) / P.baselinePennies) / 100 : 0, O = P ? Math.round(1e4 * (P.coins - P.baselineCoins) / P.coins) / 100 : 0, j = P ? P.baselinePennies !== P.pennies ? `${w}_percent_price` : P.baselineCoins !== P.coins ? `${O}_percent_bonus` : void 0 : void 0, x = y === d.GoldPurchaseType.Premium ? n.yb : P ? P.pennies : void 0;
 					return {
-						...i.n(e),
-						comment: r ? i.h(e, r) : null,
+						...i.o(e),
+						comment: r ? i.i(e, r) : null,
 						correlationId: c.r(e) || Object(m.e)(m.a.GoldPayment, !1),
-						post: r ? i.I(e, r) : null,
-						screen: i.ab(e),
-						subreddit: r ? i.ib(e) : null,
+						post: r ? i.J(e, r) : null,
+						screen: i.bb(e),
+						subreddit: r ? i.jb(e) : null,
 						goldPurchase: {
 							...h ? Object(f.a)(h) : null,
 							type: y,
@@ -3727,4 +3727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ff23727268172b3537b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.eeeb9b927bbdafbb32a7.js.map

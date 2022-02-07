@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.56b273d810b1cb335dba.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.555ec1209078a0d6a767.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -2058,13 +2058,13 @@
 			var s = n("./src/reddit/constants/categories.tsx"),
 				r = n("./src/reddit/selectors/telemetry.ts");
 			const a = e => t => ({
-					...r.n(t),
+					...r.o(t),
 					action: "click",
 					noun: Object(s.d)(e),
 					source: "leaderboard_category"
 				}),
 				i = (e, t, n) => a => ({
-					...r.n(a),
+					...r.o(a),
 					action: "click",
 					noun: e,
 					source: "leaderboard_featured_category",
@@ -2074,7 +2074,7 @@
 					}
 				}),
 				o = (e, t) => n => ({
-					...r.n(n),
+					...r.o(n),
 					action: "click",
 					noun: "subreddit",
 					source: "leaderboard_subreddit",
@@ -2085,7 +2085,7 @@
 					}
 				}),
 				d = (e, t) => n => ({
-					...r.n(n),
+					...r.o(n),
 					action: "click",
 					source: "leaderboard_subreddit",
 					noun: t ? "unsubscribe" : "subscribe",
@@ -2094,10 +2094,10 @@
 					}
 				}),
 				c = (e, t, n, a) => i => ({
-					...r.n(i),
+					...r.o(i),
 					action: "click",
 					actionInfo: {
-						...r.c(i),
+						...r.d(i),
 						position: a && a
 					},
 					noun: e,
@@ -2108,7 +2108,7 @@
 					}
 				}),
 				l = (e, t) => n => ({
-					...r.n(n),
+					...r.o(n),
 					action: "view",
 					noun: "leaderboard_right_rail",
 					source: "leaderboard_right_rail",
@@ -2118,7 +2118,7 @@
 					}
 				}),
 				u = (e, t) => n => ({
-					...r.n(n),
+					...r.o(n),
 					action: "click",
 					source: "leaderboard_right_rail",
 					noun: t ? "unsubscribe" : "subscribe",
@@ -2195,4 +2195,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.56b273d810b1cb335dba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.555ec1209078a0d6a767.js.map

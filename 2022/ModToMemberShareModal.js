@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.fb6322921e2c17b17faf.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.3ca22d54cf09240adc4d.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -193,8 +193,8 @@
 				E = s("./src/reddit/selectors/posts.ts"),
 				N = s("./src/reddit/selectors/telemetry.ts"),
 				P = s("./src/reddit/components/ModToMemberShareModal/index.m.less"),
-				O = s.n(P);
-			const j = 400,
+				j = s.n(P);
+			const O = 400,
 				v = Object(a.c)({
 					post: E.u,
 					subreddit: E.v
@@ -214,9 +214,9 @@
 							source: "mod_to_member_share",
 							action: e,
 							noun: t,
-							post: Object(N.I)(s, this.props.post.id),
-							subreddit: Object(N.ib)(s),
-							...Object(N.n)(s)
+							post: Object(N.J)(s, this.props.post.id),
+							subreddit: Object(N.jb)(s),
+							...Object(N.o)(s)
 						}))
 					}, this.onCloseClicked = () => {
 						this.props.onClose(), this.event("click", "dismiss")
@@ -277,35 +277,35 @@
 						}
 					} = this;
 					if (e && t) return o.a.createElement(p.e, {
-						className: O.a.body
+						className: j.a.body
 					}, o.a.createElement(p.i, {
-						className: O.a.header
+						className: j.a.header
 					}, o.a.createElement(p.q, {
-						className: O.a.title
+						className: j.a.title
 					}, n.fbt._("Send message with link", null, {
 						hk: "mnEN"
 					})), o.a.createElement("button", {
 						onClick: this.onCloseClicked
 					}, o.a.createElement(p.b, null))), o.a.createElement(p.l, {
-						className: O.a.main
+						className: j.a.main
 					}, o.a.createElement(u.a, {
-						className: O.a.miniPost,
+						className: j.a.miniPost,
 						openLinksNewTab: !0,
 						postId: e.id,
 						showSubreddit: !0,
 						subredditSameLine: !0
 					}), o.a.createElement(p.t, {
-						className: O.a.textarea,
-						maxLength: j,
+						className: j.a.textarea,
+						maxLength: O,
 						onChange: this.onMessageChange,
 						onFocus: this.onMessageFocus,
 						required: !0,
 						value: s
 					}), o.a.createElement(l.a, {
 						text: s,
-						maxChars: j
+						maxChars: O
 					})), o.a.createElement(p.g, null, !1 === i && o.a.createElement("p", {
-						className: O.a.errorText
+						className: j.a.errorText
 					}, "Something went wrong. Try again in a bit."), o.a.createElement(p.a, {
 						onClick: this.onCloseClicked
 					}, n.fbt._("Cancel", null, {
@@ -445,4 +445,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.fb6322921e2c17b17faf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.3ca22d54cf09240adc4d.js.map

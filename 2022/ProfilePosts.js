@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.e6b24caf3b751bdc55ea.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.d70acef44b64ccf343e5.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -1326,8 +1326,8 @@
 							source: "layout_switch",
 							action: "click",
 							noun: e,
-							screen: Object(y.ab)(t),
-							subreddit: Object(y.ib)(t)
+							screen: Object(y.bb)(t),
+							subreddit: Object(y.jb)(t)
 						})))
 					}, this.renderItem = (e, t) => {
 						const {
@@ -3138,11 +3138,11 @@
 							source: "trophy",
 							action: "click",
 							noun: "trophy",
-							...d.n(t),
-							actionInfo: Object(d.c)(t, {
+							...d.o(t),
+							actionInfo: Object(d.d)(t, {
 								paneName: "profile_about"
 							}),
-							profile: d.R(t),
+							profile: d.S(t),
 							trophy: e
 						}))({
 							id: e.id,
@@ -3270,7 +3270,7 @@
 						className: Object(c.a)(u.a.logIn),
 						onClick: () => {
 							n((() => e => ({
-								...Object(_.n)(e),
+								...Object(_.o)(e),
 								source: "xpromo",
 								action: "click",
 								noun: g
@@ -3282,7 +3282,7 @@
 						className: u.a.cancel,
 						onClick: () => {
 							n((() => e => ({
-								...Object(_.n)(e),
+								...Object(_.o)(e),
 								source: "xpromo",
 								action: "dismiss",
 								noun: g
@@ -3315,7 +3315,7 @@
 					const t = Object(b.b)();
 					s.a.useEffect(() => {
 						t((() => e => ({
-							...Object(_.n)(e),
+							...Object(_.o)(e),
 							source: "xpromo",
 							action: "view",
 							noun: g
@@ -4205,4 +4205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.e6b24caf3b751bdc55ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.d70acef44b64ccf343e5.js.map

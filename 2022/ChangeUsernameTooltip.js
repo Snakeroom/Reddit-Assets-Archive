@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.e99359fd32272332d903.js
-// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.98790ae31c13e3aed053.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameTooltip"], {
 		"./src/reddit/components/ChangeUsernameTooltip/index.m.less": function(e, n, t) {
@@ -141,16 +141,16 @@
 				},
 				_ = e => e.payload.args && "string" == typeof e.payload.args[0] && e.payload.args[0] || "",
 				C = (e, n) => t => ({
-					...Object(p.n)(t),
+					...Object(p.o)(t),
 					action: d.c.VIEW,
-					actionInfo: Object(p.c)(t, {
+					actionInfo: Object(p.d)(t, {
 						reason: n ? N(Object(l.a)(t)) : void 0
 					}),
 					noun: s.CHANGE_USERNAME_INITIAL,
 					source: e
 				}),
 				h = (e, n) => t => ({
-					...Object(p.n)(t),
+					...Object(p.o)(t),
 					action: d.c.CLICK,
 					noun: s.CHANGE_USERNAME_INITIAL,
 					popup: {
@@ -159,13 +159,13 @@
 					source: e
 				}),
 				O = () => e => ({
-					...Object(p.n)(e),
+					...Object(p.o)(e),
 					action: d.c.VIEW,
 					noun: s.CHANGE_USERNAME_CONFIRMATION,
 					source: E
 				}),
 				U = e => n => ({
-					...Object(p.n)(n),
+					...Object(p.o)(n),
 					action: d.c.CLICK,
 					noun: s.CHANGE_USERNAME_CONFIRMATION,
 					source: E,
@@ -174,13 +174,13 @@
 					}
 				}),
 				T = () => e => ({
-					...Object(p.n)(e),
+					...Object(p.o)(e),
 					action: d.c.VIEW,
 					noun: s.CHANGE_USERNAME_INPUT,
 					source: E
 				}),
 				A = () => e => ({
-					...Object(p.n)(e),
+					...Object(p.o)(e),
 					action: d.c.CLICK,
 					noun: s.CHANGE_USERNAME_INPUT,
 					popup: {
@@ -189,13 +189,13 @@
 					source: E
 				}),
 				I = () => e => ({
-					...Object(p.n)(e),
+					...Object(p.o)(e),
 					action: d.c.SELECT,
 					noun: s.CHANGE_USERNAME_INPUT,
 					source: E
 				}),
 				b = () => e => ({
-					...Object(p.n)(e),
+					...Object(p.o)(e),
 					action: d.c.VIEW,
 					noun: s.CHANGE_USERNAME_SUCCESS,
 					source: "toast"
@@ -203,4 +203,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.e99359fd32272332d903.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameTooltip.98790ae31c13e3aed053.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.4be0aeb1bb61451da179.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.1244e7883a1b5116ee55.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1209,7 +1209,7 @@
 					return c.a.createElement(ie.a, {
 						className: xe.a.ctaLink,
 						onClick: e => n(e => ({
-							...Object(re.n)(e),
+							...Object(re.o)(e),
 							source: "videoplayer",
 							action: "click",
 							noun: "callToAction"
@@ -2424,7 +2424,7 @@
 				j = Object(o.b)(() => Object(c.a)(y.F, S.db, (e, {
 					isSponsored: t,
 					postId: s
-				}) => t && s ? Object(y.b)(e, s) : null, E.c, y.G, (e, t, s, n, i) => ({
+				}) => t && s ? Object(y.b)(e, s) : null, E.d, y.G, (e, t, s, n, i) => ({
 					postPermalink: e,
 					shouldOpenPostInNewTab: t,
 					basePixelMetadata: s,
@@ -3562,7 +3562,7 @@
 						}, y)
 					}, this.sendEvent = e => {
 						this.props.sendEvent(t => {
-							const s = p.n(t);
+							const s = p.o(t);
 							return {
 								source: "meta",
 								action: e,
@@ -3572,7 +3572,7 @@
 									...s.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: p.ib(t)
+								subreddit: p.jb(t)
 							}
 						})
 					}
@@ -4151,15 +4151,15 @@
 				e.LINK = "link", e.DISCOVERY_UNIT = "discovery_unit"
 			}(i || (i = {}));
 			const m = e => ({
-					...u.n(e),
+					...u.o(e),
 					source: i.LINK,
 					action: r.c.CLICK,
 					noun: n.INTERNAL_LINK
 				}),
 				h = e => ({
-					...u.n(e),
+					...u.o(e),
 					source: i,
-					screen: u.ab(e),
+					screen: u.bb(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: n.SUBREDDIT_HOVERCARD,
@@ -4204,8 +4204,8 @@
 					if (!s || !Object(a.b)(s) && !Object(o.b)(s)) return {};
 					const n = Object(a.b)(s) ? s.belongsTo.id : s.subredditId;
 					return {
-						post: u.I(e, s.id),
-						subreddit: u.jb(e, n),
+						post: u.J(e, s.id),
+						subreddit: u.kb(e, n),
 						...p(e, t)
 					}
 				},
@@ -4218,44 +4218,44 @@
 					source: "global",
 					action: r.c.VIEW,
 					noun: n.SUBREDDIT_HOVERCARD,
-					subreddit: u.kb(t, e),
-					screen: u.ab(t)
+					subreddit: u.lb(t, e),
+					screen: u.bb(t)
 				}),
 				g = (e, t) => s => ({
 					...h(s),
 					source: i.DISCOVERY_UNIT,
 					action: r.c.VIEW,
 					noun: n.ITEM_POST,
-					post: u.I(s, t),
-					subreddit: u.kb(s, e),
-					screen: u.ab(s)
+					post: u.J(s, t),
+					subreddit: u.lb(s, e),
+					screen: u.bb(s)
 				}),
 				x = (e, t) => s => ({
 					...h(s),
 					source: i.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: n.ITEM_POST,
-					post: u.I(s, t),
-					subreddit: u.kb(s, e),
-					screen: u.ab(s)
+					post: u.J(s, t),
+					subreddit: u.lb(s, e),
+					screen: u.bb(s)
 				}),
 				y = e => t => ({
 					...h(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: i.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: n.HEADER_SUBREDDIT
 				}),
 				E = e => t => ({
 					...h(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: i.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				S = e => t => ({
 					...h(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.kb(t, e) || null,
 					source: i.DISCOVERY_UNIT,
 					action: r.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -5005,4 +5005,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.4be0aeb1bb61451da179.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.1244e7883a1b5116ee55.js.map

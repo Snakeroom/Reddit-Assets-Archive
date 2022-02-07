@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.b074cf6c07444d04cd5e.js
-// Retrieved at 2/3/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.c709a74b8ec7b195053a.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -1150,8 +1150,8 @@
 							source: m.b.Chat,
 							action: m.a.View,
 							noun: "down_to_chat_subreddit_entry",
-							subreddit: Object(f.ib)(e),
-							...Object(f.n)(e)
+							subreddit: Object(f.jb)(e),
+							...Object(f.o)(e)
 						}))(s);
 						Object(j.a)(e)
 					}
@@ -1187,8 +1187,8 @@
 					source: m.b.Chat,
 					action: m.a.Dismiss,
 					noun: "down_to_chat_subreddit_entry",
-					subreddit: Object(f.ib)(e),
-					...Object(f.n)(e)
+					subreddit: Object(f.jb)(e),
+					...Object(f.o)(e)
 				}))(r());
 				Object(j.a)(i)
 			}, P = e => async (t, r, {
@@ -1222,8 +1222,8 @@
 					source: m.b.Chat,
 					action: m.a.Click,
 					noun: "down_to_chat_subreddit_entry",
-					subreddit: Object(f.ib)(e),
-					...Object(f.n)(e)
+					subreddit: Object(f.jb)(e),
+					...Object(f.o)(e)
 				}))(r());
 				Object(j.a)(I)
 			}
@@ -7940,8 +7940,8 @@
 						source: "feed",
 						action: "remove",
 						noun: "ad",
-						...o.n(e),
-						listing: o.z(e, t)
+						...o.o(e),
+						listing: o.A(e, t)
 					}) : O.push(r.id)
 				}
 				return {
@@ -8435,14 +8435,14 @@
 			var n = r("./src/reddit/constants/blade.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
 			const i = (e, t) => r => ({
-					...s.n(r),
+					...s.o(r),
 					source: n.c.Appearance,
 					action: "click",
 					noun: e,
-					actionInfo: s.c(r, {
+					actionInfo: s.d(r, {
 						paneName: t
 					}),
-					subreddit: s.ib(r)
+					subreddit: s.jb(r)
 				}),
 				o = e => i("save_style", e),
 				d = e => i("cancel_style", e),
@@ -8450,39 +8450,39 @@
 					source: n.c.Structure,
 					action: "click",
 					noun: e,
-					screen: s.ab(t),
-					subreddit: s.ib(t)
+					screen: s.bb(t),
+					subreddit: s.jb(t)
 				}),
 				a = e => t => ({
 					source: n.c.Appearance,
 					action: "click",
 					noun: e,
-					screen: s.ab(t),
-					subreddit: s.ib(t)
+					screen: s.bb(t),
+					subreddit: s.jb(t)
 				}),
 				u = (e, t) => r => ({
 					source: "colorpicker",
 					action: "click",
 					noun: e,
-					actionInfo: s.c(r, {
+					actionInfo: s.d(r, {
 						paneName: n.f[t]
 					}),
-					screen: s.ab(r),
-					subreddit: s.ib(r)
+					screen: s.bb(r),
+					subreddit: s.jb(r)
 				}),
 				l = e => t => ({
 					source: n.g[e],
 					action: "click",
 					noun: "colorpicker",
-					actionInfo: s.c(t, {
+					actionInfo: s.d(t, {
 						paneName: n.f[e]
 					}),
-					screen: s.ab(t),
-					subreddit: s.ib(t)
+					screen: s.bb(t),
+					subreddit: s.jb(t)
 				}),
 				b = e => ({
-					screen: s.ab(e),
-					subreddit: s.ib(e)
+					screen: s.bb(e),
+					subreddit: s.jb(e)
 				}),
 				p = () => e => ({
 					source: n.c.Appearance,
@@ -8509,16 +8509,16 @@
 					...b(t)
 				}),
 				O = (e, t) => ({
-					...s.n(e),
+					...s.o(e),
 					..._(t)(e)
 				}),
 				j = e => t => ({
 					source: n.c.MenuLinks,
 					action: "click",
 					noun: e ? "wiki_link_on" : "wiki_link_off",
-					screen: s.ab(t),
-					subreddit: s.ib(t),
-					userSubreddit: s.sb(t)
+					screen: s.bb(t),
+					subreddit: s.jb(t),
+					userSubreddit: s.tb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/comment.ts": function(e, t, r) {
@@ -8539,12 +8539,12 @@
 					source: "comment",
 					action: "view",
 					noun: "comment",
-					...s.n(e),
-					profile: s.R(e),
-					post: s.I(e, t),
-					media: s.B(e, t),
-					subreddit: s.ib(e),
-					comment: s.h(e, t)
+					...s.o(e),
+					profile: s.S(e),
+					post: s.J(e, t),
+					media: s.C(e, t),
+					subreddit: s.jb(e),
+					comment: s.i(e, t)
 				}),
 				o = ({
 					state: e,
@@ -8553,24 +8553,24 @@
 					source: "comment",
 					action: "consume",
 					noun: "comment",
-					...s.n(e),
-					profile: s.R(e),
-					post: s.I(e, t),
-					media: s.B(e, t),
-					subreddit: s.ib(e),
-					comment: s.h(e, t)
+					...s.o(e),
+					profile: s.S(e),
+					post: s.J(e, t),
+					media: s.C(e, t),
+					subreddit: s.jb(e),
+					comment: s.i(e, t)
 				}),
 				d = e => t => ({
 					source: "online_presence",
 					action: "view",
 					noun: "user",
-					user: s.qb(t),
-					subreddit: s.ib(t),
-					post: s.I(t, e),
-					actionInfo: s.c(t),
-					app: s.f(t),
-					referrer: s.X(t),
-					session: s.eb(t)
+					user: s.rb(t),
+					subreddit: s.jb(t),
+					post: s.J(t, e),
+					actionInfo: s.d(t),
+					app: s.g(t),
+					referrer: s.Y(t),
+					session: s.fb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/communityTopics.ts": function(e, t, r) {
@@ -8646,9 +8646,9 @@
 					} : null
 				},
 				l = (e, t, r) => ({
-					...i.n(e),
+					...i.o(e),
 					subreddit: {
-						...i.ib(e) || {},
+						...i.jb(e) || {},
 						id: t,
 						...c(e, t)
 					},
@@ -8722,24 +8722,24 @@
 			var n = r("./src/reddit/selectors/telemetry.ts"),
 				s = r("./src/telemetry/index.ts");
 			const i = e => t => Object(s.a)({
-					...n.n(t),
-					actionInfo: n.c(t, {
+					...n.o(t),
+					actionInfo: n.d(t, {
 						reason: e
 					}),
 					source: "feed",
 					action: "load",
 					noun: "serving",
-					feed: n.q(t)
+					feed: n.r(t)
 				}),
 				o = e => t => Object(s.a)({
-					...n.n(t),
-					actionInfo: n.c(t, {
+					...n.o(t),
+					actionInfo: n.d(t, {
 						reason: e
 					}),
 					source: "feed",
 					action: "fail",
 					noun: "serving",
-					feed: n.q(t)
+					feed: n.r(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/inlineSubredditEditing.ts": function(e, t, r) {
@@ -8761,8 +8761,8 @@
 				e.SubredditInlineTooltip = "subreddit_inline_tooltip", e.EditSubredditIcon = "edit_subreddit_icon", e.EditSubredditDescription = "edit_subreddit_description", e.SaveDescription = "save_description", e.Error = "error"
 			}(n || (n = {}));
 			const o = e => ({
-					subreddit: i.ib(e),
-					userSubreddit: i.sb(e)
+					subreddit: i.jb(e),
+					userSubreddit: i.tb(e)
 				}),
 				d = e => ({
 					source: "subreddit_tooltip",
@@ -8797,8 +8797,8 @@
 					noun: n.Error,
 					action: s.c.VIEW,
 					...o(e),
-					...i.n(e),
-					actionInfo: i.c(e, {
+					...i.o(e),
+					actionInfo: i.d(e, {
 						reason: t
 					})
 				})
@@ -8894,8 +8894,8 @@
 				O = e => ({
 					source: "post_composer",
 					action: n.c.CLICK,
-					...l.n(e),
-					screen: l.ab(e),
+					...l.o(e),
+					screen: l.bb(e),
 					correlationId: Object(s.c)(s.a.PostComposer)
 				}),
 				j = (e, t) => "self" !== t ? {} : {
@@ -8916,9 +8916,9 @@
 				S = e => {
 					Object(p.a)({
 						noun: "subreddit_choice",
-						subreddit: l.ib(e),
+						subreddit: l.jb(e),
 						...O(e),
-						actionInfo: l.g(e)
+						actionInfo: l.h(e)
 					})
 				},
 				y = e => {
@@ -8960,12 +8960,12 @@
 				w = (e, t, r, n) => {
 					Object(p.a)({
 						noun: "post",
-						subreddit: l.ib(e),
+						subreddit: l.jb(e),
 						postComposer: {
 							type: t,
 							...j(e, t)
 						},
-						post: r ? l.I(e, r) : null,
+						post: r ? l.J(e, r) : null,
 						...O(e),
 						correlationId: n
 					})
@@ -8980,7 +8980,7 @@
 				k = (e, t) => {
 					Object(p.a)({
 						noun: "save",
-						subreddit: l.ib(e),
+						subreddit: l.jb(e),
 						postComposer: {
 							type: t,
 							...j(e, t)
@@ -8995,7 +8995,7 @@
 						noun: "media",
 						action: n.c.REJECT,
 						actionInfo: {
-							...l.c(e),
+							...l.d(e),
 							reason: JSON.stringify(r.error)
 						}
 					})
@@ -9018,7 +9018,7 @@
 							inputType: r
 						},
 						action: t,
-						actionInfo: l.g(e)
+						actionInfo: l.h(e)
 					})
 				},
 				A = (e, t, r) => {
@@ -9026,7 +9026,7 @@
 						...O(e),
 						noun: r,
 						action: Object(f.getToggleAction)(t),
-						actionInfo: l.g(e)
+						actionInfo: l.h(e)
 					})
 				},
 				N = e => U("input", e),
@@ -9050,11 +9050,11 @@
 				},
 				F = (e, t) => {
 					if (t) {
-						const r = l.jb(e, t);
+						const r = l.kb(e, t);
 						if (r) return {
 							subreddit: r
 						};
-						const n = l.S(e, t);
+						const n = l.T(e, t);
 						if (n) return {
 							profile: n
 						}
@@ -9170,7 +9170,7 @@
 						...O(e),
 						noun: "create_community",
 						actionInfo: {
-							...l.c(e),
+							...l.d(e),
 							pageType: "post_select_community"
 						}
 					})
@@ -9189,7 +9189,7 @@
 					action: n.c.CLICK,
 					noun: $,
 					actionInfo: {
-						...l.c(r),
+						...l.d(r),
 						position: t
 					},
 					subreddit: {
@@ -9209,7 +9209,7 @@
 					action: n.c.VIEW,
 					noun: `${$}_hover`,
 					actionInfo: {
-						...l.c(r),
+						...l.d(r),
 						position: t
 					},
 					subreddit: {
@@ -9298,12 +9298,12 @@
 			var n = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
 			const i = (e, t, r) => ({
-					...s.n(e),
+					...s.o(e),
 					correlationId: Object(n.e)(n.a.PowerupsFlow, !1),
-					profile: s.R(e),
-					subreddit: s.ib(e),
+					profile: s.S(e),
+					subreddit: s.jb(e),
 					powerups: {
-						...s.nb(e),
+						...s.ob(e),
 						freeCount: t,
 						paidCount: r
 					}
@@ -9427,7 +9427,7 @@
 					action: "click",
 					noun: "join_supporters",
 					...i(t),
-					actionInfo: s.c(t, {
+					actionInfo: s.d(t, {
 						reason: e
 					})
 				}),
@@ -9460,7 +9460,7 @@
 					action: "view",
 					noun: "marketing_step",
 					...i(t),
-					actionInfo: s.c(t, {
+					actionInfo: s.d(t, {
 						reason: e
 					})
 				}),
@@ -9470,7 +9470,7 @@
 					noun: "benefit",
 					...i(t),
 					powerups: {
-						...s.nb(t),
+						...s.ob(t),
 						benefit: e
 					}
 				}),
@@ -9485,7 +9485,7 @@
 					action: "view",
 					noun: "screen",
 					...i(e),
-					actionInfo: s.c(e, {
+					actionInfo: s.d(e, {
 						pageType: "powerups_premium_upsell"
 					})
 				}),
@@ -9500,7 +9500,7 @@
 					action: "click",
 					noun: "premium",
 					...i(t),
-					actionInfo: s.c(t, {
+					actionInfo: s.d(t, {
 						pageType: "powerups_premium_upsell"
 					}),
 					goldPurchase: {
@@ -9535,7 +9535,7 @@
 					noun: "add_custom_emojis",
 					...i(r),
 					powerups: {
-						...s.nb(r),
+						...s.ob(r),
 						emojiCount: e
 					}
 				}),
@@ -9545,7 +9545,7 @@
 					noun: "custom_emojis",
 					...i(r),
 					powerups: {
-						...s.nb(r),
+						...s.ob(r),
 						emojiCount: e
 					}
 				}),
@@ -9555,7 +9555,7 @@
 					noun: "custom_emojis",
 					...i(r),
 					powerups: {
-						...s.nb(r),
+						...s.ob(r),
 						emojiCount: e
 					}
 				}),
@@ -9563,7 +9563,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? s.jb(r, t) : void 0,
+					subreddit: t ? s.kb(r, t) : void 0,
 					...i(r),
 					correlationId: e
 				}),
@@ -9582,8 +9582,8 @@
 						value: String(t),
 						oldValue: String(r)
 					},
-					subreddit: s.ib(n),
-					...s.n(n)
+					subreddit: s.jb(n),
+					...s.o(n)
 				})
 		},
 		"./src/reddit/icons/fonts/helpers.m.less": function(e, t, r) {
@@ -12171,4 +12171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.b074cf6c07444d04cd5e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.c709a74b8ec7b195053a.js.map

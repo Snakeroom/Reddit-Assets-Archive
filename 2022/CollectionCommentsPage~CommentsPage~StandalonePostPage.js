@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.03e6390a2a4299114346.js
-// Retrieved at 2/3/2022, 4:50:13 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.a5245f55cd0df109bcf9.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~StandalonePostPage"], {
 		"./src/reddit/components/AdLinkWrapperContent/index.m.less": function(e, t, s) {
@@ -666,7 +666,7 @@
 						noun: "post_post",
 						post: e,
 						subreddit: t,
-						...g.n(s)
+						...g.o(s)
 					}))(t, _)(w))
 				}, []);
 				return d.a.createElement(f.a, {
@@ -679,7 +679,7 @@
 							noun: "post_post",
 							post: e,
 							subreddit: t,
-							...g.n(s)
+							...g.o(s)
 						}))(t, _)(w))
 					}
 				}, d.a.createElement("div", {
@@ -830,7 +830,7 @@
 						noun: "community_post",
 						post: e,
 						subreddit: t,
-						...g.n(s)
+						...g.o(s)
 					}))(f, k)(N))
 				}, []);
 				const j = Object(i.useCallback)(s => {
@@ -883,7 +883,7 @@
 							noun: "community_post",
 							post: e,
 							subreddit: t,
-							...g.n(s)
+							...g.o(s)
 						}))(f, k)(N))
 					}
 				}, d.a.createElement("div", {
@@ -2782,7 +2782,7 @@
 					noun: "crosspost",
 					post: e,
 					subreddit: t,
-					...o.n(s)
+					...o.o(s)
 				}),
 				a = (e, t) => s => ({
 					source: "post_discovery",
@@ -2790,13 +2790,13 @@
 					noun: "crosspost",
 					post: e,
 					subreddit: t,
-					...o.n(s)
+					...o.o(s)
 				}),
 				r = () => e => ({
 					source: "post_discovery",
 					action: "click",
 					noun: "crosspost_see_all",
-					...o.n(e)
+					...o.o(e)
 				})
 		},
 		"./src/reddit/hooks/useIsClient.ts": function(e, t, s) {
@@ -2907,4 +2907,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.03e6390a2a4299114346.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.a5245f55cd0df109bcf9.js.map

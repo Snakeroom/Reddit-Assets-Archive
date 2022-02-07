@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.75a560287605f4f109ae.js
-// Retrieved at 2/3/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.eef68ad4618cb3c7ce62.js
+// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
@@ -247,8 +247,8 @@
 						offerContext: a.a.StorefrontFreeAward
 					}),
 					correlationId: Object(n.e)(n.a.GoldPayment, !1),
-					profile: c.R(e),
-					subreddit: c.ib(e)
+					profile: c.S(e),
+					subreddit: c.jb(e)
 				}),
 				d = () => e => ({
 					source: "free_award_offer",
@@ -352,4 +352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.75a560287605f4f109ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.eef68ad4618cb3c7ce62.js.map
