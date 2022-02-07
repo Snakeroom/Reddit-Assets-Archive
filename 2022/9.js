@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/9.528b0b22b7d8e2626918.js
-// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/9.68710815adee71dbe364.js
+// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[9], {
 		"./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/index.ts": function(e, t, r) {
@@ -20,15 +20,15 @@
 				m = r("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
 				l = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts");
 			const p = {
-					[s.rb.Edited]: u.m.Edited,
-					[s.rb.Modqueue]: u.m.Mod,
-					[s.rb.Reports]: u.m.Reported,
-					[s.rb.Spam]: u.m.Removed,
-					[s.rb.Unmoderated]: u.m.Unmoderated
+					[s.rb.Edited]: u.o.Edited,
+					[s.rb.Modqueue]: u.o.Mod,
+					[s.rb.Reports]: u.o.Reported,
+					[s.rb.Spam]: u.o.Removed,
+					[s.rb.Unmoderated]: u.o.Unmoderated
 				},
 				f = {
-					comments: u.l.Comment,
-					links: u.l.Post
+					comments: u.n.Comment,
+					links: u.n.Post
 				};
 
 			function h({
@@ -151,4 +151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/9.528b0b22b7d8e2626918.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/9.68710815adee71dbe364.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.a26e04ab6288ae05e783.js
-// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.f0614a7aad5e420d479a.js
+// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./src/reddit/actions/postCollection/index.ts": function(e, t, n) {
@@ -660,7 +660,7 @@
 				const {
 					className: t,
 					submissionType: n
-				} = e, s = n === l.Vb.CROSSPOST;
+				} = e, s = n === l.Wb.CROSSPOST;
 				return r.a.createElement("div", {
 					className: t
 				}, r.a.createElement(h, null, r.a.createElement(b, null), s ? o.fbt._("Crossposting to Reddit", null, {
@@ -1127,7 +1127,7 @@
 					}, t.title), s.a.createElement("div", {
 						className: O.a.metaLine
 					}, v._("Posted · {timeAgo}", [v._param("timeAgo", s.a.createElement(E.d, {
-						seconds: t.created / k.Rb
+						seconds: t.created / k.Sb
 					}))], {
 						hk: "ZVJpV"
 					}))), s.a.createElement(g.a, {
@@ -1641,7 +1641,7 @@
 					return t ? s.a.createElement(s.a.Fragment, null, s.a.createElement(S, null, s.a.createElement(I, null, L._("Review draft", null, {
 						hk: "tclLq"
 					}))), s.a.createElement(D, null, n && s.a.createElement(N, null, L._("Draft last updated by {username} {timeDiff}", [L._param("username", `u/${n.name}`), L._param("timeDiff", s.a.createElement(M.d, {
-						seconds: (t.modified || t.created) / a.Rb
+						seconds: (t.modified || t.created) / a.Sb
 					}))], {
 						hk: "3QCJvU"
 					})), s.a.createElement(R, null, t.title), s.a.createElement(_, {
@@ -1686,4 +1686,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.a26e04ab6288ae05e783.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.f0614a7aad5e420d479a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.5c66ed1fad4eb43459a2.js
-// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.4c90f6cd8e9cedcb36fb.js
+// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -228,7 +228,7 @@
 						});
 						u(Object(m.z)(s, p.a.CommentSubmitted))
 					} else {
-						E.error && E.error.type === s.Jb && U.h(R, de(r), e);
+						E.error && E.error.type === s.Kb && U.h(R, de(r), e);
 						const t = E.error && E.error.fields && E.error.fields[0] ? E.error.fields[0].msg : n.fbt._("Something went wrong", null, {
 							hk: "LWFS0"
 						});
@@ -295,7 +295,7 @@
 						depth: a + 1
 					}));
 					else {
-						if (j.error && j.error.type === s.Jb) {
+						if (j.error && j.error.type === s.Kb) {
 							const e = Object(W.b)(l, {
 								commentId: r
 							});
@@ -751,7 +751,7 @@
 						commentId: e
 					});
 					if (!d) return;
-					const m = o === s.cc.Snoozed,
+					const m = o === s.dc.Snoozed,
 						u = {
 							itemId: e,
 							reportText: t,
@@ -1647,4 +1647,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.5c66ed1fad4eb43459a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.4c90f6cd8e9cedcb36fb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.335775494a4a730d7ea3.js
-// Retrieved at 2/7/2022, 3:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.3468108a3cf23516eb5a.js
+// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -95,7 +95,7 @@
 				shortMonths: a,
 				locale: o = s.D
 			} = {}) {
-				const i = new Date(e * s.Rb);
+				const i = new Date(e * s.Sb);
 				return r.a ? new Intl.DateTimeFormat(o, {
 					month: a ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -3111,7 +3111,7 @@
 						targetUserId: m.id
 					})),
 					to: `/user/${v}`,
-					disabled: m.displayName === o.F || m.displayName === o.Kb
+					disabled: m.displayName === o.F || m.displayName === o.Lb
 				}, r.a.createElement("div", {
 					className: p.a.leaderboardIcon
 				}, r.a.createElement(c.a, {
@@ -3507,7 +3507,7 @@
 						})),
 						n = Object(a.e)(e => t ? Object(N.h)(e, t.tournamentId) : []);
 					if (!t) return null;
-					if (t.status === I.o.Closed) return r.a.createElement(D, null);
+					if (t.status === I.r.Closed) return r.a.createElement(D, null);
 					const s = n.filter(e => e.predictionStatus === k.b.Open && e.endsAt > Date.now()),
 						o = s.length > 0,
 						i = s.length && s.some(e => !e.userSelection);
@@ -3593,7 +3593,7 @@
 					key: t.id,
 					className: G.a.user,
 					to: `/user/${null==e?void 0:e.name}`,
-					disabled: t.displayName === U.F || t.displayName === U.Kb
+					disabled: t.displayName === U.F || t.displayName === U.Lb
 				}, r.a.createElement("div", {
 					className: G.a.userAvatar
 				}, r.a.createElement(H.a, {
@@ -3825,7 +3825,7 @@
 						[h.a.third]: 3 === _
 					}),
 					to: `/user/${E}`,
-					disabled: (null == f ? void 0 : f.displayName) === l.F || (null == f ? void 0 : f.displayName) === l.Kb
+					disabled: (null == f ? void 0 : f.displayName) === l.F || (null == f ? void 0 : f.displayName) === l.Lb
 				}, r.a.createElement("div", {
 					className: h.a.avatarContainer
 				}, r.a.createElement("div", {
@@ -3987,7 +3987,7 @@
 						targetUserId: o.id
 					})),
 					to: `/user/${h}`,
-					disabled: o.displayName === l.F || o.displayName === l.Kb
+					disabled: o.displayName === l.F || o.displayName === l.Lb
 				}, r.a.createElement("div", {
 					className: F.a.leaderboardIcon
 				}, r.a.createElement(m.a, {
@@ -5263,160 +5263,160 @@
 					return t && t() || ""
 				},
 				Y = {
-					[b.dc.AllStates]: () => x.fbt._("All", null, {
+					[b.ec.AllStates]: () => x.fbt._("All", null, {
 						hk: "3FfdRL"
 					}),
-					[b.dc.Alaska]: () => x.fbt._("alaska", null, {
+					[b.ec.Alaska]: () => x.fbt._("alaska", null, {
 						hk: "3PQz70"
 					}),
-					[b.dc.Alabama]: () => x.fbt._("alabama", null, {
+					[b.ec.Alabama]: () => x.fbt._("alabama", null, {
 						hk: "1Ain9C"
 					}),
-					[b.dc.Arkansas]: () => x.fbt._("arkansas", null, {
+					[b.ec.Arkansas]: () => x.fbt._("arkansas", null, {
 						hk: "3MSLfs"
 					}),
-					[b.dc.Arizona]: () => x.fbt._("arizona", null, {
+					[b.ec.Arizona]: () => x.fbt._("arizona", null, {
 						hk: "PjKyy"
 					}),
-					[b.dc.California]: () => x.fbt._("california", null, {
+					[b.ec.California]: () => x.fbt._("california", null, {
 						hk: "4fS2Uy"
 					}),
-					[b.dc.Colorado]: () => x.fbt._("colorado", null, {
+					[b.ec.Colorado]: () => x.fbt._("colorado", null, {
 						hk: "2FU5sm"
 					}),
-					[b.dc.Connecticut]: () => x.fbt._("connecticut", null, {
+					[b.ec.Connecticut]: () => x.fbt._("connecticut", null, {
 						hk: "3HJ97l"
 					}),
-					[b.dc.DistrictOfColumbia]: () => x.fbt._("district of columbia", null, {
+					[b.ec.DistrictOfColumbia]: () => x.fbt._("district of columbia", null, {
 						hk: "43sboQ"
 					}),
-					[b.dc.Delaware]: () => x.fbt._("delaware", null, {
+					[b.ec.Delaware]: () => x.fbt._("delaware", null, {
 						hk: "1sMYnC"
 					}),
-					[b.dc.Florida]: () => x.fbt._("florida", null, {
+					[b.ec.Florida]: () => x.fbt._("florida", null, {
 						hk: "1ahnDc"
 					}),
-					[b.dc.Georgia]: () => x.fbt._("georgia", null, {
+					[b.ec.Georgia]: () => x.fbt._("georgia", null, {
 						hk: "3O8sgW"
 					}),
-					[b.dc.Hawaii]: () => x.fbt._("hawaii", null, {
+					[b.ec.Hawaii]: () => x.fbt._("hawaii", null, {
 						hk: "11be3k"
 					}),
-					[b.dc.Iowa]: () => x.fbt._("iowa", null, {
+					[b.ec.Iowa]: () => x.fbt._("iowa", null, {
 						hk: "15vW0A"
 					}),
-					[b.dc.Idaho]: () => x.fbt._("idaho", null, {
+					[b.ec.Idaho]: () => x.fbt._("idaho", null, {
 						hk: "12whY2"
 					}),
-					[b.dc.Illinois]: () => x.fbt._("illinois", null, {
+					[b.ec.Illinois]: () => x.fbt._("illinois", null, {
 						hk: "4F6qqr"
 					}),
-					[b.dc.Indiana]: () => x.fbt._("indiana", null, {
+					[b.ec.Indiana]: () => x.fbt._("indiana", null, {
 						hk: "1Xvs3I"
 					}),
-					[b.dc.Kansas]: () => x.fbt._("kansas", null, {
+					[b.ec.Kansas]: () => x.fbt._("kansas", null, {
 						hk: "4yvtHS"
 					}),
-					[b.dc.Kentucky]: () => x.fbt._("kentucky", null, {
+					[b.ec.Kentucky]: () => x.fbt._("kentucky", null, {
 						hk: "3iqD7X"
 					}),
-					[b.dc.Louisiana]: () => x.fbt._("louisiana", null, {
+					[b.ec.Louisiana]: () => x.fbt._("louisiana", null, {
 						hk: "1pM17K"
 					}),
-					[b.dc.Massachusetts]: () => x.fbt._("massachusetts", null, {
+					[b.ec.Massachusetts]: () => x.fbt._("massachusetts", null, {
 						hk: "3Hx5EP"
 					}),
-					[b.dc.Maryland]: () => x.fbt._("maryland", null, {
+					[b.ec.Maryland]: () => x.fbt._("maryland", null, {
 						hk: "62JHL"
 					}),
-					[b.dc.Maine]: () => x.fbt._("maine", null, {
+					[b.ec.Maine]: () => x.fbt._("maine", null, {
 						hk: "2Sh6yp"
 					}),
-					[b.dc.Michigan]: () => x.fbt._("michigan", null, {
+					[b.ec.Michigan]: () => x.fbt._("michigan", null, {
 						hk: "2fnY28"
 					}),
-					[b.dc.Minnesota]: () => x.fbt._("minnesota", null, {
+					[b.ec.Minnesota]: () => x.fbt._("minnesota", null, {
 						hk: "4diMsG"
 					}),
-					[b.dc.Missouri]: () => x.fbt._("missouri", null, {
+					[b.ec.Missouri]: () => x.fbt._("missouri", null, {
 						hk: "3QuF4u"
 					}),
-					[b.dc.Mississippi]: () => x.fbt._("mississippi", null, {
+					[b.ec.Mississippi]: () => x.fbt._("mississippi", null, {
 						hk: "28v1kQ"
 					}),
-					[b.dc.Montana]: () => x.fbt._("montana", null, {
+					[b.ec.Montana]: () => x.fbt._("montana", null, {
 						hk: "20sZYn"
 					}),
-					[b.dc.NorthCarolina]: () => x.fbt._("north carolina", null, {
+					[b.ec.NorthCarolina]: () => x.fbt._("north carolina", null, {
 						hk: "BUaf7"
 					}),
-					[b.dc.NorthDakota]: () => x.fbt._("north dakota", null, {
+					[b.ec.NorthDakota]: () => x.fbt._("north dakota", null, {
 						hk: "1WRpz0"
 					}),
-					[b.dc.Nebraska]: () => x.fbt._("nebraska", null, {
+					[b.ec.Nebraska]: () => x.fbt._("nebraska", null, {
 						hk: "XUJCr"
 					}),
-					[b.dc.NewHampshire]: () => x.fbt._("new hampshire", null, {
+					[b.ec.NewHampshire]: () => x.fbt._("new hampshire", null, {
 						hk: "ga6kK"
 					}),
-					[b.dc.NewJersey]: () => x.fbt._("new jersey", null, {
+					[b.ec.NewJersey]: () => x.fbt._("new jersey", null, {
 						hk: "3Sz9QN"
 					}),
-					[b.dc.NewMexico]: () => x.fbt._("new mexico", null, {
+					[b.ec.NewMexico]: () => x.fbt._("new mexico", null, {
 						hk: "i2870"
 					}),
-					[b.dc.Nevada]: () => x.fbt._("nevada", null, {
+					[b.ec.Nevada]: () => x.fbt._("nevada", null, {
 						hk: "2DsBxU"
 					}),
-					[b.dc.NewYork]: () => x.fbt._("new york", null, {
+					[b.ec.NewYork]: () => x.fbt._("new york", null, {
 						hk: "2wKULo"
 					}),
-					[b.dc.Ohio]: () => x.fbt._("ohio", null, {
+					[b.ec.Ohio]: () => x.fbt._("ohio", null, {
 						hk: "1KDnKA"
 					}),
-					[b.dc.Oklahoma]: () => x.fbt._("oklahoma", null, {
+					[b.ec.Oklahoma]: () => x.fbt._("oklahoma", null, {
 						hk: "2P0Ita"
 					}),
-					[b.dc.Oregon]: () => x.fbt._("oregon", null, {
+					[b.ec.Oregon]: () => x.fbt._("oregon", null, {
 						hk: "3CqdY4"
 					}),
-					[b.dc.Pennsylvania]: () => x.fbt._("pennsylvania", null, {
+					[b.ec.Pennsylvania]: () => x.fbt._("pennsylvania", null, {
 						hk: "2skMK"
 					}),
-					[b.dc.RhodeIsland]: () => x.fbt._("rhode island", null, {
+					[b.ec.RhodeIsland]: () => x.fbt._("rhode island", null, {
 						hk: "120MAU"
 					}),
-					[b.dc.SouthCarolina]: () => x.fbt._("south carolina", null, {
+					[b.ec.SouthCarolina]: () => x.fbt._("south carolina", null, {
 						hk: "3JyeG9"
 					}),
-					[b.dc.SouthDakota]: () => x.fbt._("south dakota", null, {
+					[b.ec.SouthDakota]: () => x.fbt._("south dakota", null, {
 						hk: "4to42L"
 					}),
-					[b.dc.Tennessee]: () => x.fbt._("tennessee", null, {
+					[b.ec.Tennessee]: () => x.fbt._("tennessee", null, {
 						hk: "gHo1c"
 					}),
-					[b.dc.Texas]: () => x.fbt._("texas", null, {
+					[b.ec.Texas]: () => x.fbt._("texas", null, {
 						hk: "3dgz4M"
 					}),
-					[b.dc.Utah]: () => x.fbt._("utah", null, {
+					[b.ec.Utah]: () => x.fbt._("utah", null, {
 						hk: "22zf2i"
 					}),
-					[b.dc.Virginia]: () => x.fbt._("virginia", null, {
+					[b.ec.Virginia]: () => x.fbt._("virginia", null, {
 						hk: "1dvXBl"
 					}),
-					[b.dc.Vermont]: () => x.fbt._("vermont", null, {
+					[b.ec.Vermont]: () => x.fbt._("vermont", null, {
 						hk: "1Cdmbu"
 					}),
-					[b.dc.Washington]: () => x.fbt._("washington", null, {
+					[b.ec.Washington]: () => x.fbt._("washington", null, {
 						hk: "hhztG"
 					}),
-					[b.dc.Wisconsin]: () => x.fbt._("wisconsin", null, {
+					[b.ec.Wisconsin]: () => x.fbt._("wisconsin", null, {
 						hk: "3SOyMZ"
 					}),
-					[b.dc.WestVirginia]: () => x.fbt._("west virginia", null, {
+					[b.ec.WestVirginia]: () => x.fbt._("west virginia", null, {
 						hk: "1jIKYD"
 					}),
-					[b.dc.Wyoming]: () => x.fbt._("wyoming", null, {
+					[b.ec.Wyoming]: () => x.fbt._("wyoming", null, {
 						hk: "1QaJzt"
 					})
 				};
@@ -5441,7 +5441,7 @@
 					if (ne(e)) {
 						return e.split("_")[1]
 					}
-					return b.dc.AllStates
+					return b.ec.AllStates
 				},
 				re = e => {
 					if (e && e.indexOf("_") > 0) {
@@ -5485,10 +5485,10 @@
 					tooltipId: "StateSort--StateSortPicker"
 				}, n, {
 					renderContentsHidden: !0
-				}), Object.keys(b.dc).map(n => {
-					const s = b.dc[n];
+				}), Object.keys(b.ec).map(n => {
+					const s = b.ec[n];
 					return r.a.createElement("div", {
-						onClick: () => e.onClickLink((e => e === b.dc.AllStates ? t : `${t}_${e}`)(s), ae(s))
+						onClick: () => e.onClickLink((e => e === b.ec.AllStates ? t : `${t}_${e}`)(s), ae(s))
 					}, r.a.createElement(j.b, {
 						className: Object(o.a)(e.rowClassName, e.sort === s ? e.rowSelectedClassName : void 0),
 						displayText: Q(s),
@@ -5718,7 +5718,7 @@
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
 					tooltipId: "TimeSort--SortPicker"
-				}, t), [b.gc.HOUR, b.gc.DAY, b.gc.WEEK, b.gc.MONTH, b.gc.YEAR, b.gc.ALL].map(t => {
+				}, t), [b.hc.HOUR, b.hc.DAY, b.hc.WEEK, b.hc.MONTH, b.hc.YEAR, b.hc.ALL].map(t => {
 					const n = ((e, t) => {
 							let n = e.url;
 							return e.urlParams.sort || Object(l.J)(e) || (n = Ee.a.join(n, t)), n
@@ -5882,7 +5882,7 @@
 						onChange: n,
 						rowClassName: Le.a.DropdownRow,
 						rowSelectedClassName: Le.a.DropdownRowSelected,
-						timeSort: i || b.hc,
+						timeSort: i || b.ic,
 						wrapperClassName: Le.a.DropdownSortWrapper
 					}), u.length > 0 && r.a.createElement(Z, Ae({}, this.props, {
 						className: Object(o.a)(Le.a.SortOverflow, e),
@@ -6092,7 +6092,7 @@
 					const n = Object(o.a)(),
 						s = null != t ? t : n;
 					return r.a.createElement(r.a.Fragment, null, function(e, t = l.D) {
-						const n = e * l.Rb;
+						const n = e * l.Sb;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -6117,7 +6117,7 @@
 
 			function h(e, t, n = !1, s = l.D) {
 				const r = Object(p.e)(e, t),
-					a = new Date(e * l.Rb);
+					a = new Date(e * l.Sb);
 				let o;
 				if (r === p.a.Live || n) return m.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -7936,7 +7936,7 @@
 				he = n.n(be);
 			const fe = 10,
 				_e = Object(d.a)((e, t) => t.subredditName, e => Object(k.a)(e, l.W.TOP, {
-					t: l.gc.WEEK
+					t: l.hc.WEEK
 				})),
 				xe = Object(d.c)({
 					discoveryUnit: e => Object(me.b)(e, {
@@ -8014,7 +8014,7 @@
 					loadMorePosts: () => e(Object(N.r)({
 						sort: l.W.TOP,
 						subredditName: t,
-						t: l.gc.WEEK
+						t: l.hc.WEEK
 					}))
 				}))(Object(ce.c)(Ee)),
 				ve = n("./src/reddit/components/Widgets/CommunityList/SubredditList.tsx"),
@@ -8818,22 +8818,22 @@
 					return t && t() || ""
 				},
 				i = {
-					[r.gc.HOUR]: () => s.fbt._("Now", null, {
+					[r.hc.HOUR]: () => s.fbt._("Now", null, {
 						hk: "ZmhY"
 					}),
-					[r.gc.DAY]: () => s.fbt._("Today", null, {
+					[r.hc.DAY]: () => s.fbt._("Today", null, {
 						hk: "40Ugu1"
 					}),
-					[r.gc.WEEK]: () => s.fbt._("This Week", null, {
+					[r.hc.WEEK]: () => s.fbt._("This Week", null, {
 						hk: "14tmoK"
 					}),
-					[r.gc.MONTH]: () => s.fbt._("This Month", null, {
+					[r.hc.MONTH]: () => s.fbt._("This Month", null, {
 						hk: "34dbM3"
 					}),
-					[r.gc.YEAR]: () => s.fbt._("This Year", null, {
+					[r.hc.YEAR]: () => s.fbt._("This Year", null, {
 						hk: "14RJsa"
 					}),
-					[r.gc.ALL]: () => s.fbt._("All Time", null, {
+					[r.hc.ALL]: () => s.fbt._("All Time", null, {
 						hk: "3qt6Ct"
 					})
 				},
@@ -11155,7 +11155,7 @@
 				isPopular: ce.F
 			}), lt = e => {
 				const t = oe.B in e && e[oe.B].toUpperCase();
-				if ("string" == typeof t && t in f.gc) return f.gc[t]
+				if ("string" == typeof t && t in f.hc) return f.hc[t]
 			}, ut = Object(y.a)((e, t) => {
 				const {
 					sort: n,
@@ -11308,7 +11308,7 @@
 						subredditName: t.match.params.subredditName
 					}))
 				},
-				onLoadMoreSearchResults: () => e(Object(N.n)([f.ac.Posts])),
+				onLoadMoreSearchResults: () => e(Object(N.n)([f.bc.Posts])),
 				refreshFeed: () => e(I.s({
 					sort: t.match.params.sort,
 					subredditName: t.match.params.subredditName
@@ -11533,9 +11533,9 @@
 								})
 							}
 						}
-						if (!n && g && b !== f.gc.WEEK && r === ie.g.Large) {
+						if (!n && g && b !== f.hc.WEEK && r === ie.g.Large) {
 							const e = Object(v.a)(p, f.W.TOP, {
-								t: f.gc.WEEK
+								t: f.hc.WEEK
 							});
 							E[Je] = {
 								estHeight: 0,
@@ -11574,14 +11574,14 @@
 							Object(C.d)(C.c.Subreddit, this.props.isLoggedIn)
 						}), this.props.inResonatePilot) {
 						const e = this.props.subredditName ? this.props.subredditName.toLowerCase() : "";
-						f.Lb.includes(e) && Object(pe.a)(e)
+						f.Mb.includes(e) && Object(pe.a)(e)
 					}
 					this.props.searchResultsServerQueryId && (Object(le.d)(le.a.SearchResults, this.props.searchResultsServerQueryId), this.props.unsetSearchResultsServerQueryId())
 				}
 				componentDidUpdate(e) {
 					if (e.isFlairFilter && !this.props.isFlairFilter && Object(le.c)(le.a.SearchResults) && Object(le.b)(le.a.SearchResults), this.props.inResonatePilot) {
 						const t = this.props.subredditName ? this.props.subredditName.toLowerCase() : "";
-						(e.subredditName ? e.subredditName.toLowerCase() : "") !== t && f.Lb.includes(t) && Object(pe.a)(t)
+						(e.subredditName ? e.subredditName.toLowerCase() : "") !== t && f.Mb.includes(t) && Object(pe.a)(t)
 					}
 					e.subredditName !== this.props.subredditName && (this.newPostPillTimer && clearTimeout(this.newPostPillTimer), this.setState({
 						isNewPostPillRenderedOnce: !1,
@@ -12261,4 +12261,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.335775494a4a730d7ea3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3468108a3cf23516eb5a.js.map

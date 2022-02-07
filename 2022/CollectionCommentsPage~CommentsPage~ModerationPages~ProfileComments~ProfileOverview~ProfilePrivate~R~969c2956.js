@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.932b60e1651c7c50d341.js
-// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.ae6a91c29c6642bb46d4.js
+// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -154,11 +154,11 @@
 					if (c.ok) {
 						const t = c.body,
 							i = 14400,
-							d = Math.round(t.event_start / n.Rb);
+							d = Math.round(t.event_start / n.Sb);
 						let l = t.event_end;
 						const p = {
 							eventStart: d,
-							eventEnd: l = l && Math.round(l / n.Rb) || d + i,
+							eventEnd: l = l && Math.round(l / n.Sb) || d + i,
 							eventIsLive: t.event_is_live
 						};
 						s(y({
@@ -1619,7 +1619,7 @@
 						className: ue.a.shareText
 					}, o.fbt._("share", null, {
 						hk: "1eAfZg"
-					}))), []), We = !!p && Object(te.e)(p) === U.author, Ve = Object(ne.a)("View--Reports", U.id, de), Ge = Object(ne.a)(d.nc, U.id, de), Ue = Object(S.c)(U), He = we("-mod-actions-menu", U.id, j, E), qe = Object(S.a)(U), Ke = U.postId, Je = y === W.g.Large, ze = !C && Je || f && I || Pe, Qe = !(j || C || O), Xe = !(U.authorIsBlocked && Te) && p && U.isGildable && !(U.authorIsBlocked && Ie) && !(U.unrepliableReason && Te), Ye = U.media && U.media.type === Z.o.LIVEVIDEO, Ze = !!U.recommendationContext, $e = U.isSponsored || Object(m.u)(G);
+					}))), []), We = !!p && Object(te.e)(p) === U.author, Ve = Object(ne.a)("View--Reports", U.id, de), Ge = Object(ne.a)(d.oc, U.id, de), Ue = Object(S.c)(U), He = we("-mod-actions-menu", U.id, j, E), qe = Object(S.a)(U), Ke = U.postId, Je = y === W.g.Large, ze = !C && Je || f && I || Pe, Qe = !(j || C || O), Xe = !(U.authorIsBlocked && Te) && p && U.isGildable && !(U.authorIsBlocked && Ie) && !(U.unrepliableReason && Te), Ye = U.media && U.media.type === Z.o.LIVEVIDEO, Ze = !!U.recommendationContext, $e = U.isSponsored || Object(m.u)(G);
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(c.a)(ue.a.flatlistContainer, a)
 					}, r.a.createElement(g.a, {
@@ -4265,8 +4265,8 @@
 			}), e => e === n.bd)
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
-			e.exports = JSON.parse('{"id":"2d7f6b3b518a"}')
+			e.exports = JSON.parse('{"id":"eaa845e03969"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.932b60e1651c7c50d341.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.ae6a91c29c6642bb46d4.js.map

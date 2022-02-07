@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.d4258117f7e7c97556c9.js
-// Retrieved at 2/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.7e0a39fa1407a19fc0be.js
+// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -196,12 +196,14 @@
 				render() {
 					const {
 						children: e,
-						className: t
+						className: t,
+						onClick: s
 					} = this.props;
 					return r.a.createElement("div", {
 						className: t,
 						onMouseEnter: this.onMouseEnter,
-						onMouseLeave: this.onMouseLeave
+						onMouseLeave: this.onMouseLeave,
+						onClick: s
 					}, e)
 				}
 			}
@@ -867,4 +869,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.d4258117f7e7c97556c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.7e0a39fa1407a19fc0be.js.map
