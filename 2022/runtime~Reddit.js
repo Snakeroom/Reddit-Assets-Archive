@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.2551317865f6b679afed.js
-// Retrieved at 2/8/2022, 10:50:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c45ec47417f6583fa580.js
+// Retrieved at 2/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) d = r[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
@@ -792,7 +792,7 @@
 					PostCreation: "5b303ec577b7748aa126",
 					"vendors~ModStatsChart~Settings~ViewsTooltip": "31d6cfe0d16ae931b73c",
 					"vendors~Settings": "31d6cfe0d16ae931b73c",
-					Settings: "c8776ce7a4e29b901d8b",
+					Settings: "58d0192196250127e026",
 					"vendors~ExportTheme~ImportTheme": "31d6cfe0d16ae931b73c",
 					ExportTheme: "31d6cfe0d16ae931b73c",
 					ImportTheme: "31d6cfe0d16ae931b73c",
@@ -829,7 +829,7 @@
 					"reddit-components-ContentGate": "9abce4aebc23ac515284",
 					"reddit-components-Governance-CommunityCard": "322854175a9475bbffc2",
 					"reddit-components-Governance-Leaderboard": "041d23d5f9d19d011003",
-					"reddit-components-ProfileIdCard": "ffecc3bfc6c3a798ddaa",
+					"reddit-components-ProfileIdCard": "7e6b1a674109bd091814",
 					"reddit-components-ViewReportsDropdown-index": "5965a7fea921dffcab35",
 					"reddit-pages-CommentsPage-OtherDiscussions": "5cad224fadef40eda022",
 					removalReasonActions: "31d6cfe0d16ae931b73c",
@@ -1460,7 +1460,7 @@
 						PostCreation: "46c45d675ebe429dd82f",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "71f28c4c637cd926b6dd",
-						Settings: "0b1cff5f55d440a3a506",
+						Settings: "8b8c7ecf29e2fbd58839",
 						"vendors~ExportTheme~ImportTheme": "a6c2f56e10a7d38da279",
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
@@ -1497,7 +1497,7 @@
 						"reddit-components-ContentGate": "6b91dde22b17ea3d64a4",
 						"reddit-components-Governance-CommunityCard": "33cb7f8a40d85b39a739",
 						"reddit-components-Governance-Leaderboard": "ddc0033a34385304371c",
-						"reddit-components-ProfileIdCard": "56375269f8df404e3269",
+						"reddit-components-ProfileIdCard": "d36a22bfde026acdba45",
 						"reddit-components-ViewReportsDropdown-index": "a165dd87e7c5e0234fda",
 						"reddit-pages-CommentsPage-OtherDiscussions": "dfdd2cac2222e28ad3b9",
 						removalReasonActions: "4c90f6cd8e9cedcb36fb",
@@ -1667,4 +1667,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.2551317865f6b679afed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c45ec47417f6583fa580.js.map
