@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1c8704335d1281294ff8.js
-// Retrieved at 2/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4a6fcafee331148bd026.js
+// Retrieved at 2/8/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("157730"),
+				buildNumber: Object(r.c)("157742"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1644347855"),
+				buildTimestamp: Object(r.b)("1644353847"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4920,12 +4920,12 @@
 					COINS_MOBILE: "CoinsMobile",
 					COLLECTION_COMMENTS_PAGE: "CollectionCommentsPage",
 					COMMENTS_PAGE: "CommentsPage",
-					COUNTRY_SITE_PAGE: "CountrySitePage",
 					EMPTY: "Empty",
 					ECON_MANAGEMENT: "EconManagement",
 					DASHBOARD: "UiDashboard",
 					FRONTPAGE: "Frontpage",
 					GEOTAGGING: "Geotagging",
+					INTERNATIONAL_SITE_PAGE: "InternationalSitePage",
 					META_ARBITRUM_POINTS_MIGRATION_PAGE: "MetaArbitrumPointsMigrationPage",
 					META_COMMUNITY_POINTS_LEARN_MORE_PAGE: "MetaCommunityPointsLearnMorePage",
 					META_MEMBERSHIP_PAYWALL_PAGE: "MetaMemberhipPaywallPage",
@@ -5281,7 +5281,6 @@
 					LISTING: "listing",
 					COLLECTION_COMMENTS: "collectionComments",
 					COMMENTS: "comments",
-					COUNTRY_SITE_PAGE: "countrySitePage",
 					DASHBOARD: "dashboard",
 					DUPLICATES: "duplicates",
 					ECON_MANAGEMENT: "econManagement",
@@ -5289,6 +5288,7 @@
 					EMAIL_VERIFICATION: "emailVerification",
 					FOLLOWERS: "followers",
 					GEOTAGGING: "geotagging",
+					INTERNATIONAL_SITE_PAGE: "internationalSitePage",
 					META_ARBITRUM_POINTS_MIGRATION_PAGE: "metaArbitrumPointsMigrationPage",
 					META_COMMUNITY_POINTS_LEARN_MORE_PAGE: "metaCommunityPointsLearnMorePage",
 					META_MEMBERSHIP_PAYWALL_PAGE: "metaMembershipPaywallPage",
@@ -5350,7 +5350,7 @@
 					STANDALONE_POST_PAGE: "standAlonePostPage",
 					USER_DATA_REQUEST: "userDataRequest"
 				},
-				Je = new Set([Qe.COUNTRY_SITE_PAGE, Qe.INDEX, Qe.LISTING, Qe.MULTIREDDIT, Qe.SEARCH_RESULTS, Qe.SUBREDDIT, Qe.PROFILE, Qe.PROFILE_COMMENTS, Qe.PROFILE_OVERVIEW, Qe.PROFILE_POSTS, Qe.PROFILE_PRIVATE, Qe.TOPIC]),
+				Je = new Set([Qe.INDEX, Qe.INTERNATIONAL_SITE_PAGE, Qe.LISTING, Qe.MULTIREDDIT, Qe.SEARCH_RESULTS, Qe.SUBREDDIT, Qe.PROFILE, Qe.PROFILE_COMMENTS, Qe.PROFILE_OVERVIEW, Qe.PROFILE_POSTS, Qe.PROFILE_PRIVATE, Qe.TOPIC]),
 				Xe = new Set([Qe.PROFILE, Qe.PROFILE_COMMENTS, Qe.PROFILE_HOMEPAGE, Qe.PROFILE_POST_COMMENTS, Qe.PROFILE_PRIVACY, Qe.PROFILE_ME, Qe.PROFILE_MODERATION, Qe.PROFILE_OVERVIEW, Qe.PROFILE_POSTS, Qe.PROFILE_PRIVATE, Qe.PROFILE_SETTINGS, Qe.PROFILE_REDIRECT]),
 				Ze = new Set([Qe.PROFILE_OVERVIEW, Qe.PROFILE_POSTS, Qe.PROFILE_PRIVATE]),
 				et = new Set([Qe.PROFILE_COMMENTS, Qe.PROFILE_OVERVIEW, Qe.PROFILE_POSTS, Qe.PROFILE_PRIVATE]),
@@ -6064,14 +6064,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c10a52060d72ef0d011bd014f529c8a9fa51cb4c1-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c7ed914c7fcdfe7435c434794d018afe264be8797-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "10a52060d72ef0d011bd014f529c8a9fa51cb4c1-production",
+						release: "7ed914c7fcdfe7435c434794d018afe264be8797-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6588,7 +6588,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "10a52060d72ef0d011bd014f529c8a9fa51cb4c1-production",
+						releaseClient: "7ed914c7fcdfe7435c434794d018afe264be8797-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -18399,7 +18399,7 @@
 			const L = e => e ? e.url : "",
 				B = e => !!(e && e.routeMatch && o.s.FRONTPAGE.includes(e.routeMatch.route.chunk)),
 				M = e => e && e.routeMatch && [o.s.FRONTPAGE, o.s.MULTIREDDIT, o.s.SUBREDDIT].includes(e.routeMatch.route.chunk),
-				U = e => !!(e && e.routeMatch && o.s.COUNTRY_SITE_PAGE.includes(e.routeMatch.route.chunk)),
+				U = e => !!(e && e.routeMatch && o.s.INTERNATIONAL_SITE_PAGE.includes(e.routeMatch.route.chunk)),
 				G = e => !(!e || !e.meta || e.meta.name !== o.Nb.TOPIC),
 				q = (e, {
 					pageLayer: t
@@ -25217,7 +25217,7 @@
 					switch (r) {
 						case s.Nb.POST_CREATION:
 							return Object(a.a)(e.match.params);
-						case s.Nb.COUNTRY_SITE_PAGE:
+						case s.Nb.INTERNATIONAL_SITE_PAGE:
 						case s.Nb.INDEX:
 						case s.Nb.LISTING:
 						case s.Nb.SUBREDDIT:
@@ -25334,7 +25334,7 @@
 							return {
 								listingKey: R(e, t, null)
 							};
-						case s.Nb.COUNTRY_SITE_PAGE: {
+						case s.Nb.INTERNATIONAL_SITE_PAGE: {
 							const e = n.params,
 								t = s.X;
 							return {
@@ -40585,7 +40585,7 @@
 							return "collection";
 						case h.Nb.INBOX_PAGES:
 							return "messages";
-						case h.Nb.COUNTRY_SITE_PAGE:
+						case h.Nb.INTERNATIONAL_SITE_PAGE:
 							return `lang_site_${e.match.params.countryCode}`;
 						default:
 							return
@@ -47140,4 +47140,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1c8704335d1281294ff8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4a6fcafee331148bd026.js.map
