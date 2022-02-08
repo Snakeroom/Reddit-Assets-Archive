@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.1876433c0eea823fbf92.js
-// Retrieved at 2/8/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.3a9b856a25b52857bc02.js
+// Retrieved at 2/8/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -14106,7 +14106,7 @@
 		"./src/reddit/components/SearchResultsNav/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return B
+				return G
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/lodash/noop.js"),
@@ -14115,77 +14115,78 @@
 				i = n.n(o),
 				c = n("./node_modules/react-redux/es/index.js"),
 				l = n("./src/lib/constants/index.ts"),
-				d = n("./src/reddit/constants/page.ts"),
-				u = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				m = n("./src/reddit/controls/InternalLink/index.tsx"),
-				p = n("./src/reddit/helpers/search/searchResultsTabTo.ts"),
-				b = n("./src/reddit/helpers/trackers/searchResults.ts"),
-				h = n("./src/reddit/hooks/useTracking.ts"),
-				g = n("./src/reddit/models/SearchDiscoveryUnit/index.ts"),
-				f = n("./src/reddit/selectors/experiments/serpRedesignLayout.ts"),
-				C = n("./src/reddit/selectors/searchResults.ts"),
-				O = n("./src/reddit/selectors/user.ts"),
-				v = n("./src/reddit/components/Pill/PillButton/index.tsx"),
-				x = n("./node_modules/history/esm/history.js"),
-				y = n("./node_modules/react-router-redux/es/index.js"),
-				E = n("./src/lib/addQueryParams/index.ts"),
-				j = n("./src/lib/classNames/index.ts"),
-				_ = n("./src/lib/colors/constants.ts"),
-				S = n("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
-				k = n("./src/reddit/constants/parameters.ts"),
-				P = n("./src/reddit/constants/tracking.ts"),
-				N = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				w = n("./src/reddit/hooks/useInfoTextTooltip.ts"),
-				I = n("./src/reddit/hooks/usePageLayer.ts"),
-				T = n("./src/reddit/selectors/telemetry.ts"),
-				M = n("./src/reddit/components/SearchNSFWToggle/hooks.ts"),
-				R = n("./src/reddit/components/SearchNSFWToggle/SearchNSFWToggle.m.less"),
-				A = n.n(R);
-			const L = "safe-search-toggle";
+				d = n("./src/lib/makeSearchKey/index.ts"),
+				u = n("./src/reddit/constants/page.ts"),
+				m = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				p = n("./src/reddit/controls/InternalLink/index.tsx"),
+				b = n("./src/reddit/helpers/search/searchResultsTabTo.ts"),
+				h = n("./src/reddit/helpers/trackers/searchResults.ts"),
+				g = n("./src/reddit/hooks/useTracking.ts"),
+				f = n("./src/reddit/models/SearchDiscoveryUnit/index.ts"),
+				C = n("./src/reddit/selectors/experiments/serpRedesignLayout.ts"),
+				O = n("./src/reddit/selectors/searchResults.ts"),
+				v = n("./src/reddit/selectors/user.ts"),
+				x = n("./src/reddit/components/Pill/PillButton/index.tsx"),
+				y = n("./node_modules/history/esm/history.js"),
+				E = n("./node_modules/react-router-redux/es/index.js"),
+				j = n("./src/lib/addQueryParams/index.ts"),
+				_ = n("./src/lib/classNames/index.ts"),
+				S = n("./src/lib/colors/constants.ts"),
+				k = n("./src/reddit/components/InfoTextTooltip/Hooked.tsx"),
+				P = n("./src/reddit/constants/parameters.ts"),
+				N = n("./src/reddit/constants/tracking.ts"),
+				w = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
+				I = n("./src/reddit/hooks/useInfoTextTooltip.ts"),
+				T = n("./src/reddit/hooks/usePageLayer.ts"),
+				M = n("./src/reddit/selectors/telemetry.ts"),
+				R = n("./src/reddit/components/SearchNSFWToggle/hooks.ts"),
+				A = n("./src/reddit/components/SearchNSFWToggle/SearchNSFWToggle.m.less"),
+				L = n.n(A);
+			const D = "safe-search-toggle";
 
-			function D({
+			function F({
 				searchOptions: e
 			}) {
-				const t = Object(h.a)(),
+				const t = Object(g.a)(),
 					[n, r] = i.a.useState(!0);
 				i.a.useEffect(() => r(null), []);
-				const a = Object(w.a)({}),
+				const a = Object(I.a)({}),
 					{
 						nsfwSessionSetting: o,
 						setNsfwSessionSetting: l
-					} = Object(M.b)(),
-					d = Object(I.a)(),
+					} = Object(R.b)(),
+					d = Object(T.a)(),
 					u = Object(c.d)();
 				a.arrowProps.style = {
 					...a.arrowProps.style,
-					borderBottom: `3px solid ${_.e}`
+					borderBottom: `3px solid ${S.e}`
 				}, a.popperProps.style = {
 					...a.popperProps.style,
-					backgroundColor: _.e
+					backgroundColor: S.e
 				};
 				const m = null != n ? n : !o;
 				return i.a.createElement("div", {
-					className: Object(j.a)(A.a.searchNSFWToggle),
-					"data-testid": L,
+					className: Object(_.a)(L.a.searchNSFWToggle),
+					"data-testid": D,
 					onMouseEnter: a.show,
 					onMouseLeave: a.hide
 				}, i.a.createElement("label", {
-					htmlFor: L,
-					className: Object(j.a)(A.a.searchNSFWToggleLabel)
+					htmlFor: D,
+					className: Object(_.a)(L.a.searchNSFWToggleLabel)
 				}, s.fbt._("Safe Search", null, {
 					hk: "x1C2Y"
-				})), i.a.createElement(N.a, {
-					activeColorOverride: _.a,
-					id: L,
+				})), i.a.createElement(w.a, {
+					activeColorOverride: S.a,
+					id: D,
 					onToggle: function() {
 						var n;
 						t(t => (function(t, n) {
 							return {
-								action: n ? P.c.DISABLE : P.c.ENABLE,
+								action: n ? N.c.DISABLE : N.c.ENABLE,
 								source: "search",
 								noun: "nsfw",
-								actionInfo: Object(T.d)(t),
-								search: Object(T.cb)(t, e)
+								actionInfo: Object(M.d)(t),
+								search: Object(M.cb)(t, e)
 							}
 						})(t, !m));
 						const s = !o;
@@ -14193,23 +14194,23 @@
 						const {
 							include_over_18: r,
 							...a
-						} = (null == d ? void 0 : d.queryParams) || {}, i = (null === (n = null == d ? void 0 : d.routeMatch) || void 0 === n ? void 0 : n.match.url) || p.a, c = {
+						} = (null == d ? void 0 : d.queryParams) || {}, i = (null === (n = null == d ? void 0 : d.routeMatch) || void 0 === n ? void 0 : n.match.url) || b.a, c = {
 							...a,
 							...s && {
-								[k.j]: "1"
+								[P.j]: "1"
 							}
-						}, b = {
+						}, p = {
 							pathname: i,
-							search: Object(E.a)("", {
+							search: Object(j.a)("", {
 								...c
 							})
 						};
-						u(Object(y.b)(Object(x.c)(b)))
+						u(Object(E.b)(Object(y.c)(p)))
 					},
 					on: m,
 					redditStyle: !0,
 					ref: a.target.ref
-				}), i.a.createElement(S.a, {
+				}), i.a.createElement(k.a, {
 					visible: a.visible,
 					arrowProps: a.arrowProps,
 					popperProps: a.popperProps
@@ -14219,94 +14220,94 @@
 					hk: "1G2k8"
 				})))
 			}
-			var F = n("./src/reddit/components/SearchResultsNav/index.m.less"),
-				U = n.n(F);
+			var U = n("./src/reddit/components/SearchResultsNav/index.m.less"),
+				B = n.n(U);
 
-			function B({
+			function G({
 				activeTab: e,
 				searchOptions: t,
 				searchSwitcher: n
 			}) {
-				const r = Object(h.a)(),
-					o = Object(c.e)(O.eb),
-					x = Object(c.e)(C.x),
-					y = Object(c.e)(f.a),
-					E = Object(u.fb)(),
-					j = x === g.c.Trending,
-					_ = {
+				const r = Object(g.a)(),
+					o = Object(c.e)(v.eb),
+					y = Object(c.e)(O.x),
+					E = Object(c.e)(C.a),
+					j = Object(m.fb)(),
+					_ = y === f.c.Trending,
+					S = {
 						condition: !0,
-						active: e === d.h.Posts,
-						target: b.b.Posts,
+						active: e === u.h.Posts,
+						target: h.b.Posts,
 						contentType: l.bc.Posts,
 						text: s.fbt._("Posts", null, {
 							hk: "vNVpl"
 						})
 					},
-					S = {
+					k = {
 						condition: !t.is_multi && !t.restrict_sr,
-						active: e === d.h.Listings,
-						target: b.b.Communities,
+						active: e === u.h.Listings,
+						target: h.b.Communities,
 						contentType: l.bc.Subreddits,
 						text: s.fbt._("Communities", null, {
 							hk: "45NgGC"
 						})
 					},
-					k = {
+					P = {
 						condition: !t.is_multi && !t.restrict_sr,
-						active: e === d.h.Authors,
-						target: b.b.Authors,
+						active: e === u.h.Authors,
+						target: h.b.Authors,
 						contentType: l.bc.Users,
 						text: s.fbt._("People", null, {
 							hk: "Ttxbf"
 						})
 					},
-					P = {
-						condition: !0,
-						active: e === d.h.Comments,
-						target: b.b.Comments,
+					N = {
+						condition: !(t.source === d.a.Trending || t.source === d.a.PromotedTrend),
+						active: e === u.h.Comments,
+						target: h.b.Comments,
 						contentType: l.bc.Comments,
 						text: s.fbt._("Comments", null, {
 							hk: "z0DGA"
 						})
 					},
-					N = [_, ...y ? [P] : [], S, k],
-					w = o && !j && "1" !== t.sr_nsfw;
+					w = [S, ...E ? [N] : [], k, P],
+					I = o && !_ && "1" !== t.sr_nsfw;
 				return i.a.createElement("div", {
 					"data-testid": "search-results-nav",
-					className: U.a.searchResultsNav
+					className: B.a.searchResultsNav
 				}, i.a.createElement("div", {
-					className: U.a.pillRow,
+					className: B.a.pillRow,
 					role: "tablist"
-				}, N.filter(e => e.condition).map(e => {
+				}, w.filter(e => e.condition).map(e => {
 					const {
 						active: n,
 						target: s,
 						text: o,
 						contentType: c
 					} = e;
-					return i.a.createElement(m.a, {
+					return i.a.createElement(p.a, {
 						key: s,
 						"data-testid": s,
-						to: Object(p.b)({
+						to: Object(b.b)({
 							searchType: c,
-							pageLayer: E
+							pageLayer: j
 						}),
 						"aria-selected": n,
 						role: "tab",
-						className: U.a.pillElement,
+						className: B.a.pillElement,
 						onClick: () => (e => {
-							e.active || r(Object(b.l)(e.target, t))
+							e.active || r(Object(h.l)(e.target, t))
 						})(e)
-					}, i.a.createElement(v.a, {
+					}, i.a.createElement(x.a, {
 						active: n,
 						onClick: a.a,
-						variant: v.b.TAB_GROUP
+						variant: x.b.TAB_GROUP
 					}, o))
 				})), n && i.a.createElement("div", {
-					className: U.a.searchSwitcherContainer
-				}, n), w && i.a.createElement("div", {
-					className: U.a.nsfwToggleContainer
-				}, i.a.createElement(D, {
+					className: B.a.searchSwitcherContainer
+				}, n), I && i.a.createElement("div", {
+					className: B.a.nsfwToggleContainer
+				}, i.a.createElement(F, {
 					searchOptions: t
 				})))
 			}
@@ -19759,7 +19760,7 @@
 					url: Object(P.a)(Q, V.name)
 				})));
 				const de = q[re].tab,
-					ue = q[re].sidebar && !$,
+					ue = Boolean(se) || q[re].sidebar && !$,
 					me = q[re].filterNav,
 					pe = Object(M.a)({
 						redditStyle: !0,
@@ -22378,4 +22379,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "Reddit~Subreddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.1876433c0eea823fbf92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.3a9b856a25b52857bc02.js.map
