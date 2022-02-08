@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.2f600c07d2a837efd72e.js
-// Retrieved at 2/8/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.a1331e396137f4e32fd6.js
+// Retrieved at 2/8/2022, 5:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -2930,7 +2930,7 @@
 				} = d, u = !!c && c >= 51 && c <= 100, l = !i || Object(p.a)(i), b = o && o.urlParams.subredditName === i, f = Object(Y.K)(n), m = Object($.c)(n, {
 					subredditId: Object(G.C)(n, i)
 				});
-				if (l || b || Object(W.F)() || !u || !f || m) return;
+				if (l || b || Object(W.G)() || !u || !f || m) return;
 				const _ = Object(F.d)(t(), {
 					subredditName: i
 				});
@@ -2944,7 +2944,7 @@
 					id: "createPostCta",
 					kind: z.b.Modal,
 					name: "createPostCta",
-					secondButtonAction: async () => Object(W.Ib)(),
+					secondButtonAction: async () => Object(W.Jb)(),
 					secondButtonText: "Dismiss",
 					text: `There have been over ${j} visits to r/${i} in the past week. Create a new post and start the next conversation.`
 				}))
@@ -12188,4 +12188,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.2f600c07d2a837efd72e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.a1331e396137f4e32fd6.js.map

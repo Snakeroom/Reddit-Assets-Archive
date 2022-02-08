@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.301120391e8e90222b86.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.249fdb2254d1e1325de2.js
+// Retrieved at 2/8/2022, 5:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -81,16 +81,16 @@
 			}
 			var f = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.Bb)()
+					e(Object(c.i)()), Object(u.Cb)()
 				},
 				onViewTooltip: () => {
-					Object(u.Vb)()
+					Object(u.Xb)()
 				}
 			}))(Object(p.c)(x));
 			const T = "editable-primary-topic-idcard";
 			var y = s("./src/reddit/controls/DropdownSelector/index.tsx"),
-				S = s("./src/reddit/models/Tags/index.ts"),
-				C = s("./src/reddit/selectors/tags.ts"),
+				C = s("./src/reddit/models/Tags/index.ts"),
+				S = s("./src/reddit/selectors/tags.ts"),
 				v = s("./src/reddit/components/CommunityTopics/PrimaryTopic/index.m.less"),
 				I = s.n(v);
 			const E = ({
@@ -122,41 +122,41 @@
 					}))
 				},
 				j = {
-					availablePrimaryTags: C.p
+					availablePrimaryTags: S.p
 				},
 				w = Object(a.c)({
 					...j,
 					selectedPrimaryTag: (e, {
 						subredditId: t
-					}) => t && Object(C.s)(e, {
+					}) => t && Object(S.s)(e, {
 						subredditId: t
 					}) || null,
 					hasSecondaryTags: (e, {
 						subredditId: t
-					}) => Object.keys(Object(C.o)(e, {
+					}) => Object.keys(Object(S.o)(e, {
 						itemId: t
 					})).length > 0,
-					isSaving: C.D
+					isSaving: S.D
 				}),
 				D = Object(a.c)({
 					...j,
 					selectedPrimaryTag: (e, {
 						subredditId: t
-					}) => t && Object(C.x)(e, {
+					}) => t && Object(S.x)(e, {
 						subredditId: t
 					}) || null,
 					hasSecondaryTags: (e, {
 						subredditId: t
-					}) => Object.keys(Object(C.o)(e, {
+					}) => Object.keys(Object(S.o)(e, {
 						itemId: t
 					})).length > 0,
-					isSaving: C.D
+					isSaving: S.D
 				}),
 				_ = Object(a.c)({
 					...j,
-					selectedPrimaryTag: C.v,
+					selectedPrimaryTag: S.v,
 					hasSecondaryTags: () => !1,
-					isSaving: e => Object(C.D)(e)
+					isSaving: e => Object(S.D)(e)
 				}),
 				P = (e, {
 					subredditId: t,
@@ -168,7 +168,7 @@
 							subredditId: t
 						})), e(Object(d.o)(t, {
 							tagId: n.value,
-							state: S.d.TAGGED
+							state: C.d.TAGGED
 						}))) : s(n.value)
 					},
 					onShowTooltip: () => {
@@ -584,8 +584,8 @@
 					}) => Object(u.b)(t)(e)
 				}),
 				y = Object(d.a)(f, [n.a.Click, n.a.Keydown]),
-				S = Object(r.b)(T);
-			class C extends i.a.Component {
+				C = Object(r.b)(T);
+			class S extends i.a.Component {
 				constructor(e) {
 					super(e), this.checkAndSetPosition = () => {
 						const {
@@ -663,7 +663,7 @@
 					}))
 				}
 			}
-			t.a = S(C)
+			t.a = C(S)
 		},
 		"./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/InfoTooltip/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -714,7 +714,7 @@
 			}
 			const {
 				fbt: y
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), S = (e, t) => [f.a.selectedOption, "number" == typeof t && e.displayText.length > t ? f.a.selectedOptionError : null], C = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = (e, t) => [f.a.selectedOption, "number" == typeof t && e.displayText.length > t ? f.a.selectedOptionError : null], S = e => {
 				const {
 					innerRef: t,
 					onClickHandler: s,
@@ -724,7 +724,7 @@
 					...d
 				} = e;
 				return o.a.createElement("div", T({}, d, {
-					className: Object(a.a)(...S(i, r), f.a.readOnlySelectedOption),
+					className: Object(a.a)(...C(i, r), f.a.readOnlySelectedOption),
 					ref: e.innerRef
 				}), e.option.displayText)
 			}, v = e => {
@@ -737,7 +737,7 @@
 				} = e;
 				return o.a.createElement("div", T({}, r, {
 					onClick: s,
-					className: Object(a.a)(...S(n, i)),
+					className: Object(a.a)(...C(n, i)),
 					ref: e.innerRef
 				}), e.option.displayText, o.a.createElement(b.a, {
 					className: f.a.closeIcon
@@ -773,7 +773,7 @@
 				onShowTooltip: t => e(Object(l.f)({
 					tooltipId: t
 				}))
-			})), V = "inline-editing-topics-tooltip-", W = {
+			})), W = "inline-editing-topics-tooltip-", V = {
 				top: N.a.alienblue,
 				bottom: N.a.alienblue
 			};
@@ -786,7 +786,7 @@
 					}
 				}
 				makeUniqueTooltipId() {
-					return `${V}${M()()}`
+					return `${W}${M()()}`
 				}
 				componentDidMount() {
 					this.setState({
@@ -808,7 +808,7 @@
 					}), o.a.createElement(L.a, {
 						tooltipId: this.state.tooltipId,
 						defaultTooltipPosition: "bottom",
-						caretColor: W
+						caretColor: V
 					}, o.a.createElement("div", {
 						className: A.a.container
 					}, U._("Adding community topics allow people to find your community. Add a primary topic and sub topics to be discovered more easily.", null, {
@@ -962,7 +962,7 @@
 					}, o.a.createElement(p.b, {
 						context: D.a.idCard,
 						subredditId: e,
-						selectedOptionComponent: t ? v : C,
+						selectedOptionComponent: t ? v : S,
 						onFocus: this.onFocus,
 						onBlur: this.onBlur,
 						childClassNames: ee,
@@ -1253,10 +1253,10 @@
 				f = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				T = s("./src/reddit/helpers/readOnlyMode/index.ts"),
 				y = s("./src/reddit/components/MultiOptionSelect/OptionSearchBar/index.m.less"),
-				S = s.n(y);
+				C = s.n(y);
 
-			function C() {
-				return (C = Object.assign || function(e) {
+			function S() {
+				return (S = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -1316,11 +1316,11 @@
 					Object(T.c)(this.props.readOnlyMode) || (e.tabIndex = 0);
 					const t = this.props.selectedOptionComponent || x,
 						s = "number" == typeof this.props.maxOptionsToDisplay && this.props.options.length > this.props.maxOptionsToDisplay;
-					return r.a.createElement("div", C({
+					return r.a.createElement("div", S({
 						"aria-invalid": this.props.isError,
-						className: Object(a.a)(this.props.className, S.a.optionSearchBarContainer, {
-							[S.a.optionSearchBarError]: this.props.isError,
-							[S.a.optionSearchBarReadOnly]: Object(T.c)(this.props.readOnlyMode)
+						className: Object(a.a)(this.props.className, C.a.optionSearchBarContainer, {
+							[C.a.optionSearchBarError]: this.props.isError,
+							[C.a.optionSearchBarReadOnly]: Object(T.c)(this.props.readOnlyMode)
 						}),
 						ref: this.containerRef,
 						onFocus: this.onSearchBarFocus,
@@ -1341,10 +1341,10 @@
 							innerRef: n === this.props.options.length - 1 ? this.lastSelectedOptionComponentRef : void 0
 						})
 					}), s && r.a.createElement("span", {
-						className: S.a.optionsOverflowIndication
+						className: C.a.optionsOverflowIndication
 					}, `+${this.props.options.length-(this.props.maxOptionsToDisplay||0)}`), this.props.children, !Object(T.c)(this.props.readOnlyMode) && r.a.createElement("input", {
-						className: Object(a.a)(S.a.input, {
-							[S.a.hiddenInput]: Object(T.b)(this.props.readOnlyMode)
+						className: Object(a.a)(C.a.input, {
+							[C.a.hiddenInput]: Object(T.b)(this.props.readOnlyMode)
 						}),
 						ref: this.inputRef,
 						type: "text",
@@ -1353,7 +1353,7 @@
 						onChange: this.props.onInputChanged,
 						maxLength: this.props.maxLength
 					}), this.props.isLoading && r.a.createElement(f.a, {
-						className: S.a.loadingIcon,
+						className: C.a.loadingIcon,
 						sizePx: v
 					}), this.state.isFocused && r.a.createElement(u, {
 						className: this.props.dropdownClassName,
@@ -1647,4 +1647,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.301120391e8e90222b86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.249fdb2254d1e1325de2.js.map

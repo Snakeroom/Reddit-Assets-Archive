@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2bacc60c05b2d0efef45.js
-// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.1b62bb2b66bdf6ec3266.js
+// Retrieved at 2/8/2022, 5:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -5031,7 +5031,7 @@
 					update: c
 				} = e, m = Object(ie.a)(), u = Object(i.d)(), [p, h] = Object(o.useState)(n), [b, g] = Object(o.useState)(!1), [f, x] = Object(o.useState)(!0);
 				return Object(o.useEffect)(() => {
-					x(Object(re.H)("location")), Object(re.Kb)("location")
+					x(Object(re.I)("location")), Object(re.Lb)("location")
 				}, []), r.a.createElement(r.a.Fragment, null, r.a.createElement(X.a, {
 					className: Se.a.noMarginHeading
 				}, z.fbt._("Community Location and main language", null, {
@@ -6033,10 +6033,10 @@
 			}
 			var E = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(d.i)()), Object(p.Bb)()
+					e(Object(d.i)()), Object(p.Cb)()
 				},
 				onViewTooltip: () => {
-					Object(p.Vb)()
+					Object(p.Xb)()
 				}
 			}))(Object(m.c)(x));
 			const _ = "editable-primary-topic-idcard";
@@ -14607,7 +14607,12 @@
 		"./src/reddit/components/RemovalReasons/index.m.less": function(e, t, n) {
 			e.exports = {
 				Rules: "-z_XjylM-4VxXIVlUJupm",
-				rules: "-z_XjylM-4VxXIVlUJupm"
+				rules: "-z_XjylM-4VxXIVlUJupm",
+				title: "_1wclVdwRTNycOnlbH1IkQU",
+				subtext: "_2IxjljuOnx5CrtK0CMzstT",
+				removalReasonsCount: "_1B3ouNDntikHo-PDWo9Gwk",
+				tooltipContent: "_2KMnTQyMVHRHQBFfwLKxrJ",
+				tooltip: "_3YCzepP6_mhRVOdUDnmkEo"
 			}
 		},
 		"./src/reddit/components/RemovalReasons/index.tsx": function(e, t, n) {
@@ -14618,40 +14623,45 @@
 				r = n.n(o),
 				i = n("./node_modules/react-redux/es/index.js"),
 				l = n("./node_modules/reselect/es/index.js"),
-				d = n("./src/reddit/actions/modal.ts"),
-				c = n("./src/reddit/actions/removalReasons/index.ts"),
-				m = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				u = n("./src/reddit/components/ModerationPagesEmptyList/index.tsx"),
-				p = n("./src/reddit/components/ModHub/InfoLink/index.tsx"),
-				h = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
-				b = n("./src/reddit/controls/Button/index.tsx"),
-				g = n("./src/reddit/icons/fonts/index.tsx"),
-				f = n("./src/reddit/models/RemovalReason/index.ts"),
-				x = n("./src/reddit/selectors/activeModalId.ts"),
-				E = n("./src/reddit/selectors/removalReasons.ts"),
-				_ = n("./src/higherOrderComponents/asModal/index.tsx"),
-				v = n("./src/lib/lessComponent.tsx"),
-				C = n("./src/reddit/components/CharacterCountdown/index.tsx"),
-				k = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				y = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
-				O = n("./src/reddit/controls/TextButton/index.tsx"),
-				S = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				j = n("./src/reddit/components/RemovalReasons/RemovalReasonEditorModal.m.less"),
-				N = n.n(j);
-			const w = {
+				d = n("./src/reddit/constants/colors.ts"),
+				c = n("./src/reddit/actions/modal.ts"),
+				m = n("./src/reddit/actions/removalReasons/index.ts"),
+				u = n("./src/reddit/actions/tooltip.ts"),
+				p = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+				h = n("./src/reddit/components/ContentTooltip/index.tsx"),
+				b = n("./src/reddit/components/ModerationPagesEmptyList/index.tsx"),
+				g = n("./src/reddit/components/ModHub/InfoLink/index.tsx"),
+				f = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				x = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
+				E = n("./src/reddit/controls/Button/index.tsx"),
+				_ = n("./src/reddit/helpers/localStorage/index.ts"),
+				v = n("./src/reddit/icons/fonts/index.tsx"),
+				C = n("./src/reddit/models/RemovalReason/index.ts"),
+				k = n("./src/reddit/selectors/activeModalId.ts"),
+				y = n("./src/reddit/selectors/removalReasons.ts"),
+				O = n("./src/higherOrderComponents/asModal/index.tsx"),
+				S = n("./src/lib/lessComponent.tsx"),
+				j = n("./src/reddit/components/CharacterCountdown/index.tsx"),
+				N = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				w = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
+				I = n("./src/reddit/controls/TextButton/index.tsx"),
+				T = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				M = n("./src/reddit/components/RemovalReasons/RemovalReasonEditorModal.m.less"),
+				P = n.n(M);
+			const R = {
 					message: "",
 					title: ""
 				},
-				I = v.a.wrapped(k.f, "GenericGreetingText", N.a),
-				T = v.a.wrapped(k.s, "DeleteReasonButton", N.a),
-				M = v.a.wrapped(b.l, "PrimaryButton", N.a),
-				P = v.a.wrapped(k.t, "TextArea", N.a),
-				R = v.a.wrapped(k.g, "ModalFooter", N.a),
-				F = v.a.wrapped(y.c, "Input", N.a);
-			class D extends r.a.Component {
+				F = S.a.wrapped(N.f, "GenericGreetingText", P.a),
+				D = S.a.wrapped(N.s, "DeleteReasonButton", P.a),
+				A = S.a.wrapped(E.l, "PrimaryButton", P.a),
+				L = S.a.wrapped(N.t, "TextArea", P.a),
+				B = S.a.wrapped(N.g, "ModalFooter", P.a),
+				U = S.a.wrapped(w.c, "Input", P.a);
+			class H extends r.a.Component {
 				constructor(e) {
 					super(e), this.onTitleInputChange = e => {
-						e.currentTarget.value.length <= f.d && this.setState({
+						e.currentTarget.value.length <= C.d && this.setState({
 							title: e.currentTarget.value
 						})
 					}, this.onMessageInputChange = e => {
@@ -14664,46 +14674,46 @@
 							message: this.state.message.trim()
 						};
 						this.props.removalReason && (e.id = this.props.removalReason.id), this.props.onSubmit(e), this.props.sendEvent(), this.props.toggleModal()
-					}, this.canSave = () => this.state.title.trim().length > 0 && this.state.title.trim().length <= f.d && this.state.message.trim().length > 0 && this.state.message.trim().length <= f.a, this.state = e.removalReason ? {
+					}, this.canSave = () => this.state.title.trim().length > 0 && this.state.title.trim().length <= C.d && this.state.message.trim().length > 0 && this.state.message.trim().length <= C.a, this.state = e.removalReason ? {
 						title: e.removalReason.title,
 						message: e.removalReason.message
-					} : w
+					} : R
 				}
 				render() {
 					const {
 						props: e,
 						state: t
 					} = this;
-					return r.a.createElement(k.e, null, r.a.createElement(k.i, null, r.a.createElement(S.a, null, r.a.createElement(k.q, null, e.removalReason ? a.fbt._("Edit removal reason", null, {
+					return r.a.createElement(N.e, null, r.a.createElement(N.i, null, r.a.createElement(T.a, null, r.a.createElement(N.q, null, e.removalReason ? a.fbt._("Edit removal reason", null, {
 						hk: "1P0jAw"
 					}) : a.fbt._("Add new reason", null, {
 						hk: "jDYo"
-					})), r.a.createElement(O.a, {
+					})), r.a.createElement(I.a, {
 						onClick: e.toggleModal
-					}, r.a.createElement(k.b, null)))), r.a.createElement(k.l, null, r.a.createElement(k.h, null, r.a.createElement(F, {
+					}, r.a.createElement(N.b, null)))), r.a.createElement(N.l, null, r.a.createElement(N.h, null, r.a.createElement(U, {
 						placeholder: a.fbt._("Removal reason title", null, {
 							hk: "4hFurd"
 						}),
 						value: t.title,
 						onChange: this.onTitleInputChange
-					}), r.a.createElement(C.a, {
+					}), r.a.createElement(j.a, {
 						text: t.title.trim(),
-						maxChars: f.d
-					})), r.a.createElement(k.o, null, a.fbt._("Reason message:", null, {
+						maxChars: C.d
+					})), r.a.createElement(N.o, null, a.fbt._("Reason message:", null, {
 						hk: "yMtrM"
-					})), r.a.createElement(I, null, a.fbt._("Hi u/username,", null, {
+					})), r.a.createElement(F, null, a.fbt._("Hi u/username,", null, {
 						hk: "NE4XP"
-					})), r.a.createElement(P, {
+					})), r.a.createElement(L, {
 						placeholder: a.fbt._("Write a message that will communicate to the user why their post was removed.", null, {
 							hk: "4u5AVO"
 						}),
 						value: t.message,
 						onChange: this.onMessageInputChange,
 						"data-redditstyle": !0
-					}), r.a.createElement(C.a, {
+					}), r.a.createElement(j.a, {
 						text: t.message.trim(),
-						maxChars: f.a
-					})), r.a.createElement(R, null, r.a.createElement(M, {
+						maxChars: C.a
+					})), r.a.createElement(B, null, r.a.createElement(A, {
 						onClick: this.onSave,
 						"data-redditstyle": !0,
 						disabled: !this.canSave()
@@ -14711,53 +14721,63 @@
 						hk: "4yMsMq"
 					}) : a.fbt._("Add new reason", null, {
 						hk: "34P0ii"
-					})), r.a.createElement(k.a, {
+					})), r.a.createElement(N.a, {
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, a.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), e.removalReason && r.a.createElement(T, {
+					})), e.removalReason && r.a.createElement(D, {
 						onClick: e.onDeleteReason
 					}, a.fbt._("Delete", null, {
 						hk: "4lt26q"
 					}))))
 				}
 			}
-			var A = Object(_.a)(D),
-				L = n("./src/reddit/layout/row/Inline/index.tsx"),
-				B = n("./src/reddit/components/RemovalReasons/RemovalReasonItem.m.less"),
-				U = n.n(B);
+			var z = Object(O.a)(H),
+				W = n("./src/reddit/layout/row/Inline/index.tsx"),
+				V = n("./src/reddit/components/RemovalReasons/RemovalReasonItem.m.less"),
+				q = n.n(V);
 			const {
-				fbt: H
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), z = v.a.wrapped(b.r, "EditButton", U.a), W = v.a.wrapped(L.a, "Row", U.a), V = v.a.div("ReasonNumber", U.a), q = v.a.div("ReasonText", U.a);
-			var G = e => r.a.createElement(W, null, r.a.createElement(V, null, e.index + 1), r.a.createElement(q, null, e.removalReason.title), r.a.createElement(z, {
+				fbt: G
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), K = S.a.wrapped(E.r, "EditButton", q.a), X = S.a.wrapped(W.a, "Row", q.a), Z = S.a.div("ReasonNumber", q.a), J = S.a.div("ReasonText", q.a);
+			var Y = e => r.a.createElement(X, null, r.a.createElement(Z, null, e.index + 1), r.a.createElement(J, null, e.removalReason.title), r.a.createElement(K, {
 					onClick: e.onEdit,
 					"data-redditstyle": !0
-				}, H._("Edit", null, {
+				}, G._("Edit", null, {
 					hk: "1nftDt"
 				}))),
-				K = n("./src/reddit/components/RemovalReasons/index.m.less"),
-				X = n.n(K);
-			const Z = {
+				Q = n("./src/reddit/components/RemovalReasons/index.m.less"),
+				$ = n.n(Q);
+			const ee = "RemovalReasons--Tooltip",
+				te = 1e4,
+				ne = {
 					reasonToEdit: null
 				},
-				J = Object(l.c)({
-					isConfirmModalOpen: e => "RemovalReasons--Modal--DeleteConfirmation" === Object(x.a)(e),
-					isRemovalReasonEditorModalOpen: e => "RemovalReasons--Editor--Modal" === Object(x.a)(e),
-					removalReasons: E.c
+				se = Object(l.c)({
+					isConfirmModalOpen: e => "RemovalReasons--Modal--DeleteConfirmation" === Object(k.a)(e),
+					isRemovalReasonEditorModalOpen: e => "RemovalReasons--Editor--Modal" === Object(k.a)(e),
+					removalReasons: y.c
 				}),
-				Y = Object(i.b)(J, (e, {
+				ae = Object(i.b)(se, (e, {
 					subredditId: t
 				}) => ({
-					addRemovalReason: n => e(Object(c.addRemovalReason)(t, n)),
-					deleteRemovalReason: n => e(Object(c.deleteRemovalReason)(t, n)),
-					editRemovalReason: n => e(Object(c.editRemovalReason)(t, n)),
-					toggleConfirmationModal: () => e(Object(d.i)("RemovalReasons--Modal--DeleteConfirmation")),
-					toggleReasonEditorModal: () => e(Object(d.i)("RemovalReasons--Editor--Modal"))
+					addRemovalReason: n => e(Object(m.addRemovalReason)(t, n)),
+					deleteRemovalReason: n => e(Object(m.deleteRemovalReason)(t, n)),
+					editRemovalReason: n => e(Object(m.editRemovalReason)(t, n)),
+					toggleConfirmationModal: () => e(Object(c.i)("RemovalReasons--Modal--DeleteConfirmation")),
+					toggleReasonEditorModal: () => e(Object(c.i)("RemovalReasons--Editor--Modal")),
+					onShowTooltip: t => e(Object(u.f)({
+						tooltipId: t
+					})),
+					onHideTooltip: () => e(Object(u.i)())
 				}));
-			class Q extends r.a.Component {
+			class oe extends r.a.Component {
 				constructor(e) {
-					super(e), this.onAddReason = () => {
+					super(e), this.onShowTooltip = () => {
+						Object(_.x)() || (this.props.onShowTooltip(ee), setTimeout(() => {
+							this.props.onHideTooltip()
+						}, te), Object(_.Rb)())
+					}, this.onAddReason = () => {
 						this.setState({
 							reasonToEdit: null
 						}), this.props.toggleReasonEditorModal(), this.props.sendEventWithName("add_new")()
@@ -14765,7 +14785,9 @@
 						this.setState({
 							reasonToEdit: e
 						}), this.props.toggleReasonEditorModal(), e && this.props.sendEventWithName("edit")()
-					}, this.renderReasonEditorModal = () => r.a.createElement(A, {
+					}, this.onClickTooltip = () => {
+						this.props.onHideTooltip()
+					}, this.renderReasonEditorModal = () => r.a.createElement(z, {
 						onDeleteReason: () => {
 							this.props.toggleReasonEditorModal(), this.props.toggleConfirmationModal()
 						},
@@ -14775,7 +14797,10 @@
 						subredditId: this.props.subredditId,
 						toggleModal: this.onEditReason(null),
 						withOverlay: !0
-					}), this.state = Z
+					}), this.state = ne
+				}
+				componentDidMount() {
+					this.onShowTooltip()
 				}
 				render() {
 					const {
@@ -14786,29 +14811,50 @@
 						sendEventWithName: i,
 						toggleConfirmationModal: l
 					} = this.props;
-					return r.a.createElement(r.a.Fragment, null, r.a.createElement(h.c, null, r.a.createElement(b.l, {
+					return r.a.createElement(r.a.Fragment, null, r.a.createElement(f.c, null, r.a.createElement(E.l, {
 						onClick: this.onAddReason,
-						disabled: o.length >= f.c || n,
+						disabled: o.length >= C.c || n,
 						"data-redditstyle": !0
 					}, a.fbt._("Add removal reason", null, {
 						hk: "2fHPVe"
-					}))), r.a.createElement(h.a, null, r.a.createElement(h.b, null, a.fbt._("Removal reasons", null, {
+					}))), r.a.createElement(f.a, null, r.a.createElement(f.b, {
+						className: $.a.title
+					}, a.fbt._("Removal reasons", null, {
 						hk: "3IWxkH"
-					}), r.a.createElement(p.a, {
+					}), r.a.createElement(g.a, {
 						linkUrl: `${s.a.redditModHelpUrl}/hc/en-us/articles/360010094892`
-					})), o.length > 0 ? o.map((e, t) => r.a.createElement(G, {
+					}), r.a.createElement(x.n, {
+						className: $.a.subtext
+					}, a.fbt._("Help people become better posters by giving a short reason why their post was removed.", null, {
+						hk: "2X1Ma2"
+					}), r.a.createElement("span", {
+						className: $.a.removalReasonsCount,
+						id: ee,
+						onClick: this.onClickTooltip
+					}, r.a.createElement(h.a, {
+						className: $.a.tooltip,
+						defaultTooltipPosition: "left",
+						tooltipId: ee,
+						caretColor: {
+							right: d.a.alienblue
+						}
+					}, r.a.createElement("div", {
+						className: $.a.tooltipContent
+					}, a.fbt._("NEW! Add up to 50 removal reasons.", null, {
+						hk: "1LM0MR"
+					}))), o.length, "/", C.c))), o.length > 0 ? o.map((e, t) => r.a.createElement(Y, {
 						index: t,
 						key: e.title,
 						onEdit: this.onEditReason(e),
 						removalReason: e
-					})) : r.a.createElement(u.c, {
+					})) : r.a.createElement(b.c, {
 						text: a.fbt._("No removal reasons yet", null, {
 							hk: "1j70G1"
 						})
-					}, r.a.createElement(g.a, {
+					}, r.a.createElement(v.a, {
 						name: "rules",
-						className: X.a.Rules
-					}))), n && this.renderReasonEditorModal(), t && this.state.reasonToEdit && r.a.createElement(m.a, {
+						className: $.a.Rules
+					}))), n && this.renderReasonEditorModal(), t && this.state.reasonToEdit && r.a.createElement(p.a, {
 						actionText: a.fbt._("Delete", null, {
 							hk: "4lt26q"
 						}),
@@ -14831,7 +14877,7 @@
 					}))
 				}
 			}
-			t.a = Y(Q)
+			t.a = ae(oe)
 		},
 		"./src/reddit/components/RichTextEditor/HoverTooltip/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -21668,7 +21714,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						locationSettingSeen: Object(W.H)("location")
+						locationSettingSeen: Object(W.I)("location")
 					})
 				}
 				render() {
@@ -22640,4 +22686,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2bacc60c05b2d0efef45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1b62bb2b66bdf6ec3266.js.map

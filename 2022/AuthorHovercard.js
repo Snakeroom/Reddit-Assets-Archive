@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.106a3707ae30821a3b72.js
-// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.59264487367b31b6e886.js
+// Retrieved at 2/8/2022, 5:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -533,14 +533,14 @@
 				d = e => {
 					switch (e) {
 						case r.a.Denied:
-							i.nb(!1), Object(a.c)();
+							i.ob(!1), Object(a.c)();
 							break;
 						case r.a.Default:
 						case r.a.Granted:
-							i.nb(!0), Object(a.c)();
+							i.ob(!0), Object(a.c)();
 							break;
 						case r.a.Closed:
-							i.nb(!0)
+							i.ob(!0)
 					}
 				}
 		},
@@ -2335,7 +2335,7 @@
 						[g, v] = function(e) {
 							const [t, n] = Object(r.useState)(Object(V.t)(e));
 							return [t, Object(r.useCallback)(() => {
-								n(!0), Object(V.Cb)(e)
+								n(!0), Object(V.Db)(e)
 							}, [])]
 						}(h),
 						[x, _] = Object(Z.a)(h),
@@ -3829,7 +3829,7 @@
 			function s(e) {
 				const [t, n] = Object(a.useState)(Object(r.s)(e));
 				return [t, Object(a.useCallback)(() => {
-					n(!0), Object(r.ob)(e)
+					n(!0), Object(r.pb)(e)
 				}, [])]
 			}
 		},
@@ -3844,7 +3844,7 @@
 			function s(e) {
 				const [t, n] = Object(a.useState)(() => Object(r.w)(e));
 				return [t, Object(a.useCallback)(() => {
-					n(!0), Object(r.Ab)(e)
+					n(!0), Object(r.Bb)(e)
 				}, [e])]
 			}
 		},
@@ -4638,4 +4638,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.106a3707ae30821a3b72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.59264487367b31b6e886.js.map

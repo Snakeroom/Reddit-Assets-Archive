@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.2e4b90338849e304cda0.js
-// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.a0ada01b9cffa53db82e.js
+// Retrieved at 2/8/2022, 5:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -2457,7 +2457,7 @@
 							pauseMedia: !0
 						})
 					}, this.onGotItClick = () => {
-						Object(jt.Ob)(), this.setState({
+						Object(jt.Pb)(), this.setState({
 							showEducation: !1
 						})
 					}, this.onClickPost = (e, t) => {
@@ -2477,7 +2477,7 @@
 				}
 				componentDidMount() {
 					this.setState({
-						showEducation: !Object(jt.L)()
+						showEducation: !Object(jt.M)()
 					}), document.addEventListener("scroll", this.handleScroll), this.handleScroll()
 				}
 				componentWillUnmount() {
@@ -3599,4 +3599,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.2e4b90338849e304cda0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.a0ada01b9cffa53db82e.js.map
