@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.911d7c9cb8abe4688ca2.js
-// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.04dc935e8a099555bdc5.js
+// Retrieved at 2/8/2022, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -1477,7 +1477,7 @@
 				j = (e, t, s, n, i, r, c) => {
 					Object(p.a)({
 						...u.o(e),
-						...Object(a.h)(e, s, n, i, r, t),
+						...Object(a.j)(e, s, n, i, r, t),
 						action: o.c.VIEW,
 						noun: c ? "ad" : "post"
 					})
@@ -1506,8 +1506,8 @@
 						post: u.J(r, t)
 					}
 				},
-				D = (e, t, s, n) => i => r => Object(a.h)(r, i, e, t, s, n),
-				w = (e, t, s, n) => i => r => Object(a.g)({
+				D = (e, t, s, n) => i => r => Object(a.j)(r, i, e, t, s, n),
+				w = (e, t, s, n) => i => r => Object(a.h)({
 					action: o.c.CLICK,
 					state: r,
 					searchOptions: e,
@@ -1518,7 +1518,7 @@
 					discoveryUnit: n
 				}),
 				M = (e, t, s, n) => i => r => ({
-					...Object(a.h)(r, i, e, t, s, n),
+					...Object(a.j)(r, i, e, t, s, n),
 					noun: "ad"
 				}),
 				R = (e, t) => s => i => ({
@@ -1720,4 +1720,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.911d7c9cb8abe4688ca2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.04dc935e8a099555bdc5.js.map

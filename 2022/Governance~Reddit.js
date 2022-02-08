@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.b89ecea684b3ddecbed3.js
-// Retrieved at 2/7/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.97161941246970fa7c88.js
+// Retrieved at 2/8/2022, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -5422,7 +5422,7 @@
 						searchQuery: p.searchQuery,
 						structureType: S.c.Recent
 					};
-					k(Object(I.t)(I.a.RECENT, e, v))
+					k(Object(I.v)(I.a.RECENT, e, v))
 				}, []);
 				const M = e => e.subredditOrProfileRestrictedName ? `${e.subredditOrProfileRestrictedName} ${e.searchQuery}` : e.searchQuery,
 					{
@@ -5622,7 +5622,7 @@
 							searchQuery: r.searchQuery,
 							structureType: S.c.Search
 						};
-					E(Object(I.t)(e, t, a))
+					E(Object(I.v)(e, t, a))
 				}, []);
 				const _ = !r.isProfile || r.enableFollowers;
 				return n.a.createElement(i.a, {
@@ -5666,7 +5666,9 @@
 				})), r.displayInfo && r.displayInfo.isNSFW && n.a.createElement(B.b, {
 					flair: {
 						type: G.f.Nsfw,
-						text: "nsfw"
+						text: d.fbt._("nsfw", null, {
+							hk: "2nrY5X"
+						})
 					}
 				}))))
 			}
@@ -5722,10 +5724,10 @@
 						restrict_sr: E ? "1" : ""
 					};
 				return Object(s.useEffect)(() => {
-					p(Object(I.o)(C, E, r, f || void 0))
+					p(Object(I.q)(C, E, r, f || void 0))
 				}, []), n.a.createElement(i.a, {
 					onClick: function(e) {
-						p(Object(I.l)(S.a.FullSearchButton, C, E, f || void 0)), c(e)
+						p(Object(I.n)(S.a.FullSearchButton, C, E, f || void 0)), c(e)
 					},
 					to: {
 						pathname: P,
@@ -7364,7 +7366,7 @@
 				D = (e, t, r, s, n, a, o) => {
 					Object(f.a)({
 						...l.o(e),
-						...Object(d.h)(e, r, s, n, a, t),
+						...Object(d.j)(e, r, s, n, a, t),
 						action: c.c.VIEW,
 						noun: o ? "ad" : "post"
 					})
@@ -7393,8 +7395,8 @@
 						post: l.J(a, t)
 					}
 				},
-				N = (e, t, r, s) => n => a => Object(d.h)(a, n, e, t, r, s),
-				k = (e, t, r, s) => n => a => Object(d.g)({
+				N = (e, t, r, s) => n => a => Object(d.j)(a, n, e, t, r, s),
+				k = (e, t, r, s) => n => a => Object(d.h)({
 					action: c.c.CLICK,
 					state: a,
 					searchOptions: e,
@@ -7405,7 +7407,7 @@
 					discoveryUnit: s
 				}),
 				L = (e, t, r, s) => n => a => ({
-					...Object(d.h)(a, n, e, t, r, s),
+					...Object(d.j)(a, n, e, t, r, s),
 					noun: "ad"
 				}),
 				x = (e, t) => r => n => ({
@@ -25278,4 +25280,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b89ecea684b3ddecbed3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.97161941246970fa7c88.js.map

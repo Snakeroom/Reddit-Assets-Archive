@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.3468108a3cf23516eb5a.js
-// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.1de5ea98513abe6fae55.js
+// Retrieved at 2/8/2022, 10:50:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -9526,7 +9526,7 @@
 				k = (e, t, n, s, r, a, i) => {
 					Object(b.a)({
 						...u.o(e),
-						...Object(c.h)(e, n, s, r, a, t),
+						...Object(c.j)(e, n, s, r, a, t),
 						action: o.c.VIEW,
 						noun: i ? "ad" : "post"
 					})
@@ -9555,8 +9555,8 @@
 						post: u.J(a, t)
 					}
 				},
-				L = (e, t, n, s) => r => a => Object(c.h)(a, r, e, t, n, s),
-				A = (e, t, n, s) => r => a => Object(c.g)({
+				L = (e, t, n, s) => r => a => Object(c.j)(a, r, e, t, n, s),
+				A = (e, t, n, s) => r => a => Object(c.h)({
 					action: o.c.CLICK,
 					state: a,
 					searchOptions: e,
@@ -9567,7 +9567,7 @@
 					discoveryUnit: s
 				}),
 				D = (e, t, n, s) => r => a => ({
-					...Object(c.h)(a, r, e, t, n, s),
+					...Object(c.j)(a, r, e, t, n, s),
 					noun: "ad"
 				}),
 				R = (e, t) => n => r => ({
@@ -12261,4 +12261,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3468108a3cf23516eb5a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1de5ea98513abe6fae55.js.map
