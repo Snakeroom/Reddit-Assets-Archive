@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.8fed289ed2aedc897eb8.js
-// Retrieved at 2/8/2022, 5:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.66564ec2e565f07b0e1d.js
+// Retrieved at 2/9/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) d = r[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
@@ -1434,14 +1434,14 @@
 						"reddit-components-Poll": "82e5bd0a61bab79c78cb",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "a60e93ab90ac2c627607",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "7f9bc50d877b0a06ab7d",
-						"translations/de_DE-json": "d6fddfd614b55884919b",
-						"translations/es_ES-json": "b41d88363bb401bf6f05",
-						"translations/es_MX-json": "aa110420c09254ce2842",
-						"translations/fr_FR-json": "1137a33928f46c3318ba",
-						"translations/it_IT-json": "ff7747e50bdd0bf39fbe",
+						"translations/de_DE-json": "926faf53b16be062ca63",
+						"translations/es_ES-json": "1fe12b2e579320638d66",
+						"translations/es_MX-json": "89ae57204685c4573d6c",
+						"translations/fr_FR-json": "0154df729c78b48f1db3",
+						"translations/it_IT-json": "809a575e6d391ababadf",
 						"translations/pseudo-json": "a15140570a5b11b711ce",
-						"translations/pt_BR-json": "ce41d8d53bf45c01c00c",
-						"translations/pt_PT-json": "faf416087436fea653c9",
+						"translations/pt_BR-json": "aa164db50758b12a138d",
+						"translations/pt_PT-json": "27d8bcabb05f66243cef",
 						"vendors~AdminPanel": "5ef0926f2f03175865cb",
 						AdminPanel: "217782a065b1a3d8afaa",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
@@ -1449,7 +1449,7 @@
 						MembershipPaywallPage: "ae02c92bdb216a43edd1",
 						FlairEdit: "2848c74a4850d536f27e",
 						"vendors~Chat~RedesignChat": "6d2550ddbf4355b32434",
-						"Chat~RedesignChat": "79b21f63cbd830328597",
+						"Chat~RedesignChat": "9c307429d23b771f8026",
 						RedesignChat: "b14b16e05d294554bcce",
 						"vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85": "fbf6b3871488094312c2",
 						ModerationPages: "1b62bb2b66bdf6ec3266",
@@ -1667,4 +1667,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8fed289ed2aedc897eb8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.66564ec2e565f07b0e1d.js.map
