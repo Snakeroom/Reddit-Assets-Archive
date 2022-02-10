@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2fe4e6af0e0193bc59b2.js
-// Retrieved at 2/8/2022, 5:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.484e88fcfa20dd46353f.js
+// Retrieved at 2/10/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -3648,11 +3648,11 @@
 			e.exports = JSON.parse('{"id":"496275fd4bb6"}')
 		},
 		"./src/redditGQL/operations/PurchaseCatalogProductOffers.json": function(e) {
-			e.exports = JSON.parse('{"id":"4783b146aefa"}')
+			e.exports = JSON.parse('{"id":"098518521d5b"}')
 		},
 		"./src/redditGQL/operations/SubredditCoins.json": function(e) {
 			e.exports = JSON.parse('{"id":"a82ef253ed10"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.2fe4e6af0e0193bc59b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.484e88fcfa20dd46353f.js.map

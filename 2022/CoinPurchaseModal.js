@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.4ea5064fe3ef55a9e878.js
-// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.a550e8027e2e5dc4b086.js
+// Retrieved at 2/10/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -3629,11 +3629,11 @@
 			e.exports = JSON.parse('{"id":"87230cb9dec2"}')
 		},
 		"./src/redditGQL/operations/PurchaseCatalogProductOffers.json": function(e) {
-			e.exports = JSON.parse('{"id":"4783b146aefa"}')
+			e.exports = JSON.parse('{"id":"098518521d5b"}')
 		},
 		"./src/redditGQL/operations/UserSavedStripeCards.json": function(e) {
 			e.exports = JSON.parse('{"id":"d29c51cfbfe6"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.4ea5064fe3ef55a9e878.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.a550e8027e2e5dc4b086.js.map

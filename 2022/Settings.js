@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.8b8c7ecf29e2fbd58839.js
-// Retrieved at 2/8/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.a2537b47f2640fceef1d.js
+// Retrieved at 2/10/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -12754,7 +12754,7 @@
 			e.exports = JSON.parse('{"id":"ddb1f9f5717c"}')
 		},
 		"./src/redditGQL/operations/PurchaseCatalogProductOffers.json": function(e) {
-			e.exports = JSON.parse('{"id":"4783b146aefa"}')
+			e.exports = JSON.parse('{"id":"098518521d5b"}')
 		},
 		"./src/redditGQL/operations/UpdateAccountGender.json": function(e) {
 			e.exports = JSON.parse('{"id":"670e8e8d3018"}')
@@ -12764,4 +12764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.8b8c7ecf29e2fbd58839.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a2537b47f2640fceef1d.js.map
