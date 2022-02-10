@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.788e62247845b2f00218.js
-// Retrieved at 2/10/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7d719caf51b6acac1623.js
+// Retrieved at 2/10/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("157960"),
+				buildNumber: Object(r.c)("157989"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1644508113"),
+				buildTimestamp: Object(r.b)("1644515962"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6064,14 +6064,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cb687768c28f64819febc3f954efcac6c26a26a76-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ce698c780b0b1576f6aad15d4e070f25ca67aa67a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "b687768c28f64819febc3f954efcac6c26a26a76-production",
+						release: "e698c780b0b1576f6aad15d4e070f25ca67aa67a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6588,7 +6588,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "b687768c28f64819febc3f954efcac6c26a26a76-production",
+						releaseClient: "e698c780b0b1576f6aad15d4e070f25ca67aa67a-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -45123,7 +45123,7 @@
 			var n = i("./node_modules/thrift/lib/nodejs/lib/thrift/browser.js"),
 				r = n.Thrift,
 				s = (n.Q, i("./node_modules/node-int64/Int64.js"), i("./src/telemetry/eventSchemas/typedefs_types.js"), e.exports = {}, e.exports.Search = function(e) {
-					this.query = null, this.sort = null, this.range = null, this.typeahead_active = null, this.subreddit_id = null, this.subreddit_name = null, this.post_flair_name = null, this.meta_flair_id = null, this.meta_flair_name = null, this.origin_page_type = null, this.origin_element = null, this.number_links = null, this.links = null, this.nsfw_reason = null, this.structure_type = null, this.query_id = null, this.subreddit_ids = null, this.number_subreddits = null, this.number_comments = null, this.comment_ids = null, this.post_id = null, this.author_names_filter = null, e && (void 0 !== e.query && null !== e.query && (this.query = e.query), void 0 !== e.sort && null !== e.sort && (this.sort = e.sort), void 0 !== e.range && null !== e.range && (this.range = e.range), void 0 !== e.typeahead_active && null !== e.typeahead_active && (this.typeahead_active = e.typeahead_active), void 0 !== e.subreddit_id && null !== e.subreddit_id && (this.subreddit_id = e.subreddit_id), void 0 !== e.subreddit_name && null !== e.subreddit_name && (this.subreddit_name = e.subreddit_name), void 0 !== e.post_flair_name && null !== e.post_flair_name && (this.post_flair_name = e.post_flair_name), void 0 !== e.meta_flair_id && null !== e.meta_flair_id && (this.meta_flair_id = e.meta_flair_id), void 0 !== e.meta_flair_name && null !== e.meta_flair_name && (this.meta_flair_name = e.meta_flair_name), void 0 !== e.origin_page_type && null !== e.origin_page_type && (this.origin_page_type = e.origin_page_type), void 0 !== e.origin_element && null !== e.origin_element && (this.origin_element = e.origin_element), void 0 !== e.number_links && null !== e.number_links && (this.number_links = e.number_links), void 0 !== e.links && null !== e.links && (this.links = r.copyList(e.links, [null])), void 0 !== e.nsfw_reason && null !== e.nsfw_reason && (this.nsfw_reason = e.nsfw_reason), void 0 !== e.structure_type && null !== e.structure_type && (this.structure_type = e.structure_type), void 0 !== e.query_id && null !== e.query_id && (this.query_id = e.query_id), void 0 !== e.subreddit_ids && null !== e.subreddit_ids && (this.subreddit_ids = r.copyList(e.subreddit_ids, [null])), void 0 !== e.number_subreddits && null !== e.number_subreddits && (this.number_subreddits = e.number_subreddits), void 0 !== e.number_comments && null !== e.number_comments && (this.number_comments = e.number_comments), void 0 !== e.comment_ids && null !== e.comment_ids && (this.comment_ids = r.copyList(e.comment_ids, [null])), void 0 !== e.post_id && null !== e.post_id && (this.post_id = e.post_id), void 0 !== e.author_names_filter && null !== e.author_names_filter && (this.author_names_filter = r.copyList(e.author_names_filter, [null])))
+					this.query = null, this.sort = null, this.range = null, this.typeahead_active = null, this.subreddit_id = null, this.subreddit_name = null, this.post_flair_name = null, this.meta_flair_id = null, this.meta_flair_name = null, this.origin_page_type = null, this.origin_element = null, this.number_links = null, this.links = null, this.nsfw_reason = null, this.structure_type = null, this.query_id = null, this.subreddit_ids = null, this.number_subreddits = null, this.number_comments = null, this.comment_ids = null, this.post_id = null, this.author_names_filter = null, this.user_ids = null, this.number_users = null, this.protocol_name = null, this.partial_results = null, this.nsfw = null, this.impression_id = null, e && (void 0 !== e.query && null !== e.query && (this.query = e.query), void 0 !== e.sort && null !== e.sort && (this.sort = e.sort), void 0 !== e.range && null !== e.range && (this.range = e.range), void 0 !== e.typeahead_active && null !== e.typeahead_active && (this.typeahead_active = e.typeahead_active), void 0 !== e.subreddit_id && null !== e.subreddit_id && (this.subreddit_id = e.subreddit_id), void 0 !== e.subreddit_name && null !== e.subreddit_name && (this.subreddit_name = e.subreddit_name), void 0 !== e.post_flair_name && null !== e.post_flair_name && (this.post_flair_name = e.post_flair_name), void 0 !== e.meta_flair_id && null !== e.meta_flair_id && (this.meta_flair_id = e.meta_flair_id), void 0 !== e.meta_flair_name && null !== e.meta_flair_name && (this.meta_flair_name = e.meta_flair_name), void 0 !== e.origin_page_type && null !== e.origin_page_type && (this.origin_page_type = e.origin_page_type), void 0 !== e.origin_element && null !== e.origin_element && (this.origin_element = e.origin_element), void 0 !== e.number_links && null !== e.number_links && (this.number_links = e.number_links), void 0 !== e.links && null !== e.links && (this.links = r.copyList(e.links, [null])), void 0 !== e.nsfw_reason && null !== e.nsfw_reason && (this.nsfw_reason = e.nsfw_reason), void 0 !== e.structure_type && null !== e.structure_type && (this.structure_type = e.structure_type), void 0 !== e.query_id && null !== e.query_id && (this.query_id = e.query_id), void 0 !== e.subreddit_ids && null !== e.subreddit_ids && (this.subreddit_ids = r.copyList(e.subreddit_ids, [null])), void 0 !== e.number_subreddits && null !== e.number_subreddits && (this.number_subreddits = e.number_subreddits), void 0 !== e.number_comments && null !== e.number_comments && (this.number_comments = e.number_comments), void 0 !== e.comment_ids && null !== e.comment_ids && (this.comment_ids = r.copyList(e.comment_ids, [null])), void 0 !== e.post_id && null !== e.post_id && (this.post_id = e.post_id), void 0 !== e.author_names_filter && null !== e.author_names_filter && (this.author_names_filter = r.copyList(e.author_names_filter, [null])), void 0 !== e.user_ids && null !== e.user_ids && (this.user_ids = r.copyList(e.user_ids, [null])), void 0 !== e.number_users && null !== e.number_users && (this.number_users = e.number_users), void 0 !== e.protocol_name && null !== e.protocol_name && (this.protocol_name = r.copyList(e.protocol_name, [null])), void 0 !== e.partial_results && null !== e.partial_results && (this.partial_results = e.partial_results), void 0 !== e.nsfw && null !== e.nsfw && (this.nsfw = e.nsfw), void 0 !== e.impression_id && null !== e.impression_id && (this.impression_id = e.impression_id))
 				});
 			s.prototype = {}, s.prototype.write = function(e) {
 				if (e.writeStructBegin("Search"), null !== this.query && void 0 !== this.query && (e.writeFieldBegin("query", r.Type.STRING, 1), e.writeString(this.query), e.writeFieldEnd()), null !== this.sort && void 0 !== this.sort && (e.writeFieldBegin("sort", r.Type.STRING, 2), e.writeString(this.sort), e.writeFieldEnd()), null !== this.range && void 0 !== this.range && (e.writeFieldBegin("range", r.Type.STRING, 3), e.writeString(this.range), e.writeFieldEnd()), null !== this.typeahead_active && void 0 !== this.typeahead_active && (e.writeFieldBegin("typeahead_active", r.Type.BOOL, 4), e.writeBool(this.typeahead_active), e.writeFieldEnd()), null !== this.subreddit_id && void 0 !== this.subreddit_id && (e.writeFieldBegin("subreddit_id", r.Type.STRING, 5), e.writeString(this.subreddit_id), e.writeFieldEnd()), null !== this.subreddit_name && void 0 !== this.subreddit_name && (e.writeFieldBegin("subreddit_name", r.Type.STRING, 6), e.writeString(this.subreddit_name), e.writeFieldEnd()), null !== this.post_flair_name && void 0 !== this.post_flair_name && (e.writeFieldBegin("post_flair_name", r.Type.STRING, 7), e.writeString(this.post_flair_name), e.writeFieldEnd()), null !== this.meta_flair_id && void 0 !== this.meta_flair_id && (e.writeFieldBegin("meta_flair_id", r.Type.STRING, 8), e.writeString(this.meta_flair_id), e.writeFieldEnd()), null !== this.meta_flair_name && void 0 !== this.meta_flair_name && (e.writeFieldBegin("meta_flair_name", r.Type.STRING, 9), e.writeString(this.meta_flair_name), e.writeFieldEnd()), null !== this.origin_page_type && void 0 !== this.origin_page_type && (e.writeFieldBegin("origin_page_type", r.Type.STRING, 10), e.writeString(this.origin_page_type), e.writeFieldEnd()), null !== this.origin_element && void 0 !== this.origin_element && (e.writeFieldBegin("origin_element", r.Type.STRING, 11), e.writeString(this.origin_element), e.writeFieldEnd()), null !== this.number_links && void 0 !== this.number_links && (e.writeFieldBegin("number_links", r.Type.I64, 12), e.writeI64(this.number_links), e.writeFieldEnd()), null !== this.links && void 0 !== this.links) {
@@ -45142,7 +45142,15 @@
 					for (var s in e.writeFieldBegin("author_names_filter", r.Type.LIST, 22), e.writeListBegin(r.Type.STRING, this.author_names_filter.length), this.author_names_filter) this.author_names_filter.hasOwnProperty(s) && (s = this.author_names_filter[s], e.writeString(s));
 					e.writeListEnd(), e.writeFieldEnd()
 				}
-				e.writeFieldStop(), e.writeStructEnd()
+				if (null !== this.user_ids && void 0 !== this.user_ids) {
+					for (var o in e.writeFieldBegin("user_ids", r.Type.LIST, 23), e.writeListBegin(r.Type.STRING, this.user_ids.length), this.user_ids) this.user_ids.hasOwnProperty(o) && (o = this.user_ids[o], e.writeString(o));
+					e.writeListEnd(), e.writeFieldEnd()
+				}
+				if (null !== this.number_users && void 0 !== this.number_users && (e.writeFieldBegin("number_users", r.Type.I64, 24), e.writeI64(this.number_users), e.writeFieldEnd()), null !== this.protocol_name && void 0 !== this.protocol_name) {
+					for (var d in e.writeFieldBegin("protocol_name", r.Type.LIST, 25), e.writeListBegin(r.Type.STRING, this.protocol_name.length), this.protocol_name) this.protocol_name.hasOwnProperty(d) && (d = this.protocol_name[d], e.writeString(d));
+					e.writeListEnd(), e.writeFieldEnd()
+				}
+				null !== this.partial_results && void 0 !== this.partial_results && (e.writeFieldBegin("partial_results", r.Type.BOOL, 28), e.writeBool(this.partial_results), e.writeFieldEnd()), null !== this.nsfw && void 0 !== this.nsfw && (e.writeFieldBegin("nsfw", r.Type.BOOL, 29), e.writeBool(this.nsfw), e.writeFieldEnd()), null !== this.impression_id && void 0 !== this.impression_id && (e.writeFieldBegin("impression_id", r.Type.STRING, 30), e.writeString(this.impression_id), e.writeFieldEnd()), e.writeFieldStop(), e.writeStructEnd()
 			}
 		},
 		"./src/telemetry/eventSchemas/security_types.js": function(e, t, i) {
@@ -46703,7 +46711,8 @@
 				subreddit_name: e.subredditName,
 				subreddit_id: e.subredditId,
 				subreddit_ids: e.subredditIds,
-				typeahead_active: e.typeaheadActive
+				typeahead_active: e.typeaheadActive,
+				impression_id: e.impressionId
 			});
 			var oi = i("./src/telemetry/eventSchemas/seo_types.js");
 			const di = e => new oi.SEO({
@@ -47189,4 +47198,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.788e62247845b2f00218.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.7d719caf51b6acac1623.js.map
