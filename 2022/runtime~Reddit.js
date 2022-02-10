@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.48e5016b95675774e372.js
-// Retrieved at 2/10/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.5f2c92de54c3fab760f4.js
+// Retrieved at 2/10/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) d = r[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
@@ -1414,7 +1414,7 @@
 						SubredditForkingCTA: "c8ff632d43616eaff85d",
 						SubredditHovercard: "7e0a39fa1407a19fc0be",
 						SubredditLeaderboard: "c35b494537ec18eb3f39",
-						SubredditMentionWithIcon: "04dc935e8a099555bdc5",
+						SubredditMentionWithIcon: "cd6cad1bbc4fc41230a5",
 						SubredditPremiumBadgeHovercardTooltip: "d287aff3698390272454",
 						SubredditPremiumBadgeManagement: "778025c74989fae2a89a",
 						SupportersListModal: "70606da3cdb679bb21d1",
@@ -1457,7 +1457,7 @@
 						HarbergerTaxManageModal: "2742096abfe0a709340b",
 						SubredditPremiumUploadModal: "d6b97ec7fb1ec0a7935f",
 						"vendors~PostCreation": "07390fa9d40e6f01c25c",
-						PostCreation: "9c9abe55961674948800",
+						PostCreation: "111ae878ded718a2ee36",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "71f28c4c637cd926b6dd",
 						Settings: "a2537b47f2640fceef1d",
@@ -1465,7 +1465,7 @@
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
 						ModListing: "a2d63c0f12205579379c",
-						Subreddit: "1d5b70fb90008c42d6f0",
+						Subreddit: "c0a174d0e6a80a900bb1",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "b1b748750a6395dcc18f",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "db22ed6d080753077f20",
 						LiveVideoPlayer: "8484e949466bd812cf24",
@@ -1506,7 +1506,7 @@
 						RichTextEditor: "d8531ee9693efee3fbf5",
 						CommunityTopicSurvey: "cbbcaff42ae1217a3da5",
 						ContributorRequestButton: "d644bc4590be3bb2f841",
-						SubredditSearchCarousel: "a8c2a055d468d523588f",
+						SubredditSearchCarousel: "f1bc1defe64508332035",
 						ModProgressModule: "0983795ecc4f42d39d16",
 						"reddit-components-Econ-PredictionLeaderboard-Sidebar": "b1cb94fbcb1fdd10b33e",
 						CryptoLibEthers: "c693308c5ad86d73dff2",
@@ -1667,4 +1667,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.48e5016b95675774e372.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.5f2c92de54c3fab760f4.js.map

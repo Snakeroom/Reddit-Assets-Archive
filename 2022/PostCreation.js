@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9c9abe55961674948800.js
-// Retrieved at 2/8/2022, 5:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.111ae878ded718a2ee36.js
+// Retrieved at 2/10/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -22624,37 +22624,41 @@
 		"./src/reddit/helpers/trackers/postFlair.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return i
-			})), n.d(t, "b", (function() {
 				return a
-			})), n.d(t, "f", (function() {
+			})), n.d(t, "b", (function() {
 				return c
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "f", (function() {
 				return l
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return d
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "c", (function() {
 				return u
+			})), n.d(t, "e", (function() {
+				return m
 			}));
 			var o = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts"),
-				r = n("./src/reddit/helpers/flair.ts");
-			const i = (e, t) => n => ({
-					source: "post",
-					action: "click",
-					noun: "post_flair",
-					...s.o(n),
-					actionInfo: s.d(n),
-					correlationId: Object(o.c)(o.a.SearchResults),
-					post: s.J(n, e),
-					search: {
-						...s.N(n, t),
-						query: `flair_name:'${t.postFlairName}'`,
-						queryId: s.db(n, o.a.SearchResults)
-					},
-					subreddit: s.jb(n)
-				}),
-				a = e => t => ({
+				r = n("./src/reddit/helpers/flair.ts"),
+				i = n("./src/reddit/helpers/search/searchQueryId.ts");
+			const a = (e, t) => n => {
+					const r = `flair_name:'${t.postFlairName}'`;
+					return {
+						source: "post",
+						action: "click",
+						noun: "post_flair",
+						...s.o(n),
+						actionInfo: s.d(n),
+						correlationId: Object(o.c)(o.a.SearchResults),
+						post: s.J(n, e),
+						search: {
+							...s.N(n, t),
+							query: r,
+							queryId: s.db(n, i.b.SERP)
+						},
+						subreddit: s.jb(n)
+					}
+				},
+				c = e => t => ({
 					source: "post_flair_widget",
 					action: "click",
 					noun: "post_flair_search",
@@ -22664,7 +22668,7 @@
 					search: s.N(t, e),
 					subreddit: s.jb(t)
 				}),
-				c = e => t => {
+				l = e => t => {
 					const n = Object(r.g)(e);
 					return {
 						...s.o(t),
@@ -22678,14 +22682,14 @@
 						}
 					}
 				},
-				l = () => e => ({
+				d = () => e => ({
 					...s.o(e),
 					action: "click",
 					noun: "overflow",
 					source: "post_flair_widget",
 					subreddit: s.jb(e)
 				}),
-				d = e => t => {
+				u = e => t => {
 					const n = Object(r.g)(e);
 					return {
 						...s.o(t),
@@ -22699,9 +22703,10 @@
 						}
 					}
 				},
-				u = (e, t) => n => {
-					const i = Object(r.g)(e),
-						a = s.J(n, t);
+				m = (e, t) => n => {
+					const o = Object(r.g)(e),
+						a = s.J(n, t),
+						c = `flair_name:'${o}'`;
 					return {
 						...s.o(n),
 						action: "click",
@@ -22710,16 +22715,16 @@
 						subreddit: s.jb(n),
 						postFlair: {
 							id: e.templateId,
-							title: i
+							title: o
 						},
 						post: a,
 						search: {
-							query: `flair_name:'${i}'`,
+							query: c,
 							subredditId: a ? a.subredditId : void 0,
 							subredditName: a ? a.subredditName : void 0,
-							postFlairName: i,
+							postFlairName: o,
 							originElement: "post_flair",
-							queryId: s.db(n, o.a.SearchResults),
+							queryId: s.db(n, i.b.SERP),
 							originPageType: n.platform.currentPage ? s.w(n.platform.currentPage) : void 0
 						},
 						feed: s.r(n)
@@ -30951,4 +30956,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9c9abe55961674948800.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.111ae878ded718a2ee36.js.map
