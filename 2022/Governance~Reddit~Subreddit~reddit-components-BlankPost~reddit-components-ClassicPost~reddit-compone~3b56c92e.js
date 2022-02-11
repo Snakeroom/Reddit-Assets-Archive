@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.7244fc3d0e5919ee884c.js
-// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.1103f85ff0e3e7244267.js
+// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -2011,7 +2011,7 @@
 					case j.PROFILE_POSTS_LOADED:
 					case m.f:
 					case R.i:
-					case I.g:
+					case I.e:
 					case x.b:
 					case y.PAGE_LOADED:
 					case v.PAGE_LOADED:
@@ -2196,27 +2196,27 @@
 					experimentName: i.zb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				c = Object(s.a)(d, e => e === i.Cd.Enabled),
+				c = Object(s.a)(d, e => e === i.Dd.Enabled),
 				u = Object(s.a)(e => Object(n.c)(e, {
-					experimentName: i.xd,
+					experimentName: i.yd,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				l = Object(s.a)(c, u, (e, t) => e && t === i.Bd.Enabled),
+				l = Object(s.a)(c, u, (e, t) => e && t === i.Cd.Enabled),
 				b = Object(s.a)(e => Object(n.c)(e, {
 					experimentName: i.Mb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				m = Object(s.a)(c, b, (e, t) => e && t === i.ec.Enabled),
+				m = Object(s.a)(c, b, (e, t) => e && t === i.fc.Enabled),
 				p = Object(s.a)(e => Object(n.c)(e, {
 					experimentName: i.xb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				h = Object(s.a)(p, e => e === i.zd.ContinuousScroll),
+				h = Object(s.a)(p, e => e === i.Ad.ContinuousScroll),
 				f = Object(s.a)(e => Object(n.c)(e, {
 					experimentName: i.yb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				g = Object(s.a)(f, e => e === i.Ad.Enabled),
+				g = Object(s.a)(f, e => e === i.Bd.Enabled),
 				O = Object(s.a)(e => Object(n.c)(e, {
 					experimentName: i.Gb,
 					experimentEligibilitySelector: () => !0
@@ -2228,4 +2228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.7244fc3d0e5919ee884c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.1103f85ff0e3e7244267.js.map

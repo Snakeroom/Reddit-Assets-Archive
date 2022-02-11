@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.111ae878ded718a2ee36.js
-// Retrieved at 2/10/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.c434fa805247c98b417f.js
+// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -22624,110 +22624,114 @@
 		"./src/reddit/helpers/trackers/postFlair.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return a
-			})), n.d(t, "b", (function() {
-				return c
-			})), n.d(t, "f", (function() {
 				return l
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "b", (function() {
 				return d
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "f", (function() {
 				return u
-			})), n.d(t, "e", (function() {
+			})), n.d(t, "d", (function() {
 				return m
+			})), n.d(t, "c", (function() {
+				return p
+			})), n.d(t, "e", (function() {
+				return h
 			}));
 			var o = n("./src/reddit/helpers/correlationIdTracker.ts"),
-				s = n("./src/reddit/selectors/telemetry.ts"),
-				r = n("./src/reddit/helpers/flair.ts"),
-				i = n("./src/reddit/helpers/search/searchQueryId.ts");
-			const a = (e, t) => n => {
-					const r = `flair_name:'${t.postFlairName}'`;
+				s = n("./src/reddit/helpers/search/SearchTelemetrySource.ts"),
+				r = n("./src/reddit/selectors/experiments/serpSIIDs.ts"),
+				i = n("./src/reddit/selectors/telemetry.ts"),
+				a = n("./src/reddit/helpers/flair.ts"),
+				c = n("./src/reddit/helpers/search/searchImpressionId.ts");
+			const l = (e, t) => n => {
+					const a = `flair_name:'${t.postFlairName}'`;
 					return {
 						source: "post",
 						action: "click",
 						noun: "post_flair",
-						...s.o(n),
-						actionInfo: s.d(n),
+						...i.o(n),
+						actionInfo: i.d(n),
 						correlationId: Object(o.c)(o.a.SearchResults),
-						post: s.J(n, e),
+						post: i.J(n, e),
 						search: {
-							...s.N(n, t),
-							query: r,
-							queryId: s.db(n, i.b.SERP)
+							...i.N(n, t),
+							query: a,
+							queryId: i.db(n, s.a.SERP),
+							impressionId: Object(r.a)(n) ? c.a.get(s.a.SERP) : void 0
 						},
-						subreddit: s.jb(n)
+						subreddit: i.jb(n)
 					}
 				},
-				c = e => t => ({
+				d = e => t => ({
 					source: "post_flair_widget",
 					action: "click",
 					noun: "post_flair_search",
-					...s.o(t),
-					actionInfo: s.d(t),
+					...i.o(t),
+					actionInfo: i.d(t),
 					correlationId: Object(o.c)(o.a.SearchResults),
-					search: s.N(t, e),
-					subreddit: s.jb(t)
+					search: i.N(t, e),
+					subreddit: i.jb(t)
 				}),
-				l = e => t => {
-					const n = Object(r.g)(e);
+				u = e => t => {
+					const n = Object(a.g)(e);
 					return {
-						...s.o(t),
+						...i.o(t),
 						action: "click",
 						noun: "post_flair",
 						source: "post_flair_widget",
-						subreddit: s.jb(t),
+						subreddit: i.jb(t),
 						postFlair: {
 							id: e.templateId,
 							title: n
 						}
 					}
 				},
-				d = () => e => ({
-					...s.o(e),
+				m = () => e => ({
+					...i.o(e),
 					action: "click",
 					noun: "overflow",
 					source: "post_flair_widget",
-					subreddit: s.jb(e)
+					subreddit: i.jb(e)
 				}),
-				u = e => t => {
-					const n = Object(r.g)(e);
+				p = e => t => {
+					const n = Object(a.g)(e);
 					return {
-						...s.o(t),
+						...i.o(t),
 						action: "click",
 						noun: "clear",
 						source: "post_flair_widget",
-						subreddit: s.jb(t),
+						subreddit: i.jb(t),
 						postFlair: {
 							id: e.templateId,
 							title: n
 						}
 					}
 				},
-				m = (e, t) => n => {
-					const o = Object(r.g)(e),
-						a = s.J(n, t),
-						c = `flair_name:'${o}'`;
+				h = (e, t) => n => {
+					const o = Object(a.g)(e),
+						l = i.J(n, t),
+						d = `flair_name:'${o}'`;
 					return {
-						...s.o(n),
+						...i.o(n),
 						action: "click",
 						noun: "post_flair",
 						source: "post",
-						subreddit: s.jb(n),
+						subreddit: i.jb(n),
 						postFlair: {
 							id: e.templateId,
 							title: o
 						},
-						post: a,
+						post: l,
 						search: {
-							query: c,
-							subredditId: a ? a.subredditId : void 0,
-							subredditName: a ? a.subredditName : void 0,
+							query: d,
+							subredditId: l ? l.subredditId : void 0,
+							subredditName: l ? l.subredditName : void 0,
 							postFlairName: o,
 							originElement: "post_flair",
-							queryId: s.db(n, i.b.SERP),
-							originPageType: n.platform.currentPage ? s.w(n.platform.currentPage) : void 0
+							queryId: i.db(n, s.a.SERP),
+							impressionId: Object(r.a)(n) ? c.a.get(s.a.SERP) : void 0,
+							originPageType: n.platform.currentPage ? i.w(n.platform.currentPage) : void 0
 						},
-						feed: s.r(n)
+						feed: i.r(n)
 					}
 				}
 		},
@@ -30666,14 +30670,14 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-					experimentName: o.Qd,
-					experimentEligibilitySelector: s.a
-				}) === o.ae.Enabled,
-				i = e => Object(s.c)(e, {
 					experimentName: o.Rd,
+					experimentEligibilitySelector: s.a
+				}) === o.be.Enabled,
+				i = e => Object(s.c)(e, {
+					experimentName: o.Sd,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === o.be.Enabled
+				}) === o.ce.Enabled
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
 			"use strict";
@@ -30696,37 +30700,37 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.pf
-					}) === o.bd
+						experimentName: o.qf
+					}) === o.cd
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.qf
-					}) === o.bd
+						experimentName: o.rf
+					}) === o.cd
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.of
+						experimentName: o.pf
 					});
-					return t === o.hf.UIChangesOnly || t === o.hf.TypingIndicators || t === o.hf.IndicatorsPlusCTA
+					return t === o.if.UIChangesOnly || t === o.if.TypingIndicators || t === o.if.IndicatorsPlusCTA
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-							experimentName: o.of
+							experimentName: o.pf
 						}),
 						n = null == t ? void 0 : t.variant;
-					return n === o.hf.TypingIndicators || n === o.hf.IndicatorsPlusCTA
+					return n === o.if.TypingIndicators || n === o.if.IndicatorsPlusCTA
 				},
 				u = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.of
+						experimentName: o.pf
 					});
-					return (null == t ? void 0 : t.variant) === o.hf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.if.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gold/enabledFeatures.ts": function(e, t, n) {
@@ -30956,4 +30960,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.111ae878ded718a2ee36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.c434fa805247c98b417f.js.map

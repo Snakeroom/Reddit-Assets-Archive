@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.2f1be6e0feaf9cd8554c.js
-// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.a45cb4290616782d5772.js
+// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1879,11 +1879,11 @@
 			const r = e => {
 				const t = Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: a.ad
+					experimentName: a.bd
 				});
-				return !(!t || Object(a.tf)(t))
+				return !(!t || Object(a.uf)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.2f1be6e0feaf9cd8554c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.a45cb4290616782d5772.js.map

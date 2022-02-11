@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.a5245f55cd0df109bcf9.js
-// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.591718171d8149cf8491.js
+// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~StandalonePostPage"], {
 		"./src/reddit/components/AdLinkWrapperContent/index.m.less": function(e, t, s) {
@@ -1506,15 +1506,15 @@
 			const Ue = e => {
 					return Object(We.c)(e, {
 						experimentEligibilitySelector: We.a,
-						experimentName: Ae.nf
-					}) === Ae.bd
+						experimentName: Ae.of
+					}) === Ae.cd
 				},
 				Ve = e => {
 					if (Object(De.a)(e)) return !1;
 					return Object(We.c)(e, {
 						experimentEligibilitySelector: We.a,
-						experimentName: Ae.mf
-					}) === Ae.bd
+						experimentName: Ae.nf
+					}) === Ae.cd
 				},
 				Ke = (e, {
 					postId: t
@@ -1524,8 +1524,8 @@
 					});
 					return !(Object(De.a)(e) || !s || s.isSponsored) && Object(We.c)(e, {
 						experimentEligibilitySelector: We.a,
-						experimentName: Ae.lf
-					}) === Ae.bd
+						experimentName: Ae.mf
+					}) === Ae.cd
 				};
 			var He = s("./node_modules/fbt/lib/FbtPublic.js"),
 				Je = s("./src/reddit/constants/colors.ts"),
@@ -2877,9 +2877,9 @@
 			const a = e => {
 				const t = Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: o.xc
+					experimentName: o.yc
 				});
-				return !(!t || Object(o.tf)(t))
+				return !(!t || Object(o.uf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/subredditDiscovery.ts": function(e, t, s) {
@@ -2895,16 +2895,16 @@
 			const r = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: o.Re
-					}) === o.bd
+						experimentName: o.Se
+					}) === o.cd
 				},
 				i = e => {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: a.e,
-						experimentName: o.Qe
-					}) === o.bd
+						experimentName: o.Re
+					}) === o.cd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.a5245f55cd0df109bcf9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.591718171d8149cf8491.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.3770c55b9d2dcf43f9c7.js
-// Retrieved at 2/10/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.e8cb69f01909d5a8353f.js
+// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -3462,7 +3462,7 @@
 			const T = e => g.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				D = e => !!Object(v.c)(e, {
 					experimentEligibilitySelector: Object(S.d)(Object(S.b)(...a.d)),
-					experimentName: b.Ae
+					experimentName: b.Be
 				}),
 				w = Object(s.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = Object(s.b)("EXECUTE_RECAPTCHA_ENTERPRISE"),
@@ -4342,7 +4342,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(w)
 						}
-						await t(Object(s.b)(`${r.path}`)), f ? f === p.de.NewModule && t(Object(i.h)({
+						await t(Object(s.b)(`${r.path}`)), f ? f === p.ee.NewModule && t(Object(i.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(o.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(T.a)(Object(g.g)()(E))), Object(I.b)(I.a.SubredditCreation)
 					} else P.error && Object(T.a)(Object(g.h)(P.error.type, _)(E)), t(k({
@@ -5361,11 +5361,11 @@
 		"./src/reddit/components/SearchDropdown/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return Z
-			})), r.d(t, "a", (function() {
 				return ee
+			})), r.d(t, "a", (function() {
+				return te
 			})), r.d(t, "c", (function() {
-				return se
+				return ne
 			}));
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
@@ -5613,7 +5613,8 @@
 				onClearSearchQuery: y,
 				onCloseDropdown: O
 			}) {
-				const E = Object(g.a)();
+				const E = Object(g.a)(),
+					_ = !r.isProfile || r.enableFollowers;
 				Object(s.useEffect)(() => {
 					const e = r.isProfile ? I.a.PEOPLE : I.a.SUBREDDIT,
 						t = {
@@ -5624,7 +5625,6 @@
 						};
 					E(Object(I.v)(e, t, a))
 				}, []);
-				const _ = !r.isProfile || r.enableFollowers;
 				return n.a.createElement(i.a, {
 					"aria-label": r.searchQuery,
 					className: Object(o.a)(D.a.listItem, D.a.mTypeahead, b.a.item, e, {
@@ -5680,9 +5680,10 @@
 				K = r.n(Q),
 				$ = r("./src/lib/constants/index.ts"),
 				z = r("./src/reddit/contexts/PageLayer/selectors.ts"),
-				Y = r("./src/reddit/hooks/usePageLayer.ts");
+				Y = r("./src/reddit/helpers/search/SearchTelemetrySource.ts"),
+				J = r("./src/reddit/hooks/usePageLayer.ts");
 
-			function J({
+			function X({
 				searchOriginPage: e,
 				searchItem: t,
 				position: r,
@@ -5691,7 +5692,7 @@
 				var u;
 				const l = (null === (u = t.searchQuery) || void 0 === u ? void 0 : u.trim()) || "",
 					p = Object(g.a)(),
-					f = Object(Y.a)(),
+					f = Object(J.a)(),
 					E = Object(a.e)(e => Object(z.ab)(e, {
 						pageLayer: f
 					})),
@@ -5727,7 +5728,7 @@
 					p(Object(I.q)(C, E, r, f || void 0))
 				}, []), n.a.createElement(i.a, {
 					onClick: function(e) {
-						p(Object(I.n)(S.a.FullSearchButton, C, E, f || void 0)), c(e)
+						p(Object(I.n)(S.a.FullSearchButton, C, E, Y.a.Typeahead, f || void 0)), c(e)
 					},
 					to: {
 						pathname: P,
@@ -5749,10 +5750,10 @@
 				}), "”"))
 			}
 			const {
-				fbt: X
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), Z = "SearchDropdown", ee = "SearchDropdownContent", te = 5, re = Object(c.a)(W.a);
+				fbt: Z
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), ee = "SearchDropdown", te = "SearchDropdownContent", re = 5, se = Object(c.a)(W.a);
 
-			function se({
+			function ne({
 				container: e,
 				trendingItems: t,
 				isTrendingPending: r,
@@ -5785,8 +5786,8 @@
 						}, [e]);
 						return Object(s.useLayoutEffect)(n, [n]), Object(s.useEffect)(() => (window.addEventListener("resize", n), () => window.removeEventListener("resize", n)), [n]), t
 					}(e),
-					L = t.slice(0, te),
-					[x, B] = Object(s.useState)(new Array(te).fill(!1)),
+					L = t.slice(0, re),
+					[x, B] = Object(s.useState)(new Array(re).fill(!1)),
 					G = !!(null === (A = y.searchQuery) || void 0 === A ? void 0 : A.trim()),
 					W = d || r,
 					V = 0 === l.length && !d && (!G || p >= 0),
@@ -5797,7 +5798,7 @@
 						overflow: "auto"
 					};
 				O && ($.zIndex = q.g), Object(s.useLayoutEffect)(() => {
-					if (!r && c && document.getElementById(ee)) {
+					if (!r && c && document.getElementById(te)) {
 						const e = z();
 						B(e), L.forEach((t, r) => {
 							e[r] && C((e, r) => Object(U.w)(r(), t, U.a.SEARCH_DROPDOWN, E.d.dropdown))
@@ -5808,8 +5809,8 @@
 					const e = new Array(L.length).fill(!1);
 					return L.forEach((t, r) => {
 						if (t.id) {
-							const s = document.getElementById(`${Z}-${t.id}`),
-								n = document.getElementById(ee);
+							const s = document.getElementById(`${ee}-${t.id}`),
+								n = document.getElementById(te);
 							if (s && n) {
 								const t = s.getBoundingClientRect(),
 									a = n.getBoundingClientRect();
@@ -5818,13 +5819,13 @@
 						}
 					}), e
 				};
-				return n.a.createElement(re, {
+				return n.a.createElement(se, {
 					className: Object(o.a)(D.a.dropdown, H.a.listContainer),
-					id: ee,
+					id: te,
 					isFixed: O,
 					isOpen: c,
 					isOverlay: h,
-					tooltipId: Z,
+					tooltipId: ee,
 					noFocus: !0,
 					style: $,
 					onDropdownMounted: () => {
@@ -5870,10 +5871,10 @@
 					className: Object(o.a)(b.a.title, D.a.listItemTitle, {
 						[D.a.mWithBorder]: !!u.length
 					})
-				}, X._("Trending today", null, {
+				}, Z._("Trending today", null, {
 					hk: "3nAMpY"
 				})), L.map(e => n.a.createElement(M, {
-					id: `${Z}-${e.id}`,
+					id: `${ee}-${e.id}`,
 					key: e.id,
 					focusedItem: i[p],
 					searchOriginPage: m,
@@ -5893,7 +5894,7 @@
 					onSetRecentSearch: T,
 					nightmode: f,
 					onCloseDropdown: g
-				})), n.a.createElement(J, {
+				})), n.a.createElement(X, {
 					key: y.searchQuery,
 					searchOriginPage: m,
 					searchItem: y,
@@ -7203,82 +7204,84 @@
 		"./src/reddit/helpers/trackers/discoveryUnit.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return E
+				return I
 			})), r.d(t, "c", (function() {
-				return _
+				return g
 			})), r.d(t, "a", (function() {
-				return v
-			})), r.d(t, "v", (function() {
-				return j
-			})), r.d(t, "w", (function() {
 				return T
-			})), r.d(t, "B", (function() {
+			})), r.d(t, "v", (function() {
+				return D
+			})), r.d(t, "w", (function() {
 				return w
-			})), r.d(t, "t", (function() {
-				return P
-			})), r.d(t, "u", (function() {
+			})), r.d(t, "B", (function() {
 				return A
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "t", (function() {
 				return C
-			})), r.d(t, "q", (function() {
+			})), r.d(t, "u", (function() {
 				return R
-			})), r.d(t, "r", (function() {
+			})), r.d(t, "d", (function() {
 				return N
-			})), r.d(t, "A", (function() {
+			})), r.d(t, "q", (function() {
 				return k
-			})), r.d(t, "z", (function() {
+			})), r.d(t, "r", (function() {
 				return L
-			})), r.d(t, "y", (function() {
+			})), r.d(t, "A", (function() {
 				return x
-			})), r.d(t, "p", (function() {
+			})), r.d(t, "z", (function() {
 				return U
-			})), r.d(t, "s", (function() {
+			})), r.d(t, "y", (function() {
 				return M
+			})), r.d(t, "p", (function() {
+				return B
+			})), r.d(t, "s", (function() {
+				return G
 			})), r.d(t, "n", (function() {
-				return q
-			})), r.d(t, "h", (function() {
-				return W
-			})), r.d(t, "m", (function() {
 				return V
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "h", (function() {
 				return H
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "m", (function() {
 				return Q
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "f", (function() {
 				return K
-			})), r.d(t, "k", (function() {
+			})), r.d(t, "g", (function() {
 				return $
-			})), r.d(t, "l", (function() {
+			})), r.d(t, "i", (function() {
 				return z
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "k", (function() {
 				return Y
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "l", (function() {
 				return J
-			})), r.d(t, "o", (function() {
+			})), r.d(t, "j", (function() {
 				return X
-			})), r.d(t, "x", (function() {
+			})), r.d(t, "e", (function() {
 				return Z
+			})), r.d(t, "o", (function() {
+				return ee
+			})), r.d(t, "x", (function() {
+				return te
 			}));
 			var s, n = r("./src/lib/stringInterpolate/index.ts"),
 				a = r("./src/reddit/actions/focusedVerticals/constants.ts"),
 				c = (r("./src/reddit/constants/categories.tsx"), r("./src/reddit/constants/tracking.ts")),
-				o = r("./src/reddit/helpers/trackers/searchResults.ts"),
-				d = (r("./src/reddit/helpers/widgets/index.tsx"), r("./src/reddit/models/DiscoveryUnit/index.ts")),
-				i = r("./src/reddit/models/Search/index.ts"),
-				u = r("./src/reddit/selectors/posts.ts"),
-				l = r("./src/reddit/selectors/telemetry.ts"),
-				p = r("./src/reddit/selectors/trending.ts"),
-				b = r("./src/reddit/selectors/widgets.ts"),
-				f = r("./src/telemetry/index.ts"),
-				y = r("./src/reddit/helpers/search/searchQueryId.ts");
+				o = r("./src/reddit/helpers/search/SearchTelemetrySource.ts"),
+				d = r("./src/reddit/helpers/trackers/searchResults.ts"),
+				i = (r("./src/reddit/helpers/widgets/index.tsx"), r("./src/reddit/models/DiscoveryUnit/index.ts")),
+				u = r("./src/reddit/models/Search/index.ts"),
+				l = r("./src/reddit/selectors/experiments/serpSIIDs.ts"),
+				p = r("./src/reddit/selectors/posts.ts"),
+				b = r("./src/reddit/selectors/telemetry.ts"),
+				f = r("./src/reddit/selectors/trending.ts"),
+				y = r("./src/reddit/selectors/widgets.ts"),
+				m = r("./src/telemetry/index.ts"),
+				O = r("./src/reddit/helpers/search/searchImpressionId.ts");
 			! function(e) {
 				e.HEADER_SUBREDDIT = "header_subreddit", e.ITEM_POST = "item_post", e.ITEM_POST_SUBREDDIT = "item_post_subreddit", e.ITEM_SUBREDDIT = "item_subreddit", e.ITEM_SUBREDDIT_HIDE = "item_subreddit_hide", e.ITEM_SUBREDDIT_SUBSCRIBE = "item_subreddit_subscribe", e.ITEM_SUBREDDIT_UNSUBSCRIBE = "item_subreddit_unsubscribe", e.TRENDING = "trending"
 			}(s || (s = {}));
-			const m = "discovery_unit",
-				O = (e, t, r) => ({
-					...l.o(e),
-					source: m,
-					screen: l.bb(e),
+			const h = "discovery_unit",
+				E = (e, t, r) => ({
+					...b.o(e),
+					source: h,
+					screen: b.bb(e),
 					discoveryUnit: {
 						id: t.id,
 						type: t.unitType,
@@ -7288,23 +7291,23 @@
 						name: t.unitName
 					}
 				}),
-				h = (e, t, r) => ({
-					...O(e, t, r),
+				_ = (e, t, r) => ({
+					...E(e, t, r),
 					source: "global",
 					action: "view",
 					noun: "discovery_unit"
 				}),
-				E = (e, t) => {
-					Object(f.a)(_(t)(e))
+				I = (e, t) => {
+					Object(m.a)(g(t)(e))
 				},
-				_ = (e, t) => r => h(r, e, t),
-				I = (e, t, r, s) => "unitName" in t ? O(e, t, s) : ((e, t, r) => ({
-					...l.o(e),
+				g = (e, t) => r => _(r, e, t),
+				S = (e, t, r, s) => "unitName" in t ? E(e, t, s) : ((e, t, r) => ({
+					...b.o(e),
 					source: "search",
-					screen: l.bb(e),
+					screen: b.bb(e),
 					search: r ? {
-						...l.cb(e, r, y.b.SERP),
-						structureType: l.c.Trending
+						...b.cb(e, r, o.a.SERP),
+						structureType: b.c.Trending
 					} : null,
 					discoveryUnit: {
 						id: t.name,
@@ -7313,91 +7316,92 @@
 						name: t.name
 					}
 				}))(e, t, r),
-				g = (e, t, r, n, a) => ({
-					...I(e, t, n, a),
+				v = (e, t, r, n, a) => ({
+					...S(e, t, n, a),
 					action: "view",
 					noun: s.ITEM_POST,
-					post: l.J(e, r)
+					post: b.J(e, r)
 				}),
-				S = ({
+				j = ({
 					post: e,
 					rawQuery: t,
 					searchQuery: r
 				}) => ({
 					displayQuery: decodeURIComponent(r),
 					rawQuery: t ? decodeURIComponent(t) : void 0,
-					structureType: e && e.isSponsored ? l.c.PromotedTrend : l.c.Trending
+					structureType: e && e.isSponsored ? b.c.PromotedTrend : b.c.Trending
 				});
-			var v;
+			var T;
 			! function(e) {
 				e.POPULAR_CAROUSEL = "popular_carousel", e.SEARCH_DROPDOWN = "search_dropdown"
-			}(v || (v = {}));
-			const j = (e, t, r, s, n = 0) => {
-					Object(f.a)(D(e, t, r, c.c.CLICK, n, s))
+			}(T || (T = {}));
+			const D = (e, t, r, s, n = 0) => {
+					Object(m.a)(P(e, t, r, c.c.CLICK, n, s))
 				},
-				T = (e, t, r, s, n = 0) => {
-					Object(f.a)(D(e, t, r, c.c.VIEW, n, s))
+				w = (e, t, r, s, n = 0) => {
+					Object(m.a)(P(e, t, r, c.c.VIEW, n, s))
 				},
-				D = (e, t, r, n, a, c) => {
-					const o = Object(p.a)(e, c).filter(e => !e.post || !e.post.isSponsored).findIndex(e => e.id === t.id) + a;
+				P = (e, t, r, n, a, c) => {
+					const d = Object(f.a)(e, c).filter(e => !e.post || !e.post.isSponsored).findIndex(e => e.id === t.id) + a;
 					return {
-						...l.o(e),
+						...b.o(e),
 						source: "search",
 						action: n,
 						noun: s.TRENDING,
-						metaSearch: S(t),
-						discoveryUnit: r === v.POPULAR_CAROUSEL ? {
-							name: d.k,
-							id: d.k,
-							title: d.k,
+						metaSearch: j(t),
+						discoveryUnit: r === T.POPULAR_CAROUSEL ? {
+							name: i.k,
+							id: i.k,
+							title: i.k,
 							type: "query"
 						} : void 0,
-						actionInfo: l.d(e, {
+						actionInfo: b.d(e, {
 							paneName: r,
-							position: o
+							position: d
 						}),
 						search: {
-							originPageType: e.platform.currentPage ? l.w(e.platform.currentPage) : void 0,
+							originPageType: e.platform.currentPage ? b.w(e.platform.currentPage) : void 0,
 							query: t.rawQuery,
-							structureType: l.c.Trending,
-							queryId: l.db(e, c === i.d.dropdown ? y.b.Typeahead : y.b.SERP)
+							structureType: b.c.Trending,
+							impressionId: Object(l.a)(e) ? O.a.get(o.a.Typeahead) : void 0,
+							queryId: b.db(e, c === u.d.dropdown ? o.a.Typeahead : o.a.SERP)
 						}
 					}
 				},
-				w = (e, t, r, s, n, a, d) => {
-					Object(f.a)({
-						...l.o(e),
-						...Object(o.j)(e, r, s, n, a, t),
+				A = (e, t, r, s, n, a, o) => {
+					Object(m.a)({
+						...b.o(e),
+						...Object(d.j)(e, r, s, n, a, t),
 						action: c.c.VIEW,
-						noun: d ? "ad" : "post"
+						noun: o ? "ad" : "post"
 					})
 				},
-				P = (e, t, r, s) => {
-					Object(f.a)(g(e, t, r, s))
+				C = (e, t, r, s) => {
+					Object(m.a)(v(e, t, r, s))
 				},
-				A = (e, t, r, s) => n => g(n, e, t, r, s),
-				C = (e, t) => {
-					Object(f.a)({
-						...O(e, t),
-						source: m,
+				R = (e, t, r, s) => n => v(n, e, t, r, s),
+				N = (e, t) => {
+					Object(m.a)({
+						...E(e, t),
+						source: h,
 						action: c.c.CLICK,
 						noun: "show_less_often"
 					})
 				},
-				R = (e, t, r, s) => {
-					Object(f.a)(N(t, r, s)(e))
+				k = (e, t, r, s) => {
+					Object(m.a)(L(t, r, s)(e))
 				},
-				N = (e, t, r, n) => a => {
+				L = (e, t, r, n) => a => {
 					return {
-						...I(a, e, r, n),
-						source: m,
+						...S(a, e, r, n),
+						source: h,
 						action: c.c.CLICK,
 						noun: s.ITEM_POST,
-						post: l.J(a, t)
+						post: b.J(a, t)
 					}
 				},
-				k = (e, t, r, s) => n => a => Object(o.j)(a, n, e, t, r, s),
-				L = (e, t, r, s) => n => a => Object(o.h)({
+				x = (e, t, r, s) => n => a => Object(d.j)(a, n, e, t, r, s),
+				U = (e, t, r, s) => n => a => Object(d.h)({
 					action: c.c.CLICK,
 					state: a,
 					searchOptions: e,
@@ -7407,164 +7411,164 @@
 					postId: n,
 					discoveryUnit: s
 				}),
-				x = (e, t, r, s) => n => a => ({
-					...Object(o.j)(a, n, e, t, r, s),
+				M = (e, t, r, s) => n => a => ({
+					...Object(d.j)(a, n, e, t, r, s),
 					noun: "ad"
 				}),
-				U = (e, t) => r => n => ({
-					...e ? O(n, e, t) : {},
-					source: m,
+				B = (e, t) => r => n => ({
+					...e ? E(n, e, t) : {},
+					source: h,
 					action: c.c.CLICK,
 					noun: s.ITEM_POST,
-					post: l.J(n, r)
+					post: b.J(n, r)
 				}),
-				M = (e, t, r, s) => {
-					Object(f.a)(B(t, r, s)(e))
+				G = (e, t, r, s) => {
+					Object(m.a)(F(t, r, s)(e))
 				},
-				B = (e, t, r, s) => n => {
-					const a = Object(u.c)(n, {
+				F = (e, t, r, s) => n => {
+					const a = Object(p.c)(n, {
 							postId: t
 						}),
-						o = a ? Object(b.b)(n, a) : void 0;
+						o = a ? Object(y.b)(n, a) : void 0;
 					return {
-						...I(n, e, r, s),
+						...S(n, e, r, s),
 						...o,
-						source: m,
+						source: h,
 						action: c.c.CLICK,
 						noun: "item_post_subreddit",
-						post: l.J(n, t)
+						post: b.J(n, t)
 					}
 				},
-				G = () => ({
+				q = () => ({
 					id: "xd_focus_verticals",
-					unitType: d.e.Listing,
+					unitType: i.e.Listing,
 					experiment: "",
 					title: a.a,
 					unitName: "focused_vertical_suggestion",
 					enabled: !1,
-					layout: d.c.Large,
-					surface: d.d.Frontpage,
+					layout: i.c.Large,
+					surface: i.d.Frontpage,
 					url: "gql.reddit.com"
 				}),
-				F = (e, t, r) => l.d(e, {
+				W = (e, t, r) => b.d(e, {
 					position: r
 				}),
-				q = (e, t, r) => {
-					const s = G();
-					return e => ({
-						...h(e, s),
-						actionInfo: F(e, 0, r),
-						subreddit: l.kb(e, t)
-					})
-				},
-				W = (e, t, r) => {
-					const s = G();
-					return e => ({
-						...g(e, s, t),
-						actionInfo: F(e, 0, r)
-					})
-				},
 				V = (e, t, r) => {
-					const n = G();
+					const s = q();
 					return e => ({
-						...O(e, n),
-						actionInfo: F(e, 0, r),
-						subreddit: l.kb(e, t) || null,
-						source: m,
+						..._(e, s),
+						actionInfo: W(e, 0, r),
+						subreddit: b.kb(e, t)
+					})
+				},
+				H = (e, t, r) => {
+					const s = q();
+					return e => ({
+						...v(e, s, t),
+						actionInfo: W(e, 0, r)
+					})
+				},
+				Q = (e, t, r) => {
+					const n = q();
+					return e => ({
+						...E(e, n),
+						actionInfo: W(e, 0, r),
+						subreddit: b.kb(e, t) || null,
+						source: h,
 						action: c.c.VIEW,
 						noun: s.ITEM_SUBREDDIT
 					})
 				},
-				H = (e, t, r) => {
-					const n = G();
+				K = (e, t, r) => {
+					const n = q();
 					return e => ({
-						...O(e, n),
-						actionInfo: F(e, 0, r),
-						post: l.J(e, t) || null,
-						source: m,
+						...E(e, n),
+						actionInfo: W(e, 0, r),
+						post: b.J(e, t) || null,
+						source: h,
 						action: c.c.CLICK,
 						noun: s.ITEM_POST
 					})
 				},
-				Q = (e, t, r, n) => {
-					const a = G();
+				$ = (e, t, r, n) => {
+					const a = q();
 					return e => ({
-						...O(e, a),
-						actionInfo: F(e, 0, n),
-						subreddit: l.kb(e, r) || null,
-						post: l.J(e, t) || null,
-						source: m,
+						...E(e, a),
+						actionInfo: W(e, 0, n),
+						subreddit: b.kb(e, r) || null,
+						post: b.J(e, t) || null,
+						source: h,
 						action: c.c.CLICK,
 						noun: s.ITEM_POST_SUBREDDIT
 					})
 				},
-				K = (e, t, r) => {
-					const n = G();
+				z = (e, t, r) => {
+					const n = q();
 					return e => ({
-						...O(e, n),
-						actionInfo: F(e, 0, r),
-						subreddit: l.kb(e, t) || null,
-						source: m,
+						...E(e, n),
+						actionInfo: W(e, 0, r),
+						subreddit: b.kb(e, t) || null,
+						source: h,
 						action: c.c.CLICK,
 						noun: s.ITEM_SUBREDDIT
 					})
 				},
-				$ = (e, t, r, n) => {
-					const a = G();
+				Y = (e, t, r, n) => {
+					const a = q();
 					return e => ({
-						...O(e, a),
-						actionInfo: F(e, 0, r),
-						subreddit: l.kb(e, t) || null,
-						post: n ? l.J(e, n) : null,
-						source: m,
+						...E(e, a),
+						actionInfo: W(e, 0, r),
+						subreddit: b.kb(e, t) || null,
+						post: n ? b.J(e, n) : null,
+						source: h,
 						action: c.c.CLICK,
 						noun: s.ITEM_SUBREDDIT_SUBSCRIBE
 					})
 				},
-				z = (e, t, r, n) => {
-					const a = G();
+				J = (e, t, r, n) => {
+					const a = q();
 					return e => ({
-						...O(e, a),
-						actionInfo: F(e, 0, r),
-						subreddit: l.kb(e, t) || null,
-						post: n ? l.J(e, n) : null,
-						source: m,
+						...E(e, a),
+						actionInfo: W(e, 0, r),
+						subreddit: b.kb(e, t) || null,
+						post: n ? b.J(e, n) : null,
+						source: h,
 						action: c.c.CLICK,
 						noun: s.ITEM_SUBREDDIT_UNSUBSCRIBE
 					})
 				},
-				Y = (e, t, r) => {
-					const n = G();
+				X = (e, t, r) => {
+					const n = q();
 					return e => ({
-						...O(e, n),
-						actionInfo: F(e, 0, r),
-						subreddit: l.kb(e, t) || null,
-						source: m,
+						...E(e, n),
+						actionInfo: W(e, 0, r),
+						subreddit: b.kb(e, t) || null,
+						source: h,
 						action: c.c.CLICK,
 						noun: s.ITEM_SUBREDDIT_HIDE
 					})
 				},
-				J = (e, t, r) => {
-					const n = G();
+				Z = (e, t, r) => {
+					const n = q();
 					return e => ({
-						...O(e, n),
-						actionInfo: F(e, 0, r),
-						subreddit: l.kb(e, t) || null,
-						source: m,
+						...E(e, n),
+						actionInfo: W(e, 0, r),
+						subreddit: b.kb(e, t) || null,
+						source: h,
 						action: c.c.CLICK,
 						noun: s.HEADER_SUBREDDIT
 					})
 				},
-				X = (e, t) => r => ({
-					...O(r, e),
-					...t && Object(b.b)(r, t),
-					source: m,
+				ee = (e, t) => r => ({
+					...E(r, e),
+					...t && Object(y.b)(r, t),
+					source: h,
 					action: c.c.CLICK,
 					noun: "item"
 				}),
-				Z = e => t => ({
-					...O(t, e),
-					source: m,
+				te = e => t => ({
+					...E(t, e),
+					source: h,
 					action: c.c.CLICK,
 					noun: "see_all"
 				})
@@ -8599,7 +8603,7 @@
 					case W.i:
 					case W.g:
 					case "RECOMMENDED_POSTS_LOADED":
-					case Ne.g:
+					case Ne.e:
 					case K.i:
 					case H.SUBREDDIT_LOADED: {
 						const r = {},
@@ -12688,8 +12692,8 @@
 			const zo = {};
 			var Yo = (e = zo, t) => {
 				switch (t.type) {
-					case Ne.f:
-					case Ne.g:
+					case Ne.d:
+					case Ne.e:
 					case V.b:
 					case V.c: {
 						const {
@@ -12701,7 +12705,7 @@
 							[r]: null
 						}
 					}
-					case Ne.e:
+					case Ne.c:
 					case V.a: {
 						const {
 							key: r,
@@ -12721,7 +12725,7 @@
 			const Jo = {};
 			var Xo = (e = Jo, t) => {
 					switch (t.type) {
-						case Ne.f:
+						case Ne.d:
 						case V.b: {
 							const {
 								key: r,
@@ -12732,8 +12736,8 @@
 								[r]: !0
 							}
 						}
-						case Ne.g:
 						case Ne.e:
+						case Ne.c:
 						case V.c:
 						case V.a: {
 							const {
@@ -12756,7 +12760,7 @@
 			const ed = {};
 			var td = (e = ed, t) => {
 				switch (t.type) {
-					case Ne.g: {
+					case Ne.e: {
 						const {
 							fetchedToken: r,
 							key: s,
@@ -12779,7 +12783,7 @@
 			const rd = {};
 			var sd = (e = rd, t) => {
 				switch (t.type) {
-					case Ne.g: {
+					case Ne.e: {
 						const {
 							key: r,
 							authorOrder: s,
@@ -12808,7 +12812,7 @@
 			const nd = {};
 			var ad = (e = nd, t) => {
 					switch (t.type) {
-						case Ne.g:
+						case Ne.e:
 						case V.c: {
 							const {
 								key: r,
@@ -12835,8 +12839,8 @@
 			const od = {};
 			var dd = (e = od, t) => {
 				switch (t.type) {
-					case Ne.f:
-					case Ne.g:
+					case Ne.d:
+					case Ne.e:
 					case V.b:
 					case V.c: {
 						const {
@@ -12848,7 +12852,7 @@
 							[r]: null
 						}
 					}
-					case Ne.e:
+					case Ne.c:
 					case V.a: {
 						const {
 							key: r,
@@ -12868,7 +12872,7 @@
 			const id = {};
 			var ud = (e = id, t) => {
 					switch (t.type) {
-						case Ne.f:
+						case Ne.d:
 						case V.b: {
 							const {
 								key: r,
@@ -12879,8 +12883,8 @@
 								[r]: !0
 							}
 						}
-						case Ne.g:
 						case Ne.e:
+						case Ne.c:
 						case V.c:
 						case V.a: {
 							const {
@@ -12903,7 +12907,7 @@
 			const pd = {};
 			var bd = (e = pd, t) => {
 				switch (t.type) {
-					case Ne.g: {
+					case Ne.e: {
 						const {
 							fetchedToken: r,
 							key: s,
@@ -12926,7 +12930,7 @@
 			const fd = {};
 			var yd = (e = fd, t) => {
 				switch (t.type) {
-					case Ne.g: {
+					case Ne.e: {
 						const {
 							key: r,
 							commentOrder: s,
@@ -12955,7 +12959,7 @@
 			const md = {};
 			var Od = (e = md, t) => {
 					switch (t.type) {
-						case Ne.g:
+						case Ne.e:
 						case V.c: {
 							const {
 								key: r,
@@ -12982,8 +12986,8 @@
 			const Ed = {};
 			var _d = (e = Ed, t) => {
 				switch (t.type) {
-					case Ne.f:
-					case Ne.g:
+					case Ne.d:
+					case Ne.e:
 					case V.b:
 					case V.c: {
 						const {
@@ -12995,7 +12999,7 @@
 							[r]: null
 						}
 					}
-					case Ne.e:
+					case Ne.c:
 					case V.a: {
 						const {
 							key: r,
@@ -13015,7 +13019,7 @@
 			const Id = {};
 			var gd = (e = Id, t) => {
 					switch (t.type) {
-						case Ne.f:
+						case Ne.d:
 						case V.b: {
 							const {
 								key: r,
@@ -13026,8 +13030,8 @@
 								[r]: !0
 							}
 						}
-						case Ne.g:
 						case Ne.e:
+						case Ne.c:
 						case V.c:
 						case V.a: {
 							const {
@@ -13050,7 +13054,7 @@
 			const vd = {};
 			var jd = (e = vd, t) => {
 				switch (t.type) {
-					case Ne.g: {
+					case Ne.e: {
 						const {
 							fetchedToken: r,
 							key: s,
@@ -13073,7 +13077,7 @@
 			const Td = {};
 			var Dd = (e = Td, t) => {
 				switch (t.type) {
-					case Ne.g: {
+					case Ne.e: {
 						const {
 							key: r,
 							communityOrder: s,
@@ -13102,7 +13106,7 @@
 			const wd = {};
 			var Pd = (e = wd, t) => {
 					switch (t.type) {
-						case Ne.g:
+						case Ne.e:
 						case V.c: {
 							const {
 								key: r,
@@ -13129,8 +13133,8 @@
 			const Cd = {};
 			var Rd = (e = Cd, t) => {
 				switch (t.type) {
-					case Ne.f:
-					case Ne.g:
+					case Ne.d:
+					case Ne.e:
 					case V.b:
 					case V.c: {
 						const {
@@ -13142,7 +13146,7 @@
 							[r]: null
 						}
 					}
-					case Ne.e:
+					case Ne.c:
 					case V.a: {
 						const {
 							key: r,
@@ -13181,7 +13185,7 @@
 			const Nd = {};
 			var kd = (e = Nd, t) => {
 					switch (t.type) {
-						case Ne.f:
+						case Ne.d:
 						case V.b: {
 							const {
 								key: r,
@@ -13192,8 +13196,8 @@
 								[r]: !0
 							}
 						}
-						case Ne.g:
 						case Ne.e:
+						case Ne.c:
 						case V.c:
 						case V.a: {
 							const {
@@ -13235,7 +13239,7 @@
 			const xd = {};
 			var Ud = (e = xd, t) => {
 				switch (t.type) {
-					case Ne.g: {
+					case Ne.e: {
 						const {
 							fetchedToken: r,
 							key: s,
@@ -13271,7 +13275,7 @@
 			const Md = {};
 			var Bd = (e = Md, t) => {
 				switch (t.type) {
-					case Ne.g: {
+					case Ne.e: {
 						const {
 							key: r,
 							listingOrder: s,
@@ -13300,7 +13304,7 @@
 			const Gd = {};
 			var Fd = (e = Gd, t) => {
 					switch (t.type) {
-						case Ne.g:
+						case Ne.e:
 						case V.c: {
 							const {
 								key: r,
@@ -13390,8 +13394,8 @@
 						}
 						case V.b:
 						case V.c:
-						case Ne.f:
-						case Ne.g: {
+						case Ne.d:
+						case Ne.e: {
 							const {
 								key: r,
 								type: s
@@ -13428,7 +13432,7 @@
 							}
 						}
 						case V.a:
-						case Ne.e: {
+						case Ne.c: {
 							const {
 								error: r,
 								key: s,
@@ -13476,7 +13480,7 @@
 							}
 						}
 						case V.b:
-						case Ne.f: {
+						case Ne.d: {
 							const {
 								key: r,
 								type: s
@@ -13547,8 +13551,8 @@
 						}
 						case V.c:
 						case V.a:
-						case Ne.g:
-						case Ne.e: {
+						case Ne.e:
+						case Ne.c: {
 							const {
 								key: r,
 								type: s
@@ -13654,7 +13658,7 @@
 								}
 							}
 						}
-						case Ne.g: {
+						case Ne.e: {
 							const {
 								fetchedToken: r,
 								key: s,
@@ -13764,7 +13768,7 @@
 								[r]: s
 							}
 						}
-						case Ne.g: {
+						case Ne.e: {
 							const {
 								key: r,
 								postOrder: s,
@@ -13856,7 +13860,7 @@
 							}
 						} : Object(Ut.a)(e, r)
 					}
-					case Ne.g:
+					case Ne.e:
 					case V.c: {
 						const {
 							key: r,
@@ -13906,7 +13910,7 @@
 					treatment: ((e, t) => (r = Wd, s) => {
 						switch (s.type) {
 							case V.c:
-							case Ne.g: {
+							case Ne.e: {
 								const {
 									key: n,
 									treatment: a,
@@ -15731,7 +15735,7 @@
 					case Q.e:
 					case "RECOMMENDED_POSTS_LOADED":
 					case K.i:
-					case Ne.g:
+					case Ne.e:
 					case Ae.b:
 					case V.c:
 					case kr.f: {
@@ -15962,8 +15966,8 @@
 						case q.MORE_POSTS_LOADED:
 						case q.PROFILE_POSTS_LOADED:
 						case "RECOMMENDED_POSTS_LOADED":
-						case Ne.g:
-						case Ne.g:
+						case Ne.e:
+						case Ne.e:
 						case K.i:
 							return pp(e, t.payload.postFlair);
 						case dp.c: {
@@ -16171,7 +16175,7 @@
 					case Q.e:
 					case "RECOMMENDED_POSTS_LOADED":
 					case K.i:
-					case Ne.g:
+					case Ne.e:
 					case V.c:
 						return L()({
 							...e
@@ -16375,7 +16379,7 @@
 						}
 					}
 					case Ie.e:
-					case Ne.g:
+					case Ne.e:
 					case V.c: {
 						const r = Object(xl.h)(t.payload.meta),
 							s = Ct()(t.payload.posts, Object(xl.i)([r, xl.n, xl.d, xl.o, Object(xl.j)(e)]));
@@ -17918,7 +17922,7 @@
 			var cy = (e = ay, t) => {
 					switch (t.type) {
 						case V.c:
-						case Ne.g:
+						case Ne.e:
 							return {
 								...e, ...t.payload.profileAboutInfo
 							};
@@ -17984,7 +17988,7 @@
 					case ve.u:
 					case Vu.h:
 					case Hd.b:
-					case Ne.g:
+					case Ne.e:
 					case K.i:
 					case Vu.m:
 					case Q.b:
@@ -18928,7 +18932,7 @@
 				Vm = r("./src/reddit/components/SearchDropdown/index.tsx");
 			var Hm = (e = !1, t) => {
 				switch (t.type) {
-					case Ne.c:
+					case Ne.g:
 						return !e;
 					case ho.b: {
 						const {
@@ -18936,7 +18940,7 @@
 						} = t.payload, s = r.target, n = document.getElementById(Vm.b), a = document.getElementById(Vm.a);
 						return !(!s || !((null == n ? void 0 : n.contains(s)) || (null == a ? void 0 : a.contains(s)))) && e
 					}
-					case Ne.b:
+					case Ne.f:
 					case ho.a:
 					case ho.c:
 						return !1;
@@ -19021,7 +19025,7 @@
 						switch (t.type) {
 							case Ne.a:
 								return !1;
-							case Ne.d:
+							case Ne.b:
 								return !0;
 							default:
 								return e
@@ -19359,7 +19363,7 @@
 						case G.b:
 						case G.f:
 						case V.c:
-						case Ne.g:
+						case Ne.e:
 						case we.PAGE_LOADED:
 						case As.PAGE_LOADED: {
 							const {
@@ -19475,7 +19479,7 @@
 								[n]: a
 							}
 						}
-						case Ne.g:
+						case Ne.e:
 						case V.c: {
 							const {
 								payload: r
@@ -19678,7 +19682,7 @@
 					case q.PROFILE_POSTS_LOADED:
 					case Q.b:
 					case Q.e:
-					case Ne.g:
+					case Ne.e:
 					case Qd.TOPIC_DATA_LOADED:
 					case Jd.u: {
 						const r = t.payload.subredditAboutInfo;
@@ -20597,7 +20601,7 @@
 					case Q.e:
 					case Ae.b:
 					case "RECOMMENDED_POSTS_LOADED":
-					case Ne.g:
+					case Ne.e:
 					case K.c:
 					case K.f:
 					case K.i:
@@ -22180,7 +22184,7 @@
 						case ge.f:
 						case ZI.b:
 						case K.i:
-						case Ne.g:
+						case Ne.e:
 						case V.c:
 						case wr.j:
 						case we.PAGE_LOADED:
@@ -22768,8 +22772,8 @@
 					case V.c:
 					case we.PAGE_LOADED:
 					case As.PAGE_LOADED:
+					case Ne.c:
 					case Ne.e:
-					case Ne.g:
 					case ZI.a:
 					case ZI.b:
 					case wr.j:
@@ -24999,7 +25003,7 @@
 				l = e => e === n.W.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.K, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.tf)(t))
+				f = Object(s.a)(o.K, i, (e, t) => !e && !!t && !Object(n.uf)(t))
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, r) {
 			"use strict";
@@ -25251,4 +25255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.3770c55b9d2dcf43f9c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e8cb69f01909d5a8353f.js.map

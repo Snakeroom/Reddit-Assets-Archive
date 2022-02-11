@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.217782a065b1a3d8afaa.js
-// Retrieved at 2/8/2022, 5:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.1de0c0e36bc3b44a46df.js
+// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -311,8 +311,8 @@
 				B = g.a.div("Key", f.a),
 				F = g.a.div("Value", f.a),
 				M = g.a.div("PaddingWrapper", f.a),
-				U = g.a.pre("JSONBlock", f.a);
-			class D extends a.a.Component {
+				D = g.a.pre("JSONBlock", f.a);
+			class U extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						isCollapsed: !0
@@ -358,10 +358,10 @@
 					})
 				}
 				renderJSON() {
-					return a.a.createElement(U, null, JSON.stringify(this.props.obj, null, 4))
+					return a.a.createElement(D, null, JSON.stringify(this.props.obj, null, 4))
 				}
 				renderObject(e, t) {
-					return a.a.createElement(D, {
+					return a.a.createElement(U, {
 						keyStr: e,
 						obj: t
 					})
@@ -605,6 +605,13 @@
 						search: ""
 					}, this.clearEvents = () => {
 						this.props.events.setState([])
+					}, this.dumpEvents = () => {
+						const {
+							search: e
+						} = this.state, t = this.props.events.getState(), n = e ? Te(t, {
+							search: e
+						}) : t;
+						console.log(n), console.log(JSON.stringify(n))
 					}, this.onSearchChange = e => {
 						const {
 							value: t
@@ -642,7 +649,10 @@
 					}), a.a.createElement(Pe, {
 						disabled: 0 === t.length,
 						onClick: this.clearEvents
-					}, "Clear Events")), n.map(e => a.a.createElement(_e, {
+					}, "Clear Events"), a.a.createElement(Pe, {
+						disabled: 0 === t.length,
+						onClick: this.dumpEvents
+					}, "Dump events to console")), n.map(e => a.a.createElement(_e, {
 						key: e.event.uuid,
 						event: e
 					})))
@@ -654,8 +664,8 @@
 				Be = n("./src/reddit/actions/experiments.ts"),
 				Fe = n("./src/reddit/actions/post.ts"),
 				Me = n("./node_modules/fbt/lib/FbtPublic.js"),
-				Ue = n("./src/reddit/components/AdminPanel/components/SearchableList/index.m.less"),
-				De = n.n(Ue);
+				De = n("./src/reddit/components/AdminPanel/components/SearchableList/index.m.less"),
+				Ue = n.n(De);
 			class Re extends s.Component {
 				constructor() {
 					super(...arguments), this.searchInput = a.a.createRef(), this.state = {
@@ -677,7 +687,7 @@
 				}
 				render() {
 					return a.a.createElement("div", null, a.a.createElement("input", {
-						className: De.a.SearchInput,
+						className: Ue.a.SearchInput,
 						type: "text",
 						placeholder: Me.fbt._("Quick search", null, {
 							hk: "1sHY11"
@@ -707,7 +717,7 @@
 			var at = e => {
 					const t = ["control_1", "control_2", ...He.o[e.experimentName]];
 					if (!t) return null;
-					const n = He.cd.has(e.experimentName);
+					const n = He.dd.has(e.experimentName);
 					return a.a.createElement(Q.a, {
 						className: e.className
 					}, a.a.createElement(Ye, null, `${e.experimentName}${n?"*":""}`), a.a.createElement(Ze, {
@@ -889,7 +899,7 @@
 			var Ft = n("./src/reddit/actions/survey/index.ts"),
 				Mt = n("./src/reddit/selectors/survey.ts");
 
-			function Ut(e) {
+			function Dt(e) {
 				const t = Object(u.e)(Mt.d),
 					n = Object(u.d)(),
 					r = Object(s.useCallback)(() => n(Object(Ft.e)()), [n]);
@@ -908,7 +918,7 @@
 				})))
 			}
 
-			function Dt(e) {
+			function Ut(e) {
 				const t = Object(u.e)(Mt.c),
 					n = Object(u.e)(Mt.a),
 					r = Object(u.e)(Mt.b),
@@ -956,7 +966,7 @@
 					className: Object(O.a)(e.className, kt.a.SurveysContainer),
 					title: "Surveys",
 					onBack: e.onBack
-				}, a.a.createElement(Bt, null), a.a.createElement(Dt, null), a.a.createElement(Ut, null))
+				}, a.a.createElement(Bt, null), a.a.createElement(Ut, null), a.a.createElement(Dt, null))
 			}
 			var Vt, Qt = n("./src/reddit/icons/fonts/index.tsx"),
 				Kt = n("./src/reddit/icons/svgs/Admin/index.tsx"),
@@ -1178,8 +1188,8 @@
 				Bn = n("./src/reddit/contexts/ApiContext.tsx"),
 				Fn = n("./src/reddit/endpoints/economics/banners.ts"),
 				Mn = n("./src/reddit/components/AdminPanel/Utilities/SubredditPremium/index.m.less"),
-				Un = n.n(Mn);
-			const Dn = Object(h.c)({
+				Dn = n.n(Mn);
+			const Un = Object(h.c)({
 					subreddit: e => {
 						const t = e.platform.currentPage;
 						if (t && t.meta && "subreddit" === t.meta.name) {
@@ -1190,16 +1200,16 @@
 						}
 					}
 				}),
-				Rn = Object(u.b)(Dn);
+				Rn = Object(u.b)(Un);
 			var Vn = Object(Bn.b)(Rn((function(e) {
 					const {
 						apiContext: t,
 						subreddit: n
 					} = e;
 					return n ? a.a.createElement("div", {
-						className: Object(O.a)(e.className, Un.a.container)
+						className: Object(O.a)(e.className, Dn.a.container)
 					}, a.a.createElement("div", {
-						className: Un.a.text
+						className: Dn.a.text
 					}, "Upsell Banners"), a.a.createElement(fe.r, {
 						onClick: () => Object(Fn.d)(t(), n.id)
 					}, "Reset")) : null
@@ -1223,9 +1233,9 @@
 					subreddit: n
 				} = e;
 				return n ? a.a.createElement("div", {
-					className: Object(O.a)(e.className, Un.a.container)
+					className: Object(O.a)(e.className, Dn.a.container)
 				}, a.a.createElement("div", {
-					className: Un.a.text
+					className: Dn.a.text
 				}, "Membership & Badges"), a.a.createElement(fe.r, {
 					onClick: () => Object(Qn.b)(t(), n.id)
 				}, "Reset")) : null
@@ -1779,4 +1789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.217782a065b1a3d8afaa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.1de0c0e36bc3b44a46df.js.map
