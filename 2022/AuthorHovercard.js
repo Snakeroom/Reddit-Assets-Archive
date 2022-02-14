@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.ab7798eb3ef4838a1ea2.js
-// Retrieved at 2/14/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.ce97e9adbd4c56ed91df.js
+// Retrieved at 2/14/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -3459,11 +3459,9 @@
 					isViewed: n,
 					type: a,
 					awardId: r,
-					position: s,
-					postId: i,
-					subredditId: c
-				}) => u => ({
-					...l.o(u),
+					position: s
+				}) => i => ({
+					...l.o(i),
 					action: d.c.CLICK,
 					noun: "inbox_notification",
 					source: o.Inbox,
@@ -3480,13 +3478,7 @@
 					},
 					actionInfo: {
 						position: s
-					},
-					subreddit: c ? {
-						id: c
-					} : null,
-					post: i ? {
-						id: i
-					} : null
+					}
 				}),
 				f = ({
 					badgeCount: e,
@@ -4689,4 +4681,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.ab7798eb3ef4838a1ea2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.ce97e9adbd4c56ed91df.js.map

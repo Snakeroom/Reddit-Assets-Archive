@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.6b5b4da853404d2f0eae.js
-// Retrieved at 2/14/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.555a9b183e69874efa0e.js
+// Retrieved at 2/14/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~Subreddit"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -2496,11 +2496,9 @@
 					isViewed: n,
 					type: i,
 					awardId: s,
-					position: r,
-					postId: a,
-					subredditId: c
-				}) => u => ({
-					...l.o(u),
+					position: r
+				}) => a => ({
+					...l.o(a),
 					action: d.c.CLICK,
 					noun: "inbox_notification",
 					source: o.Inbox,
@@ -2517,13 +2515,7 @@
 					},
 					actionInfo: {
 						position: r
-					},
-					subreddit: c ? {
-						id: c
-					} : null,
-					post: a ? {
-						id: a
-					} : null
+					}
 				}),
 				f = ({
 					badgeCount: e,
@@ -3470,4 +3462,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.6b5b4da853404d2f0eae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.555a9b183e69874efa0e.js.map
