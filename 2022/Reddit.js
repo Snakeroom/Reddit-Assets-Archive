@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.88bda7366bee3e9cec48.js
-// Retrieved at 2/14/2022, 10:10:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4e13ca5fbb325ba44eec.js
+// Retrieved at 2/14/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -12697,7 +12697,8 @@
 							renderedInOverlay: !1,
 							scrollToAndRemeasure: i.a,
 							showBlockingInterstitial: i.a,
-							userIconSmall: !0
+							userIconSmall: !0,
+							restrictHeight: !0
 						})), l.a.createElement(x.t, {
 							kind: x.b.InternalLink,
 							priority: x.c.PlainLink,
@@ -22416,4 +22417,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "Reddit~Subreddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.88bda7366bee3e9cec48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4e13ca5fbb325ba44eec.js.map
