@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ViewsTooltip.3552881f1e1405bf6e6b.js
-// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ViewsTooltip.d687726ea2c8e0a11f8d.js
+// Retrieved at 2/14/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ViewsTooltip"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, l) {
@@ -304,7 +304,7 @@
 				i = l.n(r),
 				h = l("./src/reddit/constants/colors.ts");
 			const b = Math.floor(4 * Math.random()),
-				p = ({
+				k = ({
 					views: e,
 					lastHourViews: o
 				}) => {
@@ -413,7 +413,7 @@
 						className: i.a.copyAwardIcon
 					})))
 				},
-				k = 2 * c.B;
+				p = 2 * c.B;
 			o.default = Object(j.a)(({
 				viewsData: e,
 				totalCount: o,
@@ -446,7 +446,7 @@
 									const o = new Date(e[0].at);
 									return {
 										min: o.getTime(),
-										max: o.getTime() + k
+										max: o.getTime() + p
 									}
 								})(),
 								type: "time",
@@ -496,7 +496,7 @@
 							}
 						}
 					};
-				return t.a.createElement(t.a.Fragment, null, t.a.createElement(p, {
+				return t.a.createElement(t.a.Fragment, null, t.a.createElement(k, {
 					views: o,
 					lastHourViews: e[e.length - 1].value
 				}), t.a.createElement("div", {
@@ -517,17 +517,9 @@
 					className: i.a.statDescription
 				}, m.fbt._("Total views", null, {
 					hk: "4sCYIU"
-				}))), t.a.createElement("div", {
-					className: `${i.a.graphSingleStat} ${i.a.pastHourStat}`
-				}, t.a.createElement("div", {
-					className: i.a.statNumber
-				}, Object(u.b)(e[e.length - 1].value)), t.a.createElement("div", {
-					className: i.a.statDescription
-				}, m.fbt._("In the past hour", null, {
-					hk: "2B71ms"
 				})))))
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ViewsTooltip.3552881f1e1405bf6e6b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ViewsTooltip.d687726ea2c8e0a11f8d.js.map

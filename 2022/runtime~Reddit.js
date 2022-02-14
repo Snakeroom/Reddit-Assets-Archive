@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.f7bb3860f59e94f9ff2a.js
-// Retrieved at 2/14/2022, 11:00:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.ec5d0c63ebd635a46f6a.js
+// Retrieved at 2/14/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) d = r[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
@@ -1430,14 +1430,14 @@
 						"reddit-components-Poll": "82e5bd0a61bab79c78cb",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "a60e93ab90ac2c627607",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "7f9bc50d877b0a06ab7d",
-						"translations/de_DE-json": "4e99cc1f8f27e762a8a5",
-						"translations/es_ES-json": "b18c014609136bcdb81b",
-						"translations/es_MX-json": "e1997f3171000df1678e",
-						"translations/fr_FR-json": "083345fdd81a97ca22e9",
-						"translations/it_IT-json": "47f63bbf26861c79db8b",
-						"translations/pseudo-json": "d96683c7f8ff9dcc4c73",
-						"translations/pt_BR-json": "4ddcdf688e9963c76891",
-						"translations/pt_PT-json": "aee503dda052ff937a3b",
+						"translations/de_DE-json": "c9ee85cd4f25484f46c1",
+						"translations/es_ES-json": "64d70e0a593d46f19b05",
+						"translations/es_MX-json": "a74389e55d6c725f4f3d",
+						"translations/fr_FR-json": "dbd4ab405062da413409",
+						"translations/it_IT-json": "971521ff6eb863a24870",
+						"translations/pseudo-json": "f048ee2467b87fec8536",
+						"translations/pt_BR-json": "66c7159d735813ba06a1",
+						"translations/pt_PT-json": "d67d05539255b7e71019",
 						"vendors~AdminPanel": "5ef0926f2f03175865cb",
 						AdminPanel: "1de0c0e36bc3b44a46df",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
@@ -1586,7 +1586,7 @@
 						"reddit-components-LayerEmbed": "3d85c7b4f3b2116afebe",
 						"Download OBS Modal": "b3730596807796f4e84a",
 						"vendors~ModStatsChart~ViewsTooltip": "b642007ba6a9c10cda83",
-						ViewsTooltip: "3552881f1e1405bf6e6b",
+						ViewsTooltip: "d687726ea2c8e0a11f8d",
 						"vendors~chat-components-OverlayReport-FormBuilder~reddit-components-FormBuilder": "cca0b8e181c976b99176",
 						"reddit-components-FormBuilder": "19ba6c38d38f942e53a8",
 						"vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal": "ae79582dccd30a9f3d71",
@@ -1662,4 +1662,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f7bb3860f59e94f9ff2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.ec5d0c63ebd635a46f6a.js.map
