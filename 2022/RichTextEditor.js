@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.f749bc8aed57b7d32742.js
-// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.c8e645a80dccf6590f08.js
+// Retrieved at 2/14/2022, 9:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton", "ReadingIndicator"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, o) {
@@ -1511,7 +1511,7 @@
 					const {
 						post: a
 					} = e, c = !a.media || "rtjson" !== a.media.type && "text" !== a.media.type ? "" : a.media.rteMode;
-					v.y(o(), Object(S.o)(c)), t(F(a.id));
+					v.E(o(), Object(S.o)(c)), t(F(a.id));
 					const d = await g(s(), e),
 						l = !1 === d.body.success;
 					if (t(R(a.id)), d.ok && !l) {
@@ -1555,7 +1555,7 @@
 				f = (e, t, o) => async (s, a, {
 					apiContext: f
 				}) => {
-					c.j(a(), t);
+					c.m(a(), t);
 					const g = t === d.i.MARKDOWN,
 						x = t === d.i.RICH_TEXT,
 						y = m.k;
@@ -5444,4 +5444,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.f749bc8aed57b7d32742.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.c8e645a80dccf6590f08.js.map

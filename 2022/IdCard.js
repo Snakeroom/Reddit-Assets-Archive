@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.bddb1b497d5be31832fd.js
-// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.9d2981fa0ad502a7caef.js
+// Retrieved at 2/14/2022, 9:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2211,7 +2211,7 @@
 				I = n("./src/reddit/actions/login.ts"),
 				S = n("./src/reddit/controls/Button/index.tsx"),
 				k = n("./src/reddit/helpers/getSubredditUrl/index.ts"),
-				w = n("./src/reddit/selectors/telemetry.ts"),
+				w = n("./src/reddit/helpers/trackers/postComposer.ts"),
 				N = n("./src/reddit/selectors/user.ts"),
 				F = n("./src/reddit/components/TrackingHelper/index.tsx");
 
@@ -2245,13 +2245,9 @@
 					const c = `${Object(k.a)(a)||"/"}submit`;
 					return i.a.createElement(S.n, P({}, d, {
 						onClick: e => {
-							o(e => ({
-								action: "click",
-								noun: "create_post",
-								source: "id_card",
-								screen: Object(w.bb)(e),
-								subreddit: Object(w.jb)(e),
-								actionInfo: Object(w.d)(e)
+							o(Object(w.x)({
+								actionInfoType: "id_card",
+								subredditId: null == a ? void 0 : a.id
 							})), t || (s(), e.preventDefault())
 						},
 						to: c
@@ -5185,4 +5181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.bddb1b497d5be31832fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.9d2981fa0ad502a7caef.js.map

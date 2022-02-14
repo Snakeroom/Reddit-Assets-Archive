@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.9e7e2dadc9224b8172bd.js
-// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.c814c62d23e7abe946e4.js
+// Retrieved at 2/14/2022, 9:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostRecommendationsModal"], {
 		"./src/reddit/components/CrosspostRecommendationsModal/index.m.less": function(e, t, s) {
@@ -35,9 +35,9 @@
 				E = s("./src/reddit/routes/postCreation/constants.ts"),
 				k = s("./src/reddit/selectors/experiments/postCreationSubRec.ts"),
 				j = s("./src/reddit/components/CrosspostRecommendationsModal/index.m.less"),
-				g = s.n(j);
+				v = s.n(j);
 			const {
-				fbt: v
+				fbt: g
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = Object(d.a)(({
 				onCloseModal: e,
@@ -56,7 +56,7 @@
 						hasData: k.c,
 						items: k.b
 					})),
-					f = Object(n.useCallback)(() => {
+					w = Object(n.useCallback)(() => {
 						d((e => t => ({
 							...Object(p.o)(t),
 							action: b.c.CLICK,
@@ -66,7 +66,7 @@
 							subreddit: Object(p.jb)(t)
 						}))(t.id)), e()
 					}, [t.id]),
-					w = Object(n.useCallback)(e => {
+					f = Object(n.useCallback)(e => {
 						const n = Object(S.c)(e.name);
 						s(Object(o.b)(`${n}?source_id=${t.id}`))
 					}, [t.id]),
@@ -81,31 +81,31 @@
 						}))(t.id)), s(Object(o.b)(`${E.b}?source_id=${t.id}`))
 					}, [t.id]);
 				return O ? (e(), null) : r.a.createElement(c.e, null, r.a.createElement(c.i, {
-					className: g.a.modalHeader
+					className: v.a.modalHeader
 				}, r.a.createElement(h.a, null, r.a.createElement(c.q, {
-					className: g.a.modalTitle
-				}, v._("Crosspost to a related community", null, {
+					className: v.a.modalTitle
+				}, g._("Crosspost to a related community", null, {
 					hk: "v80Kq"
 				})), r.a.createElement(u.a, {
-					onClick: f
+					onClick: w
 				}, r.a.createElement(c.b, null))), r.a.createElement(c.m, {
-					className: g.a.modalMetaText
-				}, v._("Share your post to another community to let other people see your post", null, {
+					className: v.a.modalMetaText
+				}, g._("Share your post to another community to let other people see your post", null, {
 					hk: "2jhFRp"
 				}))), r.a.createElement(c.l, null, r.a.createElement(m.b, {
-					contentWrapperClassName: g.a.contentWrapper,
+					contentWrapperClassName: v.a.contentWrapper,
 					hasData: _,
 					isPending: j,
 					items: P,
-					itemWrapperClassName: g.a.itemWrapper,
-					onSelectRecommendation: w,
+					itemWrapperClassName: v.a.itemWrapper,
+					onSelectRecommendation: f,
 					shouldShowSubredditOnlineUsers: !0
 				})), r.a.createElement(c.g, {
-					className: g.a.modalFooter
+					className: v.a.modalFooter
 				}, r.a.createElement(l.o, {
-					className: g.a.otherCommunitiesButton,
+					className: v.a.otherCommunitiesButton,
 					onClick: N
-				}, v._("OTHER COMMUNITIES", null, {
+				}, g._("OTHER COMMUNITIES", null, {
 					hk: "1dWSPt"
 				}))))
 			})
@@ -133,7 +133,7 @@
 			s.d(t, "a", (function() {
 				return j
 			})), s.d(t, "b", (function() {
-				return g
+				return v
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -189,7 +189,7 @@
 				k = s.n(E);
 			const j = o.a.wrapped(a.b, "subredditIcon", k.a);
 
-			function g(e) {
+			function v(e) {
 				const {
 					className: t,
 					explanationText: s,
@@ -266,13 +266,13 @@
 						onSelectRecommendation: a,
 						shouldShowSubredditOnlineUsers: c = !1
 					} = e, m = Object(p.a)(), x = Object(r.useCallback)((e, t) => {
-						m(Object(u.s)(e, t))
+						m(Object(u.w)(e, t))
 					}, []), h = Object(r.useRef)(null), E = Object(r.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t
 							} = e;
-							t && m(Object(u.r)())
+							t && m(Object(u.v)())
 						})
 					}, []);
 					return Object(b.a)(h, E), i.a.createElement(i.a.Fragment, null, t.map((e, t) => i.a.createElement("div", {
@@ -292,7 +292,7 @@
 							hk: "3u8Nrt"
 						}),
 						onClick: () => {
-							a(e), m(Object(u.q)(e.name, t))
+							a(e), m(Object(u.u)(e.name, t))
 						},
 						lockTitleWithEllipsis: !0,
 						shouldShowSubredditOnlineUsers: c
@@ -411,9 +411,9 @@
 					_1: "1 member"
 				}, [n.fbt._plural(u, "number", C ? Object(d.b)(u) : void 0)], {
 					hk: "2SvJUX"
-				}) : void 0, g = E ? n.fbt._("{number users online in subreddit} online", [n.fbt._param("number users online in subreddit", Object(d.b)(E.accountsActive))], {
+				}) : void 0, v = E ? n.fbt._("{number users online in subreddit} online", [n.fbt._param("number users online in subreddit", Object(d.b)(E.accountsActive))], {
 					hk: "49HfzS"
-				}) : void 0, v = S ? `${j} • ${g}` : j, O = void 0 !== x ? n.fbt._({
+				}) : void 0, g = S ? `${j} • ${v}` : j, O = void 0 !== x ? n.fbt._({
 					"*": "{number} online",
 					_1: "1 online"
 				}, [n.fbt._plural(x, "number", C ? Object(d.b)(x) : void 0)], {
@@ -429,7 +429,7 @@
 				return i.a.createElement(m.b, p({
 					icon: _,
 					title: k,
-					secondaryText: v,
+					secondaryText: g,
 					subText: O
 				}, e))
 			}
@@ -505,4 +505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.9e7e2dadc9224b8172bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.c814c62d23e7abe946e4.js.map

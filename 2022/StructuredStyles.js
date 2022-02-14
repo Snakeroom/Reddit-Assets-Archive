@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.7be35e1271387896e384.js
-// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.d91ccf12d46ec686817f.js
+// Retrieved at 2/14/2022, 9:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -7506,13 +7506,13 @@
 						onSelectRecommendation: l,
 						shouldShowSubredditOnlineUsers: d = !1
 					} = e, u = Object(p.a)(), g = Object(r.useCallback)((e, t) => {
-						u(Object(m.s)(e, t))
+						u(Object(m.w)(e, t))
 					}, []), f = Object(r.useRef)(null), x = Object(r.useCallback)(e => {
 						e.forEach(e => {
 							const {
 								isIntersecting: t
 							} = e;
-							t && u(Object(m.r)())
+							t && u(Object(m.v)())
 						})
 					}, []);
 					return Object(h.a)(f, x), s.a.createElement(s.a.Fragment, null, t.map((e, t) => s.a.createElement("div", {
@@ -7532,7 +7532,7 @@
 							hk: "3u8Nrt"
 						}),
 						onClick: () => {
-							l(e), u(Object(m.q)(e.name, t))
+							l(e), u(Object(m.u)(e.name, t))
 						},
 						lockTitleWithEllipsis: !0,
 						shouldShowSubredditOnlineUsers: d
@@ -8264,10 +8264,11 @@
 						this.state.isOpen || this.setState({
 							isOpen: !0
 						});
-						const t = e.target.value;
+						const t = e.target.value,
+							n = this.state.inputValue;
 						this.requestAutocomplete(t), this.setState({
 							inputValue: t
-						}, this.callOnChange)
+						}, this.callOnChange), this.props.onInputChange && this.props.onInputChange(n, t)
 					}, this.onKeyDown = e => {
 						e.which === C.a.ArrowUp ? (this.moveSelection(!0), e.preventDefault()) : e.which === C.a.ArrowDown ? (this.moveSelection(), e.preventDefault()) : e.which === C.a.Enter || e.which === C.a.Tab ? (-1 !== this.state.focusedIndex ? this.selectItem(this.state.focusedIndex) : this.commitSelection(), e.which !== C.a.Tab && e.preventDefault()) : e.which === C.a.Escape && (this.inputRef && this.inputRef.blur(), e.preventDefault())
 					}, this.state = {
@@ -8380,7 +8381,7 @@
 					onGetInitialData: e => t => t(e ? p.d() : g.e()),
 					onGetSubredditAutocomplete: h.a,
 					openCommunityCreation: () => async (e, t) => {
-						Object(K.b)(t()), e(Object(m.h)(b.a.SUBREDDIT_CREATION_MODAL_ID))
+						Object(K.c)(t()), e(Object(m.h)(b.a.SUBREDDIT_CREATION_MODAL_ID))
 					}
 				};
 			class ee extends r.a.Component {
@@ -8410,6 +8411,7 @@
 						isValid: this.props.isValid,
 						onChange: e.onChange,
 						onFocus: e.onFocus,
+						onInputChange: this.props.onInputChange,
 						value: e.value,
 						selectOnBlur: this.props.selectOnBlur || !1
 					})
@@ -9150,4 +9152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.7be35e1271387896e384.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.d91ccf12d46ec686817f.js.map

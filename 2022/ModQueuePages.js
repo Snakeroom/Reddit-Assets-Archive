@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.f32641536a11b475a26d.js
-// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.488cdc3b9685f9828418.js
+// Retrieved at 2/14/2022, 9:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, n) {
@@ -3500,7 +3500,7 @@
 		"./src/reddit/components/PostFlairPicker/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return _
+				return O
 			}));
 			var s, a = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -3515,44 +3515,41 @@
 				b = n("./src/reddit/components/FlairPreview/index.tsx"),
 				h = n("./src/reddit/components/FlairSearch/index.tsx"),
 				f = n("./src/reddit/controls/Button/index.tsx"),
-				x = n("./src/reddit/models/Flair/index.ts"),
-				g = n("./src/reddit/selectors/moderatorPermissions.ts"),
+				x = n("./src/reddit/helpers/trackers/postComposer.ts"),
+				g = n("./src/reddit/models/Flair/index.ts"),
 				w = n("./src/reddit/selectors/postFlair.ts"),
 				v = n("./src/reddit/selectors/subreddit.ts"),
-				C = n("./src/reddit/selectors/telemetry.ts"),
-				E = n("./src/reddit/components/PostFlairPicker/helpers.ts"),
-				k = n("./src/reddit/components/PostFlairPicker/index.m.less"),
-				O = n.n(k);
+				C = n("./src/reddit/components/PostFlairPicker/helpers.ts"),
+				E = n("./src/reddit/components/PostFlairPicker/index.m.less"),
+				k = n.n(E);
 			! function(e) {
 				e.UNSET = "unset", e.MOD_FLATLIST = "postModFlatlist", e.POST_OVERFLOW = "postOverlay"
 			}(s || (s = {}));
-			const _ = (e, t = !1, n = s.UNSET) => `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${n}]`,
-				j = Object(i.c)({
+			const O = (e, t = !1, n = s.UNSET) => `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${n}]`,
+				_ = Object(i.c)({
 					flairData: w.d,
-					subreddit: v.R,
-					isMod: (e, t) => !!Object(g.m)(e, t)
+					subreddit: v.R
 				});
-			class y extends o.a.Component {
+			class j extends o.a.Component {
 				constructor(e) {
-					super(e), this.getTrackingNoun = (e, t) => this.props.isMod ? e : t, this.onApply = () => {
+					super(e), this.trackEvent = () => {
+						this.props.sendEvent(Object(x.F)(this.props.subredditId))
+					}, this.onApply = () => {
 						const {
 							previewFlair: e
 						} = this.state, t = e && e.templateId;
 						this.props.onFlairChanged({
 							previewFlair: e,
 							selectedTemplateId: t
-						}), this.props.closeModal && this.props.closeModal(), this.track(this.getTrackingNoun("flairadd_mod", "flairadd_user"))
-					}, this.onClear = () => this.setSelectedFlair(null), this.setSelectedFlair = e => {
+						}), this.props.closeModal && this.props.closeModal(), this.trackEvent()
+					}, this.onClear = () => {
+						this.props.sendEvent(Object(x.b)()), this.setSelectedFlair(null)
+					}, this.setSelectedFlair = e => {
 						this.setState({
 							previewFlair: e
 						})
-					}, this.track = e => this.props.sendEvent(t => ({
-						source: "post_flair_picker",
-						action: "click",
-						noun: e,
-						subreddit: Object(C.kb)(t, this.props.subredditId)
-					}));
-					const t = Object(E.c)(e.flairs);
+					};
+					const t = Object(C.c)(e.flairs);
 					this.state = {
 						previewFlair: t || null
 					}
@@ -3562,8 +3559,8 @@
 						templates: e
 					} = this.props.flairData, {
 						previewFlair: t
-					} = this.state, n = Object(E.c)(this.props.flairs) || null;
-					return Object(E.b)(e, t, n)
+					} = this.state, n = Object(C.c)(this.props.flairs) || null;
+					return Object(C.b)(e, t, n)
 				}
 				render() {
 					const {
@@ -3589,36 +3586,36 @@
 						})
 					}), o.a.createElement(b.a, {
 						flair: t,
-						flairTemplateType: x.d.LinkFlair,
+						flairTemplateType: g.d.LinkFlair,
 						placeholderText: a.fbt._("Post Title", null, {
 							hk: "43RsbC"
 						})
 					}), o.a.createElement(h.a, {
 						flair: t,
-						flairTemplateType: x.d.LinkFlair,
+						flairTemplateType: g.d.LinkFlair,
 						subredditId: r.id,
 						templates: i,
 						templateIds: c,
 						onChange: this.setSelectedFlair
 					}), o.a.createElement("div", {
-						className: O.a.buttonsRow
+						className: k.a.buttonsRow
 					}, o.a.createElement(f.l, {
 						disabled: !l,
 						onClick: this.onApply
 					}, a.fbt._("Apply", null, {
 						hk: "3mAjVQ"
 					})), o.a.createElement(f.o, {
-						className: O.a.clearButton,
+						className: k.a.clearButton,
 						onClick: this.onClear
 					}, a.fbt._("Clear Flair", null, {
 						hk: "3jvT0B"
 					}))))
 				}
 			}
-			const I = Object(d.b)(j, (e, t) => ({
+			const y = Object(d.b)(_, (e, t) => ({
 				closeModal: () => e(Object(m.i)(t.modalId))
-			}))(y);
-			t.a = Object(l.a)(Object(c.c)(I))
+			}))(j);
+			t.a = Object(l.a)(Object(c.c)(y))
 		},
 		"./src/reddit/components/PostRailAndVotes/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -5150,4 +5147,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f32641536a11b475a26d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.488cdc3b9685f9828418.js.map

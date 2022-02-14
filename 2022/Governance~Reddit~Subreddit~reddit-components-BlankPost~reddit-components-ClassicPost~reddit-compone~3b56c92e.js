@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.1103f85ff0e3e7244267.js
-// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.127440016ee3e565d5db.js
+// Retrieved at 2/14/2022, 9:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -922,7 +922,7 @@
 					if (c || b) return;
 					const p = Object(S.h)(o, e);
 					if (!p) return;
-					t(H(p)), _.f(o, p);
+					t(H(p)), _.g(o, p);
 					const h = await ((e, t, r) => Object(u.a)(Object(l.a)(e, [m.a]), {
 						endpoint: `${e.apiUrl}/api/v1/draft`,
 						method: r ? s.jb.PUT : s.jb.POST,
@@ -979,7 +979,7 @@
 					}
 					await t(Object(a.a)(i, e.id, !1));
 					const o = Object(S.h)(r(), e.id);
-					o && _.i(r(), o)
+					o && _.j(r(), o)
 				}, te = "POST_DELETE_DRAFT_SUCCEEDED", re = "POST_DELETE_DRAFT_FAILED", se = "POST_DELETE_DRAFT_PENDING", ie = Object(n.a)(te), ne = Object(n.a)(re), oe = Object(n.a)(se), ae = (e, t) => async (r, n, {
 					apiContext: a
 				}) => {
@@ -988,7 +988,7 @@
 					const p = Object(S.d)(m, {
 						draftId: e
 					});
-					p && _.g(m, p), r(oe({
+					p && _.h(m, p), r(oe({
 						draftId: e
 					}));
 					const h = await (async (e, t) => Object(u.a)(Object(l.a)(e, [b.g]), {
@@ -2228,4 +2228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.1103f85ff0e3e7244267.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.127440016ee3e565d5db.js.map

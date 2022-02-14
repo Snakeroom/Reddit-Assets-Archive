@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.07ee98f4187af03dbd62.js
-// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.d7a94cd06e9a63351cae.js
+// Retrieved at 2/14/2022, 9:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~RichTextEditor"], {
 		"./src/lib/forEachGroup/index.ts": function(t, e, n) {
@@ -6225,7 +6225,7 @@
 					})
 				}, t => ({
 					onFetchEditorProducts: e => t(Object(O.e)(e)),
-					onTrackMediaDrop: e => t((t, n) => j.p(n(), e)),
+					onTrackMediaDrop: e => t((t, n) => j.t(n(), e)),
 					retryUpload: e => t(T.c(e)),
 					startUploads: (e, n, o) => t(T.e(e, n, bc(o)))
 				}));
@@ -8196,4 +8196,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.07ee98f4187af03dbd62.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~RichTextEditor.d7a94cd06e9a63351cae.js.map

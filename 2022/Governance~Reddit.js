@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.e8cb69f01909d5a8353f.js
-// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.2b7a5135f8eb78e9deaa.js
+// Retrieved at 2/14/2022, 9:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2602,7 +2602,7 @@
 									duration: l.videoDuration && Math.round(1e3 * l.videoDuration)
 								};
 								Object(_.a)({
-									source: f ? "videoupload" : "imageupload",
+									source: "post_composer",
 									action: "upload",
 									correlationId: c,
 									noun: f ? "video" : "image",
@@ -2638,7 +2638,7 @@
 								fileSource: r,
 								uploadDuration: n,
 								correlationId: a
-							}) : g.x(s, t)
+							}) : g.D(s, t)
 						}
 					};
 					return await a(Object(u.l)(e, t, async l => {
@@ -3270,7 +3270,7 @@
 					const g = Object($.o)(i.kind),
 						S = _.ok && _.body && _.body.id && Object(v.t)(_.body.id),
 						D = r();
-					M.v(D, g, S, e.correlationId)
+					M.B(D, g, S, e.correlationId)
 				}
 		},
 		"./src/reddit/actions/postLevelCrowdControl.ts": function(e, t, r) {
@@ -25255,4 +25255,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e8cb69f01909d5a8353f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.2b7a5135f8eb78e9deaa.js.map
