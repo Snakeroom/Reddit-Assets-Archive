@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.46be3e59d95857181868.js
-// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.9aa08d0a3aff7b2bbce7.js
+// Retrieved at 2/14/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -552,7 +552,7 @@
 					className: k.a.notificationsBannersContainer
 				}, r && s.a.createElement(E.a, {
 					onClose: a,
-					pageType: C.b.Inbox
+					pageType: C.c.Inbox
 				})) : null
 			};
 			var S = n("./src/reddit/pages/NotificationsInbox/Content/EmptyStateViews/EmptyStateComponent.tsx");
@@ -594,9 +594,9 @@
 					}
 				}
 				componentDidMount() {
-					this.props.updateInboxActivitySeenState(), this.props.sendEvent(Object(C.p)({
+					this.props.updateInboxActivitySeenState(), this.props.sendEvent(Object(C.r)({
 						badgeCount: this.props.inboxBadgeCount,
-						tab: C.e.Activity
+						tab: C.f.Activity
 					}))
 				}
 				render() {
@@ -690,9 +690,9 @@
 				}))), s.a.createElement("li", null, s.a.createElement(V, {
 					active: !1,
 					onMouseDown: () => {
-						i(Object(C.p)({
+						i(Object(C.r)({
 							badgeCount: t + n,
-							tab: C.e.Messages
+							tab: C.f.Messages
 						})), e.clearMessageTabBadgeCount()
 					},
 					to: a ? "/message/unread" : "/message/messages"
@@ -704,7 +704,7 @@
 				}))), s.a.createElement("li", null, s.a.createElement("button", {
 					className: K.a.navLink,
 					onClick: () => {
-						e.markAllAsRead(), i(Object(C.g)({
+						e.markAllAsRead(), i(Object(C.h)({
 							isMiniInbox: !1
 						}))
 					}
@@ -715,7 +715,7 @@
 					hk: "3IycES"
 				}))), s.a.createElement("li", null, s.a.createElement(Q.a, {
 					className: K.a.navLink,
-					onClick: () => i(Object(C.m)(C.b.Inbox)),
+					onClick: () => i(Object(C.n)(C.c.Inbox)),
 					to: "/settings/notifications"
 				}, s.a.createElement(q.a, {
 					name: "settings",
@@ -747,4 +747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.46be3e59d95857181868.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.9aa08d0a3aff7b2bbce7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.fde9160ee176a3272d24.js
-// Retrieved at 2/14/2022, 9:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.26ddb58b0bc8d5a84701.js
+// Retrieved at 2/14/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(t, e, o) {
@@ -782,7 +782,7 @@
 							if (!A && !v) return null;
 							const t = t => {
 								M ? w({
-									position: f.c.SECOND
+									position: f.d.SECOND
 								}) : (t.preventDefault(), E(Object(l.f)(I)))
 							};
 							return s.a.createElement(u.t, {
@@ -812,7 +812,7 @@
 											commentsPageKey: t
 										};
 									E(Object(a.g)(e)), w({
-										position: f.c.SECOND
+										position: f.d.SECOND
 									})
 								} else t.preventDefault(), E(Object(l.f)(I))
 							};
@@ -836,7 +836,7 @@
 							if (!W) return null;
 							const t = t => {
 								t.preventDefault(), W ? w({
-									position: f.c.SECOND,
+									position: f.d.SECOND,
 									awardId: F
 								}) : E(Object(l.f)(I))
 							};
@@ -1087,4 +1087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.fde9160ee176a3272d24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.26ddb58b0bc8d5a84701.js.map

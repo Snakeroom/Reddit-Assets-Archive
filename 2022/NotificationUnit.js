@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.e67f55bfdcae223cfd29.js
-// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.898122f9a7f19ac2d299.js
+// Retrieved at 2/14/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -447,18 +447,18 @@
 						isViewed: !0,
 						type: me
 					}, Ie = ee.messageType === x.a.AwardReceived, Ae = Ie ? null === (w = null == ee ? void 0 : ee.awarding) || void 0 === w ? void 0 : w.id : "", _e = null === (y = null === (C = null == ee ? void 0 : ee.awarding) || void 0 === C ? void 0 : C.target) || void 0 === y ? void 0 : y.permalink, Se = null === (j = null === (M = null == ee ? void 0 : ee.awarding) || void 0 === M ? void 0 : M.award) || void 0 === j ? void 0 : j.id, Ue = null === (k = null == ee ? void 0 : ee.post) || void 0 === k ? void 0 : k.permalink, Ce = Ie && _e ? _e : Ue || te, ye = null === (R = null === (D = null == ee ? void 0 : ee.awarding) || void 0 === D ? void 0 : D.awarder) || void 0 === R ? void 0 : R.isAcceptingChats, Me = e => {
-						L(Object(v.k)({
+						L(Object(v.l)({
 							...we,
 							actionInfoType: e
 						}))
 					}, je = e => {
-						L(Object(v.u)({
+						L(Object(v.w)({
 							...we,
 							actionInfoType: e
 						}))
 					}, ke = () => {
 						e.markNotificationAsRead(re, me)
-					}, De = e => L(Object(v.i)({
+					}, De = e => L(Object(v.j)({
 						...we,
 						...e
 					})), Re = l.a.createElement(l.a.Fragment, null, l.a.createElement(m.a, {
@@ -475,7 +475,7 @@
 						isToggleNotificationUpdateEligible: ae,
 						isToggleUpdateFromSubredditEligible: oe,
 						isToggleLowUpdateFromSubredditEligible: ne,
-						sendInboxClickOverflow: () => L(Object(v.j)({
+						sendInboxClickOverflow: () => L(Object(v.k)({
 							...we,
 							awardId: Se
 						})),
@@ -511,7 +511,7 @@
 								duration: O.a
 							}))) : G && J && J(), De({
 								awardId: Se,
-								position: v.c.FIRST
+								position: v.d.FIRST
 							})
 						},
 						onMouseDown: ke,
@@ -527,21 +527,21 @@
 						rel: "noopener noreferrer"
 					}), Re)), l.a.createElement(u.a, {
 						decreaseSubUpdates: () => {
-							const t = v.d.DecreaseSubredditUpdates;
+							const t = v.e.DecreaseSubredditUpdates;
 							e.isInTooltip && e.setActiveOverflowMenuId(S), fe && e.decreaseSubredditNotifications(fe, () => je(t)), Me(t)
 						},
 						disableNotificationUpdates: () => {
-							e.isInTooltip && e.setActiveOverflowMenuId(S), e.disableNotificationUpdates(ge), Me(v.d.HideSubreddit)
+							e.isInTooltip && e.setActiveOverflowMenuId(S), e.disableNotificationUpdates(ge), Me(v.e.HideSubreddit)
 						},
 						hideNotification: () => {
-							e.isInTooltip && e.setActiveOverflowMenuId(S), e.hideNotification(re), Me(v.d.HideUpdates)
+							e.isInTooltip && e.setActiveOverflowMenuId(S), e.hideNotification(re), Me(v.e.HideUpdates)
 						},
 						hideSubredditNotifications: () => {
-							const t = v.d.HideSubreddit;
+							const t = v.e.HideSubreddit;
 							e.isInTooltip && e.setActiveOverflowMenuId(S), e.hideSubredditNotifications(fe, () => je(t)), Me(t)
 						},
 						blockAwarder: () => {
-							e.isInTooltip && e.setActiveOverflowMenuId(S), e.blockAwarder(Ae), Me(v.d.BlockAwarder)
+							e.isInTooltip && e.setActiveOverflowMenuId(S), e.blockAwarder(Ae), Me(v.e.BlockAwarder)
 						},
 						isInTooltip: G,
 						isHideNotifEligible: ie,
@@ -550,11 +550,11 @@
 						isToggleNotificationUpdateEligible: ae,
 						isToggleUpdateFromSubredditEligible: !(!oe || !fe),
 						isBlockAwarderEligible: Ie,
-						sendInboxViewOverflow: () => L(Object(v.s)(we)),
+						sendInboxViewOverflow: () => L(Object(v.u)(we)),
 						tooltipId: Ne
 					}), l.a.createElement(a.a, {
 						onChange: e => {
-							e.isIntersecting && !W && (L(Object(v.r)(we)), Y(!0))
+							e.isIntersecting && !W && (L(Object(v.t)(we)), Y(!0))
 						},
 						rootMargin: "0px 0px 0px 0px",
 						threshold: U
@@ -739,4 +739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.e67f55bfdcae223cfd29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.898122f9a7f19ac2d299.js.map

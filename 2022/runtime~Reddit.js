@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.0d8b2a964a4b06c6204a.js
-// Retrieved at 2/14/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.cce98b6bb9ec3d7f5355.js
+// Retrieved at 2/14/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) d = r[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
@@ -1294,7 +1294,7 @@
 						AchievementsActions: "8f72237c8adbf8381abe",
 						Acknowledgements: "d11ad709b1b01d27180c",
 						Appeal: "8a5cf98249fa30885b12",
-						AuthorHovercard: "1428240454d248cd7774",
+						AuthorHovercard: "ce97e9adbd4c56ed91df",
 						Avatar: "64d3e302cd84d3e51a91",
 						BadgePurchaseModal: "c7853a0147f14c58c1b1",
 						BannedUserModal: "2a2608e0f9dbc15f98c5",
@@ -1369,7 +1369,7 @@
 						HarbergerTaxPurchaseModal: "9666adff646290262122",
 						IdCard: "fe0d95c8fe72b15fe4c2",
 						InboxPages: "2946e0e3fc0e54715188",
-						InboxTooltip: "8e59f0c3ccc6c5e2097c",
+						InboxTooltip: "fd3c0146b42f5d5f9f44",
 						ModModeBanners: "3544652ceb02ecb0e4a5",
 						"ModQueue~ModQueuePages~ModerationPages": "562693d286ed646b18da",
 						ModQueue: "909ffe3bb6e7691383cd",
@@ -1380,8 +1380,8 @@
 						MultiredditCreateModal: "050eaf59dd5e20245f93",
 						MultiredditEditModal: "1343df1c7275d09ee6ad",
 						MuxEmbed: "982b3400754d822142c4",
-						NotificationUnit: "e67f55bfdcae223cfd29",
-						NotificationsInbox: "46be3e59d95857181868",
+						NotificationUnit: "898122f9a7f19ac2d299",
+						NotificationsInbox: "9aa08d0a3aff7b2bbce7",
 						NotificationsPrePromptLoader: "463f4b278336cd387262",
 						OnboardingActions: "538e4be29d8ee1b57189",
 						PostDraft: "a6f607660f569f10b8af",
@@ -1523,7 +1523,7 @@
 						CreatePollButton: "510515f5e59775f32f1b",
 						SubredditInlineEditing: "249fdb2254d1e1325de2",
 						TopicLinksContainer: "55c7722c4115637d6395",
-						"reddit-components-NotificationUnit-Button": "fde9160ee176a3272d24",
+						"reddit-components-NotificationUnit-Button": "26ddb58b0bc8d5a84701",
 						editCollectionModal: "44b6777c4d6f93d9d014",
 						CrisisFlow: "fc9bdbf1aa3ce8e3fde5",
 						EmailInvitePaintedDoor: "7b911c54532321238346",
@@ -1662,4 +1662,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.0d8b2a964a4b06c6204a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.cce98b6bb9ec3d7f5355.js.map

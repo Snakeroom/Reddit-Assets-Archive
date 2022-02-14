@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.8e59f0c3ccc6c5e2097c.js
-// Retrieved at 2/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.fd3c0146b42f5d5f9f44.js
+// Retrieved at 2/14/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip"], {
 		"./src/reddit/actions/subreddit/notifications.ts": function(e, t, i) {
@@ -176,7 +176,7 @@
 							first: 5
 						})
 					}
-					j && S && (A(), _(Object(u.q)({
+					j && S && (A(), _(Object(u.s)({
 						badgeCount: p
 					})))
 				}, [j]), n.a.createElement(l.b, {
@@ -211,4 +211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.8e59f0c3ccc6c5e2097c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.fd3c0146b42f5d5f9f44.js.map
