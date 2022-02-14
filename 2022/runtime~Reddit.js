@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.1286ea9c210b5f44635c.js
-// Retrieved at 2/14/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.2363c42b634e71d53592.js
+// Retrieved at 2/14/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) d = r[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
@@ -1294,7 +1294,7 @@
 						AchievementsActions: "8f72237c8adbf8381abe",
 						Acknowledgements: "d11ad709b1b01d27180c",
 						Appeal: "8a5cf98249fa30885b12",
-						AuthorHovercard: "ce97e9adbd4c56ed91df",
+						AuthorHovercard: "ab7798eb3ef4838a1ea2",
 						Avatar: "64d3e302cd84d3e51a91",
 						BadgePurchaseModal: "c7853a0147f14c58c1b1",
 						BannedUserModal: "2a2608e0f9dbc15f98c5",
@@ -1380,7 +1380,7 @@
 						MultiredditCreateModal: "050eaf59dd5e20245f93",
 						MultiredditEditModal: "1343df1c7275d09ee6ad",
 						MuxEmbed: "982b3400754d822142c4",
-						NotificationUnit: "898122f9a7f19ac2d299",
+						NotificationUnit: "40614ef2e5b7bcb900e3",
 						NotificationsInbox: "9aa08d0a3aff7b2bbce7",
 						NotificationsPrePromptLoader: "463f4b278336cd387262",
 						OnboardingActions: "538e4be29d8ee1b57189",
@@ -1523,7 +1523,7 @@
 						CreatePollButton: "510515f5e59775f32f1b",
 						SubredditInlineEditing: "249fdb2254d1e1325de2",
 						TopicLinksContainer: "55c7722c4115637d6395",
-						"reddit-components-NotificationUnit-Button": "26ddb58b0bc8d5a84701",
+						"reddit-components-NotificationUnit-Button": "d4e559585e16298f6f85",
 						editCollectionModal: "44b6777c4d6f93d9d014",
 						CrisisFlow: "fc9bdbf1aa3ce8e3fde5",
 						EmailInvitePaintedDoor: "7b911c54532321238346",
@@ -1662,4 +1662,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.1286ea9c210b5f44635c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.2363c42b634e71d53592.js.map
