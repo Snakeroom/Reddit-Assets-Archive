@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.90efc4f4c056e90aff08.js
-// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.fbc4843b1e93017889ca.js
+// Retrieved at 2/14/2022, 11:00:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -3527,7 +3527,7 @@
 					isOverlay: f,
 					isVoteCountAnimation: v,
 					postId: E,
-					isReadingIndicatorsExperimentEnabled: C
+					shouldShowUpvoteRatioOnHover: C
 				} = e, g = `upvote-button-${t.id}${f?"-overlay":""}`;
 				return o.a.createElement(i.b, {
 					isRemoved: !!t.bannedBy,
@@ -3550,7 +3550,7 @@
 					scoreClassName: Object(r.a)(p.a.score, {
 						[p.a.allowPointerEvents]: C
 					}),
-					isReadingIndicatorsExperimentEnabled: C
+					shouldShowUpvoteRatioOnHover: C
 				}))
 			}
 		},
@@ -5574,4 +5574,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.90efc4f4c056e90aff08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.fbc4843b1e93017889ca.js.map

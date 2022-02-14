@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.53d72deca509b57aa304.js
-// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.110607be133c924c17c8.js
+// Retrieved at 2/14/2022, 11:00:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -336,7 +336,7 @@
 				return ["top", "bottom"].indexOf(e) >= 0 ? "x" : "y"
 			}
 
-			function z(e) {
+			function H(e) {
 				var t, n = e.reference,
 					r = e.element,
 					o = e.placement,
@@ -388,7 +388,7 @@
 				}
 				return t
 			}
-			var H = {
+			var z = {
 				top: "auto",
 				right: "auto",
 				bottom: "auto",
@@ -425,7 +425,7 @@
 				}
 				var E, S = Object.assign({
 					position: a
-				}, c && H);
+				}, c && z);
 				return d ? Object.assign(Object.assign({}, S), {}, ((E = {})[v] = b ? "0" : "", E[h] = f ? "0" : "", E.transform = (x.devicePixelRatio || 1) < 2 ? "translate(" + p + "px, " + m + "px)" : "translate3d(" + p + "px, " + m + "px, 0)", E)) : Object.assign(Object.assign({}, S), {}, ((t = {})[v] = b ? m + "px" : "", t[h] = f ? p + "px" : "", t.transform = "", t))
 			}
 			var G = {
@@ -562,7 +562,7 @@
 					E = e.elements[b ? y : m],
 					T = ee(a(E) ? E : E.contextElement || l(e.elements.popper), d, u),
 					k = o(g),
-					_ = z({
+					_ = H({
 						reference: k,
 						element: P,
 						strategy: "absolute",
@@ -642,7 +642,7 @@
 						fn: function(e) {
 							var t = e.state,
 								n = e.name;
-							t.modifiersData[n] = z({
+							t.modifiersData[n] = H({
 								reference: t.rects.reference,
 								element: t.rects.popper,
 								strategy: "absolute",
@@ -822,15 +822,15 @@
 										}),
 										V = R ? F ? w : P : F ? j : O;
 									g[D] > k[D] && (V = K(V));
-									var z = K(V),
-										H = [];
-									if (s && H.push(U[L] <= 0), a && H.push(U[V] <= 0, U[z] <= 0), H.every((function(e) {
+									var H = K(V),
+										z = [];
+									if (s && z.push(U[L] <= 0), a && z.push(U[V] <= 0, U[H] <= 0), z.every((function(e) {
 											return e
 										}))) {
 										N = B, A = !1;
 										break
 									}
-									C.set(B, H)
+									C.set(B, z)
 								}
 								if (A)
 									for (var J = function(e) {
@@ -901,8 +901,8 @@
 										R = C[S] + v[I],
 										D = C[S] - v[B],
 										U = m ? -N[L] / 2 : 0,
-										z = y === T ? A[L] : N[L],
-										H = y === T ? -N[L] : -A[L],
+										H = y === T ? A[L] : N[L],
+										z = y === T ? -N[L] : -A[L],
 										J = t.elements.arrow,
 										G = m && J ? b(J) : {
 											width: 0,
@@ -917,8 +917,8 @@
 										Q = K[I],
 										Z = K[B],
 										Y = oe(0, A[L], G[L]),
-										X = E ? A[L] / 2 - U - Y - Q - M : z - Y - Q - M,
-										$ = E ? -A[L] / 2 + U + Y + Z + M : H + Y + Z + M,
+										X = E ? A[L] / 2 - U - Y - Q - M : H - Y - Q - M,
+										$ = E ? -A[L] / 2 + U + Y + Z + M : z + Y + Z + M,
 										ee = t.elements.arrow && g(t.elements.arrow),
 										te = ee ? "y" === S ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][S] : 0,
@@ -1811,8 +1811,8 @@
 				W = n("./src/reddit/components/CommunityTopicSurvey/AggregateSurvey.tsx"),
 				q = n("./src/reddit/hooks/useIsOverlay.ts"),
 				V = n("./src/reddit/hooks/useUserContext.ts"),
-				z = n("./src/reddit/selectors/experiments/cnc/index.ts"),
-				H = n("./src/reddit/selectors/moderatorPermissions.ts"),
+				H = n("./src/reddit/selectors/experiments/cnc/index.ts"),
+				z = n("./src/reddit/selectors/moderatorPermissions.ts"),
 				J = n("./src/reddit/selectors/postFlair.ts"),
 				G = n("./src/reddit/selectors/posts.ts"),
 				K = n("./src/reddit/selectors/showPromotedCTA.ts"),
@@ -1838,14 +1838,14 @@
 					isActive: G.j,
 					isCurrentUserProfilePost: G.l,
 					showPromotedCTA: K.a,
-					moderatorPermissions: H.l,
+					moderatorPermissions: z.l,
 					shouldShowNsfwListingBelow: X.b,
 					showAwardsPlaque: U.a,
 					showEditFlair: J.a,
 					showMedia: M.s,
 					isInModNotesExperiment: (e, {
 						subreddit: t
-					}) => !!t && Object(z.a)(e, t.id)
+					}) => !!t && Object(H.a)(e, t.id)
 				}),
 				re = e => {
 					const {
@@ -1859,8 +1859,8 @@
 						inSubredditOrProfile: U = !1,
 						isCheckboxSelected: q,
 						isCommentsPage: V,
-						isCurrentUserProfilePost: z,
-						isFrontpage: H,
+						isCurrentUserProfilePost: H,
+						isFrontpage: z,
 						isInModNotesExperiment: J,
 						isOverlay: G,
 						isTopicPage: K,
@@ -1887,7 +1887,7 @@
 						subredditOrProfile: xe,
 						toggleCheckbox: ye,
 						isAvatarPostEnabled: ge
-					} = e, Oe = Object(s.d)(), je = e => e === R.a.upvoted ? Oe(Object(l.jb)(ae)) : Oe(Object(l.w)(ae)), we = () => Oe(Object(l.fb)(ae)), Pe = ce ? void 0 : a, Ee = Object(L.a)(re), Se = oe && Ee, Te = Object(I.a)(re), ke = Object(B.a)(re), Ce = Object(O.d)(ie), Ae = Object(w.c)(ie), Ne = !!(null == D ? void 0 : D.shouldShowLinkedPosts), Me = ue, _e = Object(_.a)(ie), Ie = U && !be && !Ne && !Me || ge, Be = Ie && !!ie.source && !n, Le = !(H && r || K) && !z && (!U || Ne || Me), Fe = (!U || Ne || Me) && !ie.isSponsored, Re = Object(d.t)(ie, te), {
+					} = e, Oe = Object(s.d)(), je = e => e === R.a.upvoted ? Oe(Object(l.jb)(ae)) : Oe(Object(l.w)(ae)), we = () => Oe(Object(l.fb)(ae)), Pe = ce ? void 0 : a, Ee = Object(L.a)(re), Se = oe && Ee, Te = Object(I.a)(re), ke = Object(B.a)(re), Ce = Object(O.d)(ie), Ae = Object(w.c)(ie), Ne = !!(null == D ? void 0 : D.shouldShowLinkedPosts), Me = ue, _e = Object(_.a)(ie), Ie = U && !be && !Ne && !Me || ge, Be = Ie && !!ie.source && !n, Le = !(z && r || K) && !H && (!U || Ne || Me), Fe = (!U || Ne || Me) && !ie.isSponsored, Re = Object(d.t)(ie, te), {
 						source: De
 					} = Re;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement(E.a, {
@@ -1931,7 +1931,7 @@
 						iconClassName: ee.a.postTopLineIcon,
 						inSubredditOrProfile: U,
 						isCommentsPage: V,
-						isCurrentUserProfilePost: z,
+						isCurrentUserProfilePost: H,
 						isInModNotesExperiment: J,
 						isOverlay: !!G,
 						isTopicPage: !!K,
@@ -2021,7 +2021,7 @@
 							hide: !1,
 							report: !1
 						})
-					}))), H && o.a.createElement(W.a, {
+					}))), z && o.a.createElement(W.a, {
 						post: ie,
 						postIds: null != de ? de : [],
 						subredditId: null == xe ? void 0 : xe.id
@@ -2119,7 +2119,7 @@
 					isOverlay: v,
 					isVoteCountAnimation: x,
 					postId: y,
-					isReadingIndicatorsExperimentEnabled: g
+					shouldShowUpvoteRatioOnHover: g
 				} = e, O = `upvote-button-${t.id}${v?"-overlay":""}`;
 				return o.a.createElement(i.b, {
 					isRemoved: !!t.bannedBy,
@@ -2142,7 +2142,7 @@
 					scoreClassName: Object(s.a)(p.a.score, {
 						[p.a.allowPointerEvents]: g
 					}),
-					isReadingIndicatorsExperimentEnabled: g
+					shouldShowUpvoteRatioOnHover: g
 				}))
 			}
 		},
@@ -2208,9 +2208,9 @@
 				subredditOrProfile: W,
 				isFollowed: q,
 				shouldShowFollowButton: V,
-				onFollowPostClick: z
+				onFollowPostClick: H
 			}) => {
-				const H = o || I,
+				const z = o || I,
 					J = W && Object(j.h)(W),
 					G = Object(i.e)(e => {
 						if (!J) return !0;
@@ -2249,7 +2249,7 @@
 					isCompactPinnedPost: A,
 					post: L,
 					tooltipType: _ ? p.c.Lightbox : void 0
-				}), !H && s.a.createElement(d.a, {
+				}), !z && s.a.createElement(d.a, {
 					isPostDetail: C,
 					thing: L,
 					tooltipType: _ ? p.c.Lightbox : void 0
@@ -2271,7 +2271,7 @@
 					className: E.a.outboundLinkIcon
 				})), V && G && s.a.createElement(l.a, {
 					isFilled: !!q,
-					onClick: z,
+					onClick: H,
 					hasTooltip: !0,
 					tooltipText: r.fbt._("Follow post to stay updated", null, {
 						hk: "26UP9Z"
@@ -2718,4 +2718,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.53d72deca509b57aa304.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.110607be133c924c17c8.js.map

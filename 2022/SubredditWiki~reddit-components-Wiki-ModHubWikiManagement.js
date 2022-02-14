@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.e76e7f631acc9f61ac74.js
-// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.d12f0526649cc8e15e1f.js
+// Retrieved at 2/14/2022, 11:00:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, i) {
@@ -357,8 +357,7 @@
 			e.exports = {
 				editorWrapper: "VBa-xDMEbFi3vsO4id4OC",
 				textareaAutosize: "_6Ej82J4aTDK36LLOcpFbC",
-				mIsFullHeight: "aZb6a46diyLdUQJynW3aD",
-				shouldPadContent: "_1BSXh-_TPEzV9jw2pP-m8p"
+				mIsFullHeight: "aZb6a46diyLdUQJynW3aD"
 			}
 		},
 		"./src/reddit/components/ResizableAutosizeTextarea/index.tsx": function(e, t, i) {
@@ -394,16 +393,14 @@
 				}, t),
 				u = ({
 					isFullHeight: e,
-					shouldPadContent: t,
-					textAreaRef: i,
-					...n
+					textAreaRef: t,
+					...i
 				}) => s.a.createElement(a.a, l({
 					className: Object(r.a)(c.a.textareaAutosize, {
-						[c.a.mIsFullHeight]: e,
-						[c.a.shouldPadContent]: t
+						[c.a.mIsFullHeight]: e
 					}),
-					innerRef: i
-				}, n));
+					innerRef: t
+				}, i));
 			class p extends s.a.Component {
 				constructor(e) {
 					super(e), this.editorHeight = null, this.editorRef = null, this.editorStyleMutationObserver = null, this.onEditorStyleChanged = () => {
@@ -2171,4 +2168,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.e76e7f631acc9f61ac74.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.d12f0526649cc8e15e1f.js.map

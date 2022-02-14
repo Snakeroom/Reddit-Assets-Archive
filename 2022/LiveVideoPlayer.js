@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.df0e41fd22f2b889af53.js
-// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.1595ae85f2668d2da3cb.js
+// Retrieved at 2/14/2022, 11:00:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -118,7 +118,7 @@
 							model: e,
 							utcTimeStamp: u
 						}))
-					} else t(_({
+					} else t(S({
 						streamId: o,
 						error: i.error,
 						utcTimeStamp: u
@@ -142,7 +142,7 @@
 						error: i.error,
 						utcTimeStamp: c
 					}))
-				}, C = (e, t) => async (s, n) => s(S(e, t)), S = (e, t) => async (s, n, {
+				}, C = (e, t) => async (s, n) => s(_(e, t)), _ = (e, t) => async (s, n, {
 					gqlContext: o
 				}) => {
 					const r = n();
@@ -164,7 +164,7 @@
 							const s = await Object(a.e)(e, t),
 								n = Date.now(),
 								o = s.body;
-							return o && o.data ? o.data : void _({
+							return o && o.data ? o.data : void S({
 								streamId: t,
 								error: s.error,
 								utcTimeStamp: n
@@ -176,7 +176,7 @@
 						models: f,
 						utcTimeStamp: i
 					}))
-				}, _ = e => async t => {
+				}, S = e => async t => {
 					t(f(e))
 				}, x = e => async t => {
 					t(y(e))
@@ -255,7 +255,6 @@
 				isOpen: e.dropdownIsOpen,
 				tooltipId: e.dropdownId,
 				isFixed: e.isFixed,
-				preventFocusScroll: e.preventFocusScroll,
 				targetPosition: e.targetPosition,
 				tooltipPosition: e.tooltipPosition,
 				style: e.style
@@ -327,9 +326,9 @@
 		"./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "LiveVideoPlayer", (function() {
-				return F
-			})), s.d(t, "Overlay", (function() {
 				return B
+			})), s.d(t, "Overlay", (function() {
+				return F
 			}));
 			var n = s("./node_modules/lodash/isUndefined.js"),
 				o = s.n(n),
@@ -353,8 +352,8 @@
 				L = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				O = s("./src/reddit/constants/chat.ts"),
 				C = s("./src/reddit/constants/keycodes.ts"),
-				S = s("./src/reddit/helpers/trackers/rpan.ts"),
-				_ = s("./src/reddit/selectors/media.ts"),
+				_ = s("./src/reddit/helpers/trackers/rpan.ts"),
+				S = s("./src/reddit/selectors/media.ts"),
 				x = s("./src/reddit/selectors/platform.ts"),
 				j = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
 				k = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
@@ -371,7 +370,7 @@
 				isOverlayOpen: x.i,
 				mutedInFeed: M.i,
 				unavailableVideoUrl: j.o,
-				volumeInFeed: _.d,
+				volumeInFeed: S.d,
 				currentStream: (e, {
 					postId: t
 				}) => Object(k.l)(e, t)
@@ -381,7 +380,7 @@
 				onHeartbeatSubscribe: t => e(p.a.subscribeHeartbeat(t)),
 				onStreamByIdRequested: async t => await e(Object(b.d)(t))
 			}));
-			class F extends r.Component {
+			class B extends r.Component {
 				constructor(e) {
 					super(e), this.sleepTimeout = null, this.videoRef = i.a.createRef(), this._videoSessionManager = null, this.handleHlsRefChange = e => {
 						var t;
@@ -523,11 +522,11 @@
 							currentStream: s
 						} = this.props;
 						if (!s) return void(null === (t = this.videoSessionManager) || void 0 === t || t.destroySession());
-						const n = !e.sessionDurationMs ? S.E : S.A,
+						const n = !e.sessionDurationMs ? _.E : _.A,
 							o = {
 								...e,
 								chatState: O.a.None,
-								playerType: S.a.Feed
+								playerType: _.a.Feed
 							};
 						this.props.sendEvent(n(s, o))
 					}, this.state = {
@@ -634,7 +633,7 @@
 					const {
 						live: e
 					} = this.state;
-					return i.a.createElement(B, null, e ? i.a.createElement("span", {
+					return i.a.createElement(F, null, e ? i.a.createElement("span", {
 						className: P.a.liveStatus
 					}, i.a.createElement(E.g, null)) : null, i.a.createElement("div", {
 						className: P.a.controls,
@@ -755,8 +754,8 @@
 					})) : u && (null === (r = this.videoSessionManager) || void 0 === r || r.pauseSession())
 				}
 			}
-			F.contextType = w.a, t.default = R(Object(L.c)(F));
-			const B = ({
+			B.contextType = w.a, t.default = R(Object(L.c)(B));
+			const F = ({
 				children: e
 			}) => i.a.createElement("div", {
 				className: P.a.Overlay
@@ -844,9 +843,9 @@
 			})), s.d(t, "o", (function() {
 				return C
 			})), s.d(t, "z", (function() {
-				return S
-			})), s.d(t, "s", (function() {
 				return _
+			})), s.d(t, "s", (function() {
+				return S
 			})), s.d(t, "y", (function() {
 				return x
 			})), s.d(t, "G", (function() {
@@ -872,9 +871,9 @@
 			})), s.d(t, "f", (function() {
 				return R
 			})), s.d(t, "l", (function() {
-				return F
-			})), s.d(t, "m", (function() {
 				return B
+			})), s.d(t, "m", (function() {
+				return F
 			})), s.d(t, "g", (function() {
 				return U
 			})), s.d(t, "h", (function() {
@@ -1053,7 +1052,7 @@
 					playback: c(s, e, t),
 					...a(s, e)
 				}),
-				S = e => t => {
+				_ = e => t => {
 					const s = Object(r.l)(t, e);
 					return {
 						source: "stream_chat",
@@ -1062,7 +1061,7 @@
 						...a(t, s)
 					}
 				},
-				_ = (e, t, s) => n => ({
+				S = (e, t, s) => n => ({
 					source: "stream_player",
 					action: "click",
 					noun: "confirm_subreddit",
@@ -1159,7 +1158,7 @@
 					playback: c(s, e, t),
 					...a(s, e)
 				}),
-				F = (e, t) => s => ({
+				B = (e, t) => s => ({
 					source: "stream_player",
 					action: "swipe",
 					noun: "next",
@@ -1167,7 +1166,7 @@
 					...a(s, e),
 					...d(s)
 				}),
-				B = (e, t) => s => ({
+				F = (e, t) => s => ({
 					source: "stream_player",
 					action: "swipe",
 					noun: "previous",
@@ -1313,7 +1312,7 @@
 			s.d(t, "l", (function() {
 				return L
 			})), s.d(t, "m", (function() {
-				return S
+				return _
 			})), s.d(t, "i", (function() {
 				return j
 			})), s.d(t, "d", (function() {
@@ -1327,9 +1326,9 @@
 			})), s.d(t, "f", (function() {
 				return D
 			})), s.d(t, "a", (function() {
-				return F
-			})), s.d(t, "j", (function() {
 				return B
+			})), s.d(t, "j", (function() {
+				return F
 			})), s.d(t, "b", (function() {
 				return U
 			})), s.d(t, "e", (function() {
@@ -1425,11 +1424,11 @@
 					const n = s.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
 					return e ? n.slice(0, e) : n
 				}),
-				S = Object(n.a)(E, C, (e, t) => {
+				_ = Object(n.a)(E, C, (e, t) => {
 					const s = t[0];
 					if (s) return e[s]
 				}),
-				_ = Object(n.a)(f, (e, {
+				S = Object(n.a)(f, (e, {
 					related: t,
 					streamIdFromPath: s,
 					subreddit: n
@@ -1472,7 +1471,7 @@
 					listingName: t || n,
 					streamIdFromPath: s
 				}), (e, t, s, n, o) => !e || s.includes(e) || n.includes(e) ? t || o[0] : e),
-				I = Object(n.a)(v, f, _, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
+				I = Object(n.a)(v, f, S, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
 				M = Object(n.a)(v, f, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
@@ -1500,19 +1499,19 @@
 				return s[t] >= s[e]
 			}
 			const R = Object(n.a)(k, b, (e, t) => e && t.timestamps[e] || 0);
-			var F;
+			var B;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
-			}(F || (F = {}));
-			const B = Object(n.a)(k, E, m.b, (e, t, s) => {
-					if (s) return F.INTRO;
+			}(B || (B = {}));
+			const F = Object(n.a)(k, E, m.b, (e, t, s) => {
+					if (s) return B.INTRO;
 					const n = e && t[e];
-					if (!n) return F.UNAVAILABLE;
+					if (!n) return B.UNAVAILABLE;
 					const o = n.stream.state;
-					return o === i.a.IS_LIVE || o === i.a.DISCONNECTED ? F.LIVE : o === i.a.ENDED && n.stream.vod_accessible ? F.VOD : F.UNAVAILABLE
+					return o === i.a.IS_LIVE || o === i.a.DISCONNECTED ? B.LIVE : o === i.a.ENDED && n.stream.vod_accessible ? B.VOD : B.UNAVAILABLE
 				}),
-				U = Object(n.a)(N, B, m.b, c.b, c.o, (e, t, s, n, o) => s ? n : e ? t === F.LIVE || t === F.VOD ? e.stream.hls_url : o : void 0),
-				H = Object(n.a)(N, B, R, (e, t, s) => e ? t === F.LIVE ? e.broadcast_time : t === F.VOD && s < e.broadcast_time ? s : 0 : 0),
+				U = Object(n.a)(N, F, m.b, c.b, c.o, (e, t, s, n, o) => s ? n : e ? t === B.LIVE || t === B.VOD ? e.stream.hls_url : o : void 0),
+				H = Object(n.a)(N, F, R, (e, t, s) => e ? t === B.LIVE ? e.broadcast_time : t === B.VOD && s < e.broadcast_time ? s : 0 : 0),
 				K = (e, t) => {
 					const s = h(e);
 					return !!s && s[t] && s[t].chat_disabled
@@ -1551,4 +1550,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.df0e41fd22f2b889af53.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.1595ae85f2668d2da3cb.js.map
