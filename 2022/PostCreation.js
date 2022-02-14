@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4a551f35276301b57370.js
-// Retrieved at 2/14/2022, 11:00:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.4eeaaadb466f9a0e1c4c.js
+// Retrieved at 2/14/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -9075,6 +9075,8 @@
 				small: "uWdXen_41bh0iwLrgzFkc",
 				ExtraSmall: "_1aqE18-N18ZIRlkE1wa7DP",
 				extraSmall: "_1aqE18-N18ZIRlkE1wa7DP",
+				Metadata: "_2_YD0sbnnLrJvpCrMxBFaC",
+				metadata: "_2_YD0sbnnLrJvpCrMxBFaC",
 				Component: "_2FCtq-QzlfuN-SwVMUZMM3",
 				component: "_2FCtq-QzlfuN-SwVMUZMM3"
 			}
@@ -9156,7 +9158,7 @@
 					return e
 				}).apply(this, arguments)
 			}! function(e) {
-				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall"
+				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall", e[e.Metadata = 5] = "Metadata"
 			}(D || (D = {}));
 			const K = ({
 					size: e,
@@ -9183,7 +9185,10 @@
 							l = B.a.Small;
 							break;
 						case D.ExtraSmall:
-							l = B.a.ExtraSmall
+							l = B.a.ExtraSmall;
+							break;
+						case D.Metadata:
+							l = B.a.Metadata
 					}
 					return r.a.createElement("div", {
 						className: Object(d.a)(B.a.Title, a, l, {
@@ -9347,25 +9352,31 @@
 						isOverlay: s,
 						poll: a,
 						post: i,
-						showNSFWSpoilerFlairsOnly: c
-					} = this.props, l = n === _.b.Left, u = Object(j.b)(i), m = c ? u.filter(e => e.type === _.f.Nsfw || e.type === _.f.Spoiler) : l ? u.filter(e => Object(g.q)(e.type)) : [], p = c ? [] : l ? u.filter(e => !Object(g.q)(e.type)) : u, h = !s && !o, b = !t && m && m.length > 0 && h, f = !t && p && p.length > 0 && h;
+						showNSFWSpoilerFlairsOnly: c,
+						showNSFWFlairsOnly: l
+					} = this.props, u = n === _.b.Left, m = Object(j.b)(i), p = c ? m.filter(e => e.type === _.f.Nsfw || e.type === _.f.Spoiler) : u ? m.filter(e => Object(g.q)(e.type)) : [];
+					let h = m;
+					c ? h = [] : l ? h = m.filter(e => e.type === _.f.Nsfw) : u && (h = m.filter(e => !Object(g.q)(e.type)));
+					const b = !s && !o,
+						f = !t && p && p.length > 0 && b,
+						C = !t && h && h.length > 0 && b;
 					return r.a.createElement("div", {
 						className: Object(d.a)(B.a.Component, e, i.id),
 						ref: this.props.innerRef
-					}, !c && b && r.a.createElement(j.a, {
+					}, !c && f && r.a.createElement(j.a, {
 						isFlairFilter: !0,
-						titleFlair: m,
+						titleFlair: p,
 						nowrap: !0,
 						post: i,
 						sendEvent: this.props.sendEvent
 					}), !Object(O.b)(i) && r.a.createElement(Q, V({}, this.props, {
-						leftFlair: c ? m : void 0
+						leftFlair: c ? p : void 0
 					})), a && r.a.createElement(M, {
 						className: B.a.pollMeta,
 						pollId: a.id
-					}), r.a.createElement(X, this.props), f && r.a.createElement(j.a, {
+					}), r.a.createElement(X, this.props), C && r.a.createElement(j.a, {
 						isFlairFilter: !0,
-						titleFlair: p,
+						titleFlair: h,
 						nowrap: !0,
 						post: i,
 						sendEvent: this.props.sendEvent
@@ -22677,4 +22688,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4a551f35276301b57370.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4eeaaadb466f9a0e1c4c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1e0e695713b5bb10c40b.js
-// Retrieved at 2/14/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.eadd2442347ff89f671a.js
+// Retrieved at 2/14/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("158190"),
+				buildNumber: Object(r.c)("158193"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1644872305"),
+				buildTimestamp: Object(r.b)("1644873963"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6064,14 +6064,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c1f72f912f0d7ba37f8c980fc25fc7a1470493c2b-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c1f475a5f8918f851348888b3c06594afac0dccd0-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "1f72f912f0d7ba37f8c980fc25fc7a1470493c2b-production",
+						release: "1f475a5f8918f851348888b3c06594afac0dccd0-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6588,7 +6588,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "1f72f912f0d7ba37f8c980fc25fc7a1470493c2b-production",
+						releaseClient: "1f475a5f8918f851348888b3c06594afac0dccd0-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -19003,7 +19003,7 @@
 		"./src/reddit/endpoints/page/search/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return A
+				return x
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/lib/makeGqlRequest/index.ts"),
@@ -19014,8 +19014,9 @@
 				l = i("./node_modules/lodash/isEmpty.js"),
 				u = i.n(l),
 				c = i("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
-				_ = i("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts");
-			const m = e => {
+				_ = i("./src/reddit/helpers/graphql/normalizePostFlairFromGql/index.ts"),
+				m = i("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts");
+			const p = e => {
 				var t, i, n;
 				return null !== (n = e.profile && {
 					[e.profile.id]: {
@@ -19025,83 +19026,85 @@
 					}
 				}) && void 0 !== n ? n : {}
 			};
-			var p = i("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
-				h = i("./src/reddit/helpers/graphql/normalizeSubredditAboutFromGql/index.ts"),
-				f = i("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
-				b = i("./src/reddit/helpers/graphql/normalizeSubredditStylesFromGql/index.ts"),
-				g = i("./src/reddit/helpers/graphql/normalizeSubredditWidgetsFromGql/index.ts"),
-				w = i("./src/reddit/models/DiscoveryUnit/index.ts"),
-				v = i("./src/reddit/models/FeedElement/index.ts"),
-				y = i("./src/reddit/models/SearchDiscoveryUnit/index.ts"),
-				E = i("./src/redditGQL/types.ts");
-			const S = e => (null == e ? void 0 : e.__typename) === v.a.SubredditPost,
-				T = {
-					[E.u.PostSearchPromotedTrend]: y.b.PromotedTrendHero,
-					[E.u.PostSearchTrending]: y.b.Hero
-				},
+			var h = i("./src/reddit/helpers/graphql/normalizeProfileFromGql/index.ts"),
+				f = i("./src/reddit/helpers/graphql/normalizeSubredditAboutFromGql/index.ts"),
+				b = i("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts"),
+				g = i("./src/reddit/helpers/graphql/normalizeSubredditStylesFromGql/index.ts"),
+				w = i("./src/reddit/helpers/graphql/normalizeSubredditWidgetsFromGql/index.ts"),
+				v = i("./src/reddit/models/DiscoveryUnit/index.ts"),
+				y = i("./src/reddit/models/FeedElement/index.ts"),
+				E = i("./src/reddit/models/SearchDiscoveryUnit/index.ts"),
+				S = i("./src/redditGQL/types.ts");
+			const T = e => (null == e ? void 0 : e.__typename) === y.a.SubredditPost,
 				O = {
-					[E.u.PostSearchPromotedTrend]: w.f,
-					[E.u.PostSearchTrending]: w.l
-				};
-			const I = e => e && e.reduce((e, t) => "" === e ? e + t : e += `,${t}`, ""),
-				R = {
-					[n.Yb.Comments]: E.s.Comments,
-					[n.Yb.Hot]: E.s.Hot,
-					[n.Yb.New]: E.s.New,
-					[n.Yb.Top]: E.s.Top,
-					[n.Yb.Relevance]: E.s.Relevance
+					[S.u.PostSearchPromotedTrend]: E.b.PromotedTrendHero,
+					[S.u.PostSearchTrending]: E.b.Hero
 				},
-				C = e => !u()(e);
+				I = {
+					[S.u.PostSearchPromotedTrend]: v.f,
+					[S.u.PostSearchTrending]: v.l
+				};
+			const R = e => e && e.reduce((e, t) => "" === e ? e + t : e += `,${t}`, ""),
+				C = {
+					[n.Yb.Comments]: S.s.Comments,
+					[n.Yb.Hot]: S.s.Hot,
+					[n.Yb.New]: S.s.New,
+					[n.Yb.Top]: S.s.Top,
+					[n.Yb.Relevance]: S.s.Relevance
+				},
+				N = e => !u()(e);
 
-			function N(e, t) {
-				var i, r, s, o, d, a, l, u, w, I, R, N, F, j, A, x, D, P, k, L, B, M, U, G, q, V, H, W, z, K, Y, $, Q, J, X, Z, ee, te, ie, ne, re, se, oe, de, ae, le, ue, ce, _e, me;
-				let pe, he = {},
-					fe = [],
+			function F(e, t) {
+				var i, r, s, o, d, a, l, u, v, R, C, F, j, A, x, D, P, k, L, B, M, U, G, q, V, H, W, z, K, Y, $, Q, J, X, Z, ee, te, ie, ne, re, se, oe, de, ae, le, ue, ce, _e, me, pe;
+				let he, fe = {},
 					be = {},
-					ge = {},
-					we = [],
+					ge = [],
+					we = {},
 					ve = {},
 					ye = [],
 					Ee = {},
-					Se = {},
-					Te = [],
+					Se = [],
+					Te = {},
 					Oe = {},
-					Ie = {},
-					Re = [],
+					Ie = [],
+					Re = {},
 					Ce = {},
-					Ne = {},
-					Fe = {
+					Ne = [],
+					Fe = {},
+					je = {},
+					Ae = {},
+					xe = {
 						authors: null,
 						communities: null,
 						listings: null,
 						posts: null,
 						comments: null
 					},
-					je = {},
-					Ae = y.c.Default,
-					xe = {
+					De = {},
+					Pe = E.c.Default,
+					ke = {
 						authors: !e[n.bc.Users] && void 0,
 						communities: !e[n.bc.Subreddits] && void 0,
 						posts: !e[n.bc.Posts] && void 0,
 						comments: !e[n.bc.Comments] && void 0
 					},
-					De = {};
-				if (C(t)) {
-					const C = null !== (d = null === (o = null === (s = null === (r = null === (i = t.data) || void 0 === i ? void 0 : i.search) || void 0 === r ? void 0 : r.general) || void 0 === s ? void 0 : s.posts) || void 0 === o ? void 0 : o.edges) && void 0 !== d ? d : [],
-						Pe = null !== (I = null === (w = null === (u = null === (l = null === (a = t.data) || void 0 === a ? void 0 : a.search) || void 0 === l ? void 0 : l.general) || void 0 === u ? void 0 : u.communities) || void 0 === w ? void 0 : w.edges) && void 0 !== I ? I : [],
-						ke = null !== (A = null === (j = null === (F = null === (N = null === (R = t.data) || void 0 === R ? void 0 : R.search) || void 0 === N ? void 0 : N.general) || void 0 === F ? void 0 : F.authors) || void 0 === j ? void 0 : j.edges) && void 0 !== A ? A : [],
-						Le = null !== (L = null === (k = null === (P = null === (D = null === (x = t.data) || void 0 === x ? void 0 : x.search) || void 0 === D ? void 0 : D.general) || void 0 === P ? void 0 : P.comments) || void 0 === k ? void 0 : k.edges) && void 0 !== L ? L : [],
-						Be = null === (G = null === (U = null === (M = null === (B = t.data.search) || void 0 === B ? void 0 : B.general) || void 0 === M ? void 0 : M.posts) || void 0 === U ? void 0 : U.feedMetadata) || void 0 === G ? void 0 : G.treatment,
-						Me = null !== (V = null === (q = t.data) || void 0 === q ? void 0 : q.subredditsInfoByNames) && void 0 !== V ? V : [];
-					[je, pe] = function(e) {
+					Le = {};
+				if (N(t)) {
+					const N = null !== (d = null === (o = null === (s = null === (r = null === (i = t.data) || void 0 === i ? void 0 : i.search) || void 0 === r ? void 0 : r.general) || void 0 === s ? void 0 : s.posts) || void 0 === o ? void 0 : o.edges) && void 0 !== d ? d : [],
+						Be = null !== (R = null === (v = null === (u = null === (l = null === (a = t.data) || void 0 === a ? void 0 : a.search) || void 0 === l ? void 0 : l.general) || void 0 === u ? void 0 : u.communities) || void 0 === v ? void 0 : v.edges) && void 0 !== R ? R : [],
+						Me = null !== (x = null === (A = null === (j = null === (F = null === (C = t.data) || void 0 === C ? void 0 : C.search) || void 0 === F ? void 0 : F.general) || void 0 === j ? void 0 : j.authors) || void 0 === A ? void 0 : A.edges) && void 0 !== x ? x : [],
+						Ue = null !== (B = null === (L = null === (k = null === (P = null === (D = t.data) || void 0 === D ? void 0 : D.search) || void 0 === P ? void 0 : P.general) || void 0 === k ? void 0 : k.comments) || void 0 === L ? void 0 : L.edges) && void 0 !== B ? B : [],
+						Ge = null === (q = null === (G = null === (U = null === (M = t.data.search) || void 0 === M ? void 0 : M.general) || void 0 === U ? void 0 : U.posts) || void 0 === G ? void 0 : G.feedMetadata) || void 0 === q ? void 0 : q.treatment,
+						qe = null !== (H = null === (V = t.data) || void 0 === V ? void 0 : V.subredditsInfoByNames) && void 0 !== H ? H : [];
+					[De, he] = function(e) {
 						var t;
 						let i, n = {};
 						if (1 === e.length && "Subreddit" === (null === (t = e[0]) || void 0 === t ? void 0 : t.__typename)) {
 							i = e[0];
-							const t = Object(g.a)(i);
+							const t = Object(w.a)(i);
 							n = {
 								data: {
-									style: Object(b.a)(i.styles),
+									style: Object(g.a)(i.styles),
 									...t && {
 										content: {
 											widgets: t
@@ -19112,13 +19115,14 @@
 							}
 						}
 						return [n, i]
-					}(Me), Ae = Be === E.u.PostSearchTrending || Be === E.u.PostSearchPromotedTrend ? y.c.Trending : y.c.Default, [he, fe, be, ge, we] = function(e, t) {
+					}(qe), Pe = Ge === S.u.PostSearchTrending || Ge === S.u.PostSearchPromotedTrend ? E.c.Trending : E.c.Default, [fe, ge, we, ve, ye, be] = function(e, t) {
 						var i, n, r;
 						const s = {},
 							o = {},
 							d = [],
 							a = [],
-							l = {};
+							l = {},
+							u = {};
 						if (e.length) {
 							if (t) {
 								const r = null === (n = null === (i = e[0]) || void 0 === i ? void 0 : i.node) || void 0 === n ? void 0 : n.id;
@@ -19126,98 +19130,103 @@
 									id: r,
 									layout: {
 										title: "Best post",
-										viewTypeWeb: T[t]
+										viewTypeWeb: O[t]
 									},
-									name: O[t],
+									name: I[t],
 									postOrder: [r],
-									type: y.a.Posts
+									type: E.a.Posts
 								})
 							}
 							for (const t of e)
-								if ((null === (r = null == t ? void 0 : t.node) || void 0 === r ? void 0 : r.id) && (s[t.node.id] = Object(_.f)(t.node), d.push(t.node.id), S(t.node))) {
+								if ((null === (r = null == t ? void 0 : t.node) || void 0 === r ? void 0 : r.id) && (s[t.node.id] = Object(m.f)(t.node), d.push(t.node.id), T(t.node))) {
 									const e = t.node.subreddit;
-									o[e.id] = Object(f.a)(e)
+									o[e.id] = Object(b.a)(e), u[e.id] = Object(_.a)(e)
 								}
 						}
-						return [s, d, o, l, a]
-					}(C, Be), [ve, ye, Ee] = function(e, t, i) {
+						return [s, d, o, l, a, u]
+					}(N, Ge), [Ee, Se, Te] = function(e, t, i) {
 						var n, r, s;
 						const o = [],
 							d = {};
-						for (const a of e)(null === (n = null == a ? void 0 : a.node) || void 0 === n ? void 0 : n.id) && (t[a.node.id] = Object(f.a)(a.node), o.push({
+						for (const a of e)(null === (n = null == a ? void 0 : a.node) || void 0 === n ? void 0 : n.id) && (t[a.node.id] = Object(b.a)(a.node), o.push({
 							id: a.node.id,
 							type: "subreddit"
-						}), d[null === (r = null == a ? void 0 : a.node) || void 0 === r ? void 0 : r.id] = Object(h.a)(a.node)[null === (s = null == a ? void 0 : a.node) || void 0 === s ? void 0 : s.id]);
-						return i && (t[i.id] = Object(f.a)(i), d[i.id] = Object(h.a)(i)[i.id]), [t, o, d]
-					}(Pe, be, pe), [Te, Se, Oe] = function(e) {
+						}), d[null === (r = null == a ? void 0 : a.node) || void 0 === r ? void 0 : r.id] = Object(f.a)(a.node)[null === (s = null == a ? void 0 : a.node) || void 0 === s ? void 0 : s.id]);
+						return i && (t[i.id] = Object(b.a)(i), d[i.id] = Object(f.a)(i)[i.id]), [t, o, d]
+					}(Be, we, he), [Ie, Oe, Re] = function(e) {
 						var t, i, n, r;
 						const s = [],
 							o = {},
 							d = {};
-						for (const a of e)(null === (t = null == a ? void 0 : a.node) || void 0 === t ? void 0 : t.profile) && (o[a.node.profile.id] = Object(p.a)(a.node.profile), s.push({
+						for (const a of e)(null === (t = null == a ? void 0 : a.node) || void 0 === t ? void 0 : t.profile) && (o[a.node.profile.id] = Object(h.a)(a.node.profile), s.push({
 							id: a.node.profile.id,
 							type: "profile"
-						}), d[null === (i = null == a ? void 0 : a.node) || void 0 === i ? void 0 : i.profile.id] = m(a.node)[null === (r = null === (n = null == a ? void 0 : a.node) || void 0 === n ? void 0 : n.profile) || void 0 === r ? void 0 : r.id]);
+						}), d[null === (i = null == a ? void 0 : a.node) || void 0 === i ? void 0 : i.profile.id] = p(a.node)[null === (r = null === (n = null == a ? void 0 : a.node) || void 0 === n ? void 0 : n.profile) || void 0 === r ? void 0 : r.id]);
 						return [s, o, d]
-					}(ke), [Re, Ie, Ce, Ne] = function(e) {
+					}(Me), [Ne, Ce, je, Ae, Fe] = function(e) {
 						var t;
 						const i = {},
 							n = [],
 							r = {},
-							s = {};
+							s = {},
+							o = {};
 						if (e.length)
-							for (const o of e)
-								if ("Comment" === (null === (t = null == o ? void 0 : o.node) || void 0 === t ? void 0 : t.__typename)) {
-									i[o.node.id] = Object(c.a)(o.node), n.push(o.node.id);
-									const e = o.node.postInfo;
-									e && (r[e.id] = Object(_.f)(e), (null == e ? void 0 : e.__typename) === v.a.SubredditPost && (s[e.subreddit.id] = Object(f.a)(e.subreddit)))
-								} return [n, i, r, s]
-					}(Le), Fe = {
-						authors: null !== (K = null === (z = null === (W = null === (H = t.data.search) || void 0 === H ? void 0 : H.general) || void 0 === W ? void 0 : W.authors) || void 0 === z ? void 0 : z.pageInfo.endCursor) && void 0 !== K ? K : null,
-						comments: null !== (J = null === (Q = null === ($ = null === (Y = t.data.search) || void 0 === Y ? void 0 : Y.general) || void 0 === $ ? void 0 : $.comments) || void 0 === Q ? void 0 : Q.pageInfo.endCursor) && void 0 !== J ? J : null,
-						communities: null !== (te = null === (ee = null === (Z = null === (X = t.data.search) || void 0 === X ? void 0 : X.general) || void 0 === Z ? void 0 : Z.communities) || void 0 === ee ? void 0 : ee.pageInfo.endCursor) && void 0 !== te ? te : null,
+							for (const d of e)
+								if ("Comment" === (null === (t = null == d ? void 0 : d.node) || void 0 === t ? void 0 : t.__typename)) {
+									i[d.node.id] = Object(c.a)(d.node), n.push(d.node.id);
+									const e = d.node.postInfo;
+									e && (r[e.id] = Object(m.f)(e), (null == e ? void 0 : e.__typename) === y.a.SubredditPost && (o[e.subreddit.id] = Object(b.a)(e.subreddit), s[e.subreddit.id] = Object(_.a)(e.subreddit)))
+								} return [n, i, r, o, s]
+					}(Ue), xe = {
+						authors: null !== (Y = null === (K = null === (z = null === (W = t.data.search) || void 0 === W ? void 0 : W.general) || void 0 === z ? void 0 : z.authors) || void 0 === K ? void 0 : K.pageInfo.endCursor) && void 0 !== Y ? Y : null,
+						comments: null !== (X = null === (J = null === (Q = null === ($ = t.data.search) || void 0 === $ ? void 0 : $.general) || void 0 === Q ? void 0 : Q.comments) || void 0 === J ? void 0 : J.pageInfo.endCursor) && void 0 !== X ? X : null,
+						communities: null !== (ie = null === (te = null === (ee = null === (Z = t.data.search) || void 0 === Z ? void 0 : Z.general) || void 0 === ee ? void 0 : ee.communities) || void 0 === te ? void 0 : te.pageInfo.endCursor) && void 0 !== ie ? ie : null,
 						listings: null,
-						posts: null !== (se = null === (re = null === (ne = null === (ie = t.data.search) || void 0 === ie ? void 0 : ie.general) || void 0 === ne ? void 0 : ne.posts) || void 0 === re ? void 0 : re.pageInfo.endCursor) && void 0 !== se ? se : null
-					}, xe = {
-						authors: e[n.bc.Users] ? null !== (null === (de = null === (oe = t.data.search) || void 0 === oe ? void 0 : oe.general) || void 0 === de ? void 0 : de.authors) : void 0,
-						comments: e[n.bc.Comments] ? null !== (null === (le = null === (ae = t.data.search) || void 0 === ae ? void 0 : ae.general) || void 0 === le ? void 0 : le.comments) : void 0,
-						communities: e[n.bc.Subreddits] ? null !== (null === (ce = null === (ue = t.data.search) || void 0 === ue ? void 0 : ue.general) || void 0 === ce ? void 0 : ce.communities) : void 0,
-						posts: e[n.bc.Posts] ? null !== (null === (me = null === (_e = t.data.search) || void 0 === _e ? void 0 : _e.general) || void 0 === me ? void 0 : me.posts) : void 0
-					}, De = {
-						[n.ac.Posts]: null != Be ? Be : void 0
+						posts: null !== (oe = null === (se = null === (re = null === (ne = t.data.search) || void 0 === ne ? void 0 : ne.general) || void 0 === re ? void 0 : re.posts) || void 0 === se ? void 0 : se.pageInfo.endCursor) && void 0 !== oe ? oe : null
+					}, ke = {
+						authors: e[n.bc.Users] ? null !== (null === (ae = null === (de = t.data.search) || void 0 === de ? void 0 : de.general) || void 0 === ae ? void 0 : ae.authors) : void 0,
+						comments: e[n.bc.Comments] ? null !== (null === (ue = null === (le = t.data.search) || void 0 === le ? void 0 : le.general) || void 0 === ue ? void 0 : ue.comments) : void 0,
+						communities: e[n.bc.Subreddits] ? null !== (null === (_e = null === (ce = t.data.search) || void 0 === ce ? void 0 : ce.general) || void 0 === _e ? void 0 : _e.communities) : void 0,
+						posts: e[n.bc.Posts] ? null !== (null === (pe = null === (me = t.data.search) || void 0 === me ? void 0 : me.general) || void 0 === pe ? void 0 : pe.posts) : void 0
+					}, Le = {
+						[n.ac.Posts]: null != Ge ? Ge : void 0
 					}
 				}
 				return {
 					account: null,
-					authorOrder: Te,
-					commentOrder: Re,
-					comments: Ie,
+					authorOrder: Ie,
+					commentOrder: Ne,
+					comments: Ce,
 					listingOrder: [],
-					postOrder: fe,
-					communityOrder: ye,
+					postOrder: ge,
+					communityOrder: Se,
 					posts: {
-						...he,
-						...Ce
+						...fe,
+						...je
 					},
-					profileAboutInfo: Oe,
-					profiles: Se,
-					structuredStyles: je,
-					searchDiscoveryUnits: ge,
-					searchDiscoveryUnitOrder: we,
+					postFlair: {
+						...be,
+						...Fe
+					},
+					profileAboutInfo: Re,
+					profiles: Oe,
+					structuredStyles: De,
+					searchDiscoveryUnits: ve,
+					searchDiscoveryUnitOrder: ye,
 					subreddits: {
-						...ve,
-						...Ne
+						...Ee,
+						...Ae
 					},
-					subredditAboutInfo: Ee,
-					success: xe,
-					tokens: Fe,
-					treatment: De,
-					viewTreatment: Ae
+					subredditAboutInfo: Te,
+					success: ke,
+					tokens: xe,
+					treatment: Le,
+					viewTreatment: Pe
 				}
 			}
-			const F = 10,
-				j = 50;
-			async function A({
+			const j = 10,
+				A = 50;
+			async function x({
 				context: e,
 				isSerpRedesignLayoutM3: t,
 				multiredditLabel: i,
@@ -19237,7 +19246,7 @@
 						value: null != i ? i : null
 					}, {
 						key: "subreddit_names",
-						value: null !== (h = I(_)) && void 0 !== h ? h : null
+						value: null !== (h = R(_)) && void 0 !== h ? h : null
 					}, {
 						key: "time_range",
 						value: (null == u ? void 0 : u.t) && "all" !== (null == u ? void 0 : u.t) ? null == u ? void 0 : u.t : null
@@ -19259,10 +19268,10 @@
 					S = v[n.bc.Subreddits],
 					T = v[n.bc.Users],
 					O = v[n.bc.Comments] && !!t,
-					C = E && S && T,
-					A = {
+					I = E && S && T,
+					N = {
 						query: null !== (g = null == u ? void 0 : u.q) && void 0 !== g ? g : "",
-						sort: (null == u ? void 0 : u.sort) ? R[null == u ? void 0 : u.sort] : null,
+						sort: (null == u ? void 0 : u.sort) ? C[null == u ? void 0 : u.sort] : null,
 						filters: w,
 						productSurface: `${a.TelemetryAppName.web2x}`,
 						includePosts: E,
@@ -19274,22 +19283,22 @@
 						authorsAfter: m.authors,
 						commentsAfter: m.comments,
 						searchInput: y,
-						...C && {
-							communityRows: F,
-							authorRows: j
+						...I && {
+							communityRows: j,
+							authorRows: A
 						},
 						communitySearch: Boolean(_),
 						subredditNames: _
 					},
 					x = await Object(r.a)(e, {
 						...d,
-						variables: A
+						variables: N
 					}, {
 						traceRequestName: "general_search"
 					});
 				return {
 					...x,
-					body: N(v, x.body)
+					body: F(v, x.body)
 				}
 			}
 		},
@@ -22105,6 +22114,38 @@
 				tournamentId: l,
 				userWonAmount: u,
 				resolvedOptionId: c
+			})
+		},
+		"./src/reddit/helpers/graphql/normalizePostFlairFromGql/index.ts": function(e, t, i) {
+			"use strict";
+			var n = i("./src/reddit/models/Flair/index.ts");
+
+			function r(e) {
+				switch (e) {
+					case n.h.LEFT:
+						return n.b.Left;
+					case n.h.RIGHT:
+						return n.b.Right;
+					default:
+						return null
+				}
+			}
+
+			function s({
+				isEnabled: e = !1,
+				position: t
+			}) {
+				return {
+					isEnabled: e,
+					position: r(t)
+				}
+			}
+			t.a = ({
+				postFlairSettings: e
+			}) => ({
+				...e && {
+					displaySettings: e && s(e)
+				}
 			})
 		},
 		"./src/reddit/helpers/graphql/normalizePostFromGql/index.ts": function(e, t, i) {
@@ -47279,4 +47320,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1e0e695713b5bb10c40b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.eadd2442347ff89f671a.js.map
