@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.26ddb58b0bc8d5a84701.js
-// Retrieved at 2/14/2022, 6:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d4e559585e16298f6f85.js
+// Retrieved at 2/14/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(t, e, o) {
@@ -755,44 +755,47 @@
 				duration: l.a
 			};
 			e.default = t => {
-				var e, o, r, j, y, C, h, R, T;
-				const E = Object(i.d)(),
+				var e, o, r, j, y, C, h, R, T, E;
+				const _ = Object(i.d)(),
 					{
-						context: _,
-						deeplinkUrl: S,
-						isFullWidth: g,
-						isUnread: N,
-						isInboxCTAsAllEnabled: v,
-						isInboxCTAsReplyEnabled: k,
-						isInboxCTAsSeePostEnabled: A,
-						isNightMode: D,
-						notificationId: P,
-						onEvent: w
+						context: S,
+						deeplinkUrl: g,
+						isFullWidth: N,
+						isUnread: v,
+						isInboxCTAsAllEnabled: k,
+						isInboxCTAsReplyEnabled: A,
+						isInboxCTAsSeePostEnabled: D,
+						isNightMode: P,
+						notificationId: w,
+						onEvent: K
 					} = t,
-					K = null == _ ? void 0 : _.messageType,
-					M = null === (e = null == _ ? void 0 : _.post) || void 0 === e ? void 0 : e.permalink,
-					L = K === p.a.PostReply ? P : null === (o = null == _ ? void 0 : _.comment) || void 0 === o ? void 0 : o.id,
-					U = (null === (r = null == _ ? void 0 : _.post) || void 0 === r ? void 0 : r.id) || (null === (y = null === (j = null == _ ? void 0 : _.comment) || void 0 === j ? void 0 : j.postInfo) || void 0 === y ? void 0 : y.id),
-					F = null === (h = null === (C = null == _ ? void 0 : _.awarding) || void 0 === C ? void 0 : C.award) || void 0 === h ? void 0 : h.id,
-					W = null === (T = null === (R = null == _ ? void 0 : _.awarding) || void 0 === R ? void 0 : R.awarder) || void 0 === T ? void 0 : T.id;
+					M = null == S ? void 0 : S.messageType,
+					L = null === (e = null == S ? void 0 : S.post) || void 0 === e ? void 0 : e.permalink,
+					U = M === p.a.PostReply ? w : null === (o = null == S ? void 0 : S.comment) || void 0 === o ? void 0 : o.id,
+					F = (null === (r = null == S ? void 0 : S.post) || void 0 === r ? void 0 : r.id) || (null === (y = null === (j = null == S ? void 0 : S.comment) || void 0 === j ? void 0 : j.postInfo) || void 0 === y ? void 0 : y.id),
+					W = null === (C = null == S ? void 0 : S.subreddit) || void 0 === C ? void 0 : C.id,
+					B = null === (R = null === (h = null == S ? void 0 : S.awarding) || void 0 === h ? void 0 : h.award) || void 0 === R ? void 0 : R.id,
+					J = null === (E = null === (T = null == S ? void 0 : S.awarding) || void 0 === T ? void 0 : T.awarder) || void 0 === E ? void 0 : E.id;
 				return (() => {
-					switch (K) {
+					switch (M) {
 						case p.a.LifecyclePostSuggestions:
 						case p.a.SubredditRecommendation: {
-							if (!A && !v) return null;
+							if (!D && !k) return null;
 							const t = t => {
-								M ? w({
-									position: f.d.SECOND
-								}) : (t.preventDefault(), E(Object(l.f)(I)))
+								L ? K({
+									position: f.d.SECOND,
+									postId: F,
+									subredditId: W
+								}) : (t.preventDefault(), _(Object(l.f)(I)))
 							};
 							return s.a.createElement(u.t, {
 								onClick: t,
-								isFullWidth: g,
+								isFullWidth: N,
 								priority: u.c.Tertiary,
 								redditStyle: !0,
 								className: Object(c.a)(x.a.notificationButton, {
-									[x.a.isUnread]: N,
-									[x.a.isNightMode]: D
+									[x.a.isUnread]: v,
+									[x.a.isNightMode]: P
 								})
 							}, s.a.createElement(O.a, {
 								name: "text_post",
@@ -803,27 +806,27 @@
 						}
 						case p.a.PostReply:
 						case p.a.CommentReply: {
-							if (!k && !v) return null;
+							if (!A && !k) return null;
 							const t = t => {
-								if (U && L) {
-									const t = Object(d.a)(U, L, Object(b.c)(S)),
+								if (F && U) {
+									const t = Object(d.a)(F, U, Object(b.c)(g)),
 										e = {
-											parentCommentId: L,
+											parentCommentId: U,
 											commentsPageKey: t
 										};
-									E(Object(a.g)(e)), w({
+									_(Object(a.g)(e)), K({
 										position: f.d.SECOND
 									})
-								} else t.preventDefault(), E(Object(l.f)(I))
+								} else t.preventDefault(), _(Object(l.f)(I))
 							};
 							return s.a.createElement(u.t, {
 								onClick: t,
-								isFullWidth: g,
+								isFullWidth: N,
 								priority: u.c.Tertiary,
 								redditStyle: !0,
 								className: Object(c.a)(x.a.notificationButton, {
-									[x.a.isUnread]: N,
-									[x.a.isNightMode]: D
+									[x.a.isUnread]: v,
+									[x.a.isNightMode]: P
 								})
 							}, s.a.createElement(O.a, {
 								name: "reply",
@@ -833,24 +836,24 @@
 							}))
 						}
 						case p.a.AwardReceived: {
-							if (!W) return null;
+							if (!J) return null;
 							const t = t => {
-								t.preventDefault(), W ? w({
+								t.preventDefault(), J ? K({
 									position: f.d.SECOND,
-									awardId: F
-								}) : E(Object(l.f)(I))
+									awardId: B
+								}) : _(Object(l.f)(I))
 							};
 							return s.a.createElement(m.b, {
-								userId: W,
-								contextId: W,
+								userId: J,
+								contextId: J,
 								onClick: t,
-								isFullWidth: g,
+								isFullWidth: N,
 								priority: u.c.Tertiary,
 								redditStyle: !0,
 								eventSource: m.a.awardNotification,
 								className: Object(c.a)(x.a.notificationButton, {
-									[x.a.isUnread]: N,
-									[x.a.isNightMode]: D
+									[x.a.isUnread]: v,
+									[x.a.isNightMode]: P
 								})
 							}, s.a.createElement(O.a, {
 								name: "chat_new",
@@ -1087,4 +1090,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.26ddb58b0bc8d5a84701.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d4e559585e16298f6f85.js.map
