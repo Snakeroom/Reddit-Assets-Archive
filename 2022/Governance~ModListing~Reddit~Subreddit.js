@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d9a52ad4d66d4a7a899e.js
-// Retrieved at 2/14/2022, 9:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.7fa70aba1c283de73720.js
+// Retrieved at 2/14/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -667,45 +667,46 @@
 				v = d.a.div("BackupImage", j.a),
 				x = Object(b.u)();
 			t.b = x(e => {
-				const t = Object(i.e)(O.X);
-				let r, c, d;
+				var t;
+				const r = Object(i.e)(O.X);
+				let c, d, l;
 				if (e.subredditOrProfile) {
 					const {
 						url: t,
-						color: s
+						color: r
 					} = Object(m.a)({
 						shouldHideNsfwIcon: !!e.shouldHideNsfwIcon,
 						subredditOrProfile: e.subredditOrProfile
 					});
-					Object(f.h)(e.subredditOrProfile) ? d = o.a.createElement(I, {
+					Object(f.h)(e.subredditOrProfile) ? l = o.a.createElement(I, {
 						className: e.className,
 						iconUrl: t,
 						isNSFW: e.subredditOrProfile.isNSFW,
 						userName: e.subredditOrProfile.name
-					}) : (r = t, c = s)
-				} else r = e.shouldHideNsfwIcon ? `${s.a.assetPath}/img/avatar_over18.png` : e.iconUrl, c = e.primaryColor || u.a.alienblue;
-				return r ? d = o.a.createElement(S, {
+					}) : (c = t, d = r)
+				} else c = e.shouldHideNsfwIcon ? `${s.a.assetPath}/img/avatar_over18.png` : e.iconUrl, d = e.primaryColor || u.a.alienblue;
+				return c ? l = o.a.createElement(S, {
 					alt: n.fbt._("Subreddit Icon", null, {
 						hk: "134aM1"
 					}),
 					className: e.className,
-					iconColor: c,
+					iconColor: d,
 					role: "presentation",
-					src: r
-				}) : d || (d = o.a.createElement(p.a, {
+					src: c
+				}) : l || (l = o.a.createElement(p.a, {
 					name: "community",
-					isFilled: !t,
+					isFilled: !r,
 					className: Object(a.a)(e.className, j.a.defaultCommunityIcon, {
-						[j.a.mNightmode]: t
+						[j.a.mNightmode]: r
 					}),
-					style: t ? {
-						backgroundColor: e.redditStyle ? u.a.alienblue : c
+					style: r ? {
+						backgroundColor: e.redditStyle ? u.a.alienblue : d
 					} : {
-						color: e.redditStyle ? u.a.alienblue : c
+						color: e.redditStyle ? u.a.alienblue : d
 					}
-				})), e.linkTo ? o.a.createElement("a", {
+				})), e.linkTo ? o.a.createElement("a", g({}, null !== (t = e.linkProps) && void 0 !== t ? t : {}, {
 					href: e.linkTo
-				}, d) : o.a.createElement(o.a.Fragment, null, d)
+				}), l) : o.a.createElement(o.a.Fragment, null, l)
 			})
 		},
 		"./src/reddit/components/TrackingHelper/index.tsx": function(e, t, r) {
@@ -2261,4 +2262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.d9a52ad4d66d4a7a899e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.7fa70aba1c283de73720.js.map

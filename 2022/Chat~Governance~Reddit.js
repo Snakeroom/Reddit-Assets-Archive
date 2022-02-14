@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.74f22e38066e653b06f1.js
-// Retrieved at 2/14/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.647978835bd3388f8b66.js
+// Retrieved at 2/14/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("158155"),
+				buildNumber: Object(r.c)("158160"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1644856245"),
+				buildTimestamp: Object(r.b)("1644859530"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6064,14 +6064,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c64962c6635b9ef16b87e4bbc52ecf326ab25388b-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ca1918ca1ba800324c3b5235bd9978b1a0dd0a532-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "64962c6635b9ef16b87e4bbc52ecf326ab25388b-production",
+						release: "a1918ca1ba800324c3b5235bd9978b1a0dd0a532-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6588,7 +6588,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "64962c6635b9ef16b87e4bbc52ecf326ab25388b-production",
+						releaseClient: "a1918ca1ba800324c3b5235bd9978b1a0dd0a532-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -26652,50 +26652,52 @@
 				return h
 			})), i.d(t, "e", (function() {
 				return b
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "u", (function() {
 				return g
 			})), i.d(t, "k", (function() {
 				return w
-			})), i.d(t, "v", (function() {
-				return v
-			})), i.d(t, "u", (function() {
-				return y
 			})), i.d(t, "w", (function() {
+				return v
+			})), i.d(t, "v", (function() {
+				return y
+			})), i.d(t, "x", (function() {
 				return E
-			})), i.d(t, "y", (function() {
+			})), i.d(t, "z", (function() {
 				return S
 			})), i.d(t, "b", (function() {
 				return O
 			})), i.d(t, "l", (function() {
 				return I
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "y", (function() {
 				return R
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "q", (function() {
 				return C
 			})), i.d(t, "i", (function() {
 				return N
 			})), i.d(t, "j", (function() {
 				return F
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "p", (function() {
 				return j
+			})), i.d(t, "o", (function() {
+				return A
 			})), i.d(t, "h", (function() {
-				return x
-			})), i.d(t, "g", (function() {
 				return D
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "g", (function() {
 				return P
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "t", (function() {
 				return k
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "s", (function() {
 				return L
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "d", (function() {
 				return B
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "f", (function() {
 				return M
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "m", (function() {
 				return U
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "n", (function() {
 				return G
+			})), i.d(t, "r", (function() {
+				return q
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/reddit/constants/posts.ts"),
@@ -26863,7 +26865,7 @@
 				},
 				F = (e, t, i, n, r, o) => {
 					const a = _.H(e, n),
-						l = A(e, t, r, o),
+						l = x(e, t, r, o),
 						u = _.f(e, i, r, o, a),
 						c = null !== l ? u + l : null,
 						m = _.ib(n),
@@ -26884,7 +26886,7 @@
 						discoveryUnit: o ? _.p(o) : null
 					}
 				},
-				j = (e, t, i, n, r, o) => d => x({
+				j = (e, t, i, n, r, o) => d => D({
 					action: s.c.CLICK,
 					state: d,
 					searchOptions: e,
@@ -26894,11 +26896,28 @@
 					postId: r,
 					discoveryUnit: o
 				}),
-				A = (e, t, i, n) => {
+				A = ({
+					comment: e,
+					key: t,
+					originElement: i,
+					pageLayer: n,
+					postId: r,
+					searchOptions: o
+				}) => d => P({
+					action: s.c.CLICK,
+					comment: e,
+					key: t,
+					originElement: i,
+					pageLayer: n,
+					postId: r,
+					searchOptions: o,
+					state: d
+				}),
+				x = (e, t, i, n) => {
 					var r;
 					return (null === (r = null == n ? void 0 : n.layout) || void 0 === r ? void 0 : r.viewTypeWeb) === a.b.Hero ? 0 : (null == n ? void 0 : n.postOrder) ? n.postOrder.indexOf(t) >= 0 ? n.postOrder.indexOf(t) : null : i ? _.y(e, t, i) : null
 				},
-				x = ({
+				D = ({
 					action: e,
 					state: t,
 					searchOptions: i,
@@ -26916,7 +26935,7 @@
 					const c = _.H(t, n);
 					let m;
 					if (a) {
-						const e = A(t, a, o, l),
+						const e = x(t, a, o, l),
 							n = _.f(t, i, o, l, c);
 						m = null !== e ? n + e : null
 					} else m = o ? _.z(t, s, o) : null;
@@ -26940,7 +26959,7 @@
 						post: a ? _.J(t, a) : void 0
 					}
 				},
-				D = ({
+				P = ({
 					action: e,
 					comment: t,
 					key: i,
@@ -26981,11 +27000,11 @@
 						post: _.J(o, t.postId)
 					}
 				},
-				P = (e, t, i, n, r) => o => ({
+				k = (e, t, i, n, r) => o => ({
 					...F(o, t, i, n, e, r),
 					action: s.c.VIEW
 				}),
-				k = (e, t, i, n) => r => ({
+				L = (e, t, i, n) => r => ({
 					...b(r, i),
 					source: p.SEARCH,
 					action: s.c.VIEW,
@@ -27003,7 +27022,7 @@
 					},
 					post: _.J(r, t)
 				}),
-				L = (e, t) => i => ({
+				B = (e, t) => i => ({
 					...b(i, t),
 					source: p.SEARCH,
 					action: e,
@@ -27012,7 +27031,7 @@
 					actionInfo: _.d(i),
 					search: _.cb(i, t, d.a.SERP)
 				}),
-				B = e => ({
+				M = e => ({
 					action: s.c.DISABLE,
 					noun: h.SUBREDDIT_SEARCH,
 					source: p.SEARCH,
@@ -27024,7 +27043,7 @@
 					}
 				});
 
-			function M(e, t) {
+			function U(e, t) {
 				return i => ({
 					...b(i, t),
 					source: p.SEARCH,
@@ -27036,7 +27055,7 @@
 				})
 			}
 
-			function U(e, t, i, n, r) {
+			function G(e, t, i, n, r) {
 				return o => ({
 					...b(o),
 					source: p.SEARCH,
@@ -27047,7 +27066,7 @@
 				})
 			}
 
-			function G(e, t, i, n) {
+			function q(e, t, i, n) {
 				return r => ({
 					...b(r),
 					source: p.SEARCH,
@@ -47260,4 +47279,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.74f22e38066e653b06f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.647978835bd3388f8b66.js.map
