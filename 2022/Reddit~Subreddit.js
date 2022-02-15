@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.abc20ba01184054882ea.js
-// Retrieved at 2/14/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.bc9cafb7e0dbee142619.js
+// Retrieved at 2/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~Subreddit"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -136,7 +136,7 @@
 			})), n.d(t, "c", (function() {
 				return S
 			})), n.d(t, "b", (function() {
-				return w
+				return k
 			}));
 			var i, s = n("./src/lib/makeActionCreator/index.ts"),
 				r = n("./src/lib/performanceTimings/index.tsx"),
@@ -236,7 +236,7 @@
 						n = t && t.focusRecommendations,
 						i = t && t.type;
 					return !!(n && !j(e) && i === d.GEO && n[0] && n[0].recommendedSubreddit && n[0].interactedSubreddit)
-				}, w = () => async (e, t, n) => {
+				}, k = () => async (e, t, n) => {
 					var i, s;
 					const o = t(),
 						a = Object(b.g)(o);
@@ -265,7 +265,7 @@
 			})), n.d(t, "c", (function() {
 				return j
 			})), n.d(t, "b", (function() {
-				return w
+				return k
 			}));
 			var i = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -379,7 +379,7 @@
 				v = Object(s.a)(r.i),
 				j = Object(s.a)(r.k),
 				E = Object(s.a)(r.h),
-				w = e => async (t, n, {
+				k = e => async (t, n, {
 					gqlContext: i
 				}) => {
 					var s, r;
@@ -452,7 +452,7 @@
 			})), n.d(t, "j", (function() {
 				return K
 			})), n.d(t, "g", (function() {
-				return Q
+				return z
 			}));
 			var i = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -484,8 +484,8 @@
 				v = n("./src/reddit/helpers/trackers/inbox.ts"),
 				j = n("./src/reddit/models/Badge/index.ts"),
 				E = n("./src/reddit/models/NotificationInbox/index.ts"),
-				w = n("./src/reddit/models/Toast/index.ts"),
-				k = n("./src/reddit/selectors/appBadges.ts"),
+				k = n("./src/reddit/models/Toast/index.ts"),
+				w = n("./src/reddit/selectors/appBadges.ts"),
 				I = (n("./src/reddit/selectors/notificationPrefs.ts"), n("./src/reddit/selectors/notificationsInbox.tsx"));
 			const _ = Object(s.a)(o.e),
 				N = Object(s.a)(o.b),
@@ -586,10 +586,10 @@
 						const s = Object(I.f)(n());
 						t(F(s)), t(Object(c.f)(Object(c.e)(i.fbt._("Notification hidden", null, {
 							hk: "1jfPqO"
-						}), w.b.SuccessCommunityGreen)))
+						}), k.b.SuccessCommunityGreen)))
 					} else t(Object(c.f)(Object(c.e)(i.fbt._("Failed to hide notification, please try again.", null, {
 						hk: "fL7uB"
-					}), w.b.Error)))
+					}), k.b.Error)))
 				}, G = (e, t) => async (n, s, {
 					gqlContext: r
 				}) => {
@@ -599,9 +599,9 @@
 						isUpdateFromSubredditEnabled: !0
 					})).ok ? (t && t(), n(Object(c.f)(Object(c.e)(i.fbt._("Success! Undone hiding notifications from this community.", null, {
 						hk: "1na0NP"
-					}), w.b.SuccessCommunityGreen)))) : n(Object(c.f)(Object(c.e)(i.fbt._("Failed to undo hiding notifications, please try again.", null, {
+					}), k.b.SuccessCommunityGreen)))) : n(Object(c.f)(Object(c.e)(i.fbt._("Failed to undo hiding notifications, please try again.", null, {
 						hk: "4jo7Pf"
-					}), w.b.Error)))
+					}), k.b.Error)))
 				}, U = (e, t) => async (n, s, {
 					gqlContext: r
 				}) => {
@@ -613,12 +613,12 @@
 						const n = i.fbt._("Success! You won't see notifications from this community in the future.", null, {
 							hk: "2tkhbk"
 						});
-						return Object(c.f)(Object(c.e)(n, w.b.Undo, i.fbt._("Undo", null, {
+						return Object(c.f)(Object(c.e)(n, k.b.Undo, i.fbt._("Undo", null, {
 							hk: "4zFGDk"
 						}), G(e, t)))
 					})()) : n(Object(c.f)(Object(c.e)(i.fbt._("Failed to hide notifications, please try again.", null, {
 						hk: "KEGcB"
-					}), w.b.Error)))
+					}), k.b.Error)))
 				}, V = e => async (t, n, {
 					apiContext: s
 				}) => {
@@ -631,9 +631,9 @@
 						}
 					}))(s(), e)).ok ? t(Object(c.f)(Object(c.e)(i.fbt._("Success! You won't see updates on this in the future", null, {
 						hk: "wtDa4"
-					}), w.b.SuccessCommunityGreen))) : t(Object(c.f)(Object(c.e)(i.fbt._("Failed to turn off updates on this, please try again", null, {
+					}), k.b.SuccessCommunityGreen))) : t(Object(c.f)(Object(c.e)(i.fbt._("Failed to turn off updates on this, please try again", null, {
 						hk: "1zhpEy"
-					}), w.b.Error)))
+					}), k.b.Error)))
 				}, W = e => async (t, n, {
 					gqlContext: s
 				}) => {
@@ -642,9 +642,9 @@
 						awardingId: e
 					})).ok ? t(Object(c.f)(Object(c.e)(i.fbt._("Success! Awarder has been blocked", null, {
 						hk: "2D5PUk"
-					}), w.b.SuccessCommunityGreen))) : t(Object(c.f)(Object(c.e)(i.fbt._("Failed to block awarder, please try again", null, {
+					}), k.b.SuccessCommunityGreen))) : t(Object(c.f)(Object(c.e)(i.fbt._("Failed to block awarder, please try again", null, {
 						hk: "2dxeA8"
-					}), w.b.Error)))
+					}), k.b.Error)))
 				}, H = Object(s.a)(o.d), q = (e, t) => async (n, i, {
 					apiContext: s
 				}) => {
@@ -657,7 +657,7 @@
 									id: t
 								}
 							}))(s(), e)).ok) {
-							let e = Object(k.a)(i());
+							let e = Object(w.a)(i());
 							if (e > 0) {
 								e--;
 								const t = Object(r.e)({
@@ -698,7 +698,7 @@
 							n = t && t.data && t.data.updateInboxActivitySeenState && t.data.updateInboxActivitySeenState.badgeIndicators;
 						n && (e(Object(r.a)(n)), e(Object(a.d)()))
 					}
-				}, J = Object(s.a)(o.c), Q = () => async (e, t, {
+				}, J = Object(s.a)(o.c), z = () => async (e, t, {
 					apiContext: n
 				}) => {
 					const {
@@ -730,7 +730,7 @@
 							}))
 						} else e(Object(c.f)(Object(c.e)(i.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
 							hk: "VW7c3"
-						}), w.b.Error)))
+						}), k.b.Error)))
 					}
 				}
 		},
@@ -1101,6 +1101,8 @@
 				column: "_3f2nSSsPBqVDV6Sz82qgrR",
 				Link: "_3Eyh3vRo5o4IfzVZXhaWAG",
 				link: "_3Eyh3vRo5o4IfzVZXhaWAG",
+				NoneCapitalizeLink: "_3GijmRx58E2GzbuzKVHDex",
+				noneCapitalizeLink: "_3GijmRx58E2GzbuzKVHDex",
 				Copyright: "_34dh2eyzMvJfjCBLeoWiDD",
 				copyright: "_34dh2eyzMvJfjCBLeoWiDD",
 				CountryLinkContainer: "_2G12SFsZiv6I_UJCbuf7qR",
@@ -1197,7 +1199,7 @@
 				href: "https://www.reddit.com/topics/a-1/"
 			}, y._("Topics", null, {
 				hk: "349RFt"
-			})), !!l.b[e.countryCode] && s.a.createElement(s.a.Fragment, null, s.a.createElement(C, {
+			}))), !!l.b[e.countryCode] && s.a.createElement(s.a.Fragment, null, s.a.createElement(C, {
 				href: "https://www.redditinc.com/de/policies/user-agreement"
 			}, y._("Impressum", null, {
 				hk: "4cKXSI"
@@ -1206,10 +1208,11 @@
 			}, y._("Transparency report", null, {
 				hk: "3CgBdG"
 			})), s.a.createElement(C, {
-				href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352"
-			}, y._("Report NetzDG content", null, {
-				hk: "3nLBs5"
-			}))))), s.a.createElement("div", {
+				href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
+				className: x.a.NoneCapitalizeLink
+			}, y._("Report NetzDG Content", null, {
+				hk: "1nszCF"
+			})))), s.a.createElement("div", {
 				className: x.a.Column
 			}, s.a.createElement(C, {
 				href: "https://about.reddit.com"
@@ -1348,8 +1351,8 @@
 			const v = c.e[1] + 24,
 				j = g.f + 8,
 				E = j + 152 + 16,
-				w = E + v + 8,
-				k = S.a.div("Container", C.a),
+				k = E + v + 8,
+				w = S.a.div("Container", C.a),
 				I = S.a.wrapped(({
 					className: e,
 					isOverlay: t,
@@ -1375,7 +1378,7 @@
 			class N extends o.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
-						shouldAdSticky: this.windowHeight > w,
+						shouldAdSticky: this.windowHeight > k,
 						shouldFooterSticky: this.windowHeight > E
 					}), this.updateState = () => {
 						if (this.isHidden()) return;
@@ -1417,7 +1420,7 @@
 							pageLayer: o
 						}
 					} = this, c = this.state.isAdSticky && !(!t && !i);
-					return a.a.createElement(k, {
+					return a.a.createElement(w, {
 						className: s,
 						innerRef: this.setWrapperRef
 					}, a.a.createElement(_, {
@@ -1620,14 +1623,14 @@
 				}).apply(this, arguments)
 			}
 			const E = 129,
-				w = Object(f.u)({
+				k = Object(f.u)({
 					filterName: e => Object(f.W)(e)[m.g],
 					url: e => Object(f.eb)(e)
 				}),
-				k = Object(a.c)({
+				w = Object(a.c)({
 					subredditId: (e, t) => Object(S.C)(e, t.subredditName)
 				}),
-				I = Object(o.b)(k),
+				I = Object(o.b)(w),
 				_ = l.a.div("WidgetContent", v.a),
 				N = ({
 					display: e,
@@ -1748,7 +1751,7 @@
 					}, r.a.createElement(_, null, o && this.renderSelectedFlairFilter(o), !o && this.renderFlairFilters(s), a && this.renderButton()))
 				}
 			}
-			t.a = w(I(Object(b.c)(T)))
+			t.a = k(I(Object(b.c)(T)))
 		},
 		"./src/reddit/components/Widgets/ThemedWidget/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1796,8 +1799,8 @@
 			var j = n("./src/reddit/components/Widgets/ThemedWidget/index.m.less"),
 				E = n.n(j);
 			const {
-				fbt: w
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), k = Object(u.u)(), I = Object(r.b)(() => Object(o.c)({
+				fbt: k
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), w = Object(u.u)(), I = Object(r.b)(() => Object(o.c)({
 				forceRedditStyle: (e, t) => {
 					const n = Object(u.n)(e, t) || void 0,
 						i = t.redditStyle || Object(h.l)(e, {
@@ -1884,12 +1887,12 @@
 					}, e), this.state.isTruncated && s.a.createElement(b.r, {
 						className: E.a.seeMore,
 						onClick: this.handleSeeMoreClick
-					}, w._("See More", null, {
+					}, k._("See More", null, {
 						hk: "4w47Qu"
 					})))
 				}
 			}
-			t.a = k(I(Object(c.a)(Object(l.c)(_))))
+			t.a = w(I(Object(c.a)(Object(l.c)(_))))
 		},
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, n) {
 			"use strict";
@@ -1898,7 +1901,7 @@
 			})), n.d(t, "d", (function() {
 				return E
 			})), n.d(t, "b", (function() {
-				return k
+				return w
 			}));
 			var i = n("./node_modules/react-redux/es/index.js"),
 				s = n("./node_modules/reselect/es/index.js"),
@@ -1951,8 +1954,8 @@
 					postListPlaceholderComponent: () => h.a,
 					isNpsScrollSurveyEnabled: x.e
 				},
-				w = Object(s.c)(E),
-				k = e => ({
+				k = Object(s.c)(E),
+				w = e => ({
 					onBottomViewed: (t, n) => e(l.c(t, n)),
 					onFirstPostChanged: t => e(Object(c.a)(t)),
 					adBrandSafetyStatusReceived: t => {
@@ -1988,7 +1991,7 @@
 					} = i;
 					return Object(f.h)(e, t, "post", s, r, o, void 0)
 				},
-				N = Object(i.b)(w, k, (e, t, n) => ({
+				N = Object(i.b)(k, w, (e, t, n) => ({
 					...e,
 					...t,
 					...n,
@@ -2417,9 +2420,9 @@
 			})), n.d(t, "m", (function() {
 				return E
 			})), n.d(t, "i", (function() {
-				return w
-			})), n.d(t, "h", (function() {
 				return k
+			})), n.d(t, "h", (function() {
+				return w
 			})), n.d(t, "g", (function() {
 				return I
 			})), n.d(t, "q", (function() {
@@ -2688,13 +2691,13 @@
 						pageType: r.MiniInbox
 					}
 				}),
-				w = () => e => ({
+				k = () => e => ({
 					...l.o(e),
 					action: d.c.CLICK,
 					noun: "messages",
 					source: o.Inbox
 				}),
-				k = ({
+				w = ({
 					isMiniInbox: e
 				}) => t => ({
 					...l.o(t),
@@ -3010,8 +3013,8 @@
 					isCollectionLayout: v,
 					isPageSwapped: j,
 					maxWidth: E,
-					navBar: w,
-					redditStyle: k,
+					navBar: k,
+					redditStyle: w,
 					sidebar: I,
 					sidebars: _,
 					trendingUnit: N,
@@ -3046,11 +3049,11 @@
 					ref: p
 				}, s.a.createElement(r.a, {
 					className: d.h,
-					redditStyle: k,
+					redditStyle: w,
 					backgroundColor: t
 				}), s.a.createElement("div", {
 					className: m.a.innerContainer
-				}, w, x, (e => e.hero ? s.a.createElement(s.a.Fragment, null, e.hero) : null)(e), s.a.createElement("div", {
+				}, k, x, (e => e.hero ? s.a.createElement(s.a.Fragment, null, e.hero) : null)(e), s.a.createElement("div", {
 					style: {
 						maxWidth: B
 					}
@@ -3470,4 +3473,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.abc20ba01184054882ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.bc9cafb7e0dbee142619.js.map

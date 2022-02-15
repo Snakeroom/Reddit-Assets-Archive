@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.77f9804c6e8012161f49.js
-// Retrieved at 2/14/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.9b812d6caba7bc6bb653.js
+// Retrieved at 2/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -9823,6 +9823,8 @@
 				column: "_3f2nSSsPBqVDV6Sz82qgrR",
 				Link: "_3Eyh3vRo5o4IfzVZXhaWAG",
 				link: "_3Eyh3vRo5o4IfzVZXhaWAG",
+				NoneCapitalizeLink: "_3GijmRx58E2GzbuzKVHDex",
+				noneCapitalizeLink: "_3GijmRx58E2GzbuzKVHDex",
 				Copyright: "_34dh2eyzMvJfjCBLeoWiDD",
 				copyright: "_34dh2eyzMvJfjCBLeoWiDD",
 				CountryLinkContainer: "_2G12SFsZiv6I_UJCbuf7qR",
@@ -9919,7 +9921,7 @@
 				href: "https://www.reddit.com/topics/a-1/"
 			}, E._("Topics", null, {
 				hk: "349RFt"
-			})), !!d.b[e.countryCode] && s.a.createElement(s.a.Fragment, null, s.a.createElement(x, {
+			}))), !!d.b[e.countryCode] && s.a.createElement(s.a.Fragment, null, s.a.createElement(x, {
 				href: "https://www.redditinc.com/de/policies/user-agreement"
 			}, E._("Impressum", null, {
 				hk: "4cKXSI"
@@ -9928,10 +9930,11 @@
 			}, E._("Transparency report", null, {
 				hk: "3CgBdG"
 			})), s.a.createElement(x, {
-				href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352"
-			}, E._("Report NetzDG content", null, {
-				hk: "3nLBs5"
-			}))))), s.a.createElement("div", {
+				href: "https://reddit.zendesk.com/hc/de/requests/new?ticket_form_id=360000152352",
+				className: C.a.NoneCapitalizeLink
+			}, E._("Report NetzDG Content", null, {
+				hk: "1nszCF"
+			})))), s.a.createElement("div", {
 				className: C.a.Column
 			}, s.a.createElement(x, {
 				href: "https://about.reddit.com"
@@ -22688,4 +22691,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.77f9804c6e8012161f49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9b812d6caba7bc6bb653.js.map
