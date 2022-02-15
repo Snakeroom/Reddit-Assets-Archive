@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a53ede97ef8e9cebb5b2.js
-// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.4e222a73cc086adcb2e7.js
+// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/timeUntil/index.ts": function(e, t, n) {
@@ -9,7 +9,7 @@
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/constants/index.ts");
-			const i = [s.qc, s.pb, s.B, s.Q, s.kb, s.Sb],
+			const i = [s.rc, s.pb, s.B, s.Q, s.kb, s.Sb],
 				a = {
 					[s.Sb]: e => o.fbt._({
 						"*": "{number} seconds",
@@ -41,7 +41,7 @@
 					}, [o.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[s.qc]: e => o.fbt._({
+					[s.rc]: e => o.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [o.fbt._plural(e, "number")], {
@@ -64,13 +64,13 @@
 					[s.pb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.qc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
+					[s.rc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[s.pb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.qc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
+					[s.rc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -79,7 +79,7 @@
 				const c = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[s.qc]: "",
+						[s.rc]: "",
 						[s.pb]: "",
 						[s.B]: "",
 						[s.Q]: "",
@@ -554,7 +554,7 @@
 				fbt: V
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function q({
+			function z({
 				didParticipate: e
 			}) {
 				const t = V._("This prediction has ended", null, {
@@ -572,9 +572,9 @@
 					message: n
 				}))
 			}
-			var z = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionFeatureEducationMessage/index.tsx");
+			var K = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionFeatureEducationMessage/index.tsx");
 
-			function K() {
+			function Y() {
 				const e = k.fbt._("Choose the answer", null, {
 						hk: "3QoLuB"
 					}),
@@ -586,7 +586,7 @@
 					message: t
 				}))
 			}
-			var Y = n("./src/reddit/components/Econ/Prediction/TournamentTokenIcon/index.tsx"),
+			var q = n("./src/reddit/components/Econ/Prediction/TournamentTokenIcon/index.tsx"),
 				G = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				Q = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionResolvedEducationMessage/index.m.less"),
 				X = n.n(Q);
@@ -604,7 +604,7 @@
 					options: r
 				} = e, c = Boolean(i), d = o === i, l = i && (null === (t = r.find(({
 					id: e
-				}) => e === i)) || void 0 === t ? void 0 : t.userStakeAmount) || 0, u = n ? s.a.createElement(Y.a, {
+				}) => e === i)) || void 0 === t ? void 0 : t.userStakeAmount) || 0, u = n ? s.a.createElement(q.a, {
 					className: X.a.coinIcon,
 					tournamentId: n
 				}) : s.a.createElement(G.a, {
@@ -669,9 +669,9 @@
 				} = e, r = n < Date.now(), c = !D()(i), d = r && t && !o;
 				return r ? o ? s.a.createElement(H, {
 					prediction: e
-				}) : d ? s.a.createElement(K, null) : s.a.createElement(q, {
+				}) : d ? s.a.createElement(Y, null) : s.a.createElement(z, {
 					didParticipate: !!a
-				}) : s.a.createElement(z.a, {
+				}) : s.a.createElement(K.a, {
 					isTokens: c,
 					storageKey: F.a.feature
 				})
@@ -1009,4 +1009,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.a53ede97ef8e9cebb5b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.4e222a73cc086adcb2e7.js.map

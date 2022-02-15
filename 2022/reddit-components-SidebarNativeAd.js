@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.93306b659329c8869ce4.js
-// Retrieved at 2/14/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.fbb68dd8e84db88d5d70.js
+// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, s) {
@@ -38,7 +38,7 @@
 			}));
 			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./src/lib/constants/index.ts");
-			const a = [n.qc, n.pb, n.B, n.Q, n.kb, n.Sb],
+			const a = [n.rc, n.pb, n.B, n.Q, n.kb, n.Sb],
 				o = {
 					[n.Sb]: e => r.fbt._({
 						"*": "{number} seconds",
@@ -70,7 +70,7 @@
 					}, [r.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[n.qc]: e => r.fbt._({
+					[n.rc]: e => r.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [r.fbt._plural(e, "number")], {
@@ -93,13 +93,13 @@
 					[n.pb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[n.qc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[n.rc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[n.pb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[n.qc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[n.rc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -108,7 +108,7 @@
 				const c = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[n.qc]: "",
+						[n.rc]: "",
 						[n.pb]: "",
 						[n.B]: "",
 						[n.Q]: "",
@@ -1491,4 +1491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.93306b659329c8869ce4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.fbb68dd8e84db88d5d70.js.map

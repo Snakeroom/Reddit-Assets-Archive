@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.82e5bd0a61bab79c78cb.js
-// Retrieved at 2/7/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.3d81a2432a2f0f95ed1b.js
+// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -64,7 +64,7 @@
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/constants/index.ts");
-			const o = [s.qc, s.pb, s.B, s.Q, s.kb, s.Sb],
+			const o = [s.rc, s.pb, s.B, s.Q, s.kb, s.Sb],
 				i = {
 					[s.Sb]: e => r.fbt._({
 						"*": "{number} seconds",
@@ -96,7 +96,7 @@
 					}, [r.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[s.qc]: e => r.fbt._({
+					[s.rc]: e => r.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [r.fbt._plural(e, "number")], {
@@ -119,13 +119,13 @@
 					[s.pb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.qc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[s.rc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[s.pb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[s.qc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[s.rc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -134,7 +134,7 @@
 				const c = Date.now(),
 					l = new Date(e).getTime(),
 					d = {
-						[s.qc]: "",
+						[s.rc]: "",
 						[s.pb]: "",
 						[s.B]: "",
 						[s.Q]: "",
@@ -801,9 +801,9 @@
 				U = n.n(M),
 				F = n("./src/reddit/constants/elementClassNames.ts"),
 				H = n("./src/reddit/controls/Button/index.tsx"),
-				q = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				$ = n("./src/reddit/components/Poll/PollBody/OpenPoll/index.m.less"),
-				W = n.n($);
+				$ = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				q = n("./src/reddit/components/Poll/PollBody/OpenPoll/index.m.less"),
+				W = n.n(q);
 			const {
 				fbt: Z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -853,7 +853,7 @@
 						className: F.n,
 						disabled: this.props.voteInProgress || !this.props.userIsLoggedIn || !this.state.optionIsSelected,
 						type: "submit"
-					}, this.props.voteInProgress ? i.a.createElement(q.a, {
+					}, this.props.voteInProgress ? i.a.createElement($.a, {
 						className: W.a.loadingIcon,
 						sizePx: 20
 					}) : i.a.createElement(o.Fragment, null, this.props.votingIcon, Z._("Vote", null, {
@@ -1720,4 +1720,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.82e5bd0a61bab79c78cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.3d81a2432a2f0f95ed1b.js.map

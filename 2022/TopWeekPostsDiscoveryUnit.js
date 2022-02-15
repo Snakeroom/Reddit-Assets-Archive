@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.e07a897cf9986fdb2d34.js
-// Retrieved at 2/14/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.4321f52bc215f298a2e8.js
+// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -31,7 +31,7 @@
 			}));
 			var a = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./src/lib/constants/index.ts");
-			const n = [r.qc, r.pb, r.B, r.Q, r.kb, r.Sb],
+			const n = [r.rc, r.pb, r.B, r.Q, r.kb, r.Sb],
 				i = {
 					[r.Sb]: e => a.fbt._({
 						"*": "{number} seconds",
@@ -63,7 +63,7 @@
 					}, [a.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[r.qc]: e => a.fbt._({
+					[r.rc]: e => a.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [a.fbt._plural(e, "number")], {
@@ -86,13 +86,13 @@
 					[r.pb]: e => a.fbt._("{amount}m", [a.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.qc]: e => a.fbt._("{amount}y", [a.fbt._param("amount", String(e))], {
+					[r.rc]: e => a.fbt._("{amount}y", [a.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[r.pb]: e => a.fbt._("{amount}m", [a.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.qc]: e => a.fbt._("{amount}y", [a.fbt._param("amount", String(e))], {
+					[r.rc]: e => a.fbt._("{amount}y", [a.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -101,7 +101,7 @@
 				const c = Date.now(),
 					l = new Date(e).getTime(),
 					d = {
-						[r.qc]: "",
+						[r.rc]: "",
 						[r.pb]: "",
 						[r.B]: "",
 						[r.Q]: "",
@@ -2152,4 +2152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.e07a897cf9986fdb2d34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.4321f52bc215f298a2e8.js.map

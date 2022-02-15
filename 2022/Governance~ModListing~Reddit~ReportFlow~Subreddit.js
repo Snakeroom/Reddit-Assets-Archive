@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.23d9b7a90b766c6df9cb.js
-// Retrieved at 2/15/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.dcc2d2bd4fa3a45348eb.js
+// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -553,7 +553,7 @@
 				[s.T]: () => n.fbt._("Sorry, we accept only images (.png, .jpeg, .gif) and videos (.mp4, .mov)", null, {
 					hk: "1hw868"
 				}),
-				[s.nc]: () => n.fbt._("Video size must be less than {max file size}GB", [n.fbt._param("max file size", (s.fb / s.hb / 1024).toFixed(1))], {
+				[s.oc]: () => n.fbt._("Video size must be less than {max file size}GB", [n.fbt._param("max file size", (s.fb / s.hb / 1024).toFixed(1))], {
 					hk: "4FkABU"
 				})
 			}
@@ -12332,4 +12332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.23d9b7a90b766c6df9cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.dcc2d2bd4fa3a45348eb.js.map

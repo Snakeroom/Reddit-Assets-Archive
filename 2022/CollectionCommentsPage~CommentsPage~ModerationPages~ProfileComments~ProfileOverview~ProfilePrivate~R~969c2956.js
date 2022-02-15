@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.f7ff74b5894d22e37bf6.js
-// Retrieved at 2/15/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.44543839280e344fe35c.js
+// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -1619,7 +1619,7 @@
 						className: ue.a.shareText
 					}, o.fbt._("share", null, {
 						hk: "1eAfZg"
-					}))), []), We = !!p && Object(te.e)(p) === U.author, Ve = Object(ne.a)("View--Reports", U.id, de), Ge = Object(ne.a)(d.oc, U.id, de), Ue = Object(S.c)(U), He = we("-mod-actions-menu", U.id, j, E), qe = Object(S.a)(U), Ke = U.postId, Je = y === W.g.Large, ze = !C && Je || f && I || Pe, Qe = !(j || C || O), Xe = !(U.authorIsBlocked && Te) && p && U.isGildable && !(U.authorIsBlocked && Ie) && !(U.unrepliableReason && Te), Ye = U.media && U.media.type === Z.o.LIVEVIDEO, Ze = !!U.recommendationContext, $e = U.isSponsored || Object(m.u)(G);
+					}))), []), We = !!p && Object(te.e)(p) === U.author, Ve = Object(ne.a)("View--Reports", U.id, de), Ge = Object(ne.a)(d.pc, U.id, de), Ue = Object(S.c)(U), He = we("-mod-actions-menu", U.id, j, E), qe = Object(S.a)(U), Ke = U.postId, Je = y === W.g.Large, ze = !C && Je || f && I || Pe, Qe = !(j || C || O), Xe = !(U.authorIsBlocked && Te) && p && U.isGildable && !(U.authorIsBlocked && Ie) && !(U.unrepliableReason && Te), Ye = U.media && U.media.type === Z.o.LIVEVIDEO, Ze = !!U.recommendationContext, $e = U.isSponsored || Object(m.u)(G);
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(c.a)(ue.a.flatlistContainer, a)
 					}, r.a.createElement(g.a, {
@@ -4265,4 +4265,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.f7ff74b5894d22e37bf6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.44543839280e344fe35c.js.map
