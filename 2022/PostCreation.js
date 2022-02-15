@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.9b812d6caba7bc6bb653.js
-// Retrieved at 2/15/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b7e8d1faaa5703fdf313.js
+// Retrieved at 2/15/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2428,6 +2428,12 @@
 								if (m.duration < a.mb) {
 									const e = o.fbt._("Video is too short. Minimum video length is {duration} seconds.", [o.fbt._param("duration", a.mb.toString())], {
 										hk: "49PSW8"
+									});
+									return M(a.T, e)
+								}
+								if (0 === m.height || 0 === m.width) {
+									const e = o.fbt._("Your browser does not support the video codec used for this video. Please try using a different video codec.", null, {
+										hk: "1AC0mg"
 									});
 									return M(a.T, e)
 								}
@@ -22691,4 +22697,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.9b812d6caba7bc6bb653.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b7e8d1faaa5703fdf313.js.map

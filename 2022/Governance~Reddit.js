@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.149619f9600b1cee097a.js
-// Retrieved at 2/14/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b96cb9257cf36a208da0.js
+// Retrieved at 2/15/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -2716,6 +2716,12 @@
 								if (p.duration < c.mb) {
 									const e = s.fbt._("Video is too short. Minimum video length is {duration} seconds.", [s.fbt._param("duration", c.mb.toString())], {
 										hk: "49PSW8"
+									});
+									return k(c.T, e)
+								}
+								if (0 === p.height || 0 === p.width) {
+									const e = s.fbt._("Your browser does not support the video codec used for this video. Please try using a different video codec.", null, {
+										hk: "1AC0mg"
 									});
 									return k(c.T, e)
 								}
@@ -25255,4 +25261,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.149619f9600b1cee097a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b96cb9257cf36a208da0.js.map
