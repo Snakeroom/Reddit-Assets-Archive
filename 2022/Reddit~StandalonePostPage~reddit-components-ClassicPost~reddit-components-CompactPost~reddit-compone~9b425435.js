@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4675e77a9d35d47bacd6.js
-// Retrieved at 2/15/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.ad20399f746d6773caea.js
+// Retrieved at 2/15/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -122,25 +122,25 @@
 					queryVariables: h,
 					shouldDisjointAnimation: O,
 					subsequentRecurringDelay: C
-				} = e, [j, E] = Object(s.useState)(!1), [_, S] = Object(s.useState)(!0), [g, w] = Object(s.useState)([]), [T, I] = Object(s.useState)(a(p).reverse()), N = Object(s.useRef)(!1), k = Object(s.useRef)(null), y = Object(s.useRef)(e => {}), A = Object(s.useRef)();
+				} = e, [j, E] = Object(s.useState)(!1), [_, S] = Object(s.useState)(!0), [g, w] = Object(s.useState)([]), [T, I] = Object(s.useState)(a(p).reverse()), N = Object(s.useRef)(!1), k = Object(s.useRef)(null), y = Object(s.useRef)(e => {}), F = Object(s.useRef)();
 				y.current = Object(s.useCallback)(e => {
 					let n = e || d();
 					const s = [...T].reverse().join("");
 					let o = parseInt(s) + n;
 					o > t && (n = t - parseInt(s), o = t);
 					const r = a(o).reverse();
-					E(!1), w(T), I(r), S(!1), A.current = setTimeout(() => {
+					E(!1), w(T), I(r), S(!1), F.current = setTimeout(() => {
 						E(!0)
 					}, 0)
 				}, [t, d, T]);
-				const F = Object(s.useRef)(() => {}),
+				const A = Object(s.useRef)(() => {}),
 					P = Object(s.useRef)(),
 					R = Object(s.useRef)();
-				F.current = Object(s.useCallback)(() => {
+				A.current = Object(s.useCallback)(() => {
 					R.current = setTimeout(() => {
 						y.current();
 						const e = [...g].reverse().join("");
-						parseInt(e) < t && F.current()
+						parseInt(e) < t && A.current()
 					}, C())
 				}, [t, C, g]);
 				const M = Object(s.useRef)(0),
@@ -152,7 +152,7 @@
 								intersectionRatio: n
 							} = e, s = 1 !== n;
 							t ? (D.current = !0, N.current || (N.current = !0, P.current = setTimeout(() => {
-								y.current(), F.current()
+								y.current(), A.current()
 							}, u())), M.current > 0 && (y.current(M.current), M.current = 0)) : s && (D.current = !1)
 						})
 					}, []);
@@ -176,7 +176,7 @@
 						D.current ? y.current(e) : M.current += e
 					}
 					return () => {
-						clearTimeout(P.current), clearTimeout(R.current), clearTimeout(A.current)
+						clearTimeout(P.current), clearTimeout(R.current), clearTimeout(F.current)
 					}
 				}, [t]);
 				const K = Object(s.useCallback)(() => S(!0), [S]),
@@ -1492,17 +1492,17 @@
 							}
 						}),
 						y = !e.isScoreHidden && f && n < C.a,
-						A = Object(x.a)(w),
-						F = n < 0 ? 0 : n;
+						F = Object(x.a)(w),
+						A = n < 0 ? 0 : n;
 					return a.a.createElement("div", {
 						className: Object(o.a)(g.a.score, e.className),
 						style: e.disableInlineColor ? void 0 : t,
-						onMouseEnter: O ? A.show : void 0,
-						onMouseLeave: O ? A.hide : void 0,
-						ref: O ? A.target.ref : void 0
+						onMouseEnter: O ? F.show : void 0,
+						onMouseLeave: O ? F.hide : void 0,
+						ref: O ? F.target.ref : void 0
 					}, (y || h) && a.a.createElement(a.a.Fragment, null, a.a.createElement(u.b, {
-						initialDisplayCount: F,
-						countToUpperBound: F,
+						initialDisplayCount: A,
+						countToUpperBound: A,
 						initialDelay: N,
 						subsequentRecurringDelay: N,
 						incrementDelta: N,
@@ -1513,7 +1513,7 @@
 						queryVariables: k.current,
 						onDataCB: I,
 						isLoadTestOnly: h && !y
-					})), !y && S, O && j && a.a.createElement(m.a, A, a.a.createElement(p.a, {
+					})), !y && S, O && j && a.a.createElement(m.a, F, a.a.createElement(p.a, {
 						className: g.a.viewCount,
 						post: j,
 						showViewCount: !1
@@ -2288,8 +2288,8 @@
 					}) || !!Object(r.l)(e, {
 						postId: t
 					}) || Object(i.H)(e))(e, t),
-					experimentName: s.Q
-				}) === s.cd
+					experimentName: s.N
+				}) === s.Zc
 			}
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, n) {
@@ -2372,8 +2372,8 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.Lb
-					}) === s.ec.Enabled
+						experimentName: s.Ib
+					}) === s.bc.Enabled
 				}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, n) {
@@ -2386,13 +2386,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.se,
+					experimentName: o.pe,
 					experimentEligibilitySelector: r.a
 				}),
-				a = (e, t) => t === o.Ae.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				a = (e, t) => t === o.xe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(i.G, c, (e, t) => a(e, t));
 			Object(s.a)((e, t) => t, c, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.4675e77a9d35d47bacd6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.ad20399f746d6773caea.js.map

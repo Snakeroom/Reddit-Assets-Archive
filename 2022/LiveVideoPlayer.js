@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a4539ec8b2378ee86e60.js
-// Retrieved at 2/15/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.d550135a3518cdda1a19.js
+// Retrieved at 2/15/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -74,7 +74,7 @@
 			})), s.d(t, "d", (function() {
 				return E
 			})), s.d(t, "e", (function() {
-				return L
+				return O
 			})), s.d(t, "f", (function() {
 				return C
 			}));
@@ -123,7 +123,7 @@
 						error: i.error,
 						utcTimeStamp: u
 					}))
-				}, L = (e, t) => async (s, n) => s(O(e, t)), O = (e, t) => async (s, n, {
+				}, O = (e, t) => async (s, n) => s(L(e, t)), L = (e, t) => async (s, n, {
 					gqlContext: o
 				}) => {
 					const r = n();
@@ -219,12 +219,12 @@
 				g = Object(l.a)(y),
 				w = d.a.button("MenuButton", f.a),
 				E = d.a.wrapped(h.b, "DropdownRow", f.a),
-				L = Object(a.c)({
+				O = Object(a.c)({
 					dropdownIsOpen: (e, {
 						dropdownId: t
 					}) => Object(b.b)(t)(e)
 				}),
-				O = Object(i.b)(L, (e, {
+				L = Object(i.b)(O, (e, {
 					dropdownId: t
 				}) => ({
 					toggleDropdown: () => e(Object(u.h)({
@@ -234,7 +234,7 @@
 				C = e => t => {
 					e.onClick && e.onClick(), e.toggleDropdown(), t.stopPropagation()
 				};
-			t.b = O(e => r.a.createElement(w, {
+			t.b = L(e => r.a.createElement(w, {
 				"aria-expanded": e.dropdownIsOpen,
 				"aria-haspopup": !0,
 				"aria-label": n.fbt._("more options", null, {
@@ -349,8 +349,8 @@
 				g = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.tsx"),
 				w = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
 				E = s("./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.tsx"),
-				L = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				O = s("./src/reddit/constants/chat.ts"),
+				O = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				L = s("./src/reddit/constants/chat.ts"),
 				C = s("./src/reddit/constants/keycodes.ts"),
 				_ = s("./src/reddit/helpers/trackers/rpan.ts"),
 				S = s("./src/reddit/selectors/media.ts"),
@@ -525,7 +525,7 @@
 						const n = !e.sessionDurationMs ? _.E : _.A,
 							o = {
 								...e,
-								chatState: O.a.None,
+								chatState: L.a.None,
 								playerType: _.a.Feed
 							};
 						this.props.sendEvent(n(s, o))
@@ -754,7 +754,7 @@
 					})) : u && (null === (r = this.videoSessionManager) || void 0 === r || r.pauseSession())
 				}
 			}
-			B.contextType = w.a, t.default = R(Object(L.c)(B));
+			B.contextType = w.a, t.default = R(Object(O.c)(B));
 			const F = ({
 				children: e
 			}) => i.a.createElement("div", {
@@ -837,9 +837,9 @@
 			})), s.d(t, "r", (function() {
 				return E
 			})), s.d(t, "p", (function() {
-				return L
-			})), s.d(t, "q", (function() {
 				return O
+			})), s.d(t, "q", (function() {
+				return L
 			})), s.d(t, "o", (function() {
 				return C
 			})), s.d(t, "z", (function() {
@@ -1029,7 +1029,7 @@
 					...d(s),
 					...a(s, e)
 				}),
-				L = (e, t) => s => ({
+				O = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "downvote",
@@ -1037,7 +1037,7 @@
 					...d(s),
 					...a(s, e)
 				}),
-				O = (e, t) => s => ({
+				L = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "report",
@@ -1310,7 +1310,7 @@
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "l", (function() {
-				return L
+				return O
 			})), s.d(t, "m", (function() {
 				return _
 			})), s.d(t, "i", (function() {
@@ -1393,10 +1393,10 @@
 						}
 					}, n)
 				}),
-				L = (e, t) => {
+				O = (e, t) => {
 					return E(e)[Object(r.g)(t)]
 				},
-				O = Object(n.a)((e, {
+				L = Object(n.a)((e, {
 					streamIdFromPath: t
 				}) => t, (e, t) => l(t.listingName)(e, t), E, p, a.h, (e, t, s, n, o) => {
 					const a = [];
@@ -1417,7 +1417,7 @@
 				}) => t, E, (e, {
 					listingName: t,
 					streamIdFromPath: s
-				}) => O(e, {
+				}) => L(e, {
 					listingName: t,
 					streamIdFromPath: s
 				}), (e, t, s) => {
@@ -1484,7 +1484,7 @@
 				})))), Object(n.a)(k, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
 				D = Object(n.a)((e, {
 					streamIdFromPath: t
-				}) => t ? L(e, t) : void 0, e => !e || e.chat_disabled || e.post.isArchived || e.post.isLocked);
+				}) => t ? O(e, t) : void 0, e => !e || e.chat_disabled || e.post.isArchived || e.post.isLocked);
 
 			function A(e, t) {
 				const s = {
@@ -1545,9 +1545,9 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(n.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: i.K,
-				experimentName: o.Rb
-			}), e => e === o.cd)
+				experimentName: o.Ob
+			}), e => e === o.Zc)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.a4539ec8b2378ee86e60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.d550135a3518cdda1a19.js.map

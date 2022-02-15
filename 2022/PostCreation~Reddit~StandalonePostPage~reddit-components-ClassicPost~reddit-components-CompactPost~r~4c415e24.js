@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.81eaedc43387bf71916e.js
-// Retrieved at 2/15/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.5df56c6c52fd9bc3a9fa.js
+// Retrieved at 2/15/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1480,7 +1480,7 @@
 						showTimestamp: G = !0,
 						subredditOrProfile: W,
 						tooltipType: z
-					} = e, q = Object(s.d)(), K = Object(g.a)(), Y = Object(s.e)(ie.a), Q = Object(s.e)(ue.d), X = Object(s.e)(ue.g) || ["popular", "all"].includes(Q || ""), Z = Object(s.e)(de.b), ne = C.isSponsored || Object(a.u)(_), pe = !(!ne || !Y || Object(b.wf)(Y));
+					} = e, q = Object(s.d)(), K = Object(g.a)(), Y = Object(s.e)(ie.a), Q = Object(s.e)(ue.d), X = Object(s.e)(ue.g) || ["popular", "all"].includes(Q || ""), Z = Object(s.e)(de.b), ne = C.isSponsored || Object(a.u)(_), pe = !(!ne || !Y || Object(b.tf)(Y));
 					Object(n.useEffect)(() => {
 						pe && q(Object(p.d)(C.author))
 					}, []);
@@ -3233,7 +3233,7 @@
 				o = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = Object(n.a)(e => Object(s.c)(e, {
-				experimentName: o.mb,
+				experimentName: o.jb,
 				experimentEligibilitySelector: s.a
 			}), e => e)
 		},
@@ -3463,4 +3463,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.81eaedc43387bf71916e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.5df56c6c52fd9bc3a9fa.js.map

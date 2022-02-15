@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.87b01a6b89178e2c7ea2.js
-// Retrieved at 2/15/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.a64073c68af15a6f3594.js
+// Retrieved at 2/15/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -9380,8 +9380,8 @@
 				ae = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const re = Object(l.a)(e => Object(ae.c)(e, {
 				experimentEligibilitySelector: I.K,
-				experimentName: se.M
-			}), e => e === se.U.Enabled);
+				experimentName: se.J
+			}), e => e === se.R.Enabled);
 			var oe = n("./src/reddit/selectors/meta.ts"),
 				ie = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				le = n.n(ie);
@@ -11114,8 +11114,8 @@
 				}), e => e === se.b.Enabled),
 				ra = Object(l.a)(e => Object(ae.c)(e, {
 					experimentEligibilitySelector: I.K,
-					experimentName: se.L
-				}), e => e === se.T.Enabled),
+					experimentName: se.I
+				}), e => e === se.Q.Enabled),
 				oa = Se.a.span("SubheaderLink", an.a),
 				ia = Se.a.button("GenerateBackupCodesButton", an.a),
 				la = Se.a.wrapped(ee.g, "ThirdPartyAuth", an.a),
@@ -12281,9 +12281,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(ae.c)(e, {
-							experimentName: se.oc,
+							experimentName: se.lc,
 							experimentEligibilitySelector: ae.a
-						}) === se.cd
+						}) === se.Zc
 					}
 				}),
 				ro = Object(ge.u)(),
@@ -12514,9 +12514,9 @@
 				a = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
 			const o = e => Object(a.c)(e, {
-				experimentName: s.F,
+				experimentName: s.E,
 				experimentEligibilitySelector: () => Object(r.J)(e)
-			}) === s.cd
+			}) === s.Zc
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -12680,4 +12680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.87b01a6b89178e2c7ea2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a64073c68af15a6f3594.js.map

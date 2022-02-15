@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.f00664cd4c6ca75858a2.js
-// Retrieved at 2/15/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.63f14d21591f2d057854.js
+// Retrieved at 2/15/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -319,15 +319,15 @@
 				M = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				T = s("./src/reddit/constants/posts.ts"),
 				D = s("./src/lib/constants/index.ts"),
-				B = s("./src/reddit/components/HumanDate/index.tsx"),
-				U = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
+				U = s("./src/reddit/components/HumanDate/index.tsx"),
+				B = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
 				F = s("./src/reddit/hooks/useClickSourceData.ts"),
 				W = s("./src/reddit/layout/row/Inline/index.tsx"),
 				V = s("./src/reddit/components/DiscoveryUnit/PostAuthor/index.m.less"),
 				A = s.n(V);
 			var H = e => {
 					const t = T.a.PROFILE,
-						s = Object(U.a)(e.author, t),
+						s = Object(B.a)(e.author, t),
 						a = Object(F.a)();
 					return r.a.createElement("div", {
 						className: Object(l.a)(A.a.container, e.className)
@@ -345,9 +345,9 @@
 							pathname: s,
 							state: a
 						}
-					}, Object(U.b)(e.author, t)), r.a.createElement("span", {
+					}, Object(B.b)(e.author, t)), r.a.createElement("span", {
 						className: A.a.timestamp
-					}, r.a.createElement(B.d, {
+					}, r.a.createElement(U.d, {
 						seconds: e.created / D.Sb
 					})))))
 				},
@@ -356,7 +356,7 @@
 				q = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
 				z = s.n(q);
 			var G = e => {
-					const t = Object(U.a)(e.name, e.type);
+					const t = Object(B.a)(e.name, e.type);
 					return r.a.createElement("div", {
 						className: Object(l.a)(z.a.container, e.className)
 					}, r.a.createElement(Q.a, {
@@ -375,11 +375,11 @@
 						"data-click-id": "subreddit",
 						className: z.a.name,
 						to: t
-					}, Object(U.b)(e.displayText || e.name, e.type)), r.a.createElement("span", {
+					}, Object(B.b)(e.displayText || e.name, e.type)), r.a.createElement("span", {
 						className: z.a.separator
 					}, "•"), r.a.createElement("span", {
 						className: z.a.timestamp
-					}, r.a.createElement(B.d, {
+					}, r.a.createElement(U.d, {
 						seconds: e.created / D.Sb
 					})))))
 				},
@@ -635,8 +635,8 @@
 				Me = s("./src/reddit/components/DiscoveryUnit/Layout/PostsCarousel/index.m.less"),
 				Te = s.n(Me);
 			const De = 326,
-				Be = 12,
-				Ue = {
+				Ue = 12,
+				Be = {
 					stiffness: 210,
 					damping: 30
 				},
@@ -771,13 +771,13 @@
 						itemWidth: c,
 						maxScrollIndex: u,
 						scrollIndex: d,
-						spacerWidth: Be,
+						spacerWidth: Ue,
 						visibleItemsCount: m
 					}), b = e ? Fe : this.getMarginLeft({
 						adjustment: p,
 						itemWidth: c,
 						scrollIndex: d,
-						spacerWidth: Be
+						spacerWidth: Ue
 					});
 					return r.a.createElement("div", {
 						className: Object(l.a)(Te.a.postsWrapper, this.props.className),
@@ -788,7 +788,7 @@
 							marginLeft: e || n ? Fe : 0
 						},
 						style: {
-							marginLeft: Object(i.spring)(b, o || Ue)
+							marginLeft: Object(i.spring)(b, o || Be)
 						}
 					}, this.renderPosts), 0 !== d && r.a.createElement(C, {
 						className: Object(l.a)(Te.a.arrowLeft, t),
@@ -863,9 +863,9 @@
 				f = s("./src/reddit/constants/experiments.ts"),
 				C = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				g = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(g.H)(e) || f.ef.ShowTopContent === Object(C.c)(e, {
+			const y = e => Object(g.H)(e) || f.bf.ShowTopContent === Object(C.c)(e, {
 				experimentEligibilitySelector: C.a,
-				experimentName: f.Xe
+				experimentName: f.Ue
 			});
 			var _ = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1424,8 +1424,8 @@
 					}))
 				})),
 				D = s("./src/reddit/components/SEOTitle/index.tsx"),
-				B = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
-				U = s("./src/reddit/selectors/user.ts"),
+				U = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
+				B = s("./src/reddit/selectors/user.ts"),
 				F = s("./src/reddit/components/PostTitle/index.m.less"),
 				W = s.n(F),
 				V = s("./src/config.ts"),
@@ -1517,7 +1517,7 @@
 					}) => Object(u.q)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: U.db
+					shouldOpenPostInNewTab: B.db
 				}),
 				X = e => {
 					const {
@@ -1525,7 +1525,7 @@
 						subreddit: s
 					} = e, {
 						isSponsored: a
-					} = t, n = Object(i.d)(), o = Object(A.a)(), c = Object(i.e)(B.b), d = e => {
+					} = t, n = Object(i.d)(), o = Object(A.a)(), c = Object(i.e)(U.b), d = e => {
 						!c || t.media && Object(k.H)(t.media) || (e.preventDefault(), n(Object(x.ab)(Object(C.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Z, {
@@ -1963,4 +1963,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.f00664cd4c6ca75858a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.63f14d21591f2d057854.js.map

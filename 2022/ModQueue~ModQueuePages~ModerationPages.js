@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.5f5b63314d9b8baccebf.js
-// Retrieved at 2/15/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.de2049b5f68b2a979c16.js
+// Retrieved at 2/15/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages~ModerationPages"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, r) {
@@ -356,8 +356,8 @@
 						if (function(e) {
 								return Object(y.c)(e, {
 									experimentEligibilitySelector: y.a,
-									experimentName: O.pd
-								}) === O.cd
+									experimentName: O.md
+								}) === O.Zc
 							}(c())) {
 							const {
 								normalizeModQueueListingFromGql: e,
@@ -638,9 +638,9 @@
 			r.r(t), r.d(t, "removalReasonsPending", (function() {
 				return X
 			})), r.d(t, "removalReasonsLoaded", (function() {
-				return Y
-			})), r.d(t, "removalReasonsFailed", (function() {
 				return Z
+			})), r.d(t, "removalReasonsFailed", (function() {
+				return Y
 			})), r.d(t, "removalReasonsRequested", (function() {
 				return ee
 			})), r.d(t, "removalReasonAddedPending", (function() {
@@ -891,8 +891,8 @@
 				}
 			});
 			const X = Object(R.a)("REMOVALREASONS__LOAD_PENDING"),
-				Y = Object(R.a)("REMOVALREASONS__LOAD_SUCCESS"),
-				Z = Object(R.a)("REMOVALREASONS__LOAD_FAILED"),
+				Z = Object(R.a)("REMOVALREASONS__LOAD_SUCCESS"),
+				Y = Object(R.a)("REMOVALREASONS__LOAD_FAILED"),
 				ee = e => async (t, r, {
 					apiContext: s
 				}) => {
@@ -902,10 +902,10 @@
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: k.jb.GET
 					}))(s(), a);
-					n.ok ? t(Y({
+					n.ok ? t(Z({
 						subredditId: e,
 						response: n.body
-					})) : t(Z(n.error))
+					})) : t(Y(n.error))
 				}, te = Object(R.a)(o), re = Object(R.a)(d), se = Object(R.a)(c), ae = (e, t) => async (r, a, {
 					apiContext: n
 				}) => {
@@ -1611,8 +1611,8 @@
 						return e
 				}
 			};
-			const Y = {};
-			var Z = (e = Y, t) => {
+			const Z = {};
+			var Y = (e = Z, t) => {
 				switch (t.type) {
 					case G.b: {
 						const {
@@ -1677,7 +1677,7 @@
 				ne = Object(s.c)({
 					actions: J,
 					endCursor: X,
-					hasNextPage: Z,
+					hasNextPage: Y,
 					hasPreviousPage: te,
 					moderators: se,
 					startCursor: ae
@@ -2183,12 +2183,12 @@
 							return e
 					}
 				},
-				Ye = Object(s.c)({
+				Ze = Object(s.c)({
 					error: We,
 					pending: Xe
 				});
-			const Ze = {};
-			var et = (e = Ze, t) => {
+			const Ye = {};
+			var et = (e = Ye, t) => {
 					switch (t.type) {
 						case Je.a: {
 							const {
@@ -2233,7 +2233,7 @@
 					}
 				},
 				at = Object(s.c)({
-					api: Ye,
+					api: Ze,
 					selectedItems: et,
 					undoLastAction: st
 				});
@@ -2692,7 +2692,7 @@
 					itemOrder: $t,
 					loadMore: Jt
 				}),
-				Yt = Object(s.c)({
+				Zt = Object(s.c)({
 					bulkAction: at,
 					edited: mt,
 					moderatedCommunitiesOrder: jt,
@@ -2701,7 +2701,7 @@
 					spam: Vt,
 					unmoderated: Xt
 				});
-			var Zt = (e = null, t) => {
+			var Yt = (e = null, t) => {
 				switch (t.type) {
 					case a.P:
 					case a.N:
@@ -2741,7 +2741,7 @@
 					}
 				},
 				rr = Object(s.c)({
-					error: Zt,
+					error: Yt,
 					pending: tr
 				});
 			const sr = {};
@@ -2905,7 +2905,7 @@
 				flairedUsers: K,
 				moderationLog: ne,
 				moderators: ze,
-				modQueue: Yt,
+				modQueue: Zt,
 				muted: hr
 			})
 		},
@@ -2971,4 +2971,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.5f5b63314d9b8baccebf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.de2049b5f68b2a979c16.js.map
