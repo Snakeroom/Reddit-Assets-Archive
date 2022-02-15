@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.1eb9fb2cf3ee4ea948b6.js
-// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.8a1565d9c96c80f779db.js
+// Retrieved at 2/14/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -48,8 +48,8 @@
 				v = n("./src/lib/CSSVariableProvider/index.tsx"),
 				C = n("./src/lib/lessComponent.tsx"),
 				w = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
-				y = n("./src/chat/components/Root/index.tsx"),
-				E = n("./src/chat/constants/container.ts"),
+				E = n("./src/chat/components/Root/index.tsx"),
+				y = n("./src/chat/constants/container.ts"),
 				M = n("./src/chat/helpers/chatSelector.ts"),
 				_ = n("./src/chat/actions/container.ts"),
 				P = n("./src/chat/components/PortalContainer/index.m.less"),
@@ -57,15 +57,15 @@
 			const {
 				embed: S,
 				hidden: B
-			} = E.b;
+			} = y.b;
 
 			function T(e) {
 				return void 0 !== e ? e : -1
 			}
-			const A = C.a.wrapped(e => a.a.createElement("div", {
+			const D = C.a.wrapped(e => a.a.createElement("div", {
 					className: e.className
 				}, e.children), "BasePortalContainer", N.a),
-				D = C.a.wrapped(e => {
+				R = C.a.wrapped(e => {
 					const t = Object(O.d)(),
 						n = Object(s.useRef)(null),
 						c = e => {
@@ -86,7 +86,7 @@
 						}
 					}, e.children)
 				}, "EmbedPortalContainer", N.a),
-				R = C.a.wrapped(e => a.a.createElement("div", {
+				A = C.a.wrapped(e => a.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${T(B.width)}px`,
@@ -94,23 +94,23 @@
 					}
 				}, e.children), "HiddenPortalContainer", N.a),
 				k = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
-				I = A,
+				I = D,
 				L = Object(M.a)({
 					container: e => e && e.container && e.container.size
 				});
 
 			function U(e) {
 				switch (e.container) {
-					case E.a.EMBED:
-						return a.a.createElement(D, null, e.children);
-					case E.a.HIDDEN:
+					case y.a.EMBED:
 						return a.a.createElement(R, null, e.children);
-					case E.a.FULL:
+					case y.a.HIDDEN:
+						return a.a.createElement(A, null, e.children);
+					case y.a.FULL:
 						return a.a.createElement(I, null, e.children);
-					case E.a.MINIMIZED:
+					case y.a.MINIMIZED:
 						return a.a.createElement(k, null);
 					default:
-						return a.a.createElement(D, null, e.children)
+						return a.a.createElement(R, null, e.children)
 				}
 			}
 			var q = n("./src/chat/customMiddleware/channelsFilter.ts"),
@@ -260,7 +260,7 @@
 						}
 					}, function(e, t) {
 						const n = Object(O.b)(L)(U);
-						return a.a.createElement("div", null, Object(v.d)(a.a.createElement(n, null, Object(y.a)(e, t)), document.body))
+						return a.a.createElement("div", null, Object(v.d)(a.a.createElement(n, null, Object(E.a)(e, t)), document.body))
 					}(e, t)),
 					appName: d.n.Chat,
 					history: Object(c.d)({
@@ -661,12 +661,12 @@
 					experimentName: a.zb,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === a.Dd.Enabled),
+				d = Object(s.a)(o, e => e === a.Ed.Enabled),
 				u = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.yd,
+					experimentName: a.zd,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				l = Object(s.a)(d, u, (e, t) => e && t === a.Cd.Enabled),
+				l = Object(s.a)(d, u, (e, t) => e && t === a.Dd.Enabled),
 				b = Object(s.a)(e => Object(c.c)(e, {
 					experimentName: a.Mb,
 					experimentEligibilitySelector: r.e
@@ -676,12 +676,12 @@
 					experimentName: a.xb,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				g = Object(s.a)(h, e => e === a.Ad.ContinuousScroll),
+				g = Object(s.a)(h, e => e === a.Bd.ContinuousScroll),
 				f = Object(s.a)(e => Object(c.c)(e, {
 					experimentName: a.yb,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				p = Object(s.a)(f, e => e === a.Bd.Enabled),
+				p = Object(s.a)(f, e => e === a.Cd.Enabled),
 				x = Object(s.a)(e => Object(c.c)(e, {
 					experimentName: a.Gb,
 					experimentEligibilitySelector: () => !0
@@ -693,4 +693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.1eb9fb2cf3ee4ea948b6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.8a1565d9c96c80f779db.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.110607be133c924c17c8.js
-// Retrieved at 2/14/2022, 11:00:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.7d24723073f5b97ab836.js
+// Retrieved at 2/14/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -2612,7 +2612,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: r.yc
 				});
-				return !(!t || Object(r.uf)(t))
+				return !(!t || Object(r.vf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -2625,7 +2625,7 @@
 			const s = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.oe
+					experimentName: r.pe
 				}) === r.cd
 			}
 		},
@@ -2642,7 +2642,7 @@
 				i = n("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.uf)(t)
+					return Boolean(t) && !Object(o.vf)(t)
 				},
 				d = Object(r.a)(a, s.d, (e, t) => e && !t)
 		},
@@ -2718,4 +2718,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.110607be133c924c17c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.7d24723073f5b97ab836.js.map

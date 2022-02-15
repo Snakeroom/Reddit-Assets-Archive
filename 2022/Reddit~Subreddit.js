@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.6b5b4da853404d2f0eae.js
-// Retrieved at 2/14/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.abc20ba01184054882ea.js
+// Retrieved at 2/14/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~Subreddit"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -3200,14 +3200,14 @@
 			var i = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const r = e => Object(s.c)(e, {
-					experimentName: i.Rd,
-					experimentEligibilitySelector: s.a
-				}) === i.be.Enabled,
-				o = e => Object(s.c)(e, {
 					experimentName: i.Sd,
+					experimentEligibilitySelector: s.a
+				}) === i.ce.Enabled,
+				o = e => Object(s.c)(e, {
+					experimentName: i.Td,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === i.ce.Enabled
+				}) === i.de.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
@@ -3470,4 +3470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.6b5b4da853404d2f0eae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.abc20ba01184054882ea.js.map

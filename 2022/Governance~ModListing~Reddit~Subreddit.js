@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.7fa70aba1c283de73720.js
-// Retrieved at 2/14/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.509d2e3370f283aeea7d.js
+// Retrieved at 2/14/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -975,13 +975,13 @@
 						isOnline: t
 					} = e.subscribe.data;
 					B(t)
-				}, []), z = Object(n.useRef)(null), [K, V] = Object(n.useState)(!1), X = Object(n.useCallback)(e => {
+				}, []), z = Object(n.useRef)(null), [V, K] = Object(n.useState)(!1), X = Object(n.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
 							intersectionRatio: r
 						} = e, s = 1 !== r;
-						t ? V(!0) : s && V(!1)
+						t ? K(!0) : s && K(!1)
 					})
 				}, []), $ = Object(n.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
@@ -1001,7 +1001,7 @@
 					showPresence: !0,
 					isHighlighted: j,
 					onceInViewport: k
-				}), (C || N) && !x && K && c.a.createElement(d.a, {
+				}), (C || N) && !x && V && c.a.createElement(d.a, {
 					variables: W,
 					onData: C ? q : S,
 					queryKey: "isUserOnline"
@@ -1502,7 +1502,7 @@
 							break;
 						case c.Nb.SETTINGS: {
 							const n = e;
-							Object(N.a)(V(r, s)(t)), n.match.params.page === c.cc.Profile && Object(b.l)(t);
+							Object(N.a)(K(r, s)(t)), n.match.params.page === c.cc.Profile && Object(b.l)(t);
 							break
 						}
 						case c.Nb.POST_CREATION:
@@ -1529,7 +1529,7 @@
 							Object(N.a)(q(r, s)(t)), Object(N.a)(z()(t));
 							break;
 						case c.Nb.APPEAL:
-							Object(N.a)(K(r, s)(t));
+							Object(N.a)(V(r, s)(t));
 							break;
 						case c.Nb.INBOX_PAGES:
 							u && H(t);
@@ -1845,14 +1845,14 @@
 					noun: "screen",
 					...T(e)
 				}),
-				K = (e, t) => r => ({
+				V = (e, t) => r => ({
 					source: "appeal",
 					action: "view",
 					noun: "page",
 					...T(r),
 					timer: E.pb(e, t)
 				}),
-				V = (e, t) => r => ({
+				K = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2244,7 +2244,7 @@
 					return s ? s * n.Sb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: c.Ud,
+					experimentName: c.Vd,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -2262,4 +2262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.7fa70aba1c283de73720.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.509d2e3370f283aeea7d.js.map

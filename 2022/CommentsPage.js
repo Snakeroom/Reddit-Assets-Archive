@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.e949194dbe5aa610dc70.js
-// Retrieved at 2/14/2022, 11:00:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.9fa11955863d9458d511.js
+// Retrieved at 2/14/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -685,9 +685,9 @@
 							i = Object(oe.J)(s(), {
 								identifier: W.belongsTo
 							});
-						if (i && (e => q.Je.Redirect === Object(H.b)(e, {
+						if (i && (e => q.Ke.Redirect === Object(H.b)(e, {
 								experimentEligibilitySelector: te,
-								experimentName: q.Ce
+								experimentName: q.De
 							}))(s())) return void t(Object(n.c)(i.url));
 						if ((W.media && W.media.type) === M.o.LIVEVIDEO) {
 							const e = `/rpan${W.belongsTo.type===w.a.SUBREDDIT?i.url:"/"}${Object(h.u)(W.id)}`;
@@ -1903,7 +1903,7 @@
 							[re.a.isActive]: t
 						}),
 						onClick: e => ((e, t) => {
-							s ? (c(Object(te.a)()), i === X.Od.ThrottledDaily ? (ee.a.throttleFeature(X.Pd.Daily), l(e)) : i === X.Od.ThrottledWeekly ? (ee.a.throttleFeature(X.Pd.Weekly), l(e)) : l(e)) : n()
+							s ? (c(Object(te.a)()), i === X.Pd.ThrottledDaily ? (ee.a.throttleFeature(X.Qd.Daily), l(e)) : i === X.Pd.ThrottledWeekly ? (ee.a.throttleFeature(X.Qd.Weekly), l(e)) : l(e)) : n()
 						})(e)
 					}, ie._({
 						"*": "{number of more replies hidden} more replies",
@@ -2554,7 +2554,7 @@
 					isInNewModuleNCPV3Experiment: (e, {
 						post: t,
 						isOverlay: s
-					}) => !Object(E.q)(t) && !s && Object(S.a)(e) === P.ee.NewModule,
+					}) => !Object(E.q)(t) && !s && Object(S.a)(e) === P.fe.NewModule,
 					isLoggedIn: T.K,
 					postSEOV2IdCardVariant: w.h,
 					shouldShowReredditPromo: L.a,
@@ -3537,7 +3537,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: o,
-							shouldShowLinkedPosts: o && !Object(C.uf)(t) && !Object(E.a)(t),
+							shouldShowLinkedPosts: o && !Object(C.vf)(t) && !Object(E.a)(t),
 							subreddit: n
 						}
 					}
@@ -3598,7 +3598,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(C.uf)(c) && !Object(E.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(C.vf)(c) && !Object(E.a)(c) && !i) return a.a.createElement("div", {
 						className: V.a.smallBanner
 					});
 					const {
@@ -3609,7 +3609,7 @@
 						hk: "2g363L"
 					}) : Object(E.b)(c) ? n.fbt._("More posts like this", null, {
 						hk: "Maj0v"
-					}) : t === C.Zd.DeRecs ? n.fbt._("Popular Posts Near You", null, {
+					}) : t === C.ae.DeRecs ? n.fbt._("Popular Posts Near You", null, {
 						hk: "22vlW0"
 					}) : n.fbt._("More posts you may like", null, {
 						hk: "33WdfT"
@@ -5712,8 +5712,8 @@
 				r = s("./src/reddit/selectors/meta.ts");
 			const i = e => Object(o.c)(e, {
 				experimentEligibilitySelector: e => !Object(r.d)(e) && "US" === Object(r.b)(e),
-				experimentName: n.De
-			}) === n.Ke.Enabled
+				experimentName: n.Ee
+			}) === n.Le.Enabled
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
 			"use strict";
@@ -5769,7 +5769,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.uf)(t)
+					return Boolean(t) && !Object(o.vf)(t)
 				},
 				d = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -5829,4 +5829,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.e949194dbe5aa610dc70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.9fa11955863d9458d511.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.c44ad29ec57e55448173.js
-// Retrieved at 2/14/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.899fe6530471e9ecfa83.js
+// Retrieved at 2/14/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -7905,7 +7905,7 @@
 								experimentName: i.J,
 								expEventOverride: t
 							});
-							return !!(Object(i.uf)(r) ? void 0 : r)
+							return !!(Object(i.vf)(r) ? void 0 : r)
 						})(r)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -11014,9 +11014,9 @@
 			const a = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Jd
+						experimentName: n.Kd
 					});
-					return !(!t || Object(n.uf)(t))
+					return !(!t || Object(n.vf)(t))
 				},
 				u = (e, t) => {
 					var r;
@@ -11029,9 +11029,9 @@
 				l = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: c.K,
-						experimentName: n.Id
+						experimentName: n.Jd
 					});
-					return !(!t || Object(n.uf)(t))
+					return !(!t || Object(n.vf)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/crosspostRecommendations.ts": function(e, t, r) {
@@ -11059,7 +11059,7 @@
 			const b = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: u.e,
-						experimentName: i.he
+						experimentName: i.ie
 					}) === i.cd
 				},
 				p = e => !e.media || e.media.type !== c.o.RTJSON && e.media.type !== c.o.TEXT ? "" : e.media.markdownContent,
@@ -11152,33 +11152,33 @@
 				l = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: i.ie
+						experimentName: i.je
 					});
-					return t === i.je.UIChangesOnly || t === i.je.RedditRecommendation || t === i.je.OpenAI || t === i.je.FilteredOpenAI
+					return t === i.ke.UIChangesOnly || t === i.ke.RedditRecommendation || t === i.ke.OpenAI || t === i.ke.FilteredOpenAI
 				},
 				b = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: i.ie
-					}) === i.je.UIChangesOnly
+						experimentName: i.je
+					}) === i.ke.UIChangesOnly
 				},
 				p = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: i.ie
-					}) === i.je.RedditRecommendation
+						experimentName: i.je
+					}) === i.ke.RedditRecommendation
 				},
 				f = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: i.ie
-					}) === i.je.OpenAI
+						experimentName: i.je
+					}) === i.ke.OpenAI
 				},
 				m = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: i.ie
-					}) === i.je.FilteredOpenAI
+						experimentName: i.je
+					}) === i.ke.FilteredOpenAI
 				},
 				_ = e => e.creations.subredditRec.api.pending,
 				O = e => e.creations.subredditRec.api.error,
@@ -11251,52 +11251,52 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => n.Ae.Enabled === Object(s.c)(e, {
+			const i = e => n.Be.Enabled === Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.He
+					experimentName: n.Ie
 				}),
-				o = e => n.Ae.Enabled === Object(s.c)(e, {
+				o = e => n.Be.Enabled === Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.te
+					experimentName: n.ue
 				}),
-				d = e => n.Ze.Enabled === Object(s.c)(e, {
+				d = e => n.af.Enabled === Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Oe
+					experimentName: n.Pe
 				}),
 				c = (e, t, r) => {
 					const i = r(e, t);
-					return !(!i || !i.meter) && (i.meter.enabled && d(e) && n.lf.Enabled === Object(s.c)(e, {
+					return !(!i || !i.meter) && (i.meter.enabled && d(e) && n.mf.Enabled === Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.kf
+						experimentName: n.lf
 					}))
 				},
 				a = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Ge
+					experimentName: n.He
 				}),
 				u = e => {
 					switch (e) {
-						case n.Le.Five:
+						case n.Me.Five:
 							return .05;
-						case n.Le.Ten:
+						case n.Me.Ten:
 							return .1;
-						case n.Le.Fifty:
+						case n.Me.Fifty:
 							return .5;
 						default:
 							return .01
 					}
 				},
-				l = e => n.Ae.Enabled === Object(s.c)(e, {
+				l = e => n.Be.Enabled === Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Ie
+					experimentName: n.Je
 				}),
-				b = e => n.Ae.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: s.a,
-					experimentName: n.Ee
-				}),
-				p = e => n.Ae.Enabled === Object(s.c)(e, {
+				b = e => n.Be.Enabled === Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: n.Fe
+				}),
+				p = e => n.Be.Enabled === Object(s.c)(e, {
+					experimentEligibilitySelector: s.a,
+					experimentName: n.Ge
 				})
 		},
 		"./src/reddit/selectors/experiments/topPosts.ts": function(e, t, r) {
@@ -11324,9 +11324,9 @@
 					experimentName: s.mc,
 					experimentEligibilitySelector: e => c(e, t)
 				}), e => e),
-				u = e => e === s.hf.NoCommunityWidgets,
-				l = e => e === s.hf.NoRulesModerators,
-				b = e => e === s.hf.RelatedPostsDu
+				u = e => e === s.if.NoCommunityWidgets,
+				l = e => e === s.if.NoRulesModerators,
+				b = e => e === s.if.RelatedPostsDu
 		},
 		"./src/reddit/selectors/externalAccount.ts": function(e, t, r) {
 			"use strict";
@@ -12224,4 +12224,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.c44ad29ec57e55448173.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.899fe6530471e9ecfa83.js.map

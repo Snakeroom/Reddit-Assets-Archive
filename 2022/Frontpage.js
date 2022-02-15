@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.0b00cd37625dc3864083.js
-// Retrieved at 2/11/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.dd0c52cef44902118e8f.js
+// Retrieved at 2/14/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -2501,10 +2501,10 @@
 			}
 			var Ze = a("./src/reddit/selectors/experiments/utils.ts");
 			const qe = Object(u.a)(e => Object(Fe.c)(e, {
-					experimentName: Me.Ed,
+					experimentName: Me.Fd,
 					experimentEligibilitySelector: Fe.a
 				}), Ze.a),
-				We = Object(u.a)(qe, e => e === Me.Fd.Enabled);
+				We = Object(u.a)(qe, e => e === Me.Gd.Enabled);
 			var He = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ge = a("./src/reddit/selectors/user.ts");
 			var Ve = a("./src/reddit/selectors/seo/linksModule.ts"),
@@ -7108,7 +7108,7 @@
 						subredditId: t
 					})),
 					f = Object(c.e)(p.a),
-					y = f !== u.ee.NewModule;
+					y = f !== u.fe.NewModule;
 				return (null === (s = null == g ? void 0 : g.cards) || void 0 === s ? void 0 : s.length) > 0 && y ? r.a.createElement(h, {
 					closeModuleOnMount: !!e && e !== m.g.Large,
 					subredditId: t,
@@ -7466,7 +7466,7 @@
 						experimentEligibilitySelector: r.K,
 						experimentName: s.Cc
 					});
-					return !(!t || Object(s.uf)(t))
+					return !(!t || Object(s.vf)(t))
 				},
 				o = e => {
 					return Object(n.c)(e, {
@@ -7562,4 +7562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.0b00cd37625dc3864083.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.dd0c52cef44902118e8f.js.map

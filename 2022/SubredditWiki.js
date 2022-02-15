@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.a2ea864f6c9fe09201e0.js
-// Retrieved at 2/14/2022, 11:00:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.e8eef723577c57130205.js
+// Retrieved at 2/14/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, s) {
@@ -1695,7 +1695,7 @@
 					communityFlairSortedKeys: (e, {
 						subredditId: t
 					}) => Object(Be.c)(e, t),
-					isInNewModuleNCPV3Experiment: e => Object(We.a)(e) === ye.ee.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(We.a)(e) === ye.fe.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
@@ -2175,4 +2175,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.a2ea864f6c9fe09201e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.e8eef723577c57130205.js.map
