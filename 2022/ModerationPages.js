@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.46b6feb95102318da18b.js
-// Retrieved at 2/14/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c65fa066b3b502a96e1f.js
+// Retrieved at 2/15/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -5876,8 +5876,8 @@
 				hasSecondaryTags: D.m,
 				geoPlace: (e, t) => e.tags.models.geoPlaces[t.subredditId],
 				subredditCountrySite: (e, t) => ((e, t) => e.subreddits.countrySiteSettings[t])(e, t.subredditId),
-				subredditCountryEditEnabled: (e, t) => Object(U.c)(e),
-				subredditLanguageEditEnabled: (e, t) => Object(U.d)(e),
+				subredditCountryEditEnabled: (e, t) => Object(U.d)(e),
+				subredditLanguageEditEnabled: (e, t) => Object(U.e)(e),
 				isPostCrowdControlFilterEnabled: B.d.crowdControlFiltersEnabled
 			}), Ve = Object(i.b)(We, (e, {
 				subredditId: t
@@ -22459,7 +22459,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: s.bd
 				});
-				return !(!t || Object(s.vf)(t))
+				return !(!t || Object(s.wf)(t))
 			}
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
@@ -22704,4 +22704,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.46b6feb95102318da18b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c65fa066b3b502a96e1f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.8f9ee4f7256ea05a3dfa.js
-// Retrieved at 2/15/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.c6401d558aa8f3a5c8bb.js
+// Retrieved at 2/15/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -2512,7 +2512,7 @@
 					experimentEligibilitySelector: n.a,
 					experimentName: o.yc
 				});
-				return !(!t || Object(o.vf)(t))
+				return !(!t || Object(o.wf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -2569,10 +2569,10 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(n.vf)(t)
+					return Boolean(t) && !Object(n.wf)(t)
 				},
 				d = Object(o.a)(a, r.d, (e, t) => e && !t)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.8f9ee4f7256ea05a3dfa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.c6401d558aa8f3a5c8bb.js.map

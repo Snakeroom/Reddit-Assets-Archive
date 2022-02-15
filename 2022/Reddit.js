@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.5d48d469cc4b79413411.js
-// Retrieved at 2/15/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d08f3e53802bb39d649a.js
+// Retrieved at 2/15/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -18911,14 +18911,14 @@
 							}))
 						}), Mn(n), Object(B.d)("enabled" === Object(gn.c)(n.getState(), {
 							experimentEligibilitySelector: gn.a,
-							experimentName: Xe.ff,
+							experimentName: Xe.gf,
 							expEventOverride: !1
 						})), Object(B.c)("enabled" === Object(gn.c)(n.getState(), {
 							experimentEligibilitySelector: gn.a,
-							experimentName: Xe.hf
+							experimentName: Xe.if
 						})), Object(B.g)("enabled" === Object(gn.c)(n.getState(), {
 							experimentEligibilitySelector: gn.a,
-							experimentName: Xe.gf
+							experimentName: Xe.hf
 						})), Object(B.f)(vs.gqlContext), window.addEventListener("beforeunload", () => {
 							const e = n.getState(),
 								t = Object(On.a)("tab_closed")(e),
@@ -21933,7 +21933,7 @@
 			const j = Object(o.a)(e => Object(m.c)(e, {
 				experimentEligibilitySelector: e => Object(E.g)(e.meta.userAgent) && Object(p.f)(e),
 				experimentName: l.Ne
-			}), e => e === l.Ze.Enabled);
+			}), e => e === l.af.Enabled);
 			var _ = n("./src/reddit/selectors/experiments/utils.ts"),
 				S = n("./src/reddit/selectors/responsiveSettings.ts");
 			const k = Object(o.c)({
@@ -21943,7 +21943,7 @@
 					moreRepliesSignupVariant: e => Object(_.a)(Object(f.b)(e)),
 					ssoLoginLinkVariant: e => Object(m.c)(e, {
 						experimentEligibilitySelector: e => !Object(p.e)(e),
-						experimentName: l.Oe
+						experimentName: l.Pe
 					}),
 					blockingInterstitialVariant: h.d
 				}),
@@ -21973,7 +21973,7 @@
 					if (j = Object(i.a)(j, {
 							experiment_d2x_2020ify_buttons: "enabled"
 						}), h && (j = Object(i.a)(j, {
-							[`experiment_${l.Oe}`]: h
+							[`experiment_${l.Pe}`]: h
 						})), O && (j = Object(i.a)(j, {
 							[`experiment_${l.nd}`]: "enabled"
 						})), v && (j = Object(i.a)(j, {
@@ -22210,7 +22210,7 @@
 					experimentEligibilitySelector: a.K,
 					experimentName: s.Yc
 				});
-				return !(!t || Object(s.vf)(t))
+				return !(!t || Object(s.wf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/frontpageSignup.ts": function(e, t, n) {
@@ -22533,4 +22533,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "Reddit~Subreddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.5d48d469cc4b79413411.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d08f3e53802bb39d649a.js.map
