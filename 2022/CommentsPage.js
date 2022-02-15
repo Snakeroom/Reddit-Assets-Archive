@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.9fa11955863d9458d511.js
-// Retrieved at 2/14/2022, 7:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.f44b5d1dec73e9923971.js
+// Retrieved at 2/15/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -5802,18 +5802,24 @@
 		"./src/reddit/selectors/seo/reredditPromo.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return p
+				return u
 			}));
 			var n = s("./node_modules/reselect/es/index.js"),
 				o = s("./src/reddit/helpers/getPostFromRouteMatch/index.ts"),
-				r = s("./src/reddit/selectors/platform.ts");
-			const i = new Date,
-				a = i.getUTCFullYear(),
-				d = i.getUTCMonth(),
-				c = i.getUTCDate(),
-				l = Date.UTC(2008, 0, 1),
-				m = Date.UTC(a, d - 7, c),
-				p = Object(n.a)(e => Object(r.f)(e), e => Object(o.a)(e), (e, t) => e && !!t && !!t.created && t.created > l && t.created < m)
+				r = s("./src/reddit/selectors/platform.ts"),
+				i = s("./src/reddit/selectors/posts.ts");
+			const a = new Date,
+				d = a.getUTCFullYear(),
+				c = a.getUTCMonth(),
+				l = a.getUTCDate(),
+				m = Date.UTC(2008, 0, 1),
+				p = Date.UTC(d, c - 7, l),
+				u = Object(n.a)(e => Object(r.f)(e), e => Object(o.a)(e), (e, {
+					post: t
+				}) => t && Object(i.U)(e, {
+					postId: t.id,
+					disallowProfile: !0
+				}), (e, t, s) => e && !!t && !t.isNSFW && !!s && !s.isNSFW && !!t.created && t.created > m && t.created < p)
 		},
 		"./src/redditGQL/operations/OtherDiscussions.json": function(e) {
 			e.exports = JSON.parse('{"id":"6fb184ec02e2"}')
@@ -5829,4 +5835,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.9fa11955863d9458d511.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.f44b5d1dec73e9923971.js.map
