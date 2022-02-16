@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.abcedc26cdfd3c45db3f.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.6dfc806df2ba3a114881.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -540,7 +540,7 @@
 				g = Object(s.a)(a.x),
 				_ = Object(s.a)(a.v),
 				f = (e, t, r) => async (n, s, i) => {
-					const a = Object(p.w)(s(), {
+					const a = Object(p.x)(s(), {
 						subredditName: e
 					});
 					if (a) return v(a.id, t, r)(n, s, i)
@@ -589,7 +589,7 @@
 
 			function d(e) {
 				const t = Object(i.d)(),
-					r = Object(i.e)(t => Object(c.R)(t, {
+					r = Object(i.e)(t => Object(c.S)(t, {
 						subredditId: e
 					})),
 					n = Object(i.e)(t => Object(o.i)(t, {
@@ -1372,7 +1372,7 @@
 					y = Object(a.e)(e => Object(g.k)(e, {
 						subredditId: t
 					})),
-					w = Object(a.e)(e => Object(_.R)(e, {
+					w = Object(a.e)(e => Object(_.S)(e, {
 						subredditId: t
 					})),
 					j = Object(a.e)(e => Object(g.n)(e, {
@@ -1752,7 +1752,7 @@
 				}) => Boolean(e.subreddits.appliedFilters.meta[t]),
 				subreddit: (e, {
 					subredditId: t
-				}) => Object(S.R)(e, {
+				}) => Object(S.S)(e, {
 					subredditId: t
 				})
 			});
@@ -1794,10 +1794,10 @@
 					a = Object(H.a)(),
 					o = Object(M.O)(r),
 					[c, d] = Object(n.useState)(!1),
-					l = Object(i.e)(t => Object(S.R)(t, {
+					l = Object(i.e)(t => Object(S.S)(t, {
 						subredditId: e
 					})),
-					u = Object(i.e)(t => Object(S.L)(t, {
+					u = Object(i.e)(t => Object(S.M)(t, {
 						subredditId: e
 					})),
 					m = Object(i.e)(t => Object(W.d)(t, {
@@ -2673,7 +2673,7 @@
 				Ee = m.a.wrapped(me.a, "InternalLink", _e.a),
 				je = m.a.div("LinkContainer", _e.a),
 				Ce = Object(a.c)({
-					userIsBanned: he.bb,
+					userIsBanned: he.cb,
 					userIsLoggedIn: x.K
 				});
 			var Fe = Object(i.b)(Ce)(e => {
@@ -3712,4 +3712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.abcedc26cdfd3c45db3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.6dfc806df2ba3a114881.js.map

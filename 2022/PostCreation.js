@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.16d2fe9794b0bceb8500.js
-// Retrieved at 2/16/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.10200fd9568ea83f70bf.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3349,7 +3349,7 @@
 					});
 					if (u.ok) {
 						const n = t(),
-							o = u.body && u.body.length ? u.body.map(e => Object(l.C)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
+							o = u.body && u.body.length ? u.body.map(e => Object(l.D)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
 						e(p({
 							subredditIds: o
 						}))
@@ -4202,6 +4202,7 @@
 				fadeIn: "_2bkYZH_kJx5pIHW0Ts5P6e",
 				caretOnBottom: "_1rF-A55THyDL-rQ9ZUDQ4_",
 				caretOnTop: "_1MHCyMQAMeqRqf5DPWWeq3",
+				hideCaret: "dExJJiXRwxVrKsDJRWSQl",
 				caretOnLeft: "nVD-oexLbZI_4QjhrkLFz",
 				caretOnRight: "KRVDnoE1RIC5qyqQLXxGG"
 			}
@@ -4213,10 +4214,10 @@
 				r = n.n(s),
 				a = n("./node_modules/react-redux/es/index.js"),
 				i = n("./node_modules/reselect/es/index.js"),
-				c = n("./src/higherOrderComponents/asTooltip.tsx"),
-				l = n("./src/lib/classNames/index.ts"),
-				d = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				u = n("./src/lib/fastdom/index.ts"),
+				c = n("./src/lib/classNames/index.ts"),
+				l = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				d = n("./src/lib/fastdom/index.ts"),
+				u = n("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				m = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				p = n("./src/reddit/selectors/tooltip.ts"),
 				h = n("./src/reddit/components/ContentTooltip/index.m.less"),
@@ -4248,7 +4249,7 @@
 							return "top"
 					}
 				},
-				E = Object(d.a)(e => {
+				E = Object(l.a)(e => {
 					const {
 						children: t,
 						className: n,
@@ -4256,28 +4257,30 @@
 						caretPosition: s,
 						caretColor: a,
 						onClick: i,
-						...c
+						hideCaret: l,
+						...d
 					} = e;
 					return r.a.createElement("div", f({
 						onClick: i,
-						className: Object(l.a)(n, b.a.StyledTooltipContainer, {
+						className: Object(c.a)(n, b.a.StyledTooltipContainer, {
 							[b.a.caretOnTop]: "top" === s,
 							[b.a.caretOnLeft]: "left" === s,
 							[b.a.caretOnRight]: "right" === s,
-							[b.a.caretOnBottom]: "bottom" === s
+							[b.a.caretOnBottom]: "bottom" === s,
+							[b.a.hideCaret]: l
 						}),
 						style: {
 							...o,
 							"--contentTooltip-caretColor": a && a[s] ? a[s] : Object(m.a)(e).body
 						}
-					}, c), t)
+					}, d), t)
 				}),
 				x = Object(i.c)({
 					isOpen: (e, {
 						tooltipId: t
 					}) => Object(p.b)(t)(e)
 				}),
-				_ = Object(c.a)(E, [o.a.Click, o.a.Keydown]),
+				_ = Object(u.a)(E, [o.a.Click, o.a.Keydown]),
 				v = Object(a.b)(x);
 			class O extends r.a.Component {
 				constructor(e) {
@@ -4286,7 +4289,7 @@
 							tooltipId: e,
 							tooltipSizeEstimate: t = g
 						} = this.props;
-						u.a.read(() => {
+						d.a.read(() => {
 							const n = document.getElementById(e);
 							if (!n) return;
 							const o = n.getBoundingClientRect();
@@ -5028,7 +5031,7 @@
 
 			function l(e) {
 				const t = Object(r.d)(),
-					n = Object(r.e)(t => Object(c.R)(t, {
+					n = Object(r.e)(t => Object(c.S)(t, {
 						subredditId: e
 					})),
 					o = Object(r.e)(t => Object(i.i)(t, {
@@ -5871,7 +5874,7 @@
 					}),
 					subredditName: (e, {
 						post: t
-					}) => Object(g.R)(e, {
+					}) => Object(g.S)(e, {
 						subredditId: t.belongsTo.id
 					}).name
 				})),
@@ -6990,7 +6993,7 @@
 					collection: {
 						subredditId: t
 					}
-				}) => t ? Object(S.R)(e, {
+				}) => t ? Object(S.S)(e, {
 					subredditId: t
 				}) : void 0,
 				user: T.k
@@ -8887,7 +8890,7 @@
 			const y = (e, t = !1, n = o.UNSET) => `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${n}]`,
 				k = Object(c.c)({
 					flairData: E.d,
-					subreddit: x.R
+					subreddit: x.S
 				});
 			class j extends a.a.Component {
 				constructor(e) {
@@ -9572,7 +9575,7 @@
 					const n = Object(f.r)(e, {
 						pageLayer: t
 					});
-					return n && Object(_.Q)(e, {
+					return n && Object(_.R)(e, {
 						subredditId: n.id
 					})
 				}, e => (e || []).filter(e => w.has(e.kind))),
@@ -12368,7 +12371,7 @@
 					shouldPrettyPrint: f,
 					explanationText: g,
 					shouldShowSubredditOnlineUsers: C = !1
-				} = e, E = Object(a.e)(e => Object(d.t)(e, {
+				} = e, E = Object(a.e)(e => Object(d.u)(e, {
 					subredditName: s
 				})), x = Object(l.c)(s), _ = void 0 !== m ? o.fbt._({
 					"*": "{number} members",
@@ -16473,18 +16476,6 @@
 				}, L))))
 			}
 		},
-		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, n) {
-			e.exports = {
-				inlineRow: "XZK-LTFT5CgGo9MvPQQsy"
-			}
-		},
-		"./src/reddit/layout/row/Inline/index.tsx": function(e, t, n) {
-			"use strict";
-			var o = n("./src/lib/lessComponent.tsx"),
-				s = n("./src/reddit/layout/row/Inline/index.m.less"),
-				r = n.n(s);
-			t.a = o.a.div("inlineRow", r.a)
-		},
 		"./src/reddit/layout/row/RightAlign/index.m.less": function(e, t, n) {
 			e.exports = {
 				rightAligned: "_1sEFSGIUpFtX1hzGDyWJpr"
@@ -17699,7 +17690,7 @@
 					{
 						subredditName: h
 					} = (null == p ? void 0 : p.urlParams) || {},
-					b = Object(r.e)(e => Object(J.C)(e, h)),
+					b = Object(r.e)(e => Object(J.D)(e, h)),
 					f = Object(r.e)(Sn.o);
 				return s.a.createElement(ie.a, {
 					withOverlay: !0,
@@ -17778,7 +17769,7 @@
 					x = Object(r.e)(e => Object(Qe.o)(e, {
 						pageLayer: E
 					})),
-					_ = Object(r.e)(e => Object(J.R)(e, {
+					_ = Object(r.e)(e => Object(J.S)(e, {
 						subredditId: x
 					})),
 					v = Object(r.e)(e => Object(jn.b)(e, {
@@ -17956,7 +17947,7 @@
 					});
 					const {
 						isCrosspostableSubreddit: c
-					} = Object(J.t)(e, {
+					} = Object(J.u)(e, {
 						subredditName: a
 					});
 					if (!c) return l.fbt._("This community does not allow for crossposting of any posts", null, {
@@ -18065,7 +18056,7 @@
 					postSchedule: K.db,
 					postToTwitter: K.fb,
 					isEditingScheduledPost: e => !!Object(le.r)(e),
-					showContributorRequestFlow: e => Object(J.q)(e, C.e.Post),
+					showContributorRequestFlow: e => Object(J.r)(e, C.e.Post),
 					showScheduledPosts: K.jb,
 					stickyPosition: K.lb,
 					submissionType: K.a,
@@ -18394,7 +18385,7 @@
 						draft: {
 							subredditId: t
 						}
-					}) => t ? Object(J.R)(e, {
+					}) => t ? Object(J.S)(e, {
 						subredditId: t
 					}) : void 0,
 					user: Z.k
@@ -20180,7 +20171,7 @@
 					{
 						subredditName: o
 					} = (null == n ? void 0 : n.urlParams) || {},
-					a = Object(r.e)(e => Object(J.C)(e, o)),
+					a = Object(r.e)(e => Object(J.D)(e, o)),
 					i = Object(r.e)(e => Object(jn.b)(e, {
 						subredditId: a
 					})) || {
@@ -20215,11 +20206,11 @@
 				tl = Object(a.c)({
 					tournamentsEnabled: (e, {
 						subredditId: t
-					}) => !!t && Object(J.L)(e, {
+					}) => !!t && Object(J.M)(e, {
 						subredditId: t
 					}),
 					allowPolls: K.d,
-					votingLengthDropdownIsOpen: e => e.tooltipId === Xc,
+					votingLengthDropdownIsOpen: e => e.tooltip.tooltipId === Xc,
 					isPredictionCreationTabEnabled: Sn.o
 				});
 			class nl extends s.a.Component {
@@ -20614,7 +20605,7 @@
 				}],
 				Kl = "gov-type-selector-dropdown";
 			const ql = Object(a.c)({
-				dropdownIsOpen: e => e.tooltipId === Kl,
+				dropdownIsOpen: e => e.tooltip.tooltipId === Kl,
 				govType: e => e.creations.formData.govType,
 				spinoffEnabled: Bl.d.spSpinoffs
 			});
@@ -22694,4 +22685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.16d2fe9794b0bceb8500.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.10200fd9568ea83f70bf.js.map

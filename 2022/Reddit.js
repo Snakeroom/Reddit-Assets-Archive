@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.2497f38ee0437d623ab7.js
-// Retrieved at 2/16/2022, 4:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.ca4b9732de4e354d88d8.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1326,7 +1326,7 @@
 						Object(c.K)(d) || n.push(e(Object(a.t)()));
 						const u = Object(s.a)(l, null);
 						n.push(e(Object(o.subredditDataRequested)(u, l, {}))), await Promise.all(n);
-						const m = Object(i.C)(t(), l);
+						const m = Object(i.D)(t(), l);
 						await e(Object(r.a)({
 							subredditId: m,
 							skip: ["badges", "tips", "wallets"]
@@ -3255,7 +3255,7 @@
 						const n = Object(zt.o)(e, {
 								pageLayer: t
 							}) || Ss.e,
-							s = Object(Ps.w)(e, {
+							s = Object(Ps.x)(e, {
 								subredditName: n
 							});
 						if (s) return {
@@ -10476,7 +10476,7 @@
 						const s = n || Object(w.n)(e, {
 							page: t
 						});
-						return (null == s ? void 0 : s.belongsTo) ? Object(N.J)(e, {
+						return (null == s ? void 0 : s.belongsTo) ? Object(N.K)(e, {
 							identifier: s.belongsTo
 						}) : null
 					},
@@ -10546,7 +10546,7 @@
 							return {
 								source: "sticky_banner",
 								action: "click",
-								noun: (null == t ? void 0 : t.name) && Object(N.db)(e, {
+								noun: (null == t ? void 0 : t.name) && Object(N.eb)(e, {
 									identifier: {
 										name: t.name,
 										type: "subreddit"
@@ -12003,9 +12003,9 @@
 			const R = Object(c.c)({
 					isBlockingInterstitialEnabled: N.b,
 					hideNSFWPref: I.C,
-					subredditOrProfile: M.J,
-					subredditOrProfileAboutInfo: M.F,
-					userIsSubscriber: M.db
+					subredditOrProfile: M.K,
+					subredditOrProfileAboutInfo: M.G,
+					userIsSubscriber: M.eb
 				}),
 				L = e => {
 					const {
@@ -13124,7 +13124,7 @@
 				r = n("./src/reddit/selectors/subreddit.ts");
 			const o = (e, t) => {
 				const n = Object(s.a)(e, t);
-				return n ? Object(r.w)(e, {
+				return n ? Object(r.x)(e, {
 					subredditName: n
 				}) : null
 			}
@@ -13427,11 +13427,11 @@
 					}),
 					subredditId: (e, {
 						listingName: t
-					}) => Object(I.C)(e, t),
+					}) => Object(I.D)(e, t),
 					postFlairWidgets: (e, {
 						listingName: t
 					}) => {
-						const n = Object(I.C)(e, t);
+						const n = Object(I.D)(e, t);
 						return Object(A.g)(e, {
 							subredditId: n
 						})
@@ -13879,7 +13879,7 @@
 			var ue = n("./src/reddit/components/SearchResultsSubNav/index.m.less"),
 				me = n.n(ue);
 			const pe = Object(a.c)({
-					subreddit: d.w
+					subreddit: d.x
 				}),
 				be = e => {
 					const {
@@ -14533,7 +14533,7 @@
 				if (Object(p.i)(e) || Object(h.kb)(e)) return;
 				const n = f(e, t);
 				if (!n) return;
-				const s = Object(b.C)(e, n);
+				const s = Object(b.D)(e, n);
 				if (!s) return;
 				if (Object(h.jb)(e, {
 						subredditId: s
@@ -14543,7 +14543,7 @@
 			}), (e, t) => {
 				const n = f(e, t);
 				if (!n) return;
-				const s = Object(b.t)(e, {
+				const s = Object(b.u)(e, {
 					subredditName: n
 				});
 				return s ? s.emojisCustomSize : void 0
@@ -14555,7 +14555,7 @@
 				if (Object(h.K)(e)) return !n.hideNSFW;
 				const s = f(e, t);
 				if (s) {
-					const t = Object(b.w)(e, {
+					const t = Object(b.x)(e, {
 						subredditName: s
 					});
 					return !(!t || !t.isNSFW)
@@ -17205,7 +17205,7 @@
 					if (n.type === ee.b) {
 						const s = e.getState(),
 							r = (s.platform.currentPage.urlParams.subredditName || "").toLowerCase(),
-							a = Object(pn.C)(s, r) || "",
+							a = Object(pn.D)(s, r) || "",
 							i = (s.subreddits.about[a] || {}).advertiserCategory;
 						o.trigger("pageview", {
 							..._t()(n.payload.location, "pathname", "search", "hash"),
@@ -17710,7 +17710,7 @@
 								queryParams: r
 							},
 							a = s.subredditName,
-							i = Object(pn.C)(n, a) || "";
+							i = Object(pn.D)(n, a) || "";
 						if (Dn(i, {
 								country: n.meta.country
 							}), i) {
@@ -17730,13 +17730,13 @@
 						}), t(x(n)), t(y(Array.from(s)))
 					})(p));
 					const b = (m.platform.currentPage.urlParams.subredditName || "").toLowerCase(),
-						h = Object(pn.C)(m, b) || "";
+						h = Object(pn.D)(m, b) || "";
 					if (b) {
 						c.dispatch(O(h, b));
 						const e = Object(Dt.e)(m);
 						e && c.dispatch(v(e))
 					}
-					const g = Object(pn.C)(m, b) || "",
+					const g = Object(pn.D)(m, b) || "",
 						C = (m.subreddits.about[g] || {}).advertiserCategory;
 					o.setup({
 						jailUrl: "https://www.redditmedia.com/gtm/jail",
@@ -17755,7 +17755,7 @@
 								currentPage: o
 							} = t.platform,
 							a = (o.urlParams.subredditName || "").toLowerCase(),
-							l = Object(pn.C)(t, a) || "";
+							l = Object(pn.D)(t, a) || "";
 						if (Object(L.a)(), Dn(l, {
 								country: t.meta.country
 							}), o && o.meta) {
@@ -18134,7 +18134,7 @@
 					r = Object(_.b)(),
 					m = Object(F.a)(),
 					b = Object(a.useRef)(!1),
-					g = Object(c.e)(e => Object(V.w)(e, {
+					g = Object(c.e)(e => Object(V.x)(e, {
 						subredditName: t.params.subredditName
 					})),
 					I = Object(c.e)(e => Object(v.a)(e, {
@@ -20665,4 +20665,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "Reddit~Subreddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.2497f38ee0437d623ab7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ca4b9732de4e354d88d8.js.map

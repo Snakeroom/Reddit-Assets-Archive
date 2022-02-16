@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.26eab52557ab4176c4aa.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.32e967e357ddf4743ded.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -346,8 +346,8 @@
 					status: p
 				}, V) => {
 					var F, z;
-					const G = Object(c.d)(),
-						Y = Object(m.a)(),
+					const Y = Object(c.d)(),
+						G = Object(m.a)(),
 						U = H.b[n],
 						X = U ? Object(N.b)(U) : null !== (F = H.a[n]) && void 0 !== F ? F : Object(N.b)("best"),
 						R = C ? h.h : h.g,
@@ -356,7 +356,7 @@
 					function J(t) {
 						(function(e) {
 							return "CommunityProgressShareButton" === e.__typename
-						})(t) && (Object(P.a)(`https://reddit.com${B}`), G(Object(D.f)(Object(D.e)("Copied community URL to clipboard!", j.b.SuccessCommunityGreen)))), r && g(v.b.CTA_BUTTON_CLICK), Y(Object(f.b)(u, e, t.buttonText))
+						})(t) && (Object(P.a)(`https://reddit.com${B}`), Y(Object(D.f)(Object(D.e)("Copied community URL to clipboard!", j.b.SuccessCommunityGreen)))), r && g(v.b.CTA_BUTTON_CLICK), G(Object(f.b)(u, e, t.buttonText))
 					}
 					const K = (null == x ? void 0 : x.done) / (null == x ? void 0 : x.total) * 100 || 0,
 						W = y(w, B);
@@ -462,7 +462,7 @@
 				}),
 				F = s("./node_modules/fbt/lib/FbtPublic.js"),
 				z = s("./src/higherOrderComponents/asModal/index.tsx");
-			var G = Object(z.a)(e => {
+			var Y = Object(z.a)(e => {
 				const {
 					onCloseModal: t,
 					onCompleteCard: s,
@@ -498,7 +498,7 @@
 					hk: "3tYl0U"
 				}))))
 			});
-			var Y = e => a.a.createElement("svg", {
+			var G = e => a.a.createElement("svg", {
 				className: e.className,
 				width: "60",
 				height: "60",
@@ -534,7 +534,7 @@
 					className: o.a.completeModuleCard,
 					onClick: t,
 					ref: s
-				}, e && a.a.createElement(Y, {
+				}, e && a.a.createElement(G, {
 					className: o.a.completeFinalIcon
 				}), a.a.createElement("div", null, a.a.createElement("div", {
 					className: o.a.header
@@ -614,7 +614,7 @@
 				const h = Object(n.useRef)(null),
 					[P, D] = Object(n.useState)(!e),
 					M = Object(c.e)(w.X),
-					I = Object(c.e)(e => Object(u.X)(e, t)),
+					I = Object(c.e)(e => Object(u.Y)(e, t)),
 					Q = Object(m.a)();
 				Object(n.useEffect)(() => {
 					Q(Object(f.g)(s, P ? "expanded_module" : "collapses_module"))
@@ -629,8 +629,8 @@
 				const [k] = Object(l.a)(g.b);
 				const F = Object(n.useRef)(),
 					z = Object(n.useRef)(null),
-					Y = p.findIndex(e => e.status === v.a.INITIAL || e.status === v.a.ACTIONED),
-					U = x ? 0 : Y;
+					G = p.findIndex(e => e.status === v.a.INITIAL || e.status === v.a.ACTIONED),
+					U = x ? 0 : G;
 				if (Object(n.useEffect)(() => {
 						const e = (null == F ? void 0 : F.current) || z.current;
 						(null == e ? void 0 : e.parentNode) && (e.parentNode.scrollTop = (null == e ? void 0 : e.offsetTop) - e.parentNode.offsetTop - 20)
@@ -719,7 +719,7 @@
 						}), N(Object(d.b)(t))
 					},
 					ref: z
-				}))), y && a.a.createElement(G, {
+				}))), y && a.a.createElement(Y, {
 					onCloseModal: T,
 					onCompleteCard: () => H && async function(e) {
 						await L({
@@ -2061,4 +2061,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.26eab52557ab4176c4aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.32e967e357ddf4743ded.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.73ef69ec6e5fe266ba73.js
-// Retrieved at 2/16/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.e8e7a29b362d6eb0d1e5.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, s) {
@@ -417,7 +417,7 @@
 				ie = s.n(se);
 			const ne = c.a.img("SubredditIcon", ie.a),
 				re = Object(o.c)({
-					notificationLevel: $.E,
+					notificationLevel: $.F,
 					spPollsEnabled: G.d.spPolls,
 					subredditInlineEditingEnabled: (e, {
 						subredditId: t
@@ -426,7 +426,7 @@
 					}),
 					tournamentsEnabled: (e, {
 						subredditId: t
-					}) => !!t && Object($.L)(e, {
+					}) => !!t && Object($.M)(e, {
 						subredditId: t
 					}),
 					userId: ee.i,
@@ -434,7 +434,7 @@
 						subredditName: t
 					}) => {
 						const s = t;
-						return Object($.db)(e, {
+						return Object($.eb)(e, {
 							identifier: {
 								name: s,
 								type: "subreddit"
@@ -1564,7 +1564,7 @@
 							listingKey: s
 						})
 					},
-					subreddit: be.w
+					subreddit: be.x
 				});
 			class Oe extends a.a.Component {
 				constructor() {
@@ -1700,12 +1700,12 @@
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
 						subredditId: t
-					}) => Object(be.K)(e, {
+					}) => Object(be.L)(e, {
 						subredditId: t
-					}) && !Object(be.L)(e, {
+					}) && !Object(be.M)(e, {
 						subredditId: t
 					}),
-					widgets: be.r
+					widgets: be.s
 				}),
 				Ke = Object(d.b)(qe);
 			class Qe extends o.Component {
@@ -2107,7 +2107,7 @@
 					over18Pref: M.eb,
 					subreddit: (e, {
 						match: t
-					}) => Object(W.w)(e, {
+					}) => Object(W.x)(e, {
 						subredditName: t.params.subredditName || O.e
 					}),
 					subredditName: (e, {
@@ -2175,4 +2175,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.73ef69ec6e5fe266ba73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.e8e7a29b362d6eb0d1e5.js.map

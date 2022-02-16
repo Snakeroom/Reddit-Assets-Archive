@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.b2837c24bae0de0b441a.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.e47d7ee1deeeb2001df1.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./src/reddit/actions/postCollection/index.ts": function(e, t, n) {
@@ -745,7 +745,7 @@
 					const n = Object(f.r)(e, {
 						pageLayer: t
 					});
-					return n && Object(j.Q)(e, {
+					return n && Object(j.R)(e, {
 						subredditId: n.id
 					})
 				}, e => (e || []).filter(e => S.has(e.kind))),
@@ -1685,4 +1685,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.b2837c24bae0de0b441a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.e47d7ee1deeeb2001df1.js.map

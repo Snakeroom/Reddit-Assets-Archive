@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.7d28cc57aa3e5d6f5f6b.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.deee46b0a33928e8dc16.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -175,7 +175,7 @@
 						subredditOrProfileId: e
 					}));
 					const s = Object(i.a)(e),
-						o = !!Object(w.Z)(n, {
+						o = !!Object(w.ab)(n, {
 							subredditIds: [e]
 						})[0];
 					let c;
@@ -361,10 +361,10 @@
 					let s = a.fbt._("There was a problem enabling the {award name} Award. Please try again.", [a.fbt._param("award name", t.name)], {
 							hk: "2jdxBY"
 						}),
-						u = $(s),
+						u = Z(s),
 						b = c.b.Error;
 					try {
-						(await Object(m.i)(i(), t.id, e.id)).ok && (u = Z({
+						(await Object(m.i)(i(), t.id, e.id)).ok && (u = $({
 							awardId: t.id,
 							subredditId: e.id
 						}), s = a.fbt._("{award name} Award successfully enabled in {subreddit name}!", [a.fbt._param("award name", t.name), a.fbt._param("subreddit name", "r/" + e.name)], {
@@ -379,7 +379,7 @@
 							kind: b
 						}))
 					}
-				}, Y = Object(n.a)(O.n), Z = Object(n.a)(O.o), $ = Object(n.a)(O.m)
+				}, Y = Object(n.a)(O.n), $ = Object(n.a)(O.o), Z = Object(n.a)(O.m)
 		},
 		"./src/reddit/constants/gold.ts": function(e, t, r) {
 			"use strict";
@@ -692,4 +692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.7d28cc57aa3e5d6f5f6b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.deee46b0a33928e8dc16.js.map

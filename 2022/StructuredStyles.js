@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.faddae1db12cd9b841ce.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.4ae29b8e055e2dd68034.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -375,7 +375,7 @@
 				v = e => async (t, s) => {
 					t(p());
 					const i = s(),
-						o = Object(c.R)(i, {
+						o = Object(c.S)(i, {
 							subredditId: e
 						}).name,
 						u = i.structuredStyles.models[e],
@@ -530,7 +530,7 @@
 					});
 					if (u.ok) {
 						const n = t(),
-							a = u.body && u.body.length ? u.body.map(e => Object(d.C)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
+							a = u.body && u.body.length ? u.body.map(e => Object(d.D)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
 						e(h({
 							subredditIds: a
 						}))
@@ -1052,7 +1052,7 @@
 				isImportExportThemesEnabled: Q.d.importExportThemes,
 				isStylingRestrictedDueToQuarantine: Y.j,
 				moderatorPermissions: J.m,
-				subreddit: X.R
+				subreddit: X.S
 			});
 			class ne extends r.a.Component {
 				constructor() {
@@ -1601,7 +1601,7 @@
 						activeModalId: U.a,
 						draftStyles: (e, n) => wt()(e.structuredStyles.draft, t),
 						savedStyles: (e, t) => e.structuredStyles.models[t.subredditId],
-						subreddit: X.R,
+						subreddit: X.S,
 						isExportPending: Y.d
 					}),
 					a = Object(o.b)(n, (e, n) => ({
@@ -4841,7 +4841,7 @@
 					postFlairData: Cs.d,
 					subredditName: (e, {
 						subredditId: t
-					}) => Object(X.R)(e, {
+					}) => Object(X.S)(e, {
 						subredditId: t
 					}).name
 				})),
@@ -4946,7 +4946,7 @@
 			const ji = s.a.wrapped(Z.b, "FormElementDescription", Oi.a),
 				Fi = Object(c.c)({
 					rulesWidget: le.h,
-					subreddit: X.R
+					subreddit: X.S
 				});
 			var Ri = Object(o.b)(Fi, e => ({
 					refreshRulesWidget: (t, n) => e(Object(nn.f)(t, n))
@@ -7644,7 +7644,7 @@
 					shouldPrettyPrint: b,
 					explanationText: f,
 					shouldShowSubredditOnlineUsers: E = !1
-				} = e, x = Object(i.e)(e => Object(c.t)(e, {
+				} = e, x = Object(i.e)(e => Object(c.u)(e, {
 					subredditName: r
 				})), v = Object(d.c)(r), _ = void 0 !== m ? a.fbt._({
 					"*": "{number} members",
@@ -9152,4 +9152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.faddae1db12cd9b841ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.4ae29b8e055e2dd68034.js.map

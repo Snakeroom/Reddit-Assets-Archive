@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.641c2065463e00e563a1.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.6bdd90936cf3e5995cf1.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1097,7 +1097,9 @@
 				metaText: "_3yx4Dn0W3Yunucf5sVJeFU",
 				separator: "_8b8fUdBRxCYj9MkNpFvvv",
 				userBadges: "_3AXw8D3tzlqTRxjQdd5ve7",
-				userFlairLine: "_3w527zTLhXkd08MyacMV9H"
+				userFlairLine: "_3w527zTLhXkd08MyacMV9H",
+				LastAuthorModNoteIcon: "_3TVHJ99XXRlGtv0wqGCBFy",
+				lastAuthorModNoteIcon: "_3TVHJ99XXRlGtv0wqGCBFy"
 			}
 		},
 		"./src/reddit/components/Comments/Comment/TopMeta/Role.m.less": function(e, t, n) {
@@ -1230,28 +1232,28 @@
 			const M = ({
 				authorClassName: e,
 				className: t,
-				collapsed: n,
-				comment: s,
+				comment: n,
+				collapsed: s,
 				isLivestreaming: o,
 				isStrong: r,
 				onClick: i,
 				renderedInOverlay: c
 			}) => a.a.createElement(O.b, {
 				className: Object(d.a)(N.a.authorHoverCard, t),
-				collapsed: n,
-				isCommentAuthorBlocked: Object(I.g)(s),
-				postOrComment: s,
+				collapsed: s,
+				isCommentAuthorBlocked: Object(I.g)(n),
+				postOrComment: n,
 				tooltipType: c ? w.c.Lightbox : void 0
 			}, a.a.createElement(y.b, {
-				ignore: Object(I.f)(s) || !!s.distinguishType && s.distinguishType !== T.G.NONE,
-				subredditId: s.subredditId,
-				userId: s.authorId
+				ignore: Object(I.f)(n) || !!n.distinguishType && n.distinguishType !== T.G.NONE,
+				subredditId: n.subredditId,
+				userId: n.authorId
 			}, a.a.createElement(h, {
 				className: e,
-				collapsed: n,
-				comment: s,
-				isAuthorDeleted: Object(I.f)(s),
-				isCommentAuthorBlocked: Object(I.g)(s),
+				collapsed: s,
+				comment: n,
+				isAuthorDeleted: Object(I.f)(n),
+				isCommentAuthorBlocked: Object(I.g)(n),
 				isLivestreaming: o,
 				isStrong: r,
 				onClick: i
@@ -1619,7 +1621,8 @@
 					onClick: h,
 					renderedInOverlay: j
 				})), !Object(I.f)(i) && p && a.a.createElement(C.a, {
-					postOrComment: i
+					postOrComment: i,
+					className: Ie.a.LastAuthorModNoteIcon
 				}), o && a.a.createElement(X, null), a.a.createElement(ge, {
 					className: Ie.a.role,
 					comment: i,
@@ -1704,7 +1707,7 @@
 						comment: t
 					}) => !!Object(ye.q)(e, t.subredditId, t.authorId).length,
 					subredditDisplayText: (e, t) => {
-						const n = Object(Se.G)(e, {
+						const n = Object(Se.H)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -1720,7 +1723,7 @@
 					isBlockingInterstitialEnabled: Me.b,
 					isInModNotesExperiment: (e, {
 						comment: t
-					}) => Object(Ne.a)(e, t.subredditId)
+					}) => Object(Ne.b)(e, t.subredditId)
 				}));
 			t.a = He(e => {
 				const {
@@ -5368,4 +5371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.641c2065463e00e563a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.6bdd90936cf3e5995cf1.js.map

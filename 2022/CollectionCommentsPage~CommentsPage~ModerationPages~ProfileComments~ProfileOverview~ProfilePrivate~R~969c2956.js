@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.44543839280e344fe35c.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.cf6e78f1573a006afd42.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -747,7 +747,7 @@
 					s(h());
 					const i = Date.now(),
 						c = e.replace("r/", ""),
-						p = Object(l.C)(r, c),
+						p = Object(l.D)(r, c),
 						m = await Object(a.b)(n(), {
 							subredditId: p,
 							options: t
@@ -1069,6 +1069,7 @@
 				fadeIn: "_2bkYZH_kJx5pIHW0Ts5P6e",
 				caretOnBottom: "_1rF-A55THyDL-rQ9ZUDQ4_",
 				caretOnTop: "_1MHCyMQAMeqRqf5DPWWeq3",
+				hideCaret: "dExJJiXRwxVrKsDJRWSQl",
 				caretOnLeft: "nVD-oexLbZI_4QjhrkLFz",
 				caretOnRight: "KRVDnoE1RIC5qyqQLXxGG"
 			}
@@ -1080,10 +1081,10 @@
 				r = s.n(n),
 				i = s("./node_modules/react-redux/es/index.js"),
 				a = s("./node_modules/reselect/es/index.js"),
-				c = s("./src/higherOrderComponents/asTooltip.tsx"),
-				d = s("./src/lib/classNames/index.ts"),
-				l = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				p = s("./src/lib/fastdom/index.ts"),
+				c = s("./src/lib/classNames/index.ts"),
+				d = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				l = s("./src/lib/fastdom/index.ts"),
+				p = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				m = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				u = s("./src/reddit/selectors/tooltip.ts"),
 				b = s("./src/reddit/components/ContentTooltip/index.m.less"),
@@ -1115,7 +1116,7 @@
 							return "top"
 					}
 				},
-				C = Object(l.a)(e => {
+				C = Object(d.a)(e => {
 					const {
 						children: t,
 						className: s,
@@ -1123,28 +1124,30 @@
 						caretPosition: n,
 						caretColor: i,
 						onClick: a,
-						...c
+						hideCaret: d,
+						...l
 					} = e;
 					return r.a.createElement("div", x({
 						onClick: a,
-						className: Object(d.a)(s, h.a.StyledTooltipContainer, {
+						className: Object(c.a)(s, h.a.StyledTooltipContainer, {
 							[h.a.caretOnTop]: "top" === n,
 							[h.a.caretOnLeft]: "left" === n,
 							[h.a.caretOnRight]: "right" === n,
-							[h.a.caretOnBottom]: "bottom" === n
+							[h.a.caretOnBottom]: "bottom" === n,
+							[h.a.hideCaret]: d
 						}),
 						style: {
 							...o,
 							"--contentTooltip-caretColor": i && i[n] ? i[n] : Object(m.a)(e).body
 						}
-					}, c), t)
+					}, l), t)
 				}),
 				v = Object(a.c)({
 					isOpen: (e, {
 						tooltipId: t
 					}) => Object(u.b)(t)(e)
 				}),
-				g = Object(c.a)(C, [o.a.Click, o.a.Keydown]),
+				g = Object(p.a)(C, [o.a.Click, o.a.Keydown]),
 				_ = Object(i.b)(v);
 			class k extends r.a.Component {
 				constructor(e) {
@@ -1153,7 +1156,7 @@
 							tooltipId: e,
 							tooltipSizeEstimate: t = f
 						} = this.props;
-						p.a.read(() => {
+						l.a.read(() => {
 							const s = document.getElementById(e);
 							if (!s) return;
 							const o = s.getBoundingClientRect();
@@ -2386,7 +2389,7 @@
 					collection: {
 						subredditId: t
 					}
-				}) => t ? Object(y.R)(e, {
+				}) => t ? Object(y.S)(e, {
 					subredditId: t
 				}) : void 0,
 				user: I.k
@@ -2726,7 +2729,7 @@
 			const j = (e, t = !1, s = o.UNSET) => `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${s}]`,
 				w = Object(c.c)({
 					flairData: C.d,
-					subreddit: v.R
+					subreddit: v.S
 				});
 			class E extends i.a.Component {
 				constructor(e) {
@@ -4261,8 +4264,8 @@
 			}), e => e === n.Zc)
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
-			e.exports = JSON.parse('{"id":"eaa845e03969"}')
+			e.exports = JSON.parse('{"id":"a626d0b32ae7"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.44543839280e344fe35c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.cf6e78f1573a006afd42.js.map

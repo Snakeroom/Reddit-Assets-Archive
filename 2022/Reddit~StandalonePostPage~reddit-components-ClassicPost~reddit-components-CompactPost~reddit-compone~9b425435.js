@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.0688c1b2bd392440f6c4.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.7d1ddaf425c37fc7e505.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -122,25 +122,25 @@
 					queryVariables: h,
 					shouldDisjointAnimation: O,
 					subsequentRecurringDelay: C
-				} = e, [j, E] = Object(s.useState)(!1), [_, S] = Object(s.useState)(!0), [g, w] = Object(s.useState)([]), [T, I] = Object(s.useState)(a(p).reverse()), N = Object(s.useRef)(!1), k = Object(s.useRef)(null), y = Object(s.useRef)(e => {}), F = Object(s.useRef)();
+				} = e, [j, E] = Object(s.useState)(!1), [_, S] = Object(s.useState)(!0), [g, w] = Object(s.useState)([]), [T, N] = Object(s.useState)(a(p).reverse()), I = Object(s.useRef)(!1), k = Object(s.useRef)(null), y = Object(s.useRef)(e => {}), A = Object(s.useRef)();
 				y.current = Object(s.useCallback)(e => {
 					let n = e || d();
 					const s = [...T].reverse().join("");
 					let o = parseInt(s) + n;
 					o > t && (n = t - parseInt(s), o = t);
 					const r = a(o).reverse();
-					E(!1), w(T), I(r), S(!1), F.current = setTimeout(() => {
+					E(!1), w(T), N(r), S(!1), A.current = setTimeout(() => {
 						E(!0)
 					}, 0)
 				}, [t, d, T]);
-				const A = Object(s.useRef)(() => {}),
+				const F = Object(s.useRef)(() => {}),
 					P = Object(s.useRef)(),
 					R = Object(s.useRef)();
-				A.current = Object(s.useCallback)(() => {
+				F.current = Object(s.useCallback)(() => {
 					R.current = setTimeout(() => {
 						y.current();
 						const e = [...g].reverse().join("");
-						parseInt(e) < t && A.current()
+						parseInt(e) < t && F.current()
 					}, C())
 				}, [t, C, g]);
 				const M = Object(s.useRef)(0),
@@ -151,8 +151,8 @@
 								isIntersecting: t,
 								intersectionRatio: n
 							} = e, s = 1 !== n;
-							t ? (D.current = !0, N.current || (N.current = !0, P.current = setTimeout(() => {
-								y.current(), A.current()
+							t ? (D.current = !0, I.current || (I.current = !0, P.current = setTimeout(() => {
+								y.current(), F.current()
 							}, u())), M.current > 0 && (y.current(M.current), M.current = 0)) : s && (D.current = !1)
 						})
 					}, []);
@@ -176,12 +176,12 @@
 						D.current ? y.current(e) : M.current += e
 					}
 					return () => {
-						clearTimeout(P.current), clearTimeout(R.current), clearTimeout(F.current)
+						clearTimeout(P.current), clearTimeout(R.current), clearTimeout(A.current)
 					}
 				}, [t]);
-				const K = Object(s.useCallback)(() => S(!0), [S]),
-					J = 0 === g.length,
-					G = _ || J,
+				const J = Object(s.useCallback)(() => S(!0), [S]),
+					K = 0 === g.length,
+					G = _ || K,
 					q = Object(s.useRef)(((e, t) => `${t}_${e}_count_anim`)(f, n));
 				return o.a.createElement(o.a.Fragment, null, !b && o.a.createElement("div", {
 					className: l.a.countAnimation
@@ -199,7 +199,7 @@
 						"aria-hidden": !0,
 						className: l.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: K,
+						onTransitionEnd: J,
 						style: j && g.length > 0 && !_ ? {
 							transform: `translateY(-${O&&n.length>1?100:100*(n.length-1)}%)`,
 							transitionDuration: `${(O?500:750)/1e3}s`
@@ -609,8 +609,8 @@
 			}
 			var w = Object(x.c)(g),
 				T = n("./src/reddit/components/FlairSearch/index.m.less"),
-				I = n.n(T);
-			const N = Object(d.a)(e => e && Object(u.c)(e)),
+				N = n.n(T);
+			const I = Object(d.a)(e => e && Object(u.c)(e)),
 				k = Object(c.c)({
 					areFlairRestrictionsEnabled: l.d.flairRestrictions,
 					isModerator: b.g
@@ -627,9 +627,9 @@
 					templateIds: l,
 					areFlairRestrictionsEnabled: b,
 					isModerator: f
-				} = e, x = Object(p.a)(), h = d && n && n.templateId && d[n.templateId] || void 0, O = Object(v.a)(), C = n || N(h);
+				} = e, x = Object(p.a)(), h = d && n && n.templateId && d[n.templateId] || void 0, O = Object(v.a)(), C = n || I(h);
 				return r.a.createElement("div", {
-					className: Object(a.a)(o, I.a.container)
+					className: Object(a.a)(o, N.a.container)
 				}, d && l && r.a.createElement(w, {
 					flairTemplateType: t,
 					onChange: e => {
@@ -645,13 +645,13 @@
 					templateIds: l,
 					templates: d
 				}), C && h && (f || h.textEditable) && r.a.createElement("div", {
-					className: I.a.flairEditSection
+					className: N.a.flairEditSection
 				}, r.a.createElement("div", {
-					className: I.a.editLabel
+					className: N.a.editLabel
 				}, s.fbt._("Edit flair", null, {
 					hk: "1APWWu"
 				})), b && r.a.createElement("div", {
-					className: I.a.restrictionHintText
+					className: N.a.restrictionHintText
 				}, Object(u.k)(h)), r.a.createElement(O, {
 					autofocus: !0,
 					emojiPickerId: "FlairSearch-EmojiPicker-DropdownId",
@@ -1440,7 +1440,7 @@
 					placement: "right"
 				},
 				T = e => e.voteState === O.a.downvoted ? Object(h.a)(e).voteText.downvote : e.voteState === O.a.upvoted ? Object(h.a)(e).voteText.upvote : Object(f.a)(Object(v.a)(e)),
-				I = Object(_.c)({
+				N = Object(_.c)({
 					locale: e => Object(j.i)(e),
 					post: (e, {
 						shouldShowUpvoteRatioOnHover: t,
@@ -1451,8 +1451,8 @@
 						})
 					}
 				}),
-				N = () => 0,
-				k = Object(d.b)(I),
+				I = () => 0,
+				k = Object(d.b)(N),
 				y = Object(r.a)(e => {
 					const t = {
 							color: e.light ? b.a.lightboxHeaderText : T(e)
@@ -1473,7 +1473,7 @@
 						}) : a.a.createElement("span", {
 							className: g.a.dot
 						}, "•") : Object(i.b)(n),
-						I = Object(c.useCallback)(e => {
+						N = Object(c.useCallback)(e => {
 							const {
 								voteCountChange: t
 							} = e.subscribe.data;
@@ -1492,28 +1492,28 @@
 							}
 						}),
 						y = !e.isScoreHidden && f && n < C.a,
-						F = Object(x.a)(w),
-						A = n < 0 ? 0 : n;
+						A = Object(x.a)(w),
+						F = n < 0 ? 0 : n;
 					return a.a.createElement("div", {
 						className: Object(o.a)(g.a.score, e.className),
 						style: e.disableInlineColor ? void 0 : t,
-						onMouseEnter: O ? F.show : void 0,
-						onMouseLeave: O ? F.hide : void 0,
-						ref: O ? F.target.ref : void 0
+						onMouseEnter: O ? A.show : void 0,
+						onMouseLeave: O ? A.hide : void 0,
+						ref: O ? A.target.ref : void 0
 					}, (y || h) && a.a.createElement(a.a.Fragment, null, a.a.createElement(u.b, {
-						initialDisplayCount: A,
-						countToUpperBound: A,
-						initialDelay: N,
-						subsequentRecurringDelay: N,
-						incrementDelta: N,
+						initialDisplayCount: F,
+						countToUpperBound: F,
+						initialDelay: I,
+						subsequentRecurringDelay: I,
+						incrementDelta: I,
 						shouldDisjointAnimation: !0,
 						postId: r,
 						featureName: u.a.Vote,
 						queryKey: "postVoteCount",
 						queryVariables: k.current,
-						onDataCB: I,
+						onDataCB: N,
 						isLoadTestOnly: h && !y
-					})), !y && S, O && j && a.a.createElement(m.a, F, a.a.createElement(p.a, {
+					})), !y && S, O && j && a.a.createElement(m.a, A, a.a.createElement(p.a, {
 						className: g.a.viewCount,
 						post: j,
 						showViewCount: !1
@@ -2159,18 +2159,6 @@
 				d: "M15.59,13.91l2.78,2.69a1.25,1.25,0,1,1-1.74,1.8l-2.82-2.73a8,8,0,1,1,1.78-1.76ZM14.64,9.2A5.45,5.45,0,1,0,9.2,14.64,5.45,5.45,0,0,0,14.64,9.2Z"
 			}))
 		},
-		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, n) {
-			e.exports = {
-				inlineRow: "XZK-LTFT5CgGo9MvPQQsy"
-			}
-		},
-		"./src/reddit/layout/row/Inline/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./src/lib/lessComponent.tsx"),
-				o = n("./src/reddit/layout/row/Inline/index.m.less"),
-				r = n.n(o);
-			t.a = s.a.div("inlineRow", r.a)
-		},
 		"./src/reddit/models/ModQueueTrigger/index.ts": function(e, t, n) {
 			"use strict";
 			var s;
@@ -2395,4 +2383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.0688c1b2bd392440f6c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.7d1ddaf425c37fc7e505.js.map

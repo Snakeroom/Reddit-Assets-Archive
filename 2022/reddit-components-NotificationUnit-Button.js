@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.28599883fc613081db0a.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.03e9f0d925362f47a4e5.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(t, e, o) {
@@ -698,7 +698,8 @@
 				eventSource: b,
 				onClick: f,
 				onAddUserToQuickReplyList: O,
-				children: p
+				children: p,
+				style: j
 			}) => {
 				return s.a.createElement(a.t, {
 					onClick: e => {
@@ -710,7 +711,8 @@
 					priority: c,
 					Icon: d,
 					redditStyle: m,
-					isFullWidth: u
+					isFullWidth: u,
+					style: j
 				}, p)
 			};
 			m.displayName = "ChatButton";
@@ -1090,4 +1092,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.28599883fc613081db0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.03e9f0d925362f47a4e5.js.map

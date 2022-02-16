@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Comment.10259d50729f601b9e1c.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Comment.e5059201b7d3f0aeb1c1.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Comment"], {
 		"./src/reddit/actions/gold/giveAward.ts": function(e, t, r) {
@@ -188,7 +188,7 @@
 					r(b());
 					const a = Date.now(),
 						i = e.replace("r/", ""),
-						u = Object(l.C)(o, i),
+						u = Object(l.D)(o, i),
 						p = await Object(d.b)(n(), {
 							subredditId: u,
 							options: t
@@ -2904,4 +2904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.10259d50729f601b9e1c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.e5059201b7d3f0aeb1c1.js.map

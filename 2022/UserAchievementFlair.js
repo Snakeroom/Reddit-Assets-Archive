@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.d1dca7afd9839e3ab3cb.js
-// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.30c3577f829fe3a1c418.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, r) {
@@ -32,8 +32,8 @@
 			r.r(t);
 			var s = r("./src/lib/classNames/index.ts"),
 				a = r("./node_modules/react/index.js"),
-				i = r.n(a),
-				n = r("./node_modules/react-redux/es/index.js"),
+				n = r.n(a),
+				i = r("./node_modules/react-redux/es/index.js"),
 				c = r("./src/reddit/actions/gold/powerups.ts"),
 				l = r("./src/reddit/components/ScrollGradient/index.tsx"),
 				o = r("./src/reddit/controls/Button/index.tsx"),
@@ -52,50 +52,50 @@
 				subredditId: t,
 				userId: r
 			}) => {
-				const h = Object(n.e)(e => Object(b.d)(e, {
+				const h = Object(i.e)(e => Object(b.d)(e, {
 						subredditId: t,
 						userId: r
 					})),
-					E = Object(n.e)(e => Object(v.R)(e, {
+					E = Object(i.e)(e => Object(v.S)(e, {
 						subredditId: t
 					})),
-					j = Object(n.d)(),
+					j = Object(i.d)(),
 					x = Object(m.a)(),
 					{
 						container: I,
 						isScrollGradientVisible: w,
 						calculateGradientVisibility: N
-					} = Object(u.a)(!1);
+					} = Object(u.b)(!1);
 				Object(a.useEffect)(() => {
 					N()
 				}, [N]);
-				return i.a.createElement("div", {
+				return n.a.createElement("div", {
 					className: Object(s.a)(f.a.container, e)
-				}, i.a.createElement("div", {
+				}, n.a.createElement("div", {
 					className: f.a.header
-				}, i.a.createElement(p.a, {
+				}, n.a.createElement(p.a, {
 					className: f.a.powerupsLogo
-				}), _._("{r/community} {=achievements}", [_._param("r/community", E.displayText), _._param("=achievements", i.a.createElement("span", {
+				}), _._("{r/community} {=achievements}", [_._param("r/community", E.displayText), _._param("=achievements", n.a.createElement("span", {
 					className: f.a.headerText
 				}, _._("achievements", null, {
 					hk: "1IkAza"
 				})))], {
 					hk: "3GkQD9"
-				})), i.a.createElement("div", {
+				})), n.a.createElement("div", {
 					className: f.a.headerDelimiter
-				}), i.a.createElement("div", {
+				}), n.a.createElement("div", {
 					className: f.a.flairs,
 					onScroll: N,
 					ref: I
-				}, h.map(e => i.a.createElement(O, {
+				}, h.map(e => n.a.createElement(O, {
 					flair: e,
 					key: e.type
-				}))), i.a.createElement("div", {
+				}))), n.a.createElement("div", {
 					className: f.a.footer
-				}, i.a.createElement(l.a, {
+				}, n.a.createElement(l.a, {
 					className: f.a.scrollGradient,
 					isVisible: w
-				}), i.a.createElement(o.t, {
+				}), n.a.createElement(o.t, {
 					priority: o.c.Secondary,
 					className: f.a.ctaButton,
 					onClick: () => {
@@ -107,24 +107,24 @@
 				}))))
 			}, O = ({
 				flair: e
-			}) => i.a.createElement("div", {
+			}) => n.a.createElement("div", {
 				className: f.a.flairItem,
 				"data-testid": "powerups-flair-preview"
-			}, i.a.createElement("div", {
+			}, n.a.createElement("div", {
 				className: f.a.flairImgWrapper
-			}, i.a.createElement("img", {
+			}, n.a.createElement("img", {
 				className: f.a.flairImg,
 				src: e.icon.url,
 				alt: e.name
-			})), i.a.createElement("div", {
+			})), n.a.createElement("div", {
 				className: f.a.flairName
-			}, i.a.createElement("span", null, e.name)));
+			}, n.a.createElement("span", null, e.name)));
 			var j = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				x = r("./src/reddit/components/Econ/PowerupsFlair/UserAchievementFlair.m.less"),
 				I = r.n(x);
 			const w = ({
 				achievement: e
-			}) => e ? i.a.createElement("img", {
+			}) => e ? n.a.createElement("img", {
 				alt: e.name,
 				className: I.a.icon,
 				src: e.icon.url
@@ -136,20 +136,20 @@
 				showPopupOnHover: c,
 				onHover: l
 			}) => {
-				const o = Object(n.e)(e => Object(b.g)(e, {
+				const o = Object(i.e)(e => Object(b.g)(e, {
 						subredditId: t,
 						userId: r
 					})),
-					d = Object(n.e)(e => Object(b.j)(e, {
+					d = Object(i.e)(e => Object(b.j)(e, {
 						subredditId: t,
 						userId: r
 					})),
-					u = Object(n.e)(e => Object(b.f)(e, {
+					u = Object(i.e)(e => Object(b.f)(e, {
 						subredditId: t,
 						userId: r
 					})),
 					[m, p] = Object(a.useState)(!1);
-				if (Object(n.e)(e => Object(b.e)(e, {
+				if (Object(i.e)(e => Object(b.e)(e, {
 						subredditId: t,
 						userId: r
 					}) && Object(j.k)(e))) return null;
@@ -158,7 +158,7 @@
 				const h = (null == d ? void 0 : d.type) === (null == o ? void 0 : o.type) ? null : d,
 					f = (h ? 1 : 0) + (o ? 1 : 0),
 					_ = (null == v ? void 0 : v.length) - f;
-				return i.a.createElement("span", {
+				return n.a.createElement("span", {
 					className: Object(s.a)(I.a.container, e),
 					"data-testid": "achievement-flairs",
 					onMouseEnter: () => {
@@ -167,13 +167,13 @@
 					onMouseLeave: () => {
 						p(!1)
 					}
-				}, i.a.createElement(w, {
+				}, n.a.createElement(w, {
 					achievement: h
-				}), i.a.createElement(w, {
+				}), n.a.createElement(w, {
 					achievement: o
-				}), !!_ && i.a.createElement("span", {
+				}), !!_ && n.a.createElement("span", {
 					className: I.a.hiddenAchievementsCount
-				}, "+", _), c && m && i.a.createElement(E, {
+				}, "+", _), c && m && n.a.createElement(E, {
 					className: I.a.hoverPopup,
 					subredditId: t,
 					userId: r
@@ -193,13 +193,13 @@
 			}));
 			var s = r("./src/lib/classNames/index.ts"),
 				a = r("./node_modules/react/index.js"),
-				i = r.n(a),
-				n = r("./src/reddit/components/ScrollGradient/index.m.less"),
-				c = r.n(n);
+				n = r.n(a),
+				i = r("./src/reddit/components/ScrollGradient/index.m.less"),
+				c = r.n(i);
 			const l = ({
 				className: e,
 				isVisible: t
-			}) => i.a.createElement("div", {
+			}) => n.a.createElement("div", {
 				className: Object(s.a)(c.a.gradient, e, {
 					[c.a.visible]: t
 				})
@@ -214,13 +214,13 @@
 			}));
 			var s = r("./src/reddit/helpers/flair.ts"),
 				a = r("./src/reddit/selectors/comments.ts"),
-				i = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
-				n = r("./src/reddit/selectors/telemetry.ts");
+				n = r("./src/reddit/selectors/gold/powerups/flairs.ts"),
+				i = r("./src/reddit/selectors/telemetry.ts");
 			const c = (e, t, r) => c => {
 					const l = Object(a.e)(c, {
 							commentId: e
 						}),
-						o = Object(i.g)(c, {
+						o = Object(n.g)(c, {
 							subredditId: t,
 							userId: r
 						});
@@ -228,7 +228,7 @@
 						source: "meta",
 						action: "hover",
 						noun: "achieve_flair",
-						...n.o(c),
+						...i.o(c),
 						subreddit: {
 							id: t
 						},
@@ -244,30 +244,40 @@
 					source: "powerups",
 					action: "click",
 					noun: "view_your_achievements",
-					...n.o(e)
+					...i.o(e)
 				})
 		},
 		"./src/reddit/hooks/useScrollGradient.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return a
+				return s
+			})), r.d(t, "b", (function() {
+				return n
 			}));
-			var s = r("./node_modules/react/index.js");
+			var s, a = r("./node_modules/react/index.js");
 
-			function a(e) {
-				const [t, r] = Object(s.useState)(e), a = Object(s.useRef)(null);
+			function n(e, t = s.Bottom) {
+				const [r, n] = Object(a.useState)(e), i = Object(a.useRef)(null);
 				return {
-					container: a,
-					isScrollGradientVisible: t,
+					container: i,
+					isScrollGradientVisible: r,
 					calculateGradientVisibility: () => {
-						const e = a.current;
+						const e = i.current;
 						if (!e) return;
-						const t = e.getBoundingClientRect().height,
-							s = Math.ceil(e.scrollTop + t) >= e.scrollHeight;
-						r(!s)
+						const r = e.getBoundingClientRect().height,
+							{
+								scrollHeight: a,
+								scrollTop: c
+							} = e,
+							l = Math.ceil(c + r) >= a,
+							o = Math.ceil(r - c) >= a,
+							d = t === s.Bottom ? l : o;
+						n(!d)
 					}
 				}
-			}
+			}! function(e) {
+				e.Top = "top", e.Bottom = "bottom"
+			}(s || (s = {}))
 		},
 		"./src/reddit/icons/svgs/PowerupTier2/index.tsx": function(e, t, r) {
 			"use strict";
@@ -302,4 +312,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.d1dca7afd9839e3ab3cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.30c3577f829fe3a1c418.js.map

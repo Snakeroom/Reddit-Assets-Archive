@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.70606da3cdb679bb21d1.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.442e111873efc763beaf.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, s) {
@@ -367,8 +367,8 @@
 				F = s("./src/reddit/components/PowerupsSidebar/SupportersListModal/index.m.less"),
 				z = s.n(F);
 			const {
-				fbt: I
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = e => ({
+				fbt: B
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), I = e => ({
 				data: e,
 				key: Object(p.b)(e)
 			});
@@ -381,7 +381,7 @@
 					[o, p] = Object(r.useState)([]);
 				Object(r.useEffect)(() => {
 					var e;
-					p(null !== (e = null == s ? void 0 : s.map(B)) && void 0 !== e ? e : [])
+					p(null !== (e = null == s ? void 0 : s.map(I)) && void 0 !== e ? e : [])
 				}, [s, p]);
 				const b = Object(a.d)(),
 					f = Object(_.a)();
@@ -395,7 +395,7 @@
 						container: h,
 						isScrollGradientVisible: E,
 						calculateGradientVisibility: v
-					} = Object(C.a)(!0);
+					} = Object(C.b)(!0);
 				return Object(r.useEffect)(() => {
 					v()
 				}), t ? n.a.createElement("div", {
@@ -406,7 +406,7 @@
 					onClick: x
 				}), n.a.createElement("h3", {
 					className: z.a.heading
-				}, I._("Community Heroes", null, {
+				}, B._("Community Heroes", null, {
 					hk: "2ssat0"
 				})), n.a.createElement("h4", {
 					className: z.a.subheading
@@ -432,7 +432,7 @@
 				}))) : (b(Object(c.f)({
 					kind: k.b.Error,
 					duration: c.a,
-					text: I._("Something went wrong", null, {
+					text: B._("Something went wrong", null, {
 						hk: "1IJNeH"
 					})
 				})), x(), null)
@@ -516,24 +516,34 @@
 		"./src/reddit/hooks/useScrollGradient.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return n
+				return r
+			})), s.d(t, "b", (function() {
+				return a
 			}));
-			var r = s("./node_modules/react/index.js");
+			var r, n = s("./node_modules/react/index.js");
 
-			function n(e) {
-				const [t, s] = Object(r.useState)(e), n = Object(r.useRef)(null);
+			function a(e, t = r.Bottom) {
+				const [s, a] = Object(n.useState)(e), o = Object(n.useRef)(null);
 				return {
-					container: n,
-					isScrollGradientVisible: t,
+					container: o,
+					isScrollGradientVisible: s,
 					calculateGradientVisibility: () => {
-						const e = n.current;
+						const e = o.current;
 						if (!e) return;
-						const t = e.getBoundingClientRect().height,
-							r = Math.ceil(e.scrollTop + t) >= e.scrollHeight;
-						s(!r)
+						const s = e.getBoundingClientRect().height,
+							{
+								scrollHeight: n,
+								scrollTop: l
+							} = e,
+							i = Math.ceil(l + s) >= n,
+							c = Math.ceil(s - l) >= n,
+							d = t === r.Bottom ? i : c;
+						a(!d)
 					}
 				}
-			}
+			}! function(e) {
+				e.Top = "top", e.Bottom = "bottom"
+			}(r || (r = {}))
 		},
 		"./src/reddit/icons/svgs/PowerupTier1/index.tsx": function(e, t, s) {
 			"use strict";
@@ -634,4 +644,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.70606da3cdb679bb21d1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.442e111873efc763beaf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.a2e7bb136a69d0c11517.js
-// Retrieved at 2/16/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.aa59f33e5d2c1d747e21.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~StandalonePostPage"], {
 		"./src/reddit/components/AdLinkWrapperContent/index.m.less": function(e, t, s) {
@@ -819,7 +819,7 @@
 				Object(i.useEffect)(() => {
 					w(Object(B.u)(s))
 				}, [w, s]);
-				const k = Object(c.e)(t => Object(u.R)(t, {
+				const k = Object(c.e)(t => Object(u.S)(t, {
 						subredditId: e
 					})),
 					N = Object(c.e)(e => e);
@@ -847,7 +847,7 @@
 						actionInfo: {
 							reason: `${s}`
 						},
-						subreddit: Object(u.R)(a, {
+						subreddit: Object(u.S)(a, {
 							subredditId: t
 						})
 					}))({
@@ -990,7 +990,7 @@
 						crosspostIds: [],
 						postUrls: {}
 					}), [s]),
-					M = Object(c.e)(e => Object(u.x)(e, I)),
+					M = Object(c.e)(e => Object(u.y)(e, I)),
 					A = Object(c.e)(e => Object(w.L)(e, F)),
 					U = Object(c.e)(e => Object(w.L)(e, B)),
 					H = M.reduce((e, t) => (e[p ? t.name.toLocaleLowerCase() : t.id] = t, e), {}),
@@ -2954,4 +2954,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.a2e7bb136a69d0c11517.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.aa59f33e5d2c1d747e21.js.map

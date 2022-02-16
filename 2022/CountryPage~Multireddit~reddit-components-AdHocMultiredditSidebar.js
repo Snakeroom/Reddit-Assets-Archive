@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.07f247fafacf2ada9d7d.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.b2ca7993e27ded586665.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -417,7 +417,7 @@
 							method: o.jb.PUT
 						}))(d(), O, p);
 					if (g.ok) {
-						const n = Object(N.I)(c, {
+						const n = Object(N.J)(c, {
 								identifier: t
 							}) || e && e.id || "",
 							d = i.map(e => Object(k.h)(m, e));
@@ -566,7 +566,7 @@
 					if (!c || !c.subredditIds) return;
 					s(he());
 					const l = i && i.reduce((e, t) => {
-							const i = Object(N.C)(d, t) || Object(N.D)(d, t);
+							const i = Object(N.D)(d, t) || Object(N.E)(d, t);
 							return i ? [...e, i] : e
 						}, []),
 						u = await Object(j.a)(n(), {
@@ -842,7 +842,7 @@
 			const h = p.a.wrapped(l.b, "SubredditIcon", b.a),
 				f = p.a.span("Label", b.a),
 				x = Object(c.c)({
-					subredditOrProfile: u.J
+					subredditOrProfile: u.K
 				});
 			var y = Object(a.b)(x)(({
 				children: e,
@@ -1967,7 +1967,7 @@
 					shouldPrettyPrint: f,
 					explanationText: x,
 					shouldShowSubredditOnlineUsers: y = !1
-				} = e, O = Object(d.e)(e => Object(l.t)(e, {
+				} = e, O = Object(d.e)(e => Object(l.u)(e, {
 					subredditName: r
 				})), g = Object(c.c)(r), S = void 0 !== m ? s.fbt._({
 					"*": "{number} members",
@@ -2450,11 +2450,11 @@
 			e.exports = JSON.parse('{"id":"d5a173c1e5e2"}')
 		},
 		"./src/redditGQL/operations/MultiredditListing.json": function(e) {
-			e.exports = JSON.parse('{"id":"1f08d4e1bb27"}')
+			e.exports = JSON.parse('{"id":"ff90a39aeb25"}')
 		},
 		"./src/redditGQL/operations/SubredditTypeaheadSearch.json": function(e) {
 			e.exports = JSON.parse('{"id":"20edc5ee12df"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.07f247fafacf2ada9d7d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.b2ca7993e27ded586665.js.map

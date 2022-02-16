@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a5c2424d9724c8b353c9.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.382b533e6e1402368291.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(t, e, s) {
@@ -12,19 +12,19 @@
 		"./src/reddit/actions/pages/collectionCommentsPage.ts": function(t, e, s) {
 			"use strict";
 			s.r(e), s.d(e, "collectionCommentsPagePending", (function() {
-				return J
-			})), s.d(e, "collectionCommentsPageLoaded", (function() {
 				return B
-			})), s.d(e, "collectionCommentsPageFailed", (function() {
+			})), s.d(e, "collectionCommentsPageLoaded", (function() {
 				return H
-			})), s.d(e, "collectionCommentsPageRequested", (function() {
+			})), s.d(e, "collectionCommentsPageFailed", (function() {
 				return V
-			})), s.d(e, "collectionCommentsPageLoadedFull", (function() {
+			})), s.d(e, "collectionCommentsPageRequested", (function() {
 				return z
+			})), s.d(e, "collectionCommentsPageLoadedFull", (function() {
+				return J
 			})), s.d(e, "fullCollectionCommentsPageDataRequested", (function() {
-				return Q
-			})), s.d(e, "collectionCommentsPageDataRequested", (function() {
 				return Y
+			})), s.d(e, "collectionCommentsPageDataRequested", (function() {
+				return Q
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = s("./src/lib/constants/index.ts"),
@@ -68,12 +68,12 @@
 				L = s("./src/reddit/models/Comment/index.ts"),
 				v = s("./src/reddit/models/Post/index.ts"),
 				$ = s("./src/reddit/reducers/sidebarPromotedPosts/models/index.ts"),
-				A = s("./src/reddit/selectors/platform.ts"),
-				R = s("./src/reddit/selectors/postCollection.ts"),
+				R = s("./src/reddit/selectors/platform.ts"),
+				A = s("./src/reddit/selectors/postCollection.ts"),
 				D = s("./src/reddit/selectors/posts.ts"),
 				U = s("./src/reddit/selectors/subreddit.ts"),
-				q = s("./src/reddit/actions/pages/comments.ts"),
-				K = s("./src/reddit/actions/pages/constants.ts"),
+				K = s("./src/reddit/actions/pages/comments.ts"),
+				q = s("./src/reddit/actions/pages/constants.ts"),
 				G = s("./src/lib/initializeClient/installReducer.ts"),
 				F = s("./src/reddit/reducers/pages/comments/index.ts");
 			Object(G.a)({
@@ -81,10 +81,10 @@
 					comments: F.a
 				}
 			});
-			const J = Object(n.a)(K.d),
-				B = Object(n.a)(K.b),
-				H = Object(n.a)(K.a),
-				V = t => async (e, s) => {
+			const B = Object(n.a)(q.d),
+				H = Object(n.a)(q.b),
+				V = Object(n.a)(q.a),
+				z = t => async (e, s) => {
 					const {
 						collectionId: n,
 						partialPostId: c,
@@ -109,13 +109,13 @@
 						hasSortParam: T,
 						instanceId: x
 					});
-					T && (w.sort = k), e(b.r(j)), await Promise.all([_ ? e(p.d(a)) : Promise.resolve(), e(Y(n, j, g, w))]);
+					T && (w.sort = k), e(b.r(j)), await Promise.all([_ ? e(p.d(a)) : Promise.resolve(), e(Q(n, j, g, w))]);
 					const S = ((t, e) => {
-						const s = Object(R.q)(t, {
+						const s = Object(A.q)(t, {
 							collectionId: e.id
 						});
 						if (!s) return "";
-						const n = Object(U.J)(t, {
+						const n = Object(U.K)(t, {
 								identifier: e
 							}),
 							c = Object(r.c)(s.title, n.name).toString();
@@ -126,12 +126,12 @@
 					}));
 					const $ = s().posts.models[j];
 					if ($) {
-						const o = Object(U.J)(s(), {
+						const o = Object(U.K)(s(), {
 							identifier: $.belongsTo
 						});
 						if (!$.isSponsored)
 							if ($.belongsTo.type === P.a.SUBREDDIT) {
-								!!Object(U.Q)(f, {
+								!!Object(U.R)(f, {
 									subredditId: $.belongsTo.id
 								}) || await e(O.o(o.name))
 							} else await e(p.d(o.name));
@@ -139,17 +139,17 @@
 						e(Object(u.b)(n))
 					}
 					_ ? Object(E.d)(s(), e, t) : Object(E.e)(s(), e, t), Object(N.w)(s(), !0)
-				}, z = Object(n.a)(K.c), Q = (t, e, s, o) => async (n, r, d) => {
+				}, J = Object(n.a)(q.c), Y = (t, e, s, o) => async (n, r, d) => {
 					const i = Object(c.a)(t, e, s, o),
 						a = r();
-					e = e || Object(R.p)(a, {
+					e = e || Object(A.p)(a, {
 						collectionId: t
 					});
 					const l = await T(d.apiContext(), t, e, s, o);
 					if (n(Object(m.n)(l.status)), l.ok) {
 						if (!(e = e || l.body.collections[t].primaryPostId)) return;
 						const s = Object(w.a)(l.body, e, a);
-						n(B({
+						n(H({
 							key: i,
 							collectionId: t,
 							meta: a.meta,
@@ -158,20 +158,20 @@
 							...l.body
 						}));
 						const o = a.user.prefs.commentMode;
-						n(z({
+						n(J({
 							commentMode: o,
 							key: i,
 							postId: e
 						}))
-					} else n(H({
+					} else n(V({
 						error: l.error,
 						key: i,
 						...l.body
 					}))
-				}, Y = (t, e, s, o, n) => async (r, d, p) => {
+				}, Q = (t, e, s, o, n) => async (r, d, p) => {
 					const u = Object(c.a)(t, e, s, o),
 						O = d();
-					e = e || Object(R.p)(O, {
+					e = e || Object(A.p)(O, {
 						collectionId: t
 					});
 					const {
@@ -179,15 +179,15 @@
 					} = o, y = O.pages.comments.keyToHeadCommentId.hasOwnProperty(u), P = O.pages.comments.api.fullyLoaded[u], f = O.pages.comments.api.error[u];
 					if (O.pages.comments.api.pending[u] || y && !f) {
 						if (y && !O.sidebarPromotedPosts.firstFetch) {
-							const t = Object(A.i)(O) ? $.a.COMMENTS_OVERLAY : $.a.COMMENTS;
+							const t = Object(R.i)(O) ? $.a.COMMENTS_OVERLAY : $.a.COMMENTS;
 							window.addEventListener("load", () => {
 								r(Object(i.b)(t))
 							})
 						}
-						return void(P || n || r(Q(t, e, s, o)))
+						return void(P || n || r(Y(t, e, s, o)))
 					}
 					const x = O.user.prefs.commentMode;
-					r(J({
+					r(B({
 						key: u,
 						collectionId: t,
 						commentMode: x,
@@ -199,7 +199,7 @@
 						const t = e && Object(D.G)(d(), {
 							postId: e
 						});
-						t && t.numComments && t.numComments > q.MIN_NUM_COMMENTS_TO_TRUNCATE && (h.truncate = q.NUM_COMMENTS_TRUNCATE)
+						t && t.numComments && t.numComments > K.MIN_NUM_COMMENTS_TO_TRUNCATE && (h.truncate = K.NUM_COMMENTS_TRUNCATE)
 					}
 					let _, E = await Object(S.a)("comments", () => T(p.apiContext(), t, e, s, h));
 					if (r(Object(m.n)(E.status)), E.ok && (e = e || E.body.collections[t].primaryPostId)) {
@@ -216,18 +216,18 @@
 						const n = e ? Object(D.G)(d(), {
 							postId: e
 						}) : null;
-						n && E.body.comments && Object.keys(E.body.comments).length < n.numComments ? r(Q(t, e, s, o)) : E.ok && r(z({
+						n && E.body.comments && Object.keys(E.body.comments).length < n.numComments ? r(Y(t, e, s, o)) : E.ok && r(J({
 							commentMode: x,
 							key: u,
 							postId: e
 						}));
-						const c = Object(A.i)(O) ? $.a.COMMENTS_OVERLAY : $.a.COMMENTS;
+						const c = Object(R.i)(O) ? $.a.COMMENTS_OVERLAY : $.a.COMMENTS;
 						r(Object(i.b)(c))
 					}
 					if (E.ok) {
 						if (!e) return;
 						const t = Object(w.a)(E.body, e, O);
-						r(Object(q.commentsPageLoaded)({
+						r(Object(K.commentsPageLoaded)({
 							commentMode: x,
 							key: u,
 							postId: e,
@@ -246,7 +246,7 @@
 						}))
 					} else C && (r(Object(l.subredditPending)({
 						key: u
-					})), E = await Object(S.a)("subreddit", () => Object(k.a)(p.apiContext(), C, {})), r(Object(m.n)(E.status))), r(Object(l.handleSubredditPageApiError)(E, C)), r(H({
+					})), E = await Object(S.a)("subreddit", () => Object(k.a)(p.apiContext(), C, {})), r(Object(m.n)(E.status))), r(Object(l.handleSubredditPageApiError)(E, C)), r(V({
 						error: E.error,
 						key: u,
 						...E.body
@@ -330,4 +330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.a5c2424d9724c8b353c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.382b533e6e1402368291.js.map

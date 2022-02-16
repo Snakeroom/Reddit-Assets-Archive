@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.4775399a3a6d2614a8f5.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.3268e10f65ca049a7139.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -187,7 +187,7 @@
 					apiContext: s
 				}) => {
 					const r = o(),
-						a = Object(m.R)(r, {
+						a = Object(m.S)(r, {
 							subredditId: e
 						}).name;
 					n(f());
@@ -203,7 +203,7 @@
 					apiContext: s
 				}) => {
 					const r = o(),
-						a = Object(m.R)(r, {
+						a = Object(m.S)(r, {
 							subredditId: e
 						}).name;
 					n(O());
@@ -219,7 +219,7 @@
 					apiContext: r
 				}) => {
 					const d = s(),
-						p = Object(m.R)(d, {
+						p = Object(m.S)(d, {
 							subredditId: t
 						}).name;
 					n(v());
@@ -255,7 +255,7 @@
 					apiContext: r
 				}) => {
 					const a = s(),
-						d = Object(m.R)(a, {
+						d = Object(m.S)(a, {
 							subredditId: t
 						}).name;
 					if (n(g()), (await Object(c.b)(r(), e, d)).ok) {
@@ -283,7 +283,7 @@
 						d = Object(p.d)(a, {
 							subredditId: t
 						}).templateIds,
-						b = Object(m.R)(a, {
+						b = Object(m.S)(a, {
 							subredditId: t
 						}).name;
 					if (n(F({
@@ -361,7 +361,7 @@
 				imageData: o
 			}) => async (s, r, a) => {
 				const i = r(),
-					c = Object(_.R)(i, {
+					c = Object(_.S)(i, {
 						subredditId: e
 					});
 				if (!c) return !1;
@@ -394,7 +394,7 @@
 					...v
 				} = n;
 				let T = v;
-				const k = Object(_.R)(u, {
+				const k = Object(_.S)(u, {
 					subredditId: e
 				});
 				if (!k) return !1;
@@ -467,7 +467,7 @@
 				apiContext: s
 			}) => {
 				const r = o(),
-					a = Object(_.R)(r, {
+					a = Object(_.S)(r, {
 						subredditId: e
 					});
 				if (!a) return !1;
@@ -1675,7 +1675,7 @@
 			const T = (e, t = !1, n = o.UNSET) => `PostFlair__Modal-[postId: ${e}]-isOverlay[${t}]-position[${n}]`,
 				k = Object(c.c)({
 					flairData: O.d,
-					subreddit: j.R
+					subreddit: j.S
 				});
 			class S extends a.a.Component {
 				constructor(e) {
@@ -2964,4 +2964,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.4775399a3a6d2614a8f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.3268e10f65ca049a7139.js.map

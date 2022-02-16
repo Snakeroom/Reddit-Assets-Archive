@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.4e222a73cc086adcb2e7.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c13ce9311a3526815193.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/timeUntil/index.ts": function(e, t, n) {
@@ -317,7 +317,7 @@
 
 			function d(e) {
 				const t = Object(i.d)(),
-					n = Object(i.e)(t => Object(c.R)(t, {
+					n = Object(i.e)(t => Object(c.S)(t, {
 						subredditId: e
 					})),
 					o = Object(i.e)(t => Object(r.i)(t, {
@@ -348,7 +348,7 @@
 		"./src/reddit/components/Econ/Prediction/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "Prediction", (function() {
-				return Me
+				return Se
 			}));
 			var o = n("./node_modules/react/index.js"),
 				s = n.n(o),
@@ -386,7 +386,7 @@
 				w = n("./src/reddit/models/Prediction/index.ts");
 			var I = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
 				y = n("./src/reddit/components/ConfirmUserActionModal/index.tsx");
-			const M = ({
+			const S = ({
 				isResolving: e,
 				isTokens: t,
 				onCancel: n,
@@ -413,7 +413,7 @@
 					hk: "1M6iWL"
 				})
 			});
-			var S = n("./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/index.tsx"),
+			var M = n("./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/index.tsx"),
 				L = n("./src/reddit/components/Econ/Prediction/PredictionCard/index.m.less"),
 				A = n.n(L);
 			const B = ({
@@ -512,7 +512,7 @@
 					f = Object(o.useCallback)(() => {
 						c(null), b(null)
 					}, []);
-				return s.a.createElement(s.a.Fragment, null, s.a.createElement(S.a, {
+				return s.a.createElement(s.a.Fragment, null, s.a.createElement(M.a, {
 					className: A.a.prediction,
 					prediction: t,
 					selectedOptionId: (null == r ? void 0 : r.id) || null,
@@ -537,7 +537,7 @@
 					pollId: t.id,
 					tournamentId: t.tournamentId,
 					withOverlay: !0
-				}), u && s.a.createElement(M, {
+				}), u && s.a.createElement(S, {
 					isResolving: l,
 					isTokens: null !== t.tournamentId,
 					onCancel: f,
@@ -814,7 +814,7 @@
 			}) {
 				const n = Object(N.a)(),
 					o = Object(ge.a)(),
-					a = Object(i.e)(t => Object(ke.R)(t, {
+					a = Object(i.e)(t => Object(ke.S)(t, {
 						subredditId: e
 					})),
 					r = Object(i.e)(t => Object(Ee.b)(t, {
@@ -869,7 +869,7 @@
 					isCommentsPage: c.x,
 					isPredictionsPage: c.O
 				}),
-				Me = ({
+				Se = ({
 					className: e,
 					isCommentsPage: t,
 					isEditing: n,
@@ -906,7 +906,7 @@
 						tournamentId: u
 					}))
 				};
-			t.default = ye(Object(i.b)(Ie)(Me))
+			t.default = ye(Object(i.b)(Ie)(Se))
 		},
 		"./src/reddit/components/Econ/Tournament/Facepile/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1009,4 +1009,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.4e222a73cc086adcb2e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.c13ce9311a3526815193.js.map

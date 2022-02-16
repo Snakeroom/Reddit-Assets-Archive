@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.1cf4323b1eeb20a09a65.js
-// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.75e6a4f27acf6ed9ea2e.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -16,7 +16,7 @@
 
 			function d(e) {
 				const t = Object(c.d)(),
-					n = Object(c.e)(t => Object(a.R)(t, {
+					n = Object(c.e)(t => Object(a.S)(t, {
 						subredditId: e
 					})),
 					o = Object(c.e)(t => Object(i.i)(t, {
@@ -115,7 +115,7 @@
 		"./src/reddit/components/SubredditContent/PredictionsContent/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return N
+				return T
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -193,7 +193,7 @@
 				const t = Object(x.a)(),
 					[n, r] = function(e, t) {
 						const n = Object(s.d)(),
-							o = Object(s.e)(t => Object(P.T)(t, e)),
+							o = Object(s.e)(t => Object(P.U)(t, e)),
 							r = o ? Boolean(o[t]) : void 0;
 						return [r, (o = !0) => {
 							const c = {
@@ -217,11 +217,11 @@
 					})
 				}))
 			};
-			var T = n("./src/reddit/components/SubredditContent/PredictionsContent/index.m.less"),
-				w = n.n(T);
-			const A = 90;
+			var w = n("./src/reddit/components/SubredditContent/PredictionsContent/index.m.less"),
+				A = n.n(w);
+			const N = 90;
 
-			function N({
+			function T({
 				subreddit: e
 			}) {
 				const t = Object(s.d)(),
@@ -230,7 +230,7 @@
 					[b, h] = Object(r.useState)(!1),
 					[y, C] = Object(r.useState)(!1),
 					[v, P] = Object(r.useState)(!1),
-					[T, N] = Object(r.useState)(null),
+					[w, T] = Object(r.useState)(null),
 					{
 						isFetching: I
 					} = Object(l.a)(e.name),
@@ -244,28 +244,28 @@
 				Object(r.useEffect)(() => {
 					n(Object(j.t)())
 				}, [n]), Object(r.useEffect)(() => {
-					L && (m(L.name), N(A - L.name.length))
+					L && (m(L.name), T(N - L.name.length))
 				}, [L]);
 				const M = Object(r.useCallback)(() => {
 						n(Object(j.e)()), P(!0)
 					}, [n]),
 					U = !!u && ((null == L ? void 0 : L.name) !== u && u.length > 3);
 				return c.a.createElement("div", {
-					className: w.a.predictionsContent
+					className: A.a.predictionsContent
 				}, c.a.createElement("h1", {
-					className: w.a.heading
+					className: A.a.heading
 				}, o.fbt._("Predictions", null, {
 					hk: "1SloUh"
 				})), c.a.createElement(p, null, c.a.createElement("div", {
-					className: w.a.section
+					className: A.a.section
 				}, c.a.createElement("label", {
-					className: w.a.label,
+					className: A.a.label,
 					htmlFor: "tournament-name"
 				}, o.fbt._("Tournament name", null, {
 					hk: "1ZAVPf"
 				})), c.a.createElement("input", {
 					name: "tournament-name",
-					className: w.a.input,
+					className: A.a.input,
 					disabled: !L || I,
 					type: "text",
 					value: u,
@@ -273,22 +273,22 @@
 						const {
 							value: t
 						} = e.target;
-						t.length <= A && (m(t), N(A - t.length))
+						t.length <= N && (m(t), T(N - t.length))
 					},
 					placeholder: o.fbt._("/r/{subredditName} tournament", [o.fbt._param("subredditName", e.name)], {
 						hk: "bN9XA"
 					})
 				}), c.a.createElement("div", {
-					className: Object(i.a)(w.a.remainingCharacters, {
-						[w.a.maxCharacters]: (null == u ? void 0 : u.length) === A
+					className: Object(i.a)(A.a.remainingCharacters, {
+						[A.a.maxCharacters]: (null == u ? void 0 : u.length) === N
 					})
-				}, L && L.name !== u && null !== T ? o.fbt._({
+				}, L && L.name !== u && null !== w ? o.fbt._({
 					"*": "{remaining characters} characters remaining",
 					_1: "1 character remaining"
-				}, [o.fbt._plural(T, "remaining characters")], {
+				}, [o.fbt._plural(w, "remaining characters")], {
 					hk: "1dBRgv"
 				}) : c.a.createElement(c.a.Fragment, null, " ")), c.a.createElement(f.l, {
-					className: w.a.button,
+					className: A.a.button,
 					disabled: !u || !L || I || !U,
 					onClick: async () => {
 						if (!L || !u) return null;
@@ -310,15 +310,15 @@
 				}) : o.fbt._("Rename", null, {
 					hk: "4z2EPS"
 				}))), c.a.createElement("div", null, c.a.createElement("label", {
-					className: w.a.label
+					className: A.a.label
 				}, o.fbt._("End tournament", null, {
 					hk: "ZWlOH"
 				})), c.a.createElement("p", {
-					className: w.a.endConditions
+					className: A.a.endConditions
 				}, o.fbt._("Tournament can only be ended after its predictions are ended and resolved", null, {
 					hk: "2AgZtm"
 				})), c.a.createElement(f.l, {
-					className: w.a.button,
+					className: A.a.button,
 					disabled: !L || !F || I,
 					onClick: M
 				}, o.fbt._("End", null, {
@@ -556,4 +556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.1cf4323b1eeb20a09a65.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.75e6a4f27acf6ed9ea2e.js.map

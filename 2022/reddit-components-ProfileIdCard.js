@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.fd9cb76587339e41275f.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.743233dbf5816c2102a4.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -262,7 +262,8 @@
 				eventSource: p,
 				onClick: f,
 				onAddUserToQuickReplyList: b,
-				children: x
+				children: x,
+				style: g
 			}) => {
 				return a.a.createElement(d.t, {
 					onClick: t => {
@@ -274,7 +275,8 @@
 					priority: i,
 					Icon: c,
 					redditStyle: m,
-					isFullWidth: u
+					isFullWidth: u,
+					style: g
 				}, x)
 			};
 			m.displayName = "ChatButton";
@@ -2976,4 +2978,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.fd9cb76587339e41275f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.743233dbf5816c2102a4.js.map

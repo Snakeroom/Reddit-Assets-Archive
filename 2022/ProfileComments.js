@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.a10907e03057f315172c.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.b495aa69fde78e77a682.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, s) {
@@ -719,25 +719,25 @@
 				J = s("./src/reddit/helpers/trackers/post.ts"),
 				H = s("./src/reddit/featureFlags/index.ts"),
 				Q = s("./src/reddit/selectors/comments.ts"),
-				X = s("./src/reddit/selectors/posts.ts"),
-				Z = s("./src/reddit/selectors/profileComments.ts"),
+				Z = s("./src/reddit/selectors/posts.ts"),
+				X = s("./src/reddit/selectors/profileComments.ts"),
 				z = s("./src/reddit/selectors/subreddit.ts"),
 				Y = s("./src/reddit/selectors/tracking.ts"),
 				ee = s("./src/reddit/selectors/user.ts");
 			const te = Object(I.u)(),
 				se = {
-					apiError: Z.a,
-					apiPending: Z.b,
+					apiError: X.a,
+					apiPending: X.b,
 					currentUser: ee.k,
 					measureScrollFPS: H.d.measureScrollFPS,
 					layout: I.R,
-					loadMore: Z.d,
-					subredditsById: z.Y,
+					loadMore: X.d,
+					subredditsById: z.Z,
 					viewportDataLoaded: Y.a,
 					commentsById: Q.q,
-					itemIds: Z.f,
-					itemIdToPostId: Z.e,
-					postsById: X.J,
+					itemIds: X.f,
+					itemIdToPostId: X.e,
+					postsById: Z.J,
 					estimateItemHeight: e => (e, t, s) => {
 						if (s) switch (t) {
 							case w.g.Medium:
@@ -931,4 +931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.a10907e03057f315172c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.b495aa69fde78e77a682.js.map

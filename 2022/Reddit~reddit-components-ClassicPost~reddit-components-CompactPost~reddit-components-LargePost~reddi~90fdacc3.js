@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.78d29fa0b08333849989.js
-// Retrieved at 2/16/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.eeec226d0e561a556e08.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -406,7 +406,7 @@
 					apiContext: s
 				}) => {
 					const o = r(),
-						a = Object(p.R)(o, {
+						a = Object(p.S)(o, {
 							subredditId: e
 						}).name;
 					n(f());
@@ -422,7 +422,7 @@
 					apiContext: s
 				}) => {
 					const o = r(),
-						a = Object(p.R)(o, {
+						a = Object(p.S)(o, {
 							subredditId: e
 						}).name;
 					n(O());
@@ -438,7 +438,7 @@
 					apiContext: o
 				}) => {
 					const d = s(),
-						m = Object(p.R)(d, {
+						m = Object(p.S)(d, {
 							subredditId: t
 						}).name;
 					n(x());
@@ -474,7 +474,7 @@
 					apiContext: o
 				}) => {
 					const a = s(),
-						d = Object(p.R)(a, {
+						d = Object(p.S)(a, {
 							subredditId: t
 						}).name;
 					if (n(I()), (await Object(c.b)(o(), e, d)).ok) {
@@ -502,7 +502,7 @@
 						d = Object(m.d)(a, {
 							subredditId: t
 						}).templateIds,
-						b = Object(p.R)(a, {
+						b = Object(p.S)(a, {
 							subredditId: t
 						}).name;
 					if (n(P({
@@ -580,7 +580,7 @@
 				imageData: r
 			}) => async (s, o, a) => {
 				const i = o(),
-					c = Object(h.R)(i, {
+					c = Object(h.S)(i, {
 						subredditId: e
 					});
 				if (!c) return !1;
@@ -613,7 +613,7 @@
 					...x
 				} = n;
 				let y = x;
-				const j = Object(h.R)(u, {
+				const j = Object(h.S)(u, {
 					subredditId: e
 				});
 				if (!j) return !1;
@@ -686,7 +686,7 @@
 				apiContext: s
 			}) => {
 				const o = r(),
-					a = Object(h.R)(o, {
+					a = Object(h.S)(o, {
 						subredditId: e
 					});
 				if (!a) return !1;
@@ -1196,7 +1196,7 @@
 					}),
 					subredditName: (e, {
 						post: t
-					}) => Object(E.R)(e, {
+					}) => Object(E.S)(e, {
 						subredditId: t.belongsTo.id
 					}).name
 				})),
@@ -3257,4 +3257,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.78d29fa0b08333849989.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.eeec226d0e561a556e08.js.map

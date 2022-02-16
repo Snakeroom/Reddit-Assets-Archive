@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.14312dc2a044d45449c9.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.ab237cfc7808fe86d531.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -732,7 +732,7 @@
 						subredditName: a
 					};
 					if (await r(Object(c.postCreationPageDataRequested)(_)), m || !Object(h.C)(o)) return r(T(e, P));
-					const j = e.allowedPostTypes || Object(g.v)(s(), {
+					const j = e.allowedPostTypes || Object(g.w)(s(), {
 						subredditName: a
 					});
 					if (!j) return void r(T(e, P));
@@ -806,9 +806,9 @@
 			})), r.d(t, "n", (function() {
 				return q
 			})), r.d(t, "s", (function() {
-				return J
-			})), r.d(t, "r", (function() {
 				return X
+			})), r.d(t, "r", (function() {
+				return J
 			})), r.d(t, "g", (function() {
 				return Y
 			})), r.d(t, "q", (function() {
@@ -913,7 +913,7 @@
 						method: s.jb.GET
 					}))(r());
 					n.ok ? e(M(y(n.body))) : e(N(n.error))
-				}, L = "POST_DRAFT__SAVE_DRAFT_PENDING", F = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", V = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(n.a)(L), W = Object(n.a)(F), $ = Object(n.a)(V), z = Object(n.a)(U), K = Object(n.a)(B), Q = Object(n.a)(G), J = Object(n.a)(q), X = e => async (t, r, {
+				}, L = "POST_DRAFT__SAVE_DRAFT_PENDING", F = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", V = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(n.a)(L), W = Object(n.a)(F), $ = Object(n.a)(V), z = Object(n.a)(U), K = Object(n.a)(B), Q = Object(n.a)(G), X = Object(n.a)(q), J = e => async (t, r, {
 					apiContext: n
 				}) => {
 					const o = r(),
@@ -962,7 +962,7 @@
 					let i = P.f;
 					const n = r();
 					if (e.subredditId) {
-						const t = Object(C.R)(n, {
+						const t = Object(C.S)(n, {
 								subredditId: e.subredditId
 							}),
 							r = Object(w.p)(n, {
@@ -1453,7 +1453,7 @@
 					{
 						currentUser: r
 					} = Object(d.a)(),
-					s = Object(n.e)(e => t ? Object(l.J)(e, {
+					s = Object(n.e)(e => t ? Object(l.K)(e, {
 						identifier: t.belongsTo
 					}) : null),
 					i = (null == t ? void 0 : t.belongsTo.type) === o.a.SUBREDDIT ? s : null,
@@ -2228,4 +2228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.14312dc2a044d45449c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.ab237cfc7808fe86d531.js.map

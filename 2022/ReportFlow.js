@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.c3c98cc470d3aac0a60b.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.3eb843e73ecdc6750c08.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1654,7 +1654,7 @@
 				ve = d.a.wrapped(fe.i, "FreeFormTextArea", Re.a),
 				Ee = Object(i.c)({
 					dropdownIsOpen: Object(ue.b)(Ce),
-					freeFormReports: xe.B
+					freeFormReports: xe.C
 				});
 			class Se extends r.a.Component {
 				constructor(e) {
@@ -2887,7 +2887,8 @@
 				const n = Object(i.a)(b.a.row, e, {
 					[b.a.mIsInteractive]: !t.noHover,
 					[b.a.mIsSelected]: t.isSelected,
-					[b.a.topics]: t.isTopicsStyle
+					[b.a.topics]: t.isTopicsStyle,
+					[b.a.modNotes]: t.isModNotesStyle
 				});
 				return a.a.createElement(x, f({
 					className: n
@@ -2900,6 +2901,7 @@
 				text: "_2-cXnP74241WI7fpcpfPmg",
 				row: "_3LwUIE7yX7CZQKmD2L87vf",
 				topics: "kR_ljR-F8vtc-ORj1uipB",
+				modNotes: "sK8_uuNiAqPNlw-HoD2HG",
 				checkmark: "_3Iua3qlR9JiTwjjk6NKye1",
 				mIsSelected: "_1IKtbRloF_LV1hPqMzP3MC",
 				mIsInteractive: "_1oYEKCssGFjqxQ9jJMNj5G"
@@ -3790,4 +3792,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.c3c98cc470d3aac0a60b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.3eb843e73ecdc6750c08.js.map

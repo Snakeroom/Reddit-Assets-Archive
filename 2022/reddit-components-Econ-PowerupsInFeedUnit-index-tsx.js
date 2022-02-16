@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.8a0f7d6899a2e70b0cb4.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.15540c3450f1cc44c963.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -297,7 +297,7 @@
 				}) => {
 					const a = Object(n.d)(),
 						s = Object(l.a)(),
-						r = Object(n.e)(t => Object(p.R)(t, {
+						r = Object(n.e)(t => Object(p.S)(t, {
 							subredditId: e
 						}).displayText);
 					return o.a.createElement("div", {
@@ -333,9 +333,9 @@
 				A = a("./src/reddit/actions/toaster.ts"),
 				M = a("./src/reddit/actions/urlRequested.ts"),
 				T = a("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
-				R = a("./src/reddit/constants/avatars.ts"),
+				S = a("./src/reddit/constants/avatars.ts"),
 				D = a("./src/reddit/controls/LoadingIcon/index.tsx"),
-				S = a("./src/reddit/helpers/avatar/index.ts"),
+				R = a("./src/reddit/helpers/avatar/index.ts"),
 				F = a("./src/reddit/helpers/trackers/snoovatar.ts"),
 				B = a("./src/reddit/models/Avatar/accessories.ts"),
 				L = a("./src/reddit/models/Toast/index.ts"),
@@ -362,7 +362,7 @@
 					legalCopy: m,
 					learnMoreText: b,
 					url: E
-				} = R.a;
+				} = S.a;
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 					className: G.a.modal
 				}, o.a.createElement("div", {
@@ -399,7 +399,7 @@
 						const r = i.snoovatar,
 							o = (null == r ? void 0 : r.styles) || {},
 							n = (null == r ? void 0 : r.accessories) || [],
-							c = Object(S.a)(n, [B.d[e]]).map(e => e.id);
+							c = Object(R.a)(n, [B.d[e]]).map(e => e.id);
 						try {
 							u(!0), a(Object(F.e)("powerups_post_upsell"));
 							const e = await s(Object(k.e)(c, o, {
@@ -499,7 +499,7 @@
 			}) => {
 				const r = Object(n.d)(),
 					i = Object(l.a)(),
-					c = Object(n.e)(e => Object(p.R)(e, {
+					c = Object(n.e)(e => Object(p.S)(e, {
 						subredditId: t
 					}));
 				if (a === s.HIDDEN) return null;
@@ -547,7 +547,7 @@
 				className: t
 			}) => {
 				const a = Object(l.a)(),
-					v = Object(n.e)(t => Object(p.R)(t, {
+					v = Object(n.e)(t => Object(p.S)(t, {
 						subredditId: e
 					})),
 					[E, f] = Object(r.useState)(s.HIDDEN),
@@ -558,7 +558,7 @@
 						const r = Object(b.x)(e, {
 								subredditId: t
 							}),
-							o = Object(p.db)(e, {
+							o = Object(p.eb)(e, {
 								identifier: {
 									name: a,
 									type: u.a.SUBREDDIT
@@ -1356,4 +1356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.8a0f7d6899a2e70b0cb4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.15540c3450f1cc44c963.js.map

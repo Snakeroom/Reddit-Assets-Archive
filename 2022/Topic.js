@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.696a0803b48ac74e40e9.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.d42093004601f07a4651.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./src/reddit/components/GeneralCleanup/SortViewBar/LayoutSwitch/index.m.less": function(e, t, a) {
@@ -46,8 +46,8 @@
 				g = a("./src/reddit/icons/fonts/index.tsx"),
 				v = a("./src/reddit/selectors/telemetry.ts"),
 				E = a("./src/reddit/selectors/tooltip.ts"),
-				f = a("./src/reddit/components/GeneralCleanup/SortViewBar/LayoutSwitch/index.m.less"),
-				S = a.n(f);
+				S = a("./src/reddit/components/GeneralCleanup/SortViewBar/LayoutSwitch/index.m.less"),
+				f = a.n(S);
 
 			function N() {
 				return (N = Object.assign || function(e) {
@@ -127,19 +127,19 @@
 							postLayout: n
 						} = this.props, r = a || b.e[n], o = e === r, c = P[e], l = O[e];
 						return i.a.createElement(_.b, N({}, t, {
-							className: Object(d.a)(S.a.LayoutItem, {
-								[S.a.selected]: o,
-								[S.a.DropdownButton]: null == t ? void 0 : t.showDropdownTriangle
+							className: Object(d.a)(f.a.LayoutItem, {
+								[f.a.selected]: o,
+								[f.a.DropdownButton]: null == t ? void 0 : t.showDropdownTriangle
 							}),
 							"data-layout": e,
 							displayText: l(),
-							iconWrapperClassName: S.a.LayoutItemIconWrapper,
+							iconWrapperClassName: f.a.LayoutItemIconWrapper,
 							isSelected: o,
 							noHover: o,
 							onClick: o ? void 0 : () => this.changeLayout(e),
-							textClassName: S.a.LayoutItemTextClassName
+							textClassName: f.a.LayoutItemTextClassName
 						}), i.a.createElement(c, {
-							className: S.a.LayoutIcon,
+							className: f.a.LayoutIcon,
 							onClick: o ? void 0 : s,
 							isFilled: o && (!t || !1 !== t.forceIconFill)
 						}))
@@ -148,12 +148,12 @@
 							dropdownIsOpen: t
 						} = this.props;
 						return i.a.createElement(y, N({}, e, {
-							className: S.a.Dropdown,
+							className: f.a.Dropdown,
 							isOpen: t,
 							renderContentsHidden: !0,
-							rowClassName: S.a.DropdownRow,
-							rowIconClassName: S.a.DropdownRowIcon,
-							rowSelectedClassName: S.a.DropdownRowSelected,
+							rowClassName: f.a.DropdownRow,
+							rowIconClassName: f.a.DropdownRowIcon,
+							rowSelectedClassName: f.a.DropdownRowSelected,
 							tooltipId: L
 						}), this.renderItem(b.d.Card), this.renderItem(b.d.Classic), this.renderItem(b.d.Compact))
 					}
@@ -166,10 +166,10 @@
 						postLayout: s
 					} = this.props, n = t || b.e[s];
 					return i.a.createElement("div", {
-						className: Object(d.a)(S.a.Container, e),
+						className: Object(d.a)(f.a.Container, e),
 						id: C
 					}, i.a.createElement("div", {
-						className: S.a.DropdownContainer,
+						className: f.a.DropdownContainer,
 						onClick: a
 					}, this.renderItem(n, {
 						id: L,
@@ -253,9 +253,9 @@
 				v = a.n(g);
 			const {
 				fbt: E
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), f = m.a.div("BladeContainer", v.a), S = m.a.wrapped(h.a, "CloseIcon", v.a), N = m.a.div("LoadingTitleContainer", v.a), C = m.a.div("LoadingNavContainer", v.a), L = m.a.div("ShortLoadingNav", v.a), y = m.a.wrapped(b.a, "ThemedChevron", v.a), P = ({
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), S = m.a.div("BladeContainer", v.a), f = m.a.wrapped(h.a, "CloseIcon", v.a), N = m.a.div("LoadingTitleContainer", v.a), C = m.a.div("LoadingNavContainer", v.a), L = m.a.div("ShortLoadingNav", v.a), y = m.a.wrapped(b.a, "ThemedChevron", v.a), P = ({
 				...e
-			}) => r.a.createElement(f, null, r.a.createElement(S, null), r.a.createElement(p.k, null, r.a.createElement(p.p, null, E._("Back to mod tools", null, {
+			}) => r.a.createElement(S, null, r.a.createElement(f, null), r.a.createElement(p.k, null, r.a.createElement(p.p, null, E._("Back to mod tools", null, {
 				hk: "1YCI0W"
 			})), r.a.createElement(p.o, null, r.a.createElement(N, null, r.a.createElement("div", {
 				className: Object(l.a)(v.a.LoadingTitle, e.isLoading && v.a.loading)
@@ -434,15 +434,15 @@
 				g = a("./src/reddit/constants/posts.ts"),
 				v = a("./src/reddit/controls/InternalLink/index.tsx"),
 				E = a("./src/reddit/helpers/name/index.ts"),
-				f = a("./src/reddit/helpers/widgets/index.tsx"),
-				S = a("./src/reddit/selectors/subreddit.ts"),
+				S = a("./src/reddit/helpers/widgets/index.tsx"),
+				f = a("./src/reddit/selectors/subreddit.ts"),
 				N = a("./src/reddit/selectors/user.ts"),
 				C = a("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
 				L = a.n(C);
 			const y = Object(h.c)({
 				isLoggedIn: N.K,
-				subreddit: S.R,
-				subredditAboutInfo: S.s
+				subreddit: f.S,
+				subredditAboutInfo: f.t
 			});
 			class P extends n.a.Component {
 				constructor() {
@@ -454,7 +454,7 @@
 							subredditAboutInfo: s
 						} = this.props;
 						if (!a) return;
-						const n = Object(f.c)(a, s);
+						const n = Object(S.c)(a, s);
 						t(Object(m.o)(e, n))
 					}
 				}
@@ -841,8 +841,8 @@
 					topic: e
 				}))), t) : null
 			}
-			var f = a("./src/reddit/components/StructuredStyles/BladeDrawerController/index.tsx"),
-				S = a("./src/reddit/components/TopicSidebar/index.tsx"),
+			var S = a("./src/reddit/components/StructuredStyles/BladeDrawerController/index.tsx"),
+				f = a("./src/reddit/components/TopicSidebar/index.tsx"),
 				N = a("./src/reddit/components/TopicSidebar/SubredditList/index.tsx"),
 				C = a("./src/reddit/constants/listings.ts"),
 				L = a("./src/reddit/constants/postLayout.ts"),
@@ -1022,7 +1022,7 @@
 				fbt: oe
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), ce = Object(i.c)({
 				isLoggedIn: ne.K,
-				subreddit: se.R,
+				subreddit: se.S,
 				subredditAboutInfo: (e, {
 					subredditId: t
 				}) => e.subreddits.about[t]
@@ -1126,9 +1126,9 @@
 				ve = a("./src/reddit/pages/Topic/TabHeader/index.m.less"),
 				Ee = a.n(ve);
 			const {
-				fbt: fe
+				fbt: Se
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			class Se extends n.a.Component {
+			class fe extends n.a.Component {
 				constructor() {
 					super(...arguments), this.renderRelatedTopic = (e, t) => {
 						const {
@@ -1149,9 +1149,9 @@
 							activeTab: e,
 							topicNamePlural: t
 						} = this.props;
-						return e === M.Posts ? fe._("Posts about {topic name}", [fe._param("topic name", t)], {
+						return e === M.Posts ? Se._("Posts about {topic name}", [Se._param("topic name", t)], {
 							hk: "3AGfU"
-						}) : e === M.Communities ? fe._("Communities related to {topic name}", [fe._param("topic name", t)], {
+						}) : e === M.Communities ? Se._("Communities related to {topic name}", [Se._param("topic name", t)], {
 							hk: "jKM0V"
 						}) : null
 					}
@@ -1173,7 +1173,7 @@
 					}))
 				}
 			}
-			var Ne = Se,
+			var Ne = fe,
 				Ce = a("./src/reddit/selectors/topic.ts"),
 				Le = a("./src/reddit/pages/Topic/index.m.less"),
 				ye = a.n(Le);
@@ -1331,12 +1331,12 @@
 							}),
 							topics: s
 						}));
-					return n.a.createElement(f.a, null, n.a.createElement(O.a, {
+					return n.a.createElement(S.a, null, n.a.createElement(O.a, {
 						className: Object(r.a)(ye.a.Container, e),
 						content: L,
 						fitPageToContent: !0,
 						forcedLayout: h,
-						sidebars: [null, n.a.createElement(S.a, {
+						sidebars: [null, n.a.createElement(f.a, {
 							key: "right",
 							className: ye.a.SidebarRight,
 							listingName: _
@@ -1356,4 +1356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.696a0803b48ac74e40e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.d42093004601f07a4651.js.map

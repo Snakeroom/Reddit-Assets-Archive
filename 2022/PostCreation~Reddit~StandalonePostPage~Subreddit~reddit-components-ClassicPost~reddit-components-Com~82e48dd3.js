@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.85bb0a8c6be58f085676.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.9aea07b6edc5aa635581.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -495,7 +495,7 @@
 				D = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.tsx"),
 				U = s("./src/reddit/components/HTML5StreamPlayer/VolumeControl/index.m.less"),
 				W = s.n(U);
-			class G extends i.Component {
+			class J extends i.Component {
 				constructor(e) {
 					super(e), this.step = .1, this.max = 1, this.min = 0, this.handleMouseDown = e => {
 						if (0 === e.button && this.track) {
@@ -578,8 +578,8 @@
 					}))))
 				}
 			}
-			var J = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.m.less"),
-				Y = s.n(J);
+			var G = s("./src/reddit/components/HTML5StreamPlayer/ControlBar/index.m.less"),
+				Y = s.n(G);
 
 			function z() {
 				return (z = Object.assign || function(e) {
@@ -721,7 +721,7 @@
 						zeroOpacity: this.props.hideControlBar
 					}, this.renderContent(), this.props.hasAudio && r.a.createElement(ne, {
 						className: this.props.showVolumeIcon ? "disableHide" : ""
-					}, r.a.createElement(G, {
+					}, r.a.createElement(J, {
 						className: Y.a.VolumeControl,
 						ref: e => this.props.volumeRef(e),
 						active: this.props.settingChange === c.a.Volume,
@@ -740,7 +740,7 @@
 				className: Y.a.AudioOnlyControlBar,
 				isFullScreen: e.isFullScreen,
 				zeroOpacity: e.hideControlBar
-			}, r.a.createElement(ne, null, r.a.createElement(G, {
+			}, r.a.createElement(ne, null, r.a.createElement(J, {
 				className: Y.a.VolumeControl,
 				ref: t => e.volumeRef(t),
 				active: e.settingChange === c.a.Volume,
@@ -1024,9 +1024,9 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const G = 0,
-				J = [1080, 720],
-				Y = [...J, 480, 360, 240, G],
+			const J = 0,
+				G = [1080, 720],
+				Y = [...G, 480, 360, 240, J],
 				z = e => c.a.createElement("button", {
 					"aria-checked": e.isChecked,
 					className: U.a.SetAutoplayButton,
@@ -1052,9 +1052,9 @@
 						tabIndex: 0
 					}, c.a.createElement(A.a, null), c.a.createElement("div", {
 						className: U.a.VideoResolutionDescription
-					}, t === G ? H.fbt._("Auto", null, {
+					}, t === J ? H.fbt._("Auto", null, {
 						hk: "6zgZT"
-					}) : c.a.createElement(c.a.Fragment, null, c.a.createElement("span", null, t, "p"), J.includes(t) && c.a.createElement("span", {
+					}) : c.a.createElement(c.a.Fragment, null, c.a.createElement("span", null, t, "p"), G.includes(t) && c.a.createElement("span", {
 						className: U.a.VideoHd
 					}, " ", H.fbt._("HD", null, {
 						hk: "2KjxjH"
@@ -1097,7 +1097,7 @@
 						className: s,
 						isLoggedIn: n,
 						resolution: i
-					} = this.props, r = [...t.map(e => e.height), G];
+					} = this.props, r = [...t.map(e => e.height), J];
 					return c.a.createElement(Z, {
 						innerRef: this.setContainerRef,
 						className: Object(u.a)(U.a.VideoSettingContainer, s),
@@ -1355,7 +1355,7 @@
 					},
 					setMutedInFeed: t => e(E.G(t))
 				}));
-			class Ge extends a.Component {
+			class Je extends a.Component {
 				constructor(e) {
 					super(e), this.isSeekingWithRetry = !1, this.percentagePixelsFired = {
 						[w.b]: !1,
@@ -1582,7 +1582,7 @@
 							bitrateInfo: t
 						} = this.state;
 						if (t && this.dashPlayer) {
-							if (e === G) this.dashPlayer.updateSettings({
+							if (e === J) this.dashPlayer.updateSettings({
 								streaming: {
 									abr: {
 										autoSwitchBitrate: {
@@ -1672,7 +1672,7 @@
 						})
 					}, this.videoRef = e => {
 						this.HTML5StreamPlayerVideo = e, this.HTML5StreamPlayerVideo && (this.HTML5StreamPlayerVideo.volume = this.state.volume)
-					}, Ge.dashjs || (Ge.dashjs = Object(v.a)(() => s.e("vendors~dashjs").then(s.t.bind(null, "./node_modules/dashjs/build/es5/index.js", 7))));
+					}, Je.dashjs || (Je.dashjs = Object(v.a)(() => s.e("vendors~dashjs").then(s.t.bind(null, "./node_modules/dashjs/build/es5/index.js", 7))));
 					const t = !!e.isListing && e.mutedInFeed;
 					this.state = {
 						bitrateInfo: [],
@@ -1684,7 +1684,7 @@
 						lastUpdate: null,
 						ignoreUnderrunsUntil: 0,
 						maxTimeServed: 0,
-						resolution: G,
+						resolution: J,
 						scrubPosition: 0,
 						settingChange: void 0,
 						settingSeekBar: !1,
@@ -1720,7 +1720,7 @@
 					return this.shouldAutoplay(e) && this.isUnobscured(e) && this.isInViewport(e, t)
 				}
 				componentDidMount() {
-					Ge.dashjs.then(e => {
+					Je.dashjs.then(e => {
 						var t, s;
 						const n = this.HTML5StreamPlayerVideo,
 							i = this.props.mpegDashSource;
@@ -1989,7 +1989,7 @@
 					}))
 				}
 			}
-			t.b = We(Object(P.c)(Object(T.b)(Ge)))
+			t.b = We(Object(P.c)(Object(T.b)(Je)))
 		},
 		"./src/reddit/components/JSAPIContainers/index.tsx": function(e, t, s) {
 			"use strict";
@@ -2062,7 +2062,7 @@
 			const v = (e, t) => {
 				var s;
 				const n = null !== (s = t.comment) && void 0 !== s ? s : Object(f.b)(e, t),
-					i = Object(b.G)(e, t);
+					i = Object(b.H)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!i || !i.name) && !!e.moderatingSubreddits[i.name],
@@ -2102,7 +2102,7 @@
 			const x = (e, t) => {
 				var s;
 				const n = null !== (s = t.comment) && void 0 !== s ? s : Object(f.b)(e, t),
-					i = Object(b.G)(e, t);
+					i = Object(b.H)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!i || !i.name) && !!e.moderatingSubreddits[i.name],
@@ -2128,7 +2128,7 @@
 				}
 			}));
 			var E = Object(r.b)(() => Object(o.c)({
-					subreddit: b.R
+					subreddit: b.S
 				}))(e => i.a.createElement(h, {
 					className: e.className,
 					type: "communityTools",
@@ -2228,7 +2228,7 @@
 				}) : null
 			};
 			var T = Object(r.b)(() => Object(o.c)({
-				subreddit: b.R
+				subreddit: b.S
 			}))(e => i.a.createElement(h, {
 				className: e.className,
 				type: "sidebar",
@@ -2241,7 +2241,7 @@
 				}
 			}));
 			var _ = Object(r.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(b.J)(e, {
+				subredditOrProfile: (e, t) => Object(b.K)(e, {
 					identifier: t
 				})
 			}))(e => i.a.createElement(h, {
@@ -2258,7 +2258,7 @@
 			var O = Object(r.b)(() => Object(o.c)({
 				subreddit: (e, {
 					subredditId: t
-				}) => t ? Object(b.R)(e, {
+				}) => t ? Object(b.S)(e, {
 					subredditId: t
 				}) : null
 			}))(e => i.a.createElement(h, {
@@ -3693,7 +3693,7 @@
 							{
 								H: n,
 								D: i
-							} = J(e.a),
+							} = G(e.a),
 							{
 								c: o = []
 							} = e;
@@ -3804,16 +3804,16 @@
 						f: s,
 						t: i
 					} = e, r = [];
-					if (!s) return G(0, i, t);
+					if (!s) return J(0, i, t);
 					const o = Object(n.a)(i);
 					let a = 0,
 						c = 0;
 					const d = s.length;
 					for (; a < d; a++) {
 						const [e, t, n] = s[a], d = t + n, l = o[t], u = o[d] - l;
-						l > c && r.push(G(0, i.substr(c, l - c), `between${a}`)), r.push(G(e, i.substr(l, u), a)), c = l + u
+						l > c && r.push(J(0, i.substr(c, l - c), `between${a}`)), r.push(J(e, i.substr(l, u), a)), c = l + u
 					}
-					return c < i.length && r.push(G(0, i.substr(c), `remaining${a}`)), r
+					return c < i.length && r.push(J(0, i.substr(c), `remaining${a}`)), r
 				},
 				W = {
 					[h.j.monospace]: c.h,
@@ -3824,13 +3824,13 @@
 					[h.j.subscript]: c.l,
 					[h.j.superscript]: c.m
 				},
-				G = (e, t, s) => {
+				J = (e, t, s) => {
 					let n = t;
 					return n = r()(W, (t, n, i) => e & parseInt(i, 10) ? a.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
-				J = e => {
+				G = e => {
 					switch (e) {
 						case h.f:
 							return {
@@ -4031,7 +4031,7 @@
 				r = s("./src/reddit/actions/subscription/index.ts"),
 				o = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(i.c)({
-				userIsSubscriber: o.db
+				userIsSubscriber: o.eb
 			}), (e, {
 				identifier: t
 			}) => ({
@@ -4182,7 +4182,7 @@
 							subredditName: n,
 							[i]: s.id
 						},
-						d = Object(l.w)(e, {
+						d = Object(l.x)(e, {
 							subredditName: n
 						});
 					return d ? {
@@ -4927,7 +4927,7 @@
 				m = (e, {
 					subredditName: t
 				}) => {
-					const s = Object(o.V)(e, {
+					const s = Object(o.W)(e, {
 						subredditName: t
 					});
 					return (s && s.postIds || []).slice(0, 2)
@@ -5005,4 +5005,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.85bb0a8c6be58f085676.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.9aea07b6edc5aa635581.js.map

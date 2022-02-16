@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.7aace05cf8b44a4e7359.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.c2edadf0d78eb493b875.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -205,11 +205,11 @@
 			const M = Object(v.u)({
 					currentPageUrl: v.f
 				}),
-				Q = Object(l.c)({
+				D = Object(l.c)({
 					moderatingSubreddits: F.n,
 					origin: O.j
 				}),
-				D = Object(i.b)(Q),
+				Q = Object(i.b)(D),
 				R = p.a.div("DropdownContainer", B.a),
 				W = p.a.div("SearchBarContainer", B.a),
 				A = p.a.wrapped(S.b, "Row", B.a),
@@ -274,7 +274,7 @@
 					}))
 				}
 			}
-			var V = M(D(X)),
+			var V = M(Q(X)),
 				q = s("./src/reddit/components/ModQueueList/LayoutNavigation.m.less"),
 				H = s.n(q);
 			const z = Object(m.a)(b.a),
@@ -317,7 +317,7 @@
 					}) : null,
 					subreddit: (e, {
 						subredditName: t
-					}) => t ? Object(C.w)(e, {
+					}) => t ? Object(C.x)(e, {
 						subredditName: t
 					}) : null
 				}),
@@ -486,8 +486,8 @@
 				w = s("./src/reddit/components/Comments/UnthreadedCommentDashWrapper/index.tsx"),
 				B = s("./src/reddit/components/Comments/UnthreadedCommentMeta/index.tsx"),
 				M = s("./src/reddit/components/Comments/UnthreadedCommentPostMeta/index.tsx"),
-				Q = s("./src/reddit/components/ModModeFilteredReason/index.tsx"),
-				D = s("./src/reddit/components/ModModeFilteredReason/helpers.ts"),
+				D = s("./src/reddit/components/ModModeFilteredReason/index.tsx"),
+				Q = s("./src/reddit/components/ModModeFilteredReason/helpers.ts"),
 				R = s("./src/reddit/components/ModModeReports/index.tsx"),
 				W = s("./src/reddit/components/RichTextJson/index.tsx"),
 				A = s("./src/reddit/components/VerticalVotes/index.tsx"),
@@ -521,7 +521,7 @@
 						subreddit: c,
 						showBulkActionCheckbox: m,
 						toggleCheckbox: p
-					} = e, u = Object(D.d)(s), b = Object(h.c)(s);
+					} = e, u = Object(Q.d)(s), b = Object(h.c)(s);
 					return l.a.createElement(F.a, {
 						className: Object(g.a)(t, H.a.Component, H.a.UnthreadedCommentContainer, {
 							[H.a.isBanned]: !!s.bannedBy,
@@ -553,7 +553,7 @@
 						comment: s,
 						flair: n,
 						subredditName: c ? c.displayText : null
-					}), u && l.a.createElement(Q.a, {
+					}), u && l.a.createElement(D.a, {
 						thing: s
 					}), b && l.a.createElement(R.a, {
 						onIgnoreReports: r,
@@ -587,7 +587,7 @@
 						subreddit: m,
 						showBulkActionCheckbox: p,
 						toggleCheckbox: u
-					} = e, b = Object(D.d)(s);
+					} = e, b = Object(Q.d)(s);
 					return l.a.createElement(F.a, {
 						className: t,
 						clickTrackingId: s.id,
@@ -607,7 +607,7 @@
 						content: Object(X.a)(s),
 						mediaMetadata: s.media && s.media.mediaMetadata,
 						rtJsonElementProps: pe(e)
-					})), b && l.a.createElement(Q.a, {
+					})), b && l.a.createElement(D.a, {
 						thing: s
 					}), a && l.a.createElement(R.a, {
 						onIgnoreReports: i,
@@ -657,8 +657,8 @@
 					isLoading: !0,
 					layout: e.layout
 				}))),
-				Qe = s("./node_modules/lodash/flatten.js"),
-				De = s.n(Qe),
+				De = s("./node_modules/lodash/flatten.js"),
+				Qe = s.n(De),
 				Re = s("./src/reddit/actions/tooltip.ts"),
 				We = s("./src/reddit/icons/fonts/index.tsx"),
 				Ae = s("./src/reddit/icons/fonts/Approve/index.tsx"),
@@ -806,7 +806,7 @@
 					onToggleFlairModal: () => e(Object(He.i)(xt))
 				})),
 				Et = (e, t) => {
-					const s = De()(e.map(e => t[e].flair));
+					const s = Qe()(e.map(e => t[e].flair));
 					if (s.length <= 1) return s;
 					const o = [];
 					return s.forEach(e => {
@@ -977,7 +977,7 @@
 					modQueueListingItems: Ee.c,
 					origin: ke.j,
 					selectedItems: Ee.f,
-					subredditId: (e, t) => t.subredditName ? Object(ye.C)(e, t.subredditName) : null
+					subredditId: (e, t) => t.subredditName ? Object(ye.D)(e, t.subredditName) : null
 				}),
 				vt = Object(d.b)(Lt, e => ({
 					addSelectedItems: t => e(Object(u.a)({
@@ -1000,11 +1000,11 @@
 					return Nt(e) === Ce.b ? t : 25 * wt(e) + t
 				},
 				Mt = e => Nt(e) === Ce.b ? Ce.b : 25 * wt(e) + 1;
-			var Qt;
+			var Dt;
 			! function(e) {
 				e.comments = "comments", e.hasReports = "hasReports", e.posts = "posts", e.postsWithFlair = "postsWithFlair", e.selfPosts = "selfPosts", e.spamFiltered = "spamFiltered"
-			}(Qt || (Qt = {}));
-			class Dt extends l.a.Component {
+			}(Dt || (Dt = {}));
+			class Qt extends l.a.Component {
 				constructor() {
 					super(...arguments), this.isCheckboxSelected = e => r()(this.props.selectedItems, e), this.isAllSelected = e => {
 						const t = n()(e, this.props.selectedItems);
@@ -1015,22 +1015,22 @@
 						const t = [];
 						if (!this.props.modQueueListingItems || !this.props.modQueueListingItems.length) return t;
 						switch (e) {
-							case Qt.posts:
+							case Dt.posts:
 								this.props.modQueueListingItems.forEach(e => {
 									Object(j.a)(e.id) && t.push(e.id)
 								});
 								break;
-							case Qt.comments:
+							case Dt.comments:
 								this.props.modQueueListingItems.forEach(e => {
 									Object(I.a)(e.id) && t.push(e.id)
 								});
 								break;
-							case Qt.hasReports:
+							case Dt.hasReports:
 								this.props.modQueueListingItems.forEach(e => {
 									e.numReports && e.numReports > 0 && t.push(e.id)
 								});
 								break;
-							case Qt.postsWithFlair:
+							case Dt.postsWithFlair:
 								this.props.modQueueListingItems.forEach(e => {
 									if (Object(j.a)(e.id)) {
 										const s = e;
@@ -1038,7 +1038,7 @@
 									}
 								});
 								break;
-							case Qt.selfPosts:
+							case Dt.selfPosts:
 								this.props.modQueueListingItems.forEach(e => {
 									if (Object(j.a)(e.id)) {
 										const s = e;
@@ -1046,7 +1046,7 @@
 									}
 								});
 								break;
-							case Qt.spamFiltered:
+							case Dt.spamFiltered:
 								this.props.modQueueListingItems.forEach(e => {
 									e.isSpam && t.push(e.id)
 								})
@@ -1140,7 +1140,7 @@
 					}), e.modQueueListingItems && e.modQueueListingItems.length ? this.renderItems(e) : e.modQueueListingItems ? l.a.createElement(Ne, null) : e.isModQueueListingPending ? l.a.createElement(Me, null) : null)
 				}
 			}
-			t.a = Pt(vt(Dt))
+			t.a = Pt(vt(Qt))
 		},
 		"./src/reddit/components/PaginationButtons/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1355,4 +1355,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.7aace05cf8b44a4e7359.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.c2edadf0d78eb493b875.js.map

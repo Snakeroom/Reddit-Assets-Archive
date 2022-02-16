@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6a33c55c1a337fb70a61.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e36fcdc43f216750aba1.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -13370,665 +13370,641 @@
 		"./src/chat/models/Theme/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return R
+				return p
 			})), n.d(t, "c", (function() {
-				return B
+				return b
 			})), n.d(t, "f", (function() {
-				return H
+				return g
 			})), n.d(t, "e", (function() {
-				return X
+				return S
 			})), n.d(t, "b", (function() {
-				return J
+				return N
 			})), n.d(t, "a", (function() {
-				return $
+				return k
 			}));
 			var a = n("./node_modules/polished/dist/polished.es.js"),
 				s = n("./src/reddit/constants/theme.ts"),
 				c = n("./src/reddit/models/Theme/index.ts"),
-				r = n("./src/chat/constants/theme.ts");
-			const o = "#3690ea",
-				i = "#006dc6",
-				l = "#e4abff",
-				d = "#b44ac0",
-				u = "#9c3cac",
-				h = "#ffd635",
-				m = "#009eaa",
-				p = "#e9ebed",
-				b = "#d4d7d9",
-				g = "#989ca0",
-				f = "#898d90",
-				O = "#fb133a",
-				E = "#5a5c5e",
-				j = "#464748",
-				v = "#242424",
-				_ = "#94b3ff",
-				C = "#6a5cff",
-				I = "#5349da",
-				y = "#ff3881",
-				x = "#282829",
-				S = "#343536",
-				N = "#3A3A3C",
-				k = "#D8DADC",
-				w = "#1A232C",
-				T = "#29292A";
-			var M = n("./src/reddit/constants/colors.ts"),
-				A = n("./src/reddit/models/NewStructuredStyles/index.ts");
+				r = n("./src/chat/constants/theme.ts"),
+				o = n("./src/lib/constants/colors.ts"),
+				i = n("./src/reddit/constants/colors.ts"),
+				l = n("./src/reddit/models/NewStructuredStyles/index.ts");
 			const {
-				REDDIT: D,
-				NIGHT: L
-			} = s.b, U = e => c.d[e].newRedditTheme;
-			var P;
+				REDDIT: d,
+				NIGHT: u
+			} = s.b, h = e => c.d[e].newRedditTheme;
+			var m;
 			! function(e) {
 				e.NONE = "none", e.UNDERLINE = "underline"
-			}(P || (P = {}));
-			const R = "22.5";
-			var B;
+			}(m || (m = {}));
+			const p = "22.5";
+			var b;
 			! function(e) {
 				e.BASIC = "basic", e.BERRY = "berry", e.UNICORN = "unicorn", e.ORANGERED = "orangered", e.PERIWINKLE = "periwinkle", e.OCEAN = "ocean", e.ROYAL = "royal", e.VANITY = "vanity", e.SERIOUS = "serious"
-			}(B || (B = {}));
-			const H = {
-					[B.BERRY]: {
+			}(b || (b = {}));
+			const g = {
+					[b.BERRY]: {
 						stops: [{
 							offset: "11.68%",
-							color: u
+							color: o.a.berry600
 						}, {
 							offset: "88.32%",
-							color: y
+							color: o.a.sakura500
 						}]
 					},
-					[B.ORANGERED]: {
+					[b.ORANGERED]: {
 						stops: [{
 							offset: "11.68%",
-							color: O
+							color: o.a.orangeRed600
 						}, {
 							offset: "88.32%",
-							color: h
+							color: o.a.mango500
 						}]
 					},
-					[B.OCEAN]: {
+					[b.OCEAN]: {
 						stops: [{
 							offset: "11.68%",
-							color: m
+							color: o.a.mint600
 						}, {
 							offset: "88.32%",
-							color: o
+							color: o.a.alien500
 						}]
 					},
-					[B.VANITY]: {
+					[b.VANITY]: {
 						stops: [{
 							offset: "11.68%",
-							color: I
+							color: o.a.periwinkle600
 						}, {
 							offset: "88.32%",
-							color: d
+							color: o.a.berry500
 						}]
 					},
-					[B.ROYAL]: {
+					[b.ROYAL]: {
 						stops: [{
 							offset: "11.68%",
-							color: i
+							color: o.a.alien600
 						}, {
 							offset: "88.32%",
-							color: C
+							color: o.a.periwinkle500
 						}]
 					},
-					[B.SERIOUS]: {
+					[b.SERIOUS]: {
 						stops: [{
 							offset: "11.68%",
-							color: o
+							color: o.a.alien500
 						}, {
 							offset: "88.32%",
-							color: _
+							color: o.a.periwinkle300
 						}]
 					},
-					[B.UNICORN]: {
+					[b.UNICORN]: {
 						stops: [{
 							offset: "11.68%",
-							color: C
+							color: o.a.periwinkle500
 						}, {
 							offset: "88.32%",
-							color: l
+							color: o.a.berry300
 						}]
 					}
 				},
-				F = e => {
-					return `linear-gradient(22.5deg, ${H[e].stops.map(e=>`${e.color} ${e.offset}`).join(", ")})`
+				f = e => {
+					return `linear-gradient(22.5deg, ${g[e].stops.map(e=>`${e.color} ${e.offset}`).join(", ")})`
 				},
-				G = {
+				O = {
 					bubble: {
-						background: F(B.BERRY),
-						color: M.a.white,
-						border: M.a.transparent,
+						background: f(b.BERRY),
+						color: i.a.white,
+						border: i.a.transparent,
 						link: {
-							color: M.a.white,
-							textDecoration: P.UNDERLINE
+							color: i.a.white,
+							textDecoration: m.UNDERLINE
 						},
 						channelsFilter: {
-							background: F(B.BERRY),
-							selected: M.a.white
+							background: f(b.BERRY),
+							selected: i.a.white
 						}
 					}
 				},
-				V = {
+				E = {
 					bubble: {
-						background: F(B.VANITY),
-						color: M.a.white,
-						border: M.a.transparent,
+						background: f(b.VANITY),
+						color: i.a.white,
+						border: i.a.transparent,
 						link: {
-							color: M.a.white,
-							textDecoration: P.UNDERLINE
+							color: i.a.white,
+							textDecoration: m.UNDERLINE
 						},
 						channelsFilter: {
-							background: F(B.VANITY),
-							selected: M.a.white
+							background: f(b.VANITY),
+							selected: i.a.white
 						}
 					}
 				},
-				z = {
+				j = {
 					bubble: {
-						background: F(B.SERIOUS),
-						color: M.a.white,
-						border: M.a.transparent,
+						background: f(b.SERIOUS),
+						color: i.a.white,
+						border: i.a.transparent,
 						link: {
-							color: M.a.white,
-							textDecoration: P.UNDERLINE
+							color: i.a.white,
+							textDecoration: m.UNDERLINE
 						},
 						channelsFilter: {
-							background: F(B.SERIOUS),
-							selected: M.a.white
+							background: f(b.SERIOUS),
+							selected: i.a.white
 						}
 					}
 				},
-				W = {
+				v = {
 					bubble: {
-						background: F(B.ROYAL),
-						color: M.a.white,
-						border: M.a.transparent,
+						background: f(b.ROYAL),
+						color: i.a.white,
+						border: i.a.transparent,
 						link: {
-							color: M.a.white,
-							textDecoration: P.UNDERLINE
+							color: i.a.white,
+							textDecoration: m.UNDERLINE
 						},
 						channelsFilter: {
-							background: F(B.ROYAL),
-							selected: M.a.white
+							background: f(b.ROYAL),
+							selected: i.a.white
 						}
 					}
 				},
-				K = {
+				_ = {
 					bubble: {
-						background: F(B.OCEAN),
-						color: M.a.white,
-						border: M.a.transparent,
+						background: f(b.OCEAN),
+						color: i.a.white,
+						border: i.a.transparent,
 						link: {
-							color: M.a.white,
-							textDecoration: P.UNDERLINE
+							color: i.a.white,
+							textDecoration: m.UNDERLINE
 						},
 						channelsFilter: {
-							background: F(B.OCEAN),
-							selected: M.a.white
+							background: f(b.OCEAN),
+							selected: i.a.white
 						}
 					}
 				},
-				Z = {
+				C = {
 					bubble: {
-						background: F(B.ORANGERED),
-						color: M.a.white,
-						border: M.a.transparent,
+						background: f(b.ORANGERED),
+						color: i.a.white,
+						border: i.a.transparent,
 						link: {
-							color: M.a.white,
-							textDecoration: P.UNDERLINE
+							color: i.a.white,
+							textDecoration: m.UNDERLINE
 						},
 						channelsFilter: {
-							background: F(B.ORANGERED),
-							selected: M.a.white
+							background: f(b.ORANGERED),
+							selected: i.a.white
 						}
 					}
 				},
-				q = {
+				I = {
 					bubble: {
-						background: F(B.UNICORN),
-						color: M.a.white,
-						border: M.a.transparent,
+						background: f(b.UNICORN),
+						color: i.a.white,
+						border: i.a.transparent,
 						link: {
-							color: M.a.white,
-							textDecoration: P.UNDERLINE
+							color: i.a.white,
+							textDecoration: m.UNDERLINE
 						},
 						channelsFilter: {
-							background: F(B.UNICORN),
-							selected: M.a.white
+							background: f(b.UNICORN),
+							selected: i.a.white
 						}
 					}
 				},
-				Q = {
+				y = {
 					activity: {
 						icon: {
-							default: U(D).actionIcon,
-							active: M.a.alienblue,
-							disable: Object(a.a)(.5, M.a.white),
-							hover: Object(a.a)(.5, M.a.white),
-							contrast: U(D).bodyText,
-							toaster: U(D).bodyText,
+							default: h(d).actionIcon,
+							active: i.a.alienblue,
+							disable: Object(a.a)(.5, i.a.white),
+							hover: Object(a.a)(.5, i.a.white),
+							contrast: h(d).bodyText,
+							toaster: h(d).bodyText,
 							nsfw: {
-								bg: M.a.black,
-								text: M.a.white
+								bg: i.a.black,
+								text: i.a.white
 							},
 							subIcon: {
-								backgroundColor: M.a.white
+								backgroundColor: i.a.white
 							}
 						},
 						text: {
-							regular: U(D).bodyText,
-							active: M.a.alienblue,
-							fade: Object(a.a)(.4, M.a.white),
-							light: U(D).actionIcon,
-							warning: M.a.warning,
-							highlight: M.a.white,
-							success: M.a.approved,
-							meta: U(D).metaText
+							regular: h(d).bodyText,
+							active: i.a.alienblue,
+							fade: Object(a.a)(.4, i.a.white),
+							light: h(d).actionIcon,
+							warning: i.a.warning,
+							highlight: i.a.white,
+							success: i.a.approved,
+							meta: h(d).metaText
 						},
 						button: {
-							primary: M.a.alienblue,
-							secondary: U(D).metaText,
-							chatFilterColor: E
+							primary: i.a.alienblue,
+							secondary: h(d).metaText,
+							chatFilterColor: o.a.orca50
 						},
 						buttonPrimary: {
-							color: M.a.white
+							color: i.a.white
 						},
 						buttonSecondary: {
-							active: M.a.alienblue
+							active: i.a.alienblue
 						},
 						send: {
-							disable: Object(a.a)(.5, M.a.white),
-							hover: Object(a.a)(.08, M.a.op)
+							disable: Object(a.a)(.5, i.a.white),
+							hover: Object(a.a)(.08, i.a.op)
 						},
 						checkbox: {
-							checked: M.a.alienblue,
-							checkmark: M.a.white,
-							unchecked: U(D).body,
-							uncheckedBorder: U(D).placeholder
+							checked: i.a.alienblue,
+							checkmark: i.a.white,
+							unchecked: h(d).body,
+							uncheckedBorder: h(d).placeholder
 						},
 						input: {
-							border: M.a.defaultFlair,
-							focusColor: M.a.white,
-							focusBg: M.a.approved,
-							ownerBg: U(D).line,
-							color: U(D).bodyText,
-							error: O,
-							channelRename: Object(a.a)(.1, M.a.white),
-							background: Object(a.f)(Object(a.a)(.3, M.a.white), .1)
+							border: i.a.defaultFlair,
+							focusColor: i.a.white,
+							focusBg: i.a.approved,
+							ownerBg: h(d).line,
+							color: h(d).bodyText,
+							error: o.a.orangeRed600,
+							channelRename: Object(a.a)(.1, i.a.white),
+							background: Object(a.f)(Object(a.a)(.3, i.a.white), .1)
 						},
 						link: {
-							staticUnderline: M.a.alienblue,
-							staticText: M.a.op,
-							hoverText: M.a.snoo
+							staticUnderline: i.a.alienblue,
+							staticText: i.a.op,
+							hoverText: i.a.snoo
 						},
 						minimizedPortal: {
 							backgroundColor: {
-								unreadInitial: U(D).active,
-								unreadFinal: U(D).highlight
+								unreadInitial: h(d).active,
+								unreadFinal: h(d).highlight
 							},
 							color: {
-								unreadInitial: M.a.white,
-								unreadFinal: M.a.black
+								unreadInitial: i.a.white,
+								unreadFinal: i.a.black
 							}
 						}
 					},
 					layout: {
-						body: U(D).body,
-						colsBorder: U(D).line,
-						controlsBorder: Object(a.f)(M.a.black, .15),
+						body: h(d).body,
+						colsBorder: h(d).line,
+						controlsBorder: Object(a.f)(i.a.black, .15),
 						header: {
-							counterBg: M.a.snoo,
-							counterText: M.a.white
+							counterBg: i.a.snoo,
+							counterText: i.a.white
 						},
-						scrollbar: Object(a.a)(.2, M.a.white),
-						scrollbarHover: Object(a.a)(.4, M.a.white),
+						scrollbar: Object(a.a)(.2, i.a.white),
+						scrollbarHover: Object(a.a)(.4, i.a.white),
 						timeStamp: {
 							tooltip: {
-								background: U(D).body
+								background: h(d).body
 							}
 						},
 						dropdown: {
 							border: "none"
 						},
-						overlayBackground: M.a.overlayBackground,
-						overlayReportFlow: M.a.overlayReportFlow
+						overlayBackground: i.a.overlayBackground,
+						overlayReportFlow: i.a.overlayReportFlow
 					},
 					message: {
 						list: {
 							item: {
-								ownerBg: U(D).inactive,
-								button: U(D).actionIcon,
-								richItem: U(D).metaText,
-								richItemBorder: U(D).postLine,
-								onlineIndicator: M.a.approved,
-								white: M.a.white
+								ownerBg: h(d).inactive,
+								button: h(d).actionIcon,
+								richItem: h(d).metaText,
+								richItemBorder: h(d).postLine,
+								onlineIndicator: i.a.approved,
+								white: i.a.white
 							}
 						}
 					},
 					subreddit: {
-						iconBg: M.a.alienblue
+						iconBg: i.a.alienblue
 					},
 					sidebar: {
-						background: Object(a.f)(Object(a.a)(.3, M.a.white), .1),
+						background: Object(a.f)(Object(a.a)(.3, i.a.white), .1),
 						subreddit: {
 							background: {
-								active: M.a.alienblue,
-								hover: U(D).canvas
+								active: i.a.alienblue,
+								hover: h(d).canvas
 							}
 						},
 						basic: {
 							background: {
-								active: M.a.alienblue,
-								hover: U(D).canvas
+								active: i.a.alienblue,
+								hover: h(d).canvas
 							}
 						},
 						text: {
-							divider: Object(a.a)(.5, M.a.white)
+							divider: Object(a.a)(.5, i.a.white)
 						},
 						item: {
-							hover: U(D).field,
-							active: U(D).postLine,
-							selected: U(D).inactive,
+							hover: h(d).field,
+							active: h(d).postLine,
+							selected: h(d).inactive,
 							text: {
-								active: U(D).titleText
+								active: h(d).titleText
 							}
 						},
 						footer: {
-							background: U(D).field
+							background: h(d).field
 						}
 					},
 					toast: {
-						pending: M.a.black,
-						success: M.a.approved,
-						error: M.a.orangered
+						pending: i.a.black,
+						success: i.a.approved,
+						error: i.a.orangered
 					},
 					skeleton: {
-						field: U(D).field,
-						inactive: U(D).inactive
+						field: h(d).field,
+						inactive: h(d).inactive
 					},
 					boxShadow: Object(a.f)(20, 120, 120, .11),
 					bubbleActions: {
-						hover: U(D).line
+						hover: h(d).line
 					},
 					bubble: {
-						background: M.a.transparent,
-						color: U(D).bodyText,
-						border: U(D).line,
+						background: i.a.transparent,
+						color: h(d).bodyText,
+						border: h(d).line,
 						link: {
-							color: M.a.op,
-							textDecoration: P.NONE
+							color: i.a.op,
+							textDecoration: m.NONE
 						},
 						channelsFilter: {
-							background: p,
-							selected: E
+							background: o.a.narwhal200,
+							selected: o.a.orca50
 						}
 					},
-					editName: Object(a.a)(.1, U(D).inactive),
+					editName: Object(a.a)(.1, h(d).inactive),
 					uploads: {
 						progress: {
-							background: b,
-							bar: i
+							background: o.a.narwhal300,
+							bar: o.a.alien600
 						}
 					},
 					prompt: {
 						tooltip: {
-							background: i
+							background: o.a.alien600
 						}
 					},
 					searchBar: {
-						backgroundColor: U(D).placeholder
+						backgroundColor: h(d).placeholder
 					},
 					newChat: {
 						inviteLink: {
-							borderColor: b
+							borderColor: o.a.narwhal300
 						}
 					},
 					addReaction: {
-						backgroundColor: U(D).inactive,
-						iconFill: U(L).postIcon
+						backgroundColor: h(d).inactive,
+						iconFill: h(u).postIcon
 					},
 					settings: {
-						color: U(D).bodyText,
-						panelBackground: U(D).body,
-						panelItemHoverBackground: U(D).field,
-						panelItemSelectedBackground: U(D).line,
-						dropdownItemHoverBackground: U(D).highlight
+						color: h(d).bodyText,
+						panelBackground: h(d).body,
+						panelItemHoverBackground: h(d).field,
+						panelItemSelectedBackground: h(d).line,
+						dropdownItemHoverBackground: h(d).highlight
 					},
 					overlay: {
-						headerColor: U(D).bodyText,
-						backgroundColor: U(D).field,
-						inputBackground: U(D).body,
-						searchBarBackground: U(D).field
+						headerColor: h(d).bodyText,
+						backgroundColor: h(d).field,
+						inputBackground: h(d).body,
+						searchBarBackground: h(d).field
 					},
 					modal: {
-						buttonsBackground: p,
-						primaryButtonWarning: M.a.warning,
-						secondaryButton: U(D).metaText
+						buttonsBackground: o.a.narwhal200,
+						primaryButtonWarning: i.a.warning,
+						secondaryButton: h(d).metaText
 					}
 				},
-				Y = {
+				x = {
 					activity: {
 						icon: {
-							default: U(L).postIcon,
-							active: M.a.alienblue,
-							disable: Object(a.a)(.5, M.a.white),
-							hover: Object(a.a)(.5, M.a.white),
-							contrast: Object(a.a)(.4, U(L).bodyText),
-							toaster: U(D).bodyText,
+							default: h(u).postIcon,
+							active: i.a.alienblue,
+							disable: Object(a.a)(.5, i.a.white),
+							hover: Object(a.a)(.5, i.a.white),
+							contrast: Object(a.a)(.4, h(u).bodyText),
+							toaster: h(d).bodyText,
 							nsfw: {
-								bg: M.a.black,
-								text: M.a.white
+								bg: i.a.black,
+								text: i.a.white
 							},
 							subIcon: {
-								backgroundColor: M.a.white
+								backgroundColor: i.a.white
 							}
 						},
 						text: {
-							regular: U(L).bodyText,
-							active: M.a.alienblue,
-							fade: Object(a.a)(.4, M.a.white),
-							light: U(L).actionIcon,
-							warning: M.a.warning,
-							highlight: M.a.white,
-							success: M.a.approved,
-							meta: U(L).metaText
+							regular: h(u).bodyText,
+							active: i.a.alienblue,
+							fade: Object(a.a)(.4, i.a.white),
+							light: h(u).actionIcon,
+							warning: i.a.warning,
+							highlight: i.a.white,
+							success: i.a.approved,
+							meta: h(u).metaText
 						},
 						button: {
-							primary: M.a.alienblue,
-							secondary: U(L).metaText,
-							chatFilterColor: f
+							primary: i.a.alienblue,
+							secondary: h(u).metaText,
+							chatFilterColor: o.a.narwhal700
 						},
 						buttonPrimary: {
-							color: U(L).bodyText
+							color: h(u).bodyText
 						},
 						buttonSecondary: {
-							active: U(L).bodyText
+							active: h(u).bodyText
 						},
 						send: {
-							disable: Object(a.a)(.5, M.a.white),
-							hover: Object(a.a)(.08, M.a.op)
+							disable: Object(a.a)(.5, i.a.white),
+							hover: Object(a.a)(.08, i.a.op)
 						},
 						checkbox: {
-							checked: M.a.alienblue,
-							checkmark: M.a.white,
-							unchecked: U(L).body,
-							uncheckedBorder: U(L).metaText
+							checked: i.a.alienblue,
+							checkmark: i.a.white,
+							unchecked: h(u).body,
+							uncheckedBorder: h(u).metaText
 						},
 						input: {
-							border: M.a.defaultFlair,
-							focusColor: M.a.white,
-							focusBg: M.a.approved,
-							ownerBg: U(L).line,
-							color: U(L).bodyText,
-							error: O,
-							channelRename: Object(a.a)(.1, M.a.white),
-							background: Object(a.f)(Object(a.a)(.3, M.a.white), .1)
+							border: i.a.defaultFlair,
+							focusColor: i.a.white,
+							focusBg: i.a.approved,
+							ownerBg: h(u).line,
+							color: h(u).bodyText,
+							error: o.a.orangeRed600,
+							channelRename: Object(a.a)(.1, i.a.white),
+							background: Object(a.f)(Object(a.a)(.3, i.a.white), .1)
 						},
 						link: {
-							staticUnderline: M.a.alienblue,
-							staticText: M.a.op,
-							hoverText: M.a.snoo
+							staticUnderline: i.a.alienblue,
+							staticText: i.a.op,
+							hoverText: i.a.snoo
 						},
 						minimizedPortal: {
 							backgroundColor: {
-								unreadInitial: U(L).active,
-								unreadFinal: U(L).highlight
+								unreadInitial: h(u).active,
+								unreadFinal: h(u).highlight
 							},
 							color: {
-								unreadInitial: M.a.white,
-								unreadFinal: M.a.white
+								unreadInitial: i.a.white,
+								unreadFinal: i.a.white
 							}
 						}
 					},
 					layout: {
-						body: U(L).body,
-						colsBorder: U(L).line,
-						controlsBorder: Object(a.f)(M.a.white, .15),
+						body: h(u).body,
+						colsBorder: h(u).line,
+						controlsBorder: Object(a.f)(i.a.white, .15),
 						header: {
-							counterBg: M.a.snoo,
-							counterText: M.a.white
+							counterBg: i.a.snoo,
+							counterText: i.a.white
 						},
-						scrollbar: Object(a.a)(.2, U(L).bodyText),
-						scrollbarHover: Object(a.a)(.1, U(L).bodyText),
+						scrollbar: Object(a.a)(.2, h(u).bodyText),
+						scrollbarHover: Object(a.a)(.1, h(u).bodyText),
 						timeStamp: {
 							tooltip: {
-								background: U(L).inactive
+								background: h(u).inactive
 							}
 						},
 						dropdown: {
-							border: U(L).line
+							border: h(u).line
 						},
-						overlayBackground: M.a.overlayBackground,
-						overlayReportFlow: M.a.overlayReportFlow
+						overlayBackground: i.a.overlayBackground,
+						overlayReportFlow: i.a.overlayReportFlow
 					},
 					message: {
 						list: {
 							item: {
-								ownerBg: U(L).inactive,
-								button: U(L).actionIcon,
-								richItem: U(L).metaText,
-								richItemBorder: A.a.metaText,
-								onlineIndicator: M.a.approved,
-								white: M.a.white
+								ownerBg: h(u).inactive,
+								button: h(u).actionIcon,
+								richItem: h(u).metaText,
+								richItemBorder: l.a.metaText,
+								onlineIndicator: i.a.approved,
+								white: i.a.white
 							}
 						}
 					},
 					subreddit: {
-						iconBg: M.a.alienblue
+						iconBg: i.a.alienblue
 					},
 					sidebar: {
-						background: Object(a.f)(Object(a.a)(.4, M.a.white), .1),
+						background: Object(a.f)(Object(a.a)(.4, i.a.white), .1),
 						subreddit: {
 							background: {
-								active: M.a.alienblue,
-								hover: Object(a.g)(.2, U(L).canvas)
+								active: i.a.alienblue,
+								hover: Object(a.g)(.2, h(u).canvas)
 							}
 						},
 						basic: {
 							background: {
-								active: M.a.alienblue,
-								hover: Object(a.g)(.2, U(L).canvas)
+								active: i.a.alienblue,
+								hover: Object(a.g)(.2, h(u).canvas)
 							}
 						},
 						text: {
-							divider: Object(a.a)(.5, M.a.white)
+							divider: Object(a.a)(.5, i.a.white)
 						},
 						item: {
-							hover: U(L).field,
-							active: U(L).postLine,
-							selected: U(L).placeholder,
+							hover: h(u).field,
+							active: h(u).postLine,
+							selected: h(u).placeholder,
 							text: {
-								active: U(L).titleText
+								active: h(u).titleText
 							}
 						},
 						footer: {
-							background: U(L).field
+							background: h(u).field
 						}
 					},
 					toast: {
-						pending: M.a.black,
-						success: M.a.approved,
-						error: M.a.orangered
+						pending: i.a.black,
+						success: i.a.approved,
+						error: i.a.orangered
 					},
 					skeleton: {
-						field: U(L).field,
-						inactive: U(L).inactive
+						field: h(u).field,
+						inactive: h(u).inactive
 					},
 					boxShadow: Object(a.f)(20, 120, 120, 0),
 					bubbleActions: {
-						hover: U(L).field
+						hover: h(u).field
 					},
 					bubble: {
-						background: M.a.transparent,
-						color: U(L).bodyText,
-						border: U(L).line,
+						background: i.a.transparent,
+						color: h(u).bodyText,
+						border: h(u).line,
 						link: {
-							color: M.a.op,
-							textDecoration: P.NONE
+							color: i.a.op,
+							textDecoration: m.NONE
 						},
 						channelsFilter: {
-							background: v,
-							selected: g
+							background: o.a.orca600,
+							selected: o.a.narwhal600
 						}
 					},
-					editName: U(L).inactive,
+					editName: h(u).inactive,
 					uploads: {
 						progress: {
-							background: b,
-							bar: i
+							background: o.a.narwhal300,
+							bar: o.a.alien600
 						}
 					},
 					prompt: {
 						tooltip: {
-							background: i
+							background: o.a.alien600
 						}
 					},
 					searchBar: {
-						backgroundColor: x
+						backgroundColor: o.a.nightTone1
 					},
 					newChat: {
 						inviteLink: {
-							borderColor: U(L).inactive
+							borderColor: h(u).inactive
 						}
 					},
 					addReaction: {
-						backgroundColor: U(L).postIcon,
-						iconFill: U(L).body
+						backgroundColor: h(u).postIcon,
+						iconFill: h(u).body
 					},
 					settings: {
-						color: k,
-						panelBackground: x,
-						panelItemHoverBackground: N,
-						panelItemSelectedBackground: S,
-						dropdownItemHoverBackground: w
+						color: o.a.nightTone4,
+						panelBackground: o.a.nightTone1,
+						panelItemHoverBackground: o.a.nightTone3,
+						panelItemSelectedBackground: o.a.nightTone2,
+						dropdownItemHoverBackground: o.a.nightTone5
 					},
 					overlay: {
-						headerColor: M.a.white,
-						backgroundColor: U(L).body,
-						inputBackground: T,
-						searchBarBackground: N
+						headerColor: i.a.white,
+						backgroundColor: h(u).body,
+						inputBackground: o.a.nightTone6,
+						searchBarBackground: o.a.nightTone3
 					},
 					modal: {
-						buttonsBackground: j,
-						primaryButtonWarning: M.a.warning,
-						secondaryButton: U(L).bodyText
+						buttonsBackground: o.a.orca200,
+						primaryButtonWarning: i.a.warning,
+						secondaryButton: h(u).bodyText
 					}
 				},
-				X = {
-					[r.b.REDDIT]: Q,
-					[r.b.NIGHT]: Y
+				S = {
+					[r.b.REDDIT]: y,
+					[r.b.NIGHT]: x
 				},
-				J = {
-					[B.ORANGERED]: Z,
-					[B.BERRY]: G,
-					[B.UNICORN]: q,
-					[B.VANITY]: V,
-					[B.SERIOUS]: z,
-					[B.OCEAN]: K,
-					[B.ROYAL]: W
+				N = {
+					[b.ORANGERED]: C,
+					[b.BERRY]: O,
+					[b.UNICORN]: I,
+					[b.VANITY]: E,
+					[b.SERIOUS]: j,
+					[b.OCEAN]: _,
+					[b.ROYAL]: v
 				},
-				$ = [B.BASIC, B.ORANGERED, B.BERRY, B.UNICORN, B.VANITY, B.ROYAL, B.OCEAN, B.SERIOUS]
+				k = [b.BASIC, b.ORANGERED, b.BERRY, b.UNICORN, b.VANITY, b.ROYAL, b.OCEAN, b.SERIOUS]
 		},
 		"./src/chat/models/User/index.ts": function(e, t, n) {
 			"use strict";
@@ -17648,6 +17624,47 @@
 				})
 			}
 		},
+		"./src/lib/constants/colors.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return a
+			}));
+			const a = {
+				alien500: "#3690ea",
+				alien600: "#006dc6",
+				berry300: "#e4abff",
+				berry500: "#b44ac0",
+				berry600: "#9c3cac",
+				mango500: "#ffd635",
+				mango600: "#ff6600",
+				mint600: "#009eaa",
+				narwhal100: "#f1f23f5",
+				narwhal200: "#e9ebed",
+				narwhal300: "#d4d7d9",
+				narwhal600: "#989ca0",
+				narwhal700: "#898d90",
+				orangeRed600: "#fb133a",
+				orangeRed700: "#be0039",
+				orca50: "#5a5c5e",
+				orca200: "#464748",
+				orca300: "#3a3a3a",
+				orca600: "#242424",
+				orca700: "#1E1E1E",
+				periwinkle300: "#94b3ff",
+				periwinkle500: "#6a5cff",
+				periwinkle600: "#5349da",
+				sakura500: "#ff3881",
+				error: "#ea0027",
+				white: "#ffffff",
+				black: "#000000",
+				nightTone1: "#282829",
+				nightTone2: "#343536",
+				nightTone3: "#3A3A3C",
+				nightTone4: "#D8DADC",
+				nightTone5: "#1A232C",
+				nightTone6: "#29292A"
+			}
+		},
 		"./src/lib/hooks/useOnClickOutside.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -18050,4 +18067,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.6a33c55c1a337fb70a61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e36fcdc43f216750aba1.js.map

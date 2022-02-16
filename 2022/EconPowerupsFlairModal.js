@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.48dd9c2af33003ac037b.js
-// Retrieved at 2/3/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.9e21e2520722cf18a866.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsFlairModal"], {
 		"./src/reddit/actions/economics/powerups/flairs/index.ts": function(e, t, r) {
@@ -655,7 +655,7 @@
 						container: r,
 						isScrollGradientVisible: s,
 						calculateGradientVisibility: n
-					} = Object(b.a)(!0),
+					} = Object(b.b)(!0),
 					j = Object(o.e)(F.k),
 					I = Object(o.e)(w.e),
 					E = Object(o.e)(e => I ? Object(y.b)(e, {
@@ -884,24 +884,34 @@
 		"./src/reddit/hooks/useScrollGradient.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return i
+				return s
+			})), r.d(t, "b", (function() {
+				return n
 			}));
-			var s = r("./node_modules/react/index.js");
+			var s, i = r("./node_modules/react/index.js");
 
-			function i(e) {
-				const [t, r] = Object(s.useState)(e), i = Object(s.useRef)(null);
+			function n(e, t = s.Bottom) {
+				const [r, n] = Object(i.useState)(e), a = Object(i.useRef)(null);
 				return {
-					container: i,
-					isScrollGradientVisible: t,
+					container: a,
+					isScrollGradientVisible: r,
 					calculateGradientVisibility: () => {
-						const e = i.current;
+						const e = a.current;
 						if (!e) return;
-						const t = e.getBoundingClientRect().height,
-							s = Math.ceil(e.scrollTop + t) >= e.scrollHeight;
-						r(!s)
+						const r = e.getBoundingClientRect().height,
+							{
+								scrollHeight: i,
+								scrollTop: o
+							} = e,
+							d = Math.ceil(o + r) >= i,
+							c = Math.ceil(r - o) >= i,
+							l = t === s.Bottom ? d : c;
+						n(!l)
 					}
 				}
-			}
+			}! function(e) {
+				e.Top = "top", e.Bottom = "bottom"
+			}(s || (s = {}))
 		},
 		"./src/reddit/icons/svgs/PowerupTier2/index.tsx": function(e, t, r) {
 			"use strict";
@@ -1235,4 +1245,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.48dd9c2af33003ac037b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsFlairModal.9e21e2520722cf18a866.js.map

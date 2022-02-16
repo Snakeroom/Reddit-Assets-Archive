@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/9.13ce76871c8d14ba3633.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/9.ffc12885a69d79d4d670.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[9], {
 		"./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/index.ts": function(e, t, r) {
@@ -18,17 +18,17 @@
 				u = r("./src/redditGQL/types.ts"),
 				c = r("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
 				m = r("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
-				l = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts");
-			const p = {
-					[s.rb.Edited]: u.o.Edited,
-					[s.rb.Modqueue]: u.o.Mod,
-					[s.rb.Reports]: u.o.Reported,
-					[s.rb.Spam]: u.o.Removed,
-					[s.rb.Unmoderated]: u.o.Unmoderated
+				p = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts");
+			const l = {
+					[s.rb.Edited]: u.p.Edited,
+					[s.rb.Modqueue]: u.p.Mod,
+					[s.rb.Reports]: u.p.Reported,
+					[s.rb.Spam]: u.p.Removed,
+					[s.rb.Unmoderated]: u.p.Unmoderated
 				},
 				f = {
-					comments: u.n.Comment,
-					links: u.n.Post
+					comments: u.o.Comment,
+					links: u.o.Post
 				};
 
 			function h({
@@ -47,7 +47,7 @@
 					});
 					if (r) return Object(o.btoa)(`${r.id}|${r.created}`)
 				}(s, r.after)), {
-					queueType: p[t],
+					queueType: l[t],
 					...!!c && {
 						itemTypes: c
 					},
@@ -120,7 +120,7 @@
 							postInfo: e
 						} = s;
 						if (!e) return;
-						const r = Object(l.f)(e);
+						const r = Object(p.f)(e);
 						t.posts[r.id] = r, t.modqueue.push(r.id);
 						const {
 							authorInfo: n,
@@ -151,4 +151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/9.13ce76871c8d14ba3633.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/9.ffc12885a69d79d4d670.js.map

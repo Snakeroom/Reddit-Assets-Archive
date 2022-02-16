@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.c86f5698652ea9515414.js
-// Retrieved at 2/8/2022, 5:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.951106c3e2e3782dd365.js
+// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -498,7 +498,7 @@
 			const {
 				fbt: R
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), A = e => e.length % 2 == 1 ? [...e, O.a.More] : e;
-			var W = function(e) {
+			var B = function(e) {
 					const {
 						className: t
 					} = e, r = Object(k.a)(), n = Object(s.e)(I), a = A(n).map(O.b), c = e => {
@@ -513,7 +513,7 @@
 						onClick: c
 					})))
 				},
-				B = r("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.tsx"),
+				W = r("./src/reddit/components/Econ/PowerupsMarketingModal/Header/index.tsx"),
 				H = r("./src/reddit/components/Econ/PowerupsMarketingModal/index.m.less"),
 				D = r.n(H);
 
@@ -547,7 +547,7 @@
 					container: j,
 					isScrollGradientVisible: P,
 					calculateGradientVisibility: O
-				} = Object(x.a)(!0);
+				} = Object(x.b)(!0);
 				Object(n.useEffect)(() => {
 					v ? Object(N.a)() : Object(b.a)(), t && i(Object(u.m)(t, {
 						fullData: !0
@@ -574,12 +574,12 @@
 				}, o.a.createElement(h.a, {
 					onClick: C,
 					highContrast: !0
-				}), o.a.createElement(B.a, {
+				}), o.a.createElement(W.a, {
 					title: F._("Powerup {r/community}", [F._param("r/community", c.displayText)], {
 						hk: "2HkBNV"
 					}),
 					subtitle: S
-				}), o.a.createElement(W, null), o.a.createElement("span", {
+				}), o.a.createElement(B, null), o.a.createElement("span", {
 					className: D.a.modDisclaimer
 				}, F._("Mods may choose to opt out of some perks.", null, {
 					hk: "3W2PR1"
@@ -910,24 +910,34 @@
 		"./src/reddit/hooks/useScrollGradient.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return o
+				return n
+			})), r.d(t, "b", (function() {
+				return s
 			}));
-			var n = r("./node_modules/react/index.js");
+			var n, o = r("./node_modules/react/index.js");
 
-			function o(e) {
-				const [t, r] = Object(n.useState)(e), o = Object(n.useRef)(null);
+			function s(e, t = n.Bottom) {
+				const [r, s] = Object(o.useState)(e), a = Object(o.useRef)(null);
 				return {
-					container: o,
-					isScrollGradientVisible: t,
+					container: a,
+					isScrollGradientVisible: r,
 					calculateGradientVisibility: () => {
-						const e = o.current;
+						const e = a.current;
 						if (!e) return;
-						const t = e.getBoundingClientRect().height,
-							n = Math.ceil(e.scrollTop + t) >= e.scrollHeight;
-						r(!n)
+						const r = e.getBoundingClientRect().height,
+							{
+								scrollHeight: o,
+								scrollTop: c
+							} = e,
+							i = Math.ceil(c + r) >= o,
+							l = Math.ceil(r - c) >= o,
+							d = t === n.Bottom ? i : l;
+						s(!d)
 					}
 				}
-			}
+			}! function(e) {
+				e.Top = "top", e.Bottom = "bottom"
+			}(n || (n = {}))
 		},
 		"./src/reddit/icons/svgs/PowerupTier2/index.tsx": function(e, t, r) {
 			"use strict";
@@ -962,4 +972,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.c86f5698652ea9515414.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.951106c3e2e3782dd365.js.map
