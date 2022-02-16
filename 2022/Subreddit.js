@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.df4f00ab195bff92fa4c.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.496fb4688a790abe2be9.js
+// Retrieved at 2/16/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -8310,8 +8310,6 @@
 			"use strict";
 			n.d(t, "b", (function() {
 				return w
-			})), n.d(t, "c", (function() {
-				return L
 			}));
 			var s = n("./src/lib/isUrl/index.ts"),
 				r = n("./node_modules/react/index.js"),
@@ -8439,8 +8437,8 @@
 						placeholderImage: O,
 						redditStyle: x,
 						theme: S
-					}), I = w(e), P = d ? _.SourceElement.PostImage : _.SourceElement.ListingPostImage, T = A(f, t, N, k, j, S, I, l, y, g, x, u, p, h, r), L = Object(b.D)(f);
-					return Object(s.a)(L) && !g && L.indexOf("redditmedia") < 0 ? a.a.createElement("div", {
+					}), I = w(e), P = d ? _.SourceElement.PostImage : _.SourceElement.ListingPostImage, T = L(f, t, N, k, j, S, I, l, y, g, x, u, p, h, r), A = Object(b.D)(f);
+					return Object(s.a)(A) && !g && A.indexOf("redditmedia") < 0 ? a.a.createElement("div", {
 						className: Object(o.a)(E.a.container, C ? E.a.usePreview : "", n)
 					}, a.a.createElement(m.b, {
 						href: Object(b.D)(f),
@@ -8467,9 +8465,8 @@
 					return s && r ? r.url : t.isSponsored && r && "default" === o.url ? r.url : T(a) ? a.scrubberThumbSource : o.url
 				},
 				T = e => !!e && e.type === b.o.LIVEVIDEO,
-				L = e => e.source && !e.isSponsored || !1,
-				A = (e, t, n, r, i, c, l, u, m, p, b, h, f, _, x) => {
-					const v = L(e);
+				L = (e, t, n, r, i, c, l, u, m, p, b, h, f, _, x) => {
+					const v = (e => e.source && !e.isSponsored || !1)(e);
 					if (Object(s.a)(l)) {
 						const n = T(e.media),
 							s = n ? {
@@ -12283,4 +12280,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.df4f00ab195bff92fa4c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.496fb4688a790abe2be9.js.map

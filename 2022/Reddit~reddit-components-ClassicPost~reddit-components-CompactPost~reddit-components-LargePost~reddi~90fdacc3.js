@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.2279a3b488a728c7b910.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.78d29fa0b08333849989.js
+// Retrieved at 2/16/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -1967,8 +1967,6 @@
 			"use strict";
 			n.d(t, "b", (function() {
 				return D
-			})), n.d(t, "c", (function() {
-				return A
 			}));
 			var r = n("./src/lib/isUrl/index.ts"),
 				s = n("./node_modules/react/index.js"),
@@ -2096,8 +2094,8 @@
 						placeholderImage: x,
 						redditStyle: h,
 						theme: j
-					}), N = D(e), L = d ? E.SourceElement.PostImage : E.SourceElement.ListingPostImage, P = v(_, t, k, I, y, j, N, l, T, S, h, u, p, f, s), A = Object(b.D)(_);
-					return Object(r.a)(A) && !S && A.indexOf("redditmedia") < 0 ? o.a.createElement("div", {
+					}), N = D(e), L = d ? E.SourceElement.PostImage : E.SourceElement.ListingPostImage, P = A(_, t, k, I, y, j, N, l, T, S, h, u, p, f, s), v = Object(b.D)(_);
+					return Object(r.a)(v) && !S && v.indexOf("redditmedia") < 0 ? o.a.createElement("div", {
 						className: Object(a.a)(O.a.container, g ? O.a.usePreview : "", n)
 					}, o.a.createElement(m.b, {
 						href: Object(b.D)(_),
@@ -2124,9 +2122,8 @@
 					return r && s ? s.url : t.isSponsored && s && "default" === a.url ? s.url : P(o) ? o.scrubberThumbSource : a.url
 				},
 				P = e => !!e && e.type === b.o.LIVEVIDEO,
-				A = e => e.source && !e.isSponsored || !1,
-				v = (e, t, n, s, i, c, l, u, m, p, b, f, _, E, h) => {
-					const C = A(e);
+				A = (e, t, n, s, i, c, l, u, m, p, b, f, _, E, h) => {
+					const C = (e => e.source && !e.isSponsored || !1)(e);
 					if (Object(r.a)(l)) {
 						const n = P(e.media),
 							r = n ? {
@@ -3260,4 +3257,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.2279a3b488a728c7b910.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.78d29fa0b08333849989.js.map
