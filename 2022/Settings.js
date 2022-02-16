@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.3d759ca7f4c33625abae.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.3f87bb91a15c06ac7053.js
+// Retrieved at 2/16/2022, 4:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -4904,7 +4904,8 @@
 			e.exports = {
 				dspFormString: "_2PQnDUojK_IGakeywFueYj",
 				submitButton: "_3Oeb5rYNta9RUSQX_BJOub",
-				formError: "_5WO6EZhIKzIH0zDs2KgP8"
+				formError: "_5WO6EZhIKzIH0zDs2KgP8",
+				termsText: "_5WmYHhfifBqQthzqV0iG3"
 			}
 		},
 		"./src/reddit/components/Settings/FPRWarning/index.m.less": function(e, t, n) {
@@ -10482,6 +10483,11 @@
 						residentError: this.state.isResident ? Vn._("You must be a resident to participate", null, {
 							hk: "1kP4gc"
 						}) : null
+					}), this.handleToggleIs18 = () => this.setState({
+						isOver18: !this.state.isOver18,
+						ageError: this.state.isOver18 ? Vn._("You must be 18 years or older to participate", null, {
+							hk: "2a48H0"
+						}) : null
 					}), this.handleToggleIsTermsAgreed = () => this.setState({
 						isTermsAgreed: !this.state.isTermsAgreed,
 						termsError: this.state.isTermsAgreed ? Vn._("You must agree to the terms and conditions", null, {
@@ -10490,12 +10496,14 @@
 					}), this.state = {
 						confirmEmail: this.props.currentEmail || "",
 						confirmEmailError: null,
+						ageError: null,
 						email: this.props.currentEmail || "",
 						emailError: null,
 						firstName: this.props.currentFirstName || "",
 						firstNameError: null,
 						hasBeenSubmitted: !1,
 						isLoading: !0,
+						isOver18: !1,
 						isResident: !1,
 						isTermsAgreed: !1,
 						lastName: this.props.currentLastName || "",
@@ -10524,7 +10532,9 @@
 						lastName: u,
 						lastNameError: p,
 						residentError: b,
-						termsError: h
+						termsError: h,
+						isOver18: f,
+						ageError: g
 					} = this.state;
 					return r.a.createElement(he.a, null, r.a.createElement(be.b, {
 						isResponsiveSettingsEnabled: !0
@@ -10592,22 +10602,32 @@
 					}), b && r.a.createElement(Bn.c, {
 						className: Yn.a.formError
 					}, b), r.a.createElement(ee.p, {
+						label: Vn._("I confirm that I am 18 years of age or older", null, {
+							hk: "42nN16"
+						}),
+						on: f,
+						onClick: this.handleToggleIs18,
+						disabled: this.state.isLoading
+					}), g && r.a.createElement(Bn.c, {
+						className: Yn.a.formError
+					}, g), r.a.createElement(ee.p, {
 						label: Vn._("I agree to the terms below", null, {
 							hk: "4ha1OS"
 						}),
 						on: m,
-						subtext: Vn._("Terms & Conditions", null, {
-							hk: "1xE2JX"
-						}),
 						onClick: this.handleToggleIsTermsAgreed,
 						disabled: this.state.isLoading
 					}), h && r.a.createElement(Bn.c, {
 						className: Yn.a.formError
-					}, h), r.a.createElement(S.a, {
+					}, h), r.a.createElement("div", {
+						className: Yn.a.termsText
+					}, Vn._("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?", null, {
+						hk: "HrXYg"
+					})), r.a.createElement(S.a, {
 						className: Yn.a.submitButton,
 						type: "submit",
 						onClick: this.onSubmitClick,
-						disabled: !(d && m && !p && !i && !c && !a && this.state.firstName && this.state.lastName && this.state.email && this.state.confirmEmail)
+						disabled: !(!g && !a && !i && !c && !p && f && d && m && this.state.confirmEmail && this.state.email && this.state.firstName && this.state.lastName)
 					}, this.state.hasBeenSubmitted ? Vn._("Update", null, {
 						hk: "48IUi4"
 					}) : Vn._("Submit", null, {
@@ -12736,4 +12756,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.3d759ca7f4c33625abae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.3f87bb91a15c06ac7053.js.map
