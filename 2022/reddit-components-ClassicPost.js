@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.cdd7123ae616516e5729.js
-// Retrieved at 2/16/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.c72f89068f9ad1de1e02.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1601,7 +1601,7 @@
 				}) => {
 					const {
 						audioRoom: t
-					} = e, n = () => Math.floor(10 * Math.random() + 1), s = Object(f.e)(h.X), [i, c] = Object(o.useState)(!1), [d, l] = Object(o.useState)(n());
+					} = e, n = () => Math.floor(10 * Math.random() + 1), s = Object(f.e)(h.ab), [i, c] = Object(o.useState)(!1), [d, l] = Object(o.useState)(n());
 					return Object(o.useEffect)(() => {
 						const e = setInterval(() => {
 							c(!0), setTimeout(() => c(!1), 3500), l(n())
@@ -1944,7 +1944,7 @@
 				A = Object(c.c)({
 					isCurrentUserProfilePost: v.l,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== b.Nb.TOPIC),
-					shouldOpenPostInNewTab: y.db
+					shouldOpenPostInNewTab: y.gb
 				}),
 				B = Object(a.b)(A);
 			t.c = Object(x.b)(B(e => {
@@ -2508,7 +2508,7 @@
 					isChatPost: u.d,
 					isCurrentUserProfilePost: h.l,
 					isExpanded: h.m,
-					isLoggedIn: x.K,
+					isLoggedIn: x.N,
 					showPromotedCTA: b.a,
 					moderatorPermissions: m.l,
 					modModeEnabled: d.T,
@@ -2622,4 +2622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.cdd7123ae616516e5729.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.c72f89068f9ad1de1e02.js.map

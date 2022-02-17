@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.56cff5e209137b7a87c6.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.6e7661678cf529fc9018.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1186,7 +1186,7 @@
 			var V = r("./src/reddit/components/PowerupsSidebar/common/utils.ts"),
 				W = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/PowerupsCount/index.m.less"),
 				Q = r.n(W);
-			var X = function(e) {
+			var J = function(e) {
 					const {
 						className: t,
 						onChange: r,
@@ -1214,8 +1214,8 @@
 						onClick: () => i(1)
 					})))
 				},
-				J = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
-				Y = r.n(J);
+				X = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
+				Y = r.n(X);
 			const {
 				fbt: K
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1274,7 +1274,7 @@
 					className: ee.a.bar,
 					count: s.count,
 					maxCount: d
-				}), a.a.createElement(X, {
+				}), a.a.createElement(J, {
 					className: ee.a.count,
 					style: {
 						left: `${100*u}%`
@@ -1336,7 +1336,7 @@
 				fbt: se
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), ce = 100, ie = Object(i.c)({
 				isAnonymous: j.d,
-				isNightMode: k.X,
+				isNightMode: k.ab,
 				paypalErrorMessage: _.d,
 				powerups: j.k,
 				powerupsCount: j.e,
@@ -1660,7 +1660,7 @@
 			const m = ({
 				space: e
 			}) => {
-				const t = Object(i.e)(d.X),
+				const t = Object(i.e)(d.ab),
 					r = e === n.MODAL,
 					s = e === n.INFEED_UNIT;
 				return c.a.createElement("div", {
@@ -3309,7 +3309,7 @@
 				p = r("./node_modules/react-redux/es/index.js"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				b = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(b.a)(f.Bc);
+			const h = Object(b.a)(f.Dc);
 			let g = null;
 
 			function y() {
@@ -3727,4 +3727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.56cff5e209137b7a87c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.6e7661678cf529fc9018.js.map

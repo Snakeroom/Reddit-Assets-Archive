@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.b674f56fa344671804a5.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.02f6926937fb05421e00.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1570,7 +1570,7 @@
 						const t = Object(v.a)(e);
 						return null === t ? void 0 : t
 					},
-					nightmode: C.X,
+					nightmode: C.ab,
 					passthrough: g.e,
 					selectedPayment: g.c,
 					stripeErrorMessage: g.j,
@@ -1584,12 +1584,12 @@
 					premiumProductOffer: O.g,
 					premiumPrice: O.e
 				}),
-				X = Object(o.b)($, (e, t) => ({
+				z = Object(o.b)($, (e, t) => ({
 					closeModal: () => e(Object(p.closePremiumPurchaseModal)()),
 					onCloseModalClick: () => e(Object(p.closePremiumPurchaseModal)()),
 					onPaymentSelected: t => e(Object(m.selectPaymentMethod)(t))
 				})),
-				z = Object(i.a)(({
+				X = Object(i.a)(({
 					sendEvent: e,
 					activePage: t,
 					activePremiumPackage: r,
@@ -1635,7 +1635,7 @@
 						onCloseClick: m
 					}))
 				});
-			t.default = X(Object(f.c)(class extends a.a.PureComponent {
+			t.default = z(Object(f.c)(class extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -1647,7 +1647,7 @@
 					}
 				}
 				render() {
-					return a.a.createElement(z, K({}, this.props, {
+					return a.a.createElement(X, K({}, this.props, {
 						className: Object(d.a)(this.props.className, M.a.premiumPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -3123,7 +3123,7 @@
 				p = r("./node_modules/react-redux/es/index.js"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				b = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(b.a)(f.Bc);
+			const h = Object(b.a)(f.Dc);
 			let y = null;
 
 			function g() {
@@ -3338,4 +3338,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.b674f56fa344671804a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.02f6926937fb05421e00.js.map

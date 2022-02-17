@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.28a20b53f407eb019753.js
-// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.5ed9bedea6c9a99ba806.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, o) {
@@ -1861,7 +1861,7 @@
 				}) => {
 					const o = Object(l.a)(),
 						n = m(o),
-						a = Object(r.e)(I.X);
+						a = Object(r.e)(I.ab);
 					return i.a.createElement("div", {
 						className: Object(u.a)(x.a.container, e)
 					}, i.a.createElement("nav", null, i.a.createElement("ol", null, V.map(e => i.a.createElement("div", {
@@ -2959,7 +2959,7 @@
 				ee = o.n($);
 			const te = () => {
 					const e = Object(r.d)(),
-						t = Object(r.e)(I.X);
+						t = Object(r.e)(I.ab);
 					return i.a.createElement("header", {
 						className: Object(u.a)(ee.a.container, {
 							[ee.a.nightmode]: t
@@ -2970,7 +2970,7 @@
 						}),
 						className: ee.a.logo,
 						to: "/",
-						onClick: () => e(Object(Q.a)(() => o.e("Frontpage").then(o.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
+						onClick: () => e(Object(Q.a)(() => Promise.all([o.e("Frontpage~Subreddit"), o.e("Frontpage")]).then(o.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
 					}, i.a.createElement(z.a, {
 						className: ee.a.snoo
 					}), i.a.createElement(Z.a, {
@@ -3199,7 +3199,7 @@
 				onClickExpand: s,
 				onClickHide: l
 			}) => {
-				const c = Object(r.e)(I.X);
+				const c = Object(r.e)(I.ab);
 				return i.a.createElement("div", {
 					className: Object(u.a)(Ee.a.container, e, {
 						[Ee.a.expanded]: n,
@@ -3813,4 +3813,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.28a20b53f407eb019753.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.5ed9bedea6c9a99ba806.js.map

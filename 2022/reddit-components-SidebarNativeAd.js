@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.68545581736febd1a2fb.js
-// Retrieved at 2/16/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.f5adc9e28aa0f7b6de53.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, s) {
@@ -253,7 +253,7 @@
 				w = Object(c.c)({
 					isCurrentUserProfilePost: h.l,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.Nb.TOPIC),
-					shouldOpenPostInNewTab: x.db
+					shouldOpenPostInNewTab: x.gb
 				}),
 				A = Object(o.b)(w);
 			t.c = Object(E.b)(A(e => {
@@ -780,7 +780,7 @@
 					}) => Object(u.q)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: B.db
+					shouldOpenPostInNewTab: B.gb
 				}),
 				X = e => {
 					const {
@@ -1491,4 +1491,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.68545581736febd1a2fb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.f5adc9e28aa0f7b6de53.js.map

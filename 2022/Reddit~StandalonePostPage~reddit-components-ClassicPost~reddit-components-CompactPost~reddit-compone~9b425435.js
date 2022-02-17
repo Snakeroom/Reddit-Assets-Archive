@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.7d1ddaf425c37fc7e505.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.dc615d7d159cb1dbceeb.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -1151,7 +1151,7 @@
 				x = n("./src/reddit/components/VerticalVotes/index.m.less"),
 				h = n.n(x);
 			const O = Object(c.c)({
-					isNightMode: f.X,
+					isNightMode: f.ab,
 					isAnimatingUpvotePostId: v.k
 				}),
 				C = Object(i.b)(O),
@@ -2253,7 +2253,7 @@
 					const n = Object(i.G)(e, {
 						postId: t
 					});
-					return !(!n || n.isSponsored || n.removedByCategory) && (Object(c.vb)(e, {
+					return !(!n || n.isSponsored || n.removedByCategory) && (Object(c.yb)(e, {
 						postId: t
 					}) || !!Object(r.l)(e, {
 						postId: t
@@ -2271,13 +2271,13 @@
 				i = n("./src/reddit/selectors/user.ts");
 			const c = (e, t) => {
 				return Object(o.c)(e, {
-					experimentEligibilitySelector: e => ((e, t) => Object(i.vb)(e, {
+					experimentEligibilitySelector: e => ((e, t) => Object(i.yb)(e, {
 						postId: t
 					}) || !!Object(r.l)(e, {
 						postId: t
-					}) || Object(i.H)(e))(e, t),
+					}) || Object(i.K)(e))(e, t),
 					experimentName: s.N
-				}) === s.Zc
+				}) === s.bd
 			}
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, n) {
@@ -2360,8 +2360,8 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.Ib
-					}) === s.bc.Enabled
+						experimentName: s.Jb
+					}) === s.dc.Enabled
 				}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, n) {
@@ -2374,13 +2374,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const c = e => Object(r.c)(e, {
-					experimentName: o.pe,
+					experimentName: o.re,
 					experimentEligibilitySelector: r.a
 				}),
-				a = (e, t) => t === o.xe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				a = (e, t) => t === o.ze.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(i.G, c, (e, t) => a(e, t));
 			Object(s.a)((e, t) => t, c, (e, t) => a(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.7d1ddaf425c37fc7e505.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.dc615d7d159cb1dbceeb.js.map

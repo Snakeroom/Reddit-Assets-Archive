@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.52d1c2f9df73a4527238.js
-// Retrieved at 2/15/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.69fd36d209fc49dbf659.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, s) {
@@ -117,7 +117,7 @@
 				},
 				I = "d2x_geo_upsell_tier_0",
 				U = "d2x_geo_upsell_tier_1",
-				y = "d2x_geo_upsell_tier_2";
+				Y = "d2x_geo_upsell_tier_2";
 			t.default = function({
 				onDismiss: e,
 				size: t
@@ -139,18 +139,18 @@
 						const e = Object(i.e)(w.b),
 							t = Object(i.e)(w.d),
 							s = Object(i.e)(w.f),
-							l = Object(E.a)(b.Wb.Bottom_sheet),
-							o = Object(E.a)(b.Wb.Bottom_cell),
-							c = Object(E.a)(b.Wb.Bottom_cell_dismissible),
-							r = Object(E.a)(b.Wb.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(E.a)(b.Wb.Bottom_cell_signup_upsell_copy),
-							d = Object(E.a)(b.Wb.Bottom_cell_surprise_install_copy);
+							l = Object(E.a)(b.Yb.Bottom_sheet),
+							o = Object(E.a)(b.Yb.Bottom_cell),
+							c = Object(E.a)(b.Yb.Bottom_cell_dismissible),
+							r = Object(E.a)(b.Yb.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(E.a)(b.Yb.Bottom_cell_signup_upsell_copy),
+							d = Object(E.a)(b.Yb.Bottom_cell_surprise_install_copy);
 						let p;
 						if (e) p = I;
 						else if (t) p = U;
 						else {
 							if (!s) throw new Error("Not eligible for signup upsell");
-							p = y
+							p = Y
 						}
 						const u = `${n.a.assetPath}/img/upsell/appQrCode/${p}/`;
 						if (l) return `${u}bottom_sheet.png`;
@@ -161,14 +161,14 @@
 						if (e && d) return `${u}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					L = Object(E.a)(b.Wb.Bottom_cell_signup_upsell_copy),
-					A = Object(E.a)(b.Wb.Bottom_cell_surprise_install_copy),
-					D = L ? l.fbt._("Come join us, we have snacks", null, {
+					L = Object(E.a)(b.Yb.Bottom_cell_signup_upsell_copy),
+					y = Object(E.a)(b.Yb.Bottom_cell_surprise_install_copy),
+					A = L ? l.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : l.fbt._("Log in or sign up for the best experience", null, {
 						hk: "2LAHQy"
 					}),
-					H = A ? l.fbt._("Scan the QR code, it's super fun", null, {
+					D = y ? l.fbt._("Scan the QR code, it's super fun", null, {
 						hk: "1nNmn7"
 					}) : l.fbt._("Get the app", null, {
 						hk: "2NvKYa"
@@ -189,7 +189,7 @@
 					type: "button"
 				}, o.createElement(N.a, null)), o.createElement("div", {
 					className: S.a.title
-				}, D), o.createElement("div", {
+				}, A), o.createElement("div", {
 					className: S.a.bottom
 				}, o.createElement("div", {
 					className: S.a.left
@@ -244,7 +244,7 @@
 					src: f
 				}), o.createElement("div", {
 					className: S.a.downloadAppLabel
-				}, H))))
+				}, D))))
 			}
 		},
 		"./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts": function(e, t, s) {
@@ -333,20 +333,20 @@
 					experimentName: e,
 					experimentEligibilitySelector: r,
 					throttledVariants: {
-						[l.Wb.Bottom_cell_dismissible]: e,
-						[l.Wb.Bottom_cell_dismissible_immediate_trigger]: e,
-						[l.Wb.Bottom_sheet]: e
+						[l.Yb.Bottom_cell_dismissible]: e,
+						[l.Yb.Bottom_cell_dismissible_immediate_trigger]: e,
+						[l.Yb.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const d = a(l.mb, !0),
-				p = a(l.nb, !0),
-				u = a(l.ob, !0),
-				m = a(l.mb, !1),
-				_ = a(l.nb, !1),
-				b = a(l.ob, !1)
+			const d = a(l.nb, !0),
+				p = a(l.ob, !0),
+				u = a(l.pb, !0),
+				m = a(l.nb, !1),
+				_ = a(l.ob, !1),
+				b = a(l.pb, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.52d1c2f9df73a4527238.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.69fd36d209fc49dbf659.js.map

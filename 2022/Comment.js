@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Comment.e5059201b7d3f0aeb1c1.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Comment.b7afdedb4323fcf843a5.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Comment"], {
 		"./src/reddit/actions/gold/giveAward.ts": function(e, t, r) {
@@ -396,8 +396,8 @@
 					LoadingComponent: () => null
 				}),
 				W = r("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
-				z = r.n(W);
-			const V = 3500,
+				V = r.n(W);
+			const z = 3500,
 				Q = 500;
 			class Y extends o.a.PureComponent {
 				constructor(e) {
@@ -415,7 +415,7 @@
 							this.setState({
 								shouldAnimate: !1
 							})
-						}, V)))
+						}, z)))
 					}, this.handleOnClick = () => {
 						const {
 							onAddAward: e,
@@ -479,31 +479,31 @@
 						shouldAnimate: c
 					} = this.state, l = Object(G.a)(e.id, a.id);
 					return o.a.createElement("span", {
-						className: z.a.awardPillContainer,
+						className: V.a.awardPillContainer,
 						id: d,
 						onMouseEnter: this.handleMouseEnter,
 						onMouseLeave: this.handleMouseLeave
 					}, o.a.createElement("button", {
-						className: Object(M.a)(t, z.a.awardPill, {
-							[z.a.userGiven]: i
+						className: Object(M.a)(t, V.a.awardPill, {
+							[V.a.userGiven]: i
 						}),
 						onClick: this.handleOnClick
 					}, o.a.createElement("span", {
-						className: z.a.imageContainer
+						className: V.a.imageContainer
 					}, o.a.createElement("img", {
 						alt: e.name,
-						className: Object(M.a)(z.a.awardIcon, {
-							[z.a.hidden]: c
+						className: Object(M.a)(V.a.awardIcon, {
+							[V.a.hidden]: c
 						}),
 						id: l,
 						ref: this.imageRef,
 						src: n
 					}), c && o.a.createElement("img", {
 						alt: e.name,
-						className: z.a.animationIcon,
+						className: V.a.animationIcon,
 						src: s
 					})), o.a.createElement("span", {
-						className: z.a.count
+						className: V.a.count
 					}, r.toLocaleString())), o.a.createElement(q, {
 						award: e,
 						onOpenReportFlow: this.handleOpenReportFlow,
@@ -516,8 +516,8 @@
 			var J = Y,
 				K = r("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				$ = r("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
-				Z = r.n($);
-			var X = o.a.memo(e => {
+				X = r.n($);
+			var Z = o.a.memo(e => {
 				const {
 					className: t,
 					direction: r,
@@ -528,15 +528,15 @@
 					hk: "3xdEc5"
 				});
 				return o.a.createElement("div", {
-					className: Object(M.a)(Z.a.buttonContainer, {
-						[Z.a.right]: a
+					className: Object(M.a)(X.a.buttonContainer, {
+						[X.a.right]: a
 					}, t)
 				}, o.a.createElement("button", {
-					className: Z.a.scrollButton,
+					className: X.a.scrollButton,
 					name: a ? i : d,
 					onClick: n
 				}, o.a.createElement(K.a, {
-					className: Z.a.chevronIcon
+					className: X.a.chevronIcon
 				})))
 			});
 			const ee = (e, t) => {
@@ -697,7 +697,7 @@
 							[le.a.multiline]: d
 						}),
 						ref: this.plaqueRef
-					}, w && o.a.createElement(X, {
+					}, w && o.a.createElement(Z, {
 						direction: "left",
 						onClick: this.handleScrollLeft
 					}), (i.topAwardedType === F.a.Active || i.topAwardedType === F.a.Inactive) && !s && a && o.a.createElement(ie, {
@@ -729,7 +729,7 @@
 						onAddAward: l
 					}), !d && o.a.createElement("div", {
 						className: le.a.spacer
-					}), f && o.a.createElement(X, {
+					}), f && o.a.createElement(Z, {
 						direction: "right",
 						onClick: this.handleScrollRight
 					}))
@@ -2690,16 +2690,16 @@
 				o = r("./src/reddit/selectors/user.ts");
 			const a = e => {
 					const t = Object(n.c)(e, {
-						experimentEligibilitySelector: o.K,
-						experimentName: s.zc
+						experimentEligibilitySelector: o.N,
+						experimentName: s.Bc
 					});
-					return !(!t || Object(s.tf)(t))
+					return !(!t || Object(s.vf)(t))
 				},
 				d = e => {
 					return Object(n.c)(e, {
-						experimentEligibilitySelector: o.K,
-						experimentName: s.zc
-					}) === s.ed.ListingEnabled
+						experimentEligibilitySelector: o.N,
+						experimentName: s.Bc
+					}) === s.gd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, r) {
@@ -2712,7 +2712,7 @@
 				o = r("./src/reddit/selectors/runTimeEnvVars.ts"),
 				a = r("./src/reddit/selectors/user.ts");
 			const d = e => !!Object(o.b)(e) || Object(n.c)(e, {
-				experimentEligibilitySelector: a.K,
+				experimentEligibilitySelector: a.N,
 				experimentName: s.k
 			}) === s.f.Enabled
 		},
@@ -2726,9 +2726,9 @@
 				o = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = r("./src/reddit/selectors/user.ts");
 			const d = Object(s.a)(e => Object(o.c)(e, {
-				experimentEligibilitySelector: a.K,
-				experimentName: n.Ob
-			}), e => e === n.Zc)
+				experimentEligibilitySelector: a.N,
+				experimentName: n.Qb
+			}), e => e === n.bd)
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, r) {
 			"use strict";
@@ -2904,4 +2904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.e5059201b7d3f0aeb1c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Comment.b7afdedb4323fcf843a5.js.map

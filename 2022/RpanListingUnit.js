@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.06f1c36d54eac3b198d4.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.11de2033c365f7b2a559.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Kd
+					experimentName: u.Md
 				});
-				return Object(u.tf)(t) ? void 0 : t
+				return Object(u.vf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ld
+					experimentName: u.Nd
 				});
-				return Object(u.tf)(t) ? void 0 : t
-			}, (e, t) => e === u.Od.Enabled && t === u.Od.Enabled);
+				return Object(u.vf)(t) ? void 0 : t
+			}, (e, t) => e === u.Qd.Enabled && t === u.Qd.Enabled);
 			var h = n("./src/config.ts");
 			var f = n("./src/reddit/selectors/user.ts");
 			const b = e => {
@@ -1363,7 +1363,7 @@
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(o.b)(() => Object(i.c)({
 				autoplay: k.b,
-				isLoggedIn: k.K,
+				isLoggedIn: k.N,
 				isOverlayOpen: j.i,
 				location: (e, {
 					listingName: t
@@ -4147,7 +4147,7 @@
 					const n = Object(i.G)(e, {
 						postId: t
 					});
-					return !(!n || n.isSponsored || n.removedByCategory) && (Object(a.vb)(e, {
+					return !(!n || n.isSponsored || n.removedByCategory) && (Object(a.yb)(e, {
 						postId: t
 					}) || !!Object(o.l)(e, {
 						postId: t
@@ -4175,13 +4175,13 @@
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.m
-					}) === s.Zc
+					}) === s.bd
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.n
-					}) === s.Zc
+					}) === s.bd
 				}
 		},
 		"./src/reddit/selectors/experiments/creatorStats.ts": function(e, t, n) {
@@ -4195,13 +4195,13 @@
 				i = n("./src/reddit/selectors/user.ts");
 			const a = (e, t) => {
 				return Object(r.c)(e, {
-					experimentEligibilitySelector: e => ((e, t) => Object(i.vb)(e, {
+					experimentEligibilitySelector: e => ((e, t) => Object(i.yb)(e, {
 						postId: t
 					}) || !!Object(o.l)(e, {
 						postId: t
-					}) || Object(i.H)(e))(e, t),
+					}) || Object(i.K)(e))(e, t),
 					experimentName: s.N
-				}) === s.Zc
+				}) === s.bd
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -4332,4 +4332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.06f1c36d54eac3b198d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.11de2033c365f7b2a559.js.map

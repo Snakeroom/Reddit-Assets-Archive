@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.7f4d7dfb7c7152d7d84e.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.7630124fd9bf980e21d3.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -436,7 +436,7 @@
 				de = C.a.div("TickText", A.a),
 				me = C.a.div("PreSubText", A.a),
 				ue = Object(o.c)({
-					isNightModeOn: L.X
+					isNightModeOn: L.ab
 				}),
 				pe = Object(r.b)(ue)(e => s.a.createElement(X, {
 					last: e.last,
@@ -967,10 +967,10 @@
 					error: W.f,
 					isCreatePending: W.j,
 					isEmailInviteExperimentEnabled: A.a,
-					isEmployee: H.H,
+					isEmployee: H.K,
 					crosspostId: W.i,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(H.ib)(e),
-					userIsSuspended: H.R,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(H.lb)(e),
+					userIsSuspended: H.U,
 					allTags: G.e,
 					existingTags: G.f,
 					newTags: G.g,
@@ -1879,11 +1879,11 @@
 			const r = e => {
 				const t = Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: a.Yc
+					experimentName: a.ad
 				});
-				return !(!t || Object(a.tf)(t))
+				return !(!t || Object(a.vf)(t))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.7f4d7dfb7c7152d7d84e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.7630124fd9bf980e21d3.js.map

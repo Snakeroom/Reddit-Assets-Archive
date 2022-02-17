@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.2ab2941d128c897377cf.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.f5b809ba416299aa867c.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, n) {
@@ -4982,16 +4982,16 @@
 				r = n("./src/reddit/selectors/user.ts");
 			const o = e => {
 					const t = Object(a.c)(e, {
-						experimentEligibilitySelector: r.K,
-						experimentName: s.zc
+						experimentEligibilitySelector: r.N,
+						experimentName: s.Bc
 					});
-					return !(!t || Object(s.tf)(t))
+					return !(!t || Object(s.vf)(t))
 				},
 				d = e => {
 					return Object(a.c)(e, {
-						experimentEligibilitySelector: r.K,
-						experimentName: s.zc
-					}) === s.ed.ListingEnabled
+						experimentEligibilitySelector: r.N,
+						experimentName: s.Bc
+					}) === s.gd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
@@ -5168,4 +5168,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.2ab2941d128c897377cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f5b809ba416299aa867c.js.map

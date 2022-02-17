@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.e293ed54495a2ad37b3d.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.a1a2fb9ed546ea633b5d.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -399,7 +399,7 @@
 				apiContext: r
 			}) => {
 				const u = a();
-				if (Object(d.K)(u))
+				if (Object(d.N)(u))
 					if (Object(c.f)(u)) await Object(n.g)(r(), e, t);
 					else {
 						await Object(o.d)(e);
@@ -1451,7 +1451,7 @@
 					isSubscribed: n
 				}));
 				return o && o.enableFollowers ? l : null
-			}, we = e => Object(o.e)(t => Object(P.sb)(t, {
+			}, we = e => Object(o.e)(t => Object(P.vb)(t, {
 				userName: e
 			})), Ce = e => Object(o.e)(t => Object(D.eb)(t, {
 				identifier: {
@@ -1502,8 +1502,8 @@
 				d: "M12.8,6.4 L9.6,6.4 L9.6,3.2 C9.6,2.7576 9.2424,2.4 8.8,2.4 L7.2,2.4 C6.7576,2.4 6.4,2.7576 6.4,3.2 L6.4,6.4 L3.2,6.4 C2.7584,6.4 2.4,6.7576 2.4,7.2 L2.4,8.8 C2.4,9.2424 2.7584,9.6 3.2,9.6 L6.4,9.6 L6.4,12.8 C6.4,13.2424 6.7576,13.6 7.2,13.6 L8.8,13.6 C9.2424,13.6 9.6,13.2424 9.6,12.8 L9.6,9.6 L12.8,9.6 C13.2424,9.6 13.6,9.2424 13.6,8.8 L13.6,7.2 C13.6,6.7576 13.2424,6.4 12.8,6.4"
 			})), ke = e => {
 				const t = Object(o.e)(P.k),
-					s = Object(o.e)(P.C),
-					a = Object(o.e)(P.eb);
+					s = Object(o.e)(P.E),
+					a = Object(o.e)(P.hb);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!a && !s))))
 			}
 		},
@@ -1680,4 +1680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.e293ed54495a2ad37b3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.a1a2fb9ed546ea633b5d.js.map

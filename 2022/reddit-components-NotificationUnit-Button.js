@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.03e9f0d925362f47a4e5.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.68b9875e062d0e3fbe82.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(t, e, o) {
@@ -43,7 +43,7 @@
 			})), o.d(e, "k", (function() {
 				return At
 			})), o.d(e, "r", (function() {
-				return Dt
+				return Pt
 			}));
 			o("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = o("./node_modules/fbt/lib/FbtPublic.js"),
@@ -71,8 +71,8 @@
 				E = o("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				_ = o("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts"),
 				S = o("./src/reddit/models/PostCreationForm/index.ts"),
-				g = o("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
-				N = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
+				N = o("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
+				g = o("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const v = (t, e, o, n) => {
 					let r, s;
 					if (n === S.i.MARKDOWN) r = o.text, s = null;
@@ -108,7 +108,7 @@
 					}
 					return Object(x.a)(Object(C.a)(t, [h.a]), {
 						method: r.jb.POST,
-						endpoint: Object(R.a)(Object(g.a)(Object(N.a)(`${t.apiUrl}/api/comment.json`))),
+						endpoint: Object(R.a)(Object(N.a)(Object(g.a)(`${t.apiUrl}/api/comment.json`))),
 						data: i
 					}).then(t => t.ok ? t.body.json ? t.body.json.errors.length ? {
 						...t,
@@ -130,8 +130,8 @@
 					})
 				};
 			var A = o("./src/redditGQL/operations/UpdateCommentFollowState.json");
-			var D = o("./src/reddit/endpoints/post/index.tsx"),
-				P = o("./src/reddit/endpoints/post/convert.ts"),
+			var P = o("./src/reddit/endpoints/post/index.tsx"),
+				D = o("./src/reddit/endpoints/post/convert.ts"),
 				w = o("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				K = o("./src/reddit/featureFlags/index.ts"),
 				M = o("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -157,7 +157,7 @@
 				}) => async (o, n) => {
 					const r = n();
 					if (!!r.features.comments.drafts[e])
-						if (Object(Q.M)(r) && t) {
+						if (Object(Q.P)(r) && t) {
 							const n = Z({
 								hasFocus: t,
 								draftKey: e
@@ -304,7 +304,7 @@
 					})), r(Object(m.c)(t));
 					else {
 						r(Object(m.b)(o));
-						const s = await Object(P.a)(i(), t, c ? e : JSON.stringify(e));
+						const s = await Object(D.a)(i(), t, c ? e : JSON.stringify(e));
 						if (s.ok) {
 							const e = s.body.output;
 							r(Object(m.a)(o)), r(Ot({
@@ -327,7 +327,7 @@
 				}) => async (n, r) => {
 					const s = r(),
 						l = Object(i.a)(B.c.replyToComment, e);
-					if (!Object(Q.K)(r())) return n(Object(d.j)()), void n(Object(a.k)({
+					if (!Object(Q.N)(r())) return n(Object(d.j)()), void n(Object(a.k)({
 						actionSource: a.a.Reply,
 						redirectUrl: Object(V.m)(r(), {
 							commentId: e
@@ -367,7 +367,7 @@
 							draftType: B.c.replyToComment,
 							rtJson: f,
 							text: ""
-						}, Object(Q.M)(s)) {
+						}, Object(Q.P)(s)) {
 						const o = ut({
 							parentCommentId: e,
 							commentsPageKey: t,
@@ -451,7 +451,7 @@
 								})
 							}
 							return Object(x.a)(Object(C.a)(t, [h.a]), {
-								endpoint: Object(R.a)(Object(N.a)(Object(g.a)(`${t.apiUrl}/api/editusertext`))),
+								endpoint: Object(R.a)(Object(g.a)(Object(N.a)(`${t.apiUrl}/api/editusertext`))),
 								method: r.jb.POST,
 								data: c
 							}).then(t => t.ok ? t.body.json ? t.body.json.errors.length ? {
@@ -488,11 +488,11 @@
 						draftKey: n,
 						error: m.error
 					}))
-				}, gt = Object(s.a)($.z), Nt = Object(s.a)($.y), vt = Object(s.a)($.A), kt = (t, e) => async (o, n, {
+				}, Nt = Object(s.a)($.z), gt = Object(s.a)($.y), vt = Object(s.a)($.A), kt = (t, e) => async (o, n, {
 					apiContext: s
 				}) => {
 					const i = n();
-					o(gt({
+					o(Nt({
 						id: t
 					})), F.a(t, i);
 					const c = await ((t, e) => Object(x.a)(Object(C.a)(t, [h.a]), {
@@ -515,7 +515,7 @@
 					c.ok ? o(vt({
 						id: t,
 						postId: e
-					})) : o(Nt({
+					})) : o(gt({
 						id: t,
 						error: c.error
 					}))
@@ -527,12 +527,12 @@
 						[t]: {
 							sendReplies: r
 						}
-					})), (await Object(D.o)(n(), t, r)).ok || e(Object(X.i)({
+					})), (await Object(P.o)(n(), t, r)).ok || e(Object(X.i)({
 						[t]: {
 							sendReplies: !r
 						}
 					}))
-				}, Dt = (t, e) => async (o, r, {
+				}, Pt = (t, e) => async (o, r, {
 					gqlContext: s
 				}) => {
 					var i, c, d, a, l, m;
@@ -761,13 +761,13 @@
 				const _ = Object(i.d)(),
 					{
 						context: S,
-						deeplinkUrl: g,
-						isFullWidth: N,
+						deeplinkUrl: N,
+						isFullWidth: g,
 						isUnread: v,
 						isInboxCTAsAllEnabled: k,
 						isInboxCTAsReplyEnabled: A,
-						isInboxCTAsSeePostEnabled: D,
-						isNightMode: P,
+						isInboxCTAsSeePostEnabled: P,
+						isNightMode: D,
 						notificationId: w,
 						onEvent: K
 					} = t,
@@ -782,7 +782,7 @@
 					switch (M) {
 						case p.a.LifecyclePostSuggestions:
 						case p.a.SubredditRecommendation: {
-							if (!D && !k) return null;
+							if (!P && !k) return null;
 							const t = t => {
 								L ? K({
 									position: f.d.SECOND,
@@ -792,12 +792,12 @@
 							};
 							return s.a.createElement(u.t, {
 								onClick: t,
-								isFullWidth: N,
+								isFullWidth: g,
 								priority: u.c.Tertiary,
 								redditStyle: !0,
 								className: Object(c.a)(x.a.notificationButton, {
 									[x.a.isUnread]: v,
-									[x.a.isNightMode]: P
+									[x.a.isNightMode]: D
 								})
 							}, s.a.createElement(O.a, {
 								name: "text_post",
@@ -811,7 +811,7 @@
 							if (!A && !k) return null;
 							const t = t => {
 								if (F && U) {
-									const t = Object(d.a)(F, U, Object(b.c)(g)),
+									const t = Object(d.a)(F, U, Object(b.c)(N)),
 										e = {
 											parentCommentId: U,
 											commentsPageKey: t
@@ -823,12 +823,12 @@
 							};
 							return s.a.createElement(u.t, {
 								onClick: t,
-								isFullWidth: N,
+								isFullWidth: g,
 								priority: u.c.Tertiary,
 								redditStyle: !0,
 								className: Object(c.a)(x.a.notificationButton, {
 									[x.a.isUnread]: v,
-									[x.a.isNightMode]: P
+									[x.a.isNightMode]: D
 								})
 							}, s.a.createElement(O.a, {
 								name: "reply",
@@ -849,13 +849,13 @@
 								userId: J,
 								contextId: J,
 								onClick: t,
-								isFullWidth: N,
+								isFullWidth: g,
 								priority: u.c.Tertiary,
 								redditStyle: !0,
 								eventSource: m.a.awardNotification,
 								className: Object(c.a)(x.a.notificationButton, {
 									[x.a.isUnread]: v,
-									[x.a.isNightMode]: P
+									[x.a.isNightMode]: D
 								})
 							}, s.a.createElement(O.a, {
 								name: "chat_new",
@@ -1092,4 +1092,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.03e9f0d925362f47a4e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.68b9875e062d0e3fbe82.js.map

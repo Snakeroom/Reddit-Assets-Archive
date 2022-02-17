@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.eeec226d0e561a556e08.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.710946cffa023fd0d515.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -1112,7 +1112,7 @@
 				u = n("./src/reddit/models/Flair/index.ts"),
 				m = n("./src/reddit/selectors/user.ts");
 			const p = Object(c.c)({
-					labelNSFW: m.U
+					labelNSFW: m.X
 				}),
 				b = Object(i.b)(p),
 				f = e => {
@@ -1756,9 +1756,9 @@
 					}) => Object(m.q)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: w.db
+					shouldOpenPostInNewTab: w.gb
 				}),
-				Z = e => {
+				X = e => {
 					const {
 						post: t,
 						subreddit: n
@@ -1769,13 +1769,13 @@
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement($, {
 						nowrap: e.nowrap
-					}, o.a.createElement(X, e));
+					}, o.a.createElement(Z, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return o.a.createElement(p.b, {
 						href: t.source.url,
 						isSponsored: r,
 						postId: t.id,
 						source: t.source
-					}, o.a.createElement(X, e)); {
+					}, o.a.createElement(Z, e)); {
 						const s = t.media && Object(T.H)(t.media) ? Object(O.c)(t.id, n.name) : t.permalink,
 							a = e.isCommentPermalink ? Object(h.b)(s) : Object(f.a)(s, void 0, i);
 						return o.a.createElement($, {
@@ -1790,7 +1790,7 @@
 								isSponsored: e.isSponsored,
 								postId: e.id,
 								source: n
-							}, o.a.createElement(X, t)) : o.a.createElement(X, t)
+							}, o.a.createElement(Z, t)) : o.a.createElement(Z, t)
 						})(t, e) : o.a.createElement(z, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
@@ -1799,10 +1799,10 @@
 							titleColor: e.titleColor,
 							to: a,
 							onClick: l
-						}, o.a.createElement(X, e)))
+						}, o.a.createElement(Z, e)))
 					}
 				},
-				X = e => {
+				Z = e => {
 					const {
 						leftFlair: t,
 						isCommentsPageAd: n,
@@ -1893,7 +1893,7 @@
 						nowrap: !0,
 						post: i,
 						sendEvent: this.props.sendEvent
-					}), !Object(x.b)(i) && o.a.createElement(Z, H({}, this.props, {
+					}), !Object(x.b)(i) && o.a.createElement(X, H({}, this.props, {
 						leftFlair: c ? p : void 0
 					})), a && o.a.createElement(v, {
 						className: U.a.pollMeta,
@@ -3246,15 +3246,15 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.m
-					}) === r.Zc
+					}) === r.bd
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.n
-					}) === r.Zc
+					}) === r.bd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.eeec226d0e561a556e08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.710946cffa023fd0d515.js.map

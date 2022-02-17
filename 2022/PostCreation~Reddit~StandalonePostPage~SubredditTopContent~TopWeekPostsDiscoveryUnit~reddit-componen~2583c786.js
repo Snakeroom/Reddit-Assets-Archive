@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786.4b6532e1546f93d163f5.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786.84bb9bed405afe17ef80.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -82,16 +82,16 @@
 			const h = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Kd
+					experimentName: u.Md
 				});
-				return Object(u.tf)(t) ? void 0 : t
+				return Object(u.vf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ld
+					experimentName: u.Nd
 				});
-				return Object(u.tf)(t) ? void 0 : t
-			}, (e, t) => e === u.Od.Enabled && t === u.Od.Enabled);
+				return Object(u.vf)(t) ? void 0 : t
+			}, (e, t) => e === u.Qd.Enabled && t === u.Qd.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -121,8 +121,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const O = (e => t => ((e, t) => `${e}(${(e=>e.displayName||e.name||"Component")(t)})`)(e, t))("WithMux"),
-				w = {
+			const w = (e => t => ((e, t) => `${e}(${(e=>e.displayName||e.name||"Component")(t)})`)(e, t))("WithMux"),
+				O = {
 					anonymousUserId: "t2_anonymous",
 					debug: !1,
 					disableCookies: !0,
@@ -150,7 +150,7 @@
 					saltTimeToLive: j,
 					viewerUserIdLength: L
 				} = {
-					...w,
+					...O,
 					...t
 				};
 				class N extends i.Component {
@@ -300,7 +300,7 @@
 						}
 					}
 				}
-				N.displayName = O(e), N.ANONYMOUS_USER_ID = s, N.DEBUG = l, N.DISABLE_COOKIES = u, N.DURATION_LIVE = 1 / 0, N.ENV_KEY = m, N.LOCAL_STORAGE_SALT_KEY = f, N.LOCAL_STORAGE_VIEWER_USER_ID_KEY = E, N.PLAYER_NAME = C, N.PLAYER_VERSION = I, N.RESPECT_DO_NOT_TRACK = T, N.SALT_LENGTH = S, N.SALT_TIME_TO_LIVE = j, N.STREAM_TYPE_LIVE = "live", N.STREAM_TYPE_ON_DEMAND = "on-demand", N.VIEWER_USER_ID_LENGTH = L;
+				N.displayName = w(e), N.ANONYMOUS_USER_ID = s, N.DEBUG = l, N.DISABLE_COOKIES = u, N.DURATION_LIVE = 1 / 0, N.ENV_KEY = m, N.LOCAL_STORAGE_SALT_KEY = f, N.LOCAL_STORAGE_VIEWER_USER_ID_KEY = E, N.PLAYER_NAME = C, N.PLAYER_VERSION = I, N.RESPECT_DO_NOT_TRACK = T, N.SALT_LENGTH = S, N.SALT_TIME_TO_LIVE = j, N.STREAM_TYPE_LIVE = "live", N.STREAM_TYPE_ON_DEMAND = "on-demand", N.VIEWER_USER_ID_LENGTH = L;
 				const M = Object(i.forwardRef)((e, t) => n.a.createElement(N, y({}, e, {
 						forwardedRef: t
 					}))),
@@ -418,8 +418,8 @@
 				E = s("./src/reddit/components/Media/BlurredContent.tsx"),
 				v = s("./src/reddit/constants/adEvents.ts"),
 				y = s("./src/reddit/constants/keycodes.ts"),
-				O = s("./src/reddit/helpers/mediaGallery/index.tsx"),
-				w = s("./src/reddit/models/Media/index.ts"),
+				w = s("./src/reddit/helpers/mediaGallery/index.tsx"),
+				O = s("./src/reddit/models/Media/index.ts"),
 				C = s("./src/reddit/selectors/media.ts"),
 				I = s("./src/reddit/components/Media/GalleryBox/index.m.less"),
 				T = s.n(I);
@@ -465,7 +465,7 @@
 					left: "0px"
 				} : {
 					left: s > t ? "-100%" : "100%"
-				}, g = Object(O.c)(l), x = a.y > g && Object(w.L)(a.y, a.x), f = x ? {} : {
+				}, g = Object(w.c)(l), x = a.y > g && Object(O.L)(a.y, a.x), f = x ? {} : {
 					maxHeight: "100%"
 				};
 				let v;
@@ -537,7 +537,7 @@
 				target: "'_blank'"
 			}, n.a.createElement("span", {
 				className: T.a.urlText
-			}, Object(O.e)(e.outboundUrl)), n.a.createElement(b.a, {
+			}, Object(w.e)(e.outboundUrl)), n.a.createElement(b.a, {
 				className: T.a.linkIcon
 			})))), P = e => n.a.createElement("div", {
 				className: T.a.slideIndicator,
@@ -639,15 +639,15 @@
 				const de = p[F] && p[F].caption,
 					le = p[F] && p[F].outboundUrl,
 					ce = ((e, t, s) => {
-						const i = Object(O.f)(e),
-							n = Object(O.g)(i),
+						const i = Object(w.f)(e),
+							n = Object(w.g)(i),
 							o = n.x / n.y < 1,
-							a = Object(O.h)(e),
-							r = Object(O.i)(e || {}, Object(O.c)(s), w.p);
+							a = Object(w.h)(e),
+							r = Object(w.i)(e || {}, Object(w.c)(s), O.p);
 						return s || r || a || o ? {
 							height: t
 						} : {
-							paddingBottom: `${Object(w.B)(n.y,n.x)}%`
+							paddingBottom: `${Object(O.B)(n.y,n.x)}%`
 						}
 					})(j, b, g);
 				return n.a.createElement("div", {
@@ -664,7 +664,7 @@
 						o = j && j[i];
 					if (!o || !o.s) return null;
 					const a = [...o && o.s ? [o.s] : [], ...o && o.p ? o.p : []],
-						r = Object(O.d)(w.y, a);
+						r = Object(w.d)(O.y, a);
 					if (!r) return null;
 					const d = o.s;
 					return n.a.createElement("div", {
@@ -700,9 +700,9 @@
 					const a = t.caption ? t.caption : A,
 						r = Object(c.a)(W ? `${W} - ${a}` : a, 300, d.ib),
 						l = [...o && o.s ? [o.s] : [], ...o && o.p ? o.p : []],
-						u = Object(O.d)(b, l);
+						u = Object(w.d)(b, l);
 					if (!u) return null;
-					const m = e.shouldBlur && Object(O.d)(b, o.o || []) || void 0,
+					const m = e.shouldBlur && Object(w.d)(b, o.o || []) || void 0,
 						h = s >= J && s <= Q;
 					return n.a.createElement(L, {
 						slideIndex: s,
@@ -912,8 +912,8 @@
 					mediaContainerProps: s,
 					onIframeLoaded: b,
 					embedBoxChildRef: y,
-					source: O,
-					title: w,
+					source: w,
+					title: O,
 					postId: C
 				} = e, [I, T] = Object(n.useState)(!1), S = Object(d.a)(t), j = Object(n.useRef)(), {
 					height: L,
@@ -957,8 +957,8 @@
 					onLoad: b,
 					showCentered: s.showCentered,
 					showFull: !0,
-					source: O,
-					title: w,
+					source: w,
+					title: O,
 					width: f
 				}), s.isListing && M > p.j && o.a.createElement("div", {
 					className: g.a.seeMore
@@ -1032,8 +1032,8 @@
 				E = s("./src/lib/env/index.ts"),
 				v = s("./src/lib/isUrl/index.ts"),
 				y = s("./src/lib/objectSelector/index.ts"),
-				O = s("./src/lib/onFocusAndVisibilityChange/index.ts"),
-				w = s("./src/lib/sentry/index.ts"),
+				w = s("./src/lib/onFocusAndVisibilityChange/index.ts"),
+				O = s("./src/lib/sentry/index.ts"),
 				C = s("./src/lib/truncateText/index.ts"),
 				I = s("./src/reddit/actions/post.ts"),
 				T = s("./src/reddit/components/AdViewability/index.tsx"),
@@ -1122,10 +1122,10 @@
 				Ee = new Set([X.o.EMBED, X.o.LIVEVIDEO, X.o.VIDEO, X.o.GIFVIDEO]),
 				ve = e => !!e.media && Ee.has(e.media.type),
 				ye = new Set([X.o.EMBED, X.o.GALLERY, X.o.GIFVIDEO, X.o.IMAGE, X.o.LIVEVIDEO, X.o.VIDEO]),
-				Oe = ({
+				we = ({
 					post: e
 				}) => !!e.media && ye.has(e.media.type),
-				we = Object(G.u)(),
+				Oe = Object(G.u)(),
 				Ce = Object(h.c)({
 					canUseOCRAltText: (e, t) => Object(ee.b)(e, t.post),
 					OCRAltText: (e, {
@@ -1290,12 +1290,12 @@
 					"undefined" != typeof window && (this.updateDimensions(), window.addEventListener("resize", this.updateDimensions))
 				}
 				componentDidMount() {
-					ve(this.props.post) && (this.visibilityChangeSubscriptionId = O.a.subscribe(e => {
+					ve(this.props.post) && (this.visibilityChangeSubscriptionId = w.a.subscribe(e => {
 						this.handleVisibilityChange(e)
-					})), this.props.scrollerItemRef && Oe(this.props) && this.props.scrollerItemRef(this, this.state.canLoadContent)
+					})), this.props.scrollerItemRef && we(this.props) && this.props.scrollerItemRef(this, this.state.canLoadContent)
 				}
 				componentWillUnmount() {
-					this.visibilityChangeSubscriptionId && O.a.unsubscribe(this.visibilityChangeSubscriptionId), this.props.scrollerItemRef && Oe(this.props) && this.props.scrollerItemRef(void 0), window.removeEventListener("resize", this.updateDimensions)
+					this.visibilityChangeSubscriptionId && w.a.unsubscribe(this.visibilityChangeSubscriptionId), this.props.scrollerItemRef && we(this.props) && this.props.scrollerItemRef(void 0), window.removeEventListener("resize", this.updateDimensions)
 				}
 				UNSAFE_componentWillReceiveProps(e) {
 					!this.state.canLoadContent && e.shouldLoad && this.setState({
@@ -1419,7 +1419,7 @@
 						showCentered: x,
 						showFull: f = !1,
 						showPromotedCTA: y,
-						subredditOrProfileDisplayText: O
+						subredditOrProfileDisplayText: w
 					} = this.props, {
 						canLoadContent: C,
 						forcePause: I,
@@ -1522,12 +1522,12 @@
 						case X.o.TEXT:
 							if (Object($.a)(g)) {
 								const e = "Text post should not include body content";
-								return w.c.withScope(t => {
+								return O.c.withScope(t => {
 									t.setExtra("info", {
 										post: g,
 										isListing: c,
 										isCommentsPage: a
-									}), w.c.captureMessage(e)
+									}), O.c.captureMessage(e)
 								}), Object(E.a)() && console.log(`${g.id}: ${e}`), u.a.createElement(u.a.Fragment, null, re && u.a.createElement(k.a, {
 									postId: g.id,
 									className: t,
@@ -1723,7 +1723,7 @@
 								post: g,
 								postId: g.id,
 								postTitle: g.title,
-								subredditName: O,
+								subredditName: w,
 								galleryItems: g.media.gallery ? g.media.gallery.items : [],
 								mediaMetadata: g.media.mediaMetadata || {},
 								imageHeight: I,
@@ -1745,7 +1745,7 @@
 					}
 				}
 			}
-			const Le = we(Te(Object(p.a)(Object(f.a)(je))))
+			const Le = Oe(Te(Object(p.a)(Object(f.a)(je))))
 		},
 		"./src/reddit/components/Poll/async.ts": function(e, t, s) {
 			"use strict";
@@ -2157,4 +2157,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786.4b6532e1546f93d163f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786.84bb9bed405afe17ef80.js.map

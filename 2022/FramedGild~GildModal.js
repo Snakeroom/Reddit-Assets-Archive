@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f3c60ced614ecc826588.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c53ae248a90922e0f7cc.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1561,7 +1561,7 @@
 					}) => {
 						t(O());
 						const d = r(),
-							l = Object(i.K)(d);
+							l = Object(i.N)(d);
 						try {
 							const r = !l,
 								n = await Object(o.b)({
@@ -2546,7 +2546,7 @@
 					isAnonymous: N.f,
 					iFramed: N.g,
 					isGildPending: N.e,
-					isEmployee: F.H,
+					isEmployee: F.K,
 					isRecommendedCoinPackagePending: M.q,
 					message: N.c,
 					postOrComment: (e, {
@@ -3655,4 +3655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f3c60ced614ecc826588.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.c53ae248a90922e0f7cc.js.map

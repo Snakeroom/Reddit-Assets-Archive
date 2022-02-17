@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.f3766a065a1a5fa3bde7.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.ebccde6c8010fac22e5b.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages~ModerationPages"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, r) {
@@ -66,7 +66,7 @@
 				}, g = e => async (t, r, {
 					apiContext: a
 				}) => {
-					if (!Object(y.K)(r())) return void t(Object(d.i)(i.a.LOGIN_MODAL_ID));
+					if (!Object(y.N)(r())) return void t(Object(d.i)(i.a.LOGIN_MODAL_ID));
 					const n = r().features.comments.models[e];
 					if (!n) return;
 					const o = n.isLocked ? l.l : l.e;
@@ -356,8 +356,8 @@
 						if (function(e) {
 								return Object(y.c)(e, {
 									experimentEligibilitySelector: y.a,
-									experimentName: O.md
-								}) === O.Zc
+									experimentName: O.od
+								}) === O.bd
 							}(c())) {
 							const {
 								normalizeModQueueListingFromGql: e,
@@ -638,9 +638,9 @@
 			r.r(t), r.d(t, "removalReasonsPending", (function() {
 				return X
 			})), r.d(t, "removalReasonsLoaded", (function() {
-				return Z
-			})), r.d(t, "removalReasonsFailed", (function() {
 				return Y
+			})), r.d(t, "removalReasonsFailed", (function() {
+				return Z
 			})), r.d(t, "removalReasonsRequested", (function() {
 				return ee
 			})), r.d(t, "removalReasonAddedPending", (function() {
@@ -891,8 +891,8 @@
 				}
 			});
 			const X = Object(R.a)("REMOVALREASONS__LOAD_PENDING"),
-				Z = Object(R.a)("REMOVALREASONS__LOAD_SUCCESS"),
-				Y = Object(R.a)("REMOVALREASONS__LOAD_FAILED"),
+				Y = Object(R.a)("REMOVALREASONS__LOAD_SUCCESS"),
+				Z = Object(R.a)("REMOVALREASONS__LOAD_FAILED"),
 				ee = e => async (t, r, {
 					apiContext: s
 				}) => {
@@ -902,10 +902,10 @@
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: k.jb.GET
 					}))(s(), a);
-					n.ok ? t(Z({
+					n.ok ? t(Y({
 						subredditId: e,
 						response: n.body
-					})) : t(Y(n.error))
+					})) : t(Z(n.error))
 				}, te = Object(R.a)(o), re = Object(R.a)(d), se = Object(R.a)(c), ae = (e, t) => async (r, a, {
 					apiContext: n
 				}) => {
@@ -1611,8 +1611,8 @@
 						return e
 				}
 			};
-			const Z = {};
-			var Y = (e = Z, t) => {
+			const Y = {};
+			var Z = (e = Y, t) => {
 				switch (t.type) {
 					case G.b: {
 						const {
@@ -1677,7 +1677,7 @@
 				ne = Object(s.c)({
 					actions: J,
 					endCursor: X,
-					hasNextPage: Y,
+					hasNextPage: Z,
 					hasPreviousPage: te,
 					moderators: se,
 					startCursor: ae
@@ -2183,12 +2183,12 @@
 							return e
 					}
 				},
-				Ze = Object(s.c)({
+				Ye = Object(s.c)({
 					error: We,
 					pending: Xe
 				});
-			const Ye = {};
-			var et = (e = Ye, t) => {
+			const Ze = {};
+			var et = (e = Ze, t) => {
 					switch (t.type) {
 						case Je.a: {
 							const {
@@ -2233,7 +2233,7 @@
 					}
 				},
 				at = Object(s.c)({
-					api: Ze,
+					api: Ye,
 					selectedItems: et,
 					undoLastAction: st
 				});
@@ -2692,7 +2692,7 @@
 					itemOrder: $t,
 					loadMore: Jt
 				}),
-				Zt = Object(s.c)({
+				Yt = Object(s.c)({
 					bulkAction: at,
 					edited: mt,
 					moderatedCommunitiesOrder: jt,
@@ -2701,7 +2701,7 @@
 					spam: Ft,
 					unmoderated: Xt
 				});
-			var Yt = (e = null, t) => {
+			var Zt = (e = null, t) => {
 				switch (t.type) {
 					case a.T:
 					case a.R:
@@ -2741,7 +2741,7 @@
 					}
 				},
 				rr = Object(s.c)({
-					error: Yt,
+					error: Zt,
 					pending: tr
 				});
 			const sr = {};
@@ -2905,7 +2905,7 @@
 				flairedUsers: K,
 				moderationLog: ne,
 				moderators: ze,
-				modQueue: Zt,
+				modQueue: Yt,
 				muted: hr
 			})
 		},
@@ -2971,4 +2971,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.f3766a065a1a5fa3bde7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.ebccde6c8010fac22e5b.js.map

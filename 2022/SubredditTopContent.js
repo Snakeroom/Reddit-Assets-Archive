@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.8a07caa9e570fef9ca58.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.7bb4dbec2c287cbf69bc.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -319,15 +319,15 @@
 				M = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				T = s("./src/reddit/constants/posts.ts"),
 				D = s("./src/lib/constants/index.ts"),
-				U = s("./src/reddit/components/HumanDate/index.tsx"),
-				B = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
+				B = s("./src/reddit/components/HumanDate/index.tsx"),
+				U = s("./src/reddit/components/Widgets/CommunityList/helpers.ts"),
 				W = s("./src/reddit/hooks/useClickSourceData.ts"),
 				F = s("./src/reddit/layout/row/Inline/index.tsx"),
 				V = s("./src/reddit/components/DiscoveryUnit/PostAuthor/index.m.less"),
 				A = s.n(V);
 			var H = e => {
 					const t = T.a.PROFILE,
-						s = Object(B.a)(e.author, t),
+						s = Object(U.a)(e.author, t),
 						a = Object(W.a)();
 					return r.a.createElement("div", {
 						className: Object(l.a)(A.a.container, e.className)
@@ -345,9 +345,9 @@
 							pathname: s,
 							state: a
 						}
-					}, Object(B.b)(e.author, t)), r.a.createElement("span", {
+					}, Object(U.b)(e.author, t)), r.a.createElement("span", {
 						className: A.a.timestamp
-					}, r.a.createElement(U.d, {
+					}, r.a.createElement(B.d, {
 						seconds: e.created / D.Sb
 					})))))
 				},
@@ -356,7 +356,7 @@
 				z = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
 				q = s.n(z);
 			var G = e => {
-					const t = Object(B.a)(e.name, e.type);
+					const t = Object(U.a)(e.name, e.type);
 					return r.a.createElement("div", {
 						className: Object(l.a)(q.a.container, e.className)
 					}, r.a.createElement(Q.a, {
@@ -375,18 +375,18 @@
 						"data-click-id": "subreddit",
 						className: q.a.name,
 						to: t
-					}, Object(B.b)(e.displayText || e.name, e.type)), r.a.createElement("span", {
+					}, Object(U.b)(e.displayText || e.name, e.type)), r.a.createElement("span", {
 						className: q.a.separator
 					}, "•"), r.a.createElement("span", {
 						className: q.a.timestamp
-					}, r.a.createElement(U.d, {
+					}, r.a.createElement(B.d, {
 						seconds: e.created / D.Sb
 					})))))
 				},
 				Y = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				Z = s("./src/reddit/components/Media/index.tsx"),
-				X = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
-				K = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
+				K = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
+				X = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
 				J = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				$ = s("./src/reddit/components/PostContainer/index.tsx"),
 				ee = s("./src/reddit/components/PostTitle/index.tsx"),
@@ -490,7 +490,7 @@
 						post: p,
 						size: ee.b.Large,
 						titleColor: o && o.postTitleColor
-					}), f && g && r.a.createElement(X.a, {
+					}), f && g && r.a.createElement(K.a, {
 						className: pe.a.metaLine,
 						crosspostSubredditOrProfile: n,
 						hideNSFWPref: d,
@@ -500,7 +500,7 @@
 						className: pe.a.flexSpacer
 					}), _ && r.a.createElement("div", {
 						className: pe.a.mediaWrapper
-					}, r.a.createElement(K.a, {
+					}, r.a.createElement(X.a, {
 						className: pe.a.thumbnailWrapper,
 						thumbnailClassName: pe.a.thumbnail,
 						thumbnailContainerClassName: pe.a.thumbnailContainer,
@@ -635,8 +635,8 @@
 				Me = s("./src/reddit/components/DiscoveryUnit/Layout/PostsCarousel/index.m.less"),
 				Te = s.n(Me);
 			const De = 326,
-				Ue = 12,
-				Be = {
+				Be = 12,
+				Ue = {
 					stiffness: 210,
 					damping: 30
 				},
@@ -771,13 +771,13 @@
 						itemWidth: c,
 						maxScrollIndex: u,
 						scrollIndex: d,
-						spacerWidth: Ue,
+						spacerWidth: Be,
 						visibleItemsCount: m
 					}), b = e ? We : this.getMarginLeft({
 						adjustment: p,
 						itemWidth: c,
 						scrollIndex: d,
-						spacerWidth: Ue
+						spacerWidth: Be
 					});
 					return r.a.createElement("div", {
 						className: Object(l.a)(Te.a.postsWrapper, this.props.className),
@@ -788,7 +788,7 @@
 							marginLeft: e || n ? We : 0
 						},
 						style: {
-							marginLeft: Object(i.spring)(b, o || Be)
+							marginLeft: Object(i.spring)(b, o || Ue)
 						}
 					}, this.renderPosts), 0 !== d && r.a.createElement(C, {
 						className: Object(l.a)(Te.a.arrowLeft, t),
@@ -863,9 +863,9 @@
 				f = s("./src/reddit/constants/experiments.ts"),
 				C = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				g = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(g.H)(e) || f.bf.ShowTopContent === Object(C.c)(e, {
+			const y = e => Object(g.K)(e) || f.df.ShowTopContent === Object(C.c)(e, {
 				experimentEligibilitySelector: C.a,
-				experimentName: f.Ue
+				experimentName: f.We
 			});
 			var _ = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1424,8 +1424,8 @@
 					}))
 				})),
 				D = s("./src/reddit/components/SEOTitle/index.tsx"),
-				U = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
-				B = s("./src/reddit/selectors/user.ts"),
+				B = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
+				U = s("./src/reddit/selectors/user.ts"),
 				W = s("./src/reddit/components/PostTitle/index.m.less"),
 				F = s.n(W),
 				V = s("./src/config.ts"),
@@ -1517,26 +1517,26 @@
 					}) => Object(u.q)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: B.db
+					shouldOpenPostInNewTab: U.gb
 				}),
-				X = e => {
+				K = e => {
 					const {
 						post: t,
 						subreddit: s
 					} = e, {
 						isSponsored: a
-					} = t, n = Object(i.d)(), o = Object(A.a)(), c = Object(i.e)(U.b), d = e => {
+					} = t, n = Object(i.d)(), o = Object(A.a)(), c = Object(i.e)(B.b), d = e => {
 						!c || t.media && Object(k.H)(t.media) || (e.preventDefault(), n(Object(x.ab)(Object(C.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Y, {
 						nowrap: e.nowrap
-					}, r.a.createElement(K, e));
+					}, r.a.createElement(X, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return r.a.createElement(p.b, {
 						href: t.source.url,
 						isSponsored: a,
 						postId: t.id,
 						source: t.source
-					}, r.a.createElement(K, e)); {
+					}, r.a.createElement(X, e)); {
 						const n = t.media && Object(k.H)(t.media) ? Object(g.c)(t.id, s.name) : t.permalink,
 							i = e.isCommentPermalink ? Object(C.b)(n) : Object(h.a)(n, void 0, o);
 						return r.a.createElement(Y, {
@@ -1551,7 +1551,7 @@
 								isSponsored: e.isSponsored,
 								postId: e.id,
 								source: s
-							}, r.a.createElement(K, t)) : r.a.createElement(K, t)
+							}, r.a.createElement(X, t)) : r.a.createElement(X, t)
 						})(t, e) : r.a.createElement(G, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
@@ -1560,10 +1560,10 @@
 							titleColor: e.titleColor,
 							to: i,
 							onClick: d
-						}, r.a.createElement(K, e)))
+						}, r.a.createElement(X, e)))
 					}
 				},
-				K = e => {
+				X = e => {
 					const {
 						leftFlair: t,
 						isCommentsPageAd: s,
@@ -1654,7 +1654,7 @@
 						nowrap: !0,
 						post: o,
 						sendEvent: this.props.sendEvent
-					}), !Object(E.b)(o) && r.a.createElement(X, z({}, this.props, {
+					}), !Object(E.b)(o) && r.a.createElement(K, z({}, this.props, {
 						leftFlair: c ? p : void 0
 					})), i && r.a.createElement(T, {
 						className: F.a.pollMeta,
@@ -1951,4 +1951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.8a07caa9e570fef9ca58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.7bb4dbec2c287cbf69bc.js.map

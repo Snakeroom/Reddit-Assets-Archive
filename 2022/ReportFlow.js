@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.3eb843e73ecdc6750c08.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.15edc2fe55c48e0a912a.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -892,7 +892,7 @@
 					if (!f && !p) return;
 					const R = p ? u.features.comments.models[e] : u.posts.models[e];
 					if (!R) return;
-					if (!Object(_.K)(o())) return s(Object(r.j)()), void s(Object(a.k)({
+					if (!Object(_.N)(o())) return s(Object(r.j)()), void s(Object(a.k)({
 						actionSource: a.a.Report,
 						redirectUrl: R.permalink
 					}));
@@ -1458,8 +1458,8 @@
 				V = n.n(z);
 			const Y = d.a.wrapped(h.a, "blockUserHolder", V.a),
 				J = d.a.wrapped(W.a, "BlockUserIcon", V.a),
-				X = d.a.div("BlockUserHeader", V.a),
-				Q = d.a.div("OptionHolder", V.a),
+				Q = d.a.div("BlockUserHeader", V.a),
+				X = d.a.div("OptionHolder", V.a),
 				Z = d.a.div("OptionHeader", V.a),
 				$ = d.a.div("OptionDescription", V.a),
 				ee = d.a.a("Link", V.a),
@@ -1490,7 +1490,7 @@
 						}) : s.fbt._("Block {username}", [s.fbt._param("username", e)], {
 							hk: "ohbdA"
 						})
-					}, this.renderAbuseOfReportButtonOption = () => r.a.createElement(Q, null, r.a.createElement(Z, null, s.fbt._("Turn off free-form reports", null, {
+					}, this.renderAbuseOfReportButtonOption = () => r.a.createElement(X, null, r.a.createElement(Z, null, s.fbt._("Turn off free-form reports", null, {
 						hk: "2yXM3i"
 					})), r.a.createElement($, null, s.fbt._("If you are a moderator, you can {=visit the Help Center} to learn how to modify your subreddit’s reporting settings to disallow users from submitting free-form reports. We also have automated processes in place to prevent excessive reporting.", [s.fbt._param("=visit the Help Center", r.a.createElement(ee, {
 						target: "_blank",
@@ -1505,7 +1505,7 @@
 						} = this, t = this.getBlockUserHeaderText();
 						return r.a.createElement(Y, {
 							onClick: () => this.onBlockAuthor(e.authorName)
-						}, r.a.createElement(J, null), r.a.createElement("div", null, r.a.createElement(X, null, t), r.a.createElement($, null, s.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [s.fbt._param("username", e.authorName)], {
+						}, r.a.createElement(J, null), r.a.createElement("div", null, r.a.createElement(Q, null, t), r.a.createElement($, null, s.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [s.fbt._param("username", e.authorName)], {
 							hk: "2iUUlN"
 						}))))
 					}
@@ -1827,8 +1827,8 @@
 				Ve = n("./src/reddit/components/ReportFlow/_ReportFlow.m.less"),
 				Ye = n.n(Ve);
 			const Je = d.a.div("CloseWrapper", Ye.a),
-				Xe = d.a.wrapped(Ae.a, "Close", Ye.a),
-				Qe = Object(i.c)({
+				Qe = d.a.wrapped(Ae.a, "Close", Ye.a),
+				Xe = Object(i.c)({
 					comment: (e, {
 						commentId: t
 					}) => t ? Object(Ge.b)(e, {
@@ -1982,7 +1982,7 @@
 						let e;
 						if (t.commentId ? e = t.comment && t.comment.author : t.postId && (e = t.post && t.post.author), e) return r.a.createElement(o.Fragment, null, r.a.createElement(Je, {
 							onClick: this.handleReportFlowClose
-						}, r.a.createElement(Xe, null)), r.a.createElement(u.a, {
+						}, r.a.createElement(Qe, null)), r.a.createElement(u.a, {
 							onCloseReportFlow: this.handleReportFlowClose,
 							thingId: t.commentId ? t.commentId : t.postId,
 							username: e
@@ -2006,7 +2006,7 @@
 					}, this.getContent())
 				}
 			}
-			const $e = Object(a.b)(Qe, (e, {
+			const $e = Object(a.b)(Xe, (e, {
 				timestamp: t
 			}) => ({
 				onCloseReportFlow: () => {
@@ -2102,7 +2102,7 @@
 						(r ? r.author : a ? a.author : null) || t.author;
 						n.name
 					}),
-					isNightmodeOn: j.X,
+					isNightmodeOn: j.ab,
 					locale: I.i
 				}),
 				B = Object(c.b)(U, (e, {
@@ -3720,7 +3720,7 @@
 					return !!n && n.includes(t)
 				},
 				i = (e, t) => {
-					const n = Object(s.sb)(e, {
+					const n = Object(s.vb)(e, {
 						userName: t
 					});
 					return !!n && a(e, n.id)
@@ -3747,13 +3747,13 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.m
-					}) === s.Zc
+					}) === s.bd
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.n
-					}) === s.Zc
+					}) === s.bd
 				}
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, n) {
@@ -3767,11 +3767,11 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
 			const a = e => s.c.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: r.K,
+					experimentEligibilitySelector: r.N,
 					experimentName: s.i
 				}),
 				i = e => s.e.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: r.K,
+					experimentEligibilitySelector: r.N,
 					experimentName: s.l
 				})
 		},
@@ -3792,4 +3792,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.3eb843e73ecdc6750c08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.15edc2fe55c48e0a912a.js.map

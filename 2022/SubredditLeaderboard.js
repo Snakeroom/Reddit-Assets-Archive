@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.734bfc56ddca9e117dfd.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3479a4133f747445ca03.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./src/reddit/actions/pages/subredditLeaderboard.ts": function(e, t, n) {
@@ -39,7 +39,7 @@
 				}, f = e => async (t, n) => {
 					await t(Object(s.a)());
 					const r = n(),
-						a = Object(p.L)(r);
+						a = Object(p.O)(r);
 					if (Object(g.a)(r, e)) return;
 					const i = e && Object(b.e)(r, {
 							categoryName: e
@@ -1571,7 +1571,7 @@
 					hasNextPage: (e, {
 						categoryId: t
 					}) => Object(W.b)(e, t),
-					isMod: A.L,
+					isMod: A.O,
 					rankings: (e, {
 						categoryId: t
 					}) => Object(M.N)(e, t),
@@ -1841,7 +1841,7 @@
 				xe = (e, {
 					match: t
 				}) => Object(p.b)(t.params.categoryName || ""),
-				Ee = Object(m.rf)(b.i),
+				Ee = Object(m.tf)(b.i),
 				Ce = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -1970,4 +1970,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.734bfc56ddca9e117dfd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3479a4133f747445ca03.js.map

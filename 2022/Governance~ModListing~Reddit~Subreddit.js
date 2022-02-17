@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.53b79c74b3f07283bce5.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.ebd125d4a9436f9b1e67.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -260,7 +260,7 @@
 						name: `${n.jc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(E.K)(d())) return c(Object(a.k)({
+					if (!Object(E.N)(d())) return c(Object(a.k)({
 						actionSource: a.a.Subscribe
 					})), void c(Object(i.j)());
 					const p = Object(E.k)(d());
@@ -401,7 +401,7 @@
 				}) => {
 					const o = r(),
 						i = o.multireddits.models;
-					if (!Object(E.K)(o)) return;
+					if (!Object(E.N)(o)) return;
 					const a = (e = !0) => {
 							t(Object(l.f)({
 								text: s.fbt._("Sorry, failed to {followAction}", [s.fbt._param("followAction", e ? s.fbt._("follow", null, {
@@ -668,7 +668,7 @@
 				x = Object(b.u)();
 			t.b = x(e => {
 				var t;
-				const r = Object(i.e)(O.X);
+				const r = Object(i.e)(O.ab);
 				let c, d, l;
 				if (e.subredditOrProfile) {
 					const {
@@ -928,9 +928,9 @@
 			const S = () => {},
 				v = Object(a.c)({
 					currentUser: O.k,
-					isNightMode: O.X,
-					shouldHideNSFW: O.C,
-					user: O.sb,
+					isNightMode: O.ab,
+					shouldHideNSFW: O.E,
+					user: O.vb,
 					isProfileAvatarChangeFixEnabled: j.a
 				}),
 				x = Object(i.b)(v);
@@ -975,7 +975,7 @@
 						isOnline: t
 					} = e.subscribe.data;
 					B(t)
-				}, []), z = Object(n.useRef)(null), [K, V] = Object(n.useState)(!1), X = Object(n.useCallback)(e => {
+				}, []), z = Object(n.useRef)(null), [K, V] = Object(n.useState)(!1), $ = Object(n.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
@@ -983,10 +983,10 @@
 						} = e, s = 1 !== r;
 						t ? V(!0) : s && V(!1)
 					})
-				}, []), $ = Object(n.useRef)({
+				}, []), X = Object(n.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(u.a)(z, X, $.current), T ? G : c.a.createElement("div", {
+				return Object(u.a)(z, $, X.current), T ? G : c.a.createElement("div", {
 					className: Object(s.a)(I.a.userIconWrapper, {
 						[I.a.nftUserIcon]: g,
 						[I.a.hasHeadShotWrapper]: H,
@@ -1351,9 +1351,9 @@
 			})), r.d(t, "m", (function() {
 				return z
 			})), r.d(t, "t", (function() {
-				return X
-			})), r.d(t, "x", (function() {
 				return $
+			})), r.d(t, "x", (function() {
+				return X
 			})), r.d(t, "e", (function() {
 				return Y
 			})), r.d(t, "d", (function() {
@@ -1554,13 +1554,13 @@
 							}
 							break;
 						case c.Nb.PUBLIC_ACCESS_NETWORK:
-							u && Object(N.a)(X()(t));
+							u && Object(N.a)($()(t));
 							break;
 						case c.Nb.GEOTAGGING:
 							u && Object(N.a)(J()(t));
 							break;
 						case c.Nb.SUBREDDIT_CREATION:
-							u && Object(N.a)($()(t));
+							u && Object(N.a)(X()(t));
 							break;
 						case c.Nb.MOD_LISTING:
 							u && ce(t, !0)
@@ -1859,14 +1859,14 @@
 					...T(r),
 					timer: E.pb(e, t)
 				}),
-				X = () => e => ({
+				$ = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					subreddit: E.jb(e),
 					...T(e)
 				}),
-				$ = () => e => ({
+				X = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2232,7 +2232,7 @@
 					if (!Object(l.m)(e, {
 							subredditId: t
 						})) return;
-					if (Object(m.H)(e)) return O(e);
+					if (Object(m.K)(e)) return O(e);
 					const r = Object(b.G)(e, {
 						identifier: {
 							id: t,
@@ -2244,7 +2244,7 @@
 					return s ? s * n.Sb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: c.Sd,
+					experimentName: c.Ud,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -2262,4 +2262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.53b79c74b3f07283bce5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.ebd125d4a9436f9b1e67.js.map

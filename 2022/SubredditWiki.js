@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.e8e7a29b362d6eb0d1e5.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.47ce9e86e8a6dbb3fa2f.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, s) {
@@ -1076,7 +1076,7 @@
 						listingName: t,
 						pageLayer: s
 					}),
-					n = Object(c.B)(e) || Object(d.a)(e),
+					n = Object(c.D)(e) || Object(d.a)(e),
 					r = Object(a.e)(e);
 				return {
 					canShowAd: i && !n,
@@ -1695,7 +1695,7 @@
 					communityFlairSortedKeys: (e, {
 						subredditId: t
 					}) => Object(Be.c)(e, t),
-					isInNewModuleNCPV3Experiment: e => Object(We.a)(e) === ye.ce.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(We.a)(e) === ye.ee.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
@@ -1886,7 +1886,7 @@
 				crosspostRoot: b.d,
 				crosspostSubredditOrProfile: b.e,
 				flairStyleTemplate: c.V,
-				hideNSFWPref: p.C,
+				hideNSFWPref: p.E,
 				isActive: b.j,
 				moderatorPermissions: u.l,
 				modModeEnabled: c.T,
@@ -2104,7 +2104,7 @@
 						match: t
 					}) => Object(M.f)(e, t.params.subredditName),
 					layout: C.R,
-					over18Pref: M.eb,
+					over18Pref: M.hb,
 					subreddit: (e, {
 						match: t
 					}) => Object(W.x)(e, {
@@ -2129,7 +2129,7 @@
 						contentGateInfo: t,
 						subreddit: s,
 						subredditName: i
-					} = this.props, r = !!s && s.isNSFW && !M.eb, o = Object(F.a)(t, r, i);
+					} = this.props, r = !!s && s.isNSFW && !M.hb, o = Object(F.a)(t, r, i);
 					if (o) return n.a.createElement(c.default, o);
 					const a = `/r/${i}/`;
 					return n.a.createElement(B.a, {
@@ -2168,11 +2168,11 @@
 			var i = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
-			const o = e => i.mc.Enabled === Object(n.c)(e, {
-				experimentEligibilitySelector: r.K,
-				experimentName: i.kc
+			const o = e => i.oc.Enabled === Object(n.c)(e, {
+				experimentEligibilitySelector: r.N,
+				experimentName: i.mc
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.e8e7a29b362d6eb0d1e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.47ce9e86e8a6dbb3fa2f.js.map

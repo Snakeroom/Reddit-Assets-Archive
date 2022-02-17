@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.e2523ff3375a5742611a.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.e5e5dca5f300d729731b.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, o) {
@@ -54,9 +54,9 @@
 			})), o.d(t, "i", (function() {
 				return ke
 			})), o.d(t, "h", (function() {
-				return De
-			})), o.d(t, "k", (function() {
 				return Ne
+			})), o.d(t, "k", (function() {
+				return De
 			})), o.d(t, "r", (function() {
 				return Te
 			}));
@@ -107,7 +107,7 @@
 						}
 					}).then(e => !e.ok || e.body.data.isValidComment)
 				},
-				D = async (e, t, o, n, r) => {
+				N = async (e, t, o, n, r) => {
 					const c = {
 						api_type: "json",
 						return_rtjson: !0,
@@ -144,10 +144,10 @@
 						error: e.error || Object(A.a)()
 					})
 				};
-			var N = o("./src/redditGQL/operations/UpdateCommentFollowState.json");
+			var D = o("./src/redditGQL/operations/UpdateCommentFollowState.json");
 			var T = o("./src/reddit/endpoints/post/index.tsx"),
-				M = o("./src/reddit/endpoints/post/convert.ts"),
-				P = o("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
+				P = o("./src/reddit/endpoints/post/convert.ts"),
+				M = o("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				L = o("./src/reddit/featureFlags/index.ts"),
 				w = o("./src/reddit/helpers/correlationIdTracker.ts"),
 				K = o("./src/reddit/helpers/dom/index.ts"),
@@ -172,7 +172,7 @@
 				}) => async (o, n) => {
 					const s = n();
 					if (!!s.features.comments.drafts[t])
-						if (Object(Q.M)(s) && e) {
+						if (Object(Q.P)(s) && e) {
 							const n = Z({
 								hasFocus: e,
 								draftKey: t
@@ -210,10 +210,10 @@
 					const S = R.user.account.displayText,
 						_ = r.commentMode;
 					let E;
-					if (d ? (E = await Object(P.i)(j(), e, r, S), u(Object(l.a)({
+					if (d ? (E = await Object(M.i)(j(), e, r, S), u(Object(l.a)({
 							streamId: e,
 							level: E.body.automuteLevel
-						}))) : E = await D(j(), e, r, S, _), E.ok) {
+						}))) : E = await N(j(), e, r, S, _), E.ok) {
 						let n;
 						n = E.body, u(oe({
 							...n,
@@ -286,7 +286,7 @@
 					}));
 					const f = l.user.account.displayText,
 						p = m.commentMode,
-						j = await D(n(), r, m, f, p);
+						j = await N(n(), r, m, f, p);
 					if (j.ok) t(ne({
 						...j.body,
 						parentCommentId: r,
@@ -319,7 +319,7 @@
 					})), s(Object(u.c)(e));
 					else {
 						s(Object(u.b)(o));
-						const r = await Object(M.a)(c(), e, a ? t : JSON.stringify(t));
+						const r = await Object(P.a)(c(), e, a ? t : JSON.stringify(t));
 						if (r.ok) {
 							const t = r.body.output;
 							s(Object(u.a)(o)), s(fe({
@@ -342,7 +342,7 @@
 				}) => async (n, s) => {
 					const r = s(),
 						m = Object(c.a)(B.c.replyToComment, t);
-					if (!Object(Q.K)(s())) return n(Object(d.j)()), void n(Object(i.k)({
+					if (!Object(Q.N)(s())) return n(Object(d.j)()), void n(Object(i.k)({
 						actionSource: i.a.Reply,
 						redirectUrl: Object(q.m)(s(), {
 							commentId: t
@@ -382,7 +382,7 @@
 							draftType: B.c.replyToComment,
 							rtJson: O,
 							text: ""
-						}, Object(Q.M)(r)) {
+						}, Object(Q.P)(r)) {
 						const o = le({
 							parentCommentId: t,
 							commentsPageKey: e,
@@ -503,7 +503,7 @@
 						draftKey: n,
 						error: u.error
 					}))
-				}, ve = Object(r.a)(Y.z), ge = Object(r.a)(Y.y), Ce = Object(r.a)(Y.A), De = (e, t) => async (o, n, {
+				}, ve = Object(r.a)(Y.z), ge = Object(r.a)(Y.y), Ce = Object(r.a)(Y.A), Ne = (e, t) => async (o, n, {
 					apiContext: r
 				}) => {
 					const c = n();
@@ -534,7 +534,7 @@
 						id: e,
 						error: a.error
 					}))
-				}, Ne = e => async (t, o, {
+				}, De = e => async (t, o, {
 					apiContext: n
 				}) => {
 					const s = !o().features.comments.models[e].sendReplies;
@@ -563,7 +563,7 @@
 								expiresAt: Date.now() + 6048e5
 							};
 						if (o(Object(X.n)(a)), (await ((e, t) => Object(S.a)(e, {
-								...N,
+								...D,
 								variables: {
 									input: t
 								}
@@ -636,7 +636,7 @@
 				}, E = e => async (t, o, {
 					apiContext: s
 				}) => {
-					if (!Object(j.K)(o())) return void t(Object(a.i)(m.a.LOGIN_MODAL_ID));
+					if (!Object(j.N)(o())) return void t(Object(a.i)(m.a.LOGIN_MODAL_ID));
 					const r = o().features.comments.models[e];
 					if (!r) return;
 					const c = r.isLocked ? u.l : u.e;
@@ -1137,11 +1137,11 @@
 				v = o("./src/reddit/actions/bulkActions/index.ts"),
 				g = o("./src/reddit/actions/comment/index.ts"),
 				C = o("./src/reddit/actions/comment/authoring.ts"),
-				D = o("./src/reddit/actions/comment/moderation.ts"),
-				N = o("./src/reddit/actions/modal.ts"),
+				N = o("./src/reddit/actions/comment/moderation.ts"),
+				D = o("./src/reddit/actions/modal.ts"),
 				T = o("./src/reddit/actions/post.ts"),
-				M = o("./src/reddit/actions/toaster.ts"),
-				P = o("./src/reddit/constants/modals.ts"),
+				P = o("./src/reddit/actions/toaster.ts"),
+				M = o("./src/reddit/constants/modals.ts"),
 				L = o("./src/lib/makeApiRequest/index.ts"),
 				w = o("./src/lib/omitHeaders/index.ts"),
 				K = o("./src/reddit/constants/headers.ts"),
@@ -1212,7 +1212,7 @@
 						o(oe({
 							subredditId: e,
 							reason: r
-						})), o(Object(M.f)({
+						})), o(Object(P.f)({
 							kind: z.b.SuccessMod,
 							text: n.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
@@ -1235,7 +1235,7 @@
 					a.ok ? (o(ce({
 						subredditId: e,
 						reason: t
-					})), o(Object(M.f)({
+					})), o(Object(P.f)({
 						kind: z.b.SuccessMod,
 						text: n.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
@@ -1253,7 +1253,7 @@
 					a.ok ? (o(me({
 						subredditId: e,
 						reasonId: t
-					})), o(Object(M.f)({
+					})), o(Object(P.f)({
 						kind: z.b.SuccessMod,
 						text: n.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
@@ -1266,7 +1266,7 @@
 					r.features.removalReasons.reasonOrder[e] && r.features.removalReasons.reasonOrder[e].length > 0 || o(ee(e)), o(be({
 						subredditId: e,
 						itemIds: t
-					})), o(Object(N.i)(P.a.ADD_REMOVAL_REASON))
+					})), o(Object(D.i)(M.a.ADD_REMOVAL_REASON))
 				}, fe = Object(h.a)("REMOVALREASONS__SUBMIT_PENDING"), pe = Object(h.a)("REMOVALREASONS__SUBMIT_SUCCESS"), je = Object(h.a)("REMOVALREASONS__SUBMIT_FAILED"), Re = Object(h.a)("REMOVALREASONS__MESSAGE_PENDING"), ye = Object(h.a)("REMOVALREASONS__MESSAGE_PRIVATE_SUCCESS"), Se = Object(h.a)("REMOVALREASONS__MESSAGE_PUBLIC_SUCCESS"), _e = Object(h.a)("REMOVALREASONS__MESSAGE_FAILED"), Ee = (e, t, o, n, s) => async (r, c, {
 					apiContext: a
 				}) => {
@@ -1325,7 +1325,7 @@
 												draftKey: o
 											}));
 											const n = d.postStickiedComments.data[m];
-											r(Object(D.f)({
+											r(Object(N.f)({
 												id: e.id,
 												postId: e.postId,
 												commentsPageKey: s
@@ -1369,7 +1369,7 @@
 						m = i.user.account && i.user.account.displayText;
 					if (!m) return;
 					c(fe());
-					const u = Object(M.f)({
+					const u = Object(P.f)({
 							kind: z.b.SuccessMod,
 							text: n.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
@@ -1647,4 +1647,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.e2523ff3375a5742611a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.e5e5dca5f300d729731b.js.map

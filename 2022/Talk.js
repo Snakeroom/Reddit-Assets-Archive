@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.1bd5b17b2518b41619c2.js
-// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.ba10628f59db2b964f32.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -431,7 +431,7 @@
 					rel: r.c
 				}, e)))),
 				v = () => {
-					const e = Object(h.e)(_.X);
+					const e = Object(h.e)(_.ab);
 					return i.a.createElement("div", {
 						className: Object(s.a)(f.a.communitiesSection, {
 							[f.a.isNightmodeOn]: e
@@ -744,4 +744,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.1bd5b17b2518b41619c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.ba10628f59db2b964f32.js.map

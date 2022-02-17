@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.99fe65c44c1c7da329c1.js
-// Retrieved at 2/16/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.f60fc14db22ec1cf870e.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -180,7 +180,7 @@
 					e(Object(x.d)(t.post.author))
 				}
 			}));
-			class K extends r.a.Component {
+			class G extends r.a.Component {
 				componentDidMount() {
 					this.props.iconUrl || this.props.fetchProfile()
 				}
@@ -281,8 +281,8 @@
 					}))
 				}
 			}
-			const G = Object(l.a)(K);
-			t.default = Object(D.a)(z(G))
+			const K = Object(l.a)(G);
+			t.default = Object(D.a)(z(K))
 		},
 		"./src/reddit/connectors/ClassicPost/index.tsx": function(e, t, s) {
 			"use strict";
@@ -309,7 +309,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: h.l,
 					isExpanded: h.m,
-					isLoggedIn: v.K,
+					isLoggedIn: v.N,
 					showPromotedCTA: b.a,
 					moderatorPermissions: u.l,
 					modModeEnabled: c.T,
@@ -367,4 +367,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.99fe65c44c1c7da329c1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.f60fc14db22ec1cf870e.js.map

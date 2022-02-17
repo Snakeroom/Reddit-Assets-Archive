@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.b495aa69fde78e77a682.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.dea706f756dd655952e3.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, s) {
@@ -221,7 +221,7 @@
 						return s && s.coinPrice >= d.g
 					})
 				},
-				isNightmodeOn: O.X
+				isNightmodeOn: O.ab
 			}), e => ({
 				openPost: t => e(Object(m.L)(t))
 			}));
@@ -817,7 +817,7 @@
 				}).apply(this, arguments)
 			}
 			const xe = Object(I.u)(),
-				Pe = Object(d.a)(I.E, ee.eb, (e, {
+				Pe = Object(d.a)(I.E, ee.hb, (e, {
 					location: t
 				}) => o()([...Object(l.a)(t.search)]), I.R, (e, {
 					match: t
@@ -825,7 +825,7 @@
 					match: t
 				}) => Object(ye.j)(e, {
 					profileName: t.params.profileName
-				}), ee.K, (e, {
+				}), ee.N, (e, {
 					match: t
 				}) => Object(ee.f)(e, c.jc + t.params.profileName), Oe.a, (e, t, s, r, o, n, i, a, d) => {
 					const {
@@ -931,4 +931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.b495aa69fde78e77a682.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.dea706f756dd655952e3.js.map

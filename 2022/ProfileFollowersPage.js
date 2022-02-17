@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3fd818f88b205e07ed5d.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.83570db4643bbcf1c7d8.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -398,8 +398,8 @@
 					ids: q,
 					loadMore: Y
 				});
-			const X = {};
-			var V = (e = X, t) => {
+			const V = {};
+			var X = (e = V, t) => {
 				switch (t.type) {
 					case U.f:
 					case U.e: {
@@ -452,7 +452,7 @@
 					}
 				},
 				ee = Object(B.c)({
-					error: V,
+					error: X,
 					pending: $
 				}),
 				te = r("./src/reddit/actions/profileConversations.ts");
@@ -794,12 +794,12 @@
 					if (!F.platform.currentPage) return;
 					if (200 !== F.platform.currentPage.status) return;
 					const U = Object(g.m)(r(), _),
-						L = Object(y.sb)(F, {
+						L = Object(y.vb)(F, {
 							userName: p
 						}).id;
 					t(N.m({
 						title: Fe(r(), p)
-					})), Object(y.M)(F) && Object(y.Q)(F, p) && t(Object(I.f)());
+					})), Object(y.P)(F) && Object(y.T)(F, p) && t(Object(I.f)());
 					const B = [t(Object(i.q)()), t(S.b(_, U)), t(w.b(_)), t(O.o(p)), t(w.g(p)), t(j.l(p, L))];
 					await Promise.all(B)
 				}, Fe = (e, t) => Object(g.q)(e, {
@@ -1055,8 +1055,8 @@
 					banned: Z
 				}
 			});
-			const X = Object(o.a)(C.o),
-				V = Object(o.a)(C.n),
+			const V = Object(o.a)(C.o),
+				X = Object(o.a)(C.n),
 				J = Object(o.a)(C.m),
 				$ = (e, t = {}) => async (r, n, {
 					apiContext: s
@@ -1066,13 +1066,13 @@
 						i = Object(y.e)(e, o),
 						d = a.features.banned.fetchedTokens[i];
 					if (a.features.banned.api.pending[i] || d) return;
-					r(X({
+					r(V({
 						subredditId: e,
 						fetchedToken: o
 					}));
 					const c = a.subreddits.models[e].name,
 						l = await h(s(), c, t);
-					l.ok ? r(V({
+					l.ok ? r(X({
 						...l.body,
 						fetchedToken: o
 					})) : r(J({
@@ -1178,7 +1178,7 @@
 							await r(Object(c.o)(t.name))
 						}
 					})(), (async () => {
-						const n = Object(j.sb)(s, {
+						const n = Object(j.vb)(s, {
 							userName: t
 						});
 						if (!n) return;
@@ -1378,19 +1378,19 @@
 				Q = r("./src/reddit/actions/modal.ts"),
 				Y = r("./src/reddit/constants/modals.ts"),
 				Z = r("./src/reddit/components/Hovercards/helpers.ts"),
-				X = r("./src/reddit/icons/fonts/index.tsx"),
-				V = r("./src/reddit/models/ModeratingSubreddits/index.ts"),
+				V = r("./src/reddit/icons/fonts/index.tsx"),
+				X = r("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				J = r("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
 				$ = r.n(J);
 			const {
 				fbt: ee
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), te = Object(o.c)({
-				hasModMailPermissions: Object(x.b)(V.c.mail),
+				hasModMailPermissions: Object(x.b)(X.c.mail),
 				isUserBanned: (e, t) => !!Object(m.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(E.sb)(e, {
+				user: (e, t) => Object(E.vb)(e, {
 					userName: t.username
 				})
 			});
@@ -1416,7 +1416,7 @@
 						onClick: () => {
 							a(this.props.user.id), o(M.e(t))
 						}
-					}, s.a.createElement(X.a, {
+					}, s.a.createElement(V.a, {
 						name: "ban",
 						isFilled: !0,
 						className: $.a.icon
@@ -1427,7 +1427,7 @@
 						onClick: () => {
 							i(), o(M.a(t))
 						}
-					}, s.a.createElement(X.a, {
+					}, s.a.createElement(V.a, {
 						name: "ban",
 						className: $.a.icon
 					}), ee._("Ban User", null, {
@@ -1437,7 +1437,7 @@
 						onClick: () => {
 							d(), o(M.d(t))
 						}
-					}, s.a.createElement(X.a, {
+					}, s.a.createElement(V.a, {
 						name: "mod_mute",
 						className: $.a.icon
 					}), ee._("Mute User", null, {
@@ -1480,7 +1480,7 @@
 					onClick: () => {
 						e.onToggleUserFlairModal(), e.sendEvent(M.c(e.contextId))
 					}
-				}, s.a.createElement(X.a, {
+				}, s.a.createElement(V.a, {
 					name: "tag",
 					className: $.a.icon
 				}), ae._("Edit user flair", null, {
@@ -1693,8 +1693,8 @@
 			const Le = Object(o.c)({
 					activeTooltipId: I.a,
 					currentUser: E.k,
-					isLoggedIn: E.K,
-					hideNSFWPref: E.C,
+					isLoggedIn: E.N,
+					hideNSFWPref: E.E,
 					moderatorPermissions: (e, {
 						subredditId: t
 					}) => t ? Object(x.m)(e, {
@@ -1712,7 +1712,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: E.sb,
+					user: E.vb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(O.d)(e, {
@@ -1730,7 +1730,7 @@
 						subredditId: t
 					}) => Object(b.b)(e, t),
 					trophyCase: (e, t) => Object(g.r)(e, Object(g.m)(e, t.userName)),
-					isNightMode: E.X,
+					isNightMode: E.ab,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
 						const r = Object(u.a)(t.contextId) ? Object(h.G)(e, {
@@ -2064,7 +2064,7 @@
 				o = r("./src/reddit/selectors/user.ts");
 			const i = Object(s.c)({
 					currentUser: o.k,
-					hideNSFWPref: o.C
+					hideNSFWPref: o.E
 				}),
 				d = Object(n.b)(i, e => ({
 					imageUpdateRequested: (t, r) => e(Object(a.C)(t, r))
@@ -2804,7 +2804,7 @@
 				subreddits: function(e, {
 					profileName: t
 				}) {
-					const r = Object(m.sb)(e, {
+					const r = Object(m.vb)(e, {
 							userName: t
 						}),
 						n = Object(u.f)(e);
@@ -3228,8 +3228,8 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				N = Object(d.c)({
-					hideNSFWPref: _.C,
-					nightmode: _.X
+					hideNSFWPref: _.E,
+					nightmode: _.ab
 				}),
 				w = Object(o.b)(N)(e => a.a.createElement("div", {
 					className: Object(c.a)(O.a.communityItemContainer, {
@@ -3429,7 +3429,7 @@
 				}) : null,
 				user: (e, {
 					subredditOrProfile: t
-				}) => t.type === l.a.PROFILE ? Object(b.sb)(e, {
+				}) => t.type === l.a.PROFILE ? Object(b.vb)(e, {
 					userName: t.name
 				}) : null
 			}), N = Object(a.b)(C, e => ({
@@ -4222,4 +4222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3fd818f88b205e07ed5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.83570db4643bbcf1c7d8.js.map

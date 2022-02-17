@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.bf60c2e47846e8cbbd39.js
-// Retrieved at 2/10/2022, 10:20:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.629ff3cf6a757a9a9aec.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
@@ -42,7 +42,7 @@
 					}) => {
 						t(h());
 						const i = r(),
-							l = Object(d.K)(i);
+							l = Object(d.N)(i);
 						try {
 							const r = !l,
 								n = await Object(s.b)({
@@ -352,4 +352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.bf60c2e47846e8cbbd39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.629ff3cf6a757a9a9aec.js.map

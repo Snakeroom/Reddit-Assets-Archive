@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.944aab61fbb116123d28.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.1fb82304e253690a1e4f.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -201,7 +201,7 @@
 				}) : v.fbt._("See more", null, {
 					hk: "439kAh"
 				})))));
-			class L extends d.a.Component {
+			class I extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						openedSection: 0,
@@ -255,7 +255,7 @@
 					}, t.map(this.renderSection))
 				}
 			}
-			var I = L,
+			var L = I,
 				A = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
 				D = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				R = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
@@ -623,7 +623,7 @@
 					}, t))
 				},
 				Pe = e => `/t/${e}?activeTab=communities`,
-				Le = e => {
+				Ie = e => {
 					const t = e.topic.getName();
 					return d.a.createElement("div", {
 						className: Fe.a.itemContainer
@@ -632,7 +632,7 @@
 						onClick: () => e.sendEvent(Object(Te.c)(t))
 					}, t))
 				};
-			var Ie = d.a.memo(e => {
+			var Le = d.a.memo(e => {
 					const t = Object(je.a)();
 					Object(o.useEffect)(() => t(Object(Te.d)()), []);
 					const n = Ce.map(e => ({
@@ -646,7 +646,7 @@
 						widgetKind: e.widget && e.widget.kind
 					}, d.a.createElement(Be, null), d.a.createElement("div", {
 						className: Fe.a.container
-					}, n.map(e => d.a.createElement(Le, {
+					}, n.map(e => d.a.createElement(Ie, {
 						key: e.url,
 						topic: e,
 						sendEvent: t
@@ -665,10 +665,10 @@
 			}
 			var Me = n("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Ae.Cd,
+					experimentName: Ae.Ed,
 					experimentEligibilitySelector: We.a
 				}), Me.a),
-				Qe = Object(u.a)(Ue, e => e === Ae.Dd.Enabled);
+				Qe = Object(u.a)(Ue, e => e === Ae.Fd.Enabled);
 			var qe = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Je = n("./src/reddit/selectors/user.ts");
 			var Ze = n("./src/reddit/selectors/seo/linksModule.ts"),
@@ -680,12 +680,12 @@
 			const Ve = "c1020",
 				Ye = "videos",
 				$e = Object(u.c)({
-					isMod: Je.L,
-					isLoggedIn: Je.J,
+					isMod: Je.O,
+					isLoggedIn: Je.M,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
 					currentUser: Je.k,
 					frontpageLinks: Ze.b,
-					isOver18: Je.eb,
+					isOver18: Je.hb,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return Ge(e) === Ae.z.RotateEven
 					},
@@ -697,9 +697,9 @@
 							n = !!Object(Ke.N)(e, Ve);
 						return (!t || !n) && function(e) {
 							return Object(We.c)(e, {
-								experimentEligibilitySelector: Je.K,
-								experimentName: Ae.Rb
-							}) === Ae.Zc
+								experimentEligibilitySelector: Je.N,
+								experimentName: Ae.Tb
+							}) === Ae.bd
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -780,9 +780,9 @@
 						position: ze.a.FIRST,
 						sizes: U.i,
 						placementIndex: e++
-					}), tt(this.props) && d.a.createElement(E, null), i && d.a.createElement(h.a, null, d.a.createElement(Ie, null)), s && d.a.createElement(h.a, null, d.a.createElement(p.a, {
+					}), tt(this.props) && d.a.createElement(E, null), i && d.a.createElement(h.a, null, d.a.createElement(Le, null)), s && d.a.createElement(h.a, null, d.a.createElement(p.a, {
 						listingName: a
-					})), et(this.props) && d.a.createElement(Se, null), n && u && d.a.createElement(h.a, null, d.a.createElement(I, {
+					})), et(this.props) && d.a.createElement(Se, null), n && u && d.a.createElement(h.a, null, d.a.createElement(L, {
 						links: n
 					})), d.a.createElement(R.a, {
 						adComponent: d.a.createElement(A.a, {
@@ -2195,4 +2195,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.944aab61fbb116123d28.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.1fb82304e253690a1e4f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.cc807117b8f05bc107be.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.c180d17ee3c67610b75e.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1518,7 +1518,7 @@
 					}) => {
 						t(y());
 						const d = r(),
-							l = Object(i.K)(d);
+							l = Object(i.N)(d);
 						try {
 							const r = !l,
 								n = await Object(c.b)({
@@ -2156,7 +2156,7 @@
 					dealCoinPackages: v.f,
 					gildThingId: P.s,
 					isIframed: O.g,
-					nightmode: x.X,
+					nightmode: x.ab,
 					savedCardsPending: P.w,
 					selectedAward: j.b,
 					selectedPayment: P.c,
@@ -3474,7 +3474,7 @@
 				m = r("./node_modules/react-redux/es/index.js"),
 				b = r("./src/reddit/constants/experiments.ts"),
 				f = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(f.a)(b.Bc);
+			const h = Object(f.a)(b.Dc);
 			let g = null;
 
 			function y() {
@@ -3636,4 +3636,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.cc807117b8f05bc107be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.c180d17ee3c67610b75e.js.map

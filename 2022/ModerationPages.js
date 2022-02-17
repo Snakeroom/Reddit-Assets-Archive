@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.87594af3eab3d9a6df32.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.ac497fa2e641dc4b8dc6.js
+// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -829,7 +829,7 @@
 					if (n) return;
 					a || s && !n || await t(Object(I.subredditDataRequested)(e, k, {}))
 				} else C && await t(Object(P.e)(C));
-				if (!Object(fe.K)(s()) && v !== o.fc.Moderators && v !== o.fc.SubredditRules && v !== o.fc.Contributors) return void Object(m.a)(t, s());
+				if (!Object(fe.N)(s()) && v !== o.fc.Moderators && v !== o.fc.SubredditRules && v !== o.fc.Contributors) return void Object(m.a)(t, s());
 				if (Object(p.i)(s(), !0, k, C), !v) return;
 				let G, K, X, Z, J, Y, Q, $, ee, te = !1;
 				switch (v) {
@@ -912,7 +912,7 @@
 				}
 				const se = s(),
 					ne = !!k && Object(he.jb)(se),
-					ae = Object(fe.H)(se),
+					ae = Object(fe.K)(se),
 					oe = k ? Object(y.V)(se, {
 						subredditName: k.toLowerCase()
 					}) : Object(be.q)(se, {
@@ -1896,7 +1896,7 @@
 				}) => {
 					const {
 						audioRoom: t
-					} = e, s = () => Math.floor(10 * Math.random() + 1), o = Object(h.e)(b.X), [i, l] = Object(n.useState)(!1), [d, c] = Object(n.useState)(s());
+					} = e, s = () => Math.floor(10 * Math.random() + 1), o = Object(h.e)(b.ab), [i, l] = Object(n.useState)(!1), [d, c] = Object(n.useState)(s());
 					return Object(n.useEffect)(() => {
 						const e = setInterval(() => {
 							l(!0), setTimeout(() => l(!1), 3500), c(s())
@@ -5868,7 +5868,7 @@
 				allowChatPostCreation: (e, t) => Object(M.b)(e, t.subredditId),
 				isBroadcastingEnabled: (e, t) => Object(P.c)(e, t.subredditId),
 				isChatPostsCreationEnabled: (e, t) => Object(M.c)(e, t.subredditId),
-				isEmployee: A.H,
+				isEmployee: A.K,
 				notificationSettings: F.b,
 				restrictions: R.m,
 				settings: (e, t) => Object(R.U)(e, t.subredditId),
@@ -7180,7 +7180,7 @@
 				F = Object(l.c)({
 					isCurrentUserProfilePost: x.l,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== g.Nb.TOPIC),
-					shouldOpenPostInNewTab: E.db
+					shouldOpenPostInNewTab: E.gb
 				}),
 				D = Object(r.b)(F);
 			t.c = Object(f.b)(D(e => {
@@ -16073,7 +16073,7 @@
 				ce = f.a.div("TickText", B.a),
 				me = f.a.div("PreSubText", B.a),
 				ue = Object(i.c)({
-					isNightModeOn: A.X
+					isNightModeOn: A.ab
 				}),
 				pe = Object(o.b)(ue)(e => a.a.createElement(Z, {
 					last: e.last,
@@ -17621,10 +17621,10 @@
 					error: U.f,
 					isCreatePending: U.j,
 					isEmailInviteExperimentEnabled: B.a,
-					isEmployee: z.H,
+					isEmployee: z.K,
 					crosspostId: U.i,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(z.ib)(e),
-					userIsSuspended: z.R,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(z.lb)(e),
+					userIsSuspended: z.U,
 					allTags: H.e,
 					existingTags: H.f,
 					newTags: H.g,
@@ -18979,7 +18979,7 @@
 					isChatPost: u.d,
 					isCurrentUserProfilePost: b.l,
 					isExpanded: b.m,
-					isLoggedIn: f.K,
+					isLoggedIn: f.N,
 					showPromotedCTA: g.a,
 					moderatorPermissions: p.l,
 					modModeEnabled: d.T,
@@ -22206,7 +22206,7 @@
 						profileName: t.match.params.profileName
 					})
 				}),
-				Ze = Object(i.b)(() => Object(l.a)(Ve, w.H, x.R, Ge, w.eb, O.jb, Xe, Ke, qe, (e, t) => t.match.params.pageName, e => e, ({
+				Ze = Object(i.b)(() => Object(l.a)(Ve, w.K, x.R, Ge, w.hb, O.jb, Xe, Ke, qe, (e, t) => t.match.params.pageName, e => e, ({
 					contentGateInfo: e
 				}, t, s, {
 					moderatorPermissions: n
@@ -22484,9 +22484,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.Yc
+					experimentName: n.ad
 				});
-				return !(!t || Object(n.tf)(t))
+				return !(!t || Object(n.vf)(t))
 			}
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, s) {
@@ -22731,4 +22731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.87594af3eab3d9a6df32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ac497fa2e641dc4b8dc6.js.map
