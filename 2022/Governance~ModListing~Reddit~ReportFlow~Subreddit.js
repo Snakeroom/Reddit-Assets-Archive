@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.eb808bf4fb060fe14a44.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.cf32d8cfdd459757ad5e.js
+// Retrieved at 2/17/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -3204,24 +3204,25 @@
 						t: u
 					}) => {
 						var l, b;
-						const p = {
-							subredditName: n,
-							isFake: s,
-							sort: a,
-							adContext: {
-								layout: o ? o.toUpperCase() : me.a.Card,
-								reddaid: e.user.reddaid
-							},
-							includeIdentity: i,
-							includeInterestTopics: !Object(fe.vf)(Object(Oe.b)(e)),
-							includePowerups: !s,
-							includeQuestions: i && !s,
-							includeRules: !s && !c,
-							includeRedditorKarma: i && !(null === (b = null === (l = e.user.account) || void 0 === l ? void 0 : l.karma) || void 0 === b ? void 0 : b.total),
-							includeSubredditLinks: !i,
-							includeTopicLinks: !i
-						};
-						return a && (p.sort = a.toUpperCase()), u && (p.range = u.toUpperCase()), r ? p.pageSize = Object(_e.a)(o) : d && (p.pageSize = d), t && (p.after = Object(pe.a)(t)), p
+						const p = Object(Oe.b)(e),
+							f = {
+								subredditName: n,
+								isFake: s,
+								sort: a,
+								adContext: {
+									layout: o ? o.toUpperCase() : me.a.Card,
+									reddaid: e.user.reddaid
+								},
+								includeIdentity: i,
+								includeInterestTopics: !!p && !Object(fe.vf)(p),
+								includePowerups: !s,
+								includeQuestions: i && !s,
+								includeRules: !s && !c,
+								includeRedditorKarma: i && !(null === (b = null === (l = e.user.account) || void 0 === l ? void 0 : l.karma) || void 0 === b ? void 0 : b.total),
+								includeSubredditLinks: !i,
+								includeTopicLinks: !i
+							};
+						return a && (f.sort = a.toUpperCase()), u && (f.range = u.toUpperCase()), r ? f.pageSize = Object(_e.a)(o) : d && (f.pageSize = d), t && (f.after = Object(pe.a)(t)), f
 					})(de, {
 						after: r.after,
 						isLoggedIn: Ie,
@@ -13338,4 +13339,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.eb808bf4fb060fe14a44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.cf32d8cfdd459757ad5e.js.map
