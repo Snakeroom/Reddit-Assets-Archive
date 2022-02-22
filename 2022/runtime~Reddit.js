@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.e714df6f4ffcd2b4e21f.js
-// Retrieved at 2/22/2022, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.6c69f3bbc6f55552e686.js
+// Retrieved at 2/22/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) d = r[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
@@ -1291,7 +1291,7 @@
 						"reddit-components-Governance-TransactionModals-BurnPointsModal": "a617106abc1a8abc2cc2",
 						"reddit-components-Governance-TransactionModals-ConvertToCoinsModal": "fd2fee0cc19214f2f7b4",
 						RealtimeGQLSubscriptionAsync: "57f6e310e87e5d462d19",
-						OnboardingModal: "6ffd76d5720795cf6112",
+						OnboardingModal: "8b60cd32842ac70908ee",
 						AchievementsActions: "6d2e786ecd34c3ae5400",
 						Acknowledgements: "d11ad709b1b01d27180c",
 						Appeal: "e798868c3533104e0222",
@@ -1359,7 +1359,7 @@
 						FramedModal: "9d6cca8c2dc171840c49",
 						FrontpageLinks: "31a3a1a1579ecc5a7d0c",
 						"Frontpage~Subreddit": "0816bc742f6408009bed",
-						Frontpage: "ada95288d2ee60d3ffb6",
+						Frontpage: "7a42ecfe5afcd7677765",
 						Geotagging: "ee4683f3205c6a854f88",
 						GlobalModalContainer: "1cf96a1a919d9d581ab6",
 						GoldPurchasePaymentActions: "fea98d8109d6d98f28fa",
@@ -1663,4 +1663,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.e714df6f4ffcd2b4e21f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.6c69f3bbc6f55552e686.js.map
