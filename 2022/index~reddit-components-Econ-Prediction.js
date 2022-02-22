@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.7a8dc34210d3a550bec8.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ea1ab118bcb41abc2e0b.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/PredictionQuestion/index.m.less": function(e, t, a) {
@@ -90,9 +90,9 @@
 					isShowingHint: v,
 					...C
 				}, k) => {
-					const I = Object(o.e)(E.ab),
-						N = d === i.id,
-						j = n || !!g || !!d || a;
+					const I = Object(o.e)(E.bb),
+						j = d === i.id,
+						N = n || !!g || !!d || a;
 					return c.a.createElement("div", {
 						className: _.a.optionButtonWrapper
 					}, c.a.createElement("button", x({
@@ -100,12 +100,12 @@
 						className: Object(s.a)(_.a.optionButton, e, {
 							[_.a.canVote]: !g && !n && !a,
 							[_.a.isVote]: !a && g === i.id,
-							[_.a.isCorrect]: N,
+							[_.a.isCorrect]: j,
 							[_.a.isSelected]: r,
 							[_.a.isShowingHint]: v && !g,
 							[_.a.isNightMode]: I
 						}),
-						disabled: t || a || !l && (j || b),
+						disabled: t || a || !l && (N || b),
 						ref: k
 					}, C), c.a.createElement("div", {
 						className: _.a.optionBody
@@ -113,7 +113,7 @@
 						className: Object(s.a)(_.a.optionText, {
 							[_.a.hasUserAmount]: Boolean(i.userStakeAmount)
 						})
-					}, N && c.a.createElement(f.a, {
+					}, j && c.a.createElement(f.a, {
 						className: _.a.checkmarkIcon
 					}), c.a.createElement("span", {
 						className: _.a.optionLabel,
@@ -141,8 +141,8 @@
 				C = a("./node_modules/fbt/lib/FbtPublic.js"),
 				k = a("./src/higherOrderComponents/asModal/index.tsx"),
 				I = a("./src/lib/initializeClient/installReducer.ts"),
-				N = a("./src/reddit/reducers/features/predictions/index.ts"),
-				j = a("./src/reddit/actions/toaster.ts"),
+				j = a("./src/reddit/reducers/features/predictions/index.ts"),
+				N = a("./src/reddit/actions/toaster.ts"),
 				P = a("./src/reddit/endpoints/economics/predictions.ts"),
 				M = a("./src/reddit/models/Toast/index.ts");
 			const {
@@ -150,11 +150,11 @@
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			Object(I.a)({
 				features: {
-					predictions: N.a
+					predictions: j.a
 				}
 			});
-			const y = e => e(Object(j.f)({
-				duration: j.a,
+			const y = e => e(Object(N.f)({
+				duration: N.a,
 				kind: M.b.Error,
 				text: A._("Error: Failed to change prediction selection, please try again later", null, {
 					hk: "WLVPy"
@@ -231,8 +231,8 @@
 									a(Object(v.e)({
 										postId: e,
 										prediction: n
-									})), a(Object(j.f)({
-										duration: j.a,
+									})), a(Object(N.f)({
+										duration: N.a,
 										kind: M.b.SuccessCommunity,
 										text: A._("Your prediction has been updated", null, {
 											hk: "4wwhZ6"
@@ -538,9 +538,9 @@
 					userSelection: b,
 					predictionStatus: _,
 					voteUpdatesRemained: x
-				} = e, g = Boolean((null == e ? void 0 : e.userSelection) && !(null == e ? void 0 : e.resolvedOptionId) && e.predictionStatus === le.b.Open && e.endsAt > Date.now()), v = Object(o.e)(t => (null == e ? void 0 : e.tournamentId) ? Object(ie.a)(t, e.tournamentId) : null), C = Object(o.e)(E.ab), k = Object(o.e)(E.xb), I = Object(o.e)(E.N), [N, j] = Object(n.useState)(!1), P = i === k, M = d < Date.now(), A = M && P && !p, y = _ === le.b.Cancelled || _ === le.b.CancelInProgress, w = M || !!b || !!p || y;
+				} = e, g = Boolean((null == e ? void 0 : e.userSelection) && !(null == e ? void 0 : e.resolvedOptionId) && e.predictionStatus === le.b.Open && e.endsAt > Date.now()), v = Object(o.e)(t => (null == e ? void 0 : e.tournamentId) ? Object(ie.a)(t, e.tournamentId) : null), C = Object(o.e)(E.bb), k = Object(o.e)(E.yb), I = Object(o.e)(E.O), [j, N] = Object(n.useState)(!1), P = i === k, M = d < Date.now(), A = M && P && !p, y = _ === le.b.Cancelled || _ === le.b.CancelInProgress, w = M || !!b || !!p || y;
 				return Object(n.useEffect)(() => {
-					j(!1)
+					N(!1)
 				}, [b, e]), c.a.createElement("div", ue({
 					className: Object(s.a)(r, me.a.poll, {
 						[me.a.isNightMode]: C
@@ -567,16 +567,16 @@
 					tournamentId: h,
 					userSelection: b,
 					userIsLoggedOut: !I,
-					votePercentage: (b || M || N) && e.voteCount ? Math.floor(e.voteCount / f * 100) : null,
-					isShowingHint: N
+					votePercentage: (b || M || j) && e.voteCount ? Math.floor(e.voteCount / f * 100) : null,
+					isShowingHint: j
 				})), !y && c.a.createElement(se, {
-					disabled: N || !!b,
+					disabled: j || !!b,
 					isEnded: M,
 					userSelection: b,
-					isShowingHint: N,
+					isShowingHint: j,
 					tournamentId: h,
 					postId: e.postId,
-					onReveal: () => j(!0)
+					onReveal: () => N(!0)
 				}), !y && g && c.a.createElement(q, {
 					isLimitReached: 0 === x,
 					postId: e.postId,
@@ -734,9 +734,9 @@
 				return t[Math.floor(Math.random() * t.length)]
 			};
 			var I = a("./src/reddit/components/Econ/Prediction/PredictionModal/Header/index.m.less"),
-				N = a.n(I);
+				j = a.n(I);
 			const {
-				fbt: j
+				fbt: N
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 
 			function P({
@@ -747,28 +747,28 @@
 				return Object(n.useEffect)(() => {
 					o(k(i)), r(!0), setTimeout(() => r(!1), 400)
 				}, [i]), c.a.createElement("div", {
-					className: N.a.header
+					className: j.a.header
 				}, c.a.createElement(x.t, {
-					"aria-label": j._("Close", null, {
+					"aria-label": N._("Close", null, {
 						hk: "40q8CL"
 					}),
-					className: N.a.closeButton,
+					className: j.a.closeButton,
 					Icon: Object(g.b)("close"),
 					onClick: e,
 					priority: x.c.Plain
 				}), c.a.createElement("h3", {
-					className: Object(l.a)(N.a.colorCommentary, {
-						[N.a.hasAddedCoins]: !!i
+					className: Object(l.a)(j.a.colorCommentary, {
+						[j.a.hasAddedCoins]: !!i
 					}),
 					"data-testid": "color-commentary"
 				}, a || c.a.createElement(c.a.Fragment, null, " "), c.a.createElement("div", {
-					className: Object(l.a)(N.a.highlight, {
-						[N.a.isHighlighting]: s
+					className: Object(l.a)(j.a.highlight, {
+						[j.a.isHighlighting]: s
 					})
 				}, c.a.createElement(O, {
-					className: N.a.leftStar
+					className: j.a.leftStar
 				}), c.a.createElement(O, {
-					className: N.a.rightStar
+					className: j.a.rightStar
 				}))))
 			}
 			var M = a("./src/reddit/components/Econ/Prediction/PredictionModal/Selection/index.m.less"),
@@ -866,8 +866,8 @@
 						}
 					}(_, t),
 					[C, k] = Object(n.useState)(0),
-					[I, N] = Object(n.useState)(!1),
-					j = Object(E.a)(),
+					[I, j] = Object(n.useState)(!1),
+					N = Object(E.a)(),
 					M = g.length > 0,
 					A = g[C],
 					y = M && C === g.length - 1,
@@ -877,15 +877,15 @@
 					V = T || L,
 					K = V || y;
 				Object(n.useEffect)(() => {
-					I || (j(h.s), N(!0))
-				}, [I, j]);
+					I || (N(h.s), j(!0))
+				}, [I, N]);
 				const q = Object(n.useCallback)(() => {
-					j(Object(h.m)({
+					N(Object(h.m)({
 						pollId: r,
 						currency: null == A ? void 0 : A.currency,
 						amount: null == A ? void 0 : A.amount
 					})), t()
-				}, [t, r, A, j]);
+				}, [t, r, A, N]);
 				return _ && !v ? null : c.a.createElement("div", {
 					className: D.a.modalWrapper
 				}, c.a.createElement(P, {
@@ -1445,9 +1445,9 @@
 			})), a.d(t, "q", (function() {
 				return I
 			})), a.d(t, "d", (function() {
-				return N
-			})), a.d(t, "l", (function() {
 				return j
+			})), a.d(t, "l", (function() {
+				return N
 			})), a.d(t, "t", (function() {
 				return P
 			})), a.d(t, "u", (function() {
@@ -1493,8 +1493,8 @@
 				C = c.a.footer("ModalFooter", m.a),
 				k = c.a.header("ModalHeader", m.a),
 				I = c.a.div("ModalTitle", m.a),
-				N = c.a.div("ModalAnnotation", m.a),
-				j = c.a.div("ModalMain", m.a),
+				j = c.a.div("ModalAnnotation", m.a),
+				N = c.a.div("ModalMain", m.a),
 				P = c.a.textarea("TextArea", m.a),
 				M = c.a.wrapped(r.l, "WarningButton", m.a),
 				A = c.a.wrapped(r.l, "PrimaryButton", m.a),
@@ -1535,8 +1535,8 @@
 			}
 			const E = Object(r.c)({
 					currentUser: i.k,
-					isNightMode: i.ab,
-					isPresenceUserPrefEnabled: i.S,
+					isNightMode: i.bb,
+					isPresenceUserPrefEnabled: i.T,
 					shouldHideNSFW: i.E
 				}),
 				b = Object(s.b)(E);
@@ -1993,4 +1993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.7a8dc34210d3a550bec8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ea1ab118bcb41abc2e0b.js.map

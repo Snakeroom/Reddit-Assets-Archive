@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.aeb198b08985b651e15c.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b513c0407a5e18c0a5af.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -844,7 +844,7 @@
 				}) => async (n, o) => {
 					const s = o();
 					if (!!s.features.comments.drafts[t])
-						if (Object(Q.P)(s) && e) {
+						if (Object(Q.Q)(s) && e) {
 							const o = $({
 								hasFocus: e,
 								draftKey: t
@@ -1014,7 +1014,7 @@
 				}) => async (o, s) => {
 					const r = s(),
 						d = Object(a.a)(z.c.replyToComment, t);
-					if (!Object(Q.N)(s())) return o(Object(c.j)()), void o(Object(l.k)({
+					if (!Object(Q.O)(s())) return o(Object(c.j)()), void o(Object(l.k)({
 						actionSource: l.a.Reply,
 						redirectUrl: Object(K.m)(s(), {
 							commentId: t
@@ -1054,7 +1054,7 @@
 							draftType: z.c.replyToComment,
 							rtJson: h,
 							text: ""
-						}, Object(Q.P)(r)) {
+						}, Object(Q.Q)(r)) {
 						const n = me({
 							parentCommentId: t,
 							commentsPageKey: e,
@@ -4508,7 +4508,7 @@
 				R = Object(c.c)({
 					isCurrentUserProfilePost: C.l,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== f.Nb.TOPIC),
-					shouldOpenPostInNewTab: E.gb
+					shouldOpenPostInNewTab: E.hb
 				}),
 				L = Object(a.b)(R);
 			t.c = Object(g.b)(L(e => {
@@ -5523,7 +5523,7 @@
 				u = n("./src/reddit/models/Flair/index.ts"),
 				m = n("./src/reddit/selectors/user.ts");
 			const p = Object(c.c)({
-					labelNSFW: m.X
+					labelNSFW: m.Y
 				}),
 				h = Object(i.b)(p),
 				b = e => {
@@ -9241,7 +9241,7 @@
 					}) => Object(m.q)(e, {
 						pageLayer: t
 					}),
-					shouldOpenPostInNewTab: F.gb
+					shouldOpenPostInNewTab: F.hb
 				}),
 				Q = e => {
 					const {
@@ -10352,8 +10352,8 @@
 			}
 			const f = Object(i.c)({
 					currentUser: l.k,
-					isNightMode: l.ab,
-					isPresenceUserPrefEnabled: l.S,
+					isNightMode: l.bb,
+					isPresenceUserPrefEnabled: l.T,
 					shouldHideNSFW: l.E
 				}),
 				g = Object(a.b)(f);
@@ -10915,10 +10915,10 @@
 						o = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
-						s = Object(g.ab)(e);
+						s = Object(g.bb)(e);
 					return o || s
 				},
-				nigtmode: g.ab,
+				nigtmode: g.bb,
 				subredditId: u.n,
 				topPostVariant: b.d
 			}));
@@ -13090,7 +13090,7 @@
 					allowCrosspostableOnly: t,
 					includeUserProfile: n,
 					substring: o.rawString
-				}), e => Object(Z.lb)(e) && Object(q.j)(e), (e, t, n) => {
+				}), e => Object(Z.mb)(e) && Object(q.j)(e), (e, t, n) => {
 					const {
 						suggestedItems: o,
 						fallbackItems: s,
@@ -17948,7 +17948,7 @@
 					if (!s) return l.fbt._("A destination community is required to crosspost", null, {
 						hk: "3haidF"
 					});
-					const i = r ? Object(te.ib)(e, {
+					const i = r ? Object(te.jb)(e, {
 						userId: s
 					}) : s;
 					if (i) {
@@ -18544,7 +18544,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ys = `${v.a.assetPath}/img/snoo-drafts.png`, ks = 3, js = Se.a.div("Wrapper", _s.a), Ss = Se.a.div("TitleRow", _s.a), Ts = Se.a.span("DraftsNumber", _s.a), Ps = Se.a.div("DetailsContainer", _s.a), Is = Se.a.wrapped(Me.a, "ButtonRow", _s.a), ws = Se.a.wrapped(k.o, "CancelButton", _s.a), Ns = Se.a.div("CloseWrapper", _s.a), Ds = Se.a.wrapped(No.a, "Close", _s.a), Ms = Se.a.div("Empty", _s.a), Rs = Se.a.img("EmptyImage", _s.a), Ls = Se.a.p("EmptyText", _s.a), Fs = Object(a.c)({
 				drafts: $.c,
 				isPending: $.b,
-				maxDrafts: te.Z
+				maxDrafts: te.ab
 			}), As = Object(r.b)(Fs);
 			class Bs extends s.a.PureComponent {
 				constructor() {
@@ -21483,7 +21483,7 @@
 					return !!n && Object(fu.t)(e, {
 						subredditId: n
 					})
-				}, te.K, (e, t, n, o, s, r, a, i) => {
+				}, te.L, (e, t, n, o, s, r, a, i) => {
 					const {
 						images: c = !0,
 						links: l = !0,
@@ -21698,7 +21698,7 @@
 					eventSchedule: V.p,
 					includeUserProfile: te.h,
 					isChanged: V.H,
-					isNameEditable: te.P,
+					isNameEditable: te.Q,
 					isPostSubmitEnabled: co,
 					isScheduledPost: V.S,
 					flair: V.r,
@@ -21707,7 +21707,7 @@
 					linkBody: V.U,
 					markdownBody: V.V,
 					rteBody: V.gb,
-					maxDrafts: te.Z,
+					maxDrafts: te.ab,
 					modalId: Y.a,
 					needsCaptcha: V.Y,
 					nextSubreddit: V.Z,
@@ -22749,4 +22749,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.aeb198b08985b651e15c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b513c0407a5e18c0a5af.js.map

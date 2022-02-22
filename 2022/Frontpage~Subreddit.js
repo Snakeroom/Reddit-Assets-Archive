@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit.465317efbd6e084502a5.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~Subreddit.0816bc742f6408009bed.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~Subreddit"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -2924,7 +2924,7 @@
 			const l = Object(n.a)(c.a, (e, {
 					listingName: t
 				}) => {
-					const s = Object(i.Cb)(e);
+					const s = Object(i.Db)(e);
 					if (!s) return !1;
 					let n;
 					if (-1 === [o.R, "r/popular"].indexOf(t)) {
@@ -3192,14 +3192,14 @@
 				o = s("./src/reddit/selectors/user.ts");
 			const a = e => {
 					const t = Object(r.c)(e, {
-						experimentEligibilitySelector: o.N,
+						experimentEligibilitySelector: o.O,
 						experimentName: n.Bc
 					});
 					return !(!t || Object(n.vf)(t))
 				},
 				i = e => {
 					return Object(r.c)(e, {
-						experimentEligibilitySelector: o.N,
+						experimentEligibilitySelector: o.O,
 						experimentName: n.Bc
 					}) === n.gd.ListingEnabled
 				}
@@ -3247,4 +3247,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~Subreddit.465317efbd6e084502a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~Subreddit.0816bc742f6408009bed.js.map

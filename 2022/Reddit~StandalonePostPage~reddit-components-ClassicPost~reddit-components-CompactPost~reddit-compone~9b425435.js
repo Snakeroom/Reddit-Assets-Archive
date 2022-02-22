@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.dc615d7d159cb1dbceeb.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.942f45686a51ff1ed1cf.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -1151,7 +1151,7 @@
 				x = n("./src/reddit/components/VerticalVotes/index.m.less"),
 				h = n.n(x);
 			const O = Object(c.c)({
-					isNightMode: f.ab,
+					isNightMode: f.bb,
 					isAnimatingUpvotePostId: v.k
 				}),
 				C = Object(i.b)(O),
@@ -2253,7 +2253,7 @@
 					const n = Object(i.G)(e, {
 						postId: t
 					});
-					return !(!n || n.isSponsored || n.removedByCategory) && (Object(c.yb)(e, {
+					return !(!n || n.isSponsored || n.removedByCategory) && (Object(c.zb)(e, {
 						postId: t
 					}) || !!Object(r.l)(e, {
 						postId: t
@@ -2271,11 +2271,11 @@
 				i = n("./src/reddit/selectors/user.ts");
 			const c = (e, t) => {
 				return Object(o.c)(e, {
-					experimentEligibilitySelector: e => ((e, t) => Object(i.yb)(e, {
+					experimentEligibilitySelector: e => ((e, t) => Object(i.zb)(e, {
 						postId: t
 					}) || !!Object(r.l)(e, {
 						postId: t
-					}) || Object(i.K)(e))(e, t),
+					}) || Object(i.L)(e))(e, t),
 					experimentName: s.N
 				}) === s.bd
 			}
@@ -2383,4 +2383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.dc615d7d159cb1dbceeb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.942f45686a51ff1ed1cf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.19f964cb3f685a462fa4.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.c45d293c76504a2a3449.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-AdHocMultiredditSidebar"], {
 		"./src/reddit/actions/multireddit/constants.ts": function(e, t, n) {
@@ -27,9 +27,9 @@
 			})), n.d(t, "h", (function() {
 				return I
 			})), n.d(t, "l", (function() {
-				return E
-			})), n.d(t, "m", (function() {
 				return T
+			})), n.d(t, "m", (function() {
+				return E
 			})), n.d(t, "k", (function() {
 				return D
 			})), n.d(t, "n", (function() {
@@ -55,9 +55,9 @@
 			})), n.d(t, "v", (function() {
 				return O
 			})), n.d(t, "w", (function() {
-				return N
-			})), n.d(t, "x", (function() {
 				return b
+			})), n.d(t, "x", (function() {
+				return N
 			})), n.d(t, "d", (function() {
 				return A
 			}));
@@ -72,8 +72,8 @@
 				l = "MULTIREDDIT__DELETE_PENDING",
 				_ = "MULTIREDDIT__DELETE_SUCCESS",
 				I = "MULTIREDDIT__DELETE_FAILURE",
-				E = "MULTIREDDIT__DUPLICATE_PENDING",
-				T = "MULTIREDDIT__DUPLICATE_SUCCESS",
+				T = "MULTIREDDIT__DUPLICATE_PENDING",
+				E = "MULTIREDDIT__DUPLICATE_SUCCESS",
 				D = "MULTIREDDIT__DUPLICATE_FAILURE",
 				m = "MULTIREDDIT__EDIT_FAILURE",
 				f = "MULTIREDDIT__EDIT_PENDING",
@@ -86,8 +86,8 @@
 				C = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_FAILURE",
 				L = 10,
 				O = "MULTIREDDIT__REMOVE_SUBREDDIT_FAILURE",
-				N = "MULTIREDDIT__REMOVE_SUBREDDIT_PENDING",
-				b = "MULTIREDDIT__REMOVE_SUBREDDIT_SUCCESS";
+				b = "MULTIREDDIT__REMOVE_SUBREDDIT_PENDING",
+				N = "MULTIREDDIT__REMOVE_SUBREDDIT_SUCCESS";
 			var A;
 			! function(e) {
 				e.InvalidSrQuarantine = "INVALID_SR_QUARANTINE", e.TooManySubreddits = "MULTI_TOO_MANY_SUBREDDITS"
@@ -175,9 +175,9 @@
 			n.d(t, "b", (function() {
 				return I
 			})), n.d(t, "e", (function() {
-				return E
-			})), n.d(t, "n", (function() {
 				return T
+			})), n.d(t, "n", (function() {
+				return E
 			})), n.d(t, "p", (function() {
 				return D
 			})), n.d(t, "o", (function() {
@@ -203,9 +203,9 @@
 			})), n.d(t, "l", (function() {
 				return O
 			})), n.d(t, "t", (function() {
-				return N
-			})), n.d(t, "u", (function() {
 				return b
+			})), n.d(t, "u", (function() {
+				return N
 			})), n.d(t, "r", (function() {
 				return A
 			})), n.d(t, "a", (function() {
@@ -235,8 +235,8 @@
 				}).apply(this, arguments)
 			}
 			const I = o.a.wrapped(i.a, "CloseIcon", l.a),
-				E = o.a.section("ModalBody", l.a),
-				T = o.a.section("ModalPostPreview", l.a),
+				T = o.a.section("ModalBody", l.a),
+				E = o.a.section("ModalPostPreview", l.a),
 				D = o.a.p("ModalText", l.a),
 				m = o.a.div("ModalSmallText", l.a),
 				f = o.a.div("ModalDescriptionText", l.a),
@@ -249,8 +249,8 @@
 				C = o.a.div("ModalTitle", l.a),
 				L = o.a.div("ModalAnnotation", l.a),
 				O = o.a.div("ModalMain", l.a),
-				N = o.a.textarea("TextArea", l.a),
-				b = o.a.wrapped(d.l, "WarningButton", l.a),
+				b = o.a.textarea("TextArea", l.a),
+				N = o.a.wrapped(d.l, "WarningButton", l.a),
 				A = o.a.wrapped(d.l, "PrimaryButton", l.a),
 				j = o.a.wrapped(d.o, "CancelButton", l.a),
 				v = o.a.wrapped(d.r, "RemoveButton", l.a),
@@ -276,10 +276,10 @@
 				l = n("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
 				_ = n("./src/reddit/components/UserIcon/UserIcon.tsx"),
 				I = n("./src/reddit/components/UserIcon/UserIcon.m.less"),
-				E = n.n(I);
+				T = n.n(I);
 
-			function T() {
-				return (T = Object.assign || function(e) {
+			function E() {
+				return (E = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -289,8 +289,8 @@
 			}
 			const D = Object(d.c)({
 					currentUser: i.k,
-					isNightMode: i.ab,
-					isPresenceUserPrefEnabled: i.S,
+					isNightMode: i.bb,
+					isPresenceUserPrefEnabled: i.T,
 					shouldHideNSFW: i.E
 				}),
 				m = Object(a.b)(D);
@@ -303,11 +303,11 @@
 					...d
 				} = e, i = Object(c.a)(null == t ? void 0 : t.accountIcon);
 				return s.a.createElement("div", {
-					className: Object(r.a)(E.a.currentUserIconWrapper, a)
+					className: Object(r.a)(T.a.currentUserIconWrapper, a)
 				}, i ? s.a.createElement(l.a, {
 					headshot: t.accountIcon,
 					className: e.className
-				}) : s.a.createElement(_.b, T({}, d, {
+				}) : s.a.createElement(_.b, E({}, d, {
 					iconUrl: t ? t.accountIcon : void 0,
 					isCurrentUser: !0,
 					isNSFW: !!t && t.isNSFW
@@ -457,4 +457,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.19f964cb3f685a462fa4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.c45d293c76504a2a3449.js.map

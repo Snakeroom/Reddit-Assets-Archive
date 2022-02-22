@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.fe9e43183efbaceb6724.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.03deeae9324964fb3a33.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -569,7 +569,7 @@
 							sortToUse: r
 						} = Object(N.a)(e, o);
 					return (!r || r === b.u.CONFIDENCE) && Object(H.c)(e, {
-						experimentEligibilitySelector: () => Object(Q.M)(e),
+						experimentEligibilitySelector: () => Object(Q.N)(e),
 						experimentName: q.B
 					}) === q.D.Enabled
 				};
@@ -654,7 +654,7 @@
 					});
 					L && (B.sort = A), B.onOtherDiscussions = I, t(k.r(p)), await t(ht(p, u, B, A));
 					const W = s().posts.models[p],
-						U = Object(Q.N)(s());
+						U = Object(Q.O)(s());
 					if (W && "subreddit" === W.belongsTo.type) {
 						const e = W.belongsTo.id,
 							n = Object(pe.i)(() => t(Object(ue.m)(e, {
@@ -785,7 +785,7 @@
 						j = g.pages.comments.api.fullyLoaded[C],
 						P = g.pages.comments.api.error[C],
 						_ = g.pages.comments.api.pending[C],
-						S = !Object(Q.M)(g),
+						S = !Object(Q.N)(g),
 						w = Object(Q.k)(g),
 						N = n === b.u.CHAT,
 						T = !!g.platform.lastPage;
@@ -918,7 +918,7 @@
 				}, bt = Object(re.a)(Xe.g), gt = (e, t, s) => async (n, o, r) => {
 					const i = Object(ie.a)(e, t, s),
 						a = o(),
-						d = Object(Q.N)(a),
+						d = Object(Q.O)(a),
 						l = Object(Q.k)(a),
 						p = Object(m.a)(r.apiContext(), e, t, s, Object(B.a)(a), Ye(a)),
 						h = d && l && Object(u.d)(r.gqlContext(), Object(R.e)(l)) || null,
@@ -2555,7 +2555,7 @@
 						post: t,
 						isOverlay: s
 					}) => !Object(_.q)(t) && !s && Object(S.a)(e) === P.ee.NewModule,
-					isLoggedIn: T.N,
+					isLoggedIn: T.O,
 					postSEOV2IdCardVariant: w.h,
 					shouldShowReredditPromo: L.a,
 					widgets: Object(p.a)(N.s)
@@ -3486,7 +3486,7 @@
 					post: t
 				}) => !!t && Object(v.a)(t), (e, {
 					awaitAllCommentsRendered: t
-				}) => t, N.M, N.N, P.d, K, (e, t, s, n, o, r) => !t && !s && !n && !o && !e && r),
+				}) => t, N.N, N.O, P.d, K, (e, t, s, n, o, r) => !t && !s && !n && !o && !e && r),
 				Y = Object(c.a)((e, {
 					post: t
 				}) => t, _.c, L.Z, L.jb, (e, t, s, n) => {
@@ -4288,8 +4288,8 @@
 				}).apply(this, arguments)
 			}
 			const v = Object(r.b)(() => Object(i.c)({
-					showFPR: x.L,
-					showSuspended: x.U,
+					showFPR: x.M,
+					showSuspended: x.V,
 					showOffline: e => e.connection.showBanner
 				})),
 				k = Object(d.a)(({
@@ -4801,7 +4801,7 @@
 					contentGateInfo: (e, {
 						subredditName: t
 					}) => Object(_e.f)(e, t),
-					currentUserShowNSFW: _e.hb,
+					currentUserShowNSFW: _e.ib,
 					dismissedSubreddits: he.a,
 					fullyLoaded: ce.u,
 					hasModeratorPostPermissions: Pe.c,
@@ -4823,8 +4823,8 @@
 					isEligibleForCommentTruncation: ye.a,
 					isChatPost: de.d,
 					isCommentsListTruncated: me.a,
-					isLoggedIn: _e.N,
-					isNightmodeOn: _e.ab,
+					isLoggedIn: _e.O,
+					isNightmodeOn: _e.bb,
 					isTooltipOpen: (e, t) => !!Object(Ee.a)(e),
 					origin: je.j,
 					post: Ie.G,
@@ -4841,7 +4841,7 @@
 							commentsPageKey: n
 						})
 					}),
-					shouldOpenPostInNewTab: _e.gb,
+					shouldOpenPostInNewTab: _e.hb,
 					subredditAboutInfo: (e, {
 						subredditName: t
 					}) => t ? Object(te.u)(e, {
@@ -4853,7 +4853,7 @@
 						tooltipIdPrefix: W.a,
 						tooltipType: Je.c.StickyPost
 					}))(e),
-					userPrefs: _e.Cb,
+					userPrefs: _e.Db,
 					inResonatePilot: ve.a,
 					isQualifiedForUpvotePrompt: se.c,
 					isEligibleForNsfwSignupUpsellTreatment: (e, {
@@ -5762,7 +5762,7 @@
 					...t,
 					subredditOrProfile: s
 				})
-			}, i.U, i.G, a.M, a.N, r.g, (e, t, s, n, o, r, i) => {
+			}, i.U, i.G, a.N, a.O, r.g, (e, t, s, n, o, r, i) => {
 				if (!n) return !1;
 				const a = !(!s || Object(d.h)(s)),
 					c = n.numComments >= 3 && !e || !t;
@@ -5805,4 +5805,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.fe9e43183efbaceb6724.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.03deeae9324964fb3a33.js.map

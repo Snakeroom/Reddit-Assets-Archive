@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.11de2033c365f7b2a559.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.88632af80f567855f7ee.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -657,8 +657,8 @@
 					}
 				}, [t]);
 				const Y = Object(s.useCallback)(() => y(!0), [y]),
-					K = 0 === I.length,
-					W = O || K,
+					W = 0 === I.length,
+					K = O || W,
 					q = Object(s.useRef)(((e, t) => `${t}_${e}_count_anim`)(b, n));
 				return r.a.createElement(r.a.Fragment, null, !h && r.a.createElement("div", {
 					className: l.a.countAnimation
@@ -683,7 +683,7 @@
 						} : {
 							transform: "translateY(0)"
 						}
-					}, W ? r.a.createElement("span", {
+					}, K ? r.a.createElement("span", {
 						className: l.a.digitDelta
 					}, e) : n.map((e, t) => {
 						const s = 0 === t || t === n.length - 1;
@@ -1354,16 +1354,16 @@
 				G = n("./src/reddit/controls/Score/index.tsx"),
 				H = n("./src/reddit/icons/fonts/index.tsx"),
 				Y = n("./src/reddit/helpers/styles/mixins/index.m.less"),
-				K = n.n(Y),
-				W = n("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
-				q = n.n(W);
+				W = n.n(Y),
+				K = n("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
+				q = n.n(K);
 			const {
 				fbt: J
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), z = 20, Z = l.qc, X = l.qc, Q = Object(c.a)(P.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(o.b)(() => Object(i.c)({
 				autoplay: k.b,
-				isLoggedIn: k.N,
+				isLoggedIn: k.O,
 				isOverlayOpen: j.i,
 				location: (e, {
 					listingName: t
@@ -1573,9 +1573,9 @@
 					} = this.props, t = e === C.g.Classic ? this.renderClassicContent() : e === C.g.Compact ? this.renderCompactContent() : this.renderLargeContent();
 					return r.a.createElement("div", {
 						className: Object(d.a)(q.a.container, {
-							[K.a.largeAndMediumPostStyles]: e === C.g.Large || e === C.g.Medium,
-							[K.a.classicPostStyles]: e === C.g.Classic,
-							[K.a.compactPostStyles]: e === C.g.Compact,
+							[W.a.largeAndMediumPostStyles]: e === C.g.Large || e === C.g.Medium,
+							[W.a.classicPostStyles]: e === C.g.Classic,
+							[W.a.compactPostStyles]: e === C.g.Compact,
 							[q.a.large]: e === C.g.Large || e === C.g.Medium,
 							[q.a.classic]: e === C.g.Classic,
 							[q.a.compact]: e === C.g.Compact
@@ -4147,7 +4147,7 @@
 					const n = Object(i.G)(e, {
 						postId: t
 					});
-					return !(!n || n.isSponsored || n.removedByCategory) && (Object(a.yb)(e, {
+					return !(!n || n.isSponsored || n.removedByCategory) && (Object(a.zb)(e, {
 						postId: t
 					}) || !!Object(o.l)(e, {
 						postId: t
@@ -4195,11 +4195,11 @@
 				i = n("./src/reddit/selectors/user.ts");
 			const a = (e, t) => {
 				return Object(r.c)(e, {
-					experimentEligibilitySelector: e => ((e, t) => Object(i.yb)(e, {
+					experimentEligibilitySelector: e => ((e, t) => Object(i.zb)(e, {
 						postId: t
 					}) || !!Object(o.l)(e, {
 						postId: t
-					}) || Object(i.K)(e))(e, t),
+					}) || Object(i.L)(e))(e, t),
 					experimentName: s.N
 				}) === s.bd
 			}
@@ -4332,4 +4332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.11de2033c365f7b2a559.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.88632af80f567855f7ee.js.map

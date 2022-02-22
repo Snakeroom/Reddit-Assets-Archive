@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.8e4cf61c9ca1ddb44616.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.d519fb119ce74c10c87e.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~Comment~CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -75,7 +75,7 @@
 				}, O = e => async (t, n, {
 					apiContext: s
 				}) => {
-					if (!Object(x.N)(n())) return void t(Object(i.i)(m.a.LOGIN_MODAL_ID));
+					if (!Object(x.O)(n())) return void t(Object(i.i)(m.a.LOGIN_MODAL_ID));
 					const r = n().features.comments.models[e];
 					if (!r) return;
 					const a = r.isLocked ? l.l : l.e;
@@ -1814,7 +1814,7 @@
 					isReportsDropdownOpen: (e, {
 						comment: t
 					}) => Object(y.b)(Le(t.id))(e),
-					isLoggedIn: H.N,
+					isLoggedIn: H.O,
 					postIsArchived: (e, {
 						comment: t
 					}) => Object(U.A)(e, {
@@ -2280,7 +2280,7 @@
 					focused: (e, t) => !t.noFocus && Object(P.t)(e, t),
 					highlightAnimationDisabled: Ot.c,
 					isEditing: P.z,
-					isLoggedIn: H.N,
+					isLoggedIn: H.O,
 					isPendingDeletion: P.C,
 					isPresenceConsumptionExpEnabled: ft.c,
 					moderatorPermissions: (e, t) => {
@@ -2298,7 +2298,7 @@
 					allowNFTs: yt.a,
 					hasSupporterRing: gt.a,
 					isOnlineConsumptionLoadTest: ft.a,
-					isOnlineUserPref: H.S,
+					isOnlineUserPref: H.T,
 					userIsBanned: (e, t) => {
 						const n = Ut(e, t);
 						return !!n && Object(V.db)(e, {
@@ -3076,7 +3076,7 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
-			const i = Object(o.a)(a.N, a.M, (e, t) => e || t),
+			const i = Object(o.a)(a.O, a.N, (e, t) => e || t),
 				d = Object(o.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: i,
 					experimentName: s.H
@@ -3096,4 +3096,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.8e4cf61c9ca1ddb44616.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.d519fb119ce74c10c87e.js.map

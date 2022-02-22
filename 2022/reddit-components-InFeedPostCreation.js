@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.435d825e74f819d1b3ba.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.43ff03d4c1c1acbfa71e.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -69,7 +69,7 @@
 				M = Object(a.c)({
 					currentUser: U.k,
 					isPresenceConsumptionExpEnabled: E.c,
-					isPresenceTogglePref: U.S,
+					isPresenceTogglePref: U.T,
 					subreddit: O.x,
 					subredditAboutInfo: O.u
 				}),
@@ -210,8 +210,8 @@
 			}
 			const x = Object(i.c)({
 					currentUser: d.k,
-					isNightMode: d.ab,
-					isPresenceUserPrefEnabled: d.S,
+					isNightMode: d.bb,
+					isPresenceUserPrefEnabled: d.T,
 					shouldHideNSFW: d.E
 				}),
 				_ = Object(c.b)(x);
@@ -280,4 +280,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.435d825e74f819d1b3ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.43ff03d4c1c1acbfa71e.js.map

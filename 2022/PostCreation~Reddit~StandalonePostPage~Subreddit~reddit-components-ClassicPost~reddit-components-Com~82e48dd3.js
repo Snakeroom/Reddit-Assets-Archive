@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.67714b42bdd9cb4c9cc3.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.b45821267ef79efd58a3.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1285,7 +1285,7 @@
 				De = 6e3,
 				Ue = 100,
 				We = Object(d.b)(() => Object(l.c)({
-					isLoggedIn: k.N,
+					isLoggedIn: k.O,
 					autoplayPref: k.b,
 					currentTime: V.c,
 					currentUser: k.k,
@@ -2324,7 +2324,7 @@
 				p = s.n(h);
 			const f = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				b = Object(r.b)(() => Object(o.c)({
-					isNightmodeOn: m.ab
+					isNightmodeOn: m.bb
 				}));
 			t.a = b(e => {
 				const t = {
@@ -2421,7 +2421,7 @@
 						style: t
 					}, e.children)
 				},
-				j = Object(o.b)(() => Object(c.a)(y.F, S.gb, (e, {
+				j = Object(o.b)(() => Object(c.a)(y.F, S.hb, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(y.b)(e, s) : null, E.d, y.G, (e, t, s, n, i) => ({
@@ -5005,4 +5005,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.67714b42bdd9cb4c9cc3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.b45821267ef79efd58a3.js.map

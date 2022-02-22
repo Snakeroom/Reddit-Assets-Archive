@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.15edc2fe55c48e0a912a.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.e8a9996e76772b3b4c95.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -892,7 +892,7 @@
 					if (!f && !p) return;
 					const R = p ? u.features.comments.models[e] : u.posts.models[e];
 					if (!R) return;
-					if (!Object(_.N)(o())) return s(Object(r.j)()), void s(Object(a.k)({
+					if (!Object(_.O)(o())) return s(Object(r.j)()), void s(Object(a.k)({
 						actionSource: a.a.Report,
 						redirectUrl: R.permalink
 					}));
@@ -2102,7 +2102,7 @@
 						(r ? r.author : a ? a.author : null) || t.author;
 						n.name
 					}),
-					isNightmodeOn: j.ab,
+					isNightmodeOn: j.bb,
 					locale: I.i
 				}),
 				B = Object(c.b)(U, (e, {
@@ -3720,7 +3720,7 @@
 					return !!n && n.includes(t)
 				},
 				i = (e, t) => {
-					const n = Object(s.vb)(e, {
+					const n = Object(s.wb)(e, {
 						userName: t
 					});
 					return !!n && a(e, n.id)
@@ -3767,11 +3767,11 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
 			const a = e => s.c.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: r.N,
+					experimentEligibilitySelector: r.O,
 					experimentName: s.i
 				}),
 				i = e => s.e.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: r.N,
+					experimentEligibilitySelector: r.O,
 					experimentName: s.l
 				})
 		},
@@ -3792,4 +3792,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.15edc2fe55c48e0a912a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.e8a9996e76772b3b4c95.js.map

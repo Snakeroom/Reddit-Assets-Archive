@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.8a3ddff2b5ce90093334.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.0687b2a5d81055336d81.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1368,7 +1368,7 @@
 							await r(Object(c.o)(t.name))
 						}
 					})(), (async () => {
-						const n = Object(y.vb)(s, {
+						const n = Object(y.wb)(s, {
 							userName: t
 						});
 						if (!n) return;
@@ -2487,11 +2487,11 @@
 			const {
 				fbt: F
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), K = l.a.wrapped(U, "PrivateKey", M.a), H = l.a.div("ButtonsContainer", M.a), G = l.a.div("Container", M.a), q = l.a.div("ContainerExp", M.a), z = l.a.div("Description", M.a), Q = l.a.div("PrivateSubredditDetails", M.a), J = l.a.div("PrivateSubredditDescription", M.a), X = l.a.h3("PrivateSubredditName", M.a), Z = l.a.a("Link", M.a), Y = l.a.wrapped(S.n, "LinkRouterButton", M.a), V = l.a.wrapped(S.m, "LinkButton", M.a), $ = l.a.wrapped(S.q, "SecondaryLinkRouterButton", M.a), ee = l.a.wrapped(S.p, "SecondaryLinkButton", M.a), te = l.a.wrapped(Y, "GoHomeLinkButton", M.a), re = l.a.wrapped(f.a, "CreateCommunityButton", M.a), ne = l.a.img("Image", M.a), se = l.a.img("ImagePlaceholder", M.a), ae = l.a.wrapped(Y, "LeftLinkRouterButton", M.a), ie = l.a.wrapped(V, "LeftLinkButton", M.a), oe = l.a.wrapped(ee, "SecondaryLeftLinkButton", M.a), de = l.a.wrapped($, "SecondaryLeftLinkRouterButton", M.a), ce = l.a.h3("Title", M.a), le = l.a.div("PageBody", M.a), ue = l.a.div("InterstitialMessageWrapper", M.a), me = Object(c.c)({
-				isLoggedIn: A.M,
+				isLoggedIn: A.N,
 				origin: W.j,
 				user: A.k,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(A.N)(e)) return !1;
+					if (!Object(A.O)(e)) return !1;
 					const t = Object(L.d)(e);
 					if (!t) return !1;
 					const r = Object(A.f)(e, t);
@@ -2975,7 +2975,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(I.vb)(e, {
+				user: (e, t) => Object(I.wb)(e, {
 					userName: t.username
 				})
 			});
@@ -3278,7 +3278,7 @@
 			const Te = Object(i.c)({
 					activeTooltipId: w.a,
 					currentUser: I.k,
-					isLoggedIn: I.N,
+					isLoggedIn: I.O,
 					hideNSFWPref: I.E,
 					moderatorPermissions: (e, {
 						subredditId: t
@@ -3297,7 +3297,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: I.vb,
+					user: I.wb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(O.d)(e, {
@@ -3315,7 +3315,7 @@
 						subredditId: t
 					}) => Object(p.b)(e, t),
 					trophyCase: (e, t) => Object(x.r)(e, Object(x.m)(e, t.userName)),
-					isNightMode: I.ab,
+					isNightMode: I.bb,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
 						const r = Object(u.a)(t.contextId) ? Object(g.G)(e, {
@@ -4462,4 +4462,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.8a3ddff2b5ce90093334.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.0687b2a5d81055336d81.js.map

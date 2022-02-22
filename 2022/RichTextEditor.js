@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.b09562e603ac6a9ff84b.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.791447f912960ff70093.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -508,7 +508,7 @@
 				}) => async (n, o) => {
 					const s = o();
 					if (!!s.features.comments.drafts[t])
-						if (Object(Q.P)(s) && e) {
+						if (Object(Q.Q)(s) && e) {
 							const o = $({
 								hasFocus: e,
 								draftKey: t
@@ -678,7 +678,7 @@
 				}) => async (o, s) => {
 					const r = s(),
 						l = Object(i.a)(H.c.replyToComment, t);
-					if (!Object(Q.N)(s())) return o(Object(d.j)()), void o(Object(c.k)({
+					if (!Object(Q.O)(s())) return o(Object(d.j)()), void o(Object(c.k)({
 						actionSource: c.a.Reply,
 						redirectUrl: Object(X.m)(s(), {
 							commentId: t
@@ -718,7 +718,7 @@
 							draftType: H.c.replyToComment,
 							rtJson: h,
 							text: ""
-						}, Object(Q.P)(r)) {
+						}, Object(Q.Q)(r)) {
 						const n = ue({
 							parentCommentId: t,
 							commentsPageKey: e,
@@ -3516,8 +3516,8 @@
 			}
 			const f = Object(a.c)({
 					currentUser: c.k,
-					isNightMode: c.ab,
-					isPresenceUserPrefEnabled: c.S,
+					isNightMode: c.bb,
+					isPresenceUserPrefEnabled: c.T,
 					shouldHideNSFW: c.E
 				}),
 				x = Object(i.b)(f);
@@ -3846,7 +3846,7 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
-			const a = Object(o.a)(i.N, i.M, (e, t) => e || t),
+			const a = Object(o.a)(i.O, i.N, (e, t) => e || t),
 				d = Object(o.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: s.H
@@ -3904,4 +3904,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.b09562e603ac6a9ff84b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.791447f912960ff70093.js.map

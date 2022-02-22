@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.ffb290e063404585a601.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.1ac6e60e9bb64fe95d01.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -12,8 +12,8 @@
 			var i = s("./node_modules/draft-js/lib/Draft.js"),
 				o = s("./node_modules/react/index.js"),
 				n = s.n(o),
-				a = s("./src/reddit/constants/keycodes.ts"),
-				r = s("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
+				r = s("./src/reddit/constants/keycodes.ts"),
+				a = s("./src/reddit/components/RichTextEditor/Tooltip/index.tsx"),
 				c = s("./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less"),
 				d = s.n(c);
 			class l extends n.a.Component {
@@ -21,7 +21,7 @@
 					super(e), this.updateTooltipPosition = null, this.toggleTooltip = e => {
 						e.currentTarget instanceof HTMLElement && (this.gifToolbarButtonEl = e.currentTarget), this.props.isVisible || this.props.sendEvent(), this.props.setIsVisible(!this.props.isVisible)
 					}, this.onKeyPressedInTooltip = e => {
-						e.keyCode === a.a.Escape && this.closeTooltip(!0)
+						e.keyCode === r.a.Escape && this.closeTooltip(!0)
 					}, this.closeTooltip = e => {
 						if (e) {
 							const {
@@ -57,10 +57,10 @@
 					const {
 						isVisible: e
 					} = this.props;
-					return n.a.createElement(r.b, {
+					return n.a.createElement(a.b, {
 						className: d.a.tooltip,
 						onSetPositionUpdater: e => this.updateTooltipPosition = e,
-						trianglePlacement: r.a.Below
+						trianglePlacement: a.a.Below
 					}, e && n.a.createElement("div", {
 						onKeyDown: this.onKeyPressedInTooltip
 					}, this.props.children))
@@ -92,9 +92,9 @@
 			var i = s("./node_modules/fbt/lib/FbtPublic.js"),
 				o = s("./src/lib/classNames/index.ts"),
 				n = s("./node_modules/lodash/memoize.js"),
-				a = s.n(n),
-				r = s("./node_modules/lodash/throttle.js"),
-				c = s.n(r),
+				r = s.n(n),
+				a = s("./node_modules/lodash/throttle.js"),
+				c = s.n(a),
 				d = s("./node_modules/react/index.js"),
 				l = s.n(d),
 				p = s("./node_modules/react-redux/es/index.js"),
@@ -179,13 +179,13 @@
 				}
 			}
 			const L = Object(h.c)({
-				isNightMode: S.ab
+				isNightMode: S.bb
 			});
 			var U = Object(p.b)(L)(M),
 				P = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
 				A = s.n(P);
 			const F = 4,
-				H = a()((function() {
+				H = r()((function() {
 					const e = Object(b.a)("https://api.giphy.com/v1/gifs/trending", {
 						api_key: g.a.giphyApiKey,
 						rating: x
@@ -422,8 +422,8 @@
 			var i = s("./node_modules/react/index.js"),
 				o = s.n(i),
 				n = s("./src/reddit/helpers/trackers/crypto.ts"),
-				a = s("./src/reddit/hooks/useTracking.ts"),
-				r = s("./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.tsx"),
+				r = s("./src/reddit/hooks/useTracking.ts"),
+				a = s("./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.tsx"),
 				c = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.tsx"),
 				d = s("./src/reddit/controls/Button/index.tsx"),
 				l = s("./src/reddit/helpers/economics/membershipPage.ts"),
@@ -469,10 +469,10 @@
 				})))
 			}
 			t.default = e => {
-				const t = Object(a.a)(),
+				const t = Object(r.a)(),
 					[s, d] = Object(i.useState)(!1),
 					l = () => d(!1);
-				return o.a.createElement(r.a, {
+				return o.a.createElement(a.a, {
 					editorState: e.editorState,
 					onChange: e.onChange,
 					onSetApi: e.onSetApi,
@@ -514,32 +514,32 @@
 			s.d(t, "d", (function() {
 				return n
 			})), s.d(t, "c", (function() {
-				return a
-			})), s.d(t, "a", (function() {
 				return r
+			})), s.d(t, "a", (function() {
+				return a
 			})), s.d(t, "b", (function() {
 				return c
 			}));
 			var i = s("./src/reddit/selectors/telemetry.ts");
-			const o = (e, t, s, o, n) => a => {
-					const r = {
-						...Object(i.o)(a),
+			const o = (e, t, s, o, n) => r => {
+					const a = {
+						...Object(i.o)(r),
 						source: "meta",
 						action: e,
 						noun: "transaction",
-						subreddit: Object(i.kb)(a, s),
+						subreddit: Object(i.kb)(r, s),
 						actionInfo: {
 							settingValue: t,
 							reason: n
 						}
 					};
-					return o && (r.payment = {
+					return o && (a.payment = {
 						amountInSmallestDenom: parseInt(o)
-					}), r
+					}), a
 				},
 				n = (e, t, s) => o("submit", e, t, s),
-				a = (e, t, s, i) => o("fail", e, t, s, i),
-				r = (e, t) => s => ({
+				r = (e, t, s, i) => o("fail", e, t, s, i),
+				a = (e, t) => s => ({
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
@@ -573,4 +573,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.ffb290e063404585a601.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.1ac6e60e9bb64fe95d01.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.e621ebb9da3d9d3c47af.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.307bfe6fcc72465caa6d.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -634,7 +634,7 @@
 							await a(Object(c.o)(t.name))
 						}
 					})(), (async () => {
-						const r = Object(_.vb)(n, {
+						const r = Object(_.wb)(n, {
 							userName: t
 						});
 						if (!r) return;
@@ -2290,7 +2290,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(E.vb)(e, {
+				user: (e, t) => Object(E.wb)(e, {
 					userName: t.username
 				})
 			});
@@ -2593,7 +2593,7 @@
 			const Be = Object(o.c)({
 					activeTooltipId: I.a,
 					currentUser: E.k,
-					isLoggedIn: E.N,
+					isLoggedIn: E.O,
 					hideNSFWPref: E.E,
 					moderatorPermissions: (e, {
 						subredditId: t
@@ -2612,7 +2612,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: E.vb,
+					user: E.wb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(O.d)(e, {
@@ -2630,7 +2630,7 @@
 						subredditId: t
 					}) => Object(b.b)(e, t),
 					trophyCase: (e, t) => Object(g.r)(e, Object(g.m)(e, t.userName)),
-					isNightMode: E.ab,
+					isNightMode: E.bb,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
 						const a = Object(m.a)(t.contextId) ? Object(v.G)(e, {
@@ -3995,14 +3995,14 @@
 				s = a("./src/reddit/selectors/user.ts");
 			const o = e => {
 					const t = Object(n.c)(e, {
-						experimentEligibilitySelector: s.N,
+						experimentEligibilitySelector: s.O,
 						experimentName: r.Bc
 					});
 					return !(!t || Object(r.vf)(t))
 				},
 				d = e => {
 					return Object(n.c)(e, {
-						experimentEligibilitySelector: s.N,
+						experimentEligibilitySelector: s.O,
 						experimentName: r.Bc
 					}) === r.gd.ListingEnabled
 				}
@@ -4064,4 +4064,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.e621ebb9da3d9d3c47af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.307bfe6fcc72465caa6d.js.map

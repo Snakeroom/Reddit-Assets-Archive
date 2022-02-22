@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.f04769f8cf73f3342148.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.b60c767435f87b21dfc7.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -975,7 +975,7 @@
 			const m = ({
 				space: e
 			}) => {
-				const t = Object(c.e)(d.ab),
+				const t = Object(c.e)(d.bb),
 					r = e === n.MODAL,
 					a = e === n.INFEED_UNIT;
 				return o.a.createElement("div", {
@@ -2097,7 +2097,7 @@
 				}, e.bottomButtonText)))),
 				F = Object(c.c)({
 					hideNSFWPref: y.E,
-					nightmode: y.ab
+					nightmode: y.bb
 				}),
 				O = Object(a.b)(F)(e => i.a.createElement("div", {
 					className: Object(d.a)(E.a.communityItemContainer, {
@@ -2468,7 +2468,7 @@
 				O = m.a.wrapped(o.a, "RawHTMLDisplay", w.a);
 			var I = Object(i.b)(() => Object(a.c)({
 					forceRedditStyle: f.l,
-					isNightmodeOn: x.ab
+					isNightmodeOn: x.bb
 				}))(e => s.a.createElement(c.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -2674,7 +2674,7 @@
 				je = m.a.div("LinkContainer", _e.a),
 				Ce = Object(a.c)({
 					userIsBanned: he.cb,
-					userIsLoggedIn: x.N
+					userIsLoggedIn: x.O
 				});
 			var Fe = Object(i.b)(Ce)(e => {
 					const {
@@ -3712,4 +3712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.f04769f8cf73f3342148.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.b60c767435f87b21dfc7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.719a72114f60eec49d15.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.a6beaa838923e4572a60.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -484,7 +484,7 @@
 				de = x.a.div("TickText", D.a),
 				ue = x.a.div("PreSubText", D.a),
 				me = Object(i.c)({
-					isNightModeOn: H.ab
+					isNightModeOn: H.bb
 				}),
 				pe = Object(s.b)(me)(e => r.a.createElement(J, {
 					last: e.last,
@@ -1703,9 +1703,9 @@
 			var k = _;
 			const N = Object(i.c)({
 					isModerator: (e, t) => Object(u.f)(e, t.match.params),
-					isOwnProfile: (e, t) => Object(m.T)(e, t.match.params.profileName),
+					isOwnProfile: (e, t) => Object(m.U)(e, t.match.params.profileName),
 					isPending: e => e.profileModSettingsPage.api.pending,
-					hasSubreddit: (e, t) => Object(m.wb)(e, {
+					hasSubreddit: (e, t) => Object(m.xb)(e, {
 						userName: t.match.params.profileName
 					})
 				}),
@@ -1740,4 +1740,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.719a72114f60eec49d15.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.a6beaa838923e4572a60.js.map

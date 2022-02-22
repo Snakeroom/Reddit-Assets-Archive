@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.67f34f0844864cc25465.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.44bb02ff605c11af5583.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1356,8 +1356,8 @@
 			const _ = "create-community-button",
 				y = g.a.wrapped(l.c, "StyledTooltip", x.a),
 				v = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.lb)(e),
-					userIsSuspended: h.U
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.mb)(e),
+					userIsSuspended: h.V
 				});
 			t.a = Object(o.b)(v, (e, {
 				eventSource: t
@@ -2225,7 +2225,7 @@
 				}).apply(this, arguments)
 			}
 			const R = Object(m.c)({
-				isLoggedIn: N.N
+				isLoggedIn: N.O
 			});
 			var B = Object(o.b)(R, e => ({
 					openLoginModal: () => {
@@ -2600,8 +2600,8 @@
 				xt = n.n(ft);
 			const gt = z.a.wrapped(S.t, "TertiaryButton", xt.a),
 				_t = Object(m.c)({
-					stylesDisabledForSubreddit: N.mb,
-					stylesDisabledGlobally: N.nb
+					stylesDisabledForSubreddit: N.nb,
+					stylesDisabledGlobally: N.ob
 				});
 			class yt extends i.a.Component {
 				constructor(e) {
@@ -2812,8 +2812,8 @@
 						subredditName: t.listingName
 					}),
 					isContributorRequestPending: e => Object(ne.e)(e, et.e.Post),
-					isGQLLoggedIn: N.M,
-					isLoggedIn: N.N,
+					isGQLLoggedIn: N.N,
+					isLoggedIn: N.O,
 					moderatorPermissions: (e, t) => {
 						const n = Object(ne.D)(e, t.listingName);
 						if (n) return Object(it.m)(e, {
@@ -5182,4 +5182,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.67f34f0844864cc25465.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.44bb02ff605c11af5583.js.map

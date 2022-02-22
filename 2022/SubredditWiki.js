@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.47ce9e86e8a6dbb3fa2f.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.20245ca15f26b1d2f6c1.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./src/reddit/actions/inContextModeration.ts": function(e, t, s) {
@@ -2104,7 +2104,7 @@
 						match: t
 					}) => Object(M.f)(e, t.params.subredditName),
 					layout: C.R,
-					over18Pref: M.hb,
+					over18Pref: M.ib,
 					subreddit: (e, {
 						match: t
 					}) => Object(W.x)(e, {
@@ -2129,7 +2129,7 @@
 						contentGateInfo: t,
 						subreddit: s,
 						subredditName: i
-					} = this.props, r = !!s && s.isNSFW && !M.hb, o = Object(F.a)(t, r, i);
+					} = this.props, r = !!s && s.isNSFW && !M.ib, o = Object(F.a)(t, r, i);
 					if (o) return n.a.createElement(c.default, o);
 					const a = `/r/${i}/`;
 					return n.a.createElement(B.a, {
@@ -2169,10 +2169,10 @@
 				n = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/user.ts");
 			const o = e => i.oc.Enabled === Object(n.c)(e, {
-				experimentEligibilitySelector: r.N,
+				experimentEligibilitySelector: r.O,
 				experimentName: i.mc
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.47ce9e86e8a6dbb3fa2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.20245ca15f26b1d2f6c1.js.map

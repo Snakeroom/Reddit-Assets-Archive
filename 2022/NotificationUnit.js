@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.9a47a60b9789564893a9.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.3862256b39b315733a11.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -410,7 +410,7 @@
 					var t, i, n, s, w, C, y, M, j, k, D, R, P;
 					const L = Object(E.a)(),
 						H = Object(N.d)(),
-						F = Object(N.e)(h.ab),
+						F = Object(N.e)(h.bb),
 						B = Object(N.e)(T.b),
 						V = Object(N.e)(T.c),
 						z = Object(N.e)(T.a),
@@ -730,7 +730,7 @@
 				o = i("./src/reddit/helpers/chooseVariant/index.ts"),
 				s = i("./src/reddit/selectors/experiments/utils.ts"),
 				r = i("./src/reddit/selectors/user.ts");
-			const l = e => Object(r.M)(e) || Object(r.N)(e),
+			const l = e => Object(r.N)(e) || Object(r.O)(e),
 				d = Object(n.a)(e => Object(o.c)(e, {
 					experimentName: a.xd,
 					experimentEligibilitySelector: l
@@ -741,4 +741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.9a47a60b9789564893a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.3862256b39b315733a11.js.map

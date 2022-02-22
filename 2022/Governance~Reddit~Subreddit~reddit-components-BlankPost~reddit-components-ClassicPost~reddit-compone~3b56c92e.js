@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.c64ecba462d2c626f92d.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.fbb743fbadcb02ceed4c.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -1091,7 +1091,7 @@
 				g = () => async (e, t) => {
 					const r = t(),
 						s = Object(o.f)(r, {}),
-						i = Object(l.M)(r) || Object(l.N)(r),
+						i = Object(l.N)(r) || Object(l.O)(r),
 						n = Object(u.b)(r);
 					if (!i || !s) return;
 					const a = n ? Object(c.i)(r) : Object(c.j)(r);
@@ -1545,9 +1545,9 @@
 				const e = Object(n.e)(e => ({
 					currentUser: Object(d.k)(e),
 					modModeEnabled: e.modModeEnabled,
-					nightmodeEnabled: Object(d.ab)(e),
+					nightmodeEnabled: Object(d.bb)(e),
 					prefs: e.user.prefs,
-					isLoggedIn: Object(d.N)(e)
+					isLoggedIn: Object(d.O)(e)
 				}));
 				return Object(o.a)(e)
 			}
@@ -2228,4 +2228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.c64ecba462d2c626f92d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.fbb743fbadcb02ceed4c.js.map

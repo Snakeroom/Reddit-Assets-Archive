@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.77c18a631e150609c8d2.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.59fee40f5bec8e0b07ce.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1650,7 +1650,7 @@
 				M = Object(d.c)({
 					isCurrentUserProfilePost: v.l,
 					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== h.Nb.TOPIC),
-					shouldOpenPostInNewTab: y.gb
+					shouldOpenPostInNewTab: y.hb
 				}),
 				B = Object(i.b)(M);
 			t.c = Object(x.b)(B(e => {
@@ -1991,7 +1991,7 @@
 					hideNSFWPref: _.E,
 					flairStyleTemplate: ie.V,
 					isCurrentUserProfilePost: C.l,
-					isLoggedIn: _.N,
+					isLoggedIn: _.O,
 					isActive: C.j,
 					showPromotedCTA: ve.a,
 					moderatorPermissions: S.l,
@@ -2571,7 +2571,7 @@
 					J = V && Object(P.h)(V),
 					K = Object(i.e)(e => {
 						if (!J) return !0;
-						const t = Object(w.Bb)(e, B.author || "");
+						const t = Object(w.Cb)(e, B.author || "");
 						return !t || t.enableFollowers
 					});
 				return r.a.createElement("div", {
@@ -2726,4 +2726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.77c18a631e150609c8d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.59fee40f5bec8e0b07ce.js.map

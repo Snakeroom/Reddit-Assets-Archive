@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/8.a29e474e059efb2aa3a8.js
-// Retrieved at 2/16/2022, 7:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/8.aeeed673791505d5f25e.js
+// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[8], {
 		"./src/reddit/actions/pages/emailVerification.ts": function(e, t, i) {
 			"use strict";
 			i.r(t), i.d(t, "emailVerificationRequested", (function() {
-				return _
+				return O
 			}));
 			var r = i("./node_modules/react-router-redux/es/index.js"),
 				s = i("./src/reddit/actions/preferences.ts"),
@@ -15,16 +15,16 @@
 				d = i("./src/reddit/selectors/user.ts"),
 				o = i("./src/telemetry/index.ts"),
 				u = i("./src/reddit/actions/emailVerification.ts");
-			const _ = e => async (t, i) => {
+			const O = e => async (t, i) => {
 				await t(s.A());
-				const _ = i(),
-					l = e.params.verificationToken,
-					m = e.queryParams && e.queryParams.source;
-				if (m && Object(o.a)(Object(a.b)(m)(_)), !Object(d.N)(_)) return Object(c.a)(t, _);
-				const O = await t(Object(u.b)(l));
-				O === n.a.Success && Object(o.a)(Object(a.d)()(_)), t(Object(r.c)(`/?verifiedEmail=${O}`))
+				const O = i(),
+					_ = e.params.verificationToken,
+					l = e.queryParams && e.queryParams.source;
+				if (l && Object(o.a)(Object(a.b)(l)(O)), !Object(d.O)(O)) return Object(c.a)(t, O);
+				const m = await t(Object(u.b)(_));
+				m === n.a.Success && Object(o.a)(Object(a.d)()(O)), t(Object(r.c)(`/?verifiedEmail=${m}`))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/8.a29e474e059efb2aa3a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/8.aeeed673791505d5f25e.js.map
