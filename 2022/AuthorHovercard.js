@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.cac16fbc9a26baa6a4f4.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.cd364eb5bef310d3c356.js
+// Retrieved at 2/22/2022, 4:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -2033,10 +2033,10 @@
 					}), r.a.createElement("div", {
 						className: oe.a.meta
 					}, r.a.createElement("span", null, p.fbt._({
-						"*": "{upvotesCount} Upvotes",
-						_1: "{upvotesCount} Upvote"
-					}, [p.fbt._param("upvotesCount", Object(re.b)(u)), p.fbt._plural(u)], {
-						hk: "125pIW"
+						"*": "{pointsCount} Points",
+						_1: "{pointsCount} Point"
+					}, [p.fbt._param("pointsCount", Object(re.b)(u)), p.fbt._plural(u)], {
+						hk: "47CFCp"
 					})), !!b && r.a.createElement(r.a.Fragment, null, " · ", r.a.createElement("span", null, p.fbt._({
 						"*": "{Comment} Comments",
 						_1: "1 Comment"
@@ -4278,4 +4278,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.cac16fbc9a26baa6a4f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.cd364eb5bef310d3c356.js.map
