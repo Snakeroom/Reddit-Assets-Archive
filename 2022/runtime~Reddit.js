@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.4912e8bf67b2753c27bf.js
-// Retrieved at 2/22/2022, 4:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.e714df6f4ffcd2b4e21f.js
+// Retrieved at 2/22/2022, 5:00:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) d = r[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
@@ -613,7 +613,7 @@
 					1: "31d6cfe0d16ae931b73c",
 					2: "31d6cfe0d16ae931b73c",
 					3: "408b59b40c622d6cf9f4",
-					4: "e89c1d3ab39128b6bc92",
+					4: "6886b2994b242e7dea3f",
 					5: "6697ae0c086ca781aca0",
 					6: "31d6cfe0d16ae931b73c",
 					7: "31d6cfe0d16ae931b73c",
@@ -1276,10 +1276,10 @@
 						ModStatsChart: "ModStatsChart"
 					} [e] || e) + "." + {
 						0: "40ec380087742c4c32ca",
-						1: "2aeeda70128e0cdf42c3",
-						2: "15269ca19a32727b82af",
+						1: "e15f77b99750d7d97d77",
+						2: "15fc714bc1e30fc8d862",
 						3: "040ed991bf2b0942dc3a",
-						4: "1c25e9a2583e5c933e17",
+						4: "1f585312c407c7d22d26",
 						5: "1b5096937cf822101d66",
 						6: "f7c8fc190664e87d717e",
 						7: "20b6d1402622947a9599",
@@ -1663,4 +1663,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.4912e8bf67b2753c27bf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.e714df6f4ffcd2b4e21f.js.map
