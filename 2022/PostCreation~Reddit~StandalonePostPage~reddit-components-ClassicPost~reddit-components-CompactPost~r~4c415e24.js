@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.3a0e98ca2329935ab3eb.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.ab01f1c7c5a00e060904.js
+// Retrieved at 2/22/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1332,6 +1332,7 @@
 				crosspostIcon: "_3hh-iGjzOv78L_7t_PUHev",
 				userIcon: "_1ra0Iw9wwPoS0QhWWssr-u",
 				link: "eQgJJIfdY4JNXam_N622j",
+				isDeleted: "_1pHpG_nGDGKayS5oFfQGDX",
 				publicWallet: "SxdIdV2SgMWcIFG6Qsk0Q",
 				authorLink: "_2tbHP6ZydRpjI44J3syuqC",
 				isActionFont: "_1qzCGTSJOhg8noWqRayhmN",
@@ -1431,16 +1432,16 @@
 				})),
 				V = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
 				K = r("./src/reddit/helpers/styles/smartTextColor.ts"),
-				J = r("./src/reddit/hooks/useClickSourceData.ts"),
-				Q = r("./src/reddit/icons/fonts/helpers.tsx"),
+				Q = r("./src/reddit/hooks/useClickSourceData.ts"),
+				J = r("./src/reddit/icons/fonts/helpers.tsx"),
 				Y = r("./src/reddit/icons/fonts/commonStyles.m.less"),
 				X = r.n(Y);
 			var $ = e => o.a.createElement("i", {
-					className: Object(i.a)(Object(Q.b)("admin", e.isFilled), X.a.adminIcon, e.className),
+					className: Object(i.a)(Object(J.b)("admin", e.isFilled), X.a.adminIcon, e.className),
 					id: e.id,
 					onMouseEnter: e.onMouseEnter,
 					onMouseLeave: e.onMouseLeave
-				}, o.a.createElement(Q.a, null, e.desc)),
+				}, o.a.createElement(J.a, null, e.desc)),
 				Z = (r("./src/reddit/icons/fonts/Premium/index.tsx"), r("./src/reddit/components/UserIcon/index.tsx")),
 				ee = r("./src/reddit/constants/postLayout.ts"),
 				te = r("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -1482,10 +1483,12 @@
 					return o.a.createElement(y.a, {
 						author: e.post.author,
 						className: Object(i.a)(be.a.authorLink, {
-							[be.a.isActionFont]: e.showActionFont
+							[be.a.isActionFont]: e.showActionFont,
+							[be.a.isDeleted]: e.isDeleted
 						}),
 						"data-click-id": "user",
 						forceOpenInNewTab: e.forceOpenInNewTab,
+						isAuthorDeleted: e.isDeleted,
 						isUnstyled: !0,
 						linkProps: {
 							"data-testid": "post_author_link"
@@ -1534,7 +1537,7 @@
 						showTimestamp: G = !0,
 						subredditOrProfile: q,
 						tooltipType: W
-					} = e, V = Object(s.d)(), K = Object(g.a)(), Q = Object(s.e)(ie.a), Y = Object(s.e)(ue.d), X = Object(s.e)(ue.g) || ["popular", "all"].includes(Y || ""), $ = Object(s.e)(de.b), ne = C.isSponsored || Object(a.u)(w), pe = !(!ne || !Q || Object(b.vf)(Q));
+					} = e, V = Object(s.d)(), K = Object(g.a)(), J = Object(s.e)(ie.a), Y = Object(s.e)(ue.d), X = Object(s.e)(ue.g) || ["popular", "all"].includes(Y || ""), $ = Object(s.e)(de.b), ne = C.isSponsored || Object(a.u)(w), pe = !(!ne || !J || Object(b.vf)(J));
 					Object(n.useEffect)(() => {
 						pe && V(Object(p.d)(C.author))
 					}, []);
@@ -1543,7 +1546,7 @@
 							post: C
 						}), [C]),
 						_e = Object(s.e)(ye),
-						we = Object(J.a)(),
+						we = Object(Q.a)(),
 						Ce = Object(n.useCallback)(e => Object(me.a)(e, {
 							subredditId: ve
 						}), [ve]),
@@ -1666,7 +1669,7 @@
 						}))), fe._param("author", ze)], {
 							hk: "3BfJwk"
 						})),
-						Je = () => Fe || pe ? Fe ? Ke : ze : Ve;
+						Qe = () => Fe || pe ? Fe ? Ke : ze : Ve;
 					return o.a.createElement("div", {
 						className: Object(i.a)(be.a.container, t)
 					}, U && q && o.a.createElement(M.a, {
@@ -1685,10 +1688,10 @@
 						userName: q.name,
 						className: be.a.userIcon,
 						omitResponsivePresenceWrapper: !0
-					}), Je(), ne && o.a.createElement(o.a.Fragment, null, o.a.createElement(Re, null), o.a.createElement(H.a, {
-						adHeaderVariant: Q,
+					}), Qe(), ne && o.a.createElement(o.a.Fragment, null, o.a.createElement(Re, null), o.a.createElement(H.a, {
+						adHeaderVariant: J,
 						greyTextColor: ge(e)
-					}))) : o.a.createElement(o.a.Fragment, null, ne && o.a.createElement(o.a.Fragment, null, o.a.createElement(H.a, null), o.a.createElement(Re, null)), Je()), o.a.createElement(F.e, null), G && !pe && o.a.createElement(o.a.Fragment, null, o.a.createElement("a", {
+					}))) : o.a.createElement(o.a.Fragment, null, ne && o.a.createElement(o.a.Fragment, null, o.a.createElement(H.a, null), o.a.createElement(Re, null)), Qe()), o.a.createElement(F.e, null), G && !pe && o.a.createElement(o.a.Fragment, null, o.a.createElement("a", {
 						className: be.a.externalLink,
 						"data-testid": "post_timestamp",
 						"data-click-id": "timestamp",
@@ -3613,4 +3616,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.3a0e98ca2329935ab3eb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.ab01f1c7c5a00e060904.js.map
