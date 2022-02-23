@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f86dac752ab6d6a532ca.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.96aea2c42131e4bbfe95.js
+// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/timeUntil/index.ts": function(e, t, n) {
@@ -782,7 +782,7 @@
 							isNsfw: u
 						} = o,
 						m = `tournament-facepile-face-${n}`;
-					return Object(be.a)(l) ? s.a.createElement(ue.a, {
+					return Object(be.b)(l) ? s.a.createElement(ue.a, {
 						key: m,
 						backgroundClassName: xe.a.snoovatarBackground,
 						className: Object(r.a)(xe.a.snoovatar, t),
@@ -1009,4 +1009,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.f86dac752ab6d6a532ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.96aea2c42131e4bbfe95.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.1bbd910c909e39cb4efd.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.92e1cbbc8da2b1c6378f.js
+// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -1472,7 +1472,7 @@
 				const {
 					id: t,
 					name: s
-				} = e, a = we(s), o = ke(a), i = o && Object(E.a)(a.accountIcon);
+				} = e, a = we(s), o = ke(a), i = o && Object(E.b)(a.accountIcon);
 				return r.a.createElement("div", {
 					className: Object(n.a)(W.a.subscribeToProfileAvatar, {
 						[W.a.snoovatarHeadshot]: i
@@ -1680,4 +1680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.1bbd910c909e39cb4efd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.92e1cbbc8da2b1c6378f.js.map

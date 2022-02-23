@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.b704daf5eed90da9e539.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.e6ef7ee298af37fe4dab.js
+// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages~ModerationPages"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, r) {
@@ -271,7 +271,7 @@
 		"./src/reddit/actions/modQueue/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "e", (function() {
-				return q
+				return Q
 			})), r.d(t, "d", (function() {
 				return F
 			})), r.d(t, "f", (function() {
@@ -325,8 +325,8 @@
 				D = Object(n.a)(k.o),
 				T = Object(n.a)(k.w),
 				U = Object(n.a)(k.v),
-				Q = Object(n.a)(k.u),
-				q = (e, t, n) => async (o, c, {
+				q = Object(n.a)(k.u),
+				Q = (e, t, n) => async (o, c, {
 					apiContext: l,
 					gqlContext: m
 				}) => {
@@ -345,7 +345,7 @@
 							p = C, h = D, j = P;
 							break;
 						case a.rb.Unmoderated:
-							p = T, h = Q, j = U;
+							p = T, h = q, j = U;
 							break;
 						default:
 							throw new Error("Invalid modqueue requested")
@@ -356,8 +356,8 @@
 						if (function(e) {
 								return Object(y.c)(e, {
 									experimentEligibilitySelector: y.a,
-									experimentName: O.od
-								}) === O.bd
+									experimentName: O.qd
+								}) === O.dd
 							}(c())) {
 							const {
 								normalizeModQueueListingFromGql: e,
@@ -859,8 +859,8 @@
 				D = r("./src/lib/makeApiRequest/index.ts"),
 				T = r("./src/lib/omitHeaders/index.ts"),
 				U = r("./src/reddit/constants/headers.ts"),
-				Q = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const q = (e, t) => Object(D.a)(Object(T.a)(e, [U.a]), {
+				q = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const Q = (e, t) => Object(D.a)(Object(T.a)(e, [U.a]), {
 					endpoint: `${e.apiUrl}/api/v1/modactions/removal_reasons/`,
 					method: k.jb.POST,
 					type: "json",
@@ -871,7 +871,7 @@
 					}
 				}),
 				V = (e, t, r) => Object(D.a)(Object(T.a)(e, [U.a]), {
-					endpoint: Object(Q.a)(`${e.apiUrl}/api/v1/modactions/removal_${r}_message/`),
+					endpoint: Object(q.a)(`${e.apiUrl}/api/v1/modactions/removal_${r}_message/`),
 					method: k.jb.POST,
 					type: "json",
 					data: t
@@ -1003,7 +1003,7 @@
 							modNote: a,
 							reasonId: t ? t.id : null
 						},
-						f = await q(d(), b);
+						f = await Q(d(), b);
 					if (f.ok) {
 						if (n(Oe()), t) {
 							n(he());
@@ -1097,7 +1097,7 @@
 							modNote: n,
 							reasonId: t ? t.id : null
 						},
-						p = await q(c(), m);
+						p = await Q(c(), m);
 					if (p.ok) {
 						const s = {
 							ids: e,
@@ -1479,11 +1479,11 @@
 							return e
 					}
 				},
-				Q = Object(s.c)({
+				q = Object(s.c)({
 					error: T,
 					pending: U
 				});
-			var q = (e = null, t) => {
+			var Q = (e = null, t) => {
 					switch (t.type) {
 						case R.k: {
 							const {
@@ -1502,8 +1502,8 @@
 					}
 				},
 				V = Object(s.c)({
-					api: Q,
-					result: q
+					api: q,
+					result: Q
 				});
 			const B = {};
 			var F = (e = B, t) => {
@@ -2047,8 +2047,8 @@
 					api: Ce,
 					result: Te
 				});
-			const Qe = {};
-			var qe = (e = Qe, t) => {
+			const qe = {};
+			var Qe = (e = qe, t) => {
 				switch (t.type) {
 					case a.I:
 					case a.H: {
@@ -2105,7 +2105,7 @@
 					}
 				},
 				Fe = Object(s.c)({
-					error: qe,
+					error: Qe,
 					pending: Be
 				});
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
@@ -2572,8 +2572,8 @@
 					error: Dt,
 					pending: Tt
 				});
-			const Qt = {};
-			var qt = (e = Qt, t) => {
+			const qt = {};
+			var Qt = (e = qt, t) => {
 				switch (t.type) {
 					case Je.p: {
 						const {
@@ -2616,7 +2616,7 @@
 				},
 				Ft = Object(s.c)({
 					api: Ut,
-					itemOrder: qt,
+					itemOrder: Qt,
 					loadMore: Bt
 				});
 			var Kt = (e = null, t) => {
@@ -2971,4 +2971,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.b704daf5eed90da9e539.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.e6ef7ee298af37fe4dab.js.map

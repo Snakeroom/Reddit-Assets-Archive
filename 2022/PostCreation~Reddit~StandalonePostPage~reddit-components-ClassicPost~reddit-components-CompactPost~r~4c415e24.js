@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.ab01f1c7c5a00e060904.js
-// Retrieved at 2/22/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.1ae752a77c1d390a48c7.js
+// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -267,11 +267,15 @@
 					const {
 						clickSource: s,
 						share: l,
-						source: u
-					} = e, m = r();
-					s && Object(d.a)(Object(i.f)(s)(m)), Object(c.O)(m) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL, {
+						source: u,
+						activeTab: m,
+						activeDetails: p
+					} = e, b = r();
+					s && Object(d.a)(Object(i.f)(s)(b)), Object(c.O)(b) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL, {
 						share: l,
-						source: u
+						source: u,
+						activeTab: m,
+						activeDetails: p
 					})) : await t(Object(n.i)())
 				}
 			}
@@ -1537,7 +1541,7 @@
 						showTimestamp: G = !0,
 						subredditOrProfile: q,
 						tooltipType: W
-					} = e, V = Object(s.d)(), K = Object(g.a)(), J = Object(s.e)(ie.a), Y = Object(s.e)(ue.d), X = Object(s.e)(ue.g) || ["popular", "all"].includes(Y || ""), $ = Object(s.e)(de.b), ne = C.isSponsored || Object(a.u)(w), pe = !(!ne || !J || Object(b.vf)(J));
+					} = e, V = Object(s.d)(), K = Object(g.a)(), J = Object(s.e)(ie.a), Y = Object(s.e)(ue.d), X = Object(s.e)(ue.g) || ["popular", "all"].includes(Y || ""), $ = Object(s.e)(de.b), ne = C.isSponsored || Object(a.u)(w), pe = !(!ne || !J || Object(b.xf)(J));
 					Object(n.useEffect)(() => {
 						pe && V(Object(p.d)(C.author))
 					}, []);
@@ -3616,4 +3620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.ab01f1c7c5a00e060904.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.1ae752a77c1d390a48c7.js.map

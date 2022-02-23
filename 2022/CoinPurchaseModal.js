@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.743fadb3f52a7a4232d6.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.d73345d6842b14b66523.js
+// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -351,9 +351,9 @@
 					R = P("payment", E),
 					B = P("paymentRequestButton", E),
 					D = P("linkAuthentication", E),
-					G = P("shippingAddress", E),
-					F = P("afterpayClearpayMessage", E);
-				e.AfterpayClearpayMessageElement = F, e.AuBankAccountElement = x, e.CardCvcElement = N, e.CardElement = w, e.CardExpiryElement = _, e.CardNumberElement = k, e.Elements = y, e.ElementsConsumer = O, e.EpsBankElement = M, e.FpxBankElement = I, e.IbanElement = S, e.IdealBankElement = T, e.LinkAuthenticationElement = D, e.P24BankElement = A, e.PaymentElement = R, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = G, e.useElements = function() {
+					F = P("shippingAddress", E),
+					G = P("afterpayClearpayMessage", E);
+				e.AfterpayClearpayMessageElement = G, e.AuBankAccountElement = x, e.CardCvcElement = N, e.CardElement = w, e.CardExpiryElement = _, e.CardNumberElement = k, e.Elements = y, e.ElementsConsumer = O, e.EpsBankElement = M, e.FpxBankElement = I, e.IbanElement = S, e.IdealBankElement = T, e.LinkAuthenticationElement = D, e.P24BankElement = A, e.PaymentElement = R, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = F, e.useElements = function() {
 					return C("calls useElements()").elements
 				}, e.useStripe = function() {
 					return C("calls useStripe()").stripe
@@ -564,7 +564,7 @@
 			})), r.d(t, "a", (function() {
 				return B
 			})), r.d(t, "i", (function() {
-				return G
+				return F
 			})), r.d(t, "f", (function() {
 				return L
 			})), r.d(t, "j", (function() {
@@ -812,15 +812,15 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, D = Object(p.a)(f.S), G = e => async (t, r) => {
+				}, D = Object(p.a)(f.S), F = e => async (t, r) => {
 					t(D(e)), t(Object(C.m)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(O.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(O.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, F = Object(p.a)(f.W), L = ({
+				}, G = Object(p.a)(f.W), L = ({
 					user: e
 				}) => async t => {
-					await t(Object(C.o)(!0)), t(F({
+					await t(Object(C.o)(!0)), t(G({
 						user: e
 					}))
 				}, q = Object(p.a)(f.ab)
@@ -1799,7 +1799,7 @@
 				B = r.n(R);
 			const {
 				fbt: D
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), G = ({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), F = ({
 				award: e,
 				coinBalance: t,
 				gildThingId: r,
@@ -1867,7 +1867,7 @@
 					}
 				}))
 			};
-			var F = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
+			var G = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				L = r("./src/reddit/hooks/useLocale.ts"),
 				q = r("./src/reddit/icons/fonts/Coin/index.tsx");
 			const {
@@ -1901,7 +1901,7 @@
 				}), s.a.createElement("button", {
 					className: B.a.closeButton,
 					onClick: e.onCloseClick
-				}, s.a.createElement(F.b, {
+				}, s.a.createElement(G.b, {
 					className: B.a.closeIcon,
 					"data-redditstyle": !0
 				})))
@@ -1950,7 +1950,7 @@
 					}), s.a.createElement("button", {
 						className: B.a.closeButton,
 						onClick: e.onCloseClick
-					}, s.a.createElement(F.b, {
+					}, s.a.createElement(G.b, {
 						className: Object(b.a)(B.a.closeIcon, B.a.awardPurchase),
 						"data-redditstyle": !0
 					})))
@@ -2027,7 +2027,7 @@
 				}))), s.a.createElement(n.ElementsConsumer, null, ({
 					stripe: t,
 					elements: r
-				}) => s.a.createElement(G, {
+				}) => s.a.createElement(F, {
 					award: e.selectedAward,
 					coinBalance: e.coinBalance,
 					gildThingId: e.gildThingId,
@@ -2197,7 +2197,7 @@
 					...r,
 					onCompletePurchaseClick: (r, n, a) => t.dispatchCompletePurchase(r, n, a, !!e.gildThingId, e.isIframed)
 				}));
-			class G extends a.a.Component {
+			class F extends a.a.Component {
 				constructor(e) {
 					super(e), this.handleEscapeKey = e => {
 						const {
@@ -2286,7 +2286,7 @@
 					}))
 				}
 			}
-			const F = Object(c.a)(G);
+			const G = Object(c.a)(F);
 			t.default = D(Object(m.c)(class extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
@@ -2308,7 +2308,7 @@
 							paddingBottom: 12
 						} : {}
 					};
-					return a.a.createElement(F, R({}, this.props, {
+					return a.a.createElement(G, R({}, this.props, {
 						className: I.a.coinPurchaseModal,
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -3474,7 +3474,7 @@
 				m = r("./node_modules/react-redux/es/index.js"),
 				b = r("./src/reddit/constants/experiments.ts"),
 				f = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(f.a)(b.Dc);
+			const h = Object(f.a)(b.Fc);
 			let g = null;
 
 			function y() {
@@ -3636,4 +3636,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.743fadb3f52a7a4232d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.d73345d6842b14b66523.js.map

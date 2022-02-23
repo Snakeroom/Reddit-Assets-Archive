@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.6839d2c0657c39df19b0.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.f678b0a46b8c2c3a443f.js
+// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2296,7 +2296,7 @@
 					className: h.a.TrashIcon
 				}));
 				const C = e && e.id === u ? e.accountIcon : r ? l.a : null != s ? s : void 0;
-				return Object(m.a)(C) ? o.a.createElement("div", {
+				return Object(m.b)(C) ? o.a.createElement("div", {
 					className: t,
 					style: g
 				}, o.a.createElement(c.a, {
@@ -5188,13 +5188,13 @@
 						experimentEligibilitySelector: a.O,
 						experimentName: s.Bc
 					});
-					return !(!t || Object(s.vf)(t))
+					return !(!t || Object(s.xf)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a.O,
 						experimentName: s.Bc
-					}) === s.gd.ListingEnabled
+					}) === s.id.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
@@ -5371,4 +5371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.6839d2c0657c39df19b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.f678b0a46b8c2c3a443f.js.map

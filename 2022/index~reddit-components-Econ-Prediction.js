@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ea1ab118bcb41abc2e0b.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.1c43a094750c5f56d2d8.js
+// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./src/reddit/components/Econ/Prediction/PredictionCard/PredictionBody/PredictionQuestion/index.m.less": function(e, t, a) {
@@ -1547,7 +1547,7 @@
 					isPresenceUserPrefEnabled: c,
 					wrapperClassName: s,
 					...r
-				} = e, i = Object(l.a)(null == t ? void 0 : t.accountIcon);
+				} = e, i = Object(l.b)(null == t ? void 0 : t.accountIcon);
 				return o.a.createElement("div", {
 					className: Object(n.a)(f.a.currentUserIconWrapper, s)
 				}, i ? o.a.createElement(m.a, {
@@ -1993,4 +1993,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.ea1ab118bcb41abc2e0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.1c43a094750c5f56d2d8.js.map
