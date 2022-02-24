@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a70fed351234614ba5c6.js
-// Retrieved at 2/24/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b70f3ad570877f70982b.js
+// Retrieved at 2/24/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("158845"),
+				buildNumber: Object(r.c)("158849"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1645718652"),
+				buildTimestamp: Object(r.b)("1645720208"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6066,14 +6066,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c034f4e7ee2b2a184e307259f4df7a0f5f732caff-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c175946a0484ca87f50bf9b0d4fd34216d2e80350-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "034f4e7ee2b2a184e307259f4df7a0f5f732caff-production",
+						release: "175946a0484ca87f50bf9b0d4fd34216d2e80350-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6590,7 +6590,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "034f4e7ee2b2a184e307259f4df7a0f5f732caff-production",
+						releaseClient: "175946a0484ca87f50bf9b0d4fd34216d2e80350-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -27211,10 +27211,12 @@
 				return r
 			})), i.d(t, "c", (function() {
 				return d
-			})), i.d(t, "a", (function() {
-				return u
 			})), i.d(t, "d", (function() {
+				return a
+			})), i.d(t, "a", (function() {
 				return c
+			})), i.d(t, "e", (function() {
+				return _
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./src/config.ts");
@@ -27226,49 +27228,51 @@
 				o = /(?:\/|-)nftv2(?:-|_)([a-z0-9]+)(?:-|_)([a-z]+)(?:-|_)([a-z0-9-]{36})(?:-headshot)?\.(?:png|svg)/i;
 
 			function d(e) {
-				return function(e) {
-					return !!e && s.test(e)
-				}(e) || a(e)
+				return a(e) || l(e)
 			}
 
 			function a(e) {
+				return !!e && s.test(e)
+			}
+
+			function l(e) {
 				return !!e && o.test(e)
 			}
-			var l;
+			var u;
 
-			function u(e) {
-				switch (_(e)) {
-					case l.RARE:
+			function c(e) {
+				switch (m(e)) {
+					case u.RARE:
 						return `${n.a.assetPath}/img/snoovatars/comment-animations/rare-rarity.json`;
-					case l.LEGEND:
+					case u.LEGEND:
 						return `${n.a.assetPath}/img/snoovatars/comment-animations/legendary-rarity.json`;
-					case l.EPIC:
+					case u.EPIC:
 						return `${n.a.assetPath}/img/snoovatars/comment-animations/epic-rarity.json`;
-					case l.TEST:
+					case u.TEST:
 						return `${n.a.assetPath}/img/snoovatars/comment-animations/test-rarity.json`;
 					default:
 						return `${n.a.assetPath}/img/snoovatars/comment-animations/nft_comment_animation.json`
 				}
 			}
 
-			function c(e) {
-				switch (_(e)) {
-					case l.RARE:
-					case l.LEGEND:
-					case l.EPIC:
-					case l.TEST:
+			function _(e) {
+				switch (m(e)) {
+					case u.RARE:
+					case u.LEGEND:
+					case u.EPIC:
+					case u.TEST:
 						return !0;
 					default:
 						return !1
 				}
 			}
 
-			function _(e) {
-				if (!e || !a(e)) return null;
-				return Object.values(l).find(t => e.toUpperCase().includes(`_${t}_`)) || null
+			function m(e) {
+				if (!e || !l(e)) return null;
+				return Object.values(u).find(t => e.toUpperCase().includes(`_${t}_`)) || null
 			}! function(e) {
 				e.RARE = "RARE", e.LEGEND = "LEGEND", e.EPIC = "EPIC", e.TEST = "TEST"
-			}(l || (l = {}))
+			}(u || (u = {}))
 		},
 		"./src/reddit/helpers/widgets/index.tsx": function(e, t, i) {
 			"use strict";
@@ -47886,4 +47890,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a70fed351234614ba5c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b70f3ad570877f70982b.js.map
