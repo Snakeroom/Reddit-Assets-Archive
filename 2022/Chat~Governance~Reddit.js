@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4105819fca75072aef3d.js
-// Retrieved at 2/24/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2bcf660ed8c258013788.js
+// Retrieved at 2/24/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("158858"),
+				buildNumber: Object(r.c)("158859"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1645727304"),
+				buildTimestamp: Object(r.b)("1645728685"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6066,14 +6066,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c4da7e5070af7fc1c6b99a31d4ede5524c0894b05-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c4b37e3c80f10ddd862b08245b8057b45c4c27b50-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "4da7e5070af7fc1c6b99a31d4ede5524c0894b05-production",
+						release: "4b37e3c80f10ddd862b08245b8057b45c4c27b50-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6590,7 +6590,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "4da7e5070af7fc1c6b99a31d4ede5524c0894b05-production",
+						releaseClient: "4b37e3c80f10ddd862b08245b8057b45c4c27b50-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -19054,7 +19054,7 @@
 		"./src/reddit/endpoints/page/search/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return x
+				return D
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/lib/makeGqlRequest/index.ts"),
@@ -19106,7 +19106,7 @@
 				N = e => !u()(e);
 
 			function C(e, t) {
-				var i, r, s, o, d, a, l, u, v, R, F, C, j, A, x, D, P, k, L, B, M, U, G, q, V, H, W, z, K, Y, $, Q, J, X, Z, ee, te, ie, ne, re, se, oe, de, ae, le, ue, ce, _e, me, pe;
+				var i, r, s, o, d, a, l, u, v, R, F, C, A, x, D, P, k, L, B, M, U, G, q, V, H, W, z, K, Y, $, Q, J, X, Z, ee, te, ie, ne, re, se, oe, de, ae, le, ue, ce, _e, me, pe;
 				let he, fe = {},
 					be = {},
 					ge = [],
@@ -19143,10 +19143,10 @@
 				if (N(t)) {
 					const N = null !== (d = null === (o = null === (s = null === (r = null === (i = t.data) || void 0 === i ? void 0 : i.search) || void 0 === r ? void 0 : r.general) || void 0 === s ? void 0 : s.posts) || void 0 === o ? void 0 : o.edges) && void 0 !== d ? d : [],
 						Be = null !== (R = null === (v = null === (u = null === (l = null === (a = t.data) || void 0 === a ? void 0 : a.search) || void 0 === l ? void 0 : l.general) || void 0 === u ? void 0 : u.communities) || void 0 === v ? void 0 : v.edges) && void 0 !== R ? R : [],
-						Me = null !== (x = null === (A = null === (j = null === (C = null === (F = t.data) || void 0 === F ? void 0 : F.search) || void 0 === C ? void 0 : C.general) || void 0 === j ? void 0 : j.authors) || void 0 === A ? void 0 : A.edges) && void 0 !== x ? x : [],
-						Ue = null !== (B = null === (L = null === (k = null === (P = null === (D = t.data) || void 0 === D ? void 0 : D.search) || void 0 === P ? void 0 : P.general) || void 0 === k ? void 0 : k.comments) || void 0 === L ? void 0 : L.edges) && void 0 !== B ? B : [],
-						Ge = null === (q = null === (G = null === (U = null === (M = t.data.search) || void 0 === M ? void 0 : M.general) || void 0 === U ? void 0 : U.posts) || void 0 === G ? void 0 : G.feedMetadata) || void 0 === q ? void 0 : q.treatment,
-						qe = null !== (H = null === (V = t.data) || void 0 === V ? void 0 : V.subredditsInfoByNames) && void 0 !== H ? H : [];
+						Me = null !== (D = null === (x = null === (A = null === (C = null === (F = t.data) || void 0 === F ? void 0 : F.search) || void 0 === C ? void 0 : C.general) || void 0 === A ? void 0 : A.authors) || void 0 === x ? void 0 : x.edges) && void 0 !== D ? D : [],
+						Ue = null !== (M = null === (B = null === (L = null === (k = null === (P = t.data) || void 0 === P ? void 0 : P.search) || void 0 === k ? void 0 : k.general) || void 0 === L ? void 0 : L.comments) || void 0 === B ? void 0 : B.edges) && void 0 !== M ? M : [],
+						Ge = null === (V = null === (q = null === (G = null === (U = t.data.search) || void 0 === U ? void 0 : U.general) || void 0 === G ? void 0 : G.posts) || void 0 === q ? void 0 : q.feedMetadata) || void 0 === V ? void 0 : V.treatment,
+						qe = null !== (W = null === (H = t.data) || void 0 === H ? void 0 : H.subredditsInfoByNames) && void 0 !== W ? W : [];
 					[De, he] = function(e) {
 						var t;
 						let i, n = {};
@@ -19229,11 +19229,11 @@
 									e && (r[e.id] = Object(m.f)(e), (null == e ? void 0 : e.__typename) === y.a.SubredditPost && (o[e.subreddit.id] = Object(b.a)(e.subreddit), s[e.subreddit.id] = Object(_.a)(e.subreddit)))
 								} return [n, i, r, o, s]
 					}(Ue), xe = {
-						authors: null !== (Y = null === (K = null === (z = null === (W = t.data.search) || void 0 === W ? void 0 : W.general) || void 0 === z ? void 0 : z.authors) || void 0 === K ? void 0 : K.pageInfo.endCursor) && void 0 !== Y ? Y : null,
-						comments: null !== (X = null === (J = null === (Q = null === ($ = t.data.search) || void 0 === $ ? void 0 : $.general) || void 0 === Q ? void 0 : Q.comments) || void 0 === J ? void 0 : J.pageInfo.endCursor) && void 0 !== X ? X : null,
-						communities: null !== (ie = null === (te = null === (ee = null === (Z = t.data.search) || void 0 === Z ? void 0 : Z.general) || void 0 === ee ? void 0 : ee.communities) || void 0 === te ? void 0 : te.pageInfo.endCursor) && void 0 !== ie ? ie : null,
-						listings: null,
-						posts: null !== (oe = null === (se = null === (re = null === (ne = t.data.search) || void 0 === ne ? void 0 : ne.general) || void 0 === re ? void 0 : re.posts) || void 0 === se ? void 0 : se.pageInfo.endCursor) && void 0 !== oe ? oe : null
+						authors: null !== ($ = null === (Y = null === (K = null === (z = t.data.search) || void 0 === z ? void 0 : z.general) || void 0 === K ? void 0 : K.authors) || void 0 === Y ? void 0 : Y.pageInfo.endCursor) && void 0 !== $ ? $ : null,
+						comments: null !== (Z = null === (X = null === (J = null === (Q = t.data.search) || void 0 === Q ? void 0 : Q.general) || void 0 === J ? void 0 : J.comments) || void 0 === X ? void 0 : X.pageInfo.endCursor) && void 0 !== Z ? Z : null,
+						communities: null !== (ne = null === (ie = null === (te = null === (ee = t.data.search) || void 0 === ee ? void 0 : ee.general) || void 0 === te ? void 0 : te.communities) || void 0 === ie ? void 0 : ie.pageInfo.endCursor) && void 0 !== ne ? ne : null,
+						posts: j(null === (oe = null === (se = null === (re = t.data.search) || void 0 === re ? void 0 : re.general) || void 0 === se ? void 0 : se.posts) || void 0 === oe ? void 0 : oe.pageInfo),
+						listings: null
 					}, ke = {
 						authors: e[n.bc.Users] ? null !== (null === (ae = null === (de = t.data.search) || void 0 === de ? void 0 : de.general) || void 0 === ae ? void 0 : ae.authors) : void 0,
 						comments: e[n.bc.Comments] ? null !== (null === (ue = null === (le = t.data.search) || void 0 === le ? void 0 : le.general) || void 0 === ue ? void 0 : ue.comments) : void 0,
@@ -19275,9 +19275,13 @@
 					viewTreatment: Pe
 				}
 			}
-			const j = 10,
-				A = 50;
-			async function x({
+
+			function j(e) {
+				return e && e.hasNextPage && e.endCursor || null
+			}
+			const A = 10,
+				x = 50;
+			async function D({
 				context: e,
 				isSerpRedesignLayoutM3: t,
 				multiredditLabel: i,
@@ -19335,21 +19339,21 @@
 						commentsAfter: m.comments,
 						searchInput: y,
 						...I && {
-							communityRows: j,
-							authorRows: A
+							communityRows: A,
+							authorRows: x
 						},
 						communitySearch: Boolean(_),
 						subredditNames: _
 					},
-					x = await Object(r.a)(e, {
+					j = await Object(r.a)(e, {
 						...d,
 						variables: N
 					}, {
 						traceRequestName: "general_search"
 					});
 				return {
-					...x,
-					body: C(v, x.body)
+					...j,
+					body: C(v, j.body)
 				}
 			}
 		},
@@ -39599,9 +39603,9 @@
 				},
 				P = e => e.search.isDropdownOpen,
 				k = e => e.search.isSubredditSearchEnabled,
-				L = (e, t) => !!g(e, t) || !b(e, t) && T(e, t).length > 0,
-				B = (e, t) => !!v(e, t) || !w(e, t) && O(e, t).length > 0,
-				M = (e, t) => !!E(e, t) || !y(e, t) && I(e, t).length > 0,
+				L = (e, t) => !!g(e, t) || T(e, t).length > 0,
+				B = (e, t) => !!v(e, t) || O(e, t).length > 0,
+				M = (e, t) => !!E(e, t) || I(e, t).length > 0,
 				U = (e, t) => !!((e, {
 					listingKey: t
 				}) => e.listings.postOrder.api.pending[t])(e, t) || Object(p.N)(e, t).length > 0,
@@ -47890,4 +47894,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.4105819fca75072aef3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2bcf660ed8c258013788.js.map
