@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.1c1c2ab6029f946d579b.js
-// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.d5c6ed8a71f21233c4c8.js
+// Retrieved at 2/24/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~Comment~CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2412,7 +2412,7 @@
 							Ne && S && !ve && Q && Q(l.id)
 						}, [l.id, Q, Ne, S, ve]),
 						De = Object(st.a)(l),
-						Re = !!oe && Object(wt.c)(l.profileImage);
+						Re = !(!Object(wt.d)(l.profileImage) && !oe) && Object(wt.c)(l.profileImage);
 					return r.a.createElement("div", {
 						key: `comment-${l.id}`,
 						className: Object(c.a)(`Comment ${l.id}`, _t.a.CommentWrapper, {
@@ -2456,7 +2456,7 @@
 					}), r.a.createElement(tt.a, {
 						isNft: Re,
 						className: Object(c.a)(_t.a.UserIcon, {
-							[_t.a.UserIconNft]: Re && !Object(wt.d)(l.profileImage)
+							[_t.a.UserIconNft]: Re && !Object(wt.e)(l.profileImage)
 						}),
 						iconUrl: l.profileImage,
 						isNSFW: l.profileOver18 || !1,
@@ -3102,4 +3102,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.1c1c2ab6029f946d579b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.d5c6ed8a71f21233c4c8.js.map
