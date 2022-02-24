@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.32901014c6e27bbf7226.js
-// Retrieved at 2/24/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.ec0a44ec2fac48d7676e.js
+// Retrieved at 2/24/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1601,8 +1601,8 @@
 						}
 					}, []);
 					const A = Object(s.d)(),
-						M = Object(a.useCallback)(async e => {
-							e.stopPropagation(), await A(Object(p.a)(o, i, v, n, m, b ? d : void 0)), u(void 0), g("")
+						M = Object(a.useCallback)(e => {
+							e.stopPropagation(), A(Object(p.a)(o, i, v, n, m, b ? d : void 0)), u(void 0), g("")
 						}, [A, o, v, i, m, b, d, n]),
 						T = Object(a.useCallback)(e => {
 							e.stopPropagation(), e.keyCode !== I.a.Enter || e.shiftKey || (e.preventDefault(), M(e))
@@ -4286,4 +4286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.32901014c6e27bbf7226.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.ec0a44ec2fac48d7676e.js.map
