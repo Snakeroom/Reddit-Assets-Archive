@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.e7161a4afd44a7960a9f.js
-// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.6f0de5beda7bf250c546.js
+// Retrieved at 2/24/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1705,7 +1705,7 @@
 					}, this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
 				}
 				autoplayPref(e = this.props) {
-					return e.autoplayPref || e.isOverlay || e.isExpando || !!e.shouldIgnoreAutoplayPref
+					return e.autoplayPref || e.isExpando || !!e.shouldIgnoreAutoplayPref
 				}
 				shouldAutoplay(e = this.props) {
 					return !!e.autoPlay && this.autoplayPref(e)
@@ -5005,4 +5005,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.e7161a4afd44a7960a9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.6f0de5beda7bf250c546.js.map
