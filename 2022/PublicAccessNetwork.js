@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.f684f74cb75f57ef0df4.js
-// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c64b928bd6f361e65d84.js
+// Retrieved at 2/24/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./src/lib/focusVisible/index.js": function(e, t, s) {
@@ -421,7 +421,7 @@
 				h = s("./src/reddit/endpoints/profile/info.ts"),
 				v = s("./src/reddit/models/Post/index.ts"),
 				g = s("./src/lib/constants/index.ts"),
-				f = s("./src/lib/pageTitle.ts"),
+				f = s("./src/lib/pageTitle/index.ts"),
 				S = s("./src/reddit/actions/economics/helpers/async.ts"),
 				O = s("./src/reddit/actions/externalAccount.ts"),
 				w = s("./src/reddit/actions/modQueueTriggers/index.ts"),
@@ -1194,7 +1194,7 @@
 			s.r(t), s.d(t, "publicAccessNetworkRequested", (function() {
 				return i
 			}));
-			var o = s("./src/lib/pageTitle.ts"),
+			var o = s("./src/lib/pageTitle/index.ts"),
 				n = (s("./src/reddit/actions/pages/subreddit.ts"), s("./src/reddit/actions/platform.ts")),
 				r = (s("./src/reddit/actions/publicAccessNetwork/streams.ts"), s("./src/reddit/actions/users.ts")),
 				a = s("./src/reddit/selectors/user.ts");
@@ -7252,4 +7252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.f684f74cb75f57ef0df4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c64b928bd6f361e65d84.js.map

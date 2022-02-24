@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.8c691fa77bd64562bc2a.js
-// Retrieved at 2/23/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.2b94ba8b4cbb3955fcb7.js
+// Retrieved at 2/24/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1458,7 +1458,7 @@
 				r = n("./src/lib/constants/index.ts"),
 				o = n("./src/lib/extractQueryParams/index.ts"),
 				i = n("./src/lib/filterQueryParams/index.ts"),
-				l = n("./src/lib/pageTitle.ts"),
+				l = n("./src/lib/pageTitle/index.ts"),
 				c = n("./src/reddit/actions/chat/userSettings.ts"),
 				d = n("./src/reddit/actions/accountGender/index.ts"),
 				m = n("./src/reddit/endpoints/economics/paymentSystems.ts"),
@@ -12772,4 +12772,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.8c691fa77bd64562bc2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2b94ba8b4cbb3955fcb7.js.map

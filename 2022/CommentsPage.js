@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.3fc0ce344689559a6060.js
-// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.0638ae36c33b3a4360fa.js
+// Retrieved at 2/24/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -226,7 +226,7 @@
 				b = s("./src/reddit/endpoints/profile/info.ts"),
 				g = s("./src/reddit/models/Post/index.ts"),
 				x = s("./src/lib/constants/index.ts"),
-				C = s("./src/lib/pageTitle.ts"),
+				C = s("./src/lib/pageTitle/index.ts"),
 				f = s("./src/reddit/actions/economics/helpers/async.ts"),
 				O = s("./src/reddit/actions/externalAccount.ts"),
 				v = s("./src/reddit/actions/modQueueTriggers/index.ts"),
@@ -5833,4 +5833,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.3fc0ce344689559a6060.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.0638ae36c33b3a4360fa.js.map

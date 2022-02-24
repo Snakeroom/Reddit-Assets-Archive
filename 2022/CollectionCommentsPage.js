@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.382b533e6e1402368291.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f62fc2d7c1710c4d9ad5.js
+// Retrieved at 2/24/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage"], {
 		"./src/lib/makeCollectionCommentsPageKey/index.ts": function(t, e, s) {
@@ -30,7 +30,7 @@
 			var o = s("./src/lib/constants/index.ts"),
 				n = s("./src/lib/makeActionCreator/index.ts"),
 				c = s("./src/lib/makeCollectionCommentsPageKey/index.ts"),
-				r = s("./src/lib/pageTitle.ts"),
+				r = s("./src/lib/pageTitle/index.ts"),
 				d = s("./src/lib/truncateText/index.ts"),
 				i = s("./src/reddit/actions/ads/index.ts"),
 				a = s("./src/reddit/actions/economics/helpers/async.ts"),
@@ -46,15 +46,15 @@
 				y = s("./src/reddit/constants/postCollection.ts"),
 				P = s("./src/reddit/constants/posts.ts"),
 				I = s("./src/reddit/endpoints/governance/posts.ts"),
-				f = s("./src/config.ts"),
-				x = s("./src/lib/makeApiRequest/index.ts"),
+				x = s("./src/config.ts"),
+				f = s("./src/lib/makeApiRequest/index.ts"),
 				h = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
 
 			function _(t, e, s) {
-				const o = `${f.a.gatewayUrl}/desktopapi/v1/collection_postcomments`;
+				const o = `${x.a.gatewayUrl}/desktopapi/v1/collection_postcomments`;
 				return s ? Object(h.a)(`${o}/${t}/${e}/${s}`) : e ? Object(h.a)(`${o}/${t}/${e}`) : Object(h.a)(`${o}/${t}`)
 			}
-			var T = (t, e, s, n, c) => Object(x.a)(t, {
+			var T = (t, e, s, n, c) => Object(f.a)(t, {
 					data: c,
 					endpoint: _(e, s, n),
 					method: o.jb.GET
@@ -93,21 +93,21 @@
 						routePrefix: l
 					} = t.params, j = c ? Object(v.t)(c) : "", g = i && Object(L.h)(i), {
 						queryParams: I
-					} = t, f = s(), {
-						instanceId: x
+					} = t, x = s(), {
+						instanceId: f
 					} = I, h = {
 						id: n,
 						type: P.b[l]
 					}, _ = P.b[l] === P.a.PROFILE, {
 						hasSortParam: T,
 						sortToUse: k
-					} = Object(M.a)(f, j), w = ["context", "depth", "limit", C.f].reduce((t, e) => {
+					} = Object(M.a)(x, j), w = ["context", "depth", "limit", C.f].reduce((t, e) => {
 						const s = parseInt(I[e]);
 						return isNaN(s) || (t[e] = s), t
 					}, {
 						subredditName: a,
 						hasSortParam: T,
-						instanceId: x
+						instanceId: f
 					});
 					T && (w.sort = k), e(b.r(j)), await Promise.all([_ ? e(p.d(a)) : Promise.resolve(), e(Q(n, j, g, w))]);
 					const S = ((t, e) => {
@@ -131,7 +131,7 @@
 						});
 						if (!$.isSponsored)
 							if ($.belongsTo.type === P.a.SUBREDDIT) {
-								!!Object(U.R)(f, {
+								!!Object(U.R)(x, {
 									subredditId: $.belongsTo.id
 								}) || await e(O.o(o.name))
 							} else await e(p.d(o.name));
@@ -176,8 +176,8 @@
 					});
 					const {
 						subredditName: C
-					} = o, y = O.pages.comments.keyToHeadCommentId.hasOwnProperty(u), P = O.pages.comments.api.fullyLoaded[u], f = O.pages.comments.api.error[u];
-					if (O.pages.comments.api.pending[u] || y && !f) {
+					} = o, y = O.pages.comments.keyToHeadCommentId.hasOwnProperty(u), P = O.pages.comments.api.fullyLoaded[u], x = O.pages.comments.api.error[u];
+					if (O.pages.comments.api.pending[u] || y && !x) {
 						if (y && !O.sidebarPromotedPosts.firstFetch) {
 							const t = Object(R.i)(O) ? $.a.COMMENTS_OVERLAY : $.a.COMMENTS;
 							window.addEventListener("load", () => {
@@ -186,11 +186,11 @@
 						}
 						return void(P || n || r(Y(t, e, s, o)))
 					}
-					const x = O.user.prefs.commentMode;
+					const f = O.user.prefs.commentMode;
 					r(B({
 						key: u,
 						collectionId: t,
-						commentMode: x,
+						commentMode: f,
 						postId: e
 					}));
 					const h = {
@@ -217,7 +217,7 @@
 							postId: e
 						}) : null;
 						n && E.body.comments && Object.keys(E.body.comments).length < n.numComments ? r(Y(t, e, s, o)) : E.ok && r(J({
-							commentMode: x,
+							commentMode: f,
 							key: u,
 							postId: e
 						}));
@@ -228,7 +228,7 @@
 						if (!e) return;
 						const t = Object(w.a)(E.body, e, O);
 						r(Object(K.commentsPageLoaded)({
-							commentMode: x,
+							commentMode: f,
 							key: u,
 							postId: e,
 							meta: O.meta,
@@ -284,7 +284,7 @@
 					return t
 				}).apply(this, arguments)
 			}
-			const f = Object(a.b)(() => Object(P.c)({
+			const x = Object(a.b)(() => Object(P.c)({
 				primaryPostId: y.p
 			}))(t => {
 				const e = t.postId || t.primaryPostId;
@@ -309,10 +309,10 @@
 					y = p ? Object(j.t)(p) : void 0,
 					P = a && Object(O.h)(a),
 					I = n()([...Object(l.a)(t.location.search)]),
-					x = {};
-				t.hasSortParam && (x.sort = t.sort, x.hasSortParam = !0);
-				const h = Object(m.a)(C, y, P, x);
-				return i.a.createElement(f, {
+					f = {};
+				t.hasSortParam && (f.sort = t.sort, f.hasSortParam = !0);
+				const h = Object(m.a)(C, y, P, f);
+				return i.a.createElement(x, {
 					closeLocation: o,
 					collectionId: C,
 					commentId: P,
@@ -330,4 +330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.382b533e6e1402368291.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.f62fc2d7c1710c4d9ad5.js.map

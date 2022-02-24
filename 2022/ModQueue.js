@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.1adc439faca3bb4165d2.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.e22ba24d681fd62c4ea4.js
+// Retrieved at 2/24/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/pages/modQueue/index.ts": function(e, t, r) {
@@ -10,9 +10,9 @@
 			var s = r("./node_modules/lodash/get.js"),
 				d = r.n(s),
 				i = r("./src/lib/constants/index.ts"),
-				o = r("./src/lib/pageTitle.ts"),
-				u = r("./src/reddit/helpers/makeModQueueListingKey/index.ts"),
-				n = r("./src/reddit/helpers/pageActionLoginRedirect.ts"),
+				o = r("./src/lib/pageTitle/index.ts"),
+				n = r("./src/reddit/helpers/makeModQueueListingKey/index.ts"),
+				u = r("./src/reddit/helpers/pageActionLoginRedirect.ts"),
 				a = r("./src/reddit/helpers/trackers/screenview.ts"),
 				c = r("./src/reddit/actions/modQueue/index.ts"),
 				p = r("./src/reddit/actions/platform.ts"),
@@ -34,7 +34,7 @@
 					subreddit: f
 				} = g, j = r();
 				if (!b) return;
-				const A = Object(u.a)({
+				const A = Object(n.a)({
 						onlyOfType: g.only,
 						profile: g.profile,
 						subreddit: g.subreddit
@@ -45,7 +45,7 @@
 				if (j.pages.modHub.modQueue[b].api.pending || Q && !L) return;
 				Object(l.p)(j) || await Object(c.e)(A, b, g)(t, r, s);
 				const y = r();
-				if (d()(y.pages.modHub.modQueue[b].api.error, "type") === i.I.AUTHENTICATION_ERROR) return Object(n.a)(t, y);
+				if (d()(y.pages.modHub.modQueue[b].api.error, "type") === i.I.AUTHENTICATION_ERROR) return Object(u.a)(t, y);
 				Object(a.j)(y, f, _), t(p.m({
 					title: Object(o.f)()
 				}))
@@ -53,4 +53,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.1adc439faca3bb4165d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.e22ba24d681fd62c4ea4.js.map

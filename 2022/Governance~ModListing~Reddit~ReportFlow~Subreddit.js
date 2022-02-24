@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.dcf48a2d653c091ceb4d.js
-// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.b858b217a7a114a9a7eb.js
+// Retrieved at 2/24/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -2653,7 +2653,7 @@
 				i = r("./src/lib/isFakeSubreddit/index.ts"),
 				o = r("./src/lib/makeActionCreator/index.ts"),
 				d = r("./src/lib/makePostCreationPageKey/index.ts"),
-				c = r("./src/lib/pageTitle.ts"),
+				c = r("./src/lib/pageTitle/index.ts"),
 				a = r("./src/reddit/actions/contentControls/index.ts"),
 				u = r("./src/reddit/actions/economics/helpers/async.ts"),
 				l = r("./src/reddit/actions/externalAccount.ts"),
@@ -13339,4 +13339,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.dcf48a2d653c091ceb4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.b858b217a7a114a9a7eb.js.map
