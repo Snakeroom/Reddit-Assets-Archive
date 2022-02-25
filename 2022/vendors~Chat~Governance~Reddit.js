@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.5a3e907f828ca7aabf8e.js
-// Retrieved at 2/24/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.4efc280102d3fc81f04c.js
+// Retrieved at 2/24/2022, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -473,7 +473,7 @@
 		"./node_modules/@reddit/reddit-country-url-redirects/dist/esm/index.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return D
+				return F
 			})), n.d(t, "b", (function() {
 				return I
 			})), n.d(t, "c", (function() {
@@ -687,7 +687,11 @@
 				},
 				L = (e, t, n) => B(e, m.All, t, n),
 				U = (e, t, n) => B(e, m.Popular, t, n);
-			const D = (e, t) => {
+			var D;
+			! function(e) {
+				e.hot = "hot", e.new = "new", e.top = "top", e.controversial = "controversial", e.rising = "rising", e.best = "best"
+			}(D || (D = {}));
+			const F = (e, t) => {
 					const n = (t = N(t)).countrySitesAdminOnly && t.userIsAdmin;
 					if (!t.countrySitesEnabled) return e.hardcodedPath;
 					if (!e.permalink && !t.userIsAdmin) return e.hardcodedPath;
@@ -695,9 +699,9 @@
 					if (e.permalink && (r = e.permalink), !R(e.countryCode, e.languageCode, t.enabledCountries)) return r;
 					if (!M(e.languageCode, t.enabledCountries)) return r;
 					const o = e.subredditName && P(e.subredditName);
-					return n && !o ? r : t.userIsAdmin ? F(r, e.countryCode, e.languageCode) : r
+					return n && !o ? r : t.userIsAdmin ? z(r, e.countryCode, e.languageCode) : r
 				},
-				F = (e, t, n) => {
+				z = (e, t, n) => {
 					const r = `/${t}/${n}`,
 						o = `/${t}`,
 						i = e.startsWith(o),
@@ -35144,4 +35148,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.5a3e907f828ca7aabf8e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.4efc280102d3fc81f04c.js.map
