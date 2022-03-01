@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.4efc280102d3fc81f04c.js
-// Retrieved at 2/24/2022, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.1cc85abec6a05f5e27ca.js
+// Retrieved at 3/1/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -17019,13 +17019,6 @@
 				s = n("./node_modules/lodash/isArray.js");
 			e.exports = function(e, t) {
 				return (s(e) ? r : o)(e, i(t))
-			}
-		},
-		"./node_modules/lodash/forOwn.js": function(e, t, n) {
-			var r = n("./node_modules/lodash/_baseForOwn.js"),
-				o = n("./node_modules/lodash/_castFunction.js");
-			e.exports = function(e, t) {
-				return e && r(e, o(t))
 			}
 		},
 		"./node_modules/lodash/fromPairs.js": function(e, t) {
@@ -35148,4 +35141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.4efc280102d3fc81f04c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.1cc85abec6a05f5e27ca.js.map

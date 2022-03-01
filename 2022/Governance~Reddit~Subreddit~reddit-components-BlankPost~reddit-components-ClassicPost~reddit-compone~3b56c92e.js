@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.16a9866c320d224d55b3.js
-// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.0b9dcf78e31f07d84d91.js
+// Retrieved at 3/1/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -383,9 +383,9 @@
 			})), r.d(t, "profilePostsPending", (function() {
 				return R
 			})), r.d(t, "profilePostsLoaded", (function() {
-				return M
-			})), r.d(t, "profilePostsFailed", (function() {
 				return N
+			})), r.d(t, "profilePostsFailed", (function() {
+				return M
 			})), r.d(t, "profilePostsRequested", (function() {
 				return k
 			})), r.d(t, "MORE_POSTS_PENDING", (function() {
@@ -445,8 +445,8 @@
 				I = "PAGE__PROFILE_POSTS_LOADED",
 				A = "PAGE__PROFILE_POSTS_FAILED",
 				R = Object(n.a)(x),
-				M = Object(n.a)(I),
-				N = Object(n.a)(A),
+				N = Object(n.a)(I),
+				M = Object(n.a)(A),
 				k = e => async (t, r, s) => {
 					const {
 						queryParams: n,
@@ -482,7 +482,7 @@
 						key: j
 					}));
 					const F = await Object(w.a)("profilePosts", () => E(s.apiContext(), _, k));
-					if (!F.ok) return t(N({
+					if (!F.ok) return t(M({
 						account: F.body.data ? F.body.data.account : null,
 						error: F.body.reason ? {
 							type: F.body.reason
@@ -492,7 +492,7 @@
 						profileName: _
 					})), void t(m.n(F.status));
 					const L = F.body;
-					t(M({
+					t(N({
 						key: j,
 						meta: r().meta,
 						...L
@@ -667,15 +667,15 @@
 								profileName: y
 							}).length >= i.cb) return void r(Object(o.i)(d.a.PINNED_POSTS_LIMIT_REACHED))
 					}
-					const M = Object(l.p)(p, e, y),
-						N = !f && M;
+					const N = Object(l.p)(p, e, y),
+						M = !f && N;
 					r(j({
 						postId: e,
 						profileId: v
 					})), (await Object(c.r)(m(), e, f, !0)).ok ? (r(T({
 						postId: e,
 						profileId: v
-					})), t || r(A(e, N))) : (r(I({
+					})), t || r(A(e, M))) : (r(I({
 						postId: e,
 						profileId: v
 					})), r(R()))
@@ -900,8 +900,8 @@
 				I = "POST_DRAFT__LIST_LOADED",
 				A = "POST_DRAFT__LIST_FAILED",
 				R = Object(n.a)(x),
-				M = Object(n.a)(I),
-				N = Object(n.a)(A),
+				N = Object(n.a)(I),
+				M = Object(n.a)(A),
 				k = () => async (e, t, {
 					apiContext: r
 				}) => {
@@ -912,7 +912,7 @@
 						endpoint: `${e.apiUrl}/api/v1/drafts.json`,
 						method: s.jb.GET
 					}))(r());
-					n.ok ? e(M(y(n.body))) : e(N(n.error))
+					n.ok ? e(N(y(n.body))) : e(M(n.error))
 				}, F = "POST_DRAFT__SAVE_DRAFT_PENDING", L = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", V = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(n.a)(F), W = Object(n.a)(L), $ = Object(n.a)(V), z = Object(n.a)(U), K = Object(n.a)(B), Q = Object(n.a)(G), X = Object(n.a)(q), Y = e => async (t, r, {
 					apiContext: n
 				}) => {
@@ -1761,8 +1761,8 @@
 				I = r("./src/reddit/actions/search.ts"),
 				A = r("./src/reddit/actions/structuredStyles/constants.ts"),
 				R = r("./src/reddit/actions/subreddit.ts"),
-				M = r("./src/reddit/actions/users.ts"),
-				N = r("./src/reddit/constants/postLayout.ts"),
+				N = r("./src/reddit/actions/users.ts"),
+				M = r("./src/reddit/constants/postLayout.ts"),
 				k = r("./src/reddit/constants/preferences.ts"),
 				F = r("./src/reddit/constants/theme.ts"),
 				L = r("./src/reddit/models/PostCreationForm/index.ts"),
@@ -1781,7 +1781,7 @@
 					commentMode: L.i.RICH_TEXT,
 					countryCode: "",
 					badCommentAutocollapse: u.m.OFF,
-					layout: N.d.Card,
+					layout: M.d.Card,
 					rememberCommunityLayout: !1,
 					defaultCommentSort: u.u.CONFIDENCE,
 					editorMode: L.i.RICH_TEXT,
@@ -2019,7 +2019,7 @@
 					case D.b:
 					case T.c:
 					case D.a:
-					case M.c:
+					case N.c:
 					case S.TOPIC_DATA_LOADED:
 						return t.payload && t.payload.preferences ? H(e, t.payload.preferences) : e;
 					case D.q: {
@@ -2100,7 +2100,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!r.m[t]
 					},
-					importAsync: () => Promise.all([r.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), r.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), r.e("vendors~PostCreation~Reddit~Subreddit"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57"), r.e("PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786"), r.e("PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"), r.e("PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3"), r.e("ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"), r.e("ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"), r.e("PostCreation")]).then(r.bind(null, "./src/reddit/pages/PostCreation/index.tsx")),
+					importAsync: () => Promise.all([r.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), r.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), r.e("vendors~PostCreation~Reddit~Subreddit"), r.e("vendors~PostCreation"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57"), r.e("PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786"), r.e("PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"), r.e("PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3"), r.e("ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"), r.e("PostCreation")]).then(r.bind(null, "./src/reddit/pages/PostCreation/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2119,7 +2119,7 @@
 				},
 				l = e => o.a.replace(/:profileName/, e),
 				b = {
-					action: Object(n.a)(() => Promise.all([r.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), r.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), r.e("vendors~PostCreation~Reddit~Subreddit"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57"), r.e("PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786"), r.e("PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"), r.e("PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3"), r.e("ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"), r.e("ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"), r.e("PostCreation")]).then(r.bind(null, "./src/reddit/actions/pages/postCreation.ts")).then(e => e.postCreationPageRequested)),
+					action: Object(n.a)(() => Promise.all([r.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), r.e("vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0"), r.e("vendors~PostCreation~Reddit~Subreddit"), r.e("vendors~PostCreation"), r.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~d39c0d57"), r.e("PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786"), r.e("PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"), r.e("PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3"), r.e("ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"), r.e("PostCreation")]).then(r.bind(null, "./src/reddit/actions/pages/postCreation.ts")).then(e => e.postCreationPageRequested)),
 					component: d,
 					chunk: i.s.POST_CREATION,
 					exact: !0,
@@ -2228,4 +2228,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.16a9866c320d224d55b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.0b9dcf78e31f07d84d91.js.map

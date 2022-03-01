@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.70d36502b8903cc81512.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.23e714d15f127f60b6fd.js
+// Retrieved at 3/1/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -7,6 +7,13 @@
 				s = 1 / 0;
 			e.exports = function(e) {
 				return (null == e ? 0 : e.length) ? r(e, s) : []
+			}
+		},
+		"./node_modules/lodash/forOwn.js": function(e, t, n) {
+			var r = n("./node_modules/lodash/_baseForOwn.js"),
+				s = n("./node_modules/lodash/_castFunction.js");
+			e.exports = function(e, t) {
+				return e && r(e, s(t))
 			}
 		},
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -2349,4 +2356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.70d36502b8903cc81512.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.23e714d15f127f60b6fd.js.map
