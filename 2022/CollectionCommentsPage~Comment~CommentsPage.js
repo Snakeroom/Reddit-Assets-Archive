@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.a6eaa494bbb2f490238b.js
-// Retrieved at 3/1/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.c868c99e578d8be49d98.js
+// Retrieved at 3/2/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~Comment~CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2456,7 +2456,7 @@
 					}), r.a.createElement(tt.a, {
 						isNft: Re,
 						className: Object(c.a)(_t.a.UserIcon, {
-							[_t.a.UserIconNft]: Re && !Object(wt.e)(l.profileImage)
+							[_t.a.UserIconNft]: Re && !Object(wt.f)(l.profileImage)
 						}),
 						iconUrl: l.profileImage,
 						isNSFW: l.profileOver18 || !1,
@@ -3102,4 +3102,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.a6eaa494bbb2f490238b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~Comment~CommentsPage.c868c99e578d8be49d98.js.map

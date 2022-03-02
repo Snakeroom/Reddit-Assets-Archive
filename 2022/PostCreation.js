@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4977fe03ad132253c835.js
-// Retrieved at 3/1/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.47624ffcdc412648a332.js
+// Retrieved at 3/2/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ChatMessageInput~MembershipPaywallPage~RichTextEditor", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -30408,4 +30408,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4977fe03ad132253c835.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.47624ffcdc412648a332.js.map

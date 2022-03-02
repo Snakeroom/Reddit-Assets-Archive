@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.3de6f4d40609d58c9838.js
-// Retrieved at 2/24/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.0d47dfd704ad6891b78e.js
+// Retrieved at 3/2/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -35,7 +35,7 @@
 			const c = Object(s.a)({
 				ErrorComponent: () => null,
 				LoadingComponent: () => null,
-				getComponent: () => Object(n.a)(() => Promise.all([r.e(1), r.e("RealtimeGQLSubscriptionAsync")]).then(r.bind(null, "./src/realtime/GQLSubscription/index.tsx"))).then(e => e.default)
+				getComponent: () => Object(n.a)(() => Promise.all([r.e(2), r.e("vendors~RealtimeGQLSubscriptionAsync"), r.e("RealtimeGQLSubscriptionAsync")]).then(r.bind(null, "./src/realtime/GQLSubscription/index.tsx"))).then(e => e.default)
 			});
 			t.a = c
 		},
@@ -995,7 +995,7 @@
 					ref: q
 				}, j && c.a.createElement(O.a, {
 					className: Object(s.a)(g.a.nftAnimation, {
-						[g.a.withoutBorder]: Object(d.e)(i)
+						[g.a.withoutBorder]: Object(d.f)(i)
 					}),
 					assetUrl: Object(d.a)(i),
 					loop: !0
@@ -1357,7 +1357,7 @@
 			})), r.d(t, "x", (function() {
 				return $
 			})), r.d(t, "e", (function() {
-				return Y
+				return Q
 			})), r.d(t, "d", (function() {
 				return J
 			})), r.d(t, "v", (function() {
@@ -1522,7 +1522,7 @@
 							break
 						}
 						case c.Nb.SUBREDDIT_WIKI:
-							Object(N.a)(Q(r, s)(t));
+							Object(N.a)(Y(r, s)(t));
 							break;
 						case c.Nb.COINS:
 							Object(N.a)(B(r, s)(t)), Object(N.a)(W()(t));
@@ -1546,7 +1546,7 @@
 							u && M(t, a ? a.subredditName : null, a ? a.profileName : null);
 							break;
 						case c.Nb.SUBREDDIT_LEADERBOARD:
-							u && Object(N.a)(Y()(t));
+							u && Object(N.a)(Q()(t));
 							break;
 						case c.Nb.SEARCH_RESULTS:
 							if (u) {
@@ -1874,13 +1874,13 @@
 					noun: "screen",
 					...T(e)
 				}),
-				Y = () => e => ({
+				Q = () => e => ({
 					action: "view",
 					source: "global",
 					noun: "screen",
 					...T(e)
 				}),
-				Q = (e, t) => r => ({
+				Y = (e, t) => r => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -2264,4 +2264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.3de6f4d40609d58c9838.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.0d47dfd704ad6891b78e.js.map
