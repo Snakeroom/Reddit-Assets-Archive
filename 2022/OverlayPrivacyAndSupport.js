@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayPrivacyAndSupport.8750bf18e0444c1abb1b.js
-// Retrieved at 2/7/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayPrivacyAndSupport.e33c49ae84515fe15a87.js
+// Retrieved at 3/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayPrivacyAndSupport"], {
 		"./src/chat/components/OverlayPrivacyAndSupport/index.m.less": function(e, t, a) {
@@ -69,11 +69,11 @@
 					L = Object(r.e)(I.g),
 					P = Object(l.b)(Object(j.a)(25));
 				Object(i.a)("DROPDOWN_ID", P.hide);
-				const W = e => e.toLocaleLowerCase(),
-					F = Object(s.useMemo)(() => {
+				const F = e => e.toLocaleLowerCase(),
+					W = Object(s.useMemo)(() => {
 						const e = [];
 						return H.map(t => {
-							for (const a in L) W(L[a].id) === t && e.push(L[a])
+							for (const a in L) F(L[a].id) === t && e.push(L[a])
 						}), e
 					}, [L, H]);
 				Object(s.useEffect)(() => {
@@ -82,11 +82,11 @@
 					})()
 				}, [e]);
 				const U = Object(s.useMemo)(() => {
-						const e = C[W(t)];
+						const e = C[F(t)];
 						return !e || !e.loaded || e.valid
 					}, [t, C]),
 					A = Object(s.useMemo)(() => {
-						const e = C[W(t)];
+						const e = C[F(t)];
 						return e && !(null == e ? void 0 : e.loaded)
 					}, [t, C]),
 					R = Object(s.useRef)(null),
@@ -154,9 +154,9 @@
 					isLoading: A,
 					filter: t,
 					resetFilter: T,
-					selectedContacts: F,
-					placeholder: n.fbt._("Add a trusted users", null, {
-						hk: "2i3QDW"
+					selectedContacts: W,
+					placeholder: n.fbt._("Add a trusted user", null, {
+						hk: "4zpouZ"
 					}),
 					onFilterReset: () => {
 						a(""), k(!1)
@@ -178,7 +178,7 @@
 					hk: "2nKv7P"
 				})), c.a.createElement(b.a, {
 					className: B.a.Scroller
-				}, (() => t ? L.filter(e => W(e.name).includes(W(t)) && !e.isBlocked).sort(e => e.name === t ? -1 : 0) : L)().map(t => c.a.createElement("div", {
+				}, (() => t ? L.filter(e => F(e.name).includes(F(t)) && !e.isBlocked).sort(e => e.name === t ? -1 : 0) : L)().map(t => c.a.createElement("div", {
 					className: B.a.ListItem,
 					key: t.id
 				}, c.a.createElement(_.a, {
@@ -540,4 +540,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayPrivacyAndSupport.8750bf18e0444c1abb1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayPrivacyAndSupport.e33c49ae84515fe15a87.js.map

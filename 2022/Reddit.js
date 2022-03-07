@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.0be535b712ea45824580.js
-// Retrieved at 3/4/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.4c9c4ba7a19b3a7004b5.js
+// Retrieved at 3/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1552,7 +1552,7 @@
 						i = L(a).nodes.filter(e => !e.viewedAt);
 					i.length && i.forEach(e => {
 						var n;
-						Object(E.p)({
+						Object(E.q)({
 							id: e.id,
 							isClicked: !1,
 							isViewed: Boolean(e.viewedAt),
@@ -8281,7 +8281,7 @@
 				constructor() {
 					super(...arguments), this.state = {
 						googleOneTapIFrame: null
-					}, this.sendNavClickInbox = () => this.props.sendEvent(Object(Md.v)({
+					}, this.sendNavClickInbox = () => this.props.sendEvent(Object(Md.w)({
 						badgeCount: this.props.inboxBadgeCount
 					})), this.sendEventWithName = e => this.props.sendEvent(Object(xc.c)(e)), this.onClickMail = () => this.sendEventWithName("mail"), this.onClickCreatePost = () => {
 						this.props.sendEvent(Object(wr.x)({
@@ -8438,7 +8438,7 @@
 					a = r ? r.url : "/",
 					i = r && r.meta && r.meta.name === O.Nb.EXPLORE ? encodeURIComponent(e.origin) : encodeURIComponent(e.origin + a);
 				return m.a.createElement(m.a.Fragment, null, s && m.a.createElement(Ja, {
-					sendNavClickInbox: () => e.sendEvent(Object(Md.v)({
+					sendNavClickInbox: () => e.sendEvent(Object(Md.w)({
 						badgeCount: t
 					})),
 					unreadCount: t,
@@ -23342,4 +23342,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~PostCreation~Reddit~Subreddit", "PostCreation~Reddit~StandalonePostPage~SubredditTopContent~TopWeekPostsDiscoveryUnit~reddit-componen~2583c786", "PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.0be535b712ea45824580.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.4c9c4ba7a19b3a7004b5.js.map

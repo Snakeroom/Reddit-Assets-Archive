@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.74b2a71a78f8440197f1.js
-// Retrieved at 2/24/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.34d2c96f4b2512a0feae.js
+// Retrieved at 3/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -594,7 +594,7 @@
 					}
 				}
 				componentDidMount() {
-					this.props.updateInboxActivitySeenState(), this.props.sendEvent(Object(C.r)({
+					this.props.updateInboxActivitySeenState(), this.props.sendEvent(Object(C.s)({
 						badgeCount: this.props.inboxBadgeCount,
 						tab: C.f.Activity
 					}))
@@ -690,7 +690,7 @@
 				}))), s.a.createElement("li", null, s.a.createElement(V, {
 					active: !1,
 					onMouseDown: () => {
-						i(Object(C.r)({
+						i(Object(C.s)({
 							badgeCount: t + n,
 							tab: C.f.Messages
 						})), e.clearMessageTabBadgeCount()
@@ -747,4 +747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.74b2a71a78f8440197f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.34d2c96f4b2512a0feae.js.map

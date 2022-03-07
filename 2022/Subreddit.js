@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.1c99fe59d5ff90f8bfd0.js
-// Retrieved at 2/24/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.13f5d0590405641cee8a.js
+// Retrieved at 3/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -722,7 +722,7 @@
 						o = F(i).nodes.filter(e => !e.viewedAt);
 					o.length && o.forEach(e => {
 						var n;
-						Object(y.p)({
+						Object(y.q)({
 							id: e.id,
 							isClicked: !1,
 							isViewed: Boolean(e.viewedAt),
@@ -9888,42 +9888,44 @@
 				return o
 			})), n.d(t, "a", (function() {
 				return c
-			})), n.d(t, "t", (function() {
+			})), n.d(t, "u", (function() {
 				return m
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "q", (function() {
 				return p
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "o", (function() {
 				return b
-			})), n.d(t, "r", (function() {
+			})), n.d(t, "j", (function() {
 				return h
 			})), n.d(t, "s", (function() {
 				return f
-			})), n.d(t, "v", (function() {
+			})), n.d(t, "t", (function() {
 				return x
-			})), n.d(t, "k", (function() {
-				return g
-			})), n.d(t, "u", (function() {
-				return E
-			})), n.d(t, "b", (function() {
-				return _
-			})), n.d(t, "l", (function() {
-				return O
 			})), n.d(t, "w", (function() {
+				return g
+			})), n.d(t, "k", (function() {
+				return E
+			})), n.d(t, "v", (function() {
+				return _
+			})), n.d(t, "b", (function() {
+				return O
+			})), n.d(t, "l", (function() {
 				return v
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "x", (function() {
 				return y
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "p", (function() {
 				return C
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "n", (function() {
 				return S
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "m", (function() {
 				return j
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return I
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "h", (function() {
 				return N
-			})), n.d(t, "q", (function() {
+			})), n.d(t, "g", (function() {
 				return k
+			})), n.d(t, "r", (function() {
+				return P
 			}));
 			var s, r, a, i, o, c, d = n("./src/reddit/constants/tracking.ts"),
 				l = n("./src/reddit/selectors/telemetry.ts"),
@@ -9991,6 +9993,21 @@
 					})
 				},
 				b = ({
+					dnPromptAction: e
+				}) => t => ({
+					...l.o(t),
+					action: d.c.CLICK,
+					noun: "inbox_banner",
+					source: "inbox",
+					banner: {
+						id: "inbox_dn_banner"
+					},
+					actionInfo: {
+						pageType: "dn_prompt",
+						type: e
+					}
+				}),
+				h = ({
 					id: e,
 					isClicked: t,
 					isViewed: n,
@@ -10025,7 +10042,7 @@
 						id: o
 					} : null
 				}),
-				h = ({
+				f = ({
 					badgeCount: e,
 					tab: t
 				}) => n => ({
@@ -10038,7 +10055,7 @@
 						tab: t
 					}
 				}),
-				f = ({
+				x = ({
 					badgeCount: e,
 					tab: t
 				}) => t => ({
@@ -10051,7 +10068,7 @@
 						tab: s.Activity
 					}
 				}),
-				x = ({
+				g = ({
 					badgeCount: e
 				}) => t => ({
 					...l.o(t),
@@ -10062,7 +10079,7 @@
 						badgeCount: e
 					}
 				}),
-				g = ({
+				E = ({
 					id: e,
 					isClicked: t,
 					isViewed: n,
@@ -10085,7 +10102,7 @@
 						awardId: r
 					}
 				}),
-				E = ({
+				_ = ({
 					id: e,
 					isClicked: t,
 					isViewed: n,
@@ -10104,11 +10121,11 @@
 						type: s
 					}
 				});
-			var _;
+			var O;
 			! function(e) {
 				e.Cats = "cats", e.Memes = "memes", e.Karma = "karma_free_subs", e.PN_perms = "pn_perms", e.Email_perms = "email_perms"
-			}(_ || (_ = {}));
-			const O = ({
+			}(O || (O = {}));
+			const v = ({
 					actionInfoType: e,
 					id: t,
 					isClicked: n,
@@ -10132,7 +10149,7 @@
 						type: e
 					}
 				}),
-				v = ({
+				y = ({
 					actionInfoType: e,
 					id: t,
 					isClicked: n,
@@ -10156,7 +10173,7 @@
 						type: e
 					}
 				}),
-				y = ({
+				C = ({
 					actionInfoType: e
 				}) => t => ({
 					...l.o(t),
@@ -10168,7 +10185,7 @@
 						type: e
 					}
 				}),
-				C = e => t => ({
+				S = e => t => ({
 					...l.o(t),
 					action: d.c.CLICK,
 					noun: "notification_app_settings",
@@ -10178,7 +10195,7 @@
 						pageType: e
 					}
 				}),
-				S = () => e => ({
+				j = () => e => ({
 					...l.o(e),
 					action: d.c.CLICK,
 					noun: "see_all",
@@ -10188,13 +10205,13 @@
 						pageType: a.MiniInbox
 					}
 				}),
-				j = () => e => ({
+				I = () => e => ({
 					...l.o(e),
 					action: d.c.CLICK,
 					noun: "messages",
 					source: i.Inbox
 				}),
-				I = ({
+				N = ({
 					isMiniInbox: e
 				}) => t => ({
 					...l.o(t),
@@ -10206,7 +10223,7 @@
 						pageType: a.MiniInbox
 					} : {}
 				}),
-				N = (e, t) => n => ({
+				k = (e, t) => n => ({
 					...l.o(n),
 					action: d.c.CLICK,
 					noun: "policy_banner",
@@ -10217,7 +10234,7 @@
 						type: t
 					}
 				}),
-				k = () => e => ({
+				P = () => e => ({
 					...l.o(e),
 					action: d.c.CLICK,
 					noun: "inbox_banner",
@@ -12888,4 +12905,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1c99fe59d5ff90f8bfd0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.13f5d0590405641cee8a.js.map

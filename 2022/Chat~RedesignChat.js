@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e36fcdc43f216750aba1.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0f680985c56ac8ff4165.js
+// Retrieved at 3/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -6912,10 +6912,12 @@
 				}) : null
 			}, lc = ({
 				userName: e
-			}) => r.a.createElement("p", null, sc._("Accept to chat with {userName}{restText}", [sc._param("userName", r.a.createElement("span", {
+			}) => r.a.createElement("p", null, sc._("Accept to chat with {userName}{=. If you ignore, the chat request will be removed, and we won’t let the sender know.}", [sc._param("userName", r.a.createElement("span", {
 				className: ac.a.BoldText
-			}, e)), sc._param("restText", r.a.createElement("span", null, ". If you ignore, the chat request will be removed, and we won’t let the sender know."))], {
-				hk: "3FVxLq"
+			}, e)), sc._param("=. If you ignore, the chat request will be removed, and we won’t let the sender know.", r.a.createElement("span", null, sc._(". If you ignore, the chat request will be removed, and we won’t let the sender know.", null, {
+				hk: "3PxerO"
+			})))], {
+				hk: "4pQEpv"
 			})), dc = ({
 				userName: e,
 				isQuickActionBlock: t
@@ -18067,4 +18069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.e36fcdc43f216750aba1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0f680985c56ac8ff4165.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxPages.da750bb03b00f7bab345.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxPages.b57d1bbb6716a405ebe8.js
+// Retrieved at 3/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxPages"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, s) {
@@ -18,54 +18,53 @@
 			"use strict";
 			s.r(t);
 			var r = s("./src/config.ts"),
-				o = s("./node_modules/react/index.js"),
-				n = s.n(o),
+				n = s("./node_modules/react/index.js"),
+				o = s.n(n),
 				d = s("./node_modules/react-redux/es/index.js"),
 				c = s("./node_modules/reselect/es/index.js"),
 				i = s("./src/lib/addQueryParams/index.ts"),
 				a = s("./src/lib/classNames/index.ts"),
 				l = s("./src/lib/env/index.ts"),
-				m = s("./src/reddit/actions/platform.ts"),
-				u = s("./src/reddit/components/IFrame/index.m.less"),
-				p = s.n(u);
-			class b extends n.a.Component {
-				constructor() {
-					super(...arguments), this.ref = null
-				}
-				setRef(e) {
-					this.ref = e
-				}
-				getDocument() {
-					try {
-						return this.ref.contentWindow.document
-					} catch (e) {}
-				}
-				onLoad() {
-					const e = this.getDocument();
-					e && this.props.onLoad && this.props.onLoad(e)
-				}
-				render() {
-					const {
-						src: e
-					} = this.props;
-					return n.a.createElement("iframe", {
-						className: p.a.IFrame,
-						ref: e => this.setRef(e),
+				u = s("./src/reddit/actions/platform.ts");
+			var m = s("./src/reddit/components/IFrame/index.m.less"),
+				b = s.n(m);
+			var p = ({
+					src: e,
+					onLoad: t
+				}) => {
+					const s = Object(n.useRef)(null),
+						r = function(e) {
+							const [t, s] = Object(n.useState)(0);
+							return Object(n.useEffect)(() => {
+								s(e => e + 1)
+							}, [e]), t
+						}(e);
+					return o.a.createElement("iframe", {
+						key: r,
+						className: b.a.IFrame,
+						ref: s,
 						src: e,
-						onLoad: () => this.onLoad
+						onLoad: () => {
+							const e = (() => {
+								var e, t;
+								try {
+									return null === (t = null === (e = s.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t ? void 0 : t.document
+								} catch (r) {}
+							})();
+							e && t && t(e)
+						}
 					})
-				}
-			}
-			var f = s("./src/reddit/constants/componentSizes.ts"),
+				},
+				f = s("./src/reddit/constants/componentSizes.ts"),
 				h = s("./src/reddit/contexts/NavbarExp.ts"),
 				O = s("./src/reddit/helpers/toggleBodyScroll/index.ts"),
-				x = s("./src/reddit/selectors/user.ts"),
+				v = s("./src/reddit/selectors/user.ts"),
 				y = s("./src/reddit/selectors/userPrefs.ts"),
-				g = s("./src/reddit/pages/RedditEmbed/index.m.less"),
-				v = s.n(g);
+				x = s("./src/reddit/pages/RedditEmbed/index.m.less"),
+				g = s.n(x);
 
-			function L() {
-				return (L = Object.assign || function(e) {
+			function j() {
+				return (j = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
@@ -77,31 +76,33 @@
 					isSubscriptionsPinned: y.b,
 					url: e => e.platform.currentPage ? e.platform.currentPage.url : "",
 					servedOrigin: e => `${e.meta.protocol}://${e.meta.domain}`,
-					nightmode: x.bb
+					nightmode: v.bb
 				}),
-				j = Object(d.b)(S, e => ({
-					onTitleChange: t => e(m.m({
+				w = Object(d.b)(S, e => ({
+					onTitleChange: t => e(u.m({
 						title: t
 					}))
 				})),
-				w = ({
+				E = ({
 					offsetLeft: e,
 					children: t,
 					...s
 				}) => {
-					const r = Object(o.useContext)(h.a);
-					return n.a.createElement("div", L({
-						className: Object(a.a)(v.a.wrapper, {
-							[v.a.wrapperExp]: r
+					const r = Object(n.useContext)(h.a);
+					return o.a.createElement("div", j({
+						className: Object(a.a)(g.a.wrapper, {
+							[g.a.wrapperExp]: r
 						}),
 						style: {
 							left: e
 						}
 					}, s), t)
 				};
-			class _ extends n.a.Component {
+			class _ extends o.a.Component {
 				constructor(e) {
-					super(e), this.state = {
+					super(e), this.onLoad = e => {
+						e.title && this.props.onTitleChange(e.title)
+					}, this.state = {
 						bodyScrollOffset: 0,
 						hasMounted: !1
 					}
@@ -129,17 +130,14 @@
 				componentWillUnmount() {
 					this.docObserver && this.docObserver.disconnect()
 				}
-				onLoad(e) {
-					e.title && this.props.onTitleChange(e.title)
-				}
 				render() {
 					const {
 						isSubscriptionsPinned: e,
 						servedOrigin: t,
 						nightmode: s
 					} = this.props;
-					let o = 0;
-					e && (o += f.u), 0 !== this.state.bodyScrollOffset && (o -= this.state.bodyScrollOffset);
+					let n = 0;
+					e && (n += f.u), 0 !== this.state.bodyScrollOffset && (n -= this.state.bodyScrollOffset);
 					const d = Object(l.a)() ? t : "true",
 						c = Object(l.a)() ? r.a.redditUrl : "";
 					let a;
@@ -148,16 +146,16 @@
 						dark: "true"
 					}) : c + Object(i.a)(this.props.url, {
 						embedded: d
-					}), n.a.createElement(w, {
-						offsetLeft: o
-					}, n.a.createElement(b, {
+					}), o.a.createElement(E, {
+						offsetLeft: n
+					}, o.a.createElement(p, {
 						src: a,
 						onLoad: this.onLoad
 					}))
 				}
 			}
-			t.default = j(_)
+			t.default = w(_)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxPages.da750bb03b00f7bab345.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxPages.b57d1bbb6716a405ebe8.js.map

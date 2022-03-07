@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.1c2747e3c964317f39b9.js
-// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.8526ce098efd2c346abc.js
+// Retrieved at 3/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -452,7 +452,7 @@
 							actionInfoType: e
 						}))
 					}, je = e => {
-						L(Object(v.w)({
+						L(Object(v.x)({
 							...we,
 							actionInfoType: e
 						}))
@@ -552,11 +552,11 @@
 						isToggleNotificationUpdateEligible: ae,
 						isToggleUpdateFromSubredditEligible: !(!oe || !fe),
 						isBlockAwarderEligible: Ie,
-						sendInboxViewOverflow: () => L(Object(v.u)(we)),
+						sendInboxViewOverflow: () => L(Object(v.v)(we)),
 						tooltipId: Ne
 					}), l.a.createElement(a.a, {
 						onChange: e => {
-							e.isIntersecting && !z && (L(Object(v.t)(we)), Y(!0))
+							e.isIntersecting && !z && (L(Object(v.u)(we)), Y(!0))
 						},
 						rootMargin: "0px 0px 0px 0px",
 						threshold: U
@@ -741,4 +741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.1c2747e3c964317f39b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.8526ce098efd2c346abc.js.map
