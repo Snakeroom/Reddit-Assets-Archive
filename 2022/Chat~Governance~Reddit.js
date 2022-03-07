@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9259e8314d48b7856ce3.js
-// Retrieved at 3/7/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.791c8ee4a0a0e50b87da.js
+// Retrieved at 3/7/2022, 1:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("159307"),
+				buildNumber: Object(r.c)("159310"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1646672536"),
+				buildTimestamp: Object(r.b)("1646674410"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6066,14 +6066,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cf797b41b6bd62bea31b5d0badaa8fd112fb4f1d6-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cb1e973f1df2802646a8753f3f9695e710b2bcdff-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f797b41b6bd62bea31b5d0badaa8fd112fb4f1d6-production",
+						release: "b1e973f1df2802646a8753f3f9695e710b2bcdff-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6590,7 +6590,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "f797b41b6bd62bea31b5d0badaa8fd112fb4f1d6-production",
+						releaseClient: "b1e973f1df2802646a8753f3f9695e710b2bcdff-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -14641,9 +14641,12 @@
 					let d, a;
 					switch (e) {
 						case s.g:
-							d = "watch_3_seconds", a = r.a.VideoWatchedSeconds3;
+							d = "watch_2_seconds", a = r.a.VideoWatchedSeconds2;
 							break;
 						case s.h:
+							d = "watch_3_seconds", a = r.a.VideoWatchedSeconds3;
+							break;
+						case s.i:
 							d = "watch_5_seconds", a = r.a.VideoWatchedSeconds5;
 							break;
 						default:
@@ -15141,7 +15144,7 @@
 					return n
 				})),
 				function(e) {
-					e[e.Impression = 1] = "Impression", e[e.Click = 2] = "Click", e[e.CommentsView = 3] = "CommentsView", e[e.Upvote = 4] = "Upvote", e[e.Downvote = 5] = "Downvote", e[e.CommentSubmitted = 6] = "CommentSubmitted", e[e.ViewableImpression = 7] = "ViewableImpression", e[e.CommentUpvote = 8] = "CommentUpvote", e[e.CommentDownvote = 9] = "CommentDownvote", e[e.VendorFullyInView = 10] = "VendorFullyInView", e[e.VendorFullyInViewSeconds5 = 11] = "VendorFullyInViewSeconds5", e[e.VendorFullyInViewSeconds15 = 12] = "VendorFullyInViewSeconds15", e[e.GroupMViewable = 13] = "GroupMViewable", e[e.Unload = 14] = "Unload", e[e.GalleryItemImpression = 15] = "GalleryItemImpression", e[e.VideoViewableImpression = 100] = "VideoViewableImpression", e[e.VideoFullyViewableImpression = 101] = "VideoFullyViewableImpression", e[e.VideoPlayedWithSound = 102] = "VideoPlayedWithSound", e[e.VideoPlayedExpanded = 103] = "VideoPlayedExpanded", e[e.VideoWatched25 = 104] = "VideoWatched25", e[e.VideoWatched50 = 105] = "VideoWatched50", e[e.VideoWatched75 = 106] = "VideoWatched75", e[e.VideoWatched95 = 107] = "VideoWatched95", e[e.VideoWatched100 = 108] = "VideoWatched100", e[e.VideoStarted = 109] = "VideoStarted", e[e.VideoWatchedSeconds3 = 110] = "VideoWatchedSeconds3", e[e.VideoWatchedSeconds5 = 111] = "VideoWatchedSeconds5", e[e.VideoWatchedSeconds10 = 112] = "VideoWatchedSeconds10", e[e.VideoGroupMViewable = 113] = "VideoGroupMViewable", e[e.VideoVendorFullyViewable50 = 114] = "VideoVendorFullyViewable50", e[e.DEPRECATED_MRCVideoViewableImpression = 115] = "DEPRECATED_MRCVideoViewableImpression"
+					e[e.Impression = 1] = "Impression", e[e.Click = 2] = "Click", e[e.CommentsView = 3] = "CommentsView", e[e.Upvote = 4] = "Upvote", e[e.Downvote = 5] = "Downvote", e[e.CommentSubmitted = 6] = "CommentSubmitted", e[e.ViewableImpression = 7] = "ViewableImpression", e[e.CommentUpvote = 8] = "CommentUpvote", e[e.CommentDownvote = 9] = "CommentDownvote", e[e.VendorFullyInView = 10] = "VendorFullyInView", e[e.VendorFullyInViewSeconds5 = 11] = "VendorFullyInViewSeconds5", e[e.VendorFullyInViewSeconds15 = 12] = "VendorFullyInViewSeconds15", e[e.GroupMViewable = 13] = "GroupMViewable", e[e.Unload = 14] = "Unload", e[e.GalleryItemImpression = 15] = "GalleryItemImpression", e[e.VideoViewableImpression = 100] = "VideoViewableImpression", e[e.VideoFullyViewableImpression = 101] = "VideoFullyViewableImpression", e[e.VideoPlayedWithSound = 102] = "VideoPlayedWithSound", e[e.VideoPlayedExpanded = 103] = "VideoPlayedExpanded", e[e.VideoWatched25 = 104] = "VideoWatched25", e[e.VideoWatched50 = 105] = "VideoWatched50", e[e.VideoWatched75 = 106] = "VideoWatched75", e[e.VideoWatched95 = 107] = "VideoWatched95", e[e.VideoWatched100 = 108] = "VideoWatched100", e[e.VideoStarted = 109] = "VideoStarted", e[e.VideoWatchedSeconds2 = 110] = "VideoWatchedSeconds2", e[e.VideoWatchedSeconds3 = 111] = "VideoWatchedSeconds3", e[e.VideoWatchedSeconds5 = 112] = "VideoWatchedSeconds5", e[e.VideoWatchedSeconds10 = 113] = "VideoWatchedSeconds10", e[e.VideoGroupMViewable = 114] = "VideoGroupMViewable", e[e.VideoVendorFullyViewable50 = 115] = "VideoVendorFullyViewable50", e[e.DEPRECATED_MRCVideoViewableImpression = 115] = "DEPRECATED_MRCVideoViewableImpression"
 				}(n || (n = {}))
 		},
 		"./src/reddit/constants/blade.ts": function(e, t, i) {
@@ -17588,11 +17591,11 @@
 		},
 		"./src/reddit/constants/video.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "l", (function() {
+			i.d(t, "m", (function() {
 				return n
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "n", (function() {
 				return r
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "j", (function() {
 				return s
 			})), i.d(t, "b", (function() {
 				return o
@@ -17604,16 +17607,18 @@
 				return l
 			})), i.d(t, "a", (function() {
 				return u
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "k", (function() {
 				return c
 			})), i.d(t, "g", (function() {
 				return _
 			})), i.d(t, "h", (function() {
 				return m
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "i", (function() {
 				return p
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "f", (function() {
 				return h
+			})), i.d(t, "l", (function() {
+				return f
 			}));
 			const n = 250,
 				r = 500,
@@ -17624,10 +17629,11 @@
 				l = 95,
 				u = 100,
 				c = [o, d, a, l, u],
-				_ = 3,
-				m = 5,
-				p = 10,
-				h = [_, m, p]
+				_ = 2,
+				m = 3,
+				p = 5,
+				h = 10,
+				f = [_, m, p, h]
 		},
 		"./src/reddit/constants/wiki.ts": function(e, t, i) {
 			"use strict";
@@ -47031,4 +47037,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9259e8314d48b7856ce3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.791c8ee4a0a0e50b87da.js.map

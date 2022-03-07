@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.0b3a1df5d720a24f33f9.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.4e3176cca9af60e7f32a.js
+// Retrieved at 3/7/2022, 1:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1315,8 +1315,8 @@
 							postId: t,
 							time: s
 						}))
-					}, P.l, {
-						maxWait: P.m
+					}, P.m, {
+						maxWait: P.n
 					}),
 					openLightbox: s => {
 						s ? e(Object(_.a)(s)) : g.c.withScope(e => {
@@ -1366,6 +1366,7 @@
 					}, this.timePixelsFired = {
 						[P.g]: !1,
 						[P.h]: !1,
+						[P.i]: !1,
 						[P.f]: !1
 					}, this.sendEvent = (e, t, s = !1) => {
 						if (this.HTML5StreamPlayerVideo && null != this.props.postId) {
@@ -1727,7 +1728,7 @@
 						if (n && i) {
 							this.dashPlayer = e.MediaPlayer().create();
 							try {
-								this.dashPlayer.initialize(n, i, n.autoplay || !n.paused), this.setBufferTime(P.i), this.dashPlayer.updateSettings({
+								this.dashPlayer.initialize(n, i, n.autoplay || !n.paused), this.setBufferTime(P.j), this.dashPlayer.updateSettings({
 									streaming: {
 										fastSwitchEnabled: !0,
 										abr: {
@@ -1876,12 +1877,12 @@
 					return s >= 1 ? P.a : s >= .95 ? P.e : s >= .75 ? P.d : s >= .5 ? P.c : s >= .25 ? P.b : 0
 				}
 				triggerPercentagePixels(e) {
-					P.j.forEach(t => {
+					P.k.forEach(t => {
 						t <= e && !this.percentagePixelsFired[t] && (this.props.onWatchedPercent(t), this.percentagePixelsFired[t] = !0)
 					})
 				}
 				triggerTimeWatchedPixels(e) {
-					P.k.forEach(t => {
+					P.l.forEach(t => {
 						t <= e && !this.timePixelsFired[t] && (this.props.onWatchedSeconds(t), this.timePixelsFired[t] = !0)
 					})
 				}
@@ -5031,4 +5032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.0b3a1df5d720a24f33f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~Subreddit~reddit-components-ClassicPost~reddit-components-Com~82e48dd3.4e3176cca9af60e7f32a.js.map
