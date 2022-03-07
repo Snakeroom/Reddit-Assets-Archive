@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.8fd5d5891afc763a8dd5.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.7c82db28f4389f7e036f.js
+// Retrieved at 3/7/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -429,7 +429,7 @@
 							t.preventDefault(), f(Object(d.cb)(r))
 						}
 					};
-				return Object(a.e)(u.b) ? o.a.createElement("span", {
+				return Object(a.e)(u.a) ? o.a.createElement("span", {
 					className: n
 				}, e.children) : e.isExternal || e.isLivestreaming || e.forceOpenInNewTab ? o.a.createElement("a", b({}, null !== (t = e.linkProps) && void 0 !== t ? t : {}, {
 					className: n,
@@ -5248,4 +5248,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.8fd5d5891afc763a8dd5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.7c82db28f4389f7e036f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.364b696abf1e7ac45133.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.7283855d581273b8bff8.js
+// Retrieved at 3/7/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -5595,7 +5595,7 @@
 					showEditFlair: y.a,
 					isInModNotesExperiment: (e, {
 						subreddit: t
-					}) => !!t && Object(C.b)(e, t.id)
+					}) => !!t && Object(C.a)(e, t.id)
 				}),
 				je = (e, {
 					postId: t
@@ -11737,7 +11737,7 @@
 					searchResult: e => e.pages.modHub.moderators.search.result,
 					isInModNotesExperiment: (e, {
 						subredditId: t
-					}) => Object(S.b)(e, t)
+					}) => Object(S.a)(e, t)
 				}),
 				Ve = Object(i.b)(qe, (e, {
 					subredditId: t
@@ -21789,4 +21789,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.364b696abf1e7ac45133.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.7283855d581273b8bff8.js.map

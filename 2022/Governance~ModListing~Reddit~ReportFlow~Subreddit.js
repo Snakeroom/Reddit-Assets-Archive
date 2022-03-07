@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.491001e7bcc0eb030d10.js
-// Retrieved at 3/1/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.0337388cf60fbadac1af.js
+// Retrieved at 3/7/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -824,7 +824,7 @@
 							postIds: [a.id],
 							skip: ["communityDetails", "subscription"],
 							subredditId: u
-						})), Object(v.b)(i, u) && r(Object(p.b)(m, !0, o.token)));
+						})), Object(v.a)(i, u) && r(Object(p.b)(m, !0, o.token)));
 						const b = j.body.comments;
 						await r(Object(c.b)(u, b)), Object(x.h)(n(), {
 							subredditId: a.belongsTo.id
@@ -4956,7 +4956,7 @@
 								meta: p.meta,
 								governance: e,
 								...G
-							})), Object(B.b)(p, o)) {
+							})), Object(B.a)(p, o)) {
 							let e;
 							A || (e = await Object(w.b)(s(), Object(w.c)(p, c, {
 								...R,
@@ -5495,7 +5495,7 @@
 				}) => {
 					var i, o, d, a;
 					const u = n();
-					if (!Object(_.b)(u, e)) return;
+					if (!Object(_.a)(u, e)) return;
 					const l = {
 						subredditId: e,
 						userId: t,
@@ -6535,7 +6535,7 @@
 						h = Object(O.S)(_, {
 							subredditId: e
 						}).name,
-						E = Object(y.c)(_),
+						E = Object(y.b)(_),
 						T = Object(j.e)(t);
 					let v = null,
 						w = null;
@@ -6584,7 +6584,7 @@
 						v = Object(O.S)(E, {
 							subredditId: e
 						}).name,
-						w = Object(y.c)(E),
+						w = Object(y.b)(E),
 						x = Object(j.e)(t);
 					let k = null,
 						C = null;
@@ -12435,12 +12435,10 @@
 		},
 		"./src/reddit/selectors/experiments/cnc/index.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "c", (function() {
+			r.d(t, "b", (function() {
 				return a
 			})), r.d(t, "a", (function() {
 				return u
-			})), r.d(t, "b", (function() {
-				return l
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
@@ -12455,16 +12453,15 @@
 					});
 					return !(!t || Object(n.xf)(t))
 				},
-				u = ["t5_ov2tz", "t5_3h47q", "t5_2rfxx", "t5_2qlmm", "t5_2zcxb", "t5_2qqcn"],
-				l = (e, t) => ((e, t) => {
+				u = (e, t) => ((e, t) => {
 					var r;
 					const n = Object(o.e)(e),
 						s = t || n && Object(d.D)(e, n.name);
-					return !(!s || !u.includes(s)) && !!(null === (r = Object(i.m)(e, {
+					return !!s && !!(null === (r = Object(i.m)(e, {
 						subredditId: s
 					})) || void 0 === r ? void 0 : r.access)
-				})(e, t) && b(e),
-				b = e => {
+				})(e, t) && l(e),
+				l = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: c.O,
 						experimentName: n.Kd
@@ -13794,4 +13791,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.491001e7bcc0eb030d10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.0337388cf60fbadac1af.js.map

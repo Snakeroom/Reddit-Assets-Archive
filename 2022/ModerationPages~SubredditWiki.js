@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.3fc08d28519803d07b1b.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.ad07e62b5296d576bb0d.js
+// Retrieved at 3/7/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -3340,7 +3340,7 @@
 					},
 					isInModNotesExperiment: (e, {
 						subredditId: t
-					}) => Object(p.b)(e, t),
+					}) => Object(p.a)(e, t),
 					trophyCase: (e, t) => Object(v.r)(e, Object(v.m)(e, t.userName)),
 					isNightMode: O.bb,
 					lastAuthorModNote: (e, t) => {
@@ -4589,4 +4589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.3fc08d28519803d07b1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.ad07e62b5296d576bb0d.js.map
