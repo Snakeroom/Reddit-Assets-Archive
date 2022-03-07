@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.610b0608d716d4b7e2ad.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.8eaf39e50d6904ae1f09.js
+// Retrieved at 3/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, s) {
@@ -915,7 +915,7 @@
 						}
 					}, [i, a, p, l]);
 					const v = Object(h.useCallback)(() => {
-							r.current = !0, d(P.a.ThankYouView), o(Object(T.i)(p))
+							r.current = !0, d(P.a.ThankYouView), o(Object(T.j)(p))
 						}, [p, o, d]),
 						g = Object(h.useCallback)(() => {
 							H({
@@ -933,7 +933,7 @@
 								setRecommendationFooterView: d,
 								similar: !0,
 								subredditId: u
-							}), r.current = !0, o(Object(T.l)(p)))
+							}), r.current = !0, o(Object(T.m)(p)))
 						}, [i, e, p, u, o, d]);
 					return l && l !== P.a.None ? m.a.createElement("div", {
 						className: Object(f.a)(F.a.Footer, {
@@ -3025,4 +3025,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.610b0608d716d4b7e2ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.8eaf39e50d6904ae1f09.js.map

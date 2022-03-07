@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.bd09d16c3f376b6f879d.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.5e04fabf0e3ada575833.js
+// Retrieved at 3/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -15555,7 +15555,7 @@
 				const e = Object(s.e)(e => e.platform.currentPage),
 					[t, n] = Object(o.useState)({});
 				return Object(o.useEffect)(() => {
-					n(Object(r.a)(e))
+					n(Object(r.b)(e))
 				}, [e]), t
 			}
 		},
@@ -22952,4 +22952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.bd09d16c3f376b6f879d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.5e04fabf0e3ada575833.js.map

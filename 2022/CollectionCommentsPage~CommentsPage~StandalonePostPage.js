@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.cb4e5596af2100ad1bc2.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.f178ff4c76df382126af.js
+// Retrieved at 3/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~StandalonePostPage"], {
 		"./src/reddit/components/AdLinkWrapperContent/index.m.less": function(e, t, s) {
@@ -2299,7 +2299,7 @@
 					Dt = we.removedByCategory && we.removedByCategory !== B.g.Reddit || Wt,
 					Ut = !Dt && !we.isArchived,
 					Vt = Object(r.useCallback)(() => {
-						de(L ? B.f.UNFOLLOWED : B.f.FOLLOWED), qe(L ? Object(_.m)(we.id) : Object(_.c)(we.id))
+						de(L ? B.f.UNFOLLOWED : B.f.FOLLOWED), qe(L ? Object(_.n)(we.id) : Object(_.c)(we.id))
 					}, [de, qe, L, we.id]),
 					Ht = a.a.createElement(yt, {
 						post: we,
@@ -3561,4 +3561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.cb4e5596af2100ad1bc2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.f178ff4c76df382126af.js.map

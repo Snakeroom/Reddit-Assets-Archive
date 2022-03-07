@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.94b790860d28680b5319.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.f784ac24efe9d0d6800c.js
+// Retrieved at 3/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -4534,6 +4534,9 @@
 		},
 		"./src/reddit/pages/CommentsPage/CommentsNavigationPane/index.tsx": function(e, t, s) {
 			"use strict";
+			s.d(t, "a", (function() {
+				return k
+			}));
 			var n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				r = s("./node_modules/react-redux/es/index.js"),
@@ -4546,65 +4549,73 @@
 				p = s("./src/reddit/helpers/path/index.ts"),
 				u = s("./src/reddit/helpers/trackers/features/expandedCrossposts.ts"),
 				h = s("./src/reddit/helpers/trackers/otherDiscussions.ts"),
-				b = s("./src/reddit/selectors/comments.ts"),
-				g = s("./src/reddit/selectors/experiments/subredditDiscovery.ts"),
-				x = s("./src/reddit/pages/CommentsPage/CommentsNavigationPane/index.m.less"),
-				C = s.n(x);
+				b = s("./src/reddit/helpers/trackers/post.ts"),
+				g = s("./src/reddit/hooks/usePageLayer.ts"),
+				x = s("./src/reddit/selectors/comments.ts"),
+				C = s("./src/reddit/selectors/experiments/subredditDiscovery.ts"),
+				f = s("./src/reddit/pages/CommentsPage/CommentsNavigationPane/index.m.less"),
+				O = s.n(f);
 			const {
-				fbt: f
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = Object(r.b)(() => Object(i.c)({
-				isSubredditDiscoveryCrosspostEnabled: g.a,
-				headComment: b.x,
-				post: b.H
-			}));
-			t.a = Object(m.c)(O(({
-				isSubredditDiscoveryCrosspostEnabled: e,
-				commentId: t,
-				headComment: s,
-				isOverlay: n,
-				post: r,
-				postId: i,
-				sendEvent: m
-			}) => {
-				var b;
-				if (!r) return null;
-				const g = null !== (b = r.numDuplicates) && void 0 !== b ? b : 0,
-					x = void 0 !== t,
-					O = r.permalink,
-					v = g > 0,
-					y = Object(p.b)(Object(d.e)(O));
-				return x || v ? o.a.createElement("div", {
-					className: C.a.CommentsNavigationPane
-				}, x && o.a.createElement("div", null, o.a.createElement(l.a, {
-					className: C.a.linkOrOverlay,
-					isOverlay: n,
-					to: Object(p.b)(O)
-				}, f._("View all comments", null, {
+				fbt: v
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = Object(i.c)({
+				isSubredditDiscoveryCrosspostEnabled: C.a,
+				headComment: x.x,
+				post: x.H
+			}), k = e => {
+				var t;
+				const s = Object(g.a)(),
+					{
+						isSubredditDiscoveryCrosspostEnabled: n,
+						headComment: i,
+						post: x
+					} = Object(r.e)(t => y(t, e)),
+					C = Object(m.b)(),
+					{
+						commentId: f,
+						isOverlay: k,
+						postId: j
+					} = e;
+				if (!x) return null;
+				const P = null !== (t = x.numDuplicates) && void 0 !== t ? t : 0,
+					I = void 0 !== f,
+					_ = x.permalink,
+					E = P > 0,
+					S = Object(p.b)(Object(d.e)(_));
+				return I || E ? o.a.createElement("div", {
+					className: O.a.CommentsNavigationPane
+				}, I && o.a.createElement("div", null, o.a.createElement("div", {
+					onClick: () => C(Object(b.i)(j, i, s))
+				}, o.a.createElement(l.a, {
+					className: O.a.linkOrOverlay,
+					"data-testid": "view_all_comments_link",
+					isOverlay: k,
+					to: Object(p.b)(_)
+				}, v._("View all comments", null, {
 					hk: "3I5IX9"
-				})), s && null !== s.parentId && o.a.createElement(l.a, {
-					className: C.a.linkOrOverlay,
-					isOverlay: n,
-					to: Object(p.b)(s.permalink + "?context=8&depth=9")
-				}, f._("Show parent comments", null, {
+				}))), i && null !== i.parentId && o.a.createElement(l.a, {
+					className: O.a.linkOrOverlay,
+					isOverlay: k,
+					to: Object(p.b)(i.permalink + "?context=8&depth=9")
+				}, v._("Show parent comments", null, {
 					hk: "AVRCa"
-				}))), v && o.a.createElement(o.a.Fragment, null, e && o.a.createElement(c.a, {
-					postId: i
+				}))), E && o.a.createElement(o.a.Fragment, null, n && o.a.createElement(c.a, {
+					postId: j
 				}), o.a.createElement(l.a, {
-					className: Object(a.a)(C.a.OtherDiscussionsLink, {
-						[C.a.discoveryExperimentLink]: e
+					className: Object(a.a)(O.a.OtherDiscussionsLink, {
+						[O.a.discoveryExperimentLink]: n
 					}),
-					isOverlay: n,
-					onClick: () => m(e ? Object(u.b)() : Object(h.a)(i)),
-					to: y
-				}, e ? o.a.createElement(o.a.Fragment, null, f._("View all", null, {
+					isOverlay: k,
+					onClick: () => C(n ? Object(u.b)() : Object(h.a)(j)),
+					to: S
+				}, n ? o.a.createElement(o.a.Fragment, null, v._("View all", null, {
 					hk: "30twDK"
-				}), ` (${g})`) : f._({
+				}), ` (${P})`) : v._({
 					"*": "View discussions in {other discussion communities count} other communities",
 					_1: "View discussions in 1 other community"
-				}, [f._plural(g, "other discussion communities count")], {
+				}, [v._plural(P, "other discussion communities count")], {
 					hk: "3oofZ8"
 				})))) : null
-			}))
+			}
 		},
 		"./src/reddit/pages/CommentsPage/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -5910,4 +5921,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.94b790860d28680b5319.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.f784ac24efe9d0d6800c.js.map

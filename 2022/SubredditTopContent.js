@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.083ec9f0cf464f47e8ea.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.8300ebd2df51eb90a40c.js
+// Retrieved at 3/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -666,7 +666,7 @@
 				}) => ({
 					openOverlay: t => e(Object(O.a)({
 						pathname: Object(j.b)(t.permalink),
-						state: Object(v.a)(a)
+						state: Object(v.b)(a)
 					})),
 					trackPostClick: (t, a) => e((e, n) => s ? P.q(n(), s, t, a) : null),
 					trackPostSubredditClick: a => e((e, n) => t ? P.s(n(), t, a) : s ? P.s(n(), s, a) : null),
@@ -1951,4 +1951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.083ec9f0cf464f47e8ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.8300ebd2df51eb90a40c.js.map

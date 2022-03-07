@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.e8a3e3e539d67606df49.js
-// Retrieved at 3/7/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.c2f32fa0f0c1ced4718b.js
+// Retrieved at 3/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -702,7 +702,7 @@
 				}) => ({
 					openOverlay: t => e(Object(O.a)({
 						pathname: Object(_.b)(t.permalink),
-						state: Object(k.a)(a)
+						state: Object(k.b)(a)
 					})),
 					trackPostClick: (t, a) => e((e, r) => s ? j.q(r(), s, t, a) : null),
 					trackPostSubredditClick: a => e((e, r) => t ? j.s(r(), t, a) : s ? j.s(r(), s, a) : null),
@@ -2140,4 +2140,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.e8a3e3e539d67606df49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.c2f32fa0f0c1ced4718b.js.map
