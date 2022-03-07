@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.03f185f92ab07e1ca005.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.610b0608d716d4b7e2ad.js
+// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, s) {
@@ -677,8 +677,8 @@
 				A = Object(c.c)({
 					loadingPostComponentForLayout: () => V
 				}),
-				B = Object(d.b)(A);
-			class H extends l.a.Component {
+				H = Object(d.b)(A);
+			class B extends l.a.Component {
 				constructor() {
 					super(...arguments), this.mounted = !1, this.state = {
 						visible: !1
@@ -717,7 +717,7 @@
 					}, l.a.Children.toArray(p))
 				}
 			}
-			t.a = B(H)
+			t.a = H(B)
 		},
 		"./src/reddit/components/PostList/SomethingWrong.tsx": function(e, t, s) {
 			"use strict";
@@ -829,7 +829,7 @@
 				F = s.n(V);
 			const {
 				fbt: A
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = async ({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), H = async ({
 				dispatch: e,
 				gqlContext: t,
 				setRecommendationFooterView: s,
@@ -843,7 +843,7 @@
 				} catch (r) {
 					e(Object(I.d)())
 				}
-			}, H = ({
+			}, B = ({
 				displayText: e,
 				seeLessFromThisCommunity: t,
 				seeLessLikeThisCommunity: s,
@@ -918,7 +918,7 @@
 							r.current = !0, d(P.a.ThankYouView), o(Object(T.i)(p))
 						}, [p, o, d]),
 						g = Object(h.useCallback)(() => {
-							B({
+							H({
 								dispatch: i,
 								gqlContext: e,
 								setRecommendationFooterView: d,
@@ -927,7 +927,7 @@
 							}), r.current = !0, o(Object(T.a)(p))
 						}, [i, e, p, o, d, c]),
 						C = Object(h.useCallback)(() => {
-							u && (B({
+							u && (H({
 								dispatch: i,
 								gqlContext: e,
 								setRecommendationFooterView: d,
@@ -941,7 +941,7 @@
 							[F.a.CompactLayout]: t === O.g.Compact,
 							[F.a.LargeLayout]: t === O.g.Large
 						})
-					}, l === P.a.SeeFewerPostsView && m.a.createElement(H, {
+					}, l === P.a.SeeFewerPostsView && m.a.createElement(B, {
 						displayText: b,
 						seeLessFromThisCommunity: g,
 						seeLessLikeThisCommunity: C,
@@ -1213,14 +1213,14 @@
 						const V = ue(e, n, s, f, g, y, this.props, t, this.props.hostPostData),
 							F = be(e, n, this.props, t, C),
 							A = fe(e, this.props, l),
-							B = _.media && _.media.type === $.o.EMBED ? _.media.provider : null,
-							H = h && !T.isSponsored,
+							H = _.media && _.media.type === $.o.EMBED ? _.media.provider : null,
+							B = h && !T.isSponsored,
 							W = p && !T.isSponsored && !T.isScoreHidden,
 							D = !!(null == T ? void 0 : T.recommendationContext);
 						j = {
 							estHeight: Object(J.c)(T, n),
 							id: e,
-							isFocusable: !(!_.media || !(n === O.g.Large || n === O.g.Classic && Object($.H)(_.media))) && ($.d.has(_.media.type) && (!B || !$.s.has(B)) && !_.isSpoiler),
+							isFocusable: !(!_.media || !(n === O.g.Large || n === O.g.Classic && Object($.H)(_.media))) && ($.d.has(_.media.type) && (!H || !$.s.has(H)) && !_.isSpoiler),
 							trackOnEnteredViewport: V,
 							trackOnExitedViewport: F,
 							render: ({
@@ -1241,7 +1241,7 @@
 								forceLoadMedia: O,
 								hostPostData: o,
 								inSubredditOrProfile: k,
-								isCommentCountAnimationEnabled: H,
+								isCommentCountAnimationEnabled: B,
 								isCommentPermalink: r,
 								isCommentsPage: a,
 								isCountAnimShadowTestEnabled: u,
@@ -1592,9 +1592,9 @@
 				V = s("./src/reddit/contexts/InsideOverlay.tsx"),
 				F = s("./src/reddit/selectors/platform.ts"),
 				A = s("./src/telemetry/helpers/sendEvent.ts"),
-				B = s("./src/telemetry/helpers/sendTiming.ts"),
-				H = s("./src/reddit/components/Scroller/Simple.m.less"),
-				W = s.n(H);
+				H = s("./src/telemetry/helpers/sendTiming.ts"),
+				B = s("./src/reddit/components/Scroller/Simple.m.less"),
+				W = s.n(B);
 			const U = L.g,
 				D = 5 * p.K,
 				K = 3,
@@ -1654,7 +1654,7 @@
 						};
 						A.b.enqueue(new O.a({
 							args: [e, t],
-							cb: (e, t) => Object(B.a)(p.n.Redesign, {
+							cb: (e, t) => Object(H.a)(p.n.Redesign, {
 								data: e,
 								meta: t,
 								type: "scrollfps"
@@ -3009,15 +3009,15 @@
 			const r = e => {
 					const t = Object(i.c)(e, {
 						experimentEligibilitySelector: o.O,
-						experimentName: n.Bc
+						experimentName: n.Ac
 					});
-					return !(!t || Object(n.xf)(t))
+					return !(!t || Object(n.vf)(t))
 				},
 				a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: o.O,
-						experimentName: n.Bc
-					}) === n.id.ListingEnabled
+						experimentName: n.Ac
+					}) === n.gd.ListingEnabled
 				}
 		},
 		"./src/redditGQL/operations/UpdateRecommendationPreferences.json": function(e) {
@@ -3025,4 +3025,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.03f185f92ab07e1ca005.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.610b0608d716d4b7e2ad.js.map

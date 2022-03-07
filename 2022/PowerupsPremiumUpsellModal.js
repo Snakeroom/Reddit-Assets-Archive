@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.d1832e1e5f5ebd880182.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.b66bb519a124e6a8b5da.js
+// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal", "GoldPurchasePaymentActions", "Premium"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1199,7 +1199,7 @@
 					gqlContext: a
 				}) => {
 					const d = r();
-					if (!Object(b.i)(d)) return t((e => async (t, r, {
+					if (!Object(b.h)(d)) return t((e => async (t, r, {
 						apiContext: a
 					}) => {
 						t(g());
@@ -1252,7 +1252,7 @@
 					apiContext: i
 				}) => {
 					const d = a();
-					if (Object(b.i)(d)) return await r(w());
+					if (Object(b.h)(d)) return await r(w());
 					r(k());
 					try {
 						const n = await Object(c.c)({
@@ -2817,4 +2817,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.d1832e1e5f5ebd880182.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.b66bb519a124e6a8b5da.js.map

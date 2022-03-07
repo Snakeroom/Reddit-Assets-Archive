@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.2c501074a29221b1e4e0.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.d99974dc970ec516de3f.js
+// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
@@ -433,7 +433,7 @@
 				defaultImage: e,
 				userId: t
 			}) => {
-				const s = Object(c.e)(h.z),
+				const s = Object(c.e)(h.y),
 					{
 						processingAvatarImageUrl: n
 					} = a.a;
@@ -764,8 +764,8 @@
 				F = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				A = s("./src/reddit/icons/svgs/Send/index.tsx"),
 				I = s("./src/reddit/models/PostCreationForm/index.ts"),
-				z = s("./src/reddit/selectors/comments.ts"),
-				O = s("./src/reddit/selectors/posts.ts"),
+				O = s("./src/reddit/selectors/comments.ts"),
+				z = s("./src/reddit/selectors/posts.ts"),
 				S = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
 				L = s("./src/reddit/components/CommentsChat/MessageInput/AwardButton.tsx"),
 				N = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
@@ -782,15 +782,15 @@
 				K = h.a.wrapped(y.a, "RichTextEditor", B.a),
 				W = h.a.wrapped(f.a, "SmallChatUserIcon", B.a),
 				H = Object(l.b)(() => Object(d.c)({
-					draft: z.i,
-					errorMsgs: z.K,
-					hasError: z.v,
+					draft: O.i,
+					errorMsgs: O.K,
+					hasError: O.v,
 					liveStreamingChatCharacterLimit: e => {
 						const t = Object(S.a)(e);
 						return t ? t - 3 : 197
 					},
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
-					post: O.G
+					post: z.G
 				}), (e, {
 					isEditing: t,
 					comment: s,
@@ -1182,9 +1182,9 @@
 			})), s.d(t, "c", (function() {
 				return I
 			})), s.d(t, "n", (function() {
-				return z
-			})), s.d(t, "k", (function() {
 				return O
+			})), s.d(t, "k", (function() {
+				return z
 			})), s.d(t, "b", (function() {
 				return S
 			})), s.d(t, "d", (function() {
@@ -1430,13 +1430,13 @@
 					noun: "follow",
 					...i(t, e)
 				}),
-				z = e => t => ({
+				O = e => t => ({
 					source: "stream_player",
 					action: "click",
 					noun: "unfollow",
 					...i(t, e)
 				}),
-				O = e => t => ({
+				z = e => t => ({
 					source: "stream_player",
 					action: "click",
 					noun: "subscribe",
@@ -1535,7 +1535,7 @@
 			})), s.d(t, "i", (function() {
 				return F
 			})), s.d(t, "d", (function() {
-				return O
+				return z
 			})), s.d(t, "h", (function() {
 				return S
 			})), s.d(t, "k", (function() {
@@ -1691,12 +1691,12 @@
 					streamIdFromPath: s
 				}), (e, t, s, a, n) => !e || s.includes(e) || a.includes(e) ? t || n[0] : e),
 				I = Object(a.a)(b, g, w, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
-				z = Object(a.a)(b, g, (e, t) => {
+				O = Object(a.a)(b, g, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				O = Object(n.a)(Object(a.a)(A, x, (e, t) => e ? t[e] : void 0)),
+				z = Object(n.a)(Object(a.a)(A, x, (e, t) => e ? t[e] : void 0)),
 				S = Object(n.a)(Object(a.a)(I, x, (e, t) => e ? t[e] : void 0)),
-				L = Object(n.a)(Object(a.a)(z, x, (e, t) => e ? t[e] : void 0)),
+				L = Object(n.a)(Object(a.a)(O, x, (e, t) => e ? t[e] : void 0)),
 				N = (Object(n.a)(Object(a.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, x, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
 					...t[s],
 					preloadedPreviewUrl: e[s]
@@ -1729,8 +1729,8 @@
 					const n = a.stream.state;
 					return n === o.a.IS_LIVE || n === o.a.DISCONNECTED ? P.LIVE : n === o.a.ENDED && a.stream.vod_accessible ? P.VOD : P.UNAVAILABLE
 				}),
-				M = Object(a.a)(O, U, m.b, c.b, c.o, (e, t, s, a, n) => s ? a : e ? t === P.LIVE || t === P.VOD ? e.stream.hls_url : n : void 0),
-				q = Object(a.a)(O, U, T, (e, t, s) => e ? t === P.LIVE ? e.broadcast_time : t === P.VOD && s < e.broadcast_time ? s : 0 : 0),
+				M = Object(a.a)(z, U, m.b, c.b, c.o, (e, t, s, a, n) => s ? a : e ? t === P.LIVE || t === P.VOD ? e.stream.hls_url : n : void 0),
+				q = Object(a.a)(z, U, T, (e, t, s) => e ? t === P.LIVE ? e.broadcast_time : t === P.VOD && s < e.broadcast_time ? s : 0 : 0),
 				Z = (e, t) => {
 					const s = h(e);
 					return !!s && s[t] && s[t].chat_disabled
@@ -1755,4 +1755,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.2c501074a29221b1e4e0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.d99974dc970ec516de3f.js.map

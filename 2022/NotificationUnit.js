@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.8526ce098efd2c346abc.js
-// Retrieved at 3/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.732224706f4dff1f490b.js
+// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -410,11 +410,11 @@
 					var t, i, n, s, w, C, y, M, j, k, D, R, P;
 					const L = Object(E.a)(),
 						H = Object(N.d)(),
-						B = Object(N.e)(h.bb),
-						F = Object(N.e)(T.b),
+						F = Object(N.e)(h.bb),
+						B = Object(N.e)(T.b),
 						V = Object(N.e)(T.c),
-						W = Object(N.e)(T.a),
-						[z, Y] = Object(r.useState)(!1),
+						z = Object(N.e)(T.a),
+						[W, Y] = Object(r.useState)(!1),
 						{
 							activeOverflowMenuId: Z,
 							isInboxPostEmbedEnabled: G,
@@ -440,8 +440,8 @@
 						title: ce
 					} = q, me = null == ee ? void 0 : ee.messageType, ue = null === (i = null === (t = null == ee ? void 0 : ee.comment) || void 0 === t ? void 0 : t.parent) || void 0 === i ? void 0 : i.id, be = null === (n = null == ee ? void 0 : ee.post) || void 0 === n ? void 0 : n.id, pe = null == ee ? void 0 : ee.post, fe = null === (s = null == ee ? void 0 : ee.subreddit) || void 0 === s ? void 0 : s.id, ve = null == ee ? void 0 : ee.isBodyHidden, Ee = null == ee ? void 0 : ee.isPostHidden, xe = !le, Ne = `notif-${K?"tooltip":""}-menu-${re}`, Oe = Ne === Z, ge = me === x.a.CommentReply ? ue : be, Te = Object(d.a)(e.className, I.a.notificationItem, {
 						[I.a.unread]: xe,
-						[I.a.isNightMode]: B
-					}), he = F || W || V, we = {
+						[I.a.isNightMode]: F
+					}), he = B || z || V, we = {
 						id: re,
 						isClicked: !!le,
 						isViewed: !0,
@@ -495,11 +495,11 @@
 						isUnread: xe,
 						isFullWidth: K,
 						onEvent: De,
-						isInboxCTAsReplyEnabled: F,
-						isInboxCTAsAllEnabled: W,
+						isInboxCTAsReplyEnabled: B,
+						isInboxCTAsAllEnabled: z,
 						isInboxCTAsSeePostEnabled: V,
 						deeplinkUrl: te,
-						isNightMode: B
+						isNightMode: F
 					}))), Pe = {
 						className: I.a.link,
 						onClick: e => {
@@ -556,7 +556,7 @@
 						tooltipId: Ne
 					}), l.a.createElement(a.a, {
 						onChange: e => {
-							e.isIntersecting && !z && (L(Object(v.u)(we)), Y(!0))
+							e.isIntersecting && !W && (L(Object(v.u)(we)), Y(!0))
 						},
 						rootMargin: "0px 0px 0px 0px",
 						threshold: U
@@ -732,13 +732,13 @@
 				r = i("./src/reddit/selectors/user.ts");
 			const l = e => Object(r.N)(e) || Object(r.O)(e),
 				d = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: a.zd,
+					experimentName: a.xd,
 					experimentEligibilitySelector: l
 				}), s.a),
-				c = Object(n.a)(d, e => e === a.Bd.SeePostCTAs),
-				m = Object(n.a)(d, e => e === a.Bd.ReplyCTAs),
-				u = Object(n.a)(d, e => e === a.Bd.AllCTAs)
+				c = Object(n.a)(d, e => e === a.zd.SeePostCTAs),
+				m = Object(n.a)(d, e => e === a.zd.ReplyCTAs),
+				u = Object(n.a)(d, e => e === a.zd.AllCTAs)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.8526ce098efd2c346abc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.732224706f4dff1f490b.js.map

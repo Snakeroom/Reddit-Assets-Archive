@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.8f4666e939bb1e7f5cdb.js
-// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.87ff099bca84e64f62d4.js
+// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -267,8 +267,8 @@
 				q = n("./src/reddit/constants/localStorage.ts"),
 				J = n("./src/reddit/contexts/ApiContext.tsx"),
 				Z = n("./src/reddit/featureFlags/component.tsx"),
-				H = n("./src/reddit/helpers/localStorage/index.ts"),
-				K = n("./src/reddit/helpers/name/index.ts"),
+				K = n("./src/reddit/helpers/localStorage/index.ts"),
+				H = n("./src/reddit/helpers/name/index.ts"),
 				z = n("./src/lib/makeApiRequest/index.ts"),
 				X = n("./src/lib/omitHeaders/index.ts"),
 				V = n("./src/reddit/constants/headers.ts");
@@ -289,13 +289,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = ae.cachedData || Object(H.D)(q.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = ae.cachedData || Object(K.D)(q.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > se) {
 						const t = await Y(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(H.Ib)(q.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(K.Ib)(q.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ae.cachedData = e, e ? e.subreddits : []
 				}
@@ -323,7 +323,7 @@
 						hk: "487Ffc"
 					})), d.a.createElement("div", {
 						className: ee.a.description
-					}, te._("{subreddits list} and more are looking for moderators!", [te._param("subreddits list", d.a.createElement("strong", null, e.map(K.c).join(", ") + (e.length > 1 ? "," : "")))], {
+					}, te._("{subreddits list} and more are looking for moderators!", [te._param("subreddits list", d.a.createElement("strong", null, e.map(H.c).join(", ") + (e.length > 1 ? "," : "")))], {
 						hk: "2Tb946"
 					}))), d.a.createElement(k.n, {
 						className: ee.a.button,
@@ -665,15 +665,15 @@
 			}
 			var Me = n("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Ae.Gd,
+					experimentName: Ae.Ed,
 					experimentEligibilitySelector: We.a
 				}), Me.a),
-				Qe = Object(u.a)(Ue, e => e === Ae.Hd.Enabled);
+				Qe = Object(u.a)(Ue, e => e === Ae.Fd.Enabled);
 			var qe = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Je = n("./src/reddit/selectors/user.ts");
 			var Ze = n("./src/reddit/selectors/seo/linksModule.ts"),
-				He = n("./src/reddit/selectors/subreddit.ts"),
-				Ke = n("./src/reddit/selectors/subredditLeaderboard.ts");
+				Ke = n("./src/reddit/selectors/subreddit.ts"),
+				He = n("./src/reddit/selectors/subredditLeaderboard.ts");
 			n("./src/reddit/components/TopSubredditsWidget/index.tsx"), n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx");
 			var ze = n("./src/reddit/helpers/createBannerProperties/index.ts"),
 				Xe = n("./src/reddit/selectors/meta.ts");
@@ -691,15 +691,15 @@
 					},
 					bffsLeaderboardVariant: Ge,
 					inRpanTopVideoEntrypointExperiment: qe.e,
-					rankings: e => Object(He.N)(e, Ve),
+					rankings: e => Object(Ke.N)(e, Ve),
 					shouldShowTopicsWidget: e => {
 						const t = Object(qe.e)(e),
-							n = !!Object(He.N)(e, Ve);
+							n = !!Object(Ke.N)(e, Ve);
 						return (!t || !n) && function(e) {
 							return Object(We.c)(e, {
 								experimentEligibilitySelector: Je.O,
 								experimentName: Ae.Tb
-							}) === Ae.dd
+							}) === Ae.bd
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -808,7 +808,7 @@
 							},
 							isOnlyModIncluded: !1
 						},
-						n = Object(Ke.d)(Ve, Ye);
+						n = Object(He.d)(Ve, Ye);
 					e(Object(b.b)(t, n))
 				},
 				subredditAboutRequested: t => e(Object(m.u)(t))
@@ -2195,4 +2195,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.8f4666e939bb1e7f5cdb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.87ff099bca84e64f62d4.js.map

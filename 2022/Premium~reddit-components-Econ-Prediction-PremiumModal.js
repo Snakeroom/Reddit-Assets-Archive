@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.d22c255986aaa07fb7ad.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.ac05b34db9be98f9ec03.js
+// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1230,7 +1230,7 @@
 					gqlContext: o
 				}) => {
 					const d = r();
-					if (!Object(b.i)(d)) return t((e => async (t, r, {
+					if (!Object(b.h)(d)) return t((e => async (t, r, {
 						apiContext: o
 					}) => {
 						t(y());
@@ -1283,7 +1283,7 @@
 					apiContext: i
 				}) => {
 					const d = o();
-					if (Object(b.i)(d)) return await r(x());
+					if (Object(b.h)(d)) return await r(x());
 					r(w());
 					try {
 						const n = await Object(s.c)({
@@ -2208,7 +2208,7 @@
 					a = Object(p.a)(),
 					s = Object(c.e)(y.m),
 					i = !!s,
-					b = Object(c.e)(e => !t && i && Object(g.x)(e)),
+					b = Object(c.e)(e => !t && i && Object(g.w)(e)),
 					O = Object(c.e)(y.j),
 					k = Object(c.e)(y.l);
 				if (!(null == k ? void 0 : k.length)) return o.a.createElement("div", null, o.a.createElement(u.a, {
@@ -2667,4 +2667,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.d22c255986aaa07fb7ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.ac05b34db9be98f9ec03.js.map

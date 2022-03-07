@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ecfde1cfd2fedd8840cf.js
-// Retrieved at 3/7/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.242272d3befee3ab36f6.js
+// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./src/lib/focusVisible/index.js": function(e, t, s) {
@@ -150,7 +150,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.wf)(e.category_name)
+									displayText: Object(m.uf)(e.category_name)
 								};
 								s.push(a.id), t[a.id] = a
 							}), {
@@ -727,9 +727,9 @@
 							n = Object(ne.K)(s(), {
 								identifier: B.belongsTo
 							});
-						if (n && (e => q.Le.Redirect === Object(G.b)(e, {
+						if (n && (e => q.Je.Redirect === Object(G.b)(e, {
 								experimentEligibilitySelector: oe,
-								experimentName: q.Ee
+								experimentName: q.Ce
 							}))(s())) return void t(Object(o.c)(n.url));
 						if ((B.media && B.media.type) === A.o.LIVEVIDEO) {
 							const e = `/rpan${B.belongsTo.type===P.a.SUBREDDIT?n.url:"/"}${Object(v.u)(B.id)}`;
@@ -6648,7 +6648,7 @@
 				n = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(n.a)(e);
-					return Boolean(t) && !Object(a.xf)(t)
+					return Boolean(t) && !Object(a.vf)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -6669,4 +6669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ecfde1cfd2fedd8840cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.242272d3befee3ab36f6.js.map

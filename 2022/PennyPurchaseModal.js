@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.461355269aef40ad3601.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.d5b1fecb4b9e11eef443.js
+// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./src/lib/loadRedditAdsPixel.ts": function(e, t, a) {
@@ -516,7 +516,7 @@
 			}) => {
 				const P = Object(b.a)(),
 					v = Object(m.d)(),
-					E = Object(m.e)(p.i),
+					E = Object(m.e)(p.h),
 					j = Object(m.e)(A.a);
 				if (!!a || !E) {
 					const m = () => {
@@ -1775,7 +1775,7 @@
 				p = a("./node_modules/react-redux/es/index.js"),
 				h = a("./src/reddit/constants/experiments.ts"),
 				b = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const g = Object(b.a)(h.Fc);
+			const g = Object(b.a)(h.Ec);
 			let C = null;
 
 			function y() {
@@ -1856,4 +1856,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.461355269aef40ad3601.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.d5b1fecb4b9e11eef443.js.map

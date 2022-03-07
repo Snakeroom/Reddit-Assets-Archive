@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.49cf6ec2e33a2f9e406e.js
-// Retrieved at 3/7/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.f3fffe20278cbf376bc5.js
+// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -2735,7 +2735,7 @@
 				c = ({
 					className: e
 				}) => {
-					return Object(a.e)(o.t) ? r.a.createElement(d, {
+					return Object(a.e)(o.s) ? r.a.createElement(d, {
 						className: e
 					}) : r.a.createElement(i, {
 						className: e
@@ -4149,9 +4149,9 @@
 			function te({
 				subredditId: e
 			}) {
-				const t = Object(a.e)(o.s),
-					n = Object(a.e)(o.r),
-					s = Object(a.e)(o.q);
+				const t = Object(a.e)(o.r),
+					n = Object(a.e)(o.q),
+					s = Object(a.e)(o.p);
 				return r.a.createElement("div", {
 					className: ee.a.container
 				}, t && r.a.createElement(k, {
@@ -8259,7 +8259,7 @@
 					communityFlairSortedKeys: (e, {
 						subredditId: t
 					}) => Object(De.c)(e, t),
-					isInNewModuleNCPV3Experiment: e => Object(Re.a)(e) === we.ge.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Re.a)(e) === we.ee.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
@@ -11069,7 +11069,7 @@
 						subredditId: t
 					})),
 					x = Object(o.e)(p.a),
-					E = x !== u.ge.NewModule;
+					E = x !== u.ee.NewModule;
 				return (null === (s = null == f ? void 0 : f.cards) || void 0 === s ? void 0 : s.length) > 0 && E ? a.a.createElement(h, {
 					closeModuleOnMount: !!e && e !== m.g.Large,
 					subredditId: t,
@@ -12351,8 +12351,8 @@
 				a = n("./src/reddit/selectors/meta.ts");
 			const o = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(a.d)(e) && "US" === Object(a.b)(e),
-				experimentName: s.Fe
-			}) === s.Me.Enabled
+				experimentName: s.De
+			}) === s.Ke.Enabled
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -12428,4 +12428,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.49cf6ec2e33a2f9e406e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f3fffe20278cbf376bc5.js.map

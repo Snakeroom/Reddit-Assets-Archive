@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.44b50850976e2de5de6e.js
-// Retrieved at 3/2/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.ba4dbb8282264dcccaed.js
+// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -90,10 +90,10 @@
 					SNOOVATAR_BASE_URL: s.a.snoovatarUrl,
 					SNOOVATAR_API_URL: `${s.a.snoovatarUrl}/api`
 				},
-				f = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				j = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.DataWrapper
 				}))),
-				j = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				p = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.Builder
 				})));
 			t.default = function() {
@@ -107,7 +107,7 @@
 						expiration: new Date(e.expires).getTime()
 					}), [e]),
 					E = Object(u.a)(),
-					p = Object(o.e)(e => x && Object(m.f)(e));
+					f = Object(o.e)(e => x && Object(m.e)(e));
 				return Object(r.useEffect)(() => {
 					(async () => {
 						await a.e(6).then(a.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
@@ -116,17 +116,17 @@
 					className: Object(c.a)(b.a.container, {
 						[b.a.containerExp]: d
 					})
-				}, p ? n.a.createElement(r.Suspense, {
+				}, f ? n.a.createElement(r.Suspense, {
 					fallback: n.a.createElement("div", null)
-				}, n.a.createElement(f, {
+				}, n.a.createElement(j, {
 					authHeaders: x,
 					config: O,
 					sendEvent: v.a
-				}, n.a.createElement(j, null))) : n.a.createElement(_.a, {
+				}, n.a.createElement(p, null))) : n.a.createElement(_.a, {
 					className: b.a.content
 				})) : null
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.44b50850976e2de5de6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.ba4dbb8282264dcccaed.js.map

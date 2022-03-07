@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.625c62330f617cb24837.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.dc96688a29ec02ddb189.js
+// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1092,7 +1092,7 @@
 					gqlContext: c
 				}) => {
 					const d = r();
-					if (!Object(f.i)(d)) return t((e => async (t, r, {
+					if (!Object(f.h)(d)) return t((e => async (t, r, {
 						apiContext: c
 					}) => {
 						t(O());
@@ -1145,7 +1145,7 @@
 					apiContext: i
 				}) => {
 					const d = c();
-					if (Object(f.i)(d)) return await r(E());
+					if (Object(f.h)(d)) return await r(E());
 					r(_());
 					try {
 						const n = await Object(a.c)({
@@ -1343,7 +1343,7 @@
 						return null === (r = Object(G.b)(e, null == n ? void 0 : n.id)) || void 0 === r ? void 0 : r.name
 					},
 					isFreeAwardEventEnabled: e => Object(q.a)(e) && Object(K.g)(e),
-					isPremiumCoinStoreUpsellEnabled: E.v,
+					isPremiumCoinStoreUpsellEnabled: E.u,
 					isPremiumSubscriber: z.v,
 					premiumPackages: K.l,
 					purchaseCatalogError: K.n,
@@ -1930,4 +1930,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.625c62330f617cb24837.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.dc96688a29ec02ddb189.js.map

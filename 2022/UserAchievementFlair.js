@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.30c3577f829fe3a1c418.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.bb039b5f2930b47674f6.js
+// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, r) {
@@ -59,7 +59,7 @@
 					E = Object(i.e)(e => Object(v.S)(e, {
 						subredditId: t
 					})),
-					j = Object(i.d)(),
+					O = Object(i.d)(),
 					x = Object(m.a)(),
 					{
 						container: I,
@@ -87,7 +87,7 @@
 					className: f.a.flairs,
 					onScroll: N,
 					ref: I
-				}, h.map(e => n.a.createElement(O, {
+				}, h.map(e => n.a.createElement(j, {
 					flair: e,
 					key: e.type
 				}))), n.a.createElement("div", {
@@ -99,13 +99,13 @@
 					priority: o.c.Secondary,
 					className: f.a.ctaButton,
 					onClick: () => {
-						x(Object(d.a)()), j(Object(c.f)())
+						x(Object(d.a)()), O(Object(c.f)())
 					},
 					isFullWidth: !0
 				}, _._("View your achievements", null, {
 					hk: "2ZyIE3"
 				}))))
-			}, O = ({
+			}, j = ({
 				flair: e
 			}) => n.a.createElement("div", {
 				className: f.a.flairItem,
@@ -119,7 +119,7 @@
 			})), n.a.createElement("div", {
 				className: f.a.flairName
 			}, n.a.createElement("span", null, e.name)));
-			var j = r("./src/reddit/selectors/experiments/econ/index.ts"),
+			var O = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				x = r("./src/reddit/components/Econ/PowerupsFlair/UserAchievementFlair.m.less"),
 				I = r.n(x);
 			const w = ({
@@ -152,7 +152,7 @@
 				if (Object(i.e)(e => Object(b.e)(e, {
 						subredditId: t,
 						userId: r
-					}) && Object(j.k)(e))) return null;
+					}) && Object(O.j)(e))) return null;
 				const v = u ? [d, ...u.achievementTypes].filter(Boolean) : null;
 				if (!(!!o || !!d) || !v) return null;
 				const h = (null == d ? void 0 : d.type) === (null == o ? void 0 : o.type) ? null : d,
@@ -312,4 +312,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.30c3577f829fe3a1c418.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.bb039b5f2930b47674f6.js.map

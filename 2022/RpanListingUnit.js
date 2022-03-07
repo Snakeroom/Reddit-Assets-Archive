@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.2b5dbe60f226b5ab3b73.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.46c9d584c1363d864a7c.js
+// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -52,16 +52,16 @@
 			const p = Object(i.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Od
+					experimentName: u.Md
 				});
-				return Object(u.xf)(t) ? void 0 : t
+				return Object(u.vf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Pd
+					experimentName: u.Nd
 				});
-				return Object(u.xf)(t) ? void 0 : t
-			}, (e, t) => e === u.Sd.Enabled && t === u.Sd.Enabled);
+				return Object(u.vf)(t) ? void 0 : t
+			}, (e, t) => e === u.Qd.Enabled && t === u.Qd.Enabled);
 			var h = n("./src/config.ts");
 			var f = n("./src/reddit/selectors/user.ts");
 			const b = e => {
@@ -755,8 +755,8 @@
 				k = n("./src/reddit/components/Flatlist/index.tsx"),
 				L = n("./src/reddit/components/Flatlist/constants.ts"),
 				j = n("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
-				P = n("./src/reddit/components/HlsVideo/index.tsx"),
-				M = n("./src/reddit/components/OverflowMenu/index.tsx"),
+				M = n("./src/reddit/components/HlsVideo/index.tsx"),
+				P = n("./src/reddit/components/OverflowMenu/index.tsx"),
 				R = n("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				U = n("./src/reddit/components/PostLeftRail/index.tsx"),
 				V = n("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -770,7 +770,7 @@
 				q = n.n(K);
 			const {
 				fbt: z
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), J = 20, Z = l.qc, X = l.qc, Q = Object(c.a)(P.a, {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), J = 20, Z = l.qc, X = l.qc, Q = Object(c.a)(M.a, {
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(o.b)(() => Object(i.c)({
 				autoplay: N.b,
@@ -1250,7 +1250,7 @@
 				})),
 				ie = ({
 					onClick: e
-				}) => r.a.createElement(M.b, {
+				}) => r.a.createElement(P.b, {
 					className: q.a.overflowMenu,
 					dropdownClassName: q.a.overflowDropdown,
 					dropdownId: "rpan-du-overflow"
@@ -1632,9 +1632,9 @@
 			})), n.d(t, "clickConfirmAwardEvent", (function() {
 				return j
 			})), n.d(t, "clickGetPremiumEvent", (function() {
-				return P
-			})), n.d(t, "clickAddCoinsButtonEvent", (function() {
 				return M
+			})), n.d(t, "clickAddCoinsButtonEvent", (function() {
+				return P
 			})), n.d(t, "clickNextButtonEvent", (function() {
 				return R
 			})), n.d(t, "clickCloseGildModalEvent", (function() {
@@ -1785,7 +1785,7 @@
 						...l(t)
 					}
 				}),
-				P = (e, t) => n => ({
+				M = (e, t) => n => ({
 					...u(n, e),
 					source: "give_gold",
 					action: "click",
@@ -1795,7 +1795,7 @@
 						...l(t)
 					}
 				}),
-				M = e => t => ({
+				P = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -2581,13 +2581,13 @@
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.m
-					}) === s.dd
+					}) === s.bd
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: s.n
-					}) === s.dd
+					}) === s.bd
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -2718,4 +2718,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.2b5dbe60f226b5ab3b73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.46c9d584c1363d864a7c.js.map

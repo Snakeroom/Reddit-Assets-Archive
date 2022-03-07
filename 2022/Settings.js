@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.72437886457626e2897f.js
-// Retrieved at 3/7/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.e06542340bb9982eb613.js
+// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1310,7 +1310,7 @@
 					gqlContext: r
 				}) => {
 					const c = n();
-					if (!Object(h.i)(c)) return t((e => async (t, n, {
+					if (!Object(h.h)(c)) return t((e => async (t, n, {
 						apiContext: r
 					}) => {
 						t(_());
@@ -1363,7 +1363,7 @@
 					apiContext: l
 				}) => {
 					const c = r();
-					if (Object(h.i)(c)) return await n(k());
+					if (Object(h.h)(c)) return await n(k());
 					n(w());
 					try {
 						const s = await Object(i.c)({
@@ -4444,7 +4444,7 @@
 				url: M,
 				isHovercard: T
 			}) => {
-				const B = Object(r.e)(e => !y && !!w && Object(m.g)(e)),
+				const B = Object(r.e)(e => !y && !!w && Object(m.f)(e)),
 					F = Object(r.e)(u.b),
 					U = w && Object(c.e)(w) && F;
 				return a.a.createElement(a.a.Fragment, null, a.a.createElement(h.a, {
@@ -5689,7 +5689,7 @@
 					cancelSubscriptionModalIsOpen: Object(ge.b)("settings_optout_modal_id"),
 					premiumBenefitsModalIsOpen: Object(ge.b)("premium_benefits_modal_id"),
 					premiumFeedbackModalIsOpen: Object(ge.b)("premium_feedback_modal_id"),
-					isPremiumImprovedCancellationEnabled: _e.w,
+					isPremiumImprovedCancellationEnabled: _e.v,
 					goldExpiration: ve.q,
 					hasAndroidSubscription: ve.r,
 					hasIosSubscription: ve.x,
@@ -12230,7 +12230,7 @@
 						return Object(ae.c)(e, {
 							experimentName: se.nc,
 							experimentEligibilitySelector: ae.a
-						}) === se.dd
+						}) === se.bd
 					}
 				}),
 				uo = Object(ge.u)(),
@@ -12463,7 +12463,7 @@
 			const o = e => Object(a.c)(e, {
 				experimentName: s.E,
 				experimentEligibilitySelector: () => Object(r.N)(e)
-			}) === s.dd
+			}) === s.bd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -12627,4 +12627,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.72437886457626e2897f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e06542340bb9982eb613.js.map

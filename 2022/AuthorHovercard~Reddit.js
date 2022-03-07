@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.7c37c0b8835b3d447743.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.9b669c289cbef970fbfb.js
+// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -142,7 +142,7 @@
 					u = (e => Object(v.c)(e, {
 						experimentName: N.Fb,
 						experimentEligibilitySelector: v.a
-					}) === N.dd)(r);
+					}) === N.bd)(r);
 				if (await Object(o.a)() || d) return;
 				await E(r, a);
 				_.j(r), await Object(c.b)(e, t, () => {
@@ -1763,8 +1763,8 @@
 				}) === a.w.Enabled,
 				o = e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: a.Dc
-				}) === a.dd
+					experimentName: a.Cc
+				}) === a.bd
 		},
 		"./src/reddit/selectors/experiments/notifications.ts": function(e, t, n) {
 			"use strict";
@@ -1786,23 +1786,23 @@
 			const s = e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
 					experimentName: a.mb
-				}) === a.kd.Karma,
+				}) === a.id.Karma,
 				o = e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
 					experimentName: a.mb
-				}) === a.kd.Memes,
+				}) === a.id.Memes,
 				r = e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
 					experimentName: a.mb
-				}) === a.kd.PnEmail,
+				}) === a.id.PnEmail,
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
 					experimentName: a.mb
-				}) === a.kd.Cats,
+				}) === a.id.Cats,
 				l = e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
 					experimentName: a.mb
-				}) === a.kd.Popular,
+				}) === a.id.Popular,
 				d = e => l(e) || c(e) || r(e) || o(e) || s(e)
 		},
 		"./src/redditGQL/operations/RegisterWebPushToken.json": function(e) {
@@ -1810,4 +1810,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.7c37c0b8835b3d447743.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.9b669c289cbef970fbfb.js.map
