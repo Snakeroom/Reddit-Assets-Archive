@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.4af2b33a26490bfe7f6c.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.49cf6ec2e33a2f9e406e.js
+// Retrieved at 3/7/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -6577,7 +6577,7 @@
 					x = c === l.db.Feed || c === l.db.PopoverFeed ? e.slice(0, 5) : e,
 					[v, y] = Object(s.useState)(!1),
 					O = (e = null) => {
-						n(e ? Object(h.r)(null == e ? void 0 : e.topic) : Object(h.q)()), t(Object(o.c)({
+						n(e ? Object(h.s)(null == e ? void 0 : e.topic) : Object(h.q)()), t(Object(o.c)({
 							type: p.c.REONBOARDING,
 							selectedInterests: e ? {
 								[e.id]: []
@@ -6585,8 +6585,8 @@
 						}))
 					},
 					j = Object(s.useCallback)(() => {
-						Object(b.a)(), y(!0)
-					}, []);
+						Object(b.a)(), n(Object(h.r)()), y(!0)
+					}, [n]);
 				return Object(b.b)() ? r.a.createElement("div", {
 					className: Object(_.a)(E.a.InterestPickerPreview, {
 						[E.a.Dismissed]: v
@@ -6638,7 +6638,7 @@
 						id: "interest-topic-recommendations",
 						estHeight: 300,
 						trackOnEnteredViewport: () => {
-							Object(b.d)(), s(Object(h.s)())
+							Object(b.d)(), s(Object(h.t)())
 						},
 						render: () => r.a.createElement(v, {
 							interests: n
@@ -12428,4 +12428,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.4af2b33a26490bfe7f6c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.49cf6ec2e33a2f9e406e.js.map

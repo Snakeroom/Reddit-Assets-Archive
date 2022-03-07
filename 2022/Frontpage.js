@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.ac31d8c708ef8a27039c.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.119db121ad2ec231383b.js
+// Retrieved at 3/7/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -4168,7 +4168,7 @@
 					f = i === d.db.Feed || i === d.db.PopoverFeed ? e.slice(0, 5) : e,
 					[v, E] = Object(s.useState)(!1),
 					k = (e = null) => {
-						a(e ? Object(h.r)(null == e ? void 0 : e.topic) : Object(h.q)()), t(Object(c.c)({
+						a(e ? Object(h.s)(null == e ? void 0 : e.topic) : Object(h.q)()), t(Object(c.c)({
 							type: p.c.REONBOARDING,
 							selectedInterests: e ? {
 								[e.id]: []
@@ -4176,8 +4176,8 @@
 						}))
 					},
 					O = Object(s.useCallback)(() => {
-						Object(b.a)(), E(!0)
-					}, []);
+						Object(b.a)(), a(Object(h.r)()), E(!0)
+					}, [a]);
 				return Object(b.b)() ? n.a.createElement("div", {
 					className: Object(_.a)(y.a.InterestPickerPreview, {
 						[y.a.Dismissed]: v
@@ -4229,7 +4229,7 @@
 						id: "interest-topic-recommendations",
 						estHeight: 300,
 						trackOnEnteredViewport: () => {
-							Object(b.d)(), s(Object(h.s)())
+							Object(b.d)(), s(Object(h.t)())
 						},
 						render: () => n.a.createElement(v, {
 							interests: a
@@ -7931,4 +7931,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.ac31d8c708ef8a27039c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.119db121ad2ec231383b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.198443932cfb0f05d329.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.ed96bf5d94059fc2f5dc.js
+// Retrieved at 3/7/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var n, d, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) d = r[l], Object.prototype.hasOwnProperty.call(a, d) && a[d] && b.push(a[d][0]), a[d] = 0;
@@ -1311,7 +1311,7 @@
 						"reddit-components-Governance-TransactionModals-ConvertToCoinsModal": "0e3ef1cedef974ed3130",
 						"vendors~RealtimeGQLSubscriptionAsync": "3d46ab9136aace60953b",
 						RealtimeGQLSubscriptionAsync: "49c64b0fbc6fb4be2226",
-						OnboardingModal: "43229e93e350fab1ecae",
+						OnboardingModal: "8a60b6e0ad687a4390c9",
 						AchievementsActions: "6d2e786ecd34c3ae5400",
 						Acknowledgements: "d11ad709b1b01d27180c",
 						Appeal: "e798868c3533104e0222",
@@ -1375,7 +1375,7 @@
 						FramedGild: "4ba52b5e78d37f176c69",
 						GildModal: "dfe392d75b36696c6f2f",
 						FramedModal: "0ceb3b611f01ae24df4a",
-						Frontpage: "ac31d8c708ef8a27039c",
+						Frontpage: "119db121ad2ec231383b",
 						FrontpageLinks: "31a3a1a1579ecc5a7d0c",
 						Geotagging: "235402e5cb2730f5f736",
 						GlobalModalContainer: "1cf96a1a919d9d581ab6",
@@ -1487,7 +1487,7 @@
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
 						ModListing: "8539e7d7246b87d42b93",
-						Subreddit: "4af2b33a26490bfe7f6c",
+						Subreddit: "49cf6ec2e33a2f9e406e",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "b1b748750a6395dcc18f",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "5685f3831e36b842bdc1",
 						LiveVideoPlayer: "fc209a09affecb1130f3",
@@ -1684,4 +1684,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.198443932cfb0f05d329.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.ed96bf5d94059fc2f5dc.js.map
