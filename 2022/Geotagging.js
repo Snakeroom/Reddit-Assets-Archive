@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.ee4683f3205c6a854f88.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.235402e5cb2730f5f736.js
+// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, n) {
@@ -38,8 +38,8 @@
 				b = n("./src/lib/hooks/useOnClickOutside.ts"),
 				p = n("./src/reddit/constants/keycodes.ts"),
 				g = n("./src/lib/makeGqlRequest/index.ts"),
-				x = n("./src/lib/sentry/index.ts"),
-				f = n("./src/redditGQL/operations/GeoPlaceAutocomplete.json");
+				f = n("./src/lib/sentry/index.ts"),
+				x = n("./src/redditGQL/operations/GeoPlaceAutocomplete.json");
 			! function(e) {
 				e.GoogleMaps = "GOOGLE_MAPS", e.Geonames = "GEONAMES"
 			}(l || (l = {}));
@@ -48,7 +48,7 @@
 				try {
 					s = await async function(e, t) {
 						return Object(g.a)(e, {
-							...f,
+							...x,
 							variables: t
 						})
 					}(e(), {
@@ -56,16 +56,16 @@
 						sessionId: t
 					})
 				} catch (a) {
-					return x.c.captureException(a), []
+					return f.c.captureException(a), []
 				}
 				return s.body.data.geoPlaceAutocomplete || []
 			};
 			var _ = n("./src/reddit/hooks/useGqlContext.ts"),
 				E = n("./src/reddit/icons/svgs/Location/index.tsx"),
 				S = n("./src/reddit/components/GeoForm/index.m.less"),
-				v = n.n(S);
+				j = n.n(S);
 
-			function j(e) {
+			function v(e) {
 				const {
 					value: t,
 					setValue: n,
@@ -74,7 +74,7 @@
 					onFocus: c,
 					sessionId: l,
 					className: u
-				} = e, b = Object(_.a)(), [g, x] = Object(a.useState)(!1), f = function(e, t, n) {
+				} = e, b = Object(_.a)(), [g, f] = Object(a.useState)(!1), x = function(e, t, n) {
 					const [s, r] = Object(a.useState)([]), o = Object(a.useMemo)(() => m()(n, 300), [n]);
 					return Object(a.useEffect)(() => {
 						e && t && o(e).then(e => {
@@ -83,7 +83,7 @@
 					}, [e]), s
 				}(t, g, h(b, l)), {
 					highlightValue: S,
-					selectedIndex: j,
+					selectedIndex: v,
 					onKeyDown: N,
 					isClosed: C,
 					setClosed: P
@@ -104,16 +104,16 @@
 						isClosed: o,
 						setClosed: i
 					}
-				}(f, n, o), y = `location-input-${l}`;
+				}(x, n, o), y = `location-input-${l}`;
 				return r.a.createElement("div", {
-					className: v.a.autocompleteInput
+					className: j.a.autocompleteInput
 				}, r.a.createElement("label", {
-					className: v.a.geoLabel,
+					className: j.a.geoLabel,
 					htmlFor: y
 				}, r.a.createElement(E.a, {
-					className: v.a.locationIcon
+					className: j.a.locationIcon
 				})), r.a.createElement("input", {
-					className: Object(d.a)(v.a.geoInput, u),
+					className: Object(d.a)(j.a.geoInput, u),
 					name: y,
 					disabled: i,
 					onKeyDown: N,
@@ -125,15 +125,15 @@
 						n(e.currentTarget.value), o(void 0), P(!1)
 					},
 					onFocus: () => {
-						x(!0), c()
+						f(!0), c()
 					},
-					onBlur: () => x(!1)
-				}), f.length && !C ? r.a.createElement(O, {
+					onBlur: () => f(!1)
+				}), x.length && !C ? r.a.createElement(O, {
 					id: l,
-					items: f.map(e => e.name),
-					selectedIndex: j,
+					items: x.map(e => e.name),
+					selectedIndex: v,
 					selectValue: e => {
-						n(f[e].name), o(f[e]), P(!0)
+						n(x[e].name), o(x[e]), P(!0)
 					},
 					onClickOutside: () => P(!0)
 				}) : null)
@@ -148,13 +148,13 @@
 					onClickOutside: o
 				} = e;
 				return Object(b.a)(`autocomplete-dropdown-${t}`, o), r.a.createElement("ul", {
-					className: v.a.autocompleteDropdown,
+					className: j.a.autocompleteDropdown,
 					id: `autocomplete-dropdown-${t}`
 				}, n.map((e, t) => r.a.createElement("li", {
 					key: `${e}${t}`,
 					onClick: () => a(t),
 					className: Object(d.a)({
-						[v.a.highlight]: t === s
+						[j.a.highlight]: t === s
 					})
 				}, e)))
 			}
@@ -173,20 +173,20 @@
 				} = e, g = function() {
 					const [e, t] = Object(a.useState)(!1);
 					return Object(a.useEffect)(() => t(!0), []), e
-				}(), [x] = Object(a.useState)(() => i()()), [f, h] = Object(a.useState)(n || ""), [_, E] = Object(a.useState)(o);
+				}(), [f] = Object(a.useState)(() => i()()), [x, h] = Object(a.useState)(n || ""), [_, E] = Object(a.useState)(o);
 				return g ? r.a.createElement("form", {
-					className: Object(d.a)(v.a.geoForm, t),
+					className: Object(d.a)(j.a.geoForm, t),
 					onSubmit: t => {
 						t.preventDefault(), (null == o ? void 0 : o.id) !== (null == _ ? void 0 : _.id) && e.onSubmit({
-							name: f,
+							name: x,
 							place: _,
-							sessionId: x
+							sessionId: f
 						})
 					}
-				}, r.a.createElement(j, {
+				}, r.a.createElement(v, {
 					className: p,
-					value: f,
-					sessionId: x,
+					value: x,
+					sessionId: f,
 					setValue: e => {
 						h(e), b(e)
 					},
@@ -196,7 +196,7 @@
 					disabled: l,
 					onFocus: u
 				}), _ && _.id !== (null == o ? void 0 : o.id) && r.a.createElement(c.o, {
-					className: v.a.submitButton,
+					className: j.a.submitButton,
 					type: "submit",
 					disabled: l
 				}, s.fbt._("Submit", null, {
@@ -255,16 +255,16 @@
 				b = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
 				p = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				g = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				x = n("./src/reddit/selectors/moderatorPermissions.ts"),
-				f = n("./src/reddit/selectors/structuredStyles.ts"),
+				f = n("./src/reddit/selectors/moderatorPermissions.ts"),
+				x = n("./src/reddit/selectors/structuredStyles.ts"),
 				h = n("./src/reddit/selectors/userPrefs.ts"),
 				_ = n("./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less"),
 				E = n.n(_);
 			const {
 				fbt: S
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = u.a.div("BladeContainer", E.a), j = u.a.wrapped(g.a, "CloseIcon", E.a), O = u.a.div("LoadingTitleContainer", E.a), N = u.a.div("LoadingNavContainer", E.a), C = u.a.div("ShortLoadingNav", E.a), P = u.a.wrapped(p.a, "ThemedChevron", E.a), y = ({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), j = u.a.div("BladeContainer", E.a), v = u.a.wrapped(g.a, "CloseIcon", E.a), O = u.a.div("LoadingTitleContainer", E.a), N = u.a.div("LoadingNavContainer", E.a), C = u.a.div("ShortLoadingNav", E.a), P = u.a.wrapped(p.a, "ThemedChevron", E.a), y = ({
 				...e
-			}) => o.a.createElement(v, null, o.a.createElement(j, null), o.a.createElement(b.k, null, o.a.createElement(b.p, null, S._("Back to mod tools", null, {
+			}) => o.a.createElement(j, null, o.a.createElement(v, null), o.a.createElement(b.k, null, o.a.createElement(b.p, null, S._("Back to mod tools", null, {
 				hk: "1YCI0W"
 			})), o.a.createElement(b.o, null, o.a.createElement(O, null, o.a.createElement("div", {
 				className: Object(l.a)(E.a.LoadingTitle, e.isLoading && E.a.loading)
@@ -285,9 +285,9 @@
 					isLoading: !0
 				})
 			}), T = Object(d.c)({
-				isEditing: f.i,
+				isEditing: x.i,
 				isSubscriptionsPinned: h.b,
-				moderatorPermissions: x.m
+				moderatorPermissions: f.m
 			});
 			t.a = Object(i.b)(T)(e => {
 				const t = e.moderatorPermissions && a()(e.moderatorPermissions).some(e => e);
@@ -358,9 +358,9 @@
 			})), n.d(t, "g", (function() {
 				return g
 			})), n.d(t, "i", (function() {
-				return x
-			})), n.d(t, "e", (function() {
 				return f
+			})), n.d(t, "e", (function() {
+				return x
 			})), n.d(t, "b", (function() {
 				return h
 			})), n.d(t, "c", (function() {
@@ -383,8 +383,8 @@
 				b = s.a.h2("FormGroupTitle", r.a),
 				p = s.a.div("FormElement", r.a),
 				g = s.a.div("FormGroupDescription", r.a),
-				x = s.a.div("FormItem", r.a),
-				f = s.a.h3("FormElementTitle", r.a),
+				f = s.a.div("FormItem", r.a),
+				x = s.a.h3("FormElementTitle", r.a),
 				h = s.a.div("FormElementDescription", r.a),
 				_ = s.a.div("FormElementError", r.a),
 				E = s.a.div("FormElementSubGroup", r.a),
@@ -437,21 +437,21 @@
 				b = n("./node_modules/fbt/lib/FbtPublic.js"),
 				p = n("./node_modules/react-redux/es/index.js"),
 				g = n("./node_modules/reselect/es/index.js"),
-				x = n("./src/lib/prettyPrintNumber/index.ts"),
-				f = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				f = n("./src/lib/prettyPrintNumber/index.ts"),
+				x = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				h = n("./src/reddit/components/SubscribeButton/index.tsx"),
 				_ = n("./src/reddit/constants/posts.ts"),
 				E = n("./src/reddit/controls/InternalLink/index.tsx"),
 				S = n("./src/reddit/helpers/name/index.ts"),
-				v = n("./src/reddit/helpers/widgets/index.tsx"),
-				j = n("./src/reddit/selectors/subreddit.ts"),
+				j = n("./src/reddit/helpers/widgets/index.tsx"),
+				v = n("./src/reddit/selectors/subreddit.ts"),
 				O = n("./src/reddit/selectors/user.ts"),
 				N = n("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
 				C = n.n(N);
 			const P = Object(g.c)({
 				isLoggedIn: O.O,
-				subreddit: j.S,
-				subredditAboutInfo: j.t
+				subreddit: v.S,
+				subredditAboutInfo: v.t
 			});
 			class y extends a.a.Component {
 				constructor() {
@@ -463,7 +463,7 @@
 							subredditAboutInfo: s
 						} = this.props;
 						if (!n) return;
-						const a = Object(v.c)(n, s);
+						const a = Object(j.c)(n, s);
 						t(Object(u.o)(e, a))
 					}
 				}
@@ -475,7 +475,7 @@
 					} = this.props;
 					return n ? a.a.createElement("div", {
 						className: Object(o.a)(C.a.Container, e)
-					}, a.a.createElement(f.b, {
+					}, a.a.createElement(x.b, {
 						className: C.a.Icon,
 						subredditOrProfile: n
 					}), a.a.createElement("div", {
@@ -491,7 +491,7 @@
 					}, b.fbt._({
 						"*": "{subscribers count} members",
 						_1: "member"
-					}, [b.fbt._plural(n.subscribers, "subscribers count", Object(x.b)(n.subscribers))], {
+					}, [b.fbt._plural(n.subscribers, "subscribers count", Object(f.b)(n.subscribers))], {
 						hk: "48BXj1"
 					})))), a.a.createElement(h.a, {
 						border: !1,
@@ -635,32 +635,6 @@
 				variables: r(t)
 			})
 		},
-		"./src/reddit/icons/svgs/Chevron/index.m.less": function(e, t, n) {
-			e.exports = {
-				chevron: "_1c_YBKkiW4FhhLJPkq9c1v"
-			}
-		},
-		"./src/reddit/icons/svgs/Chevron/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				a = n.n(s),
-				r = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/icons/svgs/Chevron/index.m.less"),
-				i = n.n(o);
-			t.a = e => a.a.createElement("svg", {
-				className: Object(r.a)(i.a.chevron, e.className),
-				viewBox: "0 0 9 14",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, a.a.createElement("g", {
-				transform: "translate(-6.000000, -3.000000)"
-			}, a.a.createElement("polygon", {
-				fill: "none",
-				points: "0 20 20 20 20 0 0 0"
-			}), a.a.createElement("polygon", {
-				fill: "inherit",
-				points: "7.47566213 3 14.4756621 10 7.47566213 17 6 15.5239203 11.5239203 10 6 4.47566213"
-			})))
-		},
 		"./src/reddit/icons/svgs/HamburgerClose/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
@@ -749,21 +723,21 @@
 							}
 						}
 					}
-				}, b = n("./src/reddit/helpers/localStorage/index.ts"), p = n("./src/reddit/helpers/trackers/screenview.ts"), g = n("./src/reddit/hooks/useGqlContext.ts"), x = n("./src/reddit/hooks/useTracking.ts"), f = n("./src/reddit/layout/page/Listing/index.tsx"), h = n("./node_modules/react-router-dom/esm/react-router-dom.js"), _ = n("./src/reddit/controls/Button/index.tsx"), E = n("./src/reddit/pages/Geotagging/index.m.less"), S = n.n(E);
+				}, b = n("./src/reddit/helpers/localStorage/index.ts"), p = n("./src/reddit/helpers/trackers/screenview.ts"), g = n("./src/reddit/hooks/useGqlContext.ts"), f = n("./src/reddit/hooks/useTracking.ts"), x = n("./src/reddit/layout/page/Listing/index.tsx"), h = n("./node_modules/react-router-dom/esm/react-router-dom.js"), _ = n("./src/reddit/controls/Button/index.tsx"), E = n("./src/reddit/pages/Geotagging/index.m.less"), S = n.n(E);
 			const {
-				fbt: v
+				fbt: j
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function j() {
+			function v() {
 				return a.a.createElement("div", {
 					className: S.a.done
 				}, a.a.createElement("p", {
 					className: S.a.headerText1
-				}, v._("Done and done!", null, {
+				}, j._("Done and done!", null, {
 					hk: "1RzJEG"
 				})), a.a.createElement("p", {
 					className: S.a.headerText2
-				}, v._("Thanks for all your help. Your contributions have helped make Reddit a better place.", null, {
+				}, j._("Thanks for all your help. Your contributions have helped make Reddit a better place.", null, {
 					hk: "1xzgiX"
 				})), a.a.createElement(h.a, {
 					to: "/"
@@ -822,13 +796,13 @@
 					userSubreddit: Object(I.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: B
 				}),
-				Q = D("select_location"),
-				H = D("confirm_location"),
-				J = D("undo_location"),
+				Q = q("select_location"),
+				H = q("confirm_location"),
+				J = q("undo_location"),
 				W = R("verify_location"),
-				q = R("reject_location");
+				D = R("reject_location");
 
-			function D(e) {
+			function q(e) {
 				return (t, n) => () => ({
 					source: F,
 					noun: e,
@@ -872,7 +846,7 @@
 					onClose: n
 				} = e, o = Object(g.a)(), i = Object(r.d)(), [d, c] = Object(s.useState)(void 0), [l, u] = Object(s.useState)(!1), [m, b] = Object(s.useState)(!1), {
 					isClosed: p,
-					close: f
+					close: x
 				} = function() {
 					const [e, t] = Object(s.useState)(!1);
 					return {
@@ -881,9 +855,9 @@
 							t(!0)
 						}
 					}
-				}(), E = Object(x.a)();
+				}(), E = Object(f.a)();
 
-				function v() {
+				function j() {
 					i(Object(P.f)({
 						kind: K.b.SuccessMod,
 						text: Y._("Nice work!", null, {
@@ -906,7 +880,7 @@
 				}, t.prefixedName)), a.a.createElement("button", {
 					className: S.a.dismiss,
 					onClick: function() {
-						z(t.id), E(M(t)), f(), n(t.id)
+						z(t.id), E(M(t)), x(), n(t.id)
 					}
 				}, a.a.createElement(U.a, null))), a.a.createElement("p", null, t.publicDescriptionText || t.title), t.geoPlace && !m ? a.a.createElement("div", {
 					className: S.a.questionContainer
@@ -917,12 +891,12 @@
 				})), a.a.createElement(_.o, {
 					className: S.a.rejectButton,
 					onClick: function() {
-						b(!0), E(q(t, t.geoPlace.id))
+						b(!0), E(D(t, t.geoPlace.id))
 					}
 				}, "No"), a.a.createElement(_.l, {
 					className: S.a.verifyButton,
 					onClick: function() {
-						z(t.id), E(W(t, t.geoPlace.id)), f(), n(t.id), v()
+						z(t.id), E(W(t, t.geoPlace.id)), x(), n(t.id), j()
 					}
 				}, "Yes")) : a.a.createElement(y.a, {
 					disabled: l,
@@ -949,7 +923,7 @@
 							}),
 							duration: 5e3
 						}));
-						E(H(t, e.id)), f(), n(t.id), v()
+						E(H(t, e.id)), x(), n(t.id), j()
 					}
 				}))
 			}
@@ -1005,7 +979,7 @@
 				}), a.a.createElement(o.a, {
 					isLoading: !0,
 					className: S.a.subredditGeotag
-				})) : r >= n.length ? a.a.createElement(j, null) : a.a.createElement(a.a.Fragment, null, a.a.createElement(C, null), n.map(e => a.a.createElement(X, {
+				})) : r >= n.length ? a.a.createElement(v, null) : a.a.createElement(a.a.Fragment, null, a.a.createElement(C, null), n.map(e => a.a.createElement(X, {
 					key: e.id,
 					subreddit: e,
 					onClose: d
@@ -1020,10 +994,10 @@
 						const a = Object.keys(s).find(e => "coronavirus" === s[e].slug);
 						return s[a]
 					}),
-					n = Object(x.a)();
+					n = Object(f.a)();
 				return Object(s.useEffect)(() => {
 					n(Object(p.d)())
-				}, []), a.a.createElement(i.a, null, a.a.createElement(f.a, {
+				}, []), a.a.createElement(i.a, null, a.a.createElement(x.a, {
 					className: S.a.Container,
 					content: a.a.createElement($, null),
 					fitPageToContent: !0,
@@ -1053,4 +1027,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.ee4683f3205c6a854f88.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.235402e5cb2730f5f736.js.map

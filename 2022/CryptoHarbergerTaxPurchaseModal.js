@@ -1,15 +1,7 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.7d6b36c785d4b5befa46.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.afc0c726d2c1067aa68f.js
+// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
-		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
-			var a = n("./node_modules/lodash/toString.js"),
-				r = 0;
-			e.exports = function(e) {
-				var t = ++r;
-				return a(e) + t
-			}
-		},
 		"./src/lib/currency/cleanNumber/index.ts": function(e, t, n) {
 			"use strict";
 
@@ -145,9 +137,9 @@
 				v = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Controls/index.m.less"),
 				E = n.n(v);
 			const {
-				fbt: g
+				fbt: y
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			const y = Object(f.c)({
+			const g = Object(f.c)({
 				cost: x.b,
 				currentOwnerId: (e, t) => Object(x.c)(e, t).ownerId,
 				currentOwnerName: (e, t) => Object(x.c)(e, t).owner,
@@ -155,7 +147,7 @@
 					subredditId: t
 				}) => Object(l.b)(e, t)
 			});
-			var N = Object(d.b)(y)((function(e) {
+			var N = Object(d.b)(g)((function(e) {
 				const {
 					className: t,
 					cost: n,
@@ -168,7 +160,7 @@
 					className: Object(c.a)(E.a.container, t)
 				}, r.a.createElement("div", {
 					className: E.a.owner
-				}, s && r.a.createElement(a.Fragment, null, r.a.createElement("div", null, g._("Owned by", null, {
+				}, s && r.a.createElement(a.Fragment, null, r.a.createElement("div", null, y._("Owned by", null, {
 					hk: "yKSxo"
 				})), r.a.createElement("div", {
 					className: E.a.ownerText
@@ -188,7 +180,7 @@
 					subredditId: l
 				}), Object(u.a)(Object(b.b)(d, null == i ? void 0 : i.displayConversion))), r.a.createElement(h.l, {
 					onClick: e.onPurchase
-				}, g._("Proceed to Purchase", null, {
+				}, y._("Proceed to Purchase", null, {
 					hk: "21Rymw"
 				}))))
 			}));
@@ -401,18 +393,18 @@
 						hk: "zeQCk"
 					}))))))
 				})),
-				T = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/index.m.less"),
-				P = n.n(T);
+				P = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/index.m.less"),
+				T = n.n(P);
 
 			function M(e) {
 				return r.a.createElement("div", {
-					className: Object(c.a)(P.a.container, e.className)
+					className: Object(c.a)(T.a.container, e.className)
 				}, r.a.createElement(I, {
 					subredditId: e.subreddit.id,
 					subredditName: e.subreddit.name,
 					taxRate: e.taxRate
 				}), r.a.createElement(N, {
-					className: P.a.controls,
+					className: T.a.controls,
 					subredditId: e.subreddit.id,
 					onPurchase: e.onPurchase
 				}))
@@ -421,34 +413,34 @@
 				A = n("./src/lib/currency/cleanNumber/index.ts"),
 				D = n("./src/reddit/actions/harbergerTax/actionCreators.ts"),
 				H = n("./src/reddit/actions/toaster.ts"),
-				S = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				G = n("./src/reddit/controls/FormFields/index.tsx"),
+				G = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				S = n("./src/reddit/controls/FormFields/index.tsx"),
 				F = n("./src/reddit/helpers/governance/ethereum.ts"),
-				R = n("./src/reddit/models/Toast/index.ts"),
-				W = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Section/index.m.less"),
-				V = n.n(W);
+				L = n("./src/reddit/models/Toast/index.ts"),
+				V = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Section/index.m.less"),
+				W = n.n(V);
 
-			function L(e) {
+			function R(e) {
 				return r.a.createElement("article", {
-					className: Object(c.a)(e.className, V.a.container)
+					className: Object(c.a)(e.className, W.a.container)
 				}, r.a.createElement("div", {
-					className: V.a.title
+					className: W.a.title
 				}, e.title), r.a.createElement("div", {
-					className: V.a.description
+					className: W.a.description
 				}, e.description), e.children)
 			}
 			var X = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/index.m.less"),
 				U = n.n(X),
-				Y = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Value/index.m.less"),
-				q = n.n(Y);
+				Z = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Purchase/Value/index.m.less"),
+				Y = n.n(Z);
 
-			function Z(e) {
+			function q(e) {
 				return r.a.createElement("div", {
-					className: Object(c.a)(q.a.container, e.className)
+					className: Object(c.a)(Y.a.container, e.className)
 				}, r.a.createElement("div", {
-					className: q.a.label
+					className: Y.a.label
 				}, e.label), r.a.createElement("div", {
-					className: q.a.amount
+					className: Y.a.amount
 				}, Object(u.a)(Object(b.b)(e.amount, e.tokenDisplayConversion))))
 			}
 			var z = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -501,7 +493,7 @@
 						E = `${s.taxRate}%`;
 					return r.a.createElement("div", {
 						className: Object(c.a)(U.a.container, e)
-					}, r.a.createElement(L, {
+					}, r.a.createElement(R, {
 						className: U.a.section,
 						description: z.fbt._("You must pay this amount to the current owner to buy the banner.", null, {
 							hk: "36sgxo"
@@ -511,7 +503,7 @@
 						})
 					}, r.a.createElement("div", {
 						className: U.a.currentPrice
-					}, r.a.createElement(S.a, {
+					}, r.a.createElement(G.a, {
 						amount: l,
 						subredditId: i
 					}), n && r.a.createElement("div", {
@@ -525,7 +517,7 @@
 						userId: n
 					}), r.a.createElement("span", {
 						className: U.a.username
-					}, a)))), r.a.createElement(L, {
+					}, a)))), r.a.createElement(R, {
 						className: U.a.section,
 						description: z.fbt._("You can protect your ownership by raising the price. This also increases the daily tax. You can also lower the price to lower the tax.", null, {
 							hk: "20EBr1"
@@ -535,7 +527,7 @@
 						})
 					}, r.a.createElement("div", {
 						className: U.a.price
-					}, r.a.createElement(G.c, {
+					}, r.a.createElement(S.c, {
 						redditStyle: !0,
 						className: U.a.priceInput,
 						label: z.fbt._("new price", null, {
@@ -550,14 +542,14 @@
 						subredditId: i
 					}), r.a.createElement("div", {
 						className: U.a.equals
-					}, "="), r.a.createElement(Z, {
+					}, "="), r.a.createElement(q, {
 						amount: x.toFixed(2),
 						className: U.a.tax,
 						label: z.fbt._("{tax} daily tax", [z.fbt._param("tax", E)], {
 							hk: "1kg5ZE"
 						}),
 						tokenDisplayConversion: o.displayConversion
-					}))), r.a.createElement(L, {
+					}))), r.a.createElement(R, {
 						className: U.a.section,
 						description: z.fbt._("You must deposit money to pay the daily tax. You can top this up at any time. If the balance goes to zero, the price of the banner drops to zero. If someone else buys the banner, you will be refunded any pre-paid tax you allocated.", null, {
 							hk: "3rkkNS"
@@ -567,7 +559,7 @@
 						})
 					}, r.a.createElement("div", {
 						className: U.a.prePay
-					}, r.a.createElement(G.c, {
+					}, r.a.createElement(S.c, {
 						redditStyle: !0,
 						className: U.a.prepayInput,
 						label: z.fbt._("# of days to prepay", null, {
@@ -579,7 +571,7 @@
 						onChange: e => this.handlePrepayChange(e.currentTarget.value)
 					}), r.a.createElement("div", {
 						className: U.a.times
-					}, "X"), r.a.createElement(Z, {
+					}, "X"), r.a.createElement(q, {
 						amount: x.toFixed(2),
 						className: U.a.tax,
 						label: z.fbt._("Daily tax", null, {
@@ -588,7 +580,7 @@
 						tokenDisplayConversion: o.displayConversion || "1"
 					}), r.a.createElement("div", {
 						className: U.a.equals
-					}, "="), r.a.createElement(S.a, {
+					}, "="), r.a.createElement(G.a, {
 						className: U.a.prepayTotal,
 						amount: f.toFixed(2),
 						subredditId: i
@@ -598,7 +590,7 @@
 						className: U.a.total
 					}, z.fbt._("Total due", null, {
 						hk: "1MTLwA"
-					})), r.a.createElement(S.a, {
+					})), r.a.createElement(G.a, {
 						amount: v.toFixed(2),
 						subredditId: i
 					})), r.a.createElement(h.l, {
@@ -620,7 +612,7 @@
 			var $ = Object(d.b)(K, e => ({
 					onError: t => e(Object(H.f)({
 						duration: 5e3,
-						kind: R.b.Error,
+						kind: L.b.Error,
 						text: t || z.fbt._("Something wen't wrong with the purchase. Please try again later.", null, {
 							hk: "18lJda"
 						})
@@ -803,145 +795,6 @@
 					subredditId: e.subredditId
 				}), Object(i.a)(Object(d.b)(e.amount, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)), e.additionalText || null)
 			}))
-		},
-		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, n) {
-			e.exports = {
-				wrapper: "_2AfJEqW9tv4b_kolKEuS9K",
-				titleRow: "p4QfstubN5cRxd-gy8gFH",
-				detailsContainer: "_2V3KEAhexNh-mP3TbrVClC",
-				buttonRow: "_1fcbQFwN65ik28DNmWnpX4",
-				confirmButton: "zcMEJWBL7q-mYGOPSpjN-"
-			}
-		},
-		"./src/reddit/controls/ErrorText/index.m.less": function(e, t, n) {
-			e.exports = {
-				wrapper: "_2hGJP-9xfXBXd0wqhBLHhY",
-				description: "_3h_9YwxjuOr77VhScPrjCI",
-				moreText: "_1Y0BrhDgcSTeSYvmSPYepI"
-			}
-		},
-		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return g
-			})), n.d(t, "c", (function() {
-				return y
-			}));
-			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./node_modules/lodash/uniqueId.js"),
-				s = n.n(r),
-				c = n("./node_modules/raf/index.js"),
-				o = n.n(c),
-				i = n("./node_modules/react/index.js"),
-				l = n.n(i),
-				d = n("./src/lib/classNames/index.ts"),
-				u = n("./src/higherOrderComponents/asModal/index.tsx"),
-				m = n("./src/reddit/controls/Button/index.tsx"),
-				p = n("./src/reddit/layout/row/Inline/index.tsx"),
-				h = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				b = n.n(h);
-			var x = Object(u.a)(e => {
-					const {
-						children: t,
-						title: n
-					} = e;
-					return l.a.createElement("div", {
-						className: b.a.wrapper
-					}, l.a.createElement(p.a, {
-						className: b.a.titleRow
-					}, n), l.a.createElement("div", {
-						className: b.a.detailsContainer
-					}, t), l.a.createElement(p.a, {
-						className: b.a.buttonRow
-					}, l.a.createElement(m.l, {
-						className: b.a.confirmButton,
-						onClick: e.onConfirmed
-					}, a.fbt._("Ok", null, {
-						hk: "2Giu9U"
-					}))))
-				}),
-				f = n("./src/reddit/controls/ErrorText/index.m.less"),
-				v = n.n(f);
-			class E extends l.a.Component {
-				constructor(e) {
-					super(e), this.spanRef = l.a.createRef(), this.toggleModal = () => {
-						this.setState({
-							isModalOpen: !this.state.isModalOpen
-						})
-					}, this.state = {
-						textHasOverflowed: !1,
-						modalId: `ErrorTextModal--${s()()}`,
-						isModalOpen: !1
-					}
-				}
-				componentDidMount() {
-					this.calcTextDidOverflow()
-				}
-				componentDidUpdate() {
-					this.calcTextDidOverflow()
-				}
-				calcTextDidOverflow() {
-					o()(() => {
-						const e = this.spanRef.current;
-						if (!e) return;
-						const t = e.scrollWidth > e.clientWidth;
-						this.setState(e => e.textHasOverflowed !== t ? {
-							textHasOverflowed: t
-						} : null)
-					})
-				}
-				render() {
-					const {
-						children: e,
-						className: t,
-						errorModalBody: n,
-						errorModalTitle: r = a.fbt._("Error", null, {
-							hk: "2nPF4G"
-						}),
-						moreText: s = a.fbt._("More", null, {
-							hk: "1bCAQ0"
-						})
-					} = this.props, {
-						textHasOverflowed: c,
-						isModalOpen: o
-					} = this.state;
-					return l.a.createElement("div", {
-						className: Object(d.a)(v.a.wrapper, t)
-					}, l.a.createElement("span", {
-						className: v.a.description,
-						ref: this.spanRef
-					}, e), c && l.a.createElement("span", {
-						className: v.a.moreText,
-						onClick: this.toggleModal
-					}, s), o && l.a.createElement(x, {
-						onConfirmed: this.toggleModal,
-						title: r
-					}, n || e))
-				}
-			}
-			const g = e => {
-					const {
-						className: t,
-						errorClassName: n,
-						errorModalTitle: a,
-						fallbackMessage: r,
-						messages: s = []
-					} = e, c = s.length ? s : r ? [r] : [];
-					return c.length ? l.a.createElement("div", {
-						className: t
-					}, c.map((e, t) => l.a.createElement(E, {
-						className: n,
-						errorModalTitle: a,
-						key: t
-					}, e))) : null
-				},
-				y = e => l.a.createElement(g, {
-					fallbackMessage: a.fbt._("Something went wrong", null, {
-						hk: "Cw1BT"
-					}),
-					messages: e
-				});
-			t.b = E
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1424,4 +1277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.7d6b36c785d4b5befa46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.afc0c726d2c1067aa68f.js.map

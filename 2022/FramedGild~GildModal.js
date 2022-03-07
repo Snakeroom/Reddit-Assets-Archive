@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9e6757d4753253f442da.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a3854d972e34e81a3fa6.js
+// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -351,9 +351,9 @@
 					M = E("payment", I),
 					G = E("paymentRequestButton", I),
 					R = E("linkAuthentication", I),
-					D = E("shippingAddress", I),
-					B = E("afterpayClearpayMessage", I);
-				e.AfterpayClearpayMessageElement = B, e.AuBankAccountElement = x, e.CardCvcElement = A, e.CardElement = C, e.CardExpiryElement = _, e.CardNumberElement = P, e.Elements = O, e.ElementsConsumer = w, e.EpsBankElement = L, e.FpxBankElement = k, e.IbanElement = N, e.IdealBankElement = S, e.LinkAuthenticationElement = R, e.P24BankElement = T, e.PaymentElement = M, e.PaymentRequestButtonElement = G, e.ShippingAddressElement = D, e.useElements = function() {
+					B = E("shippingAddress", I),
+					D = E("afterpayClearpayMessage", I);
+				e.AfterpayClearpayMessageElement = D, e.AuBankAccountElement = x, e.CardCvcElement = A, e.CardElement = C, e.CardExpiryElement = _, e.CardNumberElement = P, e.Elements = O, e.ElementsConsumer = w, e.EpsBankElement = L, e.FpxBankElement = k, e.IbanElement = N, e.IdealBankElement = S, e.LinkAuthenticationElement = R, e.P24BankElement = T, e.PaymentElement = M, e.PaymentRequestButtonElement = G, e.ShippingAddressElement = B, e.useElements = function() {
 					return j("calls useElements()").elements
 				}, e.useStripe = function() {
 					return j("calls useStripe()").stripe
@@ -620,8 +620,8 @@
 				}, {
 					query: r ? {} : Object(T.b)()
 				});
-			var D = r("./src/reddit/helpers/awards/getAwardItemId.ts"),
-				B = r("./src/reddit/helpers/awards/message.ts"),
+			var B = r("./src/reddit/helpers/awards/getAwardItemId.ts"),
+				D = r("./src/reddit/helpers/awards/message.ts"),
 				F = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				U = r("./src/reddit/helpers/isPost.ts"),
 				q = r("./src/reddit/helpers/trackers/gild.ts"),
@@ -646,7 +646,7 @@
 								gildingTypeId: c.selectedAward.id,
 								isAnonymous: c.isAnonymous,
 								isGildFunded: !1,
-								message: Object(B.d)(c.message, c.selectedAward, i),
+								message: Object(D.d)(c.message, c.selectedAward, i),
 								nodeId: e
 							},
 							s = Object(U.a)(e) ? G : R,
@@ -801,7 +801,7 @@
 							awarderKarmaReceived: f
 						}) : S
 					})), setTimeout(() => {
-						const e = Object(D.a)(u, m),
+						const e = Object(B.a)(u, m),
 							t = document.getElementById(e);
 						t && t.dispatchEvent(new Event("awardAdded"))
 					}, 10);
@@ -847,25 +847,6 @@
 							packageId: n.packageId
 						}))
 					}
-				}
-		},
-		"./src/reddit/actions/gold/giveAward.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return o
-			})), r.d(t, "b", (function() {
-				return d
-			}));
-			var n = r("./src/lib/makeActionCreator/index.ts"),
-				s = r("./src/reddit/actions/modal.ts"),
-				a = r("./src/reddit/constants/modals.ts"),
-				c = r("./src/reddit/actions/gold/constants.ts");
-			const o = Object(n.a)(c.mb),
-				i = Object(n.a)(c.t),
-				d = e => async t => {
-					await t(i({
-						id: e
-					})), t(Object(s.h)(a.a.GOLD_GILD_ANIMATION_OVERLAY))
 				}
 		},
 		"./src/reddit/actions/goldPurchaseModals/coinPurchaseModal.ts": function(e, t, r) {
@@ -1780,8 +1761,8 @@
 				M = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				G = r("./src/reddit/selectors/goldPurchaseModals.ts"),
 				R = r("./src/reddit/selectors/posts.ts"),
-				D = r("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
-				B = r("./src/reddit/selectors/subreddit.ts"),
+				B = r("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
+				D = r("./src/reddit/selectors/subreddit.ts"),
 				F = r("./src/reddit/selectors/user.ts"),
 				U = r("./src/reddit/components/CoinPurchaseModal/async.tsx"),
 				q = (r("./node_modules/core-js/modules/web.dom.iterable.js"), r("./src/higherOrderComponents/makeAsync.tsx")),
@@ -2052,7 +2033,7 @@
 						});
 						if (!r) return {};
 						const n = !!r.media && "rpan" === r.media.type,
-							s = n && Object(k.g)(e, t.thingId, D.l);
+							s = n && Object(k.g)(e, t.thingId, B.l);
 						return {
 							post: {
 								...r,
@@ -2403,10 +2384,10 @@
 				Ge = r.n(Me),
 				Re = r("./src/reddit/icons/svgs/Plus/index.tsx");
 			const {
-				fbt: De
+				fbt: Be
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 
-			function Be({
+			function De({
 				onButtonClick: e,
 				onCancel: t,
 				title: r,
@@ -2456,7 +2437,7 @@
 					}) : Object(Le.a)(r || 0, {
 						locale: n
 					});
-				return s.a.createElement(Be, {
+				return s.a.createElement(De, {
 					onCancel: e,
 					onButtonClick: () => {
 						c(Object(b.clickAddCoinsButtonEvent)(t));
@@ -2478,7 +2459,7 @@
 				}) => {
 					let n = r;
 					if (!r) {
-						const r = Object(B.I)(e, {
+						const r = Object(D.I)(e, {
 							thingId: t
 						});
 						n = r && r.id
@@ -2529,7 +2510,7 @@
 					}) => {
 						let n = r;
 						if (!r) {
-							const r = Object(B.I)(e, {
+							const r = Object(D.I)(e, {
 								thingId: t
 							});
 							if (!r) return !1;
@@ -2558,22 +2539,22 @@
 					}),
 					isChatDisabled: (e, {
 						thingId: t
-					}) => !!Object(l.a)(t) && Object(D.f)(e, {
+					}) => !!Object(l.a)(t) && Object(B.f)(e, {
 						streamIdFromPath: t
 					}),
 					purchaseCatalogPending: M.o,
 					showPurchaseModal: G.u,
 					selectedAward: L.b,
-					subreddit: B.I,
+					subreddit: D.I,
 					subredditCoins: (e, {
 						thingId: t,
 						subredditId: r
 					}) => {
-						const n = Object(B.I)(e, {
+						const n = Object(D.I)(e, {
 								thingId: t
 							}),
 							s = n ? n.id : r;
-						return Object(B.z)(e, {
+						return Object(D.z)(e, {
 							subredditId: s
 						})
 					},
@@ -2583,7 +2564,7 @@
 					}) => {
 						let n = r;
 						if (!r) {
-							const r = Object(B.I)(e, {
+							const r = Object(D.I)(e, {
 								thingId: t
 							});
 							n = r && r.id
@@ -2607,7 +2588,7 @@
 					},
 					inViewerFeedTheMeter: (e, {
 						thingId: t
-					}) => Object(k.g)(e, t, D.l)
+					}) => Object(k.g)(e, t, B.l)
 				}), e => {
 					const {
 						awardings: t,
@@ -3049,13 +3030,6 @@
 				}).then(i.c)
 			}
 		},
-		"./src/reddit/helpers/awards/getAwardItemId.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return n
-			}));
-			const n = (e, t) => `awardItem__${t}-${e}`
-		},
 		"./src/reddit/helpers/awards/message.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
@@ -3339,7 +3313,7 @@
 			})), r.d(t, "f", (function() {
 				return G
 			})), r.d(t, "a", (function() {
-				return B
+				return D
 			})), r.d(t, "j", (function() {
 				return F
 			})), r.d(t, "b", (function() {
@@ -3511,20 +3485,20 @@
 				};
 				return r[t] >= r[e]
 			}
-			const D = Object(n.a)(A, f, (e, t) => e && t.timestamps[e] || 0);
-			var B;
+			const B = Object(n.a)(A, f, (e, t) => e && t.timestamps[e] || 0);
+			var D;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
-			}(B || (B = {}));
+			}(D || (D = {}));
 			const F = Object(n.a)(A, y, m.b, (e, t, r) => {
-					if (r) return B.INTRO;
+					if (r) return D.INTRO;
 					const n = e && t[e];
-					if (!n) return B.UNAVAILABLE;
+					if (!n) return D.UNAVAILABLE;
 					const s = n.stream.state;
-					return s === c.a.IS_LIVE || s === c.a.DISCONNECTED ? B.LIVE : s === c.a.ENDED && n.stream.vod_accessible ? B.VOD : B.UNAVAILABLE
+					return s === c.a.IS_LIVE || s === c.a.DISCONNECTED ? D.LIVE : s === c.a.ENDED && n.stream.vod_accessible ? D.VOD : D.UNAVAILABLE
 				}),
-				U = Object(n.a)(S, F, m.b, i.b, i.o, (e, t, r, n, s) => r ? n : e ? t === B.LIVE || t === B.VOD ? e.stream.hls_url : s : void 0),
-				q = Object(n.a)(S, F, D, (e, t, r) => e ? t === B.LIVE ? e.broadcast_time : t === B.VOD && r < e.broadcast_time ? r : 0 : 0),
+				U = Object(n.a)(S, F, m.b, i.b, i.o, (e, t, r, n, s) => r ? n : e ? t === D.LIVE || t === D.VOD ? e.stream.hls_url : s : void 0),
+				q = Object(n.a)(S, F, B, (e, t, r) => e ? t === D.LIVE ? e.broadcast_time : t === D.VOD && r < e.broadcast_time ? r : 0 : 0),
 				V = (e, t) => {
 					const r = p(e);
 					return !!r && r[t] && r[t].chat_disabled
@@ -3655,4 +3629,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.9e6757d4753253f442da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a3854d972e34e81a3fa6.js.map

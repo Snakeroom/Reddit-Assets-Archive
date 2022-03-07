@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrowdControlModal.57ef6964e6593eb77f06.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrowdControlModal.315302c77491fa27b30c.js
+// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrowdControlModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -23,14 +23,6 @@
 		"./node_modules/lodash/range.js": function(e, t, n) {
 			var r = n("./node_modules/lodash/_createRange.js")();
 			e.exports = r
-		},
-		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
-			var r = n("./node_modules/lodash/toString.js"),
-				a = 0;
-			e.exports = function(e) {
-				var t = ++a;
-				return r(e) + t
-			}
 		},
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
 			"use strict";
@@ -258,45 +250,45 @@
 					hk: "cbCjB"
 				})))
 			}
-			var O = n("./src/higherOrderComponents/asModal/index.tsx"),
-				y = n("./src/reddit/endpoints/crowdControl/index.ts"),
+			var y = n("./src/higherOrderComponents/asModal/index.tsx"),
+				O = n("./src/reddit/endpoints/crowdControl/index.ts"),
 				S = n("./src/lib/makeGqlRequest/index.ts"),
-				T = n("./src/redditGQL/operations/UpdateCrowdControlFilter.json"),
-				j = n("./src/redditGQL/operations/UpdateCrowdControlLevel.json");
-			const F = (e, t, n) => Object(S.a)(e, {
-					...j,
+				j = n("./src/redditGQL/operations/UpdateCrowdControlFilter.json"),
+				F = n("./src/redditGQL/operations/UpdateCrowdControlLevel.json");
+			const T = (e, t, n) => Object(S.a)(e, {
+					...F,
 					variables: {
 						postId: t,
 						level: n
 					}
 				}),
 				L = (e, t, n) => Object(S.a)(e, {
-					...T,
+					...j,
 					variables: {
 						postId: t,
 						isEnabled: n
 					}
 				});
 			var I = n("./src/reddit/selectors/posts.ts"),
-				M = n("./src/reddit/actions/modal.ts"),
-				R = n("./src/reddit/actions/toaster.ts"),
-				P = n("./src/reddit/components/CrowdControlModal/index.m.less"),
-				B = n.n(P);
+				R = n("./src/reddit/actions/modal.ts"),
+				P = n("./src/reddit/actions/toaster.ts"),
+				M = n("./src/reddit/components/CrowdControlModal/index.m.less"),
+				B = n.n(M);
 			const D = Object(l.c)({
 					post: I.g,
 					subredditCrowdControl: I.T,
 					subredditUrl: I.V
 				}),
 				G = Object(s.b)(D, e => ({
-					onClose: () => e(Object(M.f)()),
-					showSuccessToast: () => e(Object(R.f)({
+					onClose: () => e(Object(R.f)()),
+					showSuccessToast: () => e(Object(P.f)({
 						text: r.fbt._("Crowd control settings saved!", null, {
 							hk: "1r4rS3"
 						})
 					}))
 				})),
 				A = async (e, t) => {
-					const n = await Object(y.a)(e, t);
+					const n = await Object(O.a)(e, t);
 					if (n && n.ok) {
 						const e = n.body.data.postInfoById;
 						return {
@@ -337,7 +329,7 @@
 							pending: !0
 						});
 						const i = [];
-						a && a !== l && i.push(F(e(), t.id, a)), o !== s && i.push(L(e(), t.id, o)), (await Promise.all(i)).every(e => null == e ? void 0 : e.ok) ? (r(), n()) : this.setState({
+						a && a !== l && i.push(T(e(), t.id, a)), o !== s && i.push(L(e(), t.id, o)), (await Promise.all(i)).every(e => null == e ? void 0 : e.ok) ? (r(), n()) : this.setState({
 							success: !1,
 							pending: !1
 						})
@@ -412,7 +404,7 @@
 				}
 			}
 			const W = Object(d.b)(G(Object(i.c)(H)));
-			t.default = c.a.wrapped(Object(O.a)(G(W)), "Component", B.a)
+			t.default = c.a.wrapped(Object(y.a)(G(W)), "Component", B.a)
 		},
 		"./src/reddit/components/MiniPost/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -658,9 +650,9 @@
 			n.d(t, "n", (function() {
 				return Q
 			})), n.d(t, "k", (function() {
-				return K
+				return J
 			})), n.d(t, "o", (function() {
-				return X
+				return Y
 			})), n.d(t, "f", (function() {
 				return $
 			})), n.d(t, "l", (function() {
@@ -737,17 +729,17 @@
 					isSubreddit: !0
 				}, r)))
 			}
-			var O = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
-				y = n("./src/reddit/controls/Typography/index.tsx"),
+			var y = n("./src/reddit/controls/ToggleSwitch/index.tsx"),
+				O = n("./src/reddit/controls/Typography/index.tsx"),
 				S = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				T = n("./src/reddit/icons/svgs/Circle/index.tsx"),
-				j = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
-				F = n("./node_modules/lodash/range.js"),
-				L = n.n(F),
+				j = n("./src/reddit/icons/svgs/Circle/index.tsx"),
+				F = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
+				T = n("./node_modules/lodash/range.js"),
+				L = n.n(T),
 				I = n("./src/reddit/controls/Button/index.tsx"),
-				M = n("./src/reddit/layout/row/Inline/index.tsx"),
-				R = n("./src/reddit/models/Flair/index.ts"),
-				P = n("./src/reddit/selectors/tooltip.ts"),
+				R = n("./src/reddit/layout/row/Inline/index.tsx"),
+				P = n("./src/reddit/models/Flair/index.ts"),
+				M = n("./src/reddit/selectors/tooltip.ts"),
 				B = n("./src/reddit/selectors/user.ts"),
 				D = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
 				G = n.n(D);
@@ -762,14 +754,14 @@
 				}).apply(this, arguments)
 			}
 			const H = Object(c.a)(C.a),
-				W = h.a.wrapped(T.a, "Circle", G.a),
+				W = h.a.wrapped(j.a, "Circle", G.a),
 				V = h.a.h3("Label", G.a),
-				Q = h.a.wrapped(y.c, "Subtext", G.a),
-				U = h.a.wrapped(u.a, "HoverTooltip", G.a),
-				q = h.a.div("ControlContainer", G.a),
-				z = h.a.div("TextContainer", G.a),
-				Y = h.a.div("ActionContainer", G.a),
-				K = ({
+				Q = h.a.wrapped(O.c, "Subtext", G.a),
+				z = h.a.wrapped(u.a, "HoverTooltip", G.a),
+				U = h.a.div("ControlContainer", G.a),
+				q = h.a.div("TextContainer", G.a),
+				K = h.a.div("ActionContainer", G.a),
+				J = ({
 					className: e,
 					direction: t,
 					isCreateCommunity: n,
@@ -790,28 +782,28 @@
 						[G.a.isNightModeOn]: !!o
 					})
 				})),
-				J = h.a.a("Link", G.a),
-				X = h.a.wrapped(J, "SubtextLink", G.a),
-				Z = h.a.wrapped(j.a, "LinkIcon", G.a),
+				X = h.a.a("Link", G.a),
+				Y = h.a.wrapped(X, "SubtextLink", G.a),
+				Z = h.a.wrapped(F.a, "LinkIcon", G.a),
 				$ = h.a.button("LinkButton", G.a),
 				ee = h.a.wrapped(S.a, "ArrowRight", G.a),
-				te = e => a.a.createElement(K, {
+				te = e => a.a.createElement(J, {
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
 					isCreateCommunity: e.isCreateCommunity,
 					last: e.last
-				}, a.a.createElement(z, {
+				}, a.a.createElement(q, {
 					className: e.textContainerClassName
-				}, a.a.createElement(V, null, e.label, e.isRequired && a.a.createElement(W, null)), a.a.createElement(Q, null, e.subtext)), a.a.createElement(Y, null, e.children)),
+				}, a.a.createElement(V, null, e.label, e.isRequired && a.a.createElement(W, null)), a.a.createElement(Q, null, e.subtext)), a.a.createElement(K, null, e.children)),
 				ne = h.a.div("StyledFlair", G.a),
 				re = h.a.wrapped(ne, "SpoilerFlair", G.a),
 				ae = h.a.wrapped(ne, "NSFWFlair", G.a),
 				oe = e => {
 					switch (e.flair) {
-						case R.f.Nsfw:
+						case P.f.Nsfw:
 							return a.a.createElement(ae, null, "NSFW");
-						case R.f.Spoiler:
+						case P.f.Spoiler:
 							return a.a.createElement(re, null, "SPOILER");
 						default:
 							return null
@@ -819,17 +811,17 @@
 				},
 				se = e => {
 					const t = Object(s.a)();
-					return a.a.createElement(K, {
+					return a.a.createElement(J, {
 						className: e.className,
 						disabled: e.disabled,
 						indent: e.indent,
 						last: e.last
-					}, a.a.createElement(z, null, a.a.createElement(M.a, null, a.a.createElement("label", {
+					}, a.a.createElement(q, null, a.a.createElement(R.a, null, a.a.createElement("label", {
 						htmlFor: t
-					}, a.a.createElement(V, null, e.label))), a.a.createElement(Q, null, e.subtext)), a.a.createElement(Y, null, a.a.createElement(q, null, e.tooltip && a.a.createElement(U, {
+					}, a.a.createElement(V, null, e.label))), a.a.createElement(Q, null, e.subtext)), a.a.createElement(K, null, a.a.createElement(U, null, e.tooltip && a.a.createElement(z, {
 						tooltipContentClass: e.tooltipContentClassName,
 						text: e.tooltip
-					}), a.a.createElement(O.a, {
+					}), a.a.createElement(y.a, {
 						id: t,
 						on: e.on,
 						forceOn: e.forceOn,
@@ -845,7 +837,7 @@
 				ue = Object(l.c)({
 					isNightModeOn: B.bb
 				}),
-				pe = Object(o.b)(ue)(e => a.a.createElement(K, {
+				pe = Object(o.b)(ue)(e => a.a.createElement(J, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled,
@@ -853,15 +845,15 @@
 					isNightModeOn: e.isNightModeOn,
 					direction: e.direction,
 					className: e.className
-				}, a.a.createElement(z, {
+				}, a.a.createElement(q, {
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && a.a.createElement(M.a, null, a.a.createElement(V, null, e.label)), !e.hideSubtext && a.a.createElement(Q, null, " ", a.a.createElement(me, {
+				}, !e.inModal && a.a.createElement(R.a, null, a.a.createElement(V, null, e.label)), !e.hideSubtext && a.a.createElement(Q, null, " ", a.a.createElement(me, {
 					style: {
 						color: e.ticks[e.value].color
 					}
-				}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), a.a.createElement(Y, {
+				}, " ", e.ticks[e.value].text + ": ", " "), " ", e.subtext)), a.a.createElement(K, {
 					style: {
 						flex: 3,
 						margin: "20px 20px 0 0"
@@ -885,38 +877,38 @@
 						color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
 					}
 				}, e.ticks[t].text))))))),
-				Ce = e => a.a.createElement(K, {
+				Ce = e => a.a.createElement(J, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(z, null, a.a.createElement(M.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(Q, null, e.subtext)), a.a.createElement(Y, null, a.a.createElement(q, null, a.a.createElement(I.o, {
+				}, a.a.createElement(q, null, a.a.createElement(R.a, null, a.a.createElement(V, null, e.label)), a.a.createElement(Q, null, e.subtext)), a.a.createElement(K, null, a.a.createElement(U, null, a.a.createElement(I.o, {
 					onClick: e.onClick
 				}, e.actionText)))),
-				be = e => a.a.createElement(K, {
+				be = e => a.a.createElement(J, {
 					className: e.className,
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(z, null, a.a.createElement(J, {
+				}, a.a.createElement(q, null, a.a.createElement(X, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, a.a.createElement(Z, null)), a.a.createElement(Q, null, e.subtext)), a.a.createElement(Y, null, a.a.createElement(J, {
+				}, e.label, a.a.createElement(Z, null)), a.a.createElement(Q, null, e.subtext)), a.a.createElement(K, null, a.a.createElement(X, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
 				}, a.a.createElement(ee, null)))),
-				xe = e => a.a.createElement(K, {
+				xe = e => a.a.createElement(J, {
 					className: e.className,
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, a.a.createElement(z, null, a.a.createElement($, {
+				}, a.a.createElement(q, null, a.a.createElement($, {
 					onClick: e.onClick,
 					className: Object(i.a)({
 						[G.a.NoColor]: e.color && "none" === e.color
 					})
-				}, e.label), a.a.createElement(Q, null, e.subtext)), a.a.createElement(Y, null, !!e.hintText && a.a.createElement("div", {
+				}, e.label), a.a.createElement(Q, null, e.subtext)), a.a.createElement(K, null, !!e.hintText && a.a.createElement("div", {
 					className: G.a.ActionHintText
 				}, e.hintText), a.a.createElement($, {
 					onClick: e.onClick,
@@ -929,7 +921,7 @@
 					})
 				})))),
 				he = Object(l.c)({
-					isOpen: (e, t) => Object(P.b)(t.id)(e)
+					isOpen: (e, t) => Object(M.b)(t.id)(e)
 				}),
 				fe = Object(o.b)(he, (e, t) => ({
 					openDropdown: () => {
@@ -937,11 +929,11 @@
 							tooltipId: t.id
 						}))
 					}
-				}))(e => a.a.createElement(K, {
+				}))(e => a.a.createElement(J, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, a.a.createElement(z, null, a.a.createElement(V, null, e.label), a.a.createElement(Q, null, e.subtext)), a.a.createElement(Y, null, (e => a.a.createElement("div", {
+				}, a.a.createElement(q, null, a.a.createElement(V, null, e.label), a.a.createElement(Q, null, e.subtext)), a.a.createElement(K, null, (e => a.a.createElement("div", {
 					className: G.a.DropdownWrapper,
 					onClick: e.openDropdown
 				}, a.a.createElement("span", {
@@ -976,15 +968,15 @@
 						{
 							items: i
 						} = s;
-					return a.a.createElement(K, {
+					return a.a.createElement(J, {
 						disabled: e
-					}, a.a.createElement(z, null, a.a.createElement("label", {
+					}, a.a.createElement(q, null, a.a.createElement("label", {
 						htmlFor: s.id
 					}, a.a.createElement(V, {
 						className: s.labelClassname
 					}, s.label)), a.a.createElement(Q, null, s.subtext)), a.a.createElement("div", {
 						className: G.a.Wrapper__LineBreak
-					}), a.a.createElement(K, {
+					}), a.a.createElement(J, {
 						last: t,
 						indent: !0,
 						disabled: e
@@ -1002,13 +994,13 @@
 						value: e
 					}, t)))))
 				},
-				ge = e => a.a.createElement(K, {
+				ge = e => a.a.createElement(J, {
 					className: e.className,
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
 					last: e.last
-				}, a.a.createElement(z, null, a.a.createElement(V, null, e.label), a.a.createElement(Q, null, e.subtext)), a.a.createElement(Y, null, e.children)),
+				}, a.a.createElement(q, null, a.a.createElement(V, null, e.label), a.a.createElement(Q, null, e.subtext)), a.a.createElement(K, null, e.children)),
 				Ee = e => a.a.createElement(te, {
 					isCreateCommunity: e.isCreateCommunity,
 					isRequired: e.isRequired,
@@ -1213,145 +1205,6 @@
 				h = r.a.textarea("Textarea", c.a),
 				f = r.a.label("StyledLabel", c.a),
 				v = r.a.input("StyledFileInput", c.a)
-		},
-		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, n) {
-			e.exports = {
-				wrapper: "_2AfJEqW9tv4b_kolKEuS9K",
-				titleRow: "p4QfstubN5cRxd-gy8gFH",
-				detailsContainer: "_2V3KEAhexNh-mP3TbrVClC",
-				buttonRow: "_1fcbQFwN65ik28DNmWnpX4",
-				confirmButton: "zcMEJWBL7q-mYGOPSpjN-"
-			}
-		},
-		"./src/reddit/controls/ErrorText/index.m.less": function(e, t, n) {
-			e.exports = {
-				wrapper: "_2hGJP-9xfXBXd0wqhBLHhY",
-				description: "_3h_9YwxjuOr77VhScPrjCI",
-				moreText: "_1Y0BrhDgcSTeSYvmSPYepI"
-			}
-		},
-		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return g
-			})), n.d(t, "c", (function() {
-				return E
-			}));
-			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
-				a = n("./node_modules/lodash/uniqueId.js"),
-				o = n.n(a),
-				s = n("./node_modules/raf/index.js"),
-				l = n.n(s),
-				i = n("./node_modules/react/index.js"),
-				d = n.n(i),
-				c = n("./src/lib/classNames/index.ts"),
-				m = n("./src/higherOrderComponents/asModal/index.tsx"),
-				u = n("./src/reddit/controls/Button/index.tsx"),
-				p = n("./src/reddit/layout/row/Inline/index.tsx"),
-				C = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				b = n.n(C);
-			var x = Object(m.a)(e => {
-					const {
-						children: t,
-						title: n
-					} = e;
-					return d.a.createElement("div", {
-						className: b.a.wrapper
-					}, d.a.createElement(p.a, {
-						className: b.a.titleRow
-					}, n), d.a.createElement("div", {
-						className: b.a.detailsContainer
-					}, t), d.a.createElement(p.a, {
-						className: b.a.buttonRow
-					}, d.a.createElement(u.l, {
-						className: b.a.confirmButton,
-						onClick: e.onConfirmed
-					}, r.fbt._("Ok", null, {
-						hk: "2Giu9U"
-					}))))
-				}),
-				h = n("./src/reddit/controls/ErrorText/index.m.less"),
-				f = n.n(h);
-			class v extends d.a.Component {
-				constructor(e) {
-					super(e), this.spanRef = d.a.createRef(), this.toggleModal = () => {
-						this.setState({
-							isModalOpen: !this.state.isModalOpen
-						})
-					}, this.state = {
-						textHasOverflowed: !1,
-						modalId: `ErrorTextModal--${o()()}`,
-						isModalOpen: !1
-					}
-				}
-				componentDidMount() {
-					this.calcTextDidOverflow()
-				}
-				componentDidUpdate() {
-					this.calcTextDidOverflow()
-				}
-				calcTextDidOverflow() {
-					l()(() => {
-						const e = this.spanRef.current;
-						if (!e) return;
-						const t = e.scrollWidth > e.clientWidth;
-						this.setState(e => e.textHasOverflowed !== t ? {
-							textHasOverflowed: t
-						} : null)
-					})
-				}
-				render() {
-					const {
-						children: e,
-						className: t,
-						errorModalBody: n,
-						errorModalTitle: a = r.fbt._("Error", null, {
-							hk: "2nPF4G"
-						}),
-						moreText: o = r.fbt._("More", null, {
-							hk: "1bCAQ0"
-						})
-					} = this.props, {
-						textHasOverflowed: s,
-						isModalOpen: l
-					} = this.state;
-					return d.a.createElement("div", {
-						className: Object(c.a)(f.a.wrapper, t)
-					}, d.a.createElement("span", {
-						className: f.a.description,
-						ref: this.spanRef
-					}, e), s && d.a.createElement("span", {
-						className: f.a.moreText,
-						onClick: this.toggleModal
-					}, o), l && d.a.createElement(x, {
-						onConfirmed: this.toggleModal,
-						title: a
-					}, n || e))
-				}
-			}
-			const g = e => {
-					const {
-						className: t,
-						errorClassName: n,
-						errorModalTitle: r,
-						fallbackMessage: a,
-						messages: o = []
-					} = e, s = o.length ? o : a ? [a] : [];
-					return s.length ? d.a.createElement("div", {
-						className: t
-					}, s.map((e, t) => d.a.createElement(v, {
-						className: n,
-						errorModalTitle: r,
-						key: t
-					}, e))) : null
-				},
-				E = e => d.a.createElement(g, {
-					fallbackMessage: r.fbt._("Something went wrong", null, {
-						hk: "Cw1BT"
-					}),
-					messages: e
-				});
-			t.b = v
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1729,4 +1582,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.57ef6964e6593eb77f06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrowdControlModal.315302c77491fa27b30c.js.map

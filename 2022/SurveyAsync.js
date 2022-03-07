@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SurveyAsync.3f76dec4146156d5a4ae.js
-// Retrieved at 1/24/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SurveyAsync.8acb498aac1cda06c6b8.js
+// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SurveyAsync"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
@@ -11,68 +11,22 @@
 		"./src/reddit/components/CharacterCountdown/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
-				o = n.n(s),
-				a = n("./src/lib/classNames/index.ts"),
+				a = n.n(s),
+				o = n("./src/lib/classNames/index.ts"),
 				r = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
 				l = n("./src/reddit/components/CharacterCountdown/index.m.less"),
 				c = n.n(l);
 			const {
 				fbt: i
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			t.a = e => o.a.createElement(r.b, {
-				className: Object(a.a)(e.className, c.a.container, e.text.length >= e.maxChars ? c.a.mOverflow : null)
+			t.a = e => a.a.createElement(r.b, {
+				className: Object(o.a)(e.className, c.a.container, e.text.length >= e.maxChars ? c.a.mOverflow : null)
 			}, i._({
 				"*": "{characters} Characters remaining",
 				_1: "1 Character remaining"
 			}, [i._plural(e.maxChars - e.text.length, "characters")], {
 				hk: "V22sW"
 			}))
-		},
-		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, n) {
-			e.exports = {
-				buttonWidth: "ogOEj4x-0BpDZWeccJwxx",
-				ModalText: "_2YxEi97B6Nm7NCgLG6pCud",
-				modalText: "_2YxEi97B6Nm7NCgLG6pCud"
-			}
-		},
-		"./src/reddit/components/ConfirmUserActionModal/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
-				o = n("./node_modules/react/index.js"),
-				a = n.n(o),
-				r = n("./src/higherOrderComponents/asModal/index.tsx"),
-				l = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				c = n("./src/reddit/controls/TextButton/index.tsx"),
-				i = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				d = n("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
-				m = n.n(d);
-			const u = e => e.preventDefault();
-			t.a = Object(r.a)(e => a.a.createElement(l.e, null, a.a.createElement(l.i, null, a.a.createElement(i.a, null, a.a.createElement(l.q, null, e.headerText || s.fbt._("Confirm", null, {
-				hk: "2zlvKa"
-			})), a.a.createElement(c.a, {
-				onClick: () => {
-					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
-				}
-			}, a.a.createElement(l.b, null)))), a.a.createElement(l.l, null, a.a.createElement(l.p, {
-				className: m.a.ModalText
-			}, e.modalText)), a.a.createElement(l.g, null, !e.hideCancelButton && a.a.createElement(l.a, {
-				className: m.a.buttonWidth,
-				onMouseDown: u,
-				onClick: () => {
-					e.onCancel && e.onCancel(), e.toggleModal && e.toggleModal()
-				},
-				"data-redditstyle": !e.disableRedditStyle
-			}, e.cancelActionText || s.fbt._("Cancel", null, {
-				hk: "2TSLl5"
-			})), a.a.createElement(l.u, {
-				className: m.a.buttonWidth,
-				onMouseDown: u,
-				onClick: t => {
-					e.onConfirm(), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
-				},
-				"data-redditstyle": !e.disableRedditStyle,
-				disabled: e.isDisabled
-			}, e.actionText))))
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less": function(e, t, n) {
 			e.exports = {
@@ -122,11 +76,11 @@
 			})), n.d(t, "o", (function() {
 				return i
 			})), n.d(t, "m", (function() {
-				return d
+				return u
 			})), n.d(t, "l", (function() {
 				return m
 			})), n.d(t, "f", (function() {
-				return u
+				return d
 			})), n.d(t, "h", (function() {
 				return p
 			})), n.d(t, "a", (function() {
@@ -136,82 +90,82 @@
 			})), n.d(t, "i", (function() {
 				return b
 			})), n.d(t, "e", (function() {
-				return C
+				return S
 			})), n.d(t, "b", (function() {
-				return x
-			})), n.d(t, "c", (function() {
 				return _
+			})), n.d(t, "c", (function() {
+				return C
 			})), n.d(t, "d", (function() {
 				return v
 			})), n.d(t, "j", (function() {
 				return E
 			}));
 			var s = n("./src/lib/lessComponent.tsx"),
-				o = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
-				a = n.n(o);
-			const r = s.a.section("FormPage", a.a),
-				l = s.a.h1("HomePageTitle", a.a),
-				c = s.a.button("HomePageBreadcrumb", a.a),
-				i = s.a.div("HomePageGroup", a.a),
-				d = s.a.h1("FormPageTitle", a.a),
-				m = s.a.div("FormPageSection", a.a),
-				u = s.a.div("FormGroup", a.a),
-				p = s.a.h2("FormGroupTitle", a.a),
-				h = s.a.div("FormElement", a.a),
-				f = s.a.div("FormGroupDescription", a.a),
-				b = s.a.div("FormItem", a.a),
-				C = s.a.h3("FormElementTitle", a.a),
-				x = s.a.div("FormElementDescription", a.a),
-				_ = s.a.div("FormElementError", a.a),
-				v = s.a.div("FormElementSubGroup", a.a),
-				E = s.a.li("FormListItem", a.a)
+				a = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
+				o = n.n(a);
+			const r = s.a.section("FormPage", o.a),
+				l = s.a.h1("HomePageTitle", o.a),
+				c = s.a.button("HomePageBreadcrumb", o.a),
+				i = s.a.div("HomePageGroup", o.a),
+				u = s.a.h1("FormPageTitle", o.a),
+				m = s.a.div("FormPageSection", o.a),
+				d = s.a.div("FormGroup", o.a),
+				p = s.a.h2("FormGroupTitle", o.a),
+				h = s.a.div("FormElement", o.a),
+				f = s.a.div("FormGroupDescription", o.a),
+				b = s.a.div("FormItem", o.a),
+				S = s.a.h3("FormElementTitle", o.a),
+				_ = s.a.div("FormElementDescription", o.a),
+				C = s.a.div("FormElementError", o.a),
+				v = s.a.div("FormElementSubGroup", o.a),
+				E = s.a.li("FormListItem", o.a)
 		},
 		"./src/reddit/components/Survey/Async.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return T
+				return j
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
-				o = n("./node_modules/react/index.js"),
-				a = n.n(o),
+				a = n("./node_modules/react/index.js"),
+				o = n.n(a),
 				r = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				l = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				c = n("./src/reddit/helpers/survey/index.ts"),
 				i = n("./src/reddit/hooks/useClassNameOnMount.ts"),
-				d = n("./src/reddit/models/Survey/index.ts"),
+				u = n("./src/reddit/models/Survey/index.ts"),
 				m = n("./src/reddit/components/Survey/hooks.ts"),
-				u = n("./src/lib/classNames/index.ts"),
+				d = n("./src/lib/classNames/index.ts"),
 				p = n("./src/reddit/components/CharacterCountdown/index.tsx"),
 				h = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				f = n("./src/reddit/controls/Button/index.tsx"),
 				b = n("./src/reddit/icons/svgs/Chevron/index.tsx"),
-				C = n("./src/reddit/controls/RadioInput/index.tsx"),
-				x = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
-				_ = n("./src/reddit/components/Survey/index.m.less"),
-				v = n.n(_);
+				S = n("./src/reddit/controls/RadioInput/index.tsx"),
+				_ = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
+				C = n("./src/reddit/components/Survey/index.m.less"),
+				v = n.n(C);
 			const {
 				fbt: E
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), S = ({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), y = ({
 				type: e,
 				selectedOption: t,
 				onNumberSelected: n
-			}) => a.a.createElement("div", {
+			}) => o.a.createElement("div", {
 				className: v.a.optionsWrapper
 			}, Array.from({
-				length: e === d.a.NPS ? 11 : 7
-			}).map((s, o) => a.a.createElement(f.o, {
-				className: Object(u.a)(v.a.option, {
-					[v.a.isSelected]: t === o
+				length: e === u.a.NPS ? 11 : 7
+			}).map((s, a) => o.a.createElement(f.o, {
+				className: Object(d.a)(v.a.option, {
+					[v.a.isSelected]: t === a
 				}),
-				key: `survey-option-${e}-${o}`,
-				onClick: () => n(o)
-			}, o + (e === d.a.NPS ? 0 : 1)))), g = ({
+				key: `survey-option-${e}-${a}`,
+				onClick: () => n(a)
+			}, a + (e === u.a.NPS ? 0 : 1)))), N = ({
 				onAgree: e,
 				onDismiss: t
 			}) => {
-				const n = Object(o.useRef)(0),
-					[s, r] = Object(o.useState)(!1),
-					[c, d] = Object(o.useState)(!1),
+				const n = Object(a.useRef)(0),
+					[s, r] = Object(a.useState)(!1),
+					[c, u] = Object(a.useState)(!1),
 					{
 						className: m,
 						shouldMount: p,
@@ -222,9 +176,9 @@
 						mountCondition: !s && !c
 					}),
 					f = e => {
-						e && e.stopPropagation(), d(!0)
+						e && e.stopPropagation(), u(!0)
 					};
-				return Object(o.useEffect)(() => (n.current = window.setTimeout(f, 1e4), () => window.clearTimeout(n.current)), []), p ? a.a.createElement("div", {
+				return Object(a.useEffect)(() => (n.current = window.setTimeout(f, 1e4), () => window.clearTimeout(n.current)), []), p ? o.a.createElement("div", {
 					className: m,
 					onClick: () => {
 						window.clearTimeout(n.current), r(!0)
@@ -232,89 +186,89 @@
 					onTransitionEnd: n => {
 						(s || c) && (s ? e() : t(), h(n))
 					}
-				}, a.a.createElement(l.a, {
-					className: Object(u.a)(v.a.icon, v.a.close),
+				}, o.a.createElement(l.a, {
+					className: Object(d.a)(v.a.icon, v.a.close),
 					onClick: f
-				}), a.a.createElement("p", {
+				}), o.a.createElement("p", {
 					className: v.a.text
-				}, a.a.createElement("b", null, E._("Help improve Reddit.", null, {
+				}, o.a.createElement("b", null, E._("Help improve Reddit.", null, {
 					hk: "2WCwWk"
 				})), " ", E._("Take our one-minute survey.", null, {
 					hk: "3mB3oh"
-				})), a.a.createElement(b.a, {
-					className: Object(u.a)(v.a.icon, v.a.chevron)
+				})), o.a.createElement(b.a, {
+					className: Object(d.a)(v.a.icon, v.a.chevron)
 				})) : null
-			}, y = (e, t) => e === t ? E._("Done", null, {
+			}, g = (e, t) => e === t ? E._("Done", null, {
 				hk: "2NjHWz"
 			}) : E._("Next", null, {
 				hk: "2mEXAi"
-			}), N = ({
+			}), x = ({
 				onNumberSelected: e,
 				onStepComplete: t,
 				currentStep: n,
 				stepLength: s,
-				selectedNumber: o,
+				selectedNumber: a,
 				step: r
-			}) => a.a.createElement(a.a.Fragment, null, a.a.createElement("h3", {
+			}) => o.a.createElement(o.a.Fragment, null, o.a.createElement("h3", {
 				className: v.a.title
-			}, r.question), a.a.createElement(S, {
+			}, r.question), o.a.createElement(y, {
 				type: r.type,
-				selectedOption: o,
+				selectedOption: a,
 				onNumberSelected: e
-			}), a.a.createElement(w, {
+			}), o.a.createElement(k, {
 				type: r.type
-			}), a.a.createElement(f.l, {
+			}), o.a.createElement(f.l, {
 				className: v.a.submitBtn,
 				onClick: t,
-				disabled: void 0 === o
-			}, y(n, s))), O = ({
+				disabled: void 0 === a
+			}, g(n, s))), O = ({
 				step: e,
 				currentStep: t,
 				stepLength: n,
 				onStepComplete: s,
-				onTextChange: o,
+				onTextChange: a,
 				text: r
-			}) => a.a.createElement(a.a.Fragment, null, a.a.createElement("h3", {
+			}) => o.a.createElement(o.a.Fragment, null, o.a.createElement("h3", {
 				className: v.a.title
-			}, e.followUpQuestion), a.a.createElement(h.t, {
+			}, e.followUpQuestion), o.a.createElement(h.t, {
 				className: v.a.textArea,
 				value: r,
 				placeholder: E._("Share your thoughts (Optional)", null, {
 					hk: "2uAPqk"
 				}),
 				maxLength: 240,
-				onChange: o
-			}), a.a.createElement(p.a, {
+				onChange: a
+			}), o.a.createElement(p.a, {
 				className: v.a.characterCountdown,
 				text: r,
 				maxChars: 240
-			}), a.a.createElement(f.l, {
+			}), o.a.createElement(f.l, {
 				className: v.a.submitBtn,
 				onClick: s
-			}, y(t, n))), k = ({
+			}, g(t, n))), F = ({
 				step: e,
 				onStepComplete: t,
 				selectedOption: n,
 				currentStep: s,
-				options: o,
+				options: a,
 				stepLength: r,
 				onOptionSelected: l
-			}) => a.a.createElement(a.a.Fragment, null, a.a.createElement("h3", {
+			}) => o.a.createElement(o.a.Fragment, null, o.a.createElement("h3", {
 				className: v.a.title
-			}, e.question), a.a.createElement(C.a, {
+			}, e.question), o.a.createElement(S.a, {
 				className: v.a.radioGroup,
 				name: "SurveyRadioStep",
 				value: n,
 				onChange: l
-			}, o.map(e => a.a.createElement(x.a, {
+			}, a.map(e => o.a.createElement(_.a, {
 				key: e,
 				showButton: !0,
 				value: e
-			}, e))), a.a.createElement(f.l, {
+			}, e))), o.a.createElement(f.l, {
 				className: v.a.submitBtn,
 				onClick: t,
 				disabled: !n
-			}, y(s, r))), w = ({
+			}, g(s, r))), k = ({
 				type: e
 			}) => {
 				const t = (e => {
@@ -323,21 +277,21 @@
 						high: ""
 					};
 					switch (e) {
-						case d.a.CES:
+						case u.a.CES:
 							t.low = E._("Very Difficult", null, {
 								hk: "4oKGAC"
 							}), t.high = E._("Very Easy", null, {
 								hk: "4Fp78W"
 							});
 							break;
-						case d.a.CSAT:
+						case u.a.CSAT:
 							t.low = E._("Very Unsatisfied", null, {
 								hk: "JVX4M"
 							}), t.high = E._("Very Satisfied", null, {
 								hk: "YO7A3"
 							});
 							break;
-						case d.a.NPS:
+						case u.a.NPS:
 							t.low = E._("Very Unlikely", null, {
 								hk: "23FcED"
 							}), t.high = E._("Very Likely", null, {
@@ -346,17 +300,17 @@
 					}
 					return t
 				})(e);
-				return a.a.createElement("div", {
+				return o.a.createElement("div", {
 					className: v.a.labelRow
-				}, a.a.createElement("span", {
+				}, o.a.createElement("span", {
 					className: v.a.lowLabel
-				}, t.low), a.a.createElement("span", {
+				}, t.low), o.a.createElement("span", {
 					className: v.a.highLabel
 				}, t.high))
 			};
 
-			function F() {
-				return (F = Object.assign || function(e) {
+			function w() {
+				return (w = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -365,71 +319,71 @@
 				}).apply(this, arguments)
 			}
 
-			function T({
+			function j({
 				activeSurvey: e,
 				setActiveSurvey: t
 			}) {
-				const [n, u] = Object(o.useState)(!1), [p, h] = Object(o.useState)(void 0), [f, b] = Object(o.useState)(""), C = Object(o.useCallback)(e => b(e.target.value), []), {
-					activeStepNum: x,
-					isFollowUp: _,
+				const [n, d] = Object(a.useState)(!1), [p, h] = Object(a.useState)(void 0), [f, b] = Object(a.useState)(""), S = Object(a.useCallback)(e => b(e.target.value), []), {
+					activeStepNum: _,
+					isFollowUp: C,
 					onStepComplete: E,
-					uiStep: S,
-					setActiveStepNum: y,
-					setUIStep: w,
-					selectedOption: T,
-					questionOptions: j,
+					uiStep: y,
+					setActiveStepNum: g,
+					setUIStep: k,
+					selectedOption: j,
+					questionOptions: T,
 					setSelectedOption: L,
-					setIsFollowUp: M
+					setIsFollowUp: P
 				} = Object(m.b)({
 					activeSurvey: e,
 					selectedNumber: p,
-					setIsSurveyDismissed: u,
+					setIsSurveyDismissed: d,
 					setSelectedNumber: h,
 					setTextResponse: b,
 					textResponse: f
 				}), {
-					className: P,
-					shouldMount: A,
+					className: A,
+					shouldMount: H,
 					onTransitionEnd: R
 				} = Object(i.a)({
 					defaultClass: v.a.surveyContainer,
 					addedClass: v.a.isOpen,
-					mountCondition: !n && x > -1
+					mountCondition: !n && _ > -1
 				}), {
 					isLeavingModalShowing: G,
-					onClose: B,
-					onLeaveCancel: H,
-					onLeaveConfirm: I
+					onClose: I,
+					onLeaveCancel: B,
+					onLeaveConfirm: D
 				} = Object(m.a)({
 					activeSurvey: e,
-					activeStepNum: x,
-					isFollowUp: _,
+					activeStepNum: _,
+					isFollowUp: C,
 					textResponse: f,
 					setTextResponse: b,
-					setIsSurveyDismissed: u,
-					uiStep: S
+					setIsSurveyDismissed: d,
+					uiStep: y
 				});
 				if (Object(m.c)({
 						isSurveyDismissed: n,
-						setIsSurveyDismissed: u,
-						setActiveStepNum: y,
+						setIsSurveyDismissed: d,
+						setActiveStepNum: g,
 						setActiveSurvey: t,
-						setUIStep: w,
-						setIsFollowUp: M,
-						shouldMount: A,
-						uiStep: S
-					}), -1 === x && !n) return a.a.createElement(g, {
+						setUIStep: k,
+						setIsFollowUp: P,
+						shouldMount: H,
+						uiStep: y
+					}), -1 === _ && !n) return o.a.createElement(N, {
 					onAgree: E,
-					onDismiss: B
+					onDismiss: I
 				});
-				if (!A) return null;
-				const D = Object(c.d)(e),
+				if (!H) return null;
+				const M = Object(c.d)(e),
 					U = {
 						onStepComplete: E,
-						currentStep: S,
-						stepLength: D
+						currentStep: y,
+						stepLength: M
 					};
-				return a.a.createElement(a.a.Fragment, null, G && a.a.createElement(r.a, {
+				return o.a.createElement(o.a.Fragment, null, G && o.a.createElement(r.a, {
 					actionText: s.fbt._("Finish Survey", null, {
 						hk: "18Lvjs"
 					}),
@@ -442,32 +396,32 @@
 					modalText: s.fbt._("If you don't finish the survey, your feedback won't be submitted.", null, {
 						hk: "377HNX"
 					}),
-					onConfirm: H,
-					onCancel: I,
-					onClose: H
-				}), a.a.createElement("div", {
-					className: P,
+					onConfirm: B,
+					onCancel: D,
+					onClose: B
+				}), o.a.createElement("div", {
+					className: A,
 					onTransitionEnd: R
-				}, a.a.createElement(l.a, {
+				}, o.a.createElement(l.a, {
 					className: v.a.closeBtn,
-					onClick: B
-				}), a.a.createElement("div", {
+					onClick: I
+				}), o.a.createElement("div", {
 					className: v.a.surveyContent
-				}, a.a.createElement("div", {
+				}, o.a.createElement("div", {
 					className: v.a.stepNumber
-				}, s.fbt._("Question {step number} of {total steps}", [s.fbt._param("step number", String(S)), s.fbt._param("total steps", String(D))], {
+				}, s.fbt._("Question {step number} of {total steps}", [s.fbt._param("step number", String(y)), s.fbt._param("total steps", String(M))], {
 					hk: "4g6rjR"
-				})), (() => _ ? a.a.createElement(O, F({
-					onTextChange: C,
-					step: e.steps[x],
+				})), (() => C ? o.a.createElement(O, w({
+					onTextChange: S,
+					step: e.steps[_],
 					text: f
-				}, U)) : e.steps[x].type === d.a.MULTI_CHOICE ? a.a.createElement(k, F({
-					step: e.steps[x],
-					selectedOption: T,
-					options: j,
+				}, U)) : e.steps[_].type === u.a.MULTI_CHOICE ? o.a.createElement(F, w({
+					step: e.steps[_],
+					selectedOption: j,
+					options: T,
 					onOptionSelected: L
-				}, U)) : a.a.createElement(N, F({
-					step: e.steps[x],
+				}, U)) : o.a.createElement(x, w({
+					step: e.steps[_],
 					selectedNumber: p,
 					onNumberSelected: h
 				}, U)))())))
@@ -500,56 +454,30 @@
 		"./src/reddit/hooks/useClassNameOnMount.ts": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
-				o = n("./src/lib/classNames/index.ts");
+				a = n("./src/lib/classNames/index.ts");
 			t.a = ({
 				defaultClass: e,
 				addedClass: t,
 				mountCondition: n
 			}) => {
-				const [a, r] = Object(s.useState)(e), [l, c] = Object(s.useState)(!1);
+				const [o, r] = Object(s.useState)(e), [l, c] = Object(s.useState)(!1);
 				Object(s.useEffect)(() => {
 					n && c(!0)
 				}, [n]), Object(s.useEffect)(() => {
 					l && (n ? window.setTimeout(() => {
-						r(Object(o.a)(e, t))
+						r(Object(a.a)(e, t))
 					}, 100) : r(e))
 				}, [t, e, n, l]);
 				const i = Object(s.useCallback)(() => {
 					n || c(!1)
 				}, [n]);
 				return {
-					className: a,
+					className: o,
 					shouldMount: l,
 					onTransitionEnd: i
 				}
 			}
-		},
-		"./src/reddit/icons/svgs/Chevron/index.m.less": function(e, t, n) {
-			e.exports = {
-				chevron: "_1c_YBKkiW4FhhLJPkq9c1v"
-			}
-		},
-		"./src/reddit/icons/svgs/Chevron/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				o = n.n(s),
-				a = n("./src/lib/classNames/index.ts"),
-				r = n("./src/reddit/icons/svgs/Chevron/index.m.less"),
-				l = n.n(r);
-			t.a = e => o.a.createElement("svg", {
-				className: Object(a.a)(l.a.chevron, e.className),
-				viewBox: "0 0 9 14",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, o.a.createElement("g", {
-				transform: "translate(-6.000000, -3.000000)"
-			}, o.a.createElement("polygon", {
-				fill: "none",
-				points: "0 20 20 20 20 0 0 0"
-			}), o.a.createElement("polygon", {
-				fill: "inherit",
-				points: "7.47566213 3 14.4756621 10 7.47566213 17 6 15.5239203 11.5239203 10 6 4.47566213"
-			})))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SurveyAsync.3f76dec4146156d5a4ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SurveyAsync.8acb498aac1cda06c6b8.js.map

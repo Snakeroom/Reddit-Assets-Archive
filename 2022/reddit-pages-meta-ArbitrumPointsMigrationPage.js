@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.bffe3fd3480e02e3a2d3.js
-// Retrieved at 2/23/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.d62565587564787154db.js
+// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-ArbitrumPointsMigrationPage", "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, n) {
@@ -18,11 +18,11 @@
 			var r = n("./node_modules/@ethersproject/bytes/lib.esm/index.js"),
 				s = n("./node_modules/@ethersproject/bignumber/lib.esm/bignumber.js"),
 				a = n("./node_modules/@ethersproject/keccak256/lib.esm/index.js"),
-				o = n("./node_modules/@ethersproject/rlp/lib.esm/index.js");
-			const i = new(n("./node_modules/@ethersproject/logger/lib.esm/index.js").a)("address/5.4.0");
+				i = n("./node_modules/@ethersproject/rlp/lib.esm/index.js");
+			const o = new(n("./node_modules/@ethersproject/logger/lib.esm/index.js").a)("address/5.4.0");
 
 			function l(e) {
-				Object(r.l)(e, 20) || i.throwArgumentError("invalid address", "address", e);
+				Object(r.l)(e, 20) || o.throwArgumentError("invalid address", "address", e);
 				const t = (e = e.toLowerCase()).substring(2).split(""),
 					n = new Uint8Array(40);
 				for (let r = 0; r < 40; r++) n[r] = t[r].charCodeAt(0);
@@ -49,11 +49,11 @@
 
 			function p(e) {
 				let t = null;
-				if ("string" != typeof e && i.throwArgumentError("invalid address", "address", e), e.match(/^(0x)?[0-9a-fA-F]{40}$/)) "0x" !== e.substring(0, 2) && (e = "0x" + e), t = l(e), e.match(/([A-F].*[a-f])|([a-f].*[A-F])/) && t !== e && i.throwArgumentError("bad address checksum", "address", e);
+				if ("string" != typeof e && o.throwArgumentError("invalid address", "address", e), e.match(/^(0x)?[0-9a-fA-F]{40}$/)) "0x" !== e.substring(0, 2) && (e = "0x" + e), t = l(e), e.match(/([A-F].*[a-f])|([a-f].*[A-F])/) && t !== e && o.throwArgumentError("bad address checksum", "address", e);
 				else if (e.match(/^XE[0-9]{2}[0-9A-Za-z]{30,31}$/)) {
-					for (e.substring(2, 4) !== m(e) && i.throwArgumentError("bad icap checksum", "address", e), t = Object(s.c)(e.substring(4)); t.length < 40;) t = "0" + t;
+					for (e.substring(2, 4) !== m(e) && o.throwArgumentError("bad icap checksum", "address", e), t = Object(s.c)(e.substring(4)); t.length < 40;) t = "0" + t;
 					t = l("0x" + t)
-				} else i.throwArgumentError("invalid address", "address", e);
+				} else o.throwArgumentError("invalid address", "address", e);
 				return t
 			}
 
@@ -75,14 +75,14 @@
 				try {
 					t = p(e.from)
 				} catch (l) {
-					i.throwArgumentError("missing from address", "transaction", e)
+					o.throwArgumentError("missing from address", "transaction", e)
 				}
 				const n = Object(r.o)(Object(r.a)(s.a.from(e.nonce).toHexString()));
-				return p(Object(r.e)(Object(a.a)(Object(o.encode)([t, n])), 12))
+				return p(Object(r.e)(Object(a.a)(Object(i.encode)([t, n])), 12))
 			}
 
 			function b(e, t, n) {
-				return 32 !== Object(r.d)(t) && i.throwArgumentError("salt must be 32 bytes", "salt", t), 32 !== Object(r.d)(n) && i.throwArgumentError("initCodeHash must be 32 bytes", "initCodeHash", n), p(Object(r.e)(Object(a.a)(Object(r.b)(["0xff", p(e), t, n])), 12))
+				return 32 !== Object(r.d)(t) && o.throwArgumentError("salt must be 32 bytes", "salt", t), 32 !== Object(r.d)(n) && o.throwArgumentError("initCodeHash must be 32 bytes", "initCodeHash", n), p(Object(r.e)(Object(a.a)(Object(r.b)(["0xff", p(e), t, n])), 12))
 			}
 		},
 		"./node_modules/@ethersproject/bignumber/lib.esm/_version.js": function(e, t, n) {
@@ -106,10 +106,10 @@
 			var r = n("./node_modules/bn.js/lib/bn.js"),
 				s = n.n(r),
 				a = n("./node_modules/@ethersproject/bytes/lib.esm/index.js"),
-				o = n("./node_modules/@ethersproject/logger/lib.esm/index.js"),
-				i = n("./node_modules/@ethersproject/bignumber/lib.esm/_version.js"),
+				i = n("./node_modules/@ethersproject/logger/lib.esm/index.js"),
+				o = n("./node_modules/@ethersproject/bignumber/lib.esm/_version.js"),
 				l = s.a.BN;
-			const u = new o.a(i.a),
+			const u = new i.a(o.a),
 				c = {},
 				d = 9007199254740991;
 
@@ -119,7 +119,7 @@
 			let p = !1;
 			class h {
 				constructor(e, t) {
-					u.checkNew(new.target, h), e !== c && u.throwError("cannot call constructor directly; use BigNumber.from", o.a.errors.UNSUPPORTED_OPERATION, {
+					u.checkNew(new.target, h), e !== c && u.throwError("cannot call constructor directly; use BigNumber.from", i.a.errors.UNSUPPORTED_OPERATION, {
 						operation: "new (BigNumber)"
 					}), this._hex = t, this._isBigNumber = !0, Object.freeze(this)
 				}
@@ -206,12 +206,12 @@
 					try {
 						return BigInt(this.toString())
 					} catch (e) {}
-					return u.throwError("this platform does not support BigInt", o.a.errors.UNSUPPORTED_OPERATION, {
+					return u.throwError("this platform does not support BigInt", i.a.errors.UNSUPPORTED_OPERATION, {
 						value: this.toString()
 					})
 				}
 				toString() {
-					return arguments.length > 0 && (10 === arguments[0] ? p || (p = !0, u.warn("BigNumber.toString does not accept any parameters; base-10 is assumed")) : 16 === arguments[0] ? u.throwError("BigNumber.toString does not accept any parameters; use bigNumber.toHexString()", o.a.errors.UNEXPECTED_ARGUMENT, {}) : u.throwError("BigNumber.toString does not accept parameters", o.a.errors.UNEXPECTED_ARGUMENT, {})), b(this).toString(10)
+					return arguments.length > 0 && (10 === arguments[0] ? p || (p = !0, u.warn("BigNumber.toString does not accept any parameters; base-10 is assumed")) : 16 === arguments[0] ? u.throwError("BigNumber.toString does not accept any parameters; use bigNumber.toHexString()", i.a.errors.UNEXPECTED_ARGUMENT, {}) : u.throwError("BigNumber.toString does not accept parameters", i.a.errors.UNEXPECTED_ARGUMENT, {})), b(this).toString(10)
 				}
 				toHexString() {
 					return this._hex
@@ -265,7 +265,7 @@
 					fault: e,
 					operation: t
 				};
-				return null != n && (r.value = n), u.throwError(e, o.a.errors.NUMERIC_FAULT, r)
+				return null != n && (r.value = n), u.throwError(e, i.a.errors.NUMERIC_FAULT, r)
 			}
 
 			function E(e) {
@@ -279,9 +279,9 @@
 		"./node_modules/@ethersproject/bytes/lib.esm/index.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "k", (function() {
-				return o
-			})), n.d(t, "j", (function() {
 				return i
+			})), n.d(t, "j", (function() {
+				return o
 			})), n.d(t, "a", (function() {
 				return l
 			})), n.d(t, "b", (function() {
@@ -324,11 +324,11 @@
 				}, e)
 			}
 
-			function o(e) {
-				return m(e) && !(e.length % 2) || i(e)
+			function i(e) {
+				return m(e) && !(e.length % 2) || o(e)
 			}
 
-			function i(e) {
+			function o(e) {
 				if (null == e) return !1;
 				if (e.constructor === Uint8Array) return !0;
 				if ("string" == typeof e) return !1;
@@ -354,7 +354,7 @@
 					for (let e = 0; e < n.length; e += 2) s.push(parseInt(n.substring(e, e + 2), 16));
 					return a(new Uint8Array(s))
 				}
-				return i(e) ? a(new Uint8Array(e)) : r.throwArgumentError("invalid arrayify value", "value", e)
+				return o(e) ? a(new Uint8Array(e)) : r.throwArgumentError("invalid arrayify value", "value", e)
 			}
 
 			function u(e) {
@@ -393,7 +393,7 @@
 				if ("bigint" == typeof e) return (e = e.toString(16)).length % 2 ? "0x0" + e : "0x" + e;
 				if (t.allowMissingPrefix && "string" == typeof e && "0x" !== e.substring(0, 2) && (e = "0x" + e), s(e)) return e.toHexString();
 				if (m(e)) return e.length % 2 && ("left" === t.hexPad ? e = "0x0" + e.substring(2) : "right" === t.hexPad ? e += "0" : r.throwArgumentError("hex data is odd-length", "value", e)), e.toLowerCase();
-				if (i(e)) {
+				if (o(e)) {
 					let t = "0x";
 					for (let n = 0; n < e.length; n++) {
 						let r = e[n];
@@ -448,7 +448,7 @@
 					recoveryParam: 0,
 					v: 0
 				};
-				if (o(e)) {
+				if (i(e)) {
 					const n = l(e);
 					65 !== n.length && r.throwArgumentError("invalid signature string; must be 65 bytes", "signature", e), t.r = h(n.slice(0, 32)), t.s = h(n.slice(32, 64)), t.v = n[64], t.v < 27 && (0 === t.v || 1 === t.v ? t.v += 27 : r.throwArgumentError("signature invalid v byte", "signature", e)), t.recoveryParam = 1 - t.v % 2, t.recoveryParam && (n[32] |= 128), t._vs = h(n.slice(32, 64))
 				} else {
@@ -476,13 +476,13 @@
 		"./node_modules/@ethersproject/keccak256/lib.esm/index.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return o
+				return i
 			}));
 			var r = n("./node_modules/@ethersproject/keccak256/node_modules/js-sha3/src/sha3.js"),
 				s = n.n(r),
 				a = n("./node_modules/@ethersproject/bytes/lib.esm/index.js");
 
-			function o(e) {
+			function i(e) {
 				return "0x" + s.a.keccak_256(Object(a.a)(e))
 			}
 		},
@@ -492,7 +492,7 @@
 					"use strict";
 					var r = "object" == typeof window ? window : {};
 					!r.JS_SHA3_NO_NODE_JS && "object" == typeof t && t.versions && t.versions.node && (r = n);
-					for (var s = !r.JS_SHA3_NO_COMMON_JS && "object" == typeof e && e.exports, a = "0123456789abcdef".split(""), o = [0, 8, 16, 24], i = [1, 0, 32898, 0, 32906, 2147483648, 2147516416, 2147483648, 32907, 0, 2147483649, 0, 2147516545, 2147483648, 32777, 2147483648, 138, 0, 136, 0, 2147516425, 0, 2147483658, 0, 2147516555, 0, 139, 2147483648, 32905, 2147483648, 32771, 2147483648, 32770, 2147483648, 128, 2147483648, 32778, 0, 2147483658, 2147483648, 2147516545, 2147483648, 32896, 2147483648, 2147483649, 0, 2147516424, 2147483648], l = [224, 256, 384, 512], u = ["hex", "buffer", "arrayBuffer", "array"], c = function(e, t, n) {
+					for (var s = !r.JS_SHA3_NO_COMMON_JS && "object" == typeof e && e.exports, a = "0123456789abcdef".split(""), i = [0, 8, 16, 24], o = [1, 0, 32898, 0, 32906, 2147483648, 2147516416, 2147483648, 32907, 0, 2147483649, 0, 2147516545, 2147483648, 32777, 2147483648, 138, 0, 136, 0, 2147516425, 0, 2147483658, 0, 2147516555, 0, 139, 2147483648, 32905, 2147483648, 32771, 2147483648, 32770, 2147483648, 128, 2147483648, 32778, 0, 2147483658, 2147483648, 2147516545, 2147483648, 32896, 2147483648, 2147483649, 0, 2147516424, 2147483648], l = [224, 256, 384, 512], u = ["hex", "buffer", "arrayBuffer", "array"], c = function(e, t, n) {
 							return function(r) {
 								return new w(e, t, e).update(r)[n]()
 							}
@@ -552,15 +552,15 @@
 					w.prototype.update = function(e) {
 						var t = "string" != typeof e;
 						t && e.constructor === ArrayBuffer && (e = new Uint8Array(e));
-						for (var n, r, s = e.length, a = this.blocks, i = this.byteCount, l = this.blockCount, u = 0, c = this.s; u < s;) {
+						for (var n, r, s = e.length, a = this.blocks, o = this.byteCount, l = this.blockCount, u = 0, c = this.s; u < s;) {
 							if (this.reset)
 								for (this.reset = !1, a[0] = this.block, n = 1; n < l + 1; ++n) a[n] = 0;
 							if (t)
-								for (n = this.start; u < s && n < i; ++u) a[n >> 2] |= e[u] << o[3 & n++];
+								for (n = this.start; u < s && n < o; ++u) a[n >> 2] |= e[u] << i[3 & n++];
 							else
-								for (n = this.start; u < s && n < i; ++u)(r = e.charCodeAt(u)) < 128 ? a[n >> 2] |= r << o[3 & n++] : r < 2048 ? (a[n >> 2] |= (192 | r >> 6) << o[3 & n++], a[n >> 2] |= (128 | 63 & r) << o[3 & n++]) : r < 55296 || r >= 57344 ? (a[n >> 2] |= (224 | r >> 12) << o[3 & n++], a[n >> 2] |= (128 | r >> 6 & 63) << o[3 & n++], a[n >> 2] |= (128 | 63 & r) << o[3 & n++]) : (r = 65536 + ((1023 & r) << 10 | 1023 & e.charCodeAt(++u)), a[n >> 2] |= (240 | r >> 18) << o[3 & n++], a[n >> 2] |= (128 | r >> 12 & 63) << o[3 & n++], a[n >> 2] |= (128 | r >> 6 & 63) << o[3 & n++], a[n >> 2] |= (128 | 63 & r) << o[3 & n++]);
-							if (this.lastByteIndex = n, n >= i) {
-								for (this.start = n - i, this.block = a[l], n = 0; n < l; ++n) c[n] ^= a[n];
+								for (n = this.start; u < s && n < o; ++u)(r = e.charCodeAt(u)) < 128 ? a[n >> 2] |= r << i[3 & n++] : r < 2048 ? (a[n >> 2] |= (192 | r >> 6) << i[3 & n++], a[n >> 2] |= (128 | 63 & r) << i[3 & n++]) : r < 55296 || r >= 57344 ? (a[n >> 2] |= (224 | r >> 12) << i[3 & n++], a[n >> 2] |= (128 | r >> 6 & 63) << i[3 & n++], a[n >> 2] |= (128 | 63 & r) << i[3 & n++]) : (r = 65536 + ((1023 & r) << 10 | 1023 & e.charCodeAt(++u)), a[n >> 2] |= (240 | r >> 18) << i[3 & n++], a[n >> 2] |= (128 | r >> 12 & 63) << i[3 & n++], a[n >> 2] |= (128 | r >> 6 & 63) << i[3 & n++], a[n >> 2] |= (128 | 63 & r) << i[3 & n++]);
+							if (this.lastByteIndex = n, n >= o) {
+								for (this.start = n - o, this.block = a[l], n = 0; n < l; ++n) c[n] ^= a[n];
 								x(c), this.reset = !0
 							} else this.start = n
 						}
@@ -576,11 +576,11 @@
 						x(r)
 					}, w.prototype.toString = w.prototype.hex = function() {
 						this.finalize();
-						for (var e, t = this.blockCount, n = this.s, r = this.outputBlocks, s = this.extraBytes, o = 0, i = 0, l = ""; i < r;) {
-							for (o = 0; o < t && i < r; ++o, ++i) e = n[o], l += a[e >> 4 & 15] + a[15 & e] + a[e >> 12 & 15] + a[e >> 8 & 15] + a[e >> 20 & 15] + a[e >> 16 & 15] + a[e >> 28 & 15] + a[e >> 24 & 15];
-							i % t == 0 && (x(n), o = 0)
+						for (var e, t = this.blockCount, n = this.s, r = this.outputBlocks, s = this.extraBytes, i = 0, o = 0, l = ""; o < r;) {
+							for (i = 0; i < t && o < r; ++i, ++o) e = n[i], l += a[e >> 4 & 15] + a[15 & e] + a[e >> 12 & 15] + a[e >> 8 & 15] + a[e >> 20 & 15] + a[e >> 16 & 15] + a[e >> 28 & 15] + a[e >> 24 & 15];
+							o % t == 0 && (x(n), i = 0)
 						}
-						return s && (e = n[o], s > 0 && (l += a[e >> 4 & 15] + a[15 & e]), s > 1 && (l += a[e >> 12 & 15] + a[e >> 8 & 15]), s > 2 && (l += a[e >> 20 & 15] + a[e >> 16 & 15])), l
+						return s && (e = n[i], s > 0 && (l += a[e >> 4 & 15] + a[15 & e]), s > 1 && (l += a[e >> 12 & 15] + a[e >> 8 & 15]), s > 2 && (l += a[e >> 20 & 15] + a[e >> 16 & 15])), l
 					}, w.prototype.arrayBuffer = function() {
 						this.finalize();
 						var e, t = this.blockCount,
@@ -588,25 +588,25 @@
 							r = this.outputBlocks,
 							s = this.extraBytes,
 							a = 0,
-							o = 0,
-							i = this.outputBits >> 3;
-						e = s ? new ArrayBuffer(r + 1 << 2) : new ArrayBuffer(i);
-						for (var l = new Uint32Array(e); o < r;) {
-							for (a = 0; a < t && o < r; ++a, ++o) l[o] = n[a];
-							o % t == 0 && x(n)
+							i = 0,
+							o = this.outputBits >> 3;
+						e = s ? new ArrayBuffer(r + 1 << 2) : new ArrayBuffer(o);
+						for (var l = new Uint32Array(e); i < r;) {
+							for (a = 0; a < t && i < r; ++a, ++i) l[i] = n[a];
+							i % t == 0 && x(n)
 						}
-						return s && (l[a] = n[a], e = e.slice(0, i)), e
+						return s && (l[a] = n[a], e = e.slice(0, o)), e
 					}, w.prototype.buffer = w.prototype.arrayBuffer, w.prototype.digest = w.prototype.array = function() {
 						this.finalize();
-						for (var e, t, n = this.blockCount, r = this.s, s = this.outputBlocks, a = this.extraBytes, o = 0, i = 0, l = []; i < s;) {
-							for (o = 0; o < n && i < s; ++o, ++i) e = i << 2, t = r[o], l[e] = 255 & t, l[e + 1] = t >> 8 & 255, l[e + 2] = t >> 16 & 255, l[e + 3] = t >> 24 & 255;
-							i % n == 0 && x(r)
+						for (var e, t, n = this.blockCount, r = this.s, s = this.outputBlocks, a = this.extraBytes, i = 0, o = 0, l = []; o < s;) {
+							for (i = 0; i < n && o < s; ++i, ++o) e = o << 2, t = r[i], l[e] = 255 & t, l[e + 1] = t >> 8 & 255, l[e + 2] = t >> 16 & 255, l[e + 3] = t >> 24 & 255;
+							o % n == 0 && x(r)
 						}
-						return a && (e = i << 2, t = r[o], a > 0 && (l[e] = 255 & t), a > 1 && (l[e + 1] = t >> 8 & 255), a > 2 && (l[e + 2] = t >> 16 & 255)), l
+						return a && (e = o << 2, t = r[i], a > 0 && (l[e] = 255 & t), a > 1 && (l[e + 1] = t >> 8 & 255), a > 2 && (l[e + 2] = t >> 16 & 255)), l
 					};
 					var x = function(e) {
-						var t, n, r, s, a, o, l, u, c, d, m, p, h, g, f, b, y, E, v, w, x, N, _, O, T, A, C, j, k, R, S, I, M, P, U, B, L, F, D, H, V, G, W, z, X, $, q, Y, K, J, Z, Q, ee, te, ne, re, se, ae, oe, ie, le, ue, ce;
-						for (r = 0; r < 48; r += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], a = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], o = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], l = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], u = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], c = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], d = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (p = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (o << 1 | l >>> 31), n = (h = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (l << 1 | o >>> 31), e[0] ^= t, e[1] ^= n, e[10] ^= t, e[11] ^= n, e[20] ^= t, e[21] ^= n, e[30] ^= t, e[31] ^= n, e[40] ^= t, e[41] ^= n, t = s ^ (u << 1 | c >>> 31), n = a ^ (c << 1 | u >>> 31), e[2] ^= t, e[3] ^= n, e[12] ^= t, e[13] ^= n, e[22] ^= t, e[23] ^= n, e[32] ^= t, e[33] ^= n, e[42] ^= t, e[43] ^= n, t = o ^ (d << 1 | m >>> 31), n = l ^ (m << 1 | d >>> 31), e[4] ^= t, e[5] ^= n, e[14] ^= t, e[15] ^= n, e[24] ^= t, e[25] ^= n, e[34] ^= t, e[35] ^= n, e[44] ^= t, e[45] ^= n, t = u ^ (p << 1 | h >>> 31), n = c ^ (h << 1 | p >>> 31), e[6] ^= t, e[7] ^= n, e[16] ^= t, e[17] ^= n, e[26] ^= t, e[27] ^= n, e[36] ^= t, e[37] ^= n, e[46] ^= t, e[47] ^= n, t = d ^ (s << 1 | a >>> 31), n = m ^ (a << 1 | s >>> 31), e[8] ^= t, e[9] ^= n, e[18] ^= t, e[19] ^= n, e[28] ^= t, e[29] ^= n, e[38] ^= t, e[39] ^= n, e[48] ^= t, e[49] ^= n, g = e[0], f = e[1], $ = e[11] << 4 | e[10] >>> 28, q = e[10] << 4 | e[11] >>> 28, j = e[20] << 3 | e[21] >>> 29, k = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, le = e[30] << 9 | e[31] >>> 23, G = e[40] << 18 | e[41] >>> 14, W = e[41] << 18 | e[40] >>> 14, P = e[2] << 1 | e[3] >>> 31, U = e[3] << 1 | e[2] >>> 31, b = e[13] << 12 | e[12] >>> 20, y = e[12] << 12 | e[13] >>> 20, Y = e[22] << 10 | e[23] >>> 22, K = e[23] << 10 | e[22] >>> 22, R = e[33] << 13 | e[32] >>> 19, S = e[32] << 13 | e[33] >>> 19, ue = e[42] << 2 | e[43] >>> 30, ce = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, ne = e[4] << 30 | e[5] >>> 2, B = e[14] << 6 | e[15] >>> 26, L = e[15] << 6 | e[14] >>> 26, E = e[25] << 11 | e[24] >>> 21, v = e[24] << 11 | e[25] >>> 21, J = e[34] << 15 | e[35] >>> 17, Z = e[35] << 15 | e[34] >>> 17, I = e[45] << 29 | e[44] >>> 3, M = e[44] << 29 | e[45] >>> 3, O = e[6] << 28 | e[7] >>> 4, T = e[7] << 28 | e[6] >>> 4, re = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, F = e[26] << 25 | e[27] >>> 7, D = e[27] << 25 | e[26] >>> 7, w = e[36] << 21 | e[37] >>> 11, x = e[37] << 21 | e[36] >>> 11, Q = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, X = e[9] << 27 | e[8] >>> 5, A = e[18] << 20 | e[19] >>> 12, C = e[19] << 20 | e[18] >>> 12, ae = e[29] << 7 | e[28] >>> 25, oe = e[28] << 7 | e[29] >>> 25, H = e[38] << 8 | e[39] >>> 24, V = e[39] << 8 | e[38] >>> 24, N = e[48] << 14 | e[49] >>> 18, _ = e[49] << 14 | e[48] >>> 18, e[0] = g ^ ~b & E, e[1] = f ^ ~y & v, e[10] = O ^ ~A & j, e[11] = T ^ ~C & k, e[20] = P ^ ~B & F, e[21] = U ^ ~L & D, e[30] = z ^ ~$ & Y, e[31] = X ^ ~q & K, e[40] = te ^ ~re & ae, e[41] = ne ^ ~se & oe, e[2] = b ^ ~E & w, e[3] = y ^ ~v & x, e[12] = A ^ ~j & R, e[13] = C ^ ~k & S, e[22] = B ^ ~F & H, e[23] = L ^ ~D & V, e[32] = $ ^ ~Y & J, e[33] = q ^ ~K & Z, e[42] = re ^ ~ae & ie, e[43] = se ^ ~oe & le, e[4] = E ^ ~w & N, e[5] = v ^ ~x & _, e[14] = j ^ ~R & I, e[15] = k ^ ~S & M, e[24] = F ^ ~H & G, e[25] = D ^ ~V & W, e[34] = Y ^ ~J & Q, e[35] = K ^ ~Z & ee, e[44] = ae ^ ~ie & ue, e[45] = oe ^ ~le & ce, e[6] = w ^ ~N & g, e[7] = x ^ ~_ & f, e[16] = R ^ ~I & O, e[17] = S ^ ~M & T, e[26] = H ^ ~G & P, e[27] = V ^ ~W & U, e[36] = J ^ ~Q & z, e[37] = Z ^ ~ee & X, e[46] = ie ^ ~ue & te, e[47] = le ^ ~ce & ne, e[8] = N ^ ~g & b, e[9] = _ ^ ~f & y, e[18] = I ^ ~O & A, e[19] = M ^ ~T & C, e[28] = G ^ ~P & B, e[29] = W ^ ~U & L, e[38] = Q ^ ~z & $, e[39] = ee ^ ~X & q, e[48] = ue ^ ~te & re, e[49] = ce ^ ~ne & se, e[0] ^= i[r], e[1] ^= i[r + 1]
+						var t, n, r, s, a, i, l, u, c, d, m, p, h, g, f, b, y, E, v, w, x, N, _, A, O, T, j, C, k, R, S, I, P, M, U, L, F, B, D, V, G, H, W, z, $, X, q, K, J, Y, Z, Q, ee, te, ne, re, se, ae, ie, oe, le, ue, ce;
+						for (r = 0; r < 48; r += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], a = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], i = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], l = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], u = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], c = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], d = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (p = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (i << 1 | l >>> 31), n = (h = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (l << 1 | i >>> 31), e[0] ^= t, e[1] ^= n, e[10] ^= t, e[11] ^= n, e[20] ^= t, e[21] ^= n, e[30] ^= t, e[31] ^= n, e[40] ^= t, e[41] ^= n, t = s ^ (u << 1 | c >>> 31), n = a ^ (c << 1 | u >>> 31), e[2] ^= t, e[3] ^= n, e[12] ^= t, e[13] ^= n, e[22] ^= t, e[23] ^= n, e[32] ^= t, e[33] ^= n, e[42] ^= t, e[43] ^= n, t = i ^ (d << 1 | m >>> 31), n = l ^ (m << 1 | d >>> 31), e[4] ^= t, e[5] ^= n, e[14] ^= t, e[15] ^= n, e[24] ^= t, e[25] ^= n, e[34] ^= t, e[35] ^= n, e[44] ^= t, e[45] ^= n, t = u ^ (p << 1 | h >>> 31), n = c ^ (h << 1 | p >>> 31), e[6] ^= t, e[7] ^= n, e[16] ^= t, e[17] ^= n, e[26] ^= t, e[27] ^= n, e[36] ^= t, e[37] ^= n, e[46] ^= t, e[47] ^= n, t = d ^ (s << 1 | a >>> 31), n = m ^ (a << 1 | s >>> 31), e[8] ^= t, e[9] ^= n, e[18] ^= t, e[19] ^= n, e[28] ^= t, e[29] ^= n, e[38] ^= t, e[39] ^= n, e[48] ^= t, e[49] ^= n, g = e[0], f = e[1], X = e[11] << 4 | e[10] >>> 28, q = e[10] << 4 | e[11] >>> 28, C = e[20] << 3 | e[21] >>> 29, k = e[21] << 3 | e[20] >>> 29, oe = e[31] << 9 | e[30] >>> 23, le = e[30] << 9 | e[31] >>> 23, H = e[40] << 18 | e[41] >>> 14, W = e[41] << 18 | e[40] >>> 14, M = e[2] << 1 | e[3] >>> 31, U = e[3] << 1 | e[2] >>> 31, b = e[13] << 12 | e[12] >>> 20, y = e[12] << 12 | e[13] >>> 20, K = e[22] << 10 | e[23] >>> 22, J = e[23] << 10 | e[22] >>> 22, R = e[33] << 13 | e[32] >>> 19, S = e[32] << 13 | e[33] >>> 19, ue = e[42] << 2 | e[43] >>> 30, ce = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, ne = e[4] << 30 | e[5] >>> 2, L = e[14] << 6 | e[15] >>> 26, F = e[15] << 6 | e[14] >>> 26, E = e[25] << 11 | e[24] >>> 21, v = e[24] << 11 | e[25] >>> 21, Y = e[34] << 15 | e[35] >>> 17, Z = e[35] << 15 | e[34] >>> 17, I = e[45] << 29 | e[44] >>> 3, P = e[44] << 29 | e[45] >>> 3, A = e[6] << 28 | e[7] >>> 4, O = e[7] << 28 | e[6] >>> 4, re = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, B = e[26] << 25 | e[27] >>> 7, D = e[27] << 25 | e[26] >>> 7, w = e[36] << 21 | e[37] >>> 11, x = e[37] << 21 | e[36] >>> 11, Q = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, $ = e[9] << 27 | e[8] >>> 5, T = e[18] << 20 | e[19] >>> 12, j = e[19] << 20 | e[18] >>> 12, ae = e[29] << 7 | e[28] >>> 25, ie = e[28] << 7 | e[29] >>> 25, V = e[38] << 8 | e[39] >>> 24, G = e[39] << 8 | e[38] >>> 24, N = e[48] << 14 | e[49] >>> 18, _ = e[49] << 14 | e[48] >>> 18, e[0] = g ^ ~b & E, e[1] = f ^ ~y & v, e[10] = A ^ ~T & C, e[11] = O ^ ~j & k, e[20] = M ^ ~L & B, e[21] = U ^ ~F & D, e[30] = z ^ ~X & K, e[31] = $ ^ ~q & J, e[40] = te ^ ~re & ae, e[41] = ne ^ ~se & ie, e[2] = b ^ ~E & w, e[3] = y ^ ~v & x, e[12] = T ^ ~C & R, e[13] = j ^ ~k & S, e[22] = L ^ ~B & V, e[23] = F ^ ~D & G, e[32] = X ^ ~K & Y, e[33] = q ^ ~J & Z, e[42] = re ^ ~ae & oe, e[43] = se ^ ~ie & le, e[4] = E ^ ~w & N, e[5] = v ^ ~x & _, e[14] = C ^ ~R & I, e[15] = k ^ ~S & P, e[24] = B ^ ~V & H, e[25] = D ^ ~G & W, e[34] = K ^ ~Y & Q, e[35] = J ^ ~Z & ee, e[44] = ae ^ ~oe & ue, e[45] = ie ^ ~le & ce, e[6] = w ^ ~N & g, e[7] = x ^ ~_ & f, e[16] = R ^ ~I & A, e[17] = S ^ ~P & O, e[26] = V ^ ~H & M, e[27] = G ^ ~W & U, e[36] = Y ^ ~Q & z, e[37] = Z ^ ~ee & $, e[46] = oe ^ ~ue & te, e[47] = le ^ ~ce & ne, e[8] = N ^ ~g & b, e[9] = _ ^ ~f & y, e[18] = I ^ ~A & T, e[19] = P ^ ~O & j, e[28] = H ^ ~M & L, e[29] = W ^ ~U & F, e[38] = Q ^ ~z & X, e[39] = ee ^ ~$ & q, e[48] = ue ^ ~te & re, e[49] = ce ^ ~ne & se, e[0] ^= o[r], e[1] ^= o[r + 1]
 					};
 					if (s) e.exports = h;
 					else
@@ -622,7 +622,7 @@
 			const r = "logger/5.4.0";
 			let s = !1,
 				a = !1;
-			const o = {
+			const i = {
 				debug: 1,
 				default: 2,
 				info: 2,
@@ -630,7 +630,7 @@
 				error: 4,
 				off: 5
 			};
-			let i = o.default,
+			let o = i.default,
 				l = null;
 			const u = function() {
 				try {
@@ -665,7 +665,7 @@
 				}
 				_log(e, t) {
 					const n = e.toLowerCase();
-					null == o[n] && this.throwArgumentError("invalid log level name", "logLevel", e), i > o[n] || console.log.apply(console, t)
+					null == i[n] && this.throwArgumentError("invalid log level name", "logLevel", e), o > i[n] || console.log.apply(console, t)
 				}
 				debug(...e) {
 					this._log(m.levels.DEBUG, e)
@@ -683,16 +683,16 @@
 					Object.keys(n).forEach(e => {
 						try {
 							r.push(e + "=" + JSON.stringify(n[e]))
-						} catch (o) {
+						} catch (i) {
 							r.push(e + "=" + JSON.stringify(n[e].toString()))
 						}
 					}), r.push(`code=${t}`), r.push(`version=${this.version}`);
 					const s = e;
 					r.length && (e += " (" + r.join(", ") + ")");
-					const o = new Error(e);
-					return o.reason = s, o.code = t, Object.keys(n).forEach((function(e) {
-						o[e] = n[e]
-					})), o
+					const i = new Error(e);
+					return i.reason = s, i.code = t, Object.keys(n).forEach((function(e) {
+						i[e] = n[e]
+					})), i
 				}
 				throwError(e, t, n) {
 					throw this.makeError(e, t, n)
@@ -763,8 +763,8 @@
 					a = !!e, s = !!t
 				}
 				static setLogLevel(e) {
-					const t = o[e.toLowerCase()];
-					null != t ? i = t : m.globalLogger().warn("invalid log level - " + e)
+					const t = i[e.toLowerCase()];
+					null != t ? o = t : m.globalLogger().warn("invalid log level - " + e)
 				}
 				static from(e) {
 					return new m(e)
@@ -783,13 +783,13 @@
 				s = n("./node_modules/@ethersproject/logger/lib.esm/index.js");
 			const a = new s.a("rlp/5.4.0");
 
-			function o(e) {
+			function i(e) {
 				const t = [];
 				for (; e;) t.unshift(255 & e), e >>= 8;
 				return t
 			}
 
-			function i(e, t, n) {
+			function o(e, t, n) {
 				let r = 0;
 				for (let s = 0; s < n; s++) r = 256 * r + e[t + s];
 				return r
@@ -802,27 +802,27 @@
 						if (t.forEach((function(t) {
 								n = n.concat(e(t))
 							})), n.length <= 55) return n.unshift(192 + n.length), n;
-						const r = o(n.length);
+						const r = i(n.length);
 						return r.unshift(247 + r.length), r.concat(n)
 					}
 					Object(r.k)(t) || a.throwArgumentError("RLP object must be BytesLike", "object", t);
 					const n = Array.prototype.slice.call(Object(r.a)(t));
 					if (1 === n.length && n[0] <= 127) return n;
 					if (n.length <= 55) return n.unshift(128 + n.length), n;
-					const s = o(n.length);
+					const s = i(n.length);
 					return s.unshift(183 + s.length), s.concat(n)
 				}(e))
 			}
 
 			function u(e, t, n, r) {
-				const o = [];
+				const i = [];
 				for (; n < t + 1 + r;) {
-					const i = c(e, n);
-					o.push(i.result), (n += i.consumed) > t + 1 + r && a.throwError("child data too short", s.a.errors.BUFFER_OVERRUN, {})
+					const o = c(e, n);
+					i.push(o.result), (n += o.consumed) > t + 1 + r && a.throwError("child data too short", s.a.errors.BUFFER_OVERRUN, {})
 				}
 				return {
 					consumed: 1 + r,
-					result: o
+					result: i
 				}
 			}
 
@@ -830,7 +830,7 @@
 				if (0 === e.length && a.throwError("data too short", s.a.errors.BUFFER_OVERRUN, {}), e[t] >= 248) {
 					const n = e[t] - 247;
 					t + 1 + n > e.length && a.throwError("data short segment too short", s.a.errors.BUFFER_OVERRUN, {});
-					const r = i(e, t + 1, n);
+					const r = o(e, t + 1, n);
 					return t + 1 + n + r > e.length && a.throwError("data long segment too short", s.a.errors.BUFFER_OVERRUN, {}), u(e, t, t + 1 + n, n + r)
 				}
 				if (e[t] >= 192) {
@@ -840,10 +840,10 @@
 				if (e[t] >= 184) {
 					const n = e[t] - 183;
 					t + 1 + n > e.length && a.throwError("data array too short", s.a.errors.BUFFER_OVERRUN, {});
-					const o = i(e, t + 1, n);
-					return t + 1 + n + o > e.length && a.throwError("data array too short", s.a.errors.BUFFER_OVERRUN, {}), {
-						consumed: 1 + n + o,
-						result: Object(r.i)(e.slice(t + 1 + n, t + 1 + n + o))
+					const i = o(e, t + 1, n);
+					return t + 1 + n + i > e.length && a.throwError("data array too short", s.a.errors.BUFFER_OVERRUN, {}), {
+						consumed: 1 + n + i,
+						result: Object(r.i)(e.slice(t + 1 + n, t + 1 + n + i))
 					}
 				}
 				if (e[t] >= 128) {
@@ -864,153 +864,6 @@
 					n = c(t, 0);
 				return n.consumed !== t.length && a.throwArgumentError("invalid rlp data", "data", e), n.result
 			}
-		},
-		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
-			var r = n("./node_modules/lodash/toString.js"),
-				s = 0;
-			e.exports = function(e) {
-				var t = ++s;
-				return r(e) + t
-			}
-		},
-		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, n) {
-			e.exports = {
-				wrapper: "_2AfJEqW9tv4b_kolKEuS9K",
-				titleRow: "p4QfstubN5cRxd-gy8gFH",
-				detailsContainer: "_2V3KEAhexNh-mP3TbrVClC",
-				buttonRow: "_1fcbQFwN65ik28DNmWnpX4",
-				confirmButton: "zcMEJWBL7q-mYGOPSpjN-"
-			}
-		},
-		"./src/reddit/controls/ErrorText/index.m.less": function(e, t, n) {
-			e.exports = {
-				wrapper: "_2hGJP-9xfXBXd0wqhBLHhY",
-				description: "_3h_9YwxjuOr77VhScPrjCI",
-				moreText: "_1Y0BrhDgcSTeSYvmSPYepI"
-			}
-		},
-		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return v
-			})), n.d(t, "c", (function() {
-				return w
-			}));
-			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/lodash/uniqueId.js"),
-				a = n.n(s),
-				o = n("./node_modules/raf/index.js"),
-				i = n.n(o),
-				l = n("./node_modules/react/index.js"),
-				u = n.n(l),
-				c = n("./src/lib/classNames/index.ts"),
-				d = n("./src/higherOrderComponents/asModal/index.tsx"),
-				m = n("./src/reddit/controls/Button/index.tsx"),
-				p = n("./src/reddit/layout/row/Inline/index.tsx"),
-				h = n("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
-				g = n.n(h);
-			var f = Object(d.a)(e => {
-					const {
-						children: t,
-						title: n
-					} = e;
-					return u.a.createElement("div", {
-						className: g.a.wrapper
-					}, u.a.createElement(p.a, {
-						className: g.a.titleRow
-					}, n), u.a.createElement("div", {
-						className: g.a.detailsContainer
-					}, t), u.a.createElement(p.a, {
-						className: g.a.buttonRow
-					}, u.a.createElement(m.l, {
-						className: g.a.confirmButton,
-						onClick: e.onConfirmed
-					}, r.fbt._("Ok", null, {
-						hk: "2Giu9U"
-					}))))
-				}),
-				b = n("./src/reddit/controls/ErrorText/index.m.less"),
-				y = n.n(b);
-			class E extends u.a.Component {
-				constructor(e) {
-					super(e), this.spanRef = u.a.createRef(), this.toggleModal = () => {
-						this.setState({
-							isModalOpen: !this.state.isModalOpen
-						})
-					}, this.state = {
-						textHasOverflowed: !1,
-						modalId: `ErrorTextModal--${a()()}`,
-						isModalOpen: !1
-					}
-				}
-				componentDidMount() {
-					this.calcTextDidOverflow()
-				}
-				componentDidUpdate() {
-					this.calcTextDidOverflow()
-				}
-				calcTextDidOverflow() {
-					i()(() => {
-						const e = this.spanRef.current;
-						if (!e) return;
-						const t = e.scrollWidth > e.clientWidth;
-						this.setState(e => e.textHasOverflowed !== t ? {
-							textHasOverflowed: t
-						} : null)
-					})
-				}
-				render() {
-					const {
-						children: e,
-						className: t,
-						errorModalBody: n,
-						errorModalTitle: s = r.fbt._("Error", null, {
-							hk: "2nPF4G"
-						}),
-						moreText: a = r.fbt._("More", null, {
-							hk: "1bCAQ0"
-						})
-					} = this.props, {
-						textHasOverflowed: o,
-						isModalOpen: i
-					} = this.state;
-					return u.a.createElement("div", {
-						className: Object(c.a)(y.a.wrapper, t)
-					}, u.a.createElement("span", {
-						className: y.a.description,
-						ref: this.spanRef
-					}, e), o && u.a.createElement("span", {
-						className: y.a.moreText,
-						onClick: this.toggleModal
-					}, a), i && u.a.createElement(f, {
-						onConfirmed: this.toggleModal,
-						title: s
-					}, n || e))
-				}
-			}
-			const v = e => {
-					const {
-						className: t,
-						errorClassName: n,
-						errorModalTitle: r,
-						fallbackMessage: s,
-						messages: a = []
-					} = e, o = a.length ? a : s ? [s] : [];
-					return o.length ? u.a.createElement("div", {
-						className: t
-					}, o.map((e, t) => u.a.createElement(E, {
-						className: n,
-						errorModalTitle: r,
-						key: t
-					}, e))) : null
-				},
-				w = e => u.a.createElement(v, {
-					fallbackMessage: r.fbt._("Something went wrong", null, {
-						hk: "Cw1BT"
-					}),
-					messages: e
-				});
-			t.b = E
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1044,8 +897,8 @@
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
 				a = n("./src/lib/classNames/index.ts"),
-				o = n("./src/lib/lessComponent.tsx"),
-				i = n("./src/reddit/controls/ErrorText/index.tsx"),
+				i = n("./src/lib/lessComponent.tsx"),
+				o = n("./src/reddit/controls/ErrorText/index.tsx"),
 				l = n("./src/reddit/icons/svgs/Plus/index.tsx"),
 				u = n("./src/reddit/icons/svgs/Trash2/index.tsx"),
 				c = n("./src/reddit/controls/FormFields/index.m.less"),
@@ -1060,7 +913,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const p = o.a.input("input", d.a),
+			const p = i.a.input("input", d.a),
 				h = e => {
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
@@ -1069,18 +922,18 @@
 						label: t,
 						children: n,
 						inputRef: r,
-						className: o,
-						...i
+						className: i,
+						...o
 					} = e, l = void 0 !== e.value && "" !== e.value;
 					return s.a.createElement("div", {
-						className: Object(a.a)(d.a.inputWrapper, o, {
+						className: Object(a.a)(d.a.inputWrapper, i, {
 							[d.a.mIsInvalid]: e.isInvalid
 						}),
 						onClick: h
 					}, s.a.createElement(p, m({
 						"aria-invalid": e.isInvalid,
 						innerRef: r
-					}, i)), e.label && s.a.createElement("label", {
+					}, o)), e.label && s.a.createElement("label", {
 						className: Object(a.a)(d.a.label, {
 							[d.a.mHasValue]: l
 						})
@@ -1091,14 +944,14 @@
 						label: t,
 						children: n,
 						inputRef: r,
-						isInvalid: o,
-						className: i,
+						isInvalid: i,
+						className: o,
 						redditStyle: l,
 						...u
 					} = e, c = void 0 !== e.value && "" !== e.value;
 					return s.a.createElement("div", {
-						className: Object(a.a)(d.a.inputMovingLabelWrapper, i, {
-							[d.a.mIsInvalid]: o,
+						className: Object(a.a)(d.a.inputMovingLabelWrapper, o, {
+							[d.a.mIsInvalid]: i,
 							[d.a.mIsRedditStyle]: l
 						}),
 						onClick: h
@@ -1163,13 +1016,13 @@
 						placeholder: r,
 						errors: a = []
 					} = this.props;
-					return e.map((e, o) => s.a.createElement(g, {
-						inputRef: e => this.setInputRef(e, o),
-						isInvalid: !!a[o],
+					return e.map((e, i) => s.a.createElement(g, {
+						inputRef: e => this.setInputRef(e, i),
+						isInvalid: !!a[i],
 						disabled: t,
 						type: "text",
 						label: n,
-						onChange: e => this.updateValue(e, o),
+						onChange: e => this.updateValue(e, i),
 						placeholder: r,
 						value: e,
 						style: {
@@ -1177,12 +1030,12 @@
 						}
 					}, s.a.createElement("div", {
 						className: d.a.trashContainer,
-						onClick: () => this.removeValue(o)
+						onClick: () => this.removeValue(i)
 					}, s.a.createElement(u.b, {
 						className: d.a.trash
-					})), !!a[o] && s.a.createElement(i.b, {
+					})), !!a[i] && s.a.createElement(o.b, {
 						className: d.a.errorText
-					}, a[o])))
+					}, a[i])))
 				}
 				render() {
 					const {
@@ -1190,19 +1043,19 @@
 						buttonOnTop: t,
 						values: n,
 						maxLength: r,
-						addValueText: o,
-						disabled: i
+						addValueText: i,
+						disabled: o
 					} = this.props;
 					this.focusedInput = null;
-					const l = !(!!r && n.length >= r) && !i;
+					const l = !(!!r && n.length >= r) && !o;
 					return s.a.createElement("div", {
 						className: Object(a.a)(d.a.multiInputWrapper, e)
 					}, t && l && s.a.createElement(b, {
 						onClick: this.addValue,
-						text: o
+						text: i
 					}), this.renderFields(), !t && l && s.a.createElement(b, {
 						onClick: this.addValue,
-						text: o
+						text: i
 					}))
 				}
 			}
@@ -1219,15 +1072,15 @@
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
 				a = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/controls/LoadingIcon/index.m.less"),
-				i = n.n(o);
+				i = n("./src/reddit/controls/LoadingIcon/index.m.less"),
+				o = n.n(i);
 			t.a = ({
 				center: e,
 				className: t,
 				sizePx: n = 10
 			}) => s.a.createElement("div", {
-				className: Object(a.a)(i.a.loadingIcon, t, {
-					[i.a.mCentered]: e
+				className: Object(a.a)(o.a.loadingIcon, t, {
+					[o.a.mCentered]: e
 				}),
 				style: {
 					"--sizePx": `${n}px`
@@ -1310,9 +1163,9 @@
 			})), n.d(t, "f", (function() {
 				return a
 			})), n.d(t, "d", (function() {
-				return o
-			})), n.d(t, "e", (function() {
 				return i
+			})), n.d(t, "e", (function() {
+				return o
 			})), n.d(t, "b", (function() {
 				return l
 			})), n.d(t, "a", (function() {
@@ -1338,12 +1191,12 @@
 				return !(!e || !e.isMetaMask)
 			}
 
-			function o() {
+			function i() {
 				const e = s();
 				return e && e.selectedAddress || null
 			}
 
-			function i() {
+			function o() {
 				const e = s();
 				return (null == e ? void 0 : e.networkVersion) || null
 			}
@@ -1351,14 +1204,14 @@
 			function l() {
 				const e = s();
 				if (!e) throw new Error("Please install a web3 provider, such as MetaMask");
-				return o() ? Promise.resolve() : e.enable()
+				return i() ? Promise.resolve() : e.enable()
 			}
 			const u = 4001;
 			async function c(e, t, r, a) {
-				const [o, i] = await Promise.all([Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				const [i, o] = await Promise.all([Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await l();
-				const u = new o.providers.Web3Provider(s()).getSigner(),
-					c = new o.Contract(e, i, u),
+				const u = new i.providers.Web3Provider(s()).getSigner(),
+					c = new i.Contract(e, o, u),
 					d = await c[r](...a);
 				return await d.wait()
 			}
@@ -1384,18 +1237,18 @@
 			};
 			const m = 1;
 			async function p(e, t, r, s, a) {
-				const o = await Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+				const i = await Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
-						BigNumber: i
-					} = o,
+						BigNumber: o
+					} = i,
 					{
 						hexlify: l,
 						hexZeroPad: u,
 						toUtf8Bytes: p
-					} = o.utils,
-					h = i.from(r).add(a),
+					} = i.utils,
+					h = o.from(r).add(a),
 					g = m,
-					f = "0x" + [l(1)].concat([l(g), i.from(s).toHexString(), i.from(a).toHexString()].map(e => u(e, 32))).concat(l(p(""))).map(e => e.substr(2)).join("");
+					f = "0x" + [l(1)].concat([l(g), o.from(s).toHexString(), o.from(a).toHexString()].map(e => u(e, 32))).concat(l(p(""))).map(e => e.substr(2)).join("");
 				return async function(e, t, n, r) {
 					return c(e, Promise.resolve(d), "send", [t, n, r])
 				}(e, t, h.toString(), f)
@@ -1419,7 +1272,7 @@
 			};
 			async function g(e, t, n) {
 				await l();
-				const s = o() || "";
+				const s = i() || "";
 				if (t.toLowerCase() !== s.toLowerCase()) throw new Error(r.fbt._("Please select your registered address in MetaMask: {subscriberAddress}", [r.fbt._param("subscriberAddress", t)], {
 					hk: "3rehSL"
 				}).toString());
@@ -1520,10 +1373,10 @@
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
 				a = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/icons/svgs/Trash2/index.m.less"),
-				i = n.n(o);
+				i = n("./src/reddit/icons/svgs/Trash2/index.m.less"),
+				o = n.n(i);
 			const l = e => s.a.createElement("svg", {
-				className: Object(a.a)(i.a.icon, e.className),
+				className: Object(a.a)(o.a.icon, e.className),
 				viewBox: "0 0 20 20",
 				xmlns: "http://www.w3.org/2000/svg",
 				onClick: e.onClick
@@ -1548,7 +1401,7 @@
 		"./src/reddit/pages/meta/ArbitrumPointsMigrationPage/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "ArbitrumPointsMigrationPage", (function() {
-				return G
+				return H
 			})), n.d(t, "default", (function() {
 				return z
 			}));
@@ -1556,8 +1409,8 @@
 			var r = n("./node_modules/ethers/node_modules/@ethersproject/bignumber/lib.esm/bignumber.js"),
 				s = n("./node_modules/ethers/lib.esm/index.js"),
 				a = n("./node_modules/react/index.js"),
-				o = n.n(a),
-				i = n("./node_modules/react-redux/es/index.js"),
+				i = n.n(a),
+				o = n("./node_modules/react-redux/es/index.js"),
 				l = n("./src/reddit/actions/governance/index.ts"),
 				u = n("./src/reddit/controls/Button/index.tsx"),
 				c = n("./src/reddit/controls/FormFields/index.tsx"),
@@ -1965,7 +1818,7 @@
 			const x = "0xce01Bcd1931Eb9e19a19d2d00287FAbD733D705A",
 				N = "0x000000000000000000000000000000000000006E",
 				_ = 9e5,
-				O = [{
+				A = [{
 					name: "Gigapoints",
 					l1ContractAddress: "0x94C4b0d6100de593d1D287C2b3a4Aab9aB7A039e",
 					l2ContractAddress: "0xb3F17F3142E37577Df18464fb30a5Ff85854Ac5A"
@@ -1986,9 +1839,9 @@
 					l1ContractAddress: "0xDF82c9014F127243CE1305DFE54151647d74B27A",
 					l2ContractAddress: "0x138fAFa28a05A38f4d2658b12b0971221A7d5728"
 				}];
-			async function T() {
+			async function O() {
 				const e = new s.ethers.providers.Web3Provider(Object(w.c)()).getSigner(),
-					t = O.map(t => (async function(e, t) {
+					t = A.map(t => (async function(e, t) {
 						const n = new s.ethers.Contract(t.l1ContractAddress, h.a, e),
 							r = await n.balanceOf(e.getAddress());
 						if (r.isZero()) return null;
@@ -1999,28 +1852,28 @@
 					})(e, t));
 				return (await Promise.all(t)).filter(e => null !== e)
 			}
-			async function A(e, t, n, a) {
-				const o = new s.ethers.Contract(x, g, e),
-					i = await o.inbox();
-				console.log(`L1GatewayRouter: ${o.address}, inbox: ${i}`);
+			async function T(e, t, n, a) {
+				const i = new s.ethers.Contract(x, g, e),
+					o = await i.inbox();
+				console.log(`L1GatewayRouter: ${i.address}, inbox: ${o}`);
 				const l = s.ethers.utils.defaultAbiCoder.encode(["uint256", "bytes"], [0, "0x"]),
-					u = await o.outboundTransfer(n, t, a, 1e6, 0, l);
+					u = await i.outboundTransfer(n, t, a, 1e6, 0, l);
 				console.log("Got transaction hash:", u.hash);
 				const c = await u.wait();
 				console.log("Receipt:", c);
 				const d = await async function(e, t, n) {
 					const s = new y.b(t, E, n).interface,
 						a = s.getEvent("InboxMessageDelivered"),
-						o = s.getEvent("InboxMessageDeliveredFromOrigin"),
-						i = s.getEventTopic(a),
-						l = s.getEventTopic(o),
-						u = e.logs.filter(e => e.topics[0] === i || e.topics[0] === l);
+						i = s.getEvent("InboxMessageDeliveredFromOrigin"),
+						o = s.getEventTopic(a),
+						l = s.getEventTopic(i),
+						u = e.logs.filter(e => e.topics[0] === o || e.topics[0] === l);
 					if (0 !== u.length) return u.map(e => r.a.from(e.topics[1]))
-				}(c, i, e);
+				}(c, o, e);
 				if (!d) throw new Error("No L2 transaction were found in L1 tx: " + c.transactionHashTxHash);
 				return console.log("seqnumbs", d), d
 			}
-			async function C(e, t, n, r) {
+			async function j(e, t, n, r) {
 				const a = await t.getBlockNumber();
 				for (console.log("block number", a); Date.now() < r;) {
 					const t = new s.ethers.Contract(N, p, n),
@@ -2033,25 +1886,25 @@
 						return void console.log(`Ticket ${e} is redeemed @ ${n.hash}. Status: ${s.status}`)
 					}
 					console.log("Not found. Checking if ticket is already redeemed...");
-					const i = t.filters.Redeemed(e);
+					const o = t.filters.Redeemed(e);
 					try {
-						const n = await t.queryFilter(i);
+						const n = await t.queryFilter(o);
 						if (n.length > 0) return void console.log(`Ticket ${e} is already redeemed. Found event Redeemed(${n[0].args} @ tx ${n[0].transactionHash})`)
-					} catch (o) {
-						console.error(o)
+					} catch (i) {
+						console.error(i)
 					}
 					console.log(`Waiting for ticket ${e}...`), await new Promise(e => setTimeout(e, 1e4)), console.log("Checking if ticket was created...");
 					const l = t.filters.TicketCreated(e);
 					try {
 						const e = await t.queryFilter(l, a);
 						e.length > 0 && console.log(`Found event TicketCreated(${e[0].args})`)
-					} catch (o) {
-						console.error(o)
+					} catch (i) {
+						console.error(i)
 					}
 				}
 				throw new Error(`Timed out while trying to find redeemable ticket ${e}.`)
 			}
-			async function j(e, t) {
+			async function C(e, t) {
 				const n = new s.ethers.providers.JsonRpcProvider(Object(m.i)(m.a.ArbitrumRinkeby)),
 					r = new s.ethers.Contract(e, h.a, n);
 				return await r.balanceOf(t)
@@ -2060,18 +1913,18 @@
 				R = n("./src/reddit/selectors/user.ts"),
 				S = n("./src/reddit/icons/svgs/CheckmarkFitted/index.tsx"),
 				I = n("./src/reddit/icons/svgs/Clear/index.tsx"),
-				M = n("./src/reddit/pages/meta/ArbitrumPointsMigrationPage/index.m.less"),
-				P = n.n(M);
-			const U = () => o.a.createElement(d.a, {
-					className: P.a.loading
+				P = n("./src/reddit/pages/meta/ArbitrumPointsMigrationPage/index.m.less"),
+				M = n.n(P);
+			const U = () => i.a.createElement(d.a, {
+					className: M.a.loading
 				}),
-				B = () => o.a.createElement(S.a, {
-					className: P.a.succeeded
+				L = () => i.a.createElement(S.a, {
+					className: M.a.succeeded
 				}),
-				L = () => o.a.createElement(I.a, {
-					className: P.a.failed
+				F = () => i.a.createElement(I.a, {
+					className: M.a.failed
 				}),
-				F = "5391184";
+				B = "5391184";
 
 			function D({
 				destinationAddress: e,
@@ -2079,9 +1932,9 @@
 				network: n,
 				saveMigrationState: r
 			}) {
-				const [i, l] = Object(a.useState)(""), [u, c] = Object(a.useState)(!!t.seqNums), [d, p] = Object(a.useState)(void 0), [h, g] = Object(a.useState)(!1), [f, b] = Object(a.useState)(null), y = [o.a.createElement("p", {
+				const [o, l] = Object(a.useState)(""), [u, c] = Object(a.useState)(!!t.seqNums), [d, p] = Object(a.useState)(void 0), [h, g] = Object(a.useState)(!1), [f, b] = Object(a.useState)(null), y = [i.a.createElement("p", {
 					key: "migrating"
-				}, o.a.createElement("b", null, "Migrating ", s.ethers.utils.formatEther(t.balance), " ", t.name, " ", "to ", e, "...")), o.a.createElement("p", {
+				}, i.a.createElement("b", null, "Migrating ", s.ethers.utils.formatEther(t.balance), " ", t.name, " ", "to ", e, "...")), i.a.createElement("p", {
 					key: "warning"
 				}, "This will take many minutes. DO NOT CLOSE THIS WINDOW.")];
 				if (Object(a.useEffect)(() => {
@@ -2089,73 +1942,73 @@
 							try {
 								const a = new s.ethers.providers.Web3Provider(Object(w.c)()).getSigner();
 								if (u) {
-									if (n === F) {
+									if (n === B) {
 										const n = await async function(e, t) {
 											const n = new s.ethers.providers.JsonRpcProvider(Object(m.i)(m.a.ArbitrumRinkeby));
 											let r = null;
-											for (const s of t) r = await v(s, n), console.log(`Looking for ticket ${r} corresponding to SEQ ${s}`), await C(r, n, e, Date.now() + _);
+											for (const s of t) r = await v(s, n), console.log(`Looking for ticket ${r} corresponding to SEQ ${s}`), await j(r, n, e, Date.now() + _);
 											return console.log("All tickets redeemed!"), r
 										}(a, t.seqNums);
-										p(n), g(!0), r(), b(await j(t.l2ContractAddress, e))
+										p(n), g(!0), r(), b(await C(t.l2ContractAddress, e))
 									}
 								} else {
 									if ("4" !== n) throw new Error("Wallet must be set to Rinkeby Test Network");
-									t.seqNums = await A(a, e, t.l1ContractAddress, t.balance), t.originalL2Balance = await j(t.l2ContractAddress, e), r(t), c(!0)
+									t.seqNums = await T(a, e, t.l1ContractAddress, t.balance), t.originalL2Balance = await C(t.l2ContractAddress, e), r(t), c(!0)
 								}
 							} catch (a) {
 								throw console.error("Got error while running migration: ", a), l(a.message || a), a
 							}
 						}()
-					}, [n]), u && y.push(o.a.createElement("p", {
+					}, [n]), u && y.push(i.a.createElement("p", {
 						key: "l1-success"
-					}, o.a.createElement(B, null), " L1-to-L2 transfer transaction completed.")), h && y.push(o.a.createElement("p", {
+					}, i.a.createElement(L, null), " L1-to-L2 transfer transaction completed.")), h && y.push(i.a.createElement("p", {
 						key: "l2-success"
-					}, o.a.createElement(B, null), " L2 tickets successfully redeemed.")), f) {
+					}, i.a.createElement(L, null), " L2 tickets successfully redeemed.")), f) {
 					const e = t.originalL2Balance || 0;
-					f.gt(e) && y.push(o.a.createElement("p", {
+					f.gt(e) && y.push(i.a.createElement("p", {
 						key: "balance"
-					}, o.a.createElement(B, null), " L2 balance of ", t.name, " went from", " ", s.ethers.utils.formatEther(e), " to", " ", s.ethers.utils.formatEther(f), ".")), y.push(o.a.createElement("p", {
+					}, i.a.createElement(L, null), " L2 balance of ", t.name, " went from", " ", s.ethers.utils.formatEther(e), " to", " ", s.ethers.utils.formatEther(f), ".")), y.push(i.a.createElement("p", {
 						key: "balance"
-					}, o.a.createElement(B, null), " Migration complete", d ? o.a.createElement("span", null, " ", "at", " ", o.a.createElement("a", {
+					}, i.a.createElement(L, null), " Migration complete", d ? i.a.createElement("span", null, " ", "at", " ", i.a.createElement("a", {
 						href: `https://testnet.redditspace.com/tx/${d}/token-transfers`,
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, d)) : null, "! It may take several minutes for the transaction to settle."))
 				}
-				return i ? y.push(o.a.createElement("p", {
+				return o ? y.push(i.a.createElement("p", {
 					key: "error"
-				}, o.a.createElement(L, null), " Encountered an error: ", i.toString())) : u ? h ? f || y.push(o.a.createElement("p", {
+				}, i.a.createElement(F, null), " Encountered an error: ", o.toString())) : u ? h ? f || y.push(i.a.createElement("p", {
 					key: "l2-pending"
-				}, o.a.createElement(U, null), " Loading L2 balance...")) : n !== F ? (y.push(o.a.createElement("p", {
+				}, i.a.createElement(U, null), " Loading L2 balance...")) : n !== B ? (y.push(i.a.createElement("p", {
 					key: "change-network"
-				}, o.a.createElement(U, null), " ", o.a.createElement("b", null, "Great! Now you'll need to switch networks to the Arbitrum chain."), " ", "Here are the instructions for MetaMask specifically:")), y.push(o.a.createElement("ol", {
+				}, i.a.createElement(U, null), " ", i.a.createElement("b", null, "Great! Now you'll need to switch networks to the Arbitrum chain."), " ", "Here are the instructions for MetaMask specifically:")), y.push(i.a.createElement("ol", {
 					key: "instructions"
-				}, o.a.createElement("li", null, "Tap Rinkeby Test Network to change networks"), o.a.createElement("li", null, 'Select "Custom RPC"'), o.a.createElement("li", null, 'For Network Name, enter: "Reddit Testnet"'), o.a.createElement("li", null, "For New RPC URL, enter: https://testnet.redditspace.com/rpc"), o.a.createElement("li", null, "For Chain ID, enter: 5391184"), o.a.createElement("li", null, "Hit Save")))) : y.push(o.a.createElement("p", {
+				}, i.a.createElement("li", null, "Tap Rinkeby Test Network to change networks"), i.a.createElement("li", null, 'Select "Custom RPC"'), i.a.createElement("li", null, 'For Network Name, enter: "Reddit Testnet"'), i.a.createElement("li", null, "For New RPC URL, enter: https://testnet.redditspace.com/rpc"), i.a.createElement("li", null, "For Chain ID, enter: 5391184"), i.a.createElement("li", null, "Hit Save")))) : y.push(i.a.createElement("p", {
 					key: "l2-pending"
-				}, o.a.createElement(U, null), " Redeeming L2 tickets... After ~10 minutes, you will be prompted to sign a new redemption transaction. You may need to update the gas limit in MetaMask to 21000, even though there is no gas required.")) : y.push(o.a.createElement("p", {
+				}, i.a.createElement(U, null), " Redeeming L2 tickets... After ~10 minutes, you will be prompted to sign a new redemption transaction. You may need to update the gas limit in MetaMask to 21000, even though there is no gas required.")) : y.push(i.a.createElement("p", {
 					key: "l1-pending"
-				}, o.a.createElement(U, null), " Sending L1-to-L2 transfer transaction...")), o.a.createElement(o.a.Fragment, null, y)
+				}, i.a.createElement(U, null), " Sending L1-to-L2 transfer transaction...")), i.a.createElement(i.a.Fragment, null, y)
 			}
-			const H = "arb-migration-l1";
+			const V = "arb-migration-l1";
 
-			function V(e) {
-				e ? Object(k.Ib)(H, e) : window.localStorage && window.localStorage.removeItem(H)
+			function G(e) {
+				e ? Object(k.Ib)(V, e) : window.localStorage && window.localStorage.removeItem(V)
 			}
 
-			function G() {
-				const e = Object(i.d)(),
+			function H() {
+				const e = Object(o.d)(),
 					t = Object(w.c)(),
-					n = Object(i.e)(R.O),
+					n = Object(o.e)(R.O),
 					[d, m] = Object(a.useState)(Object(w.d)()),
 					[p, h] = Object(a.useState)(Object(w.e)()),
 					[g, f] = Object(a.useState)(function() {
 						var e, t;
-						const n = Object(k.D)(H);
+						const n = Object(k.D)(V);
 						return n && (n.balance = r.a.from(n.balance), n.seqNums = null === (e = n.seqNums) || void 0 === e ? void 0 : e.map(e => r.a.from(e)), n.originalL2Balance = null !== (t = n.originalL2Balance) && void 0 !== t ? t : r.a.from(n.originalL2Balance)), n
 					}()),
 					[b, y] = Object(a.useState)((null == g ? void 0 : g.destinationAddress) || ""),
 					[E, v] = Object(a.useState)(""),
-					x = Object(i.e)(e => e.user.wallets),
+					x = Object(o.e)(e => e.user.wallets),
 					N = [...new Set(Object.values(x).map(e => e.latest.publicAddress).filter(e => !!e))];
 
 				function _(e) {
@@ -2176,17 +2029,17 @@
 					}, 500);
 					return () => window.clearInterval(t)
 				}, [e, m, h, n]);
-				let O = null;
-				return O = n ? d ? g || "4" === p ? g ? b ? o.a.createElement(D, {
+				let A = null;
+				return A = n ? d ? g || "4" === p ? g ? b ? i.a.createElement(D, {
 					destinationAddress: b,
 					migration: g,
 					network: p,
-					saveMigrationState: V
-				}) : o.a.createElement(o.a.Fragment, null, o.a.createElement("p", null, o.a.createElement("b", null, "Please select a destination wallet address for the ", g.name, ":")), N.map(e => o.a.createElement("p", {
+					saveMigrationState: G
+				}) : i.a.createElement(i.a.Fragment, null, i.a.createElement("p", null, i.a.createElement("b", null, "Please select a destination wallet address for the ", g.name, ":")), N.map(e => i.a.createElement("p", {
 					key: e
-				}, o.a.createElement(u.l, {
+				}, i.a.createElement(u.l, {
 					onClick: () => _(e)
-				}, "Your Vault (", e, ")"))), o.a.createElement("p", null, o.a.createElement(c.c, {
+				}, "Your Vault (", e, ")"))), i.a.createElement("p", null, i.a.createElement(c.c, {
 					label: "Destination wallet address",
 					type: "text",
 					value: E,
@@ -2194,23 +2047,23 @@
 					style: {
 						width: "380px"
 					}
-				}), o.a.createElement(u.l, {
+				}), i.a.createElement(u.l, {
 					onClick: () => _(E),
 					style: {
 						display: "inline-block"
 					}
-				}, "Custom"))) : o.a.createElement(W, {
+				}, "Custom"))) : i.a.createElement(W, {
 					setMigration: f,
 					walletAddress: d
-				}) : o.a.createElement("p", null, o.a.createElement("b", null, "Please select the Rinkeby Test Network in your wallet and reload this page.")) : o.a.createElement(o.a.Fragment, null, o.a.createElement("p", null, "This migration tool is designed to work with Chrome + MetaMask. If your Points are in a different wallet, we suggest moving them into MetaMask first. You should be able to use any web3-enabled wallet, but it is untested. Not all wallets will work with our Arbitrum chain. It must be a wallet where you can add a custom network with RPC url and a different chain id."), o.a.createElement("p", null, t ? o.a.createElement(u.l, {
+				}) : i.a.createElement("p", null, i.a.createElement("b", null, "Please select the Rinkeby Test Network in your wallet and reload this page.")) : i.a.createElement(i.a.Fragment, null, i.a.createElement("p", null, "This migration tool is designed to work with Chrome + MetaMask. If your Points are in a different wallet, we suggest moving them into MetaMask first. You should be able to use any web3-enabled wallet, but it is untested. Not all wallets will work with our Arbitrum chain. It must be a wallet where you can add a custom network with RPC url and a different chain id."), i.a.createElement("p", null, t ? i.a.createElement(u.l, {
 					onClick: w.b
-				}, "Connect to wallet") : o.a.createElement("b", null, "Please install ", o.a.createElement("a", {
+				}, "Connect to wallet") : i.a.createElement("b", null, "Please install ", i.a.createElement("a", {
 					href: "https://metamask.io/"
-				}, "MetaMask"), " or an equivalent wallet."))) : o.a.createElement("p", null, o.a.createElement("b", null, "Please log in to contiue.")), o.a.createElement("div", {
-					className: P.a.container
-				}, o.a.createElement("h1", {
-					className: P.a.header
-				}, "Let's get those Points moved over"), o.a.createElement("p", null, "If you moved your Moons or Bricks out of your Vault, you will need to migrate them using this tool in order to get them onto our new system. This tool will help walk you through the necessary steps."), O)
+				}, "MetaMask"), " or an equivalent wallet."))) : i.a.createElement("p", null, i.a.createElement("b", null, "Please log in to contiue.")), i.a.createElement("div", {
+					className: M.a.container
+				}, i.a.createElement("h1", {
+					className: M.a.header
+				}, "Let's get those Points moved over"), i.a.createElement("p", null, "If you moved your Moons or Bricks out of your Vault, you will need to migrate them using this tool in order to get them onto our new system. This tool will help walk you through the necessary steps."), A)
 			}
 
 			function W({
@@ -2219,25 +2072,25 @@
 			}) {
 				const [n, r] = Object(a.useState)(null);
 				return Object(a.useEffect)(() => {
-					T().then(e => {
+					O().then(e => {
 						r(e)
 					})
-				}, []), n ? n.length ? o.a.createElement(o.a.Fragment, null, o.a.createElement("p", null, o.a.createElement("b", null, "Please choose one to migrate:")), n.map(t => o.a.createElement("p", {
+				}, []), n ? n.length ? i.a.createElement(i.a.Fragment, null, i.a.createElement("p", null, i.a.createElement("b", null, "Please choose one to migrate:")), n.map(t => i.a.createElement("p", {
 					key: t.name
-				}, o.a.createElement(u.l, {
+				}, i.a.createElement(u.l, {
 					onClick: () => e(t)
-				}, s.ethers.utils.formatEther(t.balance), " ", t.name)))) : o.a.createElement(o.a.Fragment, null, o.a.createElement("p", {
-					className: P.a.error
-				}, o.a.createElement("b", null, "No Points to migrate")), o.a.createElement("p", null, "Hmmm... I can't find any unmigrated points for your connected address: ", o.a.createElement("b", null, t), "."), o.a.createElement("ul", null, o.a.createElement("li", null, "If your Points were already in your Vault, they have already been migrated."), o.a.createElement("li", null, "If your Points were in a different wallet, make sure you send them to this address to migrate them. Or connect that wallet with this wallet software/extension."), o.a.createElement("li", null, "If you sent your Points to your Vault instead of this address, you will need to import your Vault into this wallet software (e.g. MetaMask). You can do this by using the 12-word phrase available in Vault Settings."))) : o.a.createElement("p", null, o.a.createElement("b", null, "Loading Points balances...", " ", o.a.createElement(d.a, {
-					className: P.a.loadingSpinner,
+				}, s.ethers.utils.formatEther(t.balance), " ", t.name)))) : i.a.createElement(i.a.Fragment, null, i.a.createElement("p", {
+					className: M.a.error
+				}, i.a.createElement("b", null, "No Points to migrate")), i.a.createElement("p", null, "Hmmm... I can't find any unmigrated points for your connected address: ", i.a.createElement("b", null, t), "."), i.a.createElement("ul", null, i.a.createElement("li", null, "If your Points were already in your Vault, they have already been migrated."), i.a.createElement("li", null, "If your Points were in a different wallet, make sure you send them to this address to migrate them. Or connect that wallet with this wallet software/extension."), i.a.createElement("li", null, "If you sent your Points to your Vault instead of this address, you will need to import your Vault into this wallet software (e.g. MetaMask). You can do this by using the 12-word phrase available in Vault Settings."))) : i.a.createElement("p", null, i.a.createElement("b", null, "Loading Points balances...", " ", i.a.createElement(d.a, {
+					className: M.a.loadingSpinner,
 					sizePx: 14
 				})))
 			}
 
 			function z() {
-				return o.a.createElement(G, null)
+				return i.a.createElement(H, null)
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.bffe3fd3480e02e3a2d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.d62565587564787154db.js.map
