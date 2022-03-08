@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.242272d3befee3ab36f6.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.42e33cc42d2a3852c856.js
+// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./src/lib/focusVisible/index.js": function(e, t, s) {
@@ -150,7 +150,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.uf)(e.category_name)
+									displayText: Object(m.sf)(e.category_name)
 								};
 								s.push(a.id), t[a.id] = a
 							}), {
@@ -727,9 +727,9 @@
 							n = Object(ne.K)(s(), {
 								identifier: B.belongsTo
 							});
-						if (n && (e => q.Je.Redirect === Object(G.b)(e, {
+						if (n && (e => q.He.Redirect === Object(G.b)(e, {
 								experimentEligibilitySelector: oe,
-								experimentName: q.Ce
+								experimentName: q.Ae
 							}))(s())) return void t(Object(o.c)(n.url));
 						if ((B.media && B.media.type) === A.o.LIVEVIDEO) {
 							const e = `/rpan${B.belongsTo.type===P.a.SUBREDDIT?n.url:"/"}${Object(v.u)(B.id)}`;
@@ -5668,7 +5668,7 @@
 					toggleEndBroadcastModal: () => e(Object(x.i)("rpan-end-broadcast-confirmation-id")),
 					toggleRemovalReasonModal: () => e(Object(x.i)("rpan-add-removal-reason-id")),
 					toggleOBSDownloadModal: () => e(Object(x.i)(de.a)),
-					onShareToChat: t => e(Object(y.f)(t))
+					onShareToChat: t => e(Object(y.e)(t))
 				}));
 			class va extends o.Component {
 				constructor(e) {
@@ -6648,7 +6648,7 @@
 				n = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(n.a)(e);
-					return Boolean(t) && !Object(a.vf)(t)
+					return Boolean(t) && !Object(a.tf)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -6669,4 +6669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.242272d3befee3ab36f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.42e33cc42d2a3852c856.js.map

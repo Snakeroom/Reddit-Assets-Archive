@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.f2133fdbe3384c2284e5.js
-// Retrieved at 3/8/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.df31587a119c10b230e1.js
+// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4594,7 +4594,7 @@
 						subredditId: t
 					})),
 					y = Object(a.e)(p.a),
-					_ = y !== u.ee.NewModule;
+					_ = y !== u.ce.NewModule;
 				return (null === (n = null == f ? void 0 : f.cards) || void 0 === n ? void 0 : n.length) > 0 && _ ? o.a.createElement(h, {
 					closeModuleOnMount: !!e && e !== m.g.Large,
 					subredditId: t,
@@ -6396,14 +6396,14 @@
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-					experimentName: n.Rd,
+					experimentName: n.Pd,
 					experimentEligibilitySelector: s.a
-				}) === n.be.Enabled,
+				}) === n.Zd.Enabled,
 				a = e => Object(s.c)(e, {
-					experimentName: n.Sd,
+					experimentName: n.Qd,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === n.ce.Enabled
+				}) === n.ae.Enabled
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, r) {
 			"use strict";
@@ -6618,4 +6618,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.f2133fdbe3384c2284e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.df31587a119c10b230e1.js.map

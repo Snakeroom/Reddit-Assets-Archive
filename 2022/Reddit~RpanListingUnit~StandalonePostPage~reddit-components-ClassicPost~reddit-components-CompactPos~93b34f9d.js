@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.80ddbd42503590e9f6a4.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.8689783c32d808290f0c.js
+// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, s) {
@@ -1074,7 +1074,7 @@
 						M = !e.subredditType || e.subredditType === y.f.Public,
 						D = !!e.post && e.post.isCrosspostable && !e.post.isSponsored,
 						L = Object(n.useCallback)(e => {
-							t(Object(u.f)(e)), s(Object(C.a)())
+							t(Object(u.e)(e)), s(Object(C.a)())
 						}, [t, s]);
 					return r.a.createElement("div", {
 						className: e.className,
@@ -2503,7 +2503,7 @@
 						postId: t
 					}) || Object(c.L)(e))(e, t),
 					experimentName: o.N
-				}) === o.bd
+				}) === o.Zc
 			}
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
@@ -2532,8 +2532,8 @@
 			const i = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: c.O,
 				experimentName: n.Qb
-			}), e => e === n.bd)
+			}), e => e === n.Zc)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.80ddbd42503590e9f6a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.8689783c32d808290f0c.js.map

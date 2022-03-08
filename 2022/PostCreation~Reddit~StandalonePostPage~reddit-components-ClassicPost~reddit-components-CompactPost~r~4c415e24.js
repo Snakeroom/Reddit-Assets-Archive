@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.381c079d6274844fdd95.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.6da6012ac8761b0fdc8c.js
+// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -2630,7 +2630,7 @@
 						showTimestamp: U = !0,
 						subredditOrProfile: q,
 						tooltipType: W
-					} = e, V = Object(a.d)(), Q = Object(g.a)(), K = Object(a.e)(ie.a), Y = Object(a.e)(le.d), X = Object(a.e)(le.g) || ["popular", "all"].includes(Y || ""), $ = Object(a.e)(de.b), ne = _.isSponsored || Object(s.u)(j), me = !(!ne || !K || Object(h.vf)(K));
+					} = e, V = Object(a.d)(), Q = Object(g.a)(), K = Object(a.e)(ie.a), Y = Object(a.e)(le.d), X = Object(a.e)(le.g) || ["popular", "all"].includes(Y || ""), $ = Object(a.e)(de.b), ne = _.isSponsored || Object(s.u)(j), me = !(!ne || !K || Object(h.tf)(K));
 					Object(n.useEffect)(() => {
 						me && V(Object(p.d)(_.author))
 					}, []);
@@ -5246,4 +5246,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.381c079d6274844fdd95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.6da6012ac8761b0fdc8c.js.map

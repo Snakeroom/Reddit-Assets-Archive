@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.732224706f4dff1f490b.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.1da864a8f6f52e5582b5.js
+// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -413,8 +413,8 @@
 						F = Object(N.e)(h.bb),
 						B = Object(N.e)(T.b),
 						V = Object(N.e)(T.c),
-						z = Object(N.e)(T.a),
-						[W, Y] = Object(r.useState)(!1),
+						W = Object(N.e)(T.a),
+						[z, Y] = Object(r.useState)(!1),
 						{
 							activeOverflowMenuId: Z,
 							isInboxPostEmbedEnabled: G,
@@ -441,7 +441,7 @@
 					} = q, me = null == ee ? void 0 : ee.messageType, ue = null === (i = null === (t = null == ee ? void 0 : ee.comment) || void 0 === t ? void 0 : t.parent) || void 0 === i ? void 0 : i.id, be = null === (n = null == ee ? void 0 : ee.post) || void 0 === n ? void 0 : n.id, pe = null == ee ? void 0 : ee.post, fe = null === (s = null == ee ? void 0 : ee.subreddit) || void 0 === s ? void 0 : s.id, ve = null == ee ? void 0 : ee.isBodyHidden, Ee = null == ee ? void 0 : ee.isPostHidden, xe = !le, Ne = `notif-${K?"tooltip":""}-menu-${re}`, Oe = Ne === Z, ge = me === x.a.CommentReply ? ue : be, Te = Object(d.a)(e.className, I.a.notificationItem, {
 						[I.a.unread]: xe,
 						[I.a.isNightMode]: F
-					}), he = B || z || V, we = {
+					}), he = B || W || V, we = {
 						id: re,
 						isClicked: !!le,
 						isViewed: !0,
@@ -496,7 +496,7 @@
 						isFullWidth: K,
 						onEvent: De,
 						isInboxCTAsReplyEnabled: B,
-						isInboxCTAsAllEnabled: z,
+						isInboxCTAsAllEnabled: W,
 						isInboxCTAsSeePostEnabled: V,
 						deeplinkUrl: te,
 						isNightMode: F
@@ -556,7 +556,7 @@
 						tooltipId: Ne
 					}), l.a.createElement(a.a, {
 						onChange: e => {
-							e.isIntersecting && !W && (L(Object(v.u)(we)), Y(!0))
+							e.isIntersecting && !z && (L(Object(v.u)(we)), Y(!0))
 						},
 						rootMargin: "0px 0px 0px 0px",
 						threshold: U
@@ -732,13 +732,13 @@
 				r = i("./src/reddit/selectors/user.ts");
 			const l = e => Object(r.N)(e) || Object(r.O)(e),
 				d = Object(n.a)(e => Object(o.c)(e, {
-					experimentName: a.xd,
+					experimentName: a.vd,
 					experimentEligibilitySelector: l
 				}), s.a),
-				c = Object(n.a)(d, e => e === a.zd.SeePostCTAs),
-				m = Object(n.a)(d, e => e === a.zd.ReplyCTAs),
-				u = Object(n.a)(d, e => e === a.zd.AllCTAs)
+				c = Object(n.a)(d, e => e === a.xd.SeePostCTAs),
+				m = Object(n.a)(d, e => e === a.xd.ReplyCTAs),
+				u = Object(n.a)(d, e => e === a.xd.AllCTAs)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.732224706f4dff1f490b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.1da864a8f6f52e5582b5.js.map

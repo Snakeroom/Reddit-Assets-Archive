@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.4fa8f7b0edbb9f1fea7a.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.b83182845bf4989dce07.js
+// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1818,7 +1818,7 @@
 			}) => {
 				const B = Object(a.e)(e => !O && !!k && Object(m.f)(e)),
 					T = Object(a.e)(u.b),
-					D = k && Object(d.e)(k) && T;
+					A = k && Object(d.e)(k) && T;
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement(b.a, {
 					bannerBackgroundImage: e,
 					editMode: !!n,
@@ -1826,7 +1826,7 @@
 					username: S,
 					isDeletingBanner: !!v,
 					onDeleteBanner: P
-				}), D ? s.a.createElement("div", {
+				}), A ? s.a.createElement("div", {
 					className: g.a.nftProfileUnitContainer
 				}, s.a.createElement(i.a, {
 					className: g.a.nftProfileUnit,
@@ -1945,8 +1945,8 @@
 				F = r("./src/lib/loadableAction/index.ts"),
 				B = r("./src/lib/copyToClipboard/index.ts"),
 				T = r("./src/reddit/actions/toaster.ts"),
-				D = r("./src/reddit/endpoints/chat/userSettings.ts"),
-				A = r("./src/reddit/models/Toast/index.ts");
+				A = r("./src/reddit/endpoints/chat/userSettings.ts"),
+				D = r("./src/reddit/models/Toast/index.ts");
 			var M = r("./src/reddit/actions/gold/modals.ts"),
 				R = r("./src/reddit/actions/modal.ts"),
 				W = r("./src/reddit/actions/profile/index.ts"),
@@ -2185,20 +2185,20 @@
 					onClickChatInviteLink: () => e((() => async (e, t, {
 						gqlContext: r
 					}) => {
-						const n = await Object(D.a)(r());
+						const n = await Object(A.a)(r());
 						if (n.ok) {
 							const t = n.body.data.createChatChannelInviteLink.inviteUrl;
 							if (t) {
 								Object(B.a)(t);
 								const r = Object(T.e)(w.fbt._("Copied link!", null, {
 									hk: "4a4E1x"
-								}), A.b.SuccessCommunity);
+								}), D.b.SuccessCommunity);
 								e(Object(T.f)(r))
 							}
 						} else {
 							const t = Object(T.e)(w.fbt._("Something went wrong", null, {
 								hk: "22u7ha"
-							}), A.b.Error);
+							}), D.b.Error);
 							e(Object(T.f)(t))
 						}
 					})())
@@ -2353,7 +2353,7 @@
 					prefShowSnoovatar: L,
 					snoovatarFullBodyAsset: F,
 					username: B
-				} = _, T = !!t && t.id === y, D = !(!t || !t.snoovatarFullBodyAsset), A = b && b.bannerBackgroundImage, M = !!m && m.isNSFW, R = M && s, W = !(!p || !p.userIsSubscriber), G = `/user/${B}/`, H = O && O.url === G, K = !p || p.acceptChats, z = !p || p.acceptPms, Z = I && Object(me.b)(F);
+				} = _, T = !!t && t.id === y, A = !(!t || !t.snoovatarFullBodyAsset), D = b && b.bannerBackgroundImage, M = !!m && m.isNSFW, R = M && s, W = !(!p || !p.userIsSubscriber), G = `/user/${B}/`, H = O && O.url === G, K = !p || p.acceptChats, z = !p || p.acceptPms, Z = I && Object(me.b)(F);
 				return a.a.createElement(u.a, {
 					isEmployee: U,
 					isGold: S,
@@ -2367,7 +2367,7 @@
 					userCreated: j,
 					username: B,
 					recentAwardings: N,
-					currentUserHasSnoovatar: D,
+					currentUserHasSnoovatar: A,
 					prefersReducedAnimations: !!C,
 					snoovatarUrl: F,
 					topAwardIcon: v,
@@ -2409,7 +2409,7 @@
 					}),
 					onClickSnoovatar: d,
 					profileIcon: k,
-					bannerBackgroundImage: R ? void 0 : A
+					bannerBackgroundImage: R ? void 0 : D
 				})
 			}))
 		},
@@ -2940,13 +2940,13 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.m
-					}) === n.bd
+					}) === n.Zc
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.n
-					}) === n.bd
+					}) === n.Zc
 				}
 		},
 		"./src/reddit/selectors/experiments/chatInviteLinkSharing.ts": function(e, t, r) {
@@ -2960,7 +2960,7 @@
 			const o = e => Object(s.c)(e, {
 				experimentName: n.E,
 				experimentEligibilitySelector: () => Object(a.N)(e)
-			}) === n.bd
+			}) === n.Zc
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -2996,8 +2996,8 @@
 				}) === n.w.Enabled,
 				o = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Cc
-				}) === n.bd
+					experimentName: n.Ac
+				}) === n.Zc
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3023,4 +3023,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.4fa8f7b0edbb9f1fea7a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.b83182845bf4989dce07.js.map

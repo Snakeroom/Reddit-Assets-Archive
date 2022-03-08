@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.60f1112d48d63bb7b515.js
-// Retrieved at 3/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.66222d61fbd58d4efb2b.js
+// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/react-popper/lib/esm/usePopper.js": function(e, t, n) {
@@ -432,14 +432,14 @@
 					return K[e]
 				}))
 			}
-			var X = {
+			var Z = {
 				start: "end",
 				end: "start"
 			};
 
-			function Z(e) {
+			function X(e) {
 				return e.replace(/start|end/g, (function(e) {
-					return X[e]
+					return Z[e]
 				}))
 			}
 
@@ -763,7 +763,7 @@
 								for (var o = n.mainAxis, r = void 0 === o || o, i = n.altAxis, a = void 0 === i || i, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, v = W(h), x = c || (v === h || !f ? [G(h)] : function(e) {
 										if (W(e) === P) return [];
 										var t = G(e);
-										return [Z(e), t, Z(t)]
+										return [X(e), t, X(t)]
 									}(h)), y = [h].concat(x).reduce((function(e, n) {
 										return e.concat(W(n) === P ? function(e, t) {
 											void 0 === t && (t = {});
@@ -906,11 +906,11 @@
 											bottom: 0,
 											left: 0
 										},
-										X = G[A],
-										Z = G[L],
+										Z = G[A],
+										X = G[L],
 										Q = oe(0, I[B], K[B]),
-										Y = P ? I[B] / 2 - D - Q - X - N : V - Q - X - N,
-										$ = P ? -I[B] / 2 + D + Q + Z + N : z + Q + Z + N,
+										Y = P ? I[B] / 2 - D - Q - Z - N : V - Q - Z - N,
+										$ = P ? -I[B] / 2 + D + Q + X + N : z + Q + X + N,
 										ee = t.elements.arrow && g(t.elements.arrow),
 										te = ee ? "y" === w ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][w] : 0,
@@ -1814,9 +1814,9 @@
 				J = n("./src/reddit/selectors/postFlair.ts"),
 				K = n("./src/reddit/selectors/posts.ts"),
 				G = n("./src/reddit/selectors/showPromotedCTA.ts"),
-				X = n("./src/reddit/components/MediumPost/MediumThumbnail.tsx"),
-				Z = n("./src/reddit/helpers/styles/mixins/index.m.less"),
-				Q = n.n(Z),
+				Z = n("./src/reddit/components/MediumPost/MediumThumbnail.tsx"),
+				X = n("./src/reddit/helpers/styles/mixins/index.m.less"),
+				Q = n.n(X),
 				Y = n("./src/reddit/selectors/i18n/index.ts"),
 				$ = n("./src/reddit/components/MediumPost/index.m.less"),
 				ee = n.n($);
@@ -1862,7 +1862,7 @@
 						isInModNotesExperiment: J,
 						isOverlay: K,
 						isTopicPage: G,
-						isCommentCountAnimationEnabled: Z,
+						isCommentCountAnimationEnabled: X,
 						isVoteCountAnimationEnabled: Y,
 						isCountAnimShadowTestEnabled: $,
 						imageGalleryCurrentItem: te,
@@ -1956,7 +1956,7 @@
 						className: ee.a.sourceLink,
 						isCommentsPage: H,
 						post: ie
-					})), !Ae && Me && o.a.createElement(X.a, {
+					})), !Ae && Me && o.a.createElement(Z.a, {
 						crosspost: n ? ie : void 0,
 						hasModPostPerms: Pe,
 						isCommentsPage: H,
@@ -2001,7 +2001,7 @@
 						hasModFullPerms: Te,
 						hasModPostPerms: Pe,
 						hostPostData: U,
-						isCommentCountAnimation: Z,
+						isCommentCountAnimation: X,
 						isCountAnimShadowTestEnabled: $,
 						isOverlay: !!K,
 						listingKey: ne,
@@ -2209,8 +2209,8 @@
 						caretOnTop: !1
 					},
 					G = Object(i.e)(_.a),
-					X = (V.isSponsored || Object(c.u)(J)) && (G === f.u.NoLockIcon || G === f.u.PromotedGrey),
-					Z = V.isRemoved && !V.modRemovalReason && !V.modNote && V.belongsTo.type === b.a.SUBREDDIT,
+					Z = (V.isSponsored || Object(c.u)(J)) && (G === f.u.NoLockIcon || G === f.u.PromotedGrey),
+					X = V.isRemoved && !V.modRemovalReason && !V.modNote && V.belongsTo.type === b.a.SUBREDDIT,
 					Q = D("Approve", V.id, z),
 					Y = D("Archived", V.id, z),
 					$ = D("Lock", V.id, z),
@@ -2239,7 +2239,7 @@
 				}), r.a.createElement(p.c, M({
 					tooltipId: Y,
 					text: L()
-				}, K))), V.isLocked && !X && r.a.createElement(o.Fragment, null, r.a.createElement(E.a, {
+				}, K))), V.isLocked && !Z && r.a.createElement(o.Fragment, null, r.a.createElement(E.a, {
 					isFilled: !0,
 					className: Object(d.a)(N.a.icon, N.a.lockIcon),
 					desc: B(),
@@ -2286,7 +2286,7 @@
 					id: te,
 					onMouseEnter: H(te),
 					onMouseLeave: W
-				}), Z && r.a.createElement(m.a, {
+				}), X && r.a.createElement(m.a, {
 					className: N.a.addRemovalReason,
 					onClick: q,
 					text: s.fbt._("Add a removal reason", null, {
@@ -3251,9 +3251,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: s.wc
+					experimentName: s.uc
 				});
-				return !(!t || Object(s.vf)(t))
+				return !(!t || Object(s.tf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -3266,8 +3266,8 @@
 			const r = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: s.oe
-				}) === s.bd
+					experimentName: s.me
+				}) === s.Zc
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, n) {
@@ -3283,7 +3283,7 @@
 				i = n("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.vf)(t)
+					return Boolean(t) && !Object(o.tf)(t)
 				},
 				c = Object(s.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -3359,4 +3359,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.60f1112d48d63bb7b515.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.66222d61fbd58d4efb2b.js.map

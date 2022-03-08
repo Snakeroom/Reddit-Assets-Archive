@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.fd2b7a0caa2d17c6b89a.js
-// Retrieved at 3/8/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.111e3d09edf7f82cb39c.js
+// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -257,7 +257,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.vf)(p),
+						includeInterestTopics: !!p && !Object(b.tf)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -3348,8 +3348,8 @@
 			const a = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Bc
-				}) === r.bd
+					experimentName: r.zc
+				}) === r.Zc
 			}
 		},
 		"./src/redditGQL/operations/Frontpage.json": function(e) {
@@ -3375,4 +3375,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.fd2b7a0caa2d17c6b89a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.111e3d09edf7f82cb39c.js.map
