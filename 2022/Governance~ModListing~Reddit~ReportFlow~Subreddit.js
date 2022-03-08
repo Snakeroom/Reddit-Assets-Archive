@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.a32d1b50c695e8f3c8c8.js
-// Retrieved at 3/7/2022, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.c4fc06432d52b5026b79.js
+// Retrieved at 3/7/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -2801,31 +2801,37 @@
 		"./src/reddit/actions/onboarding/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "openReonboardingModalIfNeeded", (function() {
-				return a
-			})), r.d(t, "resetGenderUpdateState", (function() {
-				return u
-			})), r.d(t, "subredditInterestTopicsLoaded", (function() {
 				return l
+			})), r.d(t, "resetGenderUpdateState", (function() {
+				return b
+			})), r.d(t, "subredditInterestTopicsLoaded", (function() {
+				return p
 			}));
 			var n = r("./src/lib/makeActionCreator/index.ts"),
 				s = r("./src/reddit/actions/login.ts"),
 				i = r("./src/reddit/actions/onboarding/constants.ts"),
-				o = r("./src/reddit/helpers/onboarding/reonboarding.ts"),
-				d = r("./src/reddit/models/Onboarding/index.ts"),
-				c = r("./src/reddit/selectors/onboarding.ts");
-			const a = () => async (e, t) => {
+				o = r("./src/reddit/helpers/counters/onboarding.ts"),
+				d = r("./src/reddit/helpers/onboarding/reonboarding.ts"),
+				c = r("./src/reddit/models/Onboarding/index.ts"),
+				a = r("./src/reddit/selectors/experiments/onboarding.ts"),
+				u = r("./src/reddit/selectors/onboarding.ts");
+			const l = () => async (e, t) => {
 				const r = t(),
 					n = r.platform.currentPage;
-				Object(c.e)(r, {
-					pageLayer: n
-				}) && (e(Object(s.c)({
-					type: d.c.REONBOARDING,
-					selectedInterests: {}
-				})), Object(o.d)())
-			}, u = Object(n.a)(i.a), l = Object(n.a)(i.b);
+				if (Object(u.e)(r, {
+						pageLayer: n
+					})) {
+					e(Object(s.c)({
+						type: c.c.REONBOARDING,
+						selectedInterests: {}
+					})), Object(d.d)();
+					const t = Object(a.b)(r);
+					Object(o.b)(c.e.FirstPopover, t)
+				}
+			}, b = Object(n.a)(i.a), p = Object(n.a)(i.b);
 			t.default = () => async (e, t) => {
 				const r = t();
-				Object(c.d)(r) && e(Object(s.c)())
+				Object(u.d)(r) && e(Object(s.c)())
 			}
 		},
 		"./src/reddit/actions/pages/postCreation.ts": function(e, t, r) {
@@ -8423,6 +8429,35 @@
 					})
 				}
 		},
+		"./src/reddit/helpers/counters/onboarding.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return o
+			})), r.d(t, "b", (function() {
+				return d
+			}));
+			var n = r("./src/lib/constants/index.ts"),
+				s = r("./src/lib/sample/index.ts"),
+				i = r("./src/telemetry/helpers/sendCounter.ts");
+			const o = (e, t) => {
+					Object(i.b)(n.n.Redesign, {
+						type: i.a.GenderCollection,
+						data: {
+							gender: e,
+							submitSuccess: t
+						}
+					})
+				},
+				d = (e, t) => {
+					Object(s.a)(10) && Object(i.b)(n.n.Redesign, {
+						type: i.a.ReonboardingFlow,
+						data: {
+							type: e,
+							variant: t
+						}
+					})
+				}
+		},
 		"./src/reddit/helpers/filterListingResponse/index.ts": function(e, t, r) {
 			"use strict";
 			var n = r("./node_modules/lodash/findLastIndex.js"),
@@ -8715,7 +8750,7 @@
 						var n, s, i, o;
 						const [c, a] = e, u = t.node;
 						if (Object(d.k)(u)) c.push(u), (null === (s = null === (n = u.flair) || void 0 === n ? void 0 : n.template) || void 0 === s ? void 0 : s.id) && (null === (o = null === (i = u.flair) || void 0 === i ? void 0 : i.template) || void 0 === o ? void 0 : o.postStyle) && (C[u.flair.template.id] = Object(p.a)(u.flair.template.postStyle));
-						else if (Object(v.e)(u)) {
+						else if (Object(v.f)(u)) {
 							const e = Object(l.a)(u.interestTopicRecommendations.recommendationTopics);
 							e.length && (D = {
 								interests: e,
@@ -13791,4 +13826,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.a32d1b50c695e8f3c8c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.c4fc06432d52b5026b79.js.map

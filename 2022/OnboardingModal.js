@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.028de375d9261bc0939d.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.71590bcc72683321c7a3.js
+// Retrieved at 3/7/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -361,7 +361,7 @@
 										})
 									}
 								} else if (Object(h.c)(e) && !d) d = e;
-								else if (Object(x.e)(e)) {
+								else if (Object(x.f)(e)) {
 									const t = null === (o = null == e ? void 0 : e.interestTopicRecommendations) || void 0 === o ? void 0 : o.recommendationTopics;
 									if (t) {
 										const e = Object(v.a)(t);
@@ -1465,8 +1465,8 @@
 					selectedOnboardingTopicIds: t
 				}
 			});
-			var De = n("./src/telemetry/helpers/sendCounter.ts");
-			var Be = n("./src/reddit/helpers/onboarding/reonboarding.ts"),
+			var De = n("./src/reddit/helpers/counters/onboarding.ts"),
+				Be = n("./src/reddit/helpers/onboarding/reonboarding.ts"),
 				qe = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
 				We = n("./src/reddit/icons/svgs/svgIcons.tsx"),
 				Qe = n("./src/reddit/selectors/activeModal.ts"),
@@ -1532,27 +1532,19 @@
 				const {
 					gqlContext: t,
 					apiContext: n
-				} = e, r = Object(i.d)(), s = Object(x.a)(), c = Object(i.e)(Qe.a), p = Ye(c), b = Object(i.e)(He.a) === xe.fb.Enabled && !p, f = b ? ge.GENDER : ge.INTERESTS, [g, O] = Object(a.useState)(f), [v, _] = Object(a.useState)(null), E = Object(i.e)(ze.a), [j, k] = Object(a.useState)(!b), [I, T] = Object(a.useState)([]), [A, L] = Object(a.useState)(!1), [F, D] = Object(a.useState)(Ye(c) && (null == c ? void 0 : c.selectedInterests) || {}), [B, q] = Object(a.useState)(!1), [W, Q] = Object(a.useState)([]), [V, H] = Object(a.useState)([]), [U, z] = Object(a.useState)({}), {
-					avatarImage: J,
-					fetchRandomAvatar: K,
-					saveAvatar: X
+				} = e, r = Object(i.d)(), s = Object(x.a)(), c = Object(i.e)(Qe.a), p = Ye(c), b = Object(i.e)(He.a) === xe.fb.Enabled && !p, f = b ? ge.GENDER : ge.INTERESTS, [g, O] = Object(a.useState)(f), [v, _] = Object(a.useState)(null), E = Object(i.e)(ze.a), [j, k] = Object(a.useState)(!b), [I, N] = Object(a.useState)([]), [T, A] = Object(a.useState)(!1), [L, F] = Object(a.useState)(Ye(c) && (null == c ? void 0 : c.selectedInterests) || {}), [D, B] = Object(a.useState)(!1), [q, W] = Object(a.useState)([]), [Q, V] = Object(a.useState)([]), [H, U] = Object(a.useState)({}), {
+					avatarImage: z,
+					fetchRandomAvatar: J,
+					saveAvatar: K
 				} = C();
 				Object(a.useEffect)(() => {
 					(j || E) && async function() {
-						L(!0);
+						A(!0);
 						const e = await Fe(t);
-						L(!1), e && T(e)
+						A(!1), e && N(e)
 					}()
 				}, [j, E, t]), Object(a.useEffect)(() => {
-					E && ((e, t) => {
-						Object(De.b)(N.n.Redesign, {
-							type: De.a.GenderCollection,
-							data: {
-								gender: e,
-								submitSuccess: t
-							}
-						})
-					})(null == v ? void 0 : v.genderCategory, E.success)
+					E && Object(De.a)(null == v ? void 0 : v.genderCategory, E.success)
 				}, [E, v]), Object(a.useEffect)(() => {
 					let e = !1;
 					return async function() {
@@ -1562,73 +1554,73 @@
 								preSelectedCommunities: o,
 								recommendedCommunities: i
 							} = s;
-						a ? e || (z(o), H(i)) : r($e())
+						a ? e || (U(o), V(i)) : r($e())
 					}(), () => {
 						e = !0
 					}
 				}, [n, r, t]);
-				const Z = Object(i.e)(e => Object(Ue.f)(e)),
-					Y = Object(a.useCallback)(() => {
-						r(Object(u.g)(Oe.a.ONBOARDING_MODAL_D2X)), Z && r(Object(m.g)()), p && (s(Object(R.m)()), Object(Be.a)())
-					}, [r, p, Z, s]),
-					$ = Object(a.useCallback)((e = 3e3) => setTimeout(Y, e), [Y]),
-					ee = Object(a.useCallback)(() => {
-						const e = Object.keys(F).filter(e => 0 === F[e].length || !F[e].find(e => F[e]));
-						Q([]), e.length && async function() {
-							q(!0);
+				const X = Object(i.e)(e => Object(Ue.f)(e)),
+					Z = Object(a.useCallback)(() => {
+						r(Object(u.g)(Oe.a.ONBOARDING_MODAL_D2X)), X && r(Object(m.g)()), p && (s(Object(R.m)()), Object(Be.a)())
+					}, [r, p, X, s]),
+					Y = Object(a.useCallback)((e = 3e3) => setTimeout(Z, e), [Z]),
+					$ = Object(a.useCallback)(() => {
+						const e = Object.keys(L).filter(e => 0 === L[e].length || !L[e].find(e => L[e]));
+						W([]), e.length && async function() {
+							B(!0);
 							const n = await Te(t, e);
-							q(!1), n && Q(n)
+							B(!1), n && W(n)
 						}()
-					}, [t, F]),
-					te = Object(a.useCallback)(e => {
-						L(!0), O(ge.INTERESTS), r(Object(Je.a)(e))
+					}, [t, L]),
+					ee = Object(a.useCallback)(e => {
+						A(!0), O(ge.INTERESTS), r(Object(Je.a)(e))
 					}, [r]),
+					te = Object(a.useCallback)(async () => {
+						s(Object(R.j)()), ee(v || P)
+					}, [ee, v, s]),
 					ne = Object(a.useCallback)(async () => {
-						s(Object(R.j)()), te(v || P)
-					}, [te, v, s]),
+						s(Object(R.n)()), O(ge.COMMUNITIES), $()
+					}, [$, s]),
 					re = Object(a.useCallback)(async () => {
-						s(Object(R.n)()), O(ge.COMMUNITIES), ee()
-					}, [ee, s]),
-					se = Object(a.useCallback)(async () => {
-						s(Object(R.e)()), K(), O(ge.AVATAR);
-						const e = await tt(n, t, U, F);
+						s(Object(R.e)()), J(), O(ge.AVATAR);
+						const e = await tt(n, t, H, L);
 						e.ok ? e.reload && r(Object(l.frontpageReloaded)()) : r($e())
-					}, [n, r, K, t, U, F, s]),
+					}, [n, r, J, t, H, L, s]),
+					se = Object(a.useCallback)(() => {
+						O(ge.CELEBRATION), Y()
+					}, [Y]),
 					ae = Object(a.useCallback)(() => {
-						O(ge.CELEBRATION), $()
-					}, [$]),
-					oe = Object(a.useCallback)(() => {
-						X(), ae()
-					}, [X, ae]),
-					ie = (() => g === ge.GENDER ? ne : g === ge.INTERESTS ? re : g === ge.COMMUNITIES ? se : oe)(),
-					ce = Object(i.e)(e => g === ge.AVATAR && !p && Object(Ve.b)(e));
+						K(), se()
+					}, [K, se]),
+					oe = (() => g === ge.GENDER ? te : g === ge.INTERESTS ? ne : g === ge.COMMUNITIES ? re : ae)(),
+					ie = Object(i.e)(e => g === ge.AVATAR && !p && Object(Ve.b)(e));
 				Object(a.useEffect)(() => {
-					g !== ge.AVATAR || ce || ae()
-				}, [ce, g, ae]);
-				const de = g !== f,
-					le = Object(a.useCallback)(() => {
+					g !== ge.AVATAR || ie || se()
+				}, [ie, g, se]);
+				const ce = g !== f,
+					de = Object(a.useCallback)(() => {
 						g === ge.INTERESTS && b ? (r(Object(Ke.resetGenderUpdateState)()), k(!1), O(ge.GENDER)) : g === ge.COMMUNITIES ? O(ge.INTERESTS) : g === ge.AVATAR && O(ge.COMMUNITIES)
 					}, [g, r, b]),
-					ue = g === ge.GENDER || g === ge.AVATAR,
-					me = Object(a.useCallback)(() => {
-						g === ge.GENDER ? (s(Object(R.i)()), k(!0), O(ge.INTERESTS)) : g === ge.INTERESTS ? (s(Object(R.m)()), Y()) : g === ge.AVATAR && (s(Object(h.a)("skip")), ae())
-					}, [Y, s, g, ae]),
-					pe = Object.keys(U).length,
-					fe = Object.keys(F).length,
-					ve = g === ge.GENDER && !(e => !!e && (!G(null == e ? void 0 : e.genderCategory) || !!(e.definedGender && e.definedGender.length <= S.b)))(v) || g === ge.INTERESTS && fe < 3 || g === ge.COMMUNITIES && pe < 1;
-				if (g === ge.CELEBRATION || g === ge.AVATAR && !ce) return o.a.createElement(y, null);
-				let Ce;
-				return p ? Ce = o.a.createElement("button", {
+					le = g === ge.GENDER || g === ge.AVATAR,
+					ue = Object(a.useCallback)(() => {
+						g === ge.GENDER ? (s(Object(R.i)()), k(!0), O(ge.INTERESTS)) : g === ge.INTERESTS ? (s(Object(R.m)()), Z()) : g === ge.AVATAR && (s(Object(h.a)("skip")), se())
+					}, [Z, s, g, se]),
+					me = Object.keys(H).length,
+					pe = Object.keys(L).length,
+					fe = g === ge.GENDER && !(e => !!e && (!G(null == e ? void 0 : e.genderCategory) || !!(e.definedGender && e.definedGender.length <= S.b)))(v) || g === ge.INTERESTS && pe < 3 || g === ge.COMMUNITIES && me < 1;
+				if (g === ge.CELEBRATION || g === ge.AVATAR && !ie) return o.a.createElement(y, null);
+				let ve;
+				return p ? ve = o.a.createElement("button", {
 					"aria-label": Ze._("Close", null, {
 						hk: "3XndV9"
 					}),
 					className: be.a.dismissButton,
-					onClick: Y
+					onClick: Z
 				}, o.a.createElement(M.a, {
 					name: "close"
-				})) : ue && (Ce = o.a.createElement("button", {
+				})) : le && (ve = o.a.createElement("button", {
 					className: be.a.skipButton,
-					onClick: me
+					onClick: ue
 				}, Ze._("Skip", null, {
 					hk: "2S8Lme"
 				}))), o.a.createElement("div", {
@@ -1637,14 +1629,14 @@
 					className: be.a.header
 				}, o.a.createElement("div", {
 					className: be.a.headerBar
-				}, o.a.createElement("div", null, de && o.a.createElement(We.d, {
+				}, o.a.createElement("div", null, ce && o.a.createElement(We.d, {
 					className: be.a.backButton,
-					onClick: le
+					onClick: de
 				})), o.a.createElement(qe.a, {
 					className: be.a.snooIcon
 				}), o.a.createElement("div", {
 					className: be.a.skipOrDismissContainer
-				}, Ce)), g === ge.GENDER && o.a.createElement("div", {
+				}, ve)), g === ge.GENDER && o.a.createElement("div", {
 					className: `${be.a.title} ${w.a.title}`
 				}, Ze._("Which of the following best describes you?", null, {
 					hk: "2hsRwl"
@@ -1676,27 +1668,27 @@
 					hk: "1x9ZNL"
 				}))), o.a.createElement(he, {
 					activeStep: g,
-					avatarImage: J,
-					communitiesByTopic: W,
-					fetchRandomAvatar: K,
+					avatarImage: z,
+					communitiesByTopic: q,
+					fetchRandomAvatar: J,
 					interests: I,
-					loadingCommunities: B,
-					loadingInterests: A,
-					recommendedCommunities: V,
-					selectedCommunities: U,
+					loadingCommunities: D,
+					loadingInterests: T,
+					recommendedCommunities: Q,
+					selectedCommunities: H,
 					selectedGenderOption: v,
-					selectedInterests: F,
-					setSelectedCommunities: z,
+					selectedInterests: L,
+					setSelectedCommunities: U,
 					setSelectedGenderOption: _,
-					setSelectedInterests: D
+					setSelectedInterests: F
 				}), o.a.createElement("div", {
 					className: Object(d.a)(be.a.continueButtonWrapper, {
 						[be.a.avatarPicker]: g === ge.AVATAR
 					})
 				}, o.a.createElement("button", {
 					className: be.a.continueButton,
-					disabled: ve,
-					onClick: ie
+					disabled: fe,
+					onClick: oe
 				}, Ze._("Continue", null, {
 					hk: "15wNPy"
 				}))))
@@ -3383,4 +3375,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.028de375d9261bc0939d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.71590bcc72683321c7a3.js.map
