@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.22a87fb11681081027a2.js
-// Retrieved at 3/7/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a9a45ed8f4d6ddb8e3c2.js
+// Retrieved at 3/8/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("159407"),
+				buildNumber: Object(r.c)("159431"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1646699860"),
+				buildTimestamp: Object(r.b)("1646750107"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6067,14 +6067,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c6de6c44e4ee49010ab2eee2f27987beb3d46e47b-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c8b6f82ad2ff309456ca675b31f363824867655d1-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "6de6c44e4ee49010ab2eee2f27987beb3d46e47b-production",
+						release: "8b6f82ad2ff309456ca675b31f363824867655d1-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6591,7 +6591,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "6de6c44e4ee49010ab2eee2f27987beb3d46e47b-production",
+						releaseClient: "8b6f82ad2ff309456ca675b31f363824867655d1-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -11387,7 +11387,7 @@
 								i(Ve(e, t, `Slide${r}`))
 							}
 						else i(qe(e, t))
-					} else Object(_e.h)(n()) && i(Object(f.l)())
+					} else Object(_e.h)(n()) && i(Object(f.m)())
 				}, We = e => async (t, i, {
 					apiContext: n
 				}) => {
@@ -13866,7 +13866,7 @@
 		},
 		"./src/reddit/actions/survey/constants.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "l", (function() {
+			i.d(t, "m", (function() {
 				return n
 			})), i.d(t, "f", (function() {
 				return r
@@ -13874,7 +13874,7 @@
 				return s
 			})), i.d(t, "h", (function() {
 				return o
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "n", (function() {
 				return d
 			})), i.d(t, "a", (function() {
 				return a
@@ -13886,12 +13886,14 @@
 				return c
 			})), i.d(t, "i", (function() {
 				return _
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "k", (function() {
 				return m
 			})), i.d(t, "e", (function() {
 				return p
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "l", (function() {
 				return h
+			})), i.d(t, "j", (function() {
+				return f
 			}));
 			const n = "SURVEY__TRIGGER_SCROLL_COUNTED",
 				r = "SURVEY__LAYER_TRIGGER_SCROLL_COUNTED",
@@ -13905,7 +13907,8 @@
 				_ = "SURVEY__SAMPLE_FACTOR_TOGGLED",
 				m = "SURVEY__SEARCH_VIEW_TRIGGER",
 				p = "SURVEY__DISMISS_SIGNUP_TRIGGER",
-				h = "SURVEY__SUCCESSFUL_SIGNUP_TRIGGER"
+				h = "SURVEY__SUCCESSFUL_SIGNUP_TRIGGER",
+				f = "SURVEY__SEARCH_VIEW_COMMENTS_TRIGGER"
 		},
 		"./src/reddit/actions/survey/index.ts": function(e, t, i) {
 			"use strict";
@@ -13917,24 +13920,26 @@
 				return g
 			})), i.d(t, "e", (function() {
 				return w
-			})), i.d(t, "j", (function() {
-				return v
-			})), i.d(t, "l", (function() {
-				return y
 			})), i.d(t, "k", (function() {
-				return E
+				return v
 			})), i.d(t, "m", (function() {
-				return S
-			})), i.d(t, "h", (function() {
-				return T
+				return y
 			})), i.d(t, "i", (function() {
+				return E
+			})), i.d(t, "l", (function() {
+				return S
+			})), i.d(t, "n", (function() {
+				return T
+			})), i.d(t, "h", (function() {
 				return O
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "j", (function() {
 				return I
+			})), i.d(t, "d", (function() {
+				return R
 			})), i.d(t, "g", (function() {
-				return F
-			})), i.d(t, "f", (function() {
 				return N
+			})), i.d(t, "f", (function() {
+				return C
 			}));
 			var n = i("./src/lib/makeActionCreator/index.ts"),
 				r = i("./src/lib/filterQueryParams/index.ts");
@@ -13948,7 +13953,7 @@
 				u = i("./src/reddit/selectors/experiments/survey.ts"),
 				c = i("./src/reddit/selectors/platform.ts"),
 				_ = i("./src/reddit/actions/survey/constants.ts");
-			const m = Object(n.a)(_.l),
+			const m = Object(n.a)(_.m),
 				p = Object(n.a)(_.f),
 				h = Object(n.a)(_.g),
 				f = Object(n.a)(_.b),
@@ -13956,20 +13961,21 @@
 				g = Object(n.a)(_.d),
 				w = Object(n.a)(_.i),
 				v = Object(n.a)(_.h),
-				y = Object(n.a)(_.m),
-				E = () => async (e, t) => {
+				y = Object(n.a)(_.n),
+				E = Object(n.a)(_.j),
+				S = () => async (e, t) => {
 					const i = t();
 					Object(u.c)(i) ? e(h()) : Object(u.b)(i) ? e(p()) : e(m())
-				}, S = () => async (e, t) => {
+				}, T = () => async (e, t) => {
 					const i = t().user.prefs.surveyLastSeenTime,
 						n = Object(l.Q)();
 					i && (!n || i > n) ? Object(l.Vb)(i) : n && (!i || n > i) && e(Object(o.I)({
 						surveyLastSeenTime: n
 					}, !1))
-				}, T = Object(n.a)(_.a), O = Object(n.a)(_.j), I = Object(n.a)(_.e), R = Object(n.a)(_.k), F = () => async (e, t) => {
+				}, O = Object(n.a)(_.a), I = Object(n.a)(_.k), R = Object(n.a)(_.e), F = Object(n.a)(_.l), N = () => async (e, t) => {
 					const i = Object(c.q)(t());
-					!!i && "true" === i[d.w] && (e(R()), s(window.location.href, [d.w]))
-				}, N = () => async (e, t, {
+					!!i && "true" === i[d.w] && (e(F()), s(window.location.href, [d.w]))
+				}, C = () => async (e, t, {
 					gqlContext: i
 				}) => {
 					const n = await Object(a.a)(i());
@@ -25063,7 +25069,7 @@
 			o.queryIds = {}
 		},
 		"./src/reddit/helpers/survey/config.json": function(e) {
-			e.exports = JSON.parse('{"surveyCooldownDays":182,"activeSurveys":[{"experimentName":"nps_survey_scroll_trigger","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":2,"sampleFactor":0.5}],"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","followUpQuestion":"What\'s your main reason for feeling that way?"}]},{"experimentName":"d2x_nps_survey_dismiss_post_trigger","triggerEvent":"dismiss_post","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":3,"sampleFactor":0.01}],"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","followUpQuestion":"What is the primary reason for your rating?"}]},{"experimentName":"survey_demo_nps_1","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"survey_demo_combined_1","triggerEvent":"mods_feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","followUpQuestion":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","followUpQuestion":"What is the primary reason for your score with moderation tools on this device?"}]},{"experimentName":"d2x_search_survey","triggerEvent":"search_view_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.05}],"steps":[{"type":"multi_choice","question":"Did you find what you were looking for","question_options":["Yes","No"],"followUpQuestion":"Why or why not?"}]},{"experimentName":"d2x_chat_survey","triggerEvent":"chat_view_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.15}],"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with Reddit\'s chat?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"d2x_mods_survey","triggerEvent":"mods_feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","followUpQuestion":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","followUpQuestion":"What is the primary reason for your score with moderation tools on this device?"}]},{"experimentName":"d2x_nps_survey_dismiss_signup_trigger","triggerEvent":"dismiss_signup_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.3}],"steps":[{"type":"NPS","question":"How likely are you to recommend signing up for Reddit to a friend or colleague?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"d2x_nps_survey_successful_signup_trigger","triggerEvent":"successful_signup_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.75}],"steps":[{"type":"NPS","question":"How likely are you to recommend signing up for Reddit to a friend or colleague?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"d2x_belonging_survey","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":2,"sampleFactor":0.1}],"steps":[{"type":"multi_choice","question":"Do you feel that Reddit is a place for you?","questionOptions":["Yes","No"],"followUpQuestion":"What makes you feel that way?"},{"type":"multi_choice","question":"Do you feel connected to other people who also use Reddit?","questionOptions":["Yes","No"],"followUpQuestion":"What makes you feel that way?"}]},{"experimentName":"d2x_belonging_survey_demo","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"multi_choice","question":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua?","questionOptions":["Lorem ipsum dolor sit consectetur adipis (1)","Lorem ipsum dolor sit consectetur adipis (2)","Lorem ipsum dolor sit consectetur adipis (3)","Lorem ipsum dolor sit consectetur adipis (4)","Lorem ipsum dolor sit consectetur adipis (5)","Lorem ipsum dolor sit consectetur adipis (6)"],"followUpQuestion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua?"}]}]}')
+			e.exports = JSON.parse('{"surveyCooldownDays":182,"activeSurveys":[{"experimentName":"nps_survey_scroll_trigger","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":2,"sampleFactor":0.5}],"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","followUpQuestion":"What\'s your main reason for feeling that way?"}]},{"experimentName":"d2x_nps_survey_dismiss_post_trigger","triggerEvent":"dismiss_post","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":3,"sampleFactor":0.01}],"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","followUpQuestion":"What is the primary reason for your rating?"}]},{"experimentName":"survey_demo_nps_1","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"survey_demo_combined_1","triggerEvent":"mods_feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","followUpQuestion":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","followUpQuestion":"What is the primary reason for your score with moderation tools on this device?"}]},{"experimentName":"d2x_search_survey","triggerEvent":"search_view_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.05}],"steps":[{"type":"multi_choice","question":"Did you find what you were looking for","question_options":["Yes","No"],"followUpQuestion":"Why or why not?"}]},{"experimentName":"d2x_search_comments_survey","triggerEvent":"search_view_comments_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.05}],"steps":[{"type":"multi_choice","question":"Did you find what you were looking for","question_options":["Yes","No"],"followUpQuestion":"Why or why not?"}]},{"experimentName":"d2x_chat_survey","triggerEvent":"chat_view_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.15}],"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with Reddit\'s chat?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"d2x_mods_survey","triggerEvent":"mods_feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","followUpQuestion":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","followUpQuestion":"What is the primary reason for your score with moderation tools on this device?"}]},{"experimentName":"d2x_nps_survey_dismiss_signup_trigger","triggerEvent":"dismiss_signup_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.3}],"steps":[{"type":"NPS","question":"How likely are you to recommend signing up for Reddit to a friend or colleague?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"d2x_nps_survey_successful_signup_trigger","triggerEvent":"successful_signup_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.75}],"steps":[{"type":"NPS","question":"How likely are you to recommend signing up for Reddit to a friend or colleague?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"d2x_belonging_survey","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":2,"sampleFactor":0.1}],"steps":[{"type":"multi_choice","question":"Do you feel that Reddit is a place for you?","questionOptions":["Yes","No"],"followUpQuestion":"What makes you feel that way?"},{"type":"multi_choice","question":"Do you feel connected to other people who also use Reddit?","questionOptions":["Yes","No"],"followUpQuestion":"What makes you feel that way?"}]},{"experimentName":"d2x_belonging_survey_demo","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"multi_choice","question":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua?","questionOptions":["Lorem ipsum dolor sit consectetur adipis (1)","Lorem ipsum dolor sit consectetur adipis (2)","Lorem ipsum dolor sit consectetur adipis (3)","Lorem ipsum dolor sit consectetur adipis (4)","Lorem ipsum dolor sit consectetur adipis (5)","Lorem ipsum dolor sit consectetur adipis (6)"],"followUpQuestion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua?"}]}]}')
 		},
 		"./src/reddit/helpers/survey/index.ts": function(e, t, i) {
 			"use strict";
@@ -25100,18 +25106,19 @@
 				_ = s()(() => Object(n.a)());
 			var m;
 			! function(e) {
-				e.dismiss_post = "dismiss_post", e.feed_scroll_1_page = "feed_scroll_1_page", e.layer_feed_scroll_1_page = "layer_feed_scroll_1_page", e.mods_feed_scroll_1_page = "mods_feed_scroll_1_page", e.videos_watched = "videos_watched", e.chat_view_trigger = "chat_view_trigger", e.search_view_trigger = "search_view_trigger", e.dismiss_signup_trigger = "dismiss_signup_trigger", e.successful_signup_trigger = "successful_signup_trigger"
+				e.dismiss_post = "dismiss_post", e.feed_scroll_1_page = "feed_scroll_1_page", e.layer_feed_scroll_1_page = "layer_feed_scroll_1_page", e.mods_feed_scroll_1_page = "mods_feed_scroll_1_page", e.videos_watched = "videos_watched", e.chat_view_trigger = "chat_view_trigger", e.search_view_trigger = "search_view_trigger", e.dismiss_signup_trigger = "dismiss_signup_trigger", e.successful_signup_trigger = "successful_signup_trigger", e.search_view_comments_trigger = "search_view_comments_trigger"
 			}(m || (m = {}));
 			const p = {
 					[d.g]: m.mods_feed_scroll_1_page,
 					[d.f]: m.layer_feed_scroll_1_page,
-					[d.l]: m.feed_scroll_1_page,
+					[d.m]: m.feed_scroll_1_page,
 					[d.h]: m.dismiss_post,
-					[d.m]: m.videos_watched,
+					[d.n]: m.videos_watched,
 					[d.a]: m.chat_view_trigger,
-					[d.j]: m.search_view_trigger,
+					[d.k]: m.search_view_trigger,
 					[d.e]: m.dismiss_signup_trigger,
-					[d.k]: m.successful_signup_trigger
+					[d.l]: m.successful_signup_trigger,
+					[d.j]: m.search_view_comments_trigger
 				},
 				h = ({
 					triggerName: e,
@@ -47046,4 +47053,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.22a87fb11681081027a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a9a45ed8f4d6ddb8e3c2.js.map

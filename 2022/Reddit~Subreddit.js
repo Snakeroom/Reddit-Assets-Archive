@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.06be3f2c14dbae5ae9d0.js
-// Retrieved at 3/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~Subreddit.4591d9ec5696b7d4e297.js
+// Retrieved at 3/8/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~Subreddit"], {
 		"./node_modules/lodash/_baseRandom.js": function(e, t) {
@@ -1980,7 +1980,7 @@
 						e(d.P(t, i, s, r))
 					},
 					showModalOnScroll: () => e(d.bb()),
-					surveyTriggerScrollCounted: () => e(Object(u.k)())
+					surveyTriggerScrollCounted: () => e(Object(u.l)())
 				}),
 				T = e => Object(m.b)({
 					...e
@@ -3984,4 +3984,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.06be3f2c14dbae5ae9d0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~Subreddit.4591d9ec5696b7d4e297.js.map
