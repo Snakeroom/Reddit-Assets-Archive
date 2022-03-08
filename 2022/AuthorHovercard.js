@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.59297435f8328ee53fa0.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.07b0c5bd2fad570ce190.js
+// Retrieved at 3/8/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -2877,134 +2877,135 @@
 				var t;
 				const {
 					contextId: n,
-					currentUser: s,
-					hideNSFWPref: o,
-					hoverId: i,
-					isLoggedIn: d,
-					isNightMode: l,
-					moderatorPermissions: b,
-					style: p,
-					userName: h,
-					user: v,
-					isCurrentUserBanned: I,
-					userProfileStyles: _,
-					acceptChats: C,
-					isCommentAuthorBlocked: N,
-					trophyCase: O,
-					lastAuthorModNote: g,
-					userIsSubscriber: k,
-					onUnbanUser: j,
-					subredditId: y,
-					toggleBanModal: w,
-					isUserBanned: S,
-					prefersReducedAnimations: P,
-					totalModNoteCount: U,
-					onChangeView: A,
-					onHideTooltip: M
-				} = e, T = Object(m.a)();
+					currentUser: o,
+					hideNSFWPref: i,
+					hoverId: d,
+					isLoggedIn: l,
+					isNightMode: b,
+					moderatorPermissions: p,
+					style: h,
+					userName: v,
+					user: I,
+					isCurrentUserBanned: _,
+					userProfileStyles: C,
+					acceptChats: N,
+					isCommentAuthorBlocked: O,
+					trophyCase: g,
+					lastAuthorModNote: k,
+					userIsSubscriber: j,
+					onUnbanUser: y,
+					subredditId: w,
+					toggleBanModal: S,
+					isUserBanned: P,
+					prefersReducedAnimations: U,
+					totalModNoteCount: A,
+					onChangeView: M,
+					onHideTooltip: T
+				} = e, B = Object(m.a)(), L = Object(s.e)(e => w ? e.subreddits.models[w] : null);
 				Object(a.useEffect)(() => {
-					v && y && T(Object(u.w)({
-						subredditId: y,
-						userId: v.id
+					I && w && B(Object(u.w)({
+						subredditId: w,
+						userId: I.id
 					}))
-				}, [v, y]);
-				const B = Object(a.useCallback)(() => y && T(Object(u.j)({
-						subredditId: y,
-						userId: v.id
-					})), [y, v, T]),
-					L = Object(a.useCallback)(() => {
-						S ? j && j(v.id) : (M && M(), w && w()), y && T(Object(u.b)({
-							subredditId: y,
-							userId: v.id
+				}, [I, w]);
+				const D = Object(a.useCallback)(() => w && B(Object(u.j)({
+						subredditId: w,
+						userId: I.id
+					})), [w, I, B]),
+					F = Object(a.useCallback)(() => {
+						P ? y && y(I.id) : (T && T(), S && S()), w && B(Object(u.b)({
+							subredditId: w,
+							userId: I.id
 						}))
-					}, [y, v, S, T, M, j, w]),
-					D = Object(a.useCallback)(e => {
-						A(e), y && T(Object(u.i)({
-							subredditId: y,
-							userId: v.id
-						}))
-					}, [y, v, T, A]),
-					F = Object(a.useCallback)(e => {
-						A(e, E.k.Note), y && T(Object(u.a)({
-							subredditId: y,
-							userId: v.id
-						}))
-					}, [y, v, T, A]),
+					}, [w, I, P, B, T, y, S]),
 					H = Object(a.useCallback)(e => {
-						A(e), y && T(Object(u.p)({
-							subredditId: y,
-							userId: v.id
+						M(e), w && B(Object(u.i)({
+							subredditId: w,
+							userId: I.id
 						}))
-					}, [y, v, T, A]);
-				if (!v) return r.a.createElement("div", {
+					}, [w, I, B, M]),
+					R = Object(a.useCallback)(e => {
+						M(e, E.k.Note), w && B(Object(u.a)({
+							subredditId: w,
+							userId: I.id
+						}))
+					}, [w, I, B, M]),
+					W = Object(a.useCallback)(e => {
+						M(e), w && B(Object(u.p)({
+							subredditId: w,
+							userId: I.id
+						}))
+					}, [w, I, B, M]);
+				if (!I) return r.a.createElement("div", {
 					className: et.a.Container,
-					style: p
+					style: h
 				});
-				const R = !!s && Object(Xe.e)(s) === h,
-					W = d && !R && !I && C && !N,
-					K = v.hasUserProfile && !I && !N && !R && v.enableFollowers,
-					G = null == b ? void 0 : b.access,
-					Z = null == b ? void 0 : b.mail,
-					q = G && n && !R && y,
-					J = v.isNSFW && o ? `${Te.a.assetPath}/img/user-info-banner.png` : (null == _ ? void 0 : _.bannerBackgroundImage) ? _.bannerBackgroundImage : v.bannerImage,
-					z = l ? "##D7DADC" : "#0079D3",
-					V = l ? "#121212" : "#FFF",
-					X = l ? "#1E1E1E" : "#EDEFF1",
-					Y = l ? "#D7DADC" : "#1A1A1B";
+				const K = !!o && Object(Xe.e)(o) === v,
+					G = l && !K && !_ && N && !O,
+					Z = I.hasUserProfile && !_ && !O && !K && I.enableFollowers,
+					q = null == p ? void 0 : p.access,
+					J = null == p ? void 0 : p.mail,
+					z = q && n && !K && w,
+					V = I.isNSFW && i ? `${Te.a.assetPath}/img/user-info-banner.png` : (null == C ? void 0 : C.bannerBackgroundImage) ? C.bannerBackgroundImage : I.bannerImage,
+					X = b ? "##D7DADC" : "#0079D3",
+					Y = b ? "#121212" : "#FFF",
+					$ = b ? "#1E1E1E" : "#EDEFF1",
+					ee = b ? "#D7DADC" : "#1A1A1B",
+					te = L && v ? `?toSubredditName=${L.name}&toUserName=${v}` : "";
 				return r.a.createElement("div", {
 					className: et.a.Container,
-					id: i,
+					id: d,
 					onClick: e => e.stopPropagation(),
 					style: {
-						backgroundColor: V,
-						...p
+						backgroundColor: Y,
+						...h
 					}
 				}, r.a.createElement("div", {
 					className: et.a.UserContainer
 				}, r.a.createElement("div", {
 					className: et.a.BannerImage,
-					style: J ? {
-						backgroundImage: `url('${J}')`
+					style: V ? {
+						backgroundImage: `url('${V}')`
 					} : {}
 				}), r.a.createElement("div", {
 					className: et.a.snoovatarContainer
-				}, v.snoovatarFullBodyAsset ? r.a.createElement("img", {
+				}, I.snoovatarFullBodyAsset ? r.a.createElement("img", {
 					className: et.a.snoovatar,
-					src: v.snoovatarFullBodyAsset
-				}) : (null === (t = v.accountIcon) || void 0 === t ? void 0 : t.includes("avatars/defaults/v2")) ? r.a.createElement("div", {
+					src: I.snoovatarFullBodyAsset
+				}) : (null === (t = I.accountIcon) || void 0 === t ? void 0 : t.includes("avatars/defaults/v2")) ? r.a.createElement("div", {
 					className: et.a.anonymousSnoovatar
 				}, r.a.createElement(He, null)) : r.a.createElement(qe.a, {
 					className: et.a.UserIcon,
-					iconUrl: v.accountIcon,
-					isNSFW: v.isNSFW,
-					userName: h
+					iconUrl: I.accountIcon,
+					isNSFW: I.isNSFW,
+					userName: v
 				}))), r.a.createElement(tt, {
-					user: v,
-					userName: h
+					user: I,
+					userName: v
 				}), r.a.createElement(Q.a, {
 					className: et.a.profileLink,
-					to: `/user/${h}/`
+					to: `/user/${v}/`
 				}, f.fbt._("View full profile", null, {
 					hk: "2s4Gmf"
 				})), r.a.createElement("div", {
 					className: et.a.profileButtonGroup
-				}, W && r.a.createElement(Re.b, {
+				}, G && r.a.createElement(Re.b, {
 					className: Object(c.a)(et.a.ChatButton, et.a.profileButtonLeft, {
-						[et.a.onlyButton]: !K
+						[et.a.onlyButton]: !Z
 					}),
 					contextId: n,
-					userId: v.id,
+					userId: I.id,
 					text: f.fbt._("Start Chat", null, {
 						hk: "2mfqRE"
 					}),
 					isFullWidth: !0,
 					style: {
-						color: V,
-						backgroundColor: z
+						color: Y,
+						backgroundColor: X
 					}
-				}), K && r.a.createElement(Ze.a, {
+				}), Z && r.a.createElement(Ze.a, {
 					className: Object(c.a)(et.a.SubscribeButton, et.a.profileButtonRight, {
-						[et.a.onlyButton]: !W
+						[et.a.onlyButton]: !G
 					}),
 					identifier: {
 						name: e.user.username,
@@ -3014,55 +3015,55 @@
 					isFullWidth: !0,
 					small: !0,
 					style: {
-						color: k ? "#D7DADC" : V,
-						backgroundColor: z,
+						color: j ? "#D7DADC" : Y,
+						backgroundColor: X,
 						width: 144
 					}
 				})), r.a.createElement(nt, {
-					user: v,
-					trophyCase: O || [],
-					prefersReducedAnimations: !!P
-				}), (Z || q) && r.a.createElement("div", {
+					user: I,
+					trophyCase: g || [],
+					prefersReducedAnimations: !!U
+				}), (J || z) && r.a.createElement("div", {
 					className: et.a.buttonRow
-				}, Z && r.a.createElement(x.t, {
+				}, J && r.a.createElement(x.t, {
 					className: Object(c.a)(et.a.modButtonLeft, {
-						[et.a.onlyButton]: !q
+						[et.a.onlyButton]: !z
 					}),
-					href: "https://mod.reddit.com/mail/create",
+					href: `https://mod.reddit.com/mail/create${te}`,
 					target: "_blank",
 					rel: "noopener noreferrer",
 					kind: x.b.ExternalLink,
 					priority: x.c.Plain,
 					style: {
-						backgroundColor: X,
-						color: Y
+						backgroundColor: $,
+						color: ee
 					},
-					onClick: B
+					onClick: D
 				}, f.fbt._("Send Modmail", null, {
 					hk: "2KDZJi"
-				})), q && r.a.createElement(x.t, {
+				})), z && r.a.createElement(x.t, {
 					className: Object(c.a)(et.a.modButtonRight, {
-						[et.a.onlyButton]: !Z
+						[et.a.onlyButton]: !J
 					}),
-					onClick: L,
+					onClick: F,
 					priority: x.c.Plain,
 					style: {
-						backgroundColor: X,
-						color: Y
+						backgroundColor: $,
+						color: ee
 					}
-				}, S ? f.fbt._("Unban", null, {
+				}, P ? f.fbt._("Unban", null, {
 					hk: "2bKwSa"
 				}) : f.fbt._("Ban", null, {
 					hk: "1lIetx"
-				}))), G && r.a.createElement("div", {
+				}))), q && r.a.createElement("div", {
 					className: et.a.buttonRow
 				}, r.a.createElement(x.t, {
 					className: et.a.modButtonLeft,
-					onClick: D,
+					onClick: H,
 					priority: x.c.Plain,
 					style: {
-						backgroundColor: X,
-						color: Y
+						backgroundColor: $,
+						color: ee
 					}
 				}, r.a.createElement("span", {
 					className: et.a.notesText
@@ -3070,46 +3071,46 @@
 					hk: "2PiT0s"
 				})), r.a.createElement("span", {
 					className: et.a.notesNumber
-				}, U || 0, " ")), r.a.createElement(x.t, {
+				}, A || 0, " ")), r.a.createElement(x.t, {
 					className: et.a.modButtonRight,
-					onClick: F,
+					onClick: R,
 					priority: x.c.Plain,
 					style: {
-						backgroundColor: X,
-						color: Y
+						backgroundColor: $,
+						color: ee
 					}
 				}, f.fbt._("Add Note", null, {
 					hk: "34JqdA"
-				}))), G && g && r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
+				}))), q && k && r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 					className: et.a.modNoteSection
 				}, r.a.createElement("hr", null), r.a.createElement("div", {
 					className: et.a.modNoteLabel
 				}, r.a.createElement("span", {
 					className: et.a.modNoteLabelText,
 					style: {
-						backgroundColor: V
+						backgroundColor: Y
 					}
 				}, f.fbt._("Latest mod note", null, {
 					hk: "3D5qr4"
 				})), r.a.createElement(x.t, {
 					className: et.a.modNoteButton,
-					onClick: H,
+					onClick: W,
 					priority: x.c.PlainLink,
 					style: {
-						backgroundColor: V
+						backgroundColor: Y
 					}
 				}, f.fbt._("View all", null, {
 					hk: "2WT026"
 				})))), r.a.createElement(Ge.b, {
 					className: et.a.lastModNote,
-					modNote: g,
-					subredditId: y || "",
-					onClick: e => A(e),
+					modNote: k,
+					subredditId: w || "",
+					onClick: e => M(e),
 					context: Ge.a.ModIdCard
 				})), r.a.createElement(Ke.i, {
 					contextId: n,
-					subredditId: y,
-					user: v
+					subredditId: w,
+					user: I
 				}), r.a.createElement("div", {
 					className: et.a.BottomSpacer
 				}))
@@ -5111,4 +5112,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.59297435f8328ee53fa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.07b0c5bd2fad570ce190.js.map
