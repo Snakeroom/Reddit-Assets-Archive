@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.f784ac24efe9d0d6800c.js
-// Retrieved at 3/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.22d9e14743c4b22b9f4c.js
+// Retrieved at 3/8/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./src/lib/makeLinkedPostsListingKey/index.ts": function(e, t, s) {
@@ -4583,16 +4583,15 @@
 					S = Object(p.b)(Object(d.e)(_));
 				return I || E ? o.a.createElement("div", {
 					className: O.a.CommentsNavigationPane
-				}, I && o.a.createElement("div", null, o.a.createElement("div", {
-					onClick: () => C(Object(b.i)(j, i, s))
-				}, o.a.createElement(l.a, {
+				}, I && o.a.createElement("div", null, o.a.createElement(l.a, {
 					className: O.a.linkOrOverlay,
 					"data-testid": "view_all_comments_link",
 					isOverlay: k,
-					to: Object(p.b)(_)
+					to: Object(p.b)(_),
+					onClick: () => C(Object(b.i)(j, i, s))
 				}, v._("View all comments", null, {
 					hk: "3I5IX9"
-				}))), i && null !== i.parentId && o.a.createElement(l.a, {
+				})), i && null !== i.parentId && o.a.createElement(l.a, {
 					className: O.a.linkOrOverlay,
 					isOverlay: k,
 					to: Object(p.b)(i.permalink + "?context=8&depth=9")
@@ -5921,4 +5920,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.f784ac24efe9d0d6800c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.22d9e14743c4b22b9f4c.js.map
