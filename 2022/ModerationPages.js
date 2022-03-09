@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.db6c990a63db083a8722.js
-// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.7b30c4a7f5b4155a4b1f.js
+// Retrieved at 3/9/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2105,7 +2105,7 @@
 					size: D.b.Medium,
 					titleColor: Se && Se.postTitleColor,
 					isOverlay: ne
-				}, ue.source && !Oe && a.a.createElement(B.a, {
+				}, ue.source && !Oe && !ue.isSurveyAd && a.a.createElement(B.a, {
 					href: ue.source.url,
 					isSponsored: ue.isSponsored,
 					postId: ue.id,
@@ -2117,7 +2117,7 @@
 				}), re && je && Me && a.a.createElement(N.a, {
 					onIgnoreReports: le,
 					reportable: ue
-				}), ke && Ue && Ue.url && a.a.createElement(c.a, {
+				}), ke && Ue && Ue.url && !ue.isSurveyAd && a.a.createElement(c.a, {
 					className: $.a.adLinkWrapper
 				}, a.a.createElement(m.a, {
 					post: ue,
@@ -5828,7 +5828,7 @@
 						isExpanded: v,
 						post: be,
 						useMediaIcons: !0
-					}))), Pe && Ye && Ye.url && a.a.createElement(O.a, {
+					}))), Pe && Ye && Ye.url && !be.isSurveyAd && a.a.createElement(O.a, {
 						className: ke.a.adLinkWrapper
 					}, a.a.createElement(j.a, {
 						post: be,
@@ -5893,7 +5893,8 @@
 				}), a.a.createElement(de.c, null), Object(de.d)(e.numComments), a.a.createElement(de.c, null), t && a.a.createElement("a", {
 					href: t.url
 				}, a.a.createElement(de.a, null, t.displayText)), e.isSponsored && [a.a.createElement(se.a, {
-					key: "label"
+					key: "label",
+					isSurveyAd: e.isSurveyAd
 				}), a.a.createElement(de.c, {
 					key: "separator"
 				})], !e.isSponsored && a.a.createElement(de.a, null, " Posted by "), a.a.createElement($.b, {
@@ -21789,4 +21790,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.db6c990a63db083a8722.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.7b30c4a7f5b4155a4b1f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.8715e79063c9a58daad3.js
-// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.65e92817f02c8b761d11.js
+// Retrieved at 3/9/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1810,7 +1810,7 @@
 					size: B.b.Medium,
 					titleColor: ke && ke.postTitleColor,
 					isOverlay: ne
-				}, me.source && !Pe && o.a.createElement(D.a, {
+				}, me.source && !Pe && !me.isSurveyAd && o.a.createElement(D.a, {
 					href: me.source.url,
 					isSponsored: me.isSponsored,
 					postId: me.id,
@@ -1822,7 +1822,7 @@
 				}), ae && _e && Me && o.a.createElement(S.a, {
 					onIgnoreReports: ce,
 					reportable: me
-				}), we && We && We.url && o.a.createElement(l.a, {
+				}), we && We && We.url && !me.isSurveyAd && o.a.createElement(l.a, {
 					className: $.a.adLinkWrapper
 				}, o.a.createElement(u.a, {
 					post: me,
@@ -3225,4 +3225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.8715e79063c9a58daad3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.65e92817f02c8b761d11.js.map

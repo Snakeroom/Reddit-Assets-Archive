@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.bdd3011c1bd1c819cb49.js
-// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.fd97b04482173a732157.js
+// Retrieved at 3/9/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2172,7 +2172,7 @@
 						autoplayPref: t,
 						shouldShowGalleryTileOption: Se,
 						showPromotedCTA: Te
-					})), Te && tt && tt.url && o.a.createElement(T.a, {
+					})), Te && tt && tt.url && !Pe.isSurveyAd && o.a.createElement(T.a, {
 						className: Ee.a.adLinkWrapper
 					}, o.a.createElement(I.a, {
 						post: Pe,
@@ -2201,7 +2201,7 @@
 						flairStyleTemplate: Re,
 						model: Pe,
 						onVoteClick: e.handleVote
-					}), o.a.createElement(B.c, {
+					}), !Pe.isSurveyAd && o.a.createElement(B.c, {
 						currentUser: a,
 						hasModFlairPerms: We,
 						hasModFullPerms: He,
@@ -3323,4 +3323,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.bdd3011c1bd1c819cb49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.fd97b04482173a732157.js.map

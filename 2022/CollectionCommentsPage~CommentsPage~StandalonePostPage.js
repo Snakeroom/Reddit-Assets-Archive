@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.0695df6b00b1d8688eca.js
-// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.bfd2b38839a8b9b9428d.js
+// Retrieved at 3/9/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~StandalonePostPage"], {
 		"./src/reddit/components/AdLinkWrapperContent/index.m.less": function(e, t, s) {
@@ -2564,7 +2564,7 @@
 					subredditOrProfile: Ue
 				}), N && a.a.createElement(he, {
 					post: we
-				}), Zt(), De && Ft && Ft.url && a.a.createElement(J.a, {
+				}), Zt(), De && Ft && Ft.url && !we.isSurveyAd && a.a.createElement(J.a, {
 					className: gt.a.adLinkWrapper
 				}, a.a.createElement(q.a, {
 					post: we,
@@ -3561,4 +3561,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.0695df6b00b1d8688eca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~StandalonePostPage.bfd2b38839a8b9b9428d.js.map

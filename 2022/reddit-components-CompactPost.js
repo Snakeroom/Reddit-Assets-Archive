@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.d93f73f8a17e6deb0917.js
-// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.617f8c657bf6a3b139fc.js
+// Retrieved at 3/9/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1890,7 +1890,7 @@
 						isExpanded: O,
 						post: be,
 						useMediaIcons: !0
-					}))), Te && Ye && Ye.url && s.a.createElement(k.a, {
+					}))), Te && Ye && Ye.url && !be.isSurveyAd && s.a.createElement(k.a, {
 						className: we.a.adLinkWrapper
 					}, s.a.createElement(P.a, {
 						post: be,
@@ -1955,7 +1955,8 @@
 				}), s.a.createElement(de.c, null), Object(de.d)(e.numComments), s.a.createElement(de.c, null), t && s.a.createElement("a", {
 					href: t.url
 				}, s.a.createElement(de.a, null, t.displayText)), e.isSponsored && [s.a.createElement(ne.a, {
-					key: "label"
+					key: "label",
+					isSurveyAd: e.isSurveyAd
 				}), s.a.createElement(de.c, {
 					key: "separator"
 				})], !e.isSponsored && s.a.createElement(de.a, null, " Posted by "), s.a.createElement($.b, {
@@ -3168,4 +3169,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.d93f73f8a17e6deb0917.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.617f8c657bf6a3b139fc.js.map

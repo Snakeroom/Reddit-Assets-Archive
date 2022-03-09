@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.7e7097cbe850e7a026a5.js
-// Retrieved at 3/9/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.847a5d1f1d91b14ae91a.js
+// Retrieved at 3/9/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -8967,6 +8967,16 @@
 							mediaMetadata: e.media_metadata
 						}
 					};
+					if (e.secure_media && e.secure_media.oembed || e.is_survey_ad) {
+						return {
+							content: e.secure_media_embed.media_domain_url,
+							type: i.o.EMBED,
+							width: e.secure_media.oembed.width,
+							height: e.secure_media.oembed.height,
+							obfuscated: n,
+							provider: e.secure_media.oembed.provider_name
+						}
+					}
 					if (e.media && e.media.reddit_video) {
 						const t = e.media.reddit_video;
 						return {
@@ -8987,16 +8997,6 @@
 							hlsUrl: t.hls_url,
 							scrubberThumbSource: t.scrubber_media_url,
 							type: i.o.LIVEVIDEO
-						}
-					}
-					if (e.secure_media && e.secure_media.oembed) {
-						return {
-							content: e.secure_media_embed.media_domain_url,
-							type: i.o.EMBED,
-							width: e.secure_media.oembed.width,
-							height: e.secure_media.oembed.height,
-							obfuscated: n,
-							provider: e.secure_media.oembed.provider_name
 						}
 					}
 					if (t && r) return {
@@ -9085,6 +9085,7 @@
 					isSpam: e.spam,
 					isSpoiler: e.spoiler,
 					isSponsored: e.promoted,
+					isSurveyAd: e.is_survey_ad,
 					isStickied: e.stickied,
 					liveCommentsWebsocket: e.liveCommentsWebsocket || e.websocket_url,
 					media: u(e),
@@ -13664,4 +13665,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.7e7097cbe850e7a026a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.847a5d1f1d91b14ae91a.js.map

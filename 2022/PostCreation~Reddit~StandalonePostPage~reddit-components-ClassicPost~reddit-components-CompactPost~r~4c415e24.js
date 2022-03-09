@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.6da6012ac8761b0fdc8c.js
-// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.a6169ee6c2e1f75307cf.js
+// Retrieved at 3/9/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -2782,8 +2782,11 @@
 						omitResponsivePresenceWrapper: !0
 					}), Ve(), ne && o.a.createElement(o.a.Fragment, null, o.a.createElement(Re, null), o.a.createElement(R.a, {
 						adHeaderVariant: K,
-						greyTextColor: ve(e)
-					}))) : o.a.createElement(o.a.Fragment, null, ne && o.a.createElement(o.a.Fragment, null, o.a.createElement(R.a, null), o.a.createElement(Re, null)), Ve()), o.a.createElement(B.e, null), U && !me && o.a.createElement(o.a.Fragment, null, o.a.createElement("a", {
+						greyTextColor: ve(e),
+						isSurveyAd: _.isSurveyAd
+					}))) : o.a.createElement(o.a.Fragment, null, ne && o.a.createElement(o.a.Fragment, null, o.a.createElement(R.a, {
+						isSurveyAd: _.isSurveyAd
+					}), o.a.createElement(Re, null)), Ve()), o.a.createElement(B.e, null), U && !me && o.a.createElement(o.a.Fragment, null, o.a.createElement("a", {
 						className: pe.a.externalLink,
 						"data-testid": "post_timestamp",
 						"data-click-id": "timestamp",
@@ -2882,21 +2885,25 @@
 			t.a = ({
 				className: e,
 				adHeaderVariant: t,
-				greyTextColor: r
+				greyTextColor: r,
+				isSurveyAd: o
 			}) => {
-				const o = t === l.u.PromotedGrey || t === l.u.NoLockIcon;
+				const s = t === l.u.PromotedGrey || t === l.u.NoLockIcon,
+					c = o ? n.fbt._("We'd like your feedback", null, {
+						hk: "3ltlDO"
+					}) : n.fbt._("promoted", null, {
+						hk: "1R81m"
+					});
 				return a.a.createElement(u, {
 					className: Object(d.a)(e, {
 						[i.a.isPromotedBlue]: t === l.u.PromotedBlue,
-						[i.a.isPromotedGrey]: o
+						[i.a.isPromotedGrey]: s
 					})
 				}, a.a.createElement("span", {
-					style: o ? {
+					style: s ? {
 						color: r
 					} : {}
-				}, n.fbt._("promoted", null, {
-					hk: "1R81m"
-				})))
+				}, c))
 			}
 		},
 		"./src/reddit/controls/Input/ModalInput.tsx": function(e, t, r) {
@@ -5246,4 +5253,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.6da6012ac8761b0fdc8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation~Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~r~4c415e24.a6169ee6c2e1f75307cf.js.map
