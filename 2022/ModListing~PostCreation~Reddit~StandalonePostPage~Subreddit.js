@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.e8037a80f4b1b1947c2f.js
-// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.5e1cc3815fdedc9865ff.js
+// Retrieved at 3/9/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, s) {
@@ -2780,7 +2780,7 @@
 					[l.g.Compact]: m
 				},
 				f = e => o.a.createElement(c, e),
-				v = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://d4wggo22afv97.cloudfront.net", "https://www.dyson.com", "https://dyson.com", "https://www.bestbuy.com", "https://www.goarmy.com", "https://www.samsung.com", "https://www.cyberpunk.net"],
+				v = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://d4wggo22afv97.cloudfront.net", "https://www.dyson.com", "https://dyson.com", "https://www.bestbuy.com", "https://www.goarmy.com", "https://www.samsung.com", "https://www.cyberpunk.net", "https://www.mms.com"],
 				g = e => e.source && e.source.url && e.isSponsored && v.some(t => e.source.url.startsWith(t)),
 				C = e => !e.media || e.media.type === d.o.EMBED && !(d.b.has(e.media.provider) || g(e)),
 				x = (e, t) => {
@@ -3025,4 +3025,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.e8037a80f4b1b1947c2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~PostCreation~Reddit~StandalonePostPage~Subreddit.5e1cc3815fdedc9865ff.js.map
