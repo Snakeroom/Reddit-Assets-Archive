@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.b9efcd670733d3541d46.js
-// Retrieved at 3/10/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.a8b196ba59ee43fd28ff.js
+// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -360,7 +360,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.sf)(e.category_name)
+									displayText: Object(m.tf)(e.category_name)
 								};
 								s.push(o.id), t[o.id] = o
 							}), {
@@ -7643,7 +7643,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: o,
-							shouldShowLinkedPosts: o && !Object(f.tf)(t) && !Object(I.a)(t),
+							shouldShowLinkedPosts: o && !Object(f.uf)(t) && !Object(I.a)(t),
 							subreddit: n
 						}
 					}
@@ -7704,7 +7704,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(f.tf)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(f.uf)(c) && !Object(I.a)(c) && !i) return a.a.createElement("div", {
 						className: z.a.smallBanner
 					});
 					const {
@@ -11256,7 +11256,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.uc
 				});
-				return !(!t || Object(n.tf)(t))
+				return !(!t || Object(n.uf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts": function(e, t, s) {
@@ -11525,7 +11525,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.tf)(t)
+					return Boolean(t) && !Object(o.uf)(t)
 				},
 				d = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -11606,4 +11606,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.b9efcd670733d3541d46.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.a8b196ba59ee43fd28ff.js.map

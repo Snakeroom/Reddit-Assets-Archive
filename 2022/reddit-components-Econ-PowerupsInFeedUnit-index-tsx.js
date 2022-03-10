@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.546c5eac1e2756a93380.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.660c03284ec3124f8b30.js
+// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -574,7 +574,7 @@
 								subredditId: t
 							}),
 							d = Object(b.w)(e) && Object(m.u)(e);
-						return n || r ? i && o && Object(_.i)(e) ? s.UNLOCKED_COMMUNITY_GEAR : d ? s.UNLOCKED_UNAPPLIED_FROM_PREMIUM : s.HIDDEN : c && o && Object(_.i)(e) ? s.POWERUPS_COMMUNITY_GEAR : s.POWERUPS_DEFAULT
+						return n || r ? i && o && Object(_.j)(e) ? s.UNLOCKED_COMMUNITY_GEAR : d ? s.UNLOCKED_UNAPPLIED_FROM_PREMIUM : s.HIDDEN : c && o && Object(_.j)(e) ? s.POWERUPS_COMMUNITY_GEAR : s.POWERUPS_DEFAULT
 					})(e, {
 						subredditId: v.id,
 						subredditName: v.name
@@ -1348,7 +1348,7 @@
 					var t, a;
 					return !!(null === (a = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === a ? void 0 : a.marketing)
 				},
-				c = Object(s.a)(n.a, e => {
+				c = Object(s.a)(n.b, e => {
 					var t, a, s;
 					const r = null === (s = null === (a = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === a ? void 0 : a.marketing) || void 0 === s ? void 0 : s.marketingEvent;
 					return (null == r ? void 0 : r.active) ? (null == r ? void 0 : r.assetUrls) && (null == r ? void 0 : r.assetUrls[0]) : null
@@ -1356,4 +1356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.546c5eac1e2756a93380.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.660c03284ec3124f8b30.js.map

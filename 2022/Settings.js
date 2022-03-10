@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.e2894cdb8993a094bbc1.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.2faa270815942a652d36.js
+// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1350,7 +1350,7 @@
 					gqlContext: r
 				}) => {
 					const l = n();
-					if (!Object(h.h)(l)) return t((e => async (t, n, {
+					if (!Object(h.i)(l)) return t((e => async (t, n, {
 						apiContext: r
 					}) => {
 						t(v());
@@ -1403,7 +1403,7 @@
 					apiContext: c
 				}) => {
 					const l = r();
-					if (Object(h.h)(l)) return await n(k());
+					if (Object(h.i)(l)) return await n(k());
 					n(w());
 					try {
 						const s = await Object(i.c)({
@@ -4970,7 +4970,7 @@
 				url: A,
 				isHovercard: T
 			}) => {
-				const B = Object(r.e)(e => !y && !!w && Object(m.f)(e)),
+				const B = Object(r.e)(e => !y && !!w && Object(m.g)(e)),
 					L = Object(r.e)(u.b),
 					U = w && Object(l.e)(w) && L;
 				return a.a.createElement(a.a.Fragment, null, a.a.createElement(h.a, {
@@ -6215,7 +6215,7 @@
 					cancelSubscriptionModalIsOpen: Object(ge.b)("settings_optout_modal_id"),
 					premiumBenefitsModalIsOpen: Object(ge.b)("premium_benefits_modal_id"),
 					premiumFeedbackModalIsOpen: Object(ge.b)("premium_feedback_modal_id"),
-					isPremiumImprovedCancellationEnabled: ve.v,
+					isPremiumImprovedCancellationEnabled: ve.w,
 					goldExpiration: _e.q,
 					hasAndroidSubscription: _e.r,
 					hasIosSubscription: _e.x,
@@ -14082,4 +14082,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e2894cdb8993a094bbc1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2faa270815942a652d36.js.map

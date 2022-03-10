@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.54b0c246c720bb4dda75.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.4973fa0cb3454368d514.js
+// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1867,7 +1867,7 @@
 					gqlContext: a
 				}) => {
 					const d = r();
-					if (!Object(h.h)(d)) return t((e => async (t, r, {
+					if (!Object(h.i)(d)) return t((e => async (t, r, {
 						apiContext: a
 					}) => {
 						t(O());
@@ -1920,7 +1920,7 @@
 					apiContext: c
 				}) => {
 					const d = a();
-					if (Object(h.h)(d)) return await r(I());
+					if (Object(h.i)(d)) return await r(I());
 					r(_());
 					try {
 						const n = await Object(i.c)({
@@ -2761,7 +2761,7 @@
 			}) => {
 				const n = Object(Fe.a)(),
 					o = Object(J.b)(),
-					i = Object(a.e)(e => !r && Boolean(Object(M.h)(e)) && Object(Ue.t)(e)),
+					i = Object(a.e)(e => !r && Boolean(Object(M.h)(e)) && Object(Ue.u)(e)),
 					c = i ? He._("Get free Coins with Premium", null, {
 						hk: "3fzsqq"
 					}) : Object(Le.a)(r || 0, {
@@ -5899,4 +5899,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.54b0c246c720bb4dda75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.4973fa0cb3454368d514.js.map

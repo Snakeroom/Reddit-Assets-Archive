@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.813bbe9f82b63dc19034.js
-// Retrieved at 3/10/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.4674317e4ed9848a7158.js
+// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -5299,7 +5299,7 @@
 				c = ({
 					className: e
 				}) => {
-					return Object(s.e)(a.s) ? r.a.createElement(d, {
+					return Object(s.e)(a.t) ? r.a.createElement(d, {
 						className: e
 					}) : r.a.createElement(i, {
 						className: e
@@ -19999,7 +19999,7 @@
 						subredditName: h
 					} = (null == p ? void 0 : p.urlParams) || {},
 					b = Object(s.e)(e => Object(ee.D)(e, h)),
-					f = Object(s.e)(V.n);
+					f = Object(s.e)(V.o);
 				return r.a.createElement(pe.a, {
 					withOverlay: !0,
 					onOverlayClick: e,
@@ -22519,7 +22519,7 @@
 					}),
 					allowPolls: H.d,
 					votingLengthDropdownIsOpen: e => e.tooltip.tooltipId === od,
-					isPredictionCreationTabEnabled: V.n
+					isPredictionCreationTabEnabled: V.o
 				});
 			class id extends r.a.Component {
 				constructor(e) {
@@ -22990,7 +22990,7 @@
 					rteState: H.gb,
 					shouldAllowBodyText: H.ib,
 					subreddit: Q.r,
-					isPredictionCreationTabEnabled: V.n
+					isPredictionCreationTabEnabled: V.o
 				}),
 				al = Object(s.b)(sl, (e, {
 					onChange: t,
@@ -23424,7 +23424,7 @@
 					subredditId: t
 				}) => {
 					const n = Object(s.d)(),
-						a = Object(s.e)(V.o),
+						a = Object(s.e)(V.p),
 						c = Object(s.e)(e => Object(Nn.b)(e, {
 							subredditId: t
 						})),
@@ -23516,7 +23516,7 @@
 					submissionType: H.a,
 					subreddit: Q.r,
 					title: H.rb,
-					isPredictionsCreationTabEnabled: V.n
+					isPredictionsCreationTabEnabled: V.o
 				}),
 				Wl = Object(s.b)(Ul, (e, {
 					onChange: t,
@@ -23783,8 +23783,8 @@
 					submissionType: H.a,
 					subreddit: Q.r,
 					isImageGalleryCreationEnabled: H.N,
-					isPredictionCreationTabEnabled: V.n,
-					isTalkCreationEnabled: V.z
+					isPredictionCreationTabEnabled: V.o,
+					isTalkCreationEnabled: V.A
 				}),
 				_u = Object(s.b)(Eu, (e, t) => ({
 					onChange: (n, o) => {
@@ -24318,7 +24318,7 @@
 								pageLayer: i
 							})), d = Object(s.e)(e => c && Object(Fe.h)(e, {
 								subredditId: c.id
-							})), l = Object(s.e)(V.l);
+							})), l = Object(s.e)(V.m);
 							return r.a.useEffect(() => c && c.allowPredictions ? d ? t(!0) : l ? void Promise.resolve(a(Object(Tn.h)(c.id))).then(e => {
 								t(Boolean(e)), o(Boolean(e))
 							}) : t(!1) : t(!1), [a, c, d, l]), {
@@ -24335,7 +24335,7 @@
 					const t = Object(z.a)(),
 						[n, a] = Object(o.useState)(!1),
 						i = Object(s.e)(e => Object(H.h)(e)),
-						c = Object(s.e)(e => Object(V.z)(e)),
+						c = Object(s.e)(e => Object(V.A)(e)),
 						d = Object(o.useMemo)(() => {
 							var e;
 							return !!(null === (e = i.allowedPostTypes) || void 0 === e ? void 0 : e.talks)
@@ -24965,7 +24965,7 @@
 					var t, n;
 					return !!(null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing)
 				},
-				c = Object(o.a)(a.a, e => {
+				c = Object(o.a)(a.b, e => {
 					var t, n, o;
 					const r = null === (o = null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing) || void 0 === o ? void 0 : o.marketingEvent;
 					return (null == r ? void 0 : r.active) ? (null == r ? void 0 : r.assetUrls) && (null == r ? void 0 : r.assetUrls[0]) : null
@@ -25550,4 +25550,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.813bbe9f82b63dc19034.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4674317e4ed9848a7158.js.map

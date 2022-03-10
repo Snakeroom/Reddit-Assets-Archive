@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.0a11b9228d8d9559b975.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.aa507c38f3fd934f6ed6.js
+// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
@@ -16,8 +16,8 @@
 				a = r("./src/lib/makeActionCreator/index.ts"),
 				s = r("./src/lib/sentry/index.ts"),
 				c = r("./src/reddit/endpoints/gold/productCatalog/old.index.ts"),
-				d = r("./src/reddit/selectors/user.ts"),
-				i = r("./src/reddit/actions/toaster.ts"),
+				i = r("./src/reddit/selectors/user.ts"),
+				d = r("./src/reddit/actions/toaster.ts"),
 				l = r("./src/reddit/models/Toast/index.ts"),
 				u = r("./src/reddit/actions/post.ts"),
 				f = r("./src/lib/makeGqlRequest/index.ts"),
@@ -36,13 +36,13 @@
 				k = e => async (t, r, {
 					gqlContext: a
 				}) => {
-					const i = r();
-					if (!Object(m.h)(i)) return t((e => async (t, r, {
+					const d = r();
+					if (!Object(m.i)(d)) return t((e => async (t, r, {
 						apiContext: a
 					}) => {
 						t(h());
-						const i = r(),
-							l = Object(d.O)(i);
+						const d = r(),
+							l = Object(i.O)(d);
 						try {
 							const r = !l,
 								n = await Object(c.b)({
@@ -61,7 +61,7 @@
 							t(v(e))
 						}
 					})(null == e ? void 0 : e.correlationId));
-					const l = Object(w.a)(i);
+					const l = Object(w.a)(d);
 					if ((null == e ? void 0 : e.forceLoad) || !l) {
 						t(g());
 						try {
@@ -87,15 +87,15 @@
 						}
 					}
 				}, _ = Object(a.a)(O.q), E = Object(a.a)(O.r), C = Object(a.a)(O.p), A = (e, t) => async (r, a, {
-					apiContext: d
+					apiContext: i
 				}) => {
-					const i = a();
-					if (Object(m.h)(i)) return await r(k());
+					const d = a();
+					if (Object(m.i)(d)) return await r(k());
 					r(_());
 					try {
 						const n = await Object(c.c)({
 							awardId: e,
-							context: d(),
+							context: i(),
 							correlationId: t
 						});
 						if (!n.ok) throw new Error(n.error && n.error.type || "Unknown error");
@@ -112,20 +112,20 @@
 				}, S = Object(a.a)(O.h), I = () => async (e, t, {
 					gqlContext: r
 				}) => {
-					var a, d;
+					var a, i;
 					try {
 						const t = await Object(c.a)(r());
 						if (t.ok) {
 							const r = t.body.data.claimAwardOffer;
 							if (null === (a = r.errors) || void 0 === a ? void 0 : a.length) throw new Error(r.errors.map(e => e.message).join(" | "));
-							if (!(null === (d = r.awards) || void 0 === d ? void 0 : d.length)) throw new Error("Got empty award list on free award offer claim");
+							if (!(null === (i = r.awards) || void 0 === i ? void 0 : i.length)) throw new Error("Got empty award list on free award offer claim");
 							if (!r.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(S({
 								awards: r.awards
 							})), e(Object(u.B)())
 						}
 					} catch (f) {
-						Object(o.b)() || console.error(f), e(Object(i.f)({
+						Object(o.b)() || console.error(f), e(Object(d.f)({
 							kind: l.b.Error,
 							text: n.fbt._("Sorry, something went wrong. Try Claiming again.", null, {
 								hk: "FWjud"
@@ -157,8 +157,8 @@
 				a = r("./node_modules/react/index.js"),
 				s = r.n(a),
 				c = r("./node_modules/react-redux/es/index.js"),
-				d = r("./src/higherOrderComponents/asModal/index.tsx"),
-				i = r("./src/lib/timeUntil/index.ts"),
+				i = r("./src/higherOrderComponents/asModal/index.tsx"),
+				d = r("./src/lib/timeUntil/index.ts"),
 				l = r("./src/reddit/helpers/trackers/freeAwardOffer.ts"),
 				u = r("./src/reddit/hooks/useTracking.ts"),
 				f = r("./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts"),
@@ -175,14 +175,14 @@
 				var r;
 				return (null === (r = null == e ? void 0 : e.assets) || void 0 === r ? void 0 : r.length) && (null == t ? void 0 : t.icon) && (e.assets[0].u = t.icon.url, e.assets[0].p = ""), e
 			};
-			t.default = Object(d.a)((function() {
+			t.default = Object(i.a)((function() {
 				const e = Object(u.a)(),
 					t = Object(c.d)(),
 					r = Object(c.e)(e => Object(b.b)(e)),
-					[n, d] = Object(a.useState)(null);
+					[n, i] = Object(a.useState)(null);
 				Object(a.useEffect)(() => {
 					Object(w.a)(`${g}/opening.json`).then(e => {
-						d(e)
+						i(e)
 					}), e(Object(l.b)())
 				}, []);
 				const h = () => {
@@ -217,7 +217,7 @@
 					hk: "41wWKZ"
 				})), r.endsAt && s.a.createElement("p", {
 					className: j.a.awardDescription
-				}, v._("Give it away in the next {awardEndDate} before it disappears.", [v._param("awardEndDate", Object(i.a)(new Date(r.endsAt)))], {
+				}, v._("Give it away in the next {awardEndDate} before it disappears.", [v._param("awardEndDate", Object(d.a)(new Date(r.endsAt)))], {
 					hk: "gmYKH"
 				})), s.a.createElement("div", {
 					className: j.a.awardMore
@@ -232,9 +232,9 @@
 		"./src/reddit/helpers/trackers/freeAwardOffer.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return d
-			})), r.d(t, "a", (function() {
 				return i
+			})), r.d(t, "a", (function() {
+				return d
 			})), r.d(t, "c", (function() {
 				return l
 			}));
@@ -250,13 +250,13 @@
 					profile: s.R(e),
 					subreddit: s.ib(e)
 				}),
-				d = () => e => ({
+				i = () => e => ({
 					source: "free_award_offer",
 					action: "view",
 					noun: "page",
 					...c(e)
 				}),
-				i = e => t => ({
+				d = e => t => ({
 					source: "free_award_offer",
 					action: "click",
 					noun: e,
@@ -293,9 +293,9 @@
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "j", (function() {
-				return d
-			})), r.d(t, "k", (function() {
 				return i
+			})), r.d(t, "k", (function() {
+				return d
 			})), r.d(t, "a", (function() {
 				return l
 			})), r.d(t, "d", (function() {
@@ -322,8 +322,8 @@
 				a = r("./src/reddit/models/Gold/ProductOffer.ts"),
 				s = r("./src/reddit/models/Payments/index.ts"),
 				c = r("./src/reddit/selectors/goldPurchaseModals.ts");
-			const d = e => e.subreddits.api.productOffers.pending,
-				i = (e, {
+			const i = e => e.subreddits.api.productOffers.pending,
+				d = (e, {
 					subredditId: t,
 					type: r
 				}) => {
@@ -331,7 +331,7 @@
 					return t ? e.subreddits.productOffers[Object(o.a)(r, t)] : null === (s = null === (a = null === (n = e.features) || void 0 === n ? void 0 : n.goldPurchase) || void 0 === a ? void 0 : a.productOffers) || void 0 === s ? void 0 : s[Object(o.a)(r)]
 				},
 				l = e => {
-					const t = i(e, {
+					const t = d(e, {
 						type: a.c.Coinpack
 					});
 					return null == t ? void 0 : t[0]
@@ -339,7 +339,7 @@
 				u = (e, {
 					subredditId: t
 				}) => {
-					const r = i(e, {
+					const r = d(e, {
 						subredditId: t,
 						type: a.c.Powerups
 					});
@@ -348,7 +348,7 @@
 				f = Object(n.a)(u, e => null == e ? void 0 : e.pricePackages[0]),
 				p = Object(n.a)(f, e => null == e ? void 0 : e.price),
 				b = e => {
-					const t = i(e, {
+					const t = d(e, {
 						type: a.c.Premium
 					});
 					return (null == t ? void 0 : t[0]) || null
@@ -373,4 +373,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.0a11b9228d8d9559b975.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.aa507c38f3fd934f6ed6.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.611f14db58423e08ac22.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.7cbd7936f48bccdd18c8.js
+// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -72,8 +72,8 @@
 				m = a("./src/reddit/selectors/activeModal.ts"),
 				v = a("./src/reddit/selectors/experiments/econ/index.ts"),
 				O = a("./src/telemetry/index.ts"),
-				b = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
-				f = a("./src/higherOrderComponents/asModal/index.tsx"),
+				f = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
+				b = a("./src/higherOrderComponents/asModal/index.tsx"),
 				j = a("./src/reddit/components/SnoovatarModal/index.m.less"),
 				p = a.n(j);
 
@@ -101,7 +101,7 @@
 				S = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.Builder
 				}))),
-				M = Object(f.a)(e => {
+				M = Object(b.a)(e => {
 					const t = Object(o.e)(e => e.user.session),
 						[r, c] = Object(s.useState)(!1),
 						i = Object(s.useMemo)(() => ({
@@ -111,9 +111,9 @@
 							expiration: new Date(t.expires).getTime()
 						}), [t]),
 						m = Object(u.a)(),
-						f = Object(o.e)(t => {
+						b = Object(o.e)(t => {
 							var a;
-							return i && "random" !== (null === (a = e.share) || void 0 === a ? void 0 : a.avatarId) && Object(v.e)(t)
+							return i && "random" !== (null === (a = e.share) || void 0 === a ? void 0 : a.avatarId) && Object(v.f)(t)
 						});
 					Object(s.useEffect)(() => {
 						(async () => {
@@ -127,7 +127,7 @@
 						activeTab: E || d.a.EXPLORE,
 						activeDetails: j || void 0
 					}), [j, E]);
-					return t && r ? f ? n.a.createElement(s.Suspense, {
+					return t && r ? b ? n.a.createElement(s.Suspense, {
 						fallback: n.a.createElement("div", null)
 					}, n.a.createElement(x, {
 						authHeaders: i,
@@ -135,7 +135,7 @@
 						sendEvent: O.a
 					}, n.a.createElement(S, {
 						navState: M
-					}))) : n.a.createElement(b.a, h({
+					}))) : n.a.createElement(f.a, h({
 						className: p.a.snoovatarModalIframeContainer
 					}, e)) : null
 				});
@@ -161,4 +161,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.611f14db58423e08ac22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.7cbd7936f48bccdd18c8.js.map

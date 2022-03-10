@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.a2519c7290f66a4b08e6.js
-// Retrieved at 3/10/2022, 4:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.ca8c9a767ee1ed216feb.js
+// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -73,6 +73,7 @@
 				calendar: "calendar",
 				camera: "camera",
 				camera_fill: "camera_fill",
+				campaign: "campaign",
 				caret_down: "caret_down",
 				caret_down_fill: "caret_down_fill",
 				caret_left: "caret_left",
@@ -3261,7 +3262,7 @@
 					}) => {
 						var l, b;
 						const p = Object(Oe.b)(e),
-							f = !!p && !Object(fe.tf)(p) && (s || p === fe.db.Community),
+							f = !!p && !Object(fe.uf)(p) && (s || p === fe.db.Community),
 							m = {
 								subredditName: n,
 								isFake: s,
@@ -8335,7 +8336,7 @@
 								experimentName: i.G,
 								expEventOverride: t
 							});
-							return !!(Object(i.tf)(r) ? void 0 : r)
+							return !!(Object(i.uf)(r) ? void 0 : r)
 						})(r)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -12386,7 +12387,7 @@
 						experimentEligibilitySelector: s.a,
 						experimentName: n.Hd
 					});
-					return !(!t || Object(n.tf)(t))
+					return !(!t || Object(n.uf)(t))
 				},
 				u = (e, t) => ((e, t) => {
 					var r;
@@ -12401,7 +12402,7 @@
 						experimentEligibilitySelector: c.O,
 						experimentName: n.Gd
 					});
-					return !(!t || Object(n.tf)(t))
+					return !(!t || Object(n.uf)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/crosspostRecommendations.ts": function(e, t, r) {
@@ -13087,7 +13088,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				_ = Object(s.a)(u.b, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.tf)(e) ? t : null),
+				_ = Object(s.a)(u.b, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.uf)(e) ? t : null),
 				O = Object(s.a)(u.b, c.b, a.a, (e, t, r) => e === i.db.PopoverFeed15 && Object(d.c)() && !t && !r)
 		},
 		"./src/reddit/selectors/seo/linksModule.ts": function(e, t, r) {
@@ -13726,4 +13727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.a2519c7290f66a4b08e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.ca8c9a767ee1ed216feb.js.map

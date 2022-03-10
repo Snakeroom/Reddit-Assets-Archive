@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.a5a6b74c3d4d497dbbc8.js
-// Retrieved at 3/10/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.a01c6bfb409468bc7589.js
+// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -18070,7 +18070,7 @@
 				url: P,
 				isHovercard: R
 			}) => {
-				const A = Object(r.e)(e => !_ && !!N && Object(m.f)(e)),
+				const A = Object(r.e)(e => !_ && !!N && Object(m.g)(e)),
 					L = Object(r.e)(u.b),
 					F = N && Object(l.e)(N) && L;
 				return a.a.createElement(a.a.Fragment, null, a.a.createElement(h.a, {
@@ -27134,7 +27134,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: s.Yc
 				});
-				return !(!t || Object(s.tf)(t))
+				return !(!t || Object(s.uf)(t))
 			}
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
@@ -27546,4 +27546,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a5a6b74c3d4d497dbbc8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a01c6bfb409468bc7589.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.841b4cd5e448adc0d2fd.js
-// Retrieved at 3/10/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.7167544207fb5447844f.js
+// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -3742,7 +3742,7 @@
 				c = ({
 					className: e
 				}) => {
-					return Object(o.e)(i.s) ? r.a.createElement(d, {
+					return Object(o.e)(i.t) ? r.a.createElement(d, {
 						className: e
 					}) : r.a.createElement(a, {
 						className: e
@@ -5156,9 +5156,9 @@
 			function te({
 				subredditId: e
 			}) {
-				const t = Object(o.e)(i.r),
-					n = Object(o.e)(i.q),
-					s = Object(o.e)(i.p);
+				const t = Object(o.e)(i.s),
+					n = Object(o.e)(i.r),
+					s = Object(o.e)(i.q);
 				return r.a.createElement("div", {
 					className: ee.a.container
 				}, t && r.a.createElement(I, {
@@ -16264,7 +16264,7 @@
 						experimentEligibilitySelector: o.O,
 						experimentName: s.yc
 					});
-					return !(!t || Object(s.tf)(t))
+					return !(!t || Object(s.uf)(t))
 				},
 				a = e => {
 					return Object(r.c)(e, {
@@ -17033,4 +17033,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.841b4cd5e448adc0d2fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.7167544207fb5447844f.js.map

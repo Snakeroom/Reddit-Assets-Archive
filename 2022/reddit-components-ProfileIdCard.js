@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.1e538960acec7a03cbee.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.078bedc7aa63e15e60a2.js
+// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1816,7 +1816,7 @@
 				url: L,
 				isHovercard: F
 			}) => {
-				const B = Object(a.e)(e => !C && !!k && Object(m.f)(e)),
+				const B = Object(a.e)(e => !C && !!k && Object(m.g)(e)),
 					T = Object(a.e)(u.b),
 					M = k && Object(d.e)(k) && T;
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement(b.a, {
@@ -2180,7 +2180,7 @@
 						e(Object(l.h)(t)), n(Object(h.a)(t))
 					},
 					onClickUnblockUser: () => {
-						e(Object(l.g)(t)), n(Object(h.i)(t))
+						e(Object(l.g)(t)), n(Object(h.j)(t))
 					},
 					onClickChatInviteLink: () => e((() => async (e, t, {
 						gqlContext: r
@@ -2288,7 +2288,7 @@
 			})) : n ? a.a.createElement(b.l, {
 				className: pe.a.button,
 				onClick: () => {
-					s(e), o(Object(h.i)(e))
+					s(e), o(Object(h.j)(e))
 				}
 			}, fe._("Unblock", null, {
 				hk: "2d6Cyx"
@@ -2694,24 +2694,26 @@
 		},
 		"./src/reddit/helpers/trackers/user.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "g", (function() {
+			r.d(t, "h", (function() {
 				return i
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "g", (function() {
 				return c
-			})), r.d(t, "h", (function() {
+			})), r.d(t, "i", (function() {
 				return d
-			})), r.d(t, "d", (function() {
-				return l
 			})), r.d(t, "e", (function() {
+				return l
+			})), r.d(t, "f", (function() {
 				return m
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "d", (function() {
 				return u
 			})), r.d(t, "b", (function() {
 				return p
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "c", (function() {
 				return f
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "a", (function() {
 				return b
+			})), r.d(t, "j", (function() {
+				return g
 			}));
 			var n = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts"),
@@ -2766,11 +2768,17 @@
 				p = () => e => ({
 					source: "user_dropdown",
 					action: "click",
+					noun: "advertise",
+					...o(e)
+				}),
+				f = () => e => ({
+					source: "user_dropdown",
+					action: "click",
 					noun: "coins",
 					correlationId: Object(n.c)(n.a.GoldPayment),
 					...o(e)
 				}),
-				f = e => t => ({
+				b = e => t => ({
 					source: "profile",
 					action: "click",
 					noun: "block_user",
@@ -2781,7 +2789,7 @@
 					},
 					...s.o(t)
 				}),
-				b = e => t => ({
+				g = e => t => ({
 					source: "profile",
 					action: "click",
 					noun: "unblock_user",
@@ -3050,4 +3058,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.1e538960acec7a03cbee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.078bedc7aa63e15e60a2.js.map

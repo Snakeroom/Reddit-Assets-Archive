@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.cf0094d0d49033c327e7.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.872dfc045efca6b4f0bd.js
+// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -2288,7 +2288,7 @@
 				url: M,
 				isHovercard: B
 			}) => {
-				const S = Object(s.e)(e => !N && !!O && Object(m.f)(e)),
+				const S = Object(s.e)(e => !N && !!O && Object(m.g)(e)),
 					T = Object(s.e)(u.b),
 					F = O && Object(i.e)(O) && T;
 				return n.a.createElement(n.a.Fragment, null, n.a.createElement(f.a, {
@@ -2697,4 +2697,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.cf0094d0d49033c327e7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.872dfc045efca6b4f0bd.js.map
