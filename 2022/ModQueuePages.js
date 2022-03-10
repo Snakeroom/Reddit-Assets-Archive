@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.38b55a9fbce898672427.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.8f75af4be9bb0c4f1c7c.js
+// Retrieved at 3/10/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1975,20 +1975,22 @@
 				d = n("./src/reddit/layout/row/Inline/index.tsx"),
 				c = n("./src/reddit/components/Comments/UnthreadedCommentPostMeta/index.m.less"),
 				l = n.n(c),
-				m = n("./src/lib/lessComponent.tsx");
+				m = n("./src/lib/constants/index.ts"),
+				u = n("./src/lib/lessComponent.tsx");
 			const {
-				fbt: u
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = m.a.wrapped(o.a, "AuthorLink", l.a), h = m.a.wrapped(d.a, "Inline", l.a), b = m.a.wrapped(d.a, "SubredditWrapper", l.a), x = m.a.div("TextContainer", l.a), f = m.a.wrapped(i.b, "SubredditIcon", l.a);
-			t.a = e => r.a.createElement(h, null, e.subredditOrProfile && r.a.createElement(b, null, e.subredditOrProfile && r.a.createElement(f, {
+				fbt: p
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), h = u.a.wrapped(o.a, "AuthorLink", l.a), b = u.a.wrapped(d.a, "Inline", l.a), x = u.a.wrapped(d.a, "SubredditWrapper", l.a), f = u.a.div("TextContainer", l.a), g = u.a.wrapped(i.b, "SubredditIcon", l.a);
+			t.a = e => r.a.createElement(b, null, e.subredditOrProfile && r.a.createElement(x, null, e.subredditOrProfile && r.a.createElement(g, {
 				subredditOrProfile: e.subredditOrProfile
-			}), e.subredditOrProfile && r.a.createElement(x, null, e.subredditOrProfile.displayText)), u._("posted by", null, {
+			}), e.subredditOrProfile && r.a.createElement(f, null, e.subredditOrProfile.displayText)), p._("posted by", null, {
 				hk: "1EuRc2"
 			}), e.comment.postAuthor && r.a.createElement(a.b, {
 				postOrComment: e.comment,
 				author: e.comment.postAuthor
-			}, r.a.createElement(p, {
+			}, r.a.createElement(h, {
 				author: e.comment.postAuthor,
-				isUnstyled: !0
+				isUnstyled: !0,
+				isAuthorDeleted: e.comment.postAuthor === m.E
 			}, `u/${e.comment.postAuthor}`)))
 		},
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, n) {
@@ -6796,4 +6798,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.38b55a9fbce898672427.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.8f75af4be9bb0c4f1c7c.js.map

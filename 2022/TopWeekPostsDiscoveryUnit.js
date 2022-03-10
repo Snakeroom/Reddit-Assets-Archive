@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.92e8e35542e57dcbaa62.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.7144d198168a694a9b01.js
+// Retrieved at 3/10/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -375,7 +375,9 @@
 						className: R.a.description
 					}, S.fbt._("posted by", null, {
 						hk: "wl0iP"
-					})), r.a.createElement(T.a, {
+					})), e.author === D.E ? r.a.createElement("span", {
+						className: R.a.authorName
+					}, Object(W.b)(e.author, t)) : r.a.createElement(T.a, {
 						className: R.a.authorName,
 						to: {
 							pathname: s,
@@ -2249,4 +2251,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.92e8e35542e57dcbaa62.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.7144d198168a694a9b01.js.map

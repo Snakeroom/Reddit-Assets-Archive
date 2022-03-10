@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.e23235f74d9071b215c3.js
-// Retrieved at 3/10/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.a5a6b74c3d4d497dbbc8.js
+// Retrieved at 3/10/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -5459,20 +5459,22 @@
 				d = n("./src/reddit/layout/row/Inline/index.tsx"),
 				l = n("./src/reddit/components/Comments/UnthreadedCommentPostMeta/index.m.less"),
 				c = n.n(l),
-				m = n("./src/lib/lessComponent.tsx");
+				m = n("./src/lib/constants/index.ts"),
+				u = n("./src/lib/lessComponent.tsx");
 			const {
-				fbt: u
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = m.a.wrapped(r.a, "AuthorLink", c.a), b = m.a.wrapped(d.a, "Inline", c.a), h = m.a.wrapped(d.a, "SubredditWrapper", c.a), g = m.a.div("TextContainer", c.a), f = m.a.wrapped(i.b, "SubredditIcon", c.a);
-			t.a = e => a.a.createElement(b, null, e.subredditOrProfile && a.a.createElement(h, null, e.subredditOrProfile && a.a.createElement(f, {
+				fbt: p
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), b = u.a.wrapped(r.a, "AuthorLink", c.a), h = u.a.wrapped(d.a, "Inline", c.a), g = u.a.wrapped(d.a, "SubredditWrapper", c.a), f = u.a.div("TextContainer", c.a), x = u.a.wrapped(i.b, "SubredditIcon", c.a);
+			t.a = e => a.a.createElement(h, null, e.subredditOrProfile && a.a.createElement(g, null, e.subredditOrProfile && a.a.createElement(x, {
 				subredditOrProfile: e.subredditOrProfile
-			}), e.subredditOrProfile && a.a.createElement(g, null, e.subredditOrProfile.displayText)), u._("posted by", null, {
+			}), e.subredditOrProfile && a.a.createElement(f, null, e.subredditOrProfile.displayText)), p._("posted by", null, {
 				hk: "1EuRc2"
 			}), e.comment.postAuthor && a.a.createElement(o.b, {
 				postOrComment: e.comment,
 				author: e.comment.postAuthor
-			}, a.a.createElement(p, {
+			}, a.a.createElement(b, {
 				author: e.comment.postAuthor,
-				isUnstyled: !0
+				isUnstyled: !0,
+				isAuthorDeleted: e.comment.postAuthor === m.E
 			}, `u/${e.comment.postAuthor}`)))
 		},
 		"./src/reddit/components/CommonAutocompleteDropdown/index.m.less": function(e, t, n) {
@@ -8537,7 +8539,7 @@
 		"./src/reddit/components/CompactPost/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "renderSubredditIcon", (function() {
-				return Te
+				return Me
 			}));
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
@@ -8546,77 +8548,78 @@
 				i = n("./node_modules/reselect/es/index.js"),
 				d = n("./src/lib/ads/index.ts"),
 				l = n("./src/lib/classNames/index.ts"),
-				c = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				m = n("./src/reddit/constants/postLayout.ts"),
-				u = n("./src/reddit/helpers/showReportIndicator/index.ts"),
-				p = n("./src/reddit/helpers/styles/mixins/index.tsx"),
-				b = n("./src/reddit/helpers/trackers/post.ts"),
-				h = n("./src/reddit/models/Media/index.ts"),
-				g = n("./src/reddit/models/User/index.ts"),
-				f = n("./src/reddit/models/Vote/index.ts"),
-				x = n("./src/reddit/actions/post.ts"),
-				E = n("./src/reddit/actions/postFlair.ts"),
-				v = n("./src/reddit/actions/tooltip.ts"),
-				C = n("./src/reddit/selectors/activeModalId.ts"),
-				_ = n("./src/reddit/selectors/experiments/cnc/index.ts"),
-				k = n("./src/reddit/selectors/moderatorPermissions.ts"),
-				y = n("./src/reddit/selectors/postFlair.ts"),
-				O = n("./src/reddit/selectors/posts.ts"),
-				N = n("./src/reddit/components/AdLinkWrapper/index.tsx"),
-				S = n("./src/reddit/components/AdLinkWrapperContent/index.tsx"),
-				j = n("./src/reddit/components/AwardBadges/index.tsx"),
-				I = n("./src/reddit/components/CommentsChat/LiveIcon/index.tsx"),
-				w = n("./src/reddit/components/CommentsLink/index.tsx"),
-				T = n("./src/reddit/components/CompactPost/HorizontalVotes/index.tsx"),
-				M = n("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
-				P = n("./src/reddit/components/ExpandoButton/index.tsx"),
-				R = n("./src/reddit/components/Flatlist/index.tsx"),
-				A = n("./src/reddit/components/Flatlist/getFlatlistTooltipId.ts"),
-				L = n("./src/reddit/components/JSAPIContainers/index.tsx"),
-				F = n("./src/reddit/components/ModActionsMenu/index.tsx"),
-				D = n("./src/reddit/components/ModModeFilteredReason/index.tsx"),
-				U = n("./src/reddit/components/ModModeFilteredReason/helpers.ts"),
-				B = n("./src/reddit/components/ModModeReports/index.tsx"),
-				H = n("./src/reddit/components/ModModeReports/helpers.ts"),
-				W = n("./src/reddit/components/ModToolsFlatlist/index.tsx"),
-				z = n("./src/reddit/components/OneFeed/PostRecommendationContext.tsx"),
-				q = n("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				G = n("./src/reddit/components/PostBadges/index.tsx"),
-				V = n("./src/reddit/components/PostContainer/index.tsx"),
-				K = n("./src/reddit/components/PostFlairPicker/index.tsx"),
-				X = n("./src/reddit/components/PostLeftRail/index.tsx"),
-				J = n("./src/reddit/components/PostMedia/index.tsx"),
-				Q = n("./src/reddit/components/PostModModeDropdown/index.tsx"),
-				Y = n("./src/reddit/components/PostOverflowMenu/index.tsx"),
-				Z = n("./src/reddit/components/PostTitle/index.tsx"),
-				$ = n("./src/reddit/components/PostTopMeta/index.tsx"),
-				ee = n("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
-				te = n("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
-				ne = n("./src/reddit/components/SponsoredLabel/index.tsx"),
-				se = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				ae = n("./src/reddit/components/VerticalVotes/index.tsx"),
-				re = n("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
-				oe = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				ie = n("./src/reddit/contexts/Post/index.tsx"),
-				de = n("./src/reddit/controls/Checkbox/index.tsx"),
-				le = n("./src/reddit/controls/MetaData/index.tsx"),
-				ce = n("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
-				me = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
-				ue = n("./src/reddit/helpers/hasModPostPermissions/index.ts"),
-				pe = n("./src/reddit/helpers/postEvent.ts"),
-				be = n("./src/reddit/hooks/useIsOverlay.ts"),
-				he = n("./src/reddit/hooks/useTheme.ts"),
-				ge = n("./src/reddit/hooks/useUserContext.ts"),
-				fe = n("./src/reddit/icons/fonts/IgnoreReport/index.tsx"),
-				xe = n("./src/reddit/icons/fonts/Report/index.tsx"),
-				Ee = n("./src/reddit/selectors/showPromotedCTA.ts"),
-				ve = n("./src/reddit/helpers/styles/mixins/index.m.less"),
-				Ce = n.n(ve),
-				_e = n("./src/reddit/components/CompactPost/index.m.less"),
-				ke = n.n(_e);
+				c = n("./src/lib/constants/index.ts"),
+				m = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				u = n("./src/reddit/constants/postLayout.ts"),
+				p = n("./src/reddit/helpers/showReportIndicator/index.ts"),
+				b = n("./src/reddit/helpers/styles/mixins/index.tsx"),
+				h = n("./src/reddit/helpers/trackers/post.ts"),
+				g = n("./src/reddit/models/Media/index.ts"),
+				f = n("./src/reddit/models/User/index.ts"),
+				x = n("./src/reddit/models/Vote/index.ts"),
+				E = n("./src/reddit/actions/post.ts"),
+				v = n("./src/reddit/actions/postFlair.ts"),
+				C = n("./src/reddit/actions/tooltip.ts"),
+				_ = n("./src/reddit/selectors/activeModalId.ts"),
+				k = n("./src/reddit/selectors/experiments/cnc/index.ts"),
+				y = n("./src/reddit/selectors/moderatorPermissions.ts"),
+				O = n("./src/reddit/selectors/postFlair.ts"),
+				N = n("./src/reddit/selectors/posts.ts"),
+				S = n("./src/reddit/components/AdLinkWrapper/index.tsx"),
+				j = n("./src/reddit/components/AdLinkWrapperContent/index.tsx"),
+				I = n("./src/reddit/components/AwardBadges/index.tsx"),
+				w = n("./src/reddit/components/CommentsChat/LiveIcon/index.tsx"),
+				T = n("./src/reddit/components/CommentsLink/index.tsx"),
+				M = n("./src/reddit/components/CompactPost/HorizontalVotes/index.tsx"),
+				P = n("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
+				R = n("./src/reddit/components/ExpandoButton/index.tsx"),
+				A = n("./src/reddit/components/Flatlist/index.tsx"),
+				L = n("./src/reddit/components/Flatlist/getFlatlistTooltipId.ts"),
+				F = n("./src/reddit/components/JSAPIContainers/index.tsx"),
+				D = n("./src/reddit/components/ModActionsMenu/index.tsx"),
+				U = n("./src/reddit/components/ModModeFilteredReason/index.tsx"),
+				B = n("./src/reddit/components/ModModeFilteredReason/helpers.ts"),
+				H = n("./src/reddit/components/ModModeReports/index.tsx"),
+				W = n("./src/reddit/components/ModModeReports/helpers.ts"),
+				z = n("./src/reddit/components/ModToolsFlatlist/index.tsx"),
+				q = n("./src/reddit/components/OneFeed/PostRecommendationContext.tsx"),
+				G = n("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				V = n("./src/reddit/components/PostBadges/index.tsx"),
+				K = n("./src/reddit/components/PostContainer/index.tsx"),
+				X = n("./src/reddit/components/PostFlairPicker/index.tsx"),
+				J = n("./src/reddit/components/PostLeftRail/index.tsx"),
+				Q = n("./src/reddit/components/PostMedia/index.tsx"),
+				Y = n("./src/reddit/components/PostModModeDropdown/index.tsx"),
+				Z = n("./src/reddit/components/PostOverflowMenu/index.tsx"),
+				$ = n("./src/reddit/components/PostTitle/index.tsx"),
+				ee = n("./src/reddit/components/PostTopMeta/index.tsx"),
+				te = n("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
+				ne = n("./src/reddit/components/RestrictedFlatlistButton/index.tsx"),
+				se = n("./src/reddit/components/SponsoredLabel/index.tsx"),
+				ae = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				re = n("./src/reddit/components/VerticalVotes/index.tsx"),
+				oe = n("./src/reddit/components/ViewReportsDropdown/Loader.ts"),
+				ie = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				de = n("./src/reddit/contexts/Post/index.tsx"),
+				le = n("./src/reddit/controls/Checkbox/index.tsx"),
+				ce = n("./src/reddit/controls/MetaData/index.tsx"),
+				me = n("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
+				ue = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
+				pe = n("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				be = n("./src/reddit/helpers/postEvent.ts"),
+				he = n("./src/reddit/hooks/useIsOverlay.ts"),
+				ge = n("./src/reddit/hooks/useTheme.ts"),
+				fe = n("./src/reddit/hooks/useUserContext.ts"),
+				xe = n("./src/reddit/icons/fonts/IgnoreReport/index.tsx"),
+				Ee = n("./src/reddit/icons/fonts/Report/index.tsx"),
+				ve = n("./src/reddit/selectors/showPromotedCTA.ts"),
+				Ce = n("./src/reddit/helpers/styles/mixins/index.m.less"),
+				_e = n.n(Ce),
+				ke = n("./src/reddit/components/CompactPost/index.m.less"),
+				ye = n.n(ke);
 
-			function ye() {
-				return (ye = Object.assign || function(e) {
+			function Oe() {
+				return (Oe = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -8624,55 +8627,55 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Oe = ({
+			const Ne = ({
 					isCompact: e,
 					...t
-				}) => a.a.createElement(P.a, ye({
-					className: Object(l.a)(ke.a.responsiveExpandoButton, {
-						[ke.a.mHideAboveSmallTablets]: !!e,
-						[ke.a.mHideBelowSmallTablets]: !e
+				}) => a.a.createElement(R.a, Oe({
+					className: Object(l.a)(ye.a.responsiveExpandoButton, {
+						[ye.a.mHideAboveSmallTablets]: !!e,
+						[ye.a.mHideBelowSmallTablets]: !e
 					})
 				}, t)),
-				Ne = () => Object(i.c)({
-					activeModalId: C.a,
-					crosspost: O.d,
-					flairStyleTemplate: oe.V,
-					isActive: O.j,
-					isExpanded: O.m,
-					showPromotedCTA: Ee.a,
-					layout: oe.R,
-					moderatorPermissions: k.l,
+				Se = () => Object(i.c)({
+					activeModalId: _.a,
+					crosspost: N.d,
+					flairStyleTemplate: ie.V,
+					isActive: N.j,
+					isExpanded: N.m,
+					showPromotedCTA: ve.a,
+					layout: ie.R,
+					moderatorPermissions: y.l,
 					poll: (e, t) => {
 						const n = e.posts.metaMap[t.postId];
 						if (n) return e.polls.models[n]
 					},
-					showEditFlair: y.a,
+					showEditFlair: O.a,
 					isInModNotesExperiment: (e, {
 						subreddit: t
-					}) => !!t && Object(_.a)(e, t.id)
+					}) => !!t && Object(k.a)(e, t.id)
 				}),
-				Se = (e, {
+				je = (e, {
 					postId: t
 				}) => ({
 					dispatchFlairChanged: ({
 						post: t,
 						previewFlair: n,
 						selectedTemplateId: s
-					}) => e(Object(E.h)({
+					}) => e(Object(v.h)({
 						post: t,
 						previewFlair: n,
 						selectedTemplateId: s
 					})),
 					handleVote: n => {
-						const s = n === f.a.upvoted ? Object(x.jb)(t) : Object(x.w)(t);
+						const s = n === x.a.upvoted ? Object(E.jb)(t) : Object(E.w)(t);
 						e(s)
 					},
-					onIgnoreReports: () => e(Object(x.fb)(t)),
-					onOpenReportsDropdown: t => e(Object(v.h)({
+					onIgnoreReports: () => e(Object(E.fb)(t)),
+					onOpenReportsDropdown: t => e(Object(C.h)({
 						tooltipId: t
 					}))
 				});
-			class je extends a.a.Component {
+			class Ie extends a.a.Component {
 				componentDidUpdate(e) {
 					this.props.onSizeChanged && e.isExpanded !== this.props.isExpanded && this.props.onSizeChanged(this.props.post.id)
 				}
@@ -8686,7 +8689,7 @@
 						eventFactory: o,
 						flairStyleTemplate: i,
 						handleVote: c,
-						imageGalleryCurrentItem: f,
+						imageGalleryCurrentItem: m,
 						isCheckboxSelected: x = !1,
 						isCommentsPage: E,
 						isCommentPermalink: v,
@@ -8695,126 +8698,126 @@
 						isInModNotesExperiment: k,
 						isOverlay: y,
 						isProfilePostListing: O,
-						inSubredditOrProfile: P = !1,
-						layout: J,
-						moderatorPermissions: ne,
+						inSubredditOrProfile: N = !1,
+						layout: R,
+						moderatorPermissions: Q,
 						modModeEnabled: se,
-						onClickPost: oe,
+						onClickPost: ae,
 						onFlairChanged: ie,
-						onIgnoreReports: le,
-						poll: be,
+						onIgnoreReports: de,
+						poll: ce,
 						post: he,
 						subredditOrProfile: ge,
-						userIsOp: Ee,
+						userIsOp: fe,
 						hideModTools: ve,
-						scrollerItemRef: _e,
-						showBulkActionCheckbox: ye,
-						showEditFlair: Ne,
+						scrollerItemRef: Ce,
+						showBulkActionCheckbox: ke,
+						showEditFlair: Oe,
 						toggleCheckbox: Se,
 						tooltipType: je,
-						sendEvent: we,
+						sendEvent: Ie,
 						shouldShowGalleryTileOption: Te,
-						showPromotedCTA: Pe
-					} = this.props, Re = !!he.media && he.media.type === h.o.RTJSON, Ae = Ee && Re, Le = Object(K.b)(he.id, y), Fe = Object(ue.a)(ne), De = Object(ce.a)(ne), Ue = Object(me.a)(ne), Be = `-mod-actions-menu-${he.id}`, He = `voting-arrows-${he.id}`, We = !!r && Object(g.e)(r) === he.author, ze = Object(U.d)(he), qe = Object(H.c)(he), Ge = Object(A.a)("View--Reports", he.id, je), Ve = Object(H.a)(he), Ke = !(y || E || v), Xe = he.media && he.media.type === h.o.LIVEVIDEO, Je = e => we(Object(b.h)(he.id, e)), Qe = Object(d.t)(he, f), {
+						showPromotedCTA: Me
+					} = this.props, Re = !!he.media && he.media.type === g.o.RTJSON, Ae = fe && Re, Le = Object(X.b)(he.id, y), Fe = Object(pe.a)(Q), De = Object(me.a)(Q), Ue = Object(ue.a)(Q), Be = `-mod-actions-menu-${he.id}`, He = `voting-arrows-${he.id}`, We = !!r && Object(f.e)(r) === he.author, ze = Object(B.d)(he), qe = Object(W.c)(he), Ge = Object(L.a)("View--Reports", he.id, je), Ve = Object(W.a)(he), Ke = !(y || E || v), Xe = he.media && he.media.type === g.o.LIVEVIDEO, Je = e => Ie(Object(h.h)(he.id, e)), Qe = Object(d.t)(he, m), {
 						source: Ye
-					} = Qe, Ze = a.a.createElement(V.a, {
-						className: Object(l.a)(Ce.a.compactPostStyles, ke.a.postContainer, Object(p.a)(this.props), t),
+					} = Qe, Ze = a.a.createElement(K.a, {
+						className: Object(l.a)(_e.a.compactPostStyles, ye.a.postContainer, Object(b.a)(this.props), t),
 						isOverlay: y,
 						style: {
-							...Object(p.d)(this.props),
-							...Object(p.b)(this.props.flairStyleTemplate)
+							...Object(b.d)(this.props),
+							...Object(b.b)(this.props.flairStyleTemplate)
 						},
 						post: he,
-						onClick: oe,
+						onClick: ae,
 						eventFactory: o
 					}, a.a.createElement("div", {
-						className: ke.a.compactWrapper
+						className: ye.a.compactWrapper
 					}, a.a.createElement("div", {
-						className: ke.a.leftRailWrapper
+						className: ye.a.leftRailWrapper
 					}, a.a.createElement("div", {
-						className: ke.a.leftRail,
+						className: ye.a.leftRail,
 						style: {
-							borderColor: Object(X.c)({
+							borderColor: Object(J.c)({
 								isRemoved: !!he.bannedBy,
-								isReported: Object(u.a)(he),
+								isReported: Object(p.a)(he),
 								isSponsored: he.isSponsored,
 								theme: this.props.theme
 							})
 						}
-					}, ye && a.a.createElement(de.a, {
-						className: ke.a.bulkActionCheckbox,
+					}, ke && a.a.createElement(le.a, {
+						className: ye.a.bulkActionCheckbox,
 						isCheckboxSelected: x,
 						toggleCheckbox: Se
-					}), a.a.createElement(ae.a, {
-						className: ke.a.verticalVotes,
+					}), a.a.createElement(re.a, {
+						className: ye.a.verticalVotes,
 						compact: !0,
 						flairStyleTemplate: i,
 						model: he,
 						onVoteClick: c
-					}), a.a.createElement(T.a, {
-						className: ke.a.horizontalVotes,
+					}), a.a.createElement(M.a, {
+						className: ye.a.horizontalVotes,
 						compact: !1,
 						flairStyleTemplate: i,
 						model: he,
 						onVoteClick: c,
 						upvoteTooltipId: He
-					}))), a.a.createElement(q.a, {
-						className: Object(l.a)(ke.a.content, {
-							[ke.a.isEvent]: Object(pe.a)(he)
+					}))), a.a.createElement(G.a, {
+						className: Object(l.a)(ye.a.content, {
+							[ye.a.isEvent]: Object(be.a)(he)
 						}),
 						"data-click-id": "background",
 						flairStyleTemplate: i
-					}, a.a.createElement(M.a, {
+					}, a.a.createElement(P.a, {
 						isCompactMode: !0,
 						post: he
 					}), a.a.createElement("div", {
-						className: ke.a.compactPostRow
-					}, !ve && a.a.createElement(Oe, {
+						className: ye.a.compactPostRow
+					}, !ve && a.a.createElement(Ne, {
 						crosspost: s,
 						isCommentsPage: E,
 						isCompact: !1,
 						isExpanded: C,
 						post: he,
 						useMediaIcons: !0
-					}), !P && !he.isSponsored && a.a.createElement(L.h, {
+					}), !N && !he.isSponsored && a.a.createElement(F.h, {
 						type: he.belongsTo.type,
 						id: he.belongsTo.id
 					}), a.a.createElement("div", {
-						className: ke.a.topLine,
+						className: ye.a.topLine,
 						"data-click-id": "body"
-					}, !!he.recommendationContext && a.a.createElement(z.a, {
+					}, !!he.recommendationContext && a.a.createElement(q.a, {
 						content: he.recommendationContext.content,
-						layout: m.g.Compact,
+						layout: u.g.Compact,
 						post: he
-					}), a.a.createElement(Z.c, {
+					}), a.a.createElement($.c, {
 						post: he,
-						poll: be,
-						size: Z.b.Small,
+						poll: ce,
+						size: $.b.Small,
 						titleColor: i && i.postTitleColor,
 						isOverlay: !1
-					}), Me(he, ge), a.a.createElement($.d, {
-						className: ke.a.postTopMeta,
+					}), Pe(he, ge), a.a.createElement(ee.d, {
+						className: ye.a.postTopMeta,
 						flairStyleTemplate: i,
 						isInModNotesExperiment: k,
 						post: he,
-						showSub: !!ge && !P && !he.isSponsored,
+						showSub: !!ge && !N && !he.isSponsored,
 						subredditOrProfile: ge
-					}), a.a.createElement(G.a, {
-						className: ke.a.postBadges,
+					}), a.a.createElement(V.a, {
+						className: ye.a.postBadges,
 						displayText: ge ? ge.displayText : null,
-						inSubredditOrProfile: P,
+						inSubredditOrProfile: N,
 						post: he
-					}), a.a.createElement(j.a, {
+					}), a.a.createElement(I.a, {
 						thing: he,
-						tooltipType: y ? $.c.Lightbox : void 0
-					})), Ke && !Xe && a.a.createElement("div", null, a.a.createElement(I.a, {
-						className: ke.a.liveDiscussionIcon,
+						tooltipType: y ? ee.c.Lightbox : void 0
+					})), Ke && !Xe && a.a.createElement("div", null, a.a.createElement(w.a, {
+						className: ye.a.liveDiscussionIcon,
 						isMod: Fe,
 						postId: he.postId
 					})), a.a.createElement("div", {
-						className: ke.a.flatList
-					}, a.a.createElement(w.a, {
-						className: ke.a.commentsLink,
+						className: ye.a.flatList
+					}, a.a.createElement(T.a, {
+						className: ye.a.commentsLink,
 						hasModPostPerms: Fe,
 						isCommentsPage: E,
 						isCommentPermalink: v,
@@ -8822,20 +8825,20 @@
 						postId: he.id,
 						modModeEnabled: se,
 						numComments: he.numComments,
-						type: m.g.Compact
-					}), a.a.createElement(W.a, {
-						className: ke.a.modToolsFlatlist,
+						type: u.g.Compact
+					}), a.a.createElement(z.a, {
+						className: ye.a.modToolsFlatlist,
 						isOverlay: !1,
-						layout: J,
+						layout: R,
 						modModeEnabled: se,
 						post: he,
-						sendEvent: we,
+						sendEvent: Ie,
 						showIconsOnly: !0
-					}), Fe && a.a.createElement(F.a, {
+					}), Fe && a.a.createElement(D.a, {
 						dropdownId: Be,
 						onClick: () => Je("post_mod_action_menu")
-					}, a.a.createElement(R.b, null), a.a.createElement(Q.a, {
-						canEditFlair: De && Ne,
+					}, a.a.createElement(A.b, null), a.a.createElement(Y.a, {
+						canEditFlair: De && Oe,
 						hasModPostPerms: Fe,
 						hasModFullPerms: Ue,
 						isOverlay: !1,
@@ -8843,31 +8846,31 @@
 						modModeEnabled: se,
 						post: he,
 						tooltipId: Be
-					})), Fe && qe && !se && a.a.createElement(te.c, {
+					})), Fe && qe && !se && a.a.createElement(ne.c, {
 						text: `${Ve}`,
 						onClick: () => {
 							this.props.onOpenReportsDropdown(Ge), Je("post_report_menu")
 						},
 						id: Ge
-					}, a.a.createElement(re.a, {
+					}, a.a.createElement(oe.a, {
 						model: he,
 						onIgnoreReports: () => {
-							le(), Je(he.ignoreReports ? "restore_reports" : "ignore_reports")
+							de(), Je(he.ignoreReports ? "restore_reports" : "ignore_reports")
 						},
 						tooltipId: Ge
-					}), he.ignoreReports ? a.a.createElement(fe.a, null) : a.a.createElement(xe.a, null)), a.a.createElement(Y.a, {
+					}), he.ignoreReports ? a.a.createElement(xe.a, null) : a.a.createElement(Ee.a, null)), a.a.createElement(Z.a, {
 						currentProfileName: n,
 						isCommentsPage: E,
 						isOverlay: !1,
 						isProfilePostListing: O,
 						isRecommendationPost: !!he.recommendationContext,
-						layout: J,
+						layout: R,
 						permalink: he.permalink,
-						sendEvent: we,
+						sendEvent: Ie,
 						showEditPost: Ae,
-						showEditFlair: Ne,
+						showEditFlair: Oe,
 						dropdownId: `${he.id}-overflow-menu`,
-						useFlatlistBreakpoints: Object(Y.b)({
+						useFlatlistBreakpoints: Object(Z.b)({
 							share: !1,
 							editPost: !1,
 							save: !1,
@@ -8875,50 +8878,50 @@
 							hide: !1,
 							report: !1
 						})
-					}), !ve && a.a.createElement(Oe, {
+					}), !ve && a.a.createElement(Ne, {
 						crosspost: s,
 						isCommentsPage: E,
 						isCompact: !0,
 						isExpanded: C,
 						post: he,
 						useMediaIcons: !0
-					}))), Pe && Ye && Ye.url && !he.isSurveyAd && a.a.createElement(N.a, {
-						className: ke.a.adLinkWrapper
-					}, a.a.createElement(S.a, {
+					}))), Me && Ye && Ye.url && !he.isSurveyAd && a.a.createElement(S.a, {
+						className: ye.a.adLinkWrapper
+					}, a.a.createElement(j.a, {
 						post: he,
 						adLinkContent: Qe,
 						isCompact: !0
 					})), se && Fe && ze && a.a.createElement("div", {
-						className: ke.a.modModeBannerWrapper
-					}, a.a.createElement(D.a, {
+						className: ye.a.modModeBannerWrapper
+					}, a.a.createElement(U.a, {
 						thing: he
 					})), se && Fe && qe && a.a.createElement("div", {
-						className: ke.a.modModeBannerWrapper
-					}, a.a.createElement(B.a, {
-						onIgnoreReports: le,
+						className: ye.a.modModeBannerWrapper
+					}, a.a.createElement(H.a, {
+						onIgnoreReports: de,
 						reportable: he
-					})), a.a.createElement(L.d, null))), C && a.a.createElement(Ie, {
+					})), a.a.createElement(F.d, null))), C && a.a.createElement(we, {
 						post: he,
-						scrollerItemRef: _e,
+						scrollerItemRef: Ce,
 						flairStyleTemplate: i,
 						shouldShowGalleryTileOption: Te,
 						isGalleryTileLayoutDefault: _
-					}), e === Le && a.a.createElement(K.a, {
+					}), e === Le && a.a.createElement(X.a, {
 						flairs: he.flair,
 						subredditId: he.belongsTo.id,
 						modalId: Le,
 						onFlairChanged: ie
 					}));
-					return a.a.createElement(ee.b, null, Ze)
+					return a.a.createElement(te.b, null, Ze)
 				}
 			}
-			const Ie = e => a.a.createElement(q.a, {
-					className: Object(l.a)(e.className, ke.a.expandedContentWrapper),
+			const we = e => a.a.createElement(G.a, {
+					className: Object(l.a)(e.className, ye.a.expandedContentWrapper),
 					flairStyleTemplate: e.flairStyleTemplate
 				}, e.post.crosspostRootId ? a.a.createElement("div", {
-					className: ke.a.crosspostMediaWrapper
-				}, we(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)) : we(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)),
-				we = (e, t, n, s) => a.a.createElement(J.a, {
+					className: ye.a.crosspostMediaWrapper
+				}, Te(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)) : Te(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)),
+				Te = (e, t, n, s) => a.a.createElement(Q.a, {
 					isExpando: !0,
 					isGalleryTileLayoutDefault: s,
 					isListing: !0,
@@ -8932,41 +8935,42 @@
 					showFull: !0,
 					showPromotedCTA: !0
 				}),
-				Te = e => a.a.createElement(o.a, {
+				Me = e => a.a.createElement(o.a, {
 					"data-click-id": "subreddit",
 					to: e.url
-				}, a.a.createElement(se.b, {
-					className: ke.a.subredditIcon,
+				}, a.a.createElement(ae.b, {
+					className: ye.a.subredditIcon,
 					subredditOrProfile: e
 				})),
-				Me = (e, t) => a.a.createElement("div", {
-					className: ke.a.responsiveMeta
-				}, a.a.createElement(le.b, {
+				Pe = (e, t) => a.a.createElement("div", {
+					className: ye.a.responsiveMeta
+				}, a.a.createElement(ce.b, {
 					isScoreHidden: e.scoreHidden,
 					score: e.score
-				}), a.a.createElement(le.c, null), Object(le.d)(e.numComments), a.a.createElement(le.c, null), t && a.a.createElement("a", {
+				}), a.a.createElement(ce.c, null), Object(ce.d)(e.numComments), a.a.createElement(ce.c, null), t && a.a.createElement("a", {
 					href: t.url
-				}, a.a.createElement(le.a, null, t.displayText)), e.isSponsored && [a.a.createElement(ne.a, {
+				}, a.a.createElement(ce.a, null, t.displayText)), e.isSponsored && [a.a.createElement(se.a, {
 					key: "label",
 					isSurveyAd: e.isSurveyAd
-				}), a.a.createElement(le.c, {
+				}), a.a.createElement(ce.c, {
 					key: "separator"
-				})], !e.isSponsored && a.a.createElement(le.a, null, " Posted by "), a.a.createElement($.b, {
-					post: e
+				})], !e.isSponsored && a.a.createElement(ce.a, null, " Posted by "), a.a.createElement(ee.b, {
+					post: e,
+					isDeleted: e.author === c.E
 				}));
-			t.default = Object(ie.b)(a.a.memo((function(e) {
-				const t = Object(ge.a)(),
-					n = Object(s.useMemo)(() => Ne(), []),
+			t.default = Object(de.b)(a.a.memo((function(e) {
+				const t = Object(fe.a)(),
+					n = Object(s.useMemo)(() => Se(), []),
 					o = Object(r.e)(s => n(s, {
 						...e,
 						...t
 					})),
 					i = Object(r.d)(),
-					d = Se(i, {
+					d = je(i, {
 						...e,
 						...t
 					});
-				return a.a.createElement(je, ye({}, e, t, o, d, {
+				return a.a.createElement(Ie, Oe({}, e, t, o, d, {
 					onFlairChanged: ({
 						previewFlair: t,
 						selectedTemplateId: n
@@ -8975,9 +8979,9 @@
 						previewFlair: t,
 						selectedTemplateId: n
 					}),
-					sendEvent: Object(c.b)(),
-					isOverlay: Object(be.a)(),
-					theme: Object(he.a)()
+					sendEvent: Object(m.b)(),
+					isOverlay: Object(he.a)(),
+					theme: Object(ge.a)()
 				}))
 			})))
 		},
@@ -27542,4 +27546,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e23235f74d9071b215c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a5a6b74c3d4d497dbbc8.js.map
