@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.1cc85abec6a05f5e27ca.js
-// Retrieved at 3/1/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.79a1b6ca08d13f3dc45a.js
+// Retrieved at 3/10/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -473,16 +473,18 @@
 		"./node_modules/@reddit/reddit-country-url-redirects/dist/esm/index.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return F
+				return z
 			})), n.d(t, "b", (function() {
 				return I
 			})), n.d(t, "c", (function() {
-				return g
+				return C
 			})), n.d(t, "d", (function() {
-				return L
+				return g
 			})), n.d(t, "e", (function() {
 				return U
 			})), n.d(t, "f", (function() {
+				return D
+			})), n.d(t, "g", (function() {
 				return A
 			}));
 			var r = {
@@ -667,41 +669,46 @@
 				});
 			const I = s,
 				A = O,
-				C = e => "" === e || "en" === e || "*" === e,
-				R = (e, t, n) => {
+				C = e => {
+					const t = [];
+					for (let n in e ? O : s) "en" != n && "default" != n && t.push(n);
+					return t
+				},
+				R = e => "" === e || "en" === e || "*" === e,
+				M = (e, t, n) => {
 					return !!n && (!(!e || t) || t in n && ("" === e || "*" === e || 2 == e.length && e in n[t]))
 				},
-				M = (e, t) => {
+				P = (e, t) => {
 					return !!t && (!!("" === e || "en" === e) || 2 == e.length && e in t)
 				},
-				P = e => _.includes(e) || _.includes(e.toLowerCase()),
-				N = e => (e.userIsAdmin = !!e.userIsAdmin, e.countrySitesAdminOnly = !!e.countrySitesAdminOnly, !e.enabledCountries && e.userIsAdmin ? e.enabledCountries = A : e.enabledCountries || (e.enabledCountries = I), e),
-				B = (e, t, n, r) => {
+				N = e => _.includes(e) || _.includes(e.toLowerCase()),
+				B = e => (e.userIsAdmin = !!e.userIsAdmin, e.countrySitesAdminOnly = !!e.countrySitesAdminOnly, !e.enabledCountries && e.userIsAdmin ? e.enabledCountries = A : e.enabledCountries || (e.enabledCountries = I), e),
+				L = (e, t, n, r) => {
 					if (!e) return !1;
 					r = r || "*";
-					const o = C(n = n || "*"),
+					const o = R(n = n || "*"),
 						i = n in v,
 						s = i && r in v[n],
 						a = e.toLowerCase() === t;
 					return !(!o || !a) || !(!s || !i) && e.toLowerCase() === v[n][r][t]
 				},
-				L = (e, t, n) => B(e, m.All, t, n),
-				U = (e, t, n) => B(e, m.Popular, t, n);
-			var D;
+				U = (e, t, n) => L(e, m.All, t, n),
+				D = (e, t, n) => L(e, m.Popular, t, n);
+			var F;
 			! function(e) {
 				e.hot = "hot", e.new = "new", e.top = "top", e.controversial = "controversial", e.rising = "rising", e.best = "best"
-			}(D || (D = {}));
-			const F = (e, t) => {
-					const n = (t = N(t)).countrySitesAdminOnly && t.userIsAdmin;
+			}(F || (F = {}));
+			const z = (e, t) => {
+					const n = (t = B(t)).countrySitesAdminOnly && t.userIsAdmin;
 					if (!t.countrySitesEnabled) return e.hardcodedPath;
 					if (!e.permalink && !t.userIsAdmin) return e.hardcodedPath;
 					let r = e.hardcodedPath;
-					if (e.permalink && (r = e.permalink), !R(e.countryCode, e.languageCode, t.enabledCountries)) return r;
-					if (!M(e.languageCode, t.enabledCountries)) return r;
-					const o = e.subredditName && P(e.subredditName);
-					return n && !o ? r : t.userIsAdmin ? z(r, e.countryCode, e.languageCode) : r
+					if (e.permalink && (r = e.permalink), !M(e.countryCode, e.languageCode, t.enabledCountries)) return r;
+					if (!P(e.languageCode, t.enabledCountries)) return r;
+					const o = e.subredditName && N(e.subredditName);
+					return n && !o ? r : t.userIsAdmin ? q(r, e.countryCode, e.languageCode) : r
 				},
-				z = (e, t, n) => {
+				q = (e, t, n) => {
 					const r = `/${t}/${n}`,
 						o = `/${t}`,
 						i = e.startsWith(o),
@@ -35141,4 +35148,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.1cc85abec6a05f5e27ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.79a1b6ca08d13f3dc45a.js.map

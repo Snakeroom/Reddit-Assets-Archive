@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.9ccd496a23502a8dce26.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.528b2a47fe30ae799662.js
+// Retrieved at 3/10/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -3313,7 +3313,7 @@
 						let e;
 						e = Ge ? Xe.powerups : Object(v.e)(null == Ye ? void 0 : Ye.subredditInfoByName, null == Ye ? void 0 : Ye.identity);
 						const t = (null === (m = null === (f = null == Xe ? void 0 : Xe.subredditAboutInfo) || void 0 === f ? void 0 : f[nt]) || void 0 === m ? void 0 : m.detectedLanguage) || (null === (_ = null == Ye ? void 0 : Ye.subredditInfoByName) || void 0 === _ ? void 0 : _.detectedLanguage);
-						Object(Je.d)(de) && t && Object(We.c)(de) && await Object(ze.a)(t, d), Object(v.b)(d, nt, e), Ge ? d(Object(E.n)(nt, Xe.predictionTournaments || [])) : (null == Ye ? void 0 : Ye.subredditInfoByName) && d(Object(E.n)(nt, Ye.subredditInfoByName.predictionTournaments || [])), Object(Pe.h)(c(), {
+						Object(Je.d)(de) && t && Object(We.e)(de) && await Object(ze.a)(t, d), Object(v.b)(d, nt, e), Ge ? d(Object(E.n)(nt, Xe.predictionTournaments || [])) : (null == Ye ? void 0 : Ye.subredditInfoByName) && d(Object(E.n)(nt, Ye.subredditInfoByName.predictionTournaments || [])), Object(Pe.h)(c(), {
 							subredditId: nt
 						}) && Object(Ne.a)(c())
 					}
@@ -13666,4 +13666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.9ccd496a23502a8dce26.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.528b2a47fe30ae799662.js.map

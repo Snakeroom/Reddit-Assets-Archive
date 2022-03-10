@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage.00a7009d3a25ce674076.js
-// Retrieved at 3/10/2022, 10:00:26 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage.e87a6f3b70efa28bbcf0.js
+// Retrieved at 3/10/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage"], {
 		"./src/lib/pageTitle/helpers.ts": function(e, t, s) {
@@ -17,7 +17,7 @@
 					languageCode: s
 				} = Object(i.b)(e), a = Object(d.i)(e) || r.DEFAULT_LOCALE, c = Object(n.isPseudoLocale)(a) ? r.DEFAULT_LOCALE : a;
 				if (s) {
-					const e = Object(o.c)(s, c.substring(0, 2));
+					const e = Object(o.d)(s, c.substring(0, 2));
 					return t + (e ? ` - ${e}` : "")
 				}
 				return t
@@ -135,7 +135,7 @@
 						key: e
 					}));
 					const p = await m(i(), l);
-					Object(P.d)(d) && t && Object(L.c)(d) && await Object(h.a)(t, r);
+					Object(P.d)(d) && t && Object(L.e)(d) && await Object(h.a)(t, r);
 					const {
 						data: g
 					} = p.body, b = `error-${e}`;
@@ -318,4 +318,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage.00a7009d3a25ce674076.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage.e87a6f3b70efa28bbcf0.js.map

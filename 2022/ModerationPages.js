@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8392af773bb3e4d2a816.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e23235f74d9071b215c3.js
+// Retrieved at 3/10/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -7907,8 +7907,8 @@
 				hasSecondaryTags: L.m,
 				geoPlace: (e, t) => e.tags.models.geoPlaces[t.subredditId],
 				subredditCountrySite: (e, t) => ((e, t) => e.subreddits.countrySiteSettings[t])(e, t.subredditId),
-				subredditCountryEditEnabled: (e, t) => Object(U.d)(e),
-				subredditLanguageEditEnabled: (e, t) => Object(U.e)(e)
+				subredditCountryEditEnabled: (e, t) => Object(U.f)(e),
+				subredditLanguageEditEnabled: (e, t) => Object(U.g)(e)
 			}), ze = Object(i.b)(We, (e, {
 				subredditId: t
 			}) => ({
@@ -27542,4 +27542,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8392af773bb3e4d2a816.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e23235f74d9071b215c3.js.map

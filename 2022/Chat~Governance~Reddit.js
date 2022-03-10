@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e36227fc9c8909fc8a25.js
-// Retrieved at 3/10/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8655872b99d3b9124c59.js
+// Retrieved at 3/10/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("159670"),
+				buildNumber: Object(r.c)("159676"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1646928981"),
+				buildTimestamp: Object(r.b)("1646932723"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6067,14 +6067,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c5ef08bedc831165aa185154441bf3547f952dbf4-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cc0c5d8cec08f8e52e8b5e53cb564fa7aa16d5744-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "5ef08bedc831165aa185154441bf3547f952dbf4-production",
+						release: "c0c5d8cec08f8e52e8b5e53cb564fa7aa16d5744-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6275,11 +6275,11 @@
 				o = [...s, r.d.Mod, r.d.Friends, r.d.Topic].concat(["random", "randnsfw", "myrandom"]),
 				d = (e, t) => {
 					const i = e.toLowerCase();
-					return (null == t ? void 0 : t.languageCode) ? Object(n.e)(i, (null == t ? void 0 : t.languageCode) || "", (null == t ? void 0 : t.countryCode) || "") : i === r.g
+					return (null == t ? void 0 : t.languageCode) ? Object(n.f)(i, (null == t ? void 0 : t.languageCode) || "", (null == t ? void 0 : t.countryCode) || "") : i === r.g
 				},
 				a = (e, t) => {
 					const i = e.toLowerCase();
-					return (null == t ? void 0 : t.languageCode) ? Object(n.d)(i, (null == t ? void 0 : t.languageCode) || "", (null == t ? void 0 : t.countryCode) || "") : i === r.a
+					return (null == t ? void 0 : t.languageCode) ? Object(n.e)(i, (null == t ? void 0 : t.languageCode) || "", (null == t ? void 0 : t.countryCode) || "") : i === r.a
 				};
 			t.a = (e, t) => {
 				const i = e.toLowerCase(),
@@ -6591,7 +6591,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "5ef08bedc831165aa185154441bf3547f952dbf4-production",
+						releaseClient: "c0c5d8cec08f8e52e8b5e53cb564fa7aa16d5744-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -33435,14 +33435,16 @@
 				o = i("./src/reddit/selectors/experiments/countrySites.ts"),
 				d = i("./src/reddit/selectors/user.ts");
 			const a = e => {
-					const t = Object(o.b)(e),
-						i = Object(o.a)(e),
-						s = !Object(r.b)() || Object(d.L)(e);
+					const {
+						currentPage: t
+					} = e.platform, {
+						languageCode: i = ""
+					} = (null == t ? void 0 : t.urlParams) || {}, s = Object(o.c)(e), a = Object(o.b)(e) && Object(o.d)(e, i), l = !Object(r.b)() || Object(d.L)(e);
 					return {
-						countrySitesEnabled: i,
-						countrySitesAdminOnly: t,
-						enabledCountries: s ? n.f : n.b,
-						userIsAdmin: s
+						countrySitesEnabled: a,
+						countrySitesAdminOnly: s,
+						enabledCountries: l ? n.g : n.b,
+						userIsAdmin: l
 					}
 				},
 				l = e => {
@@ -33464,7 +33466,7 @@
 				},
 				u = e => !!e && s.c.includes(e.toLowerCase()),
 				c = e => {
-					const t = Object(o.b)(e),
+					const t = Object(o.c)(e),
 						i = !Object(r.b)() || Object(d.L)(e);
 					return t && i
 				}
@@ -33516,16 +33518,20 @@
 		},
 		"./src/reddit/selectors/experiments/countrySites.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "a", (function() {
+			i.d(t, "b", (function() {
 				return o
-			})), i.d(t, "b", (function() {
-				return d
 			})), i.d(t, "c", (function() {
+				return d
+			})), i.d(t, "a", (function() {
 				return a
 			})), i.d(t, "d", (function() {
 				return l
 			})), i.d(t, "e", (function() {
 				return u
+			})), i.d(t, "f", (function() {
+				return c
+			})), i.d(t, "g", (function() {
+				return _
 			}));
 			var n = i("./node_modules/reselect/es/index.js"),
 				r = i("./src/reddit/constants/experiments.ts"),
@@ -33538,15 +33544,20 @@
 					experimentEligibilitySelector: o,
 					experimentName: r.K
 				}), e => e === r.Zc),
-				a = Object(n.a)(e => Object(s.c)(e, {
+				a = (e, t) => t.filter(t => l(e, t)),
+				l = Object(n.a)((e, t) => Object(s.c)(e, {
+					experimentEligibilitySelector: s.a,
+					experimentName: `i18n_site_enabled_${t}`
+				}), e => e === r.Zc),
+				u = Object(n.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: r.Le
 				}), e => e === r.Zc),
-				l = Object(n.a)(e => Object(s.c)(e, {
+				c = Object(n.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: r.Oe
 				}), e => e === r.Zc),
-				u = Object(n.a)(e => Object(s.c)(e, {
+				_ = Object(n.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: r.Pe
 				}), e => e === r.Zc)
@@ -40005,7 +40016,7 @@
 						case m.Nb.INBOX_PAGES:
 							return "messages";
 						case m.Nb.INTERNATIONAL_SITE_PAGE:
-							return `lang_site_${e.match.params.countryCode}`;
+							return `lang_site_${e.match.params.languageCode}`;
 						default:
 							return
 					}
@@ -46977,4 +46988,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e36227fc9c8909fc8a25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.8655872b99d3b9124c59.js.map
