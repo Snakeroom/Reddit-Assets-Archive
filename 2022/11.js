@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/11.506622d33ae1ac2afb3e.js
-// Retrieved at 3/10/2022, 10:00:26 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/11.3306fdcc8e2e234892da.js
+// Retrieved at 3/10/2022, 4:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[11], {
 		"./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/index.ts": function(e, t, r) {
@@ -18,14 +18,14 @@
 				a = r("./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts"),
 				c = r("./src/reddit/helpers/graphql/normalizeFlairFromGql/index.ts"),
 				m = r("./src/reddit/helpers/graphql/normalizePostFromGql/index.ts");
-			const p = {
+			const l = {
 					[s.rb.Edited]: u.p.Edited,
 					[s.rb.Modqueue]: u.p.Mod,
 					[s.rb.Reports]: u.p.Reported,
 					[s.rb.Spam]: u.p.Removed,
 					[s.rb.Unmoderated]: u.p.Unmoderated
 				},
-				l = {
+				p = {
 					comments: u.o.Comment,
 					links: u.o.Post
 				};
@@ -37,7 +37,7 @@
 			}) {
 				const s = e();
 				let u, a;
-				return r.only && (u = l[r.only]), r.after && (a = function(e, t) {
+				return r.only && (u = p[r.only]), r.after && (a = function(e, t) {
 					const r = Object(n.a)(t) ? Object(i.G)(e, {
 						postId: t
 					}) : Object(d.b)(e, {
@@ -45,7 +45,7 @@
 					});
 					if (r) return Object(o.btoa)(`${r.id}|${r.created}`)
 				}(s, r.after)), {
-					queueType: p[t],
+					queueType: l[t],
 					...!!u && {
 						itemTypes: u
 					},
@@ -97,7 +97,9 @@
 						} = e, u = d ? null === (r = Object(c.a)(d)) || void 0 === r ? void 0 : r[0] : null;
 						t.authorFlair[i] = {
 							...t.authorFlair[i],
-							[n.name]: u
+							...(null == n ? void 0 : n.name) ? {
+								[null == n ? void 0 : n.name]: u
+							} : {}
 						};
 						const m = [];
 						o.modReports.forEach(e => {
@@ -149,4 +151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/11.506622d33ae1ac2afb3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/11.3306fdcc8e2e234892da.js.map
