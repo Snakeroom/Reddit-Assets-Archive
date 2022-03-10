@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.9fedcbef94b20ba8c151.js
-// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.7b948e8f344a5b3ed3e2.js
+// Retrieved at 3/10/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -5473,11 +5473,10 @@
 				onChange: r,
 				onFormSubmit: a,
 				onFocusSearchBar: i,
-				onKeyDown: c,
-				toggleDropdownAndGetTrending: d
+				onKeyDown: c
 			}) => {
-				const l = m.a.useContext(g.a),
-					u = n && s ? o.fbt._("Search within {subredditName}", [o.fbt._param("subredditName", s.displayText)], {
+				const d = m.a.useContext(g.a),
+					l = n && s ? o.fbt._("Search within {subredditName}", [o.fbt._param("subredditName", s.displayText)], {
 						hk: "2B6J3t"
 					}) : o.fbt._("Search all of Reddit", null, {
 						hk: "1Fi1f5"
@@ -5485,7 +5484,7 @@
 				return m.a.createElement("form", {
 					action: "/search/",
 					autoComplete: "off",
-					className: Object(v.a)(wr.a.searchBar, l && wr.a.searchBarExp),
+					className: Object(v.a)(wr.a.searchBar, d && wr.a.searchBarExp),
 					method: "get",
 					onSubmit: a,
 					onFocus: i,
@@ -5501,7 +5500,7 @@
 					className: wr.a.icon
 				})), m.a.createElement(To.a, {
 					"aria-live": "assertive"
-				}, u), n && s && m.a.createElement(Sr, {
+				}, l), n && s && m.a.createElement(Sr, {
 					subreddit: s
 				})), m.a.createElement("input", {
 					id: "header-search-bar",
@@ -5511,7 +5510,6 @@
 						var t;
 						r((null === (t = null == e ? void 0 : e.current) || void 0 === t ? void 0 : t.value) || "")
 					}), 200),
-					onClick: d,
 					onKeyDown: c,
 					placeholder: o.fbt._("Search Reddit", null, {
 						hk: "34Vfom"
@@ -5569,7 +5567,7 @@
 					Q = Object(Bo.a)(q),
 					K = Object(Bo.a)(B),
 					z = ((null === (t = j.current) || void 0 === t ? void 0 : t.value) || "").trim(),
-					J = pe(z),
+					J = be(z),
 					Y = k ? Object(rt.v)(k) : n ? Object(rt.v)(n) : void 0,
 					Z = f[z],
 					X = Object(qo.e)({
@@ -5651,12 +5649,18 @@
 							const e = Object(jt.N)(M.id);
 							e.length > 0 && (x(T ? e : []), l([...e, ...B]))
 						}
-						N || ((() => S(Object(Wo.l)()))(), _(Object(ar.u)(X, null != n ? n : void 0, Object(lr.b)({
-							pageLayer: n
-						}))))
+					},
+					pe = e => {
+						!(!I || !I[e]) || (e ? (async e => {
+							f[e] || (f[e] = !0, O({
+								...f
+							}), await S(Yo(e)), f[e] = !1, O({
+								...f
+							}))
+						})(e) : oe())
 					};
 
-				function pe(e) {
+				function be(e) {
 					const t = U && U.icon ? U.icon.url : "",
 						n = null == U ? void 0 : U.displayText,
 						s = !!U && U.isNSFW,
@@ -5683,13 +5687,7 @@
 					inputRef: j,
 					onChange: e => {
 						const t = e.trim();
-						pr.a.update(br.a.Typeahead), ee(t), !(!I || !I[t]) || (t ? (async e => {
-							f[e] || (f[e] = !0, O({
-								...f
-							}), await S(Yo(e)), f[e] = !1, O({
-								...f
-							}))
-						})(t) : oe())
+						pr.a.update(br.a.Typeahead), ee(t), pe(t)
 					},
 					searchQuery: z,
 					onFormSubmit: e => {
@@ -5703,7 +5701,7 @@
 								},
 								l = {},
 								u = !0;
-							if (y && y.searchQuery === z ? ((c = y).id || (c.id = Go()()), c.section === dr.c.recent ? de(o, c, i) : c.section === dr.c.typeahead ? (l = Object(er.b)(), u = !1, le(o, c, i, d.filter(e => e.isSubreddit))) : ce(o, o, rt.c.Search, ir.a.RECENT)) : (c = pe(o), _(Object(ir.m)(rt.a.FullSearchButton, Object(qo.e)({
+							if (y && y.searchQuery === z ? ((c = y).id || (c.id = Go()()), c.section === dr.c.recent ? de(o, c, i) : c.section === dr.c.typeahead ? (l = Object(er.b)(), u = !1, le(o, c, i, d.filter(e => e.isSubreddit))) : ce(o, o, rt.c.Search, ir.a.RECENT)) : (c = be(o), _(Object(ir.m)(rt.a.FullSearchButton, Object(qo.e)({
 									q: z
 								}), F, br.a.Typeahead, n || void 0))), re(c), te(u), !c.searchQuery) return;
 							const m = Object(or.a)({
@@ -5718,7 +5716,9 @@
 						})(e)
 					},
 					onFocusSearchBar: () => {
-						Object(bo.c)(bo.a.SearchResults) || Object(bo.e)(bo.a.SearchResults), pr.a.update(br.a.Typeahead), _(Object(ir.m)(rt.a.SearchBar, X, F, br.a.Typeahead, n || void 0)), me()
+						Object(bo.c)(bo.a.SearchResults) || Object(bo.e)(bo.a.SearchResults), pr.a.update(br.a.Typeahead), _(Object(ir.m)(rt.a.SearchBar, X, F, br.a.Typeahead, n || void 0)), N || ((() => S(Object(Wo.l)()))(), _(Object(ar.u)(X, null != n ? n : void 0, Object(lr.b)({
+							pageLayer: n
+						})))), pe(z)
 					},
 					onKeyDown: e => {
 						if (e.key === po.b.Escape || e.key === po.b.Tab) te();
@@ -5733,8 +5733,7 @@
 						} else e.key === po.b.Backspace && !z && F && R && (_(() => Object(ir.f)(U)), (() => S(Object(Wo.j)()))())
 					},
 					showCommunityPill: F,
-					subreddit: U,
-					toggleDropdownAndGetTrending: me
+					subreddit: U
 				}), m.a.createElement($o.c, {
 					container: P.current,
 					focusedItemIndex: i,
@@ -19068,4 +19067,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9fedcbef94b20ba8c151.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.7b948e8f344a5b3ed3e2.js.map
