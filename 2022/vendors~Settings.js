@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Settings.3e6a61a1e529cc6daeff.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Settings.71f28c4c637cd926b6dd.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Settings"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -441,6 +441,14 @@
 		"./node_modules/lodash/range.js": function(e, t, r) {
 			var n = r("./node_modules/lodash/_createRange.js")();
 			e.exports = n
+		},
+		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
+			var n = r("./node_modules/lodash/toString.js"),
+				o = 0;
+			e.exports = function(e) {
+				var t = ++o;
+				return n(e) + t
+			}
 		},
 		"./node_modules/qrcode/lib/browser.js": function(e, t, r) {
 			var n = r("./node_modules/qrcode/lib/can-promise.js"),
@@ -1611,4 +1619,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Settings.3e6a61a1e529cc6daeff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Settings.71f28c4c637cd926b6dd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.7bd52ccbb4674d7028c2.js
-// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.fa19ba6d1a0559aa65e3.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1186,7 +1186,7 @@
 			var V = r("./src/reddit/components/PowerupsSidebar/common/utils.ts"),
 				W = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/PowerupsCount/index.m.less"),
 				Q = r.n(W);
-			var J = function(e) {
+			var X = function(e) {
 					const {
 						className: t,
 						onChange: r,
@@ -1214,8 +1214,8 @@
 						onClick: () => i(1)
 					})))
 				},
-				X = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
-				Y = r.n(X);
+				Y = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
+				J = r.n(Y);
 			const {
 				fbt: K
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1232,20 +1232,20 @@
 					return a.a.createElement("div", {
 						className: r
 					}, a.a.createElement("div", {
-						className: Y.a.titleRow
+						className: J.a.titleRow
 					}, a.a.createElement("span", null, K._("Powerups", null, {
 						hk: "DrcXp"
 					})), a.a.createElement("span", null, n < o ? `${n}/${o}` : n)), a.a.createElement("div", {
-						className: Y.a.barRow
+						className: J.a.barRow
 					}, a.a.createElement("div", {
-						className: Y.a.track
+						className: J.a.track
 					}), a.a.createElement("div", {
-						className: Y.a.progress,
+						className: J.a.progress,
 						style: {
 							width: `${100*s}%`
 						}
 					}), t && a.a.createElement("div", {
-						className: Y.a.additionalProgress,
+						className: J.a.additionalProgress,
 						style: {
 							width: `${100*(c-s)}%`,
 							left: `${100*s}%`
@@ -1274,7 +1274,7 @@
 					className: ee.a.bar,
 					count: s.count,
 					maxCount: d
-				}), a.a.createElement(J, {
+				}), a.a.createElement(X, {
 					className: ee.a.count,
 					style: {
 						left: `${100*u}%`
@@ -2682,9 +2682,9 @@
 				s = r("./src/reddit/helpers/trackers/gild.ts");
 			const c = e => ({
 					...a.o(e),
-					screen: a.bb(e),
-					subreddit: a.jb(e),
-					userSubreddit: a.tb(e)
+					screen: a.ab(e),
+					subreddit: a.ib(e),
+					userSubreddit: a.sb(e)
 				}),
 				i = e => ({
 					awardId: e.id,
@@ -2778,8 +2778,8 @@
 					action: "click",
 					noun: r,
 					goldPurchase: i(e),
-					profile: a.T(n, t),
-					subreddit: a.kb(n, t)
+					profile: a.S(n, t),
+					subreddit: a.jb(n, t)
 				}),
 				h = (e, t) => b(e, t, "disable_in_community"),
 				g = (e, t) => b(e, t, "enable_in_community")
@@ -2868,10 +2868,10 @@
 					...a.o(e),
 					comment: t ? a.i(e, t) : void 0,
 					correlationId: Object(i.b)(e) || Object(s.e)(s.a.GildingFlow, !1),
-					post: t ? a.J(e, t) : void 0,
-					screen: a.bb(e),
-					subreddit: a.jb(e),
-					userSubreddit: a.tb(e)
+					post: t ? a.I(e, t) : void 0,
+					screen: a.ab(e),
+					subreddit: a.ib(e),
+					userSubreddit: a.sb(e)
 				}),
 				m = e => t => ({
 					...u(t, e),
@@ -3100,9 +3100,9 @@
 						...i.o(e),
 						comment: r ? i.i(e, r) : null,
 						correlationId: c.r(e) || Object(m.e)(m.a.GoldPayment, !1),
-						post: r ? i.J(e, r) : null,
-						screen: i.bb(e),
-						subreddit: r ? i.jb(e) : null,
+						post: r ? i.I(e, r) : null,
+						screen: i.ab(e),
+						subreddit: r ? i.ib(e) : null,
 						goldPurchase: {
 							...h ? Object(f.a)(h) : null,
 							type: y,
@@ -3727,4 +3727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.7bd52ccbb4674d7028c2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.fa19ba6d1a0559aa65e3.js.map

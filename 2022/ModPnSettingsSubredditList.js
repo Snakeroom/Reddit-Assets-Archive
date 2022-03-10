@@ -1,32 +1,48 @@
-// https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.7a624f815c0af9aa0372.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.cf0afeb873e93bde85ae.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModPnSettingsSubredditList"], {
+		"./node_modules/lodash/times.js": function(e, t, n) {
+			var i = n("./node_modules/lodash/_baseTimes.js"),
+				o = n("./node_modules/lodash/_castFunction.js"),
+				s = n("./node_modules/lodash/toInteger.js"),
+				d = 9007199254740991,
+				a = 4294967295,
+				r = Math.min;
+			e.exports = function(e, t) {
+				if ((e = s(e)) < 1 || e > d) return [];
+				var n = a,
+					c = r(e, a);
+				t = o(t), e -= a;
+				for (var l = i(c, t); ++n < e;) t(n);
+				return l
+			}
+		},
 		"./src/reddit/components/Settings/Notifications/LoadingSection.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return r
+				return c
 			}));
 			var i = n("./node_modules/lodash/times.js"),
 				o = n.n(i),
 				s = n("./node_modules/react/index.js"),
 				d = n.n(s),
 				a = n("./src/reddit/components/Settings/Notifications/index.m.less"),
-				c = n.n(a);
-			const r = ({
+				r = n.n(a);
+			const c = ({
 				rowsCount: e
 			}) => d.a.createElement("div", {
 				role: "alert",
 				"aria-busy": "true"
 			}, d.a.createElement("div", {
-				className: c.a.loadingSectionHeader
+				className: r.a.loadingSectionHeader
 			}), o()(e, e => d.a.createElement("div", {
-				className: c.a.loadingToggleWrapper,
+				className: r.a.loadingToggleWrapper,
 				key: e
 			}, d.a.createElement("span", {
-				className: c.a.loadingToggleName
+				className: r.a.loadingToggleName
 			}), d.a.createElement("span", {
-				className: c.a.loadingToggleButton
+				className: r.a.loadingToggleButton
 			}))))
 		},
 		"./src/reddit/components/Settings/Notifications/ModPnSettingsSubredditList/index.m.less": function(e, t, n) {
@@ -42,37 +58,37 @@
 		"./src/reddit/components/Settings/Notifications/ModPnSettingsSubredditList/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return u
+				return g
 			}));
 			var i = n("./node_modules/react/index.js"),
 				o = n.n(i),
 				s = n("./node_modules/react-redux/es/index.js"),
 				d = n("./src/reddit/actions/moderatingSubreddits.ts"),
 				a = n("./src/reddit/components/Settings/Notifications/LoadingSection.tsx"),
-				c = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
-				r = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				r = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
+				c = n("./src/reddit/components/SubredditIcon/index.tsx"),
 				l = n("./src/reddit/selectors/user.ts"),
 				m = n("./src/reddit/components/Settings/Notifications/ModPnSettingsSubredditList/index.m.less"),
-				g = n.n(m);
+				u = n.n(m);
 
-			function u(e) {
+			function g(e) {
 				const {
 					handleModPnSubredditClick: t
-				} = e, n = Object(s.d)(), m = Object(s.e)(l.j), [u, S] = Object(i.useState)(!0);
+				} = e, n = Object(s.d)(), m = Object(s.e)(l.j), [g, _] = Object(i.useState)(!0);
 				return Object(i.useEffect)(() => {
 					n(Object(d.b)())
 				}, [n]), Object(i.useEffect)(() => {
-					m.length > 0 && S(!1)
-				}, [m]), t ? u ? o.a.createElement(a.a, {
+					m.length > 0 && _(!1)
+				}, [m]), t ? g ? o.a.createElement(a.a, {
 					rowsCount: 5
 				}) : o.a.createElement(o.a.Fragment, null, m.map(e => o.a.createElement("div", {
-					className: g.a.ModPnSettingLink,
+					className: u.a.ModPnSettingLink,
 					key: e.id
-				}, o.a.createElement(r.b, {
+				}, o.a.createElement(c.b, {
 					iconUrl: e.communityIcon,
-					className: g.a.CommunityIcon
-				}), o.a.createElement(c.a, {
-					className: g.a.ActionLinkSetting,
+					className: u.a.CommunityIcon
+				}), o.a.createElement(r.a, {
+					className: u.a.ActionLinkSetting,
 					label: e.displayText,
 					onClick: () => t(e.id, e.name),
 					color: "none"
@@ -96,4 +112,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.7a624f815c0af9aa0372.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModPnSettingsSubredditList.cf0afeb873e93bde85ae.js.map

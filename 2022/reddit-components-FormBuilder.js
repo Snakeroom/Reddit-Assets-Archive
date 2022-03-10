@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-FormBuilder.53fc31e44939dd2cbbc2.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-FormBuilder.19ba6c38d38f942e53a8.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-FormBuilder"], {
 		"./src/reddit/components/FormBuilder/FormBuilderHeader/index.m.less": function(e, t, n) {
@@ -154,11 +154,11 @@
 				}))
 			}
 			var F = n("./node_modules/lodash/get.js"),
-				E = n.n(F),
-				S = n("./node_modules/lodash/isString.js"),
-				g = n.n(S),
-				b = n("./src/reddit/components/FormBuilder/helpers/index.m.less"),
-				B = n.n(b);
+				S = n.n(F),
+				E = n("./node_modules/lodash/isString.js"),
+				b = n.n(E),
+				B = n("./src/reddit/components/FormBuilder/helpers/index.m.less"),
+				g = n.n(B);
 			const k = (e, t) => {
 					const {
 						args: n,
@@ -166,7 +166,7 @@
 						ref: o
 					} = e;
 					if ("computed" === r && n) {
-						const r = n.map(e => "ref" === e.$type ? E()(t, e.ref) : e);
+						const r = n.map(e => "ref" === e.$type ? S()(t, e.ref) : e);
 						switch (e.function) {
 							case "neq":
 								return String(r[0]) !== String(r[1]);
@@ -174,7 +174,7 @@
 							default:
 								return String(r[0]) === String(r[1])
 						}
-					} else if ("ref" === r && o) return E()(t, o);
+					} else if ("ref" === r && o) return S()(t, o);
 					return !1
 				},
 				_ = e => l.a.createElement(l.a.Fragment, null, e.map(e => {
@@ -183,7 +183,7 @@
 							return l.a.createElement(a.Fragment, {
 								key: e.text
 							}, l.a.createElement("a", {
-								className: B.a.link,
+								className: g.a.link,
 								href: e.linkTo,
 								target: "_blank",
 								rel: "noopener noreferrer"
@@ -193,11 +193,11 @@
 							return l.a.createElement(a.Fragment, {
 								key: e.text
 							}, l.a.createElement("span", {
-								className: e.emphasis && B.a[`textEmphasis-${e.emphasis}`]
+								className: e.emphasis && g.a[`textEmphasis-${e.emphasis}`]
 							}, e.text), " ")
 					}
 				})),
-				w = (e, t) => {
+				W = (e, t) => {
 					if ("computed" === e.$type && "conditionalSelect" === e.function && e.conditions && e.values) {
 						const n = e.conditions;
 						for (const [r, o] of n.entries())
@@ -205,14 +205,14 @@
 					}
 					return e
 				},
-				W = (e, t) => w(e, t),
-				D = (e, t) => w(e, t),
-				y = (e, t) => w(e, t),
-				T = (e, t) => {
+				w = (e, t) => W(e, t),
+				D = (e, t) => W(e, t),
+				T = (e, t) => W(e, t),
+				I = (e, t) => {
 					switch (e.actionType) {
 						case "formClose":
 							const n = {};
-							return e.args.blockAuthor && (n.blockAuthor = E()(t.values, e.args.blockAuthor.ref)), {
+							return e.args.blockAuthor && (n.blockAuthor = S()(t.values, e.args.blockAuthor.ref)), {
 								formClose: !0,
 								...n
 							};
@@ -226,14 +226,14 @@
 							} = e.args;
 							let s = r;
 							for (const i of o) {
-								const n = E()(t.values, e.args[i].ref);
+								const n = S()(t.values, e.args[i].ref);
 								s = s.replaceAll(`%(${i})s`, n)
 							}
 							return window.open(s), {
 								formClose: !0
 							};
 						case "flow":
-							return "SELF_HARM" === E()(t.values, e.args[0].ref) ? {
+							return "SELF_HARM" === S()(t.values, e.args[0].ref) ? {
 								openCtlFlow: !0
 							} : void 0;
 						case "setState":
@@ -242,15 +242,15 @@
 								key: a, value: l
 							} = e.args;
 							if ("computed" === l.$type) {
-								const e = E()(t.values, l.args.value.ref),
+								const e = S()(t.values, l.args.value.ref),
 									n = l.args.options.filter(t => t.case === e)[0].value;
 								return t.setFieldValue(a, n)
 							}
-							return "ref" === l.$type ? t.setFieldValue(a, E()(t.values, l.ref)) : g()(l) ? t.setFieldValue(a, l) : void 0
+							return "ref" === l.$type ? t.setFieldValue(a, S()(t.values, l.ref)) : b()(l) ? t.setFieldValue(a, l) : void 0
 					}
 				};
-			var I = n("./src/reddit/components/FormBuilder/components/Button/index.m.less"),
-				L = n.n(I);
+			var y = n("./src/reddit/components/FormBuilder/components/Button/index.m.less"),
+				L = n.n(y);
 			const A = u.a.button("ButtonWrapper", L.a);
 
 			function R(e) {
@@ -264,21 +264,21 @@
 					onSubmitDataUpdate: i,
 					onOpenCtlFlow: c,
 					onBlockAuthor: p
-				} = e, u = !s || k(s, o.values), d = !0 === r || !!r && k(y(r, o), o.values), m = n ? D(n, o) : null, f = W(t, o);
+				} = e, u = !s || k(s, o.values), d = !0 === r || !!r && k(T(r, o), o.values), m = n ? D(n, o) : null, f = w(t, o);
 				return u ? l.a.createElement(A, {
 					type: "button",
 					onClick: () => {
 						if (!n) return;
-						const e = T(m, o);
+						const e = I(m, o);
 						(null == e ? void 0 : e.formClose) ? ((null == e ? void 0 : e.blockAuthor) && p && p(), a()) : (null == e ? void 0 : e.formSubmit) && i ? i(e.data, o.submitForm) : (null == e ? void 0 : e.openCtlFlow) && c && c()
 					},
 					disabled: d
 				}, f) : null
 			}
-			var P = n("./src/reddit/components/FormBuilder/components/ButtonBar/index.m.less"),
-				U = n.n(P);
-			const j = u.a.div("ButtonBarWrapper", U.a),
-				N = u.a.div("ButtonBarButton", U.a);
+			var U = n("./src/reddit/components/FormBuilder/components/ButtonBar/index.m.less"),
+				P = n.n(U);
+			const j = u.a.div("ButtonBarWrapper", P.a),
+				N = u.a.div("ButtonBarButton", P.a);
 
 			function V(e) {
 				const {
@@ -294,7 +294,7 @@
 					};
 					return l.a.createElement(N, {
 						key: e.value,
-						className: e.value === a.value ? U.a.isSelected : ""
+						className: e.value === a.value ? P.a.isSelected : ""
 					}, l.a.createElement(r.a, {
 						type: "checkbox",
 						id: e.value,
@@ -305,7 +305,7 @@
 					}), l.a.createElement("label", {
 						htmlFor: e.value,
 						style: t,
-						className: e.icon ? U.a.withIcon : ""
+						className: e.icon ? P.a.withIcon : ""
 					}, e.label))
 				}))
 			}
@@ -322,7 +322,7 @@
 				} = e;
 				if (!(!r || k(r, o))) return null;
 				let s, a;
-				return s = "ref" === t.$type ? t.ref ? E()(o.values, t.ref) : t.value ? E()(o.values, t.value) : null : t.value, a = "ref" === n.$type ? n.ref ? E()(o.values, n.ref) : n.value ? E()(o.values, n.value) : null : n.value, l.a.createElement(M, null, t && l.a.createElement("h4", null, s), n && l.a.createElement("p", null, a))
+				return s = "ref" === t.$type ? t.ref ? S()(o.values, t.ref) : t.value ? S()(o.values, t.value) : null : t.value, a = "ref" === n.$type ? n.ref ? S()(o.values, n.ref) : n.value ? S()(o.values, n.value) : null : n.value, l.a.createElement(M, null, t && l.a.createElement("h4", null, s), n && l.a.createElement("p", null, a))
 			}
 			var Y = n("./src/reddit/icons/svgs/Info/index.tsx"),
 				G = n("./src/reddit/components/FormBuilder/components/InfoTooltip/index.m.less"),
@@ -405,7 +405,7 @@
 			const xe = u.a.div("RadioList", ve.a),
 				Fe = u.a.div("RadioListButton", ve.a);
 
-			function Ee(e) {
+			function Se(e) {
 				const {
 					options: t,
 					value: n,
@@ -413,7 +413,7 @@
 					action: s,
 					onCloseModal: a,
 					onSubmitDataUpdate: i
-				} = e, c = "ref" === n.$type ? n.ref : n, p = E()(o.values, c);
+				} = e, c = "ref" === n.$type ? n.ref : n, p = S()(o.values, c);
 				return l.a.createElement(xe, null, t.map(e => l.a.createElement(Fe, {
 					key: e.value
 				}, l.a.createElement(r.a, {
@@ -430,7 +430,7 @@
 									[c]: e
 								}
 							},
-							n = T(s, t);
+							n = I(s, t);
 						(null == n ? void 0 : n.formClose) && a ? a() : (null == n ? void 0 : n.formSubmit) && i && i(n.data, o.submitForm)
 					})(e),
 					checked: e.value === p.value
@@ -438,18 +438,18 @@
 					htmlFor: e.value
 				}, e.label))))
 			}
-			var Se = n("./src/reddit/components/FormBuilder/components/TextBlock/index.m.less"),
-				ge = n.n(Se);
-			const be = u.a.p("TextBlockWrapper", ge.a);
+			var Ee = n("./src/reddit/components/FormBuilder/components/TextBlock/index.m.less"),
+				be = n.n(Ee);
+			const Be = u.a.p("TextBlockWrapper", be.a);
 
-			function Be(e) {
-				return l.a.createElement(be, null, _(e.textContent))
+			function ge(e) {
+				return l.a.createElement(Be, null, _(e.textContent))
 			}
 			var ke = n("./src/reddit/components/FormBuilder/components/TextInput/index.m.less"),
 				_e = n.n(ke);
-			const we = u.a.div("TextInputWrapper", _e.a);
+			const We = u.a.div("TextInputWrapper", _e.a);
 
-			function We(e) {
+			function we(e) {
 				const {
 					label: t,
 					placeholder: n,
@@ -457,10 +457,10 @@
 					visible: s,
 					formikProps: a
 				} = e;
-				return !s || k(s, a.values) ? l.a.createElement(we, null, l.a.createElement(r.a, {
+				return !s || k(s, a.values) ? l.a.createElement(We, null, l.a.createElement(r.a, {
 					as: "textarea",
 					id: o.ref,
-					value: E()(a.values, o.ref),
+					value: S()(a.values, o.ref),
 					placeholder: n,
 					name: o.ref
 				}), t && l.a.createElement("label", {
@@ -468,11 +468,11 @@
 				}, t)) : null
 			}
 			var De = n("./src/reddit/icons/svgs/UserBlocked/index.tsx"),
-				ye = n("./src/reddit/components/FormBuilder/components/ToggleSwitch/index.m.less"),
-				Te = n.n(ye);
-			const Ie = u.a.div("ToggleSwitchWrapper", Te.a),
-				Le = u.a.div("ToggleSwitchContent", Te.a),
-				Ae = u.a.div("ControlWrapper", Te.a);
+				Te = n("./src/reddit/components/FormBuilder/components/ToggleSwitch/index.m.less"),
+				Ie = n.n(Te);
+			const ye = u.a.div("ToggleSwitchWrapper", Ie.a),
+				Le = u.a.div("ToggleSwitchContent", Ie.a),
+				Ae = u.a.div("ControlWrapper", Ie.a);
 
 			function Re(e) {
 				const {
@@ -488,26 +488,26 @@
 					default:
 						i = l.a.createElement(De.a, null)
 				}
-				return l.a.createElement(Ie, null, i, l.a.createElement(Le, null, l.a.createElement("h4", null, n), l.a.createElement("p", null, o)), l.a.createElement(Ae, {
-					className: Te.a[s.componentType]
+				return l.a.createElement(ye, null, i, l.a.createElement(Le, null, l.a.createElement("h4", null, n), l.a.createElement("p", null, o)), l.a.createElement(Ae, {
+					className: Ie.a[s.componentType]
 				}, l.a.createElement(r.a, {
 					type: "RadioSlide" === s.componentType ? "radio" : "checkbox",
 					name: s.props.value.ref,
 					id: s.props.value.ref,
 					onChange: () => {
-						const e = E()(a.values, s.props.value.ref);
+						const e = S()(a.values, s.props.value.ref);
 						return a.setFieldValue(s.props.value.ref, !e)
 					},
-					className: !0 === E()(a.values, s.props.value.ref) ? Te.a.isChecked : ""
+					className: !0 === S()(a.values, s.props.value.ref) ? Ie.a.isChecked : ""
 				}), l.a.createElement("label", {
 					htmlFor: s.props.value.ref
 				})))
 			}
-			var Pe = n("./src/reddit/components/FormBuilder/index.m.less"),
-				Ue = n.n(Pe);
+			var Ue = n("./src/reddit/components/FormBuilder/index.m.less"),
+				Pe = n.n(Ue);
 			const {
 				fbt: je
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ne = u.a.div("Wrapper", Ue.a), Ve = u.a.div("FormBuilderWrapper", Ue.a);
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ne = u.a.div("Wrapper", Pe.a), Ve = u.a.div("FormBuilderWrapper", Pe.a);
 			class Oe extends l.a.Component {
 				constructor(e) {
 					super(e), this.renderComponent = (e, t) => {
@@ -527,7 +527,7 @@
 									renderComponent: this.renderComponent
 								}, e.props.children);
 							case "TextBlock":
-								return l.a.createElement(Be, {
+								return l.a.createElement(ge, {
 									textContent: e.props.textContent
 								});
 							case "ButtonBar":
@@ -558,7 +558,7 @@
 									textContent: e.props.textContent
 								});
 							case "SelectOne":
-								return l.a.createElement(Ee, {
+								return l.a.createElement(Se, {
 									options: e.props.options,
 									value: e.props.value,
 									formikProps: t,
@@ -567,7 +567,7 @@
 									onSubmitDataUpdate: this.onSubmitDataUpdate
 								});
 							case "TextInput":
-								return l.a.createElement(We, {
+								return l.a.createElement(we, {
 									label: e.props.title,
 									value: e.props.value,
 									placeholder: e.props.placeholder,
@@ -737,28 +737,6 @@
 				fill: "inherit"
 			}))
 		},
-		"./src/reddit/icons/svgs/Close/index.tsx": function(e, t, n) {
-			"use strict";
-			var r = n("./node_modules/react/index.js"),
-				o = n.n(r);
-
-			function s() {
-				return (s = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			t.a = e => o.a.createElement("svg", s({
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, e), o.a.createElement("polygon", {
-				fill: "inherit",
-				points: "11.649 9.882 18.262 3.267 16.495 1.5 9.881 8.114 3.267 1.5 1.5 3.267 8.114 9.883 1.5 16.497 3.267 18.264 9.881 11.65 16.495 18.264 18.262 16.497"
-			}))
-		},
 		"./src/reddit/icons/svgs/Info/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
@@ -790,4 +768,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-FormBuilder.53fc31e44939dd2cbbc2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-FormBuilder.19ba6c38d38f942e53a8.js.map

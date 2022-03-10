@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.f0fc72f085945a6f9d14.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.a617106abc1a8abc2cc2.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./src/reddit/actions/util/pollActionForSuccess.ts": function(e, t, a) {
@@ -516,22 +516,22 @@
 				g = a("./src/reddit/actions/toaster.ts"),
 				N = a("./src/reddit/actions/util/pollActionForSuccess.ts"),
 				_ = a("./src/reddit/endpoints/governance/crypto.ts"),
-				z = a("./src/reddit/helpers/crypto/transactions.ts"),
+				w = a("./src/reddit/helpers/crypto/transactions.ts"),
 				j = a("./src/reddit/helpers/crypto/vaultTransactions.ts"),
-				F = a("./src/reddit/helpers/governance/tokens.ts"),
-				w = a("./src/reddit/helpers/trackers/crypto.ts"),
-				L = a("./src/reddit/hooks/useTracking.ts"),
-				O = a("./src/reddit/models/Toast/index.ts"),
-				y = a("./src/reddit/selectors/gov.ts"),
-				I = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
-				A = a("./src/lib/classNames/index.ts"),
-				k = a("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				D = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
-				T = a("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
+				z = a("./src/reddit/helpers/governance/tokens.ts"),
+				O = a("./src/reddit/helpers/trackers/crypto.ts"),
+				F = a("./src/reddit/hooks/useTracking.ts"),
+				L = a("./src/reddit/models/Toast/index.ts"),
+				k = a("./src/reddit/selectors/gov.ts"),
+				y = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
+				T = a("./src/lib/classNames/index.ts"),
+				I = a("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				A = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
+				D = a("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
 				B = a("./src/reddit/components/Governance/TransactionModals/BurnPointsModal/Approval.m.less"),
 				V = a.n(B);
 
-			function G(e) {
+			function H(e) {
 				const {
 					burnAmount: t,
 					burnMemo: a,
@@ -541,14 +541,14 @@
 				} = e;
 				return n.a.createElement("div", {
 					className: V.a.overview
-				}, n.a.createElement(k.a, {
+				}, n.a.createElement(I.a, {
 					amount: t,
 					className: V.a.amount,
 					subredditId: s.id
-				}), n.a.createElement(T.a, {
+				}), n.a.createElement(D.a, {
 					subredditId: s.id
 				}), n.a.createElement("div", {
-					className: Object(A.a)(V.a.memo, {
+					className: Object(T.a)(V.a.memo, {
 						[V.a.error]: !l
 					})
 				}, l ? i.fbt._("For “{memo}”. Fulfilled by the community, not Reddit.", [i.fbt._param("memo", a)], {
@@ -558,10 +558,10 @@
 				})))
 			}
 
-			function H(e) {
-				return n.a.createElement(D.b, {
+			function G(e) {
+				return n.a.createElement(A.b, {
 					values: [
-						[Object(D.a)(), e.contractAddress],
+						[Object(A.a)(), e.contractAddress],
 						[i.fbt._("Function", null, {
 							hk: "1Q0dwF"
 						}), "burn"],
@@ -579,20 +579,20 @@
 					burnMemo: a,
 					subreddit: l,
 					pointsDetails: s
-				} = e, r = Object(c.d)(), o = Object(L.a)(), d = () => r(Object(C.f)()), m = l.id, u = Object(c.e)(e => Object(y.e)(e, {
+				} = e, r = Object(c.d)(), o = Object(F.a)(), d = () => r(Object(C.f)()), m = l.id, u = Object(c.e)(e => Object(k.e)(e, {
 					subredditId: m
-				})), h = new x.BigNumber(u).isGreaterThanOrEqualTo(t), p = Object(F.b)(t, null == s ? void 0 : s.displayConversion), v = s.contractAddress, f = Object(z.a)(v, t, a), b = e => {
-					o(Object(w.c)("burn_link", m, p, e))
+				})), h = new x.BigNumber(u).isGreaterThanOrEqualTo(t), p = Object(z.b)(t, null == s ? void 0 : s.displayConversion), v = s.contractAddress, f = Object(w.a)(v, t, a), b = e => {
+					o(Object(O.c)("burn_link", m, p, e))
 				}, E = s.name;
-				return n.a.createElement(I.a, {
-					approvalOverview: n.a.createElement(G, {
+				return n.a.createElement(y.a, {
+					approvalOverview: n.a.createElement(H, {
 						burnAmount: t,
 						burnMemo: a,
 						hasEnoughPoints: h,
 						subreddit: l,
 						pointsName: E
 					}),
-					approvalDetails: n.a.createElement(H, {
+					approvalDetails: n.a.createElement(G, {
 						contractAddress: v,
 						memo: a
 					}),
@@ -601,7 +601,7 @@
 						d(), r(function(e) {
 							const t = Object(g.e)(i.fbt._("Burning your {pointsName}...", [i.fbt._param("pointsName", e)], {
 								hk: "2LoC1g"
-							}), O.b.SuccessCommunity);
+							}), L.b.SuccessCommunity);
 							return t.duration = P, Object(g.f)(t)
 						}(E));
 						try {
@@ -609,24 +609,24 @@
 								await Object(j.a)(t, a), await e(Object(N.a)(Object(M.h)({
 									subredditId: l
 								}), async e => {
-									const t = Object(y.e)(e(), {
+									const t = Object(k.e)(e(), {
 										subredditId: l
 									});
 									return n !== t || null
 								})), e(Object(M.h)({
 									subredditId: l
 								}))
-							}(r, s, e.hash, l.id, u), o(Object(w.d)("burn_link", m, p)), r(function(e) {
+							}(r, s, e.hash, l.id, u), o(Object(O.d)("burn_link", m, p)), r(function(e) {
 								const t = Object(g.e)(i.fbt._("Your {pointsName} were burnt!", [i.fbt._param("pointsName", e)], {
 									hk: "1BHX95"
-								}), O.b.SuccessCommunityGreen);
+								}), L.b.SuccessCommunityGreen);
 								return t.duration = P, Object(g.f)(t)
 							}(E))
 						} catch (t) {
 							b(t.toString()), r(function(e) {
 								return Object(g.f)(Object(g.e)(i.fbt._("There was an error while burning your {pointsName}. Please try again later", [i.fbt._param("pointsName", e)], {
 									hk: "48Un5w"
-								}), O.b.Error))
+								}), L.b.Error))
 							}(E))
 						}
 					},
@@ -691,6 +691,145 @@
 					grey: !0
 				}))
 			}
+		},
+		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, a) {
+			e.exports = {
+				wrapper: "_2AfJEqW9tv4b_kolKEuS9K",
+				titleRow: "p4QfstubN5cRxd-gy8gFH",
+				detailsContainer: "_2V3KEAhexNh-mP3TbrVClC",
+				buttonRow: "_1fcbQFwN65ik28DNmWnpX4",
+				confirmButton: "zcMEJWBL7q-mYGOPSpjN-"
+			}
+		},
+		"./src/reddit/controls/ErrorText/index.m.less": function(e, t, a) {
+			e.exports = {
+				wrapper: "_2hGJP-9xfXBXd0wqhBLHhY",
+				description: "_3h_9YwxjuOr77VhScPrjCI",
+				moreText: "_1Y0BrhDgcSTeSYvmSPYepI"
+			}
+		},
+		"./src/reddit/controls/ErrorText/index.tsx": function(e, t, a) {
+			"use strict";
+			a.d(t, "a", (function() {
+				return M
+			})), a.d(t, "c", (function() {
+				return C
+			}));
+			var l = a("./node_modules/fbt/lib/FbtPublic.js"),
+				n = a("./node_modules/lodash/uniqueId.js"),
+				c = a.n(n),
+				s = a("./node_modules/raf/index.js"),
+				r = a.n(s),
+				o = a("./node_modules/react/index.js"),
+				i = a.n(o),
+				d = a("./src/lib/classNames/index.ts"),
+				m = a("./src/higherOrderComponents/asModal/index.tsx"),
+				u = a("./src/reddit/controls/Button/index.tsx"),
+				h = a("./src/reddit/layout/row/Inline/index.tsx"),
+				p = a("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
+				v = a.n(p);
+			var f = Object(m.a)(e => {
+					const {
+						children: t,
+						title: a
+					} = e;
+					return i.a.createElement("div", {
+						className: v.a.wrapper
+					}, i.a.createElement(h.a, {
+						className: v.a.titleRow
+					}, a), i.a.createElement("div", {
+						className: v.a.detailsContainer
+					}, t), i.a.createElement(h.a, {
+						className: v.a.buttonRow
+					}, i.a.createElement(u.l, {
+						className: v.a.confirmButton,
+						onClick: e.onConfirmed
+					}, l.fbt._("Ok", null, {
+						hk: "2Giu9U"
+					}))))
+				}),
+				b = a("./src/reddit/controls/ErrorText/index.m.less"),
+				E = a.n(b);
+			class x extends i.a.Component {
+				constructor(e) {
+					super(e), this.spanRef = i.a.createRef(), this.toggleModal = () => {
+						this.setState({
+							isModalOpen: !this.state.isModalOpen
+						})
+					}, this.state = {
+						textHasOverflowed: !1,
+						modalId: `ErrorTextModal--${c()()}`,
+						isModalOpen: !1
+					}
+				}
+				componentDidMount() {
+					this.calcTextDidOverflow()
+				}
+				componentDidUpdate() {
+					this.calcTextDidOverflow()
+				}
+				calcTextDidOverflow() {
+					r()(() => {
+						const e = this.spanRef.current;
+						if (!e) return;
+						const t = e.scrollWidth > e.clientWidth;
+						this.setState(e => e.textHasOverflowed !== t ? {
+							textHasOverflowed: t
+						} : null)
+					})
+				}
+				render() {
+					const {
+						children: e,
+						className: t,
+						errorModalBody: a,
+						errorModalTitle: n = l.fbt._("Error", null, {
+							hk: "2nPF4G"
+						}),
+						moreText: c = l.fbt._("More", null, {
+							hk: "1bCAQ0"
+						})
+					} = this.props, {
+						textHasOverflowed: s,
+						isModalOpen: r
+					} = this.state;
+					return i.a.createElement("div", {
+						className: Object(d.a)(E.a.wrapper, t)
+					}, i.a.createElement("span", {
+						className: E.a.description,
+						ref: this.spanRef
+					}, e), s && i.a.createElement("span", {
+						className: E.a.moreText,
+						onClick: this.toggleModal
+					}, c), r && i.a.createElement(f, {
+						onConfirmed: this.toggleModal,
+						title: n
+					}, a || e))
+				}
+			}
+			const M = e => {
+					const {
+						className: t,
+						errorClassName: a,
+						errorModalTitle: l,
+						fallbackMessage: n,
+						messages: c = []
+					} = e, s = c.length ? c : n ? [n] : [];
+					return s.length ? i.a.createElement("div", {
+						className: t
+					}, s.map((e, t) => i.a.createElement(x, {
+						className: a,
+						errorModalTitle: l,
+						key: t
+					}, e))) : null
+				},
+				C = e => i.a.createElement(M, {
+					fallbackMessage: l.fbt._("Something went wrong", null, {
+						hk: "Cw1BT"
+					}),
+					messages: e
+				});
+			t.b = x
 		},
 		"./src/reddit/controls/FormFields/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -1069,4 +1208,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.f0fc72f085945a6f9d14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.a617106abc1a8abc2cc2.js.map

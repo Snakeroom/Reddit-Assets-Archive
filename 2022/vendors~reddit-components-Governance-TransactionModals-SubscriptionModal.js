@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-SubscriptionModal.51306b9eecc2705c3003.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-SubscriptionModal.47ab349f080a671b559d.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["vendors~reddit-components-Governance-TransactionModals-SubscriptionModal", "vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033", "CryptoLibEthers"], {
+	["vendors~reddit-components-Governance-TransactionModals-SubscriptionModal", "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, r, t) {
 			"use strict";
 			t.d(r, "a", (function() {
@@ -2040,4 +2040,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-SubscriptionModal.51306b9eecc2705c3003.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-SubscriptionModal.47ab349f080a671b559d.js.map

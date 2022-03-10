@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.452bf74ab08d0dd938b1.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.70e20f225153aa3e0a98.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -118,13 +118,13 @@
 				w = s("./src/reddit/selectors/telemetry.ts"),
 				C = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
 				G = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
-			let k;
+			let j;
 
 			function v() {
-				k || (k = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
+				j || (j = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
-			var j = s("./node_modules/lodash/debounce.js"),
-				I = s.n(j),
+			var k = s("./node_modules/lodash/debounce.js"),
+				I = s.n(k),
 				O = s("./src/reddit/icons/svgs/Search/index.tsx"),
 				S = s("./src/reddit/selectors/user.ts"),
 				B = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
@@ -209,7 +209,7 @@
 							action: "change",
 							noun: "gif_tooltip_search",
 							correlationId: this.props.correlationId,
-							subreddit: this.props.subreddit.id ? w.kb(t, this.props.subreddit.id) : void 0,
+							subreddit: this.props.subreddit.id ? w.jb(t, this.props.subreddit.id) : void 0,
 							post: w.k(t),
 							search: {
 								query: e
@@ -236,7 +236,7 @@
 								action: "select",
 								noun: "gif_tooltip_result",
 								correlationId: this.props.correlationId,
-								subreddit: this.props.subreddit.id ? w.kb(e, this.props.subreddit.id) : void 0,
+								subreddit: this.props.subreddit.id ? w.jb(e, this.props.subreddit.id) : void 0,
 								post: w.k(e),
 								actionInfo: {
 									...t.actionInfo,
@@ -268,7 +268,7 @@
 					} = this.state;
 					!e && s && null !== t && (await
 						function(e) {
-							return v(), k.then(t => {
+							return v(), j.then(t => {
 								return !!e.split(" ").concat(e).find(e => -1 !== t.indexOf(e.toLowerCase()))
 							}).catch(() => !1)
 						}(s) || (this.setState({
@@ -502,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.452bf74ab08d0dd938b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.70e20f225153aa3e0a98.js.map

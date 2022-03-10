@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModProgressModule.aba21413921af3a83908.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModProgressModule.b34953ccc3e3cd5ade8e.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModProgressModule"], {
 		"./src/reddit/components/ModProgressModule/index.m.less": function(e, t, s) {
@@ -59,26 +59,26 @@
 				c = s("./src/reddit/actions/modal.ts"),
 				l = s("./src/reddit/actions/subreddit/inlineEditing.ts"),
 				m = s("./src/reddit/actions/subreddit/questions.ts"),
-				u = s("./src/reddit/actions/tooltip.ts"),
-				p = s("./src/reddit/components/ModWelcomeTooltip/index.tsx"),
+				p = s("./src/reddit/actions/tooltip.ts"),
+				u = s("./src/reddit/components/ModWelcomeTooltip/index.tsx"),
 				_ = s("./src/reddit/components/ModWelcomeTooltip/async.tsx"),
 				C = s("./src/reddit/components/NewCommunityProgress/icons/index.tsx"),
-				b = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				O = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				h = s("./src/reddit/constants/modals.ts"),
+				h = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				b = s("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				O = s("./src/reddit/constants/modals.ts"),
 				g = s("./src/reddit/controls/Button/index.tsx"),
 				x = s("./src/reddit/controls/ImageInput/index.tsx"),
-				T = s("./src/reddit/endpoints/subreddit/newCommunityProgress.ts"),
+				v = s("./src/reddit/endpoints/subreddit/newCommunityProgress.ts"),
 				E = s("./src/reddit/helpers/trackers/communityProgressModule.ts"),
-				N = s("./src/reddit/icons/fonts/index.tsx"),
-				I = s("./src/reddit/icons/fonts/ModSettings/index.tsx"),
-				v = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
+				T = s("./src/reddit/icons/fonts/index.tsx"),
+				N = s("./src/reddit/icons/fonts/ModSettings/index.tsx"),
+				I = s("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				M = s("./src/reddit/models/ApiRequestState/index.ts"),
 				f = s("./src/reddit/models/NewCommunityProgress/index.ts"),
 				k = s("./src/reddit/selectors/experiments/newCommunityProgressV3.ts"),
-				D = s("./src/reddit/selectors/tooltip.ts"),
-				y = s("./src/reddit/components/ModProgressModule/index.m.less"),
-				P = s.n(y);
+				y = s("./src/reddit/selectors/tooltip.ts"),
+				D = s("./src/reddit/components/ModProgressModule/index.m.less"),
+				P = s.n(D);
 			const {
 				fbt: L
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = ({
@@ -101,20 +101,20 @@
 					className: Object(d.a)(P.a.IconContainer, {
 						[P.a.completed]: o
 					})
-				}, o ? n.a.createElement(N.a, {
+				}, o ? n.a.createElement(T.a, {
 					name: "checkmark",
 					className: P.a.CheckIcon
-				}) : n.a.createElement(N.a, {
+				}) : n.a.createElement(T.a, {
 					name: i,
 					className: P.a.Icon
 				})), n.a.createElement("span", {
 					className: P.a.CardTitle
 				}, t)))
-			}, S = Object(a.c)({
-				isTooltipOpen: e => Object(D.a)(e) === p.MOD_WELCOME_TOOLTIP_ID,
+			}, B = Object(a.c)({
+				isTooltipOpen: e => Object(y.a)(e) === u.MOD_WELCOME_TOOLTIP_ID,
 				progressModuleRecords: k.c
 			});
-			class B extends n.a.Component {
+			class S extends n.a.Component {
 				constructor(e) {
 					super(e), this.inputRef = null, this.setInputRef = e => this.inputRef = e, this.onChangeIconFileInput = e => {
 						const t = Object(M.b)();
@@ -145,19 +145,19 @@
 						onTopBarClicked: c,
 						progressModuleRecords: l,
 						subredditId: m,
-						subredditName: u
+						subredditName: p
 					} = this.props, C = l && l[m];
-					if (!C) return n.a.createElement(O.a, {
+					if (!C) return n.a.createElement(b.a, {
 						className: P.a.ThemedWidget,
 						contentOnly: !0,
 						headerButton: n.a.createElement("div", {
 							className: P.a.headerButtonsContainer
-						}, n.a.createElement(v.a, {
+						}, n.a.createElement(I.a, {
 							className: P.a.ChevronIcon
 						})),
 						title: n.a.createElement("div", {
 							className: P.a.ModuleTitle
-						}, n.a.createElement(I.a, {
+						}, n.a.createElement(N.a, {
 							className: P.a.ModSettingsIcon
 						}), L._("Mod Tools", null, {
 							hk: "2Gg52f"
@@ -165,24 +165,24 @@
 						titleClassName: P.a.titleClassName,
 						onClick: c
 					});
-					const b = (null === (e = null == C ? void 0 : C.progress) || void 0 === e ? void 0 : e.done) === (null === (t = null == C ? void 0 : C.progress) || void 0 === t ? void 0 : t.total),
-						h = 0 === (null === (s = C.progress) || void 0 === s ? void 0 : s.done);
-					return n.a.createElement(n.a.Fragment, null, n.a.createElement(O.a, {
+					const h = (null === (e = null == C ? void 0 : C.progress) || void 0 === e ? void 0 : e.done) === (null === (t = null == C ? void 0 : C.progress) || void 0 === t ? void 0 : t.total),
+						O = 0 === (null === (s = C.progress) || void 0 === s ? void 0 : s.done);
+					return n.a.createElement(n.a.Fragment, null, n.a.createElement(b.a, {
 						className: Object(d.a)(P.a.ThemedWidget, {
-							[P.a.completed]: b,
+							[P.a.completed]: h,
 							[P.a.tooltipIsActive]: i
 						}),
 						contentOnly: !0,
 						headerButton: n.a.createElement("div", {
 							className: P.a.headerButtonsContainer
-						}, n.a.createElement(v.a, {
+						}, n.a.createElement(I.a, {
 							className: P.a.ChevronIcon
 						})),
-						id: p.MOD_WELCOME_TOOLTIP_ID,
+						id: u.MOD_WELCOME_TOOLTIP_ID,
 						onHeaderClick: c,
 						title: n.a.createElement("div", {
 							className: P.a.ModuleTitle
-						}, n.a.createElement(I.a, {
+						}, n.a.createElement(N.a, {
 							className: P.a.ModSettingsIcon
 						}), L._("Mod Tools", null, {
 							hk: "2Gg52f"
@@ -192,9 +192,9 @@
 						className: P.a.ProgressContainer
 					}, n.a.createElement("div", null, n.a.createElement("div", {
 						className: P.a.Title
-					}, b ? L._("Well done, you're set up!", null, {
+					}, h ? L._("Well done, you're set up!", null, {
 						hk: "3sJd9H"
-					}) : L._("Set up r/{subredditName}", [L._param("subredditName", u)], {
+					}) : L._("Set up r/{subredditName}", [L._param("subredditName", p)], {
 						hk: "3SHelG"
 					})), n.a.createElement("div", {
 						className: P.a.ProgressDescription
@@ -204,20 +204,20 @@
 						hk: "1gMzOE"
 					})), " ", n.a.createElement("span", {
 						className: Object(d.a)(P.a.progressText, {
-							[P.a.darkFont]: h
+							[P.a.darkFont]: O
 						})
 					}, L._("tasks completed", null, {
 						hk: "DxeNq"
-					}))), h && n.a.createElement("div", {
+					}))), O && n.a.createElement("div", {
 						className: P.a.Description
 					}, L._("Get your community off the ground with these tasks", null, {
 						hk: "3n0h53"
-					})))), !b && n.a.createElement("div", {
+					})))), !h && n.a.createElement("div", {
 						className: P.a.CardContainer
 					}, C.cards.map(e => {
 						const t = e.status === f.a.COMPLETED;
 						return j(e, t, () => this.onClickCard(C, e.id))
-					})), b && n.a.createElement(g.t, {
+					})), h && n.a.createElement(g.t, {
 						className: P.a.CloseButton,
 						onClick: a,
 						priority: g.c.Tertiary
@@ -228,19 +228,19 @@
 					})), this.renderImageUploader())
 				}
 			}
-			const W = Object(r.b)(S, (e, t) => ({
-				onCompleteModule: () => e(Object(T.c)(t.subredditId, f.d)),
+			const w = Object(r.b)(B, (e, t) => ({
+				onCompleteModule: () => e(Object(v.c)(t.subredditId, f.d)),
 				onNavigateToSubmit: () => e(Object(i.b)(`/r/${t.subredditName}/submit`)),
-				onOpenDescriptionModal: () => e(Object(c.i)(h.a.EDIT_DESCRIPTION_MODAL)),
-				onOpenTooltip: () => e(Object(u.h)({
-					tooltipId: p.MOD_WELCOME_TOOLTIP_ID
+				onOpenDescriptionModal: () => e(Object(c.i)(O.a.EDIT_DESCRIPTION_MODAL)),
+				onOpenTooltip: () => e(Object(p.h)({
+					tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 				})),
 				onTopBarClicked: () => e(Object(i.b)(`/r/${t.subredditName}/about`)),
 				uploadCommunityIcon: (s, o) => {
 					e(Object(l.a)(t.subredditId, s, o)), e(Object(m.b)(t.subredditId))
 				}
 			}));
-			t.default = W(Object(b.c)(B))
+			t.default = w(Object(h.c)(S))
 		},
 		"./src/reddit/components/ModWelcomeTooltip/async.tsx": function(e, t, s) {
 			"use strict";
@@ -300,13 +300,13 @@
 				c = s("./src/reddit/actions/tooltip.ts"),
 				l = s("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				m = s("./src/reddit/controls/Button/index.tsx"),
-				u = s("./src/reddit/controls/Dropdown/index.tsx"),
-				p = s("./src/reddit/helpers/toggleBodyScroll/index.ts"),
+				p = s("./src/reddit/controls/Dropdown/index.tsx"),
+				u = s("./src/reddit/helpers/toggleBodyScroll/index.ts"),
 				_ = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				C = s("./src/reddit/selectors/platform.ts"),
-				b = s("./src/reddit/components/ModWelcomeTooltip/index.m.less"),
-				O = s.n(b);
-			const h = Object(l.a)(u.a),
+				h = s("./src/reddit/components/ModWelcomeTooltip/index.m.less"),
+				b = s.n(h);
+			const O = Object(l.a)(p.a),
 				g = "ModProgressModule--ModWelcomeTooltip";
 			t.default = Object(d.a)(e => {
 				const t = Object(i.e)(C.d),
@@ -318,36 +318,36 @@
 						}))
 					};
 				return Object(n.useEffect)(() => {
-					e.isOpen ? setTimeout(() => Object(p.a)(), 500) : setTimeout(() => Object(p.b)(), 500)
-				}, [d, e.isOpen]), t ? r.a.createElement(h, {
-					className: O.a.Tooltip,
+					e.isOpen ? setTimeout(() => Object(u.a)(), 500) : setTimeout(() => Object(u.b)(), 500)
+				}, [d, e.isOpen]), t ? r.a.createElement(O, {
+					className: b.a.Tooltip,
 					isOpen: e.isOpen,
 					targetPosition: ["left", "top"],
 					tooltipPosition: ["right", "top"],
 					tooltipId: s,
 					componentWrapper: t => r.a.createElement("div", {
-						className: Object(a.a)(O.a.Overlay, {
-							[O.a.isOverlayOpen]: e.isOpen
+						className: Object(a.a)(b.a.Overlay, {
+							[b.a.isOverlayOpen]: e.isOpen
 						}),
 						onClick: l
 					}, r.a.createElement("div", {
-						className: Object(a.a)(O.a.DropdownPadding, {
-							[O.a.isOverlayOpen]: e.isOpen
+						className: Object(a.a)(b.a.DropdownPadding, {
+							[b.a.isOverlayOpen]: e.isOpen
 						}),
 						onClick: l
 					}), t)
 				}, r.a.createElement("div", {
-					className: O.a.TooltipContent
+					className: b.a.TooltipContent
 				}, r.a.createElement("div", {
-					className: O.a.Title
+					className: b.a.Title
 				}, o.fbt._("Welcome to your community, r/{subredditName}!", [o.fbt._param("subredditName", t)], {
 					hk: "e3rbC"
 				})), r.a.createElement("div", {
-					className: O.a.Description
+					className: b.a.Description
 				}, o.fbt._("We’ll walk you through how to get started here, and you can get more tips and advice through Reddit’s", null, {
 					hk: "lffxe"
 				}), " ", r.a.createElement("a", {
-					className: O.a.modLink,
+					className: b.a.modLink,
 					style: {
 						color: Object(_.a)(e).linkText
 					},
@@ -357,7 +357,7 @@
 				}, o.fbt._("Mod Certification Program", null, {
 					hk: "1FTpvR"
 				})), "."), r.a.createElement(m.t, {
-					className: O.a.Button,
+					className: b.a.Button,
 					onClick: l
 				}, o.fbt._("Let's go", null, {
 					hk: "4hWwxv"
@@ -381,6 +381,32 @@
 			t.a = e => n.a.createElement("i", {
 				className: Object(r.a)(d.a.ModSettings, Object(i.b)("mod", e.isFilled), e.className)
 			})
+		},
+		"./src/reddit/icons/svgs/Chevron/index.m.less": function(e, t, s) {
+			e.exports = {
+				chevron: "_1c_YBKkiW4FhhLJPkq9c1v"
+			}
+		},
+		"./src/reddit/icons/svgs/Chevron/index.tsx": function(e, t, s) {
+			"use strict";
+			var o = s("./node_modules/react/index.js"),
+				n = s.n(o),
+				r = s("./src/lib/classNames/index.ts"),
+				i = s("./src/reddit/icons/svgs/Chevron/index.m.less"),
+				a = s.n(i);
+			t.a = e => n.a.createElement("svg", {
+				className: Object(r.a)(a.a.chevron, e.className),
+				viewBox: "0 0 9 14",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, n.a.createElement("g", {
+				transform: "translate(-6.000000, -3.000000)"
+			}, n.a.createElement("polygon", {
+				fill: "none",
+				points: "0 20 20 20 20 0 0 0"
+			}), n.a.createElement("polygon", {
+				fill: "inherit",
+				points: "7.47566213 3 14.4756621 10 7.47566213 17 6 15.5239203 11.5239203 10 6 4.47566213"
+			})))
 		},
 		"./src/reddit/models/NewCommunityProgress/index.ts": function(e, t, s) {
 			"use strict";
@@ -411,4 +437,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModProgressModule.aba21413921af3a83908.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModProgressModule.b34953ccc3e3cd5ade8e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~AdminPanel.5ef0926f2f03175865cb.js
-// Retrieved at 1/10/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~AdminPanel.e6e59f93c311ab1cce5c.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~AdminPanel"], {
 		"./node_modules/@reddit/event-helpers-typescript/dist/esm/index.js": function(e, t, i) {
@@ -13203,9 +13203,28 @@
 				$schema: "http://json-schema.org/draft-07/schema#"
 			}]
 		},
+		"./node_modules/lodash/_baseReduce.js": function(e, t) {
+			e.exports = function(e, t, i, s, n) {
+				return n(e, (function(e, n, o) {
+					i = s ? (s = !1, e) : t(i, e, n, o)
+				})), i
+			}
+		},
 		"./node_modules/lodash/each.js": function(e, t, i) {
 			e.exports = i("./node_modules/lodash/forEach.js")
+		},
+		"./node_modules/lodash/reduce.js": function(e, t, i) {
+			var s = i("./node_modules/lodash/_arrayReduce.js"),
+				n = i("./node_modules/lodash/_baseEach.js"),
+				o = i("./node_modules/lodash/_baseIteratee.js"),
+				r = i("./node_modules/lodash/_baseReduce.js"),
+				a = i("./node_modules/lodash/isArray.js");
+			e.exports = function(e, t, i) {
+				var d = a(e) ? s : r,
+					c = arguments.length < 3;
+				return d(e, o(t, 4), i, c, n)
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~AdminPanel.5ef0926f2f03175865cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~AdminPanel.e6e59f93c311ab1cce5c.js.map

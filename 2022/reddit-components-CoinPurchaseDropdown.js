@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.dc96688a29ec02ddb189.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.98c5727e253511a5b9b7.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1847,6 +1847,27 @@
 				return r.multipliedBy(o).toFixed(0)
 			}
 		},
+		"./src/reddit/models/Payments/index.ts": function(e, t, r) {
+			"use strict";
+			var n, o, c, s;
+			r.d(t, "b", (function() {
+					return o
+				})), r.d(t, "a", (function() {
+					return c
+				})),
+				function(e) {
+					e.PayPal = "paypal", e.Stripe = "stripe"
+				}(n || (n = {})),
+				function(e) {
+					e.PayPal = "PAYPAL", e.Stripe = "STRIPE"
+				}(o || (o = {})),
+				function(e) {
+					e.NewPayPal = "new-paypal", e.NewStripe = "new-stripe", e.SavedPayPal = "saved-paypal", e.SavedStripe = "saved-stripe"
+				}(c || (c = {})),
+				function(e) {
+					e.Comment = "comment", e.Post = "post", e.Profile = "profile", e.Subreddit = "subreddit"
+				}(s || (s = {}))
+		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "j", (function() {
@@ -1930,4 +1951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.dc96688a29ec02ddb189.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.98c5727e253511a5b9b7.js.map

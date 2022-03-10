@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.c1835a24970f32674b48.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.f64d30ee830220691996.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -105,7 +105,7 @@
 						noun: "custom_badges_hover_card",
 						correlationId: this.correlationId,
 						...E.o(e),
-						subreddit: E.jb(e)
+						subreddit: E.ib(e)
 					}))
 				}
 				onOpenUploadDialog() {
@@ -150,7 +150,7 @@
 								noun: "custom_badge_hover_open_learn_more",
 								correlationId: this.correlationId,
 								...E.o(e),
-								subreddit: E.jb(e)
+								subreddit: E.ib(e)
 							}))
 						}
 					}, s.a.createElement(C.a, {
@@ -390,6 +390,22 @@
 				function(e) {
 					e.Comment = "comment", e.Post = "post", e.Profile = "profile", e.Subreddit = "subreddit"
 				}(c || (c = {}))
+		},
+		"./src/reddit/models/Product/index.ts": function(e, t, r) {
+			"use strict";
+			var n;
+
+			function s(e) {
+				return e.substring(e.lastIndexOf("|") + 1)
+			}
+			r.d(t, "a", (function() {
+					return n
+				})), r.d(t, "b", (function() {
+					return s
+				})),
+				function(e) {
+					e.Badge = "badge", e.EmotesPack = "emotes_pack", e.Giphy = "giphy", e.Membership = "membership"
+				}(n || (n = {}))
 		},
 		"./src/reddit/reducers/economics/paymentSystems/index.ts": function(e, t, r) {
 			"use strict";
@@ -659,7 +675,7 @@
 			})), r.d(t, "p", (function() {
 				return N
 			})), r.d(t, "k", (function() {
-				return w
+				return j
 			})), r.d(t, "r", (function() {
 				return k
 			})), r.d(t, "y", (function() {
@@ -835,7 +851,7 @@
 			! function(e) {
 				e[e.Fetched = 0] = "Fetched", e[e.Fetching = 1] = "Fetching", e[e.NotFetched = 2] = "NotFetched"
 			}(D || (D = {}));
-			const j = {
+			const w = {
 					prices: {},
 					member: "Supporter",
 					memberPlural: "Supporters",
@@ -844,11 +860,11 @@
 					membership: "Membership",
 					membershipAlt: "Supporter Membership"
 				},
-				w = (e, t) => Object.values(e.products.models).filter(e => e.type === a.a.Membership && t && e.subredditId === t),
+				j = (e, t) => Object.values(e.products.models).filter(e => e.type === a.a.Membership && t && e.subredditId === t),
 				B = (e, t) => {
 					if (!t) return {};
-					const r = j.prices;
-					w(e, t).forEach(e => {
+					const r = w.prices;
+					j(e, t).forEach(e => {
 						e.price && e.currency && (r[e.currency] = e.price)
 					});
 					const n = h(e, t);
@@ -856,15 +872,15 @@
 				},
 				k = (e, t) => {
 					var r, n, s, o;
-					const c = (null === (o = null === (s = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || j;
+					const c = (null === (o = null === (s = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || w;
 					return {
 						prices: B(e, t),
-						member: c.member || j.member,
-						memberPlural: c.memberPlural || j.memberPlural,
-						memberAlt: c.memberAlt || j.memberAlt,
-						memberAltPlural: c.memberAltPlural || j.memberAltPlural,
-						membership: c.membership || j.membership,
-						membershipAlt: c.membershipAlt || j.membershipAlt
+						member: c.member || w.member,
+						memberPlural: c.memberPlural || w.memberPlural,
+						memberAlt: c.memberAlt || w.memberAlt,
+						memberAltPlural: c.memberAltPlural || w.memberAltPlural,
+						membership: c.membership || w.membership,
+						membershipAlt: c.membershipAlt || w.membershipAlt
 					}
 				},
 				F = e => {
@@ -923,4 +939,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.c1835a24970f32674b48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.f64d30ee830220691996.js.map

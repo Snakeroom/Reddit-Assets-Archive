@@ -1,12 +1,11 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.d99974dc970ec516de3f.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.3ef656f3aafe9a26c44a.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
-		"./node_modules/draft-js/dist/Draft.css": function(e, t, s) {},
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
 			"use strict";
 
-			function a(e) {
+			function r(e) {
 				return Array.prototype.slice.call(arguments, 1).forEach((function(t) {
 					t && Object.keys(t).forEach((function(s) {
 						e[s] = t[s]
@@ -18,14 +17,14 @@
 				return Object.prototype.toString.call(e)
 			}
 
-			function r(e) {
+			function a(e) {
 				return "[object Function]" === n(e)
 			}
 
-			function o(e) {
+			function i(e) {
 				return e.replace(/[.?*+^$[\]\\(){}|-]/g, "\\$&")
 			}
-			var i = {
+			var o = {
 				fuzzyLink: !0,
 				fuzzyEmail: !0,
 				fuzzyIP: !1
@@ -33,61 +32,61 @@
 			var c = {
 					"http:": {
 						validate: function(e, t, s) {
-							var a = e.slice(t);
-							return s.re.http || (s.re.http = new RegExp("^\\/\\/" + s.re.src_auth + s.re.src_host_port_strict + s.re.src_path, "i")), s.re.http.test(a) ? a.match(s.re.http)[0].length : 0
+							var r = e.slice(t);
+							return s.re.http || (s.re.http = new RegExp("^\\/\\/" + s.re.src_auth + s.re.src_host_port_strict + s.re.src_path, "i")), s.re.http.test(r) ? r.match(s.re.http)[0].length : 0
 						}
 					},
 					"https:": "http:",
 					"ftp:": "http:",
 					"//": {
 						validate: function(e, t, s) {
-							var a = e.slice(t);
-							return s.re.no_http || (s.re.no_http = new RegExp("^" + s.re.src_auth + "(?:localhost|(?:(?:" + s.re.src_domain + ")\\.)+" + s.re.src_domain_root + ")" + s.re.src_port + s.re.src_host_terminator + s.re.src_path, "i")), s.re.no_http.test(a) ? t >= 3 && ":" === e[t - 3] ? 0 : t >= 3 && "/" === e[t - 3] ? 0 : a.match(s.re.no_http)[0].length : 0
+							var r = e.slice(t);
+							return s.re.no_http || (s.re.no_http = new RegExp("^" + s.re.src_auth + "(?:localhost|(?:(?:" + s.re.src_domain + ")\\.)+" + s.re.src_domain_root + ")" + s.re.src_port + s.re.src_host_terminator + s.re.src_path, "i")), s.re.no_http.test(r) ? t >= 3 && ":" === e[t - 3] ? 0 : t >= 3 && "/" === e[t - 3] ? 0 : r.match(s.re.no_http)[0].length : 0
 						}
 					},
 					"mailto:": {
 						validate: function(e, t, s) {
-							var a = e.slice(t);
-							return s.re.mailto || (s.re.mailto = new RegExp("^" + s.re.src_email_name + "@" + s.re.src_host_strict, "i")), s.re.mailto.test(a) ? a.match(s.re.mailto)[0].length : 0
+							var r = e.slice(t);
+							return s.re.mailto || (s.re.mailto = new RegExp("^" + s.re.src_email_name + "@" + s.re.src_host_strict, "i")), s.re.mailto.test(r) ? r.match(s.re.mailto)[0].length : 0
 						}
 					}
 				},
 				u = "a[cdefgilmnoqrstuwxz]|b[abdefghijmnorstvwyz]|c[acdfghiklmnoruvwxyz]|d[ejkmoz]|e[cegrstu]|f[ijkmor]|g[abdefghilmnpqrstuwy]|h[kmnrtu]|i[delmnoqrst]|j[emop]|k[eghimnprwyz]|l[abcikrstuvy]|m[acdeghklmnopqrstuvwxyz]|n[acefgilopruz]|om|p[aefghklmnrstwy]|qa|r[eosuw]|s[abcdeghijklmnortuvxyz]|t[cdfghjklmnortvwz]|u[agksyz]|v[aceginu]|w[fs]|y[et]|z[amw]",
-				l = "biz|com|edu|gov|net|org|pro|web|xxx|aero|asia|coop|info|museum|name|shop|рф".split("|");
+				d = "biz|com|edu|gov|net|org|pro|web|xxx|aero|asia|coop|info|museum|name|shop|рф".split("|");
 
-			function d(e) {
+			function l(e) {
 				var t = e.re = s("./node_modules/linkify-it/lib/re.js")(e.__opts__),
-					a = e.__tlds__.slice();
+					r = e.__tlds__.slice();
 
-				function i(e) {
+				function o(e) {
 					return e.replace("%TLDS%", t.src_tlds)
 				}
-				e.onCompile(), e.__tlds_replaced__ || a.push(u), a.push(t.src_xn), t.src_tlds = a.join("|"), t.email_fuzzy = RegExp(i(t.tpl_email_fuzzy), "i"), t.link_fuzzy = RegExp(i(t.tpl_link_fuzzy), "i"), t.link_no_ip_fuzzy = RegExp(i(t.tpl_link_no_ip_fuzzy), "i"), t.host_fuzzy_test = RegExp(i(t.tpl_host_fuzzy_test), "i");
+				e.onCompile(), e.__tlds_replaced__ || r.push(u), r.push(t.src_xn), t.src_tlds = r.join("|"), t.email_fuzzy = RegExp(o(t.tpl_email_fuzzy), "i"), t.link_fuzzy = RegExp(o(t.tpl_link_fuzzy), "i"), t.link_no_ip_fuzzy = RegExp(o(t.tpl_link_no_ip_fuzzy), "i"), t.host_fuzzy_test = RegExp(o(t.tpl_host_fuzzy_test), "i");
 				var c = [];
 
-				function l(e, t) {
+				function d(e, t) {
 					throw new Error('(LinkifyIt) Invalid schema "' + e + '": ' + t)
 				}
 				e.__compiled__ = {}, Object.keys(e.__schemas__).forEach((function(t) {
 					var s = e.__schemas__[t];
 					if (null !== s) {
-						var a = {
+						var r = {
 							validate: null,
 							link: null
 						};
-						if (e.__compiled__[t] = a, "[object Object]" === n(s)) return ! function(e) {
+						if (e.__compiled__[t] = r, "[object Object]" === n(s)) return ! function(e) {
 							return "[object RegExp]" === n(e)
-						}(s.validate) ? r(s.validate) ? a.validate = s.validate : l(t, s) : a.validate = function(e) {
+						}(s.validate) ? a(s.validate) ? r.validate = s.validate : d(t, s) : r.validate = function(e) {
 							return function(t, s) {
-								var a = t.slice(s);
-								return e.test(a) ? a.match(e)[0].length : 0
+								var r = t.slice(s);
+								return e.test(r) ? r.match(e)[0].length : 0
 							}
-						}(s.validate), void(r(s.normalize) ? a.normalize = s.normalize : s.normalize ? l(t, s) : a.normalize = function(e, t) {
+						}(s.validate), void(a(s.normalize) ? r.normalize = s.normalize : s.normalize ? d(t, s) : r.normalize = function(e, t) {
 							t.normalize(e)
 						});
 						! function(e) {
 							return "[object String]" === n(e)
-						}(s) ? l(t, s): c.push(t)
+						}(s) ? d(t, s): c.push(t)
 					}
 				})), c.forEach((function(t) {
 					e.__compiled__[e.__schemas__[t]] && (e.__compiled__[t].validate = e.__compiled__[e.__schemas__[t]].validate, e.__compiled__[t].normalize = e.__compiled__[e.__schemas__[t]].normalize)
@@ -97,10 +96,10 @@
 						t.normalize(e)
 					}
 				};
-				var d = Object.keys(e.__compiled__).filter((function(t) {
+				var l = Object.keys(e.__compiled__).filter((function(t) {
 					return t.length > 0 && e.__compiled__[t]
-				})).map(o).join("|");
-				e.re.schema_test = RegExp("(^|(?!_)(?:[><｜]|" + t.src_ZPCc + "))(" + d + ")", "i"), e.re.schema_search = RegExp("(^|(?!_)(?:[><｜]|" + t.src_ZPCc + "))(" + d + ")", "ig"), e.re.pretest = RegExp("(" + e.re.schema_test.source + ")|(" + e.re.host_fuzzy_test.source + ")|@", "i"),
+				})).map(i).join("|");
+				e.re.schema_test = RegExp("(^|(?!_)(?:[><｜]|" + t.src_ZPCc + "))(" + l + ")", "i"), e.re.schema_search = RegExp("(^|(?!_)(?:[><｜]|" + t.src_ZPCc + "))(" + l + ")", "ig"), e.re.pretest = RegExp("(" + e.re.schema_test.source + ")|(" + e.re.host_fuzzy_test.source + ")|@", "i"),
 					function(e) {
 						e.__index__ = -1, e.__text_cache__ = ""
 					}(e)
@@ -108,53 +107,53 @@
 
 			function m(e, t) {
 				var s = e.__index__,
-					a = e.__last_index__,
-					n = e.__text_cache__.slice(s, a);
-				this.schema = e.__schema__.toLowerCase(), this.index = s + t, this.lastIndex = a + t, this.raw = n, this.text = n, this.url = n
+					r = e.__last_index__,
+					n = e.__text_cache__.slice(s, r);
+				this.schema = e.__schema__.toLowerCase(), this.index = s + t, this.lastIndex = r + t, this.raw = n, this.text = n, this.url = n
 			}
 
-			function h(e, t) {
+			function p(e, t) {
 				var s = new m(e, t);
 				return e.__compiled__[s.schema].normalize(s, e), s
 			}
 
-			function _(e, t) {
-				if (!(this instanceof _)) return new _(e, t);
+			function h(e, t) {
+				if (!(this instanceof h)) return new h(e, t);
 				var s;
 				t || (s = e, Object.keys(s || {}).reduce((function(e, t) {
-					return e || i.hasOwnProperty(t)
-				}), !1) && (t = e, e = {})), this.__opts__ = a({}, i, t), this.__index__ = -1, this.__last_index__ = -1, this.__schema__ = "", this.__text_cache__ = "", this.__schemas__ = a({}, c, e), this.__compiled__ = {}, this.__tlds__ = l, this.__tlds_replaced__ = !1, this.re = {}, d(this)
+					return e || o.hasOwnProperty(t)
+				}), !1) && (t = e, e = {})), this.__opts__ = r({}, o, t), this.__index__ = -1, this.__last_index__ = -1, this.__schema__ = "", this.__text_cache__ = "", this.__schemas__ = r({}, c, e), this.__compiled__ = {}, this.__tlds__ = d, this.__tlds_replaced__ = !1, this.re = {}, l(this)
 			}
-			_.prototype.add = function(e, t) {
-				return this.__schemas__[e] = t, d(this), this
-			}, _.prototype.set = function(e) {
-				return this.__opts__ = a(this.__opts__, e), this
-			}, _.prototype.test = function(e) {
+			h.prototype.add = function(e, t) {
+				return this.__schemas__[e] = t, l(this), this
+			}, h.prototype.set = function(e) {
+				return this.__opts__ = r(this.__opts__, e), this
+			}, h.prototype.test = function(e) {
 				if (this.__text_cache__ = e, this.__index__ = -1, !e.length) return !1;
-				var t, s, a, n, r, o, i, c;
+				var t, s, r, n, a, i, o, c;
 				if (this.re.schema_test.test(e))
-					for ((i = this.re.schema_search).lastIndex = 0; null !== (t = i.exec(e));)
-						if (n = this.testSchemaAt(e, t[2], i.lastIndex)) {
+					for ((o = this.re.schema_search).lastIndex = 0; null !== (t = o.exec(e));)
+						if (n = this.testSchemaAt(e, t[2], o.lastIndex)) {
 							this.__schema__ = t[2], this.__index__ = t.index + t[1].length, this.__last_index__ = t.index + t[0].length + n;
 							break
-						} return this.__opts__.fuzzyLink && this.__compiled__["http:"] && (c = e.search(this.re.host_fuzzy_test)) >= 0 && (this.__index__ < 0 || c < this.__index__) && null !== (s = e.match(this.__opts__.fuzzyIP ? this.re.link_fuzzy : this.re.link_no_ip_fuzzy)) && (r = s.index + s[1].length, (this.__index__ < 0 || r < this.__index__) && (this.__schema__ = "", this.__index__ = r, this.__last_index__ = s.index + s[0].length)), this.__opts__.fuzzyEmail && this.__compiled__["mailto:"] && e.indexOf("@") >= 0 && null !== (a = e.match(this.re.email_fuzzy)) && (r = a.index + a[1].length, o = a.index + a[0].length, (this.__index__ < 0 || r < this.__index__ || r === this.__index__ && o > this.__last_index__) && (this.__schema__ = "mailto:", this.__index__ = r, this.__last_index__ = o)), this.__index__ >= 0
-			}, _.prototype.pretest = function(e) {
+						} return this.__opts__.fuzzyLink && this.__compiled__["http:"] && (c = e.search(this.re.host_fuzzy_test)) >= 0 && (this.__index__ < 0 || c < this.__index__) && null !== (s = e.match(this.__opts__.fuzzyIP ? this.re.link_fuzzy : this.re.link_no_ip_fuzzy)) && (a = s.index + s[1].length, (this.__index__ < 0 || a < this.__index__) && (this.__schema__ = "", this.__index__ = a, this.__last_index__ = s.index + s[0].length)), this.__opts__.fuzzyEmail && this.__compiled__["mailto:"] && e.indexOf("@") >= 0 && null !== (r = e.match(this.re.email_fuzzy)) && (a = r.index + r[1].length, i = r.index + r[0].length, (this.__index__ < 0 || a < this.__index__ || a === this.__index__ && i > this.__last_index__) && (this.__schema__ = "mailto:", this.__index__ = a, this.__last_index__ = i)), this.__index__ >= 0
+			}, h.prototype.pretest = function(e) {
 				return this.re.pretest.test(e)
-			}, _.prototype.testSchemaAt = function(e, t, s) {
+			}, h.prototype.testSchemaAt = function(e, t, s) {
 				return this.__compiled__[t.toLowerCase()] ? this.__compiled__[t.toLowerCase()].validate(e, s, this) : 0
-			}, _.prototype.match = function(e) {
+			}, h.prototype.match = function(e) {
 				var t = 0,
 					s = [];
-				this.__index__ >= 0 && this.__text_cache__ === e && (s.push(h(this, t)), t = this.__last_index__);
-				for (var a = t ? e.slice(t) : e; this.test(a);) s.push(h(this, t)), a = a.slice(this.__last_index__), t += this.__last_index__;
+				this.__index__ >= 0 && this.__text_cache__ === e && (s.push(p(this, t)), t = this.__last_index__);
+				for (var r = t ? e.slice(t) : e; this.test(r);) s.push(p(this, t)), r = r.slice(this.__last_index__), t += this.__last_index__;
 				return s.length ? s : null
-			}, _.prototype.tlds = function(e, t) {
+			}, h.prototype.tlds = function(e, t) {
 				return e = Array.isArray(e) ? e : [e], t ? (this.__tlds__ = this.__tlds__.concat(e).sort().filter((function(e, t, s) {
 					return e !== s[t - 1]
-				})).reverse(), d(this), this) : (this.__tlds__ = e.slice(), this.__tlds_replaced__ = !0, d(this), this)
-			}, _.prototype.normalize = function(e) {
+				})).reverse(), l(this), this) : (this.__tlds__ = e.slice(), this.__tlds_replaced__ = !0, l(this), this)
+			}, h.prototype.normalize = function(e) {
 				e.schema || (e.url = "http://" + e.url), "mailto:" !== e.schema || /^mailto:/i.test(e.url) || (e.url = "mailto:" + e.url)
-			}, _.prototype.onCompile = function() {}, e.exports = _
+			}, h.prototype.onCompile = function() {}, e.exports = h
 		},
 		"./node_modules/linkify-it/lib/re.js": function(e, t, s) {
 			"use strict";
@@ -164,201 +163,30 @@
 				return t.src_pseudo_letter = "(?:(?![><｜]|" + t.src_ZPCc + ")" + t.src_Any + ")", t.src_ip4 = "(?:(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)", t.src_auth = "(?:(?:(?!" + t.src_ZCc + "|[@/\\[\\]()]).)+@)?", t.src_port = "(?::(?:6(?:[0-4]\\d{3}|5(?:[0-4]\\d{2}|5(?:[0-2]\\d|3[0-5])))|[1-5]?\\d{1,4}))?", t.src_host_terminator = "(?=$|[><｜]|" + t.src_ZPCc + ")(?!-|_|:\\d|\\.-|\\.(?!$|" + t.src_ZPCc + "))", t.src_path = "(?:[/?#](?:(?!" + t.src_ZCc + "|[><｜]|[()[\\]{}.,\"'?!\\-]).|\\[(?:(?!" + t.src_ZCc + "|\\]).)*\\]|\\((?:(?!" + t.src_ZCc + "|[)]).)*\\)|\\{(?:(?!" + t.src_ZCc + '|[}]).)*\\}|\\"(?:(?!' + t.src_ZCc + '|["]).)+\\"|\\\'(?:(?!' + t.src_ZCc + "|[']).)+\\'|\\'(?=" + t.src_pseudo_letter + "|[-]).|\\.{2,3}[a-zA-Z0-9%/]|\\.(?!" + t.src_ZCc + "|[.]).|" + (e && e["---"] ? "\\-(?!--(?:[^-]|$))(?:-*)|" : "\\-+|") + "\\,(?!" + t.src_ZCc + ").|\\!(?!" + t.src_ZCc + "|[!]).|\\?(?!" + t.src_ZCc + "|[?]).)+|\\/)?", t.src_email_name = '[\\-;:&=\\+\\$,\\"\\.a-zA-Z0-9_]+', t.src_xn = "xn--[a-z0-9\\-]{1,59}", t.src_domain_root = "(?:" + t.src_xn + "|" + t.src_pseudo_letter + "{1,63})", t.src_domain = "(?:" + t.src_xn + "|(?:" + t.src_pseudo_letter + ")|(?:" + t.src_pseudo_letter + "(?:-(?!-)|" + t.src_pseudo_letter + "){0,61}" + t.src_pseudo_letter + "))", t.src_host = "(?:(?:(?:(?:" + t.src_domain + ")\\.)*" + t.src_domain + "))", t.tpl_host_fuzzy = "(?:" + t.src_ip4 + "|(?:(?:(?:" + t.src_domain + ")\\.)+(?:%TLDS%)))", t.tpl_host_no_ip_fuzzy = "(?:(?:(?:" + t.src_domain + ")\\.)+(?:%TLDS%))", t.src_host_strict = t.src_host + t.src_host_terminator, t.tpl_host_fuzzy_strict = t.tpl_host_fuzzy + t.src_host_terminator, t.src_host_port_strict = t.src_host + t.src_port + t.src_host_terminator, t.tpl_host_port_fuzzy_strict = t.tpl_host_fuzzy + t.src_port + t.src_host_terminator, t.tpl_host_port_no_ip_fuzzy_strict = t.tpl_host_no_ip_fuzzy + t.src_port + t.src_host_terminator, t.tpl_host_fuzzy_test = "localhost|www\\.|\\.\\d{1,3}\\.|(?:\\.(?:%TLDS%)(?:" + t.src_ZPCc + "|>|$))", t.tpl_email_fuzzy = "(^|[><｜]|\\(|" + t.src_ZCc + ")(" + t.src_email_name + "@" + t.tpl_host_fuzzy_strict + ")", t.tpl_link_fuzzy = "(^|(?![.:/\\-_@])(?:[$+<=>^`|｜]|" + t.src_ZPCc + "))((?![$+<=>^`|｜])" + t.tpl_host_port_fuzzy_strict + t.src_path + ")", t.tpl_link_no_ip_fuzzy = "(^|(?![.:/\\-_@])(?:[$+<=>^`|｜]|" + t.src_ZPCc + "))((?![$+<=>^`|｜])" + t.tpl_host_port_no_ip_fuzzy_strict + t.src_path + ")", t
 			}
 		},
-		"./node_modules/lodash/_arrayReduceRight.js": function(e, t) {
-			e.exports = function(e, t, s, a) {
-				var n = null == e ? 0 : e.length;
-				for (a && n && (s = e[--n]); n--;) s = t(s, e[n], n, e);
-				return s
-			}
-		},
-		"./node_modules/lodash/_baseEachRight.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_baseForOwnRight.js"),
-				n = s("./node_modules/lodash/_createBaseEach.js")(a, !0);
-			e.exports = n
-		},
-		"./node_modules/lodash/_baseExtremum.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/isSymbol.js");
-			e.exports = function(e, t, s) {
-				for (var n = -1, r = e.length; ++n < r;) {
-					var o = e[n],
-						i = t(o);
-					if (null != i && (void 0 === c ? i == i && !a(i) : s(i, c))) var c = i,
-						u = o
-				}
-				return u
-			}
-		},
-		"./node_modules/lodash/_baseFilter.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_baseEach.js");
-			e.exports = function(e, t) {
-				var s = [];
-				return a(e, (function(e, a, n) {
-					t(e, a, n) && s.push(e)
-				})), s
-			}
-		},
-		"./node_modules/lodash/_baseForOwnRight.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_baseForRight.js"),
-				n = s("./node_modules/lodash/keys.js");
-			e.exports = function(e, t) {
-				return e && a(e, t, n)
-			}
-		},
-		"./node_modules/lodash/_baseForRight.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_createBaseFor.js")(!0);
-			e.exports = a
-		},
-		"./node_modules/lodash/_baseGt.js": function(e, t) {
-			e.exports = function(e, t) {
-				return e > t
-			}
-		},
-		"./node_modules/lodash/_baseRange.js": function(e, t) {
-			var s = Math.ceil,
-				a = Math.max;
-			e.exports = function(e, t, n, r) {
-				for (var o = -1, i = a(s((t - e) / (n || 1)), 0), c = Array(i); i--;) c[r ? i : ++o] = e, e += n;
-				return c
-			}
-		},
-		"./node_modules/lodash/_baseWhile.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_baseSlice.js");
-			e.exports = function(e, t, s, n) {
-				for (var r = e.length, o = n ? r : -1;
-					(n ? o-- : ++o < r) && t(e[o], o, e););
-				return s ? a(e, n ? 0 : o, n ? o + 1 : r) : a(e, n ? o + 1 : 0, n ? r : o)
-			}
-		},
-		"./node_modules/lodash/_charsEndIndex.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_baseIndexOf.js");
-			e.exports = function(e, t) {
-				for (var s = e.length; s-- && a(t, e[s], 0) > -1;);
-				return s
-			}
-		},
-		"./node_modules/lodash/_createRange.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_baseRange.js"),
-				n = s("./node_modules/lodash/_isIterateeCall.js"),
-				r = s("./node_modules/lodash/toFinite.js");
-			e.exports = function(e) {
-				return function(t, s, o) {
-					return o && "number" != typeof o && n(t, s, o) && (s = o = void 0), t = r(t), void 0 === s ? (s = t, t = 0) : s = r(s), o = void 0 === o ? t < s ? 1 : -1 : r(o), a(t, s, o, e)
-				}
-			}
-		},
-		"./node_modules/lodash/_escapeHtmlChar.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_basePropertyOf.js")({
-				"&": "&amp;",
-				"<": "&lt;",
-				">": "&gt;",
-				'"': "&quot;",
-				"'": "&#39;"
-			});
-			e.exports = a
-		},
-		"./node_modules/lodash/chunk.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_baseSlice.js"),
-				n = s("./node_modules/lodash/_isIterateeCall.js"),
-				r = s("./node_modules/lodash/toInteger.js"),
-				o = Math.ceil,
-				i = Math.max;
-			e.exports = function(e, t, s) {
-				t = (s ? n(e, t, s) : void 0 === t) ? 1 : i(r(t), 0);
-				var c = null == e ? 0 : e.length;
-				if (!c || t < 1) return [];
-				for (var u = 0, l = 0, d = Array(o(c / t)); u < c;) d[l++] = a(e, u, u += t);
-				return d
-			}
-		},
-		"./node_modules/lodash/dropRightWhile.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_baseIteratee.js"),
-				n = s("./node_modules/lodash/_baseWhile.js");
-			e.exports = function(e, t) {
-				return e && e.length ? n(e, a(t, 3), !0, !0) : []
-			}
-		},
-		"./node_modules/lodash/escape.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_escapeHtmlChar.js"),
-				n = s("./node_modules/lodash/toString.js"),
-				r = /[&<>"']/g,
-				o = RegExp(r.source);
-			e.exports = function(e) {
-				return (e = n(e)) && o.test(e) ? e.replace(r, a) : e
-			}
-		},
-		"./node_modules/lodash/filter.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_arrayFilter.js"),
-				n = s("./node_modules/lodash/_baseFilter.js"),
-				r = s("./node_modules/lodash/_baseIteratee.js"),
-				o = s("./node_modules/lodash/isArray.js");
-			e.exports = function(e, t) {
-				return (o(e) ? a : n)(e, r(t, 3))
-			}
-		},
 		"./node_modules/lodash/flatMap.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_baseFlatten.js"),
+			var r = s("./node_modules/lodash/_baseFlatten.js"),
 				n = s("./node_modules/lodash/map.js");
 			e.exports = function(e, t) {
-				return a(n(e, t), 1)
+				return r(n(e, t), 1)
 			}
 		},
-		"./node_modules/lodash/includes.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_baseIndexOf.js"),
-				n = s("./node_modules/lodash/isArrayLike.js"),
-				r = s("./node_modules/lodash/isString.js"),
-				o = s("./node_modules/lodash/toInteger.js"),
-				i = s("./node_modules/lodash/values.js"),
-				c = Math.max;
-			e.exports = function(e, t, s, u) {
-				e = n(e) ? e : i(e), s = s && !u ? o(s) : 0;
-				var l = e.length;
-				return s < 0 && (s = c(l + s, 0)), r(e) ? s <= l && e.indexOf(t, s) > -1 : !!l && a(e, t, s) > -1
-			}
-		},
-		"./node_modules/lodash/maxBy.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_baseExtremum.js"),
-				n = s("./node_modules/lodash/_baseGt.js"),
-				r = s("./node_modules/lodash/_baseIteratee.js");
-			e.exports = function(e, t) {
-				return e && e.length ? a(e, r(t, 2), n) : void 0
-			}
-		},
-		"./node_modules/lodash/range.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_createRange.js")();
-			e.exports = a
-		},
-		"./node_modules/lodash/reduceRight.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_arrayReduceRight.js"),
-				n = s("./node_modules/lodash/_baseEachRight.js"),
-				r = s("./node_modules/lodash/_baseIteratee.js"),
-				o = s("./node_modules/lodash/_baseReduce.js"),
-				i = s("./node_modules/lodash/isArray.js");
-			e.exports = function(e, t, s) {
-				var c = i(e) ? a : o,
-					u = arguments.length < 3;
-				return c(e, r(t, 4), s, u, n)
-			}
-		},
-		"./node_modules/lodash/takeWhile.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_baseIteratee.js"),
-				n = s("./node_modules/lodash/_baseWhile.js");
-			e.exports = function(e, t) {
-				return e && e.length ? n(e, a(t, 3)) : []
-			}
-		},
-		"./node_modules/lodash/trimEnd.js": function(e, t, s) {
-			var a = s("./node_modules/lodash/_baseToString.js"),
-				n = s("./node_modules/lodash/_castSlice.js"),
-				r = s("./node_modules/lodash/_charsEndIndex.js"),
-				o = s("./node_modules/lodash/_stringToArray.js"),
-				i = s("./node_modules/lodash/toString.js"),
-				c = s("./node_modules/lodash/_trimmedEndIndex.js");
-			e.exports = function(e, t, s) {
-				if ((e = i(e)) && (s || void 0 === t)) return e.slice(0, c(e) + 1);
-				if (!e || !(t = a(t))) return e;
-				var u = o(e),
-					l = r(u, o(t)) + 1;
-				return n(u, 0, l).join("")
+		"./node_modules/shallowequal/index.js": function(e, t) {
+			e.exports = function(e, t, s, r) {
+				var n = s ? s.call(r, e, t) : void 0;
+				if (void 0 !== n) return !!n;
+				if (e === t) return !0;
+				if ("object" != typeof e || !e || "object" != typeof t || !t) return !1;
+				var a = Object.keys(e),
+					i = Object.keys(t);
+				if (a.length !== i.length) return !1;
+				for (var o = Object.prototype.hasOwnProperty.bind(t), c = 0; c < a.length; c++) {
+					var u = a[c];
+					if (!o(u)) return !1;
+					var d = e[u],
+						l = t[u];
+					if (!1 === (n = s ? s.call(r, d, l, u) : void 0) || void 0 === n && d !== l) return !1
+				}
+				return !0
 			}
 		},
 		"./node_modules/tlds/index.js": function(e, t) {
@@ -376,6 +204,46 @@
 		"./node_modules/uc.micro/properties/Any/regex.js": function(e, t) {
 			e.exports = /[\0-\uD7FF\uE000-\uFFFF]|[\uD800-\uDBFF][\uDC00-\uDFFF]|[\uD800-\uDBFF](?![\uDC00-\uDFFF])|(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]/
 		},
+		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return o
+			})), s.d(t, "b", (function() {
+				return c
+			})), s.d(t, "c", (function() {
+				return u
+			})), s.d(t, "d", (function() {
+				return d
+			})), s.d(t, "e", (function() {
+				return l
+			})), s.d(t, "f", (function() {
+				return m
+			})), s.d(t, "g", (function() {
+				return p
+			})), s.d(t, "h", (function() {
+				return h
+			})), s.d(t, "i", (function() {
+				return _
+			})), s.d(t, "j", (function() {
+				return b
+			}));
+			var r = s("./src/lib/makeActionCreator/index.ts"),
+				n = s("./src/reddit/actions/modal.ts"),
+				a = s("./src/reddit/constants/modals.ts"),
+				i = s("./src/reddit/actions/economics/subredditPremium/constants.ts");
+			const o = Object(r.a)(i.a),
+				c = Object(r.a)(i.b),
+				u = Object(r.a)(i.c),
+				d = Object(r.a)(i.d),
+				l = Object(r.a)(i.e),
+				m = Object(r.a)(i.f),
+				p = Object(r.a)(i.g),
+				h = Object(r.a)(i.h),
+				_ = Object(r.a)(i.i),
+				b = e => Object(n.h)(a.a.SUBREDDIT_PREMIUM_UPLOAD_MODAL, {
+					uploadAssetType: e
+				})
+		},
 		"./src/reddit/actions/publicAccessNetwork/theaterSettings.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
@@ -383,21 +251,21 @@
 			})), s.d(t, "a", (function() {
 				return u
 			})), s.d(t, "b", (function() {
-				return l
+				return d
 			}));
-			var a = s("./node_modules/uuid/v4.js"),
-				n = s.n(a),
-				r = s("./src/lib/makeActionCreator/index.ts"),
-				o = s("./src/reddit/actions/publicAccessNetwork/constants.ts");
-			const i = Object(r.a)(o.B),
+			var r = s("./node_modules/uuid/v4.js"),
+				n = s.n(r),
+				a = s("./src/lib/makeActionCreator/index.ts"),
+				i = s("./src/reddit/actions/publicAccessNetwork/constants.ts");
+			const o = Object(a.a)(i.B),
 				c = e => async t => {
-					t(i(e))
+					t(o(e))
 				}, u = () => async e => {
-					e(i({
+					e(o({
 						lastChatActivityUtcTs: Date.now()
 					}))
-				}, l = () => async e => {
-					e(i({
+				}, d = () => async e => {
+					e(o({
 						correlationId: n()()
 					}))
 				}
@@ -413,226 +281,99 @@
 				count: "_1v25u3hsWeYJihslYeyZ33"
 			}
 		},
-		"./src/reddit/components/CommentsChat/Comment/ChatIcon/default.tsx": function(e, t, s) {
-			"use strict";
-			var a = s("./src/config.ts"),
-				n = s("./node_modules/lodash/memoize.js"),
-				r = s.n(n),
-				o = s("./node_modules/react/index.js"),
-				i = s.n(o),
-				c = s("./node_modules/react-redux/es/index.js"),
-				u = s("./src/lib/constants/index.ts"),
-				l = s("./src/lib/lessComponent.tsx"),
-				d = ["FF4500", "0DD3BB", "24A0ED", "FFB000", "FF8717", "46D160", "25B79F", "0079D3", "4856A3", "C18D42", "A06A42", "46A508", "008985", "7193FF", "7E53C1", "FFD635", "DDBD37", "D4E815", "94E044", "FF66AC", "DB0064", "FF585B", "EA0027", "A5A4A4", "545452"],
-				m = s("./src/reddit/components/Econ/DefaultAvatar/index.tsx"),
-				h = s("./src/reddit/selectors/experiments/econ/index.ts"),
-				_ = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
-				p = s.n(_);
-			const b = l.a.div("Userpic", p.a);
-			t.a = r()(({
-				defaultImage: e,
-				userId: t
-			}) => {
-				const s = Object(c.e)(h.y),
-					{
-						processingAvatarImageUrl: n
-					} = a.a;
-				if (s) return e ? i.a.createElement("img", {
-					className: p.a.NewUserpic,
-					src: e,
-					alt: "user icon"
-				}) : i.a.createElement(m.a, {
-					className: p.a.NewUserpic,
-					userId: t
-				});
-				const r = (e => e.replace(u.Ib.Account + "_", ""))(t),
-					{
-						avatar: o,
-						color: l
-					} = (e => {
-						const t = d.length,
-							s = parseInt(e, 36),
-							a = s % 20 + 1,
-							n = Math.floor(s / 20) % t;
-						return {
-							avatar: ("0" + a).slice(-2),
-							color: d[n]
-						}
-					})(r),
-					_ = `${n}/avatar_default_${o}_${l}.png`;
-				return i.a.createElement(b, {
-					"data-testid": "old-default-icon",
-					style: {
-						backgroundImage: `url(${_})`,
-						backgroundColor: `#${l}`
-					}
-				})
-			})
-		},
-		"./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less": function(e, t, s) {
-			e.exports = {
-				icon: "_3SwKz63oDhqTWK_aG-xnXF",
-				Userpic: "_1c_u99Y2cLg7hhjeq50Op6",
-				userpic: "_1c_u99Y2cLg7hhjeq50Op6",
-				roundedIcon: "qzfpAikXRAwHLMGlL6_5m",
-				NewUserpic: "_2Zwmb9SDpYPNT8z3bJMLCX",
-				newUserpic: "_2Zwmb9SDpYPNT8z3bJMLCX",
-				TrashIcon: "_2xUH_6ZFDwVzDXthdBMEyN",
-				trashIcon: "_2xUH_6ZFDwVzDXthdBMEyN",
-				ProfileIcon: "_2OVsvDCTt2OzgIct4dAykk",
-				profileIcon: "_2OVsvDCTt2OzgIct4dAykk"
-			}
-		},
-		"./src/reddit/components/CommentsChat/Comment/ChatIcon/index.tsx": function(e, t, s) {
-			"use strict";
-			var a = s("./node_modules/react/index.js"),
-				n = s.n(a),
-				r = s("./node_modules/react-redux/es/index.js"),
-				o = s("./node_modules/reselect/es/index.js"),
-				i = s("./src/lib/lessComponent.tsx"),
-				c = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/default.tsx"),
-				u = s("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
-				l = s("./src/reddit/components/UserIcon/UserIcon.tsx"),
-				d = s("./src/reddit/helpers/userSnoovatar/index.ts"),
-				m = s("./src/reddit/icons/svgs/Remove/index.tsx"),
-				h = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.m.less"),
-				_ = s.n(h);
-			const p = Object(o.c)({
-					account: e => e.user.account
-				}),
-				b = Object(r.b)(p);
-			t.a = i.a.wrapped(b(({
-				account: e,
-				className: t,
-				height: s,
-				icon: a,
-				isLivestreaming: r,
-				isNSFW: o,
-				trash: i,
-				userId: h,
-				width: p
-			}) => {
-				const b = r ? 36 : 20,
-					g = h || `${null==e?void 0:e.id}`,
-					f = {
-						height: s || b,
-						width: p || b,
-						minWidth: p || b
-					};
-				if (i) return n.a.createElement("div", {
-					className: t,
-					style: f
-				}, n.a.createElement(m.a, {
-					className: _.a.TrashIcon
-				}));
-				const y = e && e.id === h ? e.accountIcon : o ? l.a : null != a ? a : void 0;
-				return Object(d.b)(y) ? n.a.createElement("div", {
-					className: t,
-					style: f
-				}, n.a.createElement(u.a, {
-					headshot: y
-				})) : n.a.createElement("div", {
-					className: t,
-					style: f
-				}, n.a.createElement(c.a, {
-					userId: g,
-					defaultImage: y
-				}))
-			}), "ChatIcon", _.a)
-		},
 		"./src/reddit/components/CommentsChat/MessageInput/AwardButton.tsx": function(e, t, s) {
 			"use strict";
-			var a = s("./node_modules/fbt/lib/FbtPublic.js"),
+			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				o = s("./src/lib/classNames/index.ts"),
-				i = s("./src/reddit/controls/Button/index.tsx"),
+				a = s.n(n),
+				i = s("./src/lib/classNames/index.ts"),
+				o = s("./src/reddit/controls/Button/index.tsx"),
 				c = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				u = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./node_modules/react-redux/es/index.js")),
-				l = s("./node_modules/reselect/es/index.js"),
-				d = s("./src/lib/makeCommentsPageKey/index.ts"),
+				d = s("./node_modules/reselect/es/index.js"),
+				l = s("./src/lib/makeCommentsPageKey/index.ts"),
 				m = s("./src/reddit/selectors/comments.ts"),
-				h = s("./src/reddit/selectors/commentSelector.ts"),
-				_ = s("./src/reddit/selectors/posts.ts"),
-				p = s("./src/reddit/selectors/communityAwards.ts"),
+				p = s("./src/reddit/selectors/commentSelector.ts"),
+				h = s("./src/reddit/selectors/posts.ts"),
+				_ = s("./src/reddit/selectors/communityAwards.ts"),
 				b = s("./src/reddit/selectors/gold/awardIcon.ts"),
-				g = s("./src/reddit/icons/fonts/Gift/index.tsx"),
-				f = s("./src/reddit/components/CommentsChat/Comment/AwardCountSpectacle/AwardCountAnimation/index.m.less"),
-				y = s.n(f);
+				f = s("./src/reddit/icons/fonts/Gift/index.tsx"),
+				g = s("./src/reddit/components/CommentsChat/Comment/AwardCountSpectacle/AwardCountAnimation/index.m.less"),
+				y = s.n(g);
 			class v extends n.Component {
 				render() {
 					const {
 						className: e,
 						count: t,
 						iconUrl: s,
-						isAnimated: a
+						isAnimated: r
 					} = this.props;
-					return r.a.createElement("div", {
-						className: Object(o.a)(y.a.container, e, {
-							[y.a.isAnimated]: a
+					return a.a.createElement("div", {
+						className: Object(i.a)(y.a.container, e, {
+							[y.a.isAnimated]: r
 						})
-					}, r.a.createElement(g.a, {
+					}, a.a.createElement(f.a, {
 						className: y.a.gildIcon
-					}), a && s && r.a.createElement("div", {
+					}), r && s && a.a.createElement("div", {
 						className: y.a.awardingIcon,
 						style: {
 							backgroundImage: `url("${s}")`
 						}
-					}), t ? r.a.createElement("div", {
+					}), t ? a.a.createElement("div", {
 						className: y.a.count
 					}, t) : null)
 				}
 			}
-			var x = Object(u.b)(() => Object(l.c)({
+			var k = Object(u.b)(() => Object(d.c)({
 				iconUrl: (e, {
 					awardId: t
 				}) => {
 					if (!t) return;
-					const s = Object(p.a)(e, t);
+					const s = Object(_.a)(e, t);
 					return Object(b.a)(e, {
 						award: s,
 						minSize: 64
 					})
 				}
 			}))(v);
-			const C = Object(u.b)(() => Object(l.a)(e => e, (e, {
+			const x = Object(u.b)(() => Object(d.a)(e => e, (e, {
 					postId: t
 				}) => Object(m.g)(e, {
-					commentsPageKey: Object(d.a)(t)
-				}), _.G, (e, {
+					commentsPageKey: Object(l.a)(t)
+				}), h.G, (e, {
 					postId: t
 				}) => Object(m.u)(e, {
-					commentsPageKey: Object(d.a)(t)
-				}), (e, t, s, a) => {
+					commentsPageKey: Object(l.a)(t)
+				}), (e, t, s, r) => {
 					return {
 						commentAwardIds: t.length ? t.reduce((t, s) => {
-							const a = Object(h.b)(e, {
+							const r = Object(p.b)(e, {
 								commentId: s.id
 							});
-							if (a) {
+							if (r) {
 								const {
 									associatedAwardId: e
-								} = a;
+								} = r;
 								if (e) return [...t, e]
 							}
 							return t
 						}, []) : [],
-						isFullyLoaded: a,
+						isFullyLoaded: r,
 						postAwardCount: s.awardCountsById ? Object.values(s.awardCountsById).reduce((e, t) => e + t, 0) : s.allAwardings ? s.allAwardings.reduce((e, t) => e + t.count, 0) : 0
 					}
 				})),
-				k = e => ({
+				C = e => ({
 					initialCommentAwardIds: e.isFullyLoaded ? [...e.commentAwardIds] : [],
 					initialPostAwardCount: e.isFullyLoaded ? e.postAwardCount : 0,
 					prevIsFullyLoaded: e.isFullyLoaded,
 					prevPostId: e.postId
 				});
-			class j extends n.Component {
+			class w extends n.Component {
 				constructor(e) {
-					super(e), this.state = k(e)
+					super(e), this.state = C(e)
 				}
 				static getDerivedStateFromProps(e, t) {
-					return t.prevPostId !== e.postId || !t.prevIsFullyLoaded && e.isFullyLoaded ? k(e) : null
+					return t.prevPostId !== e.postId || !t.prevIsFullyLoaded && e.isFullyLoaded ? C(e) : null
 				}
 				render() {
 					const {
@@ -640,56 +381,56 @@
 						initialCommentAwardIds: t
 					} = this.state, {
 						postAwardCount: s,
-						commentAwardIds: a,
+						commentAwardIds: r,
 						className: n,
-						isFullyLoaded: o
+						isFullyLoaded: i
 					} = this.props;
-					if (!o) return r.a.createElement(x, {
+					if (!i) return a.a.createElement(k, {
 						className: n,
 						count: 0
 					});
-					const i = Math.max(s, e + a.length - t.length),
-						c = a.length - 1,
-						u = a[c],
-						l = a.length !== t.length;
-					return r.a.createElement(x, {
+					const o = Math.max(s, e + r.length - t.length),
+						c = r.length - 1,
+						u = r[c],
+						d = r.length !== t.length;
+					return a.a.createElement(k, {
 						awardId: u,
 						className: n,
-						count: i,
-						isAnimated: l,
+						count: o,
+						isAnimated: d,
 						key: c
 					})
 				}
 			}
-			var E = C(j),
-				w = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
-				D = s.n(w);
+			var F = x(w),
+				D = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
+				E = s.n(D);
 			t.a = ({
 				postId: e,
 				showSubmitInsideTextArea: t,
 				isLivestreaming: n,
 				handleGiveAward: u,
-				sendEvent: l
+				sendEvent: d
 			}) => {
-				return r.a.createElement(i.e, {
-					className: Object(o.a)(D.a.ChatButton, {
-						[D.a.LivestreamingChatButton]: n,
-						[D.a.leftPad]: !t
+				return a.a.createElement(o.e, {
+					className: Object(i.a)(E.a.ChatButton, {
+						[E.a.LivestreamingChatButton]: n,
+						[E.a.leftPad]: !t
 					}),
-					"aria-label": a.fbt._("give award", null, {
+					"aria-label": r.fbt._("give award", null, {
 						hk: "1nXRWY"
 					}),
 					onClick: async t => {
 						t.stopPropagation();
-						const a = Object(c.e)(c.a.GildingFlow, !0);
-						u(a);
+						const r = Object(c.e)(c.a.GildingFlow, !0);
+						u(r);
 						const {
-							clickGildEvent: r,
-							clickRpanGiveAward: o
+							clickGildEvent: a,
+							clickRpanGiveAward: i
 						} = await Promise.resolve().then(s.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
-						l((n ? o : r)(e))
+						d((n ? i : a)(e))
 					}
-				}, r.a.createElement(E, {
+				}, a.a.createElement(F, {
 					postId: e
 				}))
 			}
@@ -736,55 +477,55 @@
 		"./src/reddit/components/CommentsChat/MessageInput/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t);
-			var a = s("./node_modules/fbt/lib/FbtPublic.js"),
+			var r = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./node_modules/lodash/noop.js"),
-				r = s.n(n),
-				o = s("./node_modules/lodash/throttle.js"),
-				i = s.n(o),
+				a = s.n(n),
+				i = s("./node_modules/lodash/throttle.js"),
+				o = s.n(i),
 				c = s("./node_modules/react/index.js"),
 				u = s.n(c),
-				l = s("./node_modules/react-redux/es/index.js"),
-				d = s("./node_modules/reselect/es/index.js"),
+				d = s("./node_modules/react-redux/es/index.js"),
+				l = s("./node_modules/reselect/es/index.js"),
 				m = s("./src/lib/classNames/index.ts"),
-				h = s("./src/lib/lessComponent.tsx"),
-				_ = s("./src/reddit/models/PostDraft/index.ts"),
-				p = s("./src/reddit/actions/comment/authoring.ts"),
+				p = s("./src/lib/lessComponent.tsx"),
+				h = s("./src/reddit/models/PostDraft/index.ts"),
+				_ = s("./src/reddit/actions/comment/authoring.ts"),
 				b = s("./src/reddit/actions/gold/modals.ts"),
-				g = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
-				f = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.tsx"),
+				f = s("./src/reddit/actions/publicAccessNetwork/theaterSettings.ts"),
+				g = s("./src/reddit/components/CommentsChat/Comment/ChatIcon/index.tsx"),
 				y = s("./src/reddit/components/RichTextEditor/index.tsx"),
 				v = s("./src/reddit/components/RichTextEditor/RTEState/index.tsx"),
-				x = s("./src/reddit/components/RichTextJsonChatReply/index.tsx"),
-				C = s("./src/reddit/controls/Button/index.tsx"),
-				k = s("./src/reddit/controls/ErrorText/index.tsx"),
-				j = s("./src/reddit/helpers/correlationIdTracker.ts"),
-				E = s("./src/reddit/helpers/getRichTextContent/index.ts"),
-				w = s("./src/reddit/helpers/richTextEditor/index.ts"),
-				D = s("./src/reddit/helpers/trackers/rpan.ts"),
-				F = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				k = s("./src/reddit/components/RichTextJsonChatReply/index.tsx"),
+				x = s("./src/reddit/controls/Button/index.tsx"),
+				C = s("./src/reddit/controls/ErrorText/index.tsx"),
+				w = s("./src/reddit/helpers/correlationIdTracker.ts"),
+				F = s("./src/reddit/helpers/getRichTextContent/index.ts"),
+				D = s("./src/reddit/helpers/richTextEditor/index.ts"),
+				E = s("./src/reddit/helpers/trackers/rpan.ts"),
+				j = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				A = s("./src/reddit/icons/svgs/Send/index.tsx"),
-				I = s("./src/reddit/models/PostCreationForm/index.ts"),
-				O = s("./src/reddit/selectors/comments.ts"),
+				O = s("./src/reddit/models/PostCreationForm/index.ts"),
+				I = s("./src/reddit/selectors/comments.ts"),
 				z = s("./src/reddit/selectors/posts.ts"),
 				S = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				L = s("./src/reddit/components/CommentsChat/MessageInput/AwardButton.tsx"),
-				N = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
-				B = s.n(N);
-			const R = {},
+				P = s("./src/reddit/components/CommentsChat/MessageInput/AwardButton.tsx"),
+				L = s("./src/reddit/components/CommentsChat/MessageInput/index.m.less"),
+				B = s.n(L);
+			const N = {},
 				T = 1e3,
-				P = "chat_submission_from_rte",
-				U = h.a.form("Form", B.a),
-				M = h.a.wrapped(C.e, "ChatButton", B.a),
-				q = h.a.div("CloseIconWrap", B.a),
-				Z = h.a.div("Reply", B.a),
-				V = h.a.div("ReplyAuthor", B.a),
-				G = h.a.div("ReplyComment", B.a),
-				K = h.a.wrapped(y.a, "RichTextEditor", B.a),
-				W = h.a.wrapped(f.a, "SmallChatUserIcon", B.a),
-				H = Object(l.b)(() => Object(d.c)({
-					draft: O.i,
-					errorMsgs: O.K,
-					hasError: O.v,
+				R = "chat_submission_from_rte",
+				M = p.a.form("Form", B.a),
+				U = p.a.wrapped(x.e, "ChatButton", B.a),
+				Z = p.a.div("CloseIconWrap", B.a),
+				q = p.a.div("Reply", B.a),
+				G = p.a.div("ReplyAuthor", B.a),
+				V = p.a.div("ReplyComment", B.a),
+				K = p.a.wrapped(y.a, "RichTextEditor", B.a),
+				H = p.a.wrapped(g.a, "SmallChatUserIcon", B.a),
+				W = Object(d.b)(() => Object(l.c)({
+					draft: I.i,
+					errorMsgs: I.K,
+					hasError: I.v,
 					liveStreamingChatCharacterLimit: e => {
 						const t = Object(S.a)(e);
 						return t ? t - 3 : 197
@@ -794,41 +535,41 @@
 				}), (e, {
 					isEditing: t,
 					comment: s,
-					commentsPageKey: a,
+					commentsPageKey: r,
 					draftKey: n,
-					postId: r,
-					replyComment: o,
-					isLivestreaming: i,
+					postId: a,
+					replyComment: i,
+					isLivestreaming: o,
 					scrollToBottom: c
 				}) => ({
-					dispatchSubmit: async (o, u, l) => {
-						t && s ? await e(Object(p.i)({
+					dispatchSubmit: async (i, u, d) => {
+						t && s ? await e(Object(_.i)({
 							id: s.id,
-							commentsPageKey: a,
+							commentsPageKey: r,
 							depth: 0,
 							draftKey: n,
-							formData: o
-						})) : l ? e(Object(p.l)({
-							commentsPageKey: a,
+							formData: i
+						})) : d ? e(Object(_.l)({
+							commentsPageKey: r,
 							draftKey: n,
-							parentCommentDepth: l.depth,
-							parentCommentId: l.id,
-							formData: o,
+							parentCommentDepth: d.depth,
+							parentCommentId: d.id,
+							formData: i,
 							editorMode: u
-						})) : await e(Object(p.n)(r, a, n, o, u, !0, i)), c && c()
+						})) : await e(Object(_.n)(a, r, n, i, u, !0, o)), c && c()
 					},
 					handleGiveAward: t => e(Object(b.d)({
 						correlationId: t,
-						thingId: r
+						thingId: a
 					})),
-					onCancelEdit: () => s && e(Object(p.c)({
+					onCancelEdit: () => s && e(Object(_.c)({
 						commentId: s.id,
-						commentsPageKey: a
+						commentsPageKey: r
 					})),
-					onLivestreamingChatMessageEdit: () => e(Object(g.a)()),
-					closeReply: () => o && e(Object(p.a)({
-						parentCommentId: o.id,
-						commentsPageKey: a
+					onLivestreamingChatMessageEdit: () => e(Object(f.a)()),
+					closeReply: () => i && e(Object(_.a)({
+						parentCommentId: i.id,
+						commentsPageKey: r
 					}))
 				}));
 			class J extends u.a.Component {
@@ -839,8 +580,8 @@
 						this.state.hasChanged && (t = this.state.hasChanged);
 						const {
 							isLivestreaming: s,
-							liveStreamingChatCharacterLimit: a
-						} = this.props, n = !!s && e.isBound && e.editorState.getCurrentContent().getPlainText().length > a;
+							liveStreamingChatCharacterLimit: r
+						} = this.props, n = !!s && e.isBound && e.editorState.getCurrentContent().getPlainText().length > r;
 						t && e.isBound && (t = Boolean(t && e.editorState.getCurrentContent().getPlainText().trim())), this.setState(() => ({
 							showError: n,
 							rteState: e,
@@ -848,23 +589,23 @@
 						})), this.props.isLivestreaming && t && this.passChangeToLivestreaming()
 					}, this.handleFocus = () => {
 						this.props.isLivestreaming && this.passChangeToLivestreaming(), this.props.onFocusMessageInput && this.props.onFocusMessageInput()
-					}, this.passChangeToLivestreaming = i()(() => this.props.onLivestreamingChatMessageEdit(), T, {
+					}, this.passChangeToLivestreaming = o()(() => this.props.onLivestreamingChatMessageEdit(), T, {
 						leading: !1,
 						trailing: !0
 					}), this.onClickGiveAward = async e => {
 						e.stopPropagation();
 						const {
 							handleGiveAward: t,
-							isLivestreaming: a,
+							isLivestreaming: r,
 							postId: n,
-							sendEvent: r
+							sendEvent: a
 						} = this.props;
-						t(Object(j.e)(j.a.GildingFlow, !0));
+						t(Object(w.e)(w.a.GildingFlow, !0));
 						const {
-							clickGildEvent: o,
-							clickRpanGiveAward: i
+							clickGildEvent: i,
+							clickRpanGiveAward: o
 						} = await Promise.resolve().then(s.bind(null, "./src/reddit/helpers/trackers/gild.ts"));
-						r((a ? i : o)(n))
+						a((r ? o : i)(n))
 					}, this.handleCloseReply = e => {
 						e.preventDefault(), this.props.closeReply()
 					}, this.handleSubmit = e => {
@@ -872,15 +613,15 @@
 					}, this.onSubmit = () => {
 						if (this.canSubmit()) {
 							const e = {
-								commentMode: I.i.RICH_TEXT,
-								draftType: _.c.replyToComment,
+								commentMode: O.i.RICH_TEXT,
+								draftType: h.c.replyToComment,
 								rteState: this.state.rteState,
 								hasFocus: !0,
 								text: ""
 							};
-							this.cleanInputForm(), this.props.dispatchSubmit(e, I.i.RICH_TEXT, this.props.replyComment)
+							this.cleanInputForm(), this.props.dispatchSubmit(e, O.i.RICH_TEXT, this.props.replyComment)
 						}
-						this.props.isLivestreaming && this.props.sendEvent(Object(D.z)(this.props.postId))
+						this.props.isLivestreaming && this.props.sendEvent(Object(E.z)(this.props.postId))
 					}, this.canSubmit = () => Boolean(!this.props.pending && this.state.hasChanged && !this.state.showError), this.state = {
 						hasChanged: !1,
 						showError: e.hasError,
@@ -915,37 +656,37 @@
 						isEditing: t,
 						isLivestreaming: s,
 						sendEvent: n,
-						handleGiveAward: o,
-						liveStreamingChatCharacterLimit: i,
+						handleGiveAward: i,
+						liveStreamingChatCharacterLimit: o,
 						pending: c,
-						post: l,
-						postId: d,
-						replyComment: h
-					} = this.props, _ = s ? a.fbt._("Send message ({characterLimit} character limit)", [a.fbt._param("characterLimit", i.toLocaleString())], {
+						post: d,
+						postId: l,
+						replyComment: p
+					} = this.props, h = s ? r.fbt._("Send message ({characterLimit} character limit)", [r.fbt._param("characterLimit", o.toLocaleString())], {
 						hk: "RIcb6"
-					}) : a.fbt._("Send a message (use the Enter key)", null, {
+					}) : r.fbt._("Send a message (use the Enter key)", null, {
 						hk: "3yojgj"
-					}), p = l.isGildable && s && !t, b = s;
+					}), _ = d.isGildable && s && !t, b = s;
 					return u.a.createElement("div", {
 						className: Object(m.a)(B.a.FormWrapper, {
 							[B.a.LivestreamingWrapper]: s
 						})
-					}, !t && h && u.a.createElement(Z, {
+					}, !t && p && u.a.createElement(q, {
 						className: Object(m.a)({
 							[B.a.isLivestreaming]: s
 						})
-					}, u.a.createElement(G, {
+					}, u.a.createElement(V, {
 						onClick: this.handleCloseReply
-					}, u.a.createElement(V, null, a.fbt._("Replying to u/ {username}:", [a.fbt._param("username", h.author)], {
+					}, u.a.createElement(G, null, r.fbt._("Replying to u/ {username}:", [r.fbt._param("username", p.author)], {
 						hk: "2YZre5"
-					})), u.a.createElement(x.a, {
+					})), u.a.createElement(k.a, {
 						className: B.a.RichTextJson,
-						key: `rich-text-${h.id}`,
-						content: Object(E.a)(h),
-						rtJsonElementProps: R
-					}), u.a.createElement(q, null, u.a.createElement(F.a, null)))), u.a.createElement("div", {
+						key: `rich-text-${p.id}`,
+						content: Object(F.a)(p),
+						rtJsonElementProps: N
+					}), u.a.createElement(Z, null, u.a.createElement(j.a, null)))), u.a.createElement("div", {
 						className: B.a.inputLine
-					}, u.a.createElement(U, {
+					}, u.a.createElement(M, {
 						className: Object(m.a)({
 							[B.a.Editing]: t
 						}),
@@ -962,8 +703,8 @@
 						focusableContentRTEClassName: Object(m.a)({
 							[B.a.LivestreamingFocusableContent]: s && !t
 						}),
-						dataTestId: P,
-						editorType: w.a.Comment,
+						dataTestId: R,
+						editorType: D.a.Comment,
 						initialMinHeight: 20,
 						initialHeight: void 0,
 						rteState: this.state.rteState,
@@ -971,165 +712,83 @@
 						onChange: this.handleChange,
 						onFocus: this.handleFocus,
 						onSubmit: this.onSubmit,
-						placeholderText: _,
+						placeholderText: h,
 						readOnly: c,
 						showSubmitButton: b && !this.state.showError,
 						submitButtonClassName: Object(m.a)(B.a.insetSubmitButton, B.a.submitButton),
 						submitOnEnter: !0,
-						trackToolbarClick: r.a,
+						trackToolbarClick: a.a,
 						hideToolbar: !0,
 						noBorder: !0,
 						isChatPost: !0
-					}), t && u.a.createElement(M, {
+					}), t && u.a.createElement(U, {
 						className: Object(m.a)(B.a.ChatButton, {
 							[B.a.LivestreamingResetButton]: s
 						}),
 						type: "reset"
-					}, u.a.createElement(F.a, null)), !b && u.a.createElement(M, {
+					}, u.a.createElement(j.a, null)), !b && u.a.createElement(U, {
 						className: Object(m.a)(B.a.ChatButton, {
 							[B.a.LivestreamingChatButton]: s && !t,
 							[B.a.LivestreamingResetButton]: s && t
 						}),
 						type: "submit",
 						disabled: !this.canSubmit(),
-						"aria-label": a.fbt._("send a message", null, {
+						"aria-label": r.fbt._("send a message", null, {
 							hk: "4bL65Y"
 						})
-					}, u.a.createElement(A.a, null))), p && u.a.createElement(L.a, {
+					}, u.a.createElement(A.a, null))), _ && u.a.createElement(P.a, {
 						showSubmitInsideTextArea: b,
 						isLivestreaming: s,
 						sendEvent: n,
-						postId: d,
-						handleGiveAward: o
-					})), this.state.showError && Object(k.c)(e.length ? e : [`Input text must be less than ${i} characters`]))
+						postId: l,
+						handleGiveAward: i
+					})), this.state.showError && Object(C.c)(e.length ? e : [`Input text must be less than ${o} characters`]))
 				}
 			}
 			const X = ({
 				isEditing: e,
 				isLivestreaming: t
-			}) => t ? null : e ? u.a.createElement(W, {
+			}) => t ? null : e ? u.a.createElement(H, {
 				height: 20,
 				width: 20
-			}) : u.a.createElement(f.a, {
+			}) : u.a.createElement(g.a, {
 				height: 25,
 				width: 25
 			});
-			t.default = H(J)
+			t.default = W(J)
 		},
-		"./src/reddit/components/Econ/DefaultAvatar/index.m.less": function(e, t, s) {
+		"./src/reddit/components/FocusableContent/index.m.less": function(e, t, s) {
 			e.exports = {
-				defaultAvatar: "_8gjnVWVhueS_hMv9By4wh"
+				FocusableContent: "_3MknXZVbkWU8JL9XGlzASi",
+				focusableContent: "_3MknXZVbkWU8JL9XGlzASi",
+				isFocused: "_3F2J0fSnCI3ZvF_tBSaV0s",
+				noBorder: "_1CpUVAt2tGEwaaBV3nZNJs"
 			}
 		},
-		"./src/reddit/components/Econ/DefaultAvatar/index.tsx": function(e, t, s) {
+		"./src/reddit/components/FocusableContent/index.tsx": function(e, t, s) {
 			"use strict";
-			var a = s("./src/config.ts"),
-				n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				o = s("./src/lib/classNames/index.ts"),
-				i = s("./src/reddit/components/Econ/DefaultAvatar/index.m.less"),
-				c = s.n(i);
-			t.a = ({
-				className: e,
-				style: t = {},
-				userId: s
-			}) => {
-				const {
-					processingAvatarImageUrl: n
-				} = a.a, i = `url(${n}/defaults/v2/avatar_default_${(e=>{let t=0;for(const s of e)t+=s.charCodeAt();return t%8})(s)}.png)`;
-				return r.a.createElement("div", {
-					className: Object(o.a)(c.a.avatar, e),
-					style: {
-						...t,
-						backgroundImage: i
-					}
+			var r = s("./node_modules/react/index.js"),
+				n = s.n(r),
+				a = s("./src/lib/classNames/index.ts"),
+				i = s("./src/lib/lessComponent.tsx"),
+				o = s("./src/reddit/components/FocusableContent/index.m.less"),
+				c = s.n(o);
+			t.a = i.a.wrapped(e => n.a.createElement("div", {
+				className: Object(a.a)(e.className, {
+					[c.a.isFocused]: e.isFocused,
+					[c.a.noBorder]: e.noBorder
 				})
-			}
-		},
-		"./src/reddit/components/RichTextJsonChatReply/index.m.less": function(e, t, s) {
-			e.exports = {
-				Container: "qqC8Lcm050i_jAM3CePWY",
-				container: "qqC8Lcm050i_jAM3CePWY"
-			}
-		},
-		"./src/reddit/components/RichTextJsonChatReply/index.tsx": function(e, t, s) {
-			"use strict";
-			var a = s("./node_modules/react/index.js"),
-				n = s.n(a),
-				r = s("./src/lib/classNames/index.ts"),
-				o = s("./src/reddit/components/RichTextJson/index.tsx"),
-				i = s("./src/reddit/components/RichTextJson/elements.tsx"),
-				c = s("./src/reddit/components/RichTextJson/renderers.tsx"),
-				u = s("./src/reddit/models/RichTextJson/index.ts");
-			const l = e => n.a.createElement(i.f, null, e),
-				d = e => {
-					const t = [],
-						s = e.c || [],
-						a = s.length;
-					for (let n = 0; n < a; n++) {
-						const e = s[n];
-						t.push(e.e === u.w ? e.t : Object(c.e)(e, {}, n))
-					}
-					return n.a.createElement(n.a.Fragment, null, t)
-				},
-				m = e => e.c && e.c.length ? n.a.createElement(n.a.Fragment, null, Object(c.i)(e.c, null, {})) : n.a.createElement("br", null);
-			var h = s("./src/reddit/constants/elementClassNames.ts"),
-				_ = s("./src/reddit/components/RichTextJsonChatReply/index.m.less"),
-				p = s.n(_);
-			const b = s("./src/lib/lessComponent.tsx").a.div("Container", p.a),
-				g = {
-					[u.a]: "<animated image>",
-					[u.b]: "<quote>",
-					[u.c]: "<code block>",
-					[u.h]: "<embed>",
-					[u.m]: "<image>",
-					[u.p]: "<list>",
-					[u.z]: "<table>",
-					[u.D]: "<video>"
-				};
-			t.a = e => {
-				const {
-					className: t,
-					content: s
-				} = e, a = s.document, i = [], c = Object(o.b)(a), _ = Object(o.c)(a);
-				if (-1 !== c)
-					for (let n = c; n <= _; n++) {
-						const e = a[n],
-							t = e && g[e.e];
-						switch (e.e) {
-							case u.l:
-								break;
-							case u.b:
-							case u.c:
-							case u.p:
-							case u.z:
-							case u.m:
-							case u.a:
-							case u.D:
-							case u.h:
-								i.push(l(t));
-								break;
-							case u.k:
-								i.push(d(e));
-								break;
-							case u.u:
-								i.push(m(e))
-						}
-					}
-				return n.a.createElement(b, {
-					className: Object(r.a)(h.j, t)
-				}, i)
-			}
+			}, e.children), "FocusableContent", c.a)
 		},
 		"./src/reddit/constants/chat.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return a
+				return r
 			}));
-			var a;
+			var r;
 			! function(e) {
 				e.None = "none", e.Compact = "compact", e.Full = "full_screen"
-			}(a || (a = {}));
+			}(r || (r = {}));
 			var n;
 			! function(e) {
 				e.SubredditChatNotifcationFtux = "chat_subreddit_notification_ftux"
@@ -1138,119 +797,119 @@
 		"./src/reddit/helpers/trackers/rpan.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return a
+				return r
 			})), s.d(t, "H", (function() {
-				return l
-			})), s.d(t, "i", (function() {
 				return d
+			})), s.d(t, "i", (function() {
+				return l
 			})), s.d(t, "j", (function() {
 				return m
 			})), s.d(t, "D", (function() {
-				return h
-			})), s.d(t, "A", (function() {
-				return _
-			})), s.d(t, "E", (function() {
 				return p
+			})), s.d(t, "A", (function() {
+				return h
+			})), s.d(t, "E", (function() {
+				return _
 			})), s.d(t, "C", (function() {
 				return b
 			})), s.d(t, "B", (function() {
-				return g
-			})), s.d(t, "u", (function() {
 				return f
+			})), s.d(t, "u", (function() {
+				return g
 			})), s.d(t, "v", (function() {
 				return y
 			})), s.d(t, "x", (function() {
 				return v
 			})), s.d(t, "r", (function() {
-				return x
-			})), s.d(t, "p", (function() {
-				return C
-			})), s.d(t, "q", (function() {
 				return k
+			})), s.d(t, "p", (function() {
+				return x
+			})), s.d(t, "q", (function() {
+				return C
 			})), s.d(t, "o", (function() {
-				return j
-			})), s.d(t, "z", (function() {
-				return E
-			})), s.d(t, "s", (function() {
 				return w
-			})), s.d(t, "y", (function() {
-				return D
-			})), s.d(t, "G", (function() {
+			})), s.d(t, "z", (function() {
 				return F
+			})), s.d(t, "s", (function() {
+				return D
+			})), s.d(t, "y", (function() {
+				return E
+			})), s.d(t, "G", (function() {
+				return j
 			})), s.d(t, "t", (function() {
 				return A
 			})), s.d(t, "c", (function() {
-				return I
-			})), s.d(t, "n", (function() {
 				return O
+			})), s.d(t, "n", (function() {
+				return I
 			})), s.d(t, "k", (function() {
 				return z
 			})), s.d(t, "b", (function() {
 				return S
 			})), s.d(t, "d", (function() {
-				return L
+				return P
 			})), s.d(t, "e", (function() {
-				return N
+				return L
 			})), s.d(t, "w", (function() {
 				return B
 			})), s.d(t, "F", (function() {
-				return R
+				return N
 			})), s.d(t, "f", (function() {
 				return T
 			})), s.d(t, "l", (function() {
-				return P
+				return R
 			})), s.d(t, "m", (function() {
-				return U
-			})), s.d(t, "g", (function() {
 				return M
+			})), s.d(t, "g", (function() {
+				return U
 			})), s.d(t, "h", (function() {
-				return q
+				return Z
 			}));
-			var a, n = s("./src/reddit/constants/chat.ts"),
-				r = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
-				o = s("./src/reddit/selectors/telemetry.ts");
+			var r, n = s("./src/reddit/constants/chat.ts"),
+				a = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
+				i = s("./src/reddit/selectors/telemetry.ts");
 			! function(e) {
 				e.Theater = "theater", e.DU = "discovery_unit", e.Feed = "feed_post"
-			}(a || (a = {}));
-			const i = (e, t) => {
+			}(r || (r = {}));
+			const o = (e, t) => {
 					if (t) {
-						const s = o.C(e, t.post.id),
-							a = o.J(e, t.post.id),
-							n = o.jb(e);
-						if (t.post.authorInfo && a && (a.authorId = t.post.authorInfo.id), s) {
+						const s = i.B(e, t.post.id),
+							r = i.I(e, t.post.id),
+							n = i.ib(e);
+						if (t.post.authorInfo && r && (r.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
-							const a = Object(r.j)(e, {
+							const r = Object(a.j)(e, {
 								streamIdFromPath: t.post.id
 							});
-							a === r.a.LIVE ? s.type = "stream_live" : a === r.a.VOD ? s.type = "stream_vod" : a === r.a.UNAVAILABLE && (s.type = "stream_unavailable")
+							r === a.a.LIVE ? s.type = "stream_live" : r === a.a.VOD ? s.type = "stream_vod" : r === a.a.UNAVAILABLE && (s.type = "stream_unavailable")
 						}
 						return {
-							post: a,
+							post: r,
 							media: s,
 							subreddit: n
 						}
 					}
 					return {
-						subreddit: o.jb(e)
+						subreddit: i.ib(e)
 					}
 				},
 				c = (e, t, s) => {
 					if (!t || !s) return;
-					const a = Object(r.j)(e, {
+					const r = Object(a.j)(e, {
 							streamIdFromPath: t.post.id
 						}),
-						o = t.chat_disabled || s.chatState === n.a.None;
+						i = t.chat_disabled || s.chatState === n.a.None;
 					return {
 						id: s.id,
 						sessionDurationMs: s.sessionDurationMs,
 						watchDurationMs: s.watchDurationMs,
 						heartbeatDurationMs: s.heartbeatDurationMs,
-						isLive: a === r.a.LIVE,
+						isLive: r === a.a.LIVE,
 						playheadOffsetMs: s.playheadOffsetMs,
 						timestampMs: s.timestampMs,
 						startTimeMs: s.startTimeMs,
 						volume: s.volume,
-						chatState: o ? n.a.None : n.a.Compact,
+						chatState: i ? n.a.None : n.a.Compact,
 						scrubbingStartMs: s.scrubbingStartMs,
 						scrubbingEndMs: s.scrubbingEndMs,
 						playerType: s.playerType
@@ -1259,52 +918,52 @@
 				u = e => ({
 					correlationId: e.publicAccessNetwork.theaterSettings.correlationId
 				}),
-				l = () => e => ({
+				d = () => e => ({
 					source: "stream_du",
 					action: "view",
 					noun: "stream_du",
-					...i(e)
+					...o(e)
 				}),
-				d = () => e => ({
+				l = () => e => ({
 					source: "stream_du",
 					action: "click",
 					noun: "show_less",
-					...i(e)
+					...o(e)
 				}),
 				m = (e, t) => s => ({
 					source: "stream_du",
 					action: "click",
 					noun: "enlarge",
-					...i(s, e),
-					actionInfo: o.d(s, {
+					...o(s, e),
+					actionInfo: i.d(s, {
 						position: t || 0
 					})
 				}),
-				h = (e, t) => s => ({
+				p = (e, t) => s => ({
 					source: "stream_player",
 					action: "fail",
 					noun: "stream",
 					playback: c(s, e, t),
 					...u(s),
 					...e && {
-						...i(s, e)
+						...o(s, e)
 					}
 				}),
-				_ = (e, t) => s => ({
+				h = (e, t) => s => ({
 					source: "stream_player",
 					action: "heartbeat",
 					noun: "stream",
 					playback: c(s, e, t),
 					...u(s),
-					...i(s, e)
+					...o(s, e)
 				}),
-				p = (e, t) => s => ({
+				_ = (e, t) => s => ({
 					source: "stream_player",
 					action: "play",
 					noun: "stream",
 					playback: c(s, e, t),
 					...u(s),
-					...i(s, e)
+					...o(s, e)
 				}),
 				b = (e, t) => s => ({
 					source: "stream_player",
@@ -1312,276 +971,313 @@
 					noun: "stream",
 					playback: c(s, e, t),
 					...u(s),
-					...i(s, e)
+					...o(s, e)
 				}),
-				g = (e, t, s) => a => ({
+				f = (e, t, s) => r => ({
 					source: "stream_player",
 					action: "click",
 					noun: e,
-					playback: c(a, t, s),
-					...u(a),
-					...i(a, t)
+					playback: c(r, t, s),
+					...u(r),
+					...o(r, t)
 				}),
-				f = (e, t, s, a) => n => ({
+				g = (e, t, s, r) => n => ({
 					source: "stream_player",
 					action: "click",
 					noun: e,
 					playback: c(n, t, s),
 					...u(n),
-					...i(n, t),
-					actionInfo: o.d(n, {
-						referralId: a
+					...o(n, t),
+					actionInfo: i.d(n, {
+						referralId: r
 					})
 				}),
-				y = (e, t, s) => a => ({
+				y = (e, t, s) => r => ({
 					source: "stream_player",
 					action: "click",
 					noun: e,
-					playback: c(a, t, s),
-					...u(a),
-					...i(a, t)
+					playback: c(r, t, s),
+					...u(r),
+					...o(r, t)
 				}),
 				v = e => t => ({
 					source: "stream_player",
 					action: "click",
 					noun: "stream_from_desktop",
 					...u(t),
-					...i(t, e)
+					...o(t, e)
 				}),
-				x = (e, t) => s => ({
+				k = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "upvote",
 					playback: c(s, e, t),
 					...u(s),
-					...i(s, e)
+					...o(s, e)
 				}),
-				C = (e, t) => s => ({
+				x = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "downvote",
 					playback: c(s, e, t),
 					...u(s),
-					...i(s, e)
+					...o(s, e)
 				}),
-				k = (e, t) => s => ({
+				C = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "report",
 					playback: c(s, e, t),
 					...u(s),
-					...i(s, e)
+					...o(s, e)
 				}),
-				j = (e, t) => s => ({
+				w = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "chat",
 					playback: c(s, e, t),
-					...i(s, e)
+					...o(s, e)
 				}),
-				E = e => t => {
-					const s = Object(r.l)(t, e);
+				F = e => t => {
+					const s = Object(a.l)(t, e);
 					return {
 						source: "stream_chat",
 						action: "click",
 						noun: "send_chat",
-						...i(t, s)
+						...o(t, s)
 					}
 				},
-				w = (e, t, s) => a => ({
+				D = (e, t, s) => r => ({
 					source: "stream_player",
 					action: "click",
 					noun: "confirm_subreddit",
 					targetSubreddit: {
 						name: e.name.toLowerCase()
 					},
-					playback: c(a, t, s),
-					...i(a, t)
+					playback: c(r, t, s),
+					...o(r, t)
 				}),
-				D = (e, t) => s => ({
+				E = (e, t) => s => ({
 					source: "stream_player",
 					action: "scrub",
 					noun: "video",
 					playback: c(s, e, t),
 					...u(s)
 				}),
-				F = e => t => ({
+				j = e => t => ({
 					source: "post",
 					action: "view",
 					noun: "post",
-					profile: o.S(t),
-					screen: o.bb(t),
-					...i(t, e)
+					profile: i.R(t),
+					screen: i.ab(t),
+					...o(t, e)
 				}),
 				A = e => t => {
-					const s = i(t, e);
+					const s = o(t, e);
 					return {
 						source: "post",
 						action: "consume",
 						noun: "post",
-						profile: o.S(t),
-						screen: o.bb(t),
+						profile: i.R(t),
+						screen: i.ab(t),
 						...s
 					}
 				},
-				I = e => t => ({
-					source: "stream_player",
-					action: "click",
-					noun: "follow",
-					...i(t, e)
-				}),
 				O = e => t => ({
 					source: "stream_player",
 					action: "click",
+					noun: "follow",
+					...o(t, e)
+				}),
+				I = e => t => ({
+					source: "stream_player",
+					action: "click",
 					noun: "unfollow",
-					...i(t, e)
+					...o(t, e)
 				}),
 				z = e => t => ({
 					source: "stream_player",
 					action: "click",
 					noun: "subscribe",
-					...i(t, e),
-					targetSubreddit: o.jb(t)
+					...o(t, e),
+					targetSubreddit: i.ib(t)
 				}),
 				S = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "close",
 					playback: c(s, e, t),
-					...i(s, e)
+					...o(s, e)
 				}),
-				L = (e, t) => s => ({
+				P = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "pause",
 					playback: c(s, e, t),
-					...i(s, e)
+					...o(s, e)
 				}),
-				N = (e, t) => s => ({
+				L = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "play",
 					playback: c(s, e, t),
-					...i(s, e)
+					...o(s, e)
 				}),
 				B = (e, t) => s => ({
 					source: "stream_player",
 					action: "mute",
 					noun: "volume",
 					playback: c(s, e, t),
-					...i(s, e)
+					...o(s, e)
 				}),
-				R = (e, t) => s => ({
+				N = (e, t) => s => ({
 					source: "stream_player",
 					action: "unmute",
 					noun: "volume",
 					playback: c(s, e, t),
-					...i(s, e)
+					...o(s, e)
 				}),
 				T = (e, t) => s => ({
 					source: "stream_player",
 					action: "click",
 					noun: "replay_video",
 					playback: c(s, e, t),
-					...i(s, e)
+					...o(s, e)
 				}),
-				P = (e, t) => s => ({
+				R = (e, t) => s => ({
 					source: "stream_player",
 					action: "swipe",
 					noun: "next",
 					playback: c(s, e, t),
-					...i(s, e),
+					...o(s, e),
 					...u(s)
 				}),
-				U = (e, t) => s => ({
+				M = (e, t) => s => ({
 					source: "stream_player",
 					action: "swipe",
 					noun: "previous",
 					playback: c(s, e, t),
-					...i(s, e),
+					...o(s, e),
 					...u(s)
 				}),
-				M = (e, t) => s => ({
+				U = (e, t) => s => ({
 					source: "rpanstudio_banner",
 					action: "click",
 					noun: e,
-					...i(s, t),
+					...o(s, t),
 					...u(s)
 				}),
-				q = (e, t) => s => ({
+				Z = (e, t) => s => ({
 					source: "rpanstudio_modal",
 					action: "click",
 					noun: e,
-					...i(s, t),
+					...o(s, t),
 					...u(s)
 				})
 		},
-		"./src/reddit/models/PublicAccessNetwork/index.ts": function(e, t, s) {
+		"./src/reddit/models/Payments/index.ts": function(e, t, s) {
 			"use strict";
-			var a;
-			s.d(t, "a", (function() {
+			var r, n, a, i;
+			s.d(t, "b", (function() {
+					return n
+				})), s.d(t, "a", (function() {
 					return a
 				})),
 				function(e) {
+					e.PayPal = "paypal", e.Stripe = "stripe"
+				}(r || (r = {})),
+				function(e) {
+					e.PayPal = "PAYPAL", e.Stripe = "STRIPE"
+				}(n || (n = {})),
+				function(e) {
+					e.NewPayPal = "new-paypal", e.NewStripe = "new-stripe", e.SavedPayPal = "saved-paypal", e.SavedStripe = "saved-stripe"
+				}(a || (a = {})),
+				function(e) {
+					e.Comment = "comment", e.Post = "post", e.Profile = "profile", e.Subreddit = "subreddit"
+				}(i || (i = {}))
+		},
+		"./src/reddit/models/Product/index.ts": function(e, t, s) {
+			"use strict";
+			var r;
+
+			function n(e) {
+				return e.substring(e.lastIndexOf("|") + 1)
+			}
+			s.d(t, "a", (function() {
+					return r
+				})), s.d(t, "b", (function() {
+					return n
+				})),
+				function(e) {
+					e.Badge = "badge", e.EmotesPack = "emotes_pack", e.Giphy = "giphy", e.Membership = "membership"
+				}(r || (r = {}))
+		},
+		"./src/reddit/models/PublicAccessNetwork/index.ts": function(e, t, s) {
+			"use strict";
+			var r;
+			s.d(t, "a", (function() {
+					return r
+				})),
+				function(e) {
 					e.NOT_STARTED = "NOT_STARTED", e.PUBLISHED = "PUBLISHED", e.IS_LIVE = "IS_LIVE", e.DISCONNECTED = "DISCONNECTED", e.KILLED = "KILLED", e.PURGED = "PURGED", e.ENDED = "ENDED"
-				}(a || (a = {}))
+				}(r || (r = {}))
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/streams.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "l", (function() {
-				return C
+				return x
 			})), s.d(t, "m", (function() {
-				return E
-			})), s.d(t, "i", (function() {
 				return F
+			})), s.d(t, "i", (function() {
+				return j
 			})), s.d(t, "d", (function() {
 				return z
 			})), s.d(t, "h", (function() {
 				return S
 			})), s.d(t, "k", (function() {
-				return L
+				return P
 			})), s.d(t, "c", (function() {
-				return N
+				return L
 			})), s.d(t, "f", (function() {
 				return B
 			})), s.d(t, "a", (function() {
-				return P
+				return R
 			})), s.d(t, "j", (function() {
-				return U
-			})), s.d(t, "b", (function() {
 				return M
+			})), s.d(t, "b", (function() {
+				return U
 			})), s.d(t, "e", (function() {
-				return q
-			})), s.d(t, "g", (function() {
 				return Z
+			})), s.d(t, "g", (function() {
+				return q
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var a = s("./node_modules/reselect/es/index.js"),
+			var r = s("./node_modules/reselect/es/index.js"),
 				n = s("./src/lib/objectSelector/index.ts"),
-				r = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
-				o = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
-				i = s("./src/reddit/selectors/posts.ts"),
+				a = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
+				i = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
+				o = s("./src/reddit/selectors/posts.ts"),
 				c = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
 				u = s("./node_modules/lodash/memoize.js");
-			const l = e => e.publicAccessNetwork.listings,
-				d = s.n(u)()(e => Object(n.a)(Object(a.a)(l, t => e && t.hasOwnProperty(e) ? t[e] : [])));
+			const d = e => e.publicAccessNetwork.listings,
+				l = s.n(u)()(e => Object(n.a)(Object(r.a)(d, t => e && t.hasOwnProperty(e) ? t[e] : [])));
 			var m = s("./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts");
-			const h = e => e.publicAccessNetwork.models,
-				_ = e => e.publicAccessNetwork.reports.reported,
-				p = e => e.publicAccessNetwork.history,
+			const p = e => e.publicAccessNetwork.models,
+				h = e => e.publicAccessNetwork.reports.reported,
+				_ = e => e.publicAccessNetwork.history,
 				b = e => e.publicAccessNetwork.history.cursor,
-				g = e => e.publicAccessNetwork.history.visitOrder,
-				f = e => e.publicAccessNetwork.hlsStreams,
-				y = Object(a.a)(f, e => e.ended),
-				v = Object(a.a)(f, e => e.removed),
-				x = Object(a.a)(h, y, v, (e, t, s) => {
-					const a = t.reduce((e, t) => {
+				f = e => e.publicAccessNetwork.history.visitOrder,
+				g = e => e.publicAccessNetwork.hlsStreams,
+				y = Object(r.a)(g, e => e.ended),
+				v = Object(r.a)(g, e => e.removed),
+				k = Object(r.a)(p, y, v, (e, t, s) => {
+					const r = t.reduce((e, t) => {
 						const s = e[t];
 						if (!s) return e;
-						const a = s.stream.state,
-							n = R(a, o.a.ENDED) ? o.a.ENDED : a,
-							r = s.stream.vod_accessible;
-						return n === a && !0 === r ? e : {
+						const r = s.stream.state,
+							n = N(r, i.a.ENDED) ? i.a.ENDED : r,
+							a = s.stream.vod_accessible;
+						return n === r && !0 === a ? e : {
 							...e,
 							[t]: {
 								...s,
@@ -1596,10 +1292,10 @@
 					return s.reduce((e, t) => {
 						const s = e[t];
 						if (!s) return e;
-						const a = s.stream.state,
-							n = R(a, o.a.ENDED) ? o.a.ENDED : a,
-							r = s.stream.vod_accessible;
-						return n === a && !1 === r ? e : {
+						const r = s.stream.state,
+							n = N(r, i.a.ENDED) ? i.a.ENDED : r,
+							a = s.stream.vod_accessible;
+						return n === r && !1 === a ? e : {
 							...e,
 							[t]: {
 								...s,
@@ -1610,149 +1306,444 @@
 								}
 							}
 						}
-					}, a)
+					}, r)
 				}),
-				C = (e, t) => {
-					return x(e)[Object(r.g)(t)]
+				x = (e, t) => {
+					return k(e)[Object(a.g)(t)]
 				},
-				k = Object(a.a)((e, {
+				C = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t, (e, t) => d(t.listingName)(e, t), x, _, i.h, (e, t, s, a, n) => {
-					const i = [];
+				}) => t, (e, t) => l(t.listingName)(e, t), k, h, o.h, (e, t, s, r, n) => {
+					const o = [];
 					if (e) {
-						const t = Object(r.g)(e);
-						s[t] && i.push(t)
+						const t = Object(a.g)(e);
+						s[t] && o.push(t)
 					}
-					const c = i.concat(t),
+					const c = o.concat(t),
 						u = [...new Set(c)],
-						l = new Set([...a, ...n]);
+						d = new Set([...r, ...n]);
 					return u.filter(e => {
 						const t = s[e];
-						return !l.has(e) && !t.post.isHidden && t.stream.state !== o.a.KILLED && t.stream.state !== o.a.PURGED
+						return !d.has(e) && !t.post.isHidden && t.stream.state !== i.a.KILLED && t.stream.state !== i.a.PURGED
 					})
 				}),
-				j = Object(a.a)((e, {
+				w = Object(r.a)((e, {
 					count: t
-				}) => t, x, (e, {
+				}) => t, k, (e, {
 					listingName: t,
 					streamIdFromPath: s
-				}) => k(e, {
+				}) => C(e, {
 					listingName: t,
 					streamIdFromPath: s
 				}), (e, t, s) => {
-					const a = s.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
-					return e ? a.slice(0, e) : a
+					const r = s.map(e => t[e]).sort((e, t) => t.rank - e.rank).map(e => e.post.id);
+					return e ? r.slice(0, e) : r
 				}),
-				E = Object(a.a)(x, j, (e, t) => {
+				F = Object(r.a)(k, w, (e, t) => {
 					const s = t[0];
 					if (s) return e[s]
 				}),
-				w = Object(a.a)(g, (e, {
+				D = Object(r.a)(f, (e, {
 					related: t,
 					streamIdFromPath: s,
-					subreddit: a
-				}) => j(e, {
-					listingName: t || a,
+					subreddit: r
+				}) => w(e, {
+					listingName: t || r,
 					streamIdFromPath: s
 				}), (e, t) => {
 					const s = new Set(e),
-						a = t.filter(e => !s.has(e));
-					if (a.length) return a[0]
+						r = t.filter(e => !s.has(e));
+					if (r.length) return r[0]
 				}),
-				D = Object(a.a)((e, {
+				E = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t, x, (e, {
+				}) => t, k, (e, {
 					related: t,
 					streamIdFromPath: s,
-					subreddit: a
-				}) => j(e, {
-					listingName: t || a,
+					subreddit: r
+				}) => w(e, {
+					listingName: t || r,
 					streamIdFromPath: s
-				}), p, (e, t, s, a) => {
+				}), _, (e, t, s, r) => {
 					if (!s.length) return;
 					const n = s.map(e => t[e]).filter(t => t && t.post.id !== e),
-						r = n.find(e => e.stream.state === o.a.IS_LIVE);
-					if (r) return r.post.id;
-					const i = n.find(e => {
+						a = n.find(e => e.stream.state === i.a.IS_LIVE);
+					if (a) return a.post.id;
+					const o = n.find(e => {
 						if (!e.stream.vod_accessible) return !1;
-						return (a.timestamps[e.post.id] || 0) < e.broadcast_time
+						return (r.timestamps[e.post.id] || 0) < e.broadcast_time
 					});
-					return i ? i.post.id : void 0
+					return o ? o.post.id : void 0
 				}),
-				F = Object(n.a)(Object(a.a)(D, x, (e, t) => e ? t[e] : void 0)),
-				A = Object(a.a)((e, {
+				j = Object(n.a)(Object(r.a)(E, k, (e, t) => e ? t[e] : void 0)),
+				A = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t ? Object(r.g)(t) : void 0, D, _, i.h, (e, {
+				}) => t ? Object(a.g)(t) : void 0, E, h, o.h, (e, {
 					related: t,
 					streamIdFromPath: s,
-					subreddit: a
-				}) => j(e, {
-					listingName: t || a,
+					subreddit: r
+				}) => w(e, {
+					listingName: t || r,
 					streamIdFromPath: s
-				}), (e, t, s, a, n) => !e || s.includes(e) || a.includes(e) ? t || n[0] : e),
-				I = Object(a.a)(b, g, w, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
-				O = Object(a.a)(b, g, (e, t) => {
+				}), (e, t, s, r, n) => !e || s.includes(e) || r.includes(e) ? t || n[0] : e),
+				O = Object(r.a)(b, f, D, (e, t, s) => e < t.length - 1 ? t[e + 1] : s),
+				I = Object(r.a)(b, f, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				z = Object(n.a)(Object(a.a)(A, x, (e, t) => e ? t[e] : void 0)),
-				S = Object(n.a)(Object(a.a)(I, x, (e, t) => e ? t[e] : void 0)),
-				L = Object(n.a)(Object(a.a)(O, x, (e, t) => e ? t[e] : void 0)),
-				N = (Object(n.a)(Object(a.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, x, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
+				z = Object(n.a)(Object(r.a)(A, k, (e, t) => e ? t[e] : void 0)),
+				S = Object(n.a)(Object(r.a)(O, k, (e, t) => e ? t[e] : void 0)),
+				P = Object(n.a)(Object(r.a)(I, k, (e, t) => e ? t[e] : void 0)),
+				L = (Object(n.a)(Object(r.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, k, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
 					...t[s],
 					preloadedPreviewUrl: e[s]
-				})))), Object(a.a)(A, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
-				B = Object(a.a)((e, {
+				})))), Object(r.a)(A, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
+				B = Object(r.a)((e, {
 					streamIdFromPath: t
-				}) => t ? C(e, t) : void 0, e => !e || e.chat_disabled || e.post.isArchived || e.post.isLocked);
+				}) => t ? x(e, t) : void 0, e => !e || e.chat_disabled || e.post.isArchived || e.post.isLocked);
 
-			function R(e, t) {
+			function N(e, t) {
 				const s = {
-					[o.a.NOT_STARTED]: 0,
-					[o.a.PUBLISHED]: 1,
-					[o.a.IS_LIVE]: 2,
-					[o.a.DISCONNECTED]: 2,
-					[o.a.ENDED]: 3,
-					[o.a.KILLED]: 4,
-					[o.a.PURGED]: 4
+					[i.a.NOT_STARTED]: 0,
+					[i.a.PUBLISHED]: 1,
+					[i.a.IS_LIVE]: 2,
+					[i.a.DISCONNECTED]: 2,
+					[i.a.ENDED]: 3,
+					[i.a.KILLED]: 4,
+					[i.a.PURGED]: 4
 				};
 				return s[t] >= s[e]
 			}
-			const T = Object(a.a)(A, p, (e, t) => e && t.timestamps[e] || 0);
-			var P;
+			const T = Object(r.a)(A, _, (e, t) => e && t.timestamps[e] || 0);
+			var R;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
-			}(P || (P = {}));
-			const U = Object(a.a)(A, x, m.b, (e, t, s) => {
-					if (s) return P.INTRO;
-					const a = e && t[e];
-					if (!a) return P.UNAVAILABLE;
-					const n = a.stream.state;
-					return n === o.a.IS_LIVE || n === o.a.DISCONNECTED ? P.LIVE : n === o.a.ENDED && a.stream.vod_accessible ? P.VOD : P.UNAVAILABLE
+			}(R || (R = {}));
+			const M = Object(r.a)(A, k, m.b, (e, t, s) => {
+					if (s) return R.INTRO;
+					const r = e && t[e];
+					if (!r) return R.UNAVAILABLE;
+					const n = r.stream.state;
+					return n === i.a.IS_LIVE || n === i.a.DISCONNECTED ? R.LIVE : n === i.a.ENDED && r.stream.vod_accessible ? R.VOD : R.UNAVAILABLE
 				}),
-				M = Object(a.a)(z, U, m.b, c.b, c.o, (e, t, s, a, n) => s ? a : e ? t === P.LIVE || t === P.VOD ? e.stream.hls_url : n : void 0),
-				q = Object(a.a)(z, U, T, (e, t, s) => e ? t === P.LIVE ? e.broadcast_time : t === P.VOD && s < e.broadcast_time ? s : 0 : 0),
-				Z = (e, t) => {
-					const s = h(e);
+				U = Object(r.a)(z, M, m.b, c.b, c.o, (e, t, s, r, n) => s ? r : e ? t === R.LIVE || t === R.VOD ? e.stream.hls_url : n : void 0),
+				Z = Object(r.a)(z, M, T, (e, t, s) => e ? t === R.LIVE ? e.broadcast_time : t === R.VOD && s < e.broadcast_time ? s : 0 : 0),
+				q = (e, t) => {
+					const s = p(e);
 					return !!s && s[t] && s[t].chat_disabled
 				}
 		},
 		"./src/reddit/selectors/PublicAccessNetwork/theaterSettings.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return i
+				return o
 			})), s.d(t, "c", (function() {
 				return c
 			})), s.d(t, "a", (function() {
 				return u
 			}));
-			var a = s("./node_modules/reselect/es/index.js"),
+			var r = s("./node_modules/reselect/es/index.js"),
 				n = s("./src/reddit/actions/publicAccessNetwork/constants.ts"),
-				r = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const o = e => e.publicAccessNetwork.theaterSettings,
-				i = Object(a.a)(o, r.n, (e, t) => t && !e.isIntroFinished),
-				c = Object(a.a)(o, e => e.lastChatActivityUtcTs),
+				a = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
+			const i = e => e.publicAccessNetwork.theaterSettings,
+				o = Object(r.a)(i, a.n, (e, t) => t && !e.isIntroFinished),
+				c = Object(r.a)(i, e => e.lastChatActivityUtcTs),
 				u = e => !!e && e + n.a > Date.now()
+		},
+		"./src/reddit/selectors/economics.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "c", (function() {
+				return b
+			})), s.d(t, "o", (function() {
+				return f
+			})), s.d(t, "a", (function() {
+				return g
+			})), s.d(t, "x", (function() {
+				return y
+			})), s.d(t, "f", (function() {
+				return v
+			})), s.d(t, "i", (function() {
+				return k
+			})), s.d(t, "q", (function() {
+				return x
+			})), s.d(t, "h", (function() {
+				return C
+			})), s.d(t, "z", (function() {
+				return w
+			})), s.d(t, "l", (function() {
+				return F
+			})), s.d(t, "n", (function() {
+				return D
+			})), s.d(t, "e", (function() {
+				return E
+			})), s.d(t, "d", (function() {
+				return j
+			})), s.d(t, "j", (function() {
+				return A
+			})), s.d(t, "p", (function() {
+				return O
+			})), s.d(t, "k", (function() {
+				return S
+			})), s.d(t, "r", (function() {
+				return L
+			})), s.d(t, "y", (function() {
+				return B
+			})), s.d(t, "u", (function() {
+				return N
+			})), s.d(t, "v", (function() {
+				return T
+			})), s.d(t, "b", (function() {
+				return R
+			})), s.d(t, "w", (function() {
+				return M
+			})), s.d(t, "s", (function() {
+				return U
+			})), s.d(t, "t", (function() {
+				return Z
+			})), s.d(t, "g", (function() {
+				return q
+			})), s.d(t, "m", (function() {
+				return G
+			}));
+			s("./node_modules/core-js/modules/web.dom.iterable.js");
+			var r = s("./src/reddit/featureFlags/index.ts"),
+				n = s("./src/reddit/helpers/economics/sortBadges.ts"),
+				a = s("./src/reddit/helpers/richTextJson/index.ts"),
+				i = s("./src/reddit/models/Badge/index.ts"),
+				o = s("./src/reddit/models/Badge/managementPage.ts"),
+				c = s("./src/reddit/models/Payments/index.ts"),
+				u = s("./src/reddit/models/Product/index.ts"),
+				d = s("./src/reddit/reducers/economics/paymentSystems/index.ts"),
+				l = s("./src/reddit/reducers/economics/subredditPremium/index.ts"),
+				m = s("./src/reddit/selectors/commentSelector.ts"),
+				p = s("./src/reddit/selectors/gold/powerups/index.ts"),
+				h = s("./src/reddit/selectors/gold/powerups/benefitSettings.ts");
+			const _ = [],
+				b = (e, t) => {
+					const s = e.economics.subredditPremium[t];
+					if (s && s.status === l.a.Fetched) {
+						const e = s.data.subscription,
+							t = e && e.active;
+						if (t) {
+							let e = Object.keys(t);
+							return e.length > 1 && (e = e.filter(e => "provisional_membership" !== e)), t[e[0]] || null
+						}
+					}
+					return null
+				},
+				f = (e, t) => {
+					const s = b(e, t);
+					return s && s.endsAt || null
+				};
+			var g;
+			! function(e) {
+				e[e.DontKnow = 0] = "DontKnow", e[e.NotSubscribed = 1] = "NotSubscribed", e[e.Subscribed = 2] = "Subscribed"
+			}(g || (g = {}));
+			const y = (e, t) => {
+					const s = e.economics.subredditPremium[t];
+					if (s && s.status === l.a.Fetched) {
+						const s = f(e, t),
+							r = Date.now();
+						return s && r < s ? g.Subscribed : g.NotSubscribed
+					}
+					return g.DontKnow
+				},
+				v = (e, t) => {
+					const s = e.user.account,
+						r = e.economics.subredditPremium[t];
+					if (s && r && r.status === l.a.Fetched) {
+						const r = ((e.users.appliedBadges[s.id] || {})[t] || _).map(t => e.badges.models[t]).filter(Boolean);
+						if (r) return {
+							[o.a.Loyalty]: r.find(e => e.placement === i.a.First),
+							[o.a.Achievement]: r.find(e => e.placement === i.a.Second),
+							[o.a.Cosmetic]: r.find(e => !e.placement)
+						}
+					}
+					return {
+						[o.a.Loyalty]: void 0,
+						[o.a.Achievement]: void 0,
+						[o.a.Cosmetic]: void 0
+					}
+				};
+
+			function k(e, t) {
+				return (null == e ? void 0 : e.length) ? Object(n.a)(e.map(e => t[e]).filter(Boolean)) : _
+			}
+			const x = (e, t, s) => {
+					var n;
+					if (!r.d.spBadges(e)) return _;
+					return k(null === (n = e.users.appliedBadges[s]) || void 0 === n ? void 0 : n[t], e.badges.models)
+				},
+				C = (e, t) => {
+					const s = e.economics.subredditPremium[t.subredditId];
+					if (s && s.status === l.a.Fetched) {
+						const e = s.raw.collections[t.collectionId];
+						if (e) return {
+							highlight: e.extra && e.extra.style && e.extra.style.color,
+							title: e.title
+						}
+					}
+				};
+
+			function w(e, t) {
+				const s = (e.economics.me.data.specialMemberships || {})[t];
+				return !!(s && s.settings && s.settings.optOut)
+			}
+
+			function F(e, t) {
+				const {
+					badge: s,
+					subredditId: r
+				} = t, n = e.user.account ? e.user.account.id : void 0;
+				if (Object(i.e)(s) && s.userId === n) return s;
+				const a = e.badges.models,
+					o = e.user.ownedBadges[r] || {},
+					c = Object(i.e)(s) ? s.type : s.id;
+				return Object.keys(o).map(e => a[e]).find(e => e && e.type === c)
+			}
+
+			function D(e, t, s, r) {
+				const n = e.economics.subredditPremium[t];
+				if (n && n.status === l.a.Fetched) {
+					if (s === o.a.Loyalty || s === o.a.Achievement) return n.data.collections[s];
+					if (s === o.a.Cosmetic && r) return n.data.collections[s][r]
+				}
+				return _
+			}
+
+			function E(e, t) {
+				const s = D(e, t, o.a.Loyalty).find(e => "membership" === e.id);
+				return s ? [].concat(s.locked, s.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : _
+			}
+
+			function j(e, t) {
+				const s = e.economics.subredditPremium[t];
+				if (s && s.status === l.a.Fetched) {
+					const e = s.data.collections[o.a.Cosmetic];
+					return Object.values(e).reduce((e, t) => e.concat(t), []).reduce((e, t) => e.concat(t.locked, t.unlocked), []).filter(i.f)
+				}
+				return _
+			}
+
+			function A(e, t) {
+				return D(e, t, o.a.Cosmetic, o.c.Gallery).some(e => e.locked.some(e => Object(i.f)(e) || !!e.price))
+			}
+			const O = e => {
+				const t = [],
+					s = e.economics.paymentSystems;
+				if (s.status === d.a.Fetched && s.data.stripe && s.data.stripe.sources) {
+					const e = s.data.stripe.sources;
+					for (const s in e) {
+						const r = e[s];
+						t.push({
+							display: `${r.brand} •••• ${r.last4}`,
+							id: s,
+							type: c.a.SavedStripe
+						})
+					}
+				}
+				if (s.status === d.a.Fetched && s.data.braintree && s.data.braintree.sources) {
+					const e = s.data.braintree.sources;
+					for (const s in e) {
+						const r = e[s];
+						"PayPal" === r.brand && t.push({
+							display: "PayPal",
+							id: r.id,
+							type: c.a.SavedPayPal
+						})
+					}
+				}
+				return t
+			};
+			var I;
+			! function(e) {
+				e[e.Fetched = 0] = "Fetched", e[e.Fetching = 1] = "Fetching", e[e.NotFetched = 2] = "NotFetched"
+			}(I || (I = {}));
+			const z = {
+					prices: {},
+					member: "Supporter",
+					memberPlural: "Supporters",
+					memberAlt: "Subreddit Supporter",
+					memberAltPlural: "Subreddit Supporters",
+					membership: "Membership",
+					membershipAlt: "Supporter Membership"
+				},
+				S = (e, t) => Object.values(e.products.models).filter(e => e.type === u.a.Membership && t && e.subredditId === t),
+				P = (e, t) => {
+					if (!t) return {};
+					const s = z.prices;
+					S(e, t).forEach(e => {
+						e.price && e.currency && (s[e.currency] = e.price)
+					});
+					const r = b(e, t);
+					return r && r.price && r.currency && (s[r.currency] = r.price), s
+				},
+				L = (e, t) => {
+					var s, r, n, a;
+					const i = (null === (a = null === (n = null === (r = null === (s = e.features) || void 0 === s ? void 0 : s.crypto) || void 0 === r ? void 0 : r.points) || void 0 === n ? void 0 : n[t || ""]) || void 0 === a ? void 0 : a.nomenclature) || z;
+					return {
+						prices: P(e, t),
+						member: i.member || z.member,
+						memberPlural: i.memberPlural || z.memberPlural,
+						memberAlt: i.memberAlt || z.memberAlt,
+						memberAltPlural: i.memberAltPlural || z.memberAltPlural,
+						membership: i.membership || z.membership,
+						membershipAlt: i.membershipAlt || z.membershipAlt
+					}
+				},
+				B = e => {
+					const t = e.economics.paymentSystems;
+					return !!(t.status === d.a.Fetched && t.data && t.data.tips && t.data.tips.usdr && t.data.tips.usdr.allowed)
+				},
+				N = (e, t) => {
+					const s = e.user.ownedBadges[t] || {};
+					return !!Object.keys(s).length
+				},
+				T = e => {
+					const t = e.economics.paymentSystems;
+					return t.status === d.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
+				},
+				R = (e, {
+					subredditId: t
+				}) => {
+					if (!t) return;
+					return e.economics.emotes[t]
+				},
+				M = (e, t) => {
+					const s = t && e.economics.gifs[t];
+					return !!s && s.hasGifProduct
+				},
+				U = (e, t, s) => {
+					if (Object(p.r)(e, {
+							subredditId: t
+						})) return !0;
+					const r = "replyToPost" !== s && Object(m.b)(e, {
+						commentId: s
+					});
+					return !(!r || !Object(a.a)(r))
+				},
+				Z = (e, t, s) => {
+					if (!Object(h.b)(e, {
+							subredditId: t
+						})) return !1;
+					if (Object(p.s)(e, {
+							subredditId: t
+						})) return !0;
+					const n = "replyToPost" !== s && Object(m.b)(e, {
+						commentId: s
+					});
+					if (n && Object(a.b)(n)) return !0;
+					const i = r.d.spGiphy(e),
+						o = M(e, t);
+					return !(!i || !o) || i && o
+				},
+				q = (e, t, s) => {
+					if (t) {
+						const r = e.economics.banners.dismissedBanners[t];
+						if (r && r.data) return !!r.data[s]
+					}
+				},
+				G = e => e.economics.pointsCopy.data
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.d99974dc970ec516de3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.3ef656f3aafe9a26c44a.js.map

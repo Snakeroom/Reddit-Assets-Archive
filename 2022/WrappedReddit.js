@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/WrappedReddit.c7b04989c158152cd794.js
-// Retrieved at 3/2/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/WrappedReddit.94f1403027ed20682c42.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["WrappedReddit"], {
 		"./assets/fonts/RedditSans/font.less": function(a, e, c) {},
@@ -421,7 +421,7 @@
 					noun: "subreddit",
 					source: "recap",
 					action: "click",
-					recap: W.X(e),
+					recap: W.W(e),
 					subreddit: {
 						id: a
 					}
@@ -431,7 +431,7 @@
 					noun: "post",
 					source: "recap",
 					action: "click",
-					recap: W.X(e),
+					recap: W.W(e),
 					post: {
 						id: a
 					}
@@ -444,8 +444,8 @@
 				K = c("./src/config.ts"),
 				q = c("./src/lib/notifications/index.ts"),
 				Q = c("./src/lib/notifications/constants.ts"),
-				X = c("./src/reddit/components/Media/LoadingIcon/index.tsx"),
-				J = c("./src/reddit/controls/InternalLink/index.tsx"),
+				J = c("./src/reddit/components/Media/LoadingIcon/index.tsx"),
+				X = c("./src/reddit/controls/InternalLink/index.tsx"),
 				$ = c("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
 				aa = c("./src/reddit/icons/svgs/PlusCircle/index.tsx");
 			var ea = a => t.a.createElement("svg", {
@@ -979,7 +979,7 @@
 				className: da.a.icon
 			}, r ? t.a.createElement($.a, null) : t.a.createElement(aa.a, {
 				className: da.a.iconPlus
-			})), ma._("{=r/[subredditName]}", [ma._param("=r/[subredditName]", t.a.createElement(J.a, {
+			})), ma._("{=r/[subredditName]}", [ma._param("=r/[subredditName]", t.a.createElement(X.a, {
 				to: a,
 				onClick: l,
 				target: "_blank",
@@ -1001,7 +1001,7 @@
 				className: e,
 				children: c,
 				onClick: l
-			}) => t.a.createElement(J.a, {
+			}) => t.a.createElement(X.a, {
 				className: Object(n.a)(da.a.link, e),
 				to: a,
 				onClick: l,
@@ -1078,7 +1078,7 @@
 							noun: "comment unit",
 							source: "recap",
 							action: "click",
-							recap: W.X(c),
+							recap: W.W(c),
 							comment: {
 								id: a,
 								postId: e
@@ -1624,7 +1624,7 @@
 							source: "recap",
 							action: "click",
 							noun: "ability_card",
-							recap: W.X(a)
+							recap: W.W(a)
 						}))())
 					}
 				}))), c && t.a.createElement("div", {
@@ -1689,9 +1689,9 @@
 				})))))
 			};
 			const {
-				fbt: Xa
+				fbt: Ja
 			} = c("./node_modules/fbt/lib/FbtPublic.js");
-			var Ja = ({
+			var Xa = ({
 				card: a
 			}) => {
 				const e = Object(V.a)(),
@@ -1708,15 +1708,15 @@
 					className: da.a.headingArt
 				}, t.a.createElement("div", {
 					className: da.a.singleStatWrapper
-				}, n && Xa._("{=[subredditCount][subredditCountSuffix]}", [Xa._param("=[subredditCount][subredditCountSuffix]", t.a.createElement("h2", {
+				}, n && Ja._("{=[subredditCount][subredditCountSuffix]}", [Ja._param("=[subredditCount][subredditCountSuffix]", t.a.createElement("h2", {
 					className: da.a.singleStatSubredditCircle
-				}, Xa._("{=[subredditCount]}{=[subredditCountSuffix]}", [Xa._param("=[subredditCount]", t.a.createElement("span", {
+				}, Ja._("{=[subredditCount]}{=[subredditCountSuffix]}", [Ja._param("=[subredditCount]", t.a.createElement("span", {
 					className: da.a.singleStatSubredditCircleValue
-				}, Xa._("{subredditCount}", [Xa._param("subredditCount", l)], {
+				}, Ja._("{subredditCount}", [Ja._param("subredditCount", l)], {
 					hk: "1GEBfo"
-				}))), Xa._param("=[subredditCountSuffix]", t.a.createElement("span", {
+				}))), Ja._param("=[subredditCountSuffix]", t.a.createElement("span", {
 					className: da.a.singleStatSubredditCircleUnit
-				}, Xa._("{subredditCountSuffix}", [Xa._param("subredditCountSuffix", r)], {
+				}, Ja._("{subredditCountSuffix}", [Ja._param("subredditCountSuffix", r)], {
 					hk: "3ZGqmH"
 				})))], {
 					hk: "38r358"
@@ -1832,7 +1832,7 @@
 				card: a
 			}) : (a => a.__typename === C)(a) ? t.a.createElement(ce, {
 				card: a
-			}) : (a => a.__typename === M)(a) ? t.a.createElement(Ja, {
+			}) : (a => a.__typename === M)(a) ? t.a.createElement(Xa, {
 				card: a
 			}) : (a => a.__typename === g)(a) ? t.a.createElement(Da, {
 				card: a
@@ -1859,7 +1859,7 @@
 				})
 			})), de = () => t.a.createElement("div", {
 				className: te.a.loadingIconWrapper
-			}, t.a.createElement(X.a, null)), me = a => {
+			}, t.a.createElement(J.a, null)), me = a => {
 				const e = a.match(/(\/r\/)(.+?)(\/.*)/i),
 					c = null == e ? void 0 : e[2];
 				return {
@@ -1929,7 +1929,7 @@
 						source: "recap",
 						action: "click",
 						noun: "dismiss",
-						recap: W.X(a)
+						recap: W.W(a)
 					}))())
 				}, []), t.a.useEffect(() => {
 					d.length && a((() => a => ({
@@ -1937,7 +1937,7 @@
 						source: "recap",
 						action: "view",
 						noun: "card",
-						recap: W.X(a)
+						recap: W.W(a)
 					}))())
 				}, [d, i]);
 				const C = a => () => {
@@ -1959,7 +1959,7 @@
 							source: "recap",
 							action: "click",
 							noun: "share",
-							recap: W.X(a)
+							recap: W.W(a)
 						}))());
 						const t = (null === (l = d[i]) || void 0 === l ? void 0 : l.id) || "",
 							r = document.getElementById(t);
@@ -1976,7 +1976,7 @@
 							}
 						}
 					}, [i, d]);
-				return l ? (() => t.a.createElement(t.a.Fragment, null, se(), t.a.createElement(X.a, null)))() : o ? t.a.createElement(ue, {
+				return l ? (() => t.a.createElement(t.a.Fragment, null, se(), t.a.createElement(J.a, null)))() : o ? t.a.createElement(ue, {
 					loadCardsAgain: Z
 				}) : t.a.createElement(t.a.Fragment, null, d.length ? t.a.createElement(t.a.Fragment, null, t.a.createElement(ne, {
 					card: d[i]
@@ -2039,4 +2039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.c7b04989c158152cd794.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.94f1403027ed20682c42.js.map

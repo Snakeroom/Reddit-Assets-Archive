@@ -1,7 +1,23 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.1a19a2ae1c7be2da0f67.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.e4eca56491b36d063c9c.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
+		"./node_modules/lodash/times.js": function(e, t, n) {
+			var s = n("./node_modules/lodash/_baseTimes.js"),
+				o = n("./node_modules/lodash/_castFunction.js"),
+				i = n("./node_modules/lodash/toInteger.js"),
+				a = 9007199254740991,
+				r = 4294967295,
+				d = Math.min;
+			e.exports = function(e, t) {
+				if ((e = i(e)) < 1 || e > a) return [];
+				var n = r,
+					c = d(e, r);
+				t = o(t), e -= r;
+				for (var l = s(c, t); ++n < e;) t(n);
+				return l
+			}
+		},
 		"./src/reddit/actions/subreddit/notifications.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -10,17 +26,17 @@
 				return h
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
-				i = n("./src/lib/makeActionCreator/index.ts"),
-				o = n("./src/reddit/actions/notificationSettingsLayout/index.ts"),
+				o = n("./src/lib/makeActionCreator/index.ts"),
+				i = n("./src/reddit/actions/notificationSettingsLayout/index.ts"),
 				a = n("./src/reddit/actions/notificationsInbox/index.ts"),
 				r = n("./src/reddit/actions/subreddit/constants.ts"),
 				d = n("./src/reddit/actions/toaster.ts"),
 				c = n("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
 				l = n("./src/reddit/models/Subreddit/index.ts"),
 				u = n("./src/reddit/models/Toast/index.ts");
-			const m = Object(i.a)(r.u),
-				b = Object(i.a)(r.t),
-				p = Object(i.a)(r.s),
+			const m = Object(o.a)(r.u),
+				b = Object(o.a)(r.t),
+				p = Object(o.a)(r.s),
 				f = e => {
 					switch (e) {
 						case l.b.OFF:
@@ -43,7 +59,7 @@
 				subredditId: e,
 				notificationLevel: t,
 				successCallback: n,
-				undoCallback: i
+				undoCallback: o
 			}) => async (r, h, {
 				gqlContext: g
 			}) => {
@@ -66,16 +82,16 @@
 								}
 						}
 					})(t),
-					y = await Object(c.b)(g(), e, v);
-				if ((null === (S = null === (O = y.error) || void 0 === O ? void 0 : O.fields) || void 0 === S ? void 0 : S.length) || function(e) {
+					_ = await Object(c.b)(g(), e, v);
+				if ((null === (S = null === (O = _.error) || void 0 === O ? void 0 : O.fields) || void 0 === S ? void 0 : S.length) || function(e) {
 						return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
-					}(y.body) && (null === (N = y.body.data.updateSubredditNotificationSettings.errors) || void 0 === N ? void 0 : N.length)) return r(p()), r(Object(d.f)({
+					}(_.body) && (null === (N = _.body.data.updateSubredditNotificationSettings.errors) || void 0 === N ? void 0 : N.length)) return r(p()), r(Object(d.f)({
 					kind: u.b.Error,
 					text: s.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
 						hk: "4avFFV"
 					})
 				}));
-				y.ok && (r(Object(o.c)({
+				_.ok && (r(Object(i.c)({
 					subredditId: e,
 					notificationLevel: t
 				})), r(m({
@@ -84,9 +100,9 @@
 							notificationLevel: t
 						}
 					}
-				})), n && n(), r(i ? Object(d.f)(Object(d.e)(f(t), u.b.Undo, s.fbt._("Undo", null, {
+				})), n && n(), r(o ? Object(d.f)(Object(d.e)(f(t), u.b.Undo, s.fbt._("Undo", null, {
 					hk: "46OwLP"
-				}), Object(a.i)(e, i))) : Object(d.f)(Object(d.e)(f(t), u.b.SuccessCommunityGreen))))
+				}), Object(a.i)(e, o))) : Object(d.f)(Object(d.e)(f(t), u.b.SuccessCommunityGreen))))
 			}
 		},
 		"./src/reddit/components/Settings/Notifications/CommunityNotificationSettings/index.m.less": function(e, t, n) {
@@ -106,8 +122,8 @@
 			"use strict";
 			n.r(t);
 			var s = n("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
-				i = n("./node_modules/fbt/lib/FbtPublic.js"),
-				o = n("./node_modules/reselect/es/index.js"),
+				o = n("./node_modules/fbt/lib/FbtPublic.js"),
+				i = n("./node_modules/reselect/es/index.js"),
 				a = n("./node_modules/react/index.js"),
 				r = n.n(a),
 				d = n("./node_modules/react-redux/es/index.js"),
@@ -126,7 +142,7 @@
 				onSelect: t
 			}) => {
 				var n, s;
-				const o = Object(h.a)(),
+				const i = Object(h.a)(),
 					{
 						id: a,
 						notificationLevel: d,
@@ -163,8 +179,8 @@
 								})
 						}
 					})(d),
-					y = [{
-						displayText: i.fbt._("Frequent", null, {
+					_ = [{
+						displayText: o.fbt._("Frequent", null, {
 							hk: "21spt7"
 						}),
 						isSelected: d === m.b.FREQUENT,
@@ -174,7 +190,7 @@
 							className: O.a.dropdownItemIcon
 						})
 					}, {
-						displayText: i.fbt._("Low", null, {
+						displayText: o.fbt._("Low", null, {
 							hk: "2uGDVq"
 						}),
 						isSelected: d === m.b.LOW,
@@ -184,7 +200,7 @@
 							className: O.a.dropdownItemIcon
 						})
 					}, {
-						displayText: i.fbt._("Off", null, {
+						displayText: o.fbt._("Off", null, {
 							hk: "4GiFvg"
 						}),
 						isSelected: d === m.b.OFF,
@@ -201,7 +217,7 @@
 					className: O.a.subreddit
 				}, r.a.createElement(b.b, {
 					iconUrl: g,
-					altText: i.fbt._("Subreddit icon", null, {
+					altText: o.fbt._("Subreddit icon", null, {
 						hk: "gEWhf"
 					}),
 					shouldHideNsfwIcon: l,
@@ -213,15 +229,15 @@
 					className: O.a.subredditInfoName
 				}, "r/", c), r.a.createElement("span", {
 					className: O.a.subredditInfoNotification
-				}, i.fbt._("Notifications: {notification level}", [i.fbt._param("notification level", N)], {
+				}, o.fbt._("Notifications: {notification level}", [o.fbt._param("notification level", N)], {
 					hk: "2YgR3R"
 				})))), r.a.createElement(p.b, {
 					isCompactStyle: !0,
 					displayText: e.notificationLevel,
-					options: y,
+					options: _,
 					onSelect: e => {
 						var n;
-						o(Object(f.l)(a, c, null === (n = e.value) || void 0 === n ? void 0 : n.toLowerCase())), t(a, e.value)
+						i(Object(f.l)(a, c, null === (n = e.value) || void 0 === n ? void 0 : n.toLowerCase())), t(a, e.value)
 					},
 					buttonClassName: O.a.dropdown,
 					buttonIcon: v
@@ -229,14 +245,14 @@
 			};
 			var N = n("./src/reddit/components/Settings/Notifications/LoadingSection.tsx"),
 				v = n("./src/reddit/selectors/user.ts");
-			const y = Object(o.c)({
+			const _ = Object(i.c)({
 					cursor: v.pb,
 					hasError: v.qb,
 					hasNextPage: v.rb,
 					isPending: v.sb,
 					subreddits: v.tb
 				}),
-				w = Object(d.b)(y, e => ({
+				y = Object(d.b)(_, e => ({
 					clearSubscribedSubredditsList: () => e(Object(c.c)()),
 					fetchSubscribesSubreddits: t => e(Object(c.b)(t)),
 					updateSubredditNotificationLevel: (t, n) => e(Object(l.b)({
@@ -248,11 +264,11 @@
 						}))
 					}))
 				}));
-			t.default = w(({
+			t.default = y(({
 				fetchSubscribesSubreddits: e,
 				subreddits: t,
 				cursor: n,
-				hasNextPage: o,
+				hasNextPage: i,
 				hasError: d,
 				isPending: c,
 				updateSubredditNotificationLevel: l,
@@ -268,7 +284,7 @@
 				return d ? r.a.createElement("span", {
 					className: O.a.errorMessage,
 					"data-testid": "error-message"
-				}, i.fbt._("There was an issue fetching your subreddits notifications settings. Please try again later.", null, {
+				}, o.fbt._("There was an issue fetching your subreddits notifications settings. Please try again later.", null, {
 					hk: "1Wt132"
 				})) : c && !b ? r.a.createElement(N.a, {
 					rowsCount: 5
@@ -276,7 +292,7 @@
 					subreddit: e,
 					onSelect: l,
 					key: e.id
-				})), o && r.a.createElement(s.a, {
+				})), i && r.a.createElement(s.a, {
 					onChange: t => {
 						t.isIntersecting && n && e({
 							after: n,
@@ -290,7 +306,7 @@
 				})) : r.a.createElement("span", {
 					className: O.a.errorMessage,
 					"data-testid": "error-message"
-				}, i.fbt._("You do not have subscribed subreddits.", null, {
+				}, o.fbt._("You do not have subscribed subreddits.", null, {
 					hk: "20pdSk"
 				}))
 			})
@@ -301,9 +317,9 @@
 				return c
 			}));
 			var s = n("./node_modules/lodash/times.js"),
-				i = n.n(s),
-				o = n("./node_modules/react/index.js"),
-				a = n.n(o),
+				o = n.n(s),
+				i = n("./node_modules/react/index.js"),
+				a = n.n(i),
 				r = n("./src/reddit/components/Settings/Notifications/index.m.less"),
 				d = n.n(r);
 			const c = ({
@@ -313,7 +329,7 @@
 				"aria-busy": "true"
 			}, a.a.createElement("div", {
 				className: d.a.loadingSectionHeader
-			}), i()(e, e => a.a.createElement("div", {
+			}), o()(e, e => a.a.createElement("div", {
 				className: d.a.loadingToggleWrapper,
 				key: e
 			}, a.a.createElement("span", {
@@ -361,9 +377,9 @@
 				return m
 			}));
 			var s = n("./node_modules/react/index.js"),
-				i = n.n(s),
-				o = n("./src/reddit/controls/DropdownSelector/index.m.less"),
-				a = n.n(o),
+				o = n.n(s),
+				i = n("./src/reddit/controls/DropdownSelector/index.m.less"),
+				a = n.n(i),
 				r = n("./src/lib/classNames/index.ts"),
 				d = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				c = n("./src/reddit/controls/LoadingIcon/index.tsx"),
@@ -371,9 +387,9 @@
 			const u = e => {
 				e.preventDefault()
 			};
-			class m extends i.a.Component {
+			class m extends o.a.Component {
 				constructor() {
-					super(...arguments), this.dropdownButton = i.a.createRef(), this.menuItems = i.a.createRef(), this.containerRef = i.a.createRef(), this.state = {
+					super(...arguments), this.dropdownButton = o.a.createRef(), this.menuItems = o.a.createRef(), this.containerRef = o.a.createRef(), this.state = {
 						isOpen: !1
 					}, this.handleDocumentClick = e => {
 						this.containerRef && this.containerRef.current && (this.containerRef.current.contains(e.target) || this.setState({
@@ -436,13 +452,13 @@
 						showSelectedCheckmark: t,
 						isTopicsStyle: n,
 						menuOptionClassName: s,
-						isModNotesStyle: o
+						isModNotesStyle: i
 					} = this.props;
-					return e.map((e, c) => i.a.createElement(d.b, {
+					return e.map((e, c) => o.a.createElement(d.b, {
 						key: c + e.displayText,
 						className: Object(r.a)(a.a.menuOption, s, {
 							[a.a.topics]: n,
-							[a.a.modNotes]: o
+							[a.a.modNotes]: i
 						}),
 						noIcon: Boolean(e.icon),
 						onKeydown: t => this.handleOptionKeyDown(t, e),
@@ -450,11 +466,11 @@
 						onBlur: this.handleDropdownBlur,
 						showSelectedCheckmark: t,
 						isSelected: void 0 !== e.isSelected ? e.isSelected : void 0,
-						isModNotesStyle: o,
+						isModNotesStyle: i,
 						isTopicsStyle: n
-					}, o ? i.a.createElement("span", {
+					}, i ? o.a.createElement("span", {
 						className: a.a.modNotes
-					}, e.icon && e.icon, e.displayText) : i.a.createElement(i.a.Fragment, null, e.icon && e.icon, e.displayText)))
+					}, e.icon && e.icon, e.displayText) : o.a.createElement(o.a.Fragment, null, e.icon && e.icon, e.displayText)))
 				}
 				render() {
 					const {
@@ -462,7 +478,7 @@
 						className: t,
 						displayText: n,
 						isCompactStyle: s,
-						isModNotesStyle: o,
+						isModNotesStyle: i,
 						isTopicsStyle: d,
 						menuItemsClassName: m,
 						name: b,
@@ -472,20 +488,20 @@
 					} = this.props, {
 						isOpen: g
 					} = this.state;
-					return i.a.createElement("div", {
+					return o.a.createElement("div", {
 						ref: this.containerRef,
 						id: this.props.id,
 						className: Object(r.a)(a.a.dropdownMenu, t, {
 							[a.a.topics]: d
 						})
-					}, i.a.createElement("button", {
+					}, o.a.createElement("button", {
 						onClick: h ? void 0 : this.handleDropdownClick,
 						className: Object(r.a)(e, a.a.selector, {
 							[a.a.compact]: s
 						}, {
 							[a.a.topics]: d
 						}, {
-							[a.a.modNotes]: o
+							[a.a.modNotes]: i
 						}, {
 							[a.a.disabled]: h
 						}),
@@ -494,23 +510,23 @@
 						ref: this.dropdownButton,
 						onBlur: h ? void 0 : this.handleDropdownBlur,
 						onKeyDown: h ? void 0 : this.handleDropdownKeyDown
-					}, i.a.createElement("span", {
+					}, o.a.createElement("span", {
 						className: a.a.selectorContent,
 						tabIndex: -1
-					}, f && i.a.createElement("span", {
+					}, f && o.a.createElement("span", {
 						className: Object(r.a)(a.a.buttonIcon, {
-							[a.a.isModNotesStyle]: o
+							[a.a.isModNotesStyle]: i
 						})
-					}, f), n), h ? null : p ? i.a.createElement(c.a, {
+					}, f), n), h ? null : p ? o.a.createElement(c.a, {
 						sizePx: 8,
 						className: a.a.loadingIcon
-					}) : i.a.createElement(l.a, {
+					}) : o.a.createElement(l.a, {
 						name: "caret_down"
-					})), i.a.createElement("div", {
+					})), o.a.createElement("div", {
 						className: Object(r.a)(a.a.menuItems, m, {
 							[a.a.topics]: d,
-							[a.a.isClosed]: !g && o,
-							[a.a.isModNotesStyle]: o
+							[a.a.isClosed]: !g && i,
+							[a.a.isModNotesStyle]: i
 						}),
 						onMouseDown: u,
 						ref: this.menuItems
@@ -521,4 +537,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.1a19a2ae1c7be2da0f67.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.e4eca56491b36d063c9c.js.map

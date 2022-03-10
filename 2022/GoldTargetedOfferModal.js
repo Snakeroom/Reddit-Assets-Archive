@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.da0f44c6a453f6f19e47.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.1d8d29584fedded6ddb1.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -298,8 +298,8 @@
 									C = t.useRef(null),
 									x = _(m),
 									I = _(d),
-									A = _(u),
-									S = _(k),
+									S = _(u),
+									A = _(k),
 									T = _(O),
 									N = _(h);
 								t.useLayoutEffect((function() {
@@ -307,7 +307,7 @@
 										var t = w.create(e, s);
 										P.current = t, t.mount(C.current), t.on("ready", (function() {
 											return x(t)
-										})), t.on("change", T), t.on("blur", I), t.on("focus", A), t.on("escape", N), t.on("click", S)
+										})), t.on("change", T), t.on("blur", I), t.on("focus", S), t.on("escape", N), t.on("click", A)
 									}
 								}));
 								var R = p(s);
@@ -343,8 +343,8 @@
 					C = E("cardNumber", k),
 					x = E("cardExpiry", k),
 					I = E("cardCvc", k),
-					A = E("fpxBank", k),
-					S = E("iban", k),
+					S = E("fpxBank", k),
+					A = E("iban", k),
 					T = E("idealBank", k),
 					N = E("p24Bank", k),
 					R = E("epsBank", k),
@@ -353,7 +353,7 @@
 					B = E("linkAuthentication", k),
 					D = E("shippingAddress", k),
 					F = E("afterpayClearpayMessage", k);
-				e.AfterpayClearpayMessageElement = F, e.AuBankAccountElement = w, e.CardCvcElement = I, e.CardElement = P, e.CardExpiryElement = x, e.CardNumberElement = C, e.Elements = j, e.ElementsConsumer = h, e.EpsBankElement = R, e.FpxBankElement = A, e.IbanElement = S, e.IdealBankElement = T, e.LinkAuthenticationElement = B, e.P24BankElement = N, e.PaymentElement = M, e.PaymentRequestButtonElement = U, e.ShippingAddressElement = D, e.useElements = function() {
+				e.AfterpayClearpayMessageElement = F, e.AuBankAccountElement = w, e.CardCvcElement = I, e.CardElement = P, e.CardExpiryElement = x, e.CardNumberElement = C, e.Elements = j, e.ElementsConsumer = h, e.EpsBankElement = R, e.FpxBankElement = S, e.IbanElement = A, e.IdealBankElement = T, e.LinkAuthenticationElement = B, e.P24BankElement = N, e.PaymentElement = M, e.PaymentRequestButtonElement = U, e.ShippingAddressElement = D, e.useElements = function() {
 					return g("calls useElements()").elements
 				}, e.useStripe = function() {
 					return g("calls useStripe()").stripe
@@ -517,9 +517,9 @@
 			})), r.d(t, "b", (function() {
 				return I
 			})), r.d(t, "d", (function() {
-				return A
-			})), r.d(t, "j", (function() {
 				return S
+			})), r.d(t, "j", (function() {
+				return A
 			})), r.d(t, "i", (function() {
 				return T
 			})), r.d(t, "f", (function() {
@@ -571,7 +571,7 @@
 						correlationId: e,
 						packageId: t
 					})), r(Object(l.i)(s.a.ECON_COIN_PACKAGE_OFFER))) : a.c.captureMessage(`Tried to show coin package offer, but could not find package id: ${t}`)
-				}, A = (e, t, r) => async (o, c) => {
+				}, S = (e, t, r) => async (o, c) => {
 					await o(Object(d.c)(e, r));
 					const a = c(),
 						s = Object(g.p)(a, e);
@@ -591,7 +591,7 @@
 							text: e || t
 						}))
 					}
-				}, S = (e, t, r) => async (c, a, {
+				}, A = (e, t, r) => async (c, a, {
 					apiContext: s
 				}) => {
 					const d = a(),
@@ -969,7 +969,7 @@
 			})), r.d(t, "c", (function() {
 				return I
 			})), r.d(t, "a", (function() {
-				return S
+				return A
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				o = r("./src/lib/env/index.ts"),
@@ -1069,7 +1069,7 @@
 						});
 						r(x(e))
 					}
-				}, A = Object(c.a)(O.h), S = () => async (e, t, {
+				}, S = Object(c.a)(O.h), A = () => async (e, t, {
 					gqlContext: r
 				}) => {
 					var c, i;
@@ -1080,7 +1080,7 @@
 							if (null === (c = r.errors) || void 0 === c ? void 0 : c.length) throw new Error(r.errors.map(e => e.message).join(" | "));
 							if (!(null === (i = r.awards) || void 0 === i ? void 0 : i.length)) throw new Error("Got empty award list on free award offer claim");
 							if (!r.ok) throw new Error("Got not ok response on free award offer claim");
-							await e(A({
+							await e(S({
 								awards: r.awards
 							})), e(Object(u.B)())
 						}
@@ -1162,16 +1162,16 @@
 					}) => P.includes(e)),
 					I = w.length && !o()(x),
 					{
-						baselineCoins: A,
-						baselinePennies: S,
+						baselineCoins: S,
+						baselinePennies: A,
 						coins: T,
 						pennies: N,
 						mobileId: R
 					} = I ? x : v,
-					M = T - A,
+					M = T - S,
 					U = !I && M > 0,
-					B = S - N,
-					D = N !== S;
+					B = A - N,
+					D = N !== A;
 				return a.a.createElement(_.e, {
 					className: E.a.body
 				}, a.a.createElement("button", {
@@ -1194,7 +1194,7 @@
 					hk: "2rIhaz"
 				})), a.a.createElement("p", {
 					className: E.a.description
-				}, !D && k._("Buy {coin amount} for {price}", [k._param("coin amount", Object(u.b)(A, {
+				}, !D && k._("Buy {coin amount} for {price}", [k._param("coin amount", Object(u.b)(S, {
 					locale: e,
 					type: l.b.Reddit,
 					currency: l.a
@@ -1210,7 +1210,7 @@
 					hk: "26UFcD"
 				})), !D && U && a.a.createElement("span", {
 					className: E.a.leftSpace
-				}, k._("and get {bonus coins} FREE", [k._param("bonus coins", Object(u.b)(A, {
+				}, k._("and get {bonus coins} FREE", [k._param("bonus coins", Object(u.b)(S, {
 					locale: e,
 					type: l.b.Reddit,
 					currency: l.a
@@ -1327,13 +1327,13 @@
 					mobileId: k
 				} = y, w = h - O, P = w > 0, C = j - E, x = E !== j, {
 					title: I,
-					subtitle: A,
-					type: S
-				} = v, T = I || ("low_coin_upsell" === S ? n.fbt._("You’re low on coins", null, {
+					subtitle: S,
+					type: A
+				} = v, T = I || ("low_coin_upsell" === A ? n.fbt._("You’re low on coins", null, {
 					hk: "2fHrPn"
 				}) : n.fbt._("Special Offer!", null, {
 					hk: "2wnTrq"
-				})), N = A || n.fbt._("Stock up and save with this limited-time offer", null, {
+				})), N = S || n.fbt._("Stock up and save with this limited-time offer", null, {
 					hk: "2eml5T"
 				}), R = P ? n.fbt._("Buy {coin amount} for {price} and get {bonus coins} bonus coins", [n.fbt._param("coin amount", Object(l.b)(O, {
 					locale: t,
@@ -1564,6 +1564,27 @@
 				return r.multipliedBy(o).toFixed(0)
 			}
 		},
+		"./src/reddit/models/Payments/index.ts": function(e, t, r) {
+			"use strict";
+			var n, o, c, a;
+			r.d(t, "b", (function() {
+					return o
+				})), r.d(t, "a", (function() {
+					return c
+				})),
+				function(e) {
+					e.PayPal = "paypal", e.Stripe = "stripe"
+				}(n || (n = {})),
+				function(e) {
+					e.PayPal = "PAYPAL", e.Stripe = "STRIPE"
+				}(o || (o = {})),
+				function(e) {
+					e.NewPayPal = "new-paypal", e.NewStripe = "new-stripe", e.SavedPayPal = "saved-paypal", e.SavedStripe = "saved-stripe"
+				}(c || (c = {})),
+				function(e) {
+					e.Comment = "comment", e.Post = "post", e.Profile = "profile", e.Subreddit = "subreddit"
+				}(a || (a = {}))
+		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "j", (function() {
@@ -1647,4 +1668,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.da0f44c6a453f6f19e47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.1d8d29584fedded6ddb1.js.map

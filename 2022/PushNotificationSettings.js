@@ -1,7 +1,23 @@
-// https://www.redditstatic.com/desktop2x/PushNotificationSettings.4b5dafa0438a697b8886.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotificationSettings.a4478bb2e1607298c18e.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotificationSettings"], {
+		"./node_modules/lodash/times.js": function(e, t, s) {
+			var n = s("./node_modules/lodash/_baseTimes.js"),
+				i = s("./node_modules/lodash/_castFunction.js"),
+				a = s("./node_modules/lodash/toInteger.js"),
+				o = 9007199254740991,
+				r = 4294967295,
+				c = Math.min;
+			e.exports = function(e, t) {
+				if ((e = a(e)) < 1 || e > o) return [];
+				var s = r,
+					d = c(e, r);
+				t = i(t), e -= r;
+				for (var l = n(d, t); ++s < e;) t(s);
+				return l
+			}
+		},
 		"./src/reddit/components/Settings/Notifications/LoadingSection.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -43,9 +59,9 @@
 				d = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
 				l = s("./src/reddit/helpers/trackers/notifications.ts"),
 				m = s("./src/reddit/hooks/useTracking.ts"),
-				g = s("./src/reddit/icons/fonts/index.tsx"),
-				u = s("./src/reddit/components/Settings/Notifications/index.m.less"),
-				f = s.n(u);
+				u = s("./src/reddit/icons/fonts/index.tsx"),
+				g = s("./src/reddit/components/Settings/Notifications/index.m.less"),
+				f = s.n(g);
 			const b = e => {
 				Object(i.useEffect)(() => {
 					e.fetchNotificationSettings()
@@ -73,14 +89,14 @@
 							subtext: o.description
 						}) : null
 					},
-					u = a.a.createElement("span", {
+					g = a.a.createElement("span", {
 						className: "errorMessage",
 						"data-testid": "error-message"
 					}, n.fbt._("There was an issue fetching your notification settings. Please try again later.", null, {
 						hk: "4pmBD4"
 					})),
 					b = e.sections && e.sections.allIds,
-					p = b && b.map(t => {
+					_ = b && b.map(t => {
 						const i = e.sections && e.sections.byId && e.sections.byId[t];
 						if (!i) return null;
 						const r = "Moderation" === i.title;
@@ -93,7 +109,7 @@
 							className: f.a.header
 						}, n.fbt._("Community alerts", null, {
 							hk: "3jkfcH"
-						})), a.a.createElement(g.a, {
+						})), a.a.createElement(u.a, {
 							name: "forward_fill",
 							className: f.a.arrow
 						}))), i.rows ? i.rows.map(s) : null, r && a.a.createElement("div", {
@@ -103,7 +119,7 @@
 							handleModPnSubredditClick: e.handleModPnClick
 						})))
 					});
-				return e.hasError ? u : b && b.length > 0 ? a.a.createElement(a.a.Fragment, null, p) : a.a.createElement(r.a, {
+				return e.hasError ? g : b && b.length > 0 ? a.a.createElement(a.a.Fragment, null, _) : a.a.createElement(r.a, {
 					rowsCount: 5
 				})
 			}
@@ -145,4 +161,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.4b5dafa0438a697b8886.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.a4478bb2e1607298c18e.js.map

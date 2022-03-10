@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.06700d56b5e15aa1fb0a.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.bb193103d5b22daadcc8.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, s) {
@@ -85,6 +85,20 @@
 					} while (n)
 				}
 		},
+		"./src/reddit/actions/reportFlow/index.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return r
+			})), s.d(t, "c", (function() {
+				return n
+			})), s.d(t, "b", (function() {
+				return i
+			}));
+			var o = s("./src/lib/loadableAction/index.ts");
+			const r = Object(o.a)(() => Promise.all([s.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.postOrCommentReported)),
+				n = Object(o.a)(() => Promise.all([s.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowOpened)),
+				i = Object(o.a)(() => Promise.all([s.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), s.e("ReportFlow")]).then(s.bind(null, "./src/reddit/actions/reportFlow/reportFlow.ts")).then(e => e.reportFlowClosed))
+		},
 		"./src/reddit/actions/userBlocks.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "f", (function() {
@@ -98,9 +112,9 @@
 			})), s.d(t, "b", (function() {
 				return O
 			})), s.d(t, "c", (function() {
-				return x
+				return w
 			})), s.d(t, "a", (function() {
-				return g
+				return R
 			})), s.d(t, "g", (function() {
 				return k
 			}));
@@ -159,16 +173,16 @@
 							buttonAction: _(e)
 						}))
 					}
-				}, O = "USER_UNBLOCK__PENDING", x = "USER_UNBLOCK__SUCCESS", g = "USER_UNBLOCK__FAILED", R = Object(r.a)(O), w = Object(r.a)(x), j = Object(r.a)(g), k = e => async (t, s, {
+				}, O = "USER_UNBLOCK__PENDING", w = "USER_UNBLOCK__SUCCESS", R = "USER_UNBLOCK__FAILED", g = Object(r.a)(O), x = Object(r.a)(w), j = Object(r.a)(R), k = e => async (t, s, {
 					apiContext: r
 				}) => {
 					const a = s(),
 						u = Object(l.k)(a),
 						p = u ? u.id : void 0,
 						m = a.user.blocked.data.filter(t => t.name === e)[0];
-					p && (t(R({
+					p && (t(g({
 						name: e
-					})), (await Object(d.c)(r(), p, e)).ok ? (t(w({
+					})), (await Object(d.c)(r(), p, e)).ok ? (t(x({
 						name: e
 					})), m && m.id && t(Object(n.h)(m.id)), t(i.f({
 						kind: c.b.SuccessCommunity,
@@ -264,33 +278,33 @@
 				..._,
 				variables: t
 			});
-			var x = s("./src/redditGQL/operations/ReportLiveStream.json");
-			const g = (e, t) => Object(f.a)(e, {
-				...x,
+			var w = s("./src/redditGQL/operations/ReportLiveStream.json");
+			const R = (e, t) => Object(f.a)(e, {
+				...w,
 				variables: t
 			});
-			var R = s("./src/reddit/endpoints/messages/index.ts"),
-				w = s("./src/reddit/endpoints/post/report.ts"),
+			var g = s("./src/reddit/endpoints/messages/index.ts"),
+				x = s("./src/reddit/endpoints/post/report.ts"),
 				j = s("./src/redditGQL/operations/ReportForm.json");
 			var k = s("./src/reddit/contexts/ApiContext.tsx"),
-				C = s("./src/reddit/models/Post/index.ts"),
-				v = s("./src/reddit/models/Toast/index.ts"),
-				y = s("./src/reddit/models/WhitelistAndBlocked.ts"),
+				v = s("./src/reddit/models/Post/index.ts"),
+				C = s("./src/reddit/models/Toast/index.ts"),
+				F = s("./src/reddit/models/WhitelistAndBlocked.ts"),
 				S = s("./src/reddit/selectors/commentSelector.ts"),
-				E = s("./src/reddit/selectors/meta.ts"),
+				y = s("./src/reddit/selectors/meta.ts"),
 				L = s("./src/reddit/selectors/posts.ts"),
-				I = s("./src/reddit/selectors/user.ts"),
-				F = s("./src/lib/lessComponent.tsx"),
+				E = s("./src/reddit/selectors/user.ts"),
+				I = s("./src/lib/lessComponent.tsx"),
 				A = s("./src/reddit/components/ReportFlow/index.m.less"),
 				T = s.n(A);
-			const N = F.a.div("ReportLoaderWrapper", T.a),
-				B = F.a.img("LoadingIcon", T.a),
+			const N = I.a.div("ReportLoaderWrapper", T.a),
+				B = I.a.img("LoadingIcon", T.a),
 				D = "2.1";
 			var q;
 			! function(e) {
 				e.Post = "post", e.Comment = "comment", e.Message = "message"
 			}(q || (q = {}));
-			const $ = Object(l.c)({
+			const P = Object(l.c)({
 					post: (e, {
 						postId: t
 					}) => t ? Object(L.G)(e, {
@@ -305,7 +319,7 @@
 						postId: t
 					}) => {
 						const s = t && e.posts.models[t];
-						return !!s && Object(C.p)(s)
+						return !!s && Object(v.p)(s)
 					},
 					blockUserPending: e => e.user.blocked.api,
 					blockedUser: (e, t) => e.user.blocked.data.find(s => {
@@ -320,10 +334,10 @@
 						(n ? n.author : i ? i.author : null) || t.author;
 						s.name
 					}),
-					isNightmodeOn: I.bb,
-					locale: E.i
+					isNightmodeOn: E.bb,
+					locale: y.i
 				}),
-				U = Object(a.b)($, (e, {
+				$ = Object(a.b)(P, (e, {
 					timestamp: t
 				}) => ({
 					onCloseReportFlow: () => {
@@ -333,13 +347,13 @@
 						e(Object(h.h)(t))
 					},
 					showFailToast: () => e(Object(p.f)({
-						kind: v.b.Error,
+						kind: C.b.Error,
 						text: r.fbt._("Something went wrong!", null, {
 							hk: "1BEFhz"
 						})
 					}))
 				})),
-				P = async (e, t, s, o, r) => {
+				U = async (e, t, s, o, r) => {
 					var n;
 					const i = await ((e, {
 						itemId: t,
@@ -394,7 +408,7 @@
 						const {
 							blockUserPending: t
 						} = this.props;
-						t.new !== y.a.pending && this.props.onBlockUser(e)
+						t.new !== F.a.pending && this.props.onBlockUser(e)
 					}, this.onOpenCtlFlow = () => {
 						this.props.postMessage && this.props.postMessage({
 							type: "openCtl"
@@ -441,7 +455,7 @@
 										relativeReportTimeSec: d,
 										...m
 									};
-									b = () => g(s(), {
+									b = () => R(s(), {
 										input: e
 									});
 									break
@@ -450,7 +464,7 @@
 									postId: c,
 									...m
 								};
-								b = () => Object(w.d)(s(), {
+								b = () => Object(x.d)(s(), {
 									input: e
 								});
 								break;
@@ -468,7 +482,7 @@
 									messageId: c,
 									...m
 								};
-								b = () => Object(R.a)(s(), {
+								b = () => Object(g.a)(s(), {
 									input: o
 								});
 								break;
@@ -491,7 +505,7 @@
 						gqlContext: s,
 						hostAppName: o
 					} = this.props;
-					P(s(), e, D, o, t).then(e => {
+					U(s(), e, D, o, t).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -536,7 +550,7 @@
 					}))
 				}
 			}
-			t.default = Object(k.b)(U(G))
+			t.default = Object(k.b)($(G))
 		},
 		"./src/reddit/components/ReportFlow/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -725,14 +739,14 @@
 						}
 					}
 					const O = new RegExp(m),
-						x = new RegExp(b),
-						g = [];
-					let R;
+						w = new RegExp(b),
+						R = [];
+					let g;
 					if (e.subredditName) {
 						const t = e.subredditName.trim();
-						if (x.test(t)) {
-							const e = x.exec(t);
-							e && e.length > 1 && (R = e[1])
+						if (w.test(t)) {
+							const e = w.exec(t);
+							e && e.length > 1 && (g = e[1])
 						}
 					}
 					if (e.usernames && e.usernames.length)
@@ -740,22 +754,22 @@
 							const t = e.usernames[i].trim();
 							if (O.test(t)) {
 								const e = O.exec(t);
-								e && e.length > 1 && g.push(e[1])
+								e && e.length > 1 && R.push(e[1])
 							}
 						}
 					const {
-						reason: w
+						reason: x
 					} = e;
 					return {
 						reason: "site_reason_selected",
-						site_reason: w.reasonText,
+						site_reason: x.reasonText,
 						additional_info: e.additionalInfo ? e.additionalInfo.join(",") : void 0,
 						custom_text: e.customText,
 						modmail_conv_id: f,
 						modmail_msg_id: _,
-						sr_name: R,
+						sr_name: g,
 						thing_id: h,
-						usernames: g.length ? g.join(",") : void 0
+						usernames: R.length ? R.join(",") : void 0
 					}
 				},
 				f = (e, t) => {
@@ -850,4 +864,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.06700d56b5e15aa1fb0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.bb193103d5b22daadcc8.js.map

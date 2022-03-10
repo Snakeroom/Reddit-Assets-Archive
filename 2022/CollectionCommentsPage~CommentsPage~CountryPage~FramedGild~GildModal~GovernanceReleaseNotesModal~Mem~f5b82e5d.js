@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.a6f3bc85dc804849c54c.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.7228598999a0155ae153.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1128,7 +1128,7 @@
 				De = 6e3,
 				Ue = 100,
 				We = Object(c.b)(() => Object(d.c)({
-					isLoggedIn: B.J,
+					isLoggedIn: B.O,
 					autoplayPref: B.b,
 					currentTime: k.c,
 					currentUser: B.k,
@@ -1136,7 +1136,7 @@
 					loadTimes: k.f,
 					metadata: k.h,
 					mutedInFeed: k.i,
-					postUrl: L.J,
+					postUrl: L.I,
 					started: k.k,
 					volume: F.d
 				}), (e, {
@@ -1158,8 +1158,8 @@
 							postId: t,
 							time: s
 						}))
-					}, w.l, {
-						maxWait: w.m
+					}, w.m, {
+						maxWait: w.n
 					}),
 					openLightbox: s => {
 						s ? e(Object(M.a)(s)) : x.c.withScope(e => {
@@ -1209,6 +1209,7 @@
 					}, this.timePixelsFired = {
 						[w.g]: !1,
 						[w.h]: !1,
+						[w.i]: !1,
 						[w.f]: !1
 					}, this.sendEvent = (e, t, s = !1) => {
 						if (this.HTML5StreamPlayerVideo && null != this.props.postId) {
@@ -1548,7 +1549,7 @@
 					}, this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
 				}
 				autoplayPref(e = this.props) {
-					return e.autoplayPref || e.isOverlay || e.isExpando || !!e.shouldIgnoreAutoplayPref
+					return e.autoplayPref || e.isExpando || !!e.shouldIgnoreAutoplayPref
 				}
 				shouldAutoplay(e = this.props) {
 					return !!e.autoPlay && this.autoplayPref(e)
@@ -1570,7 +1571,7 @@
 						if (i && a) {
 							this.dashPlayer = e.MediaPlayer().create();
 							try {
-								this.dashPlayer.initialize(i, a, i.autoplay || !i.paused), this.setBufferTime(w.i), this.dashPlayer.updateSettings({
+								this.dashPlayer.initialize(i, a, i.autoplay || !i.paused), this.setBufferTime(w.j), this.dashPlayer.updateSettings({
 									streaming: {
 										fastSwitchEnabled: !0,
 										abr: {
@@ -1719,12 +1720,12 @@
 					return s >= 1 ? w.a : s >= .95 ? w.e : s >= .75 ? w.d : s >= .5 ? w.c : s >= .25 ? w.b : 0
 				}
 				triggerPercentagePixels(e) {
-					w.j.forEach(t => {
+					w.k.forEach(t => {
 						t <= e && !this.percentagePixelsFired[t] && (this.props.onWatchedPercent(t), this.percentagePixelsFired[t] = !0)
 					})
 				}
 				triggerTimeWatchedPixels(e) {
-					w.k.forEach(t => {
+					w.l.forEach(t => {
 						t <= e && !this.timePixelsFired[t] && (this.props.onWatchedSeconds(t), this.timePixelsFired[t] = !0)
 					})
 				}
@@ -2458,4 +2459,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.a6f3bc85dc804849c54c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.7228598999a0155ae153.js.map

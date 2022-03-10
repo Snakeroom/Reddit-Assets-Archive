@@ -1,7 +1,74 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.03bf4100fa5aa56dcb04.js
-// Retrieved at 2/22/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.922900f4c57e9c7d0386.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
+		"./src/lib/colors/constants.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "b", (function() {
+				return a
+			})), s.d(t, "f", (function() {
+				return n
+			})), s.d(t, "c", (function() {
+				return i
+			})), s.d(t, "a", (function() {
+				return o
+			})), s.d(t, "e", (function() {
+				return r
+			})), s.d(t, "d", (function() {
+				return l
+			})), s.d(t, "g", (function() {
+				return c
+			})), s.d(t, "h", (function() {
+				return d
+			}));
+			const a = "#000",
+				n = "#FFF",
+				i = "#FF4500",
+				o = "#0079D3",
+				r = "#24A0ED",
+				l = "#46D160",
+				c = {
+					black: a,
+					white: n,
+					orangered: i,
+					alienblue: o,
+					tone1: "#1A1A1B",
+					tone2: "#6A6D6F",
+					tone3: "#878A8C",
+					tone4: "#D3D6DA",
+					tone5: "#EDEFF1",
+					tone6: "#F6F7F8",
+					tone7: "#FFFFFF",
+					primary: r,
+					secondary: "#006CBF",
+					upvote: i,
+					downvote: "#7193FF",
+					positive: l,
+					negative: "#EA0027",
+					caution: "#FFB000",
+					admin: i,
+					moderator: "#46D160",
+					self: "#0DD3BB",
+					coins: "#DDBD37",
+					live: i,
+					nsfw: "#FF585B",
+					spoiler: "#1A1A1B"
+				},
+				d = {
+					...c,
+					tone1: "#D7DADC",
+					tone2: "#818384",
+					tone3: "#565758",
+					tone4: "#3A3A3C",
+					tone5: "#272729",
+					tone6: "#1A1A1B",
+					tone7: "#121213",
+					primary: "#006CBF",
+					secondary: "#24A0ED",
+					coins: "#FFE600",
+					spoiler: "#D7DADC"
+				}
+		},
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, t, s) {
 			e.exports = {
 				container: "_1yYBGklEZ27AA6Pk4a5xcB",
@@ -16,16 +83,16 @@
 				n = s.n(a),
 				i = s("./src/lib/classNames/index.ts"),
 				o = s("./src/reddit/icons/svgs/Envelope/index.tsx"),
-				l = s("./src/reddit/icons/svgs/Warning/index.tsx"),
-				r = s("./src/reddit/components/EmailCollection/Envelope/index.m.less"),
-				c = s.n(r);
+				r = s("./src/reddit/icons/svgs/Warning/index.tsx"),
+				l = s("./src/reddit/components/EmailCollection/Envelope/index.m.less"),
+				c = s.n(l);
 			t.a = e => n.a.createElement("div", {
 				className: Object(i.a)(c.a.container, e.className)
 			}, n.a.createElement("div", {
 				className: c.a.content
 			}, n.a.createElement(o.a, {
 				className: c.a.envelopeIcon
-			}), n.a.createElement(l.a, {
+			}), n.a.createElement(r.a, {
 				className: Object(i.a)(c.a.warningIcon, e.warningClassName)
 			})))
 		},
@@ -48,8 +115,8 @@
 			var a, n = s("./node_modules/react/index.js"),
 				i = s.n(n),
 				o = s("./src/lib/classNames/index.ts"),
-				l = s("./src/reddit/icons/svgs/Approve/index.tsx"),
-				r = s("./src/reddit/icons/svgs/Warning/index.tsx"),
+				r = s("./src/reddit/icons/svgs/Approve/index.tsx"),
+				l = s("./src/reddit/icons/svgs/Warning/index.tsx"),
 				c = s("./src/reddit/components/EmailCollection/Input/index.m.less"),
 				d = s.n(c);
 
@@ -78,9 +145,9 @@
 					className: d.a.input
 				})), p && i.a.createElement("div", {
 					className: d.a.icon
-				}, i.a.createElement(l.a, null)), h && i.a.createElement("div", {
+				}, i.a.createElement(r.a, null)), h && i.a.createElement("div", {
 					className: d.a.icon
-				}, i.a.createElement(r.a, null)), h && s && i.a.createElement("p", {
+				}, i.a.createElement(l.a, null)), h && s && i.a.createElement("p", {
 					className: d.a.error
 				}, s), p && n && i.a.createElement("p", {
 					className: d.a.success
@@ -106,8 +173,8 @@
 				n = s("./node_modules/react/index.js"),
 				i = s.n(n),
 				o = s("./node_modules/react-redux/es/index.js"),
-				l = s("./node_modules/reselect/es/index.js"),
-				r = s("./src/lib/classNames/index.ts"),
+				r = s("./node_modules/reselect/es/index.js"),
+				l = s("./src/lib/classNames/index.ts"),
 				c = s("./src/reddit/actions/emailCollection/index.ts"),
 				d = s("./src/reddit/actions/emailVerificationTooltip.ts"),
 				m = s("./src/reddit/actions/modal.ts"),
@@ -116,8 +183,8 @@
 				h = s("./src/reddit/components/EmailCollection/Envelope/index.tsx"),
 				b = s("./src/reddit/components/EmailCollection/Input/index.tsx"),
 				E = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				x = s("./src/reddit/controls/Button/index.tsx"),
-				f = s("./src/reddit/helpers/getErrorMsgFromR2JQueryResponse.ts"),
+				f = s("./src/reddit/controls/Button/index.tsx"),
+				x = s("./src/reddit/helpers/getErrorMsgFromR2JQueryResponse.ts"),
 				g = s("./src/reddit/helpers/trackers/emailCollection.ts"),
 				v = s("./src/reddit/selectors/user.ts"),
 				_ = s("./src/reddit/components/Settings/ModalContainer/index.tsx"),
@@ -132,7 +199,7 @@
 					passwordError: null,
 					passwordState: null
 				},
-				N = Object(l.c)({
+				N = Object(r.c)({
 					changeEmailError: v.d,
 					currentEmail: v.n
 				}),
@@ -198,7 +265,7 @@
 					const {
 						changeEmailError: t
 					} = this.props;
-					t && t !== e.changeEmailError && (t === f.a.WRONG_PASSWORD ? this.setState({
+					t && t !== e.changeEmailError && (t === x.a.WRONG_PASSWORD ? this.setState({
 						passwordError: t,
 						passwordState: b.a.Invalid
 					}) : this.setState({
@@ -214,11 +281,11 @@
 						newEmailError: s,
 						newEmailState: n,
 						password: o,
-						passwordError: l,
+						passwordError: r,
 						passwordState: c
 					} = this.state;
 					return i.a.createElement(_.a, {
-						className: Object(r.a)({
+						className: Object(l.a)({
 							[k.a["m-responsive"]]: e
 						}),
 						icon: i.a.createElement(h.a, null),
@@ -227,7 +294,7 @@
 						title: this.props.title
 					}, i.a.createElement(b.b, {
 						className: k.a.input,
-						errorMessage: l || void 0,
+						errorMessage: r || void 0,
 						onBlur: this.onPasswordFieldBlur,
 						onChange: this.updatePasswordField,
 						placeholder: a.fbt._("Current password", null, {
@@ -248,8 +315,8 @@
 						validityState: n || void 0
 					}), i.a.createElement("div", {
 						className: k.a.buttonWrapper
-					}, i.a.createElement(x.l, {
-						className: Object(r.a)(k.a.commonBtn, k.a.primaryBtn),
+					}, i.a.createElement(f.l, {
+						className: Object(l.a)(k.a.commonBtn, k.a.primaryBtn),
 						redditStyle: !0,
 						disabled: this.formIncomplete(),
 						onClick: this.handleSubmit
@@ -259,44 +326,44 @@
 				}
 			}
 			var O = Object(u.a)(S(Object(E.c)(M))),
-				j = s("./src/reddit/icons/svgs/Approve/index.tsx"),
-				B = s("./src/reddit/components/EmailCollection/Success/index.m.less"),
-				P = s.n(B);
-			var I = e => i.a.createElement("div", {
-					className: Object(r.a)(P.a.container, e.className)
-				}, i.a.createElement(j.a, {
-					className: P.a.icon
+				F = s("./src/reddit/icons/svgs/Approve/index.tsx"),
+				j = s("./src/reddit/components/EmailCollection/Success/index.m.less"),
+				B = s.n(j);
+			var P = e => i.a.createElement("div", {
+					className: Object(l.a)(B.a.container, e.className)
+				}, i.a.createElement(F.a, {
+					className: B.a.icon
 				})),
-				F = s("./src/reddit/helpers/styles/mixins/fonts.m.less"),
-				T = s.n(F);
-			var R = Object(u.a)(e => i.a.createElement(_.a, {
-					className: Object(r.a)({
+				A = s("./src/reddit/helpers/styles/mixins/fonts.m.less"),
+				D = s.n(A);
+			var I = Object(u.a)(e => i.a.createElement(_.a, {
+					className: Object(l.a)({
 						[k.a["m-responsive"]]: e.isResponsive
 					}),
 					description: i.a.createElement(i.a.Fragment, null, a.fbt._("Reddit sent a confirmation email to:", null, {
 						hk: "3IsFLZ"
 					}), " ", i.a.createElement("strong", {
-						className: T.a.strongTextFont
+						className: D.a.strongTextFont
 					}, e.email), i.a.createElement("br", null), a.fbt._("Click the verify link in the email to secure your Reddit account.", null, {
 						hk: "jJSSU"
 					})),
 					descriptionClassName: k.a.description,
-					icon: i.a.createElement(I, null),
+					icon: i.a.createElement(P, null),
 					onClose: e.onConfirm,
 					title: a.fbt._("Check your email", null, {
 						hk: "1aob6x"
 					})
 				}, i.a.createElement("div", {
 					className: k.a.buttonWrapper
-				}, i.a.createElement(x.l, {
+				}, i.a.createElement(f.l, {
 					onClick: e.onConfirm
 				}, a.fbt._("Got it", null, {
 					hk: "2LxUeS"
 				}))))),
-				A = s("./src/reddit/components/Settings/modalIds.ts"),
-				L = s("./src/lib/colors/constants.ts"),
-				H = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				D = s("./src/reddit/actions/preferences.ts"),
+				T = s("./src/reddit/components/Settings/modalIds.ts"),
+				R = s("./src/lib/colors/constants.ts"),
+				L = s("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				H = s("./src/reddit/actions/preferences.ts"),
 				J = s("./src/reddit/controls/Checkbox/index.tsx"),
 				U = s("./src/reddit/controls/InternalLink/index.tsx"),
 				W = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
@@ -304,13 +371,13 @@
 				Q = s("./src/reddit/components/Settings/DeactivateModal.tsx"),
 				X = s("./src/reddit/components/Settings/VerifyEmailModal.m.less"),
 				z = s.n(X);
-			const V = Object(l.c)({
+			const V = Object(r.c)({
 					emailDigests: v.m,
 					isEmailPermissionRequired: q.e
 				}),
 				Y = Object(o.b)(V, e => ({
 					resendEmail: () => e(Object(p.x)()),
-					toggleEmailDigests: t => e(Object(D.I)({
+					toggleEmailDigests: t => e(Object(H.I)({
 						emailDigests: t
 					}))
 				}));
@@ -329,9 +396,9 @@
 						isResponsive: s,
 						onConfirm: n,
 						resendEmail: o
-					} = this.props, l = !!e;
+					} = this.props, r = !!e;
 					return i.a.createElement(_.a, {
-						className: Object(r.a)(z.a.container, {
+						className: Object(l.a)(z.a.container, {
 							[k.a["m-responsive"]]: s
 						}),
 						description: i.a.createElement(i.a.Fragment, null, a.fbt._("Please check your email. If you do not receive it, please check it was not flagged as spam or try resending the email below.", null, {
@@ -346,7 +413,7 @@
 							hk: "3eTpv8"
 						})), ` ${a.fbt._("to control what type of email you receive.",null,{hk:"bg4j6"})}`)),
 						descriptionClassName: z.a.description,
-						icon: i.a.createElement(I, null),
+						icon: i.a.createElement(P, null),
 						onClose: n,
 						title: a.fbt._("Verification email sent", null, {
 							hk: "3rXaUZ"
@@ -354,14 +421,14 @@
 					}, t && i.a.createElement(Q.a, {
 						className: z.a.checkboxWrapper
 					}, i.a.createElement(J.a, {
-						className: Object(r.a)(z.a.checkbox, !l && z.a.unchecked),
+						className: Object(l.a)(z.a.checkbox, !r && z.a.unchecked),
 						checkBoxStyle: {
-							backgroundColor: L.f,
+							backgroundColor: R.f,
 							borderRadius: "50%",
 							fill: Object(W.a)(this.props).active,
-							visibility: l ? "visible" : "hidden"
+							visibility: r ? "visible" : "hidden"
 						},
-						isCheckboxSelected: l,
+						isCheckboxSelected: r,
 						toggleCheckbox: this.toggleEmailDigests
 					}), i.a.createElement("label", {
 						className: z.a.checkboxLabel,
@@ -370,11 +437,11 @@
 						hk: "2OiNgc"
 					}))), i.a.createElement("div", {
 						className: k.a.buttonWrapper
-					}, i.a.createElement(x.o, {
+					}, i.a.createElement(f.o, {
 						onClick: o
 					}, a.fbt._("Resend email", null, {
 						hk: "bbN8b"
-					})), i.a.createElement(x.l, {
+					})), i.a.createElement(f.l, {
 						className: k.a.primaryBtn,
 						onClick: n
 					}, a.fbt._("Done", null, {
@@ -382,29 +449,29 @@
 					}))))
 				}
 			}
-			var Z = Object(u.a)(Y(Object(E.c)(Object(H.a)(K)))),
+			var Z = Object(u.a)(Y(Object(E.c)(Object(L.a)(K)))),
 				G = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				$ = s("./src/reddit/selectors/activeModalId.ts"),
 				ee = s("./src/reddit/selectors/responsiveSettings.ts"),
 				te = s("./src/reddit/components/EmailVerificationModals/index.m.less"),
 				se = s.n(te);
-			const ae = Object(l.c)({
-					changeEmailModalOpen: Object($.b)(A.a),
-					checkEmailModalOpen: Object($.b)(A.c),
+			const ae = Object(r.c)({
+					changeEmailModalOpen: Object($.b)(T.a),
+					checkEmailModalOpen: Object($.b)(T.c),
 					isEmailPermissionRequired: q.e,
 					isResponsiveSettingsEnabled: ee.a,
-					setEmailModalOpen: Object($.b)(A.h),
-					verifyEmailModalOpen: Object($.b)(A.p)
+					setEmailModalOpen: Object($.b)(T.h),
+					verifyEmailModalOpen: Object($.b)(T.p)
 				}),
 				ne = Object(o.b)(ae, (e, {
 					shouldOpenTooltip: t
 				}) => ({
 					closeChangeEmailModal: () => {
-						t && e(Object(d.b)()), e(Object(m.g)(A.a))
+						t && e(Object(d.b)()), e(Object(m.g)(T.a))
 					},
 					closeSetEmailModal: () => e(Object(c.b)()),
-					closeVerifyEmailModal: () => e(Object(m.g)(A.p)),
-					toggleCheckEmailModal: () => e(Object(m.i)(A.c))
+					closeVerifyEmailModal: () => e(Object(m.g)(T.p)),
+					toggleCheckEmailModal: () => e(Object(m.i)(T.c))
 				})),
 				ie = Object(G.u)(),
 				oe = e => {
@@ -415,7 +482,7 @@
 						hk: "3alhJb"
 					})].join(" ") : t
 				},
-				le = () => a.fbt._("Update your email below. There will be a new verification email sent that you will need to use to verify this new email.", null, {
+				re = () => a.fbt._("Update your email below. There will be a new verification email sent that you will need to use to verify this new email.", null, {
 					hk: "2oXony"
 				});
 			t.default = ie(ne(({
@@ -423,7 +490,7 @@
 				changeEmailModalOpen: t,
 				checkEmailModalOpen: s,
 				closeChangeEmailModal: o,
-				closeSetEmailModal: l,
+				closeSetEmailModal: r,
 				closeVerifyEmailModal: c,
 				isEmailPermissionRequired: d,
 				isResponsiveSettingsEnabled: m,
@@ -431,11 +498,11 @@
 				toggleCheckEmailModal: p,
 				verifyEmailModalOpen: h
 			}) => {
-				const b = Object(r.a)({
+				const b = Object(l.a)({
 					[se.a["m-responsive"]]: m
 				});
 				return i.a.createElement(n.Fragment, null, t && i.a.createElement(O, {
-					description: le(),
+					description: re(),
 					isResponsive: m,
 					onClose: o,
 					onOverlayClick: o,
@@ -447,14 +514,14 @@
 				}), u && i.a.createElement(O, {
 					description: oe(d),
 					isResponsive: m,
-					onClose: l,
+					onClose: r,
 					overlayClassName: b,
 					shouldSendEvents: !0,
 					title: a.fbt._("Verify your account", null, {
 						hk: "27ZUuQ"
 					}),
 					withOverlay: !0
-				}), s && i.a.createElement(R, {
+				}), s && i.a.createElement(I, {
 					email: e,
 					isResponsive: m,
 					onConfirm: p,
@@ -512,8 +579,8 @@
 				n = s("./node_modules/react/index.js"),
 				i = s.n(n),
 				o = s("./src/higherOrderComponents/asModal/index.tsx"),
-				l = s("./src/reddit/controls/Button/index.tsx"),
-				r = s("./src/reddit/controls/Checkbox/index.tsx"),
+				r = s("./src/reddit/controls/Button/index.tsx"),
+				l = s("./src/reddit/controls/Checkbox/index.tsx"),
 				c = s("./src/reddit/components/Settings/shared/FatInput.tsx"),
 				d = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				m = s("./src/reddit/components/Settings/DeactivateModal.m.less"),
@@ -522,8 +589,8 @@
 			const h = p.a.div("Container", u.a),
 				b = p.a.h2("HeaderText", u.a),
 				E = p.a.button("Close", u.a),
-				x = p.a.wrapped(l.f, "PrimaryButton", u.a),
-				f = p.a.wrapped(l.o, "SecondaryButton", u.a),
+				f = p.a.wrapped(r.f, "PrimaryButton", u.a),
+				x = p.a.wrapped(r.o, "SecondaryButton", u.a),
 				g = p.a.div("ButtonWrapper", u.a),
 				v = p.a.textarea("TextArea", u.a),
 				_ = p.a.h3("SectionLabel", u.a),
@@ -604,17 +671,17 @@
 								hk: "23UmWl"
 							}),
 							type: "password"
-						}), i.a.createElement(C, null, i.a.createElement(r.a, {
+						}), i.a.createElement(C, null, i.a.createElement(l.a, {
 							className: u.a.Deactivate,
 							isCheckboxSelected: this.state.checkbox,
 							toggleCheckbox: () => this.updateField("checkbox")(!this.state.checkbox)
 						}), i.a.createElement("label", null, a.fbt._("I understand that deactivated accounts are not recoverable", null, {
 							hk: "1qMwOQ"
-						}))), i.a.createElement(g, null, i.a.createElement(f, {
+						}))), i.a.createElement(g, null, i.a.createElement(x, {
 							onClick: e.exit
 						}, a.fbt._("Cancel", null, {
 							hk: "2TSLl5"
-						})), i.a.createElement(x, {
+						})), i.a.createElement(f, {
 							onClick: this.showConfirm,
 							disabled: this.formIncomplete()
 						}, a.fbt._("Deactivate", null, {
@@ -645,7 +712,7 @@
 					}), this.props.user && this.props.user.hasStripeSubscription && this.renderPremiumNotificationMessage({
 						platform: "stripe",
 						isMobile: !1
-					})), i.a.createElement(g, null, i.a.createElement(x, {
+					})), i.a.createElement(g, null, i.a.createElement(f, {
 						onClick: () => this.setState({
 							showPremiumNotification: !1
 						})
@@ -653,13 +720,13 @@
 						hk: "kss7"
 					})))), this.renderConfirm = () => i.a.createElement(d.l, null, i.a.createElement(y, null, a.fbt._("This action can not be undone. Are you sure you want to deactivate?", null, {
 						hk: "1RBb2C"
-					})), i.a.createElement(g, null, i.a.createElement(f, {
+					})), i.a.createElement(g, null, i.a.createElement(x, {
 						onClick: () => this.setState({
 							showConfirm: !1
 						})
 					}, a.fbt._("Back", null, {
 						hk: "1P3x9"
-					})), i.a.createElement(x, {
+					})), i.a.createElement(f, {
 						onClick: this.handleSubmit
 					}, a.fbt._("Deactivate", null, {
 						hk: "3B1BI6"
@@ -701,14 +768,14 @@
 				n = s.n(a),
 				i = s("./src/lib/classNames/index.ts"),
 				o = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				l = s("./src/reddit/components/Settings/ModalContainer/index.m.less"),
-				r = s.n(l);
+				r = s("./src/reddit/components/Settings/ModalContainer/index.m.less"),
+				l = s.n(r);
 			t.a = e => {
 				const {
 					bodyClassName: t,
 					children: s,
 					className: a,
-					description: l,
+					description: r,
 					descriptionClassName: c,
 					headerClassName: d,
 					icon: m,
@@ -717,22 +784,22 @@
 					title: h
 				} = e;
 				return n.a.createElement("div", {
-					className: Object(i.a)(r.a.container, a)
+					className: Object(i.a)(l.a.container, a)
 				}, p && n.a.createElement("button", {
-					className: r.a.closeButton,
+					className: l.a.closeButton,
 					onClick: p
 				}, n.a.createElement(o.a, {
-					className: r.a.closeIcon
+					className: l.a.closeIcon
 				})), n.a.createElement("div", {
-					className: Object(i.a)(r.a.header, d)
+					className: Object(i.a)(l.a.header, d)
 				}, m && n.a.createElement("div", {
-					className: Object(i.a)(r.a.icon, u)
+					className: Object(i.a)(l.a.icon, u)
 				}, m), n.a.createElement("h2", {
-					className: r.a.title
-				}, h)), l && n.a.createElement("p", {
-					className: Object(i.a)(r.a.description, c)
-				}, l), n.a.createElement("div", {
-					className: Object(i.a)(r.a.body, t)
+					className: l.a.title
+				}, h)), r && n.a.createElement("p", {
+					className: Object(i.a)(l.a.description, c)
+				}, r), n.a.createElement("div", {
+					className: Object(i.a)(l.a.body, t)
 				}, s))
 			}
 		},
@@ -792,12 +859,12 @@
 				n = s.n(a),
 				i = s("./src/lib/classNames/index.ts"),
 				o = s("./src/reddit/components/Settings/shared/FatInput.m.less"),
-				l = s.n(o),
-				r = s("./src/lib/lessComponent.tsx");
-			const c = r.a.input("Input", l.a),
-				d = r.a.label("Label", l.a),
-				m = r.a.button("Button", l.a),
-				u = r.a.div("Wrapper", l.a);
+				r = s.n(o),
+				l = s("./src/lib/lessComponent.tsx");
+			const c = l.a.input("Input", r.a),
+				d = l.a.label("Label", r.a),
+				m = l.a.button("Button", r.a),
+				u = l.a.div("Wrapper", r.a);
 			class p extends n.a.Component {
 				constructor(e) {
 					super(e), this.state = {
@@ -811,18 +878,18 @@
 						disabled: s,
 						label: a,
 						onClick: o,
-						onChange: r,
+						onChange: l,
 						type: p = "text",
 						value: h
 					} = this.props;
 					return n.a.createElement(u, {
 						className: Object(i.a)(t, {
-							[l.a.mFocused]: this.state.focused
+							[r.a.mFocused]: this.state.focused
 						})
 					}, n.a.createElement(c, {
 						value: h,
 						type: p,
-						onChange: e => r(e.currentTarget.value),
+						onChange: e => l(e.currentTarget.value),
 						onFocus: e => this.setState({
 							focused: !0
 						}),
@@ -851,8 +918,8 @@
 				n = s.n(a),
 				i = s("./src/lib/classNames/index.ts"),
 				o = s("./src/reddit/icons/fonts/index.tsx"),
-				l = s("./src/reddit/controls/Checkbox/index.m.less"),
-				r = s.n(l);
+				r = s("./src/reddit/controls/Checkbox/index.m.less"),
+				l = s.n(r);
 			t.a = e => n.a.createElement("button", {
 				"aria-checked": e.isHalfCheckboxSelected ? "mixed" : e.isCheckboxSelected,
 				className: e.className,
@@ -863,8 +930,8 @@
 			}, n.a.createElement(o.a, {
 				name: e.isHalfCheckboxSelected ? "checkbox_dismiss_fill" : e.isCheckboxSelected ? "checkbox_fill" : "checkbox",
 				className: Object(i.a)({
-					[r.a.redditStyle]: e.redditStyle,
-					[r.a.disabled]: e.disabled
+					[l.a.redditStyle]: e.redditStyle,
+					[l.a.disabled]: e.disabled
 				}),
 				style: e.checkBoxStyle
 			}))
@@ -944,9 +1011,9 @@
 				n = s.n(a),
 				i = s("./src/lib/classNames/index.ts"),
 				o = s("./src/reddit/icons/svgs/Warning/index.m.less"),
-				l = s.n(o);
+				r = s.n(o);
 			t.a = e => n.a.createElement("svg", {
-				className: Object(i.a)(l.a.warning, e.className),
+				className: Object(i.a)(r.a.warning, e.className),
 				viewBox: "0 0 18 18",
 				xmlns: "http://www.w3.org/2000/svg"
 			}, n.a.createElement("circle", {
@@ -962,4 +1029,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.03bf4100fa5aa56dcb04.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.922900f4c57e9c7d0386.js.map

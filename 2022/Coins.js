@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.1a487d775e463e062e18.js
-// Retrieved at 3/7/2022, 3:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.6b6729aa19a90f26b935.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -350,10 +350,10 @@
 					M = E("epsBank", C),
 					L = E("payment", C),
 					R = E("paymentRequestButton", C),
-					D = E("linkAuthentication", C),
-					B = E("shippingAddress", C),
+					B = E("linkAuthentication", C),
+					D = E("shippingAddress", C),
 					G = E("afterpayClearpayMessage", C);
-				e.AfterpayClearpayMessageElement = G, e.AuBankAccountElement = x, e.CardCvcElement = N, e.CardElement = _, e.CardExpiryElement = P, e.CardNumberElement = w, e.Elements = y, e.ElementsConsumer = O, e.EpsBankElement = M, e.FpxBankElement = I, e.IbanElement = T, e.IdealBankElement = A, e.LinkAuthenticationElement = D, e.P24BankElement = S, e.PaymentElement = L, e.PaymentRequestButtonElement = R, e.ShippingAddressElement = B, e.useElements = function() {
+				e.AfterpayClearpayMessageElement = G, e.AuBankAccountElement = x, e.CardCvcElement = N, e.CardElement = _, e.CardExpiryElement = P, e.CardNumberElement = w, e.Elements = y, e.ElementsConsumer = O, e.EpsBankElement = M, e.FpxBankElement = I, e.IbanElement = T, e.IdealBankElement = A, e.LinkAuthenticationElement = B, e.P24BankElement = S, e.PaymentElement = L, e.PaymentRequestButtonElement = R, e.ShippingAddressElement = D, e.useElements = function() {
 					return v("calls useElements()").elements
 				}, e.useStripe = function() {
 					return v("calls useStripe()").stripe
@@ -361,6 +361,22 @@
 					value: !0
 				})
 			}(t, r("./node_modules/react/index.js"))
+		},
+		"./node_modules/lodash/times.js": function(e, t, r) {
+			var n = r("./node_modules/lodash/_baseTimes.js"),
+				a = r("./node_modules/lodash/_castFunction.js"),
+				c = r("./node_modules/lodash/toInteger.js"),
+				s = 9007199254740991,
+				o = 4294967295,
+				i = Math.min;
+			e.exports = function(e, t) {
+				if ((e = c(e)) < 1 || e > s) return [];
+				var r = o,
+					l = i(e, o);
+				t = a(t), e -= o;
+				for (var d = n(l, t); ++r < e;) t(r);
+				return d
+			}
 		},
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
 			"use strict";
@@ -1634,6 +1650,33 @@
 				return r.multipliedBy(a).toFixed(0)
 			}
 		},
+		"./src/reddit/helpers/styles/mixins/loading.m.less": function(e, t, r) {
+			e.exports = {
+				loadingBackground: "fzTkuBRFT8iIn1XnJX_Yn",
+				"m-loading": "_34yMY7-6MNnz3utfjExvIq",
+				mLoading: "_34yMY7-6MNnz3utfjExvIq",
+				gradientAnimation: "vnt666wwqSK5qL63sBn9P",
+				loadingBar: "_3giTODNeZ-Po90u8Ghs4aI",
+				loadingContainer: "VRC9QT7CgUxvhK0ceQSrn"
+			}
+		},
+		"./src/reddit/helpers/styles/mixins/loading.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return s
+			})), r.d(t, "b", (function() {
+				return o
+			}));
+			var n = r("./src/lib/classNames/index.ts"),
+				a = r("./src/reddit/helpers/styles/mixins/loading.m.less"),
+				c = r.n(a);
+			const s = ({
+					isLoading: e
+				}) => Object(n.a)(c.a.loadingBackground, {
+					[c.a["m-loading"]]: e
+				}),
+				o = e => Object(n.a)(c.a.loadingBar, s(e))
+		},
 		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, r) {
 			"use strict";
 			var n = r("./node_modules/react/index.js"),
@@ -1719,6 +1762,27 @@
 			}, a.a.createElement("path", {
 				d: "M45.31.614c1.411.984 3.72.984 5.13 0 1.412-.984 3.527-.761 4.703.494 1.175 1.256 3.434 1.736 5.018 1.067 1.584-.67 3.608-.012 4.495 1.461.89 1.472 2.998 2.412 4.687 2.087 1.69-.326 3.532.738 4.096 2.363.562 1.627 2.43 2.982 4.15 3.017 1.72.032 3.3 1.455 3.513 3.162.213 1.707 1.758 3.423 3.432 3.813 1.676.39 2.926 2.11 2.78 3.824-.147 1.715 1.007 3.714 2.565 4.444 1.558.729 2.423 2.672 1.923 4.319-.5 1.646.214 3.841 1.585 4.879 1.372 1.037 1.815 3.118.983 4.625-.83 1.506-.59 3.802.536 5.101 1.126 1.3 1.126 3.428 0 4.729-1.126 1.3-1.367 3.596-.536 5.102.832 1.506.39 3.586-.983 4.624-1.371 1.037-2.086 3.233-1.585 4.878.5 1.646-.365 3.591-1.923 4.32-1.558.73-2.712 2.729-2.565 4.443.146 1.714-1.104 3.435-2.78 3.825-1.674.39-3.22 2.106-3.432 3.812-.212 1.707-1.794 3.13-3.513 3.164-1.72.032-3.588 1.39-4.15 3.015-.564 1.626-2.406 2.69-4.096 2.365-1.689-.326-3.797.614-4.687 2.086-.887 1.473-2.911 2.13-4.495 1.461-1.584-.67-3.843-.19-5.018 1.066-1.176 1.257-3.291 1.48-4.703.495-1.41-.984-3.719-.984-5.13 0-1.41.985-3.526.762-4.702-.495-1.175-1.256-3.434-1.736-5.018-1.066-1.584.669-3.608.012-4.496-1.461-.889-1.472-2.997-2.412-4.687-2.086-1.689.325-3.531-.739-4.095-2.365-.562-1.625-2.43-2.983-4.15-3.015-1.72-.033-3.3-1.457-3.513-3.164-.213-1.706-1.758-3.422-3.432-3.812-1.676-.39-2.926-2.111-2.78-3.825.147-1.714-1.007-3.713-2.565-4.443-1.558-.729-2.423-2.674-1.923-4.32.5-1.645-.213-3.84-1.585-4.878-1.372-1.038-1.815-3.118-.983-4.624.83-1.506.59-3.802-.537-5.102-1.125-1.301-1.125-3.43 0-4.729 1.127-1.3 1.368-3.595.537-5.1-.832-1.508-.39-3.589.983-4.626 1.372-1.038 2.086-3.233 1.585-4.88-.5-1.646.365-3.59 1.923-4.318 1.558-.73 2.712-2.73 2.566-4.444-.147-1.714 1.103-3.434 2.779-3.824 1.674-.39 3.22-2.106 3.432-3.813.212-1.707 1.794-3.13 3.513-3.162 1.72-.035 3.588-1.39 4.15-3.017.564-1.625 2.406-2.69 4.095-2.363 1.69.325 3.798-.615 4.687-2.087.888-1.473 2.912-2.131 4.496-1.46 1.584.668 3.843.188 5.018-1.068C41.784-.147 43.9-.37 45.31.614"
 			}))
+		},
+		"./src/reddit/models/Payments/index.ts": function(e, t, r) {
+			"use strict";
+			var n, a, c, s;
+			r.d(t, "b", (function() {
+					return a
+				})), r.d(t, "a", (function() {
+					return c
+				})),
+				function(e) {
+					e.PayPal = "paypal", e.Stripe = "stripe"
+				}(n || (n = {})),
+				function(e) {
+					e.PayPal = "PAYPAL", e.Stripe = "STRIPE"
+				}(a || (a = {})),
+				function(e) {
+					e.NewPayPal = "new-paypal", e.NewStripe = "new-stripe", e.SavedPayPal = "saved-paypal", e.SavedStripe = "saved-stripe"
+				}(c || (c = {})),
+				function(e) {
+					e.Comment = "comment", e.Post = "post", e.Profile = "profile", e.Subreddit = "subreddit"
+				}(s || (s = {}))
 		},
 		"./src/reddit/pages/CoinsPage/HeroSection/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1809,8 +1873,8 @@
 				M = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				L = r("./src/reddit/selectors/user.ts"),
 				R = r("./src/reddit/components/CoinPurchasePackage/index.m.less"),
-				D = r.n(R),
-				B = r("./src/lib/classNames/index.ts"),
+				B = r.n(R),
+				D = r("./src/lib/classNames/index.ts"),
 				G = r("./src/lib/currency/currencies.ts"),
 				F = r("./src/lib/localizeCurrency/index.ts"),
 				U = r("./src/reddit/controls/Button/index.tsx"),
@@ -1841,64 +1905,64 @@
 						currency: G.a
 					}), O = s ? null === (t = g.marketing["4x"]) || void 0 === t ? void 0 : t.url : null === (r = g.marketing["2x"]) || void 0 === r ? void 0 : r.url, j = m > 0 && `${Object(F.a)(m,{locale:l})}%`, k = a.fbt._("bonus", null, {
 						hk: "L8mcp"
-					}), E = s ? D.a.large : "", C = d !== p, x = u !== h;
+					}), E = s ? B.a.large : "", C = d !== p, x = u !== h;
 					return i.a.createElement("div", {
-						className: Object(B.a)(n, D.a.coinPurchasePackage, E)
+						className: Object(D.a)(n, B.a.coinPurchasePackage, E)
 					}, i.a.createElement("div", {
-						className: D.a.imageContainer
+						className: B.a.imageContainer
 					}, i.a.createElement("img", {
 						src: O
 					}), f && i.a.createElement("div", {
-						className: D.a.badge
+						className: B.a.badge
 					}, f), j && i.a.createElement("div", {
-						className: D.a.stamp
+						className: B.a.stamp
 					}, i.a.createElement(z.a, {
-						className: D.a.stampIcon
+						className: B.a.stampIcon
 					}), i.a.createElement("div", {
-						className: D.a.stampValue
+						className: B.a.stampValue
 					}, j), i.a.createElement("div", {
-						className: D.a.stampText
+						className: B.a.stampText
 					}, k))), i.a.createElement("div", {
-						className: D.a.contentContainer
+						className: B.a.contentContainer
 					}, i.a.createElement("div", {
-						className: D.a.contentText
+						className: B.a.contentText
 					}, i.a.createElement("div", {
-						className: D.a.price
+						className: B.a.price
 					}, i.a.createElement(V.a, {
-						className: D.a.priceCoinIcon
+						className: B.a.priceCoinIcon
 					}), i.a.createElement("div", null, i.a.createElement("div", {
-						className: D.a.priceValue
+						className: B.a.priceValue
 					}, v), C && i.a.createElement("div", {
-						className: Object(B.a)(D.a.priceCurrency, D.a.crossout)
+						className: Object(D.a)(B.a.priceCurrency, B.a.crossout)
 					}, Object(F.b)(d, {
 						locale: l,
 						type: G.b.Reddit,
 						currency: G.a
 					})))), i.a.createElement("div", {
-						className: D.a.description
+						className: B.a.description
 					}, b)), i.a.createElement("div", null, i.a.createElement(U.t, {
 						kind: U.b.Button,
 						priority: U.c.Primary,
-						className: D.a.cta,
+						className: B.a.cta,
 						onClick: o
 					}, y), x && i.a.createElement("div", {
-						className: D.a.priceCrossout
+						className: B.a.priceCrossout
 					}, Object(F.b)(u, {
 						locale: l
 					})))))
 				},
-				Q = r("./src/reddit/helpers/styles/mixins/loading.ts"),
-				Y = r("./src/reddit/components/CoinPurchasePackage/placeholder.m.less"),
-				W = r.n(Y);
-			var X = ({
+				Y = r("./src/reddit/helpers/styles/mixins/loading.ts"),
+				Q = r("./src/reddit/components/CoinPurchasePackage/placeholder.m.less"),
+				X = r.n(Q);
+			var W = ({
 					className: e,
 					isLargeView: t,
 					...r
 				}) => {
-					const n = t ? W.a.large : "",
-						a = Object(Q.b)(r);
+					const n = t ? X.a.large : "",
+						a = Object(Y.b)(r);
 					return i.a.createElement("div", {
-						className: Object(B.a)(a, W.a.packagePlaceholder, n, e)
+						className: Object(D.a)(a, X.a.packagePlaceholder, n, e)
 					})
 				},
 				J = r("./src/reddit/components/CollapsibleFAQ/index.tsx"),
@@ -1919,7 +1983,7 @@
 					periodicalCoins: o
 				} = s, l = o.toLocaleString(), d = `${n.a.assetPath}/img/gold/coins-premium-g.png`;
 				return i.a.createElement("div", {
-					className: Object(B.a)(ee.a.premiumBanner, t)
+					className: Object(D.a)(ee.a.premiumBanner, t)
 				}, i.a.createElement("img", {
 					className: ee.a.premiumCrest,
 					src: d
@@ -1974,9 +2038,9 @@
 					}, i.a.createElement("div", {
 						className: oe.a.heroInner
 					}, i.a.createElement("h1", {
-						className: Object(B.a)(oe.a.heroTitle, oe.a.activeSale)
+						className: Object(D.a)(oe.a.heroTitle, oe.a.activeSale)
 					}, a), i.a.createElement("p", {
-						className: Object(B.a)(oe.a.heroDescription, oe.a.activeSale)
+						className: Object(D.a)(oe.a.heroDescription, oe.a.activeSale)
 					}, n), e && i.a.createElement(ce.a, {
 						className: oe.a.expiresText,
 						expirationDate: new Date(1e3 * e)
@@ -2176,7 +2240,7 @@
 						className: _.a.purchaseLogo
 					})), i.a.createElement("div", {
 						className: _.a.purchasePackages
-					}, c || !e.length ? s()(5, e => i.a.createElement(X, {
+					}, c || !e.length ? s()(5, e => i.a.createElement(W, {
 						className: _.a.purchasePackage,
 						isLargeView: 0 === e,
 						isLoading: !0,
@@ -2298,4 +2362,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.1a487d775e463e062e18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.6b6729aa19a90f26b935.js.map

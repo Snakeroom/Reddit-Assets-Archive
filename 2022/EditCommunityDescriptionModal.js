@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.6b78602c07eb243a0b8a.js
-// Retrieved at 2/7/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.a7a25315314c878a3dd9.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EditCommunityDescriptionModal"], {
 		"./src/lib/hooks/useMutation.ts": function(e, t, o) {
@@ -73,8 +73,8 @@
 				p = o("./src/reddit/constants/modals.ts"),
 				b = o("./src/reddit/controls/Button/index.tsx"),
 				_ = o("./src/reddit/endpoints/subreddit/newCommunityProgress.ts"),
-				j = o("./src/reddit/helpers/trackers/communityProgressModule.ts"),
-				y = o("./src/reddit/hooks/useTracking.ts"),
+				y = o("./src/reddit/helpers/trackers/communityProgressModule.ts"),
+				j = o("./src/reddit/hooks/useTracking.ts"),
 				f = o("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				O = o("./src/reddit/selectors/experiments/newCommunityProgressV3.ts"),
 				C = o("./src/reddit/selectors/platform.ts"),
@@ -85,7 +85,7 @@
 					t = Object(a.e)(t => e && Object(O.c)(t)[e]),
 					[o, c] = Object(n.useState)(""),
 					g = Object(a.d)(),
-					M = Object(y.a)(),
+					M = Object(j.a)(),
 					[E] = Object(i.a)(_.a);
 				if (!e || !t) return null;
 				const k = () => g(Object(d.i)(p.a.EDIT_DESCRIPTION_MODAL));
@@ -130,7 +130,7 @@
 								subredditId: e,
 								cardId: "add_descr"
 							}
-						}), M(Object(j.d)(t, "add_descr")), g(Object(u.b)(e)), k()
+						}), M(Object(y.d)(t, "add_descr")), g(Object(u.b)(e)), k()
 					}
 				}, s.fbt._("Save", null, {
 					hk: "4yMsMq"
@@ -219,7 +219,7 @@
 						pageType: "community",
 						reason: t
 					},
-					subreddit: Object(s.jb)(o)
+					subreddit: Object(s.ib)(o)
 				}),
 				a = (e, t, o) => r => ({
 					...Object(s.o)(r),
@@ -233,7 +233,7 @@
 							reason: o
 						}
 					},
-					subreddit: Object(s.jb)(r)
+					subreddit: Object(s.ib)(r)
 				}),
 				c = e => t => ({
 					...Object(s.o)(t),
@@ -245,7 +245,7 @@
 						pageType: "community",
 						reason: "expanded_module"
 					},
-					subreddit: Object(s.jb)(t)
+					subreddit: Object(s.ib)(t)
 				}),
 				i = e => t => ({
 					...Object(s.o)(t),
@@ -257,7 +257,7 @@
 						pageType: "community",
 						reason: "collapses_module"
 					},
-					subreddit: Object(s.jb)(t)
+					subreddit: Object(s.ib)(t)
 				}),
 				d = (e, t) => o => ({
 					...Object(s.o)(o),
@@ -268,7 +268,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(s.jb)(o)
+					subreddit: Object(s.ib)(o)
 				}),
 				u = (e, t) => o => ({
 					...Object(s.o)(o),
@@ -279,7 +279,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(s.jb)(o)
+					subreddit: Object(s.ib)(o)
 				}),
 				l = (e, t) => o => ({
 					...Object(s.o)(o),
@@ -290,7 +290,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(s.jb)(o)
+					subreddit: Object(s.ib)(o)
 				})
 		},
 		"./src/redditGQL/operations/CompleteCommunityProgressCard.json": function(e) {
@@ -307,4 +307,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.6b78602c07eb243a0b8a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.a7a25315314c878a3dd9.js.map

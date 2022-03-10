@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.f946b60044ac8bb2b039.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.3e4925a773696a7733c4.js
+// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -1141,8 +1141,8 @@
 				s = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
 					...s.o(e),
-					subreddit: s.jb(e),
-					userSubreddit: s.tb(e)
+					subreddit: s.ib(e),
+					userSubreddit: s.sb(e)
 				}),
 				o = () => e => ({
 					source: "wiki",
@@ -1202,4 +1202,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.f946b60044ac8bb2b039.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.3e4925a773696a7733c4.js.map
