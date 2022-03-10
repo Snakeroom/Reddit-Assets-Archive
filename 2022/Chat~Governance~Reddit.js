@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e56fb67aac9939a02888.js
-// Retrieved at 3/9/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fd60e412478ee775bc20.js
+// Retrieved at 3/10/2022, 10:00:26 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("159620"),
+				buildNumber: Object(r.c)("159661"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1646869114"),
+				buildTimestamp: Object(r.b)("1646923043"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6067,14 +6067,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c637a0027a062414a998bd4bade2d7b782545de15-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cfba1c0acb7422b7e954d20ad8489cb97e61bd47c-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "637a0027a062414a998bd4bade2d7b782545de15-production",
+						release: "fba1c0acb7422b7e954d20ad8489cb97e61bd47c-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6591,7 +6591,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "637a0027a062414a998bd4bade2d7b782545de15-production",
+						releaseClient: "fba1c0acb7422b7e954d20ad8489cb97e61bd47c-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -21425,12 +21425,13 @@
 					isSaved: O,
 					parent: I,
 					permalink: R,
-					postInfo: F,
-					score: N,
-					voteState: C
-				} = e, j = "ADMIN" === w, A = "MODERATOR" === w, x = f ? Object(r.b)(f) : void 0, D = h && h.__typename === u.c.AvailableRedditor && h.isCakeDayNow || !1, P = h && h.__typename === u.c.AvailableRedditor && h.isPremiumMember || !1, L = {
-					allAwardings: x,
-					awardCountsById: Object(c.g)(x),
+					isLocked: F,
+					postInfo: N,
+					score: C,
+					voteState: j
+				} = e, A = "ADMIN" === w, x = "MODERATOR" === w, D = f ? Object(r.b)(f) : void 0, P = h && h.__typename === u.c.AvailableRedditor && h.isCakeDayNow || !1, L = h && h.__typename === u.c.AvailableRedditor && h.isPremiumMember || !1, k = {
+					allAwardings: D,
+					awardCountsById: Object(c.g)(D),
 					associatedAward: l,
 					author: h && Object(d.b)(h) || n.E,
 					authorId: h && h.id || "",
@@ -21440,12 +21441,12 @@
 					distinguishType: w || "",
 					editedAt: Object(r.e)(v) / 1e3 || null,
 					id: y,
-					isAdmin: j,
-					isAuthorCakeday: D,
-					isAuthorPremium: P,
+					isAdmin: A,
+					isAuthorCakeday: P,
+					isAuthorPremium: L,
 					isGildable: E,
-					isMod: A,
-					isOp: m(h, F),
+					isMod: x,
+					isOp: m(h, N),
 					isSaved: O,
 					isScoreHidden: S,
 					isStickied: T,
@@ -21453,13 +21454,13 @@
 					media: _(e),
 					parentId: I && I.id,
 					permalink: `https://www.reddit.com${R}`,
-					postAuthor: p(F),
-					postId: F && F.id || "",
-					postTitle: F && F.title || null,
+					postAuthor: p(N),
+					postId: N && N.id || "",
+					postTitle: N && N.title || null,
 					profileImage: null === (o = null === (i = null === (t = null == h ? void 0 : h.profile) || void 0 === t ? void 0 : t.styles) || void 0 === i ? void 0 : i.legacyIcon) || void 0 === o ? void 0 : o.url,
-					score: N || 0,
+					score: C || 0,
 					subredditId: "",
-					voteState: Object(r.d)(C),
+					voteState: Object(r.d)(j),
 					modReports: [],
 					userReports: [],
 					...Object(s.a)(e),
@@ -21468,12 +21469,12 @@
 					collapsedBecauseCrowdControl: !1,
 					collapsedReasonCode: null,
 					isDeleted: !1,
-					isLocked: !1,
+					isLocked: F,
 					deletedBy: null,
 					sendReplies: !0,
 					isSystem: !1
 				};
-				return e.postInfo && Object(a.n)(e.postInfo) ? L.subredditId = e.postInfo.subreddit.id : e.postInfo && Object(a.l)(e.postInfo) && (L.subredditId = e.postInfo.profile.id), L
+				return e.postInfo && Object(a.n)(e.postInfo) ? k.subredditId = e.postInfo.subreddit.id : e.postInfo && Object(a.l)(e.postInfo) && (k.subredditId = e.postInfo.profile.id), k
 			}
 		},
 		"./src/reddit/helpers/graphql/normalizeDateTime/index.ts": function(e, t, i) {
@@ -21572,7 +21573,7 @@
 					const t = e.authorInfo || e.author;
 					return [e.reason || "", (null == t ? void 0 : t.displayName) || (null == t ? void 0 : t.name) || ""]
 				}) : null,
-				o = e => e && e.length ? e.map(e => [e.reason || "", e.count || 0, !1, !1]) : null;
+				o = e => e && e.length ? e.map(e => [e.reason || "", e.count || 0, !!e.isSnoozed, !!e.isSnoozable]) : null;
 			t.a = ({
 				moderationInfo: e
 			}) => {
@@ -21594,7 +21595,7 @@
 						approvedBy: t,
 						approvedAtUTC: i
 					} : {
-						bannedBy: t,
+						bannedBy: t || null != e.banReason || null,
 						bannedAtUTC: i
 					};
 				return {
@@ -21608,10 +21609,11 @@
 					approvedAtUTC: c,
 					bannedBy: _,
 					bannedAtUTC: m,
-					...l && {
+					..._ && {
 						modReasonBy: t,
 						modRemovalReason: e.banReason
 					},
+					collapsedBecauseCrowdControl: null == e ? void 0 : e.isAutoCollapsedFromCrowdControl,
 					modReports: s(e.modReports) || [],
 					userReports: o(e.userReports) || [],
 					modReportsDismissed: s(e.dismissedModReports) || [],
@@ -22033,39 +22035,40 @@
 				D = e => e.authorOnlyInfo && e.authorOnlyInfo.contentMode === p.d.Markdown ? h.i.MARKDOWN : h.i.RICH_TEXT,
 				P = e => Math.min(e.height, e.width),
 				L = (e, t) => {
+					var i, n, r, s, o, d, a, l, u, c, m, p, h, f, b;
 					const {
-						media: i,
-						content: n
-					} = e, r = (e => e.isSpoiler || e.isNsfw)(e) ? i && i.obfuscatedStill && i.obfuscatedStill.source && i.obfuscatedStill.source.url : null;
+						media: g,
+						content: w
+					} = e, v = (e => e.isSpoiler || e.isNsfw)(e) ? g && g.obfuscatedStill && g.obfuscatedStill.source && g.obfuscatedStill.source.url : null;
 					switch (t) {
 						case _.o.VIDEO: {
 							const e = 400,
-								n = F(i),
-								s = i && i.still && i.still.source && {
-									url: i.still.source.url,
-									...i.still.source.dimensions
+								i = F(g),
+								n = g && g.still && g.still.source && {
+									url: g.still.source.url,
+									...g.still.source.dimensions
 								};
-							let o;
-							if (n.length) {
-								o = n.reduce((e, t) => e.width > t.width ? e : t);
-								const t = n.reduce((t, i) => P(i) > e && s && P(i) < P(s) ? [...t, i] : t, []);
-								t.length && (o = t.reduce((e, t) => P(e) < P(t) ? e : t))
-							} else o = s;
+							let r;
+							if (i.length) {
+								r = i.reduce((e, t) => e.width > t.width ? e : t);
+								const t = i.reduce((t, i) => P(i) > e && n && P(i) < P(n) ? [...t, i] : t, []);
+								t.length && (r = t.reduce((e, t) => P(e) < P(t) ? e : t))
+							} else r = n;
 							return {
 								type: t,
-								obfuscated: r,
-								hlsUrl: i && i.streaming && i.streaming.hlsUrl || "",
-								dashUrl: i && i.streaming && i.streaming.dashUrl || "",
-								isGif: !!i && !!i.streaming && i.streaming.isGif,
-								scrubberThumbSource: i && i.streaming && i.streaming.scrubberMediaUrl || "",
-								width: i && i.streaming ? i.streaming.dimensions.width : 0,
-								height: i && i.streaming ? i.streaming.dimensions.height : 0,
-								posterUrl: o && o.url || void 0
+								obfuscated: v,
+								hlsUrl: g && g.streaming && g.streaming.hlsUrl || "",
+								dashUrl: g && g.streaming && g.streaming.dashUrl || "",
+								isGif: !!g && !!g.streaming && g.streaming.isGif,
+								scrubberThumbSource: g && g.streaming && g.streaming.scrubberMediaUrl || "",
+								width: g && g.streaming ? g.streaming.dimensions.width : 0,
+								height: g && g.streaming ? g.streaming.dimensions.height : 0,
+								posterUrl: r && r.url || void 0
 							}
 						}
 						case _.o.LIVEVIDEO:
 							return {
-								type: t, obfuscated: null, hlsUrl: i && i.RPAN && i.RPAN.hlsUrl || "", scrubberThumbSource: i && i.RPAN && i.RPAN.scrubberMediaUrl || ""
+								type: t, obfuscated: null, hlsUrl: g && g.RPAN && g.RPAN.hlsUrl || "", scrubberThumbSource: g && g.RPAN && g.RPAN.scrubberMediaUrl || ""
 							};
 						case _.o.TEXT:
 							return {
@@ -22073,27 +22076,27 @@
 							};
 						case _.o.RTJSON:
 							return {
-								type: t, obfuscated: null, markdownContent: e.content ? e.content.markdown : "", richtextContent: A(n.richtext), content: "", rteMode: D(e), mediaMetadata: W(e)
+								type: t, obfuscated: null, markdownContent: e.content ? e.content.markdown : "", richtextContent: A(w.richtext), content: "", rteMode: D(e), mediaMetadata: W(e)
 							};
 						case _.o.IMAGE: {
-							const n = i && i.animated && i.animated.gif_source ? "gif" : null;
-							let s = "";
-							return "i.redd.it" === e.domain && e.url ? s = e.url : i && i.still && i.still.source && (s = i.still.source.url), {
+							const i = g && g.animated && g.animated.gif_source ? "gif" : null;
+							let n = "";
+							return "i.redd.it" === e.domain && e.url ? n = e.url : g && g.still && g.still.source && (n = g.still.source.url), {
 								type: t,
-								obfuscated: r,
-								resolutions: F(i, n),
-								width: i && i.still && i.still.source ? i.still.source.dimensions.width : 0,
-								height: i && i.still && i.still.source ? i.still.source.dimensions.height : 0,
-								content: s
+								obfuscated: v,
+								resolutions: F(g, i),
+								width: g && g.still && g.still.source ? g.still.source.dimensions.width : 0,
+								height: g && g.still && g.still.source ? g.still.source.dimensions.height : 0,
+								content: n
 							}
 						}
 						case _.o.EMBED:
 							return {
-								type: t, obfuscated: r, width: i && i.video && i.video.dimensions && i.video.dimensions.width || 0, height: i && i.video && i.video.dimensions && i.video.dimensions.height || 0, provider: i && i.video && i.video.attribution && i.video.attribution.providerName || "", content: i && i.video && i.video.embedUrl && !e.isSurveyAd ? i.video.embedUrl : ""
+								type: t, obfuscated: v, width: (null === (n = null === (i = null == g ? void 0 : g.video) || void 0 === i ? void 0 : i.dimensions) || void 0 === n ? void 0 : n.width) || (null === (o = null === (s = null === (r = null == g ? void 0 : g.still) || void 0 === r ? void 0 : r.source) || void 0 === s ? void 0 : s.dimensions) || void 0 === o ? void 0 : o.width) || 0, height: (null === (a = null === (d = null == g ? void 0 : g.video) || void 0 === d ? void 0 : d.dimensions) || void 0 === a ? void 0 : a.height) || (null === (c = null === (u = null === (l = null == g ? void 0 : g.still) || void 0 === l ? void 0 : l.source) || void 0 === u ? void 0 : u.dimensions) || void 0 === c ? void 0 : c.height) || 0, provider: (null === (p = null === (m = null == g ? void 0 : g.video) || void 0 === m ? void 0 : m.attribution) || void 0 === p ? void 0 : p.providerName) || "", content: (null === (h = null == g ? void 0 : g.video) || void 0 === h ? void 0 : h.embedUrl) && !e.isSurveyAd ? g.video.embedUrl : (null === (b = null === (f = null == g ? void 0 : g.still) || void 0 === f ? void 0 : f.source) || void 0 === b ? void 0 : b.url) || ""
 							};
 						case _.o.GIFVIDEO:
 							return {
-								type: t, obfuscated: r, resolutions: F(i, "mp4"), width: i && i.still && i.still.source ? i.still.source.dimensions.width : 0, height: i && i.still && i.still.source ? i.still.source.dimensions.height : 0, gifBackgroundImage: i && i.still && i.still.source ? i.still.source.url : "", content: i && i.animated && i.animated.mp4_source ? i.animated.mp4_source.url : ""
+								type: t, obfuscated: v, resolutions: F(g, "mp4"), width: g && g.still && g.still.source ? g.still.source.dimensions.width : 0, height: g && g.still && g.still.source ? g.still.source.dimensions.height : 0, gifBackgroundImage: g && g.still && g.still.source ? g.still.source.url : "", content: g && g.animated && g.animated.mp4_source ? g.animated.mp4_source.url : ""
 							};
 						case _.o.GALLERY: {
 							const i = K(e.gallery);
@@ -41991,7 +41994,7 @@
 			e.exports = JSON.parse('{"id":"34910619f1e9"}')
 		},
 		"./src/redditGQL/operations/GeneralSearch.json": function(e) {
-			e.exports = JSON.parse('{"id":"0a697ad81937"}')
+			e.exports = JSON.parse('{"id":"66ff548decb7"}')
 		},
 		"./src/redditGQL/operations/ModeratedSubreddits.json": function(e) {
 			e.exports = JSON.parse('{"id":"6103843fc7be"}')
@@ -42024,7 +42027,7 @@
 			e.exports = JSON.parse('{"id":"059a51904852"}')
 		},
 		"./src/redditGQL/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"8bbf92970299"}')
+			e.exports = JSON.parse('{"id":"6c3c44f7e6ba"}')
 		},
 		"./src/redditGQL/operations/UpdatePostDistinguishState.json": function(e) {
 			e.exports = JSON.parse('{"id":"e869489c84a4"}')
@@ -47039,4 +47042,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e56fb67aac9939a02888.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fd60e412478ee775bc20.js.map

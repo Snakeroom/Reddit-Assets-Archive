@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.f7a24edfccf5dfe56446.js
-// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.134080e04f97b426af19.js
+// Retrieved at 3/10/2022, 10:00:26 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue~ModQueuePages~ModerationPages"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, r) {
@@ -96,29 +96,30 @@
 					apiContext: l,
 					gqlContext: m
 				}) => {
-					let p, h, v;
+					var p;
+					let h, v, j;
 					switch (t) {
 						case a.rb.Edited:
-							p = A, h = M, v = w;
+							h = A, v = M, j = w;
 							break;
 						case a.rb.Modqueue:
-							p = E, h = k, v = R;
+							h = E, v = k, j = R;
 							break;
 						case a.rb.Reports:
-							p = N, h = x, v = L;
+							h = N, v = x, j = L;
 							break;
 						case a.rb.Spam:
-							p = P, h = D, v = C;
+							h = P, v = D, j = C;
 							break;
 						case a.rb.Unmoderated:
-							p = T, h = Q, v = U;
+							h = T, v = Q, j = U;
 							break;
 						default:
 							throw new Error("Invalid modqueue requested")
 					}
-					o(p());
-					const j = await Object(i.c)(l(), t, n);
-					if (j.ok) {
+					o(h());
+					const _ = await Object(i.c)(l(), t, n);
+					if (_.ok) {
 						if (function(e) {
 								return Object(y.c)(e, {
 									experimentEligibilitySelector: y.a,
@@ -130,28 +131,42 @@
 								transformGatewayParamsToGQLVariables: s
 							} = await r.e(11).then(r.bind(null, "./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/index.ts")), {
 								diffAndLog: a
-							} = await r.e(8).then(r.bind(null, "./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/diffAndLog.ts")), o = s({
-								getState: c,
-								queueType: t,
-								options: n
-							}), d = await Object(i.b)(m(), o);
-							if (!d.ok) return;
-							const u = e(d.body.data),
-								l = j.body;
-							a({
-								normalizedGqlResponse: u,
-								gatewayResponse: {
-									posts: l.posts,
-									comments: l.comments,
-									modqueue: l.modqueue,
-									reports: l.reports,
-									authorFlair: l.authorFlair
+							} = await r.e(8).then(r.bind(null, "./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/diffAndLog.ts")), o = _.body, d = {
+								...n
+							};
+							if (d.subreddit) {
+								const e = null === (p = Object.values(o.subreddits).find(({
+									name: e
+								}) => e === n.subreddit)) || void 0 === p ? void 0 : p.id;
+								d.subreddit = e
+							}
+							const u = s({
+									getState: c,
+									queueType: t,
+									options: d
+								}),
+								l = await Object(i.b)(m(), u);
+							if (!l.ok) return;
+							const b = e(l.body.data),
+								f = {
+									posts: o.posts,
+									comments: o.comments,
+									modqueue: o.modqueue,
+									reports: o.reports,
+									authorFlair: o.authorFlair
 								},
-								rawGqlResponse: d.body.data
+								O = {
+									..._.body,
+									...b
+								};
+							_.body = O, a({
+								normalizedGqlResponse: b,
+								gatewayResponse: f,
+								rawGqlResponse: l.body.data
 							})
 						}
-						const s = j.body;
-						o(v({
+						const s = _.body;
+						o(j({
 							listingKey: e,
 							page: `${n.page||b.b}`,
 							response: s
@@ -159,7 +174,7 @@
 							postIds: s.posts ? Object.keys(s.posts) : void 0,
 							commentIds: s.comments ? Object.keys(s.comments) : void 0
 						}))
-					} else o(h(j.error)), o(Object(u.f)({
+					} else o(v(_.error)), o(Object(u.f)({
 						kind: f.b.Error,
 						text: s.fbt._("Oh no! Something went wrong!", null, {
 							hk: "16O2Sk"
@@ -2737,4 +2752,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.f7a24edfccf5dfe56446.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue~ModQueuePages~ModerationPages.134080e04f97b426af19.js.map
