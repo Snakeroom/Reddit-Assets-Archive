@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.de4ad964e48a1ae8c111.js
-// Retrieved at 3/9/2022, 6:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.79919cc65ee98878bb1d.js
+// Retrieved at 3/9/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -4166,17 +4166,18 @@
 				const t = Object(r.d)(),
 					a = Object(l.b)(),
 					i = Object(r.e)(_.b),
-					y = i === d.db.Feed || i === d.db.PopoverFeed ? e.slice(0, 5) : e,
+					y = i === d.db.Feed ? e.slice(0, 5) : e,
 					[E, k] = Object(s.useState)(!1),
-					O = (e = null) => {
-						a(e ? Object(p.s)(null == e ? void 0 : e.topic) : Object(p.q)()), t(Object(c.c)({
+					[O, N] = Object(s.useState)(),
+					S = (e = null) => {
+						e ? (N(e), a(Object(p.s)(null == e ? void 0 : e.topic))) : a(Object(p.q)()), t(Object(c.c)({
 							type: g.c.REONBOARDING,
 							selectedInterests: e ? {
 								[e.id]: []
 							} : {}
 						})), Object(u.b)(g.e.Popover, i)
 					},
-					N = Object(s.useCallback)(() => {
+					w = Object(s.useCallback)(() => {
 						Object(m.a)(), a(Object(p.r)()), k(!0)
 					}, [a]);
 				return Object(m.b)() ? n.a.createElement("div", {
@@ -4195,24 +4196,26 @@
 					"aria-label": v._("Dismiss", null, {
 						hk: "2x5qvs"
 					}),
-					onClick: N
+					onClick: w
 				}, n.a.createElement(b.a, {
 					name: "close",
 					className: x.a.DismissButton
 				}))), n.a.createElement("ul", {
 					className: x.a.InterestListButtons
-				}, y.map(e => {
-					const t = e.topic;
+				}, y.map((e, t) => {
+					const a = e.topic;
 					return n.a.createElement("li", {
 						className: x.a.InterestListItem,
 						key: e.id
 					}, n.a.createElement(o.a, {
-						onClickHandler: () => O(e),
-						topic: t
+						colorIndex: t,
+						isSelected: e === O,
+						onClickHandler: () => S(e),
+						topic: a
 					}))
 				})), n.a.createElement(h.a, {
 					className: x.a.ChooseMore,
-					onClick: () => O()
+					onClick: () => S()
 				}, v._("Choose more topics", null, {
 					hk: "2bFeJ4"
 				}), n.a.createElement(b.a, {
@@ -7937,4 +7940,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.de4ad964e48a1ae8c111.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.79919cc65ee98878bb1d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.e757f033778518b84dc8.js
-// Retrieved at 3/8/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.dc99b0a7b98879cfdcd8.js
+// Retrieved at 3/9/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -6406,17 +6406,18 @@
 				const t = Object(a.d)(),
 					n = Object(d.b)(),
 					c = Object(a.e)(_.b),
-					g = c === l.db.Feed || c === l.db.PopoverFeed ? e.slice(0, 5) : e,
+					g = c === l.db.Feed ? e.slice(0, 5) : e,
 					[y, O] = Object(s.useState)(!1),
-					S = (e = null) => {
-						n(e ? Object(p.s)(null == e ? void 0 : e.topic) : Object(p.q)()), t(Object(o.c)({
+					[S, j] = Object(s.useState)(),
+					k = (e = null) => {
+						e ? (j(e), n(Object(p.s)(null == e ? void 0 : e.topic))) : n(Object(p.q)()), t(Object(o.c)({
 							type: f.c.REONBOARDING,
 							selectedInterests: e ? {
 								[e.id]: []
 							} : {}
 						})), Object(u.b)(f.e.Popover, c)
 					},
-					j = Object(s.useCallback)(() => {
+					C = Object(s.useCallback)(() => {
 						Object(m.a)(), n(Object(p.r)()), O(!0)
 					}, [n]);
 				return Object(m.b)() ? r.a.createElement("div", {
@@ -6435,24 +6436,26 @@
 					"aria-label": v._("Dismiss", null, {
 						hk: "2x5qvs"
 					}),
-					onClick: j
+					onClick: C
 				}, r.a.createElement(b.a, {
 					name: "close",
 					className: E.a.DismissButton
 				}))), r.a.createElement("ul", {
 					className: E.a.InterestListButtons
-				}, g.map(e => {
-					const t = e.topic;
+				}, g.map((e, t) => {
+					const n = e.topic;
 					return r.a.createElement("li", {
 						className: E.a.InterestListItem,
 						key: e.id
 					}, r.a.createElement(i.a, {
-						onClickHandler: () => S(e),
-						topic: t
+						colorIndex: t,
+						isSelected: e === S,
+						onClickHandler: () => k(e),
+						topic: n
 					}))
 				})), r.a.createElement(h.a, {
 					className: E.a.ChooseMore,
-					onClick: () => S()
+					onClick: () => k()
 				}, v._("Choose more topics", null, {
 					hk: "2bFeJ4"
 				}), r.a.createElement(b.a, {
@@ -12028,4 +12031,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e757f033778518b84dc8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.dc99b0a7b98879cfdcd8.js.map

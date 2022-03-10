@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.ff5fe9782b80d1278513.js
-// Retrieved at 3/9/2022, 6:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.d5d42dd7a79cc4f063c4.js
+// Retrieved at 3/9/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -3261,7 +3261,8 @@
 					}) => {
 						var l, b;
 						const p = Object(Oe.b)(e),
-							f = {
+							f = !!p && !Object(fe.tf)(p) && (s || p === fe.db.Community),
+							m = {
 								subredditName: n,
 								isFake: s,
 								sort: a,
@@ -3270,7 +3271,7 @@
 									reddaid: e.user.reddaid
 								},
 								includeIdentity: i,
-								includeInterestTopics: !!p && !Object(fe.tf)(p),
+								includeInterestTopics: f,
 								includePowerups: !s,
 								includeQuestions: i && !s,
 								includeRules: !s && !c,
@@ -3278,7 +3279,7 @@
 								includeSubredditLinks: !i,
 								includeTopicLinks: !i
 							};
-						return a && (f.sort = a.toUpperCase()), u && (f.range = u.toUpperCase()), r ? f.pageSize = Object(_e.a)(o) : d && (f.pageSize = d), t && (f.after = Object(pe.a)(t)), f
+						return a && (m.sort = a.toUpperCase()), u && (m.range = u.toUpperCase()), r ? m.pageSize = Object(_e.a)(o) : d && (m.pageSize = d), t && (m.after = Object(pe.a)(t)), m
 					})(de, {
 						after: r.after,
 						isLoggedIn: Ie,
@@ -8822,7 +8823,7 @@
 					return t.length < 3 || r < 50
 				},
 				a = () => !(() => !i.a.isReady || i.a.isFeatureThrottled(d.d.FeatureGate) || i.a.isFeatureThrottled(d.d.Dismissed))() && c(),
-				u = () => !(() => !i.a.isReady || i.a.isFeatureThrottled(d.d.FeatureGate) || i.a.isFeatureThrottled(d.d.Triggered) || i.a.isFeatureThrottled(d.d.Dismissed))() && c(),
+				u = () => !(() => !i.a.isReady || i.a.throttlingData[d.d.FeatureGate] || i.a.isFeatureThrottled(d.d.Triggered) || i.a.isFeatureThrottled(d.d.Dismissed))() && c(),
 				l = () => {
 					i.a.isFeatureThrottled(d.d.Triggered) || (i.a.throttleFeature(d.d.FeatureGate), i.a.throttleFeature(d.d.Triggered))
 				},
@@ -13027,7 +13028,7 @@
 					if (t.success || t.failure) return t
 				},
 				_ = Object(s.a)(u.b, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.tf)(e) ? t : null),
-				O = Object(s.a)(u.b, c.b, a.a, (e, t, r) => (e === i.db.PopoverFeed || e === i.db.PopoverFeed15) && Object(d.c)() && !t && !r)
+				O = Object(s.a)(u.b, c.b, a.a, (e, t, r) => e === i.db.PopoverFeed15 && Object(d.c)() && !t && !r)
 		},
 		"./src/reddit/selectors/seo/linksModule.ts": function(e, t, r) {
 			"use strict";
@@ -13665,4 +13666,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.ff5fe9782b80d1278513.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.d5d42dd7a79cc4f063c4.js.map
