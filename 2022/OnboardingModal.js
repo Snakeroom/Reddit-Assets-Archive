@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.cd6f80f2571cc1c2ee23.js
-// Retrieved at 3/10/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.a2cbaab68ff174330b03.js
+// Retrieved at 3/10/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1531,37 +1531,44 @@
 					s = null == r ? void 0 : r.data.interestTopicsByIds;
 				return s ? (e => (({
 					edges: e
-				}) => e.map(({
-					node: e
 				}) => {
-					var t, n, r;
-					return {
-						topicId: e.id,
-						topicTitle: e.topic.title,
-						communities: (null === (r = null === (n = null === (t = e.topic) || void 0 === t ? void 0 : t.subreddits) || void 0 === n ? void 0 : n.edges) || void 0 === r ? void 0 : r.map(({
+					const t = [];
+					return e.forEach(({
+						node: e
+					}) => {
+						var n, r, s;
+						const a = [];
+						null === (s = null === (r = null === (n = e.topic) || void 0 === n ? void 0 : n.subreddits) || void 0 === r ? void 0 : r.edges) || void 0 === s || s.forEach(({
 							node: e
-						}) => (({
-							id: e,
-							prefixedName: t,
-							publicDescriptionText: n,
-							styles: r
 						}) => {
-							var s;
-							return {
-								description: n,
-								icon: r.icon || (null === (s = r.legacyIcon) || void 0 === s ? void 0 : s.url),
+							e.isSubscribed || a.push((({
 								id: e,
-								prefixedName: t
-							}
-						})(e))) || []
-					}
-				}))(e))(s) : null
+								prefixedName: t,
+								publicDescriptionText: n,
+								styles: r
+							}) => {
+								var s;
+								return {
+									description: n,
+									icon: r.icon || (null === (s = r.legacyIcon) || void 0 === s ? void 0 : s.url),
+									id: e,
+									prefixedName: t
+								}
+							})(e))
+						}), a.length && t.push({
+							communities: a,
+							topicId: e.id,
+							topicTitle: e.topic.title
+						})
+					}), t
+				})(e))(s) : null
 			}, we = e => {
 				var t;
 				return {
 					description: e.publicDescription,
 					icon: e.communityIcon || (null === (t = e.icon) || void 0 === t ? void 0 : t.url),
 					id: e.id,
+					isSubscribed: e.isSubscribed,
 					prefixedName: e.displayText
 				}
 			}, Re = async e => {
@@ -1654,7 +1661,7 @@
 					n.recommendedCommunities = await (async (e, t) => {
 						const n = [Re(t), Le(e)],
 							[r, s] = await Promise.all(n);
-						return _e()([...s || [], ...r || []], e => e.id)
+						return _e()([...s || [], ...r || []], e => e.id).filter(e => !e.isSubscribed)
 					})(e, t)
 				} catch (r) {
 					n.ok = !1
@@ -3930,7 +3937,7 @@
 			e.exports = JSON.parse('{"id":"c49069ffb9a9"}')
 		},
 		"./src/redditGQL/operations/InterestTopicsByIds.json": function(e) {
-			e.exports = JSON.parse('{"id":"a4ae094d69e5"}')
+			e.exports = JSON.parse('{"id":"929678fdca35"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
 			e.exports = JSON.parse('{"id":"96ad05ccb84c"}')
@@ -3943,4 +3950,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.cd6f80f2571cc1c2ee23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.a2cbaab68ff174330b03.js.map
