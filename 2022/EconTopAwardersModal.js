@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.872dfc045efca6b4f0bd.js
-// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.1d551aecbb3b42c86a78.js
+// Retrieved at 3/14/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -146,23 +146,6 @@
 					}
 				}
 		},
-		"./src/reddit/actions/inContextModeration.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return n
-			})), r.d(t, "b", (function() {
-				return s
-			})), r.d(t, "c", (function() {
-				return o
-			})), r.d(t, "d", (function() {
-				return c
-			}));
-			var a = r("./src/lib/makeActionCreator/index.ts");
-			const n = "INCONTEXT__BANNED",
-				s = "INCONTEXT__MUTED",
-				o = Object(a.a)(n),
-				c = Object(a.a)(s)
-		},
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
@@ -202,8 +185,8 @@
 				g = r("./src/reddit/models/Toast/index.ts"),
 				N = r("./src/reddit/selectors/activeModalId.ts"),
 				_ = r("./src/reddit/selectors/bannedUser.ts"),
-				C = r("./src/reddit/selectors/subreddit.ts"),
-				w = r("./src/reddit/selectors/user.ts"),
+				w = r("./src/reddit/selectors/subreddit.ts"),
+				C = r("./src/reddit/selectors/user.ts"),
 				O = r("./src/reddit/actions/subredditModeration/constants.ts"),
 				j = r("./src/lib/initializeClient/installReducer.ts"),
 				y = r("./node_modules/redux/es/redux.js");
@@ -526,16 +509,16 @@
 				}, de = (e, t) => async (r, a) => {
 					const n = a();
 					await Promise.all([(async () => {
-						if (!Object(N.b)(m.a.BAN_USER)(n) && !Object(C.P)(n, {
+						if (!Object(N.b)(m.a.BAN_USER)(n) && !Object(w.P)(n, {
 								subredditId: e
 							})) {
-							const t = Object(C.S)(n, {
+							const t = Object(w.S)(n, {
 								subredditId: e
 							});
 							await r(Object(i.o)(t.name))
 						}
 					})(), (async () => {
-						const a = Object(w.wb)(n, {
+						const a = Object(C.wb)(n, {
 							userName: t
 						});
 						if (!a) return;
@@ -769,8 +752,8 @@
 				g = r("./src/reddit/actions/modal.ts"),
 				N = r("./src/reddit/components/AwardBadges/index.tsx"),
 				_ = r("./src/reddit/components/PostTopMeta/index.tsx"),
-				C = r("./src/reddit/controls/Button/index.tsx"),
-				w = r("./src/reddit/controls/LoadingIcon/index.tsx"),
+				w = r("./src/reddit/controls/Button/index.tsx"),
+				C = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				O = r("./src/reddit/icons/fonts/Gift/index.tsx"),
 				j = r("./src/reddit/icons/svgs/Close/index.tsx"),
 				y = r("./src/reddit/icons/svgs/TopAwarded/index.tsx");
@@ -1070,7 +1053,7 @@
 					hideTopAwardedBadge: !0,
 					tooltipType: _.c.TopAwardedModal,
 					thing: d
-				}))), x && n.a.createElement(w.a, {
+				}))), x && n.a.createElement(C.a, {
 					className: ee.a.loader,
 					sizePx: 60
 				}), T && S && o && 1 === o.rank && n.a.createElement("div", {
@@ -1107,7 +1090,7 @@
 					className: ee.a.infoDesc
 				}, re._("Award publicly and your username will show up on this leaderboard!", null, {
 					hk: "3reZYa"
-				})), n.a.createElement(C.l, {
+				})), n.a.createElement(w.l, {
 					className: ee.a.cta,
 					onClick: k
 				}, n.a.createElement(O.a, {
@@ -1235,8 +1218,8 @@
 				g = r("./src/reddit/selectors/subreddit.ts"),
 				N = r("./src/reddit/selectors/tooltip.ts"),
 				_ = r("./src/reddit/selectors/user.ts"),
-				C = r("./src/reddit/selectors/userFlair.ts"),
-				w = r("./src/reddit/selectors/userPrefs.ts"),
+				w = r("./src/reddit/selectors/userFlair.ts"),
+				C = r("./src/reddit/selectors/userPrefs.ts"),
 				O = r("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
 				j = r("./node_modules/fbt/lib/FbtPublic.js"),
 				y = r("./src/config.ts"),
@@ -1395,8 +1378,8 @@
 				ge = P.a.a("InfoLink", de.a),
 				Ne = P.a.div("KarmaCount", de.a),
 				_e = P.a.div("GenericKarmaLabel", de.a),
-				Ce = P.a.div("BannerImage", de.a),
-				we = P.a.div("UserContainer", de.a),
+				we = P.a.div("BannerImage", de.a),
+				Ce = P.a.div("UserContainer", de.a),
 				Oe = P.a.div("BottomSpacer", de.a),
 				je = P.a.div("Container", de.a),
 				ye = e => n.a.createElement("div", null, n.a.createElement("div", null, n.a.createElement(be, {
@@ -1477,12 +1460,12 @@
 						isCurrentUserBanned: g,
 						userProfileStyles: N,
 						acceptChats: _,
-						isCommentAuthorBlocked: C
+						isCommentAuthorBlocked: w
 					} = e;
 					if (!I) return n.a.createElement(je, {
 						style: f
 					});
-					const w = !!o && Object(z.e)(o) === h,
+					const C = !!o && Object(z.e)(o) === h,
 						O = !!(null == o ? void 0 : o.snoovatarFullBodyAsset),
 						U = I.accountIcon || `${y.a.assetPath}/img/snoo_user_placeholder.png`,
 						P = null == m ? void 0 : m.flair,
@@ -1499,11 +1482,11 @@
 						className: a,
 						id: d,
 						style: f
-					}, !T && H && n.a.createElement(Ce, {
+					}, !T && H && n.a.createElement(we, {
 						style: {
 							backgroundImage: `url('${H}')`
 						}
-					}), n.a.createElement(we, null, T ? n.a.createElement(q.a, {
+					}), n.a.createElement(Ce, null, T ? n.a.createElement(q.a, {
 						isHovercard: !0,
 						bannerBackgroundImage: H,
 						compact: !0,
@@ -1511,7 +1494,7 @@
 						isEmployee: I.isEmployee,
 						isGold: I.isGold,
 						isNSFW: I.isNSFW,
-						isOwnProfile: w,
+						isOwnProfile: C,
 						onClickSnoovatar: () => l && l(),
 						prefersReducedAnimations: !!u,
 						snoovatarUrl: I.snoovatarFullBodyAsset,
@@ -1533,14 +1516,14 @@
 						recentAwardings: S,
 						topAwardIcon: x,
 						username: h
-					}), i && !w && !g && _ && !C && n.a.createElement(ue, {
+					}), i && !C && !g && _ && !w && n.a.createElement(ue, {
 						contextId: s,
 						userId: I.id,
 						text: j.fbt._("Start Chat", null, {
 							hk: "2mfqRE"
 						}),
 						isFullWidth: !0
-					}), I.hasUserProfile && !g && !C && !w && I.enableFollowers && n.a.createElement(me, {
+					}), I.hasUserProfile && !g && !w && !C && I.enableFollowers && n.a.createElement(me, {
 						identifier: {
 							name: e.user.username,
 							type: "profile"
@@ -1548,7 +1531,7 @@
 						getEventFactory: e => Object(L.g)(e ? "unfollow" : "follow", s),
 						isFullWidth: !0,
 						small: !0
-					})), k && s && !w && v && n.a.createElement(ae, {
+					})), k && s && !C && v && n.a.createElement(ae, {
 						contextId: s,
 						subredditId: v,
 						sendEvent: b,
@@ -1583,7 +1566,7 @@
 					}) => t ? Object(v.m)(e, {
 						subredditId: t
 					}) : void 0,
-					prefersReducedAnimations: w.c,
+					prefersReducedAnimations: C.c,
 					profile: (e, {
 						userName: t
 					}) => Object(I.j)(e, {
@@ -1598,7 +1581,7 @@
 					user: _.wb,
 					userFlair: (e, {
 						subredditId: t
-					}) => t ? Object(C.d)(e, {
+					}) => t ? Object(w.d)(e, {
 						subredditId: t
 					}) : void 0,
 					isCurrentUserBanned: (e, t) => !!Object(g.l)(t) && Object(g.db)(e, t),
@@ -2238,10 +2221,10 @@
 			}
 			const N = E("particleDelay", h.a),
 				_ = E("particleX", h.a),
-				C = E("particleFloat", h.a),
-				w = () => {
+				w = E("particleFloat", h.a),
+				C = () => {
 					const e = g(_),
-						t = g(C),
+						t = g(w),
 						r = g(N);
 					return Object(o.a)(h.a.particle, e, t, r)
 				};
@@ -2260,7 +2243,7 @@
 				createParticle(e) {
 					return n.a.createElement("div", {
 						key: e,
-						className: `${w()}`
+						className: `${C()}`
 					})
 				}
 			}
@@ -2279,8 +2262,8 @@
 				isNSFW: g,
 				isOwnProfile: N,
 				onClickSnoovatar: _,
-				onDeleteBanner: C,
-				prefersReducedAnimations: w,
+				onDeleteBanner: w,
+				prefersReducedAnimations: C,
 				snoovatarUrl: O,
 				title: y,
 				userCreated: k,
@@ -2297,7 +2280,7 @@
 					isNSFW: g,
 					username: A,
 					isDeletingBanner: !!x,
-					onDeleteBanner: C
+					onDeleteBanner: w
 				}), F ? n.a.createElement("div", {
 					className: h.a.nftProfileUnitContainer
 				}, n.a.createElement(c.a, {
@@ -2309,7 +2292,7 @@
 					className: h.a.topGlow
 				}), n.a.createElement("div", {
 					className: h.a.bottomGlow
-				}), !w && n.a.createElement(j, null)), n.a.createElement("img", {
+				}), !C && n.a.createElement(j, null)), n.a.createElement("img", {
 					className: Object(o.a)(h.a.snoovatar, {
 						[h.a.premiumGlow]: E
 					}),
@@ -2697,4 +2680,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.872dfc045efca6b4f0bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.1d551aecbb3b42c86a78.js.map

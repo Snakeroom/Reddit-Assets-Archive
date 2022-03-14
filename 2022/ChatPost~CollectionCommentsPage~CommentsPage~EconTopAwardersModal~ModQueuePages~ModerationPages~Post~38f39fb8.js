@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.2e6d14ce3b74c79c5ed8.js
-// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.6c05d78767ddcd47fb09.js
+// Retrieved at 3/14/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -160,13 +160,12 @@
 				d = r("./src/reddit/actions/post.ts"),
 				c = r("./src/reddit/controls/InternalLink/index.tsx"),
 				l = r("./src/reddit/hooks/useClickSourceData.ts"),
-				u = r("./src/reddit/selectors/experiments/cnc/index.ts"),
-				m = r("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
-				p = r("./src/reddit/components/AuthorLink/index.m.less"),
-				h = r.n(p);
+				u = r("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
+				m = r("./src/reddit/components/AuthorLink/index.m.less"),
+				p = r.n(m);
 
-			function b() {
-				return (b = Object.assign || function(e) {
+			function h() {
+				return (h = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var s in r) Object.prototype.hasOwnProperty.call(r, s) && (e[s] = r[s])
@@ -176,39 +175,37 @@
 			}
 			t.a = e => {
 				var t, r;
-				const s = Object(a.a)(e.className, h.a.authorLinkStyles, {
-						[h.a.isLivestreaming]: e.isLivestreaming,
-						[h.a.isStrong]: e.isStrong,
-						[h.a.isUnstyled]: e.isUnstyled
+				const s = Object(a.a)(e.className, p.a.authorLinkStyles, {
+						[p.a.isLivestreaming]: e.isLivestreaming,
+						[p.a.isStrong]: e.isStrong,
+						[p.a.isUnstyled]: e.isUnstyled
 					}),
-					p = Object(l.a)(),
-					f = Object(n.d)(),
-					v = Object(n.e)(m.b),
-					w = t => {
+					m = Object(l.a)(),
+					b = Object(n.d)(),
+					f = Object(n.e)(u.b),
+					v = t => {
 						var r;
-						if (null === (r = e.onClick) || void 0 === r || r.call(e, t), v) {
+						if (null === (r = e.onClick) || void 0 === r || r.call(e, t), f) {
 							const r = e.isExternal || e.isLivestreaming || e.forceOpenInNewTab ? `${i.a.redditUrl}/user/${e.author}` : `/user/${e.author}/`;
-							t.preventDefault(), f(Object(d.cb)(r))
+							t.preventDefault(), b(Object(d.cb)(r))
 						}
 					};
-				return Object(n.e)(u.a) ? o.a.createElement("span", {
-					className: s
-				}, e.children) : e.isExternal || e.isLivestreaming || e.forceOpenInNewTab ? o.a.createElement("a", b({}, null !== (t = e.linkProps) && void 0 !== t ? t : {}, {
+				return e.isExternal || e.isLivestreaming || e.forceOpenInNewTab ? o.a.createElement("a", h({}, null !== (t = e.linkProps) && void 0 !== t ? t : {}, {
 					className: s,
 					href: `${i.a.redditUrl}/user/${e.author}`,
 					rel: "noopener noreferrer",
 					target: "_blank",
-					onClick: w
+					onClick: v
 				}), e.children) : e.isAuthorDeleted ? o.a.createElement("span", {
-					className: Object(a.a)(h.a.deletedAuthorLink, e.className)
-				}, e.children) : o.a.createElement(c.a, b({}, null !== (r = e.linkProps) && void 0 !== r ? r : {}, {
+					className: Object(a.a)(p.a.deletedAuthorLink, e.className)
+				}, e.children) : o.a.createElement(c.a, h({}, null !== (r = e.linkProps) && void 0 !== r ? r : {}, {
 					className: s,
 					style: e.style,
 					to: {
 						pathname: `/user/${e.author}/`,
-						state: p
+						state: m
 					},
-					onClick: w
+					onClick: v
 				}), e.children)
 			}
 		},
@@ -2015,30 +2012,26 @@
 					b = Object(n.e)(t => Object(T.a)(t, e.authorId, p)),
 					f = Object(n.e)(e => Object(_.a)(e) === m),
 					v = Object(n.d)(),
-					w = Object(s.useCallback)(() => v(Object(i.h)({
-						tooltipId: m
-					})), [v, m]),
-					g = Object(s.useCallback)(() => v(Object(i.i)()), [v]),
-					O = Object(s.useCallback)(() => {
+					w = Object(s.useCallback)(() => v(Object(i.i)()), [v]),
+					g = Object(s.useCallback)(() => {
 						const t = Object(c.b)({
-							author: null == b ? void 0 : b.user.displayName,
 							itemId: e.id,
 							tooltipIdPrefix: d.a,
 							tooltipType: u ? j.c.Lightbox : void 0
 						});
-						v(Object(i.h)({
+						v(Object(i.f)({
 							tooltipId: t,
 							args: {
 								isModNotesView: !0
 							}
 						}))
-					}, [e, b, v, u]);
+					}, [e, v, u]);
 				if (!b) return null;
-				const x = "label" in b && (null == b ? void 0 : b.label) || C.c,
-					N = Object(I.b)(C.e[x], {
+				const O = "label" in b && (null == b ? void 0 : b.label) || C.c,
+					x = Object(I.b)(C.e[O], {
 						isFilled: !0
 					}),
-					k = `${m}-hover-id`;
+					N = `${m}-hover-id`;
 				return o.a.createElement(l.a, {
 					className: Object(a.a)(t, S.a.hoverContainer, {
 						[S.a.isNightMode]: h,
@@ -2046,30 +2039,27 @@
 					}),
 					tooltipId: m,
 					authorOrSubredditName: (null === (r = b.operator) || void 0 === r ? void 0 : r.displayName) || "",
-					hoverId: k,
-					sendHoverEvent: () => {},
-					onClick: e => {
-						e.stopPropagation(), w()
-					}
-				}, o.a.createElement(N, {
+					hoverId: N,
+					sendHoverEvent: () => {}
+				}, o.a.createElement(x, {
 					style: {
-						color: C.d[x],
+						color: C.d[O],
 						fontSize: "12px",
 						lineHeight: "12px"
 					}
 				}), o.a.createElement("div", {
 					id: m,
-					onMouseLeave: g
+					onMouseLeave: w
 				}, o.a.createElement(A, {
 					dropdownIsOpen: f,
-					hoverId: k,
+					hoverId: N,
 					modNoteData: b,
 					isOverlay: u,
 					isPost: Object(E.a)(e.id),
 					isNightMode: h,
 					subredditId: p,
 					tooltipId: m,
-					onClick: O
+					onClick: g
 				})))
 			}
 		},
@@ -3736,4 +3726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.2e6d14ce3b74c79c5ed8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.6c05d78767ddcd47fb09.js.map

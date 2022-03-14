@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.2faa270815942a652d36.js
-// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.5943e9c4ef8afb905635.js
+// Retrieved at 3/14/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1469,23 +1469,6 @@
 						...r.body
 					}))
 				}
-		},
-		"./src/reddit/actions/inContextModeration.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return a
-			})), n.d(t, "b", (function() {
-				return r
-			})), n.d(t, "c", (function() {
-				return o
-			})), n.d(t, "d", (function() {
-				return i
-			}));
-			var s = n("./src/lib/makeActionCreator/index.ts");
-			const a = "INCONTEXT__BANNED",
-				r = "INCONTEXT__MUTED",
-				o = Object(s.a)(a),
-				i = Object(s.a)(r)
 		},
 		"./src/reddit/actions/pages/settings.ts": function(e, t, n) {
 			"use strict";
@@ -14082,4 +14065,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2faa270815942a652d36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.5943e9c4ef8afb905635.js.map
