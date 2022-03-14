@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.6d940a3e72fa90e82bbf.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.aff7e6209e91c2b2face.js
+// Retrieved at 3/14/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, n) {},
@@ -3739,7 +3739,7 @@
 						this.state.active ? this.rootContainer.contains(n) || this.setState({
 							active: !1
 						}) : this.rootContainer && this.rootContainer.contains(n) && this.selectBlock(), this.setState({
-							isInSelection: Object(U.i)(t, this.rootContainer)
+							isInSelection: Object(U.h)(t, this.rootContainer)
 						})
 					}, this.selectBlock = () => {
 						const e = document.createRange();
@@ -4180,7 +4180,7 @@
 						} = t;
 					if (n !== o && s && e) {
 						const n = t.getRangeAt(0);
-						return Object(U.i)(n, e) && !e.contains(n.commonAncestorContainer)
+						return Object(U.h)(n, e) && !e.contains(n.commonAncestorContainer)
 					}
 					return !1
 				},
@@ -8262,4 +8262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.6d940a3e72fa90e82bbf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.aff7e6209e91c2b2face.js.map

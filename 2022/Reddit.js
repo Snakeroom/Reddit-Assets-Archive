@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.63164489dd988d2e0b91.js
-// Retrieved at 3/14/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.96e168684eb4d1531aa7.js
+// Retrieved at 3/14/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -184,6 +184,15 @@
 					e[a] = e[n], e[n] = i
 				}
 				return e.length = t, e
+			}
+		},
+		"./node_modules/lodash/map.js": function(e, t, n) {
+			var s = n("./node_modules/lodash/_arrayMap.js"),
+				o = n("./node_modules/lodash/_baseIteratee.js"),
+				r = n("./node_modules/lodash/_baseMap.js"),
+				a = n("./node_modules/lodash/isArray.js");
+			e.exports = function(e, t) {
+				return (a(e) ? s : r)(e, o(t, 3))
 			}
 		},
 		"./node_modules/lodash/shuffle.js": function(e, t, n) {
@@ -12862,6 +12871,81 @@
 				return o
 			}))
 		},
+		"./src/reddit/helpers/dom/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "g", (function() {
+				return i
+			})), n.d(t, "f", (function() {
+				return c
+			})), n.d(t, "d", (function() {
+				return d
+			})), n.d(t, "h", (function() {
+				return l
+			})), n.d(t, "c", (function() {
+				return u
+			})), n.d(t, "b", (function() {
+				return m
+			})), n.d(t, "e", (function() {
+				return p
+			})), n.d(t, "a", (function() {
+				return b
+			}));
+			var s = n("./node_modules/lodash/map.js"),
+				o = n.n(s),
+				r = n("./src/lib/FocusTrap/index.ts");
+			const a = e => "INPUT" === e.tagName.toUpperCase() || "TEXTAREA" === e.tagName.toUpperCase() || "DIV" === e.tagName.toUpperCase() && e.isContentEditable,
+				i = e => {
+					let t = e;
+					do {
+						if (a(t)) return !0
+					} while (t = t.parentElement);
+					return !1
+				},
+				c = () => {
+					const e = document.getSelection();
+					return !!e && (e.rangeCount > 0 && e.getRangeAt(0).toString().length > 0)
+				},
+				d = () => c() ? (() => {
+					const e = document.getSelection();
+					if (!e) return [];
+					const t = e.getRangeAt(0).cloneContents().childNodes;
+					return o()(t, e => e.textContent || "")
+				})() : null,
+				l = (e, t) => {
+					const n = document.createRange();
+					return n.selectNode(t), e.compareBoundaryPoints(Range.END_TO_START, n) < 0 && e.compareBoundaryPoints(Range.START_TO_END, n) > 0
+				},
+				u = e => {
+					const t = window.getSelection();
+					if (1 !== t.rangeCount) return;
+					const n = t.getRangeAt(0);
+					if (!l(n, e)) return;
+					const {
+						startContainer: s,
+						startOffset: o,
+						endContainer: r,
+						endOffset: a
+					} = n, i = document.createRange();
+					i.selectNode(e);
+					let c = !0;
+					if (-1 === i.compareBoundaryPoints(Range.START_TO_START, n) && (i.setStart(s, o), c = !1), 1 === i.compareBoundaryPoints(Range.END_TO_END, n) && (i.setEnd(r, a), c = !1), c) return [e];
+					const d = document.createElement("div");
+					return d.appendChild(i.cloneContents()), [...d.childNodes]
+				},
+				m = (e, t, n) => {
+					let s = e;
+					for (; s && (!n || !n(s));) {
+						if (s && t(s)) return s;
+						s = s.parentElement
+					}
+				},
+				p = e => e && e.parentElement && m(e.parentElement, e => "static" !== window.getComputedStyle(e).getPropertyValue("position")),
+				b = e => {
+					e.querySelectorAll(r.a).forEach(e => {
+						e.tabIndex = -1
+					})
+				}
+		},
 		"./src/reddit/helpers/frontpageCardPostCountExperiment.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -17896,4 +17980,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "AuthorHovercard~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.63164489dd988d2e0b91.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.96e168684eb4d1531aa7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/7.d4592c2d8fb5e11c745b.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/7.0c8e416bd92b5db8e739.js
+// Retrieved at 3/14/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[7], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -25,6 +25,15 @@
 				s = n("./node_modules/lodash/map.js");
 			e.exports = function(e, t) {
 				return a(s(e, t), 1)
+			}
+		},
+		"./node_modules/lodash/map.js": function(e, t, n) {
+			var a = n("./node_modules/lodash/_arrayMap.js"),
+				s = n("./node_modules/lodash/_baseIteratee.js"),
+				r = n("./node_modules/lodash/_baseMap.js"),
+				o = n("./node_modules/lodash/isArray.js");
+			e.exports = function(e, t) {
+				return (o(e) ? a : r)(e, s(t, 3))
 			}
 		},
 		"./node_modules/lodash/range.js": function(e, t, n) {
@@ -151,11 +160,11 @@
 				w = n("./src/reddit/components/ModeratorSurvey/index.m.less"),
 				C = n.n(w),
 				b = n("./src/lib/classNames/index.ts");
-			var E = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				_ = n("./src/reddit/controls/Button/index.tsx"),
-				k = n("./src/reddit/controls/TextButton/index.tsx"),
-				M = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				j = n("./src/reddit/icons/svgs/svgIcons.tsx");
+			var _ = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				E = n("./src/reddit/controls/Button/index.tsx"),
+				j = n("./src/reddit/controls/TextButton/index.tsx"),
+				k = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
+				M = n("./src/reddit/icons/svgs/svgIcons.tsx");
 
 			function N(e) {
 				const {
@@ -175,19 +184,19 @@
 					className: C.a.container
 				}, l.a.createElement("div", {
 					className: C.a.header
-				}, p ? l.a.createElement(k.a, {
+				}, p ? l.a.createElement(j.a, {
 					className: C.a.headerButton,
 					onClick: d
-				}, l.a.createElement(j.d, {
+				}, l.a.createElement(M.d, {
 					className: C.a.backIcon
 				}), l.a.createElement("div", null, f.fbt._("Back", null, {
 					hk: "39TCGR"
-				}))) : l.a.createElement(k.a, {
+				}))) : l.a.createElement(j.a, {
 					className: C.a.headerButton,
 					onClick: u
-				}, l.a.createElement(E.b, null), l.a.createElement("div", null, f.fbt._("Close", null, {
+				}, l.a.createElement(_.b, null), l.a.createElement("div", null, f.fbt._("Close", null, {
 					hk: "4gbyAA"
-				}))), l.a.createElement(M.a, {
+				}))), l.a.createElement(k.a, {
 					className: C.a.snoo
 				})), l.a.createElement("div", {
 					className: C.a.slides,
@@ -212,7 +221,7 @@
 					className: C.a.progress
 				}, g > 1 ? f.fbt._("{current} of {total}", [f.fbt._param("current", v), f.fbt._param("total", g)], {
 					hk: "pZU46"
-				}) : ""), l.a.createElement(_.t, {
+				}) : ""), l.a.createElement(E.t, {
 					redditStyle: !0,
 					className: C.a.footerButton,
 					onClick: c,
@@ -305,36 +314,36 @@
 				}, {
 					surveyState: U.Intro,
 					activeSlide: 0
-				}), E = y[C - 1], _ = Object(I.a)();
+				}), _ = y[C - 1], E = Object(I.a)();
 				Object(i.useEffect)(() => {
 					switch (C) {
 						case 0:
-							return _(Object(A.c)());
+							return E(Object(A.c)());
 						case 1:
-							return _(Object(A.e)());
+							return E(Object(A.e)());
 						case y.length + 1:
-							return _(Object(A.n)())
+							return E(Object(A.n)())
 					}
-					if (E) return _(Object(A.j)(E.pageType))
-				}, [C, _]);
-				const [k, {
-					pending: M,
-					error: j
+					if (_) return E(Object(A.j)(_.pageType))
+				}, [C, E]);
+				const [j, {
+					pending: k,
+					error: M
 				}] = Object(h.a)(T);
 				Object(i.useEffect)(() => {
-					j && (p.c.captureException(j), x(Object(g.f)(Object(g.e)(W._("An error occurred", null, {
+					M && (p.c.captureException(M), x(Object(g.f)(Object(g.e)(W._("An error occurred", null, {
 						hk: "1VDETi"
 					}), B.b.Error))))
-				}, [j, x]);
+				}, [M, x]);
 				const [S, L] = Object(i.useState)(null);
 				if (!r) return null;
 				if (!r.isEligible) return null;
 
 				function F(e, t) {
-					f(Object(a.setIn)(u, [e], t)), _(Object(A.a)(E.pageType))
+					f(Object(a.setIn)(u, [e], t)), E(Object(A.a)(_.pageType))
 				}
-				const Z = null !== (t = u[null == E ? void 0 : E.id]) && void 0 !== t ? t : {},
-					R = (null !== (n = null == E ? void 0 : E.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => Z[e]),
+				const Z = null !== (t = u[null == _ ? void 0 : _.id]) && void 0 !== t ? t : {},
+					R = (null !== (n = null == _ ? void 0 : _.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => Z[e]),
 					P = w === U.Survey && C > 1;
 				return l.a.createElement(N, {
 					activeSlide: C,
@@ -362,8 +371,8 @@
 									ratingReasons: s
 								}
 							}(r, u)), w === U.Tag) {
-							if (M) return;
-							return _(Object(A.m)()), await k({
+							if (k) return;
+							return E(Object(A.m)()), await j({
 								input: {
 									subredditId: s,
 									version: r.version,
@@ -380,17 +389,17 @@
 									id: s,
 									response: S
 								}
-							}), void(j || o())
+							}), void(M || o())
 						}
-						b("forward"), E ? _(Object(A.i)(E.pageType, D(E, u).map(e => e.id))) : 0 === C && _(Object(A.l)())
+						b("forward"), _ ? E(Object(A.i)(_.pageType, D(_, u).map(e => e.id))) : 0 === C && E(Object(A.l)())
 					},
 					goBack: function() {
-						b("back"), E && _(Object(A.b)(E.pageType))
+						b("back"), _ && E(Object(A.b)(_.pageType))
 					},
 					onClose: o,
 					progressCurrent: P ? C - 1 : 0,
 					progressTotal: P ? y.length - 1 : 0,
-					disableNext: M || w === U.Survey && !R,
+					disableNext: k || w === U.Survey && !R,
 					buttonText: q(w)
 				}, l.a.createElement("div", {
 					className: m.a.result
@@ -586,15 +595,15 @@
 			})), n.d(t, "k", (function() {
 				return b
 			})), n.d(t, "g", (function() {
-				return E
-			})), n.d(t, "i", (function() {
 				return _
+			})), n.d(t, "i", (function() {
+				return E
 			})), n.d(t, "q", (function() {
-				return k
-			})), n.d(t, "d", (function() {
-				return M
-			})), n.d(t, "l", (function() {
 				return j
+			})), n.d(t, "d", (function() {
+				return k
+			})), n.d(t, "l", (function() {
+				return M
 			})), n.d(t, "t", (function() {
 				return N
 			})), n.d(t, "u", (function() {
@@ -637,11 +646,11 @@
 				w = s.a.label("ModalFormItem", u.a),
 				C = s.a.wrapped(i.a, "ModalInput", u.a),
 				b = s.a.label("ModalInputLabel", u.a),
-				E = s.a.footer("ModalFooter", u.a),
-				_ = s.a.header("ModalHeader", u.a),
-				k = s.a.div("ModalTitle", u.a),
-				M = s.a.div("ModalAnnotation", u.a),
-				j = s.a.div("ModalMain", u.a),
+				_ = s.a.footer("ModalFooter", u.a),
+				E = s.a.header("ModalHeader", u.a),
+				j = s.a.div("ModalTitle", u.a),
+				k = s.a.div("ModalAnnotation", u.a),
+				M = s.a.div("ModalMain", u.a),
 				N = s.a.textarea("TextArea", u.a),
 				S = s.a.wrapped(c.l, "WarningButton", u.a),
 				L = s.a.wrapped(c.l, "PrimaryButton", u.a),
@@ -1204,4 +1213,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/7.d4592c2d8fb5e11c745b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/7.0c8e416bd92b5db8e739.js.map

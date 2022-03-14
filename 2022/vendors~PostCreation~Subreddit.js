@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~PostCreation~Subreddit.46f5a30c7f13b908d95f.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~PostCreation~Subreddit.edfa2bf34562a999f32d.js
+// Retrieved at 3/14/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~PostCreation~Subreddit", "vendors~Reddit~StandalonePostPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -653,6 +653,15 @@
 				o = r("./node_modules/lodash/map.js");
 			e.exports = function(e, t) {
 				return n(o(e, t), 1)
+			}
+		},
+		"./node_modules/lodash/map.js": function(e, t, r) {
+			var n = r("./node_modules/lodash/_arrayMap.js"),
+				o = r("./node_modules/lodash/_baseIteratee.js"),
+				i = r("./node_modules/lodash/_baseMap.js"),
+				s = r("./node_modules/lodash/isArray.js");
+			e.exports = function(e, t) {
+				return (s(e) ? n : i)(e, o(t, 3))
 			}
 		},
 		"./node_modules/lodash/reduce.js": function(e, t, r) {
@@ -2629,4 +2638,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation~Subreddit.46f5a30c7f13b908d95f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation~Subreddit.edfa2bf34562a999f32d.js.map

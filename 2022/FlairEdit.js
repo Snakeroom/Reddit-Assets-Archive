@@ -1,35 +1,44 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.a42c41799e242d67f4f4.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.b2a8031430b8b77e9463.js
+// Retrieved at 3/14/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, o) {},
 		"./node_modules/lodash/_baseInRange.js": function(e, t) {
 			var o = Math.max,
 				s = Math.min;
-			e.exports = function(e, t, i) {
-				return e >= s(t, i) && e < o(t, i)
+			e.exports = function(e, t, n) {
+				return e >= s(t, n) && e < o(t, n)
 			}
 		},
 		"./node_modules/lodash/inRange.js": function(e, t, o) {
 			var s = o("./node_modules/lodash/_baseInRange.js"),
-				i = o("./node_modules/lodash/toFinite.js"),
-				n = o("./node_modules/lodash/toNumber.js");
+				n = o("./node_modules/lodash/toFinite.js"),
+				i = o("./node_modules/lodash/toNumber.js");
 			e.exports = function(e, t, o) {
-				return t = i(t), void 0 === o ? (o = t, t = 0) : o = i(o), e = n(e), s(e, t, o)
+				return t = n(t), void 0 === o ? (o = t, t = 0) : o = n(o), e = i(e), s(e, t, o)
+			}
+		},
+		"./node_modules/lodash/map.js": function(e, t, o) {
+			var s = o("./node_modules/lodash/_arrayMap.js"),
+				n = o("./node_modules/lodash/_baseIteratee.js"),
+				i = o("./node_modules/lodash/_baseMap.js"),
+				r = o("./node_modules/lodash/isArray.js");
+			e.exports = function(e, t) {
+				return (r(e) ? s : i)(e, n(t, 3))
 			}
 		},
 		"./node_modules/lodash/times.js": function(e, t, o) {
 			var s = o("./node_modules/lodash/_baseTimes.js"),
-				i = o("./node_modules/lodash/_castFunction.js"),
-				n = o("./node_modules/lodash/toInteger.js"),
+				n = o("./node_modules/lodash/_castFunction.js"),
+				i = o("./node_modules/lodash/toInteger.js"),
 				r = 9007199254740991,
 				a = 4294967295,
 				c = Math.min;
 			e.exports = function(e, t) {
-				if ((e = n(e)) < 1 || e > r) return [];
+				if ((e = i(e)) < 1 || e > r) return [];
 				var o = a,
 					l = c(e, a);
-				t = i(t), e -= a;
+				t = n(t), e -= a;
 				for (var d = s(l, t); ++o < e;) t(o);
 				return d
 			}
@@ -37,24 +46,24 @@
 		"./src/lib/forEachGroup/index.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "a", (function() {
-				return i
+				return n
 			}));
 			const s = e => e;
 
-			function i(e, t, o) {
-				const [i, n] = Array.isArray(e) ? [e.length, t => e[t]] : [e.size, t => e.get(t)], {
+			function n(e, t, o) {
+				const [n, i] = Array.isArray(e) ? [e.length, t => e[t]] : [e.size, t => e.get(t)], {
 					keyFn: r = s
 				} = t || {};
 				let {
 					start: a = 0,
-					end: c = i
+					end: c = n
 				} = t || {};
-				if ((a = a < 0 ? 0 : a) >= (c = c > i ? i : c)) return;
-				let l = n(a),
+				if ((a = a < 0 ? 0 : a) >= (c = c > n ? n : c)) return;
+				let l = i(a),
 					d = r(l, a),
 					p = a;
 				for (let s = a + 1; s < c; s++) {
-					const e = n(s),
+					const e = i(s),
 						t = r(e, s);
 					if (t !== d) {
 						if (!1 === o(l, d, p, s)) return;
@@ -73,13 +82,13 @@
 			})), o.d(t, "c", (function() {
 				return _
 			})), o.d(t, "h", (function() {
-				return C
+				return v
 			})), o.d(t, "g", (function() {
 				return D
 			})), o.d(t, "f", (function() {
 				return k
 			})), o.d(t, "a", (function() {
-				return R
+				return F
 			})), o.d(t, "q", (function() {
 				return L
 			})), o.d(t, "p", (function() {
@@ -102,8 +111,8 @@
 				return $
 			}));
 			var s = o("./node_modules/fbt/lib/FbtPublic.js"),
-				i = o("./node_modules/lodash/forEach.js"),
-				n = o.n(i),
+				n = o("./node_modules/lodash/forEach.js"),
+				i = o.n(n),
 				r = o("./src/lib/constants/index.ts"),
 				a = o("./src/lib/makeApiRequest/index.ts"),
 				c = o("./src/lib/omitHeaders/index.ts"),
@@ -115,7 +124,7 @@
 				type: "json"
 			}).then(e => (e.ok && (e.body = (e => {
 				let t;
-				const o = n()(e, (e, o) => ("snoomojis" !== o && (t = o), n()(e, (t, o) => {
+				const o = i()(e, (e, o) => ("snoomojis" !== o && (t = o), i()(e, (t, o) => {
 					e[o] = {
 						name: o,
 						userFlairAllowed: t.user_flair_allowed,
@@ -146,16 +155,16 @@
 				S = Object(m.a)(I),
 				T = "STRUCTURED_STYLES__EMOJI_DELETE_LOADED",
 				_ = "STRUCTURED_STYLES__EMOJI_DELETE_FAILED",
-				v = Object(m.a)(T),
+				C = Object(m.a)(T),
 				w = Object(m.a)(_),
-				C = "GET_ALL_EMOJIS_PENDING",
+				v = "GET_ALL_EMOJIS_PENDING",
 				D = "GET_ALL_EMOJIS_LOADED",
 				k = "GET_ALL_EMOJIS_FAILED",
-				P = Object(m.a)(C),
-				F = Object(m.a)(D),
-				N = Object(m.a)(k),
-				R = "STRUCTURED_STYLES__EMOJIS_ENABLED_SETTING_LOADED",
-				A = Object(m.a)(R),
+				P = Object(m.a)(v),
+				N = Object(m.a)(D),
+				R = Object(m.a)(k),
+				F = "STRUCTURED_STYLES__EMOJIS_ENABLED_SETTING_LOADED",
+				A = Object(m.a)(F),
 				M = e => ({
 					text: s.fbt._("Failed to save emoji", null, {
 						hk: "3i6FC2"
@@ -168,9 +177,9 @@
 				L = ({
 					imageData: e,
 					subredditId: t
-				}) => async (o, s, i) => {
-					const n = s(),
-						p = Object(y.S)(n, {
+				}) => async (o, s, n) => {
+					const i = s(),
+						p = Object(y.S)(i, {
 							subredditId: t
 						}).name;
 					o(Object(u.k)(e));
@@ -183,15 +192,15 @@
 								filepath: o,
 								mimetype: s
 							}
-						}))(i.apiContext(), p, m.name, h);
+						}))(n.apiContext(), p, m.name, h);
 					let j = !1;
 					if (f.ok) {
-						const t = await (async (e, t, o) => Object(l.a)(o, t))(i.apiContext(), f.body.s3UploadLease, m);
+						const t = await (async (e, t, o) => Object(l.a)(o, t))(n.apiContext(), f.body.s3UploadLease, m);
 						if (t.ok) {
 							if (!s().imageUploads[e.id]) return Object(E.d)(e), !1;
-							const i = decodeURIComponent(t.body.PostResponse.Location),
-								n = f.body.websocketUrl,
-								r = Object(E.n)(e, i, n);
+							const n = decodeURIComponent(t.body.PostResponse.Location),
+								i = f.body.websocketUrl,
+								r = Object(E.n)(e, n, i);
 							o(Object(u.j)(r)), j = !0
 						} else {
 							const s = Object(E.k)(e, t.error);
@@ -202,42 +211,42 @@
 						o(Object(u.i)(t))
 					}
 					return j
-				}, B = (e, t) => async (o, s, i) => {
+				}, B = (e, t) => async (o, s, n) => {
 					const {
-						imageData: n,
+						imageData: i,
 						subredditId: l,
 						emojiName: p,
 						settings: m
-					} = e, f = Object(j.a)(n.url), g = s(), b = Object(y.S)(g, {
+					} = e, f = Object(j.a)(i.url), g = s(), b = Object(y.S)(g, {
 						subredditId: l
-					}).name, x = await (async (e, t, o, s, i) => Object(a.a)(Object(c.a)(e, [d.a]), {
+					}).name, x = await (async (e, t, o, s, n) => Object(a.a)(Object(c.a)(e, [d.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/emoji.json`,
 						method: r.jb.POST,
 						data: {
 							s3_key: o,
 							name: s,
-							mod_flair_only: i.modFlairOnly,
-							post_flair_allowed: i.postFlairAllowed,
-							user_flair_allowed: i.userFlairAllowed
+							mod_flair_only: n.modFlairOnly,
+							post_flair_allowed: n.postFlairAllowed,
+							user_flair_allowed: n.userFlairAllowed
 						}
-					}))(i.apiContext(), b, f, p, m);
+					}))(n.apiContext(), b, f, p, m);
 					if (!x.ok) {
-						const s = Object(E.k)(n, x.error);
+						const s = Object(E.k)(i, x.error);
 						o(Object(u.i)(s)), o(Object(h.f)(M(e))), t && t.close()
 					}
 					return x.ok
 				}, U = e => async (t, o, s) => {
 					const {
-						imageData: i,
-						subredditId: n,
+						imageData: n,
+						subredditId: i,
 						emojiName: r,
 						settings: a
 					} = e;
-					if (t(Object(u.k)(i)), !i.websocketUrl) return t(Object(h.f)({
+					if (t(Object(u.k)(n)), !n.websocketUrl) return t(Object(h.f)({
 						text: "Could not upload emoji"
 					}));
 					let c;
-					const l = new WebSocket(i.websocketUrl);
+					const l = new WebSocket(n.websocketUrl);
 					return l.onopen = async () => {
 						c = await B(e, l)(t, o, s)
 					}, l.onmessage = o => {
@@ -245,39 +254,39 @@
 						if ("success" === s.type) {
 							c = !0;
 							const e = s.payload.emoji_url,
-								o = Object(E.o)(i, e);
+								o = Object(E.o)(n, e);
 							t(Object(u.l)(o));
-							const l = Object(b.e)(r, o.url, n, a);
-							t(S(l)), t(K(n))
+							const l = Object(b.e)(r, o.url, i, a);
+							t(S(l)), t(K(i))
 						} else {
 							const o = Object(f.a)(r),
-								s = Object(E.k)(i, o);
+								s = Object(E.k)(n, o);
 							t(Object(u.i)(s)), t(Object(h.f)(M(e)))
 						}
 						l.close()
 					}, l.onerror = o => {
 						c = !1;
 						const s = Object(f.a)(r),
-							n = Object(E.k)(i, s);
-						t(Object(u.i)(n)), t(Object(h.f)(M(e))), l.close()
+							i = Object(E.k)(n, s);
+						t(Object(u.i)(i)), t(Object(h.f)(M(e))), l.close()
 					}, c
 				}, K = e => async (t, o, {
 					apiContext: s
 				}) => {
-					const i = o();
-					if (Object(O.a)(i, e)) return;
-					const n = Object(y.S)(i, {
+					const n = o();
+					if (Object(O.a)(n, e)) return;
+					const i = Object(y.S)(n, {
 						subredditId: e
 					}).name;
 					t(P(e));
-					const r = await p(s(), n);
+					const r = await p(s(), i);
 					if (r.ok) {
 						const o = r.body;
-						t(F({
+						t(N({
 							subredditId: e,
 							data: o
 						}))
-					} else t(N({
+					} else t(R({
 						subredditId: e,
 						error: r.error
 					}))
@@ -285,10 +294,10 @@
 					apiContext: s
 				}) => {
 					o().emojis[e] || await t(K(e))
-				}, J = (e, t) => async (o, i, {
-					apiContext: n
+				}, J = (e, t) => async (o, n, {
+					apiContext: i
 				}) => {
-					const l = i(),
+					const l = n(),
 						p = Object(y.S)(l, {
 							subredditId: t
 						}).name,
@@ -296,9 +305,9 @@
 							endpoint: `${e.apiUrl}/api/v1/${o}/emoji/${t}`,
 							method: r.jb.DELETE,
 							type: "json"
-						}))(n(), e, p);
+						}))(i(), e, p);
 					if (m.ok) {
-						o(v({
+						o(C({
 							emojiName: e,
 							subredditId: t
 						})), o(h.f({
@@ -313,10 +322,10 @@
 							hk: "22u7ha"
 						})
 					}))
-				}, G = (e, t) => async (o, i, {
-					apiContext: n
+				}, G = (e, t) => async (o, n, {
+					apiContext: i
 				}) => {
-					const l = i(),
+					const l = n(),
 						p = Object(y.S)(l, {
 							subredditId: e
 						}).name;
@@ -327,7 +336,7 @@
 								subreddit: t,
 								enable: o
 							}
-						}))(n(), p, t)).ok) {
+						}))(i(), p, t)).ok) {
 						o(A({
 							subredditId: e,
 							emojisEnabled: t
@@ -338,10 +347,10 @@
 							hk: "22u7ha"
 						})
 					}))
-				}, H = "EMOJI_CUSTOM_SIZE_UPDATED", z = Object(m.a)(H), Y = (e, t) => async (o, i, {
-					apiContext: n
+				}, H = "EMOJI_CUSTOM_SIZE_UPDATED", z = Object(m.a)(H), Y = (e, t) => async (o, n, {
+					apiContext: i
 				}) => {
-					const l = i(),
+					const l = n(),
 						p = Object(y.S)(l, {
 							subredditId: e
 						}).name;
@@ -349,7 +358,7 @@
 						endpoint: `${e.apiUrl}/api/v1/${t}/emoji_custom_size`,
 						method: r.jb.POST,
 						data: o
-					}))(n(), p, t)).ok ? o(z({
+					}))(i(), p, t)).ok ? o(z({
 						subredditId: e,
 						emojiCustomSize: t
 					})) : o(h.f({
@@ -358,12 +367,12 @@
 							hk: "4dziDF"
 						})
 					}))
-				}, q = "EMOJI_PERMISSIONS_UPDATED", V = Object(m.a)(q), $ = (e, t, o, i) => async (n, l, {
+				}, q = "EMOJI_PERMISSIONS_UPDATED", V = Object(m.a)(q), $ = (e, t, o, n) => async (i, l, {
 					apiContext: p
 				}) => {
 					const m = l(),
 						u = Object(y.S)(m, {
-							subredditId: i
+							subredditId: n
 						}).name;
 					(await (async (e, t, o, s) => Object(a.a)(Object(c.a)(e, [d.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${o}/emoji_permissions.json`,
@@ -374,17 +383,17 @@
 							user_flair_allowed: s.userFlairAllowed,
 							mod_flair_only: s.modFlairOnly
 						}
-					}))(p(), e, u, o)).ok ? (n(V({
+					}))(p(), e, u, o)).ok ? (i(V({
 						emojiName: e,
 						isSnoomoji: t,
 						settings: o,
-						subredditId: i
-					})), n(h.f({
+						subredditId: n
+					})), i(h.f({
 						kind: x.b.SuccessCommunityGreen,
 						text: s.fbt._("Emoji permissions updated", null, {
 							hk: "4b2RIU"
 						})
-					}))) : n(h.f({
+					}))) : i(h.f({
 						kind: x.b.Error,
 						text: s.fbt._("Try again later", null, {
 							hk: "4dziDF"
@@ -414,8 +423,8 @@
 			"use strict";
 			o.r(t);
 			var s = o("./node_modules/draft-js/lib/Draft.js"),
-				i = o("./node_modules/lodash/isEqual.js"),
-				n = o.n(i),
+				n = o("./node_modules/lodash/isEqual.js"),
+				i = o.n(n),
 				r = o("./node_modules/react/index.js"),
 				a = o.n(r),
 				c = o("./node_modules/react-redux/es/index.js"),
@@ -463,7 +472,7 @@
 			var T = o("./src/reddit/controls/EmojiPicker/EmojiGrid/index.m.less"),
 				_ = o.n(T);
 
-			function v(e) {
+			function C(e) {
 				const {
 					emojis: t,
 					focusedIndex: o
@@ -482,7 +491,7 @@
 				}))))
 			}
 			var w = o("./src/reddit/controls/Button/index.tsx"),
-				C = o("./src/reddit/layout/row/Inline/index.tsx"),
+				v = o("./src/reddit/layout/row/Inline/index.tsx"),
 				D = o("./src/reddit/controls/EmojiPicker/Footer/index.m.less"),
 				k = o.n(D);
 
@@ -493,7 +502,7 @@
 				} = e;
 				return a.a.createElement("div", {
 					className: Object(p.a)(k.a.footer, t)
-				}, o && a.a.createElement(C.a, {
+				}, o && a.a.createElement(v.a, {
 					className: k.a.emojiInfo
 				}, a.a.createElement("img", {
 					className: k.a.emojiPreview,
@@ -507,9 +516,9 @@
 					hk: "2TSLl5"
 				})))
 			}
-			var F = o("./src/reddit/icons/svgs/Search/index.tsx"),
-				N = o("./src/reddit/controls/EmojiPicker/SearchBar/index.m.less"),
-				R = o.n(N);
+			var N = o("./src/reddit/icons/svgs/Search/index.tsx"),
+				R = o("./src/reddit/controls/EmojiPicker/SearchBar/index.m.less"),
+				F = o.n(R);
 
 			function A() {
 				return (A = Object.assign || function(e) {
@@ -528,13 +537,13 @@
 					...s
 				} = e;
 				return a.a.createElement("div", {
-					className: Object(p.a)(R.a.searchBar, t)
-				}, a.a.createElement(F.a, {
-					className: R.a.searchIcon
+					className: Object(p.a)(F.a.searchBar, t)
+				}, a.a.createElement(N.a, {
+					className: F.a.searchIcon
 				}), a.a.createElement("div", {
-					className: R.a.inputWrapper
+					className: F.a.inputWrapper
 				}, a.a.createElement("input", A({
-					className: R.a.input,
+					className: F.a.input,
 					ref: o,
 					placeholder: h.fbt._("Search for emoji", null, {
 						hk: "IncEm"
@@ -615,7 +624,7 @@
 						inputRef: this.setInputRef,
 						onChange: this.onSearchBarInputChange,
 						onKeyDown: this.onKeyDown
-					}), a.a.createElement(v, {
+					}), a.a.createElement(C, {
 						emojis: t,
 						focusedIndex: this.state.focusedIndex,
 						onEmojiEnter: this.onEmojiEnter,
@@ -663,7 +672,7 @@
 						onMouseDown: this.handleMouseDown,
 						onClick: this.handleClick,
 						onMouseOver: this.handleMouseOver
-					}, a.a.createElement(C.a, null, a.a.createElement(X.a, {
+					}, a.a.createElement(v.a, null, a.a.createElement(X.a, {
 						className: ee.a.emojiImageDisplay,
 						backgroundImage: e.url
 					}), a.a.createElement("div", {
@@ -673,14 +682,14 @@
 			}
 			var oe = o("./src/reddit/controls/EmojiDropdown/index.m.less"),
 				se = o.n(oe);
-			const ie = Object(l.a)(O.c, (e, t) => t.searchValue.toLowerCase(), (e, t) => {
+			const ne = Object(l.a)(O.c, (e, t) => t.searchValue.toLowerCase(), (e, t) => {
 					const o = t.toLowerCase();
 					return e.filter(({
 						name: e
 					}) => e.toLowerCase().startsWith(o))
 				}),
-				ne = Object(l.c)({
-					filteredEmojis: ie
+				ie = Object(l.c)({
+					filteredEmojis: ne
 				}),
 				re = {
 					onGetSubredditEmojis: f.m
@@ -736,11 +745,11 @@
 						{
 							selectedIndex: s
 						} = this.state,
-						i = this.props.filteredEmojis.length,
-						n = e.scrollTop,
+						n = this.props.filteredEmojis.length,
+						i = e.scrollTop,
 						r = Math.max(0, (s + 1) * o - t),
-						a = Math.min(s * o, i * o - t),
-						c = Math.max(Math.min(a, n), r);
+						a = Math.min(s * o, n * o - t),
+						c = Math.max(Math.min(a, i), r);
 					e.scrollTop = c, setTimeout(() => {
 						this.isKeyScrolling = !1
 					}, 100)
@@ -760,7 +769,7 @@
 					}))) : null
 				}
 			}
-			var ce = Object(c.b)(ne, re)(ae),
+			var ce = Object(c.b)(ie, re)(ae),
 				le = o("./node_modules/draft-js/lib/DraftOffsetKey.js"),
 				de = o.n(le),
 				pe = o("./src/lib/forEachGroup/index.ts"),
@@ -771,8 +780,8 @@
 				je = o.n(fe);
 			const ge = (e, t, o) => {
 				const s = t.getText();
-				let i, n;
-				for (; null !== (i = e.exec(s));) o(n = i.index, n + i[0].length)
+				let n, i;
+				for (; null !== (n = e.exec(s));) o(i = n.index, i + n[0].length)
 			};
 			var be = {
 					strategy: function(e, t, o) {
@@ -785,9 +794,9 @@
 			var Oe = {
 					strategy: function(e, t, o) {
 						e.getCharacterList().forEach((e, s) => {
-							const i = e && e.getEntity();
-							if (i) {
-								o.getEntity(i).getType() === Se.InlineImage && t(s, s + 1)
+							const n = e && e.getEntity();
+							if (n) {
+								o.getEntity(n).getType() === Se.InlineImage && t(s, s + 1)
 							}
 						})
 					},
@@ -819,65 +828,65 @@
 						id: t.id
 					})
 				},
-				ve = (e, t, o) => {
-					let i, n = e,
+				Ce = (e, t, o) => {
+					let n, i = e,
 						r = "";
-					return o.type === Ie.Image ? (i = (n = _e(n, o)).getLastCreatedEntityKey(), r = " ") : (i = void 0, r = o.text), s.Modifier.replaceText(n, t, r, void 0, i)
+					return o.type === Ie.Image ? (n = (i = _e(i, o)).getLastCreatedEntityKey(), r = " ") : (n = void 0, r = o.text), s.Modifier.replaceText(i, t, r, void 0, n)
 				},
 				we = (e, t) => {
 					const o = e.getSelection(),
-						i = o.merge({
+						n = o.merge({
 							focusOffset: o.getAnchorOffset()
 						}),
-						n = ve(e.getCurrentContent(), i, t);
-					return s.EditorState.push(e, n, "insert-characters")
+						i = Ce(e.getCurrentContent(), n, t);
+					return s.EditorState.push(e, i, "insert-characters")
 				},
-				Ce = Object(me.a)(e => {
+				ve = Object(me.a)(e => {
 					const t = e.getSelection(),
 						o = t.getStartOffset();
 					if (!t.isCollapsed()) return;
 					const s = e.getBlockTree(t.getStartKey()).findEntry(e => he()(o - 1, e.get("start"), e.get("end")));
 					if (!s) return;
-					const [i, n] = s, r = n.get("start"), a = n.get("end"), c = e.getCurrentContent().getBlockForKey(t.getStartKey()).getText();
-					return n.get("decoratorKey") && c.charAt(r) === $ ? {
+					const [n, i] = s, r = i.get("start"), a = i.get("end"), c = e.getCurrentContent().getBlockForKey(t.getStartKey()).getText();
+					return i.get("decoratorKey") && c.charAt(r) === $ ? {
 						emojiString: c.slice(r + 1, a),
 						startIndex: r,
 						endIndex: a,
-						offsetKey: de.a.encode(t.getStartKey(), i, 0)
+						offsetKey: de.a.encode(t.getStartKey(), n, 0)
 					} : void 0
 				}),
 				De = (e, t) => {
-					const o = Ce(e);
+					const o = ve(e);
 					if (!o) return;
-					let i = e.getCurrentContent();
-					const n = i.getPlainText().charAt(o.endIndex),
+					let n = e.getCurrentContent();
+					const i = n.getPlainText().charAt(o.endIndex),
 						r = e.getSelection().merge({
 							anchorOffset: o.startIndex,
-							focusOffset: o.endIndex + (n === $ ? 1 : 0)
+							focusOffset: o.endIndex + (i === $ ? 1 : 0)
 						}),
 						a = {
 							type: Ie.Image,
 							id: Object(m.b)(t.name),
 							url: t.url
 						};
-					return i = ve(i, r, a), s.EditorState.push(e, i, "insert-characters")
+					return n = Ce(n, r, a), s.EditorState.push(e, n, "insert-characters")
 				},
 				ke = (e, t) => {
 					const o = e.getSelection(),
-						i = o.getFocusOffset(),
-						n = o.getFocusKey(),
+						n = o.getFocusOffset(),
+						i = o.getFocusKey(),
 						r = e.getCurrentContent(),
-						a = r.getBlockForKey(n),
-						c = i > 0 ? a.getEntityAt(i - 1) : null,
+						a = r.getBlockForKey(i),
+						c = n > 0 ? a.getEntityAt(n - 1) : null,
 						l = c && r.getEntity(c);
 					if (l && l.getType() === Se.InlineImage) {
-						const i = s.Modifier.replaceText(r, o, t, e.getCurrentInlineStyle());
-						return s.EditorState.push(e, i, "insert-characters")
+						const n = s.Modifier.replaceText(r, o, t, e.getCurrentInlineStyle());
+						return s.EditorState.push(e, n, "insert-characters")
 					}
 				},
 				Pe = "handled",
-				Fe = "not-handled";
-			class Ne extends a.a.Component {
+				Ne = "not-handled";
+			class Re extends a.a.Component {
 				constructor(e) {
 					super(e), this.setEditorRef = e => this.editorRef = e, this.containerRef = null, this.setContainerRef = e => this.containerRef = e, this.setEmojiDropdownApi = e => this.emojiDropdownApi = e, this.focus = () => this.editorRef && this.editorRef.focus(), this.handleBeforeInput = e => {
 						const {
@@ -890,10 +899,10 @@
 								t = this.state.emojiString.toLowerCase();
 							if (e && e.name.toLowerCase() === t) return this.handleSelectEmoji(e), Pe
 						}
-						const i = ke(t, e);
-						return i ? (this.onChange(i), Pe) : Fe
+						const n = ke(t, e);
+						return n ? (this.onChange(n), Pe) : Ne
 					}, this.checkEditorStateForEmojis = e => {
-						const t = Ce(e);
+						const t = ve(e);
 						this.setState({
 							emojiString: t ? t.emojiString : "",
 							suppressEmojiDropdown: !!t && this.state.suppressEmojiDropdown
@@ -916,10 +925,10 @@
 						if (!this.editorRef) return Pe;
 						const {
 							editorState: o,
-							maxLength: i
-						} = this.props, n = this.editorRef.getClipboard(), r = o.getSelection(), a = e.length - (r.getEndOffset() - r.getStartOffset()), c = o.getCurrentContent().getPlainText().length + a;
-						if (i && c > i) return Pe;
-						if (n && n.first().getText() === e) return Fe;
+							maxLength: n
+						} = this.props, i = this.editorRef.getClipboard(), r = o.getSelection(), a = e.length - (r.getEndOffset() - r.getStartOffset()), c = o.getCurrentContent().getPlainText().length + a;
+						if (n && c > n) return Pe;
+						if (i && i.first().getText() === e) return Ne;
 						const l = q(e);
 						let d = o.getCurrentContent();
 						d = s.Modifier.replaceText(d, r, l);
@@ -937,7 +946,7 @@
 					if (this.props.editorState.getSelection().getHasFocus() && !this.state.suppressEmojiDropdown && this.state.emojiString) {
 						const {
 							offsetKey: e
-						} = Ce(this.props.editorState), t = this.containerRef.querySelector(`[data-offset-key="${e}"]`), {
+						} = ve(this.props.editorState), t = this.containerRef.querySelector(`[data-offset-key="${e}"]`), {
 							left: o,
 							bottom: s
 						} = t.getBoundingClientRect();
@@ -955,8 +964,8 @@
 						className: e,
 						editorState: t,
 						flairTemplateType: o,
-						isFlairModOnly: i,
-						placeholder: n,
+						isFlairModOnly: n,
+						placeholder: i,
 						editorKey: r,
 						subredditId: c,
 						emojisEnabled: l
@@ -970,7 +979,7 @@
 						editorKey: r,
 						editorState: t,
 						onChange: this.onChange,
-						placeholder: n,
+						placeholder: i,
 						handleBeforeInput: this.handleBeforeInput,
 						handleReturn: this.handleReturn,
 						handlePastedText: this.handlePastedText,
@@ -982,14 +991,14 @@
 						key: this.state.emojiString,
 						onDropdownApi: this.setEmojiDropdownApi,
 						flairTemplateType: o,
-						isFlairModOnly: i,
+						isFlairModOnly: n,
 						searchValue: this.state.emojiString,
 						onSelect: this.handleSelectEmoji,
 						subredditId: c
 					})))
 				}
 			}
-			var Re = Ne,
+			var Fe = Re,
 				Ae = o("./src/reddit/helpers/flair.ts"),
 				Me = o("./src/reddit/icons/svgs/Help/index.tsx"),
 				Le = o("./src/reddit/icons/svgs/Smile/index.tsx"),
@@ -1036,29 +1045,29 @@
 					return ((e, t = !1) => {
 						if (!e) return s.EditorState.createEmpty(Te());
 						let o = s.EditorState.createEmpty(Te()),
-							i = o.getCurrentContent();
-						const n = [],
+							n = o.getCurrentContent();
+						const i = [],
 							r = [];
 						e.forEach(e => {
 							if ("image" === e.type) {
-								n.push(" ");
-								const t = (i = _e(i, e)).getLastCreatedEntityKey(),
+								i.push(" ");
+								const t = (n = _e(n, e)).getLastCreatedEntityKey(),
 									o = s.CharacterMetadata.create({
 										entity: t
 									});
 								r.push(o)
 							} else if ("text" === e.type) {
-								n.push(e.text);
+								i.push(e.text);
 								const t = s.CharacterMetadata.create();
 								r.push(...je()(e.text.length, () => t))
 							}
 						});
-						let a = i.getBlockMap(),
-							c = i.getFirstBlock().merge({
-								text: n.join(""),
+						let a = n.getBlockMap(),
+							c = n.getFirstBlock().merge({
+								text: i.join(""),
 								characterList: Object(ye.List)(r)
 							});
-						a = a.set(c.getKey(), c), c = (i = i.merge({
+						a = a.set(c.getKey(), c), c = (n = n.merge({
 							blockMap: a
 						})).getFirstBlock();
 						const l = s.SelectionState.createEmpty(c.getKey()).merge({
@@ -1066,30 +1075,30 @@
 							focusOffset: c.getLength(),
 							hasFocus: !1
 						});
-						return i = i.merge({
+						return n = n.merge({
 							blockMap: s.BlockMapBuilder.createFromArray([c])
 						}), o = s.EditorState.set(o, {
-							currentContent: i,
+							currentContent: n,
 							selection: l
 						}), t && (o = s.EditorState.forceSelection(o, l)), o
 					})(Ye(e))
 				},
-				Ve = (e, t, o, s, i) => {
-					const n = (e => {
+				Ve = (e, t, o, s, n) => {
+					const i = (e => {
 						const t = e.getCurrentContent(),
 							o = t.getPlainText(),
 							s = [],
-							i = t.getFirstBlock().getCharacterList();
-						return Object(pe.a)(i, {
+							n = t.getFirstBlock().getCharacterList();
+						return Object(pe.a)(n, {
 							keyFn: e => e.getEntity()
-						}, (e, i, n, r) => {
+						}, (e, n, i, r) => {
 							const a = e.getEntity(),
 								c = a && t.getEntity(a);
 							if (c && c.getType() === Se.InlineImage) {
 								const {
 									id: e,
 									url: t
-								} = c.getData(), o = r - n;
+								} = c.getData(), o = r - i;
 								s.push(...je()(o, () => ({
 									type: Ie.Image,
 									id: e,
@@ -1097,19 +1106,19 @@
 								})))
 							} else s.push({
 								type: Ie.Text,
-								text: o.slice(n, r)
+								text: o.slice(i, r)
 							})
 						}), s
 					})(e);
-					if (!!!n.find(e => e.type === Ie.Image)) return {
+					if (!!!i.find(e => e.type === Ie.Image)) return {
 						backgroundColor: t,
 						templateId: o,
 						type: Be.f.Text,
-						text: n.map(e => e.type === Ie.Text ? e.text : "").join(),
+						text: i.map(e => e.type === Ie.Text ? e.text : "").join(),
 						textColor: s,
-						cssClass: i
+						cssClass: n
 					};
-					const r = n.map(e => e.type === Ie.Image ? {
+					const r = i.map(e => e.type === Ie.Image ? {
 						e: Be.c.Emoji,
 						a: e.id,
 						u: e.url
@@ -1123,10 +1132,10 @@
 						type: Be.f.Richtext,
 						richtext: r,
 						textColor: s,
-						cssClass: i
+						cssClass: n
 					}
 				},
-				$e = (e, t) => n()(Ye(e), Ye(t)),
+				$e = (e, t) => i()(Ye(e), Ye(t)),
 				Qe = Object(d.a)(u.a.wrapped(E.a, "Component", We.a)),
 				Xe = e => {
 					e.stopPropagation(), e.nativeEvent.stopImmediatePropagation()
@@ -1153,8 +1162,8 @@
 							const {
 								bottom: t,
 								top: o
-							} = this.wrapperRef.current.getBoundingClientRect(), s = o > Ge, i = t + Ge < window.innerHeight;
-							e = s && !i
+							} = this.wrapperRef.current.getBoundingClientRect(), s = o > Ge, n = t + Ge < window.innerHeight;
+							e = s && !n
 						}
 						this.setState({
 							shouldPositionPickerOnTop: e
@@ -1213,22 +1222,22 @@
 				renderHelperText(e) {
 					const {
 						flair: t
-					} = this.props, o = Object(Ae.i)(t), s = o > b.g, i = b.g - o, n = h.fbt._({
+					} = this.props, o = Object(Ae.i)(t), s = o > b.g, n = b.g - o, i = h.fbt._({
 						"*": "{number} characters remaining",
 						_1: "1 character remaining"
-					}, [h.fbt._plural(i, "number")], {
+					}, [h.fbt._plural(n, "number")], {
 						hk: "29F3AW"
 					});
 					return a.a.createElement("div", {
 						className: Object(p.a)(We.a.HelperText, this.props.helperTextClass, e ? We.a.hasError : null)
-					}, s ? a.a.createElement(a.a.Fragment, null, n, a.a.createElement(H.a, {
+					}, s ? a.a.createElement(a.a.Fragment, null, i, a.a.createElement(H.a, {
 						icon: a.a.createElement(Me.a, {
 							className: We.a.helpIcon
 						}),
 						text: h.fbt._("The unicode for the emoji goes against the character count", null, {
 							hk: "1gJWyZ"
 						})
-					})) : e || n)
+					})) : e || i)
 				}
 				render() {
 					const {
@@ -1236,13 +1245,13 @@
 						container: t,
 						emojiPickerId: o,
 						flair: s,
-						flairTemplate: i = b.a,
-						flairTemplateType: n,
+						flairTemplate: n = b.a,
+						flairTemplateType: i,
 						isCompact: r,
 						isEmojiPickerOpen: c,
 						isFlairModOnly: l,
 						subredditId: d
-					} = this.props, m = this.shouldEnableEmojis(), u = Object(Ae.m)(s, i, {
+					} = this.props, m = this.shouldEnableEmojis(), u = Object(Ae.m)(s, n, {
 						allowBlank: e
 					});
 					return a.a.createElement("div", {
@@ -1251,10 +1260,10 @@
 						className: Object(p.a)(We.a.EditorWrapper, u ? We.a.hasError : null, r ? We.a.isCompact : null),
 						ref: this.wrapperRef,
 						id: o
-					}, a.a.createElement(Re, {
+					}, a.a.createElement(Fe, {
 						ref: this.richTextInputRef,
 						editorState: this.state.editorState,
-						flairTemplateType: n,
+						flairTemplateType: i,
 						emojisEnabled: m,
 						isFlairModOnly: l,
 						maxLength: b.g,
@@ -1279,7 +1288,7 @@
 					}, this.state.shouldPositionPickerOnTop ? He : ze), a.a.createElement("div", {
 						onClick: Xe
 					}, a.a.createElement(G, {
-						flairTemplateType: n,
+						flairTemplateType: i,
 						isFlairModOnly: l,
 						onCancel: this.onToggleEmojiPicker,
 						onSelect: this.onSelectEmoji,
@@ -1307,8 +1316,8 @@
 				return g
 			}));
 			var s = o("./node_modules/react/index.js"),
-				i = o.n(s),
-				n = o("./node_modules/react-redux/es/index.js"),
+				n = o.n(s),
+				i = o("./node_modules/react-redux/es/index.js"),
 				r = o("./node_modules/reselect/es/index.js"),
 				a = o("./src/higherOrderComponents/addOverlayEvents.tsx"),
 				c = o("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
@@ -1328,13 +1337,13 @@
 			}
 			const h = m.a.div("Text", p.a),
 				f = m.a.div("BottomText", p.a),
-				j = e => i.a.createElement(h, {
+				j = e => n.a.createElement(h, {
 					className: e.className,
 					style: e.style
 				}, e.text, e.children),
 				g = e => {
 					const t = e.overflow ? e.overflow.left : 0;
-					return i.a.createElement(f, {
+					return n.a.createElement(f, {
 						className: e.className,
 						style: {
 							...e.style,
@@ -1349,15 +1358,15 @@
 				}),
 				E = Object(c.a)(g, [a.a.Click, a.a.Keydown]),
 				x = Object(c.a)(j, [a.a.Click, a.a.Keydown]),
-				O = Object(n.b)(b);
+				O = Object(i.b)(b);
 			t.c = O(e => {
 				const {
 					caretOnTop: t
 				} = e;
-				return t ? i.a.createElement(E, u({}, e, {
+				return t ? n.a.createElement(E, u({}, e, {
 					targetPosition: ["center", "bottom"],
 					tooltipPosition: ["center", "top"]
-				})) : i.a.createElement(x, u({}, e, {
+				})) : n.a.createElement(x, u({}, e, {
 					targetPosition: ["center", "top"],
 					tooltipPosition: ["center", "bottom"]
 				}))
@@ -1369,8 +1378,8 @@
 				return l
 			}));
 			var s = o("./node_modules/react/index.js"),
-				i = o.n(s),
-				n = o("./src/higherOrderComponents/asTooltip.tsx"),
+				n = o.n(s),
+				i = o("./src/higherOrderComponents/asTooltip.tsx"),
 				r = o("./src/reddit/constants/elementIds.ts"),
 				a = o("./src/reddit/contexts/InsideOverlay.tsx");
 
@@ -1385,8 +1394,8 @@
 			}
 
 			function l(e, t) {
-				const o = Object(n.a)(e, t);
-				class s extends i.a.PureComponent {
+				const o = Object(i.a)(e, t);
+				class s extends n.a.PureComponent {
 					constructor() {
 						super(...arguments), this.state = {
 							container: null
@@ -1401,7 +1410,7 @@
 						}
 					}
 					render() {
-						return i.a.createElement(o, c({}, this.props, {
+						return n.a.createElement(o, c({}, this.props, {
 							container: this.state.container,
 							excludeContainerPosition: this.props.isOverlay
 						}))
@@ -1428,8 +1437,8 @@
 				return f
 			}));
 			var s = o("./node_modules/react/index.js"),
-				i = o.n(s),
-				n = o("./src/lib/classNames/index.ts"),
+				n = o.n(s),
+				i = o("./src/lib/classNames/index.ts"),
 				r = o("./src/lib/CSSVariableProvider/index.tsx"),
 				a = o("./src/reddit/helpers/dom/index.ts"),
 				c = o("./src/reddit/components/RichTextEditor/Tooltip/index.m.less"),
@@ -1444,14 +1453,14 @@
 			const h = ({
 				isBelow: e = !1,
 				style: t
-			}) => i.a.createElement("div", {
-				className: Object(n.a)(l.a.triangle, {
+			}) => n.a.createElement("div", {
+				className: Object(i.a)(l.a.triangle, {
 					[l.a.triangleBelow]: e
 				}),
 				style: t
-			}, i.a.createElement("div", {
+			}, n.a.createElement("div", {
 				className: l.a.triangleBack
-			}), i.a.createElement("div", {
+			}), n.a.createElement("div", {
 				className: l.a.triangleFront
 			}));
 			class f extends s.Component {
@@ -1469,19 +1478,19 @@
 					const t = this.containerRef.getBoundingClientRect(),
 						o = Math.round(t.width),
 						s = Math.round(t.height),
-						i = this.state.positioning;
+						n = this.state.positioning;
 					if (!e) {
-						if (!i) return;
-						if (i.tooltipWidth === o && i.tooltipHeight === s) return
+						if (!n) return;
+						if (n.tooltipWidth === o && n.tooltipHeight === s) return
 					}
-					const n = e ? e.bottom : i.target.bottom,
-						r = e ? e.top : i.target.top,
-						c = e ? e.left : i.target.left,
+					const i = e ? e.bottom : n.target.bottom,
+						r = e ? e.top : n.target.top,
+						c = e ? e.left : n.target.left,
 						l = Object(a.e)(this.containerRef);
 					let d, p, m;
 					if (l) {
 						const e = l.getBoundingClientRect();
-						d = e.bottom - (n || 0), p = c - e.left + l.scrollLeft, m = r - e.top + l.scrollTop
+						d = e.bottom - (i || 0), p = c - e.left + l.scrollLeft, m = r - e.top + l.scrollTop
 					} else {
 						const e = document.documentElement,
 							t = window.pageYOffset || e.scrollTop;
@@ -1510,13 +1519,13 @@
 					} = this.props;
 					if (!o) return;
 					const s = t ? t.offsetWidth : document.documentElement.offsetWidth,
-						i = s ? Math.max(e.tooltip.left + e.tooltipWidth - s, 0) : 0;
-					e.tooltip.left -= i + m;
-					const n = i + m - p / 2;
+						n = s ? Math.max(e.tooltip.left + e.tooltipWidth - s, 0) : 0;
+					e.tooltip.left -= n + m;
+					const i = n + m - p / 2;
 					let r;
 					o === u.Above ? (e.tooltip.top += d, r = -d) : (e.tooltip.top -= e.tooltipHeight + d, r = e.tooltipHeight), e.triangle = {
 						top: r,
-						left: n
+						left: i
 					}
 				}
 				componentDidUpdate(e, t) {
@@ -1535,15 +1544,15 @@
 						trianglePlacement: o
 					} = this.props, {
 						positioning: s
-					} = this.state, a = s && void 0 !== s.triangle && i.a.createElement(h, {
+					} = this.state, a = s && void 0 !== s.triangle && n.a.createElement(h, {
 						isBelow: o === u.Below,
 						style: {
 							top: s.triangle.top + "px",
 							left: s.triangle.left + "px"
 						}
 					});
-					let c = i.a.createElement("div", {
-						className: Object(n.a)(l.a.tooltipBox, this.props.className, {
+					let c = n.a.createElement("div", {
+						className: Object(i.a)(l.a.tooltipBox, this.props.className, {
 							[l.a.dropdown]: t
 						}),
 						style: s ? {
@@ -1555,7 +1564,7 @@
 							}
 						} : {},
 						ref: this.updateContainerRef
-					}, s && this.props.children && i.a.createElement(i.a.Fragment, null, a, this.props.children));
+					}, s && this.props.children && n.a.createElement(n.a.Fragment, null, a, this.props.children));
 					return this.props.usePortal && (c = Object(r.d)(c, this.props.portalContainer || document.body)), c
 				}
 			}
@@ -1618,15 +1627,15 @@
 				return m
 			}));
 			var s = o("./node_modules/react/index.js"),
-				i = o.n(s),
-				n = o("./src/higherOrderComponents/asTooltip.tsx"),
+				n = o.n(s),
+				i = o("./src/higherOrderComponents/asTooltip.tsx"),
 				r = o("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				a = o("./src/reddit/controls/IconTooltip/index.m.less"),
 				c = o.n(a);
-			const l = Object(n.a)(r.b),
+			const l = Object(i.a)(r.b),
 				d = ["center", "top"],
 				p = ["center", "bottom"];
-			class m extends i.a.Component {
+			class m extends n.a.Component {
 				constructor(e) {
 					super(e), this.tooltipTargetElement = null, this.setTooltipTargetRef = e => this.tooltipTargetElement = e, this.onShowTooltip = () => {
 						this.setState({
@@ -1641,11 +1650,11 @@
 					}
 				}
 				render() {
-					return i.a.createElement("span", {
+					return n.a.createElement("span", {
 						onMouseEnter: this.onShowTooltip,
 						onMouseLeave: this.onHideTooltip,
 						ref: this.setTooltipTargetRef
-					}, this.props.icon, i.a.createElement(l, {
+					}, this.props.icon, n.a.createElement(l, {
 						className: c.a.tooltip,
 						isOpen: this.state.showTooltip,
 						tooltipTarget: this.tooltipTargetElement,
@@ -1664,16 +1673,16 @@
 		"./src/reddit/controls/ImageDisplay/index.tsx": function(e, t, o) {
 			"use strict";
 			var s = o("./node_modules/react/index.js"),
-				i = o.n(s),
-				n = o("./src/lib/classNames/index.ts"),
+				n = o.n(s),
+				i = o("./src/lib/classNames/index.ts"),
 				r = o("./src/reddit/controls/ImageDisplay/index.m.less"),
 				a = o.n(r);
 			t.a = ({
 				backgroundImage: e,
 				children: t,
 				className: o
-			}) => i.a.createElement("div", {
-				className: Object(n.a)(a.a.imageDisplay, o),
+			}) => n.a.createElement("div", {
+				className: Object(i.a)(a.a.imageDisplay, o),
 				style: {
 					backgroundImage: `url('${e}')`
 				},
@@ -1685,15 +1694,90 @@
 				imageSpan: "_39fVyg7PKE6z039JZgpQLB"
 			}
 		},
+		"./src/reddit/helpers/dom/index.ts": function(e, t, o) {
+			"use strict";
+			o.d(t, "g", (function() {
+				return a
+			})), o.d(t, "f", (function() {
+				return c
+			})), o.d(t, "d", (function() {
+				return l
+			})), o.d(t, "h", (function() {
+				return d
+			})), o.d(t, "c", (function() {
+				return p
+			})), o.d(t, "b", (function() {
+				return m
+			})), o.d(t, "e", (function() {
+				return u
+			})), o.d(t, "a", (function() {
+				return h
+			}));
+			var s = o("./node_modules/lodash/map.js"),
+				n = o.n(s),
+				i = o("./src/lib/FocusTrap/index.ts");
+			const r = e => "INPUT" === e.tagName.toUpperCase() || "TEXTAREA" === e.tagName.toUpperCase() || "DIV" === e.tagName.toUpperCase() && e.isContentEditable,
+				a = e => {
+					let t = e;
+					do {
+						if (r(t)) return !0
+					} while (t = t.parentElement);
+					return !1
+				},
+				c = () => {
+					const e = document.getSelection();
+					return !!e && (e.rangeCount > 0 && e.getRangeAt(0).toString().length > 0)
+				},
+				l = () => c() ? (() => {
+					const e = document.getSelection();
+					if (!e) return [];
+					const t = e.getRangeAt(0).cloneContents().childNodes;
+					return n()(t, e => e.textContent || "")
+				})() : null,
+				d = (e, t) => {
+					const o = document.createRange();
+					return o.selectNode(t), e.compareBoundaryPoints(Range.END_TO_START, o) < 0 && e.compareBoundaryPoints(Range.START_TO_END, o) > 0
+				},
+				p = e => {
+					const t = window.getSelection();
+					if (1 !== t.rangeCount) return;
+					const o = t.getRangeAt(0);
+					if (!d(o, e)) return;
+					const {
+						startContainer: s,
+						startOffset: n,
+						endContainer: i,
+						endOffset: r
+					} = o, a = document.createRange();
+					a.selectNode(e);
+					let c = !0;
+					if (-1 === a.compareBoundaryPoints(Range.START_TO_START, o) && (a.setStart(s, n), c = !1), 1 === a.compareBoundaryPoints(Range.END_TO_END, o) && (a.setEnd(i, r), c = !1), c) return [e];
+					const l = document.createElement("div");
+					return l.appendChild(a.cloneContents()), [...l.childNodes]
+				},
+				m = (e, t, o) => {
+					let s = e;
+					for (; s && (!o || !o(s));) {
+						if (s && t(s)) return s;
+						s = s.parentElement
+					}
+				},
+				u = e => e && e.parentElement && m(e.parentElement, e => "static" !== window.getComputedStyle(e).getPropertyValue("position")),
+				h = e => {
+					e.querySelectorAll(i.a).forEach(e => {
+						e.tabIndex = -1
+					})
+				}
+		},
 		"./src/reddit/icons/svgs/Help/index.tsx": function(e, t, o) {
 			"use strict";
 			var s = o("./node_modules/react/index.js"),
-				i = o.n(s);
-			t.a = e => i.a.createElement("svg", {
+				n = o.n(s);
+			t.a = e => n.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 16 16",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, i.a.createElement("path", {
+			}, n.a.createElement("path", {
 				fill: "inherit",
 				d: "M8.622 10.616c.078.08.14.175.183.28.044.105.07.218.07.332 0 .237-.087.456-.253.62-.167.168-.385.255-.622.255-.236 0-.455-.087-.62-.254-.167-.166-.255-.385-.255-.622 0-.114.027-.227.07-.332.044-.105.105-.2.184-.28.087-.088.174-.15.288-.193.324-.13.71-.052.954.193zm-.205-6.242c1.595 0 2.466.807 2.466 1.92 0 .976-.556 1.448-1.238 1.816-.615.317-.83.518-.904.898 0 .004-.034.207-.036.21-.034.126-.087.244-.18.336-.14.14-.323.21-.524.21-.097 0-.192-.017-.29-.052-.087-.035-.165-.088-.235-.158-.14-.14-.22-.333-.22-.533 0-.11.02-.188.074-.348.16-.472.55-.896 1.056-1.17.577-.327.84-.558.84-1.07 0-.42-.357-.715-.987-.715-.496 0-.996.218-1.39.52-.26.2-.62.202-.858-.02l-.05-.05c-.313-.29-.27-.787.075-1.04.603-.444 1.394-.753 2.4-.753zM8 13.25c-2.895 0-5.25-2.355-5.25-5.25S5.105 2.75 8 2.75 13.25 5.105 13.25 8 10.895 13.25 8 13.25M8 1C4.14 1 1 4.14 1 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7"
 			}))
@@ -1701,12 +1785,12 @@
 		"./src/reddit/icons/svgs/Smile/index.tsx": function(e, t, o) {
 			"use strict";
 			var s = o("./node_modules/react/index.js"),
-				i = o.n(s);
-			t.a = e => i.a.createElement("svg", {
+				n = o.n(s);
+			t.a = e => n.a.createElement("svg", {
 				className: e.className,
 				xmlns: "http://www.w3.org/2000/svg",
 				viewBox: "0 0 20 20"
-			}, i.a.createElement("path", {
+			}, n.a.createElement("path", {
 				fill: "inherit",
 				fillRule: "evenodd",
 				d: "M13 9.0074c-.777 0-1.406-.63-1.406-1.406 0-.777.629-1.407 1.406-1.407.777 0 1.406.63 1.406 1.407 0 .776-.629 1.406-1.406 1.406m-3 5.581c-2.206 0-4-1.57-4-3.5 0-.276.224-.5.5-.5h7c.276 0 .5.224.5.5 0 1.93-1.794 3.5-4 3.5m-3-8.394c.777 0 1.406.63 1.406 1.407 0 .776-.629 1.406-1.406 1.406-.777 0-1.406-.63-1.406-1.406 0-.777.629-1.407 1.406-1.407m3-4.194c-4.411 0-8 3.588-8 8 0 4.411 3.589 8 8 8s8-3.589 8-8c0-4.412-3.589-8-8-8"
@@ -1717,17 +1801,17 @@
 			o.d(t, "d", (function() {
 				return s
 			})), o.d(t, "a", (function() {
-				return i
-			})), o.d(t, "b", (function() {
 				return n
+			})), o.d(t, "b", (function() {
+				return i
 			})), o.d(t, "c", (function() {
 				return r
 			})), o.d(t, "e", (function() {
 				return a
 			}));
 			const s = 24,
-				i = 64e3,
-				n = 128,
+				n = 64e3,
+				i = 128,
 				r = 128,
 				a = (e, t, o, s) => ({
 					name: e,
@@ -1753,19 +1837,19 @@
 			}));
 			o("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = o("./node_modules/lodash/values.js"),
-				i = o.n(s),
-				n = o("./node_modules/reselect/es/index.js"),
+				n = o.n(s),
+				i = o("./node_modules/reselect/es/index.js"),
 				r = o("./src/reddit/models/Flair/index.ts"),
 				a = o("./src/reddit/selectors/isModeratorOfSubreddit.ts"),
 				c = o("./src/reddit/selectors/subreddit.ts");
 			const l = [],
 				d = e => e.emojis.models,
-				p = Object(n.a)(d, (e, t) => t.subredditId, (e, t) => {
+				p = Object(i.a)(d, (e, t) => t.subredditId, (e, t) => {
 					const o = e[t];
-					return o ? [...i()(o.emojis), ...i()(o.snoomojis)] : l
+					return o ? [...n()(o.emojis), ...n()(o.snoomojis)] : l
 				}),
-				m = Object(n.a)(p, a.c, (e, t) => t.isFlairModOnly, (e, t) => t.flairTemplateType, (e, t, o, s) => e.filter(e => !(e.modFlairOnly && !t || e.modFlairOnly && !o) && (!(!e.userFlairAllowed && s === r.d.UserFlair) && !(!e.postFlairAllowed && s === r.d.LinkFlair)))),
-				u = Object(n.a)(d, (e, t) => t.subredditId, (e, t) => Object.keys(e[t].snoomojis)),
+				m = Object(i.a)(p, a.c, (e, t) => t.isFlairModOnly, (e, t) => t.flairTemplateType, (e, t, o, s) => e.filter(e => !(e.modFlairOnly && !t || e.modFlairOnly && !o) && (!(!e.userFlairAllowed && s === r.d.UserFlair) && !(!e.postFlairAllowed && s === r.d.LinkFlair)))),
+				u = Object(i.a)(d, (e, t) => t.subredditId, (e, t) => Object.keys(e[t].snoomojis)),
 				h = (e, t) => Object(c.u)(e, {
 					subredditName: t
 				}).emojisEnabled,
@@ -1780,4 +1864,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.a42c41799e242d67f4f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.b2a8031430b8b77e9463.js.map

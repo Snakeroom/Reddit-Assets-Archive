@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.4674317e4ed9848a7158.js
-// Retrieved at 3/10/2022, 5:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.64679f681dc408bee748.js
+// Retrieved at 3/14/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -517,6 +517,39 @@
 			n("./src/lib/logs/console.ts");
 			t.a = function(e, t) {
 				return t => r.a.createElement(e, t)
+			}
+		},
+		"./src/lib/FocusTrap/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			})), n.d(t, "b", (function() {
+				return r
+			}));
+			const o = ['input:not([type="hidden"]):not([disabled])', "select:not([disabled])", "textarea:not([disabled])", "a[href]", "button:not([disabled])", '[tabindex]:not([tabindex="-1"]):not([disabled])', "audio[controls]", "video[controls]", '[contenteditable]:not([contenteditable="false"])'].join();
+			class r {
+				constructor(e) {
+					this.active = !1, this.onKeyDown = e => {
+						if ("Tab" === e.key || 9 === e.keyCode) {
+							const [t, n] = this.getTabbableNodes();
+							if (!t || !n) return;
+							e.shiftKey && e.target === t ? (e.preventDefault(), this.tryToFocusNode(n)) : e.shiftKey || e.target !== n || (e.preventDefault(), this.tryToFocusNode(t))
+						}
+					}, this.container = e
+				}
+				activate() {
+					this.active || (this.active = !0, document.addEventListener("keydown", this.onKeyDown, !0))
+				}
+				deactivate() {
+					this.active && (document.removeEventListener("keydown", this.onKeyDown, !0), this.active = !1)
+				}
+				getTabbableNodes() {
+					const e = this.container.querySelectorAll(o);
+					return [e[0], e[e.length - 1]]
+				}
+				tryToFocusNode(e) {
+					e !== document.activeElement && e.focus && e.focus()
+				}
 			}
 		},
 		"./src/lib/LinkedListMap/index.ts": function(e, t, n) {
@@ -14965,6 +14998,81 @@
 				return r
 			}))
 		},
+		"./src/reddit/helpers/dom/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "g", (function() {
+				return i
+			})), n.d(t, "f", (function() {
+				return c
+			})), n.d(t, "d", (function() {
+				return d
+			})), n.d(t, "h", (function() {
+				return l
+			})), n.d(t, "c", (function() {
+				return u
+			})), n.d(t, "b", (function() {
+				return m
+			})), n.d(t, "e", (function() {
+				return p
+			})), n.d(t, "a", (function() {
+				return h
+			}));
+			var o = n("./node_modules/lodash/map.js"),
+				r = n.n(o),
+				s = n("./src/lib/FocusTrap/index.ts");
+			const a = e => "INPUT" === e.tagName.toUpperCase() || "TEXTAREA" === e.tagName.toUpperCase() || "DIV" === e.tagName.toUpperCase() && e.isContentEditable,
+				i = e => {
+					let t = e;
+					do {
+						if (a(t)) return !0
+					} while (t = t.parentElement);
+					return !1
+				},
+				c = () => {
+					const e = document.getSelection();
+					return !!e && (e.rangeCount > 0 && e.getRangeAt(0).toString().length > 0)
+				},
+				d = () => c() ? (() => {
+					const e = document.getSelection();
+					if (!e) return [];
+					const t = e.getRangeAt(0).cloneContents().childNodes;
+					return r()(t, e => e.textContent || "")
+				})() : null,
+				l = (e, t) => {
+					const n = document.createRange();
+					return n.selectNode(t), e.compareBoundaryPoints(Range.END_TO_START, n) < 0 && e.compareBoundaryPoints(Range.START_TO_END, n) > 0
+				},
+				u = e => {
+					const t = window.getSelection();
+					if (1 !== t.rangeCount) return;
+					const n = t.getRangeAt(0);
+					if (!l(n, e)) return;
+					const {
+						startContainer: o,
+						startOffset: r,
+						endContainer: s,
+						endOffset: a
+					} = n, i = document.createRange();
+					i.selectNode(e);
+					let c = !0;
+					if (-1 === i.compareBoundaryPoints(Range.START_TO_START, n) && (i.setStart(o, r), c = !1), 1 === i.compareBoundaryPoints(Range.END_TO_END, n) && (i.setEnd(s, a), c = !1), c) return [e];
+					const d = document.createElement("div");
+					return d.appendChild(i.cloneContents()), [...d.childNodes]
+				},
+				m = (e, t, n) => {
+					let o = e;
+					for (; o && (!n || !n(o));) {
+						if (o && t(o)) return o;
+						o = o.parentElement
+					}
+				},
+				p = e => e && e.parentElement && m(e.parentElement, e => "static" !== window.getComputedStyle(e).getPropertyValue("position")),
+				h = e => {
+					e.querySelectorAll(s.a).forEach(e => {
+						e.tabIndex = -1
+					})
+				}
+		},
 		"./src/reddit/helpers/dragDropContext/index.ts": function(e, t, n) {
 			"use strict";
 			var o = n("./node_modules/react-dnd/lib/index.js"),
@@ -25550,4 +25658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.4674317e4ed9848a7158.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.64679f681dc408bee748.js.map
