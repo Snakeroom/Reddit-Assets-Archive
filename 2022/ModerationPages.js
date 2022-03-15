@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.368d4665b70045c3c27e.js
-// Retrieved at 3/15/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.899d242646792c03ca37.js
+// Retrieved at 3/15/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -1107,7 +1107,7 @@
 					if (s) return;
 					a || n && !s || await t(Object(T.subredditDataRequested)(e, k, {}))
 				} else _ && await t(Object(P.e)(_));
-				if (!Object(fe.O)(n()) && C !== o.fc.Moderators && C !== o.fc.SubredditRules && C !== o.fc.Contributors) return void Object(m.a)(t, n());
+				if (!Object(fe.O)(n()) && C !== o.fc.SubredditRules && C !== o.fc.Contributors) return void Object(m.a)(t, n());
 				if (Object(p.i)(n(), !0, k, _), !C) return;
 				let G, K, Q, X, J, Y, Z, $, ee, te = !1;
 				switch (C) {
@@ -15939,7 +15939,7 @@
 						hk: "1LM0MR"
 					}))), o.length, "/", _.c))), o.length > 0 ? o.map((e, t) => r.a.createElement(Y, {
 						index: t,
-						key: e.title,
+						key: e.id,
 						onEdit: this.onEditReason(e),
 						removalReason: e
 					})) : r.a.createElement(h.c, {
@@ -23657,4 +23657,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.368d4665b70045c3c27e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.899d242646792c03ca37.js.map
