@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a602f35081f98d2ec766.js
-// Retrieved at 3/15/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3581492eeb93afbfc16d.js
+// Retrieved at 3/15/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("160189"),
+				buildNumber: Object(r.c)("160193"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1647376948"),
+				buildTimestamp: Object(r.b)("1647378450"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6034,14 +6034,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cc55821884fa7a578d5ba401cc7fc86cb8e2a0dc0-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c2d834b6565f3b1296f433d1c989ec59c65db0897-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "c55821884fa7a578d5ba401cc7fc86cb8e2a0dc0-production",
+						release: "2d834b6565f3b1296f433d1c989ec59c65db0897-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6558,7 +6558,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "c55821884fa7a578d5ba401cc7fc86cb8e2a0dc0-production",
+						releaseClient: "2d834b6565f3b1296f433d1c989ec59c65db0897-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -26121,7 +26121,7 @@
 			};
 			var p;
 			! function(e) {
-				e.COMMENT = "comment", e.HEARTBEAT = "heartbeat", e.PEOPLE = "people", e.RECENT = "recent_search", e.SUBREDDIT = "subreddit", e.TRENDING = "trending_search", e.TYPEAHEAD = "typeahead", e.QUERY_PROMPT = "query_prompt", e.SUBREDDIT_SEARCH = "subreddit_search"
+				e.COMMENT = "comment", e.HEARTBEAT = "heartbeat", e.NSFW = "nsfw", e.PEOPLE = "people", e.RECENT = "recent_search", e.SUBREDDIT = "subreddit", e.TRENDING = "trending_search", e.TYPEAHEAD = "typeahead", e.QUERY_PROMPT = "query_prompt", e.SUBREDDIT_SEARCH = "subreddit_search"
 			}(p || (p = {}));
 			const h = {
 					subreddit: p.SUBREDDIT,
@@ -26159,7 +26159,7 @@
 				}),
 				w = (e, t) => i => ({
 					action: s.c.CLICK,
-					actionInfo: c.d(i),
+					actionInfo: F(i, null, c.b.SearchDropdown, null),
 					noun: e,
 					metaSearch: c.D(t),
 					screen: c.ab(i),
@@ -26170,10 +26170,7 @@
 					source: m.SEARCH,
 					action: s.c.CLICK,
 					noun: p.RECENT,
-					actionInfo: c.d(n, {
-						paneName: "subreddit_dropdown",
-						position: i + 1
-					}),
+					actionInfo: F(n, null, c.b.SearchDropdown, i),
 					search: {
 						query: e,
 						originPageType: n.platform.currentPage ? c.v(n.platform.currentPage) : void 0,
@@ -26188,9 +26185,7 @@
 						source: m.SEARCH,
 						action: s.c.CLICK,
 						noun: p.TYPEAHEAD,
-						actionInfo: c.d(r, {
-							position: i + 1
-						}),
+						actionInfo: F(r, null, c.b.SearchDropdown, i),
 						search: {
 							query: t.displayInfo && t.displayInfo.subredditOrProfileName ? t.displayInfo.subredditOrProfileName : e,
 							originPageType: r.platform.currentPage ? c.v(r.platform.currentPage) : void 0,
@@ -26230,13 +26225,17 @@
 					}),
 					search: c.bb(i, t, d.a.SERP)
 				}),
-				O = (e, t) => i => ({
-					action: s.c.CLICK,
-					correlationId: Object(o.c)(o.a.SearchResults),
-					noun: e ? n.Zb.ToSubreddit : n.Zb.ToGlobal,
-					search: c.bb(i, t, d.a.SERP),
-					source: m.SEARCH
-				});
+				O = (e, t) => i => {
+					const r = c.G(i, null);
+					return {
+						action: s.c.CLICK,
+						actionInfo: F(i, null, r, null),
+						correlationId: Object(o.c)(o.a.SearchResults),
+						noun: e ? n.Zb.ToSubreddit : n.Zb.ToGlobal,
+						search: c.bb(i, t, d.a.SERP),
+						source: m.SEARCH
+					}
+				};
 			var I;
 			! function(e) {
 				e.POST = "post", e.POST_AUTHOR = "post_author", e.POST_COMMUNITY = "post_community", e.POST_TIMESTAMP = "post_timestamp"
@@ -46900,4 +46899,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a602f35081f98d2ec766.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3581492eeb93afbfc16d.js.map
