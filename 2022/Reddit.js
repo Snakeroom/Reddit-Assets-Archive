@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.ab6144232072f3e06dde.js
-// Retrieved at 3/15/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.bcfb06ebee89ed1e28eb.js
+// Retrieved at 3/15/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -5416,13 +5416,13 @@
 							structureType: n,
 							searchQuery: z
 						};
-						_(Object(ir.t)(s, o))
+						_(Object(ir.u)(s, o))
 					},
 					de = (e, t, n) => {
-						_(Object(ir.v)(e, t, n))
+						_(Object(ir.w)(e, t, n))
 					},
 					le = (e, t, n, s) => {
-						_(Object(ir.x)(e, t, n, s))
+						_(Object(ir.y)(e, t, n, s))
 					},
 					ue = e => {
 						const t = d[e] || null,
@@ -5486,7 +5486,7 @@
 								},
 								l = {},
 								u = !0;
-							if (x && x.searchQuery === z ? ((c = x).id || (c.id = Go()()), c.section === dr.c.recent ? de(o, c, i) : c.section === dr.c.typeahead ? (l = Object(er.b)(), u = !1, le(o, c, i, d.filter(e => e.isSubreddit))) : ce(o, o, rt.c.Search, ir.a.RECENT)) : (c = be(o), _(Object(ir.m)(rt.a.FullSearchButton, Object(Ho.e)({
+							if (x && x.searchQuery === z ? ((c = x).id || (c.id = Go()()), c.section === dr.c.recent ? de(o, c, i) : c.section === dr.c.typeahead ? (l = Object(er.b)(), u = !1, le(o, c, i, d.filter(e => e.isSubreddit))) : ce(o, o, rt.c.Search, ir.a.RECENT)) : (c = be(o), _(Object(ir.n)(rt.a.FullSearchButton, Object(Ho.e)({
 									q: z
 								}), F, br.a.Typeahead, n || void 0))), re(c), te(u), !c.searchQuery) return;
 							const m = Object(or.a)({
@@ -5501,7 +5501,7 @@
 						})(e)
 					},
 					onFocusSearchBar: () => {
-						Object(bo.c)(bo.a.SearchResults) || Object(bo.e)(bo.a.SearchResults), pr.a.update(br.a.Typeahead), _(Object(ir.m)(rt.a.SearchBar, X, F, br.a.Typeahead, n || void 0)), N || ((() => S(Object(Wo.l)()))(), _(Object(ar.u)(X, null != n ? n : void 0, Object(lr.b)({
+						Object(bo.c)(bo.a.SearchResults) || Object(bo.e)(bo.a.SearchResults), pr.a.update(br.a.Typeahead), _(Object(ir.n)(rt.a.SearchBar, X, F, br.a.Typeahead, n || void 0)), N || ((() => S(Object(Wo.l)()))(), _(Object(ar.u)(X, null != n ? n : void 0, Object(lr.b)({
 							pageLayer: n
 						})))), pe(z)
 					},
@@ -5515,7 +5515,7 @@
 							if (e.preventDefault(), 0 === d.length || !N) return;
 							if (-1 === i) return;
 							ue(i - 1)
-						} else e.key === po.b.Backspace && !z && F && R && (_(() => Object(ir.f)(U)), (() => S(Object(Wo.j)()))())
+						} else e.key === po.b.Backspace && !z && F && R && (_(() => Object(ir.g)(U)), (() => S(Object(Wo.j)()))())
 					},
 					showCommunityPill: F,
 					subreddit: U
@@ -17980,4 +17980,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "AuthorHovercard~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ab6144232072f3e06dde.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.bcfb06ebee89ed1e28eb.js.map

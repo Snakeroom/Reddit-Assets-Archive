@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.6226a914770c9b9e70b8.js
-// Retrieved at 3/15/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.092d7aa3ac818c9dcb8c.js
+// Retrieved at 3/15/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -5403,7 +5403,7 @@
 							searchQuery: r.searchQuery,
 							structureType: _.c.Search
 						};
-					j(Object(h.u)(e, t, i))
+					j(Object(h.v)(e, t, i))
 				}, []);
 				return a.a.createElement(o.a, {
 					"aria-label": r.searchQuery,
@@ -5539,7 +5539,7 @@
 						searchQuery: p.searchQuery,
 						structureType: S.c.Recent
 					};
-					k(Object(I.u)(I.a.RECENT, e, v))
+					k(Object(I.v)(I.a.RECENT, e, v))
 				}, []);
 				const M = e => e.subredditOrProfileRestrictedName ? `${e.subredditOrProfileRestrictedName} ${e.searchQuery}` : e.searchQuery,
 					{
@@ -5769,10 +5769,10 @@
 						restrict_sr: E ? "1" : ""
 					};
 				return Object(s.useEffect)(() => {
-					p(Object(I.q)(C, E, r, f || void 0))
+					p(Object(I.r)(C, E, r, f || void 0))
 				}, []), n.a.createElement(i.a, {
 					onClick: function(e) {
-						p(Object(I.m)(S.a.FullSearchButton, C, E, U.a.Typeahead, f || void 0)), c(e)
+						p(Object(I.n)(S.a.FullSearchButton, C, E, U.a.Typeahead, f || void 0)), c(e)
 					},
 					to: {
 						pathname: P,
@@ -7419,7 +7419,14 @@
 				A = (e, t, r, s, n, a, o) => {
 					Object(m.a)({
 						...b.o(e),
-						...Object(d.j)(e, r, s, n, a, t),
+						...Object(d.k)({
+							state: e,
+							postId: r,
+							searchOptions: s,
+							pageLayer: n,
+							key: a,
+							discoveryUnit: t
+						}),
 						action: c.c.VIEW,
 						noun: o ? "ad" : "post"
 					})
@@ -7448,8 +7455,15 @@
 						post: b.I(a, t)
 					}
 				},
-				x = (e, t, r, s) => n => a => Object(d.j)(a, n, e, t, r, s),
-				U = (e, t, r, s) => n => a => Object(d.h)({
+				x = (e, t, r, s) => n => a => Object(d.k)({
+					state: a,
+					postId: n,
+					searchOptions: e,
+					pageLayer: t,
+					key: r,
+					discoveryUnit: s
+				}),
+				U = (e, t, r, s) => n => a => Object(d.i)({
 					action: c.c.CLICK,
 					state: a,
 					searchOptions: e,
@@ -7460,7 +7474,14 @@
 					discoveryUnit: s
 				}),
 				M = (e, t, r, s) => n => a => ({
-					...Object(d.j)(a, n, e, t, r, s),
+					...Object(d.k)({
+						state: a,
+						postId: n,
+						searchOptions: e,
+						pageLayer: t,
+						key: r,
+						discoveryUnit: s
+					}),
 					noun: "ad"
 				}),
 				G = (e, t) => r => n => ({
@@ -25464,4 +25485,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6226a914770c9b9e70b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.092d7aa3ac818c9dcb8c.js.map

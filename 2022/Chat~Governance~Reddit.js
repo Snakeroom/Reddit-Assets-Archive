@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.49b62fb4fe6d492594ae.js
-// Retrieved at 3/15/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fa33de47c8cebc5b13e9.js
+// Retrieved at 3/15/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("160140"),
+				buildNumber: Object(r.c)("160149"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1647368294"),
+				buildTimestamp: Object(r.b)("1647370108"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6034,14 +6034,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cd882ed91519136683d1cbd767b192c18b65ec420-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %caceb848ab66d421496425f468baea398d0064f98-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "d882ed91519136683d1cbd767b192c18b65ec420-production",
+						release: "aceb848ab66d421496425f468baea398d0064f98-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6558,7 +6558,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "d882ed91519136683d1cbd767b192c18b65ec420-production",
+						releaseClient: "aceb848ab66d421496425f468baea398d0064f98-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -25407,7 +25407,7 @@
 						source: m.c.GLOBAL,
 						action: s.c.VIEW,
 						noun: m.a.HEARTBEAT,
-						actionInfo: Object(m.i)(h, null, R, null),
+						actionInfo: Object(m.j)(h, null, R, null),
 						comment: y ? u.j(h, y) : void 0,
 						post: u.I(h, E),
 						profile: u.V(h, S),
@@ -26056,50 +26056,52 @@
 				return m
 			})), i.d(t, "a", (function() {
 				return p
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "f", (function() {
 				return f
-			})), i.d(t, "s", (function() {
-				return b
-			})), i.d(t, "u", (function() {
-				return g
 			})), i.d(t, "t", (function() {
-				return w
+				return b
 			})), i.d(t, "v", (function() {
+				return g
+			})), i.d(t, "u", (function() {
+				return w
+			})), i.d(t, "w", (function() {
 				return v
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "y", (function() {
 				return y
 			})), i.d(t, "b", (function() {
 				return S
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "l", (function() {
 				return T
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "x", (function() {
 				return O
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "d", (function() {
 				return I
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "q", (function() {
 				return R
 			})), i.d(t, "j", (function() {
 				return F
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "k", (function() {
 				return N
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "p", (function() {
 				return C
-			})), i.d(t, "h", (function() {
-				return A
-			})), i.d(t, "g", (function() {
+			})), i.d(t, "o", (function() {
+				return j
+			})), i.d(t, "i", (function() {
 				return x
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "h", (function() {
 				return D
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "s", (function() {
 				return P
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "e", (function() {
 				return L
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "g", (function() {
 				return k
 			})), i.d(t, "m", (function() {
 				return B
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "n", (function() {
 				return M
+			})), i.d(t, "r", (function() {
+				return U
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/reddit/constants/posts.ts"),
@@ -26131,7 +26133,14 @@
 					}
 				},
 				b = (e, t, i, n, r) => s => ({
-					...F(s, e, t, r, n, i),
+					...N({
+						state: s,
+						postId: e,
+						searchOptions: t,
+						pageLayer: r,
+						key: n,
+						discoveryUnit: i
+					}),
 					noun: "ad"
 				}),
 				g = (e, t, i) => n => ({
@@ -26225,9 +26234,21 @@
 					noun: e ? n.Zb.ToSubreddit : n.Zb.ToGlobal,
 					search: c.bb(i, t, d.a.SERP),
 					source: m.SEARCH
+				});
+			var I;
+			! function(e) {
+				e.POST = "post", e.POST_AUTHOR = "post_author", e.POST_COMMUNITY = "post_community", e.POST_TIMESTAMP = "post_timestamp"
+			}(I || (I = {}));
+			const R = (e, t, i, n, r, s) => o => N({
+					state: o,
+					postId: e,
+					searchOptions: t,
+					pageLayer: i,
+					originElement: n,
+					key: r,
+					discoveryUnit: s
 				}),
-				I = (e, t, i, n, r) => s => F(s, e, t, i, n, r),
-				R = (e, t, i, n) => {
+				F = (e, t, i, n) => {
 					var r;
 					const s = null !== (r = null != t ? t : e.platform.currentPage) && void 0 !== r ? r : void 0;
 					return {
@@ -26236,25 +26257,36 @@
 						position: n
 					}
 				},
-				F = (e, t, i, n, r, o) => {
-					const a = c.G(e, n),
-						l = j(e, t, r, o),
-						u = c.f(e, i, r, o, a),
-						_ = null !== l ? u + l : null;
+				N = ({
+					state: e,
+					postId: t,
+					searchOptions: i,
+					pageLayer: n,
+					originElement: r,
+					key: o,
+					discoveryUnit: a
+				}) => {
+					const l = c.G(e, n),
+						u = A(e, t, o, a),
+						_ = c.f(e, i, o, a, l),
+						p = null !== u ? _ + u : null;
 					return {
 						source: m.SEARCH,
 						action: s.c.CLICK,
 						noun: "post",
-						actionInfo: R(e, n, a, _),
-						search: c.bb(e, i, d.a.SERP, !0, n || void 0),
+						actionInfo: F(e, n, l, p),
+						search: {
+							...c.bb(e, i, d.a.SERP, !0, n || void 0),
+							originElement: r
+						},
 						post: c.I(e, t),
 						userPreferences: {
 							hideNsfw: !e.user.prefs.over18
 						},
-						discoveryUnit: o ? c.p(o) : null
+						discoveryUnit: a ? c.p(a) : null
 					}
 				},
-				N = (e, t, i, n, r, o) => d => A({
+				C = (e, t, i, n, r, o) => d => x({
 					action: s.c.CLICK,
 					state: d,
 					searchOptions: e,
@@ -26264,14 +26296,14 @@
 					postId: r,
 					discoveryUnit: o
 				}),
-				C = ({
+				j = ({
 					comment: e,
 					key: t,
 					originElement: i,
 					pageLayer: n,
 					postId: r,
 					searchOptions: o
-				}) => d => x({
+				}) => d => D({
 					action: s.c.CLICK,
 					comment: e,
 					key: t,
@@ -26281,11 +26313,11 @@
 					searchOptions: o,
 					state: d
 				}),
-				j = (e, t, i, n) => {
+				A = (e, t, i, n) => {
 					var r;
 					return (null === (r = null == n ? void 0 : n.layout) || void 0 === r ? void 0 : r.viewTypeWeb) === a.b.Hero ? 0 : (null == n ? void 0 : n.postOrder) ? n.postOrder.indexOf(t) >= 0 ? n.postOrder.indexOf(t) : null : i ? c.x(e, t, i) : null
 				},
-				A = ({
+				x = ({
 					action: e,
 					state: t,
 					searchOptions: i,
@@ -26303,7 +26335,7 @@
 					const _ = c.G(t, n);
 					let p;
 					if (a) {
-						const e = j(t, a, o, l),
+						const e = A(t, a, o, l),
 							n = c.f(t, i, o, l, _);
 						p = null !== e ? n + e : null
 					} else p = o ? c.y(t, s, o) : null;
@@ -26323,11 +26355,11 @@
 							hideNsfw: !t.user.prefs.over18
 						},
 						discoveryUnit: l ? c.p(l) : null,
-						actionInfo: R(t, n, _, p),
+						actionInfo: F(t, n, _, p),
 						post: a ? c.I(t, a) : void 0
 					}
 				},
-				x = ({
+				D = ({
 					action: e,
 					comment: t,
 					key: i,
@@ -26359,18 +26391,25 @@
 						userPreferences: {
 							hideNsfw: !o.user.prefs.over18
 						},
-						actionInfo: R(o, r, f, i ? c.u(o, t.id, i) : null),
+						actionInfo: F(o, r, f, i ? c.u(o, t.id, i) : null),
 						comment: c.j(o, t),
 						profile: c.V(o, t.authorId),
 						post: c.I(o, t.postId),
 						subreddit: c.jb(o, t.subredditId)
 					}
 				},
-				D = (e, t, i, n, r) => o => ({
-					...F(o, t, i, n, e, r),
+				P = (e, t, i, n, r) => o => ({
+					...N({
+						state: o,
+						postId: t,
+						searchOptions: i,
+						pageLayer: n,
+						key: e,
+						discoveryUnit: r
+					}),
 					action: s.c.VIEW
 				}),
-				P = (e, t) => i => ({
+				L = (e, t) => i => ({
 					...f(i, t),
 					source: m.SEARCH,
 					action: e,
@@ -26379,7 +26418,7 @@
 					actionInfo: c.d(i),
 					search: c.bb(i, t, d.a.SERP)
 				}),
-				L = e => ({
+				k = e => ({
 					action: s.c.DISABLE,
 					noun: p.SUBREDDIT_SEARCH,
 					source: m.SEARCH,
@@ -26391,7 +26430,7 @@
 					}
 				});
 
-			function k(e, t) {
+			function B(e, t) {
 				return i => ({
 					...f(i, t),
 					source: m.SEARCH,
@@ -26403,7 +26442,7 @@
 				})
 			}
 
-			function B(e, t, i, n, r) {
+			function M(e, t, i, n, r) {
 				return o => ({
 					...f(o),
 					source: m.SEARCH,
@@ -26414,7 +26453,7 @@
 				})
 			}
 
-			function M(e, t, i, n) {
+			function U(e, t, i, n) {
 				return r => ({
 					...f(r),
 					source: m.SEARCH,
@@ -46859,4 +46898,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.49b62fb4fe6d492594ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fa33de47c8cebc5b13e9.js.map
