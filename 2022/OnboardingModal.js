@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.691d00f6780ac7bcf71e.js
-// Retrieved at 3/15/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.37fffd5eb9fac1bfc203.js
+// Retrieved at 3/15/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -372,7 +372,7 @@
 			const L = e => {
 				const t = Object(w.c)(e, {
 					experimentEligibilitySelector: w.a,
-					experimentName: b.Hb
+					experimentName: b.Ib
 				});
 				return !!Object(R.a)(t)
 			};
@@ -408,7 +408,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.tf)(p),
+						includeInterestTopics: !!p && !Object(b.uf)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: h && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -3812,8 +3812,8 @@
 			const a = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.xc
-				}) === r.Yc
+					experimentName: r.yc
+				}) === r.Zc
 			}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -3948,4 +3948,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.691d00f6780ac7bcf71e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.37fffd5eb9fac1bfc203.js.map

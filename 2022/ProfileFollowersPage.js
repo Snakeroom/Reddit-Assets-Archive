@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f4c0e2c9eadbc0948bce.js
-// Retrieved at 3/15/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.63f79586169d95c3f314.js
+// Retrieved at 3/15/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -306,7 +306,7 @@
 					pending: H
 				});
 			const D = {};
-			var V = (e = D, t) => {
+			var z = (e = D, t) => {
 				switch (t.type) {
 					case M.b: {
 						const {
@@ -334,8 +334,8 @@
 						return e
 				}
 			};
-			const z = {};
-			var K = (e = z, t) => {
+			const V = {};
+			var K = (e = V, t) => {
 					switch (t.type) {
 						case M.b:
 						case A.b: {
@@ -377,7 +377,7 @@
 				},
 				Q = Object(F.c)({
 					api: W,
-					fetchedTokens: V,
+					fetchedTokens: z,
 					ids: K,
 					loadMore: Z
 				});
@@ -954,7 +954,7 @@
 						return e
 				}
 			};
-			var V = (e = !1, t) => {
+			var z = (e = !1, t) => {
 					switch (t.type) {
 						case S.r:
 							return !0;
@@ -965,9 +965,9 @@
 							return e
 					}
 				},
-				z = Object(j.c)({
+				V = Object(j.c)({
 					error: D,
-					pending: V
+					pending: z
 				});
 			var K = (e = null, t) => {
 					switch (t.type) {
@@ -983,7 +983,7 @@
 					}
 				},
 				G = Object(j.c)({
-					api: z,
+					api: V,
 					result: K
 				});
 			const q = {};
@@ -1387,8 +1387,8 @@
 				H = s("./src/reddit/icons/svgs/Admin/index.tsx"),
 				W = s("./src/reddit/icons/svgs/Premium/index.tsx"),
 				D = s("./src/reddit/models/Gold/Award.ts"),
-				V = s("./src/reddit/models/User/index.ts"),
-				z = s("./src/reddit/components/HumanDate/index.tsx"),
+				z = s("./src/reddit/models/User/index.ts"),
+				V = s("./src/reddit/components/HumanDate/index.tsx"),
 				K = s("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				G = s("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
 				q = s("./src/reddit/actions/modal.ts"),
@@ -1541,7 +1541,7 @@
 					})
 				}), e.user.isGold && n.a.createElement(N.a, {
 					to: "/premium"
-				}, n.a.createElement(pe, null))), n.a.createElement(be, null, n.a.createElement(fe, null, `u/${e.userName}`, n.a.createElement(ve, null, "•")), n.a.createElement(fe, null, (e.user.createdUtc || e.user.created) && n.a.createElement(z.d, {
+				}, n.a.createElement(pe, null))), n.a.createElement(be, null, n.a.createElement(fe, null, `u/${e.userName}`, n.a.createElement(ve, null, "•")), n.a.createElement(fe, null, (e.user.createdUtc || e.user.created) && n.a.createElement(V.d, {
 					seconds: e.user.createdUtc || e.user.created
 				})))),
 				Ne = e => {
@@ -1615,7 +1615,7 @@
 					if (!g) return n.a.createElement(_e, {
 						style: b
 					});
-					const w = !!o && Object(V.e)(o) === x,
+					const w = !!o && Object(z.e)(o) === x,
 						S = !!(null == o ? void 0 : o.snoovatarFullBodyAsset),
 						N = g.accountIcon || `${j.a.assetPath}/img/snoo_user_placeholder.png`,
 						k = null == u ? void 0 : u.flair,
@@ -3199,8 +3199,8 @@
 				H = s("./src/reddit/components/Scroller/Simple.m.less"),
 				W = s.n(H);
 			const D = R.g,
-				V = 5 * p.K,
-				z = 3,
+				z = 5 * p.K,
+				V = 3,
 				K = Object(m.c)({
 					isOverlayOpen: L.i
 				}),
@@ -3433,7 +3433,7 @@
 									cb: t,
 									args: [!1]
 								}))
-							}), this.itemsInViewport = n, this.canFocusItems = t, this.focusedChild = i, this.primaryChild = o, this.measurementsInvalid = !1, this.needsToPauseViewportItems = !1, t ? null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(u.requestIdleCallback)(this.unmountItemsWhileIdle)) : (this.resetCanFocusTimer = setTimeout(this.resetScrollFramerateAndFocus, V), null !== this.unmountItemsIdleId && (Object(u.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)), this.props.onScroll && this.props.onScroll({
+							}), this.itemsInViewport = n, this.canFocusItems = t, this.focusedChild = i, this.primaryChild = o, this.measurementsInvalid = !1, this.needsToPauseViewportItems = !1, t ? null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(u.requestIdleCallback)(this.unmountItemsWhileIdle)) : (this.resetCanFocusTimer = setTimeout(this.resetScrollFramerateAndFocus, z), null !== this.unmountItemsIdleId && (Object(u.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)), this.props.onScroll && this.props.onScroll({
 								getVisibleItemsInViewport: () => this.getItemsInViewportWithFilter(this.visibleChildRefFilter),
 								primaryChild: this.primaryChild ? this.childMap.get(this.primaryChild) : void 0
 							}), this.timeoutForUpdateIdleCallback = 4 * ie, this.schedulePopulateRenderableChildrenWhenIdle(), this.pendingScollHandlerRead = null
@@ -3447,7 +3447,7 @@
 								const r = this.getChildRectangle(s);
 								r && this.elementIsUnmountable(r) && s.loaded && t.push(s)
 							}), !t.length) return;
-						const s = Math.min(Math.ceil(e.timeRemaining() / z), t.length),
+						const s = Math.min(Math.ceil(e.timeRemaining() / V), t.length),
 							r = [];
 						for (let n = 0; n < s; n++) {
 							const e = t[n];
@@ -3524,7 +3524,7 @@
 					this.fpsMeter = this.props.trackingName ? O({
 						fn: this.handleScroll,
 						subscriber: this.sendFPSData,
-						timeout: V
+						timeout: z
 					}) : E(this.handleScroll), this.scrollContainer && this.scrollContainer.addEventListener("scroll", this.fpsMeter.eventHandler), window.addEventListener("resize", this.handleResize)
 				}
 				cleanupScrollHandler() {
@@ -6195,8 +6195,8 @@
 				}) === r.w.Enabled,
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: r.yc
-				}) === r.Yc
+					experimentName: r.zc
+				}) === r.Zc
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
@@ -6247,4 +6247,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f4c0e2c9eadbc0948bce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.63f79586169d95c3f314.js.map

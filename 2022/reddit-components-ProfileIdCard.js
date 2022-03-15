@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.f00de3da87b1077e4430.js
-// Retrieved at 3/15/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.04b6ee58447940905cc7.js
+// Retrieved at 3/15/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1960,9 +1960,9 @@
 				}),
 				Z = r("./src/reddit/constants/modals.ts"),
 				q = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				Y = r("./src/reddit/helpers/styles/mixins/loading.ts"),
-				V = r("./src/reddit/models/Gold/Premium/index.ts"),
-				X = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
+				V = r("./src/reddit/helpers/styles/mixins/loading.ts"),
+				X = r("./src/reddit/models/Gold/Premium/index.ts"),
+				Y = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
 				Q = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				J = r("./src/reddit/selectors/premium.ts"),
 				$ = r("./src/reddit/components/ProfileIdCard/footer.m.less"),
@@ -1986,13 +1986,13 @@
 					isLoggedIn: k.O,
 					profile: O.j,
 					crisisFlowEnabled: Q.b,
-					chatInviteLinkSharing: X.a
+					chatInviteLinkSharing: Y.a
 				}),
 				ne = ({
 					isLoading: e,
 					...t
 				}) => a.a.createElement("div", te({}, t, {
-					className: Object(L.a)(ee.a.Shimmer, Object(Y.b)({
+					className: Object(L.a)(ee.a.Shimmer, Object(V.b)({
 						isLoading: e
 					}))
 				}));
@@ -2038,7 +2038,7 @@
 							onClickChatInviteLink: f,
 							onClickUnblockUser: b,
 							isUserBlocked: g
-						} = this.props, x = o && Object(V.d)(n, a).length && !c || a, v = U()([(c || i) && s ? {
+						} = this.props, x = o && Object(X.d)(n, a).length && !c || a, v = U()([(c || i) && s ? {
 							text: w.fbt._("Profile Moderation", null, {
 								hk: "4x1una"
 							}),
@@ -2975,13 +2975,13 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.m
-					}) === n.Yc
+					}) === n.Zc
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.n
-					}) === n.Yc
+					}) === n.Zc
 				}
 		},
 		"./src/reddit/selectors/experiments/chatInviteLinkSharing.ts": function(e, t, r) {
@@ -2995,7 +2995,7 @@
 			const o = e => Object(s.c)(e, {
 				experimentName: n.E,
 				experimentEligibilitySelector: () => Object(a.N)(e)
-			}) === n.Yc
+			}) === n.Zc
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3031,8 +3031,8 @@
 				}) === n.w.Enabled,
 				o = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.yc
-				}) === n.Yc
+					experimentName: n.zc
+				}) === n.Zc
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3058,4 +3058,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.f00de3da87b1077e4430.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.04b6ee58447940905cc7.js.map

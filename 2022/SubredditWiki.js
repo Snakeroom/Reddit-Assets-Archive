@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.3e8554949ef521270dd2.js
-// Retrieved at 3/15/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.d5af84ae4d692da8ed1f.js
+// Retrieved at 3/15/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -994,8 +994,8 @@
 				V = s("./src/reddit/featureFlags/index.ts"),
 				K = s("./src/reddit/helpers/getSubredditIcon/index.ts"),
 				J = s("./src/reddit/constants/tracking.ts");
-			var Z = s("./src/reddit/hooks/useIntersectionObserver.ts"),
-				q = s("./src/reddit/hooks/useWindowEvent.ts"),
+			var q = s("./src/reddit/hooks/useIntersectionObserver.ts"),
+				Z = s("./src/reddit/hooks/useWindowEvent.ts"),
 				Y = s("./src/reddit/selectors/experiments/joinOptimizations.ts"),
 				X = s("./src/reddit/selectors/inlineSubredditEditing.ts"),
 				Q = s("./src/reddit/selectors/subreddit.ts"),
@@ -1076,10 +1076,10 @@
 							s >= .5 ? e(!1) : s <= .001 && e(!0)
 						})
 					})(b), []);
-				Object(q.a)("resize", ((e, t, s) => () => {
+				Object(Z.a)("resize", ((e, t, s) => () => {
 					var n;
 					e(t && s ? null === (n = t.getBoundingClientRect()) || void 0 === n ? void 0 : n.height : void 0)
-				})(g, _, m)), Object(Z.a)(h, v, ie);
+				})(g, _, m)), Object(q.a)(h, v, ie);
 				const y = e.subreddit && Object(K.a)(e),
 					E = !!(e.theme && Object(l.a)(e).banner.showCommunityIcon && y),
 					k = s.charAt(0).toUpperCase() + s.slice(1),
@@ -4300,12 +4300,12 @@
 						rtJsonElementProps: i
 					});
 					switch (n) {
-						case h.Ze.SmIcon:
+						case h.af.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.Ze.SmIconHc:
+						case h.af.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4391,8 +4391,8 @@
 				K = s("./src/reddit/components/SidebarPostList/SmallPost/index.m.less"),
 				J = s.n(K);
 			const {
-				fbt: Z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = e => e.type === G.f.Nsfw || e.type === G.f.Spoiler, Y = Object(c.c)({
+				fbt: q
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = e => e.type === G.f.Nsfw || e.type === G.f.Spoiler, Y = Object(c.c)({
 				post: L.G,
 				subredditOrProfile: L.U
 			});
@@ -4422,7 +4422,7 @@
 						subredditOrProfile: r
 					} = this.props, i = {
 						post: t
-					}, o = Object(z.a)(Object(U.b)(i)), d = t.flair.filter(q);
+					}, o = Object(z.a)(Object(U.b)(i)), d = t.flair.filter(Z);
 					return a.a.createElement("div", {
 						className: Object(I.a)(J.a.container, e, {
 							[J.a.redditStyle]: s
@@ -4447,17 +4447,17 @@
 						className: J.a.meta
 					}, Object(V.h)(r) ? Object(P.d)(r.displayText || r.name) : Object(P.c)(r.displayText || r.name)), a.a.createElement("span", {
 						className: J.a.meta
-					}, Z._({
+					}, q._({
 						"*": "{score} points",
 						_1: "1 point"
-					}, [Z._plural(t.score, "score", Object(H.b)(t.score))], {
+					}, [q._plural(t.score, "score", Object(H.b)(t.score))], {
 						hk: "1JZ0qm"
 					})), a.a.createElement("span", {
 						className: J.a.meta
-					}, Z._({
+					}, q._({
 						"*": "{numComments} comments",
 						_1: "1 comment"
-					}, [Z._plural(t.numComments, "numComments", Object(H.b)(t.numComments))], {
+					}, [q._plural(t.numComments, "numComments", Object(H.b)(t.numComments))], {
 						hk: "2UbjdS"
 					}))))
 				}
@@ -4722,7 +4722,7 @@
 					communityFlairSortedKeys: (e, {
 						subredditId: t
 					}) => Object(Le.c)(e, t),
-					isInNewModuleNCPV3Experiment: e => Object(Me.a)(e) === Te.be.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Me.a)(e) === Te.ce.NewModule,
 					showGovernance: Pe.d.spPoints,
 					showLeaderboard: Pe.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, {
@@ -5846,12 +5846,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Se
+						experimentName: n.Te
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.Ze.SmIcon || t === n.Ze.SmIconHc
+					return t === n.af.SmIcon || t === n.af.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5874,4 +5874,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.3e8554949ef521270dd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.d5af84ae4d692da8ed1f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.480a57de97747ec9b07c.js
-// Retrieved at 3/15/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.400bba45d9525687556b.js
+// Retrieved at 3/15/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -340,8 +340,8 @@
 						if (function(e) {
 								return Object(_.c)(e, {
 									experimentEligibilitySelector: _.a,
-									experimentName: f.ld
-								}) === f.Yc
+									experimentName: f.md
+								}) === f.Zc
 							}(c())) {
 							const {
 								normalizeModQueueListingFromGql: e,
@@ -673,9 +673,9 @@
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "removalReasonsPending", (function() {
-				return Y
-			})), s.d(t, "removalReasonsLoaded", (function() {
 				return Z
+			})), s.d(t, "removalReasonsLoaded", (function() {
+				return Y
 			})), s.d(t, "removalReasonsFailed", (function() {
 				return X
 			})), s.d(t, "removalReasonsRequested", (function() {
@@ -927,19 +927,19 @@
 					removalReasons: k
 				}
 			});
-			const Y = Object(E.a)("REMOVALREASONS__LOAD_PENDING"),
-				Z = Object(E.a)("REMOVALREASONS__LOAD_SUCCESS"),
+			const Z = Object(E.a)("REMOVALREASONS__LOAD_PENDING"),
+				Y = Object(E.a)("REMOVALREASONS__LOAD_SUCCESS"),
 				X = Object(E.a)("REMOVALREASONS__LOAD_FAILED"),
 				ee = e => async (t, s, {
 					apiContext: o
 				}) => {
 					const n = s().subreddits.models[e].name;
-					t(Y());
+					t(Z());
 					const r = await ((e, t) => Object(T.a)(Object(w.a)(e, [Q.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: g.jb.GET
 					}))(o(), n);
-					r.ok ? t(Z({
+					r.ok ? t(Y({
 						subredditId: e,
 						response: r.body
 					})) : t(X(r.error))
@@ -1272,4 +1272,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.480a57de97747ec9b07c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.400bba45d9525687556b.js.map

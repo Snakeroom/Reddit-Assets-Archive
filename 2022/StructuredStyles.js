@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.75398b5e1667436769a1.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.212c84af9f440b25e702.js
+// Retrieved at 3/15/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -7981,9 +7981,9 @@
 							isRedditRec: m
 						} = Object(i.e)(Object(l.c)({
 							isPending: g.i,
-							hasData: g.c,
-							isChanged: g.d,
-							items: g.b,
+							hasData: g.d,
+							isChanged: g.e,
+							items: g.c,
 							isRedditRec: g.j
 						}));
 					return Object(r.useEffect)(() => {
@@ -8539,8 +8539,8 @@
 				U = n.n(W),
 				q = n("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/RecommendedSubreddits/index.tsx");
 			const z = Object(c.c)({
-				isOpenAIPilotV1: L.f,
-				shouldRenderRec: L.n
+				isOpenAIPilotV1: L.g,
+				shouldRenderRec: L.m
 			});
 			class V extends r.a.Component {
 				constructor(e) {
@@ -9613,4 +9613,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.75398b5e1667436769a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.212c84af9f440b25e702.js.map

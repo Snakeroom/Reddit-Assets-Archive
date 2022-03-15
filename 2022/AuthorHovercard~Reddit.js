@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.8fcc1abfd094abf8cfab.js
-// Retrieved at 3/15/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.a409df4ec0c4d18bccd7.js
+// Retrieved at 3/15/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -359,9 +359,9 @@
 				const r = a(),
 					l = Object(O.f)(r),
 					u = (e => Object(v.c)(e, {
-						experimentName: x.Eb,
+						experimentName: x.Fb,
 						experimentEligibilitySelector: v.a
-					}) === x.Yc)(r);
+					}) === x.Zc)(r);
 				if (await Object(s.a)() || l) return;
 				await I(r, i);
 				_.j(r), await Object(c.b)(e, t, () => {
@@ -958,8 +958,8 @@
 				}
 			}
 			var J = n("./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts"),
-				Y = n("./src/reddit/helpers/localStorage/index.ts");
-			var Z = n("./src/reddit/hooks/useInboxPrivacyPolicyBannerSeen.ts"),
+				Z = n("./src/reddit/helpers/localStorage/index.ts");
+			var Y = n("./src/reddit/hooks/useInboxPrivacyPolicyBannerSeen.ts"),
 				X = n("./src/reddit/hooks/useTracking.ts");
 
 			function $() {
@@ -1052,13 +1052,13 @@
 							userId: h
 						} = e,
 						[g, _] = function(e) {
-							const [t, n] = Object(a.useState)(Object(Y.t)(e));
+							const [t, n] = Object(a.useState)(Object(Z.t)(e));
 							return [t, Object(a.useCallback)(() => {
-								n(!0), Object(Y.Db)(e)
+								n(!0), Object(Z.Db)(e)
 							}, [])]
 						}(h),
 						[y, x] = Object(J.a)(h),
-						[v, O] = Object(Z.a)(h),
+						[v, O] = Object(Y.a)(h),
 						N = !(!l || !l.length),
 						k = Object(s.a)(),
 						I = k === r.a.Closed || k === r.a.Default || k === r.a.Denied,
@@ -2532,24 +2532,24 @@
 				a = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: i.lb
-				}) === i.fd.Karma,
+					experimentName: i.mb
+				}) === i.gd.Karma,
 				s = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: i.lb
-				}) === i.fd.Memes,
+					experimentName: i.mb
+				}) === i.gd.Memes,
 				r = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: i.lb
-				}) === i.fd.PnEmail,
+					experimentName: i.mb
+				}) === i.gd.PnEmail,
 				c = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: i.lb
-				}) === i.fd.Cats,
+					experimentName: i.mb
+				}) === i.gd.Cats,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: i.lb
-				}) === i.fd.Popular,
+					experimentName: i.mb
+				}) === i.gd.Popular,
 				l = e => d(e) || c(e) || r(e) || s(e) || o(e)
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, n) {
@@ -2596,4 +2596,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.8fcc1abfd094abf8cfab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.a409df4ec0c4d18bccd7.js.map

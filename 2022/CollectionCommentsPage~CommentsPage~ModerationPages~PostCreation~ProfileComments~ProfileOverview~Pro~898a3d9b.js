@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.c553b07f0a4f6611d502.js
-// Retrieved at 3/15/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.7cd95bda9e9665d784c5.js
+// Retrieved at 3/15/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -889,8 +889,8 @@
 					},
 					K = Object(a.e)(T.a),
 					Y = (G.isSponsored || Object(c.u)(X)) && (K === b.u.NoLockIcon || K === b.u.PromotedGrey),
-					Z = G.isRemoved && !G.modRemovalReason && !G.modNote && G.belongsTo.type === h.a.SUBREDDIT,
-					z = U("Approve", G.id, V),
+					z = G.isRemoved && !G.modRemovalReason && !G.modNote && G.belongsTo.type === h.a.SUBREDDIT,
+					Z = U("Approve", G.id, V),
 					$ = U("Archived", G.id, V),
 					Q = U("Lock", G.id, V),
 					ee = U("Mod", G.id, V),
@@ -952,11 +952,11 @@
 					isFilled: !0,
 					className: Object(d.a)(w.a.icon, w.a.approveIcon),
 					desc: Object(E.a)(G),
-					id: z,
-					onMouseEnter: J(z),
+					id: Z,
+					onMouseEnter: J(Z),
 					onMouseLeave: A
 				}), o.a.createElement(m.c, N({
-					tooltipId: z,
+					tooltipId: Z,
 					text: Object(E.a)(G)
 				}, q))), Object(f.a)(G) && o.a.createElement(r.Fragment, null, o.a.createElement(y.a, {
 					isFilled: !0,
@@ -965,7 +965,7 @@
 					id: te,
 					onMouseEnter: J(te),
 					onMouseLeave: A
-				}), Z && o.a.createElement(p.a, {
+				}), z && o.a.createElement(p.a, {
 					className: w.a.addRemovalReason,
 					onClick: W,
 					text: n.fbt._("Add a removal reason", null, {
@@ -2376,12 +2376,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case h.Ze.SmIcon:
+						case h.af.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case h.Ze.SmIconHc:
+						case h.af.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2869,12 +2869,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Se
+						experimentName: n.Te
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.Ze.SmIcon || t === n.Ze.SmIconHc
+					return t === n.af.SmIcon || t === n.af.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2897,4 +2897,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.c553b07f0a4f6611d502.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.7cd95bda9e9665d784c5.js.map
