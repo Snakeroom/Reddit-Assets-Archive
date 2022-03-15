@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b8165da1d2512b54482c.js
-// Retrieved at 3/15/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0f680985c56ac8ff4165.js
+// Retrieved at 3/15/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -18016,9 +18016,6 @@
 					},
 					gqlContext: () => {
 						throw new Error("Component attempted to make an API request with no GqlContext")
-					},
-					gqlRealtime2Context: () => {
-						throw new Error("Component attempted to make an API request with no GqlRealtime2Context")
 					}
 				},
 				o = Object(a.createContext)(r);
@@ -18026,12 +18023,10 @@
 			function i(e) {
 				const t = t => s.a.createElement(o.Consumer, null, ({
 					apiContext: n,
-					gqlContext: a,
-					gqlRealtime2Context: r
+					gqlContext: a
 				}) => s.a.createElement(e, c({
 					apiContext: n,
-					gqlContext: a,
-					gqlRealtime2Context: r
+					gqlContext: a
 				}, t)));
 				return t.displayName = `WithApiContext(${e.displayName||e.name})`, t
 			}
@@ -18074,4 +18069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.b8165da1d2512b54482c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.0f680985c56ac8ff4165.js.map

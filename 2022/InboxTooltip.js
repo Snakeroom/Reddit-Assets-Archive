@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.b846addf6fef67ad5fe3.js
-// Retrieved at 3/15/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.6ab79059bfa692247165.js
+// Retrieved at 3/15/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip"], {
 		"./src/reddit/actions/subreddit/notifications.ts": function(t, e, i) {
@@ -9,30 +9,30 @@
 			})), i.d(e, "b", (function() {
 				return x
 			}));
-			var o = i("./node_modules/fbt/lib/FbtPublic.js"),
-				s = i("./src/lib/makeActionCreator/index.ts"),
-				n = i("./src/reddit/actions/notificationSettingsLayout/index.ts"),
+			var s = i("./node_modules/fbt/lib/FbtPublic.js"),
+				n = i("./src/lib/makeActionCreator/index.ts"),
+				o = i("./src/reddit/actions/notificationSettingsLayout/index.ts"),
 				d = i("./src/reddit/actions/notificationsInbox/index.ts"),
 				a = i("./src/reddit/actions/subreddit/constants.ts"),
 				r = i("./src/reddit/actions/toaster.ts"),
 				c = i("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
 				b = i("./src/reddit/models/Subreddit/index.ts"),
 				l = i("./src/reddit/models/Toast/index.ts");
-			const u = Object(s.a)(a.u),
-				f = Object(s.a)(a.t),
-				g = Object(s.a)(a.s),
+			const u = Object(n.a)(a.u),
+				f = Object(n.a)(a.t),
+				g = Object(n.a)(a.s),
 				p = t => {
 					switch (t) {
 						case b.b.OFF:
-							return o.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
+							return s.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
 								hk: "3e1CJR"
 							});
 						case b.b.FREQUENT:
-							return o.fbt._("Followed! Now you’ll get updates on new activity.", null, {
+							return s.fbt._("Followed! Now you’ll get updates on new activity.", null, {
 								hk: "3JzOOa"
 							});
 						case b.b.LOW:
-							return o.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
+							return s.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
 								hk: "4x3TS8"
 							});
 						default:
@@ -43,7 +43,7 @@
 				subredditId: t,
 				notificationLevel: e,
 				successCallback: i,
-				undoCallback: s
+				undoCallback: n
 			}) => async (a, x, {
 				gqlContext: O
 			}) => {
@@ -71,11 +71,11 @@
 						return Boolean(t && t.data && t.data.updateSubredditNotificationSettings)
 					}(N.body) && (null === (S = N.body.data.updateSubredditNotificationSettings.errors) || void 0 === S ? void 0 : S.length)) return a(g()), a(Object(r.f)({
 					kind: l.b.Error,
-					text: o.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
+					text: s.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
 						hk: "4avFFV"
 					})
 				}));
-				N.ok && (a(Object(n.c)({
+				N.ok && (a(Object(o.c)({
 					subredditId: t,
 					notificationLevel: e
 				})), a(u({
@@ -84,17 +84,17 @@
 							notificationLevel: e
 						}
 					}
-				})), i && i(), a(s ? Object(r.f)(Object(r.e)(p(e), l.b.Undo, o.fbt._("Undo", null, {
+				})), i && i(), a(n ? Object(r.f)(Object(r.e)(p(e), l.b.Undo, s.fbt._("Undo", null, {
 					hk: "46OwLP"
-				}), Object(d.i)(t, s))) : Object(r.f)(Object(r.e)(p(e), l.b.SuccessCommunityGreen))))
+				}), Object(d.i)(t, n))) : Object(r.f)(Object(r.e)(p(e), l.b.SuccessCommunityGreen))))
 			}
 		},
 		"./src/reddit/components/InboxTooltip/index.tsx": function(t, e, i) {
 			"use strict";
 			i.r(e);
-			var o = i("./node_modules/react/index.js"),
-				s = i.n(o),
-				n = i("./node_modules/react-redux/es/index.js"),
+			var s = i("./node_modules/react/index.js"),
+				n = i.n(s),
+				o = i("./node_modules/react-redux/es/index.js"),
 				d = i("./node_modules/reselect/es/index.js"),
 				a = i("./src/reddit/actions/appBadgeIndicators/index.ts"),
 				r = i("./src/reddit/actions/notifications/index.ts"),
@@ -105,25 +105,23 @@
 				f = i("./src/reddit/hooks/useTracking.ts"),
 				g = i("./src/reddit/models/Subreddit/index.ts"),
 				p = i("./src/reddit/selectors/appBadges.ts"),
-				x = i("./src/reddit/selectors/experiments/hotPotato.ts"),
-				O = i("./src/reddit/selectors/experiments/inboxRedesign.ts"),
-				m = i("./src/reddit/selectors/experiments/wrappedReddit.ts"),
-				h = i("./src/reddit/selectors/notificationsInbox.tsx");
-			const S = Object(d.c)({
-					isPushNotificationsSupported: h.h,
-					cursor: h.c,
-					hasNextPage: h.d,
-					isHotPotatoEnabled: t => Boolean(Object(x.a)(t)),
+				x = i("./src/reddit/selectors/experiments/inboxRedesign.ts"),
+				O = i("./src/reddit/selectors/experiments/wrappedReddit.ts"),
+				m = i("./src/reddit/selectors/notificationsInbox.tsx");
+			const h = Object(d.c)({
+					isPushNotificationsSupported: m.h,
+					cursor: m.c,
+					hasNextPage: m.d,
 					inboxBadgeCount: p.g,
-					isWrappedRedditBannerEnabled: m.a,
-					isInboxInfiniteScrollEnabled: O.c,
-					isInboxPolicyBannerEnabled: O.e,
-					isInboxPostEmbedEnabled: O.a,
-					isPending: h.e,
+					isWrappedRedditBannerEnabled: O.a,
+					isInboxInfiniteScrollEnabled: x.c,
+					isInboxPolicyBannerEnabled: x.e,
+					isInboxPostEmbedEnabled: x.a,
+					isPending: m.e,
 					messagesBadgeCount: p.h,
-					notifications: t => Object(O.c)(t) ? Object(h.f)(t) : Object(h.g)(t)
+					notifications: t => Object(x.c)(t) ? Object(m.f)(t) : Object(m.g)(t)
 				}),
-				j = Object(n.b)(S, (t, {
+				S = Object(o.b)(h, (t, {
 					desktopNotificationsModalId: e
 				}) => ({
 					blockAwarder: e => t(Object(c.a)(e)),
@@ -142,77 +140,75 @@
 					showBrowserNotificationsPermissionSettings: () => t(Object(r.requestBrowserNotificationPermissionPromptByUser)(e)),
 					updateInboxActivitySeenState: () => t(Object(c.j)())
 				}));
-			e.default = j(({
+			e.default = S(({
 				clearMessageTabBadgeCount: t,
 				cursor: e,
 				decreaseSubredditNotifications: i,
-				disableNotificationUpdates: n,
+				disableNotificationUpdates: o,
 				fetchNotifications: d,
 				hasNextPage: a,
 				hideNotification: r,
 				hideSubredditNotifications: c,
 				hideTooltip: b,
-				isHotPotatoEnabled: g,
-				blockAwarder: p,
-				inboxBadgeCount: x,
-				isInboxPolicyBannerEnabled: O,
-				isInboxInfiniteScrollEnabled: m,
-				isInboxPostEmbedEnabled: h,
-				isWrappedRedditBannerEnabled: S,
-				isLoggedIn: j,
-				isOpen: N,
-				isPending: E,
+				blockAwarder: g,
+				inboxBadgeCount: p,
+				isInboxPolicyBannerEnabled: x,
+				isInboxInfiniteScrollEnabled: O,
+				isInboxPostEmbedEnabled: m,
+				isWrappedRedditBannerEnabled: h,
+				isLoggedIn: S,
+				isOpen: j,
+				isPending: N,
 				isPushNotificationsSupported: I,
-				markAllAsRead: w,
-				markNotificationAsRead: P,
+				markAllAsRead: E,
+				markNotificationAsRead: w,
 				messagesBadgeCount: B,
-				notifications: k,
-				showBrowserNotificationsPermissionSettings: A,
-				updateInboxActivitySeenState: v,
-				userId: _
+				notifications: P,
+				showBrowserNotificationsPermissionSettings: k,
+				updateInboxActivitySeenState: A,
+				userId: v
 			}) => {
-				const C = Object(f.a)(),
-					[y, L] = Object(o.useState)("");
-				return Object(o.useEffect)(() => {
-					if (N && !k.length && j) {
+				const _ = Object(f.a)(),
+					[C, y] = Object(s.useState)("");
+				return Object(s.useEffect)(() => {
+					if (j && !P.length && S) {
 						d({
 							first: 5
 						})
 					}
-					N && j && (v(), C(Object(u.t)({
-						badgeCount: x
+					j && S && (A(), _(Object(u.t)({
+						badgeCount: p
 					})))
-				}, [N]), s.a.createElement(l.b, {
-					activeOverflowMenuId: y,
+				}, [j]), n.a.createElement(l.b, {
+					activeOverflowMenuId: C,
 					clearMessageTabBadgeCount: t,
 					cursor: e,
 					decreaseSubredditNotifications: i,
-					disableNotificationUpdates: n,
+					disableNotificationUpdates: o,
 					fetchNotifications: d,
 					hasNextPage: a,
 					hideNotification: r,
 					hideSubredditNotifications: c,
 					hideTooltip: b,
-					blockAwarder: p,
-					inboxBadgeCount: x,
+					blockAwarder: g,
+					inboxBadgeCount: p,
 					isPushNotificationsSupported: I,
-					isHotPotatoEnabled: g,
-					isInboxPolicyBannerEnabled: O,
-					isInboxInfiniteScrollEnabled: m,
-					isInboxPostEmbedEnabled: h,
-					isWrappedRedditBannerEnabled: S,
-					isLoggedIn: j,
-					isPending: E,
-					markAllAsRead: w,
-					markNotificationAsRead: P,
+					isInboxPolicyBannerEnabled: x,
+					isInboxInfiniteScrollEnabled: O,
+					isInboxPostEmbedEnabled: m,
+					isWrappedRedditBannerEnabled: h,
+					isLoggedIn: S,
+					isPending: N,
+					markAllAsRead: E,
+					markNotificationAsRead: w,
 					messagesBadgeCount: B,
-					notifications: k,
-					setActiveOverflowMenuId: L,
-					showBrowserNotificationsPermissionSettings: A,
-					userId: _
+					notifications: P,
+					setActiveOverflowMenuId: y,
+					showBrowserNotificationsPermissionSettings: k,
+					userId: v
 				})
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.b846addf6fef67ad5fe3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.6ab79059bfa692247165.js.map
