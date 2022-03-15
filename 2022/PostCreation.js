@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7fc2adf3f42805f148ab.js
-// Retrieved at 3/15/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.0e87a1f091e72dd326fe.js
+// Retrieved at 3/15/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -12308,6 +12308,9 @@
 					},
 					gqlContext: () => {
 						throw new Error("Component attempted to make an API request with no GqlContext")
+					},
+					gqlRealtime2Context: () => {
+						throw new Error("Component attempted to make an API request with no GqlRealtime2Context")
 					}
 				},
 				i = Object(o.createContext)(a);
@@ -12315,10 +12318,12 @@
 			function c(e) {
 				const t = t => r.a.createElement(i.Consumer, null, ({
 					apiContext: n,
-					gqlContext: o
+					gqlContext: o,
+					gqlRealtime2Context: a
 				}) => r.a.createElement(e, s({
 					apiContext: n,
-					gqlContext: o
+					gqlContext: o,
+					gqlRealtime2Context: a
 				}, t)));
 				return t.displayName = `WithApiContext(${e.displayName||e.name})`, t
 			}
@@ -25685,4 +25690,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7fc2adf3f42805f148ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0e87a1f091e72dd326fe.js.map

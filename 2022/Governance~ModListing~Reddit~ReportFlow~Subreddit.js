@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.3d52634b3e0096d1cd12.js
-// Retrieved at 3/15/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.2a6d5e64e1ee09097523.js
+// Retrieved at 3/15/2022, 1:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -9214,10 +9214,12 @@
 				return i
 			})), r.d(t, "a", (function() {
 				return o
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "e", (function() {
 				return d
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "d", (function() {
 				return c
+			})), r.d(t, "c", (function() {
+				return a
 			}));
 			var n = r("./src/reddit/constants/elementIds.ts");
 			let s;
@@ -9231,17 +9233,20 @@
 				o = () => {
 					if (document.body.dataset.previousOverflow) return;
 					const e = document.body.style.overflow || "auto";
-					document.body.dataset.previousOverflow = e, s || (s = d(document.body)), document.body.style.overflow = "hidden", document.body.style.marginRight = `${s}px`;
+					document.body.dataset.previousOverflow = e, s || (s = c(document.body)), document.body.style.overflow = "hidden", document.body.style.marginRight = `${s}px`;
 					const t = document.getElementById(n.c);
 					t && (t.style.marginRight = `${s}px`)
 				},
 				d = e => {
+					e ? i() : o()
+				},
+				c = e => {
 					const t = e.getBoundingClientRect();
 					return window.innerWidth - (t.left + t.right)
 				},
-				c = e => {
+				a = e => {
 					if (!e || !document.body) return 0;
-					const t = d(document.body),
+					const t = c(document.body),
 						r = e.offsetWidth - e.scrollWidth;
 					return t || r
 				}
@@ -13721,4 +13726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.3d52634b3e0096d1cd12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.2a6d5e64e1ee09097523.js.map
