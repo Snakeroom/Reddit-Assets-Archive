@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/11.3306fdcc8e2e234892da.js
-// Retrieved at 3/10/2022, 4:40:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/11.c3d92c79323fe96bafe9.js
+// Retrieved at 3/15/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[11], {
 		"./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/index.ts": function(e, t, r) {
@@ -128,7 +128,9 @@
 						} = e, u = d ? null === (o = Object(c.a)(d)) || void 0 === o ? void 0 : o[0] : null;
 						t.authorFlair[i] = {
 							...t.authorFlair[i],
-							[n.name]: u
+							...(null == n ? void 0 : n.name) ? {
+								[null == n ? void 0 : n.name]: u
+							} : {}
 						};
 						const a = [];
 						r.modReports.forEach(e => {
@@ -151,4 +153,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/11.3306fdcc8e2e234892da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/11.c3d92c79323fe96bafe9.js.map
