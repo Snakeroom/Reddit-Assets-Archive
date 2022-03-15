@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.bbe184f19b7be403e0ee.js
-// Retrieved at 3/14/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.6040ed2130cf9bf33770.js
+// Retrieved at 3/15/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, s) {
@@ -46,8 +46,8 @@
 				g = s("./src/reddit/selectors/user.ts"),
 				O = s("./src/reddit/components/ContentTooltip/index.tsx"),
 				_ = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				P = s("./src/reddit/controls/Button/index.tsx"),
-				v = s("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
+				v = s("./src/reddit/controls/Button/index.tsx"),
+				P = s("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
 				E = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				j = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				N = s("./src/reddit/icons/svgs/Report/index.tsx"),
@@ -69,8 +69,8 @@
 			const k = Object(d.c)({
 					canFlagAwards: e => Object(x.c)(e, {
 						experimentEligibilitySelector: x.a,
-						experimentName: w.xc
-					}) === w.ed.Enabled,
+						experimentName: w.vc
+					}) === w.cd.Enabled,
 					currentUser: g.k,
 					moderatorPermissions: (e, {
 						postOrComment: t
@@ -133,7 +133,7 @@
 						}
 					}, e ? r.fbt._("Reported", null, {
 						hk: "4C0VOl"
-					}) : null, e ? n.a.createElement(v.a, {
+					}) : null, e ? n.a.createElement(P.a, {
 						className: L.a.awardReportIcon
 					}) : n.a.createElement(N.a, {
 						className: L.a.awardReportIcon
@@ -161,7 +161,7 @@
 						currentUser: t,
 						onClickPremium: s
 					} = this.props, o = e.awardSubType === h.d.Premium, a = !!t && t.isGold;
-					return o ? a ? null : n.a.createElement(P.k, {
+					return o ? a ? null : n.a.createElement(v.k, {
 						className: L.a.premiumCta,
 						onClick: s
 					}, r.fbt._("Get Premium", null, {
@@ -319,7 +319,7 @@
 				}),
 				O = Object(m.a)(f, [r.a.Click, r.a.Keydown]),
 				_ = Object(a.b)(g);
-			class P extends n.a.Component {
+			class v extends n.a.Component {
 				constructor(e) {
 					super(e), this.checkAndSetPosition = () => {
 						const {
@@ -397,7 +397,7 @@
 					}))
 				}
 			}
-			t.a = _(P)
+			t.a = _(v)
 		},
 		"./src/reddit/components/OverlayAwareTooltip/index.tsx": function(e, t, s) {
 			"use strict";
@@ -541,4 +541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.bbe184f19b7be403e0ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.6040ed2130cf9bf33770.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.8ae2d5add1d997294105.js
-// Retrieved at 3/14/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.ddd753e5ce7f11f601da.js
+// Retrieved at 3/15/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -615,8 +615,8 @@
 						if (function(e) {
 								return Object(f.c)(e, {
 									experimentEligibilitySelector: f.a,
-									experimentName: g.nd
-								}) === g.ad
+									experimentName: g.ld
+								}) === g.Yc
 							}(d())) {
 							const {
 								normalizeModQueueListingFromGql: e,
@@ -23456,9 +23456,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.Zc
+					experimentName: s.Xc
 				});
-				return !(!t || Object(s.vf)(t))
+				return !(!t || Object(s.tf)(t))
 			}
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, n) {
@@ -23531,10 +23531,10 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.qe,
+					experimentName: a.oe,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.ye.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.we.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(s.a)(r.G, i, (e, t) => d(e, t));
 			Object(s.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -23663,4 +23663,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.8ae2d5add1d997294105.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ddd753e5ce7f11f601da.js.map

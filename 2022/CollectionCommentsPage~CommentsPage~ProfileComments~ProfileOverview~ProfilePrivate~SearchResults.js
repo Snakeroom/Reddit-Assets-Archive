@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.c0470109024cdebbb032.js
-// Retrieved at 3/14/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.46a2f723eff0c256ce93.js
+// Retrieved at 3/15/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1345,18 +1345,18 @@
 				},
 				Q = (e, t) => {
 					window.addEventListener("focus", (function n() {
-						q(e, t, n)
+						z(e, t, n)
 					}))
 				},
-				q = (e, t, n) => {
+				z = (e, t, n) => {
 					window.removeEventListener("focus", n), e(Object(U.g)({
 						commentListNodeId: t
 					})), window.setTimeout(() => e(Object(U.g)({
 						commentListNodeId: t
 					})), 5e3)
 				};
-			var z = n("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
-				J = n.n(z);
+			var q = n("./src/reddit/components/Comments/Comment/TopMeta/crowdControl.m.less"),
+				J = n.n(q);
 			const {
 				fbt: K
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Y = () => r.a.createElement(E.a, {
@@ -3138,13 +3138,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: s.qe,
+					experimentName: s.oe,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === s.ye.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === s.we.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				c = Object(o.a)(i.G, a, (e, t) => d(e, t));
 			Object(o.a)((e, t) => t, a, (e, t) => d(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.c0470109024cdebbb032.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.46a2f723eff0c256ce93.js.map

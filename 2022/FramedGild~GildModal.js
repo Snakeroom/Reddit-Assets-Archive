@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a310c17a56391b71b010.js
-// Retrieved at 3/14/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ad8b340533a8d6e41d86.js
+// Retrieved at 3/15/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -865,7 +865,7 @@
 			})), r.d(t, "gildGqlRequested", (function() {
 				return X
 			})), r.d(t, "triggerLoader", (function() {
-				return Q
+				return Z
 			})), r.d(t, "gildPending", (function() {
 				return $
 			})), r.d(t, "gildFailed", (function() {
@@ -1007,9 +1007,9 @@
 					} finally {
 						Object(F.b)(F.a.GildingFlow)
 					}
-				}, Q = Object(s.a)(z.u), Z = Object(s.a)(z.q), $ = () => async (e, t) => {
-					e(Z()), window.setTimeout(() => {
-						t().gild.api.pending && e(Q())
+				}, Z = Object(s.a)(z.u), Q = Object(s.a)(z.q), $ = () => async (e, t) => {
+					e(Q()), window.setTimeout(() => {
+						t().gild.api.pending && e(Z())
 					}, 2e3)
 				}, ee = Object(s.a)(z.p), te = e => async (t, r) => {
 					await t(ee(e)), t(Object(l.f)({
@@ -2108,8 +2108,8 @@
 				K = r("./src/reddit/components/GildModalContent/AwardDetailsPane/index.m.less"),
 				Y = r.n(K),
 				X = r("./src/reddit/helpers/awards/message.ts"),
-				Q = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				Z = r("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				Z = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				Q = r("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				$ = r("./src/reddit/icons/svgs/Eye/index.tsx"),
 				ee = r("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				te = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
@@ -2245,7 +2245,7 @@
 						forcePublic: e,
 						isAnonymous: t
 					} = this.props;
-					return e ? null : s.a.createElement(Z.a, {
+					return e ? null : s.a.createElement(Q.a, {
 						className: Y.a.giver,
 						isSelected: t,
 						text: i.fbt._("Make my gift anonymous", null, {
@@ -2277,7 +2277,7 @@
 						className: Object(c.a)(Y.a.textAreaWrapper, {
 							[Y.a.messageTooLong]: o
 						})
-					}, s.a.createElement(Q.t, pe({
+					}, s.a.createElement(Z.t, pe({
 						className: Y.a.textArea,
 						"data-redditstyle": !0,
 						name: "message",
@@ -2728,7 +2728,7 @@
 				}, s.a.createElement("button", {
 					className: Be.a.closeBtn,
 					onClick: t
-				}, s.a.createElement(Q.b, {
+				}, s.a.createElement(Z.b, {
 					className: Be.a.closeBtnIcon
 				})), s.a.createElement("div", {
 					className: Be.a.headerText
@@ -4806,12 +4806,12 @@
 						rtJsonElementProps: a
 					});
 					switch (n) {
-						case h.bf.SmIcon:
+						case h.Ze.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: a
 							});
-						case h.bf.SmIconHc:
+						case h.Ze.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -5859,12 +5859,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Ue
+						experimentName: n.Se
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.bf.SmIcon || t === n.bf.SmIconHc
+					return t === n.Ze.SmIcon || t === n.Ze.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5899,4 +5899,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a310c17a56391b71b010.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ad8b340533a8d6e41d86.js.map

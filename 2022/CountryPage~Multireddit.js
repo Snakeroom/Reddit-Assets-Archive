@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.6bbce446e2ee4445e4b9.js
-// Retrieved at 3/14/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.bc954f8500cb0d714177.js
+// Retrieved at 3/15/2022, 10:30:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3398,12 +3398,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case b.bf.SmIcon:
+						case b.Ze.SmIcon:
 							return s.a.createElement(h, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case b.bf.SmIconHc:
+						case b.Ze.SmIconHc:
 							return s.a.createElement(h, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4571,15 +4571,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.O,
-						experimentName: r.yc
+						experimentName: r.wc
 					});
-					return !(!t || Object(r.vf)(t))
+					return !(!t || Object(r.tf)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.O,
-						experimentName: r.yc
-					}) === r.fd.ListingEnabled
+						experimentName: r.wc
+					}) === r.dd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -4711,12 +4711,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Ue
+						experimentName: r.Se
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.bf.SmIcon || t === r.bf.SmIconHc
+					return t === r.Ze.SmIcon || t === r.Ze.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -4742,4 +4742,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.6bbce446e2ee4445e4b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.bc954f8500cb0d714177.js.map
