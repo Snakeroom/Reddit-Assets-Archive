@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.cb798d0f0d74e68917ed.js
-// Retrieved at 3/15/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.320c484c7ff4dd56723c.js
+// Retrieved at 3/16/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -25350,7 +25350,7 @@
 				l = e => e === n.U.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(s.a)(o.O, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.O, i, (e, t) => !e && !!t && !Object(n.uf)(t))
+				f = Object(s.a)(o.O, i, (e, t) => !e && !!t && !Object(n.vf)(t))
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, r) {
 			"use strict";
@@ -25631,4 +25631,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.cb798d0f0d74e68917ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.320c484c7ff4dd56723c.js.map

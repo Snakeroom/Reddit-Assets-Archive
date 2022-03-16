@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.ae7c1f26f6f677bb49b1.js
-// Retrieved at 3/15/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.65248cd1dc07d19b160c.js
+// Retrieved at 3/16/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -3262,7 +3262,7 @@
 					}) => {
 						var l, b;
 						const p = Object(Oe.a)(e),
-							f = !!p && !Object(fe.uf)(p) && (s || p === fe.eb.Community),
+							f = !!p && !Object(fe.vf)(p) && (s || p === fe.eb.Community),
 							m = {
 								subredditName: n,
 								isFake: s,
@@ -8348,7 +8348,7 @@
 								experimentName: i.G,
 								expEventOverride: t
 							});
-							return !!(Object(i.uf)(r) ? void 0 : r)
+							return !!(Object(i.vf)(r) ? void 0 : r)
 						})(r)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -12404,7 +12404,7 @@
 						experimentEligibilitySelector: s.a,
 						experimentName: n.Hd
 					});
-					return !(!t || Object(n.uf)(t))
+					return !(!t || Object(n.vf)(t))
 				},
 				u = (e, t) => ((e, t) => {
 					var r;
@@ -12419,7 +12419,7 @@
 						experimentEligibilitySelector: c.O,
 						experimentName: n.Gd
 					});
-					return !(!t || Object(n.uf)(t))
+					return !(!t || Object(n.vf)(t))
 				}
 		},
 		"./src/reddit/selectors/experiments/crosspostRecommendations.ts": function(e, t, r) {
@@ -13100,7 +13100,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				_ = Object(s.a)(u.a, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.uf)(e) ? t : null),
+				_ = Object(s.a)(u.a, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.vf)(e) ? t : null),
 				O = Object(s.a)(u.a, c.b, a.a, (e, t, r) => e === i.eb.PopoverFeed15 && Object(d.c)() && !t && !r)
 		},
 		"./src/reddit/selectors/seo/linksModule.ts": function(e, t, r) {
@@ -13739,4 +13739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.ae7c1f26f6f677bb49b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.65248cd1dc07d19b160c.js.map
