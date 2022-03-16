@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.7228598999a0155ae153.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.1f8bbf1915f2f4d9ffd5.js
+// Retrieved at 3/16/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1516,14 +1516,12 @@
 						})
 					}, this.videoRef = e => {
 						this.HTML5StreamPlayerVideo = e, this.HTML5StreamPlayerVideo && (this.HTML5StreamPlayerVideo.volume = this.state.volume)
-					}, ze.dashjs || (ze.dashjs = Object(f.a)(() => s.e("vendors~dashjs").then(s.t.bind(null, "./node_modules/dashjs/build/es5/index.js", 7))));
-					const t = !!e.isListing && e.mutedInFeed;
-					this.state = {
+					}, ze.dashjs || (ze.dashjs = Object(f.a)(() => s.e("vendors~dashjs").then(s.t.bind(null, "./node_modules/dashjs/build/es5/index.js", 7)))), this.state = {
 						bitrateInfo: [],
 						hasAudio: !1,
 						hasHovered: !1,
 						hideControlBar: !0,
-						isMuted: t,
+						isMuted: e.mutedInFeed,
 						isRecovering: !1,
 						lastUpdate: null,
 						ignoreUnderrunsUntil: 0,
@@ -1623,9 +1621,7 @@
 						isMuted: s
 					}), a !== e.volume && (this.HTML5StreamPlayerVideo && (this.HTML5StreamPlayerVideo.volume = a), a !== this.state.volume && this.setState({
 						volume: a
-					}))), t || s === this.state.isMuted || this.setState({
-						isMuted: s
-					})
+					})))
 				}
 				async destroyMediaPlayer() {
 					var e, t;
@@ -2459,4 +2455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.7228598999a0155ae153.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.1f8bbf1915f2f4d9ffd5.js.map
