@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.bd14070aa04fd88ebe2b.js
-// Retrieved at 3/16/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e4ec9a52b70d7db3ebb4.js
+// Retrieved at 3/16/2022, 4:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -11787,6 +11787,9 @@
 					ADD_MODERATOR: () => a.fbt._("Add moderator", null, {
 						hk: "4rRghF"
 					}),
+					ADD_NOTE: () => a.fbt._("Add note", null, {
+						hk: "2UjBm"
+					}),
 					ADJUST_POST_CROWD_CONTROL_LEVEL: () => a.fbt._("Adjust post crowd control level", null, {
 						hk: "Eqwnv"
 					}),
@@ -11834,6 +11837,9 @@
 					}),
 					DELETE_OVERRIDDEN_CLASSIFICATION: () => a.fbt._("Delete overridden classification", null, {
 						hk: "3hPfDT"
+					}),
+					DELETE_NOTE: () => a.fbt._("Delete note", null, {
+						hk: "1P0prb"
 					}),
 					DISABLE_AWARD: () => a.fbt._("Disable award", null, {
 						hk: "2yFBt7"
@@ -12618,6 +12624,8 @@
 								case "UNBAN_USER":
 								case "UNINVITE_MODERATOR":
 								case "UNMUTE_USER":
+								case "ADD_NOTE":
+								case "DELETE_NOTE":
 									return {
 										type: k.REDDITOR, treatment: y.NONE
 									};
@@ -23657,4 +23665,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.bd14070aa04fd88ebe2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e4ec9a52b70d7db3ebb4.js.map
