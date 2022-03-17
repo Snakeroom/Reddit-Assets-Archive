@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.848cc95d4f308dd64610.js
-// Retrieved at 3/16/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.90826e4a17acae2fe57f.js
+// Retrieved at 3/16/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -10932,7 +10932,11 @@
 					this.removeListeners(e)
 				}
 				componentDidUpdate(e) {
-					if (this.needsUpdatedMeasurements = !0, this.addListeners(), this.checkAndSendScreenview(), e.postId !== this.props.postId) {
+					if (this.needsUpdatedMeasurements = !0, this.addListeners(), this.checkAndSendScreenview(), e.location.pathname !== this.props.location.pathname) {
+						const e = new URLSearchParams(this.props.location.search).get("report") || "";
+						["true", "1"].includes(e) && this.props.openReportFlow(this.props.postId, this.props.isOverlay)
+					}
+					if (e.postId !== this.props.postId) {
 						const e = this.props.post && Object(it.a)(this.props.post);
 						this.props.post && this.props.post.numComments ? y.a.read(this.handleScroll) : y.a.write(() => {
 							e || Object(v.c)(this.scrollContainerEl, 0), y.a.read(this.handleScroll)
@@ -11932,4 +11936,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.848cc95d4f308dd64610.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.90826e4a17acae2fe57f.js.map
