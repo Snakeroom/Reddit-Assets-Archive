@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.d9f0c8d38adbdf4fd938.js
-// Retrieved at 3/16/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.c72f5aa8eb05dcebb91e.js
+// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -4796,8 +4796,8 @@
 				}) === a.w.Enabled,
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: a.zc
-				}) === a.Zc
+					experimentName: a.Bc
+				}) === a.bd
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
 			"use strict";
@@ -4815,19 +4815,19 @@
 			const d = Object(a.a)(c.V, c.M, (e, t) => !e && !t),
 				l = Object(a.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: d,
-					experimentName: s.ud
+					experimentName: s.wd
 				}), e => Boolean(e)),
 				m = e => Object(o.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: s.ud
+					experimentName: s.wd
 				}),
 				u = Object(a.a)(i.d, m, (e, t) => (null == e ? void 0 : e.toLocaleLowerCase()) === (null == t ? void 0 : t.toLocaleLowerCase())),
 				p = Object(a.a)(i.r, l, u, (e, t, n) => t && e === r.Nb.SUBREDDIT && n),
 				b = e => Boolean(Object(o.c)(e, {
 					experimentEligibilitySelector: p,
-					experimentName: s.ud
+					experimentName: s.wd
 				}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.d9f0c8d38adbdf4fd938.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.c72f5aa8eb05dcebb91e.js.map
