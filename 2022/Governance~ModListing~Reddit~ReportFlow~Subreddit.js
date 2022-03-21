@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.41e85c01bc930714ef48.js
-// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.374ba2f764cdbe98397d.js
+// Retrieved at 3/21/2022, 11:10:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -905,9 +905,9 @@
 		"./src/reddit/actions/contentControls/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return v
+				return x
 			})), r.d(t, "b", (function() {
-				return w
+				return k
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./node_modules/lodash/camelCase.js"),
@@ -939,20 +939,21 @@
 				j = r("./src/reddit/endpoints/subreddit/about.ts"),
 				g = r("./src/reddit/models/Toast/index.ts"),
 				I = r("./src/reddit/selectors/contentControls.ts"),
-				y = r("./src/reddit/selectors/subreddit.ts"),
-				h = r("./src/reddit/actions/contentControls/constants.ts");
-			const S = Object(d.a)(h.b),
-				E = Object(d.a)(h.c),
-				T = Object(d.a)(h.a),
-				v = e => async (t, r, {
+				y = r("./src/reddit/selectors/isModeratorOfSubreddit.ts"),
+				h = r("./src/reddit/selectors/subreddit.ts"),
+				S = r("./src/reddit/actions/contentControls/constants.ts");
+			const E = Object(d.a)(S.b),
+				T = Object(d.a)(S.c),
+				v = Object(d.a)(S.a),
+				x = e => async (t, r, {
 					gqlContext: n
 				}) => {
 					const s = {
 						subredditName: e.toLowerCase()
 					};
 					if (Object(I.a)(r(), s)) return;
-					t(E(s));
-					let i = Object(y.D)(r(), e);
+					t(T(s));
+					let i = Object(h.D)(r(), e);
 					if (!i) {
 						const r = await Object(j.a)(n(), e, !1);
 						if (r.ok) {
@@ -962,14 +963,17 @@
 							const e = r.error || {
 								type: o.I.NOT_FOUND_ERROR
 							};
-							return void t(T({
+							return void t(v({
 								...s,
 								error: e
 							}))
 						}
 					}
-					let d = null;
-					const a = await ((e, t) => Object(u.a)(e, {
+					const d = Object(y.c)(r(), {
+						subredditId: i
+					});
+					let a = null;
+					const l = await ((e, t) => Object(u.a)(e, {
 						...b,
 						variables: t
 					}).then(e => {
@@ -995,36 +999,37 @@
 						}
 						return e
 					}))(n(), {
-						subredditId: i
+						subredditId: i,
+						includeHatefulFilters: d
 					});
-					if (a.ok) {
-						const e = a.body;
-						d = e.data.subreddit && e.data.subreddit
+					if (l.ok) {
+						const e = l.body;
+						a = e.data.subreddit && e.data.subreddit
 					}
-					if (d) t(S({
+					if (a) t(E({
 						...s,
-						...d
+						...a
 					}));
 					else {
-						const r = a.error || {
+						const r = l.error || {
 							type: o.I.UNKNOWN_ERROR
 						};
-						t(T({
+						t(v({
 							...s,
 							error: r
 						})), c.c.withScope(t => {
 							t.setExtra("info", {
 								subredditName: e,
-								responseBody: a.body,
-								responseOk: a.ok
+								responseBody: l.body,
+								responseOk: l.ok
 							}), c.c.captureMessage("Missing post requirements data!")
 						})
 					}
-				}, x = Object(d.a)(h.d), w = (e, t) => async (r, s, {
+				}, w = Object(d.a)(S.d), k = (e, t) => async (r, s, {
 					gqlContext: i
 				}) => {
 					const o = e.toLowerCase(),
-						d = Object(y.D)(s(), e);
+						d = Object(h.D)(s(), e);
 					if (!d) return {
 						success: !1
 					};
@@ -1072,7 +1077,7 @@
 							}
 						})
 					})(i(), d, t);
-					if (c.ok) return r(x({
+					if (c.ok) return r(w({
 						subredditName: o,
 						partialUpdates: t
 					})), r(Object(a.f)({
@@ -1083,7 +1088,7 @@
 					})), {
 						success: !0
 					}; {
-						const s = k(c.fieldErrors);
+						const s = C(c.fieldErrors);
 						return r(Object(a.f)({
 							kind: g.b.Error,
 							text: n.fbt._("Give us a few minutes to fix the problem. Sorry!", null, {
@@ -1092,13 +1097,13 @@
 							buttonText: n.fbt._("Retry", null, {
 								hk: "1QXiG6"
 							}),
-							buttonAction: w(e, t)
+							buttonAction: k(e, t)
 						})), {
 							success: !1,
 							errors: s || void 0
 						}
 					}
-				}, k = e => e && e.map(e => ({
+				}, C = e => e && e.map(e => ({
 					...e,
 					field: i()(e.field)
 				}))
@@ -13600,7 +13605,7 @@
 			e.exports = JSON.parse('{"id":"dd3485867365"}')
 		},
 		"./src/redditGQL/operations/FetchContentControls.json": function(e) {
-			e.exports = JSON.parse('{"id":"cc2540b31bea"}')
+			e.exports = JSON.parse('{"id":"c822b1f9fc9b"}')
 		},
 		"./src/redditGQL/operations/FetchGlobalTags.json": function(e) {
 			e.exports = JSON.parse('{"id":"f4a581740c21"}')
@@ -13745,4 +13750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.41e85c01bc930714ef48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.374ba2f764cdbe98397d.js.map
