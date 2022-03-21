@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.14a0f3390ee5d4ac8e3e.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.3d5bb7087d70bfa366db.js
+// Retrieved at 3/21/2022, 6:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -6164,20 +6164,43 @@
 				C = n("./src/reddit/helpers/toggleBodyScroll/index.ts"),
 				S = n("./src/reddit/helpers/trackers/hotPotato.ts"),
 				I = n("./src/reddit/models/Toast/index.ts"),
-				N = n("./src/reddit/selectors/telemetry.ts"),
-				k = n("./src/reddit/selectors/user.ts"),
-				P = n("./src/reddit/components/HotPotatoEmbed/index.m.less"),
-				T = n.n(P);
+				N = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/reddit/selectors/telemetry.ts")),
+				k = n("./src/telemetry/models/Event.ts");
+			const P = function(e, t = 0) {
+				return Object.keys(e).reduce((n, s) => {
+					const r = e[s];
+					return r ? (n[s] = "object" == typeof r && t <= 4 ? P(r, t + 1) : r, n) : n
+				}, {})
+			};
+			var T = n("./src/reddit/selectors/user.ts"),
+				w = n("./src/reddit/components/HotPotatoEmbed/index.m.less"),
+				L = n.n(w);
 			const {
-				fbt: w
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), L = Object(c.c)({
+				fbt: A
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), R = Object(c.c)({
 				session: e => e.user.session,
-				telemetryDefaults: N.o,
+				telemetryDefaults: e => {
+					const t = {
+							...Object(N.o)(e),
+							...{
+								action: k.d.Load,
+								source: k.f.Experiment,
+								noun: k.e.UserId
+							}
+						},
+						{
+							action: n,
+							source: s,
+							noun: r,
+							...o
+						} = Object(k.g)(t);
+					return P(o)
+				},
 				isTooltipOpened: e => Boolean(e.tooltip.tooltipId),
 				isSearchDropdownOpened: e => e.search.isDropdownOpen,
 				isHeaderDropdownOpened: e => e.header.isSubscriptionsDropdownOpen,
-				isLoggedIn: k.P
-			}), A = Object(i.b)(L, e => ({
+				isLoggedIn: T.P
+			}), D = Object(i.b)(R, e => ({
 				closeSearchDropdown: () => e(Object(m.k)()),
 				closeHeaderDropdown: () => e(Object(l.f)()),
 				closeTooltipModal: () => e(Object(b.j)()),
@@ -6186,12 +6209,12 @@
 				openErrorToast: () => e(Object(p.f)({
 					duration: p.a,
 					kind: I.b.Error,
-					text: w._("Something wen't wrong. Please try again later.", null, {
+					text: A._("Something wen't wrong. Please try again later.", null, {
 						hk: "4vD48K"
 					})
 				}))
 			}));
-			class R extends o.a.Component {
+			class B extends o.a.Component {
 				constructor(e) {
 					super(e), this.iframeRef = Object(r.createRef)(), this.handleEscapeKey = e => {
 						e.code === j.a.Escape.toString() && this.toggleFullScreen(!1)
@@ -6286,26 +6309,26 @@
 						iframeURL: n
 					} = this.state, r = this.isAnyRedditModalOpened();
 					return o.a.createElement("div", {
-						className: Object(d.a)(T.a.container, {
-							[T.a.expanded]: t
+						className: Object(d.a)(L.a.container, {
+							[L.a.expanded]: t
 						})
 					}, n && o.a.createElement("iframe", {
 						ref: this.iframeRef,
 						onLoad: this.onLoad,
 						onError: this.onError,
-						className: T.a.iframe,
+						className: L.a.iframe,
 						allow: "web-share; clipboard-read; clipboard-write",
 						src: n
 					}), !e && o.a.createElement("img", {
-						className: T.a.hotPotatoIcon,
+						className: L.a.hotPotatoIcon,
 						src: `${s.a.assetPath}/img/hot-potato-loader.gif`
 					}), e && (!t || r) && o.a.createElement("div", {
-						className: T.a.overlay,
+						className: L.a.overlay,
 						onClick: this.onOverlayClick
 					}))
 				}
 			}
-			t.a = Object(O.c)(A(R))
+			t.a = Object(O.c)(D(B))
 		},
 		"./src/reddit/components/Hovercards/SubredditHovercard/index.tsx": function(e, t, n) {
 			"use strict";
@@ -17566,4 +17589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.14a0f3390ee5d4ac8e3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3d5bb7087d70bfa366db.js.map
