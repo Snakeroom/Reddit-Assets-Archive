@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.f73a88910ec629ed8cf7.js
-// Retrieved at 3/21/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.2767c0ede22542504e33.js
+// Retrieved at 3/21/2022, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -17574,56 +17574,57 @@
 					isSafariOneTapEnabled: P,
 					isBlockingInterstitialEnabled: h.b
 				}),
-				w = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, O.a, _.a, C.i, S, k, (e, t, n, a, l, u, m) => {
+				w = Object(a.a)((e, t) => t.path, (e, t) => t.uiMode, e => Object(O.c)(e), O.a, _.a, C.i, S, k, (e, t, n, a, l, u, m, p) => {
 					const {
-						frontpageSignupVariant: p,
-						googleOneTapVariant: b,
-						ssoLoginLinkVariant: h,
-						magicLinkVariant: g,
-						moreRepliesSignupVariant: f,
-						blockingInterstitialVariant: v
-					} = u, {
-						isGoogleSsoGisEnabled: O,
-						isMoreRepliesSignupEnabled: C,
-						isNetzDGComplianceEnabled: y,
-						isSafariOneTapEnabled: x,
-						isBlockingInterstitialEnabled: E
-					} = m;
-					let P = `${r.a.accountManagerOrigin}${e}`;
-					if (P = Object(i.a)(P, {
+						frontpageSignupVariant: b,
+						googleOneTapVariant: h,
+						ssoLoginLinkVariant: g,
+						magicLinkVariant: f,
+						moreRepliesSignupVariant: v,
+						blockingInterstitialVariant: O
+					} = m, {
+						isGoogleSsoGisEnabled: C,
+						isMoreRepliesSignupEnabled: y,
+						isNetzDGComplianceEnabled: x,
+						isSafariOneTapEnabled: E,
+						isBlockingInterstitialEnabled: P
+					} = p;
+					let j = `${r.a.accountManagerOrigin}${e}`;
+					if (j = Object(i.a)(j, {
 							experiment_d2x_2020ify_buttons: "enabled"
-						}), h && (P = Object(i.a)(P, {
-							[`experiment_${d.Qe}`]: h
-						})), O && (P = Object(i.a)(P, {
+						}), g && (j = Object(i.a)(j, {
+							[`experiment_${d.Qe}`]: g
+						})), C && (j = Object(i.a)(j, {
 							[`experiment_${d.od}`]: "enabled"
-						})), C && (P = Object(i.a)(P, {
-							[`experiment_${d.Md}`]: f
-						})), y && (P = Object(i.a)(P, {
-							[`experiment_${d.Vd}`]: d.fe.Enabled
-						})), P = Object(i.a)(P, {
+						})), y && (j = Object(i.a)(j, {
+							[`experiment_${d.Md}`]: v
+						})), x && (j = Object(i.a)(j, {
+							[`experiment_${d.Vd}`]: d.fe.Enabled,
+							thing_id: n
+						})), j = Object(i.a)(j, {
 							experiment_d2x_onboarding: "enabled"
-						}), x && (P = Object(i.a)(P, {
+						}), E && (j = Object(i.a)(j, {
 							[`experiment_${d.Oe}`]: "enabled"
-						})), e === c.c.GoogleOneTap) return Object(i.a)(P, {
-						[d.sb]: b
+						})), e === c.c.GoogleOneTap) return Object(i.a)(j, {
+						[d.sb]: h
 					});
-					if (E && (P = Object(i.a)(P, {
-							[`experiment_${d.wb}`]: v
-						})), p && (P = Object(i.a)(P, {
-							[d.mc]: p,
+					if (P && (j = Object(i.a)(j, {
+							[`experiment_${d.wb}`]: O
+						})), b && (j = Object(i.a)(j, {
+							[d.mc]: b,
 							uiMode: t
-						})), g && (P = Object(i.a)(P, {
-							[`experiment_${d.Id}`]: g
-						})), a && (P = Object(i.a)(P, {
+						})), f && (j = Object(i.a)(j, {
+							[`experiment_${d.Id}`]: f
+						})), l && (j = Object(i.a)(j, {
 							mweb_responsive_settings: "treatment"
-						})), l) {
-						const e = Object(s.isoLocaleToR2Language)(l);
-						l !== o.DEFAULT_LOCALE && e && (P = Object(i.a)(P, {
+						})), u) {
+						const e = Object(s.isoLocaleToR2Language)(u);
+						u !== o.DEFAULT_LOCALE && e && (j = Object(i.a)(j, {
 							lang: e
 						}))
 					}
-					return e === c.c.Index || e === c.c.ChangePassword ? P : P = Object(i.a)(P, {
-						actionSource: n
+					return e === c.c.Index || e === c.c.ChangePassword ? j : j = Object(i.a)(j, {
+						actionSource: a
 					})
 				})
 		},
@@ -17633,9 +17634,12 @@
 				return s
 			})), n.d(t, "b", (function() {
 				return o
+			})), n.d(t, "c", (function() {
+				return r
 			}));
 			const s = e => e.accountManagerModalData.actionSource,
-				o = e => e.accountManagerModalData.redirectUrl
+				o = e => e.accountManagerModalData.redirectUrl,
+				r = e => e.accountManagerModalData.thingId
 		},
 		"./src/reddit/selectors/econManagement.ts": function(e, t, n) {
 			"use strict";
@@ -18140,4 +18144,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "AuthorHovercard~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f73a88910ec629ed8cf7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.2767c0ede22542504e33.js.map

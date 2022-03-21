@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.412b8f1ef6f21a2e07ce.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.42a29a1894a142c510fb.js
+// Retrieved at 3/21/2022, 6:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -927,7 +927,8 @@
 					if (!R) return;
 					if (!Object(_.P)(o())) return s(Object(r.j)()), void s(Object(a.k)({
 						actionSource: a.a.Report,
-						redirectUrl: R.permalink
+						redirectUrl: R.permalink,
+						thingId: e
 					}));
 					s(Object(c.B)(R.author));
 					const C = Object(x.U)(u, {
@@ -3932,4 +3933,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.412b8f1ef6f21a2e07ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.42a29a1894a142c510fb.js.map
