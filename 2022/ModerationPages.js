@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.139296fcd6f170179ac4.js
-// Retrieved at 3/21/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.1588c50263bfb6b21cd4.js
+// Retrieved at 3/21/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -12227,7 +12227,7 @@
 				};
 			var k, y;
 			! function(e) {
-				e.AWARD = "Award", e.COMMENT = "Comment", e.FLAIR = "Flair", e.MULTIPLE = "Multiple", e.POST = "Post", e.REDDITOR = "Redditor", e.SETTINGS = "Settings", e.WIKI = "Wiki", e.COLLECTION = "Collection", e.EVENT = "Event"
+				e.AWARD = "Award", e.COMMENT = "Comment", e.FLAIR = "Flair", e.MULTIPLE = "Multiple", e.POST = "Post", e.REDDITOR = "Redditor", e.SETTINGS = "Settings", e.WIKI = "Wiki", e.COLLECTION = "Collection", e.EVENT = "Event", e.NOTE = "Note"
 			}(k || (k = {})),
 			function(e) {
 				e.NONE = "none", e.POSITIVE = "positive", e.NEGATIVE = "negative"
@@ -12570,22 +12570,23 @@
 				me = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
 				ue = n("./src/reddit/models/User/index.ts"),
 				pe = (n("./src/lib/assertNever.ts"), n("./src/lib/sentry/index.ts"));
-			var be = n("./src/reddit/icons/fonts/Comment/index.tsx"),
-				he = n("./src/reddit/icons/svgs/Collection/index.tsx"),
-				ge = n("./src/reddit/icons/svgs/Event/index.tsx"),
-				fe = n("./src/reddit/icons/svgs/Gild/index.tsx"),
-				xe = n("./src/reddit/icons/svgs/ModLogPosts/index.tsx"),
-				Ee = n("./src/reddit/icons/svgs/Negative/index.tsx"),
-				ve = n("./src/reddit/icons/svgs/Positive/index.tsx"),
-				Ce = n("./src/reddit/icons/svgs/Redditor/index.tsx"),
-				_e = n("./src/reddit/icons/svgs/Settings/index.tsx"),
-				ke = n("./src/reddit/icons/svgs/Tag/index.tsx"),
-				ye = n("./src/reddit/icons/svgs/Wiki/index.tsx"),
-				Oe = n("./src/reddit/models/Comment/index.ts"),
-				Se = n("./src/reddit/models/FeedElement/index.ts"),
-				je = n("./src/reddit/components/ModerationLog/ModerationLogItem/index.m.less"),
-				Ne = n.n(je);
-			const Ie = ({
+			var be = n("./src/reddit/icons/fonts/index.tsx"),
+				he = n("./src/reddit/icons/fonts/Comment/index.tsx"),
+				ge = n("./src/reddit/icons/svgs/Collection/index.tsx"),
+				fe = n("./src/reddit/icons/svgs/Event/index.tsx"),
+				xe = n("./src/reddit/icons/svgs/Gild/index.tsx"),
+				Ee = n("./src/reddit/icons/svgs/ModLogPosts/index.tsx"),
+				ve = n("./src/reddit/icons/svgs/Negative/index.tsx"),
+				Ce = n("./src/reddit/icons/svgs/Positive/index.tsx"),
+				_e = n("./src/reddit/icons/svgs/Redditor/index.tsx"),
+				ke = n("./src/reddit/icons/svgs/Settings/index.tsx"),
+				ye = n("./src/reddit/icons/svgs/Tag/index.tsx"),
+				Oe = n("./src/reddit/icons/svgs/Wiki/index.tsx"),
+				Se = n("./src/reddit/models/Comment/index.ts"),
+				je = n("./src/reddit/models/FeedElement/index.ts"),
+				Ne = n("./src/reddit/components/ModerationLog/ModerationLogItem/index.m.less"),
+				Ie = n.n(Ne);
+			const Te = ({
 					action: e,
 					urlPath: t
 				}) => {
@@ -12624,8 +12625,6 @@
 								case "UNBAN_USER":
 								case "UNINVITE_MODERATOR":
 								case "UNMUTE_USER":
-								case "ADD_NOTE":
-								case "DELETE_NOTE":
 									return {
 										type: k.REDDITOR, treatment: y.NONE
 									};
@@ -12723,93 +12722,110 @@
 									return {
 										type: k.POST, treatment: y.NONE
 									};
+								case "ADD_NOTE":
+									return {
+										type: k.NOTE, treatment: y.POSITIVE
+									};
+								case "DELETE_NOTE":
+									return {
+										type: k.NOTE, treatment: y.NEGATIVE
+									};
 								default:
 									return void pe.c.captureMessage(`Unknown mod action "${e}"`)
 							}
 						})(e.action),
 						s = e.target && e.target.__typename,
-						a = s === Oe.d.Comment || Oe.d.DeletedComment;
+						a = s === Se.d.Comment || Se.d.DeletedComment;
 					let o;
 					switch (n && n.type) {
 						case k.AWARD:
-							o = r.a.createElement(fe.a, {
-								className: Ne.a.icon
+							o = r.a.createElement(xe.a, {
+								className: Ie.a.icon
 							});
 							break;
 						case k.COMMENT:
-							o = r.a.createElement(be.a, null);
+							o = r.a.createElement(he.a, null);
 							break;
 						case k.FLAIR:
-							o = r.a.createElement(ke.a, {
-								className: Ne.a.icon
+							o = r.a.createElement(ye.a, {
+								className: Ie.a.icon
 							});
 							break;
 						case k.POST:
-							o = r.a.createElement(xe.a, {
-								className: Ne.a.icon
+							o = r.a.createElement(Ee.a, {
+								className: Ie.a.icon
 							});
 							break;
 						case k.REDDITOR:
-							o = r.a.createElement(Ce.a, {
-								className: Ne.a.icon
+							o = r.a.createElement(_e.a, {
+								className: Ie.a.icon
 							});
 							break;
 						case k.SETTINGS:
-							o = r.a.createElement(_e.a, {
-								className: Ne.a.icon
+							o = r.a.createElement(ke.a, {
+								className: Ie.a.icon
 							});
 							break;
 						case k.WIKI:
-							o = r.a.createElement(ye.a, {
-								className: Ne.a.icon
+							o = r.a.createElement(Oe.a, {
+								className: Ie.a.icon
 							});
 							break;
 						case k.COLLECTION:
-							o = r.a.createElement(he.a, {
-								className: Ne.a.icon
+							o = r.a.createElement(ge.a, {
+								className: Ie.a.icon
 							});
 							break;
 						case k.EVENT:
-							o = r.a.createElement(ge.a, {
-								className: Ne.a.icon
+							o = r.a.createElement(fe.a, {
+								className: Ie.a.icon
 							});
 							break;
 						case k.MULTIPLE:
-							a && (o = r.a.createElement(be.a, null)), s === Se.a.SubredditPost && (o = r.a.createElement(xe.a, {
-								className: Ne.a.icon
-							}))
+							a && (o = r.a.createElement(he.a, null)), s === je.a.SubredditPost && (o = r.a.createElement(Ee.a, {
+								className: Ie.a.icon
+							}));
+							break;
+						case k.NOTE:
+							const e = Object(be.b)("user_note");
+							o = r.a.createElement(e, {
+								className: Ie.a.icon,
+								style: {
+									fontSize: "16px"
+								}
+							})
 					}
 					const i = C[e.action];
 					return r.a.createElement(O.a, {
-						className: Ne.a.actionLink,
+						className: Ie.a.actionLink,
 						to: t
 					}, r.a.createElement("span", {
-						className: Ne.a.iconWrapper
-					}, o, n && n.treatment === y.POSITIVE ? r.a.createElement(ve.a, {
-						className: Ne.a.positiveTreatment
-					}) : n && n.treatment === y.NEGATIVE ? r.a.createElement(Ee.a, {
-						className: Ne.a.negativeTreatment
+						className: Ie.a.iconWrapper
+					}, o, n && n.treatment === y.POSITIVE ? r.a.createElement(Ce.a, {
+						className: Ie.a.positiveTreatment
+					}) : n && n.treatment === y.NEGATIVE ? r.a.createElement(ve.a, {
+						className: Ie.a.negativeTreatment
 					}) : null), i && i())
 				},
-				Te = ({
+				we = ({
 					action: e
 				}) => {
 					const t = e.target && e.target.__typename;
 					let n, s, a, o = e.target;
 					switch (t) {
-						case Se.a.SubredditPost:
+						case je.a.SubredditPost:
 							n = (o = o).authorInfo && o.authorInfo.__typename === ue.c.AvailableRedditor && o.authorInfo.name || null, s = o.title, a = o.permalink;
 							break;
-						case Se.a.DeletedSubredditPost:
+						case je.a.DeletedSubredditPost:
 							n = null, s = (o = o).title, a = o.permalink;
 							break;
 						case ue.c.AvailableRedditor:
 							n = (o = o) && o.name || null, s = null;
 							break;
-						case Oe.d.Comment:
+						case Se.d.Comment:
 							n = (o = o).authorInfo && o.authorInfo.__typename === ue.c.AvailableRedditor && o.authorInfo.name || null, s = o.content && o.content.markdown, a = o.permalink;
 							break;
-						case Oe.d.DeletedComment:
+						case Se.d.DeletedComment:
 							n = null, s = (o = o).postInfo && o.postInfo.title, a = o.postInfo && o.postInfo.permalink;
 							break;
 						default:
@@ -12819,29 +12835,29 @@
 					_[e.details] && (i = e.details && _[e.details]());
 					let d = e.actionNotes || i;
 					return e.actionNotes && i && (d = `${i}: ${e.actionNotes}`), r.a.createElement("div", {
-						className: Ne.a.detailsContainer
+						className: Ie.a.detailsContainer
 					}, n && !E.includes(n) ? r.a.createElement(le.a, {
 						tooltipId: `userlink-${e.id}`,
 						user: n,
 						sendHoverCardEvent: ie.a
 					}, r.a.createElement(de.a, {
-						className: Ne.a.usernameLink,
+						className: Ie.a.usernameLink,
 						author: n
 					}, `u/${n}`)) : n, s && a && r.a.createElement("a", {
-						className: Ne.a.detailsContent,
+						className: Ie.a.detailsContent,
 						target: "_blank",
 						rel: "noopener noreferrer",
 						href: a
 					}, s), d && r.a.createElement("span", {
-						className: Ne.a.detailsType
+						className: Ie.a.detailsType
 					}, `(${d})`))
 				},
-				we = "mod-log-timestamp-";
-			class Me extends r.a.Component {
+				Me = "mod-log-timestamp-";
+			class Pe extends r.a.Component {
 				constructor() {
 					super(...arguments), this.createTimestamp = e => {
 						return new Date(e).toString()
-					}, this.getTooltipId = e => `${we}${e}`, this.getActionModeratorName = e => e && e.__typename === ue.c.AvailableRedditor ? e.name : null
+					}, this.getTooltipId = e => `${Me}${e}`, this.getActionModeratorName = e => e && e.__typename === ue.c.AvailableRedditor ? e.name : null
 				}
 				render() {
 					const {
@@ -12852,59 +12868,59 @@
 						onShowTooltip: a
 					} = this.props, o = this.getTooltipId(e.id), i = this.getActionModeratorName(e.moderator);
 					return r.a.createElement("tr", {
-						className: Ne.a.row
+						className: Ie.a.row
 					}, r.a.createElement("td", null, r.a.createElement("span", {
 						id: o,
 						onMouseEnter: () => a(o),
 						onMouseLeave: s,
-						className: Ne.a.tooltip
+						className: Ie.a.tooltip
 					}, r.a.createElement(ce.d, {
 						seconds: e.createdAt / U.Sb
 					}), r.a.createElement(me.c, {
-						className: Ne.a.createdAtTooltip,
+						className: Ie.a.createdAtTooltip,
 						tooltipId: o,
 						text: this.createTimestamp(e.createdAt)
 					}))), r.a.createElement("td", {
-						className: Ne.a.modNameCell
+						className: Ie.a.modNameCell
 					}, i && !E.includes(i) ? r.a.createElement(le.a, {
 						tooltipId: `modlink-${e.id}`,
 						user: i,
 						sendHoverCardEvent: ie.a
 					}, r.a.createElement(de.a, {
 						author: i,
-						className: Ne.a.usernameLink
-					}, i)) : i), r.a.createElement("td", null, r.a.createElement(Ie, {
+						className: Ie.a.usernameLink
+					}, i)) : i), r.a.createElement("td", null, r.a.createElement(Te, {
 						action: e,
 						urlPath: N({
 							currentPageUrl: t,
 							action: e.action,
 							moderator: n
 						})
-					})), r.a.createElement("td", null, r.a.createElement(Te, {
+					})), r.a.createElement("td", null, r.a.createElement(we, {
 						action: e
 					})))
 				}
 			}
-			var Pe = Object(i.b)(null, e => ({
+			var Re = Object(i.b)(null, e => ({
 					onHideTooltip: () => e(Object(f.i)()),
 					onShowTooltip: t => e(Object(f.f)({
 						tooltipId: t
 					}))
-				}))(Me),
-				Re = n("./src/reddit/components/ModHub/InfoLink/index.tsx"),
-				Ae = n("./src/reddit/components/ModHub/InfoTooltip/index.tsx"),
-				Fe = n("./src/reddit/components/ModHub/PaginationButtons/index.tsx"),
-				De = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
-				Le = n("./src/reddit/components/SubredditModerationTopBar/index.tsx"),
-				Ue = n("./src/reddit/constants/parameters.ts"),
-				Be = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				He = n("./src/reddit/components/ModerationLog/index.m.less"),
-				We = n.n(He);
-			const ze = Object(Be.u)({
-					currentPageUrl: Be.f,
-					queryParams: Be.W
+				}))(Pe),
+				Ae = n("./src/reddit/components/ModHub/InfoLink/index.tsx"),
+				Fe = n("./src/reddit/components/ModHub/InfoTooltip/index.tsx"),
+				De = n("./src/reddit/components/ModHub/PaginationButtons/index.tsx"),
+				Le = n("./src/reddit/components/ModHub/StyledComponents/index.tsx"),
+				Ue = n("./src/reddit/components/SubredditModerationTopBar/index.tsx"),
+				Be = n("./src/reddit/constants/parameters.ts"),
+				He = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				We = n("./src/reddit/components/ModerationLog/index.m.less"),
+				ze = n.n(We);
+			const Ve = Object(He.u)({
+					currentPageUrl: He.f,
+					queryParams: He.W
 				}),
-				Ve = Object(d.c)({
+				qe = Object(d.c)({
 					actionsList: W,
 					endCursor: z,
 					nextPage: (e, {
@@ -12915,7 +12931,7 @@
 					}) => e.pages.modHub.moderationLog.hasPreviousPage[t],
 					startCursor: V
 				}),
-				qe = Object(i.b)(Ve, (e, {
+				Ge = Object(i.b)(qe, (e, {
 					subreddit: t
 				}) => ({
 					fetchAllModerators: () => e((e => async (t, n, {
@@ -12937,7 +12953,7 @@
 						}
 					})(t.name))
 				}));
-			class Ge extends r.a.Component {
+			class Ke extends r.a.Component {
 				componentDidMount() {
 					"complete" === document.readyState ? this.props.fetchAllModerators() : window.addEventListener("load", this.props.fetchAllModerators)
 				}
@@ -12951,7 +12967,7 @@
 						queryParams: d,
 						startCursor: l,
 						subredditId: c
-					} = this.props, m = d[Ue.o] || null, u = d[Ue.n] || null, p = {
+					} = this.props, m = d[Be.o] || null, u = d[Be.n] || null, p = {
 						currentPageUrl: t,
 						action: m,
 						moderator: u,
@@ -12962,14 +12978,14 @@
 						action: m,
 						moderator: u
 					};
-					return r.a.createElement(De.a, {
-						className: We.a.contentContainer
-					}, r.a.createElement(De.b, null, a.fbt._("Mod log", null, {
+					return r.a.createElement(Le.a, {
+						className: ze.a.contentContainer
+					}, r.a.createElement(Le.b, null, a.fbt._("Mod log", null, {
 						hk: "UdwRO"
-					}), r.a.createElement(Re.a, {
+					}), r.a.createElement(Ae.a, {
 						linkUrl: `${s.a.redditModHelpUrl}/hc/en-us/articles/360022402312`
-					})), r.a.createElement(Le.a, null, r.a.createElement("span", {
-						className: We.a.title
+					})), r.a.createElement(Ue.a, null, r.a.createElement("span", {
+						className: ze.a.title
 					}, a.fbt._("Filter by", null, {
 						hk: "3RkGvd"
 					})), r.a.createElement(oe, {
@@ -12977,103 +12993,103 @@
 						currentPageUrl: t,
 						moderator: u,
 						subredditId: c
-					}), r.a.createElement(Fe.a, {
+					}), r.a.createElement(De.a, {
 						prevButtonEnabled: i,
 						prevTo: N(p),
 						nextButtonEnabled: o,
 						nextTo: N(b)
 					})), r.a.createElement("table", {
-						className: We.a.table
+						className: ze.a.table
 					}, r.a.createElement("thead", null, r.a.createElement("tr", null, r.a.createElement("th", {
-						className: We.a.timeColHeader
+						className: ze.a.timeColHeader
 					}, a.fbt._("time", null, {
 						hk: "1EnamY"
 					})), r.a.createElement("th", {
-						className: We.a.modNameColHeader
+						className: ze.a.modNameColHeader
 					}, a.fbt._("moderator", null, {
 						hk: "22lRDF"
 					})), r.a.createElement("th", {
-						className: We.a.actionNameColHeader
+						className: ze.a.actionNameColHeader
 					}, r.a.createElement("span", {
-						className: We.a.tooltip
+						className: ze.a.tooltip
 					}, a.fbt._("action", null, {
 						hk: "243Ltb"
-					}), r.a.createElement(Ae.a, {
-						className: We.a.actionTooltip
+					}), r.a.createElement(Fe.a, {
+						className: ze.a.actionTooltip
 					}, r.a.createElement("div", {
-						className: We.a.actionTooltipDescription
+						className: ze.a.actionTooltipDescription
 					}, a.fbt._("Actions performed within your community", null, {
 						hk: "3RTNED"
 					})), r.a.createElement("div", {
-						className: We.a.allIconsContainer
+						className: ze.a.allIconsContainer
 					}, r.a.createElement("div", {
-						className: We.a.iconContainer
-					}, r.a.createElement(xe.a, {
-						className: We.a.icon
+						className: ze.a.iconContainer
+					}, r.a.createElement(Ee.a, {
+						className: ze.a.icon
 					}), a.fbt._("Post", null, {
 						hk: "9rK7i"
 					})), r.a.createElement("div", {
-						className: We.a.iconContainer
-					}, r.a.createElement(be.a, null), a.fbt._("Comment", null, {
+						className: ze.a.iconContainer
+					}, r.a.createElement(he.a, null), a.fbt._("Comment", null, {
 						hk: "1N3Vo2"
 					})), r.a.createElement("div", {
-						className: We.a.iconContainer
-					}, r.a.createElement(ke.a, {
-						className: We.a.icon
+						className: ze.a.iconContainer
+					}, r.a.createElement(ye.a, {
+						className: ze.a.icon
 					}), a.fbt._("Flair", null, {
 						hk: "roX9r"
 					})), r.a.createElement("div", {
-						className: We.a.iconContainer
-					}, r.a.createElement(ye.a, {
-						className: We.a.icon
+						className: ze.a.iconContainer
+					}, r.a.createElement(Oe.a, {
+						className: ze.a.icon
 					}), a.fbt._("Wiki", null, {
 						hk: "27Czfb"
 					})), r.a.createElement("div", {
-						className: We.a.iconContainer
-					}, r.a.createElement(Ce.a, {
-						className: We.a.icon
+						className: ze.a.iconContainer
+					}, r.a.createElement(_e.a, {
+						className: ze.a.icon
 					}), a.fbt._("User management", null, {
 						hk: "NIFnh"
 					})), r.a.createElement("div", {
-						className: We.a.iconContainer
-					}, r.a.createElement(_e.a, {
-						className: We.a.icon
+						className: ze.a.iconContainer
+					}, r.a.createElement(ke.a, {
+						className: ze.a.icon
 					}), a.fbt._("Community settings", null, {
 						hk: "139FAy"
 					})), r.a.createElement("div", {
-						className: We.a.iconContainer
-					}, r.a.createElement(he.a, {
-						className: We.a.icon
+						className: ze.a.iconContainer
+					}, r.a.createElement(ge.a, {
+						className: ze.a.icon
 					}), a.fbt._("Collection", null, {
 						hk: "3a6W4E"
 					})), r.a.createElement("div", {
-						className: We.a.iconContainer
-					}, r.a.createElement(ge.a, {
-						className: We.a.icon
+						className: ze.a.iconContainer
+					}, r.a.createElement(fe.a, {
+						className: ze.a.icon
 					}), a.fbt._("Event", null, {
 						hk: "2odtv8"
 					})), r.a.createElement("div", {
-						className: We.a.iconContainer
-					}, r.a.createElement(fe.a, {
-						className: We.a.icon
+						className: ze.a.iconContainer
+					}, r.a.createElement(xe.a, {
+						className: ze.a.icon
 					}), a.fbt._("Award", null, {
 						hk: "2l9uEL"
 					})))))), r.a.createElement("th", null, r.a.createElement("span", {
-						className: We.a.tooltip
+						className: ze.a.tooltip
 					}, a.fbt._("details", null, {
 						hk: "1hCsar"
-					}), r.a.createElement(Ae.a, {
+					}), r.a.createElement(Fe.a, {
 						text: a.fbt._("Displays the author, post or comment link, and any additional information", null, {
 							hk: "1EN2HF"
 						})
-					}))))), r.a.createElement("tbody", null, e.map(e => r.a.createElement(Pe, {
+					}))))), r.a.createElement("tbody", null, e.map(e => r.a.createElement(Re, {
 						key: e.id,
 						action: e,
 						currentPageUrl: t,
 						moderator: u
 					})))), r.a.createElement("div", {
-						className: We.a.bottomBarRow
-					}, r.a.createElement(Fe.a, {
+						className: ze.a.bottomBarRow
+					}, r.a.createElement(De.a, {
 						prevButtonEnabled: i,
 						prevTo: N(p),
 						nextButtonEnabled: o,
@@ -13081,7 +13097,7 @@
 					})))
 				}
 			}
-			t.a = ze(qe(Ge))
+			t.a = Ve(Ge(Ke))
 		},
 		"./src/reddit/components/ModerationPagesEmptyList/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -23665,4 +23681,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.139296fcd6f170179ac4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1588c50263bfb6b21cd4.js.map
