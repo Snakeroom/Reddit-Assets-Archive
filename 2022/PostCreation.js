@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.a5777e47d7513f850436.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.3bad8ffe0f5a83f88969.js
+// Retrieved at 3/21/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -14973,7 +14973,7 @@
 						...d,
 						variables: t
 					});
-					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(u.s.Talk)
+					return !!Object(i.c)(n) && (n.body.data.subredditInfoById.allowedPostTypes || []).includes(u.t.Talk)
 				}, h = (e, t) => Object(a.a)(e, {
 					...c,
 					variables: t
@@ -25690,4 +25690,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.a5777e47d7513f850436.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3bad8ffe0f5a83f88969.js.map
