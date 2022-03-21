@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.408f34803234046c76fe.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.e2f8f1189981cacb54a6.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -61,13 +61,13 @@
 						const a = s(),
 							r = null === (i = Object(l.k)(a)) || void 0 === i ? void 0 : i.id;
 						if (!r) throw new Error("Failed to get current user during emoji upload");
-						const c = await Object(d.g)(t);
+						const c = await Object(d.h)(t);
 						if (!c) throw new Error("Cannot determine file mimeType");
 						const {
 							file: u,
 							width: p,
 							height: E
-						} = await Object(d.n)(t, m.a), b = await o(h({
+						} = await Object(d.o)(t, m.a), b = await o(h({
 							subredditId: e,
 							mimeType: c
 						}, {
@@ -118,7 +118,7 @@
 					} = n.body.data.createCustomEmoji;
 					if (!i || a) throw new Error(`Failed to create custom emoji: ${Object(u.a)(a)}`);
 					const l = r.emojiIcon.url;
-					await Object(d.m)(l);
+					await Object(d.n)(l);
 					const {
 						subredditId: m
 					} = e;
@@ -782,4 +782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.408f34803234046c76fe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.e2f8f1189981cacb54a6.js.map

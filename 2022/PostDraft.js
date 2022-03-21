@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.149768a6a24627603caa.js
-// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.55d8aec6c0a44465e175.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -595,7 +595,7 @@
 					return a
 				}, Z = Object(i.a)(c.l), X = Object(i.a)(c.m), q = Object(i.a)(c.k), Q = e => async (t, n) => {
 					const s = n();
-					if (Object(S.b)(s)) return void t(Object(a.ab)(Object(j.b)(e.permalink), e.id));
+					if (Object(S.b)(s)) return void t(Object(a.bb)(Object(j.b)(e.permalink), e.id));
 					const r = s.platform.currentPage.locationState;
 					t(!(!r || !r[l.b.IsOverlay]) ? Object(w.a)(e.permalink) : Object(o.b)(Object(j.b)(e.permalink)))
 				}, $ = Object(i.a)(c.i), ee = Object(i.a)(c.j), te = Object(i.a)(c.h), ne = Object(i.a)(c.p), se = Object(i.a)(c.o), oe = Object(i.a)(c.q), re = e => async t => {
@@ -3043,12 +3043,12 @@
 						rtJsonElementProps: r
 					});
 					switch (s) {
-						case b.cf.SmIcon:
+						case b.ef.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: r
 							});
-						case b.cf.SmIconHc:
+						case b.ef.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5074,12 +5074,12 @@
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Ve
+						experimentName: s.Xe
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.cf.SmIcon || t === s.cf.SmIconHc
+					return t === s.ef.SmIcon || t === s.ef.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -5102,4 +5102,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.149768a6a24627603caa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.55d8aec6c0a44465e175.js.map

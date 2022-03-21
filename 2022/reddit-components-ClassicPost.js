@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.b30aceed64177b737814.js
-// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.85e3c1a75827fc503bc1.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2206,7 +2206,7 @@
 					toggle: () => e(Object(l.x)({
 						postId: t.post.id
 					})),
-					showModalOnPostLinkClick: t => e(Object(l.ab)(Object(p.b)(t.permalink), t.id))
+					showModalOnPostLinkClick: t => e(Object(l.bb)(Object(p.b)(t.permalink), t.id))
 				})),
 				O = (e, t = !1, n) => {
 					const s = Object(c.a)(g.a.icon, g.a.hideOnHover);
@@ -2827,10 +2827,10 @@
 					postId: t
 				}) => ({
 					handleVote: n => {
-						const s = n === i.a.upvoted ? Object(r.jb)(t) : Object(r.w)(t);
+						const s = n === i.a.upvoted ? Object(r.kb)(t) : Object(r.w)(t);
 						e(s)
 					},
-					onIgnoreReports: () => e(Object(r.fb)(t)),
+					onIgnoreReports: () => e(Object(r.gb)(t)),
 					onOpenReportsDropdown: t => e(Object(a.h)({
 						tooltipId: t
 					}))
@@ -3205,13 +3205,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.re,
+					experimentName: o.te,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.ze.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Be.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(a.G, i, (e, t) => c(e, t));
 			Object(s.a)((e, t) => t, i, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.b30aceed64177b737814.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.85e3c1a75827fc503bc1.js.map

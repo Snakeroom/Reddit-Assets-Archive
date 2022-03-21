@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.83f45eb9a1f994dcdb41.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.caaa98ab52cfaf0fcc5a.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -714,7 +714,7 @@
 						} = (null === (i = s.recommendationContext) || void 0 === i ? void 0 : i.source) || {};
 					Object(h.useEffect)(() => {
 						if (l === x.a.ThankYouView) {
-							const e = r.current ? () => n(Object(w.eb)(p, !0, !1, !0)) : a,
+							const e = r.current ? () => n(Object(w.fb)(p, !0, !1, !0)) : a,
 								t = setTimeout(e, 1500);
 							return () => clearTimeout(t)
 						}
@@ -2157,4 +2157,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.83f45eb9a1f994dcdb41.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.caaa98ab52cfaf0fcc5a.js.map

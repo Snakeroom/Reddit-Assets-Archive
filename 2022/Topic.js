@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.36e7796813c0cc6a2fd1.js
-// Retrieved at 3/10/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.0973d4fd28e8a97751c4.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1563,7 +1563,7 @@
 					trackOnPostExitedViewport: (t, n, s, r, i) => {
 						e(d.P(t, s, r, i))
 					},
-					showModalOnScroll: () => e(d.bb()),
+					showModalOnScroll: () => e(d.cb()),
 					surveyTriggerScrollCounted: () => e(Object(u.l)())
 				}),
 				N = e => Object(h.b)({
@@ -2956,8 +2956,8 @@
 			}) => e.tracking.viewportDataLoaded[t]
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"96ad05ccb84c"}')
+			e.exports = JSON.parse('{"id":"b2ec21536710"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.36e7796813c0cc6a2fd1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.0973d4fd28e8a97751c4.js.map

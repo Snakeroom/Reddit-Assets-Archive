@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.4ecd649fa770f28d8a63.js
-// Retrieved at 3/7/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.fd648e60577671cdb3f3.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -282,9 +282,9 @@
 			})), n.d(t, "f", (function() {
 				return P
 			})), n.d(t, "g", (function() {
-				return R
+				return w
 			})), n.d(t, "d", (function() {
-				return k
+				return R
 			})), n.d(t, "e", (function() {
 				return D
 			})), n.d(t, "h", (function() {
@@ -320,9 +320,9 @@
 				S = Object(s.a)(h.t),
 				L = Object(s.a)(h.u),
 				A = Object(s.a)(h.v),
-				w = Object(s.a)(h.w),
-				R = Object(s.a)(h.x),
-				k = (e, t) => async (n, r, {
+				k = Object(s.a)(h.w),
+				w = Object(s.a)(h.x),
+				R = (e, t) => async (n, r, {
 					apiContext: s,
 					gqlContext: o
 				}) => {
@@ -359,7 +359,7 @@
 							const {
 								postId: e
 							} = c, t = s.posts.models[e];
-							t && t.voteState === _.a.notVoted && n(Object(a.jb)(e))
+							t && t.voteState === _.a.notVoted && n(Object(a.kb)(e))
 						}
 					} else n(y({
 						pollId: e,
@@ -403,7 +403,7 @@
 				}) => {
 					t(A());
 					const s = await Object(b.a)(r(), e);
-					s.ok ? t(w(s.body)) : t(L({
+					s.ok ? t(k(s.body)) : t(L({
 						error: s.error
 					}))
 				}
@@ -764,9 +764,9 @@
 			}
 			var L = n("./src/reddit/actions/governance/index.ts"),
 				A = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				w = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				R = n("./src/reddit/helpers/trackers/post.ts"),
-				k = n("./src/reddit/selectors/crypto/points.ts"),
+				k = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				w = n("./src/reddit/helpers/trackers/post.ts"),
+				R = n("./src/reddit/selectors/crypto/points.ts"),
 				D = n("./src/reddit/components/Poll/PollExpiry/index.tsx"),
 				V = n("./src/reddit/components/Poll/PollBody/ClosedPoll/index.m.less"),
 				B = n.n(V);
@@ -775,7 +775,7 @@
 				let t;
 				const {
 					pointsDetails: n
-				} = Object(k.c)();
+				} = Object(R.c)();
 				return e.poll.options.forEach(n => {
 					t || (t = n);
 					const s = e.result.options[n.id],
@@ -827,7 +827,7 @@
 								for (const t of e)
 									if (t.checked) return parseInt(t.value)
 							}(Array.from(n.elements).filter(z));
-						U()(r) || (this.props.onVoteSelection(t.options[r]), this.props.sendEvent(Object(R.g)(t.id, t.postId, r)))
+						U()(r) || (this.props.onVoteSelection(t.options[r]), this.props.sendEvent(Object(w.g)(t.id, t.postId, r)))
 					}
 				}
 				render() {
@@ -881,7 +881,7 @@
 							poll: e,
 							sendEvent: t
 						} = this.props;
-						e && t(Object(R.f)(e.id, e.postId))
+						e && t(Object(w.f)(e.id, e.postId))
 					}
 				}
 				componentDidMount() {
@@ -929,8 +929,8 @@
 				result: (e, t) => e.polls.results[t.resultType][t.pollId],
 				voteInProgress: (e, t) => !!e.polls.api.voting.pending[t.pollId]
 			});
-			var ne = Object(w.u)({
-					isCommentsPage: w.x
+			var ne = Object(k.u)({
+					isCommentsPage: k.x
 				})(Object(a.b)(te, (e, t) => ({
 					onVoteSelection: n => e(Object(L.d)(t.pollId, n.id))
 				}))(Object(A.c)(ee))),
@@ -990,7 +990,7 @@
 				}) => e.polls.results.byVotingPower[t],
 				pointsDetails: (e, {
 					subredditId: t
-				}) => Object(k.b)(e, t)
+				}) => Object(R.b)(e, t)
 			});
 			var me = Object(a.b)(ue)((function(e) {
 					var t;
@@ -1034,7 +1034,7 @@
 				}) => e.subreddits.gov.distributions[t],
 				pointsDetails: (e, {
 					subredditId: t
-				}) => Object(k.b)(e, t),
+				}) => Object(R.b)(e, t),
 				poll: (e, {
 					pollId: t
 				}) => e.polls.models[t],
@@ -1720,4 +1720,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.4ecd649fa770f28d8a63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.fd648e60577671cdb3f3.js.map

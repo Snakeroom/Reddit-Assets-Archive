@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.9bf55b5698ae4cfd8303.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.6f69fab227ba2e87baeb.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -446,7 +446,7 @@
 					}
 				}),
 				ue = async (e, t, a) => {
-					const n = await Object(ne.g)(t.file) || t.file.type,
+					const n = await Object(ne.h)(t.file) || t.file.type,
 						s = await Object(se.d)(e(), a, t.file.name, n);
 					if (!s.ok) {
 						const e = new Error(`Error creating S3 lease for award: ${s.error&&s.error.type}`);
@@ -2152,4 +2152,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.9bf55b5698ae4cfd8303.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.6f69fab227ba2e87baeb.js.map

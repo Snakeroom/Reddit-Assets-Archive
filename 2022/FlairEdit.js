@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.b2a8031430b8b77e9463.js
-// Retrieved at 3/14/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.c22959a8dfcedfbd8a87.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, o) {},
@@ -184,7 +184,7 @@
 						}).name;
 					o(Object(u.k)(e));
 					const m = e.file,
-						h = await Object(g.g)(m),
+						h = await Object(g.h)(m),
 						f = await (async (e, t, o, s) => Object(a.a)(Object(c.a)(e, [d.a]), {
 							endpoint: `${e.apiUrl}/api/v1/${t}/emoji_asset_upload_s3.json`,
 							method: r.jb.POST,
@@ -1864,4 +1864,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.b2a8031430b8b77e9463.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.c22959a8dfcedfbd8a87.js.map

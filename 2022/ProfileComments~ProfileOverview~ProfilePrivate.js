@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.cbf6deff2be6a503fb6b.js
-// Retrieved at 3/14/2022, 7:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.b6629ad6e52b69e811ba.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1136,7 +1136,7 @@
 					toggle: () => e(Object(l.x)({
 						postId: t.post.id
 					})),
-					showModalOnPostLinkClick: t => e(Object(l.ab)(Object(p.b)(t.permalink), t.id))
+					showModalOnPostLinkClick: t => e(Object(l.bb)(Object(p.b)(t.permalink), t.id))
 				})),
 				y = (e, t = !1, s) => {
 					const n = Object(d.a)(g.a.icon, g.a.hideOnHover);
@@ -1440,7 +1440,7 @@
 				comment: y.b,
 				isBlockingInterstitialEnabled: C.b
 			}), e => ({
-				showModalOnAuthorLinkClick: t => e(Object(l.cb)(t))
+				showModalOnAuthorLinkClick: t => e(Object(l.db)(t))
 			})), A = e => {
 				const {
 					post: t,
@@ -2742,10 +2742,10 @@
 					postId: t
 				}) => ({
 					handleVote: s => {
-						const n = s === a.a.upvoted ? Object(r.jb)(t) : Object(r.w)(t);
+						const n = s === a.a.upvoted ? Object(r.kb)(t) : Object(r.w)(t);
 						e(n)
 					},
-					onIgnoreReports: () => e(Object(r.fb)(t)),
+					onIgnoreReports: () => e(Object(r.gb)(t)),
 					onOpenReportsDropdown: t => e(Object(i.h)({
 						tooltipId: t
 					}))
@@ -2995,4 +2995,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.cbf6deff2be6a503fb6b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.b6629ad6e52b69e811ba.js.map

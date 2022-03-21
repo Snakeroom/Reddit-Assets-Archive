@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShortcutWrapper.ab36b3d01d49e8e6a029.js
-// Retrieved at 1/6/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShortcutWrapper.07557e4b182241989808.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShortcutWrapper"], {
 		"./node_modules/combokeys/Combokeys/index.js": function(e, t, o) {
@@ -1334,7 +1334,7 @@
 					}) => {
 						const n = o(),
 							r = n.shortcuts.activePostId;
-						r && !n.posts.models[r].isSponsored && (t(j.eb(r, !n.posts.models[r].hidden, n.shortcuts.namespace === m.d.Lightbox, !0)), t(L(e)), e(T.i(r)))
+						r && !n.posts.models[r].isSponsored && (t(j.fb(r, !n.posts.models[r].hidden, n.shortcuts.namespace === m.d.Lightbox, !0)), t(L(e)), e(T.i(r)))
 					},
 					[m.c.NextComment]: e => async (t, o, {
 						apiContext: s
@@ -1441,7 +1441,7 @@
 								activePostId: i
 							} = n.shortcuts,
 							a = Object(R.c)(n);
-						a && (r && !n.features.comments.collapsed[a][r] ? (t(g.m(r)), e(T.q(r))) : i && (t(j.U(i)), e(T.r(i))))
+						a && (r && !n.features.comments.collapsed[a][r] ? (t(g.m(r)), e(T.q(r))) : i && (t(j.V(i)), e(T.r(i))))
 					},
 					[m.c.Upvote]: e => async (t, o, {
 						apiContext: s
@@ -1452,7 +1452,7 @@
 								activePostId: i
 							} = n.shortcuts,
 							a = Object(R.c)(n);
-						a && (r && !n.features.comments.collapsed[a][r] ? (t(g.q(r)), e(T.t(r))) : i && (t(j.jb(i)), e(T.u(i))))
+						a && (r && !n.features.comments.collapsed[a][r] ? (t(g.q(r)), e(T.t(r))) : i && (t(j.kb(i)), e(T.u(i))))
 					},
 					[m.c.Konami]: null
 				},
@@ -1507,4 +1507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShortcutWrapper.ab36b3d01d49e8e6a029.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShortcutWrapper.07557e4b182241989808.js.map

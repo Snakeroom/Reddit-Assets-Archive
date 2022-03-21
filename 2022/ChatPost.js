@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.5cc3b34af243c6d36fe6.js
-// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.493f09c0907e77c5f56c.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -285,7 +285,7 @@
 						}),
 						id: m,
 						onClick: e => {
-							null == o || o(e), G(l, n.id), d && (e.preventDefault(), l(Object(H.Y)(Object(K.b)(i), n.postId)))
+							null == o || o(e), G(l, n.id), d && (e.preventDefault(), l(Object(H.Z)(Object(K.b)(i), n.postId)))
 						},
 						onMouseEnter: u,
 						onMouseLeave: u,
@@ -2146,7 +2146,7 @@
 				Ft = n("./src/reddit/constants/experiments.ts"),
 				Dt = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Ut = e => Object(Dt.c)(e, {
-				experimentName: Ft.mb,
+				experimentName: Ft.nb,
 				experimentEligibilitySelector: Dt.a
 			}) === Ft.hb.Enabled;
 			var Wt = n("./src/reddit/selectors/communityAwards.ts");
@@ -3620,4 +3620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.5cc3b34af243c6d36fe6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.493f09c0907e77c5f56c.js.map

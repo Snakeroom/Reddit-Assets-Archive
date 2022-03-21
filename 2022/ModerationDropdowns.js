@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.48ec7b0d5c6429115aea.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.738eb210843fabb6fbf0.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, s) {
@@ -571,8 +571,8 @@
 					post: A
 				}) => {
 					var W, B, G, H, V;
-					const K = (null === (W = A.pollData) || void 0 === W ? void 0 : W.isPrediction) && !(null === (B = A.pollData) || void 0 === B ? void 0 : B.resolvedOptionId),
-						U = (null === (G = A.pollData) || void 0 === G ? void 0 : G.isPrediction) && null !== A.pollData.resolvedOptionId,
+					const U = (null === (W = A.pollData) || void 0 === W ? void 0 : W.isPrediction) && !(null === (B = A.pollData) || void 0 === B ? void 0 : B.resolvedOptionId),
+						K = (null === (G = A.pollData) || void 0 === G ? void 0 : G.isPrediction) && null !== A.pollData.resolvedOptionId,
 						Q = A.flair.filter(e => e.type !== N.f.Nsfw && e.type !== N.f.Spoiler).length > 0,
 						Z = Object(v.b)(A),
 						q = !(!A.approvedBy || !Z),
@@ -630,12 +630,12 @@
 							hk: "hgWFW"
 						}),
 						onClick: p
-					}, o.a.createElement(y.i, null)), K && o.a.createElement(y.e, {
+					}, o.a.createElement(y.i, null)), U && o.a.createElement(y.e, {
 						displayText: j.fbt._("Update the end date", null, {
 							hk: "FjDpu"
 						}),
 						onClick: b
-					}, o.a.createElement(y.b, null)), U && o.a.createElement(y.e, {
+					}, o.a.createElement(y.b, null)), K && o.a.createElement(y.e, {
 						textClassName: S.a.text,
 						onClick: u,
 						displayText: j.fbt._("Change the outcome", null, {
@@ -711,13 +711,13 @@
 					onCcPost: () => {
 						e(Object(d.i)(x.a.CROWD_CONTROL)), e(Object(l.u)(t.id))
 					},
-					onRemovePost: () => e(Object(l.T)(t.id, !1)),
+					onRemovePost: () => e(Object(l.U)(t.id, !1)),
 					onModToMemberShareOpened: () => {
 						e(Object(d.i)(x.a.MOD_TO_MEMBER_SHARE)), e(Object(l.F)(t.id))
 					},
-					onSpamPost: () => e(Object(l.T)(t.id, !0)),
-					onSpoilerPost: () => e(Object(l.db)(t.id)),
-					onStickyPost: () => e(Object(l.hb)(t.id))
+					onSpamPost: () => e(Object(l.U)(t.id, !0)),
+					onSpoilerPost: () => e(Object(l.eb)(t.id)),
+					onStickyPost: () => e(Object(l.ib)(t.id))
 				})),
 				H = Object(p.a)(h.a);
 			t.default = W(G(Object(b.c)(({
@@ -1289,4 +1289,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.48ec7b0d5c6429115aea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.738eb210843fabb6fbf0.js.map

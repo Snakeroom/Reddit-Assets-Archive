@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.a95318fc62d6e6a63be9.js
-// Retrieved at 3/7/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.ceafe19709dd60336bd5.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, o) {
@@ -299,7 +299,7 @@
 					tooltipId: C(t.reason, t.reportedThingId)
 				})),
 				toggleSnooze: o => {
-					Object(g.a)(t.reportedThingId) ? e(Object(a.h)(t.reportedThingId, t.reason, o)) : e(Object(l.gb)(t.reportedThingId, t.reason, o))
+					Object(g.a)(t.reportedThingId) ? e(Object(a.h)(t.reportedThingId, t.reason, o)) : e(Object(l.hb)(t.reportedThingId, t.reason, o))
 				}
 			})), S = Object(m.a)(b.a);
 			class y extends n.a.Component {
@@ -536,4 +536,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.a95318fc62d6e6a63be9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.ceafe19709dd60336bd5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.4476288c784401101c5f.js
-// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.e19e2d7feddc8a7b38f8.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -4088,7 +4088,7 @@
 						n = ((e, {
 							postId: t
 						}) => ({
-							onIgnoreReports: () => e(Object(j.fb)(t))
+							onIgnoreReports: () => e(Object(j.gb)(t))
 						}))(Object(y.d)(), {
 							...t
 						}),
@@ -4509,7 +4509,7 @@
 						subredditOrProfile: h,
 						subredditOrProfileAboutInfo: x
 					} = Object(i.e)(t => be(t, e)), f = Object(i.d)(), g = Object(o.useCallback)(e => {
-						h && n.type === oe.a.PROFILE && p && (e.preventDefault(), f(Object(z.cb)(h.url))), m(Object(F.p)(c, l, n, r))
+						h && n.type === oe.a.PROFILE && p && (e.preventDefault(), f(Object(z.db)(h.url))), m(Object(F.p)(c, l, n, r))
 					}, [m, c, l, r, n, p, f, h]), O = Object(o.useCallback)(e => {
 						e.preventDefault(), e.stopPropagation(), m(Object(F.p)(c, l, n, r))
 					}, [m, c, l, n, r]);
@@ -5037,7 +5037,7 @@
 				} = D || oe || {}, le = (null == de ? void 0 : de.type) === P.o.EMBED && (null == de ? void 0 : de.provider) === P.v.Twitter, me = (null == de ? void 0 : de.type) === P.o.VIDEO || (null == de ? void 0 : de.type) === P.o.GIFVIDEO;
 
 				function ue(e) {
-					e.stopPropagation(), e.preventDefault(), oe.isSponsored ? (ne(Object(x.z)(oe, _.a.Click)), oe.source ? oe.source.outboundUrl ? Object(h.e)(oe.source.outboundUrl, h.d.BLANK) : Object(h.e)(oe.source.url, h.d.BLANK) : Object(h.e)(oe.permalink, h.d.BLANK)) : ne(Z ? Object(x.ab)(Object(N.b)(oe.permalink), oe.id) : Object(I.a)({
+					e.stopPropagation(), e.preventDefault(), oe.isSponsored ? (ne(Object(x.z)(oe, _.a.Click)), oe.source ? oe.source.outboundUrl ? Object(h.e)(oe.source.outboundUrl, h.d.BLANK) : Object(h.e)(oe.source.url, h.d.BLANK) : Object(h.e)(oe.permalink, h.d.BLANK)) : ne(Z ? Object(x.bb)(Object(N.b)(oe.permalink), oe.id) : Object(I.a)({
 						pathname: Object(N.b)(oe.permalink),
 						state: Object(T.b)(te)
 					}))
@@ -7193,12 +7193,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case C.cf.SmIcon:
+						case C.ef.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case C.cf.SmIconHc:
+						case C.ef.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -7650,7 +7650,7 @@
 					trackOnPostExitedViewport: (t, s, n, r, o) => {
 						e(d.P(t, n, r, o))
 					},
-					showModalOnScroll: () => e(d.bb()),
+					showModalOnScroll: () => e(d.cb()),
 					surveyTriggerScrollCounted: () => e(Object(m.l)())
 				}),
 				w = e => Object(b.b)({
@@ -9637,8 +9637,8 @@
 				}) === n.w.Enabled,
 				a = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.Bc
-				}) === n.bd
+					experimentName: n.Dc
+				}) === n.dd
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -9665,8 +9665,8 @@
 				a = s("./src/reddit/selectors/user.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
 				experimentEligibilitySelector: a.O,
-				experimentName: r.Sb
-			}), e => e === r.bd)
+				experimentName: r.Ub
+			}), e => e === r.dd)
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -9804,12 +9804,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Ve
+						experimentName: n.Xe
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.cf.SmIcon || t === n.cf.SmIconHc
+					return t === n.ef.SmIcon || t === n.ef.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -9840,8 +9840,8 @@
 			}) => e.tracking.viewportDataLoaded[t]
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"96ad05ccb84c"}')
+			e.exports = JSON.parse('{"id":"b2ec21536710"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.4476288c784401101c5f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.e19e2d7feddc8a7b38f8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.23e7d2ef77ff5743cf1a.js
-// Retrieved at 3/14/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.c4eb4ccd721cb552d966.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, a) {
@@ -116,6 +116,9 @@
 						permalink: `/comments/${a}`,
 						postCategories: null,
 						previewComments: [],
+						isReactAllowed: !1,
+						reactedFrom: null,
+						attributionInfo: null,
 						removedBy: null,
 						removedByCategory: null,
 						score: 11111,
@@ -331,8 +334,8 @@
 				k = x("save_settings"),
 				_ = x("add"),
 				w = T("assign_own"),
-				O = T("enable"),
-				I = T("mods_only"),
+				I = T("enable"),
+				O = T("mods_only"),
 				D = T("edit_text"),
 				P = (e, t) => t ? _(e) : S(e),
 				j = e => T("post_flair_template")(f.d.LinkFlair, e),
@@ -430,7 +433,7 @@
 						const e = this.props.settings,
 							t = this.state.settings,
 							a = t.type;
-						t.displaySettings.isEnabled !== e.displaySettings.isEnabled && this.props.sendEvent(O(a, t.displaySettings.isEnabled)), t.permissions.canAssignOwn !== e.permissions.canAssignOwn && this.props.sendEvent(w(a, t.permissions.canAssignOwn)), this.props.sendEvent(k(a))
+						t.displaySettings.isEnabled !== e.displaySettings.isEnabled && this.props.sendEvent(I(a, t.displaySettings.isEnabled)), t.permissions.canAssignOwn !== e.permissions.canAssignOwn && this.props.sendEvent(w(a, t.permissions.canAssignOwn)), this.props.sendEvent(k(a))
 					}, this.onToggleIsEnabled = () => {
 						const {
 							settings: e
@@ -585,19 +588,19 @@
 				ke = a("./node_modules/react-redux/es/index.js"),
 				_e = a("./node_modules/reselect/es/index.js"),
 				we = a("./src/reddit/actions/tooltip.ts"),
-				Oe = a("./src/reddit/components/StructuredStyles/ColorPicker/BaseColorPicker.tsx"),
-				Ie = a("./src/reddit/selectors/tooltip.ts");
+				Ie = a("./src/reddit/components/StructuredStyles/ColorPicker/BaseColorPicker.tsx"),
+				Oe = a("./src/reddit/selectors/tooltip.ts");
 			const De = ["right", "top"],
 				Pe = Object(_e.c)({
 					isDropdownOpen: (e, {
 						tooltipId: t
-					}) => Object(Ie.b)(t)(e)
+					}) => Object(Oe.b)(t)(e)
 				});
 			var je = Object(ke.b)(Pe, (e, t) => ({
 					onToggleDropdown: () => e(Object(we.h)(t))
 				}))(e => o.a.createElement("div", {
 					id: e.tooltipId
-				}, o.a.createElement(Oe.a, {
+				}, o.a.createElement(Ie.a, {
 					dropdownPosition: De,
 					isDropdownOpen: e.isDropdownOpen,
 					onChange: e.onChange,
@@ -1273,7 +1276,7 @@
 			var kt = a("./src/reddit/icons/fonts/index.tsx"),
 				_t = a("./src/reddit/components/ModHub/flairs/FlairManagement/Placeholder/index.m.less"),
 				wt = a.n(_t);
-			var Ot = e => o.a.createElement("div", {
+			var It = e => o.a.createElement("div", {
 					className: wt.a.container
 				}, o.a.createElement(kt.a, {
 					name: "tag",
@@ -1291,8 +1294,8 @@
 				}) : B.fbt._("Create post flair in your community today", null, {
 					hk: "1QVXca"
 				}))),
-				It = a("./src/reddit/components/ModHub/flairs/FlairManagement/index.m.less"),
-				Dt = a.n(It);
+				Ot = a("./src/reddit/components/ModHub/flairs/FlairManagement/index.m.less"),
+				Dt = a.n(Ot);
 
 			function Pt() {
 				return (Pt = Object.assign || function(e) {
@@ -1414,7 +1417,7 @@
 						flairTemplateType: a
 					} = this.props, s = !e.id;
 					if (!t) return;
-					e.modOnly !== t.modOnly && this.props.sendEvent(I(a, !!e.modOnly)), e.textEditable !== t.textEditable && this.props.sendEvent(D(a, !!e.textEditable)), !!e.styleTemplate != !!t.styleTemplate && this.props.sendEvent(j(!!e.styleTemplate));
+					e.modOnly !== t.modOnly && this.props.sendEvent(O(a, !!e.modOnly)), e.textEditable !== t.textEditable && this.props.sendEvent(D(a, !!e.textEditable)), !!e.styleTemplate != !!t.styleTemplate && this.props.sendEvent(j(!!e.styleTemplate));
 					const n = e.allowableContent || f.a.All;
 					n !== (t.allowableContent || f.a.All) && this.props.sendEvent(M(a, n)), Object(b.l)(e) !== Object(b.l)(t) && this.props.sendEvent(R(a, Object(b.l)(e))), this.props.sendEvent(P(a, s))
 				}
@@ -1520,7 +1523,7 @@
 						})
 					}))), o.a.createElement("div", {
 						className: Dt.a.tableBody
-					}, a === Mt.Default && !t.length && o.a.createElement(Ot, {
+					}, a === Mt.Default && !t.length && o.a.createElement(It, {
 						flairTemplateType: this.props.flairTemplateType
 					}), a === Mt.Reordering ? o.a.createElement(g.a, {
 						values: this.state.templateIdsNewOrder,
@@ -2004,4 +2007,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.23e7d2ef77ff5743cf1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.c4eb4ccd721cb552d966.js.map

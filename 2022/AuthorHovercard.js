@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.c72f5aa8eb05dcebb91e.js
-// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.f5cb9cf4d4541a0808d2.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -3602,7 +3602,7 @@
 				const C = Object(r.useCallback)(() => x(Object(u.g)(e ? "user_hovercard" : "profile_overview", t)), [e, x, t]);
 				return s.a.createElement(m.t, {
 					onClick: () => {
-						n ? (x(u.h), N && _ === b.a.notVoted && I(Object(c.jb)(N))) : C();
+						n ? (x(u.h), N && _ === b.a.notVoted && I(Object(c.kb)(N))) : C();
 						const e = n ? "postify" : "copy";
 						I(Object(d.b)({
 							clickSource: g,
@@ -4796,8 +4796,8 @@
 				}) === a.w.Enabled,
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: a.Bc
-				}) === a.bd
+					experimentName: a.Dc
+				}) === a.dd
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
 			"use strict";
@@ -4815,19 +4815,19 @@
 			const d = Object(a.a)(c.V, c.M, (e, t) => !e && !t),
 				l = Object(a.a)(e => Object(o.c)(e, {
 					experimentEligibilitySelector: d,
-					experimentName: s.wd
+					experimentName: s.yd
 				}), e => Boolean(e)),
 				m = e => Object(o.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: s.wd
+					experimentName: s.yd
 				}),
 				u = Object(a.a)(i.d, m, (e, t) => (null == e ? void 0 : e.toLocaleLowerCase()) === (null == t ? void 0 : t.toLocaleLowerCase())),
 				p = Object(a.a)(i.r, l, u, (e, t, n) => t && e === r.Nb.SUBREDDIT && n),
 				b = e => Boolean(Object(o.c)(e, {
 					experimentEligibilitySelector: p,
-					experimentName: s.wd
+					experimentName: s.yd
 				}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.c72f5aa8eb05dcebb91e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.f5cb9cf4d4541a0808d2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.ddb5ad8fb39f6edb99c8.js
-// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.c3ac1fea79c7b25c368d.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -421,13 +421,13 @@
 						const r = s(),
 							i = null === (o = Object(c.k)(r)) || void 0 === o ? void 0 : o.id;
 						if (!i) throw new Error("Failed to get current user during emoji upload");
-						const d = await Object(l.g)(t);
+						const d = await Object(l.h)(t);
 						if (!d) throw new Error("Cannot determine file mimeType");
 						const {
 							file: u,
 							width: p,
 							height: b
-						} = await Object(l.n)(t, m.a), h = await n(g({
+						} = await Object(l.o)(t, m.a), h = await n(g({
 							subredditId: e,
 							mimeType: d
 						}, {
@@ -478,7 +478,7 @@
 					} = a.body.data.createCustomEmoji;
 					if (!o || r) throw new Error(`Failed to create custom emoji: ${Object(u.a)(r)}`);
 					const c = i.emojiIcon.url;
-					await Object(l.m)(c);
+					await Object(l.n)(c);
 					const {
 						subredditId: m
 					} = e;
@@ -615,8 +615,8 @@
 						if (function(e) {
 								return Object(f.c)(e, {
 									experimentEligibilitySelector: f.a,
-									experimentName: g.od
-								}) === g.bd
+									experimentName: g.qd
+								}) === g.dd
 							}(d())) {
 							const {
 								normalizeModQueueListingFromGql: e,
@@ -3365,7 +3365,7 @@
 						}),
 						id: m,
 						onClick: e => {
-							null == a || a(e), G(c, n.id), l && (e.preventDefault(), c(Object(W.Y)(Object(V.b)(i), n.postId)))
+							null == a || a(e), G(c, n.id), l && (e.preventDefault(), c(Object(W.Z)(Object(V.b)(i), n.postId)))
 						},
 						onMouseEnter: u,
 						onMouseLeave: u,
@@ -7460,10 +7460,10 @@
 						selectedTemplateId: s
 					})),
 					handleVote: n => {
-						const s = n === x.a.upvoted ? Object(E.jb)(t) : Object(E.w)(t);
+						const s = n === x.a.upvoted ? Object(E.kb)(t) : Object(E.w)(t);
 						e(s)
 					},
-					onIgnoreReports: () => e(Object(E.fb)(t)),
+					onIgnoreReports: () => e(Object(E.gb)(t)),
 					onOpenReportsDropdown: t => e(Object(C.h)({
 						tooltipId: t
 					}))
@@ -8258,7 +8258,7 @@
 					toggle: () => e(Object(c.x)({
 						postId: t.post.id
 					})),
-					showModalOnPostLinkClick: t => e(Object(c.ab)(Object(u.b)(t.permalink), t.id))
+					showModalOnPostLinkClick: t => e(Object(c.bb)(Object(u.b)(t.permalink), t.id))
 				})),
 				C = (e, t = !1, n) => {
 					const s = Object(d.a)(E.a.icon, E.a.hideOnHover);
@@ -20069,10 +20069,10 @@
 					postId: t
 				}) => ({
 					handleVote: n => {
-						const s = n === i.a.upvoted ? Object(o.jb)(t) : Object(o.w)(t);
+						const s = n === i.a.upvoted ? Object(o.kb)(t) : Object(o.w)(t);
 						e(s)
 					},
-					onIgnoreReports: () => e(Object(o.fb)(t)),
+					onIgnoreReports: () => e(Object(o.gb)(t)),
 					onOpenReportsDropdown: t => e(Object(r.h)({
 						tooltipId: t
 					}))
@@ -23458,9 +23458,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.ad
+					experimentName: s.cd
 				});
-				return !(!t || Object(s.xf)(t))
+				return !(!t || Object(s.zf)(t))
 			}
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, n) {
@@ -23533,10 +23533,10 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.re,
+					experimentName: a.te,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.ze.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.Be.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(s.a)(r.G, i, (e, t) => d(e, t));
 			Object(s.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -23665,4 +23665,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ddb5ad8fb39f6edb99c8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c3ac1fea79c7b25c368d.js.map

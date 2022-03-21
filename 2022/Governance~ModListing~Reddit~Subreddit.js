@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f2118a3afa56bcbaf090.js
-// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f57472482f8b3af26a2e.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -2148,7 +2148,7 @@
 					return s ? s * n.Sb < 1639443600180 ? void 0 : O(e) : void 0
 				},
 				O = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: c.Ud,
+					experimentName: c.Wd,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -2166,4 +2166,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f2118a3afa56bcbaf090.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f57472482f8b3af26a2e.js.map

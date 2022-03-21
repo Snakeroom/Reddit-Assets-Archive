@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.079160cf6a085199fc09.js
-// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.69eb2de83baad90d89b9.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -1938,7 +1938,7 @@
 				const _ = Object(n.useCallback)(() => h(Object(u.g)(e ? "user_hovercard" : "profile_overview", t)), [e, h, t]);
 				return s.a.createElement(m.t, {
 					onClick: () => {
-						r ? (h(u.h), E && g === b.a.notVoted && I(Object(d.jb)(E))) : _();
+						r ? (h(u.h), E && g === b.a.notVoted && I(Object(d.kb)(E))) : _();
 						const e = r ? "postify" : "copy";
 						I(Object(i.b)({
 							clickSource: N,
@@ -2675,9 +2675,9 @@
 				}) === a.w.Enabled,
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.Bc
-				}) === a.bd
+					experimentName: a.Dc
+				}) === a.dd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.079160cf6a085199fc09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.69eb2de83baad90d89b9.js.map

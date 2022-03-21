@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.aff7e6209e91c2b2face.js
-// Retrieved at 3/14/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.d9542dff5d9efc059d8b.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, n) {},
@@ -3601,7 +3601,7 @@
 						...l
 					} = e;
 					let d = !1;
-					if (i) d = "image" === Object(He.f)(i.metadata.mimetype);
+					if (i) d = "image" === Object(He.g)(i.metadata.mimetype);
 					else {
 						if (!c) return null;
 						d = c.type === N.a.Image || c.type === N.a.AnimatedImage
@@ -3817,7 +3817,7 @@
 						isRteVideoPosterEnabled: n,
 						offsetKey: o,
 						upload: s
-					} = this.props, r = Object(N.h)(e), i = r ? r.thumbnail : void 0, c = !!s && Object(He.l)(s.metadata.mimetype || ""), {
+					} = this.props, r = Object(N.h)(e), i = r ? r.thumbnail : void 0, c = !!s && Object(He.m)(s.metadata.mimetype || ""), {
 						active: a,
 						isInSelection: l
 					} = this.state, d = t.editorType === We.a.Comment;
@@ -5939,7 +5939,7 @@
 								assetId: r,
 								thumbnailAssetId: a
 							} = Object(N.f)(o, n);
-						return Object(He.j)(t) ? Object(gi.b)(r, c) : Object(He.k)(t) ? Object(gi.g)(r, c) : Object(gi.u)(r, c, a, i)
+						return Object(He.k)(t) ? Object(gi.b)(r, c) : Object(He.l)(t) ? Object(gi.g)(r, c) : Object(gi.u)(r, c, a, i)
 					} {
 						const {
 							assetId: e,
@@ -7219,7 +7219,7 @@
 				S = (e, t, n, o) => {
 					let i = e.getCurrentContent();
 					const a = c()(t.map(e => {
-						const t = Object(d.f)(e.metadata.mimetype),
+						const t = Object(d.g)(e.metadata.mimetype),
 							n = (e => {
 								if (e && e.metadata.videoFirstFrameUrl) {
 									return {
@@ -7676,9 +7676,9 @@
 					this.isThumbnailsAreGenerating = !0;
 					const t = document.createElement("video"),
 						n = document.createElement("canvas");
-					await Object(m.o)(t, this.props.videoSource);
+					await Object(m.p)(t, this.props.videoSource);
 					let o = 0;
-					t.currentTime = e[o].time, await Object(m.d)(t, n, t => (e[o].url = t.dataUrl, o++, this.setThumbnails(e), o < e.length ? e[o].time : null)), this.setState({
+					t.currentTime = e[o].time, await Object(m.e)(t, n, t => (e[o].url = t.dataUrl, o++, this.setThumbnails(e), o < e.length ? e[o].time : null)), this.setState({
 						thumbnails: e
 					}), this.isThumbnailsAreGenerating = !1
 				}
@@ -8262,4 +8262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.aff7e6209e91c2b2face.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor.d9542dff5d9efc059d8b.js.map

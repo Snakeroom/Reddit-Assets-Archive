@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.e4685c9f706c57e63065.js
-// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.d2a71e09697db3bb7193.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -191,64 +191,65 @@
 		"./src/reddit/actions/pages/profileOverview/index.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "profileOverviewConversationsPending", (function() {
-				return Oe
-			})), s.d(t, "profileOverviewConversationsLoaded", (function() {
 				return we
-			})), s.d(t, "profileOverviewConversationsFailed", (function() {
+			})), s.d(t, "profileOverviewConversationsLoaded", (function() {
 				return Se
-			})), s.d(t, "profileOverviewChronoPending", (function() {
+			})), s.d(t, "profileOverviewConversationsFailed", (function() {
 				return _e
-			})), s.d(t, "profileOverviewChronoLoaded", (function() {
+			})), s.d(t, "profileOverviewChronoPending", (function() {
 				return je
-			})), s.d(t, "profileOverviewChronoFailed", (function() {
+			})), s.d(t, "profileOverviewChronoLoaded", (function() {
 				return Ne
-			})), s.d(t, "profileOverviewConversationsRequested", (function() {
+			})), s.d(t, "profileOverviewChronoFailed", (function() {
 				return ke
-			})), s.d(t, "profileOverviewRequested", (function() {
+			})), s.d(t, "profileOverviewConversationsRequested", (function() {
 				return Pe
+			})), s.d(t, "profileOverviewRequested", (function() {
+				return Te
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = s("./node_modules/lodash/pick.js"),
 				n = s.n(r),
-				i = s("./src/reddit/actions/moderatingSubreddits.ts"),
-				o = s("./src/reddit/actions/pages/profileShared.ts"),
-				a = s("./src/reddit/actions/subreddit.ts"),
-				d = s("./src/config.ts"),
-				l = s("./src/lib/addAllowQuarantinedParam/index.ts"),
-				c = s("./src/lib/constants/index.ts"),
+				i = s("./src/lib/constants/index.ts"),
+				o = s("./src/reddit/actions/moderatingSubreddits.ts"),
+				a = s("./src/reddit/actions/pages/profileShared.ts"),
+				d = s("./src/reddit/actions/subreddit.ts"),
+				l = s("./src/config.ts"),
+				c = s("./src/lib/addAllowQuarantinedParam/index.ts"),
 				u = s("./src/lib/makeApiRequest/index.ts"),
 				m = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				p = s("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
 				h = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			var b = s("./src/reddit/constants/postLayout.ts"),
-				f = s("./src/reddit/constants/parameters.ts"),
-				v = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				x = s("./src/reddit/selectors/listings.ts"),
-				g = s("./src/reddit/selectors/profile.ts"),
-				C = s("./src/reddit/selectors/user.ts"),
-				y = s("./src/lib/makeActionCreator/index.ts"),
-				I = s("./src/reddit/actions/changeUsername.ts"),
-				E = s("./src/reddit/actions/contentGate.ts"),
-				O = s("./src/reddit/actions/externalAccount.ts"),
-				w = s("./src/reddit/actions/gold/powerups.ts"),
-				S = s("./src/reddit/actions/pinnedPost.ts"),
-				_ = s("./src/reddit/actions/platform.ts"),
-				j = s("./src/reddit/actions/profile/index.ts"),
-				N = s("./src/reddit/actions/trophyCase.ts"),
-				k = s("./src/reddit/constants/errors.ts"),
-				P = s("./src/reddit/helpers/makeProfileListingKey/index.ts"),
-				T = s("./src/reddit/helpers/timeApiRoute/index.ts"),
-				M = s("./src/reddit/actions/pages/profileOverview/constants.ts"),
-				R = s("./src/lib/initializeClient/installReducer.ts"),
-				F = s("./node_modules/redux/es/redux.js"),
-				A = s("./src/reddit/actions/profileOverviewChrono/constants.ts");
-			const L = {};
-			var B = (e = L, t) => {
+			var b = s("./src/reddit/helpers/post/index.ts"),
+				f = s("./src/reddit/constants/postLayout.ts"),
+				v = s("./src/reddit/constants/parameters.ts"),
+				x = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				g = s("./src/reddit/selectors/listings.ts"),
+				C = s("./src/reddit/selectors/profile.ts"),
+				y = s("./src/reddit/selectors/user.ts"),
+				I = s("./src/lib/makeActionCreator/index.ts"),
+				E = s("./src/reddit/actions/changeUsername.ts"),
+				O = s("./src/reddit/actions/contentGate.ts"),
+				w = s("./src/reddit/actions/externalAccount.ts"),
+				S = s("./src/reddit/actions/gold/powerups.ts"),
+				_ = s("./src/reddit/actions/pinnedPost.ts"),
+				j = s("./src/reddit/actions/platform.ts"),
+				N = s("./src/reddit/actions/profile/index.ts"),
+				k = s("./src/reddit/actions/trophyCase.ts"),
+				P = s("./src/reddit/constants/errors.ts"),
+				T = s("./src/reddit/helpers/makeProfileListingKey/index.ts"),
+				M = s("./src/reddit/helpers/timeApiRoute/index.ts"),
+				R = s("./src/reddit/actions/pages/profileOverview/constants.ts"),
+				F = s("./src/lib/initializeClient/installReducer.ts"),
+				A = s("./node_modules/redux/es/redux.js"),
+				L = s("./src/reddit/actions/profileOverviewChrono/constants.ts");
+			const B = {};
+			var U = (e = B, t) => {
 				switch (t.type) {
-					case M.c:
-					case M.b:
-					case A.c:
-					case A.b: {
+					case R.c:
+					case R.b:
+					case L.c:
+					case L.b: {
 						const {
 							key: s
 						} = t.payload;
@@ -257,8 +258,8 @@
 							[s]: null
 						}
 					}
-					case M.a:
-					case A.a: {
+					case R.a:
+					case L.a: {
 						const {
 							key: s,
 							error: r
@@ -272,11 +273,11 @@
 						return e
 				}
 			};
-			const U = {};
-			var H = (e = U, t) => {
+			const H = {};
+			var W = (e = H, t) => {
 					switch (t.type) {
-						case M.c:
-						case A.c: {
+						case R.c:
+						case L.c: {
 							const {
 								key: s
 							} = t.payload;
@@ -285,10 +286,10 @@
 								[s]: !0
 							}
 						}
-						case M.b:
-						case M.a:
-						case A.b:
-						case A.a: {
+						case R.b:
+						case R.a:
+						case L.b:
+						case L.a: {
 							const {
 								key: s
 							} = t.payload;
@@ -301,14 +302,14 @@
 							return e
 					}
 				},
-				W = Object(F.c)({
-					error: B,
-					pending: H
+				D = Object(A.c)({
+					error: U,
+					pending: W
 				});
-			const D = {};
-			var V = (e = D, t) => {
+			const V = {};
+			var z = (e = V, t) => {
 				switch (t.type) {
-					case M.b: {
+					case R.b: {
 						const {
 							key: s
 						} = t.payload;
@@ -317,7 +318,7 @@
 							[s]: {}
 						}
 					}
-					case A.b: {
+					case L.b: {
 						const {
 							key: s,
 							fetchedToken: r
@@ -334,11 +335,11 @@
 						return e
 				}
 			};
-			const z = {};
-			var K = (e = z, t) => {
+			const K = {};
+			var G = (e = K, t) => {
 					switch (t.type) {
-						case M.b:
-						case A.b: {
+						case R.b:
+						case L.b: {
 							const {
 								key: s,
 								overviewIds: r
@@ -352,12 +353,12 @@
 							return e
 					}
 				},
-				G = s("./src/lib/omitKey/index.ts");
-			const q = {};
-			var Z = (e = q, t) => {
+				q = s("./src/lib/omitKey/index.ts");
+			const Z = {};
+			var Q = (e = Z, t) => {
 					switch (t.type) {
-						case M.b:
-						case A.b: {
+						case R.b:
+						case L.b: {
 							const {
 								key: s,
 								dist: r,
@@ -369,23 +370,23 @@
 									dist: r,
 									token: n
 								}
-							} : Object(G.a)(e, s)
+							} : Object(q.a)(e, s)
 						}
 						default:
 							return e
 					}
 				},
-				Q = Object(F.c)({
-					api: W,
-					fetchedTokens: V,
-					ids: K,
-					loadMore: Z
+				Y = Object(A.c)({
+					api: D,
+					fetchedTokens: z,
+					ids: G,
+					loadMore: Q
 				});
-			const Y = {};
-			var J = (e = Y, t) => {
+			const J = {};
+			var X = (e = J, t) => {
 				switch (t.type) {
-					case M.f:
-					case M.e: {
+					case R.f:
+					case R.e: {
 						const {
 							key: s
 						} = t.payload;
@@ -394,7 +395,7 @@
 							[s]: null
 						}
 					}
-					case M.d: {
+					case R.d: {
 						const {
 							key: s,
 							error: r
@@ -408,10 +409,10 @@
 						return e
 				}
 			};
-			const X = {};
-			var $ = (e = X, t) => {
+			const $ = {};
+			var ee = (e = $, t) => {
 					switch (t.type) {
-						case M.f: {
+						case R.f: {
 							const {
 								key: s
 							} = t.payload;
@@ -420,8 +421,8 @@
 								[s]: !0
 							}
 						}
-						case M.e:
-						case M.d: {
+						case R.e:
+						case R.d: {
 							const {
 								key: s
 							} = t.payload;
@@ -434,16 +435,16 @@
 							return e
 					}
 				},
-				ee = Object(F.c)({
-					error: J,
-					pending: $
+				te = Object(A.c)({
+					error: X,
+					pending: ee
 				}),
-				te = s("./src/reddit/actions/profileConversations.ts");
-			const se = {};
-			var re = (e = se, t) => {
+				se = s("./src/reddit/actions/profileConversations.ts");
+			const re = {};
+			var ne = (e = re, t) => {
 				switch (t.type) {
-					case te.c:
-					case te.b: {
+					case se.c:
+					case se.b: {
 						const {
 							extraCommentsId: s
 						} = t.payload;
@@ -452,7 +453,7 @@
 							[s]: null
 						}
 					}
-					case te.a: {
+					case se.a: {
 						const {
 							extraCommentsId: s,
 							error: r
@@ -466,10 +467,10 @@
 						return e
 				}
 			};
-			const ne = {};
-			var ie = (e = ne, t) => {
+			const ie = {};
+			var oe = (e = ie, t) => {
 					switch (t.type) {
-						case te.c: {
+						case se.c: {
 							const {
 								extraCommentsId: s
 							} = t.payload;
@@ -478,8 +479,8 @@
 								[s]: !0
 							}
 						}
-						case te.b:
-						case te.a: {
+						case se.b:
+						case se.a: {
 							const {
 								extraCommentsId: s
 							} = t.payload;
@@ -492,16 +493,16 @@
 							return e
 					}
 				},
-				oe = Object(F.c)({
-					error: re,
-					pending: ie
+				ae = Object(A.c)({
+					error: ne,
+					pending: oe
 				});
-			const ae = {};
-			var de = (e = ae, t) => {
+			const de = {};
+			var le = (e = de, t) => {
 					switch (t.type) {
-						case M.e:
-						case te.b:
-						case te.e:
+						case R.e:
+						case se.b:
+						case se.e:
 							return {
 								...e, ...t.payload.extraComments
 							};
@@ -509,19 +510,19 @@
 							return e
 					}
 				},
-				le = Object(F.c)({
-					api: oe,
-					models: de
+				ce = Object(A.c)({
+					api: ae,
+					models: le
 				}),
-				ce = s("./node_modules/lodash/mapValues.js"),
-				ue = s.n(ce),
-				me = s("./src/lib/makeOverviewConversationsItemKey/index.ts"),
-				pe = s("./src/reddit/constants/comments.ts");
-			const he = {};
+				ue = s("./node_modules/lodash/mapValues.js"),
+				me = s.n(ue),
+				pe = s("./src/lib/makeOverviewConversationsItemKey/index.ts"),
+				he = s("./src/reddit/constants/comments.ts");
+			const be = {};
 
-			function be(e) {
+			function fe(e) {
 				const t = e;
-				return ue()(t, ({
+				return me()(t, ({
 					depth: e,
 					next: t,
 					prev: s
@@ -531,7 +532,7 @@
 					prev: s
 				}))
 			}
-			const fe = (e, t, s) => {
+			const ve = (e, t, s) => {
 				const r = {};
 				for (const n in t) {
 					const e = t[n],
@@ -555,25 +556,25 @@
 				}
 				return r
 			};
-			var ve = (e = he, t) => {
+			var xe = (e = be, t) => {
 				switch (t.type) {
-					case M.e:
-					case te.e: {
+					case R.e:
+					case se.e: {
 						const {
 							comments: s,
 							extraComments: r,
 							postIds: n,
 							profileName: i
-						} = t.payload, o = fe(n, s, r), a = {};
+						} = t.payload, o = ve(n, s, r), a = {};
 						for (const e of n) {
-							a[Object(me.a)(e, i)] = o.hasOwnProperty(e) ? be(o[e]) : {}
+							a[Object(pe.a)(e, i)] = o.hasOwnProperty(e) ? fe(o[e]) : {}
 						}
 						return {
 							...e,
 							...a
 						}
 					}
-					case te.b: {
+					case se.b: {
 						const {
 							comments: s,
 							commentLists: r,
@@ -601,8 +602,8 @@
 							}
 						}
 						const d = o[0],
-							l = be(fe(o, s, n)[d]),
-							c = Object(me.a)(d, a),
+							l = fe(ve(o, s, n)[d]),
+							c = Object(pe.a)(d, a),
 							u = {
 								...e[c]
 							},
@@ -612,7 +613,7 @@
 							b = h && h.id || "",
 							f = {
 								id: b,
-								type: pe.a.Comment
+								type: he.a.Comment
 							},
 							v = {
 								...u,
@@ -635,18 +636,18 @@
 						return e
 				}
 			};
-			const xe = {};
-			var ge = (e = xe, t) => {
+			const ge = {};
+			var Ce = (e = ge, t) => {
 				switch (t.type) {
-					case M.e:
-					case te.e: {
+					case R.e:
+					case se.e: {
 						const {
 							commentLists: s,
 							postIds: r,
 							profileName: n
 						} = t.payload, i = {};
 						for (const e of r) {
-							i[Object(me.a)(e, n)] = s[e] && s[e].head ? s[e].head.id : null
+							i[Object(pe.a)(e, n)] = s[e] && s[e].head ? s[e].head.id : null
 						}
 						return {
 							...e,
@@ -657,17 +658,17 @@
 						return e
 				}
 			};
-			const Ce = {};
-			var ye = (e = Ce, t) => {
+			const ye = {};
+			var Ie = (e = ye, t) => {
 					switch (t.type) {
-						case M.e:
-						case te.e: {
+						case R.e:
+						case se.e: {
 							const {
 								postIds: s,
 								profileName: r
 							} = t.payload, n = {};
 							for (const e of s) {
-								n[Object(me.a)(e, r)] = e
+								n[Object(pe.a)(e, r)] = e
 							}
 							return {
 								...e,
@@ -678,114 +679,115 @@
 							return e
 					}
 				},
-				Ie = Object(F.c)({
-					api: ee,
-					extraComments: le,
-					keyToCommentThreadLinkSets: ve,
-					keyToHeadCommentId: ge,
-					keyToPostId: ye
+				Ee = Object(A.c)({
+					api: te,
+					extraComments: ce,
+					keyToCommentThreadLinkSets: xe,
+					keyToHeadCommentId: Ce,
+					keyToPostId: Ie
 				}),
-				Ee = Object(F.c)({
-					chrono: Q,
-					conversations: Ie
+				Oe = Object(A.c)({
+					chrono: Y,
+					conversations: Ee
 				});
-			Object(R.a)({
+			Object(F.a)({
 				pages: {
-					profileOverview: Ee
+					profileOverview: Oe
 				}
 			});
-			const Oe = Object(y.a)(M.f),
-				we = Object(y.a)(M.e),
-				Se = Object(y.a)(M.d),
-				_e = Object(y.a)(M.c),
-				je = Object(y.a)(M.b),
-				Ne = Object(y.a)(M.a),
-				ke = (e, t, s, r) => async (r, n, i) => {
-					const o = n(),
-						a = !!o.listings.postOrder.ids[e],
-						b = !!Object(x.c)(o, {
+			const we = Object(I.a)(R.f),
+				Se = Object(I.a)(R.e),
+				_e = Object(I.a)(R.d),
+				je = Object(I.a)(R.c),
+				Ne = Object(I.a)(R.b),
+				ke = Object(I.a)(R.a),
+				Pe = (e, t, s, r) => async (r, n, o) => {
+					const a = n(),
+						d = !!a.listings.postOrder.ids[e],
+						f = !!Object(g.c)(a, {
 							listingKey: e
 						});
-					if (!!Object(x.d)(o, {
+					if (!!Object(g.d)(a, {
 							listingKey: e
-						}) || a && !b) return;
-					r(Oe({
+						}) || d && !f) return;
+					r(we({
 						key: e
 					}));
-					const f = await Object(T.a)("profile", () => ((e, t, s) => Object(u.a)(e, {
+					const v = await Object(M.a)("profile", () => ((e, t, s) => Object(u.a)(e, {
 							data: s,
-							endpoint: Object(m.a)(Object(l.a)(Object(p.a)(Object(h.a)(`${d.a.gatewayUrl}/desktopapi/v1/user/${t}/conversations`)))),
+							endpoint: Object(m.a)(Object(c.a)(Object(p.a)(Object(h.a)(`${l.a.gatewayUrl}/desktopapi/v1/user/${t}/conversations`)))),
 							traceRequestName: "get_profile_conversations",
-							method: c.jb.GET
+							method: i.jb.GET
 						}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? {
 							...e,
 							body: {
 								...e.body,
 								pinned: e.body.postIds.filter(t => e.body.posts[t] && e.body.posts[t].isPinned).reverse()
 							}
-						} : e))(i.apiContext(), t, s)),
-						v = f.body,
-						{
-							pinned: C,
-							postIds: y
-						} = v;
-					if (f.ok) {
-						r(we({
-							key: e,
-							meta: o.meta,
-							profileName: t,
-							...v,
-							postIds: y
-						}));
-						const s = Object(g.m)(n(), t);
-						r(Object(S.h)({
-							profileId: s,
-							pinned: C
-						}))
-					} else r(Se({
-						account: f.body.data ? f.body.data.account : null,
-						error: f.body.reason ? {
-							type: f.body.reason
-						} : f.error,
-						key: e
-					})), f.body.reason === k.a.DeletedProfile && r(Object(E.q)({
-						profileName: t
-					})), r(Object(_.n)(f.status))
-				}, Pe = e => async (t, s, r) => {
+						} : e))(o.apiContext(), t, s)),
+						x = v.body;
+					await Object(b.a)(o.gqlContext, x.posts).then(e => x.posts = e);
 					const {
-						queryParams: d,
-						params: l
+						pinned: y,
+						postIds: I
+					} = x;
+					if (v.ok) {
+						r(Se({
+							key: e,
+							meta: a.meta,
+							profileName: t,
+							...x,
+							postIds: I
+						}));
+						const s = Object(C.m)(n(), t);
+						r(Object(_.h)({
+							profileId: s,
+							pinned: y
+						}))
+					} else r(_e({
+						account: v.body.data ? v.body.data.account : null,
+						error: v.body.reason ? {
+							type: v.body.reason
+						} : v.error,
+						key: e
+					})), v.body.reason === P.a.DeletedProfile && r(Object(O.q)({
+						profileName: t
+					})), r(Object(j.n)(v.status))
+				}, Te = e => async (t, s, r) => {
+					const {
+						queryParams: l,
+						params: c
 					} = e, {
 						sort: u,
 						t: m
-					} = Object(o.a)(s(), d), {
+					} = Object(a.a)(s(), l), {
 						profileName: p
-					} = l;
+					} = c;
 					let h = !1;
-					const x = b.e[Object(v.R)(s(), {})],
-						y = p.toLowerCase(),
-						E = {
-							...n()(e.queryParams, f.m),
+					const b = f.e[Object(x.R)(s(), {})],
+						g = p.toLowerCase(),
+						I = {
+							...n()(e.queryParams, v.m),
 							sort: u,
-							layout: x,
+							layout: b,
 							t: m
 						},
-						S = [t(j.d(y))],
-						k = Object(P.a)(y, c.ub, u, e.queryParams);
-					if (s().listings.postOrder.ids[k] && !s().listings.postOrder.api.error[k] ? h = !0 : S.push(t(ke(k, y, E, !0))), S.push(t(Object(i.b)())), await Promise.all(S), h) return;
-					const T = s();
-					if (!T.platform.currentPage) return;
-					if (200 !== T.platform.currentPage.status) return;
-					const M = Object(g.m)(s(), y),
-						R = Object(C.wb)(T, {
+						O = [t(N.d(g))],
+						_ = Object(T.a)(g, i.ub, u, e.queryParams);
+					if (s().listings.postOrder.ids[_] && !s().listings.postOrder.api.error[_] ? h = !0 : O.push(t(Pe(_, g, I, !0))), O.push(t(Object(o.b)())), await Promise.all(O), h) return;
+					const P = s();
+					if (!P.platform.currentPage) return;
+					if (200 !== P.platform.currentPage.status) return;
+					const M = Object(C.m)(s(), g),
+						R = Object(y.wb)(P, {
 							userName: p
 						}).id;
-					t(_.m({
-						title: Te(s(), p)
-					})), Object(C.Q)(T) && Object(C.U)(T, p) && t(Object(I.f)());
-					const F = [t(Object(a.q)()), t(N.b(y, M)), t(j.b(y)), t(O.o(p)), t(j.g(p)), t(w.l(p, R))];
+					t(j.m({
+						title: Me(s(), p)
+					})), Object(y.Q)(P) && Object(y.U)(P, p) && t(Object(E.f)());
+					const F = [t(Object(d.q)()), t(k.b(g, M)), t(N.b(g)), t(w.o(p)), t(N.g(p)), t(S.l(p, R))];
 					await Promise.all(F)
-				}, Te = (e, t) => Object(g.q)(e, {
+				}, Me = (e, t) => Object(C.q)(e, {
 					profileName: t
 				})
 		},
@@ -2545,7 +2547,7 @@
 				const E = Object(n.useCallback)(() => x(Object(m.g)(e ? "user_hovercard" : "profile_overview", t)), [e, x, t]);
 				return i.a.createElement(u.t, {
 					onClick: () => {
-						s ? (x(m.h), C && y === h.a.notVoted && g(Object(d.jb)(C))) : E();
+						s ? (x(m.h), C && y === h.a.notVoted && g(Object(d.kb)(C))) : E();
 						const e = s ? "postify" : "copy";
 						g(Object(l.b)({
 							clickSource: I,
@@ -6195,8 +6197,8 @@
 				}) === r.w.Enabled,
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: r.Bc
-				}) === r.bd
+					experimentName: r.Dc
+				}) === r.dd
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
@@ -6247,4 +6249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.e4685c9f706c57e63065.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.d2a71e09697db3bb7193.js.map

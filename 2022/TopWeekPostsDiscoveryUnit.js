@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.7144d198168a694a9b01.js
-// Retrieved at 3/10/2022, 5:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.d76c14108189461e22c7.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -708,7 +708,7 @@
 					})),
 					trackPostClick: (t, a) => e((e, n) => s ? j.q(n(), s, t, a) : null),
 					trackPostSubredditClick: a => e((e, n) => t ? j.s(n(), t, a) : s ? j.s(n(), s, a) : null),
-					showModalOnPostLinkClick: t => e(Object(d.ab)(Object(_.b)(t.permalink), t.id))
+					showModalOnPostLinkClick: t => e(Object(d.bb)(Object(_.b)(t.permalink), t.id))
 				})),
 				Ve = Object(P.u)();
 			t.a = Ve(He(Object(v.c)(class extends E {
@@ -1640,7 +1640,7 @@
 					} = e, {
 						isSponsored: a
 					} = t, n = Object(i.d)(), o = Object(R.a)(), c = Object(i.e)(F.b), d = e => {
-						!c || t.media && Object(v.H)(t.media) || (e.preventDefault(), n(Object(x.ab)(Object(g.b)(t.permalink), t.id)))
+						!c || t.media && Object(v.H)(t.media) || (e.preventDefault(), n(Object(x.bb)(Object(g.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(K, {
 						nowrap: e.nowrap
@@ -2251,4 +2251,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.7144d198168a694a9b01.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.d76c14108189461e22c7.js.map

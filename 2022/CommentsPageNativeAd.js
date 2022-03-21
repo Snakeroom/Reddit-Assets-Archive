@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.c2158fe36fd2cfbd1623.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.676172bb574b40d14395.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -52,8 +52,8 @@
 				C = s("./src/reddit/components/JSAPIContainers/index.tsx"),
 				O = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				g = s("./src/reddit/components/PostContainer/index.tsx"),
-				f = s("./src/reddit/components/PostTitle/index.tsx"),
-				k = s("./src/reddit/constants/componentTestIds.ts"),
+				k = s("./src/reddit/components/PostTitle/index.tsx"),
+				f = s("./src/reddit/constants/componentTestIds.ts"),
 				y = s("./src/reddit/controls/OutboundLink/index.tsx"),
 				j = s("./src/reddit/helpers/search/renderMedia.tsx"),
 				E = s("./src/reddit/components/PostTopMeta/index.tsx"),
@@ -247,7 +247,7 @@
 						scrollerItemRef: N
 					}), a.a.createElement("div", {
 						className: I.a.contentColumn
-					}, a.a.createElement(f.c, {
+					}, a.a.createElement(k.c, {
 						format: o,
 						outboundLinkClassName: I.a.outboundLink,
 						className: I.a.postTitle,
@@ -262,7 +262,7 @@
 						className: I.a.styledOutboundLink,
 						rel: "nofollow",
 						"data-click-id": "comments",
-						"data-test-id": k.a,
+						"data-test-id": f.a,
 						to: this.props.isOverlay ? Object(p.a)(b.permalink, !0) : Object(D.b)(b.permalink),
 						onClick: this.props.onClick
 					}, r.fbt._("Join the conversation", null, {
@@ -368,10 +368,10 @@
 					postId: t
 				}) => ({
 					handleVote: s => {
-						const r = s === i.a.upvoted ? Object(a.jb)(t) : Object(a.w)(t);
+						const r = s === i.a.upvoted ? Object(a.kb)(t) : Object(a.w)(t);
 						e(r)
 					},
-					onIgnoreReports: () => e(Object(a.fb)(t)),
+					onIgnoreReports: () => e(Object(a.gb)(t)),
 					onOpenReportsDropdown: t => e(Object(n.h)({
 						tooltipId: t
 					}))
@@ -460,4 +460,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.c2158fe36fd2cfbd1623.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.676172bb574b40d14395.js.map

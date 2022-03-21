@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.ed7f969a69935040c005.js
-// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.ce355faa591b74e772e2.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -980,8 +980,8 @@
 						if (function(e) {
 								return Object(x.c)(e, {
 									experimentEligibilitySelector: x.a,
-									experimentName: f.od
-								}) === f.bd
+									experimentName: f.qd
+								}) === f.dd
 							}(d())) {
 							const {
 								normalizeModQueueListingFromGql: e,
@@ -2149,7 +2149,7 @@
 						}),
 						id: m,
 						onClick: e => {
-							null == r || r(e), G(l, n.id), c && (e.preventDefault(), l(Object(H.Y)(Object(Q.b)(i), n.postId)))
+							null == r || r(e), G(l, n.id), c && (e.preventDefault(), l(Object(H.Z)(Object(Q.b)(i), n.postId)))
 						},
 						onMouseEnter: u,
 						onMouseLeave: u,
@@ -6217,12 +6217,12 @@
 						rtJsonElementProps: o
 					});
 					switch (s) {
-						case h.cf.SmIcon:
+						case h.ef.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.cf.SmIconHc:
+						case h.ef.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -7989,12 +7989,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.Ve
+						experimentName: s.Xe
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === s.cf.SmIcon || t === s.cf.SmIconHc
+					return t === s.ef.SmIcon || t === s.ef.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -8017,4 +8017,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.ed7f969a69935040c005.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.ce355faa591b74e772e2.js.map

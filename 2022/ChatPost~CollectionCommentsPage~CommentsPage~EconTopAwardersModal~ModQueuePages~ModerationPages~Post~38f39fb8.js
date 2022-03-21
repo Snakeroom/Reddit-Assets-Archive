@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.beb16ab4de3655aeeb9f.js
-// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.4b14f53f405bf5be02a0.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -187,7 +187,7 @@
 						var r;
 						if (null === (r = e.onClick) || void 0 === r || r.call(e, t), f) {
 							const r = e.isExternal || e.isLivestreaming || e.forceOpenInNewTab ? `${i.a.redditUrl}/user/${e.author}` : `/user/${e.author}/`;
-							t.preventDefault(), b(Object(d.cb)(r))
+							t.preventDefault(), b(Object(d.db)(r))
 						}
 					};
 				return e.isExternal || e.isLivestreaming || e.forceOpenInNewTab ? o.a.createElement("a", h({}, null !== (t = e.linkProps) && void 0 !== t ? t : {}, {
@@ -2436,7 +2436,7 @@
 						showTimestamp: q = !0,
 						subredditOrProfile: G,
 						tooltipType: W
-					} = e, Q = Object(n.d)(), V = Object(w.a)(), K = Object(n.e)(ie.a), Y = Object(n.e)(le.d), $ = Object(n.e)(le.g) || ["popular", "all"].includes(Y || ""), X = Object(n.e)(de.b), se = y.isSponsored || Object(a.u)(E), me = !(!se || !K || Object(h.xf)(K));
+					} = e, Q = Object(n.d)(), V = Object(w.a)(), K = Object(n.e)(ie.a), Y = Object(n.e)(le.d), $ = Object(n.e)(le.g) || ["popular", "all"].includes(Y || ""), X = Object(n.e)(de.b), se = y.isSponsored || Object(a.u)(E), me = !(!se || !K || Object(h.zf)(K));
 					Object(s.useEffect)(() => {
 						me && Q(Object(p.d)(y.author))
 					}, []);
@@ -2606,7 +2606,7 @@
 						target: "_blank",
 						rel: "nofollow noopener noreferrer",
 						onClick: e => {
-							null == A || A(e), X && (e.preventDefault(), Q(Object(m.ab)(y.permalink, y.id)))
+							null == A || A(e), X && (e.preventDefault(), Q(Object(m.bb)(y.permalink, y.id)))
 						}
 					}, o.a.createElement(k.d, {
 						seconds: y.created / d.Sb
@@ -3658,15 +3658,15 @@
 			const a = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: n.O,
-						experimentName: s.zc
+						experimentName: s.Bc
 					});
-					return !(!t || Object(s.xf)(t))
+					return !(!t || Object(s.zf)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: n.O,
-						experimentName: s.zc
-					}) === s.gd.ListingEnabled
+						experimentName: s.Bc
+					}) === s.id.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3726,4 +3726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.beb16ab4de3655aeeb9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.4b14f53f405bf5be02a0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.3196980773d6b614ce14.js
-// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.21169051b1a5bc6a04ea.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, s) {
@@ -117,7 +117,7 @@
 				},
 				I = "d2x_geo_upsell_tier_0",
 				U = "d2x_geo_upsell_tier_1",
-				Z = "d2x_geo_upsell_tier_2";
+				y = "d2x_geo_upsell_tier_2";
 			t.default = function({
 				onDismiss: e,
 				size: t
@@ -139,18 +139,18 @@
 						const e = Object(i.e)(w.b),
 							t = Object(i.e)(w.d),
 							s = Object(i.e)(w.f),
-							l = Object(E.a)(b.Zb.Bottom_sheet),
-							o = Object(E.a)(b.Zb.Bottom_cell),
-							c = Object(E.a)(b.Zb.Bottom_cell_dismissible),
-							r = Object(E.a)(b.Zb.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(E.a)(b.Zb.Bottom_cell_signup_upsell_copy),
-							d = Object(E.a)(b.Zb.Bottom_cell_surprise_install_copy);
+							l = Object(E.a)(b.bc.Bottom_sheet),
+							o = Object(E.a)(b.bc.Bottom_cell),
+							c = Object(E.a)(b.bc.Bottom_cell_dismissible),
+							r = Object(E.a)(b.bc.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(E.a)(b.bc.Bottom_cell_signup_upsell_copy),
+							d = Object(E.a)(b.bc.Bottom_cell_surprise_install_copy);
 						let p;
 						if (e) p = I;
 						else if (t) p = U;
 						else {
 							if (!s) throw new Error("Not eligible for signup upsell");
-							p = Z
+							p = y
 						}
 						const u = `${n.a.assetPath}/img/upsell/appQrCode/${p}/`;
 						if (l) return `${u}bottom_sheet.png`;
@@ -161,14 +161,14 @@
 						if (e && d) return `${u}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					L = Object(E.a)(b.Zb.Bottom_cell_signup_upsell_copy),
-					y = Object(E.a)(b.Zb.Bottom_cell_surprise_install_copy),
-					A = L ? l.fbt._("Come join us, we have snacks", null, {
+					L = Object(E.a)(b.bc.Bottom_cell_signup_upsell_copy),
+					A = Object(E.a)(b.bc.Bottom_cell_surprise_install_copy),
+					D = L ? l.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : l.fbt._("Log in or sign up for the best experience", null, {
 						hk: "2LAHQy"
 					}),
-					D = y ? l.fbt._("Scan the QR code, it's super fun", null, {
+					H = A ? l.fbt._("Scan the QR code, it's super fun", null, {
 						hk: "1nNmn7"
 					}) : l.fbt._("Get the app", null, {
 						hk: "2NvKYa"
@@ -189,7 +189,7 @@
 					type: "button"
 				}, o.createElement(N.a, null)), o.createElement("div", {
 					className: S.a.title
-				}, A), o.createElement("div", {
+				}, D), o.createElement("div", {
 					className: S.a.bottom
 				}, o.createElement("div", {
 					className: S.a.left
@@ -244,7 +244,7 @@
 					src: f
 				}), o.createElement("div", {
 					className: S.a.downloadAppLabel
-				}, D))))
+				}, H))))
 			}
 		},
 		"./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts": function(e, t, s) {
@@ -333,20 +333,20 @@
 					experimentName: e,
 					experimentEligibilitySelector: r,
 					throttledVariants: {
-						[l.Zb.Bottom_cell_dismissible]: e,
-						[l.Zb.Bottom_cell_dismissible_immediate_trigger]: e,
-						[l.Zb.Bottom_sheet]: e
+						[l.bc.Bottom_cell_dismissible]: e,
+						[l.bc.Bottom_cell_dismissible_immediate_trigger]: e,
+						[l.bc.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const d = a(l.ob, !0),
-				p = a(l.pb, !0),
-				u = a(l.qb, !0),
-				m = a(l.ob, !1),
-				_ = a(l.pb, !1),
-				b = a(l.qb, !1)
+			const d = a(l.pb, !0),
+				p = a(l.qb, !0),
+				u = a(l.rb, !0),
+				m = a(l.pb, !1),
+				_ = a(l.qb, !1),
+				b = a(l.rb, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.3196980773d6b614ce14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.21169051b1a5bc6a04ea.js.map

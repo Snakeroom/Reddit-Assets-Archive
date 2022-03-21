@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.b1abc632d0f6e1908ba3.js
-// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.2aba0adeda94bdae5b20.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -48,8 +48,8 @@
 				v = n("./src/lib/CSSVariableProvider/index.tsx"),
 				C = n("./src/lib/lessComponent.tsx"),
 				w = n("./src/chat/components/MinimizedPortalContainer/index.tsx"),
-				y = n("./src/chat/components/Root/index.tsx"),
-				E = n("./src/chat/constants/container.ts"),
+				E = n("./src/chat/components/Root/index.tsx"),
+				y = n("./src/chat/constants/container.ts"),
 				M = n("./src/chat/helpers/chatSelector.ts"),
 				_ = n("./src/chat/actions/container.ts"),
 				N = n("./src/chat/components/PortalContainer/index.m.less"),
@@ -57,7 +57,7 @@
 			const {
 				embed: S,
 				hidden: B
-			} = E.b;
+			} = y.b;
 
 			function T(e) {
 				return void 0 !== e ? e : -1
@@ -101,13 +101,13 @@
 
 			function U(e) {
 				switch (e.container) {
-					case E.a.EMBED:
+					case y.a.EMBED:
 						return a.a.createElement(D, null, e.children);
-					case E.a.HIDDEN:
+					case y.a.HIDDEN:
 						return a.a.createElement(R, null, e.children);
-					case E.a.FULL:
+					case y.a.FULL:
 						return a.a.createElement(I, null, e.children);
-					case E.a.MINIMIZED:
+					case y.a.MINIMIZED:
 						return a.a.createElement(k, null);
 					default:
 						return a.a.createElement(D, null, e.children)
@@ -260,7 +260,7 @@
 						}
 					}, function(e, t) {
 						const n = Object(O.b)(L)(U);
-						return a.a.createElement("div", null, Object(v.d)(a.a.createElement(n, null, Object(y.a)(e, t)), document.body))
+						return a.a.createElement("div", null, Object(v.d)(a.a.createElement(n, null, Object(E.a)(e, t)), document.body))
 					}(e, t)),
 					appName: d.n.Chat,
 					history: Object(c.d)({
@@ -658,32 +658,32 @@
 				r = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.yb,
+					experimentName: a.zb,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === a.Dd.Enabled),
+				d = Object(s.a)(o, e => e === a.Fd.Enabled),
 				u = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.yd,
+					experimentName: a.Ad,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				l = Object(s.a)(d, u, (e, t) => e && t === a.Cd.Enabled),
+				l = Object(s.a)(d, u, (e, t) => e && t === a.Ed.Enabled),
 				b = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.Lb,
+					experimentName: a.Nb,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				m = Object(s.a)(d, b, (e, t) => e && t === a.fc.Enabled),
+				m = Object(s.a)(d, b, (e, t) => e && t === a.hc.Enabled),
 				h = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.wb,
-					experimentEligibilitySelector: r.e
-				}), i.a),
-				g = Object(s.a)(h, e => e === a.Ad.ContinuousScroll),
-				f = Object(s.a)(e => Object(c.c)(e, {
 					experimentName: a.xb,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				p = Object(s.a)(f, e => e === a.Bd.Enabled),
+				g = Object(s.a)(h, e => e === a.Cd.ContinuousScroll),
+				f = Object(s.a)(e => Object(c.c)(e, {
+					experimentName: a.yb,
+					experimentEligibilitySelector: r.e
+				}), i.a),
+				p = Object(s.a)(f, e => e === a.Dd.Enabled),
 				x = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.Fb,
+					experimentName: a.Gb,
 					experimentEligibilitySelector: () => !0
 				}), i.a),
 				j = Object(s.a)(x, e => e === a.db.Enabled)
@@ -693,4 +693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.b1abc632d0f6e1908ba3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.2aba0adeda94bdae5b20.js.map

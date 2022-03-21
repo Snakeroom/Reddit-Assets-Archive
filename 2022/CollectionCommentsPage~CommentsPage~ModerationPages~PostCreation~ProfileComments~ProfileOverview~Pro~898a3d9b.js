@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.dfd7a37509f4f8bc3709.js
-// Retrieved at 3/21/2022, 10:30:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.33098f8d98a1ecae74f3.js
+// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -1121,7 +1121,7 @@
 				const j = Object(r.useCallback)(() => E(Object(m.g)(e ? "user_hovercard" : "profile_overview", t)), [e, E, t]);
 				return o.a.createElement(u.t, {
 					onClick: () => {
-						s ? (E(m.h), _ && g === b.a.notVoted && v(Object(c.jb)(_))) : j();
+						s ? (E(m.h), _ && g === b.a.notVoted && v(Object(c.kb)(_))) : j();
 						const e = s ? "postify" : "copy";
 						v(Object(d.b)({
 							clickSource: O,
@@ -2376,12 +2376,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case h.cf.SmIcon:
+						case h.ef.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case h.cf.SmIconHc:
+						case h.ef.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2869,12 +2869,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Ve
+						experimentName: n.Xe
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.cf.SmIcon || t === n.cf.SmIconHc
+					return t === n.ef.SmIcon || t === n.ef.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -2897,4 +2897,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.dfd7a37509f4f8bc3709.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.33098f8d98a1ecae74f3.js.map
