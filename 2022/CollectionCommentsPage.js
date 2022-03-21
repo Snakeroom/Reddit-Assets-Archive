@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.98118d00edd11cfc7c0d.js
-// Retrieved at 3/21/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9036be6c610f57c3117d.js
+// Retrieved at 3/21/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -9566,81 +9566,6 @@
 			"use strict";
 			t.a = e => !!e && !!e.all
 		},
-		"./src/reddit/helpers/matchRedditUrls/index.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return d
-			}));
-			s("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = s("./src/reddit/helpers/parseUrl.ts");
-			const o = ["old", "new", "en", "www", "np", "m"],
-				r = ["reddit.com", "reddit.local"].concat("").concat(o.map((function(e) {
-					return e + ".reddit.com"
-				}))).concat(o.map((function(e) {
-					return e + ".reddit.local"
-				}))),
-				i = ["mod.reddit.com"],
-				a = {
-					subreddit: {
-						pathnameComponents: ["subredditName"],
-						pathname: /^\/r\/(\w+)\/?$/
-					},
-					user: {
-						pathnameComponents: ["username"],
-						pathname: /^\/(?:user|u)\/(\w+)\/?$/
-					},
-					postShortlink: {
-						hostnames: r.concat("redd.it"),
-						pathnameComponents: ["postID36"],
-						pathname: /^\/([A-Za-z0-9]+)\/?$/
-					},
-					postDetail: {
-						pathnameComponents: ["postID36"],
-						pathname: /^\/(?:(?:r|user|u)\/.+\)?\/)?comments\/(\w+)(?:\/\w+)?\/?$/
-					},
-					comment: {
-						pathnameComponents: ["postID36", "commentID36"],
-						pathname: /^\/(?:(?:r|user|u)\/.+\)?\/)?comments\/(\w+)\/\w+\/(\w+)\/?$/
-					},
-					modmailConversation: {
-						hostnames: i,
-						pathnameComponents: ["modmailConversationId"],
-						pathname: /^\/mail\/[^/]+\/(\w+)\/?$/
-					},
-					modmailMessage: {
-						hostnames: i,
-						pathnameComponents: ["modmailConversationId", "modmailMessageId"],
-						pathname: /^\/mail\/[^/]+\/(\w+)\/(\w+)\/?$/
-					}
-				};
-
-			function d(e) {
-				return (e.match(new RegExp(n.b, "g")) || []).map((function(e) {
-					let t;
-					return Object.keys(a).some((function(s) {
-						return t = function(e, t) {
-							const s = a[e];
-							if (!a) throw new Error("Could not find reddit URL spec: " + e);
-							const o = Object(n.a)(t);
-							if (!o) return void console.error("Could not parse url", t);
-							if (-1 === (s.hostnames || r).indexOf(o.hostname)) return;
-							const i = o.pathname.match(s.pathname);
-							if (i) {
-								return {
-									url: t,
-									routeName: e,
-									components: s.pathnameComponents.reduce((function(e, t, s) {
-										return e[t] = i[s + 1], e
-									}), {})
-								}
-							}
-						}(s, e)
-					})), t
-				})).filter((function(e) {
-					return e
-				}))
-			}
-		},
 		"./src/reddit/helpers/resonatePage/index.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
@@ -10933,7 +10858,7 @@
 						} else if (this.props.post.source) {
 						const t = this.props.post.source.url;
 						if (t) {
-							const s = null === (e = Object(ot.a)(t)[0]) || void 0 === e ? void 0 : e.components;
+							const s = null === (e = Object(ot.b)(t)[0]) || void 0 === e ? void 0 : e.components;
 							if (s && s.hasOwnProperty("postID36")) {
 								const e = Object(ie.t)(s.postID36);
 								this.props.getIsTrackingCrossposts(e)
@@ -11958,4 +11883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.98118d00edd11cfc7c0d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9036be6c610f57c3117d.js.map

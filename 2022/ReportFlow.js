@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.9da64d6bae65454b8149.js
-// Retrieved at 3/21/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.28b325552bccc22ce3cd.js
+// Retrieved at 3/21/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -2472,7 +2472,7 @@
 				if (!e) return t;
 				const n = l.a,
 					s = e.length,
-					o = Object(i.a)(e),
+					o = Object(i.b)(e),
 					r = o.reduce((e, t) => t ? e + t.url.length : e, 0);
 				return {
 					displayLength: Math.min(l.a, s - r + 15 * o.length),
@@ -3298,6 +3298,8 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return l
+			})), n.d(t, "b", (function() {
+				return d
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./src/reddit/helpers/parseUrl.ts");
@@ -3342,27 +3344,29 @@
 					}
 				};
 
-			function l(e) {
+			function l(e, t) {
+				const n = i[e];
+				if (!i) throw new Error("Could not find reddit URL spec: " + e);
+				const o = Object(s.a)(t);
+				if (!o) return void console.error("Could not parse url", t);
+				if (-1 === (n.hostnames || r).indexOf(o.hostname)) return;
+				const a = o.pathname.match(n.pathname);
+				if (a) {
+					return {
+						url: t,
+						routeName: e,
+						components: n.pathnameComponents.reduce((function(e, t, n) {
+							return e[t] = a[n + 1], e
+						}), {})
+					}
+				}
+			}
+
+			function d(e) {
 				return (e.match(new RegExp(s.b, "g")) || []).map((function(e) {
 					let t;
 					return Object.keys(i).some((function(n) {
-						return t = function(e, t) {
-							const n = i[e];
-							if (!i) throw new Error("Could not find reddit URL spec: " + e);
-							const o = Object(s.a)(t);
-							if (!o) return void console.error("Could not parse url", t);
-							if (-1 === (n.hostnames || r).indexOf(o.hostname)) return;
-							const a = o.pathname.match(n.pathname);
-							if (a) {
-								return {
-									url: t,
-									routeName: e,
-									components: n.pathnameComponents.reduce((function(e, t, n) {
-										return e[t] = a[n + 1], e
-									}), {})
-								}
-							}
-						}(n, e)
+						return t = l(n, e)
 					})), t
 				})).filter((function(e) {
 					return e
@@ -3928,4 +3932,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.9da64d6bae65454b8149.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.28b325552bccc22ce3cd.js.map

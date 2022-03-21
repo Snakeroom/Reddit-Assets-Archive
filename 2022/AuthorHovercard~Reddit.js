@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.1efc4414b5faff2fe882.js
-// Retrieved at 3/21/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.825503228e09477d60b4.js
+// Retrieved at 3/21/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -155,7 +155,7 @@
 			})), n.d(t, "e", (function() {
 				return v
 			})), n.d(t, "c", (function() {
-				return k
+				return N
 			})), n.d(t, "b", (function() {
 				return C
 			}));
@@ -267,15 +267,15 @@
 					messageType: t.messageType
 				}))
 			}
-			const N = Object(a.a)(o.j),
+			const k = Object(a.a)(o.j),
 				O = Object(a.a)(o.i),
-				k = Object(a.a)(o.k),
+				N = Object(a.a)(o.k),
 				E = Object(a.a)(o.h),
 				C = e => async (t, n, {
 					gqlContext: i
 				}) => {
 					var a, o;
-					t(N());
+					t(k());
 					const r = await ((e, t) => Object(c.a)(e, {
 						...l,
 						variables: t
@@ -330,13 +330,13 @@
 				x = n("./src/reddit/models/Toast/index.ts"),
 				y = n("./src/reddit/constants/experiments.ts"),
 				v = n("./src/reddit/helpers/chooseVariant/index.ts");
-			var N = n("./src/reddit/selectors/meta.ts"),
+			var k = n("./src/reddit/selectors/meta.ts"),
 				O = n("./src/reddit/selectors/user.ts");
-			let k = !1;
+			let N = !1;
 			const E = async (e, t) => {
 				const n = Object(O.N)(e);
-				if (k) return;
-				if (k = !0, Object(b.a)(e) !== l.c.NotificationsSupported) return;
+				if (N) return;
+				if (N = !0, Object(b.a)(e) !== l.c.NotificationsSupported) return;
 				await Object(d.a)();
 				navigator.serviceWorker.addEventListener("message", i => {
 					const a = i.data,
@@ -357,7 +357,7 @@
 				})
 			}, I = (e, t, n = (() => {})) => async (i, a, o) => {
 				const r = a(),
-					d = Object(N.f)(r),
+					d = Object(k.f)(r),
 					u = (e => Object(v.c)(e, {
 						experimentName: y.Hb,
 						experimentEligibilitySelector: v.a
@@ -715,15 +715,15 @@
 				x = n("./src/reddit/controls/Button/index.tsx"),
 				y = n("./src/reddit/controls/InternalLink/index.tsx"),
 				v = n("./src/reddit/helpers/trackers/hotPotato.ts"),
-				N = n("./src/reddit/hooks/useTracking.ts"),
+				k = n("./src/reddit/hooks/useTracking.ts"),
 				O = n("./src/reddit/icons/fonts/index.tsx"),
-				k = n("./src/reddit/icons/svgs/HotPotato/index.tsx"),
+				N = n("./src/reddit/icons/svgs/HotPotato/index.tsx"),
 				E = n("./src/reddit/selectors/experiments/hotPotato.ts");
 			const C = ({
 				onClose: e
 			}) => {
 				const t = Object(_.e)(E.a),
-					n = Object(N.a)(),
+					n = Object(k.a)(),
 					s = Object(a.useCallback)(t => {
 						e && e(t), n(Object(v.a)())
 					}, [e, n]);
@@ -739,13 +739,13 @@
 					className: h.a.bannerTitleContainer
 				}, o.a.createElement("h4", {
 					className: h.a.bannerTitle
-				}, i.fbt._("Hot Potato", null, {
-					hk: "2ZAGPs"
+				}, i.fbt._("r/Place is back", null, {
+					hk: "c3H3d"
 				}))), o.a.createElement("p", {
 					className: h.a.bannerDescription
-				}, i.fbt._("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a pellentesque arcu.", null, {
-					hk: "4c9NoJ"
-				}))), o.a.createElement(k.a, {
+				}, i.fbt._("The canvas is now open. Head to r/place to claim your tile and make your mark", null, {
+					hk: "2I10kP"
+				}))), o.a.createElement(N.a, {
 					className: h.a.bannerImage
 				})), o.a.createElement(x.t, {
 					onClick: e,
@@ -1084,7 +1084,7 @@
 					hk: "3L3tFc"
 				}))),
 				ue = e => {
-					const t = Object(N.a)(),
+					const t = Object(k.a)(),
 						{
 							clearMessageTabBadgeCount: n,
 							inboxBadgeCount: i,
@@ -1106,7 +1106,7 @@
 							}, [])]
 						}(g),
 						[y, v] = Object(ie.a)(g),
-						[O, k] = Object(oe.a)(g),
+						[O, N] = Object(oe.a)(g),
 						[E, C] = function({
 							key: e,
 							userId: t
@@ -1147,7 +1147,7 @@
 						setDesktopNotificationsPromptSeen: v,
 						isDNInboxPromptBannerEnabled: S,
 						isInboxPrivacyPolicyBannerEnabled: b && !O,
-						setInboxPrivacyPolicyBannerSeen: k,
+						setInboxPrivacyPolicyBannerSeen: N,
 						isWrappedRedditBannerEnabled: h && !_,
 						setDesktopNotificationWrappedRedditBannerSeen: () => {
 							x(), t(Object(H.r)())
@@ -1506,11 +1506,11 @@
 			})), n.d(t, "b", (function() {
 				return v
 			})), n.d(t, "l", (function() {
-				return N
+				return k
 			})), n.d(t, "x", (function() {
 				return O
 			})), n.d(t, "p", (function() {
-				return k
+				return N
 			})), n.d(t, "n", (function() {
 				return E
 			})), n.d(t, "m", (function() {
@@ -1722,7 +1722,7 @@
 			! function(e) {
 				e.Cats = "cats", e.Memes = "memes", e.Karma = "karma_free_subs", e.PN_perms = "pn_perms", e.Email_perms = "email_perms"
 			}(v || (v = {}));
-			const N = ({
+			const k = ({
 					actionInfoType: e,
 					id: t,
 					isClicked: n,
@@ -1770,7 +1770,7 @@
 						type: e
 					}
 				}),
-				k = ({
+				N = ({
 					actionInfoType: e
 				}) => t => ({
 					...d.o(t),
@@ -1867,7 +1867,7 @@
 			})), n.d(t, "a", (function() {
 				return v
 			})), n.d(t, "l", (function() {
-				return N
+				return k
 			})), n.d(t, "m", (function() {
 				return O
 			}));
@@ -1978,7 +1978,7 @@
 						type: "all"
 					}
 				}),
-				N = (e, t, n) => a => ({
+				k = (e, t, n) => a => ({
 					...i.o(a),
 					action: "set_frequency",
 					noun: n,
@@ -2232,8 +2232,8 @@
 				};
 			var v = n("./src/reddit/controls/InternalLink/index.tsx");
 
-			function N() {
-				return (N = Object.assign || function(e) {
+			function k() {
+				return (k = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (e[i] = n[i])
@@ -2242,7 +2242,7 @@
 				}).apply(this, arguments)
 			}
 			const O = ["r/somethingimade", "r/CasualConversation", "r/DoesAnybodyElse", "r/Old_Recipes"][Math.floor(100 * Math.random()) % 4];
-			var k = ({
+			var N = ({
 				inTooltip: e,
 				isPopular: t,
 				onBtnClick: n
@@ -2284,7 +2284,7 @@
 					hk: "VSBWM"
 				}) : c.fbt._("That’s ok, maybe you just need the right inspiration. Try posting in {Link: to popular subreddit} , a popular community for discussion.", [c.fbt._param("Link: to popular subreddit", r)], {
 					hk: "1WOK4T"
-				})), a.a.createElement(u.t, N({
+				})), a.a.createElement(u.t, k({
 					className: b.a.emptyStateButton,
 					onClick: n,
 					text: `Visit ${i}`
@@ -2398,7 +2398,7 @@
 						g = Object(i.useRef)(f),
 						[_, x] = Object(i.useState)(z.TURN_ON_PN),
 						v = Object(o.e)(e => e.user.accountSettings.changeEmail.api.pending),
-						N = Object(i.useCallback)(() => {
+						k = Object(i.useCallback)(() => {
 							p(async (e, t) => {
 								var n, i;
 								let a = Object(F.db)(t());
@@ -2408,17 +2408,17 @@
 							})
 						}, [p]),
 						O = Object(i.useCallback)(() => {
-							h ? N() : x(z.VERIFY_EMAIL)
-						}, [h, N]),
-						k = Object(i.useCallback)(() => {
+							h ? k() : x(z.VERIFY_EMAIL)
+						}, [h, k]),
+						N = Object(i.useCallback)(() => {
 							p(async (e, t) => {
 								const n = t();
 								Object(F.fb)(n).allIds.length || await e(Object(T.a)(A.a.Push)), Object(D.c)(t(), W) ? x(z.TURN_ON_PN_APP) : O()
 							})
 						}, [p, O]),
 						E = Object(i.useCallback)(() => {
-							(() => Object(j.a)() === w.a.Granted)() ? k(): x(z.TURN_ON_PN)
-						}, [k]),
+							(() => Object(j.a)() === w.a.Granted)() ? N(): x(z.TURN_ON_PN)
+						}, [N]),
 						C = Object(i.useCallback)(() => {
 							r(s.b.Email_perms)(), e && m && m(), p(Object(P.h)(R.a))
 						}, [p, r, e, m]);
@@ -2429,9 +2429,9 @@
 								const e = Object(L.e)(c.fbt._("Email successfully updated!", null, {
 									hk: "3iPlUp"
 								}), U.b.SuccessCommunityGreen);
-								p(Object(L.f)(e)), N()
+								p(Object(L.f)(e)), k()
 							}
-						}, [f, _, N]), Object(i.useEffect)(() => {
+						}, [f, _, k]), Object(i.useEffect)(() => {
 							v && p(Object(P.g)(R.a))
 						}, [v, p]), _ === z.DONE) return a.a.createElement(y, {
 						isLoggedIn: n,
@@ -2499,7 +2499,7 @@
 					m = Object(o.e)(G.d),
 					b = Object(o.e)(G.a),
 					p = Object(o.e)(G.e);
-				return d || p ? a.a.createElement(k, {
+				return d || p ? a.a.createElement(N, {
 					inTooltip: n,
 					isPopular: p,
 					onBtnClick: l(s.b.Karma)
@@ -2736,4 +2736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.1efc4414b5faff2fe882.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.825503228e09477d60b4.js.map

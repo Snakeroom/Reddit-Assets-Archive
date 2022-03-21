@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.0e81cba3a2a095606c42.js
-// Retrieved at 3/21/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.a35505fd1955375edc01.js
+// Retrieved at 3/21/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -12364,6 +12364,85 @@
 				isListingFocused: !1
 			})
 		},
+		"./src/reddit/helpers/matchRedditUrls/index.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return c
+			})), n.d(t, "b", (function() {
+				return d
+			}));
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			var s = n("./src/reddit/helpers/parseUrl.ts");
+			const r = ["old", "new", "en", "www", "np", "m"],
+				o = ["reddit.com", "reddit.local"].concat("").concat(r.map((function(e) {
+					return e + ".reddit.com"
+				}))).concat(r.map((function(e) {
+					return e + ".reddit.local"
+				}))),
+				i = ["mod.reddit.com"],
+				a = {
+					subreddit: {
+						pathnameComponents: ["subredditName"],
+						pathname: /^\/r\/(\w+)\/?$/
+					},
+					user: {
+						pathnameComponents: ["username"],
+						pathname: /^\/(?:user|u)\/(\w+)\/?$/
+					},
+					postShortlink: {
+						hostnames: o.concat("redd.it"),
+						pathnameComponents: ["postID36"],
+						pathname: /^\/([A-Za-z0-9]+)\/?$/
+					},
+					postDetail: {
+						pathnameComponents: ["postID36"],
+						pathname: /^\/(?:(?:r|user|u)\/.+\)?\/)?comments\/(\w+)(?:\/\w+)?\/?$/
+					},
+					comment: {
+						pathnameComponents: ["postID36", "commentID36"],
+						pathname: /^\/(?:(?:r|user|u)\/.+\)?\/)?comments\/(\w+)\/\w+\/(\w+)\/?$/
+					},
+					modmailConversation: {
+						hostnames: i,
+						pathnameComponents: ["modmailConversationId"],
+						pathname: /^\/mail\/[^/]+\/(\w+)\/?$/
+					},
+					modmailMessage: {
+						hostnames: i,
+						pathnameComponents: ["modmailConversationId", "modmailMessageId"],
+						pathname: /^\/mail\/[^/]+\/(\w+)\/(\w+)\/?$/
+					}
+				};
+
+			function c(e, t) {
+				const n = a[e];
+				if (!a) throw new Error("Could not find reddit URL spec: " + e);
+				const r = Object(s.a)(t);
+				if (!r) return void console.error("Could not parse url", t);
+				if (-1 === (n.hostnames || o).indexOf(r.hostname)) return;
+				const i = r.pathname.match(n.pathname);
+				if (i) {
+					return {
+						url: t,
+						routeName: e,
+						components: n.pathnameComponents.reduce((function(e, t, n) {
+							return e[t] = i[n + 1], e
+						}), {})
+					}
+				}
+			}
+
+			function d(e) {
+				return (e.match(new RegExp(s.b, "g")) || []).map((function(e) {
+					let t;
+					return Object.keys(a).some((function(n) {
+						return t = c(n, e)
+					})), t
+				})).filter((function(e) {
+					return e
+				}))
+			}
+		},
 		"./src/reddit/helpers/predictions/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -16689,31 +16768,43 @@
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return u
+				return m
 			})), n.d(t, "b", (function() {
-				return b
+				return p
 			}));
 			var s = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/lib/constants/index.ts"),
 				o = n("./src/reddit/constants/experiments.ts"),
 				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				a = n("./src/reddit/selectors/platform.ts"),
-				c = n("./src/reddit/selectors/user.ts");
-			const d = Object(s.a)(c.V, c.M, (e, t) => !e && !t),
-				l = Object(s.a)(e => Object(i.c)(e, {
-					experimentEligibilitySelector: d,
-					experimentName: o.yd
-				}), e => Boolean(e)),
-				u = e => Object(i.c)(e, {
-					experimentEligibilitySelector: l,
-					experimentName: o.yd
-				}),
-				m = Object(s.a)(a.d, u, (e, t) => (null == e ? void 0 : e.toLocaleLowerCase()) === (null == t ? void 0 : t.toLocaleLowerCase())),
-				p = Object(s.a)(a.r, l, m, (e, t, n) => t && e === r.Nb.SUBREDDIT && n),
-				b = e => Boolean(Object(i.c)(e, {
-					experimentEligibilitySelector: p,
-					experimentName: o.yd
-				}))
+				a = n("./src/reddit/helpers/matchRedditUrls/index.ts"),
+				c = n("./src/reddit/selectors/platform.ts"),
+				d = n("./src/reddit/selectors/user.ts");
+			const l = () => !0,
+				u = Object(s.a)(d.V, d.M, (e, t) => !(e || t)),
+				m = e => {
+					if (!u(e)) return;
+					const t = Object(i.c)(e, {
+						experimentEligibilitySelector: l,
+						experimentName: o.yd
+					});
+					return null == t ? void 0 : t.toLocaleLowerCase()
+				},
+				p = e => {
+					var t;
+					const n = m(e);
+					if (!n) return !1;
+					let s = Object(c.r)(e),
+						o = Object(c.d)(e);
+					if ("undefined" != typeof window && !o && !s) {
+						const e = Object(a.a)("subreddit", window.location.href);
+						(o = null === (t = null == e ? void 0 : e.components) || void 0 === t ? void 0 : t.subredditName) && (s = r.Nb.SUBREDDIT)
+					}
+					if (o && n) {
+						const e = (null == o ? void 0 : o.toLocaleLowerCase()) === n;
+						return s === r.Nb.SUBREDDIT && e
+					}
+					return !1
+				}
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
 			"use strict";
@@ -17475,4 +17566,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0e81cba3a2a095606c42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.a35505fd1955375edc01.js.map
