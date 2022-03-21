@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.4b14f53f405bf5be02a0.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.1af84ac11408b0c454c4.js
+// Retrieved at 3/21/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1949,10 +1949,10 @@
 				}) => {
 					const c = t && r,
 						l = Object(m.a)();
-					return Object(s.useEffect)(() => (l(Object(u.v)({
+					return Object(s.useEffect)(() => (l(Object(u.t)({
 						modNote: e,
 						subredditId: d
-					})), () => l(Object(u.q)({
+					})), () => l(Object(u.o)({
 						modNote: e,
 						subredditId: d
 					}))), []), o.a.createElement(o.a.Fragment, null, c && o.a.createElement("div", {
@@ -2149,7 +2149,7 @@
 					className: Object(d.a)(v, w.a.modNote),
 					onClick: e => {
 						e.stopPropagation(), O && O(e), (() => {
-							const e = "LastAuthorUserNoteTooltip" === A && c.d || "ModIdCard" === A && c.h;
+							const e = "LastAuthorUserNoteTooltip" === A && c.c || "ModIdCard" === A && c.g;
 							e && S(e({
 								modNote: g,
 								subredditId: x
@@ -2180,7 +2180,7 @@
 					className: w.a.operatorBlock,
 					onClick: e => {
 						e.stopPropagation(), (() => {
-							const e = "LastAuthorUserNoteTooltip" === A && c.m || "ModIdCard" === A && c.n;
+							const e = "LastAuthorUserNoteTooltip" === A && c.l || "ModIdCard" === A && c.m;
 							e && S(e({
 								modNote: g,
 								subredditId: x
@@ -2203,7 +2203,7 @@
 					rel: "noopener noreferrer",
 					onClick: e => {
 						e.stopPropagation(), (() => {
-							const e = "LastAuthorUserNoteTooltip" === A && c.e || "ModIdCard" === A && c.f;
+							const e = "LastAuthorUserNoteTooltip" === A && c.d || "ModIdCard" === A && c.e;
 							e && S(e({
 								modNote: g,
 								subredditId: x
@@ -3726,4 +3726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.4b14f53f405bf5be02a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.1af84ac11408b0c454c4.js.map

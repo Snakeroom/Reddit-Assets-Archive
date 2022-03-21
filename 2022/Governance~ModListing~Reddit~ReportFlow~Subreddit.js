@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.4183ce5bfc0c98996cb6.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.16816597c33e3aa384dc.js
+// Retrieved at 3/21/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -5342,7 +5342,7 @@
 							subredditId: e,
 							newModNote: r,
 							filter: n
-						})), Object(g.a)(Object(j.u)({
+						})), Object(g.a)(Object(j.s)({
 							userId: t,
 							subredditId: e,
 							filteredType: n,
@@ -9670,54 +9670,50 @@
 		},
 		"./src/reddit/helpers/trackers/modNote.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "v", (function() {
+			r.d(t, "t", (function() {
 				return d
-			})), r.d(t, "q", (function() {
-				return c
-			})), r.d(t, "e", (function() {
-				return a
-			})), r.d(t, "f", (function() {
-				return u
-			})), r.d(t, "g", (function() {
-				return l
-			})), r.d(t, "d", (function() {
-				return b
-			})), r.d(t, "h", (function() {
-				return p
-			})), r.d(t, "c", (function() {
-				return f
-			})), r.d(t, "m", (function() {
-				return m
-			})), r.d(t, "n", (function() {
-				return _
 			})), r.d(t, "o", (function() {
+				return c
+			})), r.d(t, "d", (function() {
+				return a
+			})), r.d(t, "e", (function() {
+				return u
+			})), r.d(t, "f", (function() {
+				return l
+			})), r.d(t, "c", (function() {
+				return b
+			})), r.d(t, "g", (function() {
+				return p
+			})), r.d(t, "b", (function() {
+				return f
+			})), r.d(t, "l", (function() {
+				return m
+			})), r.d(t, "m", (function() {
+				return _
+			})), r.d(t, "n", (function() {
 				return O
-			})), r.d(t, "w", (function() {
+			})), r.d(t, "u", (function() {
 				return j
 			})), r.d(t, "a", (function() {
 				return g
-			})), r.d(t, "p", (function() {
+			})), r.d(t, "h", (function() {
 				return I
-			})), r.d(t, "b", (function() {
-				return y
 			})), r.d(t, "i", (function() {
+				return y
+			})), r.d(t, "v", (function() {
 				return h
-			})), r.d(t, "j", (function() {
+			})), r.d(t, "p", (function() {
 				return S
-			})), r.d(t, "x", (function() {
-				return E
-			})), r.d(t, "r", (function() {
-				return T
-			})), r.d(t, "l", (function() {
-				return v
 			})), r.d(t, "k", (function() {
+				return E
+			})), r.d(t, "j", (function() {
+				return T
+			})), r.d(t, "r", (function() {
+				return v
+			})), r.d(t, "q", (function() {
 				return w
-			})), r.d(t, "t", (function() {
-				return x
 			})), r.d(t, "s", (function() {
-				return k
-			})), r.d(t, "u", (function() {
-				return C
+				return x
 			}));
 			var n = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
@@ -9874,7 +9870,7 @@
 				I = e => t => ({
 					source: o,
 					action: "click",
-					noun: "viewall_modnote_user_profile_hovercard",
+					noun: "user_mod_log_user_profile_hovercard",
 					correlationId: Object(n.c)(n.a.ModNotes),
 					...s.o(t),
 					...i(0, e)
@@ -9882,28 +9878,12 @@
 				y = e => t => ({
 					source: o,
 					action: "click",
-					noun: "ban_user_profile_hovercard",
-					correlationId: Object(n.c)(n.a.ModNotes),
-					...s.o(t),
-					...i(0, e)
-				}),
-				h = e => t => ({
-					source: o,
-					action: "click",
-					noun: "user_mod_log_user_profile_hovercard",
-					correlationId: Object(n.c)(n.a.ModNotes),
-					...s.o(t),
-					...i(0, e)
-				}),
-				S = e => t => ({
-					source: o,
-					action: "click",
 					noun: "send_modmail_user_profile_hovercard",
 					correlationId: Object(n.c)(n.a.ModNotes),
 					...s.o(t),
 					...i(0, e)
 				}),
-				E = e => t => ({
+				h = e => t => ({
 					source: o,
 					action: "view",
 					noun: "modlog",
@@ -9911,7 +9891,7 @@
 					...s.o(t),
 					...i(0, e)
 				}),
-				T = e => t => ({
+				S = e => t => ({
 					source: o,
 					action: "close",
 					noun: "modlog",
@@ -9919,7 +9899,7 @@
 					...s.o(t),
 					...i(0, e)
 				}),
-				v = e => t => ({
+				E = e => t => ({
 					source: o,
 					action: "click",
 					noun: "type_filter_modlog",
@@ -9927,7 +9907,7 @@
 					...s.o(t),
 					...i(0, e)
 				}),
-				w = e => t => ({
+				T = e => t => ({
 					source: o,
 					action: "click",
 					noun: "subreddit_filter_modlog",
@@ -9935,7 +9915,7 @@
 					...s.o(t),
 					...i(0, e)
 				}),
-				x = e => t => ({
+				v = e => t => ({
 					source: o,
 					action: "select",
 					noun: "type_modlog",
@@ -9943,7 +9923,7 @@
 					...s.o(t),
 					...i(0, e)
 				}),
-				k = e => t => ({
+				w = e => t => ({
 					source: o,
 					action: "select",
 					noun: "subreddit_modlog",
@@ -9951,7 +9931,7 @@
 					...s.o(t),
 					...i(0, e)
 				}),
-				C = e => t => ({
+				x = e => t => ({
 					source: o,
 					action: "submit",
 					noun: "submit_note_modlog",
@@ -13754,4 +13734,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.4183ce5bfc0c98996cb6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.16816597c33e3aa384dc.js.map
