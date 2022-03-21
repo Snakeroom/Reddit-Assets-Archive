@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ea09b3bfbbf9ef5243d3.js
-// Retrieved at 3/21/2022, 11:10:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c3c7285092063dd29057.js
+// Retrieved at 3/21/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("160544"),
+				buildNumber: Object(r.c)("160545"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1647873316"),
+				buildTimestamp: Object(r.b)("1647875354"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6036,14 +6036,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c74440da704f6225968558bae6cf6b7a7a561ac5f-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c37d869a96906dd00b4e071fe2501781e7fb85e6d-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "74440da704f6225968558bae6cf6b7a7a561ac5f-production",
+						release: "37d869a96906dd00b4e071fe2501781e7fb85e6d-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6560,7 +6560,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "74440da704f6225968558bae6cf6b7a7a561ac5f-production",
+						releaseClient: "37d869a96906dd00b4e071fe2501781e7fb85e6d-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -39843,23 +39843,25 @@
 				Ce = i("./src/reddit/selectors/experiments/serpSIIDs.ts"),
 				je = i("./src/reddit/selectors/searchResults.ts");
 			const Ae = e => {
-					switch (e.route && e.route.meta && e.route.meta.name) {
-						case p.Nb.INDEX:
+					var t, i;
+					const n = null === (i = null === (t = e.route) || void 0 === t ? void 0 : t.meta) || void 0 === i ? void 0 : i.name;
+					switch (n) {
+						case "index":
 							return "popular" === e.route.meta.telemetryPageType ? "popular" : "home";
-						case p.Nb.PROFILE_OVERVIEW:
+						case "profileOverview":
 							return "profile_overview";
-						case p.Nb.PROFILE_COMMENTS:
+						case "profileComments":
 							return "profile_comments";
-						case p.Nb.PROFILE_POSTS:
+						case "profilePosts":
 							return "profile_posts";
-						case p.Nb.PROFILE:
-						case p.Nb.PROFILE_BETA_CONFIRMATION:
-						case p.Nb.PROFILE_MODERATION:
-						case p.Nb.PROFILE_POST_COMMENTS:
-						case p.Nb.PROFILE_PRIVACY:
-						case p.Nb.PROFILE_SETTINGS:
+						case "profile":
+						case "profileBetaConfirmation":
+						case "profileModeration":
+						case "profilePostComments":
+						case "profilePrivacy":
+						case "profileSettings":
 							return "profile";
-						case p.Nb.PROFILE_PRIVATE: {
+						case "profilePrivate": {
 							const {
 								listingType: t
 							} = e.match.params;
@@ -39879,13 +39881,13 @@
 							}
 							break
 						}
-						case p.Nb.FOLLOWERS:
+						case "followers":
 							return "follower_list_page";
-						case p.Nb.COMMENTS:
-						case p.Nb.DUPLICATES:
+						case "comments":
+						case "duplicates":
 							return e.match.params.partialCommentId ? "single_comment_thread" : "post_detail";
-						case p.Nb.LISTING:
-						case p.Nb.SUBREDDIT: {
+						case "listing":
+						case "subreddit": {
 							if ("popular" === e.route.meta.telemetryPageType) return "popular";
 							const {
 								subredditName: t
@@ -39901,58 +39903,140 @@
 									return "community"
 							}
 						}
-						case p.Nb.SUBREDDIT_SETTINGS:
+						case "subredditSettings":
 							return "subreddit_settings";
-						case p.Nb.POST_CREATION:
+						case "postCreation":
 							return e.match.queryParams && e.match.queryParams.source_id ? "crosspost_submit" : "post_submit";
-						case p.Nb.SEARCH_RESULTS:
+						case "searchResults":
 							return "search_results";
-						case p.Nb.MODERATION_PAGES: {
+						case "moderationPages": {
 							const t = e.match.params.pageName;
 							return "scheduledposts" === t ? "scheduled_posts" : "eventposts" === t ? "event_posts" : `moderation_pages_${t}`
 						}
-						case p.Nb.MODQUEUE_PAGES: {
+						case "modQueuePages": {
 							const t = e.match.params.pageName;
 							return "modqueue" === t ? "modqueue_queue" : `modqueue_${t}`
 						}
-						case p.Nb.MULTIREDDIT:
+						case "multireddit":
 							return "custom_feed";
-						case p.Nb.POST_DRAFT:
+						case "postDraft":
 							return "draft_detail";
-						case p.Nb.PUBLIC_ACCESS_NETWORK:
+						case "rpan":
 							return "stream_player";
-						case p.Nb.EXPLORE:
+						case "explore":
 							return "explore";
-						case p.Nb.MOD_LISTING:
+						case "modListing":
 							return "r_mod";
-						case p.Nb.SUBREDDIT_CREATION:
+						case "subredditCreation":
 							return "subreddit_creation";
-						case p.Nb.SUBREDDIT_WIKI:
+						case "subredditWiki":
 							return "subreddit_wiki";
-						case p.Nb.SETTINGS: {
+						case "settings": {
 							const t = e.match.params.page;
 							return t ? `settings_${t}` : "settings_account"
 						}
-						case p.Nb.META_MEMBERSHIP_PAYWALL_PAGE:
+						case "metaMembershipPaywallPage":
 							return "special_membership_paywall";
-						case p.Nb.SUBREDDIT_LEADERBOARD:
+						case "subredditLeaderboard":
 							return "leaderboard";
-						case p.Nb.TOPIC:
+						case "topic":
 							return "topic";
-						case p.Nb.GEOTAGGING:
+						case "geotagging":
 							return "crowdsource_feed_geo";
-						case p.Nb.COINS:
+						case "coins":
 							return "coins_marketing";
-						case p.Nb.PREMIUM:
+						case "premium":
 							return "premium_marketing";
-						case p.Nb.COLLECTION_COMMENTS:
+						case "collectionComments":
 							return "collection";
-						case p.Nb.INBOX_PAGES:
+						case "inboxPages":
 							return "messages";
-						case p.Nb.INTERNATIONAL_SITE_PAGE:
+						case "internationalSitePage":
 							return `lang_site_${e.match.params.languageCode}`;
+						case "acknowledgements":
+							return "acknowledgements";
+						case "appeal":
+							return "appeal";
+						case "avatar":
+							return "avatar";
+						case "avatarProfile":
+							return "avatar_profile";
+						case "chat":
+							return "chat";
+						case "chatCreate":
+							return "chat_create";
+						case "chatEmpty":
+							return "chat_empty";
+						case "ChatInvite":
+							return "chat_invite";
+						case "chatMembers":
+							return "chat_members";
+						case "chatMinimize":
+							return "chat_minimize";
+						case "chatTest":
+							return "chat_test";
+						case "coinsMobile":
+							return "coins_mobile";
+						case "dashboard":
+							return "dashboard";
+						case "econManagement":
+							return "econ_management";
+						case "emailVerification":
+							return "email_verification";
+						case "framedGild":
+							return "framed_gild";
+						case "framedModal":
+							return "framed_modal";
+						case "metaArbitrumPointsMigrationPage":
+							return "meta_arbitrum_points_migration_page";
+						case "metaCommunityPointsLearnMorePage":
+							return "meta_community_points_learn_more_page";
+						case "metaVaultBurn":
+							return "meta_vault_burn";
+						case "notificationsInbox":
+							return "notifications_inbox";
+						case "originalContentRedirect":
+							return "original_content_redirect";
+						case "over18":
+							return "over18";
+						case "powerupRedirect":
+							return "powerup_redirect";
+						case "powerups":
+							return "powerups";
+						case "predictionRedirect":
+							return "prediction_redirect";
+						case "predictions":
+							return "predictions";
+						case "profileHomepage":
+							return "profile_homepage";
+						case "profileMe":
+							return "profile_me";
+						case "profileRedirect":
+							return "profile_redirect";
+						case "profileSnoobuilder":
+							return "profile_snoobuilder";
+						case "profileSumitted":
+							return "profile_sumitted";
+						case "report":
+							return "report";
+						case "settingsRedirect":
+							return "settings_redirect";
+						case "standAlonePostPage":
+							return "stand_alone_post_page";
+						case "structuredStyles":
+							return "structured_styles";
+						case "talk":
+							return "talk";
+						case "userDataRequest":
+							return "user_data_request";
+						case "RedditRecap2021":
+							return "reddit_recap2021";
 						default:
-							return
+							try {
+								throw new Error(n)
+							} catch {} finally {
+								return
+							}
 					}
 				},
 				xe = e => {
@@ -46914,4 +46998,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ea09b3bfbbf9ef5243d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.c3c7285092063dd29057.js.map
