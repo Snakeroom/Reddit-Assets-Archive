@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.3cb1e6d100bf420fdd39.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.7b7fd8cf65dd80a3fe82.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -416,7 +416,7 @@
 							type: j.body.reason
 						} : j.error,
 						key: x
-					})), j.body.reason === b.a.DeletedProfile && t(Object(l.q)({
+					})), j.body.reason === b.a.DeletedProfile && t(Object(l.s)({
 						profileName: y
 					})), void t(p.n(j.status));
 					const S = j.body;
@@ -629,11 +629,11 @@
 			const {
 				fbt: M
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), U = d.a.wrapped(I, "PrivateKey", q.a), Z = d.a.div("ButtonsContainer", q.a), W = d.a.div("Container", q.a), H = d.a.div("ContainerExp", q.a), K = d.a.div("Description", q.a), G = d.a.div("PrivateSubredditDetails", q.a), V = d.a.div("PrivateSubredditDescription", q.a), $ = d.a.h3("PrivateSubredditName", q.a), J = d.a.a("Link", q.a), Q = d.a.wrapped(D.n, "LinkRouterButton", q.a), Y = d.a.wrapped(D.m, "LinkButton", q.a), X = d.a.wrapped(D.q, "SecondaryLinkRouterButton", q.a), ee = d.a.wrapped(D.p, "SecondaryLinkButton", q.a), te = d.a.wrapped(Q, "GoHomeLinkButton", q.a), ne = d.a.wrapped(_.a, "CreateCommunityButton", q.a), re = d.a.img("Image", q.a), se = d.a.img("ImagePlaceholder", q.a), oe = d.a.wrapped(Q, "LeftLinkRouterButton", q.a), ie = d.a.wrapped(Y, "LeftLinkButton", q.a), ae = d.a.wrapped(ee, "SecondaryLeftLinkButton", q.a), ce = d.a.wrapped(X, "SecondaryLeftLinkRouterButton", q.a), le = d.a.h3("Title", q.a), de = d.a.div("PageBody", q.a), ue = d.a.div("InterstitialMessageWrapper", q.a), me = Object(l.c)({
-				isLoggedIn: T.N,
+				isLoggedIn: T.O,
 				origin: N.j,
 				user: T.k,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(T.O)(e)) return !1;
+					if (!Object(T.P)(e)) return !1;
 					const t = Object(B.d)(e);
 					if (!t) return !1;
 					const n = Object(T.f)(e, t);
@@ -657,7 +657,7 @@
 					await e(p.v(t)), window.location.reload()
 				},
 				setNSFWPreference: async () => {
-					await e(Object(m.m)())
+					await e(Object(m.o)())
 				}
 			})), _e = e => {
 				const {
@@ -684,7 +684,7 @@
 					subredditName: L,
 					user: S
 				} = e, I = async () => {
-					if (a ? await P() : await Object(m.l)(), d) {
+					if (a ? await P() : await Object(m.n)(), d) {
 						const e = new URL(window.location.href);
 						e.searchParams.set(O.h, "1"), window.location.href = e.href
 					} else window.location.reload()
@@ -1004,8 +1004,8 @@
 			const y = "create-community-button",
 				x = g.a.wrapped(d.c, "StyledTooltip", f.a),
 				v = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(_.mb)(e),
-					userIsSuspended: _.V
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(_.ob)(e),
+					userIsSuspended: _.W
 				});
 			t.a = Object(i.b)(v, (e, {
 				eventSource: t
@@ -1140,7 +1140,7 @@
 						return n && n.coinPrice >= c.g
 					})
 				},
-				isNightmodeOn: g.bb
+				isNightmodeOn: g.cb
 			}), e => ({
 				openPost: t => e(Object(u.L)(t))
 			}));
@@ -1332,7 +1332,7 @@
 							return n && n.coinPrice >= l.g
 						})
 					},
-					isNightmodeOn: g.bb
+					isNightmodeOn: g.cb
 				}), e => ({
 					openPost: t => e(Object(h.L)(t))
 				}));
@@ -2091,7 +2091,7 @@
 				}).apply(this, arguments)
 			}
 			const ve = Object(F.u)(),
-				ke = Object(c.a)(F.E, ee.ib, (e, {
+				ke = Object(c.a)(F.E, ee.jb, (e, {
 					location: t
 				}) => s()([...Object(d.a)(t.search)]), F.R, (e, {
 					match: t
@@ -2099,7 +2099,7 @@
 					match: t
 				}) => Object(ye.j)(e, {
 					profileName: t.params.profileName
-				}), ee.O, (e, {
+				}), ee.P, (e, {
 					match: t
 				}) => Object(ee.f)(e, l.jc + t.params.profileName), ge.a, (e, t, n, r, s, o, i, a, c) => {
 					const {
@@ -2231,4 +2231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.3cb1e6d100bf420fdd39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.7b7fd8cf65dd80a3fe82.js.map

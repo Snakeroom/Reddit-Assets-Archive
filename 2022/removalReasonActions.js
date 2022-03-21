@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.287a8419c9e290823ee6.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.ee01bca007538e365cd7.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, n) {
@@ -170,8 +170,8 @@
 				$ = n("./src/reddit/selectors/comments.ts"),
 				W = n("./src/reddit/selectors/commentSelector.ts"),
 				z = n("./src/reddit/selectors/platform.ts"),
-				Q = n("./src/reddit/selectors/posts.ts"),
-				H = n("./src/reddit/selectors/user.ts"),
+				H = n("./src/reddit/selectors/posts.ts"),
+				Q = n("./src/reddit/selectors/user.ts"),
 				X = n("./src/reddit/actions/comment/index.ts"),
 				Y = n("./src/reddit/actions/comment/constants.ts");
 			const Z = Object(r.a)(Y.k),
@@ -181,7 +181,7 @@
 				}) => async (n, o) => {
 					const s = o();
 					if (!!s.features.comments.drafts[t])
-						if (Object(H.Q)(s) && e) {
+						if (Object(Q.R)(s) && e) {
 							const o = Z({
 								hasFocus: e,
 								draftKey: t
@@ -232,7 +232,7 @@
 							commentsPageKey: t,
 							draftKey: n
 						}));
-						const s = Object(Q.G)(f(), {
+						const s = Object(H.G)(f(), {
 							postId: e
 						});
 						u(Object(m.z)(s, p.a.CommentSubmitted))
@@ -351,7 +351,7 @@
 				}) => async (o, s) => {
 					const r = s(),
 						m = Object(c.a)(B.c.replyToComment, t);
-					if (!Object(H.O)(s())) return o(Object(d.j)()), void o(Object(i.k)({
+					if (!Object(Q.P)(s())) return o(Object(d.j)()), void o(Object(i.k)({
 						actionSource: i.a.Reply,
 						redirectUrl: Object($.m)(s(), {
 							commentId: t
@@ -391,7 +391,7 @@
 							draftType: B.c.replyToComment,
 							rtJson: O,
 							text: ""
-						}, Object(H.Q)(r)) {
+						}, Object(Q.R)(r)) {
 						const n = le({
 							parentCommentId: t,
 							commentsPageKey: e,
@@ -645,7 +645,7 @@
 				}, E = e => async (t, n, {
 					apiContext: s
 				}) => {
-					if (!Object(j.O)(n())) return void t(Object(a.i)(m.a.LOGIN_MODAL_ID));
+					if (!Object(j.P)(n())) return void t(Object(a.i)(m.a.LOGIN_MODAL_ID));
 					const r = n().features.comments.models[e];
 					if (!r) return;
 					const c = r.isLocked ? u.l : u.e;
@@ -1178,8 +1178,8 @@
 				$ = n("./src/reddit/models/PostDraft/index.ts"),
 				W = n("./src/reddit/models/RemovalReason/index.ts"),
 				z = n("./src/reddit/models/Toast/index.ts"),
-				Q = n("./src/reddit/selectors/comments.ts"),
-				H = n("./src/reddit/selectors/platform.ts");
+				H = n("./src/reddit/selectors/comments.ts"),
+				Q = n("./src/reddit/selectors/platform.ts");
 			Object(s.a)({
 				features: {
 					removalReasons: A
@@ -1317,7 +1317,7 @@
 												comment: e,
 												parentId: m
 											},
-											n = Object(H.f)(d),
+											n = Object(Q.f)(d),
 											o = d.platform.currentPage && d.platform.currentPage.routeMatch;
 										let s = n && o && Object(J.a)(o, d, d.posts.models[e.postId]);
 										if (s || (s = Object(g.a)(e.postId, null, {
@@ -1327,7 +1327,7 @@
 											const n = Object(I.a)($.c.replyToPost, m);
 											r(Object(k.o)({
 												...t,
-												headCommentId: Object(Q.w)(d, {
+												headCommentId: Object(H.w)(d, {
 													commentsPageKey: s
 												}),
 												commentsPageKey: s,
@@ -1345,7 +1345,7 @@
 											}))
 										} else if (u === W.e.Comment) {
 											const e = Object(I.a)($.c.replyToComment, l.id),
-												n = Object(Q.j)(d, {
+												n = Object(H.j)(d, {
 													commentId: m,
 													commentsPageKey: s
 												});
@@ -1731,4 +1731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.287a8419c9e290823ee6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.ee01bca007538e365cd7.js.map

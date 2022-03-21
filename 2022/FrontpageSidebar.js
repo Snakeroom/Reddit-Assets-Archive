@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.4c52ff2871ef264d6b56.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.0aee0ae39f1e94363e86.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -152,18 +152,18 @@
 				}))(S),
 				v = n("./node_modules/fbt/lib/FbtPublic.js"),
 				O = n("./src/lib/classNames/index.ts"),
-				T = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
-				j = n("./src/reddit/controls/InternalLink/index.tsx"),
+				j = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
+				T = n("./src/reddit/controls/InternalLink/index.tsx"),
 				C = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				w = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
 				F = n.n(w);
 			const B = ({
 					to: e,
 					title: t
-				}) => d.a.createElement(T.a, {
+				}) => d.a.createElement(j.a, {
 					subredditName: t,
 					tooltipPosition: ["right", "top"]
-				}, d.a.createElement(j.a, {
+				}, d.a.createElement(T.a, {
 					className: F.a.Link,
 					to: e,
 					title: t
@@ -392,8 +392,8 @@
 				Ee = n("./src/config.ts"),
 				ve = n("./src/lib/env/index.ts"),
 				Oe = n("./src/reddit/controls/Chip/index.tsx"),
-				Te = n("./src/reddit/helpers/trackers/widgets.ts"),
-				je = n("./src/reddit/hooks/useTracking.ts");
+				je = n("./src/reddit/helpers/trackers/widgets.ts"),
+				Te = n("./src/reddit/hooks/useTracking.ts");
 			const Ce = [{
 				getName: () => v.fbt._("Fashion", null, {
 					hk: "4tXmOZ"
@@ -629,12 +629,12 @@
 						className: Fe.a.itemContainer
 					}, d.a.createElement(Oe.a, {
 						to: Pe(e.topic.url),
-						onClick: () => e.sendEvent(Object(Te.c)(t))
+						onClick: () => e.sendEvent(Object(je.c)(t))
 					}, t))
 				};
 			var Le = d.a.memo(e => {
-					const t = Object(je.a)();
-					Object(o.useEffect)(() => t(Object(Te.d)()), []);
+					const t = Object(Te.a)();
+					Object(o.useEffect)(() => t(Object(je.d)()), []);
 					const n = Ce.map(e => ({
 						value: e,
 						sort: Object(ve.d)() ? .5 : Math.random()
@@ -680,12 +680,12 @@
 			const Ve = "c1020",
 				Ye = "videos",
 				$e = Object(u.c)({
-					isMod: Je.P,
-					isLoggedIn: Je.N,
+					isMod: Je.Q,
+					isLoggedIn: Je.O,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
 					currentUser: Je.k,
 					frontpageLinks: Ze.b,
-					isOver18: Je.ib,
+					isOver18: Je.jb,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return Ge(e) === Ae.z.RotateEven
 					},
@@ -697,7 +697,7 @@
 							n = !!Object(He.N)(e, Ve);
 						return (!t || !n) && function(e) {
 							return Object(We.c)(e, {
-								experimentEligibilitySelector: Je.O,
+								experimentEligibilitySelector: Je.P,
 								experimentName: Ae.Wb
 							}) === Ae.dd
 						}(e)
@@ -1512,11 +1512,11 @@
 						isOnLeaderboardPage: e.isOnLeaderboardPage,
 						isOnFrontpage: e.isOnFrontpage
 					})
-				}), !e.rankings.length && T),
-				T = c.a.createElement(c.a.Fragment, null, o()(5, e => c.a.createElement(p.a, {
+				}), !e.rankings.length && j),
+				j = c.a.createElement(c.a.Fragment, null, o()(5, e => c.a.createElement(p.a, {
 					key: e
 				}))),
-				j = e => {
+				T = e => {
 					const t = e.isSecondaryButton ? _.q : _.n,
 						n = e.linkColor ? {
 							backgroundColor: e.linkColor,
@@ -1603,7 +1603,7 @@
 					subreddits: t,
 					isOnLeaderboardPage: e.isOnLeaderboardPage,
 					isOnFrontpage: e.isOnFrontpage
-				}), c.a.createElement(j, {
+				}), c.a.createElement(T, {
 					categoryName: s,
 					categoryDisplayText: r,
 					isSecondaryButton: e.isSecondaryButton,
@@ -2195,4 +2195,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.4c52ff2871ef264d6b56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.0aee0ae39f1e94363e86.js.map

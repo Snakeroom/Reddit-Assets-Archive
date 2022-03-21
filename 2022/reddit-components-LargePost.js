@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.3ab6ef6bb48b45fe54f6.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.004dab1b820ab36350ca.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2030,10 +2030,10 @@
 				Pe = Object(r.b)(() => Object(a.c)({
 					autoplayPref: C.b,
 					activeModalId: O.a,
-					hideNSFWPref: C.E,
+					hideNSFWPref: C.F,
 					flairStyleTemplate: re.V,
 					isCurrentUserProfilePost: k.l,
-					isLoggedIn: C.O,
+					isLoggedIn: C.P,
 					isActive: k.j,
 					showPromotedCTA: xe.a,
 					moderatorPermissions: P.l,
@@ -2868,7 +2868,7 @@
 					K = V && Object(O.h)(V),
 					J = Object(i.e)(e => {
 						if (!K) return !0;
-						const t = Object(j.Cb)(e, B.author || "");
+						const t = Object(j.Eb)(e, B.author || "");
 						return !t || t.enableFollowers
 					});
 				return r.a.createElement("div", {
@@ -3312,4 +3312,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.3ab6ef6bb48b45fe54f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.004dab1b820ab36350ca.js.map

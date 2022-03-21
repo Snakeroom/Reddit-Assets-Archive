@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.c212465f6b8f15f679aa.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.96ac60ee1702f532dc54.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -443,7 +443,7 @@
 					const n = t(),
 						r = Object(m.e)(n),
 						c = Object(m.d)(n),
-						l = Object(b.N)(n);
+						l = Object(b.O)(n);
 					if (r || !c) return;
 					e(f());
 					let p = !1;
@@ -518,7 +518,7 @@
 						o = Object(m.g)(c);
 					if (Object(m.f)(c) || null === o || "client" === o) {
 						const s = null === (n = null === (a = Object(p.b)(t())) || void 0 === a ? void 0 : a.routeMatch) || void 0 === n ? void 0 : n.route.chunk,
-							o = Object(b.O)(c);
+							o = Object(b.P)(c);
 						return Object(r.i)(() => e(E()), {
 							name: "getFocusedVerticalsRequested",
 							page: s,
@@ -619,7 +619,7 @@
 						sort: d,
 						t: u,
 						correlationId: m
-					} = t, p = Object(P.b)(e), f = Object(M.X)(e) || Object(M.O)(e), _ = Object(L.q)(e), y = {
+					} = t, p = Object(P.b)(e), f = Object(M.Y)(e) || Object(M.P)(e), _ = Object(L.q)(e), y = {
 						adContext: {
 							layout: o ? o.toUpperCase() : h.a.Card,
 							reddaid: e.user.reddaid,
@@ -857,8 +857,8 @@
 					const b = _e()();
 					t.correlationId = b;
 					const h = null === (i = null === (o = Object(L.b)(u)) || void 0 === o ? void 0 : o.routeMatch) || void 0 === i ? void 0 : i.route.chunk,
-						g = Object(M.O)(u),
-						f = await Object(m.i)(() => q(r.gqlContext(), R(u, t), Object(M.X)(u), t.statsdPathsForExperiments), {
+						g = Object(M.P)(u),
+						f = await Object(m.i)(() => q(r.gqlContext(), R(u, t), Object(M.Y)(u), t.statsdPathsForExperiments), {
 							name: "fetchFrontpageData",
 							isLoggedIn: g,
 							page: h
@@ -939,7 +939,7 @@
 					const n = t();
 					if (Object(me.a)(n)) return;
 					const r = null === (a = null === (s = Object(L.b)(t())) || void 0 === s ? void 0 : s.routeMatch) || void 0 === a ? void 0 : a.route.chunk,
-						c = Object(M.O)(n);
+						c = Object(M.P)(n);
 					return Object(m.i)(() => e(Object(ue.d)()), {
 						name: "frontpageLinksRequested",
 						page: r,
@@ -993,7 +993,7 @@
 								t && (h.clickUrl = t)
 							}
 							h.correlationId = n.listings.postOrder.correlationIds[u];
-							const g = () => q(a(), R(n, h), Object(M.X)(n), p),
+							const g = () => q(a(), R(n, h), Object(M.Y)(n), p),
 								f = await g(),
 								_ = {
 									...f.body,
@@ -2989,12 +2989,12 @@
 			const Xe = "c1020",
 				Ye = "videos",
 				$e = Object(u.c)({
-					isMod: We.P,
-					isLoggedIn: We.N,
+					isMod: We.Q,
+					isLoggedIn: We.O,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
 					currentUser: We.k,
 					frontpageLinks: He.b,
-					isOver18: We.ib,
+					isOver18: We.jb,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return qe(e) === Be.z.RotateEven
 					},
@@ -3006,7 +3006,7 @@
 							s = !!Object(Ke.N)(e, Xe);
 						return (!t || !s) && function(e) {
 							return Object(Re.c)(e, {
-								experimentEligibilitySelector: We.O,
+								experimentEligibilitySelector: We.P,
 								experimentName: Be.Wb
 							}) === Be.dd
 						}(e)
@@ -4216,7 +4216,7 @@
 						listingName: t,
 						pageLayer: s
 					}),
-					n = Object(l.D)(e) || Object(i.a)(e),
+					n = Object(l.E)(e) || Object(i.a)(e),
 					r = Object(o.e)(e);
 				return {
 					canShowAd: a && !n,
@@ -6558,7 +6558,7 @@
 				isCommentCountAnimationEnabled: H.d,
 				isVoteCountAnimationEnabled: H.h,
 				isCountAnimShadowTestEnabled: H.e,
-				isLoggedIn: $.O,
+				isLoggedIn: $.P,
 				isPopular: F.F,
 				isRpanDuVisible: e => Object(Y.a)(e, {
 					listingName: te.R
@@ -6927,7 +6927,7 @@
 			const d = Object(a.a)(i.a, (e, {
 					listingName: t
 				}) => {
-					const s = Object(o.Db)(e);
+					const s = Object(o.Fb)(e);
 					if (!s) return !1;
 					let a;
 					if (-1 === [r.R, "r/popular"].indexOf(t)) {
@@ -7211,7 +7211,7 @@
 
 			function c(e) {
 				return Object(n.c)(e, {
-					experimentEligibilitySelector: r.O,
+					experimentEligibilitySelector: r.P,
 					experimentName: a.rc
 				})
 			}
@@ -7264,14 +7264,14 @@
 				r = s("./src/reddit/selectors/user.ts");
 			const c = e => {
 					const t = Object(n.c)(e, {
-						experimentEligibilitySelector: r.O,
+						experimentEligibilitySelector: r.P,
 						experimentName: a.Bc
 					});
 					return !(!t || Object(a.zf)(t))
 				},
 				o = e => {
 					return Object(n.c)(e, {
-						experimentEligibilitySelector: r.O,
+						experimentEligibilitySelector: r.P,
 						experimentName: a.Bc
 					}) === a.id.ListingEnabled
 				}
@@ -7417,7 +7417,7 @@
 				y = e => e.focusedVerticals.category,
 				v = e => e.focusedVerticals.lastLoadedEnv,
 				x = e => {
-					const t = Object(o.N)(e),
+					const t = Object(o.O)(e),
 						s = n.d.geoSubredditRecommendationDULoggedIn(e),
 						a = n.d.geoSubredditRecommendationDULoggedOut(e);
 					return t && s || !t && a
@@ -7496,4 +7496,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c212465f6b8f15f679aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.96ac60ee1702f532dc54.js.map

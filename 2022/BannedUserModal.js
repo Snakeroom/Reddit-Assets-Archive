@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.2c61318ef61b721968e2.js
-// Retrieved at 3/21/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.125a7258df21927cd817.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, n) {
@@ -37,8 +37,8 @@
 				data: n
 			});
 			var g = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
-				C = n("./src/reddit/models/SubredditModeration/index.ts"),
-				y = n("./src/reddit/models/Toast/index.ts"),
+				y = n("./src/reddit/models/SubredditModeration/index.ts"),
+				C = n("./src/reddit/models/Toast/index.ts"),
 				w = n("./src/reddit/selectors/activeModalId.ts"),
 				S = n("./src/reddit/selectors/bannedUser.ts"),
 				k = n("./src/reddit/selectors/subreddit.ts"),
@@ -64,7 +64,7 @@
 							const {
 								subredditId: n,
 								fetchedToken: s
-							} = t.payload, r = Object(C.e)(n, s);
+							} = t.payload, r = Object(y.e)(n, s);
 							return {
 								...e,
 								[r]: !0
@@ -75,7 +75,7 @@
 							const {
 								subredditId: n,
 								fetchedToken: s
-							} = t.payload, r = Object(C.e)(n, s);
+							} = t.payload, r = Object(y.e)(n, s);
 							return {
 								...e,
 								[r]: !1
@@ -96,7 +96,7 @@
 							const {
 								fetchedToken: n,
 								subredditId: s
-							} = t.payload, r = Object(C.e)(s, n);
+							} = t.payload, r = Object(y.e)(s, n);
 							return {
 								...e,
 								[r]: !0
@@ -259,7 +259,7 @@
 				}) => {
 					const a = s(),
 						o = t.after || "",
-						d = Object(C.e)(e, o),
+						d = Object(y.e)(e, o),
 						i = a.features.banned.fetchedTokens[d];
 					if (a.features.banned.api.pending[d] || i) return;
 					n(z({
@@ -312,7 +312,7 @@
 							username: t.username
 						};
 						r(Object(c.f)({
-							kind: y.b.SuccessMod,
+							kind: C.b.SuccessMod,
 							text: s.fbt._("Successfully banned a user", null, {
 								hk: "1kORpS"
 							})
@@ -325,7 +325,7 @@
 							hk: "1IJNeH"
 						}));
 						r(Object(c.f)({
-							kind: y.b.Error,
+							kind: C.b.Error,
 							text: e,
 							duration: 3e3
 						}))
@@ -347,7 +347,7 @@
 						subredditId: e,
 						userId: t
 					})), n(Object(c.f)({
-						kind: y.b.SuccessMod,
+						kind: C.b.SuccessMod,
 						text: s.fbt._("Successfully unbanned a user", null, {
 							hk: "OgqK6"
 						})
@@ -357,7 +357,7 @@
 							hk: "1IJNeH"
 						}));
 						n(Object(c.f)({
-							kind: y.b.Error,
+							kind: C.b.Error,
 							text: e,
 							duration: 3e3
 						}))
@@ -374,7 +374,7 @@
 							await n(Object(l.o)(t.name))
 						}
 					})(), (async () => {
-						const s = Object(v.wb)(r, {
+						const s = Object(v.yb)(r, {
 							userName: t
 						});
 						if (!s) return;
@@ -581,8 +581,8 @@
 				f = n("./src/reddit/icons/svgs/Unban/index.tsx"),
 				_ = n("./src/reddit/layout/row/RightAlign/index.tsx"),
 				g = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				C = n("./src/reddit/models/ApiRequestState/index.ts"),
-				y = n("./src/reddit/models/SubredditModeration/index.ts"),
+				y = n("./src/reddit/models/ApiRequestState/index.ts"),
+				C = n("./src/reddit/models/SubredditModeration/index.ts"),
 				w = n("./src/reddit/selectors/apiRequestState.ts"),
 				S = n("./src/reddit/selectors/bannedUser.ts"),
 				k = n("./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx"),
@@ -639,7 +639,7 @@
 						})
 					}, this.onChangeBanDuration = e => {
 						const t = Number(e.currentTarget.value);
-						"number" == typeof t && (t < 0 || t > y.b || this.setState({
+						"number" == typeof t && (t < 0 || t > C.b || this.setState({
 							duration: t
 						}))
 					}, this.canSave = () => !this.isApiRequestInProgress() && (!!this.state.reason && (!!Object(x.a)(this.state.username) && (!(!this.state.durationIsPermanent && !this.state.duration) && !(this.state.banMessage && this.state.banMessage.length > L)))), this.onSubmit = () => {
@@ -650,7 +650,7 @@
 						let n = t.durationIsPermanent ? null : t.duration;
 						const s = e.user && null != e.user.duration && e.user.duration === n;
 						null != n && s && (n += 1);
-						const r = Object(C.b)();
+						const r = Object(y.b)();
 						e.onBanUser(t.username, t.modNote, n, t.banMessage, t.reason, t.contextId, r), this.setState({
 							apiRequestId: r
 						})
@@ -680,13 +680,13 @@
 				UNSAFE_componentWillReceiveProps(e) {
 					if (this.state.apiRequestId) {
 						const t = e.apiRequestStates[this.state.apiRequestId];
-						t && t.apiRequestStatus === C.a.Complete && this.onSubmitRequestComplete()
+						t && t.apiRequestStatus === y.a.Complete && this.onSubmitRequestComplete()
 					}
 				}
 				isApiRequestInProgress() {
 					if (!this.state.apiRequestId) return !1;
 					const e = this.props.apiRequestStates[this.state.apiRequestId];
-					return !!e && e.apiRequestStatus === C.a.Pending
+					return !!e && e.apiRequestStatus === y.a.Pending
 				}
 				componentWillUnmount() {
 					this.state.apiRequestId && this.props.releaseRequest(this.state.apiRequestId)
@@ -881,9 +881,9 @@
 			})), n.d(t, "c", (function() {
 				return g
 			})), n.d(t, "d", (function() {
-				return C
-			})), n.d(t, "j", (function() {
 				return y
+			})), n.d(t, "j", (function() {
+				return C
 			}));
 			var s = n("./src/lib/lessComponent.tsx"),
 				r = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
@@ -902,8 +902,8 @@
 				f = s.a.h3("FormElementTitle", a.a),
 				_ = s.a.div("FormElementDescription", a.a),
 				g = s.a.div("FormElementError", a.a),
-				C = s.a.div("FormElementSubGroup", a.a),
-				y = s.a.li("FormListItem", a.a)
+				y = s.a.div("FormElementSubGroup", a.a),
+				C = s.a.li("FormListItem", a.a)
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
 			e.exports = {
@@ -1190,4 +1190,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.2c61318ef61b721968e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.125a7258df21927cd817.js.map

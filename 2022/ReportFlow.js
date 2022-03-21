@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.28b325552bccc22ce3cd.js
-// Retrieved at 3/21/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.412b8f1ef6f21a2e07ce.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -925,7 +925,7 @@
 					if (!f && !p) return;
 					const R = p ? u.features.comments.models[e] : u.posts.models[e];
 					if (!R) return;
-					if (!Object(_.O)(o())) return s(Object(r.j)()), void s(Object(a.k)({
+					if (!Object(_.P)(o())) return s(Object(r.j)()), void s(Object(a.k)({
 						actionSource: a.a.Report,
 						redirectUrl: R.permalink
 					}));
@@ -2149,7 +2149,7 @@
 						(r ? r.author : a ? a.author : null) || t.author;
 						n.name
 					}),
-					isNightmodeOn: M.bb,
+					isNightmodeOn: M.cb,
 					isTalkReportingAllowed: L.B,
 					locale: A.i
 				}),
@@ -3851,7 +3851,7 @@
 					return !!n && n.includes(t)
 				},
 				i = (e, t) => {
-					const n = Object(s.wb)(e, {
+					const n = Object(s.yb)(e, {
 						userName: t
 					});
 					return !!n && a(e, n.id)
@@ -3898,11 +3898,11 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
 			const a = e => s.c.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: r.O,
+					experimentEligibilitySelector: r.P,
 					experimentName: s.i
 				}),
 				i = e => s.e.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: r.O,
+					experimentEligibilitySelector: r.P,
 					experimentName: s.l
 				})
 		},
@@ -3932,4 +3932,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.28b325552bccc22ce3cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.412b8f1ef6f21a2e07ce.js.map

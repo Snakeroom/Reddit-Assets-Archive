@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.3b46438d77a953aeb47a.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.4d7ac1ad43e56be2c807.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -596,14 +596,14 @@
 						} = e, r = 1 !== n;
 						t ? V(!0) : r && V(!1)
 					})
-				}, []), G = Object(r.useRef)({
+				}, []), B = Object(r.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(a.a)(A, H, G.current);
-				const B = Object(i.a)(t);
+				Object(a.a)(A, H, B.current);
+				const G = Object(i.a)(t);
 				Object(r.useEffect)(() => {
-					if (void 0 !== B && B !== t) {
-						const e = t - B;
+					if (void 0 !== G && G !== t) {
+						const e = t - G;
 						M.current ? N.current(e) : L.current += e
 					}
 					return () => {
@@ -1573,8 +1573,8 @@
 				U = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				V = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				H = n("./src/reddit/controls/InternalLink/index.tsx"),
-				G = n("./src/reddit/controls/Score/index.tsx"),
-				B = n("./src/reddit/icons/fonts/index.tsx"),
+				B = n("./src/reddit/controls/Score/index.tsx"),
+				G = n("./src/reddit/icons/fonts/index.tsx"),
 				Y = n("./src/reddit/helpers/styles/mixins/index.m.less"),
 				W = n.n(Y),
 				K = n("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
@@ -1585,7 +1585,7 @@
 				playerName: "RPAN DU Video Player"
 			}), $ = Object(i.b)(() => Object(o.c)({
 				autoplay: A.b,
-				isLoggedIn: A.O,
+				isLoggedIn: A.P,
 				isOverlayOpen: j.i,
 				location: (e, {
 					listingName: t
@@ -1883,7 +1883,7 @@
 				renderExpandIcon() {
 					return s.a.createElement("div", {
 						className: q.a.bigExpando
-					}, s.a.createElement(B.a, {
+					}, s.a.createElement(G.a, {
 						name: "expand",
 						className: q.a.bigExpandoIcon
 					}))
@@ -2029,7 +2029,7 @@
 						[q.a.verticalVotes]: e.isVertical,
 						[q.a.horizontalVotes]: !e.isVertical
 					})
-				}, s.a.createElement(G.a, {
+				}, s.a.createElement(B.a, {
 					className: q.a.score,
 					isScoreHidden: !0,
 					score: 0,
@@ -2040,7 +2040,7 @@
 				}) => s.a.createElement("button", {
 					className: q.a.expandoButton,
 					onClick: e
-				}, s.a.createElement(B.a, {
+				}, s.a.createElement(G.a, {
 					name: "expand",
 					className: q.a.expandoIcon
 				})),
@@ -2056,7 +2056,7 @@
 					isUserOp: !1,
 					onClick: e,
 					noBreakpoints: !0
-				}, s.a.createElement(B.a, {
+				}, s.a.createElement(G.a, {
 					name: "hide"
 				})),
 				oe = ({
@@ -2073,7 +2073,7 @@
 					iconWrapperClassName: q.a.overflowItemIconWrapper,
 					textClassName: q.a.overflowItemText,
 					onClick: e
-				}, s.a.createElement(B.a, {
+				}, s.a.createElement(G.a, {
 					name: "hide"
 				})));
 			t.default = $(Object(U.c)(ne))
@@ -2660,7 +2660,7 @@
 			})), n.d(t, "clickNextFiltersEvent", (function() {
 				return H
 			})), n.d(t, "clickPreviousFiltersEvent", (function() {
-				return G
+				return B
 			}));
 			var r = n("./src/reddit/models/Gold/Award.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts"),
@@ -2862,7 +2862,7 @@
 					action: "click",
 					noun: "next_filters"
 				}),
-				G = () => e => ({
+				B = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
@@ -4048,7 +4048,7 @@
 					const n = Object(o.G)(e, {
 						postId: t
 					});
-					return !(!n || n.isSponsored || n.removedByCategory) && (Object(a.zb)(e, {
+					return !(!n || n.isSponsored || n.removedByCategory) && (Object(a.Bb)(e, {
 						postId: t
 					}) || !!Object(i.l)(e, {
 						postId: t
@@ -4096,11 +4096,11 @@
 				o = n("./src/reddit/selectors/user.ts");
 			const a = (e, t) => {
 				return Object(s.c)(e, {
-					experimentEligibilitySelector: e => ((e, t) => Object(o.zb)(e, {
+					experimentEligibilitySelector: e => ((e, t) => Object(o.Bb)(e, {
 						postId: t
 					}) || !!Object(i.l)(e, {
 						postId: t
-					}) || Object(o.L)(e))(e, t),
+					}) || Object(o.M)(e))(e, t),
 					experimentName: r.N
 				}) === r.dd
 			}
@@ -4252,4 +4252,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.3b46438d77a953aeb47a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.4d7ac1ad43e56be2c807.js.map

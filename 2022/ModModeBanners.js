@@ -1,13 +1,13 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.cafda2fa86eddc76cace.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.7dfa2e4b73530cb28286.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "d", (function() {
-				return O
-			})), s.d(t, "c", (function() {
 				return _
+			})), s.d(t, "c", (function() {
+				return O
 			})), s.d(t, "f", (function() {
 				return j
 			})), s.d(t, "a", (function() {
@@ -40,7 +40,7 @@
 				R = s("./src/reddit/actions/comment/index.ts"),
 				v = s("./src/reddit/actions/comment/constants.ts");
 			const f = Object(r.a)(v.n),
-				O = e => async (t, s, {
+				_ = e => async (t, s, {
 					apiContext: o
 				}) => {
 					s().features.comments.models[e] && (await Object(m.j)(o(), e)).ok && t((e => async t => {
@@ -48,10 +48,10 @@
 							commentId: e
 						}))
 					})(e))
-				}, _ = e => async (t, s, {
+				}, O = e => async (t, s, {
 					apiContext: n
 				}) => {
-					if (!Object(h.O)(s())) return void t(Object(d.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(h.P)(s())) return void t(Object(d.i)(l.a.LOGIN_MODAL_ID));
 					const r = s().features.comments.models[e];
 					if (!r) return;
 					const a = r.isLocked ? m.l : m.e;
@@ -447,14 +447,14 @@
 				R = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				v = s("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
 				f = s("./src/reddit/icons/svgs/Clock/index.tsx"),
-				O = s("./src/reddit/icons/svgs/Undo/index.tsx"),
-				_ = s("./src/reddit/selectors/tooltip.ts"),
+				_ = s("./src/reddit/icons/svgs/Undo/index.tsx"),
+				O = s("./src/reddit/selectors/tooltip.ts"),
 				j = s("./src/reddit/components/Reports/SnoozableReport/index.m.less"),
 				k = s.n(j);
 			const {
 				fbt: E
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), C = (e, t) => `SnoozableReport--${t}--${e}`, N = Object(a.b)(() => Object(d.c)({
-				isDropdownOpen: (e, t) => Object(_.b)(C(t.reason, t.reportedThingId))(e)
+				isDropdownOpen: (e, t) => Object(O.b)(C(t.reason, t.reportedThingId))(e)
 			}), (e, t) => ({
 				openDropdown: () => e(Object(m.h)({
 					tooltipId: C(t.reason, t.reportedThingId)
@@ -500,7 +500,7 @@
 						onClick: this.onSnoozeButtonClick
 					}, n.a.createElement("div", {
 						className: k.a.SnoozeButtonContent
-					}, a ? n.a.createElement(n.a.Fragment, null, n.a.createElement(O.a, null), E._("Undo snoozing reports from this user", null, {
+					}, a ? n.a.createElement(n.a.Fragment, null, n.a.createElement(_.a, null), E._("Undo snoozing reports from this user", null, {
 						hk: "4iqfWB"
 					})) : n.a.createElement(n.a.Fragment, null, n.a.createElement(f.a, null), E._("Snooze reports from this user for 7 days", null, {
 						hk: "4cRFyG"
@@ -632,4 +632,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.cafda2fa86eddc76cace.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.7dfa2e4b73530cb28286.js.map

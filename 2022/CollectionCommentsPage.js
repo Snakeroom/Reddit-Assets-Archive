@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9036be6c610f57c3117d.js
-// Retrieved at 3/21/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.866ab8a12c3bdd46a6b4.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -451,7 +451,7 @@
 					const o = t(),
 						r = Object(u.e)(o),
 						i = Object(u.d)(o),
-						c = Object(h.N)(o);
+						c = Object(h.O)(o);
 					if (r || !i) return;
 					e(x());
 					let p = !1;
@@ -526,7 +526,7 @@
 						a = Object(u.g)(i);
 					if (Object(u.f)(i) || null === a || "client" === a) {
 						const s = null === (o = null === (n = Object(p.b)(t())) || void 0 === n ? void 0 : n.routeMatch) || void 0 === o ? void 0 : o.route.chunk,
-							a = Object(h.O)(i);
+							a = Object(h.P)(i);
 						return Object(r.i)(() => e(O()), {
 							name: "getFocusedVerticalsRequested",
 							page: s,
@@ -1223,7 +1223,7 @@
 							sortToUse: r
 						} = Object(M.a)(e, o);
 					return (!r || r === f.u.CONFIDENCE) && Object(q.c)(e, {
-						experimentEligibilitySelector: () => Object(X.N)(e),
+						experimentEligibilitySelector: () => Object(X.O)(e),
 						experimentName: G.B
 					}) === G.D.Enabled
 				};
@@ -1311,7 +1311,7 @@
 					});
 					O && (F.sort = P), F.onOtherDiscussions = g, t(E.r(u)), await t(Ct(u, p, F, P));
 					const B = s().posts.models[u],
-						D = Object(X.O)(s());
+						D = Object(X.P)(s());
 					if (B && "subreddit" === B.belongsTo.type) {
 						const e = B.belongsTo.id,
 							n = Object(be.i)(() => t(Object(ge.m)(e, {
@@ -1442,7 +1442,7 @@
 						_ = p.pages.comments.api.fullyLoaded[x],
 						j = p.pages.comments.api.error[x],
 						w = p.pages.comments.api.pending[x],
-						I = !Object(X.N)(p),
+						I = !Object(X.O)(p),
 						N = Object(X.k)(p),
 						T = n === f.u.CHAT,
 						L = !!p.platform.lastPage;
@@ -1595,7 +1595,7 @@
 					var i, a;
 					const d = Object(ce.a)(e, t, s),
 						l = o(),
-						u = Object(X.O)(l),
+						u = Object(X.P)(l),
 						p = Object(X.k)(l),
 						b = null === (a = null === (i = Object(Q.b)(o())) || void 0 === i ? void 0 : i.routeMatch) || void 0 === a ? void 0 : a.route.chunk,
 						x = Object(m.a)(r.apiContext(), e, t, s, Object(V.a)(l), Qe(l)),
@@ -2159,7 +2159,7 @@
 					showCommentHighlighter: (e, {
 						postId: t
 					}) => {
-						const s = Object(V.u)(e),
+						const s = Object(V.v)(e),
 							n = !!Object(B.l)(e, {
 								postId: t
 							}),
@@ -2664,7 +2664,7 @@
 					isReportsDropdownOpen: (e, {
 						comment: t
 					}) => Object(w.b)(Me(t.id))(e),
-					isLoggedIn: W.O,
+					isLoggedIn: W.P,
 					postIsArchived: (e, {
 						comment: t
 					}) => Object(U.A)(e, {
@@ -3130,7 +3130,7 @@
 					focused: (e, t) => !t.noFocus && Object(R.t)(e, t),
 					highlightAnimationDisabled: Ot.c,
 					isEditing: R.z,
-					isLoggedIn: W.O,
+					isLoggedIn: W.P,
 					isPendingDeletion: R.C,
 					isPresenceConsumptionExpEnabled: ft.c,
 					moderatorPermissions: (e, t) => {
@@ -3148,7 +3148,7 @@
 					showNftSpecialtyTreatment: wt.b,
 					hasSupporterRing: Ct.a,
 					isOnlineConsumptionLoadTest: ft.a,
-					isOnlineUserPref: W.T,
+					isOnlineUserPref: W.U,
 					userIsBanned: (e, t) => {
 						const s = Ut(e, t);
 						return !!s && Object(V.db)(e, {
@@ -3990,7 +3990,7 @@
 							commentId: n
 						});
 					if (!o) return !1;
-					const r = Object(L.u)(e),
+					const r = Object(L.v)(e),
 						i = !!Object(N.l)(e, {
 							postId: o.postId
 						}),
@@ -4530,7 +4530,7 @@
 						post: t,
 						isOverlay: s
 					}) => !Object(I.q)(t) && !s && Object(P.a)(e) === E.ge.NewModule,
-					isLoggedIn: L.O,
+					isLoggedIn: L.P,
 					postSEOV2IdCardVariant: S.h,
 					shouldShowReredditPromo: N.a,
 					widgets: Object(u.a)(T.s)
@@ -6984,7 +6984,7 @@
 				flairStyleTemplate: Pe.V,
 				currentUser: H.k,
 				crosspost: W.d,
-				hideNSFWPref: H.E,
+				hideNSFWPref: H.F,
 				imageGalleryCurrentItem: W.i,
 				isAdminOrMod: (e, t) => {
 					const s = Object(W.U)(e, {
@@ -7007,7 +7007,7 @@
 				showEditFlair: Le.a,
 				subredditOrProfile: W.U,
 				isEditing: V.M,
-				userIsOp: H.zb,
+				userIsOp: H.Bb,
 				isVoteCountAnimation: (e, t) => !!t.isActionBarAnimationEnabled && Object(Re.f)(e, {
 					postId: t.postId
 				}),
@@ -7716,7 +7716,7 @@
 					q = V && Object(O.h)(V),
 					K = Object(i.e)(e => {
 						if (!q) return !0;
-						const t = Object(_.Cb)(e, R.author || "");
+						const t = Object(_.Eb)(e, R.author || "");
 						return !t || t.enableFollowers
 					});
 				return r.a.createElement("div", {
@@ -7895,7 +7895,7 @@
 					post: t
 				}) => !!t && Object(y.a)(t), (e, {
 					awaitAllCommentsRendered: t
-				}) => t, T.N, T.O, E.d, G, (e, t, s, n, o, r) => !t && !s && !n && !o && !e && r),
+				}) => t, T.O, T.P, E.d, G, (e, t, s, n, o, r) => !t && !s && !n && !o && !e && r),
 				K = Object(c.a)((e, {
 					post: t
 				}) => t, I.c, N.Y, N.ib, (e, t, s, n) => {
@@ -8103,7 +8103,7 @@
 			}) => ({
 				canShowAd: Object(i.a)(e, {
 					postId: t
-				}) && !Object(d.D)(e) && !Object(a.a)(e)
+				}) && !Object(d.E)(e) && !Object(a.a)(e)
 			}))(({
 				canShowAd: e,
 				postId: t,
@@ -8730,10 +8730,10 @@
 						n = t.redditStyle || Object(g.l)(e, {
 							subredditId: s
 						}),
-						o = Object(x.bb)(e);
+						o = Object(x.cb)(e);
 					return n || o
 				},
-				nigtmode: x.bb,
+				nigtmode: x.cb,
 				subredditId: m.n,
 				topPostVariant: b.d
 			}));
@@ -10041,8 +10041,8 @@
 				}).apply(this, arguments)
 			}
 			const y = Object(r.b)(() => Object(i.c)({
-					showFPR: x.M,
-					showSuspended: x.V,
+					showFPR: x.N,
+					showSuspended: x.W,
 					showOffline: e => e.connection.showBanner
 				})),
 				O = Object(d.a)(({
@@ -10639,7 +10639,7 @@
 					contentGateInfo: (e, {
 						subredditName: t
 					}) => Object(Ie.f)(e, t),
-					currentUserShowNSFW: Ie.ib,
+					currentUserShowNSFW: Ie.jb,
 					dismissedSubreddits: he.a,
 					fullyLoaded: ce.u,
 					hasModeratorPostPermissions: Ee.c,
@@ -10661,8 +10661,8 @@
 					isEligibleForCommentTruncation: _e.a,
 					isChatPost: de.d,
 					isCommentsListTruncated: me.a,
-					isLoggedIn: Ie.O,
-					isNightmodeOn: Ie.bb,
+					isLoggedIn: Ie.P,
+					isNightmodeOn: Ie.cb,
 					isTooltipOpen: (e, t) => !!Object(we.a)(e),
 					origin: ke.j,
 					post: je.G,
@@ -10679,7 +10679,7 @@
 							commentsPageKey: n
 						})
 					}),
-					shouldOpenPostInNewTab: Ie.hb,
+					shouldOpenPostInNewTab: Ie.ib,
 					subredditAboutInfo: (e, {
 						subredditName: t
 					}) => t ? Object(te.u)(e, {
@@ -10691,7 +10691,7 @@
 						tooltipIdPrefix: U.a,
 						tooltipType: Je.c.StickyPost
 					}))(e),
-					userPrefs: Ie.Db,
+					userPrefs: Ie.Fb,
 					inResonatePilot: ye.a,
 					isQualifiedForUpvotePrompt: se.c,
 					isEligibleForNsfwSignupUpsellTreatment: (e, {
@@ -11497,7 +11497,7 @@
 				o = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
-			const a = Object(n.a)(i.O, i.N, (e, t) => e || t),
+			const a = Object(n.a)(i.P, i.O, (e, t) => e || t),
 				d = Object(n.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: o.H
@@ -11783,7 +11783,7 @@
 				C = e => e.focusedVerticals.category,
 				v = e => e.focusedVerticals.lastLoadedEnv,
 				y = e => {
-					const t = Object(a.N)(e),
+					const t = Object(a.O)(e),
 						s = o.d.geoSubredditRecommendationDULoggedIn(e),
 						n = o.d.geoSubredditRecommendationDULoggedOut(e);
 					return t && s || !t && n
@@ -11825,7 +11825,7 @@
 					...t,
 					subredditOrProfile: s
 				})
-			}, i.U, i.G, a.N, a.O, r.g, (e, t, s, n, o, r, i) => {
+			}, i.U, i.G, a.O, a.P, r.g, (e, t, s, n, o, r, i) => {
 				if (!n) return !1;
 				const a = !(!s || Object(d.h)(s)),
 					c = n.numComments >= 3 && !e || !t;
@@ -11883,4 +11883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.9036be6c610f57c3117d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.866ab8a12c3bdd46a6b4.js.map

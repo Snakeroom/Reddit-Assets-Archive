@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.81e44b4c77a8ae4a185a.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.f263b4070597e822b42f.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1049,7 +1049,7 @@
 					}) => {
 						t(y());
 						const l = r(),
-							d = Object(i.O)(l);
+							d = Object(i.P)(l);
 						try {
 							const r = !d,
 								n = await Object(o.b)({
@@ -2074,8 +2074,8 @@
 					activeSaleConfig: M.a,
 					coinPackages: M.d,
 					dealCoinPackages: M.f,
-					isPremiumSubscriber: L.v,
-					isLoggedIn: L.O,
+					isPremiumSubscriber: L.w,
+					isLoggedIn: L.P,
 					premiumPackages: M.l,
 					purchaseCatalogPending: M.o
 				}),
@@ -2362,4 +2362,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.81e44b4c77a8ae4a185a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.f263b4070597e822b42f.js.map

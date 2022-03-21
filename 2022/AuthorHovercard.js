@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.2cffeb80121ea2fbd3d2.js
-// Retrieved at 3/21/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.c0e5644f2e5fddede300.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -370,8 +370,8 @@
 				}
 			});
 			const Q = Object(o.a)(E.o),
-				V = Object(o.a)(E.n),
-				Y = Object(o.a)(E.m),
+				Y = Object(o.a)(E.n),
+				V = Object(o.a)(E.m),
 				$ = (e, t = {}) => async (n, a, {
 					apiContext: r
 				}) => {
@@ -386,10 +386,10 @@
 					}));
 					const d = s.subreddits.models[e].name,
 						l = await x(r(), d, t);
-					l.ok ? n(V({
+					l.ok ? n(Y({
 						...l.body,
 						fetchedToken: o
-					})) : n(Y({
+					})) : n(V({
 						subredditId: e,
 						fetchedToken: o
 					}))
@@ -492,7 +492,7 @@
 							await n(Object(d.o)(t.name))
 						}
 					})(), (async () => {
-						const a = Object(k.wb)(r, {
+						const a = Object(k.yb)(r, {
 							userName: t
 						});
 						if (!a) return;
@@ -1068,18 +1068,18 @@
 				z = n("./src/reddit/components/Hovercards/helpers.ts"),
 				X = n("./src/reddit/icons/fonts/index.tsx"),
 				Q = n("./src/reddit/models/ModeratingSubreddits/index.ts"),
-				V = n("./src/reddit/selectors/bannedUser.ts"),
-				Y = n("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
-				$ = n.n(Y);
+				Y = n("./src/reddit/selectors/bannedUser.ts"),
+				V = n("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
+				$ = n.n(V);
 			const {
 				fbt: ee
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), te = Object(o.c)({
 				hasModMailPermissions: Object(p.b)(Q.c.mail),
-				isUserBanned: (e, t) => !!Object(V.b)(e, {
+				isUserBanned: (e, t) => !!Object(Y.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(_.wb)(e, {
+				user: (e, t) => Object(_.yb)(e, {
 					userName: t.username
 				})
 			});
@@ -1382,8 +1382,8 @@
 			const Ae = Object(o.c)({
 					activeTooltipId: I.a,
 					currentUser: _.k,
-					isLoggedIn: _.O,
-					hideNSFWPref: _.E,
+					isLoggedIn: _.P,
+					hideNSFWPref: _.F,
 					moderatorPermissions: (e, {
 						subredditId: t
 					}) => t ? Object(p.m)(e, {
@@ -1401,7 +1401,7 @@
 						userName: t,
 						minSize: 32
 					}),
-					user: _.wb,
+					user: _.yb,
 					userFlair: (e, {
 						subredditId: t
 					}) => t ? Object(N.d)(e, {
@@ -1419,7 +1419,7 @@
 						subredditId: t
 					}) => Object(m.a)(e, t),
 					trophyCase: (e, t) => Object(h.r)(e, Object(h.m)(e, t.userName)),
-					isNightMode: _.bb,
+					isNightMode: _.cb,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
 						const n = Object(d.a)(t.contextId) ? Object(f.G)(e, {
@@ -1607,7 +1607,7 @@
 						subredditId: o,
 						userId: c,
 						thingId: l
-					} = e, [u, p] = Object(a.useState)(), [b, h] = Object(a.useState)(!0), [I, j] = Object(a.useState)(""), [y, U] = Object(a.useState)(!1), A = Object(s.e)(E.bb);
+					} = e, [u, p] = Object(a.useState)(), [b, h] = Object(a.useState)(!0), [I, j] = Object(a.useState)(""), [y, U] = Object(a.useState)(!1), A = Object(s.e)(E.cb);
 					Object(a.useEffect)(() => {
 						const e = e => {
 							e.style.height = "inherit";
@@ -1959,8 +1959,8 @@
 						className: Object(d.a)(t, q.a.icon)
 					})
 				},
-				V = n("./src/reddit/selectors/activeModalId.ts"),
-				Y = n("./src/reddit/actions/modal.ts"),
+				Y = n("./src/reddit/selectors/activeModalId.ts"),
+				V = n("./src/reddit/actions/modal.ts"),
 				$ = n("./src/reddit/hooks/useLocale.ts"),
 				ee = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				te = n("./src/reddit/controls/InternalLink/index.tsx"),
@@ -1977,7 +1977,7 @@
 						user: u,
 						id: p,
 						itemType: b
-					} = o, h = `ModUserNote--Modal--DeleteConfirmation--${p}`, v = Object(a.useCallback)(() => b && m(Object(i.b)(l, u.id, p, b)), [m, u.id, p, b, l]), x = Object(a.useCallback)(() => m(Object(Y.i)(h)), [m, h]), I = Object(s.e)(e => Object(V.a)(e) === h), _ = Object($.a)(), N = new Intl.DateTimeFormat(_, {
+					} = o, h = `ModUserNote--Modal--DeleteConfirmation--${p}`, v = Object(a.useCallback)(() => b && m(Object(i.b)(l, u.id, p, b)), [m, u.id, p, b, l]), x = Object(a.useCallback)(() => m(Object(V.i)(h)), [m, h]), I = Object(s.e)(e => Object(Y.a)(e) === h), _ = Object($.a)(), N = new Intl.DateTimeFormat(_, {
 						month: "short",
 						day: "numeric",
 						year: "numeric",
@@ -2022,7 +2022,7 @@
 					onClickLinked: n
 				}) => {
 					var a, o;
-					const i = Object(s.e)(E.bb),
+					const i = Object(s.e)(E.cb),
 						c = "label" in t && t.label || k.c,
 						l = "note" in t ? t.note : void 0,
 						m = Object(g.b)(k.e[c || "bot"], {
@@ -2214,7 +2214,7 @@
 					const {
 						modNote: t,
 						subredditId: n
-					} = e, a = Object(s.e)(E.bb), o = Object(p.a)(), i = !!t.__typename && ["ModActionNote", "ModActionNotePost", "ModActionNoteComment"].includes(t.__typename);
+					} = e, a = Object(s.e)(E.cb), o = Object(p.a)(), i = !!t.__typename && ["ModActionNote", "ModActionNotePost", "ModActionNoteComment"].includes(t.__typename);
 					return r.a.createElement("div", {
 						className: Object(d.a)(Z.a.wrapper, e.className)
 					}, r.a.createElement("div", {
@@ -2315,7 +2315,7 @@
 							userId: i,
 							filter: c
 						} = e,
-						l = Object(s.e)(e => Object(E.vb)(e, {
+						l = Object(s.e)(e => Object(E.xb)(e, {
 							userId: i
 						})),
 						m = Object(s.e)(e => Object(A.S)(e, {
@@ -2396,7 +2396,7 @@
 						subredditId: n,
 						userId: o,
 						filter: c
-					} = e, l = Object(s.d)(), m = Object(s.e)(E.bb), [u, p] = Object(a.useState)(!0);
+					} = e, l = Object(s.d)(), m = Object(s.e)(E.cb), [u, p] = Object(a.useState)(!0);
 					Object(a.useEffect)(() => {
 						setTimeout(() => p(!1), 0)
 					}, []);
@@ -2482,7 +2482,7 @@
 						} = e,
 						[x, I] = Object(a.useState)(h || y.k.All),
 						[_, N] = Object(a.useState)(o),
-						C = Object(s.e)(E.bb),
+						C = Object(s.e)(E.cb),
 						O = Object(p.a)(),
 						g = e => {
 							t(Object(i.f)({
@@ -2555,8 +2555,8 @@
 				ze = n("./src/reddit/components/JSAPIContainers/index.tsx"),
 				Xe = n("./src/reddit/components/ModNoteItem/index.tsx"),
 				Qe = n("./src/reddit/components/SubscribeButton/index.tsx"),
-				Ve = n("./src/reddit/components/UserIcon/index.tsx"),
-				Ye = n("./src/reddit/endpoints/profile/info.ts"),
+				Ye = n("./src/reddit/components/UserIcon/index.tsx"),
+				Ve = n("./src/reddit/endpoints/profile/info.ts"),
 				$e = n("./src/reddit/helpers/trackers/authorHovercard.ts"),
 				et = n("./src/reddit/icons/svgs/Admin/index.tsx"),
 				tt = n("./src/reddit/icons/svgs/Premium/index.tsx"),
@@ -2603,7 +2603,7 @@
 							subredditId: l,
 							username: m
 						})),
-						C = Object(s.e)(e => Object(E.wb)(e, {
+						C = Object(s.e)(e => Object(E.yb)(e, {
 							userName: m
 						})),
 						O = Object(s.e)(E.k),
@@ -2630,7 +2630,7 @@
 								username: m,
 								subredditId: l,
 								contextId: d
-							})), i(Object(Y.i)(rt.a.MUTE_USER)), o($e.d(d))
+							})), i(Object(V.i)(rt.a.MUTE_USER)), o($e.d(d))
 						}, [o, i, m, l, d]),
 						A = Object(a.useCallback)(() => {
 							i(Object(it.g)(l, m)), o($e.c(d))
@@ -2785,7 +2785,7 @@
 						trophyCase: a,
 						prefersReducedAnimations: s
 					} = e, o = {
-						...Ye.a,
+						...Ve.a,
 						...n
 					}, i = null == t ? void 0 : t.topAward;
 					return r.a.createElement("div", {
@@ -2923,7 +2923,7 @@
 					src: v.snoovatarFullBodyAsset
 				}) : (null === (t = v.accountIcon) || void 0 === t ? void 0 : t.includes("avatars/defaults/v2")) ? r.a.createElement("div", {
 					className: It.a.anonymousSnoovatar
-				}, r.a.createElement(Ze, null)) : r.a.createElement(Ve.a, {
+				}, r.a.createElement(Ze, null)) : r.a.createElement(Ye.a, {
 					className: It.a.UserIcon,
 					iconUrl: v.accountIcon,
 					isNSFW: v.isNSFW,
@@ -3366,7 +3366,7 @@
 			}(a || (a = {}));
 			t.b = e => {
 				var t, n, a;
-				const s = Object(i.e)(h.bb),
+				const s = Object(i.e)(h.cb),
 					{
 						className: v,
 						modNote: I,
@@ -3676,7 +3676,7 @@
 				o = n("./src/reddit/selectors/user.ts");
 			const i = Object(r.c)({
 					currentUser: o.k,
-					hideNSFWPref: o.E
+					hideNSFWPref: o.F
 				}),
 				c = Object(a.b)(i, e => ({
 					imageUpdateRequested: (t, n) => e(Object(s.C)(t, n))
@@ -5009,7 +5009,7 @@
 				c = n("./src/reddit/selectors/platform.ts"),
 				d = n("./src/reddit/selectors/user.ts");
 			const l = () => !0,
-				m = Object(a.a)(d.V, d.M, (e, t) => !(e || t)),
+				m = Object(a.a)(d.W, d.N, (e, t) => !(e || t)),
 				u = e => {
 					if (!m(e)) return;
 					const t = Object(o.c)(e, {
@@ -5037,4 +5037,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.2cffeb80121ea2fbd3d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.c0e5644f2e5fddede300.js.map

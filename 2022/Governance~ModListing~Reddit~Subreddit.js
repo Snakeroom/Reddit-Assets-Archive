@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f57472482f8b3af26a2e.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.cd3f1529dc714003dc31.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -260,7 +260,7 @@
 						name: `${n.jc}${e.name}`,
 						type: e.type
 					});
-					if (!Object(E.O)(d())) return c(Object(a.k)({
+					if (!Object(E.P)(d())) return c(Object(a.k)({
 						actionSource: a.a.Subscribe
 					})), void c(Object(i.j)());
 					const f = Object(E.k)(d());
@@ -401,7 +401,7 @@
 				}) => {
 					const o = r(),
 						i = o.multireddits.models;
-					if (!Object(E.O)(o)) return;
+					if (!Object(E.P)(o)) return;
 					const a = (e = !0) => {
 							t(Object(l.f)({
 								text: s.fbt._("Sorry, failed to {followAction}", [s.fbt._param("followAction", e ? s.fbt._("follow", null, {
@@ -668,7 +668,7 @@
 				x = Object(b.u)();
 			t.b = x(e => {
 				var t;
-				const r = Object(i.e)(O.bb);
+				const r = Object(i.e)(O.cb);
 				let c, d, l;
 				if (e.subredditOrProfile) {
 					const {
@@ -868,9 +868,9 @@
 			const g = () => {},
 				S = Object(i.c)({
 					currentUser: p.k,
-					isNightMode: p.bb,
-					shouldHideNSFW: p.E,
-					user: p.wb,
+					isNightMode: p.cb,
+					shouldHideNSFW: p.F,
+					user: p.yb,
 					isProfileAvatarChangeFixEnabled: I.a
 				}),
 				v = Object(o.b)(S);
@@ -2136,7 +2136,7 @@
 					if (!Object(l.m)(e, {
 							subredditId: t
 						})) return;
-					if (Object(m.L)(e)) return O(e);
+					if (Object(m.M)(e)) return O(e);
 					const r = Object(b.G)(e, {
 						identifier: {
 							id: t,
@@ -2166,4 +2166,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.f57472482f8b3af26a2e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.cd3f1529dc714003dc31.js.map

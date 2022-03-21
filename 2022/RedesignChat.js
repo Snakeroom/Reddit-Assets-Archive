@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.2aba0adeda94bdae5b20.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.b658e47ef6d543328678.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -52,8 +52,8 @@
 				y = n("./src/chat/constants/container.ts"),
 				M = n("./src/chat/helpers/chatSelector.ts"),
 				_ = n("./src/chat/actions/container.ts"),
-				N = n("./src/chat/components/PortalContainer/index.m.less"),
-				P = n.n(N);
+				P = n("./src/chat/components/PortalContainer/index.m.less"),
+				N = n.n(P);
 			const {
 				embed: S,
 				hidden: B
@@ -64,7 +64,7 @@
 			}
 			const A = C.a.wrapped(e => a.a.createElement("div", {
 					className: e.className
-				}, e.children), "BasePortalContainer", P.a),
+				}, e.children), "BasePortalContainer", N.a),
 				D = C.a.wrapped(e => {
 					const t = Object(O.d)(),
 						n = Object(s.useRef)(null),
@@ -85,15 +85,15 @@
 							height: `${T(S.height)}px`
 						}
 					}, e.children)
-				}, "EmbedPortalContainer", P.a),
+				}, "EmbedPortalContainer", N.a),
 				R = C.a.wrapped(e => a.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${T(B.width)}px`,
 						height: `${T(B.height)}px`
 					}
-				}, e.children), "HiddenPortalContainer", P.a),
-				k = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", P.a),
+				}, e.children), "HiddenPortalContainer", N.a),
+				k = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
 				I = A,
 				L = Object(M.a)({
 					container: e => e && e.container && e.container.size
@@ -451,7 +451,7 @@
 				p = () => async (e, t) => {
 					const n = t(),
 						s = Object(r.f)(n, {}),
-						a = Object(l.N)(n) || Object(l.O)(n),
+						a = Object(l.O)(n) || Object(l.P)(n),
 						c = Object(u.b)(n);
 					if (!a || !s) return;
 					const i = c ? Object(d.i)(n) : Object(d.j)(n);
@@ -693,4 +693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.2aba0adeda94bdae5b20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.b658e47ef6d543328678.js.map

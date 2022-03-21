@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.fb94ea448f527cf4becc.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.5147beb4a46086d669c1.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -700,7 +700,7 @@
 				}) => async (n, o) => {
 					const s = o();
 					if (!!s.features.comments.drafts[t])
-						if (Object(G.Q)(s) && e) {
+						if (Object(G.R)(s) && e) {
 							const o = $({
 								hasFocus: e,
 								draftKey: t
@@ -870,7 +870,7 @@
 				}) => async (o, s) => {
 					const r = s(),
 						l = Object(i.a)(H.c.replyToComment, t);
-					if (!Object(G.O)(s())) return o(Object(c.j)()), void o(Object(d.k)({
+					if (!Object(G.P)(s())) return o(Object(c.j)()), void o(Object(d.k)({
 						actionSource: d.a.Reply,
 						redirectUrl: Object(X.m)(s(), {
 							commentId: t
@@ -910,7 +910,7 @@
 							draftType: H.c.replyToComment,
 							rtJson: h,
 							text: ""
-						}, Object(G.Q)(r)) {
+						}, Object(G.R)(r)) {
 						const n = me({
 							parentCommentId: t,
 							commentsPageKey: e,
@@ -3708,9 +3708,9 @@
 			}
 			const f = Object(a.c)({
 					currentUser: d.k,
-					isNightMode: d.bb,
-					isPresenceUserPrefEnabled: d.T,
-					shouldHideNSFW: d.E
+					isNightMode: d.cb,
+					isPresenceUserPrefEnabled: d.U,
+					shouldHideNSFW: d.F
 				}),
 				_ = Object(i.b)(f);
 			t.a = _(e => {
@@ -4113,7 +4113,7 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
-			const a = Object(o.a)(i.O, i.N, (e, t) => e || t),
+			const a = Object(o.a)(i.P, i.O, (e, t) => e || t),
 				c = Object(o.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: s.H
@@ -4171,4 +4171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.fb94ea448f527cf4becc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.5147beb4a46086d669c1.js.map

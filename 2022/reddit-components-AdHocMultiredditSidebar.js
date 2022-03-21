@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.61c16cbc86c0e283fc2c.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.610c34220536b8579f03.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-AdHocMultiredditSidebar"], {
 		"./src/reddit/actions/multireddit/constants.ts": function(e, t, n) {
@@ -29,9 +29,9 @@
 			})), n.d(t, "l", (function() {
 				return T
 			})), n.d(t, "m", (function() {
-				return E
-			})), n.d(t, "k", (function() {
 				return D
+			})), n.d(t, "k", (function() {
+				return E
 			})), n.d(t, "n", (function() {
 				return m
 			})), n.d(t, "o", (function() {
@@ -73,8 +73,8 @@
 				_ = "MULTIREDDIT__DELETE_SUCCESS",
 				I = "MULTIREDDIT__DELETE_FAILURE",
 				T = "MULTIREDDIT__DUPLICATE_PENDING",
-				E = "MULTIREDDIT__DUPLICATE_SUCCESS",
-				D = "MULTIREDDIT__DUPLICATE_FAILURE",
+				D = "MULTIREDDIT__DUPLICATE_SUCCESS",
+				E = "MULTIREDDIT__DUPLICATE_FAILURE",
 				m = "MULTIREDDIT__EDIT_FAILURE",
 				f = "MULTIREDDIT__EDIT_PENDING",
 				M = "MULTIREDDIT__EDIT_SUCCESS",
@@ -177,9 +177,9 @@
 			})), n.d(t, "e", (function() {
 				return T
 			})), n.d(t, "n", (function() {
-				return E
-			})), n.d(t, "p", (function() {
 				return D
+			})), n.d(t, "p", (function() {
+				return E
 			})), n.d(t, "o", (function() {
 				return m
 			})), n.d(t, "f", (function() {
@@ -236,8 +236,8 @@
 			}
 			const I = o.a.wrapped(c.a, "CloseIcon", l.a),
 				T = o.a.section("ModalBody", l.a),
-				E = o.a.section("ModalPostPreview", l.a),
-				D = o.a.p("ModalText", l.a),
+				D = o.a.section("ModalPostPreview", l.a),
+				E = o.a.p("ModalText", l.a),
 				m = o.a.div("ModalSmallText", l.a),
 				f = o.a.div("ModalDescriptionText", l.a),
 				M = o.a.div("ModalMetaText", l.a),
@@ -278,8 +278,8 @@
 				I = n("./src/reddit/components/UserIcon/UserIcon.m.less"),
 				T = n.n(I);
 
-			function E() {
-				return (E = Object.assign || function(e) {
+			function D() {
+				return (D = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -287,13 +287,13 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const D = Object(d.c)({
+			const E = Object(d.c)({
 					currentUser: c.k,
-					isNightMode: c.bb,
-					isPresenceUserPrefEnabled: c.T,
-					shouldHideNSFW: c.E
+					isNightMode: c.cb,
+					isPresenceUserPrefEnabled: c.U,
+					shouldHideNSFW: c.F
 				}),
-				m = Object(a.b)(D);
+				m = Object(a.b)(E);
 			t.a = m(e => {
 				const {
 					currentUser: t,
@@ -307,7 +307,7 @@
 				}, c ? s.a.createElement(l.a, {
 					headshot: t.accountIcon,
 					className: e.className
-				}) : s.a.createElement(_.b, E({}, d, {
+				}) : s.a.createElement(_.b, D({}, d, {
 					iconUrl: t ? t.accountIcon : void 0,
 					isCurrentUser: !0,
 					isNSFW: !!t && t.isNSFW
@@ -429,4 +429,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.61c16cbc86c0e283fc2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.610c34220536b8579f03.js.map

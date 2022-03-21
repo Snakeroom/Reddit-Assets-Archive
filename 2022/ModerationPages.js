@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.1588c50263bfb6b21cd4.js
-// Retrieved at 3/21/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.05813ef4ecebbd4d8b12.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -208,7 +208,7 @@
 				}, _ = e => async (t, n, {
 					apiContext: a
 				}) => {
-					if (!Object(f.O)(n())) return void t(Object(i.i)(c.a.LOGIN_MODAL_ID));
+					if (!Object(f.P)(n())) return void t(Object(i.i)(c.a.LOGIN_MODAL_ID));
 					const o = n().features.comments.models[e];
 					if (!o) return;
 					const r = o.isLocked ? m.l : m.e;
@@ -1107,7 +1107,7 @@
 					if (s) return;
 					a || n && !s || await t(Object(T.subredditDataRequested)(e, k, {}))
 				} else _ && await t(Object(P.e)(_));
-				if (!Object(fe.O)(n()) && C !== o.fc.SubredditRules && C !== o.fc.Contributors) return void Object(m.a)(t, n());
+				if (!Object(fe.P)(n()) && C !== o.fc.SubredditRules && C !== o.fc.Contributors) return void Object(m.a)(t, n());
 				if (Object(p.i)(n(), !0, k, _), !C) return;
 				let G, K, Q, X, J, Y, Z, $, ee, te = !1;
 				switch (C) {
@@ -1190,7 +1190,7 @@
 				}
 				const ne = n(),
 					se = !!k && Object(be.jb)(ne),
-					ae = Object(fe.L)(ne),
+					ae = Object(fe.M)(ne),
 					oe = k ? Object(y.V)(ne, {
 						subredditName: k.toLowerCase()
 					}) : Object(he.q)(ne, {
@@ -2715,7 +2715,7 @@
 				}) => {
 					const {
 						audioRoom: t
-					} = e, n = () => Math.floor(10 * Math.random() + 1), o = Object(b.e)(h.bb), [i, d] = Object(s.useState)(!1), [l, c] = Object(s.useState)(n());
+					} = e, n = () => Math.floor(10 * Math.random() + 1), o = Object(b.e)(h.cb), [i, d] = Object(s.useState)(!1), [l, c] = Object(s.useState)(n());
 					return Object(s.useEffect)(() => {
 						const e = setInterval(() => {
 							d(!0), setTimeout(() => d(!1), 3500), c(n())
@@ -6693,7 +6693,7 @@
 				allowChatPostCreation: (e, t) => Object(M.b)(e, t.subredditId),
 				isBroadcastingEnabled: (e, t) => Object(P.c)(e, t.subredditId),
 				isChatPostsCreationEnabled: (e, t) => Object(M.c)(e, t.subredditId),
-				isEmployee: D.L,
+				isEmployee: D.M,
 				notificationSettings: A.b,
 				restrictions: R.m,
 				settings: (e, t) => Object(R.U)(e, t.subredditId),
@@ -17167,7 +17167,7 @@
 				ce = f.a.div("TickText", U.a),
 				me = f.a.div("PreSubText", U.a),
 				ue = Object(i.c)({
-					isNightModeOn: D.bb
+					isNightModeOn: D.cb
 				}),
 				pe = Object(o.b)(ue)(e => a.a.createElement(X, {
 					last: e.last,
@@ -18711,10 +18711,10 @@
 					error: B.f,
 					isCreatePending: B.j,
 					isEmailInviteExperimentEnabled: U.a,
-					isEmployee: W.L,
+					isEmployee: W.M,
 					crosspostId: B.i,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(W.mb)(e),
-					userIsSuspended: W.V,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(W.ob)(e),
+					userIsSuspended: W.W,
 					allTags: H.e,
 					existingTags: H.f,
 					newTags: H.g,
@@ -20069,7 +20069,7 @@
 					isChatPost: u.d,
 					isCurrentUserProfilePost: h.l,
 					isExpanded: h.m,
-					isLoggedIn: f.O,
+					isLoggedIn: f.P,
 					showPromotedCTA: g.a,
 					moderatorPermissions: p.l,
 					modModeEnabled: l.T,
@@ -23358,7 +23358,7 @@
 						profileName: t.match.params.profileName
 					})
 				}),
-				Xe = Object(i.b)(() => Object(d.a)(Ve, I.L, x.R, Ge, I.ib, O.jb, Qe, Ke, qe, (e, t) => t.match.params.pageName, e => e, ({
+				Xe = Object(i.b)(() => Object(d.a)(Ve, I.M, x.R, Ge, I.jb, O.jb, Qe, Ke, qe, (e, t) => t.match.params.pageName, e => e, ({
 					contentGateInfo: e
 				}, t, n, {
 					moderatorPermissions: s
@@ -23681,4 +23681,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1588c50263bfb6b21cd4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.05813ef4ecebbd4d8b12.js.map

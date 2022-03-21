@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.676172bb574b40d14395.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.d58969ad6f253356ce1b.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -50,8 +50,8 @@
 				h = s("./src/reddit/components/BlankPost/index.tsx"),
 				v = s("./src/reddit/components/CallToActionButton/index.tsx"),
 				C = s("./src/reddit/components/JSAPIContainers/index.tsx"),
-				O = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				g = s("./src/reddit/components/PostContainer/index.tsx"),
+				g = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
+				O = s("./src/reddit/components/PostContainer/index.tsx"),
 				k = s("./src/reddit/components/PostTitle/index.tsx"),
 				f = s("./src/reddit/constants/componentTestIds.ts"),
 				y = s("./src/reddit/controls/OutboundLink/index.tsx"),
@@ -220,12 +220,12 @@
 						postId: b.id
 					}) : a.a.createElement("div", null, a.a.createElement("div", {
 						className: I.a.commentsSpacer
-					}), a.a.createElement(g.a, {
+					}), a.a.createElement(O.a, {
 						className: I.a.postContainer,
 						isOverlay: l,
 						post: b,
 						eventFactory: t
-					}, a.a.createElement(O.a, {
+					}, a.a.createElement(g.a, {
 						"data-click-id": "background"
 					}, a.a.createElement("div", {
 						className: I.a.mainBody
@@ -352,7 +352,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: x.l,
 					isExpanded: x.m,
-					isLoggedIn: v.O,
+					isLoggedIn: v.P,
 					showPromotedCTA: h.a,
 					moderatorPermissions: u.l,
 					modModeEnabled: c.T,
@@ -364,7 +364,7 @@
 					showMedia: c.s,
 					flairStyleTemplate: c.V
 				},
-				O = Object(r.b)(() => Object(o.c)(C), (e, {
+				g = Object(r.b)(() => Object(o.c)(C), (e, {
 					postId: t
 				}) => ({
 					handleVote: s => {
@@ -381,7 +381,7 @@
 					...s,
 					formatTitle: e => e.title
 				}));
-			t.a = e => Object(l.b)(O(Object(d.b)(e)))
+			t.a = e => Object(l.b)(g(Object(d.b)(e)))
 		},
 		"./src/reddit/helpers/search/renderMedia.tsx": function(e, t, s) {
 			"use strict";
@@ -460,4 +460,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.676172bb574b40d14395.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.d58969ad6f253356ce1b.js.map

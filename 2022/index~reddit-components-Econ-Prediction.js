@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.e2d05703f02e406c607c.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.f277a636e8ac32b8602e.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -137,18 +137,18 @@
 					y = n & p,
 					k = n & (_ | f),
 					w = n & b,
-					S = y ? void 0 : r(t);
+					P = y ? void 0 : r(t);
 				return function m() {
 					for (var p = arguments.length, _ = Array(p), f = p; f--;) _[f] = arguments[f];
 					if (k) var h = d(m),
 						b = s(_, h);
 					if (g && (_ = a(_, g, O, k)), j && (_ = o(_, j, v, k)), p -= b, k && p < N) {
-						var P = l(_, h);
-						return c(t, n, e, m.placeholder, E, _, P, C, x, N - p)
+						var S = l(_, h);
+						return c(t, n, e, m.placeholder, E, _, S, C, x, N - p)
 					}
 					var T = A ? E : this,
 						M = y ? T[t] : t;
-					return p = _.length, C ? _ = i(_, C) : w && p > 1 && _.reverse(), I && x < p && (_.length = x), this && this !== u && this instanceof m && (M = S || r(M)), M.apply(T, _)
+					return p = _.length, C ? _ = i(_, C) : w && p > 1 && _.reverse(), I && x < p && (_.length = x), this && this !== u && this instanceof m && (M = P || r(M)), M.apply(T, _)
 				}
 			}
 		},
@@ -214,10 +214,10 @@
 					j = v = void 0
 				}
 				var w = I ? void 0 : d(e),
-					S = [e, t, n, j, v, y, k, C, x, N];
-				if (w && i(S, w), e = S[0], t = S[1], n = S[2], j = S[3], v = S[4], !(N = S[9] = void 0 === S[9] ? I ? 0 : e.length : O(S[9] - A, 0)) && t & (h | b) && (t &= ~(h | b)), t && t != _) P = t == h || t == b ? s(e, t, N) : t != E && t != (_ | E) || v.length ? r.apply(void 0, S) : c(e, t, n, j);
-				else var P = o(e, t, n);
-				return u((w ? a : l)(P, S), e, t)
+					P = [e, t, n, j, v, y, k, C, x, N];
+				if (w && i(P, w), e = P[0], t = P[1], n = P[2], j = P[3], v = P[4], !(N = P[9] = void 0 === P[9] ? I ? 0 : e.length : O(P[9] - A, 0)) && t & (h | b) && (t &= ~(h | b)), t && t != _) S = t == h || t == b ? s(e, t, N) : t != E && t != (_ | E) || v.length ? r.apply(void 0, P) : c(e, t, n, j);
+				else var S = o(e, t, n);
+				return u((w ? a : l)(S, P), e, t)
 			}
 		},
 		"./node_modules/lodash/_getData.js": function(e, t, n) {
@@ -1037,7 +1037,7 @@
 					isShowingHint: v,
 					...C
 				}, x) => {
-					const N = Object(s.e)(h.bb),
+					const N = Object(s.e)(h.cb),
 						I = l === i.id,
 						A = a || !!O || !!l || n;
 					return o.a.createElement("div", {
@@ -1100,14 +1100,14 @@
 					predictions: I.a
 				}
 			});
-			const S = e => e(Object(A.f)({
+			const P = e => e(Object(A.f)({
 				duration: A.a,
 				kind: k.b.Error,
 				text: w._("Error: Failed to change prediction selection, please try again later", null, {
 					hk: "WLVPy"
 				})
 			}));
-			var P = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+			var S = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				T = n("./src/reddit/controls/TextButton/index.tsx"),
 				M = n("./src/reddit/selectors/telemetry.ts");
 			const L = "prediction_sneak_peek",
@@ -1140,11 +1140,11 @@
 					const d = Object(s.d)(),
 						i = Object(U.a)(),
 						[l, u] = Object(a.useState)(null);
-					return o.a.createElement(P.e, null, o.a.createElement(P.i, null, o.a.createElement(D.a, null, o.a.createElement(P.q, null, C.fbt._("Change your prediction", null, {
+					return o.a.createElement(S.e, null, o.a.createElement(S.i, null, o.a.createElement(D.a, null, o.a.createElement(S.q, null, C.fbt._("Change your prediction", null, {
 						hk: "34AjlU"
 					})), o.a.createElement(T.a, {
 						onClick: c
-					}, o.a.createElement(P.b, null)))), o.a.createElement(P.l, null, t.map(e => o.a.createElement("button", {
+					}, o.a.createElement(S.b, null)))), o.a.createElement(S.l, null, t.map(e => o.a.createElement("button", {
 						key: e.id,
 						type: "button",
 						className: Object(r.a)(H.a.predictionOption, {
@@ -1156,12 +1156,12 @@
 						className: H.a.predictionOptionLabel
 					}, e.text), e.id === n && o.a.createElement(p.a, {
 						className: H.a.userIcon
-					})))), o.a.createElement(P.g, null, o.a.createElement(P.a, {
+					})))), o.a.createElement(S.g, null, o.a.createElement(S.a, {
 						onClick: c,
 						"data-redditstyle": !0
 					}, C.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), o.a.createElement(P.c, {
+					})), o.a.createElement(S.c, {
 						disabled: !l,
 						onClick: () => {
 							l && (d((({
@@ -1186,8 +1186,8 @@
 										})
 									}))
 								} catch {
-									S(n)
-								} else S(n)
+									P(n)
+								} else P(n)
 							})({
 								postId: e,
 								optionId: l.id
@@ -1218,7 +1218,7 @@
 			}) => {
 				const c = Object(s.d)(),
 					d = Object(U.a)(),
-					i = Object(s.e)(h.v),
+					i = Object(s.e)(h.w),
 					[l, u] = Object(a.useState)(!1),
 					m = Z._("Change your prediction", null, {
 						hk: "hleE5"
@@ -1397,7 +1397,7 @@
 					[_, f] = Object($.a)("hasSeenPredictionSneakPeek", !1),
 					b = !!c,
 					g = n && !r,
-					O = Object(s.e)(h.v),
+					O = Object(s.e)(h.w),
 					j = () => {
 						_ || f(!0), p(!1)
 					};
@@ -1485,7 +1485,7 @@
 					userSelection: b,
 					predictionStatus: E,
 					voteUpdatesRemained: g
-				} = e, O = Boolean((null == e ? void 0 : e.userSelection) && !(null == e ? void 0 : e.resolvedOptionId) && e.predictionStatus === de.b.Open && e.endsAt > Date.now()), v = Object(s.e)(t => (null == e ? void 0 : e.tournamentId) ? Object(ie.a)(t, e.tournamentId) : null), C = Object(s.e)(h.bb), x = Object(s.e)(h.yb), N = Object(s.e)(h.O), [I, A] = Object(a.useState)(!1), y = i === x, k = l < Date.now(), w = k && y && !p, S = E === de.b.Cancelled || E === de.b.CancelInProgress, P = k || !!b || !!p || S;
+				} = e, O = Boolean((null == e ? void 0 : e.userSelection) && !(null == e ? void 0 : e.resolvedOptionId) && e.predictionStatus === de.b.Open && e.endsAt > Date.now()), v = Object(s.e)(t => (null == e ? void 0 : e.tournamentId) ? Object(ie.a)(t, e.tournamentId) : null), C = Object(s.e)(h.cb), x = Object(s.e)(h.Ab), N = Object(s.e)(h.P), [I, A] = Object(a.useState)(!1), y = i === x, k = l < Date.now(), w = k && y && !p, P = E === de.b.Cancelled || E === de.b.CancelInProgress, S = k || !!b || !!p || P;
 				return Object(a.useEffect)(() => {
 					A(!1)
 				}, [b, e]), o.a.createElement("div", me({
@@ -1496,7 +1496,7 @@
 					theme: null == v ? void 0 : v.theme
 				}, e.title), o.a.createElement("div", {
 					className: ue.a.predictionOptions
-				}, !N && !P && o.a.createElement("div", {
+				}, !N && !S && o.a.createElement("div", {
 					className: ue.a.loggedOutTooltip
 				}, o.a.createElement(ce.a, {
 					className: ue.a.loggedOutIcon
@@ -1504,7 +1504,7 @@
 					hk: "18KrL7"
 				})), m.map(e => o.a.createElement(j, {
 					key: e.id,
-					isCancelled: S,
+					isCancelled: P,
 					isEnded: k,
 					isSelected: t === e.id,
 					needsResolution: w,
@@ -1516,7 +1516,7 @@
 					userIsLoggedOut: !N,
 					votePercentage: (b || k || I) && e.voteCount ? Math.floor(e.voteCount / _ * 100) : null,
 					isShowingHint: I
-				})), !S && o.a.createElement(re, {
+				})), !P && o.a.createElement(re, {
 					disabled: I || !!b,
 					isEnded: k,
 					userSelection: b,
@@ -1524,7 +1524,7 @@
 					tournamentId: f,
 					postId: e.postId,
 					onReveal: () => A(!0)
-				}), !S && O && o.a.createElement(q, {
+				}), !P && O && o.a.createElement(q, {
 					isLimitReached: 0 === g,
 					postId: e.postId,
 					options: m,
@@ -1721,12 +1721,12 @@
 			var k = n("./src/reddit/components/Econ/Prediction/PredictionModal/Selection/index.m.less"),
 				w = n.n(k);
 			const {
-				fbt: S
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), P = ({
+				fbt: P
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), S = ({
 				option: e
 			}) => o.a.createElement("h1", {
 				className: w.a.selection
-			}, S._("You picked {lineBreak}{optionText}!", [S._param("lineBreak", o.a.createElement("br", null)), S._param("optionText", `‘${e.text}’`)], {
+			}, P._("You picked {lineBreak}{optionText}!", [P._param("lineBreak", o.a.createElement("br", null)), P._param("optionText", `‘${e.text}’`)], {
 				hk: "4FrNCA"
 			}));
 			var T = n("./src/reddit/components/Econ/Prediction/PredictionModal/TokensBalance/index.m.less"),
@@ -1817,12 +1817,12 @@
 					A = Object(h.a)(),
 					k = O.length > 0,
 					w = O[C],
-					S = k && C === O.length - 1,
+					P = k && C === O.length - 1,
 					T = (null == w ? void 0 : w.currency) === b.a.Coins,
 					M = T && g < ((null == w ? void 0 : w.amount) || 0),
 					L = !!w && null !== j && j < w.amount,
 					W = M || L,
-					Z = W || S;
+					Z = W || P;
 				Object(a.useEffect)(() => {
 					N || (A(f.s), I(!0))
 				}, [N, A]);
@@ -1840,7 +1840,7 @@
 					selectedChipPack: w
 				}), o.a.createElement("div", {
 					className: z.a.modalContent
-				}, o.a.createElement(P, {
+				}, o.a.createElement(S, {
 					option: r
 				}), null !== j && E && o.a.createElement(B, {
 					tournamentId: E,
@@ -1888,10 +1888,10 @@
 						hk: "3OfAwL"
 					}),
 					type: "button",
-					disabled: Boolean(k && S),
+					disabled: Boolean(k && P),
 					className: z.a.wagerSelectorButton,
 					onClick: () => {
-						k && (S || x(C + 1))
+						k && (P || x(C + 1))
 					}
 				}, o.a.createElement(_.a, {
 					className: z.a.wagerSelectorButtonIcon
@@ -1901,7 +1901,7 @@
 					hk: "2Mo83P"
 				}), L && V._("Insufficient tokens", null, {
 					hk: "2XAKK7"
-				}), S && !W && V._("Max amount", null, {
+				}), P && !W && V._("Max amount", null, {
 					hk: "1BpnPd"
 				}))), o.a.createElement("button", {
 					className: Object(d.a)(z.a.predictButton, {
@@ -2343,9 +2343,9 @@
 			}
 			const h = Object(c.c)({
 					currentUser: i.k,
-					isNightMode: i.bb,
-					isPresenceUserPrefEnabled: i.T,
-					shouldHideNSFW: i.E
+					isNightMode: i.cb,
+					isPresenceUserPrefEnabled: i.U,
+					shouldHideNSFW: i.F
 				}),
 				b = Object(r.b)(h);
 			t.a = b(e => {
@@ -3155,4 +3155,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.e2d05703f02e406c607c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.f277a636e8ac32b8602e.js.map

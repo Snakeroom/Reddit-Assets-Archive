@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.3eeb42c05bdae25d7d3b.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.2d7d170a2e9eee3e46d1.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, s) {
@@ -8,13 +8,13 @@
 				a = s("./node_modules/lodash/toInteger.js"),
 				o = 9007199254740991,
 				r = 4294967295,
-				d = Math.min;
+				c = Math.min;
 			e.exports = function(e, t) {
 				if ((e = a(e)) < 1 || e > o) return [];
 				var s = r,
-					c = d(e, r);
+					d = c(e, r);
 				t = i(t), e -= r;
-				for (var l = n(c, t); ++s < e;) t(s);
+				for (var l = n(d, t); ++s < e;) t(s);
 				return l
 			}
 		},
@@ -26,43 +26,43 @@
 				a = s("./src/reddit/actions/notificationSettingsLayout/index.ts"),
 				o = s("./src/reddit/models/NotificationSettingsLayout/index.ts"),
 				r = s("./src/reddit/selectors/user.ts"),
-				d = s("./src/reddit/components/Settings/Notifications/NotificationToggles.tsx");
-			const c = Object(i.c)({
-					hasError: r.s,
-					rows: r.db,
-					sections: r.eb
+				c = s("./src/reddit/components/Settings/Notifications/NotificationToggles.tsx");
+			const d = Object(i.c)({
+					hasError: r.t,
+					rows: r.eb,
+					sections: r.fb
 				}),
-				l = Object(n.b)(c, e => ({
+				l = Object(n.b)(d, e => ({
 					fetchNotificationSettings: () => e(Object(a.a)(o.a.Email)),
 					updateNotificationPreference: t => e(Object(a.d)(t))
-				}))(d.a);
+				}))(c.a);
 			t.default = l
 		},
 		"./src/reddit/components/Settings/Notifications/LoadingSection.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return c
+				return d
 			}));
 			var n = s("./node_modules/lodash/times.js"),
 				i = s.n(n),
 				a = s("./node_modules/react/index.js"),
 				o = s.n(a),
 				r = s("./src/reddit/components/Settings/Notifications/index.m.less"),
-				d = s.n(r);
-			const c = ({
+				c = s.n(r);
+			const d = ({
 				rowsCount: e
 			}) => o.a.createElement("div", {
 				role: "alert",
 				"aria-busy": "true"
 			}, o.a.createElement("div", {
-				className: d.a.loadingSectionHeader
+				className: c.a.loadingSectionHeader
 			}), i()(e, e => o.a.createElement("div", {
-				className: d.a.loadingToggleWrapper,
+				className: c.a.loadingToggleWrapper,
 				key: e
 			}, o.a.createElement("span", {
-				className: d.a.loadingToggleName
+				className: c.a.loadingToggleName
 			}), o.a.createElement("span", {
-				className: d.a.loadingToggleButton
+				className: c.a.loadingToggleButton
 			}))))
 		},
 		"./src/reddit/components/Settings/Notifications/NotificationToggles.tsx": function(e, t, s) {
@@ -75,8 +75,8 @@
 				a = s.n(i),
 				o = s("./src/reddit/components/Settings/Notifications/Loader.ts"),
 				r = s("./src/reddit/components/Settings/Notifications/LoadingSection.tsx"),
-				d = s("./src/reddit/components/Settings/shared/SectionHeading.tsx"),
-				c = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
+				c = s("./src/reddit/components/Settings/shared/SectionHeading.tsx"),
+				d = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
 				l = s("./src/reddit/helpers/trackers/notifications.ts"),
 				m = s("./src/reddit/hooks/useTracking.ts"),
 				u = s("./src/reddit/icons/fonts/index.tsx"),
@@ -89,7 +89,7 @@
 				const t = Object(m.a)(),
 					s = (s, n, i) => {
 						const o = e.rows && e.rows.byId[s];
-						return o ? a.a.createElement(c.p, {
+						return o ? a.a.createElement(d.p, {
 							disabled: e.disabled,
 							forceOn: o.isEnabled && e.disabled,
 							key: o.displayName,
@@ -122,7 +122,7 @@
 						const r = "Moderation" === i.title;
 						return a.a.createElement("div", {
 							key: t
-						}, a.a.createElement(d.a, null, i.title), !e.isEmailSettings && "Activity" === i.title && e.handleCommunityNavClick && a.a.createElement(c.k, null, a.a.createElement("button", {
+						}, a.a.createElement(c.a, null, i.title), !e.isEmailSettings && "Activity" === i.title && e.handleCommunityNavClick && a.a.createElement(d.k, null, a.a.createElement("button", {
 							onClick: e.handleCommunityNavClick,
 							className: f.a.communityAlert
 						}, a.a.createElement("h3", {
@@ -161,4 +161,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.3eeb42c05bdae25d7d3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.2d7d170a2e9eee3e46d1.js.map

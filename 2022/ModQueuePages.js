@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.ce355faa591b74e772e2.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.df26ace6f55133e5e78c.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -706,7 +706,7 @@
 				}, E = e => async (t, n, {
 					apiContext: r
 				}) => {
-					if (!Object(x.O)(n())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(x.P)(n())) return void t(Object(i.i)(l.a.LOGIN_MODAL_ID));
 					const o = n().features.comments.models[e];
 					if (!o) return;
 					const a = o.isLocked ? m.l : m.e;
@@ -3273,7 +3273,7 @@
 				b = n.n(p);
 			const h = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(o.b)(() => Object(a.c)({
-					isNightmodeOn: u.bb
+					isNightmodeOn: u.cb
 				}));
 			t.a = f(e => {
 				const t = {
@@ -3370,7 +3370,7 @@
 						style: t
 					}, e.children)
 				},
-				w = Object(a.b)(() => Object(d.a)(O.F, E.hb, (e, {
+				w = Object(a.b)(() => Object(d.a)(O.F, E.ib, (e, {
 					isSponsored: t,
 					postId: n
 				}) => t && n ? Object(O.b)(e, n) : null, _.d, O.G, (e, t, n, s, r) => ({
@@ -6298,10 +6298,10 @@
 						s = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
-						r = Object(x.bb)(e);
+						r = Object(x.cb)(e);
 					return s || r
 				},
-				nigtmode: x.bb,
+				nigtmode: x.cb,
 				subredditId: m.n,
 				topPostVariant: h.d
 			}));
@@ -8017,4 +8017,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.ce355faa591b74e772e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.df26ace6f55133e5e78c.js.map

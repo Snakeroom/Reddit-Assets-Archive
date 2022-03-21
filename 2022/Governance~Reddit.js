@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.3734ae0fe8536ea300d9.js
-// Retrieved at 3/21/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.6f657e553393d9e661dc.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -921,7 +921,7 @@
 					gqlRealtime2Context: r
 				}) => {
 					const s = t(),
-						n = Object(d.O)(s),
+						n = Object(d.P)(s),
 						a = !!Object(o.a)(s),
 						{
 							expiresAt: i,
@@ -1591,12 +1591,12 @@
 				l = Object(s.a)(u),
 				p = () => async (e, t) => {
 					const r = t(),
-						s = Object(i.O)(r),
+						s = Object(i.P)(r),
 						n = Object(d.b)(r);
 					s && Object(d.d)(n) && e(l())
 				}, b = () => async (e, t) => {
 					const r = t(),
-						s = Object(i.O)(r),
+						s = Object(i.P)(r),
 						a = Object(d.b)(r),
 						c = !!Object(o.a)(r);
 					s || c || !Object(d.e)(a) && !Object(d.d)(a) || e(Object(n.f)())
@@ -2286,15 +2286,15 @@
 				const r = t();
 				e(i.m({
 					title: c.b()
-				})), Object(h.O)(r) || await e(O.t())
+				})), Object(h.P)(r) || await e(O.t())
 			}, j = () => async e => e(i.m({
 				title: c.b()
 			})), T = e => async (t, s) => {
 				const n = s();
 				t(i.m({
 					title: c.j()
-				})), Object(h.O)(n) || await t(O.t());
-				const a = Object(h.O)(n);
+				})), Object(h.P)(n) || await t(O.t());
+				const a = Object(h.P)(n);
 				if (e.queryParams.thanks && a) {
 					const e = await r.e("GoldPurchasePaymentActions").then(r.bind(null, "./src/reddit/actions/goldPurchaseModals/payment.ts")).then(e => e.paymentCompleted),
 						s = await r.e("GoldPurchasePaymentActions").then(r.bind(null, "./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts")).then(e => e.openPremiumPurchaseModal);
@@ -5600,7 +5600,7 @@
 						nsfwSessionSetting: L,
 						refreshNsfwSessionSettingExpiryTime: x
 					} = Object(y.b)(),
-					U = Object(a.e)(_.ib);
+					U = Object(a.e)(_.jb);
 				Object(s.useEffect)(() => {
 					const e = {
 						displayQuery: p.searchQuery,
@@ -5815,7 +5815,7 @@
 					j = Object(a.e)(e => Object(K.e)(e, {
 						pageLayer: f
 					})),
-					T = Object(a.e)(_.ib),
+					T = Object(a.e)(_.jb),
 					{
 						nsfwSessionSetting: w
 					} = Object(y.b)(),
@@ -6107,7 +6107,7 @@
 				},
 				v = (e, t) => {
 					var r;
-					if (!Object(b.O)(e)) return !1;
+					if (!Object(b.P)(e)) return !1;
 					if (null === (r = Object(y.b)(I)) || void 0 === r ? void 0 : r[t.postId]) return !1;
 					const s = Object(p.G)(e, t),
 						n = Object(p.U)(e, {
@@ -7206,7 +7206,7 @@
 					} = r;
 				if (`${o}//${s}` === a.a.gatewayUrl) {
 					const s = {},
-						n = Object(f.ib)(e.getState()) ? "1" : "";
+						n = Object(f.jb)(e.getState()) ? "1" : "";
 					s.allow_over18 = n, s.include = b(e.getState(), r, t), t.endpoint = Object(c.a)(t.endpoint, s)
 				}
 			}
@@ -9886,7 +9886,7 @@
 							}
 						} : e
 					}
-					case hr.i: {
+					case hr.k: {
 						const {
 							subredditName: r,
 							banMessage: s
@@ -9915,7 +9915,7 @@
 						}
 						return e
 					}
-					case hr.j: {
+					case hr.l: {
 						const {
 							subredditName: r
 						} = t.payload;
@@ -9941,7 +9941,7 @@
 						}
 						return e
 					}
-					case hr.k: {
+					case hr.m: {
 						const {
 							subredditName: r
 						} = t.payload;
@@ -22568,11 +22568,11 @@
 						}
 						case hr.b:
 						case hr.c:
-						case hr.i:
-						case hr.j:
+						case hr.k:
+						case hr.l:
 						case hr.g:
 						case hr.a:
-						case hr.k:
+						case hr.m:
 						case je.b:
 						case je.f:
 						case Te.e:
@@ -23162,9 +23162,9 @@
 					case hr.c:
 					case hr.g:
 					case hr.a:
-					case hr.i:
-					case hr.j:
 					case hr.k:
+					case hr.l:
+					case hr.m:
 					case Te.e:
 					case Te.h:
 					case Te.g:
@@ -25274,7 +25274,7 @@
 					return !!r && r.includes(t)
 				},
 				o = (e, t) => {
-					const r = Object(s.wb)(e, {
+					const r = Object(s.yb)(e, {
 						userName: t
 					});
 					return !!r && c(e, r.id)
@@ -25428,8 +25428,8 @@
 				u = e => e === n.U.Onetap,
 				l = e => e === n.U.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
-				b = Object(s.a)(o.O, i, (e, t) => !e && !!t),
-				f = Object(s.a)(o.O, i, (e, t) => !e && !!t && !Object(n.zf)(t))
+				b = Object(s.a)(o.P, i, (e, t) => !e && !!t),
+				f = Object(s.a)(o.P, i, (e, t) => !e && !!t && !Object(n.zf)(t))
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, r) {
 			"use strict";
@@ -25446,7 +25446,7 @@
 				d = r("./src/reddit/selectors/platform.ts"),
 				i = r("./src/reddit/selectors/user.ts");
 			const u = () => !0,
-				l = Object(s.a)(i.V, i.M, (e, t) => !(e || t)),
+				l = Object(s.a)(i.W, i.N, (e, t) => !(e || t)),
 				p = e => {
 					if (!l(e)) return;
 					const t = Object(c.c)(e, {
@@ -25643,7 +25643,7 @@
 				u = 6 * s.pb,
 				l = (e, t) => {
 					const r = Object(c.G)(e, t),
-						s = Object(o.N)(e);
+						s = Object(o.O)(e);
 					let d = !1;
 					const i = Object(o.k)(e);
 					if (i) {
@@ -25722,4 +25722,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.3734ae0fe8536ea300d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.6f657e553393d9e661dc.js.map

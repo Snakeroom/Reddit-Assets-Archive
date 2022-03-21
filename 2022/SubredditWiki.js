@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.a33134fe92084263963e.js
-// Retrieved at 3/21/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.8c9fea4968f96d3b8c5a.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1780,7 +1780,7 @@
 				b = s.n(p);
 			const h = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(i.b)(() => Object(o.c)({
-					isNightmodeOn: m.bb
+					isNightmodeOn: m.cb
 				}));
 			t.a = f(e => {
 				const t = {
@@ -1877,7 +1877,7 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(o.b)(() => Object(d.a)(v.F, k.hb, (e, {
+				N = Object(o.b)(() => Object(d.a)(v.F, k.ib, (e, {
 					isSponsored: t,
 					postId: s
 				}) => t && s ? Object(v.b)(e, s) : null, y.d, v.G, (e, t, s, n, r) => ({
@@ -3610,7 +3610,7 @@
 						listingName: t,
 						pageLayer: s
 					}),
-					r = Object(c.D)(e) || Object(d.a)(e),
+					r = Object(c.E)(e) || Object(d.a)(e),
 					i = Object(a.e)(e);
 				return {
 					canShowAd: n && !r,
@@ -4935,10 +4935,10 @@
 						n = t.redditStyle || Object(f.l)(e, {
 							subredditId: s
 						}),
-						r = Object(g.bb)(e);
+						r = Object(g.cb)(e);
 					return n || r
 				},
-				nigtmode: g.bb,
+				nigtmode: g.cb,
 				subredditId: u.n,
 				topPostVariant: h.d
 			}));
@@ -5054,7 +5054,7 @@
 				crosspostRoot: p.d,
 				crosspostSubredditOrProfile: p.e,
 				flairStyleTemplate: c.V,
-				hideNSFWPref: b.E,
+				hideNSFWPref: b.F,
 				isActive: p.j,
 				moderatorPermissions: u.l,
 				modModeEnabled: c.T,
@@ -5767,7 +5767,7 @@
 						match: t
 					}) => Object(B.f)(e, t.params.subredditName),
 					layout: v.R,
-					over18Pref: B.ib,
+					over18Pref: B.jb,
 					subreddit: (e, {
 						match: t
 					}) => Object(M.x)(e, {
@@ -5792,7 +5792,7 @@
 						contentGateInfo: t,
 						subreddit: s,
 						subredditName: n
-					} = this.props, i = !!s && s.isNSFW && !B.ib, o = Object(F.a)(t, i, n);
+					} = this.props, i = !!s && s.isNSFW && !B.jb, o = Object(F.a)(t, i, n);
 					if (o) return r.a.createElement(c.default, o);
 					const a = `/r/${n}/`;
 					return r.a.createElement(L.a, {
@@ -5874,4 +5874,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.a33134fe92084263963e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.8c9fea4968f96d3b8c5a.js.map

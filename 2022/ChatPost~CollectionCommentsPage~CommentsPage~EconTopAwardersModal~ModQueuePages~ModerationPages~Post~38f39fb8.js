@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.b40eba1f5abfa2dd4ac0.js
-// Retrieved at 3/21/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.b043abbcbd2b4e814020.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -2008,7 +2008,7 @@
 				const u = Object(y.a)(),
 					m = Object(C.g)(e.id, u),
 					p = Object(C.h)(e),
-					h = Object(n.e)(P.bb),
+					h = Object(n.e)(P.cb),
 					b = Object(n.e)(t => Object(T.a)(t, e.authorId, p)),
 					f = Object(n.e)(e => Object(_.a)(e) === m),
 					v = Object(n.d)(),
@@ -2116,7 +2116,7 @@
 			}(s || (s = {}));
 			t.b = e => {
 				var t, r, s;
-				const n = Object(i.e)(f.bb),
+				const n = Object(i.e)(f.cb),
 					{
 						className: v,
 						modNote: g,
@@ -3656,14 +3656,14 @@
 				n = r("./src/reddit/selectors/user.ts");
 			const a = e => {
 					const t = Object(o.c)(e, {
-						experimentEligibilitySelector: n.O,
+						experimentEligibilitySelector: n.P,
 						experimentName: s.Bc
 					});
 					return !(!t || Object(s.zf)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
-						experimentEligibilitySelector: n.O,
+						experimentEligibilitySelector: n.P,
 						experimentName: s.Bc
 					}) === s.id.ListingEnabled
 				}
@@ -3725,4 +3725,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.b40eba1f5abfa2dd4ac0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.b043abbcbd2b4e814020.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.203043cc88b965c6d474.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e5948ec5178ac3cd9359.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, n) {
@@ -52,7 +52,7 @@
 			})), n.d(e, "k", (function() {
 				return kt
 			})), n.d(e, "r", (function() {
-				return Dt
+				return Pt
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -139,8 +139,8 @@
 					})
 				};
 			var k = n("./src/redditGQL/operations/UpdateCommentFollowState.json");
-			var D = n("./src/reddit/endpoints/post/index.tsx"),
-				P = n("./src/reddit/endpoints/post/convert.ts"),
+			var P = n("./src/reddit/endpoints/post/index.tsx"),
+				D = n("./src/reddit/endpoints/post/convert.ts"),
 				w = n("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
 				K = n("./src/reddit/featureFlags/index.ts"),
 				M = n("./src/reddit/helpers/correlationIdTracker.ts"),
@@ -155,9 +155,9 @@
 				V = n("./src/reddit/selectors/comments.ts"),
 				q = n("./src/reddit/selectors/commentSelector.ts"),
 				Y = n("./src/reddit/selectors/platform.ts"),
-				Q = n("./src/reddit/selectors/posts.ts"),
-				z = n("./src/reddit/selectors/user.ts"),
-				X = n("./src/reddit/actions/comment/index.ts"),
+				z = n("./src/reddit/selectors/posts.ts"),
+				X = n("./src/reddit/selectors/user.ts"),
+				Q = n("./src/reddit/actions/comment/index.ts"),
 				$ = n("./src/reddit/actions/comment/constants.ts");
 			const Z = Object(s.a)($.k),
 				tt = ({
@@ -166,7 +166,7 @@
 				}) => async (n, o) => {
 					const r = o();
 					if (!!r.features.comments.drafts[e])
-						if (Object(z.Q)(r) && t) {
+						if (Object(X.R)(r) && t) {
 							const o = Z({
 								hasFocus: t,
 								draftKey: e
@@ -217,7 +217,7 @@
 							commentsPageKey: e,
 							draftKey: n
 						}));
-						const r = Object(Q.G)(O(), {
+						const r = Object(z.G)(O(), {
 							postId: t
 						});
 						u(Object(l.z)(r, p.a.CommentSubmitted))
@@ -313,7 +313,7 @@
 					})), r(Object(u.c)(t));
 					else {
 						r(Object(u.b)(n));
-						const s = await Object(P.a)(i(), t, c ? e : JSON.stringify(e));
+						const s = await Object(D.a)(i(), t, c ? e : JSON.stringify(e));
 						if (s.ok) {
 							const e = s.body.output;
 							r(Object(u.a)(n)), r(Ot({
@@ -336,7 +336,7 @@
 				}) => async (o, r) => {
 					const s = r(),
 						l = Object(i.a)(B.c.replyToComment, e);
-					if (!Object(z.O)(r())) return o(Object(d.j)()), void o(Object(a.k)({
+					if (!Object(X.P)(r())) return o(Object(d.j)()), void o(Object(a.k)({
 						actionSource: a.a.Reply,
 						redirectUrl: Object(V.m)(r(), {
 							commentId: e
@@ -376,7 +376,7 @@
 							draftType: B.c.replyToComment,
 							rtJson: f,
 							text: ""
-						}, Object(z.Q)(s)) {
+						}, Object(X.R)(s)) {
 						const n = mt({
 							parentCommentId: e,
 							commentsPageKey: t,
@@ -391,7 +391,7 @@
 						formData: y
 					}))
 				}, yt = t => async e => {
-					e(Object(X.p)(t)), e(ht(t))
+					e(Object(Q.p)(t)), e(ht(t))
 				}, xt = ({
 					parentCommentId: t,
 					commentsPageKey: e
@@ -402,7 +402,7 @@
 					})), n(jt({
 						parentCommentId: t,
 						commentsPageKey: e
-					})), n(Object(X.p)({
+					})), n(Object(Q.p)({
 						commentId: t,
 						commentsPageKey: e
 					}))
@@ -488,7 +488,7 @@
 							commentId: t,
 							commentsPageKey: e,
 							draftKey: o
-						})), n(Object(X.i)({
+						})), n(Object(Q.i)({
 							[t]: {
 								...r.comment
 							}
@@ -532,20 +532,20 @@
 					apiContext: o
 				}) => {
 					const r = !n().features.comments.models[t].sendReplies;
-					e(Object(X.i)({
+					e(Object(Q.i)({
 						[t]: {
 							sendReplies: r
 						}
-					})), (await Object(D.q)(o(), t, r)).ok || e(Object(X.i)({
+					})), (await Object(P.q)(o(), t, r)).ok || e(Object(Q.i)({
 						[t]: {
 							sendReplies: !r
 						}
 					}))
-				}, Dt = (t, e) => async (n, r, {
+				}, Pt = (t, e) => async (n, r, {
 					gqlContext: s
 				}) => {
 					var i, c, d, a, l, u;
-					n(Object(X.c)());
+					n(Object(Q.c)());
 					const m = t => Object(f.f)(Object(f.e)(t, G.b.Error));
 					if (((null === (c = null === (i = r().pages) || void 0 === i ? void 0 : i.comments) || void 0 === c ? void 0 : c.followed) || []).length === j.a) n(m(o.fbt._("You've reached your post follow limit", null, {
 						hk: "3ebRql"
@@ -556,7 +556,7 @@
 								id: t,
 								expiresAt: Date.now() + 6048e5
 							};
-						if (n(Object(X.n)(c)), (await ((t, e) => Object(I.a)(t, {
+						if (n(Object(Q.n)(c)), (await ((t, e) => Object(I.a)(t, {
 								...k,
 								variables: {
 									input: e
@@ -575,7 +575,7 @@
 								kind: G.b.SuccessCommunityGreen,
 								text: t
 							}))
-						} else n(Object(X.n)(c)), n(m(o.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
+						} else n(Object(Q.n)(c)), n(m(o.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
 							hk: "2N0vVk"
 						})))
 					}
@@ -775,8 +775,8 @@
 						isUnread: v,
 						isInboxCTAsAllEnabled: A,
 						isInboxCTAsReplyEnabled: k,
-						isInboxCTAsSeePostEnabled: D,
-						isNightMode: P,
+						isInboxCTAsSeePostEnabled: P,
+						isNightMode: D,
 						notificationId: w,
 						onEvent: K
 					} = t,
@@ -791,7 +791,7 @@
 					switch (M) {
 						case p.a.LifecyclePostSuggestions:
 						case p.a.SubredditRecommendation: {
-							if (!D && !A) return null;
+							if (!P && !A) return null;
 							const t = t => {
 								L ? K({
 									position: f.d.SECOND,
@@ -806,7 +806,7 @@
 								redditStyle: !0,
 								className: Object(c.a)(x.a.notificationButton, {
 									[x.a.isUnread]: v,
-									[x.a.isNightMode]: P
+									[x.a.isNightMode]: D
 								})
 							}, s.a.createElement(O.a, {
 								name: "text_post",
@@ -837,7 +837,7 @@
 								redditStyle: !0,
 								className: Object(c.a)(x.a.notificationButton, {
 									[x.a.isUnread]: v,
-									[x.a.isNightMode]: P
+									[x.a.isNightMode]: D
 								})
 							}, s.a.createElement(O.a, {
 								name: "reply",
@@ -864,7 +864,7 @@
 								eventSource: u.a.awardNotification,
 								className: Object(c.a)(x.a.notificationButton, {
 									[x.a.isUnread]: v,
-									[x.a.isNightMode]: P
+									[x.a.isNightMode]: D
 								})
 							}, s.a.createElement(O.a, {
 								name: "chat_new",
@@ -1176,4 +1176,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.203043cc88b965c6d474.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e5948ec5178ac3cd9359.js.map

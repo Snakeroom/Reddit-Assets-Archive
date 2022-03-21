@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.b6629ad6e52b69e811ba.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.bb340ceac83f3903aa4e.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -85,7 +85,7 @@
 				}) => {
 					const {
 						audioRoom: t
-					} = e, s = () => Math.floor(10 * Math.random() + 1), r = Object(b.e)(h.bb), [a, d] = Object(n.useState)(!1), [c, l] = Object(n.useState)(s());
+					} = e, s = () => Math.floor(10 * Math.random() + 1), r = Object(b.e)(h.cb), [a, d] = Object(n.useState)(!1), [c, l] = Object(n.useState)(s());
 					return Object(n.useEffect)(() => {
 						const e = setInterval(() => {
 							d(!0), setTimeout(() => d(!1), 3500), l(s())
@@ -127,8 +127,8 @@
 				N = s("./src/reddit/components/ModModeFilteredReason/index.tsx"),
 				j = s("./src/reddit/components/ModModeFilteredReason/helpers.ts"),
 				w = s("./src/reddit/components/ModModeReports/index.tsx"),
-				I = s("./src/reddit/components/ModModeReports/helpers.ts"),
-				P = s("./src/reddit/components/OneFeed/PostRecommendationContext.tsx"),
+				P = s("./src/reddit/components/ModModeReports/helpers.ts"),
+				I = s("./src/reddit/components/OneFeed/PostRecommendationContext.tsx"),
 				M = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				S = s("./src/reddit/components/PostContainer/index.tsx"),
 				T = s("./src/reddit/components/PostMeta/index.tsx"),
@@ -209,10 +209,10 @@
 					Ne = s || void 0,
 					je = Object(K.a)(re),
 					we = Object(q.a)(re),
-					Ie = Object(G.a)(re),
-					Pe = ie && K.a,
+					Pe = Object(G.a)(re),
+					Ie = ie && K.a,
 					Me = Object(j.d)(pe),
-					Se = Object(I.c)(pe),
+					Se = Object(P.c)(pe),
 					Te = !!pe.media && pe.media.type === U.o.RTJSON,
 					Le = ye && Te,
 					Re = h && !Ee,
@@ -283,7 +283,7 @@
 						[X.a.showBulkActionCheckbox]: xe
 					}),
 					"data-click-id": "body"
-				}, !!pe.recommendationContext && o.a.createElement(P.a, {
+				}, !!pe.recommendationContext && o.a.createElement(I.a, {
 					content: pe.recommendationContext.content,
 					layout: z.g.Classic,
 					post: pe
@@ -334,7 +334,7 @@
 					currentUser: a,
 					hasModFlairPerms: we,
 					hasModPostPerms: je,
-					hasModFullPerms: Ie,
+					hasModFullPerms: Pe,
 					hostPostData: v,
 					isOverlay: !!ne,
 					modModeEnabled: ie,
@@ -345,9 +345,9 @@
 					showEditFlair: fe,
 					tooltipType: ne ? F.c.Lightbox : void 0,
 					useFlatlistBreakpoints: Object(L.b)({
-						editPost: !Pe,
-						hide: !Pe,
-						report: !Pe
+						editPost: !Ie,
+						hide: !Ie,
+						report: !Ie
 					})
 				})), o.a.createElement(k.d, null))), Object(Z.a)(pe, X.a, he, b, Ce, te)));
 				return o.a.createElement(B.b, null, Ve)
@@ -526,8 +526,8 @@
 				N = s("./src/reddit/actions/comment/authoring.ts"),
 				j = s("./src/reddit/actions/comment/moderation.ts"),
 				w = s("./src/reddit/actions/gold/modals.ts"),
-				I = s("./src/reddit/actions/modal.ts"),
-				P = s("./src/reddit/actions/reportFlow/index.ts"),
+				P = s("./src/reddit/actions/modal.ts"),
+				I = s("./src/reddit/actions/reportFlow/index.ts"),
 				M = s("./src/reddit/actions/tooltip.ts"),
 				S = s("./src/reddit/components/CommentModModeDropdown/index.tsx"),
 				T = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.tsx"),
@@ -580,8 +580,8 @@
 				Ne = e => `Comment-${e}--Modal--DeleteComment`,
 				je = e => `Distinguish--Dropdown--${e}`,
 				we = (e, t) => `${e}--${t}-overflow-menu`,
-				Ie = e => `View--Reports--${e}`,
-				Pe = Object(i.c)({
+				Pe = e => `View--Reports--${e}`,
+				Ie = Object(i.c)({
 					activeTooltipId: $.a,
 					isConfirmModalOpen: (e, {
 						comment: t
@@ -591,7 +591,7 @@
 					}) => Object(Y.C)(e, {
 						commentId: t.postId
 					}),
-					isLoggedIn: te.O,
+					isLoggedIn: te.P,
 					moderatorPermissions: (e, {
 						comment: t
 					}) => Object(J.m)(e, {
@@ -684,12 +684,12 @@
 					if (s && Object(B.c)(e) && !t) return o.a.createElement(L.a, {
 						text: `${n}`,
 						onClick: this.handleRestrictedButtonClick,
-						selected: this.props.activeTooltipId === Ie(e.id),
-						id: Ie(e.id)
+						selected: this.props.activeTooltipId === Pe(e.id),
+						id: Pe(e.id)
 					}, o.a.createElement(D.a, {
 						model: e,
 						onIgnoreReports: this.handleIgnoreReports,
-						tooltipId: Ie(e.id)
+						tooltipId: Pe(e.id)
 					}), e.ignoreReports ? o.a.createElement(le.a, null) : o.a.createElement(pe.a, null))
 				}
 				renderDistinguishDropdown() {
@@ -809,7 +809,7 @@
 					}), this.renderModTools(), this.renderDistinguishDropdown()), this.props.reportFlowIsOpen && this.renderReportFlow())
 				}
 			}
-			var Se = ke(Object(r.b)(Pe, (e, {
+			var Se = ke(Object(r.b)(Ie, (e, {
 					comment: t,
 					commentsPageKey: s
 				}) => ({
@@ -820,16 +820,16 @@
 						correlationId: s,
 						thingId: t.id
 					})),
-					onReportClick: () => e(Object(P.c)(t.id)),
+					onReportClick: () => e(Object(I.c)(t.id)),
 					onToggleDistinguishDropdown: () => e(Object(M.h)({
 						tooltipId: je(t.id)
 					})),
 					onToggleReportsDropdown: () => e(Object(M.h)({
-						tooltipId: Ie(t.id)
+						tooltipId: Pe(t.id)
 					})),
 					onToggleSave: () => e(Object(k.m)(t.id)),
 					handleDelete: () => {
-						e(Object(I.i)(Ne(t.id))), e(Object(M.h)({
+						e(Object(P.i)(Ne(t.id))), e(Object(M.h)({
 							tooltipId: we(s, t.id)
 						}))
 					},
@@ -852,7 +852,7 @@
 							};
 						e(Object(z.a)(s)), e(Object(N.g)(o))
 					},
-					toggleDeleteCommentModal: () => e(Object(I.i)(Ne(t.id)))
+					toggleDeleteCommentModal: () => e(Object(P.i)(Ne(t.id)))
 				}))(Object(ie.c)(Object(W.b)(Me)))),
 				Te = s("./src/reddit/components/Comments/Comment/TopMeta/index.tsx"),
 				Le = s("./src/reddit/components/RichTextJson/index.tsx"),
@@ -1436,7 +1436,7 @@
 				O = s.n(_);
 			const {
 				fbt: k
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), N = c.a.wrapped(x.a, "InternalLink", O.a), j = c.a.div("Wrapper", O.a), w = c.a.div("Row", O.a), I = c.a.wrapped(v.a, "CommentIcon", O.a), P = c.a.div("TitleContainer", O.a), M = c.a.div("PostTitleContainer", O.a), S = c.a.wrapped(p.c, "PostTitle", O.a), T = c.a.wrapped(u.d, "PostTopMeta", O.a), L = c.a.wrapped(u.a, "MetaSeparator", O.a), R = Object(r.b)(() => Object(i.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), N = c.a.wrapped(x.a, "InternalLink", O.a), j = c.a.div("Wrapper", O.a), w = c.a.div("Row", O.a), P = c.a.wrapped(v.a, "CommentIcon", O.a), I = c.a.div("TitleContainer", O.a), M = c.a.div("PostTitleContainer", O.a), S = c.a.wrapped(p.c, "PostTitle", O.a), T = c.a.wrapped(u.d, "PostTopMeta", O.a), L = c.a.wrapped(u.a, "MetaSeparator", O.a), R = Object(r.b)(() => Object(i.c)({
 				comment: y.b,
 				isBlockingInterstitialEnabled: C.b
 			}), e => ({
@@ -1490,7 +1490,7 @@
 					style: {
 						background: Object(f.e)(e)
 					}
-				}, o.a.createElement(w, null, o.a.createElement(I, null), o.a.createElement(P, null, k._("{postAuthor} commented on {postTitle} {postMeta}", [k._param("postAuthor", F({
+				}, o.a.createElement(w, null, o.a.createElement(P, null), o.a.createElement(I, null, k._("{postAuthor} commented on {postTitle} {postMeta}", [k._param("postAuthor", F({
 					...e
 				})), k._param("postTitle", o.a.createElement(M, null, o.a.createElement(S, {
 					outboundLinkClassName: O.a.postTitleOutboundLink,
@@ -1670,9 +1670,9 @@
 				N = s("./src/reddit/featureFlags/index.ts"),
 				j = s("./src/reddit/selectors/tooltip.ts"),
 				w = s("./src/reddit/selectors/user.ts"),
-				I = s("./src/reddit/selectors/userPrefs.ts"),
-				P = s("./src/reddit/components/ProfileNavMenu/index.m.less"),
-				M = s.n(P);
+				P = s("./src/reddit/selectors/userPrefs.ts"),
+				I = s("./src/reddit/components/ProfileNavMenu/index.m.less"),
+				M = s.n(I);
 
 			function S() {
 				return (S = Object.assign || function(e) {
@@ -1689,9 +1689,9 @@
 				}),
 				L = Object(u.c)({
 					isDropdownMenuOpen: e => Object(j.a)(e) === A,
-					isOwnProfile: (e, t) => Object(w.U)(e, t.profileName),
+					isOwnProfile: (e, t) => Object(w.V)(e, t.profileName),
 					isSnoovatar30Enabled: N.d.snoovatar30,
-					isSubscriptionsPinned: I.b
+					isSubscriptionsPinned: P.b
 				}),
 				R = Object(h.a)(C.a),
 				A = "profile-nav-menu-tooltip",
@@ -2225,7 +2225,7 @@
 				subreddits: function(e, {
 					profileName: t
 				}) {
-					const s = Object(p.wb)(e, {
+					const s = Object(p.yb)(e, {
 							userName: t
 						}),
 						n = Object(m.f)(e);
@@ -2473,8 +2473,8 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				j = Object(d.c)({
-					hideNSFWPref: y.E,
-					nightmode: y.bb
+					hideNSFWPref: y.F,
+					nightmode: y.cb
 				}),
 				w = Object(i.b)(j)(e => r.a.createElement("div", {
 					className: Object(c.a)(O.a.communityItemContainer, {
@@ -2674,7 +2674,7 @@
 				}) : null,
 				user: (e, {
 					subredditOrProfile: t
-				}) => t.type === l.a.PROFILE ? Object(b.wb)(e, {
+				}) => t.type === l.a.PROFILE ? Object(b.yb)(e, {
 					userName: t.name
 				}) : null
 			}), j = Object(r.b)(N, e => ({
@@ -2726,7 +2726,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: h.l,
 					isExpanded: h.m,
-					isLoggedIn: f.O,
+					isLoggedIn: f.P,
 					showPromotedCTA: x.a,
 					moderatorPermissions: u.l,
 					modModeEnabled: c.T,
@@ -2995,4 +2995,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.b6629ad6e52b69e811ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.bb340ceac83f3903aa4e.js.map

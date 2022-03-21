@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.c44f66082e0b4dc78b2d.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.228b38051bd65bf114d3.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -37,8 +37,8 @@
 				_ = n("./src/reddit/helpers/trackers/postComposer.ts"),
 				f = n("./src/reddit/icons/fonts/index.tsx"),
 				E = n("./src/reddit/selectors/experiments/onlineIndicator.ts"),
-				O = n("./src/reddit/selectors/subreddit.ts"),
-				U = n("./src/reddit/selectors/user.ts"),
+				U = n("./src/reddit/selectors/subreddit.ts"),
+				O = n("./src/reddit/selectors/user.ts"),
 				N = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
 				j = n.n(N);
 			const C = l.a.wrapped(b.a, "CurrentUserIcon", j.a);
@@ -67,11 +67,11 @@
 					}
 				},
 				M = Object(d.c)({
-					currentUser: U.k,
+					currentUser: O.k,
 					isPresenceConsumptionExpEnabled: E.c,
-					isPresenceTogglePref: U.T,
-					subreddit: O.x,
-					subredditAboutInfo: O.u
+					isPresenceTogglePref: O.U,
+					subreddit: U.x,
+					subredditAboutInfo: U.u
 				}),
 				L = Object(c.b)(M, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
@@ -124,25 +124,25 @@
 							noun: h(e)
 						}))
 					},
-					O = () => {
+					U = () => {
 						E(a.Wb.POST), s(m)
 					},
-					U = t && n,
+					O = t && n,
 					N = e ? o.a.createElement(x.a, {
 						className: j.a.UserIconWrapper,
 						to: e.url
 					}, o.a.createElement(C, {
 						className: j.a.UserIcon,
-						shouldShowPresenceIndicator: U
+						shouldShowPresenceIndicator: O
 					})) : null;
 				return o.a.createElement("div", {
 					className: j.a.Container
 				}, N, o.a.createElement("input", {
 					name: "createPost",
 					className: j.a.Input,
-					onChange: O,
-					onClick: O,
-					onKeyPress: O,
+					onChange: U,
+					onClick: U,
+					onKeyPress: U,
 					placeholder: r.fbt._("Create Post", null, {
 						hk: "OcnKS"
 					}),
@@ -210,9 +210,9 @@
 			}
 			const x = Object(i.c)({
 					currentUser: a.k,
-					isNightMode: a.bb,
-					isPresenceUserPrefEnabled: a.T,
-					shouldHideNSFW: a.E
+					isNightMode: a.cb,
+					isPresenceUserPrefEnabled: a.U,
+					shouldHideNSFW: a.F
 				}),
 				_ = Object(c.b)(x);
 			t.a = _(e => {
@@ -280,4 +280,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.c44f66082e0b4dc78b2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.228b38051bd65bf114d3.js.map

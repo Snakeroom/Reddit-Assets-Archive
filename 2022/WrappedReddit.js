@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/WrappedReddit.94f1403027ed20682c42.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/WrappedReddit.867c16e7ca5a8738bbf8.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["WrappedReddit"], {
 		"./assets/fonts/RedditSans/font.less": function(a, e, c) {},
@@ -390,7 +390,7 @@
 				}) => {
 					var l, t;
 					const r = e();
-					if (!Object(x.O)(r)) return Object(u.a)(a, r);
+					if (!Object(x.P)(r)) return Object(u.a)(a, r);
 					a(w());
 					const n = await (async (a, e) => {
 						return await Object(m.a)(a, {
@@ -2039,4 +2039,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.94f1403027ed20682c42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/WrappedReddit.867c16e7ca5a8738bbf8.js.map

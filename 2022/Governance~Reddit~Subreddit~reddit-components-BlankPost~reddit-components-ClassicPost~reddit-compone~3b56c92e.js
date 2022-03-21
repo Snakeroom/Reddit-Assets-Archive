@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.46f91e08b27235765071.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.ed64381e8f86228a1b7a.js
+// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -489,7 +489,7 @@
 							type: L.body.reason
 						} : L.error,
 						key: _
-					})), L.body.reason === f.a.DeletedProfile && t(Object(d.q)({
+					})), L.body.reason === f.a.DeletedProfile && t(Object(d.s)({
 						profileName: j
 					})), void t(m.n(L.status));
 					const V = L.body;
@@ -1095,7 +1095,7 @@
 				g = () => async (e, t) => {
 					const s = t(),
 						r = Object(o.f)(s, {}),
-						i = Object(l.N)(s) || Object(l.O)(s),
+						i = Object(l.O)(s) || Object(l.P)(s),
 						n = Object(u.b)(s);
 					if (!i || !r) return;
 					const a = n ? Object(c.i)(s) : Object(c.j)(s);
@@ -1549,9 +1549,9 @@
 				const e = Object(n.e)(e => ({
 					currentUser: Object(d.k)(e),
 					modModeEnabled: e.modModeEnabled,
-					nightmodeEnabled: Object(d.bb)(e),
+					nightmodeEnabled: Object(d.cb)(e),
 					prefs: e.user.prefs,
-					isLoggedIn: Object(d.O)(e)
+					isLoggedIn: Object(d.P)(e)
 				}));
 				return Object(o.a)(e)
 			}
@@ -1822,7 +1822,9 @@
 					topContentDismissalTime: 0,
 					topContentTimesDismissed: 0,
 					rememberCommunitySort: !1,
-					useMarkdown: !1
+					useMarkdown: !1,
+					gatedSubredditOptIn: !1,
+					quarantineOptIn: !1
 				},
 				q = {
 					rpanDuDismissalTime: void 0,
@@ -1938,7 +1940,7 @@
 							...e,
 							profileLayout: t.payload.profileLayout
 						};
-					case b.h:
+					case b.i:
 						return {
 							...e, over18: !0
 						};
@@ -1952,6 +1954,14 @@
 							...e,
 							nightmode: t.payload.nightmode
 						} : e;
+					case b.h:
+						return {
+							...e, gatedSubredditOptIn: t.payload
+						};
+					case b.j:
+						return {
+							...e, quarantineOptIn: t.payload
+						};
 					case x.r:
 						if (void 0 !== t.payload) {
 							const {
@@ -1992,11 +2002,11 @@
 						} : e;
 					case b.b:
 					case b.c:
-					case b.i:
-					case b.j:
+					case b.k:
+					case b.l:
 					case b.g:
 					case b.a:
-					case b.k:
+					case b.m:
 					case g.e:
 					case g.h:
 					case f.a:
@@ -2232,4 +2242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.46f91e08b27235765071.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.ed64381e8f86228a1b7a.js.map
