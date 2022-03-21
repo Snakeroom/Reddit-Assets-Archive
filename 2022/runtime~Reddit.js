@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.76f1f7bfb62666ea0a2b.js
-// Retrieved at 3/21/2022, 1:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.f20662aab62832d3cd4a.js
+// Retrieved at 3/21/2022, 2:10:03 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
+		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
 		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
-		for (m && m(o); b.length;) b.shift()();
+		for (m && m(o); P.length;) P.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
@@ -970,12 +970,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
 			}
-			var b = document.createElement("link");
-			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
+			var P = document.createElement("link");
+			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
 				var a = o && o.target && o.target.src || d,
 					i = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], b.parentNode.removeChild(b), t(i)
-			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], P.parentNode.removeChild(P), t(i)
+			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
 		})).then((function() {
 			n[e] = 0
 		})));
@@ -1355,7 +1355,7 @@
 						"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02": "caaa98ab52cfaf0fcc5a",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "9cc404b8d86e3d523704",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956": "a38124a7be1d7d35e355",
-						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b": "33098f8d98a1ecae74f3",
+						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b": "992857704336a31f92ea",
 						"CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults": "867b12bbff5e68daabcd",
 						"CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress": "4c879747f98612d237d6",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "1d5f8cb3686adf7a089d",
@@ -1455,14 +1455,14 @@
 						"reddit-components-Econ-Prediction-EndTimeModal": "3f6362c67c63523dea71",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "a60e93ab90ac2c627607",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "f8bc971540cef9d52041",
-						"translations/de_DE-json": "eba66b0572a30f052b1b",
-						"translations/es_ES-json": "fb25be55e1713d1384ec",
-						"translations/es_MX-json": "7e19d1ae41f040e4f00c",
-						"translations/fr_FR-json": "de24995372d0cf0b50c2",
-						"translations/it_IT-json": "f000368b1ce04070dabb",
-						"translations/pseudo-json": "ba8ee4302904701f89f4",
-						"translations/pt_BR-json": "46812bce0e6190e4f5b2",
-						"translations/pt_PT-json": "acdb374e2e8b7217bb7d",
+						"translations/de_DE-json": "d213bc312504ec21015b",
+						"translations/es_ES-json": "84d122ee2c4bf2fca454",
+						"translations/es_MX-json": "4f27ac969f1b0383c131",
+						"translations/fr_FR-json": "fb5d347b6fe341e64a03",
+						"translations/it_IT-json": "ebabcccd66963852232b",
+						"translations/pseudo-json": "c5b493ae385977eae796",
+						"translations/pt_BR-json": "7a27f320416c80dec4f8",
+						"translations/pt_PT-json": "b936b677f13778eac321",
 						"vendors~AdminPanel": "e6e59f93c311ab1cce5c",
 						AdminPanel: "888f2ca64f795a6e07b6",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
@@ -1493,7 +1493,7 @@
 						PublicAccessNetwork: "7ab7cfe5e28ec145f09a",
 						"vendors~xml2js": "d7030b892a98de038b49",
 						SignupUpsell: "21169051b1a5bc6a04ea",
-						AuthorHovercard: "f5cb9cf4d4541a0808d2",
+						AuthorHovercard: "777a1e0a17e3f8addc88",
 						AwardTooltip: "4f1a34f0c431a522948e",
 						CustomBadgeHovercardTooltip: "f64d30ee830220691996",
 						GovernanceUserPublicPointsDisplay: "eb36fbbc7fd520556e49",
@@ -1712,4 +1712,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.76f1f7bfb62666ea0a2b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f20662aab62832d3cd4a.js.map
