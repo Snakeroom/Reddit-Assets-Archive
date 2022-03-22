@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.11d04de8729ce2e974df.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.5f9c8aeff79ef4622132.js
+// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -86,7 +86,7 @@
 							isLocked: r.isLocked
 						}
 					}))
-				}, k = Object(r.a)(R.F), g = e => async (t, s, {
+				}, k = Object(r.a)(R.G), g = e => async (t, s, {
 					apiContext: n
 				}) => {
 					const r = s(),
@@ -340,8 +340,8 @@
 						if (function(e) {
 								return Object(_.c)(e, {
 									experimentEligibilitySelector: _.a,
-									experimentName: f.qd
-								}) === f.dd
+									experimentName: f.rd
+								}) === f.ed
 							}(c())) {
 							const {
 								normalizeModQueueListingFromGql: e,
@@ -1067,7 +1067,7 @@
 												hasSortParam: !0
 											})), m === $.e.Post) {
 											const s = Object(y.a)(K.c.replyToPost, u);
-											r(Object(N.o)({
+											r(Object(N.p)({
 												...t,
 												headCommentId: Object(W.w)(c, {
 													commentsPageKey: n
@@ -1091,7 +1091,7 @@
 													commentId: u,
 													commentsPageKey: n
 												});
-											r(Object(N.m)({
+											r(Object(N.n)({
 												...t,
 												parentCommentId: u,
 												commentsPageKey: n,
@@ -1272,4 +1272,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.11d04de8729ce2e974df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.5f9c8aeff79ef4622132.js.map

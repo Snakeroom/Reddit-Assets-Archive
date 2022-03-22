@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.9d1e135258981508abd4.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.793d4e96e22deaac4ecf.js
+// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1898,7 +1898,7 @@
 					comment: t,
 					commentsPageKey: n
 				}) => ({
-					onReplyClick: () => e(Object(ye.p)({
+					onReplyClick: () => e(Object(ye.q)({
 						parentCommentId: t.id,
 						commentsPageKey: n,
 						singleOpen: !0
@@ -1928,7 +1928,7 @@
 					onDistinguishClick: n => e(Object(Ie.b)(t.id, n)),
 					onSpamClick: () => e(Object(Ie.e)(t.id, !0)),
 					onRemoveClick: () => e(Object(Ie.e)(t.id, !1)),
-					deleteComment: () => n && e(Object(ye.h)(t.id, t.postId)),
+					deleteComment: () => n && e(Object(ye.i)(t.id, t.postId)),
 					onDeleteClick: () => e(Object(Te.i)(gt(t.id))),
 					toggleDeleteCommentModal: () => e(Object(Te.i)(gt(t.id)))
 				}))(Object(Qe.c)(e => {
@@ -3620,4 +3620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.9d1e135258981508abd4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.793d4e96e22deaac4ecf.js.map

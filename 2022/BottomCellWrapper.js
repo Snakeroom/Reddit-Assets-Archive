@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.1b5f9136c24b79b56efa.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.640a679e0922787be59b.js
+// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -113,7 +113,7 @@
 				p = s("./src/reddit/controls/Button/index.tsx"),
 				u = s("./src/reddit/components/Upsell/SSOButton/index.m.less"),
 				m = s.n(u);
-			var b = function({
+			var _ = function({
 					Icon: e,
 					children: t,
 					onClick: s,
@@ -135,7 +135,7 @@
 						className: m.a.buttonText
 					}, t))
 				},
-				_ = s("./src/reddit/constants/experiments.ts"),
+				b = s("./src/reddit/constants/experiments.ts"),
 				g = s("./src/reddit/selectors/telemetry.ts");
 			const x = "sso_signup";
 			var f;
@@ -210,12 +210,12 @@
 						const e = Object(i.e)(w.b),
 							t = Object(i.e)(w.d),
 							s = Object(i.e)(w.f),
-							o = Object(O.a)(_.bc.Bottom_sheet),
-							l = Object(O.a)(_.bc.Bottom_cell),
-							r = Object(O.a)(_.bc.Bottom_cell_dismissible),
-							c = Object(O.a)(_.bc.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(O.a)(_.bc.Bottom_cell_signup_upsell_copy),
-							d = Object(O.a)(_.bc.Bottom_cell_surprise_install_copy);
+							o = Object(O.a)(b.cc.Bottom_sheet),
+							l = Object(O.a)(b.cc.Bottom_cell),
+							r = Object(O.a)(b.cc.Bottom_cell_dismissible),
+							c = Object(O.a)(b.cc.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(O.a)(b.cc.Bottom_cell_signup_upsell_copy),
+							d = Object(O.a)(b.cc.Bottom_cell_surprise_install_copy);
 						let p;
 						if (e) p = I;
 						else if (t) p = U;
@@ -232,8 +232,8 @@
 						if (e && d) return `${u}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					S = Object(O.a)(_.bc.Bottom_cell_signup_upsell_copy),
-					y = Object(O.a)(_.bc.Bottom_cell_surprise_install_copy),
+					S = Object(O.a)(b.cc.Bottom_cell_signup_upsell_copy),
+					y = Object(O.a)(b.cc.Bottom_cell_surprise_install_copy),
 					H = S ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
@@ -264,7 +264,7 @@
 					className: k.a.bottom
 				}, l.createElement("div", {
 					className: k.a.left
-				}, l.createElement(b, {
+				}, l.createElement(_, {
 					Icon: N.a,
 					onClick: () => {
 						g(), s(j(f.Google))
@@ -273,7 +273,7 @@
 					iconClassName: k.a.googleIcon
 				}, o.fbt._("Continue with Google", null, {
 					hk: "1jIIEZ"
-				})), l.createElement(b, {
+				})), l.createElement(_, {
 					Icon: v.a,
 					onClick: () => {
 						g(), s(j(f.Apple))
@@ -411,9 +411,9 @@
 			})), s.d(t, "b", (function() {
 				return m
 			})), s.d(t, "d", (function() {
-				return b
-			})), s.d(t, "f", (function() {
 				return _
+			})), s.d(t, "f", (function() {
+				return b
 			}));
 			var n = s("./node_modules/reselect/es/index.js"),
 				o = s("./src/reddit/constants/experiments.ts"),
@@ -427,9 +427,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[o.bc.Bottom_cell_dismissible]: e,
-						[o.bc.Bottom_cell_dismissible_immediate_trigger]: e,
-						[o.bc.Bottom_sheet]: e
+						[o.cc.Bottom_cell_dismissible]: e,
+						[o.cc.Bottom_cell_dismissible_immediate_trigger]: e,
+						[o.cc.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -438,9 +438,9 @@
 				p = a(o.qb, !0),
 				u = a(o.rb, !0),
 				m = a(o.pb, !1),
-				b = a(o.qb, !1),
-				_ = a(o.rb, !1)
+				_ = a(o.qb, !1),
+				b = a(o.rb, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.1b5f9136c24b79b56efa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.640a679e0922787be59b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.b658e47ef6d543328678.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.94b4fe3cd17cad045049.js
+// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -658,7 +658,7 @@
 				r = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.zb,
+					experimentName: a.Ab,
 					experimentEligibilitySelector: r.e
 				}), i.a),
 				d = Object(s.a)(o, e => e === a.Fd.Enabled),
@@ -668,22 +668,22 @@
 				}), i.a),
 				l = Object(s.a)(d, u, (e, t) => e && t === a.Ed.Enabled),
 				b = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.Nb,
+					experimentName: a.Ob,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				m = Object(s.a)(d, b, (e, t) => e && t === a.hc.Enabled),
+				m = Object(s.a)(d, b, (e, t) => e && t === a.ic.Enabled),
 				h = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.xb,
+					experimentName: a.yb,
 					experimentEligibilitySelector: r.e
 				}), i.a),
 				g = Object(s.a)(h, e => e === a.Cd.ContinuousScroll),
 				f = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.yb,
+					experimentName: a.zb,
 					experimentEligibilitySelector: r.e
 				}), i.a),
 				p = Object(s.a)(f, e => e === a.Dd.Enabled),
 				x = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.Gb,
+					experimentName: a.Hb,
 					experimentEligibilitySelector: () => !0
 				}), i.a),
 				j = Object(s.a)(x, e => e === a.db.Enabled)
@@ -693,4 +693,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.b658e47ef6d543328678.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.94b4fe3cd17cad045049.js.map

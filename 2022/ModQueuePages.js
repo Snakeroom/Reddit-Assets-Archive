@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.df26ace6f55133e5e78c.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.773e417d31a97b6800a9.js
+// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -726,7 +726,7 @@
 							isLocked: o.isLocked
 						}
 					}))
-				}, k = Object(o.a)(v.F), C = e => async (t, n, {
+				}, k = Object(o.a)(v.G), C = e => async (t, n, {
 					apiContext: r
 				}) => {
 					const o = n(),
@@ -980,8 +980,8 @@
 						if (function(e) {
 								return Object(x.c)(e, {
 									experimentEligibilitySelector: x.a,
-									experimentName: f.qd
-								}) === f.dd
+									experimentName: f.rd
+								}) === f.ed
 							}(d())) {
 							const {
 								normalizeModQueueListingFromGql: e,
@@ -1658,7 +1658,7 @@
 												hasSortParam: !0
 											})), m === J.e.Post) {
 											const n = Object(I.a)(G.c.replyToPost, l);
-											o(Object(w.o)({
+											o(Object(w.p)({
 												...t,
 												headCommentId: Object(K.w)(d, {
 													commentsPageKey: r
@@ -1682,7 +1682,7 @@
 													commentId: l,
 													commentsPageKey: r
 												});
-											o(Object(w.m)({
+											o(Object(w.n)({
 												...t,
 												parentCommentId: l,
 												commentsPageKey: r,
@@ -8017,4 +8017,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.df26ace6f55133e5e78c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.773e417d31a97b6800a9.js.map

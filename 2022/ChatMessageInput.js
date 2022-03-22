@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.3ef656f3aafe9a26c44a.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.68537db40fe1dfb76db8.js
+// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -543,20 +543,20 @@
 					scrollToBottom: c
 				}) => ({
 					dispatchSubmit: async (i, u, d) => {
-						t && s ? await e(Object(_.i)({
+						t && s ? await e(Object(_.j)({
 							id: s.id,
 							commentsPageKey: r,
 							depth: 0,
 							draftKey: n,
 							formData: i
-						})) : d ? e(Object(_.l)({
+						})) : d ? e(Object(_.m)({
 							commentsPageKey: r,
 							draftKey: n,
 							parentCommentDepth: d.depth,
 							parentCommentId: d.id,
 							formData: i,
 							editorMode: u
-						})) : await e(Object(_.n)(a, r, n, i, u, !0, o)), c && c()
+						})) : await e(Object(_.o)(a, r, n, i, u, !0, o)), c && c()
 					},
 					handleGiveAward: t => e(Object(b.d)({
 						correlationId: t,
@@ -1746,4 +1746,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.3ef656f3aafe9a26c44a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.68537db40fe1dfb76db8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.ee01bca007538e365cd7.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.47fc3d0288d321610b90.js
+// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./node_modules/lodash/map.js": function(e, t, n) {
@@ -30,44 +30,46 @@
 			"use strict";
 			n.d(t, "e", (function() {
 				return ee
-			})), n.d(t, "o", (function() {
-				return ne
-			})), n.d(t, "m", (function() {
-				return oe
-			})), n.d(t, "q", (function() {
-				return ce
-			})), n.d(t, "t", (function() {
-				return ae
-			})), n.d(t, "n", (function() {
-				return ie
-			})), n.d(t, "s", (function() {
-				return me
-			})), n.d(t, "l", (function() {
-				return ue
-			})), n.d(t, "a", (function() {
-				return be
-			})), n.d(t, "b", (function() {
-				return pe
 			})), n.d(t, "p", (function() {
-				return je
-			})), n.d(t, "f", (function() {
-				return Re
-			})), n.d(t, "g", (function() {
-				return ye
-			})), n.d(t, "j", (function() {
-				return Se
-			})), n.d(t, "d", (function() {
-				return Ee
-			})), n.d(t, "c", (function() {
-				return ge
-			})), n.d(t, "i", (function() {
-				return Ie
-			})), n.d(t, "h", (function() {
-				return Te
-			})), n.d(t, "k", (function() {
-				return Ne
+				return ne
+			})), n.d(t, "n", (function() {
+				return oe
 			})), n.d(t, "r", (function() {
+				return ce
+			})), n.d(t, "u", (function() {
+				return ae
+			})), n.d(t, "o", (function() {
+				return ie
+			})), n.d(t, "t", (function() {
+				return me
+			})), n.d(t, "m", (function() {
+				return ue
+			})), n.d(t, "h", (function() {
+				return be
+			})), n.d(t, "a", (function() {
+				return Oe
+			})), n.d(t, "b", (function() {
+				return je
+			})), n.d(t, "q", (function() {
+				return Re
+			})), n.d(t, "f", (function() {
+				return ye
+			})), n.d(t, "g", (function() {
+				return Se
+			})), n.d(t, "k", (function() {
+				return _e
+			})), n.d(t, "d", (function() {
+				return Ae
+			})), n.d(t, "c", (function() {
+				return Ie
+			})), n.d(t, "j", (function() {
+				return Ce
+			})), n.d(t, "i", (function() {
+				return Ne
+			})), n.d(t, "l", (function() {
 				return De
+			})), n.d(t, "s", (function() {
+				return Pe
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -191,7 +193,7 @@
 							hasFocus: e,
 							draftKey: t
 						}))
-				}, te = Object(r.a)(Y.H), ne = Object(r.a)(Y.J), oe = Object(r.a)(Y.I), se = Object(r.a)(Y.G), re = async (e, t, n, o) => {
+				}, te = Object(r.a)(Y.I), ne = Object(r.a)(Y.K), oe = Object(r.a)(Y.J), se = Object(r.a)(Y.H), re = async (e, t, n, o) => {
 					const s = o.ok && o.body,
 						r = s && s.comment && s.comment.id;
 					await F.f(e, n, t, r)
@@ -317,11 +319,11 @@
 						}))
 					}
 					re(n(), c, u, j), Object(b.d)()
-				}, le = Object(r.a)(Y.q), be = Object(r.a)(Y.p), Oe = Object(r.a)(Y.l), fe = (Object(r.a)(Y.g), Object(r.a)(Y.m)), pe = (Object(r.a)(Y.t), (e, t, n) => async (s, r, {
+				}, le = Object(r.a)(Y.q), be = Object(r.a)(Y.y), Oe = Object(r.a)(Y.p), fe = Object(r.a)(Y.l), pe = (Object(r.a)(Y.g), Object(r.a)(Y.m)), je = (Object(r.a)(Y.t), (e, t, n) => async (s, r, {
 					apiContext: c
 				}) => {
 					const a = e === I.i.RICH_TEXT;
-					if (!t || "object" == typeof t && Object(G.G)(t)) s(fe({
+					if (!t || "object" == typeof t && Object(G.G)(t)) s(pe({
 						editorMode: e,
 						draftKey: n,
 						content: a ? G.i : ""
@@ -331,7 +333,7 @@
 						const r = await Object(P.a)(c(), e, a ? t : JSON.stringify(t));
 						if (r.ok) {
 							const t = r.body.output;
-							s(Object(u.a)(n)), s(fe({
+							s(Object(u.a)(n)), s(pe({
 								editorMode: e,
 								draftKey: n,
 								content: t
@@ -344,7 +346,7 @@
 							})
 						}))
 					}
-				}), je = ({
+				}), Re = ({
 					commentsPageKey: e,
 					parentCommentId: t,
 					singleOpen: n
@@ -359,7 +361,7 @@
 					}));
 					const u = r.features.comments.replyFormOpen[e],
 						l = u && u[t];
-					if ((l || u && n) && (Object.keys(u).forEach(t => u[t] && o(be({
+					if ((l || u && n) && (Object.keys(u).forEach(t => u[t] && o(Oe({
 							parentCommentId: t,
 							commentsPageKey: e
 						}))), l)) return;
@@ -405,26 +407,26 @@
 						draftKey: m,
 						formData: R
 					}))
-				}, Re = e => async t => {
-					t(Object(X.p)(e)), t(Ee(e))
-				}, ye = ({
+				}, ye = e => async t => {
+					t(Object(X.p)(e)), t(Ae(e))
+				}, Se = ({
 					parentCommentId: e,
 					commentsPageKey: t
 				}) => async n => {
-					n(be({
+					n(Oe({
 						parentCommentId: e,
 						commentsPageKey: t
-					})), n(je({
+					})), n(Re({
 						parentCommentId: e,
 						commentsPageKey: t
 					})), n(Object(X.p)({
 						commentId: e,
 						commentsPageKey: t
 					}))
-				}, Se = (e, t) => n => n(Oe({
+				}, _e = (e, t) => n => n(fe({
 					draftKey: e,
 					formData: t
-				})), _e = Object(r.a)(Y.s), Ee = ({
+				})), Ee = Object(r.a)(Y.s), Ae = ({
 					commentId: e,
 					commentMode: t,
 					commentsPageKey: n,
@@ -432,7 +434,7 @@
 					text: s
 				}) => async (r, c) => {
 					const a = c();
-					a.user.account && (F.c(a), r(_e({
+					a.user.account && (F.c(a), r(Ee({
 						commentId: e,
 						commentsPageKey: n,
 						draftKey: o,
@@ -444,7 +446,7 @@
 							hasFocus: !0
 						}
 					})))
-				}, Ae = Object(r.a)(Y.C), he = Object(r.a)(Y.B), xe = Object(r.a)(Y.D), ge = Object(r.a)(Y.h), Ie = ({
+				}, he = Object(r.a)(Y.D), xe = Object(r.a)(Y.C), ge = Object(r.a)(Y.E), Ie = Object(r.a)(Y.h), Ce = ({
 					id: e,
 					commentsPageKey: t,
 					depth: n,
@@ -455,7 +457,7 @@
 				}) => {
 					const d = c();
 					if (!d.user.account) return;
-					n(Ae({
+					n(he({
 						draftKey: o
 					})), F.d(d);
 					const i = d.user.account.displayText || "",
@@ -499,7 +501,7 @@
 						})(a(), e, 0, r, i, m);
 					if (u.ok) {
 						const s = u.body;
-						n(xe({
+						n(ge({
 							commentId: e,
 							commentsPageKey: t,
 							draftKey: o
@@ -508,15 +510,15 @@
 								...s.comment
 							}
 						}))
-					} else n(he({
+					} else n(xe({
 						draftKey: o,
 						error: u.error
 					}))
-				}, Ce = Object(r.a)(Y.z), ve = Object(r.a)(Y.y), ke = Object(r.a)(Y.A), Te = (e, t) => async (n, o, {
+				}, ve = Object(r.a)(Y.A), ke = Object(r.a)(Y.z), Te = Object(r.a)(Y.B), Ne = (e, t) => async (n, o, {
 					apiContext: r
 				}) => {
 					const c = o();
-					n(Ce({
+					n(ve({
 						id: e
 					})), F.a(e, c);
 					const a = await ((e, t) => Object(y.a)(Object(_.a)(e, [E.a]), {
@@ -536,14 +538,14 @@
 						...e,
 						error: e.error || Object(h.a)()
 					}))(r(), e);
-					a.ok ? n(ke({
+					a.ok ? n(Te({
 						id: e,
 						postId: t
-					})) : n(ve({
+					})) : n(ke({
 						id: e,
 						error: a.error
 					}))
-				}, Ne = e => async (t, n, {
+				}, De = e => async (t, n, {
 					apiContext: o
 				}) => {
 					const s = !n().features.comments.models[e].sendReplies;
@@ -556,7 +558,7 @@
 							sendReplies: !s
 						}
 					}))
-				}, De = (e, t) => async (n, s, {
+				}, Pe = (e, t) => async (n, s, {
 					gqlContext: r
 				}) => {
 					var c, a, d, i, m, u;
@@ -665,7 +667,7 @@
 							isLocked: r.isLocked
 						}
 					}))
-				}, A = Object(r.a)(y.F), h = e => async (t, n, {
+				}, A = Object(r.a)(y.G), h = e => async (t, n, {
 					apiContext: s
 				}) => {
 					const r = n(),
@@ -1325,7 +1327,7 @@
 												hasSortParam: !0
 											})), u === W.e.Post) {
 											const n = Object(I.a)($.c.replyToPost, m);
-											r(Object(k.o)({
+											r(Object(k.p)({
 												...t,
 												headCommentId: Object(H.w)(d, {
 													commentsPageKey: s
@@ -1349,7 +1351,7 @@
 													commentId: m,
 													commentsPageKey: s
 												});
-											r(Object(k.m)({
+											r(Object(k.n)({
 												...t,
 												parentCommentId: m,
 												commentsPageKey: s,
@@ -1731,4 +1733,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.ee01bca007538e365cd7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.47fc3d0288d321610b90.js.map

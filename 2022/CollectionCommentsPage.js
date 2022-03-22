@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.866ab8a12c3bdd46a6b4.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4aa8c2faad788288b541.js
+// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -232,12 +232,12 @@
 				l = s("./src/reddit/constants/promo.ts"),
 				m = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts");
 			var u = function() {
-					const e = Object(m.a)(d.bc.Bottom_cell),
-						t = Object(m.a)(d.bc.Bottom_cell_dismissible),
-						s = Object(m.a)(d.bc.Bottom_cell_dismissible_immediate_trigger),
-						n = Object(m.a)(d.bc.Bottom_cell_signup_upsell_copy),
-						o = Object(m.a)(d.bc.Bottom_cell_surprise_install_copy),
-						r = Object(m.a)(d.bc.Bottom_sheet);
+					const e = Object(m.a)(d.cc.Bottom_cell),
+						t = Object(m.a)(d.cc.Bottom_cell_dismissible),
+						s = Object(m.a)(d.cc.Bottom_cell_dismissible_immediate_trigger),
+						n = Object(m.a)(d.cc.Bottom_cell_signup_upsell_copy),
+						o = Object(m.a)(d.cc.Bottom_cell_surprise_install_copy),
+						r = Object(m.a)(d.cc.Bottom_sheet);
 					return e || n || o ? l.b.SignupUpsellCell : t || s ? l.b.SignupUpsellCellDismissible : r ? l.b.SignupUpsellBottomSheet : null
 				},
 				p = s("./src/reddit/hooks/promo/useIsPromoShown.ts");
@@ -261,7 +261,7 @@
 					const s = function(e = h) {
 						const {
 							showPromo: t
-						} = Object(c.a)(), s = u(), r = Object(p.a)(s), l = Object(m.a)(d.bc.Bottom_cell_dismissible_immediate_trigger);
+						} = Object(c.a)(), s = u(), r = Object(p.a)(s), l = Object(m.a)(d.cc.Bottom_cell_dismissible_immediate_trigger);
 						return n.useMemo(() => i()(() => {
 							if (!r && s) {
 								const e = document.getElementById(a.d),
@@ -2984,7 +2984,7 @@
 					comment: t,
 					commentsPageKey: s
 				}) => ({
-					deleteComment: () => s && e(Object(p.h)(t.id, t.postId)),
+					deleteComment: () => s && e(Object(p.i)(t.id, t.postId)),
 					handleDelete: () => {
 						e(Object(P.i)(Te(t.id))), e(Object(j.h)({
 							tooltipId: Fe(t.id)
@@ -3000,11 +3000,11 @@
 							commentsPageKey: s
 						}))
 					},
-					handleReply: () => s && e(Object(p.p)({
+					handleReply: () => s && e(Object(p.q)({
 						parentCommentId: t.id,
 						commentsPageKey: s
 					})),
-					onCommentFollow: s => e(Object(p.r)(t.id, s)),
+					onCommentFollow: s => e(Object(p.s)(t.id, s)),
 					onDistinguishComment: (s, n) => e(Object(h.b)(t.id, s, n)),
 					onFollowedCommentExpire: () => e(Object(u.n)({
 						id: t.id,
@@ -3025,7 +3025,7 @@
 						tooltipId: Me(t.id)
 					})),
 					toggleDeleteCommentModal: () => e(Object(P.i)(Te(t.id))),
-					toggleSendReplies: () => e(Object(p.k)(t.id))
+					toggleSendReplies: () => e(Object(p.l)(t.id))
 				}))(Object(oe.c)(Ae)),
 				De = s("./src/reddit/components/Comments/Comment/GlowHighlight/index.m.less"),
 				Ue = s.n(De);
@@ -3362,7 +3362,7 @@
 						mediaMetadata: m.media && m.media.mediaMetadata || void 0,
 						isTopLevelComment: !1,
 						parentCommentId: m.id,
-						submitAction: e => Object(p.i)({
+						submitAction: e => Object(p.j)({
 							id: m.id,
 							commentsPageKey: u,
 							depth: x,
@@ -3427,14 +3427,14 @@
 						submitAction: ({
 							validate: e,
 							...t
-						}, s) => e ? Object(p.s)({
+						}, s) => e ? Object(p.t)({
 							commentsPageKey: u,
 							draftKey: ue,
 							parentCommentDepth: x,
 							parentCommentId: m.id,
 							formData: t,
 							editorMode: s
-						}) : Object(p.l)({
+						}) : Object(p.m)({
 							commentsPageKey: u,
 							draftKey: ue,
 							parentCommentDepth: x,
@@ -6641,14 +6641,14 @@
 					return Object(Be.c)(e, {
 						experimentEligibilitySelector: Be.a,
 						experimentName: Ae.rf
-					}) === Ae.dd
+					}) === Ae.ed
 				},
 				Ve = e => {
 					if (Object(De.a)(e)) return !1;
 					return Object(Be.c)(e, {
 						experimentEligibilitySelector: Be.a,
 						experimentName: Ae.qf
-					}) === Ae.dd
+					}) === Ae.ed
 				},
 				We = (e, {
 					postId: t
@@ -6659,7 +6659,7 @@
 					return !(Object(De.a)(e) || !s || s.isSponsored) && Object(Be.c)(e, {
 						experimentEligibilitySelector: Be.a,
 						experimentName: Ae.pf
-					}) === Ae.dd
+					}) === Ae.ed
 				};
 			var ze = s("./src/reddit/selectors/experiments/typingIndicators.ts"),
 				He = s("./node_modules/fbt/lib/FbtPublic.js"),
@@ -8572,7 +8572,7 @@
 					}, [t]);
 					const {
 						contentTitle: s
-					} = e, n = Object(r.e)(C.b) === b.ec.Enabled ? O.d2x_nsfw_signup_blocking_de_v1 : O.d2x_nsfw_signup_blocking_non_us_v1;
+					} = e, n = Object(r.e)(C.b) === b.fc.Enabled ? O.d2x_nsfw_signup_blocking_de_v1 : O.d2x_nsfw_signup_blocking_non_us_v1;
 					return o.a.createElement("div", {
 						className: m.a.container
 					}, o.a.createElement(_, {
@@ -11179,7 +11179,7 @@
 								submitAction: ({
 									validate: t,
 									...s
-								}, n) => t ? I.t(j, r, e, s, n) : I.n(j, r, e, s, n),
+								}, n) => t ? I.u(j, r, e, s, n) : I.o(j, r, e, s, n),
 								submitButtonText: o.fbt._("Comment", null, {
 									hk: "m3FAA"
 								})
@@ -11518,8 +11518,8 @@
 				}) === n.w.Enabled,
 				i = e => Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.Dc
-				}) === n.dd
+					experimentName: n.Ec
+				}) === n.ed
 		},
 		"./src/reddit/selectors/experiments/econAwardsPlaque.ts": function(e, t, s) {
 			"use strict";
@@ -11531,7 +11531,7 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: n.xc
+					experimentName: n.yc
 				});
 				return !(!t || Object(n.zf)(t))
 			}
@@ -11557,10 +11557,10 @@
 					expEventOverride: t
 				})
 			}
-			const l = c(o.Ib, !0),
-				m = c(o.Ib, !1),
-				u = c(o.Jb, !0),
-				p = (c(o.Jb, !1), Object(n.a)(l, u, (e, t) => e === o.ec.Enabled || t === o.fc.Enabled))
+			const l = c(o.Jb, !0),
+				m = c(o.Jb, !1),
+				u = c(o.Kb, !0),
+				p = (c(o.Kb, !1), Object(n.a)(l, u, (e, t) => e === o.fc.Enabled || t === o.gc.Enabled))
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
 			"use strict";
@@ -11602,9 +11602,9 @@
 					experimentName: e,
 					experimentEligibilitySelector: d,
 					throttledVariants: {
-						[o.bc.Bottom_cell_dismissible]: e,
-						[o.bc.Bottom_cell_dismissible_immediate_trigger]: e,
-						[o.bc.Bottom_sheet]: e
+						[o.cc.Bottom_cell_dismissible]: e,
+						[o.cc.Bottom_cell_dismissible_immediate_trigger]: e,
+						[o.cc.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -11630,13 +11630,13 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: n.Ve
-					}) === n.dd
+					}) === n.ed
 				},
 				a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
 						experimentName: n.Ue
-					}) === n.dd
+					}) === n.ed
 				}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, s) {
@@ -11659,13 +11659,13 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
 						experimentName: n.tf
-					}) === n.dd
+					}) === n.ed
 				},
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
 						experimentName: n.uf
-					}) === n.dd
+					}) === n.ed
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
@@ -11883,4 +11883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.866ab8a12c3bdd46a6b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.4aa8c2faad788288b541.js.map

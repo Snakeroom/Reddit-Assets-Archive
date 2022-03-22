@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.93d958911ab9ce72d9a6.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.d485c68ef50c421497f4.js
+// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1108,7 +1108,7 @@
 					comment: t,
 					commentsPageKey: s
 				}) => ({
-					deleteComment: () => s && e(Object(p.h)(t.id, t.postId)),
+					deleteComment: () => s && e(Object(p.i)(t.id, t.postId)),
 					handleDelete: () => {
 						e(Object(I.i)(Le(t.id))), e(Object(k.h)({
 							tooltipId: Pe(t.id)
@@ -1124,11 +1124,11 @@
 							commentsPageKey: s
 						}))
 					},
-					handleReply: () => s && e(Object(p.p)({
+					handleReply: () => s && e(Object(p.q)({
 						parentCommentId: t.id,
 						commentsPageKey: s
 					})),
-					onCommentFollow: s => e(Object(p.r)(t.id, s)),
+					onCommentFollow: s => e(Object(p.s)(t.id, s)),
 					onDistinguishComment: (s, n) => e(Object(b.b)(t.id, s, n)),
 					onFollowedCommentExpire: () => e(Object(u.n)({
 						id: t.id,
@@ -1149,7 +1149,7 @@
 						tooltipId: Me(t.id)
 					})),
 					toggleDeleteCommentModal: () => e(Object(I.i)(Le(t.id))),
-					toggleSendReplies: () => e(Object(p.k)(t.id))
+					toggleSendReplies: () => e(Object(p.l)(t.id))
 				}))(Object(re.c)(Be)),
 				Ae = s("./src/reddit/components/Comments/Comment/GlowHighlight/index.m.less"),
 				He = s.n(Ae);
@@ -1486,7 +1486,7 @@
 						mediaMetadata: m.media && m.media.mediaMetadata || void 0,
 						isTopLevelComment: !1,
 						parentCommentId: m.id,
-						submitAction: e => Object(p.i)({
+						submitAction: e => Object(p.j)({
 							id: m.id,
 							commentsPageKey: u,
 							depth: x,
@@ -1551,14 +1551,14 @@
 						submitAction: ({
 							validate: e,
 							...t
-						}, s) => e ? Object(p.s)({
+						}, s) => e ? Object(p.t)({
 							commentsPageKey: u,
 							draftKey: ue,
 							parentCommentDepth: x,
 							parentCommentId: m.id,
 							formData: t,
 							editorMode: s
-						}) : Object(p.l)({
+						}) : Object(p.m)({
 							commentsPageKey: u,
 							draftKey: ue,
 							parentCommentDepth: x,
@@ -9637,8 +9637,8 @@
 				}) === n.w.Enabled,
 				a = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.Dc
-				}) === n.dd
+					experimentName: n.Ec
+				}) === n.ed
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -9665,8 +9665,8 @@
 				a = s("./src/reddit/selectors/user.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
 				experimentEligibilitySelector: a.P,
-				experimentName: r.Ub
-			}), e => e === r.dd)
+				experimentName: r.Vb
+			}), e => e === r.ed)
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -9844,4 +9844,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.93d958911ab9ce72d9a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d485c68ef50c421497f4.js.map
