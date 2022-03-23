@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.125a7258df21927cd817.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.1a11409746929cfe488d.js
+// Retrieved at 3/23/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, n) {
@@ -590,7 +590,7 @@
 				E = n("./src/reddit/components/BannedUserList/AddBannedUserModal/_AddBannedUserModal.m.less"),
 				j = n.n(E);
 			const M = 300,
-				L = 1e3,
+				L = 5e3,
 				O = l.a.wrapped(f.a, "Unban", j.a),
 				R = l.a.wrapped(p.s, "UnbanButton", j.a),
 				I = l.a.wrapped(p.p, "ModalText", j.a),
@@ -1190,4 +1190,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.125a7258df21927cd817.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.1a11409746929cfe488d.js.map
