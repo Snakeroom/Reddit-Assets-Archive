@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.afde4a50a50fec7e0a23.js
-// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.4e08eee681676e920e8c.js
+// Retrieved at 3/23/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -741,7 +741,7 @@
 								const e = null === (r = null == k ? void 0 : k.interestTopicRecommendations) || void 0 === r ? void 0 : r.recommendationTopics;
 								if (e) {
 									const t = Object(v.a)(e);
-									t.length && (m = {
+									t.topics.length && (m = {
 										interests: t,
 										index: x
 									})
@@ -3674,7 +3674,7 @@
 				const t = Object(r.d)(),
 					s = Object(l.b)(),
 					i = Object(r.e)(f.b),
-					y = i === d.gb.Feed ? e.slice(0, 5) : e,
+					y = i === d.gb.Feed ? e.topics.slice(0, 5) : e.topics,
 					[E, k] = Object(a.useState)(!1),
 					[O, N] = Object(a.useState)(),
 					j = (e = null) => {
@@ -7771,4 +7771,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.afde4a50a50fec7e0a23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.4e08eee681676e920e8c.js.map

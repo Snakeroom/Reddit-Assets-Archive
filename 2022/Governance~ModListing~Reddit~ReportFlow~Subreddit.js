@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.ff009dd64b8b5589a653.js
-// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.73eb8059c0291a903f83.js
+// Retrieved at 3/23/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -3357,7 +3357,7 @@
 					let u = null === (L = null == Ke ? void 0 : Ke.body) || void 0 === L ? void 0 : L.interestTopicRecommendations;
 					if (!u && (null == Xe ? void 0 : Xe.interestTopics)) {
 						const e = Object(Te.a)(Xe.interestTopics);
-						e.length && (u = {
+						e.topics.length && (u = {
 							interests: e,
 							index: 5
 						})
@@ -8507,31 +8507,35 @@
 				children: e.isRoot ? [] : null
 			});
 			t.a = e => (({
-				edges: e
+				edges: e,
+				schemeName: t
 			}) => {
-				return e.reduce((e, {
-					node: t
-				}) => {
-					const r = t.topic.parents.map(e => e.nodeId),
-						s = r.length <= 0,
-						i = t.id,
-						o = {
-							id: i,
-							isRoot: s,
-							parents: r,
-							title: t.topic.title
-						};
-					return s ? (e.topics.push(n(o)), e.dict[i] = e.topics.length - 1) : r.forEach(t => {
-						var r;
-						const s = e.dict[t];
-						if ("number" == typeof s) {
-							null === (r = e.topics[s].children) || void 0 === r || r.push(n(o))
-						}
-					}), e
-				}, {
-					topics: [],
-					dict: {}
-				}).topics
+				return {
+					topics: e.reduce((e, {
+						node: t
+					}) => {
+						const r = t.topic.parents.map(e => e.nodeId),
+							s = r.length <= 0,
+							i = t.id,
+							o = {
+								id: i,
+								isRoot: s,
+								parents: r,
+								title: t.topic.title
+							};
+						return s ? (e.topics.push(n(o)), e.dict[i] = e.topics.length - 1) : r.forEach(t => {
+							var r;
+							const s = e.dict[t];
+							if ("number" == typeof s) {
+								null === (r = e.topics[s].children) || void 0 === r || r.push(n(o))
+							}
+						}), e
+					}, {
+						topics: [],
+						dict: {}
+					}).topics,
+					schemeName: t
+				}
 			})(e)
 		},
 		"./src/reddit/helpers/graphql/normalizePostFlairStyleTemplateFromGql/index.ts": function(e, t, r) {
@@ -8718,7 +8722,7 @@
 						if (Object(d.k)(u)) c.push(u), (null === (s = null === (n = u.flair) || void 0 === n ? void 0 : n.template) || void 0 === s ? void 0 : s.id) && (null === (o = null === (i = u.flair) || void 0 === i ? void 0 : i.template) || void 0 === o ? void 0 : o.postStyle) && (C[u.flair.template.id] = Object(p.a)(u.flair.template.postStyle));
 						else if (Object(v.f)(u)) {
 							const e = Object(l.a)(u.interestTopicRecommendations.recommendationTopics);
-							e.length && (D = {
+							e.topics.length && (D = {
 								interests: e,
 								index: r
 							})
@@ -13808,4 +13812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.ff009dd64b8b5589a653.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.73eb8059c0291a903f83.js.map

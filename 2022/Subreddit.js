@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.26a8f4ca1eed28852911.js
-// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.5da373db740ea6994ae1.js
+// Retrieved at 3/23/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -7777,7 +7777,7 @@
 				const t = Object(o.d)(),
 					n = Object(d.b)(),
 					c = Object(o.e)(x.b),
-					v = c === l.gb.Feed ? e.slice(0, 5) : e,
+					v = c === l.gb.Feed ? e.topics.slice(0, 5) : e.topics,
 					[y, O] = Object(s.useState)(!1),
 					[j, C] = Object(s.useState)(),
 					S = (e = null) => {
@@ -13877,19 +13877,27 @@
 					action: s.c.SELECT,
 					noun: a.GENDER
 				}),
-				_ = (e, t, n) => o => ({
-					...Object(r.o)(o),
+				_ = (e, t, n, o) => c => ({
+					...Object(r.o)(c),
 					source: i,
 					action: e ? s.c.SELECT : s.c.DESELECT,
+					actionInfo: {
+						...Object(r.d)(c),
+						reason: o
+					},
 					noun: t ? a.CATEGORY : a.SUB_CATEGORY,
 					onboarding: {
 						categoryName: n
 					}
 				}),
-				y = (e, t, n) => o => ({
-					...Object(r.o)(o),
+				y = (e, t, n, o) => c => ({
+					...Object(r.o)(c),
 					source: i,
 					action: e ? s.c.SELECT : s.c.DESELECT,
+					actionInfo: {
+						...Object(r.d)(c),
+						reason: o
+					},
 					noun: a.SUBREDDIT,
 					onboarding: {
 						categoryName: t,
@@ -17661,4 +17669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.26a8f4ca1eed28852911.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.5da373db740ea6994ae1.js.map
