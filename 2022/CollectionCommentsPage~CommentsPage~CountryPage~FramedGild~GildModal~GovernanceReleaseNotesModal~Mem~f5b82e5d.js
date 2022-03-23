@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.a8b9c61b7f48e58ce3a2.js
-// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.4292640e98ea57609a32.js
+// Retrieved at 3/23/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1315,7 +1315,9 @@
 						} = this;
 						switch (this.setState({
 							hasHovered: !0
-						}), t && t.contains(e.target) ? this.clearControlBarFadeTimer() : this.resetControlBarFadeTimer(), this.state.settingChange) {
+						}), t && t.contains(e.target) ? (this.clearControlBarFadeTimer(), this.state.hideControlBar && this.setState({
+							hideControlBar: !1
+						})) : this.resetControlBarFadeTimer(), this.state.settingChange) {
 							case De.SeekBar:
 								s && s.handleMouseMove(e);
 								break;
@@ -1403,7 +1405,7 @@
 						this.state.videoFullScreen && !Object(v.b)() && this.exitFullScreen()
 					}, this.playPauseVideo = e => {
 						const t = this.HTML5StreamPlayerVideo;
-						t && (t.paused && this.state.videoPaused ? (this.playVideo(), this.sendEvent("click", "play"), this.setState({
+						t && this.state.videoLoaded && (t.paused && this.state.videoPaused ? (this.playVideo(), this.sendEvent("click", "play"), this.setState({
 							videoManualPaused: !1
 						})) : (this.pauseVideo(), this.sendEvent("click", "pause"), this.setState({
 							videoManualPaused: !0
@@ -1414,6 +1416,7 @@
 							this.setVideoMute(this.state.isMuted, !1), await e.play(), e.currentTime < 1 && this.props.onVideoStarted(), this.setState({
 								videoStarted: !0,
 								videoEnded: !1,
+								videoPaused: !1,
 								isHovered: !0
 							}), this.hoverTimeout = window.setTimeout(() => {
 								this.setState({
@@ -1423,7 +1426,9 @@
 						} catch (t) {}
 					}, this.pauseVideo = () => {
 						const e = this.HTML5StreamPlayerVideo;
-						e && e.pause()
+						e && (e.pause(), this.state.videoPaused || this.setState({
+							videoPaused: !0
+						}))
 					}, this.resetVideo = e => {
 						this.isUnobscured && this.state.videoEnded && (this.resetVideoWithRetry(), this.sendEvent("click", "replay"), this.setState({
 							ignoreUnderrunsUntil: Date.now() + Qe,
@@ -1805,7 +1810,7 @@
 						videoEnded: v,
 						videoLoaded: g,
 						videoStarted: f
-					} = this.state, x = this.HTML5StreamPlayerVideo, y = p === De.SeekBar, S = g || !t, P = S && x && 0 !== x.currentTime, b = !r && d, C = v && !y, E = {
+					} = this.state, x = this.HTML5StreamPlayerVideo, y = p === De.SeekBar, S = g || !t, P = !g, b = !r && d, C = v && !y, E = {
 						...this.props,
 						bitrateInfo: this.state.bitrateInfo,
 						resolution: this.state.resolution,
@@ -2590,4 +2595,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.a8b9c61b7f48e58ce3a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.4292640e98ea57609a32.js.map

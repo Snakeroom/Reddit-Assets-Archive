@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.6489ad1a5b858540cb80.js
-// Retrieved at 3/23/2022, 4:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c336df3ab131586c7c3d.js
+// Retrieved at 3/23/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
+		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
 		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
-		for (m && m(o); b.length;) b.shift()();
+		for (m && m(o); P.length;) P.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
@@ -665,7 +665,7 @@
 					CoinPurchaseModal: "ee060ecee3dbefcf7140",
 					Coins: "c2fcac9c5bd0b9c024a0",
 					CoinsMobile: "71086e665e26a05dd58f",
-					"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d": "74915ecb7b9e0530ca6a",
+					"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d": "1f229654a0199023af2e",
 					"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02": "bc5720defb1a79b37258",
 					"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "5222fa7797a832519f3c",
 					"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956": "e044f7201d1401caa4a9",
@@ -759,7 +759,7 @@
 					Talk: "b8c26b741ab24fce8b48",
 					UserDataRequestPage: "9c903d1c7094af13c2db",
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
-					WrappedReddit: "bb81aadc58deeafa966c",
+					WrappedReddit: "2c662a5aa365f890fcd6",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
 					getFlairData: "31d6cfe0d16ae931b73c",
 					givePremiumTrackers: "31d6cfe0d16ae931b73c",
@@ -878,7 +878,7 @@
 					"reddit-components-InFeedPostCreation": "9d674249784fdc8ced28",
 					"reddit-components-TabBadger-Component": "52beb878d4033b50d0bb",
 					RpanListingUnit: "1971eeea5a021a1388d2",
-					StructuredStyles: "dcfd046399ef6300f8b8",
+					StructuredStyles: "bc50829e08f26fb27034",
 					CryptoLibEthers: "31d6cfe0d16ae931b73c",
 					JsonEMEntityView: "31d6cfe0d16ae931b73c",
 					"reddit-components-CrisisFlow-CrisisFlowPage": "ed056d5b0bab2a006468",
@@ -970,12 +970,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
 			}
-			var b = document.createElement("link");
-			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
+			var P = document.createElement("link");
+			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
 				var a = o && o.target && o.target.src || d,
 					i = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], b.parentNode.removeChild(b), t(i)
-			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], P.parentNode.removeChild(P), t(i)
+			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
 		})).then((function() {
 			n[e] = 0
 		})));
@@ -1351,7 +1351,7 @@
 						CoinPurchaseModal: "036dcc37b7d3ff711c95",
 						Coins: "f263b4070597e822b42f",
 						CoinsMobile: "a7fd5c80a9cc8c1af852",
-						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d": "a8b9c61b7f48e58ce3a2",
+						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d": "4292640e98ea57609a32",
 						"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02": "caaa98ab52cfaf0fcc5a",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "52cbd2e3b8cd6c617742",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956": "d6ea514ca79f65aba4c3",
@@ -1445,7 +1445,7 @@
 						Talk: "a04e31c5e82ff685498c",
 						UserDataRequestPage: "8f0b91a76666e382eb96",
 						UserZoomIntegration: "e14a378bfc910ff0887f",
-						WrappedReddit: "867c16e7ca5a8738bbf8",
+						WrappedReddit: "36de74badd4fa67c1681",
 						"css-vars-ponyfill": "8e6cec8301d069e523d7",
 						getFlairData: "b702beb9335b837772bc",
 						givePremiumTrackers: "ac2dd725a8465c4fd314",
@@ -1564,7 +1564,7 @@
 						"reddit-components-InFeedPostCreation": "0f26bc16b4bd20d93809",
 						"reddit-components-TabBadger-Component": "c42639b39cde744fa7b0",
 						RpanListingUnit: "33915b24cdcabbfefc48",
-						StructuredStyles: "d5b9ad25dbb4bc853630",
+						StructuredStyles: "ba32c304f48b07c80309",
 						CryptoLibEthers: "c693308c5ad86d73dff2",
 						JsonEMEntityView: "ee26c2fa50fce800534d",
 						"reddit-components-CrisisFlow-CrisisFlowPage": "904a458bb38284aaeca7",
@@ -1712,4 +1712,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.6489ad1a5b858540cb80.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c336df3ab131586c7c3d.js.map
