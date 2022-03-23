@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.260c070ece30c9fe2038.js
-// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.b196edda782cc1a0dc36.js
+// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, s) {
@@ -65,12 +65,12 @@
 				return null
 			};
 			var T = s("./src/reddit/components/AwardTooltip/index.m.less"),
-				L = s.n(T);
-			const k = Object(d.c)({
+				k = s.n(T);
+			const L = Object(d.c)({
 					canFlagAwards: e => Object(x.c)(e, {
 						experimentEligibilitySelector: x.a,
-						experimentName: w.Bc
-					}) === w.id.Enabled,
+						experimentName: w.Dc
+					}) === w.kd.Enabled,
 					currentUser: g.k,
 					moderatorPermissions: (e, {
 						postOrComment: t
@@ -96,7 +96,7 @@
 						postOrCommentId: s.id
 					})
 				}),
-				A = Object(a.b)(k, (e, {
+				A = Object(a.b)(L, (e, {
 					award: t,
 					tooltipId: s
 				}) => ({
@@ -123,8 +123,8 @@
 						reportAward: i
 					} = this.props;
 					return t.awardType !== h.f.Global || s ? n.a.createElement("button", {
-						className: Object(c.a)(L.a.awardReport, {
-							[L.a.isReported]: e
+						className: Object(c.a)(k.a.awardReport, {
+							[k.a.isReported]: e
 						}),
 						onClick: () => {
 							s ? (a(), o()) : e || (i(), this.setState({
@@ -134,9 +134,9 @@
 					}, e ? r.fbt._("Reported", null, {
 						hk: "4C0VOl"
 					}) : null, e ? n.a.createElement(v.a, {
-						className: L.a.awardReportIcon
+						className: k.a.awardReportIcon
 					}) : n.a.createElement(N.a, {
-						className: L.a.awardReportIcon
+						className: k.a.awardReportIcon
 					})) : null
 				}
 				renderHideButton() {
@@ -145,12 +145,12 @@
 						onHideAward: t
 					} = this.props;
 					return n.a.createElement("button", {
-						className: L.a.awardHide,
+						className: k.a.awardHide,
 						onClick: () => {
 							t(), e()
 						}
 					}, n.a.createElement(E.a, {
-						className: L.a.awardHideIcon
+						className: k.a.awardHideIcon
 					}), r.fbt._("Hide", null, {
 						hk: "4kciEW"
 					}))
@@ -162,12 +162,12 @@
 						onClickPremium: s
 					} = this.props, o = e.awardSubType === h.d.Premium, a = !!t && t.isGold;
 					return o ? a ? null : n.a.createElement(P.k, {
-						className: L.a.premiumCta,
+						className: k.a.premiumCta,
 						onClick: s
 					}, r.fbt._("Get Premium", null, {
 						hk: "Yapo5"
 					})) : n.a.createElement("a", {
-						className: L.a.howToLink,
+						className: k.a.howToLink,
 						href: "https://www.reddithelp.com/en/categories/reddit-101/reddit-basics/what-are-awards",
 						target: "_blank",
 						rel: "noopener noreferrer"
@@ -196,35 +196,35 @@
 						tooltipId: d,
 						defaultTooltipPosition: "top"
 					}, n.a.createElement("div", {
-						className: Object(c.a)(L.a.headerBar, {
-							[L.a.headerBarPremium]: p
+						className: Object(c.a)(k.a.headerBar, {
+							[k.a.headerBarPremium]: p
 						})
 					}, u && this.renderHideButton(), this.renderReporterButton()), n.a.createElement("div", {
-						className: L.a.awardDetails
+						className: k.a.awardDetails
 					}, n.a.createElement("div", {
-						className: L.a.awardIconContainer
+						className: k.a.awardIconContainer
 					}, n.a.createElement("div", {
-						className: L.a.awardIcon,
+						className: k.a.awardIcon,
 						style: {
 							backgroundImage: `url("${t}")`
 						}
 					})), n.a.createElement("div", {
-						className: L.a.awardName
+						className: k.a.awardName
 					}, r.fbt._("{award-name} Award", [r.fbt._param("award-name", e.name)], {
 						hk: "2QpjYF"
 					})), n.a.createElement("p", {
-						className: L.a.awardDescription
+						className: k.a.awardDescription
 					}, n.a.createElement(y, {
 						award: e
 					})), e.awardType === h.f.Community && i && n.a.createElement("div", {
-						className: L.a.subreddit
+						className: k.a.subreddit
 					}, n.a.createElement(_.b, {
-						className: L.a.subredditIcon,
+						className: k.a.subredditIcon,
 						subredditOrProfile: i
 					}), `r/${i.name}`), e.awardType === h.f.Moderator && n.a.createElement("div", {
-						className: L.a.subreddit
+						className: k.a.subreddit
 					}, n.a.createElement(j.a, {
-						className: Object(c.a)(L.a.subredditIcon, L.a.modShield)
+						className: Object(c.a)(k.a.subredditIcon, k.a.modShield)
 					}), r.fbt._("Exclusive mod-given Award", null, {
 						hk: "1VGGho"
 					})), this.renderCta()))
@@ -541,4 +541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.260c070ece30c9fe2038.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.b196edda782cc1a0dc36.js.map

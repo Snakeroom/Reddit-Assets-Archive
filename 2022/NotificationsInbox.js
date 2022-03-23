@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.a7f15d7fa735be8aa0ae.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.f549a7dce4788d919497.js
+// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -594,7 +594,7 @@
 					}
 				}
 				componentDidMount() {
-					this.props.updateInboxActivitySeenState(), this.props.sendEvent(Object(C.s)({
+					this.props.updateInboxActivitySeenState(), this.props.sendEvent(Object(C.v)({
 						badgeCount: this.props.inboxBadgeCount,
 						tab: C.f.Activity
 					}))
@@ -690,7 +690,7 @@
 				}))), s.a.createElement("li", null, s.a.createElement(V, {
 					active: !1,
 					onMouseDown: () => {
-						i(Object(C.s)({
+						i(Object(C.v)({
 							badgeCount: t + n,
 							tab: C.f.Messages
 						})), e.clearMessageTabBadgeCount()
@@ -704,7 +704,7 @@
 				}))), s.a.createElement("li", null, s.a.createElement("button", {
 					className: X.a.navLink,
 					onClick: () => {
-						e.markAllAsRead(), i(Object(C.h)({
+						e.markAllAsRead(), i(Object(C.i)({
 							isMiniInbox: !1
 						}))
 					}
@@ -715,7 +715,7 @@
 					hk: "3IycES"
 				}))), s.a.createElement("li", null, s.a.createElement(Q.a, {
 					className: X.a.navLink,
-					onClick: () => i(Object(C.n)(C.c.Inbox)),
+					onClick: () => i(Object(C.o)(C.c.Inbox)),
 					to: "/settings/notifications"
 				}, s.a.createElement(q.a, {
 					name: "settings",
@@ -747,4 +747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.a7f15d7fa735be8aa0ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.f549a7dce4788d919497.js.map

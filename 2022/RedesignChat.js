@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.94b4fe3cd17cad045049.js
-// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.d484bd61d6ea333bee62.js
+// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -65,7 +65,7 @@
 			const A = C.a.wrapped(e => a.a.createElement("div", {
 					className: e.className
 				}, e.children), "BasePortalContainer", N.a),
-				D = C.a.wrapped(e => {
+				R = C.a.wrapped(e => {
 					const t = Object(O.d)(),
 						n = Object(s.useRef)(null),
 						c = e => {
@@ -86,14 +86,14 @@
 						}
 					}, e.children)
 				}, "EmbedPortalContainer", N.a),
-				R = C.a.wrapped(e => a.a.createElement("div", {
+				k = C.a.wrapped(e => a.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${T(B.width)}px`,
 						height: `${T(B.height)}px`
 					}
 				}, e.children), "HiddenPortalContainer", N.a),
-				k = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
+				D = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
 				I = A,
 				L = Object(M.a)({
 					container: e => e && e.container && e.container.size
@@ -102,15 +102,15 @@
 			function U(e) {
 				switch (e.container) {
 					case y.a.EMBED:
-						return a.a.createElement(D, null, e.children);
-					case y.a.HIDDEN:
 						return a.a.createElement(R, null, e.children);
+					case y.a.HIDDEN:
+						return a.a.createElement(k, null, e.children);
 					case y.a.FULL:
 						return a.a.createElement(I, null, e.children);
 					case y.a.MINIMIZED:
-						return a.a.createElement(k, null);
+						return a.a.createElement(D, null);
 					default:
-						return a.a.createElement(D, null, e.children)
+						return a.a.createElement(R, null, e.children)
 				}
 			}
 			var q = n("./src/chat/customMiddleware/channelsFilter.ts"),
@@ -658,39 +658,39 @@
 				r = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.Ab,
+					experimentName: a.Bb,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === a.Fd.Enabled),
+				d = Object(s.a)(o, e => e === a.Hd.Enabled),
 				u = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.Ad,
+					experimentName: a.Cd,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				l = Object(s.a)(d, u, (e, t) => e && t === a.Ed.Enabled),
+				l = Object(s.a)(d, u, (e, t) => e && t === a.Gd.Enabled),
 				b = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.Ob,
+					experimentName: a.Qb,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				m = Object(s.a)(d, b, (e, t) => e && t === a.ic.Enabled),
+				m = Object(s.a)(d, b, (e, t) => e && t === a.kc.Enabled),
 				h = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.yb,
-					experimentEligibilitySelector: r.e
-				}), i.a),
-				g = Object(s.a)(h, e => e === a.Cd.ContinuousScroll),
-				f = Object(s.a)(e => Object(c.c)(e, {
 					experimentName: a.zb,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				p = Object(s.a)(f, e => e === a.Dd.Enabled),
+				g = Object(s.a)(h, e => e === a.Ed.ContinuousScroll),
+				f = Object(s.a)(e => Object(c.c)(e, {
+					experimentName: a.Ab,
+					experimentEligibilitySelector: r.e
+				}), i.a),
+				p = Object(s.a)(f, e => e === a.Fd.Enabled),
 				x = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.Hb,
+					experimentName: a.Jb,
 					experimentEligibilitySelector: () => !0
 				}), i.a),
-				j = Object(s.a)(x, e => e === a.db.Enabled)
+				j = Object(s.a)(x, e => e === a.eb.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"9d105ce5d71a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.94b4fe3cd17cad045049.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.d484bd61d6ea333bee62.js.map

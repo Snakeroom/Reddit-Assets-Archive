@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.98035f12e7f246f57134.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.2490d0cfba719828cd27.js
+// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ContributorRequestPendingModal", "ContributorRequestRequestModal"], {
 		"./src/reddit/components/ContributorRequestFlow/PendingModal/index.m.less": function(e, t, n) {
@@ -31,6 +31,7 @@
 				bodyFontH4: "_2ckyzMtuspkiV5nyNCTLcV",
 				bodyFontH5: "_1ubFFVN9SVMiUSN9OAxrcz",
 				bodyFontH6: "_2XQiK7u09Z8hMppSi4HquI",
+				bodyFontH6Small: "_28kTynmH7801LrHdaFuHMm",
 				bodyFont: "_20828B8NYtXTVy7i4u5l8p",
 				bodyFontSmall: "_34mk61kYhwo60DGJVxLSPv",
 				bodyFontMono: "_1hTcMMnVRQ0sewN_z99GAa",
@@ -69,10 +70,10 @@
 					restrictions: C.m,
 					subreddit: x.e
 				}),
-				q = Object(a.b)(k, e => ({
+				y = Object(a.b)(k, e => ({
 					openContributorRequestPendingModal: () => e(Object(d.i)(m.a.CONTRIBUTOR_REQUEST_PENDING))
 				}));
-			class y extends r.a.Component {
+			class q extends r.a.Component {
 				render() {
 					const {
 						openContributorRequestPendingModal: e,
@@ -94,7 +95,7 @@
 					}))))
 				}
 			}
-			t.default = h.a.wrapped(Object(l.a)(q(y)), "Component", f.a)
+			t.default = h.a.wrapped(Object(l.a)(y(q)), "Component", f.a)
 		},
 		"./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -122,7 +123,7 @@
 			})), n.d(t, "ModalTitle", (function() {
 				return j
 			})), n.d(t, "CloseIcon", (function() {
-				return T
+				return I
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./src/lib/CSSVariableProvider/withTheme.tsx"),
@@ -145,16 +146,16 @@
 				E = n("./src/reddit/models/Theme/index.ts"),
 				g = n("./src/reddit/selectors/platform.ts"),
 				k = n("./src/reddit/selectors/structuredStyles.ts"),
-				q = n("./src/reddit/selectors/subreddit.ts"),
-				y = n("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
-				R = n.n(y),
+				y = n("./src/reddit/selectors/subreddit.ts"),
+				q = n("./src/reddit/components/ContributorRequestFlow/RequestModal/index.m.less"),
+				R = n.n(q),
 				M = n("./src/lib/lessComponent.tsx");
 			const v = M.a.wrapped(m.e, "ModalBody", R.a),
 				S = M.a.wrapped(m.i, "ModalHeader", R.a),
 				j = M.a.div("ModalTitle", R.a),
 				w = M.a.div("Title", R.a),
-				I = M.a.div("Description", R.a),
-				T = M.a.wrapped(m.b, "CloseIcon", R.a);
+				T = M.a.div("Description", R.a),
+				I = M.a.wrapped(m.b, "CloseIcon", R.a);
 			class O extends a.a.Component {
 				constructor(e) {
 					super(e), this.onTextAreaChange = e => {
@@ -192,9 +193,9 @@
 						primaryColor: this.props.subredditIcon.color
 					}), a.a.createElement("span", null, e))), a.a.createElement(C.a, {
 						onClick: this.onCancelRequest
-					}, a.a.createElement(T, null)))), a.a.createElement(m.l, null, t ? a.a.createElement(I, null, s.fbt._("The moderators have disabled requests in this community. Check the community rules for more details.", null, {
+					}, a.a.createElement(I, null)))), a.a.createElement(m.l, null, t ? a.a.createElement(T, null, s.fbt._("The moderators have disabled requests in this community. Check the community rules for more details.", null, {
 						hk: "2J5GoK"
-					})) : a.a.createElement(a.a.Fragment, null, a.a.createElement(I, null, s.fbt._("Only approved users can {restrictions} in {displayName}. To become an approved user, send a request to the moderators.", [s.fbt._param("restrictions", h.d[this.props.restrictions]()), s.fbt._param("displayName", e)], {
+					})) : a.a.createElement(a.a.Fragment, null, a.a.createElement(T, null, s.fbt._("Only approved users can {restrictions} in {displayName}. To become an approved user, send a request to the moderators.", [s.fbt._param("restrictions", h.d[this.props.restrictions]()), s.fbt._param("displayName", e)], {
 						hk: "1q9PJW"
 					})), a.a.createElement(p.c, {
 						className: R.a.textarea,
@@ -224,8 +225,8 @@
 				}
 			}
 			t.default = M.a.wrapped(Object(o.a)(Object(d.a)(Object(i.b)(() => Object(l.c)({
-				subredditAboutInfo: q.g,
-				restrictions: q.m,
+				subredditAboutInfo: y.g,
+				restrictions: y.m,
 				subreddit: g.e,
 				subredditIcon: k.b
 			}), e => ({
@@ -413,4 +414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.98035f12e7f246f57134.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ContributorRequestPendingModal.2490d0cfba719828cd27.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.ff987e91d75b6b9909b7.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.2a74a2c0c5ede88c26e3.js
+// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -206,7 +206,7 @@
 				S = Object(o.b)(N, e => ({
 					changeEmail: t => e(Object(p.v)(t))
 				}));
-			class M extends i.a.Component {
+			class O extends i.a.Component {
 				constructor() {
 					super(...arguments), this.state = C, this.formIncomplete = () => !this.state.newEmail || !this.state.password, this.validateNewEmail = () => {
 						const {
@@ -325,7 +325,7 @@
 					}))))
 				}
 			}
-			var O = Object(u.a)(S(Object(E.c)(M))),
+			var M = Object(u.a)(S(Object(E.c)(O))),
 				F = s("./src/reddit/icons/svgs/Approve/index.tsx"),
 				j = s("./src/reddit/components/EmailCollection/Success/index.m.less"),
 				B = s.n(j);
@@ -370,12 +370,12 @@
 				q = s("./src/reddit/selectors/meta.ts"),
 				Q = s("./src/reddit/components/Settings/DeactivateModal.tsx"),
 				X = s("./src/reddit/components/Settings/VerifyEmailModal.m.less"),
-				z = s.n(X);
-			const V = Object(r.c)({
+				V = s.n(X);
+			const z = Object(r.c)({
 					emailDigests: v.m,
 					isEmailPermissionRequired: q.e
 				}),
-				Y = Object(o.b)(V, e => ({
+				Y = Object(o.b)(z, e => ({
 					resendEmail: () => e(Object(p.x)()),
 					toggleEmailDigests: t => e(Object(H.I)({
 						emailDigests: t
@@ -398,30 +398,30 @@
 						resendEmail: o
 					} = this.props, r = !!e;
 					return i.a.createElement(_.a, {
-						className: Object(l.a)(z.a.container, {
+						className: Object(l.a)(V.a.container, {
 							[k.a["m-responsive"]]: s
 						}),
 						description: i.a.createElement(i.a.Fragment, null, a.fbt._("Please check your email. If you do not receive it, please check it was not flagged as spam or try resending the email below.", null, {
 							hk: "1taLkO"
 						}), !t && i.a.createElement("span", {
-							className: z.a.reviewSettings
+							className: V.a.reviewSettings
 						}, ` ${a.fbt._("You can also",null,{hk:"14h75w"})} `, i.a.createElement(U.a, {
-							className: z.a.settingsLink,
+							className: V.a.settingsLink,
 							onMouseDown: this.trackEmailSettingsLinkClick,
 							to: "/settings"
 						}, a.fbt._("review your email settings", null, {
 							hk: "3eTpv8"
 						})), ` ${a.fbt._("to control what type of email you receive.",null,{hk:"bg4j6"})}`)),
-						descriptionClassName: z.a.description,
+						descriptionClassName: V.a.description,
 						icon: i.a.createElement(P, null),
 						onClose: n,
 						title: a.fbt._("Verification email sent", null, {
 							hk: "3rXaUZ"
 						})
 					}, t && i.a.createElement(Q.a, {
-						className: z.a.checkboxWrapper
+						className: V.a.checkboxWrapper
 					}, i.a.createElement(J.a, {
-						className: Object(l.a)(z.a.checkbox, !r && z.a.unchecked),
+						className: Object(l.a)(V.a.checkbox, !r && V.a.unchecked),
 						checkBoxStyle: {
 							backgroundColor: R.f,
 							borderRadius: "50%",
@@ -431,7 +431,7 @@
 						isCheckboxSelected: r,
 						toggleCheckbox: this.toggleEmailDigests
 					}), i.a.createElement("label", {
-						className: z.a.checkboxLabel,
+						className: V.a.checkboxLabel,
 						onClick: this.toggleEmailDigests
 					}, a.fbt._("You agree that Reddit can send you emails to help notify you of the best content and responses to you posts. Unsubscribe anytime!", null, {
 						hk: "2OiNgc"
@@ -501,7 +501,7 @@
 				const b = Object(l.a)({
 					[se.a["m-responsive"]]: m
 				});
-				return i.a.createElement(n.Fragment, null, t && i.a.createElement(O, {
+				return i.a.createElement(n.Fragment, null, t && i.a.createElement(M, {
 					description: re(),
 					isResponsive: m,
 					onClose: o,
@@ -511,7 +511,7 @@
 						hk: "13zUWG"
 					}),
 					withOverlay: !0
-				}), u && i.a.createElement(O, {
+				}), u && i.a.createElement(M, {
 					description: oe(d),
 					isResponsive: m,
 					onClose: r,
@@ -605,7 +605,7 @@
 					ios: "https://finance-app.itunes.apple.com/account/subscriptions",
 					android: "https://play.google.com/store/account/subscriptions"
 				},
-				M = {
+				O = {
 					ios: () => a.fbt._("Apple Appstore", null, {
 						hk: "1WaFta"
 					}),
@@ -619,7 +619,7 @@
 						hk: "1IWNjx"
 					})
 				};
-			class O extends i.a.Component {
+			class M extends i.a.Component {
 				constructor(e) {
 					super(e), this.showConfirm = () => {
 						const e = this.state;
@@ -649,7 +649,7 @@
 						}, !!t && ", ", i.a.createElement("a", {
 							href: S[e],
 							target: "_blank"
-						}, M[e] && M[e]()))))), i.a.createElement(_, null, a.fbt._("why are you deactivating this account? (OPTIONAL)", null, {
+						}, O[e] && O[e]()))))), i.a.createElement(_, null, a.fbt._("why are you deactivating this account? (OPTIONAL)", null, {
 							hk: "2JWxx5"
 						})), i.a.createElement(v, {
 							placeholder: a.fbt._("(OPTIONAL) FEEDBACK", null, {
@@ -693,10 +693,10 @@
 					}) => a.fbt._("{text with URL}", [a.fbt._param("text with URL", t ? i.a.createElement(i.a.Fragment, null, "You still have an active Reddit Premium subscription. Since we use a third party payment processor, you will need to go directly to them to cancel your subscription. Here is the link for", i.a.createElement("a", {
 						href: S[e],
 						target: "_blank"
-					}, " ", M[e] && M[e]()), ". When you are finished cancelling your premium subscription, return here to fully deactivate your account.") : i.a.createElement(i.a.Fragment, null, "You still have an active Reddit Premium subscription. You will need to cancel your subscription for", i.a.createElement("a", {
+					}, " ", O[e] && O[e]()), ". When you are finished cancelling your premium subscription, return here to fully deactivate your account.") : i.a.createElement(i.a.Fragment, null, "You still have an active Reddit Premium subscription. You will need to cancel your subscription for", i.a.createElement("a", {
 						href: S[e],
 						target: "_blank"
-					}, " ", M[e] && M[e]()), ". When you are finished cancelling your premium subscription, return here to fully deactivate your account."))], {
+					}, " ", O[e] && O[e]()), ". When you are finished cancelling your premium subscription, return here to fully deactivate your account."))], {
 						hk: "1lLr9b"
 					}), this.renderPremiumNotification = () => i.a.createElement(d.l, null, i.a.createElement(y, null, a.fbt._("Please cancel your Premium subscription before deleting your account.", null, {
 						hk: "1JNWd5"
@@ -748,7 +748,7 @@
 					}))), this.state.showPremiumNotification ? this.renderPremiumNotification() : this.state.showConfirm ? this.renderConfirm() : this.renderMain())
 				}
 			}
-			t.b = Object(o.a)(O)
+			t.b = Object(o.a)(M)
 		},
 		"./src/reddit/components/Settings/ModalContainer/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -965,6 +965,7 @@
 				bodyFontH4: "_1XCZr-qft4wCNMbV9Ss_Ou",
 				bodyFontH5: "_1d5gYDAvszTFAiNg31iR56",
 				bodyFontH6: "_2aeJbvpJvTsRzIwwJHzssX",
+				bodyFontH6Small: "_4oYGhpkb08j0kg-V_ZOR4",
 				bodyFont: "_2pkKgwPGa4i4WMPJpHXzBM",
 				bodyFontSmall: "_11mUbPPL96Bo13O8gTB7ik",
 				bodyFontMono: "_386ITOzsDX5wQo_sJfUExR"
@@ -1029,4 +1030,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.ff987e91d75b6b9909b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.2a74a2c0c5ede88c26e3.js.map

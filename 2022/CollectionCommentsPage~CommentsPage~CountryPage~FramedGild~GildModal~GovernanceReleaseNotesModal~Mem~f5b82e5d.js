@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.e9d6eea041dc8fb7f277.js
-// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.a8b9c61b7f48e58ce3a2.js
+// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -2580,14 +2580,14 @@
 				a = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				n = s("./src/reddit/selectors/experiments/index.ts");
 			const o = e => Object(a.c)(e, {
-					experimentName: i.mb,
+					experimentName: i.nb,
 					experimentEligibilitySelector: n.e
-				}) === i.ed,
+				}) === i.gd,
 				r = e => Object(a.c)(e, {
-					experimentName: i.Mb,
+					experimentName: i.Ob,
 					experimentEligibilitySelector: a.a
-				}) === i.ed
+				}) === i.gd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.e9d6eea041dc8fb7f277.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.a8b9c61b7f48e58ce3a2.js.map

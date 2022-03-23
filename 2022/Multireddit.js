@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.1dedf8a6c1df723f078c.js
-// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.830443cba6e90db52431.js
+// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
@@ -403,7 +403,7 @@
 				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(j.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(y.a)(Object(j.a)(e).post, T.a.black, T.a.white) : e.textColor === C.e.Dark ? T.a.black : T.a.white,
 				W = p.a.wrapped(P, "TextFlair", v.a),
 				H = p.a.wrapped(A, "RichTextFlair", v.a),
-				V = e => {
+				Z = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -413,8 +413,8 @@
 							return Object(i.i)(.1, Object(j.a)(s()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				Z = p.a.wrapped(e => {
-					const t = V(e),
+				V = p.a.wrapped(e => {
+					const t = Z(e),
 						n = a.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -492,7 +492,7 @@
 						});
 					case C.f.Nsfw:
 					case C.f.Spoiler:
-						return a.a.createElement(Z, {
+						return a.a.createElement(V, {
 							className: t,
 							text: o.text,
 							type: o.type
@@ -1289,33 +1289,33 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Bb,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.V.Enabled),
-				a = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Cb,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.W.Enabled),
-				l = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Db,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.X.Enabled),
-				d = Object(r.a)(e => Object(s.c)(e, {
+				}), e => e === o.W.Enabled),
+				a = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Eb,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.Y.Enabled),
-				u = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Gb,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.ab.Enabled),
-				m = Object(r.a)(e => Object(s.c)(e, {
+				}), e => e === o.X.Enabled),
+				l = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Fb,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.Z.Enabled)
+				}), e => e === o.Y.Enabled),
+				d = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.Gb,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.Z.Enabled),
+				u = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.Ib,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.bb.Enabled),
+				m = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.Hb,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.ab.Enabled)
 		},
 		"./src/redditGQL/operations/SubredditRecommendations.json": function(e) {
 			e.exports = JSON.parse('{"id":"074eb98957ec"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.1dedf8a6c1df723f078c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.830443cba6e90db52431.js.map

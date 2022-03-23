@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.4fbc67567a988aec1435.js
-// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.6f787986f19fe94edf49.js
+// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -6018,6 +6018,7 @@
 				bodyFontH4: "_3ZsC5lxE3Dnw9-duolQiN3",
 				bodyFontH5: "_3gWD0dGAav6VxMQZ2iY4qc",
 				bodyFontH6: "_2yKCC1d-C1qheMkCr5CedW",
+				bodyFontH6Small: "_1AyCUR1VQn-opitbpGpNcf",
 				bodyFont: "_1RI3wkzuynRc_Bqno__Uom",
 				bodyFontSmall: "_2MlCobLFb0alel2wzuIFVK",
 				bodyFontMono: "_3RdMKJzgzPT9lgXHEf0XZB",
@@ -6167,8 +6168,8 @@
 				}) === r.w.Enabled,
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: r.Ec
-				}) === r.ed
+					experimentName: r.Gc
+				}) === r.gd
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
@@ -6219,4 +6220,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.4fbc67567a988aec1435.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.6f787986f19fe94edf49.js.map

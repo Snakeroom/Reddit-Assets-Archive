@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.b8b880441a47df64b67a.js
-// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.9f31fcdf047e0106423c.js
+// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, r) {
@@ -432,9 +432,9 @@
 			})), r.d(t, "b", (function() {
 				return L
 			})), r.d(t, "c", (function() {
-				return T
-			})), r.d(t, "d", (function() {
 				return A
+			})), r.d(t, "d", (function() {
+				return T
 			}));
 			var s = r("./node_modules/react/index.js"),
 				n = r.n(s),
@@ -547,8 +547,8 @@
 						style: r
 					}))
 				}),
-				T = f,
-				A = w
+				A = f,
+				T = w
 		},
 		"./src/reddit/connectors/connectClickToToggleEditor.ts": function(e, t, r) {
 			"use strict";
@@ -1077,15 +1077,15 @@
 					sidebars: _,
 					trendingUnit: S,
 					subredditId: L
-				} = e, T = S ? "28px" : "0", A = C ? {
+				} = e, A = S ? "28px" : "0", T = C ? {
 					marginRight: `${i.q}px`,
-					marginTop: T
+					marginTop: A
 				} : {
 					marginLeft: `${i.q}px`,
-					marginTop: T
+					marginTop: A
 				}, B = k && n.a.createElement("div", {
 					className: Object(c.a)(h.a.sidebar, j ? h.a["m-collectionLayout"] : h.a.defaultLayout),
-					style: A
+					style: T
 				}, k), D = n.a.createElement(o.a, {
 					hideOnlyChildMargin: w,
 					className: y,
@@ -1359,9 +1359,9 @@
 				_ = r("./node_modules/lodash/merge.js"),
 				S = r.n(_),
 				L = r("./node_modules/lodash/omit.js"),
-				T = r.n(L);
-			const A = {};
-			var B = (e = A, t) => {
+				A = r.n(L);
+			const T = {};
+			var B = (e = T, t) => {
 				switch (t.type) {
 					case I.g:
 					case I.k: {
@@ -1379,7 +1379,7 @@
 						const {
 							subredditId: r,
 							userName: s
-						} = t.payload, n = T()(e[r], s);
+						} = t.payload, n = A()(e[r], s);
 						return {
 							...e,
 							[r]: n
@@ -1953,7 +1953,7 @@
 						return e
 				}
 			};
-			var Te = (e = null, t) => {
+			var Ae = (e = null, t) => {
 				switch (t.type) {
 					case n.L:
 					case n.K:
@@ -1964,7 +1964,7 @@
 						return e
 				}
 			};
-			var Ae = (e = !1, t) => {
+			var Te = (e = !1, t) => {
 					switch (t.type) {
 						case n.L:
 							return !0;
@@ -1976,8 +1976,8 @@
 					}
 				},
 				Be = Object(s.c)({
-					error: Te,
-					pending: Ae
+					error: Ae,
+					pending: Te
 				}),
 				De = r("./node_modules/lodash/isEqual.js"),
 				Pe = r.n(De);
@@ -2165,7 +2165,7 @@
 							const {
 								ids: r
 							} = t.payload;
-							return T()(e, r)
+							return A()(e, r)
 						}
 						case Ye.c: {
 							const {
@@ -2462,7 +2462,7 @@
 					pending: _t
 				});
 			const Lt = {};
-			var Tt = (e = Lt, t) => {
+			var At = (e = Lt, t) => {
 				switch (t.type) {
 					case Ye.m: {
 						const {
@@ -2484,8 +2484,8 @@
 						return e
 				}
 			};
-			const At = {};
-			var Bt = (e = At, t) => {
+			const Tt = {};
+			var Bt = (e = Tt, t) => {
 					switch (t.type) {
 						case Ye.m: {
 							const {
@@ -2505,7 +2505,7 @@
 				},
 				Dt = Object(s.c)({
 					api: St,
-					itemOrder: Tt,
+					itemOrder: At,
 					loadMore: Bt
 				});
 			var Pt = (e = null, t) => {
@@ -2922,14 +2922,14 @@
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = e => Object(n.c)(e, {
-					experimentName: s.Td,
+					experimentName: s.Vd,
 					experimentEligibilitySelector: n.a
-				}) === s.de.Enabled,
+				}) === s.fe.Enabled,
 				o = e => Object(n.c)(e, {
-					experimentName: s.Ud,
+					experimentName: s.Wd,
 					experimentEligibilitySelector: n.a,
 					expEventOverride: !1
-				}) === s.ee.Enabled
+				}) === s.ge.Enabled
 		},
 		"./src/reddit/selectors/gold/powerups/modSignup.ts": function(e, t, r) {
 			"use strict";
@@ -2966,4 +2966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.b8b880441a47df64b67a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.9f31fcdf047e0106423c.js.map
