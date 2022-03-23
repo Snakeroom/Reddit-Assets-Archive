@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.d7bf77be8daea096ef16.js
-// Retrieved at 3/14/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.7b6ad749104d8288da4e.js
+// Retrieved at 3/23/2022, 11:30:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Chat~Governance~Reddit"], {
 		"./node_modules/@loadable/component/dist/loadable.esm.js": function(e, t, n) {
@@ -510,19 +510,19 @@
 		"./node_modules/@reddit/reddit-country-url-redirects/dist/esm/index.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return z
+				return $
 			})), n.d(t, "b", (function() {
-				return I
+				return M
 			})), n.d(t, "c", (function() {
-				return C
+				return N
 			})), n.d(t, "d", (function() {
-				return g
+				return x
 			})), n.d(t, "e", (function() {
-				return D
+				return q
 			})), n.d(t, "f", (function() {
-				return U
+				return H
 			})), n.d(t, "g", (function() {
-				return A
+				return P
 			}));
 			var r = {
 					"*": "en"
@@ -531,22 +531,42 @@
 					"*": "de"
 				},
 				i = {
-					en: r,
-					de: o
+					"*": "es"
 				},
-				s = Object.freeze({
+				s = {
+					"*": "fr"
+				},
+				a = {
+					"*": "it"
+				},
+				u = {
+					"*": "pt"
+				},
+				c = {
+					en: r,
+					de: o,
+					es: i,
+					fr: s,
+					it: a,
+					pt: u
+				},
+				l = Object.freeze({
 					__proto__: null,
 					en: r,
 					de: o,
-					default: i
+					es: i,
+					fr: s,
+					it: a,
+					pt: u,
+					default: c
 				}),
-				a = {
+				d = {
 					"*": {
 						popular: "popular",
 						all: "all"
 					}
 				},
-				u = {
+				f = {
 					"*": {
 						popular: "beliebt",
 						all: "alle"
@@ -556,13 +576,13 @@
 						all: "alle"
 					}
 				},
-				c = {
+				h = {
 					"*": {
 						popular: "popular",
 						all: "todo"
 					}
 				},
-				l = {
+				p = {
 					"*": {
 						popular: "populaire",
 						all: "toute"
@@ -572,45 +592,45 @@
 						all: "toute"
 					}
 				},
-				d = {
+				m = {
 					"*": {
 						popular: "popolare",
 						all: "tutti"
 					}
 				},
-				f = {
+				b = {
 					"*": {
 						popular: "popular",
 						all: "todo"
 					}
 				},
-				h = {
-					en: a,
-					de: u,
-					es: c,
-					fr: l,
-					it: d,
-					pt: f
+				_ = {
+					en: d,
+					de: f,
+					es: h,
+					fr: p,
+					it: m,
+					pt: b
 				},
-				p = Object.freeze({
+				y = Object.freeze({
 					__proto__: null,
-					en: a,
-					de: u,
-					es: c,
-					fr: l,
-					it: d,
-					pt: f,
-					default: h
+					en: d,
+					de: f,
+					es: h,
+					fr: p,
+					it: m,
+					pt: b,
+					default: _
 				});
-			var m, b;
+			var v, g;
 			! function(e) {
 				e.Home = "", e.All = "all", e.Popular = "popular", e.Search = "search", e.SubredditCreation = "subredditCreation", e.SubredditLeaderboard = "subredditLeaderboard"
-			}(m || (m = {})),
+			}(v || (v = {})),
 			function(e) {
 				e[e.OK = 200] = "OK", e[e.PermanentRedirect = 301] = "PermanentRedirect", e[e.TemporaryRedirect = 307] = "TemporaryRedirect", e[e.NotFound = 404] = "NotFound", e[e.PageGone = 410] = "PageGone"
-			}(b || (b = {}));
-			const _ = ["juan_test", "juan_test2", "whatssnoo", "redditedp", "grahamisms", "snootography", "reddit_product"];
-			var y = {
+			}(g || (g = {}));
+			const w = ["juan_test", "juan_test2", "whatssnoo", "redditedp", "grahamisms", "snootography", "reddit_product"];
+			var j = {
 				en: {
 					en: "English",
 					de: "German",
@@ -660,92 +680,92 @@
 					it: "Italiano"
 				}
 			};
-			const v = p,
-				g = (e, t) => {
+			const E = y,
+				x = (e, t) => {
 					var n;
-					const r = y;
+					const r = j;
 					return (null === (n = null == r ? void 0 : r[t]) || void 0 === n ? void 0 : n[e]) || ""
 				};
-			var w = {
+			var S = {
 					"*": "en"
 				},
-				j = {
+				k = {
 					"*": "de",
 					ch: "de"
 				},
-				E = {
+				T = {
 					"*": "es"
 				},
-				x = {
+				O = {
 					"*": "fr",
 					ca: "fr"
 				},
-				S = {
+				I = {
 					"*": "it"
 				},
-				k = {
+				A = {
 					"*": "pt"
 				},
-				T = {
-					en: w,
-					de: j,
-					es: E,
-					fr: x,
-					it: S,
-					pt: k
+				C = {
+					en: S,
+					de: k,
+					es: T,
+					fr: O,
+					it: I,
+					pt: A
 				},
-				O = Object.freeze({
+				R = Object.freeze({
 					__proto__: null,
-					en: w,
-					de: j,
-					es: E,
-					fr: x,
-					it: S,
-					pt: k,
-					default: T
+					en: S,
+					de: k,
+					es: T,
+					fr: O,
+					it: I,
+					pt: A,
+					default: C
 				});
-			const I = s,
-				A = O,
-				C = e => {
+			const M = l,
+				P = R,
+				N = e => {
 					const t = [];
-					for (let n in e ? O : s) "en" != n && "default" != n && t.push(n);
+					for (let n in e ? R : l) "en" != n && "default" != n && t.push(n);
 					return t
 				},
-				R = e => "" === e || "en" === e || "*" === e,
-				M = (e, t, n) => {
+				B = e => "" === e || "en" === e || "*" === e,
+				L = (e, t, n) => {
 					return !!n && (!(!e || t) || t in n && ("" === e || "*" === e || 2 == e.length && e in n[t]))
 				},
-				P = (e, t) => {
+				D = (e, t) => {
 					return !!t && (!!("" === e || "en" === e) || 2 == e.length && e in t)
 				},
-				N = e => _.includes(e) || _.includes(e.toLowerCase()),
-				B = e => (e.userIsAdmin = !!e.userIsAdmin, e.countrySitesAdminOnly = !!e.countrySitesAdminOnly, !e.enabledCountries && e.userIsAdmin ? e.enabledCountries = A : e.enabledCountries || (e.enabledCountries = I), e),
-				L = (e, t, n, r) => {
+				U = e => w.includes(e) || w.includes(e.toLowerCase()),
+				F = e => (e.userIsAdmin = !!e.userIsAdmin, e.countrySitesAdminOnly = !!e.countrySitesAdminOnly, !e.enabledCountries && e.userIsAdmin ? e.enabledCountries = P : e.enabledCountries || (e.enabledCountries = M), e),
+				z = (e, t, n, r) => {
 					if (!e) return !1;
 					r = r || "*";
-					const o = R(n = n || "*"),
-						i = n in v,
-						s = i && r in v[n],
+					const o = B(n = n || "*"),
+						i = n in E,
+						s = i && r in E[n],
 						a = e.toLowerCase() === t;
-					return !(!o || !a) || !(!s || !i) && e.toLowerCase() === v[n][r][t]
+					return !(!o || !a) || !(!s || !i) && e.toLowerCase() === E[n][r][t]
 				},
-				D = (e, t, n) => L(e, m.All, t, n),
-				U = (e, t, n) => L(e, m.Popular, t, n);
-			var F;
+				q = (e, t, n) => z(e, v.All, t, n),
+				H = (e, t, n) => z(e, v.Popular, t, n);
+			var V;
 			! function(e) {
 				e.hot = "hot", e.new = "new", e.top = "top", e.controversial = "controversial", e.rising = "rising", e.best = "best"
-			}(F || (F = {}));
-			const z = (e, t) => {
-					const n = (t = B(t)).countrySitesAdminOnly && t.userIsAdmin;
+			}(V || (V = {}));
+			const $ = (e, t) => {
+					const n = (t = F(t)).countrySitesAdminOnly && t.userIsAdmin;
 					if (!t.countrySitesEnabled) return e.hardcodedPath;
 					if (!e.permalink && !t.userIsAdmin) return e.hardcodedPath;
 					let r = e.hardcodedPath;
-					if (e.permalink && (r = e.permalink), !M(e.countryCode, e.languageCode, t.enabledCountries)) return r;
-					if (!P(e.languageCode, t.enabledCountries)) return r;
-					const o = e.subredditName && N(e.subredditName);
-					return n && !o ? r : t.userIsAdmin ? q(r, e.countryCode, e.languageCode) : r
+					if (e.permalink && (r = e.permalink), !L(e.countryCode, e.languageCode, t.enabledCountries)) return r;
+					if (!D(e.languageCode, t.enabledCountries)) return r;
+					const o = e.subredditName && U(e.subredditName);
+					return n && !o ? r : t.userIsAdmin ? W(r, e.countryCode, e.languageCode) : r
 				},
-				q = (e, t, n) => {
+				W = (e, t, n) => {
 					const r = `/${t}/${n}`,
 						o = `/${t}`,
 						i = e.startsWith(o),
@@ -35176,4 +35196,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.d7bf77be8daea096ef16.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Chat~Governance~Reddit.7b6ad749104d8288da4e.js.map
