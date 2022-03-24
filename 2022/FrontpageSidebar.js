@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.9a59ca0fa474454b43c0.js
-// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.b396b61397cabcc73ce0.js
+// Retrieved at 3/24/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -201,7 +201,7 @@
 				}) : v.fbt._("See more", null, {
 					hk: "439kAh"
 				})))));
-			class I extends d.a.Component {
+			class L extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						openedSection: 0,
@@ -255,7 +255,7 @@
 					}, t.map(this.renderSection))
 				}
 			}
-			var L = I,
+			var I = L,
 				A = n("./src/reddit/components/SidebarAd/ListingPageSidebarAd.tsx"),
 				D = n("./src/reddit/components/SidebarContainer/index.tsx"),
 				R = n("./src/reddit/components/SidebarStickyBottom/index.tsx"),
@@ -289,13 +289,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = ae.cachedData || Object(H.D)(q.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = ae.cachedData || Object(H.C)(q.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > se) {
 						const t = await Y(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(H.Ib)(q.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(H.Gb)(q.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ae.cachedData = e, e ? e.subreddits : []
 				}
@@ -623,7 +623,7 @@
 					}, t))
 				},
 				Pe = e => `/t/${e}?activeTab=communities`,
-				Ie = e => {
+				Le = e => {
 					const t = e.topic.getName();
 					return d.a.createElement("div", {
 						className: Fe.a.itemContainer
@@ -632,7 +632,7 @@
 						onClick: () => e.sendEvent(Object(je.c)(t))
 					}, t))
 				};
-			var Le = d.a.memo(e => {
+			var Ie = d.a.memo(e => {
 					const t = Object(Te.a)();
 					Object(o.useEffect)(() => t(Object(je.d)()), []);
 					const n = Ce.map(e => ({
@@ -646,7 +646,7 @@
 						widgetKind: e.widget && e.widget.kind
 					}, d.a.createElement(Be, null), d.a.createElement("div", {
 						className: Fe.a.container
-					}, n.map(e => d.a.createElement(Ie, {
+					}, n.map(e => d.a.createElement(Le, {
 						key: e.url,
 						topic: e,
 						sendEvent: t
@@ -780,9 +780,9 @@
 						position: ze.a.FIRST,
 						sizes: U.i,
 						placementIndex: e++
-					}), tt(this.props) && d.a.createElement(E, null), i && d.a.createElement(h.a, null, d.a.createElement(Le, null)), s && d.a.createElement(h.a, null, d.a.createElement(p.a, {
+					}), tt(this.props) && d.a.createElement(E, null), i && d.a.createElement(h.a, null, d.a.createElement(Ie, null)), s && d.a.createElement(h.a, null, d.a.createElement(p.a, {
 						listingName: a
-					})), et(this.props) && d.a.createElement(Se, null), n && u && d.a.createElement(h.a, null, d.a.createElement(L, {
+					})), et(this.props) && d.a.createElement(Se, null), n && u && d.a.createElement(h.a, null, d.a.createElement(I, {
 						links: n
 					})), d.a.createElement(R.a, {
 						adComponent: d.a.createElement(A.a, {
@@ -2196,4 +2196,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.9a59ca0fa474454b43c0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.b396b61397cabcc73ce0.js.map

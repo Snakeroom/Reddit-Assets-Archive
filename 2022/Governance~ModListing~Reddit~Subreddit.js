@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.074c362e3c2546be1286.js
-// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.bffe1e59467cb94bbb06.js
+// Retrieved at 3/24/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -1255,7 +1255,7 @@
 					}
 				}),
 				i = (e, t) => {
-					t && (Object(n.Eb)(e.postId), Object(n.Mb)(t)), e.impressionIdStr ? Object(n.Fb)(e.impressionIdStr) : e.impressionId && Object(n.Fb)(e.impressionId)
+					t && (Object(n.Cb)(e.postId), Object(n.Kb)(t)), e.impressionIdStr ? Object(n.Db)(e.impressionIdStr) : e.impressionId && Object(n.Db)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/screenview.ts": function(e, t, r) {
@@ -2166,4 +2166,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.074c362e3c2546be1286.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.bffe1e59467cb94bbb06.js.map

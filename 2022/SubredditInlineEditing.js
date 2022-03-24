@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.d85f13e8557028ef65f4.js
-// Retrieved at 2/16/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.1eec26882c74c50af85f.js
+// Retrieved at 3/24/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -81,10 +81,10 @@
 			}
 			var f = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.Cb)()
+					e(Object(c.i)()), Object(u.Ab)()
 				},
 				onViewTooltip: () => {
-					Object(u.Xb)()
+					Object(u.Vb)()
 				}
 			}))(Object(p.c)(g));
 			const y = "editable-primary-topic-idcard";
@@ -771,12 +771,12 @@
 				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = Object(r.c)({
 				activeTooltipId: B.a
-			}), G = Object(i.b)(K, e => ({
+			}), V = Object(i.b)(K, e => ({
 				onHideTooltip: () => e(Object(l.i)()),
 				onShowTooltip: t => e(Object(l.f)({
 					tooltipId: t
 				}))
-			})), V = "inline-editing-topics-tooltip-", W = {
+			})), G = "inline-editing-topics-tooltip-", W = {
 				top: R.a.alienblue,
 				bottom: R.a.alienblue
 			};
@@ -789,7 +789,7 @@
 					}
 				}
 				makeUniqueTooltipId() {
-					return `${V}${k()()}`
+					return `${G}${k()()}`
 				}
 				componentDidMount() {
 					this.setState({
@@ -819,9 +819,9 @@
 					}))))
 				}
 			}
-			var X = G(J),
-				q = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/index.m.less"),
-				Z = s.n(q);
+			var q = V(J),
+				X = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/index.m.less"),
+				Z = s.n(X);
 			const {
 				fbt: Q
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Y = 4, z = Object(r.c)({
@@ -938,7 +938,7 @@
 						hk: "3LXNw5"
 					})), Q._("Community topics", null, {
 						hk: "1wRqKt"
-					}), o.a.createElement(X, null))
+					}), o.a.createElement(q, null))
 				}
 				renderFocusGrabber() {
 					return o.a.createElement("span", {
@@ -1717,4 +1717,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.d85f13e8557028ef65f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.1eec26882c74c50af85f.js.map

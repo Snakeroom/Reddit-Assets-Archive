@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.bebf6140e4768819793a.js
-// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.f3744be60256dfeced71.js
+// Retrieved at 3/24/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -52,8 +52,8 @@
 			var s = t("./node_modules/fbt/lib/FbtPublic.js"),
 				a = t("./node_modules/react/index.js"),
 				o = t.n(a),
-				c = t("./node_modules/react-redux/es/index.js"),
-				i = t("./src/lib/classNames/index.ts"),
+				i = t("./node_modules/react-redux/es/index.js"),
+				c = t("./src/lib/classNames/index.ts"),
 				r = t("./src/reddit/controls/InternalLink/index.tsx"),
 				l = t("./src/reddit/icons/fonts/index.tsx"),
 				d = (t("./node_modules/core-js/modules/web.dom.iterable.js"), t("./node_modules/js-cookie/src/js.cookie.js")),
@@ -84,13 +84,13 @@
 					},
 					...Object(h.o)(a)
 				}),
-				j = e => n => ({
+				O = e => n => ({
 					source: "announcement",
 					action: e,
 					noun: "announcement",
 					...Object(h.o)(n)
 				});
-			var O = t("./src/reddit/hooks/useTracking.ts"),
+			var j = t("./src/reddit/hooks/useTracking.ts"),
 				C = t("./src/reddit/selectors/experiments/index.ts");
 			const E = e => {
 					const n = new Date;
@@ -158,7 +158,7 @@
 			n.default = ({
 				announcements: e
 			}) => {
-				const n = Object(c.e)(e => e.live.shouldShowAnnouncements),
+				const n = Object(i.e)(e => e.live.shouldShowAnnouncements),
 					[t, r] = Object(a.useState)([]),
 					[d, m] = Object(a.useState)(!n),
 					[u, v] = Object(a.useState)(!0),
@@ -169,15 +169,15 @@
 					isHidden: t,
 					setIsLoading: s,
 					setVisibleAnnouncements: o,
-					visibleAnnouncements: i
+					visibleAnnouncements: c
 				}) => {
-					const r = Object(c.e)(C.a);
+					const r = Object(i.e)(C.a);
 					Object(a.useEffect)(() => {
 						const a = Object(_.e)(),
-							c = e.filter(g(r, a)).slice(0, 5),
-							l = [...c].sort((e => (n, t) => (e[n.id] || 0) - (e[t.id] || 0))(a))[0],
-							d = c.length ? A.i.Yes : A.i.No;
-						E(d), t || b()(c.map(e => e.id), i.map(e => e.id)) || (o(c), n(c.indexOf(l)), s(!1))
+							i = e.filter(g(r, a)).slice(0, 5),
+							l = [...i].sort((e => (n, t) => (e[n.id] || 0) - (e[t.id] || 0))(a))[0],
+							d = i.length ? A.i.Yes : A.i.No;
+						E(d), t || b()(i.map(e => e.id), c.map(e => e.id)) || (o(i), n(i.indexOf(l)), s(!1))
 					}, [])
 				})({
 					announcements: e,
@@ -195,13 +195,13 @@
 					visibleAnnouncements: n,
 					setActiveIndex: t
 				}) => {
-					const s = Object(O.a)(),
-						[o, c] = Object(a.useState)(!0),
-						i = Object(a.useRef)(null);
+					const s = Object(j.a)(),
+						[o, i] = Object(a.useState)(!0),
+						c = Object(a.useRef)(null);
 					return {
 						onCarouselNavigate: Object(a.useCallback)(a => () => {
-							"next" === a && e + 1 >= n.length ? t(0) : t("prev" === a && e <= 0 ? n.length - 1 : e + ("next" === a ? 1 : -1)), s(j("next" === a ? "scroll_next" : "scroll_previous")), i.current && window.clearTimeout(i.current), c(!1), i.current = window.setTimeout(() => {
-								c(!0)
+							"next" === a && e + 1 >= n.length ? t(0) : t("prev" === a && e <= 0 ? n.length - 1 : e + ("next" === a ? 1 : -1)), s(O("next" === a ? "scroll_next" : "scroll_previous")), c.current && window.clearTimeout(c.current), i(!1), c.current = window.setTimeout(() => {
+								i(!0)
 							}, 200)
 						}, [e, s, t, n]),
 						isTransitionComplete: o
@@ -214,15 +214,15 @@
 					setIsHidden: e,
 					visibleAnnouncements: n
 				}) => {
-					const t = Object(O.a)();
+					const t = Object(j.a)();
 					return Object(a.useCallback)(() => {
 						e(!0), n.forEach(e => {
 							const {
 								id: n,
 								maxImpressionsCount: t
 							} = e;
-							Object(_.jb)(n, t)
-						}), t(j("dismiss_all")), E(A.i.No)
+							Object(_.ib)(n, t)
+						}), t(O("dismiss_all")), E(A.i.No)
 					}, [n, t, e])
 				})({
 					visibleAnnouncements: t,
@@ -232,7 +232,7 @@
 					setActiveIndex: n,
 					visibleAnnouncements: t
 				}) => {
-					const s = Object(O.a)();
+					const s = Object(j.a)();
 					return Object(a.useCallback)(() => {
 						e < 0 || e >= t.length ? n(0) : s(x("click", t[e]))
 					}, [e, s, n, t])
@@ -246,15 +246,15 @@
 					setActiveIndex: n,
 					visibleAnnouncements: t
 				}) => {
-					const s = Object(O.a)(),
-						o = Object(c.e)(C.a, (e, n) => Object.keys(e).length === Object.keys(n).length);
+					const s = Object(j.a)(),
+						o = Object(i.e)(C.a, (e, n) => Object.keys(e).length === Object.keys(n).length);
 					Object(a.useEffect)(() => {
 						if (e < 0 || e >= t.length) return void n(0);
 						const a = t[e],
-							c = Object(_.d)(a.id);
-						s(x("view", a)), Object(_.jb)(a.id, c + 1);
-						const i = Object(_.e)();
-						t.filter(g(o, i)).length || E(A.i.No)
+							i = Object(_.d)(a.id);
+						s(x("view", a)), Object(_.ib)(a.id, i + 1);
+						const c = Object(_.e)();
+						t.filter(g(o, c)).length || E(A.i.No)
 					}, [e, o, s, n, t])
 				})({
 					activeIndex: p,
@@ -286,7 +286,7 @@
 					className: w.a.LoadingIndicator
 				}) : t.map((e, n) => o.a.createElement(f, {
 					announcement: e,
-					className: Object(i.a)(w.a.Announcement, {
+					className: Object(c.a)(w.a.Announcement, {
 						[w.a.isActive]: n === p,
 						[w.a.prev]: t.length > 1 && 0 === p && n + 1 === t.length || n === p - 1,
 						[w.a.next]: t.length > 1 && p + 1 === t.length && 0 === n || n === p + 1,
@@ -307,7 +307,7 @@
 				}, t.map((e, n) => o.a.createElement("button", {
 					onClick: () => h(n),
 					key: `announcement-carousel-dot-${n}`,
-					className: Object(i.a)(w.a.Dot, {
+					className: Object(c.a)(w.a.Dot, {
 						[w.a.isSelected]: n === p
 					})
 				}))) : o.a.createElement("div", {
@@ -317,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.bebf6140e4768819793a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.f3744be60256dfeced71.js.map
