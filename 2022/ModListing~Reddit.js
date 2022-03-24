@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.9f31fcdf047e0106423c.js
-// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.26f2783913f11ddf01e8.js
+// Retrieved at 3/24/2022, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, r) {
@@ -2922,14 +2922,14 @@
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = e => Object(n.c)(e, {
-					experimentName: s.Vd,
-					experimentEligibilitySelector: n.a
-				}) === s.fe.Enabled,
-				o = e => Object(n.c)(e, {
 					experimentName: s.Wd,
+					experimentEligibilitySelector: n.a
+				}) === s.ge.Enabled,
+				o = e => Object(n.c)(e, {
+					experimentName: s.Xd,
 					experimentEligibilitySelector: n.a,
 					expEventOverride: !1
-				}) === s.ge.Enabled
+				}) === s.he.Enabled
 		},
 		"./src/reddit/selectors/gold/powerups/modSignup.ts": function(e, t, r) {
 			"use strict";
@@ -2966,4 +2966,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.9f31fcdf047e0106423c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.26f2783913f11ddf01e8.js.map

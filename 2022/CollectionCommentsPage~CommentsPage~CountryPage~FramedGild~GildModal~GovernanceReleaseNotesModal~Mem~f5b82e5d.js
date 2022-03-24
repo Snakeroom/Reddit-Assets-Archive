@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.4292640e98ea57609a32.js
-// Retrieved at 3/23/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.7fac56964d923feda3d6.js
+// Retrieved at 3/24/2022, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -2587,12 +2587,12 @@
 			const o = e => Object(a.c)(e, {
 					experimentName: i.nb,
 					experimentEligibilitySelector: n.e
-				}) === i.gd,
+				}) === i.hd,
 				r = e => Object(a.c)(e, {
-					experimentName: i.Ob,
+					experimentName: i.Pb,
 					experimentEligibilitySelector: a.a
-				}) === i.gd
+				}) === i.hd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.4292640e98ea57609a32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.7fac56964d923feda3d6.js.map

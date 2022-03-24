@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.027e6df5c3671c69499c.js
-// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.f54fc31a9d9522fb8502.js
+// Retrieved at 3/24/2022, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -1810,7 +1810,7 @@
 					}, [t]);
 					const {
 						contentTitle: n
-					} = e, r = Object(o.e)(y.b) === _.hc.Enabled ? k.d2x_nsfw_signup_blocking_de_v1 : k.d2x_nsfw_signup_blocking_non_us_v1;
+					} = e, r = Object(o.e)(y.b) === _.ic.Enabled ? k.d2x_nsfw_signup_blocking_de_v1 : k.d2x_nsfw_signup_blocking_non_us_v1;
 					return s.a.createElement("div", {
 						className: u.a.container
 					}, s.a.createElement(E, {
@@ -2224,11 +2224,11 @@
 					expEventOverride: t
 				})
 			}
-			const d = l(s.Lb, !0),
-				u = l(s.Lb, !1),
-				m = l(s.Mb, !0),
-				p = (l(s.Mb, !1), Object(r.a)(d, m, (e, t) => e === s.hc.Enabled || t === s.ic.Enabled))
+			const d = l(s.Mb, !0),
+				u = l(s.Mb, !1),
+				m = l(s.Nb, !0),
+				p = (l(s.Nb, !1), Object(r.a)(d, m, (e, t) => e === s.ic.Enabled || t === s.jc.Enabled))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.027e6df5c3671c69499c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.f54fc31a9d9522fb8502.js.map

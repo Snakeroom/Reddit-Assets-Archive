@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.b196edda782cc1a0dc36.js
-// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.255b833b50158b282648.js
+// Retrieved at 3/24/2022, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, s) {
@@ -46,9 +46,9 @@
 				g = s("./src/reddit/selectors/user.ts"),
 				O = s("./src/reddit/components/ContentTooltip/index.tsx"),
 				_ = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				P = s("./src/reddit/controls/Button/index.tsx"),
-				v = s("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
-				E = s("./src/reddit/icons/svgs/Hide/index.tsx"),
+				E = s("./src/reddit/controls/Button/index.tsx"),
+				P = s("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
+				v = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				j = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				N = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				I = s("./src/reddit/icons/fonts/Coin/index.tsx");
@@ -65,12 +65,12 @@
 				return null
 			};
 			var T = s("./src/reddit/components/AwardTooltip/index.m.less"),
-				k = s.n(T);
-			const L = Object(d.c)({
+				L = s.n(T);
+			const k = Object(d.c)({
 					canFlagAwards: e => Object(x.c)(e, {
 						experimentEligibilitySelector: x.a,
-						experimentName: w.Dc
-					}) === w.kd.Enabled,
+						experimentName: w.Ec
+					}) === w.ld.Enabled,
 					currentUser: g.k,
 					moderatorPermissions: (e, {
 						postOrComment: t
@@ -96,7 +96,7 @@
 						postOrCommentId: s.id
 					})
 				}),
-				A = Object(a.b)(L, (e, {
+				A = Object(a.b)(k, (e, {
 					award: t,
 					tooltipId: s
 				}) => ({
@@ -123,8 +123,8 @@
 						reportAward: i
 					} = this.props;
 					return t.awardType !== h.f.Global || s ? n.a.createElement("button", {
-						className: Object(c.a)(k.a.awardReport, {
-							[k.a.isReported]: e
+						className: Object(c.a)(L.a.awardReport, {
+							[L.a.isReported]: e
 						}),
 						onClick: () => {
 							s ? (a(), o()) : e || (i(), this.setState({
@@ -133,10 +133,10 @@
 						}
 					}, e ? r.fbt._("Reported", null, {
 						hk: "4C0VOl"
-					}) : null, e ? n.a.createElement(v.a, {
-						className: k.a.awardReportIcon
+					}) : null, e ? n.a.createElement(P.a, {
+						className: L.a.awardReportIcon
 					}) : n.a.createElement(N.a, {
-						className: k.a.awardReportIcon
+						className: L.a.awardReportIcon
 					})) : null
 				}
 				renderHideButton() {
@@ -145,12 +145,12 @@
 						onHideAward: t
 					} = this.props;
 					return n.a.createElement("button", {
-						className: k.a.awardHide,
+						className: L.a.awardHide,
 						onClick: () => {
 							t(), e()
 						}
-					}, n.a.createElement(E.a, {
-						className: k.a.awardHideIcon
+					}, n.a.createElement(v.a, {
+						className: L.a.awardHideIcon
 					}), r.fbt._("Hide", null, {
 						hk: "4kciEW"
 					}))
@@ -161,13 +161,13 @@
 						currentUser: t,
 						onClickPremium: s
 					} = this.props, o = e.awardSubType === h.d.Premium, a = !!t && t.isGold;
-					return o ? a ? null : n.a.createElement(P.k, {
-						className: k.a.premiumCta,
+					return o ? a ? null : n.a.createElement(E.k, {
+						className: L.a.premiumCta,
 						onClick: s
 					}, r.fbt._("Get Premium", null, {
 						hk: "Yapo5"
 					})) : n.a.createElement("a", {
-						className: k.a.howToLink,
+						className: L.a.howToLink,
 						href: "https://www.reddithelp.com/en/categories/reddit-101/reddit-basics/what-are-awards",
 						target: "_blank",
 						rel: "noopener noreferrer"
@@ -196,35 +196,35 @@
 						tooltipId: d,
 						defaultTooltipPosition: "top"
 					}, n.a.createElement("div", {
-						className: Object(c.a)(k.a.headerBar, {
-							[k.a.headerBarPremium]: p
+						className: Object(c.a)(L.a.headerBar, {
+							[L.a.headerBarPremium]: p
 						})
 					}, u && this.renderHideButton(), this.renderReporterButton()), n.a.createElement("div", {
-						className: k.a.awardDetails
+						className: L.a.awardDetails
 					}, n.a.createElement("div", {
-						className: k.a.awardIconContainer
+						className: L.a.awardIconContainer
 					}, n.a.createElement("div", {
-						className: k.a.awardIcon,
+						className: L.a.awardIcon,
 						style: {
 							backgroundImage: `url("${t}")`
 						}
 					})), n.a.createElement("div", {
-						className: k.a.awardName
+						className: L.a.awardName
 					}, r.fbt._("{award-name} Award", [r.fbt._param("award-name", e.name)], {
 						hk: "2QpjYF"
 					})), n.a.createElement("p", {
-						className: k.a.awardDescription
+						className: L.a.awardDescription
 					}, n.a.createElement(y, {
 						award: e
 					})), e.awardType === h.f.Community && i && n.a.createElement("div", {
-						className: k.a.subreddit
+						className: L.a.subreddit
 					}, n.a.createElement(_.b, {
-						className: k.a.subredditIcon,
+						className: L.a.subredditIcon,
 						subredditOrProfile: i
 					}), `r/${i.name}`), e.awardType === h.f.Moderator && n.a.createElement("div", {
-						className: k.a.subreddit
+						className: L.a.subreddit
 					}, n.a.createElement(j.a, {
-						className: Object(c.a)(k.a.subredditIcon, k.a.modShield)
+						className: Object(c.a)(L.a.subredditIcon, L.a.modShield)
 					}), r.fbt._("Exclusive mod-given Award", null, {
 						hk: "1VGGho"
 					})), this.renderCta()))
@@ -319,7 +319,7 @@
 				}),
 				O = Object(m.a)(f, [r.a.Click, r.a.Keydown]),
 				_ = Object(a.b)(g);
-			class P extends n.a.Component {
+			class E extends n.a.Component {
 				constructor(e) {
 					super(e), this.checkAndSetPosition = () => {
 						const {
@@ -397,7 +397,7 @@
 					}))
 				}
 			}
-			t.a = _(P)
+			t.a = _(E)
 		},
 		"./src/reddit/components/OverlayAwareTooltip/index.tsx": function(e, t, s) {
 			"use strict";
@@ -541,4 +541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.b196edda782cc1a0dc36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.255b833b50158b282648.js.map

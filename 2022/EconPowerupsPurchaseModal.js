@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.691b28e37024887f45e4.js
-// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.b824c2afab0a79c20df4.js
+// Retrieved at 3/24/2022, 7:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1214,8 +1214,8 @@
 						onClick: () => i(1)
 					})))
 				},
-				Y = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
-				J = r.n(Y);
+				J = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
+				Y = r.n(J);
 			const {
 				fbt: K
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1232,20 +1232,20 @@
 					return a.a.createElement("div", {
 						className: r
 					}, a.a.createElement("div", {
-						className: J.a.titleRow
+						className: Y.a.titleRow
 					}, a.a.createElement("span", null, K._("Powerups", null, {
 						hk: "DrcXp"
 					})), a.a.createElement("span", null, n < o ? `${n}/${o}` : n)), a.a.createElement("div", {
-						className: J.a.barRow
+						className: Y.a.barRow
 					}, a.a.createElement("div", {
-						className: J.a.track
+						className: Y.a.track
 					}), a.a.createElement("div", {
-						className: J.a.progress,
+						className: Y.a.progress,
 						style: {
 							width: `${100*s}%`
 						}
 					}), t && a.a.createElement("div", {
-						className: J.a.additionalProgress,
+						className: Y.a.additionalProgress,
 						style: {
 							width: `${100*(c-s)}%`,
 							left: `${100*s}%`
@@ -3309,7 +3309,7 @@
 				p = r("./node_modules/react-redux/es/index.js"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				b = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(b.a)(f.Ic);
+			const h = Object(b.a)(f.Jc);
 			let g = null;
 
 			function y() {
@@ -3727,4 +3727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.691b28e37024887f45e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.b824c2afab0a79c20df4.js.map
