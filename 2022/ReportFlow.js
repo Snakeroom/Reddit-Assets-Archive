@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.15aae64c4ca268c62e33.js
-// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.6998dc3ca0645ecda83e.js
+// Retrieved at 3/24/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -3298,20 +3298,21 @@
 		"./src/reddit/helpers/matchRedditUrls/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return l
-			})), n.d(t, "b", (function() {
 				return d
+			})), n.d(t, "b", (function() {
+				return c
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s = n("./src/reddit/helpers/parseUrl.ts");
-			const o = ["old", "new", "en", "www", "np", "m"],
-				r = ["reddit.com", "reddit.local"].concat("").concat(o.map((function(e) {
+			var s = n("./src/lib/env/index.ts"),
+				o = n("./src/reddit/helpers/parseUrl.ts");
+			const r = ["old", "new", "en", "www", "np", "m"],
+				a = ["reddit.com", "reddit.local", ..."undefined" != typeof window && Object(s.a)() ? [window.location.host] : []].concat("").concat(r.map((function(e) {
 					return e + ".reddit.com"
-				}))).concat(o.map((function(e) {
+				}))).concat(r.map((function(e) {
 					return e + ".reddit.local"
 				}))),
-				a = ["mod.reddit.com"],
-				i = {
+				i = ["mod.reddit.com"],
+				l = {
 					subreddit: {
 						pathnameComponents: ["subredditName"],
 						pathname: /^\/r\/(\w+)\/?$/
@@ -3321,7 +3322,7 @@
 						pathname: /^\/(?:user|u)\/(\w+)\/?$/
 					},
 					postShortlink: {
-						hostnames: r.concat("redd.it"),
+						hostnames: a.concat("redd.it"),
 						pathnameComponents: ["postID36"],
 						pathname: /^\/([A-Za-z0-9]+)\/?$/
 					},
@@ -3334,40 +3335,40 @@
 						pathname: /^\/(?:(?:r|user|u)\/.+\)?\/)?comments\/(\w+)\/\w+\/(\w+)\/?$/
 					},
 					modmailConversation: {
-						hostnames: a,
+						hostnames: i,
 						pathnameComponents: ["modmailConversationId"],
 						pathname: /^\/mail\/[^/]+\/(\w+)\/?$/
 					},
 					modmailMessage: {
-						hostnames: a,
+						hostnames: i,
 						pathnameComponents: ["modmailConversationId", "modmailMessageId"],
 						pathname: /^\/mail\/[^/]+\/(\w+)\/(\w+)\/?$/
 					}
 				};
 
-			function l(e, t) {
-				const n = i[e];
-				if (!i) throw new Error("Could not find reddit URL spec: " + e);
-				const o = Object(s.a)(t);
-				if (!o) return void console.error("Could not parse url", t);
-				if (-1 === (n.hostnames || r).indexOf(o.hostname)) return;
-				const a = o.pathname.match(n.pathname);
-				if (a) {
+			function d(e, t) {
+				const n = l[e];
+				if (!l) throw new Error("Could not find reddit URL spec: " + e);
+				const s = Object(o.a)(t);
+				if (!s) return void console.error("Could not parse url", t);
+				if (-1 === (n.hostnames || a).indexOf(s.hostname)) return;
+				const r = s.pathname.match(n.pathname);
+				if (r) {
 					return {
 						url: t,
 						routeName: e,
 						components: n.pathnameComponents.reduce((function(e, t, n) {
-							return e[t] = a[n + 1], e
+							return e[t] = r[n + 1], e
 						}), {})
 					}
 				}
 			}
 
-			function d(e) {
-				return (e.match(new RegExp(s.b, "g")) || []).map((function(e) {
+			function c(e) {
+				return (e.match(new RegExp(o.b, "g")) || []).map((function(e) {
 					let t;
-					return Object.keys(i).some((function(n) {
-						return t = l(n, e)
+					return Object.keys(l).some((function(n) {
+						return t = d(n, e)
 					})), t
 				})).filter((function(e) {
 					return e
@@ -3933,4 +3934,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.15aae64c4ca268c62e33.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.6998dc3ca0645ecda83e.js.map

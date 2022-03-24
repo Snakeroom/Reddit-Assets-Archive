@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.ddba64c26b4209ca51ba.js
-// Retrieved at 3/24/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.f7de4a2aa5847894e57d.js
+// Retrieved at 3/24/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -4610,20 +4610,21 @@
 		"./src/reddit/helpers/matchRedditUrls/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return c
-			})), n.d(t, "b", (function() {
 				return d
+			})), n.d(t, "b", (function() {
+				return l
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var a = n("./src/reddit/helpers/parseUrl.ts");
-			const r = ["old", "new", "en", "www", "np", "m"],
-				s = ["reddit.com", "reddit.local"].concat("").concat(r.map((function(e) {
+			var a = n("./src/lib/env/index.ts"),
+				r = n("./src/reddit/helpers/parseUrl.ts");
+			const s = ["old", "new", "en", "www", "np", "m"],
+				o = ["reddit.com", "reddit.local", ..."undefined" != typeof window && Object(a.a)() ? [window.location.host] : []].concat("").concat(s.map((function(e) {
 					return e + ".reddit.com"
-				}))).concat(r.map((function(e) {
+				}))).concat(s.map((function(e) {
 					return e + ".reddit.local"
 				}))),
-				o = ["mod.reddit.com"],
-				i = {
+				i = ["mod.reddit.com"],
+				c = {
 					subreddit: {
 						pathnameComponents: ["subredditName"],
 						pathname: /^\/r\/(\w+)\/?$/
@@ -4633,7 +4634,7 @@
 						pathname: /^\/(?:user|u)\/(\w+)\/?$/
 					},
 					postShortlink: {
-						hostnames: s.concat("redd.it"),
+						hostnames: o.concat("redd.it"),
 						pathnameComponents: ["postID36"],
 						pathname: /^\/([A-Za-z0-9]+)\/?$/
 					},
@@ -4646,40 +4647,40 @@
 						pathname: /^\/(?:(?:r|user|u)\/.+\)?\/)?comments\/(\w+)\/\w+\/(\w+)\/?$/
 					},
 					modmailConversation: {
-						hostnames: o,
+						hostnames: i,
 						pathnameComponents: ["modmailConversationId"],
 						pathname: /^\/mail\/[^/]+\/(\w+)\/?$/
 					},
 					modmailMessage: {
-						hostnames: o,
+						hostnames: i,
 						pathnameComponents: ["modmailConversationId", "modmailMessageId"],
 						pathname: /^\/mail\/[^/]+\/(\w+)\/(\w+)\/?$/
 					}
 				};
 
-			function c(e, t) {
-				const n = i[e];
-				if (!i) throw new Error("Could not find reddit URL spec: " + e);
-				const r = Object(a.a)(t);
-				if (!r) return void console.error("Could not parse url", t);
-				if (-1 === (n.hostnames || s).indexOf(r.hostname)) return;
-				const o = r.pathname.match(n.pathname);
-				if (o) {
+			function d(e, t) {
+				const n = c[e];
+				if (!c) throw new Error("Could not find reddit URL spec: " + e);
+				const a = Object(r.a)(t);
+				if (!a) return void console.error("Could not parse url", t);
+				if (-1 === (n.hostnames || o).indexOf(a.hostname)) return;
+				const s = a.pathname.match(n.pathname);
+				if (s) {
 					return {
 						url: t,
 						routeName: e,
 						components: n.pathnameComponents.reduce((function(e, t, n) {
-							return e[t] = o[n + 1], e
+							return e[t] = s[n + 1], e
 						}), {})
 					}
 				}
 			}
 
-			function d(e) {
-				return (e.match(new RegExp(a.b, "g")) || []).map((function(e) {
+			function l(e) {
+				return (e.match(new RegExp(r.b, "g")) || []).map((function(e) {
 					let t;
-					return Object.keys(i).some((function(n) {
-						return t = c(n, e)
+					return Object.keys(c).some((function(n) {
+						return t = d(n, e)
 					})), t
 				})).filter((function(e) {
 					return e
@@ -5052,7 +5053,7 @@
 					if (!n) return !1;
 					let a = Object(c.r)(e),
 						s = Object(c.d)(e);
-					if ("undefined" != typeof window && !s && !a) {
+					if ("undefined" != typeof window && !s) {
 						const e = Object(i.a)("subreddit", window.location.href);
 						(s = null === (t = null == e ? void 0 : e.components) || void 0 === t ? void 0 : t.subredditName) && (a = r.Nb.SUBREDDIT)
 					}
@@ -5065,4 +5066,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.ddba64c26b4209ca51ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.f7de4a2aa5847894e57d.js.map

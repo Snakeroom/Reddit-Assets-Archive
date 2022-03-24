@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.70ad654bc363fcf18ad9.js
-// Retrieved at 3/24/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.70363aa7623e4c5857b4.js
+// Retrieved at 3/24/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, r) {},
@@ -7095,20 +7095,21 @@
 		"./src/reddit/helpers/matchRedditUrls/index.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return d
-			})), r.d(t, "b", (function() {
 				return i
+			})), r.d(t, "b", (function() {
+				return u
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
-			var s = r("./src/reddit/helpers/parseUrl.ts");
-			const n = ["old", "new", "en", "www", "np", "m"],
-				a = ["reddit.com", "reddit.local"].concat("").concat(n.map((function(e) {
+			var s = r("./src/lib/env/index.ts"),
+				n = r("./src/reddit/helpers/parseUrl.ts");
+			const a = ["old", "new", "en", "www", "np", "m"],
+				c = ["reddit.com", "reddit.local", ..."undefined" != typeof window && Object(s.a)() ? [window.location.host] : []].concat("").concat(a.map((function(e) {
 					return e + ".reddit.com"
-				}))).concat(n.map((function(e) {
+				}))).concat(a.map((function(e) {
 					return e + ".reddit.local"
 				}))),
-				c = ["mod.reddit.com"],
-				o = {
+				o = ["mod.reddit.com"],
+				d = {
 					subreddit: {
 						pathnameComponents: ["subredditName"],
 						pathname: /^\/r\/(\w+)\/?$/
@@ -7118,7 +7119,7 @@
 						pathname: /^\/(?:user|u)\/(\w+)\/?$/
 					},
 					postShortlink: {
-						hostnames: a.concat("redd.it"),
+						hostnames: c.concat("redd.it"),
 						pathnameComponents: ["postID36"],
 						pathname: /^\/([A-Za-z0-9]+)\/?$/
 					},
@@ -7131,40 +7132,40 @@
 						pathname: /^\/(?:(?:r|user|u)\/.+\)?\/)?comments\/(\w+)\/\w+\/(\w+)\/?$/
 					},
 					modmailConversation: {
-						hostnames: c,
+						hostnames: o,
 						pathnameComponents: ["modmailConversationId"],
 						pathname: /^\/mail\/[^/]+\/(\w+)\/?$/
 					},
 					modmailMessage: {
-						hostnames: c,
+						hostnames: o,
 						pathnameComponents: ["modmailConversationId", "modmailMessageId"],
 						pathname: /^\/mail\/[^/]+\/(\w+)\/(\w+)\/?$/
 					}
 				};
 
-			function d(e, t) {
-				const r = o[e];
-				if (!o) throw new Error("Could not find reddit URL spec: " + e);
-				const n = Object(s.a)(t);
-				if (!n) return void console.error("Could not parse url", t);
-				if (-1 === (r.hostnames || a).indexOf(n.hostname)) return;
-				const c = n.pathname.match(r.pathname);
-				if (c) {
+			function i(e, t) {
+				const r = d[e];
+				if (!d) throw new Error("Could not find reddit URL spec: " + e);
+				const s = Object(n.a)(t);
+				if (!s) return void console.error("Could not parse url", t);
+				if (-1 === (r.hostnames || c).indexOf(s.hostname)) return;
+				const a = s.pathname.match(r.pathname);
+				if (a) {
 					return {
 						url: t,
 						routeName: e,
 						components: r.pathnameComponents.reduce((function(e, t, r) {
-							return e[t] = c[r + 1], e
+							return e[t] = a[r + 1], e
 						}), {})
 					}
 				}
 			}
 
-			function i(e) {
-				return (e.match(new RegExp(s.b, "g")) || []).map((function(e) {
+			function u(e) {
+				return (e.match(new RegExp(n.b, "g")) || []).map((function(e) {
 					let t;
-					return Object.keys(o).some((function(r) {
-						return t = d(r, e)
+					return Object.keys(d).some((function(r) {
+						return t = i(r, e)
 					})), t
 				})).filter((function(e) {
 					return e
@@ -25512,7 +25513,7 @@
 					if (!r) return !1;
 					let s = Object(d.r)(e),
 						a = Object(d.d)(e);
-					if ("undefined" != typeof window && !a && !s) {
+					if ("undefined" != typeof window && !a) {
 						const e = Object(o.a)("subreddit", window.location.href);
 						(a = null === (t = null == e ? void 0 : e.components) || void 0 === t ? void 0 : t.subredditName) && (s = n.Nb.SUBREDDIT)
 					}
@@ -25773,4 +25774,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.70ad654bc363fcf18ad9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.70363aa7623e4c5857b4.js.map
