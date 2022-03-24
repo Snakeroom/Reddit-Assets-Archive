@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.4bcb64495bc7e3a69d5d.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.6066cc029debcc990f62.js
+// Retrieved at 3/24/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./src/reddit/actions/pages/profilePrivate/index.ts": function(e, t, i) {
@@ -834,15 +834,15 @@
 				})))), r.a.createElement("div", {
 					className: f.a.Column
 				}, r.a.createElement(w, {
-					href: "https://about.reddit.com"
+					href: "https://www.redditinc.com/"
 				}, C._("about", null, {
 					hk: "1sqJKs"
 				})), r.a.createElement(w, {
-					href: "https://about.reddit.com/careers/"
+					href: "https://www.redditinc.com/careers"
 				}, C._("careers", null, {
 					hk: "26ABvc"
 				})), r.a.createElement(w, {
-					href: "https://about.reddit.com/press/"
+					href: "https://www.redditinc.com/press"
 				}, C._("press", null, {
 					hk: "2Qmgdz"
 				})), r.a.createElement(w, {
@@ -2707,4 +2707,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.4bcb64495bc7e3a69d5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.6066cc029debcc990f62.js.map

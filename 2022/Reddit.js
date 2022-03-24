@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.7cd24545eaf0a745c246.js
-// Retrieved at 3/24/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.ccffd1a59ac9ba41ce07.js
+// Retrieved at 3/24/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2436,7 +2436,7 @@
 			var ae = e => m.a.createElement(se, {
 					className: e.className
 				}, m.a.createElement(re, {
-					href: "https://about.reddit.com"
+					href: "https://www.redditinc.com/"
 				}, o.fbt._("about", null, {
 					hk: "4n6gdA"
 				})), m.a.createElement(re, {
@@ -2448,7 +2448,7 @@
 				}, o.fbt._("blog", null, {
 					hk: "iEUEu"
 				})), m.a.createElement(re, {
-					href: "https://about.reddit.com/careers/"
+					href: "https://www.redditinc.com/careers"
 				}, o.fbt._("careers", null, {
 					hk: "1nRiZW"
 				})), m.a.createElement(re, {
@@ -2456,7 +2456,7 @@
 				}, o.fbt._("help", null, {
 					hk: "3CJ8k2"
 				})), m.a.createElement(re, {
-					href: "https://about.reddit.com/press/"
+					href: "https://www.redditinc.com/press"
 				}, o.fbt._("press", null, {
 					hk: "x8wb0"
 				})), m.a.createElement(re, {
@@ -18064,4 +18064,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "AuthorHovercard~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.7cd24545eaf0a745c246.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.ccffd1a59ac9ba41ce07.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e3e64a48e05d313105ae.js
-// Retrieved at 3/24/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3202b29a144e75d5d9e0.js
+// Retrieved at 3/24/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -8249,15 +8249,15 @@
 				})))), o.a.createElement("div", {
 					className: C.a.Column
 				}, o.a.createElement(y, {
-					href: "https://about.reddit.com"
+					href: "https://www.redditinc.com/"
 				}, v._("about", null, {
 					hk: "1sqJKs"
 				})), o.a.createElement(y, {
-					href: "https://about.reddit.com/careers/"
+					href: "https://www.redditinc.com/careers"
 				}, v._("careers", null, {
 					hk: "26ABvc"
 				})), o.a.createElement(y, {
-					href: "https://about.reddit.com/press/"
+					href: "https://www.redditinc.com/press"
 				}, v._("press", null, {
 					hk: "2Qmgdz"
 				})), o.a.createElement(y, {
@@ -11879,4 +11879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e3e64a48e05d313105ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.3202b29a144e75d5d9e0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.58adfde48aeb6eb70bac.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.b693fd410c8a95a206f7.js
+// Retrieved at 3/24/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, a, t) {
@@ -243,21 +243,21 @@
 				className: s.a.linkItem
 			}, r.a.createElement("a", {
 				className: s.a.link,
-				href: "https://about.reddit.com"
+				href: "https://www.redditinc.com/"
 			}, i._("about", null, {
 				hk: "3IO4c7"
 			}))), r.a.createElement("li", {
 				className: s.a.linkItem
 			}, r.a.createElement("a", {
 				className: s.a.link,
-				href: "https://about.reddit.com/careers/"
+				href: "https://www.redditinc.com/careers"
 			}, i._("careers", null, {
 				hk: "2GATRU"
 			}))), r.a.createElement("li", {
 				className: s.a.linkItem
 			}, r.a.createElement("a", {
 				className: s.a.link,
-				href: "https://about.reddit.com/press/"
+				href: "https://www.redditinc.com/press"
 			}, i._("press", null, {
 				hk: "iUiGg"
 			}))))), r.a.createElement("div", {
@@ -1658,4 +1658,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.58adfde48aeb6eb70bac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.b693fd410c8a95a206f7.js.map

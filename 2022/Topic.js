@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.c8f2e9a0f819cf205c34.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.b48322b1e00ba5bf3633.js
+// Retrieved at 3/24/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -744,15 +744,15 @@
 				})))), r.a.createElement("div", {
 					className: v.a.Column
 				}, r.a.createElement(T, {
-					href: "https://about.reddit.com"
+					href: "https://www.redditinc.com/"
 				}, _._("about", null, {
 					hk: "1sqJKs"
 				})), r.a.createElement(T, {
-					href: "https://about.reddit.com/careers/"
+					href: "https://www.redditinc.com/careers"
 				}, _._("careers", null, {
 					hk: "26ABvc"
 				})), r.a.createElement(T, {
-					href: "https://about.reddit.com/press/"
+					href: "https://www.redditinc.com/press"
 				}, _._("press", null, {
 					hk: "2Qmgdz"
 				})), r.a.createElement(T, {
@@ -2960,4 +2960,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.c8f2e9a0f819cf205c34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.b48322b1e00ba5bf3633.js.map

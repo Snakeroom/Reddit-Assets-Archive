@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.a04e31c5e82ff685498c.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.6a56d44e2e7fd1c6c6da.js
+// Retrieved at 3/24/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -99,21 +99,21 @@
 				className: r.a.linkItem
 			}, n.a.createElement("a", {
 				className: r.a.link,
-				href: "https://about.reddit.com"
+				href: "https://www.redditinc.com/"
 			}, o._("about", null, {
 				hk: "3IO4c7"
 			}))), n.a.createElement("li", {
 				className: r.a.linkItem
 			}, n.a.createElement("a", {
 				className: r.a.link,
-				href: "https://about.reddit.com/careers/"
+				href: "https://www.redditinc.com/careers"
 			}, o._("careers", null, {
 				hk: "2GATRU"
 			}))), n.a.createElement("li", {
 				className: r.a.linkItem
 			}, n.a.createElement("a", {
 				className: r.a.link,
-				href: "https://about.reddit.com/press/"
+				href: "https://www.redditinc.com/press"
 			}, o._("press", null, {
 				hk: "iUiGg"
 			}))))), n.a.createElement("div", {
@@ -736,4 +736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.a04e31c5e82ff685498c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.6a56d44e2e7fd1c6c6da.js.map

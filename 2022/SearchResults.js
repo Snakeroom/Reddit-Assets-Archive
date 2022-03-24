@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.f6be957de40f6289a0d7.js
-// Retrieved at 3/24/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.a098c3c6daf0d38a0e41.js
+// Retrieved at 3/24/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -6887,15 +6887,15 @@
 				})))), r.a.createElement("div", {
 					className: g.a.Column
 				}, r.a.createElement(y, {
-					href: "https://about.reddit.com"
+					href: "https://www.redditinc.com/"
 				}, O._("about", null, {
 					hk: "1sqJKs"
 				})), r.a.createElement(y, {
-					href: "https://about.reddit.com/careers/"
+					href: "https://www.redditinc.com/careers"
 				}, O._("careers", null, {
 					hk: "26ABvc"
 				})), r.a.createElement(y, {
-					href: "https://about.reddit.com/press/"
+					href: "https://www.redditinc.com/press"
 				}, O._("press", null, {
 					hk: "2Qmgdz"
 				})), r.a.createElement(y, {
@@ -9844,4 +9844,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f6be957de40f6289a0d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.a098c3c6daf0d38a0e41.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.621665f19d88c98b98e5.js
-// Retrieved at 3/24/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3d596180a34bdd28c5c9.js
+// Retrieved at 3/24/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -393,15 +393,15 @@
 				})))), a.a.createElement("div", {
 					className: k.a.Column
 				}, a.a.createElement(C, {
-					href: "https://about.reddit.com"
+					href: "https://www.redditinc.com/"
 				}, S._("about", null, {
 					hk: "1sqJKs"
 				})), a.a.createElement(C, {
-					href: "https://about.reddit.com/careers/"
+					href: "https://www.redditinc.com/careers"
 				}, S._("careers", null, {
 					hk: "26ABvc"
 				})), a.a.createElement(C, {
-					href: "https://about.reddit.com/press/"
+					href: "https://www.redditinc.com/press"
 				}, S._("press", null, {
 					hk: "2Qmgdz"
 				})), a.a.createElement(C, {
@@ -533,7 +533,7 @@
 						top: `calc(100vh - ${t?_:8}px)`
 					}
 				}, n)), "BackToTop", S.a),
-				j = ({
+				w = ({
 					children: e,
 					className: t,
 					isFakeOverlay: n,
@@ -544,7 +544,7 @@
 						[S.a.StickyStylesFakeOverlay]: !!n
 					})
 				}, e);
-			class w extends i.Component {
+			class j extends i.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
 						shouldAdSticky: this.windowHeight > N,
@@ -592,7 +592,7 @@
 					return o.a.createElement(T, {
 						className: a,
 						innerRef: this.setWrapperRef
-					}, o.a.createElement(j, {
+					}, o.a.createElement(w, {
 						isFakeOverlay: n,
 						isSticky: d
 					}, t, r, !s && o.a.createElement(h.a, null)), !this.props.hideBackToTop && o.a.createElement(O, {
@@ -601,7 +601,7 @@
 				}
 			}
 			const I = Object(f.u)();
-			t.a = I(w)
+			t.a = I(j)
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -662,7 +662,7 @@
 				className: Object(l.a)(S.a.LoadingNav, e.isLoading && S.a.loading)
 			}), i.a.createElement(T, null)), i.a.createElement(v, null, i.a.createElement(N, null), i.a.createElement(T, null)), i.a.createElement(v, null, i.a.createElement("div", {
 				className: Object(l.a)(S.a.LoadingNav, e.isLoading && S.a.loading)
-			}), i.a.createElement(T, null))))), j = Object(c.a)({
+			}), i.a.createElement(T, null))))), w = Object(c.a)({
 				getComponent: () => Object(m.a)(() => Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("StructuredStyles")]).then(n.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
 				ErrorComponent: () => i.a.createElement(O, {
 					gradientType: "posts",
@@ -672,16 +672,16 @@
 					gradientType: "posts",
 					isLoading: !0
 				})
-			}), w = Object(d.c)({
+			}), j = Object(d.c)({
 				isEditing: y.i,
 				isSubscriptionsPinned: f.b,
 				moderatorPermissions: h.m
 			});
-			t.a = Object(o.b)(w)(e => {
+			t.a = Object(o.b)(j)(e => {
 				const t = e.moderatorPermissions && a()(e.moderatorPermissions).some(e => e);
 				return e.moderatorPermissions && t && e.isEditing ? i.a.createElement("div", {
 					className: Object(l.a)(S.a.Container, e.isSubscriptionsPinned && S.a.isSubscriptionPinned)
-				}, e.children, i.a.createElement(j, {
+				}, e.children, i.a.createElement(w, {
 					subredditId: e.subredditId
 				})) : i.a.createElement(s.Fragment, null, e.children)
 			})
@@ -1293,10 +1293,10 @@
 					}, a))
 				};
 
-			function j(e, t) {
+			function w(e, t) {
 				return t || `${h.g}${Object(k.g)(e)}/`
 			}
-			const w = e => {
+			const j = e => {
 				return c.a.createElement("div", {
 					className: x.a.categoryPicker
 				}, e.categories && e.categories.map((t, n) => e.activeCategoryName === t.name ? null : c.a.createElement("span", {
@@ -1306,7 +1306,7 @@
 				}, c.a.createElement(f.a, {
 					className: e.hasTagline ? x.a.taglineChip : x.a.chip,
 					key: t.name,
-					to: j(t.name, t.path),
+					to: w(t.name, t.path),
 					wide: t.name === h.m
 				}, t.name ? t.name === h.m ? h.k : t.displayText || t.name : r.fbt._("Top", null, {
 					hk: "2rw7Gx"
@@ -1328,7 +1328,7 @@
 					b = t && m && t[m.id],
 					g = `${u.a.assetPath}/img/leaderboard/banner-background.png`,
 					y = b ? b.bannerBackgroundImage || g : void 0,
-					f = e.to || r && j(r, i.path),
+					f = e.to || r && w(r, i.path),
 					k = i && i.tagline,
 					E = i && i.gradients && Array.isArray(i.gradients) && 2 === i.gradients.length ? i.gradients[1] : void 0;
 				return c.a.createElement(p.a, {
@@ -1362,7 +1362,7 @@
 					linkColor: E,
 					onSendEventClick: e.onSendEventClick,
 					to: f
-				}), o && c.a.createElement(w, {
+				}), o && c.a.createElement(j, {
 					activeCategoryName: r,
 					categories: o,
 					hasTagline: !!k,
@@ -1430,7 +1430,7 @@
 				subredditId: u.n,
 				topPostVariant: p.d
 			}));
-			class j extends a.a.Component {
+			class w extends a.a.Component {
 				constructor() {
 					super(...arguments), this.contentRef = a.a.createRef(), this.state = {
 						isTruncated: !1
@@ -1509,7 +1509,7 @@
 					})))
 				}
 			}
-			t.a = T(O(Object(d.a)(Object(l.c)(j))))
+			t.a = T(O(Object(d.a)(Object(l.c)(w))))
 		},
 		"./src/reddit/constants/location.ts": function(e, t, n) {
 			"use strict";
@@ -2480,8 +2480,8 @@
 				N = n.n(v),
 				T = n("./node_modules/lodash/times.js"),
 				O = n.n(T),
-				j = n("./node_modules/lodash/upperFirst.js"),
-				w = n.n(j),
+				w = n("./node_modules/lodash/upperFirst.js"),
+				j = n.n(w),
 				I = n("./src/reddit/actions/pages/subredditLeaderboard.ts"),
 				L = n("./src/reddit/actions/subreddit/topSubreddits.ts"),
 				P = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItem.tsx"),
@@ -2567,7 +2567,7 @@
 						className: E.a.mainContentHeaderText
 					}, e ? d ? S.fbt._("Local Communities Near You", null, {
 						hk: "2PsgJz"
-					}) : S.fbt._("Today's Top Growing in {categoryName}", [S.fbt._param("categoryName", w()(s || e))], {
+					}) : S.fbt._("Today's Top Growing in {categoryName}", [S.fbt._param("categoryName", j()(s || e))], {
 						hk: "4pneAv"
 					}) : S.fbt._("Today's Top Growing Communities", null, {
 						hk: "6LoyD"
@@ -2899,4 +2899,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.621665f19d88c98b98e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3d596180a34bdd28c5c9.js.map

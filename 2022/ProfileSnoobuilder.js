@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.af1bf7631f03cb43d305.js
-// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.2939824198193d32e382.js
+// Retrieved at 3/24/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -3510,15 +3510,15 @@
 				})))), r.a.createElement("div", {
 					className: x.a.Column
 				}, r.a.createElement(v, {
-					href: "https://about.reddit.com"
+					href: "https://www.redditinc.com/"
 				}, y._("about", null, {
 					hk: "1sqJKs"
 				})), r.a.createElement(v, {
-					href: "https://about.reddit.com/careers/"
+					href: "https://www.redditinc.com/careers"
 				}, y._("careers", null, {
 					hk: "26ABvc"
 				})), r.a.createElement(v, {
-					href: "https://about.reddit.com/press/"
+					href: "https://www.redditinc.com/press"
 				}, y._("press", null, {
 					hk: "2Qmgdz"
 				})), r.a.createElement(v, {
@@ -5630,4 +5630,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.af1bf7631f03cb43d305.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.2939824198193d32e382.js.map

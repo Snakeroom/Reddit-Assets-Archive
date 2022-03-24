@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.d8e65e46482aa2b510db.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.c0adab4f0afc29fa345c.js
+// Retrieved at 3/24/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"], {
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, n) {
@@ -1285,15 +1285,15 @@
 				})))), s.a.createElement("div", {
 					className: g.a.Column
 				}, s.a.createElement(C, {
-					href: "https://about.reddit.com"
+					href: "https://www.redditinc.com/"
 				}, k._("about", null, {
 					hk: "1sqJKs"
 				})), s.a.createElement(C, {
-					href: "https://about.reddit.com/careers/"
+					href: "https://www.redditinc.com/careers"
 				}, k._("careers", null, {
 					hk: "26ABvc"
 				})), s.a.createElement(C, {
-					href: "https://about.reddit.com/press/"
+					href: "https://www.redditinc.com/press"
 				}, k._("press", null, {
 					hk: "2Qmgdz"
 				})), s.a.createElement(C, {
@@ -2260,4 +2260,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.d8e65e46482aa2b510db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit.c0adab4f0afc29fa345c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.771235d1238d6defc256.js
-// Retrieved at 3/24/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.bd66f3a001ab69e13469.js
+// Retrieved at 3/24/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -10590,15 +10590,15 @@
 				})))), r.a.createElement("div", {
 					className: x.a.Column
 				}, r.a.createElement(E, {
-					href: "https://about.reddit.com"
+					href: "https://www.redditinc.com/"
 				}, v._("about", null, {
 					hk: "1sqJKs"
 				})), r.a.createElement(E, {
-					href: "https://about.reddit.com/careers/"
+					href: "https://www.redditinc.com/careers"
 				}, v._("careers", null, {
 					hk: "26ABvc"
 				})), r.a.createElement(E, {
-					href: "https://about.reddit.com/press/"
+					href: "https://www.redditinc.com/press"
 				}, v._("press", null, {
 					hk: "2Qmgdz"
 				})), r.a.createElement(E, {
@@ -25692,4 +25692,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.771235d1238d6defc256.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.bd66f3a001ab69e13469.js.map
