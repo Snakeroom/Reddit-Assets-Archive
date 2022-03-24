@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.9efb793c4b0208df589b.js
-// Retrieved at 3/24/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.7cd24545eaf0a745c246.js
+// Retrieved at 3/24/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -5331,10 +5331,10 @@
 					k = Object(p.e)(yt.b),
 					M = Object(p.e)(yt.d),
 					w = Object(p.e)(at.k),
-					N = Object(p.e)(ur.r),
-					I = Object(p.e)(ur.q),
+					N = Object(p.e)(ur.q),
+					I = Object(p.e)(ur.p),
 					T = Object(p.e)(at.P),
-					R = Object(p.e)(ur.s),
+					R = Object(p.e)(ur.r),
 					L = Object(p.e)(at.cb),
 					D = Object(p.e)(yt.r),
 					F = Object(p.e)(e => Object(It.ab)(e, {
@@ -5347,7 +5347,7 @@
 						pageLayer: n
 					})),
 					B = Object(p.e)(e => Object(mr.a)(e, dr.d.dropdown)),
-					q = Object(p.e)(ur.y),
+					q = Object(p.e)(ur.x),
 					H = Object(p.e)(at.jb),
 					W = Object(Bo.a)(U),
 					V = Object(Bo.a)(s),
@@ -18064,4 +18064,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "AuthorHovercard~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9efb793c4b0208df589b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.7cd24545eaf0a745c246.js.map

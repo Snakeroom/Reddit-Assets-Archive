@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.7dca2c7488b901ac4177.js
-// Retrieved at 3/24/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.485be0cd479845abb212.js
+// Retrieved at 3/24/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -2864,12 +2864,8 @@
 				At = E.a.div("CommentContentWrapper", Et.a),
 				Bt = E.a.wrapped(Qe.b, "AuthorHovercard", Et.a),
 				Dt = Object(it.u)(),
-				Wt = (e, t) => {
-					var s;
-					return null !== (s = t.comment) && void 0 !== s ? s : Object(gt.b)(e, t)
-				},
-				Vt = Object(i.b)(() => Object(a.c)({
-					comment: Wt,
+				Wt = Object(i.b)(() => Object(a.c)({
+					comment: (e, t) => Object(gt.b)(e, t),
 					currentProfileModPermissions: it.h,
 					depth: (e, t) => Object(R.j)(e, t),
 					collapsed: Ot.b,
@@ -2883,7 +2879,7 @@
 					isPendingDeletion: R.C,
 					isPresenceConsumptionExpEnabled: ft.c,
 					moderatorPermissions: (e, t) => {
-						const s = Wt(e, t);
+						const s = Object(gt.b)(e, t);
 						return s ? Object(vt.m)(e, {
 							subredditId: s.subredditId
 						}) : null
@@ -2899,7 +2895,7 @@
 					isOnlineConsumptionLoadTest: ft.a,
 					isOnlineUserPref: U.U,
 					userIsBanned: (e, t) => {
-						const s = Wt(e, t);
+						const s = Object(gt.b)(e, t);
 						return !!s && Object(V.db)(e, {
 							subredditId: s.subredditId
 						})
@@ -2922,13 +2918,13 @@
 						o(r, t)(), e(n)
 					}
 				})),
-				Ut = Object(m.b)(e => ({
+				Vt = Object(m.b)(e => ({
 					renderingObjectInfo: e.comment,
 					pageLayer: e.pageLayer
 				})),
-				Ht = e => r.a.createElement("div", e, e.children),
-				zt = e => r.a.createElement(r.a.Fragment, null, e.children),
-				Gt = Dt(Vt(e => {
+				Ut = e => r.a.createElement("div", e, e.children),
+				Ht = e => r.a.createElement(r.a.Fragment, null, e.children),
+				zt = Dt(Wt(e => {
 					const {
 						childrenInfo: t,
 						clearHovered: s,
@@ -2981,7 +2977,7 @@
 						trackCommentClick: ie,
 						userIconSmall: ae,
 						userIsBanned: de
-					} = e, ce = m.isDeleted, le = !S && !ce && !!f && f.length > 0, me = Object(l.a)(d.c.edit, m.id), ue = Object(l.a)(d.c.replyToComment, m.id), pe = Object(T.a)(W), he = Object(Je.d)(m), be = Object($.c)(m), ge = m.authorIsContractor && re === ut.f.EmployeesOnly, xe = m.isLocked, fe = pe && V, Ce = !S && !ce && (M || I), ve = !!g && Object(pt.e)(g) === m.author, [ye, _e] = Object(o.useState)(null), [Oe, ke] = Object(o.useState)(null), Ee = Object(o.useRef)(null), je = Object(F.f)(m) || Object(F.g)(m), we = je ? Ht : ct.a, Ie = Object(F.f)(m) ? zt : Bt;
+					} = e, ce = m.isDeleted, le = !S && !ce && !!f && f.length > 0, me = Object(l.a)(d.c.edit, m.id), ue = Object(l.a)(d.c.replyToComment, m.id), pe = Object(T.a)(W), he = Object(Je.d)(m), be = Object($.c)(m), ge = m.authorIsContractor && re === ut.f.EmployeesOnly, xe = m.isLocked, fe = pe && V, Ce = !S && !ce && (M || I), ve = !!g && Object(pt.e)(g) === m.author, [ye, _e] = Object(o.useState)(null), [Oe, ke] = Object(o.useState)(null), Ee = Object(o.useRef)(null), je = Object(F.f)(m) || Object(F.g)(m), we = je ? Ut : ct.a, Ie = Object(F.f)(m) ? Ht : Bt;
 					Object(o.useEffect)(() => {
 						if (!S && !ce && (_ && _e(r.a.createElement(ze, null)), null !== E)) {
 							if (E.glowHexColor) {
@@ -3133,7 +3129,7 @@
 					}) : r.a.createElement(et.a, {
 						content: Te,
 						mediaMetadata: m.media && m.media.mediaMetadata,
-						rtJsonElementProps: Ut(e)
+						rtJsonElementProps: Vt(e)
 					}), r.a.createElement(bt.b, {
 						content: Te
 					})), V && pe && he && r.a.createElement(Ze.a, {
@@ -3196,7 +3192,7 @@
 						})
 					}))))
 				}));
-			t.a = e => r.a.createElement(nt.a.Consumer, null, t => r.a.createElement(Gt, Pt({}, e, {
+			t.a = e => r.a.createElement(nt.a.Consumer, null, t => r.a.createElement(zt, Pt({}, e, {
 				trackCommentClick: t
 			})))
 		},
@@ -11557,4 +11553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.7dca2c7488b901ac4177.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.485be0cd479845abb212.js.map

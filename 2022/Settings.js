@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.80deb5a9fc689602bf45.js
-// Retrieved at 3/23/2022, 4:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.e5e7d12233ea6989f684.js
+// Retrieved at 3/24/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -3509,13 +3509,12 @@
 				h = n("./src/reddit/selectors/commentSelector.ts"),
 				f = n("./src/reddit/selectors/subreddit.ts");
 			const g = (e, t) => {
-				var n;
-				const s = null !== (n = t.comment) && void 0 !== n ? n : Object(h.b)(e, t),
-					a = Object(f.H)(e, t);
+				const n = Object(h.b)(e, t),
+					s = Object(f.H)(e, t);
 				return {
-					comment: s,
-					isModerator: !(!a || !a.name) && !!e.moderatingSubreddits[a.name],
-					subredditOrProfile: a
+					comment: n,
+					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
+					subredditOrProfile: s
 				}
 			};
 			var v = Object(r.b)(() => Object(o.a)(g, b.j, (e, t) => ({
@@ -3549,13 +3548,12 @@
 				}
 			}));
 			const _ = (e, t) => {
-				var n;
-				const s = null !== (n = t.comment) && void 0 !== n ? n : Object(h.b)(e, t),
-					a = Object(f.H)(e, t);
+				const n = Object(h.b)(e, t),
+					s = Object(f.H)(e, t);
 				return {
-					comment: s,
-					isModerator: !(!a || !a.name) && !!e.moderatingSubreddits[a.name],
-					subredditOrProfile: a
+					comment: n,
+					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
+					subredditOrProfile: s
 				}
 			};
 			var x = Object(r.b)(() => Object(o.a)(_, e => e))(e => a.a.createElement(p, {
@@ -14061,4 +14059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.80deb5a9fc689602bf45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e5e7d12233ea6989f684.js.map

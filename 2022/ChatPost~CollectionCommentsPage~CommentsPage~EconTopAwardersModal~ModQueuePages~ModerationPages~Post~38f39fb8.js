@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.bc9f645f9ecfec962582.js
-// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.29063437d37bf558f0bc.js
+// Retrieved at 3/24/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -1689,13 +1689,12 @@
 				b = r("./src/reddit/selectors/commentSelector.ts"),
 				f = r("./src/reddit/selectors/subreddit.ts");
 			const v = (e, t) => {
-				var r;
-				const s = null !== (r = t.comment) && void 0 !== r ? r : Object(b.b)(e, t),
-					o = Object(f.H)(e, t);
+				const r = Object(b.b)(e, t),
+					s = Object(f.H)(e, t);
 				return {
-					comment: s,
-					isModerator: !(!o || !o.name) && !!e.moderatingSubreddits[o.name],
-					subredditOrProfile: o
+					comment: r,
+					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
+					subredditOrProfile: s
 				}
 			};
 			var w = Object(n.b)(() => Object(a.a)(v, h.j, (e, t) => ({
@@ -1729,13 +1728,12 @@
 				}
 			}));
 			const g = (e, t) => {
-				var r;
-				const s = null !== (r = t.comment) && void 0 !== r ? r : Object(b.b)(e, t),
-					o = Object(f.H)(e, t);
+				const r = Object(b.b)(e, t),
+					s = Object(f.H)(e, t);
 				return {
-					comment: s,
-					isModerator: !(!o || !o.name) && !!e.moderatingSubreddits[o.name],
-					subredditOrProfile: o
+					comment: r,
+					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
+					subredditOrProfile: s
 				}
 			};
 			var O = Object(n.b)(() => Object(a.a)(g, e => e))(e => o.a.createElement(p, {
@@ -3725,4 +3723,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.bc9f645f9ecfec962582.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.29063437d37bf558f0bc.js.map

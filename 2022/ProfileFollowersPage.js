@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.d76142da6271e8f13dbe.js
-// Retrieved at 3/23/2022, 4:50:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f8093548337d3869f870.js
+// Retrieved at 3/24/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -2112,13 +2112,12 @@
 				b = s("./src/reddit/selectors/commentSelector.ts"),
 				f = s("./src/reddit/selectors/subreddit.ts");
 			const v = (e, t) => {
-				var s;
-				const r = null !== (s = t.comment) && void 0 !== s ? s : Object(b.b)(e, t),
-					n = Object(f.H)(e, t);
+				const s = Object(b.b)(e, t),
+					r = Object(f.H)(e, t);
 				return {
-					comment: r,
-					isModerator: !(!n || !n.name) && !!e.moderatingSubreddits[n.name],
-					subredditOrProfile: n
+					comment: s,
+					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
+					subredditOrProfile: r
 				}
 			};
 			var x = Object(i.b)(() => Object(o.a)(v, h.j, (e, t) => ({
@@ -2152,13 +2151,12 @@
 				}
 			}));
 			const g = (e, t) => {
-				var s;
-				const r = null !== (s = t.comment) && void 0 !== s ? s : Object(b.b)(e, t),
-					n = Object(f.H)(e, t);
+				const s = Object(b.b)(e, t),
+					r = Object(f.H)(e, t);
 				return {
-					comment: r,
-					isModerator: !(!n || !n.name) && !!e.moderatingSubreddits[n.name],
-					subredditOrProfile: n
+					comment: s,
+					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
+					subredditOrProfile: r
 				}
 			};
 			var C = Object(i.b)(() => Object(o.a)(g, e => e))(e => n.a.createElement(p, {
@@ -6246,4 +6244,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.d76142da6271e8f13dbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.f8093548337d3869f870.js.map

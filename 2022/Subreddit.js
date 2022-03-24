@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.f00a8eeb7bf02c1ba04e.js
-// Retrieved at 3/24/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.baab3af67c4049bed7c7.js
+// Retrieved at 3/24/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -6796,13 +6796,12 @@
 				h = n("./src/reddit/selectors/commentSelector.ts"),
 				f = n("./src/reddit/selectors/subreddit.ts");
 			const x = (e, t) => {
-				var n;
-				const s = null !== (n = t.comment) && void 0 !== n ? n : Object(h.b)(e, t),
-					r = Object(f.H)(e, t);
+				const n = Object(h.b)(e, t),
+					s = Object(f.H)(e, t);
 				return {
-					comment: s,
-					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
-					subredditOrProfile: r
+					comment: n,
+					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
+					subredditOrProfile: s
 				}
 			};
 			var g = Object(o.b)(() => Object(i.a)(x, b.j, (e, t) => ({
@@ -6836,13 +6835,12 @@
 				}
 			}));
 			const v = (e, t) => {
-				var n;
-				const s = null !== (n = t.comment) && void 0 !== n ? n : Object(h.b)(e, t),
-					r = Object(f.H)(e, t);
+				const n = Object(h.b)(e, t),
+					s = Object(f.H)(e, t);
 				return {
-					comment: s,
-					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
-					subredditOrProfile: r
+					comment: n,
+					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
+					subredditOrProfile: s
 				}
 			};
 			var E = Object(o.b)(() => Object(i.a)(v, e => e))(e => r.a.createElement(p, {
@@ -17662,4 +17660,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.f00a8eeb7bf02c1ba04e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.baab3af67c4049bed7c7.js.map

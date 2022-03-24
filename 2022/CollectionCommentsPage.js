@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5e68b7bedbc8fb706045.js
-// Retrieved at 3/24/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e3e64a48e05d313105ae.js
+// Retrieved at 3/24/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/linkify-it/index.js": function(e, t, s) {
@@ -3115,12 +3115,8 @@
 				At = E.a.div("CommentContentWrapper", Et.a),
 				Bt = E.a.wrapped(Qe.b, "AuthorHovercard", Et.a),
 				Dt = Object(it.u)(),
-				Ut = (e, t) => {
-					var s;
-					return null !== (s = t.comment) && void 0 !== s ? s : Object(gt.b)(e, t)
-				},
-				Wt = Object(i.b)(() => Object(a.c)({
-					comment: Ut,
+				Ut = Object(i.b)(() => Object(a.c)({
+					comment: (e, t) => Object(gt.b)(e, t),
 					currentProfileModPermissions: it.h,
 					depth: (e, t) => Object(R.j)(e, t),
 					collapsed: _t.b,
@@ -3134,7 +3130,7 @@
 					isPendingDeletion: R.C,
 					isPresenceConsumptionExpEnabled: ft.c,
 					moderatorPermissions: (e, t) => {
-						const s = Ut(e, t);
+						const s = Object(gt.b)(e, t);
 						return s ? Object(vt.m)(e, {
 							subredditId: s.subredditId
 						}) : null
@@ -3150,7 +3146,7 @@
 					isOnlineConsumptionLoadTest: ft.a,
 					isOnlineUserPref: V.U,
 					userIsBanned: (e, t) => {
-						const s = Ut(e, t);
+						const s = Object(gt.b)(e, t);
 						return !!s && Object(W.db)(e, {
 							subredditId: s.subredditId
 						})
@@ -3173,13 +3169,13 @@
 						o(r, t)(), e(n)
 					}
 				})),
-				Vt = Object(m.b)(e => ({
+				Wt = Object(m.b)(e => ({
 					renderingObjectInfo: e.comment,
 					pageLayer: e.pageLayer
 				})),
-				Ht = e => r.a.createElement("div", e, e.children),
-				zt = e => r.a.createElement(r.a.Fragment, null, e.children),
-				Gt = Dt(Wt(e => {
+				Vt = e => r.a.createElement("div", e, e.children),
+				Ht = e => r.a.createElement(r.a.Fragment, null, e.children),
+				zt = Dt(Ut(e => {
 					const {
 						childrenInfo: t,
 						clearHovered: s,
@@ -3232,7 +3228,7 @@
 						trackCommentClick: ie,
 						userIconSmall: ae,
 						userIsBanned: de
-					} = e, ce = m.isDeleted, le = !S && !ce && !!f && f.length > 0, me = Object(l.a)(d.c.edit, m.id), ue = Object(l.a)(d.c.replyToComment, m.id), pe = Object(T.a)(U), he = Object(Je.d)(m), be = Object($.c)(m), ge = m.authorIsContractor && re === ut.f.EmployeesOnly, xe = m.isLocked, fe = pe && W, Ce = !S && !ce && (M || I), ve = !!g && Object(pt.e)(g) === m.author, [ye, Oe] = Object(o.useState)(null), [_e, ke] = Object(o.useState)(null), Ee = Object(o.useRef)(null), je = Object(F.f)(m) || Object(F.g)(m), we = je ? Ht : ct.a, Ie = Object(F.f)(m) ? zt : Bt;
+					} = e, ce = m.isDeleted, le = !S && !ce && !!f && f.length > 0, me = Object(l.a)(d.c.edit, m.id), ue = Object(l.a)(d.c.replyToComment, m.id), pe = Object(T.a)(U), he = Object(Je.d)(m), be = Object($.c)(m), ge = m.authorIsContractor && re === ut.f.EmployeesOnly, xe = m.isLocked, fe = pe && W, Ce = !S && !ce && (M || I), ve = !!g && Object(pt.e)(g) === m.author, [ye, Oe] = Object(o.useState)(null), [_e, ke] = Object(o.useState)(null), Ee = Object(o.useRef)(null), je = Object(F.f)(m) || Object(F.g)(m), we = je ? Vt : ct.a, Ie = Object(F.f)(m) ? Ht : Bt;
 					Object(o.useEffect)(() => {
 						if (!S && !ce && (O && Oe(r.a.createElement(ze, null)), null !== E)) {
 							if (E.glowHexColor) {
@@ -3384,7 +3380,7 @@
 					}) : r.a.createElement(et.a, {
 						content: Te,
 						mediaMetadata: m.media && m.media.mediaMetadata,
-						rtJsonElementProps: Vt(e)
+						rtJsonElementProps: Wt(e)
 					}), r.a.createElement(bt.b, {
 						content: Te
 					})), W && pe && he && r.a.createElement(Ze.a, {
@@ -3447,7 +3443,7 @@
 						})
 					}))))
 				}));
-			t.a = e => r.a.createElement(nt.a.Consumer, null, t => r.a.createElement(Gt, Pt({}, e, {
+			t.a = e => r.a.createElement(nt.a.Consumer, null, t => r.a.createElement(zt, Pt({}, e, {
 				trackCommentClick: t
 			})))
 		},
@@ -11883,4 +11879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5e68b7bedbc8fb706045.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.e3e64a48e05d313105ae.js.map
