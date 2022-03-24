@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.caaa98ab52cfaf0fcc5a.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.c6828ded2a1f31a8c2de.js
+// Retrieved at 3/24/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -2099,7 +2099,7 @@
 				g = e => o.a.createElement(c, e),
 				f = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://d4wggo22afv97.cloudfront.net", "https://www.dyson.com", "https://dyson.com", "https://www.bestbuy.com", "https://www.goarmy.com", "https://www.samsung.com", "https://www.cyberpunk.net", "https://www.mms.com"],
 				C = e => e.source && e.source.url && e.isSponsored && f.some(t => e.source.url.startsWith(t)),
-				v = e => !e.media || e.media.type === d.o.EMBED && !(d.b.has(e.media.provider) || C(e)),
+				v = e => !e.media || e.media.type === d.o.EMBED && !e.isSurveyAd && !(d.b.has(e.media.provider) || C(e)),
 				P = (e, t) => {
 					if (e.isBlank) return 0;
 					switch (t) {
@@ -2157,4 +2157,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.caaa98ab52cfaf0fcc5a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.c6828ded2a1f31a8c2de.js.map

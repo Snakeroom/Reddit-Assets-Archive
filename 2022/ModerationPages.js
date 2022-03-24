@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.84204e6892d4c9a19f84.js
-// Retrieved at 3/24/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.2b485b14f2f72ebf953b.js
+// Retrieved at 3/24/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -2959,7 +2959,7 @@
 					onVoteClick: p
 				}), a.a.createElement(y.a, {
 					className: $.a.flatlistSeparator
-				}), a.a.createElement(y.c, {
+				}), !ue.isSurveyAd && a.a.createElement(y.c, {
 					className: $.a.flatlist,
 					currentUser: i,
 					hasModFlairPerms: Ne,
@@ -7605,7 +7605,7 @@
 						className: ye.a.liveDiscussionIcon,
 						isMod: De,
 						postId: he.postId
-					})), a.a.createElement("div", {
+					})), !he.isSurveyAd && a.a.createElement("div", {
 						className: ye.a.flatList
 					}, a.a.createElement(w.a, {
 						className: ye.a.commentsLink,
@@ -23689,4 +23689,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.84204e6892d4c9a19f84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2b485b14f2f72ebf953b.js.map
