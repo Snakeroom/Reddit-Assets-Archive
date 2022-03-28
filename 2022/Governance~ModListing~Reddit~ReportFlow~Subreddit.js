@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.19d53b18ec45b42f196f.js
-// Retrieved at 3/28/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.669d4e186b22739279e1.js
+// Retrieved at 3/28/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -3569,7 +3569,7 @@
 					}) || Object(qe.b)(Ne.c.flair)(e, {
 						subredditId: t
 					}))(e, t),
-					G = ae.B in e.queryParams && e.queryParams[ae.B].toUpperCase() || "",
+					G = ae.C in e.queryParams && e.queryParams[ae.C].toUpperCase() || "",
 					F = G in u.hc && u.hc[G];
 				if (D || C && !k && !t) {
 					if (U(j, P) && r(W.i(P)), C) {
@@ -13192,7 +13192,7 @@
 				b = r("./src/reddit/selectors/user.ts");
 			const p = e => {
 					const t = Object(l.q)(e);
-					return Boolean((null == t ? void 0 : t[o.v]) && Object(n.a)(t[o.v]))
+					return Boolean((null == t ? void 0 : t[o.w]) && Object(n.a)(t[o.w]))
 				},
 				f = Object(s.a)(b.P, b.O, p, (e, t, r) => (e || t) && r),
 				m = e => {
@@ -13843,4 +13843,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.19d53b18ec45b42f196f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.669d4e186b22739279e1.js.map

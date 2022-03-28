@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.9d8ce2c2458aea080f58.js
-// Retrieved at 3/24/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.8012cdb47fb0ebe32a86.js
+// Retrieved at 3/28/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, r) {
@@ -27,11 +27,11 @@
 			})), r.d(t, "createRequested", (function() {
 				return Q
 			})), r.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
-				return B
-			})), r.d(t, "duplicateFailure", (function() {
 				return J
-			})), r.d(t, "duplicatePending", (function() {
+			})), r.d(t, "duplicateFailure", (function() {
 				return $
+			})), r.d(t, "duplicatePending", (function() {
+				return B
 			})), r.d(t, "duplicateSuccess", (function() {
 				return V
 			})), r.d(t, "duplicateRequested", (function() {
@@ -277,7 +277,7 @@
 							})
 						}))
 					} else s(W(m.error))
-				}, B = () => async (e, t, {
+				}, J = () => async (e, t, {
 					apiContext: r
 				}) => {
 					const i = t(),
@@ -297,7 +297,7 @@
 							queryParams: x
 						} = o,
 						O = Object(l.a)(h, u, x),
-						j = b.B in x && x[b.B].toUpperCase() || "",
+						j = b.C in x && x[b.C].toUpperCase() || "",
 						g = a.hc[j] || !1,
 						y = Object(q.k)(i);
 					(f || y && y.displayText) && await e(Object(m.multiredditFeedRequested)(O, (f || y.displayText).toLowerCase(), p.toLowerCase(), {
@@ -306,7 +306,7 @@
 						sort: u,
 						t: Object(I.a)(u, g)
 					}))
-				}, J = Object(c.a)(L.k), $ = Object(c.a)(L.l), V = Object(c.a)(L.m), X = ({
+				}, $ = Object(c.a)(L.k), B = Object(c.a)(L.l), V = Object(c.a)(L.m), X = ({
 					description: e,
 					displayName: t,
 					fromName: r,
@@ -318,7 +318,7 @@
 						m = Object(q.k)(l);
 					if (!m || !m.displayText) return;
 					const b = Object(N.h)((s || m.displayText).toLowerCase(), r.toLowerCase());
-					d($());
+					d(B());
 					const j = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(O.a)(`${e.apiUrl}/api/multi/copy`),
 						data: {
@@ -348,7 +348,7 @@
 							}),
 							buttonAction: Object(n.b)(e.url)
 						}))
-					} else d(J(j.error)), d(Object(p.f)({
+					} else d($(j.error)), d(Object(p.f)({
 						text: i.fbt._("Something went wrong duplicating {multiName}", [i.fbt._param("multiName", r)], {
 							hk: "4bzN2D"
 						})
@@ -396,7 +396,7 @@
 							id: d,
 							multipaths: n,
 							type: t.type
-						})), 1 === r.length && await s(B())
+						})), 1 === r.length && await s(J())
 					} else {
 						s(ee(g.error));
 						let e = i.fbt._("Sorry, something went wrong adding {subredditName}.", [i.fbt._param("subredditName", t.name)], {
@@ -449,7 +449,7 @@
 							},
 							multiredditNames: [t]
 						})
-					})), d(B())) : (d(se(g.error)), d(Object(p.f)({
+					})), d(J())) : (d(se(g.error)), d(Object(p.f)({
 						text: i.fbt._("Sorry, something went wrong removing {subredditName}.", [i.fbt._param("subredditName", r)], {
 							hk: "1E1rKm"
 						})
@@ -677,7 +677,7 @@
 						g = f.listings.postOrder.ids[O],
 						C = f.listings.postOrder.api.error[O],
 						F = f.listings.postOrder.api.pending[O],
-						N = b.B in e.queryParams && e.queryParams[b.B].toUpperCase() || "",
+						N = b.C in e.queryParams && e.queryParams[b.C].toUpperCase() || "",
 						E = N in l.hc && l.hc[N];
 					if (F || g && !C && !t) return void(g && (r(u.m({
 						title: Object(_.f)(i(), m)
@@ -1273,4 +1273,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.9d8ce2c2458aea080f58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.8012cdb47fb0ebe32a86.js.map

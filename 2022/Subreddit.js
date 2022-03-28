@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.102dd01b5e75f508fff7.js
-// Retrieved at 3/28/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.75348e6b5b04a5541395.js
+// Retrieved at 3/28/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -15746,7 +15746,7 @@
 				inAwardListingExperiment: Ce.a,
 				isPopular: le.F
 			}), gt = e => {
-				const t = ce.B in e && e[ce.B].toUpperCase();
+				const t = ce.C in e && e[ce.C].toUpperCase();
 				if ("string" == typeof t && t in g.hc) return g.hc[t]
 			}, vt = Object(j.a)((e, t) => {
 				const {
@@ -17683,4 +17683,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.102dd01b5e75f508fff7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.75348e6b5b04a5541395.js.map

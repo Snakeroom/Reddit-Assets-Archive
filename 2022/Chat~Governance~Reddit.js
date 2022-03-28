@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.77ed29dde1901f3dd9d9.js
-// Retrieved at 3/28/2022, 3:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d4aadcc993c8e7e193bc.js
+// Retrieved at 3/28/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("161205"),
+				buildNumber: Object(r.c)("161223"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1648494635"),
+				buildTimestamp: Object(r.b)("1648501491"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6036,14 +6036,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cc01787396db368f8cc80caf19b6e3e952e2d8768-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c01d3e073638ac40409b4d051e9e5eb9b4dffe57a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "c01787396db368f8cc80caf19b6e3e952e2d8768-production",
+						release: "01d3e073638ac40409b4d051e9e5eb9b4dffe57a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6560,7 +6560,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "c01787396db368f8cc80caf19b6e3e952e2d8768-production",
+						releaseClient: "01d3e073638ac40409b4d051e9e5eb9b4dffe57a-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -7121,7 +7121,7 @@
 							t: n,
 							type: o
 						};
-					return void 0 !== e.include_over_18 && (a.include_over_18 = u(l(e.include_over_18))), void 0 !== e.restrict_sr && (a.restrict_sr = u(l(e.restrict_sr))), void 0 !== e.sr_nsfw && (a.sr_nsfw = u(l(e.sr_nsfw))), e.is_multi && (a.is_multi = u(l(e.is_multi))), e.category && (a.category = e.category), e[s.c] && (a.category_name = e.category_name), e[s.y] && (a.source = e.source), a
+					return void 0 !== e.include_over_18 && (a.include_over_18 = u(l(e.include_over_18))), void 0 !== e.restrict_sr && (a.restrict_sr = u(l(e.restrict_sr))), void 0 !== e.sr_nsfw && (a.sr_nsfw = u(l(e.sr_nsfw))), e.is_multi && (a.is_multi = u(l(e.is_multi))), e.category && (a.category = e.category), e[s.c] && (a.category_name = e.category_name), e[s.z] && (a.source = e.source), a
 				},
 				_ = (e, t) => {
 					const i = e.f;
@@ -13985,7 +13985,7 @@
 					}, !1))
 				}, O = Object(n.a)(_.a), I = Object(n.a)(_.k), R = Object(n.a)(_.e), F = Object(n.a)(_.l), C = () => async (e, t) => {
 					const i = Object(c.q)(t());
-					!!i && "true" === i[d.w] && (e(F()), s(window.location.href, [d.w]))
+					!!i && "true" === i[d.x] && (e(F()), s(window.location.href, [d.x]))
 				}, N = () => async (e, t, {
 					gqlContext: i
 				}) => {
@@ -17341,7 +17341,7 @@
 				return c
 			})), i.d(t, "p", (function() {
 				return _
-			})), i.d(t, "v", (function() {
+			})), i.d(t, "w", (function() {
 				return m
 			})), i.d(t, "q", (function() {
 				return p
@@ -17353,42 +17353,44 @@
 				return b
 			})), i.d(t, "t", (function() {
 				return g
-			})), i.d(t, "z", (function() {
-				return w
-			})), i.d(t, "x", (function() {
-				return v
-			})), i.d(t, "B", (function() {
-				return y
 			})), i.d(t, "A", (function() {
-				return E
+				return w
+			})), i.d(t, "y", (function() {
+				return v
 			})), i.d(t, "C", (function() {
+				return y
+			})), i.d(t, "B", (function() {
+				return E
+			})), i.d(t, "D", (function() {
 				return S
 			})), i.d(t, "i", (function() {
 				return T
-			})), i.d(t, "D", (function() {
-				return O
 			})), i.d(t, "E", (function() {
-				return I
-			})), i.d(t, "y", (function() {
-				return R
+				return O
 			})), i.d(t, "F", (function() {
-				return F
+				return I
+			})), i.d(t, "z", (function() {
+				return R
 			})), i.d(t, "G", (function() {
-				return C
+				return F
 			})), i.d(t, "H", (function() {
+				return C
+			})), i.d(t, "I", (function() {
 				return N
-			})), i.d(t, "w", (function() {
+			})), i.d(t, "x", (function() {
 				return j
 			})), i.d(t, "h", (function() {
 				return A
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "v", (function() {
 				return x
-			})), i.d(t, "m", (function() {
+			})), i.d(t, "f", (function() {
 				return P
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "m", (function() {
 				return D
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "l", (function() {
 				return k
+			})), i.d(t, "u", (function() {
+				return L
 			}));
 			const n = "ampcid",
 				r = "category",
@@ -17420,10 +17422,11 @@
 				N = "show_source",
 				j = "signup_survey",
 				A = "force_seo",
-				x = "feature",
-				P = ["ad", "adHash", "clickUrl", y, x],
-				D = ["after", "before"],
-				k = ["ad", a, p, g, v, y, S, x, l, r, s, R, w]
+				x = "showAvatarQuickCreate",
+				P = "feature",
+				D = ["ad", "adHash", "clickUrl", y, P],
+				k = ["after", "before"],
+				L = ["ad", a, p, g, v, y, S, P, l, r, s, R, w]
 		},
 		"./src/reddit/constants/postCollection.ts": function(e, t, i) {
 			"use strict";
@@ -20978,7 +20981,7 @@
 						const t = e.platform.currentPage && e.platform.currentPage.url;
 						return t && o()([...Object(r.a)(t)]) || new Set([])
 					})(e),
-					b = d.x in f ? f[d.x] : "";
+					b = d.y in f ? f[d.y] : "";
 				return (n.lc.has(b) ? b : p) === b && (p = b), b && (h = !0), Object(a.d)(e, {
 					postId: t
 				}) && (p = n.u.CHAT, h = !1), {
@@ -47203,4 +47206,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.77ed29dde1901f3dd9d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.d4aadcc993c8e7e193bc.js.map

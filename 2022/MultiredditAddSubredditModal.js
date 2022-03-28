@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.b152c85c608e08dfd273.js
-// Retrieved at 3/24/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.86aff465451509844ab8.js
+// Retrieved at 3/28/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -36,9 +36,9 @@
 			})), r.d(t, "createRequested", (function() {
 				return K
 			})), r.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
-				return B
-			})), r.d(t, "duplicateFailure", (function() {
 				return Q
+			})), r.d(t, "duplicateFailure", (function() {
+				return B
 			})), r.d(t, "duplicatePending", (function() {
 				return X
 			})), r.d(t, "duplicateSuccess", (function() {
@@ -286,7 +286,7 @@
 							})
 						}))
 					} else s(z(m.error))
-				}, B = () => async (e, t, {
+				}, Q = () => async (e, t, {
 					apiContext: r
 				}) => {
 					const i = t(),
@@ -306,7 +306,7 @@
 							queryParams: x
 						} = o,
 						g = Object(l.a)(h, u, x),
-						O = p.B in x && x[p.B].toUpperCase() || "",
+						O = p.C in x && x[p.C].toUpperCase() || "",
 						j = a.hc[O] || !1,
 						y = Object(R.k)(i);
 					(f || y && y.displayText) && await e(Object(m.multiredditFeedRequested)(g, (f || y.displayText).toLowerCase(), b.toLowerCase(), {
@@ -315,7 +315,7 @@
 						sort: u,
 						t: Object(I.a)(u, j)
 					}))
-				}, Q = Object(c.a)(M.k), X = Object(c.a)(M.l), $ = Object(c.a)(M.m), V = ({
+				}, B = Object(c.a)(M.k), X = Object(c.a)(M.l), $ = Object(c.a)(M.m), V = ({
 					description: e,
 					displayName: t,
 					fromName: r,
@@ -357,7 +357,7 @@
 							}),
 							buttonAction: Object(n.b)(e.url)
 						}))
-					} else d(Q(O.error)), d(Object(b.f)({
+					} else d(B(O.error)), d(Object(b.f)({
 						text: i.fbt._("Something went wrong duplicating {multiName}", [i.fbt._param("multiName", r)], {
 							hk: "4bzN2D"
 						})
@@ -405,7 +405,7 @@
 							id: d,
 							multipaths: n,
 							type: t.type
-						})), 1 === r.length && await s(B())
+						})), 1 === r.length && await s(Q())
 					} else {
 						s(ee(j.error));
 						let e = i.fbt._("Sorry, something went wrong adding {subredditName}.", [i.fbt._param("subredditName", t.name)], {
@@ -458,7 +458,7 @@
 							},
 							multiredditNames: [t]
 						})
-					})), d(B())) : (d(se(j.error)), d(Object(b.f)({
+					})), d(Q())) : (d(se(j.error)), d(Object(b.f)({
 						text: i.fbt._("Sorry, something went wrong removing {subredditName}.", [i.fbt._param("subredditName", r)], {
 							hk: "1E1rKm"
 						})
@@ -686,7 +686,7 @@
 						j = f.listings.postOrder.ids[g],
 						_ = f.listings.postOrder.api.error[g],
 						S = f.listings.postOrder.api.pending[g],
-						v = p.B in e.queryParams && e.queryParams[p.B].toUpperCase() || "",
+						v = p.C in e.queryParams && e.queryParams[p.C].toUpperCase() || "",
 						w = v in l.hc && l.hc[v];
 					if (S || j && !_ && !t) return void(j && (r(u.m({
 						title: Object(C.f)(i(), m)
@@ -1443,4 +1443,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.b152c85c608e08dfd273.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.86aff465451509844ab8.js.map

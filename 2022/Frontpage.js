@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.cfe7e2b2b19b5be83df2.js
-// Retrieved at 3/28/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.1d5297c421052b5cd284.js
+// Retrieved at 3/28/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -893,7 +893,7 @@
 						m = c.listings.postOrder.api.error[d],
 						p = c.listings.postOrder.api.pending[d],
 						b = Object(ae.b)(c),
-						h = J.B in e.queryParams && e.queryParams[J.B].toUpperCase() || "",
+						h = J.C in e.queryParams && e.queryParams[J.C].toUpperCase() || "",
 						g = h in l.hc && l.hc[h],
 						f = V.e();
 					if (p || u && !m && !t) return void(u && (s(K.m({
@@ -949,7 +949,7 @@
 						d = n.platform.currentPage ? n.platform.currentPage.queryParams : {},
 						u = Object(le.a)(X.b, i, d),
 						m = n.listings.postOrder.loadMore[u],
-						p = d[J.B] ? d[J.B].toUpperCase() : "",
+						p = d[J.C] ? d[J.C].toUpperCase() : "",
 						b = p in l.hc && l.hc[p];
 					if (m) {
 						const e = n.listings.postOrder.api.pending[u],
@@ -1012,7 +1012,7 @@
 						} = e,
 						c = a.platform.currentPage ? a.platform.currentPage.queryParams : {},
 						o = Object(le.a)(X.b, r, c),
-						i = c[J.B] ? c[J.B].toUpperCase() : "",
+						i = c[J.C] ? c[J.C].toUpperCase() : "",
 						d = i in l.hc && l.hc[i],
 						u = Object(ee.a)(a),
 						m = Object(ee.b)(u);
@@ -6766,7 +6766,7 @@
 				queryParams: t,
 				sort: s
 			}, a, n, r, c, o) => {
-				const i = R.B in t && t[R.B].toUpperCase(),
+				const i = R.C in t && t[R.C].toUpperCase(),
 					l = "string" == typeof i && i in re.hc ? re.hc[i] : re.ic,
 					d = Object(h.a)(ie.b, s, t),
 					u = e,
@@ -7757,4 +7757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.cfe7e2b2b19b5be83df2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.1d5297c421052b5cd284.js.map

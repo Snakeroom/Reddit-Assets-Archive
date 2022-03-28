@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9a348c80d055de3a912a.js
-// Retrieved at 3/28/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ba6d4a7e155a172b0cef.js
+// Retrieved at 3/28/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -7555,7 +7555,7 @@
 					const t = Object(Ue.d)(e);
 					return Object(O.a)(t, {
 						[Ve.s]: this.props.related,
-						[Ve.A]: this.props.timestamp
+						[Ve.B]: this.props.timestamp
 					})
 				}
 				goToStream(e) {
@@ -7682,7 +7682,7 @@
 					} = e;
 				return "home" === s || "r/popular" === s ? s : "popular" === o ? "r/popular" : o ? void 0 : "home"
 			}), In = Object(i.a)(kn, e => {
-				const t = e.get(Ve.A);
+				const t = e.get(Ve.B);
 				if (!t) return;
 				const s = parseInt(t, 10);
 				return isNaN(s) ? void 0 : s
@@ -8062,4 +8062,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.9a348c80d055de3a912a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ba6d4a7e155a172b0cef.js.map
