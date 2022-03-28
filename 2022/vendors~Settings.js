@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Settings.71f28c4c637cd926b6dd.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Settings.4af28f818270a434061f.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Settings"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -999,7 +999,7 @@
 		"./node_modules/qrcode/lib/core/reed-solomon-encoder.js": function(e, t, r) {
 			var n = r("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				o = r("./node_modules/qrcode/lib/core/polynomial.js"),
-				i = r("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer;
+				i = r("./node_modules/buffer/index.js").Buffer;
 
 			function a(e) {
 				this.genPoly = void 0, this.degree = e, this.degree && this.initialize(this.degree)
@@ -1619,4 +1619,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Settings.71f28c4c637cd926b6dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Settings.4af28f818270a434061f.js.map

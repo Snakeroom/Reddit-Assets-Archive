@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.fea98d8109d6d98f28fa.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.49e577ab062cffe1823a.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldPurchasePaymentActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -447,33 +447,35 @@
 							message: e
 						}))
 					}
-				}, P = Object(o.a)(d.B), _ = Object(o.a)(d.N), E = Object(o.a)(d.G), C = Object(o.a)(d.g), x = e => async (t, r, {
-					apiContext: n
-				}) => {
+				}, P = Object(o.a)(d.B), _ = Object(o.a)(d.N), E = Object(o.a)(d.G), C = Object(o.a)(d.g), x = e => async (t, r, n) => {
+					let {
+						apiContext: a
+					} = n;
 					t(C(e));
 					try {
-						const t = await Object(i.a)(n(), e);
+						const t = await Object(i.a)(a(), e);
 						if (t.error) throw new Error(t.error.type)
-					} catch (a) {
-						c.c.captureException(a)
+					} catch (o) {
+						c.c.captureException(o)
 					}
-				}, I = Object(o.a)(d.D), k = Object(o.a)(d.E), w = () => async (e, t, {
-					apiContext: r
-				}) => {
+				}, I = Object(o.a)(d.D), k = Object(o.a)(d.E), w = () => async (e, t, r) => {
+					let {
+						apiContext: n
+					} = r;
 					e(I());
 					try {
-						const t = await Object(i.b)(r());
+						const t = await Object(i.b)(n());
 						if (t.error) throw new Error(t.error.type);
-						const n = t.body.map(e => ({
+						const r = t.body.map(e => ({
 							brand: e.brand,
 							cardId: e.card_id,
 							expirationMonth: e.exp_month,
 							expirationYear: e.exp_year,
 							last4: e.last4
 						}));
-						e(k(n)), n[0] && e(E(n[0].cardId))
-					} catch (n) {
-						c.c.captureException(n), e(k([]))
+						e(k(r)), r[0] && e(E(r[0].cardId))
+					} catch (a) {
+						c.c.captureException(a), e(k([]))
 					}
 				}
 		},
@@ -514,20 +516,21 @@
 					r(h(e)), r(Object(u.h)(l.a.ECON_PREMIUM_PURCHASE, t))
 				}, j = () => async e => {
 					e(Object(u.g)(l.a.ECON_PREMIUM_PURCHASE)), e(g())
-				}, v = (e, t) => async (r, n, {
-					apiContext: o
-				}) => {
-					const c = Object(b.a)(n()),
-						u = (null == c ? void 0 : c.pennies) || i.yb,
-						l = Object(m.c)(m.a.GoldPayment);
+				}, v = (e, t) => async (r, n, o) => {
+					let {
+						apiContext: c
+					} = o;
+					const u = Object(b.a)(n()),
+						l = (null == u ? void 0 : u.pennies) || i.yb,
+						p = Object(m.c)(m.a.GoldPayment);
 					r(Object(d.stripeTokenPending)());
-					const p = await r(Object(d.validateAndCreateStripeToken)(e, t));
-					if (p) try {
+					const y = await r(Object(d.validateAndCreateStripeToken)(e, t));
+					if (y) try {
 						const e = await Object(f.h)({
-							context: o(),
-							correlationId: l,
-							pennies: u,
-							token: p
+							context: c(),
+							correlationId: p,
+							pennies: l,
+							token: y
 						});
 						if (e.error) {
 							const t = Object(s.a)(e.error);
@@ -535,8 +538,8 @@
 						} else r(Object(d.paymentCompleted)({
 							confirmed: !1
 						}))
-					} catch (y) {
-						const e = Object(s.a)(y);
+					} catch (h) {
+						const e = Object(s.a)(h);
 						r(Object(d.stripeApiError)(e))
 					} else {
 						const e = a.fbt._("Looks like something went wrong validating your credit card.", null, {
@@ -544,32 +547,36 @@
 						});
 						r(Object(d.stripeApiError)(e))
 					}
-				}, P = Object(o.a)(y.z), _ = ({
-					packageId: e,
-					correlationId: t
-				}, r) => async (a, o, {
-					apiContext: i
-				}) => {
-					a(O({
-						packageId: e,
-						correlationId: t
-					}, r));
-					const u = Object(b.a)(o()),
-						l = (null == u ? void 0 : u.paypalButtonId) || n.a.paypal.buttons.premium;
-					if (l) try {
-						const e = await Object(p.f)({
-							buttonId: l,
-							context: i(),
-							correlationId: t
-						});
-						if (e.error) {
-							const t = Object(s.a)(e.error);
-							a(Object(d.paypalApiError)(t))
-						} else a(P(e))
-					} catch (f) {
-						const e = Object(s.a)(f);
-						a(Object(d.paypalApiError)(e))
-					} else c.c.captureMessage("No Premium packages available on Premium purchase modal")
+				}, P = Object(o.a)(y.z), _ = (e, t) => {
+					let {
+						packageId: r,
+						correlationId: a
+					} = e;
+					return async (e, o, i) => {
+						let {
+							apiContext: u
+						} = i;
+						e(O({
+							packageId: r,
+							correlationId: a
+						}, t));
+						const l = Object(b.a)(o()),
+							f = (null == l ? void 0 : l.paypalButtonId) || n.a.paypal.buttons.premium;
+						if (f) try {
+							const t = await Object(p.f)({
+								buttonId: f,
+								context: u(),
+								correlationId: a
+							});
+							if (t.error) {
+								const r = Object(s.a)(t.error);
+								e(Object(d.paypalApiError)(r))
+							} else e(P(t))
+						} catch (m) {
+							const t = Object(s.a)(m);
+							e(Object(d.paypalApiError)(t))
+						} else c.c.captureMessage("No Premium packages available on Premium purchase modal")
+					}
 				}
 		},
 		"./src/reddit/endpoints/gold/paypalPurchases.ts": function(e, t, r) {
@@ -593,125 +600,131 @@
 				c = r("./src/reddit/constants/headers.ts"),
 				i = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				s = r("./src/reddit/endpoints/gold/purchase.ts");
-			const d = async ({
-				buttonId: e,
-				context: t,
-				correlationId: r
-			}) => {
-				const d = {
-						button_id: e,
-						correlation_id: r
-					},
-					u = `${t.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
-					l = Object(i.a)(u);
-				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.jb.POST,
-					endpoint: l,
-					data: d
-				}).then(s.c)
-			}, u = async ({
-				context: e,
-				coins: t,
-				pennies: r,
-				correlationId: i
-			}) => {
-				const d = {
-					coins: t,
-					pennies: r,
-					correlation_id: i
-				};
-				return Object(a.a)(Object(o.a)(e, [c.a]), {
-					method: n.jb.POST,
-					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
-					data: d
-				}).then(s.c)
-			}, l = async ({
-				context: e,
-				awardId: t,
-				pennies: r,
-				thingId: i,
-				correlationId: d
-			}) => {
+			const d = async e => {
+				let {
+					buttonId: t,
+					context: r,
+					correlationId: d
+				} = e;
 				const u = {
-					award_id: t,
-					correlation_id: d,
-					pennies: r,
-					thing_id: i
-				};
-				return Object(a.a)(Object(o.a)(e, [c.a]), {
+						button_id: t,
+						correlation_id: d
+					},
+					l = `${r.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
+					p = Object(i.a)(l);
+				return Object(a.a)(Object(o.a)(r, [c.a]), {
 					method: n.jb.POST,
-					endpoint: `${e.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
+					endpoint: p,
 					data: u
 				}).then(s.c)
-			}, p = async ({
-				context: e,
-				offerContext: t,
-				orderId: r,
-				coins: i,
-				pennies: d,
-				correlationId: u
-			}) => {
-				const l = {
-					offer_context: t,
-					order_id: r,
-					coins: i,
-					pennies: d,
-					correlation_id: u
+			}, u = async e => {
+				let {
+					context: t,
+					coins: r,
+					pennies: i,
+					correlationId: d
+				} = e;
+				const u = {
+					coins: r,
+					pennies: i,
+					correlation_id: d
 				};
-				return Object(a.a)(Object(o.a)(e, [c.a]), {
+				return Object(a.a)(Object(o.a)(t, [c.a]), {
 					method: n.jb.POST,
-					endpoint: `${e.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
+					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
+					data: u
+				}).then(s.c)
+			}, l = async e => {
+				let {
+					context: t,
+					awardId: r,
+					pennies: i,
+					thingId: d,
+					correlationId: u
+				} = e;
+				const l = {
+					award_id: r,
+					correlation_id: u,
+					pennies: i,
+					thing_id: d
+				};
+				return Object(a.a)(Object(o.a)(t, [c.a]), {
+					method: n.jb.POST,
+					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: l
 				}).then(s.c)
-			}, f = async ({
-				awardId: e,
-				context: t,
-				coins: r,
-				correlationId: i,
-				isAnonymous: d,
-				message: u,
-				offerContext: l,
-				orderId: p,
-				pennies: f,
-				thingId: m
-			}) => {
-				const b = {
-					award_id: e,
-					coins: r,
+			}, p = async e => {
+				let {
+					context: t,
+					offerContext: r,
+					orderId: i,
+					coins: d,
+					pennies: u,
+					correlationId: l
+				} = e;
+				const p = {
+					offer_context: r,
+					order_id: i,
+					coins: d,
+					pennies: u,
+					correlation_id: l
+				};
+				return Object(a.a)(Object(o.a)(t, [c.a]), {
+					method: n.jb.POST,
+					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
+					data: p
+				}).then(s.c)
+			}, f = async e => {
+				let {
+					awardId: t,
+					context: r,
+					coins: i,
+					correlationId: d,
+					isAnonymous: u,
+					message: l,
+					offerContext: p,
+					orderId: f,
+					pennies: m,
+					thingId: b
+				} = e;
+				const y = {
+					award_id: t,
+					coins: i,
+					correlation_id: d,
+					is_anonymous: u,
+					message: l,
+					offer_context: p,
+					order_id: f,
+					pennies: m,
+					thing_id: b
+				};
+				return Object(a.a)(Object(o.a)(r, [c.a]), {
+					method: n.jb.POST,
+					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
+					data: y
+				}).then(s.c)
+			}, m = async e => {
+				let {
+					awardId: t,
+					context: r,
+					correlationId: i,
+					isAnonymous: d,
+					message: u,
+					orderId: l,
+					thingId: p
+				} = e;
+				const f = {
+					award_id: t,
 					correlation_id: i,
 					is_anonymous: d,
 					message: u,
-					offer_context: l,
-					order_id: p,
-					pennies: f,
-					thing_id: m
+					order_id: l,
+					thing_id: p
 				};
-				return Object(a.a)(Object(o.a)(t, [c.a]), {
+				return Object(a.a)(Object(o.a)(r, [c.a]), {
 					method: n.jb.POST,
-					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
-					data: b
-				}).then(s.c)
-			}, m = async ({
-				awardId: e,
-				context: t,
-				correlationId: r,
-				isAnonymous: i,
-				message: d,
-				orderId: u,
-				thingId: l
-			}) => {
-				const p = {
-					award_id: e,
-					correlation_id: r,
-					is_anonymous: i,
-					message: d,
-					order_id: u,
-					thing_id: l
-				};
-				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.jb.POST,
-					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
-					data: p
+					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
+					data: f
 				}).then(s.c)
 			}
 		},
@@ -755,115 +768,119 @@
 					...e,
 					error: e.error || Object(u.a)()
 				},
-				f = async ({
-					coins: e,
-					context: t,
-					correlationId: r,
-					offerContext: o,
-					pennies: i,
-					rememberCard: u,
-					token: l,
-					savedCardId: f
-				}) => {
-					const m = {
-							token: l ? l.id : void 0,
-							coins: e,
-							offer_context: o,
-							pennies: i,
-							remember_card: u,
-							card_id: f,
+				f = async e => {
+					let {
+						coins: t,
+						context: r,
+						correlationId: o,
+						offerContext: i,
+						pennies: u,
+						rememberCard: l,
+						token: f,
+						savedCardId: m
+					} = e;
+					const b = {
+							token: f ? f.id : void 0,
+							coins: t,
+							offer_context: i,
+							pennies: u,
+							remember_card: l,
+							card_id: m,
+							correlation_id: o
+						},
+						y = `${r.apiUrl}/api/v2/gold/stripe/buy_coins`,
+						h = Object(d.a)(y);
+					return Object(a.a)(Object(c.a)(r, [s.a]), {
+						method: n.jb.POST,
+						endpoint: h,
+						data: b
+					}).then(p)
+				}, m = async e => {
+					let {
+						coins: t,
+						context: r,
+						correlationId: o,
+						gildParams: i,
+						isOldReddit: u,
+						offerContext: l,
+						pennies: f,
+						rememberCard: m,
+						thingId: b,
+						token: y,
+						savedCardId: h
+					} = e;
+					const {
+						gildType: g,
+						isAnonymous: O,
+						message: j
+					} = i, v = {
+						token: y ? y.id : void 0,
+						coins: t,
+						offer_context: l,
+						pennies: f,
+						thing_id: b,
+						gild_type: g,
+						message: j ? j.trim() : "",
+						is_anonymous: O,
+						remember_card: m,
+						card_id: h,
+						correlation_id: o
+					}, P = `${r.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, _ = u ? P : Object(d.a)(P);
+					return Object(a.a)(Object(c.a)(r, [s.a]), {
+						method: n.jb.POST,
+						endpoint: _,
+						data: v
+					}).then(p)
+				}, b = async e => {
+					let {
+						context: t,
+						correlationId: r,
+						gildParams: o,
+						isOldReddit: i,
+						pennies: u,
+						rememberCard: l,
+						thingId: f,
+						token: m,
+						savedCardId: b
+					} = e;
+					const {
+						gildType: y,
+						isAnonymous: h,
+						message: g
+					} = o, O = {
+						token: m ? m.id : void 0,
+						thing_id: f,
+						award_id: y,
+						message: g ? g.trim() : "",
+						is_anonymous: h,
+						pennies: u,
+						remember_card: l,
+						card_id: b,
+						correlation_id: r
+					}, j = `${t.apiUrl}/api/v2/gold/stripe/buy_award`, v = i ? j : Object(d.a)(j);
+					return Object(a.a)(Object(c.a)(t, [s.a]), {
+						method: n.jb.POST,
+						endpoint: v,
+						data: O
+					}).then(p)
+				}, y = async e => {
+					let {
+						context: t,
+						correlationId: r,
+						pennies: o,
+						token: i
+					} = e;
+					const u = {
+							token: i.id,
+							pennies: o,
 							correlation_id: r
 						},
-						b = `${t.apiUrl}/api/v2/gold/stripe/buy_coins`,
-						y = Object(d.a)(b);
+						l = `${t.apiUrl}/api/v2/gold/stripe/buy_premium_subscription`,
+						f = Object(d.a)(l);
 					return Object(a.a)(Object(c.a)(t, [s.a]), {
 						method: n.jb.POST,
-						endpoint: y,
-						data: m
-					}).then(p)
-				}, m = async ({
-					coins: e,
-					context: t,
-					correlationId: r,
-					gildParams: o,
-					isOldReddit: i,
-					offerContext: u,
-					pennies: l,
-					rememberCard: f,
-					thingId: m,
-					token: b,
-					savedCardId: y
-				}) => {
-					const {
-						gildType: h,
-						isAnonymous: g,
-						message: O
-					} = o, j = {
-						token: b ? b.id : void 0,
-						coins: e,
-						offer_context: u,
-						pennies: l,
-						thing_id: m,
-						gild_type: h,
-						message: O ? O.trim() : "",
-						is_anonymous: g,
-						remember_card: f,
-						card_id: y,
-						correlation_id: r
-					}, v = `${t.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, P = i ? v : Object(d.a)(v);
-					return Object(a.a)(Object(c.a)(t, [s.a]), {
-						method: n.jb.POST,
-						endpoint: P,
-						data: j
-					}).then(p)
-				}, b = async ({
-					context: e,
-					correlationId: t,
-					gildParams: r,
-					isOldReddit: o,
-					pennies: i,
-					rememberCard: u,
-					thingId: l,
-					token: f,
-					savedCardId: m
-				}) => {
-					const {
-						gildType: b,
-						isAnonymous: y,
-						message: h
-					} = r, g = {
-						token: f ? f.id : void 0,
-						thing_id: l,
-						award_id: b,
-						message: h ? h.trim() : "",
-						is_anonymous: y,
-						pennies: i,
-						remember_card: u,
-						card_id: m,
-						correlation_id: t
-					}, O = `${e.apiUrl}/api/v2/gold/stripe/buy_award`, j = o ? O : Object(d.a)(O);
-					return Object(a.a)(Object(c.a)(e, [s.a]), {
-						method: n.jb.POST,
-						endpoint: j,
-						data: g
-					}).then(p)
-				}, y = async ({
-					context: e,
-					correlationId: t,
-					pennies: r,
-					token: o
-				}) => {
-					const i = {
-							token: o.id,
-							pennies: r,
-							correlation_id: t
-						},
-						u = `${e.apiUrl}/api/v2/gold/stripe/buy_premium_subscription`,
-						l = Object(d.a)(u);
-					return Object(a.a)(Object(c.a)(e, [s.a]), {
-						method: n.jb.POST,
-						endpoint: l,
-						data: i
+						endpoint: f,
+						data: u
 					}).then(p)
 				}, h = "paymentInfoUpdated", g = async e => {
 					const {
@@ -1013,4 +1030,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.fea98d8109d6d98f28fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldPurchasePaymentActions.49e577ab062cffe1823a.js.map

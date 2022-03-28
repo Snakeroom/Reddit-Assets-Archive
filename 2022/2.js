@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/2.3f4cf3ce5144b5747918.js
-// Retrieved at 3/2/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/2.e9d77de28c42965c256e.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[2], {
 		"./node_modules/@apollo/client/cache/core/cache.js": function(e, t, n) {
@@ -3170,91 +3170,6 @@
 				throw r.name = "ServerError", r.response = e, r.statusCode = e.status, r.result = t, r
 			}
 		},
-		"./node_modules/@apollo/client/node_modules/graphql-tag/lib/index.js": function(e, t, n) {
-			"use strict";
-			var r = function() {
-				return (r = Object.assign || function(e) {
-					for (var t, n = 1, r = arguments.length; n < r; n++)
-						for (var i in t = arguments[n]) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
-					return e
-				}).apply(this, arguments)
-			};
-			Object.create;
-			Object.create;
-			var i = n("./node_modules/graphql/language/parser.mjs"),
-				o = new Map,
-				a = new Map,
-				s = !0,
-				u = !1;
-
-			function c(e) {
-				return e.replace(/[\s,]+/g, " ").trim()
-			}
-
-			function l(e) {
-				var t = new Set,
-					n = [];
-				return e.definitions.forEach((function(e) {
-					if ("FragmentDefinition" === e.kind) {
-						var r = e.name.value,
-							i = c((u = e.loc).source.body.substring(u.start, u.end)),
-							o = a.get(r);
-						o && !o.has(i) ? s && console.warn("Warning: fragment with name " + r + " already exists.\ngraphql-tag enforces all fragment names across your application to be unique; read more about\nthis in the docs: http://dev.apollodata.com/core/fragments.html#unique-names") : o || a.set(r, o = new Set), o.add(i), t.has(i) || (t.add(i), n.push(e))
-					} else n.push(e);
-					var u
-				})), r(r({}, e), {
-					definitions: n
-				})
-			}
-
-			function f(e) {
-				var t = c(e);
-				if (!o.has(t)) {
-					var n = Object(i.a)(e, {
-						experimentalFragmentVariables: u
-					});
-					if (!n || "Document" !== n.kind) throw new Error("Not a valid GraphQL document.");
-					o.set(t, function(e) {
-						var t = new Set(e.definitions);
-						t.forEach((function(e) {
-							e.loc && delete e.loc, Object.keys(e).forEach((function(n) {
-								var r = e[n];
-								r && "object" == typeof r && t.add(r)
-							}))
-						}));
-						var n = e.loc;
-						return n && (delete n.startToken, delete n.endToken), e
-					}(l(n)))
-				}
-				return o.get(t)
-			}
-
-			function d(e) {
-				for (var t = [], n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
-				"string" == typeof e && (e = [e]);
-				var r = e[0];
-				return t.forEach((function(t, n) {
-					t && "Document" === t.kind ? r += t.loc.source.body : r += t, r += e[n + 1]
-				})), f(r)
-			}
-			var p, h = {
-				gql: d,
-				resetCaches: function() {
-					o.clear(), a.clear()
-				},
-				disableFragmentWarnings: function() {
-					s = !1
-				},
-				enableExperimentalFragmentVariables: function() {
-					u = !0
-				},
-				disableExperimentalFragmentVariables: function() {
-					u = !1
-				}
-			};
-			(p = d || (d = {})).gql = h.gql, p.resetCaches = h.resetCaches, p.disableFragmentWarnings = h.disableFragmentWarnings, p.enableExperimentalFragmentVariables = h.enableExperimentalFragmentVariables, p.disableExperimentalFragmentVariables = h.disableExperimentalFragmentVariables, d.default = d;
-			t.a = d
-		},
 		"./node_modules/@apollo/client/node_modules/ts-invariant/lib/invariant.esm.js": function(e, t, n) {
 			"use strict";
 			(function(e) {
@@ -4509,6 +4424,91 @@
 				}(e)
 			}
 		},
+		"./node_modules/graphql-tag/lib/index.js": function(e, t, n) {
+			"use strict";
+			var r = function() {
+				return (r = Object.assign || function(e) {
+					for (var t, n = 1, r = arguments.length; n < r; n++)
+						for (var i in t = arguments[n]) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
+					return e
+				}).apply(this, arguments)
+			};
+			Object.create;
+			Object.create;
+			var i = n("./node_modules/graphql/language/parser.mjs"),
+				o = new Map,
+				a = new Map,
+				s = !0,
+				u = !1;
+
+			function c(e) {
+				return e.replace(/[\s,]+/g, " ").trim()
+			}
+
+			function l(e) {
+				var t = new Set,
+					n = [];
+				return e.definitions.forEach((function(e) {
+					if ("FragmentDefinition" === e.kind) {
+						var r = e.name.value,
+							i = c((u = e.loc).source.body.substring(u.start, u.end)),
+							o = a.get(r);
+						o && !o.has(i) ? s && console.warn("Warning: fragment with name " + r + " already exists.\ngraphql-tag enforces all fragment names across your application to be unique; read more about\nthis in the docs: http://dev.apollodata.com/core/fragments.html#unique-names") : o || a.set(r, o = new Set), o.add(i), t.has(i) || (t.add(i), n.push(e))
+					} else n.push(e);
+					var u
+				})), r(r({}, e), {
+					definitions: n
+				})
+			}
+
+			function f(e) {
+				var t = c(e);
+				if (!o.has(t)) {
+					var n = Object(i.a)(e, {
+						experimentalFragmentVariables: u
+					});
+					if (!n || "Document" !== n.kind) throw new Error("Not a valid GraphQL document.");
+					o.set(t, function(e) {
+						var t = new Set(e.definitions);
+						t.forEach((function(e) {
+							e.loc && delete e.loc, Object.keys(e).forEach((function(n) {
+								var r = e[n];
+								r && "object" == typeof r && t.add(r)
+							}))
+						}));
+						var n = e.loc;
+						return n && (delete n.startToken, delete n.endToken), e
+					}(l(n)))
+				}
+				return o.get(t)
+			}
+
+			function d(e) {
+				for (var t = [], n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
+				"string" == typeof e && (e = [e]);
+				var r = e[0];
+				return t.forEach((function(t, n) {
+					t && "Document" === t.kind ? r += t.loc.source.body : r += t, r += e[n + 1]
+				})), f(r)
+			}
+			var p, h = {
+				gql: d,
+				resetCaches: function() {
+					o.clear(), a.clear()
+				},
+				disableFragmentWarnings: function() {
+					s = !1
+				},
+				enableExperimentalFragmentVariables: function() {
+					u = !0
+				},
+				disableExperimentalFragmentVariables: function() {
+					u = !1
+				}
+			};
+			(p = d || (d = {})).gql = h.gql, p.resetCaches = h.resetCaches, p.disableFragmentWarnings = h.disableFragmentWarnings, p.enableExperimentalFragmentVariables = h.enableExperimentalFragmentVariables, p.disableExperimentalFragmentVariables = h.disableExperimentalFragmentVariables, d.default = d;
+			t.a = d
+		},
 		"./node_modules/graphql/jsutils/defineInspect.js": function(e, t, n) {
 			"use strict";
 			Object.defineProperty(t, "__esModule", {
@@ -5703,4 +5703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.3f4cf3ce5144b5747918.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.e9d77de28c42965c256e.js.map

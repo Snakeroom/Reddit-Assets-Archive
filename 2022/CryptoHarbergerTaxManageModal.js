@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.66acd8ff6ed7fed84616.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.32a4aa62d3ea3aaa8d29.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -81,74 +81,76 @@
 						hk: "2t0F9P"
 					})
 				}))
-			}, x = e => async (t, n, {
-				apiContext: a
-			}) => {
+			}, x = e => async (t, n, a) => {
+				let {
+					apiContext: r
+				} = a;
 				const {
-					subredditId: r
-				} = e, d = n().user.account, i = Object(p.a)(n(), {
-					subredditId: r
+					subredditId: d
+				} = e, i = n().user.account, c = Object(p.a)(n(), {
+					subredditId: d
 				});
-				if (!d) return;
-				const c = d.displayText || "";
+				if (!i) return;
+				const l = i.displayText || "";
 				t(Object(o.f)({
 					productId: "mainHeader",
-					subredditId: r
+					subredditId: d
 				}));
-				const l = await u(a(), {
-					subredditId: r,
+				const m = await u(r(), {
+					subredditId: d,
 					price: e.currentPrice,
 					products: [{
 						newPrice: e.newPrice,
-						owner: i && i.owner || "",
-						ownerId: i && i.ownerId || ""
+						owner: c && c.owner || "",
+						ownerId: c && c.ownerId || ""
 					}]
 				});
-				l.ok ? (t(Object(o.g)({
+				m.ok ? (t(Object(o.g)({
 					productId: "mainHeader",
-					subredditId: r,
+					subredditId: d,
 					mainHeader: {
-						owner: c,
-						ownerId: d.id,
+						owner: l,
+						ownerId: i.id,
 						price: e.newPrice || e.currentPrice,
-						content: i ? i.content : {}
+						content: c ? c.content : {}
 					}
 				})), t(Object(o.c)({
-					subredditId: r
+					subredditId: d
 				}))) : (t(Object(o.d)({
 					productId: "mainHeader",
-					subredditId: r,
-					error: l.error
-				})), Object(s.a)(t, l.error))
-			}, h = e => async (t, n, {
-				apiContext: a
-			}) => {
+					subredditId: d,
+					error: m.error
+				})), Object(s.a)(t, m.error))
+			}, h = e => async (t, n, a) => {
+				let {
+					apiContext: i
+				} = a;
 				const {
-					subredditId: i
-				} = e, m = n().user.account, b = Object(p.a)(n(), {
-					subredditId: i
-				}), g = n().structuredStyles.models[i];
-				if (!m || !b) return;
-				const x = m.displayText || "",
-					h = [],
-					I = void 0 !== e.newPrice && b.price !== e.newPrice,
-					f = function(e, t, n) {
+					subredditId: m
+				} = e, b = n().user.account, g = Object(p.a)(n(), {
+					subredditId: m
+				}), x = n().structuredStyles.models[m];
+				if (!b || !g) return;
+				const h = b.displayText || "",
+					I = [],
+					f = void 0 !== e.newPrice && g.price !== e.newPrice,
+					v = function(e, t, n) {
 						const a = {};
 						return e && e.bannerBackgroundImage !== t.bannerBackgroundImage && t.bannerBackgroundImage !== n.bannerBackgroundImage ? a.bannerBackgroundImage = t.bannerBackgroundImage : !e && t.bannerBackgroundImage && (a.bannerBackgroundImage = t.bannerBackgroundImage), e && e.bannerBackgroundImagePosition === t.bannerBackgroundImagePosition || (a.bannerBackgroundImagePosition = t.bannerBackgroundImagePosition), a
-					}(b.content, e.content, g),
-					v = !r()(f);
-				(I || v) && t(Object(o.i)({
+					}(g.content, e.content, x),
+					j = !r()(v);
+				(f || j) && t(Object(o.i)({
 					productId: "mainHeader",
-					subredditId: i
-				})), I ? h.push(u(a(), {
-					subredditId: i,
+					subredditId: m
+				})), f ? I.push(u(i(), {
+					subredditId: m,
 					price: e.currentPrice,
 					products: [{
 						newPrice: e.newPrice,
-						owner: b.owner || "",
-						ownerId: b.ownerId || ""
+						owner: g.owner || "",
+						ownerId: g.ownerId || ""
 					}]
-				})) : h.push(Promise.resolve()), v && h.push(function(e, t) {
+				})) : I.push(Promise.resolve()), j && I.push(function(e, t) {
 					return Object(l.a)(e, {
 						method: "patch",
 						endpoint: `${c.a.metaUrl}/communities/${t.subredditId}`,
@@ -160,49 +162,49 @@
 							}
 						}
 					})
-				}(a(), {
-					subredditId: i,
-					content: f
+				}(i(), {
+					subredditId: m,
+					content: v
 				}));
-				const [j, C] = await Promise.all(h);
-				I && j.ok && v && C.ok ? (t(Object(o.j)({
+				const [C, O] = await Promise.all(I);
+				f && C.ok && j && O.ok ? (t(Object(o.j)({
 					productId: "mainHeader",
-					subredditId: i,
+					subredditId: m,
 					mainHeader: {
-						owner: x,
-						ownerId: m.id,
-						price: e.newPrice || b.price,
+						owner: h,
+						ownerId: b.id,
+						price: e.newPrice || g.price,
 						content: e.content
 					}
 				})), t(Object(d.l)({
-					subredditId: i,
-					styles: f
-				}))) : I && j.ok ? (t(Object(o.j)({
+					subredditId: m,
+					styles: v
+				}))) : f && C.ok ? (t(Object(o.j)({
 					productId: "mainHeader",
-					subredditId: i,
+					subredditId: m,
 					mainHeader: {
-						owner: x,
-						ownerId: m.id,
-						price: e.newPrice || b.price,
-						content: b.content
+						owner: h,
+						ownerId: b.id,
+						price: e.newPrice || g.price,
+						content: g.content
 					}
-				})), v && !C.ok && Object(s.a)(t, C.error)) : v && C.ok ? (t(Object(o.j)({
+				})), j && !O.ok && Object(s.a)(t, O.error)) : j && O.ok ? (t(Object(o.j)({
 					productId: "mainHeader",
-					subredditId: i,
+					subredditId: m,
 					mainHeader: {
-						owner: x,
-						ownerId: m.id,
-						price: b.price,
+						owner: h,
+						ownerId: b.id,
+						price: g.price,
 						content: e.content
 					}
 				})), t(Object(d.l)({
-					subredditId: i,
-					styles: f
-				})), I && !j.ok && Object(s.a)(t, j.error)) : (I && Object(s.a)(t, j.error), v && (t(Object(o.h)({
+					subredditId: m,
+					styles: v
+				})), f && !C.ok && Object(s.a)(t, C.error)) : (f && Object(s.a)(t, C.error), j && (t(Object(o.h)({
 					productId: "mainHeader",
-					subredditId: i,
-					error: j.error
-				})), Object(s.a)(t, C.error)))
+					subredditId: m,
+					error: C.error
+				})), Object(s.a)(t, O.error)))
 			}
 		},
 		"./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerManageModal/Banner/index.m.less": function(e, t, n) {
@@ -373,9 +375,12 @@
 				fbt: A
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const M = Object(i.c)({
-				pointsDetails: (e, {
-					subredditId: t
-				}) => Object(D.b)(e, t),
+				pointsDetails: (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					return Object(D.b)(e, n)
+				},
 				wallet: g.d
 			});
 			var L = Object(d.b)(M, e => ({
@@ -543,13 +548,16 @@
 				i = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				c = n("./src/reddit/components/Governance/ModalClose/index.m.less"),
 				l = n.n(c);
-			t.a = Object(s.b)(void 0, (e, {
-				afterClose: t
-			}) => ({
-				onClose: () => {
-					e(Object(d.f)()), t && t()
+			t.a = Object(s.b)(void 0, (e, t) => {
+				let {
+					afterClose: n
+				} = t;
+				return {
+					onClose: () => {
+						e(Object(d.f)()), n && n()
+					}
 				}
-			}))((function(e) {
+			})((function(e) {
 				return r.a.createElement(i.a, {
 					className: Object(o.a)(l.a.closeIcon, e.className),
 					onClick: e.onClose
@@ -605,9 +613,12 @@
 				l = n("./src/reddit/components/Governance/Token/index.m.less"),
 				u = n.n(l);
 			const m = Object(o.c)({
-				pointsDetails: (e, {
-					subredditId: t
-				}) => Object(c.b)(e, t)
+				pointsDetails: (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					return Object(c.b)(e, n)
+				}
 			});
 			t.a = Object(s.b)(m)((function(e) {
 				var t;
@@ -831,19 +842,22 @@
 				s = n("./src/lib/classNames/index.ts"),
 				o = n("./src/reddit/controls/LoadingIcon/index.m.less"),
 				d = n.n(o);
-			t.a = ({
-				center: e,
-				className: t,
-				sizePx: n = 10
-			}) => r.a.createElement("div", {
-				className: Object(s.a)(d.a.loadingIcon, t, {
-					[d.a.mCentered]: e
-				}),
-				style: {
-					"--sizePx": `${n}px`
-				},
-				"data-testid": "LoadingIcon"
-			})
+			t.a = e => {
+				let {
+					center: t,
+					className: n,
+					sizePx: a = 10
+				} = e;
+				return r.a.createElement("div", {
+					className: Object(s.a)(d.a.loadingIcon, n, {
+						[d.a.mCentered]: t
+					}),
+					style: {
+						"--sizePx": `${a}px`
+					},
+					"data-testid": "LoadingIcon"
+				})
+			}
 		},
 		"./src/reddit/endpoints/governance/imageLease.ts": function(e, t, n) {
 			"use strict";
@@ -1003,4 +1017,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.66acd8ff6ed7fed84616.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.32a4aa62d3ea3aaa8d29.js.map

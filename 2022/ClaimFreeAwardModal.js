@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.b17569a2c46ec9b473a7.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.db79a33fcd684a3ad5e0.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
@@ -33,36 +33,38 @@
 				y = Object(a.a)(O.n),
 				P = Object(a.a)(O.i),
 				x = Object(a.a)(O.j),
-				k = e => async (t, r, {
-					gqlContext: a
-				}) => {
-					const d = r();
-					if (!Object(m.i)(d)) return t((e => async (t, r, {
-						apiContext: a
-					}) => {
+				k = e => async (t, r, a) => {
+					let {
+						gqlContext: d
+					} = a;
+					const l = r();
+					if (!Object(m.i)(l)) return t((e => async (t, r, a) => {
+						let {
+							apiContext: d
+						} = a;
 						t(h());
-						const d = r(),
-							l = Object(i.P)(d);
+						const l = r(),
+							u = Object(i.P)(l);
 						try {
-							const r = !l,
+							const r = !u,
 								n = await Object(c.b)({
-									context: a(),
+									context: d(),
 									correlationId: e,
 									shouldUseCurrentOrigin: r
 								});
 							if (!n.ok) throw new Error(n.error && n.error.type || "Unknown error");
 							const o = n.body;
 							t(j(o))
-						} catch (u) {
-							Object(o.b)() || console.error(u), s.c.captureException(u);
+						} catch (f) {
+							Object(o.b)() || console.error(f), s.c.captureException(f);
 							const e = n.fbt._("There was an error fetching available products", null, {
 								hk: "1Uvx37"
 							});
 							t(v(e))
 						}
 					})(null == e ? void 0 : e.correlationId));
-					const l = Object(w.a)(d);
-					if ((null == e ? void 0 : e.forceLoad) || !l) {
+					const u = Object(w.a)(l);
+					if ((null == e ? void 0 : e.forceLoad) || !u) {
 						t(g());
 						try {
 							const e = await (async e => {
@@ -76,61 +78,63 @@
 									throw new Error(r || "Unknown error in requestPurchaseCatalogProductOffers")
 								}
 								return t.body
-							})(a());
+							})(d());
 							t(P(e.data.coinpacks.offers[0])), t(x(e.data.premium.offers[0]))
-						} catch (u) {
-							Object(o.b)() || console.error(u), s.c.captureException(u);
+						} catch (O) {
+							Object(o.b)() || console.error(O), s.c.captureException(O);
 							const e = n.fbt._("There was an error fetching available products", null, {
 								hk: "1Uvx37"
 							});
 							t(y(e))
 						}
 					}
-				}, _ = Object(a.a)(O.q), E = Object(a.a)(O.r), C = Object(a.a)(O.p), A = (e, t) => async (r, a, {
-					apiContext: i
-				}) => {
-					const d = a();
-					if (Object(m.i)(d)) return await r(k());
+				}, _ = Object(a.a)(O.q), E = Object(a.a)(O.r), C = Object(a.a)(O.p), A = (e, t) => async (r, a, i) => {
+					let {
+						apiContext: d
+					} = i;
+					const l = a();
+					if (Object(m.i)(l)) return await r(k());
 					r(_());
 					try {
 						const n = await Object(c.c)({
 							awardId: e,
-							context: i(),
+							context: d(),
 							correlationId: t
 						});
 						if (!n.ok) throw new Error(n.error && n.error.type || "Unknown error");
 						const o = n.body;
 						if (!o.coinPackages || !o.coinPackages.length) throw new Error(`Recommended coin packages returned empty for award id ${e}`);
 						r(E(o))
-					} catch (l) {
-						Object(o.b)() || console.error(l), s.c.captureException(l);
+					} catch (u) {
+						Object(o.b)() || console.error(u), s.c.captureException(u);
 						const e = n.fbt._("There was an error fetching purchasable coins package", null, {
 							hk: "47Fxzt"
 						});
 						r(C(e))
 					}
-				}, S = Object(a.a)(O.h), I = () => async (e, t, {
-					gqlContext: r
-				}) => {
-					var a, i;
+				}, S = Object(a.a)(O.h), I = () => async (e, t, r) => {
+					let {
+						gqlContext: a
+					} = r;
+					var i, f;
 					try {
-						const t = await Object(c.a)(r());
+						const t = await Object(c.a)(a());
 						if (t.ok) {
 							const r = t.body.data.claimAwardOffer;
-							if (null === (a = r.errors) || void 0 === a ? void 0 : a.length) throw new Error(r.errors.map(e => e.message).join(" | "));
-							if (!(null === (i = r.awards) || void 0 === i ? void 0 : i.length)) throw new Error("Got empty award list on free award offer claim");
+							if (null === (i = r.errors) || void 0 === i ? void 0 : i.length) throw new Error(r.errors.map(e => e.message).join(" | "));
+							if (!(null === (f = r.awards) || void 0 === f ? void 0 : f.length)) throw new Error("Got empty award list on free award offer claim");
 							if (!r.ok) throw new Error("Got not ok response on free award offer claim");
 							await e(S({
 								awards: r.awards
 							})), e(Object(u.B)())
 						}
-					} catch (f) {
-						Object(o.b)() || console.error(f), e(Object(d.f)({
+					} catch (p) {
+						Object(o.b)() || console.error(p), e(Object(d.f)({
 							kind: l.b.Error,
 							text: n.fbt._("Sorry, something went wrong. Try Claiming again.", null, {
 								hk: "FWjud"
 							})
-						})), s.c.captureException(f)
+						})), s.c.captureException(p)
 					}
 				}
 		},
@@ -323,12 +327,13 @@
 				s = r("./src/reddit/models/Payments/index.ts"),
 				c = r("./src/reddit/selectors/goldPurchaseModals.ts");
 			const i = e => e.subreddits.api.productOffers.pending,
-				d = (e, {
-					subredditId: t,
-					type: r
-				}) => {
-					var n, a, s;
-					return t ? e.subreddits.productOffers[Object(o.a)(r, t)] : null === (s = null === (a = null === (n = e.features) || void 0 === n ? void 0 : n.goldPurchase) || void 0 === a ? void 0 : a.productOffers) || void 0 === s ? void 0 : s[Object(o.a)(r)]
+				d = (e, t) => {
+					let {
+						subredditId: r,
+						type: n
+					} = t;
+					var a, s, c;
+					return r ? e.subreddits.productOffers[Object(o.a)(n, r)] : null === (c = null === (s = null === (a = e.features) || void 0 === a ? void 0 : a.goldPurchase) || void 0 === s ? void 0 : s.productOffers) || void 0 === c ? void 0 : c[Object(o.a)(n)]
 				},
 				l = e => {
 					const t = d(e, {
@@ -336,14 +341,15 @@
 					});
 					return null == t ? void 0 : t[0]
 				},
-				u = (e, {
-					subredditId: t
-				}) => {
-					const r = d(e, {
-						subredditId: t,
+				u = (e, t) => {
+					let {
+						subredditId: r
+					} = t;
+					const n = d(e, {
+						subredditId: r,
 						type: a.c.Powerups
 					});
-					return null == r ? void 0 : r[0]
+					return null == n ? void 0 : n[0]
 				},
 				f = Object(n.a)(u, e => null == e ? void 0 : e.pricePackages[0]),
 				p = Object(n.a)(f, e => null == e ? void 0 : e.price),
@@ -355,9 +361,12 @@
 				},
 				m = (e, t) => (null == e ? void 0 : e.pricePackages) ? null == e ? void 0 : e.pricePackages.filter(e => e.renewInterval === t && e.requiredPaymentProviders && (e => e[0] === s.b.PayPal || e[0] === s.b.Stripe)(e.requiredPaymentProviders)) : null,
 				w = Object(n.a)(b, c.p, (e, t) => m(e, t) || null),
-				O = Object(n.a)(w, (e, {
-					provider: t
-				}) => t, (e, t) => null == e ? void 0 : e.find(e => {
+				O = Object(n.a)(w, (e, t) => {
+					let {
+						provider: r
+					} = t;
+					return r
+				}, (e, t) => null == e ? void 0 : e.find(e => {
 					var r;
 					return (null === (r = e.requiredPaymentProviders) || void 0 === r ? void 0 : r[0]) === t
 				})),
@@ -373,4 +382,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.b17569a2c46ec9b473a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.db79a33fcd684a3ad5e0.js.map

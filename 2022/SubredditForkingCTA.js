@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.f847ccecdde34568b578.js
-// Retrieved at 3/28/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.5e839740090cd0835c11.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, _, e) {
@@ -32,47 +32,51 @@
 					userDoesNotHaveEnoughExpToCreateCommunity: t => !Object(b.ob)(t),
 					userIsSuspended: b.W
 				});
-			_.a = Object(s.b)(j, (t, {
-				eventSource: _
-			}) => ({
-				openCommunityCreation: e => {
-					e(Object(p.c)(_)), t(Object(i.h)(l.a.SUBREDDIT_CREATION_MODAL_ID))
-				},
-				onShowTooltip: () => t(Object(d.f)({
-					tooltipId: h
-				})),
-				onHideTooltip: () => t(Object(d.i)())
-			}))(Object(u.c)(({
-				className: t,
-				eventSource: _,
-				onShowTooltip: e,
-				onHideTooltip: n,
-				openCommunityCreation: s,
-				sendEvent: a,
-				userDoesNotHaveEnoughExpToCreateCommunity: i,
-				userIsSuspended: d,
-				onClick: c
-			}) => {
-				return r.a.createElement(m.t, {
-					className: t,
-					disabled: d || i,
-					onClick: t => {
-						c && c(t), s(a)
+			_.a = Object(s.b)(j, (t, _) => {
+				let {
+					eventSource: e
+				} = _;
+				return {
+					openCommunityCreation: _ => {
+						_(Object(p.c)(e)), t(Object(i.h)(l.a.SUBREDDIT_CREATION_MODAL_ID))
 					},
-					onMouseEnter: e,
-					onMouseLeave: n,
+					onShowTooltip: () => t(Object(d.f)({
+						tooltipId: h
+					})),
+					onHideTooltip: () => t(Object(d.i)())
+				}
+			})(Object(u.c)(t => {
+				let {
+					className: _,
+					eventSource: e,
+					onShowTooltip: n,
+					onHideTooltip: s,
+					openCommunityCreation: a,
+					sendEvent: i,
+					userDoesNotHaveEnoughExpToCreateCommunity: d,
+					userIsSuspended: c,
+					onClick: u
+				} = t;
+				return r.a.createElement(m.t, {
+					className: _,
+					disabled: c || d,
+					onClick: t => {
+						u && u(t), a(i)
+					},
+					onMouseEnter: n,
+					onMouseLeave: s,
 					priority: m.c.Secondary,
 					id: h,
 					isFullWidth: !0
 				}, o.fbt._("Create Community", null, {
 					hk: "28v7Qq"
-				}), i ? r.a.createElement(g, {
+				}), d ? r.a.createElement(g, {
 					caretOnTop: !0,
 					tooltipId: h,
 					text: o.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
 						hk: "2R1OXu"
 					})
-				}) : d ? r.a.createElement(g, {
+				}) : c ? r.a.createElement(g, {
 					caretOnTop: !0,
 					tooltipId: h,
 					text: o.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
@@ -211,14 +215,17 @@
 				A = n.a.wrapped(a.l, "PrimaryButton", u.a),
 				M = n.a.wrapped(a.o, "CancelButton", u.a),
 				S = n.a.wrapped(a.r, "RemoveButton", u.a),
-				B = ({
-					className: t,
-					..._
-				}) => s.a.createElement(a.t, l({
-					kind: a.b.Button,
-					priority: a.c.Primary,
-					className: Object(o.a)(u.a.ConfirmButton, t)
-				}, _))
+				B = t => {
+					let {
+						className: _,
+						...e
+					} = t;
+					return s.a.createElement(a.t, l({
+						kind: a.b.Button,
+						priority: a.c.Primary,
+						className: Object(o.a)(u.a.ConfirmButton, _)
+					}, e))
+				}
 		},
 		"./src/reddit/components/SubredditForkingCTA/SubredditForkingCTA.tsx": function(t, _, e) {
 			"use strict";
@@ -1152,30 +1159,34 @@
 				},
 				k = Object(s.b)(() => Object(u.c)({
 					shouldDisplayCTA: v
-				}), (t, {
-					postId: _
-				}) => ({
-					setInitialCrosspostId: () => {
-						t(Object(a.g)({
-							crosspostId: _
-						}))
+				}), (t, _) => {
+					let {
+						postId: e
+					} = _;
+					return {
+						setInitialCrosspostId: () => {
+							t(Object(a.g)({
+								crosspostId: e
+							}))
+						}
 					}
-				}));
-			_.default = Object(n.memo)(k(Object(h.c)(({
-				shouldDisplayCTA: t,
-				setInitialCrosspostId: _,
-				postId: e,
-				sendEvent: s,
-				onClose: a
-			}) => {
+				});
+			_.default = Object(n.memo)(k(Object(h.c)(t => {
+				let {
+					shouldDisplayCTA: _,
+					setInitialCrosspostId: e,
+					postId: s,
+					sendEvent: a,
+					onClose: u
+				} = t;
 				Object(n.useEffect)(() => {
-					t && s(Object(c.c)(e))
+					_ && a(Object(c.c)(s))
 				}, []);
-				return t ? r.a.createElement("div", {
+				return _ ? r.a.createElement("div", {
 					className: w.a.subreditForkingWrapper
 				}, r.a.createElement(d.a, {
 					className: w.a.closeButton,
-					onClick: a
+					onClick: u
 				}, r.a.createElement(i.b, null), r.a.createElement("div", null, o.fbt._("Close", null, {
 					hk: "4gbyAA"
 				}))), r.a.createElement("h4", null, o.fbt._("Should this post be its own community?", null, {
@@ -1185,7 +1196,7 @@
 				})), r.a.createElement(y.a, {
 					className: w.a.ctaButton,
 					onClick: () => {
-						_(), s(Object(c.a)(e))
+						e(), a(Object(c.a)(s))
 					},
 					eventSource: "subreddit_forking_cta"
 				})) : null
@@ -1266,10 +1277,11 @@
 			}
 			class l extends n.a.Component {
 				constructor() {
-					super(...arguments), this.handleKeyDown = ({
-						keyCode: t
-					}) => {
-						t === i.a.Escape && this.props.closeModal()
+					super(...arguments), this.handleKeyDown = t => {
+						let {
+							keyCode: _
+						} = t;
+						_ === i.a.Escape && this.props.closeModal()
 					}
 				}
 				render() {
@@ -1314,4 +1326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.f847ccecdde34568b578.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.5e839740090cd0835c11.js.map

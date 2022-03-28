@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033.6dda1e61f320e3163721.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033.ec2b59f01815a82795f7.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033", "CryptoLibEthers", "vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal", "vendors~reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, r, t) {
@@ -19,7 +19,7 @@
 				o = t("./node_modules/@ethersproject/bignumber/lib.esm/bignumber.js"),
 				i = t("./node_modules/@ethersproject/keccak256/lib.esm/index.js"),
 				s = t("./node_modules/@ethersproject/rlp/lib.esm/index.js");
-			const u = new(t("./node_modules/@ethersproject/logger/lib.esm/index.js").a)("address/5.4.0");
+			const u = new(t("./node_modules/@ethersproject/logger/lib.esm/index.js").b)("address/5.4.0");
 
 			function a(e) {
 				Object(n.l)(e, 20) || u.throwArgumentError("invalid address", "address", e);
@@ -90,7 +90,7 @@
 			t.d(r, "a", (function() {
 				return n
 			}));
-			const n = "bignumber/5.4.0"
+			const n = "bignumber/5.4.2"
 		},
 		"./node_modules/@ethersproject/bignumber/lib.esm/bignumber.js": function(e, r, t) {
 			"use strict";
@@ -109,7 +109,7 @@
 				s = t("./node_modules/@ethersproject/logger/lib.esm/index.js"),
 				u = t("./node_modules/@ethersproject/bignumber/lib.esm/_version.js"),
 				a = o.a.BN;
-			const c = new s.a(u.a),
+			const c = new s.b(u.a),
 				l = {},
 				d = 9007199254740991;
 
@@ -119,7 +119,7 @@
 			let h = !1;
 			class g {
 				constructor(e, r) {
-					c.checkNew(new.target, g), e !== l && c.throwError("cannot call constructor directly; use BigNumber.from", s.a.errors.UNSUPPORTED_OPERATION, {
+					c.checkNew(new.target, g), e !== l && c.throwError("cannot call constructor directly; use BigNumber.from", s.b.errors.UNSUPPORTED_OPERATION, {
 						operation: "new (BigNumber)"
 					}), this._hex = r, this._isBigNumber = !0, Object.freeze(this)
 				}
@@ -206,12 +206,12 @@
 					try {
 						return BigInt(this.toString())
 					} catch (e) {}
-					return c.throwError("this platform does not support BigInt", s.a.errors.UNSUPPORTED_OPERATION, {
+					return c.throwError("this platform does not support BigInt", s.b.errors.UNSUPPORTED_OPERATION, {
 						value: this.toString()
 					})
 				}
 				toString() {
-					return arguments.length > 0 && (10 === arguments[0] ? h || (h = !0, c.warn("BigNumber.toString does not accept any parameters; base-10 is assumed")) : 16 === arguments[0] ? c.throwError("BigNumber.toString does not accept any parameters; use bigNumber.toHexString()", s.a.errors.UNEXPECTED_ARGUMENT, {}) : c.throwError("BigNumber.toString does not accept parameters", s.a.errors.UNEXPECTED_ARGUMENT, {})), v(this).toString(10)
+					return arguments.length > 0 && (10 === arguments[0] ? h || (h = !0, c.warn("BigNumber.toString does not accept any parameters; base-10 is assumed")) : 16 === arguments[0] ? c.throwError("BigNumber.toString does not accept any parameters; use bigNumber.toHexString()", s.b.errors.UNEXPECTED_ARGUMENT, {}) : c.throwError("BigNumber.toString does not accept parameters", s.b.errors.UNEXPECTED_ARGUMENT, {})), v(this).toString(10)
 				}
 				toHexString() {
 					return this._hex
@@ -265,7 +265,7 @@
 					fault: e,
 					operation: r
 				};
-				return null != t && (n.value = t), c.throwError(e, s.a.errors.NUMERIC_FAULT, n)
+				return null != t && (n.value = t), c.throwError(e, s.b.errors.NUMERIC_FAULT, n)
 			}
 
 			function E(e) {
@@ -311,7 +311,7 @@
 			})), t.d(r, "m", (function() {
 				return _
 			}));
-			const n = new(t("./node_modules/@ethersproject/logger/lib.esm/index.js").a)("bytes/5.4.0");
+			const n = new(t("./node_modules/@ethersproject/logger/lib.esm/index.js").b)("bytes/5.4.0");
 
 			function o(e) {
 				return !!e.toHexString
@@ -605,8 +605,8 @@
 						return i && (e = u << 2, r = n[s], i > 0 && (a[e] = 255 & r), i > 1 && (a[e + 1] = r >> 8 & 255), i > 2 && (a[e + 2] = r >> 16 & 255)), a
 					};
 					var _ = function(e) {
-						var r, t, n, o, i, s, a, c, l, d, f, h, g, m, p, v, b, E, y, w, _, A, N, R, j, x, P, B, T, C, I, S, U, O, M, k, L, q, D, F, z, H, Y, K, V, G, J, X, $, W, Q, Z, ee, re, te, ne, oe, ie, se, ue, ae, ce, le;
-						for (n = 0; n < 48; n += 2) o = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], i = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], s = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], a = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], c = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], l = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], d = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], f = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], r = (h = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (s << 1 | a >>> 31), t = (g = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (a << 1 | s >>> 31), e[0] ^= r, e[1] ^= t, e[10] ^= r, e[11] ^= t, e[20] ^= r, e[21] ^= t, e[30] ^= r, e[31] ^= t, e[40] ^= r, e[41] ^= t, r = o ^ (c << 1 | l >>> 31), t = i ^ (l << 1 | c >>> 31), e[2] ^= r, e[3] ^= t, e[12] ^= r, e[13] ^= t, e[22] ^= r, e[23] ^= t, e[32] ^= r, e[33] ^= t, e[42] ^= r, e[43] ^= t, r = s ^ (d << 1 | f >>> 31), t = a ^ (f << 1 | d >>> 31), e[4] ^= r, e[5] ^= t, e[14] ^= r, e[15] ^= t, e[24] ^= r, e[25] ^= t, e[34] ^= r, e[35] ^= t, e[44] ^= r, e[45] ^= t, r = c ^ (h << 1 | g >>> 31), t = l ^ (g << 1 | h >>> 31), e[6] ^= r, e[7] ^= t, e[16] ^= r, e[17] ^= t, e[26] ^= r, e[27] ^= t, e[36] ^= r, e[37] ^= t, e[46] ^= r, e[47] ^= t, r = d ^ (o << 1 | i >>> 31), t = f ^ (i << 1 | o >>> 31), e[8] ^= r, e[9] ^= t, e[18] ^= r, e[19] ^= t, e[28] ^= r, e[29] ^= t, e[38] ^= r, e[39] ^= t, e[48] ^= r, e[49] ^= t, m = e[0], p = e[1], G = e[11] << 4 | e[10] >>> 28, J = e[10] << 4 | e[11] >>> 28, B = e[20] << 3 | e[21] >>> 29, T = e[21] << 3 | e[20] >>> 29, ue = e[31] << 9 | e[30] >>> 23, ae = e[30] << 9 | e[31] >>> 23, H = e[40] << 18 | e[41] >>> 14, Y = e[41] << 18 | e[40] >>> 14, O = e[2] << 1 | e[3] >>> 31, M = e[3] << 1 | e[2] >>> 31, v = e[13] << 12 | e[12] >>> 20, b = e[12] << 12 | e[13] >>> 20, X = e[22] << 10 | e[23] >>> 22, $ = e[23] << 10 | e[22] >>> 22, C = e[33] << 13 | e[32] >>> 19, I = e[32] << 13 | e[33] >>> 19, ce = e[42] << 2 | e[43] >>> 30, le = e[43] << 2 | e[42] >>> 30, re = e[5] << 30 | e[4] >>> 2, te = e[4] << 30 | e[5] >>> 2, k = e[14] << 6 | e[15] >>> 26, L = e[15] << 6 | e[14] >>> 26, E = e[25] << 11 | e[24] >>> 21, y = e[24] << 11 | e[25] >>> 21, W = e[34] << 15 | e[35] >>> 17, Q = e[35] << 15 | e[34] >>> 17, S = e[45] << 29 | e[44] >>> 3, U = e[44] << 29 | e[45] >>> 3, R = e[6] << 28 | e[7] >>> 4, j = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, oe = e[16] << 23 | e[17] >>> 9, q = e[26] << 25 | e[27] >>> 7, D = e[27] << 25 | e[26] >>> 7, w = e[36] << 21 | e[37] >>> 11, _ = e[37] << 21 | e[36] >>> 11, Z = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, K = e[8] << 27 | e[9] >>> 5, V = e[9] << 27 | e[8] >>> 5, x = e[18] << 20 | e[19] >>> 12, P = e[19] << 20 | e[18] >>> 12, ie = e[29] << 7 | e[28] >>> 25, se = e[28] << 7 | e[29] >>> 25, F = e[38] << 8 | e[39] >>> 24, z = e[39] << 8 | e[38] >>> 24, A = e[48] << 14 | e[49] >>> 18, N = e[49] << 14 | e[48] >>> 18, e[0] = m ^ ~v & E, e[1] = p ^ ~b & y, e[10] = R ^ ~x & B, e[11] = j ^ ~P & T, e[20] = O ^ ~k & q, e[21] = M ^ ~L & D, e[30] = K ^ ~G & X, e[31] = V ^ ~J & $, e[40] = re ^ ~ne & ie, e[41] = te ^ ~oe & se, e[2] = v ^ ~E & w, e[3] = b ^ ~y & _, e[12] = x ^ ~B & C, e[13] = P ^ ~T & I, e[22] = k ^ ~q & F, e[23] = L ^ ~D & z, e[32] = G ^ ~X & W, e[33] = J ^ ~$ & Q, e[42] = ne ^ ~ie & ue, e[43] = oe ^ ~se & ae, e[4] = E ^ ~w & A, e[5] = y ^ ~_ & N, e[14] = B ^ ~C & S, e[15] = T ^ ~I & U, e[24] = q ^ ~F & H, e[25] = D ^ ~z & Y, e[34] = X ^ ~W & Z, e[35] = $ ^ ~Q & ee, e[44] = ie ^ ~ue & ce, e[45] = se ^ ~ae & le, e[6] = w ^ ~A & m, e[7] = _ ^ ~N & p, e[16] = C ^ ~S & R, e[17] = I ^ ~U & j, e[26] = F ^ ~H & O, e[27] = z ^ ~Y & M, e[36] = W ^ ~Z & K, e[37] = Q ^ ~ee & V, e[46] = ue ^ ~ce & re, e[47] = ae ^ ~le & te, e[8] = A ^ ~m & v, e[9] = N ^ ~p & b, e[18] = S ^ ~R & x, e[19] = U ^ ~j & P, e[28] = H ^ ~O & k, e[29] = Y ^ ~M & L, e[38] = Z ^ ~K & G, e[39] = ee ^ ~V & J, e[48] = ce ^ ~re & ne, e[49] = le ^ ~te & oe, e[0] ^= u[n], e[1] ^= u[n + 1]
+						var r, t, n, o, i, s, a, c, l, d, f, h, g, m, p, v, b, E, y, w, _, A, N, R, j, x, P, B, T, C, I, U, S, O, M, k, L, q, D, F, z, H, Y, K, V, G, J, X, $, W, Q, Z, ee, re, te, ne, oe, ie, se, ue, ae, ce, le;
+						for (n = 0; n < 48; n += 2) o = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], i = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], s = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], a = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], c = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], l = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], d = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], f = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], r = (h = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (s << 1 | a >>> 31), t = (g = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (a << 1 | s >>> 31), e[0] ^= r, e[1] ^= t, e[10] ^= r, e[11] ^= t, e[20] ^= r, e[21] ^= t, e[30] ^= r, e[31] ^= t, e[40] ^= r, e[41] ^= t, r = o ^ (c << 1 | l >>> 31), t = i ^ (l << 1 | c >>> 31), e[2] ^= r, e[3] ^= t, e[12] ^= r, e[13] ^= t, e[22] ^= r, e[23] ^= t, e[32] ^= r, e[33] ^= t, e[42] ^= r, e[43] ^= t, r = s ^ (d << 1 | f >>> 31), t = a ^ (f << 1 | d >>> 31), e[4] ^= r, e[5] ^= t, e[14] ^= r, e[15] ^= t, e[24] ^= r, e[25] ^= t, e[34] ^= r, e[35] ^= t, e[44] ^= r, e[45] ^= t, r = c ^ (h << 1 | g >>> 31), t = l ^ (g << 1 | h >>> 31), e[6] ^= r, e[7] ^= t, e[16] ^= r, e[17] ^= t, e[26] ^= r, e[27] ^= t, e[36] ^= r, e[37] ^= t, e[46] ^= r, e[47] ^= t, r = d ^ (o << 1 | i >>> 31), t = f ^ (i << 1 | o >>> 31), e[8] ^= r, e[9] ^= t, e[18] ^= r, e[19] ^= t, e[28] ^= r, e[29] ^= t, e[38] ^= r, e[39] ^= t, e[48] ^= r, e[49] ^= t, m = e[0], p = e[1], G = e[11] << 4 | e[10] >>> 28, J = e[10] << 4 | e[11] >>> 28, B = e[20] << 3 | e[21] >>> 29, T = e[21] << 3 | e[20] >>> 29, ue = e[31] << 9 | e[30] >>> 23, ae = e[30] << 9 | e[31] >>> 23, H = e[40] << 18 | e[41] >>> 14, Y = e[41] << 18 | e[40] >>> 14, O = e[2] << 1 | e[3] >>> 31, M = e[3] << 1 | e[2] >>> 31, v = e[13] << 12 | e[12] >>> 20, b = e[12] << 12 | e[13] >>> 20, X = e[22] << 10 | e[23] >>> 22, $ = e[23] << 10 | e[22] >>> 22, C = e[33] << 13 | e[32] >>> 19, I = e[32] << 13 | e[33] >>> 19, ce = e[42] << 2 | e[43] >>> 30, le = e[43] << 2 | e[42] >>> 30, re = e[5] << 30 | e[4] >>> 2, te = e[4] << 30 | e[5] >>> 2, k = e[14] << 6 | e[15] >>> 26, L = e[15] << 6 | e[14] >>> 26, E = e[25] << 11 | e[24] >>> 21, y = e[24] << 11 | e[25] >>> 21, W = e[34] << 15 | e[35] >>> 17, Q = e[35] << 15 | e[34] >>> 17, U = e[45] << 29 | e[44] >>> 3, S = e[44] << 29 | e[45] >>> 3, R = e[6] << 28 | e[7] >>> 4, j = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, oe = e[16] << 23 | e[17] >>> 9, q = e[26] << 25 | e[27] >>> 7, D = e[27] << 25 | e[26] >>> 7, w = e[36] << 21 | e[37] >>> 11, _ = e[37] << 21 | e[36] >>> 11, Z = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, K = e[8] << 27 | e[9] >>> 5, V = e[9] << 27 | e[8] >>> 5, x = e[18] << 20 | e[19] >>> 12, P = e[19] << 20 | e[18] >>> 12, ie = e[29] << 7 | e[28] >>> 25, se = e[28] << 7 | e[29] >>> 25, F = e[38] << 8 | e[39] >>> 24, z = e[39] << 8 | e[38] >>> 24, A = e[48] << 14 | e[49] >>> 18, N = e[49] << 14 | e[48] >>> 18, e[0] = m ^ ~v & E, e[1] = p ^ ~b & y, e[10] = R ^ ~x & B, e[11] = j ^ ~P & T, e[20] = O ^ ~k & q, e[21] = M ^ ~L & D, e[30] = K ^ ~G & X, e[31] = V ^ ~J & $, e[40] = re ^ ~ne & ie, e[41] = te ^ ~oe & se, e[2] = v ^ ~E & w, e[3] = b ^ ~y & _, e[12] = x ^ ~B & C, e[13] = P ^ ~T & I, e[22] = k ^ ~q & F, e[23] = L ^ ~D & z, e[32] = G ^ ~X & W, e[33] = J ^ ~$ & Q, e[42] = ne ^ ~ie & ue, e[43] = oe ^ ~se & ae, e[4] = E ^ ~w & A, e[5] = y ^ ~_ & N, e[14] = B ^ ~C & U, e[15] = T ^ ~I & S, e[24] = q ^ ~F & H, e[25] = D ^ ~z & Y, e[34] = X ^ ~W & Z, e[35] = $ ^ ~Q & ee, e[44] = ie ^ ~ue & ce, e[45] = se ^ ~ae & le, e[6] = w ^ ~A & m, e[7] = _ ^ ~N & p, e[16] = C ^ ~U & R, e[17] = I ^ ~S & j, e[26] = F ^ ~H & O, e[27] = z ^ ~Y & M, e[36] = W ^ ~Z & K, e[37] = Q ^ ~ee & V, e[46] = ue ^ ~ce & re, e[47] = ae ^ ~le & te, e[8] = A ^ ~m & v, e[9] = N ^ ~p & b, e[18] = U ^ ~R & x, e[19] = S ^ ~j & P, e[28] = H ^ ~O & k, e[29] = Y ^ ~M & L, e[38] = Z ^ ~K & G, e[39] = ee ^ ~V & J, e[48] = ce ^ ~re & ne, e[49] = le ^ ~te & oe, e[0] ^= u[n], e[1] ^= u[n + 1]
 					};
 					if (o) e.exports = g;
 					else
@@ -617,9 +617,11 @@
 		"./node_modules/@ethersproject/logger/lib.esm/index.js": function(e, r, t) {
 			"use strict";
 			t.d(r, "a", (function() {
-				return f
+				return d
+			})), t.d(r, "b", (function() {
+				return h
 			}));
-			const n = "logger/5.4.0";
+			const n = "logger/5.4.1";
 			let o = !1,
 				i = !1;
 			const s = {
@@ -655,7 +657,8 @@
 			function(e) {
 				e.UNKNOWN_ERROR = "UNKNOWN_ERROR", e.NOT_IMPLEMENTED = "NOT_IMPLEMENTED", e.UNSUPPORTED_OPERATION = "UNSUPPORTED_OPERATION", e.NETWORK_ERROR = "NETWORK_ERROR", e.SERVER_ERROR = "SERVER_ERROR", e.TIMEOUT = "TIMEOUT", e.BUFFER_OVERRUN = "BUFFER_OVERRUN", e.NUMERIC_FAULT = "NUMERIC_FAULT", e.MISSING_NEW = "MISSING_NEW", e.INVALID_ARGUMENT = "INVALID_ARGUMENT", e.MISSING_ARGUMENT = "MISSING_ARGUMENT", e.UNEXPECTED_ARGUMENT = "UNEXPECTED_ARGUMENT", e.CALL_EXCEPTION = "CALL_EXCEPTION", e.INSUFFICIENT_FUNDS = "INSUFFICIENT_FUNDS", e.NONCE_EXPIRED = "NONCE_EXPIRED", e.REPLACEMENT_UNDERPRICED = "REPLACEMENT_UNDERPRICED", e.UNPREDICTABLE_GAS_LIMIT = "UNPREDICTABLE_GAS_LIMIT", e.TRANSACTION_REPLACED = "TRANSACTION_REPLACED"
 			}(d || (d = {}));
-			class f {
+			const f = "0123456789abcdef";
+			class h {
 				constructor(e) {
 					Object.defineProperty(this, "version", {
 						enumerable: !0,
@@ -668,21 +671,26 @@
 					null == s[t] && this.throwArgumentError("invalid log level name", "logLevel", e), u > s[t] || console.log.apply(console, r)
 				}
 				debug(...e) {
-					this._log(f.levels.DEBUG, e)
+					this._log(h.levels.DEBUG, e)
 				}
 				info(...e) {
-					this._log(f.levels.INFO, e)
+					this._log(h.levels.INFO, e)
 				}
 				warn(...e) {
-					this._log(f.levels.WARNING, e)
+					this._log(h.levels.WARNING, e)
 				}
 				makeError(e, r, t) {
 					if (i) return this.makeError("censored error", r, {});
-					r || (r = f.errors.UNKNOWN_ERROR), t || (t = {});
+					r || (r = h.errors.UNKNOWN_ERROR), t || (t = {});
 					const n = [];
 					Object.keys(t).forEach(e => {
+						const r = t[e];
 						try {
-							n.push(e + "=" + JSON.stringify(t[e]))
+							if (r instanceof Uint8Array) {
+								let t = "";
+								for (let e = 0; e < r.length; e++) t += f[r[e] >> 4], t += f[15 & r[e]];
+								n.push(e + "=Uint8Array(0x" + t + ")")
+							} else n.push(e + "=" + JSON.stringify(r))
 						} catch (s) {
 							n.push(e + "=" + JSON.stringify(t[e].toString()))
 						}
@@ -698,7 +706,7 @@
 					throw this.makeError(e, r, t)
 				}
 				throwArgumentError(e, r, t) {
-					return this.throwError(e, f.errors.INVALID_ARGUMENT, {
+					return this.throwError(e, h.errors.INVALID_ARGUMENT, {
 						argument: r,
 						value: t
 					})
@@ -710,53 +718,53 @@
 					e || this.throwArgumentError(r, t, n)
 				}
 				checkNormalize(e) {
-					null == e && (e = "platform missing String.prototype.normalize"), c && this.throwError("platform missing String.prototype.normalize", f.errors.UNSUPPORTED_OPERATION, {
+					null == e && (e = "platform missing String.prototype.normalize"), c && this.throwError("platform missing String.prototype.normalize", h.errors.UNSUPPORTED_OPERATION, {
 						operation: "String.prototype.normalize",
 						form: c
 					})
 				}
 				checkSafeUint53(e, r) {
-					"number" == typeof e && (null == r && (r = "value not safe"), (e < 0 || e >= 9007199254740991) && this.throwError(r, f.errors.NUMERIC_FAULT, {
+					"number" == typeof e && (null == r && (r = "value not safe"), (e < 0 || e >= 9007199254740991) && this.throwError(r, h.errors.NUMERIC_FAULT, {
 						operation: "checkSafeInteger",
 						fault: "out-of-safe-range",
 						value: e
-					}), e % 1 && this.throwError(r, f.errors.NUMERIC_FAULT, {
+					}), e % 1 && this.throwError(r, h.errors.NUMERIC_FAULT, {
 						operation: "checkSafeInteger",
 						fault: "non-integer",
 						value: e
 					}))
 				}
 				checkArgumentCount(e, r, t) {
-					t = t ? ": " + t : "", e < r && this.throwError("missing argument" + t, f.errors.MISSING_ARGUMENT, {
+					t = t ? ": " + t : "", e < r && this.throwError("missing argument" + t, h.errors.MISSING_ARGUMENT, {
 						count: e,
 						expectedCount: r
-					}), e > r && this.throwError("too many arguments" + t, f.errors.UNEXPECTED_ARGUMENT, {
+					}), e > r && this.throwError("too many arguments" + t, h.errors.UNEXPECTED_ARGUMENT, {
 						count: e,
 						expectedCount: r
 					})
 				}
 				checkNew(e, r) {
-					e !== Object && null != e || this.throwError("missing new", f.errors.MISSING_NEW, {
+					e !== Object && null != e || this.throwError("missing new", h.errors.MISSING_NEW, {
 						name: r.name
 					})
 				}
 				checkAbstract(e, r) {
-					e === r ? this.throwError("cannot instantiate abstract class " + JSON.stringify(r.name) + " directly; use a sub-class", f.errors.UNSUPPORTED_OPERATION, {
+					e === r ? this.throwError("cannot instantiate abstract class " + JSON.stringify(r.name) + " directly; use a sub-class", h.errors.UNSUPPORTED_OPERATION, {
 						name: e.name,
 						operation: "new"
-					}) : e !== Object && null != e || this.throwError("missing new", f.errors.MISSING_NEW, {
+					}) : e !== Object && null != e || this.throwError("missing new", h.errors.MISSING_NEW, {
 						name: r.name
 					})
 				}
 				static globalLogger() {
-					return a || (a = new f(n)), a
+					return a || (a = new h(n)), a
 				}
 				static setCensorship(e, r) {
-					if (!e && r && this.globalLogger().throwError("cannot permanently disable censorship", f.errors.UNSUPPORTED_OPERATION, {
+					if (!e && r && this.globalLogger().throwError("cannot permanently disable censorship", h.errors.UNSUPPORTED_OPERATION, {
 							operation: "setCensorship"
 						}), o) {
 						if (!e) return;
-						this.globalLogger().throwError("error censorship permanent", f.errors.UNSUPPORTED_OPERATION, {
+						this.globalLogger().throwError("error censorship permanent", h.errors.UNSUPPORTED_OPERATION, {
 							operation: "setCensorship"
 						})
 					}
@@ -764,13 +772,13 @@
 				}
 				static setLogLevel(e) {
 					const r = s[e.toLowerCase()];
-					null != r ? u = r : f.globalLogger().warn("invalid log level - " + e)
+					null != r ? u = r : h.globalLogger().warn("invalid log level - " + e)
 				}
 				static from(e) {
-					return new f(e)
+					return new h(e)
 				}
 			}
-			f.errors = d, f.levels = l
+			h.errors = d, h.levels = l
 		},
 		"./node_modules/@ethersproject/rlp/lib.esm/index.js": function(e, r, t) {
 			"use strict";
@@ -781,7 +789,7 @@
 			}));
 			var n = t("./node_modules/@ethersproject/bytes/lib.esm/index.js"),
 				o = t("./node_modules/@ethersproject/logger/lib.esm/index.js");
-			const i = new o.a("rlp/5.4.0");
+			const i = new o.b("rlp/5.4.0");
 
 			function s(e) {
 				const r = [];
@@ -818,7 +826,7 @@
 				const s = [];
 				for (; t < r + 1 + n;) {
 					const u = l(e, t);
-					s.push(u.result), (t += u.consumed) > r + 1 + n && i.throwError("child data too short", o.a.errors.BUFFER_OVERRUN, {})
+					s.push(u.result), (t += u.consumed) > r + 1 + n && i.throwError("child data too short", o.b.errors.BUFFER_OVERRUN, {})
 				}
 				return {
 					consumed: 1 + n,
@@ -827,28 +835,28 @@
 			}
 
 			function l(e, r) {
-				if (0 === e.length && i.throwError("data too short", o.a.errors.BUFFER_OVERRUN, {}), e[r] >= 248) {
+				if (0 === e.length && i.throwError("data too short", o.b.errors.BUFFER_OVERRUN, {}), e[r] >= 248) {
 					const t = e[r] - 247;
-					r + 1 + t > e.length && i.throwError("data short segment too short", o.a.errors.BUFFER_OVERRUN, {});
+					r + 1 + t > e.length && i.throwError("data short segment too short", o.b.errors.BUFFER_OVERRUN, {});
 					const n = u(e, r + 1, t);
-					return r + 1 + t + n > e.length && i.throwError("data long segment too short", o.a.errors.BUFFER_OVERRUN, {}), c(e, r, r + 1 + t, t + n)
+					return r + 1 + t + n > e.length && i.throwError("data long segment too short", o.b.errors.BUFFER_OVERRUN, {}), c(e, r, r + 1 + t, t + n)
 				}
 				if (e[r] >= 192) {
 					const t = e[r] - 192;
-					return r + 1 + t > e.length && i.throwError("data array too short", o.a.errors.BUFFER_OVERRUN, {}), c(e, r, r + 1, t)
+					return r + 1 + t > e.length && i.throwError("data array too short", o.b.errors.BUFFER_OVERRUN, {}), c(e, r, r + 1, t)
 				}
 				if (e[r] >= 184) {
 					const t = e[r] - 183;
-					r + 1 + t > e.length && i.throwError("data array too short", o.a.errors.BUFFER_OVERRUN, {});
+					r + 1 + t > e.length && i.throwError("data array too short", o.b.errors.BUFFER_OVERRUN, {});
 					const s = u(e, r + 1, t);
-					return r + 1 + t + s > e.length && i.throwError("data array too short", o.a.errors.BUFFER_OVERRUN, {}), {
+					return r + 1 + t + s > e.length && i.throwError("data array too short", o.b.errors.BUFFER_OVERRUN, {}), {
 						consumed: 1 + t + s,
 						result: Object(n.i)(e.slice(r + 1 + t, r + 1 + t + s))
 					}
 				}
 				if (e[r] >= 128) {
 					const t = e[r] - 128;
-					return r + 1 + t > e.length && i.throwError("data too short", o.a.errors.BUFFER_OVERRUN, {}), {
+					return r + 1 + t > e.length && i.throwError("data too short", o.b.errors.BUFFER_OVERRUN, {}), {
 						consumed: 1 + t,
 						result: Object(n.i)(e.slice(r + 1, r + 1 + t))
 					}
@@ -1473,7 +1481,7 @@
 		"./node_modules/qrcode/lib/core/reed-solomon-encoder.js": function(e, r, t) {
 			var n = t("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				o = t("./node_modules/qrcode/lib/core/polynomial.js"),
-				i = t("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer;
+				i = t("./node_modules/buffer/index.js").Buffer;
 
 			function s(e) {
 				this.genPoly = void 0, this.degree = e, this.degree && this.initialize(this.degree)
@@ -2048,4 +2056,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033.6dda1e61f320e3163721.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033.ec2b59f01815a82795f7.js.map

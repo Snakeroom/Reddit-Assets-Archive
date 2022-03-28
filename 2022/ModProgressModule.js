@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModProgressModule.d2a37c9301d275ed76e4.js
-// Retrieved at 3/15/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModProgressModule.9a2e41adf49974c35b44.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModProgressModule"], {
 		"./src/reddit/components/ModProgressModule/index.m.less": function(e, t, s) {
@@ -81,35 +81,36 @@
 				P = s.n(D);
 			const {
 				fbt: L
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = ({
-				id: e,
-				title: t,
-				iconIdentifier: s
-			}, o, r) => {
-				const i = C.b[s];
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), j = (e, t, s) => {
+				let {
+					id: o,
+					title: r,
+					iconIdentifier: i
+				} = e;
+				const a = C.b[i];
 				return n.a.createElement("div", {
 					className: Object(d.a)(P.a.Card, {
-						[P.a.unclickable]: o
+						[P.a.unclickable]: t
 					}),
-					key: e,
+					key: o,
 					onClick: e => {
-						e.stopPropagation(), !o && r()
+						e.stopPropagation(), !t && s()
 					}
 				}, n.a.createElement("span", {
 					className: P.a.ContentContainer
 				}, n.a.createElement("span", {
 					className: Object(d.a)(P.a.IconContainer, {
-						[P.a.completed]: o
+						[P.a.completed]: t
 					})
-				}, o ? n.a.createElement(T.a, {
+				}, t ? n.a.createElement(T.a, {
 					name: "checkmark",
 					className: P.a.CheckIcon
 				}) : n.a.createElement(T.a, {
-					name: i,
+					name: a,
 					className: P.a.Icon
 				})), n.a.createElement("span", {
 					className: P.a.CardTitle
-				}, t)))
+				}, r)))
 			}, B = Object(a.c)({
 				isTooltipOpen: e => Object(y.a)(e) === u.MOD_WELCOME_TOOLTIP_ID,
 				progressModuleRecords: k.c
@@ -437,4 +438,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModProgressModule.d2a37c9301d275ed76e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModProgressModule.9a2e41adf49974c35b44.js.map

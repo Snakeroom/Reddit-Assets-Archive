@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatorStats.ff13f2e56f043498b93a.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatorStats.22961f8c504b7ac53002.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatorStats"], {
 		"./src/reddit/components/CreatorStats/Stats.tsx": function(t, e, s) {
@@ -59,55 +59,61 @@
 						}
 					}]
 				},
-				S = ({
-					className: t,
-					hoverTooltip: e,
-					statNumber: s,
-					statNumberIconName: a,
-					statDescription: o,
-					iconName: r,
-					tooltipClassName: l,
-					tooltipTitleText: c,
-					tooltipDescriptionText: d,
-					tooltipExtra: m
-				}) => n.a.createElement("div", {
-					className: Object(i.a)(f.a.singleStat, t),
-					onMouseEnter: e && e.show,
-					onMouseLeave: e && e.hide,
-					ref: e && e.target.ref
-				}, n.a.createElement("div", {
-					className: f.a.statNumber
-				}, s, a && n.a.createElement(b.a, {
-					name: a,
-					className: f.a.statNumberIcon
-				})), n.a.createElement("div", {
-					className: f.a.statDescription
-				}, r && n.a.createElement(b.a, {
-					name: r,
-					className: f.a.icon
-				}), o), e && n.a.createElement(u.a, v({}, e, {
-					className: Object(i.a)(f.a.hoverTooltip, l)
-				}), c && n.a.createElement("div", {
-					className: f.a.tooltipTitle
-				}, c), d && n.a.createElement("div", {
-					className: f.a.tooltipDescription
-				}, d), m)),
-				N = ({
-					leftStatNumber: t,
-					leftStatDescription: e,
-					rightStatNumber: s,
-					rightStatDescription: a
-				}) => n.a.createElement("div", {
-					className: f.a.twoColumnContainer
-				}, n.a.createElement(S, {
-					className: f.a.twoColumnSingleStat,
-					statNumber: t,
-					statDescription: e
-				}), n.a.createElement(S, {
-					className: f.a.twoColumnSingleStat,
-					statNumber: s,
-					statDescription: a
-				})),
+				S = t => {
+					let {
+						className: e,
+						hoverTooltip: s,
+						statNumber: a,
+						statNumberIconName: o,
+						statDescription: r,
+						iconName: l,
+						tooltipClassName: c,
+						tooltipTitleText: d,
+						tooltipDescriptionText: m,
+						tooltipExtra: p
+					} = t;
+					return n.a.createElement("div", {
+						className: Object(i.a)(f.a.singleStat, e),
+						onMouseEnter: s && s.show,
+						onMouseLeave: s && s.hide,
+						ref: s && s.target.ref
+					}, n.a.createElement("div", {
+						className: f.a.statNumber
+					}, a, o && n.a.createElement(b.a, {
+						name: o,
+						className: f.a.statNumberIcon
+					})), n.a.createElement("div", {
+						className: f.a.statDescription
+					}, l && n.a.createElement(b.a, {
+						name: l,
+						className: f.a.icon
+					}), r), s && n.a.createElement(u.a, v({}, s, {
+						className: Object(i.a)(f.a.hoverTooltip, c)
+					}), d && n.a.createElement("div", {
+						className: f.a.tooltipTitle
+					}, d), m && n.a.createElement("div", {
+						className: f.a.tooltipDescription
+					}, m), p))
+				},
+				N = t => {
+					let {
+						leftStatNumber: e,
+						leftStatDescription: s,
+						rightStatNumber: a,
+						rightStatDescription: o
+					} = t;
+					return n.a.createElement("div", {
+						className: f.a.twoColumnContainer
+					}, n.a.createElement(S, {
+						className: f.a.twoColumnSingleStat,
+						statNumber: e,
+						statDescription: s
+					}), n.a.createElement(S, {
+						className: f.a.twoColumnSingleStat,
+						statNumber: a,
+						statDescription: o
+					}))
+				},
 				O = t => {
 					var e, s, o, r;
 					const i = Object(c.b)(C),
@@ -246,51 +252,55 @@
 			});
 			const _ = Object(l.a)(h.b),
 				C = Object(l.a)(h.a),
-				S = ({
-					postId: t,
-					subredditId: e
-				}) => async (s, a, {
-					gqlContext: o
-				}) => {
-					var r, n;
-					const i = a();
-					if (!Object(b.a)(i, t)) return;
-					if (!Object(m.a)(i, t)) return;
-					const l = Object(p.G)(i, {
-						postId: t
-					});
-					if (!(l && Object(c.d)(l.created))) return;
-					if (null === (n = null === (r = a().features) || void 0 === r ? void 0 : r.creatorStats) || void 0 === n ? void 0 : n.postStats[t]) return;
-					s(_());
-					const h = await (async (t, e) => {
-						return await Object(d.a)(t, {
-							...u,
-							variables: e
-						})
-					})(o(), {
-						postId: t,
-						subredditId: e
-					});
-					if (h.ok && h.body) {
-						const {
-							data: t
-						} = h.body, e = (t => {
-							const e = {},
-								s = {},
-								{
-									postStatsById: a,
-									subredditInfoById: o
-								} = t;
-							if (!a) return;
+				S = t => {
+					let {
+						postId: e,
+						subredditId: s
+					} = t;
+					return async (t, a, o) => {
+						let {
+							gqlContext: r
+						} = o;
+						var n, i;
+						const l = a();
+						if (!Object(b.a)(l, e)) return;
+						if (!Object(m.a)(l, e)) return;
+						const h = Object(p.G)(l, {
+							postId: e
+						});
+						if (!(h && Object(c.d)(h.created))) return;
+						if (null === (i = null === (n = a().features) || void 0 === n ? void 0 : n.creatorStats) || void 0 === i ? void 0 : i.postStats[e]) return;
+						t(_());
+						const f = await (async (t, e) => {
+							return await Object(d.a)(t, {
+								...u,
+								variables: e
+							})
+						})(r(), {
+							postId: e,
+							subredditId: s
+						});
+						if (f.ok && f.body) {
 							const {
-								id: r
-							} = a;
-							return e[r] = a, o && "id" in o && (s[o.id] = o), {
-								postStats: e,
-								subredditKarma: s
-							}
-						})(t);
-						e && s(C(e))
+								data: e
+							} = f.body, s = (t => {
+								const e = {},
+									s = {},
+									{
+										postStatsById: a,
+										subredditInfoById: o
+									} = t;
+								if (!a) return;
+								const {
+									id: r
+								} = a;
+								return e[r] = a, o && "id" in o && (s[o.id] = o), {
+									postStats: e,
+									subredditKarma: s
+								}
+							})(e);
+							s && t(C(s))
+						}
 					}
 				};
 			var N = s("./src/reddit/components/ShareMenu/index.tsx"),
@@ -432,4 +442,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.ff13f2e56f043498b93a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.22961f8c504b7ac53002.js.map

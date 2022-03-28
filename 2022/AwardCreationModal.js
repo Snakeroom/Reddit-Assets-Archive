@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.6f69fab227ba2e87baeb.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.5f13eab43a0a8f6cabbe.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -76,15 +76,17 @@
 				o = a("./src/lib/prettyPrintNumber/index.ts"),
 				i = a("./src/reddit/helpers/governance/tokens.ts"),
 				l = a("./src/reddit/constants/intlSupport.ts");
-			const c = (e, {
-					locale: t = n.DEFAULT_LOCALE,
-					pretty: a,
-					formatOptions: s
-				} = {}) => {
+			const c = function(e) {
+					let {
+						locale: t = n.DEFAULT_LOCALE,
+						pretty: a,
+						formatOptions: s
+					} = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 					const r = Number(e);
 					return Object(l.c)() ? a ? Object(o.b)(r) : new Intl.NumberFormat(t, s).format(r) : m(r, a, t)
 				},
-				d = (e, t = {}) => {
+				d = function(e) {
+					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 					const {
 						locale: a = n.DEFAULT_LOCALE,
 						pretty: o,
@@ -492,19 +494,20 @@
 					}
 				};
 			var pe = a("./src/reddit/hooks/useLocale.ts");
-			var ge = ({
-				num: e,
-				className: t,
-				...a
-			}) => {
-				const n = Object(pe.a)(),
-					r = Object(E.b)(e, {
-						locale: n,
-						...a
+			var ge = e => {
+				let {
+					num: t,
+					className: a,
+					...n
+				} = e;
+				const r = Object(pe.a)(),
+					o = Object(E.b)(t, {
+						locale: r,
+						...n
 					});
 				return s.a.createElement("span", {
-					className: t
-				}, r)
+					className: a
+				}, o)
 			};
 			const be = "CommunityAwardCreationModalImageInput",
 				Ce = 15,
@@ -1595,63 +1598,75 @@
 			const Je = Object(o.c)({
 					awards: m.e,
 					isPending: m.c,
-					isEligibleForGlobalAwards: (e, {
-						subredditId: t
-					}) => Object(l.b)(t),
-					isEligibleForTemporaryAwards: (e, {
-						subredditId: t
-					}) => Object(c.a)(t)
+					isEligibleForGlobalAwards: (e, t) => {
+						let {
+							subredditId: a
+						} = t;
+						return Object(l.b)(a)
+					},
+					isEligibleForTemporaryAwards: (e, t) => {
+						let {
+							subredditId: a
+						} = t;
+						return Object(c.a)(a)
+					}
 				}),
-				Ze = Object(r.b)(Je, (e, {
-					subredditId: t
-				}) => ({
-					onCreateCommunityAward: (a, n, s, r, o, i, l) => e(Object(d.d)(t, a, n, s, r, o, i, l)),
-					onCreateModAward: (a, n, s, r, o, i, l) => e(Object(d.f)(t, a, n, s, r, o, i, l)),
-					onCreateGlobalAward: ({
-						awardName: t,
-						awardSubType: a,
-						coinCost: n,
-						coinReward: s,
-						daysOfDripExtension: r,
-						daysOfPremium: o,
-						description: i,
-						endDate: l,
-						giverCoinReward: c,
-						iconFormat: m,
-						imageHeight: u,
-						imageUrl: h,
-						imageWidth: p,
-						isNew: g,
-						pennyPrice: b,
-						pennyDonate: C,
-						startDate: f,
-						subredditCoinReward: E
-					}) => e(Object(d.e)({
-						awardSubType: a,
-						coinPrice: n,
-						coinReward: s,
-						daysOfPremium: o,
-						daysOfDripExtension: r,
-						description: i,
-						endsAt: l,
-						giverCoinReward: c,
-						iconFormat: m,
-						iconUrl: h,
-						iconWidth: p,
-						iconHeight: u,
-						isNew: g,
-						pennyPrice: b,
-						pennyDonate: C,
-						name: t,
-						startsAt: f,
-						subredditCoinReward: E
-					})),
-					onCreateAwardFailed: t => e(Object(d.b)(t)),
-					onCreateAwardSuccess: a => e(Object(d.c)({
-						award: a,
-						subredditId: t
-					}))
-				}));
+				Ze = Object(r.b)(Je, (e, t) => {
+					let {
+						subredditId: a
+					} = t;
+					return {
+						onCreateCommunityAward: (t, n, s, r, o, i, l) => e(Object(d.d)(a, t, n, s, r, o, i, l)),
+						onCreateModAward: (t, n, s, r, o, i, l) => e(Object(d.f)(a, t, n, s, r, o, i, l)),
+						onCreateGlobalAward: t => {
+							let {
+								awardName: a,
+								awardSubType: n,
+								coinCost: s,
+								coinReward: r,
+								daysOfDripExtension: o,
+								daysOfPremium: i,
+								description: l,
+								endDate: c,
+								giverCoinReward: m,
+								iconFormat: u,
+								imageHeight: h,
+								imageUrl: p,
+								imageWidth: g,
+								isNew: b,
+								pennyPrice: C,
+								pennyDonate: f,
+								startDate: E,
+								subredditCoinReward: w
+							} = t;
+							return e(Object(d.e)({
+								awardSubType: n,
+								coinPrice: s,
+								coinReward: r,
+								daysOfPremium: i,
+								daysOfDripExtension: o,
+								description: l,
+								endsAt: c,
+								giverCoinReward: m,
+								iconFormat: u,
+								iconUrl: p,
+								iconWidth: g,
+								iconHeight: h,
+								isNew: b,
+								pennyPrice: C,
+								pennyDonate: f,
+								name: a,
+								startsAt: E,
+								subredditCoinReward: w
+							}))
+						},
+						onCreateAwardFailed: t => e(Object(d.b)(t)),
+						onCreateAwardSuccess: t => e(Object(d.c)({
+							award: t,
+							subredditId: a
+						}))
+					}
+				});
 			t.default = Object(i.b)(Ze(Object(h.c)(class extends s.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
@@ -2018,13 +2033,16 @@
 						onChange: this.onSelect,
 						value: this.props.selectedTimezoneName,
 						className: Object(r.a)(c.a.select, this.props.className)
-					}, this.state.timezoneOptions.map(({
-						name: e,
-						displayText: t
-					}) => s.a.createElement("option", {
-						key: e,
-						value: e
-					}, t)))
+					}, this.state.timezoneOptions.map(e => {
+						let {
+							name: t,
+							displayText: a
+						} = e;
+						return s.a.createElement("option", {
+							key: t,
+							value: t
+						}, a)
+					}))
 				}
 			}
 			t.a = m
@@ -2152,4 +2170,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.6f69fab227ba2e87baeb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.5f13eab43a0a8f6cabbe.js.map

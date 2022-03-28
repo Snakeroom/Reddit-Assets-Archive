@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ViewsTooltip.ba2958ddb3b6e73b42dd.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ViewsTooltip.1442e087fd62a12ef793.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ViewsTooltip"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, l) {
@@ -304,11 +304,12 @@
 				i = l.n(r),
 				h = l("./src/reddit/constants/colors.ts");
 			const b = Math.floor(4 * Math.random()),
-				k = ({
-					views: e,
-					lastHourViews: o
-				}) => {
-					const l = {
+				k = e => {
+					let {
+						views: o,
+						lastHourViews: l
+					} = e;
+					const s = {
 							icon: "https://www.redditstatic.com/gold/awards/icon/Superheart_256.png",
 							text: [{
 								header: m.fbt._("Nice job!", null, {
@@ -340,7 +341,7 @@
 								})
 							}]
 						},
-						s = {
+						n = {
 							icon: "https://i.redd.it/award_images/t5_22cerq/s5edqq9abef41_StonksRising.png",
 							text: [{
 								header: m.fbt._("This post is rising!", null, {
@@ -372,7 +373,7 @@
 								})
 							}]
 						},
-						n = {
+						d = {
 							icon: "https://i.redd.it/award_images/t5_22cerq/kqr00h8b7q161_BurningCash.png",
 							text: [{
 								header: m.fbt._("What?!", null, {
@@ -397,16 +398,16 @@
 								})
 							}]
 						},
-						d = ((e, o) => o >= 10 ? s : e >= 500 ? n : l)(e, o),
-						a = d.text[b];
+						a = ((e, o) => o >= 10 ? n : e >= 500 ? d : s)(o, l),
+						c = a.text[b];
 					return t.a.createElement("div", {
 						className: i.a.copyContainer
 					}, t.a.createElement("div", null, t.a.createElement("span", {
 						className: i.a.copyHeader
-					}, a.header), t.a.createElement("span", {
+					}, c.header), t.a.createElement("span", {
 						className: i.a.copyDescription
-					}, " ", a.description)), t.a.createElement("div", null, t.a.createElement("img", {
-						src: d.icon,
+					}, " ", c.description)), t.a.createElement("div", null, t.a.createElement("img", {
+						src: a.icon,
 						alt: m.fbt._("copy award icon", null, {
 							hk: "3rifVz"
 						}),
@@ -414,24 +415,31 @@
 					})))
 				},
 				p = 2 * c.B;
-			o.default = Object(j.a)(({
-				viewsData: e,
-				totalCount: o,
-				theme: l
-			}) => {
-				const s = {
-						labels: e.map(({
-							at: e
-						}) => e),
+			o.default = Object(j.a)(e => {
+				let {
+					viewsData: o,
+					totalCount: l,
+					theme: s
+				} = e;
+				const d = {
+						labels: o.map(e => {
+							let {
+								at: o
+							} = e;
+							return o
+						}),
 						datasets: [{
-							data: e.map(({
-								value: e
-							}) => e),
+							data: o.map(e => {
+								let {
+									value: o
+								} = e;
+								return o
+							}),
 							backgroundColor: h.a.op,
 							borderRadius: 2
 						}]
 					},
-					d = {
+					c = {
 						plugins: {
 							legend: {
 								display: !1
@@ -443,10 +451,10 @@
 						scales: {
 							x: {
 								...(() => {
-									const o = new Date(e[0].at);
+									const e = new Date(o[0].at);
 									return {
-										min: o.getTime(),
-										max: o.getTime() + p
+										min: e.getTime(),
+										max: e.getTime() + p
 									}
 								})(),
 								type: "time",
@@ -475,7 +483,7 @@
 									color: e => {
 										var o;
 										return (null === (o = null == e ? void 0 : e.tick) || void 0 === o ? void 0 : o.label) ? Object(_.a)({
-											theme: l
+											theme: s
 										}).placeholder : ""
 									},
 									drawBorder: !1
@@ -489,7 +497,7 @@
 								},
 								grid: {
 									color: e => 2 === (null == e ? void 0 : e.index) ? "" : Object(_.a)({
-										theme: l
+										theme: s
 									}).placeholder,
 									drawBorder: !1
 								}
@@ -497,23 +505,23 @@
 						}
 					};
 				return t.a.createElement(t.a.Fragment, null, t.a.createElement(k, {
-					views: o,
-					lastHourViews: e[e.length - 1].value
+					views: l,
+					lastHourViews: o[o.length - 1].value
 				}), t.a.createElement("div", {
 					className: i.a.graphTitle
 				}, m.fbt._("First 48 hours", null, {
 					hk: "1ynLLb"
 				})), t.a.createElement(a.a, {
 					height: 100,
-					data: s,
-					options: d
+					data: d,
+					options: c
 				}), t.a.createElement("div", {
 					className: i.a.barContainerStats
 				}, t.a.createElement("div", {
 					className: i.a.graphSingleStat
 				}, t.a.createElement("div", {
 					className: i.a.statNumber
-				}, Object(u.b)(o)), t.a.createElement("div", {
+				}, Object(u.b)(l)), t.a.createElement("div", {
 					className: i.a.statDescription
 				}, m.fbt._("Total views", null, {
 					hk: "4sCYIU"
@@ -522,4 +530,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ViewsTooltip.ba2958ddb3b6e73b42dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ViewsTooltip.1442e087fd62a12ef793.js.map

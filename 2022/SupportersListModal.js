@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.75e74441b4ca12e3daf9.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.4e557e5761241be8d24a.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, s) {
@@ -22,21 +22,24 @@
 				i = s.n(l);
 			const {
 				fbt: c
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), d = ({
-				className: e,
-				highContrast: t,
-				onClick: s
-			}) => a.a.createElement("button", {
-				onClick: s,
-				className: Object(r.a)(i.a.closeButton, {
-					[i.a.highContrast]: t
-				}, e),
-				"aria-label": c._("Close", null, {
-					hk: "3Qarlp"
-				})
-			}, a.a.createElement(o.b, {
-				className: i.a.closeIcon
-			}))
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), d = e => {
+				let {
+					className: t,
+					highContrast: s,
+					onClick: n
+				} = e;
+				return a.a.createElement("button", {
+					onClick: n,
+					className: Object(r.a)(i.a.closeButton, {
+						[i.a.highContrast]: s
+					}, t),
+					"aria-label": c._("Close", null, {
+						hk: "3Qarlp"
+					})
+				}, a.a.createElement(o.b, {
+					className: i.a.closeIcon
+				}))
+			}
 		},
 		"./src/reddit/components/PowerupsCtaButton/index.tsx": function(e, t, s) {
 			"use strict";
@@ -50,19 +53,20 @@
 				l = s("./src/reddit/selectors/gold/powerups/index.ts");
 			const {
 				fbt: i
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), c = ({
-				className: e,
-				onClick: t,
-				disabled: s
-			}) => {
-				const r = Object(a.e)(l.w);
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), c = e => {
+				let {
+					className: t,
+					onClick: s,
+					disabled: r
+				} = e;
+				const c = Object(a.e)(l.w);
 				return n.a.createElement(o.t, {
 					priority: o.c.Primary,
-					className: e,
-					onClick: t,
+					className: t,
+					onClick: s,
 					isFullWidth: !0,
-					disabled: s
-				}, (() => r ? i._("Use Your Premium Powerup", null, {
+					disabled: r
+				}, (() => c ? i._("Use Your Premium Powerup", null, {
 					hk: "JJNaN"
 				}) : i._("Become a Hero", null, {
 					hk: "3IZNw3"
@@ -465,15 +469,18 @@
 					n = `${r.a.assetPath}/img/powerups/snoovatar_anonymous.svg`;
 				return s ? n : null === (t = null == e ? void 0 : e.icon) || void 0 === t ? void 0 : t.url
 			}
-			const m = ({
-				displayName: e,
-				score: t
-			}) => e || n.fbt._({
-				"*": "Anonymous Heroes",
-				_1: "Anonymous Hero"
-			}, [n.fbt._plural(t)], {
-				hk: "8kyEI"
-			}).toString()
+			const m = e => {
+				let {
+					displayName: t,
+					score: s
+				} = e;
+				return t || n.fbt._({
+					"*": "Anonymous Heroes",
+					_1: "Anonymous Hero"
+				}, [n.fbt._plural(s)], {
+					hk: "8kyEI"
+				}).toString()
+			}
 		},
 		"./src/reddit/components/ScrollGradient/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -491,14 +498,17 @@
 				a = s.n(n),
 				o = s("./src/reddit/components/ScrollGradient/index.m.less"),
 				l = s.n(o);
-			const i = ({
-				className: e,
-				isVisible: t
-			}) => a.a.createElement("div", {
-				className: Object(r.a)(l.a.gradient, e, {
-					[l.a.visible]: t
+			const i = e => {
+				let {
+					className: t,
+					isVisible: s
+				} = e;
+				return a.a.createElement("div", {
+					className: Object(r.a)(l.a.gradient, t, {
+						[l.a.visible]: s
+					})
 				})
-			})
+			}
 		},
 		"./src/reddit/hooks/usePreloadModal.ts": function(e, t, s) {
 			"use strict";
@@ -522,7 +532,8 @@
 			}));
 			var r, n = s("./node_modules/react/index.js");
 
-			function a(e, t = r.Bottom) {
+			function a(e) {
+				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.Bottom;
 				const [s, a] = Object(n.useState)(e), o = Object(n.useRef)(null);
 				return {
 					container: o,
@@ -644,4 +655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.75e74441b4ca12e3daf9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.4e557e5761241be8d24a.js.map

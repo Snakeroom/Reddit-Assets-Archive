@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.dfdd2cac2222e28ad3b9.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.8922bf773edb92eb0a00.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-CommentsPage-OtherDiscussions"], {
 		"./src/reddit/pages/CommentsPage/OtherDiscussions/index.m.less": function(e, s, t) {
@@ -43,38 +43,45 @@
 			const {
 				fbt: j
 			} = t("./node_modules/fbt/lib/FbtPublic.js"), v = a.a.div("Container", P.a), k = Object(r.b)(() => Object(o.c)({
-				apiError: (e, {
-					postId: s
-				}) => Object(D.c)(e, {
-					listingKey: Object(d.a)(s, null, {
-						isOtherDiscussions: !0
+				apiError: (e, s) => {
+					let {
+						postId: t
+					} = s;
+					return Object(D.c)(e, {
+						listingKey: Object(d.a)(t, null, {
+							isOtherDiscussions: !0
+						})
 					})
-				}),
-				apiPending: (e, {
-					postId: s
-				}) => Object(D.d)(e, {
-					listingKey: Object(d.a)(s, null, {
-						isOtherDiscussions: !0
+				},
+				apiPending: (e, s) => {
+					let {
+						postId: t
+					} = s;
+					return Object(D.d)(e, {
+						listingKey: Object(d.a)(t, null, {
+							isOtherDiscussions: !0
+						})
 					})
-				}),
+				},
 				post: _.G
 			}));
-			s.default = Object(p.c)(k(({
-				apiError: e,
-				apiPending: s,
-				commentSort: t,
-				isOverlay: n,
-				post: r,
-				postId: o,
-				postPermalink: a,
-				sendEvent: p
-			}) => {
-				var D;
-				const _ = null !== (D = r.numDuplicates) && void 0 !== D ? D : 0,
-					y = Object(d.a)(o, null, {
+			s.default = Object(p.c)(k(e => {
+				let {
+					apiError: s,
+					apiPending: t,
+					commentSort: n,
+					isOverlay: r,
+					post: o,
+					postId: a,
+					postPermalink: p,
+					sendEvent: D
+				} = e;
+				var _;
+				const y = null !== (_ = o.numDuplicates) && void 0 !== _ ? _ : 0,
+					E = Object(d.a)(a, null, {
 						isOtherDiscussions: !0
 					}),
-					E = _ > 0 ? _ : 0;
+					k = y > 0 ? y : 0;
 				return i.a.createElement(v, null, i.a.createElement("div", {
 					className: Object(c.a)(P.a.HeaderPane, L.a.CommentsNavigationPane)
 				}, i.a.createElement("div", {
@@ -82,31 +89,31 @@
 				}, j._({
 					"*": "{Other discussions count} other discussions",
 					_1: "1 other discussion"
-				}, [j._plural(E, "Other discussions count")], {
+				}, [j._plural(k, "Other discussions count")], {
 					hk: "3ee7xp"
 				})), i.a.createElement(m.a, {
 					className: L.a.OtherDiscussionsLink,
-					isOverlay: n,
-					onClick: () => p(Object(x.b)(o)),
-					to: Object(g.b)(a)
+					isOverlay: r,
+					onClick: () => D(Object(x.b)(a)),
+					to: Object(g.b)(p)
 				}, i.a.createElement(C.a, {
 					className: P.a.CommentIcon,
 					role: "presentation"
 				}), j._("Return to comments", null, {
 					hk: "HxD5d"
-				}))), e && i.a.createElement(l.e, {
-					apiError: e,
+				}))), s && i.a.createElement(l.e, {
+					apiError: s,
 					commentId: null,
-					postId: o,
-					sort: t
-				}), s && !e && i.a.createElement(l.f, null), !s && !e && i.a.createElement(u.a, {
+					postId: a,
+					sort: n
+				}), t && !s && i.a.createElement(l.f, null), !t && !s && i.a.createElement(u.a, {
 					enableElementHiding: !1,
 					forcedLayout: b.g.Compact,
-					listingKey: y,
+					listingKey: E,
 					listingName: O.d.OtherDiscussions,
 					listingViewed: (e, s) => Object(h.f)({
-						key: y,
-						sort: t,
+						key: E,
+						sort: n,
 						timerType: s,
 						timerMillis: e
 					}),
@@ -118,4 +125,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.dfdd2cac2222e28ad3b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-CommentsPage-OtherDiscussions.8922bf773edb92eb0a00.js.map

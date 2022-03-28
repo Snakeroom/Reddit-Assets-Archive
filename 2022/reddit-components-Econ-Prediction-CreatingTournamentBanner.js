@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.a53fe7c0412ab0dd3e04.js
-// Retrieved at 1/24/2022, 7:30:09 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.3078c01af14b181e9e99.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-CreatingTournamentBanner"], {
 		"./src/reddit/components/Econ/Prediction/CreatingTournamentBanner/index.m.less": function(e, t, n) {
@@ -35,17 +35,18 @@
 				fbt: p
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function g({
-				subreddit: e
-			}) {
-				const t = Object(r.d)(),
-					[n, _] = Object(i.useState)(!1),
-					g = Object(r.e)(t => !!e && Object(m.j)(t, {
-						subredditId: e.id
+			function g(e) {
+				let {
+					subreddit: t
+				} = e;
+				const n = Object(r.d)(),
+					[_, g] = Object(i.useState)(!1),
+					j = Object(r.e)(e => !!t && Object(m.j)(e, {
+						subredditId: t.id
 					}));
-				return Object(r.e)(t => !!e && Object(b.h)(t, {
-					subredditId: e.id
-				})) && g ? s.a.createElement("div", {
+				return Object(r.e)(e => !!t && Object(b.h)(e, {
+					subredditId: t.id
+				})) && j ? s.a.createElement("div", {
 					className: x.a.creatingTournamentBanner
 				}, s.a.createElement("h1", {
 					className: x.a.title
@@ -57,15 +58,15 @@
 					hk: "3vuTHr"
 				})), s.a.createElement(c.l, {
 					className: Object(d.a)(x.a.button, x.a.reloadButton, {
-						[x.a.isLoading]: n
+						[x.a.isLoading]: _
 					}),
 					onClick: async () => {
-						if (!e || n) return null;
-						_(!0), (await t(Object(a.l)(e.name)))[0].status === u.a.Live && await t(Object(o.s)({
-							subredditName: e.name
-						})), _(!1)
+						if (!t || _) return null;
+						g(!0), (await n(Object(a.l)(t.name)))[0].status === u.a.Live && await n(Object(o.s)({
+							subredditName: t.name
+						})), g(!1)
 					}
-				}, n ? s.a.createElement(l.a, {
+				}, _ ? s.a.createElement(l.a, {
 					className: x.a.loadingSpinner,
 					sizePx: 16
 				}) : p._("Reload", null, {
@@ -75,4 +76,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.a53fe7c0412ab0dd3e04.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-CreatingTournamentBanner.3078c01af14b181e9e99.js.map

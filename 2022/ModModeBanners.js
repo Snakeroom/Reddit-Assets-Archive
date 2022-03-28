@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.fdef1986d7655cf34cf0.js
-// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.b7b73bcb711ff6cefb79.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
@@ -40,47 +40,50 @@
 				R = s("./src/reddit/actions/comment/index.ts"),
 				v = s("./src/reddit/actions/comment/constants.ts");
 			const f = Object(r.a)(v.n),
-				_ = e => async (t, s, {
-					apiContext: o
-				}) => {
-					s().features.comments.models[e] && (await Object(m.j)(o(), e)).ok && t((e => async t => {
+				_ = e => async (t, s, o) => {
+					let {
+						apiContext: n
+					} = o;
+					s().features.comments.models[e] && (await Object(m.j)(n(), e)).ok && t((e => async t => {
 						t(f({
 							commentId: e
 						}))
 					})(e))
-				}, O = e => async (t, s, {
-					apiContext: n
-				}) => {
+				}, O = e => async (t, s, n) => {
+					let {
+						apiContext: r
+					} = n;
 					if (!Object(h.P)(s())) return void t(Object(d.i)(l.a.LOGIN_MODAL_ID));
-					const r = s().features.comments.models[e];
-					if (!r) return;
-					const a = r.isLocked ? m.l : m.e;
+					const a = s().features.comments.models[e];
+					if (!a) return;
+					const i = a.isLocked ? m.l : m.e;
 					t(Object(R.i)({
 						[e]: {
-							isLocked: !r.isLocked
+							isLocked: !a.isLocked
 						}
-					})), (await a(n(), e)).ok ? t(Object(c.f)({
+					})), (await i(r(), e)).ok ? t(Object(c.f)({
 						kind: b.b.SuccessMod,
-						text: r.isLocked ? o.fbt._("comment has been unlocked", null, {
+						text: a.isLocked ? o.fbt._("comment has been unlocked", null, {
 							hk: "BYjts"
 						}) : o.fbt._("comment has been locked", null, {
 							hk: "1pBDQl"
 						})
 					})) : t(Object(R.i)({
 						[e]: {
-							isLocked: r.isLocked
+							isLocked: a.isLocked
 						}
 					}))
-				}, j = Object(r.a)(v.G), k = e => async (t, s, {
-					apiContext: n
-				}) => {
-					const r = s(),
-						a = r.features.comments.models[e],
-						d = r.user.account ? r.user.account.displayText : null;
-					a && d && (t(Object(R.i)({
+				}, j = Object(r.a)(v.G), k = e => async (t, s, n) => {
+					let {
+						apiContext: r
+					} = n;
+					const a = s(),
+						d = a.features.comments.models[e],
+						l = a.user.account ? a.user.account.displayText : null;
+					d && l && (t(Object(R.i)({
 						[e]: {
 							isApproved: !0,
-							approvedBy: d,
+							approvedBy: l,
 							bannedBy: null,
 							isRemoved: !1,
 							isSpam: !1,
@@ -89,39 +92,40 @@
 							modRemovalReason: null,
 							numReports: 0
 						}
-					})), (await Object(m.a)(n(), e)).ok ? t(Object(c.f)({
+					})), (await Object(m.a)(r(), e)).ok ? t(Object(c.f)({
 						kind: b.b.SuccessMod,
 						text: o.fbt._("comment has been approved", null, {
 							hk: "4GfKQi"
 						})
 					})) : t(Object(R.i)({
 						[e]: {
-							isApproved: a.isApproved,
+							isApproved: d.isApproved,
 							approvedBy: null,
-							bannedBy: a.bannedBy,
-							isRemoved: a.isRemoved,
-							isSpam: a.isSpam,
-							modNote: a.modNote,
-							modReasonBy: a.modReasonBy,
-							modRemovalReason: a.modRemovalReason,
-							numReports: a.numReports || null
+							bannedBy: d.bannedBy,
+							isRemoved: d.isRemoved,
+							isSpam: d.isSpam,
+							modNote: d.modNote,
+							modReasonBy: d.modReasonBy,
+							modRemovalReason: d.modRemovalReason,
+							numReports: d.numReports || null
 						}
 					})), Object(i.d)())
-				}, E = (e, t) => async (s, n, {
-					apiContext: r
-				}) => {
-					const a = n(),
-						d = a.features.comments.models[e],
-						l = a.user.account ? a.user.account.displayText : null;
-					d && l && (s(Object(R.i)({
+				}, E = (e, t) => async (s, n, r) => {
+					let {
+						apiContext: a
+					} = r;
+					const d = n(),
+						l = d.features.comments.models[e],
+						p = d.user.account ? d.user.account.displayText : null;
+					l && p && (s(Object(R.i)({
 						[e]: {
 							approvedBy: null,
-							bannedBy: l,
+							bannedBy: p,
 							isApproved: !1,
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), (await Object(m.h)(r(), e, t)).ok ? s(Object(c.f)({
+					})), (await Object(m.h)(a(), e, t)).ok ? s(Object(c.f)({
 						kind: b.b.SuccessMod,
 						text: t ? o.fbt._("comment has been marked as spam", null, {
 							hk: "4fQaFM"
@@ -130,53 +134,55 @@
 						})
 					})) : s(Object(R.i)({
 						[e]: {
-							approvedBy: d.approvedBy,
-							bannedBy: d.bannedBy,
-							isApproved: d.isApproved,
-							isRemoved: d.isRemoved,
-							isSpam: d.isSpam
+							approvedBy: l.approvedBy,
+							bannedBy: l.bannedBy,
+							isApproved: l.isApproved,
+							isRemoved: l.isRemoved,
+							isSpam: l.isSpam
 						}
 					})), Object(i.d)())
-				}, C = e => async (t, s, {
-					apiContext: n
-				}) => {
-					const r = s().features.comments.models[e];
-					if (!r) return;
-					const a = r.ignoreReports ? m.k : m.d;
+				}, C = e => async (t, s, n) => {
+					let {
+						apiContext: r
+					} = n;
+					const a = s().features.comments.models[e];
+					if (!a) return;
+					const d = a.ignoreReports ? m.k : m.d;
 					t(Object(R.i)({
 						[e]: {
-							ignoreReports: !r.ignoreReports
+							ignoreReports: !a.ignoreReports
 						}
-					})), (await a(n(), e)).ok ? t(Object(c.f)({
+					})), (await d(r(), e)).ok ? t(Object(c.f)({
 						kind: b.b.SuccessMod,
-						text: r.ignoreReports ? o.fbt._("comment has had its reports un-ignored", null, {
+						text: a.ignoreReports ? o.fbt._("comment has had its reports un-ignored", null, {
 							hk: "HcpVV"
 						}) : o.fbt._("comment has had its reports ignored", null, {
 							hk: "2q4sCp"
 						})
 					})) : t(Object(R.i)({
 						[e]: {
-							ignoreReports: r.ignoreReports
+							ignoreReports: a.ignoreReports
 						}
 					}))
-				}, N = (e, t, s) => async (r, a, {
-					gqlContext: d
-				}) => {
-					const i = Object(x.b)(a(), {
+				}, N = (e, t, s) => async (r, a, d) => {
+					let {
+						gqlContext: i
+					} = d;
+					const l = Object(x.b)(a(), {
 						commentId: e
 					});
-					if (!i) return;
-					const l = s === n.dc.Snoozed,
-						m = {
+					if (!l) return;
+					const m = s === n.dc.Snoozed,
+						g = {
 							itemId: e,
 							reportText: t,
-							isSnoozed: l
+							isSnoozed: m
 						};
-					if ((await Object(p.a)(d(), {
-							input: m
+					if ((await Object(p.a)(i(), {
+							input: g
 						})).ok) r(Object(R.i)({
 						[e]: {
-							userReports: Object(u.a)(i.userReports, t, l)
+							userReports: Object(u.a)(l.userReports, t, m)
 						}
 					}));
 					else {
@@ -185,17 +191,18 @@
 						}), b.b.Error);
 						r(Object(c.f)(e))
 					}
-				}, M = (e, t, s) => async (o, r, {
-					apiContext: d,
-					gqlContext: i
-				}) => {
-					const c = r(),
-						l = c.features.comments.models[e];
-					if (!l) return;
-					const p = l.postId,
-						u = c.postStickiedComments.data[p],
-						b = n.g[t];
-					let x;
+				}, M = (e, t, s) => async (o, r, d) => {
+					let {
+						apiContext: i,
+						gqlContext: c
+					} = d;
+					const l = r(),
+						p = l.features.comments.models[e];
+					if (!p) return;
+					const u = p.postId,
+						b = l.postStickiedComments.data[u],
+						x = n.g[t];
+					let h;
 					if (o(Object(R.i)({
 							[e]: {
 								distinguishType: t,
@@ -203,35 +210,35 @@
 								isMod: t === n.G.MODERATOR,
 								isStickied: !!s
 							}
-						})), s && u && u !== e && o(Object(R.i)({
-							[u]: {
+						})), s && b && b !== e && o(Object(R.i)({
+							[b]: {
 								isStickied: !1
 							}
 						})), Object(g.a)(r())) {
-						const o = Object(m.b)(i(), e, t),
-							n = Object(m.c)(i(), e, !!s),
+						const o = Object(m.b)(c(), e, t),
+							n = Object(m.c)(c(), e, !!s),
 							r = [o];
-						(s || !s && e === u) && r.push(n), x = {
+						(s || !s && e === b) && r.push(n), h = {
 							ok: (await Promise.all(r)).every(e => e.ok)
 						}
-					} else x = await Object(m.g)(d(), e, b, s || null);
-					x.ok ? s && o(j({
+					} else h = await Object(m.g)(i(), e, x, s || null);
+					h.ok ? s && o(j({
 						id: e,
-						postId: p,
-						commentsPageKey: Object(a.a)(p, null, {
+						postId: u,
+						commentsPageKey: Object(a.a)(u, null, {
 							sort: n.u.CONFIDENCE,
-							...c.platform.currentPage.queryParams
+							...l.platform.currentPage.queryParams
 						})
 					})) : (o(Object(R.i)({
 						[e]: {
-							distinguishType: l.distinguishType,
-							isAdmin: l.isAdmin,
-							isMod: l.isMod,
-							isStickied: l.isStickied
+							distinguishType: p.distinguishType,
+							isAdmin: p.isAdmin,
+							isMod: p.isMod,
+							isStickied: p.isStickied
 						}
 					})), o(Object(R.i)({
-						[u]: {
-							isStickied: c.features.comments.models[u].isStickied
+						[b]: {
+							isStickied: l.features.comments.models[b].isStickied
 						}
 					})))
 				}
@@ -255,41 +262,45 @@
 				c = s("./src/reddit/components/ModModeFilteredReason/_ModModeFilteredReason.m.less"),
 				l = s.n(c),
 				m = s("./src/reddit/icons/fonts/index.tsx");
-			var p = ({
-					iconName: e,
-					children: t
-				}) => n.a.createElement(n.a.Fragment, null, n.a.createElement(m.a, {
-					isFilled: !0,
-					name: e,
-					className: Object(r.a)(l.a.coloredIcon, d.a.icon)
-				}), t),
+			var p = e => {
+					let {
+						iconName: t,
+						children: s
+					} = e;
+					return n.a.createElement(n.a.Fragment, null, n.a.createElement(m.a, {
+						isFilled: !0,
+						name: t,
+						className: Object(r.a)(l.a.coloredIcon, d.a.icon)
+					}), s)
+				},
 				u = s("./src/reddit/components/ModModeFilteredReason/helpers.ts");
 			const {
 				fbt: b
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), x = e => e ? `: ${e}` : "";
-			t.default = ({
-				thing: e
-			}) => {
-				var t, s;
+			t.default = e => {
+				let {
+					thing: t
+				} = e;
+				var s, o;
 				return n.a.createElement("ul", {
 					className: Object(r.a)(l.a.banner, d.a.banner)
-				}, Object(u.c)(e) && n.a.createElement("li", {
+				}, Object(u.c)(t) && n.a.createElement("li", {
 					className: l.a.listItem
 				}, n.a.createElement(p, {
 					iconName: "mod_mode_fill"
-				}, b._("Blocked by Automatic Filter{reason}", [b._param("reason", x(null === (t = Object(i.b)(e, i.a.HATEFUL_CONTENT)) || void 0 === t ? void 0 : t.message))], {
+				}, b._("Blocked by Automatic Filter{reason}", [b._param("reason", x(null === (s = Object(i.b)(t, i.a.HATEFUL_CONTENT)) || void 0 === s ? void 0 : s.message))], {
 					hk: "3IxjRX"
-				}))), Object(u.b)(e) && n.a.createElement("li", {
+				}))), Object(u.b)(t) && n.a.createElement("li", {
 					className: l.a.listItem
 				}, n.a.createElement(p, {
 					iconName: "crowd_control"
 				}, b._("Blocked by Crowd Control", null, {
 					hk: "1gAVrC"
-				}))), Object(u.a)(e) && n.a.createElement("li", {
+				}))), Object(u.a)(t) && n.a.createElement("li", {
 					className: l.a.listItem
 				}, n.a.createElement(p, {
 					iconName: "bot"
-				}, b._("Blocked by AutoMod{reason}", [b._param("reason", x((null === (s = Object(i.b)(e, i.a.AUTOMOD)) || void 0 === s ? void 0 : s.message) || e.modNote))], {
+				}, b._("Blocked by AutoMod{reason}", [b._param("reason", x((null === (o = Object(i.b)(t, i.a.AUTOMOD)) || void 0 === o ? void 0 : o.message) || t.modNote))], {
 					hk: "3yuGbK"
 				}))))
 			}
@@ -325,75 +336,79 @@
 				g = s("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				h = s("./src/reddit/components/ModModeReports/_ModModeReports.m.less"),
 				R = s.n(h);
-			const v = ({
-				handleToggleExpando: e,
-				isHistoricalReports: t,
-				numReports: s,
-				modReports: n,
-				userReports: d,
-				collapseReports: m,
-				reportedThingId: p
-			}) => r.a.createElement("div", {
-				className: Object(a.a)(R.a.banner, i.a.banner, m && R.a.collapsed)
-			}, r.a.createElement("div", {
-				className: R.a.contentContainer
-			}, m ? r.a.createElement(b.a, {
-				className: Object(a.a)(i.a.icon, R.a.coloredIcon)
-			}) : r.a.createElement(x.a, {
-				className: Object(a.a)(i.a.icon, R.a.coloredIcon)
-			}), r.a.createElement("div", {
-				className: R.a.reportsWrapper
-			}, m ? s : r.a.createElement(c.a, {
-				className: R.a.reports,
-				modReports: n,
-				userReports: d,
-				reportedThingId: p
-			})), t ? r.a.createElement(l.c, {
-				className: R.a.ignoreButton,
-				onClick: e,
-				text: o.fbt._("old reports", null, {
-					hk: "2IdZOv"
-				})
-			}, r.a.createElement(g.a, {
-				className: R.a.ignoreButtonIcon
-			})) : r.a.createElement(l.c, {
-				className: R.a.ignoreButton,
-				onClick: e,
-				text: m ? o.fbt._("Restore Reports", null, {
-					hk: "2O219R"
-				}) : o.fbt._("ignore reports", null, {
-					hk: "48jlNW"
-				})
-			}, m ? r.a.createElement(x.a, {
-				className: R.a.ignoreButtonIcon
-			}) : r.a.createElement(b.a, {
-				className: R.a.ignoreButtonIcon
-			}))));
-			t.default = ({
-				reportable: e,
-				onIgnoreReports: t
-			}) => {
-				const [s, o] = Object(n.useState)(!0), a = Object(m.b)(), d = () => {
-					let s;
-					t();
-					const o = e.ignoreReports ? "restore_reports" : "ignore_reports";
-					s = Object(p.a)(e.id) ? Object(u.h)(o, e.id) : Object(u.g)(o, e.id), a(s)
-				}, i = (e.modReportsDismissed && e.modReportsDismissed.length || 0) + (e.userReportsDismissed && e.userReportsDismissed.length || 0);
-				return i ? r.a.createElement(v, {
-					collapseReports: s,
-					handleToggleExpando: () => o(e => !e),
+			const v = e => {
+				let {
+					handleToggleExpando: t,
+					isHistoricalReports: s,
+					numReports: n,
+					modReports: d,
+					userReports: m,
+					collapseReports: p,
+					reportedThingId: u
+				} = e;
+				return r.a.createElement("div", {
+					className: Object(a.a)(R.a.banner, i.a.banner, p && R.a.collapsed)
+				}, r.a.createElement("div", {
+					className: R.a.contentContainer
+				}, p ? r.a.createElement(b.a, {
+					className: Object(a.a)(i.a.icon, R.a.coloredIcon)
+				}) : r.a.createElement(x.a, {
+					className: Object(a.a)(i.a.icon, R.a.coloredIcon)
+				}), r.a.createElement("div", {
+					className: R.a.reportsWrapper
+				}, p ? n : r.a.createElement(c.a, {
+					className: R.a.reports,
+					modReports: d,
+					userReports: m,
+					reportedThingId: u
+				})), s ? r.a.createElement(l.c, {
+					className: R.a.ignoreButton,
+					onClick: t,
+					text: o.fbt._("old reports", null, {
+						hk: "2IdZOv"
+					})
+				}, r.a.createElement(g.a, {
+					className: R.a.ignoreButtonIcon
+				})) : r.a.createElement(l.c, {
+					className: R.a.ignoreButton,
+					onClick: t,
+					text: p ? o.fbt._("Restore Reports", null, {
+						hk: "2O219R"
+					}) : o.fbt._("ignore reports", null, {
+						hk: "48jlNW"
+					})
+				}, p ? r.a.createElement(x.a, {
+					className: R.a.ignoreButtonIcon
+				}) : r.a.createElement(b.a, {
+					className: R.a.ignoreButtonIcon
+				}))))
+			};
+			t.default = e => {
+				let {
+					reportable: t,
+					onIgnoreReports: s
+				} = e;
+				const [o, a] = Object(n.useState)(!0), d = Object(m.b)(), i = () => {
+					let e;
+					s();
+					const o = t.ignoreReports ? "restore_reports" : "ignore_reports";
+					e = Object(p.a)(t.id) ? Object(u.h)(o, t.id) : Object(u.g)(o, t.id), d(e)
+				}, c = (t.modReportsDismissed && t.modReportsDismissed.length || 0) + (t.userReportsDismissed && t.userReportsDismissed.length || 0);
+				return c ? r.a.createElement(v, {
+					collapseReports: o,
+					handleToggleExpando: () => a(e => !e),
 					isHistoricalReports: !0,
-					numReports: i,
-					modReports: e.modReportsDismissed,
-					userReports: e.userReportsDismissed,
-					reportedThingId: e.id
+					numReports: c,
+					modReports: t.modReportsDismissed,
+					userReports: t.userReportsDismissed,
+					reportedThingId: t.id
 				}) : r.a.createElement(v, {
-					handleToggleExpando: d,
-					collapseReports: e.ignoreReports,
-					numReports: e.numReports || 0,
-					modReports: e.modReports,
-					userReports: e.userReports,
-					reportedThingId: e.id
+					handleToggleExpando: i,
+					collapseReports: t.ignoreReports,
+					numReports: t.numReports || 0,
+					modReports: t.modReports,
+					userReports: t.userReports,
+					reportedThingId: t.id
 				})
 			}
 		},
@@ -527,23 +542,29 @@
 					className: y.a.Reports
 				}, n.a.createElement(F, null, I._("Moderator Reports", null, {
 					hk: "3hZ0oX"
-				})), s.map(([e, t]) => n.a.createElement(S, {
-					key: `mod-${t}`
-				}, `u/${t}: ${e}`))), o && o.length > 0 && n.a.createElement("div", {
+				})), s.map(e => {
+					let [t, s] = e;
+					return n.a.createElement(S, {
+						key: `mod-${s}`
+					}, `u/${s}: ${t}`)
+				})), o && o.length > 0 && n.a.createElement("div", {
 					className: y.a.Reports
 				}, n.a.createElement(F, null, I._("User Reports", null, {
 					hk: "2KeCLz"
 				})), n.a.createElement("div", {
 					className: y.a.UserReports
-				}, o.map(([e, t, s, o]) => void 0 !== s && o ? n.a.createElement(B, {
-					key: `user-${e}`,
-					reason: e,
-					amount: t,
-					reportedThingId: r,
-					isSnoozed: s
-				}) : n.a.createElement(S, {
-					key: `user-${e}`
-				}, `${t}: ${e}`)))))
+				}, o.map(e => {
+					let [t, s, o, a] = e;
+					return void 0 !== o && a ? n.a.createElement(B, {
+						key: `user-${t}`,
+						reason: t,
+						amount: s,
+						reportedThingId: r,
+						isSnoozed: o
+					}) : n.a.createElement(S, {
+						key: `user-${t}`
+					}, `${s}: ${t}`)
+				}))))
 			}
 		},
 		"./src/reddit/icons/fonts/IgnoreReport/index.tsx": function(e, t, s) {
@@ -632,4 +653,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.fdef1986d7655cf34cf0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.b7b73bcb711ff6cefb79.js.map

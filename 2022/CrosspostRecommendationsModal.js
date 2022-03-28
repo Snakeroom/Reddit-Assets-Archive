@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.087940888dc5554e5adb.js
-// Retrieved at 3/15/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.f4e2301e655e52202dd0.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostRecommendationsModal"], {
 		"./src/reddit/components/CrosspostRecommendationsModal/index.m.less": function(e, t, s) {
@@ -39,72 +39,73 @@
 			const {
 				fbt: g
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			t.default = Object(a.a)(({
-				onCloseModal: e,
-				post: t
-			}) => {
-				const s = Object(i.d)(),
-					a = Object(C.a)(),
+			t.default = Object(a.a)(e => {
+				let {
+					onCloseModal: t,
+					post: s
+				} = e;
+				const a = Object(i.d)(),
+					j = Object(C.a)(),
 					{
-						isPending: j,
-						isError: O,
-						hasData: _,
-						items: P
+						isPending: O,
+						isError: _,
+						hasData: P,
+						items: f
 					} = Object(i.e)(Object(d.c)({
 						isPending: k.i,
 						isError: k.f,
 						hasData: k.d,
 						items: k.c
 					})),
-					f = Object(n.useCallback)(() => {
-						a((e => t => ({
+					w = Object(n.useCallback)(() => {
+						j((e => t => ({
 							...Object(p.o)(t),
 							action: b.c.CLICK,
 							noun: "close",
 							source: x,
 							post: Object(p.I)(t, e),
 							subreddit: Object(p.ib)(t)
-						}))(t.id)), e()
-					}, [t.id]),
-					w = Object(n.useCallback)(e => {
-						const n = Object(S.c)(e.name);
-						s(Object(o.b)(`${n}?source_id=${t.id}`))
-					}, [t.id]),
-					N = Object(n.useCallback)(() => {
-						a((e => t => ({
+						}))(s.id)), t()
+					}, [s.id]),
+					N = Object(n.useCallback)(e => {
+						const t = Object(S.c)(e.name);
+						a(Object(o.b)(`${t}?source_id=${s.id}`))
+					}, [s.id]),
+					y = Object(n.useCallback)(() => {
+						j((e => t => ({
 							...Object(p.o)(t),
 							action: b.c.CLICK,
 							noun: "other_communities",
 							source: x,
 							post: Object(p.I)(t, e),
 							subreddit: Object(p.ib)(t)
-						}))(t.id)), s(Object(o.b)(`${E.b}?source_id=${t.id}`))
-					}, [t.id]);
-				return O ? (e(), null) : r.a.createElement(c.e, null, r.a.createElement(c.i, {
+						}))(s.id)), a(Object(o.b)(`${E.b}?source_id=${s.id}`))
+					}, [s.id]);
+				return _ ? (t(), null) : r.a.createElement(c.e, null, r.a.createElement(c.i, {
 					className: v.a.modalHeader
 				}, r.a.createElement(h.a, null, r.a.createElement(c.q, {
 					className: v.a.modalTitle
 				}, g._("Crosspost to a related community", null, {
 					hk: "v80Kq"
 				})), r.a.createElement(u.a, {
-					onClick: f
+					onClick: w
 				}, r.a.createElement(c.b, null))), r.a.createElement(c.m, {
 					className: v.a.modalMetaText
 				}, g._("Share your post to another community to let other people see your post", null, {
 					hk: "2jhFRp"
 				}))), r.a.createElement(c.l, null, r.a.createElement(m.b, {
 					contentWrapperClassName: v.a.contentWrapper,
-					hasData: _,
-					isPending: j,
-					items: P,
+					hasData: P,
+					isPending: O,
+					items: f,
 					itemWrapperClassName: v.a.itemWrapper,
-					onSelectRecommendation: w,
+					onSelectRecommendation: N,
 					shouldShowSubredditOnlineUsers: !0
 				})), r.a.createElement(c.g, {
 					className: v.a.modalFooter
 				}, r.a.createElement(l.o, {
 					className: v.a.otherCommunitiesButton,
-					onClick: N
+					onClick: y
 				}, g._("OTHER COMMUNITIES", null, {
 					hk: "1dWSPt"
 				}))))
@@ -175,15 +176,18 @@
 				} = e;
 				return r.a.createElement(b.a, {
 					className: Object(i.a)(C.a.rowStyle, s)
-				}, h.map(({
-					type: e,
-					Icon: s
-				}, n) => r.a.createElement("div", {
-					className: Object(i.a)(C.a.iconWrapper, {
-						[C.a.mDisabled]: !t[e]
-					}),
-					key: n
-				}, r.a.createElement(s, null))))
+				}, h.map((e, s) => {
+					let {
+						type: n,
+						Icon: o
+					} = e;
+					return r.a.createElement("div", {
+						className: Object(i.a)(C.a.iconWrapper, {
+							[C.a.mDisabled]: !t[n]
+						}),
+						key: s
+					}, r.a.createElement(o, null))
+				}))
 			}
 			var E = s("./src/reddit/controls/SubredditPicker/Picker/SubredditDropdown/EntryContent/index.m.less"),
 				k = s.n(E);
@@ -505,4 +509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.087940888dc5554e5adb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.f4e2301e655e52202dd0.js.map

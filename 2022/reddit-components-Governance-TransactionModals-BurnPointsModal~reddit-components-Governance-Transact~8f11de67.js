@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.1047666e33121911aecf.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.9ab0254d9970276b0306.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, t) {
@@ -891,7 +891,7 @@
 				function u(A) {
 					return Object(a.a)(A.startsWith("0x") ? A : `0x${A}`)
 				}
-			}).call(this, t("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer)
+			}).call(this, t("./node_modules/buffer/index.js").Buffer)
 		},
 		"./src/reddit/helpers/crypto/vaultTransactions.ts": function(A, e, t) {
 			"use strict";
@@ -947,32 +947,33 @@
 						transaction: p,
 						wallet: k
 					};
-				return e.contracts.preferredRelay ? async function({
-					apiContext: A,
-					contract: e,
-					contractAddress: t,
-					contractMethod: o,
-					ethereumNetwork: p,
-					pointsDetails: I,
-					provider: m,
-					subredditId: E,
-					transaction: k,
-					wallet: g
-				}) {
-					const x = e.estimateGas[o](...k.arguments),
-						B = e.interface.encodeFunctionData(o, k.arguments),
-						C = await e.getHubAddr(),
-						b = await m.getGasPrice(),
-						y = new n.ethers.Contract(C, u, g),
-						f = await y.getNonce(g.address),
-						h = I.contracts.preferredRelay || {},
-						X = h.address,
-						w = h.fee,
-						R = h.url;
-					if (!(h && X && w && R)) throw new Error("Relay information incomplete");
-					const N = m.getTransactionCount(X),
-						v = await x,
-						Q = await async function(A, e, t) {
+				return e.contracts.preferredRelay ? async function(A) {
+					let {
+						apiContext: e,
+						contract: t,
+						contractAddress: o,
+						contractMethod: p,
+						ethereumNetwork: I,
+						pointsDetails: m,
+						provider: E,
+						subredditId: k,
+						transaction: g,
+						wallet: x
+					} = A;
+					const B = t.estimateGas[p](...g.arguments),
+						C = t.interface.encodeFunctionData(p, g.arguments),
+						b = await t.getHubAddr(),
+						y = await E.getGasPrice(),
+						f = new n.ethers.Contract(b, u, x),
+						h = await f.getNonce(x.address),
+						X = m.contracts.preferredRelay || {},
+						w = X.address,
+						R = X.fee,
+						N = X.url;
+					if (!(X && w && R && N)) throw new Error("Relay information incomplete");
+					const v = E.getTransactionCount(w),
+						Q = await B,
+						M = await async function(A, e, t) {
 							const a = await Object(l.a)(A, {
 								method: "post",
 								endpoint: `${c.a.metaUrl}/crypto/${e}/gsn-verifications`,
@@ -982,48 +983,49 @@
 							const i = a.body && a.body.signature;
 							if (!i) throw new Error("No signature received for GSN verification");
 							return i
-						}(A(), p, {
-							encodedFunctionCall: B,
-							from: g.address,
-							gas: v.toString(),
-							gasPrice: b.toString(),
-							nonce: f.toString(),
-							relayerAddress: X,
-							relayHubAddress: C,
-							subredditId: E,
-							to: t,
-							txFee: w
-						}), M = await async function(A, e, t, n, o, c, d, l, u) {
+						}(e(), I, {
+							encodedFunctionCall: C,
+							from: x.address,
+							gas: Q.toString(),
+							gasPrice: y.toString(),
+							nonce: h.toString(),
+							relayerAddress: w,
+							relayHubAddress: b,
+							subredditId: k,
+							to: o,
+							txFee: R
+						}), D = await async function(A, e, t, n, o, c, d, l, u) {
 							const p = Object(s.a)(Object(i.b)([Object(r.f)("rlx:"), Object(i.a)(A.address), Object(i.a)(e), Object(i.a)(t), Object(i.p)(Object(i.a)(a.a.from(n)), 32), Object(i.p)(Object(i.a)(o), 32), Object(i.p)(Object(i.a)(c), 32), Object(i.p)(Object(i.a)(a.a.from(d)), 32), Object(i.a)(l), Object(i.a)(u)])),
 								I = await A.signMessage(Object(i.a)(p));
 							return Array.from(Object(i.a)(I))
-						}(g, t, B, w, b, v, f.toString(), C, X), D = await fetch(`${R}/relay`, {
+						}(x, o, C, R, y, Q, h.toString(), b, w), L = await fetch(`${N}/relay`, {
 							method: "POST",
 							body: JSON.stringify({
-								approvalData: Array.from(Object(i.a)(`0x${Q}`)),
-								encodedFunction: B,
-								from: g.address,
-								gasLimit: v.toNumber(),
-								gasPrice: b.toNumber(),
-								recipientNonce: f.toNumber(),
-								relayMaxNonce: await N,
-								relayFee: parseInt(w),
-								relayerAddress: X,
-								relayHubAddress: C,
-								signature: M,
-								to: t
+								approvalData: Array.from(Object(i.a)(`0x${M}`)),
+								encodedFunction: C,
+								from: x.address,
+								gasLimit: Q.toNumber(),
+								gasPrice: y.toNumber(),
+								recipientNonce: h.toNumber(),
+								relayMaxNonce: await v,
+								relayFee: parseInt(R),
+								relayerAddress: w,
+								relayHubAddress: b,
+								signature: D,
+								to: o
 							})
 						}).then(A => A.json());
-					if (!D.hash) throw new Error("Did not receive transaction hash from relay");
-					return D
-				}(C): async function({
-					contract: A,
-					contractMethod: e,
-					transaction: t
-				}) {
-					const a = await A[e](...t.arguments);
-					if (!a.hash) throw new Error("Did not receive transaction hash from provider");
-					return a
+					if (!L.hash) throw new Error("Did not receive transaction hash from relay");
+					return L
+				}(C): async function(A) {
+					let {
+						contract: e,
+						contractMethod: t,
+						transaction: a
+					} = A;
+					const i = await e[t](...a.arguments);
+					if (!i.hash) throw new Error("Did not receive transaction hash from provider");
+					return i
 				}(C)
 			}
 			const I = 3e4,
@@ -1091,4 +1093,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.1047666e33121911aecf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.9ab0254d9970276b0306.js.map

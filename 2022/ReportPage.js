@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.d2d082f44455a21c2aa5.js
-// Retrieved at 3/28/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.8084c9d74ccc9ec933ec.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -57,24 +57,30 @@
 			const h = m.a.div("Section", c.a),
 				g = m.a.wrapped(l.a, "ChevronUp", c.a),
 				f = m.a.wrapped(i.a, "ChevronDown", c.a),
-				x = m.a.wrapped(({
-					className: e,
-					isOpen: t,
-					...n
-				}) => s.a.createElement("div", p({
-					className: Object(u.a)(e, {
-						[c.a.mIsOpen]: t
-					})
-				}, n)), "ArticleWrap", c.a),
-				C = m.a.wrapped(({
-					className: e,
-					isOpen: t,
-					...n
-				}) => s.a.createElement("div", p({
-					className: Object(u.a)(e, {
-						[c.a.mIsOpen]: t
-					})
-				}, n)), "SectionHead", c.a),
+				x = m.a.wrapped(e => {
+					let {
+						className: t,
+						isOpen: n,
+						...r
+					} = e;
+					return s.a.createElement("div", p({
+						className: Object(u.a)(t, {
+							[c.a.mIsOpen]: n
+						})
+					}, r))
+				}, "ArticleWrap", c.a),
+				C = m.a.wrapped(e => {
+					let {
+						className: t,
+						isOpen: n,
+						...r
+					} = e;
+					return s.a.createElement("div", p({
+						className: Object(u.a)(t, {
+							[c.a.mIsOpen]: n
+						})
+					}, r))
+				}, "SectionHead", c.a),
 				b = m.a.div("Article", c.a);
 			class E extends s.a.Component {
 				constructor() {
@@ -1923,4 +1929,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.d2d082f44455a21c2aa5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.8084c9d74ccc9ec933ec.js.map

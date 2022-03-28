@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.be01e585b6ef92ee469f.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.fae2748ac89137ba4d3a.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -215,27 +215,30 @@
 				J = n("./src/reddit/helpers/styles/mixins/loading.ts"),
 				Z = n("./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less"),
 				z = n.n(Z);
-			var Q = ({
-					isLoading: e
-				}) => a.createElement("div", {
-					className: Object(K.a)(z.a.container, Object(J.a)({
-						isLoading: !1
-					}))
-				}, V()(3).map(t => a.createElement("div", {
-					key: t,
-					className: z.a.section
-				}, a.createElement("div", {
-					className: Object(K.a)(z.a.sectionTitle, Object(J.b)({
-						isLoading: e
-					}))
-				}), a.createElement("div", {
-					className: z.a.line
-				}), V()(2).map(t => a.createElement("div", {
-					key: t,
-					className: Object(K.a)(z.a.sectionBodyRow, Object(J.b)({
-						isLoading: e
-					}))
-				}))))),
+			var Q = e => {
+					let {
+						isLoading: t
+					} = e;
+					return a.createElement("div", {
+						className: Object(K.a)(z.a.container, Object(J.a)({
+							isLoading: !1
+						}))
+					}, V()(3).map(e => a.createElement("div", {
+						key: e,
+						className: z.a.section
+					}, a.createElement("div", {
+						className: Object(K.a)(z.a.sectionTitle, Object(J.b)({
+							isLoading: t
+						}))
+					}), a.createElement("div", {
+						className: z.a.line
+					}), V()(2).map(e => a.createElement("div", {
+						key: e,
+						className: Object(K.a)(z.a.sectionBodyRow, Object(J.b)({
+							isLoading: t
+						}))
+					})))))
+				},
 				X = n("./src/reddit/featureFlags/index.ts"),
 				Y = n("./src/reddit/components/Settings/shared/Widgets.tsx"),
 				$ = n("./src/reddit/controls/ErrorText/index.tsx"),
@@ -845,7 +848,8 @@
 				const {
 					formState: t,
 					onChange: n
-				} = e, i = "enabled" === function(e, t = _e.a) {
+				} = e, i = "enabled" === function(e) {
+					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : _e.a;
 					return Object(c.e)(n => Object(_e.c)(n, {
 						experimentName: e,
 						experimentEligibilitySelector: t
@@ -1018,15 +1022,18 @@
 				})] : [],
 				Tt = e => {
 					const t = vt(e);
-					return t.guidelines.clientErrors = wt(t.guidelines), t.linkDomains.clientErrors = ft(t.linkDomains.domainsText), t.titleLength.clientErrors = (({
-						min: e,
-						max: t
-					}) => ce({
-						min: e,
-						max: t,
-						minLimit: O,
-						maxLimit: M
-					}))(t.titleLength), t.bodyBlacklistedStrings.clientErrors = Rt(t), t.bodyRequiredStrings.clientErrors = Et(t), t.titleBlacklistedStrings.clientErrors = (e => {
+					return t.guidelines.clientErrors = wt(t.guidelines), t.linkDomains.clientErrors = ft(t.linkDomains.domainsText), t.titleLength.clientErrors = (e => {
+						let {
+							min: t,
+							max: n
+						} = e;
+						return ce({
+							min: t,
+							max: n,
+							minLimit: O,
+							maxLimit: M
+						})
+					})(t.titleLength), t.bodyBlacklistedStrings.clientErrors = Rt(t), t.bodyRequiredStrings.clientErrors = Et(t), t.titleBlacklistedStrings.clientErrors = (e => {
 						const t = St(e);
 						return [...Ct(t.requiredStrings, t.blacklistedStrings), ...kt(t.blacklistedStrings, t.maxTitleLength)]
 					})(t), t.titleRequiredStrings.clientErrors = (e => {
@@ -1563,7 +1570,8 @@
 				}));
 			class Kt extends d.a.Component {
 				constructor(e) {
-					super(e), this.formBodyRef = d.a.createRef(), this.isUnmounted = !1, this.resetPendingNavigation = () => {
+					var t;
+					super(e), t = this, this.formBodyRef = d.a.createRef(), this.isUnmounted = !1, this.resetPendingNavigation = () => {
 						this.props.allowNavigationCallback && this.props.allowNavigationCallback(!1)
 					}, this.performPendingNavigationIfNeeded = () => {
 						this.props.allowNavigationCallback && this.props.allowNavigationCallback(!0)
@@ -1640,25 +1648,26 @@
 						this.performPendingNavigationIfNeeded()
 					}, this.onCloseModal = () => {
 						this.props.closeAllModals(), this.resetPendingNavigation()
-					}, this.onFormStateChange = (e, t = !1) => {
-						this.setState(n => {
+					}, this.onFormStateChange = function(e) {
+						let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+						t.setState(t => {
 							let s = {
-								...n.formState,
+								...t.formState,
 								...e
 							};
-							return t && (s = Tt(s)), {
+							return n && (s = Tt(s)), {
 								formState: s,
 								hasJustSaved: !1
 							}
 						})
 					};
-					const t = e.contentControls ? Ot(e.contentControls) : U;
+					const n = e.contentControls ? Ot(e.contentControls) : U;
 					this.state = {
 						areContentControlsLoaded: !!e.contentControls,
-						formState: t,
+						formState: n,
 						hasJustSaved: !1,
 						hasUnsavedChanges: !1,
-						initialFormState: t,
+						initialFormState: n,
 						isSavePending: !1
 					}
 				}
@@ -1773,4 +1782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.be01e585b6ef92ee469f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.fae2748ac89137ba4d3a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.2d7b98dd05d1b0e9340e.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.5a0b3fde5b355fc9b540.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -310,16 +310,22 @@
 				ee = Object(l.c)({
 					isPostTypeFilterDropdownOpen: Object(k.b)(J),
 					isSubredditFilterDropdownOpen: Object(k.b)(K),
-					profile: (e, {
-						profileName: t
-					}) => t ? Object(f.j)(e, {
-						profileName: t
-					}) : null,
-					subreddit: (e, {
-						subredditName: t
-					}) => t ? Object(C.x)(e, {
-						subredditName: t
-					}) : null
+					profile: (e, t) => {
+						let {
+							profileName: s
+						} = t;
+						return s ? Object(f.j)(e, {
+							profileName: s
+						}) : null
+					},
+					subreddit: (e, t) => {
+						let {
+							subredditName: s
+						} = t;
+						return s ? Object(C.x)(e, {
+							subredditName: s
+						}) : null
+					}
 				}),
 				te = Object(i.b)(ee, e => ({
 					loadAllSubreddits: () => e(Object(u.d)(!0)),
@@ -755,9 +761,12 @@
 				})
 			}))))));
 			const mt = Object(c.c)({
-				isDropdownOpen: (e, {
-					tooltipId: t
-				}) => Object(st.b)(t)(e)
+				isDropdownOpen: (e, t) => {
+					let {
+						tooltipId: s
+					} = t;
+					return Object(st.b)(s)(e)
+				}
 			});
 			var pt = Object(d.b)(mt)(Object(ot.c)(e => {
 					const {
@@ -933,11 +942,12 @@
 					}, l.a.createElement(Ve.a, null)))), a && y && t === xt && l.a.createElement(ze.a, {
 						flairs: Et(k, C),
 						modalId: xt,
-						onFlairChanged: ({
-							previewFlair: e,
-							selectedTemplateId: t
-						}) => {
-							u(e, t)
+						onFlairChanged: e => {
+							let {
+								previewFlair: t,
+								selectedTemplateId: s
+							} = e;
+							u(t, s)
 						},
 						subredditId: y
 					}), m > 0 && l.a.createElement("div", {
@@ -1191,47 +1201,59 @@
 			const k = e => Object(l.a)(f.a.iconStyles, e.className, {
 					[f.a.mRedditStyle]: e.redditStyle
 				}),
-				E = ({
-					className: e,
-					redditStyle: t,
-					...s
-				}) => a.a.createElement(h.a, C({
-					name: "view_compact",
-					className: k({
-						className: e,
-						redditStyle: t
-					})
-				}, s)),
-				y = ({
-					className: e,
-					redditStyle: t,
-					...s
-				}) => a.a.createElement(h.a, C({
-					name: "view_classic",
-					className: k({
-						className: e,
-						redditStyle: t
-					})
-				}, s)),
-				S = ({
-					className: e,
-					redditStyle: t,
-					...s
-				}) => a.a.createElement(h.a, C({
-					name: "view_card",
-					className: k({
-						className: e,
-						redditStyle: t
-					})
-				}, s)),
-				_ = ({
-					isActive: e,
-					...t
-				}) => a.a.createElement("button", C({
-					className: Object(l.a)(f.a.layoutButton, {
-						[f.a.mIsActive]: e
-					})
-				}, t)),
+				E = e => {
+					let {
+						className: t,
+						redditStyle: s,
+						...o
+					} = e;
+					return a.a.createElement(h.a, C({
+						name: "view_compact",
+						className: k({
+							className: t,
+							redditStyle: s
+						})
+					}, o))
+				},
+				y = e => {
+					let {
+						className: t,
+						redditStyle: s,
+						...o
+					} = e;
+					return a.a.createElement(h.a, C({
+						name: "view_classic",
+						className: k({
+							className: t,
+							redditStyle: s
+						})
+					}, o))
+				},
+				S = e => {
+					let {
+						className: t,
+						redditStyle: s,
+						...o
+					} = e;
+					return a.a.createElement(h.a, C({
+						name: "view_card",
+						className: k({
+							className: t,
+							redditStyle: s
+						})
+					}, o))
+				},
+				_ = e => {
+					let {
+						isActive: t,
+						...s
+					} = e;
+					return a.a.createElement("button", C({
+						className: Object(l.a)(f.a.layoutButton, {
+							[f.a.mIsActive]: t
+						})
+					}, s))
+				},
 				O = Object(b.u)(),
 				I = Object(i.c)({
 					postLayout: b.R,
@@ -1355,4 +1377,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.2d7b98dd05d1b0e9340e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.5a0b3fde5b355fc9b540.js.map

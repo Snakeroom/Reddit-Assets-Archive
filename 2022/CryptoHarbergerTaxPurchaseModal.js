@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.9fd112dc60848c615caa.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.455955aa5e0e36c66812.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -233,23 +233,25 @@
 			}
 			const _ = [],
 				I = Object(o.c)({
-					badgeIds: (e, {
-						subredditId: t,
-						userId: n
-					}) => {
-						var r;
-						return (null === (r = e.users.appliedBadges[n]) || void 0 === r ? void 0 : r[t]) || _
+					badgeIds: (e, t) => {
+						let {
+							subredditId: n,
+							userId: r
+						} = t;
+						var a;
+						return (null === (a = e.users.appliedBadges[r]) || void 0 === a ? void 0 : a[n]) || _
 					},
 					allBadges: e => e.badges.models,
 					useHovercard: h.d.spSpecialMemberships
 				}),
 				T = Object(o.c)({
-					badgeIds: (e, {
-						subredditId: t
-					}) => {
-						var n;
-						const r = e.user.account;
-						return r && (null === (n = e.users.appliedBadges[r.id]) || void 0 === n ? void 0 : n[t]) || _
+					badgeIds: (e, t) => {
+						let {
+							subredditId: n
+						} = t;
+						var r;
+						const a = e.user.account;
+						return a && (null === (r = e.users.appliedBadges[a.id]) || void 0 === r ? void 0 : r[n]) || _
 					},
 					allBadges: e => e.badges.models,
 					useHovercard: h.d.spSpecialMemberships
@@ -370,9 +372,12 @@
 				cost: x.b,
 				currentOwnerId: (e, t) => Object(x.c)(e, t).ownerId,
 				currentOwnerName: (e, t) => Object(x.c)(e, t).owner,
-				pointsDetails: (e, {
-					subredditId: t
-				}) => Object(l.b)(e, t)
+				pointsDetails: (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					return Object(l.b)(e, n)
+				}
 			});
 			var N = Object(d.b)(y)((function(e) {
 				const {
@@ -563,11 +568,12 @@
 				fbt: _
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const I = Object(f.c)({
-				tokenName: (e, {
-					subredditId: t
-				}) => {
-					var n;
-					return (null === (n = Object(l.b)(e, t)) || void 0 === n ? void 0 : n.name) || ""
+				tokenName: (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					var r;
+					return (null === (r = Object(l.b)(e, n)) || void 0 === r ? void 0 : r.name) || ""
 				}
 			});
 			var T = Object(d.b)(I)((function(e) {
@@ -832,9 +838,12 @@
 				cost: x.b,
 				currentOwnerId: (e, t) => Object(x.c)(e, t).ownerId,
 				currentOwnerName: (e, t) => Object(x.c)(e, t).owner,
-				points: (e, {
-					subredditId: t
-				}) => Object(l.b)(e, t)
+				points: (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					return Object(l.b)(e, n)
+				}
 			});
 			var $ = Object(d.b)(K, e => ({
 					onError: t => e(Object(D.f)({
@@ -895,13 +904,16 @@
 				c = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				l = n("./src/reddit/components/Governance/ModalClose/index.m.less"),
 				d = n.n(l);
-			t.a = Object(s.b)(void 0, (e, {
-				afterClose: t
-			}) => ({
-				onClose: () => {
-					e(Object(i.f)()), t && t()
+			t.a = Object(s.b)(void 0, (e, t) => {
+				let {
+					afterClose: n
+				} = t;
+				return {
+					onClose: () => {
+						e(Object(i.f)()), n && n()
+					}
 				}
-			}))((function(e) {
+			})((function(e) {
 				return a.a.createElement(c.a, {
 					className: Object(o.a)(d.a.closeIcon, e.className),
 					onClick: e.onClose
@@ -957,9 +969,12 @@
 				d = n("./src/reddit/components/Governance/Token/index.m.less"),
 				u = n.n(d);
 			const m = Object(o.c)({
-				pointsDetails: (e, {
-					subredditId: t
-				}) => Object(l.b)(e, t)
+				pointsDetails: (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					return Object(l.b)(e, n)
+				}
 			});
 			t.a = Object(s.b)(m)((function(e) {
 				var t;
@@ -1004,9 +1019,12 @@
 				m = n("./src/reddit/components/Governance/TokenAmount/index.m.less"),
 				p = n.n(m);
 			const h = Object(o.c)({
-				pointsDetails: (e, {
-					subredditId: t
-				}) => Object(u.b)(e, t)
+				pointsDetails: (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					return Object(u.b)(e, n)
+				}
 			});
 			t.a = Object(s.b)(h)((function(e) {
 				var t;
@@ -1697,4 +1715,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.9fd112dc60848c615caa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.455955aa5e0e36c66812.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.f3330c3d8283b511dd3b.js
-// Retrieved at 3/28/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.4a169cfa886fb5366d82.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -292,11 +292,14 @@
 				z = n("./src/reddit/components/Wiki/ModHubWikiManagement/WikiBannedContributors/index.m.less"),
 				G = n.n(z);
 			const J = 300,
-				$ = Object(_.b)(null, (e, {
-					subredditName: t
-				}) => ({
-					addBannedWikiContributor: n => e(Object(f.a)(t, n))
-				}));
+				$ = Object(_.b)(null, (e, t) => {
+					let {
+						subredditName: n
+					} = t;
+					return {
+						addBannedWikiContributor: t => e(Object(f.a)(n, t))
+					}
+				});
 			class ee extends s.a.Component {
 				constructor(e) {
 					super(e), this.onInputChange = e => {
@@ -529,24 +532,30 @@
 					}))
 				}
 			}
-			var se = Object(_.b)(ne, (e, {
-					subredditName: t
-				}) => ({
-					moreWikiBannedContributorsRequested: n => e(Object(f.b)(t, n)),
-					removeWikiBannedContributor: n => e(Object(f.c)(t, n)),
-					searchWikiBannedContributorByName: n => e(Object(f.d)(t, n)),
-					toggleAddBannedContributorModal: () => e(Object(M.i)("WikiBannedContributers--BanContributorModal")),
-					toggleConfirmModal: () => e(Object(M.i)("WikiBannedContributers--RemoveBannedWikiContributor"))
-				}))(Object(O.c)(ie)),
+			var se = Object(_.b)(ne, (e, t) => {
+					let {
+						subredditName: n
+					} = t;
+					return {
+						moreWikiBannedContributorsRequested: t => e(Object(f.b)(n, t)),
+						removeWikiBannedContributor: t => e(Object(f.c)(n, t)),
+						searchWikiBannedContributorByName: t => e(Object(f.d)(n, t)),
+						toggleAddBannedContributorModal: () => e(Object(M.i)("WikiBannedContributers--BanContributorModal")),
+						toggleConfirmModal: () => e(Object(M.i)("WikiBannedContributers--RemoveBannedWikiContributor"))
+					}
+				})(Object(O.c)(ie)),
 				re = n("./src/reddit/actions/wiki/wikiContributors/index.ts"),
 				oe = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
 				ae = n("./src/reddit/components/Wiki/ModHubWikiManagement/WikiContributors/index.m.less"),
 				de = n.n(ae);
-			const le = Object(_.b)(null, (e, {
-				subredditName: t
-			}) => ({
-				addWikiContributor: n => e(Object(re.a)(t, n))
-			}));
+			const le = Object(_.b)(null, (e, t) => {
+				let {
+					subredditName: n
+				} = t;
+				return {
+					addWikiContributor: t => e(Object(re.a)(n, t))
+				}
+			});
 			class ce extends s.a.Component {
 				constructor(e) {
 					super(e), this.onInputChange = e => {
@@ -707,15 +716,18 @@
 					}))
 				}
 			}
-			var he = Object(_.b)(me, (e, {
-					subredditName: t
-				}) => ({
-					moreWikiContributorsRequested: n => e(Object(re.b)(t, n)),
-					removeWikiContributor: n => e(Object(re.c)(t, n)),
-					searchWikiContributorByName: n => e(Object(re.d)(t, n)),
-					toggleAddContributorModal: () => e(Object(M.i)("WikiContributers--AddContributorModal")),
-					toggleConfirmModal: () => e(Object(M.i)("WikiContributers--RemoveContributor"))
-				}))(Object(O.c)(be)),
+			var he = Object(_.b)(me, (e, t) => {
+					let {
+						subredditName: n
+					} = t;
+					return {
+						moreWikiContributorsRequested: t => e(Object(re.b)(n, t)),
+						removeWikiContributor: t => e(Object(re.c)(n, t)),
+						searchWikiContributorByName: t => e(Object(re.d)(n, t)),
+						toggleAddContributorModal: () => e(Object(M.i)("WikiContributers--AddContributorModal")),
+						toggleConfirmModal: () => e(Object(M.i)("WikiContributers--RemoveContributor"))
+					}
+				})(Object(O.c)(be)),
 				pe = n("./src/reddit/actions/wiki/wikiPageSettings/index.tsx"),
 				ge = n("./src/reddit/components/InfoBanners/BannerBase/index.tsx"),
 				ke = n("./src/reddit/components/Wiki/common/PageTitle/index.tsx"),
@@ -739,23 +751,26 @@
 			const je = Object(S.c)({
 					isConfirmModalOpen: e => "WikiPageSettings--RemoveContributor" === Object(U.a)(e)
 				}),
-				De = Object(_.b)(je, (e, {
-					subredditName: t,
-					wikiPageName: n
-				}) => ({
-					addWikiPageContributor: i => e(Object(pe.a)({
-						username: i,
-						wikiPageName: n,
-						subredditName: t
-					})),
-					fetchMoreWikiPageContributors: i => e(Object(pe.b)(t, n, i)),
-					removeWikiPageContributor: i => e(Object(pe.d)({
-						username: i,
-						wikiPageName: n,
-						subredditName: t
-					})),
-					toggleConfirmModal: () => e(Object(M.i)("WikiPageSettings--RemoveContributor"))
-				})),
+				De = Object(_.b)(je, (e, t) => {
+					let {
+						subredditName: n,
+						wikiPageName: i
+					} = t;
+					return {
+						addWikiPageContributor: t => e(Object(pe.a)({
+							username: t,
+							wikiPageName: i,
+							subredditName: n
+						})),
+						fetchMoreWikiPageContributors: t => e(Object(pe.b)(n, i, t)),
+						removeWikiPageContributor: t => e(Object(pe.d)({
+							username: t,
+							wikiPageName: i,
+							subredditName: n
+						})),
+						toggleConfirmModal: () => e(Object(M.i)("WikiPageSettings--RemoveContributor"))
+					}
+				}),
 				Le = e => s.a.createElement("div", {
 					className: Object(Ne.a)(e.className, Object(Re.b)({
 						isLoading: !0
@@ -1007,17 +1022,20 @@
 					})))
 				}
 			}
-			var Xe = Object(_.b)(He, (e, {
-					subredditName: t,
-					wikiPageName: n
-				}) => ({
-					saveWikiPageSettings: (i, s) => e(Object(pe.e)({
-						editPermissions: i,
-						isVisible: s,
-						subredditName: t,
-						wikiPageName: n
-					}))
-				}))(Object(O.c)(Fe)),
+			var Xe = Object(_.b)(He, (e, t) => {
+					let {
+						subredditName: n,
+						wikiPageName: i
+					} = t;
+					return {
+						saveWikiPageSettings: (t, s) => e(Object(pe.e)({
+							editPermissions: t,
+							isVisible: s,
+							subredditName: n,
+							wikiPageName: i
+						}))
+					}
+				})(Object(O.c)(Fe)),
 				Qe = n("./src/reddit/components/Wiki/ModHubWikiManagement/index.m.less"),
 				Ve = n.n(Qe);
 			const qe = Object(u.u)(),
@@ -1162,7 +1180,10 @@
 					noun: e,
 					...r(t)
 				}),
-				l = (e = !1) => d(e ? "create_wiki_page" : "save_wiki_page"),
+				l = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+					return d(e ? "create_wiki_page" : "save_wiki_page")
+				},
 				c = d("compare_wiki_pages"),
 				u = d("revert_wiki_page"),
 				m = d("view_wiki_page"),
@@ -1202,4 +1223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.f3330c3d8283b511dd3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.4a169cfa886fb5366d82.js.map

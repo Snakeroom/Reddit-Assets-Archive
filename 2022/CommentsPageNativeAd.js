@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.d58969ad6f253356ce1b.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.a78a79e1ea4348722497.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -97,55 +97,58 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const R = ({
-				classNameInnerThumbnail: e,
-				closeVideo: t,
-				crosspost: s,
-				forceShowNSFW: r,
-				isMeta: o,
-				post: n,
-				redditStyle: i,
-				scrollerItemRef: d,
-				thumbnailContainerClassName: c,
-				url: l,
-				usePreview: m,
-				mediaExpanded: p
-			}) => n && n.media ? p && Object(u.N)(n.media) ? a.a.createElement("div", null, a.a.createElement(V.a, {
-				className: I.a.close,
-				onClick: t
-			}), a.a.createElement(L.a, {
-				className: I.a.videoPlayer,
-				post: n,
-				isNotCardView: !0,
-				autoplayPref: !0,
-				isExpando: !1,
-				shouldLoad: !0,
-				shouldPause: !1,
-				shouldStop: !1,
-				isListing: !1,
-				showCentered: !1,
-				scrollerItemRef: d
-			})) : a.a.createElement(M.a, {
-				className: Object(A.a)(I.a.thumbnail, e),
-				containerClassName: c,
-				crosspost: s,
-				forceShowNSFW: r,
-				isMeta: o,
-				post: n,
-				redditStyle: i,
-				removeLink: Object(u.N)(n.media),
-				url: Object(u.N)(n.media) ? void 0 : l,
-				usePreview: m
-			}) : a.a.createElement(M.a, {
-				className: Object(A.a)(I.a.thumbnail, e),
-				containerClassName: c,
-				crosspost: s,
-				forceShowNSFW: r,
-				isMeta: o,
-				post: n,
-				redditStyle: i,
-				usePreview: m
-			});
+			const R = e => {
+				let {
+					classNameInnerThumbnail: t,
+					closeVideo: s,
+					crosspost: r,
+					forceShowNSFW: o,
+					isMeta: n,
+					post: i,
+					redditStyle: d,
+					scrollerItemRef: c,
+					thumbnailContainerClassName: l,
+					url: m,
+					usePreview: p,
+					mediaExpanded: b
+				} = e;
+				return i && i.media ? b && Object(u.N)(i.media) ? a.a.createElement("div", null, a.a.createElement(V.a, {
+					className: I.a.close,
+					onClick: s
+				}), a.a.createElement(L.a, {
+					className: I.a.videoPlayer,
+					post: i,
+					isNotCardView: !0,
+					autoplayPref: !0,
+					isExpando: !1,
+					shouldLoad: !0,
+					shouldPause: !1,
+					shouldStop: !1,
+					isListing: !1,
+					showCentered: !1,
+					scrollerItemRef: c
+				})) : a.a.createElement(M.a, {
+					className: Object(A.a)(I.a.thumbnail, t),
+					containerClassName: l,
+					crosspost: r,
+					forceShowNSFW: o,
+					isMeta: n,
+					post: i,
+					redditStyle: d,
+					removeLink: Object(u.N)(i.media),
+					url: Object(u.N)(i.media) ? void 0 : m,
+					usePreview: p
+				}) : a.a.createElement(M.a, {
+					className: Object(A.a)(I.a.thumbnail, t),
+					containerClassName: l,
+					crosspost: r,
+					forceShowNSFW: o,
+					isMeta: n,
+					post: i,
+					redditStyle: d,
+					usePreview: p
+				})
+			};
 			var U = e => {
 					const [t, s] = Object(o.useState)(!1), {
 						isVideo: r,
@@ -364,18 +367,21 @@
 					showMedia: c.s,
 					flairStyleTemplate: c.V
 				},
-				g = Object(r.b)(() => Object(o.c)(C), (e, {
-					postId: t
-				}) => ({
-					handleVote: s => {
-						const r = s === i.a.upvoted ? Object(a.kb)(t) : Object(a.w)(t);
-						e(r)
-					},
-					onIgnoreReports: () => e(Object(a.gb)(t)),
-					onOpenReportsDropdown: t => e(Object(n.h)({
-						tooltipId: t
-					}))
-				}), (e, t, s) => ({
+				g = Object(r.b)(() => Object(o.c)(C), (e, t) => {
+					let {
+						postId: s
+					} = t;
+					return {
+						handleVote: t => {
+							const r = t === i.a.upvoted ? Object(a.kb)(s) : Object(a.w)(s);
+							e(r)
+						},
+						onIgnoreReports: () => e(Object(a.gb)(s)),
+						onOpenReportsDropdown: t => e(Object(n.h)({
+							tooltipId: t
+						}))
+					}
+				}, (e, t, s) => ({
 					...e,
 					...t,
 					...s,
@@ -460,4 +466,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.d58969ad6f253356ce1b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.a78a79e1ea4348722497.js.map

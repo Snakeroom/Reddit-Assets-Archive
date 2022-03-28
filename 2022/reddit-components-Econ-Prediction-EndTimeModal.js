@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.3f6362c67c63523dea71.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.099065886fbcad2ba0bd.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-EndTimeModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -64,28 +64,31 @@
 					predictions: a.a
 				}
 			});
-			const u = ({
-				postId: e,
-				closedAt: t
-			}) => async n => {
-				try {
-					await n(Object(s.d)(e, {
-						closedAt: t
-					})), n(Object(r.f)({
-						duration: r.a,
-						kind: d.b.SuccessCommunity,
-						text: l._("Updated", null, {
-							hk: "4cncaA"
-						})
-					}))
-				} catch {
-					(e => e(Object(r.f)({
-						duration: r.a,
-						kind: d.b.Error,
-						text: l._("Error: Failed to update prediction end time, please try again later", null, {
-							hk: "MkaNA"
-						})
-					})))(n)
+			const u = e => {
+				let {
+					postId: t,
+					closedAt: n
+				} = e;
+				return async e => {
+					try {
+						await e(Object(s.d)(t, {
+							closedAt: n
+						})), e(Object(r.f)({
+							duration: r.a,
+							kind: d.b.SuccessCommunity,
+							text: l._("Updated", null, {
+								hk: "4cncaA"
+							})
+						}))
+					} catch {
+						(e => e(Object(r.f)({
+							duration: r.a,
+							kind: d.b.Error,
+							text: l._("Error: Failed to update prediction end time, please try again later", null, {
+								hk: "MkaNA"
+							})
+						})))(e)
+					}
 				}
 			};
 
@@ -192,36 +195,37 @@
 			const {
 				fbt: f
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var g = ({
-				timestamp: e,
-				setTimestamp: t,
-				postId: n,
-				votingEndDatetime: o
-			}) => {
-				const i = Object(a.d)(),
-					C = Object(b.a)(),
+			var g = e => {
+				let {
+					timestamp: t,
+					setTimestamp: n,
+					postId: o,
+					votingEndDatetime: i
+				} = e;
+				const C = Object(a.d)(),
+					g = Object(b.a)(),
 					{
-						date: g,
-						time: x,
-						timeZoneAbbr: v,
-						onChange: E,
-						maxDate: O,
-						minDate: D,
-						minTime: j,
-						fullMinDatetime: I,
-						formattedMinDatetime: M
-					} = Object(l.a)(e, t),
-					k = e < I,
-					P = () => i(Object(c.g)(p.a.ECON_PREDICTIONS_CHANGE_END_TIME));
+						date: x,
+						time: v,
+						timeZoneAbbr: E,
+						onChange: O,
+						maxDate: D,
+						minDate: j,
+						minTime: I,
+						fullMinDatetime: M,
+						formattedMinDatetime: k
+					} = Object(l.a)(t, n),
+					P = t < M,
+					y = () => C(Object(c.g)(p.a.ECON_PREDICTIONS_CHANGE_END_TIME));
 				return s.a.createElement(d.a, {
 					withOverlay: !0,
-					onOverlayClick: P,
-					toggleModal: P,
+					onOverlayClick: y,
+					toggleModal: y,
 					onConfirm: () => {
-						C(Object(h.f)(n)), i(Object(r.a)({
-							postId: n,
-							closedAt: e
-						})), P()
+						g(Object(h.f)(o)), C(Object(r.a)({
+							postId: o,
+							closedAt: t
+						})), y()
 					},
 					actionText: f._("Update", null, {
 						hk: "3HPLX5"
@@ -229,7 +233,7 @@
 					headerText: f._("Prediction Ends On", null, {
 						hk: "CTEcM"
 					}),
-					modalText: e ? s.a.createElement(s.a.Fragment, null, s.a.createElement("span", {
+					modalText: t ? s.a.createElement(s.a.Fragment, null, s.a.createElement("span", {
 						className: _.a.title
 					}, f._("End time", null, {
 						hk: "3D4Q1o"
@@ -237,30 +241,30 @@
 						"aria-label": f._("Prediction end date", null, {
 							hk: "4zYv4T"
 						}),
-						onChange: e => E({
+						onChange: e => O({
 							date: e
 						}),
-						min: D,
-						max: O,
-						value: g,
+						min: j,
+						max: D,
+						value: x,
 						required: !0
 					}), s.a.createElement(m.a, {
 						className: _.a.timeInput,
 						"aria-label": f._("Prediction end time", null, {
 							hk: "1idFl4"
 						}),
-						onChange: e => E({
+						onChange: e => O({
 							time: e
 						}),
-						min: j,
-						value: x,
+						min: I,
+						value: v,
 						required: !0
-					}), v, M && s.a.createElement("span", {
+					}), E, k && s.a.createElement("span", {
 						className: _.a.footer
-					}, f._("New end time has to be later than {Minimum date and time}", [f._param("Minimum date and time", M)], {
+					}, f._("New end time has to be later than {Minimum date and time}", [f._param("Minimum date and time", k)], {
 						hk: "1GjSWl"
 					}))) : "Something went wrong. Please try again.",
-					isDisabled: k || e === o
+					isDisabled: P || t === i
 				})
 			};
 			t.default = () => {
@@ -374,10 +378,13 @@
 						time: n
 					}
 				},
-				r = ({
-					date: e,
-					time: t
-				}) => new Date(`${e}T${t}`),
+				r = e => {
+					let {
+						date: t,
+						time: n
+					} = e;
+					return new Date(`${t}T${n}`)
+				},
 				c = (e, t) => e.toLocaleString(t, {
 					month: "numeric",
 					day: "numeric",
@@ -740,4 +747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.3f6362c67c63523dea71.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.099065886fbcad2ba0bd.js.map

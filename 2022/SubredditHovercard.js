@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.18f9404d417302fc9096.js
-// Retrieved at 3/24/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.bb7984d2ddbc81847847.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -59,61 +59,62 @@
 					className: e.textClassName
 				}, e.text)), e.subreddit.isQuarantined && i.a.createElement(x, null)),
 				T = Object(n.b)(E);
-			t.a = T(({
-				className: e,
-				iconClassName: t,
-				restrictions: s = b.e.Post,
-				textClassName: r,
-				subreddit: n
-			}) => {
-				switch (n.type) {
+			t.a = T(e => {
+				let {
+					className: t,
+					iconClassName: s,
+					restrictions: r = b.e.Post,
+					textClassName: n,
+					subreddit: d
+				} = e;
+				switch (d.type) {
 					case m.f.Restricted:
 						return i.a.createElement(I, {
-							className: e,
+							className: t,
 							icon: i.a.createElement(u.a, {
 								name: "hide",
-								className: Object(l.a)(f.a.restrictedIcon, t)
+								className: Object(l.a)(f.a.restrictedIcon, s)
 							}),
 							text: o.fbt._("Restricted", null, {
 								hk: "wixjP"
 							}),
-							textClassName: r,
-							description: Object(b.g)(s),
-							subreddit: n
+							textClassName: n,
+							description: Object(b.g)(r),
+							subreddit: d
 						});
 					case m.f.Private:
 						return i.a.createElement(I, {
-							className: e,
+							className: t,
 							icon: i.a.createElement(u.a, {
 								name: "hide",
-								className: Object(l.a)(f.a.privateIcon, t)
+								className: Object(l.a)(f.a.privateIcon, s)
 							}),
 							text: o.fbt._("Private", null, {
 								hk: "AwntX"
 							}),
-							textClassName: r,
+							textClassName: n,
 							description: o.fbt._("Only approved users can view and submit to this community", null, {
 								hk: "359nYX"
 							}),
-							subreddit: n
+							subreddit: d
 						});
 					case m.f.EmployeesOnly:
 						return i.a.createElement(I, {
-							className: e,
+							className: t,
 							icon: i.a.createElement(u.a, {
 								name: "admin",
-								className: Object(l.a)(f.a.employeesIcon, t)
+								className: Object(l.a)(f.a.employeesIcon, s)
 							}),
-							text: n.allowContractors ? o.fbt._("Employees & Contractors", null, {
+							text: d.allowContractors ? o.fbt._("Employees & Contractors", null, {
 								hk: "1WUgPh"
 							}) : o.fbt._("Employees Only", null, {
 								hk: "4GrVK8"
 							}),
-							textClassName: r,
-							subreddit: n
+							textClassName: n,
+							subreddit: d
 						});
 					default:
-						return i.a.createElement(i.a.Fragment, null, n.isQuarantined && i.a.createElement(x, null), n.isNSFW && i.a.createElement(y, null))
+						return i.a.createElement(i.a.Fragment, null, d.isQuarantined && i.a.createElement(x, null), d.isNSFW && i.a.createElement(y, null))
 				}
 			})
 		},
@@ -713,11 +714,14 @@
 				}
 			}));
 			var S = Object(i.b)(() => Object(n.c)({
-				subreddit: (e, {
-					subredditId: t
-				}) => t ? Object(h.S)(e, {
-					subredditId: t
-				}) : null
+				subreddit: (e, t) => {
+					let {
+						subredditId: s
+					} = t;
+					return s ? Object(h.S)(e, {
+						subredditId: s
+					}) : null
+				}
 			}))(e => r.a.createElement(m, {
 				className: e.className,
 				type: "userHovercard",
@@ -868,4 +872,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.18f9404d417302fc9096.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.bb7984d2ddbc81847847.js.map

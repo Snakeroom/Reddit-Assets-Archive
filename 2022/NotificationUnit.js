@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.54ceb2ba00061f5dab3d.js
-// Retrieved at 3/28/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.3c3af8ee5d32e81269cf.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -260,45 +260,46 @@
 						src: u
 					})
 				},
-				N = ({
-					post: e,
-					post: {
-						commentCount: t = 0,
-						isNsfw: i,
-						isSpoiler: o,
-						removedByCategory: p,
-						score: N = 0,
-						title: E
-					},
-					isUnread: v
-				}) => {
-					const x = p === u.c.Deleted,
-						O = p && p !== u.c.Deleted,
-						T = Object(s.a)(b.a.postEmbedContainer, {
-							[b.a.unread]: v
+				N = e => {
+					let {
+						post: t,
+						post: {
+							commentCount: i = 0,
+							isNsfw: o,
+							isSpoiler: p,
+							removedByCategory: N,
+							score: E = 0,
+							title: v
+						},
+						isUnread: x
+					} = e;
+					const O = N === u.c.Deleted,
+						T = N && N !== u.c.Deleted,
+						A = Object(s.a)(b.a.postEmbedContainer, {
+							[b.a.unread]: x
 						}),
-						A = Object(s.a)(b.a.postEmbedContent, {
-							[b.a.deleted]: x || O
+						g = Object(s.a)(b.a.postEmbedContent, {
+							[b.a.deleted]: O || T
 						});
 					return a.a.createElement("span", {
-						className: T
-					}, a.a.createElement("span", {
 						className: A
+					}, a.a.createElement("span", {
+						className: g
 					}, a.a.createElement("span", null, a.a.createElement("span", {
 						className: b.a.postEmbedTitleContainer
-					}, i && a.a.createElement(d, {
+					}, o && a.a.createElement(d, {
 						className: b.a.WarningIcon
-					}), o && a.a.createElement(l, {
+					}), p && a.a.createElement(l, {
 						className: b.a.WarningIcon
 					}), a.a.createElement("p", {
 						className: b.a.postEmbedTitle
-					}, E)), a.a.createElement("span", {
+					}, v)), a.a.createElement("span", {
 						className: b.a.postEmbedMeta
-					}, !x && !O && a.a.createElement(a.a.Fragment, null, a.a.createElement(r.b, {
+					}, !O && !T && a.a.createElement(a.a.Fragment, null, a.a.createElement(r.b, {
 						isScoreHidden: !1,
-						score: N,
+						score: E,
 						useUpvotes: !0
-					}), a.a.createElement(r.c, null), Object(r.d)(t)), x && a.a.createElement("span", {
+					}), a.a.createElement(r.c, null), Object(r.d)(i)), O && a.a.createElement("span", {
 						className: b.a.PostUnavailableInfo
 					}, a.a.createElement(m.b, {
 						className: b.a.StateIcon
@@ -306,7 +307,7 @@
 						className: b.a.Text
 					}, n.fbt._("Post deleted", null, {
 						hk: "1bbVOR"
-					}))), O && a.a.createElement("span", {
+					}))), T && a.a.createElement("span", {
 						className: b.a.PostUnavailableInfo
 					}, a.a.createElement(c, {
 						className: b.a.StateIcon
@@ -315,7 +316,7 @@
 					}, n.fbt._("Post removed", null, {
 						hk: "MeMu3"
 					}))))), a.a.createElement(f, {
-						post: e
+						post: t
 					})))
 				}
 		},
@@ -714,28 +715,29 @@
 				d = i.n(c);
 			const l = s.a.span("metaText", d.a),
 				m = e => a.a.createElement(l, e, " · "),
-				u = ({
-					isScoreHidden: e,
-					score: t,
-					useUpvotes: i,
-					...o
-				}) => {
-					const s = Object(r.b)(t),
-						c = n.fbt._({
+				u = e => {
+					let {
+						isScoreHidden: t,
+						score: i,
+						useUpvotes: o,
+						...s
+					} = e;
+					const c = Object(r.b)(i),
+						d = n.fbt._({
 							"*": "{number} upvotes",
 							_1: "1 upvote"
-						}, [n.fbt._plural(t, "number", s)], {
+						}, [n.fbt._plural(i, "number", c)], {
 							hk: "2L3T21"
 						}),
-						d = e ? n.fbt._("Score hidden", null, {
+						m = t ? n.fbt._("Score hidden", null, {
 							hk: "SDk6B"
-						}) : i ? c : n.fbt._({
+						}) : o ? d : n.fbt._({
 							"*": "{number} points",
 							_1: "1 point"
-						}, [n.fbt._plural(t, "number", s)], {
+						}, [n.fbt._plural(i, "number", c)], {
 							hk: "gf67v"
 						});
-					return a.a.createElement(l, o, d)
+					return a.a.createElement(l, s, m)
 				},
 				p = e => a.a.createElement(l, null, n.fbt._({
 					"*": "{number} comments",
@@ -877,4 +879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.54ceb2ba00061f5dab3d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.3c3af8ee5d32e81269cf.js.map

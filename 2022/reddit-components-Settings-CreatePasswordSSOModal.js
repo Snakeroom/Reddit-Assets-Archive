@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.5142a7ce664765d892b5.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.438f5bf84897fb375edf.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Settings-CreatePasswordSSOModal"], {
 		"./src/reddit/components/EmailCollection/Envelope/index.m.less": function(e, s, t) {
@@ -60,9 +60,12 @@
 				v = t("./src/reddit/controls/Button/index.tsx"),
 				w = t("./src/reddit/components/Settings/CreatePasswordSSOModal/index.m.less"),
 				b = t.n(w);
-			const h = ({
-				isResponsiveSettingsEnabled: e
-			}) => e ? b.a.mResponsive : "";
+			const h = e => {
+				let {
+					isResponsiveSettingsEnabled: s
+				} = e;
+				return s ? b.a.mResponsive : ""
+			};
 			var g = e => a.a.createElement(u.a, {
 					className: h(e),
 					icon: a.a.createElement(p.a, null),
@@ -84,9 +87,12 @@
 				})))),
 				C = t("./src/reddit/helpers/trackers/sso.ts"),
 				E = t("./src/reddit/hooks/useTracking.ts");
-			const O = ({
-				isResponsiveSettingsEnabled: e
-			}) => e ? b.a.mResponsive : "";
+			const O = e => {
+				let {
+					isResponsiveSettingsEnabled: s
+				} = e;
+				return s ? b.a.mResponsive : ""
+			};
 			var k, y = e => {
 				const s = Object(E.a)();
 				Object(o.useEffect)(() => {
@@ -166,9 +172,12 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const M = ({
-				isResponsiveSettingsEnabled: e
-			}) => e ? P.a.ResponsiveOverlay : "";
+			const M = e => {
+				let {
+					isResponsiveSettingsEnabled: s
+				} = e;
+				return s ? P.a.ResponsiveOverlay : ""
+			};
 			var R = e => a.a.createElement(o.Fragment, null, e.resetPasswordFor2FAModalOpen && a.a.createElement(x, j({
 					description: c.fbt._("To use two-factor authentication, you need to create a Reddit password first. We'll walk you through it.", null, {
 						hk: "440ryb"
@@ -373,4 +382,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.5142a7ce664765d892b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Settings-CreatePasswordSSOModal.438f5bf84897fb375edf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.59287160bcec86c5523c.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.d66a0cbc683c23634abf.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, s) {
@@ -33,11 +33,12 @@
 			};
 			const b = "PAGE__TRENDING_SEARCHES_LOADED",
 				h = Object(r.a)(b),
-				g = e => async (t, s, {
-					apiContext: r
-				}) => {
-					const n = await u(r(), e);
-					if (n.ok) {
+				g = e => async (t, s, r) => {
+					let {
+						apiContext: n
+					} = r;
+					const a = await u(n(), e);
+					if (a.ok) {
 						const s = (e => {
 							const t = [];
 							if (e.body && e.body.trending_searches) {
@@ -63,7 +64,7 @@
 								}
 							}
 							return t
-						})(n);
+						})(a);
 						return t(h({
 							items: s,
 							subplacement: e
@@ -413,38 +414,47 @@
 				moderatorPermissions: m.l,
 				modModeEnabled: c.T,
 				showEditFlair: p.a
-			}), (e, {
-				postId: t
-			}) => ({
-				dispatchFlairChanged: ({
-					post: t,
-					previewFlair: s,
-					selectedTemplateId: r
-				}) => e(Object(a.h)({
-					post: t,
-					previewFlair: s,
-					selectedTemplateId: r
-				})),
-				handleVote: s => {
-					const r = s === o.a.upvoted ? Object(i.kb)(t) : Object(i.w)(t);
-					e(r)
-				},
-				onIgnoreReports: () => e(Object(i.gb)(t)),
-				onOpenReportsDropdown: t => e(Object(d.h)({
-					tooltipId: t
-				}))
-			}), (e, t, s) => ({
+			}), (e, t) => {
+				let {
+					postId: s
+				} = t;
+				return {
+					dispatchFlairChanged: t => {
+						let {
+							post: s,
+							previewFlair: r,
+							selectedTemplateId: n
+						} = t;
+						return e(Object(a.h)({
+							post: s,
+							previewFlair: r,
+							selectedTemplateId: n
+						}))
+					},
+					handleVote: t => {
+						const r = t === o.a.upvoted ? Object(i.kb)(s) : Object(i.w)(s);
+						e(r)
+					},
+					onIgnoreReports: () => e(Object(i.gb)(s)),
+					onOpenReportsDropdown: t => e(Object(d.h)({
+						tooltipId: t
+					}))
+				}
+			}, (e, t, s) => ({
 				...s,
 				...e,
 				...t,
-				onFlairChanged: ({
-					previewFlair: e,
-					selectedTemplateId: r
-				}) => t.dispatchFlairChanged({
-					post: s.post,
-					previewFlair: e,
-					selectedTemplateId: r
-				})
+				onFlairChanged: e => {
+					let {
+						previewFlair: r,
+						selectedTemplateId: n
+					} = e;
+					return t.dispatchFlairChanged({
+						post: s.post,
+						previewFlair: r,
+						selectedTemplateId: n
+					})
+				}
 			}), {
 				forwardRef: !0
 			});
@@ -452,4 +462,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.59287160bcec86c5523c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.d66a0cbc683c23634abf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotificationSettings.f01d0749c50ea475d71c.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotificationSettings.7f5d9f50f60c40708487.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, s) {
@@ -29,21 +29,24 @@
 				o = s.n(a),
 				r = s("./src/reddit/components/Settings/Notifications/index.m.less"),
 				c = s.n(r);
-			const d = ({
-				rowsCount: e
-			}) => o.a.createElement("div", {
-				role: "alert",
-				"aria-busy": "true"
-			}, o.a.createElement("div", {
-				className: c.a.loadingSectionHeader
-			}), i()(e, e => o.a.createElement("div", {
-				className: c.a.loadingToggleWrapper,
-				key: e
-			}, o.a.createElement("span", {
-				className: c.a.loadingToggleName
-			}), o.a.createElement("span", {
-				className: c.a.loadingToggleButton
-			}))))
+			const d = e => {
+				let {
+					rowsCount: t
+				} = e;
+				return o.a.createElement("div", {
+					role: "alert",
+					"aria-busy": "true"
+				}, o.a.createElement("div", {
+					className: c.a.loadingSectionHeader
+				}), i()(t, e => o.a.createElement("div", {
+					className: c.a.loadingToggleWrapper,
+					key: e
+				}, o.a.createElement("span", {
+					className: c.a.loadingToggleName
+				}), o.a.createElement("span", {
+					className: c.a.loadingToggleButton
+				}))))
+			}
 		},
 		"./src/reddit/components/Settings/Notifications/NotificationToggles.tsx": function(e, t, s) {
 			"use strict";
@@ -161,4 +164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.f01d0749c50ea475d71c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.7f5d9f50f60c40708487.js.map

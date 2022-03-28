@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ExpandedCrosspost.784b324ecd08b9961d55.js
-// Retrieved at 2/2/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ExpandedCrosspost.2ee9afb354e9f73daf27.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ExpandedCrosspost"], {
 		"./src/reddit/components/ExpandedCrossposts/index.m.less": function(s, e, t) {
@@ -14,8 +14,8 @@
 				o = t("./src/lib/makeListingKey/index.ts"),
 				n = t("./node_modules/react/index.js"),
 				i = t.n(n),
-				c = t("./node_modules/react-redux/es/index.js"),
-				r = t("./src/reddit/actions/otherDiscussions/index.ts"),
+				r = t("./node_modules/react-redux/es/index.js"),
+				c = t("./src/reddit/actions/otherDiscussions/index.ts"),
 				a = t("./src/reddit/components/ItemCarousel/index.tsx"),
 				l = t("./src/reddit/components/ItemCarousel/helpers.ts"),
 				p = t("./src/reddit/constants/page.ts"),
@@ -25,17 +25,20 @@
 			e.default = s => {
 				const {
 					postId: e
-				} = s, t = Object(c.d)(), {
+				} = s, t = Object(r.d)(), {
 					postIds: m
-				} = Object(c.e)((({
-					postId: s
-				}) => e => ({
-					postIds: Object(u.D)(e, Object(o.a)(s, null, {
-						isOtherDiscussions: !0
-					}), p.d.OtherDiscussions, !1)
-				}))(s));
+				} = Object(r.e)((s => {
+					let {
+						postId: e
+					} = s;
+					return s => ({
+						postIds: Object(u.D)(s, Object(o.a)(e, null, {
+							isOtherDiscussions: !0
+						}), p.d.OtherDiscussions, !1)
+					})
+				})(s));
 				Object(n.useEffect)(() => {
-					t(Object(r.a)(e, {
+					t(Object(c.a)(e, {
 						postId: e
 					}))
 				}, [e]);
@@ -56,4 +59,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ExpandedCrosspost.784b324ecd08b9961d55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ExpandedCrosspost.2ee9afb354e9f73daf27.js.map

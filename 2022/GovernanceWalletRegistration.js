@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.d16251e0b757ec3dce13.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.9053f8f5ff2329c3cfd9.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -244,14 +244,15 @@
 				S = Object(a.a)(C.v),
 				A = Object(a.a)(C.w),
 				R = Object(a.a)(C.x),
-				P = (e, t) => async (n, r, {
-					apiContext: a,
-					gqlContext: s
-				}) => {
-					let o, c = r().polls.models[e];
+				P = (e, t) => async (n, r, a) => {
+					let s, {
+							apiContext: o,
+							gqlContext: c
+						} = a,
+						p = r().polls.models[e];
 					if (n(N({
 							pollId: e
-						})), (o = c.type === u.a.GA ? await ((e, t, n) => Object(l.a)(e, {
+						})), (s = p.type === u.a.GA ? await ((e, t, n) => Object(l.a)(e, {
 								...m,
 								variables: {
 									input: {
@@ -259,41 +260,42 @@
 										optionId: n
 									}
 								}
-							}))(s(), e, t) : await
+							}))(c(), e, t) : await
 							function(e, t, n, r) {
 								return Object(b.a)(e, {
 									method: "put",
 									endpoint: `${d.a.metaUrl}/polls/${t}/${n}/votes/me/${r}`
 								})
-							}(a(), c.subredditId, e, t)).ok) {
-						if (c.type === u.a.GA) {
+							}(o(), p.subredditId, e, t)).ok) {
+						if (p.type === u.a.GA) {
 							const {
 								options: e
-							} = o.body.data.updatePostPollVoteState.poll;
+							} = s.body.data.updatePostPollVoteState.poll;
 							n(E({
-								pollId: c.id,
+								pollId: p.id,
 								optionId: t,
 								options: e
 							}))
-						} else n(w(o.body));
+						} else n(w(s.body));
 						const a = r();
-						if ((c = a.polls.models[e]) && Object(u.d)(c)) {
+						if ((p = a.polls.models[e]) && Object(u.d)(p)) {
 							const {
 								postId: e
-							} = c, t = a.posts.models[e];
+							} = p, t = a.posts.models[e];
 							t && t.voteState === f.a.notVoted && n(Object(i.kb)(e))
 						}
 					} else n(k({
 						pollId: e,
-						error: o.error || o.errors[0].message
-					})), Object(g.a)(n, o.error || o.errors[0].messsage)
-				}, L = (e, t) => async (n, a, {
-					apiContext: i
-				}) => {
-					var l;
+						error: s.error || s.errors[0].message
+					})), Object(g.a)(n, s.error || s.errors[0].messsage)
+				}, L = (e, t) => async (n, a, i) => {
+					let {
+						apiContext: l
+					} = i;
+					var u;
 					n(I());
-					const u = a().transfers.communityPoints.contentId || void 0,
-						m = await
+					const m = a().transfers.communityPoints.contentId || void 0,
+						p = await
 					function(e, t) {
 						return Object(b.a)(e, {
 							data: {
@@ -305,28 +307,29 @@
 							endpoint: `${d.a.metaUrl}/wallets/me/${t.subredditId}/transfers`,
 							method: "post"
 						})
-					}(i(), {
+					}(l(), {
 						...e,
-						contentId: u
+						contentId: m
 					});
-					m.ok ? (n(M({
-						...m.body,
+					p.ok ? (n(M({
+						...p.body,
 						subredditId: e.subredditId
 					})), n(Object(c.f)({
 						kind: h.b.SuccessCommunity,
-						text: r.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [r.fbt._param("amount", Object(s.a)(e.amount)), r.fbt._param("tokenName", (null === (l = Object(v.b)(a(), e.subredditId)) || void 0 === l ? void 0 : l.name) || ""), r.fbt._param("recipient", e.recipient)], {
+						text: r.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [r.fbt._param("amount", Object(s.a)(e.amount)), r.fbt._param("tokenName", (null === (u = Object(v.b)(a(), e.subredditId)) || void 0 === u ? void 0 : u.name) || ""), r.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
 					})), t && n(Object(o.f)())) : (n(O({
-						error: m.error
-					})), Object(g.a)(n, m.error))
-				}, B = e => async (t, n, {
-					apiContext: r
-				}) => {
+						error: p.error
+					})), Object(g.a)(n, p.error))
+				}, B = e => async (t, n, r) => {
+					let {
+						apiContext: a
+					} = r;
 					t(S());
-					const a = await Object(p.a)(r(), e);
-					a.ok ? t(A(a.body)) : t(T({
-						error: a.error
+					const s = await Object(p.a)(a(), e);
+					s.ok ? t(A(s.body)) : t(T({
+						error: s.error
 					}))
 				}
 		},
@@ -347,9 +350,12 @@
 				l = n("./src/reddit/components/Governance/Token/index.m.less"),
 				u = n.n(l);
 			const m = Object(o.c)({
-				pointsDetails: (e, {
-					subredditId: t
-				}) => Object(d.b)(e, t)
+				pointsDetails: (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					return Object(d.b)(e, n)
+				}
 			});
 			t.a = Object(s.b)(m)((function(e) {
 				var t;
@@ -466,17 +472,21 @@
 			}
 			const g = Object(m.c)({
 				userIsLoggedIn: e => !!e.user.account,
-				publicAddress: (e, {
-					subredditId: t
-				}) => {
-					const n = Object(u.d)(e, {
-						subredditId: t
+				publicAddress: (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					const r = Object(u.d)(e, {
+						subredditId: n
 					});
-					return n && n.publicAddress
+					return r && r.publicAddress
 				},
-				points: (e, {
-					subredditId: t
-				}) => Object(l.b)(e, t)
+				points: (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					return Object(l.b)(e, n)
+				}
 			});
 			t.default = Object(s.b)(g)(Object(i.b)(C))
 		},
@@ -1307,14 +1317,17 @@
 				M = a.a.wrapped(i.l, "PrimaryButton", u.a),
 				T = a.a.wrapped(i.o, "CancelButton", u.a),
 				S = a.a.wrapped(i.r, "RemoveButton", u.a),
-				A = ({
-					className: e,
-					...t
-				}) => o.a.createElement(i.t, m({
-					kind: i.b.Button,
-					priority: i.c.Primary,
-					className: Object(r.a)(u.a.ConfirmButton, e)
-				}, t))
+				A = e => {
+					let {
+						className: t,
+						...n
+					} = e;
+					return o.a.createElement(i.t, m({
+						kind: i.b.Button,
+						priority: i.c.Primary,
+						className: Object(r.a)(u.a.ConfirmButton, t)
+					}, n))
+				}
 		},
 		"./src/reddit/controls/Checkbox/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1370,10 +1383,11 @@
 			}
 			class m extends a.a.Component {
 				constructor() {
-					super(...arguments), this.handleKeyDown = ({
-						keyCode: e
-					}) => {
-						e === c.a.Escape && this.props.closeModal()
+					super(...arguments), this.handleKeyDown = e => {
+						let {
+							keyCode: t
+						} = e;
+						t === c.a.Escape && this.props.closeModal()
 					}
 				}
 				render() {
@@ -1891,7 +1905,9 @@
 				a = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/reddit/actions/economics/claims/constants.ts")),
 				s = n("./src/reddit/actions/economics/me/constants.ts");
 			const o = {};
-			var i = (e = o, t) => {
+			var i = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o,
+						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case s.a: {
 							const n = t.payload.claimPoints || {},
@@ -1951,7 +1967,9 @@
 					symbol: (null == c ? void 0 : c.token) || ""
 				}
 			}
-			var m = (e = d, t) => {
+			var m = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d,
+					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case c.a: {
 						const {
@@ -1968,7 +1986,9 @@
 				}
 			};
 			const b = {};
-			var p = (e = b, t) => {
+			var p = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b,
+					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case c.n: {
 						const {
@@ -2096,4 +2116,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.d16251e0b757ec3dce13.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.9053f8f5ff2329c3cfd9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.a7a25315314c878a3dd9.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.75fa2b6970ff3f9e7c8a.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EditCommunityDescriptionModal"], {
 		"./src/lib/hooks/useMutation.ts": function(e, t, o) {
@@ -172,16 +172,17 @@
 					...n,
 					variables: t
 				}),
-				p = (e, t) => async (o, s, {
-					gqlContext: n
-				}) => {
-					const r = {
+				p = (e, t) => async (o, s, n) => {
+					let {
+						gqlContext: r
+					} = n;
+					const a = {
 						input: {
 							subredditId: e,
 							moduleId: t
 						}
 					};
-					await m(n(), r), o(Object(i.b)(e))
+					await m(r(), a), o(Object(i.b)(e))
 				}
 		},
 		"./src/reddit/helpers/trackers/communityProgressModule.ts": function(e, t, o) {
@@ -307,4 +308,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.a7a25315314c878a3dd9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EditCommunityDescriptionModal.75fa2b6970ff3f9e7c8a.js.map

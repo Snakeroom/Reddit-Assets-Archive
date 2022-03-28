@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayThemes.c6db259c6cfe26fb82e3.js
-// Retrieved at 3/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayThemes.55062898861a3ed097b5.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayThemes"], {
 		"./src/chat/components/OverlayThemes/index.m.less": function(e, t, a) {
@@ -52,38 +52,42 @@
 				_ = a("./src/chat/components/OverlayNav/index.tsx"),
 				b = a("./src/chat/constants/toast.ts"),
 				T = a("./src/chat/controls/Overlay/index.tsx"),
-				g = a("./src/chat/controls/OverlayControlBar/index.tsx"),
-				u = a("./src/chat/controls/Settings/SectionTitle/index.tsx"),
+				u = a("./src/chat/controls/OverlayControlBar/index.tsx"),
+				g = a("./src/chat/controls/Settings/SectionTitle/index.tsx"),
 				E = a("./src/chat/models/Theme/index.ts"),
 				x = a("./src/chat/selectors/channels.ts"),
 				v = a("./src/chat/selectors/theme.ts"),
 				O = a("./src/chat/selectors/user.ts"),
 				y = a("./src/chat/components/OverlayThemes/index.m.less"),
 				I = a.n(y);
-			const p = ({
-					name: e
-				}) => n.a.createElement("div", {
-					className: Object(m.a)(I.a.ThemeIndicator, I.a[e])
-				}, s.fbt._("Aa", null, {
-					hk: "1usCDh"
-				})),
-				w = ({
-					themeKey: e,
-					onClick: t
-				}) => {
-					const a = Object(r.e)(v.a) === e,
-						c = e.toLowerCase();
+			const p = e => {
+					let {
+						name: t
+					} = e;
+					return n.a.createElement("div", {
+						className: Object(m.a)(I.a.ThemeIndicator, I.a[t])
+					}, s.fbt._("Aa", null, {
+						hk: "1usCDh"
+					}))
+				},
+				w = e => {
+					let {
+						themeKey: t,
+						onClick: a
+					} = e;
+					const c = Object(r.e)(v.a) === t,
+						l = t.toLowerCase();
 					return n.a.createElement("button", {
 						className: Object(m.a)(I.a.ThemeItem, {
-							[I.a.active]: a
+							[I.a.active]: c
 						}),
-						onClick: () => t(e),
+						onClick: () => a(t),
 						tabIndex: 0
 					}, n.a.createElement(p, {
-						name: c
+						name: l
 					}), n.a.createElement("div", {
 						className: I.a.ThemeName
-					}, s.fbt._("{ThemeIndicator}", [s.fbt._param("ThemeIndicator", c)], {
+					}, s.fbt._("{ThemeIndicator}", [s.fbt._param("ThemeIndicator", l)], {
 						hk: "beor6"
 					})))
 				};
@@ -120,7 +124,7 @@
 					themeKey: e,
 					key: e,
 					onClick: f
-				})))()), n.a.createElement(u.a, {
+				})))()), n.a.createElement(g.a, {
 					text: s.fbt._("Preview", null, {
 						hk: "2Y7qLG"
 					})
@@ -153,7 +157,7 @@
 				}, n.a.createElement(d.a, {
 					userId: m,
 					isFlipping: !0
-				}))))), t ? n.a.createElement(g.a, {
+				}))))), t ? n.a.createElement(u.a, {
 					secondaryButtonText: s.fbt._("Cancel", null, {
 						hk: "2TSLl5"
 					}),
@@ -181,12 +185,15 @@
 				c = a.n(s),
 				n = a("./src/chat/controls/Settings/SectionTitle/index.m.less"),
 				r = a.n(n);
-			t.a = ({
-				text: e
-			}) => c.a.createElement("div", {
-				className: r.a.SectionTitle
-			}, e)
+			t.a = e => {
+				let {
+					text: t
+				} = e;
+				return c.a.createElement("div", {
+					className: r.a.SectionTitle
+				}, t)
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayThemes.c6db259c6cfe26fb82e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayThemes.55062898861a3ed097b5.js.map

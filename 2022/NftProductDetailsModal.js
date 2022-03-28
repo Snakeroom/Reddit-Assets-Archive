@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.1100218a81a2c11f35f6.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.b0ba58f16f879fdb56ea.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProductDetailsModal"], {
 		"./src/reddit/components/Econ/Marketplace/NftProductDetails/index.m.less": function(e, t, r) {
@@ -35,35 +35,36 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const O = ({
-					onClose: e
-				}) => {
-					const t = Object(o.e)(p.Ab),
-						r = Object(o.e)(e => {
+			const O = e => {
+					let {
+						onClose: t
+					} = e;
+					const r = Object(o.e)(p.Ab),
+						a = Object(o.e)(e => {
 							var t;
 							return null === (t = Object(u.a)(e)) || void 0 === t ? void 0 : t.itemId
 						}),
-						a = Object(o.d)();
-					if (!t || !r) return null;
+						n = Object(o.d)();
+					if (!r || !a) return null;
 					return s.a.createElement("div", {
 						className: v.a.container
 					}, s.a.createElement(i.a, null, s.a.createElement(c.a, {
-						itemId: r,
-						onClose: e,
-						currentUserId: t,
-						onViewAvatar: t => {
-							e(), a(Object(d.b)({
+						itemId: a,
+						onClose: t,
+						currentUserId: r,
+						onViewAvatar: e => {
+							t(), n(Object(d.b)({
 								activeTab: l.a.ME,
 								activeDetails: {
-									id: t
+									id: e
 								}
 							}))
 						},
-						onSetAsAvatar: t => {
-							e(), a(Object(d.b)({
+						onSetAsAvatar: e => {
+							t(), n(Object(d.b)({
 								activeTab: l.a.ME,
 								activeDetails: {
-									id: t,
+									id: e,
 									equip: !0,
 									save: !0
 								}
@@ -89,4 +90,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.1100218a81a2c11f35f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.b0ba58f16f879fdb56ea.js.map

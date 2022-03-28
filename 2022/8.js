@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/8.0c081c254d463d04fccb.js
-// Retrieved at 3/2/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/8.634f722fb667944d4721.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[8], {
 		"./node_modules/deep-diff/index.js": function(e, t, n) {
@@ -346,26 +346,27 @@
 					}
 				};
 
-			function l({
-				gatewayResponse: e,
-				normalizedGqlResponse: t,
-				rawGqlResponse: n
-			}) {
+			function l(e) {
+				let {
+					gatewayResponse: t,
+					normalizedGqlResponse: n,
+					rawGqlResponse: o
+				} = e;
 				if (Object(r.a)()) {
-					console.group("GQL Modqueue Shadowtest"), console.groupCollapsed("raw gql response"), console.log(n), console.groupEnd(), console.groupCollapsed("normalized gql response"), console.log(t), console.groupEnd(), console.groupCollapsed("gateway response"), console.log(e), console.groupEnd();
+					console.group("GQL Modqueue Shadowtest"), console.groupCollapsed("raw gql response"), console.log(o), console.groupEnd(), console.groupCollapsed("normalized gql response"), console.log(n), console.groupEnd(), console.groupCollapsed("gateway response"), console.log(t), console.groupEnd();
 					const {
-						allDiffs: s,
-						issueCounts: o,
+						allDiffs: e,
+						issueCounts: s,
 						totalIssues: r
-					} = a(e, t);
+					} = a(t, n);
 					console.groupCollapsed(`diff: ${r} issues`), console.log("lhs = gateway\nrhs = gql");
-					for (const e in s) {
-						if (console.groupCollapsed(`${e}: ${o[e]} issues`), o[e] > 0)
-							for (const t in s[e]) {
-								const n = s[e][t].diffResult;
-								console.groupCollapsed(`${t}: ${n.length||0} issues`), console.log(n), console.log({
-									gql: s[e][t].gqlThing,
-									gateway: s[e][t].gatewayThing
+					for (const t in e) {
+						if (console.groupCollapsed(`${t}: ${s[t]} issues`), s[t] > 0)
+							for (const n in e[t]) {
+								const s = e[t][n].diffResult;
+								console.groupCollapsed(`${n}: ${s.length||0} issues`), console.log(s), console.log({
+									gql: e[t][n].gqlThing,
+									gateway: e[t][n].gatewayThing
 								}), console.groupEnd()
 							}
 						console.groupEnd()
@@ -374,21 +375,21 @@
 				}
 				if (Object(r.b)()) {
 					const {
-						allDiffs: n,
+						allDiffs: e,
 						issueCounts: o,
 						totalIssues: r
-					} = a(e, t);
+					} = a(t, n);
 					if (r <= 0) return;
-					s.l(e => {
-						e.setExtra("info", {
-							allDiffs: n,
+					s.l(t => {
+						t.setExtra("info", {
+							allDiffs: e,
 							issueCounts: o,
 							totalIssues: r
-						}), e.setExtra("bypassSampling", !0), s.d("GQL Modqueue Shadowtest Diff")
+						}), t.setExtra("bypassSampling", !0), s.d("GQL Modqueue Shadowtest Diff")
 					})
 				}
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/8.0c081c254d463d04fccb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/8.634f722fb667944d4721.js.map

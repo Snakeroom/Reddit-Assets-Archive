@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Report.30d615e7274d8edaefcb.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Report.a49c7d5ea4f7530d92db.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Report"], {
 		"./src/reddit/actions/pages/report/index.ts": function(e, t, r) {
@@ -22,19 +22,20 @@
 				i = r("./src/reddit/constants/headers.ts");
 			var c = r("./src/reddit/actions/reportPageRules/constants.ts");
 			const d = Object(n.a)(c.a),
-				p = () => async (e, t, {
-					apiContext: r
-				}) => {
-					const n = t();
-					if (!n.user || !n.user.language) return;
-					const c = await (e => Object(a.a)(Object(o.a)(e, [i.a]), {
+				p = () => async (e, t, r) => {
+					let {
+						apiContext: n
+					} = r;
+					const c = t();
+					if (!c.user || !c.user.language) return;
+					const p = await (e => Object(a.a)(Object(o.a)(e, [i.a]), {
 						endpoint: `${e.apiUrl}/api/report_page_rules.json`,
 						method: s.jb.GET
-					}))(r());
-					if (c.ok) {
+					}))(n());
+					if (p.ok) {
 						const {
 							rules: t
-						} = c.body, r = t.map(e => (e.nextStepReasons && e.nextStepReasons.length || (e.nextStepReasons = [{
+						} = p.body, r = t.map(e => (e.nextStepReasons && e.nextStepReasons.length || (e.nextStepReasons = [{
 							...e
 						}]), e));
 						e(d(r))
@@ -47,21 +48,21 @@
 				_ = Object(n.a)(l.d),
 				O = Object(n.a)(l.c),
 				j = Object(n.a)(l.a),
-				x = e => async (t, r, {
-					apiContext: n
-				}) => {
-					let s;
+				x = e => async (t, r, n) => {
+					let s, {
+						apiContext: a
+					} = n;
 					e.queryParams && e.queryParams.reason && (s = e.queryParams.reason, t(j(s))), t(p()), t(_());
-					const a = await Object(u.a)(n());
-					if (a.ok && a.body)
-						if (a.body.account) t(O(a.body));
+					const o = await Object(u.a)(a());
+					if (o.ok && o.body)
+						if (o.body.account) t(O(o.body));
 						else {
 							const e = r();
 							Object(b.a)(t, e)
 						}
-					else t(g(a.error))
+					else t(g(o.error))
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Report.30d615e7274d8edaefcb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Report.a49c7d5ea4f7530d92db.js.map

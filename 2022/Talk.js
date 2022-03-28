@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.6a56d44e2e7fd1c6c6da.js
-// Retrieved at 3/24/2022, 2:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.122b9075784ca37fe41f.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -407,30 +407,33 @@
 				y = g.fbt._("Powerups Bolt", null, {
 					hk: "1GoCTw"
 				}),
-				v = ({
-					title: e,
-					subreddits: a,
-					imageName: t,
-					imageAlt: n
-				}) => i.a.createElement("div", {
-					className: f.a.communityCell
-				}, i.a.createElement("div", {
-					className: f.a.communityImageBackgroundCircle
-				}, i.a.createElement("img", {
-					alt: n,
-					className: f.a.communityImage,
-					src: `${l.a.assetPath}/img/talk/${t}.png`
-				})), i.a.createElement("h3", {
-					className: f.a.communityTitle
-				}, e), i.a.createElement("h4", {
-					className: f.a.communityDescription
-				}, a.map(e => i.a.createElement(p.a, {
-					className: f.a.communityLink,
-					key: e,
-					to: e,
-					target: s.d.BLANK,
-					rel: s.c
-				}, e)))),
+				v = e => {
+					let {
+						title: a,
+						subreddits: t,
+						imageName: n,
+						imageAlt: r
+					} = e;
+					return i.a.createElement("div", {
+						className: f.a.communityCell
+					}, i.a.createElement("div", {
+						className: f.a.communityImageBackgroundCircle
+					}, i.a.createElement("img", {
+						alt: r,
+						className: f.a.communityImage,
+						src: `${l.a.assetPath}/img/talk/${n}.png`
+					})), i.a.createElement("h3", {
+						className: f.a.communityTitle
+					}, a), i.a.createElement("h4", {
+						className: f.a.communityDescription
+					}, t.map(e => i.a.createElement(p.a, {
+						className: f.a.communityLink,
+						key: e,
+						to: e,
+						target: s.d.BLANK,
+						rel: s.c
+					}, e))))
+				},
 				b = () => {
 					const e = Object(h.e)(_.cb);
 					return i.a.createElement("div", {
@@ -449,32 +452,38 @@
 						hk: "2eOJeR"
 					})), i.a.createElement("div", {
 						className: Object(r.a)(f.a.communitiesSectionGrid, f.a.contentWrapper)
-					}, N.map(({
-						key: e,
-						title: a,
-						subreddits: t,
-						imageName: l,
-						imageAlt: n
-					}) => i.a.createElement(v, {
-						key: e,
-						title: a,
-						subreddits: t,
-						imageName: l,
-						imageAlt: n
-					})))))
+					}, N.map(e => {
+						let {
+							key: a,
+							title: t,
+							subreddits: l,
+							imageName: n,
+							imageAlt: r
+						} = e;
+						return i.a.createElement(v, {
+							key: a,
+							title: t,
+							subreddits: l,
+							imageName: n,
+							imageAlt: r
+						})
+					}))))
 				},
 				w = "https://forms.gle/U6BS6Q8dCCFy14Gw8";
 			var C = t("./src/reddit/components/CollapsibleFAQ/index.tsx"),
 				q = t("./src/reddit/pages/Talk/RadialCircle.m.less"),
 				T = t.n(q);
-			const I = ({
-				className: e
-			}) => i.a.createElement("div", {
-				className: Object(r.a)(T.a.radialCircle, e),
-				style: {
-					backgroundImage: `url(${l.a.assetPath}/img/talk/radial-circle.svg)`
-				}
-			});
+			const I = e => {
+				let {
+					className: a
+				} = e;
+				return i.a.createElement("div", {
+					className: Object(r.a)(T.a.radialCircle, a),
+					style: {
+						backgroundImage: `url(${l.a.assetPath}/img/talk/radial-circle.svg)`
+					}
+				})
+			};
 			var B = t("./src/reddit/pages/Talk/FaqSection.m.less"),
 				F = t.n(B);
 			const {
@@ -552,14 +561,17 @@
 				hk: "1hsJOA"
 			})), i.a.createElement("div", {
 				className: F.a.faqs
-			}, O.map(({
-				prompt: e,
-				answer: a
-			}, t) => i.a.createElement(C.a, {
-				defaultClosed: !0,
-				question: e(),
-				key: t
-			}, a()))), i.a.createElement("h3", {
+			}, O.map((e, a) => {
+				let {
+					prompt: t,
+					answer: l
+				} = e;
+				return i.a.createElement(C.a, {
+					defaultClosed: !0,
+					question: t(),
+					key: a
+				}, l())
+			})), i.a.createElement("h3", {
 				className: F.a.faqMoreQuestionsHeading
 			}, x._("Have more questions? We've got answers.", null, {
 				hk: "3Entyj"
@@ -736,4 +748,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.6a56d44e2e7fd1c6c6da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.122b9075784ca37fe41f.js.map

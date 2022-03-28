@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.30529f4169bd857d75d2.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.eb632b234c269bd99c39.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-TransferTransactionModal"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -602,7 +602,7 @@
 		"./node_modules/qrcode/lib/core/reed-solomon-encoder.js": function(e, t, r) {
 			var n = r("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				o = r("./node_modules/qrcode/lib/core/polynomial.js"),
-				i = r("./node_modules/node-libs-browser/node_modules/buffer/index.js").Buffer;
+				i = r("./node_modules/buffer/index.js").Buffer;
 
 			function s(e) {
 				this.genPoly = void 0, this.degree = e, this.degree && this.initialize(this.degree)
@@ -1178,7 +1178,9 @@
 		"./src/reddit/actions/util/pollActionForSuccess.ts": function(e, t, r) {
 			"use strict";
 
-			function n(e, t, r = 3e4, n = 3e5) {
+			function n(e, t) {
+				let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 3e4,
+					n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 3e5;
 				return async (o, i, s) => new Promise((a, u) => {
 					const c = Date.now() + n,
 						d = () => {
@@ -1223,9 +1225,12 @@
 				f = r("./src/reddit/components/Governance/TokenAmount/index.m.less"),
 				h = r.n(f);
 			const g = Object(s.c)({
-				pointsDetails: (e, {
-					subredditId: t
-				}) => Object(l.b)(e, t)
+				pointsDetails: (e, t) => {
+					let {
+						subredditId: r
+					} = t;
+					return Object(l.b)(e, r)
+				}
 			});
 			t.a = Object(i.b)(g)((function(e) {
 				var t;
@@ -1455,4 +1460,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.30529f4169bd857d75d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.eb632b234c269bd99c39.js.map

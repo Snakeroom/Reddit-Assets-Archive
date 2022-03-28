@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.f8a9ddd1acb567bfba40.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.cdccffe9870eeab42358.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx": function(e, t, n) {
@@ -13,10 +13,11 @@
 				c = n("./node_modules/react-redux/es/index.js"),
 				a = n("./src/reddit/selectors/user.ts"),
 				d = n("./src/config.ts");
-			const i = ({
-				children: e
-			}) => {
-				const t = function() {
+			const i = e => {
+				let {
+					children: t
+				} = e;
+				const n = function() {
 					const e = Object(c.e)(u),
 						t = Object(c.e)(a.cb);
 					l || (l = function(e, t) {
@@ -44,8 +45,8 @@
 					return l
 				}();
 				return s.a.createElement(r.a, {
-					value: t
-				}, e)
+					value: n
+				}, t)
 			};
 			let l = null;
 
@@ -82,22 +83,23 @@
 			var _ = n("./src/reddit/hooks/usePreloadModal.ts"),
 				p = n("./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.m.less"),
 				E = n.n(p);
-			t.default = ({
-				className: e,
-				imageUrl: t
-			}) => {
-				const n = Object(s.d)();
+			t.default = e => {
+				let {
+					className: t,
+					imageUrl: n
+				} = e;
+				const r = Object(s.d)();
 				Object(_.a)(m);
-				const r = Object(c.c)(t);
-				return r ? o.a.createElement("div", {
-					className: e
+				const i = Object(c.c)(n);
+				return i ? o.a.createElement("div", {
+					className: t
 				}, o.a.createElement(d.a, null, o.a.createElement(c.b, {
-					imageUrl: t
+					imageUrl: n
 				}), o.a.createElement(c.a, {
 					className: E.a.detailsButton,
 					onClick: () => {
-						n(Object(a.h)(u.a.ECON_NFT_PRODUCT_DETAILS, {
-							itemId: r
+						r(Object(a.h)(u.a.ECON_NFT_PRODUCT_DETAILS, {
+							itemId: i
 						}))
 					}
 				}))) : null
@@ -137,4 +139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.f8a9ddd1acb567bfba40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.cdccffe9870eeab42358.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.bc9f96b0a1137e04dda1.js
-// Retrieved at 3/9/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.df5f45b0f16e07459e18.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1, "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, n) {
@@ -19,7 +19,7 @@
 				i = n("./node_modules/@ethersproject/bignumber/lib.esm/bignumber.js"),
 				o = n("./node_modules/@ethersproject/keccak256/lib.esm/index.js"),
 				s = n("./node_modules/@ethersproject/rlp/lib.esm/index.js");
-			const a = new(n("./node_modules/@ethersproject/logger/lib.esm/index.js").a)("address/5.4.0");
+			const a = new(n("./node_modules/@ethersproject/logger/lib.esm/index.js").b)("address/5.4.0");
 
 			function c(e) {
 				Object(r.l)(e, 20) || a.throwArgumentError("invalid address", "address", e);
@@ -90,7 +90,7 @@
 			n.d(t, "a", (function() {
 				return r
 			}));
-			const r = "bignumber/5.4.0"
+			const r = "bignumber/5.4.2"
 		},
 		"./node_modules/@ethersproject/bignumber/lib.esm/bignumber.js": function(e, t, n) {
 			"use strict";
@@ -109,7 +109,7 @@
 				s = n("./node_modules/@ethersproject/logger/lib.esm/index.js"),
 				a = n("./node_modules/@ethersproject/bignumber/lib.esm/_version.js"),
 				c = i.a.BN;
-			const u = new s.a(a.a),
+			const u = new s.b(a.a),
 				l = {},
 				h = 9007199254740991;
 
@@ -119,7 +119,7 @@
 			let f = !1;
 			class d {
 				constructor(e, t) {
-					u.checkNew(new.target, d), e !== l && u.throwError("cannot call constructor directly; use BigNumber.from", s.a.errors.UNSUPPORTED_OPERATION, {
+					u.checkNew(new.target, d), e !== l && u.throwError("cannot call constructor directly; use BigNumber.from", s.b.errors.UNSUPPORTED_OPERATION, {
 						operation: "new (BigNumber)"
 					}), this._hex = t, this._isBigNumber = !0, Object.freeze(this)
 				}
@@ -206,12 +206,12 @@
 					try {
 						return BigInt(this.toString())
 					} catch (e) {}
-					return u.throwError("this platform does not support BigInt", s.a.errors.UNSUPPORTED_OPERATION, {
+					return u.throwError("this platform does not support BigInt", s.b.errors.UNSUPPORTED_OPERATION, {
 						value: this.toString()
 					})
 				}
 				toString() {
-					return arguments.length > 0 && (10 === arguments[0] ? f || (f = !0, u.warn("BigNumber.toString does not accept any parameters; base-10 is assumed")) : 16 === arguments[0] ? u.throwError("BigNumber.toString does not accept any parameters; use bigNumber.toHexString()", s.a.errors.UNEXPECTED_ARGUMENT, {}) : u.throwError("BigNumber.toString does not accept parameters", s.a.errors.UNEXPECTED_ARGUMENT, {})), v(this).toString(10)
+					return arguments.length > 0 && (10 === arguments[0] ? f || (f = !0, u.warn("BigNumber.toString does not accept any parameters; base-10 is assumed")) : 16 === arguments[0] ? u.throwError("BigNumber.toString does not accept any parameters; use bigNumber.toHexString()", s.b.errors.UNEXPECTED_ARGUMENT, {}) : u.throwError("BigNumber.toString does not accept parameters", s.b.errors.UNEXPECTED_ARGUMENT, {})), v(this).toString(10)
 				}
 				toHexString() {
 					return this._hex
@@ -265,7 +265,7 @@
 					fault: e,
 					operation: t
 				};
-				return null != n && (r.value = n), u.throwError(e, s.a.errors.NUMERIC_FAULT, r)
+				return null != n && (r.value = n), u.throwError(e, s.b.errors.NUMERIC_FAULT, r)
 			}
 
 			function N(e) {
@@ -311,7 +311,7 @@
 			})), n.d(t, "m", (function() {
 				return b
 			}));
-			const r = new(n("./node_modules/@ethersproject/logger/lib.esm/index.js").a)("bytes/5.4.0");
+			const r = new(n("./node_modules/@ethersproject/logger/lib.esm/index.js").b)("bytes/5.4.0");
 
 			function i(e) {
 				return !!e.toHexString
@@ -617,9 +617,11 @@
 		"./node_modules/@ethersproject/logger/lib.esm/index.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return p
+				return h
+			})), n.d(t, "b", (function() {
+				return f
 			}));
-			const r = "logger/5.4.0";
+			const r = "logger/5.4.1";
 			let i = !1,
 				o = !1;
 			const s = {
@@ -655,7 +657,8 @@
 			function(e) {
 				e.UNKNOWN_ERROR = "UNKNOWN_ERROR", e.NOT_IMPLEMENTED = "NOT_IMPLEMENTED", e.UNSUPPORTED_OPERATION = "UNSUPPORTED_OPERATION", e.NETWORK_ERROR = "NETWORK_ERROR", e.SERVER_ERROR = "SERVER_ERROR", e.TIMEOUT = "TIMEOUT", e.BUFFER_OVERRUN = "BUFFER_OVERRUN", e.NUMERIC_FAULT = "NUMERIC_FAULT", e.MISSING_NEW = "MISSING_NEW", e.INVALID_ARGUMENT = "INVALID_ARGUMENT", e.MISSING_ARGUMENT = "MISSING_ARGUMENT", e.UNEXPECTED_ARGUMENT = "UNEXPECTED_ARGUMENT", e.CALL_EXCEPTION = "CALL_EXCEPTION", e.INSUFFICIENT_FUNDS = "INSUFFICIENT_FUNDS", e.NONCE_EXPIRED = "NONCE_EXPIRED", e.REPLACEMENT_UNDERPRICED = "REPLACEMENT_UNDERPRICED", e.UNPREDICTABLE_GAS_LIMIT = "UNPREDICTABLE_GAS_LIMIT", e.TRANSACTION_REPLACED = "TRANSACTION_REPLACED"
 			}(h || (h = {}));
-			class p {
+			const p = "0123456789abcdef";
+			class f {
 				constructor(e) {
 					Object.defineProperty(this, "version", {
 						enumerable: !0,
@@ -668,21 +671,26 @@
 					null == s[n] && this.throwArgumentError("invalid log level name", "logLevel", e), a > s[n] || console.log.apply(console, t)
 				}
 				debug(...e) {
-					this._log(p.levels.DEBUG, e)
+					this._log(f.levels.DEBUG, e)
 				}
 				info(...e) {
-					this._log(p.levels.INFO, e)
+					this._log(f.levels.INFO, e)
 				}
 				warn(...e) {
-					this._log(p.levels.WARNING, e)
+					this._log(f.levels.WARNING, e)
 				}
 				makeError(e, t, n) {
 					if (o) return this.makeError("censored error", t, {});
-					t || (t = p.errors.UNKNOWN_ERROR), n || (n = {});
+					t || (t = f.errors.UNKNOWN_ERROR), n || (n = {});
 					const r = [];
 					Object.keys(n).forEach(e => {
+						const t = n[e];
 						try {
-							r.push(e + "=" + JSON.stringify(n[e]))
+							if (t instanceof Uint8Array) {
+								let n = "";
+								for (let e = 0; e < t.length; e++) n += p[t[e] >> 4], n += p[15 & t[e]];
+								r.push(e + "=Uint8Array(0x" + n + ")")
+							} else r.push(e + "=" + JSON.stringify(t))
 						} catch (s) {
 							r.push(e + "=" + JSON.stringify(n[e].toString()))
 						}
@@ -698,7 +706,7 @@
 					throw this.makeError(e, t, n)
 				}
 				throwArgumentError(e, t, n) {
-					return this.throwError(e, p.errors.INVALID_ARGUMENT, {
+					return this.throwError(e, f.errors.INVALID_ARGUMENT, {
 						argument: t,
 						value: n
 					})
@@ -710,53 +718,53 @@
 					e || this.throwArgumentError(t, n, r)
 				}
 				checkNormalize(e) {
-					null == e && (e = "platform missing String.prototype.normalize"), u && this.throwError("platform missing String.prototype.normalize", p.errors.UNSUPPORTED_OPERATION, {
+					null == e && (e = "platform missing String.prototype.normalize"), u && this.throwError("platform missing String.prototype.normalize", f.errors.UNSUPPORTED_OPERATION, {
 						operation: "String.prototype.normalize",
 						form: u
 					})
 				}
 				checkSafeUint53(e, t) {
-					"number" == typeof e && (null == t && (t = "value not safe"), (e < 0 || e >= 9007199254740991) && this.throwError(t, p.errors.NUMERIC_FAULT, {
+					"number" == typeof e && (null == t && (t = "value not safe"), (e < 0 || e >= 9007199254740991) && this.throwError(t, f.errors.NUMERIC_FAULT, {
 						operation: "checkSafeInteger",
 						fault: "out-of-safe-range",
 						value: e
-					}), e % 1 && this.throwError(t, p.errors.NUMERIC_FAULT, {
+					}), e % 1 && this.throwError(t, f.errors.NUMERIC_FAULT, {
 						operation: "checkSafeInteger",
 						fault: "non-integer",
 						value: e
 					}))
 				}
 				checkArgumentCount(e, t, n) {
-					n = n ? ": " + n : "", e < t && this.throwError("missing argument" + n, p.errors.MISSING_ARGUMENT, {
+					n = n ? ": " + n : "", e < t && this.throwError("missing argument" + n, f.errors.MISSING_ARGUMENT, {
 						count: e,
 						expectedCount: t
-					}), e > t && this.throwError("too many arguments" + n, p.errors.UNEXPECTED_ARGUMENT, {
+					}), e > t && this.throwError("too many arguments" + n, f.errors.UNEXPECTED_ARGUMENT, {
 						count: e,
 						expectedCount: t
 					})
 				}
 				checkNew(e, t) {
-					e !== Object && null != e || this.throwError("missing new", p.errors.MISSING_NEW, {
+					e !== Object && null != e || this.throwError("missing new", f.errors.MISSING_NEW, {
 						name: t.name
 					})
 				}
 				checkAbstract(e, t) {
-					e === t ? this.throwError("cannot instantiate abstract class " + JSON.stringify(t.name) + " directly; use a sub-class", p.errors.UNSUPPORTED_OPERATION, {
+					e === t ? this.throwError("cannot instantiate abstract class " + JSON.stringify(t.name) + " directly; use a sub-class", f.errors.UNSUPPORTED_OPERATION, {
 						name: e.name,
 						operation: "new"
-					}) : e !== Object && null != e || this.throwError("missing new", p.errors.MISSING_NEW, {
+					}) : e !== Object && null != e || this.throwError("missing new", f.errors.MISSING_NEW, {
 						name: t.name
 					})
 				}
 				static globalLogger() {
-					return c || (c = new p(r)), c
+					return c || (c = new f(r)), c
 				}
 				static setCensorship(e, t) {
-					if (!e && t && this.globalLogger().throwError("cannot permanently disable censorship", p.errors.UNSUPPORTED_OPERATION, {
+					if (!e && t && this.globalLogger().throwError("cannot permanently disable censorship", f.errors.UNSUPPORTED_OPERATION, {
 							operation: "setCensorship"
 						}), i) {
 						if (!e) return;
-						this.globalLogger().throwError("error censorship permanent", p.errors.UNSUPPORTED_OPERATION, {
+						this.globalLogger().throwError("error censorship permanent", f.errors.UNSUPPORTED_OPERATION, {
 							operation: "setCensorship"
 						})
 					}
@@ -764,13 +772,13 @@
 				}
 				static setLogLevel(e) {
 					const t = s[e.toLowerCase()];
-					null != t ? a = t : p.globalLogger().warn("invalid log level - " + e)
+					null != t ? a = t : f.globalLogger().warn("invalid log level - " + e)
 				}
 				static from(e) {
-					return new p(e)
+					return new f(e)
 				}
 			}
-			p.errors = h, p.levels = l
+			f.errors = h, f.levels = l
 		},
 		"./node_modules/@ethersproject/rlp/lib.esm/index.js": function(e, t, n) {
 			"use strict";
@@ -781,7 +789,7 @@
 			}));
 			var r = n("./node_modules/@ethersproject/bytes/lib.esm/index.js"),
 				i = n("./node_modules/@ethersproject/logger/lib.esm/index.js");
-			const o = new i.a("rlp/5.4.0");
+			const o = new i.b("rlp/5.4.0");
 
 			function s(e) {
 				const t = [];
@@ -818,7 +826,7 @@
 				const s = [];
 				for (; n < t + 1 + r;) {
 					const a = l(e, n);
-					s.push(a.result), (n += a.consumed) > t + 1 + r && o.throwError("child data too short", i.a.errors.BUFFER_OVERRUN, {})
+					s.push(a.result), (n += a.consumed) > t + 1 + r && o.throwError("child data too short", i.b.errors.BUFFER_OVERRUN, {})
 				}
 				return {
 					consumed: 1 + r,
@@ -827,28 +835,28 @@
 			}
 
 			function l(e, t) {
-				if (0 === e.length && o.throwError("data too short", i.a.errors.BUFFER_OVERRUN, {}), e[t] >= 248) {
+				if (0 === e.length && o.throwError("data too short", i.b.errors.BUFFER_OVERRUN, {}), e[t] >= 248) {
 					const n = e[t] - 247;
-					t + 1 + n > e.length && o.throwError("data short segment too short", i.a.errors.BUFFER_OVERRUN, {});
+					t + 1 + n > e.length && o.throwError("data short segment too short", i.b.errors.BUFFER_OVERRUN, {});
 					const r = a(e, t + 1, n);
-					return t + 1 + n + r > e.length && o.throwError("data long segment too short", i.a.errors.BUFFER_OVERRUN, {}), u(e, t, t + 1 + n, n + r)
+					return t + 1 + n + r > e.length && o.throwError("data long segment too short", i.b.errors.BUFFER_OVERRUN, {}), u(e, t, t + 1 + n, n + r)
 				}
 				if (e[t] >= 192) {
 					const n = e[t] - 192;
-					return t + 1 + n > e.length && o.throwError("data array too short", i.a.errors.BUFFER_OVERRUN, {}), u(e, t, t + 1, n)
+					return t + 1 + n > e.length && o.throwError("data array too short", i.b.errors.BUFFER_OVERRUN, {}), u(e, t, t + 1, n)
 				}
 				if (e[t] >= 184) {
 					const n = e[t] - 183;
-					t + 1 + n > e.length && o.throwError("data array too short", i.a.errors.BUFFER_OVERRUN, {});
+					t + 1 + n > e.length && o.throwError("data array too short", i.b.errors.BUFFER_OVERRUN, {});
 					const s = a(e, t + 1, n);
-					return t + 1 + n + s > e.length && o.throwError("data array too short", i.a.errors.BUFFER_OVERRUN, {}), {
+					return t + 1 + n + s > e.length && o.throwError("data array too short", i.b.errors.BUFFER_OVERRUN, {}), {
 						consumed: 1 + n + s,
 						result: Object(r.i)(e.slice(t + 1 + n, t + 1 + n + s))
 					}
 				}
 				if (e[t] >= 128) {
 					const n = e[t] - 128;
-					return t + 1 + n > e.length && o.throwError("data too short", i.a.errors.BUFFER_OVERRUN, {}), {
+					return t + 1 + n > e.length && o.throwError("data too short", i.b.errors.BUFFER_OVERRUN, {}), {
 						consumed: 1 + n,
 						result: Object(r.i)(e.slice(t + 1, t + 1 + n))
 					}
@@ -5437,4 +5445,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.bc9f96b0a1137e04dda1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.df5f45b0f16e07459e18.js.map

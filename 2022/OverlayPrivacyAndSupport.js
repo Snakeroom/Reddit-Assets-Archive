@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayPrivacyAndSupport.e33c49ae84515fe15a87.js
-// Retrieved at 3/7/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayPrivacyAndSupport.e100b118be7091c1e6f0.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayPrivacyAndSupport"], {
 		"./src/chat/components/OverlayPrivacyAndSupport/index.m.less": function(e, t, a) {
@@ -437,36 +437,39 @@
 				r = a("./src/chat/icons/Userpic/index.tsx"),
 				o = a("./src/chat/components/SelectableUser/index.m.less"),
 				i = a.n(o);
-			t.a = ({
-				formName: e,
-				contact: {
-					id: t,
-					name: a
-				},
-				onChange: n,
-				isChecked: o,
-				isTextCheckbox: l
-			}) => s.a.createElement(c.a, {
-				className: i.a.Checkbox,
-				type: "checkbox",
-				name: e,
-				value: a,
-				onChange: n,
-				checked: o,
-				id: t,
-				isTextCheckbox: l
-			}, s.a.createElement("div", {
-				className: i.a.UserInfoWrapper
-			}, s.a.createElement(r.a, {
-				className: i.a.UserPic,
-				userId: t,
-				width: "22px",
-				height: "22px"
-			}), s.a.createElement("div", {
-				className: i.a.UserMetaWrapper
-			}, s.a.createElement("div", {
-				className: i.a.Name
-			}, a))))
+			t.a = e => {
+				let {
+					formName: t,
+					contact: {
+						id: a,
+						name: n
+					},
+					onChange: o,
+					isChecked: l,
+					isTextCheckbox: h
+				} = e;
+				return s.a.createElement(c.a, {
+					className: i.a.Checkbox,
+					type: "checkbox",
+					name: t,
+					value: n,
+					onChange: o,
+					checked: l,
+					id: a,
+					isTextCheckbox: h
+				}, s.a.createElement("div", {
+					className: i.a.UserInfoWrapper
+				}, s.a.createElement(r.a, {
+					className: i.a.UserPic,
+					userId: a,
+					width: "22px",
+					height: "22px"
+				}), s.a.createElement("div", {
+					className: i.a.UserMetaWrapper
+				}, s.a.createElement("div", {
+					className: i.a.Name
+				}, n))))
+			}
 		},
 		"./src/chat/controls/Settings/SectionItem/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -494,31 +497,34 @@
 				r = a("./src/chat/controls/Button/index.tsx"),
 				o = a("./src/chat/controls/Settings/SectionItem/index.m.less"),
 				i = a.n(o);
-			t.a = ({
-				className: e,
-				text: t,
-				subtext: a,
-				actionButtonText: n,
-				actionButtonAction: o,
-				children: l
-			}) => s.a.createElement("div", {
-				className: Object(c.a)(i.a.SectionItem, e)
-			}, l ? s.a.createElement("div", {
-				className: i.a.Icon
-			}, l) : null, s.a.createElement("div", {
-				className: i.a.TextContainer
-			}, s.a.createElement("div", {
-				className: i.a.Text
-			}, t), a ? s.a.createElement("div", {
-				className: i.a.Subtext
-			}, a) : null), s.a.createElement("div", {
-				className: i.a.ActionButton
-			}, s.a.createElement(r.a, {
-				isSmall: !0,
-				secondary: !0,
-				className: i.a.Button,
-				onClick: o
-			}, n)))
+			t.a = e => {
+				let {
+					className: t,
+					text: a,
+					subtext: n,
+					actionButtonText: o,
+					actionButtonAction: l,
+					children: h
+				} = e;
+				return s.a.createElement("div", {
+					className: Object(c.a)(i.a.SectionItem, t)
+				}, h ? s.a.createElement("div", {
+					className: i.a.Icon
+				}, h) : null, s.a.createElement("div", {
+					className: i.a.TextContainer
+				}, s.a.createElement("div", {
+					className: i.a.Text
+				}, a), n ? s.a.createElement("div", {
+					className: i.a.Subtext
+				}, n) : null), s.a.createElement("div", {
+					className: i.a.ActionButton
+				}, s.a.createElement(r.a, {
+					isSmall: !0,
+					secondary: !0,
+					className: i.a.Button,
+					onClick: l
+				}, o)))
+			}
 		},
 		"./src/chat/controls/Settings/SectionTitle/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -532,12 +538,15 @@
 				s = a.n(n),
 				c = a("./src/chat/controls/Settings/SectionTitle/index.m.less"),
 				r = a.n(c);
-			t.a = ({
-				text: e
-			}) => s.a.createElement("div", {
-				className: r.a.SectionTitle
-			}, e)
+			t.a = e => {
+				let {
+					text: t
+				} = e;
+				return s.a.createElement("div", {
+					className: r.a.SectionTitle
+				}, t)
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayPrivacyAndSupport.e33c49ae84515fe15a87.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayPrivacyAndSupport.e100b118be7091c1e6f0.js.map

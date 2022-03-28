@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatOverlayReport.ee4e7866b5f45b558608.js
-// Retrieved at 2/1/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatOverlayReport.176729ca97de38b3a94c.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatOverlayReport"], {
 		"./src/chat/components/OverlayReport/CrisisFlow/CrisisFlowPage.m.less": function(e, t, s) {
@@ -295,38 +295,44 @@
 					isNightMode: e => Object(le.b)(e),
 					inReportingRevampSelector: e => Object(ae.a)(e)
 				}),
-				_e = Object(c.b)(he, (e, {
-					timestamp: t
-				}) => ({
-					onCloseReportFlow: () => {
-						e(Object(p.b)())
-					},
-					onChannelBlock: t => {
-						e(R.n(t)), e(O.W(t))
-					},
-					showFailToast: () => e(Object(C.f)({
-						kind: E.b.Error,
-						text: o.fbt._("Something went wrong!", null, {
-							hk: "ysFuv"
-						})
-					})),
-					onCancel: () => e(Object(d.a)()),
-					submitReportMessage: (t, s) => e(Object(O.Y)(t, s))
-				})),
+				_e = Object(c.b)(he, (e, t) => {
+					let {
+						timestamp: s
+					} = t;
+					return {
+						onCloseReportFlow: () => {
+							e(Object(p.b)())
+						},
+						onChannelBlock: t => {
+							e(R.n(t)), e(O.W(t))
+						},
+						showFailToast: () => e(Object(C.f)({
+							kind: E.b.Error,
+							text: o.fbt._("Something went wrong!", null, {
+								hk: "ysFuv"
+							})
+						})),
+						onCancel: () => e(Object(d.a)()),
+						submitReportMessage: (t, s) => e(Object(O.Y)(t, s))
+					}
+				}),
 				Ee = async (e, t, s) => {
 					var r;
-					const o = await ((e, {
-						itemId: t,
-						formVersion: s,
-						hostAppName: r
-					}) => Object(se.a)(e, {
-						...re,
-						variables: {
-							itemId: t,
-							hostAppName: r,
-							formVersion: s
-						}
-					}))(e, {
+					const o = await ((e, t) => {
+						let {
+							itemId: s,
+							formVersion: r,
+							hostAppName: o
+						} = t;
+						return Object(se.a)(e, {
+							...re,
+							variables: {
+								itemId: s,
+								hostAppName: o,
+								formVersion: r
+							}
+						})
+					})(e, {
 						itemId: t,
 						formVersion: s
 					});
@@ -499,4 +505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatOverlayReport.ee4e7866b5f45b558608.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatOverlayReport.176729ca97de38b3a94c.js.map

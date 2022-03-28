@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.1c710908bc644891d251.js
-// Retrieved at 2/1/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayCreateChannel.12af1f5b0b885e0bcdc3.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayCreateChannel"], {
 		"./src/chat/components/OverlayCreateChannel/index.m.less": function(e, t, n) {
@@ -76,31 +76,34 @@
 				S = n("./src/chat/components/UnselectableUser/index.m.less"),
 				U = n.n(S),
 				k = n("./src/lib/classNames/index.ts");
-			var N = ({
-					contact: {
-						id: e,
-						name: t
-					},
-					context: n,
-					isHidden: s
-				}) => l.a.createElement("span", {
-					className: Object(k.a)(U.a.Wrapper, {
-						[U.a.hidden]: s
-					})
-				}, l.a.createElement("span", {
-					className: U.a.Content
-				}, l.a.createElement(E.a, {
-					className: U.a.UserPic,
-					userId: e,
-					width: "22px",
-					height: "22px"
-				}), l.a.createElement("div", {
-					className: U.a.UserMetaWrapper
-				}, l.a.createElement("span", {
-					className: U.a.Name
-				}, t))), l.a.createElement("span", {
-					className: U.a.Context
-				}, n)),
+			var N = e => {
+					let {
+						contact: {
+							id: t,
+							name: n
+						},
+						context: s,
+						isHidden: a
+					} = e;
+					return l.a.createElement("span", {
+						className: Object(k.a)(U.a.Wrapper, {
+							[U.a.hidden]: a
+						})
+					}, l.a.createElement("span", {
+						className: U.a.Content
+					}, l.a.createElement(E.a, {
+						className: U.a.UserPic,
+						userId: t,
+						width: "22px",
+						height: "22px"
+					}), l.a.createElement("div", {
+						className: U.a.UserMetaWrapper
+					}, l.a.createElement("span", {
+						className: U.a.Name
+					}, n))), l.a.createElement("span", {
+						className: U.a.Context
+					}, s))
+				},
 				y = n("./src/chat/constants/channels.ts"),
 				v = n("./src/chat/controls/Button/index.tsx"),
 				I = n("./src/chat/controls/ChannelNameInput/index.tsx"),
@@ -119,11 +122,14 @@
 				P = n("./src/chat/components/OverlayCreateChannel/index.m.less"),
 				D = n.n(P);
 			const G = "contactForm",
-				q = ({
-					children: e
-				}) => l.a.createElement("div", {
-					className: D.a.ListItem
-				}, e),
+				q = e => {
+					let {
+						children: t
+					} = e;
+					return l.a.createElement("div", {
+						className: D.a.ListItem
+					}, t)
+				},
 				z = e => e.toLocaleLowerCase(),
 				Z = Object(T.a)({
 					channelAction: e => Object(F.d)(e),
@@ -156,19 +162,20 @@
 					removeAllSelectedUsers: () => e(Object(b.s)()),
 					requestSuggestedContacts: () => e(Object(p.m)())
 				})),
-				J = ({
-					channelId: e,
-					isHidden: t
-				}) => {
-					const n = Object(h.d)(),
-						a = Object(h.e)(W.i),
-						r = Object(h.e)(W.g),
-						c = Object(h.e)(M.a),
-						i = e || c,
-						o = Object(h.e)(R.a),
-						m = Object(h.e)(e => Object(A.a)(e, i)),
-						p = Object(h.e)(e => Object(A.b)(e, i));
-					return a && e || r && !e ? l.a.createElement("span", {
+				J = e => {
+					let {
+						channelId: t,
+						isHidden: n
+					} = e;
+					const a = Object(h.d)(),
+						r = Object(h.e)(W.i),
+						c = Object(h.e)(W.g),
+						i = Object(h.e)(M.a),
+						o = t || i,
+						m = Object(h.e)(R.a),
+						p = Object(h.e)(e => Object(A.a)(e, o)),
+						b = Object(h.e)(e => Object(A.b)(e, o));
+					return r && t || c && !t ? l.a.createElement("span", {
 						className: D.a.CopyInviteLink
 					}, l.a.createElement(v.b, {
 						className: D.a.LinkButton
@@ -176,27 +183,27 @@
 						className: D.a.CopyInviteLinkContent
 					}, l.a.createElement("div", {
 						className: D.a.CopyInviteLinkContentHeader
-					}, e ? s.fbt._("Invite with link", null, {
+					}, t ? s.fbt._("Invite with link", null, {
 						hk: "37SZLa"
 					}) : s.fbt._("Start a direct chat", null, {
 						hk: "3TR4iZ"
-					})), m && p && l.a.createElement("div", {
+					})), p && b && l.a.createElement("div", {
 						className: D.a.CopyInviteLinkContentBody
-					}, `${s.fbt._("Limited to",null,{hk:"3uHU48"})} ${p} ${s.fbt._("invites",null,{hk:"iP9qt"})}. `, !e || o ? l.a.createElement("button", {
+					}, `${s.fbt._("Limited to",null,{hk:"3uHU48"})} ${b} ${s.fbt._("invites",null,{hk:"iP9qt"})}. `, !t || m ? l.a.createElement("button", {
 						role: "button",
 						onClick: Object(j.b)(() => {
-							n(Object(d.b)(i, !e))
+							a(Object(d.b)(o, !t))
 						}),
 						className: D.a.SettingsButton
 					}, s.fbt._("Edit link", null, {
 						hk: "2ryT90"
 					})) : null)), l.a.createElement(v.a, {
 						onClick: Object(j.b)(() => {
-							n(Object(u.e)(i, !e)), n(Object(C.o)(u.b.CHAT_SETTINGS))
+							a(Object(u.e)(o, !t)), a(Object(C.o)(u.b.CHAT_SETTINGS))
 						}),
 						secondary: !0,
 						isSmall: !0,
-						disabled: t
+						disabled: n
 					}, s.fbt._("Copy", null, {
 						hk: "wO1gU"
 					}))) : null
@@ -695,36 +702,39 @@
 				c = n("./src/chat/icons/Userpic/index.tsx"),
 				i = n("./src/chat/components/SelectableUser/index.m.less"),
 				o = n.n(i);
-			t.a = ({
-				formName: e,
-				contact: {
-					id: t,
-					name: n
-				},
-				onChange: s,
-				isChecked: i,
-				isTextCheckbox: l
-			}) => a.a.createElement(r.a, {
-				className: o.a.Checkbox,
-				type: "checkbox",
-				name: e,
-				value: n,
-				onChange: s,
-				checked: i,
-				id: t,
-				isTextCheckbox: l
-			}, a.a.createElement("div", {
-				className: o.a.UserInfoWrapper
-			}, a.a.createElement(c.a, {
-				className: o.a.UserPic,
-				userId: t,
-				width: "22px",
-				height: "22px"
-			}), a.a.createElement("div", {
-				className: o.a.UserMetaWrapper
-			}, a.a.createElement("div", {
-				className: o.a.Name
-			}, n))))
+			t.a = e => {
+				let {
+					formName: t,
+					contact: {
+						id: n,
+						name: s
+					},
+					onChange: i,
+					isChecked: l,
+					isTextCheckbox: h
+				} = e;
+				return a.a.createElement(r.a, {
+					className: o.a.Checkbox,
+					type: "checkbox",
+					name: t,
+					value: s,
+					onChange: i,
+					checked: l,
+					id: n,
+					isTextCheckbox: h
+				}, a.a.createElement("div", {
+					className: o.a.UserInfoWrapper
+				}, a.a.createElement(c.a, {
+					className: o.a.UserPic,
+					userId: n,
+					width: "22px",
+					height: "22px"
+				}), a.a.createElement("div", {
+					className: o.a.UserMetaWrapper
+				}, a.a.createElement("div", {
+					className: o.a.Name
+				}, s))))
+			}
 		},
 		"./src/chat/components/UnselectableUser/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -753,12 +763,15 @@
 				a = n.n(s),
 				r = n("./src/chat/controls/Settings/SectionTitle/index.m.less"),
 				c = n.n(r);
-			t.a = ({
-				text: e
-			}) => a.a.createElement("div", {
-				className: c.a.SectionTitle
-			}, e)
+			t.a = e => {
+				let {
+					text: t
+				} = e;
+				return a.a.createElement("div", {
+					className: c.a.SectionTitle
+				}, t)
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.1c710908bc644891d251.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayCreateChannel.12af1f5b0b885e0bcdc3.js.map

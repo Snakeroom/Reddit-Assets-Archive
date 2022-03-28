@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.d6cc1f5e05c0fc910e8c.js
-// Retrieved at 1/25/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.ce1dfb2021d1d2b9b5a5.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-PremiumModal"], {
 		"./src/reddit/components/Econ/Prediction/PremiumModal/index.m.less": function(e, t, a) {
@@ -52,22 +52,23 @@
 			const {
 				fbt: w
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var M = Object(d.a)(({
-				title: e,
-				description: t,
-				footer: a,
-				image: r,
-				onClose: n
-			}) => {
-				const o = Object(c.d)(),
-					d = Object(_.a)(),
-					N = Object(c.e)(C.l),
-					M = Object(c.e)(C.o),
-					I = Object(P.e)(P.a.GoldPayment, !1);
+			var M = Object(d.a)(e => {
+				let {
+					title: t,
+					description: a,
+					footer: r,
+					image: n,
+					onClose: o
+				} = e;
+				const d = Object(c.d)(),
+					N = Object(_.a)(),
+					M = Object(c.e)(C.l),
+					I = Object(c.e)(C.o),
+					y = Object(P.e)(P.a.GoldPayment, !1);
 				Object(f.a)(p.a), Object(i.useEffect)(() => {
-					N.length || M || o(Object(g.b)({
-						correlationId: I
-					})), o(Object(m.d)(E.c.Premium))
+					M.length || I || d(Object(g.b)({
+						correlationId: y
+					})), d(Object(m.d)(E.c.Premium))
 				});
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 					className: v.a.background,
@@ -75,13 +76,13 @@
 						backgroundImage: "linear-gradient(\n              to right,\n              rgba(0, 0, 0, 0.6) 0%,\n              rgba(0, 0, 0, 0) 50%\n            )",
 						backgroundSize: "auto 100%"
 					}
-				}, r, s.a.createElement(h.t, {
+				}, n, s.a.createElement(h.t, {
 					"aria-label": w._("Close", null, {
 						hk: "2xO1CF"
 					}),
 					className: v.a.closeButton,
 					Icon: Object(k.b)("close"),
-					onClick: n,
+					onClick: o,
 					priority: h.c.Plain
 				}), s.a.createElement("div", {
 					className: v.a.prediction
@@ -89,11 +90,11 @@
 					className: v.a.logo
 				}, s.a.createElement(x.a, null)), s.a.createElement("h2", {
 					className: v.a.title
-				}, e), s.a.createElement("h3", {
+				}, t), s.a.createElement("h3", {
 					className: v.a.description
-				}, t), s.a.createElement("p", {
+				}, a), s.a.createElement("p", {
 					className: v.a.footer
-				}, a))), s.a.createElement("div", {
+				}, r))), s.a.createElement("div", {
 					className: v.a.premium
 				}, s.a.createElement("h3", {
 					className: v.a.benefitsText
@@ -103,12 +104,12 @@
 					isCompactMode: !0
 				}), s.a.createElement(B.a, {
 					onClickPackage: (e, t) => {
-						o(Object(u.openWithBlob)({
-							correlationId: I,
+						d(Object(u.openWithBlob)({
+							correlationId: y,
 							packageId: e
-						})), o(Object(l.j)({
+						})), d(Object(l.j)({
 							renewInterval: t
-						})), d(b.c({
+						})), N(b.c({
 							renewInterval: t
 						}))
 					}
@@ -186,4 +187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.d6cc1f5e05c0fc910e8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.ce1dfb2021d1d2b9b5a5.js.map

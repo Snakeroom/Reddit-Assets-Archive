@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.bd72e060b37b5800b424.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.aa49d41374e498ef6455.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -28,26 +28,29 @@
 				fbt: m
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), p = i.a.wrapped(e => n.a.createElement("span", {
 				className: e.className
-			}, e.children), "Metadata", d.a), u = ({
-				post: e
-			}) => Object(r.a)(e) ? n.a.createElement(a.a, {
-				className: d.a.postEventMeta,
-				post: e
-			}) : n.a.createElement(n.a.Fragment, null, !e.isScoreHidden && n.a.createElement(n.a.Fragment, null, n.a.createElement(p, {
-				"data-click-id": "score"
-			}, m._({
-				"*": "{Post score} points",
-				_1: "1 point"
-			}, [m._plural(e.score, "Post score", Object(l.b)(e.score))], {
-				hk: "1gwCFh"
-			})), n.a.createElement(p, null, "·")), n.a.createElement(p, {
-				"data-click-id": "comments"
-			}, m._({
-				"*": "{number} comments",
-				_1: "1 comment"
-			}, [m._plural(e.numComments, "number", Object(l.b)(e.numComments))], {
-				hk: "3eG58Q"
-			})))
+			}, e.children), "Metadata", d.a), u = e => {
+				let {
+					post: t
+				} = e;
+				return Object(r.a)(t) ? n.a.createElement(a.a, {
+					className: d.a.postEventMeta,
+					post: t
+				}) : n.a.createElement(n.a.Fragment, null, !t.isScoreHidden && n.a.createElement(n.a.Fragment, null, n.a.createElement(p, {
+					"data-click-id": "score"
+				}, m._({
+					"*": "{Post score} points",
+					_1: "1 point"
+				}, [m._plural(t.score, "Post score", Object(l.b)(t.score))], {
+					hk: "1gwCFh"
+				})), n.a.createElement(p, null, "·")), n.a.createElement(p, {
+					"data-click-id": "comments"
+				}, m._({
+					"*": "{number} comments",
+					_1: "1 comment"
+				}, [m._plural(t.numComments, "number", Object(l.b)(t.numComments))], {
+					hk: "3eG58Q"
+				})))
+			}
 		},
 		"./src/reddit/components/Collection/PostItem/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -371,23 +374,26 @@
 					post: f.G,
 					shouldShowCollectionPostEdits: y.s,
 					subredditOrProfile: f.U
-				}), (e, {
-					collectionId: t,
-					postId: s,
-					isSelectedPost: n,
-					isOverlay: l
-				}) => ({
-					onRemovePostFromCollection: () => e(Object(d.g)(t, s, n)),
-					onStartEventNow: async () => {
-						Y || (Y = await Promise.resolve().then(o.bind(null, "./src/reddit/actions/eventPosts/index.ts"))), e(Y.startEventNowRequested(s))
-					},
-					toggleEditStartTimeModal: async () => {
-						X && Y || ([X, Y] = await Promise.all([o.e("schedulePickerModal").then(o.bind(null, "./src/reddit/components/PostCreationForm/SchedulePickerModal/index.tsx")).then(e => e.default), Promise.resolve().then(o.bind(null, "./src/reddit/actions/eventPosts/index.ts"))])), e(w.i(Object(F.s)(s, l, F.k.COLLECTION_INFO_POST)))
-					},
-					addEventStartTime: t => {
-						Y && e(Y.editEventTimeRequested(s, t))
+				}), (e, t) => {
+					let {
+						collectionId: s,
+						postId: n,
+						isSelectedPost: l,
+						isOverlay: i
+					} = t;
+					return {
+						onRemovePostFromCollection: () => e(Object(d.g)(s, n, l)),
+						onStartEventNow: async () => {
+							Y || (Y = await Promise.resolve().then(o.bind(null, "./src/reddit/actions/eventPosts/index.ts"))), e(Y.startEventNowRequested(n))
+						},
+						toggleEditStartTimeModal: async () => {
+							X && Y || ([X, Y] = await Promise.all([o.e("schedulePickerModal").then(o.bind(null, "./src/reddit/components/PostCreationForm/SchedulePickerModal/index.tsx")).then(e => e.default), Promise.resolve().then(o.bind(null, "./src/reddit/actions/eventPosts/index.ts"))])), e(w.i(Object(F.s)(n, i, F.k.COLLECTION_INFO_POST)))
+						},
+						addEventStartTime: t => {
+							Y && e(Y.editEventTimeRequested(n, t))
+						}
 					}
-				}))(Object(b.c)(Z))),
+				})(Object(b.c)(Z))),
 				V = o("./src/reddit/components/Collection/index.m.less"),
 				K = o.n(V);
 			const {
@@ -409,26 +415,28 @@
 			}), le = Object(l.b)(() => Object(i.c)({
 				collection: y.n,
 				displayLayout: y.a,
-				followPost: (e, {
-					postId: t
-				}) => {
-					const o = Object(y.n)(e, {
-							postId: t
+				followPost: (e, t) => {
+					let {
+						postId: o
+					} = t;
+					const s = Object(y.n)(e, {
+							postId: o
 						}),
-						s = o && (o.primaryPostId || o.postIds[0]);
-					return s && Object(f.G)(e, {
-						postId: s
+						n = s && (s.primaryPostId || s.postIds[0]);
+					return n && Object(f.G)(e, {
+						postId: n
 					}) || null
 				},
 				post: f.G,
-				shouldShowThumbnail: (e, {
-					postId: t
-				}) => {
-					const o = Object(y.n)(e, {
-						postId: t
+				shouldShowThumbnail: (e, t) => {
+					let {
+						postId: o
+					} = t;
+					const s = Object(y.n)(e, {
+						postId: o
 					});
-					return !(!o || !o.id) && Object(y.t)(e, {
-						collectionId: o.id
+					return !(!s || !s.id) && Object(y.t)(e, {
+						collectionId: s.id
 					})
 				}
 			}), (e, t) => ({
@@ -734,4 +742,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.bd72e060b37b5800b424.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.aa49d41374e498ef6455.js.map

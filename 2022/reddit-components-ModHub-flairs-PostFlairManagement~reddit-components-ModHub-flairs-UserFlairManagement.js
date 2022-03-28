@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.c4eb4ccd721cb552d966.js
-// Retrieved at 3/21/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.8ee40ff691284f1f5d44.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, a) {
@@ -263,15 +263,18 @@
 					areFlairRestrictionsEnabled: i.d.flairRestrictions,
 					subredditEmojiData: r.f
 				},
-				p = (e, {
-					subredditId: t
-				}) => ({
-					closeAllModals: () => e(Object(o.f)()),
-					onCopyTemplateId: t => e(Object(n.a)(t)),
-					onGetSubredditEmojisIfNeeded: () => e(Object(s.m)(t)),
-					onSaveSettings: a => e(Object(n.d)(t, a)),
-					toggleModal: t => e(Object(o.i)(t))
-				})
+				p = (e, t) => {
+					let {
+						subredditId: a
+					} = t;
+					return {
+						closeAllModals: () => e(Object(o.f)()),
+						onCopyTemplateId: t => e(Object(n.a)(t)),
+						onGetSubredditEmojisIfNeeded: () => e(Object(s.m)(a)),
+						onSaveSettings: t => e(Object(n.d)(a, t)),
+						toggleModal: t => e(Object(o.i)(t))
+					}
+				}
 		},
 		"./src/reddit/components/ModHub/flairs/FlairManagement/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -548,7 +551,8 @@
 				},
 				me = e => e.userFlairAllowed,
 				ue = e => e.postFlairAllowed,
-				he = (e, t, a, s = !1) => {
+				he = function(e, t, a) {
+					let s = arguments.length > 3 && void 0 !== arguments[3] && arguments[3];
 					const n = {
 						...e
 					};
@@ -592,9 +596,12 @@
 				Oe = a("./src/reddit/selectors/tooltip.ts");
 			const De = ["right", "top"],
 				Pe = Object(_e.c)({
-					isDropdownOpen: (e, {
-						tooltipId: t
-					}) => Object(Oe.b)(t)(e)
+					isDropdownOpen: (e, t) => {
+						let {
+							tooltipId: a
+						} = t;
+						return Object(Oe.b)(a)(e)
+					}
 				});
 			var je = Object(ke.b)(Pe, (e, t) => ({
 					onToggleDropdown: () => e(Object(we.h)(t))
@@ -1870,47 +1877,59 @@
 			const v = e => Object(r.a)(C.a.iconStyles, e.className, {
 					[C.a.mRedditStyle]: e.redditStyle
 				}),
-				x = ({
-					className: e,
-					redditStyle: t,
-					...a
-				}) => o.a.createElement(g.a, E({
-					name: "view_compact",
-					className: v({
-						className: e,
-						redditStyle: t
-					})
-				}, a)),
-				T = ({
-					className: e,
-					redditStyle: t,
-					...a
-				}) => o.a.createElement(g.a, E({
-					name: "view_classic",
-					className: v({
-						className: e,
-						redditStyle: t
-					})
-				}, a)),
-				y = ({
-					className: e,
-					redditStyle: t,
-					...a
-				}) => o.a.createElement(g.a, E({
-					name: "view_card",
-					className: v({
-						className: e,
-						redditStyle: t
-					})
-				}, a)),
-				S = ({
-					isActive: e,
-					...t
-				}) => o.a.createElement("button", E({
-					className: Object(r.a)(C.a.layoutButton, {
-						[C.a.mIsActive]: e
-					})
-				}, t)),
+				x = e => {
+					let {
+						className: t,
+						redditStyle: a,
+						...s
+					} = e;
+					return o.a.createElement(g.a, E({
+						name: "view_compact",
+						className: v({
+							className: t,
+							redditStyle: a
+						})
+					}, s))
+				},
+				T = e => {
+					let {
+						className: t,
+						redditStyle: a,
+						...s
+					} = e;
+					return o.a.createElement(g.a, E({
+						name: "view_classic",
+						className: v({
+							className: t,
+							redditStyle: a
+						})
+					}, s))
+				},
+				y = e => {
+					let {
+						className: t,
+						redditStyle: a,
+						...s
+					} = e;
+					return o.a.createElement(g.a, E({
+						name: "view_card",
+						className: v({
+							className: t,
+							redditStyle: a
+						})
+					}, s))
+				},
+				S = e => {
+					let {
+						isActive: t,
+						...a
+					} = e;
+					return o.a.createElement("button", E({
+						className: Object(r.a)(C.a.layoutButton, {
+							[C.a.mIsActive]: t
+						})
+					}, a))
+				},
 				k = Object(h.u)(),
 				_ = Object(l.c)({
 					postLayout: h.R,
@@ -2007,4 +2026,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.c4eb4ccd721cb552d966.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.8ee40ff691284f1f5d44.js.map

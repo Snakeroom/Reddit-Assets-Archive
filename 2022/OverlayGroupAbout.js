@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayGroupAbout.2fc3a712e45200048c63.js
-// Retrieved at 2/7/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayGroupAbout.66ba46da681af02a9edf.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayGroupAbout"], {
 		"./src/chat/components/OverlayGroupAbout/index.m.less": function(e, t, n) {
@@ -175,31 +175,34 @@
 				o = n("./src/chat/controls/Button/index.tsx"),
 				r = n("./src/chat/controls/Settings/SectionItem/index.m.less"),
 				l = n.n(r);
-			t.a = ({
-				className: e,
-				text: t,
-				subtext: n,
-				actionButtonText: a,
-				actionButtonAction: r,
-				children: i
-			}) => c.a.createElement("div", {
-				className: Object(s.a)(l.a.SectionItem, e)
-			}, i ? c.a.createElement("div", {
-				className: l.a.Icon
-			}, i) : null, c.a.createElement("div", {
-				className: l.a.TextContainer
-			}, c.a.createElement("div", {
-				className: l.a.Text
-			}, t), n ? c.a.createElement("div", {
-				className: l.a.Subtext
-			}, n) : null), c.a.createElement("div", {
-				className: l.a.ActionButton
-			}, c.a.createElement(o.a, {
-				isSmall: !0,
-				secondary: !0,
-				className: l.a.Button,
-				onClick: r
-			}, a)))
+			t.a = e => {
+				let {
+					className: t,
+					text: n,
+					subtext: a,
+					actionButtonText: r,
+					actionButtonAction: i,
+					children: m
+				} = e;
+				return c.a.createElement("div", {
+					className: Object(s.a)(l.a.SectionItem, t)
+				}, m ? c.a.createElement("div", {
+					className: l.a.Icon
+				}, m) : null, c.a.createElement("div", {
+					className: l.a.TextContainer
+				}, c.a.createElement("div", {
+					className: l.a.Text
+				}, n), a ? c.a.createElement("div", {
+					className: l.a.Subtext
+				}, a) : null), c.a.createElement("div", {
+					className: l.a.ActionButton
+				}, c.a.createElement(o.a, {
+					isSmall: !0,
+					secondary: !0,
+					className: l.a.Button,
+					onClick: i
+				}, r)))
+			}
 		},
 		"./src/chat/controls/Settings/SectionTitle/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -213,12 +216,15 @@
 				c = n.n(a),
 				s = n("./src/chat/controls/Settings/SectionTitle/index.m.less"),
 				o = n.n(s);
-			t.a = ({
-				text: e
-			}) => c.a.createElement("div", {
-				className: o.a.SectionTitle
-			}, e)
+			t.a = e => {
+				let {
+					text: t
+				} = e;
+				return c.a.createElement("div", {
+					className: o.a.SectionTitle
+				}, t)
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayGroupAbout.2fc3a712e45200048c63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayGroupAbout.66ba46da681af02a9edf.js.map

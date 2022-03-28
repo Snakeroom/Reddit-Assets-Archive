@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress.4c879747f98612d237d6.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress.e78d0031a06251f90548.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress"], {
 		"./src/reddit/components/NewCommunityProgress/icons/index.tsx": function(C, e, a) {
@@ -1185,16 +1185,17 @@
 					...t,
 					variables: e
 				}),
-				h = (C, e) => async (a, l, {
-					gqlContext: t
-				}) => {
-					const L = {
+				h = (C, e) => async (a, l, t) => {
+					let {
+						gqlContext: L
+					} = t;
+					const c = {
 						input: {
 							subredditId: C,
 							moduleId: e
 						}
 					};
-					await p(t(), L), a(Object(n.b)(C))
+					await p(L(), c), a(Object(n.b)(C))
 				}
 		},
 		"./src/reddit/helpers/trackers/communityProgressModule.ts": function(C, e, a) {
@@ -1320,4 +1321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress.4c879747f98612d237d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress.e78d0031a06251f90548.js.map

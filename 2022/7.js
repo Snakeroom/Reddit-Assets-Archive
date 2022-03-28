@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/7.0c8e416bd92b5db8e739.js
-// Retrieved at 3/14/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/7.49f3f44e06db1d6b5403.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[7], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -248,45 +248,47 @@
 				Z = n.n(F),
 				R = n("./src/reddit/controls/CheckboxInput/index.tsx");
 
-			function P({
-				children: e
-			}) {
-				return l.a.createElement(l.a.Fragment, null, (t = e, t.split(/\*+/)).map((e, t) => t % 2 == 1 ? l.a.createElement("em", {
+			function P(e) {
+				let {
+					children: t
+				} = e;
+				return l.a.createElement(l.a.Fragment, null, (n = t, n.split(/\*+/)).map((e, t) => t % 2 == 1 ? l.a.createElement("em", {
 					key: t
 				}, e) : e));
-				var t
+				var n
 			}
 
-			function V({
-				question: e,
-				selectedAnswers: t,
-				onChange: n
-			}) {
+			function V(e) {
+				let {
+					question: t,
+					selectedAnswers: n,
+					onChange: a
+				} = e;
 				return l.a.createElement("div", null, l.a.createElement("h3", {
 					className: m.a.header
-				}, l.a.createElement(P, null, e.questionTextMarkdown)), e.answerOptions.map(a => l.a.createElement(R.a, {
-					key: a.id,
-					name: a.id,
+				}, l.a.createElement(P, null, t.questionTextMarkdown)), t.answerOptions.map(e => l.a.createElement(R.a, {
+					key: e.id,
+					name: e.id,
 					className: m.a.checkbox,
-					value: t[a.id],
-					onChange: s => (function(a, s) {
-						const r = a.id;
-						if (a.isMutuallyExclusive) return n(e.id, {
+					value: n[e.id],
+					onChange: s => (function(e, s) {
+						const r = e.id;
+						if (e.isMutuallyExclusive) return a(t.id, {
 							[r]: s
 						});
 						if (s) {
-							const a = e.answerOptions.filter(e => e.isMutuallyExclusive).map(e => e.id),
-								s = Z()(t, (e, t) => !a.includes(t) && e);
-							return s[r] = !0, n(e.id, s)
+							const e = t.answerOptions.filter(e => e.isMutuallyExclusive).map(e => e.id),
+								s = Z()(n, (t, n) => !e.includes(n) && t);
+							return s[r] = !0, a(t.id, s)
 						}
 						const {
 							[r]: o, ...c
-						} = t;
-						n(e.id, c)
-					})(a, s)
+						} = n;
+						a(t.id, c)
+					})(e, s)
 				}, l.a.createElement("span", {
-					id: a.id
-				}, a.answerText))))
+					id: e.id
+				}, e.answerText))))
 			}
 			var H = n("./src/reddit/components/ContentSurvey/RatingCard.tsx");
 			const {
@@ -303,13 +305,14 @@
 				} = e, [u, f] = Object(i.useState)({}), x = Object(d.d)(), y = G(null == r ? void 0 : r.questions, u), [{
 					surveyState: w,
 					activeSlide: C
-				}, b] = Object(i.useReducer)(({
-					activeSlide: e
-				}, t) => {
-					const n = "forward" === t ? Math.min(e + 1, y.length + 1) : Math.max(e - 1, 0);
-					return {
-						surveyState: 0 === n ? U.Intro : n === y.length + 1 ? U.Tag : U.Survey,
+				}, b] = Object(i.useReducer)((e, t) => {
+					let {
 						activeSlide: n
+					} = e;
+					const a = "forward" === t ? Math.min(n + 1, y.length + 1) : Math.max(n - 1, 0);
+					return {
+						surveyState: 0 === a ? U.Intro : a === y.length + 1 ? U.Tag : U.Survey,
+						activeSlide: a
 					}
 				}, {
 					surveyState: U.Intro,
@@ -656,14 +659,17 @@
 				L = s.a.wrapped(c.l, "PrimaryButton", u.a),
 				O = s.a.wrapped(c.o, "CancelButton", u.a),
 				T = s.a.wrapped(c.r, "RemoveButton", u.a),
-				A = ({
-					className: e,
-					...t
-				}) => o.a.createElement(c.t, m({
-					kind: c.b.Button,
-					priority: c.c.Primary,
-					className: Object(a.a)(u.a.ConfirmButton, e)
-				}, t))
+				A = e => {
+					let {
+						className: t,
+						...n
+					} = e;
+					return o.a.createElement(c.t, m({
+						kind: c.b.Button,
+						priority: c.c.Primary,
+						className: Object(a.a)(u.a.ConfirmButton, t)
+					}, n))
+				}
 		},
 		"./src/reddit/components/ModeratorSurvey/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -735,10 +741,11 @@
 			}
 			class m extends s.a.Component {
 				constructor() {
-					super(...arguments), this.handleKeyDown = ({
-						keyCode: e
-					}) => {
-						e === i.a.Escape && this.props.closeModal()
+					super(...arguments), this.handleKeyDown = e => {
+						let {
+							keyCode: t
+						} = e;
+						t === i.a.Escape && this.props.closeModal()
 					}
 				}
 				render() {
@@ -811,19 +818,22 @@
 					return e
 				}).apply(this, arguments)
 			}
-			t.a = ({
-				className: e,
-				...t
-			}) => s.a.createElement("svg", i({
-				xmlns: "http://www.w3.org/2000/svg",
-				width: "20",
-				height: "20",
-				viewBox: "0 0 20 20",
-				className: Object(r.a)(c.a.checkbox, e)
-			}, t), s.a.createElement("path", {
-				fill: "inherit",
-				d: "M1.66666667,3.34755033 L1.66666667,16.6524497 C1.66666667,17.5781756 2.42112363,18.3333333 3.34755033,18.3333333 L16.6524497,18.3333333 C17.5781756,18.3333333 18.3333333,17.5788764 18.3333333,16.6524497 L18.3333333,3.34755033 C18.3333333,2.42182438 17.5788764,1.66666667 16.6524497,1.66666667 L3.34755033,1.66666667 C2.42182438,1.66666667 1.66666667,2.42112363 1.66666667,3.34755033 Z M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z"
-			}))
+			t.a = e => {
+				let {
+					className: t,
+					...n
+				} = e;
+				return s.a.createElement("svg", i({
+					xmlns: "http://www.w3.org/2000/svg",
+					width: "20",
+					height: "20",
+					viewBox: "0 0 20 20",
+					className: Object(r.a)(c.a.checkbox, t)
+				}, n), s.a.createElement("path", {
+					fill: "inherit",
+					d: "M1.66666667,3.34755033 L1.66666667,16.6524497 C1.66666667,17.5781756 2.42112363,18.3333333 3.34755033,18.3333333 L16.6524497,18.3333333 C17.5781756,18.3333333 18.3333333,17.5788764 18.3333333,16.6524497 L18.3333333,3.34755033 C18.3333333,2.42182438 17.5788764,1.66666667 16.6524497,1.66666667 L3.34755033,1.66666667 C2.42182438,1.66666667 1.66666667,2.42112363 1.66666667,3.34755033 Z M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z"
+				}))
+			}
 		},
 		"./src/reddit/icons/svgs/CheckboxSelected/index.tsx": function(e, t, n) {
 			"use strict";
@@ -1213,4 +1223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/7.0c8e416bd92b5db8e739.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/7.49f3f44e06db1d6b5403.js.map

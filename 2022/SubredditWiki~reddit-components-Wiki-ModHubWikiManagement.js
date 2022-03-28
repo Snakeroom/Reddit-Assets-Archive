@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.30ab511c268e51839a7d.js
-// Retrieved at 3/28/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.6f015c5b0b4c691de10a.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki~reddit-components-Wiki-ModHubWikiManagement"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, i) {
@@ -379,28 +379,34 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const m = ({
-					className: e,
-					children: t,
-					editorWrapperRef: i,
-					initialHeight: n
-				}) => s.a.createElement("div", {
-					className: Object(r.a)(c.a.editorWrapper, e),
-					style: n ? {
-						height: n
-					} : void 0,
-					ref: i
-				}, t),
-				u = ({
-					isFullHeight: e,
-					textAreaRef: t,
-					...i
-				}) => s.a.createElement(a.a, l({
-					className: Object(r.a)(c.a.textareaAutosize, {
-						[c.a.mIsFullHeight]: e
-					}),
-					innerRef: t
-				}, i));
+			const m = e => {
+					let {
+						className: t,
+						children: i,
+						editorWrapperRef: n,
+						initialHeight: o
+					} = e;
+					return s.a.createElement("div", {
+						className: Object(r.a)(c.a.editorWrapper, t),
+						style: o ? {
+							height: o
+						} : void 0,
+						ref: n
+					}, i)
+				},
+				u = e => {
+					let {
+						isFullHeight: t,
+						textAreaRef: i,
+						...n
+					} = e;
+					return s.a.createElement(a.a, l({
+						className: Object(r.a)(c.a.textareaAutosize, {
+							[c.a.mIsFullHeight]: t
+						}),
+						innerRef: i
+					}, n))
+				};
 			class p extends s.a.Component {
 				constructor(e) {
 					super(e), this.editorHeight = null, this.editorRef = null, this.editorStyleMutationObserver = null, this.onEditorStyleChanged = () => {
@@ -1497,73 +1503,79 @@
 					wikiPage: A.c
 				}),
 				te = Object(a.b)(ee, (e, t) => ({
-					onSaveWikiPage: (i, s) => e((({
-						pageContent: e,
-						wikiPageName: t,
-						revisionReason: i,
-						subredditName: s
-					}) => async (o, a, r) => {
-						const d = await v({
-							context: r.apiContext(),
-							pageContent: e,
-							revisionReason: i,
-							subredditName: s,
-							wikiPageName: t
-						});
-						if (d.ok) o(y({
-							pageKey: Object(w.a)({
-								subredditName: s,
-								wikiPageName: t
-							}),
-							pageRevisionsListingKey: Object(x.a)({
-								subredditName: s,
-								wikiPageName: t,
-								isRecent: !1
-							}),
-							recentRevisionsListingKey: Object(x.a)({
-								subredditName: s,
-								wikiPageName: t,
-								isRecent: !0
-							})
-						})), await o(Object(u.fetchSubredditWikiData)({
-							includeDirectory: !0,
-							includePageData: !0,
-							subredditName: s,
-							wikiPageName: t
-						}));
-						else {
-							let e = n.fbt._("Something went wrong", null, {
-								hk: "4oNh1E"
+					onSaveWikiPage: (i, s) => e((e => {
+						let {
+							pageContent: t,
+							wikiPageName: i,
+							revisionReason: s,
+							subredditName: o
+						} = e;
+						return async (e, a, r) => {
+							const d = await v({
+								context: r.apiContext(),
+								pageContent: t,
+								revisionReason: s,
+								subredditName: o,
+								wikiPageName: i
 							});
-							d.body && "RESTRICTED_PAGE" === d.body.reason && (e = n.fbt._("Cannot create/edit restricted page", null, {
-								hk: "2pUIkm"
-							})), o(Object(p.f)({
-								kind: E.b.Error,
-								text: e
-							}))
+							if (d.ok) e(y({
+								pageKey: Object(w.a)({
+									subredditName: o,
+									wikiPageName: i
+								}),
+								pageRevisionsListingKey: Object(x.a)({
+									subredditName: o,
+									wikiPageName: i,
+									isRecent: !1
+								}),
+								recentRevisionsListingKey: Object(x.a)({
+									subredditName: o,
+									wikiPageName: i,
+									isRecent: !0
+								})
+							})), await e(Object(u.fetchSubredditWikiData)({
+								includeDirectory: !0,
+								includePageData: !0,
+								subredditName: o,
+								wikiPageName: i
+							}));
+							else {
+								let t = n.fbt._("Something went wrong", null, {
+									hk: "4oNh1E"
+								});
+								d.body && "RESTRICTED_PAGE" === d.body.reason && (t = n.fbt._("Cannot create/edit restricted page", null, {
+									hk: "2pUIkm"
+								})), e(Object(p.f)({
+									kind: E.b.Error,
+									text: t
+								}))
+							}
+							return d.ok
 						}
-						return d.ok
 					})({
 						pageContent: i,
 						revisionReason: s,
 						subredditName: t.subredditName,
 						wikiPageName: t.wikiPageName
 					})),
-					onFinishWikiEdit: t => e(((e = !1) => async (t, i) => {
-						const n = i().platform.currentPage,
-							s = n.locationState && n.locationState[h.a];
-						if (e && s) t(Object(l.a)());
-						else {
-							const {
-								subredditName: e,
-								wikiPageName: i
-							} = n.urlParams, s = Object(_.a)(n.url, {
-								subredditName: e,
-								wikiPageName: i
-							});
-							t(Object(l.c)(s))
+					onFinishWikiEdit: t => e(function() {
+						let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
+						return async (t, i) => {
+							const n = i().platform.currentPage,
+								s = n.locationState && n.locationState[h.a];
+							if (e && s) t(Object(l.a)());
+							else {
+								const {
+									subredditName: e,
+									wikiPageName: i
+								} = n.urlParams, s = Object(_.a)(n.url, {
+									subredditName: e,
+									wikiPageName: i
+								});
+								t(Object(l.c)(s))
+							}
 						}
-					})(t)),
+					}(t)),
 					closeAllModals: () => e(Object(c.f)()),
 					toggleModal: t => e(Object(c.i)(t))
 				}));
@@ -1728,11 +1740,14 @@
 				g = i.n(b);
 			const f = Object(a.c)({
 					pending: h.a,
-					revision: (e, {
-						revisionId: t
-					}) => t ? Object(h.n)(e, {
-						revisionId: t
-					}) : void 0,
+					revision: (e, t) => {
+						let {
+							revisionId: i
+						} = t;
+						return i ? Object(h.n)(e, {
+							revisionId: i
+						}) : void 0
+					},
 					wikiPage: h.c
 				}),
 				k = Object(o.b)(f);
@@ -2168,4 +2183,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.30ab511c268e51839a7d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki~reddit-components-Wiki-ModHubWikiManagement.6f015c5b0b4c691de10a.js.map

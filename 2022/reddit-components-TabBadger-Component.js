@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.c42639b39cde744fa7b0.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.6d9d32089b01d143370b.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TabBadger-Component"], {
 		"./src/reddit/components/Pill/PillButton/index.m.less": function(t, e, i) {
@@ -31,8 +31,8 @@
 			var n, s = i("./node_modules/react/index.js"),
 				o = i.n(s),
 				l = i("./src/lib/classNames/index.ts"),
-				a = i("./src/reddit/components/Pill/PillButton/index.m.less"),
-				r = i.n(a);
+				r = i("./src/reddit/components/Pill/PillButton/index.m.less"),
+				a = i.n(r);
 
 			function d() {
 				return (d = Object.assign || function(t) {
@@ -47,24 +47,27 @@
 			}(n || (n = {}));
 			const c = {
 					[n.BUTTON]: void 0,
-					[n.TAB_GROUP]: r.a.tabGroup
+					[n.TAB_GROUP]: a.a.tabGroup
 				},
 				u = (t, e) => {
-					if (e !== n.BUTTON) return t ? r.a.active : r.a.inactive
+					if (e !== n.BUTTON) return t ? a.a.active : a.a.inactive
 				},
-				p = ({
-					active: t = !0,
-					children: e,
-					className: i,
-					disabled: n = !1,
-					onClick: s,
-					variant: a,
-					...p
-				}) => o.a.createElement("button", d({}, p, {
-					className: Object(l.a)(r.a.primaryButton, c[a], u(t, a), i),
-					disabled: n,
-					onClick: s
-				}), e)
+				p = t => {
+					let {
+						active: e = !0,
+						children: i,
+						className: n,
+						disabled: s = !1,
+						onClick: r,
+						variant: p,
+						...m
+					} = t;
+					return o.a.createElement("button", d({}, m, {
+						className: Object(l.a)(a.a.primaryButton, c[p], u(e, p), n),
+						disabled: s,
+						onClick: r
+					}), i)
+				}
 		},
 		"./src/reddit/components/Pill/PillButtonGroup/index.m.less": function(t, e, i) {
 			t.exports = {
@@ -99,10 +102,10 @@
 				s = i.n(n),
 				o = i("./src/lib/classNames/index.ts"),
 				l = i("./src/reddit/components/Pill/index.m.less"),
-				a = i.n(l);
+				r = i.n(l);
 
-			function r() {
-				return (r = Object.assign || function(t) {
+			function a() {
+				return (a = Object.assign || function(t) {
 					for (var e = 1; e < arguments.length; e++) {
 						var i = arguments[e];
 						for (var n in i) Object.prototype.hasOwnProperty.call(i, n) && (t[n] = i[n])
@@ -110,13 +113,16 @@
 					return t
 				}).apply(this, arguments)
 			}
-			const d = ({
-				children: t,
-				className: e,
-				...i
-			}) => s.a.createElement("div", r({
-				className: Object(o.a)(a.a.pillContainer, e)
-			}, i), t)
+			const d = t => {
+				let {
+					children: e,
+					className: i,
+					...n
+				} = t;
+				return s.a.createElement("div", a({
+					className: Object(o.a)(r.a.pillContainer, i)
+				}, n), e)
+			}
 		},
 		"./src/reddit/components/TabBadger/Component.tsx": function(t, e, i) {
 			"use strict";
@@ -127,20 +133,23 @@
 				s = i("./node_modules/react/index.js"),
 				o = i.n(s),
 				l = i("./src/lib/classNames/index.ts"),
-				a = i("./src/lib/constants/index.ts"),
-				r = i("./src/reddit/components/Pill/index.tsx"),
+				r = i("./src/lib/constants/index.ts"),
+				a = i("./src/reddit/components/Pill/index.tsx"),
 				d = i("./src/reddit/icons/svgs/Close/index.tsx"),
 				c = i("./src/reddit/components/Pill/PillButton/index.tsx"),
 				u = i("./src/reddit/components/Pill/PillButtonGroup/index.m.less"),
 				p = i.n(u);
-			const m = ({
-					onClick: t
-				}) => o.a.createElement("button", {
-					className: p.a.closeButton,
-					onClick: t
-				}, o.a.createElement(d.a, {
-					className: p.a.closeIcon
-				})),
+			const m = t => {
+					let {
+						onClick: e
+					} = t;
+					return o.a.createElement("button", {
+						className: p.a.closeButton,
+						onClick: e
+					}, o.a.createElement(d.a, {
+						className: p.a.closeIcon
+					}))
+				},
 				h = t => o.a.createElement(o.a.Fragment, null, o.a.createElement(c.a, {
 					className: Object(l.a)(p.a.primaryButtonWithDivider),
 					onClick: t.onClick,
@@ -163,8 +172,8 @@
 				});
 			var v = i("./src/reddit/components/TabBadger/index.m.less"),
 				C = i.n(v);
-			const T = 12 * a.Q,
-				f = 2 * a.Q,
+			const T = 12 * r.Q,
+				f = 2 * r.Q,
 				j = 5e4;
 			class x extends s.Component {
 				constructor() {
@@ -201,7 +210,7 @@
 				render() {
 					return o.a.createElement("div", {
 						className: C.a.pillContainer
-					}, o.a.createElement(r.a, {
+					}, o.a.createElement(a.a, {
 						className: Object(l.a)(C.a.pill, this.state.isPillHidden && C.a.pillHidden)
 					}, o.a.createElement(h, {
 						onClick: this.handlePillClick,
@@ -222,4 +231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.c42639b39cde744fa7b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.6d9d32089b01d143370b.js.map

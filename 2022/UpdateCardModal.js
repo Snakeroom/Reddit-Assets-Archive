@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.9c98a83cd4d942db202c.js
-// Retrieved at 3/28/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.8a26e15feac976c662ab.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./src/reddit/components/UpdateCardModal/index.tsx": function(e, t, r) {
@@ -21,19 +21,20 @@
 				b = r("./src/reddit/selectors/activeModalId.ts"),
 				x = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
 			const j = Object(d.a)(x.f),
-				h = e => async (t, r, {
-					gqlContext: n
-				}) => {
+				h = e => async (t, r, n) => {
+					let {
+						gqlContext: s
+					} = n;
 					try {
-						const t = await Object(f.i)(n()),
+						const t = await Object(f.i)(s()),
 							{
 								error: r
 							} = await e.redirectToCheckout({
 								sessionId: t
 							});
 						if (r) throw new Error(r.message)
-					} catch (s) {
-						l.c.captureException(s);
+					} catch (i) {
+						l.c.captureException(i);
 						const e = a.fbt._("Something went wrong", null, {
 							hk: "ie9Ol"
 						});
@@ -142,4 +143,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.9c98a83cd4d942db202c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.8a26e15feac976c662ab.js.map

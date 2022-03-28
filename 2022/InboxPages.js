@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxPages.00680555088a7f6a92d3.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxPages.22009f43a9696bbcc213.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxPages"], {
 		"./src/reddit/components/IFrame/index.m.less": function(e, t, s) {
@@ -28,30 +28,31 @@
 				u = s("./src/reddit/actions/platform.ts");
 			var m = s("./src/reddit/components/IFrame/index.m.less"),
 				b = s.n(m);
-			var p = ({
-					src: e,
-					onLoad: t
-				}) => {
-					const s = Object(n.useRef)(null),
-						r = function(e) {
+			var p = e => {
+					let {
+						src: t,
+						onLoad: s
+					} = e;
+					const r = Object(n.useRef)(null),
+						d = function(e) {
 							const [t, s] = Object(n.useState)(0);
 							return Object(n.useEffect)(() => {
 								s(e => e + 1)
 							}, [e]), t
-						}(e);
+						}(t);
 					return o.a.createElement("iframe", {
-						key: r,
+						key: d,
 						className: b.a.IFrame,
-						ref: s,
-						src: e,
+						ref: r,
+						src: t,
 						onLoad: () => {
 							const e = (() => {
 								var e, t;
 								try {
-									return null === (t = null === (e = s.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t ? void 0 : t.document
-								} catch (r) {}
+									return null === (t = null === (e = r.current) || void 0 === e ? void 0 : e.contentWindow) || void 0 === t ? void 0 : t.document
+								} catch (s) {}
 							})();
-							e && t && t(e)
+							e && s && s(e)
 						}
 					})
 				},
@@ -83,20 +84,21 @@
 						title: t
 					}))
 				})),
-				E = ({
-					offsetLeft: e,
-					children: t,
-					...s
-				}) => {
-					const r = Object(n.useContext)(h.a);
+				E = e => {
+					let {
+						offsetLeft: t,
+						children: s,
+						...r
+					} = e;
+					const d = Object(n.useContext)(h.a);
 					return o.a.createElement("div", j({
 						className: Object(a.a)(g.a.wrapper, {
-							[g.a.wrapperExp]: r
+							[g.a.wrapperExp]: d
 						}),
 						style: {
-							left: e
+							left: t
 						}
-					}, s), t)
+					}, r), s)
 				};
 			class _ extends o.a.Component {
 				constructor(e) {
@@ -158,4 +160,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxPages.00680555088a7f6a92d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxPages.22009f43a9696bbcc213.js.map

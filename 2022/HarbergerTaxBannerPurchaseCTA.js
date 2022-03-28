@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.5e0358369bbeae97fde8.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.32df65df76c0c7aff24a.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -7,32 +7,32 @@
 			n.d(t, "b", (function() {
 				return r
 			})), n.d(t, "a", (function() {
-				return s
+				return i
 			}));
 			const r = "ECONOMICS__CLAIMS__CLAIM_PENDING",
-				s = "ECONOMICS__CLAIMS__CLAIM_COMPLETED"
+				i = "ECONOMICS__CLAIMS__CLAIM_COMPLETED"
 		},
 		"./src/reddit/actions/economics/me/constants.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
 				return r
 			})), n.d(t, "b", (function() {
-				return s
-			})), n.d(t, "c", (function() {
 				return i
+			})), n.d(t, "c", (function() {
+				return s
 			}));
 			const r = "ECONOMICS__ME__ME_DATA_SUCCESS",
-				s = "ECONOMICS__ME__POINTS_COPY_REQUESTED",
-				i = "ECONOMICS__ME__POINTS_COPY_SUCCESS"
+				i = "ECONOMICS__ME__POINTS_COPY_REQUESTED",
+				s = "ECONOMICS__ME__POINTS_COPY_SUCCESS"
 		},
 		"./src/reddit/actions/governance/constants.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
 				return r
 			})), n.d(t, "b", (function() {
-				return s
-			})), n.d(t, "c", (function() {
 				return i
+			})), n.d(t, "c", (function() {
+				return s
 			})), n.d(t, "d", (function() {
 				return o
 			})), n.d(t, "e", (function() {
@@ -77,8 +77,8 @@
 				return T
 			}));
 			const r = "GOVERNANCE__COMMUNITY_DETAILS_SUCCESS",
-				s = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
-				i = "GOVERNANCE__NEW_TOP_MOD_SUGGESTED",
+				i = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
+				s = "GOVERNANCE__NEW_TOP_MOD_SUGGESTED",
 				o = "GOVERNANCE__OPT_OUT_MODAL_OPENED",
 				c = "POLL_VOTE_SUCCESS",
 				d = "GOVERNANCE__PROPOSAL_CREATION_FAILURE",
@@ -104,7 +104,7 @@
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return i
+				return s
 			})), n.d(t, "e", (function() {
 				return o
 			})), n.d(t, "a", (function() {
@@ -125,26 +125,26 @@
 				return E
 			}));
 			var r = n("./src/lib/makeActionCreator/index.ts"),
-				s = n("./src/reddit/actions/harbergerTax/constants.ts");
-			const i = Object(r.a)(s.c),
-				o = Object(r.a)(s.e),
-				c = Object(r.a)(s.a),
-				d = Object(r.a)(s.b),
-				u = Object(r.a)(s.d),
-				a = Object(r.a)(s.f),
-				l = Object(r.a)(s.g),
-				_ = Object(r.a)(s.h),
-				b = Object(r.a)(s.i),
-				E = Object(r.a)(s.j)
+				i = n("./src/reddit/actions/harbergerTax/constants.ts");
+			const s = Object(r.a)(i.c),
+				o = Object(r.a)(i.e),
+				c = Object(r.a)(i.a),
+				d = Object(r.a)(i.b),
+				u = Object(r.a)(i.d),
+				a = Object(r.a)(i.f),
+				l = Object(r.a)(i.g),
+				_ = Object(r.a)(i.h),
+				b = Object(r.a)(i.i),
+				E = Object(r.a)(i.j)
 		},
 		"./src/reddit/actions/harbergerTax/constants.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
 				return r
 			})), n.d(t, "e", (function() {
-				return s
-			})), n.d(t, "a", (function() {
 				return i
+			})), n.d(t, "a", (function() {
+				return s
 			})), n.d(t, "b", (function() {
 				return o
 			})), n.d(t, "d", (function() {
@@ -161,8 +161,8 @@
 				return _
 			}));
 			const r = "HARBERGER_TAX__BANNER_MANAGE_MODAL_OPENED",
-				s = "HARBERGER_TAX__BANNER_PURCHASE_MODAL_OPENED",
-				i = "HARBERGER_TAX__BANNER_CRYPTO_MANAGE_MODAL_OPENED",
+				i = "HARBERGER_TAX__BANNER_PURCHASE_MODAL_OPENED",
+				s = "HARBERGER_TAX__BANNER_CRYPTO_MANAGE_MODAL_OPENED",
 				o = "HARBERGER_TAX__BANNER_CRYPTO_PURCHASE_MODAL_OPENED",
 				c = "HARBERGER_TAX__BANNER_PURCHASE_FAILURE",
 				d = "HARBERGER_TAX__BANNER_PURCHASE_PENDING",
@@ -182,8 +182,8 @@
 			"use strict";
 			n.r(t);
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/react/index.js"),
-				i = n.n(s),
+				i = n("./node_modules/react/index.js"),
+				s = n.n(i),
 				o = n("./node_modules/react-redux/es/index.js"),
 				c = n("./node_modules/reselect/es/index.js"),
 				d = n("./src/lib/classNames/index.ts"),
@@ -263,7 +263,7 @@
 				const p = Object(m.f)(),
 					A = !c && (!p || !!!n || N.inTransition),
 					h = `harberger-cta-${o.id}`;
-				return i.a.createElement("div", {
+				return s.a.createElement("div", {
 					className: Object(d.a)(v.a.container, {
 						[v.a.disabled]: A
 					}),
@@ -277,12 +277,12 @@
 					onMouseOut: a
 				}, c ? r.fbt._("Manage Banner", null, {
 					hk: "aHDWM"
-				}) : i.a.createElement(s.Fragment, null, r.fbt._("Buy Banner", null, {
+				}) : s.a.createElement(i.Fragment, null, r.fbt._("Buy Banner", null, {
 					hk: "3Mp8CG"
-				}), i.a.createElement(_.a, {
+				}), s.a.createElement(_.a, {
 					className: v.a.token,
 					subredditId: o.id
-				}), Object(u.a)(Object(O.b)(t, N.displayConversion))), A && i.a.createElement(b.c, {
+				}), Object(u.a)(Object(O.b)(t, N.displayConversion))), A && s.a.createElement(b.c, {
 					tooltipId: h,
 					text: p ? r.fbt._("You must register your wallet address to purchase the banner", null, {
 						hk: "38o58h"
@@ -300,8 +300,8 @@
 		"./src/reddit/components/Governance/Token/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
-				s = n.n(r),
-				i = n("./node_modules/react-redux/es/index.js"),
+				i = n.n(r),
+				s = n("./node_modules/react-redux/es/index.js"),
 				o = n("./node_modules/reselect/es/index.js"),
 				c = n("./src/config.ts"),
 				d = n("./src/lib/classNames/index.ts"),
@@ -309,19 +309,22 @@
 				a = n("./src/reddit/components/Governance/Token/index.m.less"),
 				l = n.n(a);
 			const _ = Object(o.c)({
-				pointsDetails: (e, {
-					subredditId: t
-				}) => Object(u.b)(e, t)
+				pointsDetails: (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					return Object(u.b)(e, n)
+				}
 			});
-			t.a = Object(i.b)(_)((function(e) {
+			t.a = Object(s.b)(_)((function(e) {
 				var t;
 				const n = null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.images;
 				if (!n) return null;
 				const r = e.grey ? n.greyVector || n.grey : n.filledVector || n.filled,
-					i = `${c.a.assetPath}/${r}`;
-				if (e.grey && i.endsWith(".svg")) {
-					const t = `url(${i}) center/cover`;
-					return s.a.createElement("div", {
+					s = `${c.a.assetPath}/${r}`;
+				if (e.grey && s.endsWith(".svg")) {
+					const t = `url(${s}) center/cover`;
+					return i.a.createElement("div", {
 						className: Object(d.a)(l.a.grey, e.className),
 						style: {
 							mask: t,
@@ -329,9 +332,9 @@
 						}
 					})
 				}
-				return s.a.createElement("img", {
+				return i.a.createElement("img", {
 					className: e.className,
-					src: i
+					src: s
 				})
 			}))
 		},
@@ -366,8 +369,8 @@
 			})), n.d(t, "n", (function() {
 				return N
 			}));
-			var r, s = n("./src/config.ts"),
-				i = n("./src/reddit/endpoints/governance/requester.ts");
+			var r, i = n("./src/config.ts"),
+				s = n("./src/reddit/endpoints/governance/requester.ts");
 
 			function o(e) {
 				switch (e) {
@@ -413,9 +416,9 @@
 				return e === r.ArbitrumRinkeby ? 5e3 : 3e4
 			}
 			async function a(e, t, n) {
-				return Object(i.a)(e, {
+				return Object(s.a)(e, {
 					method: "post",
-					endpoint: `${s.a.metaUrl}/crypto/${t}/challenges`,
+					endpoint: `${i.a.metaUrl}/crypto/${t}/challenges`,
 					data: {
 						challengeType: "registration-challenge-EIP712",
 						address: n
@@ -423,16 +426,16 @@
 				})
 			}
 			async function l(e, t, n) {
-				return await Object(i.a)(e, {
+				return await Object(s.a)(e, {
 					method: "post",
-					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations`,
+					endpoint: `${i.a.metaUrl}/crypto/${t}/registrations`,
 					data: n
 				})
 			}
 			async function _(e, t, n) {
-				return await Object(i.a)(e, {
+				return await Object(s.a)(e, {
 					method: "delete",
-					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations/${n}`
+					endpoint: `${i.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
 				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
@@ -463,9 +466,9 @@
 					amount: r
 				});
 			async function N(e, t) {
-				return await Object(i.a)(e, {
+				return await Object(s.a)(e, {
 					method: "put",
-					endpoint: `${s.a.metaUrl}/crypto/ethereum/transaction-intent`,
+					endpoint: `${i.a.metaUrl}/crypto/ethereum/transaction-intent`,
 					data: t
 				})
 			}
@@ -473,9 +476,9 @@
 		"./src/reddit/helpers/governance/ethereum.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "c", (function() {
-				return s
-			})), n.d(t, "f", (function() {
 				return i
+			})), n.d(t, "f", (function() {
+				return s
 			})), n.d(t, "d", (function() {
 				return o
 			})), n.d(t, "e", (function() {
@@ -496,37 +499,37 @@
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function s() {
+			function i() {
 				return window.ethereum
 			}
 
-			function i() {
-				const e = s();
+			function s() {
+				const e = i();
 				return !(!e || !e.isMetaMask)
 			}
 
 			function o() {
-				const e = s();
+				const e = i();
 				return e && e.selectedAddress || null
 			}
 
 			function c() {
-				const e = s();
+				const e = i();
 				return (null == e ? void 0 : e.networkVersion) || null
 			}
 
 			function d() {
-				const e = s();
+				const e = i();
 				if (!e) throw new Error("Please install a web3 provider, such as MetaMask");
 				return o() ? Promise.resolve() : e.enable()
 			}
 			const u = 4001;
-			async function a(e, t, r, i) {
+			async function a(e, t, r, s) {
 				const [o, c] = await Promise.all([Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await d();
-				const u = new o.providers.Web3Provider(s()).getSigner(),
+				const u = new o.providers.Web3Provider(i()).getSigner(),
 					a = new o.Contract(e, c, u),
-					l = await a[r](...i);
+					l = await a[r](...s);
 				return await l.wait()
 			}
 			const l = {
@@ -550,7 +553,7 @@
 				}]
 			};
 			const _ = 1;
-			async function b(e, t, r, s, i) {
+			async function b(e, t, r, i, s) {
 				const o = await Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: c
@@ -560,9 +563,9 @@
 						hexZeroPad: u,
 						toUtf8Bytes: b
 					} = o.utils,
-					E = c.from(r).add(i),
+					E = c.from(r).add(s),
 					f = _,
-					m = "0x" + [d(1)].concat([d(f), c.from(s).toHexString(), c.from(i).toHexString()].map(e => u(e, 32))).concat(d(b(""))).map(e => e.substr(2)).join("");
+					m = "0x" + [d(1)].concat([d(f), c.from(i).toHexString(), c.from(s).toHexString()].map(e => u(e, 32))).concat(d(b(""))).map(e => e.substr(2)).join("");
 				return async function(e, t, n, r) {
 					return a(e, Promise.resolve(l), "send", [t, n, r])
 				}(e, t, E.toString(), m)
@@ -586,26 +589,26 @@
 			};
 			async function f(e, t, n) {
 				await d();
-				const s = o() || "";
-				if (t.toLowerCase() !== s.toLowerCase()) throw new Error(r.fbt._("Please select your registered address in MetaMask: {subscriberAddress}", [r.fbt._param("subscriberAddress", t)], {
+				const i = o() || "";
+				if (t.toLowerCase() !== i.toLowerCase()) throw new Error(r.fbt._("Please select your registered address in MetaMask: {subscriberAddress}", [r.fbt._param("subscriberAddress", t)], {
 					hk: "3rehSL"
 				}).toString());
 				return a(e, Promise.resolve(E), "subscribe", [t, n])
 			}
 
 			function m(e) {
-				const t = s();
-				return new Promise((n, s) => {
-					const i = JSON.stringify(e);
+				const t = i();
+				return new Promise((n, i) => {
+					const s = JSON.stringify(e);
 					t.sendAsync({
 						method: "eth_signTypedData_v3",
-						params: [t.selectedAddress, i],
+						params: [t.selectedAddress, s],
 						from: t.selectedAddress
 					}, (e, t) => {
-						if (e) s(e);
+						if (e) i(e);
 						else {
 							const e = t && t.result;
-							e ? n(e) : s({
+							e ? n(e) : i({
 								message: r.fbt._("No signature returned from ethereum provider.", null, {
 									hk: "eiYBF"
 								}).toString()
@@ -617,7 +620,7 @@
 
 			function O(e) {
 				return new Promise((t, n) => {
-					s().sendAsync({
+					i().sendAsync({
 						method: "metamask_watchAsset",
 						params: {
 							type: "ERC20",
@@ -633,40 +636,42 @@
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return i
+				return s
 			})), n.d(t, "c", (function() {
 				return o
 			})), n.d(t, "a", (function() {
 				return c
 			}));
 			var r = n("./node_modules/bignumber.js/bignumber.js"),
-				s = n("./src/lib/prettyPrintNumber/index.ts");
+				i = n("./src/lib/prettyPrintNumber/index.ts");
 
-			function i(e, t) {
+			function s(e, t) {
 				const n = new r.BigNumber(e),
-					s = new r.BigNumber(t || 1);
-				return n.dividedToIntegerBy(s).toString()
+					i = new r.BigNumber(t || 1);
+				return n.dividedToIntegerBy(i).toString()
 			}
 
 			function o(e, t) {
-				return Object(s.b)(parseInt(i(e, t), 10))
+				return Object(i.b)(parseInt(s(e, t), 10))
 			}
 
 			function c(e, t) {
 				const n = new r.BigNumber(e),
-					s = new r.BigNumber(t || 1);
-				return n.multipliedBy(s).toFixed(0)
+					i = new r.BigNumber(t || 1);
+				return n.multipliedBy(i).toFixed(0)
 			}
 		},
 		"./src/reddit/reducers/features/crypto/index.ts": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/redux/es/redux.js"),
-				s = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/reddit/actions/economics/claims/constants.ts")),
-				i = n("./src/reddit/actions/economics/me/constants.ts");
+				i = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/reddit/actions/economics/claims/constants.ts")),
+				s = n("./src/reddit/actions/economics/me/constants.ts");
 			const o = {};
-			var c = (e = o, t) => {
+			var c = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : o,
+						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case i.a: {
+						case s.a: {
 							const n = t.payload.claimPoints || {},
 								r = Object.keys(n).reduce((t, r) => (t[r] = {
 									...e[r],
@@ -679,15 +684,15 @@
 								}, r[t].isClaiming = !0)
 							}), r
 						}
-						case s.b:
-						case s.a:
+						case i.b:
+						case i.a:
 							const {
 								subredditId: n
 							} = t.payload;
 							return {
 								...e, [n]: {
 									...e[n],
-									isClaiming: t.type === s.b
+									isClaiming: t.type === i.b
 								}
 							};
 						default:
@@ -702,12 +707,12 @@
 				};
 
 			function l(e) {
-				var t, n, r, s, i;
+				var t, n, r, i, s;
 				const o = null === (t = e.walletProvider) || void 0 === t ? void 0 : t.extra,
 					c = null == o ? void 0 : o.contracts,
 					d = null == c ? void 0 : c.unlocked,
 					u = null !== (r = null === (n = e.walletProvider) || void 0 === n ? void 0 : n.provider) && void 0 !== r ? r : e.provider,
-					l = !!(null === (s = e.walletProvider) || void 0 === s ? void 0 : s.inTransition),
+					l = !!(null === (i = e.walletProvider) || void 0 === i ? void 0 : i.inTransition),
 					_ = (null == d ? void 0 : d.decimals) || 0,
 					b = "1" + "0".repeat(_);
 				return {
@@ -719,12 +724,14 @@
 					images: e.images || a,
 					inTransition: l,
 					name: e.name,
-					nomenclature: null === (i = e.extra) || void 0 === i ? void 0 : i.nomenclature,
+					nomenclature: null === (s = e.extra) || void 0 === s ? void 0 : s.nomenclature,
 					polls: e.polls,
 					symbol: (null == d ? void 0 : d.token) || ""
 				}
 			}
-			var _ = (e = u, t) => {
+			var _ = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : u,
+					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case d.a: {
 						const {
@@ -741,24 +748,26 @@
 				}
 			};
 			const b = {};
-			var E = (e = b, t) => {
+			var E = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b,
+					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case d.n: {
 						const {
 							subredditId: n,
 							wallets: r
-						} = t.payload, s = Object.keys(r).reduce((t, s) => {
+						} = t.payload, i = Object.keys(r).reduce((t, i) => {
 							return {
 								...t,
-								[s]: {
-									...e[s] || {},
-									[n]: r[s]
+								[i]: {
+									...e[i] || {},
+									[n]: r[i]
 								}
 							}
 						}, {});
 						return {
 							...e,
-							...s
+							...i
 						}
 					}
 					default:
@@ -781,8 +790,8 @@
 				return a
 			}));
 			var r = n("./node_modules/react-redux/es/index.js"),
-				s = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				i = n("./src/reddit/endpoints/governance/crypto.ts"),
+				i = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				s = n("./src/reddit/endpoints/governance/crypto.ts"),
 				o = n("./src/lib/initializeClient/installReducer.ts"),
 				c = n("./src/reddit/reducers/features/crypto/index.ts");
 			Object(o.a)({
@@ -791,13 +800,13 @@
 				}
 			});
 			const d = (e, t) => {
-				var n, r, s;
-				return t ? null === (s = null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.crypto) || void 0 === r ? void 0 : r.points) || void 0 === s ? void 0 : s[t] : void 0
+				var n, r, i;
+				return t ? null === (i = null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.crypto) || void 0 === r ? void 0 : r.points) || void 0 === i ? void 0 : i[t] : void 0
 			};
 
 			function u() {
-				const e = Object(s.fb)(),
-					t = Object(r.e)(t => Object(s.r)(t, {
+				const e = Object(i.fb)(),
+					t = Object(r.e)(t => Object(i.r)(t, {
 						pageLayer: e
 					})),
 					n = Object(r.e)(e => d(e, null == t ? void 0 : t.id));
@@ -809,36 +818,36 @@
 			const a = (e, t) => {
 				var n;
 				const r = null === (n = d(e, t)) || void 0 === n ? void 0 : n.blockchainProvider;
-				return r === i.a.Ethereum || r === i.a.Rinkeby || r === i.a.EthTraderEthereum || r === i.a.EthTraderRinkeby || r === i.a.ArbitrumRinkeby
+				return r === s.a.Ethereum || r === s.a.Rinkeby || r === s.a.EthTraderEthereum || r === s.a.EthTraderRinkeby || r === s.a.ArbitrumRinkeby
 			}
 		},
 		"./src/reddit/selectors/crypto/wallet.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return i
+				return s
 			})), n.d(t, "b", (function() {
 				return o
 			})), n.d(t, "c", (function() {
 				return c
 			}));
 			var r = n("./src/lib/initializeClient/installReducer.ts"),
-				s = n("./src/reddit/reducers/features/crypto/index.ts");
+				i = n("./src/reddit/reducers/features/crypto/index.ts");
 			Object(r.a)({
 				features: {
-					crypto: s.a
+					crypto: i.a
 				}
 			});
-			const i = (e, t) => {
+			const s = (e, t) => {
 					var n;
 					return t && (null === (n = e.user.wallets[t.subredditId]) || void 0 === n ? void 0 : n.latest)
 				},
 				o = (e, t) => {
 					var n;
-					return null === (n = i(e, t)) || void 0 === n ? void 0 : n.publicAddress
+					return null === (n = s(e, t)) || void 0 === n ? void 0 : n.publicAddress
 				},
 				c = (e, t) => {
-					var n, r, s, i;
-					return null === (i = null === (s = null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.crypto) || void 0 === r ? void 0 : r.publicWallets) || void 0 === s ? void 0 : s[t.userId]) || void 0 === i ? void 0 : i[t.subredditId]
+					var n, r, i, s;
+					return null === (s = null === (i = null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.crypto) || void 0 === r ? void 0 : r.publicWallets) || void 0 === i ? void 0 : i[t.userId]) || void 0 === s ? void 0 : s[t.subredditId]
 				}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -859,8 +868,8 @@
 				return _
 			}));
 			var r = n("./src/reddit/contexts/PageLayer/index.tsx");
-			const s = [],
-				i = {},
+			const i = [],
+				s = {},
 				o = (e, t) => {
 					const n = b(e, t);
 					if (n) return n.mainHeader
@@ -874,7 +883,7 @@
 					return n && n.mainHeader ? {
 						owner: n.mainHeader.owner,
 						ownerId: n.mainHeader.ownerId
-					} : i
+					} : s
 				},
 				u = (e, t) => t && t.subredditId ? (e.user.wallets[t.subredditId] || {}).latest : void 0,
 				a = (e, t) => {
@@ -889,10 +898,10 @@
 				},
 				_ = (e, t) => {
 					const n = Object(r.n)(e, t);
-					return n && e.subreddits.gov.releaseNotes[n] || s
+					return n && e.subreddits.gov.releaseNotes[n] || i
 				},
 				b = (e, t) => t.subredditId ? e.subreddits.gov.assets[t.subredditId] : void 0
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.5e0358369bbeae97fde8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.32df65df76c0c7aff24a.js.map

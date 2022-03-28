@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.8d53351657c634f320a6.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.7e6d7869fa99cf7cad4f.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(e, t, A) {
@@ -232,14 +232,17 @@
 				h = a.a.wrapped(r.l, "PrimaryButton", g.a),
 				O = a.a.wrapped(r.o, "CancelButton", g.a),
 				H = a.a.wrapped(r.r, "RemoveButton", g.a),
-				N = ({
-					className: e,
-					...t
-				}) => s.a.createElement(r.t, d({
-					kind: r.b.Button,
-					priority: r.c.Primary,
-					className: Object(n.a)(g.a.ConfirmButton, e)
-				}, t))
+				N = e => {
+					let {
+						className: t,
+						...A
+					} = e;
+					return s.a.createElement(r.t, d({
+						kind: r.b.Button,
+						priority: r.c.Primary,
+						className: Object(n.a)(g.a.ConfirmButton, t)
+					}, A))
+				}
 		},
 		"./src/reddit/components/NewCommunityProgress/NewCommunityProgress.tsx": function(e, t, A) {
 			"use strict";
@@ -297,123 +300,126 @@
 				return `${E.a.redditUrl}${t}submit?${Object(D.stringify)({title:e.postTitle,text:null===(A=e.postBody)||void 0===A?void 0:A.markdown,frequency:e.postRepeatFrequency},{skipNull:!0})}`
 			}(e, t) : void 0;
 
-			function y({
-				className: e,
-				color: t
-			}) {
+			function y(e) {
+				let {
+					className: t,
+					color: A
+				} = e;
 				return a.a.createElement("svg", {
-					className: e,
+					className: t,
 					viewBox: "0 0 1 1",
 					preserveAspectRatio: "none"
 				}, a.a.createElement("path", {
 					style: {
-						fill: Object(P.k)(.8, t)
+						fill: Object(P.k)(.8, A)
 					},
 					d: "M 0 1 V 0 H 1 Z"
 				}))
 			}
 
-			function k({
-				className: e,
-				color: t
-			}) {
+			function k(e) {
+				let {
+					className: t,
+					color: A
+				} = e;
 				return a.a.createElement("svg", {
-					className: e,
+					className: t,
 					viewBox: "0 0 1 1",
 					preserveAspectRatio: "none"
 				}, a.a.createElement("path", {
 					style: {
-						fill: Object(P.k)(.8, t)
+						fill: Object(P.k)(.8, A)
 					},
 					d: "M 0 0 V 1 H 1 Z"
 				}))
 			}
-			var Y = Object(n.forwardRef)(({
-					id: e,
-					title: t,
-					bodyContent: A,
-					iconIdentifier: n,
-					isInNCPControlGroup: s,
-					buttons: l,
-					colorIdentifier: i,
-					onActionCard: g = (() => {}),
-					onClose: d = (() => {}),
-					isNightMode: B,
-					subredditUrl: v,
-					progressModule: m,
-					primaryButton: w,
-					progress: P,
-					status: D
-				}, Y) => {
-					var G, X;
-					const U = Object(o.d)(),
-						R = Object(f.a)(),
-						z = H.b[n],
-						J = z ? Object(h.b)(z) : null !== (G = H.a[n]) && void 0 !== G ? G : Object(h.b)("best"),
-						K = B ? p.h : p.g,
-						V = null !== (X = K[i]) && void 0 !== X ? X : K.downvote;
+			var Y = Object(n.forwardRef)((e, t) => {
+					let {
+						id: A,
+						title: n,
+						bodyContent: s,
+						iconIdentifier: l,
+						isInNCPControlGroup: i,
+						buttons: g,
+						colorIdentifier: d,
+						onActionCard: B = (() => {}),
+						onClose: v = (() => {}),
+						isNightMode: m,
+						subredditUrl: w,
+						progressModule: P,
+						primaryButton: D,
+						progress: Y,
+						status: G
+					} = e;
+					var X, U;
+					const R = Object(o.d)(),
+						z = Object(f.a)(),
+						J = H.b[l],
+						K = J ? Object(h.b)(J) : null !== (X = H.a[l]) && void 0 !== X ? X : Object(h.b)("best"),
+						V = m ? p.h : p.g,
+						S = null !== (U = V[d]) && void 0 !== U ? U : V.downvote;
 
-					function S(t) {
+					function F(e) {
 						(function(e) {
 							return "CommunityProgressShareButton" === e.__typename
-						})(t) && (Object(I.a)(`https://reddit.com${v}`), U(Object(Q.f)(Object(Q.e)("Copied community URL to clipboard!", O.b.SuccessCommunityGreen)))), s && d(u.b.CTA_BUTTON_CLICK), R(Object(C.b)(m, e, t.buttonText))
+						})(e) && (Object(I.a)(`https://reddit.com${w}`), R(Object(Q.f)(Object(Q.e)("Copied community URL to clipboard!", O.b.SuccessCommunityGreen)))), i && v(u.b.CTA_BUTTON_CLICK), z(Object(C.b)(P, A, e.buttonText))
 					}
-					const F = (null == P ? void 0 : P.done) / (null == P ? void 0 : P.total) * 100 || 0,
-						W = T(w, v);
+					const W = (null == Y ? void 0 : Y.done) / (null == Y ? void 0 : Y.total) * 100 || 0,
+						Z = T(D, w);
 					return a.a.createElement("a", N({
 						className: Object(c.a)(r.a.ncpCard, {
-							[r.a.v2]: !s,
-							[r.a.isCompleted]: D === u.a.COMPLETED,
-							[r.a.nightMode]: !s && B
+							[r.a.v2]: !i,
+							[r.a.isCompleted]: G === u.a.COMPLETED,
+							[r.a.nightMode]: !i && m
 						})
-					}, W && {
-						href: W
-					}, w && {
-						onClick: () => S(w)
+					}, Z && {
+						href: Z
+					}, D && {
+						onClick: () => F(D)
 					}, {
 						rel: "noopener noreferrer",
 						target: "_blank",
-						ref: Y
-					}), s ? a.a.createElement(a.a.Fragment, null, a.a.createElement(y, {
-						color: V,
+						ref: t
+					}), i ? a.a.createElement(a.a.Fragment, null, a.a.createElement(y, {
+						color: S,
 						className: Object(c.a)(r.a.stripe, r.a.stripeUp)
 					}), a.a.createElement(k, {
-						color: V,
+						color: S,
 						className: Object(c.a)(r.a.stripe, r.a.stripeDown)
 					}), a.a.createElement(j.a, {
 						className: Object(c.a)(r.a.headerButton, r.a.closeButton, r.a.og),
-						onClick: () => d(u.b.HIDE_BUTTON_CLICK)
+						onClick: () => v(u.b.HIDE_BUTTON_CLICK)
 					}, a.a.createElement(x.b, null), a.a.createElement("div", null, L._("Close", null, {
 						hk: "4gbyAA"
 					}))), a.a.createElement("div", {
 						className: r.a.iconCircle,
 						style: {
-							backgroundColor: V
+							backgroundColor: S
 						}
-					}, a.a.createElement(J, {
+					}, a.a.createElement(K, {
 						className: r.a.icon
-					}))) : D === u.a.COMPLETED ? a.a.createElement("div", null, a.a.createElement("div", {
+					}))) : G === u.a.COMPLETED ? a.a.createElement("div", null, a.a.createElement("div", {
 						className: r.a.completedIcon
 					}, a.a.createElement(h.a, {
 						name: "checkmark",
 						className: Object(c.a)(r.a.icon, {
-							[r.a.v2]: !s
+							[r.a.v2]: !i
 						})
-					}))) : a.a.createElement(J, {
+					}))) : a.a.createElement(K, {
 						className: r.a.imageIcon
 					}), a.a.createElement("div", {
 						className: Object(c.a)(r.a.bodyContent, {
-							[r.a.v2]: !s
+							[r.a.v2]: !i
 						})
 					}, a.a.createElement("h2", {
 						className: Object(c.a)(r.a.title, {
-							[r.a.v2]: !s
+							[r.a.v2]: !i
 						})
-					}, t), a.a.createElement("p", {
+					}, n), a.a.createElement("p", {
 						className: Object(c.a)(r.a.bodyText, {
-							[r.a.v2]: !s
+							[r.a.v2]: !i
 						})
-					}, null == A ? void 0 : A.markdown), (null == P ? void 0 : P.total) > 1 && a.a.createElement("div", {
+					}, null == s ? void 0 : s.markdown), (null == Y ? void 0 : Y.total) > 1 && a.a.createElement("div", {
 						className: r.a.progressCardContainer
 					}, a.a.createElement("div", {
 						className: r.a.progressLabels
@@ -421,29 +427,29 @@
 						hk: "1Riqmr"
 					}), a.a.createElement("div", {
 						className: r.a.ratio
-					}, P.done, "/", P.total)), a.a.createElement(M.a, {
+					}, Y.done, "/", Y.total)), a.a.createElement(M.a, {
 						className: r.a.progressBar,
 						innerBarClassName: r.a.innerBar,
-						percent: F
-					})), !s && D !== u.a.COMPLETED && a.a.createElement(j.a, {
+						percent: W
+					})), !i && G !== u.a.COMPLETED && a.a.createElement(j.a, {
 						className: Object(c.a)(r.a.headerButton, r.a.menuButton),
 						onClick: e => {
-							e.stopPropagation(), e.preventDefault(), g()
+							e.stopPropagation(), e.preventDefault(), B()
 						}
 					}, a.a.createElement(h.a, {
 						name: "overflow_horizontal"
 					}), a.a.createElement("div", null, L._("Close", null, {
 						hk: "4gbyAA"
-					}))), l.length > 0 && a.a.createElement("div", null, l.map(e => {
-						const t = T(e, v),
-							A = s ? {
-								backgroundColor: V,
-								borderColor: V,
+					}))), g.length > 0 && a.a.createElement("div", null, g.map(e => {
+						const t = T(e, w),
+							A = i ? {
+								backgroundColor: S,
+								borderColor: S,
 								color: "white"
 							} : {},
 							n = {
 								className: r.a.button,
-								onClick: () => S(e),
+								onClick: () => F(e),
 								style: A
 							},
 							o = !!(null == t ? void 0 : t.startsWith(E.a.redditUrl));
@@ -527,28 +533,31 @@
 			const {
 				fbt: z
 			} = A("./node_modules/fbt/lib/FbtPublic.js");
-			var J = Object(n.forwardRef)(({
-					isLastAvailable: e,
-					onCompleteModule: t
-				}, A) => a.a.createElement("button", {
-					className: r.a.completeModuleCard,
-					onClick: t,
-					ref: A
-				}, e && a.a.createElement(R, {
-					className: r.a.completeFinalIcon
-				}), a.a.createElement("div", null, a.a.createElement("div", {
-					className: r.a.header
-				}, e ? z._("And that's a wrap!", null, {
-					hk: "2FMXh0"
-				}) : z._("Let's keep going!", null, {
-					hk: "3tnJxD"
-				})), a.a.createElement("div", null, e ? z._("Your to-do's are all done and your community is on its way to greatness.", null, {
-					hk: "19KsIY"
-				}) : z._("Get more tips and quick to-dos to help your community grow.", null, {
-					hk: "1Ggc77"
-				}))), a.a.createElement(B.a, {
-					className: r.a.arrowIcon
-				}))),
+			var J = Object(n.forwardRef)((e, t) => {
+					let {
+						isLastAvailable: A,
+						onCompleteModule: n
+					} = e;
+					return a.a.createElement("button", {
+						className: r.a.completeModuleCard,
+						onClick: n,
+						ref: t
+					}, A && a.a.createElement(R, {
+						className: r.a.completeFinalIcon
+					}), a.a.createElement("div", null, a.a.createElement("div", {
+						className: r.a.header
+					}, A ? z._("And that's a wrap!", null, {
+						hk: "2FMXh0"
+					}) : z._("Let's keep going!", null, {
+						hk: "3tnJxD"
+					})), a.a.createElement("div", null, A ? z._("Your to-do's are all done and your community is on its way to greatness.", null, {
+						hk: "19KsIY"
+					}) : z._("Get more tips and quick to-dos to help your community grow.", null, {
+						hk: "1Ggc77"
+					}))), a.a.createElement(B.a, {
+						className: r.a.arrowIcon
+					}))
+				}),
 				K = A("./src/reddit/components/NewCommunityProgress/icons/Progress.m.less"),
 				V = A.n(K);
 			var S = e => {
@@ -602,141 +611,142 @@
 				fbt: W
 			} = A("./node_modules/fbt/lib/FbtPublic.js"), Z = "NCPV2--Modal--ActionCardModal";
 
-			function q({
-				closeModuleOnMount: e,
-				subredditId: t,
-				progressModule: A
-			}) {
-				var s, E;
-				const P = A.id === u.c;
-				let D;
-				D = A.cards;
-				const p = Object(n.useRef)(null),
-					[I, Q] = Object(n.useState)(!e),
-					x = Object(o.e)(w.cb),
-					M = Object(o.e)(e => Object(m.Y)(e, t)),
-					b = Object(f.a)();
+			function q(e) {
+				let {
+					closeModuleOnMount: t,
+					subredditId: A,
+					progressModule: s
+				} = e;
+				var E, P;
+				const D = s.id === u.c;
+				let p;
+				p = s.cards;
+				const I = Object(n.useRef)(null),
+					[Q, x] = Object(n.useState)(!t),
+					M = Object(o.e)(w.cb),
+					b = Object(o.e)(e => Object(m.Y)(e, A)),
+					j = Object(f.a)();
 				Object(n.useEffect)(() => {
-					b(Object(C.g)(A, I ? "expanded_module" : "collapses_module"))
-				}, [I]);
-				const [j] = Object(l.a)(d.d), h = Object(o.d)();
-				const [O] = Object(l.a)(d.e);
-				const [H, N] = Object(n.useState)(void 0), [L] = Object(l.a)(d.a);
-				const T = Object(o.e)(v.a) === Z;
-				async function y() {
-					T && N(void 0), h(Object(i.i)(Z))
+					j(Object(C.g)(s, Q ? "expanded_module" : "collapses_module"))
+				}, [Q]);
+				const [h] = Object(l.a)(d.d), O = Object(o.d)();
+				const [H] = Object(l.a)(d.e);
+				const [N, L] = Object(n.useState)(void 0), [T] = Object(l.a)(d.a);
+				const y = Object(o.e)(v.a) === Z;
+				async function k() {
+					y && L(void 0), O(Object(i.i)(Z))
 				}
-				const [k] = Object(l.a)(d.b);
-				const G = Object(n.useRef)(),
-					X = Object(n.useRef)(null),
-					R = D.findIndex(e => e.status === u.a.INITIAL || e.status === u.a.ACTIONED),
-					z = P ? 0 : R;
+				const [G] = Object(l.a)(d.b);
+				const X = Object(n.useRef)(),
+					R = Object(n.useRef)(null),
+					z = p.findIndex(e => e.status === u.a.INITIAL || e.status === u.a.ACTIONED),
+					K = D ? 0 : z;
 				if (Object(n.useEffect)(() => {
-						const e = (null == G ? void 0 : G.current) || X.current;
+						const e = (null == X ? void 0 : X.current) || R.current;
 						(null == e ? void 0 : e.parentNode) && (e.parentNode.scrollTop = (null == e ? void 0 : e.offsetTop) - e.parentNode.offsetTop - 20)
-					}, [G, A, I]), 0 === A.cards.length) return null;
-				const K = () => D.map((e, n) => {
-						if (P && n > 2) return;
-						const o = {
+					}, [X, s, Q]), 0 === s.cards.length) return null;
+				const V = () => p.map((e, t) => {
+						if (D && t > 2) return;
+						const n = {
 							key: e.id,
-							isInNCPControlGroup: P,
-							isNightMode: x,
-							onClose: n => (async function(e, n) {
-								await j({
+							isInNCPControlGroup: D,
+							isNightMode: M,
+							onClose: t => (async function(e, t) {
+								await h({
 									input: {
-										subredditId: t,
+										subredditId: A,
 										cardId: e,
-										action: n
+										action: t
 									}
-								}), b(Object(C.e)(A, e)), h(Object(g.b)(t))
-							})(e.id, n),
-							subredditUrl: null != M ? M : "",
-							progressModule: A,
+								}), j(Object(C.e)(s, e)), O(Object(g.b)(A))
+							})(e.id, t),
+							subredditUrl: null != b ? b : "",
+							progressModule: s,
 							...e
 						};
-						return P ? a.a.createElement(Y, o) : a.a.createElement(Y, F({}, o, {
-							ref: n === z ? G : void 0,
+						return D ? a.a.createElement(Y, n) : a.a.createElement(Y, F({}, n, {
+							ref: t === K ? X : void 0,
 							onActionCard: () => (async function(e) {
-								N(e), b(Object(C.a)(A, e)), y()
+								L(e), j(Object(C.a)(s, e)), k()
 							})(e.id)
 						}))
 					}),
-					V = 0 === (null === (s = A.progress) || void 0 === s ? void 0 : s.done) ? 0 : (null === (E = A.progress) || void 0 === E ? void 0 : E.done) ? A.progress.done / A.progress.total * 100 : void 0,
-					W = A.cards.find(e => e.status === u.a.INITIAL || e.status === u.a.ACTIONED);
+					W = 0 === (null === (E = s.progress) || void 0 === E ? void 0 : E.done) ? 0 : (null === (P = s.progress) || void 0 === P ? void 0 : P.done) ? s.progress.done / s.progress.total * 100 : void 0,
+					q = s.cards.find(e => e.status === u.a.INITIAL || e.status === u.a.ACTIONED);
 				return a.a.createElement(a.a.Fragment, null, a.a.createElement("details", {
-					ref: p,
-					open: I,
+					ref: I,
+					open: Q,
 					className: Object(c.a)(r.a.ncpWidget, {
-						[r.a.og]: P
+						[r.a.og]: D
 					}),
 					onToggle: () => {
 						var e;
-						const t = !!(null === (e = p.current) || void 0 === e ? void 0 : e.open);
-						Q(t), b(t ? Object(C.f)(A) : Object(C.c)(A))
+						const t = !!(null === (e = I.current) || void 0 === e ? void 0 : e.open);
+						x(t), j(t ? Object(C.f)(s) : Object(C.c)(s))
 					}
 				}, a.a.createElement("summary", {
 					className: Object(c.a)(r.a.ncpHeading, {
-						[r.a.v2]: !P
+						[r.a.v2]: !D
 					})
-				}, P ? a.a.createElement("span", {
+				}, D ? a.a.createElement("span", {
 					className: r.a.displayText
-				}, A.displayText) : (() => {
+				}, s.displayText) : (() => {
 					var e, t;
 					return a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
 						className: r.a.moduleText
 					}, a.a.createElement("div", {
 						className: r.a.titleText
-					}, A.displayText), a.a.createElement("div", {
+					}, s.displayText), a.a.createElement("div", {
 						className: r.a.descriptionText
-					}, A.description)), void 0 !== V && a.a.createElement(S, {
+					}, s.description)), void 0 !== W && a.a.createElement(S, {
 						className: r.a.progressCircle,
-						percentage: V,
-						ratioString: `${null===(e=A.progress)||void 0===e?void 0:e.done}/${null===(t=A.progress)||void 0===t?void 0:t.total}`
+						percentage: W,
+						ratioString: `${null===(e=s.progress)||void 0===e?void 0:e.done}/${null===(t=s.progress)||void 0===t?void 0:t.total}`
 					}))
-				})(), I ? a.a.createElement(B.c, {
+				})(), Q ? a.a.createElement(B.c, {
 					className: Object(c.a)(r.a.chevron, {
-						[r.a.v2]: !P
+						[r.a.v2]: !D
 					})
 				}) : a.a.createElement(B.b, {
 					className: Object(c.a)(r.a.chevron, {
-						[r.a.v2]: !P
+						[r.a.v2]: !D
 					})
-				}), !I && a.a.createElement("div", {
+				}), !Q && a.a.createElement("div", {
 					className: Object(c.a)(r.a.dot, {
-						[r.a.v2]: !P
+						[r.a.v2]: !D
 					})
-				})), P ? K() : a.a.createElement("div", {
+				})), D ? V() : a.a.createElement("div", {
 					className: r.a.cardContainer
-				}, K(), !W && a.a.createElement(J, {
-					isLastAvailable: A.isLastAvailable,
+				}, V(), !q && a.a.createElement(J, {
+					isLastAvailable: s.isLastAvailable,
 					onCompleteModule: async function() {
-						const e = A.id;
-						await k({
+						const e = s.id;
+						await G({
 							input: {
-								subredditId: t,
+								subredditId: A,
 								moduleId: e
 							}
-						}), h(Object(g.b)(t))
+						}), O(Object(g.b)(A))
 					},
-					ref: X
-				}))), T && a.a.createElement(U, {
-					onCloseModal: y,
-					onCompleteCard: () => H && async function(e) {
-						await L({
+					ref: R
+				}))), y && a.a.createElement(U, {
+					onCloseModal: k,
+					onCompleteCard: () => N && async function(e) {
+						await T({
 							input: {
-								subredditId: t,
+								subredditId: A,
 								cardId: e
 							}
-						}), b(Object(C.d)(A, e)), h(Object(g.b)(t)), T && y()
-					}(H),
-					onDismissCard: () => H && async function(e) {
-						await O({
+						}), j(Object(C.d)(s, e)), O(Object(g.b)(A)), y && k()
+					}(N),
+					onDismissCard: () => N && async function(e) {
+						await H({
 							input: {
-								subredditId: t,
+								subredditId: A,
 								cardId: e
 							}
-						}), b(Object(C.e)(A, e)), h(Object(g.b)(t)), T && y()
-					}(H),
+						}), j(Object(C.e)(s, e)), O(Object(g.b)(A)), y && k()
+					}(N),
 					withOverlay: !0
 				}))
 			}
@@ -806,18 +816,21 @@
 				o = A("./src/lib/classNames/index.ts"),
 				s = A("./src/reddit/components/ProgressBar/index.m.less"),
 				r = A.n(s);
-			t.a = ({
-				className: e,
-				innerBarClassName: t,
-				percent: A
-			}) => a.a.createElement("div", {
-				className: Object(o.a)(r.a.outerBar, e)
-			}, a.a.createElement("div", {
-				className: Object(o.a)(r.a.innerBar, t),
-				style: {
-					width: `${A.toFixed(2)}%`
-				}
-			}))
+			t.a = e => {
+				let {
+					className: t,
+					innerBarClassName: A,
+					percent: n
+				} = e;
+				return a.a.createElement("div", {
+					className: Object(o.a)(r.a.outerBar, t)
+				}, a.a.createElement("div", {
+					className: Object(o.a)(r.a.innerBar, A),
+					style: {
+						width: `${n.toFixed(2)}%`
+					}
+				}))
+			}
 		},
 		"./src/reddit/controls/Input/ModalInput.tsx": function(e, t, A) {
 			"use strict";
@@ -841,10 +854,11 @@
 			}
 			class d extends a.a.Component {
 				constructor() {
-					super(...arguments), this.handleKeyDown = ({
-						keyCode: e
-					}) => {
-						e === c.a.Escape && this.props.closeModal()
+					super(...arguments), this.handleKeyDown = e => {
+						let {
+							keyCode: t
+						} = e;
+						t === c.a.Escape && this.props.closeModal()
 					}
 				}
 				render() {
@@ -905,19 +919,22 @@
 					return e
 				}).apply(this, arguments)
 			}
-			t.a = ({
-				className: e,
-				...t
-			}) => a.a.createElement("svg", c({
-				xmlns: "http://www.w3.org/2000/svg",
-				width: "20",
-				height: "20",
-				viewBox: "0 0 20 20",
-				className: Object(o.a)(r.a.checkbox, e)
-			}, t), a.a.createElement("path", {
-				fill: "inherit",
-				d: "M1.66666667,3.34755033 L1.66666667,16.6524497 C1.66666667,17.5781756 2.42112363,18.3333333 3.34755033,18.3333333 L16.6524497,18.3333333 C17.5781756,18.3333333 18.3333333,17.5788764 18.3333333,16.6524497 L18.3333333,3.34755033 C18.3333333,2.42182438 17.5788764,1.66666667 16.6524497,1.66666667 L3.34755033,1.66666667 C2.42182438,1.66666667 1.66666667,2.42112363 1.66666667,3.34755033 Z M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z"
-			}))
+			t.a = e => {
+				let {
+					className: t,
+					...A
+				} = e;
+				return a.a.createElement("svg", c({
+					xmlns: "http://www.w3.org/2000/svg",
+					width: "20",
+					height: "20",
+					viewBox: "0 0 20 20",
+					className: Object(o.a)(r.a.checkbox, t)
+				}, A), a.a.createElement("path", {
+					fill: "inherit",
+					d: "M1.66666667,3.34755033 L1.66666667,16.6524497 C1.66666667,17.5781756 2.42112363,18.3333333 3.34755033,18.3333333 L16.6524497,18.3333333 C17.5781756,18.3333333 18.3333333,17.5788764 18.3333333,16.6524497 L18.3333333,3.34755033 C18.3333333,2.42182438 17.5788764,1.66666667 16.6524497,1.66666667 L3.34755033,1.66666667 C2.42182438,1.66666667 1.66666667,2.42112363 1.66666667,3.34755033 Z M0,3.34755033 C0,1.49874933 1.5032506,0 3.34755033,0 L16.6524497,0 C18.5012507,0 20,1.5032506 20,3.34755033 L20,16.6524497 C20,18.5012507 18.4967494,20 16.6524497,20 L3.34755033,20 C1.49874933,20 0,18.4967494 0,16.6524497 L0,3.34755033 Z"
+				}))
+			}
 		},
 		"./src/reddit/icons/svgs/CheckboxSelected/index.tsx": function(e, t, A) {
 			"use strict";
@@ -1319,4 +1336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.8d53351657c634f320a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.7e6d7869fa99cf7cad4f.js.map

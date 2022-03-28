@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.a441e8c36a74f5dc3f08.js
-// Retrieved at 3/28/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.12087477bbe544ffe2c8.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -76,54 +76,58 @@
 							return null
 					}
 				};
-			const g = ({
-				subredditId: e,
-				notificationLevel: t,
-				successCallback: n,
-				undoCallback: s
-			}) => async (o, g, {
-				gqlContext: h
-			}) => {
-				var v, x, C;
-				o(b());
-				const E = (e => {
-						switch (e) {
-							case l.b.FREQUENT:
-								return {
-									isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
-								};
-							case l.b.LOW:
-								return {
-									isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
-								};
-							case l.b.OFF:
-							default:
-								return {
-									isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
-								}
+			const g = e => {
+				let {
+					subredditId: t,
+					notificationLevel: n,
+					successCallback: s,
+					undoCallback: o
+				} = e;
+				return async (e, g, h) => {
+					let {
+						gqlContext: v
+					} = h;
+					var x, C, E;
+					e(b());
+					const _ = (e => {
+							switch (e) {
+								case l.b.FREQUENT:
+									return {
+										isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
+									};
+								case l.b.LOW:
+									return {
+										isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
+									};
+								case l.b.OFF:
+								default:
+									return {
+										isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
+									}
+							}
+						})(n),
+						N = await Object(d.b)(v(), t, _);
+					if ((null === (C = null === (x = N.error) || void 0 === x ? void 0 : x.fields) || void 0 === C ? void 0 : C.length) || function(e) {
+							return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
+						}(N.body) && (null === (E = N.body.data.updateSubredditNotificationSettings.errors) || void 0 === E ? void 0 : E.length)) return e(f()), e(Object(c.f)({
+						kind: u.b.Error,
+						text: i.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
+							hk: "4avFFV"
+						})
+					}));
+					N.ok && (e(Object(a.c)({
+						subredditId: t,
+						notificationLevel: n
+					})), e(m({
+						subredditAboutInfo: {
+							[t]: {
+								notificationLevel: n
+							}
 						}
-					})(t),
-					_ = await Object(d.b)(h(), e, E);
-				if ((null === (x = null === (v = _.error) || void 0 === v ? void 0 : v.fields) || void 0 === x ? void 0 : x.length) || function(e) {
-						return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
-					}(_.body) && (null === (C = _.body.data.updateSubredditNotificationSettings.errors) || void 0 === C ? void 0 : C.length)) return o(f()), o(Object(c.f)({
-					kind: u.b.Error,
-					text: i.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
-						hk: "4avFFV"
-					})
-				}));
-				_.ok && (o(Object(a.c)({
-					subredditId: e,
-					notificationLevel: t
-				})), o(m({
-					subredditAboutInfo: {
-						[e]: {
-							notificationLevel: t
-						}
-					}
-				})), n && n(), o(s ? Object(c.f)(Object(c.e)(p(t), u.b.Undo, i.fbt._("Undo", null, {
-					hk: "46OwLP"
-				}), Object(r.i)(e, s))) : Object(c.f)(Object(c.e)(p(t), u.b.SuccessCommunityGreen))))
+					})), s && s(), e(o ? Object(c.f)(Object(c.e)(p(n), u.b.Undo, i.fbt._("Undo", null, {
+						hk: "46OwLP"
+					}), Object(r.i)(t, o))) : Object(c.f)(Object(c.e)(p(n), u.b.SuccessCommunityGreen))))
+				}
 			}
 		},
 		"./src/reddit/components/StructuredStyles/BladeDrawerController/index.m.less": function(e, t, n) {
@@ -173,19 +177,22 @@
 				C = n.n(x);
 			const {
 				fbt: E
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), _ = u.a.div("BladeContainer", C.a), N = u.a.wrapped(p.a, "CloseIcon", C.a), O = u.a.div("LoadingTitleContainer", C.a), y = u.a.div("LoadingNavContainer", C.a), k = u.a.div("ShortLoadingNav", C.a), j = u.a.wrapped(f.a, "ThemedChevron", C.a), S = ({
-				...e
-			}) => r.a.createElement(_, null, r.a.createElement(N, null), r.a.createElement(b.k, null, r.a.createElement(b.p, null, E._("Back to mod tools", null, {
-				hk: "1YCI0W"
-			})), r.a.createElement(b.o, null, r.a.createElement(O, null, r.a.createElement("div", {
-				className: Object(l.a)(C.a.LoadingTitle, e.isLoading && C.a.loading)
-			})), r.a.createElement(y, null, r.a.createElement("div", {
-				className: Object(l.a)(C.a.LoadingNav, e.isLoading && C.a.loading)
-			}), r.a.createElement(j, null)), r.a.createElement(y, null, r.a.createElement(k, null), r.a.createElement(j, null)), r.a.createElement(y, null, r.a.createElement("div", {
-				className: Object(l.a)(C.a.LoadingNav, e.isLoading && C.a.loading)
-			}), r.a.createElement(j, null)), r.a.createElement(y, null, r.a.createElement(k, null), r.a.createElement(j, null)), r.a.createElement(y, null, r.a.createElement("div", {
-				className: Object(l.a)(C.a.LoadingNav, e.isLoading && C.a.loading)
-			}), r.a.createElement(j, null))))), L = Object(d.a)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), _ = u.a.div("BladeContainer", C.a), N = u.a.wrapped(p.a, "CloseIcon", C.a), O = u.a.div("LoadingTitleContainer", C.a), y = u.a.div("LoadingNavContainer", C.a), k = u.a.div("ShortLoadingNav", C.a), j = u.a.wrapped(f.a, "ThemedChevron", C.a), S = e => {
+				let {
+					...t
+				} = e;
+				return r.a.createElement(_, null, r.a.createElement(N, null), r.a.createElement(b.k, null, r.a.createElement(b.p, null, E._("Back to mod tools", null, {
+					hk: "1YCI0W"
+				})), r.a.createElement(b.o, null, r.a.createElement(O, null, r.a.createElement("div", {
+					className: Object(l.a)(C.a.LoadingTitle, t.isLoading && C.a.loading)
+				})), r.a.createElement(y, null, r.a.createElement("div", {
+					className: Object(l.a)(C.a.LoadingNav, t.isLoading && C.a.loading)
+				}), r.a.createElement(j, null)), r.a.createElement(y, null, r.a.createElement(k, null), r.a.createElement(j, null)), r.a.createElement(y, null, r.a.createElement("div", {
+					className: Object(l.a)(C.a.LoadingNav, t.isLoading && C.a.loading)
+				}), r.a.createElement(j, null)), r.a.createElement(y, null, r.a.createElement(k, null), r.a.createElement(j, null)), r.a.createElement(y, null, r.a.createElement("div", {
+					className: Object(l.a)(C.a.LoadingNav, t.isLoading && C.a.loading)
+				}), r.a.createElement(j, null)))))
+			}, L = Object(d.a)({
 				getComponent: () => Object(m.a)(() => Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("StructuredStyles")]).then(n.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
 				ErrorComponent: () => r.a.createElement(S, {
 					gradientType: "posts",
@@ -355,19 +362,22 @@
 				x = l.a.h3("Title", g.a),
 				C = l.a.div("TabNavContainer", g.a),
 				E = l.a.div("Tabs", g.a),
-				_ = l.a.wrapped(({
-					active: e,
-					children: t,
-					enabled: n,
-					...i
-				}) => o.a.createElement(b.a, h({}, i, {
-					"aria-selected": e,
-					className: Object(c.a)(i.className, {
-						[g.a.mIsActive]: e,
-						[g.a.mIsEnabled]: !1 !== n
-					}),
-					role: "tab"
-				}), t), "Tab", g.a),
+				_ = l.a.wrapped(e => {
+					let {
+						active: t,
+						children: n,
+						enabled: i,
+						...s
+					} = e;
+					return o.a.createElement(b.a, h({}, s, {
+						"aria-selected": t,
+						className: Object(c.a)(s.className, {
+							[g.a.mIsActive]: t,
+							[g.a.mIsEnabled]: !1 !== i
+						}),
+						role: "tab"
+					}), n)
+				}, "Tab", g.a),
 				N = e => {
 					switch (e) {
 						case i.GEAR:
@@ -747,4 +757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.a441e8c36a74f5dc3f08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.12087477bbe544ffe2c8.js.map

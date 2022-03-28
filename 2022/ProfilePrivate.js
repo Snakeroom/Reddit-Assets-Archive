@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.d2b0b79fc55cac02543f.js
-// Retrieved at 3/24/2022, 3:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.1e1d7f3c096798df47a1.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./src/reddit/actions/pages/profilePrivate/index.ts": function(e, t, i) {
@@ -916,19 +916,22 @@
 					e && e.scroll(0, 0)
 				} else window.scroll(0, 0)
 			};
-			var g = ({
-					className: e,
-					isOverlay: t,
-					style: i
-				}) => a.a.createElement("div", {
-					className: Object(s.a)(e, u.a.container),
-					style: i
-				}, a.a.createElement(c.l, {
-					className: u.a.button,
-					onClick: () => h(t)
-				}, p._("Back to Top", null, {
-					hk: "YjBtV"
-				}))),
+			var g = e => {
+					let {
+						className: t,
+						isOverlay: i,
+						style: r
+					} = e;
+					return a.a.createElement("div", {
+						className: Object(s.a)(t, u.a.container),
+						style: r
+					}, a.a.createElement(c.l, {
+						className: u.a.button,
+						onClick: () => h(i)
+					}, p._("Back to Top", null, {
+						hk: "YjBtV"
+					})))
+				},
 				b = i("./src/reddit/components/SidebarFooter/index.tsx"),
 				y = i("./src/reddit/constants/componentSizes.ts"),
 				v = i("./src/reddit/contexts/PageLayer/index.tsx"),
@@ -950,28 +953,34 @@
 				x = k + 152 + 16,
 				P = x + I + 8,
 				O = w.a.div("Container", C.a),
-				E = w.a.wrapped(({
-					className: e,
-					isOverlay: t,
-					...i
-				}) => a.a.createElement(g, S({
-					className: e,
-					isOverlay: t,
-					style: {
-						top: `calc(100vh - ${t?k:8}px)`
-					}
-				}, i)), "BackToTop", C.a),
-				j = ({
-					children: e,
-					className: t,
-					isFakeOverlay: i,
-					isSticky: r
-				}) => a.a.createElement("div", {
-					className: Object(s.a)(t, {
-						[C.a.StickyStyles]: r && !i,
-						[C.a.StickyStylesFakeOverlay]: !!i
-					})
-				}, e);
+				E = w.a.wrapped(e => {
+					let {
+						className: t,
+						isOverlay: i,
+						...s
+					} = e;
+					return a.a.createElement(g, S({
+						className: t,
+						isOverlay: i,
+						style: {
+							top: `calc(100vh - ${i?k:8}px)`
+						}
+					}, s))
+				}, "BackToTop", C.a),
+				j = e => {
+					let {
+						children: t,
+						className: i,
+						isFakeOverlay: r,
+						isSticky: n
+					} = e;
+					return a.a.createElement("div", {
+						className: Object(s.a)(i, {
+							[C.a.StickyStyles]: n && !r,
+							[C.a.StickyStylesFakeOverlay]: !!r
+						})
+					}, t)
+				};
 			class _ extends o.Component {
 				constructor(e) {
 					super(e), this.containerEl = null, this.windowHeight = 1 / 0, this.getStickyContents = () => ({
@@ -1516,19 +1525,20 @@
 					}))
 				}
 			}
-			t.b = ({
-				className: e,
-				...t
-			}) => {
-				const i = Object(a.a)(g.a.row, e, {
-					[g.a.mIsInteractive]: !t.noHover,
-					[g.a.mIsSelected]: t.isSelected,
-					[g.a.topics]: t.isTopicsStyle,
-					[g.a.modNotes]: t.isModNotesStyle
+			t.b = e => {
+				let {
+					className: t,
+					...i
+				} = e;
+				const s = Object(a.a)(g.a.row, t, {
+					[g.a.mIsInteractive]: !i.noHover,
+					[g.a.mIsSelected]: i.isSelected,
+					[g.a.topics]: i.isTopicsStyle,
+					[g.a.modNotes]: i.isModNotesStyle
 				});
 				return o.a.createElement(y, b({
-					className: i
-				}, t))
+					className: s
+				}, i))
 			}
 		},
 		"./src/reddit/controls/Dropdown/row.m.less": function(e, t, i) {
@@ -1588,11 +1598,14 @@
 			var s = i("./src/lib/classNames/index.ts"),
 				r = i("./src/reddit/helpers/styles/mixins/loading.m.less"),
 				n = i.n(r);
-			const o = ({
-					isLoading: e
-				}) => Object(s.a)(n.a.loadingBackground, {
-					[n.a["m-loading"]]: e
-				}),
+			const o = e => {
+					let {
+						isLoading: t
+					} = e;
+					return Object(s.a)(n.a.loadingBackground, {
+						[n.a["m-loading"]]: t
+					})
+				},
 				a = e => Object(s.a)(n.a.loadingBar, o(e))
 		},
 		"./src/reddit/helpers/trackers/widgets.ts": function(e, t, i) {
@@ -2419,88 +2432,104 @@
 				}
 			}, j.a.notVoted;
 			var T;
-			const L = Object(P.a)((e, {
-					listingKey: t
-				}) => {
-					const i = e.posts.models;
+			const L = Object(P.a)((e, t) => {
+					let {
+						listingKey: i
+					} = t;
+					const s = e.posts.models;
 					return N(e, {
-						listingKey: t
+						listingKey: i
 					}).filter(e => {
 						if (Object(I.a)(e)) return !0; {
-							const t = i[e];
+							const t = s[e];
 							return t && !t.hidden
 						}
 					})
 				}),
-				N = Object(P.a)((e, {
-					listingKey: t
-				}) => {
-					const i = e.pages.profileOverview.chrono.ids[t];
-					return i ? [...i] : []
+				N = Object(P.a)((e, t) => {
+					let {
+						listingKey: i
+					} = t;
+					const s = e.pages.profileOverview.chrono.ids[i];
+					return s ? [...s] : []
 				}),
-				R = Object(P.a)((e, {
-					listingKey: t
-				}) => {
+				R = Object(P.a)((e, t) => {
+					let {
+						listingKey: i
+					} = t;
 					return L(e, {
-						listingKey: t
+						listingKey: i
 					}).reduce((t, i) => {
 						const s = Object(I.a)(i) ? e.features.comments.models[i].postId : i;
 						return t[i] = s, t
 					}, {})
 				}),
-				M = (Object(P.a)((e, {
-					listingKey: t
-				}) => {
-					const i = e.posts.models;
+				M = (Object(P.a)((e, t) => {
+					let {
+						listingKey: i
+					} = t;
+					const s = e.posts.models;
 					return M(e, {
-						listingKey: t
+						listingKey: i
 					}).filter(e => {
-						const t = i[e];
+						const t = s[e];
 						return t && !t.hidden
 					})
-				}), Object(P.a)((e, {
-					listingKey: t
-				}) => {
+				}), Object(P.a)((e, t) => {
+					let {
+						listingKey: i
+					} = t;
 					return L(e, {
-						listingKey: t
+						listingKey: i
 					}).map(t => Object(I.a)(t) ? e.features.comments.models[t].postId : t)
 				})),
-				A = Object(P.a)((e, {
-					listingKey: t
-				}) => {
-					const i = e.posts.models,
-						s = M(e, {
-							listingKey: t
+				A = Object(P.a)((e, t) => {
+					let {
+						listingKey: i
+					} = t;
+					const s = e.posts.models,
+						r = M(e, {
+							listingKey: i
 						}),
-						r = {};
-					return s.forEach(e => r[e] = i[e]), r
+						n = {};
+					return r.forEach(e => n[e] = s[e]), n
 				}),
-				F = Object(P.a)((e, {
-					listingKey: t
-				}) => {
-					const i = e.features.comments.models,
-						s = L(e, {
-							listingKey: t
+				F = Object(P.a)((e, t) => {
+					let {
+						listingKey: i
+					} = t;
+					const s = e.features.comments.models,
+						r = L(e, {
+							listingKey: i
 						}),
-						r = {};
-					return s.forEach(e => !!Object(I.a)(e) && (r[e] = i[e])), r
+						n = {};
+					return r.forEach(e => !!Object(I.a)(e) && (n[e] = s[e])), n
 				});
 			var G = i("./src/reddit/selectors/subreddit.ts"),
 				B = i("./src/reddit/selectors/tracking.ts"),
 				K = i("./src/reddit/selectors/user.ts");
 			const D = (e, t) => (e, t, i) => Object(I.a)(e) ? 120 : 47,
 				U = (Object(S.u)(), {
-					apiError: (e, {
-						listingKey: t
-					}) => e.pages.profileOverview.chrono.api.error[t],
-					apiPending: (e, {
-						listingKey: t
-					}) => e.pages.profileOverview.chrono.api.pending[t],
+					apiError: (e, t) => {
+						let {
+							listingKey: i
+						} = t;
+						return e.pages.profileOverview.chrono.api.error[i]
+					},
+					apiPending: (e, t) => {
+						let {
+							listingKey: i
+						} = t;
+						return e.pages.profileOverview.chrono.api.pending[i]
+					},
 					currentUser: K.k,
 					layout: S.R,
-					loadMore: (e, {
-						listingKey: t
-					}) => e.pages.profileOverview.chrono.loadMore[t],
+					loadMore: (e, t) => {
+						let {
+							listingKey: i
+						} = t;
+						return e.pages.profileOverview.chrono.loadMore[i]
+					},
 					subredditsById: G.Z,
 					viewportDataLoaded: B.a,
 					commentsById: F,
@@ -2531,16 +2560,23 @@
 			var H = i("./src/reddit/featureFlags/index.ts"),
 				V = i("./src/reddit/actions/pages/profilePrivate/constants.ts"),
 				z = i("./src/reddit/models/Profile/index.ts");
-			const q = (e, {
-					listingKey: t
-				}) => e.profilePrivatePage.api.pending[t],
-				Z = (e, {
-					listingKey: t
-				}) => e.profilePrivatePage.api.error[t],
-				J = Object(P.a)((e, {
-					listingKey: t
-				}) => {
-					return (e.profilePrivatePage.ids[t] || []).reduce((t, i) => {
+			const q = (e, t) => {
+					let {
+						listingKey: i
+					} = t;
+					return e.profilePrivatePage.api.pending[i]
+				},
+				Z = (e, t) => {
+					let {
+						listingKey: i
+					} = t;
+					return e.profilePrivatePage.api.error[i]
+				},
+				J = Object(P.a)((e, t) => {
+					let {
+						listingKey: i
+					} = t;
+					return (e.profilePrivatePage.ids[i] || []).reduce((t, i) => {
 						const s = Object(I.a)(i) ? e.features.comments.models[i].postId : i;
 						return t[i] = s, t
 					}, {})
@@ -2551,13 +2587,14 @@
 					apiError: Z,
 					apiPending: q,
 					layout: S.R,
-					loadMore: (e, {
-						listingKey: t
-					}) => {
-						if (!e.profilePrivatePage.pageInfo || !e.profilePrivatePage.pageInfo[t] || !e.profilePrivatePage.pageInfo[t].hasNextPage) return null;
-						const i = e.profilePrivatePage.ids[t];
+					loadMore: (e, t) => {
+						let {
+							listingKey: i
+						} = t;
+						if (!e.profilePrivatePage.pageInfo || !e.profilePrivatePage.pageInfo[i] || !e.profilePrivatePage.pageInfo[i].hasNextPage) return null;
+						const s = e.profilePrivatePage.ids[i];
 						return {
-							token: i[i.length - 1],
+							token: s[s.length - 1],
 							dist: V.h
 						}
 					},
@@ -2569,18 +2606,24 @@
 					...Y,
 					currentUser: K.k,
 					commentsById: e => e.features.comments.models,
-					itemIds: (e, {
-						listingKey: t
-					}) => -1 === t.indexOf(z.b.Saved) && -1 === t.indexOf(z.b.ReceivedGildings) && -1 === t.indexOf(z.b.GivenGildings) ? [] : e.profilePrivatePage.ids[t] || [],
+					itemIds: (e, t) => {
+						let {
+							listingKey: i
+						} = t;
+						return -1 === i.indexOf(z.b.Saved) && -1 === i.indexOf(z.b.ReceivedGildings) && -1 === i.indexOf(z.b.GivenGildings) ? [] : e.profilePrivatePage.ids[i] || []
+					},
 					itemIdToPostId: J,
 					estimateItemHeight: D
 				}),
 				ee = Object(o.c)({
 					...Y,
 					measureScrollFPS: H.d.measureScrollFPS,
-					postIds: (e, {
-						listingKey: t
-					}) => t.indexOf(z.b.Saved) > -1 || t.indexOf(z.b.ReceivedGildings) > -1 || t.indexOf(z.b.GivenGildings) > -1 ? [] : e.profilePrivatePage.ids[t] || [],
+					postIds: (e, t) => {
+						let {
+							listingKey: i
+						} = t;
+						return i.indexOf(z.b.Saved) > -1 || i.indexOf(z.b.ReceivedGildings) > -1 || i.indexOf(z.b.GivenGildings) > -1 ? [] : e.profilePrivatePage.ids[i] || []
+					},
 					postListPlaceholderComponent: () => C.a
 				}),
 				te = e => ({
@@ -2683,9 +2726,12 @@
 			i.d(t, "a", (function() {
 				return s
 			}));
-			const s = (e, {
-				listingKey: t
-			}) => e.tracking.viewportDataLoaded[t]
+			const s = (e, t) => {
+				let {
+					listingKey: i
+				} = t;
+				return e.tracking.viewportDataLoaded[i]
+			}
 		},
 		"./src/redditGQL/operations/ProfileDownvoted.json": function(e) {
 			e.exports = JSON.parse('{"id":"4ff5c567f35a"}')
@@ -2707,4 +2753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.d2b0b79fc55cac02543f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.1e1d7f3c096798df47a1.js.map

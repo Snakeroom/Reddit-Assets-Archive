@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3b3e3e8638269a2b0d23.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.eaa9bb1d4625efcfd25b.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -620,7 +620,9 @@
 					})
 				};
 
-			function c(e, t = !1, n = !1) {
+			function c(e) {
+				let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+					n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 				const c = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
@@ -768,30 +770,33 @@
 						clickCloseModalEvent: o
 					} = await n.e("givePremiumTrackers").then(n.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
 					Object(f.a)(o()(r))
-				}, _ = Object(r.a)(b.K), y = ({
-					awardId: e,
-					correlationId: t,
-					thingId: n
-				}) => async (r, o) => {
-					const a = o(),
-						c = e ? Object(u.a)(a, e) : void 0;
-					r(_({
-						award: c && c.isEnabled ? c : void 0,
-						thingId: n,
-						correlationId: t
-					})), r(Object(l.h)(i.a.GOLD_GILD_MODAL));
-					const f = Object(p.I)(a, {
-						thingId: n
-					});
-					let b = null;
-					if (f) b = f.id;
-					else if (Object(s.a)(n)) {
-						const e = Object(m.G)(a, {
-							postId: n
+				}, _ = Object(r.a)(b.K), y = e => {
+					let {
+						awardId: t,
+						correlationId: n,
+						thingId: r
+					} = e;
+					return async (e, o) => {
+						const a = o(),
+							c = t ? Object(u.a)(a, t) : void 0;
+						e(_({
+							award: c && c.isEnabled ? c : void 0,
+							thingId: r,
+							correlationId: n
+						})), e(Object(l.h)(i.a.GOLD_GILD_MODAL));
+						const f = Object(p.I)(a, {
+							thingId: r
 						});
-						e && (b = e.belongsTo.id)
+						let b = null;
+						if (f) b = f.id;
+						else if (Object(s.a)(r)) {
+							const e = Object(m.G)(a, {
+								postId: r
+							});
+							e && (b = e.belongsTo.id)
+						}
+						b && Object(d.a)(b, r)
 					}
-					b && Object(d.a)(b, n)
 				}, w = Object(r.a)(b.e), x = Object(r.a)(b.J), O = () => async (e, t) => {
 					const r = t(),
 						s = Object(a.d)(r);
@@ -845,12 +850,13 @@
 				b = Object(o.a)(f),
 				h = "RANDOM_AVATAR_LOADED",
 				v = Object(o.a)(h),
-				g = (e, t, n) => async (r, o, {
-					apiContext: s
-				}) => {
-					var u, f, b, h;
-					const v = Object(m.b)(o()),
-						g = await (async (e, t, n, r, o) => Object(c.a)(Object(d.a)(e, [l.a]), {
+				g = (e, t, n) => async (r, o, s) => {
+					let {
+						apiContext: u
+					} = s;
+					var f, b, h, v;
+					const g = Object(m.b)(o()),
+						_ = await (async (e, t, n, r, o) => Object(c.a)(Object(d.a)(e, [l.a]), {
 							endpoint: `${i.a.snoovatarUrl}/api/snoovatar?skip_telemetry=true`,
 							method: a.jb.POST,
 							headers: {
@@ -862,35 +868,37 @@
 								styles: n,
 								...r
 							}
-						}))(s(), e, t, n, v);
-					if (!g.ok) throw new Error("User avatar failed to save");
-					return r(Object(p.A)(g.body)), {
-						accountIcon: null === (f = null === (u = g.body) || void 0 === u ? void 0 : u.avatar) || void 0 === f ? void 0 : f.headshot_image_url,
-						fullBodySnoovatar: null === (h = null === (b = g.body) || void 0 === b ? void 0 : b.avatar) || void 0 === h ? void 0 : h.image_url
+						}))(u(), e, t, n, g);
+					if (!_.ok) throw new Error("User avatar failed to save");
+					return r(Object(p.A)(_.body)), {
+						accountIcon: null === (b = null === (f = _.body) || void 0 === f ? void 0 : f.avatar) || void 0 === b ? void 0 : b.headshot_image_url,
+						fullBodySnoovatar: null === (v = null === (h = _.body) || void 0 === h ? void 0 : h.avatar) || void 0 === v ? void 0 : v.image_url
 					}
-				}, _ = () => async (e, t, {
-					apiContext: n
-				}) => {
+				}, _ = () => async (e, t, n) => {
+					let {
+						apiContext: r
+					} = n;
 					try {
 						const t = await (async e => Object(c.a)(Object(d.a)(e, [l.a]), {
 							endpoint: `${i.a.snoovatarUrl}/api/account`,
 							method: a.jb.GET
-						}))(n());
+						}))(r());
 						t.ok && e(b(t.body))
-					} catch (r) {
-						s.c.captureException(r)
+					} catch (o) {
+						s.c.captureException(o)
 					}
-				}, y = () => async (e, t, {
-					apiContext: n
-				}) => {
+				}, y = () => async (e, t, n) => {
+					let {
+						apiContext: r
+					} = n;
 					try {
 						const t = await (async e => Object(c.a)(Object(d.a)(e, [l.a]), {
 							endpoint: `${i.a.snoovatarUrl}/api/snoovatars/random:byId`,
 							method: a.jb.GET
-						}))(n());
+						}))(r());
 						t.ok && e(v(t.body))
-					} catch (r) {
-						s.c.captureException(r)
+					} catch (o) {
+						s.c.captureException(o)
 					}
 				}
 		},
@@ -915,7 +923,8 @@
 				})), await e(Object(o.g)(i.a.SNOOVATAR_MODAL))
 			};
 
-			function u(e = {}) {
+			function u() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
 				return async (t, n) => {
 					const {
 						clickSource: s,
@@ -996,25 +1005,26 @@
 					return e
 				}).apply(this, arguments)
 			}
-			t.a = o.a.memo((function({
-				visible: e,
-				...t
-			}) {
-				const [n, i] = Object(r.useState)(e);
+			t.a = o.a.memo((function(e) {
+				let {
+					visible: t,
+					...n
+				} = e;
+				const [i, d] = Object(r.useState)(t);
 				return Object(r.useEffect)(() => {
-					let t = window.setTimeout(() => {
-						t = void 0, i(e)
+					let e = window.setTimeout(() => {
+						e = void 0, d(t)
 					}, 0);
 					return () => {
-						t && window.clearTimeout(t), i(!1)
+						e && window.clearTimeout(e), d(!1)
 					}
-				}, [e]), e ? o.a.createElement("div", c({
-					className: Object(s.a)(a.a.tooltip, t.className, {
-						[a.a.visible]: n
+				}, [t]), t ? o.a.createElement("div", c({
+					className: Object(s.a)(a.a.tooltip, n.className, {
+						[a.a.visible]: i
 					})
-				}, t.popperProps), t.children, n && o.a.createElement("div", c({
+				}, n.popperProps), n.children, i && o.a.createElement("div", c({
 					className: a.a.arrow
-				}, t.arrowProps))) : null
+				}, n.arrowProps))) : null
 			}))
 		},
 		"./src/reddit/components/InfoTextTooltip/hooked.m.less": function(e, t, n) {
@@ -1154,14 +1164,17 @@
 				P = o.a.wrapped(a.l, "PrimaryButton", u.a),
 				T = o.a.wrapped(a.o, "CancelButton", u.a),
 				M = o.a.wrapped(a.r, "RemoveButton", u.a),
-				A = ({
-					className: e,
-					...t
-				}) => i.a.createElement(a.t, m({
-					kind: a.b.Button,
-					priority: a.c.Primary,
-					className: Object(r.a)(u.a.ConfirmButton, e)
-				}, t))
+				A = e => {
+					let {
+						className: t,
+						...n
+					} = e;
+					return i.a.createElement(a.t, m({
+						kind: a.b.Button,
+						priority: a.c.Primary,
+						className: Object(r.a)(u.a.ConfirmButton, t)
+					}, n))
+				}
 		},
 		"./src/reddit/components/NativeBannerAd/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1247,17 +1260,26 @@
 				y = n("./src/reddit/components/PostContainer/index.m.less"),
 				w = n.n(y);
 			const x = Object(p.a)(() => Object(s.c)({
-				basePixelMetadata: Object(g.a)((e, {
-					post: t
-				}) => Object(b.b)(e, t.id)),
-				clickTrackingId: (e, {
-					post: t
-				}) => t.id,
-				imageGalleryCurrentItem: (e, {
-					post: t
-				}) => Object(b.i)(e, {
-					postId: t.id
+				basePixelMetadata: Object(g.a)((e, t) => {
+					let {
+						post: n
+					} = t;
+					return Object(b.b)(e, n.id)
 				}),
+				clickTrackingId: (e, t) => {
+					let {
+						post: n
+					} = t;
+					return n.id
+				},
+				imageGalleryCurrentItem: (e, t) => {
+					let {
+						post: n
+					} = t;
+					return Object(b.i)(e, {
+						postId: n.id
+					})
+				},
 				pageType: e => Object(h.d)(e).pageType
 			}));
 			class O extends o.a.Component {
@@ -1447,78 +1469,88 @@
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall", e[e.Metadata = 5] = "Metadata"
 			}(A || (A = {}));
-			const q = ({
-					size: e,
-					titleColor: t,
-					titleType: n,
-					nowrap: r,
-					children: o,
-					className: i,
-					redditStyle: a
-				}) => {
-					const c = Object(W.a)();
-					let d = "";
-					switch (e) {
+			const q = e => {
+					let {
+						size: t,
+						titleColor: n,
+						titleType: r,
+						nowrap: o,
+						children: i,
+						className: a,
+						redditStyle: c
+					} = e;
+					const d = Object(W.a)();
+					let u = "";
+					switch (t) {
 						case A.ExtraLarge:
-							d = D.a.ExtraLarge;
+							u = D.a.ExtraLarge;
 							break;
 						case A.Large:
-							d = D.a.Large;
+							u = D.a.Large;
 							break;
 						case A.Medium:
-							d = D.a.Medium;
+							u = D.a.Medium;
 							break;
 						case A.Small:
-							d = D.a.Small;
+							u = D.a.Small;
 							break;
 						case A.ExtraSmall:
-							d = D.a.ExtraSmall;
+							u = D.a.ExtraSmall;
 							break;
 						case A.Metadata:
-							d = D.a.Metadata
+							u = D.a.Metadata
 					}
 					return s.a.createElement("div", {
-						className: Object(l.a)(D.a.Title, i, d, {
-							[D.a.isNoWrap]: r
+						className: Object(l.a)(D.a.Title, a, u, {
+							[D.a.isNoWrap]: o
 						}),
 						style: {
-							"--posttitletextcolor": t || Object(C.a)({
-								redditStyle: a,
-								theme: c
+							"--posttitletextcolor": n || Object(C.a)({
+								redditStyle: c,
+								theme: d
 							}).titleText
 						}
-					}, n ? s.a.createElement(R.b, {
-						type: n
-					}, o) : o)
+					}, r ? s.a.createElement(R.b, {
+						type: r
+					}, i) : i)
 				},
-				K = ({
-					className: e,
-					disableVisited: t,
-					titleColor: n,
-					children: r,
-					...o
-				}) => s.a.createElement(a.a, H({}, o, {
-					className: Object(l.a)(e, D.a.styledLink, {
-						[D.a.isVisitedEnabled]: !t
-					})
-				}), r),
-				Y = ({
-					disableVisited: e,
-					nowrap: t,
-					className: n,
-					children: r
-				}) => s.a.createElement("div", {
-					className: Object(l.a)(D.a.titleContainer, n, {
-						[D.a.isNoWrap]: t,
-						[D.a.isVisitedEnabled]: !e
-					})
-				}, r),
+				K = e => {
+					let {
+						className: t,
+						disableVisited: n,
+						titleColor: r,
+						children: o,
+						...i
+					} = e;
+					return s.a.createElement(a.a, H({}, i, {
+						className: Object(l.a)(t, D.a.styledLink, {
+							[D.a.isVisitedEnabled]: !n
+						})
+					}), o)
+				},
+				Y = e => {
+					let {
+						disableVisited: t,
+						nowrap: n,
+						className: r,
+						children: o
+					} = e;
+					return s.a.createElement("div", {
+						className: Object(l.a)(D.a.titleContainer, r, {
+							[D.a.isNoWrap]: n,
+							[D.a.isVisitedEnabled]: !t
+						})
+					}, o)
+				},
 				Q = Object(c.c)({
-					flairPosition: (e, {
-						pageLayer: t
-					}) => Object(m.q)(e, {
-						pageLayer: t
-					}),
+					flairPosition: (e, t) => {
+						let {
+							pageLayer: n
+						} = t;
+						return Object(m.q)(e, {
+							pageLayer: n
+						})
+					},
 					shouldOpenPostInNewTab: B.ib
 				}),
 				X = e => {
@@ -1831,9 +1863,12 @@
 				L = n.n(R);
 			const B = m.a.wrapped(d.d, "PostTopMeta", L.a),
 				F = m.a.div("BannerAdContainer", L.a),
-				D = ({
-					children: e
-				}) => s.a.createElement("div", null, e),
+				D = e => {
+					let {
+						children: t
+					} = e;
+					return s.a.createElement("div", null, t)
+				},
 				U = m.a.div("PromotedPostContainer", L.a),
 				G = m.a.wrapped(E.a, "OutboundLinkIcon", L.a),
 				V = m.a.div("SourceLinkWrapper", L.a),
@@ -1967,10 +2002,11 @@
 			}
 			class m extends o.a.Component {
 				constructor() {
-					super(...arguments), this.handleKeyDown = ({
-						keyCode: e
-					}) => {
-						e === c.a.Escape && this.props.closeModal()
+					super(...arguments), this.handleKeyDown = e => {
+						let {
+							keyCode: t
+						} = e;
+						t === c.a.Escape && this.props.closeModal()
 					}
 				}
 				render() {
@@ -2421,25 +2457,28 @@
 					action: "click",
 					noun: "close"
 				}),
-				D = ({
-					award: e,
-					awardeeKarmaEarned: t,
-					awarderKarmaEarned: n,
-					numberCoins: r,
-					thingId: o
-				}) => s => ({
-					...u(s, o),
-					source: "give_gold",
-					action: "view",
-					noun: "karma_success",
-					goldPurchase: {
-						contentType: Object(a.a)(o) ? "comment" : "post",
-						awardeeKarmaEarned: t,
-						awarderKarmaEarned: n,
-						numberCoins: r,
-						...l(e)
-					}
-				}),
+				D = e => {
+					let {
+						award: t,
+						awardeeKarmaEarned: n,
+						awarderKarmaEarned: r,
+						numberCoins: o,
+						thingId: s
+					} = e;
+					return e => ({
+						...u(e, s),
+						source: "give_gold",
+						action: "view",
+						noun: "karma_success",
+						goldPurchase: {
+							contentType: Object(a.a)(s) ? "comment" : "post",
+							awardeeKarmaEarned: n,
+							awarderKarmaEarned: r,
+							numberCoins: o,
+							...l(t)
+						}
+					})
+				},
 				U = e => t => ({
 					...u(t),
 					source: "give_gold",
@@ -2998,7 +3037,9 @@
 			const s = {
 				status: r.NotFetched
 			};
-			t.b = (e = s, t) => {
+			t.b = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s,
+					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case o.a:
 						if (e.status === r.Fetched && e.data.stripe && e.data.stripe.sources) {
@@ -3157,7 +3198,9 @@
 					userOwnedBadges: e.userOwnedBadges.map(t => e.badges[t]).filter(Boolean)
 				}
 			}
-			t.b = (e = d, t) => {
+			t.b = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : d,
+					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case s.a: {
 						const {
@@ -3242,7 +3285,9 @@
 				capabilities: [r.PREMIUM],
 				hasActiveClosetSubscription: !1
 			};
-			var c = (e = a, t) => {
+			var c = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : a,
+					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case i.b:
 						return {
@@ -3285,55 +3330,61 @@
 						}
 					}), t
 				};
-			var f = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
-				b = n("./src/reddit/actions/modal.ts"),
-				h = n("./src/reddit/constants/modals.ts");
-			var v = (e = null, t) => {
+
+			function f(e) {
+				if (!e) return d;
+				const t = d;
+				return e.forEach(e => {
+					const {
+						startsAt: n,
+						endsAt: r,
+						webAssetUrls: o,
+						tags: s
+					} = e, i = n && new Date(n) <= new Date, a = !!r && new Date(r) < new Date, c = !!i && !a, d = s.includes(m);
+					if (s && s.includes(l) && !d) {
+						const {
+							text: n,
+							id: r
+						} = e, i = o || null, a = p(s);
+						t && (t.quickCreateV1 = {
+							...a,
+							id: r,
+							text: n,
+							active: c && !!i,
+							webAssetUrls: i
+						})
+					}
+					if (s && s.includes(u) && !d) {
+						const e = o || null;
+						t && (t.marketingEvent = {
+							active: c && !!e,
+							assetUrls: e
+						})
+					}
+				}), t
+			}
+			var b = n("./src/reddit/actions/goldPurchaseModals/constants.ts"),
+				h = n("./src/reddit/actions/modal.ts"),
+				v = n("./src/reddit/constants/modals.ts");
+			var g = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
+					t = arguments.length > 1 ? arguments[1] : void 0;
 				var n;
 				switch (t.type) {
-					case f.s:
+					case b.s:
 						const {
 							avatarMarketingEvents: r
 						} = t.payload;
-						return r ? function(e) {
-							if (!e) return d;
-							const t = d;
-							return e.forEach(e => {
-								const {
-									startsAt: n,
-									endsAt: r,
-									webAssetUrls: o,
-									tags: s
-								} = e, i = n && new Date(n) <= new Date, a = !!r && new Date(r) < new Date, c = !!i && !a, d = s.includes(m);
-								if (s && s.includes(l) && !d) {
-									const {
-										text: n,
-										id: r
-									} = e, i = o || null, a = p(s);
-									t && (t.quickCreateV1 = {
-										...a,
-										id: r,
-										text: n,
-										active: c && !!i,
-										webAssetUrls: i
-									})
-								}
-								if (s && s.includes(u) && !d) {
-									const e = o || null;
-									t && (t.marketingEvent = {
-										active: c && !!e,
-										assetUrls: e
-									})
-								}
-							}), t
-						}(r) : d;
-					case b.c:
-						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === h.a.SNOOVATAR_MODAL ? d : e;
+						return r ? f(r) : d;
+					case h.c:
+						return (null === (n = t.payload) || void 0 === n ? void 0 : n.id) === v.a.SNOOVATAR_MODAL ? d : e;
 					default:
 						return e
 				}
 			};
-			var g = (e = null, t) => {
+			var _ = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
+					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case i.a: {
 						const {
@@ -3350,9 +3401,9 @@
 				}
 			};
 			t.a = Object(s.c)({
-				marketing: v,
+				marketing: g,
 				avatarUser: c,
-				randomAvatar: g
+				randomAvatar: _
 			})
 		},
 		"./src/reddit/selectors/authorFlair.ts": function(e, t, n) {
@@ -3364,24 +3415,26 @@
 			})), n.d(t, "c", (function() {
 				return s
 			}));
-			const r = (e, {
-					post: t
-				}) => {
-					const n = t.belongsTo.id;
-					if (!n) return null;
-					const r = e.authorFlair.models[n];
+			const r = (e, t) => {
+					let {
+						post: n
+					} = t;
+					const r = n.belongsTo.id;
 					if (!r) return null;
-					const o = t.author;
-					return o && r[o] || null
+					const o = e.authorFlair.models[r];
+					if (!o) return null;
+					const s = n.author;
+					return s && o[s] || null
 				},
-				o = (e, {
-					subredditId: t
-				}) => {
-					const n = e.authorFlair && e.authorFlair.inContext && e.authorFlair.inContext.username;
+				o = (e, t) => {
+					let {
+						subredditId: n
+					} = t;
+					const r = e.authorFlair && e.authorFlair.inContext && e.authorFlair.inContext.username;
+					if (!r) return null;
 					if (!n) return null;
-					if (!t) return null;
-					const r = e.authorFlair.models[t];
-					return r ? r[n] : null
+					const o = e.authorFlair.models[n];
+					return o ? o[r] : null
 				},
 				s = e => e.authorFlair.inContext
 		},
@@ -3490,67 +3543,75 @@
 					const r = t ? e[`staticIcon${n}`] : e[`icon${n}`];
 					return (null == r ? void 0 : r.url) ? r.url : t ? e.staticIcon.url : e.icon.url
 				},
-				m = ({
-					award: e,
-					size: t,
-					prefersReducedMotion: n,
-					postOrComment: r
-				}) => e.awardSubType === o.d.Group ? (({
-					award: e,
-					size: t,
-					prefersReducedMotion: n,
-					postOrComment: r
-				}) => {
-					let o = e;
-					if ((null == r ? void 0 : r.awardCountsById) && r.awardCountsById[e.id] && e.tiers) {
-						const t = r.awardCountsById[e.id];
-						o = e.tiers.reduce((e, n) => t >= n.awardingsRequired ? n : e)
-					}
-					return u(o, n, t)
-				})({
-					award: e,
-					size: t,
-					prefersReducedMotion: n,
-					postOrComment: r
-				}) : u(e, n, t),
-				p = Object(r.a)((e, {
-					awards: t,
-					minSize: n,
-					postOrCommentId: r
-				}) => {
-					const o = Object(d.c)(e),
-						i = l.find(e => e >= n),
-						c = r ? Object(a.G)(e, {
-							postId: r
-						}) || Object(s.b)(e, {
-							commentId: r
-						}) : void 0;
-					return t.reduce((e, t) => (t && (e[t.id] = m({
+				m = e => {
+					let {
 						award: t,
-						size: i,
-						prefersReducedMotion: o,
-						postOrComment: c
+						size: n,
+						prefersReducedMotion: r,
+						postOrComment: s
+					} = e;
+					return t.awardSubType === o.d.Group ? (e => {
+						let {
+							award: t,
+							size: n,
+							prefersReducedMotion: r,
+							postOrComment: o
+						} = e, s = t;
+						if ((null == o ? void 0 : o.awardCountsById) && o.awardCountsById[t.id] && t.tiers) {
+							const e = o.awardCountsById[t.id];
+							s = t.tiers.reduce((t, n) => e >= n.awardingsRequired ? n : t)
+						}
+						return u(s, r, n)
+					})({
+						award: t,
+						size: n,
+						prefersReducedMotion: r,
+						postOrComment: s
+					}) : u(t, r, n)
+				},
+				p = Object(r.a)((e, t) => {
+					let {
+						awards: n,
+						minSize: r,
+						postOrCommentId: o
+					} = t;
+					const i = Object(d.c)(e),
+						c = l.find(e => e >= r),
+						u = o ? Object(a.G)(e, {
+							postId: o
+						}) || Object(s.b)(e, {
+							commentId: o
+						}) : void 0;
+					return n.reduce((e, t) => (t && (e[t.id] = m({
+						award: t,
+						size: c,
+						prefersReducedMotion: i,
+						postOrComment: u
 					})), e), {})
 				}),
-				f = (e, {
-					award: t,
-					minSize: n,
-					postOrCommentId: r
-				}) => t ? p(e, {
-					awards: [t],
-					minSize: n,
-					postOrCommentId: r
-				})[t.id] : void 0,
-				b = (e, {
-					minSize: t,
-					userName: n
-				}) => {
-					const r = Object(c.yb)(e, {
-						userName: n
+				f = (e, t) => {
+					let {
+						award: n,
+						minSize: r,
+						postOrCommentId: o
+					} = t;
+					return n ? p(e, {
+						awards: [n],
+						minSize: r,
+						postOrCommentId: o
+					})[n.id] : void 0
+				},
+				b = (e, t) => {
+					let {
+						minSize: n,
+						userName: r
+					} = t;
+					const o = Object(c.yb)(e, {
+						userName: r
 					});
-					if (r && r.awardedLastMonth && r.awardedLastMonth.topAward) return f(e, {
-						award: r.awardedLastMonth.topAward,
-						minSize: t
+					if (o && o.awardedLastMonth && o.awardedLastMonth.topAward) return f(e, {
+						award: o.awardedLastMonth.topAward,
+						minSize: n
 					})
 				},
 				h = e => {
@@ -3666,4 +3727,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3b3e3e8638269a2b0d23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.eaa9bb1d4625efcfd25b.js.map

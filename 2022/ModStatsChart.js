@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModStatsChart.3d784a824704fd481b4e.js
-// Retrieved at 3/14/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModStatsChart.403fad1cbada668de819.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModStatsChart"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, l) {
@@ -416,26 +416,27 @@
 				});
 			var v = l("./src/reddit/components/ModHub/TrafficStats/ModStatsChart/index.m.less"),
 				x = l.n(v);
-			o.default = Object(t.a)(({
-				data: e,
-				statsTime: o,
-				statsView: l,
-				theme: t,
-				windowEnd: _,
-				windowStart: p
-			}) => {
-				const h = l === r.d.Members ? 2 : 4,
-					g = Object(d.useRef)(null),
+			o.default = Object(t.a)(e => {
+				let {
+					data: o,
+					statsTime: l,
+					statsView: t,
+					theme: _,
+					windowEnd: p,
+					windowStart: h
+				} = e;
+				const g = t === r.d.Members ? 2 : 4,
 					v = Object(d.useRef)(null),
-					y = function(e) {
+					y = Object(d.useRef)(null),
+					w = function(e) {
 						const o = Object(d.useRef)(null);
 						return Object(d.useEffect)(() => {
 							o.current = e
 						}, [e]), o.current
-					}(l),
-					[w, O] = Object(d.useState)(new Array(h).fill(!1)),
-					[z, E] = Object(d.useState)(!1),
-					[T, R] = Object(d.useState)({
+					}(t),
+					[O, z] = Object(d.useState)(new Array(g).fill(!1)),
+					[E, T] = Object(d.useState)(!1),
+					[R, P] = Object(d.useState)({
 						color: "",
 						date: "",
 						left: 0,
@@ -444,122 +445,123 @@
 						value: ""
 					});
 				Object(d.useEffect)(() => {
-					z && null !== v.current && R(v.current)
-				}, [z]);
-				const P = Object(d.useCallback)(({
-						tooltip: e,
-						chart: t
-					}) => {
-						var n, m, d;
-						if (console.log("I have been in options"), !t || !t.canvas || !t.data.labels) return;
-						if (0 === e.opacity) return void E(!1);
-						const a = f[e.dataPoints[0].datasetIndex],
-							c = t.canvas.getBoundingClientRect(),
-							u = c.left + e.caretX - 62.5,
-							i = c.top + e.caretY - 65,
-							j = null === (m = null === (n = null == t ? void 0 : t.data) || void 0 === n ? void 0 : n.labels) || void 0 === m ? void 0 : m[null === (d = null == e ? void 0 : e.dataPoints[0]) || void 0 === d ? void 0 : d.dataIndex],
-							_ = Object(r.g)(j),
-							p = e.dataPoints[0].formattedValue;
-						let h = "";
-						h = l === r.d.Members ? 0 === e.dataPoints[0].datasetIndex ? s.fbt._("Joined", null, {
+					E && null !== y.current && P(y.current)
+				}, [E]);
+				const S = Object(d.useCallback)(e => {
+						let {
+							tooltip: o,
+							chart: n
+						} = e;
+						var m, d, a;
+						if (console.log("I have been in options"), !n || !n.canvas || !n.data.labels) return;
+						if (0 === o.opacity) return void T(!1);
+						const c = f[o.dataPoints[0].datasetIndex],
+							u = n.canvas.getBoundingClientRect(),
+							i = u.left + o.caretX - 62.5,
+							j = u.top + o.caretY - 65,
+							_ = null === (d = null === (m = null == n ? void 0 : n.data) || void 0 === m ? void 0 : m.labels) || void 0 === d ? void 0 : d[null === (a = null == o ? void 0 : o.dataPoints[0]) || void 0 === a ? void 0 : a.dataIndex],
+							p = Object(r.g)(_),
+							h = o.dataPoints[0].formattedValue;
+						let b = "";
+						b = t === r.d.Members ? 0 === o.dataPoints[0].datasetIndex ? s.fbt._("Joined", null, {
 							hk: "2vPXl8"
 						}) : s.fbt._("Left", null, {
 							hk: "1cy9rl"
-						}) : l === r.d.Pageviews ? s.fbt._("Viewed", null, {
+						}) : t === r.d.Pageviews ? s.fbt._("Viewed", null, {
 							hk: "3jFRbm"
 						}) : s.fbt._("Visited", null, {
 							hk: "Ub0qx"
 						});
-						const b = o === r.b.Hour ? Object(r.l)(_) : Object(r.k)(_, o);
-						v.current = {
-							color: a,
-							date: b,
-							left: u,
-							top: i,
-							tooltipText: h,
-							value: p
-						}, E(!0)
-					}, [o, l]),
-					S = {
+						const g = l === r.b.Hour ? Object(r.l)(p) : Object(r.k)(p, l);
+						y.current = {
+							color: c,
+							date: g,
+							left: i,
+							top: j,
+							tooltipText: b,
+							value: h
+						}, T(!0)
+					}, [l, t]),
+					C = {
 						...b({
-							data: e,
-							statsTime: o,
-							statsView: l,
-							theme: t,
-							windowEnd: _,
-							windowStart: p
-						}, o === r.b.Hour ? 10 : 12),
+							data: o,
+							statsTime: l,
+							statsView: t,
+							theme: _,
+							windowEnd: p,
+							windowStart: h
+						}, l === r.b.Hour ? 10 : 12),
 						plugins: {
 							legend: {
 								display: !1
 							},
 							tooltip: {
 								enabled: !1,
-								external: P
+								external: S
 							}
 						}
 					};
 				Object(d.useEffect)(() => {
-					if (g.current && (g.current.options = S, g.current.update(), y !== l)) {
-						const e = l === r.d.Members ? 2 : 4,
+					if (v.current && (v.current.options = C, v.current.update(), w !== t)) {
+						const e = t === r.d.Members ? 2 : 4,
 							o = new Array(e).fill(!1);
-						O(o)
+						z(o)
 					}
-				}, [l, o, t, y, S]);
-				let C = Object(r.o)(e, l, o);
-				if (o === r.b.Month) {
+				}, [t, l, _, w, C]);
+				let N = Object(r.o)(o, t, l);
+				if (l === r.b.Month) {
 					const e = (new Date).getMonth() + 1;
-					C = C.map(o => Object(r.s)(o, e))
+					N = N.map(o => Object(r.s)(o, e))
 				}
-				const N = {
-						labels: Object(r.p)(o, !0).slice(p, _).map(e => e.toString()),
-						datasets: l === r.d.Members ? [k(C[0].slice(p, _), 0, s.fbt._("Joined", null, {
+				const M = {
+						labels: Object(r.p)(l, !0).slice(h, p).map(e => e.toString()),
+						datasets: t === r.d.Members ? [k(N[0].slice(h, p), 0, s.fbt._("Joined", null, {
 							hk: "29HSWZ"
-						})), k(C[1].slice(p, _), 1, s.fbt._("Left", null, {
+						})), k(N[1].slice(h, p), 1, s.fbt._("Left", null, {
 							hk: "2ENe3g"
-						}))] : [k(C[0].slice(p, _), 0, s.fbt._("New Reddit", null, {
+						}))] : [k(N[0].slice(h, p), 0, s.fbt._("New Reddit", null, {
 							hk: "3Kn6gy"
-						})), k(C[1].slice(p, _), 1, s.fbt._("Old Reddit", null, {
+						})), k(N[1].slice(h, p), 1, s.fbt._("Old Reddit", null, {
 							hk: "1YYCdo"
-						})), k(C[2].slice(p, _), 2, s.fbt._("Mobile Web", null, {
+						})), k(N[2].slice(h, p), 2, s.fbt._("Mobile Web", null, {
 							hk: "4whHjN"
-						})), k(C[3].slice(p, _), 3, s.fbt._("Reddit Apps", null, {
+						})), k(N[3].slice(h, p), 3, s.fbt._("Reddit Apps", null, {
 							hk: "2PU6tU"
 						}))]
 					},
 					{
-						color: M,
-						date: L,
-						left: B,
-						top: H,
-						tooltipText: D,
-						value: A
-					} = T;
+						color: L,
+						date: B,
+						left: H,
+						top: D,
+						tooltipText: A,
+						value: U
+					} = R;
 				return a.a.createElement("div", {
 					className: x.a.chart
 				}, a.a.createElement(i.a, null, a.a.createElement(c.b, {
-					data: N,
+					data: M,
 					height: 300,
 					width: 940,
-					ref: g,
-					options: S
+					ref: v,
+					options: C
 				}), a.a.createElement("div", {
 					className: x.a.legend
-				}, N.datasets.map((e, o) => {
-					const l = w[o],
-						s = l && t ? t.newCommunityTheme.post : f[o],
-						n = l ? Object(m.f)(f[o], .5) : f[o];
+				}, M.datasets.map((e, o) => {
+					const l = O[o],
+						s = l && _ ? _.newCommunityTheme.post : f[o],
+						t = l ? Object(m.f)(f[o], .5) : f[o];
 					return a.a.createElement("button", {
 						className: x.a.legendLine,
 						key: e.label,
 						onClick: () => (e => {
-							const o = g.current;
+							const o = v.current;
 							if (!o || !o.data || !o.data.datasets) return;
 							const l = o.data.datasets[e],
 								s = l.hidden;
 							o.getDatasetMeta(e).hidden = !s, l.hidden = !s;
-							const t = w;
-							t[e] = !s, O(t), o.update()
+							const t = O;
+							t[e] = !s, z(t), o.update()
 						})(o)
 					}, a.a.createElement(j.a, {
 						className: x.a.expandRight
@@ -567,31 +569,31 @@
 						className: x.a.legendBlock,
 						style: {
 							backgroundColor: s,
-							border: `2px solid ${n}`
+							border: `2px solid ${t}`
 						}
 					}), a.a.createElement("span", {
 						className: x.a.legendLabel
 					}, e.label)))
-				}))), z && a.a.createElement(u.b, {
+				}))), E && a.a.createElement(u.b, {
 					className: x.a.Tooltip,
 					targetPosition: {
-						top: H,
-						left: B
+						top: D,
+						left: H
 					}
 				}, a.a.createElement("div", {
 					className: x.a.value,
 					style: {
-						color: M
+						color: L
 					}
-				}, Object(n.a)(A.toString())), a.a.createElement("div", {
+				}, Object(n.a)(U.toString())), a.a.createElement("div", {
 					className: x.a.dateLine
 				}, a.a.createElement("span", {
 					className: x.a.action
-				}, D), a.a.createElement("span", {
+				}, A), a.a.createElement("span", {
 					className: x.a.date
-				}, " ", o === r.b.Hour ? s.fbt._("at {tooltipDate}", [s.fbt._param("tooltipDate", L)], {
+				}, " ", l === r.b.Hour ? s.fbt._("at {tooltipDate}", [s.fbt._param("tooltipDate", B)], {
 					hk: "BRXaW"
-				}) : s.fbt._("on {tooltipDate}", [s.fbt._param("tooltipDate", L)], {
+				}) : s.fbt._("on {tooltipDate}", [s.fbt._param("tooltipDate", B)], {
 					hk: "494Xs8"
 				})))))
 			})
@@ -627,19 +629,22 @@
 			! function(e) {
 				e[e.None = 0] = "None", e[e.Above = 1] = "Above", e[e.Below = 2] = "Below"
 			}(r || (r = {}));
-			const _ = ({
-				isBelow: e = !1,
-				style: o
-			}) => t.a.createElement("div", {
-				className: Object(n.a)(c.a.triangle, {
-					[c.a.triangleBelow]: e
-				}),
-				style: o
-			}, t.a.createElement("div", {
-				className: c.a.triangleBack
-			}), t.a.createElement("div", {
-				className: c.a.triangleFront
-			}));
+			const _ = e => {
+				let {
+					isBelow: o = !1,
+					style: l
+				} = e;
+				return t.a.createElement("div", {
+					className: Object(n.a)(c.a.triangle, {
+						[c.a.triangleBelow]: o
+					}),
+					style: l
+				}, t.a.createElement("div", {
+					className: c.a.triangleBack
+				}), t.a.createElement("div", {
+					className: c.a.triangleFront
+				}))
+			};
 			class p extends s.Component {
 				constructor(e) {
 					super(e), this.containerRef = null, this.updateContainerRef = e => this.containerRef = e, this.setTargetPosition = e => {
@@ -748,4 +753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModStatsChart.3d784a824704fd481b4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModStatsChart.403fad1cbada668de819.js.map

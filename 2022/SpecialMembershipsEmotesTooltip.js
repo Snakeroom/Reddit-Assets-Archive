@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.9b460e58d0f43854c461.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.68da83a8c18ccb5adc0d.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsEmotesTooltip"], {
 		"./src/reddit/components/RichTextEditor/emotes/BaseTooltip.tsx": function(e, t, s) {
@@ -12,17 +12,20 @@
 				c = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				l = s("./src/reddit/components/RichTextEditor/emotes/tooltipHeader.m.less"),
 				d = s.n(l);
-			const m = ({
-				title: e,
-				onClickClose: t
-			}) => i.a.createElement("div", {
-				className: d.a.header
-			}, e, i.a.createElement("div", {
-				className: d.a.spacer
-			}), i.a.createElement(c.a, {
-				className: d.a.closeIcon,
-				onClick: t
-			}));
+			const m = e => {
+				let {
+					title: t,
+					onClickClose: s
+				} = e;
+				return i.a.createElement("div", {
+					className: d.a.header
+				}, t, i.a.createElement("div", {
+					className: d.a.spacer
+				}), i.a.createElement(c.a, {
+					className: d.a.closeIcon,
+					onClick: s
+				}))
+			};
 			var p = s("./src/reddit/components/RichTextEditor/emotes/baseTooltip.m.less"),
 				h = s.n(p);
 			class u extends i.a.Component {
@@ -88,7 +91,7 @@
 		"./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return d
+				return m
 			}));
 			var o, i = s("./node_modules/react/index.js"),
 				n = s.n(i),
@@ -99,51 +102,53 @@
 			! function(e) {
 				e[e.Inside = 0] = "Inside", e[e.Outside = 1] = "Outside"
 			}(o || (o = {}));
-			const d = ({
-				className: e,
-				containerClassName: t,
-				imageClassName: s,
-				disabled: c,
-				id: d,
-				imagePath: m,
-				onClick: p,
-				onKeyDown: h,
-				title: u,
-				onClickDelete: E,
-				mouseEnterBufferTime: b = 750
-			}) => {
-				const f = Object(i.useRef)(o.Outside),
-					[g, T] = Object(i.useState)(!1);
-				return n.a.createElement("div", {
-					className: Object(a.a)(l.a.container, t),
-					onMouseEnter: E ? () => {
-						f.current = o.Inside, setTimeout(() => {
-							f.current === o.Inside && T(!0)
-						}, b)
-					} : void 0,
-					onMouseLeave: E ? () => {
-						f.current = o.Outside, T(!1)
-					} : void 0
-				}, g && n.a.createElement("button", {
-					className: l.a.deleteButton,
-					onClick: E
-				}, n.a.createElement(r.b, {
-					className: l.a.deleteIcon
-				})), n.a.createElement("button", {
-					className: Object(a.a)(l.a.emoteButton, e),
-					disabled: c,
-					id: d,
-					title: u,
-					onClick: p,
-					onKeyDown: h,
-					tabIndex: 1
-				}, n.a.createElement("div", {
-					className: Object(a.a)(l.a.emoteImage, s),
-					style: {
-						backgroundImage: `url(${m})`
-					}
-				})))
-			}
+			const d = 750,
+				m = e => {
+					let {
+						className: t,
+						containerClassName: s,
+						imageClassName: c,
+						disabled: m,
+						id: p,
+						imagePath: h,
+						onClick: u,
+						onKeyDown: E,
+						title: b,
+						onClickDelete: f,
+						mouseEnterBufferTime: g = d
+					} = e;
+					const T = Object(i.useRef)(o.Outside),
+						[x, y] = Object(i.useState)(!1);
+					return n.a.createElement("div", {
+						className: Object(a.a)(l.a.container, s),
+						onMouseEnter: f ? () => {
+							T.current = o.Inside, setTimeout(() => {
+								T.current === o.Inside && y(!0)
+							}, g)
+						} : void 0,
+						onMouseLeave: f ? () => {
+							T.current = o.Outside, y(!1)
+						} : void 0
+					}, x && n.a.createElement("button", {
+						className: l.a.deleteButton,
+						onClick: f
+					}, n.a.createElement(r.b, {
+						className: l.a.deleteIcon
+					})), n.a.createElement("button", {
+						className: Object(a.a)(l.a.emoteButton, t),
+						disabled: m,
+						id: p,
+						title: b,
+						onClick: u,
+						onKeyDown: E,
+						tabIndex: 1
+					}, n.a.createElement("div", {
+						className: Object(a.a)(l.a.emoteImage, c),
+						style: {
+							backgroundImage: `url(${h})`
+						}
+					})))
+				}
 		},
 		"./src/reddit/components/RichTextEditor/emotes/SpecialMemberships/tooltip.m.less": function(e, t, s) {
 			e.exports = {
@@ -413,11 +418,12 @@
 				emotePacks: (e, t) => Object(x.b)(e, {
 					subredditId: t.subreddit.id
 				}) || [],
-				showUpsell: (e, {
-					subreddit: t
-				}) => {
-					if (t.id) {
-						return Object(x.x)(e, t.id) === x.a.NotSubscribed
+				showUpsell: (e, t) => {
+					let {
+						subreddit: s
+					} = t;
+					if (s.id) {
+						return Object(x.x)(e, s.id) === x.a.NotSubscribed
 					}
 					return !1
 				}
@@ -525,4 +531,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.9b460e58d0f43854c461.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsEmotesTooltip.68da83a8c18ccb5adc0d.js.map

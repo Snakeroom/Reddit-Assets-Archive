@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/4.52e1f340a1e69aaf17b7.js
-// Retrieved at 3/28/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/4.1b440af6c6b07f29cece.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[4], {
 		"./node_modules/@apollo/client/cache/inmemory/types.js": function(e, t) {},
@@ -533,7 +533,7 @@
 					var o = n("./node_modules/@apollo/client/cache/inmemory/reactiveVars.js"),
 						a = n("./node_modules/@apollo/client/cache/inmemory/inMemoryCache.js"),
 						s = n("./node_modules/@apollo/client/react/hooks/useApolloClient.js"),
-						c = n("./node_modules/@apollo/client/node_modules/graphql-tag/lib/index.js"),
+						c = n("./node_modules/graphql-tag/lib/index.js"),
 						u = n("./node_modules/@apollo/client/link/http/createHttpLink.js"),
 						l = n("./node_modules/@apollo/client/index.js"),
 						d = n("./node_modules/@apollo/client/core/ApolloClient.js"),
@@ -16650,7 +16650,7 @@
 			}).call(this, n("./node_modules/webpack/buildin/harmony-module.js")(e))
 		},
 		"./node_modules/@reddit/avatars/node_modules/isomorphic-fetch/fetch-npm-browserify.js": function(e, t, n) {
-			n("./node_modules/@reddit/avatars/node_modules/whatwg-fetch/fetch.js"), e.exports = self.fetch.bind(self)
+			n("./node_modules/whatwg-fetch/fetch.js"), e.exports = self.fetch.bind(self)
 		},
 		"./node_modules/@reddit/avatars/node_modules/js-cookie/dist/js.cookie.js": function(e, t, n) {
 			e.exports = function() {
@@ -16838,294 +16838,6 @@
 				}
 				return l(r)
 			}
-		},
-		"./node_modules/@reddit/avatars/node_modules/whatwg-fetch/fetch.js": function(e, t, n) {
-			"use strict";
-			n.r(t), n.d(t, "Headers", (function() {
-				return l
-			})), n.d(t, "Request", (function() {
-				return C
-			})), n.d(t, "Response", (function() {
-				return _
-			})), n.d(t, "DOMException", (function() {
-				return g
-			})), n.d(t, "fetch", (function() {
-				return k
-			}));
-			var r = "undefined" != typeof globalThis && globalThis || "undefined" != typeof self && self || void 0 !== r && r,
-				i = {
-					searchParams: "URLSearchParams" in r,
-					iterable: "Symbol" in r && "iterator" in Symbol,
-					blob: "FileReader" in r && "Blob" in r && function() {
-						try {
-							return new Blob, !0
-						} catch (e) {
-							return !1
-						}
-					}(),
-					formData: "FormData" in r,
-					arrayBuffer: "ArrayBuffer" in r
-				};
-			if (i.arrayBuffer) var o = ["[object Int8Array]", "[object Uint8Array]", "[object Uint8ClampedArray]", "[object Int16Array]", "[object Uint16Array]", "[object Int32Array]", "[object Uint32Array]", "[object Float32Array]", "[object Float64Array]"],
-				a = ArrayBuffer.isView || function(e) {
-					return e && o.indexOf(Object.prototype.toString.call(e)) > -1
-				};
-
-			function s(e) {
-				if ("string" != typeof e && (e = String(e)), /[^a-z0-9\-#$%&'*+.^_`|~!]/i.test(e) || "" === e) throw new TypeError('Invalid character in header field name: "' + e + '"');
-				return e.toLowerCase()
-			}
-
-			function c(e) {
-				return "string" != typeof e && (e = String(e)), e
-			}
-
-			function u(e) {
-				var t = {
-					next: function() {
-						var t = e.shift();
-						return {
-							done: void 0 === t,
-							value: t
-						}
-					}
-				};
-				return i.iterable && (t[Symbol.iterator] = function() {
-					return t
-				}), t
-			}
-
-			function l(e) {
-				this.map = {}, e instanceof l ? e.forEach((function(e, t) {
-					this.append(t, e)
-				}), this) : Array.isArray(e) ? e.forEach((function(e) {
-					this.append(e[0], e[1])
-				}), this) : e && Object.getOwnPropertyNames(e).forEach((function(t) {
-					this.append(t, e[t])
-				}), this)
-			}
-
-			function d(e) {
-				if (e.bodyUsed) return Promise.reject(new TypeError("Already read"));
-				e.bodyUsed = !0
-			}
-
-			function f(e) {
-				return new Promise((function(t, n) {
-					e.onload = function() {
-						t(e.result)
-					}, e.onerror = function() {
-						n(e.error)
-					}
-				}))
-			}
-
-			function p(e) {
-				var t = new FileReader,
-					n = f(t);
-				return t.readAsArrayBuffer(e), n
-			}
-
-			function v(e) {
-				if (e.slice) return e.slice(0);
-				var t = new Uint8Array(e.byteLength);
-				return t.set(new Uint8Array(e)), t.buffer
-			}
-
-			function h() {
-				return this.bodyUsed = !1, this._initBody = function(e) {
-					var t;
-					this.bodyUsed = this.bodyUsed, this._bodyInit = e, e ? "string" == typeof e ? this._bodyText = e : i.blob && Blob.prototype.isPrototypeOf(e) ? this._bodyBlob = e : i.formData && FormData.prototype.isPrototypeOf(e) ? this._bodyFormData = e : i.searchParams && URLSearchParams.prototype.isPrototypeOf(e) ? this._bodyText = e.toString() : i.arrayBuffer && i.blob && ((t = e) && DataView.prototype.isPrototypeOf(t)) ? (this._bodyArrayBuffer = v(e.buffer), this._bodyInit = new Blob([this._bodyArrayBuffer])) : i.arrayBuffer && (ArrayBuffer.prototype.isPrototypeOf(e) || a(e)) ? this._bodyArrayBuffer = v(e) : this._bodyText = e = Object.prototype.toString.call(e) : this._bodyText = "", this.headers.get("content-type") || ("string" == typeof e ? this.headers.set("content-type", "text/plain;charset=UTF-8") : this._bodyBlob && this._bodyBlob.type ? this.headers.set("content-type", this._bodyBlob.type) : i.searchParams && URLSearchParams.prototype.isPrototypeOf(e) && this.headers.set("content-type", "application/x-www-form-urlencoded;charset=UTF-8"))
-				}, i.blob && (this.blob = function() {
-					var e = d(this);
-					if (e) return e;
-					if (this._bodyBlob) return Promise.resolve(this._bodyBlob);
-					if (this._bodyArrayBuffer) return Promise.resolve(new Blob([this._bodyArrayBuffer]));
-					if (this._bodyFormData) throw new Error("could not read FormData body as blob");
-					return Promise.resolve(new Blob([this._bodyText]))
-				}, this.arrayBuffer = function() {
-					if (this._bodyArrayBuffer) {
-						var e = d(this);
-						return e || (ArrayBuffer.isView(this._bodyArrayBuffer) ? Promise.resolve(this._bodyArrayBuffer.buffer.slice(this._bodyArrayBuffer.byteOffset, this._bodyArrayBuffer.byteOffset + this._bodyArrayBuffer.byteLength)) : Promise.resolve(this._bodyArrayBuffer))
-					}
-					return this.blob().then(p)
-				}), this.text = function() {
-					var e, t, n, r = d(this);
-					if (r) return r;
-					if (this._bodyBlob) return e = this._bodyBlob, t = new FileReader, n = f(t), t.readAsText(e), n;
-					if (this._bodyArrayBuffer) return Promise.resolve(function(e) {
-						for (var t = new Uint8Array(e), n = new Array(t.length), r = 0; r < t.length; r++) n[r] = String.fromCharCode(t[r]);
-						return n.join("")
-					}(this._bodyArrayBuffer));
-					if (this._bodyFormData) throw new Error("could not read FormData body as text");
-					return Promise.resolve(this._bodyText)
-				}, i.formData && (this.formData = function() {
-					return this.text().then(y)
-				}), this.json = function() {
-					return this.text().then(JSON.parse)
-				}, this
-			}
-			l.prototype.append = function(e, t) {
-				e = s(e), t = c(t);
-				var n = this.map[e];
-				this.map[e] = n ? n + ", " + t : t
-			}, l.prototype.delete = function(e) {
-				delete this.map[s(e)]
-			}, l.prototype.get = function(e) {
-				return e = s(e), this.has(e) ? this.map[e] : null
-			}, l.prototype.has = function(e) {
-				return this.map.hasOwnProperty(s(e))
-			}, l.prototype.set = function(e, t) {
-				this.map[s(e)] = c(t)
-			}, l.prototype.forEach = function(e, t) {
-				for (var n in this.map) this.map.hasOwnProperty(n) && e.call(t, this.map[n], n, this)
-			}, l.prototype.keys = function() {
-				var e = [];
-				return this.forEach((function(t, n) {
-					e.push(n)
-				})), u(e)
-			}, l.prototype.values = function() {
-				var e = [];
-				return this.forEach((function(t) {
-					e.push(t)
-				})), u(e)
-			}, l.prototype.entries = function() {
-				var e = [];
-				return this.forEach((function(t, n) {
-					e.push([n, t])
-				})), u(e)
-			}, i.iterable && (l.prototype[Symbol.iterator] = l.prototype.entries);
-			var m = ["DELETE", "GET", "HEAD", "OPTIONS", "POST", "PUT"];
-
-			function C(e, t) {
-				if (!(this instanceof C)) throw new TypeError('Please use the "new" operator, this DOM object constructor cannot be called as a function.');
-				var n, r, i = (t = t || {}).body;
-				if (e instanceof C) {
-					if (e.bodyUsed) throw new TypeError("Already read");
-					this.url = e.url, this.credentials = e.credentials, t.headers || (this.headers = new l(e.headers)), this.method = e.method, this.mode = e.mode, this.signal = e.signal, i || null == e._bodyInit || (i = e._bodyInit, e.bodyUsed = !0)
-				} else this.url = String(e);
-				if (this.credentials = t.credentials || this.credentials || "same-origin", !t.headers && this.headers || (this.headers = new l(t.headers)), this.method = (n = t.method || this.method || "GET", r = n.toUpperCase(), m.indexOf(r) > -1 ? r : n), this.mode = t.mode || this.mode || null, this.signal = t.signal || this.signal, this.referrer = null, ("GET" === this.method || "HEAD" === this.method) && i) throw new TypeError("Body not allowed for GET or HEAD requests");
-				if (this._initBody(i), !("GET" !== this.method && "HEAD" !== this.method || "no-store" !== t.cache && "no-cache" !== t.cache)) {
-					var o = /([?&])_=[^&]*/;
-					if (o.test(this.url)) this.url = this.url.replace(o, "$1_=" + (new Date).getTime());
-					else {
-						this.url += (/\?/.test(this.url) ? "&" : "?") + "_=" + (new Date).getTime()
-					}
-				}
-			}
-
-			function y(e) {
-				var t = new FormData;
-				return e.trim().split("&").forEach((function(e) {
-					if (e) {
-						var n = e.split("="),
-							r = n.shift().replace(/\+/g, " "),
-							i = n.join("=").replace(/\+/g, " ");
-						t.append(decodeURIComponent(r), decodeURIComponent(i))
-					}
-				})), t
-			}
-
-			function _(e, t) {
-				if (!(this instanceof _)) throw new TypeError('Please use the "new" operator, this DOM object constructor cannot be called as a function.');
-				t || (t = {}), this.type = "default", this.status = void 0 === t.status ? 200 : t.status, this.ok = this.status >= 200 && this.status < 300, this.statusText = void 0 === t.statusText ? "" : "" + t.statusText, this.headers = new l(t.headers), this.url = t.url || "", this._initBody(e)
-			}
-			C.prototype.clone = function() {
-				return new C(this, {
-					body: this._bodyInit
-				})
-			}, h.call(C.prototype), h.call(_.prototype), _.prototype.clone = function() {
-				return new _(this._bodyInit, {
-					status: this.status,
-					statusText: this.statusText,
-					headers: new l(this.headers),
-					url: this.url
-				})
-			}, _.error = function() {
-				var e = new _(null, {
-					status: 0,
-					statusText: ""
-				});
-				return e.type = "error", e
-			};
-			var b = [301, 302, 303, 307, 308];
-			_.redirect = function(e, t) {
-				if (-1 === b.indexOf(t)) throw new RangeError("Invalid status code");
-				return new _(null, {
-					status: t,
-					headers: {
-						location: e
-					}
-				})
-			};
-			var g = r.DOMException;
-			try {
-				new g
-			} catch (w) {
-				(g = function(e, t) {
-					this.message = e, this.name = t;
-					var n = Error(e);
-					this.stack = n.stack
-				}).prototype = Object.create(Error.prototype), g.prototype.constructor = g
-			}
-
-			function k(e, t) {
-				return new Promise((function(n, o) {
-					var a = new C(e, t);
-					if (a.signal && a.signal.aborted) return o(new g("Aborted", "AbortError"));
-					var s = new XMLHttpRequest;
-
-					function u() {
-						s.abort()
-					}
-					s.onload = function() {
-						var e, t, r = {
-							status: s.status,
-							statusText: s.statusText,
-							headers: (e = s.getAllResponseHeaders() || "", t = new l, e.replace(/\r?\n[\t ]+/g, " ").split("\r").map((function(e) {
-								return 0 === e.indexOf("\n") ? e.substr(1, e.length) : e
-							})).forEach((function(e) {
-								var n = e.split(":"),
-									r = n.shift().trim();
-								if (r) {
-									var i = n.join(":").trim();
-									t.append(r, i)
-								}
-							})), t)
-						};
-						r.url = "responseURL" in s ? s.responseURL : r.headers.get("X-Request-URL");
-						var i = "response" in s ? s.response : s.responseText;
-						setTimeout((function() {
-							n(new _(i, r))
-						}), 0)
-					}, s.onerror = function() {
-						setTimeout((function() {
-							o(new TypeError("Network request failed"))
-						}), 0)
-					}, s.ontimeout = function() {
-						setTimeout((function() {
-							o(new TypeError("Network request failed"))
-						}), 0)
-					}, s.onabort = function() {
-						setTimeout((function() {
-							o(new g("Aborted", "AbortError"))
-						}), 0)
-					}, s.open(a.method, function(e) {
-						try {
-							return "" === e && r.location.href ? r.location.href : e
-						} catch (t) {
-							return e
-						}
-					}(a.url), !0), "include" === a.credentials ? s.withCredentials = !0 : "omit" === a.credentials && (s.withCredentials = !1), "responseType" in s && (i.blob ? s.responseType = "blob" : i.arrayBuffer && a.headers.get("Content-Type") && -1 !== a.headers.get("Content-Type").indexOf("application/octet-stream") && (s.responseType = "arraybuffer")), !t || "object" != typeof t.headers || t.headers instanceof l ? a.headers.forEach((function(e, t) {
-						s.setRequestHeader(t, e)
-					})) : Object.getOwnPropertyNames(t.headers).forEach((function(e) {
-						s.setRequestHeader(e, c(t.headers[e]))
-					})), a.signal && (a.signal.addEventListener("abort", u), s.onreadystatechange = function() {
-						4 === s.readyState && a.signal.removeEventListener("abort", u)
-					}), s.send(void 0 === a._bodyInit ? null : a._bodyInit)
-				}))
-			}
-			k.polyfill = !0, r.fetch || (r.fetch = k, r.Headers = l, r.Request = C, r.Response = _)
 		},
 		"./node_modules/@reddit/crypto/react/config/index.es.js": function(e, t, n) {
 			"use strict";
@@ -23722,7 +23434,295 @@
 				}
 				r(e, t), e.prototype = null === t ? Object.create(t) : (n.prototype = t.prototype, new n)
 			}
+		},
+		"./node_modules/whatwg-fetch/fetch.js": function(e, t, n) {
+			"use strict";
+			n.r(t), n.d(t, "Headers", (function() {
+				return l
+			})), n.d(t, "Request", (function() {
+				return C
+			})), n.d(t, "Response", (function() {
+				return _
+			})), n.d(t, "DOMException", (function() {
+				return g
+			})), n.d(t, "fetch", (function() {
+				return k
+			}));
+			var r = "undefined" != typeof globalThis && globalThis || "undefined" != typeof self && self || void 0 !== r && r,
+				i = {
+					searchParams: "URLSearchParams" in r,
+					iterable: "Symbol" in r && "iterator" in Symbol,
+					blob: "FileReader" in r && "Blob" in r && function() {
+						try {
+							return new Blob, !0
+						} catch (e) {
+							return !1
+						}
+					}(),
+					formData: "FormData" in r,
+					arrayBuffer: "ArrayBuffer" in r
+				};
+			if (i.arrayBuffer) var o = ["[object Int8Array]", "[object Uint8Array]", "[object Uint8ClampedArray]", "[object Int16Array]", "[object Uint16Array]", "[object Int32Array]", "[object Uint32Array]", "[object Float32Array]", "[object Float64Array]"],
+				a = ArrayBuffer.isView || function(e) {
+					return e && o.indexOf(Object.prototype.toString.call(e)) > -1
+				};
+
+			function s(e) {
+				if ("string" != typeof e && (e = String(e)), /[^a-z0-9\-#$%&'*+.^_`|~!]/i.test(e) || "" === e) throw new TypeError('Invalid character in header field name: "' + e + '"');
+				return e.toLowerCase()
+			}
+
+			function c(e) {
+				return "string" != typeof e && (e = String(e)), e
+			}
+
+			function u(e) {
+				var t = {
+					next: function() {
+						var t = e.shift();
+						return {
+							done: void 0 === t,
+							value: t
+						}
+					}
+				};
+				return i.iterable && (t[Symbol.iterator] = function() {
+					return t
+				}), t
+			}
+
+			function l(e) {
+				this.map = {}, e instanceof l ? e.forEach((function(e, t) {
+					this.append(t, e)
+				}), this) : Array.isArray(e) ? e.forEach((function(e) {
+					this.append(e[0], e[1])
+				}), this) : e && Object.getOwnPropertyNames(e).forEach((function(t) {
+					this.append(t, e[t])
+				}), this)
+			}
+
+			function d(e) {
+				if (e.bodyUsed) return Promise.reject(new TypeError("Already read"));
+				e.bodyUsed = !0
+			}
+
+			function f(e) {
+				return new Promise((function(t, n) {
+					e.onload = function() {
+						t(e.result)
+					}, e.onerror = function() {
+						n(e.error)
+					}
+				}))
+			}
+
+			function p(e) {
+				var t = new FileReader,
+					n = f(t);
+				return t.readAsArrayBuffer(e), n
+			}
+
+			function v(e) {
+				if (e.slice) return e.slice(0);
+				var t = new Uint8Array(e.byteLength);
+				return t.set(new Uint8Array(e)), t.buffer
+			}
+
+			function h() {
+				return this.bodyUsed = !1, this._initBody = function(e) {
+					var t;
+					this.bodyUsed = this.bodyUsed, this._bodyInit = e, e ? "string" == typeof e ? this._bodyText = e : i.blob && Blob.prototype.isPrototypeOf(e) ? this._bodyBlob = e : i.formData && FormData.prototype.isPrototypeOf(e) ? this._bodyFormData = e : i.searchParams && URLSearchParams.prototype.isPrototypeOf(e) ? this._bodyText = e.toString() : i.arrayBuffer && i.blob && ((t = e) && DataView.prototype.isPrototypeOf(t)) ? (this._bodyArrayBuffer = v(e.buffer), this._bodyInit = new Blob([this._bodyArrayBuffer])) : i.arrayBuffer && (ArrayBuffer.prototype.isPrototypeOf(e) || a(e)) ? this._bodyArrayBuffer = v(e) : this._bodyText = e = Object.prototype.toString.call(e) : this._bodyText = "", this.headers.get("content-type") || ("string" == typeof e ? this.headers.set("content-type", "text/plain;charset=UTF-8") : this._bodyBlob && this._bodyBlob.type ? this.headers.set("content-type", this._bodyBlob.type) : i.searchParams && URLSearchParams.prototype.isPrototypeOf(e) && this.headers.set("content-type", "application/x-www-form-urlencoded;charset=UTF-8"))
+				}, i.blob && (this.blob = function() {
+					var e = d(this);
+					if (e) return e;
+					if (this._bodyBlob) return Promise.resolve(this._bodyBlob);
+					if (this._bodyArrayBuffer) return Promise.resolve(new Blob([this._bodyArrayBuffer]));
+					if (this._bodyFormData) throw new Error("could not read FormData body as blob");
+					return Promise.resolve(new Blob([this._bodyText]))
+				}, this.arrayBuffer = function() {
+					if (this._bodyArrayBuffer) {
+						var e = d(this);
+						return e || (ArrayBuffer.isView(this._bodyArrayBuffer) ? Promise.resolve(this._bodyArrayBuffer.buffer.slice(this._bodyArrayBuffer.byteOffset, this._bodyArrayBuffer.byteOffset + this._bodyArrayBuffer.byteLength)) : Promise.resolve(this._bodyArrayBuffer))
+					}
+					return this.blob().then(p)
+				}), this.text = function() {
+					var e, t, n, r = d(this);
+					if (r) return r;
+					if (this._bodyBlob) return e = this._bodyBlob, t = new FileReader, n = f(t), t.readAsText(e), n;
+					if (this._bodyArrayBuffer) return Promise.resolve(function(e) {
+						for (var t = new Uint8Array(e), n = new Array(t.length), r = 0; r < t.length; r++) n[r] = String.fromCharCode(t[r]);
+						return n.join("")
+					}(this._bodyArrayBuffer));
+					if (this._bodyFormData) throw new Error("could not read FormData body as text");
+					return Promise.resolve(this._bodyText)
+				}, i.formData && (this.formData = function() {
+					return this.text().then(y)
+				}), this.json = function() {
+					return this.text().then(JSON.parse)
+				}, this
+			}
+			l.prototype.append = function(e, t) {
+				e = s(e), t = c(t);
+				var n = this.map[e];
+				this.map[e] = n ? n + ", " + t : t
+			}, l.prototype.delete = function(e) {
+				delete this.map[s(e)]
+			}, l.prototype.get = function(e) {
+				return e = s(e), this.has(e) ? this.map[e] : null
+			}, l.prototype.has = function(e) {
+				return this.map.hasOwnProperty(s(e))
+			}, l.prototype.set = function(e, t) {
+				this.map[s(e)] = c(t)
+			}, l.prototype.forEach = function(e, t) {
+				for (var n in this.map) this.map.hasOwnProperty(n) && e.call(t, this.map[n], n, this)
+			}, l.prototype.keys = function() {
+				var e = [];
+				return this.forEach((function(t, n) {
+					e.push(n)
+				})), u(e)
+			}, l.prototype.values = function() {
+				var e = [];
+				return this.forEach((function(t) {
+					e.push(t)
+				})), u(e)
+			}, l.prototype.entries = function() {
+				var e = [];
+				return this.forEach((function(t, n) {
+					e.push([n, t])
+				})), u(e)
+			}, i.iterable && (l.prototype[Symbol.iterator] = l.prototype.entries);
+			var m = ["DELETE", "GET", "HEAD", "OPTIONS", "POST", "PUT"];
+
+			function C(e, t) {
+				if (!(this instanceof C)) throw new TypeError('Please use the "new" operator, this DOM object constructor cannot be called as a function.');
+				var n, r, i = (t = t || {}).body;
+				if (e instanceof C) {
+					if (e.bodyUsed) throw new TypeError("Already read");
+					this.url = e.url, this.credentials = e.credentials, t.headers || (this.headers = new l(e.headers)), this.method = e.method, this.mode = e.mode, this.signal = e.signal, i || null == e._bodyInit || (i = e._bodyInit, e.bodyUsed = !0)
+				} else this.url = String(e);
+				if (this.credentials = t.credentials || this.credentials || "same-origin", !t.headers && this.headers || (this.headers = new l(t.headers)), this.method = (n = t.method || this.method || "GET", r = n.toUpperCase(), m.indexOf(r) > -1 ? r : n), this.mode = t.mode || this.mode || null, this.signal = t.signal || this.signal, this.referrer = null, ("GET" === this.method || "HEAD" === this.method) && i) throw new TypeError("Body not allowed for GET or HEAD requests");
+				if (this._initBody(i), !("GET" !== this.method && "HEAD" !== this.method || "no-store" !== t.cache && "no-cache" !== t.cache)) {
+					var o = /([?&])_=[^&]*/;
+					if (o.test(this.url)) this.url = this.url.replace(o, "$1_=" + (new Date).getTime());
+					else {
+						this.url += (/\?/.test(this.url) ? "&" : "?") + "_=" + (new Date).getTime()
+					}
+				}
+			}
+
+			function y(e) {
+				var t = new FormData;
+				return e.trim().split("&").forEach((function(e) {
+					if (e) {
+						var n = e.split("="),
+							r = n.shift().replace(/\+/g, " "),
+							i = n.join("=").replace(/\+/g, " ");
+						t.append(decodeURIComponent(r), decodeURIComponent(i))
+					}
+				})), t
+			}
+
+			function _(e, t) {
+				if (!(this instanceof _)) throw new TypeError('Please use the "new" operator, this DOM object constructor cannot be called as a function.');
+				t || (t = {}), this.type = "default", this.status = void 0 === t.status ? 200 : t.status, this.ok = this.status >= 200 && this.status < 300, this.statusText = void 0 === t.statusText ? "" : "" + t.statusText, this.headers = new l(t.headers), this.url = t.url || "", this._initBody(e)
+			}
+			C.prototype.clone = function() {
+				return new C(this, {
+					body: this._bodyInit
+				})
+			}, h.call(C.prototype), h.call(_.prototype), _.prototype.clone = function() {
+				return new _(this._bodyInit, {
+					status: this.status,
+					statusText: this.statusText,
+					headers: new l(this.headers),
+					url: this.url
+				})
+			}, _.error = function() {
+				var e = new _(null, {
+					status: 0,
+					statusText: ""
+				});
+				return e.type = "error", e
+			};
+			var b = [301, 302, 303, 307, 308];
+			_.redirect = function(e, t) {
+				if (-1 === b.indexOf(t)) throw new RangeError("Invalid status code");
+				return new _(null, {
+					status: t,
+					headers: {
+						location: e
+					}
+				})
+			};
+			var g = r.DOMException;
+			try {
+				new g
+			} catch (w) {
+				(g = function(e, t) {
+					this.message = e, this.name = t;
+					var n = Error(e);
+					this.stack = n.stack
+				}).prototype = Object.create(Error.prototype), g.prototype.constructor = g
+			}
+
+			function k(e, t) {
+				return new Promise((function(n, o) {
+					var a = new C(e, t);
+					if (a.signal && a.signal.aborted) return o(new g("Aborted", "AbortError"));
+					var s = new XMLHttpRequest;
+
+					function u() {
+						s.abort()
+					}
+					s.onload = function() {
+						var e, t, r = {
+							status: s.status,
+							statusText: s.statusText,
+							headers: (e = s.getAllResponseHeaders() || "", t = new l, e.replace(/\r?\n[\t ]+/g, " ").split("\r").map((function(e) {
+								return 0 === e.indexOf("\n") ? e.substr(1, e.length) : e
+							})).forEach((function(e) {
+								var n = e.split(":"),
+									r = n.shift().trim();
+								if (r) {
+									var i = n.join(":").trim();
+									t.append(r, i)
+								}
+							})), t)
+						};
+						r.url = "responseURL" in s ? s.responseURL : r.headers.get("X-Request-URL");
+						var i = "response" in s ? s.response : s.responseText;
+						setTimeout((function() {
+							n(new _(i, r))
+						}), 0)
+					}, s.onerror = function() {
+						setTimeout((function() {
+							o(new TypeError("Network request failed"))
+						}), 0)
+					}, s.ontimeout = function() {
+						setTimeout((function() {
+							o(new TypeError("Network request failed"))
+						}), 0)
+					}, s.onabort = function() {
+						setTimeout((function() {
+							o(new g("Aborted", "AbortError"))
+						}), 0)
+					}, s.open(a.method, function(e) {
+						try {
+							return "" === e && r.location.href ? r.location.href : e
+						} catch (t) {
+							return e
+						}
+					}(a.url), !0), "include" === a.credentials ? s.withCredentials = !0 : "omit" === a.credentials && (s.withCredentials = !1), "responseType" in s && (i.blob ? s.responseType = "blob" : i.arrayBuffer && a.headers.get("Content-Type") && -1 !== a.headers.get("Content-Type").indexOf("application/octet-stream") && (s.responseType = "arraybuffer")), !t || "object" != typeof t.headers || t.headers instanceof l ? a.headers.forEach((function(e, t) {
+						s.setRequestHeader(t, e)
+					})) : Object.getOwnPropertyNames(t.headers).forEach((function(e) {
+						s.setRequestHeader(e, c(t.headers[e]))
+					})), a.signal && (a.signal.addEventListener("abort", u), s.onreadystatechange = function() {
+						4 === s.readyState && a.signal.removeEventListener("abort", u)
+					}), s.send(void 0 === a._bodyInit ? null : a._bodyInit)
+				}))
+			}
+			k.polyfill = !0, r.fetch || (r.fetch = k, r.Headers = l, r.Request = C, r.Response = _)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.52e1f340a1e69aaf17b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/4.1b440af6c6b07f29cece.js.map

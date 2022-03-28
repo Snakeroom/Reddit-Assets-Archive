@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.8168ef82878fd54a57af.js
-// Retrieved at 1/6/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.d01d4a908cabe0534c96.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ChatSettings"], {
 		"./src/reddit/components/ModHub/ChatSettings/AccessDisabledBanner/index.m.less": function(e, t, s) {
@@ -73,36 +73,42 @@
 				k = s("./src/reddit/icons/fonts/index.tsx"),
 				O = s("./src/reddit/components/ModHub/ChatSettings/FormPlaceholder/index.m.less"),
 				w = s.n(O);
-			const y = ({
-				subredditName: e
-			}) => c.a.createElement(L.c, {
-				text: n.fbt._("No chat settings in r/{subredditName}", [n.fbt._param("subredditName", e)], {
-					hk: "268tZg"
-				})
-			}, c.a.createElement(k.a, {
-				name: "settings",
-				className: w.a.SettingsIcon
-			}));
-			var B = ({
-					isLoading: e
-				}) => c.a.createElement("div", {
-					className: Object(N.a)(w.a.container, Object(j.a)({
-						isLoading: !1
-					}))
-				}, c.a.createElement("div", {
-					className: w.a.section
-				}, c.a.createElement("div", {
-					className: Object(N.a)(w.a.sectionTitle, Object(j.b)({
-						isLoading: e
-					}))
-				}), c.a.createElement("div", {
-					className: w.a.line
-				}), E()(5).map(t => c.a.createElement("div", {
-					key: t,
-					className: Object(N.a)(w.a.sectionBodyRow, Object(j.b)({
-						isLoading: e
-					}))
-				})))),
+			const y = e => {
+				let {
+					subredditName: t
+				} = e;
+				return c.a.createElement(L.c, {
+					text: n.fbt._("No chat settings in r/{subredditName}", [n.fbt._param("subredditName", t)], {
+						hk: "268tZg"
+					})
+				}, c.a.createElement(k.a, {
+					name: "settings",
+					className: w.a.SettingsIcon
+				}))
+			};
+			var B = e => {
+					let {
+						isLoading: t
+					} = e;
+					return c.a.createElement("div", {
+						className: Object(N.a)(w.a.container, Object(j.a)({
+							isLoading: !1
+						}))
+					}, c.a.createElement("div", {
+						className: w.a.section
+					}, c.a.createElement("div", {
+						className: Object(N.a)(w.a.sectionTitle, Object(j.b)({
+							isLoading: t
+						}))
+					}), c.a.createElement("div", {
+						className: w.a.line
+					}), E()(5).map(e => c.a.createElement("div", {
+						key: e,
+						className: Object(N.a)(w.a.sectionBodyRow, Object(j.b)({
+							isLoading: t
+						}))
+					}))))
+				},
 				M = (s("./node_modules/core-js/modules/web.dom.iterable.js"), s("./src/lib/logs/console.ts")),
 				H = s("./src/lib/lessComponent.tsx"),
 				I = s("./src/reddit/components/Settings/shared/Widgets.tsx"),
@@ -110,34 +116,37 @@
 				P = s("./src/reddit/components/ModHub/ChatSettings/index.m.less"),
 				A = s.n(P);
 			const F = H.a.wrapped(I.p, "toggleSetting", A.a);
-			var D = ({
-					controlState: e,
-					controlState: {
-						state: t,
-						isEditable: s,
-						title: a,
-						description: o,
-						descriptionUrl: i
-					},
-					onChange: r
-				}) => c.a.createElement(F, {
-					on: t,
-					forceOn: !0,
-					disabled: !s,
-					onClick: () => r({
-						...e,
-						state: !t
-					}),
-					label: a,
-					subtext: o && c.a.createElement("span", null, o, i && c.a.createElement(U.a, {
-						className: A.a.welcomeMessageHelpLink,
-						href: i,
-						rel: "noopener noreferrer",
-						target: "_blank"
-					}, n.fbt._("Learn more.", null, {
-						hk: "180L0O"
-					})))
-				}),
+			var D = e => {
+					let {
+						controlState: t,
+						controlState: {
+							state: s,
+							isEditable: a,
+							title: o,
+							description: i,
+							descriptionUrl: r
+						},
+						onChange: d
+					} = e;
+					return c.a.createElement(F, {
+						on: s,
+						forceOn: !0,
+						disabled: !a,
+						onClick: () => d({
+							...t,
+							state: !s
+						}),
+						label: o,
+						subtext: i && c.a.createElement("span", null, i, r && c.a.createElement(U.a, {
+							className: A.a.welcomeMessageHelpLink,
+							href: r,
+							rel: "noopener noreferrer",
+							target: "_blank"
+						}, n.fbt._("Learn more.", null, {
+							hk: "180L0O"
+						})))
+					})
+				},
 				R = s("./src/reddit/models/ChatSettingsPage/index.ts");
 
 			function T() {
@@ -213,22 +222,26 @@
 					isDiscardModalOpen: Object(Q.b)(J),
 					isLoading: z.b,
 					settings: z.a,
-					isChatModerator: (e, {
-						subredditId: t
-					}) => {
-						const s = {
-							subredditId: t
+					isChatModerator: (e, t) => {
+						let {
+							subredditId: s
+						} = t;
+						const n = {
+							subredditId: s
 						};
-						return Object(V.a)(e, s)
+						return Object(V.a)(e, n)
 					}
 				}),
-				ee = Object(l.b)($, (e, {
-					subredditId: t
-				}) => ({
-					closeAllModals: () => e(Object(g.f)()),
-					toggleModal: t => e(Object(g.i)(t)),
-					onSave: (s, n) => e(Object(h.f)(t, s, n))
-				}));
+				ee = Object(l.b)($, (e, t) => {
+					let {
+						subredditId: s
+					} = t;
+					return {
+						closeAllModals: () => e(Object(g.f)()),
+						toggleModal: t => e(Object(g.i)(t)),
+						onSave: (t, n) => e(Object(h.f)(s, t, n))
+					}
+				});
 			class te extends c.a.Component {
 				constructor(e) {
 					super(e), this.formBodyRef = c.a.createRef(), this.isUnmounted = !1, this.resetPendingNavigation = () => {
@@ -374,4 +387,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.8168ef82878fd54a57af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ChatSettings.d01d4a908cabe0534c96.js.map

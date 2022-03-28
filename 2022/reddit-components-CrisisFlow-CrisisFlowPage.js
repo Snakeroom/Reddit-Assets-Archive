@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.904a458bb38284aaeca7.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.c37224accc72673b1584.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CrisisFlow-CrisisFlowPage"], {
 		"./src/reddit/actions/reportFlow/index.ts": function(e, s, t) {
@@ -145,17 +145,20 @@
 					oneUsername: !0
 				},
 				U = g.a.div("CrisisPageWrapper", x.a),
-				W = Object(r.b)(null, (e, {
-					timestamp: s
-				}) => ({
-					onReportPostOrComment: (t, i, n) => {
-						e(Object(H.a)({
-							id: t,
-							reportFlowPayload: i,
-							timestamp: s
-						}, n))
+				W = Object(r.b)(null, (e, s) => {
+					let {
+						timestamp: t
+					} = s;
+					return {
+						onReportPostOrComment: (s, i, n) => {
+							e(Object(H.a)({
+								id: s,
+								reportFlowPayload: i,
+								timestamp: t
+							}, n))
+						}
 					}
-				}));
+				});
 			class J extends n.a.Component {
 				constructor(e) {
 					super(e), this.onCrisisFlowSubmit = () => {
@@ -272,19 +275,22 @@
 				r = t("./src/lib/classNames/index.ts"),
 				o = t("./src/reddit/controls/LoadingIcon/index.m.less"),
 				a = t.n(o);
-			s.a = ({
-				center: e,
-				className: s,
-				sizePx: t = 10
-			}) => n.a.createElement("div", {
-				className: Object(r.a)(a.a.loadingIcon, s, {
-					[a.a.mCentered]: e
-				}),
-				style: {
-					"--sizePx": `${t}px`
-				},
-				"data-testid": "LoadingIcon"
-			})
+			s.a = e => {
+				let {
+					center: s,
+					className: t,
+					sizePx: i = 10
+				} = e;
+				return n.a.createElement("div", {
+					className: Object(r.a)(a.a.loadingIcon, t, {
+						[a.a.mCentered]: s
+					}),
+					style: {
+						"--sizePx": `${i}px`
+					},
+					"data-testid": "LoadingIcon"
+				})
+			}
 		},
 		"./src/reddit/endpoints/post/report.ts": function(e, s, t) {
 			"use strict";
@@ -568,4 +574,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.904a458bb38284aaeca7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.c37224accc72673b1584.js.map

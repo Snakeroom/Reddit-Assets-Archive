@@ -1,11 +1,13 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.a617106abc1a8abc2cc2.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.c00ab6d207c1671a4caf.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./src/reddit/actions/util/pollActionForSuccess.ts": function(e, t, a) {
 			"use strict";
 
-			function l(e, t, a = 3e4, l = 3e5) {
+			function l(e, t) {
+				let a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 3e4,
+					l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 3e5;
 				return async (n, c, s) => new Promise((r, o) => {
 					const i = Date.now() + l,
 						d = () => {
@@ -44,13 +46,16 @@
 				o = a("./src/reddit/icons/svgs/Close/index.tsx"),
 				i = a("./src/reddit/components/Governance/ModalClose/index.m.less"),
 				d = a.n(i);
-			t.a = Object(c.b)(void 0, (e, {
-				afterClose: t
-			}) => ({
-				onClose: () => {
-					e(Object(r.f)()), t && t()
+			t.a = Object(c.b)(void 0, (e, t) => {
+				let {
+					afterClose: a
+				} = t;
+				return {
+					onClose: () => {
+						e(Object(r.f)()), a && a()
+					}
 				}
-			}))((function(e) {
+			})((function(e) {
 				return n.a.createElement(o.a, {
 					className: Object(s.a)(d.a.closeIcon, e.className),
 					onClick: e.onClose
@@ -106,9 +111,12 @@
 				d = a("./src/reddit/components/Governance/Token/index.m.less"),
 				m = a.n(d);
 			const u = Object(s.c)({
-				pointsDetails: (e, {
-					subredditId: t
-				}) => Object(i.b)(e, t)
+				pointsDetails: (e, t) => {
+					let {
+						subredditId: a
+					} = t;
+					return Object(i.b)(e, a)
+				}
 			});
 			t.a = Object(c.b)(u)((function(e) {
 				var t;
@@ -153,9 +161,12 @@
 				u = a("./src/reddit/components/Governance/TokenAmount/index.m.less"),
 				h = a.n(u);
 			const p = Object(s.c)({
-				pointsDetails: (e, {
-					subredditId: t
-				}) => Object(m.b)(e, t)
+				pointsDetails: (e, t) => {
+					let {
+						subredditId: a
+					} = t;
+					return Object(m.b)(e, a)
+				}
 			});
 			t.a = Object(c.b)(p)((function(e) {
 				var t;
@@ -512,8 +523,8 @@
 			}
 			var x = a("./node_modules/bignumber.js/bignumber.js"),
 				M = a("./src/reddit/actions/governance/index.ts"),
-				C = a("./src/reddit/actions/modal.ts"),
-				g = a("./src/reddit/actions/toaster.ts"),
+				g = a("./src/reddit/actions/modal.ts"),
+				C = a("./src/reddit/actions/toaster.ts"),
 				N = a("./src/reddit/actions/util/pollActionForSuccess.ts"),
 				_ = a("./src/reddit/endpoints/governance/crypto.ts"),
 				w = a("./src/reddit/helpers/crypto/transactions.ts"),
@@ -579,7 +590,7 @@
 					burnMemo: a,
 					subreddit: l,
 					pointsDetails: s
-				} = e, r = Object(c.d)(), o = Object(F.a)(), d = () => r(Object(C.f)()), m = l.id, u = Object(c.e)(e => Object(k.e)(e, {
+				} = e, r = Object(c.d)(), o = Object(F.a)(), d = () => r(Object(g.f)()), m = l.id, u = Object(c.e)(e => Object(k.e)(e, {
 					subredditId: m
 				})), h = new x.BigNumber(u).isGreaterThanOrEqualTo(t), p = Object(z.b)(t, null == s ? void 0 : s.displayConversion), v = s.contractAddress, f = Object(w.a)(v, t, a), b = e => {
 					o(Object(O.c)("burn_link", m, p, e))
@@ -599,10 +610,10 @@
 					onClose: d,
 					onTransactionSuccess: async e => {
 						d(), r(function(e) {
-							const t = Object(g.e)(i.fbt._("Burning your {pointsName}...", [i.fbt._param("pointsName", e)], {
+							const t = Object(C.e)(i.fbt._("Burning your {pointsName}...", [i.fbt._param("pointsName", e)], {
 								hk: "2LoC1g"
 							}), L.b.SuccessCommunity);
-							return t.duration = P, Object(g.f)(t)
+							return t.duration = P, Object(C.f)(t)
 						}(E));
 						try {
 							await async function(e, t, a, l, n) {
@@ -617,14 +628,14 @@
 									subredditId: l
 								}))
 							}(r, s, e.hash, l.id, u), o(Object(O.d)("burn_link", m, p)), r(function(e) {
-								const t = Object(g.e)(i.fbt._("Your {pointsName} were burnt!", [i.fbt._param("pointsName", e)], {
+								const t = Object(C.e)(i.fbt._("Your {pointsName} were burnt!", [i.fbt._param("pointsName", e)], {
 									hk: "1BHX95"
 								}), L.b.SuccessCommunityGreen);
-								return t.duration = P, Object(g.f)(t)
+								return t.duration = P, Object(C.f)(t)
 							}(E))
 						} catch (t) {
 							b(t.toString()), r(function(e) {
-								return Object(g.f)(Object(g.e)(i.fbt._("There was an error while burning your {pointsName}. Please try again later", [i.fbt._param("pointsName", e)], {
+								return Object(C.f)(Object(C.e)(i.fbt._("There was an error while burning your {pointsName}. Please try again later", [i.fbt._param("pointsName", e)], {
 									hk: "48Un5w"
 								}), L.b.Error))
 							}(E))
@@ -713,7 +724,7 @@
 			a.d(t, "a", (function() {
 				return M
 			})), a.d(t, "c", (function() {
-				return C
+				return g
 			}));
 			var l = a("./node_modules/fbt/lib/FbtPublic.js"),
 				n = a("./node_modules/lodash/uniqueId.js"),
@@ -823,7 +834,7 @@
 						key: t
 					}, e))) : null
 				},
-				C = e => i.a.createElement(M, {
+				g = e => i.a.createElement(M, {
 					fallbackMessage: l.fbt._("Something went wrong", null, {
 						hk: "Cw1BT"
 					}),
@@ -1040,19 +1051,22 @@
 				c = a("./src/lib/classNames/index.ts"),
 				s = a("./src/reddit/controls/LoadingIcon/index.m.less"),
 				r = a.n(s);
-			t.a = ({
-				center: e,
-				className: t,
-				sizePx: a = 10
-			}) => n.a.createElement("div", {
-				className: Object(c.a)(r.a.loadingIcon, t, {
-					[r.a.mCentered]: e
-				}),
-				style: {
-					"--sizePx": `${a}px`
-				},
-				"data-testid": "LoadingIcon"
-			})
+			t.a = e => {
+				let {
+					center: t,
+					className: a,
+					sizePx: l = 10
+				} = e;
+				return n.a.createElement("div", {
+					className: Object(c.a)(r.a.loadingIcon, a, {
+						[r.a.mCentered]: t
+					}),
+					style: {
+						"--sizePx": `${l}px`
+					},
+					"data-testid": "LoadingIcon"
+				})
+			}
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, a) {
 			"use strict";
@@ -1208,4 +1222,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.a617106abc1a8abc2cc2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.c00ab6d207c1671a4caf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.5c2d4a9cb59d467b7716.js
-// Retrieved at 2/16/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.877d30e08b3772eaa012.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDetailStickyHeader"], {
 		"./src/reddit/components/PostDetailStickyHeader/index.m.less": function(e, t, s) {
@@ -18,21 +18,22 @@
 				a = s("./src/reddit/components/PostContent/index.tsx"),
 				o = s("./src/reddit/components/PostDetailStickyHeader/index.m.less"),
 				c = s.n(o);
-			t.default = ({
-				post: e,
-				page: t
-			}) => {
-				const [s, o] = Object(i.useState)(!1);
+			t.default = e => {
+				let {
+					post: t,
+					page: s
+				} = e;
+				const [o, l] = Object(i.useState)(!1);
 				return Object(i.useEffect)(() => {
-					if (!e) return;
-					a.d.addListeners(a.b, () => o(!0)), a.d.addListeners(a.a, () => o(!1))
-				}, [e]), e ? d.a.createElement("div", {
+					if (!t) return;
+					a.d.addListeners(a.b, () => l(!0)), a.d.addListeners(a.a, () => l(!1))
+				}, [t]), t ? d.a.createElement("div", {
 					className: Object(n.a)(c.a.wrapper, {
-						[c.a.isVisible]: s
+						[c.a.isVisible]: o
 					})
 				}, d.a.createElement(r.a, {
-					post: e,
-					page: t,
+					post: t,
+					page: s,
 					hideCloseButton: !0,
 					useAdaptiveStyles: !0,
 					showSubreddit: !0
@@ -41,4 +42,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.5c2d4a9cb59d467b7716.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDetailStickyHeader.877d30e08b3772eaa012.js.map

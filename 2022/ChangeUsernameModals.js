@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.6423e6a17147bd7069f2.js
-// Retrieved at 3/22/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.2d0654ee86673fda1673.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -323,9 +323,12 @@
 				ce = e => s.fbt._("Nice name, u/{username}. May it serve you well.", [s.fbt._param("username", e)], {
 					hk: "3TWtHg"
 				}),
-				ie = e => e && e.fields && e.fields.length ? e.fields.map(({
-					msg: e
-				}) => e).join(", ") : (() => s.fbt._("Sorry, something went wrong. Try again later.", null, {
+				ie = e => e && e.fields && e.fields.length ? e.fields.map(e => {
+					let {
+						msg: t
+					} = e;
+					return t
+				}).join(", ") : (() => s.fbt._("Sorry, something went wrong. Try again later.", null, {
 					hk: "3HcWgL"
 				}))(),
 				le = Object(c.c)({
@@ -364,25 +367,26 @@
 						})), e(Object(l.e)(t, n))
 					}
 				}));
-			t.default = Object(i.a)(Object(E.b)(de(({
-				apiContext: e,
-				changeUsernameModalOpen: t,
-				closeModal: n,
-				confirmChangeUsername: r,
-				confirmKeepUsername: c,
-				confirmSaveUsernameModalOpen: i,
-				continueChangeUsername: l,
-				goBack: d,
-				interceptActionModalOpen: m,
-				isResponsiveSettingsEnabled: u,
-				saveUsernameError: p,
-				saveUsernameSuccess: h,
-				secondConfirmKeepUsernameModalOpen: A,
-				username: C
-			}) => {
-				const [b, f] = Object(a.useState)(C || ""), [E, N] = Object(a.useState)(!1), U = Object($.a)(), j = Object(a.useCallback)(async () => {
-					N(!0);
-					const t = await ((e, t) => Object(v.a)(Object(O.a)(e, [x.a]), {
+			t.default = Object(i.a)(Object(E.b)(de(e => {
+				let {
+					apiContext: t,
+					changeUsernameModalOpen: n,
+					closeModal: r,
+					confirmChangeUsername: c,
+					confirmKeepUsername: i,
+					confirmSaveUsernameModalOpen: l,
+					continueChangeUsername: d,
+					goBack: m,
+					interceptActionModalOpen: u,
+					isResponsiveSettingsEnabled: p,
+					saveUsernameError: h,
+					saveUsernameSuccess: A,
+					secondConfirmKeepUsernameModalOpen: C,
+					username: b
+				} = e;
+				const [f, E] = Object(a.useState)(b || ""), [N, U] = Object(a.useState)(!1), j = Object($.a)(), M = Object(a.useCallback)(async () => {
+					U(!0);
+					const e = await ((e, t) => Object(v.a)(Object(O.a)(e, [x.a]), {
 						method: g.jb.POST,
 						endpoint: `${e.apiUrl}/api/update_name`,
 						data: {
@@ -390,84 +394,84 @@
 							new_name: t
 						},
 						type: "form"
-					}))(e(), b);
-					t.ok ? (h(b, C), U(Object(X.j)())) : p(ie(t.error)), N(!1)
-				}, [e, C, U, p, h, b]);
-				return o.a.createElement(a.Fragment, null, m && o.a.createElement(q, {
+					}))(t(), f);
+					e.ok ? (A(f, b), j(Object(X.j)())) : h(ie(e.error)), U(!1)
+				}, [t, b, j, h, A, f]);
+				return o.a.createElement(a.Fragment, null, u && o.a.createElement(q, {
 					description: s.fbt._("Before continuing, confirm that you want to keep this as your Reddit username.", null, {
 						hk: "14rKrO"
 					}),
-					isResponsive: u,
+					isResponsive: p,
 					onPrimaryButtonClick: () => {
-						r(), U(Object(X.d)(X.a, "change"))
+						c(), j(Object(X.d)(X.a, "change"))
 					},
 					onSecondaryButtonClick: () => {
-						c(), U(Object(X.d)(X.a, "keep"))
+						i(), j(Object(X.d)(X.a, "keep"))
 					},
 					onView: () => {
-						U(Object(X.h)(X.a, !0))
+						j(Object(X.h)(X.a, !0))
 					},
 					primaryButtonText: ne,
 					secondaryButtonText: se,
-					username: b
-				}), A && o.a.createElement(q, {
+					username: f
+				}), C && o.a.createElement(q, {
 					description: s.fbt._("Ok, just to confirm your confirmation… Are you absolutely sure? This will be your name forever.", null, {
 						hk: "4lvkUG"
 					}),
-					isResponsive: u,
-					isSaving: E,
+					isResponsive: p,
+					isSaving: N,
 					isSecondConfirm: !0,
-					onClose: n,
+					onClose: r,
 					onPrimaryButtonClick: () => {
-						j(), U(Object(X.c)("keep"))
+						M(), j(Object(X.c)("keep"))
 					},
 					onSecondaryButtonClick: () => {
-						r(), U(Object(X.c)("change"))
+						c(), j(Object(X.c)("change"))
 					},
 					onView: () => {
-						U(Object(X.g)())
+						j(Object(X.g)())
 					},
-					primaryButtonText: E ? oe : se,
+					primaryButtonText: N ? oe : se,
 					secondaryButtonText: ne,
-					username: b
-				}), t && o.a.createElement(Z, {
-					initialUsername: C || "",
-					isResponsive: u,
-					onClose: n,
+					username: f
+				}), n && o.a.createElement(Z, {
+					initialUsername: b || "",
+					isResponsive: p,
+					onClose: r,
 					onContinue: () => {
-						l(), U(Object(X.e)())
+						d(), j(Object(X.e)())
 					},
 					onSelect: () => {
-						U(Object(X.f)())
+						j(Object(X.f)())
 					},
-					onUsernameChange: f,
+					onUsernameChange: E,
 					onView: () => {
-						U(Object(X.i)())
+						j(Object(X.i)())
 					},
 					title: s.fbt._("Change username", null, {
 						hk: "17XB7v"
 					}),
-					username: b
-				}), i && o.a.createElement(q, {
+					username: f
+				}), l && o.a.createElement(q, {
 					description: s.fbt._("Are you sure? This will be your username forever.", null, {
 						hk: "3JACTO"
 					}),
-					isResponsive: u,
+					isResponsive: p,
 					isSaveConfirm: !0,
-					isSaving: E,
-					onClose: n,
+					isSaving: N,
+					onClose: r,
 					onPrimaryButtonClick: () => {
-						j(), U(Object(X.c)("save"))
+						M(), j(Object(X.c)("save"))
 					},
 					onSecondaryButtonClick: () => {
-						d(), U(Object(X.c)("go_back"))
+						m(), j(Object(X.c)("go_back"))
 					},
 					onView: () => {
-						U(Object(X.g)())
+						j(Object(X.g)())
 					},
-					primaryButtonText: E ? oe : ae,
+					primaryButtonText: N ? oe : ae,
 					secondaryButtonText: re,
-					username: b
+					username: f
 				}))
 			})))
 		},
@@ -827,4 +831,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.6423e6a17147bd7069f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.2d0654ee86673fda1673.js.map

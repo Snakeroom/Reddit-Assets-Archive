@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.a13981460eb43de95485.js
-// Retrieved at 3/28/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.c1c5f56fc5cce77e61f1.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -13,39 +13,46 @@
 				d = a("./src/lib/classNames/index.ts"),
 				i = a("./src/reddit/components/SnoovatarModal/index.m.less"),
 				l = a.n(i);
-			t.a = Object(o.i)(({
-				className: e,
-				match: t,
-				location: a,
-				share: o,
-				source: i
-			}) => {
-				const u = new URLSearchParams(a.search);
-				u.append("platform", "desktop"), Object.entries(t.params).forEach(([e, t]) => u.append(e, t)), o && Object.entries(o).forEach(([e, t]) => u.set(e, t)), i && u.set("source", i);
-				const m = Object(n.e)(e => e.user.session),
-					v = Object(r.useRef)(null),
-					O = Object(r.useCallback)(e => {
-						m && e && e.postMessage({
+			t.a = Object(o.i)(e => {
+				let {
+					className: t,
+					match: a,
+					location: o,
+					share: i,
+					source: u
+				} = e;
+				const m = new URLSearchParams(o.search);
+				m.append("platform", "desktop"), Object.entries(a.params).forEach(e => {
+					let [t, a] = e;
+					return m.append(t, a)
+				}), i && Object.entries(i).forEach(e => {
+					let [t, a] = e;
+					return m.set(t, a)
+				}), u && m.set("source", u);
+				const v = Object(n.e)(e => e.user.session),
+					O = Object(r.useRef)(null),
+					f = Object(r.useCallback)(e => {
+						v && e && e.postMessage({
 							type: "injectAuth",
 							headers: {
-								Authorization: `Bearer ${m.accessToken}`
+								Authorization: `Bearer ${v.accessToken}`
 							},
-							expiration: new Date(m.expires).getTime()
+							expiration: new Date(v.expires).getTime()
 						}, c.a.snoovatarUrl)
-					}, [m]);
+					}, [v]);
 				return Object(r.useEffect)(() => {
 					var e;
-					return O(null === (e = null == v ? void 0 : v.current) || void 0 === e ? void 0 : e.contentWindow)
-				}, [v, O]), Object(r.useEffect)(() => {
+					return f(null === (e = null == O ? void 0 : O.current) || void 0 === e ? void 0 : e.contentWindow)
+				}, [O, f]), Object(r.useEffect)(() => {
 					const e = e => {
-						"refreshAuth" === (null == e ? void 0 : e.data) && O(e.source)
+						"refreshAuth" === (null == e ? void 0 : e.data) && f(e.source)
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
-				}, [O]), s.a.createElement("div", {
-					className: Object(d.a)(l.a.iframeContainer, e)
+				}, [f]), s.a.createElement("div", {
+					className: Object(d.a)(l.a.iframeContainer, t)
 				}, s.a.createElement("iframe", {
-					ref: v,
-					src: `${c.a.snoovatarUrl}/static/client/?${u.toString()}`
+					ref: O,
+					src: `${c.a.snoovatarUrl}/static/client/?${m.toString()}`
 				}))
 			})
 		},
@@ -164,4 +171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.a13981460eb43de95485.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.c1c5f56fc5cce77e61f1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.d191888ae708aa5b0d34.js
-// Retrieved at 3/28/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.cf7fa0a11d9ecf275262.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomSheetUpsellWrapper"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -60,13 +60,14 @@
 			var m = s("./src/reddit/components/Upsell/BottomSheetUpsellWrapper/index.m.less"),
 				h = s.n(m);
 
-			function x({
-				children: e
-			}) {
+			function x(e) {
+				let {
+					children: t
+				} = e;
 				return r.createElement(n.a, null, r.createElement("div", {
 					className: Object(o.a)(h.a.wrapper),
 					"data-testid": "bottom-sheet-upsell-wrapper"
-				}, e))
+				}, t))
 			}
 			t.default = function() {
 				! function() {
@@ -148,4 +149,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.d191888ae708aa5b0d34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomSheetUpsellWrapper.cf7fa0a11d9ecf275262.js.map

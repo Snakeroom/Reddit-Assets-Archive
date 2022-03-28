@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.329676ac15b80314501a.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.6736392c3377ecc6a3d6.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, s) {
@@ -910,19 +910,20 @@
 					}))
 				}
 			}
-			t.b = ({
-				className: e,
-				...t
-			}) => {
-				const s = Object(i.a)(g.a.row, e, {
-					[g.a.mIsInteractive]: !t.noHover,
-					[g.a.mIsSelected]: t.isSelected,
-					[g.a.topics]: t.isTopicsStyle,
-					[g.a.modNotes]: t.isModNotesStyle
+			t.b = e => {
+				let {
+					className: t,
+					...s
+				} = e;
+				const a = Object(i.a)(g.a.row, t, {
+					[g.a.mIsInteractive]: !s.noHover,
+					[g.a.mIsSelected]: s.isSelected,
+					[g.a.topics]: s.isTopicsStyle,
+					[g.a.modNotes]: s.isModNotesStyle
 				});
 				return r.a.createElement(x, b({
-					className: s
-				}, t))
+					className: a
+				}, s))
 			}
 		},
 		"./src/reddit/controls/Dropdown/row.m.less": function(e, t, s) {
@@ -1163,19 +1164,22 @@
 				o = s("./src/lib/classNames/index.ts"),
 				r = s("./src/reddit/controls/LoadingIcon/index.m.less"),
 				i = s.n(r);
-			t.a = ({
-				center: e,
-				className: t,
-				sizePx: s = 10
-			}) => n.a.createElement("div", {
-				className: Object(o.a)(i.a.loadingIcon, t, {
-					[i.a.mCentered]: e
-				}),
-				style: {
-					"--sizePx": `${s}px`
-				},
-				"data-testid": "LoadingIcon"
-			})
+			t.a = e => {
+				let {
+					center: t,
+					className: s,
+					sizePx: a = 10
+				} = e;
+				return n.a.createElement("div", {
+					className: Object(o.a)(i.a.loadingIcon, s, {
+						[i.a.mCentered]: t
+					}),
+					style: {
+						"--sizePx": `${a}px`
+					},
+					"data-testid": "LoadingIcon"
+				})
+			}
 		},
 		"./src/reddit/controls/UnstyledInternalLink/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1268,4 +1272,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.329676ac15b80314501a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.6736392c3377ecc6a3d6.js.map

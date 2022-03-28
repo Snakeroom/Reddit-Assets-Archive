@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextJsonEmoteTooltip.2d92ad7f6b0521ba9541.js
-// Retrieved at 1/10/2022, 2:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextJsonEmoteTooltip.e79e1792464b7bd12054.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextJsonEmoteTooltip"], {
 		"./src/reddit/components/OverlayAwareTooltip/index.tsx": function(e, t, n) {
@@ -74,19 +74,20 @@
 				x = n.n(u);
 			const O = {};
 			const h = Object(c.c)({
-					emote: (e, {
-						emoteId: t,
-						pageLayer: n
-					}) => {
-						const s = Object(p.b)(t),
-							o = Object(l.r)(e, {
-								pageLayer: n
+					emote: (e, t) => {
+						let {
+							emoteId: n,
+							pageLayer: s
+						} = t;
+						const o = Object(p.b)(n),
+							r = Object(l.r)(e, {
+								pageLayer: s
 							});
-						if (o) {
-							const n = o.id,
-								r = e.economics.emotes[n] || [];
-							for (const e of r)
-								if (e.emotes[s] && e.emotes[s].fullId === t) return e.emotes[s]
+						if (r) {
+							const t = r.id,
+								s = e.economics.emotes[t] || [];
+							for (const e of s)
+								if (e.emotes[o] && e.emotes[o].fullId === n) return e.emotes[o]
 						}
 					}
 				}),
@@ -113,4 +114,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextJsonEmoteTooltip.2d92ad7f6b0521ba9541.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextJsonEmoteTooltip.e79e1792464b7bd12054.js.map

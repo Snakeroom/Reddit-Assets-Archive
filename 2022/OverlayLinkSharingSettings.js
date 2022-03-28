@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.1160b30f95922be01e15.js
-// Retrieved at 2/7/2022, 1:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.2f333920343fb0423e46.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayLinkSharingSettings"], {
 		"./src/chat/components/OverlayLinkSharingSettings/index.m.less": function(e, t, n) {
@@ -52,31 +52,32 @@
 				T = n("./src/chat/selectors/inviteLink.ts"),
 				k = n("./src/chat/components/OverlayLinkSharingSettings/index.m.less"),
 				D = n.n(k);
-			const f = s.a.memo((function({
-				inviteLinkDataModelId: e,
-				isForDirect: t
-			}) {
-				const n = Object(i.d)(),
-					k = Object(i.e)(t => Object(T.a)(t, e)),
-					f = Object(i.e)(t => Object(T.b)(t, e)),
-					[N, j] = Object(o.useState)(k),
-					[g, y] = Object(o.useState)(f),
-					C = Object(l.b)(Object(E.a)(25)),
-					A = Object(l.b)(Object(E.a)(25));
-				Object(c.a)("EXPIRATION_DROPDOWN_ID", C.hide), Object(c.a)("MAX_USERS_DROPDOWN_ID", A.hide);
-				const w = (e, t) => {
-						t.stopPropagation(), "EXPIRATION_DROPDOWN_ID" === e ? (C.toggle(), A.hide()) : (C.hide(), A.toggle())
+			const f = s.a.memo((function(e) {
+				let {
+					inviteLinkDataModelId: t,
+					isForDirect: n
+				} = e;
+				const k = Object(i.d)(),
+					f = Object(i.e)(e => Object(T.a)(e, t)),
+					N = Object(i.e)(e => Object(T.b)(e, t)),
+					[j, g] = Object(o.useState)(f),
+					[y, C] = Object(o.useState)(N),
+					A = Object(l.b)(Object(E.a)(25)),
+					w = Object(l.b)(Object(E.a)(25));
+				Object(c.a)("EXPIRATION_DROPDOWN_ID", A.hide), Object(c.a)("MAX_USERS_DROPDOWN_ID", w.hide);
+				const P = (e, t) => {
+						t.stopPropagation(), "EXPIRATION_DROPDOWN_ID" === e ? (A.toggle(), w.hide()) : (A.hide(), w.toggle())
 					},
-					P = N !== k || g !== f,
-					L = Object(o.useMemo)(() => {
+					L = j !== f || y !== N,
+					B = Object(o.useMemo)(() => {
 						var e;
-						return N && (null === (e = d.d[N]) || void 0 === e ? void 0 : e.label())
-					}, [N]);
+						return j && (null === (e = d.d[j]) || void 0 === e ? void 0 : e.label())
+					}, [j]);
 				return s.a.createElement(x.a, {
 					isSettings: !0
 				}, s.a.createElement(u.a, {
-					showMenu: !t,
-					channelId: e,
+					showMenu: !n,
+					channelId: t,
 					title: a.fbt._("Invite link", null, {
 						hk: "1ZSsKA"
 					})
@@ -88,7 +89,7 @@
 						hk: "2FwfL3"
 					}),
 					actionButtonAction: () => {
-						n(Object(r.e)(e, t)), n(Object(p.o)(r.b.CHAT_SETTINGS))
+						k(Object(r.e)(t, n)), k(Object(p.o)(r.b.CHAT_SETTINGS))
 					},
 					actionButtonText: a.fbt._("Copy", null, {
 						hk: "1HCnre"
@@ -107,9 +108,46 @@
 					hk: "3qPRDT"
 				})), s.a.createElement("span", {
 					className: D.a.OptionValue,
-					onClick: e => w("MAX_USERS_DROPDOWN_ID", e)
-				}, s.a.createElement("span", null, g), s.a.createElement("div", {
+					onClick: e => P("MAX_USERS_DROPDOWN_ID", e)
+				}, s.a.createElement("span", null, y), s.a.createElement("div", {
 					tabIndex: 1
+				}, s.a.createElement("span", {
+					ref: w.target.ref
+				}, s.a.createElement(I.a, {
+					className: D.a.OptionValueIcon
+				})))), s.a.createElement(v.default, {
+					arrowProps: w.arrowProps,
+					popperProps: w.popperProps,
+					visible: w.visible,
+					hide: w.hide,
+					isInstant: !0,
+					noArrow: !0,
+					styled: !0
+				}, s.a.createElement("div", null, s.a.createElement("div", {
+					className: D.a.DropdownOptionsContainer,
+					id: "MAX_USERS_DROPDOWN_ID"
+				}, d.e.map(e => s.a.createElement(O.a, {
+					className: D.a.DropdownRow,
+					key: e,
+					displayText: String(e),
+					onClick: () => {
+						(e => {
+							C(e), w.hide(), k(Object(p.O)(r.a.MEMBER, e))
+						})(e)
+					},
+					tabIndex: 2,
+					isSelected: !(e !== y)
+				})))))), s.a.createElement("div", {
+					className: D.a.Option
+				}, s.a.createElement("span", {
+					className: D.a.OptionTitle
+				}, a.fbt._("Expires", null, {
+					hk: "2ptoyk"
+				})), s.a.createElement("span", {
+					className: D.a.OptionValue,
+					onClick: e => P("EXPIRATION_DROPDOWN_ID", e)
+				}, s.a.createElement("span", null, B), s.a.createElement("div", {
+					tabIndex: 2
 				}, s.a.createElement("span", {
 					ref: A.target.ref
 				}, s.a.createElement(I.a, {
@@ -124,57 +162,20 @@
 					styled: !0
 				}, s.a.createElement("div", null, s.a.createElement("div", {
 					className: D.a.DropdownOptionsContainer,
-					id: "MAX_USERS_DROPDOWN_ID"
-				}, d.e.map(e => s.a.createElement(O.a, {
-					className: D.a.DropdownRow,
-					key: e,
-					displayText: String(e),
-					onClick: () => {
-						(e => {
-							y(e), A.hide(), n(Object(p.O)(r.a.MEMBER, e))
-						})(e)
-					},
-					tabIndex: 2,
-					isSelected: !(e !== g)
-				})))))), s.a.createElement("div", {
-					className: D.a.Option
-				}, s.a.createElement("span", {
-					className: D.a.OptionTitle
-				}, a.fbt._("Expires", null, {
-					hk: "2ptoyk"
-				})), s.a.createElement("span", {
-					className: D.a.OptionValue,
-					onClick: e => w("EXPIRATION_DROPDOWN_ID", e)
-				}, s.a.createElement("span", null, L), s.a.createElement("div", {
-					tabIndex: 2
-				}, s.a.createElement("span", {
-					ref: C.target.ref
-				}, s.a.createElement(I.a, {
-					className: D.a.OptionValueIcon
-				})))), s.a.createElement(v.default, {
-					arrowProps: C.arrowProps,
-					popperProps: C.popperProps,
-					visible: C.visible,
-					hide: C.hide,
-					isInstant: !0,
-					noArrow: !0,
-					styled: !0
-				}, s.a.createElement("div", null, s.a.createElement("div", {
-					className: D.a.DropdownOptionsContainer,
 					id: "EXPIRATION_DROPDOWN_ID"
 				}, Object.keys(d.d).map((e, t) => {
-					var a, o;
+					var n, a;
 					return s.a.createElement(O.a, {
 						className: D.a.DropdownRow,
 						key: e,
-						displayText: (null === (a = d.d[e]) || void 0 === a ? void 0 : a.label()) || "",
+						displayText: (null === (n = d.d[e]) || void 0 === n ? void 0 : n.label()) || "",
 						onClick: () => {
 							(e => {
-								j(e), C.hide(), n(Object(p.O)(r.a.TIME, d.d[e].originalLabel))
+								g(e), A.hide(), k(Object(p.O)(r.a.TIME, d.d[e].originalLabel))
 							})(e)
 						},
 						tabIndex: 3,
-						isSelected: !((null === (o = d.d[e]) || void 0 === o ? void 0 : o.label()) !== L)
+						isSelected: !((null === (a = d.d[e]) || void 0 === a ? void 0 : a.label()) !== B)
 					})
 				})))))), s.a.createElement(S.a, {
 					text: a.fbt._("Reset link", null, {
@@ -184,12 +185,12 @@
 						hk: "3p3aDn"
 					}),
 					actionButtonAction: () => {
-						n(Object(r.g)(e, t)), n(Object(p.w)())
+						k(Object(r.g)(t, n)), k(Object(p.w)())
 					},
 					actionButtonText: a.fbt._("Reset", null, {
 						hk: "1AvXhB"
 					})
-				})), P ? s.a.createElement(b.a, {
+				})), L ? s.a.createElement(b.a, {
 					secondaryButtonText: a.fbt._("Cancel", null, {
 						hk: "2TSLl5"
 					}),
@@ -197,18 +198,18 @@
 						hk: "4yMsMq"
 					}),
 					primaryButtonAction: () => {
-						N && N !== k && n(Object(r.c)({
-							inviteLinkDataModelId: e,
-							durationLabel: N
-						})), g && g !== f && n(Object(r.d)({
-							inviteLinkDataModelId: e,
-							maxUsersCount: g
-						})), n(Object(m.g)({
+						j && j !== f && k(Object(r.c)({
+							inviteLinkDataModelId: t,
+							durationLabel: j
+						})), y && y !== N && k(Object(r.d)({
+							inviteLinkDataModelId: t,
+							maxUsersCount: y
+						})), k(Object(m.g)({
 							toast: _.a.ChangesSaved
-						})), n(Object(m.c)())
+						})), k(Object(m.c)())
 					},
 					secondaryButtonAction: () => {
-						y(f), j(k)
+						C(N), g(f)
 					}
 				}) : null)
 			}));
@@ -240,31 +241,34 @@
 				i = n("./src/chat/controls/Button/index.tsx"),
 				c = n("./src/chat/controls/Settings/SectionItem/index.m.less"),
 				l = n.n(c);
-			t.a = ({
-				className: e,
-				text: t,
-				subtext: n,
-				actionButtonText: a,
-				actionButtonAction: c,
-				children: r
-			}) => o.a.createElement("div", {
-				className: Object(s.a)(l.a.SectionItem, e)
-			}, r ? o.a.createElement("div", {
-				className: l.a.Icon
-			}, r) : null, o.a.createElement("div", {
-				className: l.a.TextContainer
-			}, o.a.createElement("div", {
-				className: l.a.Text
-			}, t), n ? o.a.createElement("div", {
-				className: l.a.Subtext
-			}, n) : null), o.a.createElement("div", {
-				className: l.a.ActionButton
-			}, o.a.createElement(i.a, {
-				isSmall: !0,
-				secondary: !0,
-				className: l.a.Button,
-				onClick: c
-			}, a)))
+			t.a = e => {
+				let {
+					className: t,
+					text: n,
+					subtext: a,
+					actionButtonText: c,
+					actionButtonAction: r,
+					children: d
+				} = e;
+				return o.a.createElement("div", {
+					className: Object(s.a)(l.a.SectionItem, t)
+				}, d ? o.a.createElement("div", {
+					className: l.a.Icon
+				}, d) : null, o.a.createElement("div", {
+					className: l.a.TextContainer
+				}, o.a.createElement("div", {
+					className: l.a.Text
+				}, n), a ? o.a.createElement("div", {
+					className: l.a.Subtext
+				}, a) : null), o.a.createElement("div", {
+					className: l.a.ActionButton
+				}, o.a.createElement(i.a, {
+					isSmall: !0,
+					secondary: !0,
+					className: l.a.Button,
+					onClick: r
+				}, c)))
+			}
 		},
 		"./src/chat/controls/Settings/SectionTitle/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -278,12 +282,15 @@
 				o = n.n(a),
 				s = n("./src/chat/controls/Settings/SectionTitle/index.m.less"),
 				i = n.n(s);
-			t.a = ({
-				text: e
-			}) => o.a.createElement("div", {
-				className: i.a.SectionTitle
-			}, e)
+			t.a = e => {
+				let {
+					text: t
+				} = e;
+				return o.a.createElement("div", {
+					className: i.a.SectionTitle
+				}, t)
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.1160b30f95922be01e15.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayLinkSharingSettings.2f333920343fb0423e46.js.map

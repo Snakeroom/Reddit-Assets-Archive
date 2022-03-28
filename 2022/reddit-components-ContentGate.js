@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.e4fa860bb73c0b7c2976.js
-// Retrieved at 3/28/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.4db026350b2898953faf.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./node_modules/lodash/flatMap.js": function(e, t, n) {
@@ -208,19 +208,22 @@
 					return r > Date.now() - a
 				})(e),
 				isSeo: N.g
-			}), he = Object(j.u)(), pe = Object(s.b)(me, (e, {
-				subredditName: t
-			}) => ({
-				continueToQuarantinedSubreddit: async () => {
-					await e(h.D(t)), window.location.reload()
-				},
-				continueToGatedSubreddit: async () => {
-					await e(h.v(t)), window.location.reload()
-				},
-				setNSFWPreference: async () => {
-					await e(Object(m.o)())
+			}), he = Object(j.u)(), pe = Object(s.b)(me, (e, t) => {
+				let {
+					subredditName: n
+				} = t;
+				return {
+					continueToQuarantinedSubreddit: async () => {
+						await e(h.D(n)), window.location.reload()
+					},
+					continueToGatedSubreddit: async () => {
+						await e(h.v(n)), window.location.reload()
+					},
+					setNSFWPreference: async () => {
+						await e(Object(m.o)())
+					}
 				}
-			})), be = e => {
+			}), be = e => {
 				const {
 					banMessage: t,
 					contentGateType: n,
@@ -568,47 +571,51 @@
 					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.ob)(e),
 					userIsSuspended: b.W
 				});
-			t.a = Object(s.b)(g, (e, {
-				eventSource: t
-			}) => ({
-				openCommunityCreation: n => {
-					n(Object(p.c)(t)), e(Object(l.h)(m.a.SUBREDDIT_CREATION_MODAL_ID))
-				},
-				onShowTooltip: () => e(Object(c.f)({
-					tooltipId: k
-				})),
-				onHideTooltip: () => e(Object(c.i)())
-			}))(Object(d.c)(({
-				className: e,
-				eventSource: t,
-				onShowTooltip: n,
-				onHideTooltip: a,
-				openCommunityCreation: s,
-				sendEvent: i,
-				userDoesNotHaveEnoughExpToCreateCommunity: l,
-				userIsSuspended: c,
-				onClick: u
-			}) => {
-				return o.a.createElement(h.t, {
-					className: e,
-					disabled: c || l,
-					onClick: e => {
-						u && u(e), s(i)
+			t.a = Object(s.b)(g, (e, t) => {
+				let {
+					eventSource: n
+				} = t;
+				return {
+					openCommunityCreation: t => {
+						t(Object(p.c)(n)), e(Object(l.h)(m.a.SUBREDDIT_CREATION_MODAL_ID))
 					},
-					onMouseEnter: n,
-					onMouseLeave: a,
+					onShowTooltip: () => e(Object(c.f)({
+						tooltipId: k
+					})),
+					onHideTooltip: () => e(Object(c.i)())
+				}
+			})(Object(d.c)(e => {
+				let {
+					className: t,
+					eventSource: n,
+					onShowTooltip: a,
+					onHideTooltip: s,
+					openCommunityCreation: i,
+					sendEvent: l,
+					userDoesNotHaveEnoughExpToCreateCommunity: c,
+					userIsSuspended: u,
+					onClick: d
+				} = e;
+				return o.a.createElement(h.t, {
+					className: t,
+					disabled: u || c,
+					onClick: e => {
+						d && d(e), i(l)
+					},
+					onMouseEnter: a,
+					onMouseLeave: s,
 					priority: h.c.Secondary,
 					id: k,
 					isFullWidth: !0
 				}, r.fbt._("Create Community", null, {
 					hk: "28v7Qq"
-				}), l ? o.a.createElement(v, {
+				}), c ? o.a.createElement(v, {
 					caretOnTop: !0,
 					tooltipId: k,
 					text: r.fbt._("To prevent spam, accounts must be at least 30 days old and have enough positive karma to create communities.", null, {
 						hk: "2R1OXu"
 					})
-				}) : c ? o.a.createElement(v, {
+				}) : u ? o.a.createElement(v, {
 					caretOnTop: !0,
 					tooltipId: k,
 					text: r.fbt._("Accounts banned from the site can not create communities until the ban is lifted.", null, {
@@ -655,4 +662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.e4fa860bb73c0b7c2976.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.4db026350b2898953faf.js.map

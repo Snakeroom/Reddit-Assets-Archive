@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.610c34220536b8579f03.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.f8ad61ee9960891684ef.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-AdHocMultiredditSidebar"], {
 		"./src/reddit/actions/multireddit/constants.ts": function(e, t, n) {
@@ -254,14 +254,17 @@
 				A = o.a.wrapped(d.l, "PrimaryButton", l.a),
 				v = o.a.wrapped(d.o, "CancelButton", l.a),
 				P = o.a.wrapped(d.r, "RemoveButton", l.a),
-				y = ({
-					className: e,
-					...t
-				}) => a.a.createElement(d.t, _({
-					kind: d.b.Button,
-					priority: d.c.Primary,
-					className: Object(r.a)(l.a.ConfirmButton, e)
-				}, t))
+				y = e => {
+					let {
+						className: t,
+						...n
+					} = e;
+					return a.a.createElement(d.t, _({
+						kind: d.b.Button,
+						priority: d.c.Primary,
+						className: Object(r.a)(l.a.ConfirmButton, t)
+					}, n))
+				}
 		},
 		"./src/reddit/components/UserIcon/CurrentUserIcon.tsx": function(e, t, n) {
 			"use strict";
@@ -338,10 +341,11 @@
 			}
 			class _ extends o.a.Component {
 				constructor() {
-					super(...arguments), this.handleKeyDown = ({
-						keyCode: e
-					}) => {
-						e === i.a.Escape && this.props.closeModal()
+					super(...arguments), this.handleKeyDown = e => {
+						let {
+							keyCode: t
+						} = e;
+						t === i.a.Escape && this.props.closeModal()
 					}
 				}
 				render() {
@@ -429,4 +433,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.610c34220536b8579f03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.f8ad61ee9960891684ef.js.map

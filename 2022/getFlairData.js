@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/getFlairData.b702beb9335b837772bc.js
-// Retrieved at 3/21/2022, 5:00:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/getFlairData.35af2e4e8717a76fc1ee.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["getFlairData"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, r, t) {
@@ -102,13 +102,18 @@
 			const p = {},
 				c = e => {
 					var r, t;
-					return (null === (r = e.find(({
-						isPreferred: e
-					}) => e)) || void 0 === r ? void 0 : r.type) || (null === (t = e[0]) || void 0 === t ? void 0 : t.type)
+					return (null === (r = e.find(e => {
+						let {
+							isPreferred: r
+						} = e;
+						return r
+					})) || void 0 === r ? void 0 : r.type) || (null === (t = e[0]) || void 0 === t ? void 0 : t.type)
 				},
 				l = {};
 			r.a = Object(d.c)({
-				subredditPowerupsFlairs: (e = s, r) => {
+				subredditPowerupsFlairs: function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s,
+						r = arguments.length > 1 ? arguments[1] : void 0;
 					switch (r.type) {
 						case i.pb:
 							const {
@@ -132,7 +137,9 @@
 							return e
 					}
 				},
-				subredditUserPowerupsFlairs: (e = p, r) => {
+				subredditUserPowerupsFlairs: function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : p,
+						r = arguments.length > 1 ? arguments[1] : void 0;
 					switch (r.type) {
 						case o.d: {
 							const {
@@ -146,13 +153,19 @@
 									userAchievementFlairs: s
 								} of d) {
 								const t = s.filter(n.a),
-									d = t.map(({
-										type: e
-									}) => e),
+									d = t.map(e => {
+										let {
+											type: r
+										} = e;
+										return r
+									}),
 									u = s.filter(n.b),
-									o = u.map(({
-										type: e
-									}) => e),
+									o = u.map(e => {
+										let {
+											type: r
+										} = e;
+										return r
+									}),
 									p = c(t),
 									l = c(u);
 								i = {
@@ -225,7 +238,9 @@
 							return e
 					}
 				},
-				usersSupportedSubreddits: (e = l, r) => {
+				usersSupportedSubreddits: function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l,
+						r = arguments.length > 1 ? arguments[1] : void 0;
 					switch (r.type) {
 						case o.i: {
 							let t = {};
@@ -233,11 +248,17 @@
 								const r = e.id,
 									d = e.powerups;
 								if (!r || !d) return;
-								const i = d.supportedSubreddits.filter(({
-									subredditInfo: e
-								}) => null == e ? void 0 : e.id).map(({
-									subredditInfo: e
-								}) => e.id);
+								const i = d.supportedSubreddits.filter(e => {
+									let {
+										subredditInfo: r
+									} = e;
+									return null == r ? void 0 : r.id
+								}).map(e => {
+									let {
+										subredditInfo: r
+									} = e;
+									return r.id
+								});
 								t = {
 									...t,
 									[r]: i.reduce((e, r) => (e[r] = !0, e), {})
@@ -286,24 +307,27 @@
 					powerups: s.a
 				}
 			});
-			const u = (e, {
-					subredditId: r
-				}) => {
-					var t;
-					return r ? null === (t = e.features.powerups.subredditPowerupsFlairs) || void 0 === t ? void 0 : t[r] : null
+			const u = (e, r) => {
+					let {
+						subredditId: t
+					} = r;
+					var d;
+					return t ? null === (d = e.features.powerups.subredditPowerupsFlairs) || void 0 === d ? void 0 : d[t] : null
 				},
-				o = (e, {
-					subredditId: r
-				}) => {
-					var t, d;
-					return r ? null === (d = null === (t = e.features.powerups.subredditPowerupsFlairs) || void 0 === t ? void 0 : t[r]) || void 0 === d ? void 0 : d.flairsByType : null
-				},
-				p = (e, {
-					subredditId: r,
-					userId: t
-				}) => {
+				o = (e, r) => {
+					let {
+						subredditId: t
+					} = r;
 					var d, i;
-					return r && t ? null === (i = null === (d = e.features.powerups.subredditUserPowerupsFlairs) || void 0 === d ? void 0 : d[r]) || void 0 === i ? void 0 : i[t] : null
+					return t ? null === (i = null === (d = e.features.powerups.subredditPowerupsFlairs) || void 0 === d ? void 0 : d[t]) || void 0 === i ? void 0 : i.flairsByType : null
+				},
+				p = (e, r) => {
+					let {
+						subredditId: t,
+						userId: d
+					} = r;
+					var i, n;
+					return t && d ? null === (n = null === (i = e.features.powerups.subredditUserPowerupsFlairs) || void 0 === i ? void 0 : i[t]) || void 0 === n ? void 0 : n[d] : null
 				},
 				c = Object(d.a)(p, e => (null == e ? void 0 : e.pendingAchievementType) || (null == e ? void 0 : e.preferredAchievementType)),
 				l = Object(d.a)([o, c], (e, r) => e && r ? e[r] : null),
@@ -350,26 +374,28 @@
 					isLocked: !r.includes(e),
 					isPreferred: e === d
 				})).sort((e, r) => e.isLocked === r.isLocked ? 0 : e.isLocked ? 1 : -1),
-				S = (e, {
-					commentId: r
-				}) => {
-					const t = Object(i.b)(e, {
-							commentId: r
+				S = (e, r) => {
+					let {
+						commentId: t
+					} = r;
+					const d = Object(i.b)(e, {
+							commentId: t
 						}),
-						d = null == t ? void 0 : t.subredditId,
-						n = null == t ? void 0 : t.authorId;
-					return !(!d || !n) && !!((e, {
-						subredditId: r,
-						userId: t
-					}) => {
-						var d, i, n;
-						return r && t ? null === (n = null === (i = null === (d = e.features.powerups) || void 0 === d ? void 0 : d.usersSupportedSubreddits) || void 0 === i ? void 0 : i[t]) || void 0 === n ? void 0 : n[r] : null
+						n = null == d ? void 0 : d.subredditId,
+						s = null == d ? void 0 : d.authorId;
+					return !(!n || !s) && !!((e, r) => {
+						let {
+							subredditId: t,
+							userId: d
+						} = r;
+						var i, n, s;
+						return t && d ? null === (s = null === (n = null === (i = e.features.powerups) || void 0 === i ? void 0 : i.usersSupportedSubreddits) || void 0 === n ? void 0 : n[d]) || void 0 === s ? void 0 : s[t] : null
 					})(e, {
-						subredditId: d,
-						userId: n
+						subredditId: n,
+						userId: s
 					})
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.b702beb9335b837772bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.35af2e4e8717a76fc1ee.js.map

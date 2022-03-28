@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.8fd1669d940096d55989.js
-// Retrieved at 3/28/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.1da05fbc1e8239546177.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -43,12 +43,13 @@
 				m = Object(s.a)(r.a),
 				b = Object(s.a)(r.b),
 				p = Object(s.a)(r.c),
-				g = (e, t) => async (n, s, {
-					gqlContext: r
-				}) => {
+				g = (e, t) => async (n, s, r) => {
+					let {
+						gqlContext: g
+					} = r;
 					n(c());
-					const g = t === a.l ? async function() {
-						const t = await Object(i.a)(r(), e);
+					const h = t === a.l ? async function() {
+						const t = await Object(i.a)(g(), e);
 						if (!t.ok) {
 							const e = t.error;
 							return n(u({
@@ -56,10 +57,10 @@
 							})), null
 						}
 						const s = t.body,
-							a = s && s.data && s.data.nearbySubreddits;
-						return Object(d.a)(a)
+							r = s && s.data && s.data.nearbySubreddits;
+						return Object(d.a)(r)
 					}: async function() {
-						const t = await Object(o.a)(r(), e);
+						const t = await Object(o.a)(g(), e);
 						if (!t.ok) {
 							const e = t.error;
 							return void n(u({
@@ -67,23 +68,23 @@
 							}))
 						}
 						const s = t.body,
-							a = s && s.data && s.data.subredditLeaderboard;
-						return Object(d.b)(a)
-					}, h = await g();
-					if (!h) return;
+							r = s && s.data && s.data.subredditLeaderboard;
+						return Object(d.b)(r)
+					}, k = await h();
+					if (!k) return;
 					const {
-						pageInfo: k,
-						rankings: _,
-						subreddits: f
-					} = h;
+						pageInfo: _,
+						rankings: f,
+						subreddits: x
+					} = k;
 					n(m({
-						subreddits: f
+						subreddits: x
 					})), n(b({
 						categoryRankingsKey: t,
-						rankings: _
+						rankings: f
 					})), n(p({
 						categoryRankingsKey: t,
-						pageInfo: k
+						pageInfo: _
 					})), n(l())
 				}
 		},
@@ -157,79 +158,94 @@
 				C = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				w = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
 				F = n.n(w);
-			const B = ({
-					to: e,
-					title: t
-				}) => d.a.createElement(j.a, {
-					subredditName: t,
-					tooltipPosition: ["right", "top"]
-				}, d.a.createElement(T.a, {
-					className: F.a.Link,
-					to: e,
-					title: t
-				}, t)),
-				P = ({
-					title: e,
-					isOpened: t,
-					isExpanded: n,
-					children: s,
-					onToggle: r,
-					onExpand: a
-				}) => d.a.createElement("div", {
-					className: Object(O.a)(F.a.Section, {
-						[F.a.opened]: t,
-						[F.a.expanded]: n
-					})
-				}, d.a.createElement("div", {
-					className: F.a.SectionHeader,
-					onClick: r
-				}, d.a.createElement("div", {
-					className: F.a.SectionTitle
-				}, e), d.a.createElement(C.a, {
-					className: F.a.SectionChevron
-				})), d.a.createElement("div", {
-					className: F.a.SectionBody
-				}, d.a.createElement("div", {
-					className: F.a.SectionContent
-				}, s), d.a.createElement("div", {
-					className: F.a.SectionFooter
-				}, d.a.createElement(_.r, {
-					className: F.a.SectionButton,
-					onClick: a
-				}, n ? v.fbt._("Less", null, {
-					hk: "PF0lJ"
-				}) : v.fbt._("See more", null, {
-					hk: "439kAh"
-				})))));
+			const B = e => {
+					let {
+						to: t,
+						title: n
+					} = e;
+					return d.a.createElement(j.a, {
+						subredditName: n,
+						tooltipPosition: ["right", "top"]
+					}, d.a.createElement(T.a, {
+						className: F.a.Link,
+						to: t,
+						title: n
+					}, n))
+				},
+				P = e => {
+					let {
+						title: t,
+						isOpened: n,
+						isExpanded: s,
+						children: r,
+						onToggle: a,
+						onExpand: i
+					} = e;
+					return d.a.createElement("div", {
+						className: Object(O.a)(F.a.Section, {
+							[F.a.opened]: n,
+							[F.a.expanded]: s
+						})
+					}, d.a.createElement("div", {
+						className: F.a.SectionHeader,
+						onClick: a
+					}, d.a.createElement("div", {
+						className: F.a.SectionTitle
+					}, t), d.a.createElement(C.a, {
+						className: F.a.SectionChevron
+					})), d.a.createElement("div", {
+						className: F.a.SectionBody
+					}, d.a.createElement("div", {
+						className: F.a.SectionContent
+					}, r), d.a.createElement("div", {
+						className: F.a.SectionFooter
+					}, d.a.createElement(_.r, {
+						className: F.a.SectionButton,
+						onClick: i
+					}, s ? v.fbt._("Less", null, {
+						hk: "PF0lJ"
+					}) : v.fbt._("See more", null, {
+						hk: "439kAh"
+					})))))
+				};
 			class L extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						openedSection: 0,
 						isSectionExpanded: !1
 					}, this.onToggle = e => {
-						this.setState(({
-							openedSection: t
-						}) => t === e ? {
-							openedSection: -1,
-							isSectionExpanded: !1
-						} : {
-							openedSection: e,
-							isSectionExpanded: !1
+						this.setState(t => {
+							let {
+								openedSection: n
+							} = t;
+							return n === e ? {
+								openedSection: -1,
+								isSectionExpanded: !1
+							} : {
+								openedSection: e,
+								isSectionExpanded: !1
+							}
 						})
 					}, this.onExpand = () => {
-						this.setState(({
-							isSectionExpanded: e
-						}) => ({
-							isSectionExpanded: !e
-						}))
-					}, this.renderLink = ({
-						url: e,
-						title: t
-					}) => d.a.createElement(B, {
-						key: t,
-						to: e,
-						title: t
-					}), this.renderSection = (e, t) => d.a.createElement(P, {
+						this.setState(e => {
+							let {
+								isSectionExpanded: t
+							} = e;
+							return {
+								isSectionExpanded: !t
+							}
+						})
+					}, this.renderLink = e => {
+						let {
+							url: t,
+							title: n
+						} = e;
+						return d.a.createElement(B, {
+							key: n,
+							to: t,
+							title: n
+						})
+					}, this.renderSection = (e, t) => d.a.createElement(P, {
 						key: e.title,
 						title: e.title,
 						isOpened: this.isOpened(t),
@@ -379,16 +395,19 @@
 			});
 			var Se = Object(c.b)(Ne, (e, t) => ({
 					openLightbox: t => () => e(Object(be.a)(t.permalink))
-				}))(({
-					className: e,
-					recentPosts: t
-				}) => t && t.length ? d.a.createElement(h.a, null, d.a.createElement(xe, {
-					className: e,
-					headerText: v.fbt._("Recent posts", null, {
-						hk: "1olaOT"
-					}),
-					posts: t
-				})) : null),
+				}))(e => {
+					let {
+						className: t,
+						recentPosts: n
+					} = e;
+					return n && n.length ? d.a.createElement(h.a, null, d.a.createElement(xe, {
+						className: t,
+						headerText: v.fbt._("Recent posts", null, {
+							hk: "1olaOT"
+						}),
+						posts: n
+					})) : null
+				}),
 				Ee = n("./src/config.ts"),
 				ve = n("./src/lib/env/index.ts"),
 				Oe = n("./src/reddit/controls/Chip/index.tsx"),
@@ -1973,69 +1992,72 @@
 			}));
 			n("./node_modules/lodash/isEmpty.js");
 			var s = n("./src/reddit/helpers/graphql/normalizeSubredditFromGql/index.ts");
-			const r = ({
-					edges: e,
-					pageInfo: t
-				}) => {
+			const r = e => {
+					let {
+						edges: t,
+						pageInfo: n
+					} = e;
+					const r = {},
+						a = [];
+					for (const {
+							node: i,
+							...o
+						} of t) {
+						const e = Object(s.a)(i);
+						r[e.id] = e, a.push(o)
+					}
+					return {
+						pageInfo: n,
+						rankings: a,
+						subreddits: r
+					}
+				},
+				a = e => {
+					let {
+						edges: t
+					} = e;
 					const n = {},
 						r = [];
 					for (const {
 							node: a,
 							...i
-						} of e) {
+						} of t) {
 						const e = Object(s.a)(a);
-						n[e.id] = e, r.push(i)
+						n[e.id] = {
+							...e,
+							bannerBackgroundImage: a && a.styles && a.styles.bannerBackgroundImage
+						}, r.push(i)
 					}
 					return {
-						pageInfo: t,
 						rankings: r,
 						subreddits: n
 					}
 				},
-				a = ({
-					edges: e
-				}) => {
-					const t = {},
-						n = [];
+				i = e => {
+					let {
+						edges: t,
+						pageInfo: n
+					} = e;
+					const r = {},
+						a = [];
+					let i = 0;
 					for (const {
-							node: r,
-							...a
-						} of e) {
-						const e = Object(s.a)(r);
-						t[e.id] = {
+							node: o
+						} of t) {
+						const e = Object(s.a)(o);
+						r[e.id] = {
 							...e,
-							bannerBackgroundImage: r && r.styles && r.styles.bannerBackgroundImage
-						}, n.push(a)
-					}
-					return {
-						rankings: n,
-						subreddits: t
-					}
-				},
-				i = ({
-					edges: e,
-					pageInfo: t
-				}) => {
-					const n = {},
-						r = [];
-					let a = 0;
-					for (const {
-							node: i
-						} of e) {
-						const e = Object(s.a)(i);
-						n[e.id] = {
-							...e,
-							publicDescription: null == i ? void 0 : i.publicDescriptionText,
-							bannerBackgroundImage: i && i.styles && i.styles.bannerBackgroundImage
-						}, r.push({
+							publicDescription: null == o ? void 0 : o.publicDescriptionText,
+							bannerBackgroundImage: o && o.styles && o.styles.bannerBackgroundImage
+						}, a.push({
 							id: e.id,
-							rank: a
-						}), a += 1
+							rank: i
+						}), i += 1
 					}
 					return {
-						rankings: r,
-						subreddits: n,
-						pageInfo: t
+						rankings: a,
+						subreddits: r,
+						pageInfo: n
 					}
 				}
 		},
@@ -2196,4 +2218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.8fd1669d940096d55989.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.1da05fbc1e8239546177.js.map

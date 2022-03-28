@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GlobalModalContainer.1cf96a1a919d9d581ab6.js
-// Retrieved at 2/15/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GlobalModalContainer.d3cfbd02ca8ccaefd679.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GlobalModalContainer"], {
 		"./src/reddit/components/ConfirmModal/index.m.less": function(e, t, n) {
@@ -57,25 +57,28 @@
 					closeModal: r.f
 				},
 				m = Object(l.b)(null, d);
-			t.default = m(({
-				closeModal: e
-			}) => s.a.createElement(i.a, {
-				onCancel: e,
-				onAccept: e,
-				acceptText: o.fbt._("Ok, I got it", null, {
-					hk: "3rQKHA"
-				}),
-				headerText: o.fbt._("You've reached your pinning limit.", null, {
-					hk: "wfMMg"
-				}),
-				message: o.fbt._({
-					"*": "You can only pin {number} posts to the top of your profile. To pin something new, please unpin a post first.",
-					_1: "You can only pin 1 post to the top of your profile. To pin something new, please unpin a post first."
-				}, [o.fbt._plural(c.cb, "number")], {
-					hk: "3OxzcA"
+			t.default = m(e => {
+				let {
+					closeModal: t
+				} = e;
+				return s.a.createElement(i.a, {
+					onCancel: t,
+					onAccept: t,
+					acceptText: o.fbt._("Ok, I got it", null, {
+						hk: "3rQKHA"
+					}),
+					headerText: o.fbt._("You've reached your pinning limit.", null, {
+						hk: "wfMMg"
+					}),
+					message: o.fbt._({
+						"*": "You can only pin {number} posts to the top of your profile. To pin something new, please unpin a post first.",
+						_1: "You can only pin 1 post to the top of your profile. To pin something new, please unpin a post first."
+					}, [o.fbt._plural(c.cb, "number")], {
+						hk: "3OxzcA"
+					})
 				})
-			}))
+			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GlobalModalContainer.1cf96a1a919d9d581ab6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GlobalModalContainer.d3cfbd02ca8ccaefd679.js.map

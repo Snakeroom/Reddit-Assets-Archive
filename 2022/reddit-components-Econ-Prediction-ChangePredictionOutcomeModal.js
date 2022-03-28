@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.5f431b00899e247d3952.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.94f690ddc6533c434072.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-ChangePredictionOutcomeModal"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, n) {
@@ -30,28 +30,31 @@
 					predictions: i.a
 				}
 			});
-			const u = ({
-				postId: e,
-				closedAt: t
-			}) => async n => {
-				try {
-					await n(Object(o.d)(e, {
-						closedAt: t
-					})), n(Object(d.f)({
-						duration: d.a,
-						kind: a.b.SuccessCommunity,
-						text: l._("Updated", null, {
-							hk: "4cncaA"
-						})
-					}))
-				} catch {
-					(e => e(Object(d.f)({
-						duration: d.a,
-						kind: a.b.Error,
-						text: l._("Error: Failed to update prediction end time, please try again later", null, {
-							hk: "MkaNA"
-						})
-					})))(n)
+			const u = e => {
+				let {
+					postId: t,
+					closedAt: n
+				} = e;
+				return async e => {
+					try {
+						await e(Object(o.d)(t, {
+							closedAt: n
+						})), e(Object(d.f)({
+							duration: d.a,
+							kind: a.b.SuccessCommunity,
+							text: l._("Updated", null, {
+								hk: "4cncaA"
+							})
+						}))
+					} catch {
+						(e => e(Object(d.f)({
+							duration: d.a,
+							kind: a.b.Error,
+							text: l._("Error: Failed to update prediction end time, please try again later", null, {
+								hk: "MkaNA"
+							})
+						})))(e)
+					}
 				}
 			};
 
@@ -116,19 +119,20 @@
 				h = n("./src/reddit/selectors/posts.ts"),
 				E = n("./src/reddit/components/Econ/Prediction/ChangePredictionOutcomeModal/index.m.less"),
 				f = n.n(E);
-			const j = Object(r.a)(({
-					options: e,
-					resolvedOptionId: t,
-					onChangeOutcome: n,
-					onClose: d
-				}) => {
-					const [r, a] = Object(i.useState)(null);
+			const j = Object(r.a)(e => {
+					let {
+						options: t,
+						resolvedOptionId: n,
+						onChangeOutcome: d,
+						onClose: r
+					} = e;
+					const [a, l] = Object(i.useState)(null);
 					return s.a.createElement(u.e, {
 						className: f.a.modal
 					}, s.a.createElement(u.i, null, s.a.createElement(C.a, null, s.a.createElement(u.q, null, c.fbt._("Change the outcome", null, {
 						hk: "2KHNhY"
 					})), s.a.createElement(p.a, {
-						onClick: d
+						onClick: r
 					}, s.a.createElement(u.b, null)))), s.a.createElement(u.l, null, s.a.createElement("p", {
 						className: f.a.description
 					}, c.fbt._("Once you change the outcome of this prediction, tokens will be redistributed and we'll notify all the players.", null, {
@@ -137,29 +141,29 @@
 						className: f.a.descriptionWarning
 					}, c.fbt._("You can only change the outcome once.", null, {
 						hk: "2Bta7x"
-					}))), e.map(e => s.a.createElement("button", {
+					}))), t.map(e => s.a.createElement("button", {
 						key: e.id,
 						type: "button",
 						className: Object(o.a)(f.a.predictionOption, {
-							[f.a.selected]: e.id === (null == r ? void 0 : r.id)
+							[f.a.selected]: e.id === (null == a ? void 0 : a.id)
 						}),
-						disabled: e.id === t,
-						onClick: () => a(e)
-					}, r && e.id === r.id && s.a.createElement(_.a, {
+						disabled: e.id === n,
+						onClick: () => l(e)
+					}, a && e.id === a.id && s.a.createElement(_.a, {
 						className: f.a.icon
-					}), !r && e.id === t && s.a.createElement(_.a, {
+					}), !a && e.id === n && s.a.createElement(_.a, {
 						className: f.a.icon
 					}), s.a.createElement("span", {
 						className: f.a.predictionOptionLabel
 					}, e.text)))), s.a.createElement(u.g, null, s.a.createElement(u.a, {
-						onClick: d,
+						onClick: r,
 						"data-redditstyle": !0
 					}, c.fbt._("Cancel", null, {
 						hk: "2TSLl5"
 					})), s.a.createElement(u.c, {
-						disabled: !r,
+						disabled: !a,
 						onClick: () => {
-							r && n(r)
+							a && d(a)
 						}
 					}, c.fbt._("Confirm", null, {
 						hk: "EG1jI"
@@ -258,4 +262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.5f431b00899e247d3952.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-ChangePredictionOutcomeModal.94f690ddc6533c434072.js.map

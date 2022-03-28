@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.2a74a2c0c5ede88c26e3.js
-// Retrieved at 3/23/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.5505fc65e99ee79addc3.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -463,16 +463,19 @@
 					setEmailModalOpen: Object($.b)(T.h),
 					verifyEmailModalOpen: Object($.b)(T.p)
 				}),
-				ne = Object(o.b)(ae, (e, {
-					shouldOpenTooltip: t
-				}) => ({
-					closeChangeEmailModal: () => {
-						t && e(Object(d.b)()), e(Object(m.g)(T.a))
-					},
-					closeSetEmailModal: () => e(Object(c.b)()),
-					closeVerifyEmailModal: () => e(Object(m.g)(T.p)),
-					toggleCheckEmailModal: () => e(Object(m.i)(T.c))
-				})),
+				ne = Object(o.b)(ae, (e, t) => {
+					let {
+						shouldOpenTooltip: s
+					} = t;
+					return {
+						closeChangeEmailModal: () => {
+							s && e(Object(d.b)()), e(Object(m.g)(T.a))
+						},
+						closeSetEmailModal: () => e(Object(c.b)()),
+						closeVerifyEmailModal: () => e(Object(m.g)(T.p)),
+						toggleCheckEmailModal: () => e(Object(m.i)(T.c))
+					}
+				}),
 				ie = Object(G.u)(),
 				oe = e => {
 					const t = a.fbt._("Adding a verified email will help you access your account if you forget your password.", null, {
@@ -485,54 +488,55 @@
 				re = () => a.fbt._("Update your email below. There will be a new verification email sent that you will need to use to verify this new email.", null, {
 					hk: "2oXony"
 				});
-			t.default = ie(ne(({
-				email: e,
-				changeEmailModalOpen: t,
-				checkEmailModalOpen: s,
-				closeChangeEmailModal: o,
-				closeSetEmailModal: r,
-				closeVerifyEmailModal: c,
-				isEmailPermissionRequired: d,
-				isResponsiveSettingsEnabled: m,
-				setEmailModalOpen: u,
-				toggleCheckEmailModal: p,
-				verifyEmailModalOpen: h
-			}) => {
-				const b = Object(l.a)({
-					[se.a["m-responsive"]]: m
+			t.default = ie(ne(e => {
+				let {
+					email: t,
+					changeEmailModalOpen: s,
+					checkEmailModalOpen: o,
+					closeChangeEmailModal: r,
+					closeSetEmailModal: c,
+					closeVerifyEmailModal: d,
+					isEmailPermissionRequired: m,
+					isResponsiveSettingsEnabled: u,
+					setEmailModalOpen: p,
+					toggleCheckEmailModal: h,
+					verifyEmailModalOpen: b
+				} = e;
+				const E = Object(l.a)({
+					[se.a["m-responsive"]]: u
 				});
-				return i.a.createElement(n.Fragment, null, t && i.a.createElement(M, {
+				return i.a.createElement(n.Fragment, null, s && i.a.createElement(M, {
 					description: re(),
-					isResponsive: m,
-					onClose: o,
-					onOverlayClick: o,
-					overlayClassName: b,
+					isResponsive: u,
+					onClose: r,
+					onOverlayClick: r,
+					overlayClassName: E,
 					title: a.fbt._("Update your email", null, {
 						hk: "13zUWG"
 					}),
 					withOverlay: !0
-				}), u && i.a.createElement(M, {
-					description: oe(d),
-					isResponsive: m,
-					onClose: r,
-					overlayClassName: b,
+				}), p && i.a.createElement(M, {
+					description: oe(m),
+					isResponsive: u,
+					onClose: c,
+					overlayClassName: E,
 					shouldSendEvents: !0,
 					title: a.fbt._("Verify your account", null, {
 						hk: "27ZUuQ"
 					}),
 					withOverlay: !0
-				}), s && i.a.createElement(I, {
-					email: e,
-					isResponsive: m,
-					onConfirm: p,
-					onOverlayClick: p,
-					overlayClassName: b,
+				}), o && i.a.createElement(I, {
+					email: t,
+					isResponsive: u,
+					onConfirm: h,
+					onOverlayClick: h,
+					overlayClassName: E,
 					withOverlay: !0
-				}), h && i.a.createElement(Z, {
-					isResponsive: m,
-					onConfirm: c,
-					onOverlayClick: c,
-					overlayClassName: b,
+				}), b && i.a.createElement(Z, {
+					isResponsive: u,
+					onConfirm: d,
+					onOverlayClick: d,
+					overlayClassName: E,
 					withOverlay: !0
 				}))
 			}))
@@ -687,18 +691,21 @@
 						}, a.fbt._("Deactivate", null, {
 							hk: "3B1BI6"
 						}))))
-					}, this.renderPremiumNotificationMessage = ({
-						platform: e,
-						isMobile: t
-					}) => a.fbt._("{text with URL}", [a.fbt._param("text with URL", t ? i.a.createElement(i.a.Fragment, null, "You still have an active Reddit Premium subscription. Since we use a third party payment processor, you will need to go directly to them to cancel your subscription. Here is the link for", i.a.createElement("a", {
-						href: S[e],
-						target: "_blank"
-					}, " ", O[e] && O[e]()), ". When you are finished cancelling your premium subscription, return here to fully deactivate your account.") : i.a.createElement(i.a.Fragment, null, "You still have an active Reddit Premium subscription. You will need to cancel your subscription for", i.a.createElement("a", {
-						href: S[e],
-						target: "_blank"
-					}, " ", O[e] && O[e]()), ". When you are finished cancelling your premium subscription, return here to fully deactivate your account."))], {
-						hk: "1lLr9b"
-					}), this.renderPremiumNotification = () => i.a.createElement(d.l, null, i.a.createElement(y, null, a.fbt._("Please cancel your Premium subscription before deleting your account.", null, {
+					}, this.renderPremiumNotificationMessage = e => {
+						let {
+							platform: t,
+							isMobile: s
+						} = e;
+						return a.fbt._("{text with URL}", [a.fbt._param("text with URL", s ? i.a.createElement(i.a.Fragment, null, "You still have an active Reddit Premium subscription. Since we use a third party payment processor, you will need to go directly to them to cancel your subscription. Here is the link for", i.a.createElement("a", {
+							href: S[t],
+							target: "_blank"
+						}, " ", O[t] && O[t]()), ". When you are finished cancelling your premium subscription, return here to fully deactivate your account.") : i.a.createElement(i.a.Fragment, null, "You still have an active Reddit Premium subscription. You will need to cancel your subscription for", i.a.createElement("a", {
+							href: S[t],
+							target: "_blank"
+						}, " ", O[t] && O[t]()), ". When you are finished cancelling your premium subscription, return here to fully deactivate your account."))], {
+							hk: "1lLr9b"
+						})
+					}, this.renderPremiumNotification = () => i.a.createElement(d.l, null, i.a.createElement(y, null, a.fbt._("Please cancel your Premium subscription before deleting your account.", null, {
 						hk: "1JNWd5"
 					})), i.a.createElement(k, null, this.props.user && this.props.user.hasAndroidSubscription && this.renderPremiumNotificationMessage({
 						platform: "android",
@@ -1030,4 +1037,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.2a74a2c0c5ede88c26e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.5505fc65e99ee79addc3.js.map

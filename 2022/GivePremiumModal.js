@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.f0b403e3f0b6b0d33226.js
-// Retrieved at 3/24/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.d8765a8e68af4e530cc5.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -158,19 +158,20 @@
 				X = Object(i.b)(H, e => ({
 					closeModal: () => e(Object(D.b)()),
 					onGivePremium: (t, n, s, o, a) => {
-						e(((e, t, n, s) => async (o, a, {
-							apiContext: i
-						}) => {
+						e(((e, t, n, s) => async (o, a, i) => {
+							let {
+								apiContext: c
+							} = i;
 							o(w());
 							try {
-								const a = await k(i(), t, e, n, s, Object(O.c)(O.a.GiftPremiumFlow));
+								const a = await k(c(), t, e, n, s, Object(O.c)(O.a.GiftPremiumFlow));
 								if (a.error) await o(j(a));
 								else {
 									const e = a.body;
 									await o(M(e)), Object(O.b)(O.a.GiftPremiumFlow)
 								}
-							} catch (c) {
-								await o(j(c))
+							} catch (r) {
+								await o(j(r))
 							}
 						})(t, n, s, o ? a : ""))
 					}
@@ -465,19 +466,20 @@
 					}))
 				}
 			}
-			t.b = ({
-				className: e,
-				...t
-			}) => {
-				const n = Object(c.a)(b.a.row, e, {
-					[b.a.mIsInteractive]: !t.noHover,
-					[b.a.mIsSelected]: t.isSelected,
-					[b.a.topics]: t.isTopicsStyle,
-					[b.a.modNotes]: t.isModNotesStyle
+			t.b = e => {
+				let {
+					className: t,
+					...n
+				} = e;
+				const s = Object(c.a)(b.a.row, t, {
+					[b.a.mIsInteractive]: !n.noHover,
+					[b.a.mIsSelected]: n.isSelected,
+					[b.a.topics]: n.isTopicsStyle,
+					[b.a.modNotes]: n.isModNotesStyle
 				});
 				return i.a.createElement(f, x({
-					className: n
-				}, t))
+					className: s
+				}, n))
 			}
 		},
 		"./src/reddit/controls/Dropdown/row.m.less": function(e, t, n) {
@@ -873,4 +875,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.f0b403e3f0b6b0d33226.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.d8765a8e68af4e530cc5.js.map

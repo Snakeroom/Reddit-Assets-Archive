@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/11.10dbf1467f2bb6484bff.js
-// Retrieved at 3/21/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/11.1caa70febbd9014445f0.js
+// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[11], {
 		"./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/index.ts": function(e, t, r) {
@@ -30,47 +30,49 @@
 					links: u.p.Post
 				};
 
-			function f({
-				getState: e,
-				queueType: t,
-				options: r
-			}) {
-				const s = e();
-				let u, a;
-				return r.only && (u = p[r.only]), r.after && (a = function(e, t) {
+			function f(e) {
+				let {
+					getState: t,
+					queueType: r,
+					options: s
+				} = e;
+				const u = t();
+				let a, c;
+				return s.only && (a = p[s.only]), s.after && (c = function(e, t) {
 					const r = Object(n.a)(t) ? Object(i.G)(e, {
 						postId: t
 					}) : Object(d.b)(e, {
 						commentId: t
 					});
 					if (r) return Object(o.btoa)(`${r.id}|${r.created}`)
-				}(s, r.after)), {
-					queueType: l[t],
-					...!!u && {
-						itemTypes: u
-					},
-					...!!r.subreddit && {
-						subredditIds: [r.subreddit]
-					},
+				}(u, s.after)), {
+					queueType: l[r],
 					...!!a && {
-						after: a
+						itemTypes: a
+					},
+					...!!s.subreddit && {
+						subredditIds: [s.subreddit]
+					},
+					...!!c && {
+						after: c
 					}
 				}
 			}
 			var h;
 
-			function b({
-				modQueueItems: e
-			}) {
-				const t = {
+			function b(e) {
+				let {
+					modQueueItems: t
+				} = e;
+				const r = {
 					posts: {},
 					comments: {},
 					reports: {},
 					modqueue: [],
 					authorFlair: {}
 				};
-				return e && e.edges ? (e.edges.forEach(e => {
-					var r, o;
+				return t && t.edges ? (t.edges.forEach(e => {
+					var t, o;
 					if (!e) return;
 					const {
 						node: s
@@ -90,13 +92,13 @@
 						} = s;
 						if (!e) return;
 						const o = Object(a.a)(e);
-						t.comments[o.id] = o, t.modqueue.push(o.id);
+						r.comments[o.id] = o, r.modqueue.push(o.id);
 						const {
 							authorInfo: n,
 							authorFlair: d
-						} = e, u = d ? null === (r = Object(c.a)(d)) || void 0 === r ? void 0 : r[0] : null;
-						t.authorFlair[i] = {
-							...t.authorFlair[i],
+						} = e, u = d ? null === (t = Object(c.a)(d)) || void 0 === t ? void 0 : t[0] : null;
+						r.authorFlair[i] = {
+							...r.authorFlair[i],
 							...(null == n ? void 0 : n.name) ? {
 								[null == n ? void 0 : n.name]: u
 							} : {}
@@ -113,44 +115,44 @@
 								type: "user",
 								reason: e[0]
 							})
-						}), t.reports[o.id] = m
+						}), r.reports[o.id] = m
 					}
 					if (n === h.Post) {
 						const {
 							postInfo: e
 						} = s;
 						if (!e) return;
-						const r = Object(m.f)(e);
-						t.posts[r.id] = r, t.modqueue.push(r.id);
+						const t = Object(m.f)(e);
+						r.posts[t.id] = t, r.modqueue.push(t.id);
 						const {
 							authorInfo: n,
 							authorFlair: d
 						} = e, u = d ? null === (o = Object(c.a)(d)) || void 0 === o ? void 0 : o[0] : null;
-						t.authorFlair[i] = {
-							...t.authorFlair[i],
+						r.authorFlair[i] = {
+							...r.authorFlair[i],
 							...(null == n ? void 0 : n.name) ? {
 								[null == n ? void 0 : n.name]: u
 							} : {}
 						};
 						const a = [];
-						r.modReports.forEach(e => {
+						t.modReports.forEach(e => {
 							a.push({
 								type: "moderator",
 								reason: e[0],
 								reporter: e[1]
 							})
-						}), r.userReports.forEach(e => {
+						}), t.userReports.forEach(e => {
 							a.push({
 								type: "user",
 								reason: e[0]
 							})
-						}), t.reports[r.id] = a
+						}), r.reports[t.id] = a
 					}
-				}), t) : t
+				}), r) : r
 			}! function(e) {
 				e.Comment = "ModQueueItemComment", e.Post = "ModQueueItemPost"
 			}(h || (h = {}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/11.10dbf1467f2bb6484bff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/11.1caa70febbd9014445f0.js.map
