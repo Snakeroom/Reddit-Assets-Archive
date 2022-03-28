@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.6213a080b06f2c1dc249.js
-// Retrieved at 3/28/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.3740a08d5c1aa05c06db.js
+// Retrieved at 3/28/2022, 12:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -7772,7 +7772,7 @@
 					[y, O] = Object(s.useState)(!1),
 					[j, C] = Object(s.useState)(),
 					S = (e = null) => {
-						e ? (C(e), n(Object(p.s)(null == e ? void 0 : e.topic))) : n(Object(p.q)()), t(Object(i.c)({
+						e ? (C(e), n(Object(p.t)(null == e ? void 0 : e.topic))) : n(Object(p.r)()), t(Object(i.c)({
 							type: f.c.REONBOARDING,
 							selectedInterests: e ? {
 								[e.id]: []
@@ -7780,7 +7780,7 @@
 						})), Object(u.b)(f.e.Popover, c)
 					},
 					I = Object(s.useCallback)(() => {
-						Object(m.a)(), n(Object(p.r)()), O(!0)
+						Object(m.a)(), n(Object(p.s)()), O(!0)
 					}, [n]);
 				return Object(m.b)() ? r.a.createElement("div", {
 					className: Object(g.a)(E.a.InterestPickerPreview, {
@@ -7836,7 +7836,7 @@
 						id: "interest-topic-recommendations",
 						estHeight: 300,
 						trackOnEnteredViewport: () => {
-							Object(m.d)(), Object(u.b)(f.e.Feed, o), s(Object(p.t)())
+							Object(m.d)(), Object(u.b)(f.e.Feed, o), s(Object(p.u)())
 						},
 						render: () => r.a.createElement(y, {
 							interests: n
@@ -13743,40 +13743,42 @@
 				return d
 			})), n.d(t, "c", (function() {
 				return l
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "q", (function() {
 				return u
 			})), n.d(t, "k", (function() {
 				return m
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "p", (function() {
 				return p
 			})), n.d(t, "g", (function() {
 				return b
 			})), n.d(t, "j", (function() {
 				return h
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "o", (function() {
 				return f
 			})), n.d(t, "e", (function() {
 				return x
 			})), n.d(t, "i", (function() {
 				return g
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "n", (function() {
 				return v
 			})), n.d(t, "h", (function() {
 				return E
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "m", (function() {
 				return _
 			})), n.d(t, "d", (function() {
 				return y
 			})), n.d(t, "f", (function() {
 				return O
-			})), n.d(t, "t", (function() {
+			})), n.d(t, "u", (function() {
 				return j
-			})), n.d(t, "q", (function() {
-				return C
-			})), n.d(t, "s", (function() {
-				return S
 			})), n.d(t, "r", (function() {
+				return C
+			})), n.d(t, "t", (function() {
+				return S
+			})), n.d(t, "s", (function() {
 				return I
+			})), n.d(t, "l", (function() {
+				return N
 			}));
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -13931,6 +13933,15 @@
 					source: "topic_chaining_prompt",
 					action: s.c.DISMISS,
 					noun: a.TOPIC_PREVIEW
+				}),
+				N = (e, t) => n => ({
+					...Object(r.o)(n),
+					source: i,
+					action: s.c.VIEW,
+					noun: e ? a.CATEGORY : a.SUB_CATEGORY,
+					onboarding: {
+						categoryName: t
+					}
 				})
 		},
 		"./src/reddit/helpers/trackers/postFlair.ts": function(e, t, n) {
@@ -17661,4 +17672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.6213a080b06f2c1dc249.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3740a08d5c1aa05c06db.js.map
