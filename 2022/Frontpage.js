@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.86e2c8ac2ab2530f5881.js
-// Retrieved at 3/24/2022, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.f4c9333765d4a0a0b287.js
+// Retrieved at 3/28/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -302,27 +302,6 @@
 					if (!1 === (n = s ? s.call(a, d, u, l) : void 0) || void 0 === n && d !== u) return !1
 				}
 				return !0
-			}
-		},
-		"./src/lib/pageTitle/helpers.ts": function(e, t, s) {
-			"use strict";
-			s.d(t, "a", (function() {
-				return i
-			}));
-			var a = s("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js"),
-				n = s("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
-				r = s("./node_modules/@reddit/reddit-country-url-redirects/dist/esm/index.js"),
-				c = s("./src/reddit/selectors/countrySites.ts"),
-				o = s("./src/reddit/selectors/meta.ts");
-			const i = (e, t) => {
-				const {
-					languageCode: s
-				} = Object(c.b)(e), i = Object(o.i)(e) || n.DEFAULT_LOCALE, l = Object(a.isPseudoLocale)(i) ? n.DEFAULT_LOCALE : i;
-				if (s) {
-					const e = Object(r.d)(s, l.substring(0, 2));
-					return t + (e ? ` - ${e}` : "")
-				}
-				return t
 			}
 		},
 		"./src/lib/promo/withShowSignupUpsell.tsx": function(e, t, s) {
@@ -7771,4 +7750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.86e2c8ac2ab2530f5881.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.f4c9333765d4a0a0b287.js.map

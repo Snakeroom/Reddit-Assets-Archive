@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.f587f9ba0ecadc4c4cbe.js
-// Retrieved at 3/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.3dc7869c3b18da14c38c.js
+// Retrieved at 3/28/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -1739,7 +1739,7 @@
 				i = n("./src/reddit/selectors/user.ts");
 			t.a = () => async (e, t) => {
 				e(Object(o.m)({
-					title: Object(s.i)()
+					title: Object(s.j)()
 				})), await e(Object(a.t)()), Object(i.P)(t()) && await e(Object(r.q)())
 			}
 		},
@@ -1749,7 +1749,7 @@
 				o = n("./src/reddit/actions/platform.ts");
 			t.a = () => async e => {
 				e(Object(o.m)({
-					title: Object(s.o)()
+					title: Object(s.p)()
 				}))
 			}
 		},
@@ -18064,4 +18064,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "AuthorHovercard~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.f587f9ba0ecadc4c4cbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.3dc7869c3b18da14c38c.js.map
