@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.768f722620a1fe1d9484.js
-// Retrieved at 3/24/2022, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6cec800f84c4cbc94b7e.js
+// Retrieved at 3/28/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3446,11 +3446,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("160955"),
+				buildNumber: Object(r.c)("161156"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1648163357"),
+				buildTimestamp: Object(r.b)("1648473237"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6036,14 +6036,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c45302492817e581fcf8412bff6fe20606ebf2bda-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ccf9a20e9763343e10b12370a01d72454c44ec293-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "45302492817e581fcf8412bff6fe20606ebf2bda-production",
+						release: "cf9a20e9763343e10b12370a01d72454c44ec293-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6560,7 +6560,7 @@
 						settings: n,
 						statusCode: r,
 						type: s,
-						releaseClient: "45302492817e581fcf8412bff6fe20606ebf2bda-production",
+						releaseClient: "cf9a20e9763343e10b12370a01d72454c44ec293-production",
 						appName: e.statsAppName,
 						error: i ? JSON.parse(Object(l.a)(i)) : void 0
 					},
@@ -11326,7 +11326,7 @@
 				}, Ve = (e, t, i) => async (n, r) => {
 					const s = Object(v.b)(r(), e.id),
 						o = Object(g.a)(e.id, s, t),
-						d = Object(he.b)(r(), e.id);
+						d = Object(he.d)(r(), e.id);
 					Ue[t] && n(Ge(String(t), {
 						postId: e.id,
 						vendorMetadata: o,
@@ -11351,7 +11351,7 @@
 									e.isSponsored && t(Ve(e, b.a.ViewableImpression))
 								})(e))
 							} else {
-								const r = Object(he.b)(n(), e.id);
+								const r = Object(he.d)(n(), e.id);
 								i(Ve(e, t, `Slide${r}`))
 							}
 						else i(qe(e, t))
@@ -36286,12 +36286,16 @@
 			"use strict";
 			i.d(t, "a", (function() {
 				return n
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "f", (function() {
 				return s
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "d", (function() {
 				return o
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "e", (function() {
 				return d
+			})), i.d(t, "b", (function() {
+				return a
+			})), i.d(t, "c", (function() {
+				return l
 			}));
 			const n = e => !r(e) && !!s(e),
 				r = e => e.mediaPlayback.isMuted,
@@ -36300,7 +36304,9 @@
 					var i;
 					return (null === (i = e.mediaGalleries) || void 0 === i ? void 0 : i.currentSlideIndex[t]) || 0
 				},
-				d = (e, t) => e.mediaGalleries.isGalleryTileLayout[t]
+				d = (e, t) => e.mediaGalleries.isGalleryTileLayout[t],
+				a = (e, t, i) => t || i,
+				l = (e, t, i) => t || i
 		},
 		"./src/reddit/selectors/meta.ts": function(e, t, i) {
 			"use strict";
@@ -38034,7 +38040,7 @@
 						postId: t
 					});
 					if (i && i.media && i.media.type === u.o.GALLERY && i.media.gallery) {
-						const t = Object(h.b)(e, i.id);
+						const t = Object(h.d)(e, i.id);
 						return i.media.gallery.items[t]
 					}
 				}),
@@ -38110,7 +38116,7 @@
 							isVideo: !0,
 							videoAudible: Object(h.a)(e),
 							videoDuration: n ? n.length : 0,
-							videoVolume: Math.floor(100 * (Object(h.d)(e) || 0)),
+							videoVolume: Math.floor(100 * (Object(h.f)(e) || 0)),
 							cumulativeViewedTime: u || 0
 						}, i && (c.videoData.wasFullScreen = i.adVideoPlayedExpanded ? 1 : 0, c.videoData.videoStarted = (null === (r = i.adVideoStarted) || void 0 === r ? void 0 : r.vs) || 0, c.videoData.videoStartTime = (null === (s = i.adVideoStarted) || void 0 === s ? void 0 : s.t) || 0, c.videoData.watched25 = (null === (o = i.adVideoWatchedPercentwatch_25_percent) || void 0 === o ? void 0 : o.vt) || 0, c.videoData.watched50 = (null === (d = i.adVideoWatchedPercentwatch_50_percent) || void 0 === d ? void 0 : d.vu) || 0, c.videoData.watched75 = (null === (a = i.adVideoWatchedPercentwatch_75_percent) || void 0 === a ? void 0 : a.vv) || 0, c.videoData.watched100 = (null === (l = i.adVideoWatchedPercentwatch_100_percent) || void 0 === l ? void 0 : l.vx) || 0)
 					}
@@ -40486,7 +40492,7 @@
 						numItems: r,
 						numImages: s,
 						numVideos: o,
-						position: i || Object(ge.b)(e, t) + 1
+						position: i || Object(ge.d)(e, t) + 1
 					}
 				},
 				_t = (e, t) => {
@@ -47187,4 +47193,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.768f722620a1fe1d9484.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6cec800f84c4cbc94b7e.js.map
