@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.255b833b50158b282648.js
-// Retrieved at 3/24/2022, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.90650bfd94f1fd7347e9.js
+// Retrieved at 3/28/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, s) {
@@ -46,9 +46,9 @@
 				g = s("./src/reddit/selectors/user.ts"),
 				O = s("./src/reddit/components/ContentTooltip/index.tsx"),
 				_ = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				E = s("./src/reddit/controls/Button/index.tsx"),
-				P = s("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
-				v = s("./src/reddit/icons/svgs/Hide/index.tsx"),
+				P = s("./src/reddit/controls/Button/index.tsx"),
+				v = s("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
+				E = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				j = s("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				N = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				I = s("./src/reddit/icons/fonts/Coin/index.tsx");
@@ -69,8 +69,8 @@
 			const k = Object(d.c)({
 					canFlagAwards: e => Object(x.c)(e, {
 						experimentEligibilitySelector: x.a,
-						experimentName: w.Ec
-					}) === w.ld.Enabled,
+						experimentName: w.Fc
+					}) === w.md.Enabled,
 					currentUser: g.k,
 					moderatorPermissions: (e, {
 						postOrComment: t
@@ -133,7 +133,7 @@
 						}
 					}, e ? r.fbt._("Reported", null, {
 						hk: "4C0VOl"
-					}) : null, e ? n.a.createElement(P.a, {
+					}) : null, e ? n.a.createElement(v.a, {
 						className: L.a.awardReportIcon
 					}) : n.a.createElement(N.a, {
 						className: L.a.awardReportIcon
@@ -149,7 +149,7 @@
 						onClick: () => {
 							t(), e()
 						}
-					}, n.a.createElement(v.a, {
+					}, n.a.createElement(E.a, {
 						className: L.a.awardHideIcon
 					}), r.fbt._("Hide", null, {
 						hk: "4kciEW"
@@ -161,7 +161,7 @@
 						currentUser: t,
 						onClickPremium: s
 					} = this.props, o = e.awardSubType === h.d.Premium, a = !!t && t.isGold;
-					return o ? a ? null : n.a.createElement(E.k, {
+					return o ? a ? null : n.a.createElement(P.k, {
 						className: L.a.premiumCta,
 						onClick: s
 					}, r.fbt._("Get Premium", null, {
@@ -319,7 +319,7 @@
 				}),
 				O = Object(m.a)(f, [r.a.Click, r.a.Keydown]),
 				_ = Object(a.b)(g);
-			class E extends n.a.Component {
+			class P extends n.a.Component {
 				constructor(e) {
 					super(e), this.checkAndSetPosition = () => {
 						const {
@@ -397,7 +397,7 @@
 					}))
 				}
 			}
-			t.a = _(E)
+			t.a = _(P)
 		},
 		"./src/reddit/components/OverlayAwareTooltip/index.tsx": function(e, t, s) {
 			"use strict";
@@ -541,4 +541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.255b833b50158b282648.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.90650bfd94f1fd7347e9.js.map

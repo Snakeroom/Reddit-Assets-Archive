@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.e041afb5530193cbbdaf.js
-// Retrieved at 3/28/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.f40eda40df6e3b3586f1.js
+// Retrieved at 3/28/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -173,7 +173,7 @@
 		"./src/reddit/actions/pages/search/searchResultsRequested.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "searchResultsRequested", (function() {
-				return C
+				return y
 			}));
 			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
 				r = s("./node_modules/lodash/pick.js"),
@@ -181,36 +181,48 @@
 				a = s("./src/lib/constants/index.ts"),
 				i = s("./src/lib/makeSearchKey/index.ts"),
 				c = s("./src/lib/pageTitle/index.ts"),
-				d = s("./src/reddit/actions/pages/search/index.ts"),
-				l = s("./src/reddit/actions/platform.ts"),
-				m = s("./src/reddit/constants/parameters.ts"),
-				u = s("./src/reddit/models/Multireddit/index.ts"),
-				p = s("./src/reddit/selectors/experiments/serpRedesignLayout.ts");
-			const b = e => n.fbt._("reddit.com: search results - {query}", [n.fbt._param("query", e || "None")], {
+				d = s("./node_modules/lodash/isEqual.js"),
+				l = s.n(d),
+				m = s("./src/reddit/actions/pages/search/index.ts"),
+				u = s("./src/reddit/actions/platform.ts"),
+				p = s("./src/reddit/constants/parameters.ts"),
+				b = s("./src/reddit/models/Multireddit/index.ts"),
+				C = s("./src/reddit/constants/experiments.ts"),
+				h = s("./src/reddit/helpers/chooseVariant/index.ts"),
+				x = s("./node_modules/reselect/es/index.js");
+			const f = Object(x.a)(e => Object(h.c)(e, {
+				experimentEligibilitySelector: h.a,
+				experimentName: C.pb
+			}), e => e === C.id);
+			var g = s("./src/reddit/selectors/experiments/serpRedesignLayout.ts");
+			const O = e => n.fbt._("reddit.com: search results - {query}", [n.fbt._param("query", e || "None")], {
 					hk: "1XOKAg"
 				}),
-				C = e => async (t, s) => {
+				y = e => async (t, s) => {
 					const n = s(),
-						r = Object(p.a)(n),
-						C = Object(a.sc)(r),
-						h = Object(i.e)(o()(e.queryParams, m.u), C),
+						r = Object(g.a)(n),
+						d = Object(a.sc)(r),
+						C = Object(i.e)(o()(e.queryParams, p.u), d),
 						{
-							multiredditName: x,
-							subredditName: f,
-							username: g
+							multiredditName: h,
+							subredditName: x,
+							username: y
 						} = e.params;
-					let O;
-					g && x && (O = Object(u.h)(g, x));
-					const y = Object(i.b)(f || x, g, h);
-					await t(Object(d.d)(y, h, f, g, O));
-					let v = !1;
+					let v;
+					y && h && (v = Object(b.h)(y, h));
+					const j = Object(i.b)(x || h, y, C);
+					!f(n) || C.type.length && !l()(C.type, [a.bc.Posts, a.bc.Subreddits, a.bc.Users]) || t(Object(m.d)(j, {
+						...C,
+						type: [a.bc.Comments]
+					}, x, y, v, !0)), await t(Object(m.d)(j, C, x, y, v));
+					let E = !1;
 					const {
-						type: j = []
-					} = h, E = j.indexOf(a.bc.Posts) > -1, _ = j.indexOf(a.bc.Users) > -1, k = j.indexOf(a.bc.Subreddits) > -1;
-					E && n.listings.postOrder.api.error[y] && (v = !0), _ && n.listings.authorOrder.api.error[y] && (v = !0), k && n.listings.communityOrder.api.error[y] && (v = !0), t(v ? l.m({
+						type: _ = []
+					} = C, k = _.indexOf(a.bc.Posts) > -1, S = _.indexOf(a.bc.Users) > -1, w = _.indexOf(a.bc.Subreddits) > -1;
+					k && n.listings.postOrder.api.error[j] && (E = !0), S && n.listings.authorOrder.api.error[j] && (E = !0), w && n.listings.communityOrder.api.error[j] && (E = !0), t(E ? u.m({
 						title: Object(c.e)()
-					}) : l.m({
-						title: b(h.q)
+					}) : u.m({
+						title: O(C.q)
 					}))
 				}
 		},
@@ -7193,12 +7205,12 @@
 						rtJsonElementProps: o
 					});
 					switch (n) {
-						case C.hf.SmIcon:
+						case C.if.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: o
 							});
-						case C.hf.SmIconHc:
+						case C.if.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -9637,8 +9649,8 @@
 				}) === n.w.Enabled,
 				a = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.Hc
-				}) === n.hd
+					experimentName: n.Ic
+				}) === n.id
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -9665,8 +9677,8 @@
 				a = s("./src/reddit/selectors/user.ts");
 			const i = Object(n.a)(e => Object(o.c)(e, {
 				experimentEligibilitySelector: a.P,
-				experimentName: r.Yb
-			}), e => e === r.hd)
+				experimentName: r.Zb
+			}), e => e === r.id)
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -9804,12 +9816,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.af
+						experimentName: n.bf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.hf.SmIcon || t === n.hf.SmIconHc
+					return t === n.if.SmIcon || t === n.if.SmIconHc
 				},
 				l = (e, {
 					subredditName: t
@@ -9844,4 +9856,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.e041afb5530193cbbdaf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f40eda40df6e3b3586f1.js.map

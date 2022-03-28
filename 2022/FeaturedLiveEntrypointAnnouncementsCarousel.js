@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.d604f417a26fe95cbf6f.js
-// Retrieved at 3/24/2022, 7:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.561d4176bdcad5ec68b4.js
+// Retrieved at 3/28/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -84,14 +84,14 @@
 					},
 					...Object(h.o)(a)
 				}),
-				C = e => n => ({
+				O = e => n => ({
 					source: "announcement",
 					action: e,
 					noun: "announcement",
 					...Object(h.o)(n)
 				});
-			var O = t("./src/reddit/hooks/useTracking.ts"),
-				j = t("./src/reddit/selectors/experiments/index.ts");
+			var j = t("./src/reddit/hooks/useTracking.ts"),
+				C = t("./src/reddit/selectors/experiments/index.ts");
 			const E = e => {
 					const n = new Date;
 					n.setMonth(n.getMonth() + 1), m.a.set(A.h, e, {
@@ -102,7 +102,7 @@
 				g = (e, n) => t => {
 					if (t.experimentName) {
 						const n = e[t.experimentName.toLowerCase()];
-						if (n && Object(p.Cf)(n.variant)) return !1
+						if (n && Object(p.Df)(n.variant)) return !1
 					}
 					return !((n[t.id] || 0) >= t.maxImpressionsCount)
 				};
@@ -171,7 +171,7 @@
 					setVisibleAnnouncements: o,
 					visibleAnnouncements: c
 				}) => {
-					const r = Object(i.e)(j.a);
+					const r = Object(i.e)(C.a);
 					Object(a.useEffect)(() => {
 						const a = Object(_.e)(),
 							i = e.filter(g(r, a)).slice(0, 5),
@@ -195,12 +195,12 @@
 					visibleAnnouncements: n,
 					setActiveIndex: t
 				}) => {
-					const s = Object(O.a)(),
+					const s = Object(j.a)(),
 						[o, i] = Object(a.useState)(!0),
 						c = Object(a.useRef)(null);
 					return {
 						onCarouselNavigate: Object(a.useCallback)(a => () => {
-							"next" === a && e + 1 >= n.length ? t(0) : t("prev" === a && e <= 0 ? n.length - 1 : e + ("next" === a ? 1 : -1)), s(C("next" === a ? "scroll_next" : "scroll_previous")), c.current && window.clearTimeout(c.current), i(!1), c.current = window.setTimeout(() => {
+							"next" === a && e + 1 >= n.length ? t(0) : t("prev" === a && e <= 0 ? n.length - 1 : e + ("next" === a ? 1 : -1)), s(O("next" === a ? "scroll_next" : "scroll_previous")), c.current && window.clearTimeout(c.current), i(!1), c.current = window.setTimeout(() => {
 								i(!0)
 							}, 200)
 						}, [e, s, t, n]),
@@ -214,7 +214,7 @@
 					setIsHidden: e,
 					visibleAnnouncements: n
 				}) => {
-					const t = Object(O.a)();
+					const t = Object(j.a)();
 					return Object(a.useCallback)(() => {
 						e(!0), n.forEach(e => {
 							const {
@@ -222,7 +222,7 @@
 								maxImpressionsCount: t
 							} = e;
 							Object(_.ib)(n, t)
-						}), t(C("dismiss_all")), E(A.i.No)
+						}), t(O("dismiss_all")), E(A.i.No)
 					}, [n, t, e])
 				})({
 					visibleAnnouncements: t,
@@ -232,7 +232,7 @@
 					setActiveIndex: n,
 					visibleAnnouncements: t
 				}) => {
-					const s = Object(O.a)();
+					const s = Object(j.a)();
 					return Object(a.useCallback)(() => {
 						e < 0 || e >= t.length ? n(0) : s(x("click", t[e]))
 					}, [e, s, n, t])
@@ -246,8 +246,8 @@
 					setActiveIndex: n,
 					visibleAnnouncements: t
 				}) => {
-					const s = Object(O.a)(),
-						o = Object(i.e)(j.a, (e, n) => Object.keys(e).length === Object.keys(n).length);
+					const s = Object(j.a)(),
+						o = Object(i.e)(C.a, (e, n) => Object.keys(e).length === Object.keys(n).length);
 					Object(a.useEffect)(() => {
 						if (e < 0 || e >= t.length) return void n(0);
 						const a = t[e],
@@ -317,4 +317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.d604f417a26fe95cbf6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.561d4176bdcad5ec68b4.js.map
