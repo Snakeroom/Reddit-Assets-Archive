@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.75f3d99721af660edd3b.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.b010a2b5b377464d5eb1.js
+// Retrieved at 3/29/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ScheduledPost-PostSchedulePickerModal"], {
 		"./node_modules/lodash/xorWith.js": function(e, t, n) {
@@ -241,8 +241,8 @@
 					})))
 				}
 			}
-			var E = O,
-				P = n("./src/lib/timezone/index.ts"),
+			var P = O,
+				E = n("./src/lib/timezone/index.ts"),
 				N = n("./src/reddit/components/ScheduledPost/SchedulePicker/CustomFrequencySelector/index.tsx"),
 				M = n("./src/reddit/components/ScheduledPost/SchedulePicker/FrequencyOptionSelector/index.tsx"),
 				w = n("./src/reddit/components/ScheduledPost/SchedulePicker/MonthDaysSelector/index.tsx"),
@@ -272,7 +272,7 @@
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement(M.a, {
 						className: q.a.frequencyOptionSelector,
 						selectedFrequencyOption: e,
-						submitDate: Object(P.f)(Object(A.a)(c, d)),
+						submitDate: Object(E.f)(Object(A.a)(c, d)),
 						onSelect: i
 					}), u && o.a.createElement("div", null, o.a.createElement("hr", {
 						className: q.a.customControlsHr
@@ -307,9 +307,9 @@
 				B = n("./src/reddit/icons/svgs/Clear/index.tsx"),
 				K = n("./src/reddit/layout/row/Inline/index.tsx"),
 				G = n("./src/reddit/components/ScheduledPost/PostSchedulePickerModal/index.m.less"),
-				V = n.n(G);
+				J = n.n(G);
 			const {
-				fbt: J
+				fbt: V
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			class X extends o.a.PureComponent {
 				constructor(e) {
@@ -362,12 +362,12 @@
 						recurrenceInfo: d
 					} = this.state;
 					return o.a.createElement(o.a.Fragment, null, o.a.createElement("fieldset", {
-						className: V.a.marginBottom24
+						className: J.a.marginBottom24
 					}, o.a.createElement("legend", {
-						className: V.a.timeLegend
-					}, J._("Submit Time", null, {
+						className: J.a.timeLegend
+					}, V._("Submit Time", null, {
 						hk: "1YyF9n"
-					})), o.a.createElement(E, {
+					})), o.a.createElement(P, {
 						maxDate: this.maxDate,
 						onSubmitDateChange: this.onSubmitDateChange,
 						onSubmitTimeChange: this.onSubmitTimeChange,
@@ -376,10 +376,10 @@
 						submitTime: r,
 						timezoneName: c
 					})), o.a.createElement("fieldset", {
-						className: V.a.marginBottom24
+						className: J.a.marginBottom24
 					}, o.a.createElement("legend", {
-						className: V.a.timeLegend
-					}, J._("Repeat Options", null, {
+						className: J.a.timeLegend
+					}, V._("Repeat Options", null, {
 						hk: "3xqIuV"
 					})), o.a.createElement(W, {
 						frequencyOption: l,
@@ -393,10 +393,10 @@
 						submitMonthDay: s,
 						submitTime: r
 					})), o.a.createElement("fieldset", {
-						className: V.a.marginBottom24
+						className: J.a.marginBottom24
 					}, o.a.createElement("legend", {
-						className: V.a.timeLegend
-					}, J._("Advanced Options", null, {
+						className: J.a.timeLegend
+					}, V._("Advanced Options", null, {
 						hk: "3Dxit5"
 					})), o.a.createElement(_, {
 						isContestMode: e,
@@ -408,37 +408,37 @@
 						stickyPosition: a,
 						suggestedSort: i
 					})), o.a.createElement("div", {
-						className: V.a.extraNoteRow
-					}, J._("Note: This post will be in Scheduled Posts in mod hub and editable.", null, {
+						className: J.a.extraNoteRow
+					}, V._("Note: This post will be in Scheduled Posts in mod hub and editable.", null, {
 						hk: "2HREcK"
 					})))
 				}
 				render() {
 					const e = this.getValidationError();
 					return o.a.createElement("div", {
-						className: V.a.container
+						className: J.a.container
 					}, o.a.createElement(i.i, {
-						className: V.a.header
-					}, J._("Schedule this post", null, {
+						className: J.a.header
+					}, V._("Schedule this post", null, {
 						hk: "3wCfCU"
 					})), o.a.createElement(i.l, null, this.renderModalMainContents()), o.a.createElement(i.g, null, this.props.schedule && o.a.createElement(z.o, {
 						onClick: this.onDeleteClick,
-						className: V.a.deleteButton
+						className: J.a.deleteButton
 					}, o.a.createElement(B.a, {
-						className: V.a.clearIcon
-					}), J._("Clear", null, {
+						className: J.a.clearIcon
+					}), V._("Clear", null, {
 						hk: "2s7K3"
 					})), e && o.a.createElement("div", {
-						className: V.a.errorMessage
+						className: J.a.errorMessage
 					}, e), o.a.createElement(K.a, null, o.a.createElement(z.o, {
 						onClick: this.onCloseClick,
-						className: V.a.cancelButton
-					}, J._("Cancel", null, {
+						className: J.a.cancelButton
+					}, V._("Cancel", null, {
 						hk: "2TSLl5"
 					})), o.a.createElement(z.l, {
 						onClick: this.onApplyClick,
 						disabled: !!e
-					}, J._("Apply", null, {
+					}, V._("Apply", null, {
 						hk: "3x8S96"
 					})))))
 				}
@@ -1005,11 +1005,9 @@
 				compact: "_1qaMsHCBrTmejbIUPjsRVI",
 				caretDown: "_2i4dyr-iTBOmkZ4fL_M70P",
 				topics: "qWs3cMcSjquK-OXl-9jH5",
-				modNotes: "_19418fPEhBETWYOoZDCwE0",
 				loadingIcon: "_3WxhmmhQ3cYt1J7mtfcoKG",
 				menuItems: "_3ssvFhIB2HAXL261eWf7G0",
 				isClosed: "_3sZzbLftdYnJNnJ7m7ImmO",
-				isModNotesStyle: "_3X4Y2xTs4XH5VgeZ7w-cv5",
 				menuOption: "_1Qm1phX3yfiJHnjgi_O_9V",
 				buttonIcon: "_1J0h3Uv7HEaVZiJLcCUlQw"
 			}
@@ -1094,14 +1092,12 @@
 						options: e,
 						showSelectedCheckmark: t,
 						isTopicsStyle: n,
-						menuOptionClassName: s,
-						isModNotesStyle: r
+						menuOptionClassName: s
 					} = this.props;
-					return e.map((e, l) => o.a.createElement(c.b, {
-						key: l + e.displayText,
+					return e.map((e, r) => o.a.createElement(c.b, {
+						key: r + e.displayText,
 						className: Object(a.a)(i.a.menuOption, s, {
-							[i.a.topics]: n,
-							[i.a.modNotes]: r
+							[i.a.topics]: n
 						}),
 						noIcon: Boolean(e.icon),
 						onKeydown: t => this.handleOptionKeyDown(t, e),
@@ -1109,11 +1105,8 @@
 						onBlur: this.handleDropdownBlur,
 						showSelectedCheckmark: t,
 						isSelected: void 0 !== e.isSelected ? e.isSelected : void 0,
-						isModNotesStyle: r,
 						isTopicsStyle: n
-					}, r ? o.a.createElement("span", {
-						className: i.a.modNotes
-					}, e.icon && e.icon, e.displayText) : o.a.createElement(o.a.Fragment, null, e.icon && e.icon, e.displayText)))
+					}, e.icon && e.icon, e.displayText))
 				}
 				render() {
 					const {
@@ -1121,59 +1114,53 @@
 						className: t,
 						displayText: n,
 						isCompactStyle: s,
-						isModNotesStyle: r,
-						isTopicsStyle: c,
-						menuItemsClassName: m,
-						name: h,
-						isSaving: p,
-						buttonIcon: f,
-						disabled: b
+						isTopicsStyle: r,
+						menuItemsClassName: c,
+						name: m,
+						isSaving: h,
+						buttonIcon: p,
+						disabled: f
 					} = this.props, {
-						isOpen: y
+						isOpen: b
 					} = this.state;
 					return o.a.createElement("div", {
 						ref: this.containerRef,
 						id: this.props.id,
 						className: Object(a.a)(i.a.dropdownMenu, t, {
-							[i.a.topics]: c
+							[i.a.topics]: r
 						})
 					}, o.a.createElement("button", {
-						onClick: b ? void 0 : this.handleDropdownClick,
+						onClick: f ? void 0 : this.handleDropdownClick,
 						className: Object(a.a)(e, i.a.selector, {
 							[i.a.compact]: s
 						}, {
-							[i.a.topics]: c
+							[i.a.topics]: r
 						}, {
-							[i.a.modNotes]: r
-						}, {
-							[i.a.disabled]: b
+							[i.a.disabled]: f
 						}),
-						name: h,
+						name: m,
 						role: "menu",
 						ref: this.dropdownButton,
-						onBlur: b ? void 0 : this.handleDropdownBlur,
-						onKeyDown: b ? void 0 : this.handleDropdownKeyDown
+						onBlur: f ? void 0 : this.handleDropdownBlur,
+						onKeyDown: f ? void 0 : this.handleDropdownKeyDown
 					}, o.a.createElement("span", {
 						className: i.a.selectorContent,
 						tabIndex: -1
-					}, f && o.a.createElement("span", {
-						className: Object(a.a)(i.a.buttonIcon, {
-							[i.a.isModNotesStyle]: r
-						})
-					}, f), n), b ? null : p ? o.a.createElement(l.a, {
+					}, p && o.a.createElement("span", {
+						className: i.a.buttonIcon
+					}, p), n), f ? null : h ? o.a.createElement(l.a, {
 						sizePx: 8,
 						className: i.a.loadingIcon
 					}) : o.a.createElement(d.a, {
 						name: "caret_down"
 					})), o.a.createElement("div", {
-						className: Object(a.a)(i.a.menuItems, m, {
-							[i.a.topics]: c,
-							[i.a.isClosed]: !y && r,
-							[i.a.isModNotesStyle]: r
+						className: Object(a.a)(i.a.menuItems, c, {
+							[i.a.topics]: r,
+							[i.a.isClosed]: !b
 						}),
 						onMouseDown: u,
 						ref: this.menuItems
-					}, !b && y && this.getDropdownMenuItems()))
+					}, !f && b && this.getDropdownMenuItems()))
 				}
 			}
 			t.b = m
@@ -1491,9 +1478,9 @@
 			})), n.d(t, "e", (function() {
 				return O
 			})), n.d(t, "x", (function() {
-				return E
-			})), n.d(t, "u", (function() {
 				return P
+			})), n.d(t, "u", (function() {
+				return E
 			})), n.d(t, "a", (function() {
 				return N
 			})), n.d(t, "s", (function() {
@@ -1647,13 +1634,13 @@
 					noun: "edit_recurring_post",
 					...r(e)
 				}),
-				E = () => e => ({
+				P = () => e => ({
 					source: "recurring_post_composer",
 					action: "view",
 					noun: "recurring_post_composer",
 					...r(e)
 				}),
-				P = () => (e, t) => ({
+				E = () => (e, t) => ({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "update",
@@ -1824,4 +1811,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.75f3d99721af660edd3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.b010a2b5b377464d5eb1.js.map

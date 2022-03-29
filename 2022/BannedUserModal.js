@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.01da5e86daee090505b2.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.045ce91347874dd98fff.js
+// Retrieved at 3/29/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, n) {
@@ -37,8 +37,8 @@
 				data: n
 			});
 			var _ = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
-				y = n("./src/reddit/models/SubredditModeration/index.ts"),
-				C = n("./src/reddit/models/Toast/index.ts"),
+				C = n("./src/reddit/models/SubredditModeration/index.ts"),
+				y = n("./src/reddit/models/Toast/index.ts"),
 				w = n("./src/reddit/selectors/activeModalId.ts"),
 				v = n("./src/reddit/selectors/bannedUser.ts"),
 				S = n("./src/reddit/selectors/subreddit.ts"),
@@ -68,7 +68,7 @@
 							const {
 								subredditId: n,
 								fetchedToken: s
-							} = t.payload, r = Object(y.e)(n, s);
+							} = t.payload, r = Object(C.e)(n, s);
 							return {
 								...e,
 								[r]: !0
@@ -79,7 +79,7 @@
 							const {
 								subredditId: n,
 								fetchedToken: s
-							} = t.payload, r = Object(y.e)(n, s);
+							} = t.payload, r = Object(C.e)(n, s);
 							return {
 								...e,
 								[r]: !1
@@ -102,7 +102,7 @@
 							const {
 								fetchedToken: n,
 								subredditId: s
-							} = t.payload, r = Object(y.e)(s, n);
+							} = t.payload, r = Object(C.e)(s, n);
 							return {
 								...e,
 								[r]: !0
@@ -282,7 +282,7 @@
 						} = r;
 						const o = s(),
 							d = t.after || "",
-							i = Object(y.e)(e, d),
+							i = Object(C.e)(e, d),
 							l = o.features.banned.fetchedTokens[i];
 						if (o.features.banned.api.pending[i] || l) return;
 						n(z({
@@ -322,7 +322,7 @@
 						f = u.subreddits.models[e].url,
 						x = u.subreddits.models[e].name;
 					t.username = Object(_.a)(t.username), r(Object(d.h)(n));
-					const y = await ((e, t, n) => Object(p.a)(Object(h.a)(e, [b.a]), {
+					const C = await ((e, t, n) => Object(p.a)(Object(h.a)(e, [b.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
 						method: m.jb.POST,
 						data: {
@@ -336,13 +336,13 @@
 							type: "banned"
 						}
 					}))(l(), f, t);
-					if (y.ok) {
+					if (C.ok) {
 						r(Object(d.e)(n));
 						const e = {
 							username: t.username
 						};
 						r(Object(c.f)({
-							kind: C.b.SuccessMod,
+							kind: y.b.SuccessMod,
 							text: s.fbt._("Successfully banned a user", null, {
 								hk: "1kORpS"
 							})
@@ -350,12 +350,12 @@
 						const a = await g(l(), x, e);
 						a.ok && r(re(a.body))
 					} else {
-						r(Object(d.f)(n, y.error));
-						const e = a()(y, "body.json.errors[0][1]", s.fbt._("Something went wrong", null, {
+						r(Object(d.f)(n, C.error));
+						const e = a()(C, "body.json.errors[0][1]", s.fbt._("Something went wrong", null, {
 							hk: "1IJNeH"
 						}));
 						r(Object(c.f)({
-							kind: C.b.Error,
+							kind: y.b.Error,
 							text: e,
 							duration: 3e3
 						}))
@@ -378,7 +378,7 @@
 						subredditId: e,
 						userId: t
 					})), n(Object(c.f)({
-						kind: C.b.SuccessMod,
+						kind: y.b.SuccessMod,
 						text: s.fbt._("Successfully unbanned a user", null, {
 							hk: "OgqK6"
 						})
@@ -388,7 +388,7 @@
 							hk: "1IJNeH"
 						}));
 						n(Object(c.f)({
-							kind: C.b.Error,
+							kind: y.b.Error,
 							text: e,
 							duration: 3e3
 						}))
@@ -612,8 +612,8 @@
 				x = n("./src/reddit/icons/svgs/Unban/index.tsx"),
 				g = n("./src/reddit/layout/row/RightAlign/index.tsx"),
 				_ = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				y = n("./src/reddit/models/ApiRequestState/index.ts"),
-				C = n("./src/reddit/models/SubredditModeration/index.ts"),
+				C = n("./src/reddit/models/ApiRequestState/index.ts"),
+				y = n("./src/reddit/models/SubredditModeration/index.ts"),
 				w = n("./src/reddit/selectors/apiRequestState.ts"),
 				v = n("./src/reddit/selectors/bannedUser.ts"),
 				S = n("./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx"),
@@ -673,7 +673,7 @@
 						})
 					}, this.onChangeBanDuration = e => {
 						const t = Number(e.currentTarget.value);
-						"number" == typeof t && (t < 0 || t > C.b || this.setState({
+						"number" == typeof t && (t < 0 || t > y.b || this.setState({
 							duration: t
 						}))
 					}, this.canSave = () => !this.isApiRequestInProgress() && (!!this.state.reason && (!!Object(f.a)(this.state.username) && (!(!this.state.durationIsPermanent && !this.state.duration) && !(this.state.banMessage && this.state.banMessage.length > L)))), this.onSubmit = () => {
@@ -684,7 +684,7 @@
 						let n = t.durationIsPermanent ? null : t.duration;
 						const s = e.user && null != e.user.duration && e.user.duration === n;
 						null != n && s && (n += 1);
-						const r = Object(y.b)();
+						const r = Object(C.b)();
 						e.onBanUser(t.username, t.modNote, n, t.banMessage, t.reason, t.contextId, r), this.setState({
 							apiRequestId: r
 						})
@@ -714,13 +714,13 @@
 				UNSAFE_componentWillReceiveProps(e) {
 					if (this.state.apiRequestId) {
 						const t = e.apiRequestStates[this.state.apiRequestId];
-						t && t.apiRequestStatus === y.a.Complete && this.onSubmitRequestComplete()
+						t && t.apiRequestStatus === C.a.Complete && this.onSubmitRequestComplete()
 					}
 				}
 				isApiRequestInProgress() {
 					if (!this.state.apiRequestId) return !1;
 					const e = this.props.apiRequestStates[this.state.apiRequestId];
-					return !!e && e.apiRequestStatus === y.a.Pending
+					return !!e && e.apiRequestStatus === C.a.Pending
 				}
 				componentWillUnmount() {
 					this.state.apiRequestId && this.props.releaseRequest(this.state.apiRequestId)
@@ -915,9 +915,9 @@
 			})), n.d(t, "c", (function() {
 				return _
 			})), n.d(t, "d", (function() {
-				return y
-			})), n.d(t, "j", (function() {
 				return C
+			})), n.d(t, "j", (function() {
+				return y
 			}));
 			var s = n("./src/lib/lessComponent.tsx"),
 				r = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
@@ -936,8 +936,8 @@
 				x = s.a.h3("FormElementTitle", a.a),
 				g = s.a.div("FormElementDescription", a.a),
 				_ = s.a.div("FormElementError", a.a),
-				y = s.a.div("FormElementSubGroup", a.a),
-				C = s.a.li("FormListItem", a.a)
+				C = s.a.div("FormElementSubGroup", a.a),
+				y = s.a.li("FormListItem", a.a)
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
 			e.exports = {
@@ -1087,8 +1087,7 @@
 				const s = Object(d.a)(b.a.row, t, {
 					[b.a.mIsInteractive]: !n.noHover,
 					[b.a.mIsSelected]: n.isSelected,
-					[b.a.topics]: n.isTopicsStyle,
-					[b.a.modNotes]: n.isModNotesStyle
+					[b.a.topics]: n.isTopicsStyle
 				});
 				return o.a.createElement(x, f({
 					className: s
@@ -1101,8 +1100,8 @@
 				text: "_2-cXnP74241WI7fpcpfPmg",
 				row: "_3LwUIE7yX7CZQKmD2L87vf",
 				topics: "kR_ljR-F8vtc-ORj1uipB",
-				modNotes: "sK8_uuNiAqPNlw-HoD2HG",
 				checkmark: "_3Iua3qlR9JiTwjjk6NKye1",
+				modNotes: "sK8_uuNiAqPNlw-HoD2HG",
 				mIsSelected: "_1IKtbRloF_LV1hPqMzP3MC",
 				mIsInteractive: "_1oYEKCssGFjqxQ9jJMNj5G"
 			}
@@ -1228,4 +1227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.01da5e86daee090505b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.045ce91347874dd98fff.js.map

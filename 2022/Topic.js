@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.46a32f5b8aaf9e63af8d.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.07f0c63c11218535b2af.js
+// Retrieved at 3/29/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -446,7 +446,7 @@
 			const C = "view--layout--FUE",
 				w = "LayoutSwitch--picker",
 				O = Object(c.a)(f.a),
-				N = {
+				k = {
 					[h.d.Card]: function(e) {
 						return i.a.createElement(x.a, E({}, e, {
 							name: "view_card"
@@ -463,7 +463,7 @@
 						}))
 					}
 				},
-				k = {
+				N = {
 					[h.d.Card]: () => s.fbt._("card", null, {
 						hk: "4qOOHu"
 					}),
@@ -510,7 +510,7 @@
 							layout: n,
 							onLayoutClick: s,
 							postLayout: r
-						} = this.props, a = n || h.e[r], o = e === a, c = N[e], l = k[e];
+						} = this.props, a = n || h.e[r], o = e === a, c = k[e], l = N[e];
 						return i.a.createElement(v.b, E({}, t, {
 							className: Object(d.a)(S.a.LayoutItem, {
 								[S.a.selected]: o,
@@ -864,7 +864,7 @@
 				C = E + 152 + 16,
 				w = C + S + 8,
 				O = T.a.div("Container", _.a),
-				N = T.a.wrapped(e => {
+				k = T.a.wrapped(e => {
 					let {
 						className: t,
 						isOverlay: n,
@@ -878,7 +878,7 @@
 						}
 					}, s))
 				}, "BackToTop", _.a),
-				k = e => {
+				N = e => {
 					let {
 						children: t,
 						className: n,
@@ -940,10 +940,10 @@
 					return o.a.createElement(O, {
 						className: r,
 						innerRef: this.setWrapperRef
-					}, o.a.createElement(k, {
+					}, o.a.createElement(N, {
 						isFakeOverlay: n,
 						isSticky: c
-					}, t, s, !i && o.a.createElement(g.a, null)), !this.props.hideBackToTop && o.a.createElement(N, {
+					}, t, s, !i && o.a.createElement(g.a, null)), !this.props.hideBackToTop && o.a.createElement(k, {
 						isOverlay: !!(null === (e = null == a ? void 0 : a.locationState) || void 0 === e ? void 0 : e.isOverlay)
 					}))
 				}
@@ -998,7 +998,7 @@
 				_ = n.n(x);
 			const {
 				fbt: T
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), y = u.a.div("BladeContainer", _.a), S = u.a.wrapped(b.a, "CloseIcon", _.a), E = u.a.div("LoadingTitleContainer", _.a), C = u.a.div("LoadingNavContainer", _.a), w = u.a.div("ShortLoadingNav", _.a), O = u.a.wrapped(h.a, "ThemedChevron", _.a), N = e => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), y = u.a.div("BladeContainer", _.a), S = u.a.wrapped(b.a, "CloseIcon", _.a), E = u.a.div("LoadingTitleContainer", _.a), C = u.a.div("LoadingNavContainer", _.a), w = u.a.div("ShortLoadingNav", _.a), O = u.a.wrapped(h.a, "ThemedChevron", _.a), k = e => {
 				let {
 					...t
 				} = e;
@@ -1013,13 +1013,13 @@
 				}), a.a.createElement(O, null)), a.a.createElement(C, null, a.a.createElement(w, null), a.a.createElement(O, null)), a.a.createElement(C, null, a.a.createElement("div", {
 					className: Object(l.a)(_.a.LoadingNav, t.isLoading && _.a.loading)
 				}), a.a.createElement(O, null)))))
-			}, k = Object(d.a)({
+			}, N = Object(d.a)({
 				getComponent: () => Object(m.a)(() => Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("StructuredStyles")]).then(n.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
-				ErrorComponent: () => a.a.createElement(N, {
+				ErrorComponent: () => a.a.createElement(k, {
 					gradientType: "posts",
 					isLoading: !1
 				}),
-				LoadingComponent: () => a.a.createElement(N, {
+				LoadingComponent: () => a.a.createElement(k, {
 					gradientType: "posts",
 					isLoading: !0
 				})
@@ -1032,7 +1032,7 @@
 				const t = e.moderatorPermissions && r()(e.moderatorPermissions).some(e => e);
 				return e.moderatorPermissions && t && e.isEditing ? a.a.createElement("div", {
 					className: Object(l.a)(_.a.Container, e.isSubscriptionsPinned && _.a.isSubscriptionPinned)
-				}, e.children, a.a.createElement(k, {
+				}, e.children, a.a.createElement(N, {
 					subredditId: e.subredditId
 				})) : a.a.createElement(i.Fragment, null, e.children)
 			})
@@ -1192,7 +1192,7 @@
 				subreddit: S.S,
 				subredditAboutInfo: S.t
 			});
-			class N extends r.a.Component {
+			class k extends r.a.Component {
 				constructor() {
 					super(...arguments), this.trackSubredditClick = () => {
 						const {
@@ -1245,7 +1245,7 @@
 					})) : null
 				}
 			}
-			var k = Object(h.b)(O)(Object(d.c)(N)),
+			var N = Object(h.b)(O)(Object(d.c)(k)),
 				L = n("./src/reddit/helpers/styles/mixins/loading.ts");
 			var I = e => {
 					const {
@@ -1309,7 +1309,7 @@
 						hk: "46yzcK"
 					}))), r.a.createElement("div", {
 						className: P.a.SubredditList
-					}, s.length > 0 ? s.map(e => r.a.createElement(k, {
+					}, s.length > 0 ? s.map(e => r.a.createElement(N, {
 						className: P.a.Subreddit,
 						discoveryUnit: B,
 						key: e,
@@ -1399,7 +1399,7 @@
 				C = n.n(E);
 			const {
 				fbt: w
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), O = Object(u.u)(), N = Object(i.b)(() => Object(a.c)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), O = Object(u.u)(), k = Object(i.b)(() => Object(a.c)({
 				forceRedditStyle: (e, t) => {
 					const n = Object(u.n)(e, t) || void 0,
 						s = t.redditStyle || Object(g.l)(e, {
@@ -1412,7 +1412,7 @@
 				subredditId: u.n,
 				topPostVariant: b.d
 			}));
-			class k extends r.a.Component {
+			class N extends r.a.Component {
 				constructor() {
 					super(...arguments), this.contentRef = r.a.createRef(), this.state = {
 						isTruncated: !1
@@ -1491,7 +1491,7 @@
 					})))
 				}
 			}
-			t.a = O(N(Object(c.a)(Object(l.c)(k))))
+			t.a = O(k(Object(c.a)(Object(l.c)(N))))
 		},
 		"./src/reddit/connectors/PostList/index.ts": function(e, t, n) {
 			"use strict";
@@ -1582,10 +1582,10 @@
 					showModalOnScroll: () => e(d.cb()),
 					surveyTriggerScrollCounted: () => e(Object(u.l)())
 				}),
-				N = e => Object(h.b)({
+				k = e => Object(h.b)({
 					...e
 				}),
-				k = (e, t, n, s) => {
+				N = (e, t, n, s) => {
 					const {
 						listingKey: r,
 						hostPostData: i,
@@ -1597,8 +1597,8 @@
 					...e,
 					...t,
 					...n,
-					postComponentForLayout: N,
-					postClickEventFactory: k
+					postComponentForLayout: k,
+					postClickEventFactory: N
 				}));
 			t.a = e => Object(m.c)(E(L(e)))
 		},
@@ -1960,8 +1960,7 @@
 				const s = Object(o.a)(b.a.row, t, {
 					[b.a.mIsInteractive]: !n.noHover,
 					[b.a.mIsSelected]: n.isSelected,
-					[b.a.topics]: n.isTopicsStyle,
-					[b.a.modNotes]: n.isModNotesStyle
+					[b.a.topics]: n.isTopicsStyle
 				});
 				return a.a.createElement(f, g({
 					className: s
@@ -1974,8 +1973,8 @@
 				text: "_2-cXnP74241WI7fpcpfPmg",
 				row: "_3LwUIE7yX7CZQKmD2L87vf",
 				topics: "kR_ljR-F8vtc-ORj1uipB",
-				modNotes: "sK8_uuNiAqPNlw-HoD2HG",
 				checkmark: "_3Iua3qlR9JiTwjjk6NKye1",
+				modNotes: "sK8_uuNiAqPNlw-HoD2HG",
 				mIsSelected: "_1IKtbRloF_LV1hPqMzP3MC",
 				mIsInteractive: "_1oYEKCssGFjqxQ9jJMNj5G"
 			}
@@ -2359,8 +2358,8 @@
 				C = n("./src/reddit/constants/listings.ts"),
 				w = n("./src/reddit/constants/postLayout.ts"),
 				O = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				N = n("./src/reddit/helpers/trackers/screenview.ts"),
-				k = n("./src/reddit/layout/page/Listing/index.tsx"),
+				k = n("./src/reddit/helpers/trackers/screenview.ts"),
+				N = n("./src/reddit/layout/page/Listing/index.tsx"),
 				L = n("./src/reddit/pages/ErrorPages/index.tsx"),
 				I = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				j = n("./src/reddit/controls/Button/index.tsx"),
@@ -2696,8 +2695,8 @@
 				we = n("./src/reddit/pages/Topic/index.m.less"),
 				Oe = n.n(we);
 			const {
-				fbt: Ne
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ke = Object(O.u)(), Le = (e, t) => t.match.params.sort || o.X, Ie = e => {
+				fbt: ke
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(O.u)(), Le = (e, t) => t.match.params.sort || o.X, Ie = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(W.Posts), e.hasSubreddits && t.push(W.Communities), e.childRelationships.length && t.push(W.RelatedTopics), t) : t
 			}, je = Object(d.b)(() => Object(i.a)((e, t) => Object(Ce.d)(e, t.match.params.topicSlug), (e, t) => Object(Ce.e)(e, {
@@ -2739,7 +2738,7 @@
 						this.openTab(W.Communities)
 					}, this.onViewed = (e, t) => {
 						var n;
-						return Object(N.f)({
+						return Object(k.f)({
 							key: Object(c.a)(C.b.Topic, null, {
 								topicSlug: null === (n = this.props.topic) || void 0 === n ? void 0 : n.slug
 							}),
@@ -2797,7 +2796,7 @@
 					} = this.state, v = C.b.Topic;
 					if (404 === i) return r.a.createElement(L.b, null);
 					if (500 === i) return r.a.createElement(L.b, {
-						message: Ne._("Sorry, for some reason reddit can't be reached.", null, {
+						message: ke._("Sorry, for some reason reddit can't be reached.", null, {
 							hk: "3SZaDI"
 						})
 					});
@@ -2837,21 +2836,21 @@
 							topics: _
 						}))),
 						O = f !== W.RelatedTopics,
-						N = f !== W.Communities && o.includes(W.Communities),
+						k = f !== W.Communities && o.includes(W.Communities),
 						I = r.a.createElement("div", {
 							className: Oe.a.WidgetsContainer
-						}, N && r.a.createElement(E.a, {
+						}, k && r.a.createElement(E.a, {
 							onSeeMoreCommunities: this.openCommunitiesTab,
 							subredditIds: d.subredditIds,
 							topicUrl: d.url
 						}), O && d.childRelationships.map(this.renderRelationship), r.a.createElement(T, {
 							limit: 5,
-							title: Ne._("Similar Topics", null, {
+							title: ke._("Similar Topics", null, {
 								hk: "1Kv3xR"
 							}),
 							topics: s
 						}));
-					return r.a.createElement(y.a, null, r.a.createElement(k.a, {
+					return r.a.createElement(y.a, null, r.a.createElement(N.a, {
 						className: Object(a.a)(Oe.a.Container, e),
 						content: w,
 						fitPageToContent: !0,
@@ -2872,7 +2871,7 @@
 					}))
 				}
 			}
-			t.default = ke(je(Re))
+			t.default = Ne(je(Re))
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
 			"use strict";
@@ -2998,4 +2997,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.46a32f5b8aaf9e63af8d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.07f0c63c11218535b2af.js.map

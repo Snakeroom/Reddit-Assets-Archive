@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.ea8470edc64b19b8ce3a.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.f4ec49f4f0bbdd748282.js
+// Retrieved at 3/29/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -387,8 +387,8 @@
 				L = n("./node_modules/lodash/range.js"),
 				R = n.n(L),
 				I = n("./src/reddit/controls/Button/index.tsx"),
-				M = n("./src/reddit/layout/row/Inline/index.tsx"),
-				F = n("./src/reddit/models/Flair/index.ts"),
+				F = n("./src/reddit/layout/row/Inline/index.tsx"),
+				M = n("./src/reddit/models/Flair/index.ts"),
 				P = n("./src/reddit/selectors/tooltip.ts"),
 				D = n("./src/reddit/selectors/user.ts"),
 				H = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
@@ -454,9 +454,9 @@
 				re = x.a.wrapped(ne, "NSFWFlair", B.a),
 				se = e => {
 					switch (e.flair) {
-						case F.f.Nsfw:
+						case M.f.Nsfw:
 							return r.a.createElement(re, null, "NSFW");
-						case F.f.Spoiler:
+						case M.f.Spoiler:
 							return r.a.createElement(ae, null, "SPOILER");
 						default:
 							return null
@@ -469,7 +469,7 @@
 						disabled: e.disabled,
 						indent: e.indent,
 						last: e.last
-					}, r.a.createElement(Y, null, r.a.createElement(M.a, null, r.a.createElement("label", {
+					}, r.a.createElement(Y, null, r.a.createElement(F.a, null, r.a.createElement("label", {
 						htmlFor: t
 					}, r.a.createElement(z, null, e.label))), r.a.createElement(U, null, e.subtext)), r.a.createElement(Q, null, r.a.createElement(V, null, e.tooltip && r.a.createElement(q, {
 						tooltipContentClass: e.tooltipContentClassName,
@@ -502,7 +502,7 @@
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && r.a.createElement(M.a, null, r.a.createElement(z, null, e.label)), !e.hideSubtext && r.a.createElement(U, null, " ", r.a.createElement(ue, {
+				}, !e.inModal && r.a.createElement(F.a, null, r.a.createElement(z, null, e.label)), !e.hideSubtext && r.a.createElement(U, null, " ", r.a.createElement(ue, {
 					style: {
 						color: e.ticks[e.value].color
 					}
@@ -534,7 +534,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(Y, null, r.a.createElement(M.a, null, r.a.createElement(z, null, e.label)), r.a.createElement(U, null, e.subtext)), r.a.createElement(Q, null, r.a.createElement(V, null, r.a.createElement(I.o, {
+				}, r.a.createElement(Y, null, r.a.createElement(F.a, null, r.a.createElement(z, null, e.label)), r.a.createElement(U, null, e.subtext)), r.a.createElement(Q, null, r.a.createElement(V, null, r.a.createElement(I.o, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				fe = e => r.a.createElement(J, {
@@ -1084,8 +1084,7 @@
 				const a = Object(l.a)(f.a.row, t, {
 					[f.a.mIsInteractive]: !n.noHover,
 					[f.a.mIsSelected]: n.isSelected,
-					[f.a.topics]: n.isTopicsStyle,
-					[f.a.modNotes]: n.isModNotesStyle
+					[f.a.topics]: n.isTopicsStyle
 				});
 				return o.a.createElement(x, b({
 					className: a
@@ -1098,8 +1097,8 @@
 				text: "_2-cXnP74241WI7fpcpfPmg",
 				row: "_3LwUIE7yX7CZQKmD2L87vf",
 				topics: "kR_ljR-F8vtc-ORj1uipB",
-				modNotes: "sK8_uuNiAqPNlw-HoD2HG",
 				checkmark: "_3Iua3qlR9JiTwjjk6NKye1",
+				modNotes: "sK8_uuNiAqPNlw-HoD2HG",
 				mIsSelected: "_1IKtbRloF_LV1hPqMzP3MC",
 				mIsInteractive: "_1oYEKCssGFjqxQ9jJMNj5G"
 			}
@@ -1917,4 +1916,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.ea8470edc64b19b8ce3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.f4ec49f4f0bbdd748282.js.map

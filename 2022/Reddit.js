@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.32c27d7faaa2c97302b9.js
-// Retrieved at 3/29/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.c5e59185991ea9ad70b5.js
+// Retrieved at 3/29/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2918,8 +2918,8 @@
 						domReady: !0
 					})
 				}
-				componentDidUpdate() {
-					this.conditionalModalCheck(), Fe.b.includes(this.props.activeModalId || "") || (this.props.activeModalId ? setTimeout(() => Object(_t.a)(), 500) : setTimeout(() => Object(_t.b)(), 500))
+				componentDidUpdate(e) {
+					this.conditionalModalCheck(), e.activeModalId !== this.props.activeModalId && (Fe.b.includes(this.props.activeModalId || "") || (this.props.activeModalId ? setTimeout(() => Object(_t.a)(), 500) : setTimeout(() => Object(_t.b)(), 500)))
 				}
 				render() {
 					const {
@@ -2955,13 +2955,15 @@
 						toggleModal: h,
 						trackAddEvent: O("banned", n.subredditId, n.contextId)("add_in_context"),
 						trackEventWithName: O("banned", n.subredditId, n.contextId),
-						username: n.username
+						username: n.username,
+						withOverlay: !0
 					}), i && a && m.a.createElement(we.a, {
 						contextId: a.contextId,
 						subredditId: a.subredditId,
 						toggleModal: g,
 						trackAddEvent: O("muted", a.subredditId, a.contextId)("add_in_context"),
-						username: a.username
+						username: a.username,
+						withOverlay: !0
 					}), d && l && m.a.createElement(Ae, {
 						itemIds: l.itemIds,
 						subredditId: l.subredditId,
@@ -3481,8 +3483,8 @@
 						this.props.activeModalId && this.props.toggleModal(this.props.activeModalId)
 					}
 				}
-				componentDidUpdate() {
-					Fe.b.includes(this.props.activeModalId || "") || (this.props.activeModalId ? setTimeout(() => Object(_t.a)(), Hn) : setTimeout(() => Object(_t.b)(), Hn))
+				componentDidUpdate(e) {
+					e.activeModalId !== this.props.activeModalId && (Fe.b.includes(this.props.activeModalId || "") || (this.props.activeModalId ? setTimeout(() => Object(_t.a)(), Hn) : setTimeout(() => Object(_t.b)(), Hn)))
 				}
 				componentWillUnmount() {
 					Object(_t.b)()
@@ -18240,4 +18242,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Governance~ModListing~Reddit~Subreddit", "Chat~Governance~Reddit", "Governance~Reddit", "AuthorHovercard~Reddit", "ModListing~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.32c27d7faaa2c97302b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.c5e59185991ea9ad70b5.js.map

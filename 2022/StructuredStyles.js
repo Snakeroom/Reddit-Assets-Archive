@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.6dd72f6180be4ad62f57.js
-// Retrieved at 3/29/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.e7faa754588aa9211bb6.js
+// Retrieved at 3/29/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/linkify-it/index.js": function(e, t, n) {
@@ -7286,8 +7286,7 @@
 				const a = Object(l.a)(g.a.row, t, {
 					[g.a.mIsInteractive]: !n.noHover,
 					[g.a.mIsSelected]: n.isSelected,
-					[g.a.topics]: n.isTopicsStyle,
-					[g.a.modNotes]: n.isModNotesStyle
+					[g.a.topics]: n.isTopicsStyle
 				});
 				return i.a.createElement(f, b({
 					className: a
@@ -7300,8 +7299,8 @@
 				text: "_2-cXnP74241WI7fpcpfPmg",
 				row: "_3LwUIE7yX7CZQKmD2L87vf",
 				topics: "kR_ljR-F8vtc-ORj1uipB",
-				modNotes: "sK8_uuNiAqPNlw-HoD2HG",
 				checkmark: "_3Iua3qlR9JiTwjjk6NKye1",
+				modNotes: "sK8_uuNiAqPNlw-HoD2HG",
 				mIsSelected: "_1IKtbRloF_LV1hPqMzP3MC",
 				mIsInteractive: "_1oYEKCssGFjqxQ9jJMNj5G"
 			}
@@ -9709,4 +9708,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.6dd72f6180be4ad62f57.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.e7faa754588aa9211bb6.js.map
