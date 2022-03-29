@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.85fbc6428dc01adeaf3e.js
-// Retrieved at 3/29/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.7057996c9ac6b21abdcf.js
+// Retrieved at 3/29/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -826,7 +826,7 @@
 					ExpandedCrosspost: "66cadc2bfe723eff03f2",
 					ReportFlow: "be03761fad24a6e0c0c5",
 					HarbergerTaxBannerPurchaseCTA: "a8576f0c16cb09aecc82",
-					IdCard: "ed75b3c214aa09f54074",
+					IdCard: "125a72115cd109139937",
 					ModModeBanners: "20aaeda805241a6a862e",
 					MuxEmbed: "31d6cfe0d16ae931b73c",
 					NewCommentPill: "ae9fd34931d23f2eeab3",
@@ -874,7 +874,7 @@
 					"reddit-components-InFeedPostCreation": "9d674249784fdc8ced28",
 					"reddit-components-TabBadger-Component": "52beb878d4033b50d0bb",
 					RpanListingUnit: "1971eeea5a021a1388d2",
-					StructuredStyles: "bc50829e08f26fb27034",
+					StructuredStyles: "850d7ab6cbf2c76562c8",
 					CryptoLibEthers: "31d6cfe0d16ae931b73c",
 					JsonEMEntityView: "31d6cfe0d16ae931b73c",
 					"reddit-components-CrisisFlow-CrisisFlowPage": "ed056d5b0bab2a006468",
@@ -1509,7 +1509,7 @@
 						ExpandedCrosspost: "2ee9afb354e9f73daf27",
 						ReportFlow: "369587a90561fdeb31c9",
 						HarbergerTaxBannerPurchaseCTA: "32df65df76c0c7aff24a",
-						IdCard: "cf7163108893529480c9",
+						IdCard: "5e0aabddef02066f8671",
 						ModModeBanners: "b7b73bcb711ff6cefb79",
 						MuxEmbed: "982b3400754d822142c4",
 						NewCommentPill: "c2dbaccb948c33535e39",
@@ -1557,7 +1557,7 @@
 						"reddit-components-InFeedPostCreation": "f3e00fb377f68f9cb1db",
 						"reddit-components-TabBadger-Component": "6d9d32089b01d143370b",
 						RpanListingUnit: "961d521cb378d6dcbb2d",
-						StructuredStyles: "7b5f6b0896ad0ba4c67f",
+						StructuredStyles: "6dd72f6180be4ad62f57",
 						CryptoLibEthers: "30de3da0bc4fddecee17",
 						JsonEMEntityView: "858027fa85eb87c716ab",
 						"reddit-components-CrisisFlow-CrisisFlowPage": "c37224accc72673b1584",
@@ -1705,4 +1705,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.85fbc6428dc01adeaf3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.7057996c9ac6b21abdcf.js.map
