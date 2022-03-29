@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.264acff272913f0a984d.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.b4c843b5710d3d3d72ec.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1241,9 +1241,9 @@
 				Y = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
 				J = r.n(Y);
 			const {
-				fbt: K
+				fbt: Z
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			var $ = e => {
+			var K = e => {
 					const {
 						additionalCount: t,
 						className: r,
@@ -1257,7 +1257,7 @@
 						className: r
 					}, a.a.createElement("div", {
 						className: J.a.titleRow
-					}, a.a.createElement("span", null, K._("Powerups", null, {
+					}, a.a.createElement("span", null, Z._("Powerups", null, {
 						hk: "DrcXp"
 					})), a.a.createElement("span", null, n < o ? `${n}/${o}` : n)), a.a.createElement("div", {
 						className: J.a.barRow
@@ -1276,8 +1276,8 @@
 						}
 					})))
 				},
-				Z = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/index.m.less"),
-				ee = r.n(Z);
+				$ = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/index.m.less"),
+				ee = r.n($);
 			var te = function(e) {
 				const {
 					className: t,
@@ -1293,7 +1293,7 @@
 				const u = Math.min(d, d / 2 + s.count / 2, s.count + (r || 0) / 2) / d;
 				return a.a.createElement("div", {
 					className: Object(l.a)(t, ee.a.container)
-				}, a.a.createElement($, {
+				}, a.a.createElement(K, {
 					additionalCount: r,
 					className: ee.a.bar,
 					count: s.count,
@@ -2724,9 +2724,9 @@
 				s = r("./src/reddit/helpers/trackers/gild.ts");
 			const c = e => ({
 					...a.o(e),
-					screen: a.ab(e),
-					subreddit: a.ib(e),
-					userSubreddit: a.sb(e)
+					screen: a.Z(e),
+					subreddit: a.hb(e),
+					userSubreddit: a.rb(e)
 				}),
 				i = e => ({
 					awardId: e.id,
@@ -2821,7 +2821,7 @@
 					noun: r,
 					goldPurchase: i(e),
 					profile: a.S(n, t),
-					subreddit: a.jb(n, t)
+					subreddit: a.ib(n, t)
 				}),
 				h = (e, t) => b(e, t, "disable_in_community"),
 				g = (e, t) => b(e, t, "enable_in_community")
@@ -2911,9 +2911,9 @@
 					comment: t ? a.i(e, t) : void 0,
 					correlationId: Object(i.b)(e) || Object(s.e)(s.a.GildingFlow, !1),
 					post: t ? a.I(e, t) : void 0,
-					screen: a.ab(e),
-					subreddit: a.ib(e),
-					userSubreddit: a.sb(e)
+					screen: a.Z(e),
+					subreddit: a.hb(e),
+					userSubreddit: a.rb(e)
 				}),
 				m = e => t => ({
 					...u(t, e),
@@ -3146,8 +3146,8 @@
 						comment: r ? i.i(e, r) : null,
 						correlationId: c.r(e) || Object(m.e)(m.a.GoldPayment, !1),
 						post: r ? i.I(e, r) : null,
-						screen: i.ab(e),
-						subreddit: r ? i.ib(e) : null,
+						screen: i.Z(e),
+						subreddit: r ? i.hb(e) : null,
 						goldPurchase: {
 							...h ? Object(f.a)(h) : null,
 							type: y,
@@ -3354,7 +3354,7 @@
 				p = r("./node_modules/react-redux/es/index.js"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				b = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(b.a)(f.Kc);
+			const h = Object(b.a)(f.Gc);
 			let g = null;
 
 			function y() {
@@ -3777,4 +3777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.264acff272913f0a984d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.b4c843b5710d3d3d72ec.js.map

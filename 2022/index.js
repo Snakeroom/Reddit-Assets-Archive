@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.005051562efca4588429.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.68410ed40dc452774669.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -137,8 +137,8 @@
 					audioRoom: n
 				} = t, {
 					recordingStatus: u
-				} = n, [E, f] = Object(a.useState)(new Set), [g, h] = Object(a.useState)(new Set), x = Object(r.e)(l.cb), [O, P] = Object(a.useState)(-1), _ = e => {
-					const t = e ? Array.from(g) : Array.from(E);
+				} = n, [E, f] = Object(a.useState)(new Set), [h, g] = Object(a.useState)(new Set), x = Object(r.e)(l.cb), [O, P] = Object(a.useState)(-1), _ = e => {
+					const t = e ? Array.from(h) : Array.from(E);
 					return null == t ? void 0 : t.map((t, n) => {
 						return e ? s.a.createElement("div", {
 							key: `audioPostAvatar--${t}`,
@@ -173,10 +173,10 @@
 					const e = new Set;
 					for (; e.size < 13;) {
 						const t = j();
-						e.has(t) || (E.size < 6 ? E.add(t) : g.size < 7 && g.add(t), e.add(t))
+						e.has(t) || (E.size < 6 ? E.add(t) : h.size < 7 && h.add(t), e.add(t))
 					}
-					f(E), h(g)
-				}, [E, g]), Object(a.useEffect)(() => {
+					f(E), g(h)
+				}, [E, h]), Object(a.useEffect)(() => {
 					const e = setInterval(() => {
 						const e = Math.floor(6 * Math.random());
 						P(e), setTimeout(() => P(-1), 3500)
@@ -347,7 +347,7 @@
 				poll: Object(i.N)(e, t),
 				post: Object(i.I)(e, t),
 				predictions: Object(i.O)(e, t),
-				subreddit: Object(i.ib)(e)
+				subreddit: Object(i.hb)(e)
 			});
 			var d = n("./src/reddit/hooks/useTracking.ts"),
 				l = n("./src/reddit/models/Prediction/index.ts"),
@@ -359,8 +359,8 @@
 				E = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less"),
 				f = n.n(E);
 
-			function g() {
-				return (g = Object.assign || function(e) {
+			function h() {
+				return (h = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -368,7 +368,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const h = e => {
+			const g = e => {
 				let {
 					className: t,
 					...n
@@ -376,7 +376,7 @@
 				const o = Object(b.fb)(),
 					r = Object(b.x)(o),
 					i = Object(s.e)(v.cb);
-				return a.a.createElement("div", g({}, n, {
+				return a.a.createElement("div", h({}, n, {
 					className: Object(p.a)(t, f.a.container, {
 						[f.a.commentsPage]: r,
 						[f.a.isNightMode]: i
@@ -570,9 +570,9 @@
 						} = t,
 						{
 							id: f,
-							voteState: g
+							voteState: h
 						} = n,
-						h = t.userSelection,
+						g = t.userSelection,
 						[x, O] = a.a.useState(!1),
 						[P, _] = a.a.useState(null),
 						[j, y] = a.a.useState(!1),
@@ -587,7 +587,7 @@
 							return t === P
 						}),
 						selectOption: e => {
-							k || h || _(e.id)
+							k || g || _(e.id)
 						},
 						predict: async t => {
 							if (t.currency === l.a.Coins && t.amount > r) return Object($.promptUserToBuyMoreCoins)(), void c(W.b);
@@ -607,7 +607,7 @@
 									pollId: p,
 									tournamentId: e,
 									tournamentPostId: n.id
-								})), i && g < Z.a.upvoted && (o(Object(H.kb)(f)), o(Object(H.kb)(p)), m()), O(!1), _(null), y(!0)
+								})), i && h < Z.a.upvoted && (o(Object(H.kb)(f)), o(Object(H.kb)(p)), m()), O(!1), _(null), y(!0)
 							} catch (a) {
 								O(!1), _(null), u(K._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
@@ -748,9 +748,9 @@
 							noun: "predicted_all_post"
 						}))(t.id);
 						i(e)
-					}, [t.id, o, v, i]), o === u.a.Closed ? a.a.createElement(h, null, a.a.createElement(S, {
+					}, [t.id, o, v, i]), o === u.a.Closed ? a.a.createElement(g, null, a.a.createElement(S, {
 						postId: t.id
-					})) : a.a.createElement(h, null, v ? a.a.createElement(oe, {
+					})) : a.a.createElement(g, null, v ? a.a.createElement(oe, {
 						post: t,
 						predictions: b
 					}) : a.a.createElement(T, {
@@ -832,4 +832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.005051562efca4588429.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.68410ed40dc452774669.js.map

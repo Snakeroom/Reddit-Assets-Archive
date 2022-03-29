@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.dfec3738b34fad7e659f.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.baef84e6c76b51da5c33.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -84,10 +84,10 @@
 			}
 			var f = Object(r.b)(void 0, e => ({
 				onDismissTooltip: () => {
-					e(Object(c.i)()), Object(u.Ab)()
+					e(Object(c.i)()), Object(u.zb)()
 				},
 				onViewTooltip: () => {
-					Object(u.Vb)()
+					Object(u.Tb)()
 				}
 			}))(Object(p.c)(g));
 			const y = "editable-primary-topic-idcard";
@@ -815,12 +815,12 @@
 				fbt: U
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), K = Object(r.c)({
 				activeTooltipId: B.a
-			}), V = Object(i.b)(K, e => ({
+			}), G = Object(i.b)(K, e => ({
 				onHideTooltip: () => e(Object(l.i)()),
 				onShowTooltip: t => e(Object(l.f)({
 					tooltipId: t
 				}))
-			})), G = "inline-editing-topics-tooltip-", W = {
+			})), V = "inline-editing-topics-tooltip-", W = {
 				top: R.a.alienblue,
 				bottom: R.a.alienblue
 			};
@@ -833,7 +833,7 @@
 					}
 				}
 				makeUniqueTooltipId() {
-					return `${G}${k()()}`
+					return `${V}${k()()}`
 				}
 				componentDidMount() {
 					this.setState({
@@ -863,7 +863,7 @@
 					}))))
 				}
 			}
-			var q = V(J),
+			var q = G(J),
 				X = s("./src/reddit/components/InlineSubredditEditing/InlineCommunityTopics/index.m.less"),
 				Z = s.n(X);
 			const {
@@ -1767,4 +1767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.dfec3738b34fad7e659f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.baef84e6c76b51da5c33.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.aeb1aff0588e6f43f4cf.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.a283796c21d730fc6345.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -196,7 +196,7 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(N.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: B.if.SmIconHc,
+					userVariant: B.ef.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
@@ -789,12 +789,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case _.if.SmIcon:
+						case _.ef.SmIcon:
 							return s.a.createElement(b, {
 								subredditName: r,
 								rtJsonElementProps: i
 							});
-						case _.if.SmIconHc:
+						case _.ef.SmIconHc:
 							return s.a.createElement(b, {
 								subredditName: r,
 								isHoverable: !0,
@@ -900,7 +900,7 @@
 				b = e => ({
 					...l.o(e),
 					source: s,
-					screen: l.ab(e),
+					screen: l.Z(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: r.SUBREDDIT_HOVERCARD,
@@ -946,7 +946,7 @@
 					const r = Object(d.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
 						post: l.I(e, n.id),
-						subreddit: l.jb(e, r),
+						subreddit: l.ib(e, r),
 						...p(e, t)
 					}
 				},
@@ -959,8 +959,8 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: r.SUBREDDIT_HOVERCARD,
-					subreddit: l.kb(t, e),
-					screen: l.ab(t)
+					subreddit: l.jb(t, e),
+					screen: l.Z(t)
 				}),
 				h = (e, t) => n => ({
 					...b(n),
@@ -968,8 +968,8 @@
 					action: o.c.VIEW,
 					noun: r.ITEM_POST,
 					post: l.I(n, t),
-					subreddit: l.kb(n, e),
-					screen: l.ab(n)
+					subreddit: l.jb(n, e),
+					screen: l.Z(n)
 				}),
 				g = (e, t) => n => ({
 					...b(n),
@@ -977,26 +977,26 @@
 					action: o.c.CLICK,
 					noun: r.ITEM_POST,
 					post: l.I(n, t),
-					subreddit: l.kb(n, e),
-					screen: l.ab(n)
+					subreddit: l.jb(n, e),
+					screen: l.Z(n)
 				}),
 				S = e => t => ({
 					...b(t),
-					subreddit: l.jb(t, e) || null,
+					subreddit: l.ib(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT
 				}),
 				E = e => t => ({
 					...b(t),
-					subreddit: l.jb(t, e) || null,
+					subreddit: l.ib(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				v = e => t => ({
 					...b(t),
-					subreddit: l.jb(t, e) || null,
+					subreddit: l.ib(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: r.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -1066,12 +1066,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.bf
+						experimentName: r.Xe
 					}) || ""
 				},
 				a = e => {
 					const t = c(e);
-					return t === r.if.SmIcon || t === r.if.SmIconHc
+					return t === r.ef.SmIcon || t === r.ef.SmIconHc
 				},
 				u = (e, t) => {
 					let {
@@ -1100,4 +1100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.aeb1aff0588e6f43f4cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.a283796c21d730fc6345.js.map

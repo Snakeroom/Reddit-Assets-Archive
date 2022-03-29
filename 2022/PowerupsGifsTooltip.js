@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.509f73b0255de450896a.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.e9b4e368fc19bf107acd.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -118,10 +118,10 @@
 				w = s("./src/reddit/selectors/telemetry.ts"),
 				C = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
 				G = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
-			let j;
+			let v;
 
-			function v() {
-				j || (j = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
+			function j() {
+				v || (v = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
 			var k = s("./node_modules/lodash/debounce.js"),
 				I = s.n(k),
@@ -209,7 +209,7 @@
 							action: "change",
 							noun: "gif_tooltip_search",
 							correlationId: this.props.correlationId,
-							subreddit: this.props.subreddit.id ? w.jb(t, this.props.subreddit.id) : void 0,
+							subreddit: this.props.subreddit.id ? w.ib(t, this.props.subreddit.id) : void 0,
 							post: w.k(t),
 							search: {
 								query: e
@@ -236,7 +236,7 @@
 								action: "select",
 								noun: "gif_tooltip_result",
 								correlationId: this.props.correlationId,
-								subreddit: this.props.subreddit.id ? w.jb(e, this.props.subreddit.id) : void 0,
+								subreddit: this.props.subreddit.id ? w.ib(e, this.props.subreddit.id) : void 0,
 								post: w.k(e),
 								actionInfo: {
 									...t.actionInfo,
@@ -250,7 +250,7 @@
 					}
 				}
 				componentDidMount() {
-					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), v()
+					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), j()
 				}
 				componentWillUnmount() {
 					this.mounted = !1
@@ -268,7 +268,7 @@
 					} = this.state;
 					!e && s && null !== t && (await
 						function(e) {
-							return v(), j.then(t => {
+							return j(), v.then(t => {
 								return !!e.split(" ").concat(e).find(e => -1 !== t.indexOf(e.toLowerCase()))
 							}).catch(() => !1)
 						}(s) || (this.setState({
@@ -505,4 +505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.509f73b0255de450896a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsGifsTooltip.e9b4e368fc19bf107acd.js.map

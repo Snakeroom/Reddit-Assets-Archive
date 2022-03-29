@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.cf485ec81aa976dfefd5.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.a36c27a5a3b1cc53f710.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1782,16 +1782,16 @@
 				Le = n("./src/reddit/selectors/telemetry.ts"),
 				Se = n("./src/telemetry/models/Event.ts");
 			const Ae = e => ({
-					screen: Object(Le.ab)(e),
+					screen: Object(Le.Z)(e),
 					profile: Object(Le.R)(e),
-					subreddit: Object(Le.ib)(e)
+					subreddit: Object(Le.hb)(e)
 				}),
 				Re = (e, t) => n => ({
 					action: "load",
 					noun: e,
 					post: Object(Le.I)(n, t),
 					source: Se.b.ChatView,
-					subreddit: Object(Le.ib)(n)
+					subreddit: Object(Le.hb)(n)
 				}),
 				Pe = e => t => ({
 					source: "chat_post",
@@ -2204,7 +2204,7 @@
 				Ft = n("./src/reddit/constants/experiments.ts"),
 				Dt = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Ut = e => Object(Dt.c)(e, {
-				experimentName: Ft.ob,
+				experimentName: Ft.mb,
 				experimentEligibilitySelector: Dt.a
 			}) === Ft.ib.Enabled;
 			var Wt = n("./src/reddit/selectors/communityAwards.ts");
@@ -3737,4 +3737,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.cf485ec81aa976dfefd5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.a36c27a5a3b1cc53f710.js.map

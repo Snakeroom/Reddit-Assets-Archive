@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b422a1d01f112bd12741.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.abf66932ffd50abcb76d.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -284,16 +284,16 @@
 			const p = Object(a.a)(e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Sd
+					experimentName: m.Od
 				});
-				return Object(m.Df)(t) ? void 0 : t
+				return Object(m.zf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
-					experimentName: m.Td
+					experimentName: m.Pd
 				});
-				return Object(m.Df)(t) ? void 0 : t
-			}, (e, t) => e === m.Wd.Enabled && t === m.Wd.Enabled);
+				return Object(m.zf)(t) ? void 0 : t
+			}, (e, t) => e === m.Sd.Enabled && t === m.Sd.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const v = e => {
@@ -670,7 +670,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.Cf)(e.category_name)
+									displayText: Object(m.yf)(e.category_name)
 								};
 								s.push(n.id), t[n.id] = n
 							}), {
@@ -690,7 +690,7 @@
 					t(S({
 						categoryId: e,
 						rank: o + 1
-					})), Object(u.lb)(Object(p.d)(s()))
+					})), Object(u.kb)(Object(p.d)(s()))
 				}
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
@@ -1500,9 +1500,9 @@
 							a = Object(ie.K)(s(), {
 								identifier: B.belongsTo
 							});
-						if (a && (e => q.Pe.Redirect === Object(W.b)(e, {
+						if (a && (e => q.Le.Redirect === Object(W.b)(e, {
 								experimentEligibilitySelector: ne,
-								experimentName: q.Ie
+								experimentName: q.Ee
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((B.media && B.media.type) === D.o.LIVEVIDEO) {
 							const e = `/rpan${B.belongsTo.type===P.a.SUBREDDIT?a.url:"/"}${Object(g.u)(B.id)}`;
@@ -4423,7 +4423,7 @@
 					if (t) {
 						const s = a.B(e, t.post.id),
 							o = a.I(e, t.post.id),
-							n = a.ib(e);
+							n = a.hb(e);
 						if (t.post.authorInfo && o && (o.authorId = t.post.authorInfo.id), s) {
 							s.streamPublicId = t.stream.stream_id, s.id = t.stream.stream_id;
 							const o = Object(r.j)(e, {
@@ -4438,7 +4438,7 @@
 						}
 					}
 					return {
-						subreddit: a.ib(e)
+						subreddit: a.hb(e)
 					}
 				},
 				d = (e, t, s) => {
@@ -4617,7 +4617,7 @@
 					action: "view",
 					noun: "post",
 					profile: a.R(t),
-					screen: a.ab(t),
+					screen: a.Z(t),
 					...i(t, e)
 				}),
 				I = e => t => {
@@ -4627,7 +4627,7 @@
 						action: "consume",
 						noun: "post",
 						profile: a.R(t),
-						screen: a.ab(t),
+						screen: a.Z(t),
 						...s
 					}
 				},
@@ -4648,7 +4648,7 @@
 					action: "click",
 					noun: "subscribe",
 					...i(t, e),
-					targetSubreddit: a.ib(t)
+					targetSubreddit: a.hb(t)
 				}),
 				P = (e, t) => s => ({
 					source: "stream_player",
@@ -4735,7 +4735,7 @@
 				source: "post",
 				action: o.c.CLICK,
 				noun: "share_chat",
-				subreddit: Object(n.ib)(e)
+				subreddit: Object(n.hb)(e)
 			})
 		},
 		"./src/reddit/icons/fonts/DropdownTriangle/index.tsx": function(e, t, s) {
@@ -5107,7 +5107,7 @@
 						toggleModal: t
 					} = e;
 					const s = () => {
-						J.Rb(), t()
+						J.Pb(), t()
 					};
 					return n.a.createElement(G.e, null, n.a.createElement($, null, n.a.createElement(Q.a, null, n.a.createElement("div", null, n.a.createElement("div", {
 						className: z.a.Title
@@ -5345,8 +5345,8 @@
 							action: "click",
 							noun: o,
 							post: s && Object(ge.I)(n, s),
-							screen: Object(ge.ab)(n),
-							subreddit: Object(ge.jb)(n, t)
+							screen: Object(ge.Z)(n),
+							subreddit: Object(ge.ib)(n, t)
 						})))("removal_reasons", this.props.subredditId, this.props.postId)
 					})
 				}
@@ -7586,12 +7586,12 @@
 					this.props.sendEvent(Object(He.h)("guidebook", this.props.currentStream))
 				}
 				onOBSBannerDismissClick() {
-					J.rb(), this.setState({
+					J.qb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(He.g)("not_now", this.props.currentStream))
 				}
 				onOBSBannerLearnMoreClick() {
-					J.rb(), this.setState({
+					J.qb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(He.g)("learn_more", this.props.currentStream)), this.props.toggleOBSDownloadModal()
 				}
@@ -7599,7 +7599,7 @@
 					this.props.currentStream && this.props.sendEvent(Object(He.o)(this.props.currentStream, this.playbackStats))
 				}
 				handleFocusMessageInput() {
-					J.X() || this.props.toggleIntroChatModal()
+					J.W() || this.props.toggleIntroChatModal()
 				}
 				onUpvote() {
 					this.props.currentStream && this.props.sendEvent(Object(He.r)(this.props.currentStream, this.playbackStats))
@@ -8204,8 +8204,8 @@
 				a = s("./src/reddit/selectors/user.ts");
 			const i = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: a.P,
-				experimentName: n.Zb
-			}), e => e === n.id)
+				experimentName: n.Xb
+			}), e => e === n.ed)
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, s) {
 			"use strict";
@@ -8220,7 +8220,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.Df)(t)
+					return Boolean(t) && !Object(n.zf)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -8241,4 +8241,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b422a1d01f112bd12741.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.abf66932ffd50abcb76d.js.map

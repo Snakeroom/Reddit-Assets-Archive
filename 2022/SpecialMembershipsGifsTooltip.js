@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.409f9dbbcf02be496374.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.234ea9da11733e0b85d5.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -118,13 +118,13 @@
 				I = s("./src/reddit/selectors/telemetry.ts"),
 				v = s("./src/reddit/components/RichTextEditor/helpers/common.ts"),
 				C = s("./src/reddit/components/RichTextEditor/media/helpers.ts");
-			let j;
+			let N;
 
-			function N() {
-				j || (j = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
+			function G() {
+				N || (N = fetch("https://meta.redditmedia.com/public/fortnitebr/giphy_blacklist.json").then(e => e.json()))
 			}
-			var G = s("./node_modules/lodash/debounce.js"),
-				O = s.n(G),
+			var O = s("./node_modules/lodash/debounce.js"),
+				j = s.n(O),
 				k = s("./src/reddit/icons/svgs/Search/index.tsx"),
 				S = s("./src/reddit/selectors/user.ts"),
 				w = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
@@ -138,7 +138,7 @@
 						this.setState({
 							query: e.target.value
 						}, this.dispatchOnChange)
-					}, this.dispatchOnChange = O()(() => {
+					}, this.dispatchOnChange = j()(() => {
 						this.props.onChange(this.state.query)
 					}, B), this.focusOnInput = () => {
 						this.elementRef && !1 !== this.props.autofocus && this.elementRef.focus()
@@ -209,7 +209,7 @@
 							action: "change",
 							noun: "gif_tooltip_search",
 							correlationId: this.props.correlationId,
-							subreddit: this.props.subreddit.id ? I.jb(t, this.props.subreddit.id) : void 0,
+							subreddit: this.props.subreddit.id ? I.ib(t, this.props.subreddit.id) : void 0,
 							post: I.k(t),
 							search: {
 								query: e
@@ -236,7 +236,7 @@
 								action: "select",
 								noun: "gif_tooltip_result",
 								correlationId: this.props.correlationId,
-								subreddit: this.props.subreddit.id ? I.jb(e, this.props.subreddit.id) : void 0,
+								subreddit: this.props.subreddit.id ? I.ib(e, this.props.subreddit.id) : void 0,
 								post: I.k(e),
 								actionInfo: {
 									...t.actionInfo,
@@ -250,7 +250,7 @@
 					}
 				}
 				componentDidMount() {
-					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), N()
+					this.mounted = !0, !this.state.query && this.state.loading && this.loadTrendingGifs(), G()
 				}
 				componentWillUnmount() {
 					this.mounted = !1
@@ -268,7 +268,7 @@
 					} = this.state;
 					!e && s && null !== t && (await
 						function(e) {
-							return N(), j.then(t => {
+							return G(), N.then(t => {
 								return !!e.split(" ").concat(e).find(e => -1 !== t.indexOf(e.toLowerCase()))
 							}).catch(() => !1)
 						}(s) || (this.setState({
@@ -530,7 +530,7 @@
 						source: "meta",
 						action: e,
 						noun: "transaction",
-						subreddit: Object(i.jb)(r, s),
+						subreddit: Object(i.ib)(r, s),
 						actionInfo: {
 							settingValue: t,
 							reason: n
@@ -546,7 +546,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? Object(i.jb)(s, t) : void 0,
+					subreddit: t ? Object(i.ib)(s, t) : void 0,
 					correlationId: e,
 					...Object(i.o)(s)
 				}),
@@ -554,7 +554,7 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_upsell",
-					subreddit: t ? Object(i.jb)(s, t) : void 0,
+					subreddit: t ? Object(i.ib)(s, t) : void 0,
 					correlationId: e,
 					...Object(i.o)(s)
 				})
@@ -576,4 +576,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.409f9dbbcf02be496374.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.234ea9da11733e0b85d5.js.map

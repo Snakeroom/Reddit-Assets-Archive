@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.c76f09eada305feeb3d2.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d7784c13b2877692521b.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, n) {
@@ -38,9 +38,9 @@
 			})), n.d(e, "q", (function() {
 				return Ct
 			})), n.d(e, "f", (function() {
-				return jt
-			})), n.d(e, "g", (function() {
 				return ht
+			})), n.d(e, "g", (function() {
+				return jt
 			})), n.d(e, "k", (function() {
 				return xt
 			})), n.d(e, "d", (function() {
@@ -73,8 +73,8 @@
 				O = n("./src/reddit/constants/adEvents.ts"),
 				y = n("./src/reddit/constants/localStorage.ts"),
 				C = n("./src/redditGQL/operations/CommentToxicity.json"),
-				j = n("./src/lib/makeApiRequest/index.ts"),
-				h = n("./src/lib/makeGqlRequest/index.ts"),
+				h = n("./src/lib/makeApiRequest/index.ts"),
+				j = n("./src/lib/makeGqlRequest/index.ts"),
 				x = n("./src/lib/omitHeaders/index.ts"),
 				I = n("./src/reddit/constants/headers.ts"),
 				_ = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
@@ -94,7 +94,7 @@
 							document: t
 						})
 					}
-					return Object(h.a)(t, {
+					return Object(j.a)(t, {
 						...C,
 						variables: {
 							subredditName: e,
@@ -117,7 +117,7 @@
 							document: t
 						})
 					}
-					return Object(j.a)(Object(x.a)(t, [I.a]), {
+					return Object(h.a)(Object(x.a)(t, [I.a]), {
 						method: r.jb.POST,
 						endpoint: Object(_.a)(Object(S.a)(Object(N.a)(`${t.apiUrl}/api/comment.json`))),
 						data: i
@@ -206,14 +206,14 @@
 						apiContext: C
 					} = y;
 					u(Object(d.g)(it));
-					const j = p(),
-						h = j.features.comments.submit.pending[n];
-					if (!j.user.account || h) return;
+					const h = p(),
+						j = h.features.comments.submit.pending[n];
+					if (!h.user.account || j) return;
 					u(et({
 						draftKey: n,
 						draft: s
 					}));
-					const x = j.user.account.displayText,
+					const x = h.user.account.displayText,
 						I = s.commentMode;
 					let _;
 					if (a ? (_ = await Object(D.i)(C(), t, s, x), u(Object(m.a)({
@@ -223,7 +223,7 @@
 						let o;
 						o = _.body, u(nt({
 							...o,
-							headCommentId: Object(G.w)(j, {
+							headCommentId: Object(G.w)(h, {
 								commentsPageKey: e
 							}),
 							commentsPageKey: e,
@@ -234,7 +234,7 @@
 						});
 						u(Object(l.z)(r, O.a.CommentSubmitted))
 					} else {
-						_.error && _.error.type === r.Kb && U.h(j, at(s), t);
+						_.error && _.error.type === r.Kb && U.h(h, at(s), t);
 						const e = _.error && _.error.fields && _.error.fields[0] ? _.error.fields[0].msg : o.fbt._("Something went wrong", null, {
 							hk: "LWFS0"
 						});
@@ -408,9 +408,9 @@
 							formData: C
 						}))
 					}
-				}, jt = t => async e => {
+				}, ht = t => async e => {
 					e(Object(z.p)(t)), e(_t(t))
-				}, ht = t => {
+				}, jt = t => {
 					let {
 						parentCommentId: e,
 						commentsPageKey: n
@@ -486,7 +486,7 @@
 										document: t
 									})
 								}
-								return Object(j.a)(Object(x.a)(t, [I.a]), {
+								return Object(h.a)(Object(x.a)(t, [I.a]), {
 									endpoint: Object(_.a)(Object(N.a)(Object(S.a)(`${t.apiUrl}/api/editusertext`))),
 									method: r.jb.POST,
 									data: c
@@ -533,7 +533,7 @@
 					n(Nt({
 						id: t
 					})), U.a(t, c);
-					const a = await ((t, e) => Object(j.a)(Object(x.a)(t, [I.a]), {
+					const a = await ((t, e) => Object(h.a)(Object(x.a)(t, [I.a]), {
 						endpoint: Object(_.a)(`${t.apiUrl}/api/del`),
 						method: r.jb.POST,
 						data: {
@@ -587,7 +587,7 @@
 								id: t,
 								expiresAt: Date.now() + 6048e5
 							};
-						if (n(Object(z.n)(c)), (await ((t, e) => Object(h.a)(t, {
+						if (n(Object(z.n)(c)), (await ((t, e) => Object(j.a)(t, {
 								...v,
 								variables: {
 									input: e
@@ -596,7 +596,7 @@
 								commentId: t,
 								followState: e
 							})).ok) {
-							Object(F.wb)(null !== (u = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
+							Object(F.vb)(null !== (u = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
 							const t = s ? o.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : o.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -641,21 +641,21 @@
 						apiContext: C
 					} = O;
 					a.m(c(), e);
-					const j = e === d.i.MARKDOWN,
-						h = e === d.i.RICH_TEXT,
+					const h = e === d.i.MARKDOWN,
+						j = e === d.i.RICH_TEXT,
 						x = m.k;
-					if (j && Object(l.G)(n)) return r(p({
+					if (h && Object(l.G)(n)) return r(p({
 						editorKey: t,
 						editorMode: d.i.MARKDOWN,
 						content: ""
 					})), void r(y(e));
-					if (h && !n) return r(p({
+					if (j && !n) return r(p({
 						editorKey: t,
 						editorMode: d.i.RICH_TEXT,
 						content: l.i
 					})), void r(y(e));
 					r(b(x));
-					const I = await Object(i.a)(C(), e, j ? JSON.stringify(n) : n);
+					const I = await Object(i.a)(C(), e, h ? JSON.stringify(n) : n);
 					I.ok ? (r(f(x)), r(p({
 						editorKey: t,
 						editorMode: e,
@@ -686,7 +686,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: a
-					})), Object(c.sb)(r + 1)
+					})), Object(c.rb)(r + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(t, e, n) {
@@ -794,9 +794,9 @@
 				O = n("./src/reddit/icons/fonts/index.tsx"),
 				y = n("./src/reddit/models/NotificationInbox/index.ts"),
 				C = n("./src/reddit/models/Toast/index.ts"),
-				j = n("./src/reddit/selectors/experiments/inAppNotification.ts"),
-				h = n("./src/reddit/components/NotificationUnit/index.m.less"),
-				x = n.n(h);
+				h = n("./src/reddit/selectors/experiments/inAppNotification.ts"),
+				j = n("./src/reddit/components/NotificationUnit/index.m.less"),
+				x = n.n(j);
 			const {
 				fbt: I
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), _ = {
@@ -807,9 +807,9 @@
 				duration: d.a
 			};
 			e.default = t => {
-				var e, n, o, C, h, R, T, E, g, S;
+				var e, n, o, C, j, R, T, E, g, S;
 				const N = Object(s.d)(),
-					k = Object(s.e)(j.d),
+					k = Object(s.e)(h.d),
 					{
 						context: A,
 						deeplinkUrl: v,
@@ -835,7 +835,7 @@
 					z = Q === y.a.LifecyclePostSuggestions,
 					$ = null === (e = null == A ? void 0 : A.post) || void 0 === e ? void 0 : e.permalink;
 				let Z = null === (n = null == A ? void 0 : A.comment) || void 0 === n ? void 0 : n.id,
-					tt = (null === (o = null == A ? void 0 : A.post) || void 0 === o ? void 0 : o.id) || (null === (h = null === (C = null == A ? void 0 : A.comment) || void 0 === C ? void 0 : C.postInfo) || void 0 === h ? void 0 : h.id);
+					tt = (null === (o = null == A ? void 0 : A.post) || void 0 === o ? void 0 : o.id) || (null === (j = null === (C = null == A ? void 0 : A.comment) || void 0 === C ? void 0 : C.postInfo) || void 0 === j ? void 0 : j.id);
 				const et = null === (R = null == A ? void 0 : A.subreddit) || void 0 === R ? void 0 : R.id,
 					nt = null === (E = null === (T = null == A ? void 0 : A.awarding) || void 0 === T ? void 0 : T.award) || void 0 === E ? void 0 : E.id,
 					ot = null === (S = null === (g = null == A ? void 0 : A.awarding) || void 0 === g ? void 0 : g.awarder) || void 0 === S ? void 0 : S.id;
@@ -1241,8 +1241,8 @@
 						source: "comment_composer",
 						action: o.c.CLICK,
 						...Object(a.o)(t),
-						screen: Object(a.ab)(t),
-						subreddit: Object(a.ib)(t),
+						screen: Object(a.Z)(t),
+						subreddit: Object(a.hb)(t),
 						post: e ? Object(a.I)(t, e) : null,
 						profile: Object(a.R)(t),
 						correlationId: Object(r.c)(r.a.CommentComposer)
@@ -1299,8 +1299,8 @@
 					noun: "delete",
 					action: "click",
 					...Object(a.o)(e),
-					screen: Object(a.ab)(e),
-					subreddit: Object(a.ib)(e),
+					screen: Object(a.Z)(e),
+					subreddit: Object(a.hb)(e),
 					post: Object(a.I)(e, t)
 				}), O = t => Object(d.a)({
 					noun: "edit",
@@ -1356,4 +1356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.c76f09eada305feeb3d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.d7784c13b2877692521b.js.map

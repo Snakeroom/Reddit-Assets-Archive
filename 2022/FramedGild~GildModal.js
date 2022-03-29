@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f2b5a98e78ff0189ec4f.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.df4e62a5b8a87e3b4456.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -868,7 +868,7 @@
 			})), r.d(t, "gildGqlRequested", (function() {
 				return X
 			})), r.d(t, "triggerLoader", (function() {
-				return Q
+				return Z
 			})), r.d(t, "gildPending", (function() {
 				return $
 			})), r.d(t, "gildFailed", (function() {
@@ -1011,9 +1011,9 @@
 					} finally {
 						Object(F.b)(F.a.GildingFlow)
 					}
-				}, Q = Object(s.a)(z.u), Z = Object(s.a)(z.q), $ = () => async (e, t) => {
-					e(Z()), window.setTimeout(() => {
-						t().gild.api.pending && e(Q())
+				}, Z = Object(s.a)(z.u), Q = Object(s.a)(z.q), $ = () => async (e, t) => {
+					e(Q()), window.setTimeout(() => {
+						t().gild.api.pending && e(Z())
 					}, 2e3)
 				}, ee = Object(s.a)(z.p), te = e => async (t, r) => {
 					await t(ee(e)), t(Object(l.f)({
@@ -2132,8 +2132,8 @@
 				K = r("./src/reddit/components/GildModalContent/AwardDetailsPane/index.m.less"),
 				Y = r.n(K),
 				X = r("./src/reddit/helpers/awards/message.ts"),
-				Q = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				Z = r("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				Z = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				Q = r("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				$ = r("./src/reddit/icons/svgs/Eye/index.tsx"),
 				ee = r("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				te = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
@@ -2269,7 +2269,7 @@
 						forcePublic: e,
 						isAnonymous: t
 					} = this.props;
-					return e ? null : s.a.createElement(Z.a, {
+					return e ? null : s.a.createElement(Q.a, {
 						className: Y.a.giver,
 						isSelected: t,
 						text: i.fbt._("Make my gift anonymous", null, {
@@ -2301,7 +2301,7 @@
 						className: Object(c.a)(Y.a.textAreaWrapper, {
 							[Y.a.messageTooLong]: o
 						})
-					}, s.a.createElement(Q.t, pe({
+					}, s.a.createElement(Z.t, pe({
 						className: Y.a.textArea,
 						"data-redditstyle": !0,
 						name: "message",
@@ -2753,7 +2753,7 @@
 				}, s.a.createElement("button", {
 					className: Be.a.closeBtn,
 					onClick: r
-				}, s.a.createElement(Q.b, {
+				}, s.a.createElement(Z.b, {
 					className: Be.a.closeBtnIcon
 				})), s.a.createElement("div", {
 					className: Be.a.headerText
@@ -3040,7 +3040,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(p.yb)(e)
+					Object(p.xb)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -3189,7 +3189,7 @@
 						})
 					})),
 					setIsAnonymous: t => {
-						e(Object(v.setIsAnonymous)(t)), Object(p.yb)(t)
+						e(Object(v.setIsAnonymous)(t)), Object(p.xb)(t)
 					},
 					subredditAboutRequested: t => e(Object(_.u)(t)),
 					subredditLockedCoinsRequested: (t, r) => e(Object(x.a)(t, r)),
@@ -4488,7 +4488,7 @@
 									...r.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: b.ib(t)
+								subreddit: b.hb(t)
 							}
 						})
 					}
@@ -4877,12 +4877,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.if.SmIcon:
+						case h.ef.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.if.SmIconHc:
+						case h.ef.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5244,7 +5244,7 @@
 				p = e => ({
 					...u.o(e),
 					source: s,
-					screen: u.ab(e),
+					screen: u.Z(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: n.SUBREDDIT_HOVERCARD,
@@ -5290,7 +5290,7 @@
 					const n = Object(i.b)(r) ? r.belongsTo.id : r.subredditId;
 					return {
 						post: u.I(e, r.id),
-						subreddit: u.jb(e, n),
+						subreddit: u.ib(e, n),
 						...b(e, t)
 					}
 				},
@@ -5303,8 +5303,8 @@
 					source: "global",
 					action: a.c.VIEW,
 					noun: n.SUBREDDIT_HOVERCARD,
-					subreddit: u.kb(t, e),
-					screen: u.ab(t)
+					subreddit: u.jb(t, e),
+					screen: u.Z(t)
 				}),
 				O = (e, t) => r => ({
 					...p(r),
@@ -5312,8 +5312,8 @@
 					action: a.c.VIEW,
 					noun: n.ITEM_POST,
 					post: u.I(r, t),
-					subreddit: u.kb(r, e),
-					screen: u.ab(r)
+					subreddit: u.jb(r, e),
+					screen: u.Z(r)
 				}),
 				x = (e, t) => r => ({
 					...p(r),
@@ -5321,26 +5321,26 @@
 					action: a.c.CLICK,
 					noun: n.ITEM_POST,
 					post: u.I(r, t),
-					subreddit: u.kb(r, e),
-					screen: u.ab(r)
+					subreddit: u.jb(r, e),
+					screen: u.Z(r)
 				}),
 				v = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.ib(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.HEADER_SUBREDDIT
 				}),
 				j = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.ib(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				w = e => t => ({
 					...p(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.ib(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -5981,12 +5981,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.bf
+						experimentName: n.Xe
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.if.SmIcon || t === n.if.SmIconHc
+					return t === n.ef.SmIcon || t === n.ef.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6024,4 +6024,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f2b5a98e78ff0189ec4f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.df4e62a5b8a87e3b4456.js.map

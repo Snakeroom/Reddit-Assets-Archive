@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.22cafb6be5abd208e270.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.b4e3f1dca98f4497c6e1.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"], {
 		"./src/lib/hooks/usePrevious.ts": function(e, t, n) {
@@ -1655,9 +1655,9 @@
 				a = n("./src/reddit/helpers/trackers/gild.ts");
 			const i = e => ({
 					...o.o(e),
-					screen: o.ab(e),
-					subreddit: o.ib(e),
-					userSubreddit: o.sb(e)
+					screen: o.Z(e),
+					subreddit: o.hb(e),
+					userSubreddit: o.rb(e)
 				}),
 				c = e => ({
 					awardId: e.id,
@@ -1752,7 +1752,7 @@
 					noun: n,
 					goldPurchase: c(e),
 					profile: o.S(r, t),
-					subreddit: o.jb(r, t)
+					subreddit: o.ib(r, t)
 				}),
 				v = (e, t) => b(e, t, "disable_in_community"),
 				h = (e, t) => b(e, t, "enable_in_community")
@@ -1842,9 +1842,9 @@
 					comment: t ? o.i(e, t) : void 0,
 					correlationId: Object(c.b)(e) || Object(a.e)(a.a.GildingFlow, !1),
 					post: t ? o.I(e, t) : void 0,
-					screen: o.ab(e),
-					subreddit: o.ib(e),
-					userSubreddit: o.sb(e)
+					screen: o.Z(e),
+					subreddit: o.hb(e),
+					userSubreddit: o.rb(e)
 				}),
 				m = e => t => ({
 					...u(t, e),
@@ -2077,8 +2077,8 @@
 						comment: n ? c.i(e, n) : null,
 						correlationId: i.r(e) || Object(m.e)(m.a.GoldPayment, !1),
 						post: n ? c.I(e, n) : null,
-						screen: c.ab(e),
-						subreddit: n ? c.ib(e) : null,
+						screen: c.Z(e),
+						subreddit: n ? c.hb(e) : null,
 						goldPurchase: {
 							...v ? Object(f.a)(v) : null,
 							type: g,
@@ -2214,8 +2214,8 @@
 				i = n("./src/reddit/selectors/telemetry.ts");
 			const c = e => ({
 					profile: i.R(e),
-					screen: i.ab(e),
-					subreddit: i.ib(e)
+					screen: i.Z(e),
+					subreddit: i.hb(e)
 				}),
 				d = (e, t, n) => r => ({
 					source: Object(a.i)(r) || n ? "post_lightbox" : "post_detail",
@@ -2256,7 +2256,7 @@
 					noun: e,
 					...c(t),
 					post: i.k(t),
-					userSubreddit: i.sb(t)
+					userSubreddit: i.rb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/modTools.ts": function(e, t, n) {
@@ -2289,10 +2289,10 @@
 			var r = n("./src/reddit/constants/tracking.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => ({
-					screen: Object(o.ab)(e),
+					screen: Object(o.Z)(e),
 					profile: Object(o.R)(e),
-					subreddit: Object(o.ib)(e),
-					userSubreddit: Object(o.sb)(e)
+					subreddit: Object(o.hb)(e),
+					userSubreddit: Object(o.rb)(e)
 				}),
 				a = e => t => ({
 					source: "nav",
@@ -2367,7 +2367,7 @@
 					action: "click",
 					noun: e,
 					post: Object(o.I)(n, t),
-					subreddit: Object(o.lb)(n, t)
+					subreddit: Object(o.kb)(n, t)
 				}),
 				v = (e, t) => n => ({
 					source: "comment",
@@ -2375,14 +2375,14 @@
 					noun: e,
 					comment: Object(o.i)(n, t),
 					post: Object(o.I)(n, t),
-					subreddit: Object(o.lb)(n, t)
+					subreddit: Object(o.kb)(n, t)
 				}),
 				h = (e, t, n, r) => s => ({
 					source: e ? "comment" : "post",
 					action: "click",
 					noun: t ? "unsnooze_reporter" : "snooze_reporter",
 					post: Object(o.I)(s, n),
-					subreddit: Object(o.lb)(s, n),
+					subreddit: Object(o.kb)(s, n),
 					actionInfo: {
 						reason: r
 					},
@@ -2467,7 +2467,7 @@
 					source: "avatar",
 					action: "click",
 					noun: "try_this_look_post",
-					snoovatar: s.gb(e)
+					snoovatar: s.fb(e)
 				}),
 				u = e => ({
 					...s.o(e),
@@ -2477,14 +2477,14 @@
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: s.gb(e)
+					snoovatar: s.fb(e)
 				}),
 				m = e => ({
 					...s.o(e),
 					source: "avatar_builder",
 					action: "click",
 					noun: "close",
-					snoovatar: s.gb(e)
+					snoovatar: s.fb(e)
 				}),
 				p = e => ({
 					source: "nav",
@@ -2507,7 +2507,7 @@
 					action: e,
 					noun: "community_spaces",
 					...s.o(n),
-					snoovatar: s.gb(n),
+					snoovatar: s.fb(n),
 					actionInfo: {
 						paneName: "avatar_community_spaces" + (t ? "_control" : "")
 					}
@@ -2520,7 +2520,7 @@
 					action: t,
 					noun: n,
 					...s.o(r),
-					snoovatar: s.gb(r)
+					snoovatar: s.fb(r)
 				}),
 				x = O("anniversary_achievement", "view", "anniversary_achievement"),
 				j = O("anniversary_achievement", "click", "close"),
@@ -2541,7 +2541,7 @@
 					actionInfo: {
 						pageType: "onboarding"
 					},
-					snoovatar: s.gb(r)
+					snoovatar: s.fb(r)
 				}),
 				S = e => k("onboarding", "click", e),
 				I = () => k("avatar", "view", "onboarding")
@@ -2567,7 +2567,7 @@
 					...s.o(e)
 				}),
 				i = e => t => {
-					const n = s.ib(t),
+					const n = s.hb(t),
 						a = Object(o.x)(t, {
 							subredditId: null == n ? void 0 : n.id
 						}),
@@ -2610,7 +2610,7 @@
 						value: e ? "0" : "1",
 						oldValue: e ? "1" : "0"
 					},
-					subreddit: s.ib(t),
+					subreddit: s.hb(t),
 					...s.o(t)
 				})
 		},
@@ -3113,7 +3113,7 @@
 						postId: t
 					}) || Object(a.M)(e))(e, t),
 					experimentName: r.N
-				}) === r.id
+				}) === r.ed
 			}
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, n) {
@@ -3201,8 +3201,8 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: r.Rb
-					}) === r.lc.Enabled
+						experimentName: r.Pb
+					}) === r.hc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -3215,8 +3215,8 @@
 			const s = e => {
 				return Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: r.ue
-				}) === r.id
+					experimentName: r.qe
+				}) === r.ed
 			}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -3523,4 +3523,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.22cafb6be5abd208e270.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435.b4e3f1dca98f4497c6e1.js.map

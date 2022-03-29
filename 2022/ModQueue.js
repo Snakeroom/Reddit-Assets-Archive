@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.bd0f3ac77ab82604626c.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.c58abce23bcba4366970.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -348,13 +348,13 @@
 						if (function(e) {
 								return Object(j.c)(e, {
 									experimentEligibilitySelector: j.a,
-									experimentName: f.vd
-								}) === f.id
+									experimentName: f.rd
+								}) === f.ed
 							}(c())) {
 							const {
 								normalizeModQueueListingFromGql: e,
 								transformGatewayParamsToGQLVariables: o
-							} = await s.e(11).then(s.bind(null, "./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/index.ts")), {
+							} = await s.e(10).then(s.bind(null, "./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/index.ts")), {
 								diffAndLog: n
 							} = await s.e(8).then(s.bind(null, "./src/reddit/helpers/graphql/normalizeModQueueListingFromGql/diffAndLog.ts")), a = S.body, d = {
 								...r
@@ -452,7 +452,7 @@
 							count: S.length,
 							paneName: j.platform.currentPage ? j.platform.currentPage.urlParams.pageName : void 0
 						}),
-						screen: h.ab(j),
+						screen: h.Z(j),
 						correlationId: k
 					});
 					for (let t = 0; t < S.length; t++) {
@@ -470,8 +470,8 @@
 							comment: h.i(j, s),
 							post: h.I(j, s),
 							profile: h.T(j, s),
-							screen: h.ab(j),
-							subreddit: h.lb(j, s),
+							screen: h.Z(j),
+							subreddit: h.kb(j, s),
 							correlationId: k
 						})
 					}
@@ -687,7 +687,7 @@
 		"./src/reddit/actions/removalReasons/index.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "removalReasonsPending", (function() {
-				return Z
+				return Y
 			})), s.d(t, "removalReasonsLoaded", (function() {
 				return X
 			})), s.d(t, "removalReasonsFailed", (function() {
@@ -946,13 +946,13 @@
 				z = s("./src/reddit/models/RemovalReason/index.ts"),
 				W = s("./src/reddit/models/Toast/index.ts"),
 				J = s("./src/reddit/selectors/comments.ts"),
-				Y = s("./src/reddit/selectors/platform.ts");
+				Z = s("./src/reddit/selectors/platform.ts");
 			Object(n.a)({
 				features: {
 					removalReasons: k
 				}
 			});
-			const Z = Object(y.a)("REMOVALREASONS__LOAD_PENDING"),
+			const Y = Object(y.a)("REMOVALREASONS__LOAD_PENDING"),
 				X = Object(y.a)(a),
 				ee = Object(y.a)("REMOVALREASONS__LOAD_FAILED"),
 				te = e => async (t, s, o) => {
@@ -960,7 +960,7 @@
 						apiContext: n
 					} = o;
 					const r = s().subreddits.models[e].name;
-					t(Z());
+					t(Y());
 					const a = await ((e, t) => Object(w.a)(Object(Q.a)(e, [F.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
 						method: E.jb.GET
@@ -1090,7 +1090,7 @@
 												comment: e,
 												parentId: m
 											},
-											s = Object(Y.f)(i),
+											s = Object(Z.f)(i),
 											o = i.platform.currentPage && i.platform.currentPage.routeMatch;
 										let n = s && o && Object(G.a)(o, i, i.posts.models[e.postId]);
 										if (n || (n = Object(A.a)(e.postId, null, {
@@ -1304,4 +1304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.bd0f3ac77ab82604626c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.c58abce23bcba4366970.js.map

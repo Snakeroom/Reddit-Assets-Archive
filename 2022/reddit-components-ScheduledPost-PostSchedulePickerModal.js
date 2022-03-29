@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.72cca6c8e7c3043e071b.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.75f3d99721af660edd3b.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ScheduledPost-PostSchedulePickerModal"], {
 		"./node_modules/lodash/xorWith.js": function(e, t, n) {
@@ -1507,9 +1507,9 @@
 				o = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => ({
 					...o.o(e),
-					screen: o.ab(e),
-					subreddit: o.ib(e),
-					userSubreddit: o.sb(e)
+					screen: o.Z(e),
+					subreddit: o.hb(e),
+					userSubreddit: o.rb(e)
 				}),
 				i = e => ({
 					id: e.id,
@@ -1824,4 +1824,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.72cca6c8e7c3043e071b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ScheduledPost-PostSchedulePickerModal.75f3d99721af660edd3b.js.map

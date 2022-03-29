@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.723974fe62c193ec57bb.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.ae9536c2c023ef1f1045.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-TrafficStats"], {
 		"./src/reddit/components/ModHub/TrafficStats/ChartStats/StatBlock/index.m.less": function(e, t, a) {
@@ -255,9 +255,9 @@
 				m = a("./src/reddit/components/ModHub/TrafficStats/helpers.ts"),
 				u = a("./src/reddit/selectors/telemetry.ts");
 			const h = e => ({
-					subreddit: u.ib(e),
+					subreddit: u.hb(e),
 					profile: u.R(e),
-					userSubreddit: u.sb(e)
+					userSubreddit: u.rb(e)
 				}),
 				f = {
 					[m.d.Uniques]: "uniques",
@@ -631,4 +631,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.723974fe62c193ec57bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.ae9536c2c023ef1f1045.js.map

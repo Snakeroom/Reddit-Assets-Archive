@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.4fb543fb9d56c17f44af.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.efd2de7c0509e2f52e8d.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -726,9 +726,9 @@
 				})))
 			}
 			var T = n("./src/reddit/controls/Button/index.tsx"),
-				k = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
-				C = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideChange/index.m.less"),
-				S = n.n(C);
+				C = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
+				k = n("./src/reddit/components/Governance/ReleaseNotesModal/SlideChange/index.m.less"),
+				S = n.n(k);
 
 			function N(e) {
 				return o.a.createElement("div", {
@@ -736,7 +736,7 @@
 				}, !e.isFirst && o.a.createElement(T.o, {
 					className: S.a.prev,
 					onClick: e.onPrevSlide
-				}, o.a.createElement(k.a, {
+				}, o.a.createElement(C.a, {
 					className: S.a.arrow
 				})), o.a.createElement(T.l, {
 					onClick: e.isLast ? e.onClose : e.onNextSlide
@@ -1006,7 +1006,7 @@
 				}).apply(this, arguments)
 			}
 			const T = e => e > 2 * v.e,
-				k = e => {
+				C = e => {
 					const t = Object(d.a)(O.a.image, b.g, e.className, {
 							[O.a.mShowCentered]: e.showCentered,
 							[O.a.mShowBlurred]: e.shouldBlur
@@ -1021,7 +1021,7 @@
 						style: n
 					})
 				},
-				C = e => {
+				k = e => {
 					const t = {};
 					return (!e.showFull && Object(v.L)(e.height, e.width) || e.shouldBlur) && (t.overflow = "hidden"), e.showFull || (t.maxHeight = `${v.j}px`, e.shouldBlur && (t.maxWidth = Object(v.L)(e.height, e.width) ? `${v.z}px` : `${e.width}px`)), e.showCentered && (t.margin = "0 auto"), e.isExpando && e.maxHeight && (t.maxHeight = `${e.maxHeight}px`), o.a.createElement("div", {
 						className: Object(d.a)(O.a.container, e.className),
@@ -1059,7 +1059,7 @@
 					onClick: e.onPostMediaClick
 				}, M(e)) : M(e)
 			});
-			const N = (e, t) => o.a.createElement(k, {
+			const N = (e, t) => o.a.createElement(C, {
 					altText: t.altText,
 					className: Object(d.a)(t.imageClassName, {
 						[w.a]: !e
@@ -1083,7 +1083,7 @@
 					} = e;
 					const r = Object(v.L)(n.height, n.width),
 						i = T(n.height) && r;
-					return o.a.createElement(C, I({}, n, {
+					return o.a.createElement(k, I({}, n, {
 						className: `${r?`${w.a} `:""}${n.className||""}`
 					}), n.isListing ? o.a.createElement("div", {
 						className: n.contentImageClassName
@@ -1305,14 +1305,14 @@
 					className: O,
 					showCentered: I,
 					originalSource: T
-				} = e, k = Object(a.d)();
+				} = e, C = Object(a.d)();
 
-				function C(e) {
-					k(e ? Object(l.r)(h) : Object(l.E)(h))
+				function k(e) {
+					C(e ? Object(l.r)(h) : Object(l.E)(h))
 				}
 
 				function S() {
-					return k(Object(l.z)({
+					return C(Object(l.z)({
 						postId: h
 					}))
 				}
@@ -1321,7 +1321,7 @@
 					const {
 						target: t
 					} = e;
-					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && k(Object(l.s)(h))
+					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && C(Object(l.s)(h))
 				}, 200);
 
 				function M(e) {
@@ -1330,16 +1330,16 @@
 
 				function L(e) {
 					var t;
-					(o || B(e), c) || (t = e.timeStamp, k(Object(l.A)(h, t)))
+					(o || B(e), c) || (t = e.timeStamp, C(Object(l.A)(h, t)))
 				}
 
 				function R(e) {
-					k(Object(l.q)(h, e.timeStamp))
+					C(Object(l.q)(h, e.timeStamp))
 				}
 
 				function B(e) {
 					! function(e) {
-						k(Object(l.D)({
+						C(Object(l.D)({
 							metadata: e,
 							postId: h
 						}))
@@ -1352,7 +1352,7 @@
 				}
 
 				function P(e) {
-					s || L(e), o || B(e), k(Object(l.C)(h))
+					s || L(e), o || B(e), C(Object(l.C)(h))
 				}
 
 				function D() {
@@ -1365,7 +1365,7 @@
 						isNotCardView: x,
 						key: h,
 						loop: !0,
-						onBufferingChange: C,
+						onBufferingChange: k,
 						onLoadStart: R,
 						onLoadedData: L,
 						onLoadedMetadata: B,
@@ -1655,9 +1655,9 @@
 			})), n.d(t, "p", (function() {
 				return T
 			})), n.d(t, "o", (function() {
-				return k
-			})), n.d(t, "q", (function() {
 				return C
+			})), n.d(t, "q", (function() {
+				return k
 			})), n.d(t, "s", (function() {
 				return S
 			})), n.d(t, "r", (function() {
@@ -1692,8 +1692,8 @@
 				O = c.a.table("Table", a.a),
 				I = c.a.tr("Tr", a.a),
 				T = c.a.td("Tdl", a.a),
-				k = c.a.td("Tdc", a.a),
-				C = c.a.td("Tdr", a.a),
+				C = c.a.td("Tdc", a.a),
+				k = c.a.td("Tdr", a.a),
 				S = c.a.th("Thl", a.a),
 				N = c.a.th("Thc", a.a),
 				M = (c.a.th("Thr", a.a), c.a.wrapped(e => r.a.createElement(o.b, e), "A", a.a)),
@@ -1776,7 +1776,7 @@
 						rtJsonElementProps: x,
 						useExplicitTextColor: v,
 						shouldBlur: y
-					} = e, O = s.document, I = [], T = e.mediaMetadata || null, k = j(O), C = w(O);
+					} = e, O = s.document, I = [], T = e.mediaMetadata || null, C = j(O), k = w(O);
 					if (y && !r) return i.a.createElement(_, {
 						className: Object(a.a)(u.j, n)
 					}, i.a.createElement("div", {
@@ -1785,8 +1785,8 @@
 						className: g.a.unblurButton,
 						onClick: d
 					}, Object(l.b)(!!o, !!c))));
-					if (-1 !== k)
-						for (let i = k; i <= C; i++) {
+					if (-1 !== C)
+						for (let i = C; i <= k; i++) {
 							const e = O[i];
 							switch (e.e) {
 								case p.k:
@@ -1877,7 +1877,7 @@
 			n.d(t, "a", (function() {
 				return I
 			})), n.d(t, "b", (function() {
-				return k
+				return C
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -1964,7 +1964,7 @@
 						title: s
 					}, s || r) : null
 				},
-				k = (e, t, n, s, r, a) => {
+				C = (e, t, n, s, r, a) => {
 					const d = p.E(n, e.id);
 					if (s) return [T(e, t, d)];
 					const l = [];
@@ -2159,7 +2159,7 @@
 									...n.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: p.ib(t)
+								subreddit: p.hb(t)
 							}
 						})
 					}
@@ -2197,8 +2197,8 @@
 				O = n("./src/reddit/components/RichTextJson/SpoilerText.tsx"),
 				I = n("./src/reddit/components/SubredditMention/index.tsx"),
 				T = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
-				k = n("./src/reddit/helpers/isComment.ts"),
-				C = n("./src/reddit/helpers/isPost.ts"),
+				C = n("./src/reddit/helpers/isComment.ts"),
+				k = n("./src/reddit/helpers/isPost.ts"),
 				S = n("./src/reddit/helpers/richTextJson/index.ts"),
 				N = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
 			const M = (e, t, n) => {
@@ -2358,7 +2358,7 @@
 							let r, o;
 							const i = Object(N.a)(t),
 								d = t.renderingObjectInfo;
-							return d && Object(C.b)(d) && (r = d.postId), d && Object(k.b)(d) && (o = d.id, r = d.postId), a.a.createElement(c.a, {
+							return d && Object(k.b)(d) && (r = d.postId), d && Object(C.b)(d) && (o = d.id, r = d.postId), a.a.createElement(c.a, {
 								href: e.u,
 								key: n,
 								title: e.a,
@@ -2548,12 +2548,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.if.SmIcon:
+						case b.ef.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.if.SmIconHc:
+						case b.ef.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2690,7 +2690,7 @@
 				h = e => ({
 					...u.o(e),
 					source: r,
-					screen: u.ab(e),
+					screen: u.Z(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: s.SUBREDDIT_HOVERCARD,
@@ -2736,7 +2736,7 @@
 					const s = Object(a.b)(n) ? n.belongsTo.id : n.subredditId;
 					return {
 						post: u.I(e, n.id),
-						subreddit: u.jb(e, s),
+						subreddit: u.ib(e, s),
 						...p(e, t)
 					}
 				},
@@ -2749,8 +2749,8 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: s.SUBREDDIT_HOVERCARD,
-					subreddit: u.kb(t, e),
-					screen: u.ab(t)
+					subreddit: u.jb(t, e),
+					screen: u.Z(t)
 				}),
 				g = (e, t) => n => ({
 					...h(n),
@@ -2758,8 +2758,8 @@
 					action: o.c.VIEW,
 					noun: s.ITEM_POST,
 					post: u.I(n, t),
-					subreddit: u.kb(n, e),
-					screen: u.ab(n)
+					subreddit: u.jb(n, e),
+					screen: u.Z(n)
 				}),
 				v = (e, t) => n => ({
 					...h(n),
@@ -2767,26 +2767,26 @@
 					action: o.c.CLICK,
 					noun: s.ITEM_POST,
 					post: u.I(n, t),
-					subreddit: u.kb(n, e),
-					screen: u.ab(n)
+					subreddit: u.jb(n, e),
+					screen: u.Z(n)
 				}),
 				_ = e => t => ({
 					...h(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.ib(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT
 				}),
 				E = e => t => ({
 					...h(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.ib(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				y = e => t => ({
 					...h(t),
-					subreddit: u.jb(t, e) || null,
+					subreddit: u.ib(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -2906,12 +2906,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.bf
+						experimentName: s.Xe
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.if.SmIcon || t === s.if.SmIconHc
+					return t === s.ef.SmIcon || t === s.ef.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2937,4 +2937,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.4fb543fb9d56c17f44af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.efd2de7c0509e2f52e8d.js.map

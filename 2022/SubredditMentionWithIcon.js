@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.53effb0237a1c1625aaa.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.50140b9e9a6be372bffb.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -680,8 +680,8 @@
 						className: Object(L.a)(Q.a.thumbnail, i)
 					}))))
 				})),
-				X = s("./src/reddit/components/SubredditMention/SubredditIcon/index.tsx"),
-				Z = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				Z = s("./src/reddit/components/SubredditMention/SubredditIcon/index.tsx"),
+				X = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				$ = s("./src/reddit/helpers/trackers/subredditMentions.ts"),
 				ee = s("./src/reddit/icons/svgs/Top/index.tsx"),
 				te = s("./src/reddit/selectors/user.ts"),
@@ -764,11 +764,11 @@
 						className: ne.a.subredditMentionContainer,
 						ref: this.subredditMentionElement,
 						onClick: this.handleOnClick
-					}, o.a.createElement(X.a, {
+					}, o.a.createElement(Z.a, {
 						href: `/r/${e}/`
 					}, o.a.createElement("span", {
 						className: ne.a.subredditIconContainer
-					}, o.a.createElement(X.b, {
+					}, o.a.createElement(Z.b, {
 						subredditOrProfile: void 0
 					})), `r/${e}`))
 				}
@@ -794,11 +794,11 @@
 						id: re(d),
 						onClick: this.handleOnClick,
 						ref: this.subredditMentionElement
-					}, o.a.createElement(X.a, {
+					}, o.a.createElement(Z.a, {
 						href: `/r/${c}/`
 					}, o.a.createElement("span", {
 						className: ne.a.subredditIconContainer
-					}, o.a.createElement(X.b, {
+					}, o.a.createElement(Z.b, {
 						subredditOrProfile: m ? void 0 : r
 					})), `r/${c}`), s && !p && o.a.createElement(k.a, {
 						defaultTooltipPosition: "right",
@@ -838,7 +838,7 @@
 					})))))
 				}
 			}
-			t.default = ae(Object(Z.c)(de))
+			t.default = ae(Object(X.c)(de))
 		},
 		"./src/reddit/components/SubredditNameLink/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1459,9 +1459,9 @@
 			})), s.d(t, "k", (function() {
 				return Y
 			})), s.d(t, "l", (function() {
-				return X
-			})), s.d(t, "j", (function() {
 				return Z
+			})), s.d(t, "j", (function() {
+				return X
 			})), s.d(t, "e", (function() {
 				return $
 			})), s.d(t, "o", (function() {
@@ -1490,7 +1490,7 @@
 				x = (e, t, s) => ({
 					...m.o(e),
 					source: E,
-					screen: m.ab(e),
+					screen: m.Z(e),
 					discoveryUnit: {
 						id: t.id,
 						type: t.unitType,
@@ -1513,9 +1513,9 @@
 				I = (e, t, s, n) => "unitName" in t ? x(e, t, n) : ((e, t, s) => ({
 					...m.o(e),
 					source: "search",
-					screen: m.ab(e),
+					screen: m.Z(e),
 					search: s ? {
-						...m.bb(e, s, a.a.SERP),
+						...m.ab(e, s, a.a.SERP),
 						structureType: m.c.Trending
 					} : null,
 					discoveryUnit: {
@@ -1578,7 +1578,7 @@
 							query: t.rawQuery,
 							structureType: m.c.Trending,
 							impressionId: Object(u.a)(e) ? O.a.get(c) : void 0,
-							queryId: m.cb(e, o === l.d.dropdown ? a.a.Typeahead : a.a.SERP)
+							queryId: m.bb(e, o === l.d.dropdown ? a.a.Typeahead : a.a.SERP)
 						}
 					}
 				},
@@ -1693,7 +1693,7 @@
 					return e => ({
 						...S(e, n),
 						actionInfo: K(e, 0, s),
-						subreddit: m.jb(e, t)
+						subreddit: m.ib(e, t)
 					})
 				},
 				V = (e, t, s) => {
@@ -1708,7 +1708,7 @@
 					return e => ({
 						...x(e, i),
 						actionInfo: K(e, 0, s),
-						subreddit: m.jb(e, t) || null,
+						subreddit: m.ib(e, t) || null,
 						source: E,
 						action: o.c.VIEW,
 						noun: n.ITEM_SUBREDDIT
@@ -1730,7 +1730,7 @@
 					return e => ({
 						...x(e, r),
 						actionInfo: K(e, 0, i),
-						subreddit: m.jb(e, s) || null,
+						subreddit: m.ib(e, s) || null,
 						post: m.I(e, t) || null,
 						source: E,
 						action: o.c.CLICK,
@@ -1742,7 +1742,7 @@
 					return e => ({
 						...x(e, i),
 						actionInfo: K(e, 0, s),
-						subreddit: m.jb(e, t) || null,
+						subreddit: m.ib(e, t) || null,
 						source: E,
 						action: o.c.CLICK,
 						noun: n.ITEM_SUBREDDIT
@@ -1753,31 +1753,31 @@
 					return e => ({
 						...x(e, r),
 						actionInfo: K(e, 0, s),
-						subreddit: m.jb(e, t) || null,
+						subreddit: m.ib(e, t) || null,
 						post: i ? m.I(e, i) : null,
 						source: E,
 						action: o.c.CLICK,
 						noun: n.ITEM_SUBREDDIT_SUBSCRIBE
 					})
 				},
-				X = (e, t, s, i) => {
+				Z = (e, t, s, i) => {
 					const r = H();
 					return e => ({
 						...x(e, r),
 						actionInfo: K(e, 0, s),
-						subreddit: m.jb(e, t) || null,
+						subreddit: m.ib(e, t) || null,
 						post: i ? m.I(e, i) : null,
 						source: E,
 						action: o.c.CLICK,
 						noun: n.ITEM_SUBREDDIT_UNSUBSCRIBE
 					})
 				},
-				Z = (e, t, s) => {
+				X = (e, t, s) => {
 					const i = H();
 					return e => ({
 						...x(e, i),
 						actionInfo: K(e, 0, s),
-						subreddit: m.jb(e, t) || null,
+						subreddit: m.ib(e, t) || null,
 						source: E,
 						action: o.c.CLICK,
 						noun: n.ITEM_SUBREDDIT_HIDE
@@ -1788,7 +1788,7 @@
 					return e => ({
 						...x(e, i),
 						actionInfo: K(e, 0, s),
-						subreddit: m.jb(e, t) || null,
+						subreddit: m.ib(e, t) || null,
 						source: E,
 						action: o.c.CLICK,
 						noun: n.HEADER_SUBREDDIT
@@ -1849,4 +1849,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.53effb0237a1c1625aaa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.50140b9e9a6be372bffb.js.map

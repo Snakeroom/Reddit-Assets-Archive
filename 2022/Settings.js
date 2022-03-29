@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f81d94fcaccbbfaddab1.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.f2850424adbba390095e.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -9334,7 +9334,7 @@
 					source: "meta",
 					action: e,
 					noun: "feed_claim_points_banner",
-					subreddit: Object(s.ib)(t)
+					subreddit: Object(s.hb)(t)
 				}),
 				r = () => a("view"),
 				o = () => a("tap"),
@@ -9377,7 +9377,7 @@
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(s.jb)(t, e)
+					subreddit: Object(s.ib)(t, e)
 				})
 		},
 		"./src/reddit/helpers/trackers/followers.ts": function(e, t, n) {
@@ -9440,7 +9440,7 @@
 			const i = e => ({
 					...s.o(e),
 					correlationId: Object(o.c)(o.a.PremiumSettings),
-					screen: s.ab(e)
+					screen: s.Z(e)
 				}),
 				l = () => e => ({
 					...i(e),
@@ -13525,9 +13525,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(ae.c)(e, {
-							experimentName: se.uc,
+							experimentName: se.qc,
 							experimentEligibilitySelector: ae.a
-						}) === se.id
+						}) === se.ed
 					}
 				}),
 				uo = Object(ge.u)(),
@@ -14058,7 +14058,7 @@
 			const o = e => Object(a.c)(e, {
 				experimentName: s.E,
 				experimentEligibilitySelector: () => Object(r.O)(e)
-			}) === s.id
+			}) === s.ed
 		},
 		"./src/reddit/selectors/experiments/econ/avatarNfts.ts": function(e, t, n) {
 			"use strict";
@@ -14075,8 +14075,8 @@
 				}) === s.w.Enabled,
 				o = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.Ic
-				}) === s.id
+					experimentName: s.Ec
+				}) === s.ed
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14246,4 +14246,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f81d94fcaccbbfaddab1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f2850424adbba390095e.js.map

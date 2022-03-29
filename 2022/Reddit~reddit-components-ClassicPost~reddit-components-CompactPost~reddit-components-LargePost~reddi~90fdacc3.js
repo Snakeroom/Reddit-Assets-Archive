@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.010343ccb7fd3a26a9c4.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.f65a807781257ccca082.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -1773,7 +1773,7 @@
 					},
 					shouldOpenPostInNewTab: w.ib
 				}),
-				X = e => {
+				Z = e => {
 					const {
 						post: t,
 						subreddit: n
@@ -1784,13 +1784,13 @@
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return o.a.createElement($, {
 						nowrap: e.nowrap
-					}, o.a.createElement(Z, e));
+					}, o.a.createElement(X, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return o.a.createElement(p.b, {
 						href: t.source.url,
 						isSponsored: r,
 						postId: t.id,
 						source: t.source
-					}, o.a.createElement(Z, e)); {
+					}, o.a.createElement(X, e)); {
 						const s = t.media && Object(T.H)(t.media) ? Object(O.c)(t.id, n.name) : t.permalink,
 							i = e.isCommentPermalink ? Object(h.b)(s) : Object(_.a)(s, void 0, a);
 						return o.a.createElement($, {
@@ -1805,7 +1805,7 @@
 								isSponsored: e.isSponsored,
 								postId: e.id,
 								source: n
-							}, o.a.createElement(Z, t)) : o.a.createElement(Z, t)
+							}, o.a.createElement(X, t)) : o.a.createElement(X, t)
 						})(t, e) : o.a.createElement(z, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
@@ -1814,10 +1814,10 @@
 							titleColor: e.titleColor,
 							to: i,
 							onClick: d
-						}, o.a.createElement(Z, e)))
+						}, o.a.createElement(X, e)))
 					}
 				},
-				Z = e => {
+				X = e => {
 					const {
 						leftFlair: t,
 						isCommentsPageAd: n,
@@ -1908,7 +1908,7 @@
 						nowrap: !0,
 						post: a,
 						sendEvent: this.props.sendEvent
-					}), !Object(x.b)(a) && o.a.createElement(X, H({}, this.props, {
+					}), !Object(x.b)(a) && o.a.createElement(Z, H({}, this.props, {
 						leftFlair: c ? p : void 0
 					})), i && o.a.createElement(P, {
 						className: U.a.pollMeta,
@@ -2422,10 +2422,10 @@
 						search: {
 							...i.M(n, t),
 							query: a,
-							queryId: i.cb(n, s.a.SERP),
+							queryId: i.bb(n, s.a.SERP),
 							impressionId: Object(o.a)(n) ? c.a.get(s.a.SERP) : void 0
 						},
-						subreddit: i.ib(n)
+						subreddit: i.hb(n)
 					}
 				},
 				d = e => t => ({
@@ -2436,7 +2436,7 @@
 					actionInfo: i.d(t),
 					correlationId: Object(r.c)(r.a.SearchResults),
 					search: i.M(t, e),
-					subreddit: i.ib(t)
+					subreddit: i.hb(t)
 				}),
 				u = e => t => {
 					const n = Object(a.g)(e);
@@ -2445,7 +2445,7 @@
 						action: "click",
 						noun: "post_flair",
 						source: "post_flair_widget",
-						subreddit: i.ib(t),
+						subreddit: i.hb(t),
 						postFlair: {
 							id: e.templateId,
 							title: n
@@ -2457,7 +2457,7 @@
 					action: "click",
 					noun: "overflow",
 					source: "post_flair_widget",
-					subreddit: i.ib(e)
+					subreddit: i.hb(e)
 				}),
 				p = e => t => {
 					const n = Object(a.g)(e);
@@ -2466,7 +2466,7 @@
 						action: "click",
 						noun: "clear",
 						source: "post_flair_widget",
-						subreddit: i.ib(t),
+						subreddit: i.hb(t),
 						postFlair: {
 							id: e.templateId,
 							title: n
@@ -2482,7 +2482,7 @@
 						action: "click",
 						noun: "post_flair",
 						source: "post",
-						subreddit: i.ib(n),
+						subreddit: i.hb(n),
 						postFlair: {
 							id: e.templateId,
 							title: r
@@ -2494,7 +2494,7 @@
 							subredditName: l ? l.subredditName : void 0,
 							postFlairName: r,
 							originElement: "post_flair",
-							queryId: i.cb(n, s.a.SERP),
+							queryId: i.bb(n, s.a.SERP),
 							impressionId: Object(o.a)(n) ? c.a.get(s.a.SERP) : void 0,
 							originPageType: n.platform.currentPage ? i.v(n.platform.currentPage) : void 0
 						},
@@ -2559,9 +2559,9 @@
 				s = n("./src/reddit/selectors/telemetry.ts");
 			const o = e => ({
 					...s.o(e),
-					screen: s.ab(e),
-					subreddit: s.ib(e),
-					userSubreddit: s.sb(e)
+					screen: s.Z(e),
+					subreddit: s.hb(e),
+					userSubreddit: s.rb(e)
 				}),
 				i = e => ({
 					id: e.id,
@@ -3220,15 +3220,15 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.m
-					}) === r.id
+					}) === r.ed
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.n
-					}) === r.id
+					}) === r.ed
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.010343ccb7fd3a26a9c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.f65a807781257ccca082.js.map

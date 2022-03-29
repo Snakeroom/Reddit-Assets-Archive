@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.b6090e611b030c5922f6.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.6057a8d868169986031e.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -359,7 +359,7 @@
 			const L = e => {
 				const t = Object(P.c)(e, {
 					experimentEligibilitySelector: P.a,
-					experimentName: b.Pb
+					experimentName: b.Nb
 				});
 				return !!Object(M.a)(t)
 			};
@@ -395,7 +395,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Df)(p),
+						includeInterestTopics: !!p && !Object(b.zf)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: g && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -3941,8 +3941,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Hc
-				}) === r.id
+					experimentName: r.Dc
+				}) === r.ed
 			}
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
@@ -3961,20 +3961,20 @@
 				o = n("./src/reddit/selectors/experiments/index.ts"),
 				a = n("./src/reddit/selectors/experiments/utils.ts");
 			const i = e => Object(s.c)(e, {
-					experimentName: r.Db,
+					experimentName: r.Bb,
 					experimentEligibilitySelector: o.e
 				}) === r.V.topOfFeedWithCTAs,
 				c = e => (e => Object(s.c)(e, {
-					experimentName: r.Db,
+					experimentName: r.Bb,
 					experimentEligibilitySelector: o.e
 				}) === r.V.topOfFeedNoCTAs)(e) || i(e),
 				d = e => Object(s.c)(e, {
-					experimentName: r.Db,
+					experimentName: r.Bb,
 					experimentEligibilitySelector: o.e
 				}) === r.V.floatInFeed,
 				l = e => {
 					const t = Object(s.c)(e, {
-						experimentName: r.Db,
+						experimentName: r.Bb,
 						experimentEligibilitySelector: o.e
 					});
 					return Object(a.a)(t)
@@ -4113,4 +4113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.b6090e611b030c5922f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.6057a8d868169986031e.js.map

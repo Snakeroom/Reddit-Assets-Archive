@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.05b71b7d9b41d1750527.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.34d479eff12bfe8868d7.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -3111,7 +3111,7 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(s.ib)(t)
+					subreddit: Object(s.hb)(t)
 				}),
 				w = () => e => ({
 					...Object(s.o)(e),
@@ -3142,14 +3142,14 @@
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(s.ib)(e)
+					subreddit: Object(s.hb)(e)
 				}),
 				k = () => e => ({
 					...Object(s.o)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(s.ib)(e)
+					subreddit: Object(s.hb)(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, r) {
@@ -3195,8 +3195,8 @@
 				s = r("./src/reddit/selectors/telemetry.ts");
 			const i = e => ({
 					...s.o(e),
-					subreddit: s.ib(e),
-					userSubreddit: s.sb(e)
+					subreddit: s.hb(e),
+					userSubreddit: s.rb(e)
 				}),
 				a = () => e => ({
 					source: "wiki",
@@ -3455,8 +3455,8 @@
 			const o = e => s.e[Object(i.R)(e, {})] === s.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.lb
-				}) === n.fc.Treatment
+					experimentName: n.jb
+				}) === n.bc.Treatment
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -3466,4 +3466,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.05b71b7d9b41d1750527.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.34d479eff12bfe8868d7.js.map

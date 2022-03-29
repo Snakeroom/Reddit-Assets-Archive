@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.c50a46d55df3fb70317b.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.b0eff3e4d4dcc2fcdeee.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -105,7 +105,7 @@
 						noun: "custom_badges_hover_card",
 						correlationId: this.correlationId,
 						...E.o(e),
-						subreddit: E.ib(e)
+						subreddit: E.hb(e)
 					}))
 				}
 				onOpenUploadDialog() {
@@ -150,7 +150,7 @@
 								noun: "custom_badge_hover_open_learn_more",
 								correlationId: this.correlationId,
 								...E.o(e),
-								subreddit: E.ib(e)
+								subreddit: E.hb(e)
 							}))
 						}
 					}, s.a.createElement(C.a, {
@@ -957,4 +957,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.c50a46d55df3fb70317b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.b0eff3e4d4dcc2fcdeee.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.b05ae12252671fd9ce13.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.2214842c9b69215b225c.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1130,7 +1130,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(N.wb)(null !== (u = null === (l = null === (d = s().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = s().user.account) || void 0 === m ? void 0 : m.id);
+							Object(N.vb)(null !== (u = null === (l = null === (d = s().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = s().user.account) || void 0 === m ? void 0 : m.id);
 							const e = r ? o.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : o.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -1375,7 +1375,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: c
-					})), Object(a.sb)(s + 1)
+					})), Object(a.rb)(s + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, n) {
@@ -2046,8 +2046,8 @@
 			const f = e => ({
 					source: "toxicity_modal",
 					...b.o(e),
-					screen: b.ab(e),
-					subreddit: b.ib(e)
+					screen: b.Z(e),
+					subreddit: b.hb(e)
 				}),
 				_ = e => t => ({
 					action: h.c.VIEW,
@@ -2233,7 +2233,7 @@
 					} = e, u = l ? Object(N.j)(B.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l) : 0, m = d && u < X && s && 0 === c.length, [p, h] = Object(r.useState)(m), b = Object(a.d)();
 					Object(r.useEffect)(() => {
 						p && l && setTimeout(() => {
-							Object(N.T)(B.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l), b(Object(z.f)({
+							Object(N.S)(B.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l), b(Object(z.f)({
 								tooltipId: J
 							}))
 						}, V)
@@ -4000,8 +4000,8 @@
 						source: "comment_composer",
 						action: o.c.CLICK,
 						...Object(c.o)(e),
-						screen: Object(c.ab)(e),
-						subreddit: Object(c.ib)(e),
+						screen: Object(c.Z)(e),
+						subreddit: Object(c.hb)(e),
 						post: t ? Object(c.I)(e, t) : null,
 						profile: Object(c.R)(e),
 						correlationId: Object(s.c)(s.a.CommentComposer)
@@ -4058,8 +4058,8 @@
 					noun: "delete",
 					action: "click",
 					...Object(c.o)(t),
-					screen: Object(c.ab)(t),
-					subreddit: Object(c.ib)(t),
+					screen: Object(c.Z)(t),
+					subreddit: Object(c.hb)(t),
 					post: Object(c.I)(t, e)
 				}), f = e => Object(d.a)({
 					noun: "edit",
@@ -4092,14 +4092,14 @@
 					source: e,
 					action: "click",
 					noun: "request_to_join_button",
-					subreddit: o.ib(t)
+					subreddit: o.hb(t)
 				}),
 				r = e => t => ({
 					...o.o(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_submit",
-					subreddit: o.ib(t)
+					subreddit: o.hb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/restrictedCommunity.ts": function(e, t, n) {
@@ -4115,14 +4115,14 @@
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: o.ib(t)
+					subreddit: o.hb(t)
 				}),
 				r = e => t => ({
 					...o.o(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: o.ib(t)
+					subreddit: o.hb(t)
 				})
 		},
 		"./src/reddit/icons/svgs/Help/index.tsx": function(e, t, n) {
@@ -4218,29 +4218,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.xf
-					}) === o.id
+						experimentName: o.tf
+					}) === o.ed
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.yf
-					}) === o.id
+						experimentName: o.uf
+					}) === o.ed
 				},
 				d = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.wf
+						experimentName: o.sf
 					});
-					return t === o.pf.TypingIndicators || t === o.pf.IndicatorsPlusCTA
+					return t === o.lf.TypingIndicators || t === o.lf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.wf
+						experimentName: o.sf
 					});
-					return (null == t ? void 0 : t.variant) === o.pf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.lf.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -4251,4 +4251,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.b05ae12252671fd9ce13.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.2214842c9b69215b225c.js.map

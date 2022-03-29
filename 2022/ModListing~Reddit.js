@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.f837865c973cf02991e8.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.3cf18f1acb91bc617fe4.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -435,9 +435,9 @@
 			})), n.d(t, "b", (function() {
 				return L
 			})), n.d(t, "c", (function() {
-				return A
-			})), n.d(t, "d", (function() {
 				return T
+			})), n.d(t, "d", (function() {
+				return A
 			}));
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
@@ -562,8 +562,8 @@
 						style: n
 					}))
 				}),
-				A = f,
-				T = w
+				T = f,
+				A = w
 		},
 		"./src/reddit/connectors/connectClickToToggleEditor.ts": function(e, t, n) {
 			"use strict";
@@ -828,9 +828,9 @@
 			n("./src/reddit/constants/categories.tsx");
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => ({
-					screen: r.ab(e),
+					screen: r.Z(e),
 					profile: r.R(e),
-					subreddit: r.ib(e)
+					subreddit: r.hb(e)
 				}),
 				o = e => t => ({
 					action: "click",
@@ -1109,15 +1109,15 @@
 					sidebars: _,
 					trendingUnit: S,
 					subredditId: L
-				} = e, A = S ? "28px" : "0", T = C ? {
+				} = e, T = S ? "28px" : "0", A = C ? {
 					marginRight: `${c.q}px`,
-					marginTop: A
+					marginTop: T
 				} : {
 					marginLeft: `${c.q}px`,
-					marginTop: A
+					marginTop: T
 				}, B = k && s.a.createElement("div", {
 					className: Object(i.a)(v.a.sidebar, j ? v.a["m-collectionLayout"] : v.a.defaultLayout),
-					style: T
+					style: A
 				}, k), D = s.a.createElement(a.a, {
 					hideOnlyChildMargin: w,
 					className: g,
@@ -1413,10 +1413,10 @@
 				_ = n("./node_modules/lodash/merge.js"),
 				S = n.n(_),
 				L = n("./node_modules/lodash/omit.js"),
-				A = n.n(L);
-			const T = {};
+				T = n.n(L);
+			const A = {};
 			var B = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : T,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : A,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case I.g:
@@ -1435,7 +1435,7 @@
 						const {
 							subredditId: n,
 							userName: r
-						} = t.payload, s = A()(e[n], r);
+						} = t.payload, s = T()(e[n], r);
 						return {
 							...e,
 							[n]: s
@@ -1631,7 +1631,7 @@
 					itemOrder: J,
 					models: G
 				});
-			var X = function() {
+			var Z = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -1645,9 +1645,9 @@
 						return e
 				}
 			};
-			const Z = {};
+			const X = {};
 			var $ = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Z,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : X,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case z.b: {
@@ -1718,7 +1718,7 @@
 				},
 				oe = Object(r.c)({
 					actions: Y,
-					endCursor: X,
+					endCursor: Z,
 					hasNextPage: $,
 					hasPreviousPage: te,
 					moderators: re,
@@ -2057,7 +2057,7 @@
 						return e
 				}
 			};
-			var Ae = function() {
+			var Te = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -2070,7 +2070,7 @@
 						return e
 				}
 			};
-			var Te = function() {
+			var Ae = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -2084,8 +2084,8 @@
 					}
 				},
 				Be = Object(r.c)({
-					error: Ae,
-					pending: Te
+					error: Te,
+					pending: Ae
 				}),
 				De = n("./node_modules/lodash/isEqual.js"),
 				Pe = n.n(De);
@@ -2250,7 +2250,7 @@
 					}
 				},
 				Ye = n("./src/reddit/actions/modQueue/constants.ts");
-			var Xe = function() {
+			var Ze = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -2265,9 +2265,9 @@
 							return e
 					}
 				},
-				Ze = Object(r.c)({
+				Xe = Object(r.c)({
 					error: Ge,
-					pending: Xe
+					pending: Ze
 				});
 			const $e = {};
 			var et = function() {
@@ -2287,7 +2287,7 @@
 							const {
 								ids: n
 							} = t.payload;
-							return A()(e, n)
+							return T()(e, n)
 						}
 						case Ye.c: {
 							const {
@@ -2319,7 +2319,7 @@
 					}
 				},
 				st = Object(r.c)({
-					api: Ze,
+					api: Xe,
 					selectedItems: et,
 					undoLastAction: rt
 				});
@@ -2614,7 +2614,7 @@
 					pending: _t
 				});
 			const Lt = {};
-			var At = function() {
+			var Tt = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Lt,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -2638,9 +2638,9 @@
 						return e
 				}
 			};
-			const Tt = {};
+			const At = {};
 			var Bt = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Tt,
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : At,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case Ye.m: {
@@ -2661,7 +2661,7 @@
 				},
 				Dt = Object(r.c)({
 					api: St,
-					itemOrder: At,
+					itemOrder: Tt,
 					loadMore: Bt
 				});
 			var Pt = function() {
@@ -2821,19 +2821,19 @@
 							return e
 					}
 				},
-				Xt = Object(r.c)({
+				Zt = Object(r.c)({
 					api: Ht,
 					itemOrder: Qt,
 					loadMore: Yt
 				}),
-				Zt = Object(r.c)({
+				Xt = Object(r.c)({
 					bulkAction: st,
 					edited: pt,
 					moderatedCommunitiesOrder: yt,
 					modqueue: Nt,
 					reports: Dt,
 					spam: Wt,
-					unmoderated: Xt
+					unmoderated: Zt
 				});
 			var $t = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -3059,7 +3059,7 @@
 				flairedUsers: V,
 				moderationLog: oe,
 				moderators: Je,
-				modQueue: Zt,
+				modQueue: Xt,
 				muted: yn
 			})
 		},
@@ -3114,14 +3114,14 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-					experimentName: r.Xd,
+					experimentName: r.Td,
 					experimentEligibilitySelector: s.a
-				}) === r.he.Enabled,
+				}) === r.de.Enabled,
 				a = e => Object(s.c)(e, {
-					experimentName: r.Yd,
+					experimentName: r.Ud,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === r.ie.Enabled
+				}) === r.ee.Enabled
 		},
 		"./src/reddit/selectors/gold/powerups/modSignup.ts": function(e, t, n) {
 			"use strict";
@@ -3158,4 +3158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.f837865c973cf02991e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.3cf18f1acb91bc617fe4.js.map

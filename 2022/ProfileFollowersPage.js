@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.8acee3d42b3d6f205899.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b24c276b176c0fb9a1e0.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, n) {
@@ -5634,7 +5634,7 @@
 					source: s.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: r.SEE_MORE,
-					widget: Object(o.wb)(n, {
+					widget: Object(o.vb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -5645,7 +5645,7 @@
 					action: i.c.CLICK,
 					noun: r.REREDDIT_PROMO,
 					post: o.I(n, e),
-					subreddit: o.ib(n),
+					subreddit: o.hb(n),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -6332,8 +6332,8 @@
 				}) === r.w.Enabled,
 				o = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Ic
-				}) === r.id
+					experimentName: r.Ec
+				}) === r.ed
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, n) {
 			"use strict";
@@ -6384,4 +6384,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.8acee3d42b3d6f205899.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b24c276b176c0fb9a1e0.js.map

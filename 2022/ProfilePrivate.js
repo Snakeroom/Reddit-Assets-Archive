@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.1e1d7f3c096798df47a1.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.39e552c7b60c2d3a1f87.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./src/reddit/actions/pages/profilePrivate/index.ts": function(e, t, i) {
@@ -1631,7 +1631,7 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: n.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(o.wb)(i, {
+					widget: Object(o.vb)(i, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -1642,7 +1642,7 @@
 					action: n.c.CLICK,
 					noun: s.REREDDIT_PROMO,
 					post: o.I(i, e),
-					subreddit: o.ib(i),
+					subreddit: o.hb(i),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -2753,4 +2753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.1e1d7f3c096798df47a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.39e552c7b60c2d3a1f87.js.map

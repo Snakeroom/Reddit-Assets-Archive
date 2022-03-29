@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b0c9bc2ecc05ef2f64fd.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.9044a512337a043e1c6a.js
+// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.Cf)(e.category_name)
+									displayText: Object(u.yf)(e.category_name)
 								};
 								n.push(a.id), t[a.id] = a
 							}), {
@@ -93,7 +93,7 @@
 					t(k({
 						categoryId: e,
 						rank: r + 1
-					})), Object(m.lb)(Object(b.d)(n()))
+					})), Object(m.kb)(Object(b.d)(n()))
 				}
 		},
 		"./src/reddit/actions/pages/subredditLeaderboard.ts": function(e, t, n) {
@@ -2330,7 +2330,7 @@
 					source: a.COMMUNITY_WIDGETS,
 					action: s.c.CLICK,
 					noun: r.SEE_MORE,
-					widget: Object(i.wb)(n, {
+					widget: Object(i.vb)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
@@ -2341,7 +2341,7 @@
 					action: s.c.CLICK,
 					noun: r.REREDDIT_PROMO,
 					post: i.I(n, e),
-					subreddit: i.ib(n),
+					subreddit: i.hb(n),
 					...t && {
 						banner: {
 							buttonText: t,
@@ -2799,7 +2799,7 @@
 					} = t;
 					return Object(p.b)(n.params.categoryName || "")
 				},
-				Ce = Object(m.Bf)(b.i),
+				Ce = Object(m.xf)(b.i),
 				Ee = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ce
@@ -2928,4 +2928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b0c9bc2ecc05ef2f64fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.9044a512337a043e1c6a.js.map
