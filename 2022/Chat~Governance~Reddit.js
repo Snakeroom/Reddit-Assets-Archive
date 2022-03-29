@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1b750a0cc029da8ecaa6.js
-// Retrieved at 3/29/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.47fbd1438fe29b873106.js
+// Retrieved at 3/29/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("161282"),
+				buildNumber: Object(r.c)("161283"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1648565922"),
+				buildTimestamp: Object(r.b)("1648567599"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6074,14 +6074,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c1ff50ab17f42fe4bc8811e2bfbfb670859b0e336-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ce3480c63a0752da789496c07435693e88a065230-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "1ff50ab17f42fe4bc8811e2bfbfb670859b0e336-production",
+						release: "e3480c63a0752da789496c07435693e88a065230-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6607,7 +6607,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "1ff50ab17f42fe4bc8811e2bfbfb670859b0e336-production",
+							releaseClient: "e3480c63a0752da789496c07435693e88a065230-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -20634,7 +20634,7 @@
 					})
 				};
 			var h = i("./src/server/helpers/canonicalUrl.tsx");
-			const f = Object(n.a)(e => Object(a.g)(e), e => Object(h.a)(e), (e, t) => !!e && e === t),
+			const f = Object(n.a)(e => Object(a.g)(e), e => Object(h.b)(e), (e, t) => !!e && e === t),
 				b = (e, t) => {
 					if (!t.experimentEligibilitySelector(e)) return !1;
 					if (t.isThrottled && d.a.isFeatureThrottled(t.experimentName)) return !1;
@@ -20651,7 +20651,7 @@
 				},
 				g = () => !0,
 				w = [],
-				v = Object(n.a)(a.c, a.b, b, (e, t) => t.expEventOverride, (e, t) => t.experimentName, a.g, e => Object(h.a)(e), (e, t) => ((e, t) => {
+				v = Object(n.a)(a.c, a.b, b, (e, t) => t.expEventOverride, (e, t) => t.experimentName, a.g, e => Object(h.b)(e), (e, t) => ((e, t) => {
 					const i = Object(a.b)(e, t),
 						n = void 0 !== i,
 						r = Object(a.c)(e, t);
@@ -41699,7 +41699,7 @@
 				At = e => {
 					const t = e.meta.domain,
 						i = e.platform.currentPage ? `${e.meta.protocol}://${t}${e.platform.currentPage.url}` : void 0,
-						n = Object(Te.a)(e) || void 0,
+						n = Object(Te.b)(e) || void 0,
 						r = e.meta.userAgent ? e.meta.userAgent : void 0;
 					return {
 						base_url: i,
@@ -41718,7 +41718,7 @@
 							protocol: s
 						} = e.meta,
 						o = s && r && i ? `${s}://${r}${i}` : void 0,
-						d = Object(Te.a)(e) || void 0,
+						d = Object(Te.b)(e) || void 0,
 						a = e.meta.userAgent ? e.meta.userAgent : void 0;
 					return {
 						base_url: o,
@@ -43922,6 +43922,8 @@
 		"./src/server/helpers/canonicalUrl.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
+				return f
+			})), i.d(t, "b", (function() {
 				return b
 			}));
 			var n = i("./src/config.ts"),
@@ -48077,4 +48079,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1b750a0cc029da8ecaa6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.47fbd1438fe29b873106.js.map
