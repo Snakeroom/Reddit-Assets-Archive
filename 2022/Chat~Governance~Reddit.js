@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f7d0e08d3948fb0ff6b0.js
-// Retrieved at 3/29/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.42c9eb7dbde77d7a5df3.js
+// Retrieved at 3/29/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("161335"),
+				buildNumber: Object(r.c)("161344"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1648585907"),
+				buildTimestamp: Object(r.b)("1648591276"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6074,14 +6074,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cfafe3e0f5751bcd731a7cee0d5449242cd54406a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %ce3a1f42e0f82aacb40b3d9df11df0b081b6b609a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "fafe3e0f5751bcd731a7cee0d5449242cd54406a-production",
+						release: "e3a1f42e0f82aacb40b3d9df11df0b081b6b609a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6607,7 +6607,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "fafe3e0f5751bcd731a7cee0d5449242cd54406a-production",
+							releaseClient: "e3a1f42e0f82aacb40b3d9df11df0b081b6b609a-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -16301,15 +16301,15 @@
 			})), i.d(t, "V", (function() {
 				return vs
 			})), i.d(t, "o", (function() {
-				return ys
-			})), i.d(t, "fd", (function() {
 				return Es
+			})), i.d(t, "fd", (function() {
+				return Ss
 			})), i.d(t, "xf", (function() {
-				return Ts
-			})), i.d(t, "Nd", (function() {
 				return Os
-			})), i.d(t, "yf", (function() {
+			})), i.d(t, "Nd", (function() {
 				return Is
+			})), i.d(t, "yf", (function() {
+				return Rs
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = i("./node_modules/fbt/lib/FbtPublic.js");
@@ -16509,7 +16509,7 @@
 			}(Ni || (Ni = {}));
 			const ji = "enabled",
 				Ai = e => e === Ni.Control1 || e === Ni.Control2;
-			var xi, Pi, Di, ki, Li, Bi, Mi, Ui, Gi, qi, Vi, Hi, Wi, zi, Ki, Yi, $i, Qi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln, un, cn, _n, mn, pn, hn, fn, bn, gn, wn, vn, yn, En, Sn, Tn, On, In, Rn, Fn, Cn, Nn, jn, An, xn, Pn, Dn, kn, Ln, Bn, Mn, Un, Gn, qn, Vn, Hn, Wn, zn, Kn, Yn, $n, Qn, Jn, Xn, Zn, er, tr, ir, nr, rr, sr, or, dr, ar, lr, ur, cr, _r, mr, pr, hr, fr, br, gr, wr, vr, yr, Er, Sr, Tr, Or, Ir, Rr, Fr, Cr, Nr, jr, Ar, xr, Pr, Dr, kr, Lr, Br, Mr, Ur, Gr, qr, Vr, Hr, Wr, zr, Kr, Yr, $r, Qr, Jr, Xr, Zr, es, ts, is, ns, rs, ss, os, ds, as, ls, us, cs, _s, ms, ps, hs, fs, bs, gs, ws, vs;
+			var xi, Pi, Di, ki, Li, Bi, Mi, Ui, Gi, qi, Vi, Hi, Wi, zi, Ki, Yi, $i, Qi, Ji, Xi, Zi, en, tn, nn, rn, sn, on, dn, an, ln, un, cn, _n, mn, pn, hn, fn, bn, gn, wn, vn, yn, En, Sn, Tn, On, In, Rn, Fn, Cn, Nn, jn, An, xn, Pn, Dn, kn, Ln, Bn, Mn, Un, Gn, qn, Vn, Hn, Wn, zn, Kn, Yn, $n, Qn, Jn, Xn, Zn, er, tr, ir, nr, rr, sr, or, dr, ar, lr, ur, cr, _r, mr, pr, hr, fr, br, gr, wr, vr, yr, Er, Sr, Tr, Or, Ir, Rr, Fr, Cr, Nr, jr, Ar, xr, Pr, Dr, kr, Lr, Br, Mr, Ur, Gr, qr, Vr, Hr, Wr, zr, Kr, Yr, $r, Qr, Jr, Xr, Zr, es, ts, is, ns, rs, ss, os, ds, as, ls, us, cs, _s, ms, ps, hs, fs, bs, gs, ws, vs, ys;
 			! function(e) {
 				e.Enabled = "enabled"
 			}(xi || (xi = {})),
@@ -16956,10 +16956,14 @@
 			}(ws || (ws = {})),
 			function(e) {
 				e.topOfFeedNoCTAs = "top_of_feed_no_CTAs", e.topOfFeedWithCTAs = "top_of_feed_with_CTAs", e.floatInFeed = "float_in_feed"
-			}(vs || (vs = {}));
-			const ys = {
+			}(vs || (vs = {})),
+			function(e) {
+				e.Enabled = "enabled"
+			}(ys || (ys = {}));
+			const Es = {
 					[Fi]: [ji],
 					[Ri]: [vs.topOfFeedNoCTAs, vs.topOfFeedWithCTAs, vs.floatInFeed],
+					datadome_embed_killswitch: [ys.Enabled],
 					[Ii]: [Ur.SeePostCTAs, Ur.ReplyCTAs, Ur.AllCTAs, Ur.SubRecCheckCTAs, Ur.SubRecSeeCommentsCTAs, Ur.CommentJoinConversationCTAs, Ur.CommentReplyBackCTAs, Ur.TrendingReplyCTAs, Ur.TrendingSeePostCTAs],
 					[Ei]: [ji],
 					[yi]: [ji],
@@ -17152,8 +17156,8 @@
 					[bi]: [bs.Enabled],
 					[Si]: [ws.Removed]
 				},
-				Es = new Set([ii, ni, Vt, g, s, v, x, "guest_d2x_subreddit_subreddit_links_url", J, X, te, re, se, ae, ge, Se, tt, it, lt, ut, gt, vt, ct, ke, Le, Be, "d2x_signal_collection", Dt, Ut, Gt, kt, He, bi, wi, hi, yi, Ei]),
-				Ss = {
+				Ss = new Set([ii, ni, Vt, g, s, v, x, "guest_d2x_subreddit_subreddit_links_url", J, X, te, re, se, ae, ge, Se, tt, it, lt, ut, gt, vt, ct, ke, Le, Be, "d2x_signal_collection", Dt, Ut, Gt, kt, He, bi, wi, hi, yi, Ei]),
+				Ts = {
 					NFL: () => n.fbt._("NFL", null, {
 						hk: "3ktT9l"
 					}),
@@ -17260,10 +17264,10 @@
 						hk: "nSJdn"
 					})
 				},
-				Ts = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
-				Os = Ts(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"]),
-				Is = e => {
-					const t = Ss[e];
+				Os = e => e.reduce((e, t, i) => (e[t] = i + 1, e), {}),
+				Is = Os(["NFL", "Discussion", "Relationships", "Sports", "Gaming", "News", "Beauty", "Health & Fitness", "Learning", "Parenting", "Tech", "Crypto", "Science", "Video Games", "TV", "Popcorn", "Vroom", "Food", "Outdoors", "Fashion", "Books & Writing", "Art & Design", "Nostalgia", "Music", "Travel", "Photography", "Funny", "Wholesome", "Memes", "Aww", "Pics & Gifs", "Mindblowing", "Videos", "Cringe", "Schadenfreude"]),
+				Rs = e => {
+					const t = Ts[e];
 					return t && t() || e
 				}
 		},
@@ -48079,4 +48083,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.f7d0e08d3948fb0ff6b0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.42c9eb7dbde77d7a5df3.js.map
