@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.4f878634d4da52129073.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.7f069c83e2a56a92e81c.js
+// Retrieved at 3/28/2022, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, o) {
@@ -520,9 +520,9 @@
 				for (i.getLengthInBits() + 4 <= s && i.put(0, 4); i.getLengthInBits() % 8 != 0;) i.putBit(0);
 				for (var l = (s - i.getLengthInBits()) / 8, u = 0; u < l; u++) i.put(u % 2 ? 17 : 236, 8);
 				return function(e, t, o) {
-					for (var i = a.getSymbolTotalCodewords(t), r = d.getTotalCodewordsCount(t, o), s = i - r, l = d.getBlocksCount(t, o), u = l - i % l, c = Math.floor(i / l), h = Math.floor(s / l), p = h + 1, y = c - h, b = new m(y), f = 0, g = new Array(l), w = new Array(l), v = 0, k = n.from(e.buffer), P = 0; P < l; P++) {
-						var _ = P < u ? h : p;
-						g[P] = k.slice(f, f + _), w[P] = b.encode(g[P]), f += _, v = Math.max(v, _)
+					for (var i = a.getSymbolTotalCodewords(t), r = d.getTotalCodewordsCount(t, o), s = i - r, l = d.getBlocksCount(t, o), u = l - i % l, c = Math.floor(i / l), h = Math.floor(s / l), p = h + 1, y = c - h, b = new m(y), f = 0, g = new Array(l), w = new Array(l), v = 0, k = n.from(e.buffer), _ = 0; _ < l; _++) {
+						var P = _ < u ? h : p;
+						g[_] = k.slice(f, f + P), w[_] = b.encode(g[_]), f += P, v = Math.max(v, P)
 					}
 					var E, C, S = n.alloc(i),
 						I = 0;
@@ -1769,9 +1769,9 @@
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), {
 				fbt: k
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
-			var P = o("./src/reddit/icons/fonts/index.tsx"),
-				_ = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Documentation/floatingMenuButton.m.less"),
-				E = o.n(_);
+			var _ = o("./src/reddit/icons/fonts/index.tsx"),
+				P = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Documentation/floatingMenuButton.m.less"),
+				E = o.n(P);
 			const C = e => {
 					let {
 						className: t,
@@ -1785,7 +1785,7 @@
 						className: Object(u.a)(E.a.iconContainer, {
 							[E.a.rotated]: n
 						})
-					}, i.a.createElement(P.a, {
+					}, i.a.createElement(_.a, {
 						name: n ? "add" : "menu",
 						className: E.a.menuIcon
 					})))
@@ -2014,16 +2014,16 @@
 						})
 					}), i.a.createElement("section", null, i.a.createElement("h3", null, S._("The Future of Online Communities", null, {
 						hk: "2l5mV2"
-					})), S._("{=Communities are the lifeblood of the Internet. They are the places where magic happens online — where people meet others like themselves, think and talk about the same things, and laugh at the same jokes. From newsgroups and chatrooms and forums, communities have always been the centers of the Internet that draw people in.}{=But online communities are much more limited than their counterparts in the real world. In the real world, communities are independent entities, free to choose where and how they hang out. No one tells them what to do or where to go.}{=Today's online communities are not like this. They are trapped inside apps and platforms, where they do not own or control anything of value. This limitation makes them second-class citizens, unable to chart their own destiny on the Internet. It is time to put communities in their rightful place as the foundation of the Internet.}{=It is time for them to take back ownership and control. It is time for a change.}", [S._param("=Communities are the lifeblood of the Internet. They are the places where magic happens online — where people meet others like themselves, think and talk about the same things, and laugh at the same jokes. From newsgroups and chatrooms and forums, communities have always been the centers of the Internet that draw people in.", i.a.createElement("p", null, S._("Communities are the lifeblood of the Internet. They are the places where magic happens online — where people meet others like themselves, think and talk about the same things, and laugh at the same jokes. From newsgroups and chatrooms and forums, communities have always been the centers of the Internet that draw people in.", null, {
-						hk: "MYiYX"
+					})), S._("{=Communities are the lifeblood of the Internet. They are the places where magic happens online — where people meet others like themselves, think and talk about the same things, and laugh at the same jokes. From newsgroups and chatrooms and forums, communities have always been the centers of the Internet that draw people in.}{=But online communities are much more limited than their counterparts in the real world. In the real world, communities are independent entities, free to choose where and how they hang out. No one tells them what to do or where to go.}{=Today's online communities are not like this. They are trapped inside apps and platforms, where they do not have independence or control anything of value. This limitation makes them second-class citizens, unable to chart their own destiny on the Internet. It is time to put communities in their rightful place as the foundation of the Internet.}{=It is time for them to take back ownership and control. It is time for a change.}", [S._param("=Communities are the lifeblood of the Internet. They are the places where magic happens online — where people meet others like themselves, think and talk about the same things, and laugh at the same jokes. From newsgroups and chatrooms and forums, communities have always been the centers of the Internet that draw people in.", i.a.createElement("p", null, S._("Communities are the lifeblood of the Internet. They are the places where magic happens online — where people meet others like themselves, think and talk about the same things, and laugh at the same jokes. From newsgroups and chatrooms and forums, communities have always been the centers of the Internet that draw people in.", null, {
+						hk: "vHVJ6"
 					}))), S._param("=But online communities are much more limited than their counterparts in the real world. In the real world, communities are independent entities, free to choose where and how they hang out. No one tells them what to do or where to go.", i.a.createElement("p", null, S._("But online communities are much more limited than their counterparts in the real world. In the real world, communities are independent entities, free to choose where and how they hang out. No one tells them what to do or where to go.", null, {
-						hk: "3K6lu3"
-					}))), S._param("=Today's online communities are not like this. They are trapped inside apps and platforms, where they do not own or control anything of value. This limitation makes them second-class citizens, unable to chart their own destiny on the Internet. It is time to put communities in their rightful place as the foundation of the Internet.", i.a.createElement("p", null, S._("Today's online communities are not like this. They are trapped inside apps and platforms, where they do not own or control anything of value. This limitation makes them second-class citizens, unable to chart their own destiny on the Internet. It is time to put communities in their rightful place as the foundation of the Internet.", null, {
-						hk: "2Q19Dy"
+						hk: "GvwbA"
+					}))), S._param("=Today's online communities are not like this. They are trapped inside apps and platforms, where they do not have independence or control anything of value. This limitation makes them second-class citizens, unable to chart their own destiny on the Internet. It is time to put communities in their rightful place as the foundation of the Internet.", i.a.createElement("p", null, S._("Today's online communities are not like this. They are trapped inside apps and platforms, where they do not have independence or control anything of value. This limitation makes them second-class citizens, unable to chart their own destiny on the Internet. It is time to put communities in their rightful place as the foundation of the Internet.", null, {
+						hk: "MiPUV"
 					}))), S._param("=It is time for them to take back ownership and control. It is time for a change.", i.a.createElement("p", null, S._("It is time for them to take back ownership and control. It is time for a change.", null, {
-						hk: "4DpBFS"
+						hk: "9Dp2V"
 					})))], {
-						hk: "8arJv"
+						hk: "2A7TFn"
 					})), i.a.createElement("section", null, i.a.createElement("h3", null, S._("Community Points", null, {
 						hk: "1F2Duo"
 					})), S._("{=Community Points are the first step towards a better future for online communities. In order to be truly independent from platforms like Reddit, communities need to be owned by their members in ways that platforms cannot take away. With the advent of blockchain technology, we now have a way to establish this freedom in a decentralized and secure way.}{=As blockchain tokens that are owned and controlled by communities themselves — not by any app or platform — Community Points represent a way for Redditors to own a piece of their favorite communities. They are earned by making contributions to the community, like creating content and moderating. They not only represent ownership and reputation within the community, but can also be used for community governance, moderation, and unlocking premium features. They can even be used in custom tools outside of Reddit and on other platforms.}{=Most importantly, Community Points are a flexible tool that each community can shape to its needs. Each community has its own Points that it can customize with its own name, symbol, distribution rules, and uses. Every community has its own needs and we expect each to use Points differently and in novel ways that help take them to the next level.}", [S._param("=Community Points are the first step towards a better future for online communities. In order to be truly independent from platforms like Reddit, communities need to be owned by their members in ways that platforms cannot take away. With the advent of blockchain technology, we now have a way to establish this freedom in a decentralized and secure way.", i.a.createElement("p", null, S._("Community Points are the first step towards a better future for online communities. In order to be truly independent from platforms like Reddit, communities need to be owned by their members in ways that platforms cannot take away. With the advent of blockchain technology, we now have a way to establish this freedom in a decentralized and secure way.", null, {
@@ -2133,88 +2133,90 @@
 						hk: "2FFsru"
 					})), i.a.createElement("section", null, i.a.createElement("h3", null, v._("Community Rules", null, {
 						hk: "2q9cMn"
-					})), v._('{=Communities have a lot of flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.}{=Here is a non-exhaustive list of factors that can be used to shape distribution rules:}{=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")Post flair (e.g., "reduce karma from COMEDY flairs to 10%")Posts vs comments (e.g., "double comment karma")Per post or per comment (e.g., "limit max karma from a single post to 1k karma")Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")Post or comment body length (e.g., "comments over 240 characters should get 2x karma")A specific post (e.g., "don\'t count karma from the daily discussion")Making a post or comment (e.g., "making a post reduces karma by 25")Membership (e.g., "users with a membership get 25% bonus to karma they earned")}{=For example, here are some rules adopted by r/CryptoCurrency for their distribution of Moons:}{=Double comment karma to encourage more comments than postsLimit karma earned from any individual post or comment to 1000Only count 10% of karma earned on "media" or "comedy" postsBonus Points for users who vote in polls15000 cap on Points earned by any single user per month}{=In addition to the community rules, Reddit sets some default rules to exclude the following from Community Point calculations and distribution:}{=Karma earned on removed posts and comments does not count (including karma earned before removal)Karma earned on stickied or distinguished content does not countPermabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.Only votes within 3 days of a post\'s creation time are counted (including on comments of that post)}', [v._param("=Communities have a lot of flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.", i.a.createElement("p", null, v._("Communities have a lot of flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.", null, {
-						hk: "3Xaiuw"
+					})), v._('{=Communities have a lot of flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.}{=Here is a non-exhaustive list of factors that can be used to shape distribution rules:}{=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")Post flair (e.g., "reduce karma from COMEDY flairs to 10%")Posts vs comments (e.g., "double comment karma")Per post or per comment (e.g., "limit max karma from a single post to 1k karma")Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")Post or comment body length (e.g., "comments over 240 characters should get 2x karma")A specific post (e.g., "don\'t count karma from the daily discussion")Making a post or comment (e.g., "making a post reduces karma by 25")Membership (e.g., "users with a membership get 25% bonus to karma they earned")}{=For example, here are some rules adopted by r/CryptoCurrency for their distribution of Moons:}{=Double comment karma to encourage more comments than postsLimit karma earned from any individual post or comment to 1000Only count 10% of karma earned on "media" or "comedy" postsBonus Points for users who vote in polls15000 cap on Points earned by any single user per month}{=In addition to the community rules, Reddit sets some default rules to exclude the following from Community Point calculations and distribution:}{=Karma earned on removed posts and comments does not count (including karma earned before removal)Karma earned on deleted posts and comments does not count (including karma earned before deletion)Karma earned on stickied or distinguished content does not countPermabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.Only votes within 3 days of a post\'s creation time are counted (including on comments of that post)}', [v._param("=Communities have a lot of flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.", i.a.createElement("p", null, v._("Communities have a lot of flexibility to set their own distribution rules for their Community Points. These rules can be designed to address the specific needs of the community.", null, {
+						hk: "3fjvzH"
 					}))), v._param("=Here is a non-exhaustive list of factors that can be used to shape distribution rules:", i.a.createElement("p", null, v._("Here is a non-exhaustive list of factors that can be used to shape distribution rules:", null, {
-						hk: "MbWwj"
+						hk: "3c6GBa"
 					}))), v._param('=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")Post flair (e.g., "reduce karma from COMEDY flairs to 10%")Posts vs comments (e.g., "double comment karma")Per post or per comment (e.g., "limit max karma from a single post to 1k karma")Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")Post or comment body length (e.g., "comments over 240 characters should get 2x karma")A specific post (e.g., "don\'t count karma from the daily discussion")Making a post or comment (e.g., "making a post reduces karma by 25")Membership (e.g., "users with a membership get 25% bonus to karma they earned")', i.a.createElement("ul", null, v._('{=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")}{=Post flair (e.g., "reduce karma from COMEDY flairs to 10%")}{=Posts vs comments (e.g., "double comment karma")}{=Per post or per comment (e.g., "limit max karma from a single post to 1k karma")}{=Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")}{=Post or comment body length (e.g., "comments over 240 characters should get 2x karma")}{=A specific post (e.g., "don\'t count karma from the daily discussion")}{=Making a post or comment (e.g., "making a post reduces karma by 25")}{=Membership (e.g., "users with a membership get 25% bonus to karma they earned")}', [v._param('=Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")', i.a.createElement("li", null, v._('Post type, such as link vs text vs image vs video (e.g., "link posts should get 50% of karma of other posts")', null, {
-						hk: "1HyO61"
+						hk: "3vlqdu"
 					}))), v._param('=Post flair (e.g., "reduce karma from COMEDY flairs to 10%")', i.a.createElement("li", null, v._('Post flair (e.g., "reduce karma from COMEDY flairs to 10%")', null, {
-						hk: "1b3f9W"
+						hk: "4eNQrW"
 					}))), v._param('=Posts vs comments (e.g., "double comment karma")', i.a.createElement("li", null, v._('Posts vs comments (e.g., "double comment karma")', null, {
-						hk: "1fBdy5"
+						hk: "3gw73R"
 					}))), v._param('=Per post or per comment (e.g., "limit max karma from a single post to 1k karma")', i.a.createElement("li", null, v._('Per post or per comment (e.g., "limit max karma from a single post to 1k karma")', null, {
-						hk: "2UgeUG"
+						hk: "1Cch8N"
 					}))), v._param('=Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")', i.a.createElement("li", null, v._('Posts or comments per day (e.g., "only count the first 20 comments a users makes per day")', null, {
-						hk: "4p142H"
+						hk: "faJGP"
 					}))), v._param('=Post or comment body length (e.g., "comments over 240 characters should get 2x karma")', i.a.createElement("li", null, v._('Post or comment body length (e.g., "comments over 240 characters should get 2x karma")', null, {
-						hk: "3zG3aJ"
+						hk: "2HZslh"
 					}))), v._param('=A specific post (e.g., "don\'t count karma from the daily discussion")', i.a.createElement("li", null, v._('A specific post (e.g., "don\'t count karma from the daily discussion")', null, {
-						hk: "qvWxJ"
+						hk: "2rnWSv"
 					}))), v._param('=Making a post or comment (e.g., "making a post reduces karma by 25")', i.a.createElement("li", null, v._('Making a post or comment (e.g., "making a post reduces karma by 25")', null, {
-						hk: "1g0WTN"
+						hk: "419K9P"
 					}))), v._param('=Membership (e.g., "users with a membership get 25% bonus to karma they earned")', i.a.createElement("li", null, v._('Membership (e.g., "users with a membership get 25% bonus to karma they earned")', null, {
-						hk: "3g8RRT"
+						hk: "be3ar"
 					})))], {
-						hk: "458Sc2"
+						hk: "2nws06"
 					}))), v._param("=For example, here are some rules adopted by r/CryptoCurrency for their distribution of Moons:", i.a.createElement("p", null, v._("For example, here are some rules adopted by r/CryptoCurrency for their distribution of Moons:", null, {
-						hk: "2X8CkF"
+						hk: "2I0bQB"
 					}))), v._param('=Double comment karma to encourage more comments than postsLimit karma earned from any individual post or comment to 1000Only count 10% of karma earned on "media" or "comedy" postsBonus Points for users who vote in polls15000 cap on Points earned by any single user per month', i.a.createElement("ul", null, v._('{=Double comment karma to encourage more comments than posts}{=Limit karma earned from any individual post or comment to 1000}{=Only count 10% of karma earned on "media" or "comedy" posts}{=Bonus Points for users who vote in polls}{=15000 cap on Points earned by any single user per month}', [v._param("=Double comment karma to encourage more comments than posts", i.a.createElement("li", null, v._("{=Double comment karma to encourage more comments than posts}", [v._param("=Double comment karma to encourage more comments than posts", i.a.createElement("a", {
 						href: "/r/CryptoCurrency/comments/k12wnd/moon_proposal_double_comment_karma/",
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, v._("Double comment karma to encourage more comments than posts", null, {
-						hk: "1AI9P9"
+						hk: "2YBVsB"
 					})))], {
-						hk: "qGZcO"
+						hk: "22Jzlt"
 					}))), v._param("=Limit karma earned from any individual post or comment to 1000", i.a.createElement("li", null, v._("{=Limit karma earned from any individual post or comment to 1000}", [v._param("=Limit karma earned from any individual post or comment to 1000", i.a.createElement("a", {
 						href: "/r/CryptoCurrency/comments/lm8she/limit_post_karma_to_1k_and_limit_comment_karma_to/",
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, v._("Limit karma earned from any individual post or comment to 1000", null, {
-						hk: "29kgT2"
+						hk: "3geIam"
 					})))], {
-						hk: "zwJol"
+						hk: "4nPCPe"
 					}))), v._param('=Only count 10% of karma earned on "media" or "comedy" posts', i.a.createElement("li", null, v._('{=Only count 10% of karma earned on "media" or "comedy" posts}', [v._param('=Only count 10% of karma earned on "media" or "comedy" posts', i.a.createElement("a", {
 						href: "/r/CryptoCurrency/comments/lm99v3/change_moon_distribution_for_comedy_posts_and/",
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, v._('Only count 10% of karma earned on "media" or "comedy" posts', null, {
-						hk: "BQ9GV"
+						hk: "3f3UnH"
 					})))], {
-						hk: "2Pn0x2"
+						hk: "441E3c"
 					}))), v._param("=Bonus Points for users who vote in polls", i.a.createElement("li", null, v._("{=Bonus Points for users who vote in polls}", [v._param("=Bonus Points for users who vote in polls", i.a.createElement("a", {
 						href: "/r/CryptoCurrency/comments/m7ehzz/proposal_5_bonus_moons_for_anyone_who_votes_on/",
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, v._("Bonus Points for users who vote in polls", null, {
-						hk: "2CgZdm"
+						hk: "1rzvHN"
 					})))], {
-						hk: "3oPCNG"
+						hk: "218GAv"
 					}))), v._param("=15000 cap on Points earned by any single user per month", i.a.createElement("li", null, v._("{=15000 cap on Points earned by any single user per month}", [v._param("=15000 cap on Points earned by any single user per month", i.a.createElement("a", {
 						href: "/r/CryptoCurrency/comments/mrn758/15000_karma_cap_on_moon_distribution/",
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, v._("15000 cap on Points earned by any single user per month", null, {
-						hk: "s17Vl"
+						hk: "11GVzJ"
 					})))], {
-						hk: "VEI28"
+						hk: "UpuVV"
 					})))], {
-						hk: "2CnBXv"
+						hk: "4uAbqW"
 					}))), v._param("=In addition to the community rules, Reddit sets some default rules to exclude the following from Community Point calculations and distribution:", i.a.createElement("p", null, v._("In addition to the community rules, Reddit sets some default rules to exclude the following from Community Point calculations and distribution:", null, {
-						hk: "4dIyOu"
-					}))), v._param("=Karma earned on removed posts and comments does not count (including karma earned before removal)Karma earned on stickied or distinguished content does not countPermabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.Only votes within 3 days of a post's creation time are counted (including on comments of that post)", i.a.createElement("ul", null, v._("{=Karma earned on removed posts and comments does not count (including karma earned before removal)}{=Karma earned on stickied or distinguished content does not count}{=Permabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.}{=Only votes within 3 days of a post's creation time are counted (including on comments of that post)}", [v._param("=Karma earned on removed posts and comments does not count (including karma earned before removal)", i.a.createElement("li", null, v._("Karma earned on removed posts and comments does not count (including karma earned before removal)", null, {
-						hk: "22FdTP"
+						hk: "2NOwzL"
+					}))), v._param("=Karma earned on removed posts and comments does not count (including karma earned before removal)Karma earned on deleted posts and comments does not count (including karma earned before deletion)Karma earned on stickied or distinguished content does not countPermabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.Only votes within 3 days of a post's creation time are counted (including on comments of that post)", i.a.createElement("ul", null, v._("{=Karma earned on removed posts and comments does not count (including karma earned before removal)}{=Karma earned on deleted posts and comments does not count (including karma earned before deletion)}{=Karma earned on stickied or distinguished content does not count}{=Permabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.}{=Only votes within 3 days of a post's creation time are counted (including on comments of that post)}", [v._param("=Karma earned on removed posts and comments does not count (including karma earned before removal)", i.a.createElement("li", null, v._("Karma earned on removed posts and comments does not count (including karma earned before removal)", null, {
+						hk: "41qiS2"
+					}))), v._param("=Karma earned on deleted posts and comments does not count (including karma earned before deletion)", i.a.createElement("li", null, v._("Karma earned on deleted posts and comments does not count (including karma earned before deletion)", null, {
+						hk: "3YMTql"
 					}))), v._param("=Karma earned on stickied or distinguished content does not count", i.a.createElement("li", null, v._("Karma earned on stickied or distinguished content does not count", null, {
-						hk: "2yVTZQ"
+						hk: "3WWvKi"
 					}))), v._param("=Permabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.", i.a.createElement("li", null, v._("Permabanned users are not eligible for Points distribution and do not appear on the distribution list. This includes users permanently banned by moderators from the community or banned from Reddit.", null, {
-						hk: "3Jlzwi"
+						hk: "TppOV"
 					}))), v._param("=Only votes within 3 days of a post's creation time are counted (including on comments of that post)", i.a.createElement("li", null, v._("Only votes within 3 days of a post's creation time are counted (including on comments of that post)", null, {
-						hk: "1BIe3S"
+						hk: "13viz4"
 					})))], {
-						hk: "3pkPi3"
+						hk: "E71Cb"
 					})))], {
-						hk: "2PfFnZ"
+						hk: "4byvbL"
 					})), i.a.createElement("section", null, i.a.createElement("h3", null, v._("Deciding Community Rules", null, {
 						hk: "2BDpM6"
 					})), v._("{=Moderator teams can design an initial set of distribution rules for their subreddit when they launch Community Points. After Points have been launched, the community can continue to make changes to the distribution rules throughGovernance Polls}", [v._param("=Moderator teams can design an initial set of distribution rules for their subreddit when they launch Community Points. After Points have been launched, the community can continue to make changes to the distribution rules throughGovernance Polls", i.a.createElement("p", null, v._("Moderator teams can design an initial set of distribution rules for their subreddit when they launch Community Points. After Points have been launched, the community can continue to make changes to the distribution rules through {=Governance Polls}.", [v._param("=Governance Polls", i.a.createElement(b.a, {
@@ -2261,10 +2263,10 @@
 						hk: "3VDDzY"
 					})), i.a.createElement("h2", null, F._("Community Points represent a visible measure of reputation and enable a new type of weighted poll that can be used to make community decisions.", null, {
 						hk: "Xc3Ow"
-					})), F._("{=Community Points represent how much someone has contributed to the community and their stake in it. The more contributions they provide, the more Points they will earn, and the more influence they should have on the community.}", [F._param("=Community Points represent how much someone has contributed to the community and their stake in it. The more contributions they provide, the more Points they will earn, and the more influence they should have on the community.", i.a.createElement("p", null, F._("Community Points represent how much someone has contributed to the community and their stake in it. The more contributions they provide, the more Points they will earn, and the more influence they should have on the community.", null, {
-						hk: "4gxRNI"
+					})), F._("{=Community Points represent how much someone has contributed to the community and their stake in it. The more contributions they provide, the more Points they will earn, and the more influence they should have on their community. Just as mods play an essential role in communities, top participants and longtime members are recognized for their contributions with greater influence over community votes.}", [F._param("=Community Points represent how much someone has contributed to the community and their stake in it. The more contributions they provide, the more Points they will earn, and the more influence they should have on their community. Just as mods play an essential role in communities, top participants and longtime members are recognized for their contributions with greater influence over community votes.", i.a.createElement("p", null, F._("Community Points represent how much someone has contributed to the community and their stake in it. The more contributions they provide, the more Points they will earn, and the more influence they should have on their community. Just as mods play an essential role in communities, top participants and longtime members are recognized for their contributions with greater influence over community votes.", null, {
+						hk: "3KLKLr"
 					})))], {
-						hk: "lSGWL"
+						hk: "2ZBPoO"
 					}), i.a.createElement("section", null, i.a.createElement("h3", null, F._("Reputation", null, {
 						hk: "2sh0G9"
 					})), F._("{=In subreddits that have Community Points, we display Points balances next to usernames on posts and comment threads. This allows people to quickly identify the users who have been part of the community for the longest time and contributed the most.}", [F._param("=In subreddits that have Community Points, we display Points balances next to usernames on posts and comment threads. This allows people to quickly identify the users who have been part of the community for the longest time and contributed the most.", i.a.createElement("p", null, F._("In subreddits that have Community Points, we display Points balances next to usernames on posts and comment threads. This allows people to quickly identify the users who have been part of the community for the longest time and contributed the most.", null, {
@@ -2297,26 +2299,26 @@
 						alt: F._("Example of a community poll", null, {
 							hk: "CC6Sa"
 						})
-					}), F._("{=Specifically, this weight is the minimum of their total earned Points (Points that were minted directly to them) and their current Points balance. For example, if a user earned 1,000 Points but used 500 of them to buy perks, they have a current vote weight of 500. Similarly, if they earned 200 Points but now have 800 because of purchases and tips, their vote weight is still only 200.}{=Vote weights are based on Points balances at the time that the poll was created, not when the vote was cast. This prevents people from making a vote and then transferring their Points for someone else to vote with.}{=Subreddits with Community Points can opt for polls to be available to all users to create, or for only moderators to be able to create weighted polls.}", [F._param("=Specifically, this weight is the minimum of their total earned Points (Points that were minted directly to them) and their current Points balance. For example, if a user earned 1,000 Points but used 500 of them to buy perks, they have a current vote weight of 500. Similarly, if they earned 200 Points but now have 800 because of purchases and tips, their vote weight is still only 200.", i.a.createElement("p", null, F._("Specifically, this weight is the minimum of their total earned Points (Points that were minted directly to them) and their current Points balance. For example, if a user earned 1,000 Points but used 500 of them to buy perks, they have a current vote weight of 500. Similarly, if they earned 200 Points but now have 800 because of purchases and tips, their vote weight is still only 200.", null, {
-						hk: "2fIlHQ"
+					}), F._("{=Specifically, this weight is the minimum of their total earned Points (Points that were minted directly to them) and their current Points balance. For example, if a user earned 1,000 Points but used 500 of them to buy perks, they have a current vote weight of 500. Similarly, if they earned 200 Points but now have 800 because of tips, their vote weight is still only 200.}{=Vote weights are based on Points balances at the time that the poll was created, not when the vote was cast. This prevents people from making a vote and then transferring their Points for someone else to vote with.}{=Subreddits with Community Points can opt for polls to be available to all users to create, or for only moderators to be able to create weighted polls.}", [F._param("=Specifically, this weight is the minimum of their total earned Points (Points that were minted directly to them) and their current Points balance. For example, if a user earned 1,000 Points but used 500 of them to buy perks, they have a current vote weight of 500. Similarly, if they earned 200 Points but now have 800 because of tips, their vote weight is still only 200.", i.a.createElement("p", null, F._("Specifically, this weight is the minimum of their total earned Points (Points that were minted directly to them) and their current Points balance. For example, if a user earned 1,000 Points but used 500 of them to buy perks, they have a current vote weight of 500. Similarly, if they earned 200 Points but now have 800 because of tips, their vote weight is still only 200.", null, {
+						hk: "ckTbj"
 					}))), F._param("=Vote weights are based on Points balances at the time that the poll was created, not when the vote was cast. This prevents people from making a vote and then transferring their Points for someone else to vote with.", i.a.createElement("p", null, F._("Vote weights are based on Points balances at the time that the poll was created, not when the vote was cast. This prevents people from making a vote and then transferring their Points for someone else to vote with.", null, {
-						hk: "FrSSV"
+						hk: "I6Wy3"
 					}))), F._param("=Subreddits with Community Points can opt for polls to be available to all users to create, or for only moderators to be able to create weighted polls.", i.a.createElement("p", null, F._("Subreddits with Community Points can opt for polls to be available to all users to create, or for only moderators to be able to create weighted polls.", null, {
-						hk: "25QFOF"
+						hk: "410irp"
 					})))], {
-						hk: "2jDjYa"
+						hk: "3Bir5S"
 					})), i.a.createElement("section", null, i.a.createElement("h3", null, F._("Community Governance", null, {
 						hk: "440sui"
-					})), F._("{=Weighted Polls can be specially marked as Governance Polls. These specially designated polls are used to make decisions about community governance, for example to give input on content rules or to make changes to Points distribution rules.}{=Governance Polls have a Decision Threshold that they must meet in order to pass. This is the minimum amount of weighted vote that the winning option must have for the poll to be considered approved by the community.}{=The Decision Threshold is set to a minimum of 10% of Points in a community and is updated algorithmically according to the activity on recent governance polls. As more votes are cast on Governance Polls, the Decision Threshold for future Governance Polls increases.}{=Governance Polls can be used to change distribution rules for Points or get input on other community decisions, such as content rules or flairs. They are enacted by Reddit in the case of distribution rules and the moderators for the other rules.}", [F._param("=Weighted Polls can be specially marked as Governance Polls. These specially designated polls are used to make decisions about community governance, for example to give input on content rules or to make changes to Points distribution rules.", i.a.createElement("p", null, F._("Weighted Polls can be specially marked as Governance Polls. These specially designated polls are used to make decisions about community governance, for example to give input on content rules or to make changes to Points distribution rules.", null, {
-						hk: "3vavXK"
+					})), F._("{=Weighted Polls can be specially marked as Governance Polls. These specially designated polls are used to make decisions about community governance, for example to give input on content rules or to make changes to Points distribution rules.}{=Governance Polls have a Decision Threshold that they must meet in order to pass. This is the minimum amount of weighted vote that the winning option must have for the poll to be considered approved by the community.}{=The Decision Threshold is set to a minimum of 10% of Points in a community and is updated algorithmically according to the activity on recent governance polls. As more votes are cast on Governance Polls, the Decision Threshold for future Governance Polls increases.}{=Governance Polls can be used to change distribution rules for Points or get input on other community decisions, such as content rules or flairs. They are enacted by Reddit in the case of distribution rules and the moderators for rules that require nuanced community input.}", [F._param("=Weighted Polls can be specially marked as Governance Polls. These specially designated polls are used to make decisions about community governance, for example to give input on content rules or to make changes to Points distribution rules.", i.a.createElement("p", null, F._("Weighted Polls can be specially marked as Governance Polls. These specially designated polls are used to make decisions about community governance, for example to give input on content rules or to make changes to Points distribution rules.", null, {
+						hk: "2FyFSz"
 					}))), F._param("=Governance Polls have a Decision Threshold that they must meet in order to pass. This is the minimum amount of weighted vote that the winning option must have for the poll to be considered approved by the community.", i.a.createElement("p", null, F._("Governance Polls have a Decision Threshold that they must meet in order to pass. This is the minimum amount of weighted vote that the winning option must have for the poll to be considered approved by the community.", null, {
-						hk: "2CI9iA"
+						hk: "LS6Tk"
 					}))), F._param("=The Decision Threshold is set to a minimum of 10% of Points in a community and is updated algorithmically according to the activity on recent governance polls. As more votes are cast on Governance Polls, the Decision Threshold for future Governance Polls increases.", i.a.createElement("p", null, F._("The Decision Threshold is set to a minimum of 10% of Points in a community and is updated algorithmically according to the activity on recent governance polls. As more votes are cast on Governance Polls, the Decision Threshold for future Governance Polls increases.", null, {
-						hk: "1rDsLo"
-					}))), F._param("=Governance Polls can be used to change distribution rules for Points or get input on other community decisions, such as content rules or flairs. They are enacted by Reddit in the case of distribution rules and the moderators for the other rules.", i.a.createElement("p", null, F._("Governance Polls can be used to change distribution rules for Points or get input on other community decisions, such as content rules or flairs. They are enacted by Reddit in the case of distribution rules and the moderators for the other rules.", null, {
-						hk: "1rYJrp"
+						hk: "3K5cOm"
+					}))), F._param("=Governance Polls can be used to change distribution rules for Points or get input on other community decisions, such as content rules or flairs. They are enacted by Reddit in the case of distribution rules and the moderators for rules that require nuanced community input.", i.a.createElement("p", null, F._("Governance Polls can be used to change distribution rules for Points or get input on other community decisions, such as content rules or flairs. They are enacted by Reddit in the case of distribution rules and the moderators for rules that require nuanced community input.", null, {
+						hk: "3lh97y"
 					})))], {
-						hk: "4FpEHO"
+						hk: "40FHN1"
 					}))), null),
 					"special-memberships": i.a.createElement(() => i.a.createElement("main", null, i.a.createElement("h1", null, D._("Special Memberships", null, {
 						hk: "FgGID"
@@ -2975,8 +2977,8 @@
 				U = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Footer/index.m.less"),
 				H = o.n(U);
 			const {
-				fbt: J
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), K = () => i.a.createElement("div", {
+				fbt: K
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), J = () => i.a.createElement("div", {
 				className: H.a.container
 			}, i.a.createElement("footer", {
 				className: H.a.content
@@ -2984,14 +2986,14 @@
 				className: H.a.logo
 			}), i.a.createElement("span", {
 				className: H.a.copyright
-			}, J._("© 2021 Reddit, Inc.", null, {
+			}, K._("© 2021 Reddit, Inc.", null, {
 				hk: "2AJJq2"
 			})), i.a.createElement("span", {
 				className: H.a.spacer
 			}), i.a.createElement(b.a, {
 				className: H.a.link,
 				to: h("introduction")
-			}, J._("Community Points Documentation", null, {
+			}, K._("Community Points Documentation", null, {
 				hk: "KW8cc"
 			})), i.a.createElement("span", {
 				className: H.a.spacer
@@ -3000,12 +3002,12 @@
 				href: "https://www.redditinc.com/policies/previews-terms",
 				target: "_blank",
 				rel: "noopener noreferrer"
-			}, J._("Previews Terms of Use", null, {
+			}, K._("Previews Terms of Use", null, {
 				hk: "4lPHBN"
 			}))));
 			var Q = o("./src/lib/loadableAction/index.ts"),
-				X = o("./src/reddit/controls/Button/index.tsx"),
-				Z = o("./src/reddit/icons/svgs/Wordmark/index.tsx"),
+				Z = o("./src/reddit/controls/Button/index.tsx"),
+				X = o("./src/reddit/icons/svgs/Wordmark/index.tsx"),
 				$ = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Header/index.m.less"),
 				ee = o.n($);
 			const te = () => {
@@ -3024,7 +3026,7 @@
 						onClick: () => e(Object(Q.a)(() => Promise.all([o.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), o.e("CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), o.e("Frontpage")]).then(o.bind(null, "./src/reddit/actions/frontpage/index.ts")).then(e => e.frontpageReloaded))(!0))
 					}, i.a.createElement(z.a, {
 						className: ee.a.snoo
-					}), i.a.createElement(Z.a, {
+					}), i.a.createElement(X.a, {
 						className: ee.a.wordmark
 					})), i.a.createElement("div", {
 						className: ee.a.sections
@@ -3038,10 +3040,10 @@
 							key: t,
 							className: ee.a.sectionText
 						}, t)
-					})), i.a.createElement(X.t, {
+					})), i.a.createElement(Z.t, {
 						className: ee.a.joinWaitlist,
-						priority: X.c.Secondary,
-						kind: X.b.ExternalLink,
+						priority: Z.c.Secondary,
+						kind: Z.b.ExternalLink,
 						href: "https://docs.google.com/forms/d/1xSpGcBc0TP3GpfNgo3F0pV86OQYiEwUcsWBu3-RtfiU/viewform",
 						target: "_blank",
 						rel: "noopener noreferrer"
@@ -3218,7 +3220,7 @@
 			const {
 				fbt: ke
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
-			var Pe = function() {
+			var _e = function() {
 					const [e, t] = Object(a.useState)(!1), [o, s] = Object(a.useState)(!1), l = Object(r.e)(ne.e), u = Object(r.e)(se.m), c = Object(re.a)();
 					Object(a.useEffect)(() => {
 						c(Object(ie.h)())
@@ -3231,7 +3233,7 @@
 					}, d), i.a.createElement(me, {
 						className: ve.a.carouselContainer,
 						onComplete: () => t(!0)
-					}), e && i.a.createElement(i.a.Fragment, null, i.a.createElement(X.l, {
+					}), e && i.a.createElement(i.a.Fragment, null, i.a.createElement(Z.l, {
 						className: ve.a.createVaultButton,
 						onClick: () => {
 							c(Object(ie.b)()), l ? window.location.href = `${n.a.redditUrl}/vault/` : s(!0)
@@ -3242,8 +3244,8 @@
 						onClose: () => s(!1)
 					}))
 				},
-				_e = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Benefits/expandableText.m.less"),
-				Ee = o.n(_e);
+				Pe = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Benefits/expandableText.m.less"),
+				Ee = o.n(Pe);
 			const {
 				fbt: Ce
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), Se = e => {
@@ -3297,7 +3299,7 @@
 					}) : Ce._("Expand", null, {
 						hk: "4jMW0g"
 					})
-				}, i.a.createElement(P.a, {
+				}, i.a.createElement(_.a, {
 					name: "add",
 					className: Object(u.a)(Ee.a.plusIcon, {
 						[Ee.a.expanded]: a
@@ -3473,10 +3475,10 @@
 					className: Ne.a.bodyText
 				}, je._("Add a custom token to your subreddit. Earn rewards, encourage quality content, and unlock special features.", null, {
 					hk: "2JXihD"
-				})), i.a.createElement(X.t, {
+				})), i.a.createElement(Z.t, {
 					className: Ne.a.waitlistButton,
-					priority: X.c.Primary,
-					kind: X.b.ExternalLink,
+					priority: Z.c.Primary,
+					kind: Z.b.ExternalLink,
 					href: "https://docs.google.com/forms/d/1xSpGcBc0TP3GpfNgo3F0pV86OQYiEwUcsWBu3-RtfiU/viewform",
 					target: "_blank",
 					rel: "noopener noreferrer"
@@ -3534,11 +3536,11 @@
 					hk: "1IBSEK"
 				})))], {
 					hk: "3dfbBB"
-				})), i.a.createElement(X.t, {
-					Icon: Object(P.b)("topic_reading"),
+				})), i.a.createElement(Z.t, {
+					Icon: Object(_.b)("topic_reading"),
 					className: We.a.button,
 					iconClassName: We.a.buttonIcon,
-					priority: X.c.Secondary,
+					priority: Z.c.Secondary,
 					onClick: () => r(!0)
 				}, Ge._("A New Frontier", null, {
 					hk: "4GrPd2"
@@ -3553,8 +3555,8 @@
 			var Ue = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/FAQ/index.m.less"),
 				He = o.n(Ue);
 			const {
-				fbt: Je
-			} = o("./node_modules/fbt/lib/FbtPublic.js"), Ke = e => {
+				fbt: Ke
+			} = o("./node_modules/fbt/lib/FbtPublic.js"), Je = e => {
 				let {
 					className: t
 				} = e;
@@ -3565,54 +3567,54 @@
 				}, i.a.createElement("img", {
 					className: He.a.snoo,
 					src: `${n.a.assetPath}/img/communityPoints/landingPage/faq_v3.png`,
-					alt: Je._("FAQ Snoo", null, {
+					alt: Ke._("FAQ Snoo", null, {
 						hk: "DXQ0O"
 					})
 				}), i.a.createElement("h2", {
 					className: He.a.subtitle
-				}, Je._("Want to know more?", null, {
+				}, Ke._("Want to know more?", null, {
 					hk: "3vbn1B"
-				})), i.a.createElement(X.t, {
-					Icon: Object(P.b)("topic_reading"),
+				})), i.a.createElement(Z.t, {
+					Icon: Object(_.b)("topic_reading"),
 					className: He.a.docsButton,
 					iconClassName: He.a.docsIcon,
-					priority: X.c.Secondary,
-					kind: X.b.InternalLink,
+					priority: Z.c.Secondary,
+					kind: Z.b.InternalLink,
 					to: h("introduction")
 				}, i.a.createElement("span", {
 					className: He.a.docTextFull
-				}, Je._("Community Points Documentation", null, {
+				}, Ke._("Community Points Documentation", null, {
 					hk: "3nnz6o"
 				})), i.a.createElement("span", {
 					className: He.a.docTextShort
-				}, Je._("Community Points Doc", null, {
+				}, Ke._("Community Points Doc", null, {
 					hk: "1E9Ckc"
 				})))))
 			};
 			var Qe = o("./src/reddit/pages/meta/CommunityPointsLearnMorePage/Sections/Features/feature.m.less"),
-				Xe = o.n(Qe);
+				Ze = o.n(Qe);
 			const {
-				fbt: Ze
+				fbt: Xe
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), $e = e => {
 				let {
 					className: t,
 					data: o
 				} = e;
 				return i.a.createElement("div", {
-					className: Object(u.a)(Xe.a.container, t),
+					className: Object(u.a)(Ze.a.container, t),
 					style: {
 						backgroundColor: o.backgroundColor
 					}
 				}, i.a.createElement("div", {
-					className: Xe.a.textSection
+					className: Ze.a.textSection
 				}, i.a.createElement("div", {
-					className: Xe.a.textContainer
+					className: Ze.a.textContainer
 				}, i.a.createElement("h4", {
-					className: Xe.a.title
+					className: Ze.a.title
 				}, o.title), o.body)), i.a.createElement("div", {
-					className: Xe.a.imageSection
+					className: Ze.a.imageSection
 				}, i.a.createElement("img", {
-					className: Xe.a.image,
+					className: Ze.a.image,
 					src: o.imageSrc,
 					alt: o.title
 				})))
@@ -3775,10 +3777,10 @@
 					className: rt.a.body
 				}, st._("Community Points will always be an opt-in feature. We are looking for a select few subreddits to join our crypto experiment. If you are a moderator, add yourself to the list and we'll be in touch!", null, {
 					hk: "4uvkEJ"
-				})), i.a.createElement(X.t, {
+				})), i.a.createElement(Z.t, {
 					className: rt.a.waitlistButton,
-					priority: X.c.Primary,
-					kind: X.b.ExternalLink,
+					priority: Z.c.Primary,
+					kind: Z.b.ExternalLink,
 					href: "https://docs.google.com/forms/d/1xSpGcBc0TP3GpfNgo3F0pV86OQYiEwUcsWBu3-RtfiU/viewform",
 					target: "_blank",
 					rel: "noopener noreferrer"
@@ -3844,7 +3846,7 @@
 			t.default = () => {
 				const e = Object(r.e)(s.a),
 					t = Object(l.a)();
-				if (!e) return i.a.createElement(Pe, null);
+				if (!e) return i.a.createElement(_e, null);
 				const o = (e => {
 					var t, o;
 					return (null === (o = null === (t = null == e ? void 0 : e.routeMatch) || void 0 === t ? void 0 : t.match) || void 0 === o ? void 0 : o.path) === c.a
@@ -3865,13 +3867,13 @@
 					className: pt.a.featuresSection
 				}), i.a.createElement(mt, {
 					className: pt.a.vaultSection
-				}), i.a.createElement(Ke, {
+				}), i.a.createElement(Je, {
 					className: pt.a.faqSection
 				}), i.a.createElement(ze, {
 					className: pt.a.cryptoFutureSection
 				}), i.a.createElement(lt, {
 					className: pt.a.joinWaitlistSection
-				}))), !o && i.a.createElement(K, null))
+				}))), !o && i.a.createElement(J, null))
 			};
 			const bt = e => {
 				let {
@@ -3909,9 +3911,9 @@
 			})), o.d(t, "i", (function() {
 				return k
 			})), o.d(t, "q", (function() {
-				return P
-			})), o.d(t, "h", (function() {
 				return _
+			})), o.d(t, "h", (function() {
+				return P
 			})), o.d(t, "z", (function() {
 				return E
 			})), o.d(t, "l", (function() {
@@ -4013,12 +4015,12 @@
 			function k(e, t) {
 				return (null == e ? void 0 : e.length) ? Object(a.a)(e.map(e => t[e]).filter(Boolean)) : y
 			}
-			const P = (e, t, o) => {
+			const _ = (e, t, o) => {
 					var a;
 					if (!n.d.spBadges(e)) return y;
 					return k(null === (a = e.users.appliedBadges[o]) || void 0 === a ? void 0 : a[t], e.badges.models)
 				},
-				_ = (e, t) => {
+				P = (e, t) => {
 					const o = e.economics.subredditPremium[t.subredditId];
 					if (o && o.status === d.a.Fetched) {
 						const e = o.raw.collections[t.collectionId];
@@ -4192,4 +4194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.4f878634d4da52129073.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.7f069c83e2a56a92e81c.js.map
