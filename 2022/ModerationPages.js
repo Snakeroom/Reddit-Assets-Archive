@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.e97aa4ae6e4f43d7467d.js
-// Retrieved at 3/29/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.57805bb824e8ab83da62.js
+// Retrieved at 3/29/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -12015,6 +12015,9 @@
 					ADD_NOTE: () => a.fbt._("Add note", null, {
 						hk: "2UjBm"
 					}),
+					ADD_REMOVAL_REASON: () => a.fbt._("Add removal reason", null, {
+						hk: "jCC35"
+					}),
 					ADJUST_POST_CROWD_CONTROL_LEVEL: () => a.fbt._("Adjust post crowd control level", null, {
 						hk: "Eqwnv"
 					}),
@@ -12880,6 +12883,7 @@
 									};
 								case "REMOVE_LINK":
 								case "SPAM_LINK":
+								case "ADD_REMOVAL_REASON":
 									return {
 										type: k.POST, treatment: y.NEGATIVE
 									};
@@ -24088,4 +24092,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e97aa4ae6e4f43d7467d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.57805bb824e8ab83da62.js.map
