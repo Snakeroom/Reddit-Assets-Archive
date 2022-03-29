@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.025791d7e31dde324def.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.4405ff64aa7524110aeb.js
+// Retrieved at 3/29/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -2177,14 +2177,13 @@
 					const {
 						activeSaleConfig: e,
 						className: t,
-						coinPackages: n,
-						purchaseCatalogPending: r
+						purchaseCatalogPending: n
 					} = this.props;
 					return i.a.createElement("div", {
 						className: t
 					}, i.a.createElement(le, {
 						activeSaleConfig: e,
-						isLoading: r || !n.length,
+						isLoading: n,
 						onClickGetCoins: this.onClickGetCoins
 					}), this.renderGildBreakdown(), this.renderPurchase(), this.renderFAQSection(), i.a.createElement(K.a, null))
 				}
@@ -2272,7 +2271,7 @@
 						className: w.a.purchaseLogo
 					})), i.a.createElement("div", {
 						className: w.a.purchasePackages
-					}, c || !e.length ? s()(5, e => i.a.createElement(W, {
+					}, c ? s()(5, e => i.a.createElement(W, {
 						className: w.a.purchasePackage,
 						isLargeView: 0 === e,
 						isLoading: !0,
@@ -2399,4 +2398,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.025791d7e31dde324def.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.4405ff64aa7524110aeb.js.map
