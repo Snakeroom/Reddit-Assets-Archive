@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/editCollectionModal.19f1565314998903a5cc.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/editCollectionModal.c598af58a7e2eb0b63ac.js
+// Retrieved at 3/29/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["editCollectionModal"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -41,8 +41,9 @@
 			var s = n("./src/lib/constants/index.ts");
 			t.a = function(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s.D;
-				const n = new Date(1e3 * e);
-				return n.toLocaleString(t, {
+				const n = e.toString().length > 10,
+					a = new Date(e * (n ? 1 : 1e3));
+				return a.toLocaleString(t, {
 					weekday: "short",
 					month: "short",
 					year: "numeric",
@@ -182,8 +183,8 @@
 				m = n("./src/reddit/components/Collection/PostAndPostEventMeta/index.tsx"),
 				p = n("./src/reddit/components/StructuredStyles/DragItem/index.tsx"),
 				h = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
-				v = n("./src/reddit/constants/keycodes.ts"),
-				g = n("./src/reddit/constants/postCreation.ts"),
+				g = n("./src/reddit/constants/keycodes.ts"),
+				v = n("./src/reddit/constants/postCreation.ts"),
 				x = n("./src/reddit/controls/Button/index.tsx"),
 				C = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				b = n("./src/reddit/controls/RadioInput/index.tsx"),
@@ -289,7 +290,7 @@
 						placeholder: s.fbt._("Enter title", null, {
 							hk: "bWrfF"
 						}),
-						maxLength: g.e,
+						maxLength: v.e,
 						rows: 1,
 						value: o
 					}), r.a.createElement(P, {
@@ -300,7 +301,7 @@
 						placeholder: s.fbt._("Give some detail on what the collection is about.", null, {
 							hk: "4DPX2P"
 						}),
-						maxLength: g.b,
+						maxLength: v.b,
 						rows: 4,
 						value: i
 					}), r.a.createElement(j, {
@@ -377,7 +378,7 @@
 						};
 						await t(i) && n && n()
 					}, this.handleEscapeKey = e => {
-						e.keyCode === v.a.Escape && this.props.onClose()
+						e.keyCode === g.a.Escape && this.props.onClose()
 					}, this.onCollectionTabClick = () => this.setState({
 						isPostsSelected: !1
 					}), this.onPostsTabClick = () => this.setState({
@@ -524,15 +525,15 @@
 				}),
 				p = n("./src/reddit/components/HumanDate/index.tsx"),
 				h = n("./src/reddit/components/EventPost/PostEventMeta/index.m.less"),
-				v = n.n(h),
-				g = n("./src/lib/lessComponent.tsx");
-			const x = g.a.span("PostEventFutureText", v.a),
-				C = g.a.span("PostEventPastText", v.a),
-				b = g.a.span("PostEventNowText", v.a),
-				f = g.a.span("Container", v.a),
-				E = g.a.wrapped(u, "CalendarIcon", v.a),
-				_ = g.a.wrapped(m, "LiveIcon", v.a),
-				y = g.a.div("LoadingState", v.a);
+				g = n.n(h),
+				v = n("./src/lib/lessComponent.tsx");
+			const x = v.a.span("PostEventFutureText", g.a),
+				C = v.a.span("PostEventPastText", g.a),
+				b = v.a.span("PostEventNowText", g.a),
+				f = v.a.span("Container", g.a),
+				E = v.a.wrapped(u, "CalendarIcon", g.a),
+				_ = v.a.wrapped(m, "LiveIcon", g.a),
+				y = v.a.div("LoadingState", g.a);
 			class L extends s.Component {
 				constructor(e) {
 					super(e), this.state = {
@@ -593,7 +594,7 @@
 			})), n.d(t, "b", (function() {
 				return u
 			})), n.d(t, "c", (function() {
-				return g
+				return v
 			}));
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
@@ -660,7 +661,7 @@
 				})
 			}
 
-			function v(e, t) {
+			function g(e, t) {
 				let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
 					s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : d.D;
 				const a = Object(p.e)(e, t),
@@ -680,7 +681,7 @@
 					hk: "1sZpnp"
 				}).toString() : h(o, s)), `${r} @ ${function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:d.D;return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(o,s)}`
 			}
-			var g = function(e) {
+			var v = function(e) {
 				let {
 					startTime: t,
 					endTime: n,
@@ -689,7 +690,7 @@
 				} = e;
 				const i = Object(r.a)(),
 					c = null != o ? o : i;
-				return a.a.createElement(a.a.Fragment, null, v(t, n, s, c))
+				return a.a.createElement(a.a.Fragment, null, g(t, n, s, c))
 			};
 			n("./src/lib/humanizeUTCDate/index.tsx")
 		},
@@ -787,9 +788,9 @@
 			})), n.d(t, "a", (function() {
 				return h
 			})), n.d(t, "g", (function() {
-				return v
-			})), n.d(t, "i", (function() {
 				return g
+			})), n.d(t, "i", (function() {
+				return v
 			})), n.d(t, "e", (function() {
 				return x
 			})), n.d(t, "b", (function() {
@@ -813,8 +814,8 @@
 				m = s.a.div("FormGroup", o.a),
 				p = s.a.h2("FormGroupTitle", o.a),
 				h = s.a.div("FormElement", o.a),
-				v = s.a.div("FormGroupDescription", o.a),
-				g = s.a.div("FormItem", o.a),
+				g = s.a.div("FormGroupDescription", o.a),
+				v = s.a.div("FormItem", o.a),
 				x = s.a.h3("FormElementTitle", o.a),
 				C = s.a.div("FormElementDescription", o.a),
 				b = s.a.div("FormElementError", o.a),
@@ -855,9 +856,9 @@
 			})), n.d(t, "e", (function() {
 				return h
 			})), n.d(t, "a", (function() {
-				return v
-			})), n.d(t, "b", (function() {
 				return g
+			})), n.d(t, "b", (function() {
+				return v
 			})), n.d(t, "i", (function() {
 				return x
 			})), n.d(t, "h", (function() {
@@ -877,8 +878,8 @@
 				m = s.a.input("Input", d.a),
 				p = s.a.wrapped(c.a, "RadioOn", d.a),
 				h = s.a.wrapped(i.a, "RadioOff", d.a),
-				v = s.a.wrapped(o.a, "Checkbox", d.a),
-				g = s.a.wrapped(r.a, "CheckboxSelected", d.a),
+				g = s.a.wrapped(o.a, "Checkbox", d.a),
+				v = s.a.wrapped(r.a, "CheckboxSelected", d.a),
 				x = s.a.textarea("Textarea", d.a),
 				C = s.a.label("StyledLabel", d.a),
 				b = s.a.input("StyledFileInput", d.a)
@@ -1178,4 +1179,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.19f1565314998903a5cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/editCollectionModal.c598af58a7e2eb0b63ac.js.map

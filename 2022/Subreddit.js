@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.eba298a20619d4a45e61.js
-// Retrieved at 3/29/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.5d6609dd66f76ee52462.js
+// Retrieved at 3/29/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -456,8 +456,9 @@
 			var s = n("./src/lib/constants/index.ts");
 			t.a = function(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s.D;
-				const n = new Date(1e3 * e);
-				return n.toLocaleString(t, {
+				const n = e.toString().length > 10,
+					r = new Date(e * (n ? 1 : 1e3));
+				return r.toLocaleString(t, {
 					weekday: "short",
 					month: "short",
 					year: "numeric",
@@ -18214,4 +18215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.eba298a20619d4a45e61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.5d6609dd66f76ee52462.js.map
