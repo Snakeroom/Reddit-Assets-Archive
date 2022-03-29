@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.eae9074c0ba0ddccd491.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.67fb1fe80351aef4614a.js
+// Retrieved at 3/29/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2600,29 +2600,30 @@
 				y = n("./src/reddit/components/PostContainer/index.m.less"),
 				O = n.n(y);
 			const w = Object(m.a)(() => Object(r.c)({
-				basePixelMetadata: Object(v.a)((e, t) => {
-					let {
-						post: n
-					} = t;
-					return Object(b.b)(e, n.id)
-				}),
-				clickTrackingId: (e, t) => {
-					let {
-						post: n
-					} = t;
-					return n.id
-				},
-				imageGalleryCurrentItem: (e, t) => {
-					let {
-						post: n
-					} = t;
-					return Object(b.i)(e, {
-						postId: n.id
-					})
-				},
-				pageType: e => Object(x.d)(e).pageType
-			}));
-			class E extends s.a.Component {
+					basePixelMetadata: Object(v.a)((e, t) => {
+						let {
+							post: n
+						} = t;
+						return Object(b.b)(e, n.id)
+					}),
+					clickTrackingId: (e, t) => {
+						let {
+							post: n
+						} = t;
+						return n.id
+					},
+					imageGalleryCurrentItem: (e, t) => {
+						let {
+							post: n
+						} = t;
+						return Object(b.i)(e, {
+							postId: n.id
+						})
+					},
+					pageType: e => Object(x.d)(e).pageType
+				})),
+				E = "post-container";
+			class j extends s.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -2661,7 +2662,7 @@
 						className: Object(h.a)(O.a.WrappedPost, o, `Post ${l.id}`, {
 							promotedlink: l.isSponsored
 						}),
-						"data-testid": "post-container",
+						"data-testid": E,
 						id: d ? d(l.id) : l.id,
 						tabIndex: -1
 					}, n), w = !!l.media && l.media.type === f.o.VIDEO;
@@ -2673,7 +2674,7 @@
 					}, y) : y
 				}
 			}
-			t.a = w(Object(g.a)(Object(u.c)(E)))
+			t.a = w(Object(g.a)(Object(u.c)(j)))
 		},
 		"./src/reddit/components/PostFollow/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3206,4 +3207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.eae9074c0ba0ddccd491.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.67fb1fe80351aef4614a.js.map
