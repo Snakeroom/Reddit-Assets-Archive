@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.2f780584cdb3e83e006d.js
-// Retrieved at 3/29/2022, 11:00:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.302db88ca602ef046de0.js
+// Retrieved at 3/29/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2445,30 +2445,29 @@
 				_ = n("./src/reddit/components/PostContainer/index.m.less"),
 				E = n.n(_);
 			const C = Object(p.a)(() => Object(r.c)({
-					basePixelMetadata: Object(x.a)((e, t) => {
-						let {
-							post: n
-						} = t;
-						return Object(h.b)(e, n.id)
-					}),
-					clickTrackingId: (e, t) => {
-						let {
-							post: n
-						} = t;
-						return n.id
-					},
-					imageGalleryCurrentItem: (e, t) => {
-						let {
-							post: n
-						} = t;
-						return Object(h.i)(e, {
-							postId: n.id
-						})
-					},
-					pageType: e => Object(v.d)(e).pageType
-				})),
-				k = "post-container";
-			class O extends s.a.Component {
+				basePixelMetadata: Object(x.a)((e, t) => {
+					let {
+						post: n
+					} = t;
+					return Object(h.b)(e, n.id)
+				}),
+				clickTrackingId: (e, t) => {
+					let {
+						post: n
+					} = t;
+					return n.id
+				},
+				imageGalleryCurrentItem: (e, t) => {
+					let {
+						post: n
+					} = t;
+					return Object(h.i)(e, {
+						postId: n.id
+					})
+				},
+				pageType: e => Object(v.d)(e).pageType
+			}));
+			class k extends s.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -2507,7 +2506,7 @@
 						className: Object(f.a)(E.a.WrappedPost, o, `Post ${l.id}`, {
 							promotedlink: l.isSponsored
 						}),
-						"data-testid": k,
+						"data-testid": "post-container",
 						id: c ? c(l.id) : l.id,
 						tabIndex: -1
 					}, n), C = !!l.media && l.media.type === b.o.VIDEO;
@@ -2519,7 +2518,7 @@
 					}, _) : _
 				}
 			}
-			t.a = C(Object(g.a)(Object(u.c)(O)))
+			t.a = C(Object(g.a)(Object(u.c)(k)))
 		},
 		"./src/reddit/components/PostFollow/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -3230,4 +3229,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.2f780584cdb3e83e006d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ProfileComments~ProfileOverview~ProfilePrivate~SearchResults.302db88ca602ef046de0.js.map
