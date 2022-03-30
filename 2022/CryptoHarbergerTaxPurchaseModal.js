@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.455955aa5e0e36c66812.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.9d94d63d099d7080f2c1.js
+// Retrieved at 3/29/2022, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -232,7 +232,7 @@
 				}
 			}
 			const _ = [],
-				I = Object(o.c)({
+				T = Object(o.c)({
 					badgeIds: (e, t) => {
 						let {
 							subredditId: n,
@@ -244,7 +244,7 @@
 					allBadges: e => e.badges.models,
 					useHovercard: h.d.spSpecialMemberships
 				}),
-				T = Object(o.c)({
+				I = Object(o.c)({
 					badgeIds: (e, t) => {
 						let {
 							subredditId: n
@@ -274,8 +274,8 @@
 					badges: s
 				}, r))
 			}
-			const P = Object(s.b)(I, k)(M),
-				B = Object(s.b)(T, k)(M)
+			const P = Object(s.b)(T, k)(M),
+				B = Object(s.b)(I, k)(M)
 		},
 		"./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerPurchaseModal/Info/Controls/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -567,7 +567,7 @@
 			const {
 				fbt: _
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			const I = Object(f.c)({
+			const T = Object(f.c)({
 				tokenName: (e, t) => {
 					let {
 						subredditId: n
@@ -576,7 +576,7 @@
 					return (null === (r = Object(l.b)(e, n)) || void 0 === r ? void 0 : r.name) || ""
 				}
 			});
-			var T = Object(d.b)(I)((function(e) {
+			var I = Object(d.b)(T)((function(e) {
 					const {
 						className: t,
 						subredditName: n,
@@ -632,7 +632,7 @@
 			function P(e) {
 				return a.a.createElement("div", {
 					className: Object(o.a)(M.a.container, e.className)
-				}, a.a.createElement(T, {
+				}, a.a.createElement(I, {
 					subredditId: e.subreddit.id,
 					subredditName: e.subreddit.name,
 					taxRate: e.taxRate
@@ -1233,29 +1233,31 @@
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
 				b = e => {
-					const {
+					let {
 						label: t,
 						children: n,
 						inputRef: r,
 						className: o,
-						...i
-					} = e, c = void 0 !== e.value && "" !== e.value;
+						isInvalid: i,
+						...c
+					} = e;
+					const l = void 0 !== c.value && "" !== c.value;
 					return a.a.createElement("div", {
 						className: Object(s.a)(u.a.inputWrapper, o, {
-							[u.a.mIsInvalid]: e.isInvalid
+							[u.a.mIsInvalid]: i
 						}),
 						onClick: h
 					}, a.a.createElement(p, m({
-						"aria-invalid": e.isInvalid,
+						"aria-invalid": i,
 						innerRef: r
-					}, i)), e.label && a.a.createElement("label", {
+					}, c)), t && a.a.createElement("label", {
 						className: Object(s.a)(u.a.label, {
-							[u.a.mHasValue]: c
+							[u.a.mHasValue]: l
 						})
-					}, e.label), e.children)
+					}, t), n)
 				},
 				x = e => {
-					const {
+					let {
 						label: t,
 						children: n,
 						inputRef: r,
@@ -1263,7 +1265,8 @@
 						className: i,
 						redditStyle: c,
 						...l
-					} = e, d = void 0 !== e.value && "" !== e.value;
+					} = e;
+					const d = void 0 !== l.value && "" !== l.value;
 					return a.a.createElement("div", {
 						className: Object(s.a)(u.a.inputMovingLabelWrapper, i, {
 							[u.a.mIsInvalid]: o,
@@ -1272,11 +1275,11 @@
 						onClick: h
 					}, a.a.createElement(p, m({
 						innerRef: r
-					}, l)), e.label && a.a.createElement("label", {
+					}, l)), t && a.a.createElement("label", {
 						className: Object(s.a)(u.a.label, {
 							[u.a.mHasValue]: d
 						})
-					}, e.label), e.children)
+					}, t), n)
 				},
 				f = e => a.a.createElement("div", {
 					className: Object(s.a)(u.a.addValueButton, e.className),
@@ -1715,4 +1718,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.455955aa5e0e36c66812.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.9d94d63d099d7080f2c1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.5784675d54a04d77bf58.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.9826d4c46ae2a30ec6cd.js
+// Retrieved at 3/29/2022, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -641,29 +641,31 @@
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
 				b = e => {
-					const {
+					let {
 						label: t,
 						children: s,
 						inputRef: n,
 						className: a,
-						...i
-					} = e, c = void 0 !== e.value && "" !== e.value;
+						isInvalid: i,
+						...c
+					} = e;
+					const d = void 0 !== c.value && "" !== c.value;
 					return r.a.createElement("div", {
 						className: Object(o.a)(u.a.inputWrapper, a, {
-							[u.a.mIsInvalid]: e.isInvalid
+							[u.a.mIsInvalid]: i
 						}),
 						onClick: h
 					}, r.a.createElement(p, m({
-						"aria-invalid": e.isInvalid,
+						"aria-invalid": i,
 						innerRef: n
-					}, i)), e.label && r.a.createElement("label", {
+					}, c)), t && r.a.createElement("label", {
 						className: Object(o.a)(u.a.label, {
-							[u.a.mHasValue]: c
+							[u.a.mHasValue]: d
 						})
-					}, e.label), e.children)
+					}, t), s)
 				},
 				f = e => {
-					const {
+					let {
 						label: t,
 						children: s,
 						inputRef: n,
@@ -671,7 +673,8 @@
 						className: i,
 						redditStyle: c,
 						...d
-					} = e, l = void 0 !== e.value && "" !== e.value;
+					} = e;
+					const l = void 0 !== d.value && "" !== d.value;
 					return r.a.createElement("div", {
 						className: Object(o.a)(u.a.inputMovingLabelWrapper, i, {
 							[u.a.mIsInvalid]: a,
@@ -680,11 +683,11 @@
 						onClick: h
 					}, r.a.createElement(p, m({
 						innerRef: n
-					}, d)), e.label && r.a.createElement("label", {
+					}, d)), t && r.a.createElement("label", {
 						className: Object(o.a)(u.a.label, {
 							[u.a.mHasValue]: l
 						})
-					}, e.label), e.children)
+					}, t), s)
 				},
 				x = e => r.a.createElement("div", {
 					className: Object(o.a)(u.a.addValueButton, e.className),
@@ -1081,4 +1084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.5784675d54a04d77bf58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.9826d4c46ae2a30ec6cd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.e7281868136a3948c187.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.34e27fb49b3c1ef6a4fa.js
+// Retrieved at 3/29/2022, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -677,29 +677,31 @@
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
 				v = e => {
-					const {
+					let {
 						label: t,
 						children: n,
 						inputRef: s,
 						className: o,
-						...i
-					} = e, c = void 0 !== e.value && "" !== e.value;
+						isInvalid: i,
+						...c
+					} = e;
+					const d = void 0 !== c.value && "" !== c.value;
 					return r.a.createElement("div", {
 						className: Object(a.a)(u.a.inputWrapper, o, {
-							[u.a.mIsInvalid]: e.isInvalid
+							[u.a.mIsInvalid]: i
 						}),
 						onClick: b
 					}, r.a.createElement(p, m({
-						"aria-invalid": e.isInvalid,
+						"aria-invalid": i,
 						innerRef: s
-					}, i)), e.label && r.a.createElement("label", {
+					}, c)), t && r.a.createElement("label", {
 						className: Object(a.a)(u.a.label, {
-							[u.a.mHasValue]: c
+							[u.a.mHasValue]: d
 						})
-					}, e.label), e.children)
+					}, t), n)
 				},
 				f = e => {
-					const {
+					let {
 						label: t,
 						children: n,
 						inputRef: s,
@@ -707,7 +709,8 @@
 						className: i,
 						redditStyle: c,
 						...d
-					} = e, l = void 0 !== e.value && "" !== e.value;
+					} = e;
+					const l = void 0 !== d.value && "" !== d.value;
 					return r.a.createElement("div", {
 						className: Object(a.a)(u.a.inputMovingLabelWrapper, i, {
 							[u.a.mIsInvalid]: o,
@@ -716,11 +719,11 @@
 						onClick: b
 					}, r.a.createElement(p, m({
 						innerRef: s
-					}, d)), e.label && r.a.createElement("label", {
+					}, d)), t && r.a.createElement("label", {
 						className: Object(a.a)(u.a.label, {
 							[u.a.mHasValue]: l
 						})
-					}, e.label), e.children)
+					}, t), n)
 				},
 				x = e => r.a.createElement("div", {
 					className: Object(a.a)(u.a.addValueButton, e.className),
@@ -1031,4 +1034,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.e7281868136a3948c187.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.34e27fb49b3c1ef6a4fa.js.map

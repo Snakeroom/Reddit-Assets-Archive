@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.f95e37196a0bc84f01b9.js
-// Retrieved at 3/29/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.2c95a7f16de25b2a2087.js
+// Retrieved at 3/29/2022, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1578,29 +1578,31 @@
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
 				x = e => {
-					const {
+					let {
 						label: t,
 						children: n,
 						inputRef: a,
 						className: i,
-						...o
-					} = e, l = void 0 !== e.value && "" !== e.value;
+						isInvalid: o,
+						...l
+					} = e;
+					const c = void 0 !== l.value && "" !== l.value;
 					return s.a.createElement("div", {
 						className: Object(r.a)(m.a.inputWrapper, i, {
-							[m.a.mIsInvalid]: e.isInvalid
+							[m.a.mIsInvalid]: o
 						}),
 						onClick: h
 					}, s.a.createElement(p, u({
-						"aria-invalid": e.isInvalid,
+						"aria-invalid": o,
 						innerRef: a
-					}, o)), e.label && s.a.createElement("label", {
+					}, l)), t && s.a.createElement("label", {
 						className: Object(r.a)(m.a.label, {
-							[m.a.mHasValue]: l
+							[m.a.mHasValue]: c
 						})
-					}, e.label), e.children)
+					}, t), n)
 				},
 				b = e => {
-					const {
+					let {
 						label: t,
 						children: n,
 						inputRef: a,
@@ -1608,7 +1610,8 @@
 						className: o,
 						redditStyle: l,
 						...c
-					} = e, d = void 0 !== e.value && "" !== e.value;
+					} = e;
+					const d = void 0 !== c.value && "" !== c.value;
 					return s.a.createElement("div", {
 						className: Object(r.a)(m.a.inputMovingLabelWrapper, o, {
 							[m.a.mIsInvalid]: i,
@@ -1617,11 +1620,11 @@
 						onClick: h
 					}, s.a.createElement(p, u({
 						innerRef: a
-					}, c)), e.label && s.a.createElement("label", {
+					}, c)), t && s.a.createElement("label", {
 						className: Object(r.a)(m.a.label, {
 							[m.a.mHasValue]: d
 						})
-					}, e.label), e.children)
+					}, t), n)
 				},
 				C = e => s.a.createElement("div", {
 					className: Object(r.a)(m.a.addValueButton, e.className),
@@ -2051,4 +2054,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.f95e37196a0bc84f01b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.2c95a7f16de25b2a2087.js.map

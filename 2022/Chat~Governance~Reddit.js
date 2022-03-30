@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bc32b8b1c3746152947e.js
-// Retrieved at 3/29/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1b6c2b5364ad0cb77955.js
+// Retrieved at 3/29/2022, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("161367"),
+				buildNumber: Object(r.c)("161370"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1648595096"),
+				buildTimestamp: Object(r.b)("1648596710"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6074,14 +6074,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c27ba077dd81bc6bbfdce09e2591d631fb2924e42-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c12c49b3406c65838a4deafc3641791bf303ca669-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "27ba077dd81bc6bbfdce09e2591d631fb2924e42-production",
+						release: "12c49b3406c65838a4deafc3641791bf303ca669-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6607,7 +6607,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "27ba077dd81bc6bbfdce09e2591d631fb2924e42-production",
+							releaseClient: "12c49b3406c65838a4deafc3641791bf303ca669-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -19627,6 +19627,8 @@
 					allowPolls: e.allow_polls,
 					allowPostCrossposts: e.allow_post_crossposts,
 					allowPredictionContributors: e.allow_prediction_contributors,
+					allowPredictions: e.allow_predictions,
+					allowPredictionsTournament: e.allow_predictions_tournament,
 					collapseDeletedComments: e.collapse_deleted_comments,
 					commentScoreHideMins: e.comment_score_hide_mins,
 					contentOptions: e.content_options,
@@ -19680,6 +19682,8 @@
 					allow_polls: e.allowPolls,
 					allow_galleries: e.allowGalleries,
 					allow_post_crossposts: e.allowPostCrossposts,
+					allow_predictions: e.allowPredictions,
+					allow_predictions_tournament: e.allowPredictionsTournament,
 					allow_chat_post_creation: e.allowChatPostCreation,
 					allow_images: e.allowImages,
 					allow_discovery: e.allowDiscovery,
@@ -19732,6 +19736,8 @@
 				h = {
 					archivePostsEnabled: "should_archive_posts",
 					allowPostCrossposts: "allow_post_crossposts",
+					allowPredictions: "allow_predictions",
+					allowPredictionsTournament: "allow_predictions_tournament",
 					allowImages: "allow_images",
 					allowChatPostCreation: "allow_chat_post_creation",
 					allowDiscovery: "allow_discovery",
@@ -48083,4 +48089,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.bc32b8b1c3746152947e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.1b6c2b5364ad0cb77955.js.map

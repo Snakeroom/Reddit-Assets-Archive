@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.9807b1b7e70d4d619297.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.7282adca1ebd1a3b0e58.js
+// Retrieved at 3/29/2022, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-meta-ArbitrumPointsMigrationPage", "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, n) {
@@ -1073,29 +1073,31 @@
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
 				g = e => {
-					const {
+					let {
 						label: t,
 						children: n,
 						inputRef: r,
 						className: o,
-						...i
-					} = e, l = void 0 !== e.value && "" !== e.value;
+						isInvalid: i,
+						...l
+					} = e;
+					const u = void 0 !== l.value && "" !== l.value;
 					return s.a.createElement("div", {
 						className: Object(a.a)(d.a.inputWrapper, o, {
-							[d.a.mIsInvalid]: e.isInvalid
+							[d.a.mIsInvalid]: i
 						}),
 						onClick: h
 					}, s.a.createElement(p, m({
-						"aria-invalid": e.isInvalid,
+						"aria-invalid": i,
 						innerRef: r
-					}, i)), e.label && s.a.createElement("label", {
+					}, l)), t && s.a.createElement("label", {
 						className: Object(a.a)(d.a.label, {
-							[d.a.mHasValue]: l
+							[d.a.mHasValue]: u
 						})
-					}, e.label), e.children)
+					}, t), n)
 				},
 				f = e => {
-					const {
+					let {
 						label: t,
 						children: n,
 						inputRef: r,
@@ -1103,7 +1105,8 @@
 						className: i,
 						redditStyle: l,
 						...u
-					} = e, c = void 0 !== e.value && "" !== e.value;
+					} = e;
+					const c = void 0 !== u.value && "" !== u.value;
 					return s.a.createElement("div", {
 						className: Object(a.a)(d.a.inputMovingLabelWrapper, i, {
 							[d.a.mIsInvalid]: o,
@@ -1112,11 +1115,11 @@
 						onClick: h
 					}, s.a.createElement(p, m({
 						innerRef: r
-					}, u)), e.label && s.a.createElement("label", {
+					}, u)), t && s.a.createElement("label", {
 						className: Object(a.a)(d.a.label, {
 							[d.a.mHasValue]: c
 						})
-					}, e.label), e.children)
+					}, t), n)
 				},
 				b = e => s.a.createElement("div", {
 					className: Object(a.a)(d.a.addValueButton, e.className),
@@ -2253,4 +2256,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.9807b1b7e70d4d619297.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-meta-ArbitrumPointsMigrationPage.7282adca1ebd1a3b0e58.js.map

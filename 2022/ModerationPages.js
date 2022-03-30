@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.b9de8ff5196c338cc59e.js
-// Retrieved at 3/29/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b75d3e56d90467cfbbed.js
+// Retrieved at 3/29/2022, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./src/higherOrderComponents/withImageUploads.tsx": function(e, t, n) {
@@ -6419,15 +6419,16 @@
 					allowImages: m,
 					allowPolls: u,
 					allowPostCrossposts: p,
-					collapseDeletedComments: b,
-					commentScoreHideMins: h,
-					contentOptions: g,
-					spamComments: f,
-					spamLinks: x,
-					spamSelfposts: E,
-					spoilersEnabled: v,
-					suggestedCommentSort: C
-				} = t, _ = null === C ? "nullValue" : C, O = Object(o.useCallback)(() => s(!i, "archivePostsEnabled"), [i, s]);
+					allowPredictionsTournament: b,
+					collapseDeletedComments: h,
+					commentScoreHideMins: g,
+					contentOptions: f,
+					spamComments: x,
+					spamLinks: E,
+					spamSelfposts: v,
+					spoilersEnabled: C,
+					suggestedCommentSort: _
+				} = t, O = null === _ ? "nullValue" : _, j = Object(o.useCallback)(() => s(!i, "archivePostsEnabled"), [i, s]);
 				return r.a.createElement(S.a, null, r.a.createElement(y, null, r.a.createElement(S.b, null, H.fbt._("Post and Comment settings", null, {
 					hk: "14OI7p"
 				})), r.a.createElement(K.a, null, H.fbt._("Posts", null, {
@@ -6438,8 +6439,8 @@
 					}),
 					items: Object.keys(ee.h),
 					displayItems: Object.values(ee.h),
-					displayTitle: ee.h[g],
-					selected: g,
+					displayTitle: ee.h[f],
+					selected: f,
 					onClick: e => s(e, "contentOptions"),
 					id: "contentOptions",
 					descriptions: ee.g
@@ -6451,7 +6452,7 @@
 					})
 				}), r.a.createElement(Q.p, {
 					on: i,
-					onClick: O,
+					onClick: j,
 					label: H.fbt._("Archive posts", null, {
 						hk: "3FdbDg"
 					}),
@@ -6465,8 +6466,8 @@
 						hk: "4zwoUf"
 					})
 				}), r.a.createElement(Q.p, {
-					on: v,
-					onClick: () => s(!v, "spoilersEnabled"),
+					on: C,
+					onClick: () => s(!C, "spoilersEnabled"),
 					label: r.a.createElement("span", null, H.fbt._("Enable spoiler tag", null, {
 						hk: "2CtBpB"
 					}), r.a.createElement(Q.m, {
@@ -6496,6 +6497,15 @@
 					label: H.fbt._("Allow polls", null, {
 						hk: "15LXRO"
 					})
+				}), r.a.createElement(Q.p, {
+					on: b,
+					onClick: () => s(!b, "allowPredictionsTournament"),
+					label: H.fbt._("Allow predictions", null, {
+						hk: "rcdMx"
+					}),
+					subtext: H.fbt._("Allow predictions by mods in your community (only for public, SFW communities with 10k or more members)", null, {
+						hk: "40loX3"
+					})
 				}), r.a.createElement(Q.l, {
 					label: H.fbt._("Spam filter strength", null, {
 						hk: "4C4qar"
@@ -6509,9 +6519,9 @@
 					}),
 					items: Object.keys(ee.j),
 					displayItems: Object.values(ee.j),
-					displayTitle: ee.j[E],
+					displayTitle: ee.j[v],
 					id: "spamSelfposts",
-					selected: E,
+					selected: v,
 					onClick: e => s(e, "spamSelfposts"),
 					indent: !0
 				}), r.a.createElement(Q.d, {
@@ -6520,9 +6530,9 @@
 					}),
 					items: Object.keys(ee.j),
 					displayItems: Object.values(ee.j),
-					displayTitle: ee.j[x],
+					displayTitle: ee.j[E],
 					id: "spamLinks",
-					selected: x,
+					selected: E,
 					onClick: e => s(e, "spamLinks"),
 					indent: !0
 				}), r.a.createElement(Q.d, {
@@ -6531,8 +6541,8 @@
 					}),
 					items: Object.keys(ee.b),
 					displayItems: Object.values(ee.b),
-					displayTitle: ee.b[f],
-					selected: f,
+					displayTitle: ee.b[x],
+					selected: x,
 					onClick: e => s(e, "spamComments"),
 					indent: !0,
 					id: "spamComments"
@@ -6547,13 +6557,13 @@
 					}),
 					items: Object.keys(ee.i),
 					displayItems: Object.values(ee.i),
-					displayTitle: ee.i[_],
-					selected: _,
+					displayTitle: ee.i[O],
+					selected: O,
 					onClick: e => s("nullValue" === e ? null : e, "suggestedCommentSort"),
 					id: "suggestedCommentSort"
 				}), r.a.createElement(Q.p, {
-					on: b,
-					onClick: () => s(!b, "collapseDeletedComments"),
+					on: h,
+					onClick: () => s(!h, "collapseDeletedComments"),
 					label: H.fbt._("Collapse deleted and removed comments", null, {
 						hk: "Iw8kU"
 					})
@@ -6564,11 +6574,11 @@
 					direction: "column"
 				}, r.a.createElement(k, {
 					onChange: e => s(e.currentTarget.value, "commentScoreHideMins"),
-					isInvalid: !(h >= ee.f && h <= ee.a),
+					isInvalid: !(g >= ee.f && g <= ee.a),
 					min: ee.f,
 					max: ee.a,
 					type: "number",
-					value: h
+					value: g
 				})), r.a.createElement(K.a, null, H.fbt._("Advanced Settings", null, {
 					hk: "53xlS"
 				})), r.a.createElement(Q.g, {
@@ -20804,29 +20814,31 @@
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
 				h = e => {
-					const {
+					let {
 						label: t,
 						children: n,
 						inputRef: s,
 						className: r,
-						...i
-					} = e, d = void 0 !== e.value && "" !== e.value;
+						isInvalid: i,
+						...d
+					} = e;
+					const l = void 0 !== d.value && "" !== d.value;
 					return a.a.createElement("div", {
 						className: Object(o.a)(m.a.inputWrapper, r, {
-							[m.a.mIsInvalid]: e.isInvalid
+							[m.a.mIsInvalid]: i
 						}),
 						onClick: b
 					}, a.a.createElement(p, u({
-						"aria-invalid": e.isInvalid,
+						"aria-invalid": i,
 						innerRef: s
-					}, i)), e.label && a.a.createElement("label", {
+					}, d)), t && a.a.createElement("label", {
 						className: Object(o.a)(m.a.label, {
-							[m.a.mHasValue]: d
+							[m.a.mHasValue]: l
 						})
-					}, e.label), e.children)
+					}, t), n)
 				},
 				g = e => {
-					const {
+					let {
 						label: t,
 						children: n,
 						inputRef: s,
@@ -20834,7 +20846,8 @@
 						className: i,
 						redditStyle: d,
 						...l
-					} = e, c = void 0 !== e.value && "" !== e.value;
+					} = e;
+					const c = void 0 !== l.value && "" !== l.value;
 					return a.a.createElement("div", {
 						className: Object(o.a)(m.a.inputMovingLabelWrapper, i, {
 							[m.a.mIsInvalid]: r,
@@ -20843,11 +20856,11 @@
 						onClick: b
 					}, a.a.createElement(p, u({
 						innerRef: s
-					}, l)), e.label && a.a.createElement("label", {
+					}, l)), t && a.a.createElement("label", {
 						className: Object(o.a)(m.a.label, {
 							[m.a.mHasValue]: c
 						})
-					}, e.label), e.children)
+					}, t), n)
 				},
 				f = e => a.a.createElement("div", {
 					className: Object(o.a)(m.a.addValueButton, e.className),
@@ -24078,4 +24091,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b9de8ff5196c338cc59e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b75d3e56d90467cfbbed.js.map

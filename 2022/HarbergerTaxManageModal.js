@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.487dba3e1d8208a64e48.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.f94ecb2d2a10456b3532.js
+// Retrieved at 3/29/2022, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxManageModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1024,29 +1024,31 @@
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
 				g = e => {
-					const {
+					let {
 						label: t,
 						children: n,
 						inputRef: a,
 						className: o,
-						...i
-					} = e, d = void 0 !== e.value && "" !== e.value;
+						isInvalid: i,
+						...d
+					} = e;
+					const c = void 0 !== d.value && "" !== d.value;
 					return s.a.createElement("div", {
 						className: Object(r.a)(u.a.inputWrapper, o, {
-							[u.a.mIsInvalid]: e.isInvalid
+							[u.a.mIsInvalid]: i
 						}),
 						onClick: b
 					}, s.a.createElement(p, m({
-						"aria-invalid": e.isInvalid,
+						"aria-invalid": i,
 						innerRef: a
-					}, i)), e.label && s.a.createElement("label", {
+					}, d)), t && s.a.createElement("label", {
 						className: Object(r.a)(u.a.label, {
-							[u.a.mHasValue]: d
+							[u.a.mHasValue]: c
 						})
-					}, e.label), e.children)
+					}, t), n)
 				},
 				x = e => {
-					const {
+					let {
 						label: t,
 						children: n,
 						inputRef: a,
@@ -1054,7 +1056,8 @@
 						className: i,
 						redditStyle: d,
 						...c
-					} = e, l = void 0 !== e.value && "" !== e.value;
+					} = e;
+					const l = void 0 !== c.value && "" !== c.value;
 					return s.a.createElement("div", {
 						className: Object(r.a)(u.a.inputMovingLabelWrapper, i, {
 							[u.a.mIsInvalid]: o,
@@ -1063,11 +1066,11 @@
 						onClick: b
 					}, s.a.createElement(p, m({
 						innerRef: a
-					}, c)), e.label && s.a.createElement("label", {
+					}, c)), t && s.a.createElement("label", {
 						className: Object(r.a)(u.a.label, {
 							[u.a.mHasValue]: l
 						})
-					}, e.label), e.children)
+					}, t), n)
 				},
 				h = e => s.a.createElement("div", {
 					className: Object(r.a)(u.a.addValueButton, e.className),
@@ -1423,4 +1426,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.487dba3e1d8208a64e48.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxManageModal.f94ecb2d2a10456b3532.js.map

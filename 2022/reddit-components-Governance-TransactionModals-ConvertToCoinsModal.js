@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.d64d123cf95300b08bc0.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.7fb1cbad4a9984f774af.js
+// Retrieved at 3/29/2022, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -2012,29 +2012,31 @@
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
 				b = e => {
-					const {
+					let {
 						label: t,
 						children: n,
 						inputRef: r,
 						className: s,
-						...o
-					} = e, i = void 0 !== e.value && "" !== e.value;
+						isInvalid: o,
+						...i
+					} = e;
+					const l = void 0 !== i.value && "" !== i.value;
 					return a.a.createElement("div", {
 						className: Object(c.a)(u.a.inputWrapper, s, {
-							[u.a.mIsInvalid]: e.isInvalid
+							[u.a.mIsInvalid]: o
 						}),
 						onClick: f
 					}, a.a.createElement(m, p({
-						"aria-invalid": e.isInvalid,
+						"aria-invalid": o,
 						innerRef: r
-					}, o)), e.label && a.a.createElement("label", {
+					}, i)), t && a.a.createElement("label", {
 						className: Object(c.a)(u.a.label, {
-							[u.a.mHasValue]: i
+							[u.a.mHasValue]: l
 						})
-					}, e.label), e.children)
+					}, t), n)
 				},
 				v = e => {
-					const {
+					let {
 						label: t,
 						children: n,
 						inputRef: r,
@@ -2042,7 +2044,8 @@
 						className: o,
 						redditStyle: i,
 						...l
-					} = e, d = void 0 !== e.value && "" !== e.value;
+					} = e;
+					const d = void 0 !== l.value && "" !== l.value;
 					return a.a.createElement("div", {
 						className: Object(c.a)(u.a.inputMovingLabelWrapper, o, {
 							[u.a.mIsInvalid]: s,
@@ -2051,11 +2054,11 @@
 						onClick: f
 					}, a.a.createElement(m, p({
 						innerRef: r
-					}, l)), e.label && a.a.createElement("label", {
+					}, l)), t && a.a.createElement("label", {
 						className: Object(c.a)(u.a.label, {
 							[u.a.mHasValue]: d
 						})
-					}, e.label), e.children)
+					}, t), n)
 				},
 				h = e => a.a.createElement("div", {
 					className: Object(c.a)(u.a.addValueButton, e.className),
@@ -2733,4 +2736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.d64d123cf95300b08bc0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.7fb1cbad4a9984f774af.js.map

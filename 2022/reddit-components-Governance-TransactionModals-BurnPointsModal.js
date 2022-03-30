@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.c00ab6d207c1671a4caf.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.41dd0ebe70d3049305a8.js
+// Retrieved at 3/29/2022, 8:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal"], {
 		"./src/reddit/actions/util/pollActionForSuccess.ts": function(e, t, a) {
@@ -536,8 +536,8 @@
 				k = a("./src/reddit/selectors/gov.ts"),
 				y = a("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
 				T = a("./src/lib/classNames/index.ts"),
-				I = a("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				A = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
+				A = a("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				I = a("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
 				D = a("./src/reddit/components/Governance/TransactionModals/Common/CurrentBalance.tsx"),
 				B = a("./src/reddit/components/Governance/TransactionModals/BurnPointsModal/Approval.m.less"),
 				V = a.n(B);
@@ -552,7 +552,7 @@
 				} = e;
 				return n.a.createElement("div", {
 					className: V.a.overview
-				}, n.a.createElement(I.a, {
+				}, n.a.createElement(A.a, {
 					amount: t,
 					className: V.a.amount,
 					subredditId: s.id
@@ -570,9 +570,9 @@
 			}
 
 			function G(e) {
-				return n.a.createElement(A.b, {
+				return n.a.createElement(I.b, {
 					values: [
-						[Object(A.a)(), e.contractAddress],
+						[Object(I.a)(), e.contractAddress],
 						[i.fbt._("Function", null, {
 							hk: "1Q0dwF"
 						}), "burn"],
@@ -895,29 +895,31 @@
 					"LABEL" === e.target.tagName && (e.target.parentElement.firstElementChild.focus(), e.stopPropagation())
 				},
 				v = e => {
-					const {
+					let {
 						label: t,
 						children: a,
 						inputRef: l,
 						className: s,
-						...r
-					} = e, o = void 0 !== e.value && "" !== e.value;
+						isInvalid: r,
+						...o
+					} = e;
+					const i = void 0 !== o.value && "" !== o.value;
 					return n.a.createElement("div", {
 						className: Object(c.a)(m.a.inputWrapper, s, {
-							[m.a.mIsInvalid]: e.isInvalid
+							[m.a.mIsInvalid]: r
 						}),
 						onClick: p
 					}, n.a.createElement(h, u({
-						"aria-invalid": e.isInvalid,
+						"aria-invalid": r,
 						innerRef: l
-					}, r)), e.label && n.a.createElement("label", {
+					}, o)), t && n.a.createElement("label", {
 						className: Object(c.a)(m.a.label, {
-							[m.a.mHasValue]: o
+							[m.a.mHasValue]: i
 						})
-					}, e.label), e.children)
+					}, t), a)
 				},
 				f = e => {
-					const {
+					let {
 						label: t,
 						children: a,
 						inputRef: l,
@@ -925,7 +927,8 @@
 						className: r,
 						redditStyle: o,
 						...i
-					} = e, d = void 0 !== e.value && "" !== e.value;
+					} = e;
+					const d = void 0 !== i.value && "" !== i.value;
 					return n.a.createElement("div", {
 						className: Object(c.a)(m.a.inputMovingLabelWrapper, r, {
 							[m.a.mIsInvalid]: s,
@@ -934,11 +937,11 @@
 						onClick: p
 					}, n.a.createElement(h, u({
 						innerRef: l
-					}, i)), e.label && n.a.createElement("label", {
+					}, i)), t && n.a.createElement("label", {
 						className: Object(c.a)(m.a.label, {
 							[m.a.mHasValue]: d
 						})
-					}, e.label), e.children)
+					}, t), a)
 				},
 				b = e => n.a.createElement("div", {
 					className: Object(c.a)(m.a.addValueButton, e.className),
@@ -1222,4 +1225,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.c00ab6d207c1671a4caf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal.41dd0ebe70d3049305a8.js.map
