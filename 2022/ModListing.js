@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.7a612c985e056771b818.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.859206efcbaf909bf3cf.js
+// Retrieved at 3/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -409,9 +409,9 @@
 			})), n.d(t, "modListingPageRequested", (function() {
 				return R
 			})), n.d(t, "morePostsPending", (function() {
-				return H
-			})), n.d(t, "morePostsLoaded", (function() {
 				return B
+			})), n.d(t, "morePostsLoaded", (function() {
+				return H
 			})), n.d(t, "morePostsFailed", (function() {
 				return V
 			})), n.d(t, "moreModListingRequested", (function() {
@@ -528,7 +528,7 @@
 							hk: "3RYtBz"
 						})
 					})), Object(I.h)(s(), !0)
-				}, H = Object(d.a)(k.i), B = Object(d.a)(k.h), V = Object(d.a)(k.g), A = e => async (t, n, r) => {
+				}, B = Object(d.a)(k.i), H = Object(d.a)(k.h), V = Object(d.a)(k.g), A = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -544,7 +544,7 @@
 						v = !(!y[f] || !y[f][g.token]);
 					if (_ || v) return;
 					const O = D(p);
-					t(H({
+					t(B({
 						key: f,
 						fetchedToken: g.token
 					}));
@@ -561,7 +561,7 @@
 							...E.body,
 							postIds: (E.body.postIds || []).filter(e => !j || !j.includes(e))
 						};
-					E.ok ? t(B({
+					E.ok ? t(H({
 						key: f,
 						fetchedToken: g.token,
 						meta: d.meta,
@@ -1807,8 +1807,8 @@
 				}),
 				F = n("./node_modules/react-router-redux/es/index.js"),
 				R = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				H = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				B = n("./src/reddit/controls/Button/index.tsx");
+				B = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				H = n("./src/reddit/controls/Button/index.tsx");
 			const V = () => e => ({
 					source: "r_mod",
 					action: "click",
@@ -1864,7 +1864,7 @@
 							hk: "4ceDB9"
 						}),
 						value: this.state.subredditInput
-					}), i.a.createElement(B.l, {
+					}), i.a.createElement(H.l, {
 						"aria-label": _.fbt._("Hide", null, {
 							hk: "1BnFmX"
 						}),
@@ -1962,7 +1962,7 @@
 				he = n.n(be);
 			const {
 				fbt: fe
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ge = Object(H.u)({
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ge = Object(B.u)({
 				filtered: e => !!e && Object(q.d)(e.url)
 			}), _e = Object(a.c)({
 				hiddenSubredditsNames: e => e.modListingPage.filteredSubreddits.names
@@ -1983,7 +1983,7 @@
 						className: he.a.hideCommunitiesHeader
 					}, fe._("Hide communities", null, {
 						hk: "15OtHo"
-					})), i.a.createElement(B.r, {
+					})), i.a.createElement(H.r, {
 						className: he.a.tertiaryButton,
 						onClick: this.onToggleFiltered
 					}, e.filtered ? fe._("Go to unfiltered r/Mods", null, {
@@ -2140,7 +2140,7 @@
 						subredditId: n
 					})),
 					y = Object(i.e)(p.a),
-					x = y !== l.ge.NewModule;
+					x = y !== l.ie.NewModule;
 				return (null === (s = null == g ? void 0 : g.cards) || void 0 === s ? void 0 : s.length) > 0 && x ? o.a.createElement(h, {
 					closeModuleOnMount: !!t && t !== m.g.Large,
 					subredditId: n,
@@ -2170,7 +2170,7 @@
 						experimentEligibilitySelector: o.P,
 						experimentName: r.Cc
 					});
-					return !(!t || Object(r.zf)(t))
+					return !(!t || Object(r.Bf)(t))
 				},
 				d = e => {
 					return Object(s.c)(e, {
@@ -2351,4 +2351,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.7a612c985e056771b818.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.859206efcbaf909bf3cf.js.map

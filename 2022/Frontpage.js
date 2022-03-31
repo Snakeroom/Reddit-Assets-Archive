@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.355e18e9d2ffddf0a9b2.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.dca062f58a5ea1a01f5f.js
+// Retrieved at 3/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -613,7 +613,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.zf)(p),
+						includeInterestTopics: !!p && !Object(b.Bf)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: f && !(null === (a = null === (s = e.user.account) || void 0 === s ? void 0 : s.karma) || void 0 === a ? void 0 : a.total),
@@ -2996,10 +2996,10 @@
 			}
 			var Ze = s("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(De.c)(e, {
-					experimentName: Be.Gd,
+					experimentName: Be.Id,
 					experimentEligibilitySelector: De.a
 				}), Ze.a),
-				Ve = Object(u.a)(Ue, e => e === Be.Hd.Enabled);
+				Ve = Object(u.a)(Ue, e => e === Be.Jd.Enabled);
 			var Ge = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				We = s("./src/reddit/selectors/user.ts");
 			var He = s("./src/reddit/selectors/seo/linksModule.ts"),
@@ -7114,7 +7114,7 @@
 						subredditId: s
 					})),
 					y = Object(c.e)(p.a),
-					v = y !== u.ge.NewModule;
+					v = y !== u.ie.NewModule;
 				return (null === (n = null == f ? void 0 : f.cards) || void 0 === n ? void 0 : n.length) > 0 && v ? r.a.createElement(h, {
 					closeModuleOnMount: !!t && t !== m.g.Large,
 					subredditId: s,
@@ -7596,7 +7596,7 @@
 						experimentEligibilitySelector: r.P,
 						experimentName: a.Cc
 					});
-					return !(!t || Object(a.zf)(t))
+					return !(!t || Object(a.Bf)(t))
 				},
 				o = e => {
 					return Object(n.c)(e, {
@@ -7886,4 +7886,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.355e18e9d2ffddf0a9b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.dca062f58a5ea1a01f5f.js.map

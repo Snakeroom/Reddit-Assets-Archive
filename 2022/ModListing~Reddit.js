@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit.3cf18f1acb91bc617fe4.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit.855f54b9da06e7f9aff7.js
+// Retrieved at 3/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -435,9 +435,9 @@
 			})), n.d(t, "b", (function() {
 				return L
 			})), n.d(t, "c", (function() {
-				return T
-			})), n.d(t, "d", (function() {
 				return A
+			})), n.d(t, "d", (function() {
+				return T
 			}));
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
@@ -562,8 +562,8 @@
 						style: n
 					}))
 				}),
-				T = f,
-				A = w
+				A = f,
+				T = w
 		},
 		"./src/reddit/connectors/connectClickToToggleEditor.ts": function(e, t, n) {
 			"use strict";
@@ -1109,15 +1109,15 @@
 					sidebars: _,
 					trendingUnit: S,
 					subredditId: L
-				} = e, T = S ? "28px" : "0", A = C ? {
+				} = e, A = S ? "28px" : "0", T = C ? {
 					marginRight: `${c.q}px`,
-					marginTop: T
+					marginTop: A
 				} : {
 					marginLeft: `${c.q}px`,
-					marginTop: T
+					marginTop: A
 				}, B = k && s.a.createElement("div", {
 					className: Object(i.a)(v.a.sidebar, j ? v.a["m-collectionLayout"] : v.a.defaultLayout),
-					style: A
+					style: T
 				}, k), D = s.a.createElement(a.a, {
 					hideOnlyChildMargin: w,
 					className: g,
@@ -1413,10 +1413,10 @@
 				_ = n("./node_modules/lodash/merge.js"),
 				S = n.n(_),
 				L = n("./node_modules/lodash/omit.js"),
-				T = n.n(L);
-			const A = {};
+				A = n.n(L);
+			const T = {};
 			var B = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : A,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : T,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case I.g:
@@ -1435,7 +1435,7 @@
 						const {
 							subredditId: n,
 							userName: r
-						} = t.payload, s = T()(e[n], r);
+						} = t.payload, s = A()(e[n], r);
 						return {
 							...e,
 							[n]: s
@@ -2057,7 +2057,7 @@
 						return e
 				}
 			};
-			var Te = function() {
+			var Ae = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -2070,7 +2070,7 @@
 						return e
 				}
 			};
-			var Ae = function() {
+			var Te = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -2084,8 +2084,8 @@
 					}
 				},
 				Be = Object(r.c)({
-					error: Te,
-					pending: Ae
+					error: Ae,
+					pending: Te
 				}),
 				De = n("./node_modules/lodash/isEqual.js"),
 				Pe = n.n(De);
@@ -2287,7 +2287,7 @@
 							const {
 								ids: n
 							} = t.payload;
-							return T()(e, n)
+							return A()(e, n)
 						}
 						case Ye.c: {
 							const {
@@ -2614,7 +2614,7 @@
 					pending: _t
 				});
 			const Lt = {};
-			var Tt = function() {
+			var At = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Lt,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -2638,9 +2638,9 @@
 						return e
 				}
 			};
-			const At = {};
+			const Tt = {};
 			var Bt = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : At,
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Tt,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case Ye.m: {
@@ -2661,7 +2661,7 @@
 				},
 				Dt = Object(r.c)({
 					api: St,
-					itemOrder: Tt,
+					itemOrder: At,
 					loadMore: Bt
 				});
 			var Pt = function() {
@@ -3114,14 +3114,14 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-					experimentName: r.Td,
+					experimentName: r.Vd,
 					experimentEligibilitySelector: s.a
-				}) === r.de.Enabled,
+				}) === r.fe.Enabled,
 				a = e => Object(s.c)(e, {
-					experimentName: r.Ud,
+					experimentName: r.Wd,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === r.ee.Enabled
+				}) === r.ge.Enabled
 		},
 		"./src/reddit/selectors/gold/powerups/modSignup.ts": function(e, t, n) {
 			"use strict";
@@ -3158,4 +3158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.3cf18f1acb91bc617fe4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit.855f54b9da06e7f9aff7.js.map

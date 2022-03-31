@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.9b872a6b93f668bacc2a.js
-// Retrieved at 3/29/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.463ff423dffbae2e30bc.js
+// Retrieved at 3/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -942,7 +942,7 @@
 					} = n;
 					const s = t(),
 						a = Object(i.P)(s),
-						d = !!Object(c.a)(s),
+						d = !!Object(c.b)(s),
 						{
 							expiresAt: u,
 							api: {
@@ -3665,7 +3665,7 @@
 			const T = e => _.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: b.De
+					experimentName: b.Fe
 				}),
 				D = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = () => u(e => p()([T, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4556,7 +4556,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(N)
 						}
-						await t(Object(r.b)(`${n.path}`)), f ? f === p.ge.NewModule && t(Object(d.h)({
+						await t(Object(r.b)(`${n.path}`)), f ? f === p.ie.NewModule && t(Object(d.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(c.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(D.a)(Object(_.g)()(A))), Object(E.b)(E.a.SubredditCreation), t(Object(P.f)(a, null !== (O = Object(w.ab)(A)) && void 0 !== O ? O : Object(S.i)(A)))
 					} else k.error && Object(D.a)(Object(_.h)(k.error.type, C)(A)), t(U({
@@ -26766,14 +26766,16 @@
 				l = e => e === s.U.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(r.a)(c.P, d, (e, t) => !e && !!t),
-				f = Object(r.a)(c.P, d, (e, t) => !e && !!t && !Object(s.zf)(t))
+				f = Object(r.a)(c.P, d, (e, t) => !e && !!t && !Object(s.Bf)(t))
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "a", (function() {
+			n.d(t, "b", (function() {
 				return p
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return b
+			})), n.d(t, "a", (function() {
+				return f
 			}));
 			var r = n("./node_modules/reselect/es/index.js"),
 				s = n("./src/lib/constants/index.ts"),
@@ -26788,7 +26790,8 @@
 					if (!l(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: u,
-						experimentName: a.zd
+						experimentName: a.zd,
+						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
 				},
@@ -26807,7 +26810,12 @@
 						return r === s.Nb.SUBREDDIT && e
 					}
 					return !1
-				}
+				},
+				f = e => !!p(e) && Object(o.c)(e, {
+					experimentEligibilitySelector: l,
+					experimentName: a.Ad,
+					expEventOverride: !1
+				}) !== a.Bd.Readonly
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, n) {
 			"use strict";
@@ -27090,4 +27098,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9b872a6b93f668bacc2a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.463ff423dffbae2e30bc.js.map
