@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.dca062f58a5ea1a01f5f.js
-// Retrieved at 3/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.0ae0b8ea791a51f9bbd8.js
+// Retrieved at 4/1/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2387,11 +2387,10 @@
 					const t = Object(c.e)(d.a, (e, t) => e && t && e[0].id === t[0].id || !1),
 						s = Object(c.e)(d.b),
 						a = Object(c.e)(l.b),
-						n = Object(c.e)(i.c),
-						p = Object(c.e)(e => e.live.shouldShowAnnouncements);
+						n = Object(c.e)(i.c);
 					return s ? r.a.createElement(m, {
 						featuredLiveThread: s
-					}) : t && t.length && p ? r.a.createElement(u, {
+					}) : t && t.length ? r.a.createElement(u, {
 						announcements: t
 					}) : (null === (e = null == a ? void 0 : a.notifications) || void 0 === e ? void 0 : e.length) && n ? r.a.createElement(o.b, {
 						isOnTop: !0,
@@ -7886,4 +7885,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.dca062f58a5ea1a01f5f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.0ae0b8ea791a51f9bbd8.js.map
