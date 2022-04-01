@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.e90d77e3e6073e603d7a.js
-// Retrieved at 3/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.25d01245566c74ef2375.js
+// Retrieved at 4/1/2022, 10:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -6353,16 +6353,15 @@
 						}), Object(C.e)(!e)
 					}, this.getAuthClientData = () => {
 						const {
-							isLoggedIn: e,
-							session: t,
-							telemetryDefaults: n
+							session: e,
+							telemetryDefaults: t
 						} = this.props;
 						return {
-							expiration: e && t ? new Date(t.expires).getTime() : 0,
-							headers: e && t ? {
-								Authorization: `Bearer ${t.accessToken}`
+							expiration: e ? new Date(e.expires).getTime() : 0,
+							headers: e ? {
+								Authorization: `Bearer ${e.accessToken}`
 							} : {},
-							telemetryDefaults: n
+							telemetryDefaults: t
 						}
 					}, this.onMessageSignIn = () => {
 						this.props.openLoginModal()
@@ -18159,4 +18158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e90d77e3e6073e603d7a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.25d01245566c74ef2375.js.map
