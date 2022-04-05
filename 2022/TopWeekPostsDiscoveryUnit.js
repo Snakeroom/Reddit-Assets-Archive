@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.a5fa85036c758c7470d5.js
-// Retrieved at 3/29/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.0bcec9c27e4560d180ca.js
+// Retrieved at 4/5/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -716,8 +716,8 @@
 							pathname: Object(_.b)(t.permalink),
 							state: Object(k.b)(n)
 						})),
-						trackPostClick: (t, s) => e((e, n) => a ? j.q(n(), a, t, s) : null),
-						trackPostSubredditClick: t => e((e, n) => s ? j.s(n(), s, t) : a ? j.s(n(), a, t) : null),
+						trackPostClick: (t, s) => e((e, n) => a ? j.p(n(), a, t, s) : null),
+						trackPostSubredditClick: t => e((e, n) => s ? j.r(n(), s, t) : a ? j.r(n(), a, t) : null),
 						showModalOnPostLinkClick: t => e(Object(d.bb)(Object(_.b)(t.permalink), t.id))
 					}
 				}),
@@ -741,7 +741,7 @@
 							searchOptions: o
 						} = this.props;
 						let c;
-						return (c = "subreddit" === t && o ? j.z(o, r, n, i) : i && o ? j.A(o, r, n, i) : j.p(s, a))(e)
+						return (c = "subreddit" === t && o ? j.y(o, r, n, i) : i && o ? j.z(o, r, n, i) : j.o(s, a))(e)
 					}, this.renderPost = (e, t) => {
 						const {
 							isMiniCard: s,
@@ -2287,4 +2287,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.a5fa85036c758c7470d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.0bcec9c27e4560d180ca.js.map

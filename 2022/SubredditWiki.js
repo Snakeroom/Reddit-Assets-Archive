@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.3db9270ffc006408c7a8.js
-// Retrieved at 4/5/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.0f0dadb1f1177c51f92b.js
+// Retrieved at 4/5/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4709,19 +4709,19 @@
 							discoveryUnit: e,
 							subreddit: t
 						} = this.props;
-						e && this.props.sendEvent(Object(le.c)(e, t))
+						e && this.props.sendEvent(Object(le.b)(e, t))
 					}, this.trackPostClicked = e => {
 						const {
 							discoveryUnit: t,
 							subreddit: s
 						} = this.props;
-						t && this.props.sendEvent(Object(le.r)(t, e, void 0, s))
+						t && this.props.sendEvent(Object(le.q)(t, e, void 0, s))
 					}, this.trackPostViewed = e => {
 						const {
 							discoveryUnit: t,
 							subreddit: s
 						} = this.props;
-						t && this.props.sendEvent(Object(le.u)(t, e, void 0, s))
+						t && this.props.sendEvent(Object(le.t)(t, e, void 0, s))
 					}
 				}
 				componentDidMount() {
@@ -6024,4 +6024,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.3db9270ffc006408c7a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.0f0dadb1f1177c51f92b.js.map

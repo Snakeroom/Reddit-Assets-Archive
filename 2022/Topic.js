@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.07f0c63c11218535b2af.js
-// Retrieved at 3/29/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.0edc2095377432710926.js
+// Retrieved at 4/5/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1203,7 +1203,7 @@
 						} = this.props;
 						if (!n) return;
 						const r = Object(y.c)(n, s);
-						t(Object(u.o)(e, r))
+						t(Object(u.n)(e, r))
 					}
 				}
 				render() {
@@ -1290,7 +1290,7 @@
 			class G extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onSeeMoreCommunities = () => {
-						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.x)(B)), this.props.onSeeMoreCommunities())
+						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.w)(B)), this.props.onSeeMoreCommunities())
 					}
 				}
 				render() {
@@ -2997,4 +2997,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.07f0c63c11218535b2af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.0edc2095377432710926.js.map

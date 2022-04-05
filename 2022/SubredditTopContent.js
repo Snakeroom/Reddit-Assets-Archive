@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.acf6d53fba84117c8707.js
-// Retrieved at 4/5/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.916870187ca1b933ff99.js
+// Retrieved at 4/5/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -680,8 +680,8 @@
 							pathname: Object(P.b)(t.permalink),
 							state: Object(E.b)(n)
 						})),
-						trackPostClick: (t, s) => e((e, n) => a ? j.q(n(), a, t, s) : null),
-						trackPostSubredditClick: t => e((e, n) => s ? j.s(n(), s, t) : a ? j.s(n(), a, t) : null),
+						trackPostClick: (t, s) => e((e, n) => a ? j.p(n(), a, t, s) : null),
+						trackPostSubredditClick: t => e((e, n) => s ? j.r(n(), s, t) : a ? j.r(n(), a, t) : null),
 						showModalOnPostLinkClick: t => e(Object(d.bb)(Object(P.b)(t.permalink), t.id))
 					}
 				}),
@@ -705,7 +705,7 @@
 							searchOptions: o
 						} = this.props;
 						let l;
-						return (l = "subreddit" === t && o ? j.z(o, r, n, i) : i && o ? j.A(o, r, n, i) : j.p(s, a))(e)
+						return (l = "subreddit" === t && o ? j.y(o, r, n, i) : i && o ? j.z(o, r, n, i) : j.o(s, a))(e)
 					}, this.renderPost = (e, t) => {
 						const {
 							isMiniCard: s,
@@ -887,9 +887,9 @@
 				inSubredditTopContentExperiment: y,
 				subredditUrl: _.d
 			}), e => ({
-				trackDiscoveryUnitView: t => e((e, s) => x.b(s(), t)),
-				trackDismissClick: t => e((e, s) => x.d(s(), t)),
-				trackPostView: r()((t, s, a) => e((e, n) => x.t(n(), t, s, a)), (e, t) => {
+				trackDiscoveryUnitView: t => e((e, s) => x.a(s(), t)),
+				trackDismissClick: t => e((e, s) => x.c(s(), t)),
+				trackPostView: r()((t, s, a) => e((e, n) => x.s(n(), t, s, a)), (e, t) => {
 					let {
 						id: s
 					} = e;
@@ -2105,4 +2105,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.acf6d53fba84117c8707.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.916870187ca1b933ff99.js.map

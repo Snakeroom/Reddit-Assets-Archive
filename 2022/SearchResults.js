@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.fd3c4e48f6e8d8d0b399.js
-// Retrieved at 4/5/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.97528f6bd9a4f8b01a02.js
+// Retrieved at 4/5/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -5200,7 +5200,7 @@
 					className: X.a.postContainer,
 					eventFactory: function(e, t) {
 						let s;
-						return (s = "subreddit" === t ? L.z(c, te, i, d) : oe && oe.isSponsored ? L.y(c, te, i, d) : L.A(c, te, i, d))(e)
+						return (s = "subreddit" === t ? L.y(c, te, i, d) : oe && oe.isSponsored ? L.x(c, te, i, d) : L.z(c, te, i, d))(e)
 					},
 					onClick: ue,
 					post: oe,
@@ -5344,7 +5344,7 @@
 					if (void 0 === o) {
 						const a = t.layout.viewTypeWeb === ae.b.PromotedTrendHero;
 						o = () => {
-							c((e, o) => Object(L.B)(o(), t, r, n, d, s, a))
+							c((e, o) => Object(L.A)(o(), t, r, n, d, s, a))
 						}, re.a.set(e, o)
 					}
 					return o
@@ -10055,4 +10055,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.fd3c4e48f6e8d8d0b399.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.97528f6bd9a4f8b01a02.js.map
