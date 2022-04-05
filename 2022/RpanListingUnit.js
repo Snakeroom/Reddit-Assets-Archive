@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.f2943b320dacc0f05fdf.js
-// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.88ffa52a30d2138de3a4.js
+// Retrieved at 4/5/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -54,13 +54,13 @@
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Qd
 				});
-				return Object(u.Cf)(t) ? void 0 : t
+				return Object(u.Af)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: u.Rd
 				});
-				return Object(u.Cf)(t) ? void 0 : t
+				return Object(u.Af)(t) ? void 0 : t
 			}, (e, t) => e === u.Ud.Enabled && t === u.Ud.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -745,7 +745,7 @@
 					})
 				},
 				streamById: e => t => Object(x.l)(e, t),
-				rpanDuThresholdVariant: D.i,
+				rpanDuThresholdVariant: D.h,
 				inRpanDUPreloadExperiment: D.b,
 				inRpanDuTargetingExperiment: D.c
 			}), (e, t) => ({
@@ -1103,7 +1103,7 @@
 							})
 						})
 					}, {
-						threshold: t ? Object(D.h)(t) : .01
+						threshold: t ? Object(D.g)(t) : .01
 					}), this.intersectionObserver.observe(e), this.loadingIntersectionObserver = new IntersectionObserver(e => {
 						e.forEach(e => {
 							this.setState({
@@ -1111,7 +1111,7 @@
 							})
 						})
 					}, {
-						threshold: t ? Object(D.h)(t) : .01,
+						threshold: t ? Object(D.g)(t) : .01,
 						rootMargin: s ? "400%" : "0px"
 					}), this.loadingIntersectionObserver.observe(e))
 				}
@@ -1909,4 +1909,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.f2943b320dacc0f05fdf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.88ffa52a30d2138de3a4.js.map
