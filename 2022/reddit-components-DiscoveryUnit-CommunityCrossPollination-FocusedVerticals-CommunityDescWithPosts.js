@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.27ba451b118b7695e972.js
-// Retrieved at 3/29/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.2b6ba2069ad55ece4581.js
+// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -179,7 +179,7 @@
 							listingPosition: s
 						} = this.props;
 						this.props.sendEvent(Object(b.e)(t, e, s))
-					}, this.getLocalStorageDisabled = Object(u.R)(), this.setLocalStorageDisabled = Object(u.ub)()
+					}, this.getLocalStorageDisabled = Object(u.S)(), this.setLocalStorageDisabled = Object(u.vb)()
 				}
 				componentDidMount() {
 					const {
@@ -238,14 +238,14 @@
 				y = s("./src/reddit/components/PostContainer/index.tsx"),
 				j = s("./src/reddit/components/SubredditNameLink/index.tsx"),
 				k = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
-				f = s("./src/reddit/constants/posts.ts"),
-				S = s("./src/reddit/selectors/posts.ts"),
+				S = s("./src/reddit/constants/posts.ts"),
+				f = s("./src/reddit/selectors/posts.ts"),
 				P = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/PostItem/index.m.less"),
 				D = s.n(P);
 			const T = e => `${e}--FocusedVerticalRecommendationItem`,
 				N = Object(o.c)({
-					post: S.G,
-					subreddit: S.U
+					post: f.G,
+					subreddit: f.U
 				});
 			class U extends r.a.Component {
 				constructor() {
@@ -322,7 +322,7 @@
 					}, r.a.createElement(k.a, {
 						identifier: {
 							name: i.name,
-							type: f.a.SUBREDDIT
+							type: S.a.SUBREDDIT
 						},
 						postId: e.id,
 						shouldReverseColor: !0,
@@ -333,7 +333,7 @@
 						doNotHideOtherSubscribeButtons: !0,
 						identifier: {
 							name: i.name,
-							type: f.a.SUBREDDIT
+							type: S.a.SUBREDDIT
 						},
 						postId: e.id,
 						small: !0
@@ -1102,4 +1102,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.27ba451b118b7695e972.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.2b6ba2069ad55ece4581.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.91cf818f8f3f0d809b65.js
-// Retrieved at 3/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.dae1eb53f449fcd33a4e.js
+// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments", "reddit-components-ContentGate"], {
 		"./node_modules/linkify-it/index.js": function(e, t, r) {
@@ -1281,16 +1281,17 @@
 			}
 			t.a = e => {
 				let {
-					isFirst: t,
-					isLast: r,
-					...n
+					className: t,
+					isFirst: r,
+					isLast: n,
+					...i
 				} = e;
 				return s.a.createElement("div", c({
 					className: Object(o.a)(a.a.border, {
-						[a.a.isFirst]: t,
-						[a.a.isLast]: r
-					})
-				}, n))
+						[a.a.isFirst]: r,
+						[a.a.isLast]: n
+					}, t)
+				}, i))
 			}
 		},
 		"./src/reddit/components/OverviewConversationsPost/OverviewConversationsComment/index.m.less": function(e, t, r) {
@@ -2268,4 +2269,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.91cf818f8f3f0d809b65.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.dae1eb53f449fcd33a4e.js.map

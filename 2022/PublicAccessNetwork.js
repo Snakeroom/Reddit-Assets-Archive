@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5abe38e5a968d1f4ea14.js
-// Retrieved at 3/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.04f2d0de9308bf74aa9b.js
+// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -286,13 +286,13 @@
 					experimentEligibilitySelector: u.a,
 					experimentName: m.Qd
 				});
-				return Object(m.Bf)(t) ? void 0 : t
+				return Object(m.Cf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(u.c)(e, {
 					experimentEligibilitySelector: u.a,
 					experimentName: m.Rd
 				});
-				return Object(m.Bf)(t) ? void 0 : t
+				return Object(m.Cf)(t) ? void 0 : t
 			}, (e, t) => e === m.Ud.Enabled && t === m.Ud.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
@@ -670,7 +670,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.Af)(e.category_name)
+									displayText: Object(m.Bf)(e.category_name)
 								};
 								s.push(n.id), t[n.id] = n
 							}), {
@@ -690,7 +690,7 @@
 					t(S({
 						categoryId: e,
 						rank: o + 1
-					})), Object(u.kb)(Object(p.d)(s()))
+					})), Object(u.lb)(Object(p.d)(s()))
 				}
 		},
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
@@ -1500,9 +1500,9 @@
 							a = Object(ie.K)(s(), {
 								identifier: B.belongsTo
 							});
-						if (a && (e => q.Ne.Redirect === Object(W.b)(e, {
+						if (a && (e => q.Oe.Redirect === Object(W.b)(e, {
 								experimentEligibilitySelector: ne,
-								experimentName: q.Ge
+								experimentName: q.He
 							}))(s())) return void t(Object(o.c)(a.url));
 						if ((B.media && B.media.type) === D.o.LIVEVIDEO) {
 							const e = `/rpan${B.belongsTo.type===P.a.SUBREDDIT?a.url:"/"}${Object(g.u)(B.id)}`;
@@ -5106,7 +5106,7 @@
 						toggleModal: t
 					} = e;
 					const s = () => {
-						J.Pb(), t()
+						J.Rb(), t()
 					};
 					return n.a.createElement(G.e, null, n.a.createElement($, null, n.a.createElement(Q.a, null, n.a.createElement("div", null, n.a.createElement("div", {
 						className: z.a.Title
@@ -7585,12 +7585,12 @@
 					this.props.sendEvent(Object(He.h)("guidebook", this.props.currentStream))
 				}
 				onOBSBannerDismissClick() {
-					J.qb(), this.setState({
+					J.rb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(He.g)("not_now", this.props.currentStream))
 				}
 				onOBSBannerLearnMoreClick() {
-					J.qb(), this.setState({
+					J.rb(), this.setState({
 						shouldShowOBSBanner: !1
 					}), this.props.sendEvent(Object(He.g)("learn_more", this.props.currentStream)), this.props.toggleOBSDownloadModal()
 				}
@@ -7598,7 +7598,7 @@
 					this.props.currentStream && this.props.sendEvent(Object(He.o)(this.props.currentStream, this.playbackStats))
 				}
 				handleFocusMessageInput() {
-					J.W() || this.props.toggleIntroChatModal()
+					J.X() || this.props.toggleIntroChatModal()
 				}
 				onUpvote() {
 					this.props.currentStream && this.props.sendEvent(Object(He.r)(this.props.currentStream, this.playbackStats))
@@ -8219,7 +8219,7 @@
 				a = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const i = e => {
 					const t = Object(a.a)(e);
-					return Boolean(t) && !Object(n.Bf)(t)
+					return Boolean(t) && !Object(n.Cf)(t)
 				},
 				d = Object(o.a)(i, r.d, (e, t) => e && !t)
 		},
@@ -8240,4 +8240,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.5abe38e5a968d1f4ea14.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.04f2d0de9308bf74aa9b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ViewsTooltip.1442e087fd62a12ef793.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ViewsTooltip.181a5362b7fa3cb21ce3.js
+// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ViewsTooltip"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, l) {
@@ -303,118 +303,128 @@
 				r = l("./src/reddit/components/CreatorStats/index.m.less"),
 				i = l.n(r),
 				h = l("./src/reddit/constants/colors.ts");
-			const b = Math.floor(4 * Math.random()),
-				k = e => {
+			const b = {
+					icon: "https://i.redd.it/award_images/t5_22cerq/s5edqq9abef41_StonksRising.png",
+					text: [{
+						header: m.fbt._("This post is rising!", null, {
+							hk: "4mMoZi"
+						}),
+						description: m.fbt._("People are really into this", null, {
+							hk: "4kYun5"
+						})
+					}, {
+						header: m.fbt._("On the rise!", null, {
+							hk: "4uRxa6"
+						}),
+						description: m.fbt._("More people are seeing this", null, {
+							hk: "2lrtHO"
+						})
+					}, {
+						header: m.fbt._("Moving on up!", null, {
+							hk: "1BCUpk"
+						}),
+						description: m.fbt._("This post is hot-hot-hot", null, {
+							hk: "4kPP7S"
+						})
+					}, {
+						header: m.fbt._("Check it out!", null, {
+							hk: "Wph3E"
+						}),
+						description: m.fbt._("A lot of eyes are on this post", null, {
+							hk: "2gC2qH"
+						})
+					}]
+				},
+				p = {
+					icon: "https://i.redd.it/award_images/t5_22cerq/kqr00h8b7q161_BurningCash.png",
+					text: [{
+						header: m.fbt._("What?!", null, {
+							hk: "4iAtQ6"
+						}),
+						description: m.fbt._("This post is on fire!", null, {
+							hk: "2RAhI6"
+						})
+					}, {
+						header: m.fbt._("Woah!", null, {
+							hk: "1R2vAv"
+						}),
+						description: m.fbt._("This post has over 500 views!", null, {
+							hk: "49uE2U"
+						})
+					}, {
+						header: m.fbt._("Unstoppable!", null, {
+							hk: "jY9FE"
+						}),
+						description: m.fbt._("Over 500 views? What?!", null, {
+							hk: "2e1p7F"
+						})
+					}]
+				},
+				k = {
+					icon: "https://www.redditstatic.com/gold/awards/icon/Superheart_256.png",
+					text: [{
+						header: m.fbt._("Nice job!", null, {
+							hk: "DYjf1"
+						}),
+						description: m.fbt._("This post is picking up steam", null, {
+							hk: "4qT5Ll"
+						})
+					}, {
+						header: m.fbt._("Well done!", null, {
+							hk: "3jFWil"
+						}),
+						description: m.fbt._("This post is getting seen", null, {
+							hk: "KEEP7"
+						})
+					}, {
+						header: m.fbt._("Cool!", null, {
+							hk: "4mkKKI"
+						}),
+						description: m.fbt._("People are starting to see this post", null, {
+							hk: "1kvse2"
+						})
+					}, {
+						header: m.fbt._("Getting there!", null, {
+							hk: "3AtMdZ"
+						}),
+						description: m.fbt._("This post is making the rounds", null, {
+							hk: "3CIkWf"
+						})
+					}]
+				},
+				f = (e, o) => o >= 10 ? b : e >= 500 ? p : k,
+				g = e => {
+					const o = e.text.length,
+						l = Math.floor(Math.random() * o);
+					return e.text[l]
+				},
+				v = e => {
 					let {
 						views: o,
 						lastHourViews: l
 					} = e;
-					const s = {
-							icon: "https://www.redditstatic.com/gold/awards/icon/Superheart_256.png",
-							text: [{
-								header: m.fbt._("Nice job!", null, {
-									hk: "DYjf1"
-								}),
-								description: m.fbt._("This post is picking up steam", null, {
-									hk: "4qT5Ll"
-								})
-							}, {
-								header: m.fbt._("Well done!", null, {
-									hk: "3jFWil"
-								}),
-								description: m.fbt._("This post is getting seen", null, {
-									hk: "KEEP7"
-								})
-							}, {
-								header: m.fbt._("Cool!", null, {
-									hk: "4mkKKI"
-								}),
-								description: m.fbt._("People are starting to see this post", null, {
-									hk: "1kvse2"
-								})
-							}, {
-								header: m.fbt._("Getting there!", null, {
-									hk: "3AtMdZ"
-								}),
-								description: m.fbt._("This post is making the rounds", null, {
-									hk: "3CIkWf"
-								})
-							}]
-						},
-						n = {
-							icon: "https://i.redd.it/award_images/t5_22cerq/s5edqq9abef41_StonksRising.png",
-							text: [{
-								header: m.fbt._("This post is rising!", null, {
-									hk: "4mMoZi"
-								}),
-								description: m.fbt._("People are really into this", null, {
-									hk: "4kYun5"
-								})
-							}, {
-								header: m.fbt._("On the rise!", null, {
-									hk: "4uRxa6"
-								}),
-								description: m.fbt._("More people are seeing this", null, {
-									hk: "2lrtHO"
-								})
-							}, {
-								header: m.fbt._("Moving on up!", null, {
-									hk: "1BCUpk"
-								}),
-								description: m.fbt._("This post is hot-hot-hot", null, {
-									hk: "4kPP7S"
-								})
-							}, {
-								header: m.fbt._("Check it out!", null, {
-									hk: "Wph3E"
-								}),
-								description: m.fbt._("A lot of eyes are on this post", null, {
-									hk: "2gC2qH"
-								})
-							}]
-						},
-						d = {
-							icon: "https://i.redd.it/award_images/t5_22cerq/kqr00h8b7q161_BurningCash.png",
-							text: [{
-								header: m.fbt._("What?!", null, {
-									hk: "4iAtQ6"
-								}),
-								description: m.fbt._("This post is on fire!", null, {
-									hk: "2RAhI6"
-								})
-							}, {
-								header: m.fbt._("Woah!", null, {
-									hk: "1R2vAv"
-								}),
-								description: m.fbt._("This post has over 500 views!", null, {
-									hk: "49uE2U"
-								})
-							}, {
-								header: m.fbt._("Unstoppable!", null, {
-									hk: "jY9FE"
-								}),
-								description: m.fbt._("Over 500 views? What?!", null, {
-									hk: "2e1p7F"
-								})
-							}]
-						},
-						a = ((e, o) => o >= 10 ? n : e >= 500 ? d : s)(o, l),
-						c = a.text[b];
-					return t.a.createElement("div", {
+					const [s, n] = Object(d.useState)(f(o, l)), [a, c] = Object(d.useState)(g(s));
+					return Object(d.useEffect)(() => {
+						const e = f(o, l);
+						n(e)
+					}, [o, l]), Object(d.useEffect)(() => {
+						const e = g(s);
+						c(e)
+					}, [s]), t.a.createElement("div", {
 						className: i.a.copyContainer
 					}, t.a.createElement("div", null, t.a.createElement("span", {
 						className: i.a.copyHeader
-					}, c.header), t.a.createElement("span", {
+					}, a.header), t.a.createElement("span", {
 						className: i.a.copyDescription
-					}, " ", c.description)), t.a.createElement("div", null, t.a.createElement("img", {
-						src: a.icon,
+					}, " ", a.description)), t.a.createElement("div", null, t.a.createElement("img", {
+						src: s.icon,
 						alt: m.fbt._("copy award icon", null, {
 							hk: "3rifVz"
 						}),
 						className: i.a.copyAwardIcon
 					})))
 				},
-				p = 2 * c.B;
+				y = 2 * c.B;
 			o.default = Object(j.a)(e => {
 				let {
 					viewsData: o,
@@ -454,7 +464,7 @@
 									const e = new Date(o[0].at);
 									return {
 										min: e.getTime(),
-										max: e.getTime() + p
+										max: e.getTime() + y
 									}
 								})(),
 								type: "time",
@@ -504,7 +514,7 @@
 							}
 						}
 					};
-				return t.a.createElement(t.a.Fragment, null, t.a.createElement(k, {
+				return t.a.createElement(t.a.Fragment, null, t.a.createElement(v, {
 					views: l,
 					lastHourViews: o[o.length - 1].value
 				}), t.a.createElement("div", {
@@ -525,9 +535,17 @@
 					className: i.a.statDescription
 				}, m.fbt._("Total views", null, {
 					hk: "4sCYIU"
-				})))))
+				}))), t.a.createElement("div", {
+					className: `${i.a.graphSingleStat} ${i.a.pastHourStat}`
+				}, o.length < 48 && t.a.createElement(t.a.Fragment, null, t.a.createElement("div", {
+					className: i.a.statNumber
+				}, Object(u.b)(o[o.length - 1].value)), t.a.createElement("div", {
+					className: i.a.statDescription
+				}, m.fbt._("In the past hour", null, {
+					hk: "2B71ms"
+				}))))))
 			})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ViewsTooltip.1442e087fd62a12ef793.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ViewsTooltip.181a5362b7fa3cb21ce3.js.map

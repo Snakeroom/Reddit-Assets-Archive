@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.c512c6d31d6ef2d13266.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.78d034ddb052067dbdb8.js
+// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -996,102 +996,104 @@
 						isCommentPermalink: r,
 						isCommentsPage: a,
 						isFrontpage: l,
-						isProfilePostListing: d,
-						isTopicPage: c,
-						isCommentCountAnimationEnabled: h,
-						isVoteCountAnimationEnabled: p,
-						isCountAnimShadowTestEnabled: u,
-						listingBelowVariant: b,
-						listingKey: g,
-						listingName: C,
-						pageLayer: v,
-						pageReferrer: y,
-						redditStyle: w,
-						shouldHideFlair: I,
-						triggerNewPostPill: x,
-						postIds: O
-					} = this.props, S = 0 === t, E = `post-${i}-${e}-${t}-${s?"last-index":""}-${C}-${g}-${y}`;
-					let j;
-					if (void 0 === (j = this.scrollChildCache.get(E))) {
+						isProfileCreatorStatsEnabled: d,
+						isProfilePostListing: c,
+						isTopicPage: h,
+						isCommentCountAnimationEnabled: p,
+						isVoteCountAnimationEnabled: u,
+						isCountAnimShadowTestEnabled: b,
+						listingBelowVariant: g,
+						listingKey: C,
+						listingName: v,
+						pageLayer: y,
+						pageReferrer: w,
+						redditStyle: I,
+						shouldHideFlair: x,
+						triggerNewPostPill: O,
+						postIds: S
+					} = this.props, E = 0 === t, j = `post-${i}-${e}-${t}-${s?"last-index":""}-${v}-${C}-${w}`;
+					let k;
+					if (void 0 === (k = this.scrollChildCache.get(j))) {
 						const {
-							inSubredditOrProfile: k,
-							postsById: M
-						} = this.props, T = M[e], L = T.crosspostRootId && M[T.crosspostRootId] ? M[T.crosspostRootId] : T;
-						T.crosspostRootId && !M[T.crosspostRootId] && P.c.withScope(e => {
-							e.setExtra("errorType", f.t.API), e.setExtra("description", `Post ${T.id} is crosspost of ${T.crosspostRootId}, but ` + `${T.crosspostRootId} details are missing in the state`), P.c.captureMessage("Crosspost parent details are missing")
+							inSubredditOrProfile: M,
+							postsById: T
+						} = this.props, L = T[e], _ = L.crosspostRootId && T[L.crosspostRootId] ? T[L.crosspostRootId] : L;
+						L.crosspostRootId && !T[L.crosspostRootId] && P.c.withScope(e => {
+							e.setExtra("errorType", f.t.API), e.setExtra("description", `Post ${L.id} is crosspost of ${L.crosspostRootId}, but ` + `${L.crosspostRootId} details are missing in the state`), P.c.captureMessage("Crosspost parent details are missing")
 						});
-						const _ = this.props.postComponentForLayout({
-							isCrosspost: !!T.crosspostRootId,
+						const V = this.props.postComponentForLayout({
+							isCrosspost: !!L.crosspostRootId,
 							layout: i,
-							post: L
+							post: _
 						});
-						let V = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
-						this.props.listingBelowVariant && g && (V += `--${g}`);
-						const F = ue(e, i, s, g, C, y, this.props, t, this.props.hostPostData),
-							N = be(e, i, this.props, t, v),
-							A = ge(e, this.props, l),
-							H = L.media && L.media.type === $.o.EMBED ? L.media.provider : null,
-							W = h && !T.isSponsored,
-							B = p && !T.isSponsored && !T.isScoreHidden,
-							K = !!(null == T ? void 0 : T.recommendationContext);
-						j = {
-							estHeight: Object(J.c)(T, i),
+						let F = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && C && (F += `--${C}`);
+						const N = ue(e, i, s, C, v, w, this.props, t, this.props.hostPostData),
+							A = be(e, i, this.props, t, y),
+							H = ge(e, this.props, l),
+							W = _.media && _.media.type === $.o.EMBED ? _.media.provider : null,
+							B = p && !L.isSponsored,
+							K = u && !L.isSponsored && !L.isScoreHidden,
+							z = !!(null == L ? void 0 : L.recommendationContext);
+						k = {
+							estHeight: Object(J.c)(L, i),
 							id: e,
-							isFocusable: !(!L.media || !(i === R.g.Large || i === R.g.Classic && Object($.H)(L.media))) && ($.d.has(L.media.type) && (!H || !$.s.has(H)) && !L.isSpoiler),
-							trackOnEnteredViewport: F,
-							trackOnExitedViewport: N,
-							render: h => {
+							isFocusable: !(!_.media || !(i === R.g.Large || i === R.g.Classic && Object($.H)(_.media))) && ($.d.has(_.media.type) && (!W || !$.s.has(W)) && !_.isSpoiler),
+							trackOnEnteredViewport: N,
+							trackOnExitedViewport: A,
+							render: p => {
 								let {
-									className: p,
+									className: u,
 									height: f,
 									width: P,
-									remeasure: y,
+									remeasure: w,
 									setScrollerChildRef: R,
-									shouldLoadInitially: E
-								} = h;
+									shouldLoadInitially: j
+								} = p;
 								return m.a.createElement(X, {
-									key: V
-								}, m.a.createElement(_, {
+									key: F
+								}, m.a.createElement(V, {
 									availableWidth: P,
-									className: p,
+									className: u,
 									currentProfileName: n,
 									eventFactory: this.eventFactoryHandler,
-									first: S,
-									forceLoadMedia: E,
+									first: E,
+									forceLoadMedia: j,
 									hostPostData: o,
-									inSubredditOrProfile: k,
-									isCommentCountAnimationEnabled: W,
+									inSubredditOrProfile: M,
+									isCommentCountAnimationEnabled: B,
 									isCommentPermalink: r,
 									isCommentsPage: a,
-									isCountAnimShadowTestEnabled: u,
+									isCountAnimShadowTestEnabled: b,
 									isFrontpage: l,
-									isProfilePostListing: d,
-									isTopicPage: c,
-									isVoteCountAnimationEnabled: B,
-									key: V,
+									isProfileCreatorStatsEnabled: d,
+									isProfilePostListing: c,
+									isTopicPage: h,
+									isVoteCountAnimationEnabled: K,
+									key: F,
 									last: s,
-									listingBelowVariant: b,
+									listingBelowVariant: g,
 									listingIndex: t,
-									listingKey: g,
-									listingName: C,
-									onceInViewport: x,
-									onClickPost: A,
-									onSizeChanged: y,
-									pageLayer: v,
+									listingKey: C,
+									listingName: v,
+									onceInViewport: O,
+									onClickPost: H,
+									onSizeChanged: w,
+									pageLayer: y,
 									postId: e,
-									postIds: O,
-									redditStyle: w,
+									postIds: S,
+									redditStyle: I,
 									scrollerItemRef: R,
 									sendEvent: this.props.sendEvent,
-									shouldHideFlair: I
-								}), K && m.a.createElement(U, {
-									post: L,
+									shouldHideFlair: x
+								}), z && m.a.createElement(U, {
+									post: _,
 									layout: i
 								}))
 							}
-						}, this.scrollChildCache.set(E, j)
+						}, this.scrollChildCache.set(j, k)
 					}
-					return j
+					return k
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -2043,7 +2045,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"), s.e("Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"), s.e("reddit-components-ClassicPost")]).then(s.bind(null, "./src/reddit/components/ClassicPost/index.tsx")),
+					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d"), s.e("Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"), s.e("reddit-components-ClassicPost")]).then(s.bind(null, "./src/reddit/components/ClassicPost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2063,7 +2065,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"), s.e("Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"), s.e("reddit-components-CompactPost")]).then(s.bind(null, "./src/reddit/components/CompactPost/index.tsx")),
+					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d"), s.e("Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"), s.e("reddit-components-CompactPost")]).then(s.bind(null, "./src/reddit/components/CompactPost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2083,7 +2085,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"), s.e("Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"), s.e("reddit-components-LargePost")]).then(s.bind(null, "./src/reddit/components/LargePost/index.tsx")),
+					importAsync: () => Promise.all([s.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d"), s.e("Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"), s.e("reddit-components-LargePost")]).then(s.bind(null, "./src/reddit/components/LargePost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2103,7 +2105,7 @@
 						const t = this.resolve(e);
 						return !1 !== this.resolved[t] && !!s.m[t]
 					},
-					importAsync: () => Promise.all([s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Reddit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compone~9b425435"), s.e("Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"), s.e("reddit-components-MediumPost")]).then(s.bind(null, "./src/reddit/components/MediumPost/index.tsx")),
+					importAsync: () => Promise.all([s.e("ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"), s.e("CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"), s.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), s.e("Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d"), s.e("Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"), s.e("reddit-components-MediumPost")]).then(s.bind(null, "./src/reddit/components/MediumPost/index.tsx")),
 					requireAsync(e) {
 						const t = this.resolve(e);
 						return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -2184,4 +2186,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.c512c6d31d6ef2d13266.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.78d034ddb052067dbdb8.js.map

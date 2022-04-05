@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.69ddac459e539fb7b156.js
-// Retrieved at 3/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.5c6e394c11333fb4080f.js
+// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -960,7 +960,7 @@
 						o = Object(b.b)(y),
 						a = Object(b.b)(E),
 						[d, c] = function(e, t) {
-							const [s, n] = Object(r.useState)(Object(R.N)(e, t));
+							const [s, n] = Object(r.useState)(Object(R.O)(e, t));
 							return [s, Object(r.useCallback)(() => {
 								const s = Object(R.a)(e, t);
 								n(s)
@@ -990,7 +990,7 @@
 							e.stopPropagation(), o.visible ? f() : k()
 						}, [f, k, o.visible]),
 						I = Object(r.useCallback)(t => {
-							t === x.b.FREQUENT && Object(R.bb)(e.userId, e.subredditId)
+							t === x.b.FREQUENT && Object(R.cb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						T = Object(r.useCallback)(r => {
 							const {
@@ -1216,7 +1216,7 @@
 					small: !0,
 					isFullWidth: !0,
 					afterUnsubscribeAction: () => {
-						t && (Object(R.bb)(e.userId, t), e.updateSubredditInfo())
+						t && (Object(R.cb)(e.userId, t), e.updateSubredditInfo())
 					}
 				})), e.userIsSubscriber && t && e.notificationLevel && n.a.createElement("div", {
 					className: ie.a.notificationButtonContainer
@@ -4409,12 +4409,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case h.gf.SmIcon:
+						case h.hf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case h.gf.SmIconHc:
+						case h.hf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -5993,12 +5993,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Ze
+						experimentName: r.af
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.gf.SmIcon || t === r.gf.SmIconHc
+					return t === r.hf.SmIcon || t === r.hf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6024,4 +6024,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.69ddac459e539fb7b156.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.5c6e394c11333fb4080f.js.map

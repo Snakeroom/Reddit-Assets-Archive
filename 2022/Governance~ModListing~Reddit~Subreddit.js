@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.2286ed1ee7a52506c5ac.js
-// Retrieved at 4/5/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.9aadf2a9657522d9484b.js
+// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, r) {
@@ -717,7 +717,7 @@
 				}) : l || (l = o.a.createElement(f.a, {
 					name: "community",
 					isFilled: !r,
-					className: Object(a.a)(e.className, I.a.defaultCommunityIcon, {
+					className: Object(a.a)(I.a.defaultCommunityIcon, e.className, {
 						[I.a.mNightmode]: r
 					}),
 					style: r ? {
@@ -1291,7 +1291,7 @@
 					}
 				}),
 				i = (e, t) => {
-					t && (Object(n.Ab)(e.postId), Object(n.Ib)(t)), e.impressionIdStr ? Object(n.Bb)(e.impressionIdStr) : e.impressionId && Object(n.Bb)(e.impressionId)
+					t && (Object(n.Bb)(e.postId), Object(n.Jb)(t)), e.impressionIdStr ? Object(n.Cb)(e.impressionIdStr) : e.impressionId && Object(n.Cb)(e.impressionId)
 				}
 		},
 		"./src/reddit/helpers/trackers/screenview.ts": function(e, t, r) {
@@ -2211,4 +2211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.2286ed1ee7a52506c5ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~Subreddit.9aadf2a9657522d9484b.js.map

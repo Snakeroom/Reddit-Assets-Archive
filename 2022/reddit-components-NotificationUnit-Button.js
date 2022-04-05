@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.9656a650eaebed1b4ea2.js
-// Retrieved at 3/29/2022, 7:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.f990b153b1ff59251989.js
+// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./node_modules/lodash/map.js": function(t, e, n) {
@@ -50,7 +50,7 @@
 			})), n.d(e, "j", (function() {
 				return Nt
 			})), n.d(e, "i", (function() {
-				return kt
+				return vt
 			})), n.d(e, "l", (function() {
 				return Pt
 			})), n.d(e, "s", (function() {
@@ -103,7 +103,7 @@
 						}
 					}).then(t => !t.ok || t.body.data.isValidComment)
 				},
-				v = async (t, e, n, o, s) => {
+				k = async (t, e, n, o, s) => {
 					const i = {
 						api_type: "json",
 						return_rtjson: !0,
@@ -140,7 +140,7 @@
 						error: t.error || Object(_.a)()
 					})
 				};
-			var k = n("./src/redditGQL/operations/UpdateCommentFollowState.json");
+			var v = n("./src/redditGQL/operations/UpdateCommentFollowState.json");
 			var P = n("./src/reddit/endpoints/post/index.tsx"),
 				w = n("./src/reddit/endpoints/post/convert.ts"),
 				D = n("./src/reddit/endpoints/publicAccessNetwork/index.ts"),
@@ -219,7 +219,7 @@
 					if (a ? (T = await Object(D.i)(j(), t, s, x), u(Object(m.a)({
 							streamId: t,
 							level: T.body.automuteLevel
-						}))) : T = await v(j(), t, s, x, I), T.ok) {
+						}))) : T = await k(j(), t, s, x, I), T.ok) {
 						let o;
 						o = T.body, u(nt({
 							...o,
@@ -294,7 +294,7 @@
 					}));
 					const O = f.user.account.displayText,
 						y = u.commentMode,
-						j = await v(s(), i, u, O, y);
+						j = await k(s(), i, u, O, y);
 					if (j.ok) e(ot({
 						...j.body,
 						parentCommentId: i,
@@ -525,7 +525,7 @@
 							error: m.error
 						}))
 					}
-				}, St = Object(s.a)($.A), At = Object(s.a)($.z), vt = Object(s.a)($.B), kt = (t, e) => async (n, o, s) => {
+				}, St = Object(s.a)($.A), At = Object(s.a)($.z), kt = Object(s.a)($.B), vt = (t, e) => async (n, o, s) => {
 					let {
 						apiContext: i
 					} = s;
@@ -550,7 +550,7 @@
 						...t,
 						error: t.error || Object(_.a)()
 					}))(i(), t);
-					a.ok ? n(vt({
+					a.ok ? n(kt({
 						id: t,
 						postId: e
 					})) : n(At({
@@ -588,7 +588,7 @@
 								expiresAt: Date.now() + 6048e5
 							};
 						if (n(Object(X.n)(c)), (await ((t, e) => Object(C.a)(t, {
-								...k,
+								...v,
 								variables: {
 									input: e
 								}
@@ -596,7 +596,7 @@
 								commentId: t,
 								followState: e
 							})).ok) {
-							Object(K.vb)(null !== (u = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
+							Object(K.wb)(null !== (u = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
 							const t = s ? o.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : o.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -686,7 +686,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: a
-					})), Object(c.rb)(r + 1)
+					})), Object(c.sb)(r + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(t, e, n) {
@@ -811,8 +811,8 @@
 				const S = Object(s.d)(),
 					A = Object(s.e)(h.d),
 					{
-						context: v,
-						deeplinkUrl: k,
+						context: k,
+						deeplinkUrl: v,
 						isFullWidth: P,
 						isUnread: w,
 						isInAppNotification: D,
@@ -825,16 +825,16 @@
 						isInboxCTAsV2SeePostEnabled: B,
 						isInboxCTAsV2ReplyEnabled: V
 					} = t,
-					H = null == v ? void 0 : v.messageType,
+					H = null == k ? void 0 : k.messageType,
 					J = H === y.a.CommentReply,
 					G = H === y.a.SubredditRecommendation,
 					q = H === y.a.LifecyclePostSuggestions,
-					Y = null === (e = null == v ? void 0 : v.post) || void 0 === e ? void 0 : e.permalink;
-				let Q = null === (n = null == v ? void 0 : v.comment) || void 0 === n ? void 0 : n.id,
-					z = (null === (o = null == v ? void 0 : v.post) || void 0 === o ? void 0 : o.id) || (null === (C = null === (j = null == v ? void 0 : v.comment) || void 0 === j ? void 0 : j.postInfo) || void 0 === C ? void 0 : C.id);
-				const X = null === (_ = null == v ? void 0 : v.subreddit) || void 0 === _ ? void 0 : _.id,
-					$ = null === (E = null === (R = null == v ? void 0 : v.awarding) || void 0 === R ? void 0 : R.award) || void 0 === E ? void 0 : E.id,
-					Z = null === (N = null === (g = null == v ? void 0 : v.awarding) || void 0 === g ? void 0 : g.awarder) || void 0 === N ? void 0 : N.id;
+					Y = null === (e = null == k ? void 0 : k.post) || void 0 === e ? void 0 : e.permalink;
+				let Q = null === (n = null == k ? void 0 : k.comment) || void 0 === n ? void 0 : n.id,
+					z = (null === (o = null == k ? void 0 : k.post) || void 0 === o ? void 0 : o.id) || (null === (C = null === (j = null == k ? void 0 : k.comment) || void 0 === j ? void 0 : j.postInfo) || void 0 === C ? void 0 : C.id);
+				const X = null === (_ = null == k ? void 0 : k.subreddit) || void 0 === _ ? void 0 : _.id,
+					$ = null === (E = null === (R = null == k ? void 0 : k.awarding) || void 0 === R ? void 0 : R.award) || void 0 === E ? void 0 : E.id,
+					Z = null === (N = null === (g = null == k ? void 0 : k.awarding) || void 0 === g ? void 0 : g.awarder) || void 0 === N ? void 0 : N.id;
 				if (H === y.a.CommentFollow || H === y.a.PostFollow) {
 					const t = (t => {
 						const e = {},
@@ -846,12 +846,12 @@
 						if (!o) return e;
 						const [r, s, i, c] = o.slice(1);
 						return s && "r" === r && (e.subredditName = s), i && (e.postId = `${u.b}${i}`), c && (e.commentId = `${u.a}${c}`), e
-					})(k);
+					})(v);
 					z = t.postId, Q = t.commentId
 				} else H !== y.a.PostReply && H !== y.a.LifecyclePostSuggestions || (Q = L);
 				const tt = t => {
 					if (z && Q) {
-						const t = Object(c.a)(z, Q, Object(f.c)(k)),
+						const t = Object(c.a)(z, Q, Object(f.c)(v)),
 							e = {
 								parentCommentId: Q,
 								commentsPageKey: t
@@ -885,7 +885,7 @@
 								});
 							return r.a.createElement(b.t, {
 								kind: V ? b.b.InternalLink : void 0,
-								to: k,
+								to: v,
 								onClick: n,
 								isFullWidth: P,
 								priority: b.c.Tertiary,
@@ -911,7 +911,7 @@
 							return !(K || U || W || J || t || A && D) || V && !t ? null : r.a.createElement(b.t, {
 								onClick: tt,
 								kind: b.b.InternalLink,
-								to: k,
+								to: v,
 								isFullWidth: P,
 								priority: b.c.Tertiary,
 								redditStyle: !0,
@@ -1342,4 +1342,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.9656a650eaebed1b4ea2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.f990b153b1ff59251989.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.d29820c4572f1ef72088.js
-// Retrieved at 3/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.53f74405db87efaac8c4.js
+// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -463,14 +463,14 @@
 				l = e => {
 					switch (e) {
 						case o.a.Denied:
-							r.mb(!1), Object(i.c)();
+							r.nb(!1), Object(i.c)();
 							break;
 						case o.a.Default:
 						case o.a.Granted:
-							r.mb(!0), Object(i.c)();
+							r.nb(!0), Object(i.c)();
 							break;
 						case o.a.Closed:
-							r.mb(!0)
+							r.nb(!0)
 					}
 				}
 		},
@@ -2064,7 +2064,7 @@
 			function a(e) {
 				const [t, n] = Object(i.useState)(Object(o.s)(e));
 				return [t, Object(i.useCallback)(() => {
-					n(!0), Object(o.nb)(e)
+					n(!0), Object(o.ob)(e)
 				}, [])]
 			}
 		},
@@ -2079,7 +2079,7 @@
 			function a(e) {
 				const [t, n] = Object(i.useState)(() => Object(o.u)(e));
 				return [t, Object(i.useCallback)(() => {
-					n(!0), Object(o.yb)(e)
+					n(!0), Object(o.zb)(e)
 				}, [e])]
 			}
 		},
@@ -2744,4 +2744,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.d29820c4572f1ef72088.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.53f74405db87efaac8c4.js.map
