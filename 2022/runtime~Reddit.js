@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.78677d9b0bf96e4ec9e5.js
-// Retrieved at 4/1/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.69a88c9f440cda09db78.js
+// Retrieved at 4/5/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1360,7 +1360,7 @@
 						"CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit": "6f518093839c5c1521ff",
 						ProfileComments: "91cf818f8f3f0d809b65",
 						ProfileOverview: "f6e534d0cac7b53d6d25",
-						SearchResults: "c0b498a478c7075e9ecd",
+						SearchResults: "236e68dd6fd820ee4043",
 						ModQueuePages: "59ec7a854d771962cf51",
 						GovernanceReleaseNotesModal: "edf0c275388a90d98432",
 						"CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar": "67e4693704526d94df37",
@@ -1480,7 +1480,7 @@
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
 						ModListing: "859206efcbaf909bf3cf",
-						Subreddit: "25d01245566c74ef2375",
+						Subreddit: "30dc677b00b3140ec40b",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "b1b748750a6395dcc18f",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "46c6a8215a9b2f347c1d",
 						PublicAccessNetwork: "5abe38e5a968d1f4ea14",
@@ -1517,7 +1517,7 @@
 						ReportFlowNew: "37cdc3d79c66a784690b",
 						ReredditLink: "ae7b075964969fba5124",
 						RichTextJsonEmoteTooltip: "e79e1792464b7bd12054",
-						SubredditMentionWithIcon: "50140b9e9a6be372bffb",
+						SubredditMentionWithIcon: "70d682aa31fb28c70a5f",
 						UserAchievementFlair: "b8dd04c12ca8adfa9d26",
 						UsersCountIndicator: "bd91bb4ddaf792552b85",
 						VideoShareModal: "ed820b0e9d33b5a2e054",
@@ -1705,4 +1705,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.78677d9b0bf96e4ec9e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.69a88c9f440cda09db78.js.map
