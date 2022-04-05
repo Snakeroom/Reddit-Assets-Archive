@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.73b099eca881875bd980.js
-// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.53b2ab3349d786773203.js
+// Retrieved at 4/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, r) {
@@ -304,10 +304,9 @@
 						caretPosition: o,
 						caretColor: a,
 						onClick: i,
-						hideCaret: c,
-						...l
+						hideCaret: c
 					} = e;
-					return n.a.createElement("div", x({
+					return n.a.createElement("div", {
 						onClick: i,
 						className: Object(d.a)(r, w.a.StyledTooltipContainer, {
 							[w.a.caretOnTop]: "top" === o,
@@ -320,7 +319,7 @@
 							...s,
 							"--contentTooltip-caretColor": a && a[o] ? a[o] : Object(p.a)(e).body
 						}
-					}, l), t)
+					}, t)
 				}),
 				g = Object(i.c)({
 					isOpen: (e, t) => {
@@ -554,4 +553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.73b099eca881875bd980.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.53b2ab3349d786773203.js.map

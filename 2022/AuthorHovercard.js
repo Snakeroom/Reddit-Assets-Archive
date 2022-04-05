@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.b78e20f3eb9faa9ae215.js
-// Retrieved at 4/5/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.5d94f40c4fa125b32954.js
+// Retrieved at 4/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -848,10 +848,9 @@
 						caretPosition: r,
 						caretColor: o,
 						onClick: i,
-						hideCaret: l,
-						...d
+						hideCaret: l
 					} = e;
-					return s.a.createElement("div", h({
+					return s.a.createElement("div", {
 						onClick: i,
 						className: Object(c.a)(n, f.a.StyledTooltipContainer, {
 							[f.a.caretOnTop]: "top" === r,
@@ -864,7 +863,7 @@
 							...a,
 							"--contentTooltip-caretColor": o && o[r] ? o[r] : Object(u.a)(e).body
 						}
-					}, d), t)
+					}, t)
 				}),
 				_ = Object(i.c)({
 					isOpen: (e, t) => {
@@ -2920,13 +2919,15 @@
 						const n = r.a.createElement("img", {
 							className: It.a.recentAwardOrTropyIcon,
 							src: e.icon,
-							title: e.name
+							title: e.name,
+							key: `${e.id}-icon`
 						});
-						return r.a.createElement(r.a.Fragment, null, e.url ? r.a.createElement("a", {
+						return e.url ? r.a.createElement("a", {
 							target: We.d.BLANK,
 							rel: We.c,
-							href: e.url
-						}, n) : n)
+							href: e.url,
+							key: e.id
+						}, n) : n
 					})), r.a.createElement("span", {
 						className: It.a.label
 					}, f.fbt._("Trophies", null, {
@@ -5158,4 +5159,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.b78e20f3eb9faa9ae215.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.5d94f40c4fa125b32954.js.map

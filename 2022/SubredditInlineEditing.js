@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.b7572d8c516a68ad572f.js
-// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditInlineEditing.757b9dafb05ab032546b.js
+// Retrieved at 4/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditInlineEditing"], {
 		"./src/reddit/components/CommunityTopics/NumTopicsSelected.tsx": function(e, t, s) {
@@ -604,10 +604,9 @@
 						caretPosition: o,
 						caretColor: r,
 						onClick: a,
-						hideCaret: c,
-						...l
+						hideCaret: c
 					} = e;
-					return i.a.createElement("div", b({
+					return i.a.createElement("div", {
 						onClick: a,
 						className: Object(d.a)(s, O.a.StyledTooltipContainer, {
 							[O.a.caretOnTop]: "top" === o,
@@ -620,7 +619,7 @@
 							...n,
 							"--contentTooltip-caretColor": r && r[o] ? r[o] : Object(h.a)(e).body
 						}
-					}, l), t)
+					}, t)
 				}),
 				T = Object(a.c)({
 					isOpen: (e, t) => {
@@ -1754,4 +1753,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.b7572d8c516a68ad572f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditInlineEditing.757b9dafb05ab032546b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.3b247b9a3fee67a0b387.js
-// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.37fc0bb756b8a8eccd20.js
+// Retrieved at 4/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4801,10 +4801,9 @@
 						caretPosition: r,
 						caretColor: a,
 						onClick: i,
-						hideCaret: d,
-						...l
+						hideCaret: d
 					} = e;
-					return s.a.createElement("div", f({
+					return s.a.createElement("div", {
 						onClick: i,
 						className: Object(c.a)(n, b.a.StyledTooltipContainer, {
 							[b.a.caretOnTop]: "top" === r,
@@ -4817,7 +4816,7 @@
 							...o,
 							"--contentTooltip-caretColor": a && a[r] ? a[r] : Object(m.a)(e).body
 						}
-					}, l), t)
+					}, t)
 				}),
 				v = Object(i.c)({
 					isOpen: (e, t) => {
@@ -26185,4 +26184,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3b247b9a3fee67a0b387.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.37fc0bb756b8a8eccd20.js.map

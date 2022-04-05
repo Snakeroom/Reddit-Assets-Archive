@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.c1ebc3d6dab957d45d03.js
-// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.f3f0da0c3de6f3a44cb6.js
+// Retrieved at 4/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./src/reddit/actions/eventPosts/index.ts": function(e, t, s) {
@@ -1186,10 +1186,9 @@
 						caretPosition: n,
 						caretColor: i,
 						onClick: a,
-						hideCaret: l,
-						...d
+						hideCaret: l
 					} = e;
-					return r.a.createElement("div", x({
+					return r.a.createElement("div", {
 						onClick: a,
 						className: Object(c.a)(s, h.a.StyledTooltipContainer, {
 							[h.a.caretOnTop]: "top" === n,
@@ -1202,7 +1201,7 @@
 							...o,
 							"--contentTooltip-caretColor": i && i[n] ? i[n] : Object(m.a)(e).body
 						}
-					}, d), t)
+					}, t)
 				}),
 				v = Object(a.c)({
 					isOpen: (e, t) => {
@@ -4951,4 +4950,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.c1ebc3d6dab957d45d03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.f3f0da0c3de6f3a44cb6.js.map
