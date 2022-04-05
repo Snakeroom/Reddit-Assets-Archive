@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.943dff8f33eb4ba76934.js
-// Retrieved at 4/5/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.7caff783795b4840bc40.js
+// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -334,9 +334,9 @@
 				x = n("./src/reddit/constants/experiments.ts"),
 				v = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const O = e => Object(v.c)(e, {
-				experimentName: x.Kb,
+				experimentName: x.Lb,
 				experimentEligibilitySelector: v.a
-			}) === x.ed;
+			}) === x.fd;
 			var N = n("./src/reddit/selectors/meta.ts"),
 				k = n("./src/reddit/selectors/user.ts");
 			let C = !1;
@@ -2680,24 +2680,24 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const a = e => Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: i.ob
-				}) === i.ld.Karma,
+					experimentName: i.pb
+				}) === i.md.Karma,
 				s = e => Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: i.ob
-				}) === i.ld.Memes,
+					experimentName: i.pb
+				}) === i.md.Memes,
 				r = e => Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: i.ob
-				}) === i.ld.PnEmail,
+					experimentName: i.pb
+				}) === i.md.PnEmail,
 				c = e => Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: i.ob
-				}) === i.ld.Cats,
+					experimentName: i.pb
+				}) === i.md.Cats,
 				l = e => Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: i.ob
-				}) === i.ld.Popular,
+					experimentName: i.pb
+				}) === i.md.Popular,
 				d = e => l(e) || c(e) || r(e) || s(e) || a(e)
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, n) {
@@ -2744,4 +2744,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.943dff8f33eb4ba76934.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.7caff783795b4840bc40.js.map

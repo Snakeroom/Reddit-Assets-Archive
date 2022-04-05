@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.863f5eec19a62e26c81d.js
-// Retrieved at 4/5/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.3ae8f20c7ab28d4df229.js
+// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3803,7 +3803,7 @@
 					let {
 						apiContext: o
 					} = n;
-					await e(r.e());
+					await e(r.f());
 					const {
 						api: l,
 						ids: u
@@ -5674,8 +5674,8 @@
 					const n = t ? `/r/${t}/search` : "/search",
 						o = `${t?"flair_name":"flair"}:"${e}"`;
 					return Object(l.a)(n, {
-						[E.q]: o,
-						[E.t]: t ? "1" : ""
+						[E.r]: o,
+						[E.u]: t ? "1" : ""
 					})
 				},
 				A = e => e.isFlairFilter ? c.a.createElement(_.a, {
@@ -11916,7 +11916,7 @@
 				} = t;
 				return {
 					onSubscribe: () => e(s.d([n], !0)),
-					onSubscriptionsRequested: () => e(s.e()),
+					onSubscriptionsRequested: () => e(s.f()),
 					onUnsubscribe: () => e(s.d([n], !1))
 				}
 			})
@@ -14374,7 +14374,7 @@
 					}
 				})),
 				$ = {
-					onGetInitialData: e => t => t(e ? h.d() : b.e()),
+					onGetInitialData: e => t => t(e ? h.d() : b.f()),
 					onGetSubredditAutocomplete: p.a,
 					openCommunityCreation: () => async (e, t) => {
 						Object(K.c)(t()), e(Object(m.h)(f.a.SUBREDDIT_CREATION_MODAL_ID))
@@ -25614,14 +25614,14 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-					experimentName: o.Vd,
-					experimentEligibilitySelector: r.a
-				}) === o.fe.Enabled,
-				a = e => Object(r.c)(e, {
 					experimentName: o.Wd,
+					experimentEligibilitySelector: r.a
+				}) === o.ge.Enabled,
+				a = e => Object(r.c)(e, {
+					experimentName: o.Xd,
 					experimentEligibilitySelector: r.a,
 					expEventOverride: !1
-				}) === o.ge.Enabled
+				}) === o.he.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -25633,8 +25633,8 @@
 			const s = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.se
-				}) === o.ed
+					experimentName: o.te
+				}) === o.fd
 			}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
@@ -25656,29 +25656,29 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.uf
-					}) === o.ed
+						experimentName: o.vf
+					}) === o.fd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.vf
-					}) === o.ed
+						experimentName: o.wf
+					}) === o.fd
 				},
 				d = e => {
 					if (Object(a.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.tf
+						experimentName: o.uf
 					});
-					return t === o.mf.TypingIndicators || t === o.mf.IndicatorsPlusCTA
+					return t === o.nf.TypingIndicators || t === o.nf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(a.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.tf
+						experimentName: o.uf
 					});
-					return (null == t ? void 0 : t.variant) === o.mf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.nf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -26184,4 +26184,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.863f5eec19a62e26c81d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3ae8f20c7ab28d4df229.js.map

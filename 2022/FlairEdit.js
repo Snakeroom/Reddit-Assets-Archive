@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FlairEdit.300df976e1d5072e0510.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FlairEdit.4a75ada146aad0e92c11.js
+// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FlairEdit"], {
 		"./node_modules/draft-js/dist/Draft.css": function(e, t, o) {},
@@ -16,15 +16,6 @@
 				i = o("./node_modules/lodash/toNumber.js");
 			e.exports = function(e, t, o) {
 				return t = s(t), void 0 === o ? (o = t, t = 0) : o = s(o), e = i(e), n(e, t, o)
-			}
-		},
-		"./node_modules/lodash/map.js": function(e, t, o) {
-			var n = o("./node_modules/lodash/_arrayMap.js"),
-				s = o("./node_modules/lodash/_baseIteratee.js"),
-				i = o("./node_modules/lodash/_baseMap.js"),
-				r = o("./node_modules/lodash/isArray.js");
-			e.exports = function(e, t) {
-				return (r(e) ? n : i)(e, s(t, 3))
 			}
 		},
 		"./node_modules/lodash/times.js": function(e, t, o) {
@@ -82,7 +73,7 @@
 			})), o.d(t, "c", (function() {
 				return _
 			})), o.d(t, "h", (function() {
-				return w
+				return v
 			})), o.d(t, "g", (function() {
 				return D
 			})), o.d(t, "f", (function() {
@@ -146,8 +137,8 @@
 				f = o("./src/reddit/helpers/getGenericUploadError.ts"),
 				j = o("./src/reddit/helpers/getS3KeyFromUrl/index.ts"),
 				g = o("./src/reddit/helpers/media/index.ts"),
-				b = o("./src/reddit/models/Emoji/index.ts"),
-				E = o("./src/reddit/models/Image/index.tsx"),
+				E = o("./src/reddit/models/Emoji/index.ts"),
+				b = o("./src/reddit/models/Image/index.tsx"),
 				x = o("./src/reddit/models/Toast/index.ts"),
 				O = o("./src/reddit/selectors/emojis.ts"),
 				y = o("./src/reddit/selectors/subreddit.ts");
@@ -156,11 +147,11 @@
 				T = "STRUCTURED_STYLES__EMOJI_DELETE_LOADED",
 				_ = "STRUCTURED_STYLES__EMOJI_DELETE_FAILED",
 				C = Object(m.a)(T),
-				v = Object(m.a)(_),
-				w = "GET_ALL_EMOJIS_PENDING",
+				w = Object(m.a)(_),
+				v = "GET_ALL_EMOJIS_PENDING",
 				D = "GET_ALL_EMOJIS_LOADED",
 				k = "GET_ALL_EMOJIS_FAILED",
-				P = Object(m.a)(w),
+				P = Object(m.a)(v),
 				N = Object(m.a)(D),
 				R = Object(m.a)(k),
 				F = "STRUCTURED_STYLES__EMOJIS_ENABLED_SETTING_LOADED",
@@ -199,17 +190,17 @@
 						if (f.ok) {
 							const o = await (async (e, t, o) => Object(l.a)(o, t))(s.apiContext(), f.body.s3UploadLease, m);
 							if (o.ok) {
-								if (!n().imageUploads[t.id]) return Object(E.d)(t), !1;
+								if (!n().imageUploads[t.id]) return Object(b.d)(t), !1;
 								const s = decodeURIComponent(o.body.PostResponse.Location),
 									i = f.body.websocketUrl,
-									r = Object(E.n)(t, s, i);
+									r = Object(b.n)(t, s, i);
 								e(Object(u.j)(r)), j = !0
 							} else {
-								const n = Object(E.k)(t, o.error);
+								const n = Object(b.k)(t, o.error);
 								e(Object(u.i)(n))
 							}
 						} else {
-							const o = Object(E.k)(t, f.error);
+							const o = Object(b.k)(t, f.error);
 							e(Object(u.i)(o))
 						}
 						return j
@@ -221,7 +212,7 @@
 						subredditId: l,
 						emojiName: p,
 						settings: m
-					} = e, f = Object(j.a)(i.url), g = n(), b = Object(y.S)(g, {
+					} = e, f = Object(j.a)(i.url), g = n(), E = Object(y.S)(g, {
 						subredditId: l
 					}).name, x = await (async (e, t, o, n, s) => Object(a.a)(Object(c.a)(e, [d.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/emoji.json`,
@@ -233,9 +224,9 @@
 							post_flair_allowed: s.postFlairAllowed,
 							user_flair_allowed: s.userFlairAllowed
 						}
-					}))(s.apiContext(), b, f, p, m);
+					}))(s.apiContext(), E, f, p, m);
 					if (!x.ok) {
-						const n = Object(E.k)(i, x.error);
+						const n = Object(b.k)(i, x.error);
 						o(Object(u.i)(n)), o(Object(h.f)(M(e))), t && t.close()
 					}
 					return x.ok
@@ -258,20 +249,20 @@
 						if ("success" === n.type) {
 							c = !0;
 							const e = n.payload.emoji_url,
-								o = Object(E.o)(s, e);
+								o = Object(b.o)(s, e);
 							t(Object(u.l)(o));
-							const l = Object(b.e)(r, o.url, i, a);
+							const l = Object(E.e)(r, o.url, i, a);
 							t(S(l)), t(K(i))
 						} else {
 							const o = Object(f.a)(r),
-								n = Object(E.k)(s, o);
+								n = Object(b.k)(s, o);
 							t(Object(u.i)(n)), t(Object(h.f)(M(e)))
 						}
 						l.close()
 					}, l.onerror = o => {
 						c = !1;
 						const n = Object(f.a)(r),
-							i = Object(E.k)(s, n);
+							i = Object(b.k)(s, n);
 						t(Object(u.i)(i)), t(Object(h.f)(M(e))), l.close()
 					}, c
 				}, K = e => async (t, o, n) => {
@@ -323,7 +314,7 @@
 								hk: "1zMXEe"
 							})
 						}))
-					} else o(v(u.error)), o(h.f({
+					} else o(w(u.error)), o(h.f({
 						kind: x.b.Error,
 						text: n.fbt._("Something went wrong", null, {
 							hk: "22u7ha"
@@ -447,8 +438,8 @@
 				f = o("./src/reddit/actions/emoji.ts"),
 				j = o("./src/reddit/actions/tooltip.ts"),
 				g = o("./src/reddit/constants/elementClassNames.ts"),
-				b = o("./src/reddit/constants/flair.ts"),
-				E = o("./src/reddit/controls/Dropdown/index.tsx"),
+				E = o("./src/reddit/constants/flair.ts"),
+				b = o("./src/reddit/controls/Dropdown/index.tsx"),
 				x = o("./src/reddit/constants/keycodes.ts"),
 				O = o("./src/reddit/selectors/emojis.ts"),
 				y = o("./src/reddit/controls/EmojiPicker/EmojiGrid/EmojiItem/index.m.less"),
@@ -500,8 +491,8 @@
 					onClick: e.onEmojiSelect
 				}))))
 			}
-			var v = o("./src/reddit/controls/Button/index.tsx"),
-				w = o("./src/reddit/layout/row/Inline/index.tsx"),
+			var w = o("./src/reddit/controls/Button/index.tsx"),
+				v = o("./src/reddit/layout/row/Inline/index.tsx"),
 				D = o("./src/reddit/controls/EmojiPicker/Footer/index.m.less"),
 				k = o.n(D);
 
@@ -512,14 +503,14 @@
 				} = e;
 				return a.a.createElement("div", {
 					className: Object(p.a)(k.a.footer, t)
-				}, o && a.a.createElement(w.a, {
+				}, o && a.a.createElement(v.a, {
 					className: k.a.emojiInfo
 				}, a.a.createElement("img", {
 					className: k.a.emojiPreview,
 					src: o.url
 				}), a.a.createElement("span", {
 					className: k.a.emojiLabel
-				}, Object(m.b)(o.name))), a.a.createElement(v.r, {
+				}, Object(m.b)(o.name))), a.a.createElement(w.r, {
 					className: k.a.cancelButton,
 					onClick: e.onCancelClick
 				}, h.fbt._("Cancel", null, {
@@ -685,7 +676,7 @@
 						onMouseDown: this.handleMouseDown,
 						onClick: this.handleClick,
 						onMouseOver: this.handleMouseOver
-					}, a.a.createElement(w.a, null, a.a.createElement(X.a, {
+					}, a.a.createElement(v.a, null, a.a.createElement(X.a, {
 						className: ee.a.emojiImageDisplay,
 						backgroundImage: e.url
 					}), a.a.createElement("div", {
@@ -799,14 +790,14 @@
 				let s, i;
 				for (; null !== (s = e.exec(n));) o(i = s.index, i + s[0].length)
 			};
-			var be = {
+			var Ee = {
 					strategy: function(e, t, o) {
 						ge(Q, e, t)
 					},
 					component: e => a.a.createElement("span", null, e.children)
 				},
-				Ee = o("./src/reddit/controls/RichTextInput/imageDecoratorStyles.m.less"),
-				xe = o.n(Ee);
+				be = o("./src/reddit/controls/RichTextInput/imageDecoratorStyles.m.less"),
+				xe = o.n(be);
 			var Oe = {
 					strategy: function(e, t, o) {
 						e.getCharacterList().forEach((e, n) => {
@@ -837,7 +828,7 @@
 			function(e) {
 				e.InlineImage = "InlineImage"
 			}(Se || (Se = {}));
-			const Te = () => new n.CompositeDecorator([be, Oe]),
+			const Te = () => new n.CompositeDecorator([Ee, Oe]),
 				_e = (e, t) => {
 					return e.createEntity(Se.InlineImage, "MUTABLE", {
 						url: t.url,
@@ -849,7 +840,7 @@
 						r = "";
 					return o.type === Ie.Image ? (s = (i = _e(i, o)).getLastCreatedEntityKey(), r = " ") : (s = void 0, r = o.text), n.Modifier.replaceText(i, t, r, void 0, s)
 				},
-				ve = (e, t) => {
+				we = (e, t) => {
 					const o = e.getSelection(),
 						s = o.merge({
 							focusOffset: o.getAnchorOffset()
@@ -857,7 +848,7 @@
 						i = Ce(e.getCurrentContent(), s, t);
 					return n.EditorState.push(e, i, "insert-characters")
 				},
-				we = Object(me.a)(e => {
+				ve = Object(me.a)(e => {
 					const t = e.getSelection(),
 						o = t.getStartOffset();
 					if (!t.isCollapsed()) return;
@@ -872,7 +863,7 @@
 					} : void 0
 				}),
 				De = (e, t) => {
-					const o = we(e);
+					const o = ve(e);
 					if (!o) return;
 					let s = e.getCurrentContent();
 					const i = s.getPlainText().charAt(o.endIndex),
@@ -918,7 +909,7 @@
 						const s = ke(t, e);
 						return s ? (this.onChange(s), Pe) : Ne
 					}, this.checkEditorStateForEmojis = e => {
-						const t = we(e);
+						const t = ve(e);
 						this.setState({
 							emojiString: t ? t.emojiString : "",
 							suppressEmojiDropdown: !!t && this.state.suppressEmojiDropdown
@@ -962,7 +953,7 @@
 					if (this.props.editorState.getSelection().getHasFocus() && !this.state.suppressEmojiDropdown && this.state.emojiString) {
 						const {
 							offsetKey: e
-						} = we(this.props.editorState), t = this.containerRef.querySelector(`[data-offset-key="${e}"]`), {
+						} = ve(this.props.editorState), t = this.containerRef.querySelector(`[data-offset-key="${e}"]`), {
 							left: o,
 							bottom: n
 						} = t.getBoundingClientRect();
@@ -1153,7 +1144,7 @@
 					}
 				},
 				$e = (e, t) => i()(Ye(e), Ye(t)),
-				Qe = Object(d.a)(u.a.wrapped(E.a, "Component", We.a)),
+				Qe = Object(d.a)(u.a.wrapped(b.a, "Component", We.a)),
 				Xe = e => {
 					e.stopPropagation(), e.nativeEvent.stopImmediatePropagation()
 				},
@@ -1201,14 +1192,14 @@
 							id: Object(m.b)(e.name),
 							url: e.url
 						};
-						let o = ve(this.state.editorState, t);
+						let o = we(this.state.editorState, t);
 						o = n.EditorState.forceSelection(o, o.getSelection()), this.setEditorState(o), this.onToggleEmojiPicker()
 					}, this.shouldEnableEmojis = () => {
 						const {
 							flair: e,
 							flairTemplate: t
 						} = this.props;
-						return !(!this.props.areEmojisEnabledInSubreddit || Object(Ae.i)(e) >= b.g || t && !Object(Ae.a)(t)) && (e ? Object(Ae.h)(e) : 0) < (t ? Object(Ae.l)(t) : b.d)
+						return !(!this.props.areEmojisEnabledInSubreddit || Object(Ae.i)(e) >= E.g || t && !Object(Ae.a)(t)) && (e ? Object(Ae.h)(e) : 0) < (t ? Object(Ae.l)(t) : E.d)
 					}, this.onBlur = () => {
 						this.props.onBlur && this.props.onBlur()
 					}, this.state = {
@@ -1231,7 +1222,7 @@
 					$e(o, t) || this.setEditorState(qe(t))
 				}
 				renderCompactHelperText(e) {
-					const t = this.props.flairTemplate || b.a;
+					const t = this.props.flairTemplate || E.a;
 					return a.a.createElement("div", {
 						className: Object(p.a)(We.a.HelperText, this.props.helperTextClass, e ? We.a.hasError : null)
 					}, e || Object(Ae.k)(t))
@@ -1239,7 +1230,7 @@
 				renderHelperText(e) {
 					const {
 						flair: t
-					} = this.props, o = Object(Ae.i)(t), n = o > b.g, s = b.g - o, i = h.fbt._({
+					} = this.props, o = Object(Ae.i)(t), n = o > E.g, s = E.g - o, i = h.fbt._({
 						"*": "{number} characters remaining",
 						_1: "1 character remaining"
 					}, [h.fbt._plural(s, "number")], {
@@ -1262,7 +1253,7 @@
 						container: t,
 						emojiPickerId: o,
 						flair: n,
-						flairTemplate: s = b.a,
+						flairTemplate: s = E.a,
 						flairTemplateType: i,
 						isCompact: r,
 						isEmojiPickerOpen: c,
@@ -1283,7 +1274,7 @@
 						flairTemplateType: i,
 						emojisEnabled: m,
 						isFlairModOnly: l,
-						maxLength: b.g,
+						maxLength: E.g,
 						onChange: this.setEditorState,
 						subredditId: d,
 						onBlur: this.onBlur,
@@ -1368,7 +1359,7 @@
 						}
 					}, e.text, e.children)
 				},
-				b = Object(r.c)({
+				E = Object(r.c)({
 					isOpen: (e, t) => {
 						let {
 							tooltipId: o
@@ -1376,14 +1367,14 @@
 						return Object(l.b)(o)(e)
 					}
 				}),
-				E = Object(c.a)(g, [a.a.Click, a.a.Keydown]),
+				b = Object(c.a)(g, [a.a.Click, a.a.Keydown]),
 				x = Object(c.a)(j, [a.a.Click, a.a.Keydown]),
-				O = Object(i.b)(b);
+				O = Object(i.b)(E);
 			t.c = O(e => {
 				const {
 					caretOnTop: t
 				} = e;
-				return t ? s.a.createElement(E, u({}, e, {
+				return t ? s.a.createElement(b, u({}, e, {
 					targetPosition: ["center", "bottom"],
 					tooltipPosition: ["center", "top"]
 				})) : s.a.createElement(x, u({}, e, {
@@ -1893,4 +1884,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.300df976e1d5072e0510.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FlairEdit.4a75ada146aad0e92c11.js.map

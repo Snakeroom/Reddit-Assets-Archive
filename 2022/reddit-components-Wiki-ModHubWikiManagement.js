@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.461039196a7e0a55a08c.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.ef59e0da4be16b6b9eb2.js
+// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -287,8 +287,8 @@
 				V = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
 				q = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				Z = n("./src/reddit/models/SubredditModeration/index.ts"),
-				Y = n("./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx"),
-				K = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx"),
+				K = n("./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx"),
+				Y = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx"),
 				z = n("./src/reddit/components/Wiki/ModHubWikiManagement/WikiBannedContributors/index.m.less"),
 				G = n.n(z);
 			const J = 300,
@@ -366,7 +366,7 @@
 						value: this.state.username
 					})), s.a.createElement(F.h, null, s.a.createElement(F.k, null, v.fbt._("Reason for ban", null, {
 						hk: "1e9gZn"
-					})), s.a.createElement(K.a, {
+					})), s.a.createElement(Y.a, {
 						onSelectReason: this.onSelectReason,
 						reason: t.banReason,
 						subredditId: e.subredditId
@@ -381,7 +381,7 @@
 					}), s.a.createElement(H.a, {
 						maxChars: J,
 						text: t.note
-					})), s.a.createElement(Y.a, {
+					})), s.a.createElement(K.a, {
 						duration: t.duration,
 						isDurationPermanent: t.isDurationPermanent,
 						onChangeDuration: this.onChangeBanDuration,
@@ -1042,7 +1042,7 @@
 				Ze = () => {
 					document.body.scrollTop = 0, document.documentElement.scrollTop = 0
 				};
-			class Ye extends s.a.Component {
+			class Ke extends s.a.Component {
 				scrollToTopIfNeeded() {
 					location.hash || Ze()
 				}
@@ -1065,7 +1065,7 @@
 						wikiSubRoute: u,
 						wikiPageName: b,
 						pageName: p
-					} = n, g = i[l.G], k = i[l.H], C = l.I in i;
+					} = n, g = i[l.I], k = i[l.J], C = l.K in i;
 					switch (u) {
 						case c.m.Create:
 						case c.m.Edit:
@@ -1114,7 +1114,7 @@
 					}
 				}
 			}
-			t.default = qe(Ye)
+			t.default = qe(Ke)
 		},
 		"./src/reddit/helpers/trackers/subredditWiki.ts": function(e, t, n) {
 			"use strict";
@@ -1223,4 +1223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.461039196a7e0a55a08c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.ef59e0da4be16b6b9eb2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.c2dbaccb948c33535e39.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.c8d8c6d1835266037ece.js
+// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -95,7 +95,7 @@
 					if (!R || !w) return;
 					b.d.addListeners(b.b, () => A(!0)), b.d.addListeners(b.a, () => A(!1))
 				}, [R, w]);
-				const [B, M] = Object(o.useState)(!1), k = Object(o.useRef)(), J = Object(o.useRef)(), W = Object(o.useRef)(2), L = Object(o.useMemo)(() => ({
+				const [B, M] = Object(o.useState)(!1), k = Object(o.useRef)(), J = Object(o.useRef)(), W = Object(o.useRef)(2), z = Object(o.useMemo)(() => ({
 					input: {
 						channel: {
 							teamOwner: "CONTENT_AND_COMMUNITIES",
@@ -107,12 +107,12 @@
 				Object(o.useEffect)(() => () => {
 					T.current && clearTimeout(T.current)
 				}, []);
-				const K = Object(c.d)(),
-					z = Object(o.useCallback)(() => {
+				const L = Object(c.d)(),
+					K = Object(o.useCallback)(() => {
 						if (!R) return;
 						M(!1), k.current && (clearTimeout(k.current), k.current = null), J.current && (J.current = null), W.current = 2, (() => {
 							const e = new URLSearchParams(location.search);
-							e.get(j.y) !== I.u.NEW && (e.set(j.y, I.u.NEW), K(Object(i.b)(Object(r.c)({
+							e.get(j.z) !== I.u.NEW && (e.set(j.z, I.u.NEW), L(Object(i.b)(Object(r.c)({
 								pathname: location.pathname,
 								search: e.toString()
 							}, {
@@ -122,9 +122,9 @@
 								hasSortParam: !0,
 								sort: I.u.NEW
 							});
-							K(Object(d.commentsPageRemoveLoadedFull)({
+							L(Object(d.commentsPageRemoveLoadedFull)({
 								key: n
-							})), K(Object(d.commentsPageDataRequested)(s, t, {
+							})), L(Object(d.commentsPageDataRequested)(s, t, {
 								hasSortParam: !0,
 								sort: I.u.NEW
 							}, I.u.NEW))
@@ -152,7 +152,7 @@
 					})
 				}, []);
 				return D ? a.a.createElement(a.a.Fragment, null, a.a.createElement(l.a, {
-					variables: L,
+					variables: z,
 					onData: q,
 					queryKey: "topLevelCommentCountChange"
 				}), a.a.createElement("div", {
@@ -167,7 +167,7 @@
 					className: Object(C.a)(x.a.pillButton, {
 						[x.a.isNightMode]: y
 					}),
-					onClick: z,
+					onClick: K,
 					variant: m.b.BUTTON
 				}, a.a.createElement(p.a, {
 					iconsKey: s,
@@ -569,4 +569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.c2dbaccb948c33535e39.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.c8d8c6d1835266037ece.js.map

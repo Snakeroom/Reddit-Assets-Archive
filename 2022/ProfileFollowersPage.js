@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.97d2196ccc3e84377d5a.js
-// Retrieved at 4/5/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.dc910153a5b159276ec1.js
+// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, n) {
@@ -799,7 +799,7 @@
 					const b = f.e[Object(g.R)(n(), {})],
 						x = p.toLowerCase(),
 						I = {
-							...s()(e.queryParams, v.m),
+							...s()(e.queryParams, v.n),
 							sort: u,
 							layout: b,
 							t: m
@@ -4798,7 +4798,7 @@
 					const n = t.widget.id || void 0;
 					return {
 						onSubscribe: () => e(m.d([t.identifier], !0, n)),
-						onSubscriptionsRequested: () => e(m.e()),
+						onSubscriptionsRequested: () => e(m.f()),
 						onUnsubscribe: () => e(m.d([t.identifier], !1, n))
 					}
 				})(n("./src/reddit/components/SubscribeButton/Base.tsx").a),
@@ -6328,8 +6328,8 @@
 				}) === r.w.Enabled,
 				o = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Ec
-				}) === r.ed
+					experimentName: r.Fc
+				}) === r.fd
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, n) {
 			"use strict";
@@ -6380,4 +6380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.97d2196ccc3e84377d5a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.dc910153a5b159276ec1.js.map

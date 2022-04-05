@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.165e20dca4681d7eb2a3.js
-// Retrieved at 4/5/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.d0c2040f11f1e67c01aa.js
+// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -281,14 +281,6 @@
 				var c = a(e) ? o : i,
 					d = arguments.length < 3;
 				return c(e, r(t, 4), n, d, s)
-			}
-		},
-		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
-			var o = n("./node_modules/lodash/toString.js"),
-				s = 0;
-			e.exports = function(e) {
-				var t = ++s;
-				return o(e) + t
 			}
 		},
 		"./node_modules/react-popper/lib/esm/usePopper.js": function(e, t, n) {
@@ -3196,13 +3188,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: s.we,
+					experimentName: s.xe,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === s.Ee.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === s.Fe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(o.a)(i.G, a, (e, t) => c(e, t));
 			Object(o.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.165e20dca4681d7eb2a3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.d0c2040f11f1e67c01aa.js.map

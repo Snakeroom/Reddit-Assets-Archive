@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.8c67c9e8c16e455fc952.js
-// Retrieved at 4/5/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.489832d095ee79bba588.js
+// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -349,11 +349,11 @@
 					A = j("p24Bank", E),
 					M = j("epsBank", E),
 					R = j("payment", E),
-					G = j("paymentRequestButton", E),
-					F = j("linkAuthentication", E),
+					F = j("paymentRequestButton", E),
+					G = j("linkAuthentication", E),
 					B = j("shippingAddress", E),
 					D = j("afterpayClearpayMessage", E);
-				e.AfterpayClearpayMessageElement = D, e.AuBankAccountElement = x, e.CardCvcElement = S, e.CardElement = w, e.CardExpiryElement = k, e.CardNumberElement = _, e.Elements = g, e.ElementsConsumer = P, e.EpsBankElement = M, e.FpxBankElement = N, e.IbanElement = I, e.IdealBankElement = T, e.LinkAuthenticationElement = F, e.P24BankElement = A, e.PaymentElement = R, e.PaymentRequestButtonElement = G, e.ShippingAddressElement = B, e.useElements = function() {
+				e.AfterpayClearpayMessageElement = D, e.AuBankAccountElement = x, e.CardCvcElement = S, e.CardElement = w, e.CardExpiryElement = k, e.CardNumberElement = _, e.Elements = g, e.ElementsConsumer = P, e.EpsBankElement = M, e.FpxBankElement = N, e.IbanElement = I, e.IdealBankElement = T, e.LinkAuthenticationElement = G, e.P24BankElement = A, e.PaymentElement = R, e.PaymentRequestButtonElement = F, e.ShippingAddressElement = B, e.useElements = function() {
 					return v("calls useElements()").elements
 				}, e.useStripe = function() {
 					return v("calls useStripe()").stripe
@@ -564,7 +564,7 @@
 			})), r.d(t, "c", (function() {
 				return I
 			})), r.d(t, "a", (function() {
-				return G
+				return F
 			})), r.d(t, "i", (function() {
 				return B
 			})), r.d(t, "f", (function() {
@@ -799,7 +799,7 @@
 						duration: l.a,
 						text: e
 					}))
-				}, G = (e, t, r) => async (a, o, c) => {
+				}, F = (e, t, r) => async (a, o, c) => {
 					let {
 						gqlContext: s
 					} = c;
@@ -827,8 +827,8 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, F = Object(m.a)(b.S), B = e => async (t, r) => {
-					t(F(e)), t(Object(v.m)(e.subredditId, {
+				}, G = Object(m.a)(b.S), B = e => async (t, r) => {
+					t(G(e)), t(Object(v.m)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(P.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(P.h)(d.a.ECON_POWERUPS_SUCCESS))
@@ -1458,8 +1458,8 @@
 						}) : null
 					}))
 				},
-				G = r("./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js"),
-				F = r("./src/lib/currency/currencies.ts"),
+				F = r("./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js"),
+				G = r("./src/lib/currency/currencies.ts"),
 				B = r("./src/lib/localizeCurrency/index.ts"),
 				D = r("./src/reddit/actions/gold/productOfferPurchase.ts"),
 				L = r("./src/reddit/components/Econ/ProductOfferPurchaseButton/Paypal.tsx"),
@@ -1502,7 +1502,7 @@
 					c = Object(o.e)(P.k),
 					s = Object(B.b)(e.total, {
 						locale: r,
-						type: F.b.Real
+						type: G.b.Real
 					}),
 					i = Object(o.e)(e => Object(O.f)(e, {
 						provider: V.b.Stripe
@@ -1523,7 +1523,7 @@
 					p = e.selectedPayment === l.Hb,
 					f = e.selectedPayment === l.Gb,
 					b = p ? L.a : U.a;
-				return a.a.createElement(G.Elements, {
+				return a.a.createElement(F.Elements, {
 					stripe: t
 				}, a.a.createElement(a.a.Fragment, null, a.a.createElement(Y, {
 					onCloseClick: e.onCloseModal,
@@ -1537,7 +1537,7 @@
 					onPaymentSelected: e.onPaymentSelected
 				}), f && a.a.createElement("div", {
 					className: M.a.creditCard
-				}, a.a.createElement(G.ElementsConsumer, null, t => {
+				}, a.a.createElement(F.ElementsConsumer, null, t => {
 					let {
 						stripe: r
 					} = t;
@@ -2717,9 +2717,9 @@
 			})), r.d(t, "clickGetPremiumEvent", (function() {
 				return R
 			})), r.d(t, "clickAddCoinsButtonEvent", (function() {
-				return G
-			})), r.d(t, "clickNextButtonEvent", (function() {
 				return F
+			})), r.d(t, "clickNextButtonEvent", (function() {
+				return G
 			})), r.d(t, "clickCloseGildModalEvent", (function() {
 				return B
 			})), r.d(t, "viewKarmaSuccessEvent", (function() {
@@ -2878,13 +2878,13 @@
 						...l(t)
 					}
 				}),
-				G = e => t => ({
+				F = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "add_coins"
 				}),
-				F = e => t => ({
+				G = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
@@ -3171,7 +3171,7 @@
 				p = r("./node_modules/react-redux/es/index.js"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				b = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const y = Object(b.a)(f.Gc);
+			const y = Object(b.a)(f.Hc);
 			let h = null;
 
 			function g() {
@@ -3412,4 +3412,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.8c67c9e8c16e455fc952.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.489832d095ee79bba588.js.map

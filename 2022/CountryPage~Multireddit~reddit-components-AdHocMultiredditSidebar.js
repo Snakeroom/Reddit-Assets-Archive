@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.67e4693704526d94df37.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.0f7e7596b889fd2a7edd.js
+// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -344,12 +344,12 @@
 							queryParams: y
 						} = c,
 						O = Object(l.a)(x, b, y),
-						g = p.C in y && y[p.C].toUpperCase() || "",
+						g = p.E in y && y[p.E].toUpperCase() || "",
 						S = o.hc[g] || !1,
 						j = Object(T.k)(s);
 					(f || j && j.displayText) && await e(Object(m.multiredditFeedRequested)(O, (f || j.displayText).toLowerCase(), h.toLowerCase(), {
+						...n()(y, p.n),
 						...n()(y, p.m),
-						...n()(y, p.l),
 						sort: b,
 						t: Object(F.a)(b, S)
 					}))
@@ -748,14 +748,14 @@
 						g = h.listings.postOrder.ids[y],
 						E = h.listings.postOrder.api.error[y],
 						C = h.listings.postOrder.api.pending[y],
-						k = p.C in e.queryParams && e.queryParams[p.C].toUpperCase() || "",
+						k = p.E in e.queryParams && e.queryParams[p.E].toUpperCase() || "",
 						P = k in l.hc && l.hc[k];
 					if (C || g && !E && !t) return void(g && (i(u.m({
 						title: Object(j.f)(r(), m)
 					})), h.sidebarPromotedPosts.firstFetch || i(Object(v.b)(I.a.MULTIREDDIT))));
 					await i(T(y, a, s, {
+						...n()(e.queryParams, p.n),
 						...n()(e.queryParams, p.m),
-						...n()(e.queryParams, p.l),
 						sort: c,
 						t: Object(x.a)(c, P)
 					}, !0));
@@ -2570,4 +2570,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.67e4693704526d94df37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.0f7e7596b889fd2a7edd.js.map

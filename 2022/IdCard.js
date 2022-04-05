@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.956ef7279152170cb751.js
-// Retrieved at 4/5/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.bbf24cd32d92ae749013.js
+// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1650,8 +1650,8 @@
 					const n = t ? `/r/${t}/search` : "/search",
 						r = `${t?"flair_name":"flair"}:"${e}"`;
 					return Object(l.a)(n, {
-						[y.q]: r,
-						[y.t]: t ? "1" : ""
+						[y.r]: r,
+						[y.u]: t ? "1" : ""
 					})
 				},
 				M = e => e.isFlairFilter ? d.a.createElement(C.a, {
@@ -1769,8 +1769,8 @@
 				}),
 				L = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(j.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(E.a)(Object(j.a)(e).post, _.a.black, _.a.white) : e.textColor === T.e.Dark ? _.a.black : _.a.white,
 				H = p.a.wrapped(A, "TextFlair", S.a),
-				q = p.a.wrapped(U, "RichTextFlair", S.a),
-				W = e => {
+				W = p.a.wrapped(U, "RichTextFlair", S.a),
+				q = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -1781,7 +1781,7 @@
 					}
 				},
 				z = p.a.wrapped(e => {
-					const t = W(e),
+					const t = q(e),
 						n = d.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -1816,7 +1816,7 @@
 				}, t);
 				switch (s.type) {
 					case T.f.Richtext:
-						return n || !s.richtext ? null : d.a.createElement(q, {
+						return n || !s.richtext ? null : d.a.createElement(W, {
 							backgroundColor: s.backgroundColor,
 							className: f,
 							forceSmallEmojis: b,
@@ -2309,8 +2309,8 @@
 				U = n.n(A),
 				L = n("./src/reddit/actions/subredditSettings.ts"),
 				H = n("./src/reddit/components/CharacterCountdown/index.tsx"),
-				q = n("./src/reddit/components/CommunitySettings/helpers.ts"),
-				W = n("./src/lib/fastdom/index.ts"),
+				W = n("./src/reddit/components/CommunitySettings/helpers.ts"),
+				q = n("./src/lib/fastdom/index.ts"),
 				z = n("./src/lib/lessComponent.tsx"),
 				V = n("./src/reddit/components/IdCard/DescriptionBlock/index.m.less"),
 				G = n.n(V);
@@ -2329,7 +2329,7 @@
 					}
 				}
 				componentDidMount() {
-					this.state.shouldTruncateDescription && W.a.read(() => {
+					this.state.shouldTruncateDescription && q.a.read(() => {
 						this.containerRef && this.textRef && this.textRef.offsetHeight > this.containerRef.offsetHeight && this.setState({
 							shouldDisplayShowMore: !0
 						})
@@ -2452,13 +2452,13 @@
 						onChange: e => this.setState({
 							description: e.currentTarget.value
 						}),
-						maxLength: q.c,
+						maxLength: W.c,
 						value: this.state.description
 					}), i.a.createElement("div", {
 						className: G.a.editableDescriptionControlRow
 					}, i.a.createElement(H.a, {
 						className: G.a.characterCountdown,
-						maxChars: q.c,
+						maxChars: W.c,
 						text: this.state.description
 					}), i.a.createElement("span", {
 						className: G.a.cancel,
@@ -2607,8 +2607,8 @@
 				Ue = n("./src/reddit/constants/listings.ts"),
 				Le = n("./src/reddit/constants/modals.ts"),
 				He = n("./src/reddit/constants/page.ts"),
-				qe = n("./src/reddit/constants/posts.ts"),
-				We = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				We = n("./src/reddit/constants/posts.ts"),
+				qe = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				ze = n("./src/reddit/controls/ImageInput/index.tsx"),
 				Ve = n("./src/reddit/featureFlags/index.ts"),
 				Ge = n("./src/reddit/helpers/awards/isEligibleForCommunityAwards.ts"),
@@ -2922,12 +2922,12 @@
 					isInNCPV3Experiment: st.a
 				}), (e, t) => ({
 					addToMultiClicked: () => {
-						e(Object(x.a)(() => Promise.all([n.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), n.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), n.e("CountryPage~Frontpage~ModListing~Multireddit~ProfileComments~ProfileOverview~ProfilePosts~Subreddit"), n.e("CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"), n.e("CountryPage~Multireddit"), n.e("Multireddit")]).then(n.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(v.h)(Le.a.MULTIREDDIT_ADD_SUBREDDIT))
+						e(Object(x.a)(() => Promise.all([n.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), n.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), n.e("CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"), n.e("CountryPage~Multireddit"), n.e("Multireddit")]).then(n.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(v.h)(Le.a.MULTIREDDIT_ADD_SUBREDDIT))
 					},
 					dispatchPush: t => e(Object(d.b)(t)),
 					toggleFavorite: t => e(Object(_.c)({
 						id: t,
-						type: qe.a.SUBREDDIT
+						type: We.a.SUBREDDIT
 					})),
 					toggleTooltip: t => e(Object(g.h)({
 						tooltipId: t
@@ -3067,7 +3067,7 @@
 						idCardWidget: n
 					}), D = I || m || b, A = !I && x.id ? x.id : "", U = v && v.created, L = r.fbt._("Cake Day", null, {
 						hk: "gZ29b"
-					}), H = `IdCard--Subscribers--${m}--${A}`, q = `IdCard--CurrentlyViewing--${m}--${A}`, W = `IdCard--CakeDay--${m}--${A}`, z = `IdCard--CoinCoint--${m}--${A}`, V = u && !m, G = !I && !l && !d, K = !I && !m && T && !b, J = K && !c ? i.a.createElement(oe, {
+					}), H = `IdCard--Subscribers--${m}--${A}`, W = `IdCard--CurrentlyViewing--${m}--${A}`, q = `IdCard--CakeDay--${m}--${A}`, z = `IdCard--CoinCoint--${m}--${A}`, V = u && !m, G = !I && !l && !d, K = !I && !m && T && !b, J = K && !c ? i.a.createElement(oe, {
 						description: P,
 						shouldTruncateDescription: !1,
 						isCommentsPage: !!s,
@@ -3082,7 +3082,7 @@
 						onClick: m ? g : void 0,
 						headerButton: i.a.createElement("div", {
 							className: ut.a.headerButtonsContainer
-						}, !D && x && f && c !== Ae.ie.NewModule && i.a.createElement(a.a, {
+						}, !D && x && f && c !== Ae.je.NewModule && i.a.createElement(a.a, {
 							className: ut.a.ModToolsLink,
 							to: f.posts ? `${x.url}about/modqueue` : `${x.url}about/`,
 							onClick: this.onClickModTools
@@ -3095,13 +3095,13 @@
 							dropdownId: Bt,
 							targetPosition: ["right", "bottom"],
 							tooltipPosition: ["right", "top"]
-						}, !x.isQuarantined && i.a.createElement(We.b, {
+						}, !x.isQuarantined && i.a.createElement(qe.b, {
 							className: ut.a.dropdownRow,
 							displayText: r.fbt._("Add to Custom Feed", null, {
 								hk: "11L4wo"
 							}),
 							onClick: e
-						}), i.a.createElement(We.b, {
+						}), i.a.createElement(qe.b, {
 							className: ut.a.dropdownRow,
 							displayText: this.props.isFavoriteSubreddit ? r.fbt._("Remove from Favorites", null, {
 								hk: "2TGndK"
@@ -3129,7 +3129,7 @@
 						titleText: B,
 						onOpenFilePicker: this.openIconFilePicker,
 						isInNCPV3Experiment: c
-					}) : null, J, !I && !V && Ht(F, R, H, k, w, q, U, L, W, C), G && i.a.createElement(Rt.a, {
+					}) : null, J, !I && !V && Ht(F, R, H, k, w, W, U, L, q, C), G && i.a.createElement(Rt.a, {
 						subredditId: A
 					}), !I && i.a.createElement("div", {
 						className: ut.a.CommunityTypeContainer
@@ -5144,27 +5144,27 @@
 				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Cb,
+					experimentName: s.Db,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.W.Enabled),
 				d = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Db,
+					experimentName: s.Eb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.X.Enabled),
 				c = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Eb,
+					experimentName: s.Fb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Y.Enabled),
 				l = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Fb,
+					experimentName: s.Gb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Z.Enabled),
 				u = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Hb,
+					experimentName: s.Ib,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.bb.Enabled),
 				m = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Gb,
+					experimentName: s.Hb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.ab.Enabled)
 		},
@@ -5298,4 +5298,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.956ef7279152170cb751.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.bbf24cd32d92ae749013.js.map
