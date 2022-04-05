@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.5486f4b58ceb985a3ac2.js
-// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.be8464deac3bc0c692ba.js
+// Retrieved at 4/5/2022, 3:40:03 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1348,7 +1348,7 @@
 						EconTopAwardersModal: "c09e2797e4cbb51553d0",
 						ClaimFreeAwardModal: "d2a06c4eaeff1741d964",
 						CoinPurchaseModal: "3e1b247f6854b466d50e",
-						Coins: "025791d7e31dde324def",
+						Coins: "4405ff64aa7524110aeb",
 						CoinsMobile: "a7fd5c80a9cc8c1af852",
 						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d": "0d8a771b8a200cdc7567",
 						"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02": "78d034ddb052067dbdb8",
@@ -1711,4 +1711,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.5486f4b58ceb985a3ac2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.be8464deac3bc0c692ba.js.map
