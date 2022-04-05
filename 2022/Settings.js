@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.35ba48158224ace09350.js
-// Retrieved at 4/5/2022, 4:00:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.9bd865b49664ed237463.js
+// Retrieved at 4/5/2022, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -3255,7 +3255,7 @@
 							name: e.user.username,
 							type: "profile"
 						},
-						getEventFactory: e => Object(B.g)(e ? "unfollow" : "follow", r),
+						getEventFactory: e => Object(B.h)(e ? "unfollow" : "follow", r),
 						isFullWidth: !0,
 						small: !0
 					})), M && r && !w && f && a.a.createElement(se, {
@@ -14686,4 +14686,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.35ba48158224ace09350.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.9bd865b49664ed237463.js.map

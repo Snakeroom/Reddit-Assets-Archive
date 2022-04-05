@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.dc910153a5b159276ec1.js
-// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.402fdefa97d4067a0b88.js
+// Retrieved at 4/5/2022, 4:40:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, n) {
@@ -1751,7 +1751,7 @@
 							name: e.user.username,
 							type: "profile"
 						},
-						getEventFactory: e => Object(F.g)(e ? "unfollow" : "follow", i),
+						getEventFactory: e => Object(F.h)(e ? "unfollow" : "follow", i),
 						isFullWidth: !0,
 						small: !0
 					})), T && i && !_ && f && s.a.createElement(re, {
@@ -6380,4 +6380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.dc910153a5b159276ec1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.402fdefa97d4067a0b88.js.map
