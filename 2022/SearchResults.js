@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.f06924f7635c89f48e72.js
-// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.63b14467923897badff9.js
+// Retrieved at 4/5/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -9578,10 +9578,8 @@
 			"use strict";
 			s.r(t), s.d(t, "pageConfig", (function() {
 				return X
-			})), s.d(t, "getSearchKey", (function() {
-				return Q
 			})), s.d(t, "default", (function() {
-				return $
+				return Q
 			}));
 			var n = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				r = s("./node_modules/lodash/pick.js"),
@@ -9680,16 +9678,9 @@
 						sidebar: !1,
 						filterNav: !1
 					}
-				},
-				Q = (e, t) => {
-					const s = e.params.multiredditName,
-						n = e.params.subredditName || s || "",
-						r = e.params.username,
-						a = Object(m.e)(o()(t || {}, k.u));
-					return Object(m.b)(n, r, a)
 				};
 
-			function $(e) {
+			function Q(e) {
 				let {
 					location: t,
 					match: s
@@ -9718,7 +9709,7 @@
 					ae = Object(S.cb)(r),
 					[ie, ce] = Object(a.useState)(!1),
 					de = Object(l.a)(oe) || null;
-				Object(M.c)(), Object(a.useEffect)(() => (se && (ne ? T.a.set(he || "", se) : Object(w.d)(w.a.SearchResults, se), n(Object(b.c)())), () => {
+				Object(M.c)(), Object(a.useEffect)(() => (se && (ne ? T.a.set(be || "", se) : Object(w.d)(w.a.SearchResults, se), n(Object(b.c)())), () => {
 					I.a.clear(L.a.SERP)
 				}), []), Object(a.useEffect)(() => {
 					let e = 0;
@@ -9742,9 +9733,9 @@
 					me = s.params.subredditName || le || "",
 					ue = s.params.username,
 					pe = Object(m.e)(o()(oe || {}, k.u), Object(d.sc)(re)),
-					be = $ && pe.restrict_sr,
-					Ce = Object(N.a)(re, pe.type, be),
-					he = Object(m.b)(me, ue, pe),
+					be = Object(m.b)(me, ue, pe),
+					Ce = $ && pe.restrict_sr,
+					he = Object(N.a)(re, pe.type, Ce),
 					xe = {
 						...pe,
 						type: [d.bc.Posts, d.bc.Subreddits, d.bc.Users]
@@ -9761,9 +9752,9 @@
 					subreddit: ee,
 					url: Object(R.a)(oe, ee.name)
 				})));
-				const ye = X[Ce].tab,
-					ve = Boolean(be) || X[Ce].sidebar && !le,
-					je = X[Ce].filterNav,
+				const ye = X[he].tab,
+					ve = Boolean(Ce) || X[he].sidebar && !le,
+					je = X[he].filterNav,
 					Ee = Object(D.a)({
 						redditStyle: !0,
 						theme: G
@@ -9790,7 +9781,7 @@
 							}
 						})
 					})(), i.a.createElement(x.a, {
-						listingKey: he,
+						listingKey: be,
 						listingName: me,
 						location: t,
 						searchOptions: pe,
@@ -10064,4 +10055,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.f06924f7635c89f48e72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.63b14467923897badff9.js.map
