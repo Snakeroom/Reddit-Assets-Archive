@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.3ef5ce169df5037937bd.js
-// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.3fbd95b49485916e3117.js
+// Retrieved at 4/5/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -5538,7 +5538,7 @@
 				b = n("./src/reddit/actions/tooltip.ts");
 			const h = s.a.hotPotatoUrl,
 				f = new URL(`${h}/embed`),
-				x = ["fullscreen", "edit", "cx", "cy", "px"],
+				x = ["fullscreen", "edit", "cx", "cy", "px", "t"],
 				g = () => {
 					var e;
 					if ("undefined" == typeof window) return {
@@ -5695,10 +5695,11 @@
 						let {
 							cx: t,
 							cy: n,
-							px: s
+							px: s,
+							t: r
 						} = e;
-						const r = new URL(location.href);
-						r.searchParams.set("cx", `${t}`), r.searchParams.set("cy", `${n}`), r.searchParams.set("px", `${s}`), history.replaceState({}, "", r.toString())
+						const o = new URL(location.href);
+						o.searchParams.set("cx", `${t}`), o.searchParams.set("cy", `${n}`), o.searchParams.set("px", `${s}`), r && o.searchParams.set("t", `${r}`), history.replaceState({}, "", o.toString())
 					}, this.onMessageOpenProfile = e => {
 						let {
 							profileName: t
@@ -15923,4 +15924,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3ef5ce169df5037937bd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3fbd95b49485916e3117.js.map

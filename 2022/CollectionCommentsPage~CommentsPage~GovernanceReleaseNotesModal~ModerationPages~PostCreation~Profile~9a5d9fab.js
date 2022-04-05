@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.d51aafa60ed3a7f8db20.js
-// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.93b555bd6189831a03f1.js
+// Retrieved at 4/5/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -890,6 +890,7 @@
 		"./src/reddit/components/Media/TwitterEmbed/index.m.less": function(e, t, s) {
 			e.exports = {
 				tweetPlaceholder: "q0jsD_ZcQRuuUQzXawr8J",
+				tweetContainer: "_2yB7G9L-6O_6Lp6D0n7EAl",
 				tweetEmbedBox: "_3pYTJO5FjsoQWRUsIFQASN",
 				isInvisible: "_3xICr9rbunMOudN40P1GgI",
 				tweetDeleted: "sIgL7k1Lz6YLL146KNk8k",
@@ -941,7 +942,7 @@
 				} = e, [C, j] = Object(n.useState)(!1), T = Object(d.a)(t), S = Object(n.useRef)(), {
 					height: L,
 					isDeleted: M
-				} = Object(o.e)(e => e.mediaEmbed[I] || {}), N = M ? v : L || E;
+				} = Object(o.e)(e => e.mediaEmbed[I] || {}), N = C ? M ? v : L : E;
 
 				function P(e) {
 					var t;
@@ -953,25 +954,30 @@
 					!t && T && j(!1)
 				}, [T, t]), a.a.createElement(m.a, x({}, s, {
 					alwaysWrapMedia: !0,
-					height: N,
+					height: N + 8,
 					showFull: !s.isListing,
 					width: f
-				}), t && a.a.createElement(a.a.Fragment, null, M && a.a.createElement("p", {
-					className: g.a.tweetDeleted
-				}, i.fbt._("This Tweet has been deleted.", null, {
-					hk: "1LhcOw"
-				})), !M && a.a.createElement(a.a.Fragment, null, !C && a.a.createElement("div", {
+				}), t && a.a.createElement("div", {
+					className: g.a.tweetContainer,
+					style: {
+						height: N
+					}
+				}, !C && a.a.createElement("div", {
 					className: Object(r.a)(Object(h.a)({
 						isLoading: !0
 					}), g.a.tweetPlaceholder)
-				}), a.a.createElement(u.a, {
+				}), C && M && a.a.createElement("p", {
+					className: g.a.tweetDeleted
+				}, i.fbt._("This Tweet has been deleted.", null, {
+					hk: "1LhcOw"
+				})), a.a.createElement(u.a, {
 					childRef: function(e) {
 						S.current = e, e && Object(l.a)(e, (t, s) => {
-							e && e.contentWindow && !L && s && e.contentWindow.postMessage("twitter-measure-requested", c.a)
+							e && e.contentWindow && !L && s && (j(!1), e.contentWindow.postMessage("twitter-measure-requested", c.a))
 						}), y(e)
 					},
 					className: Object(r.a)(g.a.tweetEmbedBox, {
-						[g.a.isInvisible]: !C
+						[g.a.isInvisible]: !C || M
 					}),
 					height: N,
 					isListing: s.isListing,
@@ -987,7 +993,7 @@
 					className: g.a.seeMore
 				}, i.fbt._("See full tweet", null, {
 					hk: "1bxtrd"
-				})))))
+				}))))
 			}
 		},
 		"./src/reddit/components/Media/constants.ts": function(e, t, s) {
@@ -2135,4 +2141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.d51aafa60ed3a7f8db20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.93b555bd6189831a03f1.js.map
