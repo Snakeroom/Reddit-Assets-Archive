@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.de73c3f9bcd79311d1dd.js
-// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.b78e20f3eb9faa9ae215.js
+// Retrieved at 4/5/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -1898,20 +1898,20 @@
 						filter: c,
 						onChangeFilter: d,
 						onChangeView: m
-					} = e, b = Object(p.a)(), h = Object(s.e)(e => Object(A.o)(e, void 0)), v = h.find(e => e.id === n), x = R[c](), I = Object(O.b)("back_fill"), _ = Object(a.useCallback)(() => b(Object(u.j)({
+					} = e, b = Object(p.a)(), h = Object(s.e)(e => Object(A.o)(e, void 0)), v = h.find(e => e.id === n), x = R[c](), I = Object(O.b)("back_fill"), _ = Object(a.useCallback)(() => b(Object(u.m)({
 						userId: o,
 						subredditId: n
 					})), [o, n, b]), N = Object(a.useCallback)(e => {
-						i(e.value), b(Object(u.q)({
+						i(e.value), b(Object(u.t)({
 							userId: o,
 							subredditId: n,
 							filteredSubredditId: e.value
 						}))
-					}, [o, n, b, i]), g = Object(a.useCallback)(() => b(Object(u.k)({
+					}, [o, n, b, i]), g = Object(a.useCallback)(() => b(Object(u.n)({
 						userId: o,
 						subredditId: n
 					})), [o, n, b]), k = Object(a.useCallback)(e => {
-						d(e.value), b(Object(u.r)({
+						d(e.value), b(Object(u.u)({
 							userId: o,
 							subredditId: n,
 							filteredType: e.value
@@ -2045,16 +2045,31 @@
 						onClickUsername: c,
 						subredditId: d
 					} = e, m = Object(s.d)(), {
-						user: u,
-						id: p,
-						itemType: b
-					} = o, h = `ModUserNote--Modal--DeleteConfirmation--${p}`, v = Object(a.useCallback)(() => b && m(Object(i.b)(d, u.id, p, b)), [m, u.id, p, b, d]), x = Object(a.useCallback)(() => m(Object(Y.i)(h)), [m, h]), I = Object(s.e)(e => Object(V.a)(e) === h), _ = Object($.a)(), N = new Intl.DateTimeFormat(_, {
+						user: b,
+						id: h,
+						itemType: v
+					} = o, x = `ModUserNote--Modal--DeleteConfirmation--${h}`, I = Object(p.a)(), _ = Object(a.useCallback)(() => m(Object(Y.i)(x)), [m, x]), N = Object(a.useCallback)(() => {
+						v && m(Object(i.b)(d, b.id, h, v)), I(Object(u.b)({
+							subredditId: d,
+							modNote: o
+						}))
+					}, [m, b.id, h, v, d, I, o]), g = Object(a.useCallback)(() => {
+						v && m(Object(i.b)(d, b.id, h, v)), I(Object(u.c)({
+							subredditId: d,
+							modNote: o
+						}))
+					}, [m, b.id, h, v, d, I, o]), C = Object(a.useCallback)(() => {
+						_(), I(Object(u.j)({
+							subredditId: d,
+							modNote: o
+						}))
+					}, [d, I, o, _]), O = Object(s.e)(e => Object(V.a)(e) === x), k = Object($.a)(), E = new Intl.DateTimeFormat(k, {
 						month: "short",
 						day: "numeric",
 						year: "numeric",
 						hour: "numeric",
 						minute: "numeric"
-					}).format(new Date(o.createdAt)), g = o.itemType === y.l.Note;
+					}).format(new Date(o.createdAt)), j = o.itemType === y.l.Note;
 					return r.a.createElement("div", {
 						className: Object(l.a)(t, ae.a.metadata)
 					}, o.operator && r.a.createElement(te.a, {
@@ -2063,14 +2078,14 @@
 						onClick: c
 					}, "u/", o.operator.displayName), r.a.createElement("span", {
 						className: ae.a.createdDate
-					}, f.fbt._("on {createdDate}", [f.fbt._param("createdDate", N)], {
+					}, f.fbt._("on {createdDate}", [f.fbt._param("createdDate", E)], {
 						hk: "2VoP7K"
-					})), g && r.a.createElement(r.a.Fragment, null, r.a.createElement("button", {
+					})), j && r.a.createElement(r.a.Fragment, null, r.a.createElement("button", {
 						className: Object(l.a)(n, ae.a.deleteButton),
-						onClick: x
+						onClick: C
 					}, f.fbt._("Delete", null, {
 						hk: "4lt26q"
-					})), I && r.a.createElement(ee.a, {
+					})), O && r.a.createElement(ee.a, {
 						actionText: f.fbt._("Yes, Delete", null, {
 							hk: "3kB0Hd"
 						}),
@@ -2080,8 +2095,9 @@
 						modalText: f.fbt._("This mod note will be permanently deleted.", null, {
 							hk: "DFQi2"
 						}),
-						onConfirm: v,
-						toggleModal: x,
+						onConfirm: g,
+						onCancel: N,
+						toggleModal: _,
 						withOverlay: !0
 					})))
 				},
@@ -2310,7 +2326,7 @@
 					}), r.a.createElement(ie, {
 						className: Z.a.note,
 						modNote: t,
-						onClickLinked: () => o(Object(u.b)({
+						onClickLinked: () => o(Object(u.d)({
 							subredditId: n,
 							modNote: t
 						}))
@@ -2319,7 +2335,7 @@
 						deleteClassName: Z.a.metaDataDelete,
 						subredditId: n,
 						modNote: t,
-						onClickUsername: () => o(Object(u.n)({
+						onClickUsername: () => o(Object(u.q)({
 							subredditId: n,
 							modNote: t
 						}))
@@ -2327,7 +2343,7 @@
 						className: Z.a.preview,
 						commentInfo: t.commentInfo,
 						postInfo: t.postInfo,
-						onClick: () => o(Object(u.f)({
+						onClick: () => o(Object(u.h)({
 							subredditId: n,
 							modNote: t
 						}))
@@ -2579,7 +2595,7 @@
 							postId: v
 						} : null
 					};
-					return Object(a.useEffect)(() => (C(Object(u.v)(j)), () => C(Object(u.p)(j))), []), r.a.createElement("div", {
+					return Object(a.useEffect)(() => (C(Object(u.y)(j)), () => C(Object(u.s)(j))), []), r.a.createElement("div", {
 						className: Object(l.a)(n, Be.a.wrapper, {
 							[Be.a.isNightMode]: g
 						}),
@@ -2685,12 +2701,12 @@
 						w = Object(s.e)(e => {
 							if (l) return Object(_e.f)(e, g.id, d)
 						}),
-						S = Object(a.useCallback)(() => {
-							i(Object(ot.c)(d, {
-								username: m
-							})), o($e.e(l))
-						}, [o, i, d, m, l]),
-						P = Object(a.useCallback)(() => i(Object(ot.e)(d, g.id)), [g.id, d, i]),
+						S = Object(a.useCallback)(() => i(Object(ot.c)(d, {
+							username: m
+						})), [i, d, m]),
+						P = Object(a.useCallback)(() => {
+							i(Object(ot.e)(d, g.id)), o($e.e(l))
+						}, [g.id, d, i, l, o]),
 						U = Object(a.useCallback)(() => {
 							i(Object(st.c)({
 								username: m,
@@ -2708,12 +2724,12 @@
 						A = Object(a.useCallback)(() => {
 							i(Object(it.g)(d, m)), o($e.c(l))
 						}, [o, i, m, d, l]),
-						T = Object(a.useCallback)(() => d && o(Object(u.i)({
+						T = Object(a.useCallback)(() => d && o(Object(u.l)({
 							subredditId: d,
 							userId: g.id
 						})), [d, g, o]),
 						B = Object(a.useCallback)(e => {
-							e.stopPropagation(), b && b(), d && o(Object(u.h)({
+							e.stopPropagation(), b && b(), d && o(Object(u.k)({
 								subredditId: d,
 								userId: g.id
 							}))
@@ -2726,7 +2742,7 @@
 						}, [d, g, o, b]);
 					if (Object(a.useEffect)(() => {
 							g && !g.isSuspended && S()
-						}, []), !g) return null;
+						}, [g]), !g) return null;
 					const D = j && m ? `?toSubredditName=${j.name}&toUserName=${m}` : "",
 						F = {
 							[ht.ModLog]: x,
@@ -2961,7 +2977,7 @@
 					onChangeView: j
 				} = e, w = Object(p.a)();
 				if (Object(a.useEffect)(() => {
-						v && k && w(Object(u.u)({
+						v && k && w(Object(u.x)({
 							subredditId: k,
 							userId: v.id
 						}))
@@ -3490,7 +3506,7 @@
 					className: Object(c.a)(v, x.a.modNote),
 					onClick: e => {
 						e.stopPropagation(), _ && _(e), (() => {
-							const e = "LastAuthorUserNoteTooltip" === g && l.c || "ModIdCard" === g && l.g;
+							const e = "LastAuthorUserNoteTooltip" === g && l.e || "ModIdCard" === g && l.i;
 							e && U(e({
 								modNote: I,
 								subredditId: N
@@ -3521,7 +3537,7 @@
 					className: x.a.operatorBlock,
 					onClick: e => {
 						e.stopPropagation(), (() => {
-							const e = "LastAuthorUserNoteTooltip" === g && l.l || "ModIdCard" === g && l.m;
+							const e = "LastAuthorUserNoteTooltip" === g && l.o || "ModIdCard" === g && l.p;
 							e && U(e({
 								modNote: I,
 								subredditId: N
@@ -3544,7 +3560,7 @@
 					rel: "noopener noreferrer",
 					onClick: e => {
 						e.stopPropagation(), (() => {
-							const e = "LastAuthorUserNoteTooltip" === g && l.d || "ModIdCard" === g && l.e;
+							const e = "LastAuthorUserNoteTooltip" === g && l.f || "ModIdCard" === g && l.g;
 							e && U(e({
 								modNote: I,
 								subredditId: N
@@ -5142,4 +5158,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.de73c3f9bcd79311d1dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.b78e20f3eb9faa9ae215.js.map
