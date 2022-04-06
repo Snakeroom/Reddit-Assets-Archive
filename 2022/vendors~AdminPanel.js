@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~AdminPanel.e6e59f93c311ab1cce5c.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~AdminPanel.eae9f345b12b82989d37.js
+// Retrieved at 4/6/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~AdminPanel"], {
 		"./node_modules/@reddit/event-helpers-typescript/dist/esm/index.js": function(e, t, i) {
@@ -3133,9 +3133,31 @@
 		"./node_modules/@reddit/event-schema-registry/dist/esm/index.js": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return _i
+				return Ti
 			}));
 			var s = {
+					firing_logic: "When a proposed Thing name matches a restricted phrase that violates policy",
+					$id: "http://com.reddit/schemas/event_schemas/admin__restrict_name__thing.json",
+					properties: {
+						source: {
+							const: "admin"
+						},
+						action: {
+							const: "restrict_name"
+						},
+						noun: {
+							const: "thing"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1cM5LmlvI7s1w_DM0uvA_YtUE9oMLMwskyA8AAKEs4g0/edit#"],
+					owner: "safety@reddit.com",
+					required: ["restricted_name", "thing_name", "testing"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				n = {
 					firing_logic: "Fires when bulk messenger job finishes execution",
 					$id: "http://com.reddit/schemas/event_schemas/admin_tool__bulk_message__subreddit.json",
 					properties: {
@@ -3157,7 +3179,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				n = {
+				o = {
 					firing_logic: "Fires when bulk messenger job finishes execution",
 					$id: "http://com.reddit/schemas/event_schemas/admin_tool__bulk_message__user.json",
 					properties: {
@@ -3179,7 +3201,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				o = {
+				r = {
 					firing_logic: "Fired when an individual message tile is displayed (if the user scrolls through the carousel, fires once for each message the user sees)",
 					$id: "http://com.reddit/schemas/event_schemas/announcement__view__announcement.json",
 					properties: {
@@ -3201,7 +3223,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				r = {
+				a = {
 					firing_logic: "Comment search endpoint hit in GQL.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__search__comment_search.json",
 					properties: {
@@ -3223,7 +3245,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				a = {
+				d = {
 					firing_logic: "Rails/Best Tab makes a search request.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__search__full_search.json",
 					properties: {
@@ -3245,7 +3267,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				d = {
+				c = {
 					firing_logic: "Only for requests to /search, so when a user issues a post search.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__search__post_search.json",
 					properties: {
@@ -3267,7 +3289,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				c = {
+				p = {
 					firing_logic: "Fires on a request to one of the subreddit search endpoints.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__search__subreddit_search.json",
 					properties: {
@@ -3289,7 +3311,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				p = {
+				m = {
 					firing_logic: "Strictly for a typeahead request.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__search__typeahead_search.json",
 					properties: {
@@ -3311,7 +3333,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				m = {
+				_ = {
 					firing_logic: "User submits a comment.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__submit__comment.json",
 					properties: {
@@ -3333,7 +3355,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				_ = {
+				h = {
 					firing_logic: "User submits a post.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__submit__post.json",
 					properties: {
@@ -3355,7 +3377,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				h = {
+				f = {
 					firing_logic: "User auto-upvotes content (aka the initial vote).",
 					$id: "http://com.reddit/schemas/event_schemas/backend__vote__auto_upvote.json",
 					properties: {
@@ -3377,7 +3399,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				f = {
+				l = {
 					firing_logic: "User clears his or her previous downvote.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__vote__clear_downvote.json",
 					properties: {
@@ -3399,7 +3421,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				l = {
+				u = {
 					firing_logic: "User clears his or her previous upvote.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__vote__clear_upvote.json",
 					properties: {
@@ -3421,7 +3443,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				u = {
+				g = {
 					firing_logic: "User downvotes content.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__vote__downvote.json",
 					properties: {
@@ -3443,7 +3465,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				g = {
+				y = {
 					firing_logic: "User upvotes content.",
 					$id: "http://com.reddit/schemas/event_schemas/backend__vote__upvote.json",
 					properties: {
@@ -3465,7 +3487,73 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				y = {
+				v = {
+					firing_logic: "CMux makes a request for posts to the search service",
+					$id: "http://com.reddit/schemas/event_schemas/cmux__search__post.json",
+					properties: {
+						source: {
+							const: "cmux"
+						},
+						action: {
+							const: "search"
+						},
+						noun: {
+							const: "post"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1Ht02PRrh54sn4sg-I2wBtnmwxMKDv1_nVG7Gtmz4_EQ/edit?usp=sharing"],
+					owner: "search-team@reddit.com",
+					required: ["search_protocol_name", "search_range", "search_query_id", "search_origin_page_type", "search_links", "search_partial_results", "search_number_links", "search_query", "search_structure_type", "search_sort"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				b = {
+					firing_logic: "CMux makes a request for subreddits to the search service",
+					$id: "http://com.reddit/schemas/event_schemas/cmux__search__subreddit.json",
+					properties: {
+						source: {
+							const: "cmux"
+						},
+						action: {
+							const: "search"
+						},
+						noun: {
+							const: "subreddit"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1Ht02PRrh54sn4sg-I2wBtnmwxMKDv1_nVG7Gtmz4_EQ/edit?usp=sharing"],
+					owner: "search-team@reddit.com",
+					required: ["search_protocol_name", "search_number_subreddits", "search_query_id", "search_origin_page_type", "search_partial_results", "search_subreddit_ids", "search_query", "search_structure_type"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				w = {
+					firing_logic: "CMux makes a request for users to the search service",
+					$id: "http://com.reddit/schemas/event_schemas/cmux__search__user.json",
+					properties: {
+						source: {
+							const: "cmux"
+						},
+						action: {
+							const: "search"
+						},
+						noun: {
+							const: "user"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1Ht02PRrh54sn4sg-I2wBtnmwxMKDv1_nVG7Gtmz4_EQ/edit?usp=sharing"],
+					owner: "search-team@reddit.com",
+					required: ["search_protocol_name", "search_query_id", "search_number_users", "search_origin_page_type", "search_partial_results", "search_user_ids", "search_query", "search_structure_type"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				j = {
 					firing_logic: "Fired on Coins package block click on /coins marketing page and top nav coins dropdown.",
 					$id: "http://com.reddit/schemas/event_schemas/coins_marketing__click__coins_package.json",
 					properties: {
@@ -3487,7 +3575,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				v = {
+				$ = {
 					firing_logic: "User views Coins Marketing page.",
 					$id: "http://com.reddit/schemas/event_schemas/coins_marketing__view__page.json",
 					properties: {
@@ -3509,7 +3597,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				b = {
+				k = {
 					firing_logic: "Fire when a given comment has been in view for 2 continuous seconds.",
 					$id: "http://com.reddit/schemas/event_schemas/comment__consume__comment.json",
 					properties: {
@@ -3531,7 +3619,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				w = {
+				x = {
 					firing_logic: "Fire when a given comment scrolls into view",
 					$id: "http://com.reddit/schemas/event_schemas/comment__view__comment.json",
 					properties: {
@@ -3553,7 +3641,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				j = {
+				q = {
 					firing_logic: "User taps on Premium from the top nav.",
 					$id: "http://com.reddit/schemas/event_schemas/community_nav__click__premium.json",
 					properties: {
@@ -3574,7 +3662,28 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				$ = {
+				P = {
+					firing_logic: "Fired when a moderator changes the abuse & harassment slider and clicks the save button.",
+					$id: "http://com.reddit/schemas/event_schemas/community_settings__save__harassment_control_level.json",
+					properties: {
+						source: {
+							const: "community_settings"
+						},
+						action: {
+							const: "save"
+						},
+						noun: {
+							const: "harassment_control_level"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1uG5A7TNVDqxXuTD5z0u-svohfzWn96GewLy3zPo1LH8/edit#"],
+					owner: "anti-evil-eng@reddit.com",
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				E = {
 					firing_logic: "User clicks No on location verification prompt",
 					$id: "http://com.reddit/schemas/event_schemas/crowdsource__click__reject_location.json",
 					properties: {
@@ -3596,7 +3705,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				k = {
+				T = {
 					firing_logic: "Canonical location is being modified",
 					$id: "http://com.reddit/schemas/event_schemas/crowdsource__save__location.json",
 					properties: {
@@ -3618,7 +3727,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				x = {
+				S = {
 					firing_logic: "User submits location (not guaranteed source of truth)",
 					$id: "http://com.reddit/schemas/event_schemas/crowdsource__submit__location.json",
 					properties: {
@@ -3640,7 +3749,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				q = {
+				A = {
 					firing_logic: "Expose events are emitted when a user reaches an experiment code fork",
 					$id: "http://com.reddit/schemas/event_schemas/experiment__expose__user_id.json",
 					properties: {
@@ -3662,7 +3771,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				P = {
+				R = {
 					firing_logic: "User selects account gender in settings page",
 					$id: "http://com.reddit/schemas/event_schemas/gender_app_settings__select__gender.json",
 					properties: {
@@ -3683,7 +3792,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				E = {
+				D = {
 					firing_logic: "User clicks Award button to award the post / comment (because they have enough Coins).",
 					$id: "http://com.reddit/schemas/event_schemas/give_gold__click__confirm.json",
 					properties: {
@@ -3705,7 +3814,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				T = {
+				I = {
 					firing_logic: "User clicks Silver award type",
 					$id: "http://com.reddit/schemas/event_schemas/give_gold__click__gid_1.json",
 					properties: {
@@ -3727,7 +3836,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				S = {
+				F = {
 					firing_logic: "User clicks Gold award type",
 					$id: "http://com.reddit/schemas/event_schemas/give_gold__click__gid_2.json",
 					properties: {
@@ -3749,7 +3858,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				A = {
+				O = {
 					firing_logic: "User clicks Platinum award type",
 					$id: "http://com.reddit/schemas/event_schemas/give_gold__click__gid_3.json",
 					properties: {
@@ -3771,7 +3880,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				R = {
+				C = {
 					firing_logic: "User clicks 'Next' button (because they don't have enough Coins)",
 					$id: "http://com.reddit/schemas/event_schemas/give_gold__click__next.json",
 					properties: {
@@ -3793,7 +3902,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				D = {
+				U = {
 					firing_logic: "User views Give Gold modal",
 					$id: "http://com.reddit/schemas/event_schemas/give_gold__view__page.json",
 					properties: {
@@ -3815,7 +3924,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				I = {
+				z = {
 					firing_logic: "Fired when a user leaves/exits Reddit",
 					$id: "http://com.reddit/schemas/event_schemas/global__leave__app.json",
 					properties: {
@@ -3837,7 +3946,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				F = {
+				L = {
 					firing_logic: "Fires when the page/content loads for a user",
 					$id: "http://com.reddit/schemas/event_schemas/global__view__screen.json",
 					properties: {
@@ -3859,7 +3968,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				O = {
+				N = {
 					firing_logic: "User clicks credit card option",
 					$id: "http://com.reddit/schemas/event_schemas/gold_payment__click__credit_card.json",
 					properties: {
@@ -3881,7 +3990,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				C = {
+				M = {
 					firing_logic: "User views Gold Payment modal",
 					$id: "http://com.reddit/schemas/event_schemas/gold_payment__view__page.json",
 					properties: {
@@ -3903,7 +4012,73 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				U = {
+				H = {
+					firing_logic: "GraphQL makes a posts request to CMux: User issues a search (e.g. the Posts tab loads)",
+					$id: "http://com.reddit/schemas/event_schemas/graphql__search__post.json",
+					properties: {
+						source: {
+							const: "graphql"
+						},
+						action: {
+							const: "search"
+						},
+						noun: {
+							const: "post"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1Ht02PRrh54sn4sg-I2wBtnmwxMKDv1_nVG7Gtmz4_EQ/edit?usp=sharing"],
+					owner: "search-team@reddit.com",
+					required: ["search_range", "search_query_id", "search_origin_page_type", "search_links", "search_number_links", "search_query", "search_structure_type", "search_sort"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				B = {
+					firing_logic: "GraphQL makes a subreddits request to CMux: User requests to see subreddits (e.g. issues a search and/or clicks on the Communities tab)",
+					$id: "http://com.reddit/schemas/event_schemas/graphql__search__subreddit.json",
+					properties: {
+						source: {
+							const: "graphql"
+						},
+						action: {
+							const: "search"
+						},
+						noun: {
+							const: "subreddit"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1Ht02PRrh54sn4sg-I2wBtnmwxMKDv1_nVG7Gtmz4_EQ/edit?usp=sharing"],
+					owner: "search-team@reddit.com",
+					required: ["search_number_subreddits", "search_query_id", "search_origin_page_type", "search_subreddit_ids", "search_query", "search_structure_type"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				W = {
+					firing_logic: "GraphQL makes a users request to CMux: User requests to see users (e.g. issues a search and/or clicks on the People tab)",
+					$id: "http://com.reddit/schemas/event_schemas/graphql__search__user.json",
+					properties: {
+						source: {
+							const: "graphql"
+						},
+						action: {
+							const: "search"
+						},
+						noun: {
+							const: "user"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1Ht02PRrh54sn4sg-I2wBtnmwxMKDv1_nVG7Gtmz4_EQ/edit?usp=sharing"],
+					owner: "search-team@reddit.com",
+					required: ["search_query_id", "search_number_users", "search_origin_page_type", "search_user_ids", "search_query", "search_structure_type"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				V = {
 					firing_logic: "User clicks on the user dropdown.",
 					$id: "http://com.reddit/schemas/event_schemas/nav__click__user.json",
 					properties: {
@@ -3924,7 +4099,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				z = {
+				Q = {
 					firing_logic: "User click 'Give Gold' on post",
 					$id: "http://com.reddit/schemas/event_schemas/post__click__give_gold.json",
 					properties: {
@@ -3946,7 +4121,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				L = {
+				G = {
 					firing_logic: "User clicks on a post flair on a post.",
 					$id: "http://com.reddit/schemas/event_schemas/post__click__post_flair.json",
 					properties: {
@@ -3968,7 +4143,28 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				N = {
+				J = {
+					firing_logic: "User clicks view all comments link on post with a comment highlighted.",
+					$id: "http://com.reddit/schemas/event_schemas/post__click__view_all_comments.json",
+					properties: {
+						source: {
+							const: "post"
+						},
+						action: {
+							const: "click"
+						},
+						noun: {
+							const: "view_all_comments"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/16XCv6P4HLiA7FUo9Vm-TPcvR8gDoQoetx--gBEIl3eo/edit#heading=h.yr8inac6p130"],
+					owner: "fset@reddit.com",
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				Y = {
 					firing_logic: "Fired when a post that was >0% visible for at least 2 seconds becomes 0% visible (i.e. goes off screen).",
 					$id: "http://com.reddit/schemas/event_schemas/post__consume__post.json",
 					properties: {
@@ -3990,7 +4186,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				M = {
+				K = {
 					firing_logic: "Fired immediately when a post becomes >0% visible.",
 					$id: "http://com.reddit/schemas/event_schemas/post__view__post.json",
 					properties: {
@@ -4012,7 +4208,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				H = {
+				Z = {
 					firing_logic: "User clicks top 'Get Reddit Premium' button to scroll to purchase section below",
 					$id: "http://com.reddit/schemas/event_schemas/premium_marketing__click__get_premium.json",
 					properties: {
@@ -4034,7 +4230,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				B = {
+				X = {
 					firing_logic: "User clicks bottom '$5.99 / Month' button to enter purchase flow",
 					$id: "http://com.reddit/schemas/event_schemas/premium_marketing__click__price.json",
 					properties: {
@@ -4056,7 +4252,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				W = {
+				ee = {
 					firing_logic: "User views Premium Marketing page.",
 					$id: "http://com.reddit/schemas/event_schemas/premium_marketing__view__page.json",
 					properties: {
@@ -4078,7 +4274,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				V = {
+				te = {
 					firing_logic: "User clicks block button on another user's profile to block them.",
 					$id: "http://com.reddit/schemas/event_schemas/profile__click__block_user.json",
 					properties: {
@@ -4100,7 +4296,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				Q = {
+				ie = {
 					firing_logic: "User clicks unblock button on another user's profile to unblock them.",
 					$id: "http://com.reddit/schemas/event_schemas/profile__click__unblock_user.json",
 					properties: {
@@ -4122,7 +4318,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				G = {
+				se = {
 					firing_logic: "User clicks on an ad on the Search Results Page.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__ad.json",
 					properties: {
@@ -4144,7 +4340,29 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				J = {
+				ne = {
+					firing_logic: "User clicks on a comment on the Search Results Page.",
+					$id: "http://com.reddit/schemas/event_schemas/search__click__comment.json",
+					properties: {
+						source: {
+							const: "search"
+						},
+						action: {
+							const: "click"
+						},
+						noun: {
+							const: "comment"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/16XCv6P4HLiA7FUo9Vm-TPcvR8gDoQoetx--gBEIl3eo/edit#heading=h.yr8inac6p130"],
+					owner: "fset@reddit.com",
+					required: ["search_range", "search_query_id", "search_origin_page_type", "comment_post_id", "subreddit_name", "comment_body_text", "comment_created_timestamp", "user_preferences_hide_nsfw", "action_info_relative_position", "comment_score", "comment_parent_id", "subreddit_id", "comment_id", "action_info_position", "comment_author_id", "action_info_page_type", "search_query", "comment_number_gildings", "search_structure_type", "comment_last_edited_timestamp", "action_info_pane_name", "search_sort"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				oe = {
 					firing_logic: "User executes a query from the search bar. This fires when the query is explicitly fired.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__full_search_button.json",
 					properties: {
@@ -4166,7 +4384,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				Y = {
+				re = {
 					firing_logic: "User clicks on a post on the Search Results Page.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__post.json",
 					properties: {
@@ -4188,7 +4406,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				K = {
+				ae = {
 					firing_logic: "User clicks on a profile on the Search Results Page.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__profile.json",
 					properties: {
@@ -4210,7 +4428,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				Z = {
+				de = {
 					firing_logic: "User clicks on a recent search (can be a full search, subreddit, or profile) in the search dropdown.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__recent_search.json",
 					properties: {
@@ -4232,7 +4450,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				X = {
+				ce = {
 					firing_logic: "User clicks on the search bar.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__search_bar.json",
 					properties: {
@@ -4254,7 +4472,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				ee = {
+				pe = {
 					firing_logic: "A user changes the sort on the search results page.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__sort_change.json",
 					properties: {
@@ -4276,7 +4494,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				te = {
+				me = {
 					firing_logic: "User clicks on a subreddit on the Search Results Page.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__subreddit.json",
 					properties: {
@@ -4298,7 +4516,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				ie = {
+				_e = {
 					firing_logic: "User clicks on a trend within the r/popular carousel or the search dropdown.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__trending.json",
 					properties: {
@@ -4320,7 +4538,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				se = {
+				he = {
 					firing_logic: "User clicks on an item returned by the typeahead endpoint.",
 					$id: "http://com.reddit/schemas/event_schemas/search__click__typeahead.json",
 					properties: {
@@ -4342,7 +4560,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				ne = {
+				fe = {
 					firing_logic: "User disables community specific search, changing search to results from all of Reddit",
 					$id: "http://com.reddit/schemas/event_schemas/search__disable__subreddit_search.json",
 					properties: {
@@ -4364,7 +4582,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				oe = {
+				le = {
 					firing_logic: "User views an ad on their screen on the search results page, this only fires when the ad is within view of the user. If the ad leaves the view then reenters, this should fire again.",
 					$id: "http://com.reddit/schemas/event_schemas/search__view__ad.json",
 					properties: {
@@ -4386,7 +4604,114 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				re = {
+				ue = {
+					firing_logic: "User views a comment on the Search Results Page.",
+					$id: "http://com.reddit/schemas/event_schemas/search__view__comment.json",
+					properties: {
+						source: {
+							const: "search"
+						},
+						action: {
+							const: "view"
+						},
+						noun: {
+							const: "comment"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/16XCv6P4HLiA7FUo9Vm-TPcvR8gDoQoetx--gBEIl3eo/edit#heading=h.yr8inac6p130"],
+					owner: "fset@reddit.com",
+					required: ["search_range", "search_query_id", "search_origin_page_type", "comment_post_id", "subreddit_name", "comment_body_text", "comment_created_timestamp", "user_preferences_hide_nsfw", "action_info_relative_position", "comment_score", "comment_parent_id", "subreddit_id", "comment_id", "action_info_position", "comment_author_id", "action_info_page_type", "search_query", "comment_number_gildings", "search_structure_type", "comment_last_edited_timestamp", "action_info_pane_name", "search_sort"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				ge = {
+					firing_logic: "User views no results for comments search.",
+					$id: "http://com.reddit/schemas/event_schemas/search__view__no_comments_results.json",
+					properties: {
+						source: {
+							const: "search"
+						},
+						action: {
+							const: "view"
+						},
+						noun: {
+							const: "no_comments_results"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/16XCv6P4HLiA7FUo9Vm-TPcvR8gDoQoetx--gBEIl3eo/edit#heading=h.yr8inac6p130"],
+					owner: "fset@reddit.com",
+					required: ["search_range", "search_query_id", "search_origin_page_type", "user_preferences_hide_nsfw", "action_info_relative_position", "action_info_position", "action_info_page_type", "search_query", "search_structure_type", "action_info_pane_name", "search_sort"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				ye = {
+					firing_logic: "User views no results for communities search.",
+					$id: "http://com.reddit/schemas/event_schemas/search__view__no_communities_results.json",
+					properties: {
+						source: {
+							const: "search"
+						},
+						action: {
+							const: "view"
+						},
+						noun: {
+							const: "no_communities_results"
+						}
+					},
+					owner: "fset@reddit.com",
+					required: ["search_range", "search_query_id", "search_origin_page_type", "user_preferences_hide_nsfw", "action_info_relative_position", "action_info_position", "action_info_page_type", "search_query", "search_structure_type", "action_info_pane_name", "search_sort"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				ve = {
+					firing_logic: "User views no results for people search.",
+					$id: "http://com.reddit/schemas/event_schemas/search__view__no_people_results.json",
+					properties: {
+						source: {
+							const: "search"
+						},
+						action: {
+							const: "view"
+						},
+						noun: {
+							const: "no_people_results"
+						}
+					},
+					owner: "fset@reddit.com",
+					required: ["search_range", "search_query_id", "search_origin_page_type", "user_preferences_hide_nsfw", "action_info_relative_position", "action_info_position", "action_info_page_type", "search_query", "search_structure_type", "action_info_pane_name", "search_sort"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				be = {
+					firing_logic: "User views no results for posts search.",
+					$id: "http://com.reddit/schemas/event_schemas/search__view__no_posts_results.json",
+					properties: {
+						source: {
+							const: "search"
+						},
+						action: {
+							const: "view"
+						},
+						noun: {
+							const: "no_posts_results"
+						}
+					},
+					owner: "fset@reddit.com",
+					required: ["search_range", "search_query_id", "search_origin_page_type", "user_preferences_hide_nsfw", "action_info_relative_position", "action_info_position", "action_info_page_type", "search_query", "search_structure_type", "action_info_pane_name", "search_sort"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				we = {
 					firing_logic: "User views a post on their screen on the search results page. This only fires when the post is within view of the user.",
 					$id: "http://com.reddit/schemas/event_schemas/search__view__post.json",
 					properties: {
@@ -4408,7 +4733,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				ae = {
+				je = {
 					firing_logic: "User sees a trend within the r/popular carousel or the search dropdown.",
 					$id: "http://com.reddit/schemas/event_schemas/search__view__trending.json",
 					properties: {
@@ -4430,7 +4755,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				de = {
+				$e = {
 					firing_logic: "Gazette powered home feed is constructed for a user.",
 					$id: "http://com.reddit/schemas/event_schemas/user_activity_one_feed__predict__feed.json",
 					properties: {
@@ -4452,7 +4777,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				ce = {
+				ke = {
 					firing_logic: "One feed model makes a batch of predictions in Minsky.",
 					$id: "http://com.reddit/schemas/event_schemas/user_activity_one_feed__predict__one_feed_feature.json",
 					properties: {
@@ -4474,7 +4799,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				pe = {
+				xe = {
 					firing_logic: "Gazette powered popular feed is constructed for a user.",
 					$id: "http://com.reddit/schemas/event_schemas/user_activity_popular__predict__feed.json",
 					properties: {
@@ -4496,7 +4821,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				me = {
+				qe = {
 					firing_logic: "Popular model makes a batch of predictions in Minsky.",
 					$id: "http://com.reddit/schemas/event_schemas/user_activity_popular__predict__popular_feature.json",
 					properties: {
@@ -4518,7 +4843,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				_e = {
+				Pe = {
 					firing_logic: "Push notification model makes a batch of predictions in Minsky.",
 					$id: "http://com.reddit/schemas/event_schemas/user_activity_push_notification__predict__push_notification_feature.json",
 					properties: {
@@ -4540,7 +4865,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				he = {
+				Ee = {
 					firing_logic: "Video feed model makes a batch of predictions in Minsky.",
 					$id: "http://com.reddit/schemas/event_schemas/user_activity_video__predict__video_feature.json",
 					properties: {
@@ -4562,7 +4887,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				fe = {
+				Te = {
 					firing_logic: "User clicks Coins from user dropdown.",
 					$id: "http://com.reddit/schemas/event_schemas/user_dropdown__click__coins.json",
 					properties: {
@@ -4584,7 +4909,7 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				le = {
+				Se = {
 					firing_logic: "User saves user flair.",
 					$id: "http://com.reddit/schemas/event_schemas/user_flair_picker__save__user_flair.json",
 					properties: {
@@ -4606,7 +4931,51 @@
 						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
 					}]
 				},
-				ue = {
+				Ae = {
+					firing_logic: "User blocks another user via their user preferences page.",
+					$id: "http://com.reddit/schemas/event_schemas/user_preferences__click__block_user.json",
+					properties: {
+						source: {
+							const: "user_preferences"
+						},
+						action: {
+							const: "click"
+						},
+						noun: {
+							const: "block_user"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1h0gdN9fwcXF7pORauoRy-2lGYm4scrEpa73Quv42eos/edit?usp=sharing"],
+					owner: "anti-evil-eng@reddit.com",
+					required: ["target_user"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				Re = {
+					firing_logic: "User blocks another user via the content report flow.",
+					$id: "http://com.reddit/schemas/event_schemas/user_report__click__block_user.json",
+					properties: {
+						source: {
+							const: "user_report"
+						},
+						action: {
+							const: "click"
+						},
+						noun: {
+							const: "block_user"
+						}
+					},
+					documentation_links: ["https://docs.google.com/document/d/1h0gdN9fwcXF7pORauoRy-2lGYm4scrEpa73Quv42eos/edit?usp=sharing"],
+					owner: "anti-evil-eng@reddit.com",
+					required: ["target_user"],
+					$schema: "http://json-schema.org/draft-07/schema#",
+					allOf: [{
+						$ref: "http://com.reddit/schemas/schema_interfaces/all_events.json"
+					}]
+				},
+				De = {
 					$id: "http://com.reddit/schemas/field_definitions/account_label/account_label.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A label associated with reddit account.",
@@ -4625,7 +4994,7 @@
 						}
 					}
 				},
-				ge = {
+				Ie = {
 					$id: "http://com.reddit/schemas/field_definitions/action/action_info.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Informational fields about different actions that occur on Reddit.\n\nThis struct is deliberately left generic, because many of the fields here could be used between\ndifferent types of user actions.\n\nIt is also deliberately named, to avoid conflict with the top level `action` field.",
@@ -4676,7 +5045,7 @@
 						}
 					}
 				},
-				ye = {
+				Fe = {
 					$id: "http://com.reddit/schemas/field_definitions/action/expand.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Metadata fields about post expands.",
@@ -4687,7 +5056,7 @@
 						}
 					}
 				},
-				ve = {
+				Oe = {
 					$id: "http://com.reddit/schemas/field_definitions/action/share.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields related to sharing content. *",
@@ -4706,7 +5075,7 @@
 						}
 					}
 				},
-				be = {
+				Ce = {
 					$id: "http://com.reddit/schemas/field_definitions/action/widget.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Metadata for widgets.",
@@ -4725,7 +5094,7 @@
 						}
 					}
 				},
-				we = {
+				Ue = {
 					$id: "http://com.reddit/schemas/field_definitions/ad/programmatic.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Unique identifier for the ad being acted on. */\n    1: optional string id\n    /** The name of this ad set by the advertiser. */\n    2: optional string name\n    /** The outbound URL to direct to when this ad is clicked. */\n    3: optional string click_url\n    /** A list of third party trackers attached to this ad. */\n    4: optional list<string> third_party_trackers\n    /** The status of the ad as configured by the advertiser. */\n    5: optional adtypedefs.ConfiguredStatus configured_status\n    /** The status of the ad as calculated by the backend. */\n    6: optional adtypedefs.EffectiveStatus effective_status\n    /**\n    The approval status of this ad.\n\n    Examples:\n    approval,deferred,pending,rejected,running,suspended,whitelisted\n    */\n    7: optional string admin_approval\n    /** A list of third party pixel URLs to fire when the user clicks on this ad. */\n    8: optional list<string> click_trackers\n    /** A list of classifications for an ad. */\n    9: optional list<adtypedefs.Classification> classifications\n    /**\n    The reason that this ad was rejected.\n\n    There are a large number of possible values for this field.\n    Please check events we currently have in BigQuery for values already in use.\n    */\n    10: optional string rejection_reason\n    /** Expiration date of forced Ad Preview */\n    11: optional typedefs.Timestamp preview_expiry_timestamp\n}\n\n/** Fields related to programmatic ads. *",
@@ -4748,7 +5117,7 @@
 						}
 					}
 				},
-				je = {
+				ze = {
 					$id: "http://com.reddit/schemas/field_definitions/adevent/ad_brand_safety.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the brand safety properties of an ad.",
@@ -4771,7 +5140,7 @@
 						}
 					}
 				},
-				$e = {
+				Le = {
 					$id: "http://com.reddit/schemas/field_definitions/adevent/ad_click.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the post click properties of an ad",
@@ -4782,7 +5151,7 @@
 						}
 					}
 				},
-				ke = {
+				Ne = {
 					$id: "http://com.reddit/schemas/field_definitions/adevent/ad_decision.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the properties of any decision to not show an ad.",
@@ -4821,7 +5190,7 @@
 						}
 					}
 				},
-				xe = {
+				Me = {
 					$id: "http://com.reddit/schemas/field_definitions/adevent/ad_metadata.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents additional information from the ad that was served to the user",
@@ -4832,7 +5201,7 @@
 						}
 					}
 				},
-				qe = {
+				He = {
 					$id: "http://com.reddit/schemas/field_definitions/adevent/ad_pixel.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents information about an ad pixel",
@@ -4851,7 +5220,7 @@
 						}
 					}
 				},
-				Pe = {
+				Be = {
 					$id: "http://com.reddit/schemas/field_definitions/adevent/ad_push.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the properties of any reason to shift the placement of an ad.",
@@ -4882,7 +5251,7 @@
 						}
 					}
 				},
-				Ee = {
+				We = {
 					$id: "http://com.reddit/schemas/field_definitions/adevent/ad_request.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the attributes of an ad request.",
@@ -4925,7 +5294,7 @@
 						}
 					}
 				},
-				Te = {
+				Ve = {
 					$id: "http://com.reddit/schemas/field_definitions/admin/admin.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A reddit-employeed administrator account.",
@@ -4940,7 +5309,7 @@
 						}
 					}
 				},
-				Se = {
+				Qe = {
 					$id: "http://com.reddit/schemas/field_definitions/admin_action/admin_action.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Information regarding AE admin actions.",
@@ -4996,7 +5365,7 @@
 						}
 					}
 				},
-				Ae = {
+				Ge = {
 					$id: "http://com.reddit/schemas/field_definitions/admin_action/admin_team.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Reported url extracted from ticket. Can be valid reddit url or an external url.\n    **/\n    1: optional string reported_url\n    /**\n    Content url associated with reported_url. Can be blank in case we cannot find associated content.\n    */\n    2: optional string content_url\n    /**\n    The reddit ID of content associated with this ticket content.\n    Can be empty in case reported url doesn't resolve to valid reddit content.\n    */\n    3: optional typedefs.Fullname target_id\n    /**\n    Type of reddit content.\n\n    Examples:\n    post,comment,message\n    */\n    4: optional typedefs.StringLower target_type\n    /**\n    ID given by google csai / microsoft photodna to track the event.\n\n    examples:\n    photodna: 1_photodna_a0e3d02b-1a0a-4b38-827f-764acd288c25\n    google_csai: 17986187222943498570_1534786098\n    */\n    5: optional string tracking_id\n    /**\n    Populate information about if post/comment/third_party_link was already removed by a moderator.\n\n    Reflects values defined in admin-service admin.thrift RemovedByType.\n\n    Examples:\n    null_value,copyright_takedown,content_takedown,author,moderator\n    community_ops,anti_evil_ops,reddit,deleted,automod_filter\n    */\n    6: optional string removed_by_user_type\n    /**\n    The type of content that is reported.\n\n    Reflects values defined in admin-service admin.thrift ContentType.\n\n    Examples:\n    image,video,post,comment,third_party_link,thumbnail,preview,subreddit_icon\n    **/\n    7: optional typedefs.StringLower content_type\n    /** User who deleted the content. Fullname of user. */\n    8: optional typedefs.Fullname removed_by_user_id\n    /** Subreddit id where content was reported. Fullname of subreddt. */\n    9: optional typedefs.Fullname subreddit_id\n    /**\n    The identifier for a reddar queue from where ticket is moved. i.e. Minor Sexualization\n\n    This field is a reddar queue's reddit_id. Prefix 'queues__'\n    followed by base36 value.\n    For example: 'queues__23b'\n    */\n    10: optional string original_queue_id\n    /**\n    The identifier for a reddar queue where ticket is moved. i.e. CP internal\n\n    This field is a reddar queue's reddit_id. Prefix 'queues__'\n    followed by base36 value.\n    For example: 'queues__23b'\n    */\n    11: optional string dest_queue_id\n    /** Indicates if reported content is confirmed CSAI or not. */\n    12: optional bool confirmed_csai\n    /** Indicates if content is reported to ncmec. If not null, then the value is ncmec_id. */\n    13: optional i64 ncmec_report_number\n    /** Full name of user who reported content. */\n    14: optional typedefs.Fullname reporter_id\n    /**\n    Permalink of post/comment/message url. Can be valid reddit url or an external url.\n    **/\n    15: optional string permalink\n}\n\n/**\nInformation regarding reroute rules in Reddar.\n\nA reroute rule defines how to reroute tickets from the original queue to a new queue\nwhen tickets match some specific reroute contitions.\n*/\nstruct RerouteRule{\n    /**\n    Required identifier for a reddar routing set.\n\n    This field is a reddar routing set's reddit_id. Prefix 'routing_sets__'\n    followed by base36 value.\n    For example: 'routing_sets__3a'\n    */\n    1: optional string id\n    /**\n    Type of tickets the routing set works on.\n\n    There are a large number of possible values for this field.\n    Please check events we currently have in BigQuery for values already in use.\n    */\n    2: optional typedefs.StringLower ticket_type\n    /**\n    Priority of the routing set when multiple routing sets match a ticket.\n\n    A lower number means higher priority.\n    */\n    3: optional i32 priority\n    /** ID of the queue the routing set will route tickets to. */\n    4: optional string target_queue_id\n}\n\n/** Information regarding queues in Reddar. */\nstruct ReddarQueue{\n    /**\n    The identifier for a reddar queue.\n\n    This field is a reddar queue's reddit_id. Prefix 'queues__'\n    followed by base36 value.\n    For example: 'queues__23b'\n    */\n    1: optional typedefs.StringLower id\n    /**\n    Type of a reddar queue.\n\n    Examples:\n    private_message_abuse,harassment,violence,ban_evasion,csai\n    appeal,legal_export,login_bot,configurable,photodna\n    bulk_action_job,delete_media,live_stream,terrorism\n    dmca,user_data_request,geo_block\n    */\n    2: optional typedefs.StringLower type\n    /**\n    Type of tickets a reddar queue contains.\n\n    There are a large number of possible values for this field.\n    Please check events we currently have in BigQuery for values already in use.\n    */\n    3: optional typedefs.StringLower ticket_type\n    /**\n    The group a reddar queue belongs to.\n\n    Examples:\n    anti_evil,ae_ops,legal_ops,community,swat,chat,reddar_tools,live_stream,award\n    */\n    4: optional typedefs.StringLower group_type\n    /** The human readable freeform text name of the queue. */\n    5: optional typedefs.StringLower name\n    /**\n    The level of priority the queue has.\n    P0 Blocker: Drop everything, this must be completed immediately.\n    P1 Critical: This is complex/important and must be done in a rush.\n    P2 Major: This is complex/important and has a fixed deadline.\n    P3 Minor: This needs to get done, but is not very time sensitive.\n\n    Examples:\n    p0,p1,p2,p3\n    */\n    6: optional typedefs.StringLower priority\n    /*\n    The numerical team ID which has access, represents a team based on teams from Okta.\n    */\n    // 7: optional i32 team_id DEPRECATED\n    /*\n    The human readable name of the team.\n    */\n    // 8: optional typedefs.StringLower team_name DEPRECATED\n    /*\n    The type of access granted or removed.\n\n    Examples:\n    readonly,write,restricted\n    */\n    // 9: optional typedefs.StringLower access_type DEPRECATED\n}\n\n/** Information regarding Admin teams at reddit and what kind of access they have.",
@@ -5015,7 +5384,7 @@
 						}
 					}
 				},
-				Re = {
+				Je = {
 					$id: "http://com.reddit/schemas/field_definitions/admin_action/c_s_a_i_media.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Information regarding google csai / microsoft photodna.",
@@ -5062,7 +5431,7 @@
 						}
 					}
 				},
-				De = {
+				Ye = {
 					$id: "http://com.reddit/schemas/field_definitions/admin_action/n_c_m_e_c_report.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Information regarding NCMEC reports, associated with content identification and takedown.",
@@ -5145,7 +5514,7 @@
 						}
 					}
 				},
-				Ie = {
+				Ke = {
 					$id: "http://com.reddit/schemas/field_definitions/afd_second/a_f_d_second.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represent the actions of Second, April Fools 2021",
@@ -5204,7 +5573,7 @@
 						}
 					}
 				},
-				Fe = {
+				Ze = {
 					$id: "http://com.reddit/schemas/field_definitions/announcement/announcement.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "An announcement, shown in the top carousel conditionally on all platforms.",
@@ -5223,7 +5592,7 @@
 						}
 					}
 				},
-				Oe = {
+				Xe = {
 					$id: "http://com.reddit/schemas/field_definitions/app_icons/app_icon.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Alternate App Icons",
@@ -5246,7 +5615,7 @@
 						}
 					}
 				},
-				Ce = {
+				et = {
 					$id: "http://com.reddit/schemas/field_definitions/atc/a_t_c.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "An Air Traffic Controller event.",
@@ -5281,7 +5650,7 @@
 						}
 					}
 				},
-				Ue = {
+				tt = {
 					$id: "http://com.reddit/schemas/field_definitions/audit/reddar_audit.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A struct representing a Reddar audit.",
@@ -5320,7 +5689,7 @@
 						}
 					}
 				},
-				ze = {
+				it = {
 					$id: "http://com.reddit/schemas/field_definitions/audit/reddar_audit_ticket.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A struct representing a Reddar audit ticket.",
@@ -5363,7 +5732,7 @@
 						}
 					}
 				},
-				Le = {
+				st = {
 					$id: "http://com.reddit/schemas/field_definitions/banner/banner.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A banner, either in web or mobile platforms.",
@@ -5378,7 +5747,7 @@
 						}
 					}
 				},
-				Ne = {
+				nt = {
 					$id: "http://com.reddit/schemas/field_definitions/bot_detection/bot_detection.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Model for bot detection.",
@@ -5397,7 +5766,7 @@
 						}
 					}
 				},
-				Me = {
+				ot = {
 					$id: "http://com.reddit/schemas/field_definitions/bulk_action_job/bulk_action_job.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Model for Reddar bulk action jobs.",
@@ -5448,7 +5817,7 @@
 						}
 					}
 				},
-				He = {
+				rt = {
 					$id: "http://com.reddit/schemas/field_definitions/bulk_messenger/bulk_messenger.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Information regarding Bulk Messenger job.",
@@ -5503,7 +5872,7 @@
 						}
 					}
 				},
-				Be = {
+				at = {
 					$id: "http://com.reddit/schemas/field_definitions/carousel/carousel.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A carousel is a horizontally scrolling content view.\n\nMost carousels are used to display posts and subreddits for discovery of new content.",
@@ -5518,7 +5887,7 @@
 						}
 					}
 				},
-				We = {
+				dt = {
 					$id: "http://com.reddit/schemas/field_definitions/category_header/category_header.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "The header used for certain categories on search results.",
@@ -5541,7 +5910,7 @@
 						}
 					}
 				},
-				Ve = {
+				ct = {
 					$id: "http://com.reddit/schemas/field_definitions/chat/chat.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields about live user chat.",
@@ -5660,7 +6029,7 @@
 						}
 					}
 				},
-				Qe = {
+				pt = {
 					$id: "http://com.reddit/schemas/field_definitions/chat/chat_home_feed_boosting.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields about chat home feed boosting event.",
@@ -5683,7 +6052,7 @@
 						}
 					}
 				},
-				Ge = {
+				mt = {
 					$id: "http://com.reddit/schemas/field_definitions/comment_draft/comment_draft.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Text of a comment before it is submitted.",
@@ -5694,7 +6063,7 @@
 						}
 					}
 				},
-				Je = {
+				_t = {
 					$id: "http://com.reddit/schemas/components/common.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields that apply to all event types.",
@@ -5754,7 +6123,7 @@
 						}
 					}
 				},
-				Ye = {
+				ht = {
 					$id: "http://com.reddit/schemas/field_definitions/content/comment.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics we would send as part of a comment.",
@@ -5809,7 +6178,7 @@
 						}
 					}
 				},
-				Ke = {
+				ft = {
 					$id: "http://com.reddit/schemas/field_definitions/content/comment_composer.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents fields specific to the comment creation form.",
@@ -5820,7 +6189,7 @@
 						}
 					}
 				},
-				Ze = {
+				lt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/edit.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Details of an edit made by a user to a piece of content.",
@@ -5831,7 +6200,7 @@
 						}
 					}
 				},
-				Xe = {
+				ut = {
 					$id: "http://com.reddit/schemas/field_definitions/content/gallery.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents a Media Gallery post, which collects many Media objects.",
@@ -5862,7 +6231,7 @@
 						}
 					}
 				},
-				et = {
+				gt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/listing.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics we would send as part of a listing page.",
@@ -5925,7 +6294,7 @@
 						}
 					}
 				},
-				tt = {
+				yt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/media.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields used in posted media.",
@@ -6044,7 +6413,7 @@
 						}
 					}
 				},
-				it = {
+				vt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/message.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: 'Type of discovery unit.\n\n    The type of carousel, usually "listing" or "subreddit_listing" or "comments_listing". However, some older\n    units have grandfathered unique types. This is an arbitrary lowercase string without spaces.\n    */\n    2: required typedefs.StringLower type\n    // 3: optional i64 number_posts DEPRECATED\n    // 4: optional list<typedefs.Fullname> posts_shown DEPRECATED\n    // 6: optional i64 post_position DEPRECATED\n    // 7: optional typedefs.StringLower post_type DEPRECATED\n    // 8: optional typedefs.StringLower post_subreddit DEPRECATED\n    /**\n    The unique identifier of the discovery unit as outlined on the config wiki.\n\n    This is an arbitrary string, but generally should be in the format of "xd_X"\n    where X is a number or text identifier.\n    */\n    9: required string id\n    /** The displayed title of the carousel, this will be an arbitrary string. */\n    10: optional string title\n    /**\n    The carousel\'s unique english name used for analytics.\n\n    This is an arbitrary lowercase string without spaces.\n    */\n    11: required typedefs.StringLower name\n    /** A list of fullnames for each item presented in the discovery unit. */\n    12: optional list<typedefs.Fullname> items\n}\n\n/** A private message sent between Redditors.',
@@ -6107,7 +6476,7 @@
 						}
 					}
 				},
-				st = {
+				bt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/news.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents news topics and subtopics.",
@@ -6130,7 +6499,7 @@
 						}
 					}
 				},
-				nt = {
+				wt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/notification.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents a notification, mostly used for mobile platforms.",
@@ -6165,7 +6534,7 @@
 						}
 					}
 				},
-				ot = {
+				jt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/onboarding.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields related to the onboarding flow.",
@@ -6276,7 +6645,7 @@
 						}
 					}
 				},
-				rt = {
+				$t = {
 					$id: "http://com.reddit/schemas/field_definitions/content/post.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics of a post (aka a link).",
@@ -6419,7 +6788,7 @@
 						}
 					}
 				},
-				at = {
+				kt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/post_collection.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Details of a PostCollection (collection of posts).",
@@ -6446,7 +6815,7 @@
 						}
 					}
 				},
-				dt = {
+				xt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/post_composer.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents fields specific to the post creation form.",
@@ -6481,7 +6850,7 @@
 						}
 					}
 				},
-				ct = {
+				qt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/post_event.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Details of a PostEvent (scheduled post) for amas/shows.",
@@ -6504,7 +6873,7 @@
 						}
 					}
 				},
-				pt = {
+				Pt = {
 					$id: "http://com.reddit/schemas/field_definitions/content/view_stats.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Describing stats about a user's browsing experience on a page",
@@ -6519,7 +6888,7 @@
 						}
 					}
 				},
-				mt = {
+				Et = {
 					$id: "http://com.reddit/schemas/field_definitions/content/vote.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Details about a vote, e.g. if it affects karma.",
@@ -6534,7 +6903,7 @@
 						}
 					}
 				},
-				_t = {
+				Tt = {
 					$id: "http://com.reddit/schemas/field_definitions/content_tag/content_tag.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: 'Model for ContentTag data.\n\nThis struct is used to capture event tracking data based on the subreddits "Content Rating".\nSee https://reddit.atlassian.net/browse/CACTI-4464.\n\nThe subreddit moderators can take a survey we render to them in the UI, and upon submission we will fire v2 events that\ncontain some information about their survey responses and the associated mature themes.',
@@ -6557,7 +6926,7 @@
 						}
 					}
 				},
-				ht = {
+				St = {
 					$id: "http://com.reddit/schemas/field_definitions/crawler/crawler.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields related to crawlers.",
@@ -6568,7 +6937,7 @@
 						}
 					}
 				},
-				ft = {
+				At = {
 					$id: "http://com.reddit/schemas/field_definitions/crowd_control/crowd_control.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Data associated with the Crowd Control feature",
@@ -6583,7 +6952,7 @@
 						}
 					}
 				},
-				lt = {
+				Rt = {
 					$id: "http://com.reddit/schemas/field_definitions/crowd_source/crowd_source.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Model for Crowd-sourced data.",
@@ -6622,7 +6991,7 @@
 						}
 					}
 				},
-				ut = {
+				Dt = {
 					$id: "http://com.reddit/schemas/field_definitions/custom_feed/custom_feed.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields related to custom feeds, a.k.a. multi-reddits.",
@@ -6657,7 +7026,7 @@
 						}
 					}
 				},
-				gt = {
+				It = {
 					$id: "http://com.reddit/schemas/field_definitions/device/app.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Application information.",
@@ -6684,7 +7053,7 @@
 						}
 					}
 				},
-				yt = {
+				Ft = {
 					$id: "http://com.reddit/schemas/field_definitions/device/platform.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Platform information.",
@@ -6743,7 +7112,7 @@
 						}
 					}
 				},
-				vt = {
+				Ot = {
 					$id: "http://com.reddit/schemas/field_definitions/device/screen.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Client machine display/screen characteristics.",
@@ -6802,7 +7171,7 @@
 						}
 					}
 				},
-				bt = {
+				Ct = {
 					$id: "http://com.reddit/schemas/field_definitions/domain_ban/domain_ban.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Information regarding Domain Bans.",
@@ -6849,7 +7218,7 @@
 						}
 					}
 				},
-				wt = {
+				Ut = {
 					$id: "http://com.reddit/schemas/field_definitions/econ/purchase.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Attributes of buy or cancel actions for digital products.",
@@ -6900,7 +7269,7 @@
 						}
 					}
 				},
-				jt = {
+				zt = {
 					$id: "http://com.reddit/schemas/field_definitions/email/email.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the attributes of email and posts sent in an email.",
@@ -6931,7 +7300,7 @@
 						}
 					}
 				},
-				$t = {
+				Lt = {
 					$id: "http://com.reddit/schemas/field_definitions/experiment/click_test.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Tracks outcomes from dialog test modals we show to site visitors.\n\nFor example, we might ask users if they would pay for a certain new feature,\nor assess relative interest across a few potential product plans.",
@@ -6966,7 +7335,7 @@
 						}
 					}
 				},
-				kt = {
+				Nt = {
 					$id: "http://com.reddit/schemas/field_definitions/experiment/experiment.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Struct for experiment related fields.",
@@ -7041,7 +7410,7 @@
 						}
 					}
 				},
-				xt = {
+				Mt = {
 					$id: "http://com.reddit/schemas/field_definitions/feature/feature.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the feature (code) that sends the event.\n\nThis struct can be used to distinguish between events sent from\ndifferent versions of the same feature.\n\nThis is especially useful for events that would be otherwise\nimpossible to distinguish which version of the code/feature\nfired the event.",
@@ -7060,7 +7429,7 @@
 						}
 					}
 				},
-				qt = {
+				Ht = {
 					$id: "http://com.reddit/schemas/field_definitions/feed/feed.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics of a feed (home, popular, all).",
@@ -7079,7 +7448,7 @@
 						}
 					}
 				},
-				Pt = {
+				Bt = {
 					$id: "http://com.reddit/schemas/field_definitions/funding_instrument/funding_instrument.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Funding instrument - entity that back all advertisers ad delivery with a funding source",
@@ -7226,7 +7595,7 @@
 						}
 					}
 				},
-				Et = {
+				Wt = {
 					$id: "http://com.reddit/schemas/field_definitions/geo_block/geo_block.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Model for Geo Blocks.",
@@ -7245,7 +7614,7 @@
 						}
 					}
 				},
-				Tt = {
+				Vt = {
 					$id: "http://com.reddit/schemas/field_definitions/gold/gold_purchase.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics of gold purchase actions.",
@@ -7327,7 +7696,7 @@
 						type: {
 							type: "string",
 							description: "Type of Premium subscription, gilding, or coin purchase.",
-							enums: ["one_time", "subscription", "creddits", "new", "renew", "gift_code", "gid_1", "gid_2", "gid_3", "gid_mod", "gid_community", "gid_appreciation", "gid_premium", "gid_group", "gid_global", "gid_unknown", "coins_gid_mod", "coins_gid_community", "coins_gid_appreciation", "coins_gid_premium", "coins_gid_global", "coins_gid_unknown", "coins_gid_1", "coins_gid_2", "coins_gid_3", "premium", "coins", "buy_premium", "renew_premium", "admin_transfer", "buy_coins", "purchase_award", "receive_award", "non_paying_drip", "receive_premium", "purchase_premium_via_coins", "gold_purchase", "poll_predict"]
+							enums: ["one_time", "subscription", "creddits", "new", "renew", "gift_code", "gid_1", "gid_2", "gid_3", "gid_mod", "gid_community", "gid_appreciation", "gid_premium", "gid_group", "gid_global", "gid_unknown", "coins_gid_mod", "coins_gid_community", "coins_gid_appreciation", "coins_gid_premium", "coins_gid_global", "coins_gid_unknown", "coins_gid_1", "coins_gid_2", "coins_gid_3", "premium", "coins", "buy_premium", "renew_premium", "admin_transfer", "buy_coins", "purchase_award", "receive_award", "non_paying_drip", "receive_premium", "purchase_premium_via_coins", "gold_purchase", "poll_predict", "free_trial"]
 						},
 						award_id: {
 							type: "string",
@@ -7350,7 +7719,7 @@
 						}
 					}
 				},
-				St = {
+				Qt = {
 					$id: "http://com.reddit/schemas/field_definitions/grapeshot_classification/grapeshot_classification.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics of a post classification from Grapeshot.",
@@ -7361,7 +7730,7 @@
 						}
 					}
 				},
-				At = {
+				Gt = {
 					$id: "http://com.reddit/schemas/field_definitions/imposter/imposter.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represent the actions of Imposter, April Fools 2020",
@@ -7396,7 +7765,7 @@
 						}
 					}
 				},
-				Rt = {
+				Jt = {
 					$id: "http://com.reddit/schemas/field_definitions/inbox/inbox.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields for the client and server side notifications inbox.",
@@ -7423,7 +7792,7 @@
 						}
 					}
 				},
-				Dt = {
+				Yt = {
 					$id: "http://com.reddit/schemas/field_definitions/legal_export_request/legal_export_request.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Model for legal export requests.",
@@ -7498,7 +7867,7 @@
 						}
 					}
 				},
-				It = {
+				Kt = {
 					$id: "http://com.reddit/schemas/field_definitions/live_thread/live_thread.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Live Threads are ongoing events that pop up in reddit.com/live\n\nLive threads are also used for annoucements for some reason.",
@@ -7513,7 +7882,7 @@
 						}
 					}
 				},
-				Ft = {
+				Zt = {
 					$id: "http://com.reddit/schemas/field_definitions/liveaudio/live_audio_room.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Room used for real-time voice communication",
@@ -7536,7 +7905,7 @@
 						}
 					}
 				},
-				Ot = {
+				Xt = {
 					$id: "http://com.reddit/schemas/field_definitions/liveaudio/live_audio_room_user.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "User that communicates in liveaudio room",
@@ -7551,7 +7920,7 @@
 						}
 					}
 				},
-				Ct = {
+				ei = {
 					$id: "http://com.reddit/schemas/field_definitions/metaflair/meta_flair.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: 'Flairs defined by Reddit.\n\nMeta Flair is the more generalized replacement for Subreddit Categories. Meta Flairs have an ID and a title, and\nshould be viewed in a similar scope to a "Post" or a "Subreddit" as it is a specific piece of content that the user\nmay click or view.',
@@ -7566,7 +7935,7 @@
 						}
 					}
 				},
-				Ut = {
+				ti = {
 					$id: "http://com.reddit/schemas/field_definitions/metasearch/meta_search.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: 'A content item used to represent a "Search" item, such as a trending search item.',
@@ -7621,7 +7990,7 @@
 						}
 					}
 				},
-				zt = {
+				ii = {
 					$id: "http://com.reddit/schemas/field_definitions/midas/content_metadata.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Midas content metadata.",
@@ -7640,7 +8009,7 @@
 						}
 					}
 				},
-				Lt = {
+				si = {
 					$id: "http://com.reddit/schemas/field_definitions/midas/geo.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Midas-enriched geographical fields.",
@@ -7687,7 +8056,7 @@
 						}
 					}
 				},
-				Nt = {
+				ni = {
 					$id: "http://com.reddit/schemas/field_definitions/midas/inferred.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Midas-inferred fields. Like all Midas-enriched fields, this should never be set by clients.",
@@ -7718,7 +8087,7 @@
 						}
 					}
 				},
-				Mt = {
+				oi = {
 					$id: "http://com.reddit/schemas/field_definitions/midas/link_sharing.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Midas-enriched link sharing.",
@@ -7729,7 +8098,7 @@
 						}
 					}
 				},
-				Ht = {
+				ri = {
 					$id: "http://com.reddit/schemas/field_definitions/midas/url_parsed.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Midas-enriched url parsing.",
@@ -7768,7 +8137,7 @@
 						}
 					}
 				},
-				Bt = {
+				ai = {
 					$id: "http://com.reddit/schemas/field_definitions/ml_model/m_l_model.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A prediction made by an internal machine learning model.",
@@ -7811,7 +8180,7 @@
 						}
 					}
 				},
-				Wt = {
+				di = {
 					$id: "http://com.reddit/schemas/field_definitions/moderator/mod_action.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics of a moderator action.",
@@ -7834,7 +8203,7 @@
 						}
 					}
 				},
-				Vt = {
+				ci = {
 					$id: "http://com.reddit/schemas/field_definitions/mute/mute.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents information about mute history and length for the associated mute.",
@@ -7853,7 +8222,7 @@
 						}
 					}
 				},
-				Qt = {
+				pi = {
 					$id: "http://com.reddit/schemas/field_definitions/navigation_session/navigation_session.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents a series of chained engagements with posts for full bleed player",
@@ -7872,7 +8241,7 @@
 						}
 					}
 				},
-				Gt = {
+				mi = {
 					$id: "http://com.reddit/schemas/field_definitions/notification/mailroom_request.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields for the Mailroom service that may trigger sending one or more notifications.",
@@ -7915,7 +8284,7 @@
 						}
 					}
 				},
-				Jt = {
+				_i = {
 					$id: "http://com.reddit/schemas/field_definitions/notification/messenger_request.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields for the Messenger service that may trigger sending one or more notifications.",
@@ -7934,7 +8303,7 @@
 						}
 					}
 				},
-				Yt = {
+				hi = {
 					$id: "http://com.reddit/schemas/field_definitions/notification/notification_request.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields about notifications or manage notification resources such as push tokens.",
@@ -7969,7 +8338,7 @@
 						}
 					}
 				},
-				Kt = {
+				fi = {
 					$id: "http://com.reddit/schemas/field_definitions/outbound/outbound.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Information about visiting outbound urls.",
@@ -8000,7 +8369,7 @@
 						}
 					}
 				},
-				Zt = {
+				li = {
 					$id: "http://com.reddit/schemas/field_definitions/payment/payment.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics of any event that involves a purchase.",
@@ -8027,7 +8396,7 @@
 						}
 					}
 				},
-				Xt = {
+				ui = {
 					$id: "http://com.reddit/schemas/field_definitions/perspective/perspective.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Perspective is an API provided by TODO that does NLP on comments provides\nlabels",
@@ -8170,7 +8539,7 @@
 						}
 					}
 				},
-				ei = {
+				gi = {
 					$id: "http://com.reddit/schemas/field_definitions/playback/playback.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents fields related to a specific user's interactions with a video.",
@@ -8229,7 +8598,7 @@
 						}
 					}
 				},
-				ti = {
+				yi = {
 					$id: "http://com.reddit/schemas/field_definitions/poll/poll.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Details about a poll in poll post.",
@@ -8272,7 +8641,7 @@
 						}
 					}
 				},
-				ii = {
+				vi = {
 					$id: "http://com.reddit/schemas/field_definitions/popup/popup.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "A popup, either in web or mobile platforms.\n\nThis can take the form of a system popup or client popup and may require the\nuser to perform an action.",
@@ -8291,7 +8660,7 @@
 						}
 					}
 				},
-				si = {
+				bi = {
 					$id: "http://com.reddit/schemas/field_definitions/post_draft/post_draft.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents the characteristics of a post draft.",
@@ -8350,7 +8719,7 @@
 						}
 					}
 				},
-				ni = {
+				wi = {
 					$id: "http://com.reddit/schemas/field_definitions/post_requirement/post_requirement.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Requirements for a post to be submitted to a subreddit.",
@@ -8409,7 +8778,7 @@
 						}
 					}
 				},
-				oi = {
+				ji = {
 					$id: "http://com.reddit/schemas/field_definitions/postflair/post_flair.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Flairs defined by users for a subreddit.\n\nPost flair is the flair that users assign to a post. Post flair is unique to a subreddit.",
@@ -8424,7 +8793,7 @@
 						}
 					}
 				},
-				ri = {
+				$i = {
 					$id: "http://com.reddit/schemas/field_definitions/powerups/powerups.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Attributes of powerups related actions: allocation, deallocation, subreddit tier up and down.",
@@ -8475,7 +8844,7 @@
 						}
 					}
 				},
-				ai = {
+				ki = {
 					$id: "http://com.reddit/schemas/field_definitions/predictions/predictions.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Attributes of predictions related actions: end, save, submit, discard.",
@@ -8490,7 +8859,7 @@
 						}
 					}
 				},
-				di = {
+				xi = {
 					$id: "http://com.reddit/schemas/field_definitions/progress_module/progress_module.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Represents fields specific to Communnity Progress Module.\n\nA Community Progress Module is a series of action cards on iOS, Android, and d2x that\nhelp moderators to take actions that are most likely to build a successful community.",
@@ -8505,7 +8874,7 @@
 						}
 					}
 				},
-				ci = {
+				qi = {
 					$id: "http://com.reddit/schemas/field_definitions/pwa/p_w_a.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Fields related to Progressive Web App (PWA) features.",
@@ -8524,7 +8893,7 @@
 						}
 					}
 				},
-				pi = {
+				Pi = {
 					$id: "http://com.reddit/schemas/field_definitions/rater_tag/rater_tag.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "This struct is used to capture community topic tag info.",
@@ -8571,7 +8940,7 @@
 						}
 					}
 				},
-				mi = {
+				Ei = {
 					$id: "http://com.reddit/schemas/field_definitions/relevance/relevance_model.json",
 					$schema: "http://json-schema.org/draft-07/schema#",
 					description: "Relevance model schema.\n\nInformation about the usage and performance of relevance models.",
@@ -8606,7 +8975,7 @@
 						}
 					}
 				};
-			const _i = [s, n, o, r, a, d, c, p, m, _, h, f, l, u, g, y, v, b, w, j, $, k, x, q, P, E, T, S, A, R, D, I, F, O, C, U, z, L, N, M, H, B, W, V, Q, G, J, Y, K, Z, X, ee, te, ie, se, ne, oe, re, ae, de, ce, pe, me, _e, he, fe, le, ue, ge, ye, ve, be, we, je, $e, ke, xe, qe, Pe, Ee, Te, Se, Ae, Re, De, Ie, Fe, Oe, Ce, Ue, ze, Le, Ne, Me, He, Be, We, Ve, Qe, Ge, Je, Ye, Ke, Ze, Xe, et, tt, it, st, nt, ot, rt, at, dt, ct, pt, mt, _t, ht, ft, lt, ut, gt, yt, vt, bt, wt, jt, $t, kt, xt, qt, Pt, Et, Tt, St, At, Rt, Dt, It, Ft, Ot, Ct, Ut, zt, Lt, Nt, Mt, Ht, Bt, Wt, Vt, Qt, Gt, Jt, Yt, Kt, Zt, Xt, ei, ti, ii, si, ni, oi, ri, ai, di, ci, pi, mi, {
+			const Ti = [s, n, o, r, a, d, c, p, m, _, h, f, l, u, g, y, v, b, w, j, $, k, x, q, P, E, T, S, A, R, D, I, F, O, C, U, z, L, N, M, H, B, W, V, Q, G, J, Y, K, Z, X, ee, te, ie, se, ne, oe, re, ae, de, ce, pe, me, _e, he, fe, le, ue, ge, ye, ve, be, we, je, $e, ke, xe, qe, Pe, Ee, Te, Se, Ae, Re, De, Ie, Fe, Oe, Ce, Ue, ze, Le, Ne, Me, He, Be, We, Ve, Qe, Ge, Je, Ye, Ke, Ze, Xe, et, tt, it, st, nt, ot, rt, at, dt, ct, pt, mt, _t, ht, ft, lt, ut, gt, yt, vt, bt, wt, jt, $t, kt, xt, qt, Pt, Et, Tt, St, At, Rt, Dt, It, Ft, Ot, Ct, Ut, zt, Lt, Nt, Mt, Ht, Bt, Wt, Vt, Qt, Gt, Jt, Yt, Kt, Zt, Xt, ei, ti, ii, si, ni, oi, ri, ai, di, ci, pi, mi, _i, hi, fi, li, ui, gi, yi, vi, bi, wi, ji, $i, ki, xi, qi, Pi, Ei, {
 				$id: "http://com.reddit/schemas/field_definitions/report/report.json",
 				$schema: "http://json-schema.org/draft-07/schema#",
 				description: "Represents the characteristics of a user report of content on site.",
@@ -13227,4 +13596,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~AdminPanel.e6e59f93c311ab1cce5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~AdminPanel.eae9f345b12b82989d37.js.map
