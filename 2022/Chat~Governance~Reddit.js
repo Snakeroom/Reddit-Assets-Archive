@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.11bc3ee9e22571e95620.js
-// Retrieved at 4/6/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6063fd497c13c125db93.js
+// Retrieved at 4/6/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("161992"),
+				buildNumber: Object(r.c)("161995"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1649277738"),
+				buildTimestamp: Object(r.b)("1649279793"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5532,11 +5532,11 @@
 		},
 		"./src/lib/countrySites/index.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "b", (function() {
+			i.d(t, "a", (function() {
 				return d
 			})), i.d(t, "c", (function() {
 				return a
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "b", (function() {
 				return l
 			}));
 			var n = i("./src/lib/isFakeSubreddit/index.ts"),
@@ -6074,14 +6074,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cedd97741298b3b853c38e600a2121ed4c3d4e1f1-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cdf23c43ba65858b8e35d8cac962a8c9b94d10301-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "edd97741298b3b853c38e600a2121ed4c3d4e1f1-production",
+						release: "df23c43ba65858b8e35d8cac962a8c9b94d10301-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6690,7 +6690,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "edd97741298b3b853c38e600a2121ed4c3d4e1f1-production",
+							releaseClient: "df23c43ba65858b8e35d8cac962a8c9b94d10301-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -33679,7 +33679,7 @@
 				u = Object.keys(o.W).map(e => `/r/:subredditName/:sort(${o.W[e]})?`),
 				c = "/r/:subredditName/predictions";
 			let _ = ["/r/:subredditName", c, ...u];
-			_ = Object(d.b)(_);
+			_ = Object(d.a)(_);
 			const m = _,
 				p = {
 					action: Object(a.a)(() => Promise.all([i.e("vendors~Governance~ModListing~Reddit~Subreddit"), i.e("vendors~PostCreation~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), i.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), i.e("Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"), i.e("Governance~ModListing~Reddit~ReportFlow~Subreddit"), i.e("CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"), i.e("ModListing~Reddit~Subreddit"), i.e("Frontpage~ModListing~Subreddit"), i.e("Subreddit")]).then(i.bind(null, "./src/reddit/actions/pages/subreddit.ts")).then(e => e.subredditRequested)),
@@ -44102,82 +44102,85 @@
 		"./src/server/helpers/canonicalUrl.tsx": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return f
-			})), i.d(t, "b", (function() {
 				return b
+			})), i.d(t, "b", (function() {
+				return g
 			}));
 			var n = i("./src/config.ts"),
 				r = i("./src/lib/constants/index.ts"),
-				s = i("./src/lib/isAdHocMultireddit/index.ts"),
-				o = i("./src/lib/isFakeSubreddit/index.ts"),
-				d = i("./src/reddit/constants/topic.ts"),
-				a = i("./src/reddit/helpers/canonicalUrls.ts"),
-				l = i("./src/reddit/models/Post/index.ts"),
-				u = i("./src/reddit/selectors/postCollection.ts"),
-				c = i("./src/reddit/selectors/posts.ts"),
-				_ = i("./src/reddit/selectors/profile.ts"),
-				m = i("./src/reddit/selectors/subreddit.ts"),
-				p = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
-				h = i.n(p);
-			const f = e => e.endsWith("/") ? e : `${e}/`,
-				b = e => {
+				s = i("./src/lib/countrySites/index.ts"),
+				o = i("./src/lib/isAdHocMultireddit/index.ts"),
+				d = i("./src/lib/isFakeSubreddit/index.ts"),
+				a = i("./src/reddit/constants/topic.ts"),
+				l = i("./src/reddit/helpers/canonicalUrls.ts"),
+				u = i("./src/reddit/models/Post/index.ts"),
+				c = i("./src/reddit/selectors/postCollection.ts"),
+				_ = i("./src/reddit/selectors/posts.ts"),
+				m = i("./src/reddit/selectors/profile.ts"),
+				p = i("./src/reddit/selectors/subreddit.ts"),
+				h = i("./node_modules/node-libs-browser/node_modules/url/url.js"),
+				f = i.n(h);
+			const b = e => e.endsWith("/") ? e : `${e}/`,
+				g = e => {
 					var t, i;
-					const p = e.platform.currentPage;
-					if (!p) return null;
-					const b = null === (i = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.routeMatch) || void 0 === i ? void 0 : i.route.meta.name;
-					switch (b) {
+					const h = e.platform.currentPage;
+					if (!h) return null;
+					const g = null === (i = null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.routeMatch) || void 0 === i ? void 0 : i.route.meta.name;
+					switch (g) {
 						case r.Nb.INDEX:
 						case r.Nb.LISTING:
-							return p.routeMatch && p.routeMatch.route.chunk === r.s.FRONTPAGE ? f(n.a.redditUrl) : null;
+							return h.routeMatch && h.routeMatch.route.chunk === r.s.FRONTPAGE ? b(n.a.redditUrl) : null;
 						case r.Nb.SUBREDDIT:
 							const {
 								subredditName: t
-							} = p.urlParams, i = t && Object(m.d)(e, {
+							} = h.urlParams, i = t && Object(p.d)(e, {
 								subredditName: t
 							});
-							if (Object(o.a)(t) && Object(s.a)(t)) {
-								const i = Object(a.a)(e, t);
+							if (Object(d.a)(t) && Object(o.a)(t)) {
+								const i = Object(l.a)(e, t);
 								return i ? n.a.redditUrl + i : null
 							}
 							return i ? `${n.a.redditUrl}${i}` : null;
 						case r.Nb.COMMENTS:
 						case r.Nb.DUPLICATES:
 							const {
-								partialPostId: g
-							} = p.urlParams, w = g && Object(l.t)(g), v = w && Object(c.F)(e, {
-								postId: w
+								partialPostId: w
+							} = h.urlParams, v = w && Object(u.t)(w), y = v && Object(_.F)(e, {
+								postId: v
 							});
-							return v ? `${n.a.redditUrl}${h.a.parse(v).path}` : null;
+							return y ? `${n.a.redditUrl}${f.a.parse(y).path}` : null;
 						case r.Nb.PROFILE_OVERVIEW:
 						case r.Nb.PROFILE_POSTS:
 						case r.Nb.PROFILE_COMMENTS:
 							const {
-								profileName: y
-							} = p.urlParams, E = Object(_.j)(e, {
-								profileName: y
+								profileName: E
+							} = h.urlParams, S = Object(m.j)(e, {
+								profileName: E
 							});
-							let S = "";
-							return b === r.Nb.PROFILE_POSTS ? S = "posts/" : b === r.Nb.PROFILE_COMMENTS && (S = "comments/"), E && E.url ? `${n.a.redditUrl}${h.a.parse(E.url).path}${S}` : null;
+							let T = "";
+							return g === r.Nb.PROFILE_POSTS ? T = "posts/" : g === r.Nb.PROFILE_COMMENTS && (T = "comments/"), S && S.url ? `${n.a.redditUrl}${f.a.parse(S.url).path}${T}` : null;
 						case r.Nb.COLLECTION_COMMENTS:
 							const {
-								collectionId: T
-							} = p.urlParams, O = T && Object(u.q)(e, {
-								collectionId: T
-							}), I = O && O.permalink;
-							return I ? `${n.a.redditUrl}${h.a.parse(f(I)).path}` : null;
+								collectionId: O
+							} = h.urlParams, I = O && Object(c.q)(e, {
+								collectionId: O
+							}), R = I && I.permalink;
+							return R ? `${n.a.redditUrl}${f.a.parse(b(R)).path}` : null;
 						case r.Nb.SUBREDDIT_LEADERBOARD:
-							return p.routeMatch && p.routeMatch.route.chunk === r.s.SUBREDDIT_LEADERBOARD ? `${n.a.redditUrl}/subreddits/leaderboard/` : null;
+							return h.routeMatch && h.routeMatch.route.chunk === r.s.SUBREDDIT_LEADERBOARD ? `${n.a.redditUrl}/subreddits/leaderboard/` : null;
 						case r.Nb.TOPIC:
 							const {
-								topicSlug: R
-							} = p.urlParams;
-							return R ? `${n.a.redditUrl}${Object(d.a)(R)}` : null;
+								topicSlug: F
+							} = h.urlParams;
+							return F ? `${n.a.redditUrl}${Object(a.a)(F)}` : null;
 						case r.Nb.AVATAR:
 						case r.Nb.COINS:
 						case r.Nb.POWERUPS:
 						case r.Nb.PREMIUM:
 						case r.Nb.TALK:
-							return `${n.a.redditUrl}/${b}`;
+							return `${n.a.redditUrl}/${g}`;
+						case r.Nb.INTERNATIONAL_SITE_PAGE:
+							return Object(s.b)("/", h.urlParams.countryCode, h.urlParams.languageCode);
 						default:
 							return null
 					}
@@ -48261,4 +48264,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.11bc3ee9e22571e95620.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.6063fd497c13c125db93.js.map

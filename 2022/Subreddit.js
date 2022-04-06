@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.016552bdfae72ffb41f6.js
-// Retrieved at 4/6/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c2b15d5f137264510356.js
+// Retrieved at 4/6/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -14632,7 +14632,7 @@
 					} = this.props, G = this.memoizedGetInjectChildren(this.props), q = Object(v.a)(T, {
 						countryCode: null == t ? void 0 : t.countryCode,
 						languageCode: null == t ? void 0 : t.languageCode
-					}), $ = T.toLowerCase(), ne = k && k.url ? k.url : Object(Qe.a)(`/r/${T}/`, null == t ? void 0 : t.countryCode, null == t ? void 0 : t.languageCode), ie = Object(h.a)({
+					}), $ = T.toLowerCase(), ne = k && k.url ? k.url : Object(Qe.b)(`/r/${T}/`, null == t ? void 0 : t.countryCode, null == t ? void 0 : t.languageCode), ie = Object(h.a)({
 						countryCode: Je.a,
 						languageCode: Je.b,
 						hardcodedPath: ne,
@@ -15924,4 +15924,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.016552bdfae72ffb41f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c2b15d5f137264510356.js.map
