@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.0a818bde991a770b42db.js
-// Retrieved at 3/29/2022, 7:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.32738be93c932f1edf60.js
+// Retrieved at 4/6/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -531,20 +531,25 @@
 				o = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				s = n.n(o);
 			t.a = function(e) {
+				var t;
 				const {
-					source: t,
-					isSponsored: n,
-					domainOverride: o
+					source: n,
+					isSponsored: o,
+					domainOverride: i,
+					callToAction: a
 				} = e;
-				let i = "";
-				if (n) {
-					if (t && t.displayText) return t.displayText.length > 30 ? t.displayText.substring(0, 30) + "..." : t.displayText;
-					i = o || Object(r.D)(e)
-				} else i = Object(r.D)(e);
-				const a = s.a.parse(i),
-					c = a.path || "",
-					d = c.length > 7 ? c.substring(0, 7) + "..." : c;
-				return (a.hostname ? a.hostname.replace("www.", "") : "") + d
+				let c = "";
+				if (o) {
+					if (n && n.displayText) {
+						const e = 36 - (null !== (t = null == a ? void 0 : a.length) && void 0 !== t ? t : 0);
+						return n.displayText.length > e ? n.displayText.substring(0, e - 3) + "..." : n.displayText
+					}
+					c = i || Object(r.D)(e)
+				} else c = Object(r.D)(e);
+				const d = s.a.parse(c),
+					l = d.path || "",
+					u = l.length > 7 ? l.substring(0, 7) + "..." : l;
+				return (d.hostname ? d.hostname.replace("www.", "") : "") + u
 			}
 		},
 		"./src/lib/timeUntil/index.ts": function(e, t, n) {
@@ -3727,4 +3732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.0a818bde991a770b42db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.32738be93c932f1edf60.js.map

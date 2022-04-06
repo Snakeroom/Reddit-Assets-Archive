@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.3e46df73807d9ff498c3.js
-// Retrieved at 4/6/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.e17d6d271d0b5f0861b5.js
+// Retrieved at 4/6/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
+		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
 		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
-		for (m && m(o); b.length;) b.shift()();
+		for (m && m(o); P.length;) P.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
@@ -841,7 +841,7 @@
 					"ChatMessageInput~ChatPost": "a8c9b80c3bceac2f4a57",
 					ChatPost: "859a53fcc6f78cda9b2f",
 					"reddit-components-SidebarNativeAd": "82e64da5df3e9327e80d",
-					CommentsPageNativeAd: "0c6076c704854e8dda3e",
+					CommentsPageNativeAd: "357595017fc43cd4d506",
 					CreatorStats: "fc289fcf410b54fa42e2",
 					CrosspostRecommendationsModal: "f6e6c32ec886f6460bd5",
 					EconomicsSubredditPremiumSidebarCards: "d3cfb7f4390aa37c3be6",
@@ -970,12 +970,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
 			}
-			var b = document.createElement("link");
-			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
+			var P = document.createElement("link");
+			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
 				var a = o && o.target && o.target.src || d,
 					i = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], b.parentNode.removeChild(b), t(i)
-			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], P.parentNode.removeChild(P), t(i)
+			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
 		})).then((function() {
 			n[e] = 0
 		})));
@@ -1477,7 +1477,7 @@
 						HarbergerTaxManageModal: "f94ecb2d2a10456b3532",
 						SubredditPremiumUploadModal: "f6b6bf45815dc4e6a756",
 						"vendors~PostCreation~Subreddit": "0bcea02e0168fc22fa2f",
-						PostCreation: "3ae8f20c7ab28d4df229",
+						PostCreation: "11fe0a34d813c8da3de0",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "4af28f818270a434061f",
 						Settings: "9bd865b49664ed237463",
@@ -1525,8 +1525,8 @@
 						"vendors~dashjs": "5a01e5ebb9c581c55bfe",
 						"ChatMessageInput~ChatPost": "5417f2b38a155c730f69",
 						ChatPost: "dd8e0649775ed602abb4",
-						"reddit-components-SidebarNativeAd": "0a818bde991a770b42db",
-						CommentsPageNativeAd: "a78a79e1ea4348722497",
+						"reddit-components-SidebarNativeAd": "32738be93c932f1edf60",
+						CommentsPageNativeAd: "1a905e1375e9cff67093",
 						CreatorStats: "ed9587f4f8c40b0d932d",
 						CrosspostRecommendationsModal: "8d55643f88adc9694002",
 						EconomicsSubredditPremiumSidebarCards: "12fbfd1bca4b1a52495a",
@@ -1616,8 +1616,8 @@
 						PushNotificationSettings: "7f5d9f50f60c40708487",
 						UpdateCardModal: "27fc77a3dd0ae67b8db0",
 						"reddit-components-Settings-CreatePasswordSSOModal": "438f5bf84897fb375edf",
-						SubredditTopContent: "98a7f266c29b58922a43",
-						TopWeekPostsDiscoveryUnit: "0bcec9c27e4560d180ca",
+						SubredditTopContent: "4f13d5a10beaf3adbe97",
+						TopWeekPostsDiscoveryUnit: "ef2099d90b71d50d8a93",
 						"reddit-components-AdHocMultiredditSidebar": "f8ad61ee9960891684ef",
 						FrontpageSidebar: "bce85648dcd8bbd34d8e",
 						RelatedSubredditsCarousel: "1b4e18211ddf036e4f75",
@@ -1711,4 +1711,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.3e46df73807d9ff498c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.e17d6d271d0b5f0861b5.js.map

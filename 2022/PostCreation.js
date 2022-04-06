@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.3ae8f20c7ab28d4df229.js
-// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.11fe0a34d813c8da3de0.js
+// Retrieved at 4/6/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -693,20 +693,25 @@
 				r = n("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				s = n.n(r);
 			t.a = function(e) {
+				var t;
 				const {
-					source: t,
-					isSponsored: n,
-					domainOverride: r
+					source: n,
+					isSponsored: r,
+					domainOverride: a,
+					callToAction: i
 				} = e;
-				let a = "";
-				if (n) {
-					if (t && t.displayText) return t.displayText.length > 30 ? t.displayText.substring(0, 30) + "..." : t.displayText;
-					a = r || Object(o.D)(e)
-				} else a = Object(o.D)(e);
-				const i = s.a.parse(a),
-					c = i.path || "",
-					d = c.length > 7 ? c.substring(0, 7) + "..." : c;
-				return (i.hostname ? i.hostname.replace("www.", "") : "") + d
+				let c = "";
+				if (r) {
+					if (n && n.displayText) {
+						const e = 36 - (null !== (t = null == i ? void 0 : i.length) && void 0 !== t ? t : 0);
+						return n.displayText.length > e ? n.displayText.substring(0, e - 3) + "..." : n.displayText
+					}
+					c = a || Object(o.D)(e)
+				} else c = Object(o.D)(e);
+				const d = s.a.parse(c),
+					l = d.path || "",
+					u = l.length > 7 ? l.substring(0, 7) + "..." : l;
+				return (d.hostname ? d.hostname.replace("www.", "") : "") + u
 			}
 		},
 		"./src/lib/hooks/usePrevious.ts": function(e, t, n) {
@@ -26184,4 +26189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.3ae8f20c7ab28d4df229.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.11fe0a34d813c8da3de0.js.map
