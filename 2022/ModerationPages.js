@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.34840dee160cc2af4f25.js
-// Retrieved at 4/6/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.b39de96aa59462b94a7b.js
+// Retrieved at 4/6/2022, 6:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -4200,6 +4200,11 @@
 					icon: "🇻🇳"
 				}];
 			var le = [Object.freeze({
+					isoCode: "",
+					displayName: "Other",
+					englishName: "Other",
+					rtl: !1
+				}), Object.freeze({
 					isoCode: "af",
 					displayName: "Afrikaans",
 					englishName: "Afrikaans",
@@ -4248,6 +4253,11 @@
 					isoCode: "et",
 					displayName: "Eesti",
 					englishName: "Estonian",
+					rtl: !1
+				}), Object.freeze({
+					isoCode: "en",
+					displayName: "English",
+					englishName: "English",
 					rtl: !1
 				}), Object.freeze({
 					isoCode: "en-IN",
@@ -4358,11 +4368,6 @@
 					isoCode: "uz",
 					displayName: "O‘zbek",
 					englishName: "Uzbek",
-					rtl: !1
-				}), Object.freeze({
-					isoCode: ",Other",
-					displayName: "Other",
-					englishName: "englishName:Other",
 					rtl: !1
 				}), Object.freeze({
 					isoCode: "pl",
@@ -22875,4 +22880,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.34840dee160cc2af4f25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.b39de96aa59462b94a7b.js.map
