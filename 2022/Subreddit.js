@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.c2b15d5f137264510356.js
-// Retrieved at 4/6/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c62ce1b3fb59c3a8b5eb.js
+// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -9476,12 +9476,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.hf.SmIcon:
+						case h.ef.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.hf.SmIconHc:
+						case h.ef.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -9943,7 +9943,7 @@
 						} = t;
 						return Object(Re.c)(e, n)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Te.ke.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Te.he.NewModule,
 					showGovernance: we.d.spPoints,
 					showLeaderboard: we.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -15481,7 +15481,7 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.ue
+					experimentName: s.re
 				}) === s.gd
 			}
 		},
@@ -15495,8 +15495,8 @@
 				o = n("./src/reddit/selectors/meta.ts");
 			const i = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: s.Ke
-			}) === s.Re.Enabled
+				experimentName: s.He
+			}) === s.Oe.Enabled
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -15788,12 +15788,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.bf
+						experimentName: s.Ye
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.hf.SmIcon || t === s.hf.SmIconHc
+					return t === s.ef.SmIcon || t === s.ef.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -15924,4 +15924,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c2b15d5f137264510356.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c62ce1b3fb59c3a8b5eb.js.map

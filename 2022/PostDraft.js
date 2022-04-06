@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.b0e8948f10cf89e381e8.js
-// Retrieved at 4/6/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.329b4dcb22134663ffc8.js
+// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -326,7 +326,7 @@
 			})), n.d(t, "c", (function() {
 				return J
 			})), n.d(t, "h", (function() {
-				return Z
+				return Y
 			})), n.d(t, "f", (function() {
 				return Q
 			})), n.d(t, "d", (function() {
@@ -573,7 +573,7 @@
 							hk: "4Ck6Cm"
 						})
 					}))
-				}, V = Object(i.a)(c.r), K = Object(i.a)(c.n), z = Object(i.a)(c.s), Z = (e, t) => async (n, o, r) => {
+				}, V = Object(i.a)(c.r), K = Object(i.a)(c.n), z = Object(i.a)(c.s), Y = (e, t) => async (n, o, r) => {
 					let {
 						apiContext: i
 					} = r;
@@ -599,7 +599,7 @@
 						}))
 					}
 					return c
-				}, Y = Object(i.a)(c.l), X = Object(i.a)(c.m), q = Object(i.a)(c.k), Q = e => async (t, n) => {
+				}, Z = Object(i.a)(c.l), X = Object(i.a)(c.m), q = Object(i.a)(c.k), Q = e => async (t, n) => {
 					const s = n();
 					if (Object(S.b)(s)) return void t(Object(a.bb)(Object(j.b)(e.permalink), e.id));
 					const r = s.platform.currentPage.locationState;
@@ -636,11 +636,11 @@
 								hk: "4Ck6Cm"
 							})
 						}))), c
-					})(o, a))), c && n.push(t(Z(o, c))), void 0 !== r && n.push(t(((e, t) => async (n, o, r) => {
+					})(o, a))), c && n.push(t(Y(o, c))), void 0 !== r && n.push(t(((e, t) => async (n, o, r) => {
 						let {
 							apiContext: i
 						} = r;
-						n(Y());
+						n(Z());
 						const a = await y(i(), e, t);
 						let c = !1;
 						if (a.ok) n(X({
@@ -3092,12 +3092,12 @@
 						rtJsonElementProps: i
 					});
 					switch (r) {
-						case b.hf.SmIcon:
+						case b.ef.SmIcon:
 							return o.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.hf.SmIconHc:
+						case b.ef.SmIconHc:
 							return o.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -5143,12 +5143,12 @@
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.bf
+						experimentName: s.Ye
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.hf.SmIcon || t === s.hf.SmIconHc
+					return t === s.ef.SmIcon || t === s.ef.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5174,4 +5174,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.b0e8948f10cf89e381e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.329b4dcb22134663ffc8.js.map

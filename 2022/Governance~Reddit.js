@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.df705e1d058a419eb006.js
-// Retrieved at 4/6/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.a1596c4785d0116ad392.js
+// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -3489,7 +3489,7 @@
 			const T = e => _.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: b.Ie
+					experimentName: b.Fe
 				}),
 				D = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = () => u(e => p()([T, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4380,7 +4380,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(N)
 						}
-						await t(Object(r.b)(`${n.path}`)), f ? f === p.ke.NewModule && t(Object(d.h)({
+						await t(Object(r.b)(`${n.path}`)), f ? f === p.he.NewModule && t(Object(d.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(c.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(D.a)(Object(_.g)()(A))), Object(E.b)(E.a.SubredditCreation), t(Object(P.f)(a, null !== (O = Object(w.ab)(A)) && void 0 !== O ? O : Object(S.i)(A)))
 					} else x.error && Object(D.a)(Object(_.h)(x.error.type, C)(A)), t(U({
@@ -26827,7 +26827,7 @@
 				l = e => e === s.U.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				b = Object(r.a)(c.P, d, (e, t) => !e && !!t),
-				f = Object(r.a)(c.P, d, (e, t) => !e && !!t && !Object(s.Cf)(t))
+				f = Object(r.a)(c.P, d, (e, t) => !e && !!t && !Object(s.zf)(t))
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
 			"use strict";
@@ -27159,4 +27159,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.df705e1d058a419eb006.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a1596c4785d0116ad392.js.map

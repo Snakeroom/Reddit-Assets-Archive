@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.ee23486ede800795a685.js
-// Retrieved at 4/6/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.a47264e5fb13fdd368f4.js
+// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -2460,7 +2460,7 @@
 						showTimestamp: G = !0,
 						subredditOrProfile: W,
 						tooltipType: z
-					} = e, Q = Object(n.d)(), V = Object(w.a)(), K = Object(n.e)(ie.a), Y = Object(n.e)(le.d), $ = Object(n.e)(le.g) || ["popular", "all"].includes(Y || ""), X = Object(n.e)(de.b), se = y.isSponsored || Object(a.u)(E), me = !(!se || !K || Object(h.Cf)(K));
+					} = e, Q = Object(n.d)(), V = Object(w.a)(), K = Object(n.e)(ie.a), Y = Object(n.e)(le.d), $ = Object(n.e)(le.g) || ["popular", "all"].includes(Y || ""), X = Object(n.e)(de.b), se = y.isSponsored || Object(a.u)(E), me = !(!se || !K || Object(h.zf)(K));
 					Object(s.useEffect)(() => {
 						me && Q(Object(p.d)(y.author))
 					}, []);
@@ -3698,7 +3698,7 @@
 						experimentEligibilitySelector: n.P,
 						experimentName: s.Ec
 					});
-					return !(!t || Object(s.Cf)(t))
+					return !(!t || Object(s.zf)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
@@ -3764,4 +3764,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.ee23486ede800795a685.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.a47264e5fb13fdd368f4.js.map

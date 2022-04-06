@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.55114730bcbaf2a7f51f.js
-// Retrieved at 4/6/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.9e852a189b8ebc0b7c33.js
+// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -2208,7 +2208,7 @@
 						subredditId: n
 					})),
 					_ = Object(a.e)(m.a),
-					S = _ !== u.ke.NewModule;
+					S = _ !== u.he.NewModule;
 				return (null === (s = null == w ? void 0 : w.cards) || void 0 === s ? void 0 : s.length) > 0 && S ? o.a.createElement(h, {
 					closeModuleOnMount: !!t && t !== p.g.Large,
 					subredditId: n,
@@ -2238,7 +2238,7 @@
 						experimentEligibilitySelector: o.P,
 						experimentName: r.Ec
 					});
-					return !(!t || Object(r.Cf)(t))
+					return !(!t || Object(r.zf)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -2371,4 +2371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.55114730bcbaf2a7f51f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.9e852a189b8ebc0b7c33.js.map
