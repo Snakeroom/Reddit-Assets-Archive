@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.8f69a66192ccf8f13296.js
-// Retrieved at 4/5/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.7f60872aa339dfe2e72e.js
+// Retrieved at 4/6/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -6420,56 +6420,10 @@
 				Je = s("./node_modules/lodash/times.js"),
 				ze = s.n(Je),
 				Xe = s("./src/reddit/components/SearchResultsContent/SearchResultsList/index.tsx"),
-				Qe = s("./src/reddit/components/SearchResultsContent/CommunityPlaceholder/index.tsx"),
+				Qe = s("./src/reddit/components/SearchResultsContent/CommentPlaceholder/index.tsx"),
 				$e = s("./src/reddit/components/SearchResultsContent/Communities/index.m.less"),
 				et = s.n($e);
-			const tt = (e, t) => Boolean(t && t.token) && e.length > 0,
-				st = e => {
-					const {
-						listingKey: t,
-						searchOptions: s
-					} = e, n = Object(i.e)(e => Object(fe.g)(e, {
-						listingKey: t
-					})), r = Object(i.e)(e => Object(fe.u)(e, {
-						listingKey: t
-					}));
-					return o.a.createElement("div", {
-						className: et.a.container,
-						"data-testid": "communities-list"
-					}, !s.is_multi && o.a.createElement(Xe.b, {
-						identifiers: n,
-						listingKey: t,
-						searchOptions: s,
-						componentType: d.ac.Subreddits
-					}), tt(n, r) && o.a.Children.toArray(ze()(3, Ze()(o.a.createElement(Qe.a, {
-						className: et.a.loadMoreItem,
-						isLoading: !0
-					})))))
-				},
-				nt = e => {
-					const {
-						listingKey: t,
-						searchOptions: s
-					} = e, n = Object(i.e)(e => Object(fe.a)(e, {
-						listingKey: t
-					})), r = Object(i.e)(e => Object(fe.s)(e, {
-						listingKey: t
-					}));
-					return o.a.createElement("div", {
-						className: et.a.container,
-						"data-testid": "authors-list"
-					}, !s.is_multi && o.a.createElement(Xe.b, {
-						identifiers: n,
-						listingKey: t,
-						searchOptions: s,
-						componentType: d.ac.Users
-					}), tt(n, r) && o.a.Children.toArray(ze()(3, Ze()(o.a.createElement(Qe.a, {
-						className: et.a.loadMoreItem,
-						isLoading: !0
-					})))))
-				};
-			var rt = s("./src/reddit/components/SearchResultsContent/CommentPlaceholder/index.tsx");
-			const ot = e => {
+			const tt = e => {
 				const {
 					listingKey: t,
 					searchOptions: s
@@ -6486,13 +6440,59 @@
 					listingKey: t,
 					searchOptions: s,
 					componentType: d.ac.Comments
-				}), a && o.a.Children.toArray(ze()(3, Ze()(o.a.createElement(rt.a, {
+				}), a && o.a.Children.toArray(ze()(3, Ze()(o.a.createElement(Qe.a, {
 					className: et.a.loadMoreItem,
 					isLoading: !0
 				})))))
 			};
-			var it = s("./src/reddit/components/SearchResultsContent/index.m.less"),
-				at = s.n(it);
+			var st = s("./src/reddit/components/SearchResultsContent/CommunityPlaceholder/index.tsx");
+			const nt = (e, t) => Boolean(t && t.token) && e.length > 0,
+				rt = e => {
+					const {
+						listingKey: t,
+						searchOptions: s
+					} = e, n = Object(i.e)(e => Object(fe.g)(e, {
+						listingKey: t
+					})), r = Object(i.e)(e => Object(fe.u)(e, {
+						listingKey: t
+					}));
+					return o.a.createElement("div", {
+						className: et.a.container,
+						"data-testid": "communities-list"
+					}, !s.is_multi && o.a.createElement(Xe.b, {
+						identifiers: n,
+						listingKey: t,
+						searchOptions: s,
+						componentType: d.ac.Subreddits
+					}), nt(n, r) && o.a.Children.toArray(ze()(3, Ze()(o.a.createElement(st.a, {
+						className: et.a.loadMoreItem,
+						isLoading: !0
+					})))))
+				};
+			var ot = s("./src/reddit/components/SearchResultsContent/index.m.less"),
+				it = s.n(ot);
+			const at = e => {
+				const {
+					listingKey: t,
+					searchOptions: s
+				} = e, n = Object(i.e)(e => Object(fe.a)(e, {
+					listingKey: t
+				})), r = Object(i.e)(e => Object(fe.s)(e, {
+					listingKey: t
+				}));
+				return o.a.createElement("div", {
+					className: et.a.container,
+					"data-testid": "people-list"
+				}, !s.is_multi && o.a.createElement(Xe.b, {
+					identifiers: n,
+					listingKey: t,
+					searchOptions: s,
+					componentType: d.ac.Users
+				}), nt(n, r) && o.a.Children.toArray(ze()(3, Ze()(o.a.createElement(st.a, {
+					className: et.a.loadMoreItem,
+					isLoading: !0
+				})))))
+			};
 
 			function ct(e) {
 				const {
@@ -6525,7 +6525,7 @@
 					listingKey: t
 				}));
 				return o.a.createElement("div", {
-					className: Object(n.a)(at.a.resultsContainer)
+					className: Object(n.a)(it.a.resultsContainer)
 				}, c === le.h.Listings ? o.a.createElement(ct, {
 					hasResults: l,
 					searchOptions: a,
@@ -6533,21 +6533,21 @@
 					searchResultsTab: le.h.Listings,
 					listingKey: t,
 					pendingSelector: fe.i
-				}, o.a.createElement(st, {
+				}, o.a.createElement(rt, {
 					listingKey: t,
 					searchOptions: a,
 					key: le.h.Listings
-				})) : c === le.h.Authors ? o.a.createElement(ct, {
+				})) : c === le.h.People ? o.a.createElement(ct, {
 					hasResults: m,
 					searchOptions: a,
 					noResultsType: Te.People,
-					searchResultsTab: le.h.Authors,
+					searchResultsTab: le.h.People,
 					listingKey: t,
 					pendingSelector: fe.c
-				}, o.a.createElement(nt, {
+				}, o.a.createElement(at, {
 					listingKey: t,
 					searchOptions: a,
-					key: le.h.Authors
+					key: le.h.People
 				})) : d && c === le.h.Comments ? o.a.createElement(ct, {
 					hasResults: u,
 					searchOptions: a,
@@ -6555,7 +6555,7 @@
 					searchResultsTab: le.h.Comments,
 					listingKey: t,
 					pendingSelector: fe.f
-				}, o.a.createElement(ot, {
+				}, o.a.createElement(tt, {
 					listingKey: t,
 					searchOptions: a,
 					key: le.h.Comments
@@ -6746,8 +6746,8 @@
 					},
 					T = {
 						condition: !s.is_multi && !s.restrict_sr,
-						active: t === m.h.Authors,
-						target: C.b.Authors,
+						active: t === m.h.People,
+						target: C.b.People,
 						contentType: d.bc.Users,
 						text: n.fbt._("People", null, {
 							hk: "Ttxbf"
@@ -9238,7 +9238,7 @@
 			}));
 			var n = s("./src/lib/constants/index.ts"),
 				r = s("./src/reddit/constants/page.ts");
-			const o = (e, t, s) => t.includes(n.bc.Comments) ? e ? r.h.Comments : r.h.Posts : s || t.includes(n.bc.Posts) ? r.h.Posts : t.includes(n.bc.Users) && !t.includes(n.bc.Subreddits) ? r.h.Authors : r.h.Listings
+			const o = (e, t, s) => t.includes(n.bc.Comments) ? e ? r.h.Comments : r.h.Posts : s || t.includes(n.bc.Posts) ? r.h.Posts : t.includes(n.bc.Users) && !t.includes(n.bc.Subreddits) ? r.h.People : r.h.Listings
 		},
 		"./src/reddit/helpers/search/switchSearchScope.ts": function(e, t, s) {
 			"use strict";
@@ -10263,8 +10263,8 @@
 						sidebar: !1,
 						filterNav: !1
 					},
-					[_.h.Authors]: {
-						tab: _.h.Authors,
+					[_.h.People]: {
+						tab: _.h.People,
 						sidebar: !1,
 						filterNav: !1
 					},
@@ -10672,4 +10672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.8f69a66192ccf8f13296.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.7f60872aa339dfe2e72e.js.map
