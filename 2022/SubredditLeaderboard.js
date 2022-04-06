@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.22f675912ffbf5c859b7.js
-// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.7f1a259422e87166f9e5.js
+// Retrieved at 4/6/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.Af)(e.category_name)
+									displayText: Object(u.Bf)(e.category_name)
 								};
 								n.push(a.id), t[a.id] = a
 							}), {
@@ -2799,7 +2799,7 @@
 					} = t;
 					return Object(p.b)(n.params.categoryName || "")
 				},
-				Ce = Object(m.zf)(b.i),
+				Ce = Object(m.Af)(b.i),
 				Ee = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ce
@@ -2928,4 +2928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.22f675912ffbf5c859b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.7f1a259422e87166f9e5.js.map

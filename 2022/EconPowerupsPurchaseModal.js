@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.78145186177456a40bd6.js
-// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.9612bc9f90341a8ea253.js
+// Retrieved at 4/6/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1180,8 +1180,8 @@
 				G = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsPremiumButton/index.m.less"),
 				q = r.n(G);
 			const {
-				fbt: H
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), z = e => {
+				fbt: z
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), H = e => {
 				let {
 					className: t,
 					subredditId: r
@@ -1200,10 +1200,10 @@
 				}, s ? a.a.createElement(D.a, {
 					className: q.a.loadingIcon,
 					sizePx: 12
-				}) : H._({
+				}) : z._({
 					"*": "Apply Your Powerups",
 					_1: "Apply Your Powerup"
-				}, [H._plural(c)], {
+				}, [z._plural(c)], {
 					hk: "4zdKUc"
 				}))
 			};
@@ -1479,7 +1479,7 @@
 						className: oe.a.premiumIcon
 					})), a.a.createElement("span", null, se._("Premium gives you one monthly Powerup", null, {
 						hk: "2cKV1a"
-					}))), a.a.createElement(z, {
+					}))), a.a.createElement(H, {
 						className: oe.a.button,
 						subredditId: m
 					}))))
@@ -3354,7 +3354,7 @@
 				p = r("./node_modules/react-redux/es/index.js"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				b = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(b.a)(f.Hc);
+			const h = Object(b.a)(f.Ic);
 			let g = null;
 
 			function y() {
@@ -3777,4 +3777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.78145186177456a40bd6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.9612bc9f90341a8ea253.js.map

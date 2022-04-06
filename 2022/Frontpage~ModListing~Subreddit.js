@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.a88b91b17ab3ee178def.js
-// Retrieved at 4/5/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.55114730bcbaf2a7f51f.js
+// Retrieved at 4/6/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -651,8 +651,8 @@
 				}).apply(this, arguments)
 			}
 			const W = "ListingSort--SortPicker",
-				B = Object(_.a)(A.a.wrapped(O.a, "Dropdown", D.a)),
-				M = A.a.wrapped(P.a, "ListingSortIcon", D.a),
+				M = Object(_.a)(A.a.wrapped(O.a, "Dropdown", D.a)),
+				B = A.a.wrapped(P.a, "ListingSortIcon", D.a),
 				H = (A.a.wrapped(N.b, "DropdownTriangle", D.a), A.a.div("Title", D.a)),
 				U = A.a.wrapped(e => s.a.createElement(k.b, R({}, e, {
 					noHover: !0,
@@ -705,9 +705,9 @@
 					displayText: Object(y.a)(e.sort),
 					id: e.dropdownId || W,
 					showDropdownTriangle: !0
-				}, s.a.createElement(M, {
+				}, s.a.createElement(B, {
 					sort: e.sort
-				}))), s.a.createElement(x.a.Consumer, null, t => s.a.createElement(B, R({
+				}))), s.a.createElement(x.a.Consumer, null, t => s.a.createElement(M, R({
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
 					tooltipId: e.dropdownId || W
@@ -739,7 +739,7 @@
 						},
 						isSelected: e.sort === t,
 						key: t
-					}, s.a.createElement(M, {
+					}, s.a.createElement(B, {
 						className: e.rowIconClassName,
 						sort: t
 					}))
@@ -1251,8 +1251,8 @@
 			const Ae = new Set([b.W.CONTROVERSIAL, b.W.TOP]),
 				Re = new Set([b.W.CONTROVERSIAL, b.W.RISING]),
 				We = new Set([b.W.CONTROVERSIAL]),
-				Be = "ListingSort--Overflow",
-				Me = Object(l.u)({
+				Me = "ListingSort--Overflow",
+				Be = Object(l.u)({
 					isFrontpage: l.A,
 					isProfilePage: l.J,
 					pageLayer: e => e
@@ -1286,7 +1286,7 @@
 							className: Object(a.a)(Te.a.SortLink, e === t && Te.a.selected),
 							kind: Ee.b.InternalLink,
 							priority: Ee.c.Plain,
-							Icon: n => s.a.createElement(M, De({}, n, {
+							Icon: n => s.a.createElement(B, De({}, n, {
 								className: Object(a.a)(Te.a.SortIcon, n.className),
 								sort: e,
 								isFilled: e === t
@@ -1374,7 +1374,7 @@
 					}), u.length > 0 && s.a.createElement(z, De({}, this.props, {
 						className: Object(a.a)(Te.a.SortOverflow, e),
 						dropdownClassName: Te.a.Dropdown,
-						dropdownId: Be,
+						dropdownId: Me,
 						rowClassName: Te.a.DropdownRow,
 						rowIconClassName: Te.a.DropdownRowIcon,
 						rowSelectedClassName: Te.a.DropdownRowSelected,
@@ -1382,13 +1382,13 @@
 						sortOptions: u
 					}), s.a.createElement("button", {
 						className: Te.a.SortOverflowButton,
-						id: Be
+						id: Me
 					}, s.a.createElement(Ie.a, {
 						name: "overflow_horizontal"
 					}))))
 				}
 			}
-			var Fe = Me(Object(o.b)(He)(Object(d.c)(Ue))),
+			var Fe = Be(Object(o.b)(He)(Object(d.c)(Ue))),
 				Ge = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				Ve = n.n(Ge);
 			const Ke = Object(l.u)({
@@ -2208,7 +2208,7 @@
 						subredditId: n
 					})),
 					_ = Object(a.e)(m.a),
-					S = _ !== u.je.NewModule;
+					S = _ !== u.ke.NewModule;
 				return (null === (s = null == w ? void 0 : w.cards) || void 0 === s ? void 0 : s.length) > 0 && S ? o.a.createElement(h, {
 					closeModuleOnMount: !!t && t !== p.g.Large,
 					subredditId: n,
@@ -2236,15 +2236,15 @@
 			const a = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.P,
-						experimentName: r.Dc
+						experimentName: r.Ec
 					});
-					return !(!t || Object(r.Bf)(t))
+					return !(!t || Object(r.Cf)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.P,
-						experimentName: r.Dc
-					}) === r.kd.ListingEnabled
+						experimentName: r.Ec
+					}) === r.ld.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2371,4 +2371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.a88b91b17ab3ee178def.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.55114730bcbaf2a7f51f.js.map

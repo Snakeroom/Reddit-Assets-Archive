@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.f82fb9216b3a6f3de9b1.js
-// Retrieved at 4/5/2022, 4:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b0fb4df506fd08ca12ea.js
+// Retrieved at 4/6/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -340,11 +340,11 @@
 							return e
 					}
 				},
-				K = Object(y.c)({
+				G = Object(y.c)({
 					error: W,
 					pending: z
 				});
-			var G = function() {
+			var K = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -360,8 +360,8 @@
 					}
 				},
 				q = Object(y.c)({
-					api: K,
-					result: G
+					api: G,
+					result: K
 				});
 			const Z = {};
 			var Y = function() {
@@ -896,8 +896,8 @@
 				},
 				W = r("./src/reddit/components/Econ/TopAwardersModal/TopAwardersList/index.m.less"),
 				z = r.n(W);
-			const K = 8;
-			var G = function(e) {
+			const G = 8;
+			var K = function(e) {
 					const {
 						awarders: t,
 						className: r,
@@ -908,7 +908,7 @@
 					} = e;
 					return t.length ? n.a.createElement("div", {
 						className: Object(d.a)(r, z.a.container)
-					}, a && (!a.rank || a.rank > K) && n.a.createElement(D, {
+					}, a && (!a.rank || a.rank > G) && n.a.createElement(D, {
 						className: z.a.awarder,
 						currentUserId: s,
 						awarder: a,
@@ -1134,7 +1134,7 @@
 					className: ee.a.giftIcon
 				}), re._("Give Award", null, {
 					hk: "2sa45i"
-				}))), T && d && S && n.a.createElement(G, {
+				}))), T && d && S && n.a.createElement(K, {
 					awarders: b,
 					className: ee.a.list,
 					currentRank: o,
@@ -1276,8 +1276,8 @@
 				D = r("./src/reddit/components/HumanDate/index.tsx"),
 				W = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				z = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
-				K = r("./src/reddit/actions/inContextModeration.ts"),
-				G = r("./src/reddit/actions/modal.ts"),
+				G = r("./src/reddit/actions/inContextModeration.ts"),
+				K = r("./src/reddit/actions/modal.ts"),
 				q = r("./src/reddit/actions/subredditModeration/ban.ts"),
 				Z = r("./src/reddit/constants/modals.ts"),
 				Y = r("./src/reddit/components/Hovercards/helpers.ts"),
@@ -1361,18 +1361,18 @@
 							username: r
 						})),
 						toggleBanModal: () => {
-							e(Object(K.c)({
+							e(Object(G.c)({
 								username: r,
 								subredditId: a,
 								contextId: n
 							})), e(Object(q.a)(a, r))
 						},
 						toggleMuteModal: () => {
-							e(Object(K.d)({
+							e(Object(G.d)({
 								username: r,
 								subredditId: a,
 								contextId: n
-							})), e(Object(G.i)(Z.a.MUTE_USER))
+							})), e(Object(K.i)(Z.a.MUTE_USER))
 						}
 					}
 				})(re),
@@ -2712,9 +2712,9 @@
 				}) === a.w.Enabled,
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.Fc
-				}) === a.fd
+					experimentName: a.Gc
+				}) === a.gd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.f82fb9216b3a6f3de9b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b0fb4df506fd08ca12ea.js.map
