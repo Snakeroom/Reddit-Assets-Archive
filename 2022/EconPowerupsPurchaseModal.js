@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.2a4b63dfa77260257328.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.26d12f30e04ec8cb83b0.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1360,7 +1360,7 @@
 				fbt: se
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), ce = 100, ie = Object(i.c)({
 				isAnonymous: j.d,
-				isNightMode: k.cb,
+				isNightMode: k.db,
 				paypalErrorMessage: _.d,
 				powerups: j.k,
 				powerupsCount: j.e,
@@ -1689,7 +1689,7 @@
 				let {
 					space: t
 				} = e;
-				const r = Object(i.e)(d.cb),
+				const r = Object(i.e)(d.db),
 					s = t === n.MODAL,
 					l = t === n.INFEED_UNIT;
 				return c.a.createElement("div", {
@@ -3354,7 +3354,7 @@
 				p = r("./node_modules/react-redux/es/index.js"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				b = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(b.a)(f.Ic);
+			const h = Object(b.a)(f.Jc);
 			let g = null;
 
 			function y() {
@@ -3777,4 +3777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.2a4b63dfa77260257328.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.26d12f30e04ec8cb83b0.js.map

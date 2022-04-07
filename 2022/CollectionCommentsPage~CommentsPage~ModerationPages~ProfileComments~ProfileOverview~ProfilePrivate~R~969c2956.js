@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.405499ee3b430f3c5325.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.ac4ad01cc9f7bb9ae9ce.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -964,7 +964,7 @@
 					isChatPost: O.d,
 					isPostSEOEligible: _.e,
 					postPermalink: j.F,
-					shouldOpenPostInNewTab: k.ib,
+					shouldOpenPostInNewTab: k.jb,
 					isBlockingInterstitialEnabled: v.b
 				})),
 				P = e => {
@@ -1625,7 +1625,7 @@
 					activeModalId: de.a,
 					claimedFreeAward: E.b,
 					layout: G.R,
-					userIsOp: K.Bb,
+					userIsOp: K.Cb,
 					subreddit: G.r,
 					isBlockedUserBannerEnabled: (e, t) => {
 						let {
@@ -1635,7 +1635,7 @@
 							postId: s.postId
 						}) && Object(pe.a)(e)
 					},
-					isTrueblockPCBlockeeEnabled: pe.b
+					isTrueblockPCBlockeeEnabled: pe.c
 				}),
 				ke = Object(i.b)(je, (e, t) => {
 					let {
@@ -3228,7 +3228,7 @@
 						} = t;
 						return Object(A.E)(e, {
 							pageLayer: r
-						}) && s && o && Object(re.zb)(e, {
+						}) && s && o && Object(re.Ab)(e, {
 							userName: n.author
 						})
 					},
@@ -4950,8 +4950,8 @@
 				r = s("./src/reddit/selectors/runTimeEnvVars.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			const a = e => !!Object(r.b)(e) || Object(n.c)(e, {
-				experimentEligibilitySelector: i.P,
-				experimentName: o.k
+				experimentEligibilitySelector: i.Q,
+				experimentName: o.l
 			}) === o.f.Enabled
 		},
 		"./src/reddit/selectors/experiments/shareToChatButton.ts": function(e, t, s) {
@@ -4964,13 +4964,13 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
-				experimentEligibilitySelector: i.P,
-				experimentName: n.Zb
-			}), e => e === n.gd)
+				experimentEligibilitySelector: i.Q,
+				experimentName: n.ac
+			}), e => e === n.hd)
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
 			e.exports = JSON.parse('{"id":"5ee520f9aa60"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.405499ee3b430f3c5325.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.ac4ad01cc9f7bb9ae9ce.js.map

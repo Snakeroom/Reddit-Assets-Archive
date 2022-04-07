@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.06663e217d558f36ad81.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.a4240aa0f954a73d6dd3.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -718,13 +718,13 @@
 				end: "start"
 			};
 
-			function X(e) {
+			function Q(e) {
 				return e.replace(/start|end/g, (function(e) {
 					return K[e]
 				}))
 			}
 
-			function Q(e, t) {
+			function X(e, t) {
 				var n = Boolean(t.getRootNode && t.getRootNode().host);
 				if (e.contains(t)) return !0;
 				if (n) {
@@ -786,7 +786,7 @@
 						var t = x(e),
 							n = ["absolute", "fixed"].indexOf(p(e).position) >= 0 && c(e) ? y(e) : e;
 						return i(n) ? t.filter((function(e) {
-							return i(e) && Q(e, n)
+							return i(e) && X(e, n)
 						})) : []
 					}(e) : [].concat(t),
 					o = [].concat(s, [n]),
@@ -1044,7 +1044,7 @@
 								for (var o = n.mainAxis, r = void 0 === o || o, a = n.altAxis, i = void 0 === a || a, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, x = H(h), v = c || (x === h || !f ? [Z(h)] : function(e) {
 										if (H(e) === k) return [];
 										var t = Z(e);
-										return [X(e), t, X(t)]
+										return [Q(e), t, Q(t)]
 									}(h)), g = [h].concat(v).reduce((function(e, n) {
 										return e.concat(H(n) === k ? function(e, t) {
 											void 0 === t && (t = {});
@@ -1188,10 +1188,10 @@
 											left: 0
 										},
 										K = Z[T],
-										X = Z[L],
-										Q = oe(0, M[F], J[F]),
-										Y = k ? M[F] / 2 - W - Q - K - I : z - Q - K - I,
-										$ = k ? -M[F] / 2 + W + Q + X + I : q + Q + X + I,
+										Q = Z[L],
+										X = oe(0, M[F], J[F]),
+										Y = k ? M[F] / 2 - W - X - K - I : z - X - K - I,
+										$ = k ? -M[F] / 2 + W + X + Q + I : q + X + Q + I,
 										ee = t.elements.arrow && y(t.elements.arrow),
 										te = ee ? "y" === C ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][C] : 0,
@@ -1249,7 +1249,7 @@
 								r = void 0 === o ? "[data-popper-arrow]" : o,
 								a = n.padding,
 								i = void 0 === a ? 0 : a;
-							null != r && ("string" != typeof r || (r = t.elements.popper.querySelector(r))) && Q(t.elements.popper, r) && (t.elements.arrow = r, t.modifiersData[s + "#persistent"] = {
+							null != r && ("string" != typeof r || (r = t.elements.popper.querySelector(r))) && X(t.elements.popper, r) && (t.elements.arrow = r, t.modifiersData[s + "#persistent"] = {
 								padding: te("number" != typeof i ? i : ne(i, C))
 							})
 						},
@@ -1673,7 +1673,7 @@
 					} = e;
 					const {
 						audioRoom: n
-					} = t, r = () => Math.floor(10 * Math.random() + 1), i = Object(h.e)(x.cb), [c, d] = Object(s.useState)(!1), [l, u] = Object(s.useState)(r());
+					} = t, r = () => Math.floor(10 * Math.random() + 1), i = Object(h.e)(x.db), [c, d] = Object(s.useState)(!1), [l, u] = Object(s.useState)(r());
 					return Object(s.useEffect)(() => {
 						const e = setInterval(() => {
 							d(!0), setTimeout(() => d(!1), 3500), u(r())
@@ -1734,8 +1734,8 @@
 				J = n("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
 				Z = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				K = n("./src/reddit/helpers/hasModPostPermissions/index.ts"),
-				X = n("./src/reddit/helpers/localStorage/index.ts"),
-				Q = n("./src/reddit/helpers/search/renderMedia.tsx"),
+				Q = n("./src/reddit/helpers/localStorage/index.ts"),
+				X = n("./src/reddit/helpers/search/renderMedia.tsx"),
 				Y = n("./src/reddit/helpers/styles/mixins/index.tsx"),
 				$ = n("./src/reddit/helpers/trackers/creatorStats.ts"),
 				ee = n("./src/reddit/helpers/styles/mixins/index.m.less"),
@@ -1823,10 +1823,10 @@
 						source: Je
 					} = Ge,
 					[Ze, Ke] = Object(s.useState)(!1),
-					Xe = Object(s.useCallback)(() => {
-						Ke(!Ze), Object(X.Mb)(), Pe(Object($.d)(ve))
+					Qe = Object(s.useCallback)(() => {
+						Ke(!Ze), Object(Q.Mb)(), Pe(Object($.d)(ve))
 					}, [Ze, ve, Pe]);
-				let Qe = o.a.createElement(z.a, {
+				let Xe = o.a.createElement(z.a, {
 					className: se.a.classicThumbnail,
 					crosspost: Ae && xe,
 					isMeta: xe.isMeta,
@@ -1835,7 +1835,7 @@
 					templatePlaceholderImage: Ie && Ie.postPlaceholderImage,
 					removeLink: Ue
 				});
-				Object(V.b)(xe) && (Qe = o.a.createElement(j, {
+				Object(V.b)(xe) && (Xe = o.a.createElement(j, {
 					post: xe
 				}));
 				const Ye = o.a.createElement(T.a, {
@@ -1871,7 +1871,7 @@
 					className: se.a.mainBody
 				}, o.a.createElement("div", {
 					className: Ve ? se.a.expandoContainer : se.a.thumbnailContainer
-				}, !Ve && Qe, o.a.createElement(k.a, {
+				}, !Ve && Xe, o.a.createElement(k.a, {
 					crosspost: Ae,
 					className: se.a.rightExpando,
 					isExpanded: !!h,
@@ -1937,7 +1937,7 @@
 					hostPostData: w,
 					isOverlay: !!ie,
 					modModeEnabled: ue,
-					onClickInsightsButton: Xe,
+					onClickInsightsButton: Qe,
 					onIgnoreReports: me,
 					onOpenReportsDropdown: fe,
 					post: xe,
@@ -1950,7 +1950,7 @@
 						hide: !Be,
 						report: !Be
 					})
-				})), o.a.createElement(_.d, null))), Object(Q.a)(xe, se.a, ye, h, _e, re), Ee && Ze && o.a.createElement(f.a, {
+				})), o.a.createElement(_.d, null))), Object(X.a)(xe, se.a, ye, h, _e, re), Ee && Ze && o.a.createElement(f.a, {
 					className: se.a.creatorStatsContainer,
 					post: xe,
 					subreddit: Ee,
@@ -2888,7 +2888,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: b.l,
 					isExpanded: b.m,
-					isLoggedIn: x.P,
+					isLoggedIn: x.Q,
 					showPromotedCTA: h.a,
 					moderatorPermissions: m.m,
 					modModeEnabled: d.T,
@@ -3405,13 +3405,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.ue,
+					experimentName: o.ve,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Ce.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.De.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(a.G, i, (e, t) => c(e, t));
 			Object(s.a)((e, t) => t, i, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.06663e217d558f36ad81.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.a4240aa0f954a73d6dd3.js.map

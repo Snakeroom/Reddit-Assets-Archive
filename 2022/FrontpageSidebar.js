@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.fe40a73bb70b82f0069d.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.bddb03c82b7cf67c7822.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -679,15 +679,15 @@
 			function Ge(e) {
 				return Object(We.c)(e, {
 					experimentEligibilitySelector: We.a,
-					experimentName: Ae.A
+					experimentName: Ae.B
 				})
 			}
 			var Me = n("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Ae.Kd,
+					experimentName: Ae.Ld,
 					experimentEligibilitySelector: We.a
 				}), Me.a),
-				Qe = Object(u.a)(Ue, e => e === Ae.Ld.Enabled);
+				Qe = Object(u.a)(Ue, e => e === Ae.Md.Enabled);
 			var qe = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Je = n("./src/reddit/selectors/user.ts");
 			var Ze = n("./src/reddit/selectors/seo/linksModule.ts"),
@@ -699,14 +699,14 @@
 			const Ve = "c1020",
 				Ye = "videos",
 				$e = Object(u.c)({
-					isMod: Je.Q,
-					isLoggedIn: Je.O,
+					isMod: Je.R,
+					isLoggedIn: Je.P,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
 					currentUser: Je.k,
 					frontpageLinks: Ze.b,
-					isOver18: Je.jb,
+					isOver18: Je.kb,
 					isInBFFSLeaderboardExperiment: function(e) {
-						return Ge(e) === Ae.z.RotateEven
+						return Ge(e) === Ae.A.RotateEven
 					},
 					bffsLeaderboardVariant: Ge,
 					inRpanTopVideoEntrypointExperiment: qe.e,
@@ -716,9 +716,9 @@
 							n = !!Object(He.N)(e, Ve);
 						return (!t || !n) && function(e) {
 							return Object(We.c)(e, {
-								experimentEligibilitySelector: Je.P,
-								experimentName: Ae.bc
-							}) === Ae.gd
+								experimentEligibilitySelector: Je.Q,
+								experimentName: Ae.cc
+							}) === Ae.hd
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -742,7 +742,7 @@
 						}
 					}
 					let o, d, c, l, u;
-					n && t === Ae.z.RotateEven ? (o = De.u, d = De.n, c = De.s, l = De.a) : (o = De.t, d = De.j, c = De.r, l = []), u = [o, ...l, ...c], s && u.unshift(d);
+					n && t === Ae.A.RotateEven ? (o = De.u, d = De.n, c = De.s, l = De.a) : (o = De.t, d = De.j, c = De.r, l = []), u = [o, ...l, ...c], s && u.unshift(d);
 					const m = u[r()(u.length - 1)];
 					u = [], m.id !== o.id && u.push(o), s && m.id !== d.id && u.push(d);
 					let b = [...l, ...c];
@@ -2218,4 +2218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.fe40a73bb70b82f0069d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.bddb03c82b7cf67c7822.js.map

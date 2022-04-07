@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.7a093d52fa383ee2fb6e.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.0c1bd02dc3b0241f97a9.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -344,14 +344,14 @@
 				_ = n("./src/reddit/constants/experiments.ts"),
 				O = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const I = e => Object(O.c)(e, {
-				experimentName: _.Mb,
+				experimentName: _.Nb,
 				experimentEligibilitySelector: O.a
-			}) === _.gd;
+			}) === _.hd;
 			var x = n("./src/reddit/selectors/meta.ts"),
 				j = n("./src/reddit/selectors/user.ts");
 			let k = !1;
 			const N = async (e, t) => {
-				const n = Object(j.O)(e);
+				const n = Object(j.P)(e);
 				if (k) return;
 				if (k = !0, Object(b.a)(e) !== d.c.NotificationsSupported) return;
 				await Object(l.a)();
@@ -2452,9 +2452,9 @@
 						x = Object(r.useCallback)(() => {
 							f(async (e, t) => {
 								var n, r;
-								let i = Object(H.eb)(t());
+								let i = Object(H.fb)(t());
 								i.allIds.length || await e(Object(B.a)(U.a.Email));
-								const o = null === (r = null === (n = (i = Object(H.eb)(t())).byId) || void 0 === n ? void 0 : n.EMAIL_DIGEST) || void 0 === r ? void 0 : r.isEnabled;
+								const o = null === (r = null === (n = (i = Object(H.fb)(t())).byId) || void 0 === n ? void 0 : n.EMAIL_DIGEST) || void 0 === r ? void 0 : r.isEnabled;
 								O(o ? z.DONE : z.TURN_ON_DAYLY_DIGEST)
 							})
 						}, [f]),
@@ -2464,7 +2464,7 @@
 						k = Object(r.useCallback)(() => {
 							f(async (e, t) => {
 								const n = t();
-								Object(H.gb)(n).allIds.length || await e(Object(B.a)(U.a.Push)), Object(D.c)(t(), F) ? O(z.TURN_ON_PN_APP) : j()
+								Object(H.hb)(n).allIds.length || await e(Object(B.a)(U.a.Push)), Object(D.c)(t(), F) ? O(z.TURN_ON_PN_APP) : j()
 							})
 						}, [f, j]),
 						N = Object(r.useCallback)(() => {
@@ -4534,7 +4534,7 @@
 						subredditId: n,
 						username: r
 					} = t;
-					const i = Object(a.yb)(e, {
+					const i = Object(a.zb)(e, {
 						userName: r
 					});
 					if (!i) return;
@@ -4586,24 +4586,24 @@
 				i = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.qb
-				}) === r.nd.Karma,
+					experimentName: r.rb
+				}) === r.od.Karma,
 				a = e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.qb
-				}) === r.nd.Memes,
+					experimentName: r.rb
+				}) === r.od.Memes,
 				s = e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.qb
-				}) === r.nd.PnEmail,
+					experimentName: r.rb
+				}) === r.od.PnEmail,
 				c = e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.qb
-				}) === r.nd.Cats,
+					experimentName: r.rb
+				}) === r.od.Cats,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: r.qb
-				}) === r.nd.Popular,
+					experimentName: r.rb
+				}) === r.od.Popular,
 				l = e => d(e) || c(e) || s(e) || a(e) || o(e)
 		},
 		"./src/reddit/selectors/muted.ts": function(e, t, n) {
@@ -4705,4 +4705,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.7a093d52fa383ee2fb6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.0c1bd02dc3b0241f97a9.js.map

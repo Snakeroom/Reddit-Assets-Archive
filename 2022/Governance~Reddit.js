@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.5072c8967bd53434864d.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.d89ed2beb99ad8aa2fe8.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -941,7 +941,7 @@
 						gqlRealtime2Context: r
 					} = n;
 					const s = t(),
-						a = Object(i.P)(s),
+						a = Object(i.Q)(s),
 						d = !!Object(c.b)(s),
 						{
 							expiresAt: u,
@@ -998,9 +998,9 @@
 				variables: i(t)
 			}), u = n("./node_modules/fbt/lib/FbtPublic.js"), l = n("./src/reddit/models/Toast/index.ts"), p = n("./node_modules/reselect/es/index.js"), b = n("./src/reddit/constants/experiments.ts"), f = n("./src/reddit/helpers/chooseVariant/index.ts"), h = n("./src/reddit/selectors/user.ts");
 			const y = Object(p.a)(e => Object(f.c)(e, {
-				experimentEligibilitySelector: h.P,
-				experimentName: b.Kb
-			}), e => e === b.gd);
+				experimentEligibilitySelector: h.Q,
+				experimentName: b.Lb
+			}), e => e === b.hd);
 			var m = n("./src/reddit/actions/toaster.ts");
 			const g = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				v = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -1651,18 +1651,18 @@
 				l = Object(r.a)(u),
 				p = () => async (e, t) => {
 					const n = t(),
-						r = Object(d.P)(n),
+						r = Object(d.Q)(n),
 						s = Object(i.b)(n);
 					r && Object(i.d)(s) && e(l())
 				}, b = () => async (e, t) => {
 					const n = t(),
-						r = Object(d.P)(n),
+						r = Object(d.Q)(n),
 						a = Object(i.b)(n),
 						o = !!Object(c.a)(n);
 					r || o || !Object(i.e)(a) && !Object(i.d)(a) || e(Object(s.f)())
 				}, f = e => {
 					Object(o.d)(e, {
-						experimentName: a.ub
+						experimentName: a.vb
 					})
 				}
 		},
@@ -2359,15 +2359,15 @@
 				const n = t();
 				e(d.m({
 					title: o.b()
-				})), Object(g.P)(n) || await e(m.t())
+				})), Object(g.Q)(n) || await e(m.t())
 			}, j = () => async e => e(d.m({
 				title: o.b()
 			})), T = e => async (t, r) => {
 				const s = r();
 				t(d.m({
 					title: o.k()
-				})), Object(g.P)(s) || await t(m.t());
-				const a = Object(g.P)(s);
+				})), Object(g.Q)(s) || await t(m.t());
+				const a = Object(g.Q)(s);
 				if (e.queryParams.thanks && a) {
 					const e = await n.e("GoldPurchasePaymentActions").then(n.bind(null, "./src/reddit/actions/goldPurchaseModals/payment.ts")).then(e => e.paymentCompleted),
 						r = await n.e("GoldPurchasePaymentActions").then(n.bind(null, "./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts")).then(e => e.openPremiumPurchaseModal);
@@ -3489,7 +3489,7 @@
 			const T = e => _.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: b.Ee
+					experimentName: b.Fe
 				}),
 				D = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = () => u(e => p()([T, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4380,9 +4380,9 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(N)
 						}
-						await t(Object(r.b)(`${n.path}`)), f ? f === p.ge.NewModule && t(Object(d.h)({
+						await t(Object(r.b)(`${n.path}`)), f ? f === p.he.NewModule && t(Object(d.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
-						})) : (t(Object(c.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(D.a)(Object(_.g)()(A))), Object(E.b)(E.a.SubredditCreation), t(Object(P.f)(a, null !== (O = Object(w.ab)(A)) && void 0 !== O ? O : Object(S.i)(A)))
+						})) : (t(Object(c.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(D.a)(Object(_.g)()(A))), Object(E.b)(E.a.SubredditCreation), t(Object(P.f)(a, null !== (O = Object(w.bb)(A)) && void 0 !== O ? O : Object(S.i)(A)))
 					} else x.error && Object(D.a)(Object(_.h)(x.error.type, C)(A)), t(U({
 						subredditName: C,
 						error: x.error
@@ -4886,7 +4886,7 @@
 								type: p.error ? p.error.type : "Unknown error",
 								username: e
 							},
-							s = Object(d.c)(l) && "REBLOCK_RATE_LIMIT" === p.body.reason;
+							s = Object(d.d)(l) && "REBLOCK_RATE_LIMIT" === p.body.reason;
 						t(y(n)), t(s ? o.f({
 							id: b,
 							kind: i.b.Error,
@@ -5558,7 +5558,7 @@
 						nsfwSessionSetting: L,
 						refreshNsfwSessionSettingExpiryTime: U
 					} = Object(h.b)(),
-					M = Object(a.e)(O.jb);
+					M = Object(a.e)(O.kb);
 				Object(r.useEffect)(() => {
 					const e = {
 						displayQuery: f.searchQuery,
@@ -5779,7 +5779,7 @@
 					T = Object(a.e)(e => Object(K.e)(e, {
 						pageLayer: v
 					})),
-					D = Object(a.e)(O.jb),
+					D = Object(a.e)(O.kb),
 					{
 						nsfwSessionSetting: P
 					} = Object(h.b)(),
@@ -6092,7 +6092,7 @@
 				},
 				S = (e, t) => {
 					var n;
-					if (!Object(b.P)(e)) return !1;
+					if (!Object(b.Q)(e)) return !1;
 					if (null === (n = Object(h.b)(E)) || void 0 === n ? void 0 : n[t.postId]) return !1;
 					const r = Object(p.G)(e, t),
 						s = Object(p.U)(e, {
@@ -7398,7 +7398,7 @@
 					} = n;
 				if (`${c}//${r}` === a.a.gatewayUrl) {
 					const r = {},
-						s = Object(f.jb)(e.getState()) ? "1" : "";
+						s = Object(f.kb)(e.getState()) ? "1" : "";
 					r.allow_over18 = s, r.include = b(e.getState(), n, t), t.endpoint = Object(o.a)(t.endpoint, r)
 				}
 			}
@@ -26646,29 +26646,21 @@
 		"./src/reddit/selectors/blockedRedditors.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return s
+				return r
 			})), n.d(t, "a", (function() {
-				return a
-			})), n.d(t, "d", (function() {
-				return o
+				return s
 			})), n.d(t, "c", (function() {
-				return c
+				return a
 			}));
-			var r = n("./src/reddit/selectors/user.ts");
-			const s = e => e.blockedRedditors.api.pending,
-				a = e => e.blockedRedditors.list,
-				o = (e, t) => {
+			n("./src/reddit/selectors/user.ts");
+			const r = e => e.blockedRedditors.api.pending,
+				s = e => e.blockedRedditors.list,
+				a = (e, t) => {
 					const n = (e => {
-						const t = a(e);
+						const t = s(e);
 						return t && t.ids
 					})(e);
 					return !!n && n.includes(t)
-				},
-				c = (e, t) => {
-					const n = Object(r.yb)(e, {
-						userName: t
-					});
-					return !!n && o(e, n.id)
 				}
 		},
 		"./src/reddit/selectors/chat.ts": function(e, t, n) {
@@ -26820,14 +26812,14 @@
 			const i = Object(r.a)(o.c, e => !e),
 				d = Object(r.a)(e => Object(a.c)(e, {
 					experimentEligibilitySelector: e => i(e),
-					experimentName: s.ub,
+					experimentName: s.vb,
 					expEventOverride: !1
 				}), e => e),
-				u = e => e === s.U.Onetap,
-				l = e => e === s.U.OnetapAuto,
+				u = e => e === s.V.Onetap,
+				l = e => e === s.V.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
-				b = Object(r.a)(c.P, d, (e, t) => !e && !!t),
-				f = Object(r.a)(c.P, d, (e, t) => !e && !!t && !Object(s.yf)(t))
+				b = Object(r.a)(c.Q, d, (e, t) => !e && !!t),
+				f = Object(r.a)(c.Q, d, (e, t) => !e && !!t && !Object(s.zf)(t))
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
 			"use strict";
@@ -26846,12 +26838,12 @@
 				i = n("./src/reddit/selectors/platform.ts"),
 				d = n("./src/reddit/selectors/user.ts");
 			const u = () => !0,
-				l = Object(r.a)(d.W, d.N, (e, t) => !(e || t)),
+				l = Object(r.a)(d.X, d.O, (e, t) => !(e || t)),
 				p = e => {
 					if (!l(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: u,
-						experimentName: a.Bd,
+						experimentName: a.Cd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -26874,9 +26866,9 @@
 				},
 				f = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: a.Cd,
+					experimentName: a.Dd,
 					expEventOverride: !1
-				}) !== a.Dd.Readonly
+				}) !== a.Ed.Readonly
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, n) {
 			"use strict";
@@ -27080,7 +27072,7 @@
 				u = 6 * r.pb,
 				l = (e, t) => {
 					const n = Object(o.G)(e, t),
-						r = Object(c.O)(e);
+						r = Object(c.P)(e);
 					let i = !1;
 					const d = Object(c.k)(e);
 					if (d) {
@@ -27159,4 +27151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.5072c8967bd53434864d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.d89ed2beb99ad8aa2fe8.js.map

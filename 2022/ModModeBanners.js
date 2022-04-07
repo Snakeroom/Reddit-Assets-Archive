@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.b7b73bcb711ff6cefb79.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.77bc487ebcf0976c0150.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
@@ -53,7 +53,7 @@
 					let {
 						apiContext: r
 					} = n;
-					if (!Object(h.P)(s())) return void t(Object(d.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(h.Q)(s())) return void t(Object(d.i)(l.a.LOGIN_MODAL_ID));
 					const a = s().features.comments.models[e];
 					if (!a) return;
 					const i = a.isLocked ? m.l : m.e;
@@ -653,4 +653,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.b7b73bcb711ff6cefb79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.77bc487ebcf0976c0150.js.map

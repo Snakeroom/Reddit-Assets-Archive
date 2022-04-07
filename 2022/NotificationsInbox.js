@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.e5976db45cf1794320ca.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.7afaacbd3107014fd32c.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -20,7 +20,7 @@
 				b = n("./src/reddit/selectors/user.ts");
 			const f = () => async (e, t) => {
 				const n = t();
-				if (!(Object(b.P)(n) || Object(b.O)(n))) return Object(d.a)(e, n);
+				if (!(Object(b.Q)(n) || Object(b.P)(n))) return Object(d.a)(e, n);
 				Object(u.b)(n) ? (e(p()), e(g()), await e(h())) : e(Object(i.c)("/"))
 			}, p = () => Object(a.k)({
 				actionSource: a.a.NotificationsInbox,
@@ -31,7 +31,7 @@
 				const n = t(),
 					i = Object(m.g)(t()),
 					s = !(!i || !i.length),
-					a = Object(b.P)(n) || Object(b.O)(n);
+					a = Object(b.Q)(n) || Object(b.P)(n);
 				if (s || !a || !Object(u.b)(n)) return;
 				const o = {
 					first: 10
@@ -644,7 +644,7 @@
 				isInboxPostEmbedEnabled: O.a,
 				isPending: U.e,
 				todayNotifications: U.i,
-				userId: R.Ab
+				userId: R.Bb
 			});
 			var H = Object(d.b)(W, e => ({
 					clearMessageTabBadgeCount: () => e(Object(u.b)()),
@@ -668,14 +668,14 @@
 				}))(A),
 				J = n("./node_modules/fbt/lib/FbtPublic.js"),
 				G = n("./src/reddit/components/BadgeCounter/index.tsx"),
-				z = n("./src/reddit/components/TabNav/index.tsx"),
-				Q = n("./src/reddit/controls/InternalLink/index.tsx"),
+				Q = n("./src/reddit/components/TabNav/index.tsx"),
+				z = n("./src/reddit/controls/InternalLink/index.tsx"),
 				D = n("./src/reddit/hooks/useTracking.ts"),
 				q = n("./src/reddit/icons/fonts/index.tsx"),
 				Y = n("./src/reddit/pages/NotificationsInbox/NavBar/index.m.less"),
 				X = n.n(Y);
 			const K = h.a.wrapped(G.a, "Badge", X.a),
-				V = h.a.wrapped(z.a, "Tab", X.a);
+				V = h.a.wrapped(Q.a, "Tab", X.a);
 			var Z = e => {
 				const {
 					messagesTabBadgeCount: t,
@@ -723,7 +723,7 @@
 					className: X.a.icon
 				}), J.fbt._("Mark as read", null, {
 					hk: "3IycES"
-				}))), s.a.createElement("li", null, s.a.createElement(Q.a, {
+				}))), s.a.createElement("li", null, s.a.createElement(z.a, {
 					className: X.a.navLink,
 					onClick: () => i(Object(C.o)(C.c.Inbox)),
 					to: "/settings/notifications"
@@ -757,4 +757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.e5976db45cf1794320ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.7afaacbd3107014fd32c.js.map

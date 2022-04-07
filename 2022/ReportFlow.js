@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.2d6346a52440a433f666.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.72adfb1eeaee9a508cf1.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -952,7 +952,7 @@
 					if (!R && !f) return;
 					const C = f ? p.features.comments.models[e] : p.posts.models[e];
 					if (!C) return;
-					if (!Object(_.P)(o())) return s(Object(r.j)()), void s(Object(a.k)({
+					if (!Object(_.Q)(o())) return s(Object(r.j)()), void s(Object(a.k)({
 						actionSource: a.a.Report,
 						redirectUrl: C.permalink,
 						thingId: e
@@ -1098,7 +1098,7 @@
 								type: p.error ? p.error.type : "Unknown error",
 								username: e
 							},
-							o = Object(d.c)(u) && "REBLOCK_RATE_LIMIT" === p.body.reason;
+							o = Object(d.d)(u) && "REBLOCK_RATE_LIMIT" === p.body.reason;
 						t(f(n)), t(o ? a.f({
 							id: m,
 							kind: l.b.Error,
@@ -2215,7 +2215,7 @@
 						(r ? r.author : a ? a.author : null) || t.author;
 						n.name
 					}),
-					isNightmodeOn: M.cb,
+					isNightmodeOn: M.db,
 					isTalkReportingAllowed: L.B,
 					locale: A.i
 				}),
@@ -3912,39 +3912,33 @@
 		"./src/reddit/selectors/blockedRedditors.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return o
+				return s
 			})), n.d(t, "a", (function() {
-				return r
-			})), n.d(t, "d", (function() {
-				return a
+				return o
 			})), n.d(t, "c", (function() {
-				return i
+				return r
 			}));
-			var s = n("./src/reddit/selectors/user.ts");
-			const o = e => e.blockedRedditors.api.pending,
-				r = e => e.blockedRedditors.list,
-				a = (e, t) => {
+			n("./src/reddit/selectors/user.ts");
+			const s = e => e.blockedRedditors.api.pending,
+				o = e => e.blockedRedditors.list,
+				r = (e, t) => {
 					const n = (e => {
-						const t = r(e);
+						const t = o(e);
 						return t && t.ids
 					})(e);
 					return !!n && n.includes(t)
-				},
-				i = (e, t) => {
-					const n = Object(s.yb)(e, {
-						userName: t
-					});
-					return !!n && a(e, n.id)
 				}
 		},
 		"./src/reddit/selectors/experiments/antievil/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
 				return r
-			})), n.d(t, "b", (function() {
-				return a
 			})), n.d(t, "c", (function() {
+				return a
+			})), n.d(t, "d", (function() {
 				return i
+			})), n.d(t, "b", (function() {
+				return l
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/helpers/chooseVariant/index.ts");
@@ -3957,14 +3951,20 @@
 				a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.m
-					}) === s.gd
+						experimentName: s.n
+					}) === s.hd
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: s.n
-					}) === s.gd
+						experimentName: s.o
+					}) === s.hd
+				},
+				l = e => {
+					return Object(o.c)(e, {
+						experimentEligibilitySelector: o.a,
+						experimentName: s.j
+					}) === s.hd
 				}
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, n) {
@@ -3978,12 +3978,12 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
 			const a = e => s.c.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: r.P,
+					experimentEligibilitySelector: r.Q,
 					experimentName: s.i
 				}),
 				i = e => s.e.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: r.P,
-					experimentName: s.l
+					experimentEligibilitySelector: r.Q,
+					experimentName: s.m
 				})
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOrError.json": function(e) {
@@ -4012,4 +4012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.2d6346a52440a433f666.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.72adfb1eeaee9a508cf1.js.map

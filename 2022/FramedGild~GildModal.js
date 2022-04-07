@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.11e24f03a6ca8190dfb7.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.85e2e258e84cc14d25f9.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1894,7 +1894,7 @@
 						} = a;
 						t(O());
 						const l = r(),
-							u = Object(c.P)(l);
+							u = Object(c.Q)(l);
 						try {
 							const r = !u,
 								n = await Object(i.b)({
@@ -2885,7 +2885,7 @@
 					isAnonymous: S.f,
 					iFramed: S.g,
 					isGildPending: S.e,
-					isEmployee: F.M,
+					isEmployee: F.N,
 					isRecommendedCoinPackagePending: M.q,
 					message: S.c,
 					postOrComment: (e, t) => {
@@ -3308,7 +3308,7 @@
 				b = r.n(p);
 			const h = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(a.b)(() => Object(o.c)({
-					isNightmodeOn: m.cb
+					isNightmodeOn: m.db
 				}));
 			t.a = f(e => {
 				const t = {
@@ -3405,7 +3405,7 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(o.b)(() => Object(c.a)(v.F, w.ib, (e, t) => {
+				N = Object(o.b)(() => Object(c.a)(v.F, w.jb, (e, t) => {
 					let {
 						isSponsored: r,
 						postId: n
@@ -4877,12 +4877,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.df.SmIcon:
+						case h.ef.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.df.SmIconHc:
+						case h.ef.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5981,12 +5981,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.Xe
+						experimentName: n.Ye
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.df.SmIcon || t === n.df.SmIconHc
+					return t === n.ef.SmIcon || t === n.ef.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6024,4 +6024,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.11e24f03a6ca8190dfb7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.85e2e258e84cc14d25f9.js.map

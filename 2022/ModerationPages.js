@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.74cd69cbe7f560dc246f.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.fd2e2f78632780c02e12.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -467,8 +467,8 @@
 						if (function(e) {
 								return Object(f.c)(e, {
 									experimentEligibilitySelector: f.a,
-									experimentName: g.td
-								}) === g.gd
+									experimentName: g.ud
+								}) === g.hd
 							}(d())) {
 							const {
 								normalizeModQueueListingFromGql: e,
@@ -967,7 +967,7 @@
 					if (s) return;
 					a || n && !s || await t(Object(I.subredditDataRequested)(e, k, {}))
 				} else C && await t(Object(P.e)(C));
-				if (!Object(fe.P)(n()) && _ !== o.fc.SubredditRules && _ !== o.fc.Contributors) return void Object(m.a)(t, n());
+				if (!Object(fe.Q)(n()) && _ !== o.fc.SubredditRules && _ !== o.fc.Contributors) return void Object(m.a)(t, n());
 				if (Object(p.i)(n(), !0, k, C), !_) return;
 				let G, K, Q, Y, X, Z, J, $, ee, te = !1;
 				switch (_) {
@@ -1050,7 +1050,7 @@
 				}
 				const ne = n(),
 					se = !!k && Object(be.jb)(ne),
-					ae = Object(fe.M)(ne),
+					ae = Object(fe.N)(ne),
 					oe = k ? Object(y.V)(ne, {
 						subredditName: k.toLowerCase()
 					}) : Object(he.q)(ne, {
@@ -2633,7 +2633,7 @@
 					} = e;
 					const {
 						audioRoom: n
-					} = t, o = () => Math.floor(10 * Math.random() + 1), i = Object(g.e)(f.cb), [d, l] = Object(s.useState)(!1), [c, m] = Object(s.useState)(o());
+					} = t, o = () => Math.floor(10 * Math.random() + 1), i = Object(g.e)(f.db), [d, l] = Object(s.useState)(!1), [c, m] = Object(s.useState)(o());
 					return Object(s.useEffect)(() => {
 						const e = setInterval(() => {
 							l(!0), setTimeout(() => l(!1), 3500), m(o())
@@ -5637,7 +5637,7 @@
 				allowChatPostCreation: (e, t) => Object(M.b)(e, t.subredditId),
 				isBroadcastingEnabled: (e, t) => Object(P.c)(e, t.subredditId),
 				isChatPostsCreationEnabled: (e, t) => Object(M.c)(e, t.subredditId),
-				isEmployee: D.M,
+				isEmployee: D.N,
 				notificationSettings: A.b,
 				restrictions: R.m,
 				settings: (e, t) => Object(R.U)(e, t.subredditId),
@@ -16163,7 +16163,7 @@
 				ce = f.a.div("TickText", U.a),
 				me = f.a.div("PreSubText", U.a),
 				ue = Object(i.c)({
-					isNightModeOn: D.cb
+					isNightModeOn: D.db
 				}),
 				pe = Object(o.b)(ue)(e => a.a.createElement(Y, {
 					last: e.last,
@@ -17737,10 +17737,10 @@
 					error: B.f,
 					isCreatePending: B.j,
 					isEmailInviteExperimentEnabled: U.a,
-					isEmployee: W.M,
+					isEmployee: W.N,
 					crosspostId: B.i,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(W.ob)(e),
-					userIsSuspended: W.W,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(W.pb)(e),
+					userIsSuspended: W.X,
 					allTags: H.e,
 					existingTags: H.f,
 					newTags: H.g,
@@ -19100,7 +19100,7 @@
 					isChatPost: u.d,
 					isCurrentUserProfilePost: h.l,
 					isExpanded: h.m,
-					isLoggedIn: f.P,
+					isLoggedIn: f.Q,
 					showPromotedCTA: g.a,
 					moderatorPermissions: p.m,
 					modModeEnabled: l.T,
@@ -22437,7 +22437,7 @@
 						profileName: t.match.params.profileName
 					})
 				}),
-				Ye = Object(i.b)(() => Object(d.a)(Ve, w.M, E.R, Ge, w.jb, O.jb, Qe, Ke, qe, (e, t) => t.match.params.pageName, e => e, (e, t, n, s, a, o, r, i, d, l, c) => {
+				Ye = Object(i.b)(() => Object(d.a)(Ve, w.N, E.R, Ge, w.kb, O.jb, Qe, Ke, qe, (e, t) => t.match.params.pageName, e => e, (e, t, n, s, a, o, r, i, d, l, c) => {
 					let {
 						contentGateInfo: m
 					} = e, {
@@ -22554,9 +22554,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.fd
+					experimentName: s.gd
 				});
-				return !(!t || Object(s.yf)(t))
+				return !(!t || Object(s.zf)(t))
 			}
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, n) {
@@ -22629,10 +22629,10 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.ue,
+					experimentName: a.ve,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.Ce.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.De.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(s.a)(r.G, i, (e, t) => d(e, t));
 			Object(s.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -22878,4 +22878,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.74cd69cbe7f560dc246f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.fd2e2f78632780c02e12.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.47a16ce3200d5ce5093f.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.550845c596d25909119b.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, n) {
@@ -757,7 +757,7 @@
 				let {
 					space: t
 				} = e;
-				const n = Object(d.e)(c.cb),
+				const n = Object(d.e)(c.db),
 					i = t === r.MODAL,
 					l = t === r.INFEED_UNIT;
 				return o.a.createElement("div", {
@@ -2275,7 +2275,7 @@
 				}, e.bottomButtonText)))),
 				O = Object(d.c)({
 					hideNSFWPref: w.F,
-					nightmode: w.cb
+					nightmode: w.db
 				}),
 				N = Object(i.b)(O)(e => a.a.createElement("div", {
 					className: Object(c.a)(C.a.communityItemContainer, {
@@ -2789,10 +2789,10 @@
 						r = t.redditStyle || Object(g.l)(e, {
 							subredditId: n
 						}),
-						s = Object(f.cb)(e);
+						s = Object(f.db)(e);
 					return r || s
 				},
-				nigtmode: f.cb,
+				nigtmode: f.db,
 				subredditId: u.n,
 				topPostVariant: h.d
 			}));
@@ -2972,7 +2972,7 @@
 				N = m.a.wrapped(o.a, "RawHTMLDisplay", E.a);
 			var j = Object(a.b)(() => Object(i.c)({
 					forceRedditStyle: x.l,
-					isNightmodeOn: v.cb
+					isNightmodeOn: v.db
 				}))(e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -3178,7 +3178,7 @@
 				ke = m.a.div("LinkContainer", fe.a),
 				Se = Object(i.c)({
 					userIsBanned: he.cb,
-					userIsLoggedIn: v.P
+					userIsLoggedIn: v.Q
 				});
 			var Oe = Object(a.b)(Se)(e => {
 					const {
@@ -4258,8 +4258,8 @@
 			const o = e => s.e[Object(a.R)(e, {})] === s.d.Card,
 				d = e => Object(i.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: r.jb
-				}) === r.dc.Treatment
+					experimentName: r.kb
+				}) === r.ec.Treatment
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -4269,4 +4269,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.47a16ce3200d5ce5093f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.550845c596d25909119b.js.map

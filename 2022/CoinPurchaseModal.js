@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.7a189e8f4146fb9a05ba.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.0c53e4b685ce49ce34d7.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1554,7 +1554,7 @@
 						} = o;
 						t(y());
 						const l = r(),
-							u = Object(i.P)(l);
+							u = Object(i.Q)(l);
 						try {
 							const r = !u,
 								n = await Object(c.b)({
@@ -1912,7 +1912,7 @@
 			const {
 				fbt: U
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			var H = e => {
+			var Q = e => {
 				var t;
 				const r = Object(L.a)();
 				return s.a.createElement("div", {
@@ -1945,7 +1945,7 @@
 					"data-redditstyle": !0
 				})))
 			};
-			var Q = e => {
+			var H = e => {
 					const t = Object(L.a)(),
 						r = [];
 					if (e.purchasePackage && r.push(a.fbt._("{coinCount} will automatically be spent on this {awardName} Award.", [a.fbt._param("coinCount", Object(l.b)(e.award.coinPrice, {
@@ -2003,13 +2003,13 @@
 					o = e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0;
 				return s.a.createElement(n.Elements, {
 					stripe: r
-				}, s.a.createElement(s.a.Fragment, null, e.gildThingId ? s.a.createElement(Q, {
+				}, s.a.createElement(s.a.Fragment, null, e.gildThingId ? s.a.createElement(H, {
 					coinBalance: e.coinBalance,
 					award: e.selectedAward,
 					purchasePackage: e.purchasePackage,
 					userName: e.userName,
 					onCloseClick: e.onCloseModal
-				}) : e.purchasePackage && s.a.createElement(H, {
+				}) : e.purchasePackage && s.a.createElement(Q, {
 					coinBalance: e.coinBalance,
 					purchasePackage: e.purchasePackage,
 					userName: e.userName,
@@ -2201,7 +2201,7 @@
 					dealCoinPackages: v.f,
 					gildThingId: P.s,
 					isIframed: O.g,
-					nightmode: x.cb,
+					nightmode: x.db,
 					savedCardsPending: P.w,
 					selectedAward: j.b,
 					selectedPayment: P.c,
@@ -3536,7 +3536,7 @@
 				m = r("./node_modules/react-redux/es/index.js"),
 				b = r("./src/reddit/constants/experiments.ts"),
 				f = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(f.a)(b.Ic);
+			const h = Object(f.a)(b.Jc);
 			let g = null;
 
 			function y() {
@@ -3724,4 +3724,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.7a189e8f4146fb9a05ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.0c53e4b685ce49ce34d7.js.map

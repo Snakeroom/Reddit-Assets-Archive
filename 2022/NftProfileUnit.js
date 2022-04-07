@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.cdccffe9870eeab42358.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.4cb4d4e05349798846fe.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx": function(e, t, n) {
@@ -10,16 +10,16 @@
 			var r = n("./node_modules/@reddit/crypto/react/config/index.es.js"),
 				o = n("./node_modules/react/index.js"),
 				s = n.n(o),
-				c = n("./node_modules/react-redux/es/index.js"),
-				a = n("./src/reddit/selectors/user.ts"),
+				a = n("./node_modules/react-redux/es/index.js"),
+				c = n("./src/reddit/selectors/user.ts"),
 				d = n("./src/config.ts");
 			const i = e => {
 				let {
 					children: t
 				} = e;
 				const n = function() {
-					const e = Object(c.e)(u),
-						t = Object(c.e)(a.cb);
+					const e = Object(a.e)(u),
+						t = Object(a.e)(c.db);
 					l || (l = function(e, t) {
 						return {
 							api: {
@@ -66,8 +66,8 @@
 			var r = n("./node_modules/react/index.js"),
 				o = n.n(r),
 				s = n("./node_modules/react-redux/es/index.js"),
-				c = n("./node_modules/@reddit/crypto/react/nft-treatment/index.es.js"),
-				a = n("./src/reddit/actions/modal.ts"),
+				a = n("./node_modules/@reddit/crypto/react/nft-treatment/index.es.js"),
+				c = n("./src/reddit/actions/modal.ts"),
 				d = n("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
 				i = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				l = n("./src/reddit/components/GlobalModalContainer/registry.ts"),
@@ -90,15 +90,15 @@
 				} = e;
 				const r = Object(s.d)();
 				Object(_.a)(m);
-				const i = Object(c.c)(n);
+				const i = Object(a.c)(n);
 				return i ? o.a.createElement("div", {
 					className: t
-				}, o.a.createElement(d.a, null, o.a.createElement(c.b, {
+				}, o.a.createElement(d.a, null, o.a.createElement(a.b, {
 					imageUrl: n
-				}), o.a.createElement(c.a, {
+				}), o.a.createElement(a.a, {
 					className: E.a.detailsButton,
 					onClick: () => {
-						r(Object(a.h)(u.a.ECON_NFT_PRODUCT_DETAILS, {
+						r(Object(c.h)(u.a.ECON_NFT_PRODUCT_DETAILS, {
 							itemId: i
 						}))
 					}
@@ -110,7 +110,7 @@
 			n.d(t, "b", (function() {
 				return s
 			})), n.d(t, "a", (function() {
-				return c
+				return a
 			}));
 			const r = {},
 				o = () => null;
@@ -120,7 +120,7 @@
 				r[e] = t
 			}
 
-			function c(e) {
+			function a(e) {
 				return e && e in r ? r[e] : o
 			}
 		},
@@ -139,4 +139,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.cdccffe9870eeab42358.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.4cb4d4e05349798846fe.js.map

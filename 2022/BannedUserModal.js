@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.045ce91347874dd98fff.js
-// Retrieved at 3/29/2022, 1:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.d4ba2433cd1e1979a580.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, n) {
@@ -257,7 +257,7 @@
 							return e
 					}
 				},
-				Q = Object(M.c)({
+				z = Object(M.c)({
 					api: I,
 					fetchedTokens: B,
 					inContext: U,
@@ -268,10 +268,10 @@
 				});
 			Object(j.a)({
 				features: {
-					banned: Q
+					banned: z
 				}
 			});
-			const z = Object(o.a)(E.o),
+			const Q = Object(o.a)(E.o),
 				V = Object(o.a)(E.n),
 				Y = Object(o.a)(E.m),
 				$ = function(e) {
@@ -285,7 +285,7 @@
 							i = Object(C.e)(e, d),
 							l = o.features.banned.fetchedTokens[i];
 						if (o.features.banned.api.pending[i] || l) return;
-						n(z({
+						n(Q({
 							subredditId: e,
 							fetchedToken: d
 						}));
@@ -405,7 +405,7 @@
 							await n(Object(l.o)(t.name))
 						}
 					})(), (async () => {
-						const s = Object(k.yb)(r, {
+						const s = Object(k.zb)(r, {
 							userName: t
 						});
 						if (!s) return;
@@ -1227,4 +1227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.045ce91347874dd98fff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.d4ba2433cd1e1979a580.js.map

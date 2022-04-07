@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.2859edc5d59d62a564b8.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.71154d94a9e437745e38.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1119,7 +1119,7 @@
 						} = c;
 						t(O());
 						const l = r(),
-							u = Object(i.P)(l);
+							u = Object(i.Q)(l);
 						try {
 							const r = !u,
 								n = await Object(a.b)({
@@ -1319,7 +1319,7 @@
 				V = r("./src/reddit/controls/Button/index.tsx"),
 				Y = r("./src/reddit/components/CompactCoinPurchaseList/ListItem/index.m.less"),
 				Z = r.n(Y);
-			var $ = e => {
+			var Q = e => {
 					const {
 						className: t,
 						buttonClass: r,
@@ -1356,8 +1356,8 @@
 						})
 					}, n)))
 				},
-				Q = r("./src/reddit/components/CompactCoinPurchaseList/index.m.less"),
-				J = r.n(Q);
+				$ = r("./src/reddit/components/CompactCoinPurchaseList/index.m.less"),
+				J = r.n($);
 			const X = Object(_.c)({
 					coinPackages: K.d,
 					communityPointsConversionEnabled: B.d.spPointsCoinConversion,
@@ -1489,7 +1489,7 @@
 						const {
 							isFreeAwardEventEnabled: e
 						} = this.props;
-						return e ? o.a.createElement($, {
+						return e ? o.a.createElement(Q, {
 							buttonClass: J.a.freeAwardButton,
 							buttonText: P.fbt._("Claim", null, {
 								hk: "OUYUl"
@@ -1511,7 +1511,7 @@
 							communityPointsName: t,
 							onClickConvert: r
 						} = this.props;
-						return e && t ? o.a.createElement($, {
+						return e && t ? o.a.createElement(Q, {
 							buttonText: P.fbt._("Convert", null, {
 								hk: "zVTTU"
 							}),
@@ -1534,7 +1534,7 @@
 						primaryText: s,
 						subtext: a
 					} = e, i = c && c.coins !== c.baselineCoins, d = c && c.pennies !== c.baselinePennies;
-					return o.a.createElement($, {
+					return o.a.createElement(Q, {
 						buttonClass: t,
 						buttonSubtext: r,
 						buttonSubtextCrossout: d,
@@ -1989,4 +1989,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.2859edc5d59d62a564b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.71154d94a9e437745e38.js.map

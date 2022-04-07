@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.05fe6a70a025873f3b09.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.bb2db6eef86d581eb49f.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -735,7 +735,7 @@
 					} = t;
 					return Object(d.a)(e, n)
 				},
-				isLoggedIn: x.P,
+				isLoggedIn: x.Q,
 				nextAvailableClaim: g.b
 			});
 			var de = Object(a.b)(ce, e => ({
@@ -1770,4 +1770,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.05fe6a70a025873f3b09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.bb2db6eef86d581eb49f.js.map

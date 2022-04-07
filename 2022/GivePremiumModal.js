@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.ccfc8c2eb91e07d25c33.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.338d65300e56947286e3.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -91,9 +91,9 @@
 			}, O = n("./src/reddit/helpers/correlationIdTracker.ts"), I = n("./src/reddit/models/Toast/index.ts"), _ = n("./src/reddit/selectors/premium.ts"), y = n("./src/reddit/actions/gold/constants.ts");
 			Object(x.a)(y.y), Object(x.a)(y.A), Object(x.a)(y.z), Object(x.a)(y.C);
 			const w = Object(x.a)(y.x),
-				j = Object(x.a)(y.w),
-				N = e => async (t, n) => {
-					await t(j(e));
+				N = Object(x.a)(y.w),
+				j = e => async (t, n) => {
+					await t(N(e));
 					const o = Object(_.a)(n());
 					if (o) {
 						const n = ((e, t) => {
@@ -151,7 +151,7 @@
 			const W = 10,
 				H = Object(c.c)({
 					coinBalance: F.e,
-					isEmployee: F.M,
+					isEmployee: F.N,
 					isPending: _.b,
 					recipientName: _.d
 				}),
@@ -165,13 +165,13 @@
 							o(w());
 							try {
 								const a = await E(c(), t, e, n, s, Object(O.c)(O.a.GiftPremiumFlow));
-								if (a.error) await o(N(a));
+								if (a.error) await o(j(a));
 								else {
 									const e = a.body;
 									await o(M(e)), Object(O.b)(O.a.GiftPremiumFlow)
 								}
 							} catch (r) {
-								await o(N(r))
+								await o(j(r))
 							}
 						})(t, n, s, o ? a : ""))
 					}
@@ -861,4 +861,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.ccfc8c2eb91e07d25c33.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.338d65300e56947286e3.js.map

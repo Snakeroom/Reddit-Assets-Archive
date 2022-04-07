@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.8632a31f138b7d5f903e.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.a5360280fe1ecc18397b.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -294,7 +294,7 @@
 					const i = t(),
 						a = Object(m.e)(i),
 						d = Object(m.d)(i),
-						p = Object(h.O)(i);
+						p = Object(h.P)(i);
 					if (a || !d) return;
 					e(f());
 					let x = !1;
@@ -369,7 +369,7 @@
 						o = Object(m.g)(a);
 					if (Object(m.f)(a) || null === o || "client" === o) {
 						const n = null === (r = null === (s = Object(p.b)(t())) || void 0 === s ? void 0 : s.routeMatch) || void 0 === r ? void 0 : r.route.chunk,
-							o = Object(h.P)(a);
+							o = Object(h.Q)(a);
 						return Object(i.i)(() => e(y()), {
 							name: "getFocusedVerticalsRequested",
 							page: n,
@@ -1188,7 +1188,7 @@
 				C = n("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
 				w = n.n(C);
 			const O = Object(b.c)({
-				isLoggedIn: E.P,
+				isLoggedIn: E.Q,
 				subreddit: S.S,
 				subredditAboutInfo: S.t
 			});
@@ -1405,10 +1405,10 @@
 						s = t.redditStyle || Object(g.l)(e, {
 							subredditId: n
 						}),
-						r = Object(f.cb)(e);
+						r = Object(f.db)(e);
 					return s || r
 				},
-				nigtmode: f.cb,
+				nigtmode: f.db,
 				subredditId: u.n,
 				topPostVariant: b.d
 			}));
@@ -2535,7 +2535,7 @@
 			const {
 				fbt: oe
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ce = Object(i.c)({
-				isLoggedIn: re.P,
+				isLoggedIn: re.Q,
 				subreddit: se.S,
 				subredditAboutInfo: (e, t) => {
 					let {
@@ -2974,7 +2974,7 @@
 				x = e => e.focusedVerticals.category,
 				_ = e => e.focusedVerticals.lastLoadedEnv,
 				T = e => {
-					const t = Object(o.O)(e),
+					const t = Object(o.P)(e),
 						n = r.d.geoSubredditRecommendationDULoggedIn(e),
 						s = r.d.geoSubredditRecommendationDULoggedOut(e);
 					return t && n || !t && s
@@ -2997,4 +2997,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.8632a31f138b7d5f903e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.a5360280fe1ecc18397b.js.map

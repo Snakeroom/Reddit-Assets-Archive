@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.0274d30c2367c34aca89.js
-// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.e35897911ca11fe61041.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/components/CommentsChat/Comment/ChatIcon/default.tsx": function(e, t, s) {
@@ -460,9 +460,9 @@
 		"./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return Y
-			})), s.d(t, "h", (function() {
 				return z
+			})), s.d(t, "h", (function() {
+				return Y
 			})), s.d(t, "g", (function() {
 				return q
 			})), s.d(t, "p", (function() {
@@ -528,8 +528,8 @@
 				y = s("./src/reddit/icons/fonts/Upvote/index.tsx"),
 				M = s("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				S = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
-				j = s("./src/reddit/icons/svgs/Hide/index.tsx"),
-				B = s("./src/reddit/icons/svgs/Lock/index.tsx"),
+				B = s("./src/reddit/icons/svgs/Hide/index.tsx"),
+				j = s("./src/reddit/icons/svgs/Lock/index.tsx"),
 				O = s("./src/reddit/icons/svgs/Plus/index.tsx"),
 				T = s("./src/reddit/icons/svgs/Remove/index.tsx"),
 				V = s("./src/reddit/icons/svgs/Report/index.tsx"),
@@ -544,14 +544,14 @@
 				U = s.n(H);
 			const {
 				fbt: K
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Y = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = e => {
 				let {
 					children: t
 				} = e;
 				return n.a.createElement("div", {
 					className: U.a.broadcastStatus
 				}, t)
-			}, z = e => {
+			}, Y = e => {
 				let {
 					onClick: t
 				} = e;
@@ -810,7 +810,7 @@
 					iconWrapperClassName: U.a.overflowItemIconWrapper,
 					key: `${oe}-hide`,
 					onClick: s
-				}, n.a.createElement(j.a, {
+				}, n.a.createElement(B.a, {
 					className: U.a.overflowItemIcon
 				})), c && n.a.createElement(n.a.Fragment, null, n.a.createElement(f.b, {
 					className: U.a.headerItem,
@@ -831,7 +831,7 @@
 					onClick: r
 				}, o ? n.a.createElement(F.a, {
 					className: U.a.overflowItemIcon
-				}) : n.a.createElement(B.a, {
+				}) : n.a.createElement(j.a, {
 					className: U.a.overflowItemIcon
 				})), n.a.createElement(f.b, {
 					className: U.a.endBroadcastItem,
@@ -850,7 +850,7 @@
 						apiContext: r
 					} = n;
 					const o = a();
-					Object(p.P)(o) ? await Object(u.g)(r(), e, t) : s(Object(h.i)())
+					Object(p.Q)(o) ? await Object(u.g)(r(), e, t) : s(Object(h.i)())
 				})(t, s))
 			}))(class extends a.Component {
 				constructor(e) {
@@ -1042,7 +1042,7 @@
 					isSubscribed: c
 				}));
 				return o && o.enableFollowers ? d : null
-			}, fe = e => Object(r.e)(t => Object(p.yb)(t, {
+			}, fe = e => Object(r.e)(t => Object(p.zb)(t, {
 				userName: e
 			})), Ee = e => Object(r.e)(t => Object(Z.eb)(t, {
 				identifier: {
@@ -1098,7 +1098,7 @@
 			})), Ie = e => {
 				const t = Object(r.e)(p.k),
 					s = Object(r.e)(p.F),
-					a = Object(r.e)(p.jb);
+					a = Object(r.e)(p.kb);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!a && !s))))
 			}
 		},
@@ -1424,4 +1424,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.0274d30c2367c34aca89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.e35897911ca11fe61041.js.map

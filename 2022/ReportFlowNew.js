@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.e02b269fa4572ef0e552.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.f48732a44693c6a07242.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -117,7 +117,7 @@
 			})), o.d(t, "a", (function() {
 				return R
 			})), o.d(t, "g", (function() {
-				return k
+				return j
 			}));
 			var r = o("./node_modules/fbt/lib/FbtPublic.js"),
 				s = o("./src/lib/makeActionCreator/index.ts"),
@@ -155,7 +155,7 @@
 								type: p.error ? p.error.type : "Unknown error",
 								username: e
 							},
-							s = Object(a.c)(u) && "REBLOCK_RATE_LIMIT" === p.body.reason;
+							s = Object(a.d)(u) && "REBLOCK_RATE_LIMIT" === p.body.reason;
 						t(f(o)), t(s ? i.f({
 							id: m,
 							kind: c.b.Error,
@@ -175,7 +175,7 @@
 							buttonAction: _(e)
 						}))
 					}
-				}, w = "USER_UNBLOCK__PENDING", O = "USER_UNBLOCK__SUCCESS", R = "USER_UNBLOCK__FAILED", x = Object(s.a)(w), g = Object(s.a)(O), j = Object(s.a)(R), k = e => async (t, o, s) => {
+				}, w = "USER_UNBLOCK__PENDING", O = "USER_UNBLOCK__SUCCESS", R = "USER_UNBLOCK__FAILED", x = Object(s.a)(w), g = Object(s.a)(O), k = Object(s.a)(R), j = e => async (t, o, s) => {
 					let {
 						apiContext: a
 					} = s;
@@ -197,7 +197,7 @@
 						text: r.fbt._("An error has occured. Please try again later", null, {
 							hk: "2FpsLy"
 						})
-					})), t(j({
+					})), t(k({
 						name: e
 					}))))
 				}
@@ -293,9 +293,9 @@
 				...x,
 				variables: t
 			});
-			var j = o("./src/redditGQL/operations/ReportLiveStream.json");
-			const k = (e, t) => Object(R.a)(e, {
-				...j,
+			var k = o("./src/redditGQL/operations/ReportLiveStream.json");
+			const j = (e, t) => Object(R.a)(e, {
+				...k,
 				variables: t
 			});
 			var v = o("./src/reddit/endpoints/messages/index.ts"),
@@ -358,7 +358,7 @@
 						(n ? n.author : i ? i.author : null) || t.author;
 						o.name
 					}),
-					isNightmodeOn: q.cb,
+					isNightmodeOn: q.db,
 					isTalkReportingAllowed: T.B,
 					locale: N.i
 				}),
@@ -503,7 +503,7 @@
 										relativeReportTimeSec: a,
 										...h
 									};
-									f = () => k(r(), {
+									f = () => j(r(), {
 										input: e
 									});
 									break
@@ -932,29 +932,21 @@
 		"./src/reddit/selectors/blockedRedditors.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "b", (function() {
-				return s
+				return r
 			})), o.d(t, "a", (function() {
-				return n
-			})), o.d(t, "d", (function() {
-				return i
+				return s
 			})), o.d(t, "c", (function() {
-				return d
+				return n
 			}));
-			var r = o("./src/reddit/selectors/user.ts");
-			const s = e => e.blockedRedditors.api.pending,
-				n = e => e.blockedRedditors.list,
-				i = (e, t) => {
+			o("./src/reddit/selectors/user.ts");
+			const r = e => e.blockedRedditors.api.pending,
+				s = e => e.blockedRedditors.list,
+				n = (e, t) => {
 					const o = (e => {
-						const t = n(e);
+						const t = s(e);
 						return t && t.ids
 					})(e);
 					return !!o && o.includes(t)
-				},
-				d = (e, t) => {
-					const o = Object(r.yb)(e, {
-						userName: t
-					});
-					return !!o && i(e, o.id)
 				}
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOrError.json": function(e) {
@@ -983,4 +975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.e02b269fa4572ef0e552.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.f48732a44693c6a07242.js.map

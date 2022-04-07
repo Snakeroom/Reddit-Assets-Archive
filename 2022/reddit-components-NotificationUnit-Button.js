@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.f11d6f50bde125822f25.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.ae48152bcd5b8a0d8510.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(t, e, n) {
@@ -161,7 +161,7 @@
 					return async (t, o) => {
 						const r = o();
 						if (!!r.features.comments.drafts[n])
-							if (Object(X.R)(r) && e) {
+							if (Object(X.S)(r) && e) {
 								const o = Z({
 									hasFocus: e,
 									draftKey: n
@@ -344,7 +344,7 @@
 					return async (t, r) => {
 						const s = r(),
 							l = Object(i.a)(B.c.replyToComment, n);
-						if (!Object(X.P)(r())) return t(Object(a.j)()), void t(Object(d.k)({
+						if (!Object(X.Q)(r())) return t(Object(a.j)()), void t(Object(d.k)({
 							actionSource: d.a.Reply,
 							redirectUrl: Object(G.m)(r(), {
 								commentId: n
@@ -384,7 +384,7 @@
 								draftType: B.c.replyToComment,
 								rtJson: f,
 								text: ""
-							}, Object(X.R)(s)) {
+							}, Object(X.S)(s)) {
 							const o = mt({
 								parentCommentId: n,
 								commentsPageKey: e,
@@ -1333,4 +1333,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.f11d6f50bde125822f25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.ae48152bcd5b8a0d8510.js.map

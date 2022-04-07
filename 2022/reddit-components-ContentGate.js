@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.c54768e619e0c991d512.js
-// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.966cc471664dbe3245d9.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -145,11 +145,11 @@
 			const {
 				fbt: D
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), q = u.a.wrapped(w, "PrivateKey", P.a), F = u.a.div("ButtonsContainer", P.a), N = u.a.div("Container", P.a), M = u.a.div("ContainerExp", P.a), A = u.a.div("Description", P.a), I = u.a.div("PrivateSubredditDetails", P.a), G = u.a.div("PrivateSubredditDescription", P.a), H = u.a.h3("PrivateSubredditName", P.a), U = u.a.a("Link", P.a), W = u.a.wrapped(x.n, "LinkRouterButton", P.a), z = u.a.wrapped(x.m, "LinkButton", P.a), K = u.a.wrapped(x.q, "SecondaryLinkRouterButton", P.a), Z = u.a.wrapped(x.p, "SecondaryLinkButton", P.a), J = u.a.wrapped(W, "GoHomeLinkButton", P.a), V = u.a.wrapped(b.a, "CreateCommunityButton", P.a), Y = u.a.img("Image", P.a), X = u.a.img("ImagePlaceholder", P.a), Q = u.a.wrapped(W, "LeftLinkRouterButton", P.a), $ = u.a.wrapped(z, "LeftLinkButton", P.a), ee = u.a.wrapped(Z, "SecondaryLeftLinkButton", P.a), te = u.a.wrapped(K, "SecondaryLeftLinkRouterButton", P.a), ne = u.a.h3("Title", P.a), re = u.a.div("PageBody", P.a), ae = u.a.div("InterstitialMessageWrapper", P.a), oe = Object(c.c)({
-				isLoggedIn: j.O,
+				isLoggedIn: j.P,
 				origin: R.j,
 				user: j.k,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(j.P)(e)) return !1;
+					if (!Object(j.Q)(e)) return !1;
 					const t = Object(T.d)(e);
 					if (!t) return !1;
 					const n = Object(j.f)(e, t);
@@ -523,8 +523,8 @@
 			const k = "create-community-button",
 				v = y.a.wrapped(u.c, "StyledTooltip", E.a),
 				S = Object(s.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.ob)(e),
-					userIsSuspended: b.W
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.pb)(e),
+					userIsSuspended: b.X
 				});
 			t.a = Object(i.b)(S, (e, t) => {
 				let {
@@ -617,4 +617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.c54768e619e0c991d512.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.966cc471664dbe3245d9.js.map

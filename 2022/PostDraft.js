@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.74a6ffe0591687fc3ed6.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.4f2561fc457f9cc8407d.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -926,7 +926,7 @@
 				h = n.n(p);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(o.b)(() => Object(i.c)({
-					isNightmodeOn: m.cb
+					isNightmodeOn: m.db
 				}));
 			t.a = f(e => {
 				const t = {
@@ -1023,7 +1023,7 @@
 						style: t
 					}, e.children)
 				},
-				T = Object(i.b)(() => Object(c.a)(C.F, v.ib, (e, t) => {
+				T = Object(i.b)(() => Object(c.a)(C.F, v.jb, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: s
@@ -3092,12 +3092,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.df.SmIcon:
+						case b.ef.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.df.SmIconHc:
+						case b.ef.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -3649,10 +3649,10 @@
 						s = t.redditStyle || Object(f.l)(e, {
 							subredditId: n
 						}),
-						r = Object(x.cb)(e);
+						r = Object(x.db)(e);
 					return s || r
 				},
-				nigtmode: x.cb,
+				nigtmode: x.db,
 				subredditId: u.n,
 				topPostVariant: b.d
 			}));
@@ -5143,12 +5143,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.Xe
+						experimentName: s.Ye
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.df.SmIcon || t === s.df.SmIconHc
+					return t === s.ef.SmIcon || t === s.ef.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5174,4 +5174,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.74a6ffe0591687fc3ed6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.4f2561fc457f9cc8407d.js.map

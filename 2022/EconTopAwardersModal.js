@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.67daffadbd7c9f238976.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.08515167ac0c5b6d8e1b.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -340,11 +340,11 @@
 							return e
 					}
 				},
-				G = Object(y.c)({
+				K = Object(y.c)({
 					error: W,
 					pending: z
 				});
-			var K = function() {
+			var G = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -360,8 +360,8 @@
 					}
 				},
 				q = Object(y.c)({
-					api: G,
-					result: K
+					api: K,
+					result: G
 				});
 			const Z = {};
 			var Y = function() {
@@ -417,8 +417,8 @@
 					banned: J
 				}
 			});
-			const X = Object(o.a)(O.o),
-				Q = Object(o.a)(O.n),
+			const Q = Object(o.a)(O.o),
+				X = Object(o.a)(O.n),
 				V = Object(o.a)(O.m),
 				$ = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
@@ -431,13 +431,13 @@
 							d = Object(I.e)(e, c),
 							i = o.features.banned.fetchedTokens[d];
 						if (o.features.banned.api.pending[d] || i) return;
-						r(X({
+						r(Q({
 							subredditId: e,
 							fetchedToken: c
 						}));
 						const l = o.subreddits.models[e].name,
 							m = await h(s(), l, t);
-						m.ok ? r(Q({
+						m.ok ? r(X({
 							...m.body,
 							fetchedToken: c
 						})) : r(V({
@@ -551,7 +551,7 @@
 							await r(Object(i.o)(t.name))
 						}
 					})(), (async () => {
-						const a = Object(C.yb)(n, {
+						const a = Object(C.zb)(n, {
 							userName: t
 						});
 						if (!a) return;
@@ -896,8 +896,8 @@
 				},
 				W = r("./src/reddit/components/Econ/TopAwardersModal/TopAwardersList/index.m.less"),
 				z = r.n(W);
-			const G = 8;
-			var K = function(e) {
+			const K = 8;
+			var G = function(e) {
 					const {
 						awarders: t,
 						className: r,
@@ -908,7 +908,7 @@
 					} = e;
 					return t.length ? n.a.createElement("div", {
 						className: Object(d.a)(r, z.a.container)
-					}, a && (!a.rank || a.rank > G) && n.a.createElement(D, {
+					}, a && (!a.rank || a.rank > K) && n.a.createElement(D, {
 						className: z.a.awarder,
 						currentUserId: s,
 						awarder: a,
@@ -962,8 +962,8 @@
 						className: Y.a.coinIcon
 					}), r.score))
 				},
-				X = r("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
-				Q = r.n(X);
+				Q = r("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
+				X = r.n(Q);
 			var V = function(e) {
 					const {
 						awarders: t,
@@ -973,12 +973,12 @@
 					if (!t.length) return null;
 					const s = [t[0], t[1] || void 0, t[2] || void 0];
 					return n.a.createElement("div", {
-						className: Object(d.a)(r, Q.a.container, {
-							[Q.a.flexContainer]: s.length < 3
+						className: Object(d.a)(r, X.a.container, {
+							[X.a.flexContainer]: s.length < 3
 						})
 					}, s.map((e, t) => n.a.createElement(J, {
 						showScore: a,
-						className: Q.a.winner,
+						className: X.a.winner,
 						awarder: e,
 						rank: t + 1,
 						key: t
@@ -1134,7 +1134,7 @@
 					className: ee.a.giftIcon
 				}), re._("Give Award", null, {
 					hk: "2sa45i"
-				}))), T && d && S && n.a.createElement(K, {
+				}))), T && d && S && n.a.createElement(G, {
 					awarders: b,
 					className: ee.a.list,
 					currentRank: o,
@@ -1276,25 +1276,25 @@
 				D = r("./src/reddit/components/HumanDate/index.tsx"),
 				W = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				z = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
-				G = r("./src/reddit/actions/inContextModeration.ts"),
-				K = r("./src/reddit/actions/modal.ts"),
+				K = r("./src/reddit/actions/inContextModeration.ts"),
+				G = r("./src/reddit/actions/modal.ts"),
 				q = r("./src/reddit/actions/subredditModeration/ban.ts"),
 				Z = r("./src/reddit/constants/modals.ts"),
 				Y = r("./src/reddit/components/Hovercards/helpers.ts"),
 				J = r("./src/reddit/icons/fonts/index.tsx"),
-				X = r("./src/reddit/models/ModeratingSubreddits/index.ts"),
-				Q = r("./src/reddit/selectors/bannedUser.ts"),
+				Q = r("./src/reddit/models/ModeratingSubreddits/index.ts"),
+				X = r("./src/reddit/selectors/bannedUser.ts"),
 				V = r("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
 				$ = r.n(V);
 			const {
 				fbt: ee
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), te = Object(o.c)({
-				hasModMailPermissions: Object(u.b)(X.c.mail),
-				isUserBanned: (e, t) => !!Object(Q.b)(e, {
+				hasModMailPermissions: Object(u.b)(Q.c.mail),
+				isUserBanned: (e, t) => !!Object(X.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(g.yb)(e, {
+				user: (e, t) => Object(g.zb)(e, {
 					userName: t.username
 				})
 			});
@@ -1361,18 +1361,18 @@
 							username: r
 						})),
 						toggleBanModal: () => {
-							e(Object(G.c)({
+							e(Object(K.c)({
 								username: r,
 								subredditId: a,
 								contextId: n
 							})), e(Object(q.a)(a, r))
 						},
 						toggleMuteModal: () => {
-							e(Object(G.d)({
+							e(Object(K.d)({
 								username: r,
 								subredditId: a,
 								contextId: n
-							})), e(Object(K.i)(Z.a.MUTE_USER))
+							})), e(Object(G.i)(Z.a.MUTE_USER))
 						}
 					}
 				})(re),
@@ -1600,7 +1600,7 @@
 			const Se = Object(o.c)({
 					activeTooltipId: h.a,
 					currentUser: g.k,
-					isLoggedIn: g.P,
+					isLoggedIn: g.Q,
 					hideNSFWPref: g.F,
 					moderatorPermissions: (e, t) => {
 						let {
@@ -1628,7 +1628,7 @@
 							minSize: 32
 						})
 					},
-					user: g.yb,
+					user: g.zb,
 					userFlair: (e, t) => {
 						let {
 							subredditId: r
@@ -1654,7 +1654,7 @@
 						return !!n && Object(u.i)(e, n)
 					},
 					trophyCase: (e, t) => Object(f.r)(e, Object(f.m)(e, t.userName)),
-					isNightMode: g.cb,
+					isNightMode: g.db,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
 						const r = Object(i.a)(t.contextId) ? Object(b.G)(e, {
@@ -2710,13 +2710,13 @@
 				n = r("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.t
-				}) === a.w.Enabled,
+					experimentName: a.u
+				}) === a.x.Enabled,
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.Gc
-				}) === a.gd
+					experimentName: a.Hc
+				}) === a.hd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.67daffadbd7c9f238976.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.08515167ac0c5b6d8e1b.js.map

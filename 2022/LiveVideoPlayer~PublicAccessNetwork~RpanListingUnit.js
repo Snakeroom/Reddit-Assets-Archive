@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.d9b25215fe5596b31dd2.js
-// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.aca7b9db3d511da3e8aa.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit"], {
 		"./src/lib/VideoSession/VideoSessionManager.ts": function(e, t, s) {
@@ -916,8 +916,8 @@
 				L = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
 				T = s("./src/reddit/icons/svgs/Hide/index.tsx"),
 				A = s("./src/reddit/icons/svgs/Lock/index.tsx"),
-				j = s("./src/reddit/icons/svgs/Plus/index.tsx"),
-				O = s("./src/reddit/icons/svgs/Remove/index.tsx"),
+				O = s("./src/reddit/icons/svgs/Plus/index.tsx"),
+				j = s("./src/reddit/icons/svgs/Remove/index.tsx"),
 				M = s("./src/reddit/icons/svgs/Report/index.tsx"),
 				V = s("./src/reddit/icons/svgs/Rules/index.tsx"),
 				D = s("./src/reddit/icons/svgs/Unlock/index.tsx"),
@@ -970,7 +970,7 @@
 						o(!0), t()
 					},
 					className: z.a.joinButton
-				}, a.a.createElement(j.a, {
+				}, a.a.createElement(O.a, {
 					className: z.a.plusIcon
 				}), a.a.createElement("span", {
 					className: z.a.joinText
@@ -1227,7 +1227,7 @@
 					iconWrapperClassName: z.a.overflowItemIconWrapper,
 					key: `${oe}-end`,
 					onClick: l
-				}, a.a.createElement(O.a, {
+				}, a.a.createElement(j.a, {
 					className: z.a.endBroadcastIcon
 				}))))
 			}, ce = Object(n.b)(null, e => ({
@@ -1236,7 +1236,7 @@
 						apiContext: n
 					} = a;
 					const o = r();
-					Object(h.P)(o) ? await Object(m.g)(n(), e, t) : s(Object(p.i)())
+					Object(h.Q)(o) ? await Object(m.g)(n(), e, t) : s(Object(p.i)())
 				})(t, s))
 			}))(class extends r.Component {
 				constructor(e) {
@@ -1428,7 +1428,7 @@
 					isSubscribed: i
 				}));
 				return o && o.enableFollowers ? d : null
-			}, xe = e => Object(n.e)(t => Object(h.yb)(t, {
+			}, xe = e => Object(n.e)(t => Object(h.zb)(t, {
 				userName: e
 			})), Ee = e => Object(n.e)(t => Object(F.eb)(t, {
 				identifier: {
@@ -1484,7 +1484,7 @@
 			})), ye = e => {
 				const t = Object(n.e)(h.k),
 					s = Object(n.e)(h.F),
-					r = Object(n.e)(h.jb);
+					r = Object(n.e)(h.kb);
 				return !!e && (!!e.accountIcon && (!!t && (t.id === e.id || (!e.isNSFW || !!r && !s))))
 			}
 		},
@@ -1661,4 +1661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.d9b25215fe5596b31dd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit.aca7b9db3d511da3e8aa.js.map

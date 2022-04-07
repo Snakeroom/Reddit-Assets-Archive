@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.9d4aa4dd5aadd98da406.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.2805e077e0588722f5c3.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal", "GoldPurchasePaymentActions", "Premium"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1235,7 +1235,7 @@
 						} = a;
 						t(g());
 						const u = r(),
-							l = Object(i.P)(u);
+							l = Object(i.Q)(u);
 						try {
 							const r = !l,
 								n = await Object(c.b)({
@@ -1693,7 +1693,7 @@
 				let {
 					space: t
 				} = e;
-				const r = Object(i.e)(d.cb),
+				const r = Object(i.e)(d.db),
 					s = t === n.MODAL,
 					u = t === n.INFEED_UNIT;
 				return c.a.createElement("div", {
@@ -2897,4 +2897,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.9d4aa4dd5aadd98da406.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.2805e077e0588722f5c3.js.map

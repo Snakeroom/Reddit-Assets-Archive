@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.4405ff64aa7524110aeb.js
-// Retrieved at 4/5/2022, 3:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.edabf4b0fba0f2c097c2.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -1066,7 +1066,7 @@
 						} = c;
 						t(y());
 						const d = n(),
-							u = Object(i.P)(d);
+							u = Object(i.Q)(d);
 						try {
 							const n = !u,
 								r = await Object(o.b)({
@@ -1982,9 +1982,9 @@
 						locale: l
 					})))))
 				},
-				Y = n("./src/reddit/helpers/styles/mixins/loading.ts"),
-				Q = n("./src/reddit/components/CoinPurchasePackage/placeholder.m.less"),
-				X = n.n(Q);
+				Q = n("./src/reddit/helpers/styles/mixins/loading.ts"),
+				Y = n("./src/reddit/components/CoinPurchasePackage/placeholder.m.less"),
+				X = n.n(Y);
 			var W = e => {
 					let {
 						className: t,
@@ -1992,7 +1992,7 @@
 						...r
 					} = e;
 					const a = n ? X.a.large : "",
-						c = Object(Y.b)(r);
+						c = Object(Q.b)(r);
 					return i.a.createElement("div", {
 						className: Object(D.a)(c, X.a.packagePlaceholder, a, t)
 					})
@@ -2107,7 +2107,7 @@
 					coinPackages: M.d,
 					dealCoinPackages: M.f,
 					isPremiumSubscriber: L.w,
-					isLoggedIn: L.P,
+					isLoggedIn: L.Q,
 					premiumPackages: M.l,
 					purchaseCatalogPending: M.o
 				}),
@@ -2398,4 +2398,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.4405ff64aa7524110aeb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.edabf4b0fba0f2c097c2.js.map

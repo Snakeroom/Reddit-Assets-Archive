@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.2d4fc9399d1d93eeca57.js
-// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.36e231124aa67161a717.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -68,7 +68,7 @@
 					let {
 						apiContext: r
 					} = n;
-					if (!Object(j.P)(s())) return void t(Object(d.i)(u.a.LOGIN_MODAL_ID));
+					if (!Object(j.Q)(s())) return void t(Object(d.i)(u.a.LOGIN_MODAL_ID));
 					const a = s().features.comments.models[e];
 					if (!a) return;
 					const c = a.isLocked ? m.l : m.e;
@@ -348,8 +348,8 @@
 						if (function(e) {
 								return Object(j.c)(e, {
 									experimentEligibilitySelector: j.a,
-									experimentName: f.td
-								}) === f.gd
+									experimentName: f.ud
+								}) === f.hd
 							}(c())) {
 							const {
 								normalizeModQueueListingFromGql: e,
@@ -1304,4 +1304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.2d4fc9399d1d93eeca57.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.36e231124aa67161a717.js.map

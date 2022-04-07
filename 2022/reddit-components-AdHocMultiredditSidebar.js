@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.f8ad61ee9960891684ef.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.762e1e65dc5f2a2fb461.js
+// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-AdHocMultiredditSidebar"], {
 		"./src/reddit/actions/multireddit/constants.ts": function(e, t, n) {
@@ -11,9 +11,9 @@
 			})), n.d(t, "s", (function() {
 				return s
 			})), n.d(t, "t", (function() {
-				return a
-			})), n.d(t, "u", (function() {
 				return d
+			})), n.d(t, "u", (function() {
+				return a
 			})), n.d(t, "e", (function() {
 				return i
 			})), n.d(t, "f", (function() {
@@ -64,8 +64,8 @@
 			const r = "MULTIREDDIT__MORE_POSTS_FAILED",
 				o = "MULTIREDDIT__MORE_POSTS_LOADED",
 				s = "MULTIREDDIT__MORE_POSTS_PENDING",
-				a = "MULTIREDDIT__MY_MULTIREDDITS_PENDING",
-				d = "MULTIREDDIT__MY_MULTIREDDITS_RECEIVED",
+				d = "MULTIREDDIT__MY_MULTIREDDITS_PENDING",
+				a = "MULTIREDDIT__MY_MULTIREDDITS_RECEIVED",
 				i = "MULTIREDDIT__CREATE_FAILURE",
 				c = "MULTIREDDIT__CREATE_PENDING",
 				u = "MULTIREDDIT__CREATE_SUCCESS",
@@ -112,17 +112,17 @@
 			var r = n("./node_modules/react/index.js"),
 				o = n.n(r),
 				s = n("./node_modules/react-redux/es/index.js"),
-				a = n("./node_modules/reselect/es/index.js"),
-				d = n("./src/reddit/components/MultiredditSidebar/index.tsx"),
+				d = n("./node_modules/reselect/es/index.js"),
+				a = n("./src/reddit/components/MultiredditSidebar/index.tsx"),
 				i = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				c = n("./src/reddit/selectors/multireddit.ts");
 			const u = Object(i.u)(),
-				l = Object(a.c)({
+				l = Object(d.c)({
 					multireddit: c.a,
 					subredditCategory: i.m
 				}),
 				_ = Object(s.b)(l);
-			t.default = u(_(e => o.a.createElement(d.a, e)))
+			t.default = u(_(e => o.a.createElement(a.a, e)))
 		},
 		"./src/reddit/components/ModalStyledComponents/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -218,8 +218,8 @@
 			var r = n("./src/lib/classNames/index.ts"),
 				o = n("./src/lib/lessComponent.tsx"),
 				s = n("./node_modules/react/index.js"),
-				a = n.n(s),
-				d = n("./src/reddit/controls/Button/index.tsx"),
+				d = n.n(s),
+				a = n("./src/reddit/controls/Button/index.tsx"),
 				i = n("./src/reddit/controls/Input/ModalInput.tsx"),
 				c = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				u = n("./src/reddit/components/ModalStyledComponents/index.m.less"),
@@ -250,18 +250,18 @@
 				L = o.a.div("ModalAnnotation", l.a),
 				O = o.a.div("ModalMain", l.a),
 				b = o.a.textarea("TextArea", l.a),
-				N = o.a.wrapped(d.l, "WarningButton", l.a),
-				A = o.a.wrapped(d.l, "PrimaryButton", l.a),
-				v = o.a.wrapped(d.o, "CancelButton", l.a),
-				P = o.a.wrapped(d.r, "RemoveButton", l.a),
+				N = o.a.wrapped(a.l, "WarningButton", l.a),
+				A = o.a.wrapped(a.l, "PrimaryButton", l.a),
+				v = o.a.wrapped(a.o, "CancelButton", l.a),
+				P = o.a.wrapped(a.r, "RemoveButton", l.a),
 				y = e => {
 					let {
 						className: t,
 						...n
 					} = e;
-					return a.a.createElement(d.t, _({
-						kind: d.b.Button,
-						priority: d.c.Primary,
+					return d.a.createElement(a.t, _({
+						kind: a.b.Button,
+						priority: a.c.Primary,
 						className: Object(r.a)(l.a.ConfirmButton, t)
 					}, n))
 				}
@@ -271,8 +271,8 @@
 			var r = n("./src/lib/classNames/index.ts"),
 				o = n("./node_modules/react/index.js"),
 				s = n.n(o),
-				a = n("./node_modules/react-redux/es/index.js"),
-				d = n("./node_modules/reselect/es/index.js"),
+				d = n("./node_modules/react-redux/es/index.js"),
+				a = n("./node_modules/reselect/es/index.js"),
 				i = n("./src/reddit/helpers/userSnoovatar/index.ts"),
 				c = n("./src/reddit/selectors/user.ts"),
 				u = n("./src/reddit/components/UserIcon/PresenceDot.tsx"),
@@ -290,27 +290,27 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const E = Object(d.c)({
+			const E = Object(a.c)({
 					currentUser: c.k,
-					isNightMode: c.cb,
-					isPresenceUserPrefEnabled: c.U,
+					isNightMode: c.db,
+					isPresenceUserPrefEnabled: c.V,
 					shouldHideNSFW: c.F
 				}),
-				m = Object(a.b)(E);
+				m = Object(d.b)(E);
 			t.a = m(e => {
 				const {
 					currentUser: t,
 					shouldShowPresenceIndicator: n,
 					isPresenceUserPrefEnabled: o,
-					wrapperClassName: a,
-					...d
+					wrapperClassName: d,
+					...a
 				} = e, c = Object(i.b)(null == t ? void 0 : t.accountIcon);
 				return s.a.createElement("div", {
-					className: Object(r.a)(T.a.currentUserIconWrapper, a)
+					className: Object(r.a)(T.a.currentUserIconWrapper, d)
 				}, c ? s.a.createElement(l.a, {
 					headshot: t.accountIcon,
 					className: e.className
-				}) : s.a.createElement(_.b, D({}, d, {
+				}) : s.a.createElement(_.b, D({}, a, {
 					iconUrl: t ? t.accountIcon : void 0,
 					isCurrentUser: !0,
 					isNSFW: !!t && t.isNSFW
@@ -324,8 +324,8 @@
 			var r = n("./node_modules/react/index.js"),
 				o = n.n(r),
 				s = n("./node_modules/react-redux/es/index.js"),
-				a = n("./src/lib/classNames/index.ts"),
-				d = n("./src/reddit/actions/modal.ts"),
+				d = n("./src/lib/classNames/index.ts"),
+				a = n("./src/reddit/actions/modal.ts"),
 				i = n("./src/reddit/constants/keycodes.ts"),
 				c = n("./src/reddit/controls/Input/index.m.less"),
 				u = n.n(c);
@@ -355,13 +355,13 @@
 						...n
 					} = this.props;
 					return o.a.createElement("input", l({
-						className: Object(a.a)(u.a.input, e),
+						className: Object(d.a)(u.a.input, e),
 						onKeyDown: this.handleKeyDown
 					}, n))
 				}
 			}
 			t.a = Object(s.b)(null, {
-				closeModal: d.f
+				closeModal: a.f
 			})(_)
 		},
 		"./src/reddit/controls/Input/index.m.less": function(e, t, n) {
@@ -414,11 +414,11 @@
 			var r = n("./node_modules/react/index.js"),
 				o = n.n(r),
 				s = n("./src/higherOrderComponents/warnOnChildrenCount/index.tsx"),
-				a = n("./src/lib/classNames/index.ts"),
-				d = n("./src/reddit/layout/twoCol/ExpandLeft/index.m.less"),
-				i = n.n(d);
+				d = n("./src/lib/classNames/index.ts"),
+				a = n("./src/reddit/layout/twoCol/ExpandLeft/index.m.less"),
+				i = n.n(a);
 			t.a = Object(s.a)(e => o.a.createElement("div", {
-				className: Object(a.a)(i.a.exapndLeftContainer, e.className)
+				className: Object(d.a)(i.a.exapndLeftContainer, e.className)
 			}, o.a.createElement("div", {
 				className: i.a.left
 			}, Array.isArray(e.children) && e.children[0]), o.a.createElement("div", {
@@ -433,4 +433,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.f8ad61ee9960891684ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.762e1e65dc5f2a2fb461.js.map
