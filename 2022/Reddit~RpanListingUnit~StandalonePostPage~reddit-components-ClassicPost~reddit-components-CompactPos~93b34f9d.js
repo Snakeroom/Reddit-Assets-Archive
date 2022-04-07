@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.3c8879e5e25b1b155edf.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.9fc8339365676b32bfe9.js
+// Retrieved at 4/7/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -316,23 +316,24 @@
 				s = 45 * r.B;
 			var a;
 			! function(e) {
-				e.NotAvailableYet = "NotAvailableYet", e.NotAvailable = "NotAvailable", e.Available = "Available", e.Expired = "Expired"
+				e.NotAvailableYet = "NotAvailableYet", e.NotAvailable = "NotAvailable", e.Available = "Available", e.Expired = "Expired", e.Quarantined = "Quarantined"
 			}(a || (a = {}));
 			const c = e => {
 					return e < Date.now() - s
 				},
 				i = e => e > o,
-				d = (e, t) => {
-					if (!i(e.created)) return a.NotAvailable;
-					if (c(e.created)) return a.Expired;
+				d = (e, t, n, r) => {
+					if (!n && !i(e.created)) return a.NotAvailable;
+					if (n && !i(e.created) || c(e.created)) return a.Expired;
+					if (n && r) return a.Quarantined;
 					if (!t) return a.NotAvailableYet;
 					const {
-						shareAllCountTotals: n,
-						shareCopyCountTotals: r,
-						viewCountTotals: o,
-						viewCountTrends: s
+						shareAllCountTotals: o,
+						shareCopyCountTotals: s,
+						viewCountTotals: d,
+						viewCountTrends: l
 					} = t;
-					return (null == n ? void 0 : n.availability.isAvailable) && (null == r ? void 0 : r.availability.isAvailable) && (null == o ? void 0 : o.availability.isAvailable) && (null == s ? void 0 : s.availability.isAvailable) ? !(null == o ? void 0 : o.totalCount) || o.totalCount < 10 ? a.NotAvailableYet : a.Available : a.NotAvailableYet
+					return (null == o ? void 0 : o.availability.isAvailable) && (null == s ? void 0 : s.availability.isAvailable) && (null == d ? void 0 : d.availability.isAvailable) && (null == l ? void 0 : l.availability.isAvailable) && l.data && 0 !== l.data.length ? !(null == d ? void 0 : d.totalCount) || d.totalCount < 10 ? a.NotAvailableYet : a.Available : a.NotAvailableYet
 				}
 		},
 		"./src/reddit/components/FlairPickerTitle/index.m.less": function(e, t, n) {
@@ -2436,4 +2437,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.3c8879e5e25b1b155edf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.9fc8339365676b32bfe9.js.map

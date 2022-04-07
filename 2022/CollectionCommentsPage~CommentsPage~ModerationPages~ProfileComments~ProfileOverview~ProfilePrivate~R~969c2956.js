@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.e6edae29881418a4c251.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.667440ee1c10e0e536c9.js
+// Retrieved at 4/7/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1311,23 +1311,35 @@
 			var o = s("./src/lib/constants/icons.ts"),
 				n = s("./node_modules/react/index.js"),
 				r = s.n(n),
-				i = s("./src/reddit/icons/fonts/index.tsx"),
-				a = s("./src/reddit/components/CreatorStats/helpers.ts"),
-				c = s("./src/reddit/components/CreatorStats/Icon.m.less"),
-				l = s.n(c);
+				i = s("./node_modules/react-redux/es/index.js"),
+				a = s("./src/reddit/icons/fonts/index.tsx"),
+				c = s("./src/reddit/selectors/subreddit.ts"),
+				l = s("./src/reddit/components/CreatorStats/helpers.ts"),
+				d = s("./src/reddit/components/CreatorStats/Icon.m.less"),
+				p = s.n(d);
 			t.a = e => {
 				let {
-					postCreated: t
+					postCreated: t,
+					subredditId: s
 				} = e;
-				const [s, c] = Object(n.useState)(!0);
+				const d = Object(i.e)(e => s ? Object(c.S)(e, {
+						subredditId: s
+					}) : void 0),
+					[m, u] = Object(n.useState)(!0);
 				return Object(n.useEffect)(() => {
+					let e = !0;
 					if (void 0 !== t) {
-						const e = Object(a.e)(t);
-						c(!e)
+						const s = Object(l.e)(t);
+						e = e && !s
 					}
-				}, [t]), r.a.createElement(i.a, {
+					if (void 0 !== d) {
+						const t = d.isQuarantined;
+						e = e && !t
+					}
+					u(e)
+				}, [t, d]), r.a.createElement(a.a, {
 					name: o.a.statistics,
-					className: s ? l.a.icon : void 0
+					className: m ? p.a.icon : void 0
 				})
 			}
 		},
@@ -1454,6 +1466,7 @@
 				responsiveRow: "YszYBnnIoNY8pZ6UwCivd",
 				rowContainer: "_3U_7i38RDPV5eBv7m4M-9J",
 				responsiveRowText: "_70940WUuFmpHbhKlj8EjZ",
+				insightsButtonText: "WH45FmM2j_4Snucem7pcm",
 				flatlistSeparator: "x7sinePdvDKj7bf-cdm4Z",
 				flexSpacer: "_21pmAV9gWG6F_UKVe7YIE0",
 				modActionsIcon: "_15c1hqseW25EvRu0WP2Dq5",
@@ -1881,14 +1894,15 @@
 						displayText: o.fbt._("Insights", null, {
 							hk: "2IyDq5"
 						}),
-						textClassName: be.a.responsiveRowText,
+						textClassName: Object(c.a)(be.a.responsiveRowText, be.a.insightsButtonText),
 						flatlistItem: oe.a.Insights,
 						isLoggedIn: !!p,
 						isUserOp: me,
 						onClick: B,
 						skipRoleAttr: !0
 					}, r.a.createElement(_.a, {
-						postCreated: K.created
+						postCreated: K.created,
+						subredditId: K.belongsTo.id
 					})), !st && r.a.createElement("div", {
 						className: be.a.overflowMenuContainer
 					}, r.a.createElement(A.a, {
@@ -3418,7 +3432,8 @@
 						}),
 						onClick: d
 					}, i.a.createElement(M.a, {
-						postCreated: u.created
+						postCreated: u.created,
+						subredditId: u.belongsTo.id
 					})), E && i.a.createElement(ve, {
 						className: this.getBreakpointClass(V.a.Gild),
 						displayText: o.fbt._("Give Award", null, {
@@ -4958,4 +4973,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.e6edae29881418a4c251.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.667440ee1c10e0e536c9.js.map

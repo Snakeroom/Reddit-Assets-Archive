@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ViewsTooltip.181a5362b7fa3cb21ce3.js
-// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ViewsTooltip.be87f1269b2e34c7ed44.js
+// Retrieved at 4/7/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ViewsTooltip"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, o, l) {
@@ -424,7 +424,8 @@
 						className: i.a.copyAwardIcon
 					})))
 				},
-				y = 2 * c.B;
+				y = 2 * c.B,
+				z = ["6AM", "12PM", "6PM"];
 			o.default = Object(j.a)(e => {
 				let {
 					viewsData: o,
@@ -473,21 +474,12 @@
 								},
 								ticks: {
 									autoSkip: !1,
+									maxRotation: 0,
+									minRotation: 0,
 									font: {
 										size: 10
 									},
-									callback: (e, o, l) => {
-										switch (!0) {
-											case "12AM" === e:
-												return n()(l[o].value).format("DD MMM");
-											case o === l.length - 1:
-												return "";
-											case o % 6 == 0:
-												return e;
-											default:
-												return ""
-										}
-									}
+									callback: (e, o, l) => "12AM" === e ? n()(l[o].value).format("DD MMM") : "string" == typeof e && z.includes(e) ? e : null
 								},
 								grid: {
 									color: e => {
@@ -496,7 +488,8 @@
 											theme: s
 										}).placeholder : ""
 									},
-									drawBorder: !1
+									drawBorder: !1,
+									offset: !1
 								}
 							},
 							y: {
@@ -548,4 +541,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ViewsTooltip.181a5362b7fa3cb21ce3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ViewsTooltip.be87f1269b2e34c7ed44.js.map

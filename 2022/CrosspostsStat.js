@@ -1,11 +1,12 @@
-// https://www.redditstatic.com/desktop2x/CrosspostsStat.0578da40e35ca22fa269.js
-// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostsStat.1db7090bee3f79bb4b68.js
+// Retrieved at 4/7/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostsStat"], {
 		"./src/reddit/components/CreatorStats/CrosspostsStat.m.less": function(e, t, s) {
 			e.exports = {
 				expandedCrosspostsStat: "_3lEoTL6D5cTOgAyKCbUHId",
 				expandedCrosspostedDestination: "_8DIJfssiMg0HZ4gY6MwCR",
+				subredditHoveredName: "_1nv1yL_SWy9nFWxjfau2eP",
 				expandedCrosspostedIcon: "_33G0UMckKYc73FTmbRlXNF",
 				defaultExpandedIcon: "_1HJkf4p6Votb8o-R6lC7NE",
 				subredditName: "_3nbomvObbOOIUxRA98gCHL",
@@ -23,8 +24,8 @@
 				n = s("./node_modules/react/index.js"),
 				o = s.n(n),
 				a = s("./node_modules/react-redux/es/index.js"),
-				i = s("./src/reddit/components/SubredditIcon/index.tsx"),
-				d = s("./src/reddit/endpoints/post/create.ts"),
+				d = s("./src/reddit/components/SubredditIcon/index.tsx"),
+				i = s("./src/reddit/endpoints/post/create.ts"),
 				c = s("./src/reddit/helpers/trackers/creatorStats.ts"),
 				l = s("./src/reddit/hooks/useTracking.ts"),
 				p = s("./src/reddit/selectors/profile.ts"),
@@ -43,7 +44,7 @@
 					f = Object(a.f)(),
 					S = Object(n.useCallback)((e, t) => {
 						const s = f.getState(),
-							r = Object(d.f)(e),
+							r = Object(i.f)(e),
 							n = t.substring(2),
 							o = Object(u.D)(s, n) || Object(p.m)(s, n);
 						j(Object(c.a)(_, e, r, o, n, O))
@@ -59,17 +60,17 @@
 						key: `expanded-${e}`,
 						href: n,
 						onClick: () => S(n, e)
-					}, o.a.createElement(i.b, {
+					}, o.a.createElement(d.b, {
 						className: Object(r.a)(b.a.expandedCrosspostedIcon, {
 							[b.a.defaultExpandedIcon]: !s.iconUrl
 						}),
 						iconUrl: s.iconUrl || void 0
 					}), o.a.createElement("span", {
-						className: b.a.subredditName
+						className: Object(r.a)(b.a.subredditName, b.a.subredditHoveredName)
 					}, e))
 				}) : o.a.createElement(o.a.Fragment, null, Object.keys(t).slice(0, 2).map(e => {
 					const s = t[e];
-					return o.a.createElement(i.b, {
+					return o.a.createElement(d.b, {
 						className: Object(r.a)(b.a.previewCrosspostedIcon, {
 							[b.a.defaultPreviewIcon]: !s.iconUrl
 						}),
@@ -88,18 +89,18 @@
 			})), s.d(t, "f", (function() {
 				return x
 			})), s.d(t, "e", (function() {
-				return I
+				return v
 			})), s.d(t, "b", (function() {
-				return h
+				return I
 			})), s.d(t, "a", (function() {
-				return C
+				return h
 			}));
 			var r = s("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				n = s("./src/lib/constants/index.ts"),
 				o = s("./src/lib/makeApiRequest/index.ts"),
 				a = s("./src/lib/omitHeaders/index.ts"),
-				i = s("./src/reddit/constants/headers.ts"),
-				d = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				d = s("./src/reddit/constants/headers.ts"),
+				i = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				c = s("./src/reddit/helpers/flair.ts"),
 				l = s("./src/reddit/helpers/name/index.ts"),
 				p = s("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts"),
@@ -223,7 +224,7 @@
 						s = t && t[1];
 					return s ? `${n.Ib.Post}_${s}` : ""
 				},
-				I = async (e, t) => {
+				v = async (e, t) => {
 					if (!e.ok) return Object(p.b)(e);
 					const s = e.body.json.data;
 					let n = s.url;
@@ -245,22 +246,22 @@
 					}))(s.websocket_url, 3e4));
 					const o = s.id || x(n),
 						a = Object(r.parse)(n).path,
-						i = s.drafts_count;
+						d = s.drafts_count;
 					return {
 						...e,
 						body: {
 							id: o,
 							path: a,
-							draftsCount: i
+							draftsCount: d
 						}
 					}
-				}, h = (e, t) => Object(o.a)(Object(a.a)(e, [i.a]), {
-					endpoint: Object(_.a)(Object(d.a)(`${e.apiUrl}/api/submit_poll_post.json?resubmit=true`)),
+				}, I = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
+					endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit_poll_post.json?resubmit=true`)),
 					method: n.jb.POST,
 					data: S(t),
 					type: "json"
-				}).then(e => I(e, t)), C = (e, t) => Object(o.a)(Object(a.a)(e, [i.a]), {
-					endpoint: Object(_.a)(Object(d.a)(`${e.apiUrl}/api/submit_gallery_post.json?resubmit=true`)),
+				}).then(e => v(e, t)), h = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
+					endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit_gallery_post.json?resubmit=true`)),
 					method: n.jb.POST,
 					data: {
 						...S(t),
@@ -271,13 +272,13 @@
 						}))
 					},
 					type: "json"
-				}).then(e => I(e, t));
-			t.c = (e, t) => Object(o.a)(Object(a.a)(e, [i.a]), {
-				endpoint: Object(_.a)(Object(d.a)(`${e.apiUrl}/api/submit?resubmit=true`)),
+				}).then(e => v(e, t));
+			t.c = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
+				endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit?resubmit=true`)),
 				method: n.jb.POST,
 				data: S(t)
-			}).then(async e => await I(e, t))
+			}).then(async e => await v(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.0578da40e35ca22fa269.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.1db7090bee3f79bb4b68.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.0ca7220333c86fc7cbfd.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.0758cbe7a24d85ec394c.js
+// Retrieved at 4/7/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -845,23 +845,35 @@
 			var s = n("./src/lib/constants/icons.ts"),
 				r = n("./node_modules/react/index.js"),
 				i = n.n(r),
-				o = n("./src/reddit/icons/fonts/index.tsx"),
-				a = n("./src/reddit/components/CreatorStats/helpers.ts"),
-				d = n("./src/reddit/components/CreatorStats/Icon.m.less"),
-				c = n.n(d);
+				o = n("./node_modules/react-redux/es/index.js"),
+				a = n("./src/reddit/icons/fonts/index.tsx"),
+				d = n("./src/reddit/selectors/subreddit.ts"),
+				c = n("./src/reddit/components/CreatorStats/helpers.ts"),
+				l = n("./src/reddit/components/CreatorStats/Icon.m.less"),
+				u = n.n(l);
 			t.a = e => {
 				let {
-					postCreated: t
+					postCreated: t,
+					subredditId: n
 				} = e;
-				const [n, d] = Object(r.useState)(!0);
+				const l = Object(o.e)(e => n ? Object(d.S)(e, {
+						subredditId: n
+					}) : void 0),
+					[m, p] = Object(r.useState)(!0);
 				return Object(r.useEffect)(() => {
+					let e = !0;
 					if (void 0 !== t) {
-						const e = Object(a.e)(t);
-						d(!e)
+						const n = Object(c.e)(t);
+						e = e && !n
 					}
-				}, [t]), i.a.createElement(o.a, {
+					if (void 0 !== l) {
+						const t = l.isQuarantined;
+						e = e && !t
+					}
+					p(e)
+				}, [t, l]), i.a.createElement(a.a, {
 					name: s.a.statistics,
-					className: n ? c.a.icon : void 0
+					className: m ? u.a.icon : void 0
 				})
 			}
 		},
@@ -5623,4 +5635,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.0ca7220333c86fc7cbfd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.0758cbe7a24d85ec394c.js.map

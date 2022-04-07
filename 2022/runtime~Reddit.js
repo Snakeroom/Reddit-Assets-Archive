@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.f00c096a8364755ac01f.js
-// Retrieved at 4/7/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.c5d72cdad47542cbecfa.js
+// Retrieved at 4/7/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -670,7 +670,7 @@
 					"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "676b75532a376090380c",
 					"CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c": "34dd136e5aaaf766b554",
 					SearchResults: "b302a1a7745d1ff01c67",
-					"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956": "bbfeec23ecd3d512c232",
+					"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956": "a4c4993a7c8bed1a21ab",
 					"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b": "575db95a2cf0a7e045b0",
 					"CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress": "31d6cfe0d16ae931b73c",
 					"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "b4cb2a49e3e6b15b8453",
@@ -950,7 +950,7 @@
 					CreatePollButton: "f61ace8b0ca14a98ed44",
 					SubredditInlineEditing: "6ce4c83bf9a60786dc02",
 					TopicLinksContainer: "361933014be843c79476",
-					CrosspostsStat: "cf14cfba78004dda29a2",
+					CrosspostsStat: "4e324b6e2c0807430a53",
 					"vendors~ModStatsChart~ViewsTooltip": "31d6cfe0d16ae931b73c",
 					ViewsTooltip: "31d6cfe0d16ae931b73c",
 					"vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal": "31d6cfe0d16ae931b73c",
@@ -1355,7 +1355,7 @@
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "109675e93faee0409e1e",
 						"CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c": "fb91b8b762a95c8c063d",
 						SearchResults: "768ea2cbd7da6fa06a54",
-						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956": "e6edae29881418a4c251",
+						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956": "667440ee1c10e0e536c9",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b": "0f87c11a583ae3195a13",
 						"CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress": "50fef937c9e262b7c82d",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "a64ae84057ead7bea9c7",
@@ -1372,7 +1372,7 @@
 						"CountryPage~Multireddit": "be95bca46a6f26456d8f",
 						CountryPage: "b50ed4389a33633e165b",
 						Multireddit: "64ab0c218c41c6dc3967",
-						ProfilePosts: "0ca7220333c86fc7cbfd",
+						ProfilePosts: "0758cbe7a24d85ec394c",
 						"ModerationPages~SubredditWiki": "4816a317debb747e7c8b",
 						"SubredditWiki~reddit-components-Wiki-ModHubWikiManagement": "a29fb35f3f1a2ec1e82f",
 						SubredditWiki: "16c5354f38c08f6ba43c",
@@ -1454,14 +1454,14 @@
 						"reddit-components-Econ-Prediction-EndTimeModal": "ce2046f918e952a0d05b",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "a60e93ab90ac2c627607",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "f8bc971540cef9d52041",
-						"translations/de_DE-json": "bb9405dce3dcc568bb65",
-						"translations/es_ES-json": "c3e274f666de88ed6e75",
-						"translations/es_MX-json": "5747a93ea520cd06d844",
-						"translations/fr_FR-json": "5c6118a9b44b9ec807de",
-						"translations/it_IT-json": "e62981d6e4fefdd42809",
-						"translations/pseudo-json": "bedf0e210a78a02dcf6a",
-						"translations/pt_BR-json": "2e02d1603bc2217fe2fa",
-						"translations/pt_PT-json": "7b00d6ebeccd22f58c04",
+						"translations/de_DE-json": "06af23a5bd6a9a840268",
+						"translations/es_ES-json": "cd2eef8bc2a360f2faa2",
+						"translations/es_MX-json": "ff5a3f3afed63d69839f",
+						"translations/fr_FR-json": "0f5b5b1670f2822841c2",
+						"translations/it_IT-json": "e647902372894d2907bb",
+						"translations/pseudo-json": "01812a4abe95b310daec",
+						"translations/pt_BR-json": "8efcfb7eac81ef458c52",
+						"translations/pt_PT-json": "762ab514bde0a7ed3948",
 						"vendors~AdminPanel": "eae9f345b12b82989d37",
 						AdminPanel: "14f630603ed83031a702",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
@@ -1527,7 +1527,7 @@
 						ChatPost: "3a8f0530275a6aabfa73",
 						"reddit-components-SidebarNativeAd": "3e406e624e3196de6ff7",
 						CommentsPageNativeAd: "1a905e1375e9cff67093",
-						CreatorStats: "9f52d45ccbbe01d8cd67",
+						CreatorStats: "ec19ad63b8a642eb6338",
 						CrosspostRecommendationsModal: "d6a9f465ebfddcef7555",
 						EconomicsSubredditPremiumSidebarCards: "59f3b621d81f6798e70c",
 						ExpandedCrosspost: "2ee9afb354e9f73daf27",
@@ -1635,9 +1635,9 @@
 						CreatePollButton: "e101321a4e57ff25e2a7",
 						SubredditInlineEditing: "757b9dafb05ab032546b",
 						TopicLinksContainer: "63ab5e1181615222948b",
-						CrosspostsStat: "0578da40e35ca22fa269",
+						CrosspostsStat: "1db7090bee3f79bb4b68",
 						"vendors~ModStatsChart~ViewsTooltip": "b642007ba6a9c10cda83",
-						ViewsTooltip: "181a5362b7fa3cb21ce3",
+						ViewsTooltip: "be87f1269b2e34c7ed44",
 						"vendors~reddit-components-Governance-TransactionModals-ClaimPointsModal": "ea525110640a427edafb",
 						"reddit-components-Governance-TransactionModals-ClaimPointsModal": "34e27fb49b3c1ef6a4fa",
 						GivePremiumModal: "ccfc8c2eb91e07d25c33",
@@ -1711,4 +1711,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f00c096a8364755ac01f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c5d72cdad47542cbecfa.js.map
