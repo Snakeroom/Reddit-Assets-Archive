@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.e8dafc6366025c57e760.js
-// Retrieved at 4/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.260682edda6a773465ca.js
+// Retrieved at 4/7/2022, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -2011,19 +2011,23 @@
 					}
 				}),
 				p = () => {
-					var e;
-					const t = Object(c.e)(d.a, (e, t) => e && t && e[0].id === t[0].id || !1),
+					const e = Object(c.e)(d.a, (e, t) => e && t && e[0].id === t[0].id || !1),
+						t = Object(c.e)(e => e.live.shouldShowAnnouncements),
 						a = Object(c.e)(d.b),
 						s = Object(c.e)(l.b),
-						n = Object(c.e)(o.c);
+						n = Object(c.e)(o.c),
+						p = () => {
+							var e;
+							return (null === (e = null == s ? void 0 : s.notifications) || void 0 === e ? void 0 : e.length) && n ? r.a.createElement(i.b, {
+								isOnTop: !0,
+								notifications: null == s ? void 0 : s.notifications
+							}) : null
+						};
 					return a ? r.a.createElement(m, {
 						featuredLiveThread: a
-					}) : t && t.length ? r.a.createElement(u, {
-						announcements: t
-					}) : (null === (e = null == s ? void 0 : s.notifications) || void 0 === e ? void 0 : e.length) && n ? r.a.createElement(i.b, {
-						isOnTop: !0,
-						notifications: null == s ? void 0 : s.notifications
-					}) : null
+					}) : e && e.length ? r.a.createElement(r.a.Fragment, null, r.a.createElement(u, {
+						announcements: e
+					}), !t && p()) : p()
 				};
 			t.a = p
 		},
@@ -7802,4 +7806,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.e8dafc6366025c57e760.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.260682edda6a773465ca.js.map
