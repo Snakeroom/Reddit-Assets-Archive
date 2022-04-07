@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.ccdaf66ac87b912f980f.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.889faf201f238b4124d6.js
+// Retrieved at 4/7/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -7172,7 +7172,7 @@
 					[I, S] = Object(s.useState)(),
 					C = function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
-						e ? (S(e), c(Object(p.t)(null == e ? void 0 : e.topic))) : c(Object(p.r)()), n(Object(i.c)({
+						e ? (S(e), c(Object(p.u)(null == e ? void 0 : e.topic))) : c(Object(p.s)()), n(Object(i.c)({
 							type: f.c.REONBOARDING,
 							selectedInterests: e ? {
 								[e.id]: []
@@ -7180,7 +7180,7 @@
 						})), Object(u.b)(f.e.Popover, E)
 					},
 					N = Object(s.useCallback)(() => {
-						Object(m.a)(), c(Object(p.s)()), j(!0)
+						Object(m.a)(), c(Object(p.t)()), j(!0)
 					}, [c]);
 				return Object(m.b)() ? r.a.createElement("div", {
 					className: Object(g.a)(_.a.InterestPickerPreview, {
@@ -7237,7 +7237,7 @@
 						id: "interest-topic-recommendations",
 						estHeight: 300,
 						trackOnEnteredViewport: () => {
-							Object(m.d)(), Object(u.b)(f.e.Feed, i), o(Object(p.u)())
+							Object(m.d)(), Object(u.b)(f.e.Feed, i), o(Object(p.v)())
 						},
 						render: () => r.a.createElement(O, {
 							interests: s
@@ -12444,42 +12444,44 @@
 				return d
 			})), n.d(t, "c", (function() {
 				return l
-			})), n.d(t, "q", (function() {
+			})), n.d(t, "r", (function() {
 				return u
-			})), n.d(t, "k", (function() {
+			})), n.d(t, "l", (function() {
 				return m
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "q", (function() {
 				return p
 			})), n.d(t, "g", (function() {
 				return b
-			})), n.d(t, "j", (function() {
+			})), n.d(t, "k", (function() {
 				return h
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "p", (function() {
 				return f
 			})), n.d(t, "e", (function() {
 				return x
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return g
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "o", (function() {
 				return E
-			})), n.d(t, "h", (function() {
+			})), n.d(t, "i", (function() {
 				return _
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "n", (function() {
 				return v
 			})), n.d(t, "d", (function() {
 				return O
 			})), n.d(t, "f", (function() {
 				return y
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "v", (function() {
 				return j
-			})), n.d(t, "r", (function() {
-				return I
-			})), n.d(t, "t", (function() {
-				return S
 			})), n.d(t, "s", (function() {
+				return I
+			})), n.d(t, "u", (function() {
+				return S
+			})), n.d(t, "t", (function() {
 				return C
-			})), n.d(t, "l", (function() {
+			})), n.d(t, "m", (function() {
 				return N
+			})), n.d(t, "h", (function() {
+				return k
 			}));
 			var s = n("./src/reddit/constants/tracking.ts"),
 				r = n("./src/reddit/selectors/telemetry.ts");
@@ -12645,6 +12647,20 @@
 					noun: e ? a.CATEGORY : a.SUB_CATEGORY,
 					onboarding: {
 						categoryName: t
+					}
+				}),
+				k = (e, t, n) => o => ({
+					...Object(r.n)(o),
+					source: i,
+					action: s.c.VIEW,
+					actionInfo: {
+						...Object(r.d)(o),
+						reason: n
+					},
+					noun: a.SUBREDDIT,
+					onboarding: {
+						categoryName: e,
+						subredditName: t
 					}
 				})
 		},
@@ -15924,4 +15940,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.ccdaf66ac87b912f980f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.889faf201f238b4124d6.js.map

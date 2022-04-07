@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.eaa874a120c0e94ffaa7.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.29721f78f2f8041f4d64.js
+// Retrieved at 4/7/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2598,7 +2598,7 @@
 							e.forEach(e => {
 								if (e.isIntersecting && this.visibilityState === n.NotVisible) {
 									if (this.visibilityState = n.Visible, this.props.fireOnce && this.enterFired) return;
-									this.props.onEnter && (this.props.sendEvent(this.props.onEnter), this.enterFired = !0)
+									this.props.onEnter && (this.props.sendEvent(this.props.onEnter), this.enterFired = !0), this.props.onEnterHandler && this.props.onEnterHandler(e)
 								}
 								if (!e.isIntersecting && this.visibilityState === n.Visible) {
 									if (this.visibilityState = n.NotVisible, this.props.fireOnce && this.exitFired) return;
@@ -6696,4 +6696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.eaa874a120c0e94ffaa7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.29721f78f2f8041f4d64.js.map

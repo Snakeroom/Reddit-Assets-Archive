@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.4c9dcc4f70b69d74cad0.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.f00c096a8364755ac01f.js
+// Retrieved at 4/7/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1333,7 +1333,7 @@
 						"reddit-components-Governance-TransactionModals-ConvertToCoinsModal": "7fb1cbad4a9984f774af",
 						"vendors~RealtimeGQLSubscriptionAsync": "3d46ab9136aace60953b",
 						RealtimeGQLSubscriptionAsync: "226119a9ae841bb563eb",
-						OnboardingModal: "86b80f1d87f1dd23b62b",
+						OnboardingModal: "2dcdfc044ee98f870aa2",
 						AchievementsActions: "8e4826059f37566290a0",
 						Acknowledgements: "d11ad709b1b01d27180c",
 						Appeal: "cade2b8c219b2928f210",
@@ -1382,7 +1382,7 @@
 						PostDraft: "0715c1d26e7a653bb808",
 						ProfileSnoobuilder: "f60e7a1bc7aab0f6c109",
 						"Frontpage~ModListing~Subreddit": "786fd474551ab0b27f8b",
-						Frontpage: "c33dbfb6564131606548",
+						Frontpage: "3683d725265610f83a86",
 						Topic: "dd93dd01f03923717c10",
 						CommunityAwards: "bc3b8933ff4f059545d9",
 						CommunityPointsLearnMore: "8618a6d2457b2939b16a",
@@ -1466,7 +1466,7 @@
 						AdminPanel: "14f630603ed83031a702",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
 						"ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor": "3fedccfbb1d0da1af0a6",
-						MembershipPaywallPage: "eaa874a120c0e94ffaa7",
+						MembershipPaywallPage: "29721f78f2f8041f4d64",
 						FlairEdit: "4a75ada146aad0e92c11",
 						"vendors~Chat~RedesignChat": "743dd7993eee0b27f3a2",
 						"Chat~RedesignChat": "535c7fc41e4f201eacf4",
@@ -1485,7 +1485,7 @@
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
 						ModListing: "a4af1e62e851413f3b27",
-						Subreddit: "ccdaf66ac87b912f980f",
+						Subreddit: "889faf201f238b4124d6",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "b1b748750a6395dcc18f",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "d9b25215fe5596b31dd2",
 						PublicAccessNetwork: "e20a604cc550e6a201cc",
@@ -1711,4 +1711,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.4c9dcc4f70b69d74cad0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f00c096a8364755ac01f.js.map
