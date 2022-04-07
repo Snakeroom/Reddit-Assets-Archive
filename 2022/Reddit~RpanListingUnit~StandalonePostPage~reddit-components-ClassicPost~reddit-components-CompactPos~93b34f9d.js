@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.9fc8339365676b32bfe9.js
-// Retrieved at 4/7/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.6abbe0e1f1a14fbfeb9e.js
+// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -2276,7 +2276,7 @@
 					});
 					return !(!n || n.isSponsored || n.removedByCategory) && (Object(c.Bb)(e, {
 						postId: t
-					}) || !!Object(s.l)(e, {
+					}) || !!Object(s.m)(e, {
 						postId: t
 					}))
 				}
@@ -2296,7 +2296,7 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: e => ((e, t) => Object(a.Bb)(e, {
 							postId: t
-						}) || !!Object(s.l)(e, {
+						}) || !!Object(s.m)(e, {
 							postId: t
 						}) || Object(a.M)(e))(e, t),
 						experimentName: r.N
@@ -2305,7 +2305,7 @@
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a.P,
-						experimentName: r.ue
+						experimentName: r.te
 					}) === r.gd
 				}
 		},
@@ -2437,4 +2437,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.9fc8339365676b32bfe9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.6abbe0e1f1a14fbfeb9e.js.map

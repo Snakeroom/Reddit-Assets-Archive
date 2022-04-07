@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.2e7d3193b0357160bfbf.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b617543a7918311d19f7.js
+// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.yf)(e.category_name)
+									displayText: Object(u.xf)(e.category_name)
 								};
 								n.push(a.id), t[a.id] = a
 							}), {
@@ -689,7 +689,7 @@
 			}), j = Object(d.c)({
 				isEditing: y.i,
 				isSubscriptionsPinned: f.b,
-				moderatorPermissions: h.m
+				moderatorPermissions: h.n
 			});
 			t.a = Object(o.b)(j)(e => {
 				const t = e.moderatorPermissions && a()(e.moderatorPermissions).some(e => e);
@@ -2799,7 +2799,7 @@
 					} = t;
 					return Object(p.b)(n.params.categoryName || "")
 				},
-				Ce = Object(m.xf)(b.i),
+				Ce = Object(m.wf)(b.i),
 				Ee = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ce
@@ -2811,7 +2811,7 @@
 						}) : b.c
 					},
 					categoryName: Se,
-					isMod: fe.j,
+					isMod: fe.k,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations
 				}),
 				xe = Object(o.b)(Ee),
@@ -2928,4 +2928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.2e7d3193b0357160bfbf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.b617543a7918311d19f7.js.map

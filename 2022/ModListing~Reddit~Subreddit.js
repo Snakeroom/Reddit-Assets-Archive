@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing~Reddit~Subreddit.f4dc4711cdc8a40b0591.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing~Reddit~Subreddit.dad38dfdc8213b6fa8ec.js
+// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing~Reddit~Subreddit"], {
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
@@ -2754,14 +2754,14 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(r.c)(e, {
-					experimentName: s.Ud,
+					experimentName: s.Td,
 					experimentEligibilitySelector: r.a
-				}) === s.ee.Enabled,
+				}) === s.de.Enabled,
 				c = e => Object(r.c)(e, {
-					experimentName: s.Vd,
+					experimentName: s.Ud,
 					experimentEligibilitySelector: r.a,
 					expEventOverride: !1
-				}) === s.fe.Enabled
+				}) === s.ee.Enabled
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -2787,7 +2787,7 @@
 				f = e => {
 					const t = Object(u.c)(e);
 					if (!t) return;
-					if (!Object(l.m)(e, {
+					if (!Object(l.n)(e, {
 							subredditId: t
 						})) return;
 					if (Object(p.M)(e)) return h(e);
@@ -2802,7 +2802,7 @@
 					return s ? s * r.Sb < 1639443600180 ? void 0 : h(e) : void 0
 				},
 				h = Object(s.a)(e => Object(i.c)(e, {
-					experimentName: o.Xd,
+					experimentName: o.Wd,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -2850,4 +2850,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit~Subreddit.f4dc4711cdc8a40b0591.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing~Reddit~Subreddit.dad38dfdc8213b6fa8ec.js.map

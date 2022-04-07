@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.768ea2cbd7da6fa06a54.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.cbff98363ac9d4ce861e.js
+// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1507,7 +1507,7 @@
 					isPresenceConsumptionExpEnabled: ft.c,
 					moderatorPermissions: (e, t) => {
 						const s = Object(ht.b)(e, t);
-						return s ? Object(Ot.m)(e, {
+						return s ? Object(Ot.n)(e, {
 							subredditId: s.subredditId
 						}) : null
 					},
@@ -4784,7 +4784,7 @@
 					crosspost: w.d,
 					isActive: w.j,
 					isLoggedIn: T.P,
-					moderatorPermissions: _.l,
+					moderatorPermissions: _.m,
 					modModeEnabled: j.T,
 					poll: k.e,
 					showEditFlair: S.a,
@@ -8116,12 +8116,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case C.ef.SmIcon:
+						case C.df.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case C.ef.SmIconHc:
+						case C.df.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -10596,10 +10596,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: r.ve,
+					experimentName: r.ue,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.De.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.Ce.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.G, a, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -10626,12 +10626,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Ye
+						experimentName: n.Xe
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.ef.SmIcon || t === n.ef.SmIconHc
+					return t === n.df.SmIcon || t === n.df.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -10672,4 +10672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.768ea2cbd7da6fa06a54.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.cbff98363ac9d4ce861e.js.map

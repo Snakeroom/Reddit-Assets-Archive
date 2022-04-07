@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.e71e7b68d725f3b2dadc.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.c1b5a6715e8ca4cab4e8.js
+// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -2929,18 +2929,18 @@
 				c = n("./src/reddit/actions/tooltip.ts"),
 				l = n("./src/reddit/helpers/isPost.ts"),
 				d = n("./src/reddit/selectors/commentSelector.ts"),
-				m = n("./src/reddit/selectors/experiments/cnc/index.ts"),
-				u = n("./src/reddit/selectors/gold/awardIcon.ts"),
-				p = n("./src/reddit/selectors/moderatorPermissions.ts"),
-				b = n("./src/reddit/selectors/modUserNotes.ts"),
-				h = n("./src/reddit/selectors/posts.ts"),
-				f = n("./src/reddit/selectors/profile.ts"),
-				g = n("./src/reddit/selectors/structuredStyles.ts"),
-				v = n("./src/reddit/selectors/subreddit.ts"),
-				_ = n("./src/reddit/selectors/tooltip.ts"),
-				x = n("./src/reddit/selectors/user.ts"),
-				y = n("./src/reddit/selectors/userFlair.ts"),
-				C = n("./src/reddit/selectors/userPrefs.ts"),
+				m = n("./src/reddit/selectors/gold/awardIcon.ts"),
+				u = n("./src/reddit/selectors/moderatorPermissions.ts"),
+				p = n("./src/reddit/selectors/modUserNotes.ts"),
+				b = n("./src/reddit/selectors/posts.ts"),
+				h = n("./src/reddit/selectors/profile.ts"),
+				f = n("./src/reddit/selectors/structuredStyles.ts"),
+				g = n("./src/reddit/selectors/subreddit.ts"),
+				v = n("./src/reddit/selectors/tooltip.ts"),
+				_ = n("./src/reddit/selectors/user.ts"),
+				x = n("./src/reddit/selectors/userFlair.ts"),
+				y = n("./src/reddit/selectors/userPrefs.ts"),
+				C = n("./src/reddit/selectors/platform.ts"),
 				j = n("./src/reddit/components/Hovercards/AuthorHovercard/ModIdCard/async.tsx"),
 				E = n("./node_modules/fbt/lib/FbtPublic.js"),
 				k = n("./src/config.ts"),
@@ -2975,12 +2975,12 @@
 			const {
 				fbt: ee
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), te = Object(o.c)({
-				hasModMailPermissions: Object(p.b)(Y.c.mail),
+				hasModMailPermissions: Object(u.b)(Y.c.mail),
 				isUserBanned: (e, t) => !!Object(Z.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(x.yb)(e, {
+				user: (e, t) => Object(_.yb)(e, {
 					userName: t.username
 				})
 			});
@@ -3284,24 +3284,24 @@
 			Me.WrappedComponent = Ne;
 			var Ae = Me;
 			const Te = Object(o.c)({
-					activeTooltipId: _.a,
-					currentUser: x.k,
-					isLoggedIn: x.P,
-					hideNSFWPref: x.F,
+					activeTooltipId: v.a,
+					currentUser: _.k,
+					isLoggedIn: _.P,
+					hideNSFWPref: _.F,
 					moderatorPermissions: (e, t) => {
 						let {
 							subredditId: n
 						} = t;
-						return n ? Object(p.m)(e, {
+						return n ? Object(u.n)(e, {
 							subredditId: n
 						}) : void 0
 					},
-					prefersReducedAnimations: C.c,
+					prefersReducedAnimations: y.c,
 					profile: (e, t) => {
 						let {
 							userName: n
 						} = t;
-						return Object(f.j)(e, {
+						return Object(h.j)(e, {
 							profileName: n
 						})
 					},
@@ -3309,50 +3309,52 @@
 						let {
 							userName: n
 						} = t;
-						return Object(u.e)(e, {
+						return Object(m.e)(e, {
 							userName: n,
 							minSize: 32
 						})
 					},
-					user: x.yb,
+					user: _.yb,
 					userFlair: (e, t) => {
 						let {
 							subredditId: n
 						} = t;
-						return n ? Object(y.d)(e, {
+						return n ? Object(x.d)(e, {
 							subredditId: n
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(v.l)(t) && Object(v.db)(e, t),
-					userProfileStyles: (e, t) => Object(g.m)(e, Object(f.m)(e, t.userName)),
+					isCurrentUserBanned: (e, t) => !!Object(g.l)(t) && Object(g.db)(e, t),
+					userProfileStyles: (e, t) => Object(f.m)(e, Object(h.m)(e, t.userName)),
 					acceptChats: (e, t) => {
-						const n = Object(f.h)(e, {
+						const n = Object(h.h)(e, {
 							profileName: t.userName
 						});
 						return !n || n.acceptChats
 					},
-					isInModNotesExperiment: (e, t) => {
+					isModWithUserNotesPermissions: (e, t) => {
 						let {
 							subredditId: n
 						} = t;
-						return Object(m.a)(e, n)
+						const s = Object(C.e)(e),
+							a = n || s && Object(g.D)(e, s.name);
+						return !!a && Object(u.i)(e, a)
 					},
-					trophyCase: (e, t) => Object(f.r)(e, Object(f.m)(e, t.userName)),
-					isNightMode: x.cb,
+					trophyCase: (e, t) => Object(h.r)(e, Object(h.m)(e, t.userName)),
+					isNightMode: _.cb,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
-						const n = Object(l.a)(t.contextId) ? Object(h.G)(e, {
+						const n = Object(l.a)(t.contextId) ? Object(b.G)(e, {
 							postId: t.contextId
 						}) : Object(d.b)(e, {
 							commentId: t.contextId
 						});
-						return Object(b.a)(e, null == n ? void 0 : n.authorId, t.subredditId)
+						return Object(p.a)(e, null == n ? void 0 : n.authorId, t.subredditId)
 					},
 					userIsSubscriber: (e, t) => {
 						let {
 							userName: n
 						} = t;
-						return Object(v.eb)(e, {
+						return Object(g.eb)(e, {
 							identifier: {
 								name: n,
 								type: "profile"
@@ -3366,7 +3368,7 @@
 					})),
 					onHideTooltip: () => e(Object(c.i)())
 				}));
-			t.a = Be(e => e.isInModNotesExperiment ? a.a.createElement(j.b, {
+			t.a = Be(e => e.isModWithUserNotesPermissions ? a.a.createElement(j.b, {
 				activeTooltipId: e.activeTooltipId,
 				contextId: e.contextId,
 				currentUser: e.currentUser,
@@ -14686,4 +14688,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e71e7b68d725f3b2dadc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.c1b5a6715e8ca4cab4e8.js.map

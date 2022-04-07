@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.20da9aeccd684925fa4f.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.cb4ab2f47d701ea1d182.js
+// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -394,9 +394,9 @@
 						seconds: e.created / D.Sb
 					})))))
 				},
-				Z = s("./src/reddit/components/JSAPIContainers/index.tsx"),
-				K = s("./src/reddit/components/Media/index.tsx"),
-				Y = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
+				Y = s("./src/reddit/components/JSAPIContainers/index.tsx"),
+				Z = s("./src/reddit/components/Media/index.tsx"),
+				K = s("./src/reddit/components/MiniCardPost/MetaLine/index.tsx"),
 				J = s("./src/reddit/components/MiniCardPost/Thumbnail/index.tsx"),
 				X = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				$ = s("./src/reddit/components/PostContainer/index.tsx"),
@@ -448,7 +448,7 @@
 					} = this.props, {
 						media: y
 					} = a || p, _ = !y && !!p.source && Object(S.a)(p.source.url);
-					let k = y && r.a.createElement(K.a, {
+					let k = y && r.a.createElement(Z.a, {
 							autoplayPref: e,
 							availableWidth: t,
 							className: ce.a.media,
@@ -501,7 +501,7 @@
 						post: p,
 						size: ee.b.Large,
 						titleColor: o && o.postTitleColor
-					}), f && C && r.a.createElement(Y.a, {
+					}), f && C && r.a.createElement(K.a, {
 						className: pe.a.metaLine,
 						crosspostSubredditOrProfile: n,
 						hideNSFWPref: d,
@@ -533,7 +533,7 @@
 						_1: "1 comment"
 					}, [N.fbt._plural(p.numComments, "number", Object(L.b)(p.numComments))], {
 						hk: "1QQoSA"
-					}))))), r.a.createElement(Z.d, null))
+					}))))), r.a.createElement(Y.d, null))
 				}
 			}
 			const xe = Object(se.b)(Object(te.a)(Object(I.a)(he)));
@@ -881,9 +881,9 @@
 				f = s("./src/reddit/constants/experiments.ts"),
 				g = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(C.M)(e) || f.ff.ShowTopContent === Object(g.c)(e, {
+			const y = e => Object(C.M)(e) || f.ef.ShowTopContent === Object(g.c)(e, {
 				experimentEligibilitySelector: g.a,
-				experimentName: f.Ze
+				experimentName: f.Ye
 			});
 			var _ = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1537,7 +1537,7 @@
 						})
 					}), n)
 				},
-				Z = e => {
+				Y = e => {
 					let {
 						disableVisited: t,
 						nowrap: s,
@@ -1551,7 +1551,7 @@
 						})
 					}, n)
 				},
-				K = Object(l.c)({
+				Z = Object(l.c)({
 					flairPosition: (e, t) => {
 						let {
 							pageLayer: s
@@ -1562,7 +1562,7 @@
 					},
 					shouldOpenPostInNewTab: F.ib
 				}),
-				Y = e => {
+				K = e => {
 					const {
 						post: t,
 						subreddit: s
@@ -1571,7 +1571,7 @@
 					} = t, n = Object(i.d)(), o = Object(A.a)(), l = Object(i.e)(W.b), d = e => {
 						!l || t.media && Object(k.H)(t.media) || (e.preventDefault(), n(Object(x.bb)(Object(g.b)(t.permalink), t.id)))
 					};
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Z, {
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return r.a.createElement(Y, {
 						nowrap: e.nowrap
 					}, r.a.createElement(J, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return r.a.createElement(p.b, {
@@ -1582,7 +1582,7 @@
 					}, r.a.createElement(J, e)); {
 						const n = t.media && Object(k.H)(t.media) ? Object(C.c)(t.id, s.name) : t.permalink,
 							i = e.isCommentPermalink ? Object(g.b)(n) : Object(h.a)(n, void 0, o);
-						return r.a.createElement(Z, {
+						return r.a.createElement(Y, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, a ? ((e, t) => {
@@ -1697,7 +1697,7 @@
 						nowrap: !0,
 						post: o,
 						sendEvent: this.props.sendEvent
-					}), !Object(v.b)(o) && r.a.createElement(Y, q({}, this.props, {
+					}), !Object(v.b)(o) && r.a.createElement(K, q({}, this.props, {
 						leftFlair: l ? p : void 0
 					})), i && r.a.createElement(T, {
 						className: U.a.pollMeta,
@@ -1720,7 +1720,7 @@
 				const t = Object(u.fb)(),
 					s = Object(u.w)(t),
 					a = Object(R.a)(),
-					n = Object(i.e)(n => K(n, {
+					n = Object(i.e)(n => Z(n, {
 						...a,
 						...e,
 						isCommentPermalink: s,
@@ -2110,4 +2110,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.20da9aeccd684925fa4f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.cb4ab2f47d701ea1d182.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.0f87c11a583ae3195a13.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.3fe55a61d53ff680de67.js
+// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -1028,7 +1028,7 @@
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
 				o = s("./node_modules/react-redux/es/index.js"),
-				i = s("./src/reddit/selectors/experiments/cnc/index.ts"),
+				i = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				a = s("./src/reddit/components/AwardBadges/index.tsx"),
 				c = s("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
 				d = s("./src/reddit/components/JSAPIContainers/index.tsx"),
@@ -1057,7 +1057,7 @@
 					shouldShowSubscribeButton: C,
 					subredditOrProfile: k,
 					tooltipType: I
-				} = e, T = !!y, L = Object(v.a)(), P = Object(o.e)(e => !!k && Object(i.a)(e, k.id));
+				} = e, T = !!y, L = Object(v.a)(), P = Object(o.e)(e => !!k && Object(i.i)(e, k.id));
 				return r.a.createElement("div", {
 					className: O.a.metaContainer
 				}, !n && !S.isSponsored && k && r.a.createElement(c.a, {
@@ -1088,7 +1088,7 @@
 					flairStyleTemplate: t,
 					post: S,
 					tooltipType: I,
-					isInModNotesExperiment: P
+					isModWithUserNotesPermissions: P
 				}), r.a.createElement(l.a, {
 					displayText: k ? k.displayText : null,
 					inSubredditOrProfile: !!n,
@@ -2414,12 +2414,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.ef.SmIcon:
+						case h.df.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case h.ef.SmIconHc:
+						case h.df.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -2910,12 +2910,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Ye
+						experimentName: n.Xe
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.ef.SmIcon || t === n.ef.SmIconHc
+					return t === n.df.SmIcon || t === n.df.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2941,4 +2941,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.0f87c11a583ae3195a13.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.3fe55a61d53ff680de67.js.map

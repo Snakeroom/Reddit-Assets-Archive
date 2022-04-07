@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.16c5354f38c08f6ba43c.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.a27f4606898024948ce2.js
+// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3837,12 +3837,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case h.ef.SmIcon:
+						case h.df.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case h.ef.SmIconHc:
+						case h.df.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -4268,7 +4268,7 @@
 						} = t;
 						return Object(Be.c)(e, s)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Te.he.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Te.ge.NewModule,
 					showGovernance: Pe.d.spPoints,
 					showLeaderboard: Pe.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -4464,7 +4464,7 @@
 				flairStyleTemplate: c.V,
 				hideNSFWPref: b.F,
 				isActive: p.j,
-				moderatorPermissions: u.l,
+				moderatorPermissions: u.m,
 				modModeEnabled: c.T,
 				showEditFlair: m.a
 			}), (e, t) => {
@@ -5471,12 +5471,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Ye
+						experimentName: r.Xe
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.ef.SmIcon || t === r.ef.SmIconHc
+					return t === r.df.SmIcon || t === r.df.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5502,4 +5502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.16c5354f38c08f6ba43c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.a27f4606898024948ce2.js.map

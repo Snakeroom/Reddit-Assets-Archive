@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.5c469086e7de95ae70e8.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.db9cbd5ba6b1a992e563.js
+// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -206,7 +206,7 @@
 					currentPageUrl: v.f
 				}),
 				D = Object(l.c)({
-					moderatingSubreddits: F.n,
+					moderatingSubreddits: F.o,
 					origin: O.j
 				}),
 				Q = Object(i.b)(D),
@@ -797,7 +797,7 @@
 					dropdownIsOpen: Object(st.b)(ht),
 					flairData: et.d,
 					isApiPending: Ee.a,
-					moderatorPermissions: $e.m,
+					moderatorPermissions: $e.n,
 					posts: tt.J,
 					selectedItems: Ee.f
 				}),
@@ -1377,4 +1377,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.5c469086e7de95ae70e8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.db9cbd5ba6b1a992e563.js.map

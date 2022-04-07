@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.2766cc9a71bdceb4c711.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.a61ea4e249a476a6585a.js
+// Retrieved at 4/7/2022, 12:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -1082,7 +1082,7 @@
 				f = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/reddit/models/Subreddit/index.ts")),
 				w = a("./src/reddit/selectors/moderatorPermissions.ts");
 			const _ = e => {
-				const t = Object(w.k)(e);
+				const t = Object(w.l)(e);
 				return t ? Object.keys(t).reduce((t, a) => {
 					const n = e.subreddits.models[a];
 					if (!n) return t;
@@ -1729,4 +1729,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.2766cc9a71bdceb4c711.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.a61ea4e249a476a6585a.js.map
