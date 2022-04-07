@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.60da52640564fa5c3e11.js
-// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.65de96b43a1622eeb908.js
+// Retrieved at 4/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePosts", "reddit-components-ContentGate"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1929,7 +1929,7 @@
 					}, [t]);
 					const {
 						contentTitle: n
-					} = e, a = Object(o.e)(k.b) === b.ic.Enabled ? y.d2x_nsfw_signup_blocking_de_v1 : y.d2x_nsfw_signup_blocking_non_us_v1;
+					} = e, a = Object(o.e)(k.b) === b.jc.Enabled ? y.d2x_nsfw_signup_blocking_de_v1 : y.d2x_nsfw_signup_blocking_non_us_v1;
 					return r.a.createElement("div", {
 						className: u.a.container
 					}, r.a.createElement(E, {
@@ -2239,8 +2239,8 @@
 			const d = c(r.Ob, !0),
 				u = c(r.Ob, !1),
 				m = c(r.Pb, !0),
-				p = (c(r.Pb, !1), Object(a.a)(d, m, (e, t) => e === r.ic.Enabled || t === r.jc.Enabled))
+				p = (c(r.Pb, !1), Object(a.a)(d, m, (e, t) => e === r.jc.Enabled || t === r.kc.Enabled))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.60da52640564fa5c3e11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.65de96b43a1622eeb908.js.map

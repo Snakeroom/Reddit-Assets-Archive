@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.139f7aeef3d71238b950.js
-// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.ab582ee4bc08d065f685.js
+// Retrieved at 4/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -2248,27 +2248,27 @@
 					experimentName: i.Db,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				c = Object(s.a)(d, e => e === i.Kd.Enabled),
+				c = Object(s.a)(d, e => e === i.Ld.Enabled),
 				u = Object(s.a)(e => Object(n.c)(e, {
-					experimentName: i.Fd,
+					experimentName: i.Gd,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				l = Object(s.a)(c, u, (e, t) => e && t === i.Jd.Enabled),
+				l = Object(s.a)(c, u, (e, t) => e && t === i.Kd.Enabled),
 				b = Object(s.a)(e => Object(n.c)(e, {
 					experimentName: i.Tb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				m = Object(s.a)(c, b, (e, t) => e && t === i.lc.Enabled),
+				m = Object(s.a)(c, b, (e, t) => e && t === i.mc.Enabled),
 				p = Object(s.a)(e => Object(n.c)(e, {
 					experimentName: i.Bb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				h = Object(s.a)(p, e => e === i.Hd.ContinuousScroll),
+				h = Object(s.a)(p, e => e === i.Id.ContinuousScroll),
 				f = Object(s.a)(e => Object(n.c)(e, {
 					experimentName: i.Cb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				g = Object(s.a)(f, e => e === i.Id.Enabled),
+				g = Object(s.a)(f, e => e === i.Jd.Enabled),
 				O = Object(s.a)(e => Object(n.c)(e, {
 					experimentName: i.Mb,
 					experimentEligibilitySelector: () => !0
@@ -2280,4 +2280,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.139f7aeef3d71238b950.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.ab582ee4bc08d065f685.js.map

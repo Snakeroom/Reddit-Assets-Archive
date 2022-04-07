@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.686bec9c64ffbe52bded.js
-// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.bc18dfa049265d971cae.js
+// Retrieved at 4/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -202,7 +202,7 @@
 			const f = Object(x.a)(e => Object(h.c)(e, {
 				experimentEligibilitySelector: h.a,
 				experimentName: C.pb
-			}), e => e === C.hd);
+			}), e => e === C.id);
 			var g = s("./src/reddit/selectors/experiments/serpRedesignLayout.ts");
 			const O = e => n.fbt._("reddit.com: search results - {query}", [n.fbt._param("query", e || "None")], {
 					hk: "1XOKAg"
@@ -6866,11 +6866,27 @@
 							listingKey: s
 						})
 					},
+					authorLoadMore: (e, t) => {
+						let {
+							listingKey: s
+						} = t;
+						return Object(N.s)(e, {
+							listingKey: s
+						})
+					},
 					communityIdentifiers: (e, t) => {
 						let {
 							listingKey: s
 						} = t;
 						return Object(N.g)(e, {
+							listingKey: s
+						})
+					},
+					communitiesLoadMore: (e, t) => {
+						let {
+							listingKey: s
+						} = t;
+						return Object(N.u)(e, {
 							listingKey: s
 						})
 					},
@@ -6919,49 +6935,50 @@
 				D = e => {
 					let {
 						authorIdentifiers: t,
-						className: s,
-						communityIdentifiers: r,
-						hasAuthorResults: i,
-						hasCommunityResults: a,
-						listingKey: d,
-						listingName: l,
-						location: m,
-						idCardWidget: u,
-						isLoggedIn: p,
-						postFlairWidgets: b,
-						searchOptions: C,
-						currentSubreddit: h
+						authorLoadMore: s,
+						className: r,
+						communityIdentifiers: i,
+						communitiesLoadMore: a,
+						hasAuthorResults: d,
+						hasCommunityResults: l,
+						listingKey: m,
+						listingName: u,
+						idCardWidget: p,
+						isLoggedIn: b,
+						postFlairWidgets: C,
+						searchOptions: h,
+						currentSubreddit: x
 					} = e;
-					const x = Boolean(h && l === h.name && C.restrict_sr),
-						f = !!C.is_multi,
-						g = r.length - E.a >= 1,
-						I = t.length - E.a >= 1;
-					let N;
-					const P = Object(T.a)();
-					return x ? N = o.a.createElement(o.a.Fragment, null, u && o.a.createElement(v.a, {
-						listingName: l
-					}), b && b.map((e, t) => o.a.createElement(j.a, {
+					const f = Boolean(x && u === x.name && h.restrict_sr),
+						g = !!h.is_multi,
+						I = i.length > E.a || !!a,
+						N = t.length > E.a || !!s;
+					let P;
+					const L = Object(T.a)();
+					return f ? P = o.a.createElement(o.a.Fragment, null, p && o.a.createElement(v.a, {
+						listingName: u
+					}), C && C.map((e, t) => o.a.createElement(j.a, {
 						key: `widgetSpacer-${t}`
 					}, o.a.createElement(k.a, {
-						subredditName: l,
+						subredditName: u,
 						widget: e
-					})))) : f || (N = o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+					})))) : g || (P = o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 						className: F.a.container,
 						"data-testid": "communities-list"
 					}, o.a.createElement("h4", {
 						className: F.a.header
 					}, n.fbt._("Communities", null, {
 						hk: "3cMR66"
-					})), a ? o.a.createElement(o.a.Fragment, null, !C.is_multi && o.a.createElement(E.b, {
+					})), l ? o.a.createElement(o.a.Fragment, null, !h.is_multi && o.a.createElement(E.b, {
 						componentType: c.ac.Subreddits,
-						identifiers: r,
-						listingKey: d,
-						searchOptions: C,
+						identifiers: i,
+						listingKey: m,
+						searchOptions: h,
 						sidebar: !0
-					}), g && o.a.createElement(S.a, {
+					}), I && o.a.createElement(S.a, {
 						to: Object(w.b)({
 							searchType: c.bc.Subreddits,
-							pageLayer: P
+							pageLayer: L
 						})
 					}, o.a.createElement("p", {
 						className: F.a.link
@@ -6978,16 +6995,16 @@
 						className: F.a.header
 					}, n.fbt._("People", null, {
 						hk: "2M8TqB"
-					})), i ? o.a.createElement(o.a.Fragment, null, !C.is_multi && o.a.createElement(E.b, {
+					})), d ? o.a.createElement(o.a.Fragment, null, !h.is_multi && o.a.createElement(E.b, {
 						componentType: c.ac.Users,
 						identifiers: t,
-						listingKey: d,
-						searchOptions: C,
+						listingKey: m,
+						searchOptions: h,
 						sidebar: !0
-					}), I && o.a.createElement(S.a, {
+					}), N && o.a.createElement(S.a, {
 						to: Object(w.b)({
 							searchType: c.bc.Users,
-							pageLayer: P
+							pageLayer: L
 						})
 					}, o.a.createElement("p", {
 						className: F.a.link
@@ -6997,12 +7014,12 @@
 						className: F.a.noResults
 					}, n.fbt._("No results", null, {
 						hk: "3qx6oy"
-					}))), p && o.a.createElement("div", {
+					}))), b && o.a.createElement("div", {
 						className: F.a.container
 					}, o.a.createElement(O, null)))), o.a.createElement(y.a, {
 						"data-testid": "search-results-sidebar",
-						className: s
-					}, N, o.a.createElement(_.a, null))
+						className: r
+					}, P, o.a.createElement(_.a, null))
 				},
 				A = e => {
 					const t = Object(i.e)(t => B(t, e)),
@@ -8116,12 +8133,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case C.ef.SmIcon:
+						case C.ff.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case C.ef.SmIconHc:
+						case C.ff.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -10404,7 +10421,6 @@
 						className: q.a.sidebar,
 						listingKey: fe,
 						listingName: me || _.c,
-						location: t,
 						searchOptions: xe,
 						tab: ve
 					})
@@ -10441,8 +10457,8 @@
 				}) === n.x.Enabled,
 				i = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.Hc
-				}) === n.hd
+					experimentName: n.Ic
+				}) === n.id
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -10469,8 +10485,8 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(n.a)(e => Object(o.c)(e, {
 				experimentEligibilitySelector: i.Q,
-				experimentName: r.ac
-			}), e => e === r.hd)
+				experimentName: r.bc
+			}), e => e === r.id)
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -10596,10 +10612,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: r.ve,
+					experimentName: r.we,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.De.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.Ee.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.G, a, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -10626,12 +10642,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.Ye
+						experimentName: n.Ze
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.ef.SmIcon || t === n.ef.SmIconHc
+					return t === n.ff.SmIcon || t === n.ff.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -10672,4 +10688,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.686bec9c64ffbe52bded.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.bc18dfa049265d971cae.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.63934f7f4c04ec341cf0.js
-// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.78be667e08197bf007b7.js
+// Retrieved at 4/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -451,11 +451,11 @@
 						B = Object(x.e)(A.e),
 						V = Object(x.e)(A.a),
 						W = Object(x.e)(A.b),
-						G = Object(x.e)(A.c),
-						z = Object(x.e)(v.d),
-						[Y, Z] = Object(r.useState)(!1),
+						z = Object(x.e)(A.c),
+						Y = Object(x.e)(v.d),
+						[Z, K] = Object(r.useState)(!1),
 						{
-							activeOverflowMenuId: K,
+							activeOverflowMenuId: G,
 							isInboxPostEmbedEnabled: q,
 							isInAppNotification: Q,
 							isInTooltip: $,
@@ -479,11 +479,11 @@
 						readAt: pe,
 						sentAt: ue,
 						title: be
-					} = J, fe = null == oe ? void 0 : oe.messageType, Ne = null === (i = null === (t = null == oe ? void 0 : oe.comment) || void 0 === t ? void 0 : t.parent) || void 0 === i ? void 0 : i.id, Ee = null === (n = null == oe ? void 0 : oe.post) || void 0 === n ? void 0 : n.id, ve = null == oe ? void 0 : oe.post, xe = null === (s = null == oe ? void 0 : oe.subreddit) || void 0 === s ? void 0 : s.id, Oe = null == oe ? void 0 : oe.isBodyHidden, Te = null == oe ? void 0 : oe.isPostHidden, Ae = !pe, ge = `notif-${$?"tooltip":""}-menu-${me}`, he = ge === K, Ie = oe.messageType === E.a.CommentReply, we = Ie ? Ne : Ee, _e = Object(d.a)(e.className, I.a.notificationItem, {
+					} = J, fe = null == oe ? void 0 : oe.messageType, Ne = null === (i = null === (t = null == oe ? void 0 : oe.comment) || void 0 === t ? void 0 : t.parent) || void 0 === i ? void 0 : i.id, Ee = null === (n = null == oe ? void 0 : oe.post) || void 0 === n ? void 0 : n.id, ve = null == oe ? void 0 : oe.post, xe = null === (s = null == oe ? void 0 : oe.subreddit) || void 0 === s ? void 0 : s.id, Oe = null == oe ? void 0 : oe.isBodyHidden, Te = null == oe ? void 0 : oe.isPostHidden, Ae = !pe, ge = `notif-${$?"tooltip":""}-menu-${me}`, he = ge === G, Ie = oe.messageType === E.a.CommentReply, we = Ie ? Ne : Ee, _e = Object(d.a)(e.className, I.a.notificationItem, {
 						[I.a.unread]: Ae && !Q,
 						[I.a.isNightMode]: H,
 						[I.a.inAppNotification]: Q
-					}), Se = F || V || W || G || B, Ce = {
+					}), Se = F || V || W || z || B, Ce = {
 						id: me,
 						isClicked: !!pe,
 						isViewed: !0,
@@ -547,7 +547,7 @@
 							className: Object(d.a)(I.a.body, {
 								[I.a.inAppNotification]: Q
 							})
-						}, ne), !X && (ke || Se || Ue || Ie || z && Q) && c.a.createElement(_, {
+						}, ne), !X && (ke || Se || Ue || Ie || Y && Q) && c.a.createElement(_, {
 							context: oe,
 							notificationId: me,
 							isUnread: Ae,
@@ -556,7 +556,7 @@
 							isInboxCTAsV2ReplyEnabled: F,
 							isInboxCTAsV2All1Enabled: V,
 							isInboxCTAsV2All2Enabled: W,
-							isInboxCTAsV2ReplyPcEnabled: G,
+							isInboxCTAsV2ReplyPcEnabled: z,
 							isInboxCTAsV2SeePostEnabled: B,
 							deeplinkUrl: Pe,
 							isNightMode: H,
@@ -619,13 +619,13 @@
 						tooltipId: ge
 					}), c.a.createElement(o.a, {
 						onChange: e => {
-							if (e.isIntersecting && !Y) {
+							if (e.isIntersecting && !Z) {
 								if (Q) return D(Object(f.t)({
 									...Ce
 								}));
 								D(Object(f.w)({
 									...Ce
-								})), Z(!0)
+								})), K(!0)
 							}
 						},
 						rootMargin: "0px 0px 0px 0px",
@@ -850,12 +850,12 @@
 					experimentName: o.Ab,
 					experimentEligibilitySelector: c
 				}), s.a),
-				l = Object(n.a)(d, e => e === o.Gd.SeePostCTAs),
-				m = Object(n.a)(d, e => e === o.Gd.ReplyCTAs),
-				p = Object(n.a)(d, e => e === o.Gd.AllCTAs1),
-				u = Object(n.a)(d, e => e === o.Gd.AllCTAs2),
-				b = Object(n.a)(d, e => e === o.Gd.ReplyPc)
+				l = Object(n.a)(d, e => e === o.Hd.SeePostCTAs),
+				m = Object(n.a)(d, e => e === o.Hd.ReplyCTAs),
+				p = Object(n.a)(d, e => e === o.Hd.AllCTAs1),
+				u = Object(n.a)(d, e => e === o.Hd.AllCTAs2),
+				b = Object(n.a)(d, e => e === o.Hd.ReplyPc)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.63934f7f4c04ec341cf0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.78be667e08197bf007b7.js.map
