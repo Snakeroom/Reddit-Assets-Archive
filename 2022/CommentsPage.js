@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.d4f529796eafe74c5f3e.js
-// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.73bb9862276dfadfdb65.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1787,12 +1787,12 @@
 					actionInfo: {
 						pageType: t ? "post_detail" : "home"
 					},
-					listing: Object(w.z)(r, void 0, {
+					listing: Object(w.y)(r, void 0, {
 						oldSort: s,
 						sort: n,
 						source: o
 					}),
-					userSubreddit: Object(w.rb)(r)
+					userSubreddit: Object(w.qb)(r)
 				}),
 				N = (e, t) => s => ({
 					source: "comment_highlighting",
@@ -1800,8 +1800,8 @@
 					noun: e
 				}),
 				L = e => ({
-					subreddit: Object(w.hb)(e),
-					userSubreddit: Object(w.rb)(e)
+					subreddit: Object(w.gb)(e),
+					userSubreddit: Object(w.qb)(e)
 				}),
 				T = e => t => ({
 					source: "contest_mode",
@@ -3972,7 +3972,7 @@
 				Te = s("./src/lib/promo/withShowSignupUpsell.tsx"),
 				Me = s("./src/reddit/selectors/telemetry.ts");
 			const Re = e => t => ({
-				...Object(Me.o)(t),
+				...Object(Me.n)(t),
 				source: "post_detail",
 				action: "view",
 				noun: "few_comments",
@@ -5530,7 +5530,7 @@
 						noun: "post_post",
 						post: e,
 						subreddit: t,
-						...v.o(s)
+						...v.n(s)
 					}))(s, I)(_))
 				}, []);
 				return d.a.createElement(f.a, {
@@ -5543,7 +5543,7 @@
 							noun: "post_post",
 							post: e,
 							subreddit: t,
-							...v.o(s)
+							...v.n(s)
 						}))(s, I)(_))
 					}
 				}, d.a.createElement("div", {
@@ -5699,7 +5699,7 @@
 						noun: "community_post",
 						post: e,
 						subreddit: t,
-						...v.o(s)
+						...v.n(s)
 					}))(y, P)(S))
 				}, []);
 				const N = Object(a.useCallback)(e => {
@@ -5755,7 +5755,7 @@
 							noun: "community_post",
 							post: e,
 							subreddit: t,
-							...v.o(s)
+							...v.n(s)
 						}))(y, P)(S))
 					}
 				}, d.a.createElement("div", {
@@ -8300,7 +8300,7 @@
 						post: s
 					} = t;
 					return s
-				}, P.c, N.X, N.hb, (e, t, s, n) => {
+				}, P.c, N.W, N.gb, (e, t, s, n) => {
 					const o = !!e && void 0 !== e.isEligibleForLinkedPosts;
 					let r, i = "";
 					if (e && (r = {
@@ -8591,7 +8591,7 @@
 						className: Object(d.a)(m.a.logIn),
 						onClick: () => {
 							s((() => e => ({
-								...Object(x.o)(e),
+								...Object(x.n)(e),
 								source: "xpromo",
 								action: "click",
 								noun: f
@@ -8603,7 +8603,7 @@
 						className: m.a.cancel,
 						onClick: () => {
 							s((() => e => ({
-								...Object(x.o)(e),
+								...Object(x.n)(e),
 								source: "xpromo",
 								action: "dismiss",
 								noun: f
@@ -8636,7 +8636,7 @@
 					const t = Object(b.b)();
 					o.a.useEffect(() => {
 						t((() => e => ({
-							...Object(x.o)(e),
+							...Object(x.n)(e),
 							source: "xpromo",
 							action: "view",
 							noun: f
@@ -9152,7 +9152,7 @@
 					noun: "crosspost",
 					post: e,
 					subreddit: t,
-					...n.o(s)
+					...n.n(s)
 				}),
 				r = (e, t) => s => ({
 					source: "post_discovery",
@@ -9160,13 +9160,13 @@
 					noun: "crosspost",
 					post: e,
 					subreddit: t,
-					...n.o(s)
+					...n.n(s)
 				}),
 				i = () => e => ({
 					source: "post_discovery",
 					action: "click",
 					noun: "crosspost_see_all",
-					...n.o(e)
+					...n.n(e)
 				})
 		},
 		"./src/reddit/helpers/trackers/otherDiscussions.ts": function(e, t, s) {
@@ -9178,23 +9178,23 @@
 			}));
 			var n = s("./src/reddit/selectors/telemetry.ts");
 			const o = (e, t) => ({
-					...Object(n.o)(e),
-					media: Object(n.B)(e, t),
-					profile: Object(n.R)(e),
-					subreddit: Object(n.hb)(e) || Object(n.kb)(e, t)
+					...Object(n.n)(e),
+					media: Object(n.A)(e, t),
+					profile: Object(n.Q)(e),
+					subreddit: Object(n.gb)(e) || Object(n.jb)(e, t)
 				}),
 				r = e => t => ({
 					source: "post",
 					action: "click",
 					noun: "other_discussions",
-					post: Object(n.I)(t, e),
+					post: Object(n.H)(t, e),
 					...o(t, e)
 				}),
 				i = e => t => ({
 					source: "other_discussions",
 					action: "click",
 					noun: "dismiss",
-					post: Object(n.I)(t, e),
+					post: Object(n.H)(t, e),
 					...o(t, e)
 				})
 		},
@@ -11304,4 +11304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d4f529796eafe74c5f3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.73bb9862276dfadfdb65.js.map

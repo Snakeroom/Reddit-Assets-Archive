@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.e910fd5688d4f12d813d.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.566c564c5cb9165cb541.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1997,7 +1997,7 @@
 					action: "click",
 					noun: "price",
 					correlationId: Object(n.c)(n.a.GoldPayment),
-					...o.o(t),
+					...o.n(t),
 					...c(t, e)
 				}),
 				d = () => e => ({
@@ -2005,13 +2005,13 @@
 					action: "click",
 					noun: "manage",
 					correlationId: Object(n.c)(n.a.GoldPayment),
-					...o.o(e)
+					...o.n(e)
 				}),
 				l = e => t => ({
 					source: "premium_marketing",
 					action: "click",
 					noun: "premium_benefit",
-					...o.o(t),
+					...o.n(t),
 					goldPurchase: {
 						premiumMarketingBenefit: e
 					}
@@ -2758,4 +2758,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.e910fd5688d4f12d813d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.566c564c5cb9165cb541.js.map

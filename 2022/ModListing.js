@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.3385f052b4890ed4881c.js
-// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.a4af1e62e851413f3b27.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1696,37 +1696,37 @@
 					source: s.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: r.SEE_MORE,
-					widget: Object(o.vb)(n, {
+					widget: Object(o.ub)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...o.o
+					...o.n
 				}),
 				d = (e, t) => n => ({
 					source: s.POST,
 					action: i.c.CLICK,
 					noun: r.REREDDIT_PROMO,
-					post: o.I(n, e),
-					subreddit: o.hb(n),
+					post: o.H(n, e),
+					subreddit: o.gb(n),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: r.REREDDIT_PROMO
 						}
 					},
-					...o.o(n)
+					...o.n(n)
 				}),
 				c = () => e => ({
 					source: s.SIDEBAR,
 					action: i.c.VIEW,
 					noun: r.TOPICS_WIDGET,
-					...o.o(e)
+					...o.n(e)
 				}),
 				l = e => t => ({
 					source: s.TOPICS_WIDGET,
 					action: i.c.CLICK,
 					noun: r.TOPIC,
-					...o.o(t),
+					...o.n(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -4174,4 +4174,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.3385f052b4890ed4881c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.a4af1e62e851413f3b27.js.map

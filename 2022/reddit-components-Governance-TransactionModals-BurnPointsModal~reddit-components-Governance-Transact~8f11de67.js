@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.64e9508ef0f999a85545.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.b01e9dc01a96b91d0bf7.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"], {
 		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less": function(A, e, t) {
@@ -257,10 +257,10 @@
 					className: B.a.body
 				}, A.children))
 			}
-			var y = t("./src/reddit/controls/Button/index.tsx"),
-				f = t("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				h = t("./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less"),
-				X = t.n(h);
+			var h = t("./src/reddit/controls/Button/index.tsx"),
+				y = t("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				f = t("./src/reddit/components/Governance/TransactionModals/ApprovalModal/ApprovalBar.m.less"),
+				X = t.n(f);
 			const {
 				fbt: w
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
@@ -271,18 +271,18 @@
 					className: X.a.approvalBar
 				}, i.a.createElement("div", {
 					className: X.a.pointsBalance
-				}, i.a.createElement(f.a, {
+				}, i.a.createElement(y.a, {
 					amount: e,
 					className: X.a.amount,
 					subredditId: A.subredditId,
 					small: !0,
 					grey: !0
-				})), i.a.createElement(y.o, {
+				})), i.a.createElement(h.o, {
 					className: X.a.declineButton,
 					onClick: A.onDecline
 				}, w._("Decline", null, {
 					hk: "2k3T9H"
-				})), i.a.createElement(y.o, {
+				})), i.a.createElement(h.o, {
 					disabled: A.disabled,
 					onClick: A.onApprove
 				}, w._("Approve", null, {
@@ -333,7 +333,7 @@
 					})
 				}, E.fbt._("Wrong password", null, {
 					hk: "2L9j8l"
-				})))), i.a.createElement(y.l, {
+				})))), i.a.createElement(h.l, {
 					className: M.a.approveButton,
 					disabled: s,
 					onClick: l
@@ -476,7 +476,7 @@
 					className: _.a.approveInstructions
 				}, $._("You can approve this in your browser with your Vault Password instead.", null, {
 					hk: "2IOdOY"
-				})), i.a.createElement(y.o, {
+				})), i.a.createElement(h.o, {
 					onClick: A.onNotificationNotReceived
 				}, $._("Approve with Vault Password", null, {
 					hk: "1lwlYz"
@@ -537,7 +537,7 @@
 					subredditId: t,
 					transaction: E,
 					transactionIntent: k
-				} = A, g = Object(a.useRef)(!0), [x, B] = Object(p.a)(nA.LOADING_BACKUP, g), [C, b] = Object(p.a)(rA.NOT_LOADED, g), [y, f] = Object(p.a)(null, g), [h, X] = Object(p.a)("", g), w = function() {
+				} = A, g = Object(a.useRef)(!0), [x, B] = Object(p.a)(nA.LOADING_BACKUP, g), [C, b] = Object(p.a)(rA.NOT_LOADED, g), [h, y] = Object(p.a)(null, g), [f, X] = Object(p.a)("", g), w = function() {
 					const {
 						apiContext: A
 					} = Object(a.useContext)(u.a);
@@ -548,7 +548,7 @@
 				}) : Q(), () => {
 					g.current = !1
 				}), []);
-				const v = async () => C !== rA.NOT_LOADED ? Promise.resolve(y) : (b(rA.LOADING), async function(A, e) {
+				const v = async () => C !== rA.NOT_LOADED ? Promise.resolve(h) : (b(rA.LOADING), async function(A, e) {
 					const t = await Object(c.a)(A, {
 						method: "get",
 						endpoint: `${n.a.metaUrl}/secure-storage/t5_0/me/ethereum-key-backup-${e}`
@@ -560,12 +560,12 @@
 					const a = t.body && t.body.wallet;
 					if (!a) throw new Error("Empty wallet backup response");
 					return JSON.parse(a)
-				}(w(), R).then(A => (f(A), b(rA.LOADED), A)).catch(A => {
+				}(w(), R).then(A => (y(A), b(rA.LOADED), A)).catch(A => {
 					console.error("Backup load failed", A), X(`Backup load failed: ${A}`), b(rA.FAILED)
 				})), Q = async () => {
 					(await Object(r.n)(w(), k)).ok ? B(nA.PUSH_NOTIFICATION_SENT) : M()
 				}, M = async () => {
-					await v() ? B(nA.REQUEST_VAULT_PASSWORD) : C === rA.FAILED ? (B(nA.TRANSACTION_FAILED), A.onTransactionFailure(h)) : B(nA.BACKUP_REQUIRED)
+					await v() ? B(nA.REQUEST_VAULT_PASSWORD) : C === rA.FAILED ? (B(nA.TRANSACTION_FAILED), A.onTransactionFailure(f)) : B(nA.BACKUP_REQUIRED)
 				}, D = async e => {
 					try {
 						B(nA.TRANSACTION_PENDING);
@@ -595,7 +595,7 @@
 					case nA.REQUEST_VAULT_PASSWORD:
 						return i.a.createElement(H, {
 							approveDisabled: !E,
-							backup: y,
+							backup: h,
 							onTransactionApproved: D,
 							onClose: e,
 							subredditId: t,
@@ -963,9 +963,9 @@
 					const B = t.estimateGas[p](...g.arguments),
 						C = t.interface.encodeFunctionData(p, g.arguments),
 						b = await t.getHubAddr(),
-						y = await E.getGasPrice(),
-						f = new n.ethers.Contract(b, u, x),
-						h = await f.getNonce(x.address),
+						h = await E.getGasPrice(),
+						y = new n.ethers.Contract(b, u, x),
+						f = await y.getNonce(x.address),
 						X = m.contracts.preferredRelay || {},
 						w = X.address,
 						R = X.fee,
@@ -987,8 +987,8 @@
 							encodedFunctionCall: C,
 							from: x.address,
 							gas: Q.toString(),
-							gasPrice: y.toString(),
-							nonce: h.toString(),
+							gasPrice: h.toString(),
+							nonce: f.toString(),
 							relayerAddress: w,
 							relayHubAddress: b,
 							subredditId: k,
@@ -998,15 +998,15 @@
 							const p = Object(s.a)(Object(i.b)([Object(r.f)("rlx:"), Object(i.a)(A.address), Object(i.a)(e), Object(i.a)(t), Object(i.p)(Object(i.a)(a.a.from(n)), 32), Object(i.p)(Object(i.a)(o), 32), Object(i.p)(Object(i.a)(c), 32), Object(i.p)(Object(i.a)(a.a.from(d)), 32), Object(i.a)(l), Object(i.a)(u)])),
 								I = await A.signMessage(Object(i.a)(p));
 							return Array.from(Object(i.a)(I))
-						}(x, o, C, R, y, Q, h.toString(), b, w), L = await fetch(`${N}/relay`, {
+						}(x, o, C, R, h, Q, f.toString(), b, w), L = await fetch(`${N}/relay`, {
 							method: "POST",
 							body: JSON.stringify({
 								approvalData: Array.from(Object(i.a)(`0x${M}`)),
 								encodedFunction: C,
 								from: x.address,
 								gasLimit: Q.toNumber(),
-								gasPrice: y.toNumber(),
-								recipientNonce: h.toNumber(),
+								gasPrice: h.toNumber(),
+								recipientNonce: f.toNumber(),
 								relayMaxNonce: await v,
 								relayFee: parseInt(R),
 								relayerAddress: w,
@@ -1058,11 +1058,11 @@
 			var a = t("./src/reddit/selectors/telemetry.ts");
 			const i = (A, e, t, i, s) => r => {
 					const n = {
-						...Object(a.o)(r),
+						...Object(a.n)(r),
 						source: "meta",
 						action: A,
 						noun: "transaction",
-						subreddit: Object(a.ib)(r, t),
+						subreddit: Object(a.hb)(r, t),
 						actionInfo: {
 							settingValue: e,
 							reason: s
@@ -1078,19 +1078,19 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: e ? Object(a.ib)(t, e) : void 0,
+					subreddit: e ? Object(a.hb)(t, e) : void 0,
 					correlationId: A,
-					...Object(a.o)(t)
+					...Object(a.n)(t)
 				}),
 				o = (A, e) => t => ({
 					source: "meta",
 					action: "open",
 					noun: "gif_upsell",
-					subreddit: e ? Object(a.ib)(t, e) : void 0,
+					subreddit: e ? Object(a.hb)(t, e) : void 0,
 					correlationId: A,
-					...Object(a.o)(t)
+					...Object(a.n)(t)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.64e9508ef0f999a85545.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67.b01e9dc01a96b91d0bf7.js.map

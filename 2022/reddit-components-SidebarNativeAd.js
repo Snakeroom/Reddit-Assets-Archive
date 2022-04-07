@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.32738be93c932f1edf60.js
-// Retrieved at 4/6/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3e406e624e3196de6ff7.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1400,7 +1400,7 @@
 			n.d(t, "b", (function() {
 				return A
 			})), n.d(t, "a", (function() {
-				return q
+				return z
 			}));
 			var r = n("./node_modules/polished/dist/polished.es.js"),
 				o = n("./node_modules/react/index.js"),
@@ -1461,7 +1461,7 @@
 				G = n("./src/reddit/hooks/useClickSourceData.ts"),
 				V = n("./src/reddit/hooks/usePostContext.ts"),
 				W = n("./src/reddit/hooks/useTheme.ts"),
-				z = n("./src/telemetry/models/Outbound.ts");
+				q = n("./src/telemetry/models/Outbound.ts");
 
 			function H() {
 				return (H = Object.assign || function(e) {
@@ -1474,7 +1474,7 @@
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall", e[e.Metadata = 5] = "Metadata"
 			}(A || (A = {}));
-			const q = e => {
+			const z = e => {
 					let {
 						size: t,
 						titleColor: n,
@@ -1519,7 +1519,7 @@
 						type: r
 					}, i) : i)
 				},
-				K = e => {
+				Y = e => {
 					let {
 						className: t,
 						disableVisited: n,
@@ -1533,7 +1533,7 @@
 						})
 					}), o)
 				},
-				Y = e => {
+				K = e => {
 					let {
 						disableVisited: t,
 						nowrap: n,
@@ -1567,7 +1567,7 @@
 					} = t, o = Object(i.d)(), a = Object(G.a)(), c = Object(i.e)(L.b), l = e => {
 						!c || t.media && Object(x.H)(t.media) || (e.preventDefault(), o(Object(h.bb)(Object(g.b)(t.permalink), t.id)))
 					};
-					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(Y, {
+					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(K, {
 						nowrap: e.nowrap
 					}, s.a.createElement(J, e));
 					if (e.isCommentsPageAd && t.source && t.source.url) return s.a.createElement(p.b, {
@@ -1578,7 +1578,7 @@
 					}, s.a.createElement(J, e)); {
 						const o = t.media && Object(x.H)(t.media) ? Object(_.c)(t.id, n.name) : t.permalink,
 							i = e.isCommentPermalink ? Object(g.b)(o) : Object(b.a)(o, void 0, a);
-						return s.a.createElement(Y, {
+						return s.a.createElement(K, {
 							disableVisited: e.disableVisited,
 							nowrap: e.nowrap
 						}, r ? ((e, t) => {
@@ -1591,7 +1591,7 @@
 								postId: e.id,
 								source: n
 							}, s.a.createElement(J, t)) : s.a.createElement(J, t)
-						})(t, e) : s.a.createElement(K, {
+						})(t, e) : s.a.createElement(Y, {
 							className: e.titleLinkClassName,
 							"data-click-id": "body",
 							disableVisited: e.disableVisited,
@@ -1613,7 +1613,7 @@
 						return e.length >= 250 ? e.slice(0, 250 - "...".length) + "..." : e
 					})(o));
 					const i = e.isCommentsPage ? R.a.PostComments : R.a.PostItem;
-					return s.a.createElement(q, {
+					return s.a.createElement(z, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
 						redditStyle: e.redditStyle || e.isCommentsPage,
@@ -1633,7 +1633,7 @@
 						post: n
 					} = e, {
 						isSponsored: r
-					} = n, o = e.isCommentsPage ? z.SourceElement.PostLink : z.SourceElement.ListingPostLink, i = !t && !e.isCrosspost && e.size !== A.Large && !n.isSponsored && !(n.media && Object(x.H)(n.media)) && (n.source || n.media && (n.media.type === x.o.GIFVIDEO || n.media.type === x.o.IMAGE || n.media.type === x.o.EMBED));
+					} = n, o = e.isCommentsPage ? q.SourceElement.PostLink : q.SourceElement.ListingPostLink, i = !t && !e.isCrosspost && e.size !== A.Large && !n.isSponsored && !(n.media && Object(x.H)(n.media)) && (n.source || n.media && (n.media.type === x.o.GIFVIDEO || n.media.type === x.o.IMAGE || n.media.type === x.o.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
 						if (i) return s.a.createElement(f.a, {
 							className: e.outboundLinkClassName,
@@ -1878,11 +1878,11 @@
 				G = m.a.wrapped(E.a, "OutboundLinkIcon", L.a),
 				V = m.a.div("SourceLinkWrapper", L.a),
 				W = m.a.div("TopLine", L.a),
-				z = m.a.wrapped(c.c, "PostTitle", L.a),
+				q = m.a.wrapped(c.c, "PostTitle", L.a),
 				H = m.a.div("PostMediaWrapper", L.a),
-				q = m.a.div("BackgroundWrapper", L.a),
-				K = m.a.wrapped(h.a, "PostContainer", L.a),
-				Y = 640,
+				z = m.a.div("BackgroundWrapper", L.a),
+				Y = m.a.wrapped(h.a, "PostContainer", L.a),
+				K = 640,
 				Q = e => Object(C.a)(e.title, 100),
 				X = e => {
 					if (e.post.isMediaOnly) return {};
@@ -1924,13 +1924,13 @@
 						})
 					}, l = s.a.createElement(N, {
 						post: e
-					})) : (i = U, l = s.a.createElement(q, {
+					})) : (i = U, l = s.a.createElement(z, {
 						style: J(this.props)
 					}, s.a.createElement(W, null, s.a.createElement(B, {
 						tooltipType: o ? d.c.Lightbox : void 0,
 						post: e,
 						showTimestamp: !1
-					})), s.a.createElement(z, {
+					})), s.a.createElement(q, {
 						post: e,
 						size: c.b.Large,
 						format: Q
@@ -1944,9 +1944,9 @@
 						isNotCardView: !0,
 						showCentered: !0,
 						post: e,
-						availableWidth: Y,
+						availableWidth: K,
 						shouldLoad: !0
-					})))), s.a.createElement(i, m, s.a.createElement(K, {
+					})))), s.a.createElement(i, m, s.a.createElement(Y, {
 						className: t,
 						isOverlay: o,
 						post: e,
@@ -2129,10 +2129,10 @@
 				s = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				i = n("./src/reddit/helpers/trackers/gild.ts");
 			const a = e => ({
-					...o.o(e),
-					screen: o.Z(e),
-					subreddit: o.hb(e),
-					userSubreddit: o.rb(e)
+					...o.n(e),
+					screen: o.Y(e),
+					subreddit: o.gb(e),
+					userSubreddit: o.qb(e)
 				}),
 				c = e => ({
 					awardId: e.id,
@@ -2226,8 +2226,8 @@
 					action: "click",
 					noun: n,
 					goldPurchase: c(e),
-					profile: o.S(r, t),
-					subreddit: o.ib(r, t)
+					profile: o.R(r, t),
+					subreddit: o.hb(r, t)
 				}),
 				h = (e, t) => b(e, t, "disable_in_community"),
 				v = (e, t) => b(e, t, "enable_in_community")
@@ -2313,20 +2313,20 @@
 					...t
 				}),
 				u = (e, t) => ({
-					...o.o(e),
-					comment: t ? o.i(e, t) : void 0,
+					...o.n(e),
+					comment: t ? o.h(e, t) : void 0,
 					correlationId: Object(c.b)(e) || Object(i.e)(i.a.GildingFlow, !1),
-					post: t ? o.I(e, t) : void 0,
-					screen: o.Z(e),
-					subreddit: o.hb(e),
-					userSubreddit: o.rb(e)
+					post: t ? o.H(e, t) : void 0,
+					screen: o.Y(e),
+					subreddit: o.gb(e),
+					userSubreddit: o.qb(e)
 				}),
 				m = e => t => ({
 					...u(t, e),
 					source: Object(a.a)(e) ? "comment" : "post",
 					action: "click",
 					noun: "give_gold",
-					feed: o.r(t)
+					feed: o.q(t)
 				}),
 				p = e => t => ({
 					...u(t, e),
@@ -2339,7 +2339,7 @@
 					source: Object(a.a)(e) ? "comment" : "post",
 					action: "click",
 					noun: "add_award",
-					feed: o.r(t)
+					feed: o.q(t)
 				}),
 				b = (e, t) => n => ({
 					...u(n, t),
@@ -2548,12 +2548,12 @@
 						packageId: l
 					} = t, b = !!n, h = s.b(e), v = h ? Object(u.getAwardTypeFromAward)(h) : null, g = b ? v : a.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, _ = n ? Object(p.a)(n) ? "comment" : "post" : void 0, y = l || a.t(e), w = [...Object(i.d)(e), ...Object(i.f)(e)].filter(e => e.mobileId === y)[0], x = t.offerContext || (h && 0 === h.coinPrice ? o.a.StorefrontFreeAward : Object(o.d)(w, b)), O = w ? Math.round(1e4 * (w.baselinePennies - w.pennies) / w.baselinePennies) / 100 : 0, C = w ? Math.round(1e4 * (w.coins - w.baselineCoins) / w.coins) / 100 : 0, E = w ? w.baselinePennies !== w.pennies ? `${O}_percent_price` : w.baselineCoins !== w.coins ? `${C}_percent_bonus` : void 0 : void 0, k = g === d.GoldPurchaseType.Premium ? r.yb : w ? w.pennies : void 0;
 					return {
-						...c.o(e),
-						comment: n ? c.i(e, n) : null,
+						...c.n(e),
+						comment: n ? c.h(e, n) : null,
 						correlationId: a.r(e) || Object(m.e)(m.a.GoldPayment, !1),
-						post: n ? c.I(e, n) : null,
-						screen: c.Z(e),
-						subreddit: n ? c.hb(e) : null,
+						post: n ? c.H(e, n) : null,
+						screen: c.Y(e),
+						subreddit: n ? c.gb(e) : null,
 						goldPurchase: {
 							...h ? Object(f.a)(h) : null,
 							type: g,
@@ -2720,7 +2720,7 @@
 						source: e,
 						action: "click",
 						noun: "edit_snoovatar",
-						...s.o(t)
+						...s.n(t)
 					};
 					return Object(o.a)(t) && Object.assign(n, a), n
 				},
@@ -2734,45 +2734,45 @@
 						source: e,
 						action: "click",
 						noun: "copy_avatar",
-						...s.o(n),
+						...s.n(n),
 						snoovatar: {
 							userGenerated: r
 						}
 					}
 				},
 				l = e => ({
-					...s.o(e),
+					...s.n(e),
 					source: "avatar",
 					action: "click",
 					noun: "try_this_look_post",
-					snoovatar: s.fb(e)
+					snoovatar: s.eb(e)
 				}),
 				u = e => ({
-					...s.o(e),
+					...s.n(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
 					actionInfo: {
 						pageType: "snoovatar_builder"
 					},
-					snoovatar: s.fb(e)
+					snoovatar: s.eb(e)
 				}),
 				m = e => ({
-					...s.o(e),
+					...s.n(e),
 					source: "avatar_builder",
 					action: "click",
 					noun: "close",
-					snoovatar: s.fb(e)
+					snoovatar: s.eb(e)
 				}),
 				p = e => ({
 					source: "nav",
 					action: "view",
 					noun: "avatar_marketing",
-					...s.o(e),
+					...s.n(e),
 					...a
 				}),
 				f = e => t => ({
-					...s.o(t),
+					...s.n(t),
 					source: "snoovatar",
 					action: "set_to_profile",
 					noun: "snoovatar",
@@ -2784,8 +2784,8 @@
 					source: "avatar",
 					action: e,
 					noun: "community_spaces",
-					...s.o(n),
-					snoovatar: s.fb(n),
+					...s.n(n),
+					snoovatar: s.eb(n),
 					actionInfo: {
 						paneName: "avatar_community_spaces" + (t ? "_control" : "")
 					}
@@ -2797,14 +2797,14 @@
 					source: e,
 					action: t,
 					noun: n,
-					...s.o(r),
-					snoovatar: s.fb(r)
+					...s.n(r),
+					snoovatar: s.eb(r)
 				}),
 				y = _("anniversary_achievement", "view", "anniversary_achievement"),
 				w = _("anniversary_achievement", "click", "close"),
 				x = _("anniversary_achievement", "click", "equip"),
 				O = e => () => t => ({
-					...s.o(t),
+					...s.n(t),
 					source: "gold_top_nav",
 					action: e,
 					noun: "quick_create_cta"
@@ -2815,11 +2815,11 @@
 					source: e,
 					action: t,
 					noun: n,
-					...s.o(r),
+					...s.n(r),
 					actionInfo: {
 						pageType: "onboarding"
 					},
-					snoovatar: s.fb(r)
+					snoovatar: s.eb(r)
 				}),
 				I = e => k("onboarding", "click", e),
 				j = () => k("avatar", "view", "onboarding")
@@ -3732,4 +3732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.32738be93c932f1edf60.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.3e406e624e3196de6ff7.js.map

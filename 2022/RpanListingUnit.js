@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.a1d7144c3ebe29718bab.js
-// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.a7c4f38681bd0ab66fd2.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -116,12 +116,12 @@
 					respectDoNotTrack: N,
 					saltLength: D,
 					saltTimeToLive: T,
-					viewerUserIdLength: x
+					viewerUserIdLength: A
 				} = {
 					...g,
 					...t
 				};
-				class A extends n.Component {
+				class x extends n.Component {
 					constructor(e) {
 						super(e), this.dashInstance = null, this.hlsInstance = null, this.isMonitoring = !1, this.playerInitTime = Date.now(), this.videoRef = Object(n.createRef)(), this.handleDashCreate = e => this.setDashInstance(e), this.handleDashDestroy = () => this.setDashInstance(null), this.handleHlsCreate = e => this.setHlsInstance(e), this.handleHlsDestroy = () => this.setHlsInstance(null), this.combinedVideoRefs = this.combineExternalVideoRef(e.videoRef)
 					}
@@ -198,10 +198,10 @@
 						}
 					}
 					async encryptViewerUserId() {
-						const e = this.props.redditUserId || A.ANONYMOUS_USER_ID,
+						const e = this.props.redditUserId || x.ANONYMOUS_USER_ID,
 							t = this.getOrCreateSalt(),
 							s = `${v()}${e}${t}`;
-						return (await S(s)).substr(0, A.VIEWER_USER_ID_LENGTH)
+						return (await S(s)).substr(0, x.VIEWER_USER_ID_LENGTH)
 					}
 					getDashInstanceData() {
 						const {
@@ -225,25 +225,25 @@
 							t = this.getVideoData(),
 							s = this.getThirdPartyLibData();
 						return {
-							debug: A.DEBUG,
-							disableCookies: A.DISABLE_COOKIES,
-							respectDoNotTrack: A.RESPECT_DO_NOT_TRACK,
+							debug: x.DEBUG,
+							disableCookies: x.DISABLE_COOKIES,
+							respectDoNotTrack: x.RESPECT_DO_NOT_TRACK,
 							...s,
 							data: {
-								env_key: A.ENV_KEY,
+								env_key: x.ENV_KEY,
 								experiment_name: this.experimentName,
 								player_init_time: this.playerInitTime,
-								player_name: A.PLAYER_NAME,
-								player_version: A.PLAYER_VERSION,
+								player_name: x.PLAYER_NAME,
+								player_version: x.PLAYER_VERSION,
 								...t,
 								viewer_user_id: e
 							}
 						}
 					}
 					getOrCreateSalt() {
-						const e = A.LOCAL_STORAGE_SALT_KEY;
+						const e = x.LOCAL_STORAGE_SALT_KEY;
 						let t = Object(a.a)(e);
-						return t || (t = E(A.SALT_LENGTH), Object(a.b)(e, t, A.SALT_TIME_TO_LIVE)), t
+						return t || (t = E(x.SALT_LENGTH), Object(a.b)(e, t, x.SALT_TIME_TO_LIVE)), t
 					}
 					getThirdPartyLibData() {
 						return {
@@ -259,17 +259,17 @@
 							muxVideoTitle: n
 						} = this.props;
 						return {
-							video_duration: s ? A.DURATION_LIVE : e,
+							video_duration: s ? x.DURATION_LIVE : e,
 							video_id: t,
-							video_stream_type: s ? A.STREAM_TYPE_LIVE : A.STREAM_TYPE_ON_DEMAND,
+							video_stream_type: s ? x.STREAM_TYPE_LIVE : x.STREAM_TYPE_ON_DEMAND,
 							video_title: n,
 							view_session_id: this.props.sessionId,
 							player_software_version: this.getDashInstanceData() ? h.a.dashVersion : this.getHlsInstanceData() ? h.a.hlsVersion : null
 						}
 					}
 				}
-				A.displayName = C(e), A.ANONYMOUS_USER_ID = s, A.DEBUG = d, A.DISABLE_COOKIES = u, A.DURATION_LIVE = 1 / 0, A.ENV_KEY = m, A.LOCAL_STORAGE_SALT_KEY = _, A.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, A.PLAYER_NAME = I, A.PLAYER_VERSION = y, A.RESPECT_DO_NOT_TRACK = N, A.SALT_LENGTH = D, A.SALT_TIME_TO_LIVE = T, A.STREAM_TYPE_LIVE = "live", A.STREAM_TYPE_ON_DEMAND = "on-demand", A.VIEWER_USER_ID_LENGTH = x;
-				const L = Object(n.forwardRef)((e, t) => r.a.createElement(A, O({}, e, {
+				x.displayName = C(e), x.ANONYMOUS_USER_ID = s, x.DEBUG = d, x.DISABLE_COOKIES = u, x.DURATION_LIVE = 1 / 0, x.ENV_KEY = m, x.LOCAL_STORAGE_SALT_KEY = _, x.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, x.PLAYER_NAME = I, x.PLAYER_VERSION = y, x.RESPECT_DO_NOT_TRACK = N, x.SALT_LENGTH = D, x.SALT_TIME_TO_LIVE = T, x.STREAM_TYPE_LIVE = "live", x.STREAM_TYPE_ON_DEMAND = "on-demand", x.VIEWER_USER_ID_LENGTH = A;
+				const L = Object(n.forwardRef)((e, t) => r.a.createElement(x, O({}, e, {
 						forwardedRef: t
 					}))),
 					R = Object(o.c)({
@@ -685,8 +685,8 @@
 				N = s("./src/reddit/models/Vote/index.ts"),
 				D = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				T = s("./src/reddit/selectors/platform.ts"),
-				x = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
-				A = s("./src/reddit/selectors/user.ts"),
+				A = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
+				x = s("./src/reddit/selectors/user.ts"),
 				L = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
 				R = s("./src/reddit/components/Flatlist/index.tsx"),
 				P = s("./src/reddit/components/Flatlist/constants.ts"),
@@ -709,14 +709,14 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 20, J = l.qc, $ = l.qc, Q = Object(c.a)(U.a, {
 				playerName: "RPAN DU Video Player"
 			}), X = Object(i.b)(() => Object(o.c)({
-				autoplay: A.b,
-				isLoggedIn: A.P,
+				autoplay: x.b,
+				isLoggedIn: x.P,
 				isOverlayOpen: T.i,
 				location: (e, t) => {
 					let {
 						listingName: s
 					} = t;
-					const n = Object(x.m)(e, {
+					const n = Object(A.m)(e, {
 						listingName: s
 					});
 					let r;
@@ -732,11 +732,11 @@
 					let {
 						listingName: s
 					} = t;
-					return Object(x.m)(e, {
+					return Object(A.m)(e, {
 						listingName: s
 					})
 				},
-				streamById: e => t => Object(x.l)(e, t),
+				streamById: e => t => Object(A.l)(e, t),
 				rpanDuThresholdVariant: D.h,
 				inRpanDUPreloadExperiment: D.b,
 				inRpanDuTargetingExperiment: D.c
@@ -1328,7 +1328,7 @@
 						reactionsEnabled: r
 					} = e;
 					return e => {
-						const i = s ? n.B(e, s) : void 0;
+						const i = s ? n.A(e, s) : void 0;
 						return {
 							source: "post_detail",
 							action: "click",
@@ -1340,7 +1340,7 @@
 								...i,
 								reactionsEnabled: r
 							},
-							...n.o(e)
+							...n.n(e)
 						}
 					}
 				},
@@ -1352,7 +1352,7 @@
 						reactSourceMediaId: i
 					} = e;
 					return e => {
-						const o = s ? n.B(e, s) : void 0;
+						const o = s ? n.A(e, s) : void 0;
 						return {
 							source: "post",
 							action: "click",
@@ -1367,7 +1367,7 @@
 							media: {
 								...o
 							},
-							...n.o(e)
+							...n.n(e)
 						}
 					}
 				}
@@ -1417,9 +1417,9 @@
 			})), s.d(t, "u", (function() {
 				return T
 			})), s.d(t, "a", (function() {
-				return x
-			})), s.d(t, "s", (function() {
 				return A
+			})), s.d(t, "s", (function() {
+				return x
 			})), s.d(t, "v", (function() {
 				return L
 			})), s.d(t, "w", (function() {
@@ -1428,10 +1428,10 @@
 			var n = s("./src/reddit/models/ScheduledPost/index.ts"),
 				r = s("./src/reddit/selectors/telemetry.ts");
 			const i = e => ({
-					...r.o(e),
-					screen: r.Z(e),
-					subreddit: r.hb(e),
-					userSubreddit: r.rb(e)
+					...r.n(e),
+					screen: r.Y(e),
+					subreddit: r.gb(e),
+					userSubreddit: r.qb(e)
 				}),
 				o = e => ({
 					id: e.id,
@@ -1582,13 +1582,13 @@
 					...i(e),
 					scheduledPost: o(t)
 				}),
-				x = () => e => ({
+				A = () => e => ({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "cancel",
 					...i(e)
 				}),
-				A = () => (e, t) => ({
+				x = () => (e, t) => ({
 					source: "recurring_post_composer",
 					action: "click",
 					noun: "delete",
@@ -1901,4 +1901,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.a1d7144c3ebe29718bab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.a7c4f38681bd0ab66fd2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.5b4eaa0511ddfce242f0.js
-// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.bd1434cdf83b41e61f78.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -1963,8 +1963,8 @@
 				e.FOLLOW = "follow", e.UNFOLLOW = "unfollow", e.CREATE_POST = "create_post"
 			}(n || (n = {}));
 			const x = (e, t) => ({
-				...Object(v.o)(t),
-				profile: Object(v.l)(t),
+				...Object(v.n)(t),
+				profile: Object(v.k)(t),
 				subreddit: {
 					id: e
 				}
@@ -2003,9 +2003,9 @@
 				Z = r("./src/reddit/constants/modals.ts"),
 				q = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				V = r("./src/reddit/helpers/styles/mixins/loading.ts"),
-				X = r("./src/reddit/models/Gold/Premium/index.ts"),
-				Y = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
-				Q = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
+				Y = r("./src/reddit/models/Gold/Premium/index.ts"),
+				Q = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
+				X = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				J = r("./src/reddit/selectors/premium.ts"),
 				$ = r("./src/reddit/components/ProfileIdCard/footer.m.less"),
 				ee = r.n($);
@@ -2027,8 +2027,8 @@
 					isEmployee: k.M,
 					isLoggedIn: k.P,
 					profile: O.j,
-					crisisFlowEnabled: Q.b,
-					chatInviteLinkSharing: Y.a
+					crisisFlowEnabled: X.b,
+					chatInviteLinkSharing: Q.a
 				}),
 				ne = e => {
 					let {
@@ -2083,7 +2083,7 @@
 							onClickChatInviteLink: f,
 							onClickUnblockUser: b,
 							isUserBlocked: g
-						} = this.props, v = o && Object(X.d)(n, a).length && !c || a, x = U()([(c || i) && s ? {
+						} = this.props, v = o && Object(Y.d)(n, a).length && !c || a, x = U()([(c || i) && s ? {
 							text: w.fbt._("Profile Moderation", null, {
 								hk: "4x1una"
 							}),
@@ -2763,13 +2763,13 @@
 			var n = r("./src/reddit/constants/tracking.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts");
 			const a = e => t => ({
-					...Object(s.o)(t),
+					...Object(s.n)(t),
 					action: n.c.CLICK,
 					noun: `follower_list_page_${e?"follow":"unfollow"}`,
 					source: "profile"
 				}),
 				o = () => e => ({
-					...Object(s.o)(e),
+					...Object(s.n)(e),
 					action: n.c.CLICK,
 					noun: "follower_list_cta",
 					source: "profile"
@@ -2802,9 +2802,9 @@
 				s = r("./src/reddit/selectors/telemetry.ts"),
 				a = r("./src/reddit/selectors/user.ts");
 			const o = e => ({
-					screen: s.Z(e),
-					profile: s.R(e),
-					subreddit: s.hb(e)
+					screen: s.Y(e),
+					profile: s.Q(e),
+					subreddit: s.gb(e)
 				}),
 				i = e => t => ({
 					source: "user_dropdown",
@@ -2816,7 +2816,7 @@
 					source: "nav",
 					action: "click",
 					actionInfo: {
-						pageType: t.platform.currentPage ? s.v(t.platform.currentPage) : void 0,
+						pageType: t.platform.currentPage ? s.u(t.platform.currentPage) : void 0,
 						settingValue: e ? "online" : "hidden"
 					},
 					noun: "online_presence_toggle",
@@ -2870,7 +2870,7 @@
 							userName: e
 						}).id
 					},
-					...s.o(t)
+					...s.n(t)
 				}),
 				g = e => t => ({
 					source: "profile",
@@ -2881,7 +2881,7 @@
 							userName: e
 						}).id
 					},
-					...s.o(t)
+					...s.n(t)
 				})
 		},
 		"./src/reddit/hooks/useLocale.ts": function(e, t, r) {
@@ -3142,4 +3142,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.5b4eaa0511ddfce242f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.bd1434cdf83b41e61f78.js.map

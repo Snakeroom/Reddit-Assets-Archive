@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.6dc2b2f843f543a4acb7.js
-// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.a43651ac27c89f27edf9.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, n) {
@@ -4555,11 +4555,11 @@
 							source: "trophy",
 							action: "click",
 							noun: "trophy",
-							...c.o(t),
+							...c.n(t),
 							actionInfo: Object(c.d)(t, {
 								paneName: "profile_about"
 							}),
-							profile: c.R(t),
+							profile: c.Q(t),
 							trophy: e
 						}))({
 							id: t.id,
@@ -5595,13 +5595,13 @@
 			var r = n("./src/reddit/constants/tracking.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
 			const i = e => t => ({
-					...Object(s.o)(t),
+					...Object(s.n)(t),
 					action: r.c.CLICK,
 					noun: `follower_list_page_${e?"follow":"unfollow"}`,
 					source: "profile"
 				}),
 				o = () => e => ({
-					...Object(s.o)(e),
+					...Object(s.n)(e),
 					action: r.c.CLICK,
 					noun: "follower_list_cta",
 					source: "profile"
@@ -5630,37 +5630,37 @@
 					source: s.COMMUNITY_WIDGETS,
 					action: i.c.CLICK,
 					noun: r.SEE_MORE,
-					widget: Object(o.vb)(n, {
+					widget: Object(o.ub)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...o.o
+					...o.n
 				}),
 				d = (e, t) => n => ({
 					source: s.POST,
 					action: i.c.CLICK,
 					noun: r.REREDDIT_PROMO,
-					post: o.I(n, e),
-					subreddit: o.hb(n),
+					post: o.H(n, e),
+					subreddit: o.gb(n),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: r.REREDDIT_PROMO
 						}
 					},
-					...o.o(n)
+					...o.n(n)
 				}),
 				l = () => e => ({
 					source: s.SIDEBAR,
 					action: i.c.VIEW,
 					noun: r.TOPICS_WIDGET,
-					...o.o(e)
+					...o.n(e)
 				}),
 				c = e => t => ({
 					source: s.TOPICS_WIDGET,
 					action: i.c.CLICK,
 					noun: r.TOPIC,
-					...o.o(t),
+					...o.n(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -6380,4 +6380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.6dc2b2f843f543a4acb7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.a43651ac27c89f27edf9.js.map

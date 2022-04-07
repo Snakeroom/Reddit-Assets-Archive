@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.55c79b7fc723b9435a22.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.ce775dd8b5a063ca51a7.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -1743,7 +1743,7 @@
 						a = Object(y.a)(),
 						n = () => {
 							e((() => e => ({
-								...C.o(e),
+								...C.n(e),
 								source: "powerups_landing_page",
 								action: "click",
 								noun: "community"
@@ -2066,7 +2066,7 @@
 					disabled: 0 === g.length,
 					onClick: async () => {
 						i((e => t => ({
-							...C.o(t),
+							...C.n(t),
 							source: "powerups_apply_form",
 							action: "click",
 							noun: "turn_on_powerups",
@@ -2312,7 +2312,7 @@
 					[c, d] = Object(n.useState)(!1);
 				Object(n.useEffect)(() => {
 					e((() => e => ({
-						...C.o(e),
+						...C.n(e),
 						source: "global",
 						action: "view",
 						noun: "screen",
@@ -2323,7 +2323,7 @@
 				}, [e]);
 				const u = () => {
 						e((() => e => ({
-							...C.o(e),
+							...C.n(e),
 							source: "powerups_landing_page",
 							action: "click",
 							noun: "apply"
@@ -2353,4 +2353,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.55c79b7fc723b9435a22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.ce775dd8b5a063ca51a7.js.map

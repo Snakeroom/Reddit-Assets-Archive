@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.a45860c01d5f96eafe84.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.3fa512dbc090b128cb5b.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -123,10 +123,10 @@
 					source: "post_requirements",
 					action: "save",
 					noun: "settings",
-					...R.o(t),
+					...R.n(t),
 					postRequirement: q(e),
-					subreddit: R.hb(t),
-					userSubreddit: R.rb(t)
+					subreddit: R.gb(t),
+					userSubreddit: R.qb(t)
 				});
 			var T = n("./src/reddit/selectors/activeModalId.ts"),
 				B = n("./src/reddit/selectors/contentControls.ts"),
@@ -903,7 +903,7 @@
 							source: "community_settings",
 							action: "add",
 							noun: "auto_report_keyword",
-							...Object(R.o)(t),
+							...Object(R.n)(t),
 							setting: {
 								value: e,
 								oldValue: ""
@@ -912,7 +912,7 @@
 							source: "community_settings",
 							action: "remove",
 							noun: "auto_report_keyword",
-							...Object(R.o)(t),
+							...Object(R.n)(t),
 							setting: {
 								value: e,
 								oldValue: ""
@@ -1602,7 +1602,7 @@
 								value: `${o.hatefulContentThresholdAbuse}`,
 								oldValue: `${this.state.initialFormState.hatefulContentFilters.hatefulContentThresholdAbuse}`
 							},
-							...Object(R.o)(e)
+							...Object(R.n)(e)
 						}));
 						const r = await this.props.onSave({
 							hatefulContentFilters: o,
@@ -1782,4 +1782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.a45860c01d5f96eafe84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.3fa512dbc090b128cb5b.js.map

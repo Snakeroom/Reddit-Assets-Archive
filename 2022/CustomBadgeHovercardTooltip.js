@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.b0eff3e4d4dcc2fcdeee.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.6441bb4548171bbbc161.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CustomBadgeHovercardTooltip"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -91,9 +91,9 @@
 				y = r("./src/reddit/icons/svgs/AddSquare/index.tsx"),
 				C = r("./src/reddit/icons/svgs/Crown/index.tsx"),
 				O = r("./src/reddit/selectors/economics.ts"),
-				E = r("./src/reddit/selectors/telemetry.ts"),
-				g = r("./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/index.m.less"),
-				S = r.n(g);
+				g = r("./src/reddit/selectors/telemetry.ts"),
+				E = r("./src/reddit/components/Badges/UserDisplay/AddCustomTooltip/index.m.less"),
+				S = r.n(E);
 			class v extends s.a.Component {
 				constructor(e) {
 					super(e), this.correlationId = e.correlationId || m()()
@@ -104,8 +104,8 @@
 						action: "open",
 						noun: "custom_badges_hover_card",
 						correlationId: this.correlationId,
-						...E.o(e),
-						subreddit: E.hb(e)
+						...g.n(e),
+						subreddit: g.gb(e)
 					}))
 				}
 				onOpenUploadDialog() {
@@ -149,8 +149,8 @@
 								action: "click",
 								noun: "custom_badge_hover_open_learn_more",
 								correlationId: this.correlationId,
-								...E.o(e),
-								subreddit: E.hb(e)
+								...g.n(e),
+								subreddit: g.gb(e)
 							}))
 						}
 					}, s.a.createElement(C.a, {
@@ -672,9 +672,9 @@
 			})), r.d(t, "f", (function() {
 				return O
 			})), r.d(t, "i", (function() {
-				return E
-			})), r.d(t, "q", (function() {
 				return g
+			})), r.d(t, "q", (function() {
+				return E
 			})), r.d(t, "h", (function() {
 				return S
 			})), r.d(t, "z", (function() {
@@ -775,13 +775,13 @@
 					}
 				};
 
-			function E(e, t) {
+			function g(e, t) {
 				return (null == e ? void 0 : e.length) ? Object(s.a)(e.map(e => t[e]).filter(Boolean)) : f
 			}
-			const g = (e, t, r) => {
+			const E = (e, t, r) => {
 					var s;
 					if (!n.d.spBadges(e)) return f;
-					return E(null === (s = e.users.appliedBadges[r]) || void 0 === s ? void 0 : s[t], e.badges.models)
+					return g(null === (s = e.users.appliedBadges[r]) || void 0 === s ? void 0 : s[t], e.badges.models)
 				},
 				S = (e, t) => {
 					const r = e.economics.subredditPremium[t.subredditId];
@@ -957,4 +957,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.b0eff3e4d4dcc2fcdeee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CustomBadgeHovercardTooltip.6441bb4548171bbbc161.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.1ace14fc79b03e9f6225.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.547bb25c9d81b4f1b77e.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-ClaimPointsBanner"], {
 		"./src/lib/constants/specialMembership.ts": function(A, e, t) {
@@ -793,17 +793,17 @@
 			}));
 			var n = t("./src/reddit/selectors/telemetry.ts");
 			const i = A => e => ({
-					...Object(n.o)(e),
+					...Object(n.n)(e),
 					source: "meta",
 					action: A,
 					noun: "feed_claim_points_banner",
-					subreddit: Object(n.hb)(e)
+					subreddit: Object(n.gb)(e)
 				}),
 				r = () => i("view"),
 				s = () => i("tap"),
 				a = () => i("dismiss"),
 				o = () => A => ({
-					...Object(n.o)(A),
+					...Object(n.n)(A),
 					source: "meta",
 					action: "view",
 					noun: "points_learn_more",
@@ -812,7 +812,7 @@
 					}
 				}),
 				d = () => A => ({
-					...Object(n.o)(A),
+					...Object(n.n)(A),
 					source: "meta",
 					action: "view",
 					noun: "points_faq",
@@ -821,7 +821,7 @@
 					}
 				}),
 				c = A => e => ({
-					...Object(n.o)(e),
+					...Object(n.n)(e),
 					source: "meta",
 					action: "view",
 					noun: "points_faq_section",
@@ -830,17 +830,17 @@
 					}
 				}),
 				u = () => A => ({
-					...Object(n.o)(A),
+					...Object(n.n)(A),
 					source: "meta",
 					action: "click",
 					noun: "learn_more_create_vault_button"
 				}),
 				m = A => e => ({
-					...Object(n.o)(e),
+					...Object(n.n)(e),
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(n.ib)(e, A)
+					subreddit: Object(n.hb)(e, A)
 				})
 		},
 		"./src/reddit/models/Badge/managementPage.ts": function(A, e, t) {
@@ -1651,4 +1651,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.1ace14fc79b03e9f6225.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-ClaimPointsBanner.547bb25c9d81b4f1b77e.js.map

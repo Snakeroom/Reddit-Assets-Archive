@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.68410ed40dc452774669.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.df36d84e4dee7ceee2a9.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -137,8 +137,8 @@
 					audioRoom: n
 				} = t, {
 					recordingStatus: u
-				} = n, [E, f] = Object(a.useState)(new Set), [h, g] = Object(a.useState)(new Set), x = Object(r.e)(l.cb), [O, P] = Object(a.useState)(-1), _ = e => {
-					const t = e ? Array.from(h) : Array.from(E);
+				} = n, [E, f] = Object(a.useState)(new Set), [g, h] = Object(a.useState)(new Set), x = Object(r.e)(l.cb), [O, P] = Object(a.useState)(-1), _ = e => {
+					const t = e ? Array.from(g) : Array.from(E);
 					return null == t ? void 0 : t.map((t, n) => {
 						return e ? s.a.createElement("div", {
 							key: `audioPostAvatar--${t}`,
@@ -173,10 +173,10 @@
 					const e = new Set;
 					for (; e.size < 13;) {
 						const t = j();
-						e.has(t) || (E.size < 6 ? E.add(t) : h.size < 7 && h.add(t), e.add(t))
+						e.has(t) || (E.size < 6 ? E.add(t) : g.size < 7 && g.add(t), e.add(t))
 					}
-					f(E), g(h)
-				}, [E, h]), Object(a.useEffect)(() => {
+					f(E), h(g)
+				}, [E, g]), Object(a.useEffect)(() => {
 					const e = setInterval(() => {
 						const e = Math.floor(6 * Math.random());
 						P(e), setTimeout(() => P(-1), 3500)
@@ -343,11 +343,11 @@
 				r = n("./src/reddit/helpers/predictions/index.ts"),
 				i = n("./src/reddit/selectors/telemetry.ts");
 			const c = (e, t) => ({
-				...Object(i.o)(e),
-				poll: Object(i.N)(e, t),
-				post: Object(i.I)(e, t),
-				predictions: Object(i.O)(e, t),
-				subreddit: Object(i.hb)(e)
+				...Object(i.n)(e),
+				poll: Object(i.M)(e, t),
+				post: Object(i.H)(e, t),
+				predictions: Object(i.N)(e, t),
+				subreddit: Object(i.gb)(e)
 			});
 			var d = n("./src/reddit/hooks/useTracking.ts"),
 				l = n("./src/reddit/models/Prediction/index.ts"),
@@ -359,8 +359,8 @@
 				E = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less"),
 				f = n.n(E);
 
-			function h() {
-				return (h = Object.assign || function(e) {
+			function g() {
+				return (g = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -368,7 +368,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const g = e => {
+			const h = e => {
 				let {
 					className: t,
 					...n
@@ -376,7 +376,7 @@
 				const o = Object(b.fb)(),
 					r = Object(b.x)(o),
 					i = Object(s.e)(v.cb);
-				return a.a.createElement("div", h({}, n, {
+				return a.a.createElement("div", g({}, n, {
 					className: Object(p.a)(t, f.a.container, {
 						[f.a.commentsPage]: r,
 						[f.a.isNightMode]: i
@@ -477,10 +477,10 @@
 			};
 			var L = n("./node_modules/fbt/lib/FbtPublic.js"),
 				F = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionsCarousel/PredictionsProgress/index.m.less"),
-				B = n.n(F);
+				M = n.n(F);
 
-			function M() {
-				return (M = Object.assign || function(e) {
+			function B() {
+				return (B = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -497,19 +497,19 @@
 				} = e;
 				const i = Object(s.e)(v.cb),
 					c = Math.floor(100 * t / n);
-				return a.a.createElement("div", M({
-					className: Object(p.a)(B.a.container, o, {
-						[B.a.isNightMode]: i
+				return a.a.createElement("div", B({
+					className: Object(p.a)(M.a.container, o, {
+						[M.a.isNightMode]: i
 					})
 				}, r), a.a.createElement("div", {
-					className: B.a.bar
+					className: M.a.bar
 				}, a.a.createElement("div", {
-					className: B.a.progress,
+					className: M.a.progress,
 					style: {
 						width: `${c}%`
 					}
 				})), a.a.createElement("div", {
-					className: B.a.label
+					className: M.a.label
 				}, L.fbt._("{progress} of {count} predicted", [L.fbt._param("progress", t.toString()), L.fbt._param("count", n.toString())], {
 					hk: "1dMoEh"
 				})))
@@ -570,9 +570,9 @@
 						} = t,
 						{
 							id: f,
-							voteState: h
+							voteState: g
 						} = n,
-						g = t.userSelection,
+						h = t.userSelection,
 						[x, O] = a.a.useState(!1),
 						[P, _] = a.a.useState(null),
 						[j, y] = a.a.useState(!1),
@@ -587,7 +587,7 @@
 							return t === P
 						}),
 						selectOption: e => {
-							k || g || _(e.id)
+							k || h || _(e.id)
 						},
 						predict: async t => {
 							if (t.currency === l.a.Coins && t.amount > r) return Object($.promptUserToBuyMoreCoins)(), void c(W.b);
@@ -607,7 +607,7 @@
 									pollId: p,
 									tournamentId: e,
 									tournamentPostId: n.id
-								})), i && h < Z.a.upvoted && (o(Object(H.kb)(f)), o(Object(H.kb)(p)), m()), O(!1), _(null), y(!0)
+								})), i && g < Z.a.upvoted && (o(Object(H.kb)(f)), o(Object(H.kb)(p)), m()), O(!1), _(null), y(!0)
 							} catch (a) {
 								O(!1), _(null), u(K._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
@@ -748,9 +748,9 @@
 							noun: "predicted_all_post"
 						}))(t.id);
 						i(e)
-					}, [t.id, o, v, i]), o === u.a.Closed ? a.a.createElement(g, null, a.a.createElement(S, {
+					}, [t.id, o, v, i]), o === u.a.Closed ? a.a.createElement(h, null, a.a.createElement(S, {
 						postId: t.id
-					})) : a.a.createElement(g, null, v ? a.a.createElement(oe, {
+					})) : a.a.createElement(h, null, v ? a.a.createElement(oe, {
 						post: t,
 						predictions: b
 					}) : a.a.createElement(T, {
@@ -832,4 +832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.68410ed40dc452774669.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.df36d84e4dee7ceee2a9.js.map

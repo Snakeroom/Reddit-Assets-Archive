@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.12878ba5cea581f87e9e.js
-// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.e71e7b68d725f3b2dadc.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -9611,17 +9611,17 @@
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const a = e => t => ({
-					...Object(s.o)(t),
+					...Object(s.n)(t),
 					source: "meta",
 					action: e,
 					noun: "feed_claim_points_banner",
-					subreddit: Object(s.hb)(t)
+					subreddit: Object(s.gb)(t)
 				}),
 				r = () => a("view"),
 				o = () => a("tap"),
 				i = () => a("dismiss"),
 				c = () => e => ({
-					...Object(s.o)(e),
+					...Object(s.n)(e),
 					source: "meta",
 					action: "view",
 					noun: "points_learn_more",
@@ -9630,7 +9630,7 @@
 					}
 				}),
 				l = () => e => ({
-					...Object(s.o)(e),
+					...Object(s.n)(e),
 					source: "meta",
 					action: "view",
 					noun: "points_faq",
@@ -9639,7 +9639,7 @@
 					}
 				}),
 				d = e => t => ({
-					...Object(s.o)(t),
+					...Object(s.n)(t),
 					source: "meta",
 					action: "view",
 					noun: "points_faq_section",
@@ -9648,17 +9648,17 @@
 					}
 				}),
 				m = () => e => ({
-					...Object(s.o)(e),
+					...Object(s.n)(e),
 					source: "meta",
 					action: "click",
 					noun: "learn_more_create_vault_button"
 				}),
 				u = e => t => ({
-					...Object(s.o)(t),
+					...Object(s.n)(t),
 					source: "meta",
 					action: "click",
 					noun: "cancel_membership_with_points",
-					subreddit: Object(s.ib)(t, e)
+					subreddit: Object(s.hb)(t, e)
 				})
 		},
 		"./src/reddit/helpers/trackers/followers.ts": function(e, t, n) {
@@ -9671,13 +9671,13 @@
 			var s = n("./src/reddit/constants/tracking.ts"),
 				a = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => t => ({
-					...Object(a.o)(t),
+					...Object(a.n)(t),
 					action: s.c.CLICK,
 					noun: `follower_list_page_${e?"follow":"unfollow"}`,
 					source: "profile"
 				}),
 				o = () => e => ({
-					...Object(a.o)(e),
+					...Object(a.n)(e),
 					action: s.c.CLICK,
 					noun: "follower_list_cta",
 					source: "profile"
@@ -9718,7 +9718,7 @@
 					action: "click",
 					noun: "price",
 					correlationId: Object(s.c)(s.a.GoldPayment),
-					...r.o(t),
+					...r.n(t),
 					...o(t, e)
 				}),
 				l = () => e => ({
@@ -9726,13 +9726,13 @@
 					action: "click",
 					noun: "manage",
 					correlationId: Object(s.c)(s.a.GoldPayment),
-					...r.o(e)
+					...r.n(e)
 				}),
 				d = e => t => ({
 					source: "premium_marketing",
 					action: "click",
 					noun: "premium_benefit",
-					...r.o(t),
+					...r.n(t),
 					goldPurchase: {
 						premiumMarketingBenefit: e
 					}
@@ -9774,9 +9774,9 @@
 				r = n("./src/telemetry/models/GoldPurchase.ts"),
 				o = n("./src/reddit/helpers/correlationIdTracker.ts");
 			const i = e => ({
-					...s.o(e),
+					...s.n(e),
 					correlationId: Object(o.c)(o.a.PremiumSettings),
-					screen: s.Z(e)
+					screen: s.Y(e)
 				}),
 				c = () => e => ({
 					...i(e),
@@ -11953,7 +11953,7 @@
 						source: "dsp_settings",
 						action: "view",
 						noun: "page",
-						actionInfo: Wn.o(e).actionInfo
+						actionInfo: Wn.n(e).actionInfo
 					}
 				},
 				qn = () => e => {
@@ -11961,7 +11961,7 @@
 						source: "dsp_settings",
 						action: "submit",
 						noun: "page",
-						actionInfo: Wn.o(e).actionInfo
+						actionInfo: Wn.n(e).actionInfo
 					}
 				},
 				Qn = () => e => {
@@ -11969,7 +11969,7 @@
 						source: "dsp_settings",
 						action: "submit",
 						noun: "error",
-						actionInfo: Wn.o(e).actionInfo
+						actionInfo: Wn.n(e).actionInfo
 					}
 				};
 			var Kn = n("./src/reddit/components/Settings/DspForm.m.less"),
@@ -12844,7 +12844,7 @@
 							targetUser: {
 								id: e
 							},
-							...Wn.o(t)
+							...Wn.n(t)
 						}))(n[n.length - 1].id))
 					}, [n, M, I]), r.a.createElement(he.a, null, r.a.createElement(be.b, {
 						isResponsiveSettingsEnabled: x
@@ -14686,4 +14686,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.12878ba5cea581f87e9e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e71e7b68d725f3b2dadc.js.map

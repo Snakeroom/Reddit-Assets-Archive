@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.87d1db07db1f03131e79.js
-// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.1dec7b84d1525f3dbe2f.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1769,8 +1769,8 @@
 				}),
 				L = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(j.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(E.a)(Object(j.a)(e).post, _.a.black, _.a.white) : e.textColor === T.e.Dark ? _.a.black : _.a.white,
 				H = p.a.wrapped(A, "TextFlair", S.a),
-				W = p.a.wrapped(U, "RichTextFlair", S.a),
-				q = e => {
+				q = p.a.wrapped(U, "RichTextFlair", S.a),
+				W = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -1781,7 +1781,7 @@
 					}
 				},
 				z = p.a.wrapped(e => {
-					const t = q(e),
+					const t = W(e),
 						n = d.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -1816,7 +1816,7 @@
 				}, t);
 				switch (s.type) {
 					case T.f.Richtext:
-						return n || !s.richtext ? null : d.a.createElement(W, {
+						return n || !s.richtext ? null : d.a.createElement(q, {
 							backgroundColor: s.backgroundColor,
 							className: f,
 							forceSmallEmojis: b,
@@ -2309,8 +2309,8 @@
 				U = n.n(A),
 				L = n("./src/reddit/actions/subredditSettings.ts"),
 				H = n("./src/reddit/components/CharacterCountdown/index.tsx"),
-				W = n("./src/reddit/components/CommunitySettings/helpers.ts"),
-				q = n("./src/lib/fastdom/index.ts"),
+				q = n("./src/reddit/components/CommunitySettings/helpers.ts"),
+				W = n("./src/lib/fastdom/index.ts"),
 				z = n("./src/lib/lessComponent.tsx"),
 				V = n("./src/reddit/components/IdCard/DescriptionBlock/index.m.less"),
 				G = n.n(V);
@@ -2329,7 +2329,7 @@
 					}
 				}
 				componentDidMount() {
-					this.state.shouldTruncateDescription && q.a.read(() => {
+					this.state.shouldTruncateDescription && W.a.read(() => {
 						this.containerRef && this.textRef && this.textRef.offsetHeight > this.containerRef.offsetHeight && this.setState({
 							shouldDisplayShowMore: !0
 						})
@@ -2452,13 +2452,13 @@
 						onChange: e => this.setState({
 							description: e.currentTarget.value
 						}),
-						maxLength: W.c,
+						maxLength: q.c,
 						value: this.state.description
 					}), i.a.createElement("div", {
 						className: G.a.editableDescriptionControlRow
 					}, i.a.createElement(H.a, {
 						className: G.a.characterCountdown,
-						maxChars: W.c,
+						maxChars: q.c,
 						text: this.state.description
 					}), i.a.createElement("span", {
 						className: G.a.cancel,
@@ -2607,8 +2607,8 @@
 				Ue = n("./src/reddit/constants/listings.ts"),
 				Le = n("./src/reddit/constants/modals.ts"),
 				He = n("./src/reddit/constants/page.ts"),
-				We = n("./src/reddit/constants/posts.ts"),
-				qe = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				qe = n("./src/reddit/constants/posts.ts"),
+				We = n("./src/reddit/controls/Dropdown/Row.tsx"),
 				ze = n("./src/reddit/controls/ImageInput/index.tsx"),
 				Ve = n("./src/reddit/featureFlags/index.ts"),
 				Ge = n("./src/reddit/helpers/awards/isEligibleForCommunityAwards.ts"),
@@ -2927,7 +2927,7 @@
 					dispatchPush: t => e(Object(d.b)(t)),
 					toggleFavorite: t => e(Object(_.c)({
 						id: t,
-						type: We.a.SUBREDDIT
+						type: qe.a.SUBREDDIT
 					})),
 					toggleTooltip: t => e(Object(g.h)({
 						tooltipId: t
@@ -3067,7 +3067,7 @@
 						idCardWidget: n
 					}), D = I || m || b, A = !I && x.id ? x.id : "", U = v && v.created, L = r.fbt._("Cake Day", null, {
 						hk: "gZ29b"
-					}), H = `IdCard--Subscribers--${m}--${A}`, W = `IdCard--CurrentlyViewing--${m}--${A}`, q = `IdCard--CakeDay--${m}--${A}`, z = `IdCard--CoinCoint--${m}--${A}`, V = u && !m, G = !I && !l && !d, J = !I && !m && T && !b, K = J && !c ? i.a.createElement(oe, {
+					}), H = `IdCard--Subscribers--${m}--${A}`, q = `IdCard--CurrentlyViewing--${m}--${A}`, W = `IdCard--CakeDay--${m}--${A}`, z = `IdCard--CoinCoint--${m}--${A}`, V = u && !m, G = !I && !l && !d, J = !I && !m && T && !b, K = J && !c ? i.a.createElement(oe, {
 						description: P,
 						shouldTruncateDescription: !1,
 						isCommentsPage: !!s,
@@ -3095,13 +3095,13 @@
 							dropdownId: Bt,
 							targetPosition: ["right", "bottom"],
 							tooltipPosition: ["right", "top"]
-						}, !x.isQuarantined && i.a.createElement(qe.b, {
+						}, !x.isQuarantined && i.a.createElement(We.b, {
 							className: ut.a.dropdownRow,
 							displayText: r.fbt._("Add to Custom Feed", null, {
 								hk: "11L4wo"
 							}),
 							onClick: e
-						}), i.a.createElement(qe.b, {
+						}), i.a.createElement(We.b, {
 							className: ut.a.dropdownRow,
 							displayText: this.props.isFavoriteSubreddit ? r.fbt._("Remove from Favorites", null, {
 								hk: "2TGndK"
@@ -3129,7 +3129,7 @@
 						titleText: B,
 						onOpenFilePicker: this.openIconFilePicker,
 						isInNCPV3Experiment: c
-					}) : null, K, !I && !V && Ht(F, R, H, k, w, W, U, L, q, C), G && i.a.createElement(Rt.a, {
+					}) : null, K, !I && !V && Ht(F, R, H, k, w, q, U, L, W, C), G && i.a.createElement(Rt.a, {
 						subredditId: A
 					}), !I && i.a.createElement("div", {
 						className: ut.a.CommunityTypeContainer
@@ -4448,7 +4448,7 @@
 				o = n("./src/telemetry/index.ts");
 			const a = e => {
 					Object(o.a)({
-						...s.o(e),
+						...s.n(e),
 						action: r.c.CLICK,
 						noun: "multi_detail",
 						source: "id_card"
@@ -4460,7 +4460,7 @@
 						profile: d
 					} = Object(i.b)(e, t);
 					Object(o.a)({
-						...s.o(e),
+						...s.n(e),
 						action: r.c.CLICK,
 						noun: "multi_detail_subreddit",
 						profile: d,
@@ -4475,7 +4475,7 @@
 					action: r.c.CLICK,
 					source: "id_card",
 					noun: e ? "enable_community_styles" : "disable_community_styles",
-					subreddit: s.hb(t)
+					subreddit: s.gb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/lightbox.ts": function(e, t, n) {
@@ -4497,19 +4497,19 @@
 				o = n("./src/reddit/selectors/platform.ts"),
 				a = n("./src/reddit/selectors/telemetry.ts");
 			const d = e => ({
-					profile: a.R(e),
-					screen: a.Z(e),
-					subreddit: a.hb(e)
+					profile: a.Q(e),
+					screen: a.Y(e),
+					subreddit: a.gb(e)
 				}),
 				c = (e, t, n) => r => ({
 					source: Object(o.i)(r) || n ? "post_lightbox" : "post_detail",
 					action: "click",
 					noun: t,
 					...d(r),
-					post: a.I(r, e)
+					post: a.H(r, e)
 				}),
 				l = (e, t, n, r) => s => {
-					const o = n ? a.i(s, n) : null,
+					const o = n ? a.h(s, n) : null,
 						{
 							sortToUse: d
 						} = Object(i.a)(s, e);
@@ -4522,7 +4522,7 @@
 					}
 				},
 				u = (e, t) => n => {
-					const r = a.k(n);
+					const r = a.j(n);
 					return r ? c(r.id, e, t)(n) : {
 						source: Object(o.i)(n) || t ? "post_lightbox" : "post_detail",
 						action: "click",
@@ -4532,15 +4532,15 @@
 				},
 				m = (e, t) => n => Object(s.a)({
 					...c(e, t)(n),
-					...a.o(n)
+					...a.n(n)
 				}),
 				p = e => t => ({
 					source: "id_card",
 					action: r.c.CLICK,
 					noun: e,
 					...d(t),
-					post: a.k(t),
-					userSubreddit: a.rb(t)
+					post: a.j(t),
+					userSubreddit: a.qb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/modHub.ts": function(e, t, n) {
@@ -4554,10 +4554,10 @@
 			}));
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => ({
-					screen: r.Z(e),
-					subreddit: r.hb(e),
-					profile: r.R(e),
-					userSubreddit: r.rb(e)
+					screen: r.Y(e),
+					subreddit: r.gb(e),
+					profile: r.Q(e),
+					userSubreddit: r.qb(e)
 				}),
 				i = e => t => ({
 					source: "mod_hub_nav",
@@ -4587,18 +4587,18 @@
 			}));
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => t => ({
-					...r.o(t),
+					...r.n(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_button",
-					subreddit: r.hb(t)
+					subreddit: r.gb(t)
 				}),
 				i = e => t => ({
-					...r.o(t),
+					...r.n(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_submit",
-					subreddit: r.hb(t)
+					subreddit: r.gb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/restrictedCommunity.ts": function(e, t, n) {
@@ -4610,18 +4610,18 @@
 			}));
 			var r = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => t => ({
-					...r.o(t),
+					...r.n(t),
 					source: e,
 					action: "click",
 					noun: "request_restricted_approval_button",
-					subreddit: r.hb(t)
+					subreddit: r.gb(t)
 				}),
 				i = e => t => ({
-					...r.o(t),
+					...r.n(t),
 					source: "request_restricted_approval_form",
 					action: "click",
 					noun: e,
-					subreddit: r.hb(t)
+					subreddit: r.gb(t)
 				})
 		},
 		"./src/reddit/helpers/trackers/subredditCreation.ts": function(e, t, n) {
@@ -4649,7 +4649,7 @@
 					source: e,
 					noun: "create_community_button",
 					action: "click",
-					...s.o(t),
+					...s.n(t),
 					actionInfo: s.d(t, {
 						settingValue: t.user.account && t.user.account.isMod ? "existing_mod" : "new_mod"
 					}),
@@ -4659,7 +4659,7 @@
 					source: "community_form",
 					noun: "save_community_button",
 					action: "click",
-					...s.o(i),
+					...s.n(i),
 					actionInfo: s.d(i, {
 						settingValue: e
 					}),
@@ -4678,7 +4678,7 @@
 					source: "community_form",
 					noun: "cancel",
 					action: "click",
-					...s.o(e),
+					...s.n(e),
 					actionInfo: s.d(e),
 					correlationId: Object(r.c)(r.a.SubredditCreation)
 				}),
@@ -4686,7 +4686,7 @@
 					source: "community_form",
 					noun: "error_message",
 					action: "view",
-					...s.o(n),
+					...s.n(n),
 					actionInfo: s.d(n, {
 						reason: e,
 						settingValue: t
@@ -4697,28 +4697,28 @@
 					source: "user_dropdown",
 					noun: "create_community",
 					action: "click",
-					...s.o(e),
+					...s.n(e),
 					actionInfo: s.d(e)
 				}),
 				l = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "view",
-					...s.o(e),
+					...s.n(e),
 					actionInfo: s.d(e)
 				}),
 				u = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "click",
-					...s.o(e),
+					...s.n(e),
 					actionInfo: s.d(e)
 				}),
 				m = () => e => ({
 					source: "community_first_post",
 					noun: "modal",
 					action: "dismiss",
-					...s.o(e),
+					...s.n(e),
 					actionInfo: s.d(e)
 				})
 		},
@@ -4740,10 +4740,10 @@
 					source: "id_card",
 					action: "click",
 					noun: "user_flair_picker",
-					...i.o(e)
+					...i.n(e)
 				}),
 				a = e => t => {
-					const n = i.hb(t),
+					const n = i.gb(t),
 						o = Object(s.x)(t, {
 							subredditId: null == n ? void 0 : n.id
 						}),
@@ -4757,7 +4757,7 @@
 						source: "user_flair_picker",
 						action: "click",
 						noun: "user_flair",
-						...i.o(t),
+						...i.n(t),
 						subreddit: n,
 						userFlair: {
 							id: null == a ? void 0 : a.id,
@@ -4776,7 +4776,7 @@
 					source: "user_flair_picker",
 					action: "click",
 					noun: "edit_user_flair",
-					...i.o(e)
+					...i.n(e)
 				}),
 				c = e => t => ({
 					source: "user_flair_picker",
@@ -4786,8 +4786,8 @@
 						value: e ? "0" : "1",
 						oldValue: e ? "1" : "0"
 					},
-					subreddit: i.hb(t),
-					...i.o(t)
+					subreddit: i.gb(t),
+					...i.n(t)
 				})
 		},
 		"./src/reddit/hooks/useClickSourceData.ts": function(e, t, n) {
@@ -5298,4 +5298,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.87d1db07db1f03131e79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.1dec7b84d1525f3dbe2f.js.map

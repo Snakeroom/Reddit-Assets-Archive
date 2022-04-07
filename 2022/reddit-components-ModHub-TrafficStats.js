@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.ae9536c2c023ef1f1045.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.af5f673e55203f7f8c0e.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-TrafficStats"], {
 		"./src/reddit/components/ModHub/TrafficStats/ChartStats/StatBlock/index.m.less": function(e, t, a) {
@@ -255,9 +255,9 @@
 				m = a("./src/reddit/components/ModHub/TrafficStats/helpers.ts"),
 				u = a("./src/reddit/selectors/telemetry.ts");
 			const h = e => ({
-					subreddit: u.hb(e),
-					profile: u.R(e),
-					userSubreddit: u.rb(e)
+					subreddit: u.gb(e),
+					profile: u.Q(e),
+					userSubreddit: u.qb(e)
 				}),
 				f = {
 					[m.d.Uniques]: "uniques",
@@ -606,20 +606,20 @@
 			}
 			var F = Object(d.c)(P),
 				I = a("./src/reddit/components/ModHub/TrafficStats/index.m.less"),
-				W = a.n(I);
-			const q = Object(c.c)({
+				q = a.n(I);
+			const W = Object(c.c)({
 					trafficStats: e => e.trafficStats ? e.trafficStats.trafficStats : null,
 					isTrafficStatsPending: e => e.trafficStats.pending
 				}),
-				V = Object(r.b)(q);
+				V = Object(r.b)(W);
 			t.default = V(e => i.a.createElement("div", {
-				className: W.a.trafficStats
+				className: q.a.trafficStats
 			}, i.a.createElement("span", {
-				className: W.a.titleText
+				className: q.a.titleText
 			}, i.a.createElement(o.b, null, s.fbt._("Traffic Stats", null, {
 				hk: "1TAYOH"
 			})), i.a.createElement("span", {
-				className: W.a.updateText
+				className: q.a.updateText
 			}, s.fbt._("updating every hour", null, {
 				hk: "4h5onW"
 			}))), i.a.createElement(C, {
@@ -631,4 +631,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.ae9536c2c023ef1f1045.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-TrafficStats.af5f673e55203f7f8c0e.js.map

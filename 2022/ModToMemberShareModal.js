@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.12fda84945d4283af5ac.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModToMemberShareModal.7cc985289d9f21ffef64.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModToMemberShareModal"], {
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, s) {
@@ -214,9 +214,9 @@
 							source: "mod_to_member_share",
 							action: e,
 							noun: t,
-							post: Object(N.I)(s, this.props.post.id),
-							subreddit: Object(N.hb)(s),
-							...Object(N.o)(s)
+							post: Object(N.H)(s, this.props.post.id),
+							subreddit: Object(N.gb)(s),
+							...Object(N.n)(s)
 						}))
 					}, this.onCloseClicked = () => {
 						this.props.onClose(), this.event("click", "dismiss")
@@ -448,4 +448,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.12fda84945d4283af5ac.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModToMemberShareModal.7cc985289d9f21ffef64.js.map

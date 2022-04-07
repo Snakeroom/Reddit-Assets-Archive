@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress.d1ef47372d2516f3f978.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress.50fef937c9e262b7c82d.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress"], {
 		"./src/reddit/components/NewCommunityProgress/icons/index.tsx": function(C, e, a) {
@@ -1159,9 +1159,9 @@
 			})), a.d(e, "a", (function() {
 				return m
 			})), a.d(e, "b", (function() {
-				return h
-			})), a.d(e, "c", (function() {
 				return p
+			})), a.d(e, "c", (function() {
+				return h
 			}));
 			var l = a("./src/redditGQL/operations/CompleteCommunityProgressCard.json"),
 				t = a("./src/redditGQL/operations/CompleteCommunityProgressModule.json"),
@@ -1181,11 +1181,11 @@
 					...l,
 					variables: e
 				}),
-				h = (C, e) => Object(n.a)(C, {
+				p = (C, e) => Object(n.a)(C, {
 					...t,
 					variables: e
 				}),
-				p = (C, e) => async (a, l, t) => {
+				h = (C, e) => async (a, l, t) => {
 					let {
 						gqlContext: L
 					} = t;
@@ -1195,7 +1195,7 @@
 							moduleId: e
 						}
 					};
-					await h(L(), c), a(Object(i.b)(C))
+					await p(L(), c), a(Object(i.b)(C))
 				}
 		},
 		"./src/reddit/helpers/trackers/communityProgressModule.ts": function(C, e, a) {
@@ -1224,7 +1224,7 @@
 				}
 			}
 			const L = (C, e) => a => ({
-					...Object(l.o)(a),
+					...Object(l.n)(a),
 					source: "new_community_setup",
 					action: "view",
 					noun: "progress_module",
@@ -1233,10 +1233,10 @@
 						pageType: "community",
 						reason: e
 					},
-					subreddit: Object(l.hb)(a)
+					subreddit: Object(l.gb)(a)
 				}),
 				c = (C, e, a) => L => ({
-					...Object(l.o)(L),
+					...Object(l.n)(L),
 					source: "new_community_setup",
 					action: "click",
 					noun: "card_action_button",
@@ -1247,10 +1247,10 @@
 							reason: a
 						}
 					},
-					subreddit: Object(l.hb)(L)
+					subreddit: Object(l.gb)(L)
 				}),
 				n = C => e => ({
-					...Object(l.o)(e),
+					...Object(l.n)(e),
 					source: "new_community_setup",
 					action: "click",
 					noun: "expand_progress_module",
@@ -1259,10 +1259,10 @@
 						pageType: "community",
 						reason: "expanded_module"
 					},
-					subreddit: Object(l.hb)(e)
+					subreddit: Object(l.gb)(e)
 				}),
 				i = C => e => ({
-					...Object(l.o)(e),
+					...Object(l.n)(e),
 					source: "new_community_setup",
 					action: "click",
 					noun: "collapse_progress_module",
@@ -1271,10 +1271,10 @@
 						pageType: "community",
 						reason: "collapses_module"
 					},
-					subreddit: Object(l.hb)(e)
+					subreddit: Object(l.gb)(e)
 				}),
 				r = (C, e) => a => ({
-					...Object(l.o)(a),
+					...Object(l.n)(a),
 					source: "new_community_setup",
 					action: "click",
 					noun: "card_menu_button",
@@ -1282,10 +1282,10 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(l.hb)(a)
+					subreddit: Object(l.gb)(a)
 				}),
 				d = (C, e) => a => ({
-					...Object(l.o)(a),
+					...Object(l.n)(a),
 					source: "new_community_setup",
 					action: "click",
 					noun: "dismiss",
@@ -1293,10 +1293,10 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(l.hb)(a)
+					subreddit: Object(l.gb)(a)
 				}),
 				m = (C, e) => a => ({
-					...Object(l.o)(a),
+					...Object(l.n)(a),
 					source: "new_community_setup",
 					action: "click",
 					noun: "complete",
@@ -1304,7 +1304,7 @@
 					actionInfo: {
 						pageType: "community"
 					},
-					subreddit: Object(l.hb)(a)
+					subreddit: Object(l.gb)(a)
 				})
 		},
 		"./src/redditGQL/operations/CompleteCommunityProgressCard.json": function(C) {
@@ -1321,4 +1321,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress.d1ef47372d2516f3f978.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress.50fef937c9e262b7c82d.js.map

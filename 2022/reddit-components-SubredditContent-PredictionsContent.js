@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.c64511dce20f9849a664.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.d29c1cfabcd640ac5a44.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -259,7 +259,7 @@
 				const U = Object(r.useCallback)(() => {
 						u(Object(j.e)()), w(!0)
 					}, [u]),
-					H = !!m && ((null == F ? void 0 : F.name) !== m && m.length > 3);
+					G = !!m && ((null == F ? void 0 : F.name) !== m && m.length > 3);
 				return c.a.createElement("div", {
 					className: A.a.predictionsContent
 				}, c.a.createElement("h1", {
@@ -299,7 +299,7 @@
 					hk: "1dBRgv"
 				}) : c.a.createElement(c.a.Fragment, null, " ")), c.a.createElement(f.l, {
 					className: A.a.button,
-					disabled: !m || !F || B || !H,
+					disabled: !m || !F || B || !G,
 					onClick: async () => {
 						if (!F || !m) return null;
 						u(Object(j.j)()), g(!0);
@@ -406,19 +406,19 @@
 			const c = "poll",
 				s = "predictions",
 				i = e => ({
-					...Object(r.o)(e),
+					...Object(r.n)(e),
 					source: c,
 					action: "select",
 					noun: "poll_option"
 				}),
 				a = e => ({
-					...Object(r.o)(e),
+					...Object(r.n)(e),
 					source: c,
 					action: "select",
 					noun: "prediction_option"
 				}),
 				d = e => ({
-					...Object(r.o)(e),
+					...Object(r.n)(e),
 					source: c,
 					action: "view",
 					noun: "predict_option_modal"
@@ -430,11 +430,11 @@
 						totalStakeAmount: o
 					} = e;
 					return e => ({
-						...Object(r.o)(e),
+						...Object(r.n)(e),
 						source: c,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(r.H)(e, t, !1, void 0, n),
+						poll: Object(r.G)(e, t, !1, void 0, n),
 						goldPurchase: {
 							numberCoins: o
 						}
@@ -446,11 +446,11 @@
 						selectedNumberTokens: n
 					} = e;
 					return e => ({
-						...Object(r.o)(e),
+						...Object(r.n)(e),
 						source: c,
 						action: "confirm",
 						noun: "predict",
-						poll: Object(r.H)(e, t, !1, void 0, void 0, n)
+						poll: Object(r.G)(e, t, !1, void 0, void 0, n)
 					})
 				},
 				m = e => {
@@ -463,16 +463,16 @@
 						const i = n === o.a.Coins ? s : void 0,
 							a = n === o.a.Tokens ? s : void 0;
 						return {
-							...Object(r.o)(e),
+							...Object(r.n)(e),
 							source: c,
 							action: "close",
 							noun: "prediction_modal",
-							poll: Object(r.H)(e, t, !1, i, a)
+							poll: Object(r.G)(e, t, !1, i, a)
 						}
 					}
 				},
 				b = e => ({
-					...Object(r.o)(e),
+					...Object(r.n)(e),
 					source: c,
 					action: "click",
 					noun: "add_coins"
@@ -482,7 +482,7 @@
 						targetUserId: t
 					} = e;
 					return e => ({
-						...Object(r.o)(e),
+						...Object(r.n)(e),
 						source: s,
 						action: "click",
 						noun: "leaderboard_profile",
@@ -496,7 +496,7 @@
 						pageType: t
 					} = e;
 					return e => ({
-						...Object(r.o)(e),
+						...Object(r.n)(e),
 						source: s,
 						action: "click",
 						noun: "tournament",
@@ -506,7 +506,7 @@
 					})
 				},
 				f = () => e => ({
-					...Object(r.o)(e),
+					...Object(r.n)(e),
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -515,19 +515,19 @@
 					}
 				}),
 				_ = () => e => ({
-					...Object(r.o)(e),
+					...Object(r.n)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "end_tournament"
 				}),
 				j = () => e => ({
-					...Object(r.o)(e),
+					...Object(r.n)(e),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "rename_tournament"
 				}),
 				x = e => t => ({
-					...Object(r.o)(t),
+					...Object(r.n)(t),
 					source: "mod_tool_predict",
 					action: "click",
 					noun: "enable_predictions",
@@ -538,47 +538,47 @@
 						value: e ? "1" : "0",
 						oldValue: e ? "0" : "1"
 					},
-					subreddit: Object(r.hb)(t)
+					subreddit: Object(r.gb)(t)
 				}),
 				O = () => e => ({
-					...Object(r.o)(e),
+					...Object(r.n)(e),
 					source: s,
 					action: "click",
 					noun: "next"
 				}),
 				k = () => e => ({
-					...Object(r.o)(e),
+					...Object(r.n)(e),
 					source: s,
 					action: "click",
 					noun: "add_more"
 				}),
 				E = () => e => ({
-					...Object(r.o)(e),
+					...Object(r.n)(e),
 					source: s,
 					action: "click",
 					noun: "start_tournament"
 				}),
 				g = () => e => ({
-					...Object(r.o)(e),
+					...Object(r.n)(e),
 					source: "menu_links_bar",
 					action: "click",
 					noun: "predictions_tab"
 				}),
 				y = () => e => ({
-					...Object(r.o)(e),
+					...Object(r.n)(e),
 					source: "predictions_tab",
 					action: "view",
 					noun: "predictions_how_it_works",
-					subreddit: Object(r.hb)(e)
+					subreddit: Object(r.gb)(e)
 				}),
 				C = () => e => ({
-					...Object(r.o)(e),
+					...Object(r.n)(e),
 					source: "predictions_how_it_works",
 					action: "click",
 					noun: "learn_more",
-					subreddit: Object(r.hb)(e)
+					subreddit: Object(r.gb)(e)
 				})
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.c64511dce20f9849a664.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.d29c1cfabcd640ac5a44.js.map

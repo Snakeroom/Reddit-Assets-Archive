@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.1712c2b7cf5f2c2e8746.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.ff10f428d405c87949e8.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RequestToJoinPrivateSubredditModal"], {
 		"./src/reddit/components/ContributorRequestFlow/RequestToJoinPrivateSubredditModal/index.m.less": function(e, t, a) {
@@ -37,9 +37,9 @@
 				f = a("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				v = a("./src/reddit/models/SubredditRestrictions/index.ts"),
 				C = a("./src/reddit/models/Toast/index.ts"),
-				h = a("./src/reddit/selectors/platform.ts"),
-				S = a("./src/reddit/components/ContributorRequestFlow/RequestToJoinPrivateSubredditModal/index.m.less"),
-				E = a.n(S),
+				S = a("./src/reddit/selectors/platform.ts"),
+				h = a("./src/reddit/components/ContributorRequestFlow/RequestToJoinPrivateSubredditModal/index.m.less"),
+				E = a.n(h),
 				j = a("./src/lib/lessComponent.tsx");
 			const R = j.a.wrapped(u.e, "ModalBody", E.a),
 				k = j.a.wrapped(u.b, "CloseIcon", E.a);
@@ -49,13 +49,13 @@
 					[a, l] = Object(s.useState)(() => n.fbt._("I would like to join this community.", null, {
 						hk: "1Cgi1B"
 					})),
-					S = Object(i.e)(h.d);
-				if (!S) return null;
+					h = Object(i.e)(S.d);
+				if (!h) return null;
 				const j = () => t(Object(o.i)(b.a.CONTRIBUTOR_REQUEST_PRIVATE_SUREDDIT)),
-					q = n.fbt._("Request to join r/{subreddit} sent", [n.fbt._param("subreddit", S)], {
+					g = n.fbt._("Request to join r/{subreddit} sent", [n.fbt._param("subreddit", h)], {
 						hk: "3Ro26f"
 					}),
-					w = Object(c.e)(q, C.b.SuccessCommunity);
+					q = Object(c.e)(g, C.b.SuccessCommunity);
 				return r.a.createElement(R, {
 					className: E.a.requestModal
 				}, r.a.createElement(u.i, null, r.a.createElement(f.a, null, r.a.createElement("div", null, r.a.createElement("div", {
@@ -64,7 +64,7 @@
 					hk: "2VKavP"
 				})), r.a.createElement("div", {
 					className: E.a.Title
-				}, r.a.createElement("span", null, `r/${S}`))), r.a.createElement(_.a, {
+				}, r.a.createElement("span", null, `r/${h}`))), r.a.createElement(_.a, {
 					onClick: j
 				}, r.a.createElement(k, null)))), r.a.createElement(u.l, null, r.a.createElement("div", {
 					className: E.a.Description
@@ -86,7 +86,7 @@
 					hk: "2TSLl5"
 				})), r.a.createElement(u.r, {
 					onClick: () => {
-						e(Object(x.b)(v.b.ContentGate)), t(Object(d.n)(`r/${S}`, a, v.e.View)), j(), t(Object(c.f)(w))
+						e(Object(x.b)(v.b.ContentGate)), t(Object(d.n)(`r/${h}`, a, v.e.View)), j(), t(Object(c.f)(q))
 					}
 				}, n.fbt._("Send Request", null, {
 					hk: "1UMaEr"
@@ -244,18 +244,18 @@
 			}));
 			var n = a("./src/reddit/selectors/telemetry.ts");
 			const s = e => t => ({
-					...n.o(t),
+					...n.n(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_button",
-					subreddit: n.hb(t)
+					subreddit: n.gb(t)
 				}),
 				r = e => t => ({
-					...n.o(t),
+					...n.n(t),
 					source: e,
 					action: "click",
 					noun: "request_to_join_submit",
-					subreddit: n.hb(t)
+					subreddit: n.gb(t)
 				})
 		},
 		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, a) {
@@ -273,4 +273,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.1712c2b7cf5f2c2e8746.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RequestToJoinPrivateSubredditModal.ff10f428d405c87949e8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.4d8032bf9e05262529cd.js
-// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.ccfc8c2eb91e07d25c33.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -66,10 +66,10 @@
 				b = n("./src/lib/constants/index.ts"),
 				x = n("./src/lib/makeActionCreator/index.ts"),
 				f = n("./src/reddit/actions/toaster.ts"),
-				k = n("./src/lib/makeApiRequest/index.ts"),
-				v = n("./src/lib/omitHeaders/index.ts"),
-				C = n("./src/reddit/constants/headers.ts"),
-				g = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
+				g = n("./src/lib/makeApiRequest/index.ts"),
+				k = n("./src/lib/omitHeaders/index.ts"),
+				v = n("./src/reddit/constants/headers.ts"),
+				C = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			var E = async (e, t, n, s, o, a) => {
 				const i = {
 					recipient: n,
@@ -78,7 +78,7 @@
 					message: o,
 					correlation_id: a
 				};
-				return Object(k.a)(Object(v.a)(e, [C.a]), {
+				return Object(g.a)(Object(k.a)(e, [v.a]), {
 					method: b.jb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: i
@@ -86,7 +86,7 @@
 					...e
 				} : e.error && e.error.type ? e : {
 					...e,
-					error: Object(g.a)(e)
+					error: Object(C.a)(e)
 				})
 			}, O = n("./src/reddit/helpers/correlationIdTracker.ts"), I = n("./src/reddit/models/Toast/index.ts"), _ = n("./src/reddit/selectors/premium.ts"), y = n("./src/reddit/actions/gold/constants.ts");
 			Object(x.a)(y.y), Object(x.a)(y.A), Object(x.a)(y.z), Object(x.a)(y.C);
@@ -760,10 +760,10 @@
 				o = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				a = n("./src/reddit/selectors/gild.ts");
 			const i = e => ({
-					...s.o(e),
+					...s.n(e),
 					correlationId: Object(a.b)(e) || Object(o.e)(o.a.GiftPremiumFlow, !1),
-					screen: s.Z(e),
-					subreddit: s.hb(e)
+					screen: s.Y(e),
+					subreddit: s.gb(e)
 				}),
 				c = () => e => ({
 					...i(e),
@@ -861,4 +861,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.4d8032bf9e05262529cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.ccfc8c2eb91e07d25c33.js.map

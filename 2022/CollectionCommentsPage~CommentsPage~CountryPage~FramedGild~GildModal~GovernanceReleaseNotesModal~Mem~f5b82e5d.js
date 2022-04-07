@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.7a5cf7515416e45a01a4.js
-// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.a1bd34edcb08f2e878cc.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1135,7 +1135,7 @@
 					return c.a.createElement(ve.a, {
 						className: Le.a.ctaLink,
 						onClick: e => i(e => ({
-							...Object(ge.o)(e),
+							...Object(ge.n)(e),
 							source: "videoplayer",
 							action: "click",
 							noun: "callToAction"
@@ -2034,7 +2034,7 @@
 						reactionsEnabled: a
 					} = e;
 					return e => {
-						const o = s ? i.B(e, s) : void 0;
+						const o = s ? i.A(e, s) : void 0;
 						return {
 							source: "post_detail",
 							action: "click",
@@ -2046,7 +2046,7 @@
 								...o,
 								reactionsEnabled: a
 							},
-							...i.o(e)
+							...i.n(e)
 						}
 					}
 				},
@@ -2058,7 +2058,7 @@
 						reactSourceMediaId: o
 					} = e;
 					return e => {
-						const n = s ? i.B(e, s) : void 0;
+						const n = s ? i.A(e, s) : void 0;
 						return {
 							source: "post",
 							action: "click",
@@ -2073,7 +2073,7 @@
 							media: {
 								...n
 							},
-							...i.o(e)
+							...i.n(e)
 						}
 					}
 				}
@@ -2672,4 +2672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.7a5cf7515416e45a01a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.a1bd34edcb08f2e878cc.js.map

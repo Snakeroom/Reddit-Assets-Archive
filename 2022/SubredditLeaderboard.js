@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.72f84be6701521ded11c.js
-// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.2e7d3193b0357160bfbf.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -2238,13 +2238,13 @@
 			var r = n("./src/reddit/constants/categories.tsx"),
 				a = n("./src/reddit/selectors/telemetry.ts");
 			const s = e => t => ({
-					...a.o(t),
+					...a.n(t),
 					action: "click",
 					noun: Object(r.d)(e),
 					source: "leaderboard_category"
 				}),
 				i = (e, t, n) => s => ({
-					...a.o(s),
+					...a.n(s),
 					action: "click",
 					noun: e,
 					source: "leaderboard_featured_category",
@@ -2254,7 +2254,7 @@
 					}
 				}),
 				o = (e, t) => n => ({
-					...a.o(n),
+					...a.n(n),
 					action: "click",
 					noun: "subreddit",
 					source: "leaderboard_subreddit",
@@ -2265,7 +2265,7 @@
 					}
 				}),
 				d = (e, t) => n => ({
-					...a.o(n),
+					...a.n(n),
 					action: "click",
 					source: "leaderboard_subreddit",
 					noun: t ? "unsubscribe" : "subscribe",
@@ -2274,7 +2274,7 @@
 					}
 				}),
 				c = (e, t, n, s) => i => ({
-					...a.o(i),
+					...a.n(i),
 					action: "click",
 					actionInfo: {
 						...a.d(i),
@@ -2288,7 +2288,7 @@
 					}
 				}),
 				l = (e, t) => n => ({
-					...a.o(n),
+					...a.n(n),
 					action: "view",
 					noun: "leaderboard_right_rail",
 					source: "leaderboard_right_rail",
@@ -2298,7 +2298,7 @@
 					}
 				}),
 				u = (e, t) => n => ({
-					...a.o(n),
+					...a.n(n),
 					action: "click",
 					source: "leaderboard_right_rail",
 					noun: t ? "unsubscribe" : "subscribe",
@@ -2330,37 +2330,37 @@
 					source: a.COMMUNITY_WIDGETS,
 					action: s.c.CLICK,
 					noun: r.SEE_MORE,
-					widget: Object(i.vb)(n, {
+					widget: Object(i.ub)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...i.o
+					...i.n
 				}),
 				d = (e, t) => n => ({
 					source: a.POST,
 					action: s.c.CLICK,
 					noun: r.REREDDIT_PROMO,
-					post: i.I(n, e),
-					subreddit: i.hb(n),
+					post: i.H(n, e),
+					subreddit: i.gb(n),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: r.REREDDIT_PROMO
 						}
 					},
-					...i.o(n)
+					...i.n(n)
 				}),
 				c = () => e => ({
 					source: a.SIDEBAR,
 					action: s.c.VIEW,
 					noun: r.TOPICS_WIDGET,
-					...i.o(e)
+					...i.n(e)
 				}),
 				l = e => t => ({
 					source: a.TOPICS_WIDGET,
 					action: s.c.CLICK,
 					noun: r.TOPIC,
-					...i.o(t),
+					...i.n(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -2928,4 +2928,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.72f84be6701521ded11c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.2e7d3193b0357160bfbf.js.map

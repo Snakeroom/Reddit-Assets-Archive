@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.108a1b98e00dd537cf49.js
-// Retrieved at 4/5/2022, 2:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.62d7da7c5a5ccbe612c0.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, n) {
@@ -1507,37 +1507,37 @@
 					source: s.COMMUNITY_WIDGETS,
 					action: r.c.CLICK,
 					noun: a.SEE_MORE,
-					widget: Object(i.vb)(n, {
+					widget: Object(i.ub)(n, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...i.o
+					...i.n
 				}),
 				d = (e, t) => n => ({
 					source: s.POST,
 					action: r.c.CLICK,
 					noun: a.REREDDIT_PROMO,
-					post: i.I(n, e),
-					subreddit: i.hb(n),
+					post: i.H(n, e),
+					subreddit: i.gb(n),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: a.REREDDIT_PROMO
 						}
 					},
-					...i.o(n)
+					...i.n(n)
 				}),
 				c = () => e => ({
 					source: s.SIDEBAR,
 					action: r.c.VIEW,
 					noun: a.TOPICS_WIDGET,
-					...i.o(e)
+					...i.n(e)
 				}),
 				l = e => t => ({
 					source: s.TOPICS_WIDGET,
 					action: r.c.CLICK,
 					noun: a.TOPIC,
-					...i.o(t),
+					...i.n(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -1965,4 +1965,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.108a1b98e00dd537cf49.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.62d7da7c5a5ccbe612c0.js.map

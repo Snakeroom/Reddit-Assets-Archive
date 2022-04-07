@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.64d79b0f45c3b71eb763.js
-// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.730af59a27bed80fdadf.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -597,11 +597,11 @@
 				passive: !0
 			};
 
-			function V(e) {
+			function H(e) {
 				return e.split("-")[0]
 			}
 
-			function H(e) {
+			function V(e) {
 				return e.split("-")[1]
 			}
 
@@ -613,8 +613,8 @@
 				var t, n = e.reference,
 					s = e.element,
 					o = e.placement,
-					r = o ? V(o) : null,
-					a = o ? H(o) : null,
+					r = o ? H(o) : null,
+					a = o ? V(o) : null,
 					i = n.x + n.width / 2 - s.width / 2,
 					c = n.y + n.height / 2 - s.height / 2;
 				switch (r) {
@@ -935,7 +935,7 @@
 								r = n.adaptive,
 								a = void 0 === r || r,
 								i = {
-									placement: V(t.placement),
+									placement: H(t.placement),
 									popper: t.elements.popper,
 									popperRect: t.rects.popper,
 									gpuAcceleration: o
@@ -1011,7 +1011,7 @@
 								r = void 0 === o ? [0, 0] : o,
 								a = T.reduce((function(e, n) {
 									return e[n] = function(e, t, n) {
-										var s = V(e),
+										var s = H(e),
 											o = [E, O].indexOf(s) >= 0 ? -1 : 1,
 											r = "function" == typeof n ? n(Object.assign(Object.assign({}, t), {}, {
 												placement: e
@@ -1041,12 +1041,12 @@
 								n = e.options,
 								s = e.name;
 							if (!t.modifiersData[s]._skip) {
-								for (var o = n.mainAxis, r = void 0 === o || o, a = n.altAxis, i = void 0 === a || a, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, x = V(h), v = c || (x === h || !f ? [Z(h)] : function(e) {
-										if (V(e) === k) return [];
+								for (var o = n.mainAxis, r = void 0 === o || o, a = n.altAxis, i = void 0 === a || a, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, x = H(h), v = c || (x === h || !f ? [Z(h)] : function(e) {
+										if (H(e) === k) return [];
 										var t = Z(e);
 										return [X(e), t, X(t)]
 									}(h)), g = [h].concat(v).reduce((function(e, n) {
-										return e.concat(V(n) === k ? function(e, t) {
+										return e.concat(H(n) === k ? function(e, t) {
 											void 0 === t && (t = {});
 											var n = t,
 												s = n.placement,
@@ -1056,9 +1056,9 @@
 												i = n.flipVariations,
 												c = n.allowedAutoPlacements,
 												d = void 0 === c ? T : c,
-												l = H(s),
+												l = V(s),
 												u = (l ? i ? A : A.filter((function(e) {
-													return H(e) === l
+													return V(e) === l
 												})) : C).filter((function(e) {
 													return d.indexOf(e) >= 0
 												})).reduce((function(t, n) {
@@ -1067,7 +1067,7 @@
 														boundary: o,
 														rootBoundary: r,
 														padding: a
-													})[V(n)], t
+													})[H(n)], t
 												}), {});
 											return Object.keys(u).sort((function(e, t) {
 												return u[e] - u[t]
@@ -1082,8 +1082,8 @@
 										}) : n)
 									}), []), y = t.rects.reference, S = t.rects.popper, P = new Map, M = !0, N = g[0], I = 0; I < g.length; I++) {
 									var L = g[I],
-										F = V(L),
-										B = H(L) === _,
+										F = H(L),
+										B = V(L) === _,
 										R = [O, w].indexOf(F) >= 0,
 										D = R ? "width" : "height",
 										W = se(t, {
@@ -1150,8 +1150,8 @@
 									padding: u,
 									altBoundary: l
 								}),
-								v = V(t.placement),
-								g = H(t.placement),
+								v = H(t.placement),
+								g = V(t.placement),
 								k = !g,
 								C = U(v),
 								S = "x" === C ? "y" : "x",
@@ -1220,7 +1220,7 @@
 								s = e.name,
 								o = n.elements.arrow,
 								r = n.modifiersData.popperOffsets,
-								a = V(n.placement),
+								a = H(n.placement),
 								i = U(a),
 								c = [E, j].indexOf(a) >= 0 ? "height" : "width";
 							if (o && r) {
@@ -1725,8 +1725,8 @@
 				R = n("./src/reddit/components/PostTitle/index.tsx"),
 				D = n("./src/reddit/components/PostTopMeta/index.tsx"),
 				W = n("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/videoContext.tsx"),
-				V = n("./src/reddit/controls/OutboundLink/styled.tsx"),
-				H = n("./src/reddit/models/Audio/index.ts"),
+				H = n("./src/reddit/controls/OutboundLink/styled.tsx"),
+				V = n("./src/reddit/models/Audio/index.ts"),
 				U = n("./src/reddit/models/Media/index.ts"),
 				z = n("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
 				q = n("./src/reddit/connectors/ClassicPost/index.tsx"),
@@ -1805,8 +1805,8 @@
 					Re = Object(P.d)(xe),
 					De = Object(N.c)(xe),
 					We = !!xe.media && xe.media.type === U.o.RTJSON,
-					Ve = Ce && We,
-					He = x && !je,
+					He = Ce && We,
+					Ve = x && !je,
 					Ue = !!xe.media && Object(U.H)(xe.media),
 					ze = !!xe.recommendationContext,
 					qe = {
@@ -1835,7 +1835,7 @@
 					templatePlaceholderImage: Ie && Ie.postPlaceholderImage,
 					removeLink: Ue
 				});
-				Object(H.b)(xe) && (Qe = o.a.createElement(j, {
+				Object(V.b)(xe) && (Qe = o.a.createElement(j, {
 					post: xe
 				}));
 				const Ye = o.a.createElement(T.a, {
@@ -1870,8 +1870,8 @@
 				}), o.a.createElement("div", {
 					className: se.a.mainBody
 				}, o.a.createElement("div", {
-					className: He ? se.a.expandoContainer : se.a.thumbnailContainer
-				}, !He && Qe, o.a.createElement(k.a, {
+					className: Ve ? se.a.expandoContainer : se.a.thumbnailContainer
+				}, !Ve && Qe, o.a.createElement(k.a, {
 					crosspost: Ae,
 					className: se.a.rightExpando,
 					isExpanded: !!h,
@@ -1895,7 +1895,7 @@
 					size: R.b.Medium,
 					titleColor: Ie && Ie.postTitleColor,
 					isOverlay: ie
-				}, xe.source && !Ae && !xe.isSurveyAd && o.a.createElement(V.a, {
+				}, xe.source && !Ae && !xe.isSurveyAd && o.a.createElement(H.a, {
 					href: xe.source.url,
 					isSponsored: xe.isSponsored,
 					postId: xe.id,
@@ -1942,7 +1942,7 @@
 					onOpenReportsDropdown: fe,
 					post: xe,
 					shouldShowInsightsButton: Me,
-					showEditPost: Ve,
+					showEditPost: He,
 					showEditFlair: we,
 					tooltipType: ie ? D.c.Lightbox : void 0,
 					useFlatlistBreakpoints: Object(F.b)({
@@ -3256,25 +3256,25 @@
 					}
 				},
 				i = (e, t) => n => ({
-					...Object(r.o)(n),
+					...Object(r.n)(n),
 					action: o.c.VIEW,
 					noun: "aggregate_stats",
 					source: "creator_stats",
-					subreddit: Object(r.hb)(n),
-					post: Object(r.I)(n, e),
-					userSubreddit: Object(r.rb)(n),
+					subreddit: Object(r.gb)(n),
+					post: Object(r.H)(n, e),
+					userSubreddit: Object(r.qb)(n),
 					actionInfo: Object(r.d)(n, {
 						reason: a(t)
 					})
 				}),
 				c = (e, t) => n => ({
-					...Object(r.o)(n),
+					...Object(r.n)(n),
 					action: o.c.CLICK,
 					noun: e,
 					source: "creator_stats",
-					post: Object(r.I)(n, t),
-					subreddit: Object(r.hb)(n),
-					userSubreddit: Object(r.rb)(n)
+					post: Object(r.H)(n, t),
+					subreddit: Object(r.gb)(n),
+					userSubreddit: Object(r.qb)(n)
 				}),
 				d = e => {
 					switch (e) {
@@ -3290,18 +3290,18 @@
 					}
 				},
 				l = e => t => ({
-					...Object(r.o)(t),
+					...Object(r.n)(t),
 					action: o.c.CLICK,
 					noun: "post_stats",
 					source: "post",
 					actionInfo: Object(r.d)(t, {
 						pageType: "profile"
 					}),
-					post: Object(r.I)(t, e, void 0, 0),
-					profile: Object(r.R)(t)
+					post: Object(r.H)(t, e, void 0, 0),
+					profile: Object(r.Q)(t)
 				}),
 				u = (e, t, n) => s => ({
-					...Object(r.o)(s),
+					...Object(r.n)(s),
 					action: o.c.VIEW,
 					noun: o.b.SCREEN,
 					source: "global",
@@ -3309,10 +3309,10 @@
 						pageType: "post_stats",
 						reason: d(t)
 					}),
-					post: Object(r.I)(s, e, void 0, n)
+					post: Object(r.H)(s, e, void 0, n)
 				}),
 				p = (e, t, n, s, a, i) => c => ({
-					...Object(r.o)(c),
+					...Object(r.n)(c),
 					action: o.c.CLICK,
 					noun: "community",
 					source: "post_stats",
@@ -3320,8 +3320,8 @@
 						pageType: "post_stats",
 						reason: "stats"
 					}),
-					post: Object(r.I)(c, e, void 0, i),
-					subreddit: Object(r.hb)(c),
+					post: Object(r.H)(c, e, void 0, i),
+					subreddit: Object(r.gb)(c),
 					outbound: {
 						postId: n,
 						url: t,
@@ -3330,7 +3330,7 @@
 					}
 				}),
 				m = (e, t, n) => s => ({
-					...Object(r.o)(s),
+					...Object(r.n)(s),
 					action: o.c.CLICK,
 					noun: "share",
 					source: "post_stats",
@@ -3338,8 +3338,8 @@
 						pageType: "post_stats",
 						reason: d(t)
 					}),
-					post: Object(r.I)(s, e, void 0, n),
-					subreddit: Object(r.hb)(s)
+					post: Object(r.H)(s, e, void 0, n),
+					subreddit: Object(r.gb)(s)
 				})
 		},
 		"./src/reddit/icons/fonts/DropdownTriangle/index.tsx": function(e, t, n) {
@@ -3414,4 +3414,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.64d79b0f45c3b71eb763.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.730af59a27bed80fdadf.js.map

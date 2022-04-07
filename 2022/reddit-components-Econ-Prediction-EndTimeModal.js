@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.beb8074339b7629c38cd.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.ce2046f918e952a0d05b.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-EndTimeModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -211,11 +211,11 @@
 						onChange: O,
 						maxDate: D,
 						minDate: j,
-						minTime: I,
-						fullMinDatetime: M,
-						formattedMinDatetime: k
+						minTime: M,
+						fullMinDatetime: k,
+						formattedMinDatetime: I
 					} = Object(l.a)(t, n),
-					P = t < M,
+					P = t < k,
 					y = () => C(Object(c.g)(p.a.ECON_PREDICTIONS_CHANGE_END_TIME));
 				return s.a.createElement(d.a, {
 					withOverlay: !0,
@@ -256,12 +256,12 @@
 						onChange: e => O({
 							time: e
 						}),
-						min: I,
+						min: M,
 						value: v,
 						required: !0
-					}), E, k && s.a.createElement("span", {
+					}), E, I && s.a.createElement("span", {
 						className: _.a.footer
-					}, f._("New end time has to be later than {Minimum date and time}", [f._param("Minimum date and time", k)], {
+					}, f._("New end time has to be later than {Minimum date and time}", [f._param("Minimum date and time", I)], {
 						hk: "1GjSWl"
 					}))) : "Something went wrong. Please try again.",
 					isDisabled: P || t === i
@@ -703,10 +703,10 @@
 			}));
 			var o = n("./src/reddit/selectors/telemetry.ts");
 			const s = (e, t) => ({
-					...Object(o.o)(e),
-					post: Object(o.I)(e, t),
-					predictions: Object(o.O)(e, t),
-					subreddit: Object(o.hb)(e)
+					...Object(o.n)(e),
+					post: Object(o.H)(e, t),
+					predictions: Object(o.N)(e, t),
+					subreddit: Object(o.gb)(e)
 				}),
 				a = e => t => ({
 					...s(t, e),
@@ -747,4 +747,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.beb8074339b7629c38cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-EndTimeModal.ce2046f918e952a0d05b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.5308092cb85208bf2176.js
-// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.c33dbfb6564131606548.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -6077,9 +6077,9 @@
 			}(s || (s = {}));
 			const i = (e, t) => {
 					if (t) {
-						const a = c.B(e, t.post.id),
-							s = c.I(e, t.post.id),
-							n = c.hb(e);
+						const a = c.A(e, t.post.id),
+							s = c.H(e, t.post.id),
+							n = c.gb(e);
 						if (t.post.authorInfo && s && (s.authorId = t.post.authorInfo.id), a) {
 							a.streamPublicId = t.stream.stream_id, a.id = t.stream.stream_id;
 							const s = Object(r.j)(e, {
@@ -6094,7 +6094,7 @@
 						}
 					}
 					return {
-						subreddit: c.hb(e)
+						subreddit: c.gb(e)
 					}
 				},
 				o = (e, t, a) => {
@@ -6272,8 +6272,8 @@
 					source: "post",
 					action: "view",
 					noun: "post",
-					profile: c.R(t),
-					screen: c.Z(t),
+					profile: c.Q(t),
+					screen: c.Y(t),
 					...i(t, e)
 				}),
 				S = e => t => {
@@ -6282,8 +6282,8 @@
 						source: "post",
 						action: "consume",
 						noun: "post",
-						profile: c.R(t),
-						screen: c.Z(t),
+						profile: c.Q(t),
+						screen: c.Y(t),
 						...a
 					}
 				},
@@ -6304,7 +6304,7 @@
 					action: "click",
 					noun: "subscribe",
 					...i(t, e),
-					targetSubreddit: c.hb(t)
+					targetSubreddit: c.gb(t)
 				}),
 				I = (e, t) => a => ({
 					source: "stream_player",
@@ -6399,13 +6399,13 @@
 			var s = a("./src/reddit/constants/categories.tsx"),
 				n = a("./src/reddit/selectors/telemetry.ts");
 			const r = e => t => ({
-					...n.o(t),
+					...n.n(t),
 					action: "click",
 					noun: Object(s.d)(e),
 					source: "leaderboard_category"
 				}),
 				c = (e, t, a) => r => ({
-					...n.o(r),
+					...n.n(r),
 					action: "click",
 					noun: e,
 					source: "leaderboard_featured_category",
@@ -6415,7 +6415,7 @@
 					}
 				}),
 				i = (e, t) => a => ({
-					...n.o(a),
+					...n.n(a),
 					action: "click",
 					noun: "subreddit",
 					source: "leaderboard_subreddit",
@@ -6426,7 +6426,7 @@
 					}
 				}),
 				o = (e, t) => a => ({
-					...n.o(a),
+					...n.n(a),
 					action: "click",
 					source: "leaderboard_subreddit",
 					noun: t ? "unsubscribe" : "subscribe",
@@ -6435,7 +6435,7 @@
 					}
 				}),
 				l = (e, t, a, r) => c => ({
-					...n.o(c),
+					...n.n(c),
 					action: "click",
 					actionInfo: {
 						...n.d(c),
@@ -6449,7 +6449,7 @@
 					}
 				}),
 				d = (e, t) => a => ({
-					...n.o(a),
+					...n.n(a),
 					action: "view",
 					noun: "leaderboard_right_rail",
 					source: "leaderboard_right_rail",
@@ -6459,7 +6459,7 @@
 					}
 				}),
 				u = (e, t) => a => ({
-					...n.o(a),
+					...n.n(a),
 					action: "click",
 					source: "leaderboard_right_rail",
 					noun: t ? "unsubscribe" : "subscribe",
@@ -6491,37 +6491,37 @@
 					source: n.COMMUNITY_WIDGETS,
 					action: r.c.CLICK,
 					noun: s.SEE_MORE,
-					widget: Object(c.vb)(a, {
+					widget: Object(c.ub)(a, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...c.o
+					...c.n
 				}),
 				o = (e, t) => a => ({
 					source: n.POST,
 					action: r.c.CLICK,
 					noun: s.REREDDIT_PROMO,
-					post: c.I(a, e),
-					subreddit: c.hb(a),
+					post: c.H(a, e),
+					subreddit: c.gb(a),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: s.REREDDIT_PROMO
 						}
 					},
-					...c.o(a)
+					...c.n(a)
 				}),
 				l = () => e => ({
 					source: n.SIDEBAR,
 					action: r.c.VIEW,
 					noun: s.TOPICS_WIDGET,
-					...c.o(e)
+					...c.n(e)
 				}),
 				d = e => t => ({
 					source: n.TOPICS_WIDGET,
 					action: r.c.CLICK,
 					noun: s.TOPIC,
-					...c.o(t),
+					...c.n(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -7802,4 +7802,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.5308092cb85208bf2176.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.c33dbfb6564131606548.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.234ea9da11733e0b85d5.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.8aa61f47eb7108a43f1b.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SpecialMembershipsGifsTooltip"], {
 		"./src/reddit/components/RichTextEditor/media/GifTooltip/BaseTooltip.m.less": function(e, t, s) {
@@ -125,8 +125,8 @@
 			}
 			var O = s("./node_modules/lodash/debounce.js"),
 				j = s.n(O),
-				k = s("./src/reddit/icons/svgs/Search/index.tsx"),
-				S = s("./src/reddit/selectors/user.ts"),
+				S = s("./src/reddit/icons/svgs/Search/index.tsx"),
+				k = s("./src/reddit/selectors/user.ts"),
 				w = s("./src/reddit/components/RichTextEditor/media/GifTooltip/SearchBox/index.m.less"),
 				R = s.n(w);
 			const B = 400;
@@ -158,7 +158,7 @@
 					}, l.a.createElement("button", {
 						className: R.a.searchIconButton,
 						onClick: this.focusOnInput
-					}, l.a.createElement(k.a, {
+					}, l.a.createElement(S.a, {
 						className: R.a.searchIcon
 					})), l.a.createElement("input", {
 						ref: e => this.elementRef = e,
@@ -179,7 +179,7 @@
 				}
 			}
 			const L = Object(h.c)({
-				isNightMode: S.cb
+				isNightMode: k.cb
 			});
 			var U = Object(p.b)(L)(M),
 				P = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
@@ -209,12 +209,12 @@
 							action: "change",
 							noun: "gif_tooltip_search",
 							correlationId: this.props.correlationId,
-							subreddit: this.props.subreddit.id ? I.ib(t, this.props.subreddit.id) : void 0,
-							post: I.k(t),
+							subreddit: this.props.subreddit.id ? I.hb(t, this.props.subreddit.id) : void 0,
+							post: I.j(t),
 							search: {
 								query: e
 							},
-							...I.o(t)
+							...I.n(t)
 						})), this.setState({
 							loading: !1,
 							columns: [
@@ -229,15 +229,15 @@
 						e.scrollHeight - e.scrollTop === e.clientHeight && this.loadMoreResults()
 					}, 300), this.onResultClick = e => {
 						this.props.sendEvent(e => {
-							const t = I.o(e);
+							const t = I.n(e);
 							return {
 								...t,
 								source: "meta",
 								action: "select",
 								noun: "gif_tooltip_result",
 								correlationId: this.props.correlationId,
-								subreddit: this.props.subreddit.id ? I.ib(e, this.props.subreddit.id) : void 0,
-								post: I.k(e),
+								subreddit: this.props.subreddit.id ? I.hb(e, this.props.subreddit.id) : void 0,
+								post: I.j(e),
 								actionInfo: {
 									...t.actionInfo,
 									reason: this.props.hasGifProduct ? "has-gif-product" : "gif-train"
@@ -526,11 +526,11 @@
 			var i = s("./src/reddit/selectors/telemetry.ts");
 			const o = (e, t, s, o, n) => r => {
 					const a = {
-						...Object(i.o)(r),
+						...Object(i.n)(r),
 						source: "meta",
 						action: e,
 						noun: "transaction",
-						subreddit: Object(i.ib)(r, s),
+						subreddit: Object(i.hb)(r, s),
 						actionInfo: {
 							settingValue: t,
 							reason: n
@@ -546,17 +546,17 @@
 					source: "meta",
 					action: "open",
 					noun: "gif_tooltip",
-					subreddit: t ? Object(i.ib)(s, t) : void 0,
+					subreddit: t ? Object(i.hb)(s, t) : void 0,
 					correlationId: e,
-					...Object(i.o)(s)
+					...Object(i.n)(s)
 				}),
 				c = (e, t) => s => ({
 					source: "meta",
 					action: "open",
 					noun: "gif_upsell",
-					subreddit: t ? Object(i.ib)(s, t) : void 0,
+					subreddit: t ? Object(i.hb)(s, t) : void 0,
 					correlationId: e,
-					...Object(i.o)(s)
+					...Object(i.n)(s)
 				})
 		},
 		"./src/reddit/icons/svgs/Unlock/index.tsx": function(e, t, s) {
@@ -576,4 +576,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.234ea9da11733e0b85d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SpecialMembershipsGifsTooltip.8aa61f47eb7108a43f1b.js.map

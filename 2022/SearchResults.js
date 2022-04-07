@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.50e42247006431c88c61.js
-// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.768ea2cbd7da6fa06a54.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -4416,7 +4416,7 @@
 						}, O)
 					}, this.sendEvent = e => {
 						this.props.sendEvent(t => {
-							const s = b.o(t);
+							const s = b.n(t);
 							return {
 								source: "meta",
 								action: e,
@@ -4426,7 +4426,7 @@
 									...s.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: b.hb(t)
+								subreddit: b.gb(t)
 							}
 						})
 					}
@@ -5421,16 +5421,16 @@
 							},
 							subscribeEventFactory: e => {
 								return ((e, t, s) => n => {
-									const r = ne.G(n, void 0);
+									const r = ne.F(n, void 0);
 									return {
 										source: F.c.SEARCH,
 										action: ee.c.CLICK,
 										noun: `${s}_${F.d[e.type]}`,
 										actionInfo: Object(F.k)(n, void 0, r, void 0),
 										correlationId: Object(te.c)(te.a.SearchResults),
-										profile: "profile" === e.type ? ne.V(n, e.id) : void 0,
-										search: ne.ab(n, t, se.a.SERP),
-										subreddit: "subreddit" === e.type ? ne.lb(n, e.id) : void 0
+										profile: "profile" === e.type ? ne.U(n, e.id) : void 0,
+										search: ne.Z(n, t, se.a.SERP),
+										subreddit: "subreddit" === e.type ? ne.kb(n, e.id) : void 0
 									}
 								})(n, c, e ? "unsubscribe" : "subscribe")
 							},
@@ -6671,13 +6671,13 @@
 					onToggle: function() {
 						var e;
 						s(e => (function(e, s) {
-							const n = L.G(e, m);
+							const n = L.F(e, m);
 							return {
 								action: s ? T.c.DISABLE : T.c.ENABLE,
 								source: C.c.SEARCH,
 								noun: C.a.NSFW,
 								actionInfo: Object(C.k)(e, m, n, null),
-								search: L.ab(e, t, M.a.SERP)
+								search: L.Z(e, t, M.a.SERP)
 							}
 						})(e, !p));
 						const n = !d;
@@ -7129,7 +7129,7 @@
 					noun: t,
 					correlationId: Object(R.c)(R.a.SearchResults),
 					actionInfo: D.d(e),
-					search: D.ab(e, A(s, n), F.a.SERP)
+					search: D.Z(e, A(s, n), F.a.SERP)
 				})),
 				U = e => {
 					let {
@@ -9407,17 +9407,17 @@
 				},
 				u = (e, t) => {
 					const s = {
-						...c.o(e),
+						...c.n(e),
 						action: o.c.CLICK,
-						subreddit: c.hb(e)
+						subreddit: c.gb(e)
 					};
 					return void 0 === t ? s : {
 						...s,
-						post: c.I(e, t),
-						postCollection: c.K(e, {
+						post: c.H(e, t),
+						postCollection: c.J(e, {
 							postId: t
 						}),
-						postEvent: c.L(e, {
+						postEvent: c.K(e, {
 							postId: t
 						})
 					}
@@ -9443,8 +9443,8 @@
 					noun: r.eventEducationGotIt
 				}),
 				x = e => ({
-					...c.o(e),
-					subreddit: c.hb(e),
+					...c.n(e),
+					subreddit: c.gb(e),
 					source: n.postComposer
 				}),
 				f = (e, t) => s => ({
@@ -9476,12 +9476,12 @@
 					noun: r.collectionSelect
 				}),
 				y = e => t => ({
-					...c.o(t),
-					subreddit: c.hb(t),
+					...c.n(t),
+					subreddit: c.gb(t),
 					source: n.collectionComposer,
 					action: o.c.CLICK,
 					noun: r.collectionDelete,
-					postCollection: c.J(t, {
+					postCollection: c.I(t, {
 						collectionId: e
 					})
 				}),
@@ -9489,7 +9489,7 @@
 					...u(t),
 					source: n.collectionComposer,
 					noun: r.collectionEdit,
-					postCollection: c.J(t, {
+					postCollection: c.I(t, {
 						collectionId: e
 					})
 				}),
@@ -9542,20 +9542,20 @@
 				}),
 				b = e => {
 					Object(u.a)({
-						...m.o(e),
+						...m.n(e),
 						source: n.postComposer,
 						action: a.c.CLICK,
 						noun: "event_create",
-						subreddit: m.hb(e)
+						subreddit: m.gb(e)
 					})
 				},
 				C = e => {
 					Object(u.a)({
-						...m.o(e),
+						...m.n(e),
 						source: n.postComposer,
 						action: a.c.CLICK,
 						noun: "event_edit",
-						subreddit: m.hb(e),
+						subreddit: m.gb(e),
 						postEvent: O(e),
 						postComposer: v(e)
 					})
@@ -9609,15 +9609,15 @@
 					const s = {
 						source: n.eventComposer,
 						action: a.c.CLICK,
-						subreddit: m.hb(e)
+						subreddit: m.gb(e)
 					};
 					return t ? {
 						...s,
-						post: m.I(e, t),
-						postEvent: m.L(e, {
+						post: m.H(e, t),
+						postEvent: m.K(e, {
 							postId: t
 						}),
-						postCollection: m.K(e, {
+						postCollection: m.J(e, {
 							postId: t
 						})
 					} : s
@@ -9631,11 +9631,11 @@
 			var n = s("./src/reddit/constants/tracking.ts"),
 				r = s("./src/reddit/selectors/telemetry.ts");
 			const o = () => e => ({
-				...Object(r.o)(e),
+				...Object(r.n)(e),
 				source: "post",
 				action: n.c.CLICK,
 				noun: "share_chat",
-				subreddit: Object(r.hb)(e)
+				subreddit: Object(r.gb)(e)
 			})
 		},
 		"./src/reddit/helpers/trackers/subredditMentions.ts": function(e, t, s) {
@@ -9669,15 +9669,15 @@
 				e.LINK = "link", e.DISCOVERY_UNIT = "discovery_unit"
 			}(r || (r = {}));
 			const u = e => ({
-					...m.o(e),
+					...m.n(e),
 					source: r.LINK,
 					action: o.c.CLICK,
 					noun: n.INTERNAL_LINK
 				}),
 				p = e => ({
-					...m.o(e),
+					...m.n(e),
 					source: r,
-					screen: m.Z(e),
+					screen: m.Y(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: n.SUBREDDIT_HOVERCARD,
@@ -9722,8 +9722,8 @@
 					if (!s || !Object(a.b)(s) && !Object(i.b)(s)) return {};
 					const n = Object(a.b)(s) ? s.belongsTo.id : s.subredditId;
 					return {
-						post: m.I(e, s.id),
-						subreddit: m.ib(e, n),
+						post: m.H(e, s.id),
+						subreddit: m.hb(e, n),
 						...b(e, t)
 					}
 				},
@@ -9736,44 +9736,44 @@
 					source: "global",
 					action: o.c.VIEW,
 					noun: n.SUBREDDIT_HOVERCARD,
-					subreddit: m.jb(t, e),
-					screen: m.Z(t)
+					subreddit: m.ib(t, e),
+					screen: m.Y(t)
 				}),
 				f = (e, t) => s => ({
 					...p(s),
 					source: r.DISCOVERY_UNIT,
 					action: o.c.VIEW,
 					noun: n.ITEM_POST,
-					post: m.I(s, t),
-					subreddit: m.jb(s, e),
-					screen: m.Z(s)
+					post: m.H(s, t),
+					subreddit: m.ib(s, e),
+					screen: m.Y(s)
 				}),
 				g = (e, t) => s => ({
 					...p(s),
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: n.ITEM_POST,
-					post: m.I(s, t),
-					subreddit: m.jb(s, e),
-					screen: m.Z(s)
+					post: m.H(s, t),
+					subreddit: m.ib(s, e),
+					screen: m.Y(s)
 				}),
 				O = e => t => ({
 					...p(t),
-					subreddit: m.ib(t, e) || null,
+					subreddit: m.hb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: n.HEADER_SUBREDDIT
 				}),
 				v = e => t => ({
 					...p(t),
-					subreddit: m.ib(t, e) || null,
+					subreddit: m.hb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				E = e => t => ({
 					...p(t),
-					subreddit: m.ib(t, e) || null,
+					subreddit: m.hb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
 					action: o.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -9802,37 +9802,37 @@
 					source: r.COMMUNITY_WIDGETS,
 					action: o.c.CLICK,
 					noun: n.SEE_MORE,
-					widget: Object(i.vb)(s, {
+					widget: Object(i.ub)(s, {
 						subredditId: e,
 						widgetKind: t
 					}),
-					...i.o
+					...i.n
 				}),
 				c = (e, t) => s => ({
 					source: r.POST,
 					action: o.c.CLICK,
 					noun: n.REREDDIT_PROMO,
-					post: i.I(s, e),
-					subreddit: i.hb(s),
+					post: i.H(s, e),
+					subreddit: i.gb(s),
 					...t && {
 						banner: {
 							buttonText: t,
 							id: n.REREDDIT_PROMO
 						}
 					},
-					...i.o(s)
+					...i.n(s)
 				}),
 				d = () => e => ({
 					source: r.SIDEBAR,
 					action: o.c.VIEW,
 					noun: n.TOPICS_WIDGET,
-					...i.o(e)
+					...i.n(e)
 				}),
 				l = e => t => ({
 					source: r.TOPICS_WIDGET,
 					action: o.c.CLICK,
 					noun: n.TOPIC,
-					...i.o(t),
+					...i.n(t),
 					topicMetadata: {
 						displayName: e
 					}
@@ -10672,4 +10672,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.50e42247006431c88c61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.768ea2cbd7da6fa06a54.js.map

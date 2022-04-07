@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.05dc655325b0d0a0ff36.js
-// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.aee53a8f204890a07597.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -868,7 +868,7 @@
 			})), r.d(t, "gildGqlRequested", (function() {
 				return X
 			})), r.d(t, "triggerLoader", (function() {
-				return Z
+				return Q
 			})), r.d(t, "gildPending", (function() {
 				return $
 			})), r.d(t, "gildFailed", (function() {
@@ -1011,9 +1011,9 @@
 					} finally {
 						Object(F.b)(F.a.GildingFlow)
 					}
-				}, Z = Object(s.a)(z.u), Q = Object(s.a)(z.q), $ = () => async (e, t) => {
-					e(Q()), window.setTimeout(() => {
-						t().gild.api.pending && e(Z())
+				}, Q = Object(s.a)(z.u), Z = Object(s.a)(z.q), $ = () => async (e, t) => {
+					e(Z()), window.setTimeout(() => {
+						t().gild.api.pending && e(Q())
 					}, 2e3)
 				}, ee = Object(s.a)(z.p), te = e => async (t, r) => {
 					await t(ee(e)), t(Object(l.f)({
@@ -2132,8 +2132,8 @@
 				K = r("./src/reddit/components/GildModalContent/AwardDetailsPane/index.m.less"),
 				Y = r.n(K),
 				X = r("./src/reddit/helpers/awards/message.ts"),
-				Z = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				Q = r("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				Q = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				Z = r("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				$ = r("./src/reddit/icons/svgs/Eye/index.tsx"),
 				ee = r("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				te = r("./src/reddit/icons/svgs/CoinV2/index.tsx"),
@@ -2269,7 +2269,7 @@
 						forcePublic: e,
 						isAnonymous: t
 					} = this.props;
-					return e ? null : s.a.createElement(Q.a, {
+					return e ? null : s.a.createElement(Z.a, {
 						className: Y.a.giver,
 						isSelected: t,
 						text: i.fbt._("Make my gift anonymous", null, {
@@ -2301,7 +2301,7 @@
 						className: Object(c.a)(Y.a.textAreaWrapper, {
 							[Y.a.messageTooLong]: o
 						})
-					}, s.a.createElement(Z.t, pe({
+					}, s.a.createElement(Q.t, pe({
 						className: Y.a.textArea,
 						"data-redditstyle": !0,
 						name: "message",
@@ -2753,7 +2753,7 @@
 				}, s.a.createElement("button", {
 					className: Be.a.closeBtn,
 					onClick: r
-				}, s.a.createElement(Z.b, {
+				}, s.a.createElement(Q.b, {
 					className: Be.a.closeBtnIcon
 				})), s.a.createElement("div", {
 					className: Be.a.headerText
@@ -4478,7 +4478,7 @@
 						}, v)
 					}, this.sendEvent = e => {
 						this.props.sendEvent(t => {
-							const r = b.o(t);
+							const r = b.n(t);
 							return {
 								source: "meta",
 								action: e,
@@ -4488,7 +4488,7 @@
 									...r.actionInfo,
 									reason: this.props.node.id
 								},
-								subreddit: b.hb(t)
+								subreddit: b.gb(t)
 							}
 						})
 					}
@@ -5236,15 +5236,15 @@
 				e.LINK = "link", e.DISCOVERY_UNIT = "discovery_unit"
 			}(s || (s = {}));
 			const m = e => ({
-					...u.o(e),
+					...u.n(e),
 					source: s.LINK,
 					action: a.c.CLICK,
 					noun: n.INTERNAL_LINK
 				}),
 				p = e => ({
-					...u.o(e),
+					...u.n(e),
 					source: s,
-					screen: u.Z(e),
+					screen: u.Y(e),
 					discoveryUnit: {
 						id: "xd_100",
 						name: n.SUBREDDIT_HOVERCARD,
@@ -5289,8 +5289,8 @@
 					if (!r || !Object(i.b)(r) && !Object(o.b)(r)) return {};
 					const n = Object(i.b)(r) ? r.belongsTo.id : r.subredditId;
 					return {
-						post: u.I(e, r.id),
-						subreddit: u.ib(e, n),
+						post: u.H(e, r.id),
+						subreddit: u.hb(e, n),
 						...b(e, t)
 					}
 				},
@@ -5303,44 +5303,44 @@
 					source: "global",
 					action: a.c.VIEW,
 					noun: n.SUBREDDIT_HOVERCARD,
-					subreddit: u.jb(t, e),
-					screen: u.Z(t)
+					subreddit: u.ib(t, e),
+					screen: u.Y(t)
 				}),
 				O = (e, t) => r => ({
 					...p(r),
 					source: s.DISCOVERY_UNIT,
 					action: a.c.VIEW,
 					noun: n.ITEM_POST,
-					post: u.I(r, t),
-					subreddit: u.jb(r, e),
-					screen: u.Z(r)
+					post: u.H(r, t),
+					subreddit: u.ib(r, e),
+					screen: u.Y(r)
 				}),
 				x = (e, t) => r => ({
 					...p(r),
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.ITEM_POST,
-					post: u.I(r, t),
-					subreddit: u.jb(r, e),
-					screen: u.Z(r)
+					post: u.H(r, t),
+					subreddit: u.ib(r, e),
+					screen: u.Y(r)
 				}),
 				v = e => t => ({
 					...p(t),
-					subreddit: u.ib(t, e) || null,
+					subreddit: u.hb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.HEADER_SUBREDDIT
 				}),
 				j = e => t => ({
 					...p(t),
-					subreddit: u.ib(t, e) || null,
+					subreddit: u.hb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
 				w = e => t => ({
 					...p(t),
-					subreddit: u.ib(t, e) || null,
+					subreddit: u.hb(t, e) || null,
 					source: s.DISCOVERY_UNIT,
 					action: a.c.CLICK,
 					noun: n.HEADER_SUBREDDIT_UNSUBSCRIBE
@@ -6024,4 +6024,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.05dc655325b0d0a0ff36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.aee53a8f204890a07597.js.map

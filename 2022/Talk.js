@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.6c1705e17c40b7305454.js
-// Retrieved at 3/29/2022, 10:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.1d5967199dddce7c6ced.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -20,8 +20,8 @@
 				i = t("./src/reddit/components/CollapsibleFAQ/index.m.less"),
 				r = t.n(i),
 				s = t("./src/lib/classNames/index.ts"),
-				o = t("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				c = t("./src/reddit/icons/svgs/ChevronUp/index.tsx");
+				c = t("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				o = t("./src/reddit/icons/svgs/ChevronUp/index.tsx");
 			class m extends n.a.Component {
 				constructor(e) {
 					super(e), this.toggleOpen = () => {
@@ -49,9 +49,9 @@
 					}, n.a.createElement("span", {
 						className: r.a.buttonContent,
 						tabIndex: -1
-					}, a, l ? n.a.createElement(c.a, {
+					}, a, l ? n.a.createElement(o.a, {
 						className: r.a.collapseIcon
-					}) : n.a.createElement(o.a, {
+					}) : n.a.createElement(c.a, {
 						className: r.a.collapseIcon
 					}))), n.a.createElement("div", {
 						className: Object(s.a)(r.a.collapsibleAnswer, i)
@@ -83,7 +83,7 @@
 				r = t.n(i),
 				s = t("./src/lib/classNames/index.ts");
 			const {
-				fbt: o
+				fbt: c
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 			a.a = e => n.a.createElement("div", {
 				className: Object(s.a)(e.className, r.a.marketingPageFooter)
@@ -100,21 +100,21 @@
 			}, n.a.createElement("a", {
 				className: r.a.link,
 				href: "https://www.redditinc.com/"
-			}, o._("about", null, {
+			}, c._("about", null, {
 				hk: "3IO4c7"
 			}))), n.a.createElement("li", {
 				className: r.a.linkItem
 			}, n.a.createElement("a", {
 				className: r.a.link,
 				href: "https://www.redditinc.com/careers"
-			}, o._("careers", null, {
+			}, c._("careers", null, {
 				hk: "2GATRU"
 			}))), n.a.createElement("li", {
 				className: r.a.linkItem
 			}, n.a.createElement("a", {
 				className: r.a.link,
 				href: "https://www.redditinc.com/press"
-			}, o._("press", null, {
+			}, c._("press", null, {
 				hk: "iUiGg"
 			}))))), n.a.createElement("div", {
 				className: r.a.linkCol
@@ -125,21 +125,21 @@
 			}, n.a.createElement("a", {
 				className: r.a.link,
 				href: "https://www.redditinc.com/advertising"
-			}, o._("advertise", null, {
+			}, c._("advertise", null, {
 				hk: "RYuIn"
 			}))), n.a.createElement("li", {
 				className: r.a.linkItem
 			}, n.a.createElement("a", {
 				className: r.a.link,
 				href: "http://www.redditblog.com/"
-			}, o._("blog", null, {
+			}, c._("blog", null, {
 				hk: "4xzWuA"
 			}))), n.a.createElement("li", {
 				className: r.a.linkItem
 			}, n.a.createElement("a", {
 				className: r.a.link,
 				href: "https://www.reddithelp.com"
-			}, o._("help", null, {
+			}, c._("help", null, {
 				hk: "36XyzA"
 			}))))), n.a.createElement("div", {
 				className: Object(s.a)(r.a.linkCol, r.a.linkBoldCol)
@@ -150,14 +150,14 @@
 			}, n.a.createElement("a", {
 				className: r.a.link,
 				href: "https://www.reddit.com/coins"
-			}, o._("reddit coins", null, {
+			}, c._("reddit coins", null, {
 				hk: "3Ts6tu"
 			}))), n.a.createElement("li", {
 				className: r.a.linkItem
 			}, n.a.createElement("a", {
 				className: r.a.link,
 				href: "https://www.reddit.com/premium"
-			}, o._("reddit premium", null, {
+			}, c._("reddit premium", null, {
 				hk: "3vPbLO"
 			}))))), n.a.createElement("div", {
 				className: Object(s.a)(r.a.linkCol, r.a.linkBoldCol)
@@ -168,21 +168,21 @@
 			}, n.a.createElement("a", {
 				className: r.a.link,
 				href: "https://www.facebook.com/reddit/"
-			}, o._("Facebook", null, {
+			}, c._("Facebook", null, {
 				hk: "47DT2F"
 			}))), n.a.createElement("li", {
 				className: r.a.linkItem
 			}, n.a.createElement("a", {
 				className: r.a.link,
 				href: "https://twitter.com/reddit"
-			}, o._("Twitter", null, {
+			}, c._("Twitter", null, {
 				hk: "3aUv7u"
 			}))), n.a.createElement("li", {
 				className: r.a.linkItem
 			}, n.a.createElement("a", {
 				className: r.a.link,
 				href: "https://www.instagram.com/reddit/"
-			}, o._("Instagram", null, {
+			}, c._("Instagram", null, {
 				hk: "dVIRX"
 			})))))), n.a.createElement("ul", {
 				className: r.a.legal
@@ -191,32 +191,32 @@
 			}, n.a.createElement("a", {
 				className: r.a.legalLink,
 				href: "https://www.redditinc.com/policies/content-policy"
-			}, o._("content policy", null, {
+			}, c._("content policy", null, {
 				hk: "4ptiaZ"
 			}))), n.a.createElement("li", {
 				className: r.a.legalItem
 			}, n.a.createElement("a", {
 				className: r.a.legalLink,
 				href: "https://www.reddit.com/help/privacypolicy"
-			}, o._("privacy policy", null, {
+			}, c._("privacy policy", null, {
 				hk: "1ybjnz"
 			}))), n.a.createElement("li", {
 				className: r.a.legalItem
 			}, n.a.createElement("a", {
 				className: r.a.legalLink,
 				href: "https://www.redditinc.com/policies/user-agreement"
-			}, o._("user agreement", null, {
+			}, c._("user agreement", null, {
 				hk: "4puRxC"
 			}))), n.a.createElement("li", {
 				className: r.a.legalItem
 			}, n.a.createElement("a", {
 				className: r.a.legalLink,
 				href: "https://www.reddit.com/help/healthycommunities/"
-			}, o._("mod policy", null, {
+			}, c._("mod policy", null, {
 				hk: "1VvAdM"
 			}))), n.a.createElement("li", {
 				className: r.a.legalItem
-			}, o._("© {year} Reddit, Inc. All rights reserved", [o._param("year", (new Date).getFullYear().toString())], {
+			}, c._("© {year} Reddit, Inc. All rights reserved", [c._param("year", (new Date).getFullYear().toString())], {
 				hk: "23FUx6"
 			})))))
 		},
@@ -341,8 +341,8 @@
 				i = t.n(n),
 				r = t("./src/lib/classNames/index.ts"),
 				s = t("./src/lib/opener/index.ts"),
-				o = t("./src/reddit/components/MarketingPageFooter/index.tsx"),
-				c = t("./src/reddit/controls/Button/index.tsx"),
+				c = t("./src/reddit/components/MarketingPageFooter/index.tsx"),
+				o = t("./src/reddit/controls/Button/index.tsx"),
 				m = t("./src/reddit/controls/OutboundLink/index.tsx"),
 				d = t("./src/reddit/selectors/telemetry.ts");
 			var u = t("./src/reddit/hooks/useTracking.ts"),
@@ -575,11 +575,11 @@
 				className: F.a.faqMoreQuestionsHeading
 			}, x._("Have more questions? We've got answers.", null, {
 				hk: "3Entyj"
-			})), i.a.createElement(c.t, {
+			})), i.a.createElement(o.t, {
 				className: F.a.fullFaqsButton,
-				priority: c.c.Secondary,
+				priority: o.c.Secondary,
 				href: "https://reddithelp.com/hc/en-us/articles/4404349195284",
-				kind: c.b.ExternalLink,
+				kind: o.b.ExternalLink,
 				target: "_blank"
 			}, x._("View Full FAQs", null, {
 				hk: "4bgTro"
@@ -596,8 +596,8 @@
 				href: w,
 				rel: s.a,
 				target: "_blank"
-			}, i.a.createElement(c.k, {
-				priority: c.c.Primary,
+			}, i.a.createElement(o.k, {
+				priority: o.c.Primary,
 				className: F.a.ctaLetsDoThisButton
 			}, x._("Let's Do This!", null, {
 				hk: "39lVPQ"
@@ -647,7 +647,7 @@
 				const e = Object(u.a)();
 				Object(n.useEffect)(() => {
 					e((() => e => ({
-						...d.o(e),
+						...d.n(e),
 						source: "global",
 						action: "view",
 						noun: "screen",
@@ -717,11 +717,11 @@
 					href: w,
 					rel: s.a,
 					target: "_blank"
-				}, i.a.createElement(c.k, {
+				}, i.a.createElement(o.k, {
 					className: H.a.ctaButton,
-					priority: c.c.Primary,
+					priority: o.c.Primary,
 					onClick: () => e((() => e => ({
-						...d.o(e),
+						...d.n(e),
 						source: "talk_landing_page",
 						action: "click",
 						noun: "try_talk_cta"
@@ -741,11 +741,11 @@
 					style: {
 						backgroundImage: `url(${l.a.assetPath}/img/talk/grid-single-rectangle.svg)`
 					}
-				})), i.a.createElement(b, null), i.a.createElement(A, null), i.a.createElement(o.a, {
+				})), i.a.createElement(b, null), i.a.createElement(A, null), i.a.createElement(c.a, {
 					className: H.a.footer
 				}))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.6c1705e17c40b7305454.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.1d5967199dddce7c6ced.js.map

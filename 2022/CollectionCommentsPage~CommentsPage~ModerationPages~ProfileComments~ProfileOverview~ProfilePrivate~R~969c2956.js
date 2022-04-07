@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.9fab474020faca84438d.js
-// Retrieved at 4/6/2022, 6:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.e6edae29881418a4c251.js
+// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -4324,8 +4324,8 @@
 						offerContext: r.a.StorefrontFreeAward
 					}),
 					correlationId: Object(o.e)(o.a.GoldPayment, !1),
-					profile: i.R(e),
-					subreddit: i.hb(e)
+					profile: i.Q(e),
+					subreddit: i.gb(e)
 				}),
 				c = () => e => ({
 					source: "free_award_offer",
@@ -4422,17 +4422,17 @@
 				},
 				m = (e, t) => {
 					const s = {
-						...c.o(e),
+						...c.n(e),
 						action: r.c.CLICK,
-						subreddit: c.hb(e)
+						subreddit: c.gb(e)
 					};
 					return void 0 === t ? s : {
 						...s,
-						post: c.I(e, t),
-						postCollection: c.K(e, {
+						post: c.H(e, t),
+						postCollection: c.J(e, {
 							postId: t
 						}),
-						postEvent: c.L(e, {
+						postEvent: c.K(e, {
 							postId: t
 						})
 					}
@@ -4458,8 +4458,8 @@
 					noun: n.eventEducationGotIt
 				}),
 				f = e => ({
-					...c.o(e),
-					subreddit: c.hb(e),
+					...c.n(e),
+					subreddit: c.gb(e),
 					source: o.postComposer
 				}),
 				C = (e, t) => s => ({
@@ -4491,12 +4491,12 @@
 					noun: n.collectionSelect
 				}),
 				j = e => t => ({
-					...c.o(t),
-					subreddit: c.hb(t),
+					...c.n(t),
+					subreddit: c.gb(t),
 					source: o.collectionComposer,
 					action: r.c.CLICK,
 					noun: n.collectionDelete,
-					postCollection: c.J(t, {
+					postCollection: c.I(t, {
 						collectionId: e
 					})
 				}),
@@ -4504,7 +4504,7 @@
 					...m(t),
 					source: o.collectionComposer,
 					noun: n.collectionEdit,
-					postCollection: c.J(t, {
+					postCollection: c.I(t, {
 						collectionId: e
 					})
 				}),
@@ -4557,20 +4557,20 @@
 				}),
 				b = e => {
 					Object(m.a)({
-						...p.o(e),
+						...p.n(e),
 						source: o.postComposer,
 						action: a.c.CLICK,
 						noun: "event_create",
-						subreddit: p.hb(e)
+						subreddit: p.gb(e)
 					})
 				},
 				h = e => {
 					Object(m.a)({
-						...p.o(e),
+						...p.n(e),
 						source: o.postComposer,
 						action: a.c.CLICK,
 						noun: "event_edit",
-						subreddit: p.hb(e),
+						subreddit: p.gb(e),
 						postEvent: v(e),
 						postComposer: g(e)
 					})
@@ -4624,15 +4624,15 @@
 					const s = {
 						source: o.eventComposer,
 						action: a.c.CLICK,
-						subreddit: p.hb(e)
+						subreddit: p.gb(e)
 					};
 					return t ? {
 						...s,
-						post: p.I(e, t),
-						postEvent: p.L(e, {
+						post: p.H(e, t),
+						postEvent: p.K(e, {
 							postId: t
 						}),
-						postCollection: p.K(e, {
+						postCollection: p.J(e, {
 							postId: t
 						})
 					} : s
@@ -4646,11 +4646,11 @@
 			var o = s("./src/reddit/constants/tracking.ts"),
 				n = s("./src/reddit/selectors/telemetry.ts");
 			const r = () => e => ({
-				...Object(n.o)(e),
+				...Object(n.n)(e),
 				source: "post",
 				action: o.c.CLICK,
 				noun: "share_chat",
-				subreddit: Object(n.hb)(e)
+				subreddit: Object(n.gb)(e)
 			})
 		},
 		"./src/reddit/icons/fonts/Approve/index.tsx": function(e, t, s) {
@@ -4958,4 +4958,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.9fab474020faca84438d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.e6edae29881418a4c251.js.map
