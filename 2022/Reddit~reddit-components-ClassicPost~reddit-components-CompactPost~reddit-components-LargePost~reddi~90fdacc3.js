@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.16b75eb7b9b8c4719f31.js
-// Retrieved at 4/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.68964000b33bcbf10844.js
+// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -3247,7 +3247,7 @@
 				d = (e, t) => n => {
 					const {
 						id: r
-					} = Object(i.zb)(n, {
+					} = Object(i.Ab)(n, {
 						userName: t
 					});
 					return {
@@ -4276,7 +4276,7 @@
 						minSize: n,
 						userName: r
 					} = t;
-					const s = Object(c.zb)(e, {
+					const s = Object(c.Ab)(e, {
 						userName: r
 					});
 					if (s && s.awardedLastMonth && s.awardedLastMonth.topAward) return b(e, {
@@ -4366,4 +4366,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.16b75eb7b9b8c4719f31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.68964000b33bcbf10844.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ce49b255d5abc24451d6.js
-// Retrieved at 4/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.e06b8a5fedb3efcaca0c.js
+// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -823,7 +823,7 @@
 					let {
 						profileName: r
 					} = t;
-					return Object(h.Fb)(e, r)
+					return Object(h.Gb)(e, r)
 				}, (e, t) => ({
 					karma: {
 						...p.a,
@@ -2018,12 +2018,12 @@
 				W = r("./src/reddit/components/CrisisFlow/index.tsx"),
 				G = r("./src/higherOrderComponents/makeAsync.tsx"),
 				H = r("./src/lib/loadWithRetries/index.ts");
-			var z = Object(G.a)({
+			var K = Object(G.a)({
 					getComponent: () => Object(H.a)(() => r.e("GivePremiumModal").then(r.bind(null, "./src/reddit/components/GivePremiumModal/index.tsx"))).then(e => e.default),
 					ErrorComponent: () => null,
 					LoadingComponent: () => null
 				}),
-				K = r("./src/reddit/constants/modals.ts"),
+				z = r("./src/reddit/constants/modals.ts"),
 				Z = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				q = r("./src/reddit/helpers/styles/mixins/loading.ts"),
 				Q = r("./src/reddit/models/Gold/Premium/index.ts"),
@@ -2226,7 +2226,7 @@
 					}, a.a.createElement(b.r, {
 						className: $.a.expandButton,
 						onClick: this.moreOptionsToggled
-					}, s)), e && a.a.createElement(z, null), this.state.showCrisisModal && a.a.createElement(W.b, {
+					}, s)), e && a.a.createElement(K, null), this.state.showCrisisModal && a.a.createElement(W.b, {
 						withOverlay: !0,
 						overlayCustomStyles: W.a,
 						fromUserProfile: !0,
@@ -2242,7 +2242,7 @@
 					} = t;
 					return {
 						addToMultiClicked: () => {
-							e(Object(F.a)(() => Promise.all([r.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), r.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), r.e("CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"), r.e("CountryPage~Multireddit"), r.e("Multireddit")]).then(r.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(D.h)(K.a.MULTIREDDIT_ADD_SUBREDDIT))
+							e(Object(F.a)(() => Promise.all([r.e("CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"), r.e("CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"), r.e("CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"), r.e("CountryPage~Multireddit"), r.e("Multireddit")]).then(r.bind(null, "./src/reddit/actions/multireddit/index.ts")).then(e => e.myMultiredditsRequested))(!0, !0)), e(Object(D.h)(z.a.MULTIREDDIT_ADD_SUBREDDIT))
 						},
 						onClickGivePremium: t => e(Object(A.e)({
 							correlationId: t,
@@ -2331,7 +2331,7 @@
 					let {
 						profileName: r
 					} = t;
-					return Object(k.Ab)(e, {
+					return Object(k.Bb)(e, {
 						userName: r
 					})
 				},
@@ -2339,7 +2339,7 @@
 					let {
 						profileName: r
 					} = t;
-					return Object(k.zb)(e, {
+					return Object(k.Ab)(e, {
 						userName: r
 					})
 				},
@@ -2457,7 +2457,7 @@
 					prefShowSnoovatar: M,
 					snoovatarFullBodyAsset: A,
 					username: D
-				} = k, R = !!o && o.id === L, W = !(!o || !o.snoovatarFullBodyAsset), G = C && C.bannerBackgroundImage, H = !!b && b.isNSFW, z = H && c, K = !(!v || !v.userIsSubscriber), Z = `/user/${D}/`, q = E && E.url === Z, Q = !v || v.acceptChats, Y = !v || v.acceptPms, V = P && Object(le.b)(A), X = () => {
+				} = k, R = !!o && o.id === L, W = !(!o || !o.snoovatarFullBodyAsset), G = C && C.bannerBackgroundImage, H = !!b && b.isNSFW, K = H && c, z = !(!v || !v.userIsSubscriber), Z = `/user/${D}/`, q = E && E.url === Z, Q = !v || v.acceptChats, Y = !v || v.acceptPms, V = P && Object(le.b)(A), X = () => {
 					r(e => !e)
 				};
 				return a.a.createElement(a.a.Fragment, null, a.a.createElement(u.a, {
@@ -2496,7 +2496,7 @@
 								noun: n.FOLLOW
 							}))(L))
 						},
-						userIsSubscriber: K,
+						userIsSubscriber: z,
 						isUserBlocked: j,
 						onClickUnblockUser: X,
 						enableFollowers: F
@@ -2515,7 +2515,7 @@
 					}),
 					onClickSnoovatar: p,
 					profileIcon: y,
-					bannerBackgroundImage: z ? void 0 : G
+					bannerBackgroundImage: K ? void 0 : G
 				}), t && a.a.createElement(pe.a, {
 					onClose: X,
 					onConfirm: e => {
@@ -2905,7 +2905,7 @@
 					action: "click",
 					noun: "block_user",
 					targetUser: {
-						id: Object(a.zb)(t, {
+						id: Object(a.Ab)(t, {
 							userName: e
 						}).id
 					},
@@ -2916,7 +2916,7 @@
 					action: "click",
 					noun: "unblock_user",
 					targetUser: {
-						id: Object(a.zb)(t, {
+						id: Object(a.Ab)(t, {
 							userName: e
 						}).id
 					},
@@ -3181,4 +3181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ce49b255d5abc24451d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.e06b8a5fedb3efcaca0c.js.map

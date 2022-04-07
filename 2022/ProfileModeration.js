@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.3bbffab030dfc0addc50.js
-// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.3ea04bb1c02ee3ed8dbb.js
+// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1884,7 +1884,7 @@
 					isModerator: (e, t) => Object(u.f)(e, t.match.params),
 					isOwnProfile: (e, t) => Object(m.W)(e, t.match.params.profileName),
 					isPending: e => e.profileModSettingsPage.api.pending,
-					hasSubreddit: (e, t) => Object(m.Ab)(e, {
+					hasSubreddit: (e, t) => Object(m.Bb)(e, {
 						userName: t.match.params.profileName
 					})
 				}),
@@ -1919,4 +1919,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.3bbffab030dfc0addc50.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.3ea04bb1c02ee3ed8dbb.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.91a1afba0e1cb3a51636.js
-// Retrieved at 4/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.18abd9e96b841bbb4777.js
+// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, n) {
@@ -313,9 +313,9 @@
 					error: U,
 					pending: W
 				});
-			const z = {};
-			var V = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : z,
+			const V = {};
+			var z = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : V,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case M.b: {
@@ -391,7 +391,7 @@
 				},
 				Y = Object(A.c)({
 					api: D,
-					fetchedTokens: V,
+					fetchedTokens: z,
 					ids: G,
 					loadMore: Q
 				});
@@ -811,7 +811,7 @@
 					if (!P.platform.currentPage) return;
 					if (200 !== P.platform.currentPage.status) return;
 					const R = Object(C.m)(n(), x),
-						M = Object(y.zb)(P, {
+						M = Object(y.Ab)(P, {
 							userName: p
 						}).id;
 					t(j.m({
@@ -1002,7 +1002,7 @@
 						return e
 				}
 			};
-			var z = function() {
+			var V = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -1015,9 +1015,9 @@
 							return e
 					}
 				},
-				V = Object(j.c)({
+				z = Object(j.c)({
 					error: D,
-					pending: z
+					pending: V
 				});
 			var K = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -1035,7 +1035,7 @@
 					}
 				},
 				G = Object(j.c)({
-					api: V,
+					api: z,
 					result: K
 				});
 			const q = {};
@@ -1226,7 +1226,7 @@
 							await n(Object(l.o)(t.name))
 						}
 					})(), (async () => {
-						const r = Object(O.zb)(s, {
+						const r = Object(O.Ab)(s, {
 							userName: t
 						});
 						if (!r) return;
@@ -1457,8 +1457,8 @@
 				H = n("./src/reddit/models/User/index.ts"),
 				W = n("./src/reddit/components/HumanDate/index.tsx"),
 				D = n("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
-				z = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
-				V = n("./src/reddit/actions/inContextModeration.ts"),
+				V = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
+				z = n("./src/reddit/actions/inContextModeration.ts"),
 				K = n("./src/reddit/actions/modal.ts"),
 				G = n("./src/reddit/actions/subredditModeration/ban.ts"),
 				q = n("./src/reddit/constants/modals.ts"),
@@ -1476,7 +1476,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(x.zb)(e, {
+				user: (e, t) => Object(x.Ab)(e, {
 					userName: t.username
 				})
 			});
@@ -1543,14 +1543,14 @@
 							username: n
 						})),
 						toggleBanModal: () => {
-							e(Object(V.c)({
+							e(Object(z.c)({
 								username: n,
 								subredditId: r,
 								contextId: s
 							})), e(Object(G.a)(r, n))
 						},
 						toggleMuteModal: () => {
-							e(Object(V.d)({
+							e(Object(z.d)({
 								username: n,
 								subredditId: r,
 								contextId: s
@@ -1709,7 +1709,7 @@
 						style: {
 							backgroundImage: `url('${U}')`
 						}
-					}), s.a.createElement(Oe, null, L ? s.a.createElement(z.a, {
+					}), s.a.createElement(Oe, null, L ? s.a.createElement(V.a, {
 						isHovercard: !0,
 						bannerBackgroundImage: U,
 						compact: !0,
@@ -1810,7 +1810,7 @@
 							minSize: 32
 						})
 					},
-					user: x.zb,
+					user: x.Ab,
 					userFlair: (e, t) => {
 						let {
 							subredditId: n
@@ -3270,8 +3270,8 @@
 				H = n("./src/reddit/components/Scroller/Simple.m.less"),
 				W = n.n(H);
 			const D = M.g,
-				z = 5 * p.K,
-				V = 3,
+				V = 5 * p.K,
+				z = 3,
 				K = Object(m.c)({
 					isOverlayOpen: L.i
 				}),
@@ -3510,7 +3510,7 @@
 									cb: n,
 									args: [!1]
 								}))
-							}), this.itemsInViewport = s, this.canFocusItems = t, this.focusedChild = i, this.primaryChild = o, this.measurementsInvalid = !1, this.needsToPauseViewportItems = !1, t ? null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(u.requestIdleCallback)(this.unmountItemsWhileIdle)) : (this.resetCanFocusTimer = setTimeout(this.resetScrollFramerateAndFocus, z), null !== this.unmountItemsIdleId && (Object(u.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)), this.props.onScroll && this.props.onScroll({
+							}), this.itemsInViewport = s, this.canFocusItems = t, this.focusedChild = i, this.primaryChild = o, this.measurementsInvalid = !1, this.needsToPauseViewportItems = !1, t ? null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(u.requestIdleCallback)(this.unmountItemsWhileIdle)) : (this.resetCanFocusTimer = setTimeout(this.resetScrollFramerateAndFocus, V), null !== this.unmountItemsIdleId && (Object(u.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)), this.props.onScroll && this.props.onScroll({
 								getVisibleItemsInViewport: () => this.getItemsInViewportWithFilter(this.visibleChildRefFilter),
 								primaryChild: this.primaryChild ? this.childMap.get(this.primaryChild) : void 0
 							}), this.timeoutForUpdateIdleCallback = 4 * ie, this.schedulePopulateRenderableChildrenWhenIdle(), this.pendingScollHandlerRead = null
@@ -3524,7 +3524,7 @@
 								const r = this.getChildRectangle(n);
 								r && this.elementIsUnmountable(r) && n.loaded && t.push(n)
 							}), !t.length) return;
-						const n = Math.min(Math.ceil(e.timeRemaining() / V), t.length),
+						const n = Math.min(Math.ceil(e.timeRemaining() / z), t.length),
 							r = [];
 						for (let s = 0; s < n; s++) {
 							const e = t[s];
@@ -3601,7 +3601,7 @@
 					this.fpsMeter = this.props.trackingName ? w({
 						fn: this.handleScroll,
 						subscriber: this.sendFPSData,
-						timeout: z
+						timeout: V
 					}) : E(this.handleScroll), this.scrollContainer && this.scrollContainer.addEventListener("scroll", this.fpsMeter.eventHandler), window.addEventListener("resize", this.handleResize)
 				}
 				cleanupScrollHandler() {
@@ -4254,7 +4254,7 @@
 					let {
 						profileName: n
 					} = t;
-					const r = Object(m.zb)(e, {
+					const r = Object(m.Ab)(e, {
 							userName: n
 						}),
 						s = Object(u.f)(e);
@@ -5069,7 +5069,7 @@
 					let {
 						subredditOrProfile: n
 					} = t;
-					return n.type === c.a.PROFILE ? Object(h.zb)(e, {
+					return n.type === c.a.PROFILE ? Object(h.Ab)(e, {
 						userName: n.name
 					}) : null
 				}
@@ -6378,8 +6378,8 @@
 				}
 		},
 		"./src/redditGQL/operations/ProfileFollowers.json": function(e) {
-			e.exports = JSON.parse('{"id":"fe780a440dbd"}')
+			e.exports = JSON.parse('{"id":"a7a31038ca56"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.91a1afba0e1cb3a51636.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.18abd9e96b841bbb4777.js.map

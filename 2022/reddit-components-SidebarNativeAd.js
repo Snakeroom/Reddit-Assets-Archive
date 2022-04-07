@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.318e801abc0113413a5f.js
-// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.54844ca754af1aa7c873.js
+// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1400,7 +1400,7 @@
 			n.d(t, "b", (function() {
 				return A
 			})), n.d(t, "a", (function() {
-				return H
+				return z
 			}));
 			var r = n("./node_modules/polished/dist/polished.es.js"),
 				o = n("./node_modules/react/index.js"),
@@ -1463,8 +1463,8 @@
 				W = n("./src/reddit/hooks/useTheme.ts"),
 				q = n("./src/telemetry/models/Outbound.ts");
 
-			function z() {
-				return (z = Object.assign || function(e) {
+			function H() {
+				return (H = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1474,7 +1474,7 @@
 			}! function(e) {
 				e[e.ExtraLarge = 0] = "ExtraLarge", e[e.Large = 1] = "Large", e[e.Medium = 2] = "Medium", e[e.Small = 3] = "Small", e[e.ExtraSmall = 4] = "ExtraSmall", e[e.Metadata = 5] = "Metadata"
 			}(A || (A = {}));
-			const H = e => {
+			const z = e => {
 					let {
 						size: t,
 						titleColor: n,
@@ -1527,7 +1527,7 @@
 						children: o,
 						...i
 					} = e;
-					return s.a.createElement(a.a, z({}, i, {
+					return s.a.createElement(a.a, H({}, i, {
 						className: Object(l.a)(t, D.a.styledLink, {
 							[D.a.isVisitedEnabled]: !n
 						})
@@ -1613,7 +1613,7 @@
 						return e.length >= 250 ? e.slice(0, 250 - "...".length) + "..." : e
 					})(o));
 					const i = e.isCommentsPage ? R.a.PostComments : R.a.PostItem;
-					return s.a.createElement(H, {
+					return s.a.createElement(z, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
 						redditStyle: e.redditStyle || e.isCommentsPage,
@@ -1693,7 +1693,7 @@
 						nowrap: !0,
 						post: a,
 						sendEvent: this.props.sendEvent
-					}), !Object(O.b)(a) && s.a.createElement(X, z({}, this.props, {
+					}), !Object(O.b)(a) && s.a.createElement(X, H({}, this.props, {
 						leftFlair: c ? p : void 0
 					})), i && s.a.createElement(N, {
 						className: D.a.pollMeta,
@@ -1724,7 +1724,7 @@
 					})),
 					a = Object(W.a)(),
 					c = Object(u.b)();
-				return r ? s.a.createElement($, z({
+				return r ? s.a.createElement($, H({
 					pageLayer: t,
 					isCommentPermalink: n
 				}, r, o, e, {
@@ -1879,8 +1879,8 @@
 				V = m.a.div("SourceLinkWrapper", L.a),
 				W = m.a.div("TopLine", L.a),
 				q = m.a.wrapped(c.c, "PostTitle", L.a),
-				z = m.a.div("PostMediaWrapper", L.a),
-				H = m.a.div("BackgroundWrapper", L.a),
+				H = m.a.div("PostMediaWrapper", L.a),
+				z = m.a.div("BackgroundWrapper", L.a),
 				Y = m.a.wrapped(h.a, "PostContainer", L.a),
 				K = 640,
 				Q = e => Object(C.a)(e.title, 100),
@@ -1924,7 +1924,7 @@
 						})
 					}, l = s.a.createElement(N, {
 						post: e
-					})) : (i = U, l = s.a.createElement(H, {
+					})) : (i = U, l = s.a.createElement(z, {
 						style: J(this.props)
 					}, s.a.createElement(W, null, s.a.createElement(B, {
 						tooltipType: o ? d.c.Lightbox : void 0,
@@ -1939,7 +1939,7 @@
 						isSponsored: !0,
 						postId: e.id,
 						source: e.source
-					}, Object(u.a)(e), s.a.createElement(G, null))), s.a.createElement(z, null, e.media && s.a.createElement(a.a, {
+					}, Object(u.a)(e), s.a.createElement(G, null))), s.a.createElement(H, null, e.media && s.a.createElement(a.a, {
 						isListing: !0,
 						isNotCardView: !0,
 						showCentered: !0,
@@ -2727,7 +2727,7 @@
 				d = (e, t) => n => {
 					const {
 						id: r
-					} = Object(i.zb)(n, {
+					} = Object(i.Ab)(n, {
 						userName: t
 					});
 					return {
@@ -3611,7 +3611,7 @@
 						minSize: n,
 						userName: r
 					} = t;
-					const o = Object(c.zb)(e, {
+					const o = Object(c.Ab)(e, {
 						userName: r
 					});
 					if (o && o.awardedLastMonth && o.awardedLastMonth.topAward) return f(e, {
@@ -3732,4 +3732,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.318e801abc0113413a5f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.54844ca754af1aa7c873.js.map

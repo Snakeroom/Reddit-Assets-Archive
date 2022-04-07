@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.096ac82dc8cdd64b76c7.js
-// Retrieved at 4/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.1348d024f899c1fb04a7.js
+// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -7480,7 +7480,7 @@
 				showEditFlair: Me.a,
 				subredditOrProfile: H.U,
 				isEditing: W.M,
-				userIsOp: G.Cb,
+				userIsOp: G.Db,
 				isVoteCountAnimation: (e, t) => !!t.isActionBarAnimationEnabled && Object(Fe.f)(e, {
 					postId: t.postId
 				}),
@@ -8357,7 +8357,7 @@
 					Q = W && Object(y.h)(W),
 					Y = Object(i.e)(e => {
 						if (!Q) return !0;
-						const t = Object(E.Fb)(e, F.author || "");
+						const t = Object(E.Gb)(e, F.author || "");
 						return !t || t.enableFollowers
 					});
 				return r.a.createElement("div", {
@@ -10402,7 +10402,7 @@
 						tooltipIdPrefix: U.a,
 						tooltipType: Je.c.StickyPost
 					}))(e),
-					userPrefs: Ie.Gb,
+					userPrefs: Ie.Hb,
 					inResonatePilot: Oe.a,
 					isQualifiedForUpvotePrompt: se.c,
 					isEligibleForNsfwSignupUpsellTreatment: (e, t) => {
@@ -11629,4 +11629,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.096ac82dc8cdd64b76c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.1348d024f899c1fb04a7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.9bb537975dbb2420db9f.js
-// Retrieved at 4/7/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.5720b20dfdf955344acc.js
+// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -335,13 +335,13 @@
 							return e
 					}
 				},
-				z = Object(w.c)({
+				J = Object(w.c)({
 					api: G,
 					result: Z
 				});
-			const J = {};
-			var q = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : J,
+			const q = {};
+			var z = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : q,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case j.n: {
@@ -385,8 +385,8 @@
 					inContext: B,
 					loadMore: D,
 					models: H,
-					search: z,
-					userOrder: q
+					search: J,
+					userOrder: z
 				});
 			Object(E.a)({
 				features: {
@@ -527,7 +527,7 @@
 							await n(Object(c.o)(t.name))
 						}
 					})(), (async () => {
-						const a = Object(k.zb)(r, {
+						const a = Object(k.Ab)(r, {
 							userName: t
 						});
 						if (!a) return;
@@ -1251,9 +1251,9 @@
 				K = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
 				G = n("./src/reddit/actions/inContextModeration.ts"),
 				Z = n("./src/reddit/actions/modal.ts"),
-				z = n("./src/reddit/actions/subredditModeration/ban.ts"),
-				J = n("./src/reddit/constants/modals.ts"),
-				q = n("./src/reddit/components/Hovercards/helpers.ts"),
+				J = n("./src/reddit/actions/subredditModeration/ban.ts"),
+				q = n("./src/reddit/constants/modals.ts"),
+				z = n("./src/reddit/components/Hovercards/helpers.ts"),
 				Q = n("./src/reddit/icons/fonts/index.tsx"),
 				X = n("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				V = n("./src/reddit/selectors/bannedUser.ts"),
@@ -1267,7 +1267,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(I.zb)(e, {
+				user: (e, t) => Object(I.Ab)(e, {
 					userName: t.username
 				})
 			});
@@ -1288,7 +1288,7 @@
 					} = this.props;
 					return r.a.createElement("div", {
 						className: e
-					}, a ? r.a.createElement(q.a, {
+					}, a ? r.a.createElement(z.a, {
 						role: "button",
 						onClick: () => {
 							s(this.props.user.id), o(T.e(t))
@@ -1299,7 +1299,7 @@
 						className: $.a.icon
 					}), ee._("Unban User", null, {
 						hk: "1aASyW"
-					})) : r.a.createElement(q.a, {
+					})) : r.a.createElement(z.a, {
 						role: "button",
 						onClick: () => {
 							i(), o(T.a(t))
@@ -1309,7 +1309,7 @@
 						className: $.a.icon
 					}), ee._("Ban User", null, {
 						hk: "3OhuLx"
-					})), n && r.a.createElement(q.a, {
+					})), n && r.a.createElement(z.a, {
 						role: "button",
 						onClick: () => {
 							d(), o(T.d(t))
@@ -1329,8 +1329,8 @@
 						contextId: r
 					} = t;
 					return {
-						onUnbanUser: t => e(Object(z.e)(a, t)),
-						requestUserBanInfo: () => e(Object(z.c)(a, {
+						onUnbanUser: t => e(Object(J.e)(a, t)),
+						requestUserBanInfo: () => e(Object(J.c)(a, {
 							username: n
 						})),
 						toggleBanModal: () => {
@@ -1338,14 +1338,14 @@
 								username: n,
 								subredditId: a,
 								contextId: r
-							})), e(Object(z.a)(a, n))
+							})), e(Object(J.a)(a, n))
 						},
 						toggleMuteModal: () => {
 							e(Object(G.d)({
 								username: n,
 								subredditId: a,
 								contextId: r
-							})), e(Object(Z.i)(J.a.MUTE_USER))
+							})), e(Object(Z.i)(q.a.MUTE_USER))
 						}
 					}
 				})(ne),
@@ -1355,7 +1355,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var oe = Object(s.b)(null, (e, t) => ({
 					onToggleUserFlairModal: () => e(Object(re.g)(t.subredditId, t.username))
-				}))(e => r.a.createElement(q.a, {
+				}))(e => r.a.createElement(z.a, {
 					role: "button",
 					onClick: () => {
 						e.onToggleUserFlairModal(), e.sendEvent(T.c(e.contextId))
@@ -1601,7 +1601,7 @@
 							minSize: 32
 						})
 					},
-					user: I.zb,
+					user: I.Ab,
 					userFlair: (e, t) => {
 						let {
 							subredditId: n
@@ -2128,9 +2128,9 @@
 				K = n("./src/lib/constants/colors.ts"),
 				G = n("./src/reddit/components/CCM/ModUserNoteWithIcon/index.m.less"),
 				Z = n.n(G),
-				z = n("./src/reddit/components/CCM/ModUserNoteWithIcon/Icon/index.m.less"),
-				J = n.n(z);
-			const q = {
+				J = n("./src/reddit/components/CCM/ModUserNoteWithIcon/Icon/index.m.less"),
+				q = n.n(J);
+			const z = {
 					[y.j.AddRemovalReason]: "remove",
 					[y.j.AcceptModeratorInvite]: "mod",
 					[y.j.AddContributor]: "user",
@@ -2169,11 +2169,11 @@
 						className: t,
 						actionType: n,
 						label: a
-					} = e, s = n ? q[n] || "mod" : a && Q[a] || "user_note";
+					} = e, s = n ? z[n] || "mod" : a && Q[a] || "user_note";
 					if (!s) return null;
 					const o = Object(C.b)(s);
 					return r.a.createElement(o, {
-						className: Object(c.a)(t, J.a.icon)
+						className: Object(c.a)(t, q.a.icon)
 					})
 				},
 				V = n("./src/reddit/selectors/activeModalId.ts"),
@@ -2593,7 +2593,7 @@
 							userId: i,
 							filter: d
 						} = e,
-						l = Object(s.e)(e => Object(j.yb)(e, {
+						l = Object(s.e)(e => Object(j.zb)(e, {
 							userId: i
 						})),
 						m = Object(s.e)(e => Object(A.S)(e, {
@@ -2824,12 +2824,12 @@
 				Ke = n("./src/lib/opener/index.ts"),
 				Ge = n("./src/reddit/components/AnonymousSnoovatar/index.m.less"),
 				Ze = n.n(Ge);
-			var ze = e => r.a.createElement("img", {
+			var Je = e => r.a.createElement("img", {
 					className: Object(c.a)(e.className, Ze.a.anonymousSnoovatar),
 					src: `${He.a.assetPath}/img/anonymous_snoo.png`
 				}),
-				Je = n("./src/reddit/components/ChatButton/index.tsx"),
-				qe = n("./src/reddit/components/HumanDate/index.tsx"),
+				qe = n("./src/reddit/components/ChatButton/index.tsx"),
+				ze = n("./src/reddit/components/HumanDate/index.tsx"),
 				Qe = n("./src/reddit/components/JSAPIContainers/index.tsx"),
 				Xe = n("./src/reddit/components/ModNoteItem/index.tsx"),
 				Ve = n("./src/reddit/components/SubscribeButton/index.tsx"),
@@ -2881,7 +2881,7 @@
 						x = Object(s.e)(t => Object(bt.b)(mt.c.access)(t, e)),
 						I = Object(s.e)(t => Object(bt.b)(mt.c.mail)(t, e)),
 						g = Object(s.e)(t => Object(bt.b)(mt.c.flair)(t, e)),
-						O = Object(s.e)(e => Object(j.zb)(e, {
+						O = Object(s.e)(e => Object(j.Ab)(e, {
 							userName: m
 						})),
 						_ = Object(s.e)(e => !!Object(ut.b)(e, {
@@ -3071,7 +3071,7 @@
 						className: Ct.a.Bullet
 					}, "•")), r.a.createElement("div", {
 						className: Ct.a.MetaDataItem
-					}, (e.user.createdUtc || e.user.created) && r.a.createElement(r.a.Fragment, null, r.a.createElement(qe.d, {
+					}, (e.user.createdUtc || e.user.created) && r.a.createElement(r.a.Fragment, null, r.a.createElement(ze.d, {
 						seconds: e.user.createdUtc || e.user.created
 					}), r.a.createElement("div", {
 						className: Ct.a.Bullet
@@ -3230,7 +3230,7 @@
 					src: v.snoovatarFullBodyAsset
 				}) : (null === (t = v.accountIcon) || void 0 === t ? void 0 : t.includes("avatars/defaults/v2")) ? r.a.createElement("div", {
 					className: Ct.a.anonymousSnoovatar
-				}, r.a.createElement(ze, null)) : r.a.createElement(Ye.a, {
+				}, r.a.createElement(Je, null)) : r.a.createElement(Ye.a, {
 					className: Ct.a.UserIcon,
 					iconUrl: v.accountIcon,
 					isNSFW: v.isNSFW,
@@ -3245,7 +3245,7 @@
 					hk: "2s4Gmf"
 				})), r.a.createElement("div", {
 					className: Ct.a.profileButtonGroup
-				}, S && r.a.createElement(Je.b, {
+				}, S && r.a.createElement(qe.b, {
 					className: Object(c.a)(Ct.a.ChatButton, Ct.a.profileButtonLeft, {
 						[Ct.a.onlyButton]: !M
 					}),
@@ -5493,4 +5493,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.9bb537975dbb2420db9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.5720b20dfdf955344acc.js.map

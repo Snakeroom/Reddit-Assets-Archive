@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.8c2ac3f0d886f0d0f794.js
-// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.673f7dd9f18a09855567.js
+// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -1530,7 +1530,7 @@
 					userSelection: E,
 					predictionStatus: g,
 					voteUpdatesRemained: O
-				} = t, v = Boolean((null == t ? void 0 : t.userSelection) && !(null == t ? void 0 : t.resolvedOptionId) && t.predictionStatus === de.b.Open && t.endsAt > Date.now()), C = Object(s.e)(e => (null == t ? void 0 : t.tournamentId) ? Object(ie.a)(e, t.tournamentId) : null), x = Object(s.e)(f.db), N = Object(s.e)(f.Bb), I = Object(s.e)(f.Q), [A, y] = Object(a.useState)(!1), k = l === N, w = m < Date.now(), S = w && k && !_, P = g === de.b.Cancelled || g === de.b.CancelInProgress, T = w || !!E || !!_ || P;
+				} = t, v = Boolean((null == t ? void 0 : t.userSelection) && !(null == t ? void 0 : t.resolvedOptionId) && t.predictionStatus === de.b.Open && t.endsAt > Date.now()), C = Object(s.e)(e => (null == t ? void 0 : t.tournamentId) ? Object(ie.a)(e, t.tournamentId) : null), x = Object(s.e)(f.db), N = Object(s.e)(f.Cb), I = Object(s.e)(f.Q), [A, y] = Object(a.useState)(!1), k = l === N, w = m < Date.now(), S = w && k && !_, P = g === de.b.Cancelled || g === de.b.CancelInProgress, T = w || !!E || !!_ || P;
 				return Object(a.useEffect)(() => {
 					y(!1)
 				}, [E, t]), o.a.createElement("div", me({
@@ -3238,4 +3238,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.8c2ac3f0d886f0d0f794.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.673f7dd9f18a09855567.js.map

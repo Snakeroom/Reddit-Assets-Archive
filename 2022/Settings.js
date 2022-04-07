@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.2ed485e37b41c0c87dc4.js
-// Retrieved at 4/7/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.a079fb962141140f3709.js
+// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -2164,7 +2164,7 @@
 							await n(Object(l.o)(t.name))
 						}
 					})(), (async () => {
-						const s = Object(k.zb)(a, {
+						const s = Object(k.Ab)(a, {
 							userName: t
 						});
 						if (!s) return;
@@ -2980,7 +2980,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(_.zb)(e, {
+				user: (e, t) => Object(_.Ab)(e, {
 					userName: t.username
 				})
 			});
@@ -3314,7 +3314,7 @@
 							minSize: 32
 						})
 					},
-					user: _.zb,
+					user: _.Ab,
 					userFlair: (e, t) => {
 						let {
 							subredditId: n
@@ -4124,7 +4124,7 @@
 					let {
 						profileName: n
 					} = t;
-					return Object(_.Fb)(e, n)
+					return Object(_.Gb)(e, n)
 				}, (e, t) => ({
 					karma: {
 						...p.a,
@@ -13075,7 +13075,7 @@
 				Ma = n.n(Ia);
 			const {
 				fbt: Aa
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ta = 30, Ba = 200, La = Object(c.a)(I.k, Pa.a, I.Gb, Sa.n, xe.a, (e, t, n, s, a) => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ta = 30, Ba = 200, La = Object(c.a)(I.k, Pa.a, I.Hb, Sa.n, xe.a, (e, t, n, s, a) => {
 				const r = e && e.profileId,
 					o = r && s[r] ? s[r].bannerBackgroundImage : void 0;
 				return {
@@ -14688,4 +14688,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2ed485e37b41c0c87dc4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.a079fb962141140f3709.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.efd530bdd28801865bae.js
-// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.882e653a910154cc9dd3.js
+// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, n) {
@@ -90,8 +90,8 @@
 				E = n("./src/reddit/helpers/avatarRouting.ts"),
 				v = n("./src/reddit/selectors/activeModal.ts"),
 				_ = n("./src/reddit/selectors/user.ts"),
-				O = n("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
-				C = n.n(O);
+				C = n("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
+				O = n.n(C);
 
 			function f() {
 				return (f = Object.assign || function(e) {
@@ -106,7 +106,7 @@
 					let {
 						onClose: t
 					} = e;
-					const n = Object(c.e)(_.Bb),
+					const n = Object(c.e)(_.Cb),
 						r = Object(c.e)(e => {
 							var t;
 							return null === (t = Object(v.a)(e)) || void 0 === t ? void 0 : t.claimId
@@ -114,7 +114,7 @@
 						a = Object(c.d)();
 					if (!n || !r) return null;
 					return s.a.createElement("div", {
-						className: C.a.container
+						className: O.a.container
 					}, s.a.createElement(p.a, null, s.a.createElement(o.a, {
 						onClose: t,
 						userId: n,
@@ -150,7 +150,7 @@
 				M = Object(r.a)(b);
 			t.default = e => s.a.createElement(M, f({
 				withOverlay: !0,
-				className: C.a.modal
+				className: O.a.modal
 			}, e))
 		},
 		"./src/reddit/helpers/avatarRouting.ts": function(e, t, n) {
@@ -165,4 +165,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.efd530bdd28801865bae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.882e653a910154cc9dd3.js.map

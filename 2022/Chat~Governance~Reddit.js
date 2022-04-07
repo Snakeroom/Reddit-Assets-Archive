@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2c640df64138b002dd03.js
-// Retrieved at 4/7/2022, 5:50:20 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ef15220a5b0b3797e82a.js
+// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("162102"),
+				buildNumber: Object(r.c)("162106"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1649366373"),
+				buildTimestamp: Object(r.b)("1649368242"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6074,14 +6074,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c96ccc4825b279453f7abf858b7708f6d99b5eb52-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c99b952ba98bfb86381500d8b15b85d581e06fe03-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "96ccc4825b279453f7abf858b7708f6d99b5eb52-production",
+						release: "99b952ba98bfb86381500d8b15b85d581e06fe03-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6690,7 +6690,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "96ccc4825b279453f7abf858b7708f6d99b5eb52-production",
+							releaseClient: "99b952ba98bfb86381500d8b15b85d581e06fe03-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -12858,7 +12858,7 @@
 							profileName: e
 						}) && Object(R.h)(h, {
 							profileName: e
-						}) && Object(N.zb)(h, {
+						}) && Object(N.Ab)(h, {
 							userName: e
 						}) && (null === (_ = null === (u = h.user.account) || void 0 === u ? void 0 : u.karma) || void 0 === _ ? void 0 : _.total)) && !t) return;
 					const [f, b] = await Promise.all([Object(c.c)(d(), e), Object(c.d)(a(), e)]);
@@ -18555,7 +18555,7 @@
 					const n = X(i) ? le(e, {
 						pageLayer: i
 					}) : he(i);
-					return n ? Object(L.zb)(e, {
+					return n ? Object(L.Ab)(e, {
 						userName: n
 					}) : null
 				},
@@ -23587,27 +23587,28 @@
 		"./src/reddit/helpers/graphql/normalizeUserFromGql/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return u
+				return c
 			}));
 			var n = i("./src/reddit/endpoints/profile/info.ts"),
 				r = i("./src/reddit/models/User/index.ts"),
 				s = i("./src/reddit/helpers/graphql/helpers.ts");
 			const o = e => e && e.expiresAt && Object(s.e)(e.expiresAt, s.a.Seconds) / 1e3 || null,
-				d = e => e && e.unreadCount ? e.unreadCount : 0,
-				a = /^u\//,
-				l = e => e.replace(a, "/user/"),
-				u = e => e.__typename === r.c.DeletedRedditor ? null : "name" in e && e.name || null;
+				d = e => e && Object(s.e)(e, s.a.Seconds) / 1e3,
+				a = e => e && e.unreadCount ? e.unreadCount : 0,
+				l = /^u\//,
+				u = e => e.replace(l, "/user/"),
+				c = e => e.__typename === r.c.DeletedRedditor ? null : "name" in e && e.name || null;
 			t.a = e => {
 				let {
 					redditor: t,
 					inbox: i,
-					premium: a,
-					preferences: u,
-					coins: c,
-					..._
+					premium: l,
+					preferences: c,
+					coins: _,
+					...m
 				} = e;
-				var m, p;
-				let h = {
+				var p, h;
+				let f = {
 					karma: n.a,
 					hasUserProfile: !1,
 					id: t.id,
@@ -23619,9 +23620,9 @@
 						karma: e,
 						profile: i,
 						snoovatarIcon: r
-					} = t, s = null === (p = null === (m = null == i ? void 0 : i.styles) || void 0 === m ? void 0 : m.legacyIcon) || void 0 === p ? void 0 : p.url, o = r && r.url || null;
-					h = {
-						...h,
+					} = t, s = null === (h = null === (p = null == i ? void 0 : i.styles) || void 0 === p ? void 0 : p.legacyIcon) || void 0 === h ? void 0 : h.url, o = r && r.url || null;
+					f = {
+						...f,
 						...s && {
 							accountIcon: s
 						},
@@ -23635,43 +23636,44 @@
 						isGold: !!t.isGilded,
 						snoovatarFullBodyAsset: o,
 						profileId: i && i.id || void 0,
-						url: t.prefixedName && l(t.prefixedName) || void 0
+						url: t.prefixedName && u(t.prefixedName) || void 0
 					}
 				}
 				const {
-					interactions: f,
-					modMail: b
-				} = _;
+					interactions: b,
+					modMail: g
+				} = m;
 				return {
-					...h,
-					canCreateSubreddit: !!_.isSubredditCreationAllowed,
-					coins: c,
-					created: Object(s.e)(_.createdAt, s.a.Seconds) / 1e3,
-					goldExpiration: o(a),
-					hasUnreadMail: d(i) > 0,
-					hasUnreadModmail: !!b && b.isUnread,
-					hasUnreadOldModmail: !!b && b.isUnread,
-					hasVerifiedEmail: !!_.isEmailVerified,
-					inboxCount: d(i),
-					inRedesignBeta: u.isInRedesignBeta,
-					isEmployee: !!_.isEmployee,
-					isFPR: !!_.isForcePasswordReset,
-					isNameEditable: !!_.isNameEditable,
-					isMod: !!_.isModerator,
-					isPasswordSet: !!_.isPasswordSet,
-					isSuspended: _.isSuspended,
-					nightmode: u.isNightModeEnabled,
-					seenLayoutSwitch: !!f && f.isLayoutSwitchAware,
-					seenRedesignModal: !!f && f.isRedesignModalAware,
-					seenSubredditChatFtux: !!f && f.isSubredditChatAware,
-					showRecentPosts: u.isRecentPostsShown,
-					showTrending: u.isTrendingSubredditsShown,
-					...a && a.subscription && {
-						hasAndroidSubscription: a.subscription.isAndroidAvailable,
-						hasGoldSubscription: a.subscription.isGoldAvailable,
-						hasIosSubscription: a.subscription.isIosAvailable,
-						hasPaypalSubscription: a.subscription.isPaypalAvailable,
-						hasStripeSubscription: a.subscription.isStripeAvailable
+					...f,
+					canCreateSubreddit: !!m.isSubredditCreationAllowed,
+					coins: _,
+					created: Object(s.e)(m.createdAt, s.a.Seconds) / 1e3,
+					goldExpiration: o(l),
+					hasUnreadMail: a(i) > 0,
+					hasUnreadModmail: !!g && g.isUnread,
+					hasUnreadOldModmail: !!g && g.isUnread,
+					hasVerifiedEmail: !!m.isEmailVerified,
+					inboxCount: a(i),
+					inRedesignBeta: c.isInRedesignBeta,
+					isEmployee: !!m.isEmployee,
+					isFPR: !!m.isForcePasswordReset,
+					isNameEditable: !!m.isNameEditable,
+					isMod: !!m.isModerator,
+					isPasswordSet: !!m.isPasswordSet,
+					isSuspended: m.isSuspended,
+					suspensionExpirationUtc: d(m.suspensionExpiresAt),
+					nightmode: c.isNightModeEnabled,
+					seenLayoutSwitch: !!b && b.isLayoutSwitchAware,
+					seenRedesignModal: !!b && b.isRedesignModalAware,
+					seenSubredditChatFtux: !!b && b.isSubredditChatAware,
+					showRecentPosts: c.isRecentPostsShown,
+					showTrending: c.isTrendingSubredditsShown,
+					...l && l.subscription && {
+						hasAndroidSubscription: l.subscription.isAndroidAvailable,
+						hasGoldSubscription: l.subscription.isGoldAvailable,
+						hasIosSubscription: l.subscription.isIosAvailable,
+						hasPaypalSubscription: l.subscription.isPaypalAvailable,
+						hasStripeSubscription: l.subscription.isStripeAvailable
 					}
 				}
 			}
@@ -38639,7 +38641,7 @@
 					});
 					if (!n) return !1;
 					const r = n.flair.some(e => Object(s.q)(e.type)),
-						o = Object(l.Cb)(e, {
+						o = Object(l.Db)(e, {
 							post: n
 						});
 					return m(e, n.belongsTo, o, !r)
@@ -39357,7 +39359,7 @@
 					}), r
 				}),
 				R = Object(r.a)((e, t) => {
-					const i = Object(c.zb)(e, {
+					const i = Object(c.Ab)(e, {
 						userName: t.profileName
 					});
 					return i ? e.multireddits.byUserId[i.id] : null
@@ -40107,7 +40109,7 @@
 								subredditName: i.name,
 								action: t
 							})) return !1;
-						const n = Object(b.Gb)(e).subreddit[i.id];
+						const n = Object(b.Hb)(e).subreddit[i.id];
 						if ((n ? n.isContributorRequestTimestamp : 0) > o) return !0
 					}
 					return !1
@@ -41503,9 +41505,9 @@
 				mt = (e, t) => {
 					const i = e.posts.models[t],
 						n = e.features.comments.models[t];
-					return i ? Object(Ee.yb)(e, {
+					return i ? Object(Ee.zb)(e, {
 						userId: i.authorId
-					}) : n ? Object(Ee.yb)(e, {
+					}) : n ? Object(Ee.zb)(e, {
 						userId: n.authorId
 					}) : null
 				},
@@ -41611,7 +41613,7 @@
 						} = e.platform.currentPage.urlParams;
 						if (t) {
 							const n = t.toLowerCase(),
-								r = null === (i = Object(Ee.zb)(e, {
+								r = null === (i = Object(Ee.Ab)(e, {
 									userName: n
 								})) || void 0 === i ? void 0 : i.id;
 							return r ? {
@@ -41659,7 +41661,7 @@
 					if (t) s = null === (i = mt(e, t)) || void 0 === i ? void 0 : i.accountIcon;
 					else {
 						const t = null === (n = vt(e)) || void 0 === n ? void 0 : n.id;
-						s = t ? null === (r = Object(Ee.yb)(e, {
+						s = t ? null === (r = Object(Ee.zb)(e, {
 							userId: t
 						})) || void 0 === r ? void 0 : r.accountIcon : null
 					}
@@ -42009,7 +42011,7 @@
 						n = Object(oe.g)(t, e.profileId),
 						r = Object(ge.m)(t, e.profileId),
 						s = Object(ve.a)(t),
-						o = Object(Ee.Gb)(t),
+						o = Object(Ee.Hb)(t),
 						d = r && r.bannerBackgroundImage;
 					return {
 						id: e.id,
@@ -42350,7 +42352,7 @@
 				return B
 			})), i.d(t, "A", (function() {
 				return M
-			})), i.d(t, "Gb", (function() {
+			})), i.d(t, "Hb", (function() {
 				return U
 			})), i.d(t, "a", (function() {
 				return G
@@ -42402,9 +42404,9 @@
 				return ue
 			})), i.d(t, "H", (function() {
 				return ce
-			})), i.d(t, "zb", (function() {
+			})), i.d(t, "Ab", (function() {
 				return _e
-			})), i.d(t, "yb", (function() {
+			})), i.d(t, "zb", (function() {
 				return me
 			})), i.d(t, "lb", (function() {
 				return pe
@@ -42412,7 +42414,7 @@
 				return he
 			})), i.d(t, "f", (function() {
 				return fe
-			})), i.d(t, "Cb", (function() {
+			})), i.d(t, "Db", (function() {
 				return be
 			})), i.d(t, "pb", (function() {
 				return ge
@@ -42422,7 +42424,7 @@
 				return ve
 			})), i.d(t, "x", (function() {
 				return ye
-			})), i.d(t, "xb", (function() {
+			})), i.d(t, "yb", (function() {
 				return Ee
 			})), i.d(t, "W", (function() {
 				return Se
@@ -42430,11 +42432,11 @@
 				return Te
 			})), i.d(t, "cb", (function() {
 				return Oe
-			})), i.d(t, "Ab", (function() {
+			})), i.d(t, "Bb", (function() {
 				return Ie
 			})), i.d(t, "h", (function() {
 				return Re
-			})), i.d(t, "Fb", (function() {
+			})), i.d(t, "Gb", (function() {
 				return Fe
 			})), i.d(t, "U", (function() {
 				return Ne
@@ -42446,48 +42448,50 @@
 				return Ae
 			})), i.d(t, "j", (function() {
 				return xe
-			})), i.d(t, "Eb", (function() {
+			})), i.d(t, "Fb", (function() {
 				return De
 			})), i.d(t, "X", (function() {
 				return Pe
 			})), i.d(t, "O", (function() {
 				return Le
-			})), i.d(t, "I", (function() {
+			})), i.d(t, "xb", (function() {
 				return ke
-			})), i.d(t, "d", (function() {
+			})), i.d(t, "I", (function() {
 				return Be
-			})), i.d(t, "C", (function() {
+			})), i.d(t, "d", (function() {
 				return Me
-			})), i.d(t, "Db", (function() {
+			})), i.d(t, "C", (function() {
 				return Ue
-			})), i.d(t, "Bb", (function() {
+			})), i.d(t, "Eb", (function() {
 				return Ge
-			})), i.d(t, "S", (function() {
+			})), i.d(t, "Cb", (function() {
 				return qe
+			})), i.d(t, "S", (function() {
+				return Ve
 			})), i.d(t, "fb", (function() {
-				return He
-			})), i.d(t, "gb", (function() {
 				return We
+			})), i.d(t, "gb", (function() {
+				return ze
 			})), i.d(t, "hb", (function() {
-				return Ke
-			})), i.d(t, "ib", (function() {
 				return Ye
+			})), i.d(t, "ib", (function() {
+				return $e
 			})), i.d(t, "u", (function() {
-				return Qe
-			})), i.d(t, "t", (function() {
 				return Je
+			})), i.d(t, "t", (function() {
+				return Xe
 			})), i.d(t, "ub", (function() {
-				return Ze
-			})), i.d(t, "sb", (function() {
 				return et
-			})), i.d(t, "wb", (function() {
+			})), i.d(t, "sb", (function() {
 				return tt
-			})), i.d(t, "tb", (function() {
+			})), i.d(t, "wb", (function() {
 				return it
-			})), i.d(t, "vb", (function() {
+			})), i.d(t, "tb", (function() {
 				return nt
-			})), i.d(t, "L", (function() {
+			})), i.d(t, "vb", (function() {
 				return rt
+			})), i.d(t, "L", (function() {
+				return st
 			}));
 			var n = i("./node_modules/js-cookie/src/js.cookie.js"),
 				r = i.n(n),
@@ -42715,37 +42719,49 @@
 					const t = L(e);
 					return !!t && t.isFPR
 				},
-				ke = (e, t) => e.user.accountSettings[`${t}`].api.pending,
-				Be = e => e.user.accountSettings.changeEmail.api.error,
-				Me = e => e.user && e.user.account && e.user.account.isPasswordSet,
-				Ue = e => e.user && e.user.account && e.user.account.linkedIdentities,
-				Ge = e => e.user && e.user.account && e.user.account.id,
-				qe = e => !!e.user.account && e.user.account.isNameEditable,
-				Ve = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.emailSettingsLayout,
-				He = Object(c.a)(Ve, e => e.rows),
-				We = Object(c.a)(Ve, e => e.sections),
-				ze = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.pushSettingsLayout,
-				Ke = Object(c.a)(ze, e => e.rows),
-				Ye = Object(c.a)(ze, e => e.sections),
-				$e = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.api && e.user.notificationPrefs.api.getPreferences,
-				Qe = e => {
-					return !!$e(e).error
+				ke = e => {
+					const t = L(e),
+						i = Pe(e);
+					if (!t || !i) return null;
+					const {
+						suspensionExpirationUtc: n
+					} = t;
+					if (!n) return null;
+					const r = n * _.Sb,
+						s = Date.now();
+					return r < s ? null : Math.ceil((r - s) / _.B)
 				},
+				Be = (e, t) => e.user.accountSettings[`${t}`].api.pending,
+				Me = e => e.user.accountSettings.changeEmail.api.error,
+				Ue = e => e.user && e.user.account && e.user.account.isPasswordSet,
+				Ge = e => e.user && e.user.account && e.user.account.linkedIdentities,
+				qe = e => e.user && e.user.account && e.user.account.id,
+				Ve = e => !!e.user.account && e.user.account.isNameEditable,
+				He = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.emailSettingsLayout,
+				We = Object(c.a)(He, e => e.rows),
+				ze = Object(c.a)(He, e => e.sections),
+				Ke = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.pushSettingsLayout,
+				Ye = Object(c.a)(Ke, e => e.rows),
+				$e = Object(c.a)(Ke, e => e.sections),
+				Qe = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.api && e.user.notificationPrefs.api.getPreferences,
 				Je = e => {
-					return !!$e(e).error
+					return !!Qe(e).error
 				},
-				Xe = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.subscribedSubredditsSettings && e.user.notificationPrefs.subscribedSubredditsSettings.pageInfo,
-				Ze = Object(c.a)(Xe, e => !(!e || !e.hasNextPage)),
-				et = Object(c.a)(Xe, e => e && e.endCursor),
-				tt = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.subscribedSubredditsSettings && e.user.notificationPrefs.subscribedSubredditsSettings.subreddits,
-				it = e => {
-					return !!$e(e).error
+				Xe = e => {
+					return !!Qe(e).error
 				},
+				Ze = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.subscribedSubredditsSettings && e.user.notificationPrefs.subscribedSubredditsSettings.pageInfo,
+				et = Object(c.a)(Ze, e => !(!e || !e.hasNextPage)),
+				tt = Object(c.a)(Ze, e => e && e.endCursor),
+				it = e => e.user && e.user.notificationPrefs && e.user.notificationPrefs.subscribedSubredditsSettings && e.user.notificationPrefs.subscribedSubredditsSettings.subreddits,
 				nt = e => {
+					return !!Qe(e).error
+				},
+				rt = e => {
 					var t, i, n, r;
 					return null === (r = null === (n = null === (i = null === (t = e.user) || void 0 === t ? void 0 : t.notificationPrefs) || void 0 === i ? void 0 : i.api) || void 0 === n ? void 0 : n.getPreferences) || void 0 === r ? void 0 : r.pending
 				},
-				rt = (e, t) => {
+				st = (e, t) => {
 					let {
 						profileName: i
 					} = t;
@@ -43094,7 +43110,7 @@
 			e.exports = JSON.parse('{"id":"a362f62253e5"}')
 		},
 		"./src/redditGQL/operations/ProfileModHubPage.json": function(e) {
-			e.exports = JSON.parse('{"id":"0bb18a99115a"}')
+			e.exports = JSON.parse('{"id":"4ac8f710ddf6"}')
 		},
 		"./src/redditGQL/operations/ProfileTrophies.json": function(e) {
 			e.exports = JSON.parse('{"id":"3c59e5ed6f14"}')
@@ -43118,7 +43134,7 @@
 			e.exports = JSON.parse('{"id":"059a51904852"}')
 		},
 		"./src/redditGQL/operations/TopicBySlug.json": function(e) {
-			e.exports = JSON.parse('{"id":"53fde250b086"}')
+			e.exports = JSON.parse('{"id":"b9ab11fe8dcd"}')
 		},
 		"./src/redditGQL/operations/UpdatePostDistinguishState.json": function(e) {
 			e.exports = JSON.parse('{"id":"e869489c84a4"}')
@@ -48255,4 +48271,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.2c640df64138b002dd03.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.ef15220a5b0b3797e82a.js.map

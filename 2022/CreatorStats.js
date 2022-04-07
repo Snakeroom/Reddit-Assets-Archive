@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatorStats.f857c5a439bb7869a58d.js
-// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatorStats.69b055d27cdbee37c1cb.js
+// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatorStats"], {
 		"./src/reddit/components/CreatorStats/Stats.tsx": function(t, e, s) {
@@ -421,7 +421,7 @@
 						} = t;
 						return async (t, o) => {
 							const a = o();
-							Object(m.b)(a) && Object(v.Cb)(a, {
+							Object(m.b)(a) && Object(v.Db)(a, {
 								postId: e
 							}) && (Object(f.S)(a, {
 								subredditId: s
@@ -453,7 +453,7 @@
 				const b = Object(l.e)(e => Object(p.b)(e, t.post.id)),
 					h = Object(l.e)(e => Object(p.c)(e, t.post.id)),
 					C = Object(l.e)(e => Object(p.d)(e, t.subreddit.id)),
-					S = Object(l.e)(e => Object(v.Cb)(e, {
+					S = Object(l.e)(e => Object(v.Db)(e, {
 						postId: t.post.id
 					}));
 				Object(n.useEffect)(() => {
@@ -674,4 +674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.f857c5a439bb7869a58d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.69b055d27cdbee37c1cb.js.map

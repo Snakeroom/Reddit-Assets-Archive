@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/VideoShareModal.e35897911ca11fe61041.js
-// Retrieved at 4/7/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/VideoShareModal.bb9bdb92ddf747c3cb0a.js
+// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["VideoShareModal"], {
 		"./src/reddit/components/CommentsChat/Comment/ChatIcon/default.tsx": function(e, t, s) {
@@ -460,9 +460,9 @@
 		"./src/reddit/components/PublicAccessNetwork/Theater/Overlay/refresh.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "c", (function() {
-				return z
-			})), s.d(t, "h", (function() {
 				return Y
+			})), s.d(t, "h", (function() {
+				return z
 			})), s.d(t, "g", (function() {
 				return q
 			})), s.d(t, "p", (function() {
@@ -544,14 +544,14 @@
 				U = s.n(H);
 			const {
 				fbt: K
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Y = e => {
 				let {
 					children: t
 				} = e;
 				return n.a.createElement("div", {
 					className: U.a.broadcastStatus
 				}, t)
-			}, Y = e => {
+			}, z = e => {
 				let {
 					onClick: t
 				} = e;
@@ -1042,7 +1042,7 @@
 					isSubscribed: c
 				}));
 				return o && o.enableFollowers ? d : null
-			}, fe = e => Object(r.e)(t => Object(p.zb)(t, {
+			}, fe = e => Object(r.e)(t => Object(p.Ab)(t, {
 				userName: e
 			})), Ee = e => Object(r.e)(t => Object(Z.eb)(t, {
 				identifier: {
@@ -1424,4 +1424,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.e35897911ca11fe61041.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/VideoShareModal.bb9bdb92ddf747c3cb0a.js.map
