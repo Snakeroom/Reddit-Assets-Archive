@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c9170dfb5f1336a329d5.js
-// Retrieved at 4/7/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.b947b58bd31417cdaf30.js
+// Retrieved at 4/7/2022, 5:20:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1418,7 +1418,7 @@
 						MultiredditAddSubredditModal: "1fd5c717065582d32b8f",
 						MultiredditCreateModal: "faba47bea686724013cc",
 						MultiredditEditModal: "2ff9e96991196e39c3cd",
-						NotificationUnit: "78be667e08197bf007b7",
+						NotificationUnit: "d20cbefee171bba32eb6",
 						NotificationsInbox: "7afaacbd3107014fd32c",
 						NotificationsPrePromptLoader: "1249531ba54a8be8050d",
 						PostFlowUpsellModal: "03a3ce68e1614318c543",
@@ -1488,7 +1488,7 @@
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
 						ModListing: "e264519213ac22189ec2",
-						Subreddit: "7387b9e2aa1b0f33d4ec",
+						Subreddit: "4a9323da52e9bbd76189",
 						"vendors~LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "b1b748750a6395dcc18f",
 						"LiveVideoPlayer~PublicAccessNetwork~RpanListingUnit": "aca7b9db3d511da3e8aa",
 						PublicAccessNetwork: "3225bf1b663b84ee3280",
@@ -1715,4 +1715,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c9170dfb5f1336a329d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.b947b58bd31417cdaf30.js.map
