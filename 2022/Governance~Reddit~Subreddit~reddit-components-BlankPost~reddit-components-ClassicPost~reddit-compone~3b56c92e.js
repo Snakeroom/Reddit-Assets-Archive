@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.3d06e1f3488e37d4d4e4.js
-// Retrieved at 4/11/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.f963b67727d7319a65fe.js
+// Retrieved at 4/11/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -825,9 +825,9 @@
 			})), r.d(t, "s", (function() {
 				return X
 			})), r.d(t, "r", (function() {
-				return J
-			})), r.d(t, "g", (function() {
 				return Y
+			})), r.d(t, "g", (function() {
+				return J
 			})), r.d(t, "q", (function() {
 				return ee
 			})), r.d(t, "c", (function() {
@@ -931,7 +931,7 @@
 						method: s.jb.GET
 					}))(i());
 					o.ok ? e(R(y(o.body))) : e(N(o.error))
-				}, F = "POST_DRAFT__SAVE_DRAFT_PENDING", L = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", V = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(n.a)(F), W = Object(n.a)(L), $ = Object(n.a)(V), Q = Object(n.a)(U), z = Object(n.a)(G), K = Object(n.a)(B), X = Object(n.a)(q), J = e => async (t, r, n) => {
+				}, F = "POST_DRAFT__SAVE_DRAFT_PENDING", L = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", V = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(n.a)(F), W = Object(n.a)(L), $ = Object(n.a)(V), Q = Object(n.a)(U), z = Object(n.a)(G), K = Object(n.a)(B), X = Object(n.a)(q), Y = e => async (t, r, n) => {
 					let {
 						apiContext: o
 					} = n;
@@ -974,7 +974,7 @@
 							text: Object(i.a)(e)
 						}))
 					}
-				}, Y = "POST_DRAFT__LOAD_DRAFT", Z = Object(n.a)(Y), ee = e => async (t, r, s) => {
+				}, J = "POST_DRAFT__LOAD_DRAFT", Z = Object(n.a)(J), ee = e => async (t, r, s) => {
 					let {
 						apiContext: i
 					} = s;
@@ -2248,12 +2248,12 @@
 					experimentName: i.Db,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				c = Object(s.a)(d, e => e === i.Md.Enabled),
+				c = Object(s.a)(d, e => e === i.Nd.Enabled),
 				u = Object(s.a)(e => Object(n.c)(e, {
-					experimentName: i.Hd,
+					experimentName: i.Id,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				l = Object(s.a)(c, u, (e, t) => e && t === i.Ld.Enabled),
+				l = Object(s.a)(c, u, (e, t) => e && t === i.Md.Enabled),
 				b = Object(s.a)(e => Object(n.c)(e, {
 					experimentName: i.Tb,
 					experimentEligibilitySelector: o.e
@@ -2263,12 +2263,12 @@
 					experimentName: i.Bb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				h = Object(s.a)(p, e => e === i.Jd.ContinuousScroll),
+				h = Object(s.a)(p, e => e === i.Kd.ContinuousScroll),
 				f = Object(s.a)(e => Object(n.c)(e, {
 					experimentName: i.Cb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				g = Object(s.a)(f, e => e === i.Kd.Enabled),
+				g = Object(s.a)(f, e => e === i.Ld.Enabled),
 				O = Object(s.a)(e => Object(n.c)(e, {
 					experimentName: i.Mb,
 					experimentEligibilitySelector: () => !0
@@ -2280,4 +2280,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.3d06e1f3488e37d4d4e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.f963b67727d7319a65fe.js.map
