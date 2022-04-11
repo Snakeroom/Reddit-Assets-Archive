@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.78d034ddb052067dbdb8.js
-// Retrieved at 4/5/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.4f512d1e74ff3dc7eb3f.js
+// Retrieved at 4/11/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -401,7 +401,7 @@
 						isLoading: !0
 					}))
 				}, e));
-			var T = S(j(e => {
+			var L = S(j(e => {
 					let {
 						className: t,
 						dispatch: s,
@@ -443,10 +443,10 @@
 						className: Object(g.a)(R.a.flatListItemTwo, Object(P.b)(n))
 					}))))
 				})),
-				L = s("./src/reddit/components/SearchPost/placeholder.m.less"),
-				_ = s.n(L);
+				T = s("./src/reddit/components/SearchPost/placeholder.m.less"),
+				_ = s.n(T);
 			const V = {
-				[p.g.Large]: [T, 2],
+				[p.g.Large]: [L, 2],
 				[p.g.Classic]: [u.b, 10],
 				[p.g.Compact]: [b.a, 30],
 				[p.g.Search]: [e => l.a.createElement("div", {
@@ -629,8 +629,8 @@
 						}
 					}
 				});
-			var T = s("./src/reddit/helpers/trackers/post.ts"),
-				L = s("./src/reddit/hooks/useRecommendationPostContext.ts"),
+			var L = s("./src/reddit/helpers/trackers/post.ts"),
+				T = s("./src/reddit/hooks/useRecommendationPostContext.ts"),
 				_ = s("./src/reddit/hooks/useTracking.ts"),
 				V = s("./src/reddit/icons/fonts/index.tsx"),
 				F = s("./src/reddit/components/OneFeed/Footer.m.less"),
@@ -713,7 +713,7 @@
 							hideRecommendationFooter: l,
 							recommendationFooterView: d,
 							setRecommendationFooterView: c
-						} = Object(L.a)(),
+						} = Object(T.a)(),
 						p = i.belongsTo.id,
 						u = i.id,
 						{
@@ -728,7 +728,7 @@
 						}
 					}, [o, l, u, d]);
 					const C = Object(h.useCallback)(() => {
-							a.current = !0, c(x.a.ThankYouView), r(Object(T.j)(u))
+							a.current = !0, c(x.a.ThankYouView), r(Object(L.j)(u))
 						}, [u, r, c]),
 						v = Object(h.useCallback)(() => {
 							H({
@@ -737,7 +737,7 @@
 								setRecommendationFooterView: c,
 								similar: !1,
 								subredditId: p
-							}), a.current = !0, r(Object(T.a)(u))
+							}), a.current = !0, r(Object(L.a)(u))
 						}, [o, t, u, r, c, p]),
 						P = Object(h.useCallback)(() => {
 							b && (H({
@@ -746,7 +746,7 @@
 								setRecommendationFooterView: c,
 								similar: !0,
 								subredditId: b
-							}), a.current = !0, r(Object(T.m)(u)))
+							}), a.current = !0, r(Object(L.m)(u)))
 						}, [o, t, u, b, r, c]);
 					return d && d !== x.a.None ? m.a.createElement("div", {
 						className: Object(g.a)(N.a.Footer, {
@@ -769,15 +769,17 @@
 				G = s("./src/reddit/contexts/OneFeed/index.ts");
 			var X = function(e) {
 					let {
-						children: t
+						children: t,
+						hideRecommendationContext: s = !1
 					} = e;
-					const [s, i] = Object(h.useState)(x.a.None), n = Object(h.useCallback)(() => i(x.a.None), []), o = Object(h.useMemo)(() => ({
-						hideRecommendationFooter: n,
-						recommendationFooterView: s,
-						setRecommendationFooterView: i
-					}), [n, s, i]);
+					const [i, n] = Object(h.useState)(x.a.None), o = Object(h.useCallback)(() => n(x.a.None), []), r = Object(h.useMemo)(() => ({
+						hideRecommendationContext: s,
+						hideRecommendationFooter: o,
+						recommendationFooterView: i,
+						setRecommendationFooterView: n
+					}), [s, o, i, n]);
 					return m.a.createElement(G.a.Provider, {
-						value: o
+						value: r
 					}, t)
 				},
 				Y = s("./src/reddit/controls/OutboundLink/index.tsx"),
@@ -996,104 +998,106 @@
 						isCommentPermalink: r,
 						isCommentsPage: a,
 						isFrontpage: l,
-						isProfileCreatorStatsEnabled: d,
-						isProfilePostListing: c,
-						isTopicPage: h,
-						isCommentCountAnimationEnabled: p,
-						isVoteCountAnimationEnabled: u,
-						isCountAnimShadowTestEnabled: b,
-						listingBelowVariant: g,
-						listingKey: C,
-						listingName: v,
-						pageLayer: y,
-						pageReferrer: w,
-						redditStyle: I,
-						shouldHideFlair: x,
-						triggerNewPostPill: O,
-						postIds: S
-					} = this.props, E = 0 === t, j = `post-${i}-${e}-${t}-${s?"last-index":""}-${v}-${C}-${w}`;
-					let k;
-					if (void 0 === (k = this.scrollChildCache.get(j))) {
+						isLoggedOutOneFeed: d,
+						isProfileCreatorStatsEnabled: c,
+						isProfilePostListing: h,
+						isTopicPage: p,
+						isCommentCountAnimationEnabled: u,
+						isVoteCountAnimationEnabled: b,
+						isCountAnimShadowTestEnabled: g,
+						listingBelowVariant: C,
+						listingKey: v,
+						listingName: y,
+						pageLayer: w,
+						pageReferrer: I,
+						redditStyle: x,
+						shouldHideFlair: O,
+						triggerNewPostPill: S,
+						postIds: E
+					} = this.props, j = 0 === t, k = `post-${i}-${e}-${t}-${s?"last-index":""}-${y}-${v}-${I}`;
+					let M;
+					if (void 0 === (M = this.scrollChildCache.get(k))) {
 						const {
-							inSubredditOrProfile: M,
+							inSubredditOrProfile: L,
 							postsById: T
-						} = this.props, L = T[e], _ = L.crosspostRootId && T[L.crosspostRootId] ? T[L.crosspostRootId] : L;
-						L.crosspostRootId && !T[L.crosspostRootId] && P.c.withScope(e => {
-							e.setExtra("errorType", f.t.API), e.setExtra("description", `Post ${L.id} is crosspost of ${L.crosspostRootId}, but ` + `${L.crosspostRootId} details are missing in the state`), P.c.captureMessage("Crosspost parent details are missing")
+						} = this.props, _ = T[e], V = _.crosspostRootId && T[_.crosspostRootId] ? T[_.crosspostRootId] : _;
+						_.crosspostRootId && !T[_.crosspostRootId] && P.c.withScope(e => {
+							e.setExtra("errorType", f.t.API), e.setExtra("description", `Post ${_.id} is crosspost of ${_.crosspostRootId}, but ` + `${_.crosspostRootId} details are missing in the state`), P.c.captureMessage("Crosspost parent details are missing")
 						});
-						const V = this.props.postComponentForLayout({
-							isCrosspost: !!L.crosspostRootId,
+						const F = this.props.postComponentForLayout({
+							isCrosspost: !!_.crosspostRootId,
 							layout: i,
-							post: _
+							post: V
 						});
-						let F = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
-						this.props.listingBelowVariant && C && (F += `--${C}`);
-						const N = ue(e, i, s, C, v, w, this.props, t, this.props.hostPostData),
-							A = be(e, i, this.props, t, y),
-							H = ge(e, this.props, l),
-							W = _.media && _.media.type === $.o.EMBED ? _.media.provider : null,
-							B = p && !L.isSponsored,
-							K = u && !L.isSponsored && !L.isScoreHidden,
-							z = !!(null == L ? void 0 : L.recommendationContext);
-						k = {
-							estHeight: Object(J.c)(L, i),
+						let N = `post-list-item-[layout: ${i}]-[postId: ${e}]`;
+						this.props.listingBelowVariant && v && (N += `--${v}`);
+						const A = ue(e, i, s, v, y, I, this.props, t, this.props.hostPostData),
+							H = be(e, i, this.props, t, w),
+							W = ge(e, this.props, l),
+							B = V.media && V.media.type === $.o.EMBED ? V.media.provider : null,
+							K = u && !_.isSponsored,
+							z = b && !_.isSponsored && !_.isScoreHidden,
+							q = !!(null == _ ? void 0 : _.recommendationContext);
+						M = {
+							estHeight: Object(J.c)(_, i),
 							id: e,
-							isFocusable: !(!_.media || !(i === R.g.Large || i === R.g.Classic && Object($.H)(_.media))) && ($.d.has(_.media.type) && (!W || !$.s.has(W)) && !_.isSpoiler),
-							trackOnEnteredViewport: N,
-							trackOnExitedViewport: A,
-							render: p => {
+							isFocusable: !(!V.media || !(i === R.g.Large || i === R.g.Classic && Object($.H)(V.media))) && ($.d.has(V.media.type) && (!B || !$.s.has(B)) && !V.isSpoiler),
+							trackOnEnteredViewport: A,
+							trackOnExitedViewport: H,
+							render: u => {
 								let {
-									className: u,
+									className: b,
 									height: f,
 									width: P,
-									remeasure: w,
+									remeasure: I,
 									setScrollerChildRef: R,
-									shouldLoadInitially: j
-								} = p;
+									shouldLoadInitially: k
+								} = u;
 								return m.a.createElement(X, {
-									key: F
-								}, m.a.createElement(V, {
+									key: N,
+									hideRecommendationContext: !!d
+								}, m.a.createElement(F, {
 									availableWidth: P,
-									className: u,
+									className: b,
 									currentProfileName: n,
 									eventFactory: this.eventFactoryHandler,
-									first: E,
-									forceLoadMedia: j,
+									first: j,
+									forceLoadMedia: k,
 									hostPostData: o,
-									inSubredditOrProfile: M,
-									isCommentCountAnimationEnabled: B,
+									inSubredditOrProfile: L,
+									isCommentCountAnimationEnabled: K,
 									isCommentPermalink: r,
 									isCommentsPage: a,
-									isCountAnimShadowTestEnabled: b,
+									isCountAnimShadowTestEnabled: g,
 									isFrontpage: l,
-									isProfileCreatorStatsEnabled: d,
-									isProfilePostListing: c,
-									isTopicPage: h,
-									isVoteCountAnimationEnabled: K,
-									key: F,
+									isProfileCreatorStatsEnabled: c,
+									isProfilePostListing: h,
+									isTopicPage: p,
+									isVoteCountAnimationEnabled: z,
+									key: N,
 									last: s,
-									listingBelowVariant: g,
+									listingBelowVariant: C,
 									listingIndex: t,
-									listingKey: C,
-									listingName: v,
-									onceInViewport: O,
-									onClickPost: H,
-									onSizeChanged: w,
-									pageLayer: y,
+									listingKey: v,
+									listingName: y,
+									onceInViewport: S,
+									onClickPost: W,
+									onSizeChanged: I,
+									pageLayer: w,
 									postId: e,
-									postIds: S,
-									redditStyle: I,
+									postIds: E,
+									redditStyle: x,
 									scrollerItemRef: R,
 									sendEvent: this.props.sendEvent,
-									shouldHideFlair: x
-								}), z && m.a.createElement(U, {
-									post: _,
+									shouldHideFlair: O
+								}), q && m.a.createElement(U, {
+									post: V,
 									layout: i
 								}))
 							}
-						}, this.scrollChildCache.set(j, k)
+						}, this.scrollChildCache.set(k, M)
 					}
-					return k
+					return M
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -1352,7 +1356,7 @@
 					return e.bottom < this.top
 				}
 			}
-			const T = function() {
+			const L = function() {
 				let {
 					buffer: e,
 					container: t
@@ -1370,7 +1374,7 @@
 					height: s
 				})
 			};
-			var L = s("./src/reddit/components/ResizeSensor/index.tsx"),
+			var T = s("./src/reddit/components/ResizeSensor/index.tsx"),
 				_ = s("./src/reddit/constants/componentSizes.ts"),
 				V = s("./src/reddit/constants/elementClassNames.ts"),
 				F = s("./src/reddit/contexts/InsideOverlay.tsx"),
@@ -1797,7 +1801,7 @@
 				}
 				updateViewportInfo() {
 					if (this.scrollContainer) {
-						this.viewport = T({
+						this.viewport = L({
 							buffer: 0,
 							container: this.scrollContainer
 						});
@@ -1898,7 +1902,7 @@
 						setScrollerChildRef: this.getChildRefFn(e.id),
 						shouldLoadInitially: t < ee,
 						width: U
-					})))), !!e && l.a.createElement(L.a, {
+					})))), !!e && l.a.createElement(T.a, {
 						containerRef: e,
 						onResize: this.handleContentContainerResize
 					}))
@@ -1947,6 +1951,7 @@
 				n = s.n(i),
 				o = s("./node_modules/react/index.js");
 			const r = o.createContext({
+				hideRecommendationContext: !1,
 				hideRecommendationFooter: n.a,
 				recommendationFooterView: null,
 				setRecommendationFooterView: n.a
@@ -2186,4 +2191,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.78d034ddb052067dbdb8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.4f512d1e74ff3dc7eb3f.js.map

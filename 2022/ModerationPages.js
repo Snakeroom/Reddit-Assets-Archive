@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f0c85ce56987a6ceab68.js
-// Retrieved at 4/11/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.1cee63c601b2e200b843.js
+// Retrieved at 4/11/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -467,8 +467,8 @@
 						if (function(e) {
 								return Object(f.c)(e, {
 									experimentEligibilitySelector: f.a,
-									experimentName: g.wd
-								}) === g.jd
+									experimentName: g.yd
+								}) === g.ld
 							}(d())) {
 							const {
 								normalizeModQueueListingFromGql: e,
@@ -13514,9 +13514,10 @@
 				r = n("./src/lib/objectSelector/index.ts"),
 				i = n("./src/reddit/components/RichTextJson/index.tsx"),
 				d = n("./src/reddit/constants/postLayout.ts"),
-				l = n("./src/reddit/components/OneFeed/PostRecommendationContext.m.less"),
-				c = n.n(l);
-			const m = Object(r.b)(e => ({
+				l = n("./src/reddit/hooks/useRecommendationPostContext.ts"),
+				c = n("./src/reddit/components/OneFeed/PostRecommendationContext.m.less"),
+				m = n.n(c);
+			const u = Object(r.b)(e => ({
 				renderingObjectInfo: e
 			}));
 			t.a = e => {
@@ -13525,14 +13526,14 @@
 					layout: n,
 					post: s
 				} = e;
-				return a.a.createElement(i.a, {
-					className: Object(o.a)(c.a.RecommendationContextStyles, {
-						[c.a.classicLayout]: n === d.g.Classic,
-						[c.a.compactLayout]: n === d.g.Compact,
-						[c.a.largeLayout]: n === d.g.Large
+				return Object(l.a)().hideRecommendationContext ? null : a.a.createElement(i.a, {
+					className: Object(o.a)(m.a.RecommendationContextStyles, {
+						[m.a.classicLayout]: n === d.g.Classic,
+						[m.a.compactLayout]: n === d.g.Compact,
+						[m.a.largeLayout]: n === d.g.Large
 					}),
 					content: t,
-					rtJsonElementProps: m(s),
+					rtJsonElementProps: u(s),
 					useExplicitTextColor: !0
 				})
 			}
@@ -22554,9 +22555,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: s.id
+					experimentName: s.kd
 				});
-				return !(!t || Object(s.Cf)(t))
+				return !(!t || Object(s.Ef)(t))
 			}
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, n) {
@@ -22629,10 +22630,10 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.ye,
+					experimentName: a.Ae,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.Ge.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.Ie.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(s.a)(r.G, i, (e, t) => d(e, t));
 			Object(s.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -22878,4 +22879,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f0c85ce56987a6ceab68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.1cee63c601b2e200b843.js.map

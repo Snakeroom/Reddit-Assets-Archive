@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.1961cd09eae8e006e462.js
-// Retrieved at 4/11/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.e89e1598651f40edd507.js
+// Retrieved at 4/11/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -3395,13 +3395,23 @@
 				}
 				getOverflowMenuBreakpointClass() {
 					const {
-						props: e
-					} = this, t = e.layout === H.g.Classic;
-					if (!(e.ignoreBreakpoints || e.ignoreOverflowMenuBreakpoints || e.modModeWithPost || e.userIsOp || !e.isCommentsPage && !t || e.isRecommendationPost)) return Object(G.b)({
+						currentUser: e,
+						ignoreBreakpoints: t,
+						ignoreOverflowMenuBreakpoints: s,
+						isCommentsPage: o,
+						isRecommendationPost: n,
+						layout: r,
+						modModeWithPost: i,
+						recommendationPostContext: {
+							hideRecommendationContext: a
+						},
+						userIsOp: c
+					} = this.props, l = r === H.g.Classic;
+					if (!(t || s || i || c || !o && !l || n && !a)) return Object(G.b)({
 						breakpointType: G.a.HideIfVWLarger,
 						flatlistItem: V.a.PostOverflowMenu,
-						isLoggedIn: !!e.currentUser,
-						isUserOp: e.userIsOp
+						isLoggedIn: !!e,
+						isUserOp: c
 					})
 				}
 				renderDropdownIcons() {
@@ -3417,15 +3427,18 @@
 						onClickInsightsButton: d,
 						onStartEventNow: p,
 						post: u,
-						shouldRenderCollectionEditButtons: b,
-						shouldShowInsightsButton: h,
-						showEditFlair: x,
-						showPinAction: f,
-						toggleAddEventStartTimeModal: C,
-						toggleEditStartTimeModal: O,
-						userIsOp: v
-					} = e, g = e.currentUser && e.currentUser.isEmployee, _ = Object(q.a)(e.post), j = e.post.belongsTo.type === w.a.PROFILE || Object($.g)(e.subredditAboutInfo), k = e.post.belongsTo.type === w.a.PROFILE || Object($.i)(e.subredditAboutInfo), E = t && u.isGildable, I = Object(z.a)(e.post), y = r ? void 0 : l;
-					return i.a.createElement("div", null, h && i.a.createElement(ve, {
+						recommendationPostContext: {
+							hideRecommendationContext: b
+						},
+						shouldRenderCollectionEditButtons: h,
+						shouldShowInsightsButton: x,
+						showEditFlair: f,
+						showPinAction: C,
+						toggleAddEventStartTimeModal: O,
+						toggleEditStartTimeModal: v,
+						userIsOp: g
+					} = e, _ = e.currentUser && e.currentUser.isEmployee, j = Object(q.a)(e.post), k = e.post.belongsTo.type === w.a.PROFILE || Object($.g)(e.subredditAboutInfo), E = e.post.belongsTo.type === w.a.PROFILE || Object($.i)(e.subredditAboutInfo), I = t && u.isGildable, y = Object(z.a)(e.post), P = r ? void 0 : l;
+					return i.a.createElement("div", null, x && i.a.createElement(ve, {
 						className: this.getBreakpointClass(V.a.Insights),
 						displayText: o.fbt._("Insights", null, {
 							hk: "t7dpi"
@@ -3434,7 +3447,7 @@
 					}, i.a.createElement(M.a, {
 						postCreated: u.created,
 						subredditId: u.belongsTo.id
-					})), E && i.a.createElement(ve, {
+					})), I && i.a.createElement(ve, {
 						className: this.getBreakpointClass(V.a.Gild),
 						displayText: o.fbt._("Give Award", null, {
 							hk: "3mYeGJ"
@@ -3443,7 +3456,7 @@
 					}, i.a.createElement(N.a, {
 						name: "award",
 						className: Oe.a.Icon
-					})), c && i.a.createElement(i.a.Fragment, null, i.a.createElement(ve, {
+					})), c && !b && i.a.createElement(i.a.Fragment, null, i.a.createElement(ve, {
 						className: this.getBreakpointClass(V.a.ShowMoreLikeThis),
 						displayText: o.fbt._("Show more posts like this", null, {
 							hk: "2t0WMg"
@@ -3497,8 +3510,8 @@
 					}, i.a.createElement(N.a, {
 						name: "edit",
 						className: Oe.a.Icon
-					})), x && i.a.createElement(ve, {
-						className: this.getBreakpointCx(D.a.Flair, y),
+					})), f && i.a.createElement(ve, {
+						className: this.getBreakpointCx(D.a.Flair, P),
 						displayText: o.fbt._("Edit Post Flair", null, {
 							hk: "1pGISD"
 						}),
@@ -3519,7 +3532,7 @@
 					}, i.a.createElement(N.a, {
 						name: e.post.saved ? "saved" : "save",
 						className: Oe.a.Icon
-					})), f && i.a.createElement(ve, {
+					})), C && i.a.createElement(ve, {
 						displayText: a ? o.fbt._("Unpin Post from Profile", null, {
 							hk: "6DYfk"
 						}) : o.fbt._("Pin Post to Profile", null, {
@@ -3542,7 +3555,7 @@
 					}, i.a.createElement(N.a, {
 						name: "hide",
 						className: Oe.a.HideIcon
-					})), !e.post.isSponsored && !v && i.a.createElement(ve, {
+					})), !e.post.isSponsored && !g && i.a.createElement(ve, {
 						className: this.getBreakpointClass(V.a.Report),
 						displayText: o.fbt._("report", null, {
 							hk: "128RPn"
@@ -3551,7 +3564,7 @@
 					}, i.a.createElement(N.a, {
 						name: "report",
 						className: Oe.a.Icon
-					})), b && s && p && i.a.createElement(ve, {
+					})), h && s && p && i.a.createElement(ve, {
 						onClick: p,
 						displayText: o.fbt._("Start event now", null, {
 							hk: "3VomTN"
@@ -3559,23 +3572,23 @@
 					}, i.a.createElement(N.a, {
 						name: "live",
 						className: Oe.a.Icon
-					})), b && s && O && i.a.createElement(ve, {
-						onClick: O,
+					})), h && s && v && i.a.createElement(ve, {
+						onClick: v,
 						displayText: o.fbt._("Edit start time", null, {
 							hk: "2typ17"
 						})
 					}, i.a.createElement(N.a, {
 						name: "scheduled",
 						className: Oe.a.Icon
-					})), b && !I && C && i.a.createElement(ve, {
+					})), h && !y && O && i.a.createElement(ve, {
 						displayText: o.fbt._("Add event start time", null, {
 							hk: "1XXqzu"
 						}),
-						onClick: C
+						onClick: O
 					}, i.a.createElement(N.a, {
 						name: "scheduled",
 						className: Oe.a.Icon
-					})), b && i.a.createElement(ve, {
+					})), h && i.a.createElement(ve, {
 						className: this.props.isPostPartOfACollection ? Oe.a.disabledRow : void 0,
 						displayText: o.fbt._("Add to collection", null, {
 							hk: "3UNHgN"
@@ -3585,7 +3598,7 @@
 					}, i.a.createElement(N.a, {
 						name: "collection",
 						className: Oe.a.Icon
-					})), v && i.a.createElement(ve, {
+					})), g && i.a.createElement(ve, {
 						displayText: o.fbt._("delete", null, {
 							hk: "4kSfzC"
 						}),
@@ -3593,7 +3606,7 @@
 					}, i.a.createElement(N.a, {
 						name: "delete",
 						className: Oe.a.Icon
-					})), g && e.userIsOp && i.a.createElement(ve, {
+					})), _ && e.userIsOp && i.a.createElement(ve, {
 						displayText: e.post.distinguishType === n.G.ADMIN ? o.fbt._("undistinguish", null, {
 							hk: "2chGON"
 						}) : o.fbt._("Distinguish as admin", null, {
@@ -3603,25 +3616,25 @@
 					}, i.a.createElement(N.a, {
 						name: "admin",
 						className: Oe.a.Icon
-					})), v && j && !_ && i.a.createElement(L.a, {
+					})), g && k && !j && i.a.createElement(L.a, {
 						text: o.fbt._("Mark as OC", null, {
 							hk: "2vGyoC"
 						}),
 						onClick: this.toggleOC,
 						isSelected: this.props.post.isOriginalContent
-					}), v && k && i.a.createElement(L.a, {
+					}), g && E && i.a.createElement(L.a, {
 						text: o.fbt._("Mark as Spoiler", null, {
 							hk: "3PJk7A"
 						}),
 						onClick: this.toggleSpoiler,
 						isSelected: this.props.post.isSpoiler
-					}), v && i.a.createElement(L.a, {
+					}), g && i.a.createElement(L.a, {
 						text: o.fbt._("Mark as NSFW", null, {
 							hk: "4qK6JN"
 						}),
 						onClick: this.toggleNSFW,
 						isSelected: this.props.post.isNSFW
-					}), v && u.domain === J.a && !this.props.isAllowReactionsKillswitchEnabled && i.a.createElement(L.a, {
+					}), g && u.domain === J.a && !this.props.isAllowReactionsKillswitchEnabled && i.a.createElement(L.a, {
 						text: o.fbt._("Allow video threads", null, {
 							hk: "DJXlU"
 						}),
@@ -4965,12 +4978,12 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: i.Q,
-				experimentName: n.bc
-			}), e => e === n.jd)
+				experimentName: n.dc
+			}), e => e === n.ld)
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
 			e.exports = JSON.parse('{"id":"5ee520f9aa60"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.1961cd09eae8e006e462.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.e89e1598651f40edd507.js.map

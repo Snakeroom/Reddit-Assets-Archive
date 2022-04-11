@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.df3a3c1b08f23f0af726.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.de7f604a9429b5fe8af1.js
+// Retrieved at 4/11/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -34,9 +34,9 @@
 			})), a.d(t, "d", (function() {
 				return s
 			})), a.d(t, "a", (function() {
-				return o
-			})), a.d(t, "f", (function() {
 				return i
+			})), a.d(t, "f", (function() {
+				return o
 			})), a.d(t, "g", (function() {
 				return c
 			})), a.d(t, "e", (function() {
@@ -48,9 +48,9 @@
 			}(n || (n = {}));
 			const l = "USD",
 				s = "ETH",
-				o = "COINS",
-				i = [s, "BTC"],
-				c = [o, "SUBREDDIT_POINTS", "GAME_TOKENS"],
+				i = "COINS",
+				o = [s, "BTC"],
+				c = [i, "SUBREDDIT_POINTS", "GAME_TOKENS"],
 				m = {
 					COINS: () => r.fbt._("Coins", null, {
 						hk: "1T2Y4p"
@@ -90,8 +90,8 @@
 				r = a("./src/lib/currency/centsToDollars/index.ts"),
 				l = a("./src/lib/currency/currencies.ts"),
 				s = a("./src/lib/prettyPrintNumber/index.ts"),
-				o = a("./src/reddit/helpers/governance/tokens.ts"),
-				i = a("./src/reddit/constants/intlSupport.ts");
+				i = a("./src/reddit/helpers/governance/tokens.ts"),
+				o = a("./src/reddit/constants/intlSupport.ts");
 			const c = function(e) {
 					let {
 						locale: t = n.DEFAULT_LOCALE,
@@ -99,7 +99,7 @@
 						formatOptions: r
 					} = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 					const l = Number(e);
-					return Object(i.c)() ? a ? Object(s.b)(l) : new Intl.NumberFormat(t, r).format(l) : d(l, a, t)
+					return Object(o.c)() ? a ? Object(s.b)(l) : new Intl.NumberFormat(t, r).format(l) : d(l, a, t)
 				},
 				m = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
@@ -116,17 +116,17 @@
 						case l.b.Reddit: {
 							const e = l.e[g],
 								t = e ? e() : g;
-							return Object(i.c)() ? new Intl.NumberFormat(a, {
+							return Object(o.c)() ? new Intl.NumberFormat(a, {
 								currencyDisplay: "symbol",
 								...c
 							}).format(k) + " " + t : d(k, s, a, t)
 						}
 						case l.b.Crypto: {
 							if (s) {
-								return Object(o.c)(f, m) + " " + g
+								return Object(i.c)(f, m) + " " + g
 							}
-							const e = Number(Object(o.b)(f, m));
-							return Object(i.c)() ? new Intl.NumberFormat(a, {
+							const e = Number(Object(i.b)(f, m));
+							return Object(o.c)() ? new Intl.NumberFormat(a, {
 								style: "currency",
 								currency: g,
 								currencyDisplay: "symbol",
@@ -138,7 +138,7 @@
 						case l.b.Real:
 						default: {
 							const e = Number(Object(r.a)(f, h));
-							return Object(i.c)() ? new Intl.NumberFormat(a, {
+							return Object(o.c)() ? new Intl.NumberFormat(a, {
 								style: "currency",
 								currency: g,
 								currencyDisplay: "symbol",
@@ -181,8 +181,8 @@
 				r = a.n(n),
 				l = a("./src/reddit/components/CollapsibleFAQ/index.m.less"),
 				s = a.n(l),
-				o = a("./src/lib/classNames/index.ts"),
-				i = a("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				i = a("./src/lib/classNames/index.ts"),
+				o = a("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				c = a("./src/reddit/icons/svgs/ChevronUp/index.tsx");
 			class m extends r.a.Component {
 				constructor(e) {
@@ -203,7 +203,7 @@
 						isOpen: n
 					} = this.state, l = n ? s.a.isOpen : "";
 					return r.a.createElement("div", {
-						className: Object(o.a)(e, s.a.collapsibleFAQ)
+						className: Object(i.a)(e, s.a.collapsibleFAQ)
 					}, r.a.createElement("button", {
 						className: s.a.questionButton,
 						type: "button",
@@ -213,10 +213,10 @@
 						tabIndex: -1
 					}, t, n ? r.a.createElement(c.a, {
 						className: s.a.collapseIcon
-					}) : r.a.createElement(i.a, {
+					}) : r.a.createElement(o.a, {
 						className: s.a.collapseIcon
 					}))), r.a.createElement("div", {
-						className: Object(o.a)(s.a.collapsibleAnswer, l)
+						className: Object(i.a)(s.a.collapsibleAnswer, l)
 					}, a))
 				}
 			}
@@ -243,14 +243,14 @@
 				r = a.n(n),
 				l = a("./src/reddit/components/MarketingPageFooter/index.m.less"),
 				s = a.n(l),
-				o = a("./src/lib/classNames/index.ts");
+				i = a("./src/lib/classNames/index.ts");
 			const {
-				fbt: i
+				fbt: o
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			t.a = e => r.a.createElement("div", {
-				className: Object(o.a)(e.className, s.a.marketingPageFooter)
+				className: Object(i.a)(e.className, s.a.marketingPageFooter)
 			}, r.a.createElement("div", {
-				className: Object(o.a)(e.className, s.a.marketingPageFooterInner)
+				className: Object(i.a)(e.className, s.a.marketingPageFooterInner)
 			}, r.a.createElement("div", {
 				className: s.a.linkContainer
 			}, r.a.createElement("div", {
@@ -262,21 +262,21 @@
 			}, r.a.createElement("a", {
 				className: s.a.link,
 				href: "https://www.redditinc.com/"
-			}, i._("about", null, {
+			}, o._("about", null, {
 				hk: "3IO4c7"
 			}))), r.a.createElement("li", {
 				className: s.a.linkItem
 			}, r.a.createElement("a", {
 				className: s.a.link,
 				href: "https://www.redditinc.com/careers"
-			}, i._("careers", null, {
+			}, o._("careers", null, {
 				hk: "2GATRU"
 			}))), r.a.createElement("li", {
 				className: s.a.linkItem
 			}, r.a.createElement("a", {
 				className: s.a.link,
 				href: "https://www.redditinc.com/press"
-			}, i._("press", null, {
+			}, o._("press", null, {
 				hk: "iUiGg"
 			}))))), r.a.createElement("div", {
 				className: s.a.linkCol
@@ -287,24 +287,24 @@
 			}, r.a.createElement("a", {
 				className: s.a.link,
 				href: "https://www.redditinc.com/advertising"
-			}, i._("advertise", null, {
+			}, o._("advertise", null, {
 				hk: "RYuIn"
 			}))), r.a.createElement("li", {
 				className: s.a.linkItem
 			}, r.a.createElement("a", {
 				className: s.a.link,
 				href: "http://www.redditblog.com/"
-			}, i._("blog", null, {
+			}, o._("blog", null, {
 				hk: "4xzWuA"
 			}))), r.a.createElement("li", {
 				className: s.a.linkItem
 			}, r.a.createElement("a", {
 				className: s.a.link,
 				href: "https://www.reddithelp.com"
-			}, i._("help", null, {
+			}, o._("help", null, {
 				hk: "36XyzA"
 			}))))), r.a.createElement("div", {
-				className: Object(o.a)(s.a.linkCol, s.a.linkBoldCol)
+				className: Object(i.a)(s.a.linkCol, s.a.linkBoldCol)
 			}, r.a.createElement("ul", {
 				className: s.a.linkColInner
 			}, r.a.createElement("li", {
@@ -312,17 +312,17 @@
 			}, r.a.createElement("a", {
 				className: s.a.link,
 				href: "https://www.reddit.com/coins"
-			}, i._("reddit coins", null, {
+			}, o._("reddit coins", null, {
 				hk: "3Ts6tu"
 			}))), r.a.createElement("li", {
 				className: s.a.linkItem
 			}, r.a.createElement("a", {
 				className: s.a.link,
 				href: "https://www.reddit.com/premium"
-			}, i._("reddit premium", null, {
+			}, o._("reddit premium", null, {
 				hk: "3vPbLO"
 			}))))), r.a.createElement("div", {
-				className: Object(o.a)(s.a.linkCol, s.a.linkBoldCol)
+				className: Object(i.a)(s.a.linkCol, s.a.linkBoldCol)
 			}, r.a.createElement("ul", {
 				className: s.a.linkColInner
 			}, r.a.createElement("li", {
@@ -330,21 +330,21 @@
 			}, r.a.createElement("a", {
 				className: s.a.link,
 				href: "https://www.facebook.com/reddit/"
-			}, i._("Facebook", null, {
+			}, o._("Facebook", null, {
 				hk: "47DT2F"
 			}))), r.a.createElement("li", {
 				className: s.a.linkItem
 			}, r.a.createElement("a", {
 				className: s.a.link,
 				href: "https://twitter.com/reddit"
-			}, i._("Twitter", null, {
+			}, o._("Twitter", null, {
 				hk: "3aUv7u"
 			}))), r.a.createElement("li", {
 				className: s.a.linkItem
 			}, r.a.createElement("a", {
 				className: s.a.link,
 				href: "https://www.instagram.com/reddit/"
-			}, i._("Instagram", null, {
+			}, o._("Instagram", null, {
 				hk: "dVIRX"
 			})))))), r.a.createElement("ul", {
 				className: s.a.legal
@@ -353,32 +353,32 @@
 			}, r.a.createElement("a", {
 				className: s.a.legalLink,
 				href: "https://www.redditinc.com/policies/content-policy"
-			}, i._("content policy", null, {
+			}, o._("content policy", null, {
 				hk: "4ptiaZ"
 			}))), r.a.createElement("li", {
 				className: s.a.legalItem
 			}, r.a.createElement("a", {
 				className: s.a.legalLink,
 				href: "https://www.reddit.com/help/privacypolicy"
-			}, i._("privacy policy", null, {
+			}, o._("privacy policy", null, {
 				hk: "1ybjnz"
 			}))), r.a.createElement("li", {
 				className: s.a.legalItem
 			}, r.a.createElement("a", {
 				className: s.a.legalLink,
 				href: "https://www.redditinc.com/policies/user-agreement"
-			}, i._("user agreement", null, {
+			}, o._("user agreement", null, {
 				hk: "4puRxC"
 			}))), r.a.createElement("li", {
 				className: s.a.legalItem
 			}, r.a.createElement("a", {
 				className: s.a.legalLink,
 				href: "https://www.reddit.com/help/healthycommunities/"
-			}, i._("mod policy", null, {
+			}, o._("mod policy", null, {
 				hk: "1VvAdM"
 			}))), r.a.createElement("li", {
 				className: s.a.legalItem
-			}, i._("© {year} Reddit, Inc. All rights reserved", [i._param("year", (new Date).getFullYear().toString())], {
+			}, o._("© {year} Reddit, Inc. All rights reserved", [o._param("year", (new Date).getFullYear().toString())], {
 				hk: "23FUx6"
 			})))))
 		},
@@ -391,25 +391,25 @@
 				r = a.n(n),
 				l = a("./node_modules/react-redux/es/index.js"),
 				s = a("./src/reddit/controls/Button/index.tsx"),
-				o = a("./src/reddit/selectors/gold/powerups/index.ts");
+				i = a("./src/reddit/selectors/gold/powerups/index.ts");
 			const {
-				fbt: i
+				fbt: o
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), c = e => {
 				let {
 					className: t,
 					onClick: a,
 					disabled: n
 				} = e;
-				const c = Object(l.e)(o.w);
+				const c = Object(l.e)(i.w);
 				return r.a.createElement(s.t, {
 					priority: s.c.Primary,
 					className: t,
 					onClick: a,
 					isFullWidth: !0,
 					disabled: n
-				}, (() => c ? i._("Use Your Premium Powerup", null, {
+				}, (() => c ? o._("Use Your Premium Powerup", null, {
 					hk: "JJNaN"
-				}) : i._("Become a Hero", null, {
+				}) : o._("Become a Hero", null, {
 					hk: "3IZNw3"
 				}))())
 			}
@@ -448,7 +448,7 @@
 			})), a.d(t, "c", (function() {
 				return s
 			})), a.d(t, "a", (function() {
-				return o
+				return i
 			}));
 			var n = a("./node_modules/bignumber.js/bignumber.js"),
 				r = a("./src/lib/prettyPrintNumber/index.ts");
@@ -463,24 +463,10 @@
 				return Object(r.b)(parseInt(l(e, t), 10))
 			}
 
-			function o(e, t) {
+			function i(e, t) {
 				const a = new n.BigNumber(e),
 					r = new n.BigNumber(t || 1);
 				return a.multipliedBy(r).toFixed(0)
-			}
-		},
-		"./src/reddit/hooks/useIsClient.ts": function(e, t, a) {
-			"use strict";
-			a.d(t, "a", (function() {
-				return r
-			}));
-			var n = a("./node_modules/react/index.js");
-
-			function r() {
-				const [e, t] = Object(n.useState)(!1);
-				return Object(n.useEffect)(() => {
-					setTimeout(t, 1, !0)
-				}, []), e
 			}
 		},
 		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, a) {
@@ -540,8 +526,8 @@
 				r = a("./node_modules/react/index.js"),
 				l = a.n(r),
 				s = a("./node_modules/react-redux/es/index.js"),
-				o = a("./src/lib/classNames/index.ts"),
-				i = a("./src/reddit/components/CollapsibleFAQ/index.tsx"),
+				i = a("./src/lib/classNames/index.ts"),
+				o = a("./src/reddit/components/CollapsibleFAQ/index.tsx"),
 				c = a("./src/reddit/controls/Button/index.tsx"),
 				m = a("./src/reddit/selectors/gold/powerups/modSignup.ts"),
 				d = a("./src/reddit/selectors/user.ts"),
@@ -623,7 +609,7 @@
 				return Object(s.e)(m.b) ? l.a.createElement("div", {
 					className: p.a.faqSection
 				}, l.a.createElement("div", {
-					className: Object(o.a)(p.a.faqSectionContent, p.a.contentWrapper)
+					className: Object(i.a)(p.a.faqSectionContent, p.a.contentWrapper)
 				}, l.a.createElement(k, null), l.a.createElement(f, null), l.a.createElement(w, null), l.a.createElement("h2", {
 					className: p.a.faqHeading
 				}, h._("Questions about Powerups", null, {
@@ -635,7 +621,7 @@
 						prompt: a,
 						answer: n
 					} = e;
-					return l.a.createElement(i.a, {
+					return l.a.createElement(o.a, {
 						defaultClosed: !0,
 						question: a(),
 						key: t
@@ -673,7 +659,7 @@
 					hideBolt: t
 				} = e;
 				return l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
-					className: Object(o.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkWithBolt)
+					className: Object(i.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkWithBolt)
 				}), l.a.createElement("div", {
 					className: p.a.circleFaqYellowWithBolt
 				}, !t && l.a.createElement("img", {
@@ -697,13 +683,13 @@
 			}), l.a.createElement("div", {
 				className: p.a.circleFaqYellowHollow
 			})), w = () => l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
-				className: Object(o.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkTopLeft)
+				className: Object(i.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkTopLeft)
 			}), l.a.createElement("div", {
-				className: Object(o.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkTopRight)
+				className: Object(i.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkTopRight)
 			}), l.a.createElement("div", {
-				className: Object(o.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkLeft)
+				className: Object(i.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkLeft)
 			}), l.a.createElement("div", {
-				className: Object(o.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkBottomRight)
+				className: Object(i.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkBottomRight)
 			})), _ = e => {
 				let {
 					hideBolt: t
@@ -782,8 +768,8 @@
 				r = a("./src/lib/classNames/index.ts"),
 				l = a("./node_modules/react/index.js"),
 				s = a.n(l),
-				o = a("./node_modules/react-redux/es/index.js"),
-				i = a("./src/reddit/components/PowerupsCtaButton/index.tsx"),
+				i = a("./node_modules/react-redux/es/index.js"),
+				o = a("./src/reddit/components/PowerupsCtaButton/index.tsx"),
 				c = a("./src/reddit/controls/Button/index.tsx"),
 				m = a("./src/reddit/icons/fonts/index.tsx");
 			var d = e => s.a.createElement("svg", {
@@ -836,9 +822,9 @@
 				let {
 					openModal: t
 				} = e;
-				const a = Object(o.e)(p.db),
-					l = Object(o.e)(u.b),
-					h = Object(o.e)(p.Q),
+				const a = Object(i.e)(p.db),
+					l = Object(i.e)(u.b),
+					h = Object(i.e)(p.Q),
 					k = l ? b._("Come together to level up the whole community", null, {
 						hk: "n9eu8"
 					}) : b._("Level up the whole community", null, {
@@ -855,7 +841,7 @@
 						className: g.a.ctaButton
 					}, b._("Turn on Powerups", null, {
 						hk: "4E97KH"
-					})) : s.a.createElement(i.a, {
+					})) : s.a.createElement(o.a, {
 						onClick: t,
 						className: g.a.ctaButton,
 						disabled: !h
@@ -1054,8 +1040,8 @@
 				r = a("./node_modules/react/index.js"),
 				l = a.n(r),
 				s = a("./node_modules/react-redux/es/index.js"),
-				o = a("./src/lib/classNames/index.ts"),
-				i = a("./src/lib/getMobileOperatingSystem/index.ts"),
+				i = a("./src/lib/classNames/index.ts"),
+				o = a("./src/lib/getMobileOperatingSystem/index.ts"),
 				c = a("./src/reddit/components/MarketingPageFooter/index.tsx"),
 				m = a("./src/higherOrderComponents/asModal/index.tsx"),
 				d = a("./src/reddit/hooks/useLocale.ts"),
@@ -1090,11 +1076,11 @@
 						allowPredictionsTournament: r,
 						displayText: l,
 						isNSFW: s,
-						subscribers: o,
-						type: i,
+						subscribers: i,
+						type: o,
 						url: c
 					} = n;
-					return !r && i === f.f.Public && !s && o >= j && t.push({
+					return !r && o === f.f.Public && !s && i >= j && t.push({
 						id: a,
 						subredditUrl: c,
 						displayText: l
@@ -1171,25 +1157,25 @@
 				}), l.a.createElement("div", {
 					className: S.a.diagonalLayoutPrimary
 				}), l.a.createElement("div", {
-					className: Object(o.a)(S.a.circle, S.a.lineCircle),
+					className: Object(i.a)(S.a.circle, S.a.lineCircle),
 					style: {
 						backgroundImage: `url(${n.a.assetPath}/img/powerups/linecircle-blue.png)`
 					}
 				}), l.a.createElement("div", {
-					className: Object(o.a)(S.a.circle, S.a.circleOrangeHollow)
+					className: Object(i.a)(S.a.circle, S.a.circleOrangeHollow)
 				}), l.a.createElement("div", {
-					className: Object(o.a)(S.a.circle, S.a.dotCircle1),
+					className: Object(i.a)(S.a.circle, S.a.dotCircle1),
 					style: {
 						backgroundImage: `url(${n.a.assetPath}/img/powerups/dotcircle.png)`
 					}
 				}), l.a.createElement("div", {
-					className: Object(o.a)(S.a.circle, S.a.circleGreenFilled)
+					className: Object(i.a)(S.a.circle, S.a.circleGreenFilled)
 				}), l.a.createElement("div", {
-					className: Object(o.a)(S.a.circle, S.a.circleGreenHollow)
+					className: Object(i.a)(S.a.circle, S.a.circleGreenHollow)
 				}), l.a.createElement("div", {
-					className: Object(o.a)(S.a.circle, S.a.circleYellowHollow)
+					className: Object(i.a)(S.a.circle, S.a.circleYellowHollow)
 				}), l.a.createElement("div", {
-					className: Object(o.a)(S.a.circle, S.a.dotCircle2),
+					className: Object(i.a)(S.a.circle, S.a.dotCircle2),
 					style: {
 						backgroundImage: `url(${n.a.assetPath}/img/powerups/dotcircle.png)`
 					}
@@ -1233,8 +1219,8 @@
 					} = e;
 					var a;
 					const n = Object(k.a)(),
-						o = Object(s.e)(_),
-						[i, c] = Object(r.useState)(o && (null === (a = o[0]) || void 0 === a ? void 0 : a.subredditUrl) || "");
+						i = Object(s.e)(_),
+						[o, c] = Object(r.useState)(i && (null === (a = i[0]) || void 0 === a ? void 0 : a.subredditUrl) || "");
 					Object(r.useEffect)(() => {
 						n((() => e => ({
 							...Object(b.n)(e),
@@ -1243,7 +1229,7 @@
 							noun: "start_predictions_modal"
 						}))())
 					}, [n]);
-					const m = Boolean(null == o ? void 0 : o.length),
+					const m = Boolean(null == i ? void 0 : i.length),
 						d = m ? I._("Start a Tournament", null, {
 							hk: "329F3U"
 						}) : I._("Only moderators of communities that have at least {Minimum subscribers required to enable Prediction} members can turn on predictions.", [I._param("Minimum subscribers required to enable Prediction", l.a.createElement(p, {
@@ -1267,15 +1253,15 @@
 						name: I._("subreddit", null, {
 							hk: "sueo0"
 						}),
-						value: i,
+						value: o,
 						onChange: e => c(e)
-					}, o.map(e => {
+					}, i.map(e => {
 						let {
 							id: t,
 							subredditUrl: a,
 							displayText: n
 						} = e;
-						const r = i === a;
+						const r = o === a;
 						return l.a.createElement(g.a, {
 							className: S.a.radioOption,
 							key: t,
@@ -1289,8 +1275,8 @@
 						hk: "J1xBl"
 					})), l.a.createElement(N, {
 						isEligibleMod: m,
-						selectedSubredditUrl: i,
-						modSubredditsInfo: o,
+						selectedSubredditUrl: o,
+						modSubredditsInfo: i,
 						onClose: t
 					}))
 				}),
@@ -1328,7 +1314,7 @@
 						}))())
 					};
 				return a ? l.a.createElement("section", {
-					className: Object(o.a)(A.a.communitiesContainer, {
+					className: Object(i.a)(A.a.communitiesContainer, {
 						[A.a.isNightMode]: t
 					})
 				}, l.a.createElement("h2", {
@@ -1427,7 +1413,7 @@
 					return l.a.createElement("div", {
 						className: V.a.faqSection
 					}, l.a.createElement("div", {
-						className: Object(o.a)(V.a.faqSectionContent, V.a.contentWrapper)
+						className: Object(i.a)(V.a.faqSectionContent, V.a.contentWrapper)
 					}, l.a.createElement(G.a, {
 						hideBolt: !0
 					}), l.a.createElement("h2", {
@@ -1494,7 +1480,7 @@
 					isReversed: s
 				} = e;
 				return l.a.createElement("div", {
-					className: Object(o.a)(J.a.perkCell, {
+					className: Object(i.a)(J.a.perkCell, {
 						[J.a.isReversed]: s
 					})
 				}, l.a.createElement("div", {
@@ -1515,9 +1501,9 @@
 					hk: "3F6M9G"
 				}))))
 			}, ee = () => l.a.createElement("div", {
-				className: Object(o.a)(J.a.perksSection)
+				className: Object(i.a)(J.a.perksSection)
 			}, l.a.createElement("div", {
-				className: Object(o.a)(J.a.perksSectionGrid)
+				className: Object(i.a)(J.a.perksSectionGrid)
 			}, X.map(e => {
 				let {
 					title: t,
@@ -1543,7 +1529,7 @@
 					t = Object(s.e)(W.db),
 					[a, m] = Object(r.useState)(!1);
 				let d = !1;
-				"undefined" != typeof window && void 0 !== window.navigator && (d = Object(i.b)() === i.a), Object(r.useEffect)(() => {
+				"undefined" != typeof window && void 0 !== window.navigator && (d = Object(o.b)() === o.a), Object(r.useEffect)(() => {
 					e((() => e => ({
 						source: "global",
 						action: "view",
@@ -1564,7 +1550,7 @@
 						background: "#ddbd37"
 					}
 				}), l.a.createElement("div", {
-					className: Object(o.a)(ae.a.contentWrapper, ae.a.headingContent)
+					className: Object(i.a)(ae.a.contentWrapper, ae.a.headingContent)
 				}, l.a.createElement("div", {
 					className: ae.a.headingText
 				}, l.a.createElement("h1", {
@@ -1580,11 +1566,11 @@
 				}, ne._("Become the world’s greatest predictor on any topic.", null, {
 					hk: "3XkX8B"
 				})), l.a.createElement("p", {
-					className: Object(o.a)(ae.a.description, ae.a.bodyText)
+					className: Object(i.a)(ae.a.description, ae.a.bodyText)
 				}, ne._("Who will win the game tomorrow? Which character will meet their fate in the next episode? Flex your knowledge of a topic in a prediction tournament!", null, {
 					hk: "2x0Fec"
 				})), l.a.createElement("div", {
-					className: Object(o.a)(ae.a.modWarning, ae.a.bodyText)
+					className: Object(i.a)(ae.a.modWarning, ae.a.bodyText)
 				}, l.a.createElement("div", {
 					className: ae.a.modWarningTop
 				}, l.a.createElement(C.a, {
@@ -1620,7 +1606,7 @@
 				}))))), l.a.createElement(L, null), l.a.createElement("div", {
 					className: ae.a.relativeContainer
 				}, l.a.createElement("div", {
-					className: Object(o.a)(ae.a.circle, ae.a.circleCyanHollow)
+					className: Object(i.a)(ae.a.circle, ae.a.circleCyanHollow)
 				})), l.a.createElement(ee, null), l.a.createElement("div", {
 					className: ae.a.howItWorksStepsSection
 				}, l.a.createElement("h2", {
@@ -1628,11 +1614,11 @@
 				}, ne._("How it works", null, {
 					hk: "4yfhNH"
 				})), l.a.createElement("div", {
-					className: Object(o.a)(ae.a.howItWorksStepsSectionContent, ae.a.contentWrapper)
+					className: Object(i.a)(ae.a.howItWorksStepsSectionContent, ae.a.contentWrapper)
 				}, l.a.createElement("div", {
-					className: Object(o.a)(ae.a.circle, ae.a.circleStepsYellowFull)
+					className: Object(i.a)(ae.a.circle, ae.a.circleStepsYellowFull)
 				}), l.a.createElement("div", {
-					className: Object(o.a)(ae.a.circle, ae.a.circleStepsStriped),
+					className: Object(i.a)(ae.a.circle, ae.a.circleStepsStriped),
 					style: {
 						backgroundImage: t ? `url(${n.a.assetPath}/img/powerups/linecircle-orange.png)` : `url(${n.a.assetPath}/img/powerups/linecircle-blue.png)`
 					}
@@ -1729,4 +1715,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.df3a3c1b08f23f0af726.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.de7f604a9429b5fe8af1.js.map

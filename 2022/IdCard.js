@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.ab8e6b55e70ca63d0b70.js
-// Retrieved at 4/11/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.e2510ccd4d68b8f8838a.js
+// Retrieved at 4/11/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3082,7 +3082,7 @@
 						onClick: m ? g : void 0,
 						headerButton: i.a.createElement("div", {
 							className: ut.a.headerButtonsContainer
-						}, !D && x && f && c !== Ae.ke.NewModule && i.a.createElement(a.a, {
+						}, !D && x && f && c !== Ae.me.NewModule && i.a.createElement(a.a, {
 							className: ut.a.ModToolsLink,
 							to: f.posts ? `${x.url}about/modqueue` : `${x.url}about/`,
 							onClick: this.onClickModTools
@@ -5144,27 +5144,27 @@
 				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Fb,
+					experimentName: s.Gb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.X.Enabled),
 				d = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Gb,
+					experimentName: s.Hb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Y.Enabled),
 				c = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Hb,
+					experimentName: s.Ib,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Z.Enabled),
 				l = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Ib,
+					experimentName: s.Jb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.ab.Enabled),
 				u = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Kb,
+					experimentName: s.Lb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.cb.Enabled),
 				m = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Jb,
+					experimentName: s.Kb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.bb.Enabled)
 		},
@@ -5298,4 +5298,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.ab8e6b55e70ca63d0b70.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.e2510ccd4d68b8f8838a.js.map

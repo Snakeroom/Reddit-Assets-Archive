@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ed9bf005a6146d979f68.js
-// Retrieved at 4/11/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.980fb435c9c2a28ce45b.js
+// Retrieved at 4/11/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2499,9 +2499,10 @@
 				a = n("./src/lib/objectSelector/index.ts"),
 				i = n("./src/reddit/components/RichTextJson/index.tsx"),
 				c = n("./src/reddit/constants/postLayout.ts"),
-				d = n("./src/reddit/components/OneFeed/PostRecommendationContext.m.less"),
-				l = n.n(d);
-			const u = Object(a.b)(e => ({
+				d = n("./src/reddit/hooks/useRecommendationPostContext.ts"),
+				l = n("./src/reddit/components/OneFeed/PostRecommendationContext.m.less"),
+				u = n.n(l);
+			const p = Object(a.b)(e => ({
 				renderingObjectInfo: e
 			}));
 			t.a = e => {
@@ -2510,14 +2511,14 @@
 					layout: n,
 					post: s
 				} = e;
-				return o.a.createElement(i.a, {
-					className: Object(r.a)(l.a.RecommendationContextStyles, {
-						[l.a.classicLayout]: n === c.g.Classic,
-						[l.a.compactLayout]: n === c.g.Compact,
-						[l.a.largeLayout]: n === c.g.Large
+				return Object(d.a)().hideRecommendationContext ? null : o.a.createElement(i.a, {
+					className: Object(r.a)(u.a.RecommendationContextStyles, {
+						[u.a.classicLayout]: n === c.g.Classic,
+						[u.a.compactLayout]: n === c.g.Compact,
+						[u.a.largeLayout]: n === c.g.Large
 					}),
 					content: t,
-					rtJsonElementProps: u(s),
+					rtJsonElementProps: p(s),
 					useExplicitTextColor: !0
 				})
 			}
@@ -3405,13 +3406,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.ye,
+					experimentName: o.Ae,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Ge.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Ie.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(a.G, i, (e, t) => c(e, t));
 			Object(s.a)((e, t) => t, i, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.ed9bf005a6146d979f68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.980fb435c9c2a28ce45b.js.map

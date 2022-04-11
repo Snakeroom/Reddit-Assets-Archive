@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.b39bc8c3070405524079.js
-// Retrieved at 4/11/2022, 2:20:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.76469515bda111afaaa4.js
+// Retrieved at 4/11/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -457,13 +457,13 @@
 					}(e)
 				})), o
 			}
-			var B = {
+			var R = {
 				placement: "bottom",
 				modifiers: [],
 				strategy: "absolute"
 			};
 
-			function R() {
+			function B() {
 				for (var e = arguments.length, t = new Array(e), n = 0; n < e; n++) t[n] = arguments[n];
 				return !t.some((function(e) {
 					return !(e && "function" == typeof e.getBoundingClientRect)
@@ -476,13 +476,13 @@
 					n = t.defaultModifiers,
 					o = void 0 === n ? [] : n,
 					s = t.defaultOptions,
-					r = void 0 === s ? B : s;
+					r = void 0 === s ? R : s;
 				return function(e, t, n) {
 					void 0 === n && (n = r);
 					var s, i, c = {
 							placement: "bottom",
 							orderedModifiers: [],
-							options: Object.assign(Object.assign({}, B), r),
+							options: Object.assign(Object.assign({}, R), r),
 							modifiersData: {},
 							elements: {
 								reference: e,
@@ -542,7 +542,7 @@
 									var e = c.elements,
 										t = e.reference,
 										n = e.popper;
-									if (R(t, n)) {
+									if (B(t, n)) {
 										c.rects = {
 											reference: f(t, y(n), "fixed" === c.options.strategy),
 											popper: b(n)
@@ -581,7 +581,7 @@
 								u(), l = !0
 							}
 						};
-					if (!R(e, t)) return p;
+					if (!B(e, t)) return p;
 
 					function u() {
 						d.forEach((function(e) {
@@ -849,13 +849,13 @@
 						left: C.left - A.left + v.left,
 						right: A.right - C.right + v.right
 					},
-					B = e.modifiersData.offset;
-				if (m === T && B) {
-					var R = B[r];
+					R = e.modifiersData.offset;
+				if (m === T && R) {
+					var B = R[r];
 					Object.keys(F).forEach((function(e) {
 						var t = [E, w].indexOf(e) >= 0 ? 1 : -1,
 							n = [O, w].indexOf(e) >= 0 ? "y" : "x";
-						F[e] += R[n] * t
+						F[e] += B[n] * t
 					}))
 				}
 				return F
@@ -1083,9 +1083,9 @@
 									}), []), y = t.rects.reference, M = t.rects.popper, P = new Map, N = !0, T = g[0], S = 0; S < g.length; S++) {
 									var A = g[S],
 										F = H(A),
-										B = V(A) === C,
-										R = [O, w].indexOf(F) >= 0,
-										D = R ? "width" : "height",
+										R = V(A) === C,
+										B = [O, w].indexOf(F) >= 0,
+										D = B ? "width" : "height",
 										W = oe(t, {
 											placement: A,
 											boundary: l,
@@ -1093,7 +1093,7 @@
 											altBoundary: u,
 											padding: d
 										}),
-										U = R ? B ? E : j : B ? w : O;
+										U = B ? R ? E : j : R ? w : O;
 									y[D] > M[D] && (U = K(U));
 									var z = K(U),
 										G = [];
@@ -1170,8 +1170,8 @@
 									var L = "y" === _ ? O : j,
 										A = "y" === _ ? w : E,
 										F = "y" === _ ? "height" : "width",
-										B = P[_],
-										R = P[_] + x[L],
+										R = P[_],
+										B = P[_] + x[L],
 										D = P[_] - x[A],
 										W = m ? -T[F] / 2 : 0,
 										z = g === C ? N[F] : T[F],
@@ -1197,8 +1197,8 @@
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][_] : 0,
 										re = P[_] + Q - ne - te,
 										ie = P[_] + $ - ne,
-										ae = se(m ? Math.min(R, re) : R, B, m ? Math.max(D, ie) : D);
-									P[_] = ae, I[_] = ae - B
+										ae = se(m ? Math.min(B, re) : B, R, m ? Math.max(D, ie) : D);
+									P[_] = ae, I[_] = ae - R
 								}
 								if (a) {
 									var ce = "x" === _ ? O : j,
@@ -1646,8 +1646,8 @@
 				L = n("./src/reddit/components/Flatlist/index.tsx"),
 				A = n("./src/reddit/components/Flatlist/getFlatlistTooltipId.ts"),
 				F = n("./src/reddit/components/JSAPIContainers/index.tsx"),
-				B = n("./src/reddit/components/ModActionsMenu/index.tsx"),
-				R = n("./src/reddit/components/ModModeFilteredReason/index.tsx"),
+				R = n("./src/reddit/components/ModActionsMenu/index.tsx"),
+				B = n("./src/reddit/components/ModModeFilteredReason/index.tsx"),
 				D = n("./src/reddit/components/ModModeFilteredReason/helpers.ts"),
 				W = n("./src/reddit/components/ModModeReports/index.tsx"),
 				H = n("./src/reddit/components/ModModeReports/helpers.ts"),
@@ -1800,7 +1800,7 @@
 						sendEvent: Ne,
 						shouldShowGalleryTileOption: Te,
 						showPromotedCTA: Ie
-					} = this.props, Le = !!be.media && be.media.type === h.o.RTJSON, Ae = ge && Le, Fe = Object(Z.b)(be.id, j), Be = Object(ue.a)(ne), Re = Object(le.a)(ne), De = Object(pe.a)(ne), We = `-mod-actions-menu-${be.id}`, He = `voting-arrows-${be.id}`, Ve = !!r && Object(x.e)(r) === be.author, Ue = Object(D.d)(be), ze = Object(H.c)(be), Ge = Object(A.a)("View--Reports", be.id, Me), qe = Object(H.a)(be), Ze = !(j || g || y), Ke = be.media && be.media.type === h.o.LIVEVIDEO, Je = e => Ne(Object(b.h)(be.id, e)), Ye = Object(c.t)(be, p), {
+					} = this.props, Le = !!be.media && be.media.type === h.o.RTJSON, Ae = ge && Le, Fe = Object(Z.b)(be.id, j), Re = Object(ue.a)(ne), Be = Object(le.a)(ne), De = Object(pe.a)(ne), We = `-mod-actions-menu-${be.id}`, He = `voting-arrows-${be.id}`, Ve = !!r && Object(x.e)(r) === be.author, Ue = Object(D.d)(be), ze = Object(H.c)(be), Ge = Object(A.a)("View--Reports", be.id, Me), qe = Object(H.a)(be), Ze = !(j || g || y), Ke = be.media && be.media.type === h.o.LIVEVIDEO, Je = e => Ne(Object(b.h)(be.id, e)), Ye = Object(c.t)(be, p), {
 						source: Xe
 					} = Ye, Qe = s.a.createElement(q.a, {
 						className: Object(d.a)(Oe.a.compactPostStyles, Ee.a.postContainer, Object(f.a)(this.props), t),
@@ -1894,13 +1894,13 @@
 						tooltipType: j ? $.c.Lightbox : void 0
 					})), Ze && !Ke && s.a.createElement("div", null, s.a.createElement(P.a, {
 						className: Ee.a.liveDiscussionIcon,
-						isMod: Be,
+						isMod: Re,
 						postId: be.postId
 					})), !be.isSurveyAd && s.a.createElement("div", {
 						className: Ee.a.flatList
 					}, s.a.createElement(N.a, {
 						className: Ee.a.commentsLink,
-						hasModPostPerms: Be,
+						hasModPostPerms: Re,
 						isCommentsPage: g,
 						isCommentPermalink: y,
 						isOverlay: j,
@@ -1916,19 +1916,19 @@
 						post: be,
 						sendEvent: Ne,
 						showIconsOnly: !0
-					}), Be && s.a.createElement(B.a, {
+					}), Re && s.a.createElement(R.a, {
 						dropdownId: We,
 						onClick: () => Je("post_mod_action_menu")
 					}, s.a.createElement(L.b, null), s.a.createElement(Y.a, {
-						canEditFlair: Re && _e,
-						hasModPostPerms: Be,
+						canEditFlair: Be && _e,
+						hasModPostPerms: Re,
 						hasModFullPerms: De,
 						isOverlay: !1,
 						isPostAuthor: Ve,
 						modModeEnabled: oe,
 						post: be,
 						tooltipId: We
-					})), Be && ze && !oe && s.a.createElement(te.c, {
+					})), Re && ze && !oe && s.a.createElement(te.c, {
 						text: `${qe}`,
 						onClick: () => {
 							this.props.onOpenReportsDropdown(Ge), Je("post_report_menu")
@@ -1973,11 +1973,11 @@
 						post: be,
 						adLinkContent: Ye,
 						isCompact: !0
-					})), oe && Be && Ue && s.a.createElement("div", {
+					})), oe && Re && Ue && s.a.createElement("div", {
 						className: Ee.a.modModeBannerWrapper
-					}, s.a.createElement(R.a, {
+					}, s.a.createElement(B.a, {
 						thing: be
-					})), oe && Be && ze && s.a.createElement("div", {
+					})), oe && Re && ze && s.a.createElement("div", {
 						className: Ee.a.modModeBannerWrapper
 					}, s.a.createElement(W.a, {
 						onIgnoreReports: de,
@@ -2478,9 +2478,10 @@
 				i = n("./src/lib/objectSelector/index.ts"),
 				a = n("./src/reddit/components/RichTextJson/index.tsx"),
 				c = n("./src/reddit/constants/postLayout.ts"),
-				d = n("./src/reddit/components/OneFeed/PostRecommendationContext.m.less"),
-				l = n.n(d);
-			const p = Object(i.b)(e => ({
+				d = n("./src/reddit/hooks/useRecommendationPostContext.ts"),
+				l = n("./src/reddit/components/OneFeed/PostRecommendationContext.m.less"),
+				p = n.n(l);
+			const u = Object(i.b)(e => ({
 				renderingObjectInfo: e
 			}));
 			t.a = e => {
@@ -2489,14 +2490,14 @@
 					layout: n,
 					post: o
 				} = e;
-				return s.a.createElement(a.a, {
-					className: Object(r.a)(l.a.RecommendationContextStyles, {
-						[l.a.classicLayout]: n === c.g.Classic,
-						[l.a.compactLayout]: n === c.g.Compact,
-						[l.a.largeLayout]: n === c.g.Large
+				return Object(d.a)().hideRecommendationContext ? null : s.a.createElement(a.a, {
+					className: Object(r.a)(p.a.RecommendationContextStyles, {
+						[p.a.classicLayout]: n === c.g.Classic,
+						[p.a.compactLayout]: n === c.g.Compact,
+						[p.a.largeLayout]: n === c.g.Large
 					}),
 					content: t,
-					rtJsonElementProps: p(o),
+					rtJsonElementProps: u(o),
 					useExplicitTextColor: !0
 				})
 			}
@@ -3187,13 +3188,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: s.ye,
+					experimentName: s.Ae,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === s.Ge.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === s.Ie.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(o.a)(i.G, a, (e, t) => c(e, t));
 			Object(o.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.b39bc8c3070405524079.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.76469515bda111afaaa4.js.map
