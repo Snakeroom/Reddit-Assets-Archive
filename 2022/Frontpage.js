@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.3b71df9851b98506e088.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.767a3bb63a49024ca475.js
+// Retrieved at 4/11/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -485,7 +485,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Af)(p),
+						includeInterestTopics: !!p && !Object(b.Bf)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: f && !(null === (s = null === (a = e.user.account) || void 0 === a ? void 0 : a.karma) || void 0 === s ? void 0 : s.total),
@@ -2627,10 +2627,10 @@
 			}
 			var Ue = a("./src/reddit/selectors/experiments/utils.ts");
 			const Ge = Object(u.a)(e => Object(De.c)(e, {
-					experimentName: Be.Md,
+					experimentName: Be.Nd,
 					experimentEligibilitySelector: De.a
 				}), Ue.a),
-				qe = Object(u.a)(Ge, e => e === Be.Nd.Enabled);
+				qe = Object(u.a)(Ge, e => e === Be.Od.Enabled);
 			var We = a("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				He = a("./src/reddit/selectors/user.ts");
 			var Ve = a("./src/reddit/selectors/seo/linksModule.ts"),
@@ -3013,6 +3013,7 @@
 			e.exports = {
 				Container: "_YS-SvhE12dC8aytZB1uB",
 				container: "_YS-SvhE12dC8aytZB1uB",
+				cardview: "_6Jk1o_xF1wf7yypTbxlHL",
 				Banner: "_2sikk8sbLXAiXWDNu3phSX",
 				banner: "_2sikk8sbLXAiXWDNu3phSX",
 				Link: "_2JwxTN6T93e6dSCiRFhyRG",
@@ -3028,93 +3029,99 @@
 				r = a("./node_modules/react-redux/es/index.js"),
 				c = a("./node_modules/reselect/es/index.js"),
 				i = a("./node_modules/@reddit/reddit-country-url-redirects/dist/esm/index.js"),
-				o = a("./src/lib/lessComponent.tsx"),
-				l = a("./src/reddit/components/LangSite/Banner/index.m.less"),
-				d = a.n(l),
-				u = a("./src/reddit/actions/langSite/index.ts"),
-				m = a("./src/reddit/components/TrackingHelper/index.tsx"),
-				p = a("./src/reddit/helpers/trackers/banners.ts"),
-				b = a("./src/reddit/icons/svgs/Close/index.tsx"),
-				h = a("./src/reddit/selectors/experiments/countrySites.ts");
-			var g = a("./src/reddit/selectors/meta.ts");
+				o = a("./src/lib/classNames/index.ts"),
+				l = a("./src/lib/lessComponent.tsx"),
+				d = a("./src/reddit/components/LangSite/Banner/index.m.less"),
+				u = a.n(d),
+				m = a("./src/reddit/actions/langSite/index.ts"),
+				p = a("./src/reddit/components/TrackingHelper/index.tsx"),
+				b = a("./src/reddit/helpers/trackers/banners.ts"),
+				h = a("./src/reddit/icons/svgs/Close/index.tsx"),
+				g = a("./src/reddit/selectors/experiments/countrySites.ts");
+			var f = a("./src/reddit/selectors/meta.ts");
 			const {
-				fbt: f
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), _ = o.a.a("Link", d.a), y = {
+				fbt: _
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), y = l.a.a("Link", u.a), v = {
 				de: {
 					href: "/de/",
 					link: "reddit.com/de",
-					text: f._("Browsing in German? Check out", null, {
+					text: _._("Browsing in German? Check out", null, {
 						hk: "9HPUp"
 					})
 				},
 				fr: {
 					href: "/fr/",
 					link: "reddit.com/fr",
-					text: f._("Browsing in French? Check out", null, {
+					text: _._("Browsing in French? Check out", null, {
 						hk: "39JaPp"
 					})
 				},
 				es: {
 					href: "/es/",
 					link: "reddit.com/es",
-					text: f._("Browsing in Spanish? Check out", null, {
+					text: _._("Browsing in Spanish? Check out", null, {
 						hk: "uo3Uu"
 					})
 				},
 				pt: {
 					href: "/pt/",
 					link: "reddit.com/pt",
-					text: f._("Browsing in Portuguese? Check out", null, {
+					text: _._("Browsing in Portuguese? Check out", null, {
 						hk: "2ySndk"
 					})
 				},
 				it: {
 					href: "/it/",
 					link: "reddit.com/it",
-					text: f._("Browsing in Italian? Check out", null, {
+					text: _._("Browsing in Italian? Check out", null, {
 						hk: "2ESH1H"
 					})
 				}
 			};
-			var v;
+			var E;
 			! function(e) {
 				e.Hidden = "hidden", e.Visible = "visible"
-			}(v || (v = {}));
-			const E = Object(c.c)({
-					locale: g.i,
+			}(E || (E = {}));
+			const x = Object(c.c)({
+					locale: f.i,
 					bannerClosedTime: e => e.langSite.bannerClosedTime,
-					isCountrySitesEnabled: h.b
+					isCountrySitesEnabled: g.b,
+					isIntSiteBannerEnabled: g.d
 				}),
-				x = Object(r.b)(E, e => ({
-					dispatchBannerClose: () => e(Object(u.b)())
+				k = Object(r.b)(x, e => ({
+					dispatchBannerClose: () => e(Object(m.b)())
 				}));
-			t.a = x(Object(m.c)(e => {
+			t.a = k(Object(p.c)(e => {
 				const {
 					locale: t,
-					isCountrySitesEnabled: a,
-					bannerClosedTime: c,
-					sendEvent: o
-				} = e, l = t.split("-")[0];
-				let u = !1;
-				c && Date.now() - c < 18e5 && (u = !0);
-				const [m, g] = Object(s.useState)(u ? v.Hidden : v.Visible), f = Object(r.f)().getState(), E = Object(h.a)(f, Object(i.c)());
+					isCardView: a,
+					isCountrySitesEnabled: c,
+					isIntSiteBannerEnabled: l,
+					bannerClosedTime: d,
+					sendEvent: m
+				} = e, p = t.split("-")[0];
+				let f = !1;
+				d && Date.now() - d < 18e5 && (f = !0);
+				const [_, x] = Object(s.useState)(f ? E.Hidden : E.Visible), k = Object(r.f)().getState(), N = Object(g.a)(k, Object(i.c)());
 				if (Object(s.useEffect)(() => {
-						a && E.includes(l) && m === v.Visible && o(Object(p.e)())
-					}, [l, m, E, a, o]), !a || !E.includes(l) || m === v.Hidden) return null;
-				const x = () => {
-					o(Object(p.c)())
+						c && l && N.includes(p) && _ === E.Visible && m(Object(b.e)())
+					}, [p, _, N, c, l, m]), !c || !l || !N.includes(p) || _ === E.Hidden) return null;
+				const O = () => {
+					m(Object(b.c)())
 				};
 				return n.a.createElement("div", {
-					className: d.a.Container
-				}, (() => l in y ? n.a.createElement("div", {
-					className: d.a.Banner
-				}, y[l].text, n.a.createElement(_, {
-					href: y[l].href,
-					onClick: x
-				}, y[l].link)) : null)(), n.a.createElement(b.a, {
-					className: d.a.Close,
+					className: Object(o.a)(u.a.Container, {
+						[u.a.cardview]: a
+					})
+				}, (() => p in v ? n.a.createElement("div", {
+					className: u.a.Banner
+				}, v[p].text, n.a.createElement(y, {
+					href: v[p].href,
+					onClick: O
+				}, v[p].link)) : null)(), n.a.createElement(h.a, {
+					className: u.a.Close,
 					onClick: () => {
-						o(Object(p.d)()), g(v.Hidden), e.dispatchBannerClose()
+						m(Object(b.d)()), x(E.Hidden), e.dispatchBannerClose()
 					}
 				}))
 			}))
@@ -7151,7 +7158,9 @@
 					return l.a.createElement(W.a, {
 						className: Object(m.a)(de.a.Container, this.props.className),
 						fitPageToContent: !0,
-						hero: l.a.createElement(S.a, null),
+						hero: s ? void 0 : l.a.createElement(S.a, {
+							isCardView: D.e[c] === D.d.Card
+						}),
 						trendingUnit: p && l.a.createElement(ve, {
 							showCardView: c === D.g.Large
 						}),
@@ -7806,4 +7815,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.3b71df9851b98506e088.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.767a3bb63a49024ca475.js.map

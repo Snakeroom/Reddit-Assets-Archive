@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.248397144b6ac39aa92a.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.2f5dff7f751bb6042cd4.js
+// Retrieved at 4/11/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3837,12 +3837,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case h.ff.SmIcon:
+						case h.gf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case h.ff.SmIconHc:
+						case h.gf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -4268,7 +4268,7 @@
 						} = t;
 						return Object(Be.c)(e, s)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Te.ie.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Te.je.NewModule,
 					showGovernance: Pe.d.spPoints,
 					showLeaderboard: Pe.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -5471,12 +5471,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.Ze
+						experimentName: r.af
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.ff.SmIcon || t === r.ff.SmIconHc
+					return t === r.gf.SmIcon || t === r.gf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5502,4 +5502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.248397144b6ac39aa92a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.2f5dff7f751bb6042cd4.js.map
