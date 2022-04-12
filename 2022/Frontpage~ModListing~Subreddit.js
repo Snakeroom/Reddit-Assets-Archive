@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.815da32cdcb10d51c559.js
-// Retrieved at 4/12/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.72e0b99094598a88868f.js
+// Retrieved at 4/12/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -651,8 +651,8 @@
 				}).apply(this, arguments)
 			}
 			const W = "ListingSort--SortPicker",
-				M = Object(_.a)(A.a.wrapped(O.a, "Dropdown", D.a)),
-				B = A.a.wrapped(P.a, "ListingSortIcon", D.a),
+				B = Object(_.a)(A.a.wrapped(O.a, "Dropdown", D.a)),
+				M = A.a.wrapped(P.a, "ListingSortIcon", D.a),
 				H = (A.a.wrapped(N.b, "DropdownTriangle", D.a), A.a.div("Title", D.a)),
 				U = A.a.wrapped(e => s.a.createElement(k.b, R({}, e, {
 					noHover: !0,
@@ -705,9 +705,9 @@
 					displayText: Object(y.a)(e.sort),
 					id: e.dropdownId || W,
 					showDropdownTriangle: !0
-				}, s.a.createElement(B, {
+				}, s.a.createElement(M, {
 					sort: e.sort
-				}))), s.a.createElement(x.a.Consumer, null, t => s.a.createElement(M, R({
+				}))), s.a.createElement(x.a.Consumer, null, t => s.a.createElement(B, R({
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
 					tooltipId: e.dropdownId || W
@@ -739,7 +739,7 @@
 						},
 						isSelected: e.sort === t,
 						key: t
-					}, s.a.createElement(B, {
+					}, s.a.createElement(M, {
 						className: e.rowIconClassName,
 						sort: t
 					}))
@@ -1251,8 +1251,8 @@
 			const Ae = new Set([b.W.CONTROVERSIAL, b.W.TOP]),
 				Re = new Set([b.W.CONTROVERSIAL, b.W.RISING]),
 				We = new Set([b.W.CONTROVERSIAL]),
-				Me = "ListingSort--Overflow",
-				Be = Object(l.u)({
+				Be = "ListingSort--Overflow",
+				Me = Object(l.u)({
 					isFrontpage: l.A,
 					isProfilePage: l.J,
 					pageLayer: e => e
@@ -1286,7 +1286,7 @@
 							className: Object(a.a)(Te.a.SortLink, e === t && Te.a.selected),
 							kind: Ee.b.InternalLink,
 							priority: Ee.c.Plain,
-							Icon: n => s.a.createElement(B, De({}, n, {
+							Icon: n => s.a.createElement(M, De({}, n, {
 								className: Object(a.a)(Te.a.SortIcon, n.className),
 								sort: e,
 								isFilled: e === t
@@ -1374,7 +1374,7 @@
 					}), u.length > 0 && s.a.createElement(z, De({}, this.props, {
 						className: Object(a.a)(Te.a.SortOverflow, e),
 						dropdownClassName: Te.a.Dropdown,
-						dropdownId: Me,
+						dropdownId: Be,
 						rowClassName: Te.a.DropdownRow,
 						rowIconClassName: Te.a.DropdownRowIcon,
 						rowSelectedClassName: Te.a.DropdownRowSelected,
@@ -1382,13 +1382,13 @@
 						sortOptions: u
 					}), s.a.createElement("button", {
 						className: Te.a.SortOverflowButton,
-						id: Me
+						id: Be
 					}, s.a.createElement(Ie.a, {
 						name: "overflow_horizontal"
 					}))))
 				}
 			}
-			var Fe = Be(Object(o.b)(He)(Object(d.c)(Ue))),
+			var Fe = Me(Object(o.b)(He)(Object(d.c)(Ue))),
 				Ge = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				Ve = n.n(Ge);
 			const Ke = Object(l.u)({
@@ -2208,7 +2208,7 @@
 						subredditId: n
 					})),
 					_ = Object(a.e)(m.a),
-					S = _ !== u.le.NewModule;
+					S = _ !== u.je.NewModule;
 				return (null === (s = null == w ? void 0 : w.cards) || void 0 === s ? void 0 : s.length) > 0 && S ? o.a.createElement(h, {
 					closeModuleOnMount: !!t && t !== p.g.Large,
 					subredditId: n,
@@ -2238,7 +2238,7 @@
 						experimentEligibilitySelector: o.Q,
 						experimentName: r.Hc
 					});
-					return !(!t || Object(r.Df)(t))
+					return !(!t || Object(r.Bf)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
@@ -2371,4 +2371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.815da32cdcb10d51c559.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.72e0b99094598a88868f.js.map
