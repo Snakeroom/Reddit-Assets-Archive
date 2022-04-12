@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.ef477ca7fd91cd55122d.js
-// Retrieved at 4/11/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.e90b55211b19a2c9fc81.js
+// Retrieved at 4/12/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -318,8 +318,8 @@
 				v = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				E = s("./src/reddit/helpers/clickSourceData/index.ts"),
 				O = s("./src/reddit/helpers/overlay/index.ts"),
-				P = s("./src/reddit/helpers/path/index.ts"),
-				j = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
+				j = s("./src/reddit/helpers/path/index.ts"),
+				P = s("./src/reddit/helpers/trackers/discoveryUnit.ts"),
 				w = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				N = s("./node_modules/fbt/lib/FbtPublic.js"),
 				S = s("./src/lib/isUrl/index.ts"),
@@ -559,10 +559,10 @@
 				}).apply(this, arguments)
 			}
 			const Oe = Object(v.u)(),
-				Pe = Object(l.c)({
+				je = Object(l.c)({
 					isFakeSubreddit: v.z
 				}),
-				je = Object(o.b)(Pe),
+				Pe = Object(o.b)(je),
 				we = e => {
 					const t = {
 						interactive: !1,
@@ -576,7 +576,7 @@
 						}))
 					}), r.a.createElement(Ce.c, t))
 				};
-			var Ne = Oe(je(Object(I.a)(e => {
+			var Ne = Oe(Pe(Object(I.a)(e => {
 					let {
 						className: t,
 						isLoading: s,
@@ -682,12 +682,12 @@
 					} = t;
 					return {
 						openOverlay: t => e(Object(O.a)({
-							pathname: Object(P.b)(t.permalink),
+							pathname: Object(j.b)(t.permalink),
 							state: Object(E.b)(n)
 						})),
-						trackPostClick: (t, s) => e((e, n) => a ? j.p(n(), a, t, s) : null),
-						trackPostSubredditClick: t => e((e, n) => s ? j.r(n(), s, t) : a ? j.r(n(), a, t) : null),
-						showModalOnPostLinkClick: t => e(Object(d.bb)(Object(P.b)(t.permalink), t.id))
+						trackPostClick: (t, s) => e((e, n) => a ? P.p(n(), a, t, s) : null),
+						trackPostSubredditClick: t => e((e, n) => s ? P.r(n(), s, t) : a ? P.r(n(), a, t) : null),
+						showModalOnPostLinkClick: t => e(Object(d.bb)(Object(j.b)(t.permalink), t.id))
 					}
 				}),
 				He = Object(v.u)();
@@ -710,7 +710,7 @@
 							searchOptions: o
 						} = this.props;
 						let l;
-						return (l = "subreddit" === t && o ? j.y(o, r, n, i) : i && o ? j.z(o, r, n, i) : j.o(s, a))(e)
+						return (l = "subreddit" === t && o ? P.y(o, r, n, i) : i && o ? P.z(o, r, n, i) : P.o(s, a))(e)
 					}, this.renderPost = (e, t) => {
 						const {
 							isMiniCard: s,
@@ -881,9 +881,9 @@
 				f = s("./src/reddit/constants/experiments.ts"),
 				g = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(C.N)(e) || f.kf.ShowTopContent === Object(g.c)(e, {
+			const y = e => Object(C.N)(e) || f.jf.ShowTopContent === Object(g.c)(e, {
 				experimentEligibilitySelector: g.a,
-				experimentName: f.ef
+				experimentName: f.df
 			});
 			var _ = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1152,9 +1152,9 @@
 			})), s.d(t, "q", (function() {
 				return O
 			})), s.d(t, "d", (function() {
-				return P
-			})), s.d(t, "l", (function() {
 				return j
+			})), s.d(t, "l", (function() {
+				return P
 			})), s.d(t, "t", (function() {
 				return w
 			})), s.d(t, "u", (function() {
@@ -1200,8 +1200,8 @@
 				v = n.a.footer("ModalFooter", m.a),
 				E = n.a.header("ModalHeader", m.a),
 				O = n.a.div("ModalTitle", m.a),
-				P = n.a.div("ModalAnnotation", m.a),
-				j = n.a.div("ModalMain", m.a),
+				j = n.a.div("ModalAnnotation", m.a),
+				P = n.a.div("ModalMain", m.a),
 				w = n.a.textarea("TextArea", m.a),
 				N = n.a.wrapped(o.l, "WarningButton", m.a),
 				S = n.a.wrapped(o.l, "PrimaryButton", m.a),
@@ -1429,8 +1429,8 @@
 				v = s("./src/reddit/models/Prediction/Tournament/index.ts"),
 				E = s("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				O = s("./src/lib/getShortenedLink.ts"),
-				P = s("./src/reddit/components/FlairWrapper/index.tsx"),
-				j = s("./node_modules/fbt/lib/FbtPublic.js"),
+				j = s("./src/reddit/components/FlairWrapper/index.tsx"),
+				P = s("./node_modules/fbt/lib/FbtPublic.js"),
 				w = s("./src/lib/prettyPrintNumber/index.ts"),
 				N = s("./src/reddit/components/Poll/PollExpiry/index.tsx"),
 				S = s("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
@@ -1446,10 +1446,10 @@
 					} = e, a = s ? s.totalVotes : "0";
 					return r.a.createElement("div", {
 						className: Object(d.a)(e.className, L.a.proposalMetaData)
-					}, r.a.createElement("span", null, j.fbt._({
+					}, r.a.createElement("span", null, P.fbt._({
 						"*": "{count} votes",
 						_1: "{count} vote"
-					}, [j.fbt._param("count", Object(w.a)(a)), j.fbt._plural(parseInt(a))], {
+					}, [P.fbt._param("count", Object(w.a)(a)), P.fbt._plural(parseInt(a))], {
 						hk: "4rP1VK"
 					})), t && r.a.createElement(N.a, {
 						className: L.a.proposalExpiry,
@@ -1624,7 +1624,7 @@
 						size: e.size,
 						titleColor: e.titleColor,
 						titleType: i
-					}, t && r.a.createElement(P.a, {
+					}, t && r.a.createElement(j.a, {
 						titleFlair: t,
 						nowrap: !0,
 						post: a,
@@ -1682,7 +1682,7 @@
 						post: o,
 						showNSFWSpoilerFlairsOnly: l,
 						showNSFWFlairsOnly: c
-					} = this.props, m = s === _.b.Left, u = Object(P.b)(o), p = l ? u.filter(e => e.type === _.f.Nsfw || e.type === _.f.Spoiler) : m ? u.filter(e => Object(f.q)(e.type)) : [];
+					} = this.props, m = s === _.b.Left, u = Object(j.b)(o), p = l ? u.filter(e => e.type === _.f.Nsfw || e.type === _.f.Spoiler) : m ? u.filter(e => Object(f.q)(e.type)) : [];
 					let b = u;
 					l ? b = [] : c ? b = u.filter(e => e.type === _.f.Nsfw) : m && (b = u.filter(e => !Object(f.q)(e.type)));
 					const h = !n && !a,
@@ -1691,7 +1691,7 @@
 					return r.a.createElement("div", {
 						className: Object(d.a)(U.a.Component, e, o.id),
 						ref: this.props.innerRef
-					}, !l && x && r.a.createElement(P.a, {
+					}, !l && x && r.a.createElement(j.a, {
 						isFlairFilter: !0,
 						titleFlair: p,
 						nowrap: !0,
@@ -1702,7 +1702,7 @@
 					})), i && r.a.createElement(M, {
 						className: U.a.pollMeta,
 						pollId: i.id
-					}), r.a.createElement(X, this.props), g && r.a.createElement(P.a, {
+					}), r.a.createElement(X, this.props), g && r.a.createElement(j.a, {
 						isFlairFilter: !0,
 						titleFlair: b,
 						nowrap: !0,
@@ -2110,4 +2110,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.ef477ca7fd91cd55122d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.e90b55211b19a2c9fc81.js.map

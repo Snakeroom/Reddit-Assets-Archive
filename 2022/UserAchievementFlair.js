@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserAchievementFlair.e2758db3c4829fbeb277.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserAchievementFlair.dc549bad0aef0aaad06b.js
+// Retrieved at 4/12/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserAchievementFlair"], {
 		"./src/reddit/components/Econ/PowerupsFlair/HoverPopup.m.less": function(e, t, r) {
@@ -57,7 +57,7 @@
 						subredditId: r,
 						userId: h
 					})),
-					j = Object(l.e)(e => Object(v.S)(e, {
+					O = Object(l.e)(e => Object(v.S)(e, {
 						subredditId: r
 					})),
 					x = Object(l.d)(),
@@ -76,7 +76,7 @@
 					className: f.a.header
 				}, n.a.createElement(p.a, {
 					className: f.a.powerupsLogo
-				}), _._("{r/community} {=achievements}", [_._param("r/community", j.displayText), _._param("=achievements", n.a.createElement("span", {
+				}), _._("{r/community} {=achievements}", [_._param("r/community", O.displayText), _._param("=achievements", n.a.createElement("span", {
 					className: f.a.headerText
 				}, _._("achievements", null, {
 					hk: "1IkAza"
@@ -88,7 +88,7 @@
 					className: f.a.flairs,
 					onScroll: N,
 					ref: g
-				}, E.map(e => n.a.createElement(O, {
+				}, E.map(e => n.a.createElement(j, {
 					flair: e,
 					key: e.type
 				}))), n.a.createElement("div", {
@@ -106,7 +106,7 @@
 				}, _._("View your achievements", null, {
 					hk: "2ZyIE3"
 				}))))
-			}, O = e => {
+			}, j = e => {
 				let {
 					flair: t
 				} = e;
@@ -123,7 +123,7 @@
 					className: f.a.flairName
 				}, n.a.createElement("span", null, t.name)))
 			};
-			var j = r("./src/reddit/selectors/experiments/econ/index.ts"),
+			var O = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				x = r("./src/reddit/components/Econ/PowerupsFlair/UserAchievementFlair.m.less"),
 				I = r.n(x);
 			const g = e => {
@@ -160,12 +160,12 @@
 				if (Object(l.e)(e => Object(b.e)(e, {
 						subredditId: r,
 						userId: i
-					}) && Object(j.k)(e))) return null;
+					}) && Object(O.j)(e))) return null;
 				const h = m ? [u, ...m.achievementTypes].filter(Boolean) : null;
 				if (!(!!d || !!u) || !h) return null;
 				const f = (null == u ? void 0 : u.type) === (null == d ? void 0 : d.type) ? null : u,
 					_ = (f ? 1 : 0) + (d ? 1 : 0),
-					O = (null == h ? void 0 : h.length) - _;
+					j = (null == h ? void 0 : h.length) - _;
 				return n.a.createElement("span", {
 					className: Object(s.a)(I.a.container, t),
 					"data-testid": "achievement-flairs",
@@ -179,9 +179,9 @@
 					achievement: f
 				}), n.a.createElement(g, {
 					achievement: d
-				}), !!O && n.a.createElement("span", {
+				}), !!j && n.a.createElement("span", {
 					className: I.a.hiddenAchievementsCount
-				}, "+", O), c && p && n.a.createElement(E, {
+				}, "+", j), c && p && n.a.createElement(E, {
 					className: I.a.hoverPopup,
 					subredditId: r,
 					userId: i
@@ -324,4 +324,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.e2758db3c4829fbeb277.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserAchievementFlair.dc549bad0aef0aaad06b.js.map

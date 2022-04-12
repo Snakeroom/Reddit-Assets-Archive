@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.b17b1d3f5b95dfc9661c.js
-// Retrieved at 4/11/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.eabd63adf91bf1c525d4.js
+// Retrieved at 4/12/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -348,8 +348,8 @@
 						if (function(e) {
 								return Object(j.c)(e, {
 									experimentEligibilitySelector: j.a,
-									experimentName: f.yd
-								}) === f.ld
+									experimentName: f.xd
+								}) === f.kd
 							}(c())) {
 							const {
 								normalizeModQueueListingFromGql: e,
@@ -1304,4 +1304,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.b17b1d3f5b95dfc9661c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.eabd63adf91bf1c525d4.js.map

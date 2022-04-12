@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.33a521c4c638138db6df.js
-// Retrieved at 4/11/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.b9d1c17594b0d3048170.js
+// Retrieved at 4/12/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1487,7 +1487,7 @@
 						gqlContext: l
 					} = a;
 					const d = n();
-					if (!Object(h.i)(d)) return t((e => async (t, n, a) => {
+					if (!Object(h.h)(d)) return t((e => async (t, n, a) => {
 						let {
 							apiContext: l
 						} = a;
@@ -1542,7 +1542,7 @@
 						apiContext: l
 					} = c;
 					const d = a();
-					if (Object(h.i)(d)) return await n(k());
+					if (Object(h.h)(d)) return await n(k());
 					n(O());
 					try {
 						const s = await Object(i.c)({
@@ -6410,7 +6410,7 @@
 					cancelSubscriptionModalIsOpen: Object(Ce.b)("settings_optout_modal_id"),
 					premiumBenefitsModalIsOpen: Object(Ce.b)("premium_benefits_modal_id"),
 					premiumFeedbackModalIsOpen: Object(Ce.b)("premium_feedback_modal_id"),
-					isPremiumImprovedCancellationEnabled: je.w,
+					isPremiumImprovedCancellationEnabled: je.v,
 					goldExpiration: Ee.r,
 					hasAndroidSubscription: Ee.s,
 					hasIosSubscription: Ee.y,
@@ -13703,7 +13703,7 @@
 						return Object(re.c)(e, {
 							experimentName: se.wc,
 							experimentEligibilitySelector: re.a
-						}) === se.ld
+						}) === se.kd
 					}
 				}),
 				uo = Object(ge.u)(),
@@ -14234,7 +14234,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.F,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.ld
+			}) === s.kd
 		},
 		"./src/reddit/selectors/experiments/econ/avatarNfts.ts": function(e, t, n) {
 			"use strict";
@@ -14251,8 +14251,8 @@
 				}) === s.x.Enabled,
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Kc
-				}) === s.ld
+					experimentName: s.Jc
+				}) === s.kd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14422,4 +14422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.33a521c4c638138db6df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.b9d1c17594b0d3048170.js.map

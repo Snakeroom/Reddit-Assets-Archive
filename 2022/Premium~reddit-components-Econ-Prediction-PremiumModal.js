@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.19fb97c87e3b26968b6d.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.896400ff314f75b207d0.js
+// Retrieved at 4/12/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1260,7 +1260,7 @@
 						gqlContext: d
 					} = o;
 					const l = r();
-					if (!Object(b.i)(l)) return t((e => async (t, r, o) => {
+					if (!Object(b.h)(l)) return t((e => async (t, r, o) => {
 						let {
 							apiContext: d
 						} = o;
@@ -1315,7 +1315,7 @@
 						apiContext: d
 					} = s;
 					const l = o();
-					if (Object(b.i)(l)) return await r(w());
+					if (Object(b.h)(l)) return await r(w());
 					r(x());
 					try {
 						const n = await Object(i.c)({
@@ -2293,7 +2293,7 @@
 					i = Object(p.a)(),
 					s = Object(c.e)(g.m),
 					b = !!s,
-					O = Object(c.e)(e => !r && b && Object(y.x)(e)),
+					O = Object(c.e)(e => !r && b && Object(y.w)(e)),
 					k = Object(c.e)(g.j),
 					P = Object(c.e)(g.l);
 				if (!(null == P ? void 0 : P.length)) return o.a.createElement("div", null, o.a.createElement(u.a, {
@@ -2758,4 +2758,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.19fb97c87e3b26968b6d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.896400ff314f75b207d0.js.map

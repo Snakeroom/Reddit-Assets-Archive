@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.8e73f5ea142df7c9ce76.js
-// Retrieved at 4/11/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.9790025b166b092191d5.js
+// Retrieved at 4/12/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1548,7 +1548,7 @@
 						gqlContext: d
 					} = o;
 					const l = r();
-					if (!Object(f.i)(l)) return t((e => async (t, r, o) => {
+					if (!Object(f.h)(l)) return t((e => async (t, r, o) => {
 						let {
 							apiContext: d
 						} = o;
@@ -1603,7 +1603,7 @@
 						apiContext: d
 					} = i;
 					const l = o();
-					if (Object(f.i)(l)) return await r(x());
+					if (Object(f.h)(l)) return await r(x());
 					r(w());
 					try {
 						const n = await Object(c.c)({
@@ -1852,7 +1852,7 @@
 				} = e;
 				const j = Object(f.a)(),
 					v = Object(u.d)(),
-					P = Object(u.e)(m.i),
+					P = Object(u.e)(m.h),
 					E = Object(u.e)(M.a);
 				if (!!n || !P) {
 					const e = () => {
@@ -3536,7 +3536,7 @@
 				m = r("./node_modules/react-redux/es/index.js"),
 				b = r("./src/reddit/constants/experiments.ts"),
 				f = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(f.a)(b.Mc);
+			const h = Object(f.a)(b.Lc);
 			let g = null;
 
 			function y() {
@@ -3724,4 +3724,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.8e73f5ea142df7c9ce76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.9790025b166b092191d5.js.map

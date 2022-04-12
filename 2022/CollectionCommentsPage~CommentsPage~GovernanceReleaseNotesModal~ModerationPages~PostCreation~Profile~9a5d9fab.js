@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.8032b8f7d8dc3519edcb.js
-// Retrieved at 4/11/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.68237ff92cabf4812355.js
+// Retrieved at 4/12/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -85,16 +85,16 @@
 			const h = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Wd
+					experimentName: u.Vd
 				});
-				return Object(u.Ef)(t) ? void 0 : t
+				return Object(u.Df)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Xd
+					experimentName: u.Wd
 				});
-				return Object(u.Ef)(t) ? void 0 : t
-			}, (e, t) => e === u.Yd.Enabled && t === u.Yd.Enabled);
+				return Object(u.Df)(t) ? void 0 : t
+			}, (e, t) => e === u.Xd.Enabled && t === u.Xd.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -594,15 +594,15 @@
 					F = U > 0,
 					G = U < p.length - 1,
 					K = Object(h.a)(),
-					Y = Object(i.useRef)(null),
 					$ = Object(i.useRef)(null),
+					Y = Object(i.useRef)(null),
 					[z, J] = Object(i.useState)(H ? U : -1),
-					[q, Q] = Object(i.useState)(H ? U : -1),
-					X = Object(l.a)(H),
+					[q, X] = Object(i.useState)(H ? U : -1),
+					Q = Object(l.a)(H),
 					Z = Object(l.a)(U);
 				Object(i.useEffect)(() => {
-					(void 0 !== X && X !== H && H && z < 0 && q < 0 || void 0 !== Z && Z !== U && H && (z > U || q < U)) && (J(_(U, 1)), Q(D(U, p.length, 1)))
-				}, [X, U, H, z, q, Z, p.length, k]);
+					(void 0 !== Q && Q !== H && H && z < 0 && q < 0 || void 0 !== Z && Z !== U && H && (z > U || q < U)) && (J(_(U, 1)), X(D(U, p.length, 1)))
+				}, [Q, U, H, z, q, Z, p.length, k]);
 				const ee = Object(i.useRef)(),
 					te = Object(i.useCallback)(e => {
 						e.forEach(e => {
@@ -611,11 +611,11 @@
 							} = e;
 							t ? (z < 0 || q - z == 0) && (ee.current = setTimeout(() => {
 								const e = D(q, p.length);
-								e !== q && Q(e)
+								e !== q && X(e)
 							}, 1e3)) : (z < 0 || q - z == 0) && clearTimeout(ee.current)
 						})
 					}, [z, q, p.length]);
-				Object(o.a)($, te);
+				Object(o.a)(Y, te);
 				const se = Object(i.useCallback)(e => {
 						t(Object(x.f)({
 							postId: k,
@@ -636,7 +636,7 @@
 						const e = U + 1;
 						if (e + 1 >= q) {
 							const e = D(q, p.length);
-							e !== q && Q(e)
+							e !== q && X(e)
 						}
 						se(e), K(u.b(k, e)), K(u.d(k, e + 1)), ie(e)
 					}, [G, U, ie, se, K, k, q, p.length]),
@@ -654,7 +654,7 @@
 						const e = p[U] && p[U].outboundUrl;
 						e && K(u.c(k, e))
 					}, [K, k, U, p]);
-				m(y.a.ArrowLeft, Y.current, oe), m(y.a.ArrowRight, Y.current, ae);
+				m(y.a.ArrowLeft, $.current, oe), m(y.a.ArrowRight, $.current, ae);
 				const de = p[U] && p[U].caption,
 					le = p[U] && p[U].outboundUrl,
 					ce = ((e, t, s) => {
@@ -671,7 +671,7 @@
 					})(S, b, g);
 				return n.a.createElement("div", {
 					className: Object(r.a)(j.a.outerContainer),
-					ref: Y,
+					ref: $,
 					tabIndex: 0
 				}, T ? n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 					className: Object(r.a)(j.a.tilesWrapper, {
@@ -705,7 +705,7 @@
 				})) : n.a.createElement("div", {
 					className: j.a.slideshowContainer,
 					tabIndex: -1,
-					ref: $,
+					ref: Y,
 					onClick: e.onClickRevealBlurred,
 					style: ce
 				}, n.a.createElement("div", {
@@ -740,14 +740,14 @@
 					})
 				})), !e.shouldBlur && n.a.createElement(n.a.Fragment, null, n.a.createElement(M, {
 					onClick: oe,
-					setFocusTo: $,
+					setFocusTo: Y,
 					hasMoreSlides: F,
 					title: "Previous",
 					iconClassName: j.a.prevIcon,
 					className: j.a.prevButton
 				}), n.a.createElement(M, {
 					onClick: ae,
-					setFocusTo: $,
+					setFocusTo: Y,
 					hasMoreSlides: G,
 					title: "Next",
 					iconClassName: j.a.nextIcon,
@@ -1085,13 +1085,13 @@
 				F = s("./src/reddit/constants/componentSizes.ts"),
 				G = s("./src/reddit/constants/screenWidths.ts"),
 				K = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				Y = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
-				$ = s("./src/reddit/helpers/getRichTextContent/index.ts"),
+				$ = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
+				Y = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				z = s("./src/reddit/helpers/mediaGallery/index.tsx"),
 				J = s("./src/reddit/helpers/path/index.ts"),
 				q = s("./src/reddit/helpers/postHasSelfText/index.ts"),
-				Q = s("./src/reddit/helpers/stripMetaLinks/fromRawHtml.ts"),
-				X = s("./src/reddit/helpers/stripMetaLinks/fromRTJ.ts"),
+				X = s("./src/reddit/helpers/stripMetaLinks/fromRawHtml.ts"),
+				Q = s("./src/reddit/helpers/stripMetaLinks/fromRTJ.ts"),
 				Z = s("./src/reddit/models/Media/index.ts"),
 				ee = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				te = s("./src/reddit/selectors/experiments/postSeo.ts"),
@@ -1561,10 +1561,10 @@
 					if (!v.media) return null;
 					switch (v.media.type) {
 						case Z.o.RTJSON:
-							const e = Object($.a)(v, null);
+							const e = Object(Y.a)(v, null);
 							if (null === e) return null;
-							if (!w && !Object(Y.a)(v)) return null;
-							const n = v.isMeta ? Object(X.a)(e, v.id) : e;
+							if (!w && !Object($.a)(v)) return null;
+							const n = v.isMeta ? Object(Q.a)(e, v.id) : e;
 							return u.a.createElement(u.a.Fragment, null, be && u.a.createElement(k.a, {
 								canLoadContent: M,
 								className: s,
@@ -1612,7 +1612,7 @@
 									showFull: w
 								}, u.a.createElement(H.a, {
 									flairStyleTemplate: a,
-									html: v.isMeta ? Object(Q.a)(v.media.content, v.id, ue.a.hiddenLink) : v.media.content
+									html: v.isMeta ? Object(X.a)(v.media.content, v.id, ue.a.hiddenLink) : v.media.content
 								})), u.a.createElement(R.a, {
 									postId: v.id,
 									isCommentsPage: !!r
@@ -2141,4 +2141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.8032b8f7d8dc3519edcb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.68237ff92cabf4812355.js.map

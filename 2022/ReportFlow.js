@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.25606cfa8c404e48a9e5.js
-// Retrieved at 4/11/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.3fc05b7e6a95ae4cd139.js
+// Retrieved at 4/12/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -2216,7 +2216,7 @@
 						n.name
 					}),
 					isNightmodeOn: M.db,
-					isTalkReportingAllowed: L.B,
+					isTalkReportingAllowed: L.A,
 					locale: A.i
 				}),
 				z = Object(d.b)(W, (e, t) => {
@@ -3952,19 +3952,19 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.n
-					}) === s.ld
+					}) === s.kd
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.o
-					}) === s.ld
+					}) === s.kd
 				},
 				l = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.j
-					}) === s.ld
+					}) === s.kd
 				}
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, n) {
@@ -4012,4 +4012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.25606cfa8c404e48a9e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.3fc05b7e6a95ae4cd139.js.map

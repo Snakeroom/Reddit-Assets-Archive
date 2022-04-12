@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.3cb5511371b61c2368b4.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.908eeec039f9031c7fcc.js
+// Retrieved at 4/12/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ClaimFreeAwardModal"], {
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
@@ -38,7 +38,7 @@
 						gqlContext: i
 					} = a;
 					const l = r();
-					if (!Object(m.i)(l)) return t((e => async (t, r, a) => {
+					if (!Object(m.h)(l)) return t((e => async (t, r, a) => {
 						let {
 							apiContext: i
 						} = a;
@@ -93,7 +93,7 @@
 						apiContext: i
 					} = d;
 					const l = a();
-					if (Object(m.i)(l)) return await r(k());
+					if (Object(m.h)(l)) return await r(k());
 					r(_());
 					try {
 						const n = await Object(c.c)({
@@ -382,4 +382,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.3cb5511371b61c2368b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ClaimFreeAwardModal.908eeec039f9031c7fcc.js.map

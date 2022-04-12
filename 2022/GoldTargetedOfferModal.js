@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.d9d01f8b1cac30d4b94f.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.5a72b3d7d454b1bbdc5c.js
+// Retrieved at 4/12/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1013,7 +1013,7 @@
 						gqlContext: d
 					} = c;
 					const l = r();
-					if (!Object(m.i)(l)) return t((e => async (t, r, c) => {
+					if (!Object(m.h)(l)) return t((e => async (t, r, c) => {
 						let {
 							apiContext: d
 						} = c;
@@ -1068,7 +1068,7 @@
 						apiContext: d
 					} = s;
 					const l = c();
-					if (Object(m.i)(l)) return await r(w());
+					if (Object(m.h)(l)) return await r(w());
 					r(P());
 					try {
 						const n = await Object(i.c)({
@@ -1701,4 +1701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.d9d01f8b1cac30d4b94f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.5a72b3d7d454b1bbdc5c.js.map
