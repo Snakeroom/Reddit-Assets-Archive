@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.a888a5bfe1687856faa5.js
-// Retrieved at 4/12/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.a6f3662ed70e7a7a0f8a.js
+// Retrieved at 4/12/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, s) {
@@ -351,4 +351,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.a888a5bfe1687856faa5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.a6f3662ed70e7a7a0f8a.js.map

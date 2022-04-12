@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.57e711baa00b7ff97672.js
-// Retrieved at 4/12/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.68237ff92cabf4812355.js
+// Retrieved at 4/12/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -85,16 +85,16 @@
 			const h = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Td
+					experimentName: u.Vd
 				});
-				return Object(u.Bf)(t) ? void 0 : t
+				return Object(u.Df)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ud
+					experimentName: u.Wd
 				});
-				return Object(u.Bf)(t) ? void 0 : t
-			}, (e, t) => e === u.Vd.Enabled && t === u.Vd.Enabled);
+				return Object(u.Df)(t) ? void 0 : t
+			}, (e, t) => e === u.Xd.Enabled && t === u.Xd.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -597,12 +597,12 @@
 					$ = Object(i.useRef)(null),
 					Y = Object(i.useRef)(null),
 					[z, J] = Object(i.useState)(H ? U : -1),
-					[q, Q] = Object(i.useState)(H ? U : -1),
-					X = Object(l.a)(H),
+					[q, X] = Object(i.useState)(H ? U : -1),
+					Q = Object(l.a)(H),
 					Z = Object(l.a)(U);
 				Object(i.useEffect)(() => {
-					(void 0 !== X && X !== H && H && z < 0 && q < 0 || void 0 !== Z && Z !== U && H && (z > U || q < U)) && (J(_(U, 1)), Q(D(U, p.length, 1)))
-				}, [X, U, H, z, q, Z, p.length, k]);
+					(void 0 !== Q && Q !== H && H && z < 0 && q < 0 || void 0 !== Z && Z !== U && H && (z > U || q < U)) && (J(_(U, 1)), X(D(U, p.length, 1)))
+				}, [Q, U, H, z, q, Z, p.length, k]);
 				const ee = Object(i.useRef)(),
 					te = Object(i.useCallback)(e => {
 						e.forEach(e => {
@@ -611,7 +611,7 @@
 							} = e;
 							t ? (z < 0 || q - z == 0) && (ee.current = setTimeout(() => {
 								const e = D(q, p.length);
-								e !== q && Q(e)
+								e !== q && X(e)
 							}, 1e3)) : (z < 0 || q - z == 0) && clearTimeout(ee.current)
 						})
 					}, [z, q, p.length]);
@@ -636,7 +636,7 @@
 						const e = U + 1;
 						if (e + 1 >= q) {
 							const e = D(q, p.length);
-							e !== q && Q(e)
+							e !== q && X(e)
 						}
 						se(e), K(u.b(k, e)), K(u.d(k, e + 1)), ie(e)
 					}, [G, U, ie, se, K, k, q, p.length]),
@@ -1090,8 +1090,8 @@
 				z = s("./src/reddit/helpers/mediaGallery/index.tsx"),
 				J = s("./src/reddit/helpers/path/index.ts"),
 				q = s("./src/reddit/helpers/postHasSelfText/index.ts"),
-				Q = s("./src/reddit/helpers/stripMetaLinks/fromRawHtml.ts"),
-				X = s("./src/reddit/helpers/stripMetaLinks/fromRTJ.ts"),
+				X = s("./src/reddit/helpers/stripMetaLinks/fromRawHtml.ts"),
+				Q = s("./src/reddit/helpers/stripMetaLinks/fromRTJ.ts"),
 				Z = s("./src/reddit/models/Media/index.ts"),
 				ee = s("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				te = s("./src/reddit/selectors/experiments/postSeo.ts"),
@@ -1564,7 +1564,7 @@
 							const e = Object(Y.a)(v, null);
 							if (null === e) return null;
 							if (!w && !Object($.a)(v)) return null;
-							const n = v.isMeta ? Object(X.a)(e, v.id) : e;
+							const n = v.isMeta ? Object(Q.a)(e, v.id) : e;
 							return u.a.createElement(u.a.Fragment, null, be && u.a.createElement(k.a, {
 								canLoadContent: M,
 								className: s,
@@ -1612,7 +1612,7 @@
 									showFull: w
 								}, u.a.createElement(H.a, {
 									flairStyleTemplate: a,
-									html: v.isMeta ? Object(Q.a)(v.media.content, v.id, ue.a.hiddenLink) : v.media.content
+									html: v.isMeta ? Object(X.a)(v.media.content, v.id, ue.a.hiddenLink) : v.media.content
 								})), u.a.createElement(R.a, {
 									postId: v.id,
 									isCommentsPage: !!r
@@ -2141,4 +2141,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.57e711baa00b7ff97672.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.68237ff92cabf4812355.js.map

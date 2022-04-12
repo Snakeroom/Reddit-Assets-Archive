@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.aa5613b7a7dd44d4b80e.js
-// Retrieved at 4/12/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.7d145692c4c039ad55f3.js
+// Retrieved at 4/12/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -44,16 +44,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Td
+					experimentName: u.Vd
 				});
-				return Object(u.Bf)(t) ? void 0 : t
+				return Object(u.Df)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ud
+					experimentName: u.Wd
 				});
-				return Object(u.Bf)(t) ? void 0 : t
-			}, (e, t) => e === u.Vd.Enabled && t === u.Vd.Enabled);
+				return Object(u.Df)(t) ? void 0 : t
+			}, (e, t) => e === u.Xd.Enabled && t === u.Xd.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const E = e => {
@@ -113,8 +113,8 @@
 					localStorageViewerUserIdKey: f,
 					playerName: I,
 					playerVersion: y,
-					respectDoNotTrack: N,
-					saltLength: D,
+					respectDoNotTrack: D,
+					saltLength: N,
 					saltTimeToLive: T,
 					viewerUserIdLength: x
 				} = {
@@ -268,7 +268,7 @@
 						}
 					}
 				}
-				A.displayName = C(e), A.ANONYMOUS_USER_ID = s, A.DEBUG = d, A.DISABLE_COOKIES = u, A.DURATION_LIVE = 1 / 0, A.ENV_KEY = m, A.LOCAL_STORAGE_SALT_KEY = _, A.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, A.PLAYER_NAME = I, A.PLAYER_VERSION = y, A.RESPECT_DO_NOT_TRACK = N, A.SALT_LENGTH = D, A.SALT_TIME_TO_LIVE = T, A.STREAM_TYPE_LIVE = "live", A.STREAM_TYPE_ON_DEMAND = "on-demand", A.VIEWER_USER_ID_LENGTH = x;
+				A.displayName = C(e), A.ANONYMOUS_USER_ID = s, A.DEBUG = d, A.DISABLE_COOKIES = u, A.DURATION_LIVE = 1 / 0, A.ENV_KEY = m, A.LOCAL_STORAGE_SALT_KEY = _, A.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, A.PLAYER_NAME = I, A.PLAYER_VERSION = y, A.RESPECT_DO_NOT_TRACK = D, A.SALT_LENGTH = N, A.SALT_TIME_TO_LIVE = T, A.STREAM_TYPE_LIVE = "live", A.STREAM_TYPE_ON_DEMAND = "on-demand", A.VIEWER_USER_ID_LENGTH = x;
 				const L = Object(n.forwardRef)((e, t) => r.a.createElement(A, O({}, e, {
 						forwardedRef: t
 					}))),
@@ -382,9 +382,9 @@
 			})), s.d(t, "f", (function() {
 				return y
 			})), s.d(t, "g", (function() {
-				return N
-			})), s.d(t, "h", (function() {
 				return D
+			})), s.d(t, "h", (function() {
+				return N
 			})), s.d(t, "i", (function() {
 				return T
 			}));
@@ -601,7 +601,7 @@
 					data: s
 				}) : null
 			};
-			var N = Object(i.b)(() => Object(o.c)({
+			var D = Object(i.b)(() => Object(o.c)({
 				subreddit: E.S
 			}))(e => r.a.createElement(p, {
 				className: e.className,
@@ -614,7 +614,7 @@
 					} : {}
 				}
 			}));
-			var D = Object(i.b)(() => Object(o.c)({
+			var N = Object(i.b)(() => Object(o.c)({
 				subredditOrProfile: (e, t) => Object(E.K)(e, {
 					identifier: t
 				})
@@ -682,8 +682,8 @@
 				g = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
 				I = s("./src/reddit/helpers/trackers/rpan.ts"),
 				y = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
-				N = s("./src/reddit/models/Vote/index.ts"),
-				D = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
+				D = s("./src/reddit/models/Vote/index.ts"),
+				N = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				T = s("./src/reddit/selectors/platform.ts"),
 				x = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				A = s("./src/reddit/selectors/user.ts"),
@@ -706,9 +706,9 @@
 				q = s.n(K);
 			const {
 				fbt: Z
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 20, J = l.qc, $ = l.qc, Q = Object(c.a)(U.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = 20, J = l.qc, $ = l.qc, X = Object(c.a)(U.a, {
 				playerName: "RPAN DU Video Player"
-			}), X = Object(i.b)(() => Object(o.c)({
+			}), Q = Object(i.b)(() => Object(o.c)({
 				autoplay: A.b,
 				isLoggedIn: A.Q,
 				isOverlayOpen: T.i,
@@ -737,9 +737,9 @@
 					})
 				},
 				streamById: e => t => Object(x.l)(e, t),
-				rpanDuThresholdVariant: D.h,
-				inRpanDUPreloadExperiment: D.b,
-				inRpanDuTargetingExperiment: D.c
+				rpanDuThresholdVariant: N.h,
+				inRpanDUPreloadExperiment: N.b,
+				inRpanDuTargetingExperiment: N.c
 			}), (e, t) => ({
 				onHideRpanUnit: (s, n) => e(Object(h.E)(t.listingName, s, {
 					showToast: n.showToast
@@ -1055,7 +1055,7 @@
 					const s = 1e3 * t.broadcast_time,
 						n = t.post.id,
 						i = t.post.title;
-					return r.a.createElement(Q, {
+					return r.a.createElement(X, {
 						url: t.stream.hls_url,
 						autoplay: e,
 						controls: !1,
@@ -1095,7 +1095,7 @@
 							})
 						})
 					}, {
-						threshold: t ? Object(D.g)(t) : .01
+						threshold: t ? Object(N.g)(t) : .01
 					}), this.intersectionObserver.observe(e), this.loadingIntersectionObserver = new IntersectionObserver(e => {
 						e.forEach(e => {
 							this.setState({
@@ -1103,7 +1103,7 @@
 							})
 						})
 					}, {
-						threshold: t ? Object(D.g)(t) : .01,
+						threshold: t ? Object(N.g)(t) : .01,
 						rootMargin: s ? "400%" : "0px"
 					}), this.loadingIntersectionObserver.observe(e))
 				}
@@ -1164,7 +1164,7 @@
 					className: q.a.score,
 					isScoreHidden: !0,
 					score: 0,
-					voteState: N.a.notVoted
+					voteState: D.a.notVoted
 				})),
 				re = e => {
 					let {
@@ -1216,7 +1216,7 @@
 						name: "hide"
 					})))
 				};
-			t.default = X(Object(V.c)(se))
+			t.default = Q(Object(V.c)(se))
 		},
 		"./src/reddit/controls/MetaSeparator/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1411,9 +1411,9 @@
 			})), s.d(t, "j", (function() {
 				return y
 			})), s.d(t, "e", (function() {
-				return N
-			})), s.d(t, "x", (function() {
 				return D
+			})), s.d(t, "x", (function() {
+				return N
 			})), s.d(t, "u", (function() {
 				return T
 			})), s.d(t, "a", (function() {
@@ -1563,13 +1563,13 @@
 					noun: "schedule_post_cta",
 					...i(e)
 				}),
-				N = () => e => ({
+				D = () => e => ({
 					source: "recurring_post_module",
 					action: "click",
 					noun: "edit_recurring_post",
 					...i(e)
 				}),
-				D = () => e => ({
+				N = () => e => ({
 					source: "recurring_post_composer",
 					action: "view",
 					noun: "recurring_post_composer",
@@ -1773,7 +1773,7 @@
 			})), s.d(t, "l", (function() {
 				return y
 			})), s.d(t, "p", (function() {
-				return N
+				return D
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./src/lib/assertNever.ts"),
@@ -1848,7 +1848,7 @@
 							return Object(n.a)(e)
 					}
 				},
-				N = e => "frequency" in e && !!e.frequency
+				D = e => "frequency" in e && !!e.frequency
 		},
 		"./src/reddit/selectors/experiments/antievil/index.tsx": function(e, t, s) {
 			"use strict";
@@ -1909,4 +1909,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.aa5613b7a7dd44d4b80e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.7d145692c4c039ad55f3.js.map

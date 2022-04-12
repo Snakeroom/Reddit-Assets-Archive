@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.a094ce48a6a8797a5533.js
-// Retrieved at 4/12/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.68ac6ee1d5591b5c545b.js
+// Retrieved at 4/12/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -487,7 +487,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Bf)(p),
+						includeInterestTopics: !!p && !Object(b.Df)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: f && !(null === (a = null === (s = e.user.account) || void 0 === s ? void 0 : s.karma) || void 0 === a ? void 0 : a.total),
@@ -2629,10 +2629,10 @@
 			}
 			var qe = s("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(De.c)(e, {
-					experimentName: Fe.Nd,
+					experimentName: Fe.Pd,
 					experimentEligibilitySelector: De.a
 				}), qe.a),
-				We = Object(u.a)(Ue, e => e === Fe.Od.Enabled);
+				We = Object(u.a)(Ue, e => e === Fe.Qd.Enabled);
 			var Ve = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				He = s("./src/reddit/selectors/user.ts");
 			var Ge = s("./src/reddit/selectors/seo/linksModule.ts"),
@@ -7555,4 +7555,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.a094ce48a6a8797a5533.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.68ac6ee1d5591b5c545b.js.map

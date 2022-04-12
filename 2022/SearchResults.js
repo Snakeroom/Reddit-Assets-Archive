@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.56e6e6afe1a5196a9726.js
-// Retrieved at 4/12/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.c5bf847f98a453183587.js
+// Retrieved at 4/12/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -8133,12 +8133,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case C.gf.SmIcon:
+						case C.if.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case C.gf.SmIconHc:
+						case C.if.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -10346,10 +10346,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: r.xe,
+					experimentName: r.ze,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.Fe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.He.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.G, a, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -10376,12 +10376,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.af
+						experimentName: n.cf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.gf.SmIcon || t === n.gf.SmIconHc
+					return t === n.if.SmIcon || t === n.if.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -10422,4 +10422,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.56e6e6afe1a5196a9726.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.c5bf847f98a453183587.js.map
