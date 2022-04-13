@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.7f897a27639874e5e713.js
-// Retrieved at 4/13/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.5f95ca1fba0b2c8f9a46.js
+// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -577,7 +577,7 @@
 		"./src/reddit/components/Media/VideoBox/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return v
+				return y
 			}));
 			var s = n("./node_modules/lodash/throttle.js"),
 				r = n.n(s),
@@ -585,19 +585,20 @@
 				a = n.n(o),
 				i = n("./node_modules/react-redux/es/index.js"),
 				c = n("./node_modules/reselect/es/index.js"),
-				d = n("./src/lib/classNames/index.ts"),
-				l = n("./src/reddit/actions/video.ts"),
-				u = n("./src/reddit/constants/tracking.ts"),
-				m = n("./src/reddit/models/Media/index.ts"),
-				h = n("./src/reddit/selectors/user.ts"),
-				p = n("./src/reddit/selectors/video.ts");
-			const b = 100,
-				x = b / 2 / 1e3;
-			var f = n("./src/lib/forceHttps/index.ts"),
-				g = n("./src/lib/hooks/usePrevious.ts");
+				d = n("./node_modules/@reddit/adblock-detection/browser.js"),
+				l = n("./src/lib/classNames/index.ts"),
+				u = n("./src/reddit/actions/video.ts"),
+				m = n("./src/reddit/constants/tracking.ts"),
+				h = n("./src/reddit/models/Media/index.ts"),
+				p = n("./src/reddit/selectors/user.ts"),
+				b = n("./src/reddit/selectors/video.ts");
+			const x = 100,
+				f = x / 2 / 1e3;
+			var g = n("./src/lib/forceHttps/index.ts"),
+				E = n("./src/lib/hooks/usePrevious.ts");
 
-			function E() {
-				return (E = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -606,7 +607,7 @@
 				}).apply(this, arguments)
 			}
 
-			function _(e) {
+			function j(e) {
 				let {
 					autoplay: t,
 					isListing: n,
@@ -621,7 +622,7 @@
 				} = e;
 				const h = Object(o.useRef)(),
 					p = Object(o.useRef)(),
-					_ = Object(g.a)(c);
+					b = Object(E.a)(c);
 
 				function j(e) {
 					if (e) {
@@ -647,8 +648,8 @@
 							if (c = e.currentTime, s) return s = !1, void(i = c);
 							if (e.paused || e.seeking || !n) return void(i = c);
 							const r = a;
-							4 === e.readyState ? a = !1 : !a && c >= i && c < i + x ? a = !0 : a && c >= i && c > i + x && (a = !1), i = c, r !== a && t(a)
-						}, b);
+							4 === e.readyState ? a = !1 : !a && c >= i && c < i + f ? a = !0 : a && c >= i && c > i + f && (a = !1), i = c, r !== a && t(a)
+						}, x);
 						return () => {
 							clearInterval(d), e.removeEventListener("playing", o), e.removeEventListener("play", o), e.removeEventListener("loadeddata", r)
 						}
@@ -656,129 +657,130 @@
 						h.current && h.current()
 					}
 				}, []), Object(o.useEffect)(() => {
-					_ !== c && j(!c && (t || s))
-				}, [_, c, t, s]), a.a.createElement("video", E({}, m, {
+					b !== c && j(!c && (t || s))
+				}, [b, c, t, s]), a.a.createElement("video", _({}, m, {
 					ref: e => p.current = e,
 					muted: !0
 				}), a.a.createElement("source", {
-					src: Object(f.a)(u || "")
+					src: Object(g.a)(u || "")
 				}))
 			}
-			var j = n("./src/reddit/components/Media/VideoBox/index.m.less"),
-				C = n.n(j);
-			const O = Object(c.c)({
-				autoplayPref: h.b,
-				consumed: p.a,
-				loadTimes: p.f,
-				metadata: p.h,
-				started: p.k
+			var C = n("./src/reddit/components/Media/VideoBox/index.m.less"),
+				O = n.n(C);
+			const v = Object(c.c)({
+				autoplayPref: p.b,
+				consumed: b.a,
+				loadTimes: b.f,
+				metadata: b.h,
+				started: b.k
 			});
 
-			function v(e) {
+			function y(e) {
 				const {
 					autoplayPref: t,
 					consumed: n,
 					loadTimes: s,
 					metadata: o,
 					started: c
-				} = Object(i.e)(t => O(t, e)), {
-					postId: h,
-					shouldLoad: p,
-					source: b,
-					height: x,
-					isNotCardView: f,
-					showFull: g,
-					shouldPause: E,
-					width: j,
-					isListing: v,
-					className: y,
-					showCentered: w,
-					originalSource: T
-				} = e, I = Object(i.d)();
+				} = Object(i.e)(t => v(t, e)), {
+					postId: p,
+					shouldLoad: b,
+					source: x,
+					height: f,
+					isNotCardView: g,
+					showFull: E,
+					shouldPause: _,
+					width: C,
+					isListing: y,
+					className: w,
+					showCentered: T,
+					originalSource: I,
+					isPromoted: k
+				} = e, S = t && !(k && Object(d.hasAcceptableAds)()), N = Object(i.d)();
 
-				function k(e) {
-					I(e ? Object(l.r)(h) : Object(l.E)(h))
+				function L(e) {
+					N(e ? Object(u.r)(p) : Object(u.E)(p))
 				}
 
-				function S() {
-					return I(Object(l.z)({
-						postId: h
+				function M() {
+					return N(Object(u.z)({
+						postId: p
 					}))
 				}
-				const N = r()(e => {
+				const D = r()(e => {
 					if (n) return;
 					const {
 						target: t
 					} = e;
-					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && I(Object(l.s)(h))
+					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && N(Object(u.s)(p))
 				}, 200);
 
-				function L(e) {
-					e.persist(), N(e)
-				}
-
-				function M(e) {
-					var t;
-					(o || B(e), c) || (t = e.timeStamp, I(Object(l.A)(h, t)))
-				}
-
-				function D(e) {
-					I(Object(l.q)(h, e.timeStamp))
-				}
-
 				function B(e) {
+					e.persist(), D(e)
+				}
+
+				function R(e) {
+					var t;
+					(o || H(e), c) || (t = e.timeStamp, N(Object(u.A)(p, t)))
+				}
+
+				function P(e) {
+					N(Object(u.q)(p, e.timeStamp))
+				}
+
+				function H(e) {
 					! function(e) {
-						I(Object(l.D)({
+						N(Object(u.D)({
 							metadata: e,
-							postId: h
+							postId: p
 						}))
 					}({
-						id: h,
+						id: p,
 						length: 1e3 * e.target.duration,
 						originalHeight: e.target.videoHeight,
 						originalWidth: e.target.videoWidth
 					})
 				}
 
-				function R(e) {
-					s || M(e), o || B(e), I(Object(l.C)(h))
+				function F(e) {
+					s || R(e), o || H(e), N(Object(u.C)(p))
 				}
 
-				function P() {
+				function A() {
 					const e = {};
-					return w && (e.margin = "0 auto"), v || (e.maxHeight = `${m.e}px`), a.a.createElement(_, {
-						autoplay: t,
-						className: Object(d.a)(u.a, C.a.styledVideo),
-						height: x,
-						isListing: v,
-						isNotCardView: f,
-						key: h,
+					return T && (e.margin = "0 auto"), y || (e.maxHeight = `${h.e}px`), a.a.createElement(j, {
+						autoplay: S,
+						className: Object(l.a)(m.a, O.a.styledVideo),
+						height: f,
+						isListing: y,
+						isNotCardView: g,
+						key: p,
 						loop: !0,
-						onBufferingChange: k,
-						onLoadStart: D,
-						onLoadedData: M,
-						onLoadedMetadata: B,
-						onPause: S,
-						onPlaying: R,
-						onTimeUpdate: L,
-						shouldLoad: p,
-						shouldPause: E,
-						showCentered: w,
-						showFull: g,
-						source: b,
+						onBufferingChange: L,
+						onLoadStart: P,
+						onLoadedData: R,
+						onLoadedMetadata: H,
+						onPause: M,
+						onPlaying: F,
+						onTimeUpdate: B,
+						shouldLoad: b,
+						shouldPause: _,
+						showCentered: T,
+						showFull: E,
+						source: x,
 						style: e,
-						width: j
+						width: C
 					})
 				}
-				return v ? P() : a.a.createElement("div", {
-					className: Object(d.a)(C.a.container, y, {
-						[C.a.centered]: w
+				return y ? A() : a.a.createElement("div", {
+					className: Object(l.a)(O.a.container, w, {
+						[O.a.centered]: T
 					})
 				}, a.a.createElement("a", {
-					href: T,
+					href: I,
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, P()))
+				}, A()))
 			}
 		},
 		"./src/reddit/components/Media/index.m.less": function(e, t, n) {
@@ -2389,4 +2391,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.7f897a27639874e5e713.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.5f95ca1fba0b2c8f9a46.js.map

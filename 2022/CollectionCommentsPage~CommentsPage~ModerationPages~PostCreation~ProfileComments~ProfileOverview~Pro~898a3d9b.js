@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.d3d98e9c3a069440fa1a.js
-// Retrieved at 4/13/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.66dffd7e56b25ecd26d8.js
+// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -557,7 +557,7 @@
 		"./src/reddit/components/Media/VideoBox/index.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return y
+				return S
 			}));
 			var n = s("./node_modules/lodash/throttle.js"),
 				r = s.n(n),
@@ -565,19 +565,20 @@
 				i = s.n(o),
 				a = s("./node_modules/react-redux/es/index.js"),
 				c = s("./node_modules/reselect/es/index.js"),
-				d = s("./src/lib/classNames/index.ts"),
-				l = s("./src/reddit/actions/video.ts"),
-				u = s("./src/reddit/constants/tracking.ts"),
-				m = s("./src/reddit/models/Media/index.ts"),
-				p = s("./src/reddit/selectors/user.ts"),
-				b = s("./src/reddit/selectors/video.ts");
-			const h = 100,
-				x = h / 2 / 1e3;
-			var f = s("./src/lib/forceHttps/index.ts"),
-				E = s("./src/lib/hooks/usePrevious.ts");
+				d = s("./node_modules/@reddit/adblock-detection/browser.js"),
+				l = s("./src/lib/classNames/index.ts"),
+				u = s("./src/reddit/actions/video.ts"),
+				m = s("./src/reddit/constants/tracking.ts"),
+				p = s("./src/reddit/models/Media/index.ts"),
+				b = s("./src/reddit/selectors/user.ts"),
+				h = s("./src/reddit/selectors/video.ts");
+			const x = 100,
+				f = x / 2 / 1e3;
+			var E = s("./src/lib/forceHttps/index.ts"),
+				v = s("./src/lib/hooks/usePrevious.ts");
 
-			function v() {
-				return (v = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var n in s) Object.prototype.hasOwnProperty.call(s, n) && (e[n] = s[n])
@@ -586,7 +587,7 @@
 				}).apply(this, arguments)
 			}
 
-			function _(e) {
+			function g(e) {
 				let {
 					autoplay: t,
 					isListing: s,
@@ -601,7 +602,7 @@
 				} = e;
 				const p = Object(o.useRef)(),
 					b = Object(o.useRef)(),
-					_ = Object(E.a)(c);
+					h = Object(v.a)(c);
 
 				function g(e) {
 					if (e) {
@@ -627,8 +628,8 @@
 							if (c = e.currentTime, n) return n = !1, void(a = c);
 							if (e.paused || e.seeking || !s) return void(a = c);
 							const r = i;
-							4 === e.readyState ? i = !1 : !i && c >= a && c < a + x ? i = !0 : i && c >= a && c > a + x && (i = !1), a = c, r !== i && t(i)
-						}, h);
+							4 === e.readyState ? i = !1 : !i && c >= a && c < a + f ? i = !0 : i && c >= a && c > a + f && (i = !1), a = c, r !== i && t(i)
+						}, x);
 						return () => {
 							clearInterval(d), e.removeEventListener("playing", o), e.removeEventListener("play", o), e.removeEventListener("loadeddata", r)
 						}
@@ -636,129 +637,130 @@
 						p.current && p.current()
 					}
 				}, []), Object(o.useEffect)(() => {
-					_ !== c && g(!c && (t || n))
-				}, [_, c, t, n]), i.a.createElement("video", v({}, m, {
+					h !== c && g(!c && (t || n))
+				}, [h, c, t, n]), i.a.createElement("video", _({}, m, {
 					ref: e => b.current = e,
 					muted: !0
 				}), i.a.createElement("source", {
-					src: Object(f.a)(u || "")
+					src: Object(E.a)(u || "")
 				}))
 			}
-			var g = s("./src/reddit/components/Media/VideoBox/index.m.less"),
-				O = s.n(g);
-			const j = Object(c.c)({
-				autoplayPref: p.b,
-				consumed: b.a,
-				loadTimes: b.f,
-				metadata: b.h,
-				started: b.k
+			var O = s("./src/reddit/components/Media/VideoBox/index.m.less"),
+				j = s.n(O);
+			const y = Object(c.c)({
+				autoplayPref: b.b,
+				consumed: h.a,
+				loadTimes: h.f,
+				metadata: h.h,
+				started: h.k
 			});
 
-			function y(e) {
+			function S(e) {
 				const {
 					autoplayPref: t,
 					consumed: s,
 					loadTimes: n,
 					metadata: o,
 					started: c
-				} = Object(a.e)(t => j(t, e)), {
-					postId: p,
-					shouldLoad: b,
-					source: h,
-					height: x,
-					isNotCardView: f,
-					showFull: E,
-					shouldPause: v,
-					width: g,
-					isListing: y,
-					className: S,
-					showCentered: C,
-					originalSource: k
-				} = e, I = Object(a.d)();
+				} = Object(a.e)(t => y(t, e)), {
+					postId: b,
+					shouldLoad: h,
+					source: x,
+					height: f,
+					isNotCardView: E,
+					showFull: v,
+					shouldPause: _,
+					width: O,
+					isListing: S,
+					className: C,
+					showCentered: k,
+					originalSource: I,
+					isPromoted: T
+				} = e, L = t && !(T && Object(d.hasAcceptableAds)()), P = Object(a.d)();
 
-				function T(e) {
-					I(e ? Object(l.r)(p) : Object(l.E)(p))
+				function w(e) {
+					P(e ? Object(u.r)(b) : Object(u.E)(b))
 				}
 
-				function L() {
-					return I(Object(l.z)({
-						postId: p
+				function N() {
+					return P(Object(u.z)({
+						postId: b
 					}))
 				}
-				const P = r()(e => {
+				const M = r()(e => {
 					if (s) return;
 					const {
 						target: t
 					} = e;
-					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && I(Object(l.s)(p))
+					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && P(Object(u.s)(b))
 				}, 200);
 
-				function w(e) {
-					e.persist(), P(e)
-				}
-
-				function N(e) {
-					var t;
-					(o || R(e), c) || (t = e.timeStamp, I(Object(l.A)(p, t)))
-				}
-
-				function M(e) {
-					I(Object(l.q)(p, e.timeStamp))
-				}
-
 				function R(e) {
+					e.persist(), M(e)
+				}
+
+				function B(e) {
+					var t;
+					(o || H(e), c) || (t = e.timeStamp, P(Object(u.A)(b, t)))
+				}
+
+				function D(e) {
+					P(Object(u.q)(b, e.timeStamp))
+				}
+
+				function H(e) {
 					! function(e) {
-						I(Object(l.D)({
+						P(Object(u.D)({
 							metadata: e,
-							postId: p
+							postId: b
 						}))
 					}({
-						id: p,
+						id: b,
 						length: 1e3 * e.target.duration,
 						originalHeight: e.target.videoHeight,
 						originalWidth: e.target.videoWidth
 					})
 				}
 
-				function B(e) {
-					n || N(e), o || R(e), I(Object(l.C)(p))
+				function F(e) {
+					n || B(e), o || H(e), P(Object(u.C)(b))
 				}
 
-				function D() {
+				function U() {
 					const e = {};
-					return C && (e.margin = "0 auto"), y || (e.maxHeight = `${m.e}px`), i.a.createElement(_, {
-						autoplay: t,
-						className: Object(d.a)(u.a, O.a.styledVideo),
-						height: x,
-						isListing: y,
-						isNotCardView: f,
-						key: p,
+					return k && (e.margin = "0 auto"), S || (e.maxHeight = `${p.e}px`), i.a.createElement(g, {
+						autoplay: L,
+						className: Object(l.a)(m.a, j.a.styledVideo),
+						height: f,
+						isListing: S,
+						isNotCardView: E,
+						key: b,
 						loop: !0,
-						onBufferingChange: T,
-						onLoadStart: M,
-						onLoadedData: N,
-						onLoadedMetadata: R,
-						onPause: L,
-						onPlaying: B,
-						onTimeUpdate: w,
-						shouldLoad: b,
-						shouldPause: v,
-						showCentered: C,
-						showFull: E,
-						source: h,
+						onBufferingChange: w,
+						onLoadStart: D,
+						onLoadedData: B,
+						onLoadedMetadata: H,
+						onPause: N,
+						onPlaying: F,
+						onTimeUpdate: R,
+						shouldLoad: h,
+						shouldPause: _,
+						showCentered: k,
+						showFull: v,
+						source: x,
 						style: e,
-						width: g
+						width: O
 					})
 				}
-				return y ? D() : i.a.createElement("div", {
-					className: Object(d.a)(O.a.container, S, {
-						[O.a.centered]: C
+				return S ? U() : i.a.createElement("div", {
+					className: Object(l.a)(j.a.container, C, {
+						[j.a.centered]: k
 					})
 				}, i.a.createElement("a", {
-					href: k,
+					href: I,
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, D()))
+				}, U()))
 			}
 		},
 		"./src/reddit/components/Media/index.m.less": function(e, t, s) {
@@ -2941,4 +2943,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.d3d98e9c3a069440fa1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.66dffd7e56b25ecd26d8.js.map

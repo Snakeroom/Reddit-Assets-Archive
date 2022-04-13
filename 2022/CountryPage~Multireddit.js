@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.bb2e6d0e601cc890419b.js
-// Retrieved at 4/13/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.994b874065f6fb51db3a.js
+// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2868,7 +2868,7 @@
 		"./src/reddit/components/Media/VideoBox/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return k
+				return O
 			}));
 			var r = n("./node_modules/lodash/throttle.js"),
 				s = n.n(r),
@@ -2876,19 +2876,20 @@
 				i = n.n(o),
 				a = n("./node_modules/react-redux/es/index.js"),
 				c = n("./node_modules/reselect/es/index.js"),
-				d = n("./src/lib/classNames/index.ts"),
-				l = n("./src/reddit/actions/video.ts"),
-				u = n("./src/reddit/constants/tracking.ts"),
-				m = n("./src/reddit/models/Media/index.ts"),
-				p = n("./src/reddit/selectors/user.ts"),
-				h = n("./src/reddit/selectors/video.ts");
-			const b = 100,
-				f = b / 2 / 1e3;
-			var g = n("./src/lib/forceHttps/index.ts"),
-				x = n("./src/lib/hooks/usePrevious.ts");
+				d = n("./node_modules/@reddit/adblock-detection/browser.js"),
+				l = n("./src/lib/classNames/index.ts"),
+				u = n("./src/reddit/actions/video.ts"),
+				m = n("./src/reddit/constants/tracking.ts"),
+				p = n("./src/reddit/models/Media/index.ts"),
+				h = n("./src/reddit/selectors/user.ts"),
+				b = n("./src/reddit/selectors/video.ts");
+			const f = 100,
+				g = f / 2 / 1e3;
+			var x = n("./src/lib/forceHttps/index.ts"),
+				y = n("./src/lib/hooks/usePrevious.ts");
 
-			function y() {
-				return (y = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -2897,7 +2898,7 @@
 				}).apply(this, arguments)
 			}
 
-			function _(e) {
+			function w(e) {
 				let {
 					autoplay: t,
 					isListing: n,
@@ -2912,7 +2913,7 @@
 				} = e;
 				const p = Object(o.useRef)(),
 					h = Object(o.useRef)(),
-					_ = Object(x.a)(c);
+					b = Object(y.a)(c);
 
 				function w(e) {
 					if (e) {
@@ -2938,8 +2939,8 @@
 							if (c = e.currentTime, r) return r = !1, void(a = c);
 							if (e.paused || e.seeking || !n) return void(a = c);
 							const s = i;
-							4 === e.readyState ? i = !1 : !i && c >= a && c < a + f ? i = !0 : i && c >= a && c > a + f && (i = !1), a = c, s !== i && t(i)
-						}, b);
+							4 === e.readyState ? i = !1 : !i && c >= a && c < a + g ? i = !0 : i && c >= a && c > a + g && (i = !1), a = c, s !== i && t(i)
+						}, f);
 						return () => {
 							clearInterval(d), e.removeEventListener("playing", o), e.removeEventListener("play", o), e.removeEventListener("loadeddata", s)
 						}
@@ -2947,129 +2948,130 @@
 						p.current && p.current()
 					}
 				}, []), Object(o.useEffect)(() => {
-					_ !== c && w(!c && (t || r))
-				}, [_, c, t, r]), i.a.createElement("video", y({}, m, {
+					b !== c && w(!c && (t || r))
+				}, [b, c, t, r]), i.a.createElement("video", _({}, m, {
 					ref: e => h.current = e,
 					muted: !0
 				}), i.a.createElement("source", {
-					src: Object(g.a)(u || "")
+					src: Object(x.a)(u || "")
 				}))
 			}
-			var w = n("./src/reddit/components/Media/VideoBox/index.m.less"),
-				v = n.n(w);
-			const E = Object(c.c)({
-				autoplayPref: p.b,
-				consumed: h.a,
-				loadTimes: h.f,
-				metadata: h.h,
-				started: h.k
+			var v = n("./src/reddit/components/Media/VideoBox/index.m.less"),
+				E = n.n(v);
+			const k = Object(c.c)({
+				autoplayPref: h.b,
+				consumed: b.a,
+				loadTimes: b.f,
+				metadata: b.h,
+				started: b.k
 			});
 
-			function k(e) {
+			function O(e) {
 				const {
 					autoplayPref: t,
 					consumed: n,
 					loadTimes: r,
 					metadata: o,
 					started: c
-				} = Object(a.e)(t => E(t, e)), {
-					postId: p,
-					shouldLoad: h,
-					source: b,
-					height: f,
-					isNotCardView: g,
-					showFull: x,
-					shouldPause: y,
-					width: w,
-					isListing: k,
-					className: O,
-					showCentered: C,
-					originalSource: S
-				} = e, j = Object(a.d)();
+				} = Object(a.e)(t => k(t, e)), {
+					postId: h,
+					shouldLoad: b,
+					source: f,
+					height: g,
+					isNotCardView: x,
+					showFull: y,
+					shouldPause: _,
+					width: v,
+					isListing: O,
+					className: C,
+					showCentered: S,
+					originalSource: j,
+					isPromoted: T
+				} = e, N = t && !(T && Object(d.hasAcceptableAds)()), I = Object(a.d)();
 
-				function T(e) {
-					j(e ? Object(l.r)(p) : Object(l.E)(p))
+				function L(e) {
+					I(e ? Object(u.r)(h) : Object(u.E)(h))
 				}
 
-				function N() {
-					return j(Object(l.z)({
-						postId: p
+				function P() {
+					return I(Object(u.z)({
+						postId: h
 					}))
 				}
-				const I = s()(e => {
+				const D = s()(e => {
 					if (n) return;
 					const {
 						target: t
 					} = e;
-					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && j(Object(l.s)(p))
+					t && t.played && 1 === t.played.length && 0 === t.played.start(0) && t.played.end(0) === t.duration && I(Object(u.s)(h))
 				}, 200);
 
-				function L(e) {
-					e.persist(), I(e)
-				}
-
-				function P(e) {
-					var t;
-					(o || R(e), c) || (t = e.timeStamp, j(Object(l.A)(p, t)))
-				}
-
-				function D(e) {
-					j(Object(l.q)(p, e.timeStamp))
-				}
-
 				function R(e) {
+					e.persist(), D(e)
+				}
+
+				function B(e) {
+					var t;
+					(o || F(e), c) || (t = e.timeStamp, I(Object(u.A)(h, t)))
+				}
+
+				function M(e) {
+					I(Object(u.q)(h, e.timeStamp))
+				}
+
+				function F(e) {
 					! function(e) {
-						j(Object(l.D)({
+						I(Object(u.D)({
 							metadata: e,
-							postId: p
+							postId: h
 						}))
 					}({
-						id: p,
+						id: h,
 						length: 1e3 * e.target.duration,
 						originalHeight: e.target.videoHeight,
 						originalWidth: e.target.videoWidth
 					})
 				}
 
-				function B(e) {
-					r || P(e), o || R(e), j(Object(l.C)(p))
+				function A(e) {
+					r || B(e), o || F(e), I(Object(u.C)(h))
 				}
 
-				function M() {
+				function H() {
 					const e = {};
-					return C && (e.margin = "0 auto"), k || (e.maxHeight = `${m.e}px`), i.a.createElement(_, {
-						autoplay: t,
-						className: Object(d.a)(u.a, v.a.styledVideo),
-						height: f,
-						isListing: k,
-						isNotCardView: g,
-						key: p,
+					return S && (e.margin = "0 auto"), O || (e.maxHeight = `${p.e}px`), i.a.createElement(w, {
+						autoplay: N,
+						className: Object(l.a)(m.a, E.a.styledVideo),
+						height: g,
+						isListing: O,
+						isNotCardView: x,
+						key: h,
 						loop: !0,
-						onBufferingChange: T,
-						onLoadStart: D,
-						onLoadedData: P,
-						onLoadedMetadata: R,
-						onPause: N,
-						onPlaying: B,
-						onTimeUpdate: L,
-						shouldLoad: h,
-						shouldPause: y,
-						showCentered: C,
-						showFull: x,
-						source: b,
+						onBufferingChange: L,
+						onLoadStart: M,
+						onLoadedData: B,
+						onLoadedMetadata: F,
+						onPause: P,
+						onPlaying: A,
+						onTimeUpdate: R,
+						shouldLoad: b,
+						shouldPause: _,
+						showCentered: S,
+						showFull: y,
+						source: f,
 						style: e,
-						width: w
+						width: v
 					})
 				}
-				return k ? M() : i.a.createElement("div", {
-					className: Object(d.a)(v.a.container, O, {
-						[v.a.centered]: C
+				return O ? H() : i.a.createElement("div", {
+					className: Object(l.a)(E.a.container, C, {
+						[E.a.centered]: S
 					})
 				}, i.a.createElement("a", {
-					href: S,
+					href: j,
 					target: "_blank",
 					rel: "noopener noreferrer"
-				}, M()))
+				}, H()))
 			}
 		},
 		"./src/reddit/components/Media/index.m.less": function(e, t, n) {
@@ -6328,7 +6330,7 @@
 						experimentEligibilitySelector: o.Q,
 						experimentName: r.Hc
 					});
-					return !(!t || Object(r.Ef)(t))
+					return !(!t || Object(r.Gf)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -6513,4 +6515,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.bb2e6d0e601cc890419b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.994b874065f6fb51db3a.js.map

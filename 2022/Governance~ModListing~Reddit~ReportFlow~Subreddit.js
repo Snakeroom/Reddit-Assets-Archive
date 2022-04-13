@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.f365ec539e94fef09b8a.js
-// Retrieved at 4/13/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.3d7ab19530933640e21d.js
+// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -3526,7 +3526,7 @@
 						} = t;
 						var b, p;
 						const f = Object(Ie.b)(e),
-							m = !!f && !Object(Oe.Ef)(f) && (i || f === Oe.ib.Community),
+							m = !!f && !Object(Oe.Gf)(f) && (i || f === Oe.ib.Community),
 							_ = {
 								subredditName: s,
 								isFake: i,
@@ -7079,7 +7079,7 @@
 					experimentEligibilitySelector: y.a,
 					experimentName: h.Ud
 				});
-				return !(!t || Object(h.Ef)(t))
+				return !(!t || Object(h.Gf)(t))
 			};
 			var E = r("./src/reddit/actions/widgets/constants.ts");
 			const T = Object(s.a)(E.g),
@@ -9335,7 +9335,7 @@
 								experimentName: i.H,
 								expEventOverride: t
 							});
-							return !!(Object(i.Ef)(r) ? void 0 : r)
+							return !!(Object(i.Gf)(r) ? void 0 : r)
 						})(r)) || (e => !1 !== e.collapsed)(t)
 					})
 				}
@@ -13950,9 +13950,9 @@
 				}),
 				d = (e, t, r) => {
 					const i = r(e, t);
-					return !(!i || !i.meter) && (i.meter.enabled && n.tf.Enabled === Object(s.c)(e, {
+					return !(!i || !i.meter) && (i.meter.enabled && n.uf.Enabled === Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.sf
+						experimentName: n.tf
 					}))
 				},
 				c = e => Object(s.c)(e, {
@@ -14015,9 +14015,9 @@
 					experimentName: s.vc,
 					experimentEligibilitySelector: e => c(e, t)
 				}), e => e),
-				u = e => e === s.pf.NoCommunityWidgets,
-				l = e => e === s.pf.NoRulesModerators,
-				b = e => e === s.pf.RelatedPostsDu
+				u = e => e === s.qf.NoCommunityWidgets,
+				l = e => e === s.qf.NoRulesModerators,
+				b = e => e === s.qf.RelatedPostsDu
 		},
 		"./src/reddit/selectors/externalAccount.ts": function(e, t, r) {
 			"use strict";
@@ -14407,7 +14407,7 @@
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				O = Object(s.a)(l.b, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.Ef)(e) ? t : null),
+				O = Object(s.a)(l.b, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.Gf)(e) ? t : null),
 				j = Object(s.a)(l.b, (e, t) => {
 					let {
 						pageLayer: r
@@ -15122,4 +15122,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.f365ec539e94fef09b8a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.3d7ab19530933640e21d.js.map
