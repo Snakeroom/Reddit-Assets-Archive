@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.7327288b5fb709ce6f58.js
-// Retrieved at 4/12/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.3df3422488f0f8d3efe1.js
+// Retrieved at 4/13/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -8261,6 +8261,7 @@
 						name: "user",
 						className: pl.a.defaultProfileIcon
 					})))(e.user), m.a.createElement(Zn.a, {
+						className: pl.a.caretDownIcon,
 						name: "caret_down"
 					})), m.a.createElement(ar.a, null, o.fbt._("User account menu", null, {
 						hk: "2TJXIP"
@@ -11240,6 +11241,7 @@
 			e.exports = {
 				accountCoins: "_2pXW42IYsGP59qZnjAnkAx",
 				accountDisplayText: "DFKWwVItcycZV1bKUOyay",
+				caretDownIcon: "_3x3dhQasGAuYcXVQ02QUzy",
 				accountKarma: "Rz5N3cHNgTGZsIQJqBfgk",
 				accountDetails: "_1pHyKCBktIf_9WFW9jjM3P",
 				accountWrapper: "_3KfbpxpA8Esu_3UHTmIvfw",
@@ -18517,4 +18519,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "ModListing~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.7327288b5fb709ce6f58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.3df3422488f0f8d3efe1.js.map
