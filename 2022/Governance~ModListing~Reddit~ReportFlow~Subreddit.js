@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.3282966aece466ee57fd.js
-// Retrieved at 4/12/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.8aa0e0dd7158efbfd88d.js
+// Retrieved at 4/13/2022, 12:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -14375,39 +14375,45 @@
 		"./src/reddit/selectors/onboarding.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
-				return p
-			})), r.d(t, "d", (function() {
 				return f
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "d", (function() {
 				return m
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "a", (function() {
 				return _
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "b", (function() {
 				return O
+			})), r.d(t, "e", (function() {
+				return j
 			}));
 			var n = r("./src/lib/safeJSONParse/index.ts"),
 				s = r("./node_modules/reselect/es/index.js"),
 				i = r("./src/reddit/constants/experiments.ts"),
 				o = r("./src/reddit/constants/parameters.ts"),
-				d = r("./src/reddit/helpers/onboarding/reonboarding.ts"),
-				c = r("./src/reddit/selectors/activeModal.ts"),
-				a = r("./src/reddit/selectors/emailVerification.ts"),
-				u = r("./src/reddit/selectors/experiments/onboarding.ts"),
-				l = r("./src/reddit/selectors/platform.ts"),
-				b = r("./src/reddit/selectors/user.ts");
-			const p = e => {
-					const t = Object(l.q)(e);
+				d = r("./src/reddit/contexts/PageLayer/selectors.ts"),
+				c = r("./src/reddit/helpers/onboarding/reonboarding.ts"),
+				a = r("./src/reddit/selectors/activeModal.ts"),
+				u = r("./src/reddit/selectors/emailVerification.ts"),
+				l = r("./src/reddit/selectors/experiments/onboarding.ts"),
+				b = r("./src/reddit/selectors/platform.ts"),
+				p = r("./src/reddit/selectors/user.ts");
+			const f = e => {
+					const t = Object(b.q)(e);
 					return Boolean((null == t ? void 0 : t[o.x]) && Object(n.a)(t[o.x]))
 				},
-				f = Object(s.a)(b.Q, b.P, p, (e, t, r) => (e || t) && r),
-				m = e => {
+				m = Object(s.a)(p.Q, p.P, f, (e, t, r) => (e || t) && r),
+				_ = e => {
 					const {
 						genderUpdateState: t
 					} = e.onboarding;
 					if (t.success || t.failure) return t
 				},
-				_ = Object(s.a)(u.b, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.Df)(e) ? t : null),
-				O = Object(s.a)(u.b, c.b, a.a, (e, t, r) => e === i.ib.PopoverFeed15 && Object(d.c)() && !t && !r)
+				O = Object(s.a)(l.b, e => e.onboarding.interestTopicRecommendationsState, (e, t) => e && !Object(i.Df)(e) ? t : null),
+				j = Object(s.a)(l.b, (e, t) => {
+					let {
+						pageLayer: r
+					} = t;
+					return Object(d.H)(r) || Object(d.I)(r) || Object(d.x)(r)
+				}, a.b, u.a, (e, t, r, n) => e === i.ib.PopoverFeed15 && t && Object(c.c)() && !r && !n)
 		},
 		"./src/reddit/selectors/seo/linksModule.ts": function(e, t, r) {
 			"use strict";
@@ -15116,4 +15122,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.3282966aece466ee57fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.8aa0e0dd7158efbfd88d.js.map
