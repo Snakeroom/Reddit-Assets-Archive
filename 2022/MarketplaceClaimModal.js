@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.882e653a910154cc9dd3.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.26730839f4d57b48c988.js
+// Retrieved at 4/14/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, n) {
@@ -15,22 +15,24 @@
 		"./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
+				return l
 			}));
 			var r = n("./node_modules/@reddit/crypto/react/config/index.es.js"),
 				a = n("./node_modules/react/index.js"),
 				s = n.n(a),
 				c = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/reddit/selectors/user.ts"),
-				i = n("./src/config.ts");
-			const d = e => {
+				o = n("./src/reddit/hooks/useTracking.ts"),
+				i = n("./src/reddit/selectors/user.ts"),
+				d = n("./src/config.ts");
+			const l = e => {
 				let {
 					children: t
 				} = e;
 				const n = function() {
-					const e = Object(c.e)(u),
-						t = Object(c.e)(o.db);
-					l || (l = function(e, t) {
+					const e = Object(c.e)(m),
+						t = Object(c.e)(i.db),
+						n = Object(o.a)();
+					u || (u = function(e, t, n) {
 						return {
 							api: {
 								accessToken: e
@@ -42,25 +44,29 @@
 								plural: (e, t) => s.a.createElement(s.a.Fragment, null, e)
 							},
 							gql: {
-								host: i.a.gqlUrl,
+								host: d.a.gqlUrl,
 								fetchOptions: {
 									headers: {
 										Authorization: `Bearer ${e}`
 									}
 								}
 							},
-							nightModeActive: () => t
+							nightModeActive: () => t,
+							sendEvent: () => n,
+							stripe: {
+								apiKey: ""
+							}
 						}
-					}(e, t));
-					return l
+					}(e, t, n));
+					return u
 				}();
 				return s.a.createElement(r.a, {
 					value: n
 				}, t)
 			};
-			let l = null;
+			let u = null;
 
-			function u(e) {
+			function m(e) {
 				var t;
 				return (null === (t = e.user.session) || void 0 === t ? void 0 : t.accessToken) || ""
 			}
@@ -90,8 +96,8 @@
 				E = n("./src/reddit/helpers/avatarRouting.ts"),
 				v = n("./src/reddit/selectors/activeModal.ts"),
 				_ = n("./src/reddit/selectors/user.ts"),
-				C = n("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
-				O = n.n(C);
+				O = n("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
+				C = n.n(O);
 
 			function f() {
 				return (f = Object.assign || function(e) {
@@ -114,7 +120,7 @@
 						a = Object(c.d)();
 					if (!n || !r) return null;
 					return s.a.createElement("div", {
-						className: O.a.container
+						className: C.a.container
 					}, s.a.createElement(p.a, null, s.a.createElement(o.a, {
 						onClose: t,
 						userId: n,
@@ -150,7 +156,7 @@
 				M = Object(r.a)(b);
 			t.default = e => s.a.createElement(M, f({
 				withOverlay: !0,
-				className: O.a.modal
+				className: C.a.modal
 			}, e))
 		},
 		"./src/reddit/helpers/avatarRouting.ts": function(e, t, n) {
@@ -165,4 +171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.882e653a910154cc9dd3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.26730839f4d57b48c988.js.map

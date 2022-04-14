@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/3.7ce3077f47ef73561717.js
-// Retrieved at 3/9/2022, 5:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/3.3c0db76a08091e5390b4.js
+// Retrieved at 4/14/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[3], {
 		"./node_modules/@reddit/crypto/react/nft-product-card/index.es.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return Is
+				return Fs
 			}));
 			var r = n("./node_modules/react/index.js"),
 				i = n.n(r),
@@ -114,13 +114,13 @@
 				return r
 			}
 
-			function j() {
+			function T() {
 				for (var e, t, n = 0, r = ""; n < arguments.length;)(e = arguments[n++]) && (t = P(e)) && (r && (r += " "), r += t);
 				return r
 			}
 
-			function T(e) {
-				return (T = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+			function j(e) {
+				return (j = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
 					return typeof e
 				} : function(e) {
 					return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
@@ -128,7 +128,7 @@
 			}
 
 			function M(e) {
-				return e && "object" === T(e) && e.constructor === Object
+				return e && "object" === j(e) && e.constructor === Object
 			}
 
 			function A(e, t) {
@@ -401,7 +401,7 @@
 					function e(e, t, n) {
 						this.type = "conditional", this.isProcessed = !1, this.key = e;
 						var r = e.match(se);
-						for (var i in this.at = r ? r[1] : "unknown", this.query = n.name || "@" + this.at, this.options = n, this.rules = new Te(b({}, n, {
+						for (var i in this.at = r ? r[1] : "unknown", this.query = n.name || "@" + this.at, this.options = n, this.rules = new je(b({}, n, {
 								parent: this
 							})), t) this.rules.add(i, t[i]);
 						this.rules.process()
@@ -444,7 +444,7 @@
 						var i = n.scoped,
 							a = n.sheet,
 							o = n.generateId;
-						for (var s in this.id = !1 === i ? this.name : ne(o(this, a)), this.rules = new Te(b({}, n, {
+						for (var s in this.id = !1 === i ? this.name : ne(o(this, a)), this.rules = new je(b({}, n, {
 								parent: this
 							})), t) this.rules.add(s, t[s], b({}, n, {
 							parent: this
@@ -564,11 +564,11 @@
 				Pe = {
 					process: !0
 				},
-				je = {
+				Te = {
 					force: !0,
 					process: !0
 				},
-				Te = function() {
+				je = function() {
 					function e(e) {
 						this.map = {}, this.raw = {}, this.index = [], this.counter = 0, this.options = e, this.classes = e.classes, this.keyframes = e.keyframes
 					}
@@ -637,12 +637,12 @@
 							if (a.onUpdate(n, t, o, r), r.process && s && s !== t.style) {
 								for (var l in a.onProcessStyle(t.style, t, o), t.style) {
 									var c = t.style[l];
-									c !== s[l] && t.prop(l, c, je)
+									c !== s[l] && t.prop(l, c, Te)
 								}
 								for (var u in s) {
 									var d = t.style[u],
 										f = s[u];
-									null == d && d !== f && t.prop(u, null, je)
+									null == d && d !== f && t.prop(u, null, Te)
 								}
 							}
 						}
@@ -661,7 +661,7 @@
 								parent: this,
 								classes: this.classes,
 								keyframes: this.keyframes
-							}), t.Renderer && (this.renderer = new t.Renderer(this)), this.rules = new Te(this.options), e) this.rules.add(n, e[n]);
+							}), t.Renderer && (this.renderer = new t.Renderer(this)), this.rules = new je(this.options), e) this.rules.add(n, e[n]);
 						this.rules.process()
 					}
 					var t = e.prototype;
@@ -1052,7 +1052,7 @@
 				ot = "@global ",
 				st = function() {
 					function e(e, t, n) {
-						for (var r in this.type = "global", this.at = at, this.isProcessed = !1, this.key = e, this.options = n, this.rules = new Te(b({}, n, {
+						for (var r in this.type = "global", this.at = at, this.isProcessed = !1, this.key = e, this.options = n, this.rules = new je(b({}, n, {
 								parent: this
 							})), t) this.rules.add(r, t[r]);
 						this.rules.process()
@@ -1383,8 +1383,8 @@
 				}
 			}
 			var Pt = "",
-				jt = "",
 				Tt = "",
+				jt = "",
 				Mt = "",
 				At = q && "ontouchstart" in document.documentElement;
 			if (q) {
@@ -1397,15 +1397,15 @@
 					It = document.createElement("p").style;
 				for (var Ft in Rt)
 					if (Ft + "Transform" in It) {
-						Pt = Ft, jt = Rt[Ft];
+						Pt = Ft, Tt = Rt[Ft];
 						break
 					}
-				"Webkit" === Pt && "msHyphens" in It && (Pt = "ms", jt = Rt.ms, Mt = "edge"), "Webkit" === Pt && "-apple-trailing-word" in It && (Tt = "apple")
+				"Webkit" === Pt && "msHyphens" in It && (Pt = "ms", Tt = Rt.ms, Mt = "edge"), "Webkit" === Pt && "-apple-trailing-word" in It && (jt = "apple")
 			}
 			var Dt = {
 				js: Pt,
-				css: jt,
-				vendor: Tt,
+				css: Tt,
+				vendor: jt,
 				browser: Mt,
 				isTouch: At
 			};
@@ -1733,8 +1733,8 @@
 					sheetsManager: new Map,
 					sheetsRegistry: null
 				},
-				jn = i.a.createContext(Pn),
-				Tn = -1e9;
+				Tn = i.a.createContext(Pn),
+				jn = -1e9;
 			var Mn = {};
 
 			function An(e, t, n) {
@@ -1865,7 +1865,7 @@
 					}(e),
 					u = n || r || "makeStyles";
 				c.options = {
-					index: Tn += 1,
+					index: jn += 1,
 					name: n,
 					meta: u,
 					classNamePrefix: u
@@ -1873,7 +1873,7 @@
 				return function() {
 					var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
 						t = En() || s,
-						r = b({}, i.a.useContext(jn), l),
+						r = b({}, i.a.useContext(Tn), l),
 						o = i.a.useRef(),
 						u = i.a.useRef();
 					Dn((function() {
@@ -2190,7 +2190,7 @@
 					A400: "#ff9100",
 					A700: "#ff6d00"
 				},
-				jr = {
+				Tr = {
 					50: "#e3f2fd",
 					100: "#bbdefb",
 					200: "#90caf9",
@@ -2206,7 +2206,7 @@
 					A400: "#2979ff",
 					A700: "#2962ff"
 				},
-				Tr = {
+				jr = {
 					50: "#e8f5e9",
 					100: "#c8e6c9",
 					200: "#a5d6a7",
@@ -2384,15 +2384,15 @@
 					} : s,
 					c = e.info,
 					u = void 0 === c ? {
-						light: jr[300],
-						main: jr[500],
-						dark: jr[700]
-					} : c,
-					d = e.success,
-					f = void 0 === d ? {
 						light: Tr[300],
 						main: Tr[500],
 						dark: Tr[700]
+					} : c,
+					d = e.success,
+					f = void 0 === d ? {
+						light: jr[300],
+						main: jr[500],
+						dark: jr[700]
 					} : d,
 					p = e.type,
 					m = void 0 === p ? "light" : p,
@@ -2677,7 +2677,7 @@
 						f = void 0 === d ? "elevation" : d,
 						p = S(e, ["classes", "className", "component", "square", "elevation", "variant"]);
 					return r.createElement(o, b({
-						className: j(n.root, i, "outlined" === f ? n.outlined : n["elevation".concat(u)], !l && n.rounded),
+						className: T(n.root, i, "outlined" === f ? n.outlined : n["elevation".concat(u)], !l && n.rounded),
 						ref: t
 					}, p))
 				})),
@@ -2734,7 +2734,7 @@
 						"rtl" === f.direction && (v = -v), m.bar2.transform = "translateX(".concat(v, "%)")
 					}
 					return r.createElement("div", b({
-						className: j(n.root, n["color".concat(ci(o))], i, {
+						className: T(n.root, n["color".concat(ci(o))], i, {
 							determinate: n.determinate,
 							indeterminate: n.indeterminate,
 							buffer: n.buffer,
@@ -2744,15 +2744,15 @@
 					}, p, {
 						ref: t
 					}, d), "buffer" === u ? r.createElement("div", {
-						className: j(n.dashed, n["dashedColor".concat(ci(o))])
+						className: T(n.dashed, n["dashedColor".concat(ci(o))])
 					}) : null, r.createElement("div", {
-						className: j(n.bar, n["barColor".concat(ci(o))], ("indeterminate" === u || "query" === u) && n.bar1Indeterminate, {
+						className: T(n.bar, n["barColor".concat(ci(o))], ("indeterminate" === u || "query" === u) && n.bar1Indeterminate, {
 							determinate: n.bar1Determinate,
 							buffer: n.bar1Buffer
 						} [u]),
 						style: m.bar1
 					}), "determinate" === u ? null : r.createElement("div", {
-						className: j(n.bar, ("indeterminate" === u || "query" === u) && n.bar2Indeterminate, "buffer" === u ? [n["color".concat(ci(o))], n.bar2Buffer] : n["barColor".concat(ci(o))]),
+						className: T(n.bar, ("indeterminate" === u || "query" === u) && n.bar2Indeterminate, "buffer" === u ? [n["color".concat(ci(o))], n.bar2Buffer] : n["barColor".concat(ci(o))]),
 						style: m.bar2
 					}))
 				})),
@@ -2898,14 +2898,14 @@
 					return r.createElement(li, b({
 						square: !0,
 						elevation: 0,
-						className: j(o.root, o["position".concat(ci(d))], s),
+						className: T(o.root, o["position".concat(ci(d))], s),
 						ref: t
 					}, h), a, "text" === m && r.createElement(r.Fragment, null, i + 1, " / ", f), "dots" === m && r.createElement("div", {
 						className: o.dots
 					}, _(new Array(f)).map((function(e, t) {
 						return r.createElement("div", {
 							key: t,
-							className: j(o.dot, t === i && o.dotActive)
+							className: T(o.dot, t === i && o.dotActive)
 						})
 					}))), "progress" === m && r.createElement(di, b({
 						className: o.progress,
@@ -3063,13 +3063,13 @@
 				}, Oi(e)
 			}
 			var Pi = Oi;
-			var ji = Pi,
-				Ti = function(e) {
+			var Ti = Pi,
+				ji = function(e) {
 					if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
 					return e
 				};
 			var Mi = function(e, t) {
-				return !t || "object" !== ji(t) && "function" != typeof t ? Ti(e) : t
+				return !t || "object" !== Ti(t) && "function" != typeof t ? ji(e) : t
 			};
 
 			function Ai(e) {
@@ -3677,14 +3677,14 @@
 			Object.defineProperty(Oa, "__esModule", {
 				value: !0
 			});
-			var Pa, ja = Object.assign || function(e) {
+			var Pa, Ta = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
 					}
 					return e
 				},
-				Ta = function() {
+				ja = function() {
 					function e(e, t) {
 						for (var n = 0; n < t.length; n++) {
 							var r = t[n];
@@ -3734,7 +3734,7 @@
 								configurable: !0
 							}
 						}), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
-					}(t, e), Ta(t, [{
+					}(t, e), ja(t, [{
 						key: "componentDidMount",
 						value: function() {
 							this.element = (0, Ra.findDOMNode)(this)
@@ -3750,7 +3750,7 @@
 							var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : function() {},
 								t = arguments[1];
 							return this.updateElementPosition(), this.setState(Object.assign({}, this.state, {
-								style: ja({}, this.state.style, {
+								style: Ta({}, this.state.style, {
 									willChange: "transform"
 								})
 							})), this.setTransition(), e(t)
@@ -3761,7 +3761,7 @@
 							var e = this;
 							window.requestAnimationFrame((function() {
 								e.setState(Object.assign({}, e.state, {
-									style: ja({}, e.state.style, {
+									style: Ta({}, e.state.style, {
 										transform: "perspective(" + e.settings.perspective + "px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)"
 									})
 								}))
@@ -3779,12 +3779,12 @@
 						value: function() {
 							var e = this;
 							clearTimeout(this.transitionTimeout), this.setState(Object.assign({}, this.state, {
-								style: ja({}, this.state.style, {
+								style: Ta({}, this.state.style, {
 									transition: this.settings.speed + "ms " + this.settings.easing
 								})
 							})), this.transitionTimeout = setTimeout((function() {
 								e.setState(Object.assign({}, e.state, {
-									style: ja({}, e.state.style, {
+									style: Ta({}, e.state.style, {
 										transition: ""
 									})
 								}))
@@ -3822,7 +3822,7 @@
 						value: function(e) {
 							var t = this.getValues(e);
 							this.setState(Object.assign({}, this.state, {
-								style: ja({}, this.state.style, {
+								style: Ta({}, this.state.style, {
 									transform: "perspective(" + this.settings.perspective + "px) rotateX(" + ("x" === this.settings.axis ? 0 : t.tiltY) + "deg) rotateY(" + ("y" === this.settings.axis ? 0 : t.tiltX) + "deg) scale3d(" + this.settings.scale + ", " + this.settings.scale + ", " + this.settings.scale + ")"
 								})
 							})), this.updateCall = null
@@ -4770,8 +4770,8 @@
 			var Co = "https://www.redditstatic.com/crypto-assets/v2/badge-epic-28149a2c79.svg",
 				Oo = "https://www.redditstatic.com/crypto-assets/v2/badge-legendary-bf5ff286ea.svg",
 				Po = "https://www.redditstatic.com/crypto-assets/v2/badge-rare-58cd024831.svg",
-				jo = "https://www.redditstatic.com/crypto-assets/v2/badge-test-9648ca7b6f.svg";
-			const To = ({
+				To = "https://www.redditstatic.com/crypto-assets/v2/badge-test-9648ca7b6f.svg";
+			const jo = ({
 				type: e,
 				className: t
 			}) => {
@@ -4794,7 +4794,7 @@
 							};
 						case "test":
 							return {
-								image: jo, alt: "test"
+								image: To, alt: "test"
 							}
 					}
 				})(e), [e]);
@@ -4857,7 +4857,7 @@
 						animate: r,
 						className: hi(e, yo.front, n ? yo.clickable : null),
 						animationSpeed: a
-					}, i.a.createElement(To, {
+					}, i.a.createElement(jo, {
 						type: o,
 						className: yo.badge
 					}), i.a.createElement("img", {
@@ -5559,8 +5559,12 @@
 					className: ns
 				}, t)), n && i.a.createElement("div", {
 					className: es
-				}, n));
-			const ps = ({
+				}, n)),
+				ps = e => e.toLocaleString(void 0, {
+					minimumFractionDigits: 2,
+					maximumFractionDigits: 2
+				});
+			const ms = ({
 				className: e
 			}) => i.a.createElement("svg", {
 				width: "13",
@@ -5572,9 +5576,9 @@
 				d: "M10.4 4.728h-.3V3.6a3.6 3.6 0 1 0-7.2 0v1.128h-.3a.966.966 0 0 0-.972.972v4.8a.966.966 0 0 0 .972.972h7.8a.966.966 0 0 0 .972-.972V5.7a.967.967 0 0 0-.972-.972ZM4.1 3.6a2.4 2.4 0 1 1 4.8 0v1.128H4.1V3.6Z",
 				fill: "currentColor"
 			}));
-			var ms = "_pill_kpx3d_1",
-				hs = "_scaleOnHover_kpx3d_12";
-			const vs = e => {
+			var hs = "_pill_kpx3d_1",
+				vs = "_scaleOnHover_kpx3d_12";
+			const gs = e => {
 				var t = e,
 					{
 						className: n,
@@ -5584,77 +5588,80 @@
 					} = t,
 					s = y(t, ["className", "scaleOnHover", "children", "testid"]);
 				return i.a.createElement("a", ((e, t) => d(e, f(t)))(g({
-					className: hi(n, ms, r ? hs : null)
+					className: hi(n, hs, r ? vs : null)
 				}, s), {
 					"data-testid": o
 				}), a)
 			};
-			var gs = {
-				container: "_container_ggxs3_30",
-				carousel: "_carousel_ggxs3_33",
-				productDetails: "_productDetails_ggxs3_41",
-				isNightMode: "_isNightMode_ggxs3_53",
-				header: "_header_ggxs3_57",
-				cardName: "_cardName_ggxs3_61",
-				cardAuthor: "_cardAuthor_ggxs3_67",
-				redditLogo: "_redditLogo_ggxs3_81",
-				scrollContainer: "_scrollContainer_ggxs3_86",
-				buttonsContainer: "_buttonsContainer_ggxs3_95",
-				ctaButton: "_ctaButton_ggxs3_106",
-				buttonIcon: "_buttonIcon_ggxs3_112",
-				itemDescription: "_itemDescription_ggxs3_116",
-				itemBenefits: "_itemBenefits_ggxs3_116",
-				heading: "_heading_ggxs3_119",
-				utilityTable: "_utilityTable_ggxs3_131",
-				featureCell: "_featureCell_ggxs3_131",
-				featureImage: "_featureImage_ggxs3_138",
-				featureCopy: "_featureCopy_ggxs3_142",
-				porthole: "_porthole_ggxs3_150",
-				blockchainDetails: "_blockchainDetails_ggxs3_153",
-				pill: "_pill_ggxs3_156",
-				pillImage: "_pillImage_ggxs3_175",
-				loadingContainer: "_loadingContainer_ggxs3_182",
-				loadingContent: "_loadingContent_ggxs3_192"
+			var ys = {
+				container: "_container_xyyhp_30",
+				carousel: "_carousel_xyyhp_33",
+				productDetails: "_productDetails_xyyhp_41",
+				isNightMode: "_isNightMode_xyyhp_53",
+				header: "_header_xyyhp_57",
+				cardName: "_cardName_xyyhp_61",
+				cardAuthor: "_cardAuthor_xyyhp_67",
+				redditLogo: "_redditLogo_xyyhp_81",
+				scrollContainer: "_scrollContainer_xyyhp_86",
+				buttonsContainer: "_buttonsContainer_xyyhp_95",
+				priceDetails: "_priceDetails_xyyhp_106",
+				editionLabel: "_editionLabel_xyyhp_111",
+				price: "_price_xyyhp_106",
+				ctaButton: "_ctaButton_xyyhp_121",
+				buttonIcon: "_buttonIcon_xyyhp_127",
+				itemDescription: "_itemDescription_xyyhp_131",
+				itemBenefits: "_itemBenefits_xyyhp_131",
+				heading: "_heading_xyyhp_134",
+				utilityTable: "_utilityTable_xyyhp_146",
+				featureCell: "_featureCell_xyyhp_146",
+				featureImage: "_featureImage_xyyhp_153",
+				featureCopy: "_featureCopy_xyyhp_157",
+				porthole: "_porthole_xyyhp_165",
+				blockchainDetails: "_blockchainDetails_xyyhp_168",
+				pill: "_pill_xyyhp_171",
+				pillImage: "_pillImage_xyyhp_190",
+				loadingContainer: "_loadingContainer_xyyhp_197",
+				loadingContent: "_loadingContent_xyyhp_207"
 			};
-			const ys = ({
+			const bs = ({
 				blockchainExplorerUrl: e,
 				ipfsUrl: t,
 				metadataUrl: n
-			}) => i.a.createElement(i.a.Fragment, null, e && i.a.createElement(vs, {
-				className: gs.pill,
+			}) => i.a.createElement(i.a.Fragment, null, e && i.a.createElement(gs, {
+				className: ys.pill,
 				target: "_blank",
 				href: e,
 				testid: "nft:actions:etherscan"
 			}, i.a.createElement("img", {
 				src: "https://www.redditstatic.com/crypto-assets/v2/icon-explorer-v2-5c6fc10547.svg",
-				className: gs.pillImage,
+				className: ys.pillImage,
 				alt: ""
 			}), i.a.createElement(Va, {
 				desc: "Button: view NFT details"
-			}, "View on Explorer")), t && i.a.createElement(vs, {
-				className: gs.pill,
+			}, "View on Explorer")), t && i.a.createElement(gs, {
+				className: ys.pill,
 				target: "_blank",
 				href: t,
 				testid: "nft:actions:ipfs"
 			}, i.a.createElement("img", {
 				src: "https://www.redditstatic.com/crypto-assets/v2/icon-view-ipfs-5b98985499.svg",
-				className: gs.pillImage,
+				className: ys.pillImage,
 				alt: ""
 			}), i.a.createElement(Va, {
 				desc: "Button: view NFT details"
-			}, "View on IPFS")), n && i.a.createElement(vs, {
-				className: gs.pill,
+			}, "View on IPFS")), n && i.a.createElement(gs, {
+				className: ys.pill,
 				target: "_blank",
 				href: n,
 				testid: "nft:actions:ipfs-metadata"
 			}, i.a.createElement("img", {
 				src: "https://www.redditstatic.com/crypto-assets/v2/icon-ipfs-24d30a597b.svg",
-				className: gs.pillImage,
+				className: ys.pillImage,
 				alt: ""
 			}), i.a.createElement(Va, {
 				desc: "Button: view NFT details"
 			}, "IPFS Metadata")));
-			var bs = {
+			var ks = {
 				container: "_container_1iqdc_1",
 				"card-test": "_card-test_1iqdc_8",
 				cardTest: "_card-test_1iqdc_8",
@@ -5669,7 +5676,7 @@
 				png: "_png_1iqdc_9",
 				content: "_content_1iqdc_26"
 			};
-			const ks = ({
+			const _s = ({
 				rarity: e,
 				isV1Card: t = !1,
 				className: n,
@@ -5681,21 +5688,21 @@
 						width: `${a}px`,
 						height: `${o}px`
 					},
-					l = hi(bs.container, n, Ba() ? bs.webp : bs.png, bs[`card-${e}`], {
-						[bs.v1Card]: t
+					l = hi(ks.container, n, Ba() ? ks.webp : ks.png, ks[`card-${e}`], {
+						[ks.v1Card]: t
 					});
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
 					className: l,
 					style: s
 				}, i.a.createElement("div", {
-					className: bs.content
+					className: ks.content
 				}, r)))
 			};
-			var _s = "_container_18qd3_1",
-				ws = "_cutout_18qd3_4",
-				Ss = "_image_18qd3_13",
-				xs = "_flipped_18qd3_17";
-			const Ns = ({
+			var ws = "_container_18qd3_1",
+				Ss = "_cutout_18qd3_4",
+				xs = "_image_18qd3_13",
+				Ns = "_flipped_18qd3_17";
+			const Es = ({
 				image: e,
 				rarity: t,
 				isV1Card: n,
@@ -5704,24 +5711,24 @@
 				height: o,
 				imageClassName: s,
 				flipped: l
-			}) => i.a.createElement(ks, {
-				className: hi(_s, r),
+			}) => i.a.createElement(_s, {
+				className: hi(ws, r),
 				width: a,
 				height: o,
 				isV1Card: n,
 				rarity: t
 			}, i.a.createElement("div", {
-				className: ws
+				className: Ss
 			}, i.a.createElement("img", {
 				src: e,
-				className: hi(Ss, l ? xs : null, s)
+				className: hi(xs, l ? Ns : null, s)
 			})));
-			var Es = "_container_rbvnn_1",
-				Cs = "_isNightMode_rbvnn_9",
-				Os = "_cell_rbvnn_12",
-				Ps = "_horizontalDivider_rbvnn_26",
+			var Cs = "_container_rbvnn_1",
+				Os = "_isNightMode_rbvnn_9",
+				Ps = "_cell_rbvnn_12",
+				Ts = "_horizontalDivider_rbvnn_26",
 				js = "_line_rbvnn_32";
-			const Ts = ({
+			const Ms = ({
 					children: e,
 					className: t,
 					cellClassName: n,
@@ -5729,57 +5736,57 @@
 				}) => {
 					const a = Array.isArray(e) ? e : [e];
 					return i.a.createElement("div", {
-						className: hi(Es, t, {
-							[Cs]: r
+						className: hi(Cs, t, {
+							[Os]: r
 						})
-					}, a.map((e, t) => e.type === Ms ? e : i.a.createElement("div", {
-						className: hi(Os, n),
+					}, a.map((e, t) => e.type === As ? e : i.a.createElement("div", {
+						className: hi(Ps, n),
 						key: t
 					}, e)))
 				},
-				Ms = ({
+				As = ({
 					className: e
 				}) => i.a.createElement("div", {
-					className: hi(e, Ps)
+					className: hi(e, Ts)
 				}, i.a.createElement("div", {
 					className: js
 				}));
-			const As = ({
+			const Rs = ({
 					imageUrl: e,
 					rarity: t,
 					className: n,
 					isNightMode: r
 				}) => {
 					const a = Object(o.c)();
-					return i.a.createElement(Ts, {
-						cellClassName: gs.featureCell,
+					return i.a.createElement(Ms, {
+						cellClassName: ys.featureCell,
 						className: n,
 						isNightMode: r
-					}, i.a.createElement(i.a.Fragment, null, i.a.createElement(Ns, {
+					}, i.a.createElement(i.a.Fragment, null, i.a.createElement(Es, {
 						image: e,
 						isV1Card: !1,
 						rarity: t,
 						width: 50,
 						height: 50,
-						className: gs.porthole,
+						className: ys.porthole,
 						flipped: !0
 					}), i.a.createElement("p", {
-						className: gs.featureCopy
+						className: ys.featureCopy
 					}, i.a.createElement(Va, {
 						desc: "Benefit description: adds animated effect to user avatar"
 					}, "Adds animation to Avatar"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: "https://www.redditstatic.com/crypto-assets/v2/card-example-3f0ef9e5ef.svg",
-						className: gs.featureImage,
+						className: ys.featureImage,
 						alt: a.inline("card preview", "alt text: card preview")
 					}), i.a.createElement("p", {
-						className: gs.featureCopy
+						className: ys.featureCopy
 					}, i.a.createElement(Va, {
 						desc: "Benefit description: adds card appearance on user profile"
-					}, "Adds card to profile"))), i.a.createElement(i.a.Fragment, null, i.a.createElement(To, {
+					}, "Adds card to profile"))), i.a.createElement(i.a.Fragment, null, i.a.createElement(jo, {
 						type: t,
-						className: hi(gs.featureImage)
+						className: hi(ys.featureImage)
 					}), i.a.createElement("p", {
-						className: gs.featureCopy
+						className: ys.featureCopy
 					}, function(e, t) {
 						switch (t) {
 							case "legendary":
@@ -5791,33 +5798,33 @@
 							case "test":
 								return e.inline("Only one copy exists", "NFT card rarity description")
 						}
-					}(a, t))), i.a.createElement(Ms, null), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
+					}(a, t))), i.a.createElement(As, null), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: "https://www.redditstatic.com/crypto-assets/v2/achievement-3febd9cb09.svg",
-						className: gs.featureImage,
+						className: ys.featureImage,
 						alt: a.inline("achievement icon", "alt text: achievement icon")
 					}), i.a.createElement("p", {
-						className: gs.featureCopy
+						className: ys.featureCopy
 					}, i.a.createElement(Va, {
 						desc: "Benefit description: the item is a reward for user's achievements"
 					}, "Awarded to top members"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: "https://www.redditstatic.com/crypto-assets/v2/nft-31cc27e3a3.svg",
-						className: gs.featureImage,
+						className: ys.featureImage,
 						alt: a.inline("nft icon", "alt text: nft icon")
 					}), i.a.createElement("p", {
-						className: gs.featureCopy
+						className: ys.featureCopy
 					}, i.a.createElement(Va, {
 						desc: "Benefit description: the NFT item is unique and belongs to the user only"
 					}, "True proof of ownership"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 						src: "https://www.redditstatic.com/crypto-assets/v2/blockchain-041e6b0265.svg",
-						className: gs.featureImage,
+						className: ys.featureImage,
 						alt: a.inline("blockchain transfer icon", "alt text: blockchain transfer icon")
 					}), i.a.createElement("p", {
-						className: gs.featureCopy
+						className: ys.featureCopy
 					}, i.a.createElement(Va, {
 						desc: "Benefit description: item can be transferred to another user via blockchain"
 					}, "Transferable via blockchain"))))
 				},
-				Rs = ({
+				Is = ({
 					nft: e,
 					className: t,
 					onClose: n,
@@ -5825,83 +5832,105 @@
 					onViewAvatar: a,
 					isPanelShowing: o,
 					currentUserId: s,
-					isNightMode: l
+					isNightMode: l,
+					price: c,
+					isCheckoutView: u,
+					onPurchaseClick: d,
+					itemTotalQuantity: f
 				}) => i.a.createElement(fs, {
-					className: hi(gs.container, {
-						[gs.isNightMode]: l
+					className: hi(ys.container, {
+						[ys.isNightMode]: l
 					}),
 					onClose: n,
 					isPanelShowing: o,
 					useCloseConfirmation: !1,
 					mainContent: i.a.createElement(Xo, {
 						nft: e,
-						className: hi(gs.carousel, t)
+						className: hi(ys.carousel, t)
 					}),
 					panelContent: i.a.createElement("div", {
-						className: gs.productDetails
+						className: ys.productDetails
 					}, i.a.createElement("div", {
-						className: gs.header
+						className: ys.header
 					}, i.a.createElement("h3", {
-						className: gs.cardName
+						className: ys.cardName
 					}, e.title), i.a.createElement("div", {
-						className: gs.cardAuthor
+						className: ys.cardAuthor
 					}, "Reddit" === e.vendor && i.a.createElement("img", {
 						src: "https://www.redditstatic.com/crypto-assets/v2/reddit-d9fb338c35.svg",
-						className: gs.redditLogo,
+						className: ys.redditLogo,
 						alt: "reddit logo"
 					}), i.a.createElement(Va, {
 						desc: "subtitle: art is made by "
 					}, "by ", i.a.createElement(Wa, {
 						name: "author of the art"
 					}, e.vendor)))), i.a.createElement("div", {
-						className: gs.scrollContainer
+						className: ys.scrollContainer
 					}, i.a.createElement("div", {
-						className: gs.itemDescription
+						className: ys.itemDescription
 					}, e.description), i.a.createElement("div", {
-						className: gs.itemBenefits
+						className: ys.itemBenefits
 					}, i.a.createElement("h3", {
-						className: gs.heading
+						className: ys.heading
 					}, i.a.createElement(Va, {
 						desc: "Header for the table of benefits and features of the NFT item"
-					}, "NFT UTILITY & BENEFITS")), i.a.createElement(As, {
-						className: gs.utilityTable,
+					}, "NFT UTILITY & BENEFITS")), i.a.createElement(Rs, {
+						className: ys.utilityTable,
 						imageUrl: e.svgImageUrl,
 						rarity: e.rarity,
 						isNightMode: l
 					})), i.a.createElement("div", {
-						className: gs.blockchainDetails
+						className: ys.blockchainDetails
 					}, i.a.createElement("h3", {
-						className: gs.heading
+						className: ys.heading
 					}, i.a.createElement(Va, {
 						desc: "Header for the section with external links to NFT item details"
-					}, "Details on Blockchain")), i.a.createElement(ys, {
+					}, "Details on Blockchain")), i.a.createElement(bs, {
 						blockchainExplorerUrl: e.blockchainExplorerUrl,
 						ipfsUrl: e.ipfsUrl,
 						metadataUrl: e.metadataUrl
 					}))), s === e.ownerId && i.a.createElement("div", {
-						className: gs.buttonsContainer
+						className: ys.buttonsContainer
 					}, a ? i.a.createElement(Ha, {
 						theme: "blue_inverted",
-						className: gs.ctaButton,
+						className: ys.ctaButton,
 						onClick: () => a(e.outfitId)
 					}, i.a.createElement(Va, {
 						desc: "Button: view the item"
 					}, "View Your NFT")) : i.a.createElement(Ha, {
 						theme: "blue_inverted",
-						className: gs.ctaButton
-					}, i.a.createElement(ps, {
-						className: gs.buttonIcon
+						className: ys.ctaButton
+					}, i.a.createElement(ms, {
+						className: ys.buttonIcon
 					}), i.a.createElement(Va, {
 						desc: "Button: transfer the item"
 					}, "Transfer")), r && i.a.createElement(Ha, {
 						theme: "blue",
-						className: gs.ctaButton,
+						className: ys.ctaButton,
 						onClick: () => r(e.outfitId)
 					}, i.a.createElement(Va, {
 						desc: "Button: equip the item as user avatar"
-					}, "Set as Avatar"))))
+					}, "Set as Avatar"))), u && c && i.a.createElement("div", {
+						className: ys.buttonsContainer
+					}, i.a.createElement("div", {
+						className: ys.priceDetails
+					}, i.a.createElement("span", {
+						className: ys.price
+					}, "$", ps(c)), i.a.createElement("span", {
+						className: ys.editionLabel
+					}, i.a.createElement(Va, {
+						desc: "Label: Price"
+					}, "Edition of", " ", i.a.createElement(Wa, {
+						name: "total quantity"
+					}, f)))), i.a.createElement(Ha, {
+						theme: "blue",
+						className: ys.ctaButton,
+						onClick: d
+					}, i.a.createElement(Va, {
+						desc: "CTA: Buy Now"
+					}, "Buy Now"))))
 				}),
-				Is = (Fs = e => {
+				Fs = (Ds = e => {
 					var t = e,
 						{
 							itemId: n
@@ -5944,19 +5973,19 @@
 							}
 						}(p.inventoryItems.edges[0].node))
 					}, [p]), m || !u || h ? i.a.createElement("div", {
-						className: gs.loadingContainer
+						className: ys.loadingContainer
 					}, i.a.createElement("div", {
-						className: gs.loadingContent
+						className: ys.loadingContent
 					}, i.a.createElement(c.e, {
-						className: gs.loadingSpinner
-					}), h && i.a.createElement(c.c, null))) : i.a.createElement(Rs, g({
+						className: ys.loadingSpinner
+					}), h && i.a.createElement(c.c, null))) : i.a.createElement(Is, g({
 						nft: u,
 						isPanelShowing: !0,
 						isNightMode: l.nightModeActive()
 					}, s))
-				}, e => i.a.createElement(a.a, null, i.a.createElement(Fs, g({}, e))));
-			var Fs
+				}, e => i.a.createElement(a.a, null, i.a.createElement(Ds, g({}, e))));
+			var Ds
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/3.7ce3077f47ef73561717.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/3.3c0db76a08091e5390b4.js.map

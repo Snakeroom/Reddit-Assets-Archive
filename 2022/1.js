@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.df5f45b0f16e07459e18.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.a04f9f4796e9f4cd80e6.js
+// Retrieved at 4/14/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1, "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, n) {
@@ -898,11 +898,11 @@
 		"./node_modules/@reddit/crypto/react/gql/index.es.js": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return Wt
+				return Zt
 			})), n.d(t, "b", (function() {
-				return $t
+				return Qt
 			})), n.d(t, "c", (function() {
-				return Ht
+				return Wt
 			}));
 			var r = n("./node_modules/react/index.js"),
 				i = n.n(r),
@@ -3284,13 +3284,90 @@
 				return "mutation" !== t && "query" !== t
 			}
 
-			function Lt(e, t) {
+			function Lt(e) {
+				var t = e.forward,
+					n = e.client;
+				e.dispatchDebug;
+				var r = new Map,
+					i = Object.create(null);
+
+				function o(e) {
+					var t = St(e.kind, e);
+					return t.query = function(e) {
+						var t = lt(e),
+							n = At.get(t.__key);
+						return n || (n = R(t, {
+							Field: xt,
+							InlineFragment: xt
+						}), Object.defineProperty(n, "__key", {
+							value: t.__key,
+							enumerable: !1
+						}), At.set(t.__key, n)), n
+					}(e.query), t
+				}
+
+				function s(e) {
+					var t = e.context.requestPolicy;
+					return "query" === e.kind && "network-only" !== t && ("cache-only" === t || r.has(e.key))
+				}
+				return function(e) {
+					var a = We(e),
+						c = $e((function(e) {
+							var t = r.get(e.key),
+								i = ft({}, t, {
+									operation: Rt(e, {
+										cacheOutcome: t ? "hit" : "miss"
+									})
+								});
+							return "cache-and-network" === e.context.requestPolicy && (i.stale = !0, Ft(n, e)), i
+						}))(Ke((function(e) {
+							return !Ct(e) && s(e)
+						}))(a)),
+						u = Me((function(e) {
+							var t = e.operation;
+							if (t) {
+								var o = It(e.data).concat(t.context.additionalTypenames || []);
+								if ("mutation" === e.operation.kind) {
+									for (var s = new Set, a = 0; a < o.length; a++) {
+										var c = o[a],
+											u = i[c] || (i[c] = new Set);
+										u.forEach((function(e) {
+											s.add(e)
+										})), u.clear()
+									}
+									s.forEach((function(e) {
+										r.has(e) && (t = r.get(e).operation, r.delete(e), Ft(n, t))
+									}))
+								} else if ("query" === t.kind && e.data) {
+									r.set(t.key, e);
+									for (var l = 0; l < o.length; l++) {
+										var h = o[l];
+										(i[h] || (i[h] = new Set)).add(t.key)
+									}
+								}
+							}
+						}))(t(Ke((function(e) {
+							return "query" !== e.kind || "cache-only" !== e.context.requestPolicy
+						}))($e((function(e) {
+							return Rt(e, {
+								cacheOutcome: "miss"
+							})
+						}))(Qe([$e(o)(Ke((function(e) {
+							return !Ct(e) && !s(e)
+						}))(a)), Ke((function(e) {
+							return Ct(e)
+						}))(a)])))));
+					return Qe([c, u])
+				}
+			}
+
+			function Ft(e, t) {
 				return e.reexecuteOperation(St(t.kind, t, ft({}, t.context, {
 					requestPolicy: "network-only"
 				})))
 			}
 
-			function Ft(e) {
+			function Pt(e) {
 				var t = e.forward;
 				e.dispatchDebug;
 				var n = new Set;
@@ -3313,7 +3390,7 @@
 				}
 			}
 
-			function Pt(e) {
+			function jt(e) {
 				var t = e.forward;
 				return e.dispatchDebug,
 					function(e) {
@@ -3337,7 +3414,7 @@
 					}
 			}
 
-			function jt(e) {
+			function Ut(e) {
 				return e.dispatchDebug,
 					function(e) {
 						return Ke((function() {
@@ -3347,86 +3424,11 @@
 						}))(e))
 					}
 			}
-			jt({
+			Ut({
 				dispatchDebug: wt
 			});
-			var Ut = [Ft, function(e) {
-					var t = e.forward,
-						n = e.client;
-					e.dispatchDebug;
-					var r = new Map,
-						i = Object.create(null);
-
-					function o(e) {
-						var t = St(e.kind, e);
-						return t.query = function(e) {
-							var t = lt(e),
-								n = At.get(t.__key);
-							return n || (n = R(t, {
-								Field: xt,
-								InlineFragment: xt
-							}), Object.defineProperty(n, "__key", {
-								value: t.__key,
-								enumerable: !1
-							}), At.set(t.__key, n)), n
-						}(e.query), t
-					}
-
-					function s(e) {
-						var t = e.context.requestPolicy;
-						return "query" === e.kind && "network-only" !== t && ("cache-only" === t || r.has(e.key))
-					}
-					return function(e) {
-						var a = We(e),
-							c = $e((function(e) {
-								var t = r.get(e.key),
-									i = ft({}, t, {
-										operation: Rt(e, {
-											cacheOutcome: t ? "hit" : "miss"
-										})
-									});
-								return "cache-and-network" === e.context.requestPolicy && (i.stale = !0, Lt(n, e)), i
-							}))(Ke((function(e) {
-								return !Ct(e) && s(e)
-							}))(a)),
-							u = Me((function(e) {
-								var t = e.operation;
-								if (t) {
-									var o = It(e.data).concat(t.context.additionalTypenames || []);
-									if ("mutation" === e.operation.kind) {
-										for (var s = new Set, a = 0; a < o.length; a++) {
-											var c = o[a],
-												u = i[c] || (i[c] = new Set);
-											u.forEach((function(e) {
-												s.add(e)
-											})), u.clear()
-										}
-										s.forEach((function(e) {
-											r.has(e) && (t = r.get(e).operation, r.delete(e), Lt(n, t))
-										}))
-									} else if ("query" === t.kind && e.data) {
-										r.set(t.key, e);
-										for (var l = 0; l < o.length; l++) {
-											var h = o[l];
-											(i[h] || (i[h] = new Set)).add(t.key)
-										}
-									}
-								}
-							}))(t(Ke((function(e) {
-								return "query" !== e.kind || "cache-only" !== e.context.requestPolicy
-							}))($e((function(e) {
-								return Rt(e, {
-									cacheOutcome: "miss"
-								})
-							}))(Qe([$e(o)(Ke((function(e) {
-								return !Ct(e) && !s(e)
-							}))(a)), Ke((function(e) {
-								return Ct(e)
-							}))(a)])))));
-						return Qe([c, u])
-					}
-				}, Pt],
-				Mt = function e(t) {
+			var Mt = [Pt, Lt, jt],
+				Bt = function e(t) {
 					var n = new Map,
 						r = new Map,
 						i = [],
@@ -3597,10 +3599,10 @@
 									})
 								}), t.forward)
 							}
-						}(void 0 !== t.exchanges ? t.exchanges : Ut)({
+						}(void 0 !== t.exchanges ? t.exchanges : Mt)({
 							client: h,
 							dispatchDebug: p,
-							forward: jt({
+							forward: Ut({
 								dispatchDebug: p
 							})
 						})(s));
@@ -3608,14 +3610,14 @@
 						Ge(qe)(e)
 					}(f), h
 				},
-				Bt = Mt({
+				Vt = Bt({
 					url: "/graphql"
 				}),
-				Vt = Object(r.createContext)(Bt),
-				Gt = Vt.Provider;
+				Gt = Object(r.createContext)(Vt),
+				qt = Gt.Provider;
 
-			function qt() {
-				return (qt = Object.assign || function(e) {
+			function Kt() {
+				return (Kt = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -3623,8 +3625,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			Vt.Consumer, Vt.displayName = "UrqlContext";
-			var Kt = {
+			Gt.Consumer, Gt.displayName = "UrqlContext";
+			var Yt = {
 				fetching: !1,
 				stale: !1,
 				error: void 0,
@@ -3633,8 +3635,8 @@
 				operation: void 0
 			};
 
-			function Yt(e, t) {
-				var n = qt({}, e, t, {
+			function Jt(e, t) {
+				var n = Kt({}, e, t, {
 					fetching: !!t.fetching,
 					stale: !!t.stale
 				});
@@ -3647,10 +3649,10 @@
 					return !1
 				}(e, n) ? n : e
 			}
-			var Jt = !1;
+			var $t = !1;
 
-			function $t(e) {
-				var t, n, i = Object(r.useContext)(Vt),
+			function Qt(e) {
+				var t, n, i = Object(r.useContext)(Gt),
 					o = function(e) {
 						if (!e._react) {
 							var t = new Set,
@@ -3681,7 +3683,7 @@
 					}(e.query, e.variables),
 					c = Object(r.useMemo)((function() {
 						if (e.pause) return null;
-						var t = i.executeQuery(a, qt({}, {
+						var t = i.executeQuery(a, Kt({}, {
 							requestPolicy: e.requestPolicy
 						}, e.context));
 						return s ? Me((function(e) {
@@ -3725,11 +3727,11 @@
 					}), [o, a]),
 					l = [i, a, e.requestPolicy, e.context, e.pause],
 					h = Object(r.useState)((function() {
-						Jt = !0;
+						$t = !0;
 						try {
-							return [c, Yt(Kt, u(c, s)), l]
+							return [c, Jt(Yt, u(c, s)), l]
 						} finally {
-							Jt = !1
+							$t = !1
 						}
 					})),
 					p = h[0],
@@ -3739,14 +3741,14 @@
 					for (var n = 0, r = t.length; n < r; n++)
 						if (e[n] !== t[n]) return !0;
 					return !1
-				}(p[2], l) && f([c, d = Yt(p[1], u(c, s)), l]), Object(r.useEffect)((function() {
+				}(p[2], l) && f([c, d = Jt(p[1], u(c, s)), l]), Object(r.useEffect)((function() {
 					var e = p[0],
 						t = p[2][1],
 						n = !1;
 
 					function r(e) {
-						n = !0, Jt || f((function(t) {
-							var n = Yt(t[1], e);
+						n = !0, $t || f((function(t) {
+							var n = Jt(t[1], e);
 							return t[1] !== n ? [t[0], n, t[2]] : t
 						}))
 					}
@@ -3767,7 +3769,7 @@
 						fetching: !1
 					})
 				}), [o, p[0], p[2][1]]), [d, Object(r.useCallback)((function(t) {
-					var n = qt({}, {
+					var n = Kt({}, {
 						requestPolicy: e.requestPolicy
 					}, e.context, t);
 					f((function(e) {
@@ -3777,8 +3779,11 @@
 					}))
 				}), [i, o, a, s, u, e.requestPolicy, e.context])]
 			}
-			var Qt = {
+			var Xt = {
 				claimfreenft: "132b72abd4d5",
+				confirmeconpayment: "bc22a5f916db",
+				createeconpayment: "d7a84c646f57",
+				createstorefrontorder: "aa5a82dc84bb",
 				getclaimednftdetails: "549dc0fe0c26",
 				generatewalletverificationmessage: "cd3aac87446c",
 				getnftdetails: "2e1c9830ba4c",
@@ -3786,7 +3791,7 @@
 				subredditcategoriesquery: "3f71115a1d95",
 				updateprofileimagefromnft: "97097eb25784"
 			};
-			const Xt = ({
+			const zt = ({
 				forward: e,
 				dispatchDebug: t
 			}) => t => {
@@ -3814,74 +3819,74 @@
 							body: JSON.stringify(s)
 						});
 					return He(Ot(t, a, c), je(Ye), et(r))
-				})(Qt, e, n))), He(n, Ke(e => "query" !== e.kind && "mutation" !== e.kind), e)])
+				})(Xt, e, n))), He(n, Ke(e => "query" !== e.kind && "mutation" !== e.kind), e)])
 			};
-			const zt = "urqlClient";
+			const Ht = "urqlClient";
 
-			function Ht() {
+			function Wt() {
 				return function(e) {
 					e._instances = e._instances || {};
-					let t = e._instances[zt];
+					let t = e._instances[Ht];
 					if (!t) {
-						const n = [Ft];
-						n.push(Xt), n.push(Pt), t = new Mt({
+						const n = [Pt, Lt];
+						n.push(zt), n.push(jt), t = new Bt({
 							url: e.gql.host,
 							fetchOptions: e.gql.fetchOptions,
 							exchanges: n
-						}), e._instances[zt] = t
+						}), e._instances[Ht] = t
 					}
 					return t
 				}(Object(o.b)())
 			}
-			const Wt = ({
+			const Zt = ({
 				children: e
 			}) => {
-				const t = Ht();
-				return i.a.createElement(Gt, {
+				const t = Wt();
+				return i.a.createElement(qt, {
 					value: t
 				}, e)
 			};
-			var Zt = function() {
-					return (Zt = Object.assign || function(e) {
+			var en = function() {
+					return (en = Object.assign || function(e) {
 						for (var t, n = 1, r = arguments.length; n < r; n++)
 							for (var i in t = arguments[n]) Object.prototype.hasOwnProperty.call(t, i) && (e[i] = t[i]);
 						return e
 					}).apply(this, arguments)
 				},
-				en = new Map,
 				tn = new Map,
-				nn = !0,
-				rn = !1;
+				nn = new Map,
+				rn = !0,
+				on = !1;
 
-			function on(e) {
+			function sn(e) {
 				return e.replace(/[\s,]+/g, " ").trim()
 			}
 
-			function sn(e) {
+			function an(e) {
 				var t = new Set,
 					n = [];
 				return e.definitions.forEach((function(e) {
 					if ("FragmentDefinition" === e.kind) {
 						var r = e.name.value,
-							i = on((s = e.loc).source.body.substring(s.start, s.end)),
-							o = tn.get(r);
-						o && !o.has(i) ? nn && console.warn("Warning: fragment with name " + r + " already exists.\ngraphql-tag enforces all fragment names across your application to be unique; read more about\nthis in the docs: http://dev.apollodata.com/core/fragments.html#unique-names") : o || tn.set(r, o = new Set), o.add(i), t.has(i) || (t.add(i), n.push(e))
+							i = sn((s = e.loc).source.body.substring(s.start, s.end)),
+							o = nn.get(r);
+						o && !o.has(i) ? rn && console.warn("Warning: fragment with name " + r + " already exists.\ngraphql-tag enforces all fragment names across your application to be unique; read more about\nthis in the docs: http://dev.apollodata.com/core/fragments.html#unique-names") : o || nn.set(r, o = new Set), o.add(i), t.has(i) || (t.add(i), n.push(e))
 					} else n.push(e);
 					var s
-				})), Zt(Zt({}, e), {
+				})), en(en({}, e), {
 					definitions: n
 				})
 			}
 
-			function an(e) {
-				var t = on(e);
-				if (!en.has(t)) {
+			function cn(e) {
+				var t = sn(e);
+				if (!tn.has(t)) {
 					var n = Object(s.a)(e, {
-						experimentalFragmentVariables: rn,
-						allowLegacyFragmentVariables: rn
+						experimentalFragmentVariables: on,
+						allowLegacyFragmentVariables: on
 					});
 					if (!n || "Document" !== n.kind) throw new Error("Not a valid GraphQL document.");
-					en.set(t, function(e) {
+					tn.set(t, function(e) {
 						var t = new Set(e.definitions);
 						t.forEach((function(e) {
 							e.loc && delete e.loc, Object.keys(e).forEach((function(n) {
@@ -3891,35 +3896,35 @@
 						}));
 						var n = e.loc;
 						return n && (delete n.startToken, delete n.endToken), e
-					}(sn(n)))
+					}(an(n)))
 				}
-				return en.get(t)
+				return tn.get(t)
 			}
 
-			function cn(e) {
+			function un(e) {
 				for (var t = [], n = 1; n < arguments.length; n++) t[n - 1] = arguments[n];
 				"string" == typeof e && (e = [e]);
 				var r = e[0];
 				return t.forEach((function(t, n) {
 					t && "Document" === t.kind ? r += t.loc.source.body : r += t, r += e[n + 1]
-				})), an(r)
+				})), cn(r)
 			}
-			var un, ln = {
-				gql: cn,
+			var ln, hn = {
+				gql: un,
 				resetCaches: function() {
-					en.clear(), tn.clear()
+					tn.clear(), nn.clear()
 				},
 				disableFragmentWarnings: function() {
-					nn = !1
+					rn = !1
 				},
 				enableExperimentalFragmentVariables: function() {
-					rn = !0
+					on = !0
 				},
 				disableExperimentalFragmentVariables: function() {
-					rn = !1
+					on = !1
 				}
 			};
-			(un = cn || (cn = {})).gql = ln.gql, un.resetCaches = ln.resetCaches, un.disableFragmentWarnings = ln.disableFragmentWarnings, un.enableExperimentalFragmentVariables = ln.enableExperimentalFragmentVariables, un.disableExperimentalFragmentVariables = ln.disableExperimentalFragmentVariables, cn.default = cn
+			(ln = un || (un = {})).gql = hn.gql, ln.resetCaches = hn.resetCaches, ln.disableFragmentWarnings = hn.disableFragmentWarnings, ln.enableExperimentalFragmentVariables = hn.enableExperimentalFragmentVariables, ln.disableExperimentalFragmentVariables = hn.disableExperimentalFragmentVariables, un.default = un
 		},
 		"./node_modules/graphql/jsutils/inspect.mjs": function(e, t, n) {
 			"use strict";
@@ -5445,4 +5450,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.df5f45b0f16e07459e18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.a04f9f4796e9f4cd80e6.js.map

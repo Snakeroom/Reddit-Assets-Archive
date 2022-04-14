@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.e5808cf9a00d28f80ad5.js
-// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.7b956dd4ece06ef1f3ba.js
+// Retrieved at 4/14/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -633,7 +633,7 @@
 					1: "31d6cfe0d16ae931b73c",
 					2: "31d6cfe0d16ae931b73c",
 					3: "31d6cfe0d16ae931b73c",
-					4: "d31d8f1f64fdae0c2069",
+					4: "597dbf63647d30962217",
 					5: "3cd9ea352ced0dfcce92",
 					6: "1067b0875906904bc273",
 					7: "c7d1b952339465f9268d",
@@ -1317,18 +1317,18 @@
 						ModStatsChart: "ModStatsChart"
 					} [e] || e) + "." + {
 						0: "66c6a166dcfb6660f13c",
-						1: "df5f45b0f16e07459e18",
+						1: "a04f9f4796e9f4cd80e6",
 						2: "e9d77de28c42965c256e",
-						3: "7ce3077f47ef73561717",
-						4: "1b440af6c6b07f29cece",
+						3: "3c0db76a08091e5390b4",
+						4: "b48a6f7918684b7223e0",
 						5: "cfc3821e037eef33049a",
 						6: "e2e2886f54317c6fcc17",
 						7: "c56f269ba14320024eb0",
 						8: "634f722fb667944d4721",
 						9: "0fff9bb8d87bfdcea2a0",
 						10: "79389f25d460624495ed",
-						"vendors~MarketplaceClaimModal": "060e1137e29b97e2ec30",
-						MarketplaceClaimModal: "882e653a910154cc9dd3",
+						"vendors~MarketplaceClaimModal": "3a08f1ac45d047f372a0",
+						MarketplaceClaimModal: "26730839f4d57b48c988",
 						"reddit-pages-meta-ArbitrumPointsMigrationPage": "e08f3662f3ade3f26ccd",
 						"vendors~reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-~bd661033": "ec2b59f01815a82795f7",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "5e73e64d2ccb2dd08f11",
@@ -1499,8 +1499,8 @@
 						CustomBadgeHovercardTooltip: "6441bb4548171bbbc161",
 						GovernanceUserPublicPointsDisplay: "0afe2a2d046463c067c5",
 						SubredditPremiumBadgeHovercardTooltip: "c4bd73f2de741e8bf907",
-						"vendors~NftProfileUnit": "62e9b9d25aa026f436a9",
-						NftProfileUnit: "378c366b6a3d968165b1",
+						"vendors~NftProfileUnit": "949f58614ed677e1cf43",
+						NftProfileUnit: "a9d05bfd17d036d23196",
 						gildActions: "b123c702e44722510a0e",
 						"reddit-components-MediumPost": "8eb4230dc46ad3c66054",
 						"reddit-components-ClassicPost": "0d9cbe01d264bbca2660",
@@ -1715,4 +1715,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.e5808cf9a00d28f80ad5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.7b956dd4ece06ef1f3ba.js.map
