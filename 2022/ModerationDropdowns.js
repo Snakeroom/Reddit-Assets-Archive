@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.6199cae57a9afd84c2cf.js
-// Retrieved at 4/11/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.68cbac90d39040df85b4.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, n) {
@@ -581,9 +581,9 @@
 						onSpoilerPost: A,
 						post: W
 					} = e;
-					var B, H, G, V, U;
+					var B, H, V, G, U;
 					const K = (null === (B = W.pollData) || void 0 === B ? void 0 : B.isPrediction) && !(null === (H = W.pollData) || void 0 === H ? void 0 : H.resolvedOptionId),
-						Q = (null === (G = W.pollData) || void 0 === G ? void 0 : G.isPrediction) && null !== W.pollData.resolvedOptionId,
+						Q = (null === (V = W.pollData) || void 0 === V ? void 0 : V.isPrediction) && null !== W.pollData.resolvedOptionId,
 						Z = W.flair.filter(e => e.type !== N.f.Nsfw && e.type !== N.f.Spoiler).length > 0,
 						q = Object(j.b)(W),
 						z = !(!W.approvedBy || !q),
@@ -636,7 +636,7 @@
 							hk: "3uXoIh"
 						})
 					}), Object(C.b)(W) && o.a.createElement(y.e, {
-						disabled: Boolean((null === (V = W.pollData) || void 0 === V ? void 0 : V.resolvedOptionId) || (null === (U = W.pollData) || void 0 === U ? void 0 : U.predictionStatus) === D.b.Cancelled),
+						disabled: Boolean((null === (G = W.pollData) || void 0 === G ? void 0 : G.resolvedOptionId) || (null === (U = W.pollData) || void 0 === U ? void 0 : U.predictionStatus) === D.b.Cancelled),
 						displayText: v.fbt._("Cancel Prediction", null, {
 							hk: "hgWFW"
 						}),
@@ -736,7 +736,7 @@
 						onStickyPost: () => e(Object(l.ib)(n.id))
 					}
 				}),
-				G = Object(p.a)(h.a);
+				V = Object(p.a)(h.a);
 			t.default = W(H(Object(b.c)(e => {
 				let {
 					canEditFlair: t,
@@ -768,10 +768,10 @@
 					sendEvent: I,
 					tooltipId: L
 				} = e;
-				const F = S.distinguishType === i.G.MODERATOR,
-					R = F ? i.G.NONE : i.G.MODERATOR,
+				const F = S.distinguishType === i.H.MODERATOR,
+					R = F ? i.H.NONE : i.H.MODERATOR,
 					W = Object(u.b)(S.id, c);
-				return o.a.createElement(G, {
+				return o.a.createElement(V, {
 					className: A.a.dropdown,
 					isOpen: r,
 					tooltipId: L
@@ -1311,4 +1311,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.6199cae57a9afd84c2cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.68cbac90d39040df85b4.js.map

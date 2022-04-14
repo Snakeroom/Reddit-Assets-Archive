@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.ae8677a3fc668efb7a34.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.c9edc3b64a70fa39ee4b.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -205,8 +205,8 @@
 				H = s("./src/reddit/controls/OutboundLink/styled.tsx"),
 				U = s("./src/reddit/models/Audio/index.ts"),
 				V = s("./src/reddit/models/Media/index.ts"),
-				G = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
-				z = s("./src/reddit/connectors/ClassicPost/index.tsx"),
+				z = s("./src/reddit/components/ClassicPost/Thumbnail.tsx"),
+				G = s("./src/reddit/connectors/ClassicPost/index.tsx"),
 				q = s("./src/reddit/constants/postLayout.ts"),
 				K = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
 				Z = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
@@ -242,7 +242,7 @@
 					flairStyleTemplate: g,
 					formatTitle: C,
 					hostPostData: y,
-					isCheckboxSelected: z,
+					isCheckboxSelected: G,
 					isCurrentUserProfilePost: ee,
 					isFrontpage: se,
 					isGalleryTileLayoutDefault: re,
@@ -285,14 +285,14 @@
 					He = we && We,
 					Ue = f && !_e,
 					Ve = !!fe.media && Object(V.H)(fe.media),
-					Ge = !!fe.recommendationContext,
-					ze = {
+					ze = !!fe.recommendationContext,
+					Ge = {
 						flairStyleTemplate: Te,
 						post: fe,
 						inSubredditOrProfile: f,
 						isCurrentUserProfilePost: ee,
 						isOverlay: ae,
-						shouldShowSubscribeButton: !(se && ie) || Ge && ie,
+						shouldShowSubscribeButton: !(se && ie) || ze && ie,
 						subredditOrProfile: Oe
 					},
 					qe = Object(r.t)(fe, ce),
@@ -303,7 +303,7 @@
 					Ye = Object(n.useCallback)(() => {
 						Qe(!Ze), Object(Y.Mb)(), Se(Object($.d)(Ee))
 					}, [Ze, Ee, Se]);
-				let Je = o.a.createElement(G.a, {
+				let Je = o.a.createElement(z.a, {
 					className: ne.a.classicThumbnail,
 					crosspost: Me && fe,
 					isMeta: fe.isMeta,
@@ -332,7 +332,7 @@
 					model: fe,
 					handleVote: b,
 					showBulkActionCheckbox: Ce,
-					isCheckboxSelected: z,
+					isCheckboxSelected: G,
 					toggleCheckbox: ke,
 					flairStyleTemplate: Te,
 					redditStyle: ve,
@@ -379,7 +379,7 @@
 					source: fe.source
 				}, Object(d.a)(fe))), o.a.createElement(R.a, oe({
 					key: "PostMeta"
-				}, ze)), me && Le && De && o.a.createElement(N.a, {
+				}, Ge)), me && Le && De && o.a.createElement(N.a, {
 					thing: fe
 				}), me && Le && Be && o.a.createElement(I.a, {
 					onIgnoreReports: ue,
@@ -435,7 +435,7 @@
 				})));
 				return o.a.createElement(W.b, null, Xe)
 			});
-			t.default = Object(z.a)(re)
+			t.default = Object(G.a)(re)
 		},
 		"./src/reddit/components/CommentBodyExpander/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -663,7 +663,7 @@
 				h = s.n(u);
 			const {
 				fbt: b
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), x = .75, f = 10 * d.K;
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), x = .75, f = 10 * d.L;
 			class E extends o.a.Component {
 				constructor(e) {
 					super(e), this.commentElement = null, this.handleResize = m()(() => {
@@ -746,8 +746,8 @@
 				H = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				U = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				V = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
-				G = s("./src/reddit/helpers/overlay/index.ts"),
-				z = s("./src/reddit/helpers/trackers/lightbox.ts"),
+				z = s("./src/reddit/helpers/overlay/index.ts"),
+				G = s("./src/reddit/helpers/trackers/lightbox.ts"),
 				q = s("./src/reddit/models/PostDraft/index.ts"),
 				K = s("./src/reddit/models/Comment/index.ts"),
 				Z = s("./src/reddit/selectors/activeModalId.ts"),
@@ -865,7 +865,7 @@
 						this.props.onToggleReportsDropdown(), this.sendCommentModEventWithName("comment_report_menu")
 					}, this.handleSave = () => {
 						this.props.comment.isSaved ? this.props.sendEvent(Object(de.a)("unsave", this.props.comment.id)) : this.props.sendEvent(Object(de.a)("save", this.props.comment.id)), this.props.onToggleSave()
-					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(de.b)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(z.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(de.a)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(de.e)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(oe.a, {
+					}, this.sendCommentDistinguishEvent = e => this.props.sendEvent(Object(de.b)(e, this.props.comment.id)), this.sendCommentEventWithName = e => this.props.sendEvent(Object(G.b)(this.props.comment.postId, `comment_${e}`)), this.sendCommentEventWithNameShare = () => this.sendCommentEventWithName("share"), this.sendCommentModEventWithName = e => this.props.sendEvent(Object(de.a)(e, this.props.comment.id)), this.sendCommentReportEvent = e => this.props.sendEvent(Object(de.e)(e, this.props.comment.id)), this.renderReportFlow = () => this.props.reportingRevampEnabled ? o.a.createElement(oe.a, {
 						withOverlay: !0,
 						commentId: this.props.comment.id,
 						overlayCustomStyles: ne.b,
@@ -1068,7 +1068,7 @@
 									commentMode: s.media && s.media.rteMode,
 									commentsPageKey: n
 								};
-							e(Object(G.a)(t)), e(Object(w.f)(o))
+							e(Object(z.a)(t)), e(Object(w.f)(o))
 						},
 						handleReply: t => {
 							const n = Object(_.a)(s.postId, s.id, {}),
@@ -1076,7 +1076,7 @@
 									parentCommentId: s.id,
 									commentsPageKey: n
 								};
-							e(Object(G.a)(t)), e(Object(w.g)(o))
+							e(Object(z.a)(t)), e(Object(w.g)(o))
 						},
 						toggleDeleteCommentModal: () => e(Object(S.i)(we(s.id)))
 					}
@@ -1123,7 +1123,7 @@
 					flair: n,
 					renderedInOverlay: !1
 				}), o.a.createElement("div", null, !t.isDeleted && o.a.createElement(He, null, r ? l() : o.a.createElement(v, {
-					height: d.Ub,
+					height: d.Vb,
 					isExpanded: r
 				}, l)), !t.isDeleted && i && o.a.createElement(Te, {
 					comment: t,
@@ -1206,31 +1206,31 @@
 						className: t,
 						style: s
 					}, o.a.createElement(E, {
-						onClick: () => p(r.G.NONE, null),
+						onClick: () => p(r.H.NONE, null),
 						selected: !c && !n,
 						text: i.fbt._("Undistinguish", null, {
 							hk: "1P0FyT"
 						})
 					}), d && o.a.createElement(E, {
-						onClick: () => p(r.G.MODERATOR, null),
+						onClick: () => p(r.H.MODERATOR, null),
 						selected: c && !l,
 						text: i.fbt._("Distinguish as Mod", null, {
 							hk: "KDx42"
 						})
 					}), m && d && o.a.createElement(E, {
-						onClick: () => p(r.G.MODERATOR, !0),
+						onClick: () => p(r.H.MODERATOR, !0),
 						selected: c && l,
 						text: i.fbt._("Distinguish as Mod and Sticky", null, {
 							hk: "1J1DBd"
 						})
 					}), a && o.a.createElement(E, {
-						onClick: () => p(r.G.ADMIN, null),
+						onClick: () => p(r.H.ADMIN, null),
 						selected: n && !l,
 						text: i.fbt._("Distinguish as Admin", null, {
 							hk: "1JsJOX"
 						})
 					}), a && d && m && o.a.createElement(E, {
-						onClick: () => p(r.G.ADMIN, !0),
+						onClick: () => p(r.H.ADMIN, !0),
 						selected: n && l,
 						text: i.fbt._("Distinguish as Admin and Sticky", null, {
 							hk: "3x8QWN"
@@ -1264,7 +1264,7 @@
 					isStickied: d,
 					isTopLevelComment: c,
 					onDistinguishComment: (e, t) => {
-						l(e, t), e === r.G.MODERATOR ? m(!d && t ? "distinguish_sticky" : "distinguish") : e === r.G.ADMIN ? m("admin_distinguish") : a && e !== r.G.MODERATOR ? m("undistinguish") : s && e !== r.G.ADMIN && m("admin_undistinguish"), d && !t && m("unsticky")
+						l(e, t), e === r.H.MODERATOR ? m(!d && t ? "distinguish_sticky" : "distinguish") : e === r.H.ADMIN ? m("admin_distinguish") : a && e !== r.H.MODERATOR ? m("undistinguish") : s && e !== r.H.ADMIN && m("admin_undistinguish"), d && !t && m("unsticky")
 					}
 				}))
 			}
@@ -1434,11 +1434,11 @@
 				let {
 					className: t,
 					profileName: s,
-					timeSort: o = i.hc.ALL
+					timeSort: o = i.ic.ALL
 				} = e;
 				return r.a.createElement(p, {
 					className: t
-				}, o === i.hc.ALL ? n.fbt._("hmm... {profileName} hasn't commented on anything", [n.fbt._param("profileName", `u/${s}`)], {
+				}, o === i.ic.ALL ? n.fbt._("hmm... {profileName} hasn't commented on anything", [n.fbt._param("profileName", `u/${s}`)], {
 					hk: "1MHn3t"
 				}) : n.fbt._("hmm... {profileName} hasn't commented recently", [n.fbt._param("profileName", `u/${s}`)], {
 					hk: "qN3uL"
@@ -1448,11 +1448,11 @@
 				let {
 					className: t,
 					profileName: s,
-					timeSort: o = i.hc.ALL
+					timeSort: o = i.ic.ALL
 				} = e;
 				return r.a.createElement(p, {
 					className: t
-				}, o === i.hc.ALL ? n.fbt._("hmm... {profileName} hasn't posted anything", [n.fbt._param("profileName", `u/${s}`)], {
+				}, o === i.ic.ALL ? n.fbt._("hmm... {profileName} hasn't posted anything", [n.fbt._param("profileName", `u/${s}`)], {
 					hk: "28vBEd"
 				}) : n.fbt._("hmm... {profileName} hasn't posted recently", [n.fbt._param("profileName", `u/${s}`)], {
 					hk: "38GhqN"
@@ -2644,7 +2644,7 @@
 					} = e;
 					const d = s ? [{
 						internal: !0,
-						isActive: o === f.Nb.PROFILE_PRIVATE && r === k.b.Saved,
+						isActive: o === f.Ob.PROFILE_PRIVATE && r === k.b.Saved,
 						key: "profile.mainmenu.saved",
 						text: n.fbt._("Saved", null, {
 							hk: "2w1YRh"
@@ -2653,7 +2653,7 @@
 						position: D.MENU
 					}, {
 						internal: !0,
-						isActive: o === f.Nb.PROFILE_PRIVATE && r === k.b.Hidden,
+						isActive: o === f.Ob.PROFILE_PRIVATE && r === k.b.Hidden,
 						key: "profile.mainmenu.hidden",
 						text: n.fbt._("Hidden", null, {
 							hk: "225tka"
@@ -2662,7 +2662,7 @@
 						position: D.MENU
 					}, {
 						internal: !0,
-						isActive: o === f.Nb.PROFILE_PRIVATE && r === k.b.Upvoted,
+						isActive: o === f.Ob.PROFILE_PRIVATE && r === k.b.Upvoted,
 						key: "profile.mainmenu.upvoted",
 						text: n.fbt._("Upvoted", null, {
 							hk: "RKwFZ"
@@ -2671,7 +2671,7 @@
 						position: D.MENU
 					}, {
 						internal: !0,
-						isActive: o === f.Nb.PROFILE_PRIVATE && r === k.b.Downvoted,
+						isActive: o === f.Ob.PROFILE_PRIVATE && r === k.b.Downvoted,
 						key: "profile.mainmenu.downvoted",
 						text: n.fbt._("Downvoted", null, {
 							hk: "2F9IL4"
@@ -2681,7 +2681,7 @@
 					}] : [];
 					s ? (d.push({
 						internal: !0,
-						isActive: o === f.Nb.PROFILE_PRIVATE && r === k.b.ReceivedGildings,
+						isActive: o === f.Ob.PROFILE_PRIVATE && r === k.b.ReceivedGildings,
 						key: "profile.mainmenu.receiverGildings",
 						text: n.fbt._("Awards received", null, {
 							hk: "iwLBV"
@@ -2690,7 +2690,7 @@
 						position: D.MENU
 					}), d.push({
 						internal: !0,
-						isActive: o === f.Nb.PROFILE_PRIVATE && r === k.b.GivenGildings,
+						isActive: o === f.Ob.PROFILE_PRIVATE && r === k.b.GivenGildings,
 						key: "profile.mainmenu.givenGildings",
 						text: n.fbt._("Awards given", null, {
 							hk: "2UPYZc"
@@ -2709,7 +2709,7 @@
 					});
 					const c = i ? [{
 							internal: !0,
-							isActive: o === f.Nb.PROFILE_SNOOBUILDER,
+							isActive: o === f.Ob.PROFILE_SNOOBUILDER,
 							key: "profile.mainmenu.snoobuilder",
 							text: n.fbt._("Snoobuilder", null, {
 								hk: "3SSKff"
@@ -2720,7 +2720,7 @@
 						l = a ? "?consent=true" : "";
 					return [{
 						internal: !0,
-						isActive: o === f.Nb.PROFILE_OVERVIEW,
+						isActive: o === f.Ob.PROFILE_OVERVIEW,
 						key: "profile.mainmenu.overview",
 						text: n.fbt._("Overview", null, {
 							hk: "2IBbqy"
@@ -2729,7 +2729,7 @@
 						position: D.MENU
 					}, {
 						internal: !0,
-						isActive: o === f.Nb.PROFILE_POSTS,
+						isActive: o === f.Ob.PROFILE_POSTS,
 						key: "profile.mainmenu.posts",
 						text: n.fbt._("Posts", null, {
 							hk: "a1BoF"
@@ -2738,7 +2738,7 @@
 						position: D.MENU
 					}, {
 						internal: !0,
-						isActive: o === f.Nb.PROFILE_COMMENTS,
+						isActive: o === f.Ob.PROFILE_COMMENTS,
 						key: "profile.mainmenu.comments",
 						text: n.fbt._("Comments", null, {
 							hk: "2VwjOc"
@@ -2871,7 +2871,7 @@
 				})())))
 			};
 			h.defaultProps = {
-				minimizedLength: d.Tb
+				minimizedLength: d.Ub
 			}, t.a = h
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, s) {
@@ -3445,7 +3445,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = r()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, d.K), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, d.L), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -4620,4 +4620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.ae8677a3fc668efb7a34.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.c9edc3b64a70fa39ee4b.js.map

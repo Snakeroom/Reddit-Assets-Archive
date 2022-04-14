@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.14dcd149744e3cf8c3bb.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.f024cc74ae844350e4d7.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4116,8 +4116,8 @@
 				be = s("./src/reddit/components/TopPostsWidgets/TopWeekPosts/index.m.less"),
 				he = s.n(be);
 			const fe = 10,
-				xe = Object(c.a)((e, t) => t.subredditName, e => Object(_.a)(e, l.W.TOP, {
-					t: l.hc.WEEK
+				xe = Object(c.a)((e, t) => t.subredditName, e => Object(_.a)(e, l.X.TOP, {
+					t: l.ic.WEEK
 				})),
 				ve = Object(c.c)({
 					discoveryUnit: e => Object(me.b)(e, {
@@ -4195,9 +4195,9 @@
 					} = t;
 					return {
 						loadMorePosts: () => e(Object(I.r)({
-							sort: l.W.TOP,
+							sort: l.X.TOP,
 							subredditName: s,
-							t: l.hc.WEEK
+							t: l.ic.WEEK
 						}))
 					}
 				})(Object(de.c)(ge)),
@@ -4977,7 +4977,7 @@
 					const {
 						subreddit: t,
 						subredditName: s
-					} = e, r = Object(m.a)(s, u.W.HOT, {});
+					} = e, r = Object(m.a)(s, u.X.HOT, {});
 					return n.a.createElement(p.a, {
 						listingKey: r,
 						listingName: s.toLowerCase(),
@@ -5504,4 +5504,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.14dcd149744e3cf8c3bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.f024cc74ae844350e4d7.js.map

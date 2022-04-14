@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.56180d0f6db35d468378.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.2aceebea5262a05481ab.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -709,7 +709,7 @@
 						commentId: e
 					});
 					if (!l) return;
-					const m = n === r.dc.Snoozed,
+					const m = n === r.ec.Snoozed,
 						v = {
 							itemId: e,
 							reportText: t,
@@ -743,8 +743,8 @@
 					if (o(Object(g.i)({
 							[e]: {
 								distinguishType: t,
-								isAdmin: t === r.G.ADMIN,
-								isMod: t === r.G.MODERATOR,
+								isAdmin: t === r.H.ADMIN,
+								isMod: t === r.H.MODERATOR,
 								isStickied: !!n
 							}
 						})), n && h && h !== e && o(Object(g.i)({
@@ -1092,7 +1092,7 @@
 				} = e;
 				const m = Object(E.f)(o),
 					u = s.a.createElement(w.b, {
-						ignore: m || !!o.distinguishType && o.distinguishType !== j.G.NONE,
+						ignore: m || !!o.distinguishType && o.distinguishType !== j.H.NONE,
 						subredditId: o.subredditId,
 						userId: o.authorId
 					}, s.a.createElement(h, {
@@ -1379,7 +1379,7 @@
 				ge = e => {
 					const t = Object(i.d)(),
 						n = function(e) {
-							return e.isAdmin ? pe.Admin : e.isMod ? pe.Mod : e.isOp ? pe.Op : e.distinguishType === j.G.ALUMNI_ADMIN ? pe.AlumniAdmin : e.authorIsContractor ? pe.Contractor : null
+							return e.isAdmin ? pe.Admin : e.isMod ? pe.Mod : e.isOp ? pe.Op : e.distinguishType === j.H.ALUMNI_ADMIN ? pe.AlumniAdmin : e.authorIsContractor ? pe.Contractor : null
 						}(e.comment);
 					if (!n) return null;
 					if (n === pe.Contractor && !e.renderContractorBadge) return null;
@@ -2612,4 +2612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.56180d0f6db35d468378.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.2aceebea5262a05481ab.js.map

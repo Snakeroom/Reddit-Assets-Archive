@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.0772eee2f7900946ac3a.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.e7c1d16ce5b4e903a1e4.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -350,7 +350,7 @@
 					title: x
 				} = e, O = (i || b || f || u) && !l, T = Object(a.a)(m.a.menuButton, {
 					[m.a.isOpen]: p
-				}), A = Date.parse(E) / s.Sb;
+				}), A = Date.parse(E) / s.Tb;
 				return o.a.createElement("span", {
 					className: m.a.topBar
 				}, o.a.createElement("span", {
@@ -440,8 +440,8 @@
 						return "./src/reddit/components/NotificationUnit/Button.tsx"
 					}
 				}),
-				S = "",
-				C = .5,
+				C = "",
+				S = .5,
 				U = e => {
 					var t, i, n, s, h, U, j, M, y, R, L, P;
 					const k = Object(N.a)(),
@@ -483,7 +483,7 @@
 						[I.a.unread]: Ae && !Q,
 						[I.a.isNightMode]: H,
 						[I.a.inAppNotification]: Q
-					}), Se = F || V || W || z || B, Ce = {
+					}), Ce = F || V || W || z || B, Se = {
 						id: me,
 						isClicked: !!pe,
 						isViewed: !0,
@@ -494,13 +494,13 @@
 					const Pe = null === (P = null === (L = null == oe ? void 0 : oe.awarding) || void 0 === L ? void 0 : L.awarder) || void 0 === P ? void 0 : P.isAcceptingChats,
 						ke = e => {
 							k(Object(f.m)({
-								...Ce,
+								...Se,
 								actionInfoType: e
 							}))
 						},
 						De = e => {
 							k(Object(f.z)({
-								...Ce,
+								...Se,
 								actionInfoType: e
 							}))
 						},
@@ -509,11 +509,11 @@
 						},
 						Fe = e => {
 							if (Q) return k(Object(f.h)({
-								...Ce,
+								...Se,
 								...e
 							}));
 							k(Object(f.k)({
-								...Ce,
+								...Se,
 								...e
 							}))
 						},
@@ -533,7 +533,7 @@
 							isToggleUpdateFromSubredditEligible: de,
 							isToggleLowUpdateFromSubredditEligible: re,
 							sendInboxClickOverflow: () => k(Object(f.l)({
-								...Ce,
+								...Se,
 								awardId: Re
 							})),
 							sentAt: ue,
@@ -547,7 +547,7 @@
 							className: Object(d.a)(I.a.body, {
 								[I.a.inAppNotification]: Q
 							})
-						}, ne), !X && (Pe || Se || Ue || Ie || Y && Q) && c.a.createElement(_, {
+						}, ne), !X && (Pe || Ce || Ue || Ie || Y && Q) && c.a.createElement(_, {
 							context: oe,
 							notificationId: me,
 							isUnread: Ae,
@@ -593,20 +593,20 @@
 					}), Be)), Q ? null : c.a.createElement(m.a, {
 						decreaseSubUpdates: () => {
 							const t = f.e.DecreaseSubredditUpdates;
-							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(S), xe && e.decreaseSubredditNotifications && e.decreaseSubredditNotifications(xe, () => De(t)), ke(t)
+							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(C), xe && e.decreaseSubredditNotifications && e.decreaseSubredditNotifications(xe, () => De(t)), ke(t)
 						},
 						disableNotificationUpdates: () => {
-							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(S), e.disableNotificationUpdates && e.disableNotificationUpdates(we), ke(f.e.HideSubreddit)
+							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(C), e.disableNotificationUpdates && e.disableNotificationUpdates(we), ke(f.e.HideSubreddit)
 						},
 						hideNotification: () => {
-							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(S), e.hideNotification && e.hideNotification(me), ke(f.e.HideNotifications)
+							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(C), e.hideNotification && e.hideNotification(me), ke(f.e.HideNotifications)
 						},
 						hideSubredditNotifications: () => {
 							const t = f.e.HideSubreddit;
-							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(S), e.hideSubredditNotifications && e.hideSubredditNotifications(xe, () => De(t)), ke(t)
+							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(C), e.hideSubredditNotifications && e.hideSubredditNotifications(xe, () => De(t)), ke(t)
 						},
 						blockAwarder: () => {
-							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(S), e.blockAwarder && e.blockAwarder(Me), ke(f.e.BlockAwarder)
+							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(C), e.blockAwarder && e.blockAwarder(Me), ke(f.e.BlockAwarder)
 						},
 						isInTooltip: $,
 						isHideNotifEligible: se,
@@ -615,21 +615,21 @@
 						isToggleNotificationUpdateEligible: ce,
 						isToggleUpdateFromSubredditEligible: !(!de || !xe),
 						isBlockAwarderEligible: Ue,
-						sendInboxViewOverflow: () => k(Object(f.x)(Ce)),
+						sendInboxViewOverflow: () => k(Object(f.x)(Se)),
 						tooltipId: ge
 					}), c.a.createElement(o.a, {
 						onChange: e => {
 							if (e.isIntersecting && !Z) {
 								if (Q) return k(Object(f.t)({
-									...Ce
+									...Se
 								}));
 								k(Object(f.w)({
-									...Ce
+									...Se
 								})), K(!0)
 							}
 						},
 						rootMargin: "0px 0px 0px 0px",
-						threshold: C
+						threshold: S
 					}, c.a.createElement("div", null)))
 				};
 			t.default = U
@@ -858,4 +858,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.0772eee2f7900946ac3a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.e7c1d16ce5b4e903a1e4.js.map

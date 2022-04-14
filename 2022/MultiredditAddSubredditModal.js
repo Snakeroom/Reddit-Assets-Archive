@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.7afa970631b9fdf31842.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.f3ca0d9c29580e8097f4.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -24,9 +24,9 @@
 			})), r.d(t, "myMultiredditsPending", (function() {
 				return D
 			})), r.d(t, "myMultiredditsReceived", (function() {
-				return W
-			})), r.d(t, "myMultiredditsRequested", (function() {
 				return z
+			})), r.d(t, "myMultiredditsRequested", (function() {
+				return W
 			})), r.d(t, "createFailure", (function() {
 				return J
 			})), r.d(t, "createPending", (function() {
@@ -141,8 +141,8 @@
 								displayName: i.toLowerCase()
 							}
 						}).sort((e, t) => e.displayName.localeCompare(t.displayName)),
-						s = i.filter(e => !e.displayName.startsWith(a.jc)).map(e => e.id),
-						d = i.filter(e => e.displayName.startsWith(a.jc)).map(e => e.id);
+						s = i.filter(e => !e.displayName.startsWith(a.kc)).map(e => e.id),
+						d = i.filter(e => e.displayName.startsWith(a.kc)).map(e => e.id);
 					return {
 						created: e.created_utc,
 						description: e.description_md,
@@ -179,7 +179,7 @@
 					const {
 						gqlContext: s
 					} = i, {
-						sort: d = a.W.HOT,
+						sort: d = a.X.HOT,
 						multiredditName: n,
 						username: o
 					} = e, c = r(), u = c.platform.currentPage, m = u ? u.queryParams : {}, b = Object(T.d)(c, {
@@ -219,14 +219,14 @@
 						multiredditsModelsState: c.multireddits.models
 					})) : t(q({
 						error: {
-							type: a.I.NOT_FOUND_ERROR
+							type: a.J.NOT_FOUND_ERROR
 						},
 						fetchedToken: f.token,
 						key: p,
 						..._.body,
 						...Object(S.a)(c, p, v)
 					}))
-				}, D = Object(c.a)(L.t), W = Object(c.a)(L.u), z = function(e) {
+				}, D = Object(c.a)(L.t), z = Object(c.a)(L.u), W = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 					return async (r, i, s) => {
 						let {
@@ -243,7 +243,7 @@
 						if (o.ok) {
 							const e = o.body.data.identity.allMultireddits.edges.map(e => e.node),
 								t = Object(k.b)(e);
-							r(W({
+							r(z({
 								...t,
 								multiredditsModelsState: a.multireddits.models
 							}))
@@ -273,7 +273,7 @@
 									subreddits: []
 								})
 							},
-							method: a.jb.POST
+							method: a.kb.POST
 						}))(c(), r, t);
 						if (p.ok) {
 							const {
@@ -305,7 +305,7 @@
 						c = o && o.routeMatch && o.routeMatch.match;
 					if (!c) return;
 					const u = c.params,
-						b = u.sort || a.W.HOT,
+						b = u.sort || a.X.HOT,
 						{
 							multiredditName: f,
 							username: h
@@ -317,7 +317,7 @@
 						} = c,
 						O = Object(l.a)(x, b, g),
 						j = p.E in g && g[p.E].toUpperCase() || "",
-						y = a.hc[j] || !1,
+						y = a.ic[j] || !1,
 						C = Object(I.k)(s);
 					(h || C && C.displayText) && await e(Object(m.multiredditFeedRequested)(O, (h || C.displayText).toLowerCase(), f.toLowerCase(), {
 						...d()(g, p.n),
@@ -349,7 +349,7 @@
 								expand_srs: !0,
 								from: t.from
 							},
-							method: a.jb.POST
+							method: a.kb.POST
 						}))(l(), {
 							from: O,
 							displayName: r,
@@ -397,13 +397,13 @@
 						} = m;
 						if (!p) return;
 						const O = s.map(e => `/user/${p.toLowerCase()}/m/${e.toLowerCase()}`).join(","),
-							j = `${"profile"===r.type?a.jc:""}${r.name}`,
+							j = `${"profile"===r.type?a.kc:""}${r.name}`,
 							y = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 								endpoint: Object(g.a)(`${e.apiUrl}/api/multi/bulk_add/r/${t}`),
 								data: {
 									paths: r
 								},
-								method: a.jb.PUT
+								method: a.kb.PUT
 							}))(c(), j, O);
 						if (y.ok) {
 							const d = Object(R.J)(l, {
@@ -457,9 +457,9 @@
 						}));
 						const {
 							displayText: p
-						} = m, O = Object(F.h)(p, r), j = `${"profile"===d?a.jc:""}${s}`, y = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
+						} = m, O = Object(F.h)(p, r), j = `${"profile"===d?a.kc:""}${s}`, y = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 							endpoint: Object(g.a)(`${e.apiUrl}/api/multi${r}r/${t}`),
-							method: a.jb.DELETE
+							method: a.kb.DELETE
 						}))(c(), j, O);
 						y.ok ? (e(Object(u.f)()), e(se({
 							id: t,
@@ -494,7 +494,7 @@
 					t(oe());
 					const c = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
 						endpoint: Object(g.a)(`${e.apiUrl}/api/multi${t}`),
-						method: a.jb.DELETE
+						method: a.kb.DELETE
 					}))(d(), e);
 					c.ok ? (await t(ce(e)), t(Object(u.f)()), await t(Object(n.b)("/")), t(Object(b.f)({
 						text: i.fbt._("Custom feed deleted!", null, {
@@ -533,7 +533,7 @@
 									}),
 									expand_srs: !0
 								},
-								method: a.jb.PUT
+								method: a.kb.PUT
 							})
 						})({
 							context: c(),
@@ -660,7 +660,7 @@
 						if (!C.multireddit) return d && n(m.g(S)), void n(R({
 							...i,
 							error: {
-								type: l.I.NOT_FOUND_ERROR
+								type: l.J.NOT_FOUND_ERROR
 							},
 							key: e
 						}));
@@ -709,7 +709,7 @@
 						return c += l ? `/${l}` : "", void r(Object(n.c)(Object(a.a)(c, e.queryParams)))
 					}
 					const {
-						sort: c = l.W.HOT
+						sort: c = l.X.HOT
 					} = e.params, m = {
 						multiredditName: s,
 						username: o
@@ -721,7 +721,7 @@
 						_ = f.listings.postOrder.api.error[g],
 						S = f.listings.postOrder.api.pending[g],
 						E = p.E in e.queryParams && e.queryParams[p.E].toUpperCase() || "",
-						w = E in l.hc && l.hc[E];
+						w = E in l.ic && l.ic[E];
 					if (S || j && !_ && !t) return void(j && (r(u.m({
 						title: Object(C.f)(i(), m)
 					})), f.sidebarPromotedPosts.firstFetch || r(Object(N.b)(F.a.MULTIREDDIT))));
@@ -1492,4 +1492,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.7afa970631b9fdf31842.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.f3ca0d9c29580e8097f4.js.map

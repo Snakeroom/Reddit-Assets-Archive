@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.0da4ccdd5af418f5cd38.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.be7de2771e03b4f1284f.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -264,8 +264,8 @@
 				_ = n("./node_modules/react-redux/es/index.js"),
 				S = n("./node_modules/reselect/es/index.js"),
 				M = n("./src/reddit/actions/modal.ts"),
-				f = n("./src/reddit/actions/wiki/wikiBannedContributors/index.ts"),
-				x = n("./src/reddit/components/BannedUserList/index.tsx"),
+				x = n("./src/reddit/actions/wiki/wikiBannedContributors/index.ts"),
+				f = n("./src/reddit/components/BannedUserList/index.tsx"),
 				P = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				T = n("./src/reddit/components/HumanDate/index.tsx"),
 				N = n("./src/reddit/components/ModerationPagesEmptyList/index.tsx"),
@@ -297,7 +297,7 @@
 						subredditName: n
 					} = t;
 					return {
-						addBannedWikiContributor: t => e(Object(f.a)(n, t))
+						addBannedWikiContributor: t => e(Object(x.a)(n, t))
 					}
 				});
 			class ee extends s.a.Component {
@@ -443,7 +443,7 @@
 						const t = this.props.wikiContributors.find(t => t.id === e);
 						if (!t) return s.a.createElement(s.a.Fragment, null);
 						const n = new Date(t.date),
-							i = Object(x.b)(t.daysRemaining);
+							i = Object(f.b)(t.daysRemaining);
 						return s.a.createElement(W.b, {
 							description: t.note,
 							username: t.username,
@@ -537,9 +537,9 @@
 						subredditName: n
 					} = t;
 					return {
-						moreWikiBannedContributorsRequested: t => e(Object(f.b)(n, t)),
-						removeWikiBannedContributor: t => e(Object(f.c)(n, t)),
-						searchWikiBannedContributorByName: t => e(Object(f.d)(n, t)),
+						moreWikiBannedContributorsRequested: t => e(Object(x.b)(n, t)),
+						removeWikiBannedContributor: t => e(Object(x.c)(n, t)),
+						searchWikiBannedContributorByName: t => e(Object(x.d)(n, t)),
 						toggleAddBannedContributorModal: () => e(Object(M.i)("WikiBannedContributers--BanContributorModal")),
 						toggleConfirmModal: () => e(Object(M.i)("WikiBannedContributers--RemoveBannedWikiContributor"))
 					}
@@ -738,8 +738,8 @@
 				_e = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				Se = n("./src/reddit/models/SubredditWikiPage/index.ts"),
 				Me = n("./src/reddit/selectors/subreddit.ts"),
-				fe = n("./node_modules/lodash/noop.js"),
-				xe = n.n(fe),
+				xe = n("./node_modules/lodash/noop.js"),
+				fe = n.n(xe),
 				Pe = n("./node_modules/lodash/times.js"),
 				Te = n.n(Pe),
 				Ne = n("./src/lib/classNames/index.ts"),
@@ -808,7 +808,7 @@
 					}, s.a.createElement(ye.a, {
 						username: e.username,
 						iconSize: 24,
-						sendHoverCardEvent: xe.a,
+						sendHoverCardEvent: fe.a,
 						tooltipId: `wikiPageContributor--${e.username}`,
 						userIcon: e.iconUrl
 					}), s.a.createElement(D.r, {
@@ -1091,10 +1091,10 @@
 							});
 							break;
 						default:
-							return p === r.fc.WikiBanned ? s.a.createElement(se, {
+							return p === r.gc.WikiBanned ? s.a.createElement(se, {
 								subredditId: e.id,
 								subredditName: e.name
-							}) : p === r.fc.WikiContributors ? s.a.createElement(he, {
+							}) : p === r.gc.WikiContributors ? s.a.createElement(he, {
 								subredditName: e.name
 							}) : h && g && k ? s.a.createElement(o.a, {
 								comparisonRevisionId: Object(m.a)(k),
@@ -1153,7 +1153,7 @@
 			})), n.d(t, "n", (function() {
 				return M
 			})), n.d(t, "o", (function() {
-				return f
+				return x
 			}));
 			var i = n("./src/reddit/models/SubredditWikiPage/index.ts"),
 				s = n("./src/reddit/selectors/telemetry.ts");
@@ -1211,7 +1211,7 @@
 						settingValue: e ? "show" : "hide"
 					})
 				}),
-				f = e => t => ({
+				x = e => t => ({
 					...r(t),
 					source: "wiki",
 					action: "click",
@@ -1223,4 +1223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.0da4ccdd5af418f5cd38.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.be7de2771e03b4f1284f.js.map

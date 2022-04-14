@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.1fc2cb49ecc92ce572c6.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.8eb4230dc46ad3c66054.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/react-popper/lib/esm/usePopper.js": function(e, t, n) {
@@ -2223,7 +2223,7 @@
 					ie = W("Pinned", z.id, G);
 				return r.a.createElement("div", {
 					className: t
-				}, u && n && z.distinguishType === l.G.MODERATOR && r.a.createElement(o.Fragment, null, r.a.createElement(g.a, {
+				}, u && n && z.distinguishType === l.H.MODERATOR && r.a.createElement(o.Fragment, null, r.a.createElement(g.a, {
 					name: "mod",
 					isFilled: !0,
 					className: Object(d.a)(T.a.icon, T.a.modIcon)
@@ -3661,4 +3661,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.1fc2cb49ecc92ce572c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.8eb4230dc46ad3c66054.js.map

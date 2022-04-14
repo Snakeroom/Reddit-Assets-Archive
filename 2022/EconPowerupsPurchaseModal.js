@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.03ab5ec19e7a9b3f4085.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.3f2f5e03352c90b9b009.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1210,7 +1210,7 @@
 			var V = r("./src/reddit/components/PowerupsSidebar/common/utils.ts"),
 				W = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/PowerupsCount/index.m.less"),
 				Q = r.n(W);
-			var Y = function(e) {
+			var J = function(e) {
 					const {
 						className: t,
 						onChange: r,
@@ -1238,8 +1238,8 @@
 						onClick: () => i(1)
 					})))
 				},
-				X = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
-				J = r.n(X);
+				Y = r("./src/reddit/components/Econ/PowerupsPurchaseModal/PowerupsPurchase/PowerupsProgressControl/ProgressBar/index.m.less"),
+				X = r.n(Y);
 			const {
 				fbt: K
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
@@ -1256,20 +1256,20 @@
 					return a.a.createElement("div", {
 						className: r
 					}, a.a.createElement("div", {
-						className: J.a.titleRow
+						className: X.a.titleRow
 					}, a.a.createElement("span", null, K._("Powerups", null, {
 						hk: "DrcXp"
 					})), a.a.createElement("span", null, n < o ? `${n}/${o}` : n)), a.a.createElement("div", {
-						className: J.a.barRow
+						className: X.a.barRow
 					}, a.a.createElement("div", {
-						className: J.a.track
+						className: X.a.track
 					}), a.a.createElement("div", {
-						className: J.a.progress,
+						className: X.a.progress,
 						style: {
 							width: `${100*s}%`
 						}
 					}), t && a.a.createElement("div", {
-						className: J.a.additionalProgress,
+						className: X.a.additionalProgress,
 						style: {
 							width: `${100*(c-s)}%`,
 							left: `${100*s}%`
@@ -1298,7 +1298,7 @@
 					className: ee.a.bar,
 					count: s.count,
 					maxCount: d
-				}), a.a.createElement(Y, {
+				}), a.a.createElement(J, {
 					className: ee.a.count,
 					style: {
 						left: `${100*u}%`
@@ -1380,7 +1380,7 @@
 						stripeErrorMessage: u,
 						subredditId: m,
 						userPowerupsData: p
-					} = e, f = Object(o.d)(), [b, j] = Object(n.useState)(v.Hb);
+					} = e, f = Object(o.d)(), [b, j] = Object(n.useState)(v.Ib);
 					Object(n.useEffect)(() => {
 						f(Object(w.e)()), f(Object(O.selectPaymentMethod)(b))
 					}, []);
@@ -1430,11 +1430,11 @@
 						onPaymentSelected: e => {
 							j(e), f(Object(O.selectPaymentMethod)(e))
 						}
-					}), b === v.Gb && u && a.a.createElement("div", {
+					}), b === v.Hb && u && a.a.createElement("div", {
 						className: oe.a.errorMessage
-					}, u), b === v.Hb && c && a.a.createElement("div", {
+					}, u), b === v.Ib && c && a.a.createElement("div", {
 						className: oe.a.errorMessage
-					}, c), b === v.Gb && a.a.createElement(h.ElementsConsumer, null, e => {
+					}, c), b === v.Hb && a.a.createElement(h.ElementsConsumer, null, e => {
 						let {
 							stripe: t
 						} = e;
@@ -1444,10 +1444,10 @@
 							shouldDeleteCardWithGql: !0,
 							stripe: t
 						})
-					}), b === v.Hb && a.a.createElement(U, {
+					}), b === v.Ib && a.a.createElement(U, {
 						className: oe.a.button,
 						subredditId: m
-					}), b === v.Gb && a.a.createElement(ne, {
+					}), b === v.Hb && a.a.createElement(ne, {
 						className: oe.a.button,
 						subredditId: m
 					}), a.a.createElement("p", {
@@ -2479,7 +2479,7 @@
 						h = `${r.apiUrl}/api/v2/gold/stripe/buy_coins`,
 						g = Object(d.a)(h);
 					return Object(a.a)(Object(s.a)(r, [i.a]), {
-						method: n.jb.POST,
+						method: n.kb.POST,
 						endpoint: g,
 						data: b
 					}).then(m)
@@ -2515,7 +2515,7 @@
 						correlation_id: o
 					}, C = `${r.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, w = l ? C : Object(d.a)(C);
 					return Object(a.a)(Object(s.a)(r, [i.a]), {
-						method: n.jb.POST,
+						method: n.kb.POST,
 						endpoint: w,
 						data: P
 					}).then(m)
@@ -2547,7 +2547,7 @@
 						correlation_id: r
 					}, E = `${t.apiUrl}/api/v2/gold/stripe/buy_award`, P = c ? E : Object(d.a)(E);
 					return Object(a.a)(Object(s.a)(t, [i.a]), {
-						method: n.jb.POST,
+						method: n.kb.POST,
 						endpoint: P,
 						data: v
 					}).then(m)
@@ -2566,7 +2566,7 @@
 						u = `${t.apiUrl}/api/v2/gold/stripe/buy_premium_subscription`,
 						p = Object(d.a)(u);
 					return Object(a.a)(Object(s.a)(t, [i.a]), {
-						method: n.jb.POST,
+						method: n.kb.POST,
 						endpoint: p,
 						data: l
 					}).then(m)
@@ -2589,7 +2589,7 @@
 						card_id: t
 					};
 					return Object(a.a)(Object(s.a)(e, [i.a]), {
-						method: n.jb.POST,
+						method: n.kb.POST,
 						endpoint: `${e.apiUrl}/api/v2/gold/stripe/delete_creditcard`,
 						data: r
 					}).then(e => e.ok ? {
@@ -2599,7 +2599,7 @@
 						error: Object(u.a)(e)
 					})
 				}, E = async e => Object(a.a)(Object(s.a)(e, [i.a]), {
-					method: n.jb.GET,
+					method: n.kb.GET,
 					endpoint: `${e.apiUrl}/api/v2/gold/stripe/creditcards`
 				}).then(e => e.ok ? {
 					...e
@@ -2613,7 +2613,7 @@
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./src/lib/constants/index.ts");
 			t.a = () => ({
-				type: a.I.SERVER_ERROR,
+				type: a.J.SERVER_ERROR,
 				fields: [{
 					field: "",
 					msg: n.fbt._("Something went wrong.", null, {
@@ -2660,23 +2660,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case n.I.NO_STRIPE_SUBSCRIPTION:
-							case n.I.USER_DOESNT_EXIST:
-							case n.I.USER_REQUIRED_ERROR:
-							case n.I.VALIDATION_ERROR:
+							case n.J.NO_STRIPE_SUBSCRIPTION:
+							case n.J.USER_DOESNT_EXIST:
+							case n.J.USER_REQUIRED_ERROR:
+							case n.J.VALIDATION_ERROR:
 								return e;
-							case n.I.NO_USER:
-							case n.I.NO_TEXT:
-							case n.I.NO_URL:
-								return n.I.VALIDATION_ERROR;
-							case n.I.CREDIT_CARD_FAILURE:
-							case n.I.CREDIT_CARD_FAILURE_GENERIC:
-								return n.I.CREDIT_CARD_FAILURE;
+							case n.J.NO_USER:
+							case n.J.NO_TEXT:
+							case n.J.NO_URL:
+								return n.J.VALIDATION_ERROR;
+							case n.J.CREDIT_CARD_FAILURE:
+							case n.J.CREDIT_CARD_FAILURE_GENERIC:
+								return n.J.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return n.I.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return n.J.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return n.I.VALIDATION_ERROR
+					return n.J.VALIDATION_ERROR
 				},
 				o = e => {
 					const t = e.body;
@@ -3140,7 +3140,7 @@
 					const {
 						thingId: r,
 						packageId: l
-					} = t, b = !!r, h = o.b(e), g = h ? Object(u.getAwardTypeFromAward)(h) : null, y = b ? g : c.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, v = r ? Object(p.a)(r) ? "comment" : "post" : void 0, E = l || c.t(e), P = [...Object(s.d)(e), ...Object(s.f)(e)].filter(e => e.mobileId === E)[0], C = t.offerContext || (h && 0 === h.coinPrice ? a.a.StorefrontFreeAward : Object(a.d)(P, b)), w = P ? Math.round(1e4 * (P.baselinePennies - P.pennies) / P.baselinePennies) / 100 : 0, O = P ? Math.round(1e4 * (P.coins - P.baselineCoins) / P.coins) / 100 : 0, j = P ? P.baselinePennies !== P.pennies ? `${w}_percent_price` : P.baselineCoins !== P.coins ? `${O}_percent_bonus` : void 0 : void 0, x = y === d.GoldPurchaseType.Premium ? n.yb : P ? P.pennies : void 0;
+					} = t, b = !!r, h = o.b(e), g = h ? Object(u.getAwardTypeFromAward)(h) : null, y = b ? g : c.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, v = r ? Object(p.a)(r) ? "comment" : "post" : void 0, E = l || c.t(e), P = [...Object(s.d)(e), ...Object(s.f)(e)].filter(e => e.mobileId === E)[0], C = t.offerContext || (h && 0 === h.coinPrice ? a.a.StorefrontFreeAward : Object(a.d)(P, b)), w = P ? Math.round(1e4 * (P.baselinePennies - P.pennies) / P.baselinePennies) / 100 : 0, O = P ? Math.round(1e4 * (P.coins - P.baselineCoins) / P.coins) / 100 : 0, j = P ? P.baselinePennies !== P.pennies ? `${w}_percent_price` : P.baselineCoins !== P.coins ? `${O}_percent_bonus` : void 0 : void 0, x = y === d.GoldPurchaseType.Premium ? n.zb : P ? P.pennies : void 0;
 					return {
 						...i.n(e),
 						comment: r ? i.h(e, r) : null,
@@ -3777,4 +3777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.03ab5ec19e7a9b3f4085.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.3f2f5e03352c90b9b009.js.map

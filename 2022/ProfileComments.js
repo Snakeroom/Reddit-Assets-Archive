@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.8fde14803847e20d3b7a.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.e0ba89e07e2bcbcbaf7c.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, s) {
@@ -51,7 +51,7 @@
 				return r && (o = Object(j.a)(o)), Object(y.a)(e, {
 					data: s,
 					endpoint: o,
-					method: x.jb.GET
+					method: x.kb.GET
 				})
 			};
 			var E = s("./src/reddit/helpers/getTimeSortForListing/index.ts"),
@@ -989,7 +989,7 @@
 					let {
 						match: s
 					} = t;
-					return Object(ee.f)(e, c.jc + s.params.profileName)
+					return Object(ee.f)(e, c.kc + s.params.profileName)
 				}, ve.a, Oe.b, (e, t) => {
 					let {
 						match: s
@@ -1083,7 +1083,7 @@
 				const L = {
 					sort: p,
 					baseUrl: j,
-					sortOptions: c.Db,
+					sortOptions: c.Eb,
 					timeSort: u
 				};
 				return i.a.createElement(fe.a, {
@@ -1113,4 +1113,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.8fde14803847e20d3b7a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.e0ba89e07e2bcbcbaf7c.js.map

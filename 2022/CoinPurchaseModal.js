@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.9a0e633839d172441c09.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.3a8616db5e5ff7350b51.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -351,9 +351,9 @@
 					R = P("payment", E),
 					B = P("paymentRequestButton", E),
 					D = P("linkAuthentication", E),
-					G = P("shippingAddress", E),
-					F = P("afterpayClearpayMessage", E);
-				e.AfterpayClearpayMessageElement = F, e.AuBankAccountElement = x, e.CardCvcElement = N, e.CardElement = w, e.CardExpiryElement = _, e.CardNumberElement = k, e.Elements = y, e.ElementsConsumer = O, e.EpsBankElement = M, e.FpxBankElement = I, e.IbanElement = S, e.IdealBankElement = T, e.LinkAuthenticationElement = D, e.P24BankElement = A, e.PaymentElement = R, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = G, e.useElements = function() {
+					F = P("shippingAddress", E),
+					G = P("afterpayClearpayMessage", E);
+				e.AfterpayClearpayMessageElement = G, e.AuBankAccountElement = x, e.CardCvcElement = N, e.CardElement = w, e.CardExpiryElement = _, e.CardNumberElement = k, e.Elements = y, e.ElementsConsumer = O, e.EpsBankElement = M, e.FpxBankElement = I, e.IbanElement = S, e.IdealBankElement = T, e.LinkAuthenticationElement = D, e.P24BankElement = A, e.PaymentElement = R, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = F, e.useElements = function() {
 					return C("calls useElements()").elements
 				}, e.useStripe = function() {
 					return C("calls useStripe()").stripe
@@ -566,7 +566,7 @@
 			})), r.d(t, "a", (function() {
 				return B
 			})), r.d(t, "i", (function() {
-				return G
+				return F
 			})), r.d(t, "f", (function() {
 				return L
 			})), r.d(t, "j", (function() {
@@ -827,17 +827,17 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, D = Object(p.a)(f.S), G = e => async (t, r) => {
+				}, D = Object(p.a)(f.S), F = e => async (t, r) => {
 					t(D(e)), t(Object(C.m)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(O.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(O.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, F = Object(p.a)(f.W), L = e => {
+				}, G = Object(p.a)(f.W), L = e => {
 					let {
 						user: t
 					} = e;
 					return async e => {
-						await e(Object(C.o)(!0)), e(F({
+						await e(Object(C.o)(!0)), e(G({
 							user: t
 						}))
 					}
@@ -1837,7 +1837,7 @@
 				B = r.n(R);
 			const {
 				fbt: D
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), G = e => {
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), F = e => {
 				let {
 					award: t,
 					coinBalance: r,
@@ -1863,7 +1863,7 @@
 					}, s.a.createElement(g.a, {
 						className: B.a.balance,
 						coinBalance: r
-					}), c === i.Hb && ((null == t ? void 0 : t.pennyPrice) && n ? s.a.createElement(S, {
+					}), c === i.Ib && ((null == t ? void 0 : t.pennyPrice) && n ? s.a.createElement(S, {
 						awardId: t.id,
 						className: Object(b.a)(B.a.purchaseButton, B.a.paypalCheckoutButton),
 						pennies: t.pennyPrice,
@@ -1871,7 +1871,7 @@
 					}) : a && s.a.createElement(S, {
 						className: Object(b.a)(B.a.purchaseButton, B.a.paypalCheckoutButton),
 						coinPackage: a
-					})), c === i.Gb && s.a.createElement(T.l, {
+					})), c === i.Hb && s.a.createElement(T.l, {
 						className: B.a.purchaseButton,
 						"data-redditstyle": !0,
 						disabled: d || o,
@@ -1882,8 +1882,8 @@
 				}
 				const x = null == E ? void 0 : E.pricePackages.find(e => e.id === (null == a ? void 0 : a.mobileId));
 				if (!E || !x || !a) return null;
-				const w = c === i.Hb,
-					k = c === i.Gb,
+				const w = c === i.Ib,
+					k = c === i.Hb,
 					_ = w ? y.a : p.a;
 				return s.a.createElement("div", {
 					className: B.a.purchaseSelectPaymentFooter
@@ -1906,13 +1906,13 @@
 					}
 				}))
 			};
-			var F = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
+			var G = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				L = r("./src/reddit/hooks/useLocale.ts"),
 				q = r("./src/reddit/icons/fonts/Coin/index.tsx");
 			const {
 				fbt: U
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
-			var Q = e => {
+			var H = e => {
 				var t;
 				const r = Object(L.a)();
 				return s.a.createElement("div", {
@@ -1940,12 +1940,12 @@
 				}), s.a.createElement("button", {
 					className: B.a.closeButton,
 					onClick: e.onCloseClick
-				}, s.a.createElement(F.b, {
+				}, s.a.createElement(G.b, {
 					className: B.a.closeIcon,
 					"data-redditstyle": !0
 				})))
 			};
-			var H = e => {
+			var Q = e => {
 					const t = Object(L.a)(),
 						r = [];
 					if (e.purchasePackage && r.push(a.fbt._("{coinCount} will automatically be spent on this {awardName} Award.", [a.fbt._param("coinCount", Object(l.b)(e.award.coinPrice, {
@@ -1989,7 +1989,7 @@
 					}), s.a.createElement("button", {
 						className: B.a.closeButton,
 						onClick: e.onCloseClick
-					}, s.a.createElement(F.b, {
+					}, s.a.createElement(G.b, {
 						className: Object(b.a)(B.a.closeIcon, B.a.awardPurchase),
 						"data-redditstyle": !0
 					})))
@@ -2003,13 +2003,13 @@
 					o = e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0;
 				return s.a.createElement(n.Elements, {
 					stripe: r
-				}, s.a.createElement(s.a.Fragment, null, e.gildThingId ? s.a.createElement(H, {
+				}, s.a.createElement(s.a.Fragment, null, e.gildThingId ? s.a.createElement(Q, {
 					coinBalance: e.coinBalance,
 					award: e.selectedAward,
 					purchasePackage: e.purchasePackage,
 					userName: e.userName,
 					onCloseClick: e.onCloseModal
-				}) : e.purchasePackage && s.a.createElement(Q, {
+				}) : e.purchasePackage && s.a.createElement(H, {
 					coinBalance: e.coinBalance,
 					purchasePackage: e.purchasePackage,
 					userName: e.userName,
@@ -2022,7 +2022,7 @@
 					nightmode: e.nightmode,
 					selectedPayment: e.selectedPayment,
 					onPaymentSelected: e.onPaymentSelected
-				}), e.selectedPayment === i.Gb && s.a.createElement(n.ElementsConsumer, null, t => {
+				}), e.selectedPayment === i.Hb && s.a.createElement(n.ElementsConsumer, null, t => {
 					let {
 						stripe: r
 					} = t;
@@ -2038,9 +2038,9 @@
 					locale: t
 				}))], {
 					hk: "3dx6W8"
-				}))), e.selectedPayment === i.Hb && e.paypalErrorMessage && s.a.createElement("div", {
+				}))), e.selectedPayment === i.Ib && e.paypalErrorMessage && s.a.createElement("div", {
 					className: B.a.errorMessage
-				}, e.paypalErrorMessage), e.selectedPayment === i.Gb && e.stripeErrorMessage && s.a.createElement("div", {
+				}, e.paypalErrorMessage), e.selectedPayment === i.Hb && e.stripeErrorMessage && s.a.createElement("div", {
 					className: B.a.errorMessage
 				}, e.stripeErrorMessage), s.a.createElement("div", {
 					className: B.a.agreementLink
@@ -2071,7 +2071,7 @@
 						stripe: r,
 						elements: n
 					} = t;
-					return s.a.createElement(G, {
+					return s.a.createElement(F, {
 						award: e.selectedAward,
 						coinBalance: e.coinBalance,
 						gildThingId: e.gildThingId,
@@ -2242,7 +2242,7 @@
 					...r,
 					onCompletePurchaseClick: (r, n, a) => t.dispatchCompletePurchase(r, n, a, !!e.gildThingId, e.isIframed)
 				}));
-			class G extends a.a.Component {
+			class F extends a.a.Component {
 				constructor(e) {
 					super(e), this.handleEscapeKey = e => {
 						const {
@@ -2331,7 +2331,7 @@
 					}))
 				}
 			}
-			const F = Object(c.a)(G);
+			const G = Object(c.a)(F);
 			t.default = D(Object(m.c)(class extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
@@ -2353,7 +2353,7 @@
 							paddingBottom: 12
 						} : {}
 					};
-					return a.a.createElement(F, R({}, this.props, {
+					return a.a.createElement(G, R({}, this.props, {
 						className: I.a.coinPurchaseModal,
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -3172,7 +3172,7 @@
 					u = `${r.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					p = Object(c.a)(u);
 				return Object(a.a)(Object(o.a)(r, [s.a]), {
-					method: n.jb.POST,
+					method: n.kb.POST,
 					endpoint: p,
 					data: l
 				}).then(i.c)
@@ -3189,7 +3189,7 @@
 					correlation_id: d
 				};
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.jb.POST,
+					method: n.kb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: l
 				}).then(i.c)
@@ -3208,7 +3208,7 @@
 					thing_id: d
 				};
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.jb.POST,
+					method: n.kb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: u
 				}).then(i.c)
@@ -3229,7 +3229,7 @@
 					correlation_id: u
 				};
 				return Object(a.a)(Object(o.a)(t, [s.a]), {
-					method: n.jb.POST,
+					method: n.kb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: p
 				}).then(i.c)
@@ -3258,7 +3258,7 @@
 					thing_id: f
 				};
 				return Object(a.a)(Object(o.a)(r, [s.a]), {
-					method: n.jb.POST,
+					method: n.kb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: h
 				}).then(i.c)
@@ -3281,7 +3281,7 @@
 					thing_id: p
 				};
 				return Object(a.a)(Object(o.a)(r, [s.a]), {
-					method: n.jb.POST,
+					method: n.kb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: m
 				}).then(i.c)
@@ -3724,4 +3724,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.9a0e633839d172441c09.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.3a8616db5e5ff7350b51.js.map

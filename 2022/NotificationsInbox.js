@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.00f6c37a321c25384e82.js
-// Retrieved at 4/11/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.576f1183c1adbc00ba83.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -405,7 +405,7 @@
 						}, () => this.forceUnsticky = !1)) : O() >= y && this.setState({
 							sticky: !0
 						})
-					}, d.K), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
+					}, d.L), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
 						sticky: !1
 					}
 				}
@@ -660,8 +660,8 @@
 				q = n("./src/reddit/icons/fonts/index.tsx"),
 				Y = n("./src/reddit/pages/NotificationsInbox/NavBar/index.m.less"),
 				X = n.n(Y);
-			const K = h.a.wrapped(G.a, "Badge", X.a),
-				V = h.a.wrapped(Q.a, "Tab", X.a);
+			const V = h.a.wrapped(G.a, "Badge", X.a),
+				K = h.a.wrapped(Q.a, "Tab", X.a);
 			var Z = e => {
 				const {
 					messagesTabBadgeCount: t,
@@ -675,15 +675,15 @@
 					hk: "18kEAD"
 				})), s.a.createElement("nav", {
 					className: X.a.navBar
-				}, s.a.createElement("ul", null, s.a.createElement("li", null, s.a.createElement(V, {
+				}, s.a.createElement("ul", null, s.a.createElement("li", null, s.a.createElement(K, {
 					active: !0,
 					to: "/notifications"
 				}, J.fbt._("Activity", null, {
 					hk: "24wHCv"
-				}), s.a.createElement(K, {
+				}), s.a.createElement(V, {
 					isActive: !!n,
 					unreadCount: n
-				}))), s.a.createElement("li", null, s.a.createElement(V, {
+				}))), s.a.createElement("li", null, s.a.createElement(K, {
 					active: !1,
 					onMouseDown: () => {
 						i(Object(C.u)({
@@ -694,7 +694,7 @@
 					to: a ? "/message/unread" : "/message/messages"
 				}, J.fbt._("Messages", null, {
 					hk: "Xl3Wz"
-				}), s.a.createElement(K, {
+				}), s.a.createElement(V, {
 					isActive: a,
 					unreadCount: t
 				}))), s.a.createElement("li", null, s.a.createElement("button", {
@@ -743,4 +743,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.00f6c37a321c25384e82.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.576f1183c1adbc00ba83.js.map

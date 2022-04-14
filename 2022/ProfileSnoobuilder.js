@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.e16319817534189d8123.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.beb9cb66ebb98cfb7363.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileSnoobuilder", "reddit-components-ContentGate"], {
 		"./assets/snoobuilder/Snoobuilder.json": function(e, t, n) {
@@ -518,7 +518,7 @@
 						isContributorRequestTimestamp: s
 					} = n;
 					if (!s) return !1;
-					const r = 30 * j.B;
+					const r = 30 * j.C;
 					return s > Date.now() - r
 				})(e),
 				isSeo: L.g
@@ -1848,7 +1848,7 @@
 					} = e;
 					const d = n ? [{
 						internal: !0,
-						isActive: r === f.Nb.PROFILE_PRIVATE && i === C.b.Saved,
+						isActive: r === f.Ob.PROFILE_PRIVATE && i === C.b.Saved,
 						key: "profile.mainmenu.saved",
 						text: s.fbt._("Saved", null, {
 							hk: "2w1YRh"
@@ -1857,7 +1857,7 @@
 						position: F.MENU
 					}, {
 						internal: !0,
-						isActive: r === f.Nb.PROFILE_PRIVATE && i === C.b.Hidden,
+						isActive: r === f.Ob.PROFILE_PRIVATE && i === C.b.Hidden,
 						key: "profile.mainmenu.hidden",
 						text: s.fbt._("Hidden", null, {
 							hk: "225tka"
@@ -1866,7 +1866,7 @@
 						position: F.MENU
 					}, {
 						internal: !0,
-						isActive: r === f.Nb.PROFILE_PRIVATE && i === C.b.Upvoted,
+						isActive: r === f.Ob.PROFILE_PRIVATE && i === C.b.Upvoted,
 						key: "profile.mainmenu.upvoted",
 						text: s.fbt._("Upvoted", null, {
 							hk: "RKwFZ"
@@ -1875,7 +1875,7 @@
 						position: F.MENU
 					}, {
 						internal: !0,
-						isActive: r === f.Nb.PROFILE_PRIVATE && i === C.b.Downvoted,
+						isActive: r === f.Ob.PROFILE_PRIVATE && i === C.b.Downvoted,
 						key: "profile.mainmenu.downvoted",
 						text: s.fbt._("Downvoted", null, {
 							hk: "2F9IL4"
@@ -1885,7 +1885,7 @@
 					}] : [];
 					n ? (d.push({
 						internal: !0,
-						isActive: r === f.Nb.PROFILE_PRIVATE && i === C.b.ReceivedGildings,
+						isActive: r === f.Ob.PROFILE_PRIVATE && i === C.b.ReceivedGildings,
 						key: "profile.mainmenu.receiverGildings",
 						text: s.fbt._("Awards received", null, {
 							hk: "iwLBV"
@@ -1894,7 +1894,7 @@
 						position: F.MENU
 					}), d.push({
 						internal: !0,
-						isActive: r === f.Nb.PROFILE_PRIVATE && i === C.b.GivenGildings,
+						isActive: r === f.Ob.PROFILE_PRIVATE && i === C.b.GivenGildings,
 						key: "profile.mainmenu.givenGildings",
 						text: s.fbt._("Awards given", null, {
 							hk: "2UPYZc"
@@ -1913,7 +1913,7 @@
 					});
 					const c = o ? [{
 							internal: !0,
-							isActive: r === f.Nb.PROFILE_SNOOBUILDER,
+							isActive: r === f.Ob.PROFILE_SNOOBUILDER,
 							key: "profile.mainmenu.snoobuilder",
 							text: s.fbt._("Snoobuilder", null, {
 								hk: "3SSKff"
@@ -1924,7 +1924,7 @@
 						l = a ? "?consent=true" : "";
 					return [{
 						internal: !0,
-						isActive: r === f.Nb.PROFILE_OVERVIEW,
+						isActive: r === f.Ob.PROFILE_OVERVIEW,
 						key: "profile.mainmenu.overview",
 						text: s.fbt._("Overview", null, {
 							hk: "2IBbqy"
@@ -1933,7 +1933,7 @@
 						position: F.MENU
 					}, {
 						internal: !0,
-						isActive: r === f.Nb.PROFILE_POSTS,
+						isActive: r === f.Ob.PROFILE_POSTS,
 						key: "profile.mainmenu.posts",
 						text: s.fbt._("Posts", null, {
 							hk: "a1BoF"
@@ -1942,7 +1942,7 @@
 						position: F.MENU
 					}, {
 						internal: !0,
-						isActive: r === f.Nb.PROFILE_COMMENTS,
+						isActive: r === f.Ob.PROFILE_COMMENTS,
 						key: "profile.mainmenu.comments",
 						text: s.fbt._("Comments", null, {
 							hk: "2VwjOc"
@@ -3107,7 +3107,7 @@
 				})())))
 			};
 			h.defaultProps = {
-				minimizedLength: d.Tb
+				minimizedLength: d.Ub
 			}, t.a = h
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, n) {
@@ -3681,7 +3681,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = i()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, d.K), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, d.L), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -5165,4 +5165,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.e16319817534189d8123.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileSnoobuilder.beb9cb66ebb98cfb7363.js.map

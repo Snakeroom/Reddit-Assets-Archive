@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.f659710854fdb9b4c58a.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.4d6f7edddacc9c7ac41e.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -153,8 +153,8 @@
 				}))(S),
 				v = n("./node_modules/fbt/lib/FbtPublic.js"),
 				O = n("./src/lib/classNames/index.ts"),
-				j = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
-				T = n("./src/reddit/controls/InternalLink/index.tsx"),
+				T = n("./src/reddit/components/Hovercards/SubredditHovercard/index.tsx"),
+				j = n("./src/reddit/controls/InternalLink/index.tsx"),
 				C = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				w = n("./src/reddit/components/SEOSidebarLinks/index.m.less"),
 				F = n.n(w);
@@ -163,10 +163,10 @@
 						to: t,
 						title: n
 					} = e;
-					return d.a.createElement(j.a, {
+					return d.a.createElement(T.a, {
 						subredditName: n,
 						tooltipPosition: ["right", "top"]
-					}, d.a.createElement(T.a, {
+					}, d.a.createElement(j.a, {
 						className: F.a.Link,
 						to: t,
 						title: n
@@ -290,14 +290,14 @@
 				V = n("./src/reddit/constants/headers.ts");
 			const Y = e => Object(z.a)(Object(X.a)(e, [V.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
-				method: U.jb.GET,
+				method: U.kb.GET,
 				type: "json"
 			});
 			var $ = n("./src/reddit/components/SubredditAdoptionWidget/index.m.less"),
 				ee = n.n($);
 			const {
 				fbt: te
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = 3, se = 30 * U.kb, re = "SubredditAdoption";
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = 3, se = 30 * U.lb, re = "SubredditAdoption";
 			class ae extends d.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -411,8 +411,8 @@
 				Ee = n("./src/config.ts"),
 				ve = n("./src/lib/env/index.ts"),
 				Oe = n("./src/reddit/controls/Chip/index.tsx"),
-				je = n("./src/reddit/helpers/trackers/widgets.ts"),
-				Te = n("./src/reddit/hooks/useTracking.ts");
+				Te = n("./src/reddit/helpers/trackers/widgets.ts"),
+				je = n("./src/reddit/hooks/useTracking.ts");
 			const Ce = [{
 				getName: () => v.fbt._("Fashion", null, {
 					hk: "4tXmOZ"
@@ -648,12 +648,12 @@
 						className: Fe.a.itemContainer
 					}, d.a.createElement(Oe.a, {
 						to: Pe(e.topic.url),
-						onClick: () => e.sendEvent(Object(je.c)(t))
+						onClick: () => e.sendEvent(Object(Te.c)(t))
 					}, t))
 				};
 			var Ie = d.a.memo(e => {
-					const t = Object(Te.a)();
-					Object(o.useEffect)(() => t(Object(je.d)()), []);
+					const t = Object(je.a)();
+					Object(o.useEffect)(() => t(Object(Te.d)()), []);
 					const n = Ce.map(e => ({
 						value: e,
 						sort: Object(ve.d)() ? .5 : Math.random()
@@ -1532,11 +1532,11 @@
 						isOnLeaderboardPage: e.isOnLeaderboardPage,
 						isOnFrontpage: e.isOnFrontpage
 					})
-				}), !e.rankings.length && j),
-				j = c.a.createElement(c.a.Fragment, null, o()(5, e => c.a.createElement(p.a, {
+				}), !e.rankings.length && T),
+				T = c.a.createElement(c.a.Fragment, null, o()(5, e => c.a.createElement(p.a, {
 					key: e
 				}))),
-				T = e => {
+				j = e => {
 					const t = e.isSecondaryButton ? k.q : k.n,
 						n = e.linkColor ? {
 							backgroundColor: e.linkColor,
@@ -1623,7 +1623,7 @@
 					subreddits: t,
 					isOnLeaderboardPage: e.isOnLeaderboardPage,
 					isOnFrontpage: e.isOnFrontpage
-				}), c.a.createElement(T, {
+				}), c.a.createElement(j, {
 					categoryName: s,
 					categoryDisplayText: r,
 					isSecondaryButton: e.isSecondaryButton,
@@ -2218,4 +2218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.f659710854fdb9b4c58a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.4d6f7edddacc9c7ac41e.js.map

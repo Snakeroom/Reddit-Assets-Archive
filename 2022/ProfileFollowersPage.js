@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.cfa382eb2f88ea58df44.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.ab582435b63eadbb93cc.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -164,7 +164,7 @@
 					}));
 					const h = p.name;
 					if ((await Object(l.c)(d(), {
-							subredditNames: [`${n.jc}${p.name}`],
+							subredditNames: [`${n.kc}${p.name}`],
 							subscribe: t
 						})).ok) {
 						s(O({
@@ -245,16 +245,16 @@
 				F = s("./src/reddit/actions/pages/profileOverview/constants.ts"),
 				M = s("./src/lib/initializeClient/installReducer.ts"),
 				L = s("./node_modules/redux/es/redux.js"),
-				A = s("./src/reddit/actions/profileOverviewChrono/constants.ts");
-			const U = {};
+				U = s("./src/reddit/actions/profileOverviewChrono/constants.ts");
+			const A = {};
 			var H = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : U,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : A,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case F.c:
 					case F.b:
-					case A.c:
-					case A.b: {
+					case U.c:
+					case U.b: {
 						const {
 							key: s
 						} = t.payload;
@@ -264,7 +264,7 @@
 						}
 					}
 					case F.a:
-					case A.a: {
+					case U.a: {
 						const {
 							key: s,
 							error: r
@@ -284,7 +284,7 @@
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case F.c:
-						case A.c: {
+						case U.c: {
 							const {
 								key: s
 							} = t.payload;
@@ -295,8 +295,8 @@
 						}
 						case F.b:
 						case F.a:
-						case A.b:
-						case A.a: {
+						case U.b:
+						case U.a: {
 							const {
 								key: s
 							} = t.payload;
@@ -327,7 +327,7 @@
 							[s]: {}
 						}
 					}
-					case A.b: {
+					case U.b: {
 						const {
 							key: s,
 							fetchedToken: r
@@ -350,7 +350,7 @@
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case F.b:
-						case A.b: {
+						case U.b: {
 							const {
 								key: s,
 								overviewIds: r
@@ -371,7 +371,7 @@
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case F.b:
-						case A.b: {
+						case U.b: {
 							const {
 								key: s,
 								dist: r,
@@ -749,7 +749,7 @@
 							data: s,
 							endpoint: Object(m.a)(Object(c.a)(Object(p.a)(Object(h.a)(`${l.a.gatewayUrl}/desktopapi/v1/user/${t}/conversations`)))),
 							traceRequestName: "get_profile_conversations",
-							method: i.jb.GET
+							method: i.kb.GET
 						}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? {
 							...e,
 							body: {
@@ -805,7 +805,7 @@
 							t: m
 						},
 						O = [t(N.d(g))],
-						S = Object(T.a)(g, i.ub, u, e.queryParams);
+						S = Object(T.a)(g, i.vb, u, e.queryParams);
 					if (s().listings.postOrder.ids[S] && !s().listings.postOrder.api.error[S] ? h = !0 : O.push(t(Pe(S, g, I, !0))), O.push(t(Object(o.b)())), await Promise.all(O), h) return;
 					const P = s();
 					if (!P.platform.currentPage) return;
@@ -854,7 +854,7 @@
 				v = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const x = (e, t, s) => Object(p.a)(Object(h.a)(e, [b.a]), {
 				endpoint: Object(f.a)(Object(v.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
-				method: m.jb.GET,
+				method: m.kb.GET,
 				data: s
 			});
 			var g = s("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -944,9 +944,9 @@
 						return e
 				}
 			};
-			const A = {};
-			var U = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : A,
+			const U = {};
+			var A = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : U,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case _.n: {
@@ -1082,7 +1082,7 @@
 					api: T,
 					fetchedTokens: F,
 					inContext: L,
-					loadMore: U,
+					loadMore: A,
 					models: W,
 					search: q,
 					userOrder: Q
@@ -1145,7 +1145,7 @@
 					t.username = Object(g.a)(t.username), n(Object(a.h)(s));
 					const y = await ((e, t, s) => Object(p.a)(Object(h.a)(e, [b.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
-						method: m.jb.POST,
+						method: m.kb.POST,
 						data: {
 							api_type: "json",
 							ban_reason: s.reason,
@@ -1188,7 +1188,7 @@
 					const d = n().subreddits.models[e].url,
 						l = await ((e, t, s) => Object(p.a)(Object(h.a)(e, [b.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
-							method: m.jb.POST,
+							method: m.kb.POST,
 							data: {
 								api_type: "json",
 								id: s,
@@ -1451,8 +1451,8 @@
 				F = s("./src/reddit/controls/Button/index.tsx"),
 				M = s("./src/reddit/endpoints/profile/info.ts"),
 				L = s("./src/reddit/helpers/trackers/authorHovercard.ts"),
-				A = s("./src/reddit/icons/fonts/Info/index.tsx"),
-				U = s("./src/reddit/icons/svgs/Admin/index.tsx"),
+				U = s("./src/reddit/icons/fonts/Info/index.tsx"),
+				A = s("./src/reddit/icons/svgs/Admin/index.tsx"),
 				H = s("./src/reddit/icons/svgs/Premium/index.tsx"),
 				B = s("./src/reddit/models/Gold/Award.ts"),
 				W = s("./src/reddit/models/User/index.ts"),
@@ -1608,7 +1608,7 @@
 				je = S.a.div("Container", le.a),
 				Ne = e => n.a.createElement("div", null, n.a.createElement("div", null, n.a.createElement(be, {
 					to: `/user/${e.userName}/`
-				}, e.title || e.userName), e.user.isEmployee && n.a.createElement(U.a, {
+				}, e.title || e.userName), e.user.isEmployee && n.a.createElement(A.a, {
 					className: le.a.adminIcon,
 					title: O.fbt._("Reddit admin", null, {
 						hk: "15wBTE"
@@ -1646,7 +1646,7 @@
 						href: B.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, n.a.createElement(A.a, {
+					}, n.a.createElement(U.a, {
 						className: le.a.infoIcon
 					})))), n.a.createElement(Ce, null, n.a.createElement(we, null, Object(j.b)(s.fromAwardsGiven)), n.a.createElement(Oe, null, O.fbt._({
 						"*": "Awarder Karma",
@@ -1657,7 +1657,7 @@
 						href: B.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, n.a.createElement(A.a, {
+					}, n.a.createElement(U.a, {
 						className: le.a.infoIcon
 					})))))
 				},
@@ -1697,20 +1697,20 @@
 						R = (null == y ? void 0 : y.templateIds) && (null === (t = null == y ? void 0 : y.templateIds) || void 0 === t ? void 0 : t.length) > 0,
 						M = null === (s = null == y ? void 0 : y.displaySettings) || void 0 === s ? void 0 : s.isEnabled,
 						{
-							awardedLastMonth: A
+							awardedLastMonth: U
 						} = g,
-						U = !!g.snoovatarFullBodyAsset,
+						A = !!g.snoovatarFullBodyAsset,
 						H = g.isNSFW && a;
 					let B;
-					return B = U ? !H && I && I.bannerBackgroundImage || void 0 : H ? `${E.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, n.a.createElement(je, {
+					return B = A ? !H && I && I.bannerBackgroundImage || void 0 : H ? `${E.a.assetPath}/img/user-info-banner.png` : e.user.bannerImage, n.a.createElement(je, {
 						className: r,
 						id: d,
 						style: b
-					}, !U && B && n.a.createElement(Ee, {
+					}, !A && B && n.a.createElement(Ee, {
 						style: {
 							backgroundImage: `url('${B}')`
 						}
-					}), n.a.createElement(_e, null, U ? n.a.createElement(V.a, {
+					}), n.a.createElement(_e, null, A ? n.a.createElement(V.a, {
 						isHovercard: !0,
 						bannerBackgroundImage: B,
 						compact: !0,
@@ -1736,8 +1736,8 @@
 						userName: x
 					})), n.a.createElement(ke, {
 						user: g
-					}), A && n.a.createElement(z.a, {
-						recentAwardings: A,
+					}), U && n.a.createElement(z.a, {
+						recentAwardings: U,
 						topAwardIcon: v,
 						username: x
 					}), l && !S && !C && w && !_ && n.a.createElement(pe, {
@@ -2949,8 +2949,8 @@
 					isHovercard: M
 				} = e;
 				const L = Object(i.e)(e => !w && !!j && Object(u.g)(e)),
-					A = Object(i.e)(m.b),
-					U = j && Object(l.e)(j) && A;
+					U = Object(i.e)(m.b),
+					A = j && Object(l.e)(j) && U;
 				return n.a.createElement(n.a.Fragment, null, n.a.createElement(b.a, {
 					bannerBackgroundImage: t,
 					editMode: !!v,
@@ -2958,7 +2958,7 @@
 					username: R,
 					isDeletingBanner: !!g,
 					onDeleteBanner: E
-				}), U ? n.a.createElement("div", {
+				}), A ? n.a.createElement("div", {
 					className: x.a.nftProfileUnitContainer
 				}, n.a.createElement(a.a, {
 					className: x.a.nftProfileUnit,
@@ -3168,7 +3168,7 @@
 					},
 					m = f()(() => {
 						l(), a = window.setTimeout(c, r)
-					}, p.K);
+					}, p.L);
 				return {
 					cleanup: c,
 					eventHandler: e => {
@@ -3266,16 +3266,16 @@
 				F = s("./src/reddit/constants/componentSizes.ts"),
 				M = s("./src/reddit/constants/elementClassNames.ts"),
 				L = s("./src/reddit/contexts/InsideOverlay.tsx"),
-				A = s("./src/reddit/selectors/platform.ts"),
-				U = s("./src/telemetry/helpers/sendEvent.ts"),
+				U = s("./src/reddit/selectors/platform.ts"),
+				A = s("./src/telemetry/helpers/sendEvent.ts"),
 				H = s("./src/telemetry/helpers/sendTiming.ts"),
 				B = s("./src/reddit/components/Scroller/Simple.m.less"),
 				W = s.n(B);
 			const D = F.g,
-				z = 5 * p.K,
+				z = 5 * p.L,
 				V = 3,
 				K = Object(m.c)({
-					isOverlayOpen: A.i
+					isOverlayOpen: U.i
 				}),
 				q = Object(c.b)(K),
 				G = {};
@@ -3297,10 +3297,10 @@
 				$ = 1.8,
 				ee = 5,
 				te = 1500,
-				se = 2 * p.K,
+				se = 2 * p.L,
 				re = 400,
 				ne = 8,
-				ie = 5 * p.K,
+				ie = 5 * p.L,
 				oe = 30,
 				ae = "object" == typeof performance && "function" == typeof performance.now,
 				de = () => ae ? performance.now() : Date.now();
@@ -3329,7 +3329,7 @@
 						const t = {
 							name: this.props.trackingName
 						};
-						U.b.enqueue(new E.a({
+						A.b.enqueue(new E.a({
 							args: [e, t],
 							cb: (e, t) => Object(H.a)(p.n.Redesign, {
 								data: e,
@@ -3397,7 +3397,7 @@
 						clearTimeout(this.updateRenderableChildrenWhenIdleHandle), Object(u.cancelIdleCallback)(this.requestUpdateWhenIdleCallbackHandle)
 					}, this.callOnScrollForItemsChanged = n()(() => {
 						this.handleScroll()
-					}, p.K), this.pauseAllElements = () => {
+					}, p.L), this.pauseAllElements = () => {
 						const e = this.getItemsInViewportWithFilter(this.loadedChildRefFilter),
 							t = [];
 						e.forEach(e => {
@@ -3419,7 +3419,7 @@
 						const t = this.getChildRectangle(e);
 						return t && this.elementIsVisible(t) || !1
 					}, this.loadedChildRefFilter = e => e.loaded, this.resetScrollFramerateAndFocus = () => {
-						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(u.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, p.K))
+						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(u.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, p.L))
 					}, this.setContainerRef = e => {
 						this.containerRef = e, this.props.innerRef && this.props.innerRef(e)
 					}, this.getChildRectangle = e => {
@@ -3451,7 +3451,7 @@
 							const e = this.getTotalOffsetTop();
 							e !== this.containerOffsetTop && (this.containerOffsetTop = e, this.handleResize()), this.pendingResizeHandlerRead = null
 						}))
-					}, p.K), this.handleScroll = () => {
+					}, p.L), this.handleScroll = () => {
 						this.pendingScollHandlerRead || (this.pendingScollHandlerRead = h.a.read(() => {
 							if (clearTimeout(this.resetCanFocusTimer), this.cancelPopulateRenderableChildrenWhenIdle(), Object(_.b)() || !this.scrollContainer) return void(this.pendingScollHandlerRead = null);
 							this.updateScrollMetrics();
@@ -3494,7 +3494,7 @@
 								} = d, p = !!this.itemsInViewport.get(c);
 								if (this.elementIsUnmountable(l)) u && p && d.loaded && d.isFocusable && a.push(u.pauseContent);
 								else if (u && this.loadItemIfPossible(d, u, t, s, r, a), this.elementIsVisible(l)) {
-									n.push(d), !p && m && U.b.enqueue(new E.a({
+									n.push(d), !p && m && A.b.enqueue(new E.a({
 										cb: m,
 										args: void 0
 									}));
@@ -3508,7 +3508,7 @@
 									id: t,
 									trackOnExitedViewport: s
 								} = e;
-								s && !n.has(t) && U.b.enqueue(new E.a({
+								s && !n.has(t) && A.b.enqueue(new E.a({
 									cb: s,
 									args: [!1]
 								}))
@@ -3541,7 +3541,7 @@
 							void 0 !== t && (this.hideChild(e, t), this.childrenToHide[e] = void 0)
 						}
 						for (const e in this.childrenToShow) void 0 !== this.childrenToShow[e] && (this.showChild(e), this.childrenToShow[e] = void 0)
-					}, p.K), this.hideChild = (e, t) => {
+					}, p.L), this.hideChild = (e, t) => {
 						const s = this.childMap.get(e);
 						if (!s || !s.el) return;
 						const r = s.el.firstChild;
@@ -3567,7 +3567,7 @@
 								const r = this.getScrollTop() + s.el.getBoundingClientRect().top - (this.props.scrollToChildPadding || 0) - (this.props.viewportTopPadding || 0);
 								setTimeout(() => {
 									this.scrollContainer && (Object(_.c)(this.scrollContainer, r), this.callOnScrollForItemsChanged())
-								}, p.K)
+								}, p.L)
 							}
 						})
 					}, this.isScrollChildTopVisible = e => {
@@ -3755,7 +3755,7 @@
 							id: t,
 							trackOnExitedViewport: s
 						} = e;
-						s && U.b.enqueue(new E.a({
+						s && A.b.enqueue(new E.a({
 							cb: s,
 							args: [!0]
 						}))
@@ -3867,7 +3867,7 @@
 				})())))
 			};
 			h.defaultProps = {
-				minimizedLength: d.Tb
+				minimizedLength: d.Ub
 			}, t.a = h
 		},
 		"./src/reddit/components/SidebarFooter/index.m.less": function(e, t, s) {
@@ -4441,7 +4441,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = i()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, d.K), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, d.L), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -6118,4 +6118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.cfa382eb2f88ea58df44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.ab582435b63eadbb93cc.js.map

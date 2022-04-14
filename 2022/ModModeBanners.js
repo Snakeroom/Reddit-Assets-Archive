@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModModeBanners.78ae14ee178eeac89aee.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModModeBanners.71e5abbe0f9b77922d0a.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModModeBanners"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, s) {
@@ -172,7 +172,7 @@
 						commentId: e
 					});
 					if (!l) return;
-					const m = s === n.dc.Snoozed,
+					const m = s === n.ec.Snoozed,
 						g = {
 							itemId: e,
 							reportText: t,
@@ -206,8 +206,8 @@
 					if (o(Object(R.i)({
 							[e]: {
 								distinguishType: t,
-								isAdmin: t === n.G.ADMIN,
-								isMod: t === n.G.MODERATOR,
+								isAdmin: t === n.H.ADMIN,
+								isMod: t === n.H.MODERATOR,
 								isStickied: !!s
 							}
 						})), s && b && b !== e && o(Object(R.i)({
@@ -481,7 +481,7 @@
 			class T extends n.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? i.dc.None : i.dc.Snoozed;
+						const e = this.props.isSnoozed ? i.ec.None : i.ec.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(h.l)(Object(g.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -653,4 +653,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.78ae14ee178eeac89aee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModModeBanners.71e5abbe0f9b77922d0a.js.map

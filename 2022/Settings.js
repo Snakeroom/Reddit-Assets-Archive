@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.2f717fb186fb190483f1.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.5a3519ea20a2e62a2835.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1393,7 +1393,7 @@
 						apiContext: o
 					} = a;
 					const d = Object(h.a)(s()),
-						m = (null == d ? void 0 : d.pennies) || i.yb,
+						m = (null == d ? void 0 : d.pennies) || i.zb,
 						u = Object(b.c)(b.a.GoldPayment);
 					n(Object(l.stripeTokenPending)());
 					const f = await n(Object(l.validateAndCreateStripeToken)(e, t));
@@ -1657,7 +1657,7 @@
 					e(E());
 					const c = await (e => Object(_.a)(e, {
 						endpoint: Object(x.a)(`${v.a.gatewayUrl}/redditmobile/1/push/preferences`),
-						method: a.jb.GET
+						method: a.kb.GET
 					}))(s());
 					if (c.ok) {
 						const t = (e => ({
@@ -1714,11 +1714,11 @@
 					if (!Object(C.Q)(e)) return Object(B.a)(t, e)
 				}
 				const {
-					page: v = a.cc.Account
+					page: v = a.dc.Account
 				} = e.params;
-				if (v === a.cc.Gold) return void t(Object(r.c)("/settings/premium"));
+				if (v === a.dc.Gold) return void t(Object(r.c)("/settings/premium"));
 				const _ = [];
-				v === a.cc.Profile && (_.push(t(Object(N.a)())), _.push(t(Object(I.g)()))), v === a.cc.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === a.cc.Notifications && _.push(t(w())), v !== a.cc.Privacy && v !== a.cc.Messaging || _.push(t(Object(l.b)())), v === a.cc.Premium && (_.push(t(Object(N.a)())), _.push(t(Object(h.o)(!0)))), await Promise.all(_); {
+				v === a.dc.Profile && (_.push(t(Object(N.a)())), _.push(t(Object(I.g)()))), v === a.dc.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === a.dc.Notifications && _.push(t(w())), v !== a.dc.Privacy && v !== a.dc.Messaging || _.push(t(Object(l.b)())), v === a.dc.Premium && (_.push(t(Object(N.a)())), _.push(t(Object(h.o)(!0)))), await Promise.all(_); {
 					const e = n(),
 						a = e.platform.currentPage,
 						{
@@ -1792,7 +1792,7 @@
 				g = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const v = (e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
 				endpoint: Object(f.a)(Object(g.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
-				method: u.jb.GET,
+				method: u.kb.GET,
 				data: n
 			});
 			var _ = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -2083,7 +2083,7 @@
 					t.username = Object(_.a)(t.username), r(Object(i.h)(n));
 					const x = await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
-						method: u.jb.POST,
+						method: u.kb.POST,
 						data: {
 							api_type: "json",
 							ban_reason: n.reason,
@@ -2126,7 +2126,7 @@
 					const c = r().subreddits.models[e].url,
 						l = await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
-							method: u.jb.POST,
+							method: u.kb.POST,
 							data: {
 								api_type: "json",
 								id: n,
@@ -3951,13 +3951,13 @@
 				c = n("./src/reddit/controls/Dropdown/index.m.less"),
 				l = n.n(c);
 			const d = {
-				[o.W.BEST]: "best",
-				[o.W.HOT]: "hot",
-				[o.W.NEW]: "new",
-				[o.W.CONTROVERSIAL]: "controversial",
-				[o.W.TOP]: "top",
-				[o.W.RISING]: "rising",
-				[o.W.AWARDED]: "award"
+				[o.X.BEST]: "best",
+				[o.X.HOT]: "hot",
+				[o.X.NEW]: "new",
+				[o.X.CONTROVERSIAL]: "controversial",
+				[o.X.TOP]: "top",
+				[o.X.RISING]: "rising",
+				[o.X.AWARDED]: "award"
 			};
 
 			function m(e) {
@@ -7924,7 +7924,7 @@
 						}, () => this.forceUnsticky = !1)) : E() >= k && this.setState({
 							sticky: !0
 						})
-					}, l.K), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
+					}, l.L), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
 						sticky: !1
 					}
 				}
@@ -8048,25 +8048,25 @@
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/constants/index.ts");
 			const a = {
-					[r.W.BEST]: () => s.fbt._("Best", null, {
+					[r.X.BEST]: () => s.fbt._("Best", null, {
 						hk: "dpKzI"
 					}),
-					[r.W.HOT]: () => s.fbt._("Hot", null, {
+					[r.X.HOT]: () => s.fbt._("Hot", null, {
 						hk: "Et75P"
 					}),
-					[r.W.NEW]: () => s.fbt._("New", null, {
+					[r.X.NEW]: () => s.fbt._("New", null, {
 						hk: "CDmNl"
 					}),
-					[r.W.CONTROVERSIAL]: () => s.fbt._("Controversial", null, {
+					[r.X.CONTROVERSIAL]: () => s.fbt._("Controversial", null, {
 						hk: "4dqPOJ"
 					}),
-					[r.W.RISING]: () => s.fbt._("Rising", null, {
+					[r.X.RISING]: () => s.fbt._("Rising", null, {
 						hk: "4gCzg6"
 					}),
-					[r.W.TOP]: () => s.fbt._("Top", null, {
+					[r.X.TOP]: () => s.fbt._("Top", null, {
 						hk: "40Uy9p"
 					}),
-					[r.W.AWARDED]: () => s.fbt._("Awarded", null, {
+					[r.X.AWARDED]: () => s.fbt._("Awarded", null, {
 						hk: "1B7nSa"
 					})
 				},
@@ -8075,22 +8075,22 @@
 					return t && t() || ""
 				},
 				i = {
-					[r.hc.HOUR]: () => s.fbt._("Now", null, {
+					[r.ic.HOUR]: () => s.fbt._("Now", null, {
 						hk: "ZmhY"
 					}),
-					[r.hc.DAY]: () => s.fbt._("Today", null, {
+					[r.ic.DAY]: () => s.fbt._("Today", null, {
 						hk: "40Ugu1"
 					}),
-					[r.hc.WEEK]: () => s.fbt._("This Week", null, {
+					[r.ic.WEEK]: () => s.fbt._("This Week", null, {
 						hk: "14tmoK"
 					}),
-					[r.hc.MONTH]: () => s.fbt._("This Month", null, {
+					[r.ic.MONTH]: () => s.fbt._("This Month", null, {
 						hk: "34dbM3"
 					}),
-					[r.hc.YEAR]: () => s.fbt._("This Year", null, {
+					[r.ic.YEAR]: () => s.fbt._("This Year", null, {
 						hk: "14RJsa"
 					}),
-					[r.hc.ALL]: () => s.fbt._("All Time", null, {
+					[r.ic.ALL]: () => s.fbt._("All Time", null, {
 						hk: "3qt6Ct"
 					})
 				},
@@ -8990,7 +8990,7 @@
 					m = `${n.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					u = Object(i.a)(m);
 				return Object(r.a)(Object(a.a)(n, [o.a]), {
-					method: s.jb.POST,
+					method: s.kb.POST,
 					endpoint: u,
 					data: d
 				}).then(c.c)
@@ -9007,7 +9007,7 @@
 					correlation_id: l
 				};
 				return Object(r.a)(Object(a.a)(t, [o.a]), {
-					method: s.jb.POST,
+					method: s.kb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
 				}).then(c.c)
@@ -9026,7 +9026,7 @@
 					thing_id: l
 				};
 				return Object(r.a)(Object(a.a)(t, [o.a]), {
-					method: s.jb.POST,
+					method: s.kb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: m
 				}).then(c.c)
@@ -9047,7 +9047,7 @@
 					correlation_id: m
 				};
 				return Object(r.a)(Object(a.a)(t, [o.a]), {
-					method: s.jb.POST,
+					method: s.kb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: u
 				}).then(c.c)
@@ -9076,7 +9076,7 @@
 					thing_id: h
 				};
 				return Object(r.a)(Object(a.a)(n, [o.a]), {
-					method: s.jb.POST,
+					method: s.kb.POST,
 					endpoint: `${n.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: f
 				}).then(c.c)
@@ -9099,7 +9099,7 @@
 					thing_id: u
 				};
 				return Object(r.a)(Object(a.a)(n, [o.a]), {
-					method: s.jb.POST,
+					method: s.kb.POST,
 					endpoint: `${n.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: p
 				}).then(c.c)
@@ -9255,7 +9255,7 @@
 			function o(e, t) {
 				return Object(a.a)(e, {
 					endpoint: `${s.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: r.jb.GET
+					method: r.kb.GET
 				})
 			}
 		},
@@ -11320,7 +11320,7 @@
 					sendHoverCardEvent: () => {},
 					iconSize: 24
 				}), a.a.createElement(Ht, null, a.a.createElement(Lt.d, {
-					seconds: e.date / u.Sb
+					seconds: e.date / u.Tb
 				})), a.a.createElement(zt, null, a.a.createElement(Wt, {
 					disabled: !!e.disabled,
 					onClick: e.onClick
@@ -11667,7 +11667,7 @@
 			}(Mn || (Mn = {}));
 			const Dn = (e, t, n, s) => Object(Ln.a)(Object(Fn.a)(e, [Un.a]), {
 					endpoint: Object(Rn.a)(`${e.apiUrl}/api/dsp_submit`),
-					method: u.jb.POST,
+					method: u.kb.POST,
 					data: {
 						first_name: t,
 						last_name: n,
@@ -11679,11 +11679,11 @@
 				}),
 				Hn = e => Object(Ln.a)(Object(Fn.a)(e, [Un.a]), {
 					endpoint: Object(Rn.a)(`${e.apiUrl}/api/dsp_status`),
-					method: u.jb.GET
+					method: u.kb.GET
 				}),
 				Gn = e => Object(Ln.a)(Object(Fn.a)(e, [Un.a]), {
 					endpoint: Object(Rn.a)(`${e.apiUrl}/api/dsp_details`),
-					method: u.jb.GET
+					method: u.kb.GET
 				});
 			var Wn = n("./src/reddit/selectors/telemetry.ts");
 			const zn = () => e => {
@@ -11970,7 +11970,7 @@
 				ns = n("./src/reddit/components/ListingSort/ListingSortIcon.tsx"),
 				ss = n("./src/reddit/components/Settings/shared/Dropdown/index.tsx"),
 				rs = n("./src/reddit/constants/listingSorts.ts");
-			const as = [u.W.HOT, u.W.NEW, u.W.TOP, u.W.RISING];
+			const as = [u.X.HOT, u.X.NEW, u.X.TOP, u.X.RISING];
 			var os = e => {
 				const {
 					dropdownId: t
@@ -11988,7 +11988,7 @@
 					selectedKey: e.sort
 				})
 			};
-			const is = [u.hc.HOUR, u.hc.DAY, u.hc.WEEK, u.hc.MONTH, u.hc.YEAR, u.hc.ALL];
+			const is = [u.ic.HOUR, u.ic.DAY, u.ic.WEEK, u.ic.MONTH, u.ic.YEAR, u.ic.ALL];
 			var cs = e => {
 					const {
 						dropdownId: t
@@ -13624,65 +13624,65 @@
 				io = n("./src/reddit/pages/Settings/index.m.less"),
 				co = n.n(io);
 			const lo = (e, t, n, r) => [{
-					key: u.cc.Account,
+					key: u.dc.Account,
 					title: s.fbt._("Account", null, {
 						hk: "kL0Ow"
 					})
 				}, {
-					key: u.cc.Profile,
+					key: u.dc.Profile,
 					title: s.fbt._("Profile", null, {
 						hk: "4AiObW"
 					})
 				}, {
-					key: u.cc.Privacy,
+					key: u.dc.Privacy,
 					title: s.fbt._("Safety & Privacy", null, {
 						hk: "4hchEz"
 					})
 				}, {
-					key: u.cc.Feed,
+					key: u.dc.Feed,
 					title: s.fbt._("Feed Settings", null, {
 						hk: "4Giq2p"
 					})
 				}, {
-					key: u.cc.Notifications,
+					key: u.dc.Notifications,
 					title: s.fbt._("Notifications", null, {
 						hk: "fklVW"
 					})
 				}, {
-					key: u.cc.Premium,
+					key: u.dc.Premium,
 					title: s.fbt._("Subscriptions", null, {
 						hk: "48xste"
 					})
 				}, {
 					className: co.a.CreatorTab,
-					key: u.cc.Creator,
+					key: u.dc.Creator,
 					title: s.fbt._("Reddit Creator", null, {
 						hk: "45BriY"
 					}),
 					disabled: !e
 				}, {
 					className: co.a.PaymentsTab,
-					key: u.cc.Payments,
+					key: u.dc.Payments,
 					title: s.fbt._("Payments", null, {
 						hk: "31LCer"
 					}),
 					disabled: !n.length
 				}, {
 					className: co.a.SpecialMembershipTab,
-					key: u.cc.SpecialMembership,
+					key: u.dc.SpecialMembership,
 					title: s.fbt._("Special Memberships", null, {
 						hk: "3ZoNj3"
 					}),
 					disabled: !t
 				}, {
 					className: co.a.MessagingTab,
-					key: u.cc.Messaging,
+					key: u.dc.Messaging,
 					title: s.fbt._("Chat & Messaging", null, {
 						hk: "3uLoYZ"
 					})
 				}, {
 					className: co.a.MessagingTab,
-					key: u.cc.Dsp,
+					key: u.dc.Dsp,
 					title: s.fbt._("DSP", null, {
 						hk: "zmi11"
 					}),
@@ -13797,7 +13797,7 @@
 						}))
 					}, this.getSource = () => {
 						const e = this.props.match.params.page;
-						return e && e !== u.cc.Account ? `settings_${e}` : "settings"
+						return e && e !== u.dc.Account ? `settings_${e}` : "settings"
 					}, this.getTrackingValue = function(e, n) {
 						let s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 						const r = s ? t.props.prefs[e] : n;
@@ -13815,32 +13815,32 @@
 							update: this.update
 						};
 						switch (e) {
-							case u.cc.Account:
+							case u.dc.Account:
 								return a.a.createElement(Ot, i);
-							case u.cc.Profile:
+							case u.dc.Profile:
 								return a.a.createElement($r, i);
-							case u.cc.Premium:
+							case u.dc.Premium:
 								return a.a.createElement(Zs.b, i);
-							case u.cc.Notifications:
+							case u.dc.Notifications:
 								return a.a.createElement(Bs, i);
-							case u.cc.Privacy:
+							case u.dc.Privacy:
 								return a.a.createElement(gr, i);
-							case u.cc.Messaging:
+							case u.dc.Messaging:
 								return a.a.createElement(un, i);
-							case u.cc.Feed:
+							case u.dc.Feed:
 								return a.a.createElement(Os, i);
-							case u.cc.Payments:
+							case u.dc.Payments:
 								return a.a.createElement(Ks, null);
-							case u.cc.Creator: {
+							case u.dc.Creator: {
 								const e = Object(p.a)(s.search);
 								return r ? a.a.createElement(An, {
 									stripeConnectCode: e.get("code"),
 									stripeConnectStateToken: e.get("state")
 								}) : null
 							}
-							case u.cc.SpecialMembership:
+							case u.dc.SpecialMembership:
 								return o ? a.a.createElement(to, null) : null;
-							case u.cc.Dsp:
+							case u.dc.Dsp:
 								return this.state.dspAvailable ? a.a.createElement(es, null) : null;
 							default:
 								return a.a.createElement(Ot, i)
@@ -13849,12 +13849,12 @@
 						e.preventDefault()
 					}, this.onPremiumTabClick = () => {
 						this.props.sendEvent(Object(ro.f)())
-					}, this.getTabClickHandler = e => this.props.isResponsiveSettingsEnabled ? this.preventTabClickEvent : e === u.cc.Premium ? this.onPremiumTabClick : void 0, this.isScrolling = !1, this.resetScrolling = () => {
+					}, this.getTabClickHandler = e => this.props.isResponsiveSettingsEnabled ? this.preventTabClickEvent : e === u.dc.Premium ? this.onPremiumTabClick : void 0, this.isScrolling = !1, this.resetScrolling = () => {
 						this.isScrolling = !1
 					}, this.startScrolling = () => {
 						this.isScrolling = !0
 					}, this.tabTouchEndHandlerCache = {}, this.getTabTouchEndHandler = e => (this.tabTouchEndHandlerCache[e] || (this.tabTouchEndHandlerCache[e] = () => {
-						this.isScrolling || (e === u.cc.Premium && this.onPremiumTabClick(), this.props.changeTab(e))
+						this.isScrolling || (e === u.dc.Premium && this.onPremiumTabClick(), this.props.changeTab(e))
 					}), this.tabTouchEndHandlerCache[e]), this.tabRefCache = {}, this.getTabRef = e => (this.tabRefCache[e] || (this.tabRefCache[e] = a.a.createRef()), this.tabRefCache[e]), this.renderTab = (e, t) => {
 						const {
 							match: {
@@ -13886,7 +13886,7 @@
 						const {
 							match: {
 								params: {
-									page: e = u.cc.Account
+									page: e = u.dc.Account
 								}
 							}
 						} = this.props, t = this.tabRefCache[e];
@@ -14424,4 +14424,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2f717fb186fb190483f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.5a3519ea20a2e62a2835.js.map

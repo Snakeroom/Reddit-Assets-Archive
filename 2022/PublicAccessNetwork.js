@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.80f5c865386026bdbab7.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.0802332a6806437542b1.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -654,7 +654,7 @@
 					e(b());
 					const h = await (e => Object(d.a)(Object(c.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/api/available_subreddit_categories.json?use_extended_categories=true`,
-						method: i.jb.GET
+						method: i.kb.GET
 					}))(o());
 					if (h.ok) {
 						const {
@@ -863,7 +863,7 @@
 						commentId: e
 					});
 					if (!l) return;
-					const m = s === n.dc.Snoozed,
+					const m = s === n.ec.Snoozed,
 						v = {
 							itemId: e,
 							reportText: t,
@@ -897,8 +897,8 @@
 					if (o(Object(f.i)({
 							[e]: {
 								distinguishType: t,
-								isAdmin: t === n.G.ADMIN,
-								isMod: t === n.G.MODERATOR,
+								isAdmin: t === n.H.ADMIN,
+								isMod: t === n.H.MODERATOR,
 								isStickied: !!s
 							}
 						})), s && h && h !== e && o(Object(f.i)({
@@ -1227,7 +1227,7 @@
 								sort: p,
 								subredditName: h
 							} = r,
-							b = t && a ? Object(Re.a)(a, !0) : Object(fe.a)(h, O.W[p], {
+							b = t && a ? Object(Re.a)(a, !0) : Object(fe.a)(h, O.X[p], {
 								t: u
 							});
 						o({
@@ -1315,7 +1315,7 @@
 						isOtherDiscussions: !0
 					}), _ = s(), C = Object(ie.z)(_, {
 						listingKey: S
-					}), y = m && (!C || 0 === C.length), E = Object(fe.a)(w, O.W[f], {
+					}), y = m && (!C || 0 === C.length), E = Object(fe.a)(w, O.X[f], {
 						t: g
 					}), x = Object(ie.z)(_, {
 						listingKey: E
@@ -1543,8 +1543,8 @@
 										reddaid: s().user.reddaid,
 										sourcePostId: p
 									},
-									range: O.hc.WEEK.toUpperCase(),
-									sort: O.P.TOP,
+									range: O.ic.WEEK.toUpperCase(),
+									sort: O.Q.TOP,
 									subredditName: a.name
 								},
 								r = {
@@ -2227,7 +2227,7 @@
 				V = s("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const U = (e, t) => Object(D.a)(Object(B.a)(e, [F.a]), {
 					endpoint: `${e.apiUrl}/api/v1/modactions/removal_reasons/`,
-					method: E.jb.POST,
+					method: E.kb.POST,
 					type: "json",
 					data: {
 						item_ids: t.itemIds,
@@ -2237,7 +2237,7 @@
 				}),
 				H = (e, t, s) => Object(D.a)(Object(B.a)(e, [F.a]), {
 					endpoint: Object(V.a)(`${e.apiUrl}/api/v1/modactions/removal_${s}_message/`),
-					method: E.jb.POST,
+					method: E.kb.POST,
 					type: "json",
 					data: t
 				});
@@ -2266,7 +2266,7 @@
 					t(Z());
 					const a = await ((e, t) => Object(D.a)(Object(B.a)(e, [F.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons.json`,
-						method: E.jb.GET
+						method: E.kb.GET
 					}))(n(), r);
 					a.ok ? t($({
 						subredditId: e,
@@ -2280,7 +2280,7 @@
 					s(se());
 					const d = await ((e, t, s) => Object(D.a)(Object(B.a)(e, [F.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons`,
-						method: E.jb.POST,
+						method: E.kb.POST,
 						data: s
 					}))(a(), i, t);
 					if (d.ok) {
@@ -2308,7 +2308,7 @@
 					s(ae());
 					const d = await ((e, t, s) => Object(D.a)(Object(B.a)(e, [F.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${s.id}`,
-						method: E.jb.PUT,
+						method: E.kb.PUT,
 						data: {
 							message: s.message,
 							title: s.title
@@ -2331,7 +2331,7 @@
 					s(le());
 					const d = await ((e, t, s) => Object(D.a)(Object(B.a)(e, [F.a]), {
 						endpoint: `${e.apiUrl}/api/v1/${t}/removal_reasons/${s}`,
-						method: E.jb.DELETE
+						method: E.kb.DELETE
 					}))(a(), i, t);
 					d.ok ? (s(me({
 						subredditId: e,
@@ -8063,4 +8063,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.80f5c865386026bdbab7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.0802332a6806437542b1.js.map

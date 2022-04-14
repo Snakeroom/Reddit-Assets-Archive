@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.9ffd707353c0344f41da.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.d021a04d8c9c87e04862.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement"], {
 		"./src/reddit/actions/flairManagement/index.ts": function(e, t, a) {
@@ -74,7 +74,7 @@
 						bannedAtUTC: void 0,
 						bannedBy: void 0,
 						contestMode: !1,
-						created: Date.now() - p.Q,
+						created: Date.now() - p.R,
 						crosspostParentId: null,
 						crosspostRootId: null,
 						discussionType: null,
@@ -373,12 +373,12 @@
 				L = a("./src/reddit/constants/colors.ts"),
 				A = a("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
 				H = a("./src/reddit/components/ModHub/flairs/FlairManagement/FlairsDisabledBanner/index.m.less"),
-				Q = a.n(H);
-			var V, W = e => o.a.createElement(U.a, {
+				V = a.n(H);
+			var W, Q = e => o.a.createElement(U.a, {
 					className: e.className,
 					color: L.a.quarantine,
 					icon: o.a.createElement(A.a, {
-						className: Q.a.icon
+						className: V.a.icon
 					}),
 					subtitle: e.flairTemplateType === f.d.UserFlair ? B.fbt._("User flairs will not be visible until feature is enabled", null, {
 						hk: "4uxycm"
@@ -403,12 +403,12 @@
 				ee = a.n($);
 			! function(e) {
 				e[e.Top = 0] = "Top", e[e.Left = 1] = "Left"
-			}(V || (V = {}));
+			}(W || (W = {}));
 			const te = e => e.preventDefault();
 			var ae = e => o.a.createElement("div", {
 					className: Object(Z.a)(e.className, ee.a.container)
 				}, o.a.createElement("label", {
-					className: e.labelPosition === V.Top ? ee.a.topLabel : ee.a.leftLabel,
+					className: e.labelPosition === W.Top ? ee.a.topLabel : ee.a.leftLabel,
 					onClick: e.preventDefaultLabelClick ? te : void 0
 				}, o.a.createElement("span", {
 					className: Object(Z.a)(ee.a.labelText, e.labelClassName)
@@ -639,9 +639,9 @@
 				Le = a("./src/reddit/constants/postLayout.ts"),
 				Ae = a("./src/reddit/contexts/PageLayer/index.tsx"),
 				He = a("./src/reddit/controls/LayoutSwitch/index.tsx"),
-				Qe = a("./src/reddit/helpers/dom/index.ts"),
-				Ve = a("./src/reddit/helpers/postComponentForLayout/index.tsx"),
-				We = a("./src/reddit/selectors/posts.ts"),
+				Ve = a("./src/reddit/helpers/dom/index.ts"),
+				We = a("./src/reddit/helpers/postComponentForLayout/index.tsx"),
+				Qe = a("./src/reddit/selectors/posts.ts"),
 				Je = a("./src/lib/omitKey/index.ts"),
 				qe = a("./src/reddit/actions/imageUploads.ts"),
 				ze = a("./src/reddit/models/Image/index.tsx"),
@@ -767,7 +767,7 @@
 						label: B.fbt._("Thumbnail placeholder", null, {
 							hk: "Rcs3p"
 						}),
-						labelPosition: V.Top,
+						labelPosition: W.Top,
 						preventDefaultLabelClick: !!r
 					}, o.a.createElement(Ze, {
 						imageData: r,
@@ -791,7 +791,7 @@
 						tooltipId: "flair-postBackgroundColor-" + s,
 						value: i
 					})), o.a.createElement(ae, {
-						labelPosition: V.Top,
+						labelPosition: W.Top,
 						label: B.fbt._("Post background image", null, {
 							hk: "7rg1y"
 						}),
@@ -814,7 +814,7 @@
 				lt = a("./src/reddit/components/ModHub/flairs/FlairManagement/FlairTemplateEditor/PostAppearanceEditor/index.m.less"),
 				rt = a.n(lt);
 			const dt = Object(_e.c)({
-					examplePost: e => Object(We.G)(e, {
+					examplePost: e => Object(Qe.G)(e, {
 						postId: u.e
 					})
 				}),
@@ -862,7 +862,7 @@
 					this.props.deleteExamplePost()
 				}
 				disableTabNavigationForPreviewPost() {
-					this.postWrapperRef.current && Object(Qe.a)(this.postWrapperRef.current)
+					this.postWrapperRef.current && Object(Ve.a)(this.postWrapperRef.current)
 				}
 				render() {
 					const {
@@ -873,7 +873,7 @@
 					if (!a) return null;
 					const {
 						previewLayout: s
-					} = this.state, n = t.styleTemplate || {}, i = Le.b[s], l = Object(Ve.b)({
+					} = this.state, n = t.styleTemplate || {}, i = Le.b[s], l = Object(We.b)({
 						layout: i,
 						post: a
 					});
@@ -1049,7 +1049,7 @@
 					}, o.a.createElement("legend", null, B.fbt._("Flair appearance", null, {
 						hk: "ZRrgk"
 					})), o.a.createElement(ae, {
-						labelPosition: V.Top,
+						labelPosition: W.Top,
 						label: B.fbt._("Flair text", null, {
 							hk: "2ALbeU"
 						})
@@ -1066,7 +1066,7 @@
 						subredditId: t,
 						onBlur: this.onFlairEditBlur
 					})), o.a.createElement(ae, {
-						labelPosition: V.Top,
+						labelPosition: W.Top,
 						label: B.fbt._("CSS class", null, {
 							hk: "2khRbr"
 						})
@@ -1148,7 +1148,7 @@
 						label: B.fbt._("This flair allows", null, {
 							hk: "3QLVMX"
 						}),
-						labelPosition: V.Top
+						labelPosition: W.Top
 					}, o.a.createElement(ye.a, {
 						value: a.allowableContent || f.a.All,
 						name: "allowable_content",
@@ -1175,7 +1175,7 @@
 						label: B.fbt._("Limit number of emojis", null, {
 							hk: "LnZU0"
 						}),
-						labelPosition: V.Top
+						labelPosition: W.Top
 					}, o.a.createElement(Te.a, {
 						buttonClassName: ht.a.dropdownSelectorButton,
 						className: ht.a.dropdownSelector,
@@ -1489,7 +1489,7 @@
 						hk: "3DSrei"
 					}), o.a.createElement(r.a, {
 						linkUrl: `${s.a.redditModHelpUrl}/${this.props.helpCenterLink}`
-					})), !this.props.flairSettings.displaySettings.isEnabled && o.a.createElement(W, {
+					})), !this.props.flairSettings.displaySettings.isEnabled && o.a.createElement(Q, {
 						className: Dt.a.disabledBanner,
 						flairTemplateType: this.props.flairTemplateType
 					}), o.a.createElement("div", {
@@ -2026,4 +2026,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.9ffd707353c0344f41da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-flairs-PostFlairManagement~reddit-components-ModHub-flairs-UserFlairManagement.d021a04d8c9c87e04862.js.map

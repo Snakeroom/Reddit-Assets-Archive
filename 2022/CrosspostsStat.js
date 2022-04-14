@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostsStat.1db7090bee3f79bb4b68.js
-// Retrieved at 4/7/2022, 11:20:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostsStat.367f54877be14aa86a44.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostsStat"], {
 		"./src/reddit/components/CreatorStats/CrosspostsStat.m.less": function(e, t, s) {
@@ -91,7 +91,7 @@
 			})), s.d(t, "e", (function() {
 				return v
 			})), s.d(t, "b", (function() {
-				return I
+				return k
 			})), s.d(t, "a", (function() {
 				return h
 			}));
@@ -222,7 +222,7 @@
 				x = e => {
 					const t = /comments\/(\w+)\/.*$/.exec(e),
 						s = t && t[1];
-					return s ? `${n.Ib.Post}_${s}` : ""
+					return s ? `${n.Jb.Post}_${s}` : ""
 				},
 				v = async (e, t) => {
 					if (!e.ok) return Object(p.b)(e);
@@ -255,14 +255,14 @@
 							draftsCount: d
 						}
 					}
-				}, I = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
+				}, k = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
 					endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit_poll_post.json?resubmit=true`)),
-					method: n.jb.POST,
+					method: n.kb.POST,
 					data: S(t),
 					type: "json"
 				}).then(e => v(e, t)), h = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
 					endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit_gallery_post.json?resubmit=true`)),
-					method: n.jb.POST,
+					method: n.kb.POST,
 					data: {
 						...S(t),
 						items: t.galleryItems.map(e => ({
@@ -275,10 +275,10 @@
 				}).then(e => v(e, t));
 			t.c = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
 				endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit?resubmit=true`)),
-				method: n.jb.POST,
+				method: n.kb.POST,
 				data: S(t)
 			}).then(async e => await v(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.1db7090bee3f79bb4b68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.367f54877be14aa86a44.js.map

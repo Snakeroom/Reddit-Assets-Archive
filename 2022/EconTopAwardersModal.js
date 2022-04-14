@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.50d9196362013ad2c08d.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.f51d63f5db1af5ba352d.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -179,7 +179,7 @@
 				x = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const h = (e, t, r) => Object(p.a)(Object(b.a)(e, [f.a]), {
 				endpoint: Object(v.a)(Object(x.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
-				method: u.jb.GET,
+				method: u.kb.GET,
 				data: r
 			});
 			var g = r("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -205,9 +205,9 @@
 						return e
 				}
 			};
-			const U = {};
-			var k = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : U,
+			const k = {};
+			var U = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : k,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case O.o: {
@@ -237,7 +237,7 @@
 				},
 				A = Object(y.c)({
 					error: P,
-					pending: k
+					pending: U
 				});
 			const M = {};
 			var S = function() {
@@ -470,7 +470,7 @@
 					t.username = Object(g.a)(t.username), n(Object(c.h)(r));
 					const I = await ((e, t, r) => Object(p.a)(Object(b.a)(e, [f.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
-						method: u.jb.POST,
+						method: u.kb.POST,
 						data: {
 							api_type: "json",
 							ban_reason: r.reason,
@@ -513,7 +513,7 @@
 					const d = n().subreddits.models[e].url,
 						i = await ((e, t, r) => Object(p.a)(Object(b.a)(e, [f.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
-							method: u.jb.POST,
+							method: u.kb.POST,
 							data: {
 								api_type: "json",
 								id: r,
@@ -836,8 +836,8 @@
 					d: "M16.355 12.766c-.905 1.298-1.81 1.976-2.714 2.432-.904.496-1.809.629-2.713.683-.905-.062-1.81-.195-2.714-.692-.905-.458-1.81-1.133-2.714-2.423V12.4l5.428-.183 5.427.183v.366zM82.5 12.766c-.905 1.298-1.81 1.976-2.714 2.432-.904.496-1.809.629-2.713.683-.905-.062-1.81-.195-2.714-.692-.905-.458-1.81-1.133-2.714-2.423V12.4l5.428-.183 5.427.183v.366z",
 					fill: "#FFF1B6"
 				})),
-				U = r("./node_modules/lodash/noop.js"),
-				k = r.n(U),
+				k = r("./node_modules/lodash/noop.js"),
+				U = r.n(k),
 				A = r("./src/lib/currency/currencies.ts"),
 				M = r("./src/lib/localizeCurrency/index.ts"),
 				S = r("./src/reddit/components/Hovercards/AuthorHovercard/UserHovercard.tsx"),
@@ -878,7 +878,7 @@
 					}, u ? i.name : n.a.createElement(S.a, {
 						user: i.name,
 						tooltipId: `topawarder--userhovercard--${i.name}`,
-						sendHoverCardEvent: k.a
+						sendHoverCardEvent: U.a
 					}, R(i.name, i.id === a))), l > 0 && n.a.createElement("span", {
 						className: L.a.score
 					}, Object(M.b)(l, {
@@ -954,7 +954,7 @@
 					}, r && !o ? n.a.createElement(S.a, {
 						user: c,
 						tooltipId: `topawarderwinner-userhovercard--${c}`,
-						sendHoverCardEvent: k.a,
+						sendHoverCardEvent: U.a,
 						wrapperClassName: J.a.hoverCardWrapper
 					}, c) : c), r && t && n.a.createElement("div", {
 						className: J.a.score
@@ -1049,8 +1049,8 @@
 				}, [r, h]), Object(a.useEffect)(() => {
 					r && g(Object(m.c)(r))
 				}, [r, g]);
-				const U = () => h(Object(E.g)(i.a.ECON_TOP_AWARDERS)),
-					k = () => {
+				const k = () => h(Object(E.g)(i.a.ECON_TOP_AWARDERS)),
+					U = () => {
 						if (r) {
 							const e = Object(l.e)(l.a.GildingFlow, !0);
 							g(Object(m.b)()), h(Object(p.d)({
@@ -1059,7 +1059,7 @@
 							}))
 						}
 					};
-				if (!r || !d) return U(), null;
+				if (!r || !d) return k(), null;
 				const A = c && c.id === d.authorId,
 					M = !d.isGildable || !!A,
 					S = d.topAwardedType === v.a.Active,
@@ -1072,7 +1072,7 @@
 					className: ee.a.modalHeader
 				}, n.a.createElement(j.a, {
 					className: ee.a.closeIcon,
-					onClick: U
+					onClick: k
 				}), n.a.createElement("h3", {
 					className: ee.a.title
 				}, re._("Top Awarders", null, {
@@ -1129,7 +1129,7 @@
 					hk: "3reZYa"
 				})), n.a.createElement(w.l, {
 					className: ee.a.cta,
-					onClick: k
+					onClick: U
 				}, n.a.createElement(O.a, {
 					className: ee.a.giftIcon
 				}), re._("Give Award", null, {
@@ -1140,7 +1140,7 @@
 					currentRank: o,
 					currentUserId: c && c.id,
 					hideAddAwardButton: M,
-					onGild: k
+					onGild: U
 				}), !x && S && t && n.a.createElement("div", {
 					className: ee.a.anonymousRank
 				}, re._("Anonymous redditors have awarded for {score} Coins", [re._param("score", t.score.toLocaleString())], {
@@ -1262,8 +1262,8 @@
 				j = r("./src/lib/lessComponent.tsx"),
 				y = r("./src/lib/prettyPrintNumber/index.ts"),
 				P = r("./src/reddit/components/ChatButton/index.tsx"),
-				U = r("./src/reddit/components/JSAPIContainers/index.tsx"),
-				k = r("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
+				k = r("./src/reddit/components/JSAPIContainers/index.tsx"),
+				U = r("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				A = r("./src/reddit/components/SubscribeButton/index.tsx"),
 				M = r("./src/reddit/components/UserIcon/index.tsx"),
 				S = r("./src/reddit/controls/Button/index.tsx"),
@@ -1436,7 +1436,7 @@
 				}, n.a.createElement(be, null))), n.a.createElement(ve, null, n.a.createElement(xe, null, `u/${e.userName}`, n.a.createElement(he, null, "•")), n.a.createElement(xe, null, (e.user.createdUtc || e.user.created) && n.a.createElement(W.d, {
 					seconds: e.user.createdUtc || e.user.created
 				})))),
-				Ue = e => {
+				ke = e => {
 					const {
 						user: {
 							karma: t
@@ -1479,7 +1479,7 @@
 						className: ie.a.infoIcon
 					})))))
 				},
-				ke = e => {
+				Ue = e => {
 					var t, r;
 					const {
 						className: a,
@@ -1510,7 +1510,7 @@
 					const j = !!o && Object(D.e)(o) === h,
 						y = !!(null == o ? void 0 : o.snoovatarFullBodyAsset),
 						P = g.accountIcon || `${C.a.assetPath}/img/snoo_user_placeholder.png`,
-						k = null == m ? void 0 : m.flair,
+						U = null == m ? void 0 : m.flair,
 						A = null == m ? void 0 : m.access,
 						M = (null == I ? void 0 : I.templateIds) && (null === (t = null == I ? void 0 : I.templateIds) || void 0 === t ? void 0 : t.length) > 0,
 						B = null === (r = null == I ? void 0 : I.displaySettings) || void 0 === r ? void 0 : r.isEnabled,
@@ -1552,7 +1552,7 @@
 						title: null == p ? void 0 : p.title,
 						user: g,
 						userName: h
-					})), n.a.createElement(Ue, {
+					})), n.a.createElement(ke, {
 						user: g
 					}), F && n.a.createElement(z.a, {
 						recentAwardings: F,
@@ -1579,25 +1579,25 @@
 						subredditId: v,
 						sendEvent: b,
 						username: h
-					}), k && s && M && B && v && n.a.createElement(ce, {
+					}), U && s && M && B && v && n.a.createElement(ce, {
 						contextId: s,
 						subredditId: v,
 						sendEvent: b,
 						username: h
-					}), n.a.createElement(U.i, {
+					}), n.a.createElement(k.i, {
 						contextId: s,
 						subredditId: v,
 						user: g
 					}), !(A || i) && n.a.createElement(je, null))
 				},
-				Ae = Object(k.a)(ke),
+				Ae = Object(U.a)(Ue),
 				Me = e => {
 					const t = e.activeTooltipId === e.tooltipId && !e.collapsed;
 					return n.a.createElement(Ae, le({
 						isOpen: t
 					}, e))
 				};
-			Me.WrappedComponent = ke;
+			Me.WrappedComponent = Ue;
 			var Se = Me;
 			const Be = Object(o.c)({
 					activeTooltipId: h.a,
@@ -2286,7 +2286,7 @@
 			var j = O,
 				y = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserProfile.m.less"),
 				P = r.n(y),
-				U = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx");
+				k = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx");
 			t.a = e => {
 				let {
 					bannerBackgroundImage: t,
@@ -2302,7 +2302,7 @@
 					onDeleteBanner: C,
 					prefersReducedAnimations: O,
 					snoovatarUrl: y,
-					title: k,
+					title: U,
 					userCreated: A,
 					username: M,
 					url: S,
@@ -2340,11 +2340,11 @@
 				}, n.a.createElement(l.a, {
 					name: "settings",
 					className: P.a.settingsIcon
-				}))), n.a.createElement(U.a, {
+				}))), n.a.createElement(k.a, {
 					isEmployee: I,
 					isGold: E,
 					isNSFW: N,
-					title: k,
+					title: U,
 					username: M
 				}), n.a.createElement(v.a, {
 					className: h.a.snoovatarUserName,
@@ -2721,4 +2721,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.50d9196362013ad2c08d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.f51d63f5db1af5ba352d.js.map

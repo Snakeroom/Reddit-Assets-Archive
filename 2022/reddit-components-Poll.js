@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.35f28915fc8b821da5dd.js
-// Retrieved at 3/29/2022, 12:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.b3057c159b7dc267a6ca.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -30,9 +30,9 @@
 					showDay: t,
 					useUtc: n,
 					shortMonths: s,
-					locale: i = r.D
+					locale: i = r.E
 				} = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-				const a = new Date(e * r.Sb);
+				const a = new Date(e * r.Tb);
 				return o.a ? new Intl.DateTimeFormat(i, {
 					month: s ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -45,7 +45,7 @@
 			"use strict";
 			var r = n("./src/lib/constants/index.ts");
 			t.a = function(e) {
-				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.D;
+				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.E;
 				const n = e.toString().length > 10,
 					o = new Date(e * (n ? 1 : 1e3));
 				return o.toLocaleString(t, {
@@ -68,39 +68,39 @@
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./src/lib/constants/index.ts");
-			const s = [o.rc, o.pb, o.B, o.Q, o.kb, o.Sb],
+			const s = [o.sc, o.qb, o.C, o.R, o.lb, o.Tb],
 				i = {
-					[o.Sb]: e => r.fbt._({
+					[o.Tb]: e => r.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [r.fbt._plural(e, "number")], {
 						hk: "3pTp9Z"
 					}),
-					[o.kb]: e => r.fbt._({
+					[o.lb]: e => r.fbt._({
 						"*": "{number} minutes",
 						_1: "1 minute"
 					}, [r.fbt._plural(e, "number")], {
 						hk: "2gB3sf"
 					}),
-					[o.Q]: e => r.fbt._({
+					[o.R]: e => r.fbt._({
 						"*": "{number} hours",
 						_1: "1 hour"
 					}, [r.fbt._plural(e, "number")], {
 						hk: "2w4n8B"
 					}),
-					[o.B]: e => r.fbt._({
+					[o.C]: e => r.fbt._({
 						"*": "{number} days",
 						_1: "1 day"
 					}, [r.fbt._plural(e, "number")], {
 						hk: "3zIGRH"
 					}),
-					[o.pb]: e => r.fbt._({
+					[o.qb]: e => r.fbt._({
 						"*": "{number} months",
 						_1: "1 month"
 					}, [r.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[o.rc]: e => r.fbt._({
+					[o.sc]: e => r.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [r.fbt._plural(e, "number")], {
@@ -108,28 +108,28 @@
 					})
 				},
 				a = {
-					[o.Sb]: e => r.fbt._("{amount}s", [r.fbt._param("amount", String(e))], {
+					[o.Tb]: e => r.fbt._("{amount}s", [r.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
-					[o.kb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
+					[o.lb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "43tM5H"
 					}),
-					[o.Q]: e => r.fbt._("{amount}h", [r.fbt._param("amount", String(e))], {
+					[o.R]: e => r.fbt._("{amount}h", [r.fbt._param("amount", String(e))], {
 						hk: "19NsxU"
 					}),
-					[o.B]: e => r.fbt._("{amount}d", [r.fbt._param("amount", String(e))], {
+					[o.C]: e => r.fbt._("{amount}d", [r.fbt._param("amount", String(e))], {
 						hk: "39MDc9"
 					}),
-					[o.pb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
+					[o.qb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[o.rc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[o.sc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
-					[o.pb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
+					[o.qb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[o.rc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[o.sc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -140,12 +140,12 @@
 				const c = Date.now(),
 					l = new Date(e).getTime(),
 					d = {
-						[o.rc]: "",
-						[o.pb]: "",
-						[o.B]: "",
-						[o.Q]: "",
-						[o.kb]: "",
-						[o.Sb]: ""
+						[o.sc]: "",
+						[o.qb]: "",
+						[o.C]: "",
+						[o.R]: "",
+						[o.lb]: "",
+						[o.Tb]: ""
 					};
 				let u = l - c;
 				if (u <= 0) return r.fbt._("a moment", null, {
@@ -217,11 +217,11 @@
 			})), n.d(t, "o", (function() {
 				return h
 			})), n.d(t, "p", (function() {
-				return g
-			})), n.d(t, "q", (function() {
-				return v
-			})), n.d(t, "r", (function() {
 				return E
+			})), n.d(t, "q", (function() {
+				return g
+			})), n.d(t, "r", (function() {
+				return v
 			})), n.d(t, "s", (function() {
 				return O
 			})), n.d(t, "t", (function() {
@@ -250,9 +250,9 @@
 				f = "GOVERNANCE__PUBLIC_WALLET_INFO_PENDING",
 				_ = "GOVERNANCE__PUBLIC_WALLET_INFO_SUCCESS",
 				h = "GOVERNANCE__RELEASE_NOTES_MODAL_OPENED",
-				g = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
-				v = "GOVERNANCE__TRANSFER_FAILURE",
-				E = "GOVERNANCE__TRANSFER_MODAL_OPENED",
+				E = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
+				g = "GOVERNANCE__TRANSFER_FAILURE",
+				v = "GOVERNANCE__TRANSFER_MODAL_OPENED",
 				O = "GOVERNANCE__TRANSFER_PENDING",
 				C = "GOVERNANCE__TRANSFER_SUCCESS",
 				N = "GOVERNANCE__WALLETS_FETCH_FAILURE",
@@ -280,7 +280,7 @@
 		"./src/reddit/actions/governance/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return E
+				return v
 			})), n.d(t, "b", (function() {
 				return O
 			})), n.d(t, "c", (function() {
@@ -290,7 +290,7 @@
 			})), n.d(t, "g", (function() {
 				return w
 			})), n.d(t, "d", (function() {
-				return R
+				return k
 			})), n.d(t, "e", (function() {
 				return D
 			})), n.d(t, "h", (function() {
@@ -311,24 +311,24 @@
 				f = n("./src/reddit/models/Toast/index.ts"),
 				_ = n("./src/reddit/models/Vote/index.ts"),
 				h = n("./src/reddit/selectors/crypto/points.ts"),
-				g = n("./src/reddit/actions/governance/constants.ts"),
-				v = n("./src/reddit/actions/governance/errorToast.ts");
-			const E = Object(o.a)(g.b),
-				O = Object(o.a)(g.c),
-				C = Object(o.a)(g.e),
-				N = (Object(o.a)(g.f), Object(o.a)(g.g), Object(o.a)(g.h)),
-				y = Object(o.a)(g.i),
-				x = Object(o.a)(g.j),
-				j = Object(o.a)(g.k),
-				I = Object(o.a)(g.q),
-				P = Object(o.a)(g.r),
-				T = Object(o.a)(g.s),
-				S = Object(o.a)(g.t),
-				L = Object(o.a)(g.u),
-				A = Object(o.a)(g.v),
-				k = Object(o.a)(g.w),
-				w = Object(o.a)(g.x),
-				R = (e, t) => async (n, r, o) => {
+				E = n("./src/reddit/actions/governance/constants.ts"),
+				g = n("./src/reddit/actions/governance/errorToast.ts");
+			const v = Object(o.a)(E.b),
+				O = Object(o.a)(E.c),
+				C = Object(o.a)(E.e),
+				N = (Object(o.a)(E.f), Object(o.a)(E.g), Object(o.a)(E.h)),
+				y = Object(o.a)(E.i),
+				x = Object(o.a)(E.j),
+				j = Object(o.a)(E.k),
+				I = Object(o.a)(E.q),
+				P = Object(o.a)(E.r),
+				T = Object(o.a)(E.s),
+				S = Object(o.a)(E.t),
+				L = Object(o.a)(E.u),
+				R = Object(o.a)(E.v),
+				A = Object(o.a)(E.w),
+				w = Object(o.a)(E.x),
+				k = (e, t) => async (n, r, o) => {
 					let s, {
 							apiContext: i,
 							gqlContext: c
@@ -371,7 +371,7 @@
 					} else n(y({
 						pollId: e,
 						error: s.error || s.errors[0].message
-					})), Object(v.a)(n, s.error || s.errors[0].messsage)
+					})), Object(g.a)(n, s.error || s.errors[0].messsage)
 				}, D = (e, t) => async (n, o, a) => {
 					let {
 						apiContext: d
@@ -405,14 +405,14 @@
 						})
 					})), t && n(Object(i.f)())) : (n(I({
 						error: b.error
-					})), Object(v.a)(n, b.error))
+					})), Object(g.a)(n, b.error))
 				}, V = e => async (t, n, r) => {
 					let {
 						apiContext: o
 					} = r;
-					t(A());
+					t(R());
 					const s = await Object(b.a)(o(), e);
-					s.ok ? t(k(s.body)) : t(L({
+					s.ok ? t(A(s.body)) : t(L({
 						error: s.error
 					}))
 				}
@@ -524,8 +524,8 @@
 					const r = Object(i.a)(),
 						s = null != n ? n : r;
 					return o.a.createElement(o.a.Fragment, null, function(e) {
-						let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.D;
-						const n = e * d.Sb;
+						let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.E;
+						const n = e * d.Tb;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -542,7 +542,7 @@
 				p = n("./src/lib/eventTools/index.ts");
 
 			function b(e) {
-				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.D;
+				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.E;
 				return e.toLocaleDateString(t, {
 					month: "numeric",
 					day: "numeric"
@@ -551,9 +551,9 @@
 
 			function f(e, t) {
 				let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-					r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : d.D;
+					r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : d.E;
 				const o = Object(p.e)(e, t),
-					s = new Date(e * d.Sb);
+					s = new Date(e * d.Tb);
 				let i;
 				if (o === p.a.Live || n) return m.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -561,13 +561,13 @@
 				return o === p.a.Future ? i = Object(p.d)(e) ? m.fbt._("Today", null, {
 					hk: "1sZpnp"
 				}).toString() : Object(p.b)(e) >= 5 ? b(s, r) : function(e) {
-					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.D;
+					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.E;
 					return e.toLocaleDateString(t, {
 						weekday: "long"
 					})
 				}(s, r) : o === p.a.Past && (i = Object(p.d)(e) ? m.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : b(s, r)), `${i} @ ${function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:d.D;return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(s,r)}`
+				}).toString() : b(s, r)), `${i} @ ${function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:d.E;return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(s,r)}`
 			}
 			var _ = function(e) {
 				let {
@@ -643,7 +643,7 @@
 				return a.a.createElement("span", {
 					className: e.className
 				}, t ? c._("Voting closed {timeAgo}", [c._param("timeAgo", a.a.createElement(o.d, {
-					seconds: e.poll.endsAt / r.Sb
+					seconds: e.poll.endsAt / r.Tb
 				}))], {
 					hk: "3OERID"
 				}) : Object(s.a)(new Date(e.poll.endsAt)))
@@ -727,9 +727,9 @@
 			var b, f = n("./src/lib/bigNumberUtils/percent.ts"),
 				_ = n("./src/lib/prettyPrintNumber/index.ts"),
 				h = n("./src/reddit/helpers/governance/tokens.ts"),
-				g = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
-				v = n("./src/reddit/components/Poll/PollBody/ResultOption/index.m.less"),
-				E = n.n(v);
+				E = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
+				g = n("./src/reddit/components/Poll/PollBody/ResultOption/index.m.less"),
+				v = n.n(g);
 			! function(e) {
 				e[e.Count = 0] = "Count", e[e.Percent = 1] = "Percent"
 			}(b || (b = {}));
@@ -741,28 +741,28 @@
 						c = new r.BigNumber(s).isZero() ? 0 : Object(f.a)(a.votes, s),
 						d = Object(h.c)(a.votes, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion);
 					return i.a.createElement("div", {
-						className: Object(l.a)(e.className, E.a.container),
+						className: Object(l.a)(e.className, v.a.container),
 						title: e.displayType === b.Count ? a.votes : `${c.toFixed(2)}% (${d} ${null===(n=null==e?void 0:e.pointsDetails)||void 0===n?void 0:n.name})`
 					}, i.a.createElement("div", {
-						className: E.a.bar,
+						className: v.a.bar,
 						style: {
 							opacity: e.isWinningOption ? .3 : void 0,
 							width: `${c}%`
 						}
 					}), i.a.createElement("div", {
-						className: Object(l.a)(E.a.count, {
-							[E.a.hide]: e.displayType !== b.Count,
-							[E.a.show]: e.displayType === b.Count
+						className: Object(l.a)(v.a.count, {
+							[v.a.hide]: e.displayType !== b.Count,
+							[v.a.show]: e.displayType === b.Count
 						})
 					}, Object(_.b)(parseInt(a.votes))), i.a.createElement("div", {
-						className: Object(l.a)(E.a.percent, {
-							[E.a.hide]: e.displayType === b.Count,
-							[E.a.show]: e.displayType !== b.Count
+						className: Object(l.a)(v.a.percent, {
+							[v.a.hide]: e.displayType === b.Count,
+							[v.a.show]: e.displayType !== b.Count
 						})
 					}, `${c.toFixed(1)}%`), i.a.createElement("div", {
-						className: E.a.text
-					}, o.text), a.userSelected && i.a.createElement(g.a, {
-						className: E.a.check
+						className: v.a.text
+					}, o.text), a.userSelected && i.a.createElement(E.a, {
+						className: v.a.check
 					}))
 				},
 				C = n("./src/reddit/icons/svgs/GovSmall/index.tsx"),
@@ -784,19 +784,19 @@
 				}))
 			}
 			var L = n("./src/reddit/actions/governance/index.ts"),
-				A = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				k = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				R = n("./src/reddit/components/TrackingHelper/index.tsx"),
+				A = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				w = n("./src/reddit/helpers/trackers/post.ts"),
-				R = n("./src/reddit/selectors/crypto/points.ts"),
+				k = n("./src/reddit/selectors/crypto/points.ts"),
 				D = n("./src/reddit/components/Poll/PollExpiry/index.tsx"),
 				V = n("./src/reddit/components/Poll/PollBody/ClosedPoll/index.m.less"),
-				B = n.n(V);
+				G = n.n(V);
 
-			function G(e) {
+			function B(e) {
 				let t;
 				const {
 					pointsDetails: n
-				} = Object(R.c)();
+				} = Object(k.c)();
 				return e.poll.options.forEach(n => {
 					t || (t = n);
 					const o = e.result.options[n.id],
@@ -806,7 +806,7 @@
 					className: e.className
 				}, e.poll.options.map((r, o) => i.a.createElement(O, {
 					key: o,
-					className: B.a.option,
+					className: G.a.option,
 					displayType: e.displayType,
 					isWinningOption: r === t,
 					optionId: r.id,
@@ -814,7 +814,7 @@
 					result: e.result,
 					pointsDetails: n
 				})), i.a.createElement(D.a, {
-					className: B.a.metaData,
+					className: G.a.metaData,
 					poll: e.poll
 				}))
 			}
@@ -822,9 +822,9 @@
 				U = n.n(M),
 				F = n("./src/reddit/constants/elementClassNames.ts"),
 				H = n("./src/reddit/controls/Button/index.tsx"),
-				$ = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				q = n("./src/reddit/components/Poll/PollBody/OpenPoll/index.m.less"),
-				W = n.n(q);
+				q = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				$ = n("./src/reddit/components/Poll/PollBody/OpenPoll/index.m.less"),
+				W = n.n($);
 			const {
 				fbt: Z
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -874,7 +874,7 @@
 						className: F.n,
 						disabled: this.props.voteInProgress || !this.props.userIsLoggedIn || !this.state.optionIsSelected,
 						type: "submit"
-					}, this.props.voteInProgress ? i.a.createElement($.a, {
+					}, this.props.voteInProgress ? i.a.createElement(q.a, {
 						className: W.a.loadingIcon,
 						sizePx: 20
 					}) : i.a.createElement(s.Fragment, null, this.props.votingIcon, Z._("Vote", null, {
@@ -889,10 +889,10 @@
 					})))
 				}
 			}
-			const Q = Object(c.c)({
+			const Y = Object(c.c)({
 				userIsLoggedIn: e => !!e.user.account
 			});
-			var Y = Object(a.b)(Q)(Object(A.c)(K)),
+			var Q = Object(a.b)(Y)(Object(R.c)(K)),
 				J = n("./src/reddit/components/Poll/PollBody/index.m.less"),
 				X = n.n(J);
 			class ee extends i.a.Component {
@@ -932,12 +932,12 @@
 						className: e
 					}, a && i.a.createElement("div", {
 						className: X.a.title
-					}, a), o && Object(N.e)(r, o) ? i.a.createElement(G, {
+					}, a), o && Object(N.e)(r, o) ? i.a.createElement(B, {
 						displayType: t,
 						poll: r,
 						result: o,
 						subredditId: s
-					}) : i.a.createElement(Y, {
+					}) : i.a.createElement(Q, {
 						poll: r,
 						onVoteSelection: n,
 						voteInProgress: c,
@@ -950,11 +950,11 @@
 				result: (e, t) => e.polls.results[t.resultType][t.pollId],
 				voteInProgress: (e, t) => !!e.polls.api.voting.pending[t.pollId]
 			});
-			var ne = Object(k.u)({
-					isCommentsPage: k.x
+			var ne = Object(A.u)({
+					isCommentsPage: A.x
 				})(Object(a.b)(te, (e, t) => ({
 					onVoteSelection: n => e(Object(L.d)(t.pollId, n.id))
-				}))(Object(A.c)(ee))),
+				}))(Object(R.c)(ee))),
 				re = n("./src/reddit/selectors/gov.ts"),
 				oe = n("./src/reddit/icons/svgs/DynamicThreshold/index.tsx"),
 				se = n("./src/reddit/components/Poll/ResultsSelector/DecisionThreshold/index.m.less"),
@@ -1019,7 +1019,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return Object(R.b)(e, n)
+					return Object(k.b)(e, n)
 				}
 			});
 			var me = Object(a.b)(ue)((function(e) {
@@ -1056,9 +1056,9 @@
 				}, e.text)
 			}
 			const {
-				fbt: ge
+				fbt: Ee
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			const ve = Object(c.c)({
+			const ge = Object(c.c)({
 				distribution: (e, t) => {
 					let {
 						subredditId: n
@@ -1069,7 +1069,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return Object(R.b)(e, n)
+					return Object(k.b)(e, n)
 				},
 				poll: (e, t) => {
 					let {
@@ -1087,7 +1087,7 @@
 				},
 				wallet: re.d
 			});
-			var Ee = Object(a.b)(ve)((function(e) {
+			var ve = Object(a.b)(ge)((function(e) {
 					const {
 						distribution: t,
 						pointsDetails: n,
@@ -1095,24 +1095,24 @@
 						resultsByVoters: s,
 						resultsByVotingPower: a,
 						wallet: c
-					} = e, d = a ? a.totalVotes : "0", u = !new r.BigNumber(d).isZero() && c && t ? Object(f.a)(d, t.totalAvailable) : 0, m = s ? s.totalVotes : "0", p = Object(h.c)(d, null == n ? void 0 : n.displayConversion), b = Object(_.b)(parseInt(m)), g = null == n ? void 0 : n.name;
+					} = e, d = a ? a.totalVotes : "0", u = !new r.BigNumber(d).isZero() && c && t ? Object(f.a)(d, t.totalAvailable) : 0, m = s ? s.totalVotes : "0", p = Object(h.c)(d, null == n ? void 0 : n.displayConversion), b = Object(_.b)(parseInt(m)), E = null == n ? void 0 : n.name;
 					return i.a.createElement("div", {
 						className: Object(l.a)(e.className, be.a.container)
 					}, i.a.createElement("div", null, o.type !== N.a.GA && i.a.createElement(he, {
 						isSelected: e.currentResultType === N.b.ByVotingPower,
 						selectable: e.pollIsClosed,
-						text: `${p} ${g}`,
-						tooltipText: ge._("{count} {tokenName} ({percent}% of all {tokenNameAgain})", [ge._param("count", p), ge._param("tokenName", g), ge._param("percent", u.toFixed(2)), ge._param("tokenNameAgain", g)], {
+						text: `${p} ${E}`,
+						tooltipText: Ee._("{count} {tokenName} ({percent}% of all {tokenNameAgain})", [Ee._param("count", p), Ee._param("tokenName", E), Ee._param("percent", u.toFixed(2)), Ee._param("tokenNameAgain", E)], {
 							hk: "3R2TN1"
 						}),
 						onSelect: () => e.onChangeResultType && e.onChangeResultType(N.b.ByVotingPower)
 					}), i.a.createElement(he, {
 						isSelected: e.currentResultType === N.b.ByVoters,
 						selectable: e.pollIsClosed,
-						text: ge._({
+						text: Ee._({
 							"*": "{count} votes",
 							_1: "{count} vote"
-						}, [ge._param("count", b), ge._plural(parseInt(m))], {
+						}, [Ee._param("count", b), Ee._plural(parseInt(m))], {
 							hk: "3oK0a3"
 						}),
 						onSelect: () => e.onChangeResultType && e.onChangeResultType(N.b.ByVoters)
@@ -1177,7 +1177,7 @@
 					}, i.a.createElement("div", {
 						className: Object(l.a)(c, Ce.a.container, f),
 						onClick: this.handleContainerClick
-					}, i.a.createElement(Ee, {
+					}, i.a.createElement(ve, {
 						className: Ce.a.resultsSelector,
 						currentResultType: this.state.resultType,
 						pollId: o,
@@ -1278,7 +1278,7 @@
 			})), n.d(t, "f", (function() {
 				return h
 			})), n.d(t, "n", (function() {
-				return g
+				return E
 			}));
 			var r, o = n("./src/config.ts"),
 				s = n("./src/reddit/endpoints/governance/requester.ts");
@@ -1376,7 +1376,7 @@
 					recipientAddress: n,
 					amount: r
 				});
-			async function g(e, t) {
+			async function E(e, t) {
 				return await Object(s.a)(e, {
 					method: "put",
 					endpoint: `${o.a.metaUrl}/crypto/ethereum/transaction-intent`,
@@ -1398,7 +1398,7 @@
 			function i(e, t) {
 				return Object(s.a)(e, {
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: o.jb.GET
+					method: o.kb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -1420,7 +1420,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}`,
-					method: o.jb.POST,
+					method: o.kb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -1769,4 +1769,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.35f28915fc8b821da5dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.b3057c159b7dc267a6ca.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.cf7877b870e058ef627b.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.c6ce213b93333ac39592.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -154,7 +154,7 @@
 						const t = `https://${o.pointsDocsBaseUrl}v1.json?web`,
 							n = await Object(s.b)({
 								endpoint: t,
-								method: r.jb.GET
+								method: r.kb.GET
 							});
 						n.ok && n.body && e(l(n.body))
 					}
@@ -761,8 +761,8 @@
 			var x = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				M = n("./src/reddit/helpers/economics/membershipPage.ts"),
 				B = n("./src/reddit/components/Economics/SubredditPremium/constants.ts"),
-				T = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Message/index.m.less"),
-				k = n.n(T);
+				k = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Message/index.m.less"),
+				T = n.n(k);
 			const D = Object(c.c)({
 				meta: (e, t) => {
 					let {
@@ -773,22 +773,22 @@
 			});
 			var R = Object(l.c)(Object(o.b)(D)((function(e) {
 					return s.a.createElement("div", {
-						className: Object(a.a)(k.a.container, e.className)
+						className: Object(a.a)(T.a.container, e.className)
 					}, y.fbt._("This community is a part of an exclusive experiment run by Reddit Admins.", null, {
 						hk: "1lZWqG"
 					}), " ", y.fbt._("Hundreds of followers have paid for a", null, {
 						hk: "b6O0n"
 					}), s.a.createElement("div", {
-						className: k.a.branding
+						className: T.a.branding
 					}, s.a.createElement("img", {
-						className: k.a.crown,
+						className: T.a.crown,
 						src: B.a
 					}), e.meta.memberAlt), y.fbt._("subscription.", null, {
 						hk: "2NkoEp"
 					}), " ", y.fbt._("They benefit by getting unique features that Reddit doesn't provide in any other community.", null, {
 						hk: "xffSH"
 					}), " ", s.a.createElement(x.a, {
-						className: k.a.link,
+						className: T.a.link,
 						to: Object(M.a)(e.subreddit.name, e.correlationId),
 						onClick: () => e.sendEvent(t => ({
 							source: "meta",
@@ -1399,7 +1399,7 @@
 			function c(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${r.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: s.jb.GET
+					method: s.kb.GET
 				})
 			}
 		},
@@ -2096,7 +2096,7 @@
 			})), n.d(t, "k", (function() {
 				return B
 			})), n.d(t, "r", (function() {
-				return k
+				return T
 			})), n.d(t, "y", (function() {
 				return D
 			})), n.d(t, "u", (function() {
@@ -2280,7 +2280,7 @@
 					membershipAlt: "Supporter Membership"
 				},
 				B = (e, t) => Object.values(e.products.models).filter(e => e.type === a.a.Membership && t && e.subredditId === t),
-				T = (e, t) => {
+				k = (e, t) => {
 					if (!t) return {};
 					const n = M.prices;
 					B(e, t).forEach(e => {
@@ -2289,11 +2289,11 @@
 					const r = _(e, t);
 					return r && r.price && r.currency && (n[r.currency] = r.price), n
 				},
-				k = (e, t) => {
+				T = (e, t) => {
 					var n, r, s, o;
 					const c = (null === (o = null === (s = null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.crypto) || void 0 === r ? void 0 : r.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || M;
 					return {
-						prices: T(e, t),
+						prices: k(e, t),
 						member: c.member || M.member,
 						memberPlural: c.memberPlural || M.memberPlural,
 						memberAlt: c.memberAlt || M.memberAlt,
@@ -2391,4 +2391,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.cf7877b870e058ef627b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.c6ce213b93333ac39592.js.map

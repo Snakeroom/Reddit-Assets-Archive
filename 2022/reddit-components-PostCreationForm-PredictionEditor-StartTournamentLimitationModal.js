@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal.f8bc971540cef9d52041.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal.9ed64d58bf1cdc3cae01.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal"], {
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, n) {
@@ -75,7 +75,7 @@
 					withOverlay: !0,
 					onConfirm: () => {
 						e(Object(s.g)({
-							submissionType: r.Wb.POST
+							submissionType: r.Xb.POST
 						})), t()
 					},
 					onCancel: t,
@@ -99,4 +99,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal.f8bc971540cef9d52041.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal.9ed64d58bf1cdc3cae01.js.map

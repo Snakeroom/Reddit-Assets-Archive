@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.fa994167952ab19ee8f5.js
-// Retrieved at 4/13/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.9d083ca44d8a2f97a484.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -16,39 +16,39 @@
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/constants/index.ts");
-			const s = [r.rc, r.pb, r.B, r.Q, r.kb, r.Sb],
+			const s = [r.sc, r.qb, r.C, r.R, r.lb, r.Tb],
 				i = {
-					[r.Sb]: e => o.fbt._({
+					[r.Tb]: e => o.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
 					}, [o.fbt._plural(e, "number")], {
 						hk: "3pTp9Z"
 					}),
-					[r.kb]: e => o.fbt._({
+					[r.lb]: e => o.fbt._({
 						"*": "{number} minutes",
 						_1: "1 minute"
 					}, [o.fbt._plural(e, "number")], {
 						hk: "2gB3sf"
 					}),
-					[r.Q]: e => o.fbt._({
+					[r.R]: e => o.fbt._({
 						"*": "{number} hours",
 						_1: "1 hour"
 					}, [o.fbt._plural(e, "number")], {
 						hk: "2w4n8B"
 					}),
-					[r.B]: e => o.fbt._({
+					[r.C]: e => o.fbt._({
 						"*": "{number} days",
 						_1: "1 day"
 					}, [o.fbt._plural(e, "number")], {
 						hk: "3zIGRH"
 					}),
-					[r.pb]: e => o.fbt._({
+					[r.qb]: e => o.fbt._({
 						"*": "{number} months",
 						_1: "1 month"
 					}, [o.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[r.rc]: e => o.fbt._({
+					[r.sc]: e => o.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [o.fbt._plural(e, "number")], {
@@ -56,28 +56,28 @@
 					})
 				},
 				a = {
-					[r.Sb]: e => o.fbt._("{amount}s", [o.fbt._param("amount", String(e))], {
+					[r.Tb]: e => o.fbt._("{amount}s", [o.fbt._param("amount", String(e))], {
 						hk: "F4qog"
 					}),
-					[r.kb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
+					[r.lb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
 						hk: "43tM5H"
 					}),
-					[r.Q]: e => o.fbt._("{amount}h", [o.fbt._param("amount", String(e))], {
+					[r.R]: e => o.fbt._("{amount}h", [o.fbt._param("amount", String(e))], {
 						hk: "19NsxU"
 					}),
-					[r.B]: e => o.fbt._("{amount}d", [o.fbt._param("amount", String(e))], {
+					[r.C]: e => o.fbt._("{amount}d", [o.fbt._param("amount", String(e))], {
 						hk: "39MDc9"
 					}),
-					[r.pb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
+					[r.qb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.rc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
+					[r.sc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
-					[r.pb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
+					[r.qb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.rc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
+					[r.sc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -88,12 +88,12 @@
 				const c = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[r.rc]: "",
-						[r.pb]: "",
-						[r.B]: "",
-						[r.Q]: "",
-						[r.kb]: "",
-						[r.Sb]: ""
+						[r.sc]: "",
+						[r.qb]: "",
+						[r.C]: "",
+						[r.R]: "",
+						[r.lb]: "",
+						[r.Tb]: ""
 					};
 				let u = d - c;
 				if (u <= 0) return o.fbt._("a moment", null, {
@@ -686,7 +686,7 @@
 			}
 			var V = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionFeatureEducationMessage/index.tsx");
 
-			function H() {
+			function q() {
 				const e = C.fbt._("Choose the answer", null, {
 						hk: "3QoLuB"
 					}),
@@ -698,8 +698,8 @@
 					message: t
 				}))
 			}
-			var K = n("./src/reddit/components/Econ/Prediction/TournamentTokenIcon/index.tsx"),
-				q = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
+			var H = n("./src/reddit/components/Econ/Prediction/TournamentTokenIcon/index.tsx"),
+				K = n("./src/reddit/icons/svgs/CoinV2/index.tsx"),
 				X = n("./src/reddit/components/Econ/Prediction/PredictionEducationMessage/PredictionResolvedEducationMessage/index.m.less"),
 				z = n.n(X);
 			const {
@@ -720,10 +720,10 @@
 						id: t
 					} = e;
 					return t === i
-				})) || void 0 === n ? void 0 : n.userStakeAmount) || 0, m = o ? r.a.createElement(K.a, {
+				})) || void 0 === n ? void 0 : n.userStakeAmount) || 0, m = o ? r.a.createElement(H.a, {
 					className: z.a.coinIcon,
 					tournamentId: o
-				}) : r.a.createElement(q.a, {
+				}) : r.a.createElement(K.a, {
 					className: z.a.coinIcon
 				});
 				return d && !l ? r.a.createElement("div", null, r.a.createElement(R.a, {
@@ -786,7 +786,7 @@
 				} = t, c = o < Date.now(), d = !L()(i), l = c && n && !s;
 				return c ? s ? r.a.createElement(Z, {
 					prediction: t
-				}) : l ? r.a.createElement(H, null) : r.a.createElement(Y, {
+				}) : l ? r.a.createElement(q, null) : r.a.createElement(Y, {
 					didParticipate: !!a
 				}) : r.a.createElement(V.a, {
 					isTokens: d,
@@ -860,7 +860,7 @@
 					totalVoters: d
 				}), r.a.createElement("span", null, "·")), u && i > 0 && r.a.createElement("div", {
 					className: ne.a.statusBar
-				}, r.a.createElement(q.a, {
+				}, r.a.createElement(K.a, {
 					className: ne.a.coinIcon
 				}), i, " ", ce._("added by participants", null, {
 					hk: "PSq3T"
@@ -2038,4 +2038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.fa994167952ab19ee8f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.9d083ca44d8a2f97a484.js.map

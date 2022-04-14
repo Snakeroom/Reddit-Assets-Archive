@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.3ed64289ead5a0b42853.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.0c7389ded6bb980c4dd4.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -717,7 +717,7 @@
 						o = S && S[i];
 					if (!o || !o.s) return null;
 					const a = t.caption ? t.caption : A,
-						r = Object(c.a)(W ? `${W} - ${a}` : a, 300, d.ib),
+						r = Object(c.a)(W ? `${W} - ${a}` : a, 300, d.jb),
 						l = [...o && o.s ? [o.s] : [], ...o && o.p ? o.p : []],
 						u = Object(O.d)(b, l);
 					if (!u) return null;
@@ -1379,7 +1379,7 @@
 					} = this.props;
 					if (!n) return;
 					let o = "";
-					return i && (o += i), t && e ? o += `${ge}${t}` : s.title && (o += `${ge}${s.title}`), o.length > be ? Object(I.a)(o, be, f.ib) : o
+					return i && (o += i), t && e ? o += `${ge}${t}` : s.title && (o += `${ge}${s.title}`), o.length > be ? Object(I.a)(o, be, f.jb) : o
 				}
 				getVideoExpandoMaxDimensions() {
 					let e, t = Math.max(Z.j, this.state.viewportHeight),
@@ -2143,4 +2143,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.3ed64289ead5a0b42853.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.0c7389ded6bb980c4dd4.js.map

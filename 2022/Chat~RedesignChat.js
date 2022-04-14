@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.535c7fc41e4f201eacf4.js
-// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~RedesignChat.a6843860917053c82d9d.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~RedesignChat"], {
 		"./src/chat/actions/apiRequestHeaders.ts": function(e, t, n) {
@@ -1290,7 +1290,7 @@
 							} = e;
 							return Object(g.b)({
 								endpoint: "https://api.embed.ly/1/extract",
-								method: b.jb.GET,
+								method: b.kb.GET,
 								data: {
 									key: f,
 									url: a,
@@ -1506,7 +1506,7 @@
 							subredditsNames: [],
 							userPostsIds: []
 						},
-						u = e => e.startsWith(d.Ib.Comment) || e.startsWith(d.Ib.Post);
+						u = e => e.startsWith(d.Jb.Comment) || e.startsWith(d.Jb.Post);
 					for (const o in e) {
 						const t = s()(e[o].reduce((e, t) => t && (u(t) || "subreddit" === o) && e.push(t) && e || e, []));
 						switch (o) {
@@ -1935,7 +1935,7 @@
 							Object(a.d)(e, t, new Date)
 						}
 					}
-				}, O = "SENDBIRD__ADD_MEMBERS_TO_KNOWN_CONTACTS", v = Object(c.a)(O), E = "SENDBIRD__SET_REDDIT_CONTACT_LIST", j = 6 * s.Q, _ = Object(c.a)(E), C = () => async (e, t, n) => {
+				}, O = "SENDBIRD__ADD_MEMBERS_TO_KNOWN_CONTACTS", v = Object(c.a)(O), E = "SENDBIRD__SET_REDDIT_CONTACT_LIST", j = 6 * s.R, _ = Object(c.a)(E), C = () => async (e, t, n) => {
 					let {
 						apiContext: c
 					} = n;
@@ -1957,7 +1957,7 @@
 					let {
 						apiContext: c
 					} = a;
-					if (e.username === s.E) return;
+					if (e.username === s.F) return;
 					Object(d.c)(n(), e.username) || (t(x({
 						username: e.username
 					})), Object(o.b)(c(), e.username).then(n => {
@@ -2084,7 +2084,7 @@
 						const t = await ((e, t) => Object(c.a)(e, {
 							data: t,
 							endpoint: "/refreshproxy",
-							method: s.jb.POST
+							method: s.kb.POST
 						}))(a(), r);
 						if (t.ok) {
 							const n = t.body;
@@ -2861,7 +2861,7 @@
 				const c = await Object(i.b)({
 					data: d(e, t.uploadLeaseHeaders),
 					endpoint: t.uploadLeaseUrl,
-					method: r.jb.POST,
+					method: r.kb.POST,
 					type: null,
 					setup: a
 				});
@@ -3270,7 +3270,7 @@
 					t(v());
 					const c = await ((e, t) => Object(i.a)(e, {
 						endpoint: h(`${r.a.gatewayUrl}/desktopapi/v1/prefs`),
-						method: o.jb.GET,
+						method: o.kb.GET,
 						data: {
 							timestamp: t ? Date.now() : void 0
 						}
@@ -3286,7 +3286,7 @@
 							name: t
 						},
 						endpoint: `${e.apiUrl}/api/add_whitelisted?include_model`,
-						method: o.jb.POST
+						method: o.kb.POST
 					}))(r(), e);
 					l.ok ? l.body.id && t(_(l.body.id)) : (t(C()), t(Object(s.g)({
 						toast: c.a.SomethingWentWrong
@@ -3300,7 +3300,7 @@
 							name: t
 						},
 						endpoint: `${e.apiUrl}/api/remove_whitelisted`,
-						method: o.jb.POST
+						method: o.kb.POST
 					}))(r(), e.name)).ok ? t(y(e.id)) : (t(x()), t(Object(s.g)({
 						toast: c.a.SomethingWentWrong
 					})), t(Object(s.c)()))
@@ -4489,7 +4489,7 @@
 					if (n && t && o) {
 						const e = Object(C.h)(a(), n);
 						if ((null == e ? void 0 : e.type) === X.b.Group) {
-							if (t === xe.E) return;
+							if (t === xe.F) return;
 							let e = [];
 							const s = Object(We.c)(a(), t);
 							if (s) e = [{
@@ -4636,7 +4636,7 @@
 						if (n && i && o) {
 							const t = Object(C.h)(a(), n);
 							if ((null == t ? void 0 : t.type) === X.b.Group) {
-								if (i === xe.E) return;
+								if (i === xe.F) return;
 								let t;
 								const s = Object(We.c)(a(), i);
 								if (s) t = s.id;
@@ -5257,7 +5257,7 @@
 					super(e), t = this, this.fetchedFilter = "", this.isMount = !1, this.fetchSubredditChannelUsers = L()((function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "";
 						t.props.fetchSubredditChannelUsers(e)
-					}), xe.Sb, {
+					}), xe.Tb, {
 						leading: !0,
 						trailing: !1
 					}), this.onArrowUpListener = e => {
@@ -6092,7 +6092,7 @@
 							var n;
 							const a = t[e + 1];
 							return null === (n = null == a ? void 0 : a.sender) || void 0 === n ? void 0 : n.userId
-						})(a, o), f = p === u, O = g === u, v = l - h < 5 * xe.kb, E = m && m - l < 5 * xe.kb, j = !O || O && !E, _ = e.messageType === we.d.SYSTEM && ((e, t) => {
+						})(a, o), f = p === u, O = g === u, v = l - h < 5 * xe.lb, E = m && m - l < 5 * xe.lb, j = !O || O && !E, _ = e.messageType === we.d.SYSTEM && ((e, t) => {
 							const {
 								mentionType: n,
 								mentionedUsers: a,
@@ -6944,8 +6944,8 @@
 						className: Ws.a.UserMetaInfo
 					}, ((e, t) => {
 						const n = (new Date).getTime(),
-							a = Math.round(Math.abs((e - n) / xe.B)),
-							s = Math.round(Math.abs((e - n) / xe.rc));
+							a = Math.round(Math.abs((e - n) / xe.C)),
+							s = Math.round(Math.abs((e - n) / xe.sc));
 						let c = "";
 						const r = `${a}${oe.fbt._("d",null,{hk:"1d5Wxl"})}`,
 							o = `${s}${oe.fbt._("y",null,{hk:"3DaEfY"})}`;
@@ -12089,7 +12089,7 @@
 							const t = e.getState();
 							e.dispatch(Object(d.sizeChanged)(h.a.EMBED));
 							const a = t.platform.currentPage;
-							a && a.meta && a.meta.name === o.Nb.CHAT_MINIMIZE && e.dispatch(Object(l.M)());
+							a && a.meta && a.meta.name === o.Ob.CHAT_MINIMIZE && e.dispatch(Object(l.M)());
 							const {
 								action: s,
 								noun: c,
@@ -12211,7 +12211,7 @@
 			const j = (e, t) => {
 				const n = t && t.type === o.SIZE_CHANGED ? t.payload : e.container.size,
 					a = n === p.a.MINIMIZED || n === p.a.HIDDEN,
-					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.Nb.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.Nb.CHAT_MINIMIZE;
+					s = t && t.type === l.a ? t.payload && t.payload.routeMatch && t.payload.routeMatch.route.meta.name === c.Ob.CHAT_MINIMIZE : e.platform.currentPage && e.platform.currentPage.meta && e.platform.currentPage.meta.name === c.Ob.CHAT_MINIMIZE;
 				return !a && s
 			};
 			t.a = e => {
@@ -12233,7 +12233,7 @@
 					})(a) : s()(() => e.dispatch(Object(d.k)()))
 				};
 				let a;
-				Object(v.a)(e.getState()) === c.Nb.CHAT_MINIMIZE ? s()(async () => {
+				Object(v.a)(e.getState()) === c.Ob.CHAT_MINIMIZE ? s()(async () => {
 					j(e.getState()) ? n() : (await e.dispatch(Object(d.k)(!1)), e.getState().sendbird.session.token && await e.dispatch(Object(i.c)()))
 				}) : n();
 				return i => g => {
@@ -12248,7 +12248,7 @@
 							const t = g.payload !== p.a.MINIMIZED && g.payload !== p.a.HIDDEN;
 							t && (clearTimeout(a), a = null), I && t && !y && n(), !y || g.payload !== p.a.HIDDEN && g.payload !== p.a.MINIMIZED || (a = setTimeout(() => {
 								e.dispatch(Object(h.f)())
-							}, 10 * c.kb));
+							}, 10 * c.lb));
 							break
 						}
 						case l.a: {
@@ -12310,7 +12310,7 @@
 				r = n("./src/chat/actions/channel.ts"),
 				o = n("./src/chat/actions/session.ts"),
 				i = n("./src/chat/helpers/errors.ts");
-			const l = 5 * c.kb;
+			const l = 5 * c.lb;
 			t.a = e => {
 				const t = s()(() => {
 					e.dispatch(Object(o.d)())
@@ -12472,8 +12472,8 @@
 				i = n("./src/lib/constants/index.ts");
 			let l, d;
 			const u = s()(e => {
-				Object(o.d)(l, e, 5 * i.kb)
-			}, 5 * i.Sb, {
+				Object(o.d)(l, e, 5 * i.lb)
+			}, 5 * i.Tb, {
 				leading: !1,
 				trailing: !0
 			});
@@ -12481,7 +12481,7 @@
 			const m = () => {
 				h && clearInterval(h), h = setInterval(() => {
 					void 0 === Object(o.b)(l) && Object(c.c)()
-				}, 5 * i.kb)
+				}, 5 * i.lb)
 			};
 			t.a = e => {
 				if ("undefined" == typeof window) return r.a;
@@ -12527,7 +12527,7 @@
 				s = n("./src/lib/makeApiRequest/index.ts");
 			const c = async e => Object(s.a)(e, {
 				endpoint: `${e.apiUrl}/api/v1/me`,
-				method: a.jb.GET,
+				method: a.kb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -12537,10 +12537,10 @@
 					raw_json: 1
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
-				method: a.jb.POST
+				method: a.kb.POST
 			}), o = async (e, t) => Object(s.a)(e, {
 				endpoint: `${e.apiUrl}/user/${t}/about`,
-				method: a.jb.GET,
+				method: a.kb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -12628,7 +12628,7 @@
 					return Boolean(null === (t = null == e ? void 0 : e.data) || void 0 === t ? void 0 : t.redditorsInfoByIds)
 				},
 				l = e => Object(s.a)(e, {
-					method: a.jb.GET,
+					method: a.kb.GET,
 					endpoint: `${e.apiUrl}/prefs/blocked.json`
 				}),
 				d = e => Object(c.a)(e, {
@@ -12713,7 +12713,7 @@
 					minute: "2-digit"
 				}).format,
 				o = e => {
-					const t = c - s.B,
+					const t = c - s.C,
 						n = new Date(c).setDate(1),
 						r = new Date(n).setMonth(0),
 						o = new Date(e);
@@ -12918,7 +12918,7 @@
 						className: n,
 						style: u
 					});
-					const h = (e => e.replace(l.Ib.Account + "_", ""))(i),
+					const h = (e => e.replace(l.Jb.Account + "_", ""))(i),
 						{
 							avatar: g,
 							color: f
@@ -13504,7 +13504,7 @@
 
 			function r(e) {
 				if (e.contact_account_id || e.id) return {
-					id: e.contact_account_id || `${a.Ib.Account}_${e.id}`,
+					id: e.contact_account_id || `${a.Jb.Account}_${e.id}`,
 					name: e.name,
 					created: 1e3 * e.created_utc,
 					profileImg: e.profile_img,
@@ -13521,7 +13521,7 @@
 					isNSFW: !1
 				},
 				i = e => ({
-					created: e.date * a.Sb,
+					created: e.date * a.Tb,
 					id: e.id,
 					name: e.name,
 					profileImg: e.icon_img
@@ -14289,7 +14289,7 @@
 			}));
 			var a = n("./src/lib/constants/index.ts"),
 				s = n("./src/lib/convertToCamelCase/index.ts");
-			const c = `${a.Ib.Account}_`,
+			const c = `${a.Jb.Account}_`,
 				r = e => {
 					if (null == e ? void 0 : e.length) return e.reduce((e, t) => {
 						const n = function(e) {
@@ -16151,7 +16151,7 @@
 						return e
 				}
 			};
-			const en = n("./src/lib/constants/index.ts").D;
+			const en = n("./src/lib/constants/index.ts").E;
 			var tn = Object(qt.a)((function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : en,
 					t = arguments.length > 1 ? arguments[1] : void 0;
@@ -16457,7 +16457,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT
+						name: s.Ob.CHAT
 					},
 					path: "/chat/"
 				},
@@ -16488,7 +16488,7 @@
 					component: l,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT_EMPTY
+						name: s.Ob.CHAT_EMPTY
 					},
 					path: "/chat/empty/"
 				},
@@ -16519,7 +16519,7 @@
 					component: u,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT_MINIMIZE
+						name: s.Ob.CHAT_MINIMIZE
 					},
 					path: "/chat/minimize/"
 				},
@@ -16530,7 +16530,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT
+						name: s.Ob.CHAT
 					},
 					path: m
 				},
@@ -16541,7 +16541,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT
+						name: s.Ob.CHAT
 					},
 					path: b
 				},
@@ -16551,7 +16551,7 @@
 					component: o,
 					exact: !0,
 					meta: {
-						name: s.Nb.CHAT
+						name: s.Ob.CHAT
 					},
 					path: ["/chat/share"]
 				};
@@ -16565,7 +16565,7 @@
 				chunk: a.s.CHAT,
 				exact: !0,
 				meta: {
-					name: a.Nb.CHAT
+					name: a.Ob.CHAT
 				},
 				path: "/chat/*"
 			};
@@ -16918,7 +16918,7 @@
 					e.onReconnectSucceeded = () => {
 						this.dispatch(Object(I.h)(t)), this.dispatch(Object(x.g)({
 							toast: T.a.ConnectionOpen
-						})), Object(d.setTimeout)(() => this.dispatch(Object(x.d)()), 3 * u.Sb);
+						})), Object(d.setTimeout)(() => this.dispatch(Object(x.d)()), 3 * u.Tb);
 						this.dispatch(Object(j.v)(!0)), this.dispatch(Object(m.C)())
 					}, this.self.addConnectionHandler("RECONNECT_SUCCEEDED", e), this.connectionUniqueHandlerID.push("RECONNECT_SUCCEEDED")
 				}
@@ -18384,4 +18384,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.535c7fc41e4f201eacf4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~RedesignChat.a6843860917053c82d9d.js.map

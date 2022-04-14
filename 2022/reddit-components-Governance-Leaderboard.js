@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.c526ca7903d2db79ee3c.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.dad6dd1b144d596923ef.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-Leaderboard"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, r) {
@@ -574,7 +574,7 @@
 				function(e, t) {
 					return Object(m.a)(e, {
 						endpoint: `${u.a.metaUrl}/ratings/${t.subredditId}/points-monthly`,
-						method: l.jb.GET
+						method: l.kb.GET
 					}).then(e => {
 						if (e.ok) {
 							let t = 0;
@@ -646,8 +646,8 @@
 				D = r.n(j),
 				x = r("./src/reddit/components/Badges/UserDisplay/index.tsx"),
 				R = r("./src/reddit/components/TrackingHelper/index.tsx"),
-				B = r("./src/reddit/featureFlags/index.ts"),
-				k = r("./src/reddit/helpers/governance/tokens.ts"),
+				k = r("./src/reddit/featureFlags/index.ts"),
+				B = r("./src/reddit/helpers/governance/tokens.ts"),
 				L = r("./src/reddit/selectors/telemetry.ts"),
 				M = r("./src/reddit/components/Governance/Leaderboard/EntryUser/index.m.less"),
 				U = r.n(M);
@@ -668,7 +668,7 @@
 			};
 			const G = Object(c.c)({
 				accountId: e => e.user.account ? e.user.account.id : void 0,
-				badgesEnabled: e => B.d.spBadges(e),
+				badgesEnabled: e => k.d.spBadges(e),
 				pointsDetails: (e, t) => {
 					let {
 						subredditId: r
@@ -706,7 +706,7 @@
 						className: U.a.rank
 					}, i.a.createElement("div", {
 						className: U.a.points
-					}, Object(S.a)(Object(k.b)(e.entry.score, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion))), i.a.createElement("div", {
+					}, Object(S.a)(Object(B.b)(e.entry.score, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion))), i.a.createElement("div", {
 						className: U.a.position
 					}, `#${Object(S.a)(e.entry.position.toString())}`)))
 				}))),
@@ -1610,7 +1610,7 @@
 			})), r.d(t, "k", (function() {
 				return R
 			})), r.d(t, "r", (function() {
-				return k
+				return B
 			})), r.d(t, "y", (function() {
 				return L
 			})), r.d(t, "u", (function() {
@@ -1794,7 +1794,7 @@
 					membershipAlt: "Supporter Membership"
 				},
 				R = (e, t) => Object.values(e.products.models).filter(e => e.type === a.a.Membership && t && e.subredditId === t),
-				B = (e, t) => {
+				k = (e, t) => {
 					if (!t) return {};
 					const r = x.prices;
 					R(e, t).forEach(e => {
@@ -1803,11 +1803,11 @@
 					const n = f(e, t);
 					return n && n.price && n.currency && (r[n.currency] = n.price), r
 				},
-				k = (e, t) => {
+				B = (e, t) => {
 					var r, n, s, o;
 					const i = (null === (o = null === (s = null === (n = null === (r = e.features) || void 0 === r ? void 0 : r.crypto) || void 0 === n ? void 0 : n.points) || void 0 === s ? void 0 : s[t || ""]) || void 0 === o ? void 0 : o.nomenclature) || x;
 					return {
-						prices: B(e, t),
+						prices: k(e, t),
 						member: i.member || x.member,
 						memberPlural: i.memberPlural || x.memberPlural,
 						memberAlt: i.memberAlt || x.memberAlt,
@@ -1873,4 +1873,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.c526ca7903d2db79ee3c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-Leaderboard.dad6dd1b144d596923ef.js.map

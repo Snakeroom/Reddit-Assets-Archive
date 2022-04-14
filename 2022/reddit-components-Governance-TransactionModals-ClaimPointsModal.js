@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.e1ca13c30b20e0793bea.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.72bc45e4485b858dfc7d.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -836,7 +836,7 @@
 			function o(e, t) {
 				return Object(a.a)(e, {
 					endpoint: `${s.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: r.jb.GET
+					method: r.kb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -858,7 +858,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${s.a.metaUrl}/wallets/${t.subredditId}`,
-					method: r.jb.POST,
+					method: r.kb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -1034,4 +1034,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.e1ca13c30b20e0793bea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.72bc45e4485b858dfc7d.js.map

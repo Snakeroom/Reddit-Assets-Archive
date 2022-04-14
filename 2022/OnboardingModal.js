@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.6ed136d32a26317c67f9.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.e5d53b6de20281180666.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -681,7 +681,7 @@
 						p = a.listings.postOrder.api.pending[l],
 						b = Object(oe.b)(a),
 						f = $.E in e.queryParams && e.queryParams[$.E].toUpperCase() || "",
-						h = f in d.hc && d.hc[f],
+						h = f in d.ic && d.ic[f],
 						g = H.e();
 					if (p || u && !m && !t) return void(u && (n(J.m({
 						title: b ? Object(U.a)(a, g) : g
@@ -738,7 +738,7 @@
 						m = Object(ue.a)(Y.b, l, u),
 						p = i.listings.postOrder.loadMore[m],
 						b = u[$.E] ? u[$.E].toUpperCase() : "",
-						f = b in d.hc && d.hc[b];
+						f = b in d.ic && d.ic[b];
 					if (p) {
 						const e = i.listings.postOrder.api.pending[m],
 							r = i.listings.postOrder.fetchedTokens,
@@ -801,7 +801,7 @@
 						a = r.platform.currentPage ? r.platform.currentPage.queryParams : {},
 						i = Object(ue.a)(Y.b, o, a),
 						c = a[$.E] ? a[$.E].toUpperCase() : "",
-						l = c in d.hc && d.hc[c],
+						l = c in d.ic && d.ic[c],
 						u = Object(ne.a)(r),
 						m = Object(ne.b)(u);
 					await t(ye(i, {
@@ -1135,7 +1135,7 @@
 											let r;
 											(r = e.keyCode === S.h.ArrowUp || e.keyCode === S.h.ArrowLeft ? i.current[t ? t - 1 : n] : i.current[t === n ? 0 : t + 1]) && m(r)
 										}
-										e.keyCode === S.J && (null === (n = i.current[t]) || void 0 === n || n.focus())
+										e.keyCode === S.K && (null === (n = i.current[t]) || void 0 === n || n.focus())
 									}
 								})(e, r),
 								placeholder: e.displayText,
@@ -4161,4 +4161,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.6ed136d32a26317c67f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.e5d53b6de20281180666.js.map

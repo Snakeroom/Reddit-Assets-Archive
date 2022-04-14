@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.603f4d692b251c15ea28.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.935d10cb0e2a45a2a82e.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, t, r) {
@@ -11,7 +11,7 @@
 			})), r.d(t, "d", (function() {
 				return O
 			})), r.d(t, "a", (function() {
-				return j
+				return k
 			}));
 			var n = r("./src/lib/constants/index.ts"),
 				a = r("./src/lib/makeApiRequest/index.ts"),
@@ -78,7 +78,7 @@
 						s = d && "undefined" != typeof window ? `${window.location.origin}${o}` : `${t.apiUrl}${o}`,
 						p = Object(u.a)(s);
 					return Object(a.a)(Object(i.a)(t, [c.a]), {
-						method: n.jb.GET,
+						method: n.kb.GET,
 						endpoint: p,
 						data: {
 							correlation_id: r
@@ -113,7 +113,7 @@
 				const o = `${t.apiUrl}/api/v2/gold/recommended_coin_package_details`,
 					s = Object(u.a)(o);
 				return Object(a.a)(Object(i.a)(t, [c.a]), {
-					method: n.jb.GET,
+					method: n.kb.GET,
 					endpoint: s,
 					data: {
 						correlation_id: d,
@@ -136,7 +136,7 @@
 			const O = e => Object(d.a)(e, {
 					...s
 				}),
-				j = e => Object(d.a)(e, {
+				k = e => Object(d.a)(e, {
 					...o,
 					variables: {
 						input: {
@@ -208,7 +208,7 @@
 						b = `${r.apiUrl}/api/v2/gold/stripe/buy_coins`,
 						h = Object(c.a)(b);
 					return Object(a.a)(Object(i.a)(r, [s.a]), {
-						method: n.jb.POST,
+						method: n.kb.POST,
 						endpoint: h,
 						data: m
 					}).then(p)
@@ -242,10 +242,10 @@
 						remember_card: g,
 						card_id: h,
 						correlation_id: d
-					}, j = `${r.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, x = u ? j : Object(c.a)(j);
+					}, k = `${r.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, j = u ? k : Object(c.a)(k);
 					return Object(a.a)(Object(i.a)(r, [s.a]), {
-						method: n.jb.POST,
-						endpoint: x,
+						method: n.kb.POST,
+						endpoint: j,
 						data: O
 					}).then(p)
 				}, m = async e => {
@@ -276,7 +276,7 @@
 						correlation_id: r
 					}, P = `${t.apiUrl}/api/v2/gold/stripe/buy_award`, O = o ? P : Object(c.a)(P);
 					return Object(a.a)(Object(i.a)(t, [s.a]), {
-						method: n.jb.POST,
+						method: n.kb.POST,
 						endpoint: O,
 						data: y
 					}).then(p)
@@ -295,7 +295,7 @@
 						l = `${t.apiUrl}/api/v2/gold/stripe/buy_premium_subscription`,
 						f = Object(c.a)(l);
 					return Object(a.a)(Object(i.a)(t, [s.a]), {
-						method: n.jb.POST,
+						method: n.kb.POST,
 						endpoint: f,
 						data: u
 					}).then(p)
@@ -318,7 +318,7 @@
 						card_id: t
 					};
 					return Object(a.a)(Object(i.a)(e, [s.a]), {
-						method: n.jb.POST,
+						method: n.kb.POST,
 						endpoint: `${e.apiUrl}/api/v2/gold/stripe/delete_creditcard`,
 						data: r
 					}).then(e => e.ok ? {
@@ -328,7 +328,7 @@
 						error: Object(l.a)(e)
 					})
 				}, P = async e => Object(a.a)(Object(i.a)(e, [s.a]), {
-					method: n.jb.GET,
+					method: n.kb.GET,
 					endpoint: `${e.apiUrl}/api/v2/gold/stripe/creditcards`
 				}).then(e => e.ok ? {
 					...e
@@ -342,7 +342,7 @@
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				a = r("./src/lib/constants/index.ts");
 			t.a = () => ({
-				type: a.I.SERVER_ERROR,
+				type: a.J.SERVER_ERROR,
 				fields: [{
 					field: "",
 					msg: n.fbt._("Something went wrong.", null, {
@@ -386,11 +386,11 @@
 			})), r.d(t, "v", (function() {
 				return O
 			})), r.d(t, "y", (function() {
-				return j
-			})), r.d(t, "f", (function() {
-				return x
-			})), r.d(t, "g", (function() {
 				return k
+			})), r.d(t, "f", (function() {
+				return j
+			})), r.d(t, "g", (function() {
+				return x
 			})), r.d(t, "i", (function() {
 				return v
 			})), r.d(t, "k", (function() {
@@ -432,9 +432,9 @@
 				y = e => e.features.goldPurchase.payment.savedCardsPending,
 				P = e => e.features.goldPurchase.payment.savedCards,
 				O = e => e.features.goldPurchase.payment.rememberCard,
-				j = e => e.features.goldPurchase.payment.useSavedCard,
-				x = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
-				k = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
+				k = e => e.features.goldPurchase.payment.useSavedCard,
+				j = e => e.features.goldPurchase.payment.cardValidation.cardCvc,
+				x = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
 				v = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
 				w = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
 				C = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
@@ -453,4 +453,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.603f4d692b251c15ea28.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.935d10cb0e2a45a2a82e.js.map

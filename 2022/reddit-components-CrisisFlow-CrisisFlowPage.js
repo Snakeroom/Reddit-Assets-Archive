@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.c37224accc72673b1584.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.b5136747d69cda555959.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CrisisFlow-CrisisFlowPage"], {
 		"./src/reddit/actions/reportFlow/index.ts": function(e, s, t) {
@@ -80,8 +80,8 @@
 				f = t.n(_);
 			const {
 				fbt: b
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), v = g.a.div("CrisisContent", f.a), k = g.a.div("CrisisImageContainer", x.a), E = g.a.img("CrisisImage", f.a), L = g.a.h2("CrisisTitle", x.a), R = g.a.p("CrisisDescription", x.a);
-			var T = e => n.a.createElement(v, null, n.a.createElement(k, null, n.a.createElement(E, {
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), k = g.a.div("CrisisContent", f.a), v = g.a.div("CrisisImageContainer", x.a), E = g.a.img("CrisisImage", f.a), L = g.a.h2("CrisisTitle", x.a), R = g.a.p("CrisisDescription", x.a);
+			var T = e => n.a.createElement(k, null, n.a.createElement(v, null, n.a.createElement(E, {
 					src: `${h.a.assetPath}/img/crisis-line-icon.png`
 				})), n.a.createElement(L, null, b._("Would you like Reddit to reach out to {username} ?", [b._param("username", n.a.createElement("span", null, "u/", e.username))], {
 					hk: "3RFVlj"
@@ -320,7 +320,7 @@
 				e.Rule = "rule", e.SiteRule = "siteRule", e.Other = "other", e.FileComplaint = "fileComplaint", e.CrisisTextLine = "crisisTextLine"
 			}(m || (m = {}));
 			const p = (e, s) => Object(n.a)(Object(o.a)(e, [a.a]), {
-					method: i.jb.POST,
+					method: i.kb.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
 					data: C(s)
 				}),
@@ -353,7 +353,7 @@
 					}
 				},
 				h = (e, s, t) => Object(n.a)(Object(o.a)(e, [a.a]), {
-					method: i.jb.POST,
+					method: i.kb.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
 					data: g(s, t)
 				}),
@@ -437,11 +437,11 @@
 							}
 						}
 					const {
-						reason: v
+						reason: k
 					} = e;
 					return {
 						reason: "site_reason_selected",
-						site_reason: v.reasonText,
+						site_reason: k.reasonText,
 						additional_info: e.additionalInfo ? e.additionalInfo.join(",") : void 0,
 						custom_text: e.customText,
 						modmail_conv_id: g,
@@ -574,4 +574,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.c37224accc72673b1584.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CrisisFlow-CrisisFlowPage.b5136747d69cda555959.js.map

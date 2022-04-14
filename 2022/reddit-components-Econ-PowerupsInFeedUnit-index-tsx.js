@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.9453ae25a1831fd0f2e1.js
-// Retrieved at 4/13/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1fb04a2c9013efc2b95b.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -43,7 +43,7 @@
 					const f = Object(_.b)(r()),
 						h = await (async (e, t, a, s, r) => Object(c.a)(Object(d.a)(e, [l.a]), {
 							endpoint: `${n.a.snoovatarUrl}/api/snoovatar?skip_telemetry=true`,
-							method: i.jb.POST,
+							method: i.kb.POST,
 							headers: {
 								"Content-Type": "application/json ",
 								"X-CSRF-Token": r || ""
@@ -66,7 +66,7 @@
 					try {
 						const t = await (async e => Object(c.a)(Object(d.a)(e, [l.a]), {
 							endpoint: `${n.a.snoovatarUrl}/api/account`,
-							method: i.jb.GET
+							method: i.kb.GET
 						}))(s());
 						t.ok && e(b(t.body))
 					} catch (r) {
@@ -79,7 +79,7 @@
 					try {
 						const t = await (async e => Object(c.a)(Object(d.a)(e, [l.a]), {
 							endpoint: `${n.a.snoovatarUrl}/api/snoovatars/random:byId`,
-							method: i.jb.GET
+							method: i.kb.GET
 						}))(s());
 						t.ok && e(E(t.body))
 					} catch (r) {
@@ -336,8 +336,8 @@
 				I = a("./src/reddit/components/Econ/PowerupsInFeedUnit/PostUnlock/CommunityGearUnit.m.less"),
 				P = a.n(I),
 				U = a("./src/higherOrderComponents/asModal/index.tsx"),
-				j = a("./src/lib/opener/index.ts"),
-				k = a("./src/reddit/actions/snoovatar.ts"),
+				k = a("./src/lib/opener/index.ts"),
+				j = a("./src/reddit/actions/snoovatar.ts"),
 				A = a("./src/reddit/actions/toaster.ts"),
 				M = a("./src/reddit/actions/urlRequested.ts"),
 				T = a("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
@@ -363,7 +363,7 @@
 					c = Object(n.e)(q.a),
 					[u, _] = Object(r.useState)(!1);
 				Object(r.useEffect)(() => {
-					s(Object(d.o)()), i(Object(k.c)())
+					s(Object(d.o)()), i(Object(j.c)())
 				}, [i, s]);
 				const p = async () => i(Object(M.a)("/user/me", !0)), m = H._("Nice! Ready to update your avatar?", null, {
 					hk: "20KFjx"
@@ -389,9 +389,9 @@
 					className: G.a.legalTextContainer
 				}, o.a.createElement("span", null, b()), o.a.createElement("a", {
 					href: f,
-					target: j.d.BLANK,
+					target: k.d.BLANK,
 					className: G.a.learnMoreLink,
-					rel: j.c
+					rel: k.c
 				}, E()))), o.a.createElement("div", {
 					className: G.a.buttonsRow
 				}, o.a.createElement(x.t, {
@@ -411,7 +411,7 @@
 							n = Object(R.a)(o, [B.d[t]]).map(e => e.id);
 						try {
 							_(!0), s(Object(F.e)("powerups_post_upsell"));
-							const e = await i(Object(k.e)(n, r, {
+							const e = await i(Object(j.e)(n, r, {
 								set_avatar_to_profile: !0,
 								source: "powerups_post_upsell"
 							}));
@@ -708,9 +708,9 @@
 			})), a.d(t, "u", (function() {
 				return U
 			})), a.d(t, "r", (function() {
-				return j
-			})), a.d(t, "a", (function() {
 				return k
+			})), a.d(t, "a", (function() {
+				return j
 			})), a.d(t, "s", (function() {
 				return A
 			})), a.d(t, "c", (function() {
@@ -752,8 +752,8 @@
 				I = r.a.div("ModalMain", u.a),
 				P = r.a.textarea("TextArea", u.a),
 				U = r.a.wrapped(i.l, "WarningButton", u.a),
-				j = r.a.wrapped(i.l, "PrimaryButton", u.a),
-				k = r.a.wrapped(i.o, "CancelButton", u.a),
+				k = r.a.wrapped(i.l, "PrimaryButton", u.a),
+				j = r.a.wrapped(i.o, "CancelButton", u.a),
 				A = r.a.wrapped(i.r, "RemoveButton", u.a),
 				M = e => {
 					let {
@@ -1381,4 +1381,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.9453ae25a1831fd0f2e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1fb04a2c9013efc2b95b.js.map

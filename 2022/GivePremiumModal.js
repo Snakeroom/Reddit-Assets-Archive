@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.444b57d204ad7dcc788a.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.cb48ce691a3a1a0cc9c0.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -66,8 +66,8 @@
 				b = n("./src/lib/constants/index.ts"),
 				x = n("./src/lib/makeActionCreator/index.ts"),
 				f = n("./src/reddit/actions/toaster.ts"),
-				g = n("./src/lib/makeApiRequest/index.ts"),
-				k = n("./src/lib/omitHeaders/index.ts"),
+				k = n("./src/lib/makeApiRequest/index.ts"),
+				g = n("./src/lib/omitHeaders/index.ts"),
 				v = n("./src/reddit/constants/headers.ts"),
 				C = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			var E = async (e, t, n, s, o, a) => {
@@ -78,8 +78,8 @@
 					message: o,
 					correlation_id: a
 				};
-				return Object(g.a)(Object(k.a)(e, [v.a]), {
-					method: b.jb.POST,
+				return Object(k.a)(Object(g.a)(e, [v.a]), {
+					method: b.kb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: i
 				}).then(e => e.ok ? {
@@ -88,21 +88,21 @@
 					...e,
 					error: Object(C.a)(e)
 				})
-			}, O = n("./src/reddit/helpers/correlationIdTracker.ts"), I = n("./src/reddit/models/Toast/index.ts"), _ = n("./src/reddit/selectors/premium.ts"), y = n("./src/reddit/actions/gold/constants.ts");
-			Object(x.a)(y.y), Object(x.a)(y.A), Object(x.a)(y.z), Object(x.a)(y.C);
-			const w = Object(x.a)(y.x),
-				N = Object(x.a)(y.w),
+			}, O = n("./src/reddit/helpers/correlationIdTracker.ts"), _ = n("./src/reddit/models/Toast/index.ts"), y = n("./src/reddit/selectors/premium.ts"), w = n("./src/reddit/actions/gold/constants.ts");
+			Object(x.a)(w.y), Object(x.a)(w.A), Object(x.a)(w.z), Object(x.a)(w.C);
+			const I = Object(x.a)(w.x),
+				N = Object(x.a)(w.w),
 				j = e => async (t, n) => {
 					await t(N(e));
-					const o = Object(_.a)(n());
+					const o = Object(y.a)(n());
 					if (o) {
 						const n = ((e, t) => {
 							switch (!0) {
-								case e && e.error && e.error.type && e.error.type === b.I.AUTHENTICATION_ERROR:
+								case e && e.error && e.error.type && e.error.type === b.J.AUTHENTICATION_ERROR:
 									return s.fbt._("There was an authentication error", null, {
 										hk: "12YR0w"
 									});
-								case e && e.error && e.error.type && e.error.type === b.I.INVALID_PREMIUM_AMOUNT:
+								case e && e.error && e.error.type && e.error.type === b.J.INVALID_PREMIUM_AMOUNT:
 									return s.fbt._("That Premium gift amount is invalid.", null, {
 										hk: "3XzSbH"
 									});
@@ -111,20 +111,20 @@
 							}
 						})(e, o);
 						t(Object(f.f)({
-							kind: I.b.Error,
+							kind: _.b.Error,
 							duration: f.a,
 							text: n
 						}))
 					}
-				}, S = Object(x.a)(y.B), M = e => async (t, n) => {
+				}, S = Object(x.a)(w.B), M = e => async (t, n) => {
 					const o = n(),
-						a = Object(_.d)(o);
+						a = Object(y.d)(o);
 					t(S(e));
 					const i = s.fbt._("Success! You’ve given Premium to {recipient username}!", [s.fbt._param("recipient username", `u/${a}`)], {
 						hk: "3cBrLk"
 					});
 					t(Object(f.f)({
-						kind: I.b.SuccessCommunity,
+						kind: _.b.SuccessCommunity,
 						text: i
 					}))
 				};
@@ -148,21 +148,21 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const W = 10,
-				H = Object(c.c)({
+			const J = 10,
+				W = Object(c.c)({
 					coinBalance: F.e,
 					isEmployee: F.N,
-					isPending: _.b,
-					recipientName: _.d
+					isPending: y.b,
+					recipientName: y.d
 				}),
-				X = Object(i.b)(H, e => ({
+				H = Object(i.b)(W, e => ({
 					closeModal: () => e(Object(D.b)()),
 					onGivePremium: (t, n, s, o, a) => {
 						e(((e, t, n, s) => async (o, a, i) => {
 							let {
 								apiContext: c
 							} = i;
-							o(w());
+							o(I());
 							try {
 								const a = await E(c(), t, e, n, s, Object(O.c)(O.a.GiftPremiumFlow));
 								if (a.error) await o(j(a));
@@ -176,7 +176,7 @@
 						})(t, n, s, o ? a : ""))
 					}
 				}));
-			class V extends a.a.PureComponent {
+			class X extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						includeMessage: !1,
@@ -340,14 +340,14 @@
 						onClick: this.onGivePremium
 					}, n ? a.a.createElement(A.a, {
 						className: l.a.loadingIcon,
-						sizePx: W
+						sizePx: J
 					}) : s.fbt._("Confirm", null, {
 						hk: "2nHzsu"
 					}))))))
 				}
 			}
-			const z = Object(d.a)(Object(u.c)(V));
-			t.default = X(e => a.a.createElement(z, G({}, e, {
+			const V = Object(d.a)(Object(u.c)(X));
+			t.default = H(e => a.a.createElement(V, G({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeModal
 			})))
@@ -700,23 +700,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case s.I.NO_STRIPE_SUBSCRIPTION:
-							case s.I.USER_DOESNT_EXIST:
-							case s.I.USER_REQUIRED_ERROR:
-							case s.I.VALIDATION_ERROR:
+							case s.J.NO_STRIPE_SUBSCRIPTION:
+							case s.J.USER_DOESNT_EXIST:
+							case s.J.USER_REQUIRED_ERROR:
+							case s.J.VALIDATION_ERROR:
 								return e;
-							case s.I.NO_USER:
-							case s.I.NO_TEXT:
-							case s.I.NO_URL:
-								return s.I.VALIDATION_ERROR;
-							case s.I.CREDIT_CARD_FAILURE:
-							case s.I.CREDIT_CARD_FAILURE_GENERIC:
-								return s.I.CREDIT_CARD_FAILURE;
+							case s.J.NO_USER:
+							case s.J.NO_TEXT:
+							case s.J.NO_URL:
+								return s.J.VALIDATION_ERROR;
+							case s.J.CREDIT_CARD_FAILURE:
+							case s.J.CREDIT_CARD_FAILURE_GENERIC:
+								return s.J.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return s.I.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return s.J.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return s.I.VALIDATION_ERROR
+					return s.J.VALIDATION_ERROR
 				},
 				a = e => {
 					const t = e.body;
@@ -861,4 +861,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.444b57d204ad7dcc788a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.cb48ce691a3a1a0cc9c0.js.map

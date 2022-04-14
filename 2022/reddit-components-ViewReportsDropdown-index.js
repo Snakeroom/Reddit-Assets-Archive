@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.8d364d6d3484cce03320.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.88f719afc8825fa1e78a.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, o) {
@@ -172,7 +172,7 @@
 						commentId: e
 					});
 					if (!l) return;
-					const p = o === n.dc.Snoozed,
+					const p = o === n.ec.Snoozed,
 						g = {
 							itemId: e,
 							reportText: t,
@@ -206,8 +206,8 @@
 					if (s(Object(R.i)({
 							[e]: {
 								distinguishType: t,
-								isAdmin: t === n.G.ADMIN,
-								isMod: t === n.G.MODERATOR,
+								isAdmin: t === n.H.ADMIN,
+								isMod: t === n.H.MODERATOR,
 								isStickied: !!o
 							}
 						})), o && b && b !== e && s(Object(R.i)({
@@ -312,7 +312,7 @@
 			class y extends n.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? c.dc.None : c.dc.Snoozed;
+						const e = this.props.isSnoozed ? c.ec.None : c.ec.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(h.l)(Object(g.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -552,4 +552,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.8d364d6d3484cce03320.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.88f719afc8825fa1e78a.js.map

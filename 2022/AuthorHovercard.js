@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.d53c508184b3f2ce2e98.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.1ed2b14f6b9b0132ad4f.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -56,9 +56,9 @@
 					showDay: t,
 					useUtc: n,
 					shortMonths: s,
-					locale: o = a.D
+					locale: o = a.E
 				} = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-				const i = new Date(e * a.Sb);
+				const i = new Date(e * a.Tb);
 				return r.a ? new Intl.DateTimeFormat(o, {
 					month: s ? "short" : "long",
 					day: t ? "numeric" : void 0,
@@ -71,7 +71,7 @@
 			"use strict";
 			var a = n("./src/lib/constants/index.ts");
 			t.a = function(e) {
-				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a.D;
+				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a.E;
 				const n = e.toString().length > 10,
 					r = new Date(e * (n ? 1 : 1e3));
 				return r.toLocaleString(t, {
@@ -155,7 +155,7 @@
 				v = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const x = (e, t, n) => Object(b.a)(Object(p.a)(e, [f.a]), {
 				endpoint: Object(h.a)(Object(v.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
-				method: u.jb.GET,
+				method: u.kb.GET,
 				data: n
 			});
 			var I = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -446,7 +446,7 @@
 					t.username = Object(I.a)(t.username), r(Object(i.h)(n));
 					const g = await ((e, t, n) => Object(b.a)(Object(p.a)(e, [f.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
-						method: u.jb.POST,
+						method: u.kb.POST,
 						data: {
 							api_type: "json",
 							ban_reason: n.reason,
@@ -489,7 +489,7 @@
 					const d = r().subreddits.models[e].url,
 						c = await ((e, t, n) => Object(b.a)(Object(p.a)(e, [f.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
-							method: u.jb.POST,
+							method: u.kb.POST,
 							data: {
 								api_type: "json",
 								id: n,
@@ -562,7 +562,7 @@
 				m = n("./src/reddit/helpers/addRedesignIdentifier/index.ts");
 			const u = (e, t, n) => Object(d.a)(Object(c.a)(e, [l.a]), {
 				endpoint: Object(m.a)(`${e.apiUrl}/api/v1/${t}/muted`),
-				method: i.jb.GET,
+				method: i.kb.GET,
 				data: n
 			});
 			var b = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -620,7 +620,7 @@
 					const u = r().subreddits.models[e].url,
 						b = await ((e, t, n) => Object(d.a)(Object(c.a)(e, [l.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
-							method: i.jb.POST,
+							method: i.kb.POST,
 							data: {
 								api_type: "json",
 								id: n,
@@ -651,7 +651,7 @@
 					t = Object(b.a)(t);
 					const g = await ((e, t, n, a) => Object(d.a)(Object(c.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
-						method: i.jb.POST,
+						method: i.kb.POST,
 						data: {
 							api_type: "json",
 							name: n,
@@ -2313,7 +2313,7 @@
 						className: me.a.content
 					}, r.a.createElement("h6", {
 						className: me.a.title
-					}, de.Lb)));
+					}, de.Mb)));
 					const m = n ? n.permalink : a ? a.permalink : void 0,
 						u = (null == n ? void 0 : n.title) || (null === (i = null === (o = a) || void 0 === o ? void 0 : o.content) || void 0 === i ? void 0 : i.markdown),
 						b = n ? n.score || 0 : a && a.score || 0,
@@ -3519,8 +3519,8 @@
 					const a = Object(o.a)(),
 						s = null != n ? n : a;
 					return r.a.createElement(r.a.Fragment, null, function(e) {
-						let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.D;
-						const n = e * l.Sb;
+						let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.E;
+						const n = e * l.Tb;
 						return new Date(n).toLocaleString(t, {
 							weekday: "short",
 							month: "short",
@@ -3537,7 +3537,7 @@
 				b = n("./src/lib/eventTools/index.ts");
 
 			function p(e) {
-				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.D;
+				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.E;
 				return e.toLocaleDateString(t, {
 					month: "numeric",
 					day: "numeric"
@@ -3546,9 +3546,9 @@
 
 			function f(e, t) {
 				let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
-					a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : l.D;
+					a = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : l.E;
 				const r = Object(b.e)(e, t),
-					s = new Date(e * l.Sb);
+					s = new Date(e * l.Tb);
 				let o;
 				if (r === b.a.Live || n) return u.fbt._("Now", null, {
 					hk: "Prpcg"
@@ -3556,13 +3556,13 @@
 				return r === b.a.Future ? o = Object(b.d)(e) ? u.fbt._("Today", null, {
 					hk: "1sZpnp"
 				}).toString() : Object(b.b)(e) >= 5 ? p(s, a) : function(e) {
-					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.D;
+					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : l.E;
 					return e.toLocaleDateString(t, {
 						weekday: "long"
 					})
 				}(s, a) : r === b.a.Past && (o = Object(b.d)(e) ? u.fbt._("Today", null, {
 					hk: "1sZpnp"
-				}).toString() : p(s, a)), `${o} @ ${function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:l.D;return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(s,a)}`
+				}).toString() : p(s, a)), `${o} @ ${function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:l.E;return e.toLocaleTimeString(t,{hour12:!0,hour:"numeric",minute:"2-digit"}).replace(/ /g,"").toUpperCase()}(s,a)}`
 			}
 			var h = function(e) {
 				let {
@@ -4877,25 +4877,25 @@
 					isLoggedOut: n
 				} = e;
 				switch (t.type) {
-					case r.I.AUTHORIZATION_ERROR:
+					case r.J.AUTHORIZATION_ERROR:
 						return n ? a.fbt._("You might need to be logged in to do that.", null, {
 							hk: "1313fG"
 						}) : a.fbt._("It looks like you aren't allowed to do that.", null, {
 							hk: "5tQod"
 						});
-					case r.I.VALIDATION_ERROR:
+					case r.J.VALIDATION_ERROR:
 						return a.fbt._("We weren't able to handle your request.", null, {
 							hk: "4umMwv"
 						});
-					case r.I.NOT_FOUND_ERROR:
+					case r.J.NOT_FOUND_ERROR:
 						return a.fbt._("Sorry, there doesn't seem to be anything here.", null, {
 							hk: "2UmS4e"
 						});
-					case r.I.SERVER_ERROR:
+					case r.J.SERVER_ERROR:
 						return a.fbt._("Sorry, for some reason reddit can't be reached.", null, {
 							hk: "1Sxl7y"
 						});
-					case r.I.LIKELY_UBLOCK_ERROR:
+					case r.J.LIKELY_UBLOCK_ERROR:
 						return a.fbt._("It looks like one or more software blocking extensions you are using may be interfering with Reddit's ability to serve you content. Please try disabling them or changing the rules you use.", null, {
 							hk: "6Gh68"
 						});
@@ -5362,11 +5362,11 @@
 						s = Object(d.d)(e);
 					if ("undefined" != typeof window && !s) {
 						const e = Object(i.a)("subreddit", window.location.href);
-						(s = null === (t = null == e ? void 0 : e.components) || void 0 === t ? void 0 : t.subredditName) && (a = r.Nb.SUBREDDIT)
+						(s = null === (t = null == e ? void 0 : e.components) || void 0 === t ? void 0 : t.subredditName) && (a = r.Ob.SUBREDDIT)
 					}
 					if (s && n) {
 						const e = (null == s ? void 0 : s.toLocaleLowerCase()) === n;
-						return a === r.Nb.SUBREDDIT && e
+						return a === r.Ob.SUBREDDIT && e
 					}
 					return !1
 				},
@@ -5495,4 +5495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.d53c508184b3f2ce2e98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.1ed2b14f6b9b0132ad4f.js.map

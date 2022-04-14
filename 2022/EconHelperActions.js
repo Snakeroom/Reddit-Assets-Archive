@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconHelperActions.47fc3ffc5a64104486f7.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconHelperActions.53a23e3e1e461be5ef36.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconHelperActions"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, r) {
@@ -660,7 +660,7 @@
 						const t = `https://${o.pointsDocsBaseUrl}v1.json?web`,
 							r = await Object(s.b)({
 								endpoint: t,
-								method: n.jb.GET
+								method: n.kb.GET
 							});
 						r.ok && r.body && e(l(r.body))
 					}
@@ -1342,7 +1342,7 @@
 			function d(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${n.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: s.jb.GET
+					method: s.kb.GET
 				})
 			}
 		},
@@ -1413,7 +1413,7 @@
 			function d(e, t) {
 				return Object(o.a)(e, {
 					endpoint: `${n.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: s.jb.GET
+					method: s.kb.GET
 				}).then(e => {
 					if (e.ok) {
 						const r = e.body,
@@ -1435,7 +1435,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${n.a.metaUrl}/wallets/${t.subredditId}`,
-					method: s.jb.POST,
+					method: s.kb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -1975,9 +1975,9 @@
 			})), r.d(t, "u", (function() {
 				return U
 			})), r.d(t, "v", (function() {
-				return L
-			})), r.d(t, "b", (function() {
 				return k
+			})), r.d(t, "b", (function() {
+				return L
 			})), r.d(t, "w", (function() {
 				return F
 			})), r.d(t, "s", (function() {
@@ -2183,11 +2183,11 @@
 					const r = e.user.ownedBadges[t] || {};
 					return !!Object.keys(r).length
 				},
-				L = e => {
+				k = e => {
 					const t = e.economics.paymentSystems;
 					return t.status === u.a.Fetched && !!t.data && !!t.data.stripe && !!t.data.stripe.stripeAccountId
 				},
-				k = (e, t) => {
+				L = (e, t) => {
 					let {
 						subredditId: r
 					} = t;
@@ -2264,4 +2264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.47fc3ffc5a64104486f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconHelperActions.53a23e3e1e461be5ef36.js.map

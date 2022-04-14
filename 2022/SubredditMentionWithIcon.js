@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.c477bc7a7480f72cf0b4.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.cf7ed233820710816c67.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -718,7 +718,7 @@
 						this.props.showTooltip(e), this.props.sendEvent(Object($.f)(this.props.subredditName)), this.props.postIds.map(e => this.props.sendEvent(Object($.g)(this.props.subredditName, e)))
 					}, this.onClickPost = e => {
 						this.props.sendEvent(Object($.b)(this.props.subredditName, e))
-					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), u.K), this.loadSubredditData = () => {
+					}, this.handleScroll = i()(() => this.loadSubredditData && this.loadSubredditData(), u.L), this.loadSubredditData = () => {
 						const {
 							subreddit: e,
 							subredditAboutInfo: t,
@@ -785,7 +785,7 @@
 					if (!r || !a || Object(S.k)(r)) return this.renderDefault();
 					const {
 						uniqueId: d
-					} = this.state, l = Object(b.a)(this.props.subredditName, u.W.TOP), m = r.isNSFW && e || r.type === S.f.EmployeesOnly && !t || r.type === S.f.Private && !a.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
+					} = this.state, l = Object(b.a)(this.props.subredditName, u.X.TOP), m = r.isNSFW && e || r.type === S.f.EmployeesOnly && !t || r.type === S.f.Private && !a.userIsSubscriber, p = m || r.isQuarantined || r.isNSFW;
 					return o.a.createElement("span", {
 						className: ne.a.subredditMentionContainer,
 						onMouseEnter: this.onShowTooltip,
@@ -1868,4 +1868,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.c477bc7a7480f72cf0b4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.cf7ed233820710816c67.js.map

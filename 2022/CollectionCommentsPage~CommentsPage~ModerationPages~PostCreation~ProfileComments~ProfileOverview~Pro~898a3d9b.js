@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.66dffd7e56b25ecd26d8.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.20c585d6745413c42bbc.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -106,7 +106,7 @@
 				M = O.a.div("ThumbnailContainer", g.a),
 				R = Object(c.c)({
 					isCurrentUserProfilePost: E.l,
-					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Nb.TOPIC),
+					isTopicPage: e => !(!e.platform.currentPage || !e.platform.currentPage.meta || e.platform.currentPage.meta.name !== x.Ob.TOPIC),
 					shouldOpenPostInNewTab: v.jb
 				}),
 				B = Object(i.b)(R);
@@ -915,7 +915,7 @@
 					ie = U("Pinned", V.id, X);
 				return o.a.createElement("div", {
 					className: t
-				}, u && s && V.distinguishType === l.G.MODERATOR && o.a.createElement(r.Fragment, null, o.a.createElement(_.a, {
+				}, u && s && V.distinguishType === l.H.MODERATOR && o.a.createElement(r.Fragment, null, o.a.createElement(_.a, {
 					name: "mod",
 					isFilled: !0,
 					className: Object(d.a)(w.a.icon, w.a.modIcon)
@@ -2943,4 +2943,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.66dffd7e56b25ecd26d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.20c585d6745413c42bbc.js.map

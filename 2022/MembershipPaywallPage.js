@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.23d08b875498a910b93e.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.aacce9c824fd4a9136f2.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1939,7 +1939,7 @@
 					},
 					u = g()(() => {
 						d(), o = window.setTimeout(l, n)
-					}, p.K);
+					}, p.L);
 				return {
 					cleanup: l,
 					eventHandler: e => {
@@ -2043,7 +2043,7 @@
 				H = s("./src/reddit/components/Scroller/Simple.m.less"),
 				V = s.n(H);
 			const D = R.g,
-				W = 5 * p.K,
+				W = 5 * p.L,
 				G = 3,
 				U = Object(u.c)({
 					isOverlayOpen: F.i
@@ -2068,10 +2068,10 @@
 				$ = 1.8,
 				ee = 5,
 				te = 1500,
-				se = 2 * p.K,
+				se = 2 * p.L,
 				ne = 400,
 				ie = 8,
-				re = 5 * p.K,
+				re = 5 * p.L,
 				ae = 30,
 				oe = "object" == typeof performance && "function" == typeof performance.now,
 				ce = () => oe ? performance.now() : Date.now();
@@ -2168,7 +2168,7 @@
 						clearTimeout(this.updateRenderableChildrenWhenIdleHandle), Object(m.cancelIdleCallback)(this.requestUpdateWhenIdleCallbackHandle)
 					}, this.callOnScrollForItemsChanged = i()(() => {
 						this.handleScroll()
-					}, p.K), this.pauseAllElements = () => {
+					}, p.L), this.pauseAllElements = () => {
 						const e = this.getItemsInViewportWithFilter(this.loadedChildRefFilter),
 							t = [];
 						e.forEach(e => {
@@ -2190,7 +2190,7 @@
 						const t = this.getChildRectangle(e);
 						return t && this.elementIsVisible(t) || !1
 					}, this.loadedChildRefFilter = e => e.loaded, this.resetScrollFramerateAndFocus = () => {
-						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(m.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, p.K))
+						this.scrollContainer && (this.pixelsPerMSRing.clear(), this.lastScrollTime = -1, this.needsToPauseViewportItems = !0, null === this.unmountItemsIdleId && (this.unmountItemsIdleId = Object(m.requestIdleCallback)(this.unmountItemsWhileIdle)), setTimeout(this.handleScroll, p.L))
 					}, this.setContainerRef = e => {
 						this.containerRef = e, this.props.innerRef && this.props.innerRef(e)
 					}, this.getChildRectangle = e => {
@@ -2222,7 +2222,7 @@
 							const e = this.getTotalOffsetTop();
 							e !== this.containerOffsetTop && (this.containerOffsetTop = e, this.handleResize()), this.pendingResizeHandlerRead = null
 						}))
-					}, p.K), this.handleScroll = () => {
+					}, p.L), this.handleScroll = () => {
 						this.pendingScollHandlerRead || (this.pendingScollHandlerRead = h.a.read(() => {
 							if (clearTimeout(this.resetCanFocusTimer), this.cancelPopulateRenderableChildrenWhenIdle(), Object(j.b)() || !this.scrollContainer) return void(this.pendingScollHandlerRead = null);
 							this.updateScrollMetrics();
@@ -2312,7 +2312,7 @@
 							void 0 !== t && (this.hideChild(e, t), this.childrenToHide[e] = void 0)
 						}
 						for (const e in this.childrenToShow) void 0 !== this.childrenToShow[e] && (this.showChild(e), this.childrenToShow[e] = void 0)
-					}, p.K), this.hideChild = (e, t) => {
+					}, p.L), this.hideChild = (e, t) => {
 						const s = this.childMap.get(e);
 						if (!s || !s.el) return;
 						const n = s.el.firstChild;
@@ -2338,7 +2338,7 @@
 								const n = this.getScrollTop() + s.el.getBoundingClientRect().top - (this.props.scrollToChildPadding || 0) - (this.props.viewportTopPadding || 0);
 								setTimeout(() => {
 									this.scrollContainer && (Object(j.c)(this.scrollContainer, n), this.callOnScrollForItemsChanged())
-								}, p.K)
+								}, p.L)
 							}
 						})
 					}, this.isScrollChildTopVisible = e => {
@@ -6696,4 +6696,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.23d08b875498a910b93e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.aacce9c824fd4a9136f2.js.map

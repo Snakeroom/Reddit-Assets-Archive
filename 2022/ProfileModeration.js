@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.5e2d29777120912d35fd.js
-// Retrieved at 4/13/2022, 10:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.7dc41d5c07118ee0def2.js
+// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -384,8 +384,8 @@
 				O = n("./src/reddit/icons/svgs/ArrowRight/index.tsx"),
 				T = n("./src/reddit/icons/svgs/Circle/index.tsx"),
 				j = n("./src/reddit/icons/svgs/OutboundLink/index.tsx"),
-				R = n("./node_modules/lodash/range.js"),
-				L = n.n(R),
+				L = n("./node_modules/lodash/range.js"),
+				R = n.n(L),
 				M = n("./src/reddit/controls/Button/index.tsx"),
 				I = n("./src/reddit/layout/row/Inline/index.tsx"),
 				F = n("./src/reddit/models/Flair/index.ts"),
@@ -513,7 +513,7 @@
 					}
 				}, r.a.createElement(le, null, r.a.createElement(ie, {
 					style: {
-						background: "linear-gradient(to right, " + L()(1, e.max + 1).map((t, n) => t <= e.value ? `${e.ticks[e.value].color} ${(t-1)/e.max*100}%,\n                    ${e.ticks[e.value].color} ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : t !== e.max ? `#c5c5c5 ${(t-1)/e.max*100}%, #c5c5c5 ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : `#c5c5c5 ${(t-1)/e.max*100}%`) + ", #C5C5C5 100%)"
+						background: "linear-gradient(to right, " + R()(1, e.max + 1).map((t, n) => t <= e.value ? `${e.ticks[e.value].color} ${(t-1)/e.max*100}%,\n                    ${e.ticks[e.value].color} ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : t !== e.max ? `#c5c5c5 ${(t-1)/e.max*100}%, #c5c5c5 ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100-1}%,\n                    #fff ${t/e.max*100}%` : `#c5c5c5 ${(t-1)/e.max*100}%`) + ", #C5C5C5 100%)"
 					},
 					className: "range-slider-input",
 					type: "range",
@@ -960,7 +960,7 @@
 						}, () => this.forceUnsticky = !1)) : w() >= k && this.setState({
 							sticky: !0
 						})
-					}, c.K), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
+					}, c.L), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
 						sticky: !1
 					}
 				}
@@ -1915,4 +1915,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.5e2d29777120912d35fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.7dc41d5c07118ee0def2.js.map
