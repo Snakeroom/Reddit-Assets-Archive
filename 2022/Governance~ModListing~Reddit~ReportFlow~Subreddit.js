@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.ee0b370e0feb0ea3f8d3.js
-// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.c826038949b737df14d3.js
+// Retrieved at 4/14/2022, 1:30:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -951,19 +951,22 @@
 						}
 					}))
 				}, R = e => `viewing-comment-${e}`, A = n.a.telemetry.commentConsumedThreshold, L = e => async (t, r) => {
-					const s = r();
-					if (!Object(E.b)(s, {
+					const s = r(),
+						o = Object(E.b)(s, {
 							commentId: e
-						}) || Math.random() > n.a.telemetry.commentSampleRate) return;
+						});
+					if (!o || Math.random() > n.a.telemetry.commentSampleRate) return;
 					g.c({
 						state: s,
-						commentId: e
+						commentId: e,
+						collapsed: o.collapsed
 					}), i.c.start(R(e));
-					const o = setTimeout(() => g.a({
+					const d = setTimeout(() => g.a({
 						state: s,
-						commentId: e
+						commentId: e,
+						collapsed: o.collapsed
 					}), A);
-					C[e] = o
+					C[e] = d
 				}, P = (e, t) => async (r, n) => {
 					const s = n(),
 						o = R(e);
@@ -10464,12 +10467,13 @@
 			const i = e => {
 					let {
 						state: t,
-						commentId: r
+						commentId: r,
+						collapsed: i
 					} = e;
 					return Object(n.a)({
 						source: "comment",
 						action: "view",
-						noun: "comment",
+						noun: i ? "collapsed_comment" : "comment",
 						...s.n(t),
 						profile: s.Q(t),
 						post: s.H(t, r),
@@ -10481,12 +10485,13 @@
 				o = e => {
 					let {
 						state: t,
-						commentId: r
+						commentId: r,
+						collapsed: i
 					} = e;
 					return Object(n.a)({
 						source: "comment",
 						action: "consume",
-						noun: "comment",
+						noun: i ? "collapsed_comment" : "comment",
 						...s.n(t),
 						profile: s.Q(t),
 						post: s.H(t, r),
@@ -15122,4 +15127,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.ee0b370e0feb0ea3f8d3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.c826038949b737df14d3.js.map
