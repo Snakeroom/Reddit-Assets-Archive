@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.09d4f897f1358f6d1d37.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.36f70b1ce4d1f1e5bd0b.js
+// Retrieved at 4/18/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -684,50 +684,52 @@
 			}
 			var Me = n("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Ae.Od,
+					experimentName: Ae.Nd,
 					experimentEligibilitySelector: We.a
 				}), Me.a),
-				Qe = Object(u.a)(Ue, e => e === Ae.Pd.Enabled);
-			var qe = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
-				Je = n("./src/reddit/selectors/user.ts");
-			var Ze = n("./src/reddit/selectors/seo/linksModule.ts"),
-				He = n("./src/reddit/selectors/subreddit.ts"),
-				Ke = n("./src/reddit/selectors/subredditLeaderboard.ts");
+				Qe = Object(u.a)(Ue, e => e === Ae.Od.Enabled);
+			var qe = n("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
+				Je = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
+				Ze = n("./src/reddit/selectors/user.ts");
+			var He = n("./src/reddit/selectors/seo/linksModule.ts"),
+				Ke = n("./src/reddit/selectors/subreddit.ts"),
+				ze = n("./src/reddit/selectors/subredditLeaderboard.ts");
 			n("./src/reddit/components/TopSubredditsWidget/index.tsx"), n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx");
-			var ze = n("./src/reddit/helpers/createBannerProperties/index.ts"),
-				Xe = n("./src/reddit/selectors/meta.ts");
-			const Ve = "c1020",
-				Ye = "videos",
-				$e = Object(u.c)({
-					isMod: Je.R,
-					isLoggedIn: Je.P,
+			var Xe = n("./src/reddit/helpers/createBannerProperties/index.ts"),
+				Ve = n("./src/reddit/selectors/meta.ts");
+			const Ye = "c1020",
+				$e = "videos",
+				et = Object(u.c)({
+					isMod: Ze.R,
+					isLoggedIn: Ze.P,
+					isLoggedOutOneFeed: qe.a,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
-					currentUser: Je.k,
-					frontpageLinks: Ze.b,
-					isOver18: Je.kb,
+					currentUser: Ze.k,
+					frontpageLinks: He.b,
+					isOver18: Ze.kb,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return Ge(e) === Ae.A.RotateEven
 					},
 					bffsLeaderboardVariant: Ge,
-					inRpanTopVideoEntrypointExperiment: qe.e,
-					rankings: e => Object(He.N)(e, Ve),
+					inRpanTopVideoEntrypointExperiment: Je.e,
+					rankings: e => Object(Ke.N)(e, Ye),
 					shouldShowTopicsWidget: e => {
-						const t = Object(qe.e)(e),
-							n = !!Object(He.N)(e, Ve);
+						const t = Object(Je.e)(e),
+							n = !!Object(Ke.N)(e, Ye);
 						return (!t || !n) && function(e) {
 							return Object(We.c)(e, {
-								experimentEligibilitySelector: Je.Q,
-								experimentName: Ae.fc
-							}) === Ae.ld
+								experimentEligibilitySelector: Ze.Q,
+								experimentName: Ae.ec
+							}) === Ae.kd
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: l.a,
-					locale: Xe.i,
+					locale: Ve.i,
 					isInLeaderboardTakeoverExperiment: Qe
 				}),
-				et = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
-				tt = e => !(e.currentUser && (!e.currentUser || e.currentUser.isGold)),
-				nt = e => {
+				tt = e => !(!e.currentUser || !e.currentUser.showRecentPosts),
+				nt = e => !(e.currentUser && (!e.currentUser || e.currentUser.isGold) || e.isLoggedOutOneFeed),
+				st = e => {
 					const {
 						bffsLeaderboardVariant: t,
 						isInBFFSLeaderboardExperiment: n,
@@ -751,7 +753,7 @@
 						categories: u
 					}
 				};
-			class st extends d.a.Component {
+			class rt extends d.a.Component {
 				constructor(e) {
 					super(e), this.componentDidMount = async () => {
 						this.setState({
@@ -761,7 +763,7 @@
 					const {
 						category: t,
 						categories: n
-					} = nt(e);
+					} = st(e);
 					!e.rankings && e.inRpanTopVideoEntrypointExperiment && e.fetchTopSubreddits(), this.state = {
 						isMounted: !1,
 						category: t,
@@ -796,28 +798,28 @@
 						placement: U.c.ABOVE_THE_FOLD,
 						listingName: a,
 						removeSidebarSpacer: !1,
-						position: ze.a.FIRST,
+						position: Xe.a.FIRST,
 						sizes: U.i,
 						placementIndex: e++
-					}), tt(this.props) && d.a.createElement(E, null), i && d.a.createElement(h.a, null, d.a.createElement(Ie, null)), s && d.a.createElement(h.a, null, d.a.createElement(p.a, {
+					}), nt(this.props) && d.a.createElement(E, null), i && d.a.createElement(h.a, null, d.a.createElement(Ie, null)), s && d.a.createElement(h.a, null, d.a.createElement(p.a, {
 						listingName: a
-					})), et(this.props) && d.a.createElement(Se, null), n && u && d.a.createElement(h.a, null, d.a.createElement(I, {
+					})), tt(this.props) && d.a.createElement(Se, null), n && u && d.a.createElement(h.a, null, d.a.createElement(I, {
 						links: n
 					})), d.a.createElement(R.a, {
 						adComponent: d.a.createElement(A.a, {
 							placement: U.c.BELOW_THE_FOLD,
 							listingName: a,
-							position: ze.a.BOTTOM,
+							position: Xe.a.BOTTOM,
 							sizes: U.p,
 							placementIndex: e++
 						})
 					}, s && d.a.createElement(ie, null)))
 				}
 			}
-			const rt = Object(c.b)($e, e => ({
+			const at = Object(c.b)(et, e => ({
 				fetchTopSubreddits: () => {
 					const t = {
-							categoryId: Ve,
+							categoryId: Ye,
 							filter: {
 								includeUnrated: !1,
 								isBlacklistedSubredditsExcluded: !0,
@@ -827,12 +829,12 @@
 							},
 							isOnlyModIncluded: !1
 						},
-						n = Object(Ke.d)(Ve, Ye);
+						n = Object(ze.d)(Ye, $e);
 					e(Object(b.b)(t, n))
 				},
 				subredditAboutRequested: t => e(Object(m.u)(t))
 			}));
-			t.default = rt(st)
+			t.default = at(rt)
 		},
 		"./src/reddit/components/MiniPost/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2218,4 +2220,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.09d4f897f1358f6d1d37.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.36f70b1ce4d1f1e5bd0b.js.map

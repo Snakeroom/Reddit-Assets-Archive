@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.1bf8443f096e0b09dfb7.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.129b76e0b3c60dccccc5.js
+// Retrieved at 4/18/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -360,7 +360,7 @@
 			const G = e => {
 				const t = Object(L.c)(e, {
 					experimentEligibilitySelector: L.a,
-					experimentName: b.Sb
+					experimentName: b.Rb
 				});
 				return !!Object(M.a)(t)
 			};
@@ -397,7 +397,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Ef)(p),
+						includeInterestTopics: !!p && !Object(b.Df)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: g && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -409,7 +409,7 @@
 							variant: null == x ? void 0 : x.toLowerCase()
 						}
 					};
-					return O ? (E.sort = B.t.Best, E.feedRankingContext.variant = b.gb.LoggedOutOneFeedDefault) : l && (E.sort = l.toUpperCase()), u && (E.range = u.toUpperCase()), a ? E.pageSize = Object(h.a)(i) : d && (E.pageSize = d), v && v.ad && (E.forceAds = {
+					return O ? (E.sort = B.t.Best, E.feedRankingContext.variant = Object(R.b)(e)) : l && (E.sort = l.toUpperCase()), u && (E.range = u.toUpperCase()), a ? E.pageSize = Object(h.a)(i) : d && (E.pageSize = d), v && v.ad && (E.forceAds = {
 						ad: v.ad
 					}), s && (E.after = Object(c.a)(s)), E
 				},
@@ -1798,7 +1798,7 @@
 				}, [j, C, t]), Object(o.useEffect)(() => {
 					C && Object(Be.a)(null == v ? void 0 : v.genderCategory, C.success)
 				}, [C, v]);
-				const X = Object(i.e)(Ue.a) === ve.hb.Removed;
+				const X = Object(i.e)(Ue.a) === ve.gb.Removed;
 				Object(o.useEffect)(() => {
 					let e = !1;
 					return async function() {
@@ -3989,8 +3989,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Ic
-				}) === r.ld
+					experimentName: r.Hc
+				}) === r.kd
 			}
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
@@ -4009,20 +4009,20 @@
 				o = n("./src/reddit/selectors/experiments/index.ts"),
 				a = n("./src/reddit/selectors/experiments/utils.ts");
 			const i = e => Object(s.c)(e, {
-					experimentName: r.Fb,
+					experimentName: r.Eb,
 					experimentEligibilitySelector: o.e
 				}) === r.W.topOfFeedWithCTAs,
 				c = e => (e => Object(s.c)(e, {
-					experimentName: r.Fb,
+					experimentName: r.Eb,
 					experimentEligibilitySelector: o.e
 				}) === r.W.topOfFeedNoCTAs)(e) || i(e),
 				d = e => Object(s.c)(e, {
-					experimentName: r.Fb,
+					experimentName: r.Eb,
 					experimentEligibilitySelector: o.e
 				}) === r.W.floatInFeed,
 				l = e => {
 					const t = Object(s.c)(e, {
-						experimentName: r.Fb,
+						experimentName: r.Eb,
 						experimentEligibilitySelector: o.e
 					});
 					return Object(a.a)(t)
@@ -4161,4 +4161,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.1bf8443f096e0b09dfb7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.129b76e0b3c60dccccc5.js.map

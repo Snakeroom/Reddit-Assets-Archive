@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.8378f78f0d6fdbccf0b7.js
-// Retrieved at 4/18/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.4ba12961a12ae1ddf05c.js
+// Retrieved at 4/18/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, s) {
@@ -68,18 +68,18 @@
 				b = s("./src/reddit/constants/experiments.ts"),
 				g = s("./src/reddit/selectors/telemetry.ts");
 			const f = "sso_signup";
-			var x;
+			var h;
 			! function(e) {
 				e.Apple = "apple", e.Google = "google", e.Reddit = "reddit"
-			}(x || (x = {}));
-			const C = () => e => ({
+			}(h || (h = {}));
+			const x = () => e => ({
 					...Object(g.n)(e),
 					source: "popup",
 					action: "view",
 					noun: f,
 					actionInfo: Object(g.d)(e)
 				}),
-				h = () => e => ({
+				C = () => e => ({
 					...Object(g.n)(e),
 					source: "popup",
 					action: "dismiss",
@@ -126,7 +126,7 @@
 				} = e;
 				const p = Object(a.b)();
 				i.useEffect(() => {
-					p(C())
+					p(x())
 				}, [p]);
 				const m = Object(o.d)(),
 					g = () => {
@@ -141,12 +141,12 @@
 						const e = Object(o.e)(w.b),
 							t = Object(o.e)(w.d),
 							s = Object(o.e)(w.f),
-							l = Object(E.a)(b.ic.Bottom_sheet),
-							i = Object(E.a)(b.ic.Bottom_cell),
-							c = Object(E.a)(b.ic.Bottom_cell_dismissible),
-							r = Object(E.a)(b.ic.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(E.a)(b.ic.Bottom_cell_signup_upsell_copy),
-							d = Object(E.a)(b.ic.Bottom_cell_surprise_install_copy);
+							l = Object(E.a)(b.hc.Bottom_sheet),
+							i = Object(E.a)(b.hc.Bottom_cell),
+							c = Object(E.a)(b.hc.Bottom_cell_dismissible),
+							r = Object(E.a)(b.hc.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(E.a)(b.hc.Bottom_cell_signup_upsell_copy),
+							d = Object(E.a)(b.hc.Bottom_cell_surprise_install_copy);
 						let u;
 						if (e) u = I;
 						else if (t) u = U;
@@ -163,8 +163,8 @@
 						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					A = Object(E.a)(b.ic.Bottom_cell_signup_upsell_copy),
-					D = Object(E.a)(b.ic.Bottom_cell_surprise_install_copy),
+					A = Object(E.a)(b.hc.Bottom_cell_signup_upsell_copy),
+					D = Object(E.a)(b.hc.Bottom_cell_surprise_install_copy),
 					H = A ? l.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : l.fbt._("Log in or sign up for the best experience", null, {
@@ -186,7 +186,7 @@
 					}),
 					className: S.a.closeButton,
 					onClick: () => {
-						t(), p(h())
+						t(), p(C())
 					},
 					type: "button"
 				}, i.createElement(N.a, null)), i.createElement("div", {
@@ -198,7 +198,7 @@
 				}, i.createElement(_, {
 					Icon: B.a,
 					onClick: () => {
-						f(), p(j(x.Google))
+						f(), p(j(h.Google))
 					},
 					size: u.d.M,
 					iconClassName: S.a.googleIcon
@@ -207,7 +207,7 @@
 				})), i.createElement(_, {
 					Icon: O.a,
 					onClick: () => {
-						f(), p(j(x.Apple))
+						f(), p(j(h.Apple))
 					},
 					size: u.d.M,
 					iconClassName: S.a.appleIcon,
@@ -219,7 +219,7 @@
 				}, i.createElement(u.j, {
 					className: Object(d.a)(S.a.linkButton, S.a.emailButton),
 					onClick: () => {
-						f(), p(j(x.Reddit))
+						f(), p(j(h.Reddit))
 					},
 					redditStyle: !0,
 					size: u.d.XS
@@ -335,20 +335,20 @@
 					experimentName: e,
 					experimentEligibilitySelector: r,
 					throttledVariants: {
-						[l.ic.Bottom_cell_dismissible]: e,
-						[l.ic.Bottom_cell_dismissible_immediate_trigger]: e,
-						[l.ic.Bottom_sheet]: e
+						[l.hc.Bottom_cell_dismissible]: e,
+						[l.hc.Bottom_cell_dismissible_immediate_trigger]: e,
+						[l.hc.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const d = a(l.tb, !0),
-				u = a(l.ub, !0),
-				p = a(l.vb, !0),
-				m = a(l.tb, !1),
-				_ = a(l.ub, !1),
-				b = a(l.vb, !1)
+			const d = a(l.sb, !0),
+				u = a(l.tb, !0),
+				p = a(l.ub, !0),
+				m = a(l.sb, !1),
+				_ = a(l.tb, !1),
+				b = a(l.ub, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.8378f78f0d6fdbccf0b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.4ba12961a12ae1ddf05c.js.map

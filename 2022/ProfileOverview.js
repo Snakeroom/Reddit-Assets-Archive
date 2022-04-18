@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.20441af612841f790fc8.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.68d0045171094d971579.js
+// Retrieved at 4/18/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -26,12 +26,12 @@
 				l = s("./src/reddit/constants/promo.ts"),
 				m = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts");
 			var u = function() {
-					const e = Object(m.a)(d.ic.Bottom_cell),
-						t = Object(m.a)(d.ic.Bottom_cell_dismissible),
-						s = Object(m.a)(d.ic.Bottom_cell_dismissible_immediate_trigger),
-						o = Object(m.a)(d.ic.Bottom_cell_signup_upsell_copy),
-						r = Object(m.a)(d.ic.Bottom_cell_surprise_install_copy),
-						n = Object(m.a)(d.ic.Bottom_sheet);
+					const e = Object(m.a)(d.hc.Bottom_cell),
+						t = Object(m.a)(d.hc.Bottom_cell_dismissible),
+						s = Object(m.a)(d.hc.Bottom_cell_dismissible_immediate_trigger),
+						o = Object(m.a)(d.hc.Bottom_cell_signup_upsell_copy),
+						r = Object(m.a)(d.hc.Bottom_cell_surprise_install_copy),
+						n = Object(m.a)(d.hc.Bottom_sheet);
 					return e || o || r ? l.b.SignupUpsellCell : t || s ? l.b.SignupUpsellCellDismissible : n ? l.b.SignupUpsellBottomSheet : null
 				},
 				p = s("./src/reddit/hooks/promo/useIsPromoShown.ts");
@@ -56,7 +56,7 @@
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : b;
 						const {
 							showPromo: t
-						} = Object(c.a)(), s = u(), n = Object(p.a)(s), l = Object(m.a)(d.ic.Bottom_cell_dismissible_immediate_trigger);
+						} = Object(c.a)(), s = u(), n = Object(p.a)(s), l = Object(m.a)(d.hc.Bottom_cell_dismissible_immediate_trigger);
 						return o.useMemo(() => i()(() => {
 							if (!n && s) {
 								const e = document.getElementById(a.d),
@@ -1163,7 +1163,7 @@
 			const fe = Object(a.a)(w.N, e => e.some(he.c)),
 				xe = Object(a.a)(fe, e => e),
 				ve = (e, t) => Object(be.c)(e, {
-					experimentName: pe.uc,
+					experimentName: pe.tc,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: s
@@ -1274,7 +1274,7 @@
 						postIds: Ve,
 						onceInViewport: Ue,
 						isAdblockAAMitigationEnabled: We
-					} = e, De = Object(P.a)(), Ke = !!e.redditStyle || !!e["data-redditstyle"], Ge = Ke ? void 0 : p, He = Object(l.a)(Pe), qe = Oe && He, ze = Object(d.a)(Pe), Je = Object(c.a)(Pe), Qe = Object(D.c)(we), Xe = Object(U.d)(we), Ze = !!we.media && we.media.type === O.o.RTJSON, Ye = Ae && Ze, $e = s ? s - q.a : void 0, et = !!we.recommendationContext, tt = !(X && ne || ae) || et && ne, st = (e => e === pe.Be.OnlyTitles)(Ie) && !Object(de.a)(we), ot = (e => e === pe.Be.MediumHeight)(Ie) && !Object(de.a)(we), rt = (e => {
+					} = e, De = Object(P.a)(), Ke = !!e.redditStyle || !!e["data-redditstyle"], Ge = Ke ? void 0 : p, He = Object(l.a)(Pe), qe = Oe && He, ze = Object(d.a)(Pe), Je = Object(c.a)(Pe), Qe = Object(D.c)(we), Xe = Object(U.d)(we), Ze = !!we.media && we.media.type === O.o.RTJSON, Ye = Ae && Ze, $e = s ? s - q.a : void 0, et = !!we.recommendationContext, tt = !(X && ne || ae) || et && ne, st = (e => e === pe.Ae.OnlyTitles)(Ie) && !Object(de.a)(we), ot = (e => e === pe.Ae.MediumHeight)(Ie) && !Object(de.a)(we), rt = (e => {
 						var t;
 						const {
 							post: s,
@@ -3084,9 +3084,9 @@
 			const n = e => {
 				const t = Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.Ec
+					experimentName: o.Dc
 				});
-				return !(!t || Object(o.Ef)(t))
+				return !(!t || Object(o.Df)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, s) {
@@ -3116,19 +3116,19 @@
 					experimentName: e,
 					experimentEligibilitySelector: d,
 					throttledVariants: {
-						[r.ic.Bottom_cell_dismissible]: e,
-						[r.ic.Bottom_cell_dismissible_immediate_trigger]: e,
-						[r.ic.Bottom_sheet]: e
+						[r.hc.Bottom_cell_dismissible]: e,
+						[r.hc.Bottom_cell_dismissible_immediate_trigger]: e,
+						[r.hc.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const l = c(r.tb, !0),
-				m = c(r.ub, !0),
-				u = c(r.vb, !0),
-				p = c(r.tb, !1),
-				b = c(r.ub, !1),
-				h = c(r.vb, !1)
+			const l = c(r.sb, !0),
+				m = c(r.tb, !0),
+				u = c(r.ub, !0),
+				p = c(r.sb, !1),
+				b = c(r.tb, !1),
+				h = c(r.ub, !1)
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -3250,7 +3250,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(r.Ef)(t)
+					return Boolean(t) && !Object(r.Df)(t)
 				},
 				d = Object(o.a)(a, n.d, (e, t) => e && !t)
 		},
@@ -3259,4 +3259,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.20441af612841f790fc8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.68d0045171094d971579.js.map

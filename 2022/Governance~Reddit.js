@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.94f79c92d79a0821b6c4.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.b6349e6019e6752c561b.js
+// Retrieved at 4/18/2022, 2:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -999,8 +999,8 @@
 			}), u = n("./node_modules/fbt/lib/FbtPublic.js"), l = n("./src/reddit/models/Toast/index.ts"), p = n("./node_modules/reselect/es/index.js"), f = n("./src/reddit/constants/experiments.ts"), b = n("./src/reddit/helpers/chooseVariant/index.ts"), h = n("./src/reddit/selectors/user.ts");
 			const y = Object(p.a)(e => Object(b.c)(e, {
 				experimentEligibilitySelector: h.Q,
-				experimentName: f.Mb
-			}), e => e === f.ld);
+				experimentName: f.Lb
+			}), e => e === f.kd);
 			var m = n("./src/reddit/actions/toaster.ts");
 			const g = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				v = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -1662,7 +1662,7 @@
 					r || o || !Object(i.e)(a) && !Object(i.d)(a) || e(Object(s.f)())
 				}, b = e => {
 					Object(o.d)(e, {
-						experimentName: a.wb
+						experimentName: a.vb
 					})
 				}
 		},
@@ -3489,7 +3489,7 @@
 			const T = e => _.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				w = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.Ie
+					experimentName: f.He
 				}),
 				D = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = () => u(e => p()([T, w, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4380,7 +4380,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(N)
 						}
-						await t(Object(r.b)(`${n.path}`)), b ? b === p.ke.NewModule && t(Object(d.h)({
+						await t(Object(r.b)(`${n.path}`)), b ? b === p.je.NewModule && t(Object(d.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(c.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(D.a)(Object(_.g)()(A))), Object(E.b)(E.a.SubredditCreation), t(Object(P.f)(a, null !== (O = Object(w.bb)(A)) && void 0 !== O ? O : Object(S.i)(A)))
 					} else k.error && Object(D.a)(Object(_.h)(k.error.type, C)(A)), t(U({
@@ -26812,14 +26812,14 @@
 			const i = Object(r.a)(o.c, e => !e),
 				d = Object(r.a)(e => Object(a.c)(e, {
 					experimentEligibilitySelector: e => i(e),
-					experimentName: s.wb,
+					experimentName: s.vb,
 					expEventOverride: !1
 				}), e => e),
 				u = e => e === s.V.Onetap,
 				l = e => e === s.V.OnetapAuto,
 				p = e => e.user.googleOneTapEnabled,
 				f = Object(r.a)(c.Q, d, (e, t) => !e && !!t),
-				b = Object(r.a)(c.Q, d, (e, t) => !e && !!t && !Object(s.Ef)(t))
+				b = Object(r.a)(c.Q, d, (e, t) => !e && !!t && !Object(s.Df)(t))
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
 			"use strict";
@@ -26843,7 +26843,7 @@
 					if (!l(e)) return;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: u,
-						experimentName: a.Ed,
+						experimentName: a.Dd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -26866,9 +26866,9 @@
 				},
 				b = e => !!p(e) && Object(o.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: a.Fd,
+					experimentName: a.Ed,
 					expEventOverride: !1
-				}) !== a.Gd.Readonly
+				}) !== a.Fd.Readonly
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, n) {
 			"use strict";
@@ -27151,4 +27151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.94f79c92d79a0821b6c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.b6349e6019e6752c561b.js.map
