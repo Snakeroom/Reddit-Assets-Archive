@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4a1d0d2437fd842fc955.js
-// Retrieved at 4/18/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.94f79c92d79a0821b6c4.js
+// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit", "reddit-components-BlankPost"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -2864,7 +2864,7 @@
 										benefit: I.a.HdVideo
 									}),
 									l = c ? 2 * o.gb : o.gb;
-								if (t.size > l) return k(o.pc);
+								if (t.size > l) return k(o.qc);
 								let p;
 								try {
 									p = await Object(m.i)(i, !0)
@@ -5798,7 +5798,7 @@
 						q: n.searchQuery,
 						eventType: S ? "subreddit" : void 0,
 						t: "all",
-						type: S ? [$.cc.Posts] : [$.cc.Posts, $.cc.Subreddits, $.cc.Users],
+						type: S ? [$.dc.Posts] : [$.dc.Posts, $.dc.Subreddits, $.dc.Users],
 						restrict_sr: S ? "1" : ""
 					};
 				return Object(r.useEffect)(() => {
@@ -10312,7 +10312,7 @@
 					case vn.f: {
 						const {
 							profileName: n
-						} = t.payload, r = Re.kc + n.toLocaleLowerCase(), s = Object(hn.a)(e, r) || {}, a = {
+						} = t.payload, r = Re.lc + n.toLocaleLowerCase(), s = Object(hn.a)(e, r) || {}, a = {
 							profileDeleted: t.type === vn.e,
 							profileSuspended: t.type === vn.f,
 							profileBlockedForLegalReason: t.type === vn.d
@@ -13756,7 +13756,7 @@
 							key: n,
 							type: r
 						} = t.payload;
-						return -1 === r.indexOf(Re.cc.Users) ? e : {
+						return -1 === r.indexOf(Re.dc.Users) ? e : {
 							...e,
 							[n]: null
 						}
@@ -13769,7 +13769,7 @@
 							success: s,
 							type: a
 						} = t.payload;
-						return -1 === a.indexOf(Re.cc.Users) || s && s.authors ? e : {
+						return -1 === a.indexOf(Re.dc.Users) || s && s.authors ? e : {
 							...e,
 							[n]: r
 						}
@@ -13789,7 +13789,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(Re.cc.Users) ? e : {
+							return -1 === r.indexOf(Re.dc.Users) ? e : {
 								...e,
 								[n]: !0
 							}
@@ -13802,7 +13802,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(Re.cc.Users) ? e : {
+							return -1 === r.indexOf(Re.dc.Users) ? e : {
 								...e,
 								[n]: !1
 							}
@@ -13826,7 +13826,7 @@
 							key: r,
 							type: s
 						} = t.payload;
-						if (-1 === s.indexOf(Re.cc.Users)) return e;
+						if (-1 === s.indexOf(Re.dc.Users)) return e;
 						const a = e[r];
 						return {
 							...e,
@@ -13851,7 +13851,7 @@
 							authorOrder: r,
 							type: s
 						} = t.payload;
-						return -1 !== s.indexOf(Re.cc.Users) && e[n] ? {
+						return -1 !== s.indexOf(Re.dc.Users) && e[n] ? {
 							...e,
 							[n]: e[n].concat(r)
 						} : e
@@ -13862,7 +13862,7 @@
 							authorOrder: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(Re.cc.Users) ? e : {
+						return -1 === s.indexOf(Re.dc.Users) ? e : {
 							...e,
 							[n]: r
 						}
@@ -13883,7 +13883,7 @@
 								tokens: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(Re.cc.Users) ? e : r.authors ? {
+							return -1 === s.indexOf(Re.dc.Users) ? e : r.authors ? {
 								...e,
 								[n]: {
 									token: r.authors
@@ -13913,7 +13913,7 @@
 							key: n,
 							type: r
 						} = t.payload;
-						return -1 === r.indexOf(Re.cc.Comments) ? e : {
+						return -1 === r.indexOf(Re.dc.Comments) ? e : {
 							...e,
 							[n]: null
 						}
@@ -13926,7 +13926,7 @@
 							success: s,
 							type: a
 						} = t.payload;
-						return -1 === a.indexOf(Re.cc.Comments) || s && s.comments ? e : {
+						return -1 === a.indexOf(Re.dc.Comments) || s && s.comments ? e : {
 							...e,
 							[n]: r
 						}
@@ -13946,7 +13946,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(Re.cc.Comments) ? e : {
+							return -1 === r.indexOf(Re.dc.Comments) ? e : {
 								...e,
 								[n]: !0
 							}
@@ -13959,7 +13959,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(Re.cc.Comments) ? e : {
+							return -1 === r.indexOf(Re.dc.Comments) ? e : {
 								...e,
 								[n]: !1
 							}
@@ -13983,7 +13983,7 @@
 							key: r,
 							type: s
 						} = t.payload;
-						if (-1 === s.indexOf(Re.cc.Comments)) return e;
+						if (-1 === s.indexOf(Re.dc.Comments)) return e;
 						const a = e[r];
 						return {
 							...e,
@@ -14008,7 +14008,7 @@
 							commentOrder: r,
 							type: s
 						} = t.payload;
-						return -1 !== s.indexOf(Re.cc.Comments) && e[n] ? {
+						return -1 !== s.indexOf(Re.dc.Comments) && e[n] ? {
 							...e,
 							[n]: e[n].concat(r)
 						} : e
@@ -14019,7 +14019,7 @@
 							commentOrder: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(Re.cc.Comments) ? e : {
+						return -1 === s.indexOf(Re.dc.Comments) ? e : {
 							...e,
 							[n]: r
 						}
@@ -14040,7 +14040,7 @@
 								tokens: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(Re.cc.Comments) ? e : r.comments ? {
+							return -1 === s.indexOf(Re.dc.Comments) ? e : r.comments ? {
 								...e,
 								[n]: {
 									token: r.comments
@@ -14070,7 +14070,7 @@
 							key: n,
 							type: r
 						} = t.payload;
-						return -1 === r.indexOf(Re.cc.Subreddits) ? e : {
+						return -1 === r.indexOf(Re.dc.Subreddits) ? e : {
 							...e,
 							[n]: null
 						}
@@ -14083,7 +14083,7 @@
 							success: s,
 							type: a
 						} = t.payload;
-						return -1 === a.indexOf(Re.cc.Subreddits) || s && s.communities ? e : {
+						return -1 === a.indexOf(Re.dc.Subreddits) || s && s.communities ? e : {
 							...e,
 							[n]: r
 						}
@@ -14103,7 +14103,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(Re.cc.Subreddits) ? e : {
+							return -1 === r.indexOf(Re.dc.Subreddits) ? e : {
 								...e,
 								[n]: !0
 							}
@@ -14116,7 +14116,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(Re.cc.Subreddits) ? e : {
+							return -1 === r.indexOf(Re.dc.Subreddits) ? e : {
 								...e,
 								[n]: !1
 							}
@@ -14140,7 +14140,7 @@
 							key: r,
 							type: s
 						} = t.payload;
-						if (-1 === s.indexOf(Re.cc.Subreddits)) return e;
+						if (-1 === s.indexOf(Re.dc.Subreddits)) return e;
 						const a = e[r];
 						return {
 							...e,
@@ -14165,7 +14165,7 @@
 							communityOrder: r,
 							type: s
 						} = t.payload;
-						return -1 !== s.indexOf(Re.cc.Subreddits) && e[n] ? {
+						return -1 !== s.indexOf(Re.dc.Subreddits) && e[n] ? {
 							...e,
 							[n]: e[n].concat(r)
 						} : e
@@ -14176,7 +14176,7 @@
 							communityOrder: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(Re.cc.Subreddits) ? e : {
+						return -1 === s.indexOf(Re.dc.Subreddits) ? e : {
 							...e,
 							[n]: r
 						}
@@ -14197,7 +14197,7 @@
 								tokens: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(Re.cc.Subreddits) ? e : r.communities ? {
+							return -1 === s.indexOf(Re.dc.Subreddits) ? e : r.communities ? {
 								...e,
 								[n]: {
 									token: r.communities
@@ -14227,7 +14227,7 @@
 							key: n,
 							type: r
 						} = t.payload;
-						return -1 === r.indexOf(Re.cc.Subreddits) && -1 === r.indexOf(Re.cc.Users) ? e : {
+						return -1 === r.indexOf(Re.dc.Subreddits) && -1 === r.indexOf(Re.dc.Users) ? e : {
 							...e,
 							[n]: null
 						}
@@ -14239,7 +14239,7 @@
 							error: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(Re.cc.Subreddits) && -1 === s.indexOf(Re.cc.Users) ? e : {
+						return -1 === s.indexOf(Re.dc.Subreddits) && -1 === s.indexOf(Re.dc.Users) ? e : {
 							...e,
 							[n]: r
 						}
@@ -14279,7 +14279,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(Re.cc.Subreddits) && -1 === r.indexOf(Re.cc.Users) ? e : {
+							return -1 === r.indexOf(Re.dc.Subreddits) && -1 === r.indexOf(Re.dc.Users) ? e : {
 								...e,
 								[n]: !0
 							}
@@ -14292,7 +14292,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(Re.cc.Subreddits) && -1 === r.indexOf(Re.cc.Users) ? e : {
+							return -1 === r.indexOf(Re.dc.Subreddits) && -1 === r.indexOf(Re.dc.Users) ? e : {
 								...e,
 								[n]: !1
 							}
@@ -14335,7 +14335,7 @@
 							key: r,
 							type: s
 						} = t.payload;
-						if (-1 === s.indexOf(Re.cc.Subreddits) && -1 === s.indexOf(Re.cc.Users)) return e;
+						if (-1 === s.indexOf(Re.dc.Subreddits) && -1 === s.indexOf(Re.dc.Users)) return e;
 						const a = e[r];
 						return {
 							...e,
@@ -14373,7 +14373,7 @@
 							listingOrder: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(Re.cc.Subreddits) && -1 === s.indexOf(Re.cc.Users) ? e : {
+						return -1 === s.indexOf(Re.dc.Subreddits) && -1 === s.indexOf(Re.dc.Users) ? e : {
 							...e,
 							[n]: e[n].concat(r)
 						}
@@ -14384,7 +14384,7 @@
 							listingOrder: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(Re.cc.Subreddits) && -1 === s.indexOf(Re.cc.Users) ? e : {
+						return -1 === s.indexOf(Re.dc.Subreddits) && -1 === s.indexOf(Re.dc.Users) ? e : {
 							...e,
 							[n]: r
 						}
@@ -14405,7 +14405,7 @@
 								tokens: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(Re.cc.Subreddits) && -1 === s.indexOf(Re.cc.Users) ? e : r.listings ? {
+							return -1 === s.indexOf(Re.dc.Subreddits) && -1 === s.indexOf(Re.dc.Users) ? e : r.listings ? {
 								...e,
 								[n]: {
 									token: r.listings
@@ -14496,7 +14496,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(Re.cc.Posts) ? e : {
+							return -1 === r.indexOf(Re.dc.Posts) ? e : {
 								...e,
 								[n]: null
 							}
@@ -14535,7 +14535,7 @@
 								success: s,
 								type: a
 							} = t.payload;
-							return -1 === a.indexOf(Re.cc.Posts) || s && s.posts ? e : {
+							return -1 === a.indexOf(Re.dc.Posts) || s && s.posts ? e : {
 								...e,
 								[r]: n
 							}
@@ -14583,7 +14583,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(Re.cc.Posts) ? e : {
+							return -1 === r.indexOf(Re.dc.Posts) ? e : {
 								...e,
 								[n]: !0
 							}
@@ -14655,7 +14655,7 @@
 								key: n,
 								type: r
 							} = t.payload;
-							return -1 === r.indexOf(Re.cc.Posts) ? e : {
+							return -1 === r.indexOf(Re.dc.Posts) ? e : {
 								...e,
 								[n]: !1
 							}
@@ -14768,7 +14768,7 @@
 								key: r,
 								type: s
 							} = t.payload;
-							if (s.indexOf(Re.cc.Posts) > -1) {
+							if (s.indexOf(Re.dc.Posts) > -1) {
 								const t = e[r];
 								return {
 									...e,
@@ -14869,7 +14869,7 @@
 								postOrder: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(Re.cc.Posts) ? e : {
+							return -1 === s.indexOf(Re.dc.Posts) ? e : {
 								...e,
 								[n]: r
 							}
@@ -14880,7 +14880,7 @@
 								postOrder: r,
 								type: s
 							} = t.payload;
-							return -1 === s.indexOf(Re.cc.Posts) ? e : {
+							return -1 === s.indexOf(Re.dc.Posts) ? e : {
 								...e,
 								[n]: e[n].concat(r)
 							}
@@ -14977,7 +14977,7 @@
 							tokens: r,
 							type: s
 						} = t.payload;
-						return -1 === s.indexOf(Re.cc.Posts) ? e : r.posts ? {
+						return -1 === s.indexOf(Re.dc.Posts) ? e : r.posts ? {
 							...e,
 							[n]: {
 								token: r.posts
@@ -15038,7 +15038,7 @@
 							default:
 								return n
 						}
-					}))(Re.cc.Posts, Re.bc.Posts)
+					}))(Re.dc.Posts, Re.cc.Posts)
 				}),
 				Cd = Object(S.c)({
 					activeKey: ri,
@@ -27151,4 +27151,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4a1d0d2437fd842fc955.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.94f79c92d79a0821b6c4.js.map

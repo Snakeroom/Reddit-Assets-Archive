@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.9d083ca44d8a2f97a484.js
-// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.45d1d4a79922d02f0a55.js
+// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -16,7 +16,7 @@
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/constants/index.ts");
-			const s = [r.sc, r.qb, r.C, r.R, r.lb, r.Tb],
+			const s = [r.tc, r.qb, r.C, r.R, r.lb, r.Tb],
 				i = {
 					[r.Tb]: e => o.fbt._({
 						"*": "{number} seconds",
@@ -48,7 +48,7 @@
 					}, [o.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[r.sc]: e => o.fbt._({
+					[r.tc]: e => o.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [o.fbt._plural(e, "number")], {
@@ -71,13 +71,13 @@
 					[r.qb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.sc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
+					[r.tc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[r.qb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.sc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
+					[r.tc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -88,7 +88,7 @@
 				const c = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[r.sc]: "",
+						[r.tc]: "",
 						[r.qb]: "",
 						[r.C]: "",
 						[r.R]: "",
@@ -2038,4 +2038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.9d083ca44d8a2f97a484.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.45d1d4a79922d02f0a55.js.map

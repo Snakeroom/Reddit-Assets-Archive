@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.bc0d86b08d090cf61fee.js
-// Retrieved at 4/18/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.a3119533469a53b28e02.js
+// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -36,7 +36,7 @@
 			}));
 			var a = s("./node_modules/fbt/lib/FbtPublic.js"),
 				n = s("./src/lib/constants/index.ts");
-			const r = [n.sc, n.qb, n.C, n.R, n.lb, n.Tb],
+			const r = [n.tc, n.qb, n.C, n.R, n.lb, n.Tb],
 				i = {
 					[n.Tb]: e => a.fbt._({
 						"*": "{number} seconds",
@@ -68,7 +68,7 @@
 					}, [a.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[n.sc]: e => a.fbt._({
+					[n.tc]: e => a.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [a.fbt._plural(e, "number")], {
@@ -91,13 +91,13 @@
 					[n.qb]: e => a.fbt._("{amount}m", [a.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[n.sc]: e => a.fbt._("{amount}y", [a.fbt._param("amount", String(e))], {
+					[n.tc]: e => a.fbt._("{amount}y", [a.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[n.qb]: e => a.fbt._("{amount}m", [a.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[n.sc]: e => a.fbt._("{amount}y", [a.fbt._param("amount", String(e))], {
+					[n.tc]: e => a.fbt._("{amount}y", [a.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -108,7 +108,7 @@
 				const l = Date.now(),
 					c = new Date(e).getTime(),
 					d = {
-						[n.sc]: "",
+						[n.tc]: "",
 						[n.qb]: "",
 						[n.C]: "",
 						[n.R]: "",
@@ -2110,4 +2110,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.bc0d86b08d090cf61fee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.a3119533469a53b28e02.js.map

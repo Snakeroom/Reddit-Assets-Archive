@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.1a81fd5296d1230e86d9.js
-// Retrieved at 4/18/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.e93b3cfe6effa1e747c0.js
+// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-BlankPost", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -9792,7 +9792,7 @@
 				he = n.n(be);
 			const fe = 10,
 				xe = Object(d.a)((e, t) => t.subredditName, e => Object(C.a)(e, l.X.TOP, {
-					t: l.ic.WEEK
+					t: l.jc.WEEK
 				})),
 				ge = Object(d.c)({
 					discoveryUnit: e => Object(me.b)(e, {
@@ -9872,7 +9872,7 @@
 						loadMorePosts: () => e(Object(N.r)({
 							sort: l.X.TOP,
 							subredditName: n,
-							t: l.ic.WEEK
+							t: l.jc.WEEK
 						}))
 					}
 				})(Object(ce.c)(Ee)),
@@ -14115,7 +14115,7 @@
 				isPopular: le.F
 			}), Et = e => {
 				const t = ce.E in e && e[ce.E].toUpperCase();
-				if ("string" == typeof t && t in g.ic) return g.ic[t]
+				if ("string" == typeof t && t in g.jc) return g.jc[t]
 			}, _t = Object(j.a)((e, t) => {
 				const {
 					sort: n,
@@ -14287,7 +14287,7 @@
 						subredditName: t.match.params.subredditName
 					}))
 				},
-				onLoadMoreSearchResults: () => e(Object(k.n)([g.cc.Posts])),
+				onLoadMoreSearchResults: () => e(Object(k.n)([g.dc.Posts])),
 				refreshFeed: () => e(T.s({
 					sort: t.match.params.sort,
 					subredditName: t.match.params.subredditName
@@ -14534,9 +14534,9 @@
 									}
 								}
 							}
-							if (!r && O && E !== g.ic.WEEK && i === de.g.Large) {
+							if (!r && O && E !== g.jc.WEEK && i === de.g.Large) {
 								const t = Object(y.a)(f, g.X.TOP, {
-									t: g.ic.WEEK
+									t: g.jc.WEEK
 								});
 								e[it] = {
 									estHeight: 0,
@@ -15979,4 +15979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1a81fd5296d1230e86d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e93b3cfe6effa1e747c0.js.map

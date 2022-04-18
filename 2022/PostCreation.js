@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.b666557d74e4eb68ac08.js
-// Retrieved at 4/18/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.32009c6db9ce40bb0bdc.js
+// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -930,7 +930,7 @@
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/constants/index.ts");
-			const s = [r.sc, r.qb, r.C, r.R, r.lb, r.Tb],
+			const s = [r.tc, r.qb, r.C, r.R, r.lb, r.Tb],
 				a = {
 					[r.Tb]: e => o.fbt._({
 						"*": "{number} seconds",
@@ -962,7 +962,7 @@
 					}, [o.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[r.sc]: e => o.fbt._({
+					[r.tc]: e => o.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [o.fbt._plural(e, "number")], {
@@ -985,13 +985,13 @@
 					[r.qb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.sc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
+					[r.tc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[r.qb]: e => o.fbt._("{amount}m", [o.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[r.sc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
+					[r.tc]: e => o.fbt._("{amount}y", [o.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -1002,7 +1002,7 @@
 				const c = Date.now(),
 					d = new Date(e).getTime(),
 					l = {
-						[r.sc]: "",
+						[r.tc]: "",
 						[r.qb]: "",
 						[r.C]: "",
 						[r.R]: "",
@@ -2900,7 +2900,7 @@
 										benefit: O.a.HdVideo
 									}),
 									u = i ? 2 * a.gb : a.gb;
-								if (t.size > u) return D(a.pc);
+								if (t.size > u) return D(a.qc);
 								let m;
 								try {
 									m = await Object(g.i)(c, !0)
@@ -25946,4 +25946,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b666557d74e4eb68ac08.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.32009c6db9ce40bb0bdc.js.map

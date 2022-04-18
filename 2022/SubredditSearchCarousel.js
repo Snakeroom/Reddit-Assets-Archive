@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.2ab48cb402e3f76ade10.js
-// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.8820ac75ba5b6db3c64d.js
+// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditSearchCarousel"], {
 		"./src/reddit/actions/subreddit/subredditCarousel.ts": function(e, t, s) {
@@ -311,9 +311,9 @@
 				return Object(n.useEffect)(() => {
 					t && s(Object(o.d)("SUBREDDIT_CAROUSEL_SEARCH_KEY", {
 						q: t,
-						sort: r.Zb.Relevance,
-						t: r.ic.ALL,
-						type: [r.cc.Subreddits]
+						sort: r.ac.Relevance,
+						t: r.jc.ALL,
+						type: [r.dc.Subreddits]
 					}))
 				}, [t]), a.a.createElement(c.a, {
 					className: b.a.wrapper,
@@ -472,4 +472,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.2ab48cb402e3f76ade10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.8820ac75ba5b6db3c64d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.9c36fa7d851a1b0cdab6.js
-// Retrieved at 4/18/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.fe063701cd14fd9a1eda.js
+// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -771,7 +771,7 @@
 						p = c.listings.postOrder.api.pending[d],
 						b = Object(re.b)(c),
 						h = $.E in e.queryParams && e.queryParams[$.E].toUpperCase() || "",
-						g = h in l.ic && l.ic[h],
+						g = h in l.jc && l.jc[h],
 						f = H.e();
 					if (p || u && !m && !t) return void(u && (s(Q.m({
 						title: b ? Object(G.a)(c, f) : f
@@ -828,7 +828,7 @@
 						m = Object(ue.a)(Y.b, d, u),
 						p = i.listings.postOrder.loadMore[m],
 						b = u[$.E] ? u[$.E].toUpperCase() : "",
-						h = b in l.ic && l.ic[b];
+						h = b in l.jc && l.jc[b];
 					if (p) {
 						const e = i.listings.postOrder.api.pending[m],
 							a = i.listings.postOrder.fetchedTokens,
@@ -891,7 +891,7 @@
 						c = a.platform.currentPage ? a.platform.currentPage.queryParams : {},
 						i = Object(ue.a)(Y.b, r, c),
 						o = c[$.E] ? c[$.E].toUpperCase() : "",
-						d = o in l.ic && l.ic[o],
+						d = o in l.jc && l.jc[o],
 						u = Object(se.a)(a),
 						m = Object(se.b)(u);
 					await t(je(i, {
@@ -6699,7 +6699,7 @@
 					sort: o
 				} = t;
 				const l = B.E in i && i[B.E].toUpperCase(),
-					d = "string" == typeof l && l in ie.ic ? ie.ic[l] : ie.jc,
+					d = "string" == typeof l && l in ie.jc ? ie.jc[l] : ie.kc,
 					u = Object(h.a)(de.b, o, i),
 					m = e,
 					p = [];
@@ -7556,4 +7556,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.9c36fa7d851a1b0cdab6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.fe063701cd14fd9a1eda.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.51973caa5098fa913062.js
-// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.5703b7a9fa000c1c823b.js
+// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, r) {
@@ -93,10 +93,10 @@
 				h = r("./src/lib/omitHeaders/index.ts"),
 				x = r("./src/reddit/constants/headers.ts"),
 				O = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				g = r("./src/lib/makeGqlRequest/index.ts"),
-				j = r("./src/redditGQL/operations/AllUserMultireddits.json"),
-				y = (e, t) => Object(g.a)(e, {
-					...j,
+				j = r("./src/lib/makeGqlRequest/index.ts"),
+				g = r("./src/redditGQL/operations/AllUserMultireddits.json"),
+				y = (e, t) => Object(j.a)(e, {
+					...g,
 					variables: t
 				}),
 				_ = r("./src/reddit/endpoints/page/multiredditListing.ts"),
@@ -132,8 +132,8 @@
 								displayName: i.toLowerCase()
 							}
 						}).sort((e, t) => e.displayName.localeCompare(t.displayName)),
-						s = i.filter(e => !e.displayName.startsWith(a.kc)).map(e => e.id),
-						d = i.filter(e => e.displayName.startsWith(a.kc)).map(e => e.id);
+						s = i.filter(e => !e.displayName.startsWith(a.lc)).map(e => e.id),
+						d = i.filter(e => e.displayName.startsWith(a.lc)).map(e => e.id);
 					return {
 						created: e.created_utc,
 						description: e.description_md,
@@ -186,14 +186,14 @@
 						key: b,
 						fetchedToken: f.token
 					}));
-					const g = p.url.replace(/\/$/, ""),
-						j = m.t ? m.t.toUpperCase() : void 0,
+					const j = p.url.replace(/\/$/, ""),
+						g = m.t ? m.t.toUpperCase() : void 0,
 						y = {
 							after: f.token,
 							includeIdentity: !1,
 							includeSources: !1,
-							path: g,
-							range: j,
+							path: j,
+							range: g,
 							sort: d.toUpperCase()
 						},
 						C = await Object(_.a)(s(), y),
@@ -306,11 +306,11 @@
 						{
 							queryParams: O
 						} = c,
-						g = Object(l.a)(x, p, O),
-						j = b.E in O && O[b.E].toUpperCase() || "",
-						y = a.ic[j] || !1,
+						j = Object(l.a)(x, p, O),
+						g = b.E in O && O[b.E].toUpperCase() || "",
+						y = a.jc[g] || !1,
 						_ = Object(L.k)(s);
-					(h || _ && _.displayText) && await e(Object(m.multiredditFeedRequested)(g, (h || _.displayText).toLowerCase(), f.toLowerCase(), {
+					(h || _ && _.displayText) && await e(Object(m.multiredditFeedRequested)(j, (h || _.displayText).toLowerCase(), f.toLowerCase(), {
 						...d()(O, b.n),
 						...d()(O, b.m),
 						sort: p,
@@ -330,9 +330,9 @@
 						const m = o(),
 							b = Object(L.k)(m);
 						if (!b || !b.displayText) return;
-						const g = Object(E.h)((d || b.displayText).toLowerCase(), s.toLowerCase());
+						const j = Object(E.h)((d || b.displayText).toLowerCase(), s.toLowerCase());
 						e(X());
-						const j = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
+						const g = await ((e, t) => Object(f.a)(Object(h.a)(e, [x.a]), {
 							endpoint: Object(O.a)(`${e.apiUrl}/api/multi/copy`),
 							data: {
 								description_md: t.description,
@@ -342,12 +342,12 @@
 							},
 							method: a.kb.POST
 						}))(l(), {
-							from: g,
+							from: j,
 							displayName: r,
 							description: t
 						});
-						if (j.ok) {
-							const t = N(j.body.data);
+						if (g.ok) {
+							const t = N(g.body.data);
 							e(Object(u.f)()), e(V({
 								multireddit: t,
 								multiredditsModelsState: m.multireddits.models,
@@ -361,7 +361,7 @@
 								}),
 								buttonAction: Object(n.b)(t.url)
 							}))
-						} else e(B(j.error)), e(Object(p.f)({
+						} else e(B(g.error)), e(Object(p.f)({
 							text: i.fbt._("Something went wrong duplicating {multiName}", [i.fbt._param("multiName", s)], {
 								hk: "4bzN2D"
 							})
@@ -387,15 +387,15 @@
 							displayText: b
 						} = m;
 						if (!b) return;
-						const g = s.map(e => `/user/${b.toLowerCase()}/m/${e.toLowerCase()}`).join(","),
-							j = `${"profile"===r.type?a.kc:""}${r.name}`,
+						const j = s.map(e => `/user/${b.toLowerCase()}/m/${e.toLowerCase()}`).join(","),
+							g = `${"profile"===r.type?a.lc:""}${r.name}`,
 							y = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 								endpoint: Object(O.a)(`${e.apiUrl}/api/multi/bulk_add/r/${t}`),
 								data: {
 									paths: r
 								},
 								method: a.kb.PUT
-							}))(c(), j, g);
+							}))(c(), g, j);
 						if (y.ok) {
 							const d = Object(q.J)(l, {
 									identifier: r
@@ -448,13 +448,13 @@
 						}));
 						const {
 							displayText: b
-						} = m, g = Object(E.h)(b, r), j = `${"profile"===d?a.kc:""}${s}`, y = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
+						} = m, j = Object(E.h)(b, r), g = `${"profile"===d?a.lc:""}${s}`, y = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 							endpoint: Object(O.a)(`${e.apiUrl}/api/multi${r}r/${t}`),
 							method: a.kb.DELETE
-						}))(c(), j, g);
+						}))(c(), g, j);
 						y.ok ? (e(Object(u.f)()), e(se({
 							id: t,
-							multipath: g,
+							multipath: j,
 							type: d
 						})), e(Object(p.f)({
 							text: i.fbt._("{subredditname} removed from your custom feed!", [i.fbt._param("subredditname", s)], {
@@ -611,8 +611,8 @@
 				h = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				x = r("./src/reddit/helpers/getTimeSortForListing/index.ts"),
 				O = r("./src/reddit/helpers/graphql/normalizeMultiredditListingFromGql/index.ts"),
-				g = r("./src/reddit/models/Multireddit/index.ts"),
-				j = r("./src/reddit/models/Toast/index.ts"),
+				j = r("./src/reddit/models/Multireddit/index.ts"),
+				g = r("./src/reddit/models/Toast/index.ts"),
 				y = r("./src/reddit/models/User/index.ts"),
 				_ = r("./src/reddit/selectors/multireddit.ts"),
 				C = r("./src/reddit/selectors/user.ts"),
@@ -635,7 +635,7 @@
 						key: e
 					})), s.layout = f.e[Object(h.R)(b, {})];
 					const x = {
-							path: Object(g.h)(t, r).replace(/\/$/, ""),
+							path: Object(j.h)(t, r).replace(/\/$/, ""),
 							includeIdentity: !0,
 							includeSources: !0,
 							sort: s.sort ? s.sort.toUpperCase() : void 0,
@@ -669,7 +669,7 @@
 						})
 					} else d && n(m.f({
 						id: k,
-						kind: j.b.Error,
+						kind: g.b.Error,
 						text: i.fbt._("Sorry, we couldn't load posts for this page.", null, {
 							hk: "36ypKx"
 						}),
@@ -706,14 +706,14 @@
 						username: o
 					}, f = i();
 					o || (o = f.user.account ? Object(y.e)(f.user.account) : "");
-					const h = Object(g.h)(o, s),
+					const h = Object(j.h)(o, s),
 						O = Object(F.a)(h, c, e.queryParams),
-						j = f.listings.postOrder.ids[O],
+						g = f.listings.postOrder.ids[O],
 						C = f.listings.postOrder.api.error[O],
 						k = f.listings.postOrder.api.pending[O],
 						N = b.E in e.queryParams && e.queryParams[b.E].toUpperCase() || "",
-						T = N in l.ic && l.ic[N];
-					if (k || j && !C && !t) return void(j && (r(u.m({
+						T = N in l.jc && l.jc[N];
+					if (k || g && !C && !t) return void(g && (r(u.m({
 						title: Object(_.f)(i(), m)
 					})), f.sidebarPromotedPosts.firstFetch || r(Object(v.b)(E.a.MULTIREDDIT))));
 					await r(L(O, o, s, {
@@ -780,8 +780,8 @@
 				h = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				x = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				O = r("./src/reddit/helpers/multireddit/index.ts"),
-				g = r("./src/reddit/helpers/trackers/customFeeds.ts"),
-				j = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				j = r("./src/reddit/helpers/trackers/customFeeds.ts"),
+				g = r("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				y = r("./src/reddit/models/Multireddit/index.ts"),
 				_ = r("./src/reddit/selectors/multireddit.ts"),
 				C = r("./src/reddit/components/MultiredditCreateModal/index.m.less"),
@@ -848,7 +848,7 @@
 						const {
 							multiredditParams: e
 						} = this.props;
-						this.props.isDuplicateModal && e ? (this.props.duplicate(this.state.name.trim(), this.state.description.trim()), e.username && this.props.sendEvent(Object(g.b)(Object(y.h)(e.username, e.multiredditName)))) : this.props.create(this.state.name.trim(), this.state.description.trim())
+						this.props.isDuplicateModal && e ? (this.props.duplicate(this.state.name.trim(), this.state.description.trim()), e.username && this.props.sendEvent(Object(j.b)(Object(y.h)(e.username, e.multiredditName)))) : this.props.create(this.state.name.trim(), this.state.description.trim())
 					}
 				}
 				render() {
@@ -866,7 +866,7 @@
 					} = this.state, f = e || r || c;
 					return d.a.createElement(b.a, {
 						forceRedditTheme: !0
-					}, d.a.createElement(m.e, null, d.a.createElement(m.i, null, d.a.createElement(j.a, null, d.a.createElement(m.q, null, n ? i.fbt._("Duplicate This Custom Feed", null, {
+					}, d.a.createElement(m.e, null, d.a.createElement(m.i, null, d.a.createElement(g.a, null, d.a.createElement(m.q, null, n ? i.fbt._("Duplicate This Custom Feed", null, {
 						hk: "owR2J"
 					}) : i.fbt._("Create a Custom Feed", null, {
 						hk: "IDT2Q"
@@ -946,7 +946,7 @@
 			})), r.d(t, "b", (function() {
 				return O
 			})), r.d(t, "c", (function() {
-				return g
+				return j
 			}));
 			var i = r("./node_modules/react/index.js"),
 				s = r.n(i),
@@ -1025,7 +1025,7 @@
 						onKeyDown: c
 					})))
 				},
-				g = e => {
+				j = e => {
 					const {
 						backgroundColorState: t,
 						className: r,
@@ -1119,9 +1119,9 @@
 			})), r.d(t, "b", (function() {
 				return O
 			})), r.d(t, "c", (function() {
-				return g
-			})), r.d(t, "d", (function() {
 				return j
+			})), r.d(t, "d", (function() {
+				return g
 			})), r.d(t, "j", (function() {
 				return y
 			}));
@@ -1141,8 +1141,8 @@
 				h = i.a.div("FormItem", d.a),
 				x = i.a.h3("FormElementTitle", d.a),
 				O = i.a.div("FormElementDescription", d.a),
-				g = i.a.div("FormElementError", d.a),
-				j = i.a.div("FormElementSubGroup", d.a),
+				j = i.a.div("FormElementError", d.a),
+				g = i.a.div("FormElementSubGroup", d.a),
 				y = i.a.li("FormListItem", d.a)
 		},
 		"./src/reddit/controls/Input/index.tsx": function(e, t, r) {
@@ -1322,4 +1322,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.51973caa5098fa913062.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.5703b7a9fa000c1c823b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Poll.b3057c159b7dc267a6ca.js
-// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Poll.7d164959a9c573476f3e.js
+// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Poll"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -68,7 +68,7 @@
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./src/lib/constants/index.ts");
-			const s = [o.sc, o.qb, o.C, o.R, o.lb, o.Tb],
+			const s = [o.tc, o.qb, o.C, o.R, o.lb, o.Tb],
 				i = {
 					[o.Tb]: e => r.fbt._({
 						"*": "{number} seconds",
@@ -100,7 +100,7 @@
 					}, [r.fbt._plural(e, "number")], {
 						hk: "28DQqD"
 					}),
-					[o.sc]: e => r.fbt._({
+					[o.tc]: e => r.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
 					}, [r.fbt._plural(e, "number")], {
@@ -123,13 +123,13 @@
 					[o.qb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[o.sc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[o.tc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					}),
 					[o.qb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "28feBj"
 					}),
-					[o.sc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
+					[o.tc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "10bv8G"
 					})
 				};
@@ -140,7 +140,7 @@
 				const c = Date.now(),
 					l = new Date(e).getTime(),
 					d = {
-						[o.sc]: "",
+						[o.tc]: "",
 						[o.qb]: "",
 						[o.C]: "",
 						[o.R]: "",
@@ -1769,4 +1769,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.b3057c159b7dc267a6ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Poll.7d164959a9c573476f3e.js.map

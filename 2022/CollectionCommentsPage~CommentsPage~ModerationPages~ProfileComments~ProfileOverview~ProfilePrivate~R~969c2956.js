@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.313e70f68539ae07758b.js
-// Retrieved at 4/18/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.5e8519d20871d22ecc01.js
+// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1756,7 +1756,7 @@
 						className: be.a.shareText
 					}, o.fbt._("share", null, {
 						hk: "1eAfZg"
-					}))), []), Ge = !!p && Object(se.e)(p) === K.author, He = Object(re.a)("View--Reports", K.id, pe), Ke = Object(re.a)(l.qc, K.id, pe), qe = Object(N.c)(K), Je = we("-mod-actions-menu", K.id, E, I), ze = Object(N.a)(K), Qe = K.postId, Xe = y === V.g.Large, Ye = !O && Xe || f && P || Se, Ze = !(E || O || C), $e = !(K.authorIsBlocked && Me) && p && K.isGildable && !(K.authorIsBlocked && Te) && !(K.unrepliableReason && Me), et = K.media && K.media.type === $.o.LIVEVIDEO, tt = !!K.recommendationContext, st = K.isSponsored || Object(m.u)(H);
+					}))), []), Ge = !!p && Object(se.e)(p) === K.author, He = Object(re.a)("View--Reports", K.id, pe), Ke = Object(re.a)(l.rc, K.id, pe), qe = Object(N.c)(K), Je = we("-mod-actions-menu", K.id, E, I), ze = Object(N.a)(K), Qe = K.postId, Xe = y === V.g.Large, Ye = !O && Xe || f && P || Se, Ze = !(E || O || C), $e = !(K.authorIsBlocked && Me) && p && K.isGildable && !(K.authorIsBlocked && Te) && !(K.unrepliableReason && Me), et = K.media && K.media.type === $.o.LIVEVIDEO, tt = !!K.recommendationContext, st = K.isSponsored || Object(m.u)(H);
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 						className: Object(c.a)(be.a.flatlistContainer, a)
 					}, r.a.createElement(g.a, {
@@ -4986,4 +4986,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.313e70f68539ae07758b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.5e8519d20871d22ecc01.js.map

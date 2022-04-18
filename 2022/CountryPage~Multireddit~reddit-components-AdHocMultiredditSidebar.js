@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.f9c9a7c6f9127640a42d.js
-// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.314acc0272d080e4f84a.js
+// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -169,8 +169,8 @@
 								displayName: r.toLowerCase()
 							}
 						}).sort((e, t) => e.displayName.localeCompare(t.displayName)),
-						s = r.filter(e => !e.displayName.startsWith(o.kc)).map(e => e.id),
-						n = r.filter(e => e.displayName.startsWith(o.kc)).map(e => e.id);
+						s = r.filter(e => !e.displayName.startsWith(o.lc)).map(e => e.id),
+						n = r.filter(e => e.displayName.startsWith(o.lc)).map(e => e.id);
 					return {
 						created: e.created_utc,
 						description: e.description_md,
@@ -345,7 +345,7 @@
 						} = c,
 						O = Object(l.a)(x, b, y),
 						g = p.E in y && y[p.E].toUpperCase() || "",
-						S = o.ic[g] || !1,
+						S = o.jc[g] || !1,
 						E = Object(T.k)(s);
 					(f || E && E.displayText) && await e(Object(m.multiredditFeedRequested)(O, (f || E.displayText).toLowerCase(), h.toLowerCase(), {
 						...n()(y, p.n),
@@ -425,7 +425,7 @@
 						} = m;
 						if (!p) return;
 						const O = s.map(e => `/user/${p.toLowerCase()}/m/${e.toLowerCase()}`).join(","),
-							g = `${"profile"===i.type?o.kc:""}${i.name}`,
+							g = `${"profile"===i.type?o.lc:""}${i.name}`,
 							S = await ((e, t, i) => Object(h.a)(Object(f.a)(e, [x.a]), {
 								endpoint: Object(y.a)(`${e.apiUrl}/api/multi/bulk_add/r/${t}`),
 								data: {
@@ -485,7 +485,7 @@
 						}));
 						const {
 							displayText: p
-						} = m, O = Object(I.h)(p, i), g = `${"profile"===n?o.kc:""}${s}`, S = await ((e, t, i) => Object(h.a)(Object(f.a)(e, [x.a]), {
+						} = m, O = Object(I.h)(p, i), g = `${"profile"===n?o.lc:""}${s}`, S = await ((e, t, i) => Object(h.a)(Object(f.a)(e, [x.a]), {
 							endpoint: Object(y.a)(`${e.apiUrl}/api/multi${i}r/${t}`),
 							method: o.kb.DELETE
 						}))(c(), g, O);
@@ -749,7 +749,7 @@
 						j = h.listings.postOrder.api.error[y],
 						C = h.listings.postOrder.api.pending[y],
 						_ = p.E in e.queryParams && e.queryParams[p.E].toUpperCase() || "",
-						P = _ in l.ic && l.ic[_];
+						P = _ in l.jc && l.jc[_];
 					if (C || g && !j && !t) return void(g && (i(u.m({
 						title: Object(E.f)(r(), m)
 					})), h.sidebarPromotedPosts.firstFetch || i(Object(v.b)(I.a.MULTIREDDIT))));
@@ -1375,7 +1375,7 @@
 								} = this.state;
 								if (e.length) {
 									const t = Object(me.h)(e),
-										i = t.startsWith(de.kc) ? "profile" : "subreddit",
+										i = t.startsWith(de.lc) ? "profile" : "subreddit",
 										r = "profile" === i ? t.substring(2) : t;
 									this.props.addSubredditRequested({
 										name: r,
@@ -2570,4 +2570,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.f9c9a7c6f9127640a42d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.314acc0272d080e4f84a.js.map

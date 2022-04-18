@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.64239628e1d28ab9c1ff.js
-// Retrieved at 4/18/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.581b9635291f3fa021ac.js
+// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -706,7 +706,7 @@
 				J = s.n(K);
 			const {
 				fbt: q
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, z = l.rc, $ = l.rc, Q = Object(c.a)(U.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, z = l.sc, $ = l.sc, Q = Object(c.a)(U.a, {
 				playerName: "RPAN DU Video Player"
 			}), X = Object(i.b)(() => Object(o.c)({
 				autoplay: A.b,
@@ -1909,4 +1909,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.64239628e1d28ab9c1ff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.581b9635291f3fa021ac.js.map

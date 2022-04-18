@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.e547b781f929783f3608.js
-// Retrieved at 4/18/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.1a772d473cc45f96ca6d.js
+// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4117,7 +4117,7 @@
 				he = s.n(be);
 			const fe = 10,
 				xe = Object(c.a)((e, t) => t.subredditName, e => Object(_.a)(e, l.X.TOP, {
-					t: l.ic.WEEK
+					t: l.jc.WEEK
 				})),
 				ve = Object(c.c)({
 					discoveryUnit: e => Object(me.b)(e, {
@@ -4197,7 +4197,7 @@
 						loadMorePosts: () => e(Object(I.r)({
 							sort: l.X.TOP,
 							subredditName: s,
-							t: l.ic.WEEK
+							t: l.jc.WEEK
 						}))
 					}
 				})(Object(de.c)(ge)),
@@ -5504,4 +5504,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.e547b781f929783f3608.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.1a772d473cc45f96ca6d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.f3ca0d9c29580e8097f4.js
-// Retrieved at 4/13/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.bc5d2dff884ac1d026e1.js
+// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditAddSubredditModal"], {
 		"./node_modules/lodash/without.js": function(e, t, r) {
@@ -141,8 +141,8 @@
 								displayName: i.toLowerCase()
 							}
 						}).sort((e, t) => e.displayName.localeCompare(t.displayName)),
-						s = i.filter(e => !e.displayName.startsWith(a.kc)).map(e => e.id),
-						d = i.filter(e => e.displayName.startsWith(a.kc)).map(e => e.id);
+						s = i.filter(e => !e.displayName.startsWith(a.lc)).map(e => e.id),
+						d = i.filter(e => e.displayName.startsWith(a.lc)).map(e => e.id);
 					return {
 						created: e.created_utc,
 						description: e.description_md,
@@ -317,7 +317,7 @@
 						} = c,
 						O = Object(l.a)(x, b, g),
 						j = p.E in g && g[p.E].toUpperCase() || "",
-						y = a.ic[j] || !1,
+						y = a.jc[j] || !1,
 						C = Object(I.k)(s);
 					(h || C && C.displayText) && await e(Object(m.multiredditFeedRequested)(O, (h || C.displayText).toLowerCase(), f.toLowerCase(), {
 						...d()(g, p.n),
@@ -397,7 +397,7 @@
 						} = m;
 						if (!p) return;
 						const O = s.map(e => `/user/${p.toLowerCase()}/m/${e.toLowerCase()}`).join(","),
-							j = `${"profile"===r.type?a.kc:""}${r.name}`,
+							j = `${"profile"===r.type?a.lc:""}${r.name}`,
 							y = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 								endpoint: Object(g.a)(`${e.apiUrl}/api/multi/bulk_add/r/${t}`),
 								data: {
@@ -457,7 +457,7 @@
 						}));
 						const {
 							displayText: p
-						} = m, O = Object(F.h)(p, r), j = `${"profile"===d?a.kc:""}${s}`, y = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
+						} = m, O = Object(F.h)(p, r), j = `${"profile"===d?a.lc:""}${s}`, y = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 							endpoint: Object(g.a)(`${e.apiUrl}/api/multi${r}r/${t}`),
 							method: a.kb.DELETE
 						}))(c(), j, O);
@@ -721,7 +721,7 @@
 						_ = f.listings.postOrder.api.error[g],
 						S = f.listings.postOrder.api.pending[g],
 						E = p.E in e.queryParams && e.queryParams[p.E].toUpperCase() || "",
-						w = E in l.ic && l.ic[E];
+						w = E in l.jc && l.jc[E];
 					if (S || j && !_ && !t) return void(j && (r(u.m({
 						title: Object(C.f)(i(), m)
 					})), f.sidebarPromotedPosts.firstFetch || r(Object(N.b)(F.a.MULTIREDDIT))));
@@ -1492,4 +1492,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.f3ca0d9c29580e8097f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditAddSubredditModal.bc5d2dff884ac1d026e1.js.map
