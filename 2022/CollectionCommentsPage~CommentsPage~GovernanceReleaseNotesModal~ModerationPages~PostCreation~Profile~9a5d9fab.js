@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.420773f7994324e01cc9.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.561cf8b3b896680e4d5a.js
+// Retrieved at 4/18/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -926,7 +926,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const f = 350,
+			const f = 550,
 				v = 100,
 				E = 300;
 
@@ -955,6 +955,7 @@
 				}, [T, t]), o.a.createElement(m.a, x({}, s, {
 					alwaysWrapMedia: !0,
 					height: N + 8,
+					isTweet: !0,
 					showFull: !s.isListing,
 					width: f
 				}), t && o.a.createElement("div", {
@@ -979,6 +980,7 @@
 					className: Object(r.a)(g.a.tweetEmbedBox, {
 						[g.a.isInvisible]: !I || M
 					}),
+					fullWidth: !0,
 					height: N,
 					isListing: s.isListing,
 					isResponsive: !0,
@@ -987,8 +989,7 @@
 					showCentered: s.showCentered,
 					showFull: !0,
 					source: O,
-					title: w,
-					width: f
+					title: w
 				}), s.isListing && N > p.j && o.a.createElement("div", {
 					className: g.a.seeMore
 				}, i.fbt._("See full tweet", null, {
@@ -2143,4 +2144,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.420773f7994324e01cc9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.561cf8b3b896680e4d5a.js.map
