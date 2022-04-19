@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.715b18cf66a220281905.js
-// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.83fe861567a83594827e.js
+// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -6594,14 +6594,14 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-					experimentName: r.Zd,
+					experimentName: r.be,
 					experimentEligibilitySelector: s.a
-				}) === r.je.Enabled,
+				}) === r.le.Enabled,
 				i = e => Object(s.c)(e, {
-					experimentName: r.ae,
+					experimentName: r.ce,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === r.ke.Enabled
+				}) === r.me.Enabled
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -6642,7 +6642,7 @@
 					return r ? r * s.Tb < 1639443600180 ? void 0 : f(e) : void 0
 				},
 				f = Object(r.a)(e => Object(a.c)(e, {
-					experimentName: o.ce,
+					experimentName: o.ee,
 					experimentEligibilitySelector: c.e
 				}), d.a)
 		},
@@ -6750,4 +6750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.715b18cf66a220281905.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.83fe861567a83594827e.js.map

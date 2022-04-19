@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.4df7c7820500403f5ea7.js
-// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.9b7e372e8df3c1676347.js
+// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return T
+				return E
 			}));
 			var s = r("./node_modules/react/index.js"),
 				i = r.n(s),
@@ -94,7 +94,7 @@
 				P = Object.prototype,
 				_ = P.hasOwnProperty,
 				j = P.toString,
-				E = function(e) {
+				T = function(e) {
 					return y.reduce((function(t, r) {
 						if (_.call(e, r)) {
 							var s = "root" === r && "[object String]" === j.call(e[r]);
@@ -103,7 +103,7 @@
 						return t
 					}), {})
 				},
-				T = function(e) {
+				E = function(e) {
 					var t, r;
 
 					function s() {
@@ -118,7 +118,7 @@
 							}
 							t.targetNode = e && Object(n.findDOMNode)(e)
 						})), O(g(t), "observe", (function() {
-							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = b(E(t.props)), t.target = t.targetNode, e = g(t), d.has(e.observer) || d.set(e.observer, new Set), d.get(e.observer).add(e), e.observer.observe(e.target), !0) : (f.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
+							return null != t.props.children && !t.props.disabled && (t.targetNode ? (t.observer = b(T(t.props)), t.target = t.targetNode, e = g(t), d.has(e.observer) || d.set(e.observer, new Set), d.get(e.observer).add(e), e.observer.observe(e.target), !0) : (f.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
 						})), O(g(t), "unobserve", (function(e) {
 							! function(e, t) {
@@ -154,7 +154,7 @@
 						}) : null
 					}, s
 				}(i.a.Component);
-			O(T, "displayName", "IntersectionObserver")
+			O(E, "displayName", "IntersectionObserver")
 		},
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/factoryWithThrowingShims.js": function(e, t, r) {
 			"use strict";
@@ -429,10 +429,10 @@
 				P = r("./src/lib/constants/index.ts"),
 				_ = r("./src/lib/makeApiRequest/index.ts"),
 				j = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				E = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const T = (e, t, r) => Object(_.a)(e, {
+				T = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const E = (e, t, r) => Object(_.a)(e, {
 				data: r,
-				endpoint: Object(j.a)(Object(v.a)(Object(E.a)(`${y.a.gatewayUrl}/desktopapi/v1/user/${t}/posts`))),
+				endpoint: Object(j.a)(Object(v.a)(Object(T.a)(`${y.a.gatewayUrl}/desktopapi/v1/user/${t}/posts`))),
 				method: P.kb.GET
 			}).then(e => "pinned" in e.body ? e : "postIds" in e.body ? {
 				...e,
@@ -461,9 +461,9 @@
 						t: P
 					} = Object(l.b)(n), {
 						profileName: _
-					} = y, j = Object(o.a)(`u_${_}`, v, n), E = r(), I = Object(a.a)(E.listings.postOrder.ids, j), A = Object(x.c)(E, {
+					} = y, j = Object(o.a)(`u_${_}`, v, n), T = r(), I = Object(a.a)(T.listings.postOrder.ids, j), A = Object(x.c)(T, {
 						listingKey: j
-					}), M = Object(x.d)(E, {
+					}), M = Object(x.d)(T, {
 						listingKey: j
 					});
 					if (await t(p.d(_)), M || I && !A) {
@@ -479,14 +479,14 @@
 					}
 					const F = {
 						...i()(e.queryParams, [...g.n, ...g.m, g.j]),
-						layout: Object(O.R)(E, {}).toLowerCase(),
+						layout: Object(O.R)(T, {}).toLowerCase(),
 						sort: v,
 						t: Object(w.a)(v, P)
 					};
 					t(R({
 						key: j
 					}));
-					const L = await Object(S.a)("profilePosts", () => T(s.apiContext(), _, F));
+					const L = await Object(S.a)("profilePosts", () => E(s.apiContext(), _, F));
 					if (!L.ok) return t(k({
 						account: L.body.data ? L.body.data.account : null,
 						error: L.body.reason ? {
@@ -552,14 +552,14 @@
 							...i()(c, g.n),
 							layout: Object(O.R)(a, {}).toLowerCase()
 						},
-						_ = await T(s(), p, P),
+						_ = await E(s(), p, P),
 						j = _.body,
-						E = a.listings.postOrder.ids[h],
+						T = a.listings.postOrder.ids[h],
 						w = j.postIds || [];
 					await Object(C.a)(n, j.posts).then(e => j.posts = e);
 					const S = {
 						...j,
-						postIds: w.filter(e => !E || !E.includes(e))
+						postIds: w.filter(e => !T || !T.includes(e))
 					};
 					_.ok ? (e(B({
 						fetchedToken: f.token,
@@ -591,7 +591,7 @@
 			})), r.d(t, "b", (function() {
 				return j
 			})), r.d(t, "e", (function() {
-				return E
+				return T
 			})), r.d(t, "i", (function() {
 				return A
 			}));
@@ -616,9 +616,9 @@
 				P = Object(n.a)(y),
 				_ = Object(n.a)(v),
 				j = "PINNEDPOST__PIN_POST_FAILURE",
-				E = "PINNEDPOST__UNPIN_POST_FAILURE",
-				T = Object(n.a)(j),
-				w = Object(n.a)(E),
+				T = "PINNEDPOST__UNPIN_POST_FAILURE",
+				E = Object(n.a)(j),
+				w = Object(n.a)(T),
 				C = e => Object(a.f)({
 					buttonAction: A(e, !0),
 					buttonText: s.fbt._("UNDO", null, {
@@ -674,7 +674,7 @@
 						if (p && m.isRemoved) return r(D());
 						const h = m.author,
 							f = Object(b.m)(u, h),
-							[y, v, j, E, A] = p ? [P, g, T, C, x] : [_, O, w, S, I];
+							[y, v, j, T, A] = p ? [P, g, E, C, x] : [_, O, w, S, I];
 						if (p) {
 							if (Object(l.P)(u, {
 									profileName: h
@@ -688,7 +688,7 @@
 						})), (await Object(c.t)(a(), e, p, !0)).ok ? (r(v({
 							postId: e,
 							profileId: f
-						})), t || r(E(e, R))) : (r(j({
+						})), t || r(T(e, R))) : (r(j({
 							postId: e,
 							profileId: f
 						})), r(A()))
@@ -702,9 +702,9 @@
 			})), r.d(t, "b", (function() {
 				return j
 			})), r.d(t, "a", (function() {
-				return E
-			})), r.d(t, "d", (function() {
 				return T
+			})), r.d(t, "d", (function() {
+				return E
 			})), r.d(t, "c", (function() {
 				return w
 			}));
@@ -738,18 +738,18 @@
 					} = e, O = Object(f.e)(a), y = O && !p && Object(l.a)(O.name, m), P = a.creations.api.subreddit.change.pending;
 					if (y || P) return;
 					const _ = Object(u.v)(t);
-					if (!m) return void r(E(e, _));
+					if (!m) return void r(T(e, _));
 					r(v(e));
 					const j = p ? {
 						profileName: m
 					} : {
 						subredditName: m
 					};
-					if (await r(Object(c.postCreationPageDataRequested)(j)), p || !Object(h.C)(a)) return r(E(e, _));
-					const T = e.allowedPostTypes || Object(g.x)(s(), {
+					if (await r(Object(c.postCreationPageDataRequested)(j)), p || !Object(h.C)(a)) return r(T(e, _));
+					const E = e.allowedPostTypes || Object(g.x)(s(), {
 						subredditName: m
 					});
-					if (!T) return void r(E(e, _));
+					if (!E) return void r(T(e, _));
 					let w;
 					a = s();
 					const C = Object(h.mb)(a),
@@ -759,19 +759,19 @@
 							t = Object(b.x)(e),
 							r = Object(h.N)(a) && e.items.length > 1,
 							s = !t && !r;
-						if (r && !T.galleries) w = b.q.GalleryWillBeRemovedGalleryNotAllowed;
-						else if (s && !T.images) w = b.q.ImageWillBeRemoved;
-						else if (t && !T.videos) {
+						if (r && !E.galleries) w = b.q.GalleryWillBeRemovedGalleryNotAllowed;
+						else if (s && !E.images) w = b.q.ImageWillBeRemoved;
+						else if (t && !E.videos) {
 							const t = a.uploads[e.items[0].uploadKey],
 								r = t && t.metadata.videoDuration || 0;
-							T.images ? r > n.hb && (w = b.q.VideoWillBeRemovedTooLongForGif) : w = b.q.VideoWillBeRemovedMediaNotAllowed
+							E.images ? r > n.hb && (w = b.q.VideoWillBeRemovedTooLongForGif) : w = b.q.VideoWillBeRemovedMediaNotAllowed
 						}
 					}
-					r(w ? Object(d.i)(w) : E({
+					r(w ? Object(d.i)(w) : T({
 						...e,
-						allowedPostTypes: T
+						allowedPostTypes: E
 					}, _))
-				}, E = function(e, t) {
+				}, T = function(e, t) {
 					let r = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2];
 					return async (n, o) => {
 						const {
@@ -784,7 +784,7 @@
 							draft: t || u.draft
 						}), (t || c.url.toLowerCase() !== b.toLowerCase()) && (n(P(e)), r && n(Object(y.t)(!0)), n(Object(y.i)()), n(Object(s.c)(b)))
 					}
-				}, T = e => async (t, r) => {
+				}, E = e => async (t, r) => {
 					const n = r().platform.currentPage,
 						o = n.queryParams,
 						a = Object(i.a)(n.url, {
@@ -907,8 +907,8 @@
 				P = r("./src/reddit/models/PostCreationForm/index.ts"),
 				_ = r("./src/reddit/helpers/trackers/postComposer.ts"),
 				j = r("./src/reddit/models/Toast/index.ts"),
-				E = r("./src/reddit/models/User/index.ts"),
-				T = r("./src/reddit/selectors/postCreations.ts"),
+				T = r("./src/reddit/models/User/index.ts"),
+				E = r("./src/reddit/selectors/postCreations.ts"),
 				w = r("./src/reddit/selectors/postDraft.ts"),
 				C = r("./src/reddit/selectors/profile.ts"),
 				S = r("./src/reddit/selectors/subreddit.ts"),
@@ -937,7 +937,7 @@
 					} = n;
 					const c = r(),
 						b = Object(w.g)(c),
-						p = Object(T.bb)(c);
+						p = Object(E.bb)(c);
 					if (b || p) return;
 					const h = Object(w.h)(c, e);
 					if (!h) return;
@@ -994,7 +994,7 @@
 							name: t.name
 						} : r && s && (n = {
 							isProfile: !0,
-							name: Object(E.e)(s)
+							name: Object(T.e)(s)
 						})
 					}
 					await t(Object(a.a)(n, e.id, !1));
@@ -1265,8 +1265,8 @@
 				P = [c.c, c.e, c.l, c.j, c.a, c.b],
 				_ = [c.c, c.l, c.j, c.a],
 				j = [c.c, c.e, c.l, c.b],
-				E = e => "boolean" == typeof e.cumulative && e.cumulative,
-				T = Object(a.c)({
+				T = e => "boolean" == typeof e.cumulative && e.cumulative,
+				E = Object(a.c)({
 					continuousViewingStartedAt: (e, t) => {
 						let {
 							post: r
@@ -1302,7 +1302,7 @@
 						})
 					}
 				}),
-				w = Object(b.a)(T);
+				w = Object(b.a)(E);
 			class C extends n.Component {
 				constructor(e) {
 					super(e), this.viewabilityStats = y(), this.videoStats = v(), this.pageInFocus = !0, this.inViewStats = [], this.outOfViewStats = [], this.handleViewabilityChange = e => {
@@ -1332,9 +1332,9 @@
 						trackVideo: r
 					} = this.props;
 					this.visibilityChangeSubscriptionId && l.a.unsubscribe(this.visibilityChangeSubscriptionId), t && (u.d(e.id, c.r, !1), this.viewabilityStats.forEach(e => {
-						E(e) && e.cumulative && this.pauseCumulativeStats(e), this.clearTimer(e)
+						T(e) && e.cumulative && this.pauseCumulativeStats(e), this.clearTimer(e)
 					})), r && (u.d(e.id, c.p, !0), this.videoStats.forEach(e => {
-						E(e) && e.cumulative && this.pauseCumulativeStats(e), this.clearTimer(e)
+						T(e) && e.cumulative && this.pauseCumulativeStats(e), this.clearTimer(e)
 					})), this.outOfViewStats = [], this.inViewStats = []
 				}
 				componentDidUpdate() {
@@ -1391,13 +1391,13 @@
 					return !t.threshold && t.event === m.a.VideoGroupMViewable && this.props.videoDuration && (t.threshold = s * r < 3e5 ? c.a : c.j, t.viewabilityMinimum = .5 * this.props.videoDuration), t.event === m.a.GroupMViewable && s * r > 242500 && (t.threshold = c.l), t
 				}
 				checkViewability(e, t) {
-					if (E(t) && t.event === m.a.VideoVendorFullyViewable50 && this.addDurationBasedViewabilityMinimum(t), e && e.target && this.adjustThreshold(e, t), t.threshold && void 0 !== t.viewabilityMinimum) {
+					if (T(t) && t.event === m.a.VideoVendorFullyViewable50 && this.addDurationBasedViewabilityMinimum(t), e && e.target && this.adjustThreshold(e, t), t.threshold && void 0 !== t.viewabilityMinimum) {
 						if (this.isAdequatelyInView(e, t.threshold) && !t.fired) {
 							if (t.timer) return;
 							const e = this.getLengthForTimer(t);
 							return e > 0 ? this.initTimer(t, e) : this.fireStat(t), void(t.timeViewingInitialized = Date.now())
 						}
-						E(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t)
+						T(t) && t.cumulative && this.pauseCumulativeStats(t), this.clearTimer(t)
 					}
 				}
 				clearTimer(e) {
@@ -1791,8 +1791,8 @@
 				P = r("./src/reddit/actions/pages/profileComments/constants.ts"),
 				_ = r("./src/reddit/actions/pages/profileOverview/constants.ts"),
 				j = r("./src/reddit/actions/pages/profilePosts.ts"),
-				E = r("./src/reddit/actions/pages/search/index.ts"),
-				T = r("./src/reddit/actions/pages/subreddit.ts"),
+				T = r("./src/reddit/actions/pages/search/index.ts"),
+				E = r("./src/reddit/actions/pages/subreddit.ts"),
 				w = r("./src/reddit/actions/pages/topic.ts"),
 				C = r("./src/reddit/actions/postCreation/constants.ts"),
 				S = r("./src/reddit/actions/postDraft.ts"),
@@ -2054,7 +2054,7 @@
 					case f.d:
 					case f.h:
 					case m.b:
-					case T.SUBREDDIT_LOADED:
+					case E.SUBREDDIT_LOADED:
 					case O.b:
 					case O.a:
 					case P.e:
@@ -2069,7 +2069,7 @@
 					case v.PAGE_LOADED:
 					case x.j:
 					case x.b:
-					case E.c:
+					case T.c:
 					case x.a:
 					case R.c:
 					case w.TOPIC_DATA_LOADED:
@@ -2245,32 +2245,32 @@
 				o = r("./src/reddit/selectors/experiments/index.ts"),
 				a = r("./src/reddit/selectors/experiments/utils.ts");
 			const d = Object(s.a)(e => Object(n.c)(e, {
-					experimentName: i.Gb,
+					experimentName: i.Hb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				c = Object(s.a)(d, e => e === i.Pd.Enabled),
+				c = Object(s.a)(d, e => e === i.Rd.Enabled),
 				u = Object(s.a)(e => Object(n.c)(e, {
-					experimentName: i.Kd,
+					experimentName: i.Md,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				l = Object(s.a)(c, u, (e, t) => e && t === i.Od.Enabled),
+				l = Object(s.a)(c, u, (e, t) => e && t === i.Qd.Enabled),
 				b = Object(s.a)(e => Object(n.c)(e, {
-					experimentName: i.Xb,
+					experimentName: i.Yb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				m = Object(s.a)(c, b, (e, t) => e && t === i.qc.Enabled),
+				m = Object(s.a)(c, b, (e, t) => e && t === i.sc.Enabled),
 				p = Object(s.a)(e => Object(n.c)(e, {
-					experimentName: i.Eb,
-					experimentEligibilitySelector: o.e
-				}), a.a),
-				h = Object(s.a)(p, e => e === i.Md.ContinuousScroll),
-				f = Object(s.a)(e => Object(n.c)(e, {
 					experimentName: i.Fb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				g = Object(s.a)(f, e => e === i.Nd.Enabled),
+				h = Object(s.a)(p, e => e === i.Od.ContinuousScroll),
+				f = Object(s.a)(e => Object(n.c)(e, {
+					experimentName: i.Gb,
+					experimentEligibilitySelector: o.e
+				}), a.a),
+				g = Object(s.a)(f, e => e === i.Pd.Enabled),
 				O = Object(s.a)(e => Object(n.c)(e, {
-					experimentName: i.Pb,
+					experimentName: i.Qb,
 					experimentEligibilitySelector: () => !0
 				}), a.a),
 				y = Object(s.a)(O, e => e === i.hb.Enabled)
@@ -2280,4 +2280,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.4df7c7820500403f5ea7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.9b7e372e8df3c1676347.js.map

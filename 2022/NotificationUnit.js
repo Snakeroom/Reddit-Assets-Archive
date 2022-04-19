@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.2d492d655fae3402c2a2.js
-// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.12cbfb443bc5af951bee.js
+// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -446,8 +446,8 @@
 					var t, i, n, s, C, S, U, k, j, M, L, P;
 					const R = Object(x.a)(),
 						D = Object(v.d)(),
-						H = Object(v.e)(T.db),
-						V = Object(v.e)(g.d),
+						V = Object(v.e)(T.db),
+						H = Object(v.e)(g.d),
 						F = Object(v.e)(g.e),
 						B = Object(v.e)(g.a),
 						W = Object(v.e)(g.b),
@@ -481,9 +481,9 @@
 						title: me
 					} = J, fe = null == oe ? void 0 : oe.messageType, xe = null === (i = null === (t = null == oe ? void 0 : oe.comment) || void 0 === t ? void 0 : t.parent) || void 0 === i ? void 0 : i.id, Ne = null === (n = null == oe ? void 0 : oe.post) || void 0 === n ? void 0 : n.id, Ee = null == oe ? void 0 : oe.post, ve = null === (s = null == oe ? void 0 : oe.subreddit) || void 0 === s ? void 0 : s.id, Ie = null == oe ? void 0 : oe.isBodyHidden, Oe = null == oe ? void 0 : oe.isPostHidden, ge = !pe, Te = `notif-${$?"tooltip":""}-menu-${ue}`, Ce = Te === q, Ae = oe.messageType === N.a.CommentReply, _e = Ae ? xe : Ne, we = Object(d.a)(e.className, A.a.notificationItem, {
 						[A.a.unread]: ge && !Q,
-						[A.a.isNightMode]: H,
+						[A.a.isNightMode]: V,
 						[A.a.inAppNotification]: Q
-					}), he = V || B || W || K || F, ye = {
+					}), he = H || B || W || K || F, ye = {
 						id: ue,
 						isClicked: !!pe,
 						isViewed: !0,
@@ -504,10 +504,10 @@
 								actionInfoType: e
 							}))
 						},
-						He = () => {
+						Ve = () => {
 							e.markNotificationAsRead(ue, fe)
 						},
-						Ve = e => {
+						He = e => {
 							if (Q) return R(Object(f.h)({
 								...ye,
 								...e
@@ -552,14 +552,14 @@
 							notificationId: ue,
 							isUnread: ge,
 							isFullWidth: $,
-							onEvent: Ve,
-							isInboxCTAsV2ReplyEnabled: V,
+							onEvent: He,
+							isInboxCTAsV2ReplyEnabled: H,
 							isInboxCTAsV2All1Enabled: B,
 							isInboxCTAsV2All2Enabled: W,
 							isInboxCTAsV2ReplyPcEnabled: K,
 							isInboxCTAsV2SeePostEnabled: F,
 							deeplinkUrl: Le,
-							isNightMode: H,
+							isNightMode: V,
 							isInAppNotification: Q
 						})), Q && (null == oe ? void 0 : oe.post) ? c.a.createElement(p.b, {
 							isInAppNotification: !0,
@@ -576,15 +576,15 @@
 										hk: "3sVhIi"
 									}),
 									duration: I.a
-								}))) : $ && te && te(), Ve({
+								}))) : $ && te && te(), He({
 									postId: Ne,
 									subredditId: ve,
 									awardId: Me,
 									position: f.d.FIRST
 								})
 							},
-							onMouseDown: He,
-							onKeyDown: He
+							onMouseDown: Ve,
+							onKeyDown: Ve
 						};
 					return c.a.createElement(c.a.Fragment, null, c.a.createElement("li", {
 						className: we
@@ -1276,20 +1276,20 @@
 				a = i("./src/reddit/selectors/experiments/index.ts"),
 				s = i("./src/reddit/selectors/experiments/utils.ts");
 			const r = e => Object(o.c)(e, {
-					experimentName: n.Hb,
+					experimentName: n.Ib,
 					experimentEligibilitySelector: a.e
 				}) === n.W.topOfFeedWithCTAs,
 				c = e => (e => Object(o.c)(e, {
-					experimentName: n.Hb,
+					experimentName: n.Ib,
 					experimentEligibilitySelector: a.e
 				}) === n.W.topOfFeedNoCTAs)(e) || r(e),
 				d = e => Object(o.c)(e, {
-					experimentName: n.Hb,
+					experimentName: n.Ib,
 					experimentEligibilitySelector: a.e
 				}) === n.W.floatInFeed,
 				l = e => {
 					const t = Object(o.c)(e, {
-						experimentName: n.Hb,
+						experimentName: n.Ib,
 						experimentEligibilitySelector: a.e
 					});
 					return Object(s.a)(t)
@@ -1315,15 +1315,15 @@
 				r = i("./src/reddit/selectors/user.ts");
 			const c = e => Object(r.P)(e) || Object(r.Q)(e),
 				d = Object(n.a)(e => Object(a.c)(e, {
-					experimentName: o.Db,
+					experimentName: o.Eb,
 					experimentEligibilitySelector: c
 				}), s.a),
-				l = Object(n.a)(d, e => e === o.Ld.SeePostCTAs),
-				u = Object(n.a)(d, e => e === o.Ld.ReplyCTAs),
-				p = Object(n.a)(d, e => e === o.Ld.AllCTAs1),
-				b = Object(n.a)(d, e => e === o.Ld.AllCTAs2),
-				m = Object(n.a)(d, e => e === o.Ld.ReplyPc)
+				l = Object(n.a)(d, e => e === o.Nd.SeePostCTAs),
+				u = Object(n.a)(d, e => e === o.Nd.ReplyCTAs),
+				p = Object(n.a)(d, e => e === o.Nd.AllCTAs1),
+				b = Object(n.a)(d, e => e === o.Nd.AllCTAs2),
+				m = Object(n.a)(d, e => e === o.Nd.ReplyPc)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.2d492d655fae3402c2a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.12cbfb443bc5af951bee.js.map
