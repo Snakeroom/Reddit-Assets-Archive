@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.80d4af4c50a518b231fc.js
-// Retrieved at 4/19/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.504a1724ec3e07479b7d.js
+// Retrieved at 4/19/2022, 5:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("163104"),
+				buildNumber: Object(r.c)("163108"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1650399412"),
+				buildTimestamp: Object(r.b)("1650401535"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6082,14 +6082,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c9c3d1a648e161a4834726519c49091457df19c28-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c7ec0e4feb48fd9c00457d2404801c5818dcc1aaf-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "9c3d1a648e161a4834726519c49091457df19c28-production",
+						release: "7ec0e4feb48fd9c00457d2404801c5818dcc1aaf-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6698,7 +6698,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "9c3d1a648e161a4834726519c49091457df19c28-production",
+							releaseClient: "7ec0e4feb48fd9c00457d2404801c5818dcc1aaf-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -27252,17 +27252,18 @@
 					}),
 					noun: "ad"
 				}),
-				b = (e, t, i) => n => ({
+				b = (e, t, i, n) => r => ({
 					action: s.c.VIEW,
-					actionInfo: u.d(n, {
+					actionInfo: u.d(r, {
 						paneName: u.b.SearchDropdown,
 						position: i
 					}),
 					metaSearch: u.C(t),
 					noun: e,
-					screen: u.Y(n),
-					search: u.nb(n, t),
-					source: _.SEARCH
+					screen: u.Y(r),
+					search: u.nb(r, t),
+					source: _.SEARCH,
+					...n ? y(r, n) : {}
 				}),
 				g = (e, t) => i => ({
 					action: s.c.CLICK,
@@ -47285,4 +47286,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.80d4af4c50a518b231fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.504a1724ec3e07479b7d.js.map
