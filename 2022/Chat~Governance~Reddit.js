@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e23e16ba57fea09dc74e.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fe9e45a0d23572c2b96a.js
+// Retrieved at 4/19/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("162980"),
+				buildNumber: Object(r.c)("162996"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1650374026"),
+				buildTimestamp: Object(r.b)("1650378315"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6081,14 +6081,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c61f022ab57a087472668213fd6ce4d460226b3e4-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c21c2f75b7ad36dd69971a3b4a6579ca3671a4e89-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "61f022ab57a087472668213fd6ce4d460226b3e4-production",
+						release: "21c2f75b7ad36dd69971a3b4a6579ca3671a4e89-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(k.d)(), new d.Integrations.Breadcrumbs({
@@ -6697,7 +6697,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "61f022ab57a087472668213fd6ce4d460226b3e4-production",
+							releaseClient: "21c2f75b7ad36dd69971a3b4a6579ca3671a4e89-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -21193,8 +21193,10 @@
 			"use strict";
 			i.d(t, "a", (function() {
 				return n
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "c", (function() {
 				return l
+			})), i.d(t, "b", (function() {
+				return u
 			}));
 			var n, r = i("./src/lib/constants/index.ts"),
 				s = i("./src/reddit/constants/history.ts"),
@@ -21202,7 +21204,18 @@
 				d = i("./node_modules/uuid/v4.js"),
 				a = i.n(d);
 
-			function l(e) {
+			function l(e, t) {
+				let i = !(arguments.length > 2 && void 0 !== arguments[2]) || arguments[2];
+				return {
+					[s.b.SearchOriginPage]: t,
+					...i && {
+						[s.b.ClickId]: a()(),
+						[s.b.ClickSource]: e
+					}
+				}
+			}
+
+			function u(e) {
 				var t;
 				let i = e ? Object(o.u)(e) : void 0;
 				if (i === n.SEARCH_RESULTS)
@@ -21233,7 +21246,7 @@
 					[s.b.ClickSourceFeedCorrelationId]: d
 				}
 			}! function(e) {
-				e.SEARCH_RESULTS = "search_results", e.SEARCH_RESULTS_TRENDING = "search_results_trending", e.SEARCH_COMMENTS_TAB = "search_comments_tab", e.SEARCH_COMMUNITIES_TAB = "search_communities_tab", e.SEARCH_AUTHORS_TAB = "search_authors_tab", e.SEARCH_POSTS_TAB = "search_posts_tab", e.TYPEAHEAD = "typeahead"
+				e.SEARCH_RESULTS = "search_results", e.SEARCH_RESULTS_TRENDING = "search_results_trending", e.SEARCH_COMMENTS_TAB = "search_comments_tab", e.SEARCH_COMMUNITIES_TAB = "search_communities_tab", e.SEARCH_AUTHORS_TAB = "search_authors_tab", e.SEARCH_POSTS_TAB = "search_posts_tab", e.TYPEAHEAD = "typeahead", e.SEARCH_DROPDOWN = "search_dropdown"
 			}(n || (n = {}))
 		},
 		"./src/reddit/helpers/cookies/index.ts": function(e, t, i) {
@@ -48630,4 +48643,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e23e16ba57fea09dc74e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.fe9e45a0d23572c2b96a.js.map
