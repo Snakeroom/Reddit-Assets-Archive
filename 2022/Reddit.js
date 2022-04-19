@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.582fc742c6d21a988d3e.js
-// Retrieved at 4/18/2022, 7:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d99a829253325a8c751e.js
+// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -6876,7 +6876,7 @@
 						}(e.userId),
 						d = Object(p.e)(Object(ni.c)("browser_notifications_permission_settings")),
 						b = Object(p.e)(Object(at.J)(3 * O.C)),
-						h = Object(p.e)(si.f),
+						h = Object(p.e)(si.i),
 						g = !c && b && h,
 						f = Object(u.useCallback)(() => {
 							s.hide(), n.hide(), a || i(), c || l()
@@ -18538,4 +18538,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "ModListing~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.582fc742c6d21a988d3e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d99a829253325a8c751e.js.map
