@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.13192ba77720dd450848.js
-// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.1c5660cb656a0b736d4f.js
+// Retrieved at 4/19/2022, 5:40:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, n) {
@@ -676,7 +676,7 @@
 						text: v.fbt._("Mark as NSFW", null, {
 							hk: "8QQ2f"
 						})
-					}), n && "subreddit" === W.belongsTo.type && o.a.createElement(y.e, {
+					}), s && "subreddit" === W.belongsTo.type && o.a.createElement(y.e, {
 						displayText: v.fbt._("Adjust crowd control", null, {
 							hk: "4Drg85"
 						}),
@@ -1311,4 +1311,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.13192ba77720dd450848.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.1c5660cb656a0b736d4f.js.map
