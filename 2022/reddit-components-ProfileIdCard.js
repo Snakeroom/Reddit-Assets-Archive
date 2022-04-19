@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.52255d08df7ae0617342.js
-// Retrieved at 4/19/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ba307b3ce3b78a21964e.js
+// Retrieved at 4/19/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2024,8 +2024,8 @@
 					LoadingComponent: () => null
 				}),
 				z = r("./src/reddit/constants/modals.ts"),
-				Z = r("./src/reddit/helpers/correlationIdTracker.ts"),
-				q = r("./src/reddit/helpers/styles/mixins/loading.ts"),
+				q = r("./src/reddit/helpers/correlationIdTracker.ts"),
+				Z = r("./src/reddit/helpers/styles/mixins/loading.ts"),
 				Y = r("./src/reddit/models/Gold/Premium/index.ts"),
 				Q = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
 				V = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
@@ -2059,7 +2059,7 @@
 						...r
 					} = e;
 					return a.a.createElement("div", ee({}, r, {
-						className: Object(S.a)($.a.Shimmer, Object(q.b)({
+						className: Object(S.a)($.a.Shimmer, Object(Z.b)({
 							isLoading: t
 						}))
 					}))
@@ -2074,7 +2074,7 @@
 							onClickGivePremium: e,
 							sendEvent: t
 						} = this.props;
-						e(Object(Z.e)(Z.a.GiftPremiumFlow));
+						e(Object(q.e)(q.a.GiftPremiumFlow));
 						const {
 							clickGivePremiumEvent: n
 						} = await r.e("givePremiumTrackers").then(r.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
@@ -2457,7 +2457,7 @@
 					prefShowSnoovatar: M,
 					snoovatarFullBodyAsset: A,
 					username: D
-				} = E, R = !!o && o.id === L, W = !(!o || !o.snoovatarFullBodyAsset), G = C && C.bannerBackgroundImage, H = !!b && b.isNSFW, K = H && c, z = !(!v || !v.userIsSubscriber), Z = `/user/${D}/`, q = k && k.url === Z, Y = !v || v.acceptChats, Q = !v || v.acceptPms, V = P && Object(de.b)(A), X = () => {
+				} = E, R = !!o && o.id === L, W = !(!o || !o.snoovatarFullBodyAsset), G = C && C.bannerBackgroundImage, H = !!b && b.isNSFW, K = H && c, z = !(!v || !v.userIsSubscriber), q = `/user/${D}/`, Z = k && k.url === q, Y = !v || v.acceptChats, Q = !v || v.acceptPms, V = P && Object(de.b)(A), X = () => {
 					r(e => !e)
 				};
 				return a.a.createElement(a.a.Fragment, null, a.a.createElement(u.a, {
@@ -2469,7 +2469,7 @@
 					isOwnProfile: R,
 					publicDescription: v ? v.publicDescription : void 0,
 					title: b ? b.title : void 0,
-					url: q ? null : Z,
+					url: Z ? null : q,
 					userCreated: S,
 					username: D,
 					recentAwardings: U,
@@ -3092,19 +3092,19 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.n
-					}) === n.rd
+					}) === n.qd
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.o
-					}) === n.rd
+					}) === n.qd
 				},
 				c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: n.j
-					}) === n.rd
+					}) === n.qd
 				}
 		},
 		"./src/reddit/selectors/experiments/chatInviteLinkSharing.ts": function(e, t, r) {
@@ -3118,7 +3118,7 @@
 			const o = e => Object(s.c)(e, {
 				experimentName: n.F,
 				experimentEligibilitySelector: () => Object(a.Q)(e)
-			}) === n.rd
+			}) === n.qd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3155,7 +3155,7 @@
 				o = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
 					experimentName: n.Pc
-				}) === n.rd
+				}) === n.qd
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3181,4 +3181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.52255d08df7ae0617342.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ba307b3ce3b78a21964e.js.map

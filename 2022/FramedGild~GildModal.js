@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.4d1497b3a08d0ef9c7f4.js
-// Retrieved at 4/19/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0589803630be87aa24ca.js
+// Retrieved at 4/19/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1255,7 +1255,7 @@
 						})), e(Object(l.i)(i.a.ECON_COIN_PACKAGE_OFFER))) : o.c.captureMessage(`Tried to show coin package offer, but could not find package id: ${r}`)
 					}
 				}, N = (e, t, r) => async (s, a) => {
-					await s(Object(d.c)(e, r));
+					await s(Object(d.c)());
 					const o = a(),
 						i = Object(x.p)(o, e);
 					if (i) s(E({
@@ -1855,132 +1855,79 @@
 		"./src/reddit/actions/goldPurchaseModals/purchaseCatalog.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "b", (function() {
-				return _
+				return v
 			})), r.d(t, "c", (function() {
-				return P
+				return j
 			})), r.d(t, "a", (function() {
-				return S
+				return y
 			}));
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./src/lib/env/index.ts"),
 				a = r("./src/lib/makeActionCreator/index.ts"),
 				o = r("./src/lib/sentry/index.ts"),
 				i = r("./src/reddit/endpoints/gold/productCatalog/old.index.ts"),
-				c = r("./src/reddit/selectors/user.ts"),
-				d = r("./src/reddit/actions/toaster.ts"),
-				l = r("./src/reddit/models/Toast/index.ts"),
-				u = r("./src/reddit/actions/post.ts"),
-				m = r("./src/lib/makeGqlRequest/index.ts"),
-				p = r("./src/reddit/actions/economics/powerups/helpers.ts"),
-				b = r("./src/redditGQL/operations/PurchaseCatalogProductOffers.json");
-			var h = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				f = r("./src/reddit/selectors/gold/productOffers.ts"),
-				g = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
-			const O = Object(a.a)(g.l),
-				x = Object(a.a)(g.m),
-				v = Object(a.a)(g.k),
-				j = Object(a.a)(g.o),
-				w = Object(a.a)(g.n),
-				y = Object(a.a)(g.i),
-				E = Object(a.a)(g.j),
-				_ = e => async (t, r, a) => {
+				c = r("./src/reddit/actions/toaster.ts"),
+				d = r("./src/reddit/models/Toast/index.ts"),
+				l = r("./src/reddit/actions/post.ts"),
+				u = r("./src/lib/makeGqlRequest/index.ts"),
+				m = r("./src/reddit/actions/economics/powerups/helpers.ts"),
+				p = r("./src/redditGQL/operations/PurchaseCatalogProductOffers.json");
+			var b = r("./src/reddit/selectors/gold/productOffers.ts"),
+				h = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
+			Object(a.a)(h.m);
+			const f = Object(a.a)(h.o),
+				g = Object(a.a)(h.n),
+				O = Object(a.a)(h.i),
+				x = Object(a.a)(h.j),
+				v = e => async (t, r, a) => {
 					let {
-						gqlContext: d
+						gqlContext: i
 					} = a;
-					const l = r();
-					if (!Object(h.h)(l)) return t((e => async (t, r, a) => {
-						let {
-							apiContext: d
-						} = a;
-						t(O());
-						const l = r(),
-							u = Object(c.R)(l);
-						try {
-							const r = !u,
-								n = await Object(i.b)({
-									context: d(),
-									correlationId: e,
-									shouldUseCurrentOrigin: r
-								});
-							if (!n.ok) throw new Error(n.error && n.error.type || "Unknown error");
-							const s = n.body;
-							t(x(s))
-						} catch (m) {
-							Object(s.b)() || console.error(m), o.c.captureException(m);
-							const e = n.fbt._("There was an error fetching available products", null, {
-								hk: "1Uvx37"
-							});
-							t(v(e))
-						}
-					})(null == e ? void 0 : e.correlationId));
-					const u = Object(f.a)(l);
-					if ((null == e ? void 0 : e.forceLoad) || !u) {
-						t(j());
+					const c = r(),
+						d = Object(b.a)(c);
+					if ((null == e ? void 0 : e.forceLoad) || !d) {
+						t(f());
 						try {
 							const e = await (async e => {
-								const t = await Object(m.a)(e, {
-									...b
+								const t = await Object(u.a)(e, {
+									...p
 								});
 								if (!t.ok) {
 									const {
 										errors: e
-									} = t.body, r = Object(p.a)(e);
+									} = t.body, r = Object(m.a)(e);
 									throw new Error(r || "Unknown error in requestPurchaseCatalogProductOffers")
 								}
 								return t.body
-							})(d());
-							t(y(e.data.coinpacks.offers[0])), t(E(e.data.premium.offers[0]))
-						} catch (g) {
-							Object(s.b)() || console.error(g), o.c.captureException(g);
+							})(i());
+							t(O(e.data.coinpacks.offers[0])), t(x(e.data.premium.offers[0]))
+						} catch (l) {
+							Object(s.b)() || console.error(l), o.c.captureException(l);
 							const e = n.fbt._("There was an error fetching available products", null, {
 								hk: "1Uvx37"
 							});
-							t(w(e))
+							t(g(e))
 						}
 					}
-				}, I = Object(a.a)(g.q), C = Object(a.a)(g.r), k = Object(a.a)(g.p), P = (e, t) => async (r, a, c) => {
-					let {
-						apiContext: d
-					} = c;
-					const l = a();
-					if (Object(h.h)(l)) return await r(_());
-					r(I());
-					try {
-						const n = await Object(i.c)({
-							awardId: e,
-							context: d(),
-							correlationId: t
-						});
-						if (!n.ok) throw new Error(n.error && n.error.type || "Unknown error");
-						const s = n.body;
-						if (!s.coinPackages || !s.coinPackages.length) throw new Error(`Recommended coin packages returned empty for award id ${e}`);
-						r(C(s))
-					} catch (u) {
-						Object(s.b)() || console.error(u), o.c.captureException(u);
-						const e = n.fbt._("There was an error fetching purchasable coins package", null, {
-							hk: "47Fxzt"
-						});
-						r(k(e))
-					}
-				}, N = Object(a.a)(g.h), S = () => async (e, t, r) => {
+				}, j = () => async e => e(v()), w = Object(a.a)(h.h), y = () => async (e, t, r) => {
 					let {
 						gqlContext: a
 					} = r;
-					var c, m;
+					var u, m;
 					try {
 						const t = await Object(i.a)(a());
 						if (t.ok) {
 							const r = t.body.data.claimAwardOffer;
-							if (null === (c = r.errors) || void 0 === c ? void 0 : c.length) throw new Error(r.errors.map(e => e.message).join(" | "));
+							if (null === (u = r.errors) || void 0 === u ? void 0 : u.length) throw new Error(r.errors.map(e => e.message).join(" | "));
 							if (!(null === (m = r.awards) || void 0 === m ? void 0 : m.length)) throw new Error("Got empty award list on free award offer claim");
 							if (!r.ok) throw new Error("Got not ok response on free award offer claim");
-							await e(N({
+							await e(w({
 								awards: r.awards
-							})), e(Object(u.B)())
+							})), e(Object(l.B)())
 						}
 					} catch (p) {
-						Object(s.b)() || console.error(p), e(Object(d.f)({
-							kind: l.b.Error,
+						Object(s.b)() || console.error(p), e(Object(c.f)({
+							kind: d.b.Error,
 							text: n.fbt._("Sorry, something went wrong. Try Claiming again.", null, {
 								hk: "FWjud"
 							})
@@ -2787,7 +2734,7 @@
 				} = e;
 				const o = Object(Fe.a)(),
 					i = Object(z.b)(),
-					c = Object(a.e)(e => !n && Boolean(Object(M.h)(e)) && Object(Ue.t)(e)),
+					c = Object(a.e)(e => !n && Boolean(Object(M.h)(e)) && Object(Ue.s)(e)),
 					d = c ? He._("Get free Coins with Premium", null, {
 						hk: "3fzsqq"
 					}) : Object(Le.a)(n || 0, {
@@ -4886,12 +4833,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.pf.SmIcon:
+						case h.of.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.pf.SmIconHc:
+						case h.of.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5990,12 +5937,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.jf
+						experimentName: n.if
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.pf.SmIcon || t === n.pf.SmIconHc
+					return t === n.of.SmIcon || t === n.of.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6033,4 +5980,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.4d1497b3a08d0ef9c7f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0589803630be87aa24ca.js.map

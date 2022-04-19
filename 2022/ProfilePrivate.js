@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.d2ce5919f89d00e7fb25.js
-// Retrieved at 4/19/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.9a72bb892407ceed04a6.js
+// Retrieved at 4/19/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1234,7 +1234,7 @@
 					}
 				}),
 				y = e => {
-					const t = Object(o.e)(e => Object(g.k)(e));
+					const t = Object(o.e)(e => Object(g.j)(e));
 					return r.a.createElement(d.a, {
 						className: e.className
 					}, r.a.createElement(f, {
@@ -3714,4 +3714,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.d2ce5919f89d00e7fb25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.9a72bb892407ceed04a6.js.map
