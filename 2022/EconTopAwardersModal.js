@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.005c694fcfcaec3b5891.js
-// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.88efe5ed5ac0cc5f0e91.js
+// Retrieved at 4/19/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -239,9 +239,9 @@
 					error: P,
 					pending: k
 				});
-			const M = {};
-			var B = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : M,
+			const B = {};
+			var M = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : B,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case O.n: {
@@ -405,7 +405,7 @@
 				},
 				J = Object(y.c)({
 					api: A,
-					fetchedTokens: B,
+					fetchedTokens: M,
 					inContext: T,
 					loadMore: L,
 					models: D,
@@ -839,8 +839,8 @@
 				U = r("./node_modules/lodash/noop.js"),
 				k = r.n(U),
 				A = r("./src/lib/currency/currencies.ts"),
-				M = r("./src/lib/localizeCurrency/index.ts"),
-				B = r("./src/reddit/components/Hovercards/AuthorHovercard/UserHovercard.tsx"),
+				B = r("./src/lib/localizeCurrency/index.ts"),
+				M = r("./src/reddit/components/Hovercards/AuthorHovercard/UserHovercard.tsx"),
 				S = r("./src/reddit/components/UserIcon/index.tsx"),
 				T = r("./src/reddit/hooks/useLocale.ts"),
 				F = r("./src/reddit/components/Econ/TopAwardersModal/TopAwardersList/Awarder/index.m.less"),
@@ -875,13 +875,13 @@
 						className: L.a.text
 					}, n.a.createElement("h3", {
 						className: L.a.name
-					}, u ? i.name : n.a.createElement(B.a, {
+					}, u ? i.name : n.a.createElement(M.a, {
 						user: i.name,
 						tooltipId: `topawarder--userhovercard--${i.name}`,
 						sendHoverCardEvent: k.a
 					}, R(i.name, i.id === a))), l > 0 && n.a.createElement("span", {
 						className: L.a.score
-					}, Object(M.b)(l, {
+					}, Object(B.b)(l, {
 						locale: m,
 						type: A.b.Reddit,
 						currency: A.a
@@ -951,7 +951,7 @@
 						className: Y.a.rank
 					}, s)), n.a.createElement("h3", {
 						className: Y.a.name
-					}, r && !o ? n.a.createElement(B.a, {
+					}, r && !o ? n.a.createElement(M.a, {
 						user: c,
 						tooltipId: `topawarderwinner-userhovercard--${c}`,
 						sendHoverCardEvent: k.a,
@@ -1061,11 +1061,11 @@
 					};
 				if (!r || !d) return U(), null;
 				const A = c && c.id === d.authorId,
-					M = !d.isGildable || !!A,
-					B = d.topAwardedType === v.a.Active,
+					B = !d.isGildable || !!A,
+					M = d.topAwardedType === v.a.Active,
 					S = d.topAwardedType === v.a.Inactive,
 					T = !x && !!b && !!b.length,
-					F = !x && b && !b.length && d && B;
+					F = !x && b && !b.length && d && M;
 				return n.a.createElement("div", {
 					className: ee.a.inner
 				}, n.a.createElement("div", {
@@ -1134,14 +1134,14 @@
 					className: ee.a.giftIcon
 				}), re._("Give Award", null, {
 					hk: "2sa45i"
-				}))), T && d && B && n.a.createElement(K, {
+				}))), T && d && M && n.a.createElement(K, {
 					awarders: b,
 					className: ee.a.list,
 					currentRank: o,
 					currentUserId: c && c.id,
-					hideAddAwardButton: M,
+					hideAddAwardButton: B,
 					onGild: k
-				}), !x && B && t && n.a.createElement("div", {
+				}), !x && M && t && n.a.createElement("div", {
 					className: ee.a.anonymousRank
 				}, re._("Anonymous redditors have awarded for {score} Coins", [re._param("score", t.score.toLocaleString())], {
 					hk: "11BYuy"
@@ -1265,8 +1265,8 @@
 				U = r("./src/reddit/components/JSAPIContainers/index.tsx"),
 				k = r("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				A = r("./src/reddit/components/SubscribeButton/index.tsx"),
-				M = r("./src/reddit/components/UserIcon/index.tsx"),
-				B = r("./src/reddit/controls/Button/index.tsx"),
+				B = r("./src/reddit/components/UserIcon/index.tsx"),
+				M = r("./src/reddit/controls/Button/index.tsx"),
 				S = r("./src/reddit/endpoints/profile/info.ts"),
 				T = r("./src/reddit/helpers/trackers/authorHovercard.ts"),
 				F = r("./src/reddit/icons/fonts/Info/index.tsx"),
@@ -1406,7 +1406,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const me = j.a.wrapped(M.a, "UserIcon", ie.a),
+			const me = j.a.wrapped(B.a, "UserIcon", ie.a),
 				ue = j.a.wrapped(A.a, "SubscribeButton", ie.a),
 				pe = j.a.wrapped(P.b, "ChatButton", ie.a),
 				be = j.a.wrapped(H.a, "PremiumIcon", ie.a),
@@ -1512,7 +1512,7 @@
 						P = g.accountIcon || `${C.a.assetPath}/img/snoo_user_placeholder.png`,
 						k = null == m ? void 0 : m.flair,
 						A = null == m ? void 0 : m.access,
-						M = (null == I ? void 0 : I.templateIds) && (null === (t = null == I ? void 0 : I.templateIds) || void 0 === t ? void 0 : t.length) > 0,
+						B = (null == I ? void 0 : I.templateIds) && (null === (t = null == I ? void 0 : I.templateIds) || void 0 === t ? void 0 : t.length) > 0,
 						S = null === (r = null == I ? void 0 : I.displaySettings) || void 0 === r ? void 0 : r.isEnabled,
 						{
 							awardedLastMonth: F
@@ -1560,7 +1560,7 @@
 						username: h
 					}), i && !j && !E && _ && !O && n.a.createElement(pe, {
 						contextId: s,
-						priority: B.c.Secondary,
+						priority: M.c.Secondary,
 						userId: g.id,
 						text: w.fbt._("Start Chat", null, {
 							hk: "2mfqRE"
@@ -1579,7 +1579,7 @@
 						subredditId: v,
 						sendEvent: b,
 						username: h
-					}), k && s && M && S && v && n.a.createElement(ce, {
+					}), k && s && B && S && v && n.a.createElement(ce, {
 						contextId: s,
 						subredditId: v,
 						sendEvent: b,
@@ -1591,14 +1591,14 @@
 					}), !(A || i) && n.a.createElement(je, null))
 				},
 				Ae = Object(k.a)(ke),
-				Me = e => {
+				Be = e => {
 					const t = e.activeTooltipId === e.tooltipId && !e.collapsed;
 					return n.a.createElement(Ae, le({
 						isOpen: t
 					}, e))
 				};
-			Me.WrappedComponent = ke;
-			var Be = Me;
+			Be.WrappedComponent = ke;
+			var Me = Be;
 			const Se = Object(o.c)({
 					activeTooltipId: h.a,
 					currentUser: g.l,
@@ -1707,7 +1707,7 @@
 				isNightMode: e.isNightMode,
 				lastAuthorModNote: e.lastAuthorModNote,
 				userIsSubscriber: e.userIsSubscriber
-			}) : n.a.createElement(Be, {
+			}) : n.a.createElement(Me, {
 				activeTooltipId: e.activeTooltipId,
 				contextId: e.contextId,
 				currentUser: e.currentUser,
@@ -2304,8 +2304,8 @@
 					snoovatarUrl: y,
 					title: k,
 					userCreated: A,
-					username: M,
-					url: B,
+					username: B,
+					url: M,
 					isHovercard: S
 				} = e;
 				const T = Object(s.e)(e => !_ && !!y && Object(m.g)(e)),
@@ -2315,7 +2315,7 @@
 					bannerBackgroundImage: t,
 					editMode: !!x,
 					isNSFW: N,
-					username: M,
+					username: B,
 					isDeletingBanner: !!g,
 					onDeleteBanner: C
 				}), L ? n.a.createElement("div", {
@@ -2345,23 +2345,23 @@
 					isGold: E,
 					isNSFW: N,
 					title: k,
-					username: M
+					username: B
 				}), n.a.createElement(v.a, {
 					className: h.a.snoovatarUserName,
 					shouldDisplaySnoovatar: !0,
-					username: M,
+					username: B,
 					userCreated: A,
-					url: B
+					url: M
 				}), (_ || !a && !!y) && n.a.createElement(p.a, {
 					compact: r,
 					currentUserHasSnoovatar: a,
 					isOwnProfile: _,
 					onClick: w
 				}), T && n.a.createElement(b.a, {
-					username: M,
+					username: B,
 					isHovercard: !!S,
 					share: {
-						username: M
+						username: B
 					}
 				}))
 			}
@@ -2716,9 +2716,9 @@
 				}) === a.x.Enabled,
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.Mc
-				}) === a.od
+					experimentName: a.Pc
+				}) === a.rd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.005c694fcfcaec3b5891.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.88efe5ed5ac0cc5f0e91.js.map

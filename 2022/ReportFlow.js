@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.3256112b57994b59f6ca.js
-// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.47f5b1e3fc349f093e32.js
+// Retrieved at 4/19/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -428,6 +428,7 @@
 			e.exports = {
 				overlay: "_1DK52RbaamLOWw5UPaht_S",
 				mIsVisible: "_1acwN_tUhJ8w-n7oCp-Aw3",
+				mIsBlurred: "_3Tq-_9917Q-o0iyzcNAeZn",
 				modal: "_2Bejocqb-InO8686E2ehf"
 			}
 		},
@@ -459,14 +460,16 @@
 			const h = e => {
 				let {
 					className: t,
-					isVisible: n,
-					...s
+					shouldBlurContent: n,
+					isVisible: s,
+					...a
 				} = e;
 				return o.a.createElement("div", m({
 					className: Object(r.a)(p.a.overlay, t, {
-						[p.a.mIsVisible]: n
+						[p.a.mIsVisible]: s,
+						[p.a.mIsBlurred]: n
 					})
-				}, s))
+				}, a))
 			};
 
 			function b(e) {
@@ -497,15 +500,17 @@
 							onOverlayClick: a,
 							overlayClassName: l,
 							overlayCustomStyles: c,
-							withOverlay: u,
-							...m
-						} = t, b = m;
+							shouldBlurContent: u,
+							withOverlay: m,
+							...b
+						} = t, f = b;
 						return o.a.createElement(i.a, {
 							container: document.getElementById(d.b)
 						}, o.a.createElement(h, {
 							className: l,
-							isVisible: u,
+							isVisible: m,
 							onClick: this.onOverlayClick,
+							shouldBlurContent: u,
 							style: c
 						}, o.a.createElement("div", {
 							"aria-modal": !0,
@@ -514,7 +519,7 @@
 							ref: this.getRef,
 							role: "dialog",
 							tabIndex: -1
-						}, o.a.createElement(e, b))))
+						}, o.a.createElement(e, f))))
 					}
 				}
 				return t
@@ -873,7 +878,7 @@
 						return e
 				}
 			};
-			var F = function() {
+			var N = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -885,11 +890,11 @@
 						return e
 				}
 			};
-			var N = Object(C.c)({
+			var F = Object(C.c)({
 				api: k,
 				openedFromModalPage: T,
 				postOrCommentId: j,
-				userIsMod: F,
+				userIsMod: N,
 				rulesCategory: function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
@@ -902,7 +907,7 @@
 			});
 			Object(R.a)({
 				features: {
-					reportFlow: N
+					reportFlow: F
 				}
 			});
 			const L = Object(o.a)(g.e),
@@ -1493,7 +1498,7 @@
 				I = c.a.wrapped(R.b, "DropdownRow", O.a),
 				T = c.a.div("PickerWrapper", O.a),
 				j = c.a.div("SelectARuleLabel", O.a),
-				F = e => {
+				N = e => {
 					let {
 						className: t,
 						isChosen: n,
@@ -1505,8 +1510,8 @@
 						})
 					}, s))
 				},
-				N = Object(b.a)(_.a),
-				L = c.a.wrapped(N, "Dropdown", O.a),
+				F = Object(b.a)(_.a),
+				L = c.a.wrapped(F, "Dropdown", O.a),
 				A = c.a.wrapped(C.b, "DropdownTriangle", O.a),
 				P = c.a.wrapped(R.b, "Row", O.a);
 			var M = n("./src/reddit/components/ReportFlow/FileAComplaint/index.m.less"),
@@ -1645,7 +1650,7 @@
 					}, r.a.createElement(P, {
 						displayText: d ? d.reasonTextToShow : "",
 						id: pe
-					}), r.a.createElement(A, null), r.a.createElement(F, {
+					}), r.a.createElement(A, null), r.a.createElement(N, {
 						isChosen: !!d
 					}, s.fbt._("Select a rule", null, {
 						hk: "26hOYU"
@@ -1762,7 +1767,7 @@
 					}, r.a.createElement(P, {
 						displayText: n,
 						id: Ce
-					}), r.a.createElement(A, null), r.a.createElement(F, {
+					}), r.a.createElement(A, null), r.a.createElement(N, {
 						isChosen: !!n
 					}, s.fbt._("Select a rule", null, {
 						hk: "26hOYU"
@@ -1805,8 +1810,8 @@
 				Ie = n("./src/reddit/models/Subreddit/index.ts"),
 				Te = n("./src/reddit/components/ReportFlow/FirstPage/index.m.less"),
 				je = n.n(Te);
-			const Fe = c.a.wrapped(x.l, "SubmitButton", je.a);
-			class Ne extends r.a.Component {
+			const Ne = c.a.wrapped(x.l, "SubmitButton", je.a);
+			class Fe extends r.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						rulesSequence: new ke.a
@@ -1880,7 +1885,7 @@
 						onClick: e.onClose
 					}, s.fbt._("Close", null, {
 						hk: "4gbyAA"
-					})), r.a.createElement(Fe, {
+					})), r.a.createElement(Ne, {
 						onClick: e.onSubmit,
 						disabled: !e.ruleIsChosen
 					}, e.submitButtonText ? e.submitButtonText : s.fbt._("Submit", null, {
@@ -1888,7 +1893,7 @@
 					}))))
 				}
 			}
-			var Le = Ne,
+			var Le = Fe,
 				Ae = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				Pe = n("./src/reddit/components/ReportFlow/Title/index.m.less"),
 				Me = n.n(Pe);
@@ -2162,8 +2167,8 @@
 				I = n("./src/reddit/contexts/ApiContext.tsx"),
 				T = n("./src/reddit/models/Post/index.ts"),
 				j = n("./src/reddit/models/Toast/index.ts"),
-				F = n("./src/reddit/models/WhitelistAndBlocked.ts"),
-				N = n("./src/reddit/selectors/commentSelector.ts"),
+				N = n("./src/reddit/models/WhitelistAndBlocked.ts"),
+				F = n("./src/reddit/selectors/commentSelector.ts"),
 				L = n("./src/reddit/selectors/experiments/econ/index.ts"),
 				A = n("./src/reddit/selectors/meta.ts"),
 				P = n("./src/reddit/selectors/posts.ts"),
@@ -2191,7 +2196,7 @@
 						let {
 							commentId: n
 						} = t;
-						return n ? Object(N.b)(e, {
+						return n ? Object(F.b)(e, {
 							commentId: n
 						}) : null
 					},
@@ -2207,7 +2212,7 @@
 						const {
 							commentId: s,
 							postId: o
-						} = t, r = s ? Object(N.b)(e, {
+						} = t, r = s ? Object(F.b)(e, {
 							commentId: s
 						}) : null, a = o ? Object(P.G)(e, {
 							postId: o
@@ -2298,7 +2303,7 @@
 							blockUserPending: n,
 							sendEvent: s
 						} = this.props;
-						n.new !== F.a.pending && (this.props.onBlockUser(e), s(x(t)))
+						n.new !== N.a.pending && (this.props.onBlockUser(e), s(x(t)))
 					}, this.onOpenCtlFlow = () => {
 						this.props.postMessage && this.props.postMessage({
 							type: "openCtl"
@@ -3952,19 +3957,19 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.n
-					}) === s.od
+					}) === s.rd
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.o
-					}) === s.od
+					}) === s.rd
 				},
 				l = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.j
-					}) === s.od
+					}) === s.rd
 				}
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, n) {
@@ -4012,4 +4017,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.3256112b57994b59f6ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.47f5b1e3fc349f093e32.js.map
