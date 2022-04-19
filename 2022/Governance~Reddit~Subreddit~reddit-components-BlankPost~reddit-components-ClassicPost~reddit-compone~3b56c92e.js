@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.58b5dd2dce1f52985bfc.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.4df7c7820500403f5ea7.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -746,7 +746,7 @@
 						subredditName: m
 					};
 					if (await r(Object(c.postCreationPageDataRequested)(j)), p || !Object(h.C)(a)) return r(E(e, _));
-					const T = e.allowedPostTypes || Object(g.w)(s(), {
+					const T = e.allowedPostTypes || Object(g.x)(s(), {
 						subredditName: m
 					});
 					if (!T) return void r(E(e, _));
@@ -982,7 +982,7 @@
 					let n = P.f;
 					const o = r();
 					if (e.subredditId) {
-						const t = Object(S.S)(o, {
+						const t = Object(S.T)(o, {
 								subredditId: e.subredditId
 							}),
 							r = Object(C.p)(o, {
@@ -1492,7 +1492,7 @@
 					{
 						currentUser: r
 					} = Object(d.a)(),
-					s = Object(n.e)(e => t ? Object(l.K)(e, {
+					s = Object(n.e)(e => t ? Object(l.L)(e, {
 						identifier: t.belongsTo
 					}) : null),
 					i = (null == t ? void 0 : t.belongsTo.type) === o.a.SUBREDDIT ? s : null,
@@ -2245,39 +2245,39 @@
 				o = r("./src/reddit/selectors/experiments/index.ts"),
 				a = r("./src/reddit/selectors/experiments/utils.ts");
 			const d = Object(s.a)(e => Object(n.c)(e, {
-					experimentName: i.Db,
+					experimentName: i.Gb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				c = Object(s.a)(d, e => e === i.Md.Enabled),
+				c = Object(s.a)(d, e => e === i.Pd.Enabled),
 				u = Object(s.a)(e => Object(n.c)(e, {
-					experimentName: i.Hd,
+					experimentName: i.Kd,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				l = Object(s.a)(c, u, (e, t) => e && t === i.Ld.Enabled),
+				l = Object(s.a)(c, u, (e, t) => e && t === i.Od.Enabled),
 				b = Object(s.a)(e => Object(n.c)(e, {
-					experimentName: i.Ub,
+					experimentName: i.Xb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				m = Object(s.a)(c, b, (e, t) => e && t === i.nc.Enabled),
+				m = Object(s.a)(c, b, (e, t) => e && t === i.qc.Enabled),
 				p = Object(s.a)(e => Object(n.c)(e, {
-					experimentName: i.Bb,
+					experimentName: i.Eb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				h = Object(s.a)(p, e => e === i.Jd.ContinuousScroll),
+				h = Object(s.a)(p, e => e === i.Md.ContinuousScroll),
 				f = Object(s.a)(e => Object(n.c)(e, {
-					experimentName: i.Cb,
+					experimentName: i.Fb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				g = Object(s.a)(f, e => e === i.Kd.Enabled),
+				g = Object(s.a)(f, e => e === i.Nd.Enabled),
 				O = Object(s.a)(e => Object(n.c)(e, {
-					experimentName: i.Mb,
+					experimentName: i.Pb,
 					experimentEligibilitySelector: () => !0
 				}), a.a),
-				y = Object(s.a)(O, e => e === i.fb.Enabled)
+				y = Object(s.a)(O, e => e === i.hb.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"9d105ce5d71a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.58b5dd2dce1f52985bfc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.4df7c7820500403f5ea7.js.map

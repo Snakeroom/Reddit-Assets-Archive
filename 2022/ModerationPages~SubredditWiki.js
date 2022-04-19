@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.d8d5a3d7951135cf393a.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.32454bffd1c6225b44b4.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1025,7 +1025,7 @@
 					t(u.m({
 						title: r.wikiPageName ? `${r.wikiPageName} - ${a}` : `wiki - ${a}`
 					})), await t(Ve(r, s));
-					const i = Object(D.x)(n(), {
+					const i = Object(D.y)(n(), {
 							subredditName: a
 						}),
 						o = n();
@@ -1430,10 +1430,10 @@
 				}, de = (e, t) => async (n, r) => {
 					const s = r();
 					await Promise.all([(async () => {
-						if (!Object(w.b)(u.a.BAN_USER)(s) && !Object(O.P)(s, {
+						if (!Object(w.b)(u.a.BAN_USER)(s) && !Object(O.Q)(s, {
 								subredditId: e
 							})) {
-							const t = Object(O.S)(s, {
+							const t = Object(O.T)(s, {
 								subredditId: e
 							});
 							await n(Object(c.o)(t.name))
@@ -2010,8 +2010,8 @@
 							wikiPageName: t
 						},
 						o = await p(s.gqlContext(), a),
-						d = Object(v.D)(r(), e);
-					if (Object(v.U)(r(), d) || await n(Object(i.h)(e, d)), o.ok) {
+						d = Object(v.E)(r(), e);
+					if (Object(v.V)(r(), d) || await n(Object(i.h)(e, d)), o.ok) {
 						const e = o.body,
 							t = e.data.subreddit && e.data.subreddit.wiki;
 						if (t && t.page) {
@@ -3480,7 +3480,7 @@
 							subredditId: n
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(g.l)(t) && Object(g.db)(e, t),
+					isCurrentUserBanned: (e, t) => !!Object(g.m)(t) && Object(g.eb)(e, t),
 					userProfileStyles: (e, t) => Object(h.m)(e, Object(f.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(f.h)(e, {
@@ -3493,7 +3493,7 @@
 							subredditId: n
 						} = t;
 						const r = Object(w.e)(e),
-							s = n || r && Object(g.D)(e, r.name);
+							s = n || r && Object(g.E)(e, r.name);
 						return !!s && Object(m.i)(e, s)
 					},
 					trophyCase: (e, t) => Object(f.r)(e, Object(f.m)(e, t.userName)),
@@ -3511,7 +3511,7 @@
 						let {
 							userName: n
 						} = t;
-						return Object(g.eb)(e, {
+						return Object(g.fb)(e, {
 							identifier: {
 								name: n,
 								type: "profile"
@@ -4495,8 +4495,8 @@
 				}) === r.x.Enabled,
 				i = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Ic
-				}) === r.kd
+					experimentName: r.Lc
+				}) === r.nd
 		},
 		"./src/reddit/selectors/subredditWiki.ts": function(e, t, n) {
 			"use strict";
@@ -4664,4 +4664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.d8d5a3d7951135cf393a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.32454bffd1c6225b44b4.js.map

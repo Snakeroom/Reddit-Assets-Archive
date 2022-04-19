@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.79a86a269eb921e96046.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.380eaddd3cf87237d4d9.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -822,7 +822,7 @@
 						if (e !== O.a.Approve && e !== O.a.Flair) {
 							let t, o;
 							const i = b.platform.currentPage && b.platform.currentPage.queryParams && b.platform.currentPage.queryParams.subreddit,
-								m = i && Object(N.D)(b, i);
+								m = i && Object(N.E)(b, i);
 							e === O.a.Remove && m && g.length > 1 && (t = n.fbt._("Add a removal reason", null, {
 								hk: "3gGDCl"
 							}), o = Object(d.fetchReasonsAndOpenModal)(m, g));
@@ -907,7 +907,7 @@
 						if (t && t.actions) {
 							const a = n(),
 								o = Object(C.b)(t.actions),
-								r = Object(y.D)(a, e),
+								r = Object(y.E)(a, e),
 								{
 									hasNextPage: i,
 									hasPreviousPage: d,
@@ -989,7 +989,7 @@
 					let {
 						gqlContext: a
 					} = n;
-					const r = Object(y.S)(s(), {
+					const r = Object(y.T)(s(), {
 						subredditId: e
 					}).name;
 					t(oe({
@@ -1166,12 +1166,12 @@
 				const se = s(),
 					ne = !!k && Object(be.jb)(se),
 					ae = Object(Ee.N)(se),
-					oe = k ? Object(y.V)(se, {
+					oe = k ? Object(y.W)(se, {
 						subredditName: k.toLowerCase()
 					}) : Object(ge.q)(se, {
 						profileName: C.toLowerCase()
 					}),
-					re = k && Object(y.D)(se, k),
+					re = k && Object(y.E)(se, k),
 					ce = C && Object(ge.m)(se, C),
 					xe = re || ce;
 				re && !Object(fe.b)(q, re) && await t(Object(A.g)(re));
@@ -1180,11 +1180,11 @@
 					Ce = Object(ue.n)(se, {
 						subredditId: xe
 					}),
-					ke = k && Object(y.u)(se, {
+					ke = k && Object(y.v)(se, {
 						subredditName: k
 					}),
 					ye = !(!ke || !ke.userIsContributor),
-					Oe = Object(y.X)(se, {
+					Oe = Object(y.Y)(se, {
 						subredditId: xe
 					});
 				if (Object(l.a)({
@@ -3097,7 +3097,7 @@
 					comment: (e, t) => Object(k.b)(e, t),
 					commentPermalink: C.m,
 					flair: C.e,
-					subreddit: y.H
+					subreddit: y.I
 				}),
 				A = Object(o.b)(R, (e, t) => {
 					let {
@@ -5756,9 +5756,9 @@
 				isChatPostsCreationEnabled: (e, t) => Object(M.c)(e, t.subredditId),
 				isEmployee: D.N,
 				notificationSettings: A.b,
-				restrictions: R.m,
-				settings: (e, t) => Object(R.U)(e, t.subredditId),
-				subreddit: R.S,
+				restrictions: R.n,
+				settings: (e, t) => Object(R.V)(e, t.subredditId),
+				subreddit: R.T,
 				selectedPrimaryTag: F.s,
 				hasSecondaryTags: F.m,
 				geoPlace: (e, t) => e.tags.models.geoPlaces[t.subredditId],
@@ -6967,7 +6967,7 @@
 					ratingResponse: n,
 					subredditId: r,
 					children: g
-				} = e, f = null !== (t = Object(o.e)(e => Object(h.S)(e, {
+				} = e, f = null !== (t = Object(o.e)(e => Object(h.T)(e, {
 					subredditId: r
 				}))) && void 0 !== t ? t : {}, E = Object(c.a)();
 				return a.a.createElement("div", {
@@ -7449,9 +7449,9 @@
 					post: b,
 					toggle: E,
 					useMediaIcons: v
-				} = e, C = s || b, k = Object(r.e)(g.b), y = t => {
-					k && (t.preventDefault(), e.showModalOnPostLinkClick(C))
-				}, O = a && !!s;
+				} = e, C = s || b, k = Object(r.e)(g.b), y = Object(r.e)(g.c), O = t => {
+					(k || y) && (t.preventDefault(), e.showModalOnPostLinkClick(C))
+				}, S = a && !!s;
 				return C.media && !(("rtjson" === C.media.type || "text" === C.media.type || "liveaudio" === C.media.type) && !Object(p.a)(C)) || !!b.pollData ? o.a.createElement("button", {
 					"aria-expanded": !!u,
 					"aria-haspopup": !0,
@@ -7464,7 +7464,7 @@
 				}, u ? o.a.createElement(h.a, {
 					name: "collapse",
 					className: x.a.icon
-				}) : v ? o.a.createElement(o.a.Fragment, null, _(C.media && C.media.type, O, b), o.a.createElement(h.a, {
+				}) : v ? o.a.createElement(o.a.Fragment, null, _(C.media && C.media.type, S, b), o.a.createElement(h.a, {
 					name: "expand",
 					className: Object(d.a)(x.a.icon, x.a.showOnHover)
 				})) : o.a.createElement(h.a, {
@@ -7493,7 +7493,7 @@
 					"data-click-id": "expando_open",
 					to: Object(l.a)(C.permalink),
 					rel: "nofollow",
-					onClick: y
+					onClick: O
 				}, o.a.createElement(h.a, {
 					name: "text_post",
 					className: x.a.icon
@@ -9381,10 +9381,10 @@
 				Ee = m.a.wrapped(Y.g, "modalFooter", M.a),
 				xe = m.a.wrapped(C.l, "modalSubmitButton", M.a),
 				ve = Object(c.c)({
-					emojisCustomSize: (e, t) => Object($.u)(e, {
+					emojisCustomSize: (e, t) => Object($.v)(e, {
 						subredditName: t.subreddit.name
 					}).emojisCustomSize,
-					isEmojisEnabled: (e, t) => Object($.u)(e, {
+					isEmojisEnabled: (e, t) => Object($.v)(e, {
 						subredditName: t.subreddit.name
 					}).emojisEnabled
 				}),
@@ -10083,7 +10083,7 @@
 					backgroundImage: e.url
 				}), d.a.createElement(gs, null, e.emojiName)),
 				xs = Object(c.c)({
-					emojisCustomSize: (e, t) => Object($.u)(e, {
+					emojisCustomSize: (e, t) => Object($.v)(e, {
 						subredditName: t.subreddit.name
 					}).emojisCustomSize
 				}),
@@ -12016,7 +12016,7 @@
 								gqlContext: a
 							} = n;
 							const o = s(),
-								r = Object(u.D)(o, e);
+								r = Object(u.E)(o, e);
 							if (o.pages.modHub.moderationLog.moderators[r]) return;
 							const i = await Object(c.b)(a(), e);
 							if (i.body) {
@@ -14184,7 +14184,7 @@
 					u = Object(o.e)(e => Object(C.h)(e, {
 						subredditId: t
 					})),
-					p = Object(o.e)(e => Object(I.S)(e, {
+					p = Object(o.e)(e => Object(I.T)(e, {
 						subredditId: t
 					})),
 					h = Object(o.e)(e => Object(w.a)(e, {
@@ -14640,7 +14640,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(_.S)(e, {
+					return Object(_.T)(e, {
 						subredditId: s
 					}).name
 				}
@@ -18459,7 +18459,7 @@
 					let {
 						apiContext: r
 					} = o;
-					const i = Object(v.S)(a(), {
+					const i = Object(v.T)(a(), {
 							subredditId: e
 						}).name,
 						d = `success-block-${t.rule}`,
@@ -18488,10 +18488,10 @@
 					let {
 						apiContext: r
 					} = o;
-					const i = Object(v.S)(a(), {
+					const i = Object(v.T)(a(), {
 							subredditId: e
 						}).name,
-						d = Object(v.O)(a(), {
+						d = Object(v.P)(a(), {
 							subredditId: e
 						}),
 						l = `success-block-${e}`,
@@ -18597,7 +18597,7 @@
 						let {
 							apiContext: i
 						} = r;
-						const d = Object(v.S)(o(), {
+						const d = Object(v.T)(o(), {
 								subredditId: e
 							}).name,
 							l = `success-block-${t.rule}`,
@@ -18944,11 +18944,11 @@
 					}),
 					isConfirmModalOpen: e => "SubredditRule--Modal--DeleteConfirmation" === Object(W.a)(e),
 					isRuleEditorOpen: e => "SubredditRule--Editor--Modal" === Object(W.a)(e),
-					isSubredditRulesPending: e => Object(v.Q)(e),
-					ruleOrder: (e, t) => Object(v.O)(e, {
+					isSubredditRulesPending: e => Object(v.R)(e),
+					ruleOrder: (e, t) => Object(v.P)(e, {
 						subredditId: t.subreddit.id
 					}),
-					subredditRules: (e, t) => Object(v.R)(e, {
+					subredditRules: (e, t) => Object(v.S)(e, {
 						subredditId: t.subreddit.id
 					})
 				}),
@@ -18957,10 +18957,10 @@
 						let {
 							apiContext: i
 						} = r;
-						const d = Object(v.S)(o(), {
+						const d = Object(v.T)(o(), {
 								subredditId: e
 							}).name,
-							l = Object(v.R)(o(), {
+							l = Object(v.S)(o(), {
 								subredditId: e
 							})[s],
 							c = `success-block-${t}`,
@@ -22073,7 +22073,7 @@
 					let {
 						subreddit: s
 					} = t;
-					return Object(w.M)(e, {
+					return Object(w.N)(e, {
 						subredditId: s.id
 					})
 				},
@@ -22542,7 +22542,7 @@
 						const {
 							subredditName: n,
 							profileName: a
-						} = t.match.params, o = n ? Object(w.D)(e, n) : null === (s = Object(j.j)(e, {
+						} = t.match.params, o = n ? Object(w.E)(e, n) : null === (s = Object(j.j)(e, {
 							profileName: a
 						})) || void 0 === s ? void 0 : s.id;
 						if (o) return Object(O.n)(e, {
@@ -22556,7 +22556,7 @@
 							subredditName: s
 						} = t.match.params;
 						if (s) {
-							const t = Object(w.u)(e, {
+							const t = Object(w.v)(e, {
 								subredditName: s
 							});
 							if (t) return t.userIsContributor
@@ -22565,7 +22565,7 @@
 					}
 				}),
 				Ye = Object(d.c)({
-					subreddit: (e, t) => t.match.params.subredditName ? Object(w.x)(e, {
+					subreddit: (e, t) => t.match.params.subredditName ? Object(w.y)(e, {
 						subredditName: t.match.params.subredditName
 					}) : Object(j.j)(e, {
 						profileName: t.match.params.profileName
@@ -22690,9 +22690,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.jd
+					experimentName: n.md
 				});
-				return !(!t || Object(n.Df)(t))
+				return !(!t || Object(n.Gf)(t))
 			}
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
@@ -22765,10 +22765,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.xe,
+					experimentName: a.Ae,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.Fe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.Ie.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(n.a)(r.G, i, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -23014,4 +23014,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.79a86a269eb921e96046.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.380eaddd3cf87237d4d9.js.map

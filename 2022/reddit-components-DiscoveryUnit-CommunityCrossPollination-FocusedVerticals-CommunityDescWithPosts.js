@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.9d97b138537687c117a7.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.bfc107e90c1a511739c8.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -238,14 +238,14 @@
 				I = s("./src/reddit/components/PostContainer/index.tsx"),
 				j = s("./src/reddit/components/SubredditNameLink/index.tsx"),
 				k = s("./src/reddit/components/SubscribeButton/Inline.tsx"),
-				S = s("./src/reddit/constants/posts.ts"),
-				f = s("./src/reddit/selectors/posts.ts"),
+				f = s("./src/reddit/constants/posts.ts"),
+				S = s("./src/reddit/selectors/posts.ts"),
 				P = s("./src/reddit/components/DiscoveryUnit/CommunityCrossPollination/PostItem/index.m.less"),
 				D = s.n(P);
 			const T = e => `${e}--FocusedVerticalRecommendationItem`,
 				N = Object(o.c)({
-					post: f.G,
-					subreddit: f.U
+					post: S.G,
+					subreddit: S.U
 				});
 			class U extends r.a.Component {
 				constructor() {
@@ -322,7 +322,7 @@
 					}, r.a.createElement(k.a, {
 						identifier: {
 							name: i.name,
-							type: S.a.SUBREDDIT
+							type: f.a.SUBREDDIT
 						},
 						postId: e.id,
 						shouldReverseColor: !0,
@@ -333,7 +333,7 @@
 						doNotHideOtherSubscribeButtons: !0,
 						identifier: {
 							name: i.name,
-							type: S.a.SUBREDDIT
+							type: f.a.SUBREDDIT
 						},
 						postId: e.id,
 						small: !0
@@ -505,8 +505,8 @@
 			const {
 				fbt: g
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), y = Object(c.c)({
-				subreddit: x.S,
-				subredditAboutInfo: x.u
+				subreddit: x.T,
+				subredditAboutInfo: x.v
 			}), I = Object(i.b)(y);
 			class j extends r.a.Component {
 				constructor() {
@@ -1020,7 +1020,7 @@
 							subredditName: n,
 							[r]: s.id
 						},
-						a = Object(l.x)(e, {
+						a = Object(l.y)(e, {
 							subredditName: n
 						});
 					return a ? {
@@ -1102,4 +1102,4 @@
 		"./src/reddit/icons/fonts/commonStyles.m.less": function(e, t, s) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.9d97b138537687c117a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-DiscoveryUnit-CommunityCrossPollination-FocusedVerticals-CommunityDescWithPosts.bfc107e90c1a511739c8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.b087766dc7712b8c515d.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.a4488d49d86285f3a2ed.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1189,8 +1189,8 @@
 				w = s.n(C);
 			const O = Object(b.c)({
 				isLoggedIn: S.Q,
-				subreddit: E.S,
-				subredditAboutInfo: E.t
+				subreddit: E.T,
+				subredditAboutInfo: E.u
 			});
 			class k extends r.a.Component {
 				constructor() {
@@ -1550,7 +1550,7 @@
 						} = t;
 						return Object(_.D)(e, s, n, r)
 					}),
-					subredditsById: y.Z,
+					subredditsById: y.ab,
 					viewportDataLoaded: T.a,
 					pageReferrer: p.U,
 					postListPlaceholderComponent: () => g.a,
@@ -2270,7 +2270,7 @@
 				fbt: ae
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), ce = Object(i.c)({
 				isLoggedIn: re.Q,
-				subreddit: ne.S,
+				subreddit: ne.T,
 				subredditAboutInfo: (e, t) => {
 					let {
 						subredditId: s
@@ -2640,7 +2640,7 @@
 			const c = (e, t) => {
 					const s = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (s) {
-						const t = Object(o.S)(e, {
+						const t = Object(o.T)(e, {
 							subredditId: s
 						});
 						return t && t.displayText || ""
@@ -2653,14 +2653,14 @@
 				m = Object(n.a)((e, t) => {
 					const s = p(e, t);
 					if (!s) return u;
-					const n = Object(o.W)(e, {
+					const n = Object(o.X)(e, {
 						subredditName: s.name
 					});
 					return n && n.postIds && n.postIds.length ? n.postIds : u
 				}),
 				p = (e, t) => {
 					const s = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return s ? Object(o.S)(e, {
+					return s ? Object(o.T)(e, {
 						subredditId: s
 					}) : null
 				},
@@ -2727,8 +2727,8 @@
 			}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"9bf5e276ac63"}')
+			e.exports = JSON.parse('{"id":"c10a566d5f55"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.b087766dc7712b8c515d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.a4488d49d86285f3a2ed.js.map

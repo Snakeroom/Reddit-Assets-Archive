@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.b123c702e44722510a0e.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.acca5942c09976b6f956.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -45,7 +45,7 @@
 		"./src/reddit/actions/gold/gild.ts": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "setIsAnonymous", (function() {
-				return J
+				return H
 			})), s.d(t, "updateMessage", (function() {
 				return Z
 			})), s.d(t, "gildGqlRequested", (function() {
@@ -122,13 +122,13 @@
 				q = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				F = s("./src/reddit/helpers/isPost.ts"),
 				Q = s("./src/reddit/helpers/trackers/gild.ts"),
-				z = s("./src/telemetry/index.ts"),
-				B = s("./src/reddit/endpoints/profile/info.ts"),
-				U = s("./src/reddit/actions/gold/awardKarma.ts"),
-				Y = s("./src/reddit/actions/gold/constants.ts"),
-				H = s("./src/reddit/actions/gold/econPurchase.ts");
-			const J = Object(d.a)(Y.r),
-				Z = Object(d.a)(Y.v),
+				B = s("./src/telemetry/index.ts"),
+				J = s("./src/reddit/endpoints/profile/info.ts"),
+				z = s("./src/reddit/actions/gold/awardKarma.ts"),
+				U = s("./src/reddit/actions/gold/constants.ts"),
+				Y = s("./src/reddit/actions/gold/econPurchase.ts");
+			const H = Object(d.a)(U.r),
+				Z = Object(d.a)(U.v),
 				$ = (e, t) => async (s, d, a) => {
 					let {
 						gqlContext: i
@@ -194,17 +194,17 @@
 					} finally {
 						Object(q.b)(q.a.GildingFlow)
 					}
-				}, X = Object(d.a)(Y.u), V = Object(d.a)(Y.q), W = () => async (e, t) => {
+				}, X = Object(d.a)(U.u), V = Object(d.a)(U.q), W = () => async (e, t) => {
 					e(V()), window.setTimeout(() => {
 						t().gild.api.pending && e(X())
 					}, 2e3)
-				}, ee = Object(d.a)(Y.p), te = e => async (t, s) => {
+				}, ee = Object(d.a)(U.p), te = e => async (t, s) => {
 					await t(ee(e)), t(Object(l.f)({
 						kind: I.b.Error,
 						duration: l.a,
 						text: e
 					}))
-				}, se = Object(d.a)(Y.s), re = (e, t) => {
+				}, se = Object(d.a)(U.s), re = (e, t) => {
 					const {
 						id: s
 					} = t, r = Object(F.a)(s) ? Object(P.G)(e, {
@@ -213,7 +213,7 @@
 						commentId: s
 					}), d = Object(G.k)(e), a = e.gild, {
 						isAnonymous: i
-					} = a, n = !i && d && (d.username || d.displayText) ? d.username || d.displayText : void 0, c = r ? r.author : void 0, o = Object(L.I)(e, {
+					} = a, n = !i && d && (d.username || d.displayText) ? d.username || d.displayText : void 0, c = r ? r.author : void 0, o = Object(L.J)(e, {
 						thingId: s
 					});
 					return se({
@@ -246,22 +246,22 @@
 						})
 					}
 					if (g.awardType === m.f.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(L.I)(d, {
+						const t = Object(L.J)(d, {
 								thingId: b
 							}),
-							s = t && Object(L.A)(d, {
+							s = t && Object(L.B)(d, {
 								subredditName: t.name
 							});
 						s && (e.subredditCoins = s - g.coinPrice)
 					}
 					if (t(re(d, e)), w) {
 						const e = {
-								...B.a,
+								...J.a,
 								...w.karma
 							},
 							s = e.fromAwardsReceived + f,
 							r = Object(v.e)(w);
-						t(Object(U.a)({
+						t(Object(z.a)({
 							userName: r,
 							karma: {
 								...e,
@@ -280,7 +280,7 @@
 							hk: "2sIK9Y"
 						}),
 						K = g.coinPrice;
-					Object(z.a)(Object(Q.viewKarmaSuccessEvent)({
+					Object(B.a)(Object(Q.viewKarmaSuccessEvent)({
 						award: g,
 						awarderKarmaEarned: f,
 						awardeeKarmaEarned: 0,
@@ -323,12 +323,12 @@
 							})), a ? s : r)
 						}
 					}
-					const E = Object(L.I)(d, {
+					const E = Object(L.J)(d, {
 						thingId: b
 					});
 					if (E && Object(y.a)(d, {
 							subredditId: E.id
-						}) && t(Object(H.a)(E.id, E.name, {
+						}) && t(Object(Y.a)(E.id, E.name, {
 							force: !0
 						})), 0 === K && E) {
 						t(Object(i.a)(E.id, b, void 0, !0));
@@ -436,4 +436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.b123c702e44722510a0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.acca5942c09976b6f956.js.map

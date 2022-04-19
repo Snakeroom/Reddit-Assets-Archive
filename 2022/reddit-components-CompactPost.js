@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.2db9d02a013dd008f55e.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.eb4442a193244ca24732.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2308,9 +2308,9 @@
 					post: b,
 					toggle: v,
 					useMediaIcons: y
-				} = e, w = n || b, E = Object(i.e)(h.b), j = t => {
-					E && (t.preventDefault(), e.showModalOnPostLinkClick(w))
-				}, k = s && !!n;
+				} = e, w = n || b, E = Object(i.e)(h.b), j = Object(i.e)(h.c), k = t => {
+					(E || j) && (t.preventDefault(), e.showModalOnPostLinkClick(w))
+				}, _ = s && !!n;
 				return w.media && !(("rtjson" === w.media.type || "text" === w.media.type || "liveaudio" === w.media.type) && !Object(m.a)(w)) || !!b.pollData ? r.a.createElement("button", {
 					"aria-expanded": !!u,
 					"aria-haspopup": !0,
@@ -2323,7 +2323,7 @@
 				}, u ? r.a.createElement(f.a, {
 					name: "collapse",
 					className: g.a.icon
-				}) : y ? r.a.createElement(r.a.Fragment, null, O(w.media && w.media.type, k, b), r.a.createElement(f.a, {
+				}) : y ? r.a.createElement(r.a.Fragment, null, O(w.media && w.media.type, _, b), r.a.createElement(f.a, {
 					name: "expand",
 					className: Object(c.a)(g.a.icon, g.a.showOnHover)
 				})) : r.a.createElement(f.a, {
@@ -2352,7 +2352,7 @@
 					"data-click-id": "expando_open",
 					to: Object(d.a)(w.permalink),
 					rel: "nofollow",
-					onClick: j
+					onClick: k
 				}, r.a.createElement(f.a, {
 					name: "text_post",
 					className: g.a.icon
@@ -3188,13 +3188,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: s.xe,
+					experimentName: s.Ae,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === s.Fe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === s.Ie.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(o.a)(i.G, a, (e, t) => c(e, t));
 			Object(o.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.2db9d02a013dd008f55e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.eb4442a193244ca24732.js.map

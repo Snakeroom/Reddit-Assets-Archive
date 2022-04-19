@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.1b4e18211ddf036e4f75.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.579c35769b8f44d35882.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RelatedSubredditsCarousel"], {
 		"./src/reddit/actions/subreddit/relatedSubreddits.ts": function(e, t, s) {
@@ -97,10 +97,10 @@
 					u = Object(d.e)(e => ((e, t) => {
 						const {
 							name: s
-						} = Object(o.S)(e, {
+						} = Object(o.T)(e, {
 							subredditId: t
 						}) || {};
-						return Object(o.eb)(e, {
+						return Object(o.fb)(e, {
 							identifier: {
 								name: s,
 								type: "subreddit"
@@ -108,7 +108,7 @@
 						})
 					})(e, t)),
 					[b, m] = Object(r.useState)(u ? 0 : void 0),
-					p = Object(d.e)(e => Object(o.q)(e, {
+					p = Object(d.e)(e => Object(o.r)(e, {
 						subredditId: t
 					}));
 				return Object(r.useEffect)(() => (t && s(Object(a.b)(t, 12)), () => {
@@ -173,10 +173,10 @@
 				O = s("./src/reddit/selectors/subreddit.ts"),
 				j = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				E = s("./src/reddit/components/SubredditCarousel/index.m.less"),
-				S = s.n(E);
+				N = s.n(E);
 
-			function N() {
-				return (N = Object.assign || function(e) {
+			function S() {
+				return (S = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
@@ -201,7 +201,7 @@
 					[E, C] = Object(o.useState)(null),
 					[y, h] = Object(o.useState)(0),
 					[g, k] = Object(o.useState)(void 0),
-					D = Object(l.e)(e => Object(O.y)(e, u));
+					D = Object(l.e)(e => Object(O.z)(e, u));
 				Object(o.useEffect)(() => {
 					(null == u ? void 0 : u.length) && f(Object(b.e)(u))
 				}, [u]);
@@ -229,39 +229,39 @@
 						source: "similar_communities",
 						action: "view",
 						noun: "module",
-						subreddit: e ? Object(O.S)(t, {
+						subreddit: e ? Object(O.T)(t, {
 							subredditId: e
 						}) : void 0
 					}))(d))
 				}, [L.length, p, d]), L.length < p ? null : c.a.createElement("div", {
 					ref: j,
-					className: Object(r.a)(S.a.carouselContainer, s, null === S.a || void 0 === S.a ? void 0 : S.a[m])
+					className: Object(r.a)(N.a.carouselContainer, s, null === N.a || void 0 === N.a ? void 0 : N.a[m])
 				}, c.a.createElement("div", {
-					className: S.a.carouselHeader,
+					className: N.a.carouselHeader,
 					style: {
 						width: g
 					}
 				}, c.a.createElement("h3", {
-					className: S.a.carouselTitle
+					className: N.a.carouselTitle
 				}, x._("{title}", [x._param("title", t)], {
 					hk: "4n2CUI"
 				})), L.length > y && c.a.createElement("div", {
-					className: S.a.carouselControls
+					className: N.a.carouselControls
 				}, c.a.createElement("button", {
-					className: S.a.scrollButton,
+					className: N.a.scrollButton,
 					onClick: A(-y)
 				}, c.a.createElement(v.a, {
 					name: n.a.left_fill,
-					className: S.a.scrollIcon
+					className: N.a.scrollIcon
 				})), c.a.createElement("button", {
-					className: S.a.scrollButton,
+					className: N.a.scrollButton,
 					onClick: A(y)
 				}, c.a.createElement(v.a, {
 					name: n.a.right_fill,
-					className: S.a.scrollIcon
+					className: N.a.scrollIcon
 				})))), c.a.createElement("div", {
 					ref: C,
-					className: S.a.carouselWrapper,
+					className: N.a.carouselWrapper,
 					style: {
 						width: g
 					}
@@ -271,7 +271,7 @@
 						...r
 					} = e;
 					var n;
-					return c.a.createElement(I, N({
+					return c.a.createElement(I, S({
 						index: t + 1,
 						size: m,
 						banner: null == s ? void 0 : s.bannerBackgroundImage,
@@ -290,7 +290,7 @@
 					icon: v,
 					isSubscribed: j,
 					banner: E,
-					path: N,
+					path: S,
 					size: C
 				} = e;
 				const I = Object(l.d)();
@@ -304,45 +304,45 @@
 					actionInfo: {
 						reason: `${s}`
 					},
-					subreddit: Object(O.S)(r, {
+					subreddit: Object(O.T)(r, {
 						subredditId: t
 					})
 				}))(e ? "unsubsribe" : "subscribe", t, s), [t]);
 				return c.a.createElement("div", {
-					className: Object(r.a)(S.a.carouselItem, null === S.a || void 0 === S.a ? void 0 : S.a[C])
+					className: Object(r.a)(N.a.carouselItem, null === N.a || void 0 === N.a ? void 0 : N.a[C])
 				}, c.a.createElement("div", {
-					className: S.a.bannerWrapper,
+					className: N.a.bannerWrapper,
 					style: {
 						backgroundColor: b || void 0
 					}
 				}, c.a.createElement("img", {
-					className: S.a.banner,
+					className: N.a.banner,
 					src: E || void 0
 				})), c.a.createElement("div", {
-					className: S.a.carouselContent
+					className: N.a.carouselContent
 				}, c.a.createElement(m.a, {
-					to: N,
-					className: S.a.lockup
+					to: S,
+					className: N.a.lockup
 				}, v ? c.a.createElement("img", {
 					src: v,
-					className: S.a.subredditIcon
+					className: N.a.subredditIcon
 				}) : c.a.createElement(_.a, {
-					className: S.a.subredditIcon
+					className: N.a.subredditIcon
 				}), c.a.createElement("div", {
-					className: S.a.lockupText
+					className: N.a.lockupText
 				}, c.a.createElement("span", {
-					className: S.a.subredditName
+					className: N.a.subredditName
 				}, "r/", n), c.a.createElement("span", {
-					className: S.a.subscribersCount
+					className: N.a.subscribersCount
 				}, x._({
 					"*": "{number} members",
 					_1: "1 member"
 				}, [x._plural(a, "number", Object(d.b)(a))], {
 					hk: "4yqFU9"
 				})))), c.a.createElement("p", {
-					className: S.a.description
+					className: N.a.description
 				}, i), c.a.createElement(p.a, {
-					className: S.a.subscribeButton,
+					className: N.a.subscribeButton,
 					identifier: {
 						name: n,
 						type: "subreddit"
@@ -385,4 +385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.1b4e18211ddf036e4f75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.579c35769b8f44d35882.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.94f30c9b4058b3f420a2.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.599567ded58759dab62b.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.Cf)(e.category_name)
+									displayText: Object(u.Ff)(e.category_name)
 								};
 								n.push(s.id), t[s.id] = s
 							}), {
@@ -2262,9 +2262,9 @@
 						let {
 							categoryId: n
 						} = t;
-						return Object(R.N)(e, n)
+						return Object(R.O)(e, n)
 					},
-					subreddits: R.Z,
+					subreddits: R.ab,
 					isOnLeaderboardPage: e => !!Object(D.h)(e),
 					isOnFrontpage: e => !!Object(D.g)(e)
 				}),
@@ -2351,8 +2351,8 @@
 				U = n("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				K = n.n(U);
 
-			function Z() {
-				return (Z = Object.assign || function(e) {
+			function V() {
+				return (V = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -2360,7 +2360,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const V = e => {
+			const Z = e => {
 				const {
 					category: t,
 					children: n,
@@ -2368,7 +2368,7 @@
 					isActive: s,
 					tabIndex: a
 				} = e, o = Object(c.a)(K.a.categoryLink, s && K.a.active, r);
-				return i.a.createElement("li", null, i.a.createElement(J.a, Z({}, t.anchorProps, {
+				return i.a.createElement("li", null, i.a.createElement(J.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2428,7 +2428,7 @@
 						}
 					}, s, e && e.map((e, r) => {
 						const s = a + r * n;
-						return i.a.createElement(V, {
+						return i.a.createElement(Z, {
 							category: e,
 							className: t,
 							isActive: h(e.name),
@@ -2533,7 +2533,7 @@
 					} = t;
 					return Object(g.b)(n.params.categoryName || "")
 				},
-				Ee = Object(m.Bf)(b.i),
+				Ee = Object(m.Ef)(b.i),
 				_e = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2662,4 +2662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.94f30c9b4058b3f420a2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.599567ded58759dab62b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.9826d4c46ae2a30ec6cd.js
-// Retrieved at 3/29/2022, 8:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.b8d64c8d6e1d7d7ef496.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -116,8 +116,8 @@
 				y = s("./src/reddit/featureFlags/component.tsx"),
 				M = s("./src/reddit/helpers/governance/ethereum.ts"),
 				P = s("./src/reddit/models/Toast/index.ts"),
-				I = s("./src/reddit/selectors/economics.ts"),
-				T = s("./src/reddit/selectors/subreddit.ts"),
+				T = s("./src/reddit/selectors/economics.ts"),
+				I = s("./src/reddit/selectors/subreddit.ts"),
 				S = s("./src/reddit/components/Economics/SubredditPremium/constants.ts"),
 				A = s("./src/reddit/components/Econ/PreviewsTermsOfUseLink/index.tsx"),
 				B = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/Footer/index.m.less"),
@@ -130,7 +130,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(I.r)(e, s)
+					return Object(T.r)(e, s)
 				}
 			});
 			var R = Object(c.b)(L)((function(e) {
@@ -160,7 +160,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(I.r)(e, s)
+					return Object(T.r)(e, s)
 				}
 			});
 			var X = Object(c.b)(V)((function(e) {
@@ -311,7 +311,7 @@
 						let {
 							subredditId: s
 						} = t;
-						return Object(I.r)(e, s)
+						return Object(T.r)(e, s)
 					},
 					pointsDetails: (e, t) => {
 						let {
@@ -323,15 +323,15 @@
 						let {
 							subredditId: s
 						} = t;
-						return Object(I.r)(e, s).prices.points || "0"
+						return Object(T.r)(e, s).prices.points || "0"
 					},
 					subscriptionExpiration: (e, t) => {
 						let {
 							subredditId: s
 						} = t;
-						return Object(I.o)(e, s)
+						return Object(T.o)(e, s)
 					},
-					subreddit: T.S,
+					subreddit: I.T,
 					wallet: g.d
 				}),
 				$ = Object(c.b)(Q, (e, t) => ({
@@ -1084,4 +1084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.9826d4c46ae2a30ec6cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.b8d64c8d6e1d7d7ef496.js.map

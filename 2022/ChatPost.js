@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.7ff14f3b891a62888c10.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.1432eccb07d848a460ac.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -688,7 +688,7 @@
 						return !!Object(je.q)(e, n.subredditId, n.authorId).length
 					},
 					subredditDisplayText: (e, t) => {
-						const n = Object(Se.H)(e, {
+						const n = Object(Se.I)(e, {
 							commentId: t.comment.id
 						});
 						return n ? n.displayText : ""
@@ -705,6 +705,7 @@
 						commentId: t.comment.id
 					}),
 					isBlockingInterstitialEnabled: we.b,
+					isBlockingInterstitialV2Enabled: we.c,
 					isModWithUserNotesPermissions: (e, t) => {
 						let {
 							comment: n
@@ -728,22 +729,23 @@
 					ignoreFlairPosition: b,
 					ignoreLock: g,
 					isBlockingInterstitialEnabled: k,
-					isModWithUserNotesPermissions: E,
-					isLivestreaming: y,
-					isPostComment: T,
-					onCommentAuthorClick: O,
-					onCommentTimestampClick: j,
-					renderContractorBadge: M,
-					renderedInOverlay: N,
-					subredditDisplayText: w,
-					userHasNft: S
-				} = e, A = r.a.createElement(r.a.Fragment, null, r.a.createElement(Oe.b, {
+					isBlockingInterstitialV2Enabled: E,
+					isModWithUserNotesPermissions: y,
+					isLivestreaming: T,
+					isPostComment: O,
+					onCommentAuthorClick: j,
+					onCommentTimestampClick: M,
+					renderContractorBadge: N,
+					renderedInOverlay: w,
+					subredditDisplayText: S,
+					userHasNft: A
+				} = e, R = r.a.createElement(r.a.Fragment, null, r.a.createElement(Oe.b, {
 					commentId: a.id
 				}), r.a.createElement(Oe.a, {
 					commentId: a.id,
 					commentsPageKey: d
 				}));
-				if (T) return r.a.createElement(r.a.Fragment, null, r.a.createElement(Te, {
+				if (O) return r.a.createElement(r.a.Fragment, null, r.a.createElement(Te, {
 					className: Object(c.a)(n, {
 						[Pe.a.collapsed]: s
 					}),
@@ -752,15 +754,15 @@
 					comment: a,
 					flair: u || null,
 					ignoreLock: g,
-					isModWithUserNotesPermissions: E,
-					isLivestreaming: y,
-					onCommentAuthorClick: O,
-					onCommentTimestampClick: j,
+					isModWithUserNotesPermissions: y,
+					isLivestreaming: T,
+					onCommentAuthorClick: j,
+					onCommentTimestampClick: M,
 					permalink: i,
-					renderContractorBadge: !!M,
-					renderedInOverlay: N,
-					subredditDisplayText: w
-				}), A);
+					renderContractorBadge: !!N,
+					renderedInOverlay: w,
+					subredditDisplayText: S
+				}), R);
 				if (a.isDeleted) return r.a.createElement(He, Be({}, e, {
 					className: Object(c.a)(n, Pe.a.container, {
 						[Pe.a.collapsed]: s
@@ -771,15 +773,15 @@
 						[Pe.a.collapsed]: s
 					})
 				}));
-				const R = !b && p === Me.b.Left;
+				const P = !b && p === Me.b.Left;
 				return r.a.createElement("div", {
 					className: Object(c.a)(n, Pe.a.container, {
 						[Pe.a.collapsed]: s,
 						[Pe.a.hasBadges]: h,
-						[Pe.a.liveStreaming]: y
+						[Pe.a.liveStreaming]: T
 					}),
 					"data-testid": "comment-top-meta"
-				}, u && R && r.a.createElement(v.b, {
+				}, u && P && r.a.createElement(v.b, {
 					flair: u,
 					forceSmallEmojis: m
 				}), !Object(I.f)(a) && r.a.createElement(C.b, {
@@ -789,17 +791,17 @@
 					userId: a.authorId,
 					uniqueIdentifier: a.id
 				}), t && t, r.a.createElement(L, {
-					authorClassName: S ? Pe.a.NftAuthor : void 0,
+					authorClassName: A ? Pe.a.NftAuthor : void 0,
 					collapsed: s,
 					comment: a,
-					isLivestreaming: y,
+					isLivestreaming: T,
 					isStrong: !!m,
-					onClick: O,
-					renderedInOverlay: N
+					onClick: j,
+					renderedInOverlay: w
 				}), o && r.a.createElement(X, null), o && r.a.createElement(x.c, {
 					className: Pe.a.metaText,
 					key: "crowdControlSeparator"
-				}), u && !R && r.a.createElement(Fe, {
+				}), u && !P && r.a.createElement(Fe, {
 					flair: u,
 					forceSmallEmojis: m
 				}), !m && r.a.createElement(f.a, {
@@ -811,13 +813,13 @@
 					subredditId: a.subredditId,
 					userId: a.authorId,
 					username: a.author
-				}), A, r.a.createElement(fe, {
+				}), R, r.a.createElement(fe, {
 					className: Pe.a.authorRole,
 					comment: a,
-					subredditDisplayText: w,
-					renderContractorBadge: !!M,
-					renderedInOverlay: N
-				}), !m && r.a.createElement(r.a.Fragment, null, !a.isDeleted && !T && r.a.createElement(r.a.Fragment, null, r.a.createElement(x.b, {
+					subredditDisplayText: S,
+					renderContractorBadge: !!N,
+					renderedInOverlay: w
+				}), !m && r.a.createElement(r.a.Fragment, null, !a.isDeleted && !O && r.a.createElement(r.a.Fragment, null, r.a.createElement(x.b, {
 					className: Pe.a.metaText,
 					isScoreHidden: a.isScoreHidden,
 					score: a.score
@@ -829,8 +831,8 @@
 					className: Pe.a.MetaLink,
 					comment: a,
 					permalink: i,
-					renderedInOverlay: N,
-					isBlockingInterstitialEnabled: k
+					renderedInOverlay: w,
+					isBlockingInterstitialEnabled: k || E
 				}), a.isStickied && r.a.createElement(r.a.Fragment, null, r.a.createElement(x.c, {
 					className: Pe.a.separator
 				}), r.a.createElement(Ee, null)), a.editedAt && r.a.createElement(r.a.Fragment, null, r.a.createElement(x.c, {
@@ -840,10 +842,10 @@
 				}))), r.a.createElement(ue, {
 					comment: a,
 					ignoreLock: g,
-					renderedInOverlay: N
+					renderedInOverlay: w
 				}), r.a.createElement(l.a, {
 					thing: a,
-					tooltipType: N ? _.c.Lightbox : void 0
+					tooltipType: w ? _.c.Lightbox : void 0
 				}))
 			});
 			const He = e => {
@@ -854,7 +856,8 @@
 						comment: a,
 						commentPermalink: i,
 						isBlockingInterstitialEnabled: c,
-						renderedInOverlay: d
+						isBlockingInterstitialV2Enabled: d,
+						renderedInOverlay: l
 					} = e;
 					return r.a.createElement("div", {
 						className: o
@@ -867,8 +870,8 @@
 						className: Pe.a.MetaLink,
 						comment: a,
 						permalink: i,
-						renderedInOverlay: d,
-						isBlockingInterstitialEnabled: c
+						renderedInOverlay: l,
+						isBlockingInterstitialEnabled: c || d
 					}), n && Ke({
 						childrenInfo: t
 					}))
@@ -881,7 +884,8 @@
 						renderedInOverlay: o,
 						collapsed: a,
 						commentPermalink: i,
-						isBlockingInterstitialEnabled: c
+						isBlockingInterstitialEnabled: c,
+						isBlockingInterstitialV2Enabled: d
 					} = e;
 					return r.a.createElement("div", {
 						className: n
@@ -902,7 +906,7 @@
 						comment: t,
 						permalink: i,
 						renderedInOverlay: o,
-						isBlockingInterstitialEnabled: c
+						isBlockingInterstitialEnabled: c || d
 					}), Ke({
 						childrenInfo: s
 					}))
@@ -2204,9 +2208,9 @@
 				Ft = n("./src/reddit/constants/experiments.ts"),
 				Dt = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const Ut = e => Object(Dt.c)(e, {
-				experimentName: Ft.ob,
+				experimentName: Ft.qb,
 				experimentEligibilitySelector: Dt.a
-			}) === Ft.jb.Enabled;
+			}) === Ft.lb.Enabled;
 			var Wt = n("./src/reddit/selectors/communityAwards.ts");
 			const Ht = (e, t) => {
 				let {
@@ -3737,4 +3741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.7ff14f3b891a62888c10.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.1432eccb07d848a460ac.js.map

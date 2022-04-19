@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.aaa554794991f7a06eed.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.7e2efc461c7c0f653200.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4643,12 +4643,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.gf.SmIcon:
+						case b.jf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: i
 							});
-						case b.gf.SmIconHc:
+						case b.jf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -5109,7 +5109,7 @@
 						} = t;
 						return Object(_.D)(e, n, r, s)
 					}),
-					subredditsById: w.Z,
+					subredditsById: w.ab,
 					viewportDataLoaded: v.a,
 					pageReferrer: p.U,
 					postListPlaceholderComponent: () => f.a,
@@ -5522,7 +5522,7 @@
 							subredditName: r,
 							[s]: n.id
 						},
-						d = Object(l.x)(e, {
+						d = Object(l.y)(e, {
 							subredditName: r
 						});
 					return d ? {
@@ -6331,15 +6331,15 @@
 			const i = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: r.Gc
+						experimentName: r.Jc
 					});
-					return !(!t || Object(r.Df)(t))
+					return !(!t || Object(r.Gf)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: r.Gc
-					}) === r.pd.ListingEnabled
+						experimentName: r.Jc
+					}) === r.sd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -6375,7 +6375,7 @@
 			const c = (e, t) => {
 					const n = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (n) {
-						const t = Object(i.S)(e, {
+						const t = Object(i.T)(e, {
 							subredditId: n
 						});
 						return t && t.displayText || ""
@@ -6388,14 +6388,14 @@
 				m = Object(r.a)((e, t) => {
 					const n = p(e, t);
 					if (!n) return u;
-					const r = Object(i.W)(e, {
+					const r = Object(i.X)(e, {
 						subredditName: n.name
 					});
 					return r && r.postIds && r.postIds.length ? r.postIds : u
 				}),
 				p = (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(i.S)(e, {
+					return n ? Object(i.T)(e, {
 						subredditId: n
 					}) : null
 				},
@@ -6472,12 +6472,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.af
+						experimentName: r.df
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.gf.SmIcon || t === r.gf.SmIconHc
+					return t === r.jf.SmIcon || t === r.jf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6495,7 +6495,7 @@
 					let {
 						subredditName: n
 					} = t;
-					const r = Object(i.W)(e, {
+					const r = Object(i.X)(e, {
 						subredditName: n
 					});
 					return (r && r.postIds || []).slice(0, 2)
@@ -6514,8 +6514,8 @@
 			}
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"9bf5e276ac63"}')
+			e.exports = JSON.parse('{"id":"c10a566d5f55"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.aaa554794991f7a06eed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.7e2efc461c7c0f653200.js.map

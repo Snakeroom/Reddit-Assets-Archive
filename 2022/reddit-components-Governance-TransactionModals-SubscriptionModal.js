@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.091b33e1e96b59f6ea61.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.5c78349d7c65fe88aa3f.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-SubscriptionModal"], {
 		"./src/reddit/components/Governance/TokenAmount/index.m.less": function(e, t, s) {
@@ -133,7 +133,7 @@
 				y = s.n(N);
 
 			function E(e) {
-				const t = Object(o.e)(t => Object(g.S)(t, e)),
+				const t = Object(o.e)(t => Object(g.T)(t, e)),
 					s = Object(o.e)(t => Object(w.r)(t, e.subredditId)),
 					r = s.membershipAlt,
 					c = s.prices.points,
@@ -216,4 +216,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.091b33e1e96b59f6ea61.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-SubscriptionModal.5c78349d7c65fe88aa3f.js.map

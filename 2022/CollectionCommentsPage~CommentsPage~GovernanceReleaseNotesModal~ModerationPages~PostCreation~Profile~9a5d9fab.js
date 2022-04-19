@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.0b2710bc9077b190e91a.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.8b31b6ccfc73ed581e0a.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -85,16 +85,16 @@
 			const h = Object(a.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Td
+					experimentName: u.Wd
 				});
-				return Object(u.Df)(t) ? void 0 : t
+				return Object(u.Gf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Ud
+					experimentName: u.Xd
 				});
-				return Object(u.Df)(t) ? void 0 : t
-			}, (e, t) => e === u.Vd.Enabled && t === u.Vd.Enabled);
+				return Object(u.Gf)(t) ? void 0 : t
+			}, (e, t) => e === u.Yd.Enabled && t === u.Yd.Enabled);
 			var p = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -594,8 +594,8 @@
 					F = U > 0,
 					G = U < p.length - 1,
 					K = Object(h.a)(),
-					$ = Object(i.useRef)(null),
 					Y = Object(i.useRef)(null),
+					$ = Object(i.useRef)(null),
 					[z, J] = Object(i.useState)(H ? U : -1),
 					[q, Q] = Object(i.useState)(H ? U : -1),
 					X = Object(l.a)(H),
@@ -615,7 +615,7 @@
 							}, 1e3)) : (z < 0 || q - z == 0) && clearTimeout(ee.current)
 						})
 					}, [z, q, p.length]);
-				Object(a.a)(Y, te);
+				Object(a.a)($, te);
 				const se = Object(i.useCallback)(e => {
 						t(Object(x.f)({
 							postId: k,
@@ -654,7 +654,7 @@
 						const e = p[U] && p[U].outboundUrl;
 						e && K(u.c(k, e))
 					}, [K, k, U, p]);
-				m(y.a.ArrowLeft, $.current, ae), m(y.a.ArrowRight, $.current, oe);
+				m(y.a.ArrowLeft, Y.current, ae), m(y.a.ArrowRight, Y.current, oe);
 				const de = p[U] && p[U].caption,
 					le = p[U] && p[U].outboundUrl,
 					ce = ((e, t, s) => {
@@ -671,7 +671,7 @@
 					})(S, b, g);
 				return n.a.createElement("div", {
 					className: Object(r.a)(j.a.outerContainer),
-					ref: $,
+					ref: Y,
 					tabIndex: 0
 				}, T ? n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 					className: Object(r.a)(j.a.tilesWrapper, {
@@ -705,7 +705,7 @@
 				})) : n.a.createElement("div", {
 					className: j.a.slideshowContainer,
 					tabIndex: -1,
-					ref: Y,
+					ref: $,
 					onClick: e.onClickRevealBlurred,
 					style: ce
 				}, n.a.createElement("div", {
@@ -740,14 +740,14 @@
 					})
 				})), !e.shouldBlur && n.a.createElement(n.a.Fragment, null, n.a.createElement(M, {
 					onClick: ae,
-					setFocusTo: Y,
+					setFocusTo: $,
 					hasMoreSlides: F,
 					title: "Previous",
 					iconClassName: j.a.prevIcon,
 					className: j.a.prevButton
 				}), n.a.createElement(M, {
 					onClick: oe,
-					setFocusTo: Y,
+					setFocusTo: $,
 					hasMoreSlides: G,
 					title: "Next",
 					iconClassName: j.a.nextIcon,
@@ -1086,8 +1086,8 @@
 				F = s("./src/reddit/constants/componentSizes.ts"),
 				G = s("./src/reddit/constants/screenWidths.ts"),
 				K = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				$ = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
-				Y = s("./src/reddit/helpers/getRichTextContent/index.ts"),
+				Y = s("./src/reddit/helpers/canPreviewSelfText/index.ts"),
+				$ = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				z = s("./src/reddit/helpers/mediaGallery/index.tsx"),
 				J = s("./src/reddit/helpers/path/index.ts"),
 				q = s("./src/reddit/helpers/postHasSelfText/index.ts"),
@@ -1206,6 +1206,7 @@
 						return Object(oe.b)(e, s.id)
 					},
 					isBlockingInterstitialEnabled: ee.b,
+					isBlockingInterstitialV2Enabled: ee.c,
 					currentUserId: de.Cb,
 					isNSFW: (e, t) => {
 						let {
@@ -1343,7 +1344,7 @@
 							viewportWidth: window.innerWidth
 						})
 					}, this.handlePostMediaClick = e => {
-						this.props.isBlockingInterstitialEnabled && (e.preventDefault(), this.props.openPostLink(this.props.post))
+						(this.props.isBlockingInterstitialEnabled || this.props.isBlockingInterstitialV2Enabled) && (e.preventDefault(), this.props.openPostLink(this.props.post))
 					}, this.state = {
 						canLoadContent: e.shouldLoad || !1,
 						forcePause: !1,
@@ -1562,9 +1563,9 @@
 					if (!v.media) return null;
 					switch (v.media.type) {
 						case Z.o.RTJSON:
-							const e = Object(Y.a)(v, null);
+							const e = Object($.a)(v, null);
 							if (null === e) return null;
-							if (!w && !Object($.a)(v)) return null;
+							if (!w && !Object(Y.a)(v)) return null;
 							const n = v.isMeta ? Object(X.a)(e, v.id) : e;
 							return u.a.createElement(u.a.Fragment, null, be && u.a.createElement(k.a, {
 								canLoadContent: M,
@@ -2144,4 +2145,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.0b2710bc9077b190e91a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.8b31b6ccfc73ed581e0a.js.map

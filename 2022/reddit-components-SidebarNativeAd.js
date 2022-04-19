@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.a2a9e5e4a3b5fa4280e9.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4197dc13f89ff3a4a886.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -789,7 +789,7 @@
 							thingId: r,
 							correlationId: n
 						})), e(Object(l.h)(i.a.GOLD_GILD_MODAL));
-						const f = Object(p.I)(a, {
+						const f = Object(p.J)(a, {
 							thingId: r
 						});
 						let b = null;
@@ -1116,9 +1116,9 @@
 			})), n.d(t, "d", (function() {
 				return k
 			})), n.d(t, "l", (function() {
-				return I
-			})), n.d(t, "t", (function() {
 				return j
+			})), n.d(t, "t", (function() {
+				return I
 			})), n.d(t, "u", (function() {
 				return T
 			})), n.d(t, "r", (function() {
@@ -1163,8 +1163,8 @@
 				C = o.a.header("ModalHeader", u.a),
 				E = o.a.div("ModalTitle", u.a),
 				k = o.a.div("ModalAnnotation", u.a),
-				I = o.a.div("ModalMain", u.a),
-				j = o.a.textarea("TextArea", u.a),
+				j = o.a.div("ModalMain", u.a),
+				I = o.a.textarea("TextArea", u.a),
 				T = o.a.wrapped(a.l, "WarningButton", u.a),
 				P = o.a.wrapped(a.l, "PrimaryButton", u.a),
 				S = o.a.wrapped(a.o, "CancelButton", u.a),
@@ -1426,8 +1426,8 @@
 				C = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				E = n("./src/lib/getShortenedLink.ts"),
 				k = n("./src/reddit/components/FlairWrapper/index.tsx"),
-				I = n("./node_modules/fbt/lib/FbtPublic.js"),
-				j = n("./src/lib/prettyPrintNumber/index.ts"),
+				j = n("./node_modules/fbt/lib/FbtPublic.js"),
+				I = n("./src/lib/prettyPrintNumber/index.ts"),
 				T = n("./src/reddit/components/Poll/PollExpiry/index.tsx"),
 				P = n("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
 				S = n.n(P);
@@ -1442,10 +1442,10 @@
 					} = e, r = n ? n.totalVotes : "0";
 					return s.a.createElement("div", {
 						className: Object(l.a)(e.className, S.a.proposalMetaData)
-					}, s.a.createElement("span", null, I.fbt._({
+					}, s.a.createElement("span", null, j.fbt._({
 						"*": "{count} votes",
 						_1: "{count} vote"
-					}, [I.fbt._param("count", Object(j.a)(r)), I.fbt._plural(parseInt(r))], {
+					}, [j.fbt._param("count", Object(I.a)(r)), j.fbt._plural(parseInt(r))], {
 						hk: "4rP1VK"
 					})), t && s.a.createElement(T.a, {
 						className: S.a.proposalExpiry,
@@ -1564,8 +1564,8 @@
 						subreddit: n
 					} = e, {
 						isSponsored: r
-					} = t, o = Object(i.d)(), a = Object(G.a)(), c = Object(i.e)(L.b), l = e => {
-						!c || t.media && Object(x.H)(t.media) || (e.preventDefault(), o(Object(h.bb)(Object(g.b)(t.permalink), t.id)))
+					} = t, o = Object(i.d)(), a = Object(G.a)(), c = Object(i.e)(L.b), l = Object(i.e)(L.c), u = e => {
+						!c && !l || t.media && Object(x.H)(t.media) || (e.preventDefault(), o(Object(h.bb)(Object(g.b)(t.permalink), t.id)))
 					};
 					if (e.isCommentsPage && !e.isCommentPermalink && !e.shouldLinkWrap) return s.a.createElement(K, {
 						nowrap: e.nowrap
@@ -1598,7 +1598,7 @@
 							target: e.shouldOpenPostInNewTab ? "_blank" : void 0,
 							titleColor: e.titleColor,
 							to: i,
-							onClick: l
+							onClick: u
 						}, s.a.createElement(X, e)))
 					}
 				},
@@ -1833,8 +1833,8 @@
 				C = n("./src/reddit/helpers/truncateStringWithEllipsis.ts"),
 				E = n("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				k = n("./src/reddit/models/NewStructuredStyles/index.ts"),
-				I = n("./src/reddit/models/Theme/index.ts"),
-				j = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				j = n("./src/reddit/models/Theme/index.ts"),
+				I = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				T = n("./src/lib/constants/index.ts"),
 				P = n("./src/reddit/models/Media/index.ts"),
 				S = n("./src/reddit/components/NativeBannerAd/index.m.less"),
@@ -1893,7 +1893,7 @@
 					}
 				},
 				X = e => ({
-					background: Object(I.g)(Object(j.a)(e).body, null, null) || ""
+					background: Object(j.g)(Object(I.a)(e).body, null, null) || ""
 				});
 			class Z extends s.a.Component {
 				constructor() {
@@ -2265,9 +2265,9 @@
 			})), n.d(t, "clickConfirmReportAward", (function() {
 				return k
 			})), n.d(t, "viewGildModalEvent", (function() {
-				return I
-			})), n.d(t, "clickSelectAwardEvent", (function() {
 				return j
+			})), n.d(t, "clickSelectAwardEvent", (function() {
+				return I
 			})), n.d(t, "triggerAnonymousEvent", (function() {
 				return T
 			})), n.d(t, "clickMessageInputEvent", (function() {
@@ -2377,7 +2377,7 @@
 				C = g("report_community_award"),
 				E = g("cancel_report_community_award"),
 				k = g("confirm_report_community_award"),
-				I = (e, t, n) => r => ({
+				j = (e, t, n) => r => ({
 					...u(r, n),
 					source: "give_gold",
 					action: "view",
@@ -2387,7 +2387,7 @@
 						defaultAnonymous: t
 					}
 				}),
-				j = (e, t, n) => r => ({
+				I = (e, t, n) => r => ({
 					...u(r, t),
 					source: "give_gold",
 					action: "click",
@@ -2702,9 +2702,9 @@
 			})), n.d(t, "c", (function() {
 				return E
 			})), n.d(t, "a", (function() {
-				return I
-			})), n.d(t, "n", (function() {
 				return j
+			})), n.d(t, "n", (function() {
+				return I
 			}));
 			var r = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				o = n("./src/reddit/selectors/avatarMarketing.ts"),
@@ -2821,8 +2821,8 @@
 					},
 					snoovatar: s.eb(r)
 				}),
-				I = e => k("onboarding", "click", e),
-				j = () => k("avatar", "view", "onboarding")
+				j = e => k("onboarding", "click", e),
+				I = () => k("avatar", "view", "onboarding")
 		},
 		"./src/reddit/helpers/truncateStringWithEllipsis.ts": function(e, t, n) {
 			"use strict";
@@ -3684,9 +3684,9 @@
 			})), n.d(t, "k", (function() {
 				return k
 			})), n.d(t, "j", (function() {
-				return I
-			})), n.d(t, "m", (function() {
 				return j
+			})), n.d(t, "m", (function() {
+				return I
 			})), n.d(t, "e", (function() {
 				return T
 			})), n.d(t, "d", (function() {
@@ -3725,11 +3725,11 @@
 				C = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
 				E = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
 				k = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
-				I = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				j = e => e.features.goldPurchase.payment.stripeToken.pending,
+				j = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
+				I = e => e.features.goldPurchase.payment.stripeToken.pending,
 				T = e => e.features.goldPurchase.payment.paypal.passthrough,
 				P = e => e.features.goldPurchase.payment.paypal.errorMessage
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.a2a9e5e4a3b5fa4280e9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4197dc13f89ff3a4a886.js.map

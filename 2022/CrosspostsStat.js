@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostsStat.ffb981d515f905ae4e8a.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostsStat.6c858d27cf24a919aef2.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostsStat"], {
 		"./src/reddit/components/CreatorStats/CrosspostsStat.m.less": function(e, t, s) {
@@ -46,7 +46,7 @@
 						const s = f.getState(),
 							r = Object(i.f)(e),
 							n = t.substring(2),
-							o = Object(u.D)(s, n) || Object(p.m)(s, n);
+							o = Object(u.E)(s, n) || Object(p.m)(s, n);
 						j(Object(c.a)(_, e, r, o, n, O))
 					}, [f, j, _, O]);
 				return o.a.createElement("div", {
@@ -281,4 +281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.ffb981d515f905ae4e8a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.6c858d27cf24a919aef2.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.f39a912c37a89bedf097.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.8a86bd8226d74d1ecdf3.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -684,10 +684,10 @@
 			}
 			var Me = n("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Ae.Nd,
+					experimentName: Ae.Qd,
 					experimentEligibilitySelector: We.a
 				}), Me.a),
-				Qe = Object(u.a)(Ue, e => e === Ae.Od.Enabled);
+				Qe = Object(u.a)(Ue, e => e === Ae.Rd.Enabled);
 			var qe = n("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				Je = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ze = n("./src/reddit/selectors/user.ts");
@@ -712,15 +712,15 @@
 					},
 					bffsLeaderboardVariant: Ge,
 					inRpanTopVideoEntrypointExperiment: Je.e,
-					rankings: e => Object(Ke.N)(e, Ye),
+					rankings: e => Object(Ke.O)(e, Ye),
 					shouldShowTopicsWidget: e => {
 						const t = Object(Je.e)(e),
-							n = !!Object(Ke.N)(e, Ye);
+							n = !!Object(Ke.O)(e, Ye);
 						return (!t || !n) && function(e) {
 							return Object(We.c)(e, {
 								experimentEligibilitySelector: Ze.Q,
-								experimentName: Ae.ec
-							}) === Ae.kd
+								experimentName: Ae.hc
+							}) === Ae.nd
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -872,7 +872,7 @@
 					return {
 						crosspost: n,
 						post: t,
-						subredditOrProfile: Object(g.K)(e, {
+						subredditOrProfile: Object(g.L)(e, {
 							identifier: t.belongsTo
 						})
 					}
@@ -2220,4 +2220,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.f39a912c37a89bedf097.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.8a86bd8226d74d1ecdf3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.8820ac75ba5b6db3c64d.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.499a237fc28b2edff270.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditSearchCarousel"], {
 		"./src/reddit/actions/subreddit/subredditCarousel.ts": function(e, t, s) {
@@ -77,13 +77,13 @@
 				f = s("./src/reddit/controls/Button/index.tsx"),
 				v = s("./src/reddit/icons/fonts/index.tsx"),
 				_ = s("./src/reddit/icons/svgs/CommunityDefault/filled.tsx"),
-				S = s("./src/reddit/selectors/subreddit.ts"),
-				E = s("./src/reddit/components/TrackingHelper/index.tsx"),
-				y = s("./src/reddit/components/SubredditCarousel/index.m.less"),
-				h = s.n(y);
+				E = s("./src/reddit/selectors/subreddit.ts"),
+				S = s("./src/reddit/components/TrackingHelper/index.tsx"),
+				h = s("./src/reddit/components/SubredditCarousel/index.m.less"),
+				x = s.n(h);
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function y() {
+				return (y = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
@@ -93,7 +93,7 @@
 			}
 			const {
 				fbt: N
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = Object(E.c)(e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), O = Object(S.c)(e => {
 				let {
 					title: t,
 					className: s,
@@ -104,20 +104,20 @@
 					minSubredditCount: p = 2
 				} = e;
 				const f = Object(l.d)(),
-					[_, E] = Object(c.useState)(null),
-					[y, O] = Object(c.useState)(null),
+					[_, S] = Object(c.useState)(null),
+					[h, O] = Object(c.useState)(null),
 					[C, I] = Object(c.useState)(0),
 					[B, k] = Object(c.useState)(void 0),
-					g = Object(l.e)(e => Object(S.y)(e, u));
+					g = Object(l.e)(e => Object(E.z)(e, u));
 				Object(c.useEffect)(() => {
 					(null == u ? void 0 : u.length) && f(Object(b.e)(u))
 				}, [u]);
 				const w = (null == g ? void 0 : g.filter(e => !e.isNsfw && !e.isSubscribed)) || [],
 					A = e => () => {
-						if (!y) return;
-						const t = Math.sign(e) ? y.scrollLeft % 249 : 249 % y.scrollLeft,
+						if (!h) return;
+						const t = Math.sign(e) ? h.scrollLeft % 249 : 249 % h.scrollLeft,
 							s = 249 * e - t;
-						y.scrollBy({
+						h.scrollBy({
 							left: s,
 							behavior: "smooth"
 						})
@@ -136,39 +136,39 @@
 						source: "similar_communities",
 						action: "view",
 						noun: "module",
-						subreddit: e ? Object(S.S)(t, {
+						subreddit: e ? Object(E.T)(t, {
 							subredditId: e
 						}) : void 0
 					}))(a))
 				}, [w.length, p, a]), w.length < p ? null : d.a.createElement("div", {
-					ref: E,
-					className: Object(r.a)(h.a.carouselContainer, s, null === h.a || void 0 === h.a ? void 0 : h.a[m])
+					ref: S,
+					className: Object(r.a)(x.a.carouselContainer, s, null === x.a || void 0 === x.a ? void 0 : x.a[m])
 				}, d.a.createElement("div", {
-					className: h.a.carouselHeader,
+					className: x.a.carouselHeader,
 					style: {
 						width: B
 					}
 				}, d.a.createElement("h3", {
-					className: h.a.carouselTitle
+					className: x.a.carouselTitle
 				}, N._("{title}", [N._param("title", t)], {
 					hk: "4n2CUI"
 				})), w.length > C && d.a.createElement("div", {
-					className: h.a.carouselControls
+					className: x.a.carouselControls
 				}, d.a.createElement("button", {
-					className: h.a.scrollButton,
+					className: x.a.scrollButton,
 					onClick: A(-C)
 				}, d.a.createElement(v.a, {
 					name: n.a.left_fill,
-					className: h.a.scrollIcon
+					className: x.a.scrollIcon
 				})), d.a.createElement("button", {
-					className: h.a.scrollButton,
+					className: x.a.scrollButton,
 					onClick: A(C)
 				}, d.a.createElement(v.a, {
 					name: n.a.right_fill,
-					className: h.a.scrollIcon
+					className: x.a.scrollIcon
 				})))), d.a.createElement("div", {
 					ref: O,
-					className: h.a.carouselWrapper,
+					className: x.a.carouselWrapper,
 					style: {
 						width: B
 					}
@@ -178,7 +178,7 @@
 						...r
 					} = e;
 					var n;
-					return d.a.createElement(j, x({
+					return d.a.createElement(j, y({
 						index: t + 1,
 						size: m,
 						banner: null == s ? void 0 : s.bannerBackgroundImage,
@@ -195,9 +195,9 @@
 					description: o,
 					primaryColor: b,
 					icon: v,
-					isSubscribed: E,
-					banner: y,
-					path: x,
+					isSubscribed: S,
+					banner: h,
+					path: y,
 					size: O
 				} = e;
 				const j = Object(l.d)();
@@ -211,45 +211,45 @@
 					actionInfo: {
 						reason: `${s}`
 					},
-					subreddit: Object(S.S)(r, {
+					subreddit: Object(E.T)(r, {
 						subredditId: t
 					})
 				}))(e ? "unsubsribe" : "subscribe", t, s), [t]);
 				return d.a.createElement("div", {
-					className: Object(r.a)(h.a.carouselItem, null === h.a || void 0 === h.a ? void 0 : h.a[O])
+					className: Object(r.a)(x.a.carouselItem, null === x.a || void 0 === x.a ? void 0 : x.a[O])
 				}, d.a.createElement("div", {
-					className: h.a.bannerWrapper,
+					className: x.a.bannerWrapper,
 					style: {
 						backgroundColor: b || void 0
 					}
 				}, d.a.createElement("img", {
-					className: h.a.banner,
-					src: y || void 0
+					className: x.a.banner,
+					src: h || void 0
 				})), d.a.createElement("div", {
-					className: h.a.carouselContent
+					className: x.a.carouselContent
 				}, d.a.createElement(m.a, {
-					to: x,
-					className: h.a.lockup
+					to: y,
+					className: x.a.lockup
 				}, v ? d.a.createElement("img", {
 					src: v,
-					className: h.a.subredditIcon
+					className: x.a.subredditIcon
 				}) : d.a.createElement(_.a, {
-					className: h.a.subredditIcon
+					className: x.a.subredditIcon
 				}), d.a.createElement("div", {
-					className: h.a.lockupText
+					className: x.a.lockupText
 				}, d.a.createElement("span", {
-					className: h.a.subredditName
+					className: x.a.subredditName
 				}, "r/", n), d.a.createElement("span", {
-					className: h.a.subscribersCount
+					className: x.a.subscribersCount
 				}, N._({
 					"*": "{number} members",
 					_1: "1 member"
 				}, [N._plural(i, "number", Object(a.b)(i))], {
 					hk: "4yqFU9"
 				})))), d.a.createElement("p", {
-					className: h.a.description
+					className: x.a.description
 				}, o), d.a.createElement(p.a, {
-					className: h.a.subscribeButton,
+					className: x.a.subscribeButton,
 					identifier: {
 						name: n,
 						type: "subreddit"
@@ -305,7 +305,7 @@
 						subreddits: Object(d.o)(e, {
 							listingKey: "SUBREDDIT_CAROUSEL_SEARCH_KEY"
 						}),
-						parentSubredditId: Object(l.D)(e, t)
+						parentSubredditId: Object(l.E)(e, t)
 					})),
 					p = Object(n.useMemo)(() => null == u ? void 0 : u.map(e => e.id), [u]);
 				return Object(n.useEffect)(() => {
@@ -472,4 +472,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.8820ac75ba5b6db3c64d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.499a237fc28b2edff270.js.map

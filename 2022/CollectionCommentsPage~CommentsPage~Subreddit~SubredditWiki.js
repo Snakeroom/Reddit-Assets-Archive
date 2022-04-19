@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.457db397f59b94a9e308.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.1760fdac0922224230c4.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -290,7 +290,7 @@
 				g = Object(s.a)(a.x),
 				f = Object(s.a)(a.v),
 				x = (e, t, r) => async (n, s, i) => {
-					const a = Object(p.x)(s(), {
+					const a = Object(p.y)(s(), {
 						subredditName: e
 					});
 					if (a) return w(a.id, t, r)(n, s, i)
@@ -325,6 +325,97 @@
 					})), s(g())
 				}
 		},
+		"./src/reddit/actions/subreddit/notifications.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return m
+			})), r.d(t, "b", (function() {
+				return g
+			}));
+			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
+				s = r("./src/lib/makeActionCreator/index.ts"),
+				i = r("./src/reddit/actions/notificationSettingsLayout/index.ts"),
+				a = r("./src/reddit/actions/notificationsInbox/index.ts"),
+				o = r("./src/reddit/actions/subreddit/constants.ts"),
+				d = r("./src/reddit/actions/toaster.ts"),
+				c = r("./src/reddit/endpoints/subreddit/notificationSettings.ts"),
+				l = r("./src/reddit/models/Subreddit/index.ts"),
+				u = r("./src/reddit/models/Toast/index.ts");
+			const m = Object(s.a)(o.u),
+				p = Object(s.a)(o.t),
+				b = Object(s.a)(o.s),
+				h = e => {
+					switch (e) {
+						case l.b.OFF:
+							return n.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
+								hk: "3e1CJR"
+							});
+						case l.b.FREQUENT:
+							return n.fbt._("Followed! Now you’ll get updates on new activity.", null, {
+								hk: "3JzOOa"
+							});
+						case l.b.LOW:
+							return n.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
+								hk: "4x3TS8"
+							});
+						default:
+							return null
+					}
+				};
+			const g = e => {
+				let {
+					subredditId: t,
+					notificationLevel: r,
+					successCallback: s,
+					undoCallback: o
+				} = e;
+				return async (e, g, f) => {
+					let {
+						gqlContext: x
+					} = f;
+					var v, w, y;
+					e(p());
+					const _ = (e => {
+							switch (e) {
+								case l.b.FREQUENT:
+									return {
+										isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
+									};
+								case l.b.LOW:
+									return {
+										isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
+									};
+								case l.b.OFF:
+								default:
+									return {
+										isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
+									}
+							}
+						})(r),
+						E = await Object(c.b)(x(), t, _);
+					if ((null === (w = null === (v = E.error) || void 0 === v ? void 0 : v.fields) || void 0 === w ? void 0 : w.length) || function(e) {
+							return Boolean(e && e.data && e.data.updateSubredditNotificationSettings)
+						}(E.body) && (null === (y = E.body.data.updateSubredditNotificationSettings.errors) || void 0 === y ? void 0 : y.length)) return e(b()), e(Object(d.f)({
+						kind: u.b.Error,
+						text: n.fbt._("Failed to change the frequency of notifications from this community, please try again.", null, {
+							hk: "4avFFV"
+						})
+					}));
+					E.ok && (e(Object(i.c)({
+						subredditId: t,
+						notificationLevel: r
+					})), e(m({
+						subredditAboutInfo: {
+							[t]: {
+								notificationLevel: r
+							}
+						}
+					})), s && s(), e(o ? Object(d.f)(Object(d.e)(h(r), u.b.Undo, n.fbt._("Undo", null, {
+						hk: "46OwLP"
+					}), Object(a.i)(t, o))) : Object(d.f)(Object(d.e)(h(r), u.b.SuccessCommunityGreen))))
+				}
+			}
+		},
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, r) {
 			e.exports = {
 				container: "_365FiUZ11efXHV7l7fNp6K",
@@ -345,7 +436,7 @@
 
 			function c(e) {
 				const t = Object(i.d)(),
-					r = Object(i.e)(t => Object(d.S)(t, {
+					r = Object(i.e)(t => Object(d.T)(t, {
 						subredditId: e
 					})),
 					n = Object(i.e)(t => Object(o.i)(t, {
@@ -1160,7 +1251,7 @@
 					_ = Object(a.e)(e => Object(g.k)(e, {
 						subredditId: r
 					})),
-					O = Object(a.e)(e => Object(f.S)(e, {
+					O = Object(a.e)(e => Object(f.T)(e, {
 						subredditId: r
 					})),
 					S = Object(a.e)(e => Object(g.n)(e, {
@@ -1923,7 +2014,7 @@
 					let {
 						subredditId: r
 					} = t;
-					return Object(T.S)(e, {
+					return Object(T.T)(e, {
 						subredditId: r
 					})
 				}
@@ -1952,8 +2043,8 @@
 					})) : null
 				}),
 				R = r("./src/reddit/actions/economics/predictions/index.ts"),
-				D = r("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
-				A = r("./src/reddit/contexts/PageLayer/selectors.ts"),
+				A = r("./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts"),
+				D = r("./src/reddit/contexts/PageLayer/selectors.ts"),
 				W = r("./src/reddit/helpers/trackers/predictions.ts"),
 				H = r("./src/reddit/hooks/useTracking.ts"),
 				U = r("./src/reddit/selectors/features/predictions/tournaments/index.ts");
@@ -1966,12 +2057,12 @@
 				const r = Object(i.d)(),
 					a = Object(P.a)(),
 					o = Object(H.a)(),
-					d = Object(A.O)(a),
+					d = Object(D.O)(a),
 					[c, l] = Object(n.useState)(!1),
-					u = Object(i.e)(e => Object(T.S)(e, {
+					u = Object(i.e)(e => Object(T.T)(e, {
 						subredditId: t
 					})),
-					m = Object(i.e)(e => Object(T.M)(e, {
+					m = Object(i.e)(e => Object(T.N)(e, {
 						subredditId: t
 					})),
 					p = Object(i.e)(e => Object(U.d)(e, {
@@ -1980,7 +2071,7 @@
 					b = Object(i.e)(e => Object(U.e)(e, {
 						subredditId: t
 					}));
-				Object(D.a)(t);
+				Object(A.a)(t);
 				return Object(n.useEffect)(() => {
 					!m || c || p || d || (r(Object(R.m)(u.name)), l(!0))
 				}, [m, c, p, d, r, u.name]), m && p ? s.a.createElement(E, {
@@ -2489,7 +2580,7 @@
 					url: e => Object(h.eb)(e)
 				}),
 				j = Object(o.c)({
-					subredditId: (e, t) => Object(y.D)(e, t.subredditName)
+					subredditId: (e, t) => Object(y.E)(e, t.subredditName)
 				}),
 				S = Object(a.b)(j),
 				N = l.a.div("WidgetContent", E.a),
@@ -2995,8 +3086,8 @@
 					isExpanded: !1
 				},
 				R = m.a.wrapped(o.a, "RawHTMLDisplay", L.a),
-				D = m.a.div("EventContainer", L.a),
-				A = m.a.div("EventTitle", L.a),
+				A = m.a.div("EventContainer", L.a),
+				D = m.a.div("EventTitle", L.a),
 				W = m.a.div("EventDate", L.a),
 				H = m.a.div("EventLocation", L.a),
 				U = m.a.div("EventDescription", L.a),
@@ -3028,9 +3119,9 @@
 					title: e.widget.shortName,
 					truncateThreshold: e.truncateThreshold,
 					widgetKind: e.widget.kind
-				}, e.widget.data.map((t, r) => s.a.createElement(D, {
+				}, e.widget.data.map((t, r) => s.a.createElement(A, {
 					key: `${r}-${t.title}`
-				}, s.a.createElement(A, null, t.titleHtml ? s.a.createElement(R, {
+				}, s.a.createElement(D, null, t.titleHtml ? s.a.createElement(R, {
 					html: t.titleHtml
 				}) : t.title), e.widget.configuration.showDate && t.startTime && s.a.createElement(W, null, s.a.createElement(T.a, {
 					seconds: t.startTime,
@@ -3177,7 +3268,7 @@
 				ke = m.a.wrapped(me.a, "InternalLink", fe.a),
 				Oe = m.a.div("LinkContainer", fe.a),
 				Ce = Object(a.c)({
-					userIsBanned: he.cb,
+					userIsBanned: he.db,
 					userIsLoggedIn: v.Q
 				});
 			var je = Object(i.b)(Ce)(e => {
@@ -3992,8 +4083,8 @@
 			const o = e => s.e[Object(i.R)(e, {})] === s.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
-					experimentName: n.kb
-				}) === n.gc.Treatment
+					experimentName: n.mb
+				}) === n.jc.Treatment
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -4003,4 +4094,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.457db397f59b94a9e308.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.1760fdac0922224230c4.js.map

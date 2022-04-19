@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatorStats.b40ccfd6272950b98bbe.js
-// Retrieved at 4/11/2022, 1:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatorStats.ab7f0ee3a4ec8801ce79.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatorStats"], {
 		"./src/reddit/components/CreatorStats/Stats.tsx": function(t, e, s) {
@@ -21,8 +21,8 @@
 				v = s("./src/reddit/components/CreatorStats/index.m.less"),
 				C = s.n(v);
 
-			function S() {
-				return (S = Object.assign || function(t) {
+			function _() {
+				return (_ = Object.assign || function(t) {
 					for (var e = 1; e < arguments.length; e++) {
 						var s = arguments[e];
 						for (var o in s) Object.prototype.hasOwnProperty.call(s, o) && (t[o] = s[o])
@@ -30,7 +30,7 @@
 					return t
 				}).apply(this, arguments)
 			}
-			const _ = Object(f.a)({
+			const S = Object(f.a)({
 					resolved: {},
 					chunkName: () => "ViewsTooltip",
 					isReady(t) {
@@ -98,7 +98,7 @@
 						tooltipTitleClassName: m,
 						tooltipTitleText: f,
 						tooltipDescriptionText: v,
-						tooltipExtra: _
+						tooltipExtra: S
 					} = t;
 					return l.a.createElement("div", {
 						className: Object(c.a)(C.a.singleStat, e),
@@ -115,13 +115,13 @@
 					}, i && l.a.createElement(h.a, {
 						name: i,
 						className: C.a.icon
-					}), n), s && l.a.createElement(p.a, S({}, s, {
+					}), n), s && l.a.createElement(p.a, _({}, s, {
 						className: Object(c.a)(C.a.hoverTooltip, b)
 					}), f && l.a.createElement("div", {
 						className: Object(c.a)(C.a.tooltipTitle, m)
 					}, f), v && l.a.createElement("div", {
 						className: C.a.tooltipDescription
-					}, v), _))
+					}, v), S))
 				},
 				k = t => {
 					let {
@@ -150,18 +150,18 @@
 					const p = Object(u.b)(j),
 						h = Object(m.a)(),
 						[f, v] = Object(i.useState)(!1),
-						S = Object(i.useRef)(null),
+						_ = Object(i.useRef)(null),
 						w = Object(i.useCallback)(t => {
 							t.stopPropagation(), v(!0)
 						}, []),
 						T = Object(i.useCallback)(() => {
-							h.show(), S.current && clearTimeout(S.current)
+							h.show(), _.current && clearTimeout(_.current)
 						}, [h]),
-						y = Object(i.useCallback)(() => S.current = setTimeout(() => {
+						y = Object(i.useCallback)(() => _.current = setTimeout(() => {
 							v(!1), h.hide()
 						}, 300), [h]);
 					return Object(i.useEffect)(() => () => {
-						S.current && clearTimeout(S.current)
+						_.current && clearTimeout(_.current)
 					}, []), l.a.createElement("div", {
 						className: C.a.statsContainer
 					}, (null === (e = t.postStats.viewCountTotals) || void 0 === e ? void 0 : e.totalCount) && (null === (s = t.postStats.viewCountTrends) || void 0 === s ? void 0 : s.data) && (null === (o = t.postStats.viewCountTrends) || void 0 === o ? void 0 : o.data.length) > 0 && l.a.createElement(N, {
@@ -173,7 +173,7 @@
 						}),
 						iconName: d.a.show,
 						tooltipClassName: C.a.statsTooltip,
-						tooltipExtra: l.a.createElement(_, {
+						tooltipExtra: l.a.createElement(S, {
 							totalCount: t.postStats.viewCountTotals.totalCount,
 							viewsData: t.postStats.viewCountTrends.data
 						})
@@ -313,11 +313,11 @@
 				f = s("./src/reddit/selectors/subreddit.ts"),
 				v = s("./src/reddit/selectors/user.ts"),
 				C = s("./src/reddit/actions/creatorStats/constants.ts"),
-				S = s("./src/lib/initializeClient/installReducer.ts"),
-				_ = s("./src/reddit/reducers/features/creatorStats/index.ts");
-			Object(S.a)({
+				_ = s("./src/lib/initializeClient/installReducer.ts"),
+				S = s("./src/reddit/reducers/features/creatorStats/index.ts");
+			Object(_.a)({
 				features: {
-					creatorStats: _.a
+					creatorStats: S.a
 				}
 			});
 			const O = Object(c.a)(C.b),
@@ -423,7 +423,7 @@
 							const a = o();
 							Object(m.b)(a) && Object(v.Db)(a, {
 								postId: e
-							}) && (Object(f.S)(a, {
+							}) && (Object(f.T)(a, {
 								subredditId: s
 							}).isQuarantined || t(k({
 								postId: e,
@@ -453,7 +453,7 @@
 				const b = Object(l.e)(e => Object(p.b)(e, t.post.id)),
 					h = Object(l.e)(e => Object(p.c)(e, t.post.id)),
 					C = Object(l.e)(e => Object(p.d)(e, t.subreddit.id)),
-					S = Object(l.e)(e => Object(v.Db)(e, {
+					_ = Object(l.e)(e => Object(v.Db)(e, {
 						postId: t.post.id
 					}));
 				Object(n.useEffect)(() => {
@@ -466,7 +466,7 @@
 						e(Object(T.e)(t.post.id, c, o))
 					} else e(Object(T.f)(t.post.id, c))
 				}, [e, t.post.id, c, h, t.isProfileStats]);
-				const _ = Object(n.useCallback)(() => {
+				const S = Object(n.useCallback)(() => {
 					var s;
 					const o = (null === (s = null == h ? void 0 : h.viewCountTotals) || void 0 === s ? void 0 : s.totalCount) || 0;
 					e(Object(T.c)(t.post.id, c, o))
@@ -540,8 +540,8 @@
 						default:
 							return ""
 					}
-				})(c, t.post, t.subreddit, S, s => e(Object(T.b)(s, t.post.id)), t.isProfileStats ? _ : void 0))), c === d.b.Available && h && i.a.createElement(g.a, {
-					isUserOp: S,
+				})(c, t.post, t.subreddit, _, s => e(Object(T.b)(s, t.post.id)), t.isProfileStats ? S : void 0))), c === d.b.Available && h && i.a.createElement(g.a, {
+					isUserOp: _,
 					upvoteRatio: t.post.upvoteRatio || void 0,
 					postOtherDiscussions: t.isProfileStats ? b : void 0,
 					postStats: h,
@@ -674,4 +674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.b40ccfd6272950b98bbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.ab7f0ee3a4ec8801ce79.js.map

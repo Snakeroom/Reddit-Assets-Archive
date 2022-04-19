@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.76886810691b4f787987.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.26c13756900d07a13db0.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -481,7 +481,7 @@
 					return c
 				}, Q = Object(i.a)(c.l), X = Object(i.a)(c.m), Y = Object(i.a)(c.k), Z = e => async (t, s) => {
 					const o = s();
-					if (Object(y.b)(o)) return void t(Object(a.bb)(Object(w.b)(e.permalink), e.id));
+					if (Object(y.b)(o) || Object(y.c)(o)) return void t(Object(a.bb)(Object(w.b)(e.permalink), e.id));
 					const r = o.platform.currentPage.locationState;
 					t(!(!r || !r[d.b.IsOverlay]) ? Object(E.a)(e.permalink) : Object(n.b)(Object(w.b)(e.permalink)))
 				}, $ = Object(i.a)(c.i), ee = Object(i.a)(c.j), te = Object(i.a)(c.h), se = Object(i.a)(c.p), oe = Object(i.a)(c.o), ne = Object(i.a)(c.q), re = e => async t => {
@@ -771,7 +771,7 @@
 					s(h());
 					const c = Date.now(),
 						p = e.replace("r/", ""),
-						m = Object(d.D)(i, p),
+						m = Object(d.E)(i, p),
 						u = await Object(a.b)(r(), {
 							subredditId: m,
 							options: t
@@ -965,7 +965,8 @@
 					isPostSEOEligible: _.e,
 					postPermalink: k.F,
 					shouldOpenPostInNewTab: j.jb,
-					isBlockingInterstitialEnabled: v.b
+					isBlockingInterstitialEnabled: v.b,
+					isBlockingInterstitialV2Enabled: v.c
 				})),
 				P = e => {
 					let t, {
@@ -1056,8 +1057,9 @@
 					postId: y,
 					isCommentCountAnimation: T,
 					isCountAnimShadowTestEnabled: S,
-					isBlockingInterstitialEnabled: N
-				} = e, M = Object(i.d)(), F = p && !c && !h, R = c && !u, A = Object(f.a)(), L = r.a.createElement(P, {
+					isBlockingInterstitialEnabled: N,
+					isBlockingInterstitialV2Enabled: M
+				} = e, F = Object(i.d)(), R = p && !c && !h, A = c && !u, L = Object(f.a)(), B = r.a.createElement(P, {
 					hasModPostPerms: s,
 					isCountAnimShadowTestEnabled: !!S,
 					isChatPost: n,
@@ -1070,20 +1072,20 @@
 					text: E,
 					type: I
 				});
-				return F ? r.a.createElement("div", {
+				return R ? r.a.createElement("div", {
 					className: Object(l.a)(w.a.commentsLink, w.a.defaultCursorWrapper, t),
 					onClick: v
-				}, L) : r.a.createElement(a.a, {
+				}, B) : r.a.createElement(a.a, {
 					rel: "nofollow",
 					"data-click-id": "comments",
 					"data-test-id": b.a,
 					className: Object(l.a)(w.a.commentsLink, w.a.link, t),
 					target: o || _ ? "_blank" : void 0,
-					to: R ? Object(x.b)(g) : Object(d.a)(g, !0, A),
+					to: A ? Object(x.b)(g) : Object(d.a)(g, !0, L),
 					onClick: e => {
-						N && (e.preventDefault(), M(Object(m.Z)(Object(x.b)(g), y))), v && v()
+						(N || M) && (e.preventDefault(), F(Object(m.Z)(Object(x.b)(g), y))), v && v()
 					}
-				}, L)
+				}, B)
 			})
 		},
 		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, s) {
@@ -1322,7 +1324,7 @@
 					postCreated: t,
 					subredditId: s
 				} = e;
-				const d = Object(i.e)(e => s ? Object(c.S)(e, {
+				const d = Object(i.e)(e => s ? Object(c.T)(e, {
 						subredditId: s
 					}) : void 0),
 					[m, u] = Object(n.useState)(!0);
@@ -2581,7 +2583,7 @@
 							subredditId: s
 						}
 					} = t;
-					return s ? Object(I.S)(e, {
+					return s ? Object(I.T)(e, {
 						subredditId: s
 					}) : void 0
 				},
@@ -2929,7 +2931,7 @@
 				},
 				E = Object(c.c)({
 					flairData: O.d,
-					subreddit: v.S
+					subreddit: v.T
 				});
 			class w extends i.a.Component {
 				constructor(e) {
@@ -4978,12 +4980,12 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: i.Q,
-				experimentName: n.cc
-			}), e => e === n.kd)
+				experimentName: n.fc
+			}), e => e === n.nd)
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
 			e.exports = JSON.parse('{"id":"5ee520f9aa60"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.76886810691b4f787987.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.26c13756900d07a13db0.js.map

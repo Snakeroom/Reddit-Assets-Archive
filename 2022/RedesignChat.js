@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.7749524d371df29d5f99.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.09ac991d060a55acdee1.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -62,10 +62,10 @@
 			function T(e) {
 				return void 0 !== e ? e : -1
 			}
-			const D = C.a.wrapped(e => a.a.createElement("div", {
+			const R = C.a.wrapped(e => a.a.createElement("div", {
 					className: e.className
 				}, e.children), "BasePortalContainer", N.a),
-				R = C.a.wrapped(e => {
+				A = C.a.wrapped(e => {
 					const t = Object(O.d)(),
 						n = Object(s.useRef)(null),
 						r = e => {
@@ -86,7 +86,7 @@
 						}
 					}, e.children)
 				}, "EmbedPortalContainer", N.a),
-				A = C.a.wrapped(e => a.a.createElement("div", {
+				D = C.a.wrapped(e => a.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${T(B.width)}px`,
@@ -94,7 +94,7 @@
 					}
 				}, e.children), "HiddenPortalContainer", N.a),
 				k = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
-				I = D,
+				I = R,
 				L = Object(M.a)({
 					container: e => e && e.container && e.container.size
 				});
@@ -102,15 +102,15 @@
 			function U(e) {
 				switch (e.container) {
 					case y.a.EMBED:
-						return a.a.createElement(R, null, e.children);
-					case y.a.HIDDEN:
 						return a.a.createElement(A, null, e.children);
+					case y.a.HIDDEN:
+						return a.a.createElement(D, null, e.children);
 					case y.a.FULL:
 						return a.a.createElement(I, null, e.children);
 					case y.a.MINIMIZED:
 						return a.a.createElement(k, null);
 					default:
-						return a.a.createElement(R, null, e.children)
+						return a.a.createElement(A, null, e.children)
 				}
 			}
 			var q = n("./src/chat/customMiddleware/channelsFilter.ts"),
@@ -668,39 +668,39 @@
 				c = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: a.Db,
+					experimentName: a.Gb,
 					experimentEligibilitySelector: c.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === a.Md.Enabled),
+				d = Object(s.a)(o, e => e === a.Pd.Enabled),
 				u = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: a.Hd,
+					experimentName: a.Kd,
 					experimentEligibilitySelector: c.e
 				}), i.a),
-				l = Object(s.a)(d, u, (e, t) => e && t === a.Ld.Enabled),
+				l = Object(s.a)(d, u, (e, t) => e && t === a.Od.Enabled),
 				b = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: a.Ub,
+					experimentName: a.Xb,
 					experimentEligibilitySelector: c.e
 				}), i.a),
-				m = Object(s.a)(d, b, (e, t) => e && t === a.nc.Enabled),
+				m = Object(s.a)(d, b, (e, t) => e && t === a.qc.Enabled),
 				h = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: a.Bb,
+					experimentName: a.Eb,
 					experimentEligibilitySelector: c.e
 				}), i.a),
-				g = Object(s.a)(h, e => e === a.Jd.ContinuousScroll),
+				g = Object(s.a)(h, e => e === a.Md.ContinuousScroll),
 				f = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: a.Cb,
+					experimentName: a.Fb,
 					experimentEligibilitySelector: c.e
 				}), i.a),
-				p = Object(s.a)(f, e => e === a.Kd.Enabled),
+				p = Object(s.a)(f, e => e === a.Nd.Enabled),
 				x = Object(s.a)(e => Object(r.c)(e, {
-					experimentName: a.Mb,
+					experimentName: a.Pb,
 					experimentEligibilitySelector: () => !0
 				}), i.a),
-				j = Object(s.a)(x, e => e === a.fb.Enabled)
+				j = Object(s.a)(x, e => e === a.hb.Enabled)
 		},
 		"./src/redditGQL/operations/BadgeIndicators.json": function(e) {
 			e.exports = JSON.parse('{"id":"9d105ce5d71a"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.7749524d371df29d5f99.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.09ac991d060a55acdee1.js.map

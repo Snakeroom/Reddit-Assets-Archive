@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.a4fc5ea1b50b0514b578.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.e09bd8ca2812afc9b940.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -360,7 +360,7 @@
 			const G = e => {
 				const t = Object(L.c)(e, {
 					experimentEligibilitySelector: L.a,
-					experimentName: b.Rb
+					experimentName: b.Ub
 				});
 				return !!Object(M.a)(t)
 			};
@@ -397,7 +397,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Df)(p),
+						includeInterestTopics: !!p && !Object(b.Gf)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: g && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -1798,7 +1798,7 @@
 				}, [j, C, t]), Object(o.useEffect)(() => {
 					C && Object(Be.a)(null == v ? void 0 : v.genderCategory, C.success)
 				}, [C, v]);
-				const X = Object(i.e)(Ue.a) === ve.gb.Removed;
+				const X = Object(i.e)(Ue.a) === ve.ib.Removed;
 				Object(o.useEffect)(() => {
 					let e = !1;
 					return async function() {
@@ -3989,8 +3989,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Hc
-				}) === r.kd
+					experimentName: r.Kc
+				}) === r.nd
 			}
 		},
 		"./src/reddit/selectors/experiments/inAppNotification.ts": function(e, t, n) {
@@ -4009,20 +4009,20 @@
 				o = n("./src/reddit/selectors/experiments/index.ts"),
 				a = n("./src/reddit/selectors/experiments/utils.ts");
 			const i = e => Object(s.c)(e, {
-					experimentName: r.Eb,
+					experimentName: r.Hb,
 					experimentEligibilitySelector: o.e
 				}) === r.W.topOfFeedWithCTAs,
 				c = e => (e => Object(s.c)(e, {
-					experimentName: r.Eb,
+					experimentName: r.Hb,
 					experimentEligibilitySelector: o.e
 				}) === r.W.topOfFeedNoCTAs)(e) || i(e),
 				d = e => Object(s.c)(e, {
-					experimentName: r.Eb,
+					experimentName: r.Hb,
 					experimentEligibilitySelector: o.e
 				}) === r.W.floatInFeed,
 				l = e => {
 					const t = Object(s.c)(e, {
-						experimentName: r.Eb,
+						experimentName: r.Hb,
 						experimentEligibilitySelector: o.e
 					});
 					return Object(a.a)(t)
@@ -4061,7 +4061,7 @@
 			const c = (e, t) => {
 					const n = e.focusedVerticals.interactedSubredditIds && e.focusedVerticals.interactedSubredditIds[t];
 					if (n) {
-						const t = Object(a.S)(e, {
+						const t = Object(a.T)(e, {
 							subredditId: n
 						});
 						return t && t.displayText || ""
@@ -4074,14 +4074,14 @@
 				m = Object(r.a)((e, t) => {
 					const n = p(e, t);
 					if (!n) return u;
-					const r = Object(a.W)(e, {
+					const r = Object(a.X)(e, {
 						subredditName: n.name
 					});
 					return r && r.postIds && r.postIds.length ? r.postIds : u
 				}),
 				p = (e, t) => {
 					const n = e.focusedVerticals.recommendedSubredditIds && e.focusedVerticals.recommendedSubredditIds[t];
-					return n ? Object(a.S)(e, {
+					return n ? Object(a.T)(e, {
 						subredditId: n
 					}) : null
 				},
@@ -4151,7 +4151,7 @@
 			e.exports = JSON.parse('{"id":"929678fdca35"}')
 		},
 		"./src/redditGQL/operations/SubredditGeoRecommendationViaFocusVertical.json": function(e) {
-			e.exports = JSON.parse('{"id":"9bf5e276ac63"}')
+			e.exports = JSON.parse('{"id":"c10a566d5f55"}')
 		},
 		"./src/redditGQL/operations/UpdateAccountGender.json": function(e) {
 			e.exports = JSON.parse('{"id":"670e8e8d3018"}')
@@ -4161,4 +4161,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.a4fc5ea1b50b0514b578.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.e09bd8ca2812afc9b940.js.map

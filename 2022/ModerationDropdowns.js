@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.b33229b8e850ae7886ae.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.13192ba77720dd450848.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, n) {
@@ -347,7 +347,7 @@
 				},
 				M = Object(c.c)({
 					flairData: O.d,
-					subreddit: k.S
+					subreddit: k.T
 				});
 			class w extends a.a.Component {
 				constructor(e) {
@@ -544,8 +544,8 @@
 				N = n("./src/reddit/models/Flair/index.ts"),
 				D = n("./src/reddit/models/Prediction/index.ts"),
 				y = n("./src/reddit/components/PostModModeDropdown/DropdownHelpers.tsx"),
-				S = n("./src/reddit/components/PostModModeDropdown/DropdownHelpers.m.less"),
-				I = n.n(S);
+				I = n("./src/reddit/components/PostModModeDropdown/DropdownHelpers.m.less"),
+				S = n.n(I);
 			const L = (e, t) => Object(w.b)({
 					breakpointType: w.a.HideIfVWLarger,
 					flatlistItem: e,
@@ -575,7 +575,7 @@
 						onOcPost: k,
 						onCcPost: E,
 						onRemovePost: w,
-						onModToMemberShareOpened: S,
+						onModToMemberShareOpened: I,
 						onSpamPost: T,
 						onStickyPost: R,
 						onSpoilerPost: A,
@@ -628,7 +628,7 @@
 						displayText: v.fbt._("Share with members", null, {
 							hk: "2XMBQE"
 						}),
-						onClick: S
+						onClick: I
 					}, o.a.createElement(y.f, null)), !W.isRemoved && !d && o.a.createElement(P.a, {
 						isSelected: W.isStickied,
 						onClick: R,
@@ -647,7 +647,7 @@
 						}),
 						onClick: x
 					}, o.a.createElement(y.b, null)), Q && o.a.createElement(y.e, {
-						textClassName: I.a.text,
+						textClassName: S.a.text,
 						onClick: b,
 						displayText: v.fbt._("Change the outcome", null, {
 							hk: "2FH6j9"
@@ -764,13 +764,13 @@
 					onSpamPost: N,
 					onSpoilerPost: D,
 					onStickyPost: y,
-					post: S,
-					sendEvent: I,
+					post: I,
+					sendEvent: S,
 					tooltipId: L
 				} = e;
-				const F = S.distinguishType === i.H.MODERATOR,
+				const F = I.distinguishType === i.H.MODERATOR,
 					R = F ? i.H.NONE : i.H.MODERATOR,
-					W = Object(u.b)(S.id, c);
+					W = Object(u.b)(I.id, c);
 				return o.a.createElement(V, {
 					className: A.a.dropdown,
 					isOpen: r,
@@ -787,51 +787,51 @@
 					layout: m,
 					modModeEnabled: p,
 					onApprovePost: () => {
-						b(), I(Object(O.j)("approve", S.id))
+						b(), S(Object(O.j)("approve", I.id))
 					},
 					onCancelPrediction: () => {
-						x(), I(Object(k.a)(S.id))
+						x(), S(Object(k.a)(I.id))
 					},
 					onChangePredictionOutcome: () => {
-						f(), I(Object(k.b)(S.id))
+						f(), S(Object(k.b)(I.id))
 					},
 					onEditPredictionEnd: () => {
-						h(), I(Object(k.c)(S.id))
+						h(), S(Object(k.c)(I.id))
 					},
 					onRemovePost: () => {
-						P(), Object(C.b)(S) ? I(Object(k.d)(S.id)) : I(Object(O.j)("remove", S.id))
+						P(), Object(C.b)(I) ? S(Object(k.d)(I.id)) : S(Object(O.j)("remove", I.id))
 					},
 					onSpamPost: () => {
-						N(), I(Object(O.j)("spam", S.id))
+						N(), S(Object(O.j)("spam", I.id))
 					},
 					onDistinguishPost: () => {
-						_(R), I(Object(O.j)(F ? "undistinguish" : "distinguish", S.id))
+						_(R), S(Object(O.j)(F ? "undistinguish" : "distinguish", I.id))
 					},
 					onFlairPost: () => {
-						E(W), I(Object(O.j)("post_flair", S.id))
+						E(W), S(Object(O.j)("post_flair", I.id))
 					},
 					onLockPost: () => {
-						v(), I(Object(O.j)(S.isLocked ? "unlock" : "lock", S.id))
+						v(), S(Object(O.j)(I.isLocked ? "unlock" : "lock", I.id))
 					},
 					onNsfwPost: () => {
-						j(), I(Object(O.j)(S.isNSFW ? "unmark_nsfw" : "mark_nsfw", S.id))
+						j(), S(Object(O.j)(I.isNSFW ? "unmark_nsfw" : "mark_nsfw", I.id))
 					},
 					onOcPost: () => {
-						M(), I(Object(O.j)(S.isOriginalContent ? "unmark_original_content" : "mark_original_content", S.id))
+						M(), S(Object(O.j)(I.isOriginalContent ? "unmark_original_content" : "mark_original_content", I.id))
 					},
 					onCcPost: () => {
 						w()
 					},
 					onModToMemberShareOpened: () => {
-						g(), I(Object(O.j)("mod_to_member_share", S.id))
+						g(), S(Object(O.j)("mod_to_member_share", I.id))
 					},
 					onSpoilerPost: () => {
-						D(), I(Object(O.j)(S.isSpoiler ? "unmark_spoiler" : "mark_spoiler", S.id))
+						D(), S(Object(O.j)(I.isSpoiler ? "unmark_spoiler" : "mark_spoiler", I.id))
 					},
 					onStickyPost: () => {
-						y(), I(Object(O.j)(S.isStickied ? "unsticky" : "sticky", S.id))
+						y(), S(Object(O.j)(I.isStickied ? "unsticky" : "sticky", I.id))
 					},
-					post: S
+					post: I
 				}))
 			})))
 		},
@@ -1311,4 +1311,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.b33229b8e850ae7886ae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.13192ba77720dd450848.js.map

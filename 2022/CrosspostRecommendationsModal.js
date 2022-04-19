@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.d6a9f465ebfddcef7555.js
-// Retrieved at 4/7/2022, 9:40:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.8515ccf88ae25b5c289e.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostRecommendationsModal"], {
 		"./src/reddit/components/CrosspostRecommendationsModal/index.m.less": function(e, t, s) {
@@ -35,9 +35,9 @@
 				E = s("./src/reddit/routes/postCreation/constants.ts"),
 				k = s("./src/reddit/selectors/experiments/postCreationSubRec.ts"),
 				g = s("./src/reddit/components/CrosspostRecommendationsModal/index.m.less"),
-				j = s.n(g);
+				v = s.n(g);
 			const {
-				fbt: v
+				fbt: j
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = Object(a.a)(e => {
 				let {
@@ -82,31 +82,31 @@
 						}))(s.id)), a(Object(o.b)(`${E.b}?source_id=${s.id}`))
 					}, [s.id]);
 				return _ ? (t(), null) : r.a.createElement(c.e, null, r.a.createElement(c.i, {
-					className: j.a.modalHeader
+					className: v.a.modalHeader
 				}, r.a.createElement(h.a, null, r.a.createElement(c.q, {
-					className: j.a.modalTitle
-				}, v._("Crosspost to a related community", null, {
+					className: v.a.modalTitle
+				}, j._("Crosspost to a related community", null, {
 					hk: "v80Kq"
 				})), r.a.createElement(u.a, {
 					onClick: w
 				}, r.a.createElement(c.b, null))), r.a.createElement(c.m, {
-					className: j.a.modalMetaText
-				}, v._("Share your post to another community to let other people see your post", null, {
+					className: v.a.modalMetaText
+				}, j._("Share your post to another community to let other people see your post", null, {
 					hk: "2jhFRp"
 				}))), r.a.createElement(c.l, null, r.a.createElement(m.b, {
-					contentWrapperClassName: j.a.contentWrapper,
+					contentWrapperClassName: v.a.contentWrapper,
 					hasData: P,
 					isPending: O,
 					items: f,
-					itemWrapperClassName: j.a.itemWrapper,
+					itemWrapperClassName: v.a.itemWrapper,
 					onSelectRecommendation: N,
 					shouldShowSubredditOnlineUsers: !0
 				})), r.a.createElement(c.g, {
-					className: j.a.modalFooter
+					className: v.a.modalFooter
 				}, r.a.createElement(l.o, {
-					className: j.a.otherCommunitiesButton,
+					className: v.a.otherCommunitiesButton,
 					onClick: y
-				}, v._("OTHER COMMUNITIES", null, {
+				}, j._("OTHER COMMUNITIES", null, {
 					hk: "1dWSPt"
 				}))))
 			})
@@ -134,7 +134,7 @@
 			s.d(t, "a", (function() {
 				return g
 			})), s.d(t, "b", (function() {
-				return j
+				return v
 			}));
 			var n = s("./node_modules/react/index.js"),
 				r = s.n(n),
@@ -193,7 +193,7 @@
 				k = s.n(E);
 			const g = o.a.wrapped(d.b, "subredditIcon", k.a);
 
-			function j(e) {
+			function v(e) {
 				const {
 					className: t,
 					explanationText: s,
@@ -408,16 +408,16 @@
 					shouldPrettyPrint: C,
 					explanationText: h,
 					shouldShowSubredditOnlineUsers: S = !1
-				} = e, E = Object(o.e)(e => Object(l.u)(e, {
+				} = e, E = Object(o.e)(e => Object(l.v)(e, {
 					subredditName: r
 				})), k = Object(c.c)(r), g = void 0 !== u ? n.fbt._({
 					"*": "{number} members",
 					_1: "1 member"
 				}, [n.fbt._plural(u, "number", C ? Object(a.b)(u) : void 0)], {
 					hk: "2SvJUX"
-				}) : void 0, j = E ? n.fbt._("{number users online in subreddit} online", [n.fbt._param("number users online in subreddit", Object(a.b)(E.accountsActive))], {
+				}) : void 0, v = E ? n.fbt._("{number users online in subreddit} online", [n.fbt._param("number users online in subreddit", Object(a.b)(E.accountsActive))], {
 					hk: "49HfzS"
-				}) : void 0, v = S ? `${g} • ${j}` : g, O = void 0 !== x ? n.fbt._({
+				}) : void 0, j = S ? `${g} • ${v}` : g, O = void 0 !== x ? n.fbt._({
 					"*": "{number} online",
 					_1: "1 online"
 				}, [n.fbt._plural(x, "number", C ? Object(a.b)(x) : void 0)], {
@@ -433,7 +433,7 @@
 				return i.a.createElement(m.b, p({
 					icon: _,
 					title: k,
-					secondaryText: v,
+					secondaryText: j,
 					subText: O
 				}, e))
 			}
@@ -509,4 +509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.d6a9f465ebfddcef7555.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostRecommendationsModal.8515ccf88ae25b5c289e.js.map

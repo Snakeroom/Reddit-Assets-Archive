@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.64390eebbb148eba371c.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.718fb61dea3a04cc84b4.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1217,10 +1217,10 @@
 				}, de = (e, t) => async (s, r) => {
 					const n = r();
 					await Promise.all([(async () => {
-						if (!Object(I.b)(u.a.BAN_USER)(n) && !Object(O.P)(n, {
+						if (!Object(I.b)(u.a.BAN_USER)(n) && !Object(O.Q)(n, {
 								subredditId: e
 							})) {
-							const t = Object(O.S)(n, {
+							const t = Object(O.T)(n, {
 								subredditId: e
 							});
 							await s(Object(l.o)(t.name))
@@ -1821,7 +1821,7 @@
 							subredditId: s
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(v.l)(t) && Object(v.db)(e, t),
+					isCurrentUserBanned: (e, t) => !!Object(v.m)(t) && Object(v.eb)(e, t),
 					userProfileStyles: (e, t) => Object(f.m)(e, Object(b.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const s = Object(b.h)(e, {
@@ -1834,7 +1834,7 @@
 							subredditId: s
 						} = t;
 						const r = Object(I.e)(e),
-							n = s || r && Object(v.D)(e, r.name);
+							n = s || r && Object(v.E)(e, r.name);
 						return !!n && Object(m.i)(e, n)
 					},
 					trophyCase: (e, t) => Object(b.r)(e, Object(b.m)(e, t.userName)),
@@ -1852,7 +1852,7 @@
 						let {
 							userName: s
 						} = t;
-						return Object(v.eb)(e, {
+						return Object(v.fb)(e, {
 							identifier: {
 								name: s,
 								type: "profile"
@@ -2202,7 +2202,7 @@
 				f = s("./src/reddit/selectors/subreddit.ts");
 			const v = (e, t) => {
 				const s = Object(b.b)(e, t),
-					r = Object(f.H)(e, t);
+					r = Object(f.I)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -2241,7 +2241,7 @@
 			}));
 			const g = (e, t) => {
 				const s = Object(b.b)(e, t),
-					r = Object(f.H)(e, t);
+					r = Object(f.I)(e, t);
 				return {
 					comment: s,
 					isModerator: !(!r || !r.name) && !!e.moderatingSubreddits[r.name],
@@ -2267,7 +2267,7 @@
 				}
 			}));
 			var C = Object(i.b)(() => Object(o.c)({
-					subreddit: f.S
+					subreddit: f.T
 				}))(e => n.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -2367,7 +2367,7 @@
 				}) : null
 			};
 			var _ = Object(i.b)(() => Object(o.c)({
-				subreddit: f.S
+				subreddit: f.T
 			}))(e => n.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -2380,7 +2380,7 @@
 				}
 			}));
 			var S = Object(i.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(f.K)(e, {
+				subredditOrProfile: (e, t) => Object(f.L)(e, {
 					identifier: t
 				})
 			}))(e => n.a.createElement(p, {
@@ -2399,7 +2399,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return s ? Object(f.S)(e, {
+					return s ? Object(f.T)(e, {
 						subredditId: s
 					}) : null
 				}
@@ -6066,8 +6066,8 @@
 				}) === r.x.Enabled,
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: r.Ic
-				}) === r.kd
+					experimentName: r.Lc
+				}) === r.nd
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
@@ -6118,4 +6118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.64390eebbb148eba371c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.718fb61dea3a04cc84b4.js.map

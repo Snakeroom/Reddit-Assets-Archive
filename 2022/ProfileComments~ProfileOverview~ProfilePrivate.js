@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.ad1c56a45c6c9562b2c7.js
-// Retrieved at 4/19/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.c314c8e3e7a9ede1f0e2.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1725,9 +1725,9 @@
 					post: b,
 					toggle: E,
 					useMediaIcons: g
-				} = e, y = s || b, _ = Object(i.e)(x.b), O = t => {
-					_ && (t.preventDefault(), e.showModalOnPostLinkClick(y))
-				}, k = o && !!s;
+				} = e, y = s || b, _ = Object(i.e)(x.b), O = Object(i.e)(x.c), k = t => {
+					(_ || O) && (t.preventDefault(), e.showModalOnPostLinkClick(y))
+				}, w = o && !!s;
 				return y.media && !(("rtjson" === y.media.type || "text" === y.media.type || "liveaudio" === y.media.type) && !Object(u.a)(y)) || !!b.pollData ? r.a.createElement("button", {
 					"aria-expanded": !!p,
 					"aria-haspopup": !0,
@@ -1740,7 +1740,7 @@
 				}, p ? r.a.createElement(h.a, {
 					name: "collapse",
 					className: v.a.icon
-				}) : g ? r.a.createElement(r.a.Fragment, null, C(y.media && y.media.type, k, b), r.a.createElement(h.a, {
+				}) : g ? r.a.createElement(r.a.Fragment, null, C(y.media && y.media.type, w, b), r.a.createElement(h.a, {
 					name: "expand",
 					className: Object(d.a)(v.a.icon, v.a.showOnHover)
 				})) : r.a.createElement(h.a, {
@@ -1769,7 +1769,7 @@
 					"data-click-id": "expando_open",
 					to: Object(c.a)(y.permalink),
 					rel: "nofollow",
-					onClick: O
+					onClick: k
 				}, r.a.createElement(h.a, {
 					name: "text_post",
 					className: v.a.icon
@@ -1970,7 +1970,8 @@
 				fbt: k
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), w = c.a.wrapped(x.a, "InternalLink", O.a), j = c.a.div("Wrapper", O.a), N = c.a.div("Row", O.a), S = c.a.wrapped(g.a, "CommentIcon", O.a), I = c.a.div("TitleContainer", O.a), P = c.a.div("PostTitleContainer", O.a), T = c.a.wrapped(p.c, "PostTitle", O.a), M = c.a.wrapped(u.d, "PostTopMeta", O.a), L = c.a.wrapped(u.a, "MetaSeparator", O.a), R = Object(r.b)(() => Object(i.c)({
 				comment: C.b,
-				isBlockingInterstitialEnabled: y.b
+				isBlockingInterstitialEnabled: y.b,
+				isBlockingInterstitialV2Enabled: y.b
 			}), e => ({
 				showModalOnAuthorLinkClick: t => e(Object(l.db)(t))
 			})), F = e => {
@@ -1990,18 +1991,19 @@
 					comment: t,
 					profileName: s,
 					isBlockingInterstitialEnabled: n,
-					showModalOnAuthorLinkClick: r
+					isBlockingInterstitialV2Enabled: r,
+					showModalOnAuthorLinkClick: i
 				} = e;
 				if (!t) return null;
-				const i = s || t.author,
-					a = `/user/${i}/`;
+				const a = s || t.author,
+					d = `/user/${a}/`;
 				return o.a.createElement(w, {
 					"data-click-id": "user",
-					to: a,
+					to: d,
 					onClick: e => {
-						n && (e.preventDefault(), r(a))
+						(n || r) && (e.preventDefault(), i(d))
 					}
-				}, i)
+				}, a)
 			};
 			t.a = Object(d.a)(Object(b.b)(R(Object(h.c)(e => {
 				const {
@@ -4599,10 +4601,10 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.xe,
+					experimentName: o.Ae,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === o.Fe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === o.Ie.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				c = Object(n.a)(i.G, a, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, a, (e, t) => d(e, t))
 		},
@@ -4620,4 +4622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.ad1c56a45c6c9562b2c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.c314c8e3e7a9ede1f0e2.js.map

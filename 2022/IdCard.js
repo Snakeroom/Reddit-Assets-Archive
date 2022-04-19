@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.c9bc419568308955bd6a.js
-// Retrieved at 4/19/2022, 10:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.729a14d22130f12d62a4.js
+// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -793,7 +793,7 @@
 				f = Object(s.a)(o.x),
 				g = Object(s.a)(o.v),
 				x = (e, t, n) => async (r, s, i) => {
-					const o = Object(p.x)(s(), {
+					const o = Object(p.y)(s(), {
 						subredditName: e
 					});
 					if (o) return _(o.id, t, n)(r, s, i)
@@ -1190,7 +1190,7 @@
 				g = n.n(f);
 			const x = n("./src/lib/lessComponent.tsx").a.span("TypeLabel", g.a),
 				v = Object(d.c)({
-					restrictions: h.m
+					restrictions: h.n
 				}),
 				_ = e => i.a.createElement(i.a.Fragment, null, i.a.createElement(a.b, {
 					flair: {
@@ -2373,7 +2373,7 @@
 				ne = n("./src/reddit/selectors/subreddit.ts");
 			const re = 6,
 				se = Object(m.c)({
-					apiPending: ne.T,
+					apiPending: ne.U,
 					unsavedChangesModalIsOpen: Object(te.b)(Y.a)
 				});
 			class ie extends i.a.Component {
@@ -2870,13 +2870,13 @@
 					isGQLLoggedIn: P.P,
 					isLoggedIn: P.Q,
 					moderatorPermissions: (e, t) => {
-						const n = Object(ne.D)(e, t.listingName);
+						const n = Object(ne.E)(e, t.listingName);
 						if (n) return Object(it.n)(e, {
 							subredditId: n
 						})
 					},
 					shouldObserveSubscribeButton: e => Object(rt.a)(e) || Object(rt.c)(e) || Object(rt.d)(e),
-					showContributorRequestFlow: e => Object(ne.r)(e, et.e.Post),
+					showContributorRequestFlow: e => Object(ne.s)(e, et.e.Post),
 					showCreatePollButton: e => (e => Object(nt.c)(e, {
 						experimentEligibilitySelector: nt.a,
 						experimentName: Ae.N
@@ -2885,22 +2885,22 @@
 						let {
 							listingName: n
 						} = t;
-						const r = Object(ne.D)(e, n);
+						const r = Object(ne.E)(e, n);
 						return Object(_e.c)(e, {
 							subredditId: r
 						})
 					},
-					subreddit: (e, t) => Object(ne.x)(e, {
+					subreddit: (e, t) => Object(ne.y)(e, {
 						subredditName: t.listingName
 					}),
-					subredditAboutInfo: (e, t) => Object(ne.u)(e, {
+					subredditAboutInfo: (e, t) => Object(ne.v)(e, {
 						subredditName: t.listingName
 					}),
 					subredditCoins: (e, t) => {
 						let {
 							listingName: n
 						} = t;
-						return Object(ne.A)(e, {
+						return Object(ne.B)(e, {
 							subredditName: n
 						})
 					},
@@ -2912,7 +2912,7 @@
 						let {
 							listingName: n
 						} = t;
-						const r = Object(ne.x)(e, {
+						const r = Object(ne.y)(e, {
 							subredditName: n
 						});
 						return !!r && Object(u.a)(e, {
@@ -3082,7 +3082,7 @@
 						onClick: m ? g : void 0,
 						headerButton: i.a.createElement("div", {
 							className: ut.a.headerButtonsContainer
-						}, !D && x && f && c !== Ae.je.NewModule && i.a.createElement(a.a, {
+						}, !D && x && f && c !== Ae.me.NewModule && i.a.createElement(a.a, {
 							className: ut.a.ModToolsLink,
 							to: f.posts ? `${x.url}about/modqueue` : `${x.url}about/`,
 							onClick: this.onClickModTools
@@ -5144,27 +5144,27 @@
 				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Fb,
+					experimentName: s.Ib,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.X.Enabled),
 				d = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Gb,
+					experimentName: s.Jb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Y.Enabled),
 				c = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Hb,
+					experimentName: s.Kb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Z.Enabled),
 				l = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Ib,
+					experimentName: s.Lb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.ab.Enabled),
 				u = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Kb,
+					experimentName: s.Nb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.cb.Enabled),
 				m = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Jb,
+					experimentName: s.Mb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.bb.Enabled)
 		},
@@ -5298,4 +5298,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.c9bc419568308955bd6a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.729a14d22130f12d62a4.js.map
