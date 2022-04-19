@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.06887e1d33c68c54091c.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.1a40359514b58110edeb.js
+// Retrieved at 4/19/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -2917,25 +2917,26 @@
 						isProfileBlockInterstitialEnabled: p,
 						isBlocked: h
 					} = c;
-					var f;
-					const x = b.vb,
-						v = Object(u.a)(s, x, l, t),
+					var f, x;
+					const v = b.vb,
+						P = Object(u.a)(s, v, l, t),
 						{
-							sort: P
+							sort: O
 						} = t;
 					return {
 						contentGateInfo: a,
 						isLoggedIn: i,
 						isProfileNSFW: !!o && o.isNSFW,
-						listingKey: v,
+						listingKey: P,
 						profileName: s,
-						shouldShowPinnedPostsSection: n && !P,
+						shouldShowPinnedPostsSection: n && !O,
 						sort: l,
 						timeSort: m,
 						isEligibleForNsfwSignupUpsellTreatment: d,
 						avatar: null === (f = null == o ? void 0 : o.icon) || void 0 === f ? void 0 : f.url,
 						isProfileBlockInterstitialEnabled: p,
 						isBlocked: h,
+						profileId: null !== (x = null == o ? void 0 : o.id) && void 0 !== x ? x : "",
 						...e
 					}
 				}),
@@ -2997,7 +2998,8 @@
 						isEligibleForNsfwSignupUpsellTreatment: h,
 						avatar: f,
 						isProfileBlockInterstitialEnabled: x,
-						isBlocked: v
+						isBlocked: v,
+						profileId: O
 					} = this.props;
 					if (!a) return null;
 					if (e && e.profileDeleted) return i.a.createElement(P.default, {
@@ -3012,21 +3014,22 @@
 						contentGateType: Lt.a.ProfileBlockedForLegalReason,
 						profileName: d
 					});
-					const O = a.queryParams && "true" === a.queryParams.consent;
-					if (403 === a.status || v && !O) return x ? i.a.createElement(Mt.a, {
+					const g = a.queryParams && "true" === a.queryParams.consent;
+					if (403 === a.status || v && !g) return x ? i.a.createElement(Mt.a, {
 						username: d,
-						avatar: f
+						avatar: f,
+						uid: O
 					}) : i.a.createElement(Tt.a, null);
 					if (404 === a.status) return i.a.createElement(P.default, {
 						contentGateType: Lt.a.ProfileDoesNotExist,
 						profileName: d
 					});
 					if (!d) return null;
-					const g = d.toLowerCase(),
-						j = `/user/${d}/`,
-						w = {
+					const j = d.toLowerCase(),
+						w = `/user/${d}/`,
+						E = {
 							listingKey: r,
-							listingName: g
+							listingName: j
 						};
 					if (o && !s && h) return i.a.createElement(St.a, {
 						contentTitle: Object(It.d)(d)
@@ -3035,24 +3038,24 @@
 						subredditName: d,
 						contentGateType: Lt.a.Nsfw
 					});
-					const E = {
+					const S = {
 							inSubredditOrProfile: !Object(l.a)(d),
 							listingKey: r,
-							listingName: g,
+							listingName: j,
 							listingViewed: (e, t) => Object(Nt.q)(r, c, t, e, p),
 							noPostsComponent: this.renderNoPosts,
 							onScroll: u,
 							onTryAgain: n
 						},
-						S = {
+						I = {
 							sort: c,
-							baseUrl: j,
+							baseUrl: w,
 							sortOptions: b.Bb,
 							timeSort: p
 						},
-						I = i.a.createElement(i.a.Fragment, null, m && i.a.createElement(wt, {
+						N = i.a.createElement(i.a.Fragment, null, m && i.a.createElement(wt, {
 							profileName: d
-						}), i.a.createElement(y.a, S), i.a.createElement(fe, Rt({}, E, {
+						}), i.a.createElement(y.a, I), i.a.createElement(fe, Rt({}, S, {
 							getInjectChildren: this.state.showPostStatsUnit && this.props.isOwnProfile && this.props.isProfileCreatorStatsEnabled ? this.getInjectChildren : void 0,
 							excludePinnedPosts: m,
 							onLoadMore: this.props.onLoadMoreConversationsItems,
@@ -3063,10 +3066,10 @@
 						fitPageToContent: !0,
 						contentNavBar: i.a.createElement(i.a.Fragment, null, i.a.createElement(xe.a, {
 							profileName: d,
-							viewBlockedConsent: O
+							viewBlockedConsent: g
 						})),
-						content: i.a.createElement(i.a.Fragment, null, i.a.createElement(C.a, null), I),
-						sidebar: i.a.createElement(Et.a, Rt({}, w, {
+						content: i.a.createElement(i.a.Fragment, null, i.a.createElement(C.a, null), N),
+						sidebar: i.a.createElement(Et.a, Rt({}, E, {
 							profileName: d
 						}))
 					})
@@ -3259,4 +3262,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.06887e1d33c68c54091c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.1a40359514b58110edeb.js.map

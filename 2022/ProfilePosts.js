@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.6e3e2c9fbf7e5b21d134.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.30ced68ee80a63d33fb4.js
+// Retrieved at 4/19/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -5419,11 +5419,11 @@
 						profileName: n.params.profileName
 					})
 				}, (e, t, n, s, r, i, o, a, d, c, l, m) => {
-					var h;
+					var h, b;
 					const {
-						sort: b,
-						t: f
-					} = Object(p.b)(s), x = Object(u.a)(`u_${i}`, b, s);
+						sort: f,
+						t: x
+					} = Object(p.b)(s), g = Object(u.a)(`u_${i}`, f, s);
 					return {
 						contentGateInfo: d,
 						over18Prefs: n,
@@ -5432,14 +5432,15 @@
 						isProfileCreatorStatsEnabled: t,
 						isProfileNSFW: !!o && o.isNSFW,
 						layout: r,
-						listingKey: x,
+						listingKey: g,
 						profileName: i,
-						sort: b,
-						timeSort: f,
+						sort: f,
+						timeSort: x,
 						isEligibleForNsfwSignupUpsellTreatment: c,
 						avatar: null === (h = null == o ? void 0 : o.icon) || void 0 === h ? void 0 : h.url,
 						isProfileBlockInterstitialEnabled: l,
-						isBlocked: m
+						isBlocked: m,
+						profileId: null !== (b = null == o ? void 0 : o.id) && void 0 !== b ? b : ""
 					}
 				}),
 				W = Object(a.b)(U, (e, t) => ({
@@ -5493,27 +5494,29 @@
 						isEligibleForNsfwSignupUpsellTreatment: b,
 						avatar: w,
 						isProfileBlockInterstitialEnabled: O,
-						isBlocked: k
+						isBlocked: k,
+						profileId: P
 					} = this.props;
 					if (!l || !u) return null;
 					if (e && (e.profileDeleted || e.profileSuspended)) return o.a.createElement(h.default, {
 						contentGateType: e.profileDeleted ? N.a.ProfileDeleted : N.a.ProfileSuspended,
 						profileName: u
 					});
-					const P = l.queryParams && "true" === l.queryParams.consent;
-					if (403 === l.status || k && !P) return O ? o.a.createElement(L.a, {
+					const T = l.queryParams && "true" === l.queryParams.consent;
+					if (403 === l.status || k && !T) return O ? o.a.createElement(L.a, {
 						username: u,
-						avatar: w
+						avatar: w,
+						uid: P
 					}) : o.a.createElement(I.a, null);
 					if (404 === l.status) return o.a.createElement(h.default, {
 						contentGateType: N.a.ProfileDoesNotExist,
 						profileName: u
 					});
-					const T = u.toLowerCase(),
-						M = `/user/${u}/posts/`,
-						R = {
+					const M = u.toLowerCase(),
+						R = `/user/${u}/posts/`,
+						B = {
 							listingKey: i,
-							listingName: T
+							listingName: M
 						};
 					if (r && !n && b) return o.a.createElement(_.a, {
 						contentTitle: Object(j.d)(u)
@@ -5522,9 +5525,9 @@
 						contentGateType: N.a.Nsfw,
 						subredditName: u
 					});
-					const B = {
+					const F = {
 						sort: m,
-						baseUrl: M,
+						baseUrl: R,
 						sortOptions: c.Eb,
 						subredditId: this.props.subredditId,
 						timeSort: p
@@ -5534,12 +5537,12 @@
 						fitPageToContent: !0,
 						contentNavBar: o.a.createElement(o.a.Fragment, null, o.a.createElement(y.a, {
 							profileName: u,
-							viewBlockedConsent: P
+							viewBlockedConsent: T
 						})),
-						content: o.a.createElement(o.a.Fragment, null, o.a.createElement(x.a, B), o.a.createElement(g.a, null), o.a.createElement(v.a, {
+						content: o.a.createElement(o.a.Fragment, null, o.a.createElement(x.a, F), o.a.createElement(g.a, null), o.a.createElement(v.a, {
 							getInjectChildren: this.state.showPostStatsUnit && this.props.isOwnProfile && this.props.isProfileCreatorStatsEnabled ? this.getInjectChildren : void 0,
 							listingKey: i,
-							listingName: T,
+							listingName: M,
 							listingViewed: (e, t) => Object(C.r)(i, m, t, e, p),
 							noPostsComponent: () => o.a.createElement(f.c, {
 								profileName: u,
@@ -5550,7 +5553,7 @@
 							inSubredditOrProfile: !1,
 							isProfileCreatorStatsEnabled: s && n
 						})),
-						sidebar: o.a.createElement(E.a, A({}, R, {
+						sidebar: o.a.createElement(E.a, A({}, B, {
 							profileName: u
 						}))
 					})
@@ -5776,4 +5779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.6e3e2c9fbf7e5b21d134.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.30ced68ee80a63d33fb4.js.map

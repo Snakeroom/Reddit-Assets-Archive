@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.d24b114098251b833fb1.js
-// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.2b5d7336002002989fec.js
+// Retrieved at 4/19/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, s) {
@@ -998,11 +998,11 @@
 						profileName: s.params.profileName
 					})
 				}, (e, t, s, r, o, n, i, a, d, c, l) => {
-					var p;
+					var p, h;
 					const {
-						sort: h,
-						t: f
-					} = Object(u.b)(s), b = Object(m.a)(`u_${o}`, h, s);
+						sort: f,
+						t: b
+					} = Object(u.b)(s), C = Object(m.a)(`u_${o}`, f, s);
 					return {
 						contentGateInfo: a,
 						over18Prefs: t,
@@ -1010,14 +1010,15 @@
 						isOwnProfile: e,
 						isProfileNSFW: !!n && n.isNSFW,
 						layout: r,
-						listingKey: b,
+						listingKey: C,
 						profileName: o,
-						sort: h,
-						timeSort: f,
+						sort: f,
+						timeSort: b,
 						isEligibleForNsfwSignupUpsellTreatment: d,
 						avatar: null === (p = null == n ? void 0 : n.icon) || void 0 === p ? void 0 : p.url,
 						isProfileBlockInterstitialEnabled: c,
-						isBlocked: l
+						isBlocked: l,
+						profileId: null !== (h = null == n ? void 0 : n.id) && void 0 !== h ? h : ""
 					}
 				}),
 				we = Object(a.b)(je, (e, t) => ({
@@ -1043,7 +1044,8 @@
 					isEligibleForNsfwSignupUpsellTreatment: g,
 					avatar: O,
 					isProfileBlockInterstitialEnabled: v,
-					isBlocked: x
+					isBlocked: x,
+					profileId: y
 				} = e;
 				if (!m || !l) return null;
 				if (t && t.profileDeleted) return i.a.createElement(h.default, {
@@ -1058,20 +1060,21 @@
 					contentGateType: be.a.ProfileBlockedForLegalReason,
 					profileName: m
 				});
-				const y = l.queryParams && "true" === l.queryParams.consent;
-				if (403 === l.status || x && !y) return v ? i.a.createElement(ge.a, {
+				const P = l.queryParams && "true" === l.queryParams.consent;
+				if (403 === l.status || x && !P) return v ? i.a.createElement(ge.a, {
 					username: m,
-					avatar: O
+					avatar: O,
+					uid: y
 				}) : i.a.createElement(Ce.a, null);
 				if (404 === l.status) return i.a.createElement(h.default, {
 					contentGateType: be.a.ProfileDoesNotExist,
 					profileName: m
 				});
-				const P = m.toLowerCase(),
-					j = `/user/${m}/comments/`,
-					w = {
+				const j = m.toLowerCase(),
+					w = `/user/${m}/comments/`,
+					L = {
 						listingKey: n,
-						listingName: P
+						listingName: j
 					};
 				if (o && !r && g) return i.a.createElement(me.a, {
 					contentTitle: Object(pe.d)(m)
@@ -1080,9 +1083,9 @@
 					contentGateType: be.a.Nsfw,
 					subredditName: m
 				});
-				const L = {
+				const I = {
 					sort: p,
-					baseUrl: j,
+					baseUrl: w,
 					sortOptions: c.Eb,
 					timeSort: u
 				};
@@ -1091,11 +1094,11 @@
 					fitPageToContent: !0,
 					contentNavBar: i.a.createElement(i.a.Fragment, null, i.a.createElement(ce.a, {
 						profileName: m,
-						viewBlockedConsent: y
+						viewBlockedConsent: P
 					})),
-					content: i.a.createElement(i.a.Fragment, null, i.a.createElement(b.a, L), i.a.createElement(C.a, null), i.a.createElement(de, {
+					content: i.a.createElement(i.a.Fragment, null, i.a.createElement(b.a, I), i.a.createElement(C.a, null), i.a.createElement(de, {
 						listingKey: n,
-						listingName: P,
+						listingName: j,
 						listingViewed: (e, t) => Object(ue.o)(n, p, t, e, u),
 						noPostsComponent: () => i.a.createElement(f.b, {
 							profileName: m,
@@ -1105,7 +1108,7 @@
 						onTryAgain: d,
 						inSubredditOrProfile: !1
 					})),
-					sidebar: i.a.createElement(le.a, ye({}, w, {
+					sidebar: i.a.createElement(le.a, ye({}, L, {
 						profileName: m
 					}))
 				})
@@ -1113,4 +1116,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.d24b114098251b833fb1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.2b5d7336002002989fec.js.map
