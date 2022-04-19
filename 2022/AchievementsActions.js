@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AchievementsActions.3bab4d5b2f4793036c20.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AchievementsActions.8b569cf6e57a3b567aa7.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AchievementsActions"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, r, t) {
@@ -132,7 +132,7 @@
 				}, U = (e, r) => async (t, d) => {
 					if (!e) return;
 					const n = d(),
-						i = Object(y.k)(n);
+						i = Object(y.l)(n);
 					if (!i || !Object(b.h)(n, {
 							subredditId: e
 						})) return;
@@ -180,7 +180,7 @@
 					}), await t(P(e, Array.from(n)))
 				}, R = (e, r) => async (t, d) => {
 					const n = d(),
-						i = Object(y.k)(n);
+						i = Object(y.l)(n);
 					if (!i) return;
 					const s = i.id,
 						o = Object(v.i)(n, {
@@ -195,7 +195,7 @@
 					}))
 				}, g = (e, r) => async (t, d) => {
 					const n = d(),
-						i = Object(y.k)(n);
+						i = Object(y.l)(n);
 					if (!i) return;
 					const s = i.id,
 						o = Object(v.h)(n, {
@@ -213,7 +213,7 @@
 						gqlContext: s
 					} = n;
 					const o = t(),
-						u = Object(y.k)(o);
+						u = Object(y.l)(o);
 					if (!u) return;
 					const a = u.id;
 					r(O(e));
@@ -241,7 +241,7 @@
 						gqlContext: o
 					} = s;
 					const u = n(),
-						a = Object(y.k)(u);
+						a = Object(y.l)(u);
 					if (!a) return;
 					const f = a.id,
 						b = {
@@ -596,4 +596,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.3bab4d5b2f4793036c20.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AchievementsActions.8b569cf6e57a3b567aa7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatorStats.ab7f0ee3a4ec8801ce79.js
-// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatorStats.977ed672295fbf20f14d.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatorStats"], {
 		"./src/reddit/components/CreatorStats/Stats.tsx": function(t, e, s) {
@@ -404,8 +404,8 @@
 			var w = s("./src/reddit/components/ShareMenu/index.tsx"),
 				T = s("./src/reddit/helpers/trackers/creatorStats.ts"),
 				y = s("./src/reddit/hooks/useTracking.ts"),
-				I = s("./src/reddit/components/CreatorStats/index.m.less"),
-				E = s.n(I),
+				E = s("./src/reddit/components/CreatorStats/index.m.less"),
+				I = s.n(E),
 				g = s("./src/reddit/components/CreatorStats/Stats.tsx");
 			e.default = t => {
 				const e = Object(y.a)(),
@@ -421,7 +421,7 @@
 						} = t;
 						return async (t, o) => {
 							const a = o();
-							Object(m.b)(a) && Object(v.Db)(a, {
+							Object(m.b)(a) && Object(v.Eb)(a, {
 								postId: e
 							}) && (Object(f.T)(a, {
 								subredditId: s
@@ -453,7 +453,7 @@
 				const b = Object(l.e)(e => Object(p.b)(e, t.post.id)),
 					h = Object(l.e)(e => Object(p.c)(e, t.post.id)),
 					C = Object(l.e)(e => Object(p.d)(e, t.subreddit.id)),
-					_ = Object(l.e)(e => Object(v.Db)(e, {
+					_ = Object(l.e)(e => Object(v.Eb)(e, {
 						postId: t.post.id
 					}));
 				Object(n.useEffect)(() => {
@@ -472,29 +472,29 @@
 					e(Object(T.c)(t.post.id, c, o))
 				}, [e, t.post.id, c, h]);
 				return i.a.createElement("div", {
-					className: Object(a.a)(E.a.container, t.className)
+					className: Object(a.a)(I.a.container, t.className)
 				}, i.a.createElement("div", {
-					className: E.a.titleContainer
+					className: I.a.titleContainer
 				}, i.a.createElement("div", {
-					className: E.a.title
+					className: I.a.title
 				}, o.fbt._("Post Insights", null, {
 					hk: "3ZuB9z"
 				})), i.a.createElement("div", {
-					className: E.a.subtitle
+					className: I.a.subtitle
 				}, ((t, e, s, a, n, l) => {
 					switch (t) {
 						case d.b.NotAvailableYet:
 							return i.a.createElement(i.a.Fragment, null, o.fbt._("Check back later to see views, shares, and more.", null, {
 								hk: "4rItwf"
 							}), " ", a && o.fbt._("{=Share your post} to spread the word!", [o.fbt._param("=Share your post", i.a.createElement(w.a, {
-								className: E.a.shareMenu,
+								className: I.a.shareMenu,
 								dropdownId: "share-menu-creator-stats",
 								permalink: e.permalink,
 								post: e,
 								sendEventWithName: n,
 								subredditType: s.type
 							}, o.fbt._("{=Share your post}", [o.fbt._param("=Share your post", i.a.createElement("button", {
-								className: E.a.linkText,
+								className: I.a.linkText,
 								onClick: l
 							}, o.fbt._("Share your post", null, {
 								hk: "4afsjM"
@@ -510,7 +510,7 @@
 								hk: "44JOdg"
 							}), " ", a && o.fbt._("{=Create a new post} and see how it performs!", [o.fbt._param("=Create a new post", i.a.createElement("a", {
 								href: `/r/${s.name}/submit`,
-								className: E.a.linkText
+								className: I.a.linkText
 							}, o.fbt._("Create a new post", null, {
 								hk: "ByQXU"
 							})))], {
@@ -527,7 +527,7 @@
 								hk: "3ZzrwZ"
 							}), " ", a && o.fbt._("{=Create a new post} and see how it performs!", [o.fbt._param("=Create a new post", i.a.createElement("a", {
 								href: `/r/${s.name}/submit`,
-								className: E.a.linkText
+								className: I.a.linkText
 							}, o.fbt._("Create a new post", null, {
 								hk: "ByQXU"
 							})))], {
@@ -674,4 +674,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.ab7f0ee3a4ec8801ce79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.977ed672295fbf20f14d.js.map

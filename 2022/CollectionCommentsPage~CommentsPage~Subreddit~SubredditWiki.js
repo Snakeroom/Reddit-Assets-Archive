@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.9c7e8f25ad61e37733a0.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.a0af4327185a5a2f5a41.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -130,7 +130,7 @@
 				}, j = (e, t) => async (r, n) => {
 					if (!e) return;
 					const s = n(),
-						i = Object(g.k)(s);
+						i = Object(g.l)(s);
 					if (!i || !Object(b.h)(s, {
 							subredditId: e
 						})) return;
@@ -178,7 +178,7 @@
 					}), await r(C(e, Array.from(s)))
 				}, T = (e, t) => async (r, n) => {
 					const s = n(),
-						i = Object(g.k)(s);
+						i = Object(g.l)(s);
 					if (!i) return;
 					const a = i.id,
 						o = Object(h.i)(s, {
@@ -193,7 +193,7 @@
 					}))
 				}, F = (e, t) => async (r, n) => {
 					const s = n(),
-						i = Object(g.k)(s);
+						i = Object(g.l)(s);
 					if (!i) return;
 					const a = i.id,
 						o = Object(h.h)(s, {
@@ -211,7 +211,7 @@
 						gqlContext: a
 					} = s;
 					const o = r(),
-						d = Object(g.k)(o);
+						d = Object(g.l)(o);
 					if (!d) return;
 					const l = d.id;
 					t(_(e));
@@ -239,7 +239,7 @@
 						gqlContext: o
 					} = a;
 					const d = s(),
-						l = Object(g.k)(d);
+						l = Object(g.l)(d);
 					if (!l) return;
 					const p = l.id,
 						b = {
@@ -848,7 +848,7 @@
 				let {
 					space: t
 				} = e;
-				const r = Object(d.e)(c.db),
+				const r = Object(d.e)(c.eb),
 					a = t === n.MODAL,
 					l = t === n.INFEED_UNIT;
 				return o.a.createElement("div", {
@@ -1247,7 +1247,7 @@
 				} = e;
 				const v = Object(a.d)(),
 					w = Object(h.a)(),
-					y = Object(a.e)(x.k),
+					y = Object(a.e)(x.l),
 					_ = Object(a.e)(e => Object(g.k)(e, {
 						subredditId: r
 					})),
@@ -2365,8 +2365,8 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				j = Object(d.c)({
-					hideNSFWPref: y.F,
-					nightmode: y.db
+					hideNSFWPref: y.G,
+					nightmode: y.eb
 				}),
 				S = Object(a.b)(j)(e => i.a.createElement("div", {
 					className: Object(c.a)(k.a.communityItemContainer, {
@@ -2880,10 +2880,10 @@
 						n = t.redditStyle || Object(g.l)(e, {
 							subredditId: r
 						}),
-						s = Object(f.db)(e);
+						s = Object(f.eb)(e);
 					return n || s
 				},
-				nigtmode: f.db,
+				nigtmode: f.eb,
 				subredditId: u.n,
 				topPostVariant: h.d
 			}));
@@ -3063,7 +3063,7 @@
 				S = m.a.wrapped(o.a, "RawHTMLDisplay", _.a);
 			var N = Object(i.b)(() => Object(a.c)({
 					forceRedditStyle: x.l,
-					isNightmodeOn: v.db
+					isNightmodeOn: v.eb
 				}))(e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -3269,7 +3269,7 @@
 				Oe = m.a.div("LinkContainer", fe.a),
 				Ce = Object(a.c)({
 					userIsBanned: he.db,
-					userIsLoggedIn: v.Q
+					userIsLoggedIn: v.R
 				});
 			var je = Object(i.b)(Ce)(e => {
 					const {
@@ -4094,4 +4094,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.9c7e8f25ad61e37733a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.a0af4327185a5a2f5a41.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.3aeb252e8dde76cf8833.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.8f92c73e2c344a4c7431.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, r) {
@@ -302,13 +302,13 @@
 							return e
 					}
 				},
-				G = Object(q.c)({
+				B = Object(q.c)({
 					error: U,
 					pending: Q
 				});
-			const W = {};
-			var B = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : W,
+			const G = {};
+			var W = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : G,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case S.b: {
@@ -383,14 +383,14 @@
 					}
 				},
 				V = Object(q.c)({
-					api: G,
-					fetchedTokens: B,
+					api: B,
+					fetchedTokens: W,
 					ids: H,
 					loadMore: M
 				});
-			const Y = {};
-			var X = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Y,
+			const X = {};
+			var Y = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : X,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case S.f:
@@ -446,7 +446,7 @@
 					}
 				},
 				te = Object(q.c)({
-					error: X,
+					error: Y,
 					pending: ee
 				}),
 				re = r("./src/reddit/actions/profileConversations.ts");
@@ -804,12 +804,12 @@
 					if (!E.platform.currentPage) return;
 					if (200 !== E.platform.currentPage.status) return;
 					const A = Object(h.m)(r(), g),
-						S = Object(w.Ab)(E, {
+						S = Object(w.Bb)(E, {
 							userName: p
 						}).id;
 					t(k.m({
 						title: Ae(r(), p)
-					})), Object(w.S)(E) && Object(w.W)(E, p) && t(Object(x.f)());
+					})), Object(w.T)(E) && Object(w.X)(E, p) && t(Object(x.f)());
 					const N = [t(Object(a.q)()), t(R.b(g, A)), t(P.b(g)), t(_.o(p)), t(P.g(p)), t(C.l(p, S))];
 					await Promise.all(N)
 				}, Ae = (e, t) => Object(h.q)(e, {
@@ -979,4 +979,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.3aeb252e8dde76cf8833.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.8f92c73e2c344a4c7431.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.2919216caf0340d66a7c.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.7f6cf4e7a8cc70c6177a.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -929,7 +929,7 @@
 							if (r && r.ok) {
 								const t = r.body.data.createEconPayment;
 								if (null === (u = null == t ? void 0 : t.errors) || void 0 === u ? void 0 : u.length) return e(Object(f.paypalApiError)(j(t.errors))), null;
-								const n = Object(v.k)(o());
+								const n = Object(v.l)(o());
 								if (t.ok) {
 									const {
 										status: e
@@ -1493,7 +1493,7 @@
 						} = a;
 						t(v());
 						const d = n(),
-							m = Object(c.Q)(d);
+							m = Object(c.R)(d);
 						try {
 							const n = !m,
 								s = await Object(i.b)({
@@ -1650,7 +1650,7 @@
 						apiContext: s
 					} = n;
 					const r = t();
-					if (!Object(C.k)(r)) return;
+					if (!Object(C.l)(r)) return;
 					const o = Object(y.b)(r),
 						i = Object(y.a)(r);
 					if (o || i) return;
@@ -1711,7 +1711,7 @@
 					}))
 				})())), await Promise.all(f); {
 					const e = n();
-					if (!Object(C.Q)(e)) return Object(B.a)(t, e)
+					if (!Object(C.R)(e)) return Object(B.a)(t, e)
 				}
 				const {
 					page: v = a.ec.Account
@@ -2164,7 +2164,7 @@
 							await n(Object(l.o)(t.name))
 						}
 					})(), (async () => {
-						const s = Object(k.Ab)(r, {
+						const s = Object(k.Bb)(r, {
 							userName: t
 						});
 						if (!s) return;
@@ -2981,7 +2981,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(_.Ab)(e, {
+				user: (e, t) => Object(_.Bb)(e, {
 					userName: t.username
 				})
 			});
@@ -3287,9 +3287,9 @@
 			var Te = Me;
 			const Be = Object(o.c)({
 					activeTooltipId: v.a,
-					currentUser: _.k,
-					isLoggedIn: _.Q,
-					hideNSFWPref: _.F,
+					currentUser: _.l,
+					isLoggedIn: _.R,
+					hideNSFWPref: _.G,
 					moderatorPermissions: (e, t) => {
 						let {
 							subredditId: n
@@ -3316,7 +3316,7 @@
 							minSize: 32
 						})
 					},
-					user: _.Ab,
+					user: _.Bb,
 					userFlair: (e, t) => {
 						let {
 							subredditId: n
@@ -3342,7 +3342,7 @@
 						return !!r && Object(u.i)(e, r)
 					},
 					trophyCase: (e, t) => Object(h.r)(e, Object(h.m)(e, t.userName)),
-					isNightMode: _.db,
+					isNightMode: _.eb,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
 						const n = Object(l.a)(t.contextId) ? Object(b.G)(e, {
@@ -4126,7 +4126,7 @@
 					let {
 						profileName: n
 					} = t;
-					return Object(_.Gb)(e, n)
+					return Object(_.Hb)(e, n)
 				}, (e, t) => ({
 					karma: {
 						...p.a,
@@ -4641,8 +4641,8 @@
 				a = n("./src/reddit/actions/preferences.ts"),
 				o = n("./src/reddit/selectors/user.ts");
 			const i = Object(r.c)({
-					currentUser: o.k,
-					hideNSFWPref: o.F
+					currentUser: o.l,
+					hideNSFWPref: o.G
 				}),
 				c = Object(s.b)(i, e => ({
 					imageUpdateRequested: (t, n) => e(Object(a.C)(t, n))
@@ -4832,7 +4832,7 @@
 						url: "testing" === s ? "https://nft.reddit.com" : `https://nft.reddit.com/n/${n}`,
 						badge: s
 					}
-				})(f), [f]), O = Object(a.e)(l.db);
+				})(f), [f]), O = Object(a.e)(l.eb);
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 					className: Object(i.a)(b.a.container, y)
 				}, r.a.createElement(c.a, {
@@ -6413,13 +6413,13 @@
 					premiumBenefitsModalIsOpen: Object(Ce.b)("premium_benefits_modal_id"),
 					premiumFeedbackModalIsOpen: Object(Ce.b)("premium_feedback_modal_id"),
 					isPremiumImprovedCancellationEnabled: je.v,
-					goldExpiration: Ee.r,
-					hasAndroidSubscription: Ee.s,
-					hasIosSubscription: Ee.y,
-					hasStripeSubscription: Ee.B,
-					hasPaypalSubscription: Ee.z,
-					isGold: Ee.v,
-					isPremiumSubscriber: Ee.w,
+					goldExpiration: Ee.s,
+					hasAndroidSubscription: Ee.t,
+					hasIosSubscription: Ee.z,
+					hasStripeSubscription: Ee.C,
+					hasPaypalSubscription: Ee.A,
+					isGold: Ee.w,
+					isPremiumSubscriber: Ee.x,
 					premiumProductOfferSubscription: _.i,
 					premiumProductOfferSubscriptionIsCanceled: _.h,
 					updateCardModalIsOpen: Object(Ce.b)(we)
@@ -7391,7 +7391,7 @@
 				de = g.a.div("TickText", R.a),
 				me = g.a.div("PreSubText", R.a),
 				ue = Object(i.c)({
-					isNightModeOn: U.db
+					isNightModeOn: U.eb
 				}),
 				pe = Object(a.b)(ue)(e => r.a.createElement(V, {
 					last: e.last,
@@ -9528,7 +9528,7 @@
 					action: "view",
 					noun: "page",
 					goldPurchase: {
-						type: Object(r.w)(e) ? a.GoldPurchaseType.Cancel : a.GoldPurchaseType.GetPremium
+						type: Object(r.x)(e) ? a.GoldPurchaseType.Cancel : a.GoldPurchaseType.GetPremium
 					}
 				}),
 				d = () => e => ({
@@ -10433,7 +10433,7 @@
 				const y = Object(m.b)(),
 					C = Object(l.e)(h.l),
 					j = Object(l.e)(b.g);
-				if (Object(l.e)(f.w)) return a.a.createElement("div", {
+				if (Object(l.e)(f.x)) return a.a.createElement("div", {
 					className: Object(o.a)(v.a.buttons, t, {
 						[v.a.hero]: !!n
 					})
@@ -10560,7 +10560,7 @@
 			const G = Object(c.c)({
 					emailSent: e => e.user.accountSettings.sendResetEmail.api.emailSent,
 					username: e => {
-						const t = Object(I.k)(e);
+						const t = Object(I.l)(e);
 						return t && Object(R.e)(t) || ""
 					}
 				}),
@@ -10691,7 +10691,7 @@
 				se = n("./src/reddit/constants/experiments.ts"),
 				re = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const ae = Object(c.a)(e => Object(re.c)(e, {
-				experimentEligibilitySelector: I.Q,
+				experimentEligibilitySelector: I.R,
 				experimentName: se.K
 			}), e => e === se.T.Enabled);
 			var oe = n("./src/reddit/selectors/meta.ts"),
@@ -10702,9 +10702,9 @@
 						var t, n;
 						return null === (n = null === (t = null == e ? void 0 : e.user) || void 0 === t ? void 0 : t.account) || void 0 === n ? void 0 : n.gender
 					},
-					hasVerifiedEmail: I.D,
-					isFPR: I.O,
-					language: I.bb,
+					hasVerifiedEmail: I.E,
+					isFPR: I.P,
+					language: I.cb,
 					shouldShowCreatePasswordModal: N.d,
 					availableLocales: te.b,
 					locale: oe.i,
@@ -11120,7 +11120,7 @@
 				}).apply(this, arguments)
 			}
 			const ut = Object(c.c)({
-				isEmployee: I.N
+				isEmployee: I.O
 			});
 			var pt = Object(o.b)(ut)(e => {
 					const t = !e.isEmployee;
@@ -11143,12 +11143,12 @@
 						path: fe.c.ChangePassword
 					}),
 					deactivateModalOpen: Object(xe.b)("deactivate_modal_id"),
-					email: I.n,
+					email: I.o,
 					hasGoogleIdentity: N.b,
-					inRedesignBeta: I.H,
+					inRedesignBeta: I.I,
 					optoutModalOpen: Object(xe.b)("settins_optout_modal_id"),
 					shouldShowCreatePasswordModal: N.d,
-					user: I.k
+					user: I.l
 				}),
 				Et = Object(o.b)(jt, (e, t) => ({
 					deactivate: t => {
@@ -12508,7 +12508,7 @@
 					experimentName: se.h
 				}), e => e === se.b.Enabled),
 				lr = Object(c.a)(e => Object(re.c)(e, {
-					experimentEligibilitySelector: I.Q,
+					experimentEligibilitySelector: I.R,
 					experimentName: se.J
 				}), e => e === se.R.Enabled);
 			var dr = n("./src/lib/hooks/usePrevious.ts"),
@@ -12823,7 +12823,7 @@
 				Ar = n.n(Ir);
 			const {
 				fbt: Mr
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Tr = 30, Br = 200, Lr = Object(c.a)(I.k, Pr.a, I.Hb, Sr.n, xe.a, (e, t, n, s, r) => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Tr = 30, Br = 200, Lr = Object(c.a)(I.l, Pr.a, I.Ib, Sr.n, xe.a, (e, t, n, s, r) => {
 				const a = e && e.profileId,
 					o = a && s[a] ? s[a].bannerBackgroundImage : void 0;
 				return {
@@ -13187,7 +13187,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const ma = Object(c.c)({
 				userId: e => {
-					const t = Object(I.k)(e);
+					const t = Object(I.l)(e);
 					return t ? t.id : ""
 				}
 			});
@@ -13717,7 +13717,7 @@
 						return Object(re.c)(e, {
 							experimentName: se.Ac,
 							experimentEligibilitySelector: re.a
-						}) === se.pd
+						}) === se.od
 					}
 				}),
 				uo = Object(ge.u)(),
@@ -14247,8 +14247,8 @@
 				a = n("./src/reddit/selectors/user.ts");
 			const o = e => Object(r.c)(e, {
 				experimentName: s.F,
-				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.pd
+				experimentEligibilitySelector: () => Object(a.Q)(e)
+			}) === s.od
 		},
 		"./src/reddit/selectors/experiments/econ/avatarNfts.ts": function(e, t, n) {
 			"use strict";
@@ -14265,8 +14265,8 @@
 				}) === s.x.Enabled,
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Nc
-				}) === s.pd
+					experimentName: s.Mc
+				}) === s.od
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14436,4 +14436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2919216caf0340d66a7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.7f6cf4e7a8cc70c6177a.js.map

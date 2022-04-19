@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.4918bbc6c797015832a0.js
-// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.855fef02ac14cf23c19c.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -428,7 +428,7 @@
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			const f = Object(o.c)({
 					userId: e => {
-						const t = Object(l.k)(e);
+						const t = Object(l.l)(e);
 						return t ? t.id : ""
 					}
 				}),
@@ -1034,4 +1034,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.4918bbc6c797015832a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.855fef02ac14cf23c19c.js.map

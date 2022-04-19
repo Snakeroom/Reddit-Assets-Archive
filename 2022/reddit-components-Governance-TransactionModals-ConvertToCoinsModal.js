@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.1b44eeeadc9be470193a.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.b253f9c58db4a6589e7c.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -565,7 +565,7 @@
 							if (a && a.ok) {
 								const t = a.body.data.createEconPayment;
 								if (null === (p = null == t ? void 0 : t.errors) || void 0 === p ? void 0 : p.length) return e(Object(v.paypalApiError)(j(t.errors))), null;
-								const n = Object(g.k)(s());
+								const n = Object(g.l)(s());
 								if (t.ok) {
 									const {
 										status: e
@@ -2736,4 +2736,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.1b44eeeadc9be470193a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.b253f9c58db4a6589e7c.js.map

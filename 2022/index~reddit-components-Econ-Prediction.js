@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.187e4a1f585fdb11019c.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.e0932a646b81e64b3010.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index~reddit-components-Econ-Prediction"], {
 		"./node_modules/lodash/_LazyWrapper.js": function(e, t, n) {
@@ -1061,7 +1061,7 @@
 						isShowingHint: x,
 						...N
 					} = e;
-					const I = Object(s.e)(f.db),
+					const I = Object(s.e)(f.eb),
 						A = b === u.id,
 						k = d || !!v || !!b || c;
 					return o.a.createElement("div", {
@@ -1248,7 +1248,7 @@
 				} = e;
 				const d = Object(s.d)(),
 					i = Object(U.a)(),
-					l = Object(s.e)(f.w),
+					l = Object(s.e)(f.x),
 					[u, m] = Object(a.useState)(!1),
 					p = Z._("Change your prediction", null, {
 						hk: "hleE5"
@@ -1438,7 +1438,7 @@
 					[h, b] = Object($.a)("hasSeenPredictionSneakPeek", !1),
 					g = !!d,
 					O = r && !c,
-					j = Object(s.e)(f.w),
+					j = Object(s.e)(f.x),
 					C = () => {
 						h || b(!0), _(!1)
 					};
@@ -1530,7 +1530,7 @@
 					userSelection: E,
 					predictionStatus: g,
 					voteUpdatesRemained: O
-				} = t, v = Boolean((null == t ? void 0 : t.userSelection) && !(null == t ? void 0 : t.resolvedOptionId) && t.predictionStatus === de.b.Open && t.endsAt > Date.now()), C = Object(s.e)(e => (null == t ? void 0 : t.tournamentId) ? Object(ie.a)(e, t.tournamentId) : null), x = Object(s.e)(f.db), N = Object(s.e)(f.Cb), I = Object(s.e)(f.Q), [A, k] = Object(a.useState)(!1), y = l === N, w = m < Date.now(), S = w && y && !_, P = g === de.b.Cancelled || g === de.b.CancelInProgress, T = w || !!E || !!_ || P;
+				} = t, v = Boolean((null == t ? void 0 : t.userSelection) && !(null == t ? void 0 : t.resolvedOptionId) && t.predictionStatus === de.b.Open && t.endsAt > Date.now()), C = Object(s.e)(e => (null == t ? void 0 : t.tournamentId) ? Object(ie.a)(e, t.tournamentId) : null), x = Object(s.e)(f.eb), N = Object(s.e)(f.Db), I = Object(s.e)(f.R), [A, k] = Object(a.useState)(!1), y = l === N, w = m < Date.now(), S = w && y && !_, P = g === de.b.Cancelled || g === de.b.CancelInProgress, T = w || !!E || !!_ || P;
 				return Object(a.useEffect)(() => {
 					k(!1)
 				}, [E, t]), o.a.createElement("div", me({
@@ -2405,10 +2405,10 @@
 				}).apply(this, arguments)
 			}
 			const f = Object(c.c)({
-					currentUser: i.k,
-					isNightMode: i.db,
-					isPresenceUserPrefEnabled: i.V,
-					shouldHideNSFW: i.F
+					currentUser: i.l,
+					isNightMode: i.eb,
+					isPresenceUserPrefEnabled: i.W,
+					shouldHideNSFW: i.G
 				}),
 				b = Object(r.b)(f);
 			t.a = b(e => {
@@ -3238,4 +3238,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.187e4a1f585fdb11019c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index~reddit-components-Econ-Prediction.e0932a646b81e64b3010.js.map

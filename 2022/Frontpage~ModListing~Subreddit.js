@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.3a6d32cf7db043cef9a8.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.59bb6c854dd62ac5df82.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -43,7 +43,7 @@
 					const o = t(),
 						a = Object(p.e)(o),
 						d = Object(p.d)(o),
-						m = Object(b.P)(o);
+						m = Object(b.Q)(o);
 					if (a || !d) return;
 					e(f());
 					let _ = !1;
@@ -118,7 +118,7 @@
 						i = Object(p.g)(a);
 					if (Object(p.f)(a) || null === i || "client" === i) {
 						const n = null === (s = null === (r = Object(m.b)(t())) || void 0 === r ? void 0 : r.routeMatch) || void 0 === s ? void 0 : s.route.chunk,
-							i = Object(b.Q)(a);
+							i = Object(b.R)(a);
 						return Object(o.i)(() => e(x()), {
 							name: "getFocusedVerticalsRequested",
 							page: n,
@@ -678,7 +678,7 @@
 				K = Object(g.c)({
 					isAwardListingExperimentEnabled: E.a,
 					isBestSortPopularEnabled: N.a,
-					user: L.k,
+					user: L.l,
 					dropdownIsOpen: (e, t) => Object(I.b)(t.dropdownId || M)(e),
 					isPopularPage: l.F
 				}),
@@ -1257,7 +1257,7 @@
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
-				Ue = Object(g.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, N.a, L.k, l.F, E.a, Le.i, (e, t, n, r, s, o, a) => {
+				Ue = Object(g.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, N.a, L.l, l.F, E.a, Le.i, (e, t, n, r, s, o, a) => {
 					if (e) return {
 						isPopularPage: s,
 						sortOptions: e,
@@ -2208,7 +2208,7 @@
 						subredditId: n
 					})),
 					_ = Object(a.e)(m.a),
-					S = _ !== u.oe.NewModule;
+					S = _ !== u.pe.NewModule;
 				return (null === (s = null == f ? void 0 : f.cards) || void 0 === s ? void 0 : s.length) > 0 && S ? o.a.createElement(h, {
 					closeModuleOnMount: !!t && t !== p.g.Large,
 					subredditId: n,
@@ -2235,16 +2235,16 @@
 				o = n("./src/reddit/selectors/user.ts");
 			const a = e => {
 					const t = Object(s.c)(e, {
-						experimentEligibilitySelector: o.Q,
+						experimentEligibilitySelector: o.R,
 						experimentName: r.Lc
 					});
-					return !(!t || Object(r.If)(t))
+					return !(!t || Object(r.Jf)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
-						experimentEligibilitySelector: o.Q,
+						experimentEligibilitySelector: o.R,
 						experimentName: r.Lc
-					}) === r.ud.ListingEnabled
+					}) === r.td.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2348,7 +2348,7 @@
 				_ = e => e.focusedVerticals.category,
 				S = e => e.focusedVerticals.lastLoadedEnv,
 				y = e => {
-					const t = Object(i.P)(e),
+					const t = Object(i.Q)(e),
 						n = s.d.geoSubredditRecommendationDULoggedIn(e),
 						r = s.d.geoSubredditRecommendationDULoggedOut(e);
 					return t && n || !t && r
@@ -2371,4 +2371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.3a6d32cf7db043cef9a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.59bb6c854dd62ac5df82.js.map

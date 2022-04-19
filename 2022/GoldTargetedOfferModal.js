@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.1ff9b42578c762476923.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.de76a6b7d1c7a80cc673.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1019,7 +1019,7 @@
 						} = c;
 						t(g());
 						const l = r(),
-							u = Object(s.Q)(l);
+							u = Object(s.R)(l);
 						try {
 							const r = !u,
 								n = await Object(i.b)({
@@ -1701,4 +1701,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.1ff9b42578c762476923.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.de76a6b7d1c7a80cc673.js.map

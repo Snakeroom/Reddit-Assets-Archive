@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.691db0a1c557bf0a8262.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.133ad63e5e3564162004.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit", "reddit-components-BlankPost"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -1022,7 +1022,7 @@
 				T = Object(b.u)();
 			t.b = T(e => {
 				var t;
-				const n = Object(c.e)(I.db);
+				const n = Object(c.e)(I.eb);
 				let i, d, u;
 				if (e.subredditOrProfile) {
 					const {
@@ -1245,10 +1245,10 @@
 			}
 			const x = () => {},
 				g = Object(c.c)({
-					currentUser: p.k,
-					isNightMode: p.db,
-					shouldHideNSFW: p.F,
-					user: p.Ab,
+					currentUser: p.l,
+					isNightMode: p.eb,
+					shouldHideNSFW: p.G,
+					user: p.Bb,
 					isProfileAvatarChangeFixEnabled: O.a
 				}),
 				h = Object(s.b)(g);
@@ -3426,12 +3426,12 @@
 				a = n("./src/reddit/selectors/platform.ts"),
 				d = n("./src/reddit/selectors/user.ts");
 			const u = () => !0,
-				l = Object(r.a)(d.X, d.O, (e, t) => !(e || t)),
+				l = Object(r.a)(d.Y, d.P, (e, t) => !(e || t)),
 				b = e => {
 					if (!l(e)) return;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: u,
-						experimentName: i.Id,
+						experimentName: i.Hd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -3454,9 +3454,9 @@
 				},
 				m = e => !!b(e) && Object(s.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: i.Jd,
+					experimentName: i.Id,
 					expEventOverride: !1
-				}) !== i.Kd.Readonly
+				}) !== i.Jd.Readonly
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -3485,7 +3485,7 @@
 					if (!Object(u.n)(e, {
 							subredditId: t
 						})) return;
-					if (Object(f.N)(e)) return I(e);
+					if (Object(f.O)(e)) return I(e);
 					const n = Object(b.H)(e, {
 						identifier: {
 							id: t,
@@ -3497,7 +3497,7 @@
 					return r ? r * o.Tb < 1639443600180 ? void 0 : I(e) : void 0
 				},
 				I = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.ee,
+					experimentName: i.fe,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3624,4 +3624,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.691db0a1c557bf0a8262.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.133ad63e5e3564162004.js.map

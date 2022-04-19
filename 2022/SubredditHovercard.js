@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditHovercard.728dfc294488a77c0f55.js
-// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditHovercard.98a9efa51932a730de42.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditHovercard"], {
 		"./src/reddit/components/CommunityType/index.m.less": function(e, t, s) {
@@ -362,11 +362,11 @@
 			};
 			const V = Object(p.c)({
 				activeTooltipId: v.a,
-				hideNSFWPref: h.F,
+				hideNSFWPref: h.G,
 				subreddit: b.y,
 				subredditAboutInfo: b.v
 			});
-			var Q = Object(u.b)(V, e => ({
+			var G = Object(u.b)(V, e => ({
 				onHideTooltip: () => e(Object(m.i)())
 			}))(Object(d.c)(e => r.a.createElement("div", {
 				className: e.className,
@@ -386,8 +386,8 @@
 				tooltipType: e.tooltipType,
 				shouldOpenNewTabOnClicks: e.shouldOpenNewTabOnClicks
 			}))));
-			const $ = "SubredditInfoTooltip";
-			class G extends r.a.Component {
+			const Q = "SubredditInfoTooltip";
+			class $ extends r.a.Component {
 				constructor() {
 					super(...arguments), this.sendEvent = () => this.props.sendEvent(c(this.props.subredditName, this.props.postId))
 				}
@@ -397,7 +397,7 @@
 					} = this, t = Object(i.b)({
 						itemId: e.postId,
 						subredditName: e.subredditName,
-						tooltipIdPrefix: $,
+						tooltipIdPrefix: Q,
 						tooltipType: e.tooltipType
 					}), s = `${t}-hover-id`;
 					return r.a.createElement(n.b, {
@@ -407,7 +407,7 @@
 						authorOrSubredditName: e.subredditName,
 						tooltipId: t,
 						onShow: e.onShow
-					}, e.children, r.a.createElement(Q, {
+					}, e.children, r.a.createElement(G, {
 						className: e.className,
 						hoverId: s,
 						postId: e.postId,
@@ -419,7 +419,7 @@
 					}))
 				}
 			}
-			t.default = Object(d.c)(G)
+			t.default = Object(d.c)($)
 		},
 		"./src/reddit/components/Hovercards/helpers.m.less": function(e, t, s) {
 			e.exports = {
@@ -872,4 +872,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.728dfc294488a77c0f55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditHovercard.98a9efa51932a730de42.js.map

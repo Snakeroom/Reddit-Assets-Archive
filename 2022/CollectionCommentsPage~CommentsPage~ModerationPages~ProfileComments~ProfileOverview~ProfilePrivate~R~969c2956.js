@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.0af26c07bced08a94455.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.d1e3a43214c7d294c6cb.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -964,7 +964,7 @@
 					isChatPost: O.d,
 					isPostSEOEligible: _.e,
 					postPermalink: k.F,
-					shouldOpenPostInNewTab: j.jb,
+					shouldOpenPostInNewTab: j.kb,
 					isBlockingInterstitialEnabled: v.b,
 					isBlockingInterstitialV2Enabled: v.c
 				})),
@@ -1627,7 +1627,7 @@
 					activeModalId: de.a,
 					claimedFreeAward: E.b,
 					layout: U.R,
-					userIsOp: K.Db,
+					userIsOp: K.Eb,
 					subreddit: U.r,
 					isBlockedUserBannerEnabled: (e, t) => {
 						let {
@@ -2587,7 +2587,7 @@
 						subredditId: s
 					}) : void 0
 				},
-				user: y.k
+				user: y.l
 			});
 			class D extends i.a.PureComponent {
 				constructor() {
@@ -3230,7 +3230,7 @@
 						} = t;
 						return Object(A.E)(e, {
 							pageLayer: r
-						}) && s && o && Object(re.Bb)(e, {
+						}) && s && o && Object(re.Cb)(e, {
 							userName: n.author
 						})
 					},
@@ -4965,7 +4965,7 @@
 				r = s("./src/reddit/selectors/runTimeEnvVars.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			const a = e => !!Object(r.b)(e) || Object(n.c)(e, {
-				experimentEligibilitySelector: i.Q,
+				experimentEligibilitySelector: i.R,
 				experimentName: o.l
 			}) === o.f.Enabled
 		},
@@ -4979,13 +4979,13 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
-				experimentEligibilitySelector: i.Q,
+				experimentEligibilitySelector: i.R,
 				experimentName: n.hc
-			}), e => e === n.pd)
+			}), e => e === n.od)
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
 			e.exports = JSON.parse('{"id":"5ee520f9aa60"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.0af26c07bced08a94455.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.d1e3a43214c7d294c6cb.js.map

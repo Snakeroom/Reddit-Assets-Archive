@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.538bb372350d16dfb728.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.3256112b57994b59f6ca.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -952,7 +952,7 @@
 					if (!R && !f) return;
 					const C = f ? p.features.comments.models[e] : p.posts.models[e];
 					if (!C) return;
-					if (!Object(_.Q)(o())) return s(Object(r.j)()), void s(Object(a.k)({
+					if (!Object(_.R)(o())) return s(Object(r.j)()), void s(Object(a.k)({
 						actionSource: a.a.Report,
 						redirectUrl: C.permalink,
 						thingId: e
@@ -1123,7 +1123,7 @@
 						apiContext: d
 					} = o;
 					const u = n(),
-						p = Object(c.k)(u),
+						p = Object(c.l)(u),
 						m = p ? p.id : void 0,
 						h = u.user.blocked.data.filter(t => t.name === e)[0];
 					m && (t(g({
@@ -2215,7 +2215,7 @@
 						(r ? r.author : a ? a.author : null) || t.author;
 						n.name
 					}),
-					isNightmodeOn: M.db,
+					isNightmodeOn: M.eb,
 					isTalkReportingAllowed: L.B,
 					locale: A.i
 				}),
@@ -3952,19 +3952,19 @@
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.n
-					}) === s.pd
+					}) === s.od
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.o
-					}) === s.pd
+					}) === s.od
 				},
 				l = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
 						experimentName: s.j
-					}) === s.pd
+					}) === s.od
 				}
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, n) {
@@ -3978,11 +3978,11 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
 			const a = e => s.c.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: r.Q,
+					experimentEligibilitySelector: r.R,
 					experimentName: s.i
 				}),
 				i = e => s.e.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: r.Q,
+					experimentEligibilitySelector: r.R,
 					experimentName: s.m
 				})
 		},
@@ -4012,4 +4012,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.538bb372350d16dfb728.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.3256112b57994b59f6ca.js.map

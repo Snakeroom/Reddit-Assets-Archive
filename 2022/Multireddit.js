@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.a29b7417823d843f4198.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.5d41e735616895d18fec.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
@@ -415,7 +415,7 @@
 				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(g.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(y.a)(Object(g.a)(e).post, T.a.black, T.a.white) : e.textColor === v.e.Dark ? T.a.black : T.a.white,
 				W = p.a.wrapped(P, "TextFlair", j.a),
 				H = p.a.wrapped(A, "RichTextFlair", j.a),
-				V = e => {
+				Z = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -425,8 +425,8 @@
 							return Object(i.i)(.1, Object(g.a)(s()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				Z = p.a.wrapped(e => {
-					const t = V(e),
+				V = p.a.wrapped(e => {
+					const t = Z(e),
 						n = a.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -504,7 +504,7 @@
 						});
 					case v.f.Nsfw:
 					case v.f.Spoiler:
-						return a.a.createElement(Z, {
+						return a.a.createElement(V, {
 							className: t,
 							text: o.text,
 							type: o.type
@@ -917,10 +917,10 @@
 				}).apply(this, arguments)
 			}
 			const h = Object(c.c)({
-					currentUser: l.k,
-					isNightMode: l.db,
-					isPresenceUserPrefEnabled: l.V,
-					shouldHideNSFW: l.F
+					currentUser: l.l,
+					isNightMode: l.eb,
+					isPresenceUserPrefEnabled: l.W,
+					shouldHideNSFW: l.G
 				}),
 				E = Object(i.b)(h);
 			t.a = E(e => {
@@ -1349,4 +1349,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.a29b7417823d843f4198.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.5d41e735616895d18fec.js.map

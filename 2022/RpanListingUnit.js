@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.ae69376e4219c895f8e6.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.ac62f7912cbb65ef5c9c.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -44,16 +44,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Yd
+					experimentName: u.Zd
 				});
-				return Object(u.If)(t) ? void 0 : t
+				return Object(u.Jf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.Zd
+					experimentName: u.ae
 				});
-				return Object(u.If)(t) ? void 0 : t
-			}, (e, t) => e === u.ae.Enabled && t === u.ae.Enabled);
+				return Object(u.Jf)(t) ? void 0 : t
+			}, (e, t) => e === u.be.Enabled && t === u.be.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const E = e => {
@@ -706,11 +706,11 @@
 				K = s.n(J);
 			const {
 				fbt: q
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, z = l.sc, $ = l.sc, Q = Object(c.a)(U.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, z = l.sc, $ = l.sc, X = Object(c.a)(U.a, {
 				playerName: "RPAN DU Video Player"
-			}), X = Object(i.b)(() => Object(o.c)({
+			}), Q = Object(i.b)(() => Object(o.c)({
 				autoplay: A.b,
-				isLoggedIn: A.Q,
+				isLoggedIn: A.R,
 				isOverlayOpen: T.i,
 				location: (e, t) => {
 					let {
@@ -1055,7 +1055,7 @@
 					const s = 1e3 * t.broadcast_time,
 						n = t.post.id,
 						i = t.post.title;
-					return r.a.createElement(Q, {
+					return r.a.createElement(X, {
 						url: t.stream.hls_url,
 						autoplay: e,
 						controls: !1,
@@ -1216,7 +1216,7 @@
 						name: "hide"
 					})))
 				};
-			t.default = X(Object(V.c)(se))
+			t.default = Q(Object(V.c)(se))
 		},
 		"./src/reddit/controls/MetaSeparator/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1873,19 +1873,19 @@
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: n.n
-					}) === n.pd
+					}) === n.od
 				},
 				a = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: n.o
-					}) === n.pd
+					}) === n.od
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: r.a,
 						experimentName: n.j
-					}) === n.pd
+					}) === n.od
 				}
 		},
 		"./src/reddit/selectors/experiments/videoReactions.ts": function(e, t, s) {
@@ -1901,12 +1901,12 @@
 			const o = e => Object(r.c)(e, {
 					experimentName: n.pb,
 					experimentEligibilitySelector: i.e
-				}) === n.pd,
+				}) === n.od,
 				a = e => Object(r.c)(e, {
 					experimentName: n.Wb,
 					experimentEligibilitySelector: r.a
-				}) === n.pd
+				}) === n.od
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.ae69376e4219c895f8e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.ac62f7912cbb65ef5c9c.js.map

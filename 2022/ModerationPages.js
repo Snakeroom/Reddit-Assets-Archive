@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.586c5edc8c713cf2856c.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.5639bfed41aca80a4f8f.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -261,7 +261,7 @@
 						var o;
 						try {
 							const r = n(),
-								i = null === (o = Object(c.k)(r)) || void 0 === o ? void 0 : o.id;
+								i = null === (o = Object(c.l)(r)) || void 0 === o ? void 0 : o.id;
 							if (!i) throw new Error("Failed to get current user during emoji upload");
 							const d = await Object(l.h)(s);
 							if (!d) throw new Error("Cannot determine file mimeType");
@@ -1081,7 +1081,7 @@
 					if (n) return;
 					a || s && !n || await t(Object(I.subredditDataRequested)(e, k, {}))
 				} else C && await t(Object(P.e)(C));
-				if (!Object(Ee.Q)(s()) && _ !== o.hc.SubredditRules && _ !== o.hc.Contributors) return void Object(m.a)(t, s());
+				if (!Object(Ee.R)(s()) && _ !== o.hc.SubredditRules && _ !== o.hc.Contributors) return void Object(m.a)(t, s());
 				if (Object(p.i)(s(), !0, k, C), !_) return;
 				let G, K, Q, Y, X, Z, J, $, ee, te = !1;
 				switch (_) {
@@ -1165,7 +1165,7 @@
 				}
 				const se = s(),
 					ne = !!k && Object(be.jb)(se),
-					ae = Object(Ee.N)(se),
+					ae = Object(Ee.O)(se),
 					oe = k ? Object(y.W)(se, {
 						subredditName: k.toLowerCase()
 					}) : Object(ge.q)(se, {
@@ -2265,7 +2265,7 @@
 					},
 					searchPending: e => !!e.pages.modHub.approvedSubmitters.search.api.pending,
 					searchResult: e => e.pages.modHub.approvedSubmitters.search.result,
-					currentUser: w.k
+					currentUser: w.l
 				}),
 				D = Object(i.b)(F, (e, t) => {
 					let {
@@ -2750,7 +2750,7 @@
 					} = e;
 					const {
 						audioRoom: s
-					} = t, o = () => Math.floor(10 * Math.random() + 1), i = Object(g.e)(f.db), [d, l] = Object(n.useState)(!1), [c, m] = Object(n.useState)(o());
+					} = t, o = () => Math.floor(10 * Math.random() + 1), i = Object(g.e)(f.eb), [d, l] = Object(n.useState)(!1), [c, m] = Object(n.useState)(o());
 					return Object(n.useEffect)(() => {
 						const e = setInterval(() => {
 							l(!0), setTimeout(() => l(!1), 3500), m(o())
@@ -5754,7 +5754,7 @@
 				allowChatPostCreation: (e, t) => Object(M.b)(e, t.subredditId),
 				isBroadcastingEnabled: (e, t) => Object(P.c)(e, t.subredditId),
 				isChatPostsCreationEnabled: (e, t) => Object(M.c)(e, t.subredditId),
-				isEmployee: D.N,
+				isEmployee: D.O,
 				notificationSettings: A.b,
 				restrictions: R.n,
 				settings: (e, t) => Object(R.V)(e, t.subredditId),
@@ -12747,7 +12747,7 @@
 					currentPageUrl: v.f
 				}),
 				Be = Object(d.c)({
-					currentUser: N.k,
+					currentUser: N.l,
 					nextAfterToken: j.k,
 					nextAfterEditableToken: j.c,
 					nextBeforeToken: j.l,
@@ -14631,7 +14631,7 @@
 				submitRemovalReason: (t, s, n, a, o) => e(Object(l.submitRemovalReason)(t, s, n, a, o))
 			}), I = Object(r.c)({
 				currentUserName: e => {
-					const t = Object(C.k)(e);
+					const t = Object(C.l)(e);
 					if (t) return t.displayText
 				},
 				isLoading: v.a,
@@ -16283,7 +16283,7 @@
 				ce = f.a.div("TickText", U.a),
 				me = f.a.div("PreSubText", U.a),
 				ue = Object(i.c)({
-					isNightModeOn: D.db
+					isNightModeOn: D.eb
 				}),
 				pe = Object(o.b)(ue)(e => a.a.createElement(Y, {
 					last: e.last,
@@ -17857,10 +17857,10 @@
 					error: B.f,
 					isCreatePending: B.j,
 					isEmailInviteExperimentEnabled: U.a,
-					isEmployee: W.N,
+					isEmployee: W.O,
 					crosspostId: B.i,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(W.pb)(e),
-					userIsSuspended: W.X,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(W.qb)(e),
+					userIsSuspended: W.Y,
 					allTags: H.e,
 					existingTags: H.f,
 					newTags: H.g,
@@ -19220,7 +19220,7 @@
 					isChatPost: u.d,
 					isCurrentUserProfilePost: b.l,
 					isExpanded: b.m,
-					isLoggedIn: f.Q,
+					isLoggedIn: f.R,
 					showPromotedCTA: g.a,
 					moderatorPermissions: p.m,
 					modModeEnabled: l.T,
@@ -22571,7 +22571,7 @@
 						profileName: t.match.params.profileName
 					})
 				}),
-				Xe = Object(i.b)(() => Object(d.a)(qe, I.N, E.R, Ke, I.kb, S.jb, Ye, Qe, Ge, (e, t) => t.match.params.pageName, e => e, (e, t, s, n, a, o, r, i, d, l, c) => {
+				Xe = Object(i.b)(() => Object(d.a)(qe, I.O, E.R, Ke, I.lb, S.jb, Ye, Qe, Ge, (e, t) => t.match.params.pageName, e => e, (e, t, s, n, a, o, r, i, d, l, c) => {
 					let {
 						contentGateInfo: m
 					} = e, {
@@ -22690,9 +22690,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.od
+					experimentName: n.nd
 				});
-				return !(!t || Object(n.If)(t))
+				return !(!t || Object(n.Jf)(t))
 			}
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
@@ -22765,10 +22765,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.Ce,
+					experimentName: a.De,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.Ke.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.Le.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(n.a)(r.G, i, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -23014,4 +23014,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.586c5edc8c713cf2856c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.5639bfed41aca80a4f8f.js.map

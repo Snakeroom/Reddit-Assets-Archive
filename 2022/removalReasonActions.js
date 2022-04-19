@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.09765a7866f155d03594.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.20b6ca28e68b9b87845c.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, n) {
@@ -176,7 +176,7 @@
 					return async (e, o) => {
 						const s = o();
 						if (!!s.features.comments.drafts[n])
-							if (Object(Q.S)(s) && t) {
+							if (Object(Q.T)(s) && t) {
 								const o = Z({
 									hasFocus: t,
 									draftKey: n
@@ -359,7 +359,7 @@
 					return async (e, s) => {
 						const r = s(),
 							m = Object(c.a)(B.c.replyToComment, n);
-						if (!Object(Q.Q)(s())) return e(Object(d.j)()), void e(Object(i.k)({
+						if (!Object(Q.R)(s())) return e(Object(d.j)()), void e(Object(i.k)({
 							actionSource: i.a.Reply,
 							redirectUrl: Object($.m)(s(), {
 								commentId: n
@@ -399,7 +399,7 @@
 								draftType: B.c.replyToComment,
 								rtJson: O,
 								text: ""
-							}, Object(Q.S)(r)) {
+							}, Object(Q.T)(r)) {
 							const o = ue({
 								parentCommentId: n,
 								commentsPageKey: t,
@@ -669,7 +669,7 @@
 					let {
 						apiContext: r
 					} = s;
-					if (!Object(j.Q)(n())) return void t(Object(a.i)(m.a.LOGIN_MODAL_ID));
+					if (!Object(j.R)(n())) return void t(Object(a.i)(m.a.LOGIN_MODAL_ID));
 					const c = n().features.comments.models[e];
 					if (!c) return;
 					const d = c.isLocked ? l.l : l.e;
@@ -1780,4 +1780,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.09765a7866f155d03594.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.20b6ca28e68b9b87845c.js.map

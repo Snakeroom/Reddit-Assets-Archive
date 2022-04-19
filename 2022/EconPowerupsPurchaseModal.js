@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ba565380e4606c23ac7f.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.3d33ef8f8cee98c9df02.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -679,7 +679,7 @@
 							if (a && a.ok) {
 								const t = a.body.data.createEconPayment;
 								if (null === (m = null == t ? void 0 : t.errors) || void 0 === m ? void 0 : m.length) return e(Object(h.paypalApiError)(w(t.errors))), null;
-								const r = Object(y.k)(s());
+								const r = Object(y.l)(s());
 								if (t.ok) {
 									const {
 										status: e
@@ -1103,7 +1103,7 @@
 			const {
 				fbt: F
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), B = Object(i.c)({
-				currentUser: k.k,
+				currentUser: k.l,
 				isAnonymous: j.d,
 				powerupsCount: j.e,
 				productOffer: x.d,
@@ -1320,7 +1320,7 @@
 						subredditId: r
 					})), m = Object(o.e)(e => Object(x.b)(e, {
 						subredditId: r
-					})), p = Object(o.e)(_.w), f = Object(o.e)(_.m), b = Object(o.e)(k.k), [g, y] = Object(n.useState)(!1), v = f || p;
+					})), p = Object(o.e)(_.w), f = Object(o.e)(_.m), b = Object(o.e)(k.l), [g, y] = Object(n.useState)(!1), v = f || p;
 					return a.a.createElement(L.l, {
 						onClick: async () => {
 							if (!(s && c && u && m)) return;
@@ -1360,7 +1360,7 @@
 				fbt: se
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), ce = 100, ie = Object(i.c)({
 				isAnonymous: j.d,
-				isNightMode: k.db,
+				isNightMode: k.eb,
 				paypalErrorMessage: _.d,
 				powerups: j.k,
 				powerupsCount: j.e,
@@ -1689,7 +1689,7 @@
 				let {
 					space: t
 				} = e;
-				const r = Object(i.e)(d.db),
+				const r = Object(i.e)(d.eb),
 					s = t === n.MODAL,
 					l = t === n.INFEED_UNIT;
 				return c.a.createElement("div", {
@@ -3354,7 +3354,7 @@
 				p = r("./node_modules/react-redux/es/index.js"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				b = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(b.a)(f.Pc);
+			const h = Object(b.a)(f.Oc);
 			let g = null;
 
 			function y() {
@@ -3777,4 +3777,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ba565380e4606c23ac7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.3d33ef8f8cee98c9df02.js.map

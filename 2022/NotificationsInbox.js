@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.a537358c4e139b910248.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.fcdf899e969c45a472ac.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -20,7 +20,7 @@
 				b = n("./src/reddit/selectors/user.ts");
 			const f = () => async (e, t) => {
 				const n = t();
-				if (!(Object(b.Q)(n) || Object(b.P)(n))) return Object(d.a)(e, n);
+				if (!(Object(b.R)(n) || Object(b.Q)(n))) return Object(d.a)(e, n);
 				Object(u.b)(n) ? (e(p()), e(g()), await e(h())) : e(Object(i.c)("/"))
 			}, p = () => Object(a.k)({
 				actionSource: a.a.NotificationsInbox,
@@ -31,7 +31,7 @@
 				const n = t(),
 					i = Object(m.g)(t()),
 					s = !(!i || !i.length),
-					a = Object(b.Q)(n) || Object(b.P)(n);
+					a = Object(b.R)(n) || Object(b.Q)(n);
 				if (s || !a || !Object(u.b)(n)) return;
 				const o = {
 					first: 10
@@ -618,19 +618,19 @@
 			}
 			var A = Object(r.c)(F),
 				M = n("./src/reddit/selectors/appBadges.ts"),
-				U = n("./src/reddit/selectors/notificationsInbox.tsx"),
-				B = n("./src/reddit/selectors/tooltip.ts"),
-				R = n("./src/reddit/selectors/user.ts");
+				R = n("./src/reddit/selectors/notificationsInbox.tsx"),
+				U = n("./src/reddit/selectors/tooltip.ts"),
+				B = n("./src/reddit/selectors/user.ts");
 			const W = Object(l.c)({
-				activeOverflowMenuId: B.a,
-				cursor: U.c,
-				earlierNotifications: U.b,
-				hasNextPage: U.d,
+				activeOverflowMenuId: U.a,
+				cursor: R.c,
+				earlierNotifications: R.b,
+				hasNextPage: R.d,
 				inboxBadgeCount: M.g,
 				isInboxPostEmbedEnabled: O.a,
-				isPending: U.e,
-				todayNotifications: U.i,
-				userId: R.Cb
+				isPending: R.e,
+				todayNotifications: R.i,
+				userId: B.Db
 			});
 			var H = Object(d.b)(W, e => ({
 					clearMessageTabBadgeCount: () => e(Object(u.b)()),
@@ -743,4 +743,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.a537358c4e139b910248.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.fcdf899e969c45a472ac.js.map

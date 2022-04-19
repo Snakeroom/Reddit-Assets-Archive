@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.d64261ed9b154f6d25a9.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.55f1e474480392e37efb.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -499,8 +499,8 @@
 				X = n("./src/reddit/selectors/comments.ts"),
 				J = n("./src/reddit/selectors/commentSelector.ts"),
 				V = n("./src/reddit/selectors/platform.ts"),
-				Q = n("./src/reddit/selectors/posts.ts"),
-				G = n("./src/reddit/selectors/user.ts"),
+				G = n("./src/reddit/selectors/posts.ts"),
+				Q = n("./src/reddit/selectors/user.ts"),
 				Y = n("./src/reddit/actions/comment/index.ts"),
 				Z = n("./src/reddit/actions/comment/constants.ts");
 			const $ = Object(s.a)(Z.k),
@@ -512,7 +512,7 @@
 					return async (e, o) => {
 						const r = o();
 						if (!!r.features.comments.drafts[n])
-							if (Object(G.S)(r) && t) {
+							if (Object(Q.T)(r) && t) {
 								const o = $({
 									hasFocus: t,
 									draftKey: n
@@ -571,7 +571,7 @@
 							commentsPageKey: t,
 							draftKey: n
 						}));
-						const r = Object(Q.G)(b(), {
+						const r = Object(G.G)(b(), {
 							postId: e
 						});
 						u(Object(l.z)(r, f.a.CommentSubmitted))
@@ -695,7 +695,7 @@
 					return async (e, r) => {
 						const s = r(),
 							l = Object(i.a)(H.c.replyToComment, n);
-						if (!Object(G.Q)(r())) return e(Object(d.j)()), void e(Object(c.k)({
+						if (!Object(Q.R)(r())) return e(Object(d.j)()), void e(Object(c.k)({
 							actionSource: c.a.Reply,
 							redirectUrl: Object(X.m)(r(), {
 								commentId: n
@@ -735,7 +735,7 @@
 								draftType: H.c.replyToComment,
 								rtJson: h,
 								text: ""
-							}, Object(G.S)(s)) {
+							}, Object(Q.T)(s)) {
 							const o = me({
 								parentCommentId: n,
 								commentsPageKey: t,
@@ -1465,8 +1465,8 @@
 				X = n("./src/realtime/GQLSubscription/async.tsx"),
 				J = n("./src/reddit/components/UsersCountIndicator/constants.ts"),
 				V = n("./src/reddit/constants/componentSizes.ts"),
-				Q = n("./src/reddit/constants/componentTestIds.ts"),
-				G = n("./src/reddit/selectors/activeModalId.ts"),
+				G = n("./src/reddit/constants/componentTestIds.ts"),
+				Q = n("./src/reddit/selectors/activeModalId.ts"),
 				Y = n("./src/reddit/selectors/comments.ts"),
 				Z = n("./src/reddit/selectors/editorContent.ts"),
 				$ = n("./src/reddit/selectors/experiments/typingIndicators.ts"),
@@ -1492,7 +1492,7 @@
 				fe = 8,
 				xe = 16,
 				ge = Object(u.b)(() => Object(m.c)({
-					activeModalId: G.a,
+					activeModalId: Q.a,
 					userName: e => e.user.account ? Object(re.e)(e.user.account) : "",
 					pending: (e, t) => e.features.comments.submit.pending[t.draftKey],
 					draft: Y.i,
@@ -1663,7 +1663,7 @@
 						isUserTyping: A
 					} = this.state, N = Object(q.a)(l), W = d.draftType === oe.c.edit;
 					return c.a.createElement("div", {
-						"data-test-id": Q.b,
+						"data-test-id": G.b,
 						className: Object(U.a)(ie.a.Wrapper, r, {
 							[ie.a.isTopLevelComment]: k,
 							[ie.a.mExpanded]: j,
@@ -1995,7 +1995,7 @@
 			const X = 5,
 				J = "ProwerupsEmoji--FirstUploadStimulus",
 				V = 100;
-			const Q = Object(d.c)({
+			const G = Object(d.c)({
 				emotes: (e, t) => {
 					let {
 						subredditId: n
@@ -2029,7 +2029,7 @@
 					})
 				}
 			});
-			var G = Object(a.b)(Q)((function(e) {
+			var Q = Object(a.b)(G)((function(e) {
 					const {
 						controlsState: t,
 						emotes: n,
@@ -2137,7 +2137,7 @@
 					editorType: F.a.Comment
 				}, i.a.createElement("div", {
 					className: ne.a.powerupButtons
-				}, x && i.a.createElement(G, {
+				}, x && i.a.createElement(Q, {
 					controlsState: b,
 					subredditId: n && n.id,
 					onEmoteButtonClick: d
@@ -3215,7 +3215,7 @@
 					rteDraft: x.m,
 					subreddit: w.r,
 					uploads: e => e.uploads,
-					user: M.k,
+					user: M.l,
 					isCommentsPage: f.f
 				}),
 				U = Object(d.b)(H, (e, t) => ({
@@ -3595,10 +3595,10 @@
 				}).apply(this, arguments)
 			}
 			const f = Object(a.c)({
-					currentUser: c.k,
-					isNightMode: c.db,
-					isPresenceUserPrefEnabled: c.V,
-					shouldHideNSFW: c.F
+					currentUser: c.l,
+					isNightMode: c.eb,
+					isPresenceUserPrefEnabled: c.W,
+					shouldHideNSFW: c.G
 				}),
 				x = Object(i.b)(f);
 			t.a = x(e => {
@@ -4001,7 +4001,7 @@
 				r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
-			const a = Object(o.a)(i.Q, i.P, (e, t) => e || t),
+			const a = Object(o.a)(i.R, i.Q, (e, t) => e || t),
 				d = Object(o.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: r.I
@@ -4026,29 +4026,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.Cf
-					}) === o.pd
+						experimentName: o.Df
+					}) === o.od
 				},
 				d = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.Df
-					}) === o.pd
+						experimentName: o.Ef
+					}) === o.od
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.Bf
+						experimentName: o.Cf
 					});
-					return t === o.tf.TypingIndicators || t === o.tf.IndicatorsPlusCTA
+					return t === o.uf.TypingIndicators || t === o.uf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.Bf
+						experimentName: o.Cf
 					});
-					return (null == t ? void 0 : t.variant) === o.tf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.uf.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -4059,4 +4059,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.d64261ed9b154f6d25a9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.55f1e474480392e37efb.js.map

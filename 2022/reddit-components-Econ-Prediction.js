@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.4e682ec674061c86ca7b.js
-// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.862067a54d5eafd4b37b.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -528,7 +528,7 @@
 					post: t,
 					prediction: n
 				} = e;
-				const i = Object(s.e)(m.Cb),
+				const i = Object(s.e)(m.Db),
 					{
 						isLoading: a,
 						selectedVoteOption: c,
@@ -886,9 +886,9 @@
 					subredditId: o
 				} = e;
 				var i;
-				const c = Object(s.e)(m.db),
-					d = Object(s.e)(m.k),
-					l = Object(s.e)(m.F),
+				const c = Object(s.e)(m.eb),
+					d = Object(s.e)(m.l),
+					l = Object(s.e)(m.G),
 					u = Object(s.e)(e => Object(fe.f)(e, {
 						subredditId: o
 					}));
@@ -990,7 +990,7 @@
 					prediction: d.g,
 					post: u.G,
 					subredditOrProfile: u.U,
-					userId: m.Cb
+					userId: m.Db
 				}),
 				ke = Object(c.u)({
 					isCommentsPage: c.x,
@@ -2038,4 +2038,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.4e682ec674061c86ca7b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.862067a54d5eafd4b37b.js.map

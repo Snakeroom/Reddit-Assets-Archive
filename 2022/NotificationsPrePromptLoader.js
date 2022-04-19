@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.14eb196cd727199bebfe.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.f1b30ce7d31a8ac76c9d.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
 		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, n) {
@@ -12,8 +12,8 @@
 			"use strict";
 			n.r(t);
 			var r = n("./node_modules/react/index.js"),
-				i = n.n(r),
-				o = n("./node_modules/react-redux/es/index.js"),
+				o = n.n(r),
+				i = n("./node_modules/react-redux/es/index.js"),
 				s = n("./src/higherOrderComponents/asModal/index.tsx"),
 				c = n("./src/lib/notifications/constants.ts"),
 				a = n("./src/reddit/constants/experiments.ts"),
@@ -23,7 +23,7 @@
 				return Object(d.c)(e, {
 					experimentEligibilitySelector: d.a,
 					experimentName: a.tb
-				}) === a.pd
+				}) === a.od
 			}
 			var m = n("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
 				p = n.n(m);
@@ -39,9 +39,9 @@
 			}
 			const _ = Object(s.a)(() => null);
 			t.default = e => {
-				const t = Object(o.d)(),
-					n = Object(o.e)(l);
-				return i.a.createElement(_, u({
+				const t = Object(i.d)(),
+					n = Object(i.e)(l);
+				return o.a.createElement(_, u({
 					onOverlayClick: () => {
 						n && t(Object(c.k)())
 					}
@@ -53,4 +53,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.14eb196cd727199bebfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.f1b30ce7d31a8ac76c9d.js.map

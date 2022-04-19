@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1400080f622f67602725.js
-// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1b2b704b8beccfbdee8b.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index-tsx"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -586,7 +586,7 @@
 							d = Object(b.g)(e, {
 								subredditId: a
 							}),
-							l = Object(b.w)(e) && Object(m.v)(e);
+							l = Object(b.w)(e) && Object(m.w)(e);
 						return i || o ? c && n && Object(_.i)(e) ? s.UNLOCKED_COMMUNITY_GEAR : l ? s.UNLOCKED_UNAPPLIED_FROM_PREMIUM : s.HIDDEN : d && n && Object(_.i)(e) ? s.POWERUPS_COMMUNITY_GEAR : s.POWERUPS_DEFAULT
 					})(e, {
 						subredditId: E.id,
@@ -903,7 +903,7 @@
 				d = (e, t) => a => {
 					const {
 						id: s
-					} = Object(n.Ab)(a, {
+					} = Object(n.Bb)(a, {
 						userName: t
 					});
 					return {
@@ -1381,4 +1381,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1400080f622f67602725.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index-tsx.1b2b704b8beccfbdee8b.js.map

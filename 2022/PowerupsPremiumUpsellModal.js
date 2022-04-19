@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.357b192b2d9035ad3e15.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.018a655abf4a1d9f61fc.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal", "GoldPurchasePaymentActions", "Premium"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -671,7 +671,7 @@
 							if (o && o.ok) {
 								const t = o.body.data.createEconPayment;
 								if (null === (p = null == t ? void 0 : t.errors) || void 0 === p ? void 0 : p.length) return e(Object(y.paypalApiError)(_(t.errors))), null;
-								const r = Object(g.k)(s());
+								const r = Object(g.l)(s());
 								if (t.ok) {
 									const {
 										status: e
@@ -1235,7 +1235,7 @@
 						} = a;
 						t(g());
 						const u = r(),
-							l = Object(i.Q)(u);
+							l = Object(i.R)(u);
 						try {
 							const r = !l,
 								n = await Object(c.b)({
@@ -1693,7 +1693,7 @@
 				let {
 					space: t
 				} = e;
-				const r = Object(i.e)(d.db),
+				const r = Object(i.e)(d.eb),
 					s = t === n.MODAL,
 					u = t === n.INFEED_UNIT;
 				return c.a.createElement("div", {
@@ -2897,4 +2897,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.357b192b2d9035ad3e15.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.018a655abf4a1d9f61fc.js.map

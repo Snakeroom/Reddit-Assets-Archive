@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.5ad0db2036cf48c97c7a.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.961c877ebc2d9e211c80.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -1088,8 +1088,8 @@
 				y = c.a.div("OptionHeader", R.a),
 				S = c.a.div("OptionDescription", R.a),
 				P = c.a.header("Header", m.a),
-				k = c.a.footer("Footer", m.a),
-				F = c.a.div("Description", m.a),
+				F = c.a.footer("Footer", m.a),
+				k = c.a.div("Description", m.a),
 				O = c.a.a("Link", m.a),
 				w = c.a.a("RedirectToRedditLink", m.a),
 				N = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/what-report-abuse";
@@ -1104,9 +1104,9 @@
 						hk: "1bc2jS"
 					})))], {
 						hk: "3sQZ0g"
-					}))), this.renderWithoutOptions = () => s.a.createElement(s.a.Fragment, null, s.a.createElement(F, null, p.fbt._("We will investigate the content you reported and reach out if we have any additional questions.", null, {
+					}))), this.renderWithoutOptions = () => s.a.createElement(s.a.Fragment, null, s.a.createElement(k, null, p.fbt._("We will investigate the content you reported and reach out if we have any additional questions.", null, {
 						hk: "2tRkyQ"
-					})), s.a.createElement(k, null, s.a.createElement(w, {
+					})), s.a.createElement(F, null, s.a.createElement(w, {
 						href: "/"
 					}, p.fbt._("Redirect back to your home in Reddit universe", null, {
 						hk: "1pMLva"
@@ -1120,7 +1120,7 @@
 						className: e.className
 					}, s.a.createElement(P, null, p.fbt._("Thank you for your report.", null, {
 						hk: "2l8iOp"
-					})), e.chosenRule.isAbuseOfReportButton ? s.a.createElement(s.a.Fragment, null, s.a.createElement(F, null, p.fbt._("We've received your report. Here are some things you can do:", null, {
+					})), e.chosenRule.isAbuseOfReportButton ? s.a.createElement(s.a.Fragment, null, s.a.createElement(k, null, p.fbt._("We've received your report. Here are some things you can do:", null, {
 						hk: "12EkwP"
 					})), this.renderAbuseOfReportButtonOption()) : this.renderWithoutOptions())
 				}
@@ -1592,13 +1592,13 @@
 				}
 			}
 			var Pe = n("./src/reddit/controls/Button/index.tsx"),
-				ke = n("./src/reddit/helpers/reportPage/index.ts"),
-				Fe = n("./src/reddit/layout/row/Inline/index.tsx"),
+				Fe = n("./src/reddit/helpers/reportPage/index.ts"),
+				ke = n("./src/reddit/layout/row/Inline/index.tsx"),
 				Oe = n("./src/reddit/models/RulesSequence/index.ts"),
 				we = n("./src/reddit/components/ReportPage/FirstPage/index.m.less"),
 				Ne = n.n(we);
 			const Ie = c.a.header("Header", m.a),
-				Te = c.a.wrapped(Fe.a, "Footer", Ne.a),
+				Te = c.a.wrapped(ke.a, "Footer", Ne.a),
 				Ue = c.a.wrapped(Pe.l, "SubmitButton", Ne.a),
 				Le = Object(o.c)({
 					initialReason: e => e.reportPage.initialReason
@@ -1623,7 +1623,7 @@
 				}
 				UNSAFE_componentWillReceiveProps(e) {
 					if (e.reasons && e.reasons.length && e.initialReason && !this.state.gotInitialReason) {
-						const t = Object(ke.a)(e.reasons, e.initialReason);
+						const t = Object(Fe.a)(e.reasons, e.initialReason);
 						this.setState({
 							gotInitialReason: !0,
 							rulesSequence: t
@@ -1701,7 +1701,7 @@
 			const {
 				fbt: We
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ze = Object(o.c)({
-				currentUser: Be.k,
+				currentUser: Be.l,
 				reportPageRules: e => e.reportPage.reportPageRules,
 				crisisFlowEnabled: He.b
 			}), Ze = Object(a.b)(ze);
@@ -1730,7 +1730,7 @@
 						let t = !0,
 							n = {};
 						if (void 0 !== e.thingUrl) {
-							const r = new RegExp(ke.d);
+							const r = new RegExp(Fe.d);
 							let s = !0;
 							"" === e.thingUrl.trim() && e.reason.thingIsOptional || (s = r.test(e.thingUrl.trim())), t = t && s, n = {
 								...n,
@@ -1738,14 +1738,14 @@
 							}
 						}
 						if (void 0 !== e.subredditName) {
-							const r = new RegExp(ke.c).test(e.subredditName.trim());
+							const r = new RegExp(Fe.c).test(e.subredditName.trim());
 							t = t && r, n = {
 								...n,
 								subredditName: r
 							}
 						}
 						if (e.usernames && e.usernames.length) {
-							const r = new RegExp(ke.e);
+							const r = new RegExp(Fe.e);
 							let s = {};
 							for (let n = 0; n < e.usernames.length; n++) {
 								const a = e.usernames[n].trim(),
@@ -1916,11 +1916,11 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/user.ts");
 			const o = e => r.c.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: a.Q,
+					experimentEligibilitySelector: a.R,
 					experimentName: r.i
 				}),
 				i = e => r.e.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: a.Q,
+					experimentEligibilitySelector: a.R,
 					experimentName: r.m
 				})
 		},
@@ -1929,4 +1929,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.5ad0db2036cf48c97c7a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.961c877ebc2d9e211c80.js.map

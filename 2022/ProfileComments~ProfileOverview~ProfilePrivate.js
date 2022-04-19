@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.a4d773927f35f033750b.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.859cb6715316ac2e15a1.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -150,7 +150,7 @@
 					} = e;
 					const {
 						audioRoom: s
-					} = t, r = () => Math.floor(10 * Math.random() + 1), a = Object(x.e)(f.db), [d, c] = Object(n.useState)(!1), [l, m] = Object(n.useState)(r());
+					} = t, r = () => Math.floor(10 * Math.random() + 1), a = Object(x.e)(f.eb), [d, c] = Object(n.useState)(!1), [l, m] = Object(n.useState)(r());
 					return Object(n.useEffect)(() => {
 						const e = setInterval(() => {
 							c(!0), setTimeout(() => c(!1), 3500), m(r())
@@ -210,8 +210,8 @@
 				q = s("./src/reddit/constants/postLayout.ts"),
 				K = s("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
 				Z = s("./src/reddit/helpers/hasModFullPermissions/index.ts"),
-				Q = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
-				Y = s("./src/reddit/helpers/localStorage/index.ts"),
+				Y = s("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				Q = s("./src/reddit/helpers/localStorage/index.ts"),
 				J = s("./src/reddit/helpers/search/renderMedia.tsx"),
 				X = s("./src/reddit/helpers/styles/mixins/index.tsx"),
 				$ = s("./src/reddit/helpers/trackers/creatorStats.ts"),
@@ -275,10 +275,10 @@
 				}, [x, be, fe.id, Pe]);
 				const Te = ve ? void 0 : g,
 					Me = s || void 0,
-					Le = Object(Q.a)(le),
+					Le = Object(Y.a)(le),
 					Re = Object(K.a)(le),
 					Fe = Object(Z.a)(le),
-					Ae = me && Q.a,
+					Ae = me && Y.a,
 					De = Object(S.d)(fe),
 					Be = Object(P.c)(fe),
 					We = !!fe.media && fe.media.type === V.o.RTJSON,
@@ -299,9 +299,9 @@
 					{
 						source: Ke
 					} = qe,
-					[Ze, Qe] = Object(n.useState)(!1),
-					Ye = Object(n.useCallback)(() => {
-						Qe(!Ze), Object(Y.Mb)(), Se(Object($.d)(Ee))
+					[Ze, Ye] = Object(n.useState)(!1),
+					Qe = Object(n.useCallback)(() => {
+						Ye(!Ze), Object(Q.Mb)(), Se(Object($.d)(Ee))
 					}, [Ze, Ee, Se]);
 				let Je = o.a.createElement(z.a, {
 					className: ne.a.classicThumbnail,
@@ -414,7 +414,7 @@
 					hostPostData: y,
 					isOverlay: !!ae,
 					modModeEnabled: me,
-					onClickInsightsButton: Ye,
+					onClickInsightsButton: Qe,
 					onIgnoreReports: ue,
 					onOpenReportsDropdown: he,
 					post: fe,
@@ -751,8 +751,8 @@
 				q = s("./src/reddit/models/PostDraft/index.ts"),
 				K = s("./src/reddit/models/Comment/index.ts"),
 				Z = s("./src/reddit/selectors/activeModalId.ts"),
-				Q = s("./src/reddit/selectors/comments.ts"),
-				Y = s("./src/reddit/selectors/moderatorPermissions.ts"),
+				Y = s("./src/reddit/selectors/comments.ts"),
+				Q = s("./src/reddit/selectors/moderatorPermissions.ts"),
 				J = s("./src/reddit/selectors/posts.ts"),
 				X = s("./src/reddit/selectors/tooltip.ts"),
 				$ = s("./src/reddit/selectors/experiments/antievil/index.tsx"),
@@ -798,20 +798,20 @@
 						let {
 							comment: s
 						} = t;
-						return Object(Q.C)(e, {
+						return Object(Y.C)(e, {
 							commentId: s.postId
 						})
 					},
-					isLoggedIn: te.Q,
+					isLoggedIn: te.R,
 					moderatorPermissions: (e, t) => {
 						let {
 							comment: s
 						} = t;
-						return Object(Y.n)(e, {
+						return Object(Q.n)(e, {
 							subredditId: s.subredditId
 						})
 					},
-					currentUser: te.k,
+					currentUser: te.l,
 					modModeEnabled: H.T,
 					postIsLocked: (e, t) => {
 						let {
@@ -825,7 +825,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(Q.m)(e, {
+						return Object(Y.m)(e, {
 							commentId: s.id
 						})
 					},
@@ -1092,7 +1092,7 @@
 				He = xe.a.div("CommentBody", De.a),
 				Ue = Object(r.b)(() => Object(i.c)({
 					comment: (e, t) => Object(Fe.b)(e, t),
-					flair: Q.e
+					flair: Y.e
 				})),
 				Ve = Object(c.b)(e => ({
 					renderingObjectInfo: e.comment
@@ -2505,7 +2505,7 @@
 				}),
 				L = Object(u.c)({
 					isDropdownMenuOpen: e => Object(j.a)(e) === F,
-					isOwnProfile: (e, t) => Object(N.W)(e, t.profileName),
+					isOwnProfile: (e, t) => Object(N.X)(e, t.profileName),
 					isSnoovatar30Enabled: w.d.snoovatar30,
 					isSubscriptionsPinned: S.b
 				}),
@@ -3089,7 +3089,7 @@
 				b = s("./src/reddit/components/SidebarProfileModeratedSubreddits/index.m.less"),
 				x = s.n(b);
 			const f = Object(a.c)({
-					currentUser: h.k,
+					currentUser: h.l,
 					moderated: p.n,
 					subscriptions: u.e,
 					hasMoreModerated: p.d,
@@ -3262,7 +3262,7 @@
 					let {
 						profileName: s
 					} = t;
-					const n = Object(p.Ab)(e, {
+					const n = Object(p.Bb)(e, {
 							userName: s
 						}),
 						o = Object(m.f)(e);
@@ -3695,8 +3695,8 @@
 					onClick: e.onBottomButtonClick
 				}, e.bottomButtonText)))),
 				j = Object(d.c)({
-					hideNSFWPref: C.F,
-					nightmode: C.db
+					hideNSFWPref: C.G,
+					nightmode: C.eb
 				}),
 				N = Object(i.b)(j)(e => r.a.createElement("div", {
 					className: Object(c.a)(O.a.communityItemContainer, {
@@ -3901,7 +3901,7 @@
 					let {
 						subredditOrProfile: s
 					} = t;
-					return s.type === l.a.PROFILE ? Object(h.Ab)(e, {
+					return s.type === l.a.PROFILE ? Object(h.Bb)(e, {
 						userName: s.name
 					}) : null
 				}
@@ -3982,10 +3982,10 @@
 						n = t.redditStyle || Object(x.l)(e, {
 							subredditId: s
 						}),
-						o = Object(f.db)(e);
+						o = Object(f.eb)(e);
 					return n || o
 				},
-				nigtmode: f.db,
+				nigtmode: f.eb,
 				subredditId: m.n,
 				topPostVariant: b.d
 			}));
@@ -4095,7 +4095,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: b.l,
 					isExpanded: b.m,
-					isLoggedIn: f.Q,
+					isLoggedIn: f.R,
 					showPromotedCTA: x.a,
 					moderatorPermissions: u.m,
 					modModeEnabled: c.T,
@@ -4601,10 +4601,10 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.Ce,
+					experimentName: o.De,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === o.Ke.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === o.Le.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				c = Object(n.a)(i.G, a, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, a, (e, t) => d(e, t))
 		},
@@ -4622,4 +4622,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.a4d773927f35f033750b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.859cb6715316ac2e15a1.js.map

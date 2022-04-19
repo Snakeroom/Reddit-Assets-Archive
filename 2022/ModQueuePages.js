@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.ba0762f96ec3cb4de483.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.3cd170dba6a833b7fc4f.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, s) {
@@ -1599,7 +1599,7 @@
 				b = s.n(p);
 			const h = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				x = Object(o.b)(() => Object(a.c)({
-					isNightmodeOn: u.db
+					isNightmodeOn: u.eb
 				}));
 			t.a = x(e => {
 				const t = {
@@ -1696,7 +1696,7 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(a.b)(() => Object(d.a)(E.F, C.jb, (e, t) => {
+				N = Object(a.b)(() => Object(d.a)(E.F, C.kb, (e, t) => {
 					let {
 						isSponsored: s,
 						postId: n
@@ -4486,12 +4486,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case h.lf.SmIcon:
+						case h.mf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: a
 							});
-						case h.lf.SmIconHc:
+						case h.mf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4567,10 +4567,10 @@
 						n = t.redditStyle || Object(x.l)(e, {
 							subredditId: s
 						}),
-						r = Object(f.db)(e);
+						r = Object(f.eb)(e);
 					return n || r
 				},
-				nigtmode: f.db,
+				nigtmode: f.eb,
 				subredditId: m.n,
 				topPostVariant: h.d
 			}));
@@ -5656,12 +5656,12 @@
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.ff
+						experimentName: n.gf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === n.lf.SmIcon || t === n.lf.SmIconHc
+					return t === n.mf.SmIcon || t === n.mf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5687,4 +5687,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.ba0762f96ec3cb4de483.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.3cd170dba6a833b7fc4f.js.map

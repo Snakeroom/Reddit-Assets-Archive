@@ -1,120 +1,252 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.c1e2750efaebf28f3706.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.272bd2a7a711b5555e88.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
-		"./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less": function(e, t, a) {
+		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, n) {
 			e.exports = {
-				container: "_21z552gDZGIvH3ewNzPXWw",
-				allItemsClaimed: "_28X5CGnlbD1rpnRMaJsUc2",
-				isNotLarge: "_1YOB9GyYMcCe82cZEVbnF-",
-				picturePlaceholder: "_1cgOf4pia-N6GXO3hCF4Cw",
-				picture: "_3G7Z3fc_P9APszDIIU-DVV",
-				content: "SRWJIsg0tR6P750ETdJxX",
-				title: "_3HIlwwNgCIK08IKRUnuxH7",
-				description: "_2gaSV92NoIXBPb2oTYoEnr",
-				ctaButton: "_1GBzwGYQyfdH6Ejqj2eOvx"
+				buttonWidth: "ogOEj4x-0BpDZWeccJwxx",
+				ModalText: "_2YxEi97B6Nm7NCgLG6pCud",
+				modalText: "_2YxEi97B6Nm7NCgLG6pCud"
 			}
 		},
-		"./src/reddit/components/Econ/Marketplace/InFeedUnit/index.tsx": function(e, t, a) {
+		"./src/reddit/components/ConfirmUserActionModal/index.tsx": function(e, t, n) {
 			"use strict";
-			a.r(t), a.d(t, "MarketplaceInFeedUnit", (function() {
-				return x
+			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
+				a = n("./node_modules/react/index.js"),
+				s = n.n(a),
+				c = n("./src/higherOrderComponents/asModal/index.tsx"),
+				r = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				l = n("./src/reddit/controls/TextButton/index.tsx"),
+				i = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				d = n("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
+				u = n.n(d);
+			const m = e => e.preventDefault();
+			t.a = Object(c.a)(e => s.a.createElement(r.e, null, s.a.createElement(r.i, null, s.a.createElement(i.a, null, s.a.createElement(r.q, null, e.headerText || o.fbt._("Confirm", null, {
+				hk: "2zlvKa"
+			})), s.a.createElement(l.a, {
+				onClick: () => {
+					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
+				}
+			}, s.a.createElement(r.b, null)))), s.a.createElement(r.l, null, s.a.createElement(r.p, {
+				className: u.a.ModalText
+			}, e.modalText)), s.a.createElement(r.g, null, !e.hideCancelButton && s.a.createElement(r.a, {
+				className: u.a.buttonWidth,
+				onMouseDown: m,
+				onClick: () => {
+					e.onCancel && e.onCancel(), e.toggleModal && e.toggleModal()
+				},
+				"data-redditstyle": !e.disableRedditStyle
+			}, e.cancelActionText || o.fbt._("Cancel", null, {
+				hk: "2TSLl5"
+			})), s.a.createElement(r.u, {
+				className: u.a.buttonWidth,
+				onMouseDown: m,
+				onClick: t => {
+					e.onConfirm(), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
+				},
+				"data-redditstyle": !e.disableRedditStyle,
+				disabled: e.isDisabled
+			}, e.actionText))))
+		},
+		"./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return d
 			}));
-			var n = a("./src/lib/classNames/index.ts"),
-				c = a("./node_modules/react/index.js"),
-				s = a.n(c),
-				i = a("./node_modules/react-redux/es/index.js"),
-				l = a("./src/reddit/actions/modal.ts"),
-				o = a("./src/reddit/components/Econ/Marketplace/ClaimModal/async.tsx"),
-				r = a("./src/reddit/constants/modals.ts"),
-				d = a("./src/reddit/constants/postLayout.ts"),
-				m = a("./src/reddit/controls/Button/index.tsx");
-			var u = a("./src/reddit/hooks/usePreloadModal.ts"),
-				_ = a("./src/reddit/selectors/gold/marketplace/claimFlow.ts"),
-				p = a("./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less"),
-				E = a.n(p);
+			var o = n("./node_modules/@reddit/crypto/react/config/index.es.js"),
+				a = n("./node_modules/react/index.js"),
+				s = n.n(a),
+				c = n("./node_modules/react-redux/es/index.js"),
+				r = n("./src/reddit/hooks/useTracking.ts"),
+				l = n("./src/reddit/selectors/user.ts"),
+				i = n("./src/config.ts");
+			const d = e => {
+				let {
+					children: t
+				} = e;
+				const n = function() {
+					const e = Object(c.e)(m),
+						t = Object(c.e)(l.eb),
+						n = Object(r.a)();
+					u || (u = function(e, t, n) {
+						return {
+							api: {
+								accessToken: e
+							},
+							fbt: {
+								inline: (e, t) => e,
+								singular: (e, t) => s.a.createElement(s.a.Fragment, null, e),
+								param: (e, t) => s.a.createElement(s.a.Fragment, null, e),
+								plural: (e, t) => s.a.createElement(s.a.Fragment, null, e)
+							},
+							gql: {
+								host: i.a.gqlUrl,
+								fetchOptions: {
+									headers: {
+										Authorization: `Bearer ${e}`
+									}
+								}
+							},
+							nightModeActive: () => t,
+							sendEvent: () => n
+						}
+					}(e, t, n));
+					return u
+				}();
+				return s.a.createElement(o.a, {
+					value: n
+				}, t)
+			};
+			let u = null;
+
+			function m(e) {
+				var t;
+				return (null === (t = e.user.session) || void 0 === t ? void 0 : t.accessToken) || ""
+			}
+		},
+		"./src/reddit/components/Econ/Marketplace/InFeedUnit/confirmDismissModalStyles.m.less": function(e, t, n) {
+			e.exports = {
+				warning: "_3sL4YOZzv1jGaaxw6e7uIH"
+			}
+		},
+		"./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less": function(e, t, n) {
+			e.exports = {
+				container: "_21z552gDZGIvH3ewNzPXWw",
+				isNotLarge: "_1YOB9GyYMcCe82cZEVbnF-",
+				inFeedUnit: "_2Hbuk0Bt_wNCaM_BbIVJoF"
+			}
+		},
+		"./src/reddit/components/Econ/Marketplace/InFeedUnit/index.tsx": function(e, t, n) {
+			"use strict";
+			n.r(t), n.d(t, "MarketplaceInFeedUnit", (function() {
+				return N
+			}));
+			var o = n("./src/lib/classNames/index.ts"),
+				a = n("./node_modules/react/index.js"),
+				s = n.n(a),
+				c = n("./node_modules/react-redux/es/index.js"),
+				r = n("./node_modules/@reddit/crypto/react/nft-claim/index.es.js"),
+				l = n("./src/reddit/actions/modal.ts"),
+				i = n("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
+				d = n("./src/reddit/components/Econ/Marketplace/ClaimModal/async.tsx"),
+				u = n("./src/reddit/constants/modals.ts"),
+				m = n("./src/reddit/constants/postLayout.ts"),
+				p = n("./src/reddit/selectors/telemetry.ts");
+			var x = n("./src/reddit/hooks/useLocalStorage.ts"),
+				C = n("./src/reddit/hooks/usePreloadModal.ts"),
+				b = n("./src/reddit/hooks/useTracking.ts"),
+				f = n("./src/reddit/selectors/gold/marketplace/claimFlow.ts"),
+				k = n("./src/reddit/selectors/user.ts"),
+				_ = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+				E = n("./src/reddit/components/Econ/Marketplace/InFeedUnit/confirmDismissModalStyles.m.less"),
+				g = n.n(E);
 			const {
-				fbt: f
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), N = "https://www.redditstatic.com/crypto-assets/v2/marketplace/web", h = `${N}/feed_decoration_first_frame.png`, b = `${N}/feed_decoration.png`, x = e => {
+				fbt: h
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), M = e => {
+				let {
+					onDismiss: t,
+					onGoBack: n
+				} = e;
+				return s.a.createElement(_.a, {
+					onConfirm: n,
+					onCancel: t,
+					onClose: n,
+					headerText: h._("Are you sure? This is your only chance to collect this avatar.", null, {
+						hk: "237ii3"
+					}),
+					modalText: h._("{=WARNING:} You won't have another opportunity to collect your free avatar. Seriously.", [h._param("=WARNING:", s.a.createElement("span", {
+						className: g.a.warning
+					}, h._("WARNING:", null, {
+						hk: "2mCuMr"
+					})))], {
+						hk: "1lJ80A"
+					}),
+					cancelActionText: h._("Yes, I Don't Want It", null, {
+						hk: "4kIHcP"
+					}),
+					actionText: h._("Go Back", null, {
+						hk: "4ckZOO"
+					}),
+					withOverlay: !0
+				})
+			};
+			var O = n("./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less"),
+				j = n.n(O);
+			const {
+				fbt: y
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), N = e => {
 				let {
 					height: t,
-					layout: a
+					layout: n
 				} = e;
-				const p = Object(i.e)(_.a),
-					N = Object(i.e)(e => (null == p ? void 0 : p.id) ? Object(_.b)(e, p.id) : null),
-					x = Object(i.d)(),
-					[w, O] = Object(c.useState)(!1),
-					g = "no_nfts_left" === N,
-					I = w ? b : h,
-					k = a === d.g.Large;
-				if (function(e, t) {
-						Object(c.useEffect)(() => {
-							const a = new Image;
-							a.onload = () => {
-								t()
-							}, a.src = e
-						}, [e, t])
-					}(b, () => {
-						O(!0)
-					}), Object(u.a)(o.a), !(null == p ? void 0 : p.id)) return null;
-				return s.a.createElement("div", {
-					onClick: () => {
-						x(Object(l.h)(r.a.ECON_MARKETPLACE_CLAIM, {
-							claimId: p.id
+				const _ = Object(c.d)(),
+					E = Object(b.a)(),
+					g = Object(c.e)(f.a),
+					h = Object(c.e)(k.k) || "",
+					[O, N] = Object(a.useState)(!1);
+				Object(C.a)(d.a);
+				const [v, A] = Object(x.a)("marketplaceClaimInFeedUnitDismissed", !1), [T, F] = Object(x.a)("marketplaceClaimInFeedUnitLoadCount", 0), I = Object(a.useRef)(T), L = I.current % 2 == 0;
+				if (Object(a.useEffect)(() => {
+						L && E((() => e => ({
+							...Object(p.n)(e),
+							source: "marketplace",
+							action: "view",
+							noun: "claim_post_unit"
+						}))()), v || F(I.current + 1)
+					}, [F, I, E, L, v]), !(null == g ? void 0 : g.id) || v || !L) return null;
+				const D = n !== m.g.Large;
+				return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
+					"data-testid": "marketplace-claim-infeed-unit",
+					className: Object(o.a)(j.a.container, {
+						[j.a.isNotLarge]: D
+					})
+				}, s.a.createElement(i.a, null, s.a.createElement(r.a, {
+					className: j.a.inFeedUnit,
+					onClickCta: () => {
+						E((() => e => ({
+							...Object(p.n)(e),
+							source: "marketplace",
+							action: "click",
+							noun: "claim_post_unit"
+						}))()), _(Object(l.h)(u.a.ECON_MARKETPLACE_CLAIM, {
+							claimId: g.id
 						}))
 					},
-					className: Object(n.a)(E.a.container, {
-						[E.a.allItemsClaimed]: g,
-						[E.a.isNotLarge]: !k
+					onClose: () => N(!0),
+					labelText: y._("ACHIEVEMENT UNLOCKED", null, {
+						hk: "3yZmfO"
 					}),
-					style: {
-						minHeight: `${t}px`,
-						height: `${t}px`
-					},
-					"data-testid": "marketplace-claim-infeed-unit"
-				}, s.a.createElement("div", {
-					className: E.a.picturePlaceholder
-				}, s.a.createElement("img", {
-					className: E.a.picture,
-					src: I,
-					alt: f._("NFT artwork", null, {
-						hk: "13Cmwy"
-					})
-				})), g ? s.a.createElement("div", {
-					className: E.a.content
-				}, s.a.createElement("h3", {
-					className: E.a.title
-				}, f._("All NFTS in this series were claimed", null, {
-					hk: "2xP0zq"
-				})), s.a.createElement("h4", {
-					className: E.a.description
-				}, f._("The time to claim your NFT expired and someone else claimed it. Be on the lookout for upcoming NFT drops!", null, {
-					hk: "3zBLE1"
-				}))) : s.a.createElement("div", {
-					className: E.a.content
-				}, s.a.createElement("h3", {
-					className: E.a.title
-				}, p.title), s.a.createElement("h4", {
-					className: E.a.description
-				}, p.description), s.a.createElement(m.t, {
-					className: E.a.ctaButton
-				}, p.buttonCtaText)))
+					title: g.title,
+					username: h,
+					description: g.description,
+					ctaText: g.buttonCtaText
+				}))), O && s.a.createElement(M, {
+					onGoBack: () => N(!1),
+					onDismiss: () => {
+						E((() => e => ({
+							...Object(p.n)(e),
+							source: "marketplace",
+							action: "close",
+							noun: "claim_post_unit"
+						}))()), A(!0)
+					}
+				}))
 			};
-			t.default = x
+			t.default = N
 		},
-		"./src/reddit/hooks/usePreloadModal.ts": function(e, t, a) {
+		"./src/reddit/hooks/usePreloadModal.ts": function(e, t, n) {
 			"use strict";
-			a.d(t, "a", (function() {
-				return c
+			n.d(t, "a", (function() {
+				return a
 			}));
-			var n = a("./node_modules/react/index.js");
+			var o = n("./node_modules/react/index.js");
 
-			function c(e) {
-				Object(n.useEffect)(() => {
+			function a(e) {
+				Object(o.useEffect)(() => {
 					e()
 				}, [e])
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.c1e2750efaebf28f3706.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.272bd2a7a711b5555e88.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.a646a8662835971bd715.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.8c853735f468b28ffa6e.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -138,21 +138,21 @@
 				B = n("./src/reddit/models/ContentGate.ts"),
 				L = n("./src/lib/constants/index.ts"),
 				T = n("./src/reddit/selectors/platform.ts"),
-				j = n("./src/reddit/selectors/user.ts");
-			var R = n("./src/reddit/selectors/meta.ts"),
+				R = n("./src/reddit/selectors/user.ts");
+			var j = n("./src/reddit/selectors/meta.ts"),
 				O = n("./src/reddit/components/ContentGate/index.m.less"),
 				P = n.n(O);
 			const {
 				fbt: D
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), q = u.a.wrapped(w, "PrivateKey", P.a), F = u.a.div("ButtonsContainer", P.a), N = u.a.div("Container", P.a), M = u.a.div("ContainerExp", P.a), A = u.a.div("Description", P.a), I = u.a.div("PrivateSubredditDetails", P.a), G = u.a.div("PrivateSubredditDescription", P.a), H = u.a.h3("PrivateSubredditName", P.a), U = u.a.a("Link", P.a), W = u.a.wrapped(x.n, "LinkRouterButton", P.a), z = u.a.wrapped(x.m, "LinkButton", P.a), K = u.a.wrapped(x.q, "SecondaryLinkRouterButton", P.a), Z = u.a.wrapped(x.p, "SecondaryLinkButton", P.a), J = u.a.wrapped(W, "GoHomeLinkButton", P.a), V = u.a.wrapped(b.a, "CreateCommunityButton", P.a), Y = u.a.img("Image", P.a), X = u.a.img("ImagePlaceholder", P.a), Q = u.a.wrapped(W, "LeftLinkRouterButton", P.a), $ = u.a.wrapped(z, "LeftLinkButton", P.a), ee = u.a.wrapped(Z, "SecondaryLeftLinkButton", P.a), te = u.a.wrapped(K, "SecondaryLeftLinkRouterButton", P.a), ne = u.a.h3("Title", P.a), re = u.a.div("PageBody", P.a), ae = u.a.div("InterstitialMessageWrapper", P.a), oe = Object(c.c)({
-				isLoggedIn: j.P,
-				origin: R.j,
-				user: j.k,
+				isLoggedIn: R.Q,
+				origin: j.j,
+				user: R.l,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(j.Q)(e)) return !1;
+					if (!Object(R.R)(e)) return !1;
 					const t = Object(T.d)(e);
 					if (!t) return !1;
-					const n = Object(j.f)(e, t);
+					const n = Object(R.f)(e, t);
 					if (!n) return !1;
 					if (!n.privateSubreddit) return !1;
 					const {
@@ -162,7 +162,7 @@
 					const a = 30 * L.C;
 					return r > Date.now() - a
 				})(e),
-				isSeo: R.g
+				isSeo: j.g
 			}), ie = Object(g.u)(), se = Object(i.b)(oe, (e, t) => {
 				let {
 					subredditName: n
@@ -198,12 +198,12 @@
 					interstitialWarningMessage: w,
 					interstitialWarningMessageHtml: L,
 					interstitialWarningMessageRTJson: T,
-					setNSFWPreference: j,
-					subredditDescription: R,
+					setNSFWPreference: R,
+					subredditDescription: j,
 					subredditName: O,
 					user: N
 				} = e, M = async () => {
-					if (s ? await j() : await Object(m.n)(), u) {
+					if (s ? await R() : await Object(m.n)(), u) {
 						const e = new URL(window.location.href);
 						e.searchParams.set(S.i, "1"), window.location.href = e.href
 					} else window.location.reload()
@@ -261,7 +261,7 @@
 					case B.a.PrivateSubreddit:
 						return o.a.createElement("div", null, o.a.createElement(q, null), o.a.createElement(ne, null, "r/", O, " ", D._("is a private community", null, {
 							hk: "7zZmq"
-						})), R && R.length && o.a.createElement(I, null, o.a.createElement(H, null, "r/", O), o.a.createElement(G, null, o.a.createElement("div", null, R))), o.a.createElement(A, null, D._("The moderators of", null, {
+						})), j && j.length && o.a.createElement(I, null, o.a.createElement(H, null, "r/", O), o.a.createElement(G, null, o.a.createElement("div", null, j))), o.a.createElement(A, null, D._("The moderators of", null, {
 							hk: "3QSrbr"
 						}), " ", "r/", O, " ", D._("have set this community as private.", null, {
 							hk: "3zhD9F"
@@ -523,8 +523,8 @@
 			const k = "create-community-button",
 				v = y.a.wrapped(u.c, "StyledTooltip", E.a),
 				S = Object(s.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.pb)(e),
-					userIsSuspended: b.X
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.qb)(e),
+					userIsSuspended: b.Y
 				});
 			t.a = Object(i.b)(S, (e, t) => {
 				let {
@@ -617,4 +617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.a646a8662835971bd715.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.8c853735f468b28ffa6e.js.map

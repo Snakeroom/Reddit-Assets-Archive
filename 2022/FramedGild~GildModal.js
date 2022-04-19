@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.37a01673e61adf1f9c9b.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f245890688dfd892e21c.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1028,7 +1028,7 @@
 						postId: r
 					}) : Object(y.b)(e, {
 						commentId: r
-					}), s = Object(S.k)(e), a = e.gild, {
+					}), s = Object(S.l)(e), a = e.gild, {
 						isAnonymous: o
 					} = a, i = !o && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, c = n ? n.author : void 0, d = Object(N.J)(e, {
 						thingId: r
@@ -1047,7 +1047,7 @@
 						} = e,
 						b = Object(E.a)(s, u),
 						h = e.awardKarmaReceived,
-						f = Object(S.k)(s),
+						f = Object(S.l)(s),
 						y = Object(I.b)(s) || Object(F.e)(F.a.GildingFlow, !1);
 					if (Object(I.g)(s)) {
 						const e = "success.gild",
@@ -1894,7 +1894,7 @@
 						} = a;
 						t(O());
 						const l = r(),
-							u = Object(c.Q)(l);
+							u = Object(c.R)(l);
 						try {
 							const r = !u,
 								n = await Object(i.b)({
@@ -2880,12 +2880,12 @@
 						})
 					},
 					correlationId: e => Object(S.b)(e) || Object(m.e)(m.a.GildingFlow, !1),
-					currentUser: F.k,
+					currentUser: F.l,
 					errorMessage: S.a,
 					isAnonymous: S.f,
 					iFramed: S.g,
 					isGildPending: S.e,
-					isEmployee: F.N,
+					isEmployee: F.O,
 					isRecommendedCoinPackagePending: M.q,
 					message: S.c,
 					postOrComment: (e, t) => {
@@ -3308,7 +3308,7 @@
 				b = r.n(p);
 			const h = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(a.b)(() => Object(o.c)({
-					isNightmodeOn: m.db
+					isNightmodeOn: m.eb
 				}));
 			t.a = f(e => {
 				const t = {
@@ -3405,7 +3405,7 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(o.b)(() => Object(c.a)(v.F, w.jb, (e, t) => {
+				N = Object(o.b)(() => Object(c.a)(v.F, w.kb, (e, t) => {
 					let {
 						isSponsored: r,
 						postId: n
@@ -4882,12 +4882,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.lf.SmIcon:
+						case h.mf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.lf.SmIconHc:
+						case h.mf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5986,12 +5986,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.ff
+						experimentName: n.gf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.lf.SmIcon || t === n.lf.SmIconHc
+					return t === n.mf.SmIcon || t === n.mf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6029,4 +6029,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.37a01673e61adf1f9c9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f245890688dfd892e21c.js.map

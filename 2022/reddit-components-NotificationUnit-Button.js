@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.ee555347cabc58d547f2.js
-// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.4e1c1fbb4fa694e868ec.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/reddit/actions/comment/authoring.ts": function(t, e, n) {
@@ -69,8 +69,8 @@
 				_ = n("./src/lib/omitHeaders/index.ts"),
 				j = n("./src/reddit/constants/headers.ts"),
 				h = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				g = n("./src/reddit/helpers/genericServerError/index.ts"),
-				T = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
+				T = n("./src/reddit/helpers/genericServerError/index.ts"),
+				g = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				E = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts"),
 				R = n("./src/reddit/models/PostCreationForm/index.ts"),
 				N = n("./src/reddit/models/RichTextJson/addEmotesAsImagesParam.ts"),
@@ -119,16 +119,16 @@
 					} : {
 						...t,
 						body: {
-							comment: Object(T.a)(t.body.json.data.things[0].data, o)
+							comment: Object(g.a)(t.body.json.data.things[0].data, o)
 						}
 					} : {
 						...t,
 						body: {
-							comment: Object(T.a)(t.body, o)
+							comment: Object(g.a)(t.body, o)
 						}
 					} : {
 						...t,
-						error: t.error || Object(g.a)()
+						error: t.error || Object(T.a)()
 					})
 				};
 			var w = n("./src/redditGQL/operations/UpdateCommentFollowState.json");
@@ -161,7 +161,7 @@
 					return async (t, o) => {
 						const i = o();
 						if (!!i.features.comments.drafts[n])
-							if (Object(z.S)(i) && e) {
+							if (Object(z.T)(i) && e) {
 								const o = Z({
 									hasFocus: e,
 									draftKey: n
@@ -344,7 +344,7 @@
 					return async (t, i) => {
 						const r = i(),
 							l = Object(s.a)(W.c.replyToComment, n);
-						if (!Object(z.Q)(i())) return t(Object(a.j)()), void t(Object(d.k)({
+						if (!Object(z.R)(i())) return t(Object(a.j)()), void t(Object(d.k)({
 							actionSource: d.a.Reply,
 							redirectUrl: Object(q.m)(i(), {
 								commentId: n
@@ -384,7 +384,7 @@
 								draftType: W.c.replyToComment,
 								rtJson: f,
 								text: ""
-							}, Object(z.S)(r)) {
+							}, Object(z.T)(r)) {
 							const o = mt({
 								parentCommentId: n,
 								commentsPageKey: e,
@@ -444,7 +444,7 @@
 							}
 						})))
 					}
-				}, gt = Object(r.a)($.D), Tt = Object(r.a)($.C), Et = Object(r.a)($.E), Rt = Object(r.a)($.h), Nt = t => {
+				}, Tt = Object(r.a)($.D), gt = Object(r.a)($.C), Et = Object(r.a)($.E), Rt = Object(r.a)($.h), Nt = t => {
 					let {
 						id: e,
 						commentsPageKey: n,
@@ -458,7 +458,7 @@
 						} = c;
 						const d = o();
 						if (!d.user.account) return;
-						t(gt({
+						t(Tt({
 							draftKey: r
 						})), U.d(d);
 						const l = d.user.account.displayText || "",
@@ -488,16 +488,16 @@
 								} : {
 									...t,
 									body: {
-										comment: Object(T.a)(t.body.json.data.things[0].data, r)
+										comment: Object(g.a)(t.body.json.data.things[0].data, r)
 									}
 								} : {
 									...t,
 									body: {
-										comment: Object(T.a)(t.body, r)
+										comment: Object(g.a)(t.body, r)
 									}
 								} : {
 									...t,
-									error: t.error || Object(g.a)()
+									error: t.error || Object(T.a)()
 								})
 							})(a(), e, 0, s, l, u);
 						if (m.ok) {
@@ -511,7 +511,7 @@
 									...o.comment
 								}
 							}))
-						} else t(Tt({
+						} else t(gt({
 							draftKey: r,
 							error: m.error
 						}))
@@ -539,7 +539,7 @@
 						body: {}
 					} : {
 						...t,
-						error: t.error || Object(g.a)()
+						error: t.error || Object(T.a)()
 					}))(s(), t);
 					a.ok ? n(vt({
 						id: t,
@@ -798,7 +798,7 @@
 				duration: d.a
 			};
 			e.default = t => {
-				var e, n, o, C, I, g, T, E, R, N;
+				var e, n, o, C, I, T, g, E, R, N;
 				const S = Object(r.d)(),
 					k = Object(r.e)(x.d),
 					{
@@ -823,8 +823,8 @@
 					Y = null === (e = null == v ? void 0 : v.post) || void 0 === e ? void 0 : e.permalink;
 				let Q = null === (n = null == v ? void 0 : v.comment) || void 0 === n ? void 0 : n.id,
 					z = (null === (o = null == v ? void 0 : v.post) || void 0 === o ? void 0 : o.id) || (null === (I = null === (C = null == v ? void 0 : v.comment) || void 0 === C ? void 0 : C.postInfo) || void 0 === I ? void 0 : I.id);
-				const X = null === (g = null == v ? void 0 : v.subreddit) || void 0 === g ? void 0 : g.id,
-					$ = null === (E = null === (T = null == v ? void 0 : v.awarding) || void 0 === T ? void 0 : T.award) || void 0 === E ? void 0 : E.id,
+				const X = null === (T = null == v ? void 0 : v.subreddit) || void 0 === T ? void 0 : T.id,
+					$ = null === (E = null === (g = null == v ? void 0 : v.awarding) || void 0 === g ? void 0 : g.award) || void 0 === E ? void 0 : E.id,
 					Z = null === (N = null === (R = null == v ? void 0 : v.awarding) || void 0 === R ? void 0 : R.awarder) || void 0 === N ? void 0 : N.id;
 				if (B === y.a.CommentFollow || B === y.a.PostFollow) {
 					const t = (t => {
@@ -1334,9 +1334,9 @@
 			})), n.d(e, "x", (function() {
 				return h
 			})), n.d(e, "b", (function() {
-				return g
-			})), n.d(e, "m", (function() {
 				return T
+			})), n.d(e, "m", (function() {
+				return g
 			})), n.d(e, "z", (function() {
 				return E
 			})), n.d(e, "q", (function() {
@@ -1639,11 +1639,11 @@
 						}
 					})
 				};
-			var g;
+			var T;
 			! function(t) {
 				t.Cats = "cats", t.Memes = "memes", t.Karma = "karma_free_subs", t.PN_perms = "pn_perms", t.Email_perms = "email_perms"
-			}(g || (g = {}));
-			const T = t => {
+			}(T || (T = {}));
+			const g = t => {
 					let {
 						actionInfoType: e,
 						id: n,
@@ -1801,4 +1801,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.ee555347cabc58d547f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.4e1c1fbb4fa694e868ec.js.map

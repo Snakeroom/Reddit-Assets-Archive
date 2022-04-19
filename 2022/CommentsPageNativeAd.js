@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.f45855ed9b01725a16c7.js
-// Retrieved at 4/13/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.aee614c7bff7b99babcf.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -89,8 +89,8 @@
 				M = s("./src/reddit/components/Thumbnail/index.tsx"),
 				V = s("./src/reddit/icons/svgs/Close/index.tsx");
 
-			function B() {
-				return (B = Object.assign || function(e) {
+			function R() {
+				return (R = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
@@ -98,7 +98,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const R = e => {
+			const B = e => {
 				let {
 					classNameInnerThumbnail: t,
 					closeVideo: s,
@@ -161,7 +161,7 @@
 					return a.a.createElement("div", {
 						className: r ? Object(l.a)(T.a.videoContainer, s) : Object(l.a)(T.a.thumbnailContainer, s),
 						onClick: n ? () => o(!0) : void 0
-					}, a.a.createElement(R, B({}, e, {
+					}, a.a.createElement(B, R({}, e, {
 						mediaExpanded: r,
 						closeVideo: () => o(!1)
 					})), n && a.a.createElement(W.a, {
@@ -375,7 +375,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: b.l,
 					isExpanded: b.m,
-					isLoggedIn: C.Q,
+					isLoggedIn: C.R,
 					showPromotedCTA: h.a,
 					moderatorPermissions: u.m,
 					modModeEnabled: c.T,
@@ -486,4 +486,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.f45855ed9b01725a16c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.aee614c7bff7b99babcf.js.map

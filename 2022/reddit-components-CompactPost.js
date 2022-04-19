@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.f9260dd71c2e64afba4e.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.96f3b1d879659835f337.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3188,13 +3188,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: s.Ce,
+					experimentName: s.De,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === s.Ke.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === s.Le.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(o.a)(i.G, a, (e, t) => c(e, t));
 			Object(o.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.f9260dd71c2e64afba4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.96f3b1d879659835f337.js.map

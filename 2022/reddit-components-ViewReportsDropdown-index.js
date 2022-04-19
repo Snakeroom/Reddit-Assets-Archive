@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.2679f4914fb126a1c3fa.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.788759345a0454bdf618.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, o) {
@@ -53,7 +53,7 @@
 					let {
 						apiContext: r
 					} = n;
-					if (!Object(h.Q)(o())) return void t(Object(d.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(h.R)(o())) return void t(Object(d.i)(l.a.LOGIN_MODAL_ID));
 					const i = o().features.comments.models[e];
 					if (!i) return;
 					const c = i.isLocked ? p.l : p.e;
@@ -552,4 +552,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.2679f4914fb126a1c3fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.788759345a0454bdf618.js.map

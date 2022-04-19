@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.43ad6dbf8b1d28973c6f.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.04232a99ae0f5866c21c.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -2032,7 +2032,7 @@
 				const m = Object(y.a)(),
 					p = Object(C.g)(t.id, m),
 					h = Object(C.h)(t),
-					b = Object(n.e)(P.db),
+					b = Object(n.e)(P.eb),
 					f = Object(n.e)(e => Object(T.a)(e, t.authorId, h)),
 					v = Object(n.e)(e => Object(_.a)(e) === p),
 					w = Object(n.d)(),
@@ -2140,7 +2140,7 @@
 			}(s || (s = {}));
 			t.b = e => {
 				var t, r, s;
-				const n = Object(i.e)(f.db),
+				const n = Object(i.e)(f.eb),
 					{
 						className: v,
 						modNote: g,
@@ -2461,7 +2461,7 @@
 						showTimestamp: G = !0,
 						subredditOrProfile: W,
 						tooltipType: z
-					} = e, Q = Object(n.d)(), V = Object(w.a)(), Y = Object(n.e)(ie.a), K = Object(n.e)(le.d), $ = Object(n.e)(le.g) || ["popular", "all"].includes(K || ""), X = Object(n.e)(de.b), se = Object(n.e)(de.c), me = y.isSponsored || Object(a.u)(E), fe = !(!me || !Y || Object(h.If)(Y));
+					} = e, Q = Object(n.d)(), V = Object(w.a)(), Y = Object(n.e)(ie.a), K = Object(n.e)(le.d), $ = Object(n.e)(le.g) || ["popular", "all"].includes(K || ""), X = Object(n.e)(de.b), se = Object(n.e)(de.c), me = y.isSponsored || Object(a.u)(E), fe = !(!me || !Y || Object(h.Jf)(Y));
 					Object(s.useEffect)(() => {
 						fe && Q(Object(p.d)(y.author))
 					}, []);
@@ -3696,16 +3696,16 @@
 				n = r("./src/reddit/selectors/user.ts");
 			const a = e => {
 					const t = Object(o.c)(e, {
-						experimentEligibilitySelector: n.Q,
+						experimentEligibilitySelector: n.R,
 						experimentName: s.Lc
 					});
-					return !(!t || Object(s.If)(t))
+					return !(!t || Object(s.Jf)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
-						experimentEligibilitySelector: n.Q,
+						experimentEligibilitySelector: n.R,
 						experimentName: s.Lc
-					}) === s.ud.ListingEnabled
+					}) === s.td.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3765,4 +3765,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.43ad6dbf8b1d28973c6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.04232a99ae0f5866c21c.js.map

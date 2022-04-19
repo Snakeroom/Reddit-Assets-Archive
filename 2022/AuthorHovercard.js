@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.2df6b23d2f6101deebdd.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.b8715a90b1e27978b78f.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -707,7 +707,7 @@
 							await n(Object(c.o)(t.name))
 						}
 					})(), (async () => {
-						const r = Object(N.Ab)(a, {
+						const r = Object(N.Bb)(a, {
 							userName: t
 						});
 						if (!r) return;
@@ -1448,7 +1448,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(I.Ab)(e, {
+				user: (e, t) => Object(I.Bb)(e, {
 					userName: t.username
 				})
 			});
@@ -1754,9 +1754,9 @@
 			var Ae = Ue;
 			const Te = Object(s.c)({
 					activeTooltipId: x.a,
-					currentUser: I.k,
-					isLoggedIn: I.Q,
-					hideNSFWPref: I.F,
+					currentUser: I.l,
+					isLoggedIn: I.R,
+					hideNSFWPref: I.G,
 					moderatorPermissions: (e, t) => {
 						let {
 							subredditId: n
@@ -1783,7 +1783,7 @@
 							minSize: 32
 						})
 					},
-					user: I.Ab,
+					user: I.Bb,
 					userFlair: (e, t) => {
 						let {
 							subredditId: n
@@ -1809,7 +1809,7 @@
 						return !!a && Object(m.i)(e, a)
 					},
 					trophyCase: (e, t) => Object(f.r)(e, Object(f.m)(e, t.userName)),
-					isNightMode: I.db,
+					isNightMode: I.eb,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
 						const n = Object(c.a)(t.contextId) ? Object(p.G)(e, {
@@ -1996,7 +1996,7 @@
 						subredditId: s,
 						userId: d,
 						thingId: l
-					} = e, [m, b] = Object(r.useState)(), [p, h] = Object(r.useState)(!0), [I, E] = Object(r.useState)(""), [w, U] = Object(r.useState)(!1), A = Object(o.e)(j.db);
+					} = e, [m, b] = Object(r.useState)(), [p, h] = Object(r.useState)(!0), [I, E] = Object(r.useState)(""), [w, U] = Object(r.useState)(!1), A = Object(o.e)(j.eb);
 					Object(r.useEffect)(() => {
 						const e = e => {
 							e.style.height = "inherit";
@@ -2438,7 +2438,7 @@
 						onClickLinked: r
 					} = e;
 					var s, i;
-					const d = Object(o.e)(j.db),
+					const d = Object(o.e)(j.eb),
 						l = "label" in n && n.label || N.c,
 						u = "note" in n ? n.note : void 0,
 						m = Object(k.b)(N.e[l || "bot"], {
@@ -2675,7 +2675,7 @@
 					const {
 						modNote: t,
 						subredditId: n
-					} = e, r = Object(o.e)(j.db), s = Object(b.a)(), i = !!t.__typename && ["ModActionNote", "ModActionNotePost", "ModActionNoteComment"].includes(t.__typename);
+					} = e, r = Object(o.e)(j.eb), s = Object(b.a)(), i = !!t.__typename && ["ModActionNote", "ModActionNotePost", "ModActionNoteComment"].includes(t.__typename);
 					return a.a.createElement("div", {
 						className: Object(c.a)(J.a.wrapper, e.className)
 					}, a.a.createElement("div", {
@@ -2775,7 +2775,7 @@
 							userId: i,
 							filter: d
 						} = e,
-						l = Object(o.e)(e => Object(j.zb)(e, {
+						l = Object(o.e)(e => Object(j.Ab)(e, {
 							userId: i
 						})),
 						u = Object(o.e)(e => Object(A.T)(e, {
@@ -2856,7 +2856,7 @@
 						subredditId: n,
 						userId: s,
 						filter: d
-					} = e, l = Object(o.d)(), u = Object(o.e)(j.db), [m, b] = Object(r.useState)(!0);
+					} = e, l = Object(o.d)(), u = Object(o.e)(j.eb), [m, b] = Object(r.useState)(!0);
 					Object(r.useEffect)(() => {
 						setTimeout(() => b(!1), 0)
 					}, []);
@@ -2942,7 +2942,7 @@
 						} = e,
 						[x, I] = Object(r.useState)(h || w.k.All),
 						[g, _] = Object(r.useState)(s),
-						C = Object(o.e)(j.db),
+						C = Object(o.e)(j.eb),
 						O = Object(b.a)(),
 						k = e => {
 							t(Object(i.f)({
@@ -3063,7 +3063,7 @@
 						x = Object(o.e)(t => Object(bt.b)(ut.c.access)(t, e)),
 						I = Object(o.e)(t => Object(bt.b)(ut.c.mail)(t, e)),
 						g = Object(o.e)(t => Object(bt.b)(ut.c.flair)(t, e)),
-						_ = Object(o.e)(e => Object(j.Ab)(e, {
+						_ = Object(o.e)(e => Object(j.Bb)(e, {
 							userName: u
 						})),
 						C = Object(o.e)(e => !!Object(mt.b)(e, {
@@ -3072,7 +3072,7 @@
 						})),
 						O = Object(o.e)(e => Object(pt.a)(e, l, _.id)),
 						N = Object(o.e)(e => Object(ft.g)(e, l, _.id)),
-						E = Object(o.e)(j.k),
+						E = Object(o.e)(j.l),
 						y = !!E && Object(rt.e)(E) === u,
 						S = Object(o.e)(e => l ? e.subreddits.models[l] : null),
 						P = Object(o.e)(e => {
@@ -3874,7 +3874,7 @@
 			}(r || (r = {}));
 			t.b = e => {
 				var t, n, r;
-				const o = Object(i.e)(h.db),
+				const o = Object(i.e)(h.eb),
 					{
 						className: v,
 						modNote: I,
@@ -4183,8 +4183,8 @@
 				o = n("./src/reddit/actions/preferences.ts"),
 				s = n("./src/reddit/selectors/user.ts");
 			const i = Object(a.c)({
-					currentUser: s.k,
-					hideNSFWPref: s.F
+					currentUser: s.l,
+					hideNSFWPref: s.G
 				}),
 				d = Object(r.b)(i, e => ({
 					imageUpdateRequested: (t, n) => e(Object(o.C)(t, n))
@@ -6005,8 +6005,8 @@
 				}) === r.x.Enabled,
 				s = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.Nc
-				}) === r.pd
+					experimentName: r.Mc
+				}) === r.od
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
 			"use strict";
@@ -6025,12 +6025,12 @@
 				d = n("./src/reddit/selectors/platform.ts"),
 				c = n("./src/reddit/selectors/user.ts");
 			const l = () => !0,
-				u = Object(r.a)(c.X, c.O, (e, t) => !(e || t)),
+				u = Object(r.a)(c.Y, c.P, (e, t) => !(e || t)),
 				m = e => {
 					if (!u(e)) return;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: o.Id,
+						experimentName: o.Hd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -6053,9 +6053,9 @@
 				},
 				p = e => !!m(e) && Object(s.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: o.Jd,
+					experimentName: o.Id,
 					expEventOverride: !1
-				}) !== o.Kd.Readonly
+				}) !== o.Jd.Readonly
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, n) {
 			"use strict";
@@ -6215,4 +6215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.2df6b23d2f6101deebdd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.b8715a90b1e27978b78f.js.map

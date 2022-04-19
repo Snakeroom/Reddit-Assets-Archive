@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.43a40c90ae55f34b280f.js
-// Retrieved at 4/19/2022, 2:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.50f1a5544eb9cc2754b2.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -931,7 +931,7 @@
 				p = n.n(h);
 			const b = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(o.b)(() => Object(i.c)({
-					isNightmodeOn: m.db
+					isNightmodeOn: m.eb
 				}));
 			t.a = f(e => {
 				const t = {
@@ -1028,7 +1028,7 @@
 						style: t
 					}, e.children)
 				},
-				S = Object(i.b)(() => Object(c.a)(_.F, E.jb, (e, t) => {
+				S = Object(i.b)(() => Object(c.a)(_.F, E.kb, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: s
@@ -2553,12 +2553,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.lf.SmIcon:
+						case b.mf.SmIcon:
 							return r.a.createElement(h, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.lf.SmIconHc:
+						case b.mf.SmIconHc:
 							return r.a.createElement(h, {
 								subredditName: s,
 								isHoverable: !0,
@@ -2911,12 +2911,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.ff
+						experimentName: s.gf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.lf.SmIcon || t === s.lf.SmIconHc
+					return t === s.mf.SmIcon || t === s.mf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2942,4 +2942,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.43a40c90ae55f34b280f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.50f1a5544eb9cc2754b2.js.map

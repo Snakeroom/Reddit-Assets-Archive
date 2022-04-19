@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.216f3a232363b6249c95.js
-// Retrieved at 4/19/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.1f134322f7061bb838e3.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePosts", "reddit-components-ContentGate"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -155,11 +155,11 @@
 			const {
 				fbt: I
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), B = d.a.wrapped(C, "PrivateKey", P.a), A = d.a.div("ButtonsContainer", P.a), R = d.a.div("Container", P.a), U = d.a.div("ContainerExp", P.a), F = d.a.div("Description", P.a), H = d.a.div("PrivateSubredditDetails", P.a), q = d.a.div("PrivateSubredditDescription", P.a), W = d.a.h3("PrivateSubredditName", P.a), M = d.a.a("Link", P.a), X = d.a.wrapped(E.n, "LinkRouterButton", P.a), G = d.a.wrapped(E.m, "LinkButton", P.a), z = d.a.wrapped(E.q, "SecondaryLinkRouterButton", P.a), Y = d.a.wrapped(E.p, "SecondaryLinkButton", P.a), K = d.a.wrapped(X, "GoHomeLinkButton", P.a), Z = d.a.wrapped(h.a, "CreateCommunityButton", P.a), V = d.a.img("Image", P.a), J = d.a.img("ImagePlaceholder", P.a), Q = d.a.wrapped(X, "LeftLinkRouterButton", P.a), $ = d.a.wrapped(G, "LeftLinkButton", P.a), ee = d.a.wrapped(Y, "SecondaryLeftLinkButton", P.a), te = d.a.wrapped(z, "SecondaryLeftLinkRouterButton", P.a), ne = d.a.h3("Title", P.a), re = d.a.div("PageBody", P.a), ae = d.a.div("InterstitialMessageWrapper", P.a), oe = Object(c.c)({
-				isLoggedIn: L.P,
+				isLoggedIn: L.Q,
 				origin: T.j,
-				user: L.k,
+				user: L.l,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(L.Q)(e)) return !1;
+					if (!Object(L.R)(e)) return !1;
 					const t = Object(N.d)(e);
 					if (!t) return !1;
 					const n = Object(L.f)(e, t);
@@ -538,8 +538,8 @@
 			const w = "create-community-button",
 				k = g.a.wrapped(d.c, "StyledTooltip", f.a),
 				S = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.pb)(e),
-					userIsSuspended: h.X
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.qb)(e),
+					userIsSuspended: h.Y
 				});
 			t.a = Object(s.b)(S, (e, t) => {
 				let {
@@ -922,7 +922,7 @@
 				G = Object(_.c)({
 					isAwardListingExperimentEnabled: N.a,
 					isBestSortPopularEnabled: j.a,
-					user: T.k,
+					user: T.l,
 					dropdownIsOpen: (e, t) => Object(L.b)(t.dropdownId || R)(e),
 					isPopularPage: d.F
 				}),
@@ -1501,7 +1501,7 @@
 					isProfilePage: d.J,
 					pageLayer: e => e
 				}),
-				He = Object(_.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, j.a, T.k, d.F, N.a, Te.i, (e, t, n, r, a, o, s) => {
+				He = Object(_.a)((e, t) => t.sortOptions, (e, t) => t.isFrontpage, j.a, T.l, d.F, N.a, Te.i, (e, t, n, r, a, o, s) => {
 					if (e) return {
 						isPopularPage: a,
 						sortOptions: e,
@@ -2277,4 +2277,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.216f3a232363b6249c95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.1f134322f7061bb838e3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.8ba1ae9184c04ca64cc5.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.6cc9773f0238323999d8.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, o) {
@@ -1332,7 +1332,7 @@
 			} = o("./node_modules/fbt/lib/FbtPublic.js");
 			const b = Object(r.c)({
 					userId: e => {
-						const t = Object(c.k)(e);
+						const t = Object(c.l)(e);
 						return t ? t.id : ""
 					}
 				}),
@@ -1905,7 +1905,7 @@
 					} = e;
 					const n = Object(l.a)(),
 						a = m(n),
-						s = Object(r.e)(I.db);
+						s = Object(r.e)(I.eb);
 					return i.a.createElement("div", {
 						className: Object(u.a)(R.a.container, t)
 					}, i.a.createElement("nav", null, i.a.createElement("ol", null, x.map(e => i.a.createElement("div", {
@@ -3012,7 +3012,7 @@
 				ee = o.n($);
 			const te = () => {
 					const e = Object(r.d)(),
-						t = Object(r.e)(I.db);
+						t = Object(r.e)(I.eb);
 					return i.a.createElement("header", {
 						className: Object(u.a)(ee.a.container, {
 							[ee.a.nightmode]: t
@@ -3258,7 +3258,7 @@
 					onClickExpand: l,
 					onClickHide: c
 				} = e;
-				const d = Object(r.e)(I.db);
+				const d = Object(r.e)(I.eb);
 				return i.a.createElement("div", {
 					className: Object(u.a)(Ee.a.container, t, {
 						[Ee.a.expanded]: a,
@@ -4194,4 +4194,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.8ba1ae9184c04ca64cc5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.6cc9773f0238323999d8.js.map

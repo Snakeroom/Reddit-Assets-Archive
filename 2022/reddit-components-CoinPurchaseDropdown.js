@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.9b1361616aaa352b33e2.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.a9be9853438f3c232a0d.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1119,7 +1119,7 @@
 						} = c;
 						t(O());
 						const l = r(),
-							u = Object(i.Q)(l);
+							u = Object(i.R)(l);
 						try {
 							const r = !u,
 								n = await Object(a.b)({
@@ -1319,7 +1319,7 @@
 				V = r("./src/reddit/controls/Button/index.tsx"),
 				Y = r("./src/reddit/components/CompactCoinPurchaseList/ListItem/index.m.less"),
 				Z = r.n(Y);
-			var Q = e => {
+			var $ = e => {
 					const {
 						className: t,
 						buttonClass: r,
@@ -1356,8 +1356,8 @@
 						})
 					}, n)))
 				},
-				$ = r("./src/reddit/components/CompactCoinPurchaseList/index.m.less"),
-				J = r.n($);
+				Q = r("./src/reddit/components/CompactCoinPurchaseList/index.m.less"),
+				J = r.n(Q);
 			const X = Object(_.c)({
 					coinPackages: K.d,
 					communityPointsConversionEnabled: B.d.spPointsCoinConversion,
@@ -1368,7 +1368,7 @@
 					},
 					isFreeAwardEventEnabled: e => Object(q.a)(e) && Object(K.g)(e),
 					isPremiumCoinStoreUpsellEnabled: E.u,
-					isPremiumSubscriber: z.w,
+					isPremiumSubscriber: z.x,
 					premiumPackages: K.l,
 					purchaseCatalogError: K.n,
 					purchaseCatalogPending: K.o
@@ -1489,7 +1489,7 @@
 						const {
 							isFreeAwardEventEnabled: e
 						} = this.props;
-						return e ? o.a.createElement(Q, {
+						return e ? o.a.createElement($, {
 							buttonClass: J.a.freeAwardButton,
 							buttonText: P.fbt._("Claim", null, {
 								hk: "OUYUl"
@@ -1511,7 +1511,7 @@
 							communityPointsName: t,
 							onClickConvert: r
 						} = this.props;
-						return e && t ? o.a.createElement(Q, {
+						return e && t ? o.a.createElement($, {
 							buttonText: P.fbt._("Convert", null, {
 								hk: "zVTTU"
 							}),
@@ -1534,7 +1534,7 @@
 						primaryText: s,
 						subtext: a
 					} = e, i = c && c.coins !== c.baselineCoins, d = c && c.pennies !== c.baselinePennies;
-					return o.a.createElement(Q, {
+					return o.a.createElement($, {
 						buttonClass: t,
 						buttonSubtext: r,
 						buttonSubtextCrossout: d,
@@ -1989,4 +1989,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.9b1361616aaa352b33e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.a9be9853438f3c232a0d.js.map

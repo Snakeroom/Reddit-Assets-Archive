@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.26730839f4d57b48c988.js
-// Retrieved at 4/14/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.08020a77de5ebc311b1c.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, n) {
@@ -30,7 +30,7 @@
 				} = e;
 				const n = function() {
 					const e = Object(c.e)(m),
-						t = Object(c.e)(i.db),
+						t = Object(c.e)(i.eb),
 						n = Object(o.a)();
 					u || (u = function(e, t, n) {
 						return {
@@ -52,10 +52,7 @@
 								}
 							},
 							nightModeActive: () => t,
-							sendEvent: () => n,
-							stripe: {
-								apiKey: ""
-							}
+							sendEvent: () => n
 						}
 					}(e, t, n));
 					return u
@@ -112,7 +109,7 @@
 					let {
 						onClose: t
 					} = e;
-					const n = Object(c.e)(_.Cb),
+					const n = Object(c.e)(_.Db),
 						r = Object(c.e)(e => {
 							var t;
 							return null === (t = Object(v.a)(e)) || void 0 === t ? void 0 : t.claimId
@@ -121,7 +118,7 @@
 					if (!n || !r) return null;
 					return s.a.createElement("div", {
 						className: C.a.container
-					}, s.a.createElement(p.a, null, s.a.createElement(o.a, {
+					}, s.a.createElement(p.a, null, s.a.createElement(o.b, {
 						onClose: t,
 						userId: n,
 						onViewAvatar: e => {
@@ -171,4 +168,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.26730839f4d57b48c988.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.08020a77de5ebc311b1c.js.map

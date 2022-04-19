@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/getFlairData.fdd149423160baf16c1e.js
-// Retrieved at 4/7/2022, 6:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/getFlairData.51bee62622fffb7742c0.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["getFlairData"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, r, t) {
@@ -398,4 +398,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.fdd149423160baf16c1e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/getFlairData.51bee62622fffb7742c0.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.52c328c295c043d37e0e.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.8d02eb95ae528e30a8f0.js
+// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -702,7 +702,7 @@
 							if (a && a.ok) {
 								const t = a.body.data.createEconPayment;
 								if (null === (m = null == t ? void 0 : t.errors) || void 0 === m ? void 0 : m.length) return e(Object(h.paypalApiError)(P(t.errors))), null;
-								const r = Object(g.k)(c());
+								const r = Object(g.l)(c());
 								if (t.ok) {
 									const {
 										status: e
@@ -1266,7 +1266,7 @@
 						} = o;
 						t(g());
 						const l = r(),
-							u = Object(s.Q)(l);
+							u = Object(s.R)(l);
 						try {
 							const r = !u,
 								n = await Object(i.b)({
@@ -2289,7 +2289,7 @@
 					className: t,
 					isCompactMode: r = !1
 				} = e;
-				const a = Object(c.e)(O.db),
+				const a = Object(c.e)(O.eb),
 					i = Object(p.a)(),
 					s = Object(c.e)(g.m),
 					b = !!s,
@@ -2365,7 +2365,7 @@
 				const v = Object(u.b)(),
 					k = Object(d.e)(b.l),
 					P = Object(d.e)(f.g);
-				if (Object(d.e)(h.w)) return o.a.createElement("div", {
+				if (Object(d.e)(h.x)) return o.a.createElement("div", {
 					className: Object(c.a)(g.a.buttons, t, {
 						[g.a.hero]: !!r
 					})
@@ -2489,9 +2489,9 @@
 				}),
 				L = Object(d.c)({
 					goldExpiration: e => e.user.account && e.user.account.goldExpiration || 0,
-					isGold: I.v,
-					isPremiumSubscriber: I.w,
-					isLoggedIn: I.Q,
+					isGold: I.w,
+					isPremiumSubscriber: I.x,
+					isLoggedIn: I.R,
 					premiumPackages: N.l,
 					purchaseCatalogPending: N.o
 				}),
@@ -2758,4 +2758,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.52c328c295c043d37e0e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.8d02eb95ae528e30a8f0.js.map
