@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReredditLink.ae7b075964969fba5124.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReredditLink.f98d0bd1150fb7ea5c94.js
+// Retrieved at 4/19/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReredditLink"], {
 		"./src/reddit/components/Widgets/ReredditLink/ImageBlock/index.m.less": function(e, t, n) {
@@ -60,7 +60,8 @@
 					return s.a.createElement("a", {
 						href: l,
 						onClick: i,
-						target: "_blank"
+						target: "_blank",
+						rel: "noopener noreferrer"
 					}, s.a.createElement("div", {
 						className: m.a.ImageContainer
 					}, s.a.createElement("img", {
@@ -155,4 +156,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReredditLink.ae7b075964969fba5124.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReredditLink.f98d0bd1150fb7ea5c94.js.map

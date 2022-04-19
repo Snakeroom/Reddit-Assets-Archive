@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.a975021e4cfedf5e80a6.js
-// Retrieved at 4/19/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.d7661b04aea686f5b3b0.js
+// Retrieved at 4/19/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -549,7 +549,8 @@
 					}, "This event is invalid. ", a.a.createElement("br", null), a.a.createElement("a", {
 						className: G.a.Link,
 						href: this.getUrlToSchema(),
-						target: "_blank"
+						target: "_blank",
+						rel: "noopener noreferrer"
 					}, this.validationError.message))), this.eventStatus === me.VALID && a.a.createElement(a.a.Fragment, null, a.a.createElement(ve.a, {
 						className: Object(N.a)(G.a.icon, G.a.successIcon)
 					}), a.a.createElement("span", {
@@ -557,7 +558,8 @@
 					}, "This event matches its schema.", a.a.createElement("a", {
 						className: G.a.Link,
 						href: this.getUrlToSchema(),
-						target: "_blank"
+						target: "_blank",
+						rel: "noopener noreferrer"
 					}, "View schema."))), this.eventStatus === me.MISSINGSCHEMA && a.a.createElement(a.a.Fragment, null, a.a.createElement(Ee.a, {
 						className: Object(N.a)(G.a.icon, G.a.warningIcon)
 					}), a.a.createElement("span", {
@@ -565,7 +567,8 @@
 					}, "This event has no schema.", a.a.createElement("a", {
 						className: G.a.Link,
 						href: "https://github.snooguts.net/reddit/event-schema-registry#how-to-register-event-schemas",
-						target: "_blank"
+						target: "_blank",
+						rel: "noopener noreferrer"
 					}, "Add one.")))), a.a.createElement("span", {
 						className: G.a.Source
 					}, e.source), a.a.createElement("span", {
@@ -1938,4 +1941,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.a975021e4cfedf5e80a6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.d7661b04aea686f5b3b0.js.map

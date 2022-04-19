@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.79b73bd7d41be8d303d7.js
-// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.e4153f07894ea2d94823.js
+// Retrieved at 4/19/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -652,7 +652,8 @@
 							key: e
 						}, !!t && ", ", i.a.createElement("a", {
 							href: S[e],
-							target: "_blank"
+							target: "_blank",
+							rel: "noopener noreferrer"
 						}, O[e] && O[e]()))))), i.a.createElement(_, null, a.fbt._("why are you deactivating this account? (OPTIONAL)", null, {
 							hk: "2JWxx5"
 						})), i.a.createElement(v, {
@@ -698,10 +699,12 @@
 						} = e;
 						return a.fbt._("{text with URL}", [a.fbt._param("text with URL", s ? i.a.createElement(i.a.Fragment, null, "You still have an active Reddit Premium subscription. Since we use a third party payment processor, you will need to go directly to them to cancel your subscription. Here is the link for", i.a.createElement("a", {
 							href: S[t],
-							target: "_blank"
+							target: "_blank",
+							rel: "noopener noreferrer"
 						}, " ", O[t] && O[t]()), ". When you are finished cancelling your premium subscription, return here to fully deactivate your account.") : i.a.createElement(i.a.Fragment, null, "You still have an active Reddit Premium subscription. You will need to cancel your subscription for", i.a.createElement("a", {
 							href: S[t],
-							target: "_blank"
+							target: "_blank",
+							rel: "noopener noreferrer"
 						}, " ", O[t] && O[t]()), ". When you are finished cancelling your premium subscription, return here to fully deactivate your account."))], {
 							hk: "1lLr9b"
 						})
@@ -1037,4 +1040,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.79b73bd7d41be8d303d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.e4153f07894ea2d94823.js.map

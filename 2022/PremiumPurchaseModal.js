@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.b5a87b0688e951801db0.js
-// Retrieved at 4/19/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.3a525b4025a1ee6330e4.js
+// Retrieved at 4/19/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1915,7 +1915,8 @@
 						})
 					}), a.a.createElement("a", {
 						href: "https://stripe.com",
-						target: "_blank"
+						target: "_blank",
+						rel: "noopener noreferrer"
 					}, a.a.createElement("img", {
 						className: x.a.poweredByStripeIcon,
 						src: `${y.a.assetPath}/img/payment-icons/powered-by-stripe.png`
@@ -3416,4 +3417,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.b5a87b0688e951801db0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.3a525b4025a1ee6330e4.js.map

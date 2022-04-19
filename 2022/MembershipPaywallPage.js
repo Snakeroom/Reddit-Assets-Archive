@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.f5fa11c2913635d9818a.js
-// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.6d1d720c5e2ab491edf8.js
+// Retrieved at 4/19/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3924,7 +3924,8 @@
 					className: Object(r.a)(d.a.container, e.className)
 				}, i.a.createElement("a", {
 					href: "https://www.reddit.com/r/FortNiteBR/comments/8fvy7o/these_items_are_cosmetic_only_and_grant_no/",
-					target: "_blank"
+					target: "_blank",
+					rel: "noopener noreferrer"
 				}, i.a.createElement(a.a, {
 					scrollRange: t
 				}, t => i.a.createElement("img", {
@@ -4525,7 +4526,8 @@
 						className: ae.a.header
 					}, i.a.createElement("a", {
 						href: "https://www.reddit.com/r/FortNiteBR/comments/9067f2/i_have_been_playing_50v50_a_little_differently/",
-						target: "_blank"
+						target: "_blank",
+						rel: "noopener noreferrer"
 					}, i.a.createElement("img", {
 						className: ae.a.rescuerLegs,
 						src: Object(S.a)(s, "rescuer_legs@2x.png")
@@ -5123,7 +5125,8 @@
 				}))), k(e.subreddit.id).animations && i.a.createElement("a", {
 					className: Ke.a.link,
 					href: "https://www.reddit.com/r/FortNiteBR/comments/a8mhn8/24_players_plays_all_i_want_for_christmas_is_you/",
-					target: "_blank"
+					target: "_blank",
+					rel: "noopener noreferrer"
 				}, i.a.createElement("img", {
 					className: Ke.a.pianoKeyboard,
 					src: Object(S.a)(e.subreddit, "piano_keyboard@2x.png")
@@ -6103,7 +6106,8 @@
 					hk: "3PyKKB"
 				})), k(s.id).animations && i.a.createElement("a", {
 					href: "https://www.reddit.com/r/FortNiteBR/comments/a1hxn4/the_moment_my_son_discovered_that_his_skin/",
-					target: "_blank"
+					target: "_blank",
+					rel: "noopener noreferrer"
 				}, i.a.createElement(O.a, {
 					scrollRange: Ws
 				}, e => i.a.createElement("img", {
@@ -6696,4 +6700,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.f5fa11c2913635d9818a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.6d1d720c5e2ab491edf8.js.map

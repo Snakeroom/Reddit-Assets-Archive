@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.723c7ed553de13aa42ea.js
-// Retrieved at 4/19/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.e860c3194adf552f87c3.js
+// Retrieved at 4/19/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -5497,7 +5497,8 @@
 							key: e
 						}, !!t && ", ", a.a.createElement("a", {
 							href: w[e],
-							target: "_blank"
+							target: "_blank",
+							rel: "noopener noreferrer"
 						}, S[e] && S[e]()))))), a.a.createElement(y, null, s.fbt._("why are you deactivating this account? (OPTIONAL)", null, {
 							hk: "2JWxx5"
 						})), a.a.createElement(x, {
@@ -5543,10 +5544,12 @@
 						} = e;
 						return s.fbt._("{text with URL}", [s.fbt._param("text with URL", n ? a.a.createElement(a.a.Fragment, null, "You still have an active Reddit Premium subscription. Since we use a third party payment processor, you will need to go directly to them to cancel your subscription. Here is the link for", a.a.createElement("a", {
 							href: w[t],
-							target: "_blank"
+							target: "_blank",
+							rel: "noopener noreferrer"
 						}, " ", S[t] && S[t]()), ". When you are finished cancelling your premium subscription, return here to fully deactivate your account.") : a.a.createElement(a.a.Fragment, null, "You still have an active Reddit Premium subscription. You will need to cancel your subscription for", a.a.createElement("a", {
 							href: w[t],
-							target: "_blank"
+							target: "_blank",
+							rel: "noopener noreferrer"
 						}, " ", S[t] && S[t]()), ". When you are finished cancelling your premium subscription, return here to fully deactivate your account."))], {
 							hk: "1lLr9b"
 						})
@@ -14436,4 +14439,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.723c7ed553de13aa42ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e860c3194adf552f87c3.js.map

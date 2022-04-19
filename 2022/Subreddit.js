@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.d8476b832926b994f472.js
-// Retrieved at 4/19/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.c6ab782a61801d36f843.js
+// Retrieved at 4/19/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -5614,7 +5614,8 @@
 					subtitle: o.a.createElement("span", null, s.fbt._("This community is {=quarantined}", [s.fbt._param("=quarantined", o.a.createElement("a", {
 						className: h.a.link,
 						href: "https://www.reddithelp.com/en/categories/reddit-101/rules-reporting/account-and-community-restrictions/quarantined-subreddits",
-						target: "_blank"
+						target: "_blank",
+						rel: "noopener noreferrer"
 					}, s.fbt._("quarantined", null, {
 						hk: "2XqfJa"
 					})))], {
@@ -15220,4 +15221,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.d8476b832926b994f472.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.c6ab782a61801d36f843.js.map

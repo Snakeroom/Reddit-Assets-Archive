@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.bf2da61f598abae8d32e.js
-// Retrieved at 4/19/2022, 4:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.2304d491a339678ee943.js
+// Retrieved at 4/19/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -1414,7 +1414,8 @@
 						className: Ke.a.linkContainer,
 						href: this.props.href,
 						onClick: this.viewHelpInfo,
-						target: "_blank"
+						target: "_blank",
+						rel: "noopener noreferrer"
 					}, r.a.createElement(Ve.a, {
 						className: Ke.a.infoIcon
 					}), this.props.children)
@@ -9450,4 +9451,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.bf2da61f598abae8d32e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.2304d491a339678ee943.js.map
