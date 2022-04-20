@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.f60e1ffa4b161271a1ec.js
-// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.9d5705e7b389071599c4.js
+// Retrieved at 4/20/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -99,8 +99,8 @@
 				y = s("./src/reddit/selectors/gold/econPurchase.ts"),
 				C = s("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				P = s("./src/reddit/selectors/posts.ts"),
-				L = s("./src/reddit/selectors/subreddit.ts"),
-				G = s("./src/reddit/selectors/user.ts"),
+				G = s("./src/reddit/selectors/subreddit.ts"),
+				L = s("./src/reddit/selectors/user.ts"),
 				S = s("./src/lib/makeGqlRequest/index.ts"),
 				K = s("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				N = s("./src/redditGQL/operations/GildComment.json"),
@@ -133,32 +133,35 @@
 					let {
 						gqlContext: i
 					} = a;
-					const n = d().gild,
+					const n = d(),
+						c = n.gild,
+						o = Object(F.a)(e) && Object(h.p)(Object(P.G)(n, {
+							postId: e
+						})),
 						{
-							isOldReddit: c,
-							isLivestream: o
+							isOldReddit: l
 						} = t;
 					s(W());
 					try {
 						const t = {
-								gildingTypeId: n.selectedAward.id,
-								isAnonymous: n.isAnonymous,
+								gildingTypeId: c.selectedAward.id,
+								isAnonymous: c.isAnonymous,
 								isGildFunded: !1,
-								message: Object(M.d)(n.message, n.selectedAward, o),
+								message: Object(M.d)(c.message, c.selectedAward, o),
 								nodeId: e
 							},
 							d = Object(F.a)(e) ? D : E,
 							a = await d(i(), {
 								input: t
-							}, c);
-						let l = !1,
+							}, l);
+						let n = !1,
 							u = null,
 							b = null;
 						if (a.ok) {
 							const e = a.body;
-							l = e.data.gild.ok, u = e.data.gild.fieldErrors, b = e.data.gild.errors
+							n = e.data.gild.ok, u = e.data.gild.fieldErrors, b = e.data.gild.errors
 						}
-						if (l) {
+						if (n) {
 							const t = a.body,
 								{
 									gild: r
@@ -166,16 +169,16 @@
 								d = Object(F.a)(e) ? a.body.data.gild.postInfo : a.body.data.gild.comment,
 								{
 									awardings: i,
-									treatmentTags: c
+									treatmentTags: n
 								} = d;
 							await s(de({
-								awardId: n.selectedAward.id,
+								awardId: c.selectedAward.id,
 								awardings: i,
 								awardKarmaReceived: r.awardKarmaReceived,
 								coins: r.coins,
 								id: e,
 								subredditCoins: r.subredditCoins,
-								treatmentTags: c
+								treatmentTags: n
 							}))
 						} else {
 							const e = u && u[0] && u[0].message,
@@ -185,8 +188,8 @@
 								});
 							await s(te(d))
 						}
-					} catch (l) {
-						const e = l,
+					} catch (u) {
+						const e = u,
 							t = e && e.message || r.fbt._("An unknown error occurred", null, {
 								hk: "2oAbwZ"
 							});
@@ -211,9 +214,9 @@
 						postId: s
 					}) : Object(k.b)(e, {
 						commentId: s
-					}), d = Object(G.l)(e), a = e.gild, {
+					}), d = Object(L.l)(e), a = e.gild, {
 						isAnonymous: i
-					} = a, n = !i && d && (d.username || d.displayText) ? d.username || d.displayText : void 0, c = r ? r.author : void 0, o = Object(L.J)(e, {
+					} = a, n = !i && d && (d.username || d.displayText) ? d.username || d.displayText : void 0, c = r ? r.author : void 0, o = Object(G.J)(e, {
 						thingId: s
 					});
 					return se({
@@ -230,7 +233,7 @@
 						} = e,
 						g = Object(A.a)(d, u),
 						f = e.awardKarmaReceived,
-						w = Object(G.l)(d),
+						w = Object(L.l)(d),
 						k = Object(x.b)(d) || Object(q.e)(q.a.GildingFlow, !1);
 					if (Object(x.g)(d)) {
 						const e = "success.gild",
@@ -246,10 +249,10 @@
 						})
 					}
 					if (g.awardType === m.f.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(L.J)(d, {
+						const t = Object(G.J)(d, {
 								thingId: b
 							}),
-							s = t && Object(L.B)(d, {
+							s = t && Object(G.B)(d, {
 								subredditName: t.name
 							});
 						s && (e.subredditCoins = s - g.coinPrice)
@@ -323,7 +326,7 @@
 							})), a ? s : r)
 						}
 					}
-					const E = Object(L.J)(d, {
+					const E = Object(G.J)(d, {
 						thingId: b
 					});
 					if (E && Object(y.a)(d, {
@@ -436,4 +439,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.f60e1ffa4b161271a1ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.9d5705e7b389071599c4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.0436fe6a74e148783014.js
-// Retrieved at 4/19/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.d87403d48ba5b17571ec.js
+// Retrieved at 4/20/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -2817,7 +2817,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(o.e)(i.r) ? r.a.createElement(d, {
+					return Object(o.e)(i.s) ? r.a.createElement(d, {
 						className: t
 					}) : r.a.createElement(a, {
 						className: t
@@ -4265,9 +4265,9 @@
 				let {
 					subredditId: t
 				} = e;
-				const n = Object(o.e)(i.q),
-					s = Object(o.e)(i.p),
-					a = Object(o.e)(i.o);
+				const n = Object(o.e)(i.r),
+					s = Object(o.e)(i.q),
+					a = Object(o.e)(i.p);
 				return r.a.createElement("div", {
 					className: ee.a.container
 				}, n && r.a.createElement(k, {
@@ -14612,91 +14612,93 @@
 		},
 		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "r", (function() {
+			n.d(t, "h", (function() {
 				return o
-			})), n.d(t, "t", (function() {
+			})), n.d(t, "s", (function() {
 				return i
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "u", (function() {
 				return a
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "o", (function() {
 				return c
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "n", (function() {
 				return d
 			})), n.d(t, "q", (function() {
 				return l
-			})), n.d(t, "w", (function() {
+			})), n.d(t, "r", (function() {
 				return u
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "x", (function() {
 				return m
 			})), n.d(t, "v", (function() {
 				return p
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "w", (function() {
 				return b
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "p", (function() {
 				return h
-			})), n.d(t, "h", (function() {
-				return f
-			})), n.d(t, "f", (function() {
-				return x
-			})), n.d(t, "b", (function() {
-				return g
-			})), n.d(t, "d", (function() {
-				return v
-			})), n.d(t, "e", (function() {
-				return E
-			})), n.d(t, "g", (function() {
-				return y
-			})), n.d(t, "c", (function() {
-				return O
 			})), n.d(t, "j", (function() {
+				return f
+			})), n.d(t, "i", (function() {
+				return x
+			})), n.d(t, "f", (function() {
+				return g
+			})), n.d(t, "b", (function() {
+				return v
+			})), n.d(t, "d", (function() {
+				return E
+			})), n.d(t, "e", (function() {
+				return y
+			})), n.d(t, "g", (function() {
+				return O
+			})), n.d(t, "c", (function() {
 				return _
 			})), n.d(t, "k", (function() {
 				return j
 			})), n.d(t, "l", (function() {
 				return C
-			})), n.d(t, "s", (function() {
+			})), n.d(t, "m", (function() {
 				return N
-			})), n.d(t, "x", (function() {
+			})), n.d(t, "t", (function() {
 				return k
 			})), n.d(t, "y", (function() {
 				return S
-			})), n.d(t, "A", (function() {
-				return P
-			})), n.d(t, "a", (function() {
-				return I
 			})), n.d(t, "z", (function() {
+				return P
+			})), n.d(t, "B", (function() {
+				return I
+			})), n.d(t, "a", (function() {
 				return w
+			})), n.d(t, "A", (function() {
+				return T
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			Object(r.a)(s.fd);
-			const o = Object(r.a)(s.dd),
-				i = Object(r.a)(s.gd),
-				a = Object(r.a)(s.Yc),
-				c = (Object(r.a)(s.Zc), Object(r.a)(s.Xc)),
-				d = Object(r.a)(s.bd),
-				l = Object(r.a)(s.cd),
-				u = Object(r.a)(s.jd),
-				m = Object(r.a)(s.hd),
-				p = Object(r.a)(s.id),
-				b = Object(r.a)(s.ad),
-				h = Object(r.a)(s.Tc),
-				f = Object(r.a)(s.Rc),
-				x = Object(r.a)(s.Kc),
-				g = Object(r.a)(s.Gc),
-				v = Object(r.a)(s.Ic),
-				E = Object(r.a)(s.Jc),
-				y = Object(r.a)(s.Mc),
-				O = Object(r.a)(s.Hc),
-				_ = Object(r.a)(s.Uc),
-				j = Object(r.a)(s.Vc),
-				C = Object(r.a)(s.Wc),
-				N = Object(r.a)(s.ed),
-				k = Object(r.a)(s.kd),
-				S = Object(r.a)(s.od),
-				P = Object(r.a)(s.nd),
-				I = Object(r.a)(s.If),
-				w = Object(r.a)(s.md)
+			const o = Object(r.a)(s.fd),
+				i = Object(r.a)(s.dd),
+				a = Object(r.a)(s.gd),
+				c = Object(r.a)(s.Yc),
+				d = (Object(r.a)(s.Zc), Object(r.a)(s.Xc)),
+				l = Object(r.a)(s.bd),
+				u = Object(r.a)(s.cd),
+				m = Object(r.a)(s.jd),
+				p = Object(r.a)(s.hd),
+				b = Object(r.a)(s.id),
+				h = Object(r.a)(s.ad),
+				f = Object(r.a)(s.Tc),
+				x = Object(r.a)(s.Rc),
+				g = Object(r.a)(s.Kc),
+				v = Object(r.a)(s.Gc),
+				E = Object(r.a)(s.Ic),
+				y = Object(r.a)(s.Jc),
+				O = Object(r.a)(s.Mc),
+				_ = Object(r.a)(s.Hc),
+				j = Object(r.a)(s.Uc),
+				C = Object(r.a)(s.Vc),
+				N = Object(r.a)(s.Wc),
+				k = Object(r.a)(s.ed),
+				S = Object(r.a)(s.kd),
+				P = Object(r.a)(s.od),
+				I = Object(r.a)(s.nd),
+				w = Object(r.a)(s.If),
+				T = Object(r.a)(s.md)
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
 			"use strict";
@@ -15309,4 +15311,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0436fe6a74e148783014.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.d87403d48ba5b17571ec.js.map

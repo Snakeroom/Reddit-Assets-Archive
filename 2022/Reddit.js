@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.6c69eea9fb8ee2743474.js
-// Retrieved at 4/19/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.d2affbb98ba0630da2bd.js
+// Retrieved at 4/20/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -5160,10 +5160,10 @@
 							s = new Fs.a("id"),
 							o = Object(ps.a)(e),
 							a = Object(at.qb)(e),
-							i = Object(Rs.o)(e),
+							i = Object(Rs.p)(e),
 							c = [];
 						i || c.push(Kn.Predictions);
-						const l = (e => Object(Rs.w)(e) ? [Zs, Ys, Xs, $s, er, tr] : [Ys, Zs, Xs, $s, er, tr])(e),
+						const l = (e => Object(Rs.x)(e) ? [Zs, Ys, Xs, $s, er, tr] : [Ys, Zs, Xs, $s, er, tr])(e),
 							d = c.length ? l.filter(e => !c.includes(e(null).id)) : l;
 						if (n.account) {
 							const o = n.account;
@@ -7906,8 +7906,8 @@
 					y(!1)
 				}, [e.isOpen]);
 				const E = g && g.id,
-					P = Object(p.e)(Rs.o),
-					j = Object(p.e)(t => e.isOpen && Object(Rs.w)(t)),
+					P = Object(p.e)(Rs.p),
+					j = Object(p.e)(t => e.isOpen && Object(Rs.x)(t)),
 					_ = Object(p.e)(ps.a),
 					S = Object(p.e)(Rs.a);
 				Object(u.useEffect)(() => {
@@ -19336,4 +19336,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.6c69eea9fb8ee2743474.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d2affbb98ba0630da2bd.js.map

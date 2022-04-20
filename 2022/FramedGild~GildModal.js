@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0589803630be87aa24ca.js
-// Retrieved at 4/19/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.1322965cca1bda8df373.js
+// Retrieved at 4/20/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -950,32 +950,35 @@
 					let {
 						gqlContext: o
 					} = a;
-					const i = s().gild,
+					const i = s(),
+						c = i.gild,
+						d = Object(U.a)(e) && Object(v.p)(Object(P.G)(i, {
+							postId: e
+						})),
 						{
-							isOldReddit: c,
-							isLivestream: d
+							isOldReddit: l
 						} = t;
 					r($());
 					try {
 						const t = {
-								gildingTypeId: i.selectedAward.id,
-								isAnonymous: i.isAnonymous,
+								gildingTypeId: c.selectedAward.id,
+								isAnonymous: c.isAnonymous,
 								isGildFunded: !1,
-								message: Object(G.d)(i.message, i.selectedAward, d),
+								message: Object(G.d)(c.message, c.selectedAward, d),
 								nodeId: e
 							},
 							s = Object(U.a)(e) ? B : R,
 							a = await s(o(), {
 								input: t
-							}, c);
-						let l = !1,
+							}, l);
+						let i = !1,
 							u = null,
 							m = null;
 						if (a.ok) {
 							const e = a.body;
-							l = e.data.gild.ok, u = e.data.gild.fieldErrors, m = e.data.gild.errors
+							i = e.data.gild.ok, u = e.data.gild.fieldErrors, m = e.data.gild.errors
 						}
-						if (l) {
+						if (i) {
 							const t = a.body,
 								{
 									gild: n
@@ -983,16 +986,16 @@
 								s = Object(U.a)(e) ? a.body.data.gild.postInfo : a.body.data.gild.comment,
 								{
 									awardings: o,
-									treatmentTags: c
+									treatmentTags: i
 								} = s;
 							await r(se({
-								awardId: i.selectedAward.id,
+								awardId: c.selectedAward.id,
 								awardings: o,
 								awardKarmaReceived: n.awardKarmaReceived,
 								coins: n.coins,
 								id: e,
 								subredditCoins: n.subredditCoins,
-								treatmentTags: c
+								treatmentTags: i
 							}))
 						} else {
 							const e = u && u[0] && u[0].message,
@@ -1002,8 +1005,8 @@
 								});
 							await r(te(s))
 						}
-					} catch (l) {
-						const e = l,
+					} catch (u) {
+						const e = u,
 							t = e && e.message || n.fbt._("An unknown error occurred", null, {
 								hk: "2oAbwZ"
 							});
@@ -1732,7 +1735,7 @@
 						} {
 							const {
 								gildSuccessful: t
-							} = await r.e("gildActions").then(r.bind(null, "./src/reddit/actions/gold/gild.ts"));
+							} = await Promise.resolve().then(r.bind(null, "./src/reddit/actions/gold/gild.ts"));
 							o(f()), o(Object(i.paymentCompleted)({
 								confirmed: !1
 							}));
@@ -1831,7 +1834,7 @@
 							}));
 							const {
 								gildSuccessful: d
-							} = await r.e("gildActions").then(r.bind(null, "./src/reddit/actions/gold/gild.ts"));
+							} = await Promise.resolve().then(r.bind(null, "./src/reddit/actions/gold/gild.ts"));
 							t(d({
 								awardKarmaReceived: n || 0,
 								awardId: g,
@@ -2734,7 +2737,7 @@
 				} = e;
 				const o = Object(Fe.a)(),
 					i = Object(z.b)(),
-					c = Object(a.e)(e => !n && Boolean(Object(M.h)(e)) && Object(Ue.s)(e)),
+					c = Object(a.e)(e => !n && Boolean(Object(M.h)(e)) && Object(Ue.t)(e)),
 					d = c ? He._("Get free Coins with Premium", null, {
 						hk: "3fzsqq"
 					}) : Object(Le.a)(n || 0, {
@@ -2974,12 +2977,11 @@
 						const {
 							gildRequested: e,
 							iFramed: t,
-							isLivestream: r,
-							selectedAward: n,
-							sendEvent: s,
-							thingId: a
+							selectedAward: r,
+							sendEvent: n,
+							thingId: s
 						} = this.props;
-						return s(Object(b.clickConfirmAwardEvent)(a, n)), e(t, !!r)
+						return n(Object(b.clickConfirmAwardEvent)(s, r)), e(t)
 					}
 				}
 				componentWillUnmount() {
@@ -3110,9 +3112,8 @@
 				return {
 					awardsAndTagsRequested: t => e(Object(O.a)(t, s, n && r)),
 					closeGildModal: () => e(Object(w.a)()),
-					gildRequested: (t, r) => e(Object(v.gildGqlRequested)(s, {
-						isOldReddit: t,
-						isLivestream: r
+					gildRequested: t => e(Object(v.gildGqlRequested)(s, {
+						isOldReddit: t
 					})),
 					needPaymentRequested: t => {
 						let {
@@ -5980,4 +5981,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0589803630be87aa24ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.1322965cca1bda8df373.js.map
