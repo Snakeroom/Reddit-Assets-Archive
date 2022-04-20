@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.27d9b44bce6511988c0a.js
-// Retrieved at 4/20/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.3f983889c064ba3ca975.js
+// Retrieved at 4/20/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -314,9 +314,9 @@
 			})), n.d(t, "morePostsLoaded", (function() {
 				return Pe
 			})), n.d(t, "morePostsFailed", (function() {
-				return Le
-			})), n.d(t, "morePostsRequested", (function() {
 				return Me
+			})), n.d(t, "morePostsRequested", (function() {
+				return Le
 			})), n.d(t, "refreshFeed", (function() {
 				return Ge
 			}));
@@ -355,14 +355,14 @@
 				T = n("./src/reddit/selectors/experiments/inAppNotification.ts"),
 				R = n("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				P = n("./src/reddit/selectors/experiments/onboarding.ts"),
-				L = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				M = n("./src/reddit/selectors/experiments/utils.ts");
+				M = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				L = n("./src/reddit/selectors/experiments/utils.ts");
 			const G = e => {
-				const t = Object(L.c)(e, {
-					experimentEligibilitySelector: L.a,
-					experimentName: b.Yb
+				const t = Object(M.c)(e, {
+					experimentEligibilitySelector: M.a,
+					experimentName: b.Zb
 				});
-				return !!Object(M.a)(t)
+				return !!Object(L.a)(t)
 			};
 			var F = n("./src/reddit/selectors/platform.ts"),
 				A = n("./src/reddit/selectors/user.ts"),
@@ -397,7 +397,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Lf)(p),
+						includeInterestTopics: !!p && !Object(b.Mf)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: g && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -702,8 +702,8 @@
 						t: Object(re.a)(c, h)
 					})), n(J.m({
 						title: b ? Object(U.a)(a, g) : g
-					})), Object(L.c)(a, {
-						experimentEligibilitySelector: L.a,
+					})), Object(M.c)(a, {
+						experimentEligibilitySelector: M.a,
 						experimentName: "redesign_aa"
 					});
 					const E = Object(ae.a)(a, {});
@@ -725,7 +725,7 @@
 					const r = n(),
 						s = r.platform.currentPage.routeMatch.match;
 					Object(ce.o)(r) || Object(ce.u)(r) || (e || t(we()), await t(Se(s, !0)))
-				}, Re = Object(le.a)(Oe.g), Pe = Object(le.a)(Oe.f), Le = Object(le.a)(Oe.e), Me = e => async (t, n, r) => {
+				}, Re = Object(le.a)(Oe.g), Pe = Object(le.a)(Oe.f), Me = Object(le.a)(Oe.e), Le = e => async (t, n, r) => {
 					let {
 						gqlContext: s
 					} = r;
@@ -781,7 +781,7 @@
 								...x
 							})), Object(pe.b)(Z.a.NextPageLoad)(n());
 							else {
-								t(Le({
+								t(Me({
 									key: m,
 									error: g.error,
 									fetchedToken: p.token,
@@ -1073,8 +1073,8 @@
 					definedGender: null,
 					genderCategory: I.a.OPT_OUT
 				},
-				L = e => e === I.a.USER_DEFINED;
-			var M = e => {
+				M = e => e === I.a.USER_DEFINED;
+			var L = e => {
 					let {
 						selectedGenderOption: t,
 						setSelectedGenderOption: n
@@ -1089,26 +1089,26 @@
 					const l = e => {
 							var t;
 							let n = null;
-							return L(e) && (n = (null === (t = s.current) || void 0 === t ? void 0 : t.value) || "", d(n)), {
+							return M(e) && (n = (null === (t = s.current) || void 0 === t ? void 0 : t.value) || "", d(n)), {
 								definedGender: n,
 								genderCategory: e
 							}
 						},
 						u = Object(o.useCallback)(e => {
 							var t;
-							r(Object(R.i)()), n(l(e)), L(e) && (null === (t = s.current) || void 0 === t || t.focus())
+							r(Object(R.i)()), n(l(e)), M(e) && (null === (t = s.current) || void 0 === t || t.focus())
 						}, [r, n]),
 						m = Object(o.useCallback)(e => {
 							u(e.value), e.focus()
 						}, [u]),
 						p = Object(o.useCallback)(e => {
-							if (!t || !L(t.genderCategory)) {
+							if (!t || !M(t.genderCategory)) {
 								const t = i.current[e];
 								t && u(t.value)
 							}
 						}, [u, t]),
 						b = (e, r) => {
-							const o = L(e.key);
+							const o = M(e.key);
 							return a.a.createElement("label", {
 								key: e.key
 							}, a.a.createElement("input", {
@@ -1556,7 +1556,7 @@
 				return a.a.createElement("div", {
 					className: fe.a.SelectedComponent,
 					ref: g
-				}, t === ge.GENDER && a.a.createElement(M, {
+				}, t === ge.GENDER && a.a.createElement(L, {
 					selectedGenderOption: f,
 					setSelectedGenderOption: h
 				}), t === ge.INTERESTS && a.a.createElement(pe, {
@@ -1674,7 +1674,7 @@
 					})
 				}
 				return null
-			}, Le = async e => {
+			}, Me = async e => {
 				const t = Object(ke.b)();
 				if (null == t ? void 0 : t.length) {
 					const n = t.map(e => e.id),
@@ -1683,7 +1683,7 @@
 				}
 				return null
 			};
-			var Me = n("./src/reddit/helpers/graphql/normalizeInterestTopicsFromGql/index.ts"),
+			var Le = n("./src/reddit/helpers/graphql/normalizeInterestTopicsFromGql/index.ts"),
 				Ge = n("./src/redditGQL/operations/InterestTopics.json"),
 				Fe = n("./src/redditGQL/operations/UpdateTopicPreferences.json");
 			const Ae = async e => {
@@ -1702,7 +1702,7 @@
 				if (!t.ok) return null;
 				const n = t.body,
 					r = null == n ? void 0 : n.data.interestTopics;
-				return r ? Object(Me.a)(r) : null
+				return r ? Object(Le.a)(r) : null
 			}, De = (e, t) => ((e, t) => Object(Ce.a)(e, {
 				...Fe,
 				variables: t
@@ -1747,7 +1747,7 @@
 				};
 				try {
 					n.recommendedCommunities = await (async (e, t) => {
-						const n = [Pe(t), Le(e)],
+						const n = [Pe(t), Me(e)],
 							[r, s] = await Promise.all(n);
 						return _e()([...s || [], ...r || []], e => e.id).filter(e => !e.isSubscribed)
 					})(e, t)
@@ -1784,21 +1784,21 @@
 				} = e, r = Object(i.d)(), s = Object(x.a)(), c = Object(i.e)(Qe.a), p = $e(c), b = p ? ge.INTERESTS : ge.GENDER, [f, h] = Object(o.useState)(b), [v, O] = Object(o.useState)(null), C = Object(i.e)(Ke.a), [j, _] = Object(o.useState)(p), k = {
 					topics: [],
 					schemeName: void 0
-				}, [N, S] = Object(o.useState)(k), [w, M] = Object(o.useState)(!1), [G, F] = Object(o.useState)($e(c) && (null == c ? void 0 : c.selectedInterests) || {}), [D, B] = Object(o.useState)(!1), [q, V] = Object(o.useState)([]), [W, Q] = Object(o.useState)([]), [H, U] = Object(o.useState)({}), {
+				}, [N, S] = Object(o.useState)(k), [w, L] = Object(o.useState)(!1), [G, F] = Object(o.useState)($e(c) && (null == c ? void 0 : c.selectedInterests) || {}), [D, B] = Object(o.useState)(!1), [q, V] = Object(o.useState)([]), [W, Q] = Object(o.useState)([]), [H, U] = Object(o.useState)({}), {
 					avatarImage: z,
 					fetchRandomAvatar: K,
 					saveAvatar: J
 				} = E();
 				Object(o.useEffect)(() => {
 					(j || C) && async function() {
-						M(!0);
+						L(!0);
 						const e = await Ae(t);
-						M(!1), e && S(e)
+						L(!1), e && S(e)
 					}()
 				}, [j, C, t]), Object(o.useEffect)(() => {
 					C && Object(Be.a)(null == v ? void 0 : v.genderCategory, C.success)
 				}, [C, v]);
-				const X = Object(i.e)(Ue.a) === ve.jb.Removed;
+				const X = Object(i.e)(Ue.a) === ve.kb.Removed;
 				Object(o.useEffect)(() => {
 					let e = !1;
 					return async function() {
@@ -1835,7 +1835,7 @@
 						}()
 					}, [t, G]),
 					te = Object(o.useCallback)(e => {
-						M(!0), h(ge.INTERESTS), r(Object(Je.a)(e))
+						L(!0), h(ge.INTERESTS), r(Object(Je.a)(e))
 					}, [r]),
 					ne = Object(o.useCallback)(async () => {
 						s(Object(R.k)()), te(v || P)
@@ -1869,7 +1869,7 @@
 					}, [Y, s, f, oe]),
 					pe = Object.keys(H).length,
 					be = Object.keys(G).length,
-					he = f === ge.GENDER && !(e => !!e && (!L(null == e ? void 0 : e.genderCategory) || !!(e.definedGender && e.definedGender.length <= I.b)))(v) || f === ge.INTERESTS && be < (p ? 1 : 3) || f === ge.COMMUNITIES && pe < 1;
+					he = f === ge.GENDER && !(e => !!e && (!M(null == e ? void 0 : e.genderCategory) || !!(e.definedGender && e.definedGender.length <= I.b)))(v) || f === ge.INTERESTS && be < (p ? 1 : 3) || f === ge.COMMUNITIES && pe < 1;
 				if (f === ge.CELEBRATION || f === ge.AVATAR && !ce) return a.a.createElement(y, null);
 				let Ee;
 				return p ? Ee = a.a.createElement("button", {
@@ -2483,8 +2483,8 @@
 				T = n("./node_modules/lodash/range.js"),
 				R = n.n(T),
 				P = n("./src/reddit/controls/Button/index.tsx"),
-				L = n("./src/reddit/layout/row/Inline/index.tsx"),
-				M = n("./src/reddit/models/Flair/index.ts"),
+				M = n("./src/reddit/layout/row/Inline/index.tsx"),
+				L = n("./src/reddit/models/Flair/index.ts"),
 				G = n("./src/reddit/selectors/tooltip.ts"),
 				F = n("./src/reddit/selectors/user.ts"),
 				A = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
@@ -2550,9 +2550,9 @@
 				se = g.a.wrapped(ne, "NSFWFlair", D.a),
 				oe = e => {
 					switch (e.flair) {
-						case M.f.Nsfw:
+						case L.f.Nsfw:
 							return s.a.createElement(se, null, "NSFW");
-						case M.f.Spoiler:
+						case L.f.Spoiler:
 							return s.a.createElement(re, null, "SPOILER");
 						default:
 							return null
@@ -2565,7 +2565,7 @@
 						disabled: e.disabled,
 						indent: e.indent,
 						last: e.last
-					}, s.a.createElement(z, null, s.a.createElement(L.a, null, s.a.createElement("label", {
+					}, s.a.createElement(z, null, s.a.createElement(M.a, null, s.a.createElement("label", {
 						htmlFor: t
 					}, s.a.createElement(W, null, e.label))), s.a.createElement(Q, null, e.subtext)), s.a.createElement(K, null, s.a.createElement(U, null, e.tooltip && s.a.createElement(H, {
 						tooltipContentClass: e.tooltipContentClassName,
@@ -2598,7 +2598,7 @@
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && s.a.createElement(L.a, null, s.a.createElement(W, null, e.label)), !e.hideSubtext && s.a.createElement(Q, null, " ", s.a.createElement(ue, {
+				}, !e.inModal && s.a.createElement(M.a, null, s.a.createElement(W, null, e.label)), !e.hideSubtext && s.a.createElement(Q, null, " ", s.a.createElement(ue, {
 					style: {
 						color: e.ticks[e.value].color
 					}
@@ -2630,7 +2630,7 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, s.a.createElement(z, null, s.a.createElement(L.a, null, s.a.createElement(W, null, e.label)), s.a.createElement(Q, null, e.subtext)), s.a.createElement(K, null, s.a.createElement(U, null, s.a.createElement(P.o, {
+				}, s.a.createElement(z, null, s.a.createElement(M.a, null, s.a.createElement(W, null, e.label)), s.a.createElement(Q, null, e.subtext)), s.a.createElement(K, null, s.a.createElement(U, null, s.a.createElement(P.o, {
 					onClick: e.onClick
 				}, e.actionText)))),
 				fe = e => s.a.createElement(J, {
@@ -3990,13 +3990,13 @@
 				const t = (e => {
 						return Object(s.c)(e, {
 							experimentEligibilitySelector: s.a,
-							experimentName: r.Xd
-						}) === r.qd
+							experimentName: r.Yd
+						}) === r.rd
 					})(e),
 					n = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Wd
-					}) === r.qd;
+						experimentName: r.Xd
+					}) === r.rd;
 				return t && !n
 			}
 		},
@@ -4016,20 +4016,20 @@
 				o = n("./src/reddit/selectors/experiments/index.ts"),
 				a = n("./src/reddit/selectors/experiments/utils.ts");
 			const i = e => Object(s.c)(e, {
-					experimentName: r.Jb,
+					experimentName: r.Kb,
 					experimentEligibilitySelector: o.e
-				}) === r.W.topOfFeedWithCTAs,
+				}) === r.X.topOfFeedWithCTAs,
 				c = e => (e => Object(s.c)(e, {
-					experimentName: r.Jb,
+					experimentName: r.Kb,
 					experimentEligibilitySelector: o.e
-				}) === r.W.topOfFeedNoCTAs)(e) || i(e),
+				}) === r.X.topOfFeedNoCTAs)(e) || i(e),
 				d = e => Object(s.c)(e, {
-					experimentName: r.Jb,
+					experimentName: r.Kb,
 					experimentEligibilitySelector: o.e
-				}) === r.W.floatInFeed,
+				}) === r.X.floatInFeed,
 				l = e => {
 					const t = Object(s.c)(e, {
-						experimentName: r.Jb,
+						experimentName: r.Kb,
 						experimentEligibilitySelector: o.e
 					});
 					return Object(a.a)(t)
@@ -4168,4 +4168,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.27d9b44bce6511988c0a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.3f983889c064ba3ca975.js.map

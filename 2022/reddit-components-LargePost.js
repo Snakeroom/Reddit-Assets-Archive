@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.fa8d3e03d076ec35da5b.js
-// Retrieved at 4/19/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ea7d28f88188377d6816.js
+// Retrieved at 4/20/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2039,7 +2039,7 @@
 			const xe = Object(a.a)(C.N, e => e.some(he.c)),
 				ve = Object(a.a)(xe, e => e),
 				ye = (e, t) => Object(be.c)(e, {
-					experimentName: fe.Bc,
+					experimentName: fe.Cc,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: n
@@ -2152,7 +2152,7 @@
 						postIds: De,
 						onceInViewport: He,
 						isAdblockAAMitigationEnabled: Ue
-					} = e, Ve = Object(y.a)(), qe = !!e.redditStyle || !!e["data-redditstyle"], ze = qe ? void 0 : m, Ke = Object(l.a)(ge), Je = Oe && Ke, Ge = Object(c.a)(ge), Ze = Object(d.a)(ge), Xe = Object(U.c)(ke), Qe = Object(D.d)(ke), Ye = !!ke.media && ke.media.type === g.o.RTJSON, $e = Re && Ye, et = n ? n - K.a : void 0, tt = !!ke.recommendationContext, nt = !(Q && ie || me) || tt && ie, st = (e => e === fe.Ie.OnlyTitles)(Se) && !Object(ce.a)(ke), ot = (e => e === fe.Ie.MediumHeight)(Se) && !Object(ce.a)(ke), rt = (e => {
+					} = e, Ve = Object(y.a)(), qe = !!e.redditStyle || !!e["data-redditstyle"], ze = qe ? void 0 : m, Ke = Object(l.a)(ge), Je = Oe && Ke, Ge = Object(c.a)(ge), Ze = Object(d.a)(ge), Xe = Object(U.c)(ke), Qe = Object(D.d)(ke), Ye = !!ke.media && ke.media.type === g.o.RTJSON, $e = Re && Ye, et = n ? n - K.a : void 0, tt = !!ke.recommendationContext, nt = !(Q && ie || me) || tt && ie, st = (e => e === fe.Je.OnlyTitles)(Se) && !Object(ce.a)(ke), ot = (e => e === fe.Je.MediumHeight)(Se) && !Object(ce.a)(ke), rt = (e => {
 						var t;
 						const {
 							post: n,
@@ -3471,9 +3471,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: s.Lc
+					experimentName: s.Mc
 				});
-				return !(!t || Object(s.Lf)(t))
+				return !(!t || Object(s.Mf)(t))
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, n) {
@@ -3489,7 +3489,7 @@
 				i = n("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.Lf)(t)
+					return Boolean(t) && !Object(o.Mf)(t)
 				},
 				c = Object(s.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -3503,13 +3503,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.Fe,
+					experimentName: o.Ge,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Ne.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Oe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(i.G, a, (e, t) => c(e, t));
 			Object(s.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.fa8d3e03d076ec35da5b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.ea7d28f88188377d6816.js.map

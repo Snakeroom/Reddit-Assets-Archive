@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.edda57d049b5caacf9c4.js
-// Retrieved at 4/19/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.2f59b1c60ca1627c5e2f.js
+// Retrieved at 4/20/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -679,15 +679,15 @@
 			function Ge(e) {
 				return Object(We.c)(e, {
 					experimentEligibilitySelector: We.a,
-					experimentName: Ae.B
+					experimentName: Ae.C
 				})
 			}
 			var Me = n("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Ae.Td,
+					experimentName: Ae.Ud,
 					experimentEligibilitySelector: We.a
 				}), Me.a),
-				Qe = Object(u.a)(Ue, e => e === Ae.Ud.Enabled);
+				Qe = Object(u.a)(Ue, e => e === Ae.Vd.Enabled);
 			var qe = n("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				Je = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ze = n("./src/reddit/selectors/user.ts");
@@ -708,7 +708,7 @@
 					frontpageLinks: He.b,
 					isOver18: Ze.lb,
 					isInBFFSLeaderboardExperiment: function(e) {
-						return Ge(e) === Ae.A.RotateEven
+						return Ge(e) === Ae.B.RotateEven
 					},
 					bffsLeaderboardVariant: Ge,
 					inRpanTopVideoEntrypointExperiment: Je.e,
@@ -719,8 +719,8 @@
 						return (!t || !n) && function(e) {
 							return Object(We.c)(e, {
 								experimentEligibilitySelector: Ze.R,
-								experimentName: Ae.mc
-							}) === Ae.qd
+								experimentName: Ae.nc
+							}) === Ae.rd
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -744,7 +744,7 @@
 						}
 					}
 					let o, d, c, l, u;
-					n && t === Ae.A.RotateEven ? (o = De.u, d = De.n, c = De.s, l = De.a) : (o = De.t, d = De.j, c = De.r, l = []), u = [o, ...l, ...c], s && u.unshift(d);
+					n && t === Ae.B.RotateEven ? (o = De.u, d = De.n, c = De.s, l = De.a) : (o = De.t, d = De.j, c = De.r, l = []), u = [o, ...l, ...c], s && u.unshift(d);
 					const m = u[r()(u.length - 1)];
 					u = [], m.id !== o.id && u.push(o), s && m.id !== d.id && u.push(d);
 					let b = [...l, ...c];
@@ -2220,4 +2220,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.edda57d049b5caacf9c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.2f59b1c60ca1627c5e2f.js.map

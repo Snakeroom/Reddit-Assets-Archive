@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.8995b35f2c6d2528fff1.js
-// Retrieved at 4/20/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.228fe1cf4923e4b892cb.js
+// Retrieved at 4/20/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -25424,34 +25424,34 @@
 			}));
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(r.a)(o.fd),
-				a = Object(r.a)(o.dd),
-				i = Object(r.a)(o.gd),
-				c = Object(r.a)(o.Yc),
-				d = (Object(r.a)(o.Zc), Object(r.a)(o.Xc)),
-				l = Object(r.a)(o.bd),
-				u = Object(r.a)(o.cd),
-				m = Object(r.a)(o.jd),
-				p = Object(r.a)(o.hd),
-				h = Object(r.a)(o.id),
-				b = Object(r.a)(o.ad),
-				f = Object(r.a)(o.Tc),
-				g = Object(r.a)(o.Rc),
-				C = Object(r.a)(o.Kc),
-				x = Object(r.a)(o.Gc),
-				v = Object(r.a)(o.Ic),
-				E = Object(r.a)(o.Jc),
-				_ = Object(r.a)(o.Mc),
-				O = Object(r.a)(o.Hc),
-				y = Object(r.a)(o.Uc),
-				k = Object(r.a)(o.Vc),
-				j = Object(r.a)(o.Wc),
-				w = Object(r.a)(o.ed),
-				T = Object(r.a)(o.kd),
-				S = Object(r.a)(o.od),
-				P = Object(r.a)(o.nd),
-				I = Object(r.a)(o.If),
-				N = Object(r.a)(o.md)
+			const s = Object(r.a)(o.gd),
+				a = Object(r.a)(o.ed),
+				i = Object(r.a)(o.hd),
+				c = Object(r.a)(o.Zc),
+				d = (Object(r.a)(o.ad), Object(r.a)(o.Yc)),
+				l = Object(r.a)(o.cd),
+				u = Object(r.a)(o.dd),
+				m = Object(r.a)(o.kd),
+				p = Object(r.a)(o.id),
+				h = Object(r.a)(o.jd),
+				b = Object(r.a)(o.bd),
+				f = Object(r.a)(o.Uc),
+				g = Object(r.a)(o.Sc),
+				C = Object(r.a)(o.Lc),
+				x = Object(r.a)(o.Hc),
+				v = Object(r.a)(o.Jc),
+				E = Object(r.a)(o.Kc),
+				_ = Object(r.a)(o.Nc),
+				O = Object(r.a)(o.Ic),
+				y = Object(r.a)(o.Vc),
+				k = Object(r.a)(o.Wc),
+				j = Object(r.a)(o.Xc),
+				w = Object(r.a)(o.fd),
+				T = Object(r.a)(o.ld),
+				S = Object(r.a)(o.pd),
+				P = Object(r.a)(o.od),
+				I = Object(r.a)(o.Jf),
+				N = Object(r.a)(o.nd)
 		},
 		"./src/reddit/selectors/experiments/loggedOutOneFeed.ts": function(e, t, n) {
 			"use strict";
@@ -25469,7 +25469,7 @@
 			const d = Object(o.a)(i.f, a.e, (e, t) => e && !t),
 				l = e => Object(s.c)(e, {
 					experimentEligibilitySelector: d,
-					experimentName: r.Sb
+					experimentName: r.Tb
 				}),
 				u = e => !!Object(c.a)(l(e))
 		},
@@ -25483,14 +25483,14 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-					experimentName: o.ee,
-					experimentEligibilitySelector: r.a
-				}) === o.oe.Enabled,
-				a = e => Object(r.c)(e, {
 					experimentName: o.fe,
+					experimentEligibilitySelector: r.a
+				}) === o.pe.Enabled,
+				a = e => Object(r.c)(e, {
+					experimentName: o.ge,
 					experimentEligibilitySelector: r.a,
 					expEventOverride: !1
-				}) === o.pe.Enabled
+				}) === o.qe.Enabled
 		},
 		"./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -25528,17 +25528,17 @@
 					expEventOverride: t
 				})
 			}
-			const u = l(s.Ub, !0),
-				m = l(s.Ub, !1),
-				p = l(s.Wb, !0),
-				h = (l(s.Wb, !1), l(s.Vb, !0)),
-				b = l(s.Vb, !1),
-				f = l(s.Xb, !0),
-				g = l(s.Xb, !1),
-				C = Object(r.a)(u, p, (e, t) => e === s.sc.Enabled || t === s.tc.Enabled),
-				x = Object(r.a)(h, f, (e, t) => e === s.ib.BlurredPreview || e === s.ib.NoPreview || t === s.ib.BlurredPreview || t === s.ib.NoPreview),
-				v = Object(r.a)(b, g, (e, t) => e === s.ib.BlurredPreview || t === s.ib.BlurredPreview),
-				E = Object(r.a)(h, f, (e, t) => e === s.ib.NoPreview || t === s.ib.NoPreview),
+			const u = l(s.Vb, !0),
+				m = l(s.Vb, !1),
+				p = l(s.Xb, !0),
+				h = (l(s.Xb, !1), l(s.Wb, !0)),
+				b = l(s.Wb, !1),
+				f = l(s.Yb, !0),
+				g = l(s.Yb, !1),
+				C = Object(r.a)(u, p, (e, t) => e === s.tc.Enabled || t === s.uc.Enabled),
+				x = Object(r.a)(h, f, (e, t) => e === s.jb.BlurredPreview || e === s.jb.NoPreview || t === s.jb.BlurredPreview || t === s.jb.NoPreview),
+				v = Object(r.a)(b, g, (e, t) => e === s.jb.BlurredPreview || t === s.jb.BlurredPreview),
+				E = Object(r.a)(h, f, (e, t) => e === s.jb.NoPreview || t === s.jb.NoPreview),
 				_ = Object(r.a)(C, E, v, (e, t, n) => (e || t) && !n),
 				O = e => {
 					const t = v(e),
@@ -25560,8 +25560,8 @@
 			const s = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.Be
-				}) === o.qd
+					experimentName: o.Ce
+				}) === o.rd
 			}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
@@ -25583,29 +25583,29 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.Ff
-					}) === o.qd
+						experimentName: o.Gf
+					}) === o.rd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.Gf
-					}) === o.qd
+						experimentName: o.Hf
+					}) === o.rd
 				},
 				d = e => {
 					if (Object(a.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.Ef
+						experimentName: o.Ff
 					});
-					return t === o.wf.TypingIndicators || t === o.wf.IndicatorsPlusCTA
+					return t === o.xf.TypingIndicators || t === o.xf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(a.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.Ef
+						experimentName: o.Ff
 					});
-					return (null == t ? void 0 : t.variant) === o.wf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.xf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -26118,4 +26118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.8995b35f2c6d2528fff1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.228fe1cf4923e4b892cb.js.map

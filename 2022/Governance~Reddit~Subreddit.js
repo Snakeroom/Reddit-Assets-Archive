@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.756c0a160543f1125516.js
-// Retrieved at 4/19/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.06d2bf4dd1a0275c8b55.js
+// Retrieved at 4/20/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit", "reddit-components-BlankPost"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -3435,7 +3435,7 @@
 					if (!l(e)) return;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: u,
-						experimentName: i.Jd,
+						experimentName: i.Kd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -3458,9 +3458,9 @@
 				},
 				m = e => !!b(e) && Object(s.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: i.Kd,
+					experimentName: i.Ld,
 					expEventOverride: !1
-				}) !== i.Ld.Readonly
+				}) !== i.Md.Readonly
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -3501,7 +3501,7 @@
 					return r ? r * o.Tb < 1639443600180 ? void 0 : I(e) : void 0
 				},
 				I = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.he,
+					experimentName: i.ie,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3512,7 +3512,7 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const i = Object(o.a)(r.t)
+			const i = Object(o.a)(r.u)
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, n) {
 			"use strict";
@@ -3628,4 +3628,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.756c0a160543f1125516.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.06d2bf4dd1a0275c8b55.js.map
