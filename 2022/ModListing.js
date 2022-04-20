@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.53f87028f803a42b546f.js
-// Retrieved at 4/20/2022, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.fd52a565871a90ea8d9b.js
+// Retrieved at 4/20/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -257,7 +257,6 @@
 			e.exports = {
 				overlay: "_1DK52RbaamLOWw5UPaht_S",
 				mIsVisible: "_1acwN_tUhJ8w-n7oCp-Aw3",
-				mIsBlurred: "_3Tq-_9917Q-o0iyzcNAeZn",
 				modal: "_2Bejocqb-InO8686E2ehf"
 			}
 		},
@@ -289,16 +288,14 @@
 			const h = e => {
 				let {
 					className: t,
-					shouldBlurContent: n,
-					isVisible: r,
-					...i
+					isVisible: n,
+					...r
 				} = e;
 				return s.a.createElement("div", p({
 					className: Object(o.a)(m.a.overlay, t, {
-						[m.a.mIsVisible]: r,
-						[m.a.mIsBlurred]: n
+						[m.a.mIsVisible]: n
 					})
-				}, i))
+				}, r))
 			};
 
 			function b(e) {
@@ -329,17 +326,15 @@
 							onOverlayClick: i,
 							overlayClassName: c,
 							overlayCustomStyles: l,
-							shouldBlurContent: u,
-							withOverlay: p,
-							...b
-						} = t, f = b;
+							withOverlay: u,
+							...p
+						} = t, b = p;
 						return s.a.createElement(a.a, {
 							container: document.getElementById(d.b)
 						}, s.a.createElement(h, {
 							className: c,
-							isVisible: p,
+							isVisible: u,
 							onClick: this.onOverlayClick,
-							shouldBlurContent: u,
 							style: l
 						}, s.a.createElement("div", {
 							"aria-modal": !0,
@@ -348,7 +343,7 @@
 							ref: this.getRef,
 							role: "dialog",
 							tabIndex: -1
-						}, s.a.createElement(e, f))))
+						}, s.a.createElement(e, b))))
 					}
 				}
 				return t
@@ -1758,7 +1753,7 @@
 				fbt: p
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), h = e => {
 				if (e) {
-					const e = document.getElementById(d.e);
+					const e = document.getElementById(d.d);
 					e && e.scroll(0, 0)
 				} else window.scroll(0, 0)
 			};
@@ -1914,7 +1909,6 @@
 				image: "_34CfAAowTqdbNDYXz5tBTW",
 				UserIcon: "_3-8BEp7zk8HU_Tq2SjmosX",
 				userIcon: "_3-8BEp7zk8HU_Tq2SjmosX",
-				blur: "_2P3jpibqK9Q2k2UJYzBNIy",
 				PlanetIcon: "_2WM2ef3imxyCFqHx0Nx5M4",
 				planetIcon: "_2WM2ef3imxyCFqHx0Nx5M4",
 				BackupImage: "RK004G8fbNOkGdNLEzm67",
@@ -2005,9 +1999,7 @@
 					alt: s.fbt._("Subreddit Icon", null, {
 						hk: "134aM1"
 					}),
-					className: Object(c.a)(e.className, {
-						[v.a.blur]: e.shouldBlurSubredditIcon
-					}),
+					className: e.className,
 					iconColor: d,
 					role: "presentation",
 					src: o
@@ -2015,8 +2007,7 @@
 					name: "community",
 					isFilled: !n,
 					className: Object(c.a)(v.a.defaultCommunityIcon, e.className, {
-						[v.a.mNightmode]: n,
-						[v.a.blur]: e.shouldBlurSubredditIcon
+						[v.a.mNightmode]: n
 					}),
 					style: n ? {
 						backgroundColor: e.redditStyle ? u.a.alienblue : d
@@ -6603,14 +6594,14 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-					experimentName: r.ee,
+					experimentName: r.be,
 					experimentEligibilitySelector: s.a
-				}) === r.oe.Enabled,
+				}) === r.le.Enabled,
 				i = e => Object(s.c)(e, {
-					experimentName: r.fe,
+					experimentName: r.ce,
 					experimentEligibilitySelector: s.a,
 					expEventOverride: !1
-				}) === r.pe.Enabled
+				}) === r.me.Enabled
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -6651,7 +6642,7 @@
 					return r ? r * s.Tb < 1639443600180 ? void 0 : f(e) : void 0
 				},
 				f = Object(r.a)(e => Object(a.c)(e, {
-					experimentName: o.he,
+					experimentName: o.ee,
 					experimentEligibilitySelector: c.e
 				}), d.a)
 		},
@@ -6759,4 +6750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.53f87028f803a42b546f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.fd52a565871a90ea8d9b.js.map

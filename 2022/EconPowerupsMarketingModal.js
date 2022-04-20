@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.c60eb237de4e0f538266.js
-// Retrieved at 4/20/2022, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.d56f547e145c089c5796.js
+// Retrieved at 4/20/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -91,12 +91,12 @@
 			}
 			var _ = ["root", "rootMargin", "threshold"],
 				g = ["root", "rootMargin", "threshold", "disabled"],
-				x = Object.prototype,
-				E = x.hasOwnProperty,
-				j = x.toString,
+				E = Object.prototype,
+				x = E.hasOwnProperty,
+				j = E.toString,
 				O = function(e) {
 					return _.reduce((function(t, r) {
-						if (E.call(e, r)) {
+						if (x.call(e, r)) {
 							var n = "root" === r && "[object String]" === j.call(e[r]);
 							t[r] = n ? document.querySelector(e[r]) : e[r]
 						}
@@ -303,7 +303,7 @@
 				} = d, v = f[1].powerupsCost, _ = b >= 2, g = (null == p ? void 0 : p.filter(e => {
 					var t;
 					return !!(null === (t = e.supporterInfo) || void 0 === t ? void 0 : t.displayName)
-				}).slice(0, 2)) || [], x = Math.min(h, v) / v, E = v - h;
+				}).slice(0, 2)) || [], E = Math.min(h, v) / v, x = v - h;
 				return o.a.createElement("div", {
 					className: Object(a.a)(u.a.container, t, {
 						[u.a.containerClickable]: !!n
@@ -343,11 +343,11 @@
 				}) : m._({
 					"*": "{powerups needed} more Powerups will unlock perks for the community",
 					_1: "{powerups needed} more Powerup will unlock perks for the community"
-				}, [m._param("powerups needed", E), m._plural(E)], {
+				}, [m._param("powerups needed", x), m._plural(x)], {
 					hk: "2aHf4k"
 				})), o.a.createElement(c.a, {
 					className: u.a.progressBar,
-					progress: x
+					progress: E
 				}))
 			}
 		},
@@ -488,36 +488,36 @@
 				v = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				_ = r("./src/reddit/controls/Button/index.tsx"),
 				g = r("./src/reddit/helpers/localStorage/index.ts"),
-				x = r("./src/reddit/helpers/trackers/powerups.ts"),
-				E = r("./src/reddit/hooks/useScrollGradient.ts"),
+				E = r("./src/reddit/helpers/trackers/powerups.ts"),
+				x = r("./src/reddit/hooks/useScrollGradient.ts"),
 				j = r("./src/reddit/hooks/useTracking.ts"),
 				O = r("./src/reddit/selectors/gold/powerups/index.ts"),
 				k = r("./src/reddit/selectors/user.ts"),
 				y = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/async.tsx"),
-				N = r("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
-				P = r("./src/reddit/models/Gold/Powerups/index.ts"),
+				P = r("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
+				N = r("./src/reddit/models/Gold/Powerups/index.ts"),
 				C = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				M = r("./src/reddit/selectors/experiments/econ/powerupsAward.ts");
-			const S = [P.a.CommentRecognition, P.a.PowerupsAward, P.a.CommunityGear, P.a.CommentsWithGifs, P.a.CommentsWithEmoji, P.a.Achievements, P.a.HeroStatus, P.a.HdVideo],
+			const S = [N.a.CommentRecognition, N.a.PowerupsAward, N.a.CommunityGear, N.a.CommentsWithGifs, N.a.CommentsWithEmoji, N.a.Achievements, N.a.HeroStatus, N.a.HdVideo],
 				I = Object(i.a)([M.b, C.i], (e, t) => {
 					let r = S;
-					return e || (r = r.filter(e => e !== P.a.PowerupsAward)), t || (r = r.filter(e => e !== P.a.CommunityGear)), r
+					return e || (r = r.filter(e => e !== N.a.PowerupsAward)), t || (r = r.filter(e => e !== N.a.CommunityGear)), r
 				});
 			var T = r("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
-				L = r.n(T);
+				R = r.n(T);
 			const {
 				fbt: A
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), R = e => e.length % 2 == 1 ? [...e, P.a.More] : e;
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), L = e => e.length % 2 == 1 ? [...e, N.a.More] : e;
 			var B = function(e) {
 					const {
 						className: t
-					} = e, r = Object(j.a)(), n = Object(s.e)(I), a = R(n).map(P.b), c = e => {
-						r(Object(x.g)(e.telemetryTag))
+					} = e, r = Object(j.a)(), n = Object(s.e)(I), a = L(n).map(N.b), c = e => {
+						r(Object(E.g)(e.telemetryTag))
 					};
 					return o.a.createElement("div", {
-						className: Object(d.a)(L.a.container, t)
-					}, a.map(e => e.title && o.a.createElement(N.a, {
-						className: L.a.benefit,
+						className: Object(d.a)(R.a.container, t)
+					}, a.map(e => e.title && o.a.createElement(P.a, {
+						className: R.a.benefit,
 						benefit: e,
 						key: e.key,
 						onClick: c
@@ -555,15 +555,15 @@
 					subreddit: c
 				} = e, i = Object(s.d)(), l = Object(j.a)(), v = Object(s.e)(e => !Object(k.w)(e)), {
 					container: O,
-					isScrollGradientVisible: N,
-					calculateGradientVisibility: P
-				} = Object(E.b)(!0);
+					isScrollGradientVisible: P,
+					calculateGradientVisibility: N
+				} = Object(x.b)(!0);
 				Object(n.useEffect)(() => {
 					v ? Object(y.a)() : Object(h.a)(), t && i(Object(u.m)(t, {
 						fullData: !0
 					}))
 				}, [v, t, i]), Object(n.useLayoutEffect)(() => {
-					P()
+					N()
 				});
 				const C = () => i(Object(m.g)(w.a.ECON_POWERUPS_MARKETING)),
 					M = () => {
@@ -580,7 +580,7 @@
 				}, o.a.createElement("div", {
 					className: Object(d.a)(D.a.main),
 					ref: O,
-					onScroll: P
+					onScroll: N
 				}, o.a.createElement(b.a, {
 					onClick: C,
 					highContrast: !0
@@ -619,7 +619,7 @@
 					className: D.a.joinHeroes,
 					subredditId: t,
 					onClick: e => {
-						l(Object(x.e)("powerups_modal")), e ? i(Object(u.i)(c.id)) : M()
+						l(Object(E.e)("powerups_modal")), e ? i(Object(u.i)(c.id)) : M()
 					}
 				})), o.a.createElement("li", {
 					className: D.a.howItWorksStep
@@ -641,7 +641,7 @@
 					hk: "3gjy90"
 				})), o.a.createElement(f.a, {
 					className: D.a.scrollGradient,
-					isVisible: N
+					isVisible: P
 				})), o.a.createElement(a.a, {
 					space: a.b.MODAL
 				})))
@@ -1022,9 +1022,9 @@
 			})), r.d(t, "d", (function() {
 				return g
 			})), r.d(t, "e", (function() {
-				return x
-			})), r.d(t, "g", (function() {
 				return E
+			})), r.d(t, "g", (function() {
+				return x
 			})), r.d(t, "c", (function() {
 				return j
 			})), r.d(t, "k", (function() {
@@ -1034,9 +1034,9 @@
 			})), r.d(t, "m", (function() {
 				return y
 			})), r.d(t, "t", (function() {
-				return N
-			})), r.d(t, "y", (function() {
 				return P
+			})), r.d(t, "y", (function() {
+				return N
 			})), r.d(t, "z", (function() {
 				return C
 			})), r.d(t, "B", (function() {
@@ -1048,35 +1048,35 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				o = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(o.a)(n.gd),
-				a = Object(o.a)(n.ed),
-				c = Object(o.a)(n.hd),
-				i = Object(o.a)(n.Zc),
-				l = (Object(o.a)(n.ad), Object(o.a)(n.Yc)),
-				d = Object(o.a)(n.cd),
-				u = Object(o.a)(n.dd),
-				m = Object(o.a)(n.kd),
-				p = Object(o.a)(n.id),
-				b = Object(o.a)(n.jd),
-				h = Object(o.a)(n.bd),
-				f = Object(o.a)(n.Uc),
-				w = Object(o.a)(n.Sc),
-				v = Object(o.a)(n.Lc),
-				_ = Object(o.a)(n.Hc),
-				g = Object(o.a)(n.Jc),
+			const s = Object(o.a)(n.dd),
+				a = Object(o.a)(n.bd),
+				c = Object(o.a)(n.ed),
+				i = Object(o.a)(n.Wc),
+				l = (Object(o.a)(n.Xc), Object(o.a)(n.Vc)),
+				d = Object(o.a)(n.Zc),
+				u = Object(o.a)(n.ad),
+				m = Object(o.a)(n.hd),
+				p = Object(o.a)(n.fd),
+				b = Object(o.a)(n.gd),
+				h = Object(o.a)(n.Yc),
+				f = Object(o.a)(n.Rc),
+				w = Object(o.a)(n.Pc),
+				v = Object(o.a)(n.Ic),
+				_ = Object(o.a)(n.Ec),
+				g = Object(o.a)(n.Gc),
+				E = Object(o.a)(n.Hc),
 				x = Object(o.a)(n.Kc),
-				E = Object(o.a)(n.Nc),
-				j = Object(o.a)(n.Ic),
-				O = Object(o.a)(n.Vc),
-				k = Object(o.a)(n.Wc),
-				y = Object(o.a)(n.Xc),
-				N = Object(o.a)(n.fd),
-				P = Object(o.a)(n.ld),
-				C = Object(o.a)(n.pd),
-				M = Object(o.a)(n.od),
-				S = Object(o.a)(n.If),
-				I = Object(o.a)(n.nd)
+				j = Object(o.a)(n.Fc),
+				O = Object(o.a)(n.Sc),
+				k = Object(o.a)(n.Tc),
+				y = Object(o.a)(n.Uc),
+				P = Object(o.a)(n.cd),
+				N = Object(o.a)(n.id),
+				C = Object(o.a)(n.md),
+				M = Object(o.a)(n.ld),
+				S = Object(o.a)(n.Ff),
+				I = Object(o.a)(n.kd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.c60eb237de4e0f538266.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.d56f547e145c089c5796.js.map

@@ -1,49 +1,49 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.e6078d6ba3b366a59c47.js
-// Retrieved at 4/20/2022, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.8986d99c73f7ef852e24.js
+// Retrieved at 4/20/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
-		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, r) {
+		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, n) {
 			e.exports = {
 				overlay: "_3Ig_EsWWVLquWs2yBBQjec",
 				backgroundAnimation: "_2iwhmPhcdf_cKfsjSxiNTC"
 			}
 		},
-		"./src/reddit/components/NotificationsPrePrompt/index.tsx": function(e, t, r) {
+		"./src/reddit/components/NotificationsPrePrompt/index.tsx": function(e, t, n) {
 			"use strict";
-			r.r(t);
-			var n = r("./node_modules/react/index.js"),
-				i = r.n(n),
-				o = r("./node_modules/react-redux/es/index.js"),
-				s = r("./src/higherOrderComponents/asModal/index.tsx"),
-				c = r("./src/lib/notifications/constants.ts"),
-				a = r("./src/reddit/constants/experiments.ts"),
-				d = r("./src/reddit/helpers/chooseVariant/index.ts");
+			n.r(t);
+			var r = n("./node_modules/react/index.js"),
+				o = n.n(r),
+				i = n("./node_modules/react-redux/es/index.js"),
+				s = n("./src/higherOrderComponents/asModal/index.tsx"),
+				c = n("./src/lib/notifications/constants.ts"),
+				a = n("./src/reddit/constants/experiments.ts"),
+				d = n("./src/reddit/helpers/chooseVariant/index.ts");
 
 			function l(e) {
 				return Object(d.c)(e, {
 					experimentEligibilitySelector: d.a,
-					experimentName: a.vb
-				}) === a.rd
+					experimentName: a.ub
+				}) === a.od
 			}
-			var m = r("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
-				p = r.n(m);
+			var m = n("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
+				p = n.n(m);
 
 			function u() {
 				return (u = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
-						var r = arguments[t];
-						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
+						var n = arguments[t];
+						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
 					}
 					return e
 				}).apply(this, arguments)
 			}
 			const _ = Object(s.a)(() => null);
 			t.default = e => {
-				const t = Object(o.d)(),
-					r = Object(o.e)(l);
-				return i.a.createElement(_, u({
+				const t = Object(i.d)(),
+					n = Object(i.e)(l);
+				return o.a.createElement(_, u({
 					onOverlayClick: () => {
-						r && t(Object(c.k)())
+						n && t(Object(c.k)())
 					}
 				}, e, {
 					overlayClassName: p.a.overlay,
@@ -53,4 +53,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.e6078d6ba3b366a59c47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.8986d99c73f7ef852e24.js.map

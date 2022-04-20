@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.5d50d6968c8171a74ace.js
-// Retrieved at 4/20/2022, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ef9ce5bd07344af3c521.js
+// Retrieved at 4/20/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -659,7 +659,7 @@
 					}
 					componentDidMount() {
 						if (this.props.isOverlay) {
-							const e = document.getElementById(o.e);
+							const e = document.getElementById(o.d);
 							this.setState({
 								container: e
 							})
@@ -2026,8 +2026,8 @@
 				z = r("./src/reddit/constants/modals.ts"),
 				Z = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				q = r("./src/reddit/helpers/styles/mixins/loading.ts"),
-				Q = r("./src/reddit/models/Gold/Premium/index.ts"),
-				Y = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
+				Y = r("./src/reddit/models/Gold/Premium/index.ts"),
+				Q = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
 				V = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				X = r("./src/reddit/selectors/premium.ts"),
 				J = r("./src/reddit/components/ProfileIdCard/footer.m.less"),
@@ -2051,7 +2051,7 @@
 					isLoggedIn: k.R,
 					profile: _.j,
 					crisisFlowEnabled: V.b,
-					chatInviteLinkSharing: Y.a
+					chatInviteLinkSharing: Q.a
 				}),
 				re = e => {
 					let {
@@ -2106,7 +2106,7 @@
 							onClickChatInviteLink: f,
 							onClickUnblockUser: b,
 							isUserBlocked: g
-						} = this.props, v = o && Object(Q.d)(n, a).length && !c || a, h = y()([(c || i) && s ? {
+						} = this.props, v = o && Object(Y.d)(n, a).length && !c || a, h = y()([(c || i) && s ? {
 							text: j.fbt._("Profile Moderation", null, {
 								hk: "4x1una"
 							}),
@@ -2457,7 +2457,7 @@
 					prefShowSnoovatar: M,
 					snoovatarFullBodyAsset: A,
 					username: D
-				} = k, R = !!o && o.id === L, W = !(!o || !o.snoovatarFullBodyAsset), G = C && C.bannerBackgroundImage, H = !!b && b.isNSFW, K = H && c, z = !(!v || !v.userIsSubscriber), Z = `/user/${D}/`, q = E && E.url === Z, Q = !v || v.acceptChats, Y = !v || v.acceptPms, V = P && Object(de.b)(A), X = () => {
+				} = k, R = !!o && o.id === L, W = !(!o || !o.snoovatarFullBodyAsset), G = C && C.bannerBackgroundImage, H = !!b && b.isNSFW, K = H && c, z = !(!v || !v.userIsSubscriber), Z = `/user/${D}/`, q = E && E.url === Z, Y = !v || v.acceptChats, Q = !v || v.acceptPms, V = P && Object(de.b)(A), X = () => {
 					r(e => !e)
 				};
 				return a.a.createElement(a.a.Fragment, null, a.a.createElement(u.a, {
@@ -2500,7 +2500,7 @@
 						isUserBlocked: j,
 						onClickUnblockUser: X,
 						enableFollowers: F
-					}), !!o && !R && !j && Q && he({
+					}), !!o && !R && !j && Y && he({
 						userId: L
 					})),
 					footer: j ? void 0 : a.a.createElement(se, {
@@ -2510,7 +2510,7 @@
 						allowViewSnoovatar: M,
 						profileName: D,
 						sendEvent: I,
-						userAcceptsPms: Y,
+						userAcceptsPms: Q,
 						isUserBlocked: j
 					}),
 					onClickSnoovatar: p,
@@ -3080,7 +3080,7 @@
 			const o = e => Object(s.c)(e, {
 				experimentName: n.G,
 				experimentEligibilitySelector: () => Object(a.Q)(e)
-			}) === n.rd
+			}) === n.od
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3116,8 +3116,8 @@
 				}) === n.y.Enabled,
 				o = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Qc
-				}) === n.rd
+					experimentName: n.Nc
+				}) === n.od
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3143,4 +3143,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.5d50d6968c8171a74ace.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.ef9ce5bd07344af3c521.js.map

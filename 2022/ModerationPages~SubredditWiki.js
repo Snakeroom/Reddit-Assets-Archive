@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.9be205396e57de65a347.js
-// Retrieved at 4/20/2022, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.c1e5c91ba96e249e4415.js
+// Retrieved at 4/20/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -2856,7 +2856,7 @@
 				const t = Object(s.useContext)(d.a) ? D : A;
 				return a.a.createElement(t, null, a.a.createElement("div", {
 					"data-testid": "content-gate"
-				}, a.a.createElement(re, null, de(e))), a.a.createElement(h.b, null))
+				}, a.a.createElement(re, null, de(e))), a.a.createElement(h.a, null))
 			})))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/async.tsx": function(e, t, n) {
@@ -4495,8 +4495,8 @@
 				}) === r.y.Enabled,
 				i = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Qc
-				}) === r.rd
+					experimentName: r.Nc
+				}) === r.od
 		},
 		"./src/reddit/selectors/subredditWiki.ts": function(e, t, n) {
 			"use strict";
@@ -4664,4 +4664,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.9be205396e57de65a347.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.c1e5c91ba96e249e4415.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.ef248a66ec75d24cea0b.js
-// Retrieved at 4/20/2022, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.06f9cb3bae4dca145176.js
+// Retrieved at 4/20/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -468,7 +468,7 @@
 				const t = Object(a.useContext)(l.a) ? M : N;
 				return o.a.createElement(t, null, o.a.createElement("div", {
 					"data-testid": "content-gate"
-				}, o.a.createElement(re, null, le(e))), o.a.createElement(_.b, null))
+				}, o.a.createElement(re, null, le(e))), o.a.createElement(_.a, null))
 			})))
 		},
 		"./src/reddit/components/ContributorRequestFlow/ContributorRequestButton/async.tsx": function(e, t, n) {
@@ -617,4 +617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.ef248a66ec75d24cea0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.06f9cb3bae4dca145176.js.map

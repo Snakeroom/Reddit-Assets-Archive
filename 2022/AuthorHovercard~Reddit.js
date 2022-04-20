@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.5234099b08cd4474b756.js
-// Retrieved at 4/20/2022, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.9babbc70373a730b50f8.js
+// Retrieved at 4/20/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -109,7 +109,7 @@
 			n.r(t), n.d(t, "initializeServiceWorkerChannel", (function() {
 				return N
 			})), n.d(t, "requestNotificationsPermissions", (function() {
-				return E
+				return w
 			})), n.d(t, "subscribeForPNs", (function() {
 				return C
 			})), n.d(t, "unsubscribeFromPNs", (function() {
@@ -139,9 +139,9 @@
 				O = n("./src/reddit/constants/experiments.ts"),
 				_ = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const j = e => Object(_.c)(e, {
-				experimentName: O.Ub,
+				experimentName: O.Tb,
 				experimentEligibilitySelector: _.a
-			}) === O.rd;
+			}) === O.od;
 			var I = n("./src/reddit/selectors/meta.ts"),
 				x = n("./src/reddit/selectors/user.ts");
 			let k = !1;
@@ -153,7 +153,7 @@
 				navigator.serviceWorker.addEventListener("message", r => {
 					const a = r.data,
 						o = a.command || a.type;
-					if ("registerWithServiceWorker" === o) w(e);
+					if ("registerWithServiceWorker" === o) E(e);
 					else if (o === g.a && n) {
 						const e = s()(a, ["command"]);
 						t(Object(b.f)(e))
@@ -161,13 +161,13 @@
 						const e = Object(f.a)(a.data.href);
 						e && e.pathname && t(Object(u.c)(e.pathname))
 					}
-				}), w(e)
-			}, w = e => {
+				}), E(e)
+			}, E = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
 					v2EventBoilerPlate: v.c(e)
 				})
-			}, E = function(e, t) {
+			}, w = function(e, t) {
 				let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (r, a, s) => {
 					const i = a(),
@@ -225,7 +225,7 @@
 				if (Object(m.a)(r) === l.c.NotificationsSupported) switch (Object(c.a)()) {
 					case l.a.Default:
 					case l.a.Closed:
-						await t(E(!0, !0));
+						await t(w(!0, !0));
 						break;
 					case l.a.Denied:
 						t(Object(p.h)(e))
@@ -536,8 +536,8 @@
 					priority: y.c.Plain
 				}))
 			};
-			var w = n("./src/reddit/components/InboxBanner/PolicyBanner.tsx"),
-				E = n("./src/reddit/components/NotificationUnit/Loader.tsx"),
+			var E = n("./src/reddit/components/InboxBanner/PolicyBanner.tsx"),
+				w = n("./src/reddit/components/NotificationUnit/Loader.tsx"),
 				C = n("./src/reddit/components/ResizeSensor/index.tsx"),
 				S = n("./src/reddit/components/InboxTooltip/index.m.less"),
 				B = n.n(S);
@@ -573,7 +573,7 @@
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 						ref: this.ref,
 						className: B.a.notificationResizeWrapper
-					}, s.a.createElement(E.a, {
+					}, s.a.createElement(w.a, {
 						activeOverflowMenuId: e,
 						decreaseSubredditNotifications: t,
 						disableNotificationUpdates: n,
@@ -717,7 +717,7 @@
 						}
 					}, v && s.a.createElement("div", {
 						className: B.a.notificationBannerContainer
-					}, r && s.a.createElement(w.a, {
+					}, r && s.a.createElement(E.a, {
 						onClose: d,
 						pageType: A.c.MiniInbox
 					}), t && s.a.createElement(g, {
@@ -1608,8 +1608,8 @@
 					})))
 				},
 				N = n("./src/lib/notifications/index.ts"),
-				w = n("./src/lib/notifications/constants.ts"),
-				E = n("./src/redditGQL/types.ts"),
+				E = n("./src/lib/notifications/constants.ts"),
+				w = n("./src/redditGQL/types.ts"),
 				C = n("./src/reddit/actions/modal.ts"),
 				S = n("./src/reddit/actions/notifications/index.ts"),
 				B = n("./src/reddit/actions/notificationSettingsLayout/index.ts"),
@@ -1629,7 +1629,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const D = [E.h.PrivateMessage, E.h.ChatMessage, E.h.ChatRequest, E.h.UsernameMention, E.h.PostReply, E.h.UpvotePost, E.h.UpvoteComment, E.h.CommentReply, E.h.ThreadReplies, E.h.TopLevelComment, E.h.NewPostActivity, E.h.UserNewFollower, E.h.PostFlairAdded, E.h.UserFlairAdded, E.h.NewPinnedPost, E.h.AwardReceived, E.h.PostFollow, E.h.TalkLive, E.h.CommentFollow, E.h.LifecyclePostSuggestions, E.h.BroadcastRecommendation, E.h.SubredditRecommendation, E.h.RedditLore, E.h.OneOff, E.h.CakeDay, E.h.ModeratedSrEngagement];
+			const D = [w.h.PrivateMessage, w.h.ChatMessage, w.h.ChatRequest, w.h.UsernameMention, w.h.PostReply, w.h.UpvotePost, w.h.UpvoteComment, w.h.CommentReply, w.h.ThreadReplies, w.h.TopLevelComment, w.h.NewPostActivity, w.h.UserNewFollower, w.h.PostFlairAdded, w.h.UserFlairAdded, w.h.NewPinnedPost, w.h.AwardReceived, w.h.PostFollow, w.h.TalkLive, w.h.CommentFollow, w.h.LifecyclePostSuggestions, w.h.BroadcastRecommendation, w.h.SubredditRecommendation, w.h.RedditLore, w.h.OneOff, w.h.CakeDay, w.h.ModeratedSrEngagement];
 			var F;
 			! function(e) {
 				e[e.TURN_ON_PN = 0] = "TURN_ON_PN", e[e.TURN_ON_PN_APP = 1] = "TURN_ON_PN_APP", e[e.VERIFY_EMAIL = 2] = "VERIFY_EMAIL", e[e.TURN_ON_DAYLY_DIGEST = 3] = "TURN_ON_DAYLY_DIGEST", e[e.DONE = 4] = "DONE"
@@ -1666,15 +1666,15 @@
 								Object(R.ib)(n).allIds.length || await e(Object(B.a)(L.a.Push)), Object(U.c)(t(), D) ? _(F.TURN_ON_PN_APP) : x()
 							})
 						}, [m, x]),
-						E = Object(r.useCallback)(() => {
-							(() => Object(N.a)() === w.a.Granted)() ? k(): _(F.TURN_ON_PN)
+						w = Object(r.useCallback)(() => {
+							(() => Object(N.a)() === E.a.Granted)() ? k(): _(F.TURN_ON_PN)
 						}, [k]),
 						M = Object(r.useCallback)(() => {
 							d(o.b.Email_perms)(), t && u && u(), m(Object(C.h)(T.a))
 						}, [m, d, t, u]);
 					if (Object(r.useEffect)(() => {
-							E()
-						}, [E]), Object(r.useEffect)(() => {
+							w()
+						}, [w]), Object(r.useEffect)(() => {
 							if (b !== y.current && O === F.VERIFY_EMAIL) {
 								const e = Object(P.e)(c.fbt._("Email successfully updated!", null, {
 									hk: "3iPlUp"
@@ -1694,7 +1694,7 @@
 						},
 						W = {
 							onClick: O === F.TURN_ON_PN ? async () => {
-								d(o.b.PN_perms)(), t && u && u(), await m(Object(S.requestBrowserNotificationPermissionPromptByUser)(T.f)), E()
+								d(o.b.PN_perms)(), t && u && u(), await m(Object(S.requestBrowserNotificationPermissionPromptByUser)(T.f)), w()
 							} : M
 						},
 						G = O === F.TURN_ON_PN || O === F.TURN_ON_PN_APP,
@@ -2029,7 +2029,7 @@
 						return e
 				}
 			};
-			var w = function() {
+			var E = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -2042,9 +2042,9 @@
 							return e
 					}
 				},
-				E = Object(r.c)({
+				w = Object(r.c)({
 					error: N,
-					pending: w
+					pending: E
 				}),
 				C = n("./node_modules/lodash/merge.js"),
 				S = n.n(C),
@@ -2209,7 +2209,7 @@
 					}
 				},
 				G = Object(r.c)({
-					api: E,
+					api: w,
 					models: L,
 					pageInfo: U,
 					search: M,
@@ -2626,7 +2626,7 @@
 				}
 			};
 			const Ne = {};
-			var we = function() {
+			var Ee = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ne,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -2645,9 +2645,9 @@
 						return e
 				}
 			};
-			const Ee = {};
+			const we = {};
 			var Ce = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ee,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : we,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case a.H: {
@@ -2866,7 +2866,7 @@
 					invitedModerators: Ie,
 					invitePending: ke,
 					loadMoreModerators: Ce,
-					loadMoreEditableModerators: we,
+					loadMoreEditableModerators: Ee,
 					models: Be,
 					search: He,
 					userOrder: Ke
@@ -3214,12 +3214,12 @@
 							return e
 					}
 				},
-				wt = Object(r.c)({
+				Et = Object(r.c)({
 					api: jt,
 					itemOrder: xt,
 					loadMore: Nt
 				});
-			var Et = function() {
+			var wt = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -3246,7 +3246,7 @@
 					}
 				},
 				St = Object(r.c)({
-					error: Et,
+					error: wt,
 					pending: Ct
 				});
 			const Bt = {};
@@ -3466,7 +3466,7 @@
 					bulkAction: at,
 					edited: pt,
 					moderatedCommunitiesOrder: yt,
-					modqueue: wt,
+					modqueue: Et,
 					reports: At,
 					spam: Wt,
 					unmoderated: Zt
@@ -3791,36 +3791,36 @@
 				a = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.wb
-				}) === r.yd.MemesBadge,
+					experimentName: r.vb
+				}) === r.vd.MemesBadge,
 				o = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.wb
-				}) === r.yd.MemesNoBadge,
+					experimentName: r.vb
+				}) === r.vd.MemesNoBadge,
 				i = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.wb
-				}) === r.yd.PnEmailBadge,
+					experimentName: r.vb
+				}) === r.vd.PnEmailBadge,
 				c = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.wb
-				}) === r.yd.PnEmailNoBadge,
+					experimentName: r.vb
+				}) === r.vd.PnEmailNoBadge,
 				l = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.wb
-				}) === r.yd.KarmaBadge,
+					experimentName: r.vb
+				}) === r.vd.KarmaBadge,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.wb
-				}) === r.yd.KarmaNoBadge,
+					experimentName: r.vb
+				}) === r.vd.KarmaNoBadge,
 				u = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.wb
-				}) === r.yd.PopularBadge,
+					experimentName: r.vb
+				}) === r.vd.PopularBadge,
 				p = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.wb
-				}) === r.yd.PopularNoBadge,
+					experimentName: r.vb
+				}) === r.vd.PopularNoBadge,
 				m = e => s(e) || i(e) || d(e) || p(e)
 		},
 		"./src/reddit/selectors/muted.ts": function(e, t, n) {
@@ -3883,4 +3883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.5234099b08cd4474b756.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.9babbc70373a730b50f8.js.map

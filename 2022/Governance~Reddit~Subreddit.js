@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.b8ea181df0abe826f27b.js
-// Retrieved at 4/20/2022, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.62045d08db6daa53d5fb.js
+// Retrieved at 4/20/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit", "reddit-components-BlankPost"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -413,7 +413,7 @@
 						error: l.error
 					})), void t(Object(a.d)());
 					const b = l && l.body,
-						f = U(b);
+						f = R(b);
 					if (null === u) {
 						const e = Object(v.f)(c);
 						t(k(f.nodes, e.length))
@@ -429,7 +429,7 @@
 					}))(r());
 					if (null === (i = null === (o = s.error) || void 0 === o ? void 0 : o.fields) || void 0 === i ? void 0 : i.length) return;
 					const c = s && s.body,
-						a = R(c).nodes.filter(e => !e.viewedAt);
+						a = U(c).nodes.filter(e => !e.viewedAt);
 					a.length && a.forEach(e => {
 						var n;
 						Object(h.s)({
@@ -439,7 +439,7 @@
 							type: null === (n = e.context) || void 0 === n ? void 0 : n.messageType
 						})(t())
 					})
-				}, U = e => {
+				}, R = e => {
 					const t = e && e.data,
 						n = t && t.notificationInbox,
 						r = n && n.elements,
@@ -448,7 +448,7 @@
 						nodes: (r && r.edges).map(e => e.node),
 						pageInfo: o
 					}
-				}, R = e => {
+				}, U = e => {
 					var t, n;
 					return {
 						nodes: null === (n = null === (t = null == e ? void 0 : e.data) || void 0 === t ? void 0 : t.notificationInbox) || void 0 === n ? void 0 : n.elements.edges.map(e => e.node)
@@ -953,7 +953,6 @@
 				image: "_34CfAAowTqdbNDYXz5tBTW",
 				UserIcon: "_3-8BEp7zk8HU_Tq2SjmosX",
 				userIcon: "_3-8BEp7zk8HU_Tq2SjmosX",
-				blur: "_2P3jpibqK9Q2k2UJYzBNIy",
 				PlanetIcon: "_2WM2ef3imxyCFqHx0Nx5M4",
 				planetIcon: "_2WM2ef3imxyCFqHx0Nx5M4",
 				BackupImage: "RK004G8fbNOkGdNLEzm67",
@@ -1044,9 +1043,7 @@
 					alt: o.fbt._("Subreddit Icon", null, {
 						hk: "134aM1"
 					}),
-					className: Object(a.a)(e.className, {
-						[_.a.blur]: e.shouldBlurSubredditIcon
-					}),
+					className: e.className,
 					iconColor: d,
 					role: "presentation",
 					src: i
@@ -1054,8 +1051,7 @@
 					name: "community",
 					isFilled: !n,
 					className: Object(a.a)(_.a.defaultCommunityIcon, e.className, {
-						[_.a.mNightmode]: n,
-						[_.a.blur]: e.shouldBlurSubredditIcon
+						[_.a.mNightmode]: n
 					}),
 					style: n ? {
 						backgroundColor: e.redditStyle ? l.a.alienblue : d
@@ -1277,12 +1273,12 @@
 					userName: P,
 					isProfileAvatarChangeFixEnabled: L,
 					...w
-				} = e, U = !!s && Object(l.e)(s) === P, R = U ? s : D, k = R && R.accountIcon || c, A = D ? D.isNSFW : g, M = Object(d.b)(k) && !p, B = M ? i.a.createElement(f.a, {
+				} = e, R = !!s && Object(l.e)(s) === P, U = R ? s : D, k = U && U.accountIcon || c, A = D ? D.isNSFW : g, M = Object(d.b)(k) && !p, B = M ? i.a.createElement(f.a, {
 					headshot: k,
 					className: e.className
 				}) : i.a.createElement(m.b, S({}, w, {
 					iconUrl: p && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : k,
-					isCurrentUser: U,
+					isCurrentUser: R,
 					isNSFW: A
 				})), [F, H] = Object(o.useState)(!1), G = Object(o.useMemo)(() => ({
 					input: {
@@ -1596,9 +1592,9 @@
 			})), n.d(t, "s", (function() {
 				return w
 			})), n.d(t, "t", (function() {
-				return U
-			})), n.d(t, "c", (function() {
 				return R
+			})), n.d(t, "c", (function() {
+				return U
 			})), n.d(t, "p", (function() {
 				return k
 			})), n.d(t, "q", (function() {
@@ -1791,8 +1787,8 @@
 				w = (e, t, n, r) => {
 					Object(I.a)(T(e, t, n, r))
 				},
-				U = (e, t, n, r) => o => T(o, e, t, n, r),
-				R = (e, t) => {
+				R = (e, t, n, r) => o => T(o, e, t, n, r),
+				U = (e, t) => {
 					Object(I.a)({
 						...E(e, t),
 						source: _,
@@ -2484,9 +2480,9 @@
 			})), n.d(t, "c", (function() {
 				return w
 			})), n.d(t, "l", (function() {
-				return U
-			})), n.d(t, "p", (function() {
 				return R
+			})), n.d(t, "p", (function() {
+				return U
 			})), n.d(t, "i", (function() {
 				return k
 			})), n.d(t, "j", (function() {
@@ -2648,7 +2644,7 @@
 							B(t);
 							break;
 						case i.Ob.PROFILE_MODERATION:
-							l && R(t, !0);
+							l && U(t, !0);
 							break;
 						case i.Ob.SETTINGS: {
 							const o = e;
@@ -2658,7 +2654,7 @@
 						case i.Ob.POST_CREATION:
 							if (l && a) {
 								const e = Object(_.a)(a);
-								Object(C.a)(U(e, n, r)(t))
+								Object(C.a)(R(e, n, r)(t))
 							}
 							break;
 						case i.Ob.POST_DRAFT: {
@@ -2875,7 +2871,7 @@
 					};
 					return n && (d.comment = T.h(s, n)), d
 				},
-				U = (e, t, n) => r => {
+				R = (e, t, n) => r => {
 					const o = r.creations.api.page.fetched[e],
 						i = r.platform.currentPage ? r.platform.currentPage.queryParams.source_id : void 0;
 					return {
@@ -2893,7 +2889,7 @@
 						adblock: T.e(r)
 					}
 				},
-				R = (e, t) => {
+				U = (e, t) => {
 					Object(C.a)({
 						source: "global",
 						action: "view",
@@ -3435,7 +3431,7 @@
 					if (!l(e)) return;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: u,
-						experimentName: i.Kd,
+						experimentName: i.Hd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -3458,9 +3454,9 @@
 				},
 				m = e => !!b(e) && Object(s.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: i.Ld,
+					experimentName: i.Id,
 					expEventOverride: !1
-				}) !== i.Md.Readonly
+				}) !== i.Jd.Readonly
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -3501,7 +3497,7 @@
 					return r ? r * o.Tb < 1639443600180 ? void 0 : I(e) : void 0
 				},
 				I = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.he,
+					experimentName: i.ee,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3628,4 +3624,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.b8ea181df0abe826f27b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.62045d08db6daa53d5fb.js.map
