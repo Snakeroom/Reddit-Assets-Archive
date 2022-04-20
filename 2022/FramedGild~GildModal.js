@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0589803630be87aa24ca.js
-// Retrieved at 4/20/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.47eab222058533c0b220.js
+// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -3420,7 +3420,7 @@
 						target: "_blank",
 						rel: u.c,
 						className: _.a.imageLink
-					}, S(s, r), r.shouldBlur && !r.isVideoThumbnail && !r.isNsfwBlockingModalEligible && a.a.createElement(p.a, {
+					}, S(s, r), r.shouldBlur && !r.isVideoThumbnail && a.a.createElement(p.a, {
 						isNSFW: !!r.isNSFW,
 						isSpoiler: !!r.isSpoiler
 					})), r.isListing && !r.showFull && r.height > x.j && Object(x.L)(r.height, r.width) && a.a.createElement("div", {
@@ -3991,32 +3991,31 @@
 		"./src/reddit/components/RichTextJson/index.tsx": function(e, t, r) {
 			"use strict";
 			r.d(t, "c", (function() {
-				return E
+				return y
 			})), r.d(t, "b", (function() {
-				return _
+				return E
 			})), r.d(t, "a", (function() {
-				return C
+				return I
 			}));
-			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
-				s = r("./node_modules/lodash/findLastIndex.js"),
-				a = r.n(s),
-				o = r("./node_modules/react/index.js"),
-				i = r.n(o),
-				c = r("./src/lib/classNames/index.ts"),
-				d = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
-				l = r("./src/lib/sentry/index.ts"),
-				u = r("./src/reddit/components/Media/BlurredContent.tsx"),
-				m = r("./src/reddit/constants/elementClassNames.ts"),
-				p = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
-				b = r("./src/reddit/helpers/styles/smartTextColor.ts"),
-				h = r("./src/reddit/models/RichTextJson/index.ts"),
-				f = r("./src/reddit/components/RichTextJson/media.tsx"),
-				g = r("./src/reddit/components/RichTextJson/renderers.tsx"),
-				O = r("./src/reddit/components/RichTextJson/index.m.less"),
-				x = r.n(O);
+			var n = r("./node_modules/lodash/findLastIndex.js"),
+				s = r.n(n),
+				a = r("./node_modules/react/index.js"),
+				o = r.n(a),
+				i = r("./src/lib/classNames/index.ts"),
+				c = r("./src/lib/CSSVariableProvider/withTheme.tsx"),
+				d = r("./src/lib/sentry/index.ts"),
+				l = r("./src/reddit/components/Media/BlurredContent.tsx"),
+				u = r("./src/reddit/constants/elementClassNames.ts"),
+				m = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
+				p = r("./src/reddit/helpers/styles/smartTextColor.ts"),
+				b = r("./src/reddit/models/RichTextJson/index.ts"),
+				h = r("./src/reddit/components/RichTextJson/media.tsx"),
+				f = r("./src/reddit/components/RichTextJson/renderers.tsx"),
+				g = r("./src/reddit/components/RichTextJson/index.m.less"),
+				O = r.n(g);
 
-			function v() {
-				return (v = Object.assign || function(e) {
+			function x() {
+				return (x = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -4024,16 +4023,16 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const j = r("./src/lib/lessComponent.tsx").a.div("Container", x.a),
-				w = Object(d.a)(e => {
+			const v = r("./src/lib/lessComponent.tsx").a.div("Container", O.a),
+				j = Object(c.a)(e => {
 					let {
 						flairStyleTemplate: t,
 						theme: r,
 						...n
 					} = e;
-					return i.a.createElement(j, v({}, n, {
+					return o.a.createElement(v, x({}, n, {
 						style: {
-							color: Object(b.a)(Object(p.a)({
+							color: Object(p.a)(Object(m.a)({
 								flairStyleTemplate: t,
 								theme: r,
 								...n
@@ -4041,81 +4040,78 @@
 						}
 					}))
 				}),
-				y = e => e.e === h.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== h.u || !!e.c && !e.c.every(e => e.e === h.A && !e.t),
-				E = e => a()(e, y),
-				_ = e => e.findIndex(y),
-				I = e => {
+				w = e => e.e === b.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== b.u || !!e.c && !e.c.every(e => e.e === b.A && !e.t),
+				y = e => s()(e, w),
+				E = e => e.findIndex(w),
+				_ = e => {
 					const {
 						altText: t,
 						className: r,
 						content: n,
 						isListing: s,
 						isNSFW: a,
-						isNsfwBlockingModalEligible: o,
-						isSpoiler: d,
-						onClickRevealBlurred: l,
-						postId: p,
-						renderMediaAsLinks: b,
-						rtJsonElementProps: O,
-						useExplicitTextColor: v,
-						shouldBlur: y
-					} = e, I = n.document, C = [], k = e.mediaMetadata || null, P = _(I), N = E(I);
-					if (y && !s && !o) return i.a.createElement(j, {
-						className: Object(c.a)(m.j, r)
-					}, i.a.createElement("div", {
-						className: x.a.unblurButtonContainer
-					}, i.a.createElement("button", {
-						className: x.a.unblurButton,
-						onClick: l
-					}, Object(u.b)(!!a, !!d))));
-					if (-1 !== P)
-						for (let i = P; i <= N; i++) {
-							const e = I[i];
+						isSpoiler: c,
+						onClickRevealBlurred: d,
+						postId: m,
+						renderMediaAsLinks: p,
+						rtJsonElementProps: g,
+						useExplicitTextColor: x,
+						shouldBlur: w
+					} = e, _ = n.document, I = [], C = e.mediaMetadata || null, k = E(_), P = y(_);
+					if (w && !s) return o.a.createElement(v, {
+						className: Object(i.a)(u.j, r)
+					}, o.a.createElement("div", {
+						className: O.a.unblurButtonContainer
+					}, o.a.createElement("button", {
+						className: O.a.unblurButton,
+						onClick: d
+					}, Object(l.b)(!!a, !!c))));
+					if (-1 !== k)
+						for (let o = k; o <= P; o++) {
+							const e = _[o];
 							switch (e.e) {
-								case h.k:
-									C.push(g.c(e, O, i));
+								case b.k:
+									I.push(f.c(e, g, o));
 									break;
-								case h.l:
-									C.push(g.d(i));
+								case b.l:
+									I.push(f.d(o));
 									break;
-								case h.b:
-									C.push(g.a(e, k, O, i));
+								case b.b:
+									I.push(f.a(e, C, g, o));
 									break;
-								case h.c:
-									C.push(g.b(e, i));
+								case b.c:
+									I.push(f.b(e, o));
 									break;
-								case h.p:
-									C.push(g.f(e, k, O, i));
+								case b.p:
+									I.push(f.f(e, C, g, o));
 									break;
-								case h.z:
-									C.push(g.h(e, k, O, i));
+								case b.z:
+									I.push(f.h(e, C, g, o));
 									break;
-								case h.u:
-									C.push(g.g(e, k, O, i));
+								case b.u:
+									I.push(f.g(e, C, g, o));
 									break;
-								case h.h:
-									C.push(Object(f.a)(e, i));
+								case b.h:
+									I.push(Object(h.a)(e, o));
 									break;
-								case h.m:
-								case h.a:
-								case h.D:
-									C.push(...Object(f.b)(e, i, k, b, p, t))
+								case b.m:
+								case b.a:
+								case b.D:
+									I.push(...Object(h.b)(e, o, C, p, m, t))
 							}
 						}
-					return v ? i.a.createElement(j, {
-						className: Object(c.a)(m.j, r)
-					}, C) : i.a.createElement(w, {
-						className: Object(c.a)(m.j, r),
+					return x ? o.a.createElement(v, {
+						className: Object(i.a)(u.j, r)
+					}, I) : o.a.createElement(j, {
+						className: Object(i.a)(u.j, r),
 						flairStyleTemplate: e.flairStyleTemplate
-					}, C)
+					}, I)
 				};
-			class C extends i.a.Component {
+			class I extends o.a.Component {
 				constructor() {
 					super(...arguments), this.hasError = !1, this.state = {
 						hasError: !1
-					}, this.renderDefaultFallback = () => n.fbt._("Something went wrong while trying to render this", null, {
-						hk: "2UcBL3"
-					})
+					}, this.renderDefaultFallback = () => "Something went wrong while trying to render this"
 				}
 				componentDidCatch(e) {
 					this.setState({
@@ -4123,8 +4119,8 @@
 					}), this.logError(e)
 				}
 				logError(e) {
-					l.c.withScope(t => {
-						t.setExtra("objectInfo", this.props.rtJsonElementProps.renderingObjectInfo), t.setTag("rtjson", "rendering"), l.c.captureException(e)
+					d.c.withScope(t => {
+						t.setExtra("objectInfo", this.props.rtJsonElementProps.renderingObjectInfo), t.setTag("rtjson", "rendering"), d.c.captureException(e)
 					})
 				}
 				render() {
@@ -4134,7 +4130,7 @@
 					} = this.props;
 					if (this.hasError || this.state.hasError) return e();
 					try {
-						return I(t)
+						return _(t)
 					} catch (r) {
 						return this.hasError = !0, this.logError(r), e()
 					}
@@ -4833,12 +4829,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.of.SmIcon:
+						case h.lf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.of.SmIconHc:
+						case h.lf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5937,12 +5933,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.if
+						experimentName: n.ff
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.of.SmIcon || t === n.of.SmIconHc
+					return t === n.lf.SmIcon || t === n.lf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5980,4 +5976,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.0589803630be87aa24ca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.47eab222058533c0b220.js.map

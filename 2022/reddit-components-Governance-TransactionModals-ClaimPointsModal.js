@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.855fef02ac14cf23c19c.js
-// Retrieved at 4/20/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.ce53a7ee38b04b25b385.js
+// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -67,24 +67,24 @@
 			var b = n("./src/reddit/endpoints/governance/wallet.ts"),
 				v = n("./src/reddit/models/Toast/index.ts"),
 				f = n("./src/reddit/models/Vote/index.ts"),
-				x = n("./src/reddit/selectors/crypto/points.ts"),
-				h = n("./src/reddit/actions/governance/constants.ts"),
+				h = n("./src/reddit/selectors/crypto/points.ts"),
+				x = n("./src/reddit/actions/governance/constants.ts"),
 				O = n("./src/reddit/actions/governance/errorToast.ts");
-			const j = Object(r.a)(h.b),
-				g = Object(r.a)(h.c),
-				C = Object(r.a)(h.e),
-				w = (Object(r.a)(h.f), Object(r.a)(h.g), Object(r.a)(h.h)),
-				E = Object(r.a)(h.i),
-				N = Object(r.a)(h.j),
-				_ = Object(r.a)(h.k),
-				I = Object(r.a)(h.q),
-				T = Object(r.a)(h.r),
-				y = Object(r.a)(h.s),
-				M = Object(r.a)(h.t),
-				k = Object(r.a)(h.u),
-				S = Object(r.a)(h.v),
-				A = Object(r.a)(h.w),
-				P = Object(r.a)(h.x),
+			const j = Object(r.a)(x.b),
+				g = Object(r.a)(x.c),
+				C = Object(r.a)(x.e),
+				w = (Object(r.a)(x.f), Object(r.a)(x.g), Object(r.a)(x.h)),
+				E = Object(r.a)(x.i),
+				N = Object(r.a)(x.j),
+				_ = Object(r.a)(x.k),
+				I = Object(r.a)(x.q),
+				T = Object(r.a)(x.r),
+				y = Object(r.a)(x.s),
+				k = Object(r.a)(x.t),
+				M = Object(r.a)(x.u),
+				S = Object(r.a)(x.v),
+				A = Object(r.a)(x.w),
+				P = Object(r.a)(x.x),
 				B = (e, t) => async (n, s, r) => {
 					let a, {
 							apiContext: o,
@@ -152,12 +152,12 @@
 						...e,
 						contentId: m
 					});
-					b.ok ? (n(M({
+					b.ok ? (n(k({
 						...b.body,
 						subredditId: e.subredditId
 					})), n(Object(c.f)({
 						kind: v.b.SuccessCommunity,
-						text: s.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [s.fbt._param("amount", Object(a.a)(e.amount)), s.fbt._param("tokenName", (null === (u = Object(x.b)(r(), e.subredditId)) || void 0 === u ? void 0 : u.name) || ""), s.fbt._param("recipient", e.recipient)], {
+						text: s.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [s.fbt._param("amount", Object(a.a)(e.amount)), s.fbt._param("tokenName", (null === (u = Object(h.b)(r(), e.subredditId)) || void 0 === u ? void 0 : u.name) || ""), s.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
 					})), t && n(Object(o.f)())) : (n(I({
@@ -169,7 +169,7 @@
 					} = s;
 					t(S());
 					const a = await Object(b.a)(r(), e);
-					a.ok ? t(A(a.body)) : t(k({
+					a.ok ? t(A(a.body)) : t(M({
 						error: a.error
 					}))
 				}
@@ -271,8 +271,8 @@
 				b = n("./src/reddit/actions/governance/index.ts"),
 				v = n("./src/reddit/actions/toaster.ts"),
 				f = n("./src/reddit/actions/util/pollActionForSuccess.ts"),
-				x = n("./src/reddit/endpoints/governance/crypto.ts"),
-				h = n("./src/reddit/helpers/crypto/transactions.ts"),
+				h = n("./src/reddit/endpoints/governance/crypto.ts"),
+				x = n("./src/reddit/helpers/crypto/transactions.ts"),
 				O = n("./src/reddit/helpers/crypto/vaultTransactions.ts"),
 				j = n("./src/reddit/helpers/governance/tokens.ts"),
 				g = n("./src/reddit/helpers/trackers/crypto.ts"),
@@ -281,26 +281,93 @@
 				E = n("./src/reddit/selectors/crypto/claims.ts"),
 				N = n("./src/reddit/selectors/crypto/points.ts"),
 				_ = n("./src/reddit/selectors/gov.ts"),
-				I = n("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.tsx"),
-				T = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
-				y = n("./src/reddit/components/SubredditIcon/index.tsx"),
-				M = n("./src/reddit/selectors/subreddit.ts"),
-				k = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
-				S = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
-				A = n("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/Approval.m.less"),
-				P = n.n(A);
+				I = n("./src/lib/addQueryParams/index.ts"),
+				T = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				y = n("./src/reddit/selectors/user.ts"),
+				k = n("./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx"),
+				M = n("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
+				S = n("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.m.less"),
+				A = n.n(S);
+			const {
+				fbt: P
+			} = n("./node_modules/fbt/lib/FbtPublic.js");
+			const B = Object(i.c)({
+					userId: e => {
+						const t = Object(y.l)(e);
+						return t ? t.id : ""
+					}
+				}),
+				D = Object(o.b)(B)((function(e) {
+					const {
+						onClose: t,
+						userId: n
+					} = e;
+					return a.a.createElement("div", {
+						className: A.a.container
+					}, a.a.createElement("header", {
+						className: A.a.header
+					}, a.a.createElement("div", {
+						className: A.a.title
+					}, P._("Create Your Vault on Your Smartphone", null, {
+						hk: "247Dqn"
+					})), a.a.createElement(T.a, {
+						className: A.a.closeButton,
+						onClick: t
+					})), a.a.createElement("div", {
+						className: A.a.body
+					}, a.a.createElement("section", {
+						className: A.a.leftSection
+					}, a.a.createElement("div", {
+						className: A.a.sectionHeader
+					}, P._("Use the mobile app to create a Vault", null, {
+						hk: "4DKtAt"
+					})), a.a.createElement("div", {
+						className: A.a.content
+					}, a.a.createElement(k.a, {
+						index: "1"
+					}, P._("Get the official Reddit app for iOS or Android", null, {
+						hk: "420pUH"
+					})), a.a.createElement(k.a, {
+						index: "2"
+					}, P._("Log in to your Reddit account", null, {
+						hk: "3G7IZ2"
+					})), a.a.createElement(k.a, {
+						index: "3"
+					}, P._("Open your Camera, scan the QR code & follow the URL", null, {
+						hk: "FWSNM"
+					})), a.a.createElement(k.a, {
+						index: "4"
+					}, P._("Or, open the Reddit app and tap your profile photo at the top. Then tap Vault, and follow the instructions", null, {
+						hk: "3C5vxO"
+					})))), a.a.createElement("section", {
+						className: A.a.rightSection
+					}, a.a.createElement(M.a, {
+						url: Object(I.a)("http://www.reddit.com/vault/", {
+							u: n
+						}),
+						scale: 5
+					}))))
+				}));
+			Object(c.a)(D);
+			var R = n("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
+				L = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				F = n("./src/reddit/selectors/subreddit.ts"),
+				G = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
+				V = n("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
+				H = n("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/Approval.m.less"),
+				Y = n.n(H);
 
-			function B(e) {
+			function U(e) {
 				const {
 					subredditId: t,
 					pointsDetails: n
 				} = e, r = Object(o.e)(t => Object(E.b)(t, e)), i = r && r.pointsToClaim;
 				if (!i) throw new Error("Expected claim amount to approve");
-				const c = Object(o.e)(t => Object(M.T)(t, e));
-				return a.a.createElement(S.a, {
+				const c = Object(o.e)(t => Object(F.T)(t, e));
+				return a.a.createElement(V.a, {
 					subredditId: t,
-					image: a.a.createElement(y.b, {
-						className: P.a.subredditIcon,
+					image: a.a.createElement(L.b, {
+						className: Y.a.subredditIcon,
 						subredditOrProfile: c
 					}),
 					title: s.fbt._("Claim {pointsName}", [s.fbt._param("pointsName", n.name)], {
@@ -312,13 +379,13 @@
 					pointsAmount: i
 				})
 			}
-			const D = e => a.a.createElement(k.b, {
+			const W = e => a.a.createElement(G.b, {
 				values: [
 					[s.fbt._("Karma earned", null, {
 						hk: "46NXlD"
 					}), e.transaction.arguments[2]],
-					[Object(k.c)(), e.transaction.arguments[1]],
-					[Object(k.a)(), e.transaction.contractAddress]
+					[Object(G.c)(), e.transaction.arguments[1]],
+					[Object(G.a)(), e.transaction.contractAddress]
 				]
 			});
 			t.default = Object(c.a)((function(e) {
@@ -328,28 +395,28 @@
 				} = e, r = Object(o.d)(), c = Object(C.a)(), {
 					currentPointsAmount: d,
 					nextPointsClaim: l,
-					pointsDetails: y
+					pointsDetails: I
 				} = Object(o.e)(Object(i.c)({
 					currentPointsAmount: t => Object(_.e)(t, e),
 					nextPointsClaim: t => Object(E.b)(t, e),
 					pointsDetails: t => Object(N.b)(t, e.subredditId)
 				}));
-				if (!y || !l) throw new Error("No available claim to make");
-				if (!l.address) return a.a.createElement(I.a, {
+				if (!I || !l) throw new Error("No available claim to make");
+				if (!l.address) return a.a.createElement(D, {
 					onClose: t
 				});
-				const M = Object(h.b)(y.contracts.distribution.address, l.round, l.address, l.userKarma, l.signature),
-					k = e => {
-						c(Object(g.c)("points_claim", n, y.displayConversion, e))
+				const T = Object(x.b)(I.contracts.distribution.address, l.round, l.address, l.userKarma, l.signature),
+					y = e => {
+						c(Object(g.c)("points_claim", n, I.displayConversion, e))
 					},
-					S = Object(j.b)(l.pointsToClaim, y.displayConversion);
-				return a.a.createElement(T.a, {
-					approvalOverview: a.a.createElement(B, {
-						pointsDetails: y,
+					k = Object(j.b)(l.pointsToClaim, I.displayConversion);
+				return a.a.createElement(R.a, {
+					approvalOverview: a.a.createElement(U, {
+						pointsDetails: I,
 						subredditId: n
 					}),
-					approvalDetails: a.a.createElement(D, {
-						transaction: M
+					approvalDetails: a.a.createElement(W, {
+						transaction: T
 					}),
 					onClose: t,
 					onTransactionSuccess: async e => {
@@ -368,28 +435,28 @@
 							})), await e(Object(p.b)({
 								forceFetch: !0
 							}))
-						}(r, y, e.hash, n, d).then(() => {
-							c(Object(g.d)("points_claim", n, S)), r(function(e) {
+						}(r, I, e.hash, n, d).then(() => {
+							c(Object(g.d)("points_claim", n, k)), r(function(e) {
 								return Object(v.f)(Object(v.e)(s.fbt._("Your {pointsName} are ready!", [s.fbt._param("pointsName", e)], {
 									hk: "2LpLml"
 								}), w.b.SuccessCommunityGreen))
-							}(y.name))
+							}(I.name))
 						}).catch(e => {
-							k(e.toString()), r(function(e) {
+							y(e.toString()), r(function(e) {
 								return Object(v.f)(Object(v.e)(s.fbt._("Failed to claim your {pointsName}. Try again later", [s.fbt._param("pointsName", e)], {
 									hk: "ch1Bl"
 								}), w.b.Error))
-							}(y.name))
+							}(I.name))
 						}).finally(() => {
 							r(u({
 								subredditId: n
 							}))
 						})
 					},
-					onTransactionFailure: k,
+					onTransactionFailure: y,
 					subredditId: n,
-					transaction: M,
-					transactionIntent: Object(x.c)(n)
+					transaction: T,
+					transactionIntent: Object(h.c)(n)
 				})
 			}))
 		},
@@ -405,85 +472,6 @@
 				content: "_1Yqz3rGaFmyEoxy_Wc_MrB",
 				rightSection: "_-4IOB0_BjX0SdDgbB8E5e"
 			}
-		},
-		"./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return x
-			}));
-			var s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				a = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/reselect/es/index.js"),
-				i = n("./src/higherOrderComponents/asModal/index.tsx"),
-				c = n("./src/lib/addQueryParams/index.ts"),
-				d = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				l = n("./src/reddit/selectors/user.ts"),
-				u = n("./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx"),
-				m = n("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
-				p = n("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.m.less"),
-				b = n.n(p);
-			const {
-				fbt: v
-			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			const f = Object(o.c)({
-					userId: e => {
-						const t = Object(l.l)(e);
-						return t ? t.id : ""
-					}
-				}),
-				x = Object(a.b)(f)((function(e) {
-					const {
-						onClose: t,
-						userId: n
-					} = e;
-					return r.a.createElement("div", {
-						className: b.a.container
-					}, r.a.createElement("header", {
-						className: b.a.header
-					}, r.a.createElement("div", {
-						className: b.a.title
-					}, v._("Create Your Vault on Your Smartphone", null, {
-						hk: "247Dqn"
-					})), r.a.createElement(d.a, {
-						className: b.a.closeButton,
-						onClick: t
-					})), r.a.createElement("div", {
-						className: b.a.body
-					}, r.a.createElement("section", {
-						className: b.a.leftSection
-					}, r.a.createElement("div", {
-						className: b.a.sectionHeader
-					}, v._("Use the mobile app to create a Vault", null, {
-						hk: "4DKtAt"
-					})), r.a.createElement("div", {
-						className: b.a.content
-					}, r.a.createElement(u.a, {
-						index: "1"
-					}, v._("Get the official Reddit app for iOS or Android", null, {
-						hk: "420pUH"
-					})), r.a.createElement(u.a, {
-						index: "2"
-					}, v._("Log in to your Reddit account", null, {
-						hk: "3G7IZ2"
-					})), r.a.createElement(u.a, {
-						index: "3"
-					}, v._("Open your Camera, scan the QR code & follow the URL", null, {
-						hk: "FWSNM"
-					})), r.a.createElement(u.a, {
-						index: "4"
-					}, v._("Or, open the Reddit app and tap your profile photo at the top. Then tap Vault, and follow the instructions", null, {
-						hk: "3C5vxO"
-					})))), r.a.createElement("section", {
-						className: b.a.rightSection
-					}, r.a.createElement(m.a, {
-						url: Object(c.a)("http://www.reddit.com/vault/", {
-							u: n
-						}),
-						scale: 5
-					}))))
-				}));
-			t.b = Object(i.a)(x)
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -541,8 +529,8 @@
 						hk: "2Giu9U"
 					}))))
 				}),
-				x = n("./src/reddit/controls/ErrorText/index.m.less"),
-				h = n.n(x);
+				h = n("./src/reddit/controls/ErrorText/index.m.less"),
+				x = n.n(h);
 			class O extends d.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = d.a.createRef(), this.toggleModal = () => {
@@ -587,12 +575,12 @@
 						isModalOpen: i
 					} = this.state;
 					return d.a.createElement("div", {
-						className: Object(l.a)(h.a.wrapper, t)
+						className: Object(l.a)(x.a.wrapper, t)
 					}, d.a.createElement("span", {
-						className: h.a.description,
+						className: x.a.description,
 						ref: this.spanRef
 					}, e), o && d.a.createElement("span", {
-						className: h.a.moreText,
+						className: x.a.moreText,
 						onClick: this.toggleModal
 					}, a), i && d.a.createElement(f, {
 						onConfirmed: this.toggleModal,
@@ -725,16 +713,16 @@
 						})
 					}, t), n)
 				},
-				x = e => r.a.createElement("div", {
+				h = e => r.a.createElement("div", {
 					className: Object(a.a)(u.a.addValueButton, e.className),
 					onClick: e.onClick
 				}, e.text, " ", r.a.createElement(c.a, {
 					className: u.a.plus
 				}));
-			var h;
+			var x;
 			! function(e) {
 				e[e.ADD = 0] = "ADD", e[e.REMOVE = 1] = "REMOVE"
-			}(h || (h = {}));
+			}(x || (x = {}));
 			class O extends r.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -742,7 +730,7 @@
 					}, this.addValue = () => {
 						const e = this.props.values.slice();
 						this.props.buttonOnTop ? e.unshift("") : e.push(""), this.props.onChange(e), this.props.onEvent && this.props.onEvent({
-							action: h.ADD
+							action: x.ADD
 						})
 					}, this.updateValue = (e, t) => {
 						const n = this.props.values.slice();
@@ -751,7 +739,7 @@
 						const t = this.props.values.slice(),
 							n = t[e];
 						t.splice(e, 1), this.props.onChange(t), this.props.onEvent && this.props.onEvent({
-							action: h.REMOVE,
+							action: x.REMOVE,
 							value: n,
 							index: e
 						})
@@ -812,10 +800,10 @@
 					const c = !(!!s && n.length >= s) && !i;
 					return r.a.createElement("div", {
 						className: Object(a.a)(u.a.multiInputWrapper, e)
-					}, t && c && r.a.createElement(x, {
+					}, t && c && r.a.createElement(h, {
 						onClick: this.addValue,
 						text: o
-					}), this.renderFields(), !t && c && r.a.createElement(x, {
+					}), this.renderFields(), !t && c && r.a.createElement(h, {
 						onClick: this.addValue,
 						text: o
 					}))
@@ -1034,4 +1022,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.855fef02ac14cf23c19c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.ce53a7ee38b04b25b385.js.map

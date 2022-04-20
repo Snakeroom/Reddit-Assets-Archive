@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.f37f3654a9db329cc753.js
-// Retrieved at 4/20/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.131edef115acd107a31a.js
+// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
@@ -93,19 +93,19 @@
 			})), n.d(t, "b", (function() {
 				return D
 			})), n.d(t, "c", (function() {
-				return v
-			})), n.d(t, "A", (function() {
-				return O
-			})), n.d(t, "B", (function() {
 				return I
-			})), n.d(t, "z", (function() {
+			})), n.d(t, "A", (function() {
 				return y
+			})), n.d(t, "B", (function() {
+				return O
+			})), n.d(t, "z", (function() {
+				return v
 			})), n.d(t, "y", (function() {
-				return j
-			})), n.d(t, "v", (function() {
 				return g
-			})), n.d(t, "w", (function() {
+			})), n.d(t, "v", (function() {
 				return C
+			})), n.d(t, "w", (function() {
+				return j
 			})), n.d(t, "x", (function() {
 				return S
 			})), n.d(t, "d", (function() {
@@ -130,13 +130,13 @@
 				_ = "MULTIREDDIT__EDIT_SUCCESS",
 				T = "MULTIREDDIT__ADD_SUBREDDIT_FAILURE",
 				D = "MULTIREDDIT__ADD_SUBREDDIT_PENDING",
-				v = "MULTIREDDIT__ADD_SUBREDDIT_SUCCESS",
-				O = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_PENDING",
-				I = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_SUCCESS",
-				y = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_FAILURE",
-				j = 10,
-				g = "MULTIREDDIT__REMOVE_SUBREDDIT_FAILURE",
-				C = "MULTIREDDIT__REMOVE_SUBREDDIT_PENDING",
+				I = "MULTIREDDIT__ADD_SUBREDDIT_SUCCESS",
+				y = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_PENDING",
+				O = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_SUCCESS",
+				v = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_FAILURE",
+				g = 10,
+				C = "MULTIREDDIT__REMOVE_SUBREDDIT_FAILURE",
+				j = "MULTIREDDIT__REMOVE_SUBREDDIT_PENDING",
 				S = "MULTIREDDIT__REMOVE_SUBREDDIT_SUCCESS";
 			var k;
 			! function(e) {
@@ -252,13 +252,13 @@
 				_ = n("./src/reddit/components/OverlayAwareTooltip/index.tsx"),
 				T = n("./src/reddit/constants/colors.ts"),
 				D = n("./src/reddit/constants/parameters.ts"),
-				v = n("./src/reddit/controls/InternalLink/index.tsx"),
-				O = n("./src/reddit/helpers/styles/smartTextColor.ts"),
-				I = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				y = n("./src/reddit/models/Flair/index.ts"),
-				j = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				g = n("./src/reddit/components/Flair/index.m.less"),
-				C = n.n(g);
+				I = n("./src/reddit/controls/InternalLink/index.tsx"),
+				y = n("./src/reddit/helpers/styles/smartTextColor.ts"),
+				O = n("./src/reddit/icons/svgs/Close/index.tsx"),
+				v = n("./src/reddit/models/Flair/index.ts"),
+				g = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				C = n("./src/reddit/components/Flair/index.m.less"),
+				j = n.n(C);
 
 			function S() {
 				return (S = Object.assign || function(e) {
@@ -270,9 +270,9 @@
 				}).apply(this, arguments)
 			}
 			const k = Object(_.a)(x.b),
-				N = p.a.div("FlairWrapper", C.a),
-				L = p.a.wrapped(l.a, "CloseButton", C.a),
-				w = p.a.wrapped(Object(m.a)(e => {
+				L = p.a.div("FlairWrapper", j.a),
+				N = p.a.wrapped(l.a, "CloseButton", j.a),
+				U = p.a.wrapped(Object(m.a)(e => {
 					let {
 						forceSmallEmojis: t,
 						theme: n,
@@ -281,11 +281,11 @@
 					const o = n;
 					return a.a.createElement(E, S({
 						style: {
-							...U(!!t, o) || {}
+							...w(!!t, o) || {}
 						}
 					}, r))
-				}), "FlairEmojiDisplay", C.a),
-				U = (e, t) => {
+				}), "FlairEmojiDisplay", j.a),
+				w = (e, t) => {
 					if (!e && !!t.subredditContext.emojiHeight && !!t.subredditContext.emojiWidth) return {
 						height: `${t.subredditContext.emojiHeight}px`,
 						width: `${t.subredditContext.emojiWidth}px`
@@ -299,14 +299,14 @@
 						[D.u]: t ? "1" : ""
 					})
 				},
-				M = e => e.isFlairFilter ? a.a.createElement(v.a, {
+				M = e => e.isFlairFilter ? a.a.createElement(I.a, {
 					onMouseDown: e.onMouseDown,
 					to: e.to || ""
-				}, e.flair) : e.onClick ? a.a.createElement(v.a, {
+				}, e.flair) : e.onClick ? a.a.createElement(I.a, {
 					onClick: () => e.onClick(e.searchableTerm),
 					to: F(e.searchableTerm, e.subredditName)
 				}, e.flair) : e.flair;
-			class P extends a.a.Component {
+			class R extends a.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTargetElement = null, this.state = {
 						isTooltipOpen: !1
@@ -323,22 +323,22 @@
 				render() {
 					const e = a.a.createElement("span", {
 						className: Object(u.a)(this.props.className, {
-							[C.a.transparentBackgroundColor]: "transparent" === this.props.backgroundColor
+							[j.a.transparentBackgroundColor]: "transparent" === this.props.backgroundColor
 						}),
 						onMouseEnter: this.props.tooltip ? this.onShowTooltip : void 0,
 						onMouseLeave: this.props.tooltip ? this.onHideTooltip : void 0,
 						ref: this.setTooltipTargetRef,
 						style: {
-							backgroundColor: this.props.backgroundColor || Object(j.a)(this.props).flair,
+							backgroundColor: this.props.backgroundColor || Object(g.a)(this.props).flair,
 							color: `${B(this.props)}`
 						}
-					}, this.props.text, this.props.isSelected && a.a.createElement(L, {
+					}, this.props.text, this.props.isSelected && a.a.createElement(N, {
 						to: "./",
 						onClick: this.props.onCloseClick
-					}, a.a.createElement(I.a, {
-						className: C.a.CloseIcon,
+					}, a.a.createElement(O.a, {
+						className: j.a.CloseIcon,
 						style: {
-							fill: this.props.backgroundColor || Object(j.a)(this.props).flair
+							fill: this.props.backgroundColor || Object(g.a)(this.props).flair
 						}
 					})), !!this.props.tooltip && a.a.createElement(k, {
 						text: this.props.tooltip,
@@ -358,14 +358,14 @@
 					})
 				}
 			}
-			const R = Object(m.a)(P),
+			const P = Object(m.a)(R),
 				A = Object(m.a)(e => {
 					let t = "",
 						n = !1;
 					const r = e.richtext.map((r, o) => {
-						if (r.e === y.c.Emoji) {
+						if (r.e === v.c.Emoji) {
 							const s = r;
-							return t += s.a, n = !0, a.a.createElement(w, {
+							return t += s.a, n = !0, a.a.createElement(U, {
 								forceSmallEmojis: e.forceSmallEmojis,
 								backgroundImage: s.u,
 								key: o,
@@ -382,22 +382,22 @@
 					n && !e.forceSmallEmojis && e.theme && e.theme.subredditContext.emojiWidth && e.theme.subredditContext.emojiHeight && e.theme.subredditContext.emojiHeight > 16 && (o = {
 						marginTop: `-${e.theme.subredditContext.emojiHeight-16}px`
 					});
-					const s = a.a.createElement(N, {
+					const s = a.a.createElement(L, {
 						className: Object(u.a)(e.className, {
-							[C.a.transparentBackgroundColor]: "transparent" === e.backgroundColor
+							[j.a.transparentBackgroundColor]: "transparent" === e.backgroundColor
 						}),
 						style: {
 							...o,
-							backgroundColor: e.backgroundColor || Object(j.a)(e).flair,
+							backgroundColor: e.backgroundColor || Object(g.a)(e).flair,
 							color: `${B(e)}`
 						}
-					}, r, e.isSelected && a.a.createElement(L, {
+					}, r, e.isSelected && a.a.createElement(N, {
 						to: "./",
 						onClick: e.onCloseClick
-					}, a.a.createElement(I.a, {
-						className: C.a.CloseIcon,
+					}, a.a.createElement(O.a, {
+						className: j.a.CloseIcon,
 						style: {
-							fill: e.backgroundColor || Object(j.a)(e).flair
+							fill: e.backgroundColor || Object(g.a)(e).flair
 						}
 					})));
 					return a.a.createElement(M, {
@@ -412,21 +412,21 @@
 						to: e.to
 					})
 				}),
-				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(j.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(O.a)(Object(j.a)(e).post, T.a.black, T.a.white) : e.textColor === y.e.Dark ? T.a.black : T.a.white,
-				W = p.a.wrapped(R, "TextFlair", C.a),
-				V = p.a.wrapped(A, "RichTextFlair", C.a),
-				H = e => {
+				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(g.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(y.a)(Object(g.a)(e).post, T.a.black, T.a.white) : e.textColor === v.e.Dark ? T.a.black : T.a.white,
+				W = p.a.wrapped(P, "TextFlair", j.a),
+				H = p.a.wrapped(A, "RichTextFlair", j.a),
+				Z = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
 						case "nsfw":
 							return "#FF585B";
 						default:
-							return Object(i.i)(.1, Object(j.a)(s()(e, "theme", "redditStyle", "data-redditstyle")).button)
+							return Object(i.i)(.1, Object(g.a)(s()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				Z = p.a.wrapped(e => {
-					const t = H(e),
+				V = p.a.wrapped(e => {
+					const t = Z(e),
 						n = a.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -438,7 +438,7 @@
 						flair: n,
 						searchableTerm: e.text
 					})
-				}, "MetaFlair", C.a);
+				}, "MetaFlair", j.a);
 
 			function G(e) {
 				const {
@@ -455,13 +455,13 @@
 					forceSmallEmojis: b,
 					to: f
 				} = e, h = Object(u.a)({
-					[C.a.flairVariant]: s,
-					[C.a.small]: s && !e.large,
-					[C.a.large]: s && e.large
+					[j.a.flairVariant]: s,
+					[j.a.small]: s && !e.large,
+					[j.a.large]: s && e.large
 				}, t);
 				switch (o.type) {
-					case y.f.Richtext:
-						return n || !o.richtext ? null : a.a.createElement(V, {
+					case v.f.Richtext:
+						return n || !o.richtext ? null : a.a.createElement(H, {
 							backgroundColor: o.backgroundColor,
 							className: h,
 							forceSmallEmojis: b,
@@ -476,7 +476,7 @@
 							textColor: o.textColor,
 							to: f
 						});
-					case y.f.Text:
+					case v.f.Text:
 						return n || !o.text ? null : a.a.createElement(W, {
 							backgroundColor: o.backgroundColor,
 							className: h,
@@ -491,7 +491,7 @@
 							redditStyle: !p,
 							to: f
 						});
-					case y.f.Meta:
+					case v.f.Meta:
 						return a.a.createElement(W, {
 							backgroundColor: o.backgroundColor,
 							className: t,
@@ -502,20 +502,20 @@
 							redditStyle: !p,
 							to: f
 						});
-					case y.f.Nsfw:
-					case y.f.Spoiler:
-						return a.a.createElement(Z, {
+					case v.f.Nsfw:
+					case v.f.Spoiler:
+						return a.a.createElement(V, {
 							className: t,
 							text: o.text,
 							type: o.type
 						});
-					case y.f.Quarantined:
+					case v.f.Quarantined:
 						return null;
-					case y.f.Oc:
+					case v.f.Oc:
 						return a.a.createElement(W, {
 							backgroundColor: T.a.alienblue,
 							text: o.text,
-							textColor: y.e.Light,
+							textColor: v.e.Light,
 							tooltip: r.fbt._("This post is marked as Original Content [OC]", null, {
 								hk: "h7je6"
 							})
@@ -753,7 +753,7 @@
 					}
 					componentDidMount() {
 						if (this.props.isOverlay) {
-							const e = document.getElementById(i.e);
+							const e = document.getElementById(i.d);
 							this.setState({
 								container: e
 							})
@@ -1322,89 +1322,31 @@
 			const c = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Kb,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.X.Enabled),
+				}), e => e === o.Y.Enabled),
 				a = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Lb,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.Y.Enabled),
+				}), e => e === o.Z.Enabled),
 				l = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Mb,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.Z.Enabled),
+				}), e => e === o.ab.Enabled),
 				d = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Nb,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.ab.Enabled),
+				}), e => e === o.bb.Enabled),
 				u = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Pb,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.cb.Enabled),
+				}), e => e === o.db.Enabled),
 				m = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Ob,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.bb.Enabled)
-		},
-		"./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return r
-			})), n.d(t, "e", (function() {
-				return m
-			})), n.d(t, "f", (function() {
-				return f
-			})), n.d(t, "c", (function() {
-				return _
-			})), n.d(t, "b", (function() {
-				return T
-			})), n.d(t, "h", (function() {
-				return v
-			})), n.d(t, "d", (function() {
-				return O
-			})), n.d(t, "g", (function() {
-				return I
-			}));
-			var r, o = n("./node_modules/reselect/es/index.js"),
-				s = n("./src/reddit/constants/experiments.ts"),
-				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				c = n("./src/reddit/selectors/experiments/index.ts"),
-				a = n("./src/reddit/selectors/meta.ts");
-			! function(e) {
-				e.Blurred = "blurred", e.NoPreview = "noPreview"
-			}(r || (r = {}));
-			const l = Object(o.a)(a.g, a.d, c.e, (e, t, n) => !e && !t && !n);
-
-			function d(e, t) {
-				return n => Object(i.c)(n, {
-					experimentName: e,
-					experimentEligibilitySelector: l,
-					expEventOverride: t
-				})
-			}
-			const u = d(s.Ub, !0),
-				m = d(s.Ub, !1),
-				p = d(s.Wb, !0),
-				b = (d(s.Wb, !1), d(s.Vb, !0)),
-				f = d(s.Vb, !1),
-				h = d(s.Xb, !0),
-				E = d(s.Xb, !1),
-				x = Object(o.a)(u, p, (e, t) => e === s.sc.Enabled || t === s.tc.Enabled),
-				_ = Object(o.a)(b, h, (e, t) => e === s.ib.BlurredPreview || e === s.ib.NoPreview || t === s.ib.BlurredPreview || t === s.ib.NoPreview),
-				T = Object(o.a)(f, E, (e, t) => e === s.ib.BlurredPreview || t === s.ib.BlurredPreview),
-				D = Object(o.a)(b, h, (e, t) => e === s.ib.NoPreview || t === s.ib.NoPreview),
-				v = Object(o.a)(x, D, T, (e, t, n) => (e || t) && !n),
-				O = e => {
-					const t = T(e),
-						n = v(e);
-					return t ? r.Blurred : n ? r.NoPreview : null
-				},
-				I = (e, t, n) => {
-					const o = e === r.Blurred;
-					return !(o && !t) && !!(o && t || n)
-				}
+				}), e => e === o.cb.Enabled)
 		},
 		"./src/redditGQL/operations/SubredditRecommendations.json": function(e) {
 			e.exports = JSON.parse('{"id":"074eb98957ec"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.f37f3654a9db329cc753.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.131edef115acd107a31a.js.map

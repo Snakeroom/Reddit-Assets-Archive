@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.6571c288d640eb97a591.js
-// Retrieved at 4/20/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.1e3a0a1fec6fe4314fae.js
+// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -4008,7 +4008,7 @@
 					}
 					componentDidMount() {
 						if (this.props.isOverlay) {
-							const e = document.getElementById(s.e);
+							const e = document.getElementById(s.d);
 							this.setState({
 								container: e
 							})
@@ -6001,12 +6001,12 @@
 				a = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.u
-				}) === r.x.Enabled,
+					experimentName: r.v
+				}) === r.y.Enabled,
 				s = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.Pc
-				}) === r.qd
+					experimentName: r.Nc
+				}) === r.od
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
 			"use strict";
@@ -6030,7 +6030,7 @@
 					if (!u(e)) return;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: o.Jd,
+						experimentName: o.Hd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -6053,9 +6053,9 @@
 				},
 				p = e => !!m(e) && Object(s.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: o.Kd,
+					experimentName: o.Id,
 					expEventOverride: !1
-				}) !== o.Ld.Readonly
+				}) !== o.Jd.Readonly
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, n) {
 			"use strict";
@@ -6215,4 +6215,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.6571c288d640eb97a591.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.1e3a0a1fec6fe4314fae.js.map

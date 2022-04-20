@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.027b2b72119e47b5af53.js
-// Retrieved at 4/20/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.1baf9d3667afea919435.js
+// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.Kf)(e.category_name)
+									displayText: Object(u.Hf)(e.category_name)
 								};
 								n.push(s.id), t[s.id] = s
 							}), {
@@ -486,7 +486,7 @@
 				fbt: b
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = e => {
 				if (e) {
-					const e = document.getElementById(c.e);
+					const e = document.getElementById(c.d);
 					e && e.scroll(0, 0)
 				} else window.scroll(0, 0)
 			};
@@ -2533,7 +2533,7 @@
 					} = t;
 					return Object(g.b)(n.params.categoryName || "")
 				},
-				Ee = Object(m.Jf)(b.i),
+				Ee = Object(m.Gf)(b.i),
 				_e = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2662,4 +2662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.027b2b72119e47b5af53.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.1baf9d3667afea919435.js.map

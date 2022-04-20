@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.bb1d873de2ff4b42e2f4.js
-// Retrieved at 4/20/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3778934f912baf3abe71.js
+// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -345,7 +345,7 @@
 				}
 			};
 			const K = {};
-			var q = function() {
+			var G = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : K,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -364,7 +364,7 @@
 							return e
 					}
 				},
-				G = s("./src/lib/omitKey/index.ts");
+				q = s("./src/lib/omitKey/index.ts");
 			const Q = {};
 			var Z = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Q,
@@ -383,7 +383,7 @@
 									dist: r,
 									token: n
 								}
-							} : Object(G.a)(e, s)
+							} : Object(q.a)(e, s)
 						}
 						default:
 							return e
@@ -392,7 +392,7 @@
 				Y = Object(L.c)({
 					api: D,
 					fetchedTokens: V,
-					ids: q,
+					ids: G,
 					loadMore: Z
 				});
 			const J = {};
@@ -1034,13 +1034,13 @@
 							return e
 					}
 				},
-				q = Object(j.c)({
+				G = Object(j.c)({
 					api: V,
 					result: K
 				});
-			const G = {};
+			const q = {};
 			var Q = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : G,
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : q,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case _.n: {
@@ -1084,7 +1084,7 @@
 					inContext: L,
 					loadMore: A,
 					models: W,
-					search: q,
+					search: G,
 					userOrder: Q
 				});
 			Object(S.a)({
@@ -1460,8 +1460,8 @@
 				z = s("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				V = s("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
 				K = s("./src/reddit/actions/inContextModeration.ts"),
-				q = s("./src/reddit/actions/modal.ts"),
-				G = s("./src/reddit/actions/subredditModeration/ban.ts"),
+				G = s("./src/reddit/actions/modal.ts"),
+				q = s("./src/reddit/actions/subredditModeration/ban.ts"),
 				Q = s("./src/reddit/constants/modals.ts"),
 				Z = s("./src/reddit/components/Hovercards/helpers.ts"),
 				Y = s("./src/reddit/icons/fonts/index.tsx"),
@@ -1539,8 +1539,8 @@
 						contextId: n
 					} = t;
 					return {
-						onUnbanUser: t => e(Object(G.e)(r, t)),
-						requestUserBanInfo: () => e(Object(G.c)(r, {
+						onUnbanUser: t => e(Object(q.e)(r, t)),
+						requestUserBanInfo: () => e(Object(q.c)(r, {
 							username: s
 						})),
 						toggleBanModal: () => {
@@ -1548,14 +1548,14 @@
 								username: s,
 								subredditId: r,
 								contextId: n
-							})), e(Object(G.a)(r, s))
+							})), e(Object(q.a)(r, s))
 						},
 						toggleMuteModal: () => {
 							e(Object(K.d)({
 								username: s,
 								subredditId: r,
 								contextId: n
-							})), e(Object(q.i)(Q.a.MUTE_USER))
+							})), e(Object(G.i)(Q.a.MUTE_USER))
 						}
 					}
 				})(re),
@@ -3277,8 +3277,8 @@
 				K = Object(m.c)({
 					isOverlayOpen: U.i
 				}),
-				q = Object(c.b)(K),
-				G = {};
+				G = Object(c.b)(K),
+				q = {};
 
 			function Q(e) {
 				return e === document
@@ -3616,8 +3616,8 @@
 					}), this.props.disableScrollCache && !this.props.preventScrollOnMount && Object(_.c)(this.scrollContainer, 0), this.setupScrollHandler(), h.a.write(() => {
 						if (!this.props.disableScrollCache) {
 							const e = this.getCacheKey(),
-								t = G[e];
-							o()(t) || (G[e] = void 0, this.scrollContainer && Object(_.c)(this.scrollContainer, t))
+								t = q[e];
+							o()(t) || (q[e] = void 0, this.scrollContainer && Object(_.c)(this.scrollContainer, t))
 						}
 						this.callOnScrollForItemsChanged(), this.props.onLastVisibleChildRendered && this.props.onLastVisibleChildRendered()
 					}), h.a.read(() => {
@@ -3646,7 +3646,7 @@
 				componentWillUnmount() {
 					if (this.callExitedViewportForUnmount(), this.cleanupScrollHandler(), clearTimeout(this.updateRenderableChildrenHandle), this.cancelPopulateRenderableChildrenWhenIdle(), this.scrollContainer && !this.props.disableScrollCache) {
 						const e = this.getCacheKey();
-						G[e] = this.lastRenderPosition
+						q[e] = this.lastRenderPosition
 					}
 					this.childMap = new S.a("id"), this.itemsInViewport = new S.a("id"), this.wrapperRefFNs = {}, this.childRefFns = {}, this.containerRef = null, this.loadMoreEl = void 0, this.scrollContainer = void 0, this.unmountItemsIdleId && (Object(u.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)
 				}
@@ -3802,7 +3802,7 @@
 					return void 0 === e.onLoadMore || "loadMoreToken" in e
 				}
 			}
-			t.b = q(Object(L.b)(ce))
+			t.b = G(Object(L.b)(ce))
 		},
 		"./src/reddit/components/Scroller/getDocumentTop.ts": function(e, t, s) {
 			"use strict";
@@ -4353,7 +4353,7 @@
 				fbt: p
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), h = e => {
 				if (e) {
-					const e = document.getElementById(l.e);
+					const e = document.getElementById(l.d);
 					e && e.scroll(0, 0)
 				} else window.scroll(0, 0)
 			};
@@ -5779,7 +5779,7 @@
 					g = Object(o.e)(v.e),
 					y = Object(o.e)(v.c),
 					C = Object(o.e)(v.d),
-					I = Object(p.fb)(),
+					I = Object(p.eb)(),
 					w = Object(o.e)(e => Object(p.E)(e, {
 						pageLayer: I
 					})),
@@ -6062,12 +6062,12 @@
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const i = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: r.u
-				}) === r.x.Enabled,
+					experimentName: r.v
+				}) === r.y.Enabled,
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: r.Pc
-				}) === r.qd
+					experimentName: r.Nc
+				}) === r.od
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, s) {
 			"use strict";
@@ -6118,4 +6118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.bb1d873de2ff4b42e2f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3778934f912baf3abe71.js.map
