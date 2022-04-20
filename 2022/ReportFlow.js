@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.ff89582d683793993f56.js
-// Retrieved at 4/20/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.ae3b13423df7027d0e10.js
+// Retrieved at 4/20/2022, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1536,15 +1536,15 @@
 				G = n("./src/reddit/models/WhitelistAndBlocked.ts"),
 				W = n("./src/reddit/icons/svgs/ProfileSlashed/index.tsx"),
 				z = n("./src/reddit/components/ReportFlow/FinalPage/index.m.less"),
-				J = n.n(z);
-			const Q = c.a.wrapped(h.a, "blockUserHolder", J.a),
-				Y = c.a.wrapped(W.a, "BlockUserIcon", J.a),
-				V = c.a.div("BlockUserHeader", J.a),
-				X = c.a.div("OptionHolder", J.a),
-				Z = c.a.div("OptionHeader", J.a),
-				$ = c.a.div("OptionDescription", J.a),
-				ee = c.a.a("Link", J.a),
-				te = c.a.wrapped(h.a, "footer", J.a),
+				Q = n.n(z);
+			const Y = c.a.wrapped(h.a, "blockUserHolder", Q.a),
+				J = c.a.wrapped(W.a, "BlockUserIcon", Q.a),
+				V = c.a.div("BlockUserHeader", Q.a),
+				X = c.a.div("OptionHolder", Q.a),
+				Z = c.a.div("OptionHeader", Q.a),
+				$ = c.a.div("OptionDescription", Q.a),
+				ee = c.a.a("Link", Q.a),
+				te = c.a.wrapped(h.a, "footer", Q.a),
 				ne = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/what-report-abuse",
 				se = Object(i.c)({
 					blockUserPending: e => e.user.blocked.api,
@@ -1584,9 +1584,9 @@
 						const {
 							props: e
 						} = this, t = this.getBlockUserHeaderText();
-						return r.a.createElement(Q, {
+						return r.a.createElement(Y, {
 							onClick: () => this.onBlockAuthor(e.authorName)
-						}, r.a.createElement(Y, null), r.a.createElement("div", null, r.a.createElement(V, null, t), r.a.createElement($, null, s.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [s.fbt._param("username", e.authorName)], {
+						}, r.a.createElement(J, null), r.a.createElement("div", null, r.a.createElement(V, null, t), r.a.createElement($, null, s.fbt._("You won't see posts or comments from {username}. You can change this later in your preference.", [s.fbt._param("username", e.authorName)], {
 							hk: "2iUUlN"
 						}))))
 					}
@@ -1908,10 +1908,10 @@
 				Ge = n("./src/reddit/selectors/commentSelector.ts"),
 				We = n("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				ze = n("./src/reddit/selectors/posts.ts"),
-				Je = n("./src/reddit/components/ReportFlow/_ReportFlow.m.less"),
-				Qe = n.n(Je);
-			const Ye = c.a.div("CloseWrapper", Qe.a),
-				Ve = c.a.wrapped(Ae.a, "Close", Qe.a),
+				Qe = n("./src/reddit/components/ReportFlow/_ReportFlow.m.less"),
+				Ye = n.n(Qe);
+			const Je = c.a.div("CloseWrapper", Ye.a),
+				Ve = c.a.wrapped(Ae.a, "Close", Ye.a),
 				Xe = Object(i.c)({
 					comment: (e, t) => {
 						let {
@@ -2074,7 +2074,7 @@
 					} = this;
 					if (t.crisisFlowEnabled && e.chosenRuleKind === ce.a.CrisisTextLine && e.showCTLPage) {
 						let e;
-						if (t.commentId ? e = t.comment && t.comment.author : t.postId && (e = t.post && t.post.author), e) return r.a.createElement(o.Fragment, null, r.a.createElement(Ye, {
+						if (t.commentId ? e = t.comment && t.comment.author : t.postId && (e = t.post && t.post.author), e) return r.a.createElement(o.Fragment, null, r.a.createElement(Je, {
 							onClick: this.handleReportFlowClose
 						}, r.a.createElement(Ve, null)), r.a.createElement(u.a, {
 							onCloseReportFlow: this.handleReportFlowClose,
@@ -2096,7 +2096,7 @@
 				}
 				render() {
 					return r.a.createElement("div", {
-						className: Qe.a.Wrapper
+						className: Ye.a.Wrapper
 					}, this.getContent())
 				}
 			}
@@ -2243,7 +2243,7 @@
 						}))
 					}
 				}),
-				J = async (e, t, n, s, o) => {
+				Q = async (e, t, n, s, o) => {
 					var r;
 					const a = await ((e, t) => {
 						let {
@@ -2272,7 +2272,7 @@
 						return e ? JSON.parse(e) : null
 					}
 				};
-			class Q extends l.a.Component {
+			class Y extends l.a.Component {
 				constructor(e) {
 					super(e), this.getItemMetadata = () => {
 						const {
@@ -2415,7 +2415,7 @@
 						gqlContext: n,
 						hostAppName: s
 					} = this.props;
-					J(n(), e, q, s, t).then(e => {
+					Q(n(), e, q, s, t).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -2467,7 +2467,7 @@
 					}))
 				}
 			}
-			t.default = Object(I.b)(z(Object(h.c)(Q)))
+			t.default = Object(I.b)(z(Object(h.c)(Y)))
 		},
 		"./src/reddit/components/ReportFlow/_ReportFlowNewModal.tsx": function(e, t, n) {
 			"use strict";
@@ -4040,7 +4040,7 @@
 				k = Object(o.a)(s.ld),
 				I = Object(o.a)(s.pd),
 				j = Object(o.a)(s.od),
-				T = Object(o.a)(s.Jf),
+				T = Object(o.a)(s.If),
 				F = Object(o.a)(s.nd)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOrError.json": function(e) {
@@ -4069,4 +4069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.ff89582d683793993f56.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.ae3b13423df7027d0e10.js.map

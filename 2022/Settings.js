@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.401e596e3f2f4a4a7e63.js
-// Retrieved at 4/20/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.6738aae2105e6a22f5d8.js
+// Retrieved at 4/20/2022, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -9319,22 +9319,14 @@
 		},
 		"./src/reddit/helpers/trackers/communityPoints.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "e", (function() {
+			n.d(t, "d", (function() {
 				return a
-			})), n.d(t, "d", (function() {
-				return o
 			})), n.d(t, "c", (function() {
-				return i
-			})), n.d(t, "h", (function() {
-				return l
-			})), n.d(t, "f", (function() {
-				return c
-			})), n.d(t, "g", (function() {
-				return d
+				return o
 			})), n.d(t, "b", (function() {
-				return m
+				return i
 			})), n.d(t, "a", (function() {
-				return u
+				return l
 			}));
 			var s = n("./src/reddit/selectors/telemetry.ts");
 			const r = e => t => ({
@@ -9347,40 +9339,7 @@
 				a = () => r("view"),
 				o = () => r("tap"),
 				i = () => r("dismiss"),
-				l = () => e => ({
-					...Object(s.n)(e),
-					source: "meta",
-					action: "view",
-					noun: "points_learn_more",
-					actionInfo: {
-						reason: "deep_link"
-					}
-				}),
-				c = () => e => ({
-					...Object(s.n)(e),
-					source: "meta",
-					action: "view",
-					noun: "points_faq",
-					actionInfo: {
-						reason: "learn_more"
-					}
-				}),
-				d = e => t => ({
-					...Object(s.n)(t),
-					source: "meta",
-					action: "view",
-					noun: "points_faq_section",
-					actionInfo: {
-						paneName: e
-					}
-				}),
-				m = () => e => ({
-					...Object(s.n)(e),
-					source: "meta",
-					action: "click",
-					noun: "learn_more_create_vault_button"
-				}),
-				u = e => t => ({
+				l = e => t => ({
 					...Object(s.n)(t),
 					source: "meta",
 					action: "click",
@@ -14433,4 +14392,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.401e596e3f2f4a4a7e63.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.6738aae2105e6a22f5d8.js.map

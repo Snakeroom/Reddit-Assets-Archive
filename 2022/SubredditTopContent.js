@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.6e8b8b4b5c3a1985756b.js
-// Retrieved at 4/20/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.fd4c869a00f57b4cc3b6.js
+// Retrieved at 4/20/2022, 1:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -363,14 +363,14 @@
 					})))))
 				},
 				H = s("./src/reddit/icons/svgs/CircledPlanet/index.tsx"),
-				q = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
-				Q = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
-				z = s.n(Q);
+				Q = s("./src/reddit/layout/twoCol/ExpandRight/index.tsx"),
+				q = s("./src/reddit/components/DiscoveryUnit/PostCommunity/index.m.less"),
+				z = s.n(q);
 			var G = e => {
 					const t = Object(F.a)(e.name, e.type);
 					return r.a.createElement("div", {
 						className: Object(c.a)(z.a.container, e.className)
-					}, r.a.createElement(q.a, {
+					}, r.a.createElement(Q.a, {
 						className: z.a.layout
 					}, r.a.createElement("div", {
 						className: z.a.iconContainer
@@ -882,9 +882,9 @@
 				f = s("./src/reddit/constants/experiments.ts"),
 				g = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(C.O)(e) || f.qf.ShowTopContent === Object(g.c)(e, {
+			const y = e => Object(C.O)(e) || f.pf.ShowTopContent === Object(g.c)(e, {
 				experimentEligibilitySelector: g.a,
-				experimentName: f.kf
+				experimentName: f.jf
 			});
 			var _ = s("./src/reddit/selectors/subreddit.ts"),
 				k = s("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -1467,8 +1467,8 @@
 				A = s("./src/config.ts"),
 				R = s("./src/reddit/hooks/useClickSourceData.ts"),
 				H = s("./src/reddit/hooks/usePostContext.ts"),
-				q = s("./src/reddit/hooks/useTheme.ts"),
-				Q = s("./src/telemetry/models/Outbound.ts");
+				Q = s("./src/reddit/hooks/useTheme.ts"),
+				q = s("./src/telemetry/models/Outbound.ts");
 
 			function z() {
 				return (z = Object.assign || function(e) {
@@ -1494,7 +1494,7 @@
 						isLoggedIn: m,
 						post: u
 					} = e;
-					const p = Object(q.a)();
+					const p = Object(Q.a)();
 					let b = "";
 					switch (t) {
 						case T.ExtraLarge:
@@ -1651,7 +1651,7 @@
 						post: n
 					} = e, {
 						isSponsored: i
-					} = n, o = e.isCommentsPage ? Q.SourceElement.PostLink : Q.SourceElement.ListingPostLink;
+					} = n, o = e.isCommentsPage ? q.SourceElement.PostLink : q.SourceElement.ListingPostLink;
 					if (s && !a && n.isNSFW) return null;
 					const l = !t && !e.isCrosspost && e.size !== T.Large && !n.isSponsored && !(n.media && Object(k.H)(n.media)) && (n.source || n.media && (n.media.type === k.o.GIFVIDEO || n.media.type === k.o.IMAGE || n.media.type === k.o.EMBED));
 					if (t || !e.isCommentsPage || e.isCommentPermalink || e.shouldLinkWrap) {
@@ -1733,7 +1733,7 @@
 				}
 			}
 			t.c = r.a.memo((function(e) {
-				const t = Object(u.fb)(),
+				const t = Object(u.eb)(),
 					s = Object(u.w)(t),
 					a = Object(H.a)(),
 					n = Object(i.e)(n => K(n, {
@@ -1742,7 +1742,7 @@
 						isCommentPermalink: s,
 						pageLayer: t
 					})),
-					o = Object(q.a)(),
+					o = Object(Q.a)(),
 					l = Object(m.b)();
 				return a ? r.a.createElement(ee, z({
 					pageLayer: t,
@@ -2126,4 +2126,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.6e8b8b4b5c3a1985756b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.fd4c869a00f57b4cc3b6.js.map
