@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.34e9a81f7e261d5418f9.js
-// Retrieved at 4/20/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.a4f850fef4b3d9ad89f8.js
+// Retrieved at 4/20/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -360,7 +360,7 @@
 			const G = e => {
 				const t = Object(L.c)(e, {
 					experimentEligibilitySelector: L.a,
-					experimentName: b.Wb
+					experimentName: b.Yb
 				});
 				return !!Object(M.a)(t)
 			};
@@ -397,7 +397,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.If)(p),
+						includeInterestTopics: !!p && !Object(b.Lf)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: g && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -3990,13 +3990,13 @@
 				const t = (e => {
 						return Object(s.c)(e, {
 							experimentEligibilitySelector: s.a,
-							experimentName: r.Vd
-						}) === r.od
+							experimentName: r.Xd
+						}) === r.qd
 					})(e),
 					n = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Ud
-					}) === r.od;
+						experimentName: r.Wd
+					}) === r.qd;
 				return t && !n
 			}
 		},
@@ -4018,15 +4018,15 @@
 			const i = e => Object(s.c)(e, {
 					experimentName: r.Jb,
 					experimentEligibilitySelector: o.e
-				}) === r.X.topOfFeedWithCTAs,
+				}) === r.W.topOfFeedWithCTAs,
 				c = e => (e => Object(s.c)(e, {
 					experimentName: r.Jb,
 					experimentEligibilitySelector: o.e
-				}) === r.X.topOfFeedNoCTAs)(e) || i(e),
+				}) === r.W.topOfFeedNoCTAs)(e) || i(e),
 				d = e => Object(s.c)(e, {
 					experimentName: r.Jb,
 					experimentEligibilitySelector: o.e
-				}) === r.X.floatInFeed,
+				}) === r.W.floatInFeed,
 				l = e => {
 					const t = Object(s.c)(e, {
 						experimentName: r.Jb,
@@ -4168,4 +4168,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.34e9a81f7e261d5418f9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.a4f850fef4b3d9ad89f8.js.map

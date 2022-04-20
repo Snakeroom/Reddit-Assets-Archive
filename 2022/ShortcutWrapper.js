@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ShortcutWrapper.d0e892f9b14338971094.js
-// Retrieved at 4/20/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ShortcutWrapper.815ddb58213b65b154d1.js
+// Retrieved at 4/20/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ShortcutWrapper"], {
 		"./node_modules/combokeys/Combokeys/index.js": function(e, t, o) {
@@ -1281,7 +1281,7 @@
 				t(Object(A.a)(a)), Object(R.a)(a), e(T.n(a))
 			}, F = (e, t) => {
 				Object(R.b)(m.b), e(Object(A.b)(t.id)), document.body.style.overflow = "", Object(R.a)(t.id), document.body.style.overflow = "hidden", e(Object(P.a)(t.permalink));
-				const o = document.getElementById(C.d);
+				const o = document.getElementById(C.e);
 				o && o.scrollTo(0, 0)
 			};
 			var q = o("./src/reddit/actions/shortcuts/close.ts");
@@ -1522,4 +1522,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShortcutWrapper.d0e892f9b14338971094.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ShortcutWrapper.815ddb58213b65b154d1.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.8d404267919d428e8341.js
-// Retrieved at 4/20/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.97dbcf215ec78e5d7a20.js
+// Retrieved at 4/20/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -2352,7 +2352,7 @@
 					} = e;
 					const [r, n] = Object(s.useState)(!1);
 					return Object(s.useEffect)(() => (n(!0), () => n(!1)), []), r ? o.a.createElement(W.a, {
-						container: document.getElementById(z.d)
+						container: document.getElementById(z.e)
 					}, o.a.Children.only(t)) : null
 				})),
 				Q = r("./src/reddit/helpers/styles/postBackgroundColor.ts"),
@@ -2461,7 +2461,7 @@
 						showTimestamp: G = !0,
 						subredditOrProfile: W,
 						tooltipType: z
-					} = e, Q = Object(n.d)(), V = Object(w.a)(), Y = Object(n.e)(ie.a), K = Object(n.e)(le.d), $ = Object(n.e)(le.g) || ["popular", "all"].includes(K || ""), X = Object(n.e)(de.b), se = Object(n.e)(de.c), me = y.isSponsored || Object(a.u)(E), fe = !(!me || !Y || Object(h.If)(Y));
+					} = e, Q = Object(n.d)(), V = Object(w.a)(), Y = Object(n.e)(ie.a), K = Object(n.e)(le.d), $ = Object(n.e)(le.g) || ["popular", "all"].includes(K || ""), X = Object(n.e)(de.b), se = Object(n.e)(de.c), me = y.isSponsored || Object(a.u)(E), fe = !(!me || !Y || Object(h.Lf)(Y));
 					Object(s.useEffect)(() => {
 						fe && Q(Object(p.d)(y.author))
 					}, []);
@@ -2742,7 +2742,7 @@
 					greyTextColor: o,
 					isSurveyAd: a
 				} = e;
-				const c = r === l.w.PromotedGrey || r === l.w.NoLockIcon,
+				const c = r === l.v.PromotedGrey || r === l.v.NoLockIcon,
 					m = a ? s.fbt._("We'd like your feedback", null, {
 						hk: "3ltlDO"
 					}) : s.fbt._("promoted", null, {
@@ -2750,7 +2750,7 @@
 					});
 				return n.a.createElement(u, {
 					className: Object(d.a)(t, {
-						[i.a.isPromotedBlue]: r === l.w.PromotedBlue,
+						[i.a.isPromotedBlue]: r === l.v.PromotedBlue,
 						[i.a.isPromotedGrey]: c
 					})
 				}, n.a.createElement("span", {
@@ -3697,15 +3697,15 @@
 			const a = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: n.R,
-						experimentName: s.Mc
+						experimentName: s.Oc
 					});
-					return !(!t || Object(s.If)(t))
+					return !(!t || Object(s.Lf)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: n.R,
-						experimentName: s.Mc
-					}) === s.td.ListingEnabled
+						experimentName: s.Oc
+					}) === s.vd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3765,4 +3765,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.8d404267919d428e8341.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.97dbcf215ec78e5d7a20.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.173aac341e5350822044.js
-// Retrieved at 4/20/2022, 1:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.ec42a2ee6d7e26968c29.js
+// Retrieved at 4/20/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/TournamentTokenIcon/index.tsx": function(e, t, a) {
@@ -189,7 +189,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(r.e)(d.s) ? n.a.createElement(o, {
+					return Object(r.e)(d.r) ? n.a.createElement(o, {
 						className: t
 					}) : n.a.createElement(l, {
 						className: t
@@ -653,7 +653,7 @@
 				} = e;
 				var x;
 				const A = Object(p.a)(),
-					k = Object(i.eb)(),
+					k = Object(i.fb)(),
 					v = "true" === (null == k ? void 0 : k.queryParams["top-predictors"]),
 					[L, P, j] = Object(u.a)(v),
 					{
@@ -868,4 +868,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.173aac341e5350822044.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.ec42a2ee6d7e26968c29.js.map

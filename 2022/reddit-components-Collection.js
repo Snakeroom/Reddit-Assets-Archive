@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Collection.60822df9d4cefb56b628.js
-// Retrieved at 4/20/2022, 3:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Collection.cb8a46e5d46e51c96611.js
+// Retrieved at 4/20/2022, 4:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Collection"], {
 		"./src/reddit/components/Collection/PostAndPostEventMeta/index.m.less": function(e, t, o) {
@@ -507,7 +507,7 @@
 						}))), n.a.createElement("div", {
 							className: K.a.postListWrapper
 						}, n.a.createElement("div", {
-							id: E.b,
+							id: E.c,
 							style: se(this.props),
 							className: K.a.collectionList
 						}, b && b.trim() && n.a.createElement("div", {
@@ -531,7 +531,7 @@
 					}
 				}
 				componentDidMount() {
-					const e = document.getElementById(E.b);
+					const e = document.getElementById(E.c);
 					if (e) {
 						const t = this.selectedPostRef;
 						let o;
@@ -742,4 +742,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.60822df9d4cefb56b628.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Collection.cb8a46e5d46e51c96611.js.map
