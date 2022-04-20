@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.1e3a0a1fec6fe4314fae.js
-// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.f57f6a54ef4a101df65f.js
+// Retrieved at 4/20/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -2342,7 +2342,6 @@
 					[w.j.WikiUnbanned]: "wiki_unban"
 				},
 				z = {
-					[w.r.Ban]: "ban",
 					[w.r.BotBan]: "bot",
 					[w.r.PermaBan]: "block"
 				};
@@ -2444,7 +2443,7 @@
 						m = Object(k.b)(N.e[l || "bot"], {
 							isFilled: !0
 						}),
-						b = ![N.c, w.r.BotBan, w.r.PermaBan, w.r.Ban].includes(l),
+						b = ![N.c, w.r.BotBan, w.r.PermaBan].includes(l),
 						p = n.postInfo ? null === (s = n.postInfo) || void 0 === s ? void 0 : s.permalink : n.commentInfo ? null === (i = n.commentInfo) || void 0 === i ? void 0 : i.permalink : void 0,
 						f = Object(k.b)("external_link_fill");
 					return u ? a.a.createElement("div", {
@@ -2646,9 +2645,6 @@
 					})
 				},
 				ve = {
-					[w.r.Ban]: () => f.fbt._("Banned", null, {
-						hk: "31QtLJ"
-					}),
 					[w.r.BotBan]: () => f.fbt._("Banned by bot", null, {
 						hk: "gc7lV"
 					}),
@@ -5931,9 +5927,9 @@
 					[s]: "#E6E6E6"
 				},
 				l = {
-					[o.r.BotBan]: "ban_fill",
+					[o.r.BotBan]: "bot_fill",
 					[o.r.PermaBan]: "bot_fill",
-					[o.r.Ban]: "bot_fill",
+					[o.r.Ban]: "ban_fill",
 					[o.r.AbuseWarning]: "spoiler_fill",
 					[o.r.SpamWarning]: "spoiler_fill",
 					[o.r.SpamWatch]: "nsfw_language_fill",
@@ -6215,4 +6211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.1e3a0a1fec6fe4314fae.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.f57f6a54ef4a101df65f.js.map

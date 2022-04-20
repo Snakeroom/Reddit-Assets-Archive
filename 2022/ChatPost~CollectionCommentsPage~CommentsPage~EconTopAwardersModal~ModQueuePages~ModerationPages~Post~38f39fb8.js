@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.8d404267919d428e8341.js
-// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.b2b0d43434f9bfdd5a23.js
+// Retrieved at 4/20/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -3289,9 +3289,9 @@
 					[a]: "#E6E6E6"
 				},
 				l = {
-					[n.r.BotBan]: "ban_fill",
+					[n.r.BotBan]: "bot_fill",
 					[n.r.PermaBan]: "bot_fill",
-					[n.r.Ban]: "bot_fill",
+					[n.r.Ban]: "ban_fill",
 					[n.r.AbuseWarning]: "spoiler_fill",
 					[n.r.SpamWarning]: "spoiler_fill",
 					[n.r.SpamWatch]: "nsfw_language_fill",
@@ -3765,4 +3765,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.8d404267919d428e8341.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.b2b0d43434f9bfdd5a23.js.map
