@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.8e76b6f84318f3cf0e8b.js
-// Retrieved at 4/20/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.f6b0cf6895acd3d1bb81.js
+// Retrieved at 4/21/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1416,7 +1416,7 @@
 						MultiredditEditModal: "d4a110dc7e978faa5041",
 						NotificationUnit: "ab22d77eaa6d3e51960a",
 						NotificationsInbox: "25ed795f97fd8e4ec4ef",
-						NotificationsPrePromptLoader: "8986d99c73f7ef852e24",
+						NotificationsPrePromptLoader: "a3058b3a0da5dca1c919",
 						PostFlowUpsellModal: "03a3ce68e1614318c543",
 						PowerupSuccessModal: "b7b3810606ba83326cc3",
 						Powerups: "c992d2f0519295001b9f",
@@ -1479,7 +1479,7 @@
 						PostCreation: "a7d5ac66d0a56233f1dd",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "4af28f818270a434061f",
-						Settings: "a3cc0b938c442fbac258",
+						Settings: "467fe407c32bb0f5819e",
 						"vendors~ExportTheme~ImportTheme": "4e4dc70c7eeb3e02be12",
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
@@ -1609,10 +1609,10 @@
 						"reddit-components-SubredditContent-PredictionsContent": "8ce6cbc12066aee01de0",
 						TimezoneList: "57988e1ba10253d58674",
 						"reddit-components-ScheduledPost-PostSchedulePickerModal": "67bd4a2fa92e81449e3d",
-						CommunityNotificationSettings: "baa795ad140c33a27a6f",
-						EmailNotificationSettings: "9c337ef8ee476509c2d9",
+						CommunityNotificationSettings: "5861c55c596ce341895c",
+						EmailNotificationSettings: "359b9963456117f8ebe7",
 						ModPnSettingsSubredditList: "db4aa3bf965d86ff9e7a",
-						PushNotificationSettings: "6183aeafc72aed8653db",
+						PushNotificationSettings: "6c210ed29d61c16b0394",
 						UpdateCardModal: "7ccf6b9ef80063efcb91",
 						"reddit-components-Settings-CreatePasswordSSOModal": "2c21ff1a59ce12af1046",
 						SubredditTopContent: "bca21ba0e307df6a8e5b",
@@ -1711,4 +1711,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.8e76b6f84318f3cf0e8b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f6b0cf6895acd3d1bb81.js.map

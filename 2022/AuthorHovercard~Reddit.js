@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.9babbc70373a730b50f8.js
-// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.a95026afffbdb0c0f275.js
+// Retrieved at 4/21/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -175,8 +175,8 @@
 						u = j(i);
 					if (await Object(o.a)() || d) return;
 					await N(i, r);
-					v.j(i), await Object(c.b)(e, t, () => {
-						u || r(Object(l.o)()), r(Object(l.n)()), v.h(i)
+					v.k(i), await Object(c.b)(e, t, () => {
+						u || r(Object(l.o)()), r(Object(l.n)()), v.i(i)
 					}, (e, t) => {
 						r(Object(l.l)()), r(S(t ? l.a.Denied : l.a.Closed)), e && (t ? v.e(i) : v.f(i))
 					}, e => {
@@ -190,7 +190,7 @@
 				try {
 					switch (await Object(i.b)(a.gqlContext)) {
 						case i.a.Success:
-							Object(m.b)(l.a.Granted), v.k(s), e && t(Object(h.f)({
+							Object(m.b)(l.a.Granted), v.l(s), e && t(Object(h.f)({
 								kind: y.b.SuccessCommunity,
 								text: r.fbt._("Changes saved", null, {
 									hk: "wGH5U"
@@ -198,13 +198,13 @@
 							}));
 							break;
 						case i.a.FailedResponse:
-							v.i(s, "registration_failed_generally");
+							v.j(s, "registration_failed_generally");
 							break;
 						case i.a.FailedGqlReponse:
-							v.i(s, "registration_failed_in_gql")
+							v.j(s, "registration_failed_in_gql")
 					}
 				} catch (o) {
-					v.i(s, "registration_failed_uncaught_exception"), console.error(o)
+					v.j(s, "registration_failed_uncaught_exception"), console.error(o)
 				}
 			}, S = (e, t) => async n => {
 				try {
@@ -1186,7 +1186,7 @@
 		},
 		"./src/reddit/helpers/trackers/notifications.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "h", (function() {
+			n.d(t, "i", (function() {
 				return l
 			})), n.d(t, "d", (function() {
 				return d
@@ -1194,24 +1194,26 @@
 				return u
 			})), n.d(t, "f", (function() {
 				return p
-			})), n.d(t, "j", (function() {
-				return b
 			})), n.d(t, "k", (function() {
+				return b
+			})), n.d(t, "l", (function() {
 				return h
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "j", (function() {
 				return f
 			})), n.d(t, "c", (function() {
 				return v
 			})), n.d(t, "b", (function() {
 				return y
-			})), n.d(t, "g", (function() {
+			})), n.d(t, "h", (function() {
 				return O
 			})), n.d(t, "a", (function() {
 				return _
-			})), n.d(t, "l", (function() {
-				return j
 			})), n.d(t, "m", (function() {
+				return j
+			})), n.d(t, "n", (function() {
 				return I
+			})), n.d(t, "g", (function() {
+				return x
 			}));
 			var r = n("./src/reddit/selectors/telemetry.ts"),
 				a = n("./src/telemetry/index.ts"),
@@ -1338,6 +1340,12 @@
 					actionInfo: {
 						pageType: "community_alerts"
 					}
+				}),
+				x = () => e => ({
+					...r.n(e),
+					action: "click",
+					noun: "desktop_notification_permissions",
+					source: "overlay"
 				})
 		},
 		"./src/reddit/hooks/useDesktopNotificationsPromptSeen.ts": function(e, t, n) {
@@ -3883,4 +3891,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.9babbc70373a730b50f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.a95026afffbdb0c0f275.js.map

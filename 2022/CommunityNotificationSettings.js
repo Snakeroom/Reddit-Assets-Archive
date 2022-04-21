@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.baa795ad140c33a27a6f.js
-// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.5861c55c596ce341895c.js
+// Retrieved at 4/21/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -242,7 +242,7 @@
 					options: N,
 					onSelect: e => {
 						var t;
-						a(Object(f.l)(d, l, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), n(d, e.value)
+						a(Object(f.m)(d, l, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), n(d, e.value)
 					},
 					buttonClassName: O.a.dropdown,
 					buttonIcon: w
@@ -281,7 +281,7 @@
 					clearSubscribedSubredditsList: m
 				} = e;
 				const b = Object(h.a)();
-				Object(a.useEffect)(() => (b(Object(f.m)()), t({
+				Object(a.useEffect)(() => (b(Object(f.n)()), t({
 					first: 20
 				}), () => {
 					m()
@@ -533,4 +533,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.baa795ad140c33a27a6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.5861c55c596ce341895c.js.map

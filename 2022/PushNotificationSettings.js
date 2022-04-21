@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotificationSettings.6183aeafc72aed8653db.js
-// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotificationSettings.6c210ed29d61c16b0394.js
+// Retrieved at 4/21/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, s) {
@@ -82,7 +82,7 @@
 							onClick: () => (s => {
 								if (s.messageType) {
 									const n = e.isEmailSettings;
-									t(n ? Object(l.b)(!s.isEnabled, s.messageType) : Object(l.g)(!s.isEnabled, s.messageType))
+									t(n ? Object(l.b)(!s.isEnabled, s.messageType) : Object(l.h)(!s.isEnabled, s.messageType))
 								}
 								e.updateNotificationPreference({
 									isEnabled: !s.isEnabled,
@@ -164,4 +164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.6183aeafc72aed8653db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.6c210ed29d61c16b0394.js.map
