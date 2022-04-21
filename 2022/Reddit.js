@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.98c1e560bbd090912858.js
-// Retrieved at 4/21/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.9a565bedc2656d75e4b6.js
+// Retrieved at 4/21/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -5106,10 +5106,10 @@
 							s = new Ls.a("id"),
 							o = Object(us.a)(e),
 							a = Object(at.qb)(e),
-							i = Object(As.o)(e),
+							i = Object(As.p)(e),
 							c = [];
 						i || c.push(Qn.Predictions);
-						const l = (e => Object(As.w)(e) ? [Js, Ks, Ys, Xs, Zs, $s] : [Ks, Js, Ys, Xs, Zs, $s])(e),
+						const l = (e => Object(As.x)(e) ? [Js, Ks, Ys, Xs, Zs, $s] : [Ks, Js, Ys, Xs, Zs, $s])(e),
 							d = c.length ? l.filter(e => !c.includes(e(null).id)) : l;
 						if (n.account) {
 							const o = n.account;
@@ -18947,4 +18947,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.98c1e560bbd090912858.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9a565bedc2656d75e4b6.js.map

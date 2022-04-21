@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.b48206241bf752d8525c.js
-// Retrieved at 4/21/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.6ad3f89bc97ea09fdae9.js
+// Retrieved at 4/21/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -2216,7 +2216,7 @@
 						n.name
 					}),
 					isNightmodeOn: M.eb,
-					isTalkReportingAllowed: L.A,
+					isTalkReportingAllowed: L.B,
 					locale: A.i
 				}),
 				z = Object(d.b)(W, (e, t) => {
@@ -3950,91 +3950,93 @@
 		},
 		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "r", (function() {
+			n.d(t, "h", (function() {
 				return r
-			})), n.d(t, "t", (function() {
+			})), n.d(t, "s", (function() {
 				return a
-			})), n.d(t, "n", (function() {
+			})), n.d(t, "u", (function() {
 				return i
-			})), n.d(t, "m", (function() {
+			})), n.d(t, "o", (function() {
 				return l
-			})), n.d(t, "p", (function() {
+			})), n.d(t, "n", (function() {
 				return d
 			})), n.d(t, "q", (function() {
 				return c
-			})), n.d(t, "w", (function() {
+			})), n.d(t, "r", (function() {
 				return u
-			})), n.d(t, "u", (function() {
+			})), n.d(t, "x", (function() {
 				return p
 			})), n.d(t, "v", (function() {
 				return m
-			})), n.d(t, "o", (function() {
+			})), n.d(t, "w", (function() {
 				return h
-			})), n.d(t, "i", (function() {
+			})), n.d(t, "p", (function() {
 				return b
-			})), n.d(t, "h", (function() {
-				return f
-			})), n.d(t, "f", (function() {
-				return x
-			})), n.d(t, "b", (function() {
-				return _
-			})), n.d(t, "d", (function() {
-				return R
-			})), n.d(t, "e", (function() {
-				return O
-			})), n.d(t, "g", (function() {
-				return C
-			})), n.d(t, "c", (function() {
-				return g
 			})), n.d(t, "j", (function() {
+				return f
+			})), n.d(t, "i", (function() {
+				return x
+			})), n.d(t, "f", (function() {
+				return _
+			})), n.d(t, "b", (function() {
+				return R
+			})), n.d(t, "d", (function() {
+				return O
+			})), n.d(t, "e", (function() {
+				return C
+			})), n.d(t, "g", (function() {
+				return g
+			})), n.d(t, "c", (function() {
 				return w
 			})), n.d(t, "k", (function() {
 				return v
 			})), n.d(t, "l", (function() {
 				return E
-			})), n.d(t, "s", (function() {
+			})), n.d(t, "m", (function() {
 				return S
-			})), n.d(t, "x", (function() {
+			})), n.d(t, "t", (function() {
 				return y
 			})), n.d(t, "y", (function() {
 				return k
-			})), n.d(t, "A", (function() {
-				return I
-			})), n.d(t, "a", (function() {
-				return j
 			})), n.d(t, "z", (function() {
+				return I
+			})), n.d(t, "B", (function() {
+				return j
+			})), n.d(t, "a", (function() {
 				return T
+			})), n.d(t, "A", (function() {
+				return F
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			Object(o.a)(s.dd);
-			const r = Object(o.a)(s.bd),
-				a = Object(o.a)(s.ed),
-				i = Object(o.a)(s.Wc),
-				l = (Object(o.a)(s.Xc), Object(o.a)(s.Vc)),
-				d = Object(o.a)(s.Zc),
-				c = Object(o.a)(s.ad),
-				u = Object(o.a)(s.hd),
-				p = Object(o.a)(s.fd),
-				m = Object(o.a)(s.gd),
-				h = Object(o.a)(s.Yc),
-				b = Object(o.a)(s.Rc),
-				f = Object(o.a)(s.Pc),
-				x = Object(o.a)(s.Ic),
-				_ = Object(o.a)(s.Ec),
-				R = Object(o.a)(s.Gc),
-				O = Object(o.a)(s.Hc),
-				C = Object(o.a)(s.Kc),
-				g = Object(o.a)(s.Fc),
-				w = Object(o.a)(s.Sc),
-				v = Object(o.a)(s.Tc),
-				E = Object(o.a)(s.Uc),
-				S = Object(o.a)(s.cd),
-				y = Object(o.a)(s.id),
-				k = Object(o.a)(s.md),
-				I = Object(o.a)(s.ld),
-				j = Object(o.a)(s.Df),
-				T = Object(o.a)(s.kd)
+			const r = Object(o.a)(s.dd),
+				a = Object(o.a)(s.bd),
+				i = Object(o.a)(s.ed),
+				l = Object(o.a)(s.Wc),
+				d = (Object(o.a)(s.Xc), Object(o.a)(s.Vc)),
+				c = Object(o.a)(s.Zc),
+				u = Object(o.a)(s.ad),
+				p = Object(o.a)(s.hd),
+				m = Object(o.a)(s.fd),
+				h = Object(o.a)(s.gd),
+				b = Object(o.a)(s.Yc),
+				f = Object(o.a)(s.Rc),
+				x = Object(o.a)(s.Pc),
+				_ = Object(o.a)(s.Ic),
+				R = Object(o.a)(s.Ec),
+				O = Object(o.a)(s.Gc),
+				C = Object(o.a)(s.Hc),
+				g = Object(o.a)(s.Kc),
+				w = Object(o.a)(s.Fc),
+				v = Object(o.a)(s.Sc),
+				E = Object(o.a)(s.Tc),
+				S = Object(o.a)(s.Uc),
+				y = Object(o.a)(s.cd),
+				k = Object(o.a)(s.id),
+				I = Object(o.a)(s.md),
+				j = Object(o.a)(s.ld),
+				T = Object(o.a)(s.Df),
+				F = Object(o.a)(s.kd)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOrError.json": function(e) {
 			e.exports = JSON.parse('{"id":"52e4102ca1f1"}')
@@ -4062,4 +4064,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.b48206241bf752d8525c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.6ad3f89bc97ea09fdae9.js.map

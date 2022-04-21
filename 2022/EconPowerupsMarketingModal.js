@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.a4c7a3ba0c2563398642.js
-// Retrieved at 4/21/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.f79895bc16abf8bf787c.js
+// Retrieved at 4/21/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -499,7 +499,7 @@
 				C = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				M = r("./src/reddit/selectors/experiments/econ/powerupsAward.ts");
 			const S = [N.a.CommentRecognition, N.a.PowerupsAward, N.a.CommunityGear, N.a.CommentsWithGifs, N.a.CommentsWithEmoji, N.a.Achievements, N.a.HeroStatus, N.a.HdVideo],
-				I = Object(i.a)([M.b, C.h], (e, t) => {
+				I = Object(i.a)([M.b, C.i], (e, t) => {
 					let r = S;
 					return e || (r = r.filter(e => e !== N.a.PowerupsAward)), t || (r = r.filter(e => e !== N.a.CommunityGear)), r
 				});
@@ -989,92 +989,94 @@
 		},
 		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "r", (function() {
+			r.d(t, "h", (function() {
 				return s
-			})), r.d(t, "t", (function() {
+			})), r.d(t, "s", (function() {
 				return a
-			})), r.d(t, "n", (function() {
+			})), r.d(t, "u", (function() {
 				return c
-			})), r.d(t, "m", (function() {
+			})), r.d(t, "o", (function() {
 				return i
-			})), r.d(t, "p", (function() {
+			})), r.d(t, "n", (function() {
 				return l
 			})), r.d(t, "q", (function() {
 				return d
-			})), r.d(t, "w", (function() {
+			})), r.d(t, "r", (function() {
 				return u
-			})), r.d(t, "u", (function() {
+			})), r.d(t, "x", (function() {
 				return m
 			})), r.d(t, "v", (function() {
 				return p
-			})), r.d(t, "o", (function() {
+			})), r.d(t, "w", (function() {
 				return b
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "p", (function() {
 				return h
-			})), r.d(t, "h", (function() {
-				return f
-			})), r.d(t, "f", (function() {
-				return w
-			})), r.d(t, "b", (function() {
-				return v
-			})), r.d(t, "d", (function() {
-				return _
-			})), r.d(t, "e", (function() {
-				return g
-			})), r.d(t, "g", (function() {
-				return E
-			})), r.d(t, "c", (function() {
-				return x
 			})), r.d(t, "j", (function() {
+				return f
+			})), r.d(t, "i", (function() {
+				return w
+			})), r.d(t, "f", (function() {
+				return v
+			})), r.d(t, "b", (function() {
+				return _
+			})), r.d(t, "d", (function() {
+				return g
+			})), r.d(t, "e", (function() {
+				return E
+			})), r.d(t, "g", (function() {
+				return x
+			})), r.d(t, "c", (function() {
 				return j
 			})), r.d(t, "k", (function() {
 				return O
 			})), r.d(t, "l", (function() {
 				return k
-			})), r.d(t, "s", (function() {
+			})), r.d(t, "m", (function() {
 				return y
-			})), r.d(t, "x", (function() {
+			})), r.d(t, "t", (function() {
 				return P
 			})), r.d(t, "y", (function() {
 				return N
-			})), r.d(t, "A", (function() {
-				return C
-			})), r.d(t, "a", (function() {
-				return M
 			})), r.d(t, "z", (function() {
+				return C
+			})), r.d(t, "B", (function() {
+				return M
+			})), r.d(t, "a", (function() {
 				return S
+			})), r.d(t, "A", (function() {
+				return I
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				o = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			Object(o.a)(n.dd);
-			const s = Object(o.a)(n.bd),
-				a = Object(o.a)(n.ed),
-				c = Object(o.a)(n.Wc),
-				i = (Object(o.a)(n.Xc), Object(o.a)(n.Vc)),
-				l = Object(o.a)(n.Zc),
-				d = Object(o.a)(n.ad),
-				u = Object(o.a)(n.hd),
-				m = Object(o.a)(n.fd),
-				p = Object(o.a)(n.gd),
-				b = Object(o.a)(n.Yc),
-				h = Object(o.a)(n.Rc),
-				f = Object(o.a)(n.Pc),
-				w = Object(o.a)(n.Ic),
-				v = Object(o.a)(n.Ec),
-				_ = Object(o.a)(n.Gc),
-				g = Object(o.a)(n.Hc),
-				E = Object(o.a)(n.Kc),
-				x = Object(o.a)(n.Fc),
-				j = Object(o.a)(n.Sc),
-				O = Object(o.a)(n.Tc),
-				k = Object(o.a)(n.Uc),
-				y = Object(o.a)(n.cd),
-				P = Object(o.a)(n.id),
-				N = Object(o.a)(n.md),
-				C = Object(o.a)(n.ld),
-				M = Object(o.a)(n.Df),
-				S = Object(o.a)(n.kd)
+			const s = Object(o.a)(n.dd),
+				a = Object(o.a)(n.bd),
+				c = Object(o.a)(n.ed),
+				i = Object(o.a)(n.Wc),
+				l = (Object(o.a)(n.Xc), Object(o.a)(n.Vc)),
+				d = Object(o.a)(n.Zc),
+				u = Object(o.a)(n.ad),
+				m = Object(o.a)(n.hd),
+				p = Object(o.a)(n.fd),
+				b = Object(o.a)(n.gd),
+				h = Object(o.a)(n.Yc),
+				f = Object(o.a)(n.Rc),
+				w = Object(o.a)(n.Pc),
+				v = Object(o.a)(n.Ic),
+				_ = Object(o.a)(n.Ec),
+				g = Object(o.a)(n.Gc),
+				E = Object(o.a)(n.Hc),
+				x = Object(o.a)(n.Kc),
+				j = Object(o.a)(n.Fc),
+				O = Object(o.a)(n.Sc),
+				k = Object(o.a)(n.Tc),
+				y = Object(o.a)(n.Uc),
+				P = Object(o.a)(n.cd),
+				N = Object(o.a)(n.id),
+				C = Object(o.a)(n.md),
+				M = Object(o.a)(n.ld),
+				S = Object(o.a)(n.Df),
+				I = Object(o.a)(n.kd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.a4c7a3ba0c2563398642.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.f79895bc16abf8bf787c.js.map
