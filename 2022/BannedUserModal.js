@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.0844b7c1bf36cfe17d45.js
-// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.d6ad2c1d4ccb12f8eed9.js
+// Retrieved at 4/21/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, n) {
@@ -50,10 +50,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.o:
-					case E.n:
+					case E.r:
+					case E.q:
 						return null;
-					case E.m:
+					case E.p:
 						return t.payload;
 					default:
 						return e
@@ -64,7 +64,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : O,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.o: {
+						case E.r: {
 							const {
 								subredditId: n,
 								fetchedToken: s
@@ -74,8 +74,8 @@
 								[r]: !0
 							}
 						}
-						case E.n:
-						case E.m: {
+						case E.q:
+						case E.p: {
 							const {
 								subredditId: n,
 								fetchedToken: s
@@ -98,7 +98,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : N,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.n: {
+						case E.q: {
 							const {
 								fetchedToken: n,
 								subredditId: s
@@ -128,7 +128,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : D,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.n: {
+						case E.q: {
 							const {
 								subredditId: e,
 								after: n
@@ -147,8 +147,8 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : F,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.l:
-					case E.n: {
+					case E.o:
+					case E.q: {
 						const {
 							subredditId: n,
 							bannedUsers: s
@@ -157,7 +157,7 @@
 							[n]: s
 						})
 					}
-					case E.s: {
+					case E.v: {
 						const {
 							subredditId: n,
 							userId: s
@@ -172,10 +172,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.r:
-					case E.q:
+					case E.u:
+					case E.t:
 						return null;
-					case E.p:
+					case E.s:
 						return t.payload;
 					default:
 						return e
@@ -185,10 +185,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.r:
+						case E.u:
 							return !0;
-						case E.q:
-						case E.p:
+						case E.t:
+						case E.s:
 							return !1;
 						default:
 							return e
@@ -202,10 +202,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.r:
-						case E.p:
+						case E.u:
+						case E.s:
 							return null;
-						case E.q: {
+						case E.t: {
 							const e = t.payload.bannedUserIds[0];
 							return e ? t.payload.bannedUsers[e] : null
 						}
@@ -222,7 +222,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : J,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.n: {
+						case E.q: {
 							const {
 								subredditId: n,
 								bannedUserIds: s
@@ -235,7 +235,7 @@
 								[n]: s
 							}
 						}
-						case E.s: {
+						case E.v: {
 							const {
 								subredditId: n,
 								userId: s
@@ -244,7 +244,7 @@
 								[n]: e[n].filter(e => e !== s)
 							}
 						}
-						case E.l: {
+						case E.o: {
 							const {
 								subredditId: n,
 								bannedUserIds: s
@@ -271,9 +271,9 @@
 					banned: Q
 				}
 			});
-			const z = Object(o.a)(E.o),
-				V = Object(o.a)(E.n),
-				Y = Object(o.a)(E.m),
+			const z = Object(o.a)(E.r),
+				V = Object(o.a)(E.q),
+				Y = Object(o.a)(E.p),
 				$ = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 					return async (n, s, r) => {
@@ -300,9 +300,9 @@
 						}))
 					}
 				},
-				ee = Object(o.a)(E.r),
-				te = Object(o.a)(E.q),
-				ne = Object(o.a)(E.p),
+				ee = Object(o.a)(E.u),
+				te = Object(o.a)(E.t),
+				ne = Object(o.a)(E.s),
 				se = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: a
@@ -314,7 +314,7 @@
 					n(ee());
 					const i = await g(a(), o, d);
 					i.ok ? n(te(i.body)) : n(ne(i.error))
-				}, re = Object(o.a)(E.l), ae = Object(o.a)(E.s), oe = (e, t, n) => async (r, o, i) => {
+				}, re = Object(o.a)(E.o), ae = Object(o.a)(E.v), oe = (e, t, n) => async (r, o, i) => {
 					let {
 						apiContext: l
 					} = i;
@@ -1227,4 +1227,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.0844b7c1bf36cfe17d45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.d6ad2c1d4ccb12f8eed9.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.7681ee2c8a55b0405306.js
-// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.f79d654e2aae9d0a932c.js
+// Retrieved at 4/21/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -352,10 +352,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case j.o:
-					case j.n:
+					case j.r:
+					case j.q:
 						return null;
-					case j.m:
+					case j.p:
 						return t.payload;
 					default:
 						return e
@@ -366,7 +366,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case j.o: {
+						case j.r: {
 							const {
 								subredditId: n,
 								fetchedToken: r
@@ -376,8 +376,8 @@
 								[a]: !0
 							}
 						}
-						case j.n:
-						case j.m: {
+						case j.q:
+						case j.p: {
 							const {
 								subredditId: n,
 								fetchedToken: r
@@ -400,7 +400,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : U,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case j.n: {
+						case j.q: {
 							const {
 								fetchedToken: n,
 								subredditId: r
@@ -430,7 +430,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : L,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case j.n: {
+						case j.q: {
 							const {
 								subredditId: e,
 								after: n
@@ -449,8 +449,8 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : R,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case j.l:
-					case j.n: {
+					case j.o:
+					case j.q: {
 						const {
 							subredditId: n,
 							bannedUsers: r
@@ -459,7 +459,7 @@
 							[n]: r
 						})
 					}
-					case j.s: {
+					case j.v: {
 						const {
 							subredditId: n,
 							userId: r
@@ -474,10 +474,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case j.r:
-					case j.q:
+					case j.u:
+					case j.t:
 						return null;
-					case j.p:
+					case j.s:
 						return t.payload;
 					default:
 						return e
@@ -487,10 +487,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case j.r:
+						case j.u:
 							return !0;
-						case j.q:
-						case j.p:
+						case j.t:
+						case j.s:
 							return !1;
 						default:
 							return e
@@ -500,14 +500,14 @@
 					error: W,
 					pending: K
 				});
-			var Z = function() {
+			var q = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case j.r:
-						case j.p:
+						case j.u:
+						case j.s:
 							return null;
-						case j.q: {
+						case j.t: {
 							const e = t.payload.bannedUserIds[0];
 							return e ? t.payload.bannedUsers[e] : null
 						}
@@ -515,16 +515,16 @@
 							return e
 					}
 				},
-				q = Object(y.c)({
+				Z = Object(y.c)({
 					api: G,
-					result: Z
+					result: q
 				});
 			const J = {};
 			var V = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : J,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case j.n: {
+						case j.q: {
 							const {
 								subredditId: n,
 								bannedUserIds: r
@@ -537,7 +537,7 @@
 								[n]: r
 							}
 						}
-						case j.s: {
+						case j.v: {
 							const {
 								subredditId: n,
 								userId: r
@@ -546,7 +546,7 @@
 								[n]: e[n].filter(e => e !== r)
 							}
 						}
-						case j.l: {
+						case j.o: {
 							const {
 								subredditId: n,
 								bannedUserIds: r
@@ -565,7 +565,7 @@
 					inContext: B,
 					loadMore: D,
 					models: H,
-					search: q,
+					search: Z,
 					userOrder: V
 				});
 			Object(E.a)({
@@ -573,9 +573,9 @@
 					banned: z
 				}
 			});
-			const Q = Object(s.a)(j.o),
-				X = Object(s.a)(j.n),
-				Y = Object(s.a)(j.m),
+			const Q = Object(s.a)(j.r),
+				X = Object(s.a)(j.q),
+				Y = Object(s.a)(j.p),
 				$ = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 					return async (n, r, a) => {
@@ -602,9 +602,9 @@
 						}))
 					}
 				},
-				ee = Object(s.a)(j.r),
-				te = Object(s.a)(j.q),
-				ne = Object(s.a)(j.p),
+				ee = Object(s.a)(j.u),
+				te = Object(s.a)(j.t),
+				ne = Object(s.a)(j.s),
 				re = (e, t) => async (n, r, a) => {
 					let {
 						apiContext: o
@@ -616,7 +616,7 @@
 					n(ee());
 					const d = await x(o(), s, i);
 					d.ok ? n(te(d.body)) : n(ne(d.error))
-				}, ae = Object(s.a)(j.l), oe = Object(s.a)(j.s), se = (e, t, n) => async (a, s, d) => {
+				}, ae = Object(s.a)(j.o), oe = Object(s.a)(j.v), se = (e, t, n) => async (a, s, d) => {
 					let {
 						apiContext: c
 					} = d;
@@ -750,9 +750,9 @@
 				f = n("./src/reddit/models/Toast/index.ts"),
 				h = n("./src/reddit/actions/toaster.ts"),
 				v = n("./src/reddit/actions/subredditModeration/constants.ts");
-			const x = Object(a.a)(v.U),
-				I = Object(a.a)(v.S),
-				g = Object(a.a)(v.R),
+			const x = Object(a.a)(v.X),
+				I = Object(a.a)(v.V),
+				g = Object(a.a)(v.U),
 				_ = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 					return async (n, r, a) => {
@@ -779,9 +779,9 @@
 						}))
 					}
 				},
-				C = Object(a.a)(v.X),
-				O = Object(a.a)(v.W),
-				k = Object(a.a)(v.V),
+				C = Object(a.a)(v.ab),
+				O = Object(a.a)(v.Z),
+				k = Object(a.a)(v.Y),
 				N = (e, t) => async (n, r, a) => {
 					let {
 						apiContext: o
@@ -793,7 +793,7 @@
 					n(C());
 					const d = await m(o(), s, i);
 					d.ok ? n(O(d.body)) : n(k(d.error))
-				}, j = Object(a.a)(v.T), E = Object(a.a)(v.Y), y = (e, t) => async (n, a, o) => {
+				}, j = Object(a.a)(v.W), E = Object(a.a)(v.bb), y = (e, t) => async (n, a, o) => {
 					let {
 						apiContext: u
 					} = o;
@@ -1430,8 +1430,8 @@
 				W = n("./src/reddit/components/HumanDate/index.tsx"),
 				K = n("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				G = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
-				Z = n("./src/reddit/actions/inContextModeration.ts"),
-				q = n("./src/reddit/actions/modal.ts"),
+				q = n("./src/reddit/actions/inContextModeration.ts"),
+				Z = n("./src/reddit/actions/modal.ts"),
 				J = n("./src/reddit/actions/subredditModeration/ban.ts"),
 				V = n("./src/reddit/constants/modals.ts"),
 				z = n("./src/reddit/components/Hovercards/helpers.ts"),
@@ -1515,18 +1515,18 @@
 							username: n
 						})),
 						toggleBanModal: () => {
-							e(Object(Z.c)({
+							e(Object(q.c)({
 								username: n,
 								subredditId: r,
 								contextId: a
 							})), e(Object(J.a)(r, n))
 						},
 						toggleMuteModal: () => {
-							e(Object(Z.d)({
+							e(Object(q.d)({
 								username: n,
 								subredditId: r,
 								contextId: a
-							})), e(Object(q.i)(V.a.MUTE_USER))
+							})), e(Object(Z.i)(V.a.MUTE_USER))
 						}
 					}
 				})(re),
@@ -2309,9 +2309,9 @@
 				W = n("./src/lib/fastdom/index.ts"),
 				K = n("./src/lib/constants/colors.ts"),
 				G = n("./src/reddit/components/CCM/ModUserNoteWithIcon/index.m.less"),
-				Z = n.n(G),
-				q = n("./src/reddit/components/CCM/ModUserNoteWithIcon/Icon/index.m.less"),
-				J = n.n(q);
+				q = n.n(G),
+				Z = n("./src/reddit/components/CCM/ModUserNoteWithIcon/Icon/index.m.less"),
+				J = n.n(Z);
 			const V = {
 					[w.j.AddRemovalReason]: "remove",
 					[w.j.AcceptModeratorInvite]: "mod",
@@ -2673,33 +2673,33 @@
 						subredditId: n
 					} = e, r = Object(o.e)(j.eb), s = Object(b.a)(), i = !!t.__typename && ["ModActionNote", "ModActionNotePost", "ModActionNoteComment"].includes(t.__typename);
 					return a.a.createElement("div", {
-						className: Object(c.a)(Z.a.wrapper, e.className)
+						className: Object(c.a)(q.a.wrapper, e.className)
 					}, a.a.createElement("div", {
 						key: "aa",
-						className: Z.a.iconWrapper,
+						className: q.a.iconWrapper,
 						style: {
 							background: r ? K.a.orca700 : K.a.narwhal100
 						}
 					}, a.a.createElement(Q, {
-						className: Z.a.icon,
+						className: q.a.icon,
 						actionType: t.actionType,
 						label: t.label
 					})), a.a.createElement("div", {
-						className: Z.a.content,
+						className: q.a.content,
 						key: "ba"
 					}, a.a.createElement(xe, {
 						modNote: t,
-						className: Z.a.title
+						className: q.a.title
 					}), a.a.createElement(ie, {
-						className: Z.a.note,
+						className: q.a.note,
 						modNote: t,
 						onClickLinked: () => s(Object(m.d)({
 							subredditId: n,
 							modNote: t
 						}))
 					}), a.a.createElement(ae, {
-						className: Z.a.metaData,
-						deleteClassName: Z.a.metaDataDelete,
+						className: q.a.metaData,
+						deleteClassName: q.a.metaDataDelete,
 						subredditId: n,
 						modNote: t,
 						onClickUsername: () => s(Object(m.q)({
@@ -2707,7 +2707,7 @@
 							modNote: t
 						}))
 					}), i && a.a.createElement(me, {
-						className: Z.a.preview,
+						className: q.a.preview,
 						commentInfo: t.commentInfo,
 						postInfo: t.postInfo,
 						onClick: () => s(Object(m.h)({
@@ -3001,9 +3001,9 @@
 				We = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				Ke = n("./src/lib/opener/index.ts"),
 				Ge = n("./src/reddit/components/AnonymousSnoovatar/index.m.less"),
-				Ze = n.n(Ge);
-			var qe = e => a.a.createElement("img", {
-					className: Object(c.a)(e.className, Ze.a.anonymousSnoovatar),
+				qe = n.n(Ge);
+			var Ze = e => a.a.createElement("img", {
+					className: Object(c.a)(e.className, qe.a.anonymousSnoovatar),
 					src: `${He.a.assetPath}/img/anonymous_snoo.png`
 				}),
 				Je = n("./src/reddit/components/ChatButton/index.tsx"),
@@ -3408,7 +3408,7 @@
 					src: v.snoovatarFullBodyAsset
 				}) : (null === (t = v.accountIcon) || void 0 === t ? void 0 : t.includes("avatars/defaults/v2")) ? a.a.createElement("div", {
 					className: kt.a.anonymousSnoovatar
-				}, a.a.createElement(qe, null)) : a.a.createElement(Ye.a, {
+				}, a.a.createElement(Ze, null)) : a.a.createElement(Ye.a, {
 					className: kt.a.UserIcon,
 					iconUrl: v.accountIcon,
 					isNSFW: v.isNSFW,
@@ -6211,4 +6211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.7681ee2c8a55b0405306.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.f79d654e2aae9d0a932c.js.map
