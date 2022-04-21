@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.fd2f61a946ee5bb4d353.js
-// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.bbcde4412e9efc35eeff.js
+// Retrieved at 4/21/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(e, t, A) {
@@ -151,9 +151,9 @@
 		"./src/reddit/components/ModalStyledComponents/index.tsx": function(e, t, A) {
 			"use strict";
 			A.d(t, "b", (function() {
-				return C
-			})), A.d(t, "e", (function() {
 				return f
+			})), A.d(t, "e", (function() {
+				return C
 			})), A.d(t, "n", (function() {
 				return B
 			})), A.d(t, "p", (function() {
@@ -185,9 +185,9 @@
 			})), A.d(t, "u", (function() {
 				return j
 			})), A.d(t, "r", (function() {
-				return h
-			})), A.d(t, "a", (function() {
 				return O
+			})), A.d(t, "a", (function() {
+				return h
 			})), A.d(t, "s", (function() {
 				return H
 			})), A.d(t, "c", (function() {
@@ -212,8 +212,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const C = a.a.wrapped(l.a, "CloseIcon", g.a),
-				f = a.a.section("ModalBody", g.a),
+			const f = a.a.wrapped(l.a, "CloseIcon", g.a),
+				C = a.a.section("ModalBody", g.a),
 				B = a.a.section("ModalPostPreview", g.a),
 				u = a.a.p("ModalText", g.a),
 				v = a.a.div("ModalSmallText", g.a),
@@ -229,8 +229,8 @@
 				M = a.a.div("ModalMain", g.a),
 				b = a.a.textarea("TextArea", g.a),
 				j = a.a.wrapped(r.l, "WarningButton", g.a),
-				h = a.a.wrapped(r.l, "PrimaryButton", g.a),
-				O = a.a.wrapped(r.o, "CancelButton", g.a),
+				O = a.a.wrapped(r.l, "PrimaryButton", g.a),
+				h = a.a.wrapped(r.o, "CancelButton", g.a),
 				H = a.a.wrapped(r.r, "RemoveButton", g.a),
 				N = e => {
 					let {
@@ -259,8 +259,8 @@
 				i = A("./src/reddit/actions/modal.ts"),
 				g = A("./src/reddit/actions/subreddit/questions.ts"),
 				d = A("./src/reddit/endpoints/subreddit/newCommunityProgress.ts"),
-				C = A("./src/reddit/helpers/trackers/communityProgressModule.ts"),
-				f = A("./src/reddit/hooks/useTracking.ts"),
+				f = A("./src/reddit/helpers/trackers/communityProgressModule.ts"),
+				C = A("./src/reddit/hooks/useTracking.ts"),
 				B = A("./src/reddit/icons/svgs/svgIcons.tsx"),
 				u = A("./src/reddit/models/NewCommunityProgress/index.ts"),
 				v = A("./src/reddit/selectors/activeModalId.ts"),
@@ -276,8 +276,8 @@
 				M = A("./src/reddit/components/ProgressBar/index.tsx"),
 				b = A("./src/reddit/controls/Button/index.tsx"),
 				j = A("./src/reddit/controls/TextButton/index.tsx"),
-				h = A("./src/reddit/icons/fonts/index.tsx"),
-				O = A("./src/reddit/models/Toast/index.ts"),
+				O = A("./src/reddit/icons/fonts/index.tsx"),
+				h = A("./src/reddit/models/Toast/index.ts"),
 				H = A("./src/reddit/components/NewCommunityProgress/icons/index.tsx");
 
 			function N() {
@@ -290,8 +290,8 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: L
-			} = A("./node_modules/fbt/lib/FbtPublic.js"), T = (e, t) => e && function(e) {
+				fbt: T
+			} = A("./node_modules/fbt/lib/FbtPublic.js"), L = (e, t) => e && function(e) {
 				return "CommunityProgressUrlButton" === e.__typename
 			}(e) ? e.url : e && function(e) {
 				return "CommunityProgressMakePostButton" === e.__typename
@@ -353,19 +353,19 @@
 					} = e;
 					var X, U;
 					const R = Object(o.d)(),
-						z = Object(f.a)(),
+						z = Object(C.a)(),
 						J = H.b[l],
-						K = J ? Object(h.b)(J) : null !== (X = H.a[l]) && void 0 !== X ? X : Object(h.b)("best"),
+						K = J ? Object(O.b)(J) : null !== (X = H.a[l]) && void 0 !== X ? X : Object(O.b)("best"),
 						V = m ? p.h : p.g,
 						S = null !== (U = V[d]) && void 0 !== U ? U : V.downvote;
 
 					function F(e) {
 						(function(e) {
 							return "CommunityProgressShareButton" === e.__typename
-						})(e) && (Object(I.a)(`https://reddit.com${w}`), R(Object(Q.f)(Object(Q.e)("Copied community URL to clipboard!", O.b.SuccessCommunityGreen)))), i && v(u.b.CTA_BUTTON_CLICK), z(Object(C.b)(P, A, e.buttonText))
+						})(e) && (Object(I.a)(`https://reddit.com${w}`), R(Object(Q.f)(Object(Q.e)("Copied community URL to clipboard!", h.b.SuccessCommunityGreen)))), i && v(u.b.CTA_BUTTON_CLICK), z(Object(f.b)(P, A, e.buttonText))
 					}
 					const W = (null == Y ? void 0 : Y.done) / (null == Y ? void 0 : Y.total) * 100 || 0,
-						Z = T(D, w);
+						Z = L(D, w);
 					return a.a.createElement("a", N({
 						className: Object(c.a)(r.a.ncpCard, {
 							[r.a.v2]: !i,
@@ -389,7 +389,7 @@
 					}), a.a.createElement(j.a, {
 						className: Object(c.a)(r.a.headerButton, r.a.closeButton, r.a.og),
 						onClick: () => v(u.b.HIDE_BUTTON_CLICK)
-					}, a.a.createElement(x.b, null), a.a.createElement("div", null, L._("Close", null, {
+					}, a.a.createElement(x.b, null), a.a.createElement("div", null, T._("Close", null, {
 						hk: "4gbyAA"
 					}))), a.a.createElement("div", {
 						className: r.a.iconCircle,
@@ -400,7 +400,7 @@
 						className: r.a.icon
 					}))) : G === u.a.COMPLETED ? a.a.createElement("div", null, a.a.createElement("div", {
 						className: r.a.completedIcon
-					}, a.a.createElement(h.a, {
+					}, a.a.createElement(O.a, {
 						name: "checkmark",
 						className: Object(c.a)(r.a.icon, {
 							[r.a.v2]: !i
@@ -423,7 +423,7 @@
 						className: r.a.progressCardContainer
 					}, a.a.createElement("div", {
 						className: r.a.progressLabels
-					}, L._("Progress", null, {
+					}, T._("Progress", null, {
 						hk: "1Riqmr"
 					}), a.a.createElement("div", {
 						className: r.a.ratio
@@ -436,12 +436,12 @@
 						onClick: e => {
 							e.stopPropagation(), e.preventDefault(), B()
 						}
-					}, a.a.createElement(h.a, {
+					}, a.a.createElement(O.a, {
 						name: "overflow_horizontal"
-					}), a.a.createElement("div", null, L._("Close", null, {
+					}), a.a.createElement("div", null, T._("Close", null, {
 						hk: "4gbyAA"
 					}))), g.length > 0 && a.a.createElement("div", null, g.map(e => {
-						const t = T(e, w),
+						const t = L(e, w),
 							A = i ? {
 								backgroundColor: S,
 								borderColor: S,
@@ -625,16 +625,16 @@
 					[Q, x] = Object(n.useState)(!t),
 					M = Object(o.e)(w.eb),
 					b = Object(o.e)(e => Object(m.Z)(e, A)),
-					j = Object(f.a)();
+					j = Object(C.a)();
 				Object(n.useEffect)(() => {
-					j(Object(C.g)(s, Q ? "expanded_module" : "collapses_module"))
+					j(Object(f.g)(s, Q ? "expanded_module" : "collapses_module"))
 				}, [Q]);
-				const [h] = Object(l.a)(d.d), O = Object(o.d)();
+				const [O] = Object(l.a)(d.d), h = Object(o.d)();
 				const [H] = Object(l.a)(d.e);
-				const [N, L] = Object(n.useState)(void 0), [T] = Object(l.a)(d.a);
+				const [N, T] = Object(n.useState)(void 0), [L] = Object(l.a)(d.a);
 				const y = Object(o.e)(v.a) === Z;
 				async function k() {
-					y && L(void 0), O(Object(i.i)(Z))
+					y && T(void 0), h(Object(i.i)(Z))
 				}
 				const [G] = Object(l.a)(d.b);
 				const X = Object(n.useRef)(),
@@ -652,13 +652,13 @@
 							isInNCPControlGroup: D,
 							isNightMode: M,
 							onClose: t => (async function(e, t) {
-								await h({
+								await O({
 									input: {
 										subredditId: A,
 										cardId: e,
 										action: t
 									}
-								}), j(Object(C.e)(s, e)), O(Object(g.b)(A))
+								}), j(Object(f.e)(s, e)), h(Object(g.b)(A))
 							})(e.id, t),
 							subredditUrl: null != b ? b : "",
 							progressModule: s,
@@ -667,7 +667,7 @@
 						return D ? a.a.createElement(Y, n) : a.a.createElement(Y, F({}, n, {
 							ref: t === K ? X : void 0,
 							onActionCard: () => (async function(e) {
-								L(e), j(Object(C.a)(s, e)), k()
+								T(e), j(Object(f.a)(s, e)), k()
 							})(e.id)
 						}))
 					}),
@@ -682,7 +682,7 @@
 					onToggle: () => {
 						var e;
 						const t = !!(null === (e = I.current) || void 0 === e ? void 0 : e.open);
-						x(t), j(t ? Object(C.f)(s) : Object(C.c)(s))
+						x(t), j(t ? Object(f.f)(s) : Object(f.c)(s))
 					}
 				}, a.a.createElement("summary", {
 					className: Object(c.a)(r.a.ncpHeading, {
@@ -726,18 +726,18 @@
 								subredditId: A,
 								moduleId: e
 							}
-						}), O(Object(g.b)(A))
+						}), h(Object(g.b)(A))
 					},
 					ref: R
 				}))), y && a.a.createElement(U, {
 					onCloseModal: k,
 					onCompleteCard: () => N && async function(e) {
-						await T({
+						await L({
 							input: {
 								subredditId: A,
 								cardId: e
 							}
-						}), j(Object(C.d)(s, e)), O(Object(g.b)(A)), y && k()
+						}), j(Object(f.d)(s, e)), h(Object(g.b)(A)), y && k()
 					}(N),
 					onDismissCard: () => N && async function(e) {
 						await H({
@@ -745,7 +745,7 @@
 								subredditId: A,
 								cardId: e
 							}
-						}), j(Object(C.e)(s, e)), O(Object(g.b)(A)), y && k()
+						}), j(Object(f.e)(s, e)), h(Object(g.b)(A)), y && k()
 					}(N),
 					withOverlay: !0
 				}))
@@ -1191,20 +1191,6 @@
 				d: "M14 1.9c-.1-.6.4-1.1 1.1-1.2.8-.1 1.4.3 1.5 1 .1.7-.5 1.5-1.1 1.6-.7.1-1.4-.6-1.5-1.4z"
 			}))
 		},
-		"./src/reddit/icons/svgs/SnooNoEyes/index.tsx": function(e, t, A) {
-			"use strict";
-			var n = A("./node_modules/react/index.js"),
-				a = A.n(n);
-			t.a = e => a.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, a.a.createElement("g", {
-				fill: "inherit"
-			}, a.a.createElement("path", {
-				d: "M15.4687,7.5029 C15.0937,7.5029 14.7307,7.5849 14.3997,7.7389 C13.4987,7.2209 12.4417,6.8769 11.3157,6.7229 L11.7777,4.5489 L12.8277,4.7729 C13.1127,5.5939 13.8847,6.1889 14.8007,6.1889 C15.9547,6.1889 16.8947,5.2489 16.8947,4.0949 C16.8947,2.9399 15.9547,1.9999 14.8007,1.9999 C14.1367,1.9999 13.5507,2.3159 13.1667,2.7999 L11.2147,2.3849 C10.6757,2.2739 10.1437,2.6139 10.0287,3.1549 L9.3297,6.4389 C9.3137,6.5159 9.3257,6.5899 9.3277,6.6659 C7.9607,6.7589 6.6667,7.1219 5.5987,7.7379 C5.2677,7.5839 4.9057,7.5029 4.5317,7.5029 C3.1357,7.5029 1.9997,8.6389 1.9997,10.0349 C1.9997,10.7769 2.3257,11.4699 2.8687,11.9429 C2.9027,14.8739 6.0217,17.1629 9.9967,17.1629 C13.9697,17.1629 17.0877,14.8769 17.1247,11.9479 C17.6707,11.4759 17.9997,10.7799 17.9997,10.0349 C17.9997,8.6389 16.8647,7.5029 15.4687,7.5029"
-			})))
-		},
 		"./src/reddit/icons/svgs/SparkleGradient/index.tsx": function(e, t, A) {
 			"use strict";
 			A.d(t, "a", (function() {
@@ -1336,4 +1322,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.fd2f61a946ee5bb4d353.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.bbcde4412e9efc35eeff.js.map

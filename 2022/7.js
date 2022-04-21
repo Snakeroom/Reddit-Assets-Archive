@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/7.d39237bf62c2ae48b413.js
-// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/7.62d7a8f05cd7ac2f920d.js
+// Retrieved at 4/21/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[7], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -142,8 +142,8 @@
 				x = n("./node_modules/lodash/range.js"),
 				y = n.n(x),
 				w = n("./src/reddit/components/ModeratorSurvey/index.m.less"),
-				C = n.n(w),
-				b = n("./src/lib/classNames/index.ts");
+				b = n.n(w),
+				C = n("./src/lib/classNames/index.ts");
 			var E = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				_ = n("./src/reddit/controls/Button/index.tsx"),
 				k = n("./src/reddit/controls/TextButton/index.tsx"),
@@ -165,49 +165,49 @@
 					return i.Children.toArray(t).reduce((t, n) => n ? n.type === l.a.Fragment ? [...t, ...e(n.props.children)] : [...t, n] : t, [])
 				}(t), h = m.length, p = h > 1 && n > 0, v = null != a ? a : n + 1, g = null != s ? s : h;
 				return l.a.createElement("div", {
-					className: C.a.container
+					className: b.a.container
 				}, l.a.createElement("div", {
-					className: C.a.header
+					className: b.a.header
 				}, p ? l.a.createElement(k.a, {
-					className: C.a.headerButton,
+					className: b.a.headerButton,
 					onClick: d
 				}, l.a.createElement(j.d, {
-					className: C.a.backIcon
+					className: b.a.backIcon
 				}), l.a.createElement("div", null, f.fbt._("Back", null, {
 					hk: "39TCGR"
 				}))) : l.a.createElement(k.a, {
-					className: C.a.headerButton,
+					className: b.a.headerButton,
 					onClick: u
 				}, l.a.createElement(E.b, null), l.a.createElement("div", null, f.fbt._("Close", null, {
 					hk: "4gbyAA"
 				}))), l.a.createElement(M.a, {
-					className: C.a.snoo
+					className: b.a.snoo
 				})), l.a.createElement("div", {
-					className: C.a.slides,
+					className: b.a.slides,
 					style: {
 						transform: `translateX(${-600*n}px)`
 					}
 				}, m.map((e, t) => l.a.createElement("div", {
 					key: t,
-					className: C.a.slide,
+					className: b.a.slide,
 					"aria-hidden": n !== t,
 					"aria-current": n === t
 				}, e))), l.a.createElement("div", {
-					className: C.a.footer
+					className: b.a.footer
 				}, l.a.createElement("div", {
-					className: C.a.progressBar
+					className: b.a.progressBar
 				}, g > 1 && y()(g).map((e, t) => l.a.createElement("div", {
 					key: t,
-					className: Object(b.a)(C.a.progressSegment, {
-						[C.a.active]: t < v
+					className: Object(C.a)(b.a.progressSegment, {
+						[b.a.active]: t < v
 					})
 				}))), l.a.createElement("div", {
-					className: C.a.progress
+					className: b.a.progress
 				}, g > 1 ? f.fbt._("{current} of {total}", [f.fbt._param("current", v), f.fbt._param("total", g)], {
 					hk: "pZU46"
 				}) : ""), l.a.createElement(_.t, {
 					redditStyle: !0,
-					className: C.a.footerButton,
+					className: b.a.footerButton,
 					onClick: c,
 					disabled: r
 				}, null != o ? o : n === h - 1 ? f.fbt._("Submit", null, {
@@ -217,8 +217,8 @@
 				}))))
 			}
 			var S = n("./src/redditGQL/operations/SubmitContentRatingSurvey.json"),
-				L = n("./src/lib/makeGqlRequest/index.ts");
-			var O, T = (e, t) => Object(L.a)(e, {
+				O = n("./src/lib/makeGqlRequest/index.ts");
+			var T, L = (e, t) => Object(O.a)(e, {
 					...S,
 					variables: t
 				}),
@@ -226,7 +226,7 @@
 				I = n("./src/reddit/hooks/useTracking.ts");
 			! function(e) {
 				e.Accepted = "ACCEPTED", e.Pending = "PENDING"
-			}(O || (O = {}));
+			}(T || (T = {}));
 			var B = n("./src/reddit/models/Toast/index.ts"),
 				F = n("./node_modules/lodash/mapValues.js"),
 				Z = n.n(F),
@@ -288,8 +288,8 @@
 					onClose: o = (() => {})
 				} = e, [u, f] = Object(i.useState)({}), x = Object(d.d)(), y = G(null == r ? void 0 : r.questions, u), [{
 					surveyState: w,
-					activeSlide: C
-				}, b] = Object(i.useReducer)((e, t) => {
+					activeSlide: b
+				}, C] = Object(i.useReducer)((e, t) => {
 					let {
 						activeSlide: n
 					} = e;
@@ -301,9 +301,9 @@
 				}, {
 					surveyState: U.Intro,
 					activeSlide: 0
-				}), E = y[C - 1], _ = Object(I.a)();
+				}), E = y[b - 1], _ = Object(I.a)();
 				Object(i.useEffect)(() => {
-					switch (C) {
+					switch (b) {
 						case 0:
 							return _(Object(A.c)());
 						case 1:
@@ -312,17 +312,17 @@
 							return _(Object(A.n)())
 					}
 					if (E) return _(Object(A.j)(E.pageType))
-				}, [C, _]);
+				}, [b, _]);
 				const [k, {
 					pending: M,
 					error: j
-				}] = Object(h.a)(T);
+				}] = Object(h.a)(L);
 				Object(i.useEffect)(() => {
 					j && (p.c.captureException(j), x(Object(g.f)(Object(g.e)(W._("An error occurred", null, {
 						hk: "1VDETi"
 					}), B.b.Error))))
 				}, [j, x]);
-				const [S, L] = Object(i.useState)(null);
+				const [S, O] = Object(i.useState)(null);
 				if (!r) return null;
 				if (!r.isEligible) return null;
 
@@ -331,11 +331,11 @@
 				}
 				const Z = null !== (t = u[null == E ? void 0 : E.id]) && void 0 !== t ? t : {},
 					R = (null !== (n = null == E ? void 0 : E.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => Z[e]),
-					P = w === U.Survey && C > 1;
+					P = w === U.Survey && b > 1;
 				return l.a.createElement(N, {
-					activeSlide: C,
+					activeSlide: b,
 					advance: async function() {
-						if (w === U.Survey && C === y.length && L(function(e, t) {
+						if (w === U.Survey && b === y.length && O(function(e, t) {
 								var n;
 								let a = null,
 									s = [];
@@ -353,7 +353,7 @@
 									version: e.version,
 									createdAt: Date.now(),
 									isFromMod: !0,
-									status: O.Pending,
+									status: T.Pending,
 									rating: a,
 									ratingReasons: s
 								}
@@ -378,13 +378,13 @@
 								}
 							}), void(j || o())
 						}
-						b("forward"), E ? _(Object(A.i)(E.pageType, D(E, u).map(e => e.id))) : 0 === C && _(Object(A.l)())
+						C("forward"), E ? _(Object(A.i)(E.pageType, D(E, u).map(e => e.id))) : 0 === b && _(Object(A.l)())
 					},
 					goBack: function() {
-						b("back"), E && _(Object(A.b)(E.pageType))
+						C("back"), E && _(Object(A.b)(E.pageType))
 					},
 					onClose: o,
-					progressCurrent: P ? C - 1 : 0,
+					progressCurrent: P ? b - 1 : 0,
 					progressTotal: P ? y.length - 1 : 0,
 					disableNext: M || w === U.Survey && !R,
 					buttonText: q(w)
@@ -578,9 +578,9 @@
 			})), n.d(t, "h", (function() {
 				return w
 			})), n.d(t, "j", (function() {
-				return C
-			})), n.d(t, "k", (function() {
 				return b
+			})), n.d(t, "k", (function() {
+				return C
 			})), n.d(t, "g", (function() {
 				return E
 			})), n.d(t, "i", (function() {
@@ -596,11 +596,11 @@
 			})), n.d(t, "u", (function() {
 				return S
 			})), n.d(t, "r", (function() {
-				return L
-			})), n.d(t, "a", (function() {
 				return O
-			})), n.d(t, "s", (function() {
+			})), n.d(t, "a", (function() {
 				return T
+			})), n.d(t, "s", (function() {
+				return L
 			})), n.d(t, "c", (function() {
 				return A
 			}));
@@ -631,8 +631,8 @@
 				x = s.a.div("ModalDescriptionText", u.a),
 				y = s.a.div("ModalMetaText", u.a),
 				w = s.a.label("ModalFormItem", u.a),
-				C = s.a.wrapped(i.a, "ModalInput", u.a),
-				b = s.a.label("ModalInputLabel", u.a),
+				b = s.a.wrapped(i.a, "ModalInput", u.a),
+				C = s.a.label("ModalInputLabel", u.a),
 				E = s.a.footer("ModalFooter", u.a),
 				_ = s.a.header("ModalHeader", u.a),
 				k = s.a.div("ModalTitle", u.a),
@@ -640,9 +640,9 @@
 				j = s.a.div("ModalMain", u.a),
 				N = s.a.textarea("TextArea", u.a),
 				S = s.a.wrapped(c.l, "WarningButton", u.a),
-				L = s.a.wrapped(c.l, "PrimaryButton", u.a),
-				O = s.a.wrapped(c.o, "CancelButton", u.a),
-				T = s.a.wrapped(c.r, "RemoveButton", u.a),
+				O = s.a.wrapped(c.l, "PrimaryButton", u.a),
+				T = s.a.wrapped(c.o, "CancelButton", u.a),
+				L = s.a.wrapped(c.r, "RemoveButton", u.a),
 				A = e => {
 					let {
 						className: t,
@@ -1074,20 +1074,6 @@
 				d: "M14 1.9c-.1-.6.4-1.1 1.1-1.2.8-.1 1.4.3 1.5 1 .1.7-.5 1.5-1.1 1.6-.7.1-1.4-.6-1.5-1.4z"
 			}))
 		},
-		"./src/reddit/icons/svgs/SnooNoEyes/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./node_modules/react/index.js"),
-				s = n.n(a);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", {
-				fill: "inherit"
-			}, s.a.createElement("path", {
-				d: "M15.4687,7.5029 C15.0937,7.5029 14.7307,7.5849 14.3997,7.7389 C13.4987,7.2209 12.4417,6.8769 11.3157,6.7229 L11.7777,4.5489 L12.8277,4.7729 C13.1127,5.5939 13.8847,6.1889 14.8007,6.1889 C15.9547,6.1889 16.8947,5.2489 16.8947,4.0949 C16.8947,2.9399 15.9547,1.9999 14.8007,1.9999 C14.1367,1.9999 13.5507,2.3159 13.1667,2.7999 L11.2147,2.3849 C10.6757,2.2739 10.1437,2.6139 10.0287,3.1549 L9.3297,6.4389 C9.3137,6.5159 9.3257,6.5899 9.3277,6.6659 C7.9607,6.7589 6.6667,7.1219 5.5987,7.7379 C5.2677,7.5839 4.9057,7.5029 4.5317,7.5029 C3.1357,7.5029 1.9997,8.6389 1.9997,10.0349 C1.9997,10.7769 2.3257,11.4699 2.8687,11.9429 C2.9027,14.8739 6.0217,17.1629 9.9967,17.1629 C13.9697,17.1629 17.0877,14.8769 17.1247,11.9479 C17.6707,11.4759 17.9997,10.7799 17.9997,10.0349 C17.9997,8.6389 16.8647,7.5029 15.4687,7.5029"
-			})))
-		},
 		"./src/reddit/icons/svgs/SparkleGradient/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -1207,4 +1193,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/7.d39237bf62c2ae48b413.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/7.62d7a8f05cd7ac2f920d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.7ba55de783777c87c051.js
-// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.5a3426507864b348986a.js
+// Retrieved at 4/21/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, n) {
@@ -274,7 +274,7 @@
 					unreadNotifications: n,
 					isOpen: o,
 					sendEventWithName: a
-				} = e, i = Object(m.c)(Object(p.b)("mod_queue"), `${s.fbt._("Mod Queue",null,{hk:"2fqLkD"})}`), c = Object(m.b)(O("message", n.hasUnreadModmail), `${s.fbt._("Modmail",null,{hk:"1IvnFd"})}`);
+				} = e, i = Object(m.b)(Object(p.b)("mod_queue"), `${s.fbt._("Mod Queue",null,{hk:"2fqLkD"})}`), c = Object(m.a)(O("message", n.hasUnreadModmail), `${s.fbt._("Modmail",null,{hk:"1IvnFd"})}`);
 				return r.a.createElement("div", {
 					className: t
 				}, r.a.createElement(h, {
@@ -1018,11 +1018,9 @@
 		"./src/reddit/helpers/makeHeaderUserDropdownItem/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return l
+				return m
 			})), n.d(t, "b", (function() {
 				return p
-			})), n.d(t, "c", (function() {
-				return u
 			}));
 			var s = n("./node_modules/react/index.js"),
 				o = n.n(s),
@@ -1031,28 +1029,28 @@
 				i = n("./src/lib/lessComponent.tsx"),
 				c = n("./src/reddit/helpers/makeHeaderUserDropdownItem/index.m.less"),
 				d = n.n(c);
-			const l = i.a.button("button", d.a),
-				m = e => t => o.a.createElement("div", {
-					className: t.className
-				}, e);
+			i.a.button("button", d.a);
+			const l = e => t => o.a.createElement("div", {
+				className: t.className
+			}, e);
+
+			function m(e, t, n) {
+				return u(e, t, !0, {
+					...n
+				})
+			}
 
 			function p(e, t, n) {
-				return b(e, t, !0, {
+				return u(e, t, !1, {
 					...n
 				})
 			}
 
-			function u(e, t, n) {
-				return b(e, t, !1, {
-					...n
-				})
-			}
-
-			function b(e, t, n, s) {
+			function u(e, t, n, s) {
 				const i = e,
-					c = "function" == typeof t ? t : m(t),
+					c = "function" == typeof t ? t : l(t),
 					{
-						meta: l
+						meta: m
 					} = s,
 					p = e => o.a.createElement(o.a.Fragment, null, o.a.createElement(i, {
 						className: Object(a.a)(d.a.icon, {
@@ -1060,9 +1058,9 @@
 						})
 					}), o.a.createElement(c, {
 						className: d.a.body
-					}), l && o.a.createElement("div", {
+					}), m && o.a.createElement("div", {
 						className: d.a.metaContainer
-					}, l));
+					}, m));
 				return n ? e => o.a.createElement("a", {
 					"data-redditstyle": !0,
 					className: Object(a.a)(e.className, d.a.basicLink),
@@ -1311,4 +1309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.7ba55de783777c87c051.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.5a3426507864b348986a.js.map

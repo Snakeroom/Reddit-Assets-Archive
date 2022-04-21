@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.29e3f36b584d7104cc8c.js
-// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.b821168187523835fd77.js
+// Retrieved at 4/21/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -99,7 +99,7 @@
 					}),
 					raterTag: b(e)
 				}),
-				f = (e, t, n) => r => ({
+				_ = (e, t, n) => r => ({
 					source: "community_tagging",
 					action: "click",
 					noun: "select_answer",
@@ -108,7 +108,7 @@
 					}),
 					raterTag: b(e, t)
 				}),
-				_ = (e, t, n) => r => ({
+				f = (e, t, n) => r => ({
 					source: "community_tagging",
 					action: "click",
 					noun: "submit",
@@ -196,7 +196,7 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(N.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: B.lf.SmIconHc,
+					userVariant: B.jf.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
@@ -331,7 +331,7 @@
 							subredditId: n,
 							questionId: e
 						}
-					}), u(_(O, t, n)), I(Object(c.f)({
+					}), u(f(O, t, n)), I(Object(c.f)({
 						text: r.fbt._("Thank you for your help!", null, {
 							hk: "1asBUQ"
 						}),
@@ -340,7 +340,7 @@
 				}
 
 				function k(e, t) {
-					u(f(O, t, n))
+					u(_(O, t, n))
 				}
 				switch (O.type) {
 					case S.d.Multi:
@@ -508,9 +508,9 @@
 			})), n.d(t, "c", (function() {
 				return p
 			})), n.d(t, "j", (function() {
-				return f
-			})), n.d(t, "g", (function() {
 				return _
+			})), n.d(t, "g", (function() {
+				return f
 			})), n.d(t, "v", (function() {
 				return x
 			})), n.d(t, "i", (function() {
@@ -558,8 +558,8 @@
 				m = c.a.code("M", d.a),
 				b = c.a.pre("Pre", d.a),
 				p = c.a.blockquote("Blockquote", d.a),
-				f = c.a.p("P", d.a),
-				_ = c.a.li("Li", d.a),
+				_ = c.a.p("P", d.a),
+				f = c.a.li("Li", d.a),
 				x = c.a.ul("Ul", d.a),
 				h = c.a.ol("Ol", d.a),
 				g = c.a.strong("B", d.a),
@@ -616,7 +616,7 @@
 		"./src/reddit/components/StructuredStyles/StyledComponents/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return _
+				return f
 			})), n.d(t, "g", (function() {
 				return x
 			})), n.d(t, "a", (function() {
@@ -653,8 +653,8 @@
 				b = n("./src/reddit/components/StructuredStyles/StyledComponents/index.m.less"),
 				p = n.n(b);
 
-			function f() {
-				return (f = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -662,14 +662,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const _ = i.a.wrapped(m.a, "CloseIcon", p.a),
+			const f = i.a.wrapped(m.a, "CloseIcon", p.a),
 				x = i.a.wrapped(l.a, "ThemedChevron", p.a),
 				h = i.a.wrapped(d.l, "Button", p.a),
 				g = i.a.wrapped(d.r, "TertiaryButton", p.a),
 				S = i.a.div("SubFormTitle", p.a),
 				E = i.a.wrapped(d.o, "SecondaryButton", p.a),
 				v = i.a.wrapped(g, "DeleteButton", p.a),
-				I = (i.a.section("ModalBody", p.a), i.a.header("ModalHeader", p.a), i.a.h2("ModalTitle", p.a), i.a.div("ModalMain", p.a), i.a.p("ModalText", p.a), i.a.footer("ModalFooter", p.a), e => s.a.createElement(u, f({}, e, {
+				I = (i.a.section("ModalBody", p.a), i.a.header("ModalHeader", p.a), i.a.h2("ModalTitle", p.a), i.a.div("ModalMain", p.a), i.a.p("ModalText", p.a), i.a.footer("ModalFooter", p.a), e => s.a.createElement(u, _({}, e, {
 					className: Object(o.a)(p.a.ToggleInput, {
 						[p.a.selected]: !!e.selected
 					})
@@ -742,8 +742,8 @@
 					}
 				}),
 				p = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				f = n("./src/reddit/constants/experiments.ts"),
-				_ = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
+				_ = n("./src/reddit/constants/experiments.ts"),
+				f = n("./src/reddit/helpers/trackers/subredditMentions.ts"),
 				x = n("./src/reddit/selectors/subredditMention.ts");
 			class h extends s.a.PureComponent {
 				constructor() {
@@ -753,7 +753,7 @@
 							sendEvent: t,
 							subredditName: n
 						} = this.props;
-						t(Object(_.a)({
+						t(Object(f.a)({
 							...e,
 							subredditName: n
 						}))
@@ -789,12 +789,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case f.lf.SmIcon:
+						case _.jf.SmIcon:
 							return s.a.createElement(b, {
 								subredditName: r,
 								rtJsonElementProps: i
 							});
-						case f.lf.SmIconHc:
+						case _.jf.SmIconHc:
 							return s.a.createElement(b, {
 								subredditName: r,
 								isHoverable: !0,
@@ -864,7 +864,7 @@
 		"./src/reddit/helpers/trackers/subredditMentions.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return _
+				return f
 			})), n.d(t, "f", (function() {
 				return x
 			})), n.d(t, "g", (function() {
@@ -938,7 +938,7 @@
 						}
 					}
 				},
-				f = (e, t) => {
+				_ = (e, t) => {
 					const {
 						renderingObjectInfo: n
 					} = t;
@@ -950,9 +950,9 @@
 						...p(e, t)
 					}
 				},
-				_ = e => t => ({
+				f = e => t => ({
 					...m(t),
-					...f(t, e)
+					..._(t, e)
 				}),
 				x = e => t => ({
 					...b(t),
@@ -1066,12 +1066,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.ff
+						experimentName: r.df
 					}) || ""
 				},
 				a = e => {
 					const t = c(e);
-					return t === r.lf.SmIcon || t === r.lf.SmIconHc
+					return t === r.jf.SmIcon || t === r.jf.SmIconHc
 				},
 				u = (e, t) => {
 					let {
@@ -1100,4 +1100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.29e3f36b584d7104cc8c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.b821168187523835fd77.js.map

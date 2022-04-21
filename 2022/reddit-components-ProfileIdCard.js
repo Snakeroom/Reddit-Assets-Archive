@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.f63f0509a12eb6d829d6.js
-// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d2780a6b45a2efb1565a.js
+// Retrieved at 4/21/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2253,7 +2253,7 @@
 							e(Object(d.h)(n)), s(Object(x.a)(n))
 						},
 						onClickUnblockUser: () => {
-							e(Object(d.g)(n)), s(Object(x.j)(n))
+							e(Object(d.g)(n)), s(Object(x.i)(n))
 						},
 						onClickChatInviteLink: () => e((() => async (e, t, r) => {
 							let {
@@ -2519,7 +2519,7 @@
 				}), t && a.a.createElement(pe.a, {
 					onClose: X,
 					onConfirm: e => {
-						X(), w(e), I(Object(x.j)(D))
+						X(), w(e), I(Object(x.i)(D))
 					},
 					username: D,
 					withOverlay: !0
@@ -2816,26 +2816,24 @@
 		},
 		"./src/reddit/helpers/trackers/user.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "h", (function() {
+			r.d(t, "g", (function() {
 				return i
-			})), r.d(t, "i", (function() {
+			})), r.d(t, "h", (function() {
 				return c
 			})), r.d(t, "f", (function() {
 				return l
-			})), r.d(t, "g", (function() {
-				return d
 			})), r.d(t, "e", (function() {
-				return m
+				return d
 			})), r.d(t, "b", (function() {
-				return u
+				return m
 			})), r.d(t, "c", (function() {
-				return p
+				return u
 			})), r.d(t, "d", (function() {
-				return f
+				return p
 			})), r.d(t, "a", (function() {
+				return f
+			})), r.d(t, "i", (function() {
 				return b
-			})), r.d(t, "j", (function() {
-				return g
 			}));
 			var n = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				s = r("./src/reddit/selectors/telemetry.ts"),
@@ -2864,43 +2862,37 @@
 				l = () => e => ({
 					source: "user_dropdown",
 					action: "click",
-					noun: "predictions",
-					...o(e)
-				}),
-				d = () => e => ({
-					source: "user_dropdown",
-					action: "click",
 					noun: "premium",
 					correlationId: Object(n.c)(n.a.GoldPayment),
 					...o(e)
 				}),
-				m = () => e => ({
+				d = () => e => ({
 					source: "user_dropdown",
 					action: "click",
 					noun: "powerups",
 					correlationId: Object(n.e)(n.a.PowerupsFlow, !1),
 					...o(e)
 				}),
-				u = () => e => ({
+				m = () => e => ({
 					source: "user_dropdown",
 					action: "click",
 					noun: "advertise",
 					...o(e)
 				}),
-				p = () => e => ({
+				u = () => e => ({
 					source: "nav",
 					action: "click",
 					noun: "advertise",
 					...o(e)
 				}),
-				f = () => e => ({
+				p = () => e => ({
 					source: "user_dropdown",
 					action: "click",
 					noun: "coins",
 					correlationId: Object(n.c)(n.a.GoldPayment),
 					...o(e)
 				}),
-				b = e => t => ({
+				f = e => t => ({
 					source: "profile",
 					action: "click",
 					noun: "block_user",
@@ -2911,7 +2903,7 @@
 					},
 					...s.n(t)
 				}),
-				g = e => t => ({
+				b = e => t => ({
 					source: "profile",
 					action: "click",
 					noun: "unblock_user",
@@ -3143,4 +3135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.f63f0509a12eb6d829d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d2780a6b45a2efb1565a.js.map
