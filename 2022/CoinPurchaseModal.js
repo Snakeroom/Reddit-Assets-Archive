@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.6586e44188660a7b4a9b.js
-// Retrieved at 4/21/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.9d54583e1e5b5c7e15dc.js
+// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -590,7 +590,7 @@
 		"./src/reddit/actions/gold/gild.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "setIsAnonymous", (function() {
-				return K
+				return J
 			})), r.d(t, "updateMessage", (function() {
 				return z
 			})), r.d(t, "gildGqlRequested", (function() {
@@ -671,8 +671,8 @@
 				H = r("./src/reddit/endpoints/profile/info.ts"),
 				W = r("./src/reddit/actions/gold/awardKarma.ts"),
 				V = r("./src/reddit/actions/gold/constants.ts"),
-				J = r("./src/reddit/actions/gold/econPurchase.ts");
-			const K = Object(a.a)(V.r),
+				K = r("./src/reddit/actions/gold/econPurchase.ts");
+			const J = Object(a.a)(V.r),
 				z = Object(a.a)(V.v),
 				Y = (e, t) => async (r, a, s) => {
 					let {
@@ -762,7 +762,7 @@
 						commentId: r
 					}), a = Object(S.l)(e), s = e.gild, {
 						isAnonymous: o
-					} = s, c = !o && a && (a.username || a.displayText) ? a.username || a.displayText : void 0, i = n ? n.author : void 0, d = Object(N.J)(e, {
+					} = s, c = !o && a && (a.username || a.displayText) ? a.username || a.displayText : void 0, i = n ? n.author : void 0, d = Object(N.K)(e, {
 						thingId: r
 					});
 					return re({
@@ -795,10 +795,10 @@
 						})
 					}
 					if (b.awardType === m.f.Moderator && void 0 === e.subredditCoins) {
-						const t = Object(N.J)(a, {
+						const t = Object(N.K)(a, {
 								thingId: p
 							}),
-							r = t && Object(N.B)(a, {
+							r = t && Object(N.C)(a, {
 								subredditName: t.name
 							});
 						r && (e.subredditCoins = r - b.coinPrice)
@@ -872,12 +872,12 @@
 							})), s ? r : n)
 						}
 					}
-					const G = Object(N.J)(a, {
+					const G = Object(N.K)(a, {
 						thingId: p
 					});
 					if (G && Object(k.a)(a, {
 							subredditId: G.id
-						}) && t(Object(J.a)(G.id, G.name, {
+						}) && t(Object(K.a)(G.id, G.name, {
 							force: !0
 						})), 0 === T && G) {
 						t(Object(o.a)(G.id, p, void 0, !0));
@@ -2296,8 +2296,8 @@
 					})))
 				},
 				V = r("./src/reddit/components/PaymentMethodSelector/index.tsx"),
-				J = r("./src/reddit/components/StripePaymentForm/index.tsx"),
-				K = r("./src/reddit/helpers/createEmojiText/index.tsx");
+				K = r("./src/reddit/components/StripePaymentForm/index.tsx"),
+				J = r("./src/reddit/helpers/createEmojiText/index.tsx");
 			const z = e => {
 				const t = Object(q.a)(),
 					r = Object(c.a)(),
@@ -2327,7 +2327,7 @@
 					let {
 						stripe: r
 					} = t;
-					return o.a.createElement(J.a, {
+					return o.a.createElement(K.a, {
 						nightmode: e.nightmode,
 						stripe: r
 					})
@@ -2357,7 +2357,7 @@
 				})({
 					...e,
 					locale: t
-				}), Object(K.a)(a.fbt._("By purchasing Coins and Awards, you agree to the :agreement:.", null, {
+				}), Object(J.a)(a.fbt._("By purchasing Coins and Awards, you agree to the :agreement:.", null, {
 					hk: "1eCqza"
 				}), {
 					":agreement:": o.a.createElement("a", {
@@ -3876,7 +3876,7 @@
 				m = r("./node_modules/react-redux/es/index.js"),
 				b = r("./src/reddit/constants/experiments.ts"),
 				f = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(f.a)(b.Oc);
+			const h = Object(f.a)(b.Rc);
 			let g = null;
 
 			function y() {
@@ -4116,4 +4116,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.6586e44188660a7b4a9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.9d54583e1e5b5c7e15dc.js.map

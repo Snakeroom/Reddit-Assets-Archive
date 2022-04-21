@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityAwards.2c1ccfd79ce499acc562.js
-// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityAwards.ca254d52335728002a78.js
+// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityAwards"], {
 		"./src/reddit/actions/gold/communityAwards/communityAwards.ts": function(e, t, r) {
@@ -185,7 +185,7 @@
 						subredditOrProfileId: e
 					}));
 					const o = Object(i.a)(e),
-						c = !!Object(w.bb)(d, {
+						c = !!Object(w.cb)(d, {
 							subredditIds: [e]
 						})[0];
 					let u;
@@ -713,4 +713,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.2c1ccfd79ce499acc562.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityAwards.ca254d52335728002a78.js.map

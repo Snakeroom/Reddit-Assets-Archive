@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.d05f387e9db018ae2c78.js
-// Retrieved at 4/21/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.7681ee2c8a55b0405306.js
+// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -500,7 +500,7 @@
 					error: W,
 					pending: K
 				});
-			var J = function() {
+			var Z = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -515,13 +515,13 @@
 							return e
 					}
 				},
-				Z = Object(y.c)({
+				q = Object(y.c)({
 					api: G,
-					result: J
+					result: Z
 				});
-			const q = {};
+			const J = {};
 			var V = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : q,
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : J,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case j.n: {
@@ -565,7 +565,7 @@
 					inContext: B,
 					loadMore: D,
 					models: H,
-					search: Z,
+					search: q,
 					userOrder: V
 				});
 			Object(E.a)({
@@ -698,10 +698,10 @@
 				}, de = (e, t) => async (n, r) => {
 					const a = r();
 					await Promise.all([(async () => {
-						if (!Object(C.b)(u.a.BAN_USER)(a) && !Object(k.Q)(a, {
+						if (!Object(C.b)(u.a.BAN_USER)(a) && !Object(k.R)(a, {
 								subredditId: e
 							})) {
-							const t = Object(k.T)(a, {
+							const t = Object(k.U)(a, {
 								subredditId: e
 							});
 							await n(Object(c.o)(t.name))
@@ -1430,9 +1430,9 @@
 				W = n("./src/reddit/components/HumanDate/index.tsx"),
 				K = n("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				G = n("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
-				J = n("./src/reddit/actions/inContextModeration.ts"),
-				Z = n("./src/reddit/actions/modal.ts"),
-				q = n("./src/reddit/actions/subredditModeration/ban.ts"),
+				Z = n("./src/reddit/actions/inContextModeration.ts"),
+				q = n("./src/reddit/actions/modal.ts"),
+				J = n("./src/reddit/actions/subredditModeration/ban.ts"),
 				V = n("./src/reddit/constants/modals.ts"),
 				z = n("./src/reddit/components/Hovercards/helpers.ts"),
 				Q = n("./src/reddit/icons/fonts/index.tsx"),
@@ -1510,23 +1510,23 @@
 						contextId: a
 					} = t;
 					return {
-						onUnbanUser: t => e(Object(q.e)(r, t)),
-						requestUserBanInfo: () => e(Object(q.c)(r, {
+						onUnbanUser: t => e(Object(J.e)(r, t)),
+						requestUserBanInfo: () => e(Object(J.c)(r, {
 							username: n
 						})),
 						toggleBanModal: () => {
-							e(Object(J.c)({
+							e(Object(Z.c)({
 								username: n,
 								subredditId: r,
 								contextId: a
-							})), e(Object(q.a)(r, n))
+							})), e(Object(J.a)(r, n))
 						},
 						toggleMuteModal: () => {
-							e(Object(J.d)({
+							e(Object(Z.d)({
 								username: n,
 								subredditId: r,
 								contextId: a
-							})), e(Object(Z.i)(V.a.MUTE_USER))
+							})), e(Object(q.i)(V.a.MUTE_USER))
 						}
 					}
 				})(re),
@@ -1792,7 +1792,7 @@
 							subredditId: n
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(v.m)(t) && Object(v.eb)(e, t),
+					isCurrentUserBanned: (e, t) => !!Object(v.n)(t) && Object(v.fb)(e, t),
 					userProfileStyles: (e, t) => Object(h.m)(e, Object(f.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(f.h)(e, {
@@ -1805,7 +1805,7 @@
 							subredditId: n
 						} = t;
 						const r = Object(C.e)(e),
-							a = n || r && Object(v.E)(e, r.name);
+							a = n || r && Object(v.F)(e, r.name);
 						return !!a && Object(m.i)(e, a)
 					},
 					trophyCase: (e, t) => Object(f.r)(e, Object(f.m)(e, t.userName)),
@@ -1823,7 +1823,7 @@
 						let {
 							userName: n
 						} = t;
-						return Object(v.fb)(e, {
+						return Object(v.gb)(e, {
 							identifier: {
 								name: n,
 								type: "profile"
@@ -2225,7 +2225,7 @@
 						filter: d,
 						onChangeFilter: l,
 						onChangeView: u
-					} = e, p = Object(b.a)(), h = Object(o.e)(e => Object(A.p)(e, void 0)), v = h.find(e => e.id === n), x = R[d](), I = Object(k.b)("back_fill"), g = Object(r.useCallback)(() => p(Object(m.m)({
+					} = e, p = Object(b.a)(), h = Object(o.e)(e => Object(A.q)(e, void 0)), v = h.find(e => e.id === n), x = R[d](), I = Object(k.b)("back_fill"), g = Object(r.useCallback)(() => p(Object(m.m)({
 						userId: s,
 						subredditId: n
 					})), [s, n, p]), _ = Object(r.useCallback)(e => {
@@ -2309,9 +2309,9 @@
 				W = n("./src/lib/fastdom/index.ts"),
 				K = n("./src/lib/constants/colors.ts"),
 				G = n("./src/reddit/components/CCM/ModUserNoteWithIcon/index.m.less"),
-				J = n.n(G),
-				Z = n("./src/reddit/components/CCM/ModUserNoteWithIcon/Icon/index.m.less"),
-				q = n.n(Z);
+				Z = n.n(G),
+				q = n("./src/reddit/components/CCM/ModUserNoteWithIcon/Icon/index.m.less"),
+				J = n.n(q);
 			const V = {
 					[w.j.AddRemovalReason]: "remove",
 					[w.j.AcceptModeratorInvite]: "mod",
@@ -2354,7 +2354,7 @@
 					if (!o) return null;
 					const s = Object(k.b)(o);
 					return a.a.createElement(s, {
-						className: Object(c.a)(t, q.a.icon)
+						className: Object(c.a)(t, J.a.icon)
 					})
 				},
 				X = n("./src/reddit/selectors/activeModalId.ts"),
@@ -2673,33 +2673,33 @@
 						subredditId: n
 					} = e, r = Object(o.e)(j.eb), s = Object(b.a)(), i = !!t.__typename && ["ModActionNote", "ModActionNotePost", "ModActionNoteComment"].includes(t.__typename);
 					return a.a.createElement("div", {
-						className: Object(c.a)(J.a.wrapper, e.className)
+						className: Object(c.a)(Z.a.wrapper, e.className)
 					}, a.a.createElement("div", {
 						key: "aa",
-						className: J.a.iconWrapper,
+						className: Z.a.iconWrapper,
 						style: {
 							background: r ? K.a.orca700 : K.a.narwhal100
 						}
 					}, a.a.createElement(Q, {
-						className: J.a.icon,
+						className: Z.a.icon,
 						actionType: t.actionType,
 						label: t.label
 					})), a.a.createElement("div", {
-						className: J.a.content,
+						className: Z.a.content,
 						key: "ba"
 					}, a.a.createElement(xe, {
 						modNote: t,
-						className: J.a.title
+						className: Z.a.title
 					}), a.a.createElement(ie, {
-						className: J.a.note,
+						className: Z.a.note,
 						modNote: t,
 						onClickLinked: () => s(Object(m.d)({
 							subredditId: n,
 							modNote: t
 						}))
 					}), a.a.createElement(ae, {
-						className: J.a.metaData,
-						deleteClassName: J.a.metaDataDelete,
+						className: Z.a.metaData,
+						deleteClassName: Z.a.metaDataDelete,
 						subredditId: n,
 						modNote: t,
 						onClickUsername: () => s(Object(m.q)({
@@ -2707,7 +2707,7 @@
 							modNote: t
 						}))
 					}), i && a.a.createElement(me, {
-						className: J.a.preview,
+						className: Z.a.preview,
 						commentInfo: t.commentInfo,
 						postInfo: t.postInfo,
 						onClick: () => s(Object(m.h)({
@@ -2774,7 +2774,7 @@
 						l = Object(o.e)(e => Object(j.Ab)(e, {
 							userId: i
 						})),
-						u = Object(o.e)(e => Object(A.T)(e, {
+						u = Object(o.e)(e => Object(A.U)(e, {
 							subredditId: s
 						})),
 						m = t[d],
@@ -3001,12 +3001,12 @@
 				We = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				Ke = n("./src/lib/opener/index.ts"),
 				Ge = n("./src/reddit/components/AnonymousSnoovatar/index.m.less"),
-				Je = n.n(Ge);
-			var Ze = e => a.a.createElement("img", {
-					className: Object(c.a)(e.className, Je.a.anonymousSnoovatar),
+				Ze = n.n(Ge);
+			var qe = e => a.a.createElement("img", {
+					className: Object(c.a)(e.className, Ze.a.anonymousSnoovatar),
 					src: `${He.a.assetPath}/img/anonymous_snoo.png`
 				}),
-				qe = n("./src/reddit/components/ChatButton/index.tsx"),
+				Je = n("./src/reddit/components/ChatButton/index.tsx"),
 				Ve = n("./src/reddit/components/HumanDate/index.tsx"),
 				ze = n("./src/reddit/components/JSAPIContainers/index.tsx"),
 				Qe = n("./src/reddit/components/ModNoteItem/index.tsx"),
@@ -3408,7 +3408,7 @@
 					src: v.snoovatarFullBodyAsset
 				}) : (null === (t = v.accountIcon) || void 0 === t ? void 0 : t.includes("avatars/defaults/v2")) ? a.a.createElement("div", {
 					className: kt.a.anonymousSnoovatar
-				}, a.a.createElement(Ze, null)) : a.a.createElement(Ye.a, {
+				}, a.a.createElement(qe, null)) : a.a.createElement(Ye.a, {
 					className: kt.a.UserIcon,
 					iconUrl: v.accountIcon,
 					isNSFW: v.isNSFW,
@@ -3423,7 +3423,7 @@
 					hk: "2s4Gmf"
 				})), a.a.createElement("div", {
 					className: kt.a.profileButtonGroup
-				}, S && a.a.createElement(qe.b, {
+				}, S && a.a.createElement(Je.b, {
 					className: Object(c.a)(kt.a.ChatButton, kt.a.profileButtonLeft, {
 						[kt.a.onlyButton]: !P
 					}),
@@ -4004,7 +4004,7 @@
 					}
 					componentDidMount() {
 						if (this.props.isOverlay) {
-							const e = document.getElementById(s.d);
+							const e = document.getElementById(s.e);
 							this.setState({
 								container: e
 							})
@@ -6001,8 +6001,8 @@
 				}) === r.y.Enabled,
 				s = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: r.Nc
-				}) === r.od
+					experimentName: r.Qc
+				}) === r.rd
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
 			"use strict";
@@ -6026,7 +6026,7 @@
 					if (!u(e)) return;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: l,
-						experimentName: o.Hd,
+						experimentName: o.Kd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -6049,9 +6049,9 @@
 				},
 				p = e => !!m(e) && Object(s.c)(e, {
 					experimentEligibilitySelector: u,
-					experimentName: o.Id,
+					experimentName: o.Ld,
 					expEventOverride: !1
-				}) !== o.Jd.Readonly
+				}) !== o.Md.Readonly
 		},
 		"./src/reddit/selectors/notificationPrefs.ts": function(e, t, n) {
 			"use strict";
@@ -6211,4 +6211,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.d05f387e9db018ae2c78.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.7681ee2c8a55b0405306.js.map

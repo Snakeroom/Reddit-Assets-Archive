@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.b8dde7e309dc63e31941.js
-// Retrieved at 4/21/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.d08f4bc1eccab8b7dd36.js
+// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -2102,10 +2102,10 @@
 				}, le = (e, t) => async (n, s) => {
 					const r = s();
 					await Promise.all([(async () => {
-						if (!Object(C.b)(m.a.BAN_USER)(r) && !Object(E.Q)(r, {
+						if (!Object(C.b)(m.a.BAN_USER)(r) && !Object(E.R)(r, {
 								subredditId: e
 							})) {
-							const t = Object(E.T)(r, {
+							const t = Object(E.U)(r, {
 								subredditId: e
 							});
 							await n(Object(c.o)(t.name))
@@ -3272,7 +3272,7 @@
 							subredditId: n
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(g.m)(t) && Object(g.eb)(e, t),
+					isCurrentUserBanned: (e, t) => !!Object(g.n)(t) && Object(g.fb)(e, t),
 					userProfileStyles: (e, t) => Object(f.m)(e, Object(h.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const n = Object(h.h)(e, {
@@ -3285,7 +3285,7 @@
 							subredditId: n
 						} = t;
 						const s = Object(C.e)(e),
-							r = n || s && Object(g.E)(e, s.name);
+							r = n || s && Object(g.F)(e, s.name);
 						return !!r && Object(u.i)(e, r)
 					},
 					trophyCase: (e, t) => Object(h.r)(e, Object(h.m)(e, t.userName)),
@@ -3303,7 +3303,7 @@
 						let {
 							userName: n
 						} = t;
-						return Object(g.fb)(e, {
+						return Object(g.gb)(e, {
 							identifier: {
 								name: n,
 								type: "profile"
@@ -3670,7 +3670,7 @@
 				f = n("./src/reddit/selectors/subreddit.ts");
 			const g = (e, t) => {
 				const n = Object(h.b)(e, t),
-					s = Object(f.I)(e, t);
+					s = Object(f.J)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -3709,7 +3709,7 @@
 			}));
 			const _ = (e, t) => {
 				const n = Object(h.b)(e, t),
-					s = Object(f.I)(e, t);
+					s = Object(f.J)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!s || !s.name) && !!e.moderatingSubreddits[s.name],
@@ -3735,7 +3735,7 @@
 				}
 			}));
 			var y = Object(a.b)(() => Object(o.c)({
-					subreddit: f.T
+					subreddit: f.U
 				}))(e => r.a.createElement(p, {
 					className: e.className,
 					type: "communityTools",
@@ -3835,7 +3835,7 @@
 				}) : null
 			};
 			var O = Object(a.b)(() => Object(o.c)({
-				subreddit: f.T
+				subreddit: f.U
 			}))(e => r.a.createElement(p, {
 				className: e.className,
 				type: "sidebar",
@@ -3848,7 +3848,7 @@
 				}
 			}));
 			var w = Object(a.b)(() => Object(o.c)({
-				subredditOrProfile: (e, t) => Object(f.L)(e, {
+				subredditOrProfile: (e, t) => Object(f.M)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(p, {
@@ -3867,7 +3867,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return n ? Object(f.T)(e, {
+					return n ? Object(f.U)(e, {
 						subredditId: n
 					}) : null
 				}
@@ -13671,9 +13671,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(re.c)(e, {
-							experimentName: se.Bc,
+							experimentName: se.Ec,
 							experimentEligibilitySelector: re.a
-						}) === se.od
+						}) === se.rd
 					}
 				}),
 				po = Object(ge.u)(),
@@ -14204,7 +14204,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
 				experimentEligibilitySelector: () => Object(a.Q)(e)
-			}) === s.od
+			}) === s.rd
 		},
 		"./src/reddit/selectors/experiments/econ/avatarNfts.ts": function(e, t, n) {
 			"use strict";
@@ -14221,8 +14221,8 @@
 				}) === s.y.Enabled,
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Nc
-				}) === s.od
+					experimentName: s.Qc
+				}) === s.rd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14392,4 +14392,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.b8dde7e309dc63e31941.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.d08f4bc1eccab8b7dd36.js.map

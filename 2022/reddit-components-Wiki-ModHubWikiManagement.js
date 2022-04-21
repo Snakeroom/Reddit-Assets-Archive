@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.f7d5ff643177eb6ec118.js
-// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.83e6a7553c2af82246bf.js
+// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Wiki-ModHubWikiManagement"], {
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
@@ -82,7 +82,7 @@
 					hk: "2To19l"
 				})],
 				g = Object(a.c)({
-					subredditRules: m.S
+					subredditRules: m.T
 				}),
 				k = Object(o.b)(g);
 			class C extends r.a.Component {
@@ -282,9 +282,9 @@
 				A = n("./src/higherOrderComponents/asModal/index.tsx"),
 				H = n("./src/reddit/components/CharacterCountdown/index.tsx"),
 				F = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				V = n("./src/reddit/controls/TextButton/index.tsx"),
-				X = n("./src/reddit/helpers/isValidUsername/index.tsx"),
-				Q = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
+				X = n("./src/reddit/controls/TextButton/index.tsx"),
+				Q = n("./src/reddit/helpers/isValidUsername/index.tsx"),
+				V = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
 				q = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				Z = n("./src/reddit/models/SubredditModeration/index.ts"),
 				K = n("./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx"),
@@ -325,7 +325,7 @@
 							duration: void 0
 						})
 					}, this.onSubmit = () => {
-						const e = Object(Q.a)(this.state.username),
+						const e = Object(V.a)(this.state.username),
 							{
 								note: t,
 								banReason: n,
@@ -354,7 +354,7 @@
 					} = this;
 					return s.a.createElement(F.e, null, s.a.createElement(F.i, null, s.a.createElement(q.a, null, s.a.createElement(F.q, null, v.fbt._("Ban wiki contributor", null, {
 						hk: "1d5Hrk"
-					}), e.bannedUser && `: u/${e.bannedUser.username}`), s.a.createElement(V.a, {
+					}), e.bannedUser && `: u/${e.bannedUser.username}`), s.a.createElement(X.a, {
 						onClick: e.toggleModal
 					}, s.a.createElement(F.b, null)))), s.a.createElement(F.l, null, !e.bannedUser && s.a.createElement(s.a.Fragment, null, s.a.createElement(F.h, null, s.a.createElement(F.k, null, v.fbt._("Enter username", null, {
 						hk: "2fknjy"
@@ -393,7 +393,7 @@
 					})), s.a.createElement(D.l, {
 						className: G.a.primaryButton,
 						onClick: this.onSubmit,
-						disabled: !Object(X.a)(t.username)
+						disabled: !Object(Q.a)(t.username)
 					}, v.fbt._("Ban user", null, {
 						hk: "w8Nwk"
 					}))))
@@ -563,7 +563,7 @@
 							username: e.currentTarget.value
 						})
 					}, this.onSubmit = () => {
-						const e = Object(Q.a)(this.state.username);
+						const e = Object(V.a)(this.state.username);
 						this.props.addWikiContributor(e), this.props.sendEvent(L.b), this.props.toggleModal()
 					}, this.state = {
 						username: ""
@@ -576,7 +576,7 @@
 					} = this;
 					return s.a.createElement(F.e, null, s.a.createElement(F.i, null, s.a.createElement(q.a, null, s.a.createElement(F.q, null, v.fbt._("Add wiki contributor", null, {
 						hk: "4Df0lQ"
-					})), s.a.createElement(V.a, {
+					})), s.a.createElement(X.a, {
 						onClick: e.toggleModal
 					}, s.a.createElement(F.b, null)))), s.a.createElement(F.l, null, s.a.createElement("div", {
 						className: de.a.inputLabel
@@ -596,7 +596,7 @@
 					})), s.a.createElement(D.l, {
 						className: de.a.primaryButton,
 						onClick: this.onSubmit,
-						disabled: !Object(X.a)(t.username)
+						disabled: !Object(Q.a)(t.username)
 					}, v.fbt._("Add user", null, {
 						hk: "28WQQq"
 					}))))
@@ -793,7 +793,7 @@
 					}, this.onKeyDown = e => {
 						e.keyCode === Be.a.Enter && this.canAdd() && this.onAddContributor()
 					}, this.canAdd = () => !!this.state.newContributor, this.onAddContributor = () => {
-						const e = Object(Q.a)(this.state.newContributor);
+						const e = Object(V.a)(this.state.newContributor);
 						this.props.addWikiPageContributor(e), this.props.sendEvent(L.c), this.setState({
 							newContributor: ""
 						})
@@ -883,8 +883,8 @@
 			var Ae = De(Ie);
 			const He = Object(S.c)({
 				subredditSettings: (e, t) => {
-					const n = Object(Me.E)(e, t.subredditName);
-					return Object(Me.V)(e, n)
+					const n = Object(Me.F)(e, t.subredditName);
+					return Object(Me.W)(e, n)
 				},
 				wikiPageSettings: I.d
 			});
@@ -1022,7 +1022,7 @@
 					})))
 				}
 			}
-			var Ve = Object(_.b)(He, (e, t) => {
+			var Xe = Object(_.b)(He, (e, t) => {
 					let {
 						subredditName: n,
 						wikiPageName: i
@@ -1036,8 +1036,8 @@
 						}))
 					}
 				})(Object(O.c)(Fe)),
-				Xe = n("./src/reddit/components/Wiki/ModHubWikiManagement/index.m.less"),
-				Qe = n.n(Xe);
+				Qe = n("./src/reddit/components/Wiki/ModHubWikiManagement/index.m.less"),
+				Ve = n.n(Qe);
 			const qe = Object(u.u)(),
 				Ze = () => {
 					document.body.scrollTop = 0, document.documentElement.scrollTop = 0
@@ -1070,10 +1070,10 @@
 						case c.m.Create:
 						case c.m.Edit:
 							return s.a.createElement(a.a, {
-								contentClassName: Qe.a.modHubPageEditorContent,
+								contentClassName: Ve.a.modHubPageEditorContent,
 								isCreation: u === c.m.Create,
 								subredditName: e.name,
-								topBarClassName: Qe.a.modHubTopBar,
+								topBarClassName: Ve.a.modHubTopBar,
 								wikiPageName: b
 							});
 						case c.m.Revisions:
@@ -1085,7 +1085,7 @@
 								wikiPageName: b
 							});
 						case c.m.Settings:
-							if (b) return s.a.createElement(Ve, {
+							if (b) return s.a.createElement(Xe, {
 								subredditName: e.name,
 								wikiPageName: b
 							});
@@ -1223,4 +1223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.f7d5ff643177eb6ec118.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Wiki-ModHubWikiManagement.83e6a7553c2af82246bf.js.map

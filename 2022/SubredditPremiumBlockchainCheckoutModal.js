@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.3b4b138dbc10a2dff886.js
-// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.8b38f105bee01709ef44.js
+// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -116,8 +116,8 @@
 				y = s("./src/reddit/featureFlags/component.tsx"),
 				M = s("./src/reddit/helpers/governance/ethereum.ts"),
 				P = s("./src/reddit/models/Toast/index.ts"),
-				T = s("./src/reddit/selectors/economics.ts"),
-				I = s("./src/reddit/selectors/subreddit.ts"),
+				I = s("./src/reddit/selectors/economics.ts"),
+				T = s("./src/reddit/selectors/subreddit.ts"),
 				S = s("./src/reddit/components/Economics/SubredditPremium/constants.ts"),
 				A = s("./src/reddit/components/Econ/PreviewsTermsOfUseLink/index.tsx"),
 				B = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/Footer/index.m.less"),
@@ -130,7 +130,7 @@
 					let {
 						subredditId: s
 					} = t;
-					return Object(T.r)(e, s)
+					return Object(I.r)(e, s)
 				}
 			});
 			var R = Object(c.b)(L)((function(e) {
@@ -151,16 +151,16 @@
 				})),
 				H = s("./src/reddit/icons/svgs/Close/index.tsx"),
 				G = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/Header/index.m.less"),
-				W = s.n(G);
+				U = s.n(G);
 			const {
-				fbt: U
+				fbt: W
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
 			const V = Object(d.c)({
 				meta: (e, t) => {
 					let {
 						subredditId: s
 					} = t;
-					return Object(T.r)(e, s)
+					return Object(I.r)(e, s)
 				}
 			});
 			var X = Object(c.b)(V)((function(e) {
@@ -168,13 +168,13 @@
 						meta: t
 					} = e;
 					return i.a.createElement("header", {
-						className: W.a.container
+						className: U.a.container
 					}, i.a.createElement("div", {
-						className: W.a.text
-					}, U._("Purchase {membership name}", [U._param("membership name", t.membershipAlt)], {
+						className: U.a.text
+					}, W._("Purchase {membership name}", [W._param("membership name", t.membershipAlt)], {
 						hk: "OO3Gk"
 					})), i.a.createElement(H.a, {
-						className: W.a.close,
+						className: U.a.close,
 						onClick: e.onClose
 					}))
 				})),
@@ -311,7 +311,7 @@
 						let {
 							subredditId: s
 						} = t;
-						return Object(T.r)(e, s)
+						return Object(I.r)(e, s)
 					},
 					pointsDetails: (e, t) => {
 						let {
@@ -323,15 +323,15 @@
 						let {
 							subredditId: s
 						} = t;
-						return Object(T.r)(e, s).prices.points || "0"
+						return Object(I.r)(e, s).prices.points || "0"
 					},
 					subscriptionExpiration: (e, t) => {
 						let {
 							subredditId: s
 						} = t;
-						return Object(T.o)(e, s)
+						return Object(I.o)(e, s)
 					},
-					subreddit: I.T,
+					subreddit: T.U,
 					wallet: g.d
 				}),
 				$ = Object(c.b)(Q, (e, t) => ({
@@ -1084,4 +1084,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.3b4b138dbc10a2dff886.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.8b38f105bee01709ef44.js.map

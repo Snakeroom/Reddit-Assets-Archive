@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.9230dfffd2bee9218c04.js
-// Retrieved at 4/21/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.bbfde2efed61fee4837a.js
+// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.Ff)(e.category_name)
+									displayText: Object(u.If)(e.category_name)
 								};
 								n.push(s.id), t[s.id] = s
 							}), {
@@ -486,7 +486,7 @@
 				fbt: b
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), p = e => {
 				if (e) {
-					const e = document.getElementById(c.d);
+					const e = document.getElementById(c.e);
 					e && e.scroll(0, 0)
 				} else window.scroll(0, 0)
 			};
@@ -2262,9 +2262,9 @@
 						let {
 							categoryId: n
 						} = t;
-						return Object(R.O)(e, n)
+						return Object(R.P)(e, n)
 					},
-					subreddits: R.ab,
+					subreddits: R.bb,
 					isOnLeaderboardPage: e => !!Object(D.h)(e),
 					isOnFrontpage: e => !!Object(D.g)(e)
 				}),
@@ -2533,7 +2533,7 @@
 					} = t;
 					return Object(g.b)(n.params.categoryName || "")
 				},
-				Ee = Object(m.Ef)(b.i),
+				Ee = Object(m.Hf)(b.i),
 				_e = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2662,4 +2662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.9230dfffd2bee9218c04.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.bbfde2efed61fee4837a.js.map

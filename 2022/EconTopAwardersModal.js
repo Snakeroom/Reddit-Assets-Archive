@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b7371872f09545bb4abd.js
-// Retrieved at 4/21/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.d4c6d4506d0de75b317b.js
+// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -542,10 +542,10 @@
 				}, de = (e, t) => async (r, a) => {
 					const n = a();
 					await Promise.all([(async () => {
-						if (!Object(N.b)(m.a.BAN_USER)(n) && !Object(w.Q)(n, {
+						if (!Object(N.b)(m.a.BAN_USER)(n) && !Object(w.R)(n, {
 								subredditId: e
 							})) {
-							const t = Object(w.T)(n, {
+							const t = Object(w.U)(n, {
 								subredditId: e
 							});
 							await r(Object(i.o)(t.name))
@@ -1639,7 +1639,7 @@
 							subredditId: r
 						}) : void 0
 					},
-					isCurrentUserBanned: (e, t) => !!Object(x.m)(t) && Object(x.eb)(e, t),
+					isCurrentUserBanned: (e, t) => !!Object(x.n)(t) && Object(x.fb)(e, t),
 					userProfileStyles: (e, t) => Object(v.m)(e, Object(f.m)(e, t.userName)),
 					acceptChats: (e, t) => {
 						const r = Object(f.h)(e, {
@@ -1652,7 +1652,7 @@
 							subredditId: r
 						} = t;
 						const a = Object(N.e)(e),
-							n = r || a && Object(x.E)(e, a.name);
+							n = r || a && Object(x.F)(e, a.name);
 						return !!n && Object(u.i)(e, n)
 					},
 					trophyCase: (e, t) => Object(f.r)(e, Object(f.m)(e, t.userName)),
@@ -1670,7 +1670,7 @@
 						let {
 							userName: r
 						} = t;
-						return Object(x.fb)(e, {
+						return Object(x.gb)(e, {
 							identifier: {
 								name: r,
 								type: "profile"
@@ -2716,9 +2716,9 @@
 				}) === a.y.Enabled,
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.Nc
-				}) === a.od
+					experimentName: a.Qc
+				}) === a.rd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.b7371872f09545bb4abd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.d4c6d4506d0de75b317b.js.map

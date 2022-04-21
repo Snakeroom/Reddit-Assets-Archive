@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.579c35769b8f44d35882.js
-// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.5155745628a19a4d1400.js
+// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RelatedSubredditsCarousel"], {
 		"./src/reddit/actions/subreddit/relatedSubreddits.ts": function(e, t, s) {
@@ -97,10 +97,10 @@
 					u = Object(d.e)(e => ((e, t) => {
 						const {
 							name: s
-						} = Object(o.T)(e, {
+						} = Object(o.U)(e, {
 							subredditId: t
 						}) || {};
-						return Object(o.fb)(e, {
+						return Object(o.gb)(e, {
 							identifier: {
 								name: s,
 								type: "subreddit"
@@ -108,7 +108,7 @@
 						})
 					})(e, t)),
 					[b, m] = Object(r.useState)(u ? 0 : void 0),
-					p = Object(d.e)(e => Object(o.r)(e, {
+					p = Object(d.e)(e => Object(o.s)(e, {
 						subredditId: t
 					}));
 				return Object(r.useEffect)(() => (t && s(Object(a.b)(t, 12)), () => {
@@ -201,7 +201,7 @@
 					[E, C] = Object(o.useState)(null),
 					[y, h] = Object(o.useState)(0),
 					[g, k] = Object(o.useState)(void 0),
-					D = Object(l.e)(e => Object(O.z)(e, u));
+					D = Object(l.e)(e => Object(O.A)(e, u));
 				Object(o.useEffect)(() => {
 					(null == u ? void 0 : u.length) && f(Object(b.e)(u))
 				}, [u]);
@@ -229,7 +229,7 @@
 						source: "similar_communities",
 						action: "view",
 						noun: "module",
-						subreddit: e ? Object(O.T)(t, {
+						subreddit: e ? Object(O.U)(t, {
 							subredditId: e
 						}) : void 0
 					}))(d))
@@ -304,7 +304,7 @@
 					actionInfo: {
 						reason: `${s}`
 					},
-					subreddit: Object(O.T)(r, {
+					subreddit: Object(O.U)(r, {
 						subredditId: t
 					})
 				}))(e ? "unsubsribe" : "subscribe", t, s), [t]);
@@ -385,4 +385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.579c35769b8f44d35882.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RelatedSubredditsCarousel.5155745628a19a4d1400.js.map

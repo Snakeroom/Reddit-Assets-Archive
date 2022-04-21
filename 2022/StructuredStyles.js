@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.1131c934b407f5ae0677.js
-// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.adde5d00f0e759f80762.js
+// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -116,7 +116,7 @@
 				v = e => async (t, s) => {
 					t(p());
 					const i = s(),
-						o = Object(c.T)(i, {
+						o = Object(c.U)(i, {
 							subredditId: e
 						}).name,
 						u = i.structuredStyles.models[e],
@@ -281,7 +281,7 @@
 					});
 					if (m.ok) {
 						const n = t(),
-							a = m.body && m.body.length ? m.body.map(e => Object(d.E)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
+							a = m.body && m.body.length ? m.body.map(e => Object(d.F)(n, e)).filter(e => !!e).reduce((e, t) => (e[t] = !0, e), {}) : {};
 						e(h({
 							subredditIds: a
 						}))
@@ -365,6 +365,7 @@
 				categoryContainer: "_2cn386lOe1A_DTmBUA-qSM",
 				icon: "_2XJvPvYIEYtcS4ORsDXwa3",
 				subredditIcon: "_2Vkdik1Q8k0lBEhhA_lRKE",
+				blur: "_1uo2TG25LvAJS3bl-u72J4",
 				largeSubredditIcon: "eGjjbHtkgFc-SYka3LM3M",
 				metaTextContainer: "j9k2MUR13FjoBBeLo1C1m",
 				metaText: "_3Evl5aOozId3QVjs7iry2c",
@@ -508,7 +509,7 @@
 				b = n("./src/reddit/selectors/subreddit.ts");
 			const E = (e, t) => {
 				const n = Object(g.b)(e, t),
-					a = Object(b.I)(e, t);
+					a = Object(b.J)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!a || !a.name) && !!e.moderatingSubreddits[a.name],
@@ -547,7 +548,7 @@
 			}));
 			const x = (e, t) => {
 				const n = Object(g.b)(e, t),
-					a = Object(b.I)(e, t);
+					a = Object(b.J)(e, t);
 				return {
 					comment: n,
 					isModerator: !(!a || !a.name) && !!e.moderatingSubreddits[a.name],
@@ -573,7 +574,7 @@
 				}
 			}));
 			var C = Object(s.b)(() => Object(i.c)({
-					subreddit: b.T
+					subreddit: b.U
 				}))(e => r.a.createElement(h, {
 					className: e.className,
 					type: "communityTools",
@@ -673,7 +674,7 @@
 				}) : null
 			};
 			var w = Object(s.b)(() => Object(i.c)({
-				subreddit: b.T
+				subreddit: b.U
 			}))(e => r.a.createElement(h, {
 				className: e.className,
 				type: "sidebar",
@@ -686,7 +687,7 @@
 				}
 			}));
 			var _ = Object(s.b)(() => Object(i.c)({
-				subredditOrProfile: (e, t) => Object(b.L)(e, {
+				subredditOrProfile: (e, t) => Object(b.M)(e, {
 					identifier: t
 				})
 			}))(e => r.a.createElement(h, {
@@ -705,7 +706,7 @@
 					let {
 						subredditId: n
 					} = t;
-					return n ? Object(b.T)(e, {
+					return n ? Object(b.U)(e, {
 						subredditId: n
 					}) : null
 				}
@@ -1108,7 +1109,7 @@
 				isImportExportThemesEnabled: J.d.importExportThemes,
 				isStylingRestrictedDueToQuarantine: Z.j,
 				moderatorPermissions: Y.n,
-				subreddit: X.T
+				subreddit: X.U
 			});
 			class ne extends r.a.Component {
 				constructor() {
@@ -1559,7 +1560,7 @@
 						onChange: this.handleChange,
 						onColorPickerOpened: this.handleColorPickerOpened,
 						onSystemInputOpened: this.handleSystemInputOpened,
-						containerId: mt.a,
+						containerId: mt.b,
 						tooltipId: t
 					})
 				}
@@ -1661,7 +1662,7 @@
 						activeModalId: U.a,
 						draftStyles: (e, n) => _t()(e.structuredStyles.draft, t),
 						savedStyles: (e, t) => e.structuredStyles.models[t.subredditId],
-						subreddit: X.T,
+						subreddit: X.U,
 						isExportPending: Z.d
 					}),
 					a = Object(o.b)(n, (e, n) => ({
@@ -4627,7 +4628,7 @@
 						className: t,
 						isOpen: n,
 						widget: a
-					} = this.props, s = document.getElementById(mt.a);
+					} = this.props, s = document.getElementById(mt.b);
 					return r.a.createElement(Gs, {
 						className: t,
 						id: Ls,
@@ -4906,7 +4907,7 @@
 						let {
 							subredditId: n
 						} = t;
-						return Object(X.T)(e, {
+						return Object(X.U)(e, {
 							subredditId: n
 						}).name
 					}
@@ -5012,7 +5013,7 @@
 			const ji = s.a.wrapped(Q.b, "FormElementDescription", Di.a),
 				Pi = Object(c.c)({
 					rulesWidget: le.h,
-					subreddit: X.T
+					subreddit: X.U
 				});
 			var Ni = Object(o.b)(Pi, e => ({
 					refreshRulesWidget: (t, n) => e(Object(nn.f)(t, n))
@@ -5995,7 +5996,7 @@
 			const jl = s.a.div("BladeContainer", Dl.a),
 				Pl = s.a.wrapped(Il, "BladeCloseButton", Dl.a);
 			t.default = e => r.a.createElement("div", null, r.a.createElement(jl, {
-				id: mt.a
+				id: mt.b
 			}, r.a.createElement(Pl, {
 				subredditId: e.subredditId
 			}, r.a.createElement(h.b, null)), r.a.createElement(yl, {
@@ -7868,7 +7869,7 @@
 					shouldPrettyPrint: b,
 					explanationText: E,
 					shouldShowSubredditOnlineUsers: f = !1
-				} = e, x = Object(i.e)(e => Object(c.v)(e, {
+				} = e, x = Object(i.e)(e => Object(c.w)(e, {
 					subredditName: r
 				})), v = Object(d.c)(r), C = void 0 !== m ? a.fbt._({
 					"*": "{number} members",
@@ -9450,4 +9451,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.1131c934b407f5ae0677.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.adde5d00f0e759f80762.js.map

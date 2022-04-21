@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.499a237fc28b2edff270.js
-// Retrieved at 4/19/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.227e8f7e9376d4b60643.js
+// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditSearchCarousel"], {
 		"./src/reddit/actions/subreddit/subredditCarousel.ts": function(e, t, s) {
@@ -108,12 +108,12 @@
 					[h, O] = Object(c.useState)(null),
 					[C, I] = Object(c.useState)(0),
 					[B, k] = Object(c.useState)(void 0),
-					g = Object(l.e)(e => Object(E.z)(e, u));
+					g = Object(l.e)(e => Object(E.A)(e, u));
 				Object(c.useEffect)(() => {
 					(null == u ? void 0 : u.length) && f(Object(b.e)(u))
 				}, [u]);
 				const w = (null == g ? void 0 : g.filter(e => !e.isNsfw && !e.isSubscribed)) || [],
-					A = e => () => {
+					U = e => () => {
 						if (!h) return;
 						const t = Math.sign(e) ? h.scrollLeft % 249 : 249 % h.scrollLeft,
 							s = 249 * e - t;
@@ -136,7 +136,7 @@
 						source: "similar_communities",
 						action: "view",
 						noun: "module",
-						subreddit: e ? Object(E.T)(t, {
+						subreddit: e ? Object(E.U)(t, {
 							subredditId: e
 						}) : void 0
 					}))(a))
@@ -156,13 +156,13 @@
 					className: x.a.carouselControls
 				}, d.a.createElement("button", {
 					className: x.a.scrollButton,
-					onClick: A(-C)
+					onClick: U(-C)
 				}, d.a.createElement(v.a, {
 					name: n.a.left_fill,
 					className: x.a.scrollIcon
 				})), d.a.createElement("button", {
 					className: x.a.scrollButton,
-					onClick: A(C)
+					onClick: U(C)
 				}, d.a.createElement(v.a, {
 					name: n.a.right_fill,
 					className: x.a.scrollIcon
@@ -211,7 +211,7 @@
 					actionInfo: {
 						reason: `${s}`
 					},
-					subreddit: Object(E.T)(r, {
+					subreddit: Object(E.U)(r, {
 						subredditId: t
 					})
 				}))(e ? "unsubsribe" : "subscribe", t, s), [t]);
@@ -305,7 +305,7 @@
 						subreddits: Object(d.o)(e, {
 							listingKey: "SUBREDDIT_CAROUSEL_SEARCH_KEY"
 						}),
-						parentSubredditId: Object(l.E)(e, t)
+						parentSubredditId: Object(l.F)(e, t)
 					})),
 					p = Object(n.useMemo)(() => null == u ? void 0 : u.map(e => e.id), [u]);
 				return Object(n.useEffect)(() => {
@@ -472,4 +472,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.499a237fc28b2edff270.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditSearchCarousel.227e8f7e9376d4b60643.js.map

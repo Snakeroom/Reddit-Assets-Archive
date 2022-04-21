@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.730a1612828cf86dbc18.js
-// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.14f744e6513f93b119cc.js
+// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -54,9 +54,9 @@
 			})), i.d(t, "myMultiredditsReceived", (function() {
 				return z
 			})), i.d(t, "myMultiredditsRequested", (function() {
-				return W
-			})), i.d(t, "createFailure", (function() {
 				return G
+			})), i.d(t, "createFailure", (function() {
+				return W
 			})), i.d(t, "createPending", (function() {
 				return H
 			})), i.d(t, "createSuccess", (function() {
@@ -254,7 +254,7 @@
 						...j.body,
 						...Object(C.a)(c, p, _)
 					}))
-				}, A = Object(c.a)(R.t), z = Object(c.a)(R.u), W = function(e) {
+				}, A = Object(c.a)(R.t), z = Object(c.a)(R.u), G = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 					return async (i, r, s) => {
 						let {
@@ -277,7 +277,7 @@
 							}))
 						}
 					}
-				}, G = Object(c.a)(R.e), H = Object(c.a)(R.f), Q = Object(c.a)(R.g), K = e => {
+				}, W = Object(c.a)(R.e), H = Object(c.a)(R.f), Q = Object(c.a)(R.g), K = e => {
 					let {
 						description: t,
 						displayName: i,
@@ -321,7 +321,7 @@
 									hk: "258cY9"
 								})
 							}))
-						} else e(G(p.error))
+						} else e(W(p.error))
 					}
 				}, V = () => async (e, t, i) => {
 					let {
@@ -434,7 +434,7 @@
 								method: o.kb.PUT
 							}))(c(), g, O);
 						if (S.ok) {
-							const n = Object(D.K)(l, {
+							const n = Object(D.L)(l, {
 									identifier: i
 								}) || t && t.id || "",
 								d = s.map(e => Object(I.h)(p, e));
@@ -599,7 +599,7 @@
 						if (!l || !l.subredditIds) return;
 						e(fe());
 						const u = r && r.reduce((e, t) => {
-								const i = Object(D.E)(o, t) || Object(D.F)(o, t);
+								const i = Object(D.F)(o, t) || Object(D.G)(o, t);
 								return i ? [...e, i] : e
 							}, []),
 							m = await Object(j.a)(d(), {
@@ -885,7 +885,7 @@
 			const h = p.a.wrapped(l.b, "SubredditIcon", b.a),
 				f = p.a.span("Label", b.a),
 				x = Object(c.c)({
-					subredditOrProfile: u.L
+					subredditOrProfile: u.M
 				});
 			var y = Object(a.b)(x)(e => {
 				let {
@@ -1115,15 +1115,15 @@
 				B = i("./src/reddit/controls/Button/index.tsx"),
 				A = i("./src/reddit/models/Multireddit/index.ts"),
 				z = i("./src/reddit/components/MultiredditInfo/ObsoleteMultiredditInfo/SubredditsOrProfilesList.tsx"),
-				W = i("./src/reddit/components/MultiredditInfo/ObsoleteMultiredditInfo/index.m.less"),
-				G = i.n(W),
+				G = i("./src/reddit/components/MultiredditInfo/ObsoleteMultiredditInfo/index.m.less"),
+				W = i.n(G),
 				H = i("./src/lib/lessComponent.tsx");
-			const Q = H.a.div("SidebarTopSpacer", G.a),
-				K = H.a.div("ModalTopSpacer", G.a),
-				V = H.a.div("SidebarTitleContainer", G.a),
-				X = H.a.div("SidebarTitle", G.a),
-				Z = H.a.wrapped(N.a, "SidebarFlair", G.a),
-				Y = H.a.div("Attributon", G.a),
+			const Q = H.a.div("SidebarTopSpacer", W.a),
+				K = H.a.div("ModalTopSpacer", W.a),
+				V = H.a.div("SidebarTitleContainer", W.a),
+				X = H.a.div("SidebarTitle", W.a),
+				Z = H.a.wrapped(N.a, "SidebarFlair", W.a),
+				Y = H.a.div("Attributon", W.a),
 				J = e => {
 					let {
 						children: t,
@@ -1142,8 +1142,8 @@
 					} = e;
 					const n = !s || "number" != typeof s.height || s.height > 152;
 					return o.a.createElement("div", null, o.a.createElement(J, {
-						className: Object(u.a)(G.a.FadingDescription, {
-							[G.a.shouldFade]: n
+						className: Object(u.a)(W.a.FadingDescription, {
+							[W.a.shouldFade]: n
 						})
 					}, t), n && o.a.createElement(B.r, {
 						onClick: i
@@ -1185,7 +1185,7 @@
 						type: U.a.PROFILE
 					})) || []];
 					return o.a.createElement("div", {
-						className: Object(u.a)(G.a.Component, e.className)
+						className: Object(u.a)(W.a.Component, e.className)
 					}, l(), m(), o.a.createElement(z.b, {
 						isSidebar: d,
 						onSeeMoreDetails: s,
@@ -1595,8 +1595,8 @@
 				Be = i("./src/reddit/components/SidebarSectionHeader/index.m.less"),
 				Ae = i.n(Be),
 				ze = H.a.div("Component", Ae.a),
-				We = i("./src/reddit/components/SidebarStickyBottom/index.tsx"),
-				Ge = i("./src/reddit/constants/zIndex.ts"),
+				Ge = i("./src/reddit/components/SidebarStickyBottom/index.tsx"),
+				We = i("./src/reddit/constants/zIndex.ts"),
 				He = i("./src/reddit/controls/TextButton/index.tsx"),
 				Qe = i("./src/reddit/helpers/trackers/idCard.ts"),
 				Ke = i("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
@@ -1627,7 +1627,7 @@
 				}, o.a.createElement(m.b, null)))),
 				$e = e => o.a.createElement(Je, Ye({}, e, {
 					overlayCustomStyles: {
-						zIndex: Ge.b
+						zIndex: We.b
 					},
 					withOverlay: !0
 				})),
@@ -1710,7 +1710,7 @@
 					}) : null, n && o.a.createElement(qe, {
 						multireddit: i,
 						multiUsername: r
-					}), o.a.createElement(We.a, null))
+					}), o.a.createElement(Ge.a, null))
 				}
 			}
 			t.a = rt(st)
@@ -2076,7 +2076,7 @@
 					shouldPrettyPrint: f,
 					explanationText: x,
 					shouldShowSubredditOnlineUsers: y = !1
-				} = e, O = Object(d.e)(e => Object(l.v)(e, {
+				} = e, O = Object(d.e)(e => Object(l.w)(e, {
 					subredditName: s
 				})), g = Object(c.c)(s), S = void 0 !== m ? r.fbt._({
 					"*": "{number} members",
@@ -2570,4 +2570,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.730a1612828cf86dbc18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.14f744e6513f93b119cc.js.map

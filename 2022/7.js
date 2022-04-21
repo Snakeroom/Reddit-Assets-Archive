@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/7.62d7a8f05cd7ac2f920d.js
-// Retrieved at 4/21/2022, 1:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/7.5f3d7bde344aed959dfc.js
+// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[7], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -84,7 +84,7 @@
 					ratingResponse: a,
 					subredditId: o,
 					children: g
-				} = e, f = null !== (t = Object(r.e)(e => Object(p.T)(e, {
+				} = e, f = null !== (t = Object(r.e)(e => Object(p.U)(e, {
 					subredditId: o
 				}))) && void 0 !== t ? t : {}, x = Object(d.a)();
 				return s.a.createElement("div", {
@@ -276,9 +276,9 @@
 			}
 			var H = n("./src/reddit/components/ContentSurvey/RatingCard.tsx");
 			const {
-				fbt: W
+				fbt: U
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			var U;
+			var W;
 
 			function z(e) {
 				var t, n;
@@ -295,11 +295,11 @@
 					} = e;
 					const a = "forward" === t ? Math.min(n + 1, y.length + 1) : Math.max(n - 1, 0);
 					return {
-						surveyState: 0 === a ? U.Intro : a === y.length + 1 ? U.Tag : U.Survey,
+						surveyState: 0 === a ? W.Intro : a === y.length + 1 ? W.Tag : W.Survey,
 						activeSlide: a
 					}
 				}, {
-					surveyState: U.Intro,
+					surveyState: W.Intro,
 					activeSlide: 0
 				}), E = y[b - 1], _ = Object(I.a)();
 				Object(i.useEffect)(() => {
@@ -318,7 +318,7 @@
 					error: j
 				}] = Object(h.a)(L);
 				Object(i.useEffect)(() => {
-					j && (p.c.captureException(j), x(Object(g.f)(Object(g.e)(W._("An error occurred", null, {
+					j && (p.c.captureException(j), x(Object(g.f)(Object(g.e)(U._("An error occurred", null, {
 						hk: "1VDETi"
 					}), B.b.Error))))
 				}, [j, x]);
@@ -331,11 +331,11 @@
 				}
 				const Z = null !== (t = u[null == E ? void 0 : E.id]) && void 0 !== t ? t : {},
 					R = (null !== (n = null == E ? void 0 : E.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => Z[e]),
-					P = w === U.Survey && b > 1;
+					P = w === W.Survey && b > 1;
 				return l.a.createElement(N, {
 					activeSlide: b,
 					advance: async function() {
-						if (w === U.Survey && b === y.length && O(function(e, t) {
+						if (w === W.Survey && b === y.length && O(function(e, t) {
 								var n;
 								let a = null,
 									s = [];
@@ -357,7 +357,7 @@
 									rating: a,
 									ratingReasons: s
 								}
-							}(r, u)), w === U.Tag) {
+							}(r, u)), w === W.Tag) {
 							if (M) return;
 							return _(Object(A.m)()), await k({
 								input: {
@@ -368,7 +368,7 @@
 										answerIds: D(e, u).map(e => e.id)
 									}))
 								}
-							}), x(Object(g.f)(Object(g.e)(W._("Thanks for setting up your Content Tag!", null, {
+							}), x(Object(g.f)(Object(g.e)(U._("Thanks for setting up your Content Tag!", null, {
 								hk: "3HW5GV"
 							}), B.b.SuccessCommunityGreen))), x({
 								type: v.z,
@@ -386,51 +386,51 @@
 					onClose: o,
 					progressCurrent: P ? b - 1 : 0,
 					progressTotal: P ? y.length - 1 : 0,
-					disableNext: M || w === U.Survey && !R,
+					disableNext: M || w === W.Survey && !R,
 					buttonText: q(w)
 				}, l.a.createElement("div", {
 					className: m.a.result
 				}, l.a.createElement("p", {
 					className: m.a.heading
-				}, W._("Get started with content tags", null, {
+				}, U._("Get started with content tags", null, {
 					hk: "2WspCv"
-				})), W._("{=Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.}{=Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.}{=Here's how it works:}{=Consult your mod team Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.}{=Take the survey This survey will ask you about how different mature themes are posted about and discussed in your community.}{=Keep doing what you're doing Once you get your tag, you don't need to change anything about your community and how you run it.}{=If you want to learn more or have questions, visit ourcommunity content tags FAQ .}", [W._param("=Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.", l.a.createElement("p", {
+				})), U._("{=Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.}{=Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.}{=Here's how it works:}{=Consult your mod team Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.}{=Take the survey This survey will ask you about how different mature themes are posted about and discussed in your community.}{=Keep doing what you're doing Once you get your tag, you don't need to change anything about your community and how you run it.}{=If you want to learn more or have questions, visit ourcommunity content tags FAQ .}", [U._param("=Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, W._("Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.", null, {
+				}, U._("Not Safe for Work (NSFW) can mean different things to different people, so we're evolving the NSFW tag into more descriptive tags that help people know what to expect when they visit your community.", null, {
 					hk: "1Fer1r"
-				}))), W._param("=Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.", l.a.createElement("p", {
+				}))), U._param("=Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, W._("Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.", null, {
+				}, U._("Every public and restricted community will get a content tag, and this survey is your mod team's chance to give your input.", null, {
 					hk: "4cgXFP"
-				}))), W._param("=Here's how it works:", l.a.createElement("p", {
+				}))), U._param("=Here's how it works:", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, W._("Here's how it works:", null, {
+				}, U._("Here's how it works:", null, {
 					hk: "36BNnd"
-				}))), W._param("=Consult your mod team Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.", l.a.createElement("p", {
+				}))), U._param("=Consult your mod team Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, W._("{=Consult your mod team} Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.", [W._param("=Consult your mod team", l.a.createElement("strong", null, W._("Consult your mod team", null, {
+				}, U._("{=Consult your mod team} Only one moderator can take and submit the survey, so consult with your fellow mods before submitting.", [U._param("=Consult your mod team", l.a.createElement("strong", null, U._("Consult your mod team", null, {
 					hk: "23H654"
 				})))], {
 					hk: "jnTSv"
-				}))), W._param("=Take the survey This survey will ask you about how different mature themes are posted about and discussed in your community.", l.a.createElement("p", {
+				}))), U._param("=Take the survey This survey will ask you about how different mature themes are posted about and discussed in your community.", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, W._("{=Take the survey} This survey will ask you about how different mature themes are posted about and discussed in your community.", [W._param("=Take the survey", l.a.createElement("strong", null, W._("Take the survey", null, {
+				}, U._("{=Take the survey} This survey will ask you about how different mature themes are posted about and discussed in your community.", [U._param("=Take the survey", l.a.createElement("strong", null, U._("Take the survey", null, {
 					hk: "2hQ3n7"
 				})))], {
 					hk: "2KYjT1"
-				}))), W._param("=Keep doing what you're doing Once you get your tag, you don't need to change anything about your community and how you run it.", l.a.createElement("p", {
+				}))), U._param("=Keep doing what you're doing Once you get your tag, you don't need to change anything about your community and how you run it.", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, W._("{=Keep doing what you're doing} Once you get your tag, you don't need to change anything about your community and how you run it.", [W._param("=Keep doing what you're doing", l.a.createElement("strong", null, W._("Keep doing what you're doing", null, {
+				}, U._("{=Keep doing what you're doing} Once you get your tag, you don't need to change anything about your community and how you run it.", [U._param("=Keep doing what you're doing", l.a.createElement("strong", null, U._("Keep doing what you're doing", null, {
 					hk: "3euaLx"
 				})))], {
 					hk: "4f5ry9"
-				}))), W._param("=If you want to learn more or have questions, visit ourcommunity content tags FAQ .", l.a.createElement("p", {
+				}))), U._param("=If you want to learn more or have questions, visit ourcommunity content tags FAQ .", l.a.createElement("p", {
 					className: m.a.introCopy
-				}, W._("If you want to learn more or have questions, visit our {=community content tags FAQ} .", [W._param("=community content tags FAQ", l.a.createElement("a", {
+				}, U._("If you want to learn more or have questions, visit our {=community content tags FAQ} .", [U._param("=community content tags FAQ", l.a.createElement("a", {
 					target: "_blank",
 					rel: "noopener noreferrer",
 					href: "https://www.reddithelp.com/hc/en-us/articles/360048185132-What-are-community-content-tags-and-how-do-they-work-"
-				}, W._("community content tags FAQ", null, {
+				}, U._("community content tags FAQ", null, {
 					hk: "1kl5Jq"
 				})))], {
 					hk: "4tG83R"
@@ -449,7 +449,7 @@
 					className: m.a.result
 				}, l.a.createElement("p", {
 					className: m.a.heading
-				}, W._("Your Content Tag:", null, {
+				}, U._("Your Content Tag:", null, {
 					hk: "2OUAzB"
 				})), l.a.createElement(H.a, {
 					ratingResponse: S,
@@ -458,11 +458,11 @@
 					className: m.a.ratingAudience
 				}, S.rating.name), l.a.createElement("p", {
 					className: m.a.ratingDescription
-				}, S.rating.description, " ", l.a.createElement("br", null), W._("(Note: Only moderators can see this tag.)", null, {
+				}, S.rating.description, " ", l.a.createElement("br", null), U._("(Note: Only moderators can see this tag.)", null, {
 					hk: "2PN50Z"
 				}))), l.a.createElement("p", {
 					className: m.a.reasonsHeader
-				}, W._("Posts and discussions include:", null, {
+				}, U._("Posts and discussions include:", null, {
 					hk: "12MdUE"
 				})), l.a.createElement("ul", null, S.ratingReasons.map(e => l.a.createElement("li", {
 					key: e.id,
@@ -472,16 +472,16 @@
 
 			function q(e) {
 				switch (e) {
-					case U.Intro:
-						return W._("Start Survey", null, {
+					case W.Intro:
+						return U._("Start Survey", null, {
 							hk: "41dYsT"
 						});
-					case U.Survey:
-						return W._("Next", null, {
+					case W.Survey:
+						return U._("Next", null, {
 							hk: "2mEXAi"
 						});
-					case U.Tag:
-						return W._("Submit", null, {
+					case W.Tag:
+						return U._("Submit", null, {
 							hk: "4aU3dh"
 						})
 				}
@@ -511,7 +511,7 @@
 				return "ContentRatingSurveyLeafAnswer" === e.__typename
 			}! function(e) {
 				e[e.Intro = 0] = "Intro", e[e.Survey = 1] = "Survey", e[e.Tag = 2] = "Tag"
-			}(U || (U = {}))
+			}(W || (W = {}))
 		},
 		"./src/reddit/components/ModalStyledComponents/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1193,4 +1193,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/7.62d7a8f05cd7ac2f920d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/7.5f3d7bde344aed959dfc.js.map
