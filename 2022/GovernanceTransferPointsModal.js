@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.aeac23078e0407f5b8e5.js
-// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.6c92c1ba3f1217c1fa9f.js
+// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal", "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, r) {
@@ -11,9 +11,9 @@
 			})), r.d(t, "d", (function() {
 				return p
 			})), r.d(t, "b", (function() {
-				return g
-			})), r.d(t, "c", (function() {
 				return b
+			})), r.d(t, "c", (function() {
+				return g
 			}));
 			var n = r("./node_modules/@ethersproject/bytes/lib.esm/index.js"),
 				s = r("./node_modules/@ethersproject/bignumber/lib.esm/bignumber.js"),
@@ -70,7 +70,7 @@
 				return "XE" + m("XE00" + t) + t
 			}
 
-			function g(e) {
+			function b(e) {
 				let t = null;
 				try {
 					t = h(e.from)
@@ -81,7 +81,7 @@
 				return h(Object(n.e)(Object(o.a)(Object(a.encode)([t, r])), 12))
 			}
 
-			function b(e, t, r) {
+			function g(e, t, r) {
 				return 32 !== Object(n.d)(t) && i.throwArgumentError("salt must be 32 bytes", "salt", t), 32 !== Object(n.d)(r) && i.throwArgumentError("initCodeHash must be 32 bytes", "initCodeHash", r), h(Object(n.e)(Object(o.a)(Object(n.b)(["0xff", h(e), t, r])), 12))
 			}
 		},
@@ -124,79 +124,79 @@
 					}), this._hex = t, this._isBigNumber = !0, Object.freeze(this)
 				}
 				fromTwos(e) {
-					return g(b(this).fromTwos(e))
+					return b(g(this).fromTwos(e))
 				}
 				toTwos(e) {
-					return g(b(this).toTwos(e))
+					return b(g(this).toTwos(e))
 				}
 				abs() {
 					return "-" === this._hex[0] ? f.from(this._hex.substring(1)) : this
 				}
 				add(e) {
-					return g(b(this).add(b(e)))
+					return b(g(this).add(g(e)))
 				}
 				sub(e) {
-					return g(b(this).sub(b(e)))
+					return b(g(this).sub(g(e)))
 				}
 				div(e) {
-					return f.from(e).isZero() && v("division by zero", "div"), g(b(this).div(b(e)))
+					return f.from(e).isZero() && v("division by zero", "div"), b(g(this).div(g(e)))
 				}
 				mul(e) {
-					return g(b(this).mul(b(e)))
+					return b(g(this).mul(g(e)))
 				}
 				mod(e) {
-					const t = b(e);
-					return t.isNeg() && v("cannot modulo negative values", "mod"), g(b(this).umod(t))
+					const t = g(e);
+					return t.isNeg() && v("cannot modulo negative values", "mod"), b(g(this).umod(t))
 				}
 				pow(e) {
-					const t = b(e);
-					return t.isNeg() && v("cannot raise to negative values", "pow"), g(b(this).pow(t))
+					const t = g(e);
+					return t.isNeg() && v("cannot raise to negative values", "pow"), b(g(this).pow(t))
 				}
 				and(e) {
-					const t = b(e);
-					return (this.isNegative() || t.isNeg()) && v("cannot 'and' negative values", "and"), g(b(this).and(t))
+					const t = g(e);
+					return (this.isNegative() || t.isNeg()) && v("cannot 'and' negative values", "and"), b(g(this).and(t))
 				}
 				or(e) {
-					const t = b(e);
-					return (this.isNegative() || t.isNeg()) && v("cannot 'or' negative values", "or"), g(b(this).or(t))
+					const t = g(e);
+					return (this.isNegative() || t.isNeg()) && v("cannot 'or' negative values", "or"), b(g(this).or(t))
 				}
 				xor(e) {
-					const t = b(e);
-					return (this.isNegative() || t.isNeg()) && v("cannot 'xor' negative values", "xor"), g(b(this).xor(t))
+					const t = g(e);
+					return (this.isNegative() || t.isNeg()) && v("cannot 'xor' negative values", "xor"), b(g(this).xor(t))
 				}
 				mask(e) {
-					return (this.isNegative() || e < 0) && v("cannot mask negative values", "mask"), g(b(this).maskn(e))
+					return (this.isNegative() || e < 0) && v("cannot mask negative values", "mask"), b(g(this).maskn(e))
 				}
 				shl(e) {
-					return (this.isNegative() || e < 0) && v("cannot shift negative values", "shl"), g(b(this).shln(e))
+					return (this.isNegative() || e < 0) && v("cannot shift negative values", "shl"), b(g(this).shln(e))
 				}
 				shr(e) {
-					return (this.isNegative() || e < 0) && v("cannot shift negative values", "shr"), g(b(this).shrn(e))
+					return (this.isNegative() || e < 0) && v("cannot shift negative values", "shr"), b(g(this).shrn(e))
 				}
 				eq(e) {
-					return b(this).eq(b(e))
+					return g(this).eq(g(e))
 				}
 				lt(e) {
-					return b(this).lt(b(e))
+					return g(this).lt(g(e))
 				}
 				lte(e) {
-					return b(this).lte(b(e))
+					return g(this).lte(g(e))
 				}
 				gt(e) {
-					return b(this).gt(b(e))
+					return g(this).gt(g(e))
 				}
 				gte(e) {
-					return b(this).gte(b(e))
+					return g(this).gte(g(e))
 				}
 				isNegative() {
 					return "-" === this._hex[0]
 				}
 				isZero() {
-					return b(this).isZero()
+					return g(this).isZero()
 				}
 				toNumber() {
 					try {
-						return b(this).toNumber()
+						return g(this).toNumber()
 					} catch (e) {
 						v("overflow", "toNumber", this.toString())
 					}
@@ -211,7 +211,7 @@
 					})
 				}
 				toString() {
-					return arguments.length > 0 && (10 === arguments[0] ? h || (h = !0, l.warn("BigNumber.toString does not accept any parameters; base-10 is assumed")) : 16 === arguments[0] ? l.throwError("BigNumber.toString does not accept any parameters; use bigNumber.toHexString()", a.b.errors.UNEXPECTED_ARGUMENT, {}) : l.throwError("BigNumber.toString does not accept parameters", a.b.errors.UNEXPECTED_ARGUMENT, {})), b(this).toString(10)
+					return arguments.length > 0 && (10 === arguments[0] ? h || (h = !0, l.warn("BigNumber.toString does not accept any parameters; base-10 is assumed")) : 16 === arguments[0] ? l.throwError("BigNumber.toString does not accept any parameters; use bigNumber.toHexString()", a.b.errors.UNEXPECTED_ARGUMENT, {}) : l.throwError("BigNumber.toString does not accept parameters", a.b.errors.UNEXPECTED_ARGUMENT, {})), g(this).toString(10)
 				}
 				toHexString() {
 					return this._hex
@@ -251,11 +251,11 @@
 				return e
 			}
 
-			function g(e) {
+			function b(e) {
 				return f.from(p(e))
 			}
 
-			function b(e) {
+			function g(e) {
 				const t = f.from(e).toHexString();
 				return "-" === t[0] ? new c("-" + t.substring(3), 16) : new c(t.substring(2), 16)
 			}
@@ -297,9 +297,9 @@
 			})), r.d(t, "d", (function() {
 				return p
 			})), r.d(t, "e", (function() {
-				return g
-			})), r.d(t, "c", (function() {
 				return b
+			})), r.d(t, "c", (function() {
+				return g
 			})), r.d(t, "g", (function() {
 				return v
 			})), r.d(t, "f", (function() {
@@ -410,11 +410,11 @@
 				return (e.length - 2) / 2
 			}
 
-			function g(e, t, r) {
+			function b(e, t, r) {
 				return "string" != typeof e ? e = f(e) : (!m(e) || e.length % 2) && n.throwArgumentError("invalid hexData", "value", e), t = 2 + 2 * t, null != r ? "0x" + e.substring(t, 2 + 2 * r) : "0x" + e.substring(t)
 			}
 
-			function b(e) {
+			function g(e) {
 				let t = "0x";
 				return e.forEach(e => {
 					t += f(e).substring(2)
@@ -539,10 +539,10 @@
 								}
 								return r
 							}
-						}], f = {}, p = [], g = 0; g < h.length; ++g)
-						for (var b = h[g], v = b.bits, E = 0; E < v.length; ++E) {
-							var x = b.name + "_" + v[E];
-							p.push(x), f[x] = b.createMethod(v[E], b.padding)
+						}], f = {}, p = [], b = 0; b < h.length; ++b)
+						for (var g = h[b], v = g.bits, E = 0; E < v.length; ++E) {
+							var x = g.name + "_" + v[E];
+							p.push(x), f[x] = g.createMethod(v[E], g.padding)
 						}
 
 					function N(e, t, r) {
@@ -605,12 +605,12 @@
 						return o && (e = i << 2, t = n[a], o > 0 && (c[e] = 255 & t), o > 1 && (c[e + 1] = t >> 8 & 255), o > 2 && (c[e + 2] = t >> 16 & 255)), c
 					};
 					var y = function(e) {
-						var t, r, n, s, o, a, c, l, d, u, m, h, f, p, g, b, v, E, x, N, y, w, _, j, C, I, O, A, T, R, k, P, U, S, M, B, D, F, L, G, V, W, H, z, X, Y, Z, K, J, q, Q, $, ee, te, re, ne, se, oe, ae, ie, ce, le, de;
-						for (n = 0; n < 48; n += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], o = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], a = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], c = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], l = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], d = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], u = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (h = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (a << 1 | c >>> 31), r = (f = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (c << 1 | a >>> 31), e[0] ^= t, e[1] ^= r, e[10] ^= t, e[11] ^= r, e[20] ^= t, e[21] ^= r, e[30] ^= t, e[31] ^= r, e[40] ^= t, e[41] ^= r, t = s ^ (l << 1 | d >>> 31), r = o ^ (d << 1 | l >>> 31), e[2] ^= t, e[3] ^= r, e[12] ^= t, e[13] ^= r, e[22] ^= t, e[23] ^= r, e[32] ^= t, e[33] ^= r, e[42] ^= t, e[43] ^= r, t = a ^ (u << 1 | m >>> 31), r = c ^ (m << 1 | u >>> 31), e[4] ^= t, e[5] ^= r, e[14] ^= t, e[15] ^= r, e[24] ^= t, e[25] ^= r, e[34] ^= t, e[35] ^= r, e[44] ^= t, e[45] ^= r, t = l ^ (h << 1 | f >>> 31), r = d ^ (f << 1 | h >>> 31), e[6] ^= t, e[7] ^= r, e[16] ^= t, e[17] ^= r, e[26] ^= t, e[27] ^= r, e[36] ^= t, e[37] ^= r, e[46] ^= t, e[47] ^= r, t = u ^ (s << 1 | o >>> 31), r = m ^ (o << 1 | s >>> 31), e[8] ^= t, e[9] ^= r, e[18] ^= t, e[19] ^= r, e[28] ^= t, e[29] ^= r, e[38] ^= t, e[39] ^= r, e[48] ^= t, e[49] ^= r, p = e[0], g = e[1], Y = e[11] << 4 | e[10] >>> 28, Z = e[10] << 4 | e[11] >>> 28, A = e[20] << 3 | e[21] >>> 29, T = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, ce = e[30] << 9 | e[31] >>> 23, W = e[40] << 18 | e[41] >>> 14, H = e[41] << 18 | e[40] >>> 14, S = e[2] << 1 | e[3] >>> 31, M = e[3] << 1 | e[2] >>> 31, b = e[13] << 12 | e[12] >>> 20, v = e[12] << 12 | e[13] >>> 20, K = e[22] << 10 | e[23] >>> 22, J = e[23] << 10 | e[22] >>> 22, R = e[33] << 13 | e[32] >>> 19, k = e[32] << 13 | e[33] >>> 19, le = e[42] << 2 | e[43] >>> 30, de = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, re = e[4] << 30 | e[5] >>> 2, B = e[14] << 6 | e[15] >>> 26, D = e[15] << 6 | e[14] >>> 26, E = e[25] << 11 | e[24] >>> 21, x = e[24] << 11 | e[25] >>> 21, q = e[34] << 15 | e[35] >>> 17, Q = e[35] << 15 | e[34] >>> 17, P = e[45] << 29 | e[44] >>> 3, U = e[44] << 29 | e[45] >>> 3, j = e[6] << 28 | e[7] >>> 4, C = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, F = e[26] << 25 | e[27] >>> 7, L = e[27] << 25 | e[26] >>> 7, N = e[36] << 21 | e[37] >>> 11, y = e[37] << 21 | e[36] >>> 11, $ = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, X = e[9] << 27 | e[8] >>> 5, I = e[18] << 20 | e[19] >>> 12, O = e[19] << 20 | e[18] >>> 12, oe = e[29] << 7 | e[28] >>> 25, ae = e[28] << 7 | e[29] >>> 25, G = e[38] << 8 | e[39] >>> 24, V = e[39] << 8 | e[38] >>> 24, w = e[48] << 14 | e[49] >>> 18, _ = e[49] << 14 | e[48] >>> 18, e[0] = p ^ ~b & E, e[1] = g ^ ~v & x, e[10] = j ^ ~I & A, e[11] = C ^ ~O & T, e[20] = S ^ ~B & F, e[21] = M ^ ~D & L, e[30] = z ^ ~Y & K, e[31] = X ^ ~Z & J, e[40] = te ^ ~ne & oe, e[41] = re ^ ~se & ae, e[2] = b ^ ~E & N, e[3] = v ^ ~x & y, e[12] = I ^ ~A & R, e[13] = O ^ ~T & k, e[22] = B ^ ~F & G, e[23] = D ^ ~L & V, e[32] = Y ^ ~K & q, e[33] = Z ^ ~J & Q, e[42] = ne ^ ~oe & ie, e[43] = se ^ ~ae & ce, e[4] = E ^ ~N & w, e[5] = x ^ ~y & _, e[14] = A ^ ~R & P, e[15] = T ^ ~k & U, e[24] = F ^ ~G & W, e[25] = L ^ ~V & H, e[34] = K ^ ~q & $, e[35] = J ^ ~Q & ee, e[44] = oe ^ ~ie & le, e[45] = ae ^ ~ce & de, e[6] = N ^ ~w & p, e[7] = y ^ ~_ & g, e[16] = R ^ ~P & j, e[17] = k ^ ~U & C, e[26] = G ^ ~W & S, e[27] = V ^ ~H & M, e[36] = q ^ ~$ & z, e[37] = Q ^ ~ee & X, e[46] = ie ^ ~le & te, e[47] = ce ^ ~de & re, e[8] = w ^ ~p & b, e[9] = _ ^ ~g & v, e[18] = P ^ ~j & I, e[19] = U ^ ~C & O, e[28] = W ^ ~S & B, e[29] = H ^ ~M & D, e[38] = $ ^ ~z & Y, e[39] = ee ^ ~X & Z, e[48] = le ^ ~te & ne, e[49] = de ^ ~re & se, e[0] ^= i[n], e[1] ^= i[n + 1]
+						var t, r, n, s, o, a, c, l, d, u, m, h, f, p, b, g, v, E, x, N, y, _, w, j, I, O, A, C, T, R, k, P, U, S, M, B, D, F, L, G, V, W, H, z, X, Y, Z, K, J, q, Q, $, ee, te, re, ne, se, oe, ae, ie, ce, le, de;
+						for (n = 0; n < 48; n += 2) s = e[0] ^ e[10] ^ e[20] ^ e[30] ^ e[40], o = e[1] ^ e[11] ^ e[21] ^ e[31] ^ e[41], a = e[2] ^ e[12] ^ e[22] ^ e[32] ^ e[42], c = e[3] ^ e[13] ^ e[23] ^ e[33] ^ e[43], l = e[4] ^ e[14] ^ e[24] ^ e[34] ^ e[44], d = e[5] ^ e[15] ^ e[25] ^ e[35] ^ e[45], u = e[6] ^ e[16] ^ e[26] ^ e[36] ^ e[46], m = e[7] ^ e[17] ^ e[27] ^ e[37] ^ e[47], t = (h = e[8] ^ e[18] ^ e[28] ^ e[38] ^ e[48]) ^ (a << 1 | c >>> 31), r = (f = e[9] ^ e[19] ^ e[29] ^ e[39] ^ e[49]) ^ (c << 1 | a >>> 31), e[0] ^= t, e[1] ^= r, e[10] ^= t, e[11] ^= r, e[20] ^= t, e[21] ^= r, e[30] ^= t, e[31] ^= r, e[40] ^= t, e[41] ^= r, t = s ^ (l << 1 | d >>> 31), r = o ^ (d << 1 | l >>> 31), e[2] ^= t, e[3] ^= r, e[12] ^= t, e[13] ^= r, e[22] ^= t, e[23] ^= r, e[32] ^= t, e[33] ^= r, e[42] ^= t, e[43] ^= r, t = a ^ (u << 1 | m >>> 31), r = c ^ (m << 1 | u >>> 31), e[4] ^= t, e[5] ^= r, e[14] ^= t, e[15] ^= r, e[24] ^= t, e[25] ^= r, e[34] ^= t, e[35] ^= r, e[44] ^= t, e[45] ^= r, t = l ^ (h << 1 | f >>> 31), r = d ^ (f << 1 | h >>> 31), e[6] ^= t, e[7] ^= r, e[16] ^= t, e[17] ^= r, e[26] ^= t, e[27] ^= r, e[36] ^= t, e[37] ^= r, e[46] ^= t, e[47] ^= r, t = u ^ (s << 1 | o >>> 31), r = m ^ (o << 1 | s >>> 31), e[8] ^= t, e[9] ^= r, e[18] ^= t, e[19] ^= r, e[28] ^= t, e[29] ^= r, e[38] ^= t, e[39] ^= r, e[48] ^= t, e[49] ^= r, p = e[0], b = e[1], Y = e[11] << 4 | e[10] >>> 28, Z = e[10] << 4 | e[11] >>> 28, C = e[20] << 3 | e[21] >>> 29, T = e[21] << 3 | e[20] >>> 29, ie = e[31] << 9 | e[30] >>> 23, ce = e[30] << 9 | e[31] >>> 23, W = e[40] << 18 | e[41] >>> 14, H = e[41] << 18 | e[40] >>> 14, S = e[2] << 1 | e[3] >>> 31, M = e[3] << 1 | e[2] >>> 31, g = e[13] << 12 | e[12] >>> 20, v = e[12] << 12 | e[13] >>> 20, K = e[22] << 10 | e[23] >>> 22, J = e[23] << 10 | e[22] >>> 22, R = e[33] << 13 | e[32] >>> 19, k = e[32] << 13 | e[33] >>> 19, le = e[42] << 2 | e[43] >>> 30, de = e[43] << 2 | e[42] >>> 30, te = e[5] << 30 | e[4] >>> 2, re = e[4] << 30 | e[5] >>> 2, B = e[14] << 6 | e[15] >>> 26, D = e[15] << 6 | e[14] >>> 26, E = e[25] << 11 | e[24] >>> 21, x = e[24] << 11 | e[25] >>> 21, q = e[34] << 15 | e[35] >>> 17, Q = e[35] << 15 | e[34] >>> 17, P = e[45] << 29 | e[44] >>> 3, U = e[44] << 29 | e[45] >>> 3, j = e[6] << 28 | e[7] >>> 4, I = e[7] << 28 | e[6] >>> 4, ne = e[17] << 23 | e[16] >>> 9, se = e[16] << 23 | e[17] >>> 9, F = e[26] << 25 | e[27] >>> 7, L = e[27] << 25 | e[26] >>> 7, N = e[36] << 21 | e[37] >>> 11, y = e[37] << 21 | e[36] >>> 11, $ = e[47] << 24 | e[46] >>> 8, ee = e[46] << 24 | e[47] >>> 8, z = e[8] << 27 | e[9] >>> 5, X = e[9] << 27 | e[8] >>> 5, O = e[18] << 20 | e[19] >>> 12, A = e[19] << 20 | e[18] >>> 12, oe = e[29] << 7 | e[28] >>> 25, ae = e[28] << 7 | e[29] >>> 25, G = e[38] << 8 | e[39] >>> 24, V = e[39] << 8 | e[38] >>> 24, _ = e[48] << 14 | e[49] >>> 18, w = e[49] << 14 | e[48] >>> 18, e[0] = p ^ ~g & E, e[1] = b ^ ~v & x, e[10] = j ^ ~O & C, e[11] = I ^ ~A & T, e[20] = S ^ ~B & F, e[21] = M ^ ~D & L, e[30] = z ^ ~Y & K, e[31] = X ^ ~Z & J, e[40] = te ^ ~ne & oe, e[41] = re ^ ~se & ae, e[2] = g ^ ~E & N, e[3] = v ^ ~x & y, e[12] = O ^ ~C & R, e[13] = A ^ ~T & k, e[22] = B ^ ~F & G, e[23] = D ^ ~L & V, e[32] = Y ^ ~K & q, e[33] = Z ^ ~J & Q, e[42] = ne ^ ~oe & ie, e[43] = se ^ ~ae & ce, e[4] = E ^ ~N & _, e[5] = x ^ ~y & w, e[14] = C ^ ~R & P, e[15] = T ^ ~k & U, e[24] = F ^ ~G & W, e[25] = L ^ ~V & H, e[34] = K ^ ~q & $, e[35] = J ^ ~Q & ee, e[44] = oe ^ ~ie & le, e[45] = ae ^ ~ce & de, e[6] = N ^ ~_ & p, e[7] = y ^ ~w & b, e[16] = R ^ ~P & j, e[17] = k ^ ~U & I, e[26] = G ^ ~W & S, e[27] = V ^ ~H & M, e[36] = q ^ ~$ & z, e[37] = Q ^ ~ee & X, e[46] = ie ^ ~le & te, e[47] = ce ^ ~de & re, e[8] = _ ^ ~p & g, e[9] = w ^ ~b & v, e[18] = P ^ ~j & O, e[19] = U ^ ~I & A, e[28] = W ^ ~S & B, e[29] = H ^ ~M & D, e[38] = $ ^ ~z & Y, e[39] = ee ^ ~X & Z, e[48] = le ^ ~te & ne, e[49] = de ^ ~re & se, e[0] ^= i[n], e[1] ^= i[n + 1]
 					};
 					if (s) e.exports = f;
 					else
-						for (g = 0; g < p.length; ++g) n[p[g]] = f[p[g]]
+						for (b = 0; b < p.length; ++b) n[p[b]] = f[p[b]]
 				}()
 			}).call(this, r("./node_modules/process/browser.js"), r("./node_modules/webpack/buildin/global.js"))
 		},
@@ -1090,9 +1090,9 @@
 				h = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				f = r("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				p = r("./src/reddit/icons/svgs/Info/index.tsx"),
-				g = r("./src/reddit/icons/svgs/Nsfw/index.tsx"),
-				b = r("./src/reddit/components/Governance/TransferPointsModal/Recipient/index.m.less"),
-				v = r.n(b),
+				b = r("./src/reddit/icons/svgs/Nsfw/index.tsx"),
+				g = r("./src/reddit/components/Governance/TransferPointsModal/Recipient/index.m.less"),
+				v = r.n(g),
 				E = r("./node_modules/fbt/lib/FbtPublic.js");
 			const x = 2,
 				N = 20;
@@ -1100,7 +1100,7 @@
 			! function(e) {
 				e[e.Empty = 0] = "Empty", e[e.Error = 1] = "Error", e[e.Invalid = 2] = "Invalid", e[e.Searching = 3] = "Searching", e[e.Valid = 4] = "Valid"
 			}(y || (y = {}));
-			class w extends a.a.PureComponent {
+			class _ extends a.a.PureComponent {
 				constructor(e) {
 					super(e), this.handleInputChange = e => {
 						const t = e.currentTarget.value;
@@ -1149,7 +1149,7 @@
 						}),
 						max: N,
 						style: {
-							borderColor: _(e)
+							borderColor: w(e)
 						},
 						tabIndex: this.props.tabIndex,
 						type: "text",
@@ -1165,7 +1165,7 @@
 									}
 								});
 							case y.Invalid:
-								return a.a.createElement(g.a, {
+								return a.a.createElement(b.a, {
 									className: v.a.icon,
 									style: {
 										fill: u.a.warning
@@ -1186,7 +1186,7 @@
 					}(e), a.a.createElement("div", {
 						className: v.a.message,
 						style: {
-							color: _(e)
+							color: w(e)
 						}
 					}, function(e) {
 						switch (e) {
@@ -1205,7 +1205,7 @@
 				}
 			}
 
-			function _(e) {
+			function w(e) {
 				switch (e) {
 					case y.Error:
 						return u.a.notice;
@@ -1220,7 +1220,7 @@
 				onCheckUsername: s()(t => e(Object(d.f)({
 					username: t
 				})), 250)
-			}))(w)
+			}))(_)
 		},
 		"./src/reddit/components/Governance/TransferPointsModal/Recipient/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1268,17 +1268,17 @@
 				h = r("./src/reddit/selectors/crypto/points.ts"),
 				f = r("./node_modules/reselect/es/index.js"),
 				p = r("./node_modules/bignumber.js/bignumber.js"),
-				g = r("./src/lib/classNames/index.ts"),
-				b = r("./src/lib/prettyPrintNumber/index.ts"),
+				b = r("./src/lib/classNames/index.ts"),
+				g = r("./src/lib/prettyPrintNumber/index.ts"),
 				v = r("./src/reddit/components/Governance/Token/index.tsx"),
 				E = r("./src/reddit/constants/colors.ts"),
 				x = r("./src/reddit/controls/Button/index.tsx"),
 				N = r("./src/reddit/controls/LoadingIcon/index.tsx"),
 				y = r("./src/reddit/selectors/gov.ts"),
-				w = r("./src/reddit/components/Governance/TransferPointsModal/Controls/index.m.less"),
-				_ = r.n(w),
+				_ = r("./src/reddit/components/Governance/TransferPointsModal/Controls/index.m.less"),
+				w = r.n(_),
 				j = r("./node_modules/fbt/lib/FbtPublic.js");
-			const C = Object(f.c)({
+			const I = Object(f.c)({
 				points: (e, t) => {
 					let {
 						subredditId: r
@@ -1288,7 +1288,7 @@
 				transferIsPending: e => e.transfers.communityPoints.api.pending,
 				wallet: y.d
 			});
-			var I = Object(o.b)(C)((function(e) {
+			var O = Object(o.b)(I)((function(e) {
 					const {
 						amount: t,
 						className: r,
@@ -1300,56 +1300,56 @@
 						wallet: l
 					} = e, d = (null == l ? void 0 : l.unlockedAmount) || "0", u = new p.BigNumber(t || "0"), h = new p.BigNumber(d), f = h.isGreaterThanOrEqualTo(u), y = e.submissionEnabled && !h.isZero() && f;
 					return s.a.createElement("div", {
-						className: Object(g.a)(_.a.container, r)
+						className: Object(b.a)(w.a.container, r)
 					}, s.a.createElement("div", {
-						className: _.a.available
+						className: w.a.available
 					}, s.a.createElement("div", null, j.fbt._("Transferable", null, {
 						hk: "4n8VPB"
 					})), s.a.createElement(v.a, {
 						grey: !0,
-						className: _.a.token,
+						className: w.a.token,
 						subredditId: a
 					}), s.a.createElement("div", {
 						style: {
 							color: f ? void 0 : E.a.warning
 						}
-					}, Object(b.a)(Object(m.b)(d, null == o ? void 0 : o.displayConversion)))), s.a.createElement(x.l, {
+					}, Object(g.a)(Object(m.b)(d, null == o ? void 0 : o.displayConversion)))), s.a.createElement(x.l, {
 						disabled: !y,
-						className: _.a.button,
+						className: w.a.button,
 						tabIndex: i,
 						onClick: n
 					}, c ? s.a.createElement(N.a, {
-						className: _.a.loadingIcon,
+						className: w.a.loadingIcon,
 						sizePx: 20
 					}) : j.fbt._("Send", null, {
 						hk: "18b7Wd"
 					})))
 				})),
-				O = r("./src/lib/currency/cleanNumber/index.ts"),
-				A = r("./src/reddit/constants/keycodes.ts"),
+				A = r("./src/lib/currency/cleanNumber/index.ts"),
+				C = r("./src/reddit/constants/keycodes.ts"),
 				T = r("./src/reddit/components/Governance/TransferPointsModal/PrettyNumberInput/index.m.less"),
 				R = r.n(T);
 
 			function k(e) {
 				const t = e.amount || "0",
 					r = !new p.BigNumber(t).isZero(),
-					n = Object(b.a)(t);
+					n = Object(g.a)(t);
 				return s.a.createElement("label", {
 					"aria-label": t,
 					"aria-live": "assertive",
-					className: Object(g.a)(R.a.container, e.className)
+					className: Object(b.a)(R.a.container, e.className)
 				}, s.a.createElement(v.a, {
 					className: R.a.token,
 					grey: !r,
 					subredditId: e.subredditId
 				}), s.a.createElement("div", {
-					className: Object(g.a)(R.a.display, {
+					className: Object(b.a)(R.a.display, {
 						[R.a.displayActive]: r
 					}),
 					style: {
 						fontSize: P(n)
 					}
-				}, Object(b.a)(n)), s.a.createElement("input", {
+				}, Object(g.a)(n)), s.a.createElement("input", {
 					autoFocus: !0,
 					className: R.a.input,
 					maxLength: 9,
@@ -1358,11 +1358,11 @@
 					},
 					tabIndex: e.tabIndex,
 					value: e.amount,
-					onChange: t => e.onChange(Object(O.a)(t.currentTarget.value)),
+					onChange: t => e.onChange(Object(A.a)(t.currentTarget.value)),
 					onClick: U,
 					onFocus: U,
 					onKeyDown: e => {
-						e.key !== A.b.ArrowLeft && e.key !== A.b.ArrowRight && e.key !== A.b.ArrowUp && e.key !== A.b.ArrowDown || e.preventDefault()
+						e.key !== C.b.ArrowLeft && e.key !== C.b.ArrowRight && e.key !== C.b.ArrowUp && e.key !== C.b.ArrowDown || e.preventDefault()
 					}
 				}))
 			}
@@ -1451,7 +1451,7 @@
 				return Object(n.useEffect)(() => {
 					e.initialRecipient && u()
 				}, []), s.a.createElement("div", {
-					className: Object(g.a)(K.a.container, e.className)
+					className: Object(b.a)(K.a.container, e.className)
 				}, s.a.createElement(W.c, {
 					redditStyle: !0,
 					className: K.a.input,
@@ -1673,7 +1673,7 @@
 						tabIndex: 2,
 						onChange: this.handleRecipientChange,
 						subredditId: a.id
-					})), s.a.createElement(I, {
+					})), s.a.createElement(O, {
 						amount: this.state.tokenAmount,
 						className: me.a.controls,
 						submissionEnabled: !!this.state.tokenAmount && this.state.recipientIsValid,
@@ -1701,7 +1701,7 @@
 					publicAddress: e => e.transfers.communityPoints.publicAddress,
 					subreddit: d.r
 				}),
-				ge = Object(o.b)(pe, e => ({
+				be = Object(o.b)(pe, e => ({
 					onClose: () => {
 						e(Object(c.f)())
 					},
@@ -1711,8 +1711,8 @@
 						subredditId: n
 					}, !0))
 				})),
-				be = Object(d.u)();
-			t.default = Object(a.a)(be(ge(fe)))
+				ge = Object(d.u)();
+			t.default = Object(a.a)(ge(be(fe)))
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, r) {
 			e.exports = {
@@ -1750,7 +1750,7 @@
 				h = r("./src/reddit/layout/row/Inline/index.tsx"),
 				f = r("./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less"),
 				p = r.n(f);
-			var g = Object(u.a)(e => {
+			var b = Object(u.a)(e => {
 					const {
 						children: t,
 						title: r
@@ -1770,8 +1770,8 @@
 						hk: "2Giu9U"
 					}))))
 				}),
-				b = r("./src/reddit/controls/ErrorText/index.m.less"),
-				v = r.n(b);
+				g = r("./src/reddit/controls/ErrorText/index.m.less"),
+				v = r.n(g);
 			class E extends l.a.Component {
 				constructor(e) {
 					super(e), this.spanRef = l.a.createRef(), this.toggleModal = () => {
@@ -1823,7 +1823,7 @@
 					}, e), a && l.a.createElement("span", {
 						className: v.a.moreText,
 						onClick: this.toggleModal
-					}, o), i && l.a.createElement(g, {
+					}, o), i && l.a.createElement(b, {
 						onConfirmed: this.toggleModal,
 						title: s
 					}, r || e))
@@ -1877,7 +1877,7 @@
 			})), r.d(t, "b", (function() {
 				return p
 			})), r.d(t, "c", (function() {
-				return g
+				return b
 			})), r.d(t, "d", (function() {
 				return E
 			}));
@@ -1929,7 +1929,7 @@
 						})
 					}, t), r)
 				},
-				g = e => {
+				b = e => {
 					let {
 						label: t,
 						children: r,
@@ -1954,7 +1954,7 @@
 						})
 					}, t), r)
 				},
-				b = e => s.a.createElement("div", {
+				g = e => s.a.createElement("div", {
 					className: Object(o.a)(u.a.addValueButton, e.className),
 					onClick: e.onClick
 				}, e.text, " ", s.a.createElement(c.a, {
@@ -2041,10 +2041,10 @@
 					const c = !(!!n && r.length >= n) && !i;
 					return s.a.createElement("div", {
 						className: Object(o.a)(u.a.multiInputWrapper, e)
-					}, t && c && s.a.createElement(b, {
+					}, t && c && s.a.createElement(g, {
 						onClick: this.addValue,
 						text: a
-					}), this.renderFields(), !t && c && s.a.createElement(b, {
+					}), this.renderFields(), !t && c && s.a.createElement(g, {
 						onClick: this.addValue,
 						text: a
 					}))
@@ -2120,33 +2120,6 @@
 			function s() {
 				return Object(n.d)()
 			}
-		},
-		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, r) {
-			"use strict";
-			var n = r("./node_modules/react/index.js"),
-				s = r.n(n);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 22",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", null, s.a.createElement("path", {
-				d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z",
-				fill: "inherit"
-			})))
-		},
-		"./src/reddit/icons/svgs/Info/index.tsx": function(e, t, r) {
-			"use strict";
-			var n = r("./node_modules/react/index.js"),
-				s = r.n(n);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				style: e.style,
-				viewBox: "0 0 20 20",
-				xmlns: "http://www.w3.org/2000/svg",
-				onClick: e.onClick
-			}, s.a.createElement("g", null, s.a.createElement("path", {
-				d: "M10,8.5 C10.553,8.5 11,8.948 11,9.5 L11,13.5 C11,14.052 10.553,14.5 10,14.5 C9.447,14.5 9,14.052 9,13.5 L9,9.5 C9,8.948 9.447,8.5 10,8.5 Z M10.7002,5.79 C10.8012,5.89 10.8702,6 10.9212,6.12 C10.9712,6.24 11.0002,6.37 11.0002,6.5 C11.0002,6.57 10.9902,6.63 10.9802,6.7 C10.9712,6.76 10.9502,6.82 10.9212,6.88 C10.9002,6.94 10.8702,7 10.8302,7.05 C10.7902,7.11 10.7502,7.16 10.7002,7.21 C10.6602,7.25 10.6102,7.29 10.5512,7.33 C10.5002,7.37 10.4402,7.4 10.3812,7.42 C10.3202,7.45 10.2612,7.47 10.1902,7.48 C10.1312,7.49 10.0602,7.5 10.0002,7.5 C9.7402,7.5 9.4802,7.39 9.2902,7.21 C9.1102,7.02 9.0002,6.77 9.0002,6.5 C9.0002,6.37 9.0302,6.24 9.0802,6.12 C9.1312,5.99 9.2002,5.89 9.2902,5.79 C9.5202,5.56 9.8702,5.46 10.1902,5.52 C10.2612,5.53 10.3202,5.55 10.3812,5.58 C10.4402,5.6 10.5002,5.63 10.5512,5.67 C10.6102,5.71 10.6602,5.75 10.7002,5.79 Z M10,16 C6.691,16 4,13.309 4,10 C4,6.691 6.691,4 10,4 C13.309,4 16,6.691 16,10 C16,13.309 13.309,16 10,16 M10,2 C5.589,2 2,5.589 2,10 C2,14.411 5.589,18 10,18 C14.411,18 18,14.411 18,10 C18,5.589 14.411,2 10,2"
-			})))
 		},
 		"./src/reddit/icons/svgs/Nsfw/index.tsx": function(e, t, r) {
 			"use strict";
@@ -2290,4 +2263,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.aeac23078e0407f5b8e5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.6c92c1ba3f1217c1fa9f.js.map

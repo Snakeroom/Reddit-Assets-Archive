@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.abb642e2c35dd6769c6f.js
-// Retrieved at 4/25/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.3a56750bb6978e77d3e1.js
+// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -1048,35 +1048,35 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				o = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(o.a)(n.hd),
-				a = Object(o.a)(n.fd),
-				c = Object(o.a)(n.id),
-				i = Object(o.a)(n.ad),
-				l = (Object(o.a)(n.bd), Object(o.a)(n.Zc)),
-				d = Object(o.a)(n.dd),
-				u = Object(o.a)(n.ed),
-				m = Object(o.a)(n.ld),
-				p = Object(o.a)(n.jd),
-				b = Object(o.a)(n.kd),
-				h = Object(o.a)(n.cd),
-				f = Object(o.a)(n.Vc),
-				w = Object(o.a)(n.Tc),
-				v = Object(o.a)(n.Mc),
-				_ = Object(o.a)(n.Ic),
-				g = Object(o.a)(n.Kc),
-				x = Object(o.a)(n.Lc),
-				E = Object(o.a)(n.Oc),
-				j = Object(o.a)(n.Jc),
-				O = Object(o.a)(n.Wc),
-				k = Object(o.a)(n.Xc),
-				y = Object(o.a)(n.Yc),
-				N = Object(o.a)(n.gd),
-				P = Object(o.a)(n.md),
-				C = Object(o.a)(n.qd),
-				M = Object(o.a)(n.pd),
-				S = Object(o.a)(n.Hf),
-				I = Object(o.a)(n.od)
+			const s = Object(o.a)(n.id),
+				a = Object(o.a)(n.gd),
+				c = Object(o.a)(n.jd),
+				i = Object(o.a)(n.bd),
+				l = (Object(o.a)(n.cd), Object(o.a)(n.ad)),
+				d = Object(o.a)(n.ed),
+				u = Object(o.a)(n.fd),
+				m = Object(o.a)(n.md),
+				p = Object(o.a)(n.kd),
+				b = Object(o.a)(n.ld),
+				h = Object(o.a)(n.dd),
+				f = Object(o.a)(n.Wc),
+				w = Object(o.a)(n.Uc),
+				v = Object(o.a)(n.Nc),
+				_ = Object(o.a)(n.Jc),
+				g = Object(o.a)(n.Lc),
+				x = Object(o.a)(n.Mc),
+				E = Object(o.a)(n.Pc),
+				j = Object(o.a)(n.Kc),
+				O = Object(o.a)(n.Xc),
+				k = Object(o.a)(n.Yc),
+				y = Object(o.a)(n.Zc),
+				N = Object(o.a)(n.hd),
+				P = Object(o.a)(n.nd),
+				C = Object(o.a)(n.rd),
+				M = Object(o.a)(n.qd),
+				S = Object(o.a)(n.If),
+				I = Object(o.a)(n.pd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.abb642e2c35dd6769c6f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.3a56750bb6978e77d3e1.js.map

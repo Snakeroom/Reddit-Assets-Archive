@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.0d628b1a134806b4d864.js
-// Retrieved at 4/25/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.8252d734a141bb1bdd98.js
+// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
 		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, r) {
@@ -12,8 +12,8 @@
 			"use strict";
 			r.r(t);
 			var n = r("./node_modules/react/index.js"),
-				s = r.n(n),
-				i = r("./node_modules/react-redux/es/index.js"),
+				i = r.n(n),
+				s = r("./node_modules/react-redux/es/index.js"),
 				o = r("./src/higherOrderComponents/asModal/index.tsx"),
 				c = r("./src/lib/notifications/constants.ts"),
 				a = r("./src/reddit/components/TrackingHelper/index.tsx"),
@@ -24,8 +24,8 @@
 			function m(e) {
 				return Object(p.c)(e, {
 					experimentEligibilitySelector: p.a,
-					experimentName: l.vb
-				}) === l.sd
+					experimentName: l.wb
+				}) === l.td
 			}
 			var u = r("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
 				_ = r.n(u);
@@ -42,9 +42,9 @@
 			const O = Object(o.a)(() => null);
 			t.default = e => {
 				const t = Object(a.b)(),
-					r = Object(i.d)(),
-					n = Object(i.e)(m);
-				return s.a.createElement(O, x({
+					r = Object(s.d)(),
+					n = Object(s.e)(m);
+				return i.a.createElement(O, x({
 					onOverlayClick: () => {
 						n && (r(Object(c.k)()), t(Object(d.g)()))
 					}
@@ -56,4 +56,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.0d628b1a134806b4d864.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.8252d734a141bb1bdd98.js.map

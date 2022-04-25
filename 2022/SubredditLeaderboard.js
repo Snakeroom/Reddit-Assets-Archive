@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ae2c6a18101a99c3a698.js
-// Retrieved at 4/25/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.cc018d97faa0cf8f383a.js
+// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.Jf)(e.category_name)
+									displayText: Object(u.Kf)(e.category_name)
 								};
 								n.push(s.id), t[s.id] = s
 							}), {
@@ -2234,8 +2234,8 @@
 				T = n("./node_modules/lodash/upperFirst.js"),
 				w = n.n(T),
 				L = n("./src/reddit/actions/pages/subredditLeaderboard.ts"),
-				I = n("./src/reddit/actions/subreddit/topSubreddits.ts"),
-				P = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItem.tsx"),
+				P = n("./src/reddit/actions/subreddit/topSubreddits.ts"),
+				I = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItem.tsx"),
 				F = n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
 				B = n("./src/reddit/models/GoodContent/index.ts"),
 				D = n("./src/reddit/selectors/platform.ts"),
@@ -2269,7 +2269,7 @@
 					isOnFrontpage: e => !!Object(D.g)(e)
 				}),
 				z = Object(o.b)(H, e => ({
-					fetchMoreSubreddits: (t, n) => e(Object(I.b)(t, n))
+					fetchMoreSubreddits: (t, n) => e(Object(P.b)(t, n))
 				}));
 			class Q extends i.a.Component {
 				constructor() {
@@ -2282,7 +2282,7 @@
 						large: !0
 					}))), this.renderSubredditRankItems = e => this.props.rankings.map((t, n) => {
 						const r = this.props.subreddits[t.id];
-						return i.a.createElement(P.a, {
+						return i.a.createElement(I.a, {
 							delta: t.rankDelta,
 							key: r.id,
 							large: !0,
@@ -2533,7 +2533,7 @@
 					} = t;
 					return Object(g.b)(n.params.categoryName || "")
 				},
-				Ee = Object(m.If)(b.i),
+				Ee = Object(m.Jf)(b.i),
 				_e = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2662,4 +2662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.ae2c6a18101a99c3a698.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.cc018d97faa0cf8f383a.js.map

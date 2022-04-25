@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.d6ad2c1d4ccb12f8eed9.js
-// Retrieved at 4/21/2022, 7:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.8d9aab86c490216da29f.js
+// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, n) {
@@ -17,8 +17,8 @@
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./node_modules/lodash/get.js"),
-				a = n.n(r),
+				a = n("./node_modules/lodash/get.js"),
+				r = n.n(a),
 				o = n("./src/lib/makeActionCreator/index.ts"),
 				d = n("./src/reddit/actions/apiRequestState.ts"),
 				i = n("./src/reddit/actions/modal.ts"),
@@ -27,85 +27,85 @@
 				u = n("./src/reddit/constants/modals.ts"),
 				m = n("./src/lib/constants/index.ts"),
 				p = n("./src/lib/makeApiRequest/index.ts"),
-				h = n("./src/lib/omitHeaders/index.ts"),
-				b = n("./src/reddit/constants/headers.ts"),
+				b = n("./src/lib/omitHeaders/index.ts"),
+				h = n("./src/reddit/constants/headers.ts"),
 				f = n("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				x = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
-			const g = (e, t, n) => Object(p.a)(Object(h.a)(e, [b.a]), {
-				endpoint: Object(f.a)(Object(x.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
+				g = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
+			const x = (e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
+				endpoint: Object(f.a)(Object(g.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
 				method: m.kb.GET,
 				data: n
 			});
 			var _ = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
 				C = n("./src/reddit/models/SubredditModeration/index.ts"),
 				y = n("./src/reddit/models/Toast/index.ts"),
-				w = n("./src/reddit/selectors/activeModalId.ts"),
+				S = n("./src/reddit/selectors/activeModalId.ts"),
 				v = n("./src/reddit/selectors/bannedUser.ts"),
-				S = n("./src/reddit/selectors/subreddit.ts"),
-				k = n("./src/reddit/selectors/user.ts"),
-				E = n("./src/reddit/actions/subredditModeration/constants.ts"),
-				j = n("./src/lib/initializeClient/installReducer.ts"),
-				M = n("./node_modules/redux/es/redux.js");
-			var L = function() {
+				k = n("./src/reddit/selectors/subreddit.ts"),
+				E = n("./src/reddit/selectors/user.ts"),
+				w = n("./src/reddit/actions/subredditModeration/constants.ts"),
+				M = n("./src/lib/initializeClient/installReducer.ts"),
+				O = n("./node_modules/redux/es/redux.js");
+			var j = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.r:
-					case E.q:
+					case w.r:
+					case w.q:
 						return null;
-					case E.p:
+					case w.p:
 						return t.payload;
 					default:
 						return e
 				}
 			};
-			const O = {};
-			var R = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : O,
+			const R = {};
+			var L = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : R,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.r: {
+						case w.r: {
 							const {
 								subredditId: n,
 								fetchedToken: s
-							} = t.payload, r = Object(C.e)(n, s);
+							} = t.payload, a = Object(C.e)(n, s);
 							return {
 								...e,
-								[r]: !0
+								[a]: !0
 							}
 						}
-						case E.q:
-						case E.p: {
+						case w.q:
+						case w.p: {
 							const {
 								subredditId: n,
 								fetchedToken: s
-							} = t.payload, r = Object(C.e)(n, s);
+							} = t.payload, a = Object(C.e)(n, s);
 							return {
 								...e,
-								[r]: !1
+								[a]: !1
 							}
 						}
 						default:
 							return e
 					}
 				},
-				I = Object(M.c)({
-					error: L,
-					pending: R
+				I = Object(O.c)({
+					error: j,
+					pending: L
 				});
-			const N = {};
-			var B = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : N,
+			const B = {};
+			var U = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : B,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.q: {
+						case w.q: {
 							const {
 								fetchedToken: n,
 								subredditId: s
-							} = t.payload, r = Object(C.e)(s, n);
+							} = t.payload, a = Object(C.e)(s, n);
 							return {
 								...e,
-								[r]: !0
+								[a]: !0
 							}
 						}
 						default:
@@ -113,7 +113,7 @@
 					}
 				},
 				T = n("./src/reddit/actions/inContextModeration.ts");
-			var U = function() {
+			var N = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -123,12 +123,12 @@
 						return e
 				}
 			};
-			const D = {};
-			var P = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : D,
+			const P = {};
+			var A = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : P,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.q: {
+						case w.q: {
 							const {
 								subredditId: e,
 								after: n
@@ -141,28 +141,28 @@
 							return e
 					}
 				},
-				A = n("./node_modules/icepick/icepick.js");
+				D = n("./node_modules/icepick/icepick.js");
 			const F = {};
 			var q = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : F,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.o:
-					case E.q: {
+					case w.o:
+					case w.q: {
 						const {
 							subredditId: n,
 							bannedUsers: s
 						} = t.payload;
-						return Object(A.merge)(e, {
+						return Object(D.merge)(e, {
 							[n]: s
 						})
 					}
-					case E.v: {
+					case w.v: {
 						const {
 							subredditId: n,
 							userId: s
 						} = t.payload;
-						return Object(A.unsetIn)(e, [n, s])
+						return Object(D.unsetIn)(e, [n, s])
 					}
 					default:
 						return e
@@ -172,10 +172,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.u:
-					case E.t:
+					case w.u:
+					case w.t:
 						return null;
-					case E.s:
+					case w.s:
 						return t.payload;
 					default:
 						return e
@@ -185,16 +185,16 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.u:
+						case w.u:
 							return !0;
-						case E.t:
-						case E.s:
+						case w.t:
+						case w.s:
 							return !1;
 						default:
 							return e
 					}
 				},
-				X = Object(M.c)({
+				X = Object(O.c)({
 					error: H,
 					pending: W
 				});
@@ -202,10 +202,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.u:
-						case E.s:
+						case w.u:
+						case w.s:
 							return null;
-						case E.t: {
+						case w.t: {
 							const e = t.payload.bannedUserIds[0];
 							return e ? t.payload.bannedUsers[e] : null
 						}
@@ -213,16 +213,16 @@
 							return e
 					}
 				},
-				K = Object(M.c)({
+				J = Object(O.c)({
 					api: X,
 					result: G
 				});
-			const J = {};
-			var Z = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : J,
+			const Z = {};
+			var Q = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Z,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.q: {
+						case w.q: {
 							const {
 								subredditId: n,
 								bannedUserIds: s
@@ -235,7 +235,7 @@
 								[n]: s
 							}
 						}
-						case E.v: {
+						case w.v: {
 							const {
 								subredditId: n,
 								userId: s
@@ -244,42 +244,42 @@
 								[n]: e[n].filter(e => e !== s)
 							}
 						}
-						case E.o: {
+						case w.o: {
 							const {
 								subredditId: n,
 								bannedUserIds: s
-							} = t.payload, r = s[0];
-							return r && e[n] && -1 === e[n].indexOf(r) ? {
-								[n]: [r, ...e[n]]
+							} = t.payload, a = s[0];
+							return a && e[n] && -1 === e[n].indexOf(a) ? {
+								[n]: [a, ...e[n]]
 							} : e
 						}
 						default:
 							return e
 					}
 				},
-				Q = Object(M.c)({
+				K = Object(O.c)({
 					api: I,
-					fetchedTokens: B,
-					inContext: U,
-					loadMore: P,
+					fetchedTokens: U,
+					inContext: N,
+					loadMore: A,
 					models: q,
-					search: K,
-					userOrder: Z
+					search: J,
+					userOrder: Q
 				});
-			Object(j.a)({
+			Object(M.a)({
 				features: {
-					banned: Q
+					banned: K
 				}
 			});
-			const z = Object(o.a)(E.r),
-				V = Object(o.a)(E.q),
-				Y = Object(o.a)(E.p),
+			const z = Object(o.a)(w.r),
+				V = Object(o.a)(w.q),
+				Y = Object(o.a)(w.p),
 				$ = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-					return async (n, s, r) => {
+					return async (n, s, a) => {
 						let {
-							apiContext: a
-						} = r;
+							apiContext: r
+						} = a;
 						const o = s(),
 							d = t.after || "",
 							i = Object(C.e)(e, d),
@@ -290,7 +290,7 @@
 							fetchedToken: d
 						}));
 						const c = o.subreddits.models[e].name,
-							u = await g(a(), c, t);
+							u = await x(r(), c, t);
 						u.ok ? n(V({
 							...u.body,
 							fetchedToken: d
@@ -300,29 +300,29 @@
 						}))
 					}
 				},
-				ee = Object(o.a)(E.u),
-				te = Object(o.a)(E.t),
-				ne = Object(o.a)(E.s),
-				se = (e, t) => async (n, s, r) => {
+				ee = Object(o.a)(w.u),
+				te = Object(o.a)(w.t),
+				ne = Object(o.a)(w.s),
+				se = (e, t) => async (n, s, a) => {
 					let {
-						apiContext: a
-					} = r;
+						apiContext: r
+					} = a;
 					const o = s().subreddits.models[e].name,
 						d = {
 							username: Object(_.a)(t)
 						};
 					n(ee());
-					const i = await g(a(), o, d);
+					const i = await x(r(), o, d);
 					i.ok ? n(te(i.body)) : n(ne(i.error))
-				}, re = Object(o.a)(E.o), ae = Object(o.a)(E.v), oe = (e, t, n) => async (r, o, i) => {
+				}, ae = Object(o.a)(w.o), re = Object(o.a)(w.v), oe = (e, t, n) => async (a, o, i) => {
 					let {
 						apiContext: l
 					} = i;
 					const u = o(),
 						f = u.subreddits.models[e].url,
-						x = u.subreddits.models[e].name;
-					t.username = Object(_.a)(t.username), r(Object(d.h)(n));
-					const C = await ((e, t, n) => Object(p.a)(Object(h.a)(e, [b.a]), {
+						g = u.subreddits.models[e].name;
+					t.username = Object(_.a)(t.username), a(Object(d.h)(n));
+					const C = await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
 						method: m.kb.POST,
 						data: {
@@ -337,35 +337,35 @@
 						}
 					}))(l(), f, t);
 					if (C.ok) {
-						r(Object(d.e)(n));
+						a(Object(d.e)(n));
 						const e = {
 							username: t.username
 						};
-						r(Object(c.f)({
+						a(Object(c.f)({
 							kind: y.b.SuccessMod,
 							text: s.fbt._("Successfully banned a user", null, {
 								hk: "1kORpS"
 							})
 						}));
-						const a = await g(l(), x, e);
-						a.ok && r(re(a.body))
+						const r = await x(l(), g, e);
+						r.ok && a(ae(r.body))
 					} else {
-						r(Object(d.f)(n, C.error));
-						const e = a()(C, "body.json.errors[0][1]", s.fbt._("Something went wrong", null, {
+						a(Object(d.f)(n, C.error));
+						const e = r()(C, "body.json.errors[0][1]", s.fbt._("Something went wrong", null, {
 							hk: "1IJNeH"
 						}));
-						r(Object(c.f)({
+						a(Object(c.f)({
 							kind: y.b.Error,
 							text: e,
 							duration: 3e3
 						}))
 					}
-				}, de = (e, t) => async (n, r, o) => {
+				}, de = (e, t) => async (n, a, o) => {
 					let {
 						apiContext: d
 					} = o;
-					const i = r().subreddits.models[e].url,
-						l = await ((e, t, n) => Object(p.a)(Object(h.a)(e, [b.a]), {
+					const i = a().subreddits.models[e].url,
+						l = await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
 							method: m.kb.POST,
 							data: {
@@ -374,7 +374,7 @@
 								type: "banned"
 							}
 						}))(d(), i, t);
-					if (l.ok) n(ae({
+					if (l.ok) n(re({
 						subredditId: e,
 						userId: t
 					})), n(Object(c.f)({
@@ -384,7 +384,7 @@
 						})
 					}));
 					else {
-						const e = a()(l, "body.json.errors[0][1]", s.fbt._("Something went wrong", null, {
+						const e = r()(l, "body.json.errors[0][1]", s.fbt._("Something went wrong", null, {
 							hk: "1IJNeH"
 						}));
 						n(Object(c.f)({
@@ -394,25 +394,25 @@
 						}))
 					}
 				}, ie = (e, t) => async (n, s) => {
-					const r = s();
+					const a = s();
 					await Promise.all([(async () => {
-						if (!Object(w.b)(u.a.BAN_USER)(r) && !Object(S.R)(r, {
+						if (!Object(S.b)(u.a.BAN_USER)(a) && !Object(k.R)(a, {
 								subredditId: e
 							})) {
-							const t = Object(S.U)(r, {
+							const t = Object(k.U)(a, {
 								subredditId: e
 							});
 							await n(Object(l.o)(t.name))
 						}
 					})(), (async () => {
-						const s = Object(k.Bb)(r, {
+						const s = Object(E.Bb)(a, {
 							userName: t
 						});
 						if (!s) return;
-						const a = Object(v.h)(r, {
+						const r = Object(v.h)(a, {
 							subredditId: e
 						});
-						a && a[s.id] || await n($(e, {
+						r && r[s.id] || await n($(e, {
 							username: t
 						}))
 					})()]), n(Object(i.i)(u.a.BAN_USER))
@@ -421,8 +421,8 @@
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./node_modules/react/index.js"),
-				a = n.n(r),
+				a = n("./node_modules/react/index.js"),
+				r = n.n(a),
 				o = n("./src/lib/classNames/index.ts"),
 				d = n("./src/lib/lessComponent.tsx"),
 				i = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
@@ -431,34 +431,34 @@
 				u = n.n(c);
 			const m = d.a.div("BanLength", u.a),
 				p = d.a.wrapped(i.p, "BanLengthDays", u.a),
-				h = d.a.wrapped(i.j, "NumberInput", u.a),
-				b = d.a.div("StyledPermanentLabel", u.a),
+				b = d.a.wrapped(i.j, "NumberInput", u.a),
+				h = d.a.div("StyledPermanentLabel", u.a),
 				f = d.a.div("DescriptionText", u.a),
-				x = d.a.div("BanLengthContainer", u.a),
-				g = d.a.div("CheckboxWrapper", u.a),
+				g = d.a.div("BanLengthContainer", u.a),
+				x = d.a.div("CheckboxWrapper", u.a),
 				_ = d.a.div("PermanentCheckbox", u.a);
-			t.a = e => a.a.createElement(i.h, null, a.a.createElement(i.k, null, s.fbt._("How long?", null, {
+			t.a = e => r.a.createElement(i.h, null, r.a.createElement(i.k, null, s.fbt._("How long?", null, {
 				hk: "1InKw6"
-			})), a.a.createElement(x, null, a.a.createElement(m, {
+			})), r.a.createElement(g, null, r.a.createElement(m, {
 				className: Object(o.a)({
 					[u.a.isDisabled]: e.isDurationPermanent
 				})
-			}, a.a.createElement(h, {
+			}, r.a.createElement(b, {
 				tabIndex: 0,
 				disabled: e.isDurationPermanent,
 				onChange: e.onChangeDuration,
 				min: "0",
 				type: "number",
 				value: void 0 !== e.duration && null !== e.duration ? e.duration : ""
-			}), a.a.createElement(p, null, s.fbt._("Days", null, {
+			}), r.a.createElement(p, null, s.fbt._("Days", null, {
 				hk: "2TkJg0"
-			}))), a.a.createElement(b, {
+			}))), r.a.createElement(h, {
 				onClick: e.togglePermanent
-			}, a.a.createElement(_, {
+			}, r.a.createElement(_, {
 				onKeyDown: e.togglePermanent
-			}, a.a.createElement(g, {
+			}, r.a.createElement(x, {
 				tabIndex: 0
-			}, e.isDurationPermanent ? a.a.createElement(l.b, null) : a.a.createElement(l.a, null))), a.a.createElement(f, null, s.fbt._("Permanent", null, {
+			}, e.isDurationPermanent ? r.a.createElement(l.b, null) : r.a.createElement(l.a, null))), r.a.createElement(f, null, s.fbt._("Permanent", null, {
 				hk: "172B1w"
 			})))))
 		},
@@ -479,8 +479,8 @@
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./node_modules/react/index.js"),
-				a = n.n(r),
+				a = n("./node_modules/react/index.js"),
+				r = n.n(a),
 				o = n("./node_modules/react-redux/es/index.js"),
 				d = n("./node_modules/reselect/es/index.js"),
 				i = n("./src/reddit/constants/keycodes.ts"),
@@ -489,8 +489,8 @@
 				u = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
 				m = n("./src/reddit/selectors/subreddit.ts"),
 				p = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.m.less"),
-				h = n.n(p);
-			const b = [() => s.fbt._("Spam", null, {
+				b = n.n(p);
+			const h = [() => s.fbt._("Spam", null, {
 					hk: "1I8OLD"
 				}), () => s.fbt._("Personal and confidential information", null, {
 					hk: "gBQdH"
@@ -500,8 +500,8 @@
 				f = Object(d.c)({
 					subredditRules: m.T
 				}),
-				x = Object(o.b)(f);
-			class g extends a.a.Component {
+				g = Object(o.b)(f);
+			class x extends r.a.Component {
 				constructor(e) {
 					super(e), this.api = null, this.closeDropdown = () => {
 						this.state.isOpen && this.setState({
@@ -512,7 +512,7 @@
 					}), this.handleSelectReason = (e, t) => {
 						this.props.onSelectReason(t), e.key !== i.b.Tab && e.preventDefault(), this.closeDropdown()
 					}, this.getRuleShortNames = () => {
-						return [...this.props.subredditRules ? this.props.subredditRules.map(e => e.shortName) : [], ...b.map(e => e().toString()), "other"]
+						return [...this.props.subredditRules ? this.props.subredditRules.map(e => e.shortName) : [], ...h.map(e => e().toString()), "other"]
 					}, this.state = {
 						isOpen: !1,
 						activeRow: -1
@@ -531,21 +531,21 @@
 						props: e,
 						state: t
 					} = this;
-					return a.a.createElement("div", {
-						className: h.a.Container
-					}, a.a.createElement("button", {
-						className: h.a.dropdownTarget,
+					return r.a.createElement("div", {
+						className: b.a.Container
+					}, r.a.createElement("button", {
+						className: b.a.dropdownTarget,
 						onClick: this.handleToggleDropdown
-					}, a.a.createElement("div", {
-						className: h.a.targetText
+					}, r.a.createElement("div", {
+						className: b.a.targetText
 					}, e.reason || s.fbt._("None", null, {
 						hk: "1IYbYO"
-					})), a.a.createElement(u.b, null)), t.isOpen && a.a.createElement(l.a, {
-						className: h.a.Dropdown,
+					})), r.a.createElement(u.b, null)), t.isOpen && r.a.createElement(l.a, {
+						className: b.a.Dropdown,
 						isOverlay: !0
-					}, this.getRuleShortNames().map((t, n) => a.a.createElement(c.b, {
+					}, this.getRuleShortNames().map((t, n) => r.a.createElement(c.b, {
 						key: t,
-						className: h.a.DropdownRow,
+						className: b.a.DropdownRow,
 						displayText: t,
 						index: n,
 						isSelected: e.reason === t,
@@ -553,7 +553,7 @@
 					}))))
 				}
 			}
-			t.a = x(g)
+			t.a = g(x)
 		},
 		"./src/reddit/components/BannedUserList/AddBannedUserModal/_AddBannedUserModal.m.less": function(e, t, n) {
 			e.exports = {
@@ -596,8 +596,8 @@
 			"use strict";
 			n.r(t);
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
-				r = n("./node_modules/react/index.js"),
-				a = n.n(r),
+				a = n("./node_modules/react/index.js"),
+				r = n.n(a),
 				o = n("./node_modules/react-redux/es/index.js"),
 				d = n("./node_modules/reselect/es/index.js"),
 				i = n("./src/higherOrderComponents/asModal/index.tsx"),
@@ -606,32 +606,32 @@
 				u = n("./src/reddit/actions/subredditModeration/ban.ts"),
 				m = n("./src/reddit/components/CharacterCountdown/index.tsx"),
 				p = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				h = n("./src/reddit/controls/Button/index.tsx"),
-				b = n("./src/reddit/controls/TextButton/index.tsx"),
+				b = n("./src/reddit/controls/Button/index.tsx"),
+				h = n("./src/reddit/controls/TextButton/index.tsx"),
 				f = n("./src/reddit/helpers/isValidUsername/index.tsx"),
-				x = n("./src/reddit/icons/svgs/Unban/index.tsx"),
-				g = n("./src/reddit/layout/row/RightAlign/index.tsx"),
+				g = n("./src/reddit/icons/svgs/Unban/index.tsx"),
+				x = n("./src/reddit/layout/row/RightAlign/index.tsx"),
 				_ = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
 				C = n("./src/reddit/models/ApiRequestState/index.ts"),
 				y = n("./src/reddit/models/SubredditModeration/index.ts"),
-				w = n("./src/reddit/selectors/apiRequestState.ts"),
+				S = n("./src/reddit/selectors/apiRequestState.ts"),
 				v = n("./src/reddit/selectors/bannedUser.ts"),
-				S = n("./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx"),
-				k = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx"),
-				E = n("./src/reddit/components/BannedUserList/AddBannedUserModal/_AddBannedUserModal.m.less"),
-				j = n.n(E);
-			const M = 300,
-				L = 5e3,
-				O = l.a.wrapped(x.a, "Unban", j.a),
-				R = l.a.wrapped(p.s, "UnbanButton", j.a),
-				I = l.a.wrapped(p.p, "ModalText", j.a),
-				N = l.a.div("DescriptionText", j.a),
-				B = l.a.span("Bullet", j.a),
-				T = l.a.wrapped(N, "VisibilityNote", j.a),
-				U = l.a.wrapped(p.g, "ModalFooter", j.a),
-				D = l.a.div("FooterRow", j.a),
-				P = Object(d.c)({
-					apiRequestStates: w.a,
+				k = n("./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx"),
+				E = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx"),
+				w = n("./src/reddit/components/BannedUserList/AddBannedUserModal/_AddBannedUserModal.m.less"),
+				M = n.n(w);
+			const O = 300,
+				j = 5e3,
+				R = l.a.wrapped(g.a, "Unban", M.a),
+				L = l.a.wrapped(p.s, "UnbanButton", M.a),
+				I = l.a.wrapped(p.p, "ModalText", M.a),
+				B = l.a.div("DescriptionText", M.a),
+				U = l.a.span("Bullet", M.a),
+				T = l.a.wrapped(B, "VisibilityNote", M.a),
+				N = l.a.wrapped(p.g, "ModalFooter", M.a),
+				P = l.a.div("FooterRow", M.a),
+				A = Object(d.c)({
+					apiRequestStates: S.a,
 					user(e, t) {
 						if (t.user) return t.user;
 						const {
@@ -644,23 +644,23 @@
 						}) : void 0
 					}
 				}),
-				A = Object(o.b)(P, (e, t) => {
+				D = Object(o.b)(A, (e, t) => {
 					let {
 						subredditId: n
 					} = t;
 					return {
-						onBanUser: (t, s, r, a, o, d, i) => e(Object(u.b)(n, {
+						onBanUser: (t, s, a, r, o, d, i) => e(Object(u.b)(n, {
 							username: t,
 							modNote: s,
-							duration: r,
-							banMessage: a,
+							duration: a,
+							banMessage: r,
 							reason: o,
 							contextId: d
 						}, i)),
 						releaseRequest: t => e(Object(c.g)(t))
 					}
 				});
-			class F extends a.a.Component {
+			class F extends r.a.Component {
 				constructor(e) {
 					super(e), this.onRemove = () => {
 						const {
@@ -668,7 +668,7 @@
 						} = this;
 						e.onUnbanUser && e.onUnbanUser(), e.toggleModal(), e.trackEventWithName("remove")()
 					}, this.onChangeModNote = e => {
-						e.currentTarget.value.length <= M && this.setState({
+						e.currentTarget.value.length <= O && this.setState({
 							modNote: e.currentTarget.value
 						})
 					}, this.onChangeBanDuration = e => {
@@ -676,7 +676,7 @@
 						"number" == typeof t && (t < 0 || t > y.b || this.setState({
 							duration: t
 						}))
-					}, this.canSave = () => !this.isApiRequestInProgress() && (!!this.state.reason && (!!Object(f.a)(this.state.username) && (!(!this.state.durationIsPermanent && !this.state.duration) && !(this.state.banMessage && this.state.banMessage.length > L)))), this.onSubmit = () => {
+					}, this.canSave = () => !this.isApiRequestInProgress() && (!!this.state.reason && (!!Object(f.a)(this.state.username) && (!(!this.state.durationIsPermanent && !this.state.duration) && !(this.state.banMessage && this.state.banMessage.length > j)))), this.onSubmit = () => {
 						const {
 							props: e,
 							state: t
@@ -684,9 +684,9 @@
 						let n = t.durationIsPermanent ? null : t.duration;
 						const s = e.user && null != e.user.duration && e.user.duration === n;
 						null != n && s && (n += 1);
-						const r = Object(C.b)();
-						e.onBanUser(t.username, t.modNote, n, t.banMessage, t.reason, t.contextId, r), this.setState({
-							apiRequestId: r
+						const a = Object(C.b)();
+						e.onBanUser(t.username, t.modNote, n, t.banMessage, t.reason, t.contextId, a), this.setState({
+							apiRequestId: a
 						})
 					}, this.handleModalBodyClick = () => {
 						this.dropdownApi && this.dropdownApi.closeDropdown()
@@ -735,18 +735,18 @@
 					const {
 						props: e,
 						state: t
-					} = this, n = e.username || e.user && e.user.username || "", r = e.user && e.user.bannedAtUTC;
-					return a.a.createElement(p.e, {
+					} = this, n = e.username || e.user && e.user.username || "", a = e.user && e.user.bannedAtUTC;
+					return r.a.createElement(p.e, {
 						onClick: this.handleModalBodyClick
-					}, a.a.createElement(p.i, null, a.a.createElement(_.a, null, a.a.createElement(p.q, null, r ? s.fbt._("Edit ban for: {username}", [s.fbt._param("username", `u/${n}`)], {
+					}, r.a.createElement(p.i, null, r.a.createElement(_.a, null, r.a.createElement(p.q, null, a ? s.fbt._("Edit ban for: {username}", [s.fbt._param("username", `u/${n}`)], {
 						hk: "2eWbbe"
 					}) : s.fbt._("Ban a user: {username}", [s.fbt._param("username", n && `u/${n}`)], {
 						hk: "1pLEsE"
-					})), a.a.createElement(b.a, {
+					})), r.a.createElement(h.a, {
 						onClick: e.toggleModal
-					}, a.a.createElement(p.b, null)))), a.a.createElement(p.l, null, !n && a.a.createElement(p.h, null, a.a.createElement(p.k, null, s.fbt._("Enter username", null, {
+					}, r.a.createElement(p.b, null)))), r.a.createElement(p.l, null, !n && r.a.createElement(p.h, null, r.a.createElement(p.k, null, s.fbt._("Enter username", null, {
 						hk: "1CnwdN"
-					})), a.a.createElement(p.j, {
+					})), r.a.createElement(p.j, {
 						autoFocus: !0,
 						"data-redditstyle": !0,
 						onChange: e => this.setState({
@@ -756,35 +756,35 @@
 							hk: "5wNow"
 						}),
 						value: t.username
-					})), a.a.createElement(p.h, null, a.a.createElement(p.k, null, s.fbt._("Reason for ban", null, {
+					})), r.a.createElement(p.h, null, r.a.createElement(p.k, null, s.fbt._("Reason for ban", null, {
 						hk: "dGjdF"
-					})), a.a.createElement(k.a, {
+					})), r.a.createElement(E.a, {
 						onDropdownApi: this.setDropdownApi,
 						onSelectReason: e => this.setState({
 							reason: e
 						}),
 						reason: t.reason,
 						subredditId: e.subredditId
-					})), a.a.createElement(p.h, null, a.a.createElement(p.k, null, s.fbt._("Mod Note", null, {
+					})), r.a.createElement(p.h, null, r.a.createElement(p.k, null, s.fbt._("Mod Note", null, {
 						hk: "2di7R1"
-					})), a.a.createElement(p.j, {
+					})), r.a.createElement(p.j, {
 						"data-redditstyle": !0,
 						onChange: this.onChangeModNote,
 						placeholder: s.fbt._("Mod note", null, {
 							hk: "4t4DGf"
 						}),
 						value: t.modNote
-					}), a.a.createElement(m.a, {
-						maxChars: M,
+					}), r.a.createElement(m.a, {
+						maxChars: O,
 						text: t.modNote
-					})), a.a.createElement(S.a, {
+					})), r.a.createElement(k.a, {
 						duration: t.duration,
 						isDurationPermanent: t.durationIsPermanent,
 						onChangeDuration: this.onChangeBanDuration,
 						togglePermanent: this.togglePermanent
-					})), a.a.createElement(U, null, a.a.createElement(D, null, a.a.createElement(I, null, s.fbt._("Note to include in ban message", null, {
+					})), r.a.createElement(N, null, r.a.createElement(P, null, r.a.createElement(I, null, s.fbt._("Note to include in ban message", null, {
 						hk: "44jlkB"
-					}), a.a.createElement(B, null, "•"))), a.a.createElement(D, null, a.a.createElement(p.t, {
+					}), r.a.createElement(U, null, "•"))), r.a.createElement(P, null, r.a.createElement(p.t, {
 						onChange: e => this.setState({
 							banMessage: e.currentTarget.value
 						}),
@@ -793,33 +793,33 @@
 						}),
 						value: t.banMessage,
 						"data-redditstyle": !0
-					})), a.a.createElement(D, null, a.a.createElement(m.a, {
-						maxChars: L,
+					})), r.a.createElement(P, null, r.a.createElement(m.a, {
+						maxChars: j,
 						text: t.banMessage
-					})), a.a.createElement(D, null, e.onUnbanUser ? a.a.createElement(R, {
+					})), r.a.createElement(P, null, e.onUnbanUser ? r.a.createElement(L, {
 						onClick: this.onRemove
-					}, a.a.createElement(O, null), s.fbt._("Unban", null, {
+					}, r.a.createElement(R, null), s.fbt._("Unban", null, {
 						hk: "3zNsVi"
-					})) : a.a.createElement(T, null, a.a.createElement(B, null, "•"), s.fbt._("Visible to banned user", null, {
+					})) : r.a.createElement(T, null, r.a.createElement(U, null, "•"), s.fbt._("Visible to banned user", null, {
 						hk: "1PQbxq"
-					})), a.a.createElement(g.a, null, a.a.createElement(p.a, {
+					})), r.a.createElement(x.a, null, r.a.createElement(p.a, {
 						onClick: e.toggleModal,
 						"data-redditstyle": !0
 					}, s.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), a.a.createElement(h.l, {
-						className: j.a.PrimaryButton,
+					})), r.a.createElement(b.l, {
+						className: M.a.PrimaryButton,
 						onClick: this.onSubmit,
 						disabled: !this.canSave(),
 						"data-redditstyle": !0
-					}, r ? s.fbt._("Edit Ban", null, {
+					}, a ? s.fbt._("Edit Ban", null, {
 						hk: "4laqjI"
 					}) : s.fbt._("Ban user", null, {
 						hk: "3vVKWt"
 					}))))))
 				}
 			}
-			t.default = Object(i.a)(A(F))
+			t.default = Object(i.a)(D(F))
 		},
 		"./src/reddit/components/CharacterCountdown/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -830,16 +830,16 @@
 		"./src/reddit/components/CharacterCountdown/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				a = n("./src/lib/classNames/index.ts"),
+				a = n.n(s),
+				r = n("./src/lib/classNames/index.ts"),
 				o = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.ts"),
 				d = n("./src/reddit/components/CharacterCountdown/index.m.less"),
 				i = n.n(d);
 			const {
 				fbt: l
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			t.a = e => r.a.createElement(o.b, {
-				className: Object(a.a)(e.className, i.a.container, e.text.length >= e.maxChars ? i.a.mOverflow : null)
+			t.a = e => a.a.createElement(o.b, {
+				className: Object(r.a)(e.className, i.a.container, e.text.length >= e.maxChars ? i.a.mOverflow : null)
 			}, l._({
 				"*": "{characters} Characters remaining",
 				_1: "1 Character remaining"
@@ -903,15 +903,15 @@
 			})), n.d(t, "h", (function() {
 				return p
 			})), n.d(t, "a", (function() {
-				return h
-			})), n.d(t, "g", (function() {
 				return b
+			})), n.d(t, "g", (function() {
+				return h
 			})), n.d(t, "i", (function() {
 				return f
 			})), n.d(t, "e", (function() {
-				return x
-			})), n.d(t, "b", (function() {
 				return g
+			})), n.d(t, "b", (function() {
+				return x
 			})), n.d(t, "c", (function() {
 				return _
 			})), n.d(t, "d", (function() {
@@ -920,24 +920,24 @@
 				return y
 			}));
 			var s = n("./src/lib/lessComponent.tsx"),
-				r = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
-				a = n.n(r);
-			const o = s.a.section("FormPage", a.a),
-				d = s.a.h1("HomePageTitle", a.a),
-				i = s.a.button("HomePageBreadcrumb", a.a),
-				l = s.a.div("HomePageGroup", a.a),
-				c = s.a.h1("FormPageTitle", a.a),
-				u = s.a.div("FormPageSection", a.a),
-				m = s.a.div("FormGroup", a.a),
-				p = s.a.h2("FormGroupTitle", a.a),
-				h = s.a.div("FormElement", a.a),
-				b = s.a.div("FormGroupDescription", a.a),
-				f = s.a.div("FormItem", a.a),
-				x = s.a.h3("FormElementTitle", a.a),
-				g = s.a.div("FormElementDescription", a.a),
-				_ = s.a.div("FormElementError", a.a),
-				C = s.a.div("FormElementSubGroup", a.a),
-				y = s.a.li("FormListItem", a.a)
+				a = n("./src/reddit/components/StructuredStyles/StyledComponents/forms.m.less"),
+				r = n.n(a);
+			const o = s.a.section("FormPage", r.a),
+				d = s.a.h1("HomePageTitle", r.a),
+				i = s.a.button("HomePageBreadcrumb", r.a),
+				l = s.a.div("HomePageGroup", r.a),
+				c = s.a.h1("FormPageTitle", r.a),
+				u = s.a.div("FormPageSection", r.a),
+				m = s.a.div("FormGroup", r.a),
+				p = s.a.h2("FormGroupTitle", r.a),
+				b = s.a.div("FormElement", r.a),
+				h = s.a.div("FormGroupDescription", r.a),
+				f = s.a.div("FormItem", r.a),
+				g = s.a.h3("FormElementTitle", r.a),
+				x = s.a.div("FormElementDescription", r.a),
+				_ = s.a.div("FormElementError", r.a),
+				C = s.a.div("FormElementSubGroup", r.a),
+				y = s.a.li("FormListItem", r.a)
 		},
 		"./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less": function(e, t, n) {
 			e.exports = {
@@ -971,153 +971,35 @@
 			})), n.d(t, "f", (function() {
 				return p
 			})), n.d(t, "e", (function() {
-				return h
-			})), n.d(t, "a", (function() {
 				return b
+			})), n.d(t, "a", (function() {
+				return h
 			})), n.d(t, "b", (function() {
 				return f
 			})), n.d(t, "i", (function() {
-				return x
-			})), n.d(t, "h", (function() {
 				return g
+			})), n.d(t, "h", (function() {
+				return x
 			})), n.d(t, "g", (function() {
 				return _
 			}));
 			var s = n("./src/lib/lessComponent.tsx"),
-				r = n("./src/reddit/controls/Input/ModalInput.tsx"),
-				a = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
+				a = n("./src/reddit/controls/Input/ModalInput.tsx"),
+				r = n("./src/reddit/icons/svgs/Checkbox/index.tsx"),
 				o = n("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"),
 				d = n("./src/reddit/icons/svgs/RadioOff/index.tsx"),
 				i = n("./src/reddit/icons/svgs/RadioOn/index.tsx"),
 				l = n("./src/reddit/components/StructuredStyles/StyledComponents/inputs.m.less"),
 				c = n.n(l);
-			const u = s.a.wrapped(r.a, "ModalInput", c.a),
+			const u = s.a.wrapped(a.a, "ModalInput", c.a),
 				m = s.a.input("Input", c.a),
 				p = s.a.wrapped(i.a, "RadioOn", c.a),
-				h = s.a.wrapped(d.a, "RadioOff", c.a),
-				b = s.a.wrapped(a.a, "Checkbox", c.a),
+				b = s.a.wrapped(d.a, "RadioOff", c.a),
+				h = s.a.wrapped(r.a, "Checkbox", c.a),
 				f = s.a.wrapped(o.a, "CheckboxSelected", c.a),
-				x = s.a.textarea("Textarea", c.a),
-				g = s.a.label("StyledLabel", c.a),
+				g = s.a.textarea("Textarea", c.a),
+				x = s.a.label("StyledLabel", c.a),
 				_ = s.a.input("StyledFileInput", c.a)
-		},
-		"./src/reddit/controls/Dropdown/Row.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return x
-			}));
-			var s = n("./node_modules/lodash/throttle.js"),
-				r = n.n(s),
-				a = n("./node_modules/react/index.js"),
-				o = n.n(a),
-				d = n("./src/lib/classNames/index.ts"),
-				i = n("./src/reddit/controls/UnstyledInternalLink/index.tsx"),
-				l = n("./src/reddit/icons/fonts/DropdownTriangle/index.tsx"),
-				c = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
-				u = n("./src/reddit/layout/row/InlineButton/index.tsx"),
-				m = n("./src/reddit/controls/Dropdown/index.m.less"),
-				p = n.n(m),
-				h = n("./src/reddit/controls/Dropdown/row.m.less"),
-				b = n.n(h);
-
-			function f() {
-				return (f = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			class x extends o.a.Component {
-				constructor() {
-					super(...arguments), this.handleMouseMove = r()(() => {
-						const {
-							props: e
-						} = this;
-						e.handleActivateRow && e.handleActivateRow(e.index)
-					}, 500)
-				}
-				render() {
-					const {
-						props: e
-					} = this, t = e.skipRoleAttr ? null : {
-						role: "menuitem"
-					}, n = Object(d.a)(b.a.iconWrapper, e.iconWrapperClassName);
-					return e.href ? o.a.createElement(i.a, f({}, t, {
-						id: e.id,
-						className: e.className,
-						onBlur: e.onBlur,
-						onClick: e.onClick,
-						onMouseDown: e.onMouseDown,
-						onMouseMove: this.handleMouseMove,
-						onKeyDown: e.onKeydown,
-						rel: e.rel,
-						to: e.href,
-						disabled: e.disabled
-					}), e.children && o.a.createElement("span", {
-						className: n
-					}, e.children), o.a.createElement("span", {
-						className: Object(d.a)(b.a.text, e.textClassName)
-					}, e.displayText)) : o.a.createElement(u.a, f({}, t, {
-						id: e.id,
-						className: e.className,
-						disabled: e.disabled,
-						onBlur: e.onBlur,
-						onClick: e.onClick,
-						onKeyDown: e.onKeydown,
-						onMouseDown: e.onMouseDown,
-						onMouseMove: r()(this.handleMouseMove, 500)
-					}), e.children && (e.noIcon ? o.a.createElement("div", null, e.children) : o.a.createElement("span", {
-						className: n
-					}, e.children)), e.displayText && o.a.createElement("span", {
-						className: Object(d.a)(b.a.text, e.textClassName)
-					}, e.displayText), e.showSelectedCheckmark && e.isSelected && o.a.createElement(c.a, {
-						className: b.a.checkmark
-					}), e.showDropdownTriangle && o.a.createElement(l.a, {
-						className: p.a.dropdownTriangle
-					}))
-				}
-			}
-			t.b = e => {
-				let {
-					className: t,
-					...n
-				} = e;
-				const s = Object(d.a)(b.a.row, t, {
-					[b.a.mIsInteractive]: !n.noHover,
-					[b.a.mIsSelected]: n.isSelected,
-					[b.a.topics]: n.isTopicsStyle
-				});
-				return o.a.createElement(x, f({
-					className: s
-				}, n))
-			}
-		},
-		"./src/reddit/controls/Dropdown/row.m.less": function(e, t, n) {
-			e.exports = {
-				iconWrapper: "pthKOcceozMuXLYrLlbL1",
-				text: "_2-cXnP74241WI7fpcpfPmg",
-				row: "_3LwUIE7yX7CZQKmD2L87vf",
-				topics: "kR_ljR-F8vtc-ORj1uipB",
-				checkmark: "_3Iua3qlR9JiTwjjk6NKye1",
-				modNotes: "sK8_uuNiAqPNlw-HoD2HG",
-				mIsSelected: "_1IKtbRloF_LV1hPqMzP3MC",
-				mIsInteractive: "_1oYEKCssGFjqxQ9jJMNj5G"
-			}
-		},
-		"./src/reddit/controls/UnstyledInternalLink/index.m.less": function(e, t, n) {
-			e.exports = {
-				unstyledInternalLink: "_39Glgtoolpdt4PIzcnjPSW"
-			}
-		},
-		"./src/reddit/controls/UnstyledInternalLink/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./src/lib/lessComponent.tsx"),
-				r = n("./src/reddit/controls/InternalLink/index.tsx"),
-				a = n("./src/reddit/controls/UnstyledInternalLink/index.m.less"),
-				o = n.n(a);
-			t.a = s.a.wrapped(r.a, "unstyledInternalLink", o.a)
 		},
 		"./src/reddit/helpers/isValidUsername/index.tsx": function(e, t, n) {
 			"use strict";
@@ -1127,82 +1009,16 @@
 				return t.length > 2 && t.length <= 20
 			}
 		},
-		"./src/reddit/icons/fonts/DropdownTriangle/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				a = n("./src/reddit/icons/fonts/helpers.tsx");
-			t.a = e => r.a.createElement("i", {
-				className: `${Object(a.b)("caret_down",e.isFilled)} ${e.className}`
-			})
-		},
-		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, n) {
-			"use strict";
-			var s = n("./node_modules/react/index.js"),
-				r = n.n(s);
-			t.a = e => r.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 22",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, r.a.createElement("g", null, r.a.createElement("path", {
-				d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z",
-				fill: "inherit"
-			})))
-		},
-		"./src/reddit/icons/svgs/Dropdown/index.m.less": function(e, t, n) {
-			e.exports = {
-				dropdown: "XHbKeEqnW58ib9mTN6jnS",
-				mRedditStyle: "u_kypUXmB-k1A5TcC8MI9"
-			}
-		},
-		"./src/reddit/icons/svgs/Dropdown/index.tsx": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return l
-			}));
-			var s = n("./node_modules/react/index.js"),
-				r = n.n(s),
-				a = n("./src/lib/classNames/index.ts"),
-				o = n("./src/reddit/icons/svgs/Dropdown/index.m.less"),
-				d = n.n(o);
-
-			function i() {
-				return (i = Object.assign || function(e) {
-					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
-					}
-					return e
-				}).apply(this, arguments)
-			}
-			const l = e => {
-				let {
-					className: t,
-					isSubreddit: n,
-					...s
-				} = e;
-				return r.a.createElement("svg", i({
-					className: Object(a.a)(d.a.dropdown, {
-						[d.a.mRedditStyle]: !n
-					}, t),
-					viewBox: "0 0 20 20",
-					xmlns: "http://www.w3.org/2000/svg"
-				}, s), r.a.createElement("path", {
-					d: "M14.17,9.35,10,13.53,5.83,9.35a.5.5,0,0,1,.35-.85h7.64a.5.5,0,0,1,.35.85"
-				}))
-			};
-			t.b = l
-		},
 		"./src/reddit/icons/svgs/Unban/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
-				r = n.n(s);
-			t.a = e => r.a.createElement("svg", {
+				a = n.n(s);
+			t.a = e => a.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 16 16",
 				version: "1.1",
 				xmlns: "http://www.w3.org/2000/svg"
-			}, r.a.createElement("g", null, r.a.createElement("path", {
+			}, a.a.createElement("g", null, a.a.createElement("path", {
 				d: "M8,6.77247619 L8,6.27380952 L7.5072,6.27380952 L8,6.77247619 Z M7,5.76057143 L7,0.80952381 L11,0.80952381 L11,6.27380952 L10,6.27380952 L10,8.79628571 L15.9072,14.7738095 L15.2,15.4894286 L1,1.12038095 L1.7072,0.404761905 L3,1.71295238 L3,1.00178571 C3,0.44847619 3.4432,0 3.99,0 L4.01,0 C4.5568,0 5,0.44847619 5,1.00178571 L5,3.7367619 L5.8,4.54628571 L5.8,0.80952381 C5.8,0.585690476 5.9792,0.404761905 6.2,0.404761905 C6.4208,0.404761905 6.6,0.585690476 6.6,0.80952381 L6.6,5.35580952 L7,5.76057143 Z M8.2,8.9047619 L10.2,10.9285714 L10.2,14.2706905 C10.2,14.824 9.7568,15.2724762 9.21,15.2724762 L9.19,15.2724762 C8.6432,15.2724762 8.2,14.824 8.2,14.2706905 L8.2,8.9047619 Z M5.8,6.47619048 L6.284,6.96595238 C6.2568,6.97161905 6.2288,6.97485714 6.2,6.97485714 C5.9792,6.97485714 5.8,6.79392857 5.8,6.57009524 L5.8,6.47619048 Z M12.2,0.404761905 C12.4208,0.404761905 12.6,0.586095238 12.6,0.80952381 L12.6,6.67857143 C12.6,6.902 12.4208,7.08333333 12.2,7.08333333 C11.9792,7.08333333 11.8,6.902 11.8,6.67857143 L11.8,0.80952381 C11.8,0.586095238 11.9792,0.404761905 12.2,0.404761905 Z M14.01,0 C14.5568,0 15,0.44847619 15,1.00178571 L15,6.08154762 C15,6.63485714 14.5568,7.08333333 14.01,7.08333333 L13.99,7.08333333 C13.4432,7.08333333 13,6.63485714 13,6.08154762 L13,1.00178571 C13,0.44847619 13.4432,0 13.99,0 L14.01,0 Z M3,4.04761905 L5,6.07142857 L5,6.37783333 C5,6.93114286 4.5568,7.37961905 4.01,7.37961905 L3.99,7.37961905 C3.4432,7.37961905 3,6.93114286 3,6.37783333 L3,4.04761905 Z"
 			})))
 		},
@@ -1214,9 +1030,9 @@
 		"./src/reddit/layout/row/RightAlign/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./src/lib/lessComponent.tsx"),
-				r = n("./src/reddit/layout/row/RightAlign/index.m.less"),
-				a = n.n(r);
-			t.a = s.a.div("rightAligned", a.a)
+				a = n("./src/reddit/layout/row/RightAlign/index.m.less"),
+				r = n.n(a);
+			t.a = s.a.div("rightAligned", r.a)
 		},
 		"./src/reddit/selectors/apiRequestState.ts": function(e, t, n) {
 			"use strict";
@@ -1227,4 +1043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.d6ad2c1d4ccb12f8eed9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.8d9aab86c490216da29f.js.map

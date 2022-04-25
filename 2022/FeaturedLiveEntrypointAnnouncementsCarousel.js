@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.209f24c67c9e8ed2b728.js
-// Retrieved at 4/25/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.b91e6376ff8325e27304.js
+// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FeaturedLiveEntrypointAnnouncementsCarousel"], {
 		"./src/reddit/components/FeaturedLiveEntrypoint/AnnouncementsCarousel/index.m.less": function(e, n, t) {
@@ -105,7 +105,7 @@
 				g = (e, n) => t => {
 					if (t.experimentName) {
 						const n = e[t.experimentName.toLowerCase()];
-						if (n && Object(p.Kf)(n.variant)) return !1
+						if (n && Object(p.Lf)(n.variant)) return !1
 					}
 					return !((n[t.id] || 0) >= t.maxImpressionsCount)
 				};
@@ -220,7 +220,7 @@
 					activeIndex: h,
 					visibleAnnouncements: r,
 					setActiveIndex: N
-				}), k = (e => {
+				}), L = (e => {
 					let {
 						setIsHidden: n,
 						visibleAnnouncements: t
@@ -238,7 +238,7 @@
 				})({
 					visibleAnnouncements: r,
 					setIsHidden: m
-				}), L = (e => {
+				}), k = (e => {
 					let {
 						activeIndex: n,
 						setActiveIndex: t,
@@ -281,7 +281,7 @@
 					hk: "1R94KF"
 				})), o.a.createElement("button", {
 					className: w.a.CloseBtn,
-					onClick: k
+					onClick: L
 				}, o.a.createElement(l.a, {
 					name: "close"
 				})), o.a.createElement("div", {
@@ -307,7 +307,7 @@
 					}),
 					isActive: n === h,
 					key: e.id,
-					onClick: L
+					onClick: k
 				}))), r.length > 1 ? o.a.createElement("button", {
 					className: w.a.RightArrow,
 					onClick: I("next")
@@ -330,4 +330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.209f24c67c9e8ed2b728.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FeaturedLiveEntrypointAnnouncementsCarousel.b91e6376ff8325e27304.js.map

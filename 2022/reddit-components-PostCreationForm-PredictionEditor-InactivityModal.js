@@ -1,119 +1,73 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-InactivityModal.a60e93ab90ac2c627607.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-InactivityModal.48433ee0bec18632bd07.js
+// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-PostCreationForm-PredictionEditor-InactivityModal"], {
-		"./src/reddit/components/ConfirmUserActionModal/index.m.less": function(e, t, n) {
-			e.exports = {
-				buttonWidth: "ogOEj4x-0BpDZWeccJwxx",
-				ModalText: "_2YxEi97B6Nm7NCgLG6pCud",
-				modalText: "_2YxEi97B6Nm7NCgLG6pCud"
-			}
-		},
-		"./src/reddit/components/ConfirmUserActionModal/index.tsx": function(e, t, n) {
-			"use strict";
-			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
-				o = n("./node_modules/react/index.js"),
-				r = n.n(o),
-				d = n("./src/higherOrderComponents/asModal/index.tsx"),
-				l = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				s = n("./src/reddit/controls/TextButton/index.tsx"),
-				i = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				c = n("./src/reddit/components/ConfirmUserActionModal/index.m.less"),
-				m = n.n(c);
-			const u = e => e.preventDefault();
-			t.a = Object(d.a)(e => r.a.createElement(l.e, null, r.a.createElement(l.i, null, r.a.createElement(i.a, null, r.a.createElement(l.q, null, e.headerText || a.fbt._("Confirm", null, {
-				hk: "2zlvKa"
-			})), r.a.createElement(s.a, {
-				onClick: () => {
-					e.onClose && e.onClose(), e.toggleModal && e.toggleModal()
-				}
-			}, r.a.createElement(l.b, null)))), r.a.createElement(l.l, null, r.a.createElement(l.p, {
-				className: m.a.ModalText
-			}, e.modalText)), r.a.createElement(l.g, null, !e.hideCancelButton && r.a.createElement(l.a, {
-				className: m.a.buttonWidth,
-				onMouseDown: u,
-				onClick: () => {
-					e.onCancel && e.onCancel(), e.toggleModal && e.toggleModal()
-				},
-				"data-redditstyle": !e.disableRedditStyle
-			}, e.cancelActionText || a.fbt._("Cancel", null, {
-				hk: "2TSLl5"
-			})), r.a.createElement(l.u, {
-				className: m.a.buttonWidth,
-				onMouseDown: u,
-				onClick: t => {
-					e.onConfirm(), e.toggleModal && e.toggleModal(), e.trackClick && e.trackClick()
-				},
-				"data-redditstyle": !e.disableRedditStyle,
-				disabled: e.isDisabled
-			}, e.actionText))))
-		},
-		"./src/reddit/components/PostCreationForm/PredictionEditor/InactivityModal/index.m.less": function(e, t, n) {
-			e.exports = {
+		"./src/reddit/components/PostCreationForm/PredictionEditor/InactivityModal/index.m.less": function(t, e, n) {
+			t.exports = {
 				tournament: "_3ZYK0pm2T2bF8Rxu2aYyZt",
 				tip: "_1qlJd_5bgnJSvInXXA_rQy"
 			}
 		},
-		"./src/reddit/components/PostCreationForm/PredictionEditor/InactivityModal/index.tsx": function(e, t, n) {
+		"./src/reddit/components/PostCreationForm/PredictionEditor/InactivityModal/index.tsx": function(t, e, n) {
 			"use strict";
-			n.r(t);
+			n.r(e);
 			var a = n("./node_modules/fbt/lib/FbtPublic.js"),
-				o = n("./node_modules/react/index.js"),
-				r = n.n(o),
+				r = n("./node_modules/react/index.js"),
+				o = n.n(r),
 				d = n("./node_modules/react-redux/es/index.js"),
-				l = n("./src/reddit/actions/economics/predictions/index.ts"),
+				i = n("./src/reddit/actions/economics/predictions/index.ts"),
 				s = n("./src/reddit/actions/modal.ts"),
-				i = n("./src/reddit/actions/toaster.ts"),
-				c = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+				c = n("./src/reddit/actions/toaster.ts"),
+				l = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				m = n("./src/reddit/constants/modals.ts"),
 				u = n("./src/reddit/models/Toast/index.ts"),
-				x = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
+				_ = n("./src/reddit/selectors/features/predictions/tournaments/index.ts"),
 				b = n("./src/reddit/selectors/platform.ts"),
 				p = n("./src/reddit/components/PostCreationForm/PredictionEditor/InactivityModal/index.m.less"),
-				C = n.n(p);
+				f = n.n(p);
 
-			function _(e) {
-				return r.a.createElement(r.a.Fragment, null, r.a.createElement("h3", null, a.fbt._("The {tournament name} is in progress but hasn’t been updated in 10 days. Do you want to end this tournament and start a new one?", [a.fbt._param("tournament name", r.a.createElement("span", {
-					className: C.a.tournament
-				}, e, " Tournament"))], {
+			function x(t) {
+				return o.a.createElement(o.a.Fragment, null, o.a.createElement("h3", null, a.fbt._("The {tournament name} is in progress but hasn’t been updated in 10 days. Do you want to end this tournament and start a new one?", [a.fbt._param("tournament name", o.a.createElement("span", {
+					className: f.a.tournament
+				}, t, " Tournament"))], {
 					hk: "1kPnhy"
-				})), r.a.createElement("br", null), r.a.createElement("p", null, a.fbt._("{tip} Ending the current tournament will announce the winners and let redditors who lost their tokens play again!", [a.fbt._param("tip", r.a.createElement("span", {
-					className: C.a.tip
+				})), o.a.createElement("br", null), o.a.createElement("p", null, a.fbt._("{tip} Ending the current tournament will announce the winners and let redditors who lost their tokens play again!", [a.fbt._param("tip", o.a.createElement("span", {
+					className: f.a.tip
 				}, "TIP:"))], {
 					hk: "1H5AGa"
 				})))
 			}
-			t.default = () => {
-				const e = Object(d.d)(),
-					t = Object(d.e)(b.c) || "",
-					n = Object(d.e)(e => Object(x.b)(e, {
-						subredditId: t
+			e.default = () => {
+				const t = Object(d.d)(),
+					e = Object(d.e)(b.c) || "",
+					n = Object(d.e)(t => Object(_.b)(t, {
+						subredditId: e
 					}));
 				if (!n) return null;
-				const o = () => e(Object(s.g)(m.a.ECON_PREDICTIONS_INACTIVITY_MODAL));
-				return r.a.createElement(c.a, {
+				const r = () => t(Object(s.g)(m.a.ECON_PREDICTIONS_INACTIVITY_MODAL));
+				return o.a.createElement(l.a, {
 					withOverlay: !0,
 					onConfirm: async () => {
 						try {
-							const t = n.name;
-							await e(Object(l.p)(n.tournamentId)), e(Object(i.f)({
+							const e = n.name;
+							await t(Object(i.p)(n.tournamentId)), t(Object(c.f)({
 								kind: u.b.SuccessMod,
-								text: a.fbt._("{Ended tournament name} ended.", [a.fbt._param("Ended tournament name", t)], {
+								text: a.fbt._("{Ended tournament name} ended.", [a.fbt._param("Ended tournament name", e)], {
 									hk: "1CTweG"
 								})
 							}))
-						} catch (t) {
-							e(Object(i.f)({
+						} catch (e) {
+							t(Object(c.f)({
 								kind: u.b.Error,
 								text: a.fbt._("Failed to end tournament, please try again later", null, {
 									hk: "2huCGU"
 								})
 							}))
 						}
-						o()
+						r()
 					},
-					onCancel: o,
-					onClose: o,
+					onCancel: r,
+					onClose: r,
 					actionText: a.fbt._("Start A New Tournament", null, {
 						hk: "31Hdu7"
 					}),
@@ -123,10 +77,10 @@
 					headerText: a.fbt._("Start a new Tournament?", null, {
 						hk: "4xxGQ4"
 					}),
-					modalText: _(null == n ? void 0 : n.name)
+					modalText: x(null == n ? void 0 : n.name)
 				})
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-InactivityModal.a60e93ab90ac2c627607.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-PostCreationForm-PredictionEditor-InactivityModal.48433ee0bec18632bd07.js.map

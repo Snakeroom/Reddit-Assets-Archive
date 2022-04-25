@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportPage.65eff4ea1dfb8ee4953f.js
-// Retrieved at 4/25/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportPage.e3a54bf4b7b4440b135c.js
+// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportPage"], {
 		"./src/lib/formatPythonString/index.ts": function(e, t, n) {
@@ -903,19 +903,6 @@
 					}
 				}
 		},
-		"./src/reddit/icons/svgs/Checkmark/index.tsx": function(e, t, n) {
-			"use strict";
-			var r = n("./node_modules/react/index.js"),
-				s = n.n(r);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 20 22",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", null, s.a.createElement("path", {
-				d: "M8.9310375,15.1995 C8.70135,15.41825 8.38963125,15.541375 8.0647875,15.541375 C8.052975,15.541375 8.04181875,15.54075 8.03000625,15.54075 C7.69335,15.531375 7.37506875,15.39075 7.15063125,15.151375 L4.0879125,11.88075 C3.637725,11.400125 3.68169375,10.662625 4.18700625,10.23325 C4.6916625,9.805125 5.4660375,9.846375 5.91688125,10.327625 L8.115975,12.676375 L14.8550063,6.25825 C15.3327563,5.802625 16.1091,5.802625 16.5875063,6.25825 C17.0659125,6.71325 17.0659125,7.452625 16.5875063,7.907625 L8.9310375,15.1995 Z",
-				fill: "inherit"
-			})))
-		},
 		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, n) {
 			"use strict";
 			var r = n("./node_modules/react/index.js"),
@@ -1084,8 +1071,8 @@
 				})))),
 				_ = n("./src/reddit/components/ReportPage/FinalPage/index.m.less"),
 				R = n.n(_);
-			const v = c.a.div("OptionHolder", R.a),
-				y = c.a.div("OptionHeader", R.a),
+			const y = c.a.div("OptionHolder", R.a),
+				v = c.a.div("OptionHeader", R.a),
 				S = c.a.div("OptionDescription", R.a),
 				P = c.a.header("Header", m.a),
 				F = c.a.footer("Footer", m.a),
@@ -1095,7 +1082,7 @@
 				N = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/what-report-abuse";
 			class I extends s.a.Component {
 				constructor() {
-					super(...arguments), this.renderAbuseOfReportButtonOption = () => s.a.createElement(v, null, s.a.createElement(y, null, p.fbt._("Turn off free-form reports", null, {
+					super(...arguments), this.renderAbuseOfReportButtonOption = () => s.a.createElement(y, null, s.a.createElement(v, null, p.fbt._("Turn off free-form reports", null, {
 						hk: "2yXM3i"
 					})), s.a.createElement(S, null, p.fbt._("If you are a moderator, you can {=visit the Help Center} to learn how to modify your subreddit's reporting settings to disallow users from submitting free-form reports. We also have automated processes in place to prevent excessive reporting.", [p.fbt._param("=visit the Help Center", s.a.createElement(O, {
 						target: "_blank",
@@ -1127,15 +1114,15 @@
 			}
 			var T = n("./src/reddit/components/AccordionSection/index.tsx"),
 				U = n("./src/reddit/components/ContentPolicy/index.tsx"),
-				L = n("./src/lib/classNames/index.ts"),
-				j = n("./src/reddit/components/StructuredStyles/RadioInput/RadioOptionElement/index.tsx"),
+				j = n("./src/lib/classNames/index.ts"),
+				L = n("./src/reddit/components/StructuredStyles/RadioInput/RadioOptionElement/index.tsx"),
 				D = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				M = n("./src/reddit/components/ReportPage/AdditionalInfoInput/index.m.less"),
 				A = n.n(M);
 			const V = c.a.fieldset("Fieldset", m.a),
 				q = c.a.div("AdditionalInfoCheckboxes", A.a),
 				H = c.a.wrapped(D.a, "AdditionalInfoCheckbox", A.a);
-			class B extends s.a.Component {
+			class G extends s.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						additionalInfo: []
@@ -1161,13 +1148,13 @@
 					})))))
 				}
 			}
-			var G = n("./src/reddit/components/ReportPage/CustomTextInput/index.tsx"),
+			var B = n("./src/reddit/components/ReportPage/CustomTextInput/index.tsx"),
 				K = n("./src/reddit/icons/svgs/Checkmark/index.tsx"),
 				W = n("./src/reddit/components/ReportPage/ReportLabeledControl/index.m.less"),
 				z = n.n(W);
 
-			function Z() {
-				return (Z = Object.assign || function(e) {
+			function X() {
+				return (X = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1175,7 +1162,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const X = c.a.div("icon", z.a),
+			const Z = c.a.div("icon", z.a),
 				Q = (c.a.textarea("textarea", z.a), c.a.span("Invalid", z.a));
 			var Y, J;
 			! function(e) {
@@ -1185,7 +1172,7 @@
 				e[e.GreyFields = 1] = "GreyFields", e[e.WhiteFields = 2] = "WhiteFields"
 			}(J || (J = {}));
 			const $ = e => s.a.createElement("div", {
-					className: Object(L.a)(e.isRequired && z.a.required, e.className, {
+					className: Object(j.a)(e.isRequired && z.a.required, e.className, {
 						[z.a.container]: !e.isTextarea,
 						[z.a.textareaContainer]: !!e.isTextarea,
 						...!!e.isTextarea && {
@@ -1195,14 +1182,14 @@
 						}
 					})
 				}, s.a.createElement("label", {
-					className: Object(L.a)({
+					className: Object(j.a)({
 						[z.a.field]: !e.isTextarea,
 						[z.a.textareaField]: !!e.isTextarea
 					})
 				}, e.children, e.label && s.a.createElement("span", {
 					className: z.a.label
-				}, e.label), !!e.state && s.a.createElement(X, {
-					className: Object(L.a)({
+				}, e.label), !!e.state && s.a.createElement(Z, {
+					className: Object(j.a)({
 						[z.a.mValid]: e.state === Y.Valid,
 						[z.a.mInvalid]: e.state === Y.Invalid
 					})
@@ -1224,8 +1211,8 @@
 						isRequired: a,
 						label: o,
 						state: l
-					}, s.a.createElement("input", Z({}, d, {
-						className: Object(L.a)(z.a.input, z.a.control, {
+					}, s.a.createElement("input", X({}, d, {
+						className: Object(j.a)(z.a.input, z.a.control, {
 							[z.a.hasState]: !!e.state,
 							[z.a.mWhiteField]: e.backgroundColorState === J.WhiteFields
 						}),
@@ -1462,7 +1449,7 @@
 			const {
 				fbt: Re
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			class ve extends s.a.Component {
+			class ye extends s.a.Component {
 				constructor() {
 					super(...arguments), this.handleClickIfChildrenExist = (e, t) => () => {
 						this.props.onUpdateRulesSequence(e, t), this.onChosenRuleCleared()
@@ -1493,7 +1480,7 @@
 					const l = i ? _e.a.open : _e.a.closed,
 						d = o ? _e.a.topLevelSubSection : _e.a.subSection;
 					return s.a.createElement("div", {
-						className: Object(L.a)(l, d, e.className)
+						className: Object(j.a)(l, d, e.className)
 					}, e.depthOfParentRule > 0 ? s.a.createElement("div", {
 						className: _e.a.radioOptionsSectionHeader
 					}, e.parentRule.nextStepHeader || Re._("Select a rule", null, {
@@ -1502,7 +1489,7 @@
 						const r = a === n;
 						return s.a.createElement(s.a.Fragment, {
 							key: t.reasonText || t.reasonTextToShow
-						}, s.a.createElement(j.a, {
+						}, s.a.createElement(L.a, {
 							altColor: !0,
 							value: t.reasonText ? t.reasonText : "",
 							label: t.reasonTextToShow,
@@ -1537,16 +1524,16 @@
 							reportError: e.reportError,
 							showErrors: e.showErrors,
 							description: t.thingInputDescription
-						}), r && t.additionalCheckboxes && t.additionalCheckboxes.checkboxes && t.additionalCheckboxes.checkboxes.length && s.a.createElement(B, {
+						}), r && t.additionalCheckboxes && t.additionalCheckboxes.checkboxes && t.additionalCheckboxes.checkboxes.length && s.a.createElement(G, {
 							additionalCheckboxes: t.additionalCheckboxes,
 							depth: e.depthOfParentRule + 1,
 							onAdditionalInfoChange: this.onFieldChange("additionalInfo")
-						}), r && t.canWriteNotes && s.a.createElement(G.a, {
+						}), r && t.canWriteNotes && s.a.createElement(B.a, {
 							depth: e.depthOfParentRule + 1,
 							onCustomTextChange: this.onFieldChange("customText"),
 							title: t.notesInputTitle,
 							description: t.notesInputDescription
-						}), s.a.createElement(ve, {
+						}), s.a.createElement(ye, {
 							chosenReasonPayload: e.chosenReasonPayload,
 							depthOfParentRule: e.depthOfParentRule + 1,
 							dirtyFields: e.dirtyFields,
@@ -1566,13 +1553,13 @@
 					}))
 				}
 			}
-			var ye = c.a.wrapped(ve, "Component", _e.a);
+			var ve = c.a.wrapped(ye, "Component", _e.a);
 			class Se extends s.a.Component {
 				render() {
 					const {
 						props: e
 					} = this;
-					return s.a.createElement(ye, {
+					return s.a.createElement(ve, {
 						chosenReasonPayload: e.chosenReasonPayload,
 						depthOfParentRule: 0,
 						dirtyFields: e.dirtyFields,
@@ -1600,10 +1587,10 @@
 			const Ie = c.a.header("Header", m.a),
 				Te = c.a.wrapped(ke.a, "Footer", Ne.a),
 				Ue = c.a.wrapped(Pe.l, "SubmitButton", Ne.a),
-				Le = Object(o.c)({
+				je = Object(o.c)({
 					initialReason: e => e.reportPage.initialReason
 				});
-			class je extends s.a.Component {
+			class Le extends s.a.Component {
 				constructor(e) {
 					super(e), this.onSubmit = () => {
 						this.setState({
@@ -1689,23 +1676,23 @@
 					}))
 				}
 			}
-			var De = Object(a.b)(Le)(je),
+			var De = Object(a.b)(je)(Le),
 				Me = n("./src/reddit/contexts/ApiContext.tsx"),
 				Ae = n("./src/reddit/endpoints/accounts/index.ts"),
 				Ve = n("./src/reddit/endpoints/post/report.ts"),
 				qe = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts"),
 				He = n("./src/reddit/selectors/experiments/crisisTextLine.ts"),
-				Be = n("./src/reddit/selectors/user.ts"),
-				Ge = n("./src/reddit/pages/ReportPage/index.m.less"),
-				Ke = n.n(Ge);
+				Ge = n("./src/reddit/selectors/user.ts"),
+				Be = n("./src/reddit/pages/ReportPage/index.m.less"),
+				Ke = n.n(Be);
 			const {
 				fbt: We
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), ze = Object(o.c)({
-				currentUser: Be.l,
+				currentUser: Ge.l,
 				reportPageRules: e => e.reportPage.reportPageRules,
 				crisisFlowEnabled: He.b
-			}), Ze = Object(a.b)(ze);
-			class Xe extends s.a.Component {
+			}), Xe = Object(a.b)(ze);
+			class Ze extends s.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						dirtyFields: {},
@@ -1903,7 +1890,7 @@
 					})
 				}
 			}
-			t.default = Object(Me.b)(Ze(Xe))
+			t.default = Object(Me.b)(Xe(Ze))
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, n) {
 			"use strict";
@@ -1929,4 +1916,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.65eff4ea1dfb8ee4953f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportPage.e3a54bf4b7b4440b135c.js.map

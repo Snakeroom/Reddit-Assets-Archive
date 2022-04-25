@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SignupUpsell.70b7321afb571ccd7c8b.js
-// Retrieved at 4/25/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SignupUpsell.8f0a90ab5c2b1c196744.js
+// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SignupUpsell"], {
 		"./src/reddit/components/Upsell/SSOButton/index.m.less": function(e, t, s) {
@@ -107,8 +107,8 @@
 				});
 			var E = s("./src/reddit/hooks/promo/useIsSignupUpsellVariantEligible.ts"),
 				O = s("./src/reddit/icons/svgs/AppleLogo/index.tsx"),
-				N = s("./src/reddit/icons/svgs/Close/index.tsx"),
-				B = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
+				B = s("./src/reddit/icons/svgs/Close/index.tsx"),
+				N = s("./src/reddit/icons/svgs/GoogleLogo/index.tsx"),
 				w = s("./src/reddit/selectors/experiments/signupUpsellExperiment.ts"),
 				L = s("./src/reddit/components/Upsell/SignupUpsell/index.m.less"),
 				S = s.n(L);
@@ -117,8 +117,8 @@
 					L: "large"
 				},
 				I = "d2x_geo_upsell_tier_0",
-				y = "d2x_geo_upsell_tier_1",
-				A = "d2x_geo_upsell_tier_2";
+				A = "d2x_geo_upsell_tier_1",
+				U = "d2x_geo_upsell_tier_2";
 			t.default = function(e) {
 				let {
 					onDismiss: t,
@@ -141,18 +141,18 @@
 						const e = Object(o.e)(w.b),
 							t = Object(o.e)(w.d),
 							s = Object(o.e)(w.f),
-							l = Object(E.a)(b.rc.Bottom_sheet),
-							i = Object(E.a)(b.rc.Bottom_cell),
-							c = Object(E.a)(b.rc.Bottom_cell_dismissible),
-							r = Object(E.a)(b.rc.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(E.a)(b.rc.Bottom_cell_signup_upsell_copy),
-							d = Object(E.a)(b.rc.Bottom_cell_surprise_install_copy);
+							l = Object(E.a)(b.sc.Bottom_sheet),
+							i = Object(E.a)(b.sc.Bottom_cell),
+							c = Object(E.a)(b.sc.Bottom_cell_dismissible),
+							r = Object(E.a)(b.sc.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(E.a)(b.sc.Bottom_cell_signup_upsell_copy),
+							d = Object(E.a)(b.sc.Bottom_cell_surprise_install_copy);
 						let p;
 						if (e) p = I;
-						else if (t) p = y;
+						else if (t) p = A;
 						else {
 							if (!s) throw new Error("Not eligible for signup upsell");
-							p = A
+							p = U
 						}
 						const u = `${n.a.assetPath}/img/upsell/appQrCode/${p}/`;
 						if (l) return `${u}bottom_sheet.png`;
@@ -163,9 +163,9 @@
 						if (e && d) return `${u}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					U = Object(E.a)(b.rc.Bottom_cell_signup_upsell_copy),
-					D = Object(E.a)(b.rc.Bottom_cell_surprise_install_copy),
-					H = U ? l.fbt._("Come join us, we have snacks", null, {
+					y = Object(E.a)(b.sc.Bottom_cell_signup_upsell_copy),
+					D = Object(E.a)(b.sc.Bottom_cell_surprise_install_copy),
+					H = y ? l.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : l.fbt._("Log in or sign up for the best experience", null, {
 						hk: "2LAHQy"
@@ -189,14 +189,14 @@
 						t(), u(h())
 					},
 					type: "button"
-				}, i.createElement(N.a, null)), i.createElement("div", {
+				}, i.createElement(B.a, null)), i.createElement("div", {
 					className: S.a.title
 				}, H), i.createElement("div", {
 					className: S.a.bottom
 				}, i.createElement("div", {
 					className: S.a.left
 				}, i.createElement(_, {
-					Icon: B.a,
+					Icon: N.a,
 					onClick: () => {
 						f(), u(j(x.Google))
 					},
@@ -335,20 +335,20 @@
 					experimentName: e,
 					experimentEligibilitySelector: r,
 					throttledVariants: {
-						[l.rc.Bottom_cell_dismissible]: e,
-						[l.rc.Bottom_cell_dismissible_immediate_trigger]: e,
-						[l.rc.Bottom_sheet]: e
+						[l.sc.Bottom_cell_dismissible]: e,
+						[l.sc.Bottom_cell_dismissible_immediate_trigger]: e,
+						[l.sc.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const d = a(l.yb, !0),
-				p = a(l.zb, !0),
-				u = a(l.Ab, !0),
-				m = a(l.yb, !1),
-				_ = a(l.zb, !1),
-				b = a(l.Ab, !1)
+			const d = a(l.zb, !0),
+				p = a(l.Ab, !0),
+				u = a(l.Bb, !0),
+				m = a(l.zb, !1),
+				_ = a(l.Ab, !1),
+				b = a(l.Bb, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.70b7321afb571ccd7c8b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SignupUpsell.8f0a90ab5c2b1c196744.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.51bd80fa5770cc07061e.js
-// Retrieved at 4/25/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.2aeb4f1f4b4c4b085599.js
+// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -285,10 +285,10 @@
 				Z = n("./src/reddit/featureFlags/component.tsx"),
 				H = n("./src/reddit/helpers/localStorage/index.ts"),
 				K = n("./src/reddit/helpers/name/index.ts"),
-				z = n("./src/lib/makeApiRequest/index.ts"),
-				X = n("./src/lib/omitHeaders/index.ts"),
+				X = n("./src/lib/makeApiRequest/index.ts"),
+				z = n("./src/lib/omitHeaders/index.ts"),
 				V = n("./src/reddit/constants/headers.ts");
-			const Y = e => Object(z.a)(Object(X.a)(e, [V.a]), {
+			const Y = e => Object(X.a)(Object(z.a)(e, [V.a]), {
 				endpoint: `${e.apiUrl}/api/multi/user/CommunityAdoptionBot/m/adoption_week/`,
 				method: U.kb.GET,
 				type: "json"
@@ -684,18 +684,18 @@
 			}
 			var Me = n("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(We.c)(e, {
-					experimentName: Ae.Vd,
+					experimentName: Ae.Wd,
 					experimentEligibilitySelector: We.a
 				}), Me.a),
-				Qe = Object(u.a)(Ue, e => e === Ae.Wd.Enabled);
+				Qe = Object(u.a)(Ue, e => e === Ae.Xd.Enabled);
 			var qe = n("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				Je = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				Ze = n("./src/reddit/selectors/user.ts");
 			var He = n("./src/reddit/selectors/seo/linksModule.ts"),
 				Ke = n("./src/reddit/selectors/subreddit.ts"),
-				ze = n("./src/reddit/selectors/subredditLeaderboard.ts");
+				Xe = n("./src/reddit/selectors/subredditLeaderboard.ts");
 			n("./src/reddit/components/TopSubredditsWidget/index.tsx"), n("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx");
-			var Xe = n("./src/reddit/helpers/createBannerProperties/index.ts"),
+			var ze = n("./src/reddit/helpers/createBannerProperties/index.ts"),
 				Ve = n("./src/reddit/selectors/meta.ts");
 			const Ye = "c1020",
 				$e = "videos",
@@ -719,8 +719,8 @@
 						return (!t || !n) && function(e) {
 							return Object(We.c)(e, {
 								experimentEligibilitySelector: Ze.R,
-								experimentName: Ae.oc
-							}) === Ae.sd
+								experimentName: Ae.pc
+							}) === Ae.td
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: l.a,
@@ -798,7 +798,7 @@
 						placement: U.c.ABOVE_THE_FOLD,
 						listingName: a,
 						removeSidebarSpacer: !1,
-						position: Xe.a.FIRST,
+						position: ze.a.FIRST,
 						sizes: U.i,
 						placementIndex: e++
 					}), nt(this.props) && d.a.createElement(E, null), i && d.a.createElement(h.a, null, d.a.createElement(Ie, null)), s && d.a.createElement(h.a, null, d.a.createElement(p.a, {
@@ -809,7 +809,7 @@
 						adComponent: d.a.createElement(A.a, {
 							placement: U.c.BELOW_THE_FOLD,
 							listingName: a,
-							position: Xe.a.BOTTOM,
+							position: ze.a.BOTTOM,
 							sizes: U.p,
 							placementIndex: e++
 						})
@@ -829,7 +829,7 @@
 							},
 							isOnlyModIncluded: !1
 						},
-						n = Object(ze.d)(Ye, $e);
+						n = Object(Xe.d)(Ye, $e);
 					e(Object(b.b)(t, n))
 				},
 				subredditAboutRequested: t => e(Object(m.u)(t))
@@ -2220,4 +2220,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.51bd80fa5770cc07061e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.2aeb4f1f4b4c4b085599.js.map
