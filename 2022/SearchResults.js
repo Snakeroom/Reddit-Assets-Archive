@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.d87b3308308f39dbf019.js
-// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.33d3fd4b90302b12a2b9.js
+// Retrieved at 4/25/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -10031,8 +10031,10 @@
 					ie = Object(w.bb)(r),
 					[ae, ce] = Object(i.useState)(!1),
 					de = Object(l.a)(oe) || null;
-				Object(M.c)(), Object(i.useEffect)(() => (se && (ne ? T.a.set(be || "", se) : Object(S.d)(S.a.SearchResults, se), n(Object(b.c)())), () => {
-					I.a.clear(P.a.SERP)
+				Object(M.c)(), Object(i.useEffect)((function() {
+					return () => {
+						I.a.clear(P.a.SERP)
+					}
 				}), []), Object(i.useEffect)(() => {
 					let e = 0;
 					return e = window.setTimeout(() => n(Object(C.j)()), J), () => {
@@ -10055,8 +10057,9 @@
 					me = s.params.subredditName || le || "",
 					ue = s.params.username,
 					pe = Object(m.e)(o()(oe || {}, k.v), Object(d.uc)(re)),
-					be = Object(m.b)(me, ue, pe),
-					Ce = $ && pe.restrict_sr,
+					be = Object(m.b)(me, ue, pe);
+				se && (ne ? T.a.set(P.a.SERP, be, se) : Object(S.d)(S.a.SearchResults, se), n(Object(b.c)()));
+				const Ce = $ && pe.restrict_sr,
 					he = Object(N.a)(re, pe.type, Ce),
 					xe = {
 						...pe,
@@ -10393,4 +10396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d87b3308308f39dbf019.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.33d3fd4b90302b12a2b9.js.map

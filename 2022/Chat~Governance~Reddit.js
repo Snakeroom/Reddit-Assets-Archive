@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.30a585e67d6a96d22f04.js
-// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3105ba74f781e5c513c4.js
+// Retrieved at 4/25/2022, 1:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("163428"),
+				buildNumber: Object(r.c)("163435"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1650903361"),
+				buildTimestamp: Object(r.b)("1650905581"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6085,14 +6085,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c728f4f168d8377b5e05416df5b05f03198309047-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c4a8db7aba27cda81e500c382f3c515fc391fad92-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "728f4f168d8377b5e05416df5b05f03198309047-production",
+						release: "4a8db7aba27cda81e500c382f3c515fc391fad92-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6701,7 +6701,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "728f4f168d8377b5e05416df5b05f03198309047-production",
+							releaseClient: "4a8db7aba27cda81e500c382f3c515fc391fad92-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -7291,7 +7291,7 @@
 			t.b = function(e, t) {
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
 					n = e || "!";
-				return t && (n = `${n}--[user:${t}]`), void 0 !== i.include_over_18 && (n = `${n}--[include_over_18:${i.include_over_18}]`), i.q && (n = `${n}--[q:${i.q}]`), i.restrict_sr && (n = `${n}--[restrict_sr:${i.restrict_sr}]`), i.sort && (n = `${n}--[sort:${i.sort}]`), i.t && (n = `${n}--[t:${i.t}]`), i.category && (n = `${n}--[c:${i.category}]`), i.type && (n = `${n}--[type:${o(i.type)}]`), n.toLowerCase()
+				return t && (n = `${n}--[user:${t}]`), i.include_over_18 && (n = `${n}--[include_over_18:${i.include_over_18}]`), i.q && (n = `${n}--[q:${i.q}]`), i.restrict_sr && (n = `${n}--[restrict_sr:${i.restrict_sr}]`), i.sort && (n = `${n}--[sort:${i.sort}]`), i.t && (n = `${n}--[t:${i.t}]`), i.category && (n = `${n}--[c:${i.category}]`), i.type && (n = `${n}--[type:${o(i.type)}]`), n.toLowerCase()
 			}
 		},
 		"./src/lib/mapToObject/index.ts": function(e, t, i) {
@@ -10747,26 +10747,26 @@
 						type: B
 					}));
 					const V = await Object(b.a)("searchResults", (function() {
-						const e = i ? [i] : void 0,
-							n = !Object(p.a)(M, "1" === t.include_over_18, U, "1" === t.sr_nsfw),
-							r = (e || s ? t.type.filter(e => [o.dc.Posts, o.dc.Comments].includes(e)) : t.type).join(","),
-							d = {
+						const n = i ? [i] : void 0,
+							r = !Object(p.a)(M, "1" === t.include_over_18, U, "1" === t.sr_nsfw),
+							d = (n || s ? t.type.filter(e => [o.dc.Posts, o.dc.Comments].includes(e)) : t.type).join(","),
+							a = {
 								...t,
 								q: t.q,
-								type: r,
+								type: d,
 								b: !L,
-								include_over_18: n ? "1" : ""
+								include_over_18: r ? "1" : ""
 							},
-							a = Object(I.fb)(C.platform.currentPage);
-						let l;
-						return l = Object(v.a)(C) ? h.a.get(d, f.a.SERP) : Object(m.c)(m.a.SearchResults) || Object(m.e)(m.a.SearchResults), Object(_.a)({
+							l = Object(I.fb)(C.platform.currentPage);
+						let u;
+						return u = Object(v.a)(C) ? h.a.get(f.a.SERP, e) : Object(m.c)(m.a.SearchResults) || Object(m.e)(m.a.SearchResults), Object(_.a)({
 							context: F(),
 							multiredditLabel: s,
-							nsfw: n,
-							options: d,
-							queryId: l,
-							structureType: a,
-							subredditNames: e,
+							nsfw: r,
+							options: a,
+							queryId: u,
+							structureType: l,
+							subredditNames: n,
 							tokens: {
 								authors: null,
 								comments: null,
@@ -13592,7 +13592,7 @@
 						},
 						q = O ? [O] : void 0,
 						W = Object(w.fb)(y.platform.currentPage),
-						K = Object(g.a)(y) ? p.a.get(H, h.a.SERP) : Object(_.c)(_.a.SearchResults),
+						K = Object(g.a)(y) ? p.a.get(h.a.SERP, L) : Object(_.c)(_.a.SearchResults),
 						z = await Object(c.a)({
 							context: d(),
 							multiredditLabel: R,
@@ -25984,35 +25984,34 @@
 		"./src/reddit/helpers/search/searchQueryId.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "a", (function() {
-				return o
+				return s
 			}));
-			var n = i("./src/lib/makeSearchKey/index.ts"),
-				r = i("./node_modules/uuid/v4.js"),
-				s = i.n(r);
-			class o {
+			var n = i("./node_modules/uuid/v4.js"),
+				r = i.n(n);
+			class s {
 				static get(e, t) {
-					const i = o.createKey(e, t);
-					return o.getOrGenerate(i)
+					return s.getOrGenerate(e, t)
 				}
-				static set(e, t) {
-					o.queryIds[e] = t
+				static set(e, t, i) {
+					const n = s.makeSearchQueryIdKey(e, t);
+					s.queryIds[n] = i
 				}
-				static createKey(e, t) {
-					const i = Object(n.e)(e);
-					return `${t}-${Object(n.b)(void 0,void 0,{...i})}`
+				static makeSearchQueryIdKey(e, t) {
+					return `${e}-${t}`
 				}
 				static generate(e) {
-					const t = s()();
-					return o.set(e, t), o.queryIds[e]
+					const t = r()();
+					return s.queryIds[e] = t, s.queryIds[e]
 				}
-				static getOrGenerate(e) {
-					return o.queryIds[e] ? o.queryIds[e] : o.generate(e)
+				static getOrGenerate(e, t) {
+					const i = s.makeSearchQueryIdKey(e, t);
+					return s.queryIds[i] ? s.queryIds[i] : s.generate(i)
 				}
 				static clear(e) {
-					e ? delete o.queryIds[e] : o.queryIds = {}
+					e ? delete s.queryIds[e] : s.queryIds = {}
 				}
 			}
-			o.queryIds = {}
+			s.queryIds = {}
 		},
 		"./src/reddit/helpers/survey/config.json": function(e) {
 			e.exports = JSON.parse('{"surveyCooldownDays":182,"activeSurveys":[{"experimentName":"nps_survey_scroll_trigger","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":2,"sampleFactor":0.5}],"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","followUpQuestion":"What\'s your main reason for feeling that way?"}]},{"experimentName":"d2x_nps_survey_dismiss_post_trigger","triggerEvent":"dismiss_post","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":3,"sampleFactor":0.01}],"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","followUpQuestion":"What is the primary reason for your rating?"}]},{"experimentName":"survey_demo_nps_1","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"NPS","question":"How likely are you to recommend Reddit to a friend?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"survey_demo_combined_1","triggerEvent":"mods_feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","followUpQuestion":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","followUpQuestion":"What is the primary reason for your score with moderation tools on this device?"}]},{"experimentName":"d2x_search_posts_survey","triggerEvent":"search_view_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.1}],"steps":[{"type":"multi_choice","question":"Did you find what you were looking for","question_options":["Yes","No"],"followUpQuestion":"Why or why not?"}]},{"experimentName":"d2x_search_comments_survey","triggerEvent":"search_view_comments_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.05}],"steps":[{"type":"multi_choice","question":"Did you find what you were looking for","question_options":["Yes","No"],"followUpQuestion":"Why or why not?"}]},{"experimentName":"d2x_chat_survey","triggerEvent":"chat_view_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.15}],"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with Reddit\'s chat?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"d2x_mods_survey","triggerEvent":"mods_feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"CSAT","question":"How would you rate your overall satisfaction with moderating on Reddit?","followUpQuestion":"What is the primary reason for your score with moderating on Reddit?"},{"type":"CES","question":"How easy is it to use the Reddit moderation tools available on this device?","followUpQuestion":"What is the primary reason for your score with moderation tools on this device?"}]},{"experimentName":"d2x_nps_survey_dismiss_signup_trigger","triggerEvent":"dismiss_signup_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.3}],"steps":[{"type":"NPS","question":"How likely are you to recommend signing up for Reddit to a friend or colleague?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"d2x_nps_survey_successful_signup_trigger","triggerEvent":"successful_signup_trigger","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":0.75}],"steps":[{"type":"NPS","question":"How likely are you to recommend signing up for Reddit to a friend or colleague?","followUpQuestion":"What is the primary reason for your score?"}]},{"experimentName":"d2x_belonging_survey","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":2,"sampleFactor":0.1}],"steps":[{"type":"multi_choice","question":"Do you feel that Reddit is a place for you?","questionOptions":["Yes","No"],"followUpQuestion":"What makes you feel that way?"},{"type":"multi_choice","question":"Do you feel connected to other people who also use Reddit?","questionOptions":["Yes","No"],"followUpQuestion":"What makes you feel that way?"}]},{"experimentName":"d2x_belonging_survey_demo","triggerEvent":"feed_scroll_1_page","variants":[{"variantName":"enabled","surveyEnabled":true,"triggerThreshold":1,"sampleFactor":1}],"steps":[{"type":"multi_choice","question":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua?","questionOptions":["Lorem ipsum dolor sit consectetur adipis (1)","Lorem ipsum dolor sit consectetur adipis (2)","Lorem ipsum dolor sit consectetur adipis (3)","Lorem ipsum dolor sit consectetur adipis (4)","Lorem ipsum dolor sit consectetur adipis (5)","Lorem ipsum dolor sit consectetur adipis (6)"],"followUpQuestion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua?"}]}]}')
@@ -40906,14 +40905,21 @@
 				};
 
 			function Vt(e, t, i) {
+				var n, r;
 				if (!Object(Re.a)(e)) return Object(L.c)(L.a.SearchResults);
-				const n = i || {
-					q: Object(Ce.v)(e)
-				};
-				return le.a.get({
-					...n,
-					include_over_18: Object(Ce.j)(e) ? "1" : ""
-				}, t)
+				const s = i || {
+						q: Object(Ce.v)(e)
+					},
+					{
+						multiredditName: o,
+						subredditName: d,
+						username: a
+					} = null !== (r = null === (n = Object(ie.b)(e)) || void 0 === n ? void 0 : n.urlParams) && void 0 !== r ? r : {},
+					l = Object(C.b)(null != d ? d : o, a, Object(C.e)({
+						...s,
+						include_over_18: Object(Ce.j)(e) ? "1" : ""
+					}));
+				return le.a.get(t, l)
 			}
 			const Ht = e => ({
 					id: e.name,
@@ -47267,4 +47273,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.30a585e67d6a96d22f04.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.3105ba74f781e5c513c4.js.map
