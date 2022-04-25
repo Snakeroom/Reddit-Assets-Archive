@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.ce382d71979f7af4acc1.js
-// Retrieved at 4/25/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.3af5d1e14cc2d084e8e3.js
+// Retrieved at 4/25/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -141,7 +141,7 @@
 			const j = e => Object(_.c)(e, {
 				experimentName: O.Wb,
 				experimentEligibilitySelector: _.a
-			}) === O.td;
+			}) === O.wd;
 			var x = n("./src/reddit/selectors/meta.ts"),
 				I = n("./src/reddit/selectors/user.ts");
 			let k = !1;
@@ -595,8 +595,8 @@
 				A = n("./src/reddit/helpers/trackers/inbox.ts"),
 				U = n("./src/reddit/pages/NotificationsInbox/Content/EmptyStateViews/EmptyStateComponent.tsx");
 
-			function R() {
-				return (R = Object.assign || function(e) {
+			function D() {
+				return (D = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -604,8 +604,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const H = {},
-				D = "",
+			const R = {},
+				H = "",
 				M = 0,
 				F = "200px",
 				z = "250px",
@@ -618,10 +618,10 @@
 			class Q extends s.a.Component {
 				constructor() {
 					super(...arguments), this.container = s.a.createRef(), this.state = {
-						notificationHeights: H,
+						notificationHeights: R,
 						currentNotificationCursorIndex: -1
 					}, this.resetOverflowMenu = () => {
-						this.props.activeOverflowMenuId.length > M && this.props.setActiveOverflowMenuId(D)
+						this.props.activeOverflowMenuId.length > M && this.props.setActiveOverflowMenuId(H)
 					}, this.getContainerHeight = () => {
 						const {
 							notificationHeights: e
@@ -660,7 +660,7 @@
 								notifications: a
 							} = this.props,
 							o = a.length > n + K;
-						return (r && a.length > 0 && o ? a.slice(0, n + 1) : a).map((n, r) => s.a.createElement(T, R({}, e, {
+						return (r && a.length > 0 && o ? a.slice(0, n + 1) : a).map((n, r) => s.a.createElement(T, D({}, e, {
 							index: r,
 							key: r,
 							notification: n,
@@ -1626,10 +1626,10 @@
 				L = n("./src/reddit/models/NotificationSettingsLayout/index.ts"),
 				A = n("./src/reddit/models/Toast/index.ts"),
 				U = n("./src/reddit/selectors/notificationPrefs.ts"),
-				R = n("./src/reddit/selectors/user.ts");
+				D = n("./src/reddit/selectors/user.ts");
 
-			function H() {
-				return (H = Object.assign || function(e) {
+			function R() {
+				return (R = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1637,7 +1637,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const D = [w.h.PrivateMessage, w.h.ChatMessage, w.h.ChatRequest, w.h.UsernameMention, w.h.PostReply, w.h.UpvotePost, w.h.UpvoteComment, w.h.CommentReply, w.h.ThreadReplies, w.h.TopLevelComment, w.h.NewPostActivity, w.h.UserNewFollower, w.h.PostFlairAdded, w.h.UserFlairAdded, w.h.NewPinnedPost, w.h.AwardReceived, w.h.PostFollow, w.h.TalkLive, w.h.CommentFollow, w.h.LifecyclePostSuggestions, w.h.BroadcastRecommendation, w.h.SubredditRecommendation, w.h.RedditLore, w.h.OneOff, w.h.CakeDay, w.h.ModeratedSrEngagement];
+			const H = [w.h.PrivateMessage, w.h.ChatMessage, w.h.ChatRequest, w.h.UsernameMention, w.h.PostReply, w.h.UpvotePost, w.h.UpvoteComment, w.h.CommentReply, w.h.ThreadReplies, w.h.TopLevelComment, w.h.NewPostActivity, w.h.UserNewFollower, w.h.PostFlairAdded, w.h.UserFlairAdded, w.h.NewPinnedPost, w.h.AwardReceived, w.h.PostFollow, w.h.TalkLive, w.h.CommentFollow, w.h.LifecyclePostSuggestions, w.h.BroadcastRecommendation, w.h.SubredditRecommendation, w.h.RedditLore, w.h.OneOff, w.h.CakeDay, w.h.ModeratedSrEngagement];
 			var M;
 			! function(e) {
 				e[e.TURN_ON_PN = 0] = "TURN_ON_PN", e[e.TURN_ON_PN_APP = 1] = "TURN_ON_PN_APP", e[e.VERIFY_EMAIL = 2] = "VERIFY_EMAIL", e[e.TURN_ON_DAYLY_DIGEST = 3] = "TURN_ON_DAYLY_DIGEST", e[e.DONE = 4] = "DONE"
@@ -1651,17 +1651,17 @@
 						hideTooltip: u
 					} = e;
 					const m = Object(s.d)(),
-						b = Object(s.e)(R.o),
-						f = Object(s.e)(R.E),
+						b = Object(s.e)(D.o),
+						f = Object(s.e)(D.E),
 						y = Object(r.useRef)(b),
 						[O, _] = Object(r.useState)(M.TURN_ON_PN),
 						j = Object(s.e)(e => e.user.accountSettings.changeEmail.api.pending),
 						x = Object(r.useCallback)(() => {
 							m(async (e, t) => {
 								var n, r;
-								let a = Object(R.gb)(t());
+								let a = Object(D.gb)(t());
 								a.allIds.length || await e(Object(S.a)(L.a.Email));
-								const s = null === (r = null === (n = (a = Object(R.gb)(t())).byId) || void 0 === n ? void 0 : n.EMAIL_DIGEST) || void 0 === r ? void 0 : r.isEnabled;
+								const s = null === (r = null === (n = (a = Object(D.gb)(t())).byId) || void 0 === n ? void 0 : n.EMAIL_DIGEST) || void 0 === r ? void 0 : r.isEnabled;
 								_(s ? M.DONE : M.TURN_ON_DAYLY_DIGEST)
 							})
 						}, [m]),
@@ -1671,7 +1671,7 @@
 						k = Object(r.useCallback)(() => {
 							m(async (e, t) => {
 								const n = t();
-								Object(R.ib)(n).allIds.length || await e(Object(S.a)(L.a.Push)), Object(U.c)(t(), D) ? _(M.TURN_ON_PN_APP) : I()
+								Object(D.ib)(n).allIds.length || await e(Object(S.a)(L.a.Push)), Object(U.c)(t(), H) ? _(M.TURN_ON_PN_APP) : I()
 							})
 						}, [m, I]),
 						w = Object(r.useCallback)(() => {
@@ -1733,7 +1733,7 @@
 						hk: "1gwnbO"
 					}) : c.fbt._("Stay in the loop on content from communities you love right on your email inbox.", null, {
 						hk: "1rs4kD"
-					})), a.a.createElement(p.t, H({
+					})), a.a.createElement(p.t, R({
 						className: h.a.emptyStateButton
 					}, q ? z : W, {
 						text: c.fbt._("OK", null, {
@@ -2133,7 +2133,7 @@
 					models: L
 				}),
 				U = n("./src/reddit/actions/grantUserFlair/constants.ts");
-			var R = function() {
+			var D = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -2146,7 +2146,7 @@
 						return e
 				}
 			};
-			var H = function() {
+			var R = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -2159,9 +2159,9 @@
 							return e
 					}
 				},
-				D = Object(r.c)({
-					error: R,
-					pending: H
+				H = Object(r.c)({
+					error: D,
+					pending: R
 				}),
 				M = n("./node_modules/lodash/merge.js"),
 				F = n.n(M),
@@ -2326,7 +2326,7 @@
 					}
 				},
 				te = Object(r.c)({
-					api: D,
+					api: H,
 					models: q,
 					pageInfo: V,
 					search: X,
@@ -2742,9 +2742,9 @@
 						return e
 				}
 			};
-			const Re = {};
-			var He = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Re,
+			const De = {};
+			var Re = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : De,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case a.x: {
@@ -2762,9 +2762,9 @@
 						return e
 				}
 			};
-			const De = {};
+			const He = {};
 			var Me = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : De,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : He,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case a.K: {
@@ -2983,7 +2983,7 @@
 					invitedModerators: Le,
 					invitePending: Ue,
 					loadMoreModerators: Me,
-					loadMoreEditableModerators: He,
+					loadMoreEditableModerators: Re,
 					models: ze,
 					search: Qe,
 					userOrder: rt
@@ -3311,7 +3311,7 @@
 				}
 			};
 			const Ut = {};
-			var Rt = function() {
+			var Dt = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ut,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -3331,12 +3331,12 @@
 							return e
 					}
 				},
-				Ht = Object(r.c)({
+				Rt = Object(r.c)({
 					api: Tt,
 					itemOrder: At,
-					loadMore: Rt
+					loadMore: Dt
 				});
-			var Dt = function() {
+			var Ht = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -3363,7 +3363,7 @@
 					}
 				},
 				Ft = Object(r.c)({
-					error: Dt,
+					error: Ht,
 					pending: Mt
 				});
 			const zt = {};
@@ -3583,7 +3583,7 @@
 					bulkAction: ht,
 					edited: xt,
 					moderatedCommunitiesOrder: Bt,
-					modqueue: Ht,
+					modqueue: Rt,
 					reports: Kt,
 					spam: en,
 					unmoderated: dn
@@ -3910,35 +3910,35 @@
 			const s = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.xb
-				}) === r.Ad.MemesBadge,
+				}) === r.Dd.MemesBadge,
 				o = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.xb
-				}) === r.Ad.MemesNoBadge,
+				}) === r.Dd.MemesNoBadge,
 				i = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.xb
-				}) === r.Ad.PnEmailBadge,
+				}) === r.Dd.PnEmailBadge,
 				c = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.xb
-				}) === r.Ad.PnEmailNoBadge,
+				}) === r.Dd.PnEmailNoBadge,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.xb
-				}) === r.Ad.KarmaBadge,
+				}) === r.Dd.KarmaBadge,
 				l = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.xb
-				}) === r.Ad.KarmaNoBadge,
+				}) === r.Dd.KarmaNoBadge,
 				u = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.xb
-				}) === r.Ad.PopularBadge,
+				}) === r.Dd.PopularBadge,
 				p = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.xb
-				}) === r.Ad.PopularNoBadge,
+				}) === r.Dd.PopularNoBadge,
 				m = e => s(e) || i(e) || l(e) || p(e)
 		},
 		"./src/reddit/selectors/muted.ts": function(e, t, n) {
@@ -4001,4 +4001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.ce382d71979f7af4acc1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.3af5d1e14cc2d084e8e3.js.map

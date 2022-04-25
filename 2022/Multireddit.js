@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.07318f5fba93d6f8694c.js
-// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.802eaf794243559b4fd3.js
+// Retrieved at 4/25/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
@@ -1434,7 +1434,7 @@
 				h = u(i.Yb, !1),
 				x = u(i.ac, !0),
 				E = u(i.ac, !1),
-				_ = Object(o.a)(m, b, (e, t) => e === i.vc.Enabled || t === i.wc.Enabled),
+				_ = Object(o.a)(m, b, (e, t) => e === i.xc.Enabled || t === i.yc.Enabled),
 				T = Object(o.a)(f, x, (e, t) => e === i.kb.BlurredPreview || e === i.kb.NoPreview || t === i.kb.BlurredPreview || t === i.kb.NoPreview),
 				D = Object(o.a)(h, E, (e, t) => e === i.kb.BlurredPreview || t === i.kb.BlurredPreview),
 				C = Object(o.a)(f, x, (e, t) => e === i.kb.NoPreview || t === i.kb.NoPreview),
@@ -1455,4 +1455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.07318f5fba93d6f8694c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.802eaf794243559b4fd3.js.map

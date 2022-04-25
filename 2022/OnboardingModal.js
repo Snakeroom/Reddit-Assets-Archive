@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.aa150e7c152217c30a31.js
-// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.f803074eda37b91ebc1b.js
+// Retrieved at 4/25/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -397,7 +397,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Lf)(p),
+						includeInterestTopics: !!p && !Object(b.Of)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: g && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -586,8 +586,8 @@
 				z = n("./src/reddit/actions/login.ts"),
 				K = n("./src/reddit/actions/meta.ts"),
 				J = n("./src/reddit/actions/platform.ts"),
-				Z = n("./src/reddit/actions/toaster.ts"),
-				X = n("./src/reddit/constants/history.ts"),
+				X = n("./src/reddit/actions/toaster.ts"),
+				Z = n("./src/reddit/constants/history.ts"),
 				Y = n("./src/reddit/constants/page.ts"),
 				$ = n("./src/reddit/constants/parameters.ts"),
 				ee = n("./src/reddit/constants/postLayout.ts"),
@@ -646,15 +646,15 @@
 							meta: u.meta,
 							correlationId: b,
 							...r
-						})), n(Z.g(x)), r.geoFilter && n(Object(K.k)(r.geoFilter)), n(Object(me.b)(be.a.FRONTPAGE));
-						const o = null === (l = null === (d = Object(M.b)(u)) || void 0 === d ? void 0 : d.locationState) || void 0 === l ? void 0 : l[X.b.FeedLoadReason];
-						Object(pe.b)(t.isRefresh ? X.a.UserRefresh : null != o ? o : X.a.InitialLoad)(s())
+						})), n(X.g(x)), r.geoFilter && n(Object(K.k)(r.geoFilter)), n(Object(me.b)(be.a.FRONTPAGE));
+						const o = null === (l = null === (d = Object(M.b)(u)) || void 0 === d ? void 0 : d.locationState) || void 0 === l ? void 0 : l[Z.b.FeedLoadReason];
+						Object(pe.b)(t.isRefresh ? Z.a.UserRefresh : null != o ? o : Z.a.InitialLoad)(s())
 					} else {
 						n(ke({
 							error: g.error,
 							key: e,
 							...g.body
-						})), n(Z.f({
+						})), n(X.f({
 							id: x,
 							kind: se.b.Error,
 							text: r.fbt._("Sorry, we couldn't load posts for this page.", null, {
@@ -779,7 +779,7 @@
 								fetchedToken: p.token,
 								meta: i.meta,
 								...x
-							})), Object(pe.b)(X.a.NextPageLoad)(n());
+							})), Object(pe.b)(Z.a.NextPageLoad)(n());
 							else {
 								t(Pe({
 									key: m,
@@ -1205,8 +1205,8 @@
 				z = n("./src/reddit/icons/svgs/Plus/index.tsx"),
 				K = n("./src/reddit/icons/svgs/Positive/index.tsx"),
 				J = n("./src/reddit/components/TrackEnterExitViewport/index.tsx"),
-				Z = n("./src/reddit/components/Onboarding/CommunityPicker.m.less"),
-				X = n.n(Z);
+				X = n("./src/reddit/components/Onboarding/CommunityPicker.m.less"),
+				Z = n.n(X);
 			const {
 				fbt: Y
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), $ = () => Y._("Recommended for you", null, {
@@ -1232,12 +1232,12 @@
 					s(t.topicId, !m), p(!m)
 				}, [t.topicId, m, s]);
 				return a.a.createElement(a.a.Fragment, null, a.a.createElement("div", {
-					className: X.a.RecommendedHeader
+					className: Z.a.RecommendedHeader
 				}, a.a.createElement("span", {
-					className: X.a.SectionTitle
+					className: Z.a.SectionTitle
 				}, t.topicTitle), a.a.createElement("button", {
 					onClick: b,
-					className: X.a.SelectAllLink
+					className: Z.a.SelectAllLink
 				}, m && Y._("Deselect All", null, {
 					hk: "4u0XYF"
 				}), !m && null !== m && Y._("Select All", null, {
@@ -1320,29 +1320,29 @@
 						m(Object(R.d)(!s, u, i, c)), l(t)
 					}, [t, s, i, c, m, l, u]);
 				return a.a.createElement("div", {
-					className: Object(d.a)(X.a.CommunityRow, {
-						[X.a.Selected]: s
+					className: Object(d.a)(Z.a.CommunityRow, {
+						[Z.a.Selected]: s
 					}),
 					onClick: p
 				}, a.a.createElement("div", {
-					className: X.a.IconSection
+					className: Z.a.IconSection
 				}, r && a.a.createElement("img", {
-					className: X.a.IconWrapper,
+					className: Z.a.IconWrapper,
 					src: r
 				}), !r && a.a.createElement(U.a, {
-					className: X.a.CommunityNoIcon
+					className: Z.a.CommunityNoIcon
 				})), a.a.createElement("div", {
-					className: X.a.TextSection
+					className: Z.a.TextSection
 				}, a.a.createElement("div", {
-					className: X.a.Info
+					className: Z.a.Info
 				}, i), a.a.createElement("div", {
-					className: X.a.Description
+					className: Z.a.Description
 				}, n)), a.a.createElement("div", {
-					className: X.a.ButtonSection
+					className: Z.a.ButtonSection
 				}, s && a.a.createElement(K.a, {
-					className: X.a.SelectedIcon
+					className: Z.a.SelectedIcon
 				}), !s && a.a.createElement(z.a, {
-					className: X.a.SelectIcon
+					className: Z.a.SelectIcon
 				})))
 			}, se = e => {
 				let {
@@ -1350,7 +1350,7 @@
 					text: n
 				} = e;
 				return a.a.createElement("div", {
-					className: X.a.MoreRecommendations
+					className: Z.a.MoreRecommendations
 				}, a.a.createElement("button", {
 					onClick: t
 				}, !n && Y._("More recommendations", null, {
@@ -1376,7 +1376,7 @@
 					}, [u]);
 					const [m, p] = Object(o.useState)(new Set);
 					return a.a.createElement("div", {
-						className: X.a.CommunityListWrapper
+						className: Z.a.CommunityListWrapper
 					}, r.length > 0 && a.a.createElement(ee, {
 						community: {
 							communities: r,
@@ -1721,10 +1721,10 @@
 				ze = n("./src/reddit/selectors/experiments/survey.ts"),
 				Ke = n("./src/reddit/selectors/onboarding.ts"),
 				Je = n("./src/reddit/actions/accountGender/index.ts"),
-				Ze = n("./src/reddit/actions/onboarding/index.ts");
+				Xe = n("./src/reddit/actions/onboarding/index.ts");
 
-			function Xe() {
-				return (Xe = Object.assign || function(e) {
+			function Ze() {
+				return (Ze = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1798,7 +1798,7 @@
 				}, [_, C, t]), Object(o.useEffect)(() => {
 					C && Object(Be.a)(null == O ? void 0 : O.genderCategory, C.success)
 				}, [C, O]);
-				const Z = Object(i.e)(Ue.a) === Oe.lb.Removed;
+				const X = Object(i.e)(Ue.a) === Oe.lb.Removed;
 				Object(o.useEffect)(() => {
 					let e = !1;
 					return async function() {
@@ -1807,7 +1807,7 @@
 							preSelectedCommunities: {},
 							recommendedCommunities: []
 						};
-						Z || (s = await tt(n, t));
+						X || (s = await tt(n, t));
 						const {
 							ok: o,
 							preSelectedCommunities: a,
@@ -1818,10 +1818,10 @@
 						e = !0
 					}
 				}, [n, r, t]);
-				const X = Object(i.e)(e => Object(ze.f)(e)),
+				const Z = Object(i.e)(e => Object(ze.f)(e)),
 					Y = Object(o.useCallback)(() => {
-						r(Object(u.g)(ve.a.ONBOARDING_MODAL_D2X)), X && r(Object(m.g)()), p && (s(Object(R.o)()), Object(Ve.a)())
-					}, [r, p, X, s]),
+						r(Object(u.g)(ve.a.ONBOARDING_MODAL_D2X)), Z && r(Object(m.g)()), p && (s(Object(R.o)()), Object(Ve.a)())
+					}, [r, p, Z, s]),
 					$ = Object(o.useCallback)((function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 3e3;
 						return setTimeout(Y, e)
@@ -1861,7 +1861,7 @@
 				}, [ce, f, oe]);
 				const de = f !== b,
 					le = Object(o.useCallback)(() => {
-						f === ge.INTERESTS ? (r(Object(Ze.resetGenderUpdateState)()), j(!1), h(ge.GENDER)) : f === ge.COMMUNITIES ? h(ge.INTERESTS) : f === ge.AVATAR && h(ge.COMMUNITIES)
+						f === ge.INTERESTS ? (r(Object(Xe.resetGenderUpdateState)()), j(!1), h(ge.GENDER)) : f === ge.COMMUNITIES ? h(ge.INTERESTS) : f === ge.AVATAR && h(ge.COMMUNITIES)
 					}, [f, r]),
 					ue = f === ge.GENDER || f === ge.AVATAR,
 					me = Object(o.useCallback)(() => {
@@ -1957,7 +1957,7 @@
 					hk: "15wNPy"
 				}))))
 			});
-			t.default = Object(Ee.b)(e => a.a.createElement(rt, Xe({}, e, {
+			t.default = Object(Ee.b)(e => a.a.createElement(rt, Ze({}, e, {
 				className: Object(d.a)(e.className, fe.a.modal),
 				onOverlayClick: s.a,
 				overlayClassName: fe.a.overlay
@@ -2397,7 +2397,7 @@
 			})), n.d(t, "k", (function() {
 				return J
 			})), n.d(t, "o", (function() {
-				return X
+				return Z
 			})), n.d(t, "f", (function() {
 				return $
 			})), n.d(t, "l", (function() {
@@ -2531,8 +2531,8 @@
 						})
 					}))
 				},
-				Z = g.a.a("Link", D.a),
-				X = g.a.wrapped(Z, "SubtextLink", D.a),
+				X = g.a.a("Link", D.a),
+				Z = g.a.wrapped(X, "SubtextLink", D.a),
 				Y = g.a.wrapped(T.a, "LinkIcon", D.a),
 				$ = g.a.button("LinkButton", D.a),
 				ee = g.a.wrapped(I.a, "ArrowRight", D.a),
@@ -2638,11 +2638,11 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, s.a.createElement(z, null, s.a.createElement(Z, {
+				}, s.a.createElement(z, null, s.a.createElement(X, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, s.a.createElement(Y, null)), s.a.createElement(Q, null, e.subtext)), s.a.createElement(K, null, s.a.createElement(Z, {
+				}, e.label, s.a.createElement(Y, null)), s.a.createElement(Q, null, e.subtext)), s.a.createElement(K, null, s.a.createElement(X, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
@@ -3806,13 +3806,13 @@
 				const t = (e => {
 						return Object(s.c)(e, {
 							experimentEligibilitySelector: s.a,
-							experimentName: r.ae
-						}) === r.td
+							experimentName: r.de
+						}) === r.wd
 					})(e),
 					n = Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Zd
-					}) === r.td;
+						experimentName: r.ce
+					}) === r.wd;
 				return t && !n
 			}
 		},
@@ -3984,4 +3984,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.aa150e7c152217c30a31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.f803074eda37b91ebc1b.js.map

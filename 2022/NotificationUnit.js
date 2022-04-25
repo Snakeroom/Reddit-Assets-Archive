@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.5d56598de8b7fecd86fc.js
-// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.e63f3efd8e42955faef4.js
+// Retrieved at 4/25/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -443,7 +443,7 @@
 				h = "",
 				y = .5,
 				S = e => {
-					var t, i, n, s, C, S, U, k, M, j, R, L;
+					var t, i, n, s, C, S, U, k, M, j, L, R;
 					const P = Object(x.a)(),
 						D = Object(v.d)(),
 						V = Object(v.e)(T.eb),
@@ -489,9 +489,9 @@
 						isViewed: !0,
 						type: fe
 					}, Se = oe.messageType === N.a.AwardReceived, Ue = fe === N.a.LifecyclePostSuggestions, ke = Se ? null === (C = null == oe ? void 0 : oe.awarding) || void 0 === C ? void 0 : C.id : "", Me = null === (U = null === (S = null == oe ? void 0 : oe.awarding) || void 0 === S ? void 0 : S.target) || void 0 === U ? void 0 : U.permalink, je = null === (M = null === (k = null == oe ? void 0 : oe.awarding) || void 0 === k ? void 0 : k.award) || void 0 === M ? void 0 : M.id;
-					let Re = (null === (j = null == oe ? void 0 : oe.post) || void 0 === j ? void 0 : j.permalink) || ae;
-					Se && Me ? Re = Me : Ue && ae && (Re = ae);
-					const Le = null === (L = null === (R = null == oe ? void 0 : oe.awarding) || void 0 === R ? void 0 : R.awarder) || void 0 === L ? void 0 : L.isAcceptingChats,
+					let Le = (null === (j = null == oe ? void 0 : oe.post) || void 0 === j ? void 0 : j.permalink) || ae;
+					Se && Me ? Le = Me : Ue && ae && (Le = ae);
+					const Re = null === (R = null === (L = null == oe ? void 0 : oe.awarding) || void 0 === L ? void 0 : L.awarder) || void 0 === R ? void 0 : R.isAcceptingChats,
 						Pe = e => {
 							P(Object(f.m)({
 								...ye,
@@ -547,7 +547,7 @@
 							className: Object(d.a)(A.a.body, {
 								[A.a.inAppNotification]: Q
 							})
-						}, ne), !X && (Le || he || Se || Ae || z && Q) && c.a.createElement(w, {
+						}, ne), !X && (Re || he || Se || Ae || z && Q) && c.a.createElement(w, {
 							context: oe,
 							notificationId: ue,
 							isUnread: ge,
@@ -558,7 +558,7 @@
 							isInboxCTAsV2All2Enabled: K,
 							isInboxCTAsV2ReplyPcEnabled: W,
 							isInboxCTAsV2SeePostEnabled: F,
-							deeplinkUrl: Re,
+							deeplinkUrl: Le,
 							isNightMode: V,
 							isInAppNotification: Q
 						})), Q && (null == oe ? void 0 : oe.post) ? c.a.createElement(p.b, {
@@ -589,7 +589,7 @@
 					return c.a.createElement(c.a.Fragment, null, c.a.createElement("li", {
 						className: we
 					}, c.a.createElement(m.a, _({}, Be, {
-						to: Re
+						to: Le
 					}), Fe)), Q ? null : c.a.createElement(u.a, {
 						decreaseSubUpdates: () => {
 							const t = f.e.DecreaseSubredditUpdates;
@@ -1318,12 +1318,12 @@
 					experimentName: o.Ib,
 					experimentEligibilitySelector: c
 				}), s.a),
-				l = Object(n.a)(d, e => e === o.Rd.SeePostCTAs),
-				u = Object(n.a)(d, e => e === o.Rd.ReplyCTAs),
-				p = Object(n.a)(d, e => e === o.Rd.AllCTAs1),
-				b = Object(n.a)(d, e => e === o.Rd.AllCTAs2),
-				m = Object(n.a)(d, e => e === o.Rd.ReplyPc)
+				l = Object(n.a)(d, e => e === o.Ud.SeePostCTAs),
+				u = Object(n.a)(d, e => e === o.Ud.ReplyCTAs),
+				p = Object(n.a)(d, e => e === o.Ud.AllCTAs1),
+				b = Object(n.a)(d, e => e === o.Ud.AllCTAs2),
+				m = Object(n.a)(d, e => e === o.Ud.ReplyPc)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.5d56598de8b7fecd86fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.e63f3efd8e42955faef4.js.map

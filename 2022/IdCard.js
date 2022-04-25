@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.706518b237f5adc4ab23.js
-// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.00a603050f1ff236d34b.js
+// Retrieved at 4/25/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3088,7 +3088,7 @@
 						onClick: m ? x : void 0,
 						headerButton: i.a.createElement("div", {
 							className: mt.a.headerButtonsContainer
-						}, !A && v && f && c !== Ae.re.NewModule && i.a.createElement(a.a, {
+						}, !A && v && f && c !== Ae.ue.NewModule && i.a.createElement(a.a, {
 							className: mt.a.ModToolsLink,
 							to: f.posts ? `${v.url}about/modqueue` : `${v.url}about/`,
 							onClick: this.onClickModTools
@@ -5219,7 +5219,7 @@
 				f = u(o.Yb, !1),
 				g = u(o.ac, !0),
 				x = u(o.ac, !1),
-				v = Object(s.a)(m, b, (e, t) => e === o.vc.Enabled || t === o.wc.Enabled),
+				v = Object(s.a)(m, b, (e, t) => e === o.xc.Enabled || t === o.yc.Enabled),
 				_ = Object(s.a)(h, g, (e, t) => e === o.kb.BlurredPreview || e === o.kb.NoPreview || t === o.kb.BlurredPreview || t === o.kb.NoPreview),
 				y = Object(s.a)(f, x, (e, t) => e === o.kb.BlurredPreview || t === o.kb.BlurredPreview),
 				C = Object(s.a)(h, g, (e, t) => e === o.kb.NoPreview || t === o.kb.NoPreview),
@@ -5365,4 +5365,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.706518b237f5adc4ab23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.00a603050f1ff236d34b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.a2260a018c00ed50d905.js
-// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.b987fc0716aab8420b23.js
+// Retrieved at 4/25/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, t, r) {
@@ -279,9 +279,9 @@
 			})), r.d(t, "m", (function() {
 				return C
 			})), r.d(t, "t", (function() {
-				return I
-			})), r.d(t, "y", (function() {
 				return w
+			})), r.d(t, "y", (function() {
+				return I
 			})), r.d(t, "z", (function() {
 				return S
 			})), r.d(t, "B", (function() {
@@ -293,34 +293,34 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				d = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(d.a)(n.id),
-				c = Object(d.a)(n.gd),
-				i = Object(d.a)(n.jd),
-				o = Object(d.a)(n.bd),
-				s = (Object(d.a)(n.cd), Object(d.a)(n.ad)),
-				u = Object(d.a)(n.ed),
-				l = Object(d.a)(n.fd),
-				f = Object(d.a)(n.md),
-				p = Object(d.a)(n.kd),
-				b = Object(d.a)(n.ld),
-				m = Object(d.a)(n.dd),
-				h = Object(d.a)(n.Wc),
-				g = Object(d.a)(n.Uc),
-				O = Object(d.a)(n.Nc),
-				j = Object(d.a)(n.Jc),
-				P = Object(d.a)(n.Lc),
-				y = Object(d.a)(n.Mc),
-				_ = Object(d.a)(n.Pc),
-				x = Object(d.a)(n.Kc),
-				v = Object(d.a)(n.Xc),
-				k = Object(d.a)(n.Yc),
-				C = Object(d.a)(n.Zc),
-				I = Object(d.a)(n.hd),
-				w = Object(d.a)(n.nd),
-				S = Object(d.a)(n.rd),
-				M = Object(d.a)(n.qd),
-				R = Object(d.a)(n.If),
-				E = Object(d.a)(n.pd)
+			const a = Object(d.a)(n.ld),
+				c = Object(d.a)(n.jd),
+				i = Object(d.a)(n.md),
+				o = Object(d.a)(n.ed),
+				s = (Object(d.a)(n.fd), Object(d.a)(n.dd)),
+				u = Object(d.a)(n.hd),
+				l = Object(d.a)(n.id),
+				f = Object(d.a)(n.pd),
+				p = Object(d.a)(n.nd),
+				b = Object(d.a)(n.od),
+				m = Object(d.a)(n.gd),
+				h = Object(d.a)(n.Zc),
+				g = Object(d.a)(n.Xc),
+				O = Object(d.a)(n.Qc),
+				j = Object(d.a)(n.Mc),
+				P = Object(d.a)(n.Oc),
+				y = Object(d.a)(n.Pc),
+				_ = Object(d.a)(n.Sc),
+				x = Object(d.a)(n.Nc),
+				v = Object(d.a)(n.ad),
+				k = Object(d.a)(n.bd),
+				C = Object(d.a)(n.cd),
+				w = Object(d.a)(n.kd),
+				I = Object(d.a)(n.qd),
+				S = Object(d.a)(n.ud),
+				M = Object(d.a)(n.td),
+				R = Object(d.a)(n.Lf),
+				E = Object(d.a)(n.sd)
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, t, r) {
 			"use strict";
@@ -367,9 +367,9 @@
 			})), r.d(t, "k", (function() {
 				return C
 			})), r.d(t, "j", (function() {
-				return I
-			})), r.d(t, "m", (function() {
 				return w
+			})), r.d(t, "m", (function() {
+				return I
 			})), r.d(t, "e", (function() {
 				return S
 			})), r.d(t, "d", (function() {
@@ -408,8 +408,8 @@
 				v = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
 				k = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
 				C = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
-				I = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				w = e => e.features.goldPurchase.payment.stripeToken.pending,
+				w = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
+				I = e => e.features.goldPurchase.payment.stripeToken.pending,
 				S = e => e.features.goldPurchase.payment.paypal.passthrough,
 				M = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
@@ -424,4 +424,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.a2260a018c00ed50d905.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.b987fc0716aab8420b23.js.map
