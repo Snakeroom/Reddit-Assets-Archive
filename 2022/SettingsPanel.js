@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SettingsPanel.569b8e6b18e5b321a0ce.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SettingsPanel.b5c5c09e9875c8786f65.js
+// Retrieved at 4/25/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SettingsPanel"], {
 		"./src/chat/components/Sidebar/SettingsPanel/SettingsGroup/index.m.less": function(e, t, a) {
@@ -127,19 +127,19 @@
 						hk: "1iyaXi"
 					})))
 				},
-				j = a("./src/chat/components/Sidebar/SettingsPanel/SettingsGroup/index.m.less"),
-				g = a.n(j);
+				g = a("./src/chat/components/Sidebar/SettingsPanel/SettingsGroup/index.m.less"),
+				j = a.n(g);
 			var O = e => {
 					let {
 						headerText: t,
 						children: a
 					} = e;
 					return r.a.createElement("div", {
-						className: g.a.SettingsGroup
+						className: j.a.SettingsGroup
 					}, r.a.createElement("div", {
-						className: g.a.Header
+						className: j.a.Header
 					}, t), a ? r.a.createElement("div", {
-						className: g.a.Content
+						className: j.a.Content
 					}, a) : null)
 				},
 				w = a("./src/lib/classNames/index.ts"),
@@ -284,8 +284,8 @@
 				BLOCK_USER: Ee,
 				LEAVE_CHAT: Se,
 				LEAVE_GROUP: fe,
-				MARK_ALL_AS_READ: je
-			} = pe.a, ge = e => {
+				MARK_ALL_AS_READ: ge
+			} = pe.a, je = e => {
 				switch (e) {
 					case T.About:
 						return {
@@ -383,8 +383,8 @@
 					k = Object(s.e)(ve.i),
 					E = Object(s.e)(v.a),
 					S = Object(s.e)(Ae.e),
-					j = Object(s.e)(_e.d),
-					g = Object(s.e)(v.r),
+					g = Object(s.e)(_e.d),
+					j = Object(s.e)(v.r),
 					w = E && t.type === be.b.Group,
 					L = Object(c.useMemo)(() => {
 						if (t) switch (t.type) {
@@ -399,7 +399,7 @@
 						onclick: () => (e => {
 							switch (e) {
 								case T.About:
-									h(Object(l.k)()), h(Object(i.jb)());
+									h(Object(l.k)()), h(Object(i.kb)());
 									break;
 								case T.InvitePeople:
 									h(Object(l.c)()), h(Object(i.c)());
@@ -408,7 +408,7 @@
 									h(Object(l.e)()), h(Object(i.P)());
 									break;
 								case T.UnmuteNotifications:
-									h(Object(l.g)()), h(Object(i.ab)());
+									h(Object(l.g)()), h(Object(i.bb)());
 									break;
 								case T.LeaveChat:
 									p(Se);
@@ -429,17 +429,17 @@
 									p(Ee);
 									break;
 								case T.MarkAllAsRead:
-									p(je);
+									p(ge);
 									break;
 								case T.PrivacyAndSupport:
 									return h(Object(o.g)())
 							}
 						})(e),
-						isSelected: !!j && ge(e).channelAction === j,
+						isSelected: !!g && je(e).channelAction === g,
 						key: e,
-						text: ge(e).text,
-						shouldShowArrow: ge(e).shouldShowArrow
-					}, ge(e).icon) : null);
+						text: je(e).text,
+						shouldShowArrow: je(e).shouldShowArrow
+					}, je(e).icon) : null);
 				return r.a.createElement("div", {
 					className: ke.a.SettingsPanel
 				}, r.a.createElement("div", {
@@ -476,16 +476,16 @@
 				}, (() => {
 					switch (d) {
 						case Ee:
-							return g ? r.a.createElement(u.a, {
-								userToBlock: g
+							return j ? r.a.createElement(u.a, {
+								userToBlock: j
 							}) : null;
 						case fe:
 							return r.a.createElement(A, null);
-						case je:
+						case ge:
 							return r.a.createElement(f, null);
 						case Se:
-							return g ? r.a.createElement(b, {
-								userToLeave: g
+							return j ? r.a.createElement(b, {
+								userToLeave: j
 							}) : null;
 						default:
 							return null
@@ -513,4 +513,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.569b8e6b18e5b321a0ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SettingsPanel.b5c5c09e9875c8786f65.js.map

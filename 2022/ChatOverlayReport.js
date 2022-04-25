@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatOverlayReport.176729ca97de38b3a94c.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatOverlayReport.29b421e26c82c192e81c.js
+// Retrieved at 4/25/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatOverlayReport"], {
 		"./src/chat/components/OverlayReport/CrisisFlow/CrisisFlowPage.m.less": function(e, t, s) {
@@ -192,7 +192,7 @@
 				y = s.n(P);
 			const {
 				fbt: j
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = u.a.div("CrisisImageContainer", T.a), D = u.a.h2("CrisisTitle", T.a), H = u.a.p("CrisisDescription", T.a), Y = u.a.div("CrisisOtherActions", y.a), U = u.a.h4("CrisisOtherActionsTitle", y.a), V = u.a.div("CrisisLinkIconContainer", y.a), W = u.a.div("CrisisLinkText", y.a), G = u.a.h3("CrisisLinkTitle", y.a), K = u.a.p("CrisisLinkDescription", y.a);
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), B = u.a.div("CrisisImageContainer", T.a), D = u.a.h2("CrisisTitle", T.a), H = u.a.p("CrisisDescription", T.a), U = u.a.div("CrisisOtherActions", y.a), Y = u.a.h4("CrisisOtherActionsTitle", y.a), V = u.a.div("CrisisLinkIconContainer", y.a), W = u.a.div("CrisisLinkText", y.a), G = u.a.h3("CrisisLinkTitle", y.a), K = u.a.p("CrisisLinkDescription", y.a);
 			var Z = e => l.a.createElement("div", {
 				className: y.a.CrisisThankYouPage
 			}, l.a.createElement(B, null, l.a.createElement(x, {
@@ -201,7 +201,7 @@
 				hk: "1ePh84"
 			})), l.a.createElement(H, null, j._("We’ve reached out to {username} . By letting us know, you’ve helped connect them to people who are there to listen and provide support.", [j._param("username", l.a.createElement("span", null, "u/", e.username))], {
 				hk: "3X1mGY"
-			})), l.a.createElement(Y, null, l.a.createElement(U, null, j._("Other things you can do", null, {
+			})), l.a.createElement(U, null, l.a.createElement(Y, null, j._("Other things you can do", null, {
 				hk: "4oCunD"
 			})), l.a.createElement("a", {
 				href: "https://www.reddithelp.com/en/categories/rules-reporting/suicide-response/what-do-i-do-if-someone-talks-about-seriously-hurting",
@@ -304,7 +304,7 @@
 							e(Object(p.b)())
 						},
 						onChannelBlock: t => {
-							e(R.n(t)), e(O.W(t))
+							e(R.n(t)), e(O.W(t)), e(O.X(t))
 						},
 						showFailToast: () => e(Object(C.f)({
 							kind: E.b.Error,
@@ -313,7 +313,7 @@
 							})
 						})),
 						onCancel: () => e(Object(d.a)()),
-						submitReportMessage: (t, s) => e(Object(O.Y)(t, s))
+						submitReportMessage: (t, s) => e(Object(O.Z)(t, s))
 					}
 				}),
 				Ee = async (e, t, s) => {
@@ -505,4 +505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatOverlayReport.176729ca97de38b3a94c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatOverlayReport.29b421e26c82c192e81c.js.map
