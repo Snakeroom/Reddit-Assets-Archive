@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.dcfa59d5ccc7c0bdf0ed.js
-// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.339f36b9aa56ee9559b9.js
+// Retrieved at 4/25/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -740,8 +740,8 @@
 				V = s("./src/reddit/components/SubredditNav/index.tsx"),
 				G = s("./src/reddit/components/SubscribeButton/index.tsx"),
 				J = s("./src/reddit/constants/componentSizes.ts"),
-				K = s("./src/reddit/constants/postLayout.ts"),
-				q = s("./src/reddit/constants/posts.ts"),
+				q = s("./src/reddit/constants/postLayout.ts"),
+				K = s("./src/reddit/constants/posts.ts"),
 				Y = s("./src/reddit/featureFlags/index.ts"),
 				z = s("./src/reddit/helpers/getSubredditIcon/index.ts"),
 				X = s("./src/reddit/constants/tracking.ts");
@@ -869,7 +869,7 @@
 						})
 					}),
 					I = e.spPollsEnabled || e.tournamentsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0),
-					S = e.layout ? e.layout === K.g.Large ? "984px" : "100%" : "1086px";
+					S = e.layout ? e.layout === q.g.Large ? "984px" : "100%" : "1086px";
 				return n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
 					style: {
 						height: p ? void 0 : f
@@ -922,7 +922,7 @@
 					},
 					identifier: {
 						name: s,
-						type: q.a.SUBREDDIT
+						type: K.a.SUBREDDIT
 					},
 					small: !0,
 					isFullWidth: !0,
@@ -3768,12 +3768,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case h.mf.SmIcon:
+						case h.nf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case h.mf.SmIconHc:
+						case h.nf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -3856,8 +3856,8 @@
 				V = s("./src/reddit/components/Thumbnail/index.tsx"),
 				G = s("./src/reddit/models/Flair/index.ts"),
 				J = s("./src/reddit/models/Subreddit/index.ts"),
-				K = s("./src/reddit/components/SidebarPostList/SmallPost/index.m.less"),
-				q = s.n(K);
+				q = s("./src/reddit/components/SidebarPostList/SmallPost/index.m.less"),
+				K = s.n(q);
 			const {
 				fbt: Y
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), z = e => e.type === G.f.Nsfw || e.type === G.f.Spoiler, X = Object(c.c)({
@@ -3892,36 +3892,36 @@
 						post: t
 					}, o = Object(U.a)(Object(V.b)(i)), d = t.flair.filter(z);
 					return a.a.createElement("div", {
-						className: Object(S.a)(q.a.container, e, {
-							[q.a.redditStyle]: s
+						className: Object(S.a)(K.a.container, e, {
+							[K.a.redditStyle]: s
 						}),
 						onClick: this.onClickContainer
 					}, a.a.createElement("div", {
-						className: q.a.mainLine
+						className: K.a.mainLine
 					}, o && a.a.createElement("div", {
-						className: q.a.thumbnailContainer,
+						className: K.a.thumbnailContainer,
 						onClick: this.onClickThumbnail
 					}, a.a.createElement(V.a, i)), a.a.createElement("div", {
-						className: Object(S.a)(q.a.title, !o && q.a.titleSingle),
+						className: Object(S.a)(K.a.title, !o && K.a.titleSingle),
 						title: t.title
 					}, d.length > 0 && a.a.createElement(A.a, {
-						className: q.a.flair,
+						className: K.a.flair,
 						titleFlair: d,
 						nowrap: !0,
 						post: t
 					}), t.title)), a.a.createElement("div", {
-						className: q.a.metaLine
+						className: K.a.metaLine
 					}, r && !!n && a.a.createElement("span", {
-						className: q.a.meta
+						className: K.a.meta
 					}, Object(J.h)(n) ? Object(T.d)(n.displayText || n.name) : Object(T.c)(n.displayText || n.name)), a.a.createElement("span", {
-						className: q.a.meta
+						className: K.a.meta
 					}, Y._({
 						"*": "{score} points",
 						_1: "1 point"
 					}, [Y._plural(t.score, "score", Object(W.b)(t.score))], {
 						hk: "1JZ0qm"
 					})), a.a.createElement("span", {
-						className: q.a.meta
+						className: K.a.meta
 					}, Y._({
 						"*": "{numComments} comments",
 						_1: "1 comment"
@@ -4199,7 +4199,7 @@
 						} = t;
 						return Object(Be.c)(e, s)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Pe.pe.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(De.a)(e) === Pe.qe.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -5402,12 +5402,12 @@
 				d = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.gf
+						experimentName: r.hf
 					}) || ""
 				},
 				c = e => {
 					const t = d(e);
-					return t === r.mf.SmIcon || t === r.mf.SmIconHc
+					return t === r.nf.SmIcon || t === r.nf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5433,4 +5433,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.dcfa59d5ccc7c0bdf0ed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.339f36b9aa56ee9559b9.js.map

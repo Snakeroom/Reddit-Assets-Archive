@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.7cb5a819705f9aae3074.js
-// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.8b3d90e3d90b8b6a9c8b.js
+// Retrieved at 4/25/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -670,19 +670,19 @@
 					}))
 				},
 				G = A.a.div("DropdownRowDisabled", D.a),
-				V = Object(l.u)({
+				K = Object(l.u)({
 					isFrontpage: l.A,
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
-				K = Object(g.c)({
+				V = Object(g.c)({
 					isAwardListingExperimentEnabled: E.a,
 					isBestSortPopularEnabled: N.a,
 					user: L.l,
 					dropdownIsOpen: (e, t) => Object(I.b)(t.dropdownId || M)(e),
 					isPopularPage: l.F
 				}),
-				W = Object(o.b)(K, (e, t) => {
+				q = Object(o.b)(V, (e, t) => {
 					let {
 						dropdownId: n,
 						pageLayer: r
@@ -693,7 +693,7 @@
 						}))
 					}
 				});
-			var q = A.a.wrapped(V(W(Object(d.c)(e => s.a.createElement("div", {
+			var W = A.a.wrapped(K(q(Object(d.c)(e => s.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && s.a.createElement(H, null, w.fbt._("Sort", null, {
@@ -1352,7 +1352,7 @@
 						sortOptions: o,
 						timeSort: i
 					} = this.props, c = !t && Ae.has(r), d = Re.has(r), l = o.filter(e => !this.isOverflowSort(e)), u = o.filter(e => this.isOverflowSort(e) && e !== r);
-					return s.a.createElement(s.a.Fragment, null, s.a.createElement(q, De({}, this.props, {
+					return s.a.createElement(s.a.Fragment, null, s.a.createElement(W, De({}, this.props, {
 						buttonClassName: Te.a.DropdownButton,
 						className: Object(a.a)(Te.a.SortDropdown, e),
 						rowClassName: Te.a.DropdownRow,
@@ -1371,7 +1371,7 @@
 						rowSelectedClassName: Te.a.DropdownRowSelected,
 						timeSort: i || b.kc,
 						wrapperClassName: Te.a.DropdownSortWrapper
-					}), u.length > 0 && s.a.createElement(q, De({}, this.props, {
+					}), u.length > 0 && s.a.createElement(W, De({}, this.props, {
 						className: Object(a.a)(Te.a.SortOverflow, e),
 						dropdownClassName: Te.a.Dropdown,
 						dropdownId: Be,
@@ -1390,12 +1390,12 @@
 			}
 			var Fe = Ue(Object(o.b)(He)(Object(d.c)(Xe))),
 				Ge = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				Ve = n.n(Ge);
-			const Ke = Object(l.u)({
+				Ke = n.n(Ge);
+			const Ve = Object(l.u)({
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
-				We = Object(o.b)(null, (e, t) => {
+				qe = Object(o.b)(null, (e, t) => {
 					let {
 						subredditId: n
 					} = t;
@@ -1411,7 +1411,7 @@
 						}
 					}
 				});
-			class qe extends s.a.Component {
+			class We extends s.a.Component {
 				constructor() {
 					super(...arguments), this.blurListingBroadcast = () => {
 						u.a.setState({
@@ -1439,7 +1439,7 @@
 						updateSortPreference: u
 					} = this.props;
 					return s.a.createElement("div", {
-						className: Object(a.a)(Ve.a.Container, t),
+						className: Object(a.a)(Ke.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
 					}, s.a.createElement(Fe, {
@@ -1452,12 +1452,12 @@
 						sortOptions: c,
 						timeSort: l
 					}), !o && s.a.createElement(p.a, {
-						className: Ve.a.LayoutSwitch,
+						className: Ke.a.LayoutSwitch,
 						subredditId: d
 					}))
 				}
 			}
-			t.a = Ke(We(Object(d.c)(qe)))
+			t.a = Ve(qe(Object(d.c)(We)))
 		},
 		"./src/reddit/components/ListingPostList/index.tsx": function(e, t, n) {
 			"use strict";
@@ -2208,7 +2208,7 @@
 						subredditId: n
 					})),
 					_ = Object(a.e)(m.a),
-					S = _ !== u.pe.NewModule;
+					S = _ !== u.qe.NewModule;
 				return (null === (s = null == f ? void 0 : f.cards) || void 0 === s ? void 0 : s.length) > 0 && S ? o.a.createElement(h, {
 					closeModuleOnMount: !!t && t !== p.g.Large,
 					subredditId: n,
@@ -2236,15 +2236,15 @@
 			const a = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.R,
-						experimentName: r.Pc
+						experimentName: r.Qc
 					});
-					return !(!t || Object(r.Jf)(t))
+					return !(!t || Object(r.Kf)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.R,
-						experimentName: r.Pc
-					}) === r.wd.ListingEnabled
+						experimentName: r.Qc
+					}) === r.xd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2371,4 +2371,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.7cb5a819705f9aae3074.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.8b3d90e3d90b8b6a9c8b.js.map

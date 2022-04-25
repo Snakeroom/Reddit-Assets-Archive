@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.f8a30c2e3aa41d8b4755.js
-// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.16413790157b3f26e8da.js
+// Retrieved at 4/25/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3088,7 +3088,7 @@
 						onClick: m ? x : void 0,
 						headerButton: i.a.createElement("div", {
 							className: mt.a.headerButtonsContainer
-						}, !A && v && f && c !== Ae.pe.NewModule && i.a.createElement(a.a, {
+						}, !A && v && f && c !== Ae.qe.NewModule && i.a.createElement(a.a, {
 							className: mt.a.ModToolsLink,
 							to: f.posts ? `${v.url}about/modqueue` : `${v.url}about/`,
 							onClick: this.onClickModTools
@@ -5151,27 +5151,27 @@
 				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Lb,
+					experimentName: s.Mb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Y.Enabled),
 				d = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Mb,
+					experimentName: s.Nb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Z.Enabled),
 				c = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Nb,
+					experimentName: s.Ob,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.ab.Enabled),
 				l = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Ob,
+					experimentName: s.Pb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.bb.Enabled),
 				u = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Qb,
+					experimentName: s.Rb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.db.Enabled),
 				m = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Pb,
+					experimentName: s.Qb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.cb.Enabled)
 		},
@@ -5212,14 +5212,14 @@
 					expEventOverride: t
 				})
 			}
-			const m = u(o.Vb, !0),
-				p = u(o.Vb, !1),
-				b = u(o.Xb, !0),
-				h = (u(o.Xb, !1), u(o.Wb, !0)),
-				f = u(o.Wb, !1),
-				g = u(o.Yb, !0),
-				x = u(o.Yb, !1),
-				v = Object(s.a)(m, b, (e, t) => e === o.tc.Enabled || t === o.uc.Enabled),
+			const m = u(o.Wb, !0),
+				p = u(o.Wb, !1),
+				b = u(o.Yb, !0),
+				h = (u(o.Yb, !1), u(o.Xb, !0)),
+				f = u(o.Xb, !1),
+				g = u(o.Zb, !0),
+				x = u(o.Zb, !1),
+				v = Object(s.a)(m, b, (e, t) => e === o.uc.Enabled || t === o.vc.Enabled),
 				_ = Object(s.a)(h, g, (e, t) => e === o.jb.BlurredPreview || e === o.jb.NoPreview || t === o.jb.BlurredPreview || t === o.jb.NoPreview),
 				y = Object(s.a)(f, x, (e, t) => e === o.jb.BlurredPreview || t === o.jb.BlurredPreview),
 				C = Object(s.a)(h, g, (e, t) => e === o.jb.NoPreview || t === o.jb.NoPreview),
@@ -5365,4 +5365,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.f8a30c2e3aa41d8b4755.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.16413790157b3f26e8da.js.map

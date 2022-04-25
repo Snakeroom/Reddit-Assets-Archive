@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.e6bb7cd1eb8697052027.js
-// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.b0494821195bb3e79eeb.js
+// Retrieved at 4/25/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -95,11 +95,11 @@
 				}, e.children), "HiddenPortalContainer", N.a),
 				k = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
 				I = R,
-				L = Object(M.a)({
+				U = Object(M.a)({
 					container: e => e && e.container && e.container.size
 				});
 
-			function U(e) {
+			function L(e) {
 				switch (e.container) {
 					case y.a.EMBED:
 						return a.a.createElement(A, null, e.children);
@@ -121,9 +121,9 @@
 				G = n("./src/chat/customMiddleware/inviteLinkSettings.ts"),
 				W = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
 				K = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
-				Q = n("./src/chat/customMiddleware/sendbirdToken.ts"),
-				V = n("./src/chat/customMiddleware/settings.ts"),
-				Y = n("./src/chat/customMiddleware/title.ts"),
+				V = n("./src/chat/customMiddleware/sendbirdToken.ts"),
+				Y = n("./src/chat/customMiddleware/settings.ts"),
+				Q = n("./src/chat/customMiddleware/title.ts"),
 				J = n("./src/chat/customMiddleware/tokenRefresher.ts"),
 				X = n("./src/chat/customMiddleware/tracking.ts"),
 				Z = n("./src/chat/customMiddleware/unreadMessageCount.ts"),
@@ -260,7 +260,7 @@
 							gqlContext: pe.gqlContext
 						}
 					}, function(e, t) {
-						const n = Object(O.b)(L)(U);
+						const n = Object(O.b)(U)(L);
 						return a.a.createElement("div", null, Object(v.d)(a.a.createElement(n, null, Object(E.a)(e, t)), document.body))
 					}(e, t)),
 					appName: d.n.Chat,
@@ -272,7 +272,7 @@
 						routes: ge.a,
 						apiContext: fe.apiContext,
 						gqlContext: pe.gqlContext
-					}), fe.middleware, J.a, V.a, Q.a, $.a, K.a, Object(X.a)(t), H.a, z.a, q.a, F.a, Z.a, W.a, Y.a, ee.a, G.a],
+					}), fe.middleware, J.a, Y.a, V.a, $.a, K.a, Object(X.a)(t), H.a, z.a, q.a, F.a, Z.a, W.a, Q.a, ee.a, G.a],
 					modifyInitialData: t => {
 						let {
 							initialData: n,
@@ -668,32 +668,32 @@
 				r = n("./src/reddit/selectors/experiments/index.ts"),
 				i = n("./src/reddit/selectors/experiments/utils.ts");
 			const o = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.Jb,
+					experimentName: a.Kb,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === a.Td.Enabled),
+				d = Object(s.a)(o, e => e === a.Ud.Enabled),
 				u = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.Od,
+					experimentName: a.Pd,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				l = Object(s.a)(d, u, (e, t) => e && t === a.Sd.Enabled),
+				l = Object(s.a)(d, u, (e, t) => e && t === a.Td.Enabled),
 				b = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.cc,
+					experimentName: a.dc,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				m = Object(s.a)(d, b, (e, t) => e && t === a.wc.Enabled),
+				m = Object(s.a)(d, b, (e, t) => e && t === a.xc.Enabled),
 				h = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.Hb,
-					experimentEligibilitySelector: r.e
-				}), i.a),
-				g = Object(s.a)(h, e => e === a.Qd.ContinuousScroll),
-				f = Object(s.a)(e => Object(c.c)(e, {
 					experimentName: a.Ib,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				p = Object(s.a)(f, e => e === a.Rd.Enabled),
+				g = Object(s.a)(h, e => e === a.Rd.ContinuousScroll),
+				f = Object(s.a)(e => Object(c.c)(e, {
+					experimentName: a.Jb,
+					experimentEligibilitySelector: r.e
+				}), i.a),
+				p = Object(s.a)(f, e => e === a.Sd.Enabled),
 				x = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.Sb,
+					experimentName: a.Tb,
 					experimentEligibilitySelector: () => !0
 				}), i.a),
 				j = Object(s.a)(x, e => e === a.ib.Enabled)
@@ -703,4 +703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.e6bb7cd1eb8697052027.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.b0494821195bb3e79eeb.js.map

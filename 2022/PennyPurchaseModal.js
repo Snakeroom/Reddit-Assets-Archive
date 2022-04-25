@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.c395550aa6b5c3403f00.js
-// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.baeb292208eabf542c86.js
+// Retrieved at 4/25/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -58,7 +58,7 @@
 			})), a.d(t, "c", (function() {
 				return M
 			})), a.d(t, "a", (function() {
-				return B
+				return R
 			})), a.d(t, "i", (function() {
 				return F
 			})), a.d(t, "f", (function() {
@@ -287,13 +287,13 @@
 					} catch (s) {
 						p.c.captureException(s)
 					}
-				}, I = Object(u.a)(b.O), T = Object(u.a)(b.P), A = Object(u.a)(b.Q), R = e => async (t, a) => {
+				}, I = Object(u.a)(b.O), T = Object(u.a)(b.P), A = Object(u.a)(b.Q), B = e => async (t, a) => {
 					await t(I(e)), t(Object(l.f)({
 						kind: h.b.Error,
 						duration: l.a,
 						text: e
 					}))
-				}, B = (e, t, a) => async (n, s, o) => {
+				}, R = (e, t, a) => async (n, s, o) => {
 					let {
 						gqlContext: c
 					} = o;
@@ -308,16 +308,16 @@
 								{
 									errors: r
 								} = e.data.cancelEconRecurringPayment;
-							if (r && r.length) return void n(R(r[0].message));
+							if (r && r.length) return void n(B(r[0].message));
 							n(A({
 								subredditId: t,
 								allocatedAt: a
 							}))
-						} else n(R(r.fbt._("Something went wrong", null, {
+						} else n(B(r.fbt._("Something went wrong", null, {
 							hk: "4yuT5m"
 						})))
 					} catch (d) {
-						p.c.captureException(d), n(R(r.fbt._("Something went wrong", null, {
+						p.c.captureException(d), n(B(r.fbt._("Something went wrong", null, {
 							hk: "4yuT5m"
 						})))
 					}
@@ -522,9 +522,9 @@
 				}),
 				T = a("./src/reddit/controls/Button/index.tsx"),
 				A = a("./src/reddit/helpers/trackers/goldPayment.ts"),
-				R = a("./src/reddit/selectors/gold/productOffers.ts"),
-				B = a("./src/reddit/components/CoinPurchaseModal/index.m.less"),
-				D = a.n(B);
+				B = a("./src/reddit/selectors/gold/productOffers.ts"),
+				R = a("./src/reddit/components/CoinPurchaseModal/index.m.less"),
+				D = a.n(R);
 			const {
 				fbt: F
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), L = e => {
@@ -544,7 +544,7 @@
 				const E = Object(b.a)(),
 					j = Object(m.d)(),
 					O = Object(m.e)(p.h),
-					k = Object(m.e)(R.a),
+					k = Object(m.e)(B.a),
 					w = !!r;
 				if (w && !O) {
 					const e = () => {
@@ -1566,7 +1566,7 @@
 					onClickDeleteCard: a => t.shouldDeleteCardWithGql ? e(Object(d.c)(a)) : e(Object(i.deleteSavedCard)(a)),
 					onToggleRememberCard: () => e(Object(i.toggleRememberCard)())
 				}));
-			class R extends n.a.PureComponent {
+			class B extends n.a.PureComponent {
 				render() {
 					const {
 						className: e,
@@ -1600,7 +1600,7 @@
 					}))
 				}
 			}
-			t.a = A(R)
+			t.a = A(B)
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, a) {
 			e.exports = {
@@ -1962,7 +1962,7 @@
 				p = a("./node_modules/react-redux/es/index.js"),
 				h = a("./src/reddit/constants/experiments.ts"),
 				b = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const g = Object(b.a)(h.Rc);
+			const g = Object(b.a)(h.Sc);
 			let C = null;
 
 			function f() {
@@ -2043,4 +2043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.c395550aa6b5c3403f00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.baeb292208eabf542c86.js.map

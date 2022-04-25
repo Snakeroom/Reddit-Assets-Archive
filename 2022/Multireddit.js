@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.b51023946bcc056c212c.js
-// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.9d75f274cbb59a44b738.js
+// Retrieved at 4/25/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
@@ -306,7 +306,7 @@
 					onClick: () => e.onClick(e.searchableTerm),
 					to: F(e.searchableTerm, e.subredditName)
 				}, e.flair) : e.flair;
-			class P extends a.a.Component {
+			class R extends a.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTargetElement = null, this.state = {
 						isTooltipOpen: !1
@@ -358,7 +358,7 @@
 					})
 				}
 			}
-			const R = Object(m.a)(P),
+			const P = Object(m.a)(R),
 				A = Object(m.a)(e => {
 					let t = "",
 						n = !1;
@@ -413,8 +413,8 @@
 					})
 				}),
 				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(y.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(j.a)(Object(y.a)(e).post, T.a.black, T.a.white) : e.textColor === I.e.Dark ? T.a.black : T.a.white,
-				W = p.a.wrapped(R, "TextFlair", C.a),
-				V = p.a.wrapped(A, "RichTextFlair", C.a),
+				W = p.a.wrapped(P, "TextFlair", C.a),
+				Z = p.a.wrapped(A, "RichTextFlair", C.a),
 				H = e => {
 					switch (e.type) {
 						case "spoiler":
@@ -425,7 +425,7 @@
 							return Object(i.i)(.1, Object(y.a)(s()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				Z = p.a.wrapped(e => {
+				V = p.a.wrapped(e => {
 					const t = H(e),
 						n = a.a.createElement("span", {
 							className: e.className,
@@ -461,7 +461,7 @@
 				}, t);
 				switch (o.type) {
 					case I.f.Richtext:
-						return n || !o.richtext ? null : a.a.createElement(V, {
+						return n || !o.richtext ? null : a.a.createElement(Z, {
 							backgroundColor: o.backgroundColor,
 							className: h,
 							forceSmallEmojis: b,
@@ -504,7 +504,7 @@
 						});
 					case I.f.Nsfw:
 					case I.f.Spoiler:
-						return a.a.createElement(Z, {
+						return a.a.createElement(V, {
 							className: t,
 							text: o.text,
 							type: o.type
@@ -1320,27 +1320,27 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Lb,
+					experimentName: o.Mb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.Y.Enabled),
 				a = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Mb,
+					experimentName: o.Nb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.Z.Enabled),
 				l = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Nb,
+					experimentName: o.Ob,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.ab.Enabled),
 				d = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Ob,
+					experimentName: o.Pb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.bb.Enabled),
 				u = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Qb,
+					experimentName: o.Rb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.db.Enabled),
 				m = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Pb,
+					experimentName: o.Qb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.cb.Enabled)
 		},
@@ -1381,14 +1381,14 @@
 					expEventOverride: t
 				})
 			}
-			const m = u(i.Vb, !0),
-				p = u(i.Vb, !1),
-				b = u(i.Xb, !0),
-				f = (u(i.Xb, !1), u(i.Wb, !0)),
-				h = u(i.Wb, !1),
-				E = u(i.Yb, !0),
-				x = u(i.Yb, !1),
-				_ = Object(o.a)(m, b, (e, t) => e === i.tc.Enabled || t === i.uc.Enabled),
+			const m = u(i.Wb, !0),
+				p = u(i.Wb, !1),
+				b = u(i.Yb, !0),
+				f = (u(i.Yb, !1), u(i.Xb, !0)),
+				h = u(i.Xb, !1),
+				E = u(i.Zb, !0),
+				x = u(i.Zb, !1),
+				_ = Object(o.a)(m, b, (e, t) => e === i.uc.Enabled || t === i.vc.Enabled),
 				T = Object(o.a)(f, E, (e, t) => e === i.jb.BlurredPreview || e === i.jb.NoPreview || t === i.jb.BlurredPreview || t === i.jb.NoPreview),
 				D = Object(o.a)(h, x, (e, t) => e === i.jb.BlurredPreview || t === i.jb.BlurredPreview),
 				v = Object(o.a)(f, E, (e, t) => e === i.jb.NoPreview || t === i.jb.NoPreview),
@@ -1409,4 +1409,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.b51023946bcc056c212c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.9d75f274cbb59a44b738.js.map
