@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.7725ca2be6ead333800a.js
-// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.ce382d71979f7af4acc1.js
+// Retrieved at 4/25/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -2115,11 +2115,12 @@
 						case a.m: {
 							const {
 								subredditId: n,
-								approvedTalkHosts: r
-							} = t.payload, a = {
-								[n]: [...e[n] || [], ...r]
+								approvedTalkHosts: r,
+								forceRefresh: a
+							} = t.payload, s = {
+								[n]: [...a ? [] : e[n] || [], ...r]
 							};
-							return Object(b.merge)(e, a)
+							return Object(b.merge)(e, s)
 						}
 						default:
 							return e
@@ -4000,4 +4001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.7725ca2be6ead333800a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.ce382d71979f7af4acc1.js.map
