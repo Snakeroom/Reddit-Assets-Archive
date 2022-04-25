@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.1ee71bfd0db1962b89df.js
-// Retrieved at 4/25/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.1fa1fd87cc7bc46a2abc.js
+// Retrieved at 4/25/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -1306,7 +1306,7 @@
 					Object(v.a)(lt, mt);
 					const [ut, pt] = Object(o.useState)(!1), bt = Object(o.useCallback)(() => {
 						pt(!ut), Object(ce.Mb)(), Ke(Object(me.d)(Ve))
-					}, [ut, Ke, Ve]), ht = Se.isSponsored && !(Se.media && O.a.has(Se.media.type)) && !De;
+					}, [ut, Ke, Ve]), ht = Se.isSponsored && !(Se.media && O.a.has(Se.media.type)) && !De, ft = !!(S && (null == Ae ? void 0 : Ae.isNSFW));
 					return r.a.createElement(x.b, null, r.a.createElement(H.a, {
 						className: Object(N.a)(Ie.a.container, n, je.a.largeAndMediumPostStyles, je.a.largeAndMediumActiveStyles, Object(m.a)(e), {
 							[je.a.mUseRedditTheme]: Ge,
@@ -1378,7 +1378,7 @@
 						size: te.b.Large,
 						titleColor: He && He.postTitleColor,
 						isOverlay: ae
-					}), Se.source && !Se.isSponsored && !(Se.media && Object(O.H)(Se.media)) && !S && r.a.createElement(oe.a, {
+					}), Se.source && !Se.isSponsored && !(Se.media && Object(O.H)(Se.media)) && !ft && r.a.createElement(oe.a, {
 						className: Ie.a.sourceLink,
 						post: Se
 					})), r.a.createElement("div", {
@@ -3268,4 +3268,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.1ee71bfd0db1962b89df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.1fa1fd87cc7bc46a2abc.js.map

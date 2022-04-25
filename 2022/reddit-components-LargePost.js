@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.f47db1b65ee4b888a457.js
-// Retrieved at 4/25/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c9aae22b710ce57cd211.js
+// Retrieved at 4/25/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2181,7 +2181,7 @@
 					Object(v.a)(lt, ut);
 					const [pt, mt] = Object(s.useState)(!1), ft = Object(s.useCallback)(() => {
 						mt(!pt), Object(ce.Mb)(), Ue(Object(ue.d)(We))
-					}, [pt, Ue, We]), bt = _e.isSponsored && !(_e.media && g.a.has(_e.media.type)) && !Ve;
+					}, [pt, Ue, We]), bt = _e.isSponsored && !(_e.media && g.a.has(_e.media.type)) && !Ve, ht = !!(_ && (null == Fe ? void 0 : Fe.isNSFW));
 					return o.a.createElement(x.b, null, o.a.createElement(z.a, {
 						className: Object(S.a)(ke.a.container, r, Ee.a.largeAndMediumPostStyles, Ee.a.largeAndMediumActiveStyles, Object(u.a)(e), {
 							[Ee.a.mUseRedditTheme]: qe,
@@ -2253,7 +2253,7 @@
 						size: te.b.Large,
 						titleColor: ze && ze.postTitleColor,
 						isOverlay: ae
-					}), _e.source && !_e.isSponsored && !(_e.media && Object(g.H)(_e.media)) && !_ && o.a.createElement(se.a, {
+					}), _e.source && !_e.isSponsored && !(_e.media && Object(g.H)(_e.media)) && !ht && o.a.createElement(se.a, {
 						className: ke.a.sourceLink,
 						post: _e
 					})), o.a.createElement("div", {
@@ -3372,4 +3372,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.f47db1b65ee4b888a457.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.c9aae22b710ce57cd211.js.map

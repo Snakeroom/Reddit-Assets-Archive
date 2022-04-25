@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.1f117b48e5525ba2cbdc.js
-// Retrieved at 4/25/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.aea242fb02860a7b7c08.js
+// Retrieved at 4/25/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -6123,7 +6123,7 @@
 					listingKey: Ve,
 					listingName: Ge,
 					multireddit: F.e,
-					nsfwExperiment: Be.e,
+					nsfwBlurSubreddit: Be.d,
 					over18Prefs: G.lb,
 					sort: Ue,
 					timeSort: ze
@@ -6147,14 +6147,12 @@
 							}
 						},
 						multireddit: r,
-						nsfwExperiment: s,
+						nsfwBlurSubreddit: s,
 						over18Prefs: o,
 						sort: i,
 						timeSort: c
 					} = this.props;
-					return r ? r.isNSFW && !o && s !== Be.a.Blurred ? a.a.createElement(f.default, {
-						contentGateType: De.a.NsfwCustomFeed
-					}) : a.a.createElement(Pe.a, {
+					return r ? !r.isNSFW || o || s ? a.a.createElement(Pe.a, {
 						className: this.props.className,
 						content: a.a.createElement(a.a.Fragment, null, r && a.a.createElement(g.a, {
 							sort: i,
@@ -6185,6 +6183,8 @@
 							multireddit: r,
 							multiUsername: n
 						}) : null
+					}) : a.a.createElement(f.default, {
+						contentGateType: De.a.NsfwCustomFeed
 					}) : a.a.createElement(f.default, {
 						contentGateType: De.a.CustomFeedDoesNotExist
 					})
@@ -6423,4 +6423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.1f117b48e5525ba2cbdc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.aea242fb02860a7b7c08.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.b19c38d8d3214e871e9d.js
-// Retrieved at 4/25/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.9e25385dad3d05718496.js
+// Retrieved at 4/25/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -10413,7 +10413,6 @@
 					}, a.a.createElement(b.b, {
 						textColor: d
 					})), a.a.createElement(w, {
-						isBlurredPreview: o,
 						qrCodeAsset: (() => s === f.xc.Enabled || r === f.kb.BlurredPreview || r === f.kb.NoPreview ? S.d2x_nsfw_signup_blocking_de_v1 : S.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
@@ -14096,146 +14095,147 @@
 						layout: E,
 						listingKey: j,
 						match: _,
-						nsfwExperiment: C,
-						pageLayer: k,
-						renderNSFWContentGate: N,
-						showCreatePostBanner: S,
-						showSignupUpsell: P,
-						sort: w,
-						subreddit: I,
-						subredditAboutInfo: T,
-						subredditName: L,
-						timeSort: A,
-						topContent: M,
-						topContentDiscoveryUnit: H,
-						topPostsVariant: V
-					} = this.props, q = this.memoizedGetInjectChildren(this.props), z = Object(O.a)(L, {
+						nsfwBlurSubreddit: C,
+						nsfwExperiment: k,
+						pageLayer: N,
+						renderNSFWContentGate: S,
+						showCreatePostBanner: P,
+						showSignupUpsell: w,
+						sort: I,
+						subreddit: T,
+						subredditAboutInfo: L,
+						subredditName: A,
+						timeSort: M,
+						topContent: H,
+						topContentDiscoveryUnit: V,
+						topPostsVariant: q
+					} = this.props, z = this.memoizedGetInjectChildren(this.props), K = Object(O.a)(A, {
 						countryCode: null == t ? void 0 : t.countryCode,
 						languageCode: null == t ? void 0 : t.languageCode
-					}), K = L.toLowerCase(), te = I && I.url ? I.url : Object(Je.b)(`/r/${L}/`, null == t ? void 0 : t.countryCode, null == t ? void 0 : t.languageCode), re = Object(h.a)({
+					}), te = A.toLowerCase(), re = T && T.url ? T.url : Object(Je.b)(`/r/${A}/`, null == t ? void 0 : t.countryCode, null == t ? void 0 : t.languageCode), ce = Object(h.a)({
 						countryCode: Xe.a,
 						languageCode: Xe.b,
-						hardcodedPath: te,
-						permalink: te,
-						subredditName: L
-					}, n), ce = {
+						hardcodedPath: re,
+						permalink: re,
+						subredditName: A
+					}, n), le = {
 						listingKey: j,
-						listingName: K
-					}, le = Object(De.a)(V), pe = Object(De.b)(V), be = Object(me.O)(k);
-					let he;
-					if (z ? he = Object(y.a)(L) ? u.a.createElement(at, ce) : u.a.createElement(Tt, ce) : I && (he = be ? u.a.createElement(W.a, {
-							subredditId: I.id
-						}) : u.a.createElement(ae.a, rt({}, ce, {
+						listingName: te
+					}, pe = Object(De.a)(q), be = Object(De.b)(q), he = Object(me.O)(N);
+					let ge;
+					if (K ? ge = Object(y.a)(A) ? u.a.createElement(at, le) : u.a.createElement(Tt, le) : T && (ge = he ? u.a.createElement(W.a, {
+							subredditId: T.id
+						}) : u.a.createElement(ae.a, rt({}, le, {
 							className: nt.a.sidebar,
-							subredditId: I.id,
-							subredditName: L,
-							topPostsVariant: V
-						}))), (null == I ? void 0 : I.isNSFW) && C === Te.a.NoPreview) return u.a.createElement(de.a, {
-						contentTitle: Object(xe.c)(L)
+							subredditId: T.id,
+							subredditName: A,
+							topPostsVariant: q
+						}))), (null == T ? void 0 : T.isNSFW) && k === Te.a.NoPreview) return u.a.createElement(de.a, {
+						contentTitle: Object(xe.c)(A)
 					});
-					const ge = Object(fe.a)(e, N, L);
-					if (ge && C !== Te.a.Blurred) return u.a.createElement(R.default, ge);
-					const ve = E === ue.g.Large,
-						Ee = p,
-						ye = I ? I.id : void 0,
-						je = !_.params.sort && M && !M.isSubscribed && M.postIds && M.postIds.length >= ct && !b && !r && !le && !pe,
-						_e = {
-							baseUrl: re,
+					const ve = Object(fe.a)(e, S, A);
+					if (ve && !C) return u.a.createElement(R.default, ve);
+					const Ee = E === ue.g.Large,
+						ye = p,
+						je = T ? T.id : void 0,
+						_e = !_.params.sort && H && !H.isSubscribed && H.postIds && H.postIds.length >= ct && !b && !r && !pe && !be,
+						Ce = {
+							baseUrl: ce,
 							countrySort: s,
-							sort: w,
-							subredditId: ye,
-							timeSort: A
+							sort: I,
+							subredditId: je,
+							timeSort: M
 						},
-						Ce = l ? this.props.onLoadMoreSearchResults : this.props.onLoadMorePosts,
-						ke = I && I.subscribers;
-					let Ne;
-					const Se = window.URL;
+						ke = l ? this.props.onLoadMoreSearchResults : this.props.onLoadMorePosts,
+						Ne = T && T.subscribers;
+					let Se;
+					const Pe = window.URL;
 					if (At(this.props)) {
-						const e = new Se(f.a.snoovatarUrl + "/static/client/");
-						e.searchParams.set("platform", "desktop"), Ne = u.a.createElement("iframe", {
+						const e = new Pe(f.a.snoovatarUrl + "/static/client/");
+						e.searchParams.set("platform", "desktop"), Se = u.a.createElement("iframe", {
 							className: Object(g.a)(nt.a.af),
 							src: e.href
 						})
-					} else Ee ? Ne = u.a.createElement(It, {
+					} else ye ? Se = u.a.createElement(It, {
 						showCardView: this.props.layout === ue.g.Large
-					}) : Bt(this.props) && this.props.subreddit && (Ne = u.a.createElement(it, {
+					}) : Bt(this.props) && this.props.subreddit && (Se = u.a.createElement(it, {
 						baseUrl: f.a.layersUrl,
 						subredditId: this.props.subreddit.id
 					}));
-					const Pe = E === ue.g.Large && w !== v.X.NEW && !be && !z,
-						we = this.state.shouldShowNewPostPill && Pe,
-						Ie = be ? U.a : $.a,
-						Le = C === Te.a.Blurred && (null == I ? void 0 : I.isNSFW);
+					const we = E === ue.g.Large && I !== v.X.NEW && !he && !K,
+						Ie = this.state.shouldShowNewPostPill && we,
+						Le = he ? U.a : $.a,
+						Ae = k === Te.a.Blurred && (null == T ? void 0 : T.isNSFW);
 					return u.a.createElement(oe.a, {
-						subredditId: ye
+						subredditId: je
 					}, u.a.createElement(Oe.a, {
-						subredditId: ye,
+						subredditId: je,
 						className: Object(g.a)(nt.a.Container, this.props.className),
 						fitPageToContent: !0,
-						navBar: !z && u.a.Children.toArray([u.a.createElement(Q.a, {
-							headerText: I ? I.name : L,
-							disableFullscreen: ve,
+						navBar: !K && u.a.Children.toArray([u.a.createElement(Q.a, {
+							headerText: T ? T.name : A,
+							disableFullscreen: Ee,
 							isTopBannerVariant: !0,
 							key: "headerimage",
-							shouldBlurHeaderImage: Le,
-							subredditOrProfile: I,
-							url: re
+							shouldBlurHeaderImage: Ae,
+							subredditOrProfile: T,
+							url: ce
 						}), u.a.createElement(B.a, {
 							layout: E,
 							key: "idtopbar",
-							subreddit: I || void 0,
-							subredditId: ye,
-							subredditName: L,
-							subredditUrl: re
-						}), d && u.a.createElement(J.a, null), ye && u.a.createElement(ne.a, {
+							subreddit: T || void 0,
+							subredditId: je,
+							subredditName: A,
+							subredditUrl: ce
+						}), d && u.a.createElement(J.a, null), je && u.a.createElement(ne.a, {
 							key: "related-subreddit-carousel",
-							subredditId: ye
+							subredditId: je
 						})]),
-						trendingUnit: Ne,
-						content: u.a.createElement(u.a.Fragment, null, I && I.isQuarantined && u.a.createElement(X.a, {
-							subredditName: L
-						}), I && S && u.a.createElement(D.a, {
-							subreddit: I,
+						trendingUnit: Se,
+						content: u.a.createElement(u.a.Fragment, null, T && T.isQuarantined && u.a.createElement(X.a, {
+							subredditName: A
+						}), T && P && u.a.createElement(D.a, {
+							subreddit: T,
 							listingKey: j,
-							listingName: K
-						}), Ee && u.a.createElement(se.a, {
+							listingName: te
+						}), ye && u.a.createElement(se.a, {
 							className: nt.a.duHeader
 						}, ot._("Popular posts", null, {
 							hk: "Gfyj2"
-						})), je && u.a.createElement(mt, {
-							discoveryUnit: H,
-							subredditName: I ? I.name : L,
-							topContent: M,
+						})), _e && u.a.createElement(mt, {
+							discoveryUnit: V,
+							subredditName: T ? T.name : A,
+							topContent: H,
 							onCloseClick: this.onTopContentDismissed
-						}), !z && m && !(T && T.userIsBanned) && !be && u.a.createElement(Y.a, {
-							subredditName: L
-						}), !be && u.a.createElement(G.a, _e), u.a.createElement(Z.a, null), u.a.createElement(ie.a, {
+						}), !K && m && !(L && L.userIsBanned) && !he && u.a.createElement(Y.a, {
+							subredditName: A
+						}), !he && u.a.createElement(G.a, Ce), u.a.createElement(Z.a, null), u.a.createElement(ie.a, {
 							handlePillClick: this.props.refreshFeed,
 							listingKey: j,
-							subredditName: L,
-							subscriberCount: ke
-						}), be && u.a.createElement(F.a, {
-							subreddit: I
-						}), we && u.a.createElement(ee.a, {
+							subredditName: A,
+							subscriberCount: Ne
+						}), he && u.a.createElement(F.a, {
+							subreddit: T
+						}), Ie && u.a.createElement(ee.a, {
 							onClick: this.onNewPostPillClick,
-							subredditName: L
-						}), u.a.createElement(Ie, {
-							getInjectChildren: be ? void 0 : q,
+							subredditName: A
+						}), u.a.createElement(Le, {
+							getInjectChildren: he ? void 0 : z,
 							isCommentCountAnimationEnabled: i,
 							isVoteCountAnimationEnabled: x,
 							isCountAnimShadowTestEnabled: c,
 							listingKey: j,
-							listingName: K,
+							listingName: te,
 							listingViewed: this.onViewed,
-							triggerNewPostPill: Pe ? this.renderNewPostPill : void 0,
+							triggerNewPostPill: we ? this.renderNewPostPill : void 0,
 							noPostsComponent: this.noPostsComponent,
-							onLoadMore: Ce,
-							onScroll: P,
-							inSubredditOrProfile: !z,
-							disablePlaceholder: p && w === v.X.AWARDED,
+							onLoadMore: ke,
+							onScroll: w,
+							inSubredditOrProfile: !K,
+							disablePlaceholder: p && I === v.X.AWARDED,
 							isBlockingInterstitialEnabled: o || a
 						})),
-						sidebar: he
+						sidebar: ge
 					}))
 				}
 			}
@@ -15489,4 +15489,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.b19c38d8d3214e871e9d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.9e25385dad3d05718496.js.map
