@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.526b4481d1bf5b4d7c7e.js
-// Retrieved at 4/25/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.ad324b3749d062d50002.js
+// Retrieved at 4/26/2022, 1:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -771,9 +771,9 @@
 			})), n.d(t, "b", (function() {
 				return h
 			})), n.d(t, "d", (function() {
-				return m
-			})), n.d(t, "c", (function() {
 				return v
+			})), n.d(t, "c", (function() {
+				return O
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -802,7 +802,7 @@
 							invitePolicy: u.a[t.invite_policy]
 						}))
 					} else e(p(s.error))
-				}, y = Object(s.a)("USER_SETTINGS__SAVE_PENDING"), g = Object(s.a)("USER_SETTINGS__SAVE_FAILURE"), m = e => async (t, n, s) => {
+				}, y = Object(s.a)("USER_SETTINGS__SAVE_PENDING"), g = Object(s.a)("USER_SETTINGS__SAVE_FAILURE"), m = e => Object.keys(u.a).find(t => u.a[t] === e), v = e => async (t, n, s) => {
 					let {
 						apiContext: l
 					} = s;
@@ -810,20 +810,21 @@
 						{
 							invitePolicy: f
 						} = e,
-						h = Object.keys(u.a).find(e => u.a[e] === f);
+						h = m(f);
 					if (h) {
 						t(y());
-						const e = await Object(o.e)(h, l());
-						if (Object(i.a)((e => t => ({
+						const e = m(p.user.chatSettings.invitePolicy),
+							n = await Object(o.e)(h, l());
+						if (Object(i.a)(((e, t) => n => ({
 								source: "settings_privacy",
 								action: "save",
 								noun: "receive_chat_invites",
 								setting: {
 									value: e,
-									oldValue: e
+									oldValue: t
 								},
-								...Object(c.n)(t)
-							}))(h)(p)), e.ok) {
+								...Object(c.n)(n)
+							}))(h, e)(p)), n.ok) {
 							const e = u.a[h];
 							t(b({
 								invitePolicy: e
@@ -833,9 +834,9 @@
 									hk: "4eTtdy"
 								})
 							}))
-						} else t(g(e.error))
+						} else t(g(n.error))
 					}
-				}, v = () => async (e, t, n) => {
+				}, O = () => async (e, t, n) => {
 					let {
 						gqlContext: r
 					} = n;
@@ -26218,4 +26219,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.526b4481d1bf5b4d7c7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ad324b3749d062d50002.js.map
