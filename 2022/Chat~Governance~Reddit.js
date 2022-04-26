@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.39e7af061582010c4134.js
-// Retrieved at 4/26/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9cb1b7d73e6898cc14af.js
+// Retrieved at 4/26/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("163507"),
+				buildNumber: Object(r.c)("163516"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1650995305"),
+				buildTimestamp: Object(r.b)("1651001639"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6085,14 +6085,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c514db481849d6d1e7eadeb581506dc08d337cd7c-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c631d7b81a1c20eb55b4ff800390c34951fee586a-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "514db481849d6d1e7eadeb581506dc08d337cd7c-production",
+						release: "631d7b81a1c20eb55b4ff800390c34951fee586a-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6701,7 +6701,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "514db481849d6d1e7eadeb581506dc08d337cd7c-production",
+							releaseClient: "631d7b81a1c20eb55b4ff800390c34951fee586a-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -13695,21 +13695,21 @@
 		},
 		"./src/reddit/actions/subredditModeration/constants.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "X", (function() {
+			i.d(t, "Y", (function() {
 				return n
-			})), i.d(t, "V", (function() {
-				return r
-			})), i.d(t, "U", (function() {
-				return s
-			})), i.d(t, "ab", (function() {
-				return o
-			})), i.d(t, "Z", (function() {
-				return d
-			})), i.d(t, "Y", (function() {
-				return a
 			})), i.d(t, "W", (function() {
-				return l
+				return r
+			})), i.d(t, "V", (function() {
+				return s
 			})), i.d(t, "bb", (function() {
+				return o
+			})), i.d(t, "ab", (function() {
+				return d
+			})), i.d(t, "Z", (function() {
+				return a
+			})), i.d(t, "X", (function() {
+				return l
+			})), i.d(t, "cb", (function() {
 				return u
 			})), i.d(t, "g", (function() {
 				return c
@@ -13733,94 +13733,96 @@
 				return v
 			})), i.d(t, "l", (function() {
 				return y
-			})), i.d(t, "r", (function() {
-				return E
-			})), i.d(t, "q", (function() {
-				return S
-			})), i.d(t, "p", (function() {
-				return T
-			})), i.d(t, "u", (function() {
-				return O
-			})), i.d(t, "t", (function() {
-				return I
-			})), i.d(t, "s", (function() {
-				return R
 			})), i.d(t, "o", (function() {
-				return F
+				return E
+			})), i.d(t, "s", (function() {
+				return S
+			})), i.d(t, "r", (function() {
+				return T
+			})), i.d(t, "q", (function() {
+				return O
 			})), i.d(t, "v", (function() {
+				return I
+			})), i.d(t, "u", (function() {
+				return R
+			})), i.d(t, "t", (function() {
+				return F
+			})), i.d(t, "p", (function() {
 				return C
-			})), i.d(t, "L", (function() {
-				return N
-			})), i.d(t, "K", (function() {
-				return A
-			})), i.d(t, "J", (function() {
-				return j
-			})), i.d(t, "y", (function() {
-				return D
-			})), i.d(t, "x", (function() {
-				return P
 			})), i.d(t, "w", (function() {
-				return x
-			})), i.d(t, "E", (function() {
-				return L
-			})), i.d(t, "D", (function() {
-				return k
-			})), i.d(t, "C", (function() {
-				return B
-			})), i.d(t, "a", (function() {
-				return M
-			})), i.d(t, "c", (function() {
-				return U
-			})), i.d(t, "b", (function() {
-				return G
-			})), i.d(t, "gb", (function() {
-				return V
-			})), i.d(t, "ib", (function() {
-				return H
-			})), i.d(t, "hb", (function() {
-				return q
-			})), i.d(t, "jb", (function() {
-				return W
-			})), i.d(t, "z", (function() {
-				return K
-			})), i.d(t, "B", (function() {
-				return z
-			})), i.d(t, "A", (function() {
-				return Y
-			})), i.d(t, "O", (function() {
-				return $
-			})), i.d(t, "N", (function() {
-				return Q
+				return N
 			})), i.d(t, "M", (function() {
-				return J
-			})), i.d(t, "H", (function() {
-				return X
-			})), i.d(t, "cb", (function() {
-				return Z
-			})), i.d(t, "I", (function() {
-				return ee
-			})), i.d(t, "db", (function() {
-				return te
-			})), i.d(t, "fb", (function() {
-				return ie
-			})), i.d(t, "eb", (function() {
-				return ne
-			})), i.d(t, "G", (function() {
-				return re
+				return A
+			})), i.d(t, "L", (function() {
+				return j
+			})), i.d(t, "K", (function() {
+				return D
+			})), i.d(t, "z", (function() {
+				return P
+			})), i.d(t, "y", (function() {
+				return x
+			})), i.d(t, "x", (function() {
+				return L
 			})), i.d(t, "F", (function() {
-				return se
-			})), i.d(t, "T", (function() {
-				return oe
-			})), i.d(t, "S", (function() {
-				return de
-			})), i.d(t, "R", (function() {
-				return ae
-			})), i.d(t, "Q", (function() {
-				return le
+				return k
+			})), i.d(t, "E", (function() {
+				return B
+			})), i.d(t, "D", (function() {
+				return M
+			})), i.d(t, "a", (function() {
+				return U
+			})), i.d(t, "c", (function() {
+				return G
+			})), i.d(t, "b", (function() {
+				return V
+			})), i.d(t, "hb", (function() {
+				return H
+			})), i.d(t, "jb", (function() {
+				return q
+			})), i.d(t, "ib", (function() {
+				return W
 			})), i.d(t, "kb", (function() {
-				return ue
+				return K
+			})), i.d(t, "A", (function() {
+				return z
+			})), i.d(t, "C", (function() {
+				return Y
+			})), i.d(t, "B", (function() {
+				return $
 			})), i.d(t, "P", (function() {
+				return Q
+			})), i.d(t, "O", (function() {
+				return J
+			})), i.d(t, "N", (function() {
+				return X
+			})), i.d(t, "I", (function() {
+				return Z
+			})), i.d(t, "db", (function() {
+				return ee
+			})), i.d(t, "J", (function() {
+				return te
+			})), i.d(t, "eb", (function() {
+				return ie
+			})), i.d(t, "gb", (function() {
+				return ne
+			})), i.d(t, "fb", (function() {
+				return re
+			})), i.d(t, "H", (function() {
+				return se
+			})), i.d(t, "G", (function() {
+				return oe
+			})), i.d(t, "U", (function() {
+				return de
+			})), i.d(t, "T", (function() {
+				return ae
+			})), i.d(t, "S", (function() {
+				return le
+			})), i.d(t, "R", (function() {
+				return ue
+			})), i.d(t, "lb", (function() {
 				return ce
+			})), i.d(t, "Q", (function() {
+				return _e
 			}));
 			const n = "SUBREDDIT__MUTEDUSERS_PENDING",
 				r = "SUBREDDIT__MUTEDUSERS_LOADED",
@@ -13841,50 +13843,51 @@
 				w = "SUBREDDIT__APPROVEDTALKHOSTS_PENDING",
 				v = "SUBREDDIT__APPROVEDTALKHOSTS_LOADED",
 				y = "SUBREDDIT__APPROVEDTALKHOSTS_FAILED",
-				E = "SUBREDDIT__BANNEDUSERS_PENDING",
-				S = "SUBREDDIT__BANNEDUSERS_LOADED",
-				T = "SUBREDDIT__BANNEDUSERS_FAILED",
-				O = "SUBREDDIT_BANNEDUSERS_SEARCH_PENDING",
-				I = "SUBREDDIT_BANNEDUSERS_SEARCH_LOADED",
-				R = "SUBREDDIT_BANNEDUSERS_SEARCH_FAILED",
-				F = "SUBREDDIT_BANNEDUSERS_BAN_SUCCESS",
-				C = "SUBREDDIT_BANNEDUSERS_UNBAN_SUCCESS",
-				N = "SUBREDDIT__MODERATORS_PENDING",
-				A = "SUBREDDIT__MODERATORS_LOADED",
-				j = "SUBREDDIT__MODERATORS_FAILED",
-				D = "SUBREDDIT__EDITABLEMODERATORS_PENDING",
-				P = "SUBREDDIT__EDITABLEMODERATORS_LOADED",
-				x = "SUBREDDIT__EDITABLEMODERATORS_FAILED",
-				L = "SUBREDDIT__INVITEDMODERATORS_PENDING",
-				k = "SUBREDDIT__INVITEDMODERATORS_LOADED",
-				B = "SUBREDDIT__INVITEDMODERATORS_FAILED",
-				M = "SUBREDDIT__ADDMODERATOR_PENDING",
-				U = "SUBREDDIT__ADDMODERATOR__SUCCESS",
-				G = "SUBREDDIT__ADDMODERATOR__FAILED",
-				V = "SUBREDDIT__REMOVEMODERATOR_PENDING",
-				H = "SUBREDDIT__REMOVEMODERATOR__SUCCESS",
-				q = "SUBREDDIT__REMOVEMODERATOR__FAILED",
-				W = "SUBREDDIT__RESIGNMODERATOR__SUCCESS",
-				K = "SUBREDDIT__EDITMODERATOR_PENDING",
-				z = "SUBREDDIT__EDITMODERATOR__SUCCESS",
-				Y = "SUBREDDIT__EDITMODERATOR__FAILED",
-				$ = "SUBREDDIT_MODERATORS_SEARCH_PENDING",
-				Q = "SUBREDDIT_MODERATORS_SEARCH_LOADED",
-				J = "SUBREDDIT_MODERATORS_SEARCH_FAILED",
-				X = "SUBREDDIT_MODERATORS_ACCEPT_INVITE_SUCCESS",
-				Z = "SUBREDDIT_NEWMODERATORPERMISSIONS_LOADED",
-				ee = "SUBREDDIT_MODERATORS_DECLINE_INVITE_SUCCESS",
-				te = "SUBREDDIT__REMOVEINVITEDMODERATOR_PENDING",
-				ie = "SUBREDDIT__REMOVEINVITEDMODERATOR__SUCCESS",
-				ne = "SUBREDDIT__REMOVEINVITEDMODERATOR__FAILED",
-				re = "LAST_AUTHOR_MOD_NOTE_LOADED",
-				se = "LAST_AUTHOR_MOD_NOTE_BATCH_LOADED",
-				oe = "SUBREDDIT__MODUSERNOTES_PENDING",
-				de = "SUBREDDIT__MODUSERNOTES_LOADED",
-				ae = "SUBREDDIT__MODUSERNOTES_FAILED",
-				le = "SUBREDDIT_MODUSERNOTES_DELETE_SUCCESS",
-				ue = "SUBREDDIT_TOTAL_MOD_NOTES_COUNT_LOADED",
-				ce = "SUBREDDIT__MODNOTE_CREATED"
+				E = "SUBREDDIT__APPROVEDTALKHOSTS_REMOVED_SUCCESS",
+				S = "SUBREDDIT__BANNEDUSERS_PENDING",
+				T = "SUBREDDIT__BANNEDUSERS_LOADED",
+				O = "SUBREDDIT__BANNEDUSERS_FAILED",
+				I = "SUBREDDIT_BANNEDUSERS_SEARCH_PENDING",
+				R = "SUBREDDIT_BANNEDUSERS_SEARCH_LOADED",
+				F = "SUBREDDIT_BANNEDUSERS_SEARCH_FAILED",
+				C = "SUBREDDIT_BANNEDUSERS_BAN_SUCCESS",
+				N = "SUBREDDIT_BANNEDUSERS_UNBAN_SUCCESS",
+				A = "SUBREDDIT__MODERATORS_PENDING",
+				j = "SUBREDDIT__MODERATORS_LOADED",
+				D = "SUBREDDIT__MODERATORS_FAILED",
+				P = "SUBREDDIT__EDITABLEMODERATORS_PENDING",
+				x = "SUBREDDIT__EDITABLEMODERATORS_LOADED",
+				L = "SUBREDDIT__EDITABLEMODERATORS_FAILED",
+				k = "SUBREDDIT__INVITEDMODERATORS_PENDING",
+				B = "SUBREDDIT__INVITEDMODERATORS_LOADED",
+				M = "SUBREDDIT__INVITEDMODERATORS_FAILED",
+				U = "SUBREDDIT__ADDMODERATOR_PENDING",
+				G = "SUBREDDIT__ADDMODERATOR__SUCCESS",
+				V = "SUBREDDIT__ADDMODERATOR__FAILED",
+				H = "SUBREDDIT__REMOVEMODERATOR_PENDING",
+				q = "SUBREDDIT__REMOVEMODERATOR__SUCCESS",
+				W = "SUBREDDIT__REMOVEMODERATOR__FAILED",
+				K = "SUBREDDIT__RESIGNMODERATOR__SUCCESS",
+				z = "SUBREDDIT__EDITMODERATOR_PENDING",
+				Y = "SUBREDDIT__EDITMODERATOR__SUCCESS",
+				$ = "SUBREDDIT__EDITMODERATOR__FAILED",
+				Q = "SUBREDDIT_MODERATORS_SEARCH_PENDING",
+				J = "SUBREDDIT_MODERATORS_SEARCH_LOADED",
+				X = "SUBREDDIT_MODERATORS_SEARCH_FAILED",
+				Z = "SUBREDDIT_MODERATORS_ACCEPT_INVITE_SUCCESS",
+				ee = "SUBREDDIT_NEWMODERATORPERMISSIONS_LOADED",
+				te = "SUBREDDIT_MODERATORS_DECLINE_INVITE_SUCCESS",
+				ie = "SUBREDDIT__REMOVEINVITEDMODERATOR_PENDING",
+				ne = "SUBREDDIT__REMOVEINVITEDMODERATOR__SUCCESS",
+				re = "SUBREDDIT__REMOVEINVITEDMODERATOR__FAILED",
+				se = "LAST_AUTHOR_MOD_NOTE_LOADED",
+				oe = "LAST_AUTHOR_MOD_NOTE_BATCH_LOADED",
+				de = "SUBREDDIT__MODUSERNOTES_PENDING",
+				ae = "SUBREDDIT__MODUSERNOTES_LOADED",
+				le = "SUBREDDIT__MODUSERNOTES_FAILED",
+				ue = "SUBREDDIT_MODUSERNOTES_DELETE_SUCCESS",
+				ce = "SUBREDDIT_TOTAL_MOD_NOTES_COUNT_LOADED",
+				_e = "SUBREDDIT__MODNOTE_CREATED"
 		},
 		"./src/reddit/actions/subredditModeration/index.ts": function(e, t, i) {
 			"use strict";
@@ -13943,12 +13946,12 @@
 				g = i("./src/reddit/selectors/subreddit.ts"),
 				w = i("./src/reddit/selectors/user.ts"),
 				v = i("./src/reddit/actions/subredditModeration/constants.ts");
-			const y = Object(r.a)(v.L),
-				E = Object(r.a)(v.K),
-				S = Object(r.a)(v.J),
-				T = Object(r.a)(v.y),
-				O = Object(r.a)(v.x),
-				I = Object(r.a)(v.w),
+			const y = Object(r.a)(v.M),
+				E = Object(r.a)(v.L),
+				S = Object(r.a)(v.K),
+				T = Object(r.a)(v.z),
+				O = Object(r.a)(v.y),
+				I = Object(r.a)(v.x),
 				R = (e, t) => async (i, n, r) => {
 					let {
 						apiContext: s
@@ -14029,7 +14032,7 @@
 						};
 						i(I(t))
 					}
-				}, C = Object(r.a)(v.E), N = Object(r.a)(v.D), A = Object(r.a)(v.C), j = e => async (t, i, n) => {
+				}, C = Object(r.a)(v.F), N = Object(r.a)(v.E), A = Object(r.a)(v.D), j = e => async (t, i, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -14093,7 +14096,7 @@
 							duration: 3e3
 						})), r(x())
 					}
-				}, k = Object(r.a)(v.gb), B = Object(r.a)(v.ib), M = Object(r.a)(v.hb), U = Object(r.a)(v.jb), G = (e, t, i, n) => async (r, s, u) => {
+				}, k = Object(r.a)(v.hb), B = Object(r.a)(v.jb), M = Object(r.a)(v.ib), U = Object(r.a)(v.kb), G = (e, t, i, n) => async (r, s, u) => {
 					let {
 						apiContext: c
 					} = u;
@@ -14121,7 +14124,7 @@
 							userId: t
 						}))
 					} else r(M())
-				}, V = Object(r.a)(v.z), H = Object(r.a)(v.B), q = Object(r.a)(v.A), W = (e, t, i, n) => async (r, s, u) => {
+				}, V = Object(r.a)(v.A), H = Object(r.a)(v.C), q = Object(r.a)(v.B), W = (e, t, i, n) => async (r, s, u) => {
 					let {
 						apiContext: c
 					} = u;
@@ -14144,7 +14147,7 @@
 							userId: n
 						}))
 					} else r(q())
-				}, K = Object(r.a)(v.O), z = Object(r.a)(v.N), Y = Object(r.a)(v.M), $ = (e, t) => async (i, n, r) => {
+				}, K = Object(r.a)(v.P), z = Object(r.a)(v.O), Y = Object(r.a)(v.N), $ = (e, t) => async (i, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -14155,7 +14158,7 @@
 					i(K());
 					const a = await c(s(), o, d);
 					a.ok ? i(z(a.body)) : i(Y(a.error))
-				}, Q = Object(r.a)(v.H), J = Object(r.a)(v.cb), X = e => async (t, i, n) => {
+				}, Q = Object(r.a)(v.I), J = Object(r.a)(v.db), X = e => async (t, i, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -14186,7 +14189,7 @@
 							}))
 						}
 					}
-				}, Z = Object(r.a)(v.I), ee = e => async (t, i, n) => {
+				}, Z = Object(r.a)(v.J), ee = e => async (t, i, n) => {
 					let {
 						apiContext: r
 					} = n;
@@ -14200,7 +14203,7 @@
 					}))(r(), s)).ok && t(Z({
 						subredditId: e
 					}))
-				}, te = Object(r.a)(v.db), ie = Object(r.a)(v.fb), ne = Object(r.a)(v.eb), re = (e, t) => async (i, n, r) => {
+				}, te = Object(r.a)(v.eb), ie = Object(r.a)(v.gb), ne = Object(r.a)(v.fb), re = (e, t) => async (i, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -32411,7 +32414,7 @@
 							[n]: Object(K.b)(r, i)
 						} : e
 					}
-					case H.q: {
+					case H.r: {
 						const {
 							comments: i
 						} = t.payload;
@@ -47295,4 +47298,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.39e7af061582010c4134.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.9cb1b7d73e6898cc14af.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.69c793b93baa1247ec4f.js
-// Retrieved at 4/26/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.f1c630079db2ad2954cb.js
+// Retrieved at 4/26/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1756,10 +1756,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
+					case O.s:
 					case O.r:
-					case O.q:
 						return null;
-					case O.p:
+					case O.q:
 						return t.payload;
 					default:
 						return e
@@ -1770,7 +1770,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : N,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case O.r: {
+						case O.s: {
 							const {
 								subredditId: n,
 								fetchedToken: s
@@ -1780,8 +1780,8 @@
 								[r]: !0
 							}
 						}
-						case O.q:
-						case O.p: {
+						case O.r:
+						case O.q: {
 							const {
 								subredditId: n,
 								fetchedToken: s
@@ -1804,7 +1804,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : M,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case O.q: {
+						case O.r: {
 							const {
 								fetchedToken: n,
 								subredditId: s
@@ -1834,7 +1834,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : L,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case O.q: {
+						case O.r: {
 							const {
 								subredditId: e,
 								after: n
@@ -1853,8 +1853,8 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : D,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case O.o:
-					case O.q: {
+					case O.p:
+					case O.r: {
 						const {
 							subredditId: n,
 							bannedUsers: s
@@ -1863,7 +1863,7 @@
 							[n]: s
 						})
 					}
-					case O.v: {
+					case O.w: {
 						const {
 							subredditId: n,
 							userId: s
@@ -1878,10 +1878,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
+					case O.v:
 					case O.u:
-					case O.t:
 						return null;
-					case O.s:
+					case O.t:
 						return t.payload;
 					default:
 						return e
@@ -1891,10 +1891,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case O.u:
+						case O.v:
 							return !0;
+						case O.u:
 						case O.t:
-						case O.s:
 							return !1;
 						default:
 							return e
@@ -1908,10 +1908,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case O.u:
-						case O.s:
+						case O.v:
+						case O.t:
 							return null;
-						case O.t: {
+						case O.u: {
 							const e = t.payload.bannedUserIds[0];
 							return e ? t.payload.bannedUsers[e] : null
 						}
@@ -1928,7 +1928,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Y,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case O.q: {
+						case O.r: {
 							const {
 								subredditId: n,
 								bannedUserIds: s
@@ -1941,7 +1941,7 @@
 								[n]: s
 							}
 						}
-						case O.v: {
+						case O.w: {
 							const {
 								subredditId: n,
 								userId: s
@@ -1950,7 +1950,7 @@
 								[n]: e[n].filter(e => e !== s)
 							}
 						}
-						case O.o: {
+						case O.p: {
 							const {
 								subredditId: n,
 								bannedUserIds: s
@@ -1977,9 +1977,9 @@
 					banned: V
 				}
 			});
-			const K = Object(o.a)(O.r),
-				Z = Object(o.a)(O.q),
-				X = Object(o.a)(O.p),
+			const K = Object(o.a)(O.s),
+				Z = Object(o.a)(O.r),
+				X = Object(o.a)(O.q),
 				$ = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 					return async (n, s, r) => {
@@ -2006,9 +2006,9 @@
 						}))
 					}
 				},
-				ee = Object(o.a)(O.u),
-				te = Object(o.a)(O.t),
-				ne = Object(o.a)(O.s),
+				ee = Object(o.a)(O.v),
+				te = Object(o.a)(O.u),
+				ne = Object(o.a)(O.t),
 				se = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: a
@@ -2020,7 +2020,7 @@
 					n(ee());
 					const l = await v(a(), o, i);
 					l.ok ? n(te(l.body)) : n(ne(l.error))
-				}, re = Object(o.a)(O.o), ae = Object(o.a)(O.v), oe = (e, t, n) => async (r, o, l) => {
+				}, re = Object(o.a)(O.p), ae = Object(o.a)(O.w), oe = (e, t, n) => async (r, o, l) => {
 					let {
 						apiContext: c
 					} = l;
@@ -14148,4 +14148,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.69c793b93baa1247ec4f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f1c630079db2ad2954cb.js.map

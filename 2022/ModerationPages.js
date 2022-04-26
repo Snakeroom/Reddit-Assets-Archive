@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.fcd3e9e7eb019691bc12.js
-// Retrieved at 4/26/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.9868c295bad6a2ea791a.js
+// Retrieved at 4/26/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -1950,11 +1950,11 @@
 		"./src/reddit/actions/subredditModeration/approvedTalkHosts.ts": function(e, t, s) {
 			"use strict";
 			s.d(t, "b", (function() {
-				return x
-			})), s.d(t, "a", (function() {
 				return E
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "a", (function() {
 				return v
+			})), s.d(t, "c", (function() {
+				return _
 			}));
 			var n = s("./src/lib/makeActionCreator/index.ts"),
 				a = s("./src/lib/sentry/index.ts"),
@@ -1969,7 +1969,7 @@
 				p = s("./src/reddit/models/Toast/index.ts");
 			const {
 				fbt: h
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), b = Object(n.a)(o.n), g = Object(n.a)(o.m), f = Object(n.a)(o.l), x = e => async (t, s, n) => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), b = Object(n.a)(o.n), g = Object(n.a)(o.m), f = Object(n.a)(o.l), x = Object(n.a)(o.o), E = e => async (t, s, n) => {
 				let {
 					gqlContext: o
 				} = n;
@@ -2043,7 +2043,7 @@
 						}))
 					}
 				}
-			}, E = (e, t) => async (s, n, a) => {
+			}, v = (e, t) => async (s, n, a) => {
 				let {
 					gqlContext: o
 				} = a;
@@ -2060,8 +2060,8 @@
 				}
 				if (!u.ok || !m) return void s(Object(r.f)({
 					kind: p.b.Error,
-					text: h._("Could not find user", null, {
-						hk: "1IwgPy"
+					text: h._("{username} doesn’t exist. Double-check your spelling.", [h._param("username", t)], {
+						hk: "1sikIN"
 					}),
 					duration: 3e3
 				}));
@@ -2081,7 +2081,7 @@
 						}),
 						duration: 3e3
 					}));
-					s(x({
+					s(E({
 						subredditId: e,
 						forceRefresh: !0
 					})), s(Object(r.f)({
@@ -2103,7 +2103,7 @@
 						duration: 3e3
 					}))
 				}
-			}, v = (e, t) => async (s, n, a) => {
+			}, _ = (e, t) => async (s, n, a) => {
 				let {
 					gqlContext: o
 				} = a;
@@ -2125,7 +2125,7 @@
 					}));
 					s(x({
 						subredditId: e,
-						forceRefresh: !0
+						userId: t
 					})), s(Object(r.f)({
 						kind: p.b.SuccessMod,
 						text: h._("User removed from approved hosts list", null, {
@@ -2177,9 +2177,9 @@
 				b = s("./src/reddit/models/Toast/index.ts"),
 				g = s("./src/reddit/actions/toaster.ts"),
 				f = s("./src/reddit/actions/subredditModeration/constants.ts");
-			const x = Object(a.a)(f.X),
-				E = Object(a.a)(f.V),
-				v = Object(a.a)(f.U),
+			const x = Object(a.a)(f.Y),
+				E = Object(a.a)(f.W),
+				v = Object(a.a)(f.V),
 				_ = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 					return async (s, n, a) => {
@@ -2206,9 +2206,9 @@
 						}))
 					}
 				},
-				C = Object(a.a)(f.ab),
-				k = Object(a.a)(f.Z),
-				y = Object(a.a)(f.Y),
+				C = Object(a.a)(f.bb),
+				k = Object(a.a)(f.ab),
+				y = Object(a.a)(f.Z),
 				O = (e, t) => async (s, n, a) => {
 					let {
 						apiContext: o
@@ -2220,7 +2220,7 @@
 					s(C());
 					const d = await u(o(), r, i);
 					d.ok ? s(k(d.body)) : s(y(d.error))
-				}, S = Object(a.a)(f.W), j = Object(a.a)(f.bb), N = (e, t) => async (s, a, o) => {
+				}, S = Object(a.a)(f.X), j = Object(a.a)(f.cb), N = (e, t) => async (s, a, o) => {
 					let {
 						apiContext: m
 					} = o;
@@ -8885,7 +8885,12 @@
 						onConfirm: this.handleRemoveConfirmed,
 						toggleModal: t.toggleRemoveHostModal,
 						withOverlay: !0
-					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(g.a, {
+					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(g.c, null, r.a.createElement(E.l, {
+						disabled: !o,
+						onClick: this.approveTalkHost
+					}, a.fbt._("Add Talk Host", null, {
+						hk: "w94Fa"
+					}))), r.a.createElement(g.a, {
 						className: Object(l.a)(!o && U.a.noPermissions)
 					}, r.a.createElement(g.b, null, a.fbt._("Approved Talk hosts", null, {
 						hk: "4q22YJ"
@@ -23500,4 +23505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.fcd3e9e7eb019691bc12.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.9868c295bad6a2ea791a.js.map

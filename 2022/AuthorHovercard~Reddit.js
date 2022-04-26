@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.2114c81e2864742abf7e.js
-// Retrieved at 4/26/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.417fde67f83c2028dfcc.js
+// Retrieved at 4/26/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -606,22 +606,22 @@
 			}
 			const R = {},
 				H = "",
-				M = 0,
-				F = "200px",
+				F = 0,
+				M = "200px",
 				z = "250px",
 				W = "270px",
 				G = 100,
 				q = .5,
 				K = 5,
 				V = 50,
-				J = 55;
-			class Q extends s.a.Component {
+				Q = 55;
+			class J extends s.a.Component {
 				constructor() {
 					super(...arguments), this.container = s.a.createRef(), this.state = {
 						notificationHeights: R,
 						currentNotificationCursorIndex: -1
 					}, this.resetOverflowMenu = () => {
-						this.props.activeOverflowMenuId.length > M && this.props.setActiveOverflowMenuId(H)
+						this.props.activeOverflowMenuId.length > F && this.props.setActiveOverflowMenuId(H)
 					}, this.getContainerHeight = () => {
 						const {
 							notificationHeights: e
@@ -629,10 +629,10 @@
 							isDNInboxPromptBannerEnabled: t,
 							isInboxPrivacyPolicyBannerEnabled: n,
 							isLoggedIn: r
-						} = this.props, a = t || n, s = window.innerHeight - V - 2 * J - (a ? G : 0);
+						} = this.props, a = t || n, s = window.innerHeight - V - 2 * Q - (a ? G : 0);
 						let o = 0;
 						for (const i in e) o += e[i];
-						return 0 === o ? a ? z : r ? F : W : (a && (o += G), s < o && (o = s + (a ? G : 0)), o)
+						return 0 === o ? a ? z : r ? M : W : (a && (o += G), s < o && (o = s + (a ? G : 0)), o)
 					}, this.setNotificationHeight = (e, t) => {
 						this.setState(n => ({
 							notificationHeights: {
@@ -713,7 +713,7 @@
 							height: h,
 							maxHeight: h
 						} : {
-							minHeight: F
+							minHeight: M
 						}
 					}, v && s.a.createElement("div", {
 						className: S.a.notificationBannerContainer
@@ -869,7 +869,7 @@
 						sendInboxClickSettings: () => t(Object(A.o)(A.c.MiniInbox)),
 						onBarClick: l,
 						isLoggedIn: m
-					}), s.a.createElement(Q, ee({}, e, {
+					}), s.a.createElement(J, ee({}, e, {
 						isPending: a,
 						onItemClick: l,
 						setDesktopNotificationsPromptSeen: g,
@@ -1638,11 +1638,11 @@
 				}).apply(this, arguments)
 			}
 			const H = [w.h.PrivateMessage, w.h.ChatMessage, w.h.ChatRequest, w.h.UsernameMention, w.h.PostReply, w.h.UpvotePost, w.h.UpvoteComment, w.h.CommentReply, w.h.ThreadReplies, w.h.TopLevelComment, w.h.NewPostActivity, w.h.UserNewFollower, w.h.PostFlairAdded, w.h.UserFlairAdded, w.h.NewPinnedPost, w.h.AwardReceived, w.h.PostFollow, w.h.TalkLive, w.h.CommentFollow, w.h.LifecyclePostSuggestions, w.h.BroadcastRecommendation, w.h.SubredditRecommendation, w.h.RedditLore, w.h.OneOff, w.h.CakeDay, w.h.ModeratedSrEngagement];
-			var M;
+			var F;
 			! function(e) {
 				e[e.TURN_ON_PN = 0] = "TURN_ON_PN", e[e.TURN_ON_PN_APP = 1] = "TURN_ON_PN_APP", e[e.VERIFY_EMAIL = 2] = "VERIFY_EMAIL", e[e.TURN_ON_DAYLY_DIGEST = 3] = "TURN_ON_DAYLY_DIGEST", e[e.DONE = 4] = "DONE"
-			}(M || (M = {}));
-			var F = e => {
+			}(F || (F = {}));
+			var M = e => {
 					let {
 						inTooltip: t,
 						isBannerEnabled: n,
@@ -1654,7 +1654,7 @@
 						b = Object(s.e)(D.o),
 						f = Object(s.e)(D.E),
 						y = Object(r.useRef)(b),
-						[O, _] = Object(r.useState)(M.TURN_ON_PN),
+						[O, _] = Object(r.useState)(F.TURN_ON_PN),
 						j = Object(s.e)(e => e.user.accountSettings.changeEmail.api.pending),
 						x = Object(r.useCallback)(() => {
 							m(async (e, t) => {
@@ -1662,28 +1662,28 @@
 								let a = Object(D.gb)(t());
 								a.allIds.length || await e(Object(S.a)(L.a.Email));
 								const s = null === (r = null === (n = (a = Object(D.gb)(t())).byId) || void 0 === n ? void 0 : n.EMAIL_DIGEST) || void 0 === r ? void 0 : r.isEnabled;
-								_(s ? M.DONE : M.TURN_ON_DAYLY_DIGEST)
+								_(s ? F.DONE : F.TURN_ON_DAYLY_DIGEST)
 							})
 						}, [m]),
 						I = Object(r.useCallback)(() => {
-							f ? x() : _(M.VERIFY_EMAIL)
+							f ? x() : _(F.VERIFY_EMAIL)
 						}, [f, x]),
 						k = Object(r.useCallback)(() => {
 							m(async (e, t) => {
 								const n = t();
-								Object(D.ib)(n).allIds.length || await e(Object(S.a)(L.a.Push)), Object(U.c)(t(), H) ? _(M.TURN_ON_PN_APP) : I()
+								Object(D.ib)(n).allIds.length || await e(Object(S.a)(L.a.Push)), Object(U.c)(t(), H) ? _(F.TURN_ON_PN_APP) : I()
 							})
 						}, [m, I]),
 						w = Object(r.useCallback)(() => {
-							(() => Object(N.a)() === E.a.Granted)() ? k(): _(M.TURN_ON_PN)
+							(() => Object(N.a)() === E.a.Granted)() ? k(): _(F.TURN_ON_PN)
 						}, [k]),
-						F = Object(r.useCallback)(() => {
+						M = Object(r.useCallback)(() => {
 							l(o.b.Email_perms)(), t && u && u(), m(Object(C.h)(T.a))
 						}, [m, l, t, u]);
 					if (Object(r.useEffect)(() => {
 							w()
 						}, [w]), Object(r.useEffect)(() => {
-							if (b !== y.current && O === M.VERIFY_EMAIL) {
+							if (b !== y.current && O === F.VERIFY_EMAIL) {
 								const e = Object(P.e)(c.fbt._("Email successfully updated!", null, {
 									hk: "3iPlUp"
 								}), A.b.SuccessCommunityGreen);
@@ -1691,22 +1691,22 @@
 							}
 						}, [b, O, x]), Object(r.useEffect)(() => {
 							j && m(Object(C.g)(T.a))
-						}, [j, m]), O === M.DONE) return a.a.createElement(g, {
+						}, [j, m]), O === F.DONE) return a.a.createElement(g, {
 						isLoggedIn: i,
 						isBannerEnabled: n
 					});
 					const z = {
 							to: "/settings/notifications",
 							kind: p.b.InternalLink,
-							onClick: O === M.TURN_ON_PN_APP ? l(o.b.PN_perms) : l(o.b.Email_perms)
+							onClick: O === F.TURN_ON_PN_APP ? l(o.b.PN_perms) : l(o.b.Email_perms)
 						},
 						W = {
-							onClick: O === M.TURN_ON_PN ? async () => {
+							onClick: O === F.TURN_ON_PN ? async () => {
 								l(o.b.PN_perms)(), t && u && u(), await m(Object(B.requestBrowserNotificationPermissionPromptByUser)(T.f)), w()
-							} : F
+							} : M
 						},
-						G = O === M.TURN_ON_PN || O === M.TURN_ON_PN_APP,
-						q = O === M.TURN_ON_PN_APP || O === M.TURN_ON_DAYLY_DIGEST;
+						G = O === F.TURN_ON_PN || O === F.TURN_ON_PN_APP,
+						q = O === F.TURN_ON_PN_APP || O === F.TURN_ON_DAYLY_DIGEST;
 					return a.a.createElement("div", {
 						className: Object(d.a)(h.a.emptyState, h.a.karmaView, {
 							[h.a.inNotificationsPage]: !t
@@ -1764,7 +1764,7 @@
 				return u || p ? a.a.createElement(k, {
 					inTooltip: r,
 					onBtnClick: l(o.b.Memes)
-				}) : m || b ? a.a.createElement(F, {
+				}) : m || b ? a.a.createElement(M, {
 					isBannerEnabled: t,
 					isLoggedIn: n,
 					inTooltip: r,
@@ -2122,6 +2122,15 @@
 							};
 							return Object(b.merge)(e, s)
 						}
+						case a.o: {
+							const {
+								subredditId: n,
+								userId: r
+							} = t.payload, a = {
+								[n]: e[n].filter(e => e.redditor.id !== r)
+							};
+							return Object(b.merge)(e, a)
+						}
 						default:
 							return e
 					}
@@ -2163,8 +2172,8 @@
 					error: D,
 					pending: R
 				}),
-				M = n("./node_modules/lodash/merge.js"),
-				F = n.n(M),
+				F = n("./node_modules/lodash/merge.js"),
+				M = n.n(F),
 				z = n("./node_modules/lodash/omit.js"),
 				W = n.n(z);
 			const G = {};
@@ -2178,7 +2187,7 @@
 							subredditId: n,
 							flairedUsers: r
 						} = t.payload;
-						return F()({
+						return M()({
 							...e
 						}, {
 							[n]: r
@@ -2230,7 +2239,7 @@
 						return e
 				}
 			};
-			var J = function() {
+			var Q = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -2243,7 +2252,7 @@
 						return e
 				}
 			};
-			var Q = function() {
+			var J = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -2257,8 +2266,8 @@
 					}
 				},
 				Y = Object(r.c)({
-					error: J,
-					pending: Q
+					error: Q,
+					pending: J
 				});
 			var Z = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -2372,7 +2381,7 @@
 							const s = {
 								[r]: a
 							};
-							return F()({
+							return M()({
 								...e
 							}, s)
 						}
@@ -2482,8 +2491,8 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ge,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case a.N:
-					case a.x: {
+					case a.O:
+					case a.y: {
 						const {
 							subredditId: n,
 							moderators: r
@@ -2492,7 +2501,7 @@
 						};
 						return Object(b.merge)(e, a)
 					}
-					case a.B: {
+					case a.C: {
 						const {
 							subredditId: n,
 							userId: r,
@@ -2500,7 +2509,7 @@
 						} = t.payload;
 						return Object(b.setIn)(e, [n, r, "modPermissions"], a)
 					}
-					case a.ib: {
+					case a.jb: {
 						const {
 							subredditId: n,
 							userId: r
@@ -2516,8 +2525,8 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ye,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case a.y:
-					case a.x: {
+					case a.z:
+					case a.y: {
 						const {
 							key: n,
 							subredditId: r
@@ -2527,7 +2536,7 @@
 							[n]: null
 						} : e
 					}
-					case a.w: {
+					case a.x: {
 						const {
 							error: n,
 							key: r,
@@ -2547,8 +2556,8 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _e,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case a.w:
-						case a.x: {
+						case a.x:
+						case a.y: {
 							const {
 								subredditId: n,
 								key: r
@@ -2558,7 +2567,7 @@
 								[r]: !1
 							} : e
 						}
-						case a.y: {
+						case a.z: {
 							const {
 								subredditId: n,
 								key: r
@@ -2581,7 +2590,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ie,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case a.x: {
+						case a.y: {
 							const {
 								subredditId: n,
 								response: r,
@@ -2589,7 +2598,7 @@
 							} = t.payload;
 							return Object(b.setIn)(e, [n, a], r.moderatorIds)
 						}
-						case a.ib: {
+						case a.jb: {
 							const {
 								subredditId: n,
 								userId: r,
@@ -2609,10 +2618,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
+					case a.F:
 					case a.E:
-					case a.D:
 						return null;
-					case a.C:
+					case a.D:
 						return t.payload;
 					default:
 						return e
@@ -2622,10 +2631,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case a.D:
-						case a.C:
-							return !1;
 						case a.E:
+						case a.D:
+							return !1;
+						case a.F:
 							return !0;
 						default:
 							return e
@@ -2640,14 +2649,14 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Be,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case a.D: {
+					case a.E: {
 						const {
 							subredditId: n,
 							moderators: r
 						} = t.payload;
 						return Object(b.set)(e, n, r)
 					}
-					case a.fb: {
+					case a.gb: {
 						const {
 							subredditId: n,
 							userId: r
@@ -2674,7 +2683,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Pe,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case a.D: {
+						case a.E: {
 							const {
 								subredditId: n,
 								moderatorIds: r
@@ -2684,7 +2693,7 @@
 								[n]: r
 							}
 						}
-						case a.fb: {
+						case a.gb: {
 							const {
 								subredditId: n,
 								userId: r
@@ -2720,7 +2729,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ae,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case a.K: {
+					case a.L: {
 						const {
 							subredditId: n,
 							response: r
@@ -2731,8 +2740,8 @@
 						};
 						return Object(b.merge)(e, s)
 					}
-					case a.H:
-					case a.I: {
+					case a.I:
+					case a.J: {
 						const {
 							subredditId: n
 						} = t.payload;
@@ -2747,7 +2756,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : De,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case a.x: {
+					case a.y: {
 						const {
 							response: e
 						} = t.payload;
@@ -2763,11 +2772,11 @@
 				}
 			};
 			const He = {};
-			var Me = function() {
+			var Fe = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : He,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case a.K: {
+					case a.L: {
 						const {
 							response: e
 						} = t.payload;
@@ -2782,12 +2791,12 @@
 						return e
 				}
 			};
-			const Fe = {};
+			const Me = {};
 			var ze = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Fe,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Me,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case a.K: {
+					case a.L: {
 						const {
 							response: n
 						} = t.payload, r = {
@@ -2797,7 +2806,7 @@
 							...e
 						}, r)
 					}
-					case a.B: {
+					case a.C: {
 						const n = t.payload,
 							{
 								subredditId: r,
@@ -2814,10 +2823,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
+					case a.P:
 					case a.O:
-					case a.N:
 						return null;
-					case a.M:
+					case a.N:
 						return t.payload;
 					default:
 						return e
@@ -2827,10 +2836,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case a.O:
+						case a.P:
 							return !0;
+						case a.O:
 						case a.N:
-						case a.M:
 							return !1;
 						default:
 							return e
@@ -2842,19 +2851,19 @@
 				}),
 				Ke = n("./node_modules/lodash/isEqual.js"),
 				Ve = n.n(Ke);
-			var Je = function() {
+			var Qe = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case a.O:
-						case a.M:
-						case a.ib:
+						case a.P:
+						case a.N:
+						case a.jb:
 							return null;
-						case a.N: {
+						case a.O: {
 							const e = t.payload.moderatorIds[0];
 							return e ? t.payload.moderators[e] : null
 						}
-						case a.B: {
+						case a.C: {
 							const {
 								userId: n,
 								permissions: r
@@ -2868,17 +2877,17 @@
 							return e
 					}
 				},
-				Qe = Object(r.c)({
+				Je = Object(r.c)({
 					api: qe,
-					result: Je
+					result: Qe
 				});
 			const Ye = {};
 			var Ze = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Ye,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case a.L:
-					case a.K: {
+					case a.M:
+					case a.L: {
 						const {
 							subredditId: n,
 							key: r
@@ -2888,7 +2897,7 @@
 							[r]: null
 						} : e
 					}
-					case a.J: {
+					case a.K: {
 						const {
 							error: n,
 							subredditId: r,
@@ -2908,8 +2917,8 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Xe,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case a.J:
-						case a.K: {
+						case a.K:
+						case a.L: {
 							const {
 								subredditId: n,
 								key: r
@@ -2919,7 +2928,7 @@
 								[r]: !1
 							} : e
 						}
-						case a.L: {
+						case a.M: {
 							const {
 								subredditId: n,
 								key: r
@@ -2943,7 +2952,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : tt,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case a.K: {
+						case a.L: {
 							const {
 								response: n,
 								subredditId: r,
@@ -2957,7 +2966,7 @@
 								}
 							})
 						}
-						case a.ib: {
+						case a.jb: {
 							const {
 								subredditId: n,
 								userId: r
@@ -2982,10 +2991,10 @@
 					editableUserOrder: Ne,
 					invitedModerators: Le,
 					invitePending: Ue,
-					loadMoreModerators: Me,
+					loadMoreModerators: Fe,
 					loadMoreEditableModerators: Re,
 					models: ze,
-					search: Qe,
+					search: Je,
 					userOrder: rt
 				}),
 				st = n("./src/reddit/actions/bulkActions/constants.ts");
@@ -3349,7 +3358,7 @@
 						return e
 				}
 			};
-			var Mt = function() {
+			var Ft = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -3362,9 +3371,9 @@
 							return e
 					}
 				},
-				Ft = Object(r.c)({
+				Mt = Object(r.c)({
 					error: Ht,
-					pending: Mt
+					pending: Ft
 				});
 			const zt = {};
 			var Wt = function() {
@@ -3413,7 +3422,7 @@
 					}
 				},
 				Kt = Object(r.c)({
-					api: Ft,
+					api: Mt,
 					itemOrder: Wt,
 					loadMore: qt
 				});
@@ -3430,7 +3439,7 @@
 						return e
 				}
 			};
-			var Jt = function() {
+			var Qt = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -3443,9 +3452,9 @@
 							return e
 					}
 				},
-				Qt = Object(r.c)({
+				Jt = Object(r.c)({
 					error: Vt,
-					pending: Jt
+					pending: Qt
 				});
 			const Yt = {};
 			var Zt = function() {
@@ -3494,7 +3503,7 @@
 					}
 				},
 				en = Object(r.c)({
-					api: Qt,
+					api: Jt,
 					itemOrder: Zt,
 					loadMore: $t
 				});
@@ -3592,10 +3601,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case a.X:
-					case a.V:
+					case a.Y:
+					case a.W:
 						return null;
-					case a.U:
+					case a.V:
 						return t.payload;
 					default:
 						return e
@@ -3606,7 +3615,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : pn,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case a.X: {
+						case a.Y: {
 							const {
 								subredditId: n,
 								fetchedToken: r
@@ -3616,8 +3625,8 @@
 								[a]: !0
 							}
 						}
-						case a.V:
-						case a.U: {
+						case a.W:
+						case a.V: {
 							const {
 								subredditId: n,
 								fetchedToken: r
@@ -3640,7 +3649,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : hn,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case a.V: {
+						case a.W: {
 							const {
 								fetchedToken: n,
 								subredditId: r
@@ -3670,7 +3679,7 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : yn,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case a.V: {
+					case a.W: {
 						const {
 							subredditId: e,
 							after: n
@@ -3688,8 +3697,8 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : _n,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case a.W:
-					case a.V: {
+					case a.X:
+					case a.W: {
 						const {
 							subredditId: n,
 							mutedUsers: r
@@ -3698,7 +3707,7 @@
 						};
 						return Object(b.merge)(e, a)
 					}
-					case a.bb: {
+					case a.cb: {
 						const {
 							subredditId: n,
 							userId: r
@@ -3713,10 +3722,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
+					case a.bb:
 					case a.ab:
-					case a.Z:
 						return null;
-					case a.Y:
+					case a.Z:
 						return t.payload;
 					default:
 						return e
@@ -3726,10 +3735,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case a.ab:
+						case a.bb:
 							return !0;
+						case a.ab:
 						case a.Z:
-						case a.Y:
 							return !1;
 						default:
 							return e
@@ -3743,10 +3752,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case a.ab:
-						case a.Y:
+						case a.bb:
+						case a.Z:
 							return null;
-						case a.Z: {
+						case a.ab: {
 							const e = t.payload.mutedUserIds[0];
 							return e ? t.payload.mutedUsers[e] : null
 						}
@@ -3763,7 +3772,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : wn,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case a.V: {
+						case a.W: {
 							const {
 								subredditId: n,
 								mutedUserIds: r
@@ -3776,7 +3785,7 @@
 								[n]: r
 							}
 						}
-						case a.bb: {
+						case a.cb: {
 							const {
 								subredditId: n,
 								userId: r
@@ -3785,7 +3794,7 @@
 								[n]: e[n].filter(e => e !== r)
 							}
 						}
-						case a.W: {
+						case a.X: {
 							const {
 								subredditId: n,
 								mutedUserIds: r
@@ -4001,4 +4010,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.2114c81e2864742abf7e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.417fde67f83c2028dfcc.js.map
