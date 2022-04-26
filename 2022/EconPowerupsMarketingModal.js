@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.f204ed9a3ba3d4dbf66c.js
-// Retrieved at 4/25/2022, 3:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.08a37447bb42f49406dd.js
+// Retrieved at 4/26/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -504,9 +504,9 @@
 					return e || (r = r.filter(e => e !== P.a.PowerupsAward)), t || (r = r.filter(e => e !== P.a.CommunityGear)), r
 				});
 			var T = r("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
-				L = r.n(T);
+				A = r.n(T);
 			const {
-				fbt: A
+				fbt: L
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), R = e => e.length % 2 == 1 ? [...e, P.a.More] : e;
 			var B = function(e) {
 					const {
@@ -515,9 +515,9 @@
 						r(Object(x.g)(e.telemetryTag))
 					};
 					return o.a.createElement("div", {
-						className: Object(d.a)(L.a.container, t)
+						className: Object(d.a)(A.a.container, t)
 					}, a.map(e => e.title && o.a.createElement(N.a, {
-						className: L.a.benefit,
+						className: A.a.benefit,
 						benefit: e,
 						key: e.key,
 						onClick: c
@@ -1074,9 +1074,9 @@
 				P = Object(o.a)(n.qd),
 				C = Object(o.a)(n.ud),
 				M = Object(o.a)(n.td),
-				S = Object(o.a)(n.Lf),
+				S = Object(o.a)(n.Mf),
 				I = Object(o.a)(n.sd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.f204ed9a3ba3d4dbf66c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.08a37447bb42f49406dd.js.map

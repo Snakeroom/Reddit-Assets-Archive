@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.b3d698de907b7d0d49dd.js
-// Retrieved at 4/20/2022, 5:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.6b74f4f0339570cf8ecb.js
+// Retrieved at 4/26/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -122,9 +122,9 @@
 			})), n.d(t, "n", (function() {
 				return v
 			})), n.d(t, "o", (function() {
-				return C
-			})), n.d(t, "p", (function() {
 				return E
+			})), n.d(t, "p", (function() {
+				return C
 			})), n.d(t, "q", (function() {
 				return _
 			})), n.d(t, "r", (function() {
@@ -134,11 +134,11 @@
 			})), n.d(t, "t", (function() {
 				return O
 			})), n.d(t, "u", (function() {
-				return g
-			})), n.d(t, "v", (function() {
-				return x
-			})), n.d(t, "w", (function() {
 				return N
+			})), n.d(t, "v", (function() {
+				return g
+			})), n.d(t, "w", (function() {
+				return x
 			})), n.d(t, "x", (function() {
 				return k
 			}));
@@ -156,15 +156,15 @@
 				p = "GOVERNANCE__PUBLIC_WALLET_INFO_FAILURE",
 				f = "GOVERNANCE__PUBLIC_WALLET_INFO_PENDING",
 				v = "GOVERNANCE__PUBLIC_WALLET_INFO_SUCCESS",
-				C = "GOVERNANCE__RELEASE_NOTES_MODAL_OPENED",
-				E = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
+				E = "GOVERNANCE__RELEASE_NOTES_MODAL_OPENED",
+				C = "GOVERNANCE__RELEASE_NOTES_SUCCESS",
 				_ = "GOVERNANCE__TRANSFER_FAILURE",
 				h = "GOVERNANCE__TRANSFER_MODAL_OPENED",
 				y = "GOVERNANCE__TRANSFER_PENDING",
 				O = "GOVERNANCE__TRANSFER_SUCCESS",
-				g = "GOVERNANCE__WALLETS_FETCH_FAILURE",
-				x = "GOVERNANCE__WALLETS_FETCH_PENDING",
-				N = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
+				N = "GOVERNANCE__WALLETS_FETCH_FAILURE",
+				g = "GOVERNANCE__WALLETS_FETCH_PENDING",
+				x = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
 				k = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, n) {
@@ -191,15 +191,15 @@
 			})), n.d(t, "b", (function() {
 				return y
 			})), n.d(t, "c", (function() {
-				return g
+				return N
 			})), n.d(t, "f", (function() {
 				return w
 			})), n.d(t, "g", (function() {
 				return L
 			})), n.d(t, "d", (function() {
-				return R
-			})), n.d(t, "e", (function() {
 				return M
+			})), n.d(t, "e", (function() {
+				return R
 			})), n.d(t, "h", (function() {
 				return G
 			}));
@@ -217,31 +217,31 @@
 			var p = n("./src/reddit/endpoints/governance/wallet.ts"),
 				f = n("./src/reddit/models/Toast/index.ts"),
 				v = n("./src/reddit/models/Vote/index.ts"),
-				C = n("./src/reddit/selectors/crypto/points.ts"),
-				E = n("./src/reddit/actions/governance/constants.ts"),
+				E = n("./src/reddit/selectors/crypto/points.ts"),
+				C = n("./src/reddit/actions/governance/constants.ts"),
 				_ = n("./src/reddit/actions/governance/errorToast.ts");
-			const h = Object(s.a)(E.b),
-				y = Object(s.a)(E.c),
-				O = Object(s.a)(E.e),
-				g = (Object(s.a)(E.f), Object(s.a)(E.g), Object(s.a)(E.h)),
-				x = Object(s.a)(E.i),
-				N = Object(s.a)(E.j),
-				k = Object(s.a)(E.k),
-				j = Object(s.a)(E.q),
-				w = Object(s.a)(E.r),
-				I = Object(s.a)(E.s),
-				A = Object(s.a)(E.t),
-				P = Object(s.a)(E.u),
-				T = Object(s.a)(E.v),
-				S = Object(s.a)(E.w),
-				L = Object(s.a)(E.x),
-				R = (e, t) => async (n, r, s) => {
+			const h = Object(s.a)(C.b),
+				y = Object(s.a)(C.c),
+				O = Object(s.a)(C.e),
+				N = (Object(s.a)(C.f), Object(s.a)(C.g), Object(s.a)(C.h)),
+				g = Object(s.a)(C.i),
+				x = Object(s.a)(C.j),
+				k = Object(s.a)(C.k),
+				j = Object(s.a)(C.q),
+				w = Object(s.a)(C.r),
+				I = Object(s.a)(C.s),
+				A = Object(s.a)(C.t),
+				P = Object(s.a)(C.u),
+				T = Object(s.a)(C.v),
+				S = Object(s.a)(C.w),
+				L = Object(s.a)(C.x),
+				M = (e, t) => async (n, r, s) => {
 					let o, {
 							apiContext: i,
 							gqlContext: c
 						} = s,
 						p = r().polls.models[e];
-					if (n(N({
+					if (n(x({
 							pollId: e
 						})), (o = p.type === u.a.GA ? await ((e, t, n) => Object(l.a)(e, {
 								...m,
@@ -275,11 +275,11 @@
 							} = p, t = s.posts.models[e];
 							t && t.voteState === v.a.notVoted && n(Object(a.kb)(e))
 						}
-					} else n(x({
+					} else n(g({
 						pollId: e,
 						error: o.error || o.errors[0].message
 					})), Object(_.a)(n, o.error || o.errors[0].messsage)
-				}, M = (e, t) => async (n, s, a) => {
+				}, R = (e, t) => async (n, s, a) => {
 					let {
 						apiContext: l
 					} = a;
@@ -307,7 +307,7 @@
 						subredditId: e.subredditId
 					})), n(Object(c.f)({
 						kind: f.b.SuccessCommunity,
-						text: r.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [r.fbt._param("amount", Object(o.a)(e.amount)), r.fbt._param("tokenName", (null === (u = Object(C.b)(s(), e.subredditId)) || void 0 === u ? void 0 : u.name) || ""), r.fbt._param("recipient", e.recipient)], {
+						text: r.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [r.fbt._param("amount", Object(o.a)(e.amount)), r.fbt._param("tokenName", (null === (u = Object(E.b)(s(), e.subredditId)) || void 0 === u ? void 0 : u.name) || ""), r.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
 					})), t && n(Object(i.f)())) : (n(j({
@@ -383,11 +383,14 @@
 				cell: "_1-v1Zgj9IOmc-oaS_dfHfI",
 				cellBottomLine: "_1YrPtUZyIgZmt7BoC3IOjC",
 				cellContainer: "_3y3jYnCjkWtjpibBnc9e3l",
+				cellContainerMainnet: "_1Ffu-P1aueILV60xjpbUC3",
 				cellTopLine: "-pS2f0b04dtavABCVdrie",
+				ethSymbol: "_1wSLkmLuFJIp69DjqbjtyW",
 				explanation: "_1n5fyOsQxmVlxXd1xuw6fH",
 				title: "_2Q8Se5aIjJDpE5JnGoGI5R",
 				token: "_2tQrDQoIjV3V6CMgrLYXU3",
 				tokenCell: "_2rBuuOwPxb-X6wEPWDBmYH",
+				totals: "GM6WFu9kETycbET1DFkr4",
 				button: "_1Vg1f_Cp7IF32wBdY1l2Gq"
 			}
 		},
@@ -412,7 +415,8 @@
 		"./src/reddit/components/Governance/CommunityCard/index.m.less": function(e, t, n) {
 			e.exports = {
 				loading: "Jfh68QhZqpLgByZUbKyD1",
-				section: "_3o2O8sLNM51xpdzuDH-ocD"
+				section: "_3o2O8sLNM51xpdzuDH-ocD",
+				noborder: "Lplwu8t1ypHTD1JUSjG7Z"
 			}
 		},
 		"./src/reddit/components/Governance/CommunityCard/index.tsx": function(e, t, n) {
@@ -422,49 +426,52 @@
 				o = n("./node_modules/react/index.js"),
 				i = n.n(o),
 				a = n("./node_modules/react-redux/es/index.js"),
-				c = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
-				d = n("./src/reddit/selectors/crypto/points.ts"),
-				l = n("./src/reddit/selectors/gov.ts"),
-				u = n("./node_modules/reselect/es/index.js"),
-				m = n("./src/lib/constants/index.ts"),
-				b = n("./src/lib/prettyPrintNumber/index.ts"),
-				p = n("./src/reddit/actions/economics/me/thunkedActions.ts"),
-				f = n("./src/reddit/actions/governance/index.ts"),
-				v = n("./src/reddit/actions/login.ts"),
-				C = n("./src/reddit/components/Governance/Token/index.tsx"),
-				E = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts"),
-				_ = n("./src/reddit/contexts/PageLayer/index.tsx"),
-				h = n("./src/reddit/controls/Button/index.tsx"),
-				y = n("./src/reddit/featureFlags/index.ts"),
-				O = n("./src/reddit/helpers/governance/tokens.ts");
+				c = n("./src/lib/classNames/index.ts"),
+				d = n("./src/reddit/components/Widgets/ThemedWidget/index.tsx"),
+				l = n("./src/reddit/selectors/crypto/points.ts"),
+				u = n("./src/reddit/selectors/experiments/mainnet.ts"),
+				m = n("./src/reddit/selectors/gov.ts"),
+				b = n("./node_modules/reselect/es/index.js"),
+				p = n("./src/lib/constants/index.ts"),
+				f = n("./src/lib/prettyPrintNumber/index.ts"),
+				v = n("./src/reddit/actions/economics/me/thunkedActions.ts"),
+				E = n("./src/reddit/actions/governance/index.ts"),
+				C = n("./src/reddit/actions/login.ts"),
+				_ = n("./src/reddit/components/Governance/EthSymbol/index.tsx"),
+				h = n("./src/reddit/components/Governance/Token/index.tsx"),
+				y = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts"),
+				O = n("./src/reddit/contexts/PageLayer/index.tsx"),
+				N = n("./src/reddit/controls/Button/index.tsx"),
+				g = n("./src/reddit/featureFlags/index.ts"),
+				x = n("./src/reddit/helpers/governance/tokens.ts");
 			! function(e) {
 				e.Initial = "initial_distribution", e.Mod = "moderator_election"
 			}(r || (r = {}));
-			var g = n("./src/reddit/selectors/crypto/claims.ts"),
-				x = n("./src/reddit/selectors/user.ts"),
-				N = n("./src/higherOrderComponents/asTooltip.tsx"),
-				k = n("./src/lib/copyToClipboard/index.ts"),
-				j = n("./src/reddit/actions/governance/errorToast.ts"),
-				w = n("./src/reddit/actions/toaster.ts"),
-				I = n("./src/reddit/actions/tooltip.ts"),
-				A = n("./src/reddit/contexts/ApiContext.tsx"),
-				P = n("./src/reddit/controls/Dropdown/index.tsx"),
-				T = n("./src/reddit/controls/Dropdown/Row.tsx"),
-				S = n("./src/reddit/endpoints/governance/crypto.ts"),
-				L = n("./src/reddit/helpers/governance/ethereum.ts"),
-				R = n("./src/reddit/icons/svgs/Settings/index.tsx"),
-				M = n("./src/reddit/models/Toast/index.ts"),
-				G = n("./src/reddit/selectors/tooltip.ts"),
-				D = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
-				U = n.n(D);
-			const B = Object(N.a)(P.a),
-				V = "BlockchainWalletInfo--SettingsMenu";
-			class W extends i.a.PureComponent {
+			var k = n("./src/reddit/selectors/crypto/claims.ts"),
+				j = n("./src/reddit/selectors/user.ts"),
+				w = n("./src/higherOrderComponents/asTooltip.tsx"),
+				I = n("./src/lib/copyToClipboard/index.ts"),
+				A = n("./src/reddit/actions/governance/errorToast.ts"),
+				P = n("./src/reddit/actions/toaster.ts"),
+				T = n("./src/reddit/actions/tooltip.ts"),
+				S = n("./src/reddit/contexts/ApiContext.tsx"),
+				L = n("./src/reddit/controls/Dropdown/index.tsx"),
+				M = n("./src/reddit/controls/Dropdown/Row.tsx"),
+				R = n("./src/reddit/endpoints/governance/crypto.ts"),
+				G = n("./src/reddit/helpers/governance/ethereum.ts"),
+				D = n("./src/reddit/icons/svgs/Settings/index.tsx"),
+				U = n("./src/reddit/models/Toast/index.ts"),
+				B = n("./src/reddit/selectors/tooltip.ts"),
+				V = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/BlockchainWalletInfo/index.m.less"),
+				F = n.n(V);
+			const W = Object(w.a)(L.a),
+				H = "BlockchainWalletInfo--SettingsMenu";
+			class Z extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onCopyToClipboard = () => {
-						Object(k.a)(this.props.publicAddress || "")
+						Object(I.a)(this.props.publicAddress || "")
 					}, this.onRemoveMyWallet = async () => {
-						const e = await Object(S.g)(this.props.apiContext(), this.props.points.blockchainProvider, this.props.publicAddress);
+						const e = await Object(R.g)(this.props.apiContext(), this.props.points.blockchainProvider, this.props.publicAddress);
 						e.ok ? this.props.onWalletRemoved() : this.props.onGovernanceError(e.error)
 					}
 				}
@@ -477,45 +484,45 @@
 						publicAddress: o
 					} = this.props;
 					return r && o ? i.a.createElement("div", {
-						className: U.a.publicAddressSection
+						className: F.a.publicAddressSection
 					}, i.a.createElement("div", {
-						className: U.a.publicAddress,
+						className: F.a.publicAddress,
 						title: o
 					}, "publicAddress"), i.a.createElement("div", {
-						className: U.a.yourWalletAddress
+						className: F.a.yourWalletAddress
 					}, s.fbt._("Your Wallet Address", null, {
 						hk: "3mvAs1"
 					}), t && i.a.createElement("button", {
-						className: U.a.settingsButton,
+						className: F.a.settingsButton,
 						title: s.fbt._("Wallet address settings", null, {
 							hk: "3AlpJV"
 						}),
 						role: "menu",
 						onClick: n,
-						id: V
-					}, i.a.createElement(R.a, {
-						className: U.a.settingsIcon
-					})), t && i.a.createElement(B, {
-						tooltipId: V,
+						id: H
+					}, i.a.createElement(D.a, {
+						className: F.a.settingsIcon
+					})), t && i.a.createElement(W, {
+						tooltipId: H,
 						isOpen: e,
 						renderContentsHidden: !0
-					}, i.a.createElement(T.b, {
+					}, i.a.createElement(M.b, {
 						displayText: s.fbt._("Copy My Wallet Address", null, {
 							hk: "16YUPg"
 						}),
 						onClick: this.onCopyToClipboard
-					}), r.blockchainProvider && i.a.createElement(T.b, {
+					}), r.blockchainProvider && i.a.createElement(M.b, {
 						displayText: s.fbt._("Remove My Wallet", null, {
 							hk: "1rH7ul"
 						}),
 						onClick: this.onRemoveMyWallet
-					}), i.a.createElement(T.b, {
+					}), i.a.createElement(M.b, {
 						displayText: s.fbt._("Track {tokenName} in MetaMask", [s.fbt._param("tokenName", r.name)], {
 							hk: "qDCic"
 						}),
 						onClick: () => {
 							var e, t;
-							return Object(L.j)({
+							return Object(G.j)({
 								address: r.contractAddress,
 								symbol: r.symbol,
 								decimals: r.decimals,
@@ -525,111 +532,111 @@
 					})))) : null
 				}
 			}
-			const F = Object(u.c)({
-					dropdownIsOpen: Object(G.b)(V),
+			const q = Object(b.c)({
+					dropdownIsOpen: Object(B.b)(H),
 					isEthereumProvider: (e, t) => {
 						let {
 							subredditId: n
 						} = t;
-						return Object(d.a)(e, n)
+						return Object(l.a)(e, n)
 					},
 					points: (e, t) => {
 						let {
 							subredditId: n
 						} = t;
-						return Object(d.b)(e, n)
+						return Object(l.b)(e, n)
 					}
 				}),
-				H = Object(a.b)(F, (e, t) => ({
+				$ = Object(a.b)(q, (e, t) => ({
 					onGovernanceError: t => {
-						Object(j.a)(e, t)
+						Object(A.a)(e, t)
 					},
-					onOpenDropdown: () => e(Object(I.h)({
-						tooltipId: V
+					onOpenDropdown: () => e(Object(T.h)({
+						tooltipId: H
 					})),
 					onWalletRemoved: () => {
-						e(Object(f.h)({
+						e(Object(E.h)({
 							subredditId: t.subredditId
-						})), e(Object(w.f)({
-							kind: M.b.SuccessCommunityGreen,
+						})), e(Object(P.f)({
+							kind: U.b.SuccessCommunityGreen,
 							text: s.fbt._("Wallet removed successfully!", null, {
 								hk: "3LDwnT"
 							})
 						}))
 					}
 				}));
-			var Z = Object(A.b)(H(W)),
-				q = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
-				$ = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
-				Y = n.n($);
+			var Y = Object(S.b)($(Z)),
+				Q = n("./src/reddit/icons/svgs/QuarantineWarning/index.tsx"),
+				X = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/Risk/index.m.less"),
+				J = n.n(X);
 
-			function Q(e) {
+			function z(e) {
 				return i.a.createElement("div", {
-					className: Y.a.risk
+					className: J.a.risk
 				}, i.a.createElement("div", {
-					className: Y.a.riskTitle
-				}, i.a.createElement(q.a, {
-					className: Y.a.alertIcon
+					className: J.a.riskTitle
+				}, i.a.createElement(Q.a, {
+					className: J.a.alertIcon
 				}), e.title), i.a.createElement("div", {
-					className: Y.a.riskBody
+					className: J.a.riskBody
 				}, e.body))
 			}
-			var X = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				J = n("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/async.ts"),
-				z = n("./src/reddit/controls/LoadingIcon/index.tsx"),
-				K = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				ee = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/UnclaimedPoints/index.m.less"),
-				te = n.n(ee);
+			var K = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				ee = n("./src/reddit/components/Governance/TransactionModals/ClaimPointsModal/async.ts"),
+				te = n("./src/reddit/controls/LoadingIcon/index.tsx"),
+				ne = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
+				re = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/UnclaimedPoints/index.m.less"),
+				se = n.n(re);
 			const {
-				fbt: ne
+				fbt: oe
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function re(e) {
+			function ie(e) {
 				const {
 					claimablePoints: t,
 					subredditId: n
-				} = e, [r, s] = Object(o.useState)(!1), c = Object(a.e)(e => Object(g.a)(e, {
+				} = e, [r, s] = Object(o.useState)(!1), c = Object(a.e)(e => Object(k.a)(e, {
 					subredditId: n
 				}));
 				return i.a.createElement(i.a.Fragment, null, i.a.createElement("div", {
-					className: te.a.container
+					className: se.a.container
 				}, i.a.createElement("div", {
-					className: te.a.content
+					className: se.a.content
 				}, i.a.createElement("div", {
-					className: te.a.title
-				}, ne._("You Have Unclaimed Points", null, {
+					className: se.a.title
+				}, oe._("You Have Unclaimed Points", null, {
 					hk: "3sFlm8"
 				})), i.a.createElement("div", {
-					className: te.a.amount
-				}, i.a.createElement(X.a, {
-					className: te.a.tokenIcon,
+					className: se.a.amount
+				}, i.a.createElement(K.a, {
+					className: se.a.tokenIcon,
 					amount: t,
 					subredditId: n
 				})), i.a.createElement("div", {
-					className: te.a.caption
-				}, ne._("Unclaimed Points", null, {
+					className: se.a.caption
+				}, oe._("Unclaimed Points", null, {
 					hk: "31KZbZ"
-				}))), i.a.createElement(K.a, {
-					className: te.a.snooIcon
-				})), i.a.createElement(h.l, {
-					className: te.a.claimButton,
+				}))), i.a.createElement(ne.a, {
+					className: se.a.snooIcon
+				})), i.a.createElement(N.l, {
+					className: se.a.claimButton,
 					onClick: () => s(!0),
 					disabled: c
-				}, c ? i.a.createElement(i.a.Fragment, null, ne._("Claiming", null, {
+				}, c ? i.a.createElement(i.a.Fragment, null, oe._("Claiming", null, {
 					hk: "3iQUgE"
-				}), i.a.createElement(z.a, {
-					className: te.a.loadingIcon,
+				}), i.a.createElement(te.a, {
+					className: se.a.loadingIcon,
 					sizePx: 6
-				})) : ne._("Claim My Points", null, {
+				})) : oe._("Claim My Points", null, {
 					hk: "1QwLXK"
-				})), r && i.a.createElement(J.a, {
+				})), r && i.a.createElement(ee.a, {
 					subredditId: n,
 					onClose: () => s(!1)
 				}))
 			}
-			var se = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/index.m.less"),
-				oe = n.n(se);
-			class ie extends i.a.PureComponent {
+			var ae = n("./src/reddit/components/Governance/CommunityCard/CommunityTokens/index.m.less"),
+				ce = n.n(ae);
+			class de extends i.a.PureComponent {
 				componentDidMount() {
 					this.props.onFetchMeData();
 					const {
@@ -637,7 +644,7 @@
 						pointsDetails: t,
 						wallet: n
 					} = this.props, r = n && n.publicAddress;
-					Object(E.b)(e) && t.blockchainProvider && !r && this.props.onOpenRegistrationModal()
+					Object(y.b)(e) && t.blockchainProvider && !r && this.props.onOpenRegistrationModal()
 				}
 				render() {
 					const {
@@ -647,15 +654,16 @@
 						distribution: o,
 						isEthereumProvider: a,
 						isLoggedIn: c,
-						nextAvailableClaim: d,
-						onOpenLoginModal: l,
-						onOpenRegistrationModal: u,
-						pointsDetails: p,
-						subredditId: f,
-						wallet: v
-					} = this.props, E = v && v.inactive && function(e, t) {
+						isMainnetEnabled: d,
+						nextAvailableClaim: l,
+						onOpenLoginModal: u,
+						onOpenRegistrationModal: m,
+						pointsDetails: b,
+						subredditId: v,
+						wallet: E
+					} = this.props, C = E && E.inactive && function(e, t) {
 						const n = e.actionScheduledAt - Date.now(),
-							o = Math.max(1, Math.floor(n / m.C)),
+							o = Math.max(1, Math.floor(n / p.C)),
 							i = 1 !== o ? s.fbt._("{numDays} day", [s.fbt._param("numDays", String(o))], {
 								hk: "20neqo"
 							}) : s.fbt._("{numDays} days", [s.fbt._param("numDays", String(o))], {
@@ -679,171 +687,201 @@
 									})
 								}
 						}
-					}(v.inactive, p.name), _ = v && v.publicAddress;
+					}(E.inactive, b.name), y = E && E.publicAddress;
 					return i.a.createElement("div", {
 						className: t
 					}, i.a.createElement("div", {
-						className: oe.a.title
-					}, p.name), i.a.createElement("div", {
-						className: oe.a.cellContainer
-					}, v && ae(i.a.createElement("div", {
-						className: oe.a.tokenCell
-					}, i.a.createElement(C.a, {
-						className: oe.a.token,
-						subredditId: f
-					}), Object(b.a)(Object(O.b)(v.amount, p.displayConversion))), s.fbt._("Your {tokenName}", [s.fbt._param("tokenName", p.name)], {
+						className: ce.a.title
+					}, b.name), !d && i.a.createElement("div", {
+						className: ce.a.cellContainer
+					}, E && le(i.a.createElement("div", {
+						className: ce.a.tokenCell
+					}, i.a.createElement(h.a, {
+						className: ce.a.token,
+						subredditId: v
+					}), Object(f.a)(Object(x.b)(E.amount, b.displayConversion))), s.fbt._("Your {tokenName}", [s.fbt._param("tokenName", b.name)], {
 						hk: "2ylU3V"
-					})), o && ae(Object(b.a)(Object(O.b)(o.totalAvailable, p.displayConversion)), s.fbt._("Total", null, {
+					})), o && le(Object(f.a)(Object(x.b)(o.totalAvailable, b.displayConversion)), s.fbt._("Total", null, {
 						hk: "7GOJU"
-					}))), E && i.a.createElement(Q, {
-						body: E.body,
-						title: E.title
-					}), i.a.createElement("div", {
-						className: oe.a.explanation
-					}, s.fbt._("{tokenName} reward posters, commenters, and moderators for their contributions to the subreddit. They are distributed monthly and used to weight your vote on polls.", [s.fbt._param("tokenName", p.name)], {
+					}))), d && o && i.a.createElement("div", {
+						className: ce.a.totals
+					}, le(i.a.createElement("div", {
+						className: ce.a.tokenCell
+					}, i.a.createElement(h.a, {
+						className: ce.a.token,
+						subredditId: v
+					}), Object(f.a)(Object(x.b)(o.totalAvailable, b.displayConversion))), s.fbt._("Total", null, {
+						hk: "7GOJU"
+					}))), i.a.createElement("div", {
+						className: ce.a.explanation
+					}, s.fbt._("{tokenName} reward posters, commenters, and moderators for their contributions to the subreddit. They are distributed monthly and used to weight your vote on polls.", [s.fbt._param("tokenName", b.name)], {
 						hk: "3BpDbS"
-					})), n && p.blockchainProvider && i.a.createElement(Z, {
-						publicAddress: _,
-						subredditId: f
-					}), n && !_ && a && i.a.createElement(h.l, {
-						className: oe.a.button,
-						onClick: c ? u : l
+					})), d && E && i.a.createElement("div", {
+						className: ce.a.cellContainerMainnet
+					}, le(i.a.createElement("div", {
+						className: ce.a.tokenCell
+					}, i.a.createElement(h.a, {
+						className: ce.a.token,
+						subredditId: v
+					}), Object(f.a)(Object(x.b)(E.amount, b.displayConversion))), s.fbt._("Your {tokenName}", [s.fbt._param("tokenName", b.name)], {
+						hk: "2ylU3V"
+					})), le(i.a.createElement("div", {
+						className: ce.a.tokenCell
+					}, i.a.createElement(_.a, {
+						className: ce.a.ethSymbol
+					}), Object(f.a)(Object(x.b)(E.amountEth || "0", b.displayConversion))), s.fbt._("Your ETH", null, {
+						hk: "1eunZy"
+					}))), C && i.a.createElement(z, {
+						body: C.body,
+						title: C.title
+					}), n && b.blockchainProvider && i.a.createElement(Y, {
+						publicAddress: y,
+						subredditId: v
+					}), n && !y && a && i.a.createElement(N.l, {
+						className: ce.a.button,
+						onClick: c ? m : u
 					}, s.fbt._("Register", null, {
 						hk: "4EjGrI"
-					})), e && d && i.a.createElement(re, {
-						subredditId: f,
-						claimablePoints: d.pointsToClaim
+					})), e && l && i.a.createElement(ie, {
+						subredditId: v,
+						claimablePoints: l.pointsToClaim
 					}))
 				}
 			}
 
-			function ae(e, t) {
+			function le(e, t) {
 				return i.a.createElement("div", {
-					className: oe.a.cell
+					className: ce.a.cell
 				}, i.a.createElement("div", {
-					className: oe.a.cellTopLine
+					className: ce.a.cellTopLine
 				}, e), i.a.createElement("div", {
-					className: oe.a.cellBottomLine
+					className: ce.a.cellBottomLine
 				}, t))
 			}
-			const ce = Object(u.c)({
-				claimablePointsEnabled: y.d.spClaimablePoints,
-				customCryptoEnabled: y.d.spCustomCrypto,
+			const ue = Object(b.c)({
+				claimablePointsEnabled: g.d.spClaimablePoints,
+				customCryptoEnabled: g.d.spCustomCrypto,
 				isEthereumProvider: (e, t) => {
 					let {
 						subredditId: n
 					} = t;
-					return Object(d.a)(e, n)
+					return Object(l.a)(e, n)
 				},
-				isLoggedIn: x.R,
-				nextAvailableClaim: g.b
+				isLoggedIn: j.R,
+				nextAvailableClaim: k.b,
+				isMainnetEnabled: u.a
 			});
-			var de = Object(a.b)(ce, e => ({
-					onFetchMeData: () => e(Object(p.b)()),
-					onOpenLoginModal: () => e(Object(v.i)()),
-					onOpenRegistrationModal: () => e(Object(f.g)())
-				}))(Object(_.u)()(ie)),
-				le = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/react-router-dom/esm/react-router-dom.js")),
-				ue = n("./src/lib/classNames/index.ts"),
-				me = n("./src/lib/permalinkToOverlayLocation/index.ts"),
-				be = n("./src/reddit/actions/subreddit.ts"),
-				pe = n("./src/reddit/components/Governance/CommunityCard/SectionTitle.m.less"),
-				fe = n.n(pe);
+			var me = Object(a.b)(ue, e => ({
+					onFetchMeData: () => e(Object(v.b)()),
+					onOpenLoginModal: () => e(Object(C.i)()),
+					onOpenRegistrationModal: () => e(Object(E.g)())
+				}))(Object(O.u)()(de)),
+				be = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./node_modules/react-router-dom/esm/react-router-dom.js")),
+				pe = n("./src/lib/permalinkToOverlayLocation/index.ts"),
+				fe = n("./src/reddit/actions/subreddit.ts"),
+				ve = n("./src/reddit/components/Governance/CommunityCard/SectionTitle.m.less"),
+				Ee = n.n(ve);
 
-			function ve(e) {
+			function Ce(e) {
 				return i.a.createElement("div", {
-					className: fe.a.title
+					className: Ee.a.title
 				}, e.children)
 			}
-			var Ce = n("./src/reddit/components/Governance/CommunityCard/LatestProposals/index.m.less"),
-				Ee = n.n(Ce);
+			var _e = n("./src/reddit/components/Governance/CommunityCard/LatestProposals/index.m.less"),
+				he = n.n(_e);
 			const {
-				fbt: _e
+				fbt: ye
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
-			const he = Object(u.c)({
+			const Oe = Object(b.c)({
 				proposals: (e, t) => Object.keys(e.polls.models).map(t => e.polls.models[t]).filter(e => e.subredditId === t.subredditId).sort((e, t) => e.createdAt > t.createdAt ? -1 : e.createdAt < t.createdAt ? 1 : 0).map(t => e.posts.models[t.postId]).filter(Boolean).slice(0, 5)
 			});
-			var ye = Object(_.u)()(Object(a.b)(he, (e, t) => ({
-					onFilterProposals: () => e(Object(be.p)({
+			var Ne = Object(O.u)()(Object(a.b)(Oe, (e, t) => ({
+					onFilterProposals: () => e(Object(fe.p)({
 						subredditId: t.subredditId,
 						forceState: !0
 					}))
 				}))((function(e) {
-					return Object(_.H)(e.pageLayer) && e.proposals.length ? i.a.createElement("div", {
-						className: Object(ue.a)(e.className, Ee.a.container)
-					}, i.a.createElement(ve, null, _e._("Latest Polls", null, {
+					return Object(O.H)(e.pageLayer) && e.proposals.length ? i.a.createElement("div", {
+						className: Object(c.a)(e.className, he.a.container)
+					}, i.a.createElement(Ce, null, ye._("Latest Polls", null, {
 						hk: "1oGuW8"
-					})), e.proposals.map(e => i.a.createElement(le.a, {
-						className: Ee.a.link,
+					})), e.proposals.map(e => i.a.createElement(be.a, {
+						className: he.a.link,
 						key: e.permalink,
 						title: e.title,
-						to: Object(me.a)(e.permalink)
+						to: Object(pe.a)(e.permalink)
 					}, e.title)), i.a.createElement("a", {
-						className: Ee.a.showAll,
+						className: he.a.showAll,
 						onClick: e.onFilterProposals
-					}, _e._("show all", null, {
+					}, ye._("show all", null, {
 						hk: "3GZuyP"
 					}))) : null
 				}))),
-				Oe = n("./src/reddit/actions/modal.ts"),
-				ge = n("./src/reddit/components/Economics/SubredditPremium/SidebarCards/SidebarButton/index.tsx"),
-				xe = n("./src/reddit/constants/modals.ts"),
-				Ne = n("./src/reddit/icons/svgs/Coin/index.tsx"),
-				ke = n("./src/reddit/icons/svgs/Send/index.tsx"),
-				je = n("./src/reddit/components/Governance/CommunityCard/UsePoints/index.m.less"),
-				we = n.n(je);
+				ge = n("./src/reddit/actions/modal.ts"),
+				xe = n("./src/reddit/components/Economics/SubredditPremium/SidebarCards/SidebarButton/index.tsx"),
+				ke = n("./src/reddit/constants/modals.ts"),
+				je = n("./src/reddit/hooks/useLocalStorage.ts"),
+				we = n("./src/reddit/icons/svgs/Coin/index.tsx"),
+				Ie = n("./src/reddit/icons/svgs/Send/index.tsx"),
+				Ae = n("./src/reddit/components/Governance/CommunityCard/UsePoints/index.m.less"),
+				Pe = n.n(Ae);
 			const {
-				fbt: Ie
+				fbt: Te
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 
-			function Ae(e) {
-				const t = Object(a.d)(),
-					{
-						coinConversionEnabled: n,
-						customCrypto: r,
-						isEthereum: s,
-						pointsTotal: o,
-						transferEnabled: c
-					} = Object(a.e)(Object(u.c)({
-						coinConversionEnabled: y.d.spPointsCoinConversion,
-						customCrypto: y.d.spCustomCrypto,
-						isEthereum: t => Object(d.a)(t, e.subredditId),
-						pointsTotal: t => Object(l.e)(t, e),
-						transferEnabled: y.d.spTipping
-					})),
-					m = c && !(r && s);
-				return (m || n) && o && "0" !== o ? i.a.createElement("div", {
+			function Se(e) {
+				const [t, n] = Object(je.a)("MAINNET_ANNOUNCEMENT", !1), r = Object(a.d)(), {
+					isMainnet: s,
+					coinConversionEnabled: c,
+					customCrypto: d,
+					isEthereum: p,
+					pointsTotal: f,
+					transferEnabled: v
+				} = Object(a.e)(Object(b.c)({
+					isMainnet: u.a,
+					coinConversionEnabled: g.d.spPointsCoinConversion,
+					customCrypto: g.d.spCustomCrypto,
+					isEthereum: t => Object(l.a)(t, e.subredditId),
+					pointsTotal: t => Object(m.e)(t, e),
+					transferEnabled: g.d.spTipping
+				}));
+				Object(o.useEffect)(() => {
+					s && !t && (r(Object(ge.h)(ke.a.GOVERNANCE_MAINNET_LAUNCH)), n(!0))
+				}, [r, s, t, n]);
+				const C = v && !(d && p);
+				return (C || c) && f && "0" !== f ? i.a.createElement("div", {
 					className: e.className
-				}, i.a.createElement(ve, null, Ie._("Use Points", null, {
+				}, i.a.createElement(Ce, null, Te._("Use Points", null, {
 					hk: "2Mco3v"
-				})), m && i.a.createElement(ge.a, {
-					onClick: () => t(Object(f.f)())
-				}, i.a.createElement(ke.a, {
-					className: we.a.icon
-				}), Ie._("Transfer", null, {
+				})), C && i.a.createElement(xe.a, {
+					onClick: () => r(Object(E.f)())
+				}, i.a.createElement(Ie.a, {
+					className: Pe.a.icon
+				}), Te._("Transfer", null, {
 					hk: "1MQW1Y"
-				})), n && i.a.createElement(ge.a, {
-					onClick: () => t(Object(Oe.h)(xe.a.CONVERT_TO_COINS))
-				}, i.a.createElement(Ne.a, {
-					className: we.a.icon
-				}), Ie._("Convert to Reddit Coins", null, {
+				})), c && i.a.createElement(xe.a, {
+					onClick: () => r(Object(ge.h)(ke.a.CONVERT_TO_COINS))
+				}, i.a.createElement(we.a, {
+					className: Pe.a.icon
+				}), Te._("Convert to Reddit Coins", null, {
 					hk: "lqkYM"
 				}))) : null
 			}
-			var Pe = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
-				Te = n.n(Pe);
-			const Se = Object(u.c)({
+			var Le = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
+				Me = n.n(Le);
+			const Re = Object(b.c)({
+				isMainnet: u.a,
 				distribution: (e, t) => e.subreddits.gov.distributions[t.subredditId],
 				pointsDetails: (e, t) => {
 					let {
 						subredditId: n
 					} = t;
-					return Object(d.b)(e, n)
+					return Object(l.b)(e, n)
 				},
 				subreddit: (e, t) => e.subreddits.models[t.subredditId],
-				wallet: l.d
+				wallet: m.d
 			});
-			t.default = Object(a.b)(Se)((function(e) {
+			t.default = Object(a.b)(Re)((function(e) {
 				const {
 					className: t,
 					distribution: n,
@@ -851,27 +889,46 @@
 					subredditId: o,
 					wallet: a
 				} = e;
-				return i.a.createElement(c.a, {
+				return i.a.createElement(d.a, {
 					className: t,
 					title: s.fbt._("Community Points", null, {
 						hk: "GZQW3"
 					})
-				}, n && r ? i.a.createElement(i.a.Fragment, null, i.a.createElement(de, {
-					className: Te.a.section,
+				}, n && r ? i.a.createElement(i.a.Fragment, null, i.a.createElement(me, {
+					className: Me.a.section,
 					distribution: n,
 					pointsDetails: r,
 					subredditId: o,
 					wallet: a
-				}), i.a.createElement(Ae, {
-					className: Te.a.section,
+				}), i.a.createElement(Se, {
+					className: Object(c.a)(Me.a.section, {
+						[Me.a.noborder]: e.isMainnet
+					}),
 					subredditId: o
-				}), i.a.createElement(ye, {
-					className: Te.a.section,
+				}), i.a.createElement(Ne, {
+					className: Me.a.section,
 					subredditId: o
 				})) : i.a.createElement("div", {
-					className: Te.a.loading
+					className: Me.a.loading
 				}))
 			}))
+		},
+		"./src/reddit/components/Governance/EthSymbol/index.tsx": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return i
+			}));
+			var r = n("./node_modules/react/index.js"),
+				s = n.n(r),
+				o = n("./src/config.ts");
+
+			function i(e) {
+				const t = `${o.a.assetPath}/img/communityPoints/ethsymbol.png`;
+				return s.a.createElement("img", {
+					className: e.className,
+					src: t
+				})
+			}
 		},
 		"./src/reddit/components/Governance/Token/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -1036,9 +1093,9 @@
 			})), n.d(t, "e", (function() {
 				return v
 			})), n.d(t, "f", (function() {
-				return C
-			})), n.d(t, "n", (function() {
 				return E
+			})), n.d(t, "n", (function() {
+				return C
 			}));
 			var r, s = n("./src/config.ts"),
 				o = n("./src/reddit/endpoints/governance/requester.ts");
@@ -1129,14 +1186,14 @@
 					type: "subscribe",
 					subredditId: e
 				}),
-				C = (e, t, n, r) => ({
+				E = (e, t, n, r) => ({
 					type: "transfer",
 					subredditId: e,
 					recipient: t,
 					recipientAddress: n,
 					amount: r
 				});
-			async function E(e, t) {
+			async function C(e, t) {
 				return await Object(o.a)(e, {
 					method: "put",
 					endpoint: `${s.a.metaUrl}/crypto/ethereum/transaction-intent`,
@@ -1211,7 +1268,7 @@
 			})), n.d(t, "i", (function() {
 				return v
 			})), n.d(t, "j", (function() {
-				return C
+				return E
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./node_modules/fbt/lib/FbtPublic.js");
@@ -1335,7 +1392,7 @@
 				})
 			}
 
-			function C(e) {
+			function E(e) {
 				return new Promise((t, n) => {
 					s().sendAsync({
 						method: "metamask_watchAsset",
@@ -1713,6 +1770,20 @@
 					return null === (o = null === (s = null === (r = null === (n = e.features) || void 0 === n ? void 0 : n.crypto) || void 0 === r ? void 0 : r.publicWallets) || void 0 === s ? void 0 : s[t.userId]) || void 0 === o ? void 0 : o[t.subredditId]
 				}
 		},
+		"./src/reddit/selectors/experiments/mainnet.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var r = n("./src/reddit/constants/experiments.ts"),
+				s = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const o = e => {
+				return Object(s.c)(e, {
+					experimentEligibilitySelector: s.a,
+					experimentName: r.ee
+				}) === r.wd
+			}
+		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -1770,4 +1841,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.b3d698de907b7d0d49dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.6b74f4f0339570cf8ecb.js.map
