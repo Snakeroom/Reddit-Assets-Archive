@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.6f4615a2e5b619629c68.js
-// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.0bddd583a35dccfa6061.js
+// Retrieved at 4/26/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/scroll/index.ts": function(t, e, n) {
@@ -235,7 +235,7 @@
 					e(Object(l.g)(lt));
 					const o = n(),
 						r = Object(Y.a)(o),
-						i = Object(Y.b)(o);
+						i = Object(Y.c)(o);
 					if (!o.user.account && r) {
 						const n = pt(t.formData),
 							o = mt(t.formData);
@@ -346,7 +346,7 @@
 					e(Object(l.g)(lt));
 					const o = n(),
 						r = Object(Y.a)(o),
-						i = Object(Y.b)(o);
+						i = Object(Y.c)(o);
 					if (!o.user.account && r) {
 						const n = pt(t.formData),
 							o = mt(t.formData);
@@ -2682,8 +2682,10 @@
 			"use strict";
 			n.d(e, "a", (function() {
 				return l
-			})), n.d(e, "b", (function() {
+			})), n.d(e, "c", (function() {
 				return u
+			})), n.d(e, "b", (function() {
+				return m
 			}));
 			var o = n("./node_modules/reselect/es/index.js"),
 				r = n("./src/reddit/constants/experiments.ts"),
@@ -2699,6 +2701,10 @@
 				u = t => {
 					const e = d(t);
 					return !!e && a(t, e) === r.W.SkipOnboarding
+				},
+				m = t => {
+					const e = d(t);
+					return !!e && a(t, e) === r.W.RegOnboarding
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(t) {
@@ -2709,4 +2715,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.6f4615a2e5b619629c68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.0bddd583a35dccfa6061.js.map

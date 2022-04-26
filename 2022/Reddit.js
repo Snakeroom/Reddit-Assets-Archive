@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.51b54dad9a0c26ff42ba.js
-// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.10a3c6553bd130693191.js
+// Retrieved at 4/26/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -854,7 +854,7 @@
 					t(Object(d.g)(de));
 					const s = n(),
 						o = Object(X.a)(s),
-						r = Object(X.b)(s);
+						r = Object(X.c)(s);
 					if (!s.user.account && o) {
 						const n = pe(e.formData),
 							s = me(e.formData);
@@ -965,7 +965,7 @@
 					t(Object(d.g)(de));
 					const s = n(),
 						o = Object(X.a)(s),
-						r = Object(X.b)(s);
+						r = Object(X.c)(s);
 					if (!s.user.account && o) {
 						const n = pe(e.formData),
 							s = me(e.formData);
@@ -2117,6 +2117,7 @@
 					isDismissSurveyEnabled: G.a,
 					isHardBlockingInterstitialEnabled: F.d,
 					isLoggedIn: q.R,
+					isRegularOnboardingEnabled: L.b,
 					redirectUrl: R.b
 				}),
 				J = Object(i.b)(z, (e, t) => ({
@@ -2251,7 +2252,7 @@
 						const s = {
 							[j.q]: "true"
 						};
-						n && (s[j.x] = "true"), e.isSignupModalSuccessful && (s[j.y] = "true"), window.location.replace(Object(d.a)(t, s))
+						n && (e.props.isCommentBeforeSignUpEnabled ? e.props.isRegularOnboardingEnabled && (s[j.x] = "true") : s[j.x] = "true"), e.isSignupModalSuccessful && (s[j.y] = "true"), window.location.replace(Object(d.a)(t, s))
 					}, this.closedByUser = () => {
 						const {
 							actionSource: e,
@@ -19614,8 +19615,10 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return d
-			})), n.d(t, "b", (function() {
+			})), n.d(t, "c", (function() {
 				return u
+			})), n.d(t, "b", (function() {
+				return m
 			}));
 			var s = n("./node_modules/reselect/es/index.js"),
 				o = n("./src/reddit/constants/experiments.ts"),
@@ -19631,6 +19634,10 @@
 				u = e => {
 					const t = l(e);
 					return !!t && c(e, t) === o.W.SkipOnboarding
+				},
+				m = e => {
+					const t = l(e);
+					return !!t && c(e, t) === o.W.RegOnboarding
 				}
 		},
 		"./src/reddit/selectors/experiments/d2xSeoLightboxExperiment.ts": function(e, t, n) {
@@ -19938,4 +19945,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.51b54dad9a0c26ff42ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.10a3c6553bd130693191.js.map

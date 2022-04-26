@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.e46379c9114548889800.js
-// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.265f366dca90e2b6e470.js
+// Retrieved at 4/26/2022, 6:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -250,7 +250,7 @@
 					t(Object(l.g)(le));
 					const n = o(),
 						s = Object($.a)(n),
-						r = Object($.b)(n);
+						r = Object($.c)(n);
 					if (!n.user.account && s) {
 						const o = pe(e.formData),
 							n = ue(e.formData);
@@ -361,7 +361,7 @@
 					t(Object(l.g)(le));
 					const n = o(),
 						s = Object($.a)(n),
-						r = Object($.b)(n);
+						r = Object($.c)(n);
 					if (!n.user.account && s) {
 						const o = pe(e.formData),
 							n = ue(e.formData);
@@ -2661,8 +2661,10 @@
 			"use strict";
 			o.d(t, "a", (function() {
 				return l
-			})), o.d(t, "b", (function() {
+			})), o.d(t, "c", (function() {
 				return m
+			})), o.d(t, "b", (function() {
+				return u
 			}));
 			var n = o("./node_modules/reselect/es/index.js"),
 				s = o("./src/reddit/constants/experiments.ts"),
@@ -2678,6 +2680,10 @@
 				m = e => {
 					const t = d(e);
 					return !!t && a(e, t) === s.W.SkipOnboarding
+				},
+				u = e => {
+					const t = d(e);
+					return !!t && a(e, t) === s.W.RegOnboarding
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -2688,4 +2694,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.e46379c9114548889800.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.265f366dca90e2b6e470.js.map
