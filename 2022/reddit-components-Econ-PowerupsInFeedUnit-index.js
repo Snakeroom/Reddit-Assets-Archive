@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.dbaf1336593a4365b4b7.js
-// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.a2beac83c3b2c1e05adb.js
+// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -341,8 +341,8 @@
 				A = a("./src/reddit/actions/toaster.ts"),
 				M = a("./src/reddit/actions/urlRequested.ts"),
 				T = a("./src/reddit/components/Econ/Common/ModalCloseButton/index.tsx"),
-				D = a("./src/reddit/constants/avatars.ts"),
-				R = a("./src/reddit/controls/LoadingIcon/index.tsx"),
+				R = a("./src/reddit/constants/avatars.ts"),
+				D = a("./src/reddit/controls/LoadingIcon/index.tsx"),
 				S = a("./src/reddit/helpers/avatar/index.ts"),
 				F = a("./src/reddit/helpers/trackers/snoovatar.ts"),
 				B = a("./src/reddit/models/Avatar/accessories.ts"),
@@ -371,7 +371,7 @@
 					legalCopy: b,
 					learnMoreText: E,
 					url: f
-				} = D.a;
+				} = R.a;
 				return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
 					className: G.a.modal
 				}, o.a.createElement("div", {
@@ -438,7 +438,7 @@
 						}
 					},
 					disabled: u
-				}, u ? o.a.createElement(R.a, {
+				}, u ? o.a.createElement(D.a, {
 					sizePx: 12,
 					center: !0
 				}) : o.a.createElement(o.a.Fragment, null, H._("Yes", null, {
@@ -587,7 +587,7 @@
 								subredditId: a
 							}),
 							l = Object(b.w)(e) && Object(m.w)(e);
-						return i || o ? c && n && Object(_.i)(e) ? s.UNLOCKED_COMMUNITY_GEAR : l ? s.UNLOCKED_UNAPPLIED_FROM_PREMIUM : s.HIDDEN : d && n && Object(_.i)(e) ? s.POWERUPS_COMMUNITY_GEAR : s.POWERUPS_DEFAULT
+						return i || o ? c && n && Object(_.h)(e) ? s.UNLOCKED_COMMUNITY_GEAR : l ? s.UNLOCKED_UNAPPLIED_FROM_PREMIUM : s.HIDDEN : d && n && Object(_.h)(e) ? s.POWERUPS_COMMUNITY_GEAR : s.POWERUPS_DEFAULT
 					})(e, {
 						subredditId: E.id,
 						subredditName: E.name
@@ -1218,7 +1218,8 @@
 			const d = {
 					marketingEvent: {
 						active: !1,
-						assetUrls: null
+						assetUrls: null,
+						experimentRequired: null
 					},
 					quickCreateV1: {
 						id: "-1",
@@ -1273,10 +1274,12 @@
 						})
 					}
 					if (o && o.includes(u) && !d) {
-						const e = r || null;
+						const e = r || null,
+							a = o.find(e => e.startsWith("feature:") && e.includes("web")) || null;
 						t && (t.marketingEvent = {
 							active: c && !!e,
-							assetUrls: e
+							assetUrls: e,
+							experimentRequired: a
 						})
 					}
 				}), t
@@ -1356,29 +1359,30 @@
 		"./src/reddit/selectors/avatarMarketing.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "b", (function() {
-				return i
+				return n
 			})), a.d(t, "a", (function() {
-				return c
+				return i
 			}));
-			var s = a("./node_modules/reselect/es/index.js"),
-				r = a("./src/lib/initializeClient/installReducer.ts"),
-				o = a("./src/reddit/reducers/features/avatar/index.ts"),
-				n = a("./src/reddit/selectors/experiments/econ/index.ts");
-			Object(r.a)({
+			var s = a("./src/lib/initializeClient/installReducer.ts"),
+				r = a("./src/reddit/reducers/features/avatar/index.ts"),
+				o = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			Object(s.a)({
 				features: {
-					avatar: o.a
+					avatar: r.a
 				}
 			});
-			const i = e => {
+			const n = e => {
 					var t, a;
 					return !!(null === (a = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === a ? void 0 : a.marketing)
 				},
-				c = Object(s.a)(n.b, e => {
-					var t, a, s;
-					const r = null === (s = null === (a = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === a ? void 0 : a.marketing) || void 0 === s ? void 0 : s.marketingEvent;
-					return (null == r ? void 0 : r.active) ? (null == r ? void 0 : r.assetUrls) && (null == r ? void 0 : r.assetUrls[0]) : null
-				}, (e, t) => e ? t : null)
+				i = e => {
+					var t, a, s, r;
+					const n = null === (s = null === (a = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === a ? void 0 : a.marketing) || void 0 === s ? void 0 : s.marketingEvent;
+					if (!(null == n ? void 0 : n.active) || !(null === (r = null == n ? void 0 : n.assetUrls) || void 0 === r ? void 0 : r.length)) return null;
+					const i = n.assetUrls[0];
+					return !n.experimentRequired || Object(o.a)(n.experimentRequired)(e) ? i : null
+				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.dbaf1336593a4365b4b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.a2beac83c3b2c1e05adb.js.map

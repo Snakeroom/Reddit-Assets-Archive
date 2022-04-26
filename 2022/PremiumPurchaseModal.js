@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.5b31bb4440012b0971b2.js
-// Retrieved at 4/26/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.e78d0a4f8f59d0a66af3.js
+// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1466,8 +1466,8 @@
 				U = r("./src/reddit/components/Econ/ProductOfferPurchaseButton/Stripe.tsx"),
 				q = r("./src/reddit/components/PaymentMethodSelector/index.tsx"),
 				Q = r("./src/reddit/components/StripePaymentForm/index.tsx"),
-				W = r("./src/reddit/hooks/useLocale.ts"),
-				H = r("./src/reddit/hooks/useStripePromise.ts"),
+				H = r("./src/reddit/hooks/useLocale.ts"),
+				W = r("./src/reddit/hooks/useStripePromise.ts"),
 				V = r("./src/reddit/models/Payments/index.ts");
 			var Y = e => a.a.createElement("div", {
 				className: M.a.premiumPurchaseHeader,
@@ -1496,8 +1496,8 @@
 				"data-redditstyle": !0
 			})));
 			var J = e => {
-				const t = Object(H.a)(),
-					r = Object(W.b)(),
+				const t = Object(W.a)(),
+					r = Object(H.b)(),
 					n = Object(o.d)(),
 					c = Object(o.e)(C.l),
 					s = Object(L.b)(e.total, {
@@ -3176,7 +3176,7 @@
 				p = r("./node_modules/react-redux/es/index.js"),
 				f = r("./src/reddit/constants/experiments.ts"),
 				b = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(b.a)(f.Wc);
+			const h = Object(b.a)(f.Vc);
 			let y = null;
 
 			function g() {
@@ -3417,4 +3417,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.5b31bb4440012b0971b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.e78d0a4f8f59d0a66af3.js.map

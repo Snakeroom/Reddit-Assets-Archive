@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.0dc8d0e95c5fbd60f8e6.js
-// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.1be0f14e204f3140dc7a.js
+// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SubredditContent-PredictionsContent"], {
 		"./src/reddit/components/Econ/Prediction/hooks/useTournamentsQuery.ts": function(e, t, n) {
@@ -244,7 +244,7 @@
 					{
 						isFetching: B
 					} = Object(l.a)(t.name),
-					L = Object(s.e)(k.l),
+					L = Object(s.e)(k.k),
 					F = Object(s.e)(e => Object(E.b)(e, {
 						subredditId: t.id
 					})),
@@ -581,4 +581,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.0dc8d0e95c5fbd60f8e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SubredditContent-PredictionsContent.1be0f14e204f3140dc7a.js.map

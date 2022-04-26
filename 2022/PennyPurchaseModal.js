@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.75c7bda0dcea7801d2fd.js
-// Retrieved at 4/26/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.edc13fb8ef6852c66f55.js
+// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -543,7 +543,7 @@
 				} = e;
 				const E = Object(b.a)(),
 					j = Object(m.d)(),
-					O = Object(m.e)(p.h),
+					O = Object(m.e)(p.g),
 					k = Object(m.e)(B.a),
 					w = !!r;
 				if (w && !O) {
@@ -606,7 +606,7 @@
 			const {
 				fbt: q
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var W = e => {
+			var V = e => {
 				var t;
 				const a = Object(Q.a)();
 				return o.a.createElement("div", {
@@ -639,7 +639,7 @@
 					"data-redditstyle": !0
 				})))
 			};
-			var V = e => {
+			var W = e => {
 					const t = Object(Q.a)(),
 						a = [];
 					if (e.purchasePackage && a.push(n.fbt._("{coinCount} will automatically be spent on this {awardName} Award.", [n.fbt._param("coinCount", Object(l.b)(e.award.coinPrice, {
@@ -697,13 +697,13 @@
 					s = e.purchasePackage ? e.purchasePackage.pennies : e.selectedAward.pennyPrice || 0;
 				return o.a.createElement(r.Elements, {
 					stripe: a
-				}, o.a.createElement(o.a.Fragment, null, e.gildThingId ? o.a.createElement(V, {
+				}, o.a.createElement(o.a.Fragment, null, e.gildThingId ? o.a.createElement(W, {
 					coinBalance: e.coinBalance,
 					award: e.selectedAward,
 					purchasePackage: e.purchasePackage,
 					userName: e.userName,
 					onCloseClick: e.onCloseModal
-				}) : e.purchasePackage && o.a.createElement(W, {
+				}) : e.purchasePackage && o.a.createElement(V, {
 					coinBalance: e.coinBalance,
 					purchasePackage: e.purchasePackage,
 					userName: e.userName,
@@ -1962,7 +1962,7 @@
 				p = a("./node_modules/react-redux/es/index.js"),
 				h = a("./src/reddit/constants/experiments.ts"),
 				b = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const g = Object(b.a)(h.Wc);
+			const g = Object(b.a)(h.Vc);
 			let C = null;
 
 			function f() {
@@ -2043,4 +2043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.75c7bda0dcea7801d2fd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.edc13fb8ef6852c66f55.js.map

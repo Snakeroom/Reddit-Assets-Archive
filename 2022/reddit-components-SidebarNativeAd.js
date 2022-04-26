@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.a1c1323351f39c271792.js
-// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.485af468edd8672bd4e2.js
+// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1116,9 +1116,9 @@
 			})), n.d(t, "d", (function() {
 				return k
 			})), n.d(t, "l", (function() {
-				return j
-			})), n.d(t, "t", (function() {
 				return I
+			})), n.d(t, "t", (function() {
+				return j
 			})), n.d(t, "u", (function() {
 				return T
 			})), n.d(t, "r", (function() {
@@ -1163,8 +1163,8 @@
 				C = o.a.header("ModalHeader", u.a),
 				E = o.a.div("ModalTitle", u.a),
 				k = o.a.div("ModalAnnotation", u.a),
-				j = o.a.div("ModalMain", u.a),
-				I = o.a.textarea("TextArea", u.a),
+				I = o.a.div("ModalMain", u.a),
+				j = o.a.textarea("TextArea", u.a),
 				T = o.a.wrapped(a.l, "WarningButton", u.a),
 				S = o.a.wrapped(a.l, "PrimaryButton", u.a),
 				P = o.a.wrapped(a.o, "CancelButton", u.a),
@@ -1427,8 +1427,8 @@
 				C = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				E = n("./src/lib/getShortenedLink.ts"),
 				k = n("./src/reddit/components/FlairWrapper/index.tsx"),
-				j = n("./node_modules/fbt/lib/FbtPublic.js"),
-				I = n("./src/lib/prettyPrintNumber/index.ts"),
+				I = n("./node_modules/fbt/lib/FbtPublic.js"),
+				j = n("./src/lib/prettyPrintNumber/index.ts"),
 				T = n("./src/reddit/components/Poll/PollExpiry/index.tsx"),
 				S = n("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
 				P = n.n(S);
@@ -1443,10 +1443,10 @@
 					} = e, r = n ? n.totalVotes : "0";
 					return s.a.createElement("div", {
 						className: Object(l.a)(e.className, P.a.proposalMetaData)
-					}, s.a.createElement("span", null, j.fbt._({
+					}, s.a.createElement("span", null, I.fbt._({
 						"*": "{count} votes",
 						_1: "{count} vote"
-					}, [j.fbt._param("count", Object(I.a)(r)), j.fbt._plural(parseInt(r))], {
+					}, [I.fbt._param("count", Object(j.a)(r)), I.fbt._plural(parseInt(r))], {
 						hk: "4rP1VK"
 					})), t && s.a.createElement(T.a, {
 						className: P.a.proposalExpiry,
@@ -1843,8 +1843,8 @@
 				C = n("./src/reddit/helpers/truncateStringWithEllipsis.ts"),
 				E = n("./src/reddit/icons/fonts/OutboundLink/index.tsx"),
 				k = n("./src/reddit/models/NewStructuredStyles/index.ts"),
-				j = n("./src/reddit/models/Theme/index.ts"),
-				I = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				I = n("./src/reddit/models/Theme/index.ts"),
+				j = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				T = n("./src/lib/constants/index.ts"),
 				S = n("./src/reddit/models/Media/index.ts"),
 				P = n("./src/reddit/components/NativeBannerAd/index.m.less"),
@@ -1903,7 +1903,7 @@
 					}
 				},
 				Q = e => ({
-					background: Object(j.g)(Object(I.a)(e).body, null, null) || ""
+					background: Object(I.g)(Object(j.a)(e).body, null, null) || ""
 				});
 			class Z extends s.a.Component {
 				constructor() {
@@ -2275,9 +2275,9 @@
 			})), n.d(t, "clickConfirmReportAward", (function() {
 				return k
 			})), n.d(t, "viewGildModalEvent", (function() {
-				return j
-			})), n.d(t, "clickSelectAwardEvent", (function() {
 				return I
+			})), n.d(t, "clickSelectAwardEvent", (function() {
+				return j
 			})), n.d(t, "triggerAnonymousEvent", (function() {
 				return T
 			})), n.d(t, "clickMessageInputEvent", (function() {
@@ -2387,7 +2387,7 @@
 				C = g("report_community_award"),
 				E = g("cancel_report_community_award"),
 				k = g("confirm_report_community_award"),
-				j = (e, t, n) => r => ({
+				I = (e, t, n) => r => ({
 					...u(r, n),
 					source: "give_gold",
 					action: "view",
@@ -2397,7 +2397,7 @@
 						defaultAnonymous: t
 					}
 				}),
-				I = (e, t, n) => r => ({
+				j = (e, t, n) => r => ({
 					...u(r, t),
 					source: "give_gold",
 					action: "click",
@@ -2712,9 +2712,9 @@
 			})), n.d(t, "c", (function() {
 				return E
 			})), n.d(t, "a", (function() {
-				return j
-			})), n.d(t, "n", (function() {
 				return I
+			})), n.d(t, "n", (function() {
+				return j
 			}));
 			var r = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				o = n("./src/reddit/selectors/avatarMarketing.ts"),
@@ -2831,8 +2831,8 @@
 					},
 					snoovatar: s.eb(r)
 				}),
-				j = e => k("onboarding", "click", e),
-				I = () => k("avatar", "view", "onboarding")
+				I = e => k("onboarding", "click", e),
+				j = () => k("avatar", "view", "onboarding")
 		},
 		"./src/reddit/helpers/truncateStringWithEllipsis.ts": function(e, t, n) {
 			"use strict";
@@ -3315,7 +3315,8 @@
 			const d = {
 					marketingEvent: {
 						active: !1,
-						assetUrls: null
+						assetUrls: null,
+						experimentRequired: null
 					},
 					quickCreateV1: {
 						id: "-1",
@@ -3370,10 +3371,12 @@
 						})
 					}
 					if (s && s.includes(u) && !d) {
-						const e = o || null;
+						const e = o || null,
+							n = s.find(e => e.startsWith("feature:") && e.includes("web")) || null;
 						t && (t.marketingEvent = {
 							active: c && !!e,
-							assetUrls: e
+							assetUrls: e,
+							experimentRequired: n
 						})
 					}
 				}), t
@@ -3485,28 +3488,29 @@
 		"./src/reddit/selectors/avatarMarketing.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return a
+				return i
 			})), n.d(t, "a", (function() {
-				return c
+				return a
 			}));
-			var r = n("./node_modules/reselect/es/index.js"),
-				o = n("./src/lib/initializeClient/installReducer.ts"),
-				s = n("./src/reddit/reducers/features/avatar/index.ts"),
-				i = n("./src/reddit/selectors/experiments/econ/index.ts");
-			Object(o.a)({
+			var r = n("./src/lib/initializeClient/installReducer.ts"),
+				o = n("./src/reddit/reducers/features/avatar/index.ts"),
+				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			Object(r.a)({
 				features: {
-					avatar: s.a
+					avatar: o.a
 				}
 			});
-			const a = e => {
+			const i = e => {
 					var t, n;
 					return !!(null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing)
 				},
-				c = Object(r.a)(i.b, e => {
-					var t, n, r;
-					const o = null === (r = null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing) || void 0 === r ? void 0 : r.marketingEvent;
-					return (null == o ? void 0 : o.active) ? (null == o ? void 0 : o.assetUrls) && (null == o ? void 0 : o.assetUrls[0]) : null
-				}, (e, t) => e ? t : null)
+				a = e => {
+					var t, n, r, o;
+					const i = null === (r = null === (n = null === (t = e.features) || void 0 === t ? void 0 : t.avatar) || void 0 === n ? void 0 : n.marketing) || void 0 === r ? void 0 : r.marketingEvent;
+					if (!(null == i ? void 0 : i.active) || !(null === (o = null == i ? void 0 : i.assetUrls) || void 0 === o ? void 0 : o.length)) return null;
+					const a = i.assetUrls[0];
+					return !i.experimentRequired || Object(s.a)(i.experimentRequired)(e) ? a : null
+				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
 			"use strict";
@@ -3694,9 +3698,9 @@
 			})), n.d(t, "k", (function() {
 				return k
 			})), n.d(t, "j", (function() {
-				return j
-			})), n.d(t, "m", (function() {
 				return I
+			})), n.d(t, "m", (function() {
+				return j
 			})), n.d(t, "e", (function() {
 				return T
 			})), n.d(t, "d", (function() {
@@ -3735,11 +3739,11 @@
 				C = e => e.features.goldPurchase.payment.cardValidation.cardExpiry,
 				E = e => e.features.goldPurchase.payment.cardValidation.cardNumber,
 				k = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
-				j = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
-				I = e => e.features.goldPurchase.payment.stripeToken.pending,
+				I = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
+				j = e => e.features.goldPurchase.payment.stripeToken.pending,
 				T = e => e.features.goldPurchase.payment.paypal.passthrough,
 				S = e => e.features.goldPurchase.payment.paypal.errorMessage
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.a1c1323351f39c271792.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.485af468edd8672bd4e2.js.map

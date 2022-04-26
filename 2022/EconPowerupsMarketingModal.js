@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.08a37447bb42f49406dd.js
-// Retrieved at 4/26/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.69206e48e35b1f50a59c.js
+// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -499,25 +499,25 @@
 				C = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				M = r("./src/reddit/selectors/experiments/econ/powerupsAward.ts");
 			const S = [P.a.CommentRecognition, P.a.PowerupsAward, P.a.CommunityGear, P.a.CommentsWithGifs, P.a.CommentsWithEmoji, P.a.Achievements, P.a.HeroStatus, P.a.HdVideo],
-				I = Object(i.a)([M.b, C.i], (e, t) => {
+				I = Object(i.a)([M.b, C.h], (e, t) => {
 					let r = S;
 					return e || (r = r.filter(e => e !== P.a.PowerupsAward)), t || (r = r.filter(e => e !== P.a.CommunityGear)), r
 				});
 			var T = r("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
-				A = r.n(T);
+				L = r.n(T);
 			const {
-				fbt: L
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), R = e => e.length % 2 == 1 ? [...e, P.a.More] : e;
+				fbt: R
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), A = e => e.length % 2 == 1 ? [...e, P.a.More] : e;
 			var B = function(e) {
 					const {
 						className: t
-					} = e, r = Object(j.a)(), n = Object(s.e)(I), a = R(n).map(P.b), c = e => {
+					} = e, r = Object(j.a)(), n = Object(s.e)(I), a = A(n).map(P.b), c = e => {
 						r(Object(x.g)(e.telemetryTag))
 					};
 					return o.a.createElement("div", {
-						className: Object(d.a)(A.a.container, t)
+						className: Object(d.a)(L.a.container, t)
 					}, a.map(e => e.title && o.a.createElement(N.a, {
-						className: A.a.benefit,
+						className: L.a.benefit,
 						benefit: e,
 						key: e.key,
 						onClick: c
@@ -989,94 +989,91 @@
 		},
 		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "h", (function() {
+			r.d(t, "g", (function() {
 				return s
-			})), r.d(t, "s", (function() {
-				return a
-			})), r.d(t, "u", (function() {
-				return c
-			})), r.d(t, "o", (function() {
-				return i
-			})), r.d(t, "n", (function() {
-				return l
-			})), r.d(t, "q", (function() {
-				return d
 			})), r.d(t, "r", (function() {
-				return u
-			})), r.d(t, "x", (function() {
-				return m
-			})), r.d(t, "v", (function() {
-				return p
-			})), r.d(t, "w", (function() {
-				return b
+				return a
+			})), r.d(t, "t", (function() {
+				return c
+			})), r.d(t, "n", (function() {
+				return i
+			})), r.d(t, "m", (function() {
+				return l
 			})), r.d(t, "p", (function() {
+				return d
+			})), r.d(t, "q", (function() {
+				return u
+			})), r.d(t, "w", (function() {
+				return m
+			})), r.d(t, "u", (function() {
+				return p
+			})), r.d(t, "v", (function() {
+				return b
+			})), r.d(t, "o", (function() {
 				return h
-			})), r.d(t, "j", (function() {
-				return f
 			})), r.d(t, "i", (function() {
+				return f
+			})), r.d(t, "h", (function() {
 				return w
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "e", (function() {
 				return v
-			})), r.d(t, "b", (function() {
+			})), r.d(t, "c", (function() {
 				return _
 			})), r.d(t, "d", (function() {
 				return g
-			})), r.d(t, "e", (function() {
+			})), r.d(t, "f", (function() {
 				return x
-			})), r.d(t, "g", (function() {
+			})), r.d(t, "b", (function() {
 				return E
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "j", (function() {
 				return j
 			})), r.d(t, "k", (function() {
 				return O
 			})), r.d(t, "l", (function() {
 				return k
-			})), r.d(t, "m", (function() {
+			})), r.d(t, "s", (function() {
 				return y
-			})), r.d(t, "t", (function() {
+			})), r.d(t, "x", (function() {
 				return N
 			})), r.d(t, "y", (function() {
 				return P
-			})), r.d(t, "z", (function() {
-				return C
-			})), r.d(t, "B", (function() {
-				return M
-			})), r.d(t, "a", (function() {
-				return S
 			})), r.d(t, "A", (function() {
-				return I
+				return C
+			})), r.d(t, "a", (function() {
+				return M
+			})), r.d(t, "z", (function() {
+				return S
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				o = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(o.a)(n.ld),
-				a = Object(o.a)(n.jd),
-				c = Object(o.a)(n.md),
-				i = Object(o.a)(n.ed),
-				l = (Object(o.a)(n.fd), Object(o.a)(n.dd)),
-				d = Object(o.a)(n.hd),
-				u = Object(o.a)(n.id),
-				m = Object(o.a)(n.pd),
-				p = Object(o.a)(n.nd),
-				b = Object(o.a)(n.od),
-				h = Object(o.a)(n.gd),
-				f = Object(o.a)(n.Zc),
-				w = Object(o.a)(n.Xc),
-				v = Object(o.a)(n.Qc),
-				_ = Object(o.a)(n.Mc),
+			const s = Object(o.a)(n.kd),
+				a = Object(o.a)(n.id),
+				c = Object(o.a)(n.ld),
+				i = Object(o.a)(n.dd),
+				l = (Object(o.a)(n.ed), Object(o.a)(n.cd)),
+				d = Object(o.a)(n.gd),
+				u = Object(o.a)(n.hd),
+				m = Object(o.a)(n.od),
+				p = Object(o.a)(n.md),
+				b = Object(o.a)(n.nd),
+				h = Object(o.a)(n.fd),
+				f = Object(o.a)(n.Yc),
+				w = Object(o.a)(n.Wc),
+				v = Object(o.a)(n.Pc),
+				_ = Object(o.a)(n.Nc),
 				g = Object(o.a)(n.Oc),
-				x = Object(o.a)(n.Pc),
-				E = Object(o.a)(n.Sc),
-				j = Object(o.a)(n.Nc),
+				x = Object(o.a)(n.Rc),
+				E = Object(o.a)(n.Mc),
+				j = Object(o.a)(n.Zc),
 				O = Object(o.a)(n.ad),
 				k = Object(o.a)(n.bd),
-				y = Object(o.a)(n.cd),
-				N = Object(o.a)(n.kd),
-				P = Object(o.a)(n.qd),
-				C = Object(o.a)(n.ud),
-				M = Object(o.a)(n.td),
-				S = Object(o.a)(n.Mf),
-				I = Object(o.a)(n.sd)
+				y = Object(o.a)(n.jd),
+				N = Object(o.a)(n.pd),
+				P = Object(o.a)(n.td),
+				C = Object(o.a)(n.sd),
+				M = Object(o.a)(n.Lf),
+				S = Object(o.a)(n.rd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.08a37447bb42f49406dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.69206e48e35b1f50a59c.js.map

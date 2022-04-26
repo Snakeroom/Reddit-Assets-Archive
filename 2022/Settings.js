@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.f1c630079db2ad2954cb.js
-// Retrieved at 4/26/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.ee4982baec0696ebaa1f.js
+// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -5057,7 +5057,7 @@
 					url: T,
 					isHovercard: B
 				} = e;
-				const U = Object(a.e)(e => !j && !!S && Object(m.g)(e)),
+				const U = Object(a.e)(e => !j && !!S && Object(m.f)(e)),
 					L = Object(a.e)(u.b),
 					F = S && Object(c.e)(S) && L;
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(h.a, {
@@ -6355,7 +6355,7 @@
 					cancelSubscriptionModalIsOpen: Object(Ce.b)("settings_optout_modal_id"),
 					premiumBenefitsModalIsOpen: Object(Ce.b)("premium_benefits_modal_id"),
 					premiumFeedbackModalIsOpen: Object(Ce.b)("premium_feedback_modal_id"),
-					isPremiumImprovedCancellationEnabled: je.v,
+					isPremiumImprovedCancellationEnabled: je.u,
 					goldExpiration: Ee.s,
 					hasAndroidSubscription: Ee.t,
 					hasIosSubscription: Ee.z,
@@ -13429,7 +13429,7 @@
 						return Object(re.c)(e, {
 							experimentName: se.Jc,
 							experimentEligibilitySelector: re.a
-						}) === se.wd
+						}) === se.vd
 					}
 				}),
 				po = Object(ge.u)(),
@@ -13960,7 +13960,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
 				experimentEligibilitySelector: () => Object(a.Q)(e)
-			}) === s.wd
+			}) === s.vd
 		},
 		"./src/reddit/selectors/experiments/econ/avatarNfts.ts": function(e, t, n) {
 			"use strict";
@@ -13977,8 +13977,8 @@
 				}) === s.y.Enabled,
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Vc
-				}) === s.wd
+					experimentName: s.Uc
+				}) === s.vd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14148,4 +14148,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.f1c630079db2ad2954cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.ee4982baec0696ebaa1f.js.map

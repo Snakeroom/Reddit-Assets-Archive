@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.d5be250741c887a9cb85.js
-// Retrieved at 4/21/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.d5fbd0fdc957bb1bd5c3.js
+// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -115,7 +115,7 @@
 						expiration: new Date(e.expires).getTime()
 					}), [e]),
 					E = Object(u.a)(),
-					p = Object(o.e)(e => _ && Object(m.f)(e));
+					p = Object(o.e)(e => _ && Object(m.e)(e));
 				return Object(r.useEffect)(() => {
 					(async () => {
 						await a.e(6).then(a.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
@@ -137,4 +137,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.d5be250741c887a9cb85.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.d5fbd0fdc957bb1bd5c3.js.map
