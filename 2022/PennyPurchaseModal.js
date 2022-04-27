@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.575ab67121fc771f8479.js
-// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.4af7b15823890f4dc751.js
+// Retrieved at 4/27/2022, 4:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -1897,7 +1897,7 @@
 		"./src/reddit/hooks/useStripePromise.ts": function(e, t, a) {
 			"use strict";
 			a.d(t, "a", (function() {
-				return f
+				return g
 			}));
 			var r = "https://js.stripe.com/v3",
 				n = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
@@ -1960,14 +1960,12 @@
 				},
 				u = a("./src/config.ts"),
 				p = a("./node_modules/react-redux/es/index.js"),
-				h = a("./src/reddit/constants/experiments.ts"),
-				b = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const g = Object(b.a)(h.Tc);
-			let C = null;
+				h = a("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts");
+			let b = null;
 
-			function f() {
-				const e = Object(p.e)(g);
-				return C || (C = m(u.a.stripe.apiKey(e))), C
+			function g() {
+				const e = Object(p.e)(h.a);
+				return b || (b = m(u.a.stripe.apiKey(e))), b
 			}
 		},
 		"./src/reddit/hooks/useThunkDispatch.ts": function(e, t, a) {
@@ -2008,6 +2006,15 @@
 			}));
 			t.b = d
 		},
+		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, a) {
+			"use strict";
+			a.d(t, "a", (function() {
+				return s
+			}));
+			var r = a("./src/reddit/constants/experiments.ts"),
+				n = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const s = Object(n.a)(r.Tc)
+		},
 		"./src/redditGQL/operations/CancelEconRecurringPayment.json": function(e) {
 			e.exports = JSON.parse('{"id":"ac36f7489268"}')
 		},
@@ -2043,4 +2050,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.575ab67121fc771f8479.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.4af7b15823890f4dc751.js.map

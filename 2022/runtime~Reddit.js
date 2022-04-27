@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.699ed35e67fa3ef16582.js
-// Retrieved at 4/27/2022, 1:52:50 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.33267678bf5639047723.js
+// Retrieved at 4/27/2022, 4:10:10 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1346,7 +1346,7 @@
 						AchievementsActions: "8b569cf6e57a3b567aa7",
 						Acknowledgements: "d11ad709b1b01d27180c",
 						Appeal: "d03e791effcd2c953cd2",
-						Avatar: "ff48a76051c98f934c7a",
+						Avatar: "6af9516fa9d34205f03a",
 						BadgePurchaseModal: "482664aebbf0c7c51d8b",
 						BannedUserModal: "3fedaa34d01af1562d33",
 						BottomCellWrapper: "e9c6acb96a41f4d29abb",
@@ -1356,7 +1356,7 @@
 						"ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8": "67559e32c374555593ad",
 						EconTopAwardersModal: "0354b419cd5d3675800c",
 						ClaimFreeAwardModal: "2f14cd6271795a581970",
-						CoinPurchaseModal: "dd86535afa8b66de1f69",
+						CoinPurchaseModal: "8f4cd1139640438285b9",
 						Coins: "d5e58a52ad3598afb04f",
 						CoinsMobile: "e2eb9be12d859e6f6798",
 						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d": "78fbb6a982249f2eb08b",
@@ -1403,7 +1403,7 @@
 						EconManagement: "a03cfec34f305a5264c4",
 						EconPowerupsFlairModal: "95c105ea6afe51a0d8a5",
 						EconPowerupsMarketingModal: "6e8cafcfe776f35210b9",
-						EconPowerupsPurchaseModal: "0dc18270b0489906ac36",
+						EconPowerupsPurchaseModal: "d13c19a19f27720fa033",
 						EditCommunityDescriptionModal: "6c6f5015d078d380a85c",
 						EmailCollectionBanner: "85c45a657036dab76a94",
 						EmailVerificationModals: "2e791c261ac94ab604b1",
@@ -1435,7 +1435,7 @@
 						Powerups: "c992d2f0519295001b9f",
 						PowerupsPremiumUpsellModal: "75b874c62dfd36624670",
 						Predictions: "eb0c7d1d662c288ee572",
-						PremiumPurchaseModal: "6b48db58aa5e485d1379",
+						PremiumPurchaseModal: "70bcd7e75127ca0b68f8",
 						"Premium~reddit-components-Econ-Prediction-PremiumModal": "5f429fef422271ca17f7",
 						Premium: "6ee24af99b618bdf08be",
 						"reddit-components-Econ-Prediction-PremiumModal": "ce1dfb2021d1d2b9b5a5",
@@ -1446,7 +1446,7 @@
 						ReportPage: "aa2926ab5add90c15a6d",
 						RequestToJoinPrivateSubredditModal: "932c77c665dc457172cf",
 						ShortcutWrapper: "df87169d255e09d43812",
-						SnoovatarModal: "e75a701129a779222892",
+						SnoovatarModal: "49c60a7422b787bfda58",
 						SubredditCreation: "0d428b1964dea9a89dbe",
 						SubredditForkingCTA: "c851188eed2e178320e1",
 						SubredditHovercard: "716a053361ffdec83c98",
@@ -1561,7 +1561,7 @@
 						"reddit-components-BlankPost": "28d0c1a0db004a8eae5a",
 						ModProgressModule: "9a2e41adf49974c35b44",
 						"reddit-components-Econ-PredictionLeaderboard-Sidebar": "4c7c48918eb1284ad1a4",
-						PennyPurchaseModal: "575ab67121fc771f8479",
+						PennyPurchaseModal: "4af7b15823890f4dc751",
 						editCollectionModal: "eade34c0ec18c91bf405",
 						MarketplaceInFeedUnit: "6667c703320fba3cf807",
 						NewCommunityProgress: "5a0d1a380cda70554fdc",
@@ -1624,7 +1624,7 @@
 						EmailNotificationSettings: "359b9963456117f8ebe7",
 						ModPnSettingsSubredditList: "db4aa3bf965d86ff9e7a",
 						PushNotificationSettings: "6c210ed29d61c16b0394",
-						UpdateCardModal: "ff9d399f3dafa3362d45",
+						UpdateCardModal: "ff10a9c1ad6ed6b9cd9d",
 						"reddit-components-Settings-CreatePasswordSSOModal": "2c21ff1a59ce12af1046",
 						SubredditTopContent: "ad96757838340f899935",
 						TopWeekPostsDiscoveryUnit: "bd57f25bfd53f3dedb46",
@@ -1722,4 +1722,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.699ed35e67fa3ef16582.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.33267678bf5639047723.js.map

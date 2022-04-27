@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.dd86535afa8b66de1f69.js
-// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.8f4cd1139640438285b9.js
+// Retrieved at 4/27/2022, 4:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -3811,7 +3811,7 @@
 		"./src/reddit/hooks/useStripePromise.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return y
+				return h
 			}));
 			var n = "https://js.stripe.com/v3",
 				a = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
@@ -3874,14 +3874,12 @@
 				},
 				p = r("./src/config.ts"),
 				m = r("./node_modules/react-redux/es/index.js"),
-				b = r("./src/reddit/constants/experiments.ts"),
-				f = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(f.a)(b.Tc);
-			let g = null;
+				b = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts");
+			let f = null;
 
-			function y() {
-				const e = Object(m.e)(h);
-				return g || (g = u(p.a.stripe.apiKey(e))), g
+			function h() {
+				const e = Object(m.e)(b.a);
+				return f || (f = u(p.a.stripe.apiKey(e))), f
 			}
 		},
 		"./src/reddit/hooks/useThunkDispatch.ts": function(e, t, r) {
@@ -3966,6 +3964,15 @@
 			t.a = Object(n.c)({
 				subredditLockedCoins: o
 			})
+		},
+		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return s
+			}));
+			var n = r("./src/reddit/constants/experiments.ts"),
+				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const s = Object(a.a)(n.Tc)
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, r) {
 			"use strict";
@@ -4116,4 +4123,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.dd86535afa8b66de1f69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.8f4cd1139640438285b9.js.map

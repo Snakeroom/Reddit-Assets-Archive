@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.0dc18270b0489906ac36.js
-// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.d13c19a19f27720fa033.js
+// Retrieved at 4/27/2022, 4:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -3290,7 +3290,7 @@
 		"./src/reddit/hooks/useStripePromise.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return y
+				return h
 			}));
 			var n = "https://js.stripe.com/v3",
 				a = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
@@ -3353,14 +3353,12 @@
 				},
 				m = r("./src/config.ts"),
 				p = r("./node_modules/react-redux/es/index.js"),
-				f = r("./src/reddit/constants/experiments.ts"),
-				b = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const h = Object(b.a)(f.Tc);
-			let g = null;
+				f = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts");
+			let b = null;
 
-			function y() {
-				const e = Object(p.e)(h);
-				return g || (g = u(m.a.stripe.apiKey(e))), g
+			function h() {
+				const e = Object(p.e)(f.a);
+				return b || (b = u(m.a.stripe.apiKey(e))), b
 			}
 		},
 		"./src/reddit/hooks/useThunkDispatch.ts": function(e, t, r) {
@@ -3530,6 +3528,15 @@
 				function(e) {
 					e.Comment = "comment", e.Post = "post", e.Profile = "profile", e.Subreddit = "subreddit"
 				}(s || (s = {}))
+		},
+		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return o
+			}));
+			var n = r("./src/reddit/constants/experiments.ts"),
+				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const o = Object(a.a)(n.Tc)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
 			"use strict";
@@ -3778,4 +3785,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.0dc18270b0489906ac36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.d13c19a19f27720fa033.js.map

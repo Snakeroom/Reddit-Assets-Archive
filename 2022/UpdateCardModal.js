@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UpdateCardModal.ff9d399f3dafa3362d45.js
-// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UpdateCardModal.ff10a9c1ad6ed6b9cd9d.js
+// Retrieved at 4/27/2022, 4:10:10 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UpdateCardModal"], {
 		"./src/reddit/components/UpdateCardModal/index.tsx": function(e, t, r) {
@@ -7,8 +7,8 @@
 			r.r(t);
 			var n = r("./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js"),
 				s = r("./src/higherOrderComponents/asModal/index.tsx"),
-				i = r("./node_modules/react/index.js"),
-				o = r.n(i),
+				o = r("./node_modules/react/index.js"),
+				i = r.n(o),
 				c = r("./node_modules/react-redux/es/index.js"),
 				a = r("./node_modules/fbt/lib/FbtPublic.js"),
 				d = r("./src/lib/makeActionCreator/index.ts"),
@@ -21,7 +21,7 @@
 				b = r("./src/reddit/selectors/activeModalId.ts"),
 				x = r("./src/reddit/actions/goldPurchaseModals/constants.ts");
 			const j = Object(d.a)(x.f),
-				h = e => async (t, r, n) => {
+				v = e => async (t, r, n) => {
 					let {
 						gqlContext: s
 					} = n;
@@ -33,8 +33,8 @@
 								sessionId: t
 							});
 						if (r) throw new Error(r.message)
-					} catch (i) {
-						l.c.captureException(i);
+					} catch (o) {
+						l.c.captureException(o);
 						const e = a.fbt._("Something went wrong", null, {
 							hk: "ie9Ol"
 						});
@@ -47,55 +47,55 @@
 						})())
 					}
 				};
-			var v = r("./src/reddit/controls/LoadingIcon/index.tsx"),
-				E = r("./src/reddit/hooks/useStripePromise.ts");
-			const S = Object(s.a)(() => {
+			var h = r("./src/reddit/controls/LoadingIcon/index.tsx"),
+				S = r("./src/reddit/hooks/useStripePromise.ts");
+			const E = Object(s.a)(() => {
 				const e = Object(c.d)(),
 					t = Object(n.useStripe)();
-				return Object(i.useEffect)(() => {
-					t && e(h(t))
-				}, [t, e]), o.a.createElement(v.a, {
+				return Object(o.useEffect)(() => {
+					t && e(v(t))
+				}, [t, e]), i.a.createElement(h.a, {
 					sizePx: 15
 				})
 			});
 			t.default = e => {
-				const t = Object(E.a)();
-				return o.a.createElement(n.Elements, {
+				const t = Object(S.a)();
+				return i.a.createElement(n.Elements, {
 					stripe: t
-				}, o.a.createElement(S, e))
+				}, i.a.createElement(E, e))
 			}
 		},
 		"./src/reddit/hooks/useStripePromise.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
-				return j
+				return b
 			}));
 			var n = "https://js.stripe.com/v3",
 				s = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
-				i = "loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used",
-				o = null,
+				o = "loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used",
+				i = null,
 				c = function(e) {
-					return null !== o ? o : o = new Promise((function(t, r) {
+					return null !== i ? i : i = new Promise((function(t, r) {
 						if ("undefined" != typeof window)
-							if (window.Stripe && e && console.warn(i), window.Stripe) t(window.Stripe);
+							if (window.Stripe && e && console.warn(o), window.Stripe) t(window.Stripe);
 							else try {
-								var o = function() {
+								var i = function() {
 									for (var e = document.querySelectorAll('script[src^="'.concat(n, '"]')), t = 0; t < e.length; t++) {
 										var r = e[t];
 										if (s.test(r.src)) return r
 									}
 									return null
 								}();
-								o && e ? console.warn(i) : o || (o = function(e) {
+								i && e ? console.warn(o) : i || (i = function(e) {
 									var t = e && !e.advancedFraudSignals ? "?advancedFraudSignals=false" : "",
 										r = document.createElement("script");
 									r.src = "".concat(n).concat(t);
 									var s = document.head || document.body;
 									if (!s) throw new Error("Expected document.body not to be null. Stripe.js requires a <body> element.");
 									return s.appendChild(r), r
-								}(e)), o.addEventListener("load", (function() {
+								}(e)), i.addEventListener("load", (function() {
 									window.Stripe ? t(window.Stripe) : r(new Error("Stripe.js not available"))
-								})), o.addEventListener("error", (function() {
+								})), i.addEventListener("error", (function() {
 									r(new Error("Failed to load Stripe.js"))
 								}))
 							} catch (c) {
@@ -131,16 +131,23 @@
 				},
 				p = r("./src/config.ts"),
 				m = r("./node_modules/react-redux/es/index.js"),
-				f = r("./src/reddit/constants/experiments.ts"),
-				w = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const b = Object(w.a)(f.Tc);
-			let x = null;
+				f = r("./src/reddit/selectors/experiments/econ/paymentsSandbox.ts");
+			let w = null;
 
-			function j() {
-				const e = Object(m.e)(b);
-				return x || (x = u(p.a.stripe.apiKey(e))), x
+			function b() {
+				const e = Object(m.e)(f.a);
+				return w || (w = u(p.a.stripe.apiKey(e))), w
 			}
+		},
+		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return o
+			}));
+			var n = r("./src/reddit/constants/experiments.ts"),
+				s = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const o = Object(s.a)(n.Tc)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.ff9d399f3dafa3362d45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UpdateCardModal.ff10a9c1ad6ed6b9cd9d.js.map
