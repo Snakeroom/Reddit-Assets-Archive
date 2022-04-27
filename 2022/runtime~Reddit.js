@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.f0f93b351957f8b12b33.js
-// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.699ed35e67fa3ef16582.js
+// Retrieved at 4/27/2022, 1:52:50 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1360,7 +1360,7 @@
 						Coins: "d5e58a52ad3598afb04f",
 						CoinsMobile: "e2eb9be12d859e6f6798",
 						"CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d": "78fbb6a982249f2eb08b",
-						"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02": "1227ea69b6bb035920ec",
+						"CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02": "a76be97525561dcfc500",
 						"CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab": "58af82b06597feb95c00",
 						"CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c": "02d688d513b49a3233da",
 						SearchResults: "53b86a211f4582a18519",
@@ -1440,7 +1440,7 @@
 						Premium: "6ee24af99b618bdf08be",
 						"reddit-components-Econ-Prediction-PremiumModal": "ce1dfb2021d1d2b9b5a5",
 						ProfileFollowersAction: "cf28590b6946bc3e79fe",
-						ProfileFollowersPage: "a37b85af0b63ac20d839",
+						ProfileFollowersPage: "b355c593020f01c1d886",
 						ProfileModeration: "83017ab26a9bd17748ff",
 						Report: "a08226b9f81dcd0a88cb",
 						ReportPage: "aa2926ab5add90c15a6d",
@@ -1478,7 +1478,7 @@
 						AdminPanel: "fd6c9a07fbac1e9f89b9",
 						"vendors~ChatMessageInput~CommentRichUnit~FlairEdit~MembershipPaywallPage~PostCreation~PostRichUnit~R~9deab1a0": "201e0a53b4d00907b96f",
 						"ChatMessageInput~MembershipPaywallPage~PostCreation~RichTextEditor": "0e8b94ef0223af7daf2e",
-						MembershipPaywallPage: "f2cc290c8031c297b184",
+						MembershipPaywallPage: "dc07a3ede1585cb5292d",
 						FlairEdit: "925c42343d7deee9d0e7",
 						"vendors~Chat~RedesignChat": "743dd7993eee0b27f3a2",
 						"Chat~RedesignChat": "d1e4c9f8ebfbdbd8b5a6",
@@ -1722,4 +1722,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f0f93b351957f8b12b33.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.699ed35e67fa3ef16582.js.map
