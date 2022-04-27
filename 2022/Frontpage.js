@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.20a3e6c7fe49d2252464.js
-// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.6727d86c152dd3e6373a.js
+// Retrieved at 4/27/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1873,7 +1873,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!s.m[t]
 				},
-				importAsync: () => Promise.all([s.e(0), s.e(1), s.e("vendors~MarketplaceClaimModal~MarketplaceInFeedUnit"), s.e("MarketplaceInFeedUnit")]).then(s.bind(null, "./src/reddit/components/Econ/Marketplace/InFeedUnit/index.tsx")),
+				importAsync: () => Promise.all([s.e(0), s.e(1), s.e(2), s.e(3), s.e("vendors~MarketplaceClaimModal~MarketplaceInFeedUnit"), s.e("MarketplaceInFeedUnit")]).then(s.bind(null, "./src/reddit/components/Econ/Marketplace/InFeedUnit/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -7643,4 +7643,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.20a3e6c7fe49d2252464.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.6727d86c152dd3e6373a.js.map

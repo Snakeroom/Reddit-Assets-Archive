@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.d5fbd0fdc957bb1bd5c3.js
-// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.ff48a76051c98f934c7a.js
+// Retrieved at 4/27/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -30,8 +30,8 @@
 					return m.set(t, a)
 				}), u && m.set("source", u);
 				const v = Object(n.e)(e => e.user.session),
-					x = Object(s.useRef)(null),
-					_ = Object(s.useCallback)(e => {
+					_ = Object(s.useRef)(null),
+					x = Object(s.useCallback)(e => {
 						v && e && e.postMessage({
 							type: "injectAuth",
 							headers: {
@@ -42,16 +42,16 @@
 					}, [v]);
 				return Object(s.useEffect)(() => {
 					var e;
-					return _(null === (e = null == x ? void 0 : x.current) || void 0 === e ? void 0 : e.contentWindow)
-				}, [x, _]), Object(s.useEffect)(() => {
+					return x(null === (e = null == _ ? void 0 : _.current) || void 0 === e ? void 0 : e.contentWindow)
+				}, [_, x]), Object(s.useEffect)(() => {
 					const e = e => {
-						"refreshAuth" === (null == e ? void 0 : e.data) && _(e.source)
+						"refreshAuth" === (null == e ? void 0 : e.data) && x(e.source)
 					};
 					return window.addEventListener("message", e), () => window.removeEventListener("message", e)
-				}, [_]), r.a.createElement("div", {
+				}, [x]), r.a.createElement("div", {
 					className: Object(d.a)(l.a.iframeContainer, t)
 				}, r.a.createElement("iframe", {
-					ref: x,
+					ref: _,
 					src: `${c.a.snoovatarUrl}/static/client/?${m.toString()}`
 				}))
 			})
@@ -86,9 +86,9 @@
 				u = a("./src/reddit/hooks/useTracking.ts"),
 				m = a("./src/reddit/selectors/experiments/econ/index.ts"),
 				v = a("./src/telemetry/index.ts"),
-				x = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
-				_ = a("./src/reddit/pages/Avatar/index.m.less"),
-				b = a.n(_);
+				_ = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
+				x = a("./src/reddit/pages/Avatar/index.m.less"),
+				b = a.n(x);
 			const E = !(Object(d.c)() || Object(d.b)()),
 				O = {
 					GRAPHQL_URL: s.a.gqlUrl,
@@ -96,45 +96,47 @@
 					IS_PRODUCTION: !E,
 					MOCKING_ENABLED: !1,
 					SNOOVATAR_BASE_URL: s.a.snoovatarUrl,
-					SNOOVATAR_API_URL: `${s.a.snoovatarUrl}/api`
+					SNOOVATAR_API_URL: `${s.a.snoovatarUrl}/api`,
+					STRIPE_API_KEY: s.a.stripe.apiKey(E || Object(d.c)())
 				},
-				f = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				p = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4), a.e(5), a.e(6)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.DataWrapper
 				}))),
-				j = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
+				j = n.a.lazy(() => Promise.all([a.e(0), a.e(1), a.e(2), a.e(3), a.e(4), a.e(5), a.e(6)]).then(a.bind(null, "./node_modules/@reddit/avatars/index.es.js")).then(e => ({
 					default: e.Builder
 				})));
 			t.default = function() {
 				const e = Object(o.e)(e => e.user.session),
 					[t, s] = Object(r.useState)(!1),
 					d = Object(r.useContext)(i.a),
-					_ = Object(r.useMemo)(() => ({
+					x = Object(r.useMemo)(() => ({
 						headers: {
 							Authorization: `Bearer ${e.accessToken}`
 						},
 						expiration: new Date(e.expires).getTime()
 					}), [e]),
 					E = Object(u.a)(),
-					p = Object(o.e)(e => _ && Object(m.e)(e));
+					f = Object(o.e)(e => x && Object(m.e)(e));
 				return Object(r.useEffect)(() => {
 					(async () => {
-						await a.e(6).then(a.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
+						await a.e(8).then(a.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
 					})(), E(l.q), s(!0)
 				}, []), e && t ? n.a.createElement("div", {
 					className: Object(c.a)(b.a.container, {
 						[b.a.containerExp]: d
 					})
-				}, p ? n.a.createElement(r.Suspense, {
+				}, f ? n.a.createElement(r.Suspense, {
 					fallback: n.a.createElement("div", null)
-				}, n.a.createElement(f, {
-					authHeaders: _,
+				}, n.a.createElement(p, {
+					accessToken: e.accessToken,
+					authHeaders: x,
 					config: O,
 					sendEvent: v.a
-				}, n.a.createElement(j, null))) : n.a.createElement(x.a, {
+				}, n.a.createElement(j, null))) : n.a.createElement(_.a, {
 					className: b.a.content
 				})) : null
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.d5fbd0fdc957bb1bd5c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.ff48a76051c98f934c7a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.4a9a1c5a1241cb14aab9.js
-// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.1f0b9c9716423b5dcd36.js
+// Retrieved at 4/27/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -522,7 +522,7 @@
 			const o = Object(r.a)({
 				ErrorComponent: () => null,
 				LoadingComponent: () => null,
-				getComponent: () => Object(s.a)(() => Promise.all([n.e(2), n.e("vendors~RealtimeGQLSubscriptionAsync"), n.e("RealtimeGQLSubscriptionAsync")]).then(n.bind(null, "./src/realtime/GQLSubscription/index.tsx"))).then(e => e.default)
+				getComponent: () => Object(s.a)(() => Promise.all([n.e(4), n.e("vendors~RealtimeGQLSubscriptionAsync"), n.e("RealtimeGQLSubscriptionAsync")]).then(n.bind(null, "./src/realtime/GQLSubscription/index.tsx"))).then(e => e.default)
 			});
 			t.a = o
 		},
@@ -7181,4 +7181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.4a9a1c5a1241cb14aab9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.1f0b9c9716423b5dcd36.js.map
