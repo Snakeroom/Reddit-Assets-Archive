@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.af7b9822e73c53b2d78c.js
-// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.6ee24af99b618bdf08be.js
+// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, t, r) {
@@ -291,33 +291,33 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				d = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(d.a)(n.kd),
-				c = Object(d.a)(n.id),
-				i = Object(d.a)(n.ld),
-				o = Object(d.a)(n.dd),
-				s = (Object(d.a)(n.ed), Object(d.a)(n.cd)),
-				u = Object(d.a)(n.gd),
-				l = Object(d.a)(n.hd),
-				f = Object(d.a)(n.od),
-				p = Object(d.a)(n.md),
-				b = Object(d.a)(n.nd),
-				m = Object(d.a)(n.fd),
-				h = Object(d.a)(n.Yc),
-				g = Object(d.a)(n.Wc),
-				O = Object(d.a)(n.Pc),
-				j = Object(d.a)(n.Nc),
-				P = Object(d.a)(n.Oc),
-				y = Object(d.a)(n.Rc),
-				_ = Object(d.a)(n.Mc),
-				x = Object(d.a)(n.Zc),
-				v = Object(d.a)(n.ad),
-				k = Object(d.a)(n.bd),
-				C = Object(d.a)(n.jd),
-				w = Object(d.a)(n.pd),
-				I = Object(d.a)(n.td),
-				S = Object(d.a)(n.sd),
-				M = Object(d.a)(n.Lf),
-				R = Object(d.a)(n.rd)
+			const a = Object(d.a)(n.id),
+				c = Object(d.a)(n.gd),
+				i = Object(d.a)(n.jd),
+				o = Object(d.a)(n.bd),
+				s = (Object(d.a)(n.cd), Object(d.a)(n.ad)),
+				u = Object(d.a)(n.ed),
+				l = Object(d.a)(n.fd),
+				f = Object(d.a)(n.md),
+				p = Object(d.a)(n.kd),
+				b = Object(d.a)(n.ld),
+				m = Object(d.a)(n.dd),
+				h = Object(d.a)(n.Wc),
+				g = Object(d.a)(n.Uc),
+				O = Object(d.a)(n.Nc),
+				j = Object(d.a)(n.Lc),
+				P = Object(d.a)(n.Mc),
+				y = Object(d.a)(n.Pc),
+				_ = Object(d.a)(n.Kc),
+				x = Object(d.a)(n.Xc),
+				v = Object(d.a)(n.Yc),
+				k = Object(d.a)(n.Zc),
+				C = Object(d.a)(n.hd),
+				w = Object(d.a)(n.nd),
+				I = Object(d.a)(n.rd),
+				S = Object(d.a)(n.qd),
+				M = Object(d.a)(n.Jf),
+				R = Object(d.a)(n.pd)
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, t, r) {
 			"use strict";
@@ -421,4 +421,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.af7b9822e73c53b2d78c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.6ee24af99b618bdf08be.js.map

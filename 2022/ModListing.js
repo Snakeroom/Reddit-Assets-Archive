@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.1f0b9c9716423b5dcd36.js
-// Retrieved at 4/27/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.cbdfaa5211772d8700fe.js
+// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1767,7 +1767,7 @@
 					}, r[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.zc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.xc.GreyRereddit ? e.reredditButtons : [];
 					return s.a.createElement(C, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -7012,11 +7012,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(o.f)(e),
-					experimentName: r.dc
+					experimentName: r.bc
 				}), i.a),
 				l = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(o.f)(e),
-					experimentName: r.cc
+					experimentName: r.ac
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -7029,9 +7029,9 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: r.je,
+				experimentName: r.he,
 				experimentEligibilitySelector: s.a
-			}) === r.se.Enabled
+			}) === r.qe.Enabled
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -7072,7 +7072,7 @@
 					return r ? r * s.Tb < 1639443600180 ? void 0 : f(e) : void 0
 				},
 				f = Object(r.a)(e => Object(a.c)(e, {
-					experimentName: o.le,
+					experimentName: o.je,
 					experimentEligibilitySelector: c.e
 				}), d.a)
 		},
@@ -7181,4 +7181,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.1f0b9c9716423b5dcd36.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.cbdfaa5211772d8700fe.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.51eab4e3c24462fe6513.js
-// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.e9c6acb96a41f4d29abb.js
+// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -213,12 +213,12 @@
 						const e = Object(i.e)(w.b),
 							t = Object(i.e)(w.d),
 							s = Object(i.e)(w.f),
-							o = Object(O.a)(b.uc.Bottom_sheet),
-							l = Object(O.a)(b.uc.Bottom_cell),
-							r = Object(O.a)(b.uc.Bottom_cell_dismissible),
-							c = Object(O.a)(b.uc.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(O.a)(b.uc.Bottom_cell_signup_upsell_copy),
-							d = Object(O.a)(b.uc.Bottom_cell_surprise_install_copy);
+							o = Object(O.a)(b.sc.Bottom_sheet),
+							l = Object(O.a)(b.sc.Bottom_cell),
+							r = Object(O.a)(b.sc.Bottom_cell_dismissible),
+							c = Object(O.a)(b.sc.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(O.a)(b.sc.Bottom_cell_signup_upsell_copy),
+							d = Object(O.a)(b.sc.Bottom_cell_surprise_install_copy);
 						let u;
 						if (e) u = I;
 						else if (t) u = U;
@@ -235,8 +235,8 @@
 						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					y = Object(O.a)(b.uc.Bottom_cell_signup_upsell_copy),
-					A = Object(O.a)(b.uc.Bottom_cell_surprise_install_copy),
+					y = Object(O.a)(b.sc.Bottom_cell_signup_upsell_copy),
+					A = Object(O.a)(b.sc.Bottom_cell_surprise_install_copy),
 					H = y ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
@@ -430,20 +430,20 @@
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[o.uc.Bottom_cell_dismissible]: e,
-						[o.uc.Bottom_cell_dismissible_immediate_trigger]: e,
-						[o.uc.Bottom_sheet]: e
+						[o.sc.Bottom_cell_dismissible]: e,
+						[o.sc.Bottom_cell_dismissible_immediate_trigger]: e,
+						[o.sc.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
 			}
-			const d = a(o.zb, !0),
-				u = a(o.Ab, !0),
-				p = a(o.Bb, !0),
-				m = a(o.zb, !1),
-				_ = a(o.Ab, !1),
-				b = a(o.Bb, !1)
+			const d = a(o.yb, !0),
+				u = a(o.zb, !0),
+				p = a(o.Ab, !0),
+				m = a(o.yb, !1),
+				_ = a(o.zb, !1),
+				b = a(o.Ab, !1)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.51eab4e3c24462fe6513.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.e9c6acb96a41f4d29abb.js.map

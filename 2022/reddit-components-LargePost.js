@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.311d047a0cbb05ec327a.js
-// Retrieved at 4/26/2022, 8:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a45035f2a2d0a81e4881.js
+// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -718,13 +718,13 @@
 				end: "start"
 			};
 
-			function Q(e) {
+			function X(e) {
 				return e.replace(/start|end/g, (function(e) {
 					return G[e]
 				}))
 			}
 
-			function X(e, t) {
+			function Q(e, t) {
 				var n = Boolean(t.getRootNode && t.getRootNode().host);
 				if (e.contains(t)) return !0;
 				if (n) {
@@ -786,7 +786,7 @@
 						var t = x(e),
 							n = ["absolute", "fixed"].indexOf(p(e).position) >= 0 && d(e) ? g(e) : e;
 						return a(n) ? t.filter((function(e) {
-							return a(e) && X(e, n)
+							return a(e) && Q(e, n)
 						})) : []
 					}(e) : [].concat(t),
 					o = [].concat(s, [n]),
@@ -1044,7 +1044,7 @@
 								for (var o = n.mainAxis, r = void 0 === o || o, i = n.altAxis, a = void 0 === i || i, d = n.fallbackPlacements, c = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, x = H(h), v = d || (x === h || !f ? [Z(h)] : function(e) {
 										if (H(e) === P) return [];
 										var t = Z(e);
-										return [Q(e), t, Q(t)]
+										return [X(e), t, X(t)]
 									}(h)), y = [h].concat(v).reduce((function(e, n) {
 										return e.concat(H(n) === P ? function(e, t) {
 											void 0 === t && (t = {});
@@ -1188,10 +1188,10 @@
 											left: 0
 										},
 										G = Z[I],
-										Q = Z[L],
-										X = oe(0, T[B], J[B]),
-										Y = P ? T[B] / 2 - D - X - G - M : q - X - G - M,
-										$ = P ? -T[B] / 2 + D + X + Q + M : z + X + Q + M,
+										X = Z[L],
+										Q = oe(0, T[B], J[B]),
+										Y = P ? T[B] / 2 - D - Q - G - M : q - Q - G - M,
+										$ = P ? -T[B] / 2 + D + Q + X + M : z + Q + X + M,
 										ee = t.elements.arrow && g(t.elements.arrow),
 										te = ee ? "y" === C ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][C] : 0,
@@ -1249,7 +1249,7 @@
 								r = void 0 === o ? "[data-popper-arrow]" : o,
 								i = n.padding,
 								a = void 0 === i ? 0 : i;
-							null != r && ("string" != typeof r || (r = t.elements.popper.querySelector(r))) && X(t.elements.popper, r) && (t.elements.arrow = r, t.modifiersData[s + "#persistent"] = {
+							null != r && ("string" != typeof r || (r = t.elements.popper.querySelector(r))) && Q(t.elements.popper, r) && (t.elements.arrow = r, t.modifiersData[s + "#persistent"] = {
 								padding: te("number" != typeof a ? a : ne(a, C))
 							})
 						},
@@ -2004,18 +2004,18 @@
 				J = n("./src/reddit/components/PostMedia/index.tsx"),
 				Z = n("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				G = n("./src/reddit/icons/fonts/Sticky/index.tsx"),
-				Q = n("./src/reddit/components/PostPinnedHeader/index.m.less"),
-				X = n.n(Q);
+				X = n("./src/reddit/components/PostPinnedHeader/index.m.less"),
+				Q = n.n(X);
 			const {
 				fbt: Y
 			} = n("./node_modules/fbt/lib/FbtPublic.js");
 			var $ = () => o.a.createElement("div", {
-					className: X.a.container
+					className: Q.a.container
 				}, o.a.createElement(G.a, {
-					className: X.a.pinnedIcon,
+					className: Q.a.pinnedIcon,
 					isFilled: !0
 				}), o.a.createElement("span", {
-					className: X.a.metaText
+					className: Q.a.metaText
 				}, Y._("pinned by moderators", null, {
 					hk: "1qU8t4"
 				}))),
@@ -2039,7 +2039,7 @@
 			const xe = Object(a.a)(C.N, e => e.some(he.c)),
 				ve = Object(a.a)(xe, e => e),
 				ye = (e, t) => Object(be.c)(e, {
-					experimentName: fe.Hc,
+					experimentName: fe.Fc,
 					experimentEligibilitySelector: e => {
 						const {
 							listingKey: n
@@ -2120,8 +2120,8 @@
 						inSubredditOrProfile: C = !1,
 						isBlurredPreview: _,
 						isCommentsPage: G,
-						isCurrentUserProfilePost: Q,
-						isFrontpage: X,
+						isCurrentUserProfilePost: X,
+						isFrontpage: Q,
 						isGalleryTileLayoutDefault: Y,
 						isModWithUserNotesPermissions: re,
 						isLoggedIn: ie,
@@ -2152,7 +2152,7 @@
 						postIds: De,
 						onceInViewport: He,
 						isAdblockAAMitigationEnabled: Ve
-					} = e, Ue = Object(y.a)(), qe = !!e.redditStyle || !!e["data-redditstyle"], ze = qe ? void 0 : m, Ke = Object(l.a)(ge), Je = Oe && Ke, Ze = Object(d.a)(ge), Ge = Object(c.a)(ge), Qe = Object(V.c)(_e), Xe = Object(D.d)(_e), Ye = !!_e.media && _e.media.type === g.o.RTJSON, $e = Re && Ye, et = n ? n - K.a : void 0, tt = !!_e.recommendationContext, nt = !(X && ie || me) || tt && ie, st = (e => e === fe.Le.OnlyTitles)(Se) && !Object(de.a)(_e), ot = (e => e === fe.Le.MediumHeight)(Se) && !Object(de.a)(_e), rt = (e => {
+					} = e, Ue = Object(y.a)(), qe = !!e.redditStyle || !!e["data-redditstyle"], ze = qe ? void 0 : m, Ke = Object(l.a)(ge), Je = Oe && Ke, Ze = Object(d.a)(ge), Ge = Object(c.a)(ge), Xe = Object(V.c)(_e), Qe = Object(D.d)(_e), Ye = !!_e.media && _e.media.type === g.o.RTJSON, $e = Re && Ye, et = n ? n - K.a : void 0, tt = !!_e.recommendationContext, nt = !(Q && ie || me) || tt && ie, st = (e => e === fe.Je.OnlyTitles)(Se) && !Object(de.a)(_e), ot = (e => e === fe.Je.MediumHeight)(Se) && !Object(de.a)(_e), rt = (e => {
 						var t;
 						const {
 							post: n,
@@ -2236,7 +2236,7 @@
 						inSubredditOrProfile: C,
 						isCommentsPage: !!G,
 						isCompactPinnedPost: !!rt,
-						isCurrentUserProfilePost: Q,
+						isCurrentUserProfilePost: X,
 						isModWithUserNotesPermissions: re,
 						isOverlay: !!ae,
 						isTopicPage: !!me,
@@ -2278,11 +2278,11 @@
 					}, o.a.createElement(A.a, {
 						post: _e,
 						adLinkContent: dt
-					})), Oe && Ke && Xe && o.a.createElement("div", {
+					})), Oe && Ke && Qe && o.a.createElement("div", {
 						className: ke.a.modModeBannerWrapper
 					}, o.a.createElement(W.a, {
 						thing: _e
-					})), Oe && Ke && Qe && o.a.createElement("div", {
+					})), Oe && Ke && Xe && o.a.createElement("div", {
 						className: ke.a.modModeBannerWrapper
 					}, o.a.createElement(H.a, {
 						onIgnoreReports: Pe,
@@ -2332,7 +2332,7 @@
 						post: _e,
 						subreddit: Fe,
 						isProfileStats: !0
-					})), X && o.a.createElement(N.a, {
+					})), Q && o.a.createElement(N.a, {
 						post: _e,
 						postIds: null != De ? De : [],
 						subredditId: null == Fe ? void 0 : Fe.id
@@ -3331,9 +3331,9 @@
 			const r = e => {
 				const t = Object(o.c)(e, {
 					experimentEligibilitySelector: o.a,
-					experimentName: s.Qc
+					experimentName: s.Oc
 				});
-				return !(!t || Object(s.Of)(t))
+				return !(!t || Object(s.Mf)(t))
 			}
 		},
 		"./src/reddit/selectors/i18n/index.ts": function(e, t, n) {
@@ -3349,7 +3349,7 @@
 				i = n("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.Of)(t)
+					return Boolean(t) && !Object(o.Mf)(t)
 				},
 				d = Object(s.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -3363,13 +3363,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: o.Ie,
+					experimentName: o.Ge,
 					experimentEligibilitySelector: r.a
 				}),
-				d = (e, t) => t === o.Qe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === o.Oe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				c = Object(s.a)(i.G, a, (e, t) => d(e, t));
 			Object(s.a)((e, t) => t, a, (e, t) => d(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.311d047a0cbb05ec327a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.a45035f2a2d0a81e4881.js.map

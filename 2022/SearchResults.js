@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.5f0a068c134d9e32cd1f.js
-// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.53b86a211f4582a18519.js
+// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -201,8 +201,8 @@
 				x = s("./node_modules/reselect/es/index.js");
 			const f = Object(x.a)(e => Object(h.c)(e, {
 				experimentEligibilitySelector: h.a,
-				experimentName: C.vb
-			}), e => e === C.vd);
+				experimentName: C.ub
+			}), e => e === C.td);
 			var O = s("./src/reddit/selectors/experiments/serpRedesignLayout.ts");
 			const g = e => n.fbt._("reddit.com: search results - {query}", [n.fbt._param("query", e || "None")], {
 					hk: "1XOKAg"
@@ -7804,7 +7804,7 @@
 					}, n[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === m.zc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === m.xc.GreyRereddit ? e.reredditButtons : [];
 					return r.a.createElement(w, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -8193,12 +8193,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case C.rf.SmIcon:
+						case C.pf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case C.rf.SmIconHc:
+						case C.pf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -10254,11 +10254,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(o.f)(e),
-					experimentName: n.dc
+					experimentName: n.bc
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(o.f)(e),
-					experimentName: n.cc
+					experimentName: n.ac
 				}), i.a),
 				m = Object(c.a)(d, l, (e, t) => e || t),
 				u = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -10278,8 +10278,8 @@
 				}) === n.y.Enabled,
 				i = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: n.Uc
-				}) === n.vd
+					experimentName: n.Sc
+				}) === n.td
 		},
 		"./src/reddit/selectors/experiments/reportingRevampDesktop.ts": function(e, t, s) {
 			"use strict";
@@ -10306,8 +10306,8 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(n.a)(e => Object(o.c)(e, {
 				experimentEligibilitySelector: i.R,
-				experimentName: r.pc
-			}), e => e === r.vd)
+				experimentName: r.nc
+			}), e => e === r.td)
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
 			"use strict";
@@ -10433,10 +10433,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: r.Ie,
+					experimentName: r.Ge,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.Qe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.Oe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.G, a, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -10463,12 +10463,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.lf
+						experimentName: n.jf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.rf.SmIcon || t === n.rf.SmIconHc
+					return t === n.pf.SmIcon || t === n.pf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -10509,4 +10509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.5f0a068c134d9e32cd1f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.53b86a211f4582a18519.js.map

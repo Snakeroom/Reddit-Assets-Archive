@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.e1bcf031da9c67acc201.js
-// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.4f86e278b3eda1207357.js
+// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4321,7 +4321,7 @@
 					}, r[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.zc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.xc.GreyRereddit ? e.reredditButtons : [];
 					return s.a.createElement(C, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -4705,12 +4705,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.rf.SmIcon:
+						case b.pf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: i
 							});
-						case b.rf.SmIconHc:
+						case b.pf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -6214,11 +6214,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(o.f)(e),
-					experimentName: r.dc
+					experimentName: r.bc
 				}), i.a),
 				l = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(o.f)(e),
-					experimentName: r.cc
+					experimentName: r.ac
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -6236,15 +6236,15 @@
 			const i = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.R,
-						experimentName: r.Tc
+						experimentName: r.Rc
 					});
-					return !(!t || Object(r.Of)(t))
+					return !(!t || Object(r.Mf)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.R,
-						experimentName: r.Tc
-					}) === r.Ad.ListingEnabled
+						experimentName: r.Rc
+					}) === r.yd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -6377,12 +6377,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.lf
+						experimentName: r.jf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.rf.SmIcon || t === r.rf.SmIconHc
+					return t === r.pf.SmIcon || t === r.pf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6423,4 +6423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.e1bcf031da9c67acc201.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.4f86e278b3eda1207357.js.map

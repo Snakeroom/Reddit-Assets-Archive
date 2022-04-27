@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.2fc467146d58c27ebecc.js
-// Retrieved at 4/26/2022, 5:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.d6ef332d15d8815e5934.js
+// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
@@ -99,11 +99,11 @@
 			})), n.d(t, "B", (function() {
 				return v
 			})), n.d(t, "z", (function() {
-				return O
-			})), n.d(t, "y", (function() {
-				return y
-			})), n.d(t, "v", (function() {
 				return j
+			})), n.d(t, "y", (function() {
+				return O
+			})), n.d(t, "v", (function() {
+				return y
 			})), n.d(t, "w", (function() {
 				return I
 			})), n.d(t, "x", (function() {
@@ -133,9 +133,9 @@
 				C = "MULTIREDDIT__ADD_SUBREDDIT_SUCCESS",
 				g = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_PENDING",
 				v = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_SUCCESS",
-				O = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_FAILURE",
-				y = 10,
-				j = "MULTIREDDIT__REMOVE_SUBREDDIT_FAILURE",
+				j = "MULTIREDDIT__SUBREDDIT_RECOMMENDATIONS_FAILURE",
+				O = 10,
+				y = "MULTIREDDIT__REMOVE_SUBREDDIT_FAILURE",
 				I = "MULTIREDDIT__REMOVE_SUBREDDIT_PENDING",
 				S = "MULTIREDDIT__REMOVE_SUBREDDIT_SUCCESS";
 			var k;
@@ -256,7 +256,7 @@
 			})), n.d(t, "a", (function() {
 				return W
 			})), n.d(t, "b", (function() {
-				return V
+				return H
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/lodash/pick.js"),
@@ -301,10 +301,10 @@
 				C = n("./src/reddit/controls/InternalLink/index.tsx"),
 				g = n("./src/reddit/helpers/styles/smartTextColor.ts"),
 				v = n("./src/reddit/icons/svgs/Close/index.tsx"),
-				O = n("./src/reddit/models/Flair/index.ts"),
-				y = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
-				j = n("./src/reddit/components/Flair/index.m.less"),
-				I = n.n(j);
+				j = n("./src/reddit/models/Flair/index.ts"),
+				O = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
+				y = n("./src/reddit/components/Flair/index.m.less"),
+				I = n.n(y);
 
 			function S() {
 				return (S = Object.assign || function(e) {
@@ -375,7 +375,7 @@
 						onMouseLeave: this.props.tooltip ? this.onHideTooltip : void 0,
 						ref: this.setTooltipTargetRef,
 						style: {
-							backgroundColor: this.props.backgroundColor || Object(y.a)(this.props).flair,
+							backgroundColor: this.props.backgroundColor || Object(O.a)(this.props).flair,
 							color: `${B(this.props)}`
 						}
 					}, this.props.text, this.props.isSelected && a.a.createElement(L, {
@@ -384,7 +384,7 @@
 					}, a.a.createElement(v.a, {
 						className: I.a.CloseIcon,
 						style: {
-							fill: this.props.backgroundColor || Object(y.a)(this.props).flair
+							fill: this.props.backgroundColor || Object(O.a)(this.props).flair
 						}
 					})), !!this.props.tooltip && a.a.createElement(k, {
 						text: this.props.tooltip,
@@ -409,7 +409,7 @@
 					let t = "",
 						n = !1;
 					const r = e.richtext.map((r, o) => {
-						if (r.e === O.c.Emoji) {
+						if (r.e === j.c.Emoji) {
 							const s = r;
 							return t += s.a, n = !0, a.a.createElement(w, {
 								forceSmallEmojis: e.forceSmallEmojis,
@@ -434,7 +434,7 @@
 						}),
 						style: {
 							...o,
-							backgroundColor: e.backgroundColor || Object(y.a)(e).flair,
+							backgroundColor: e.backgroundColor || Object(O.a)(e).flair,
 							color: `${B(e)}`
 						}
 					}, r, e.isSelected && a.a.createElement(L, {
@@ -443,7 +443,7 @@
 					}, a.a.createElement(v.a, {
 						className: I.a.CloseIcon,
 						style: {
-							fill: e.backgroundColor || Object(y.a)(e).flair
+							fill: e.backgroundColor || Object(O.a)(e).flair
 						}
 					})));
 					return a.a.createElement(F, {
@@ -458,21 +458,21 @@
 						to: e.to
 					})
 				}),
-				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(y.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(g.a)(Object(y.a)(e).post, T.a.black, T.a.white) : e.textColor === O.e.Dark ? T.a.black : T.a.white,
+				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(O.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(g.a)(Object(O.a)(e).post, T.a.black, T.a.white) : e.textColor === j.e.Dark ? T.a.black : T.a.white,
 				W = p.a.wrapped(P, "TextFlair", I.a),
-				Z = p.a.wrapped(A, "RichTextFlair", I.a),
-				G = e => {
+				V = p.a.wrapped(A, "RichTextFlair", I.a),
+				Z = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
 						case "nsfw":
 							return "#FF585B";
 						default:
-							return Object(i.i)(.1, Object(y.a)(s()(e, "theme", "redditStyle", "data-redditstyle")).button)
+							return Object(i.i)(.1, Object(O.a)(s()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				H = p.a.wrapped(e => {
-					const t = G(e),
+				G = p.a.wrapped(e => {
+					const t = Z(e),
 						n = a.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -486,7 +486,7 @@
 					})
 				}, "MetaFlair", I.a);
 
-			function V(e) {
+			function H(e) {
 				const {
 					className: t,
 					disabled: n = !1,
@@ -506,8 +506,8 @@
 					[I.a.large]: s && e.large
 				}, t);
 				switch (o.type) {
-					case O.f.Richtext:
-						return n || !o.richtext ? null : a.a.createElement(Z, {
+					case j.f.Richtext:
+						return n || !o.richtext ? null : a.a.createElement(V, {
 							backgroundColor: o.backgroundColor,
 							className: h,
 							forceSmallEmojis: b,
@@ -522,7 +522,7 @@
 							textColor: o.textColor,
 							to: f
 						});
-					case O.f.Text:
+					case j.f.Text:
 						return n || !o.text ? null : a.a.createElement(W, {
 							backgroundColor: o.backgroundColor,
 							className: h,
@@ -537,7 +537,7 @@
 							redditStyle: !p,
 							to: f
 						});
-					case O.f.Meta:
+					case j.f.Meta:
 						return a.a.createElement(W, {
 							backgroundColor: o.backgroundColor,
 							className: t,
@@ -548,20 +548,20 @@
 							redditStyle: !p,
 							to: f
 						});
-					case O.f.Nsfw:
-					case O.f.Spoiler:
-						return a.a.createElement(H, {
+					case j.f.Nsfw:
+					case j.f.Spoiler:
+						return a.a.createElement(G, {
 							className: t,
 							text: o.text,
 							type: o.type
 						});
-					case O.f.Quarantined:
+					case j.f.Quarantined:
 						return null;
-					case O.f.Oc:
+					case j.f.Oc:
 						return a.a.createElement(W, {
 							backgroundColor: T.a.alienblue,
 							text: o.text,
-							textColor: O.e.Light,
+							textColor: j.e.Light,
 							tooltip: r.fbt._("This post is marked as Original Content [OC]", null, {
 								hk: "h7je6"
 							})
@@ -1366,29 +1366,29 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/experiments/index.ts");
 			const c = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Nb,
+					experimentName: o.Lb,
+					experimentEligibilitySelector: i.e
+				}), e => e === o.Y.Enabled),
+				a = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.Mb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.Z.Enabled),
-				a = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Ob,
+				l = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.Nb,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.ab.Enabled),
-				l = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Pb,
+				d = Object(r.a)(e => Object(s.c)(e, {
+					experimentName: o.Ob,
 					experimentEligibilitySelector: i.e
 				}), e => e === o.bb.Enabled),
-				d = Object(r.a)(e => Object(s.c)(e, {
+				u = Object(r.a)(e => Object(s.c)(e, {
 					experimentName: o.Qb,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.cb.Enabled),
-				u = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Sb,
-					experimentEligibilitySelector: i.e
-				}), e => e === o.eb.Enabled),
+				}), e => e === o.db.Enabled),
 				m = Object(r.a)(e => Object(s.c)(e, {
-					experimentName: o.Rb,
+					experimentName: o.Pb,
 					experimentEligibilitySelector: i.e
-				}), e => e === o.db.Enabled)
+				}), e => e === o.cb.Enabled)
 		},
 		"./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -1407,7 +1407,7 @@
 			})), n.d(t, "e", (function() {
 				return v
 			})), n.d(t, "d", (function() {
-				return O
+				return j
 			}));
 			var r, o = n("./node_modules/reselect/es/index.js"),
 				s = n("./src/reddit/selectors/subreddit.ts"),
@@ -1427,24 +1427,24 @@
 					expEventOverride: t
 				})
 			}
-			const m = u(i.Xb, !0),
-				p = u(i.Xb, !1),
-				b = u(i.Zb, !0),
-				f = (u(i.Zb, !1), u(i.Yb, !0)),
-				h = u(i.Yb, !1),
-				x = u(i.ac, !0),
-				E = u(i.ac, !1),
-				_ = Object(o.a)(m, b, (e, t) => e === i.xc.Enabled || t === i.yc.Enabled),
-				T = Object(o.a)(f, x, (e, t) => e === i.kb.BlurredPreview || e === i.kb.NoPreview || t === i.kb.BlurredPreview || t === i.kb.NoPreview),
-				D = Object(o.a)(h, E, (e, t) => e === i.kb.BlurredPreview || t === i.kb.BlurredPreview),
-				C = Object(o.a)(f, x, (e, t) => e === i.kb.NoPreview || t === i.kb.NoPreview),
+			const m = u(i.Vb, !0),
+				p = u(i.Vb, !1),
+				b = u(i.Xb, !0),
+				f = (u(i.Xb, !1), u(i.Wb, !0)),
+				h = u(i.Wb, !1),
+				x = u(i.Yb, !0),
+				E = u(i.Yb, !1),
+				_ = Object(o.a)(m, b, (e, t) => e === i.vc.Enabled || t === i.wc.Enabled),
+				T = Object(o.a)(f, x, (e, t) => e === i.jb.BlurredPreview || e === i.jb.NoPreview || t === i.jb.BlurredPreview || t === i.jb.NoPreview),
+				D = Object(o.a)(h, E, (e, t) => e === i.jb.BlurredPreview || t === i.jb.BlurredPreview),
+				C = Object(o.a)(f, x, (e, t) => e === i.jb.NoPreview || t === i.jb.NoPreview),
 				g = Object(o.a)(_, C, D, (e, t, n) => (e || t) && !n),
 				v = e => {
 					const t = D(e),
 						n = g(e);
 					return t ? r.Blurred : n ? r.NoPreview : null
 				},
-				O = e => {
+				j = e => {
 					const t = D(e),
 						n = Object(s.k)(e);
 					return t && n
@@ -1455,4 +1455,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.2fc467146d58c27ebecc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.d6ef332d15d8815e5934.js.map
