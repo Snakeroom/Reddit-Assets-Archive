@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.383e3dc06ab65e3c5d31.js
-// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.4cac3b95134a991067d8.js
+// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, r) {
@@ -51,8 +51,8 @@
 				E = r("./src/reddit/icons/svgs/Hide/index.tsx"),
 				j = r("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				N = r("./src/reddit/icons/svgs/Report/index.tsx"),
-				I = r("./src/reddit/icons/fonts/Coin/index.tsx");
-			const y = e => {
+				y = r("./src/reddit/icons/fonts/Coin/index.tsx");
+			const I = e => {
 				const {
 					award: t
 				} = e;
@@ -60,7 +60,7 @@
 					const e = t.description.split("%{coin_symbol}");
 					return n.a.createElement(n.a.Fragment, null, e.map((e, t) => 0 === t ? e : n.a.createElement(n.a.Fragment, {
 						key: e
-					}, n.a.createElement(I.a, null), e)))
+					}, n.a.createElement(y.a, null), e)))
 				}
 				return null
 			};
@@ -70,7 +70,7 @@
 					canFlagAwards: e => Object(x.c)(e, {
 						experimentEligibilitySelector: x.a,
 						experimentName: w.Qc
-					}) === w.xd.Enabled,
+					}) === w.yd.Enabled,
 					currentUser: g.l,
 					moderatorPermissions: (e, t) => {
 						let {
@@ -224,7 +224,7 @@
 						hk: "2QpjYF"
 					})), n.a.createElement("p", {
 						className: L.a.awardDescription
-					}, n.a.createElement(y, {
+					}, n.a.createElement(I, {
 						award: e
 					})), e.awardType === h.f.Community && i && n.a.createElement("div", {
 						className: L.a.subreddit
@@ -553,4 +553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.383e3dc06ab65e3c5d31.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.4cac3b95134a991067d8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.49e48c69d1444c2ebb89.js
-// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.d1fe894b078f2bd77551.js
+// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -931,7 +931,7 @@
 						method: s.kb.GET
 					}))(i());
 					o.ok ? e(R(y(o.body))) : e(N(o.error))
-				}, F = "POST_DRAFT__SAVE_DRAFT_PENDING", L = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", V = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(n.a)(F), W = Object(n.a)(L), $ = Object(n.a)(V), Q = Object(n.a)(U), z = Object(n.a)(G), K = Object(n.a)(B), J = Object(n.a)(q), X = e => async (t, r, n) => {
+				}, F = "POST_DRAFT__SAVE_DRAFT_PENDING", L = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", V = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(n.a)(F), W = Object(n.a)(L), $ = Object(n.a)(V), z = Object(n.a)(U), Q = Object(n.a)(G), K = Object(n.a)(B), J = Object(n.a)(q), X = e => async (t, r, n) => {
 					let {
 						apiContext: o
 					} = n;
@@ -968,7 +968,7 @@
 						})), e || t(Object(a.a)(h.destSubreddit, r, !1))
 					} else {
 						const e = f.error;
-						e.type === s.J.BAD_CAPTCHA_ERROR ? t(K()) : e.type === s.J.VALIDATION_ERROR ? t(Q(e)) : e.type === s.J.SUBMIT_VALIDATION_ERROR ? t(z(e)) : t($(e)), t(Object(d.f)({
+						e.type === s.J.BAD_CAPTCHA_ERROR ? t(K()) : e.type === s.J.VALIDATION_ERROR ? t(z(e)) : e.type === s.J.SUBMIT_VALIDATION_ERROR ? t(Q(e)) : t($(e)), t(Object(d.f)({
 							duration: d.a,
 							kind: j.b.Error,
 							text: Object(i.a)(e)
@@ -2248,12 +2248,12 @@
 					experimentName: i.Jb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				c = Object(s.a)(d, e => e === i.Vd.Enabled),
+				c = Object(s.a)(d, e => e === i.Wd.Enabled),
 				u = Object(s.a)(e => Object(n.c)(e, {
-					experimentName: i.Qd,
+					experimentName: i.Rd,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				l = Object(s.a)(c, u, (e, t) => e && t === i.Ud.Enabled),
+				l = Object(s.a)(c, u, (e, t) => e && t === i.Vd.Enabled),
 				b = Object(s.a)(e => Object(n.c)(e, {
 					experimentName: i.ec,
 					experimentEligibilitySelector: o.e
@@ -2263,12 +2263,12 @@
 					experimentName: i.Hb,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				h = Object(s.a)(p, e => e === i.Sd.ContinuousScroll),
+				h = Object(s.a)(p, e => e === i.Td.ContinuousScroll),
 				f = Object(s.a)(e => Object(n.c)(e, {
 					experimentName: i.Ib,
 					experimentEligibilitySelector: o.e
 				}), a.a),
-				g = Object(s.a)(f, e => e === i.Td.Enabled),
+				g = Object(s.a)(f, e => e === i.Ud.Enabled),
 				O = Object(s.a)(e => Object(n.c)(e, {
 					experimentName: i.Sb,
 					experimentEligibilitySelector: () => !0
@@ -2280,4 +2280,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.49e48c69d1444c2ebb89.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.d1fe894b078f2bd77551.js.map

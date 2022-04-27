@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.6ee24af99b618bdf08be.js
-// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.2c26c7a7f67d90a47198.js
+// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, t, r) {
@@ -282,12 +282,14 @@
 				return w
 			})), r.d(t, "y", (function() {
 				return I
-			})), r.d(t, "A", (function() {
+			})), r.d(t, "B", (function() {
 				return S
 			})), r.d(t, "a", (function() {
 				return M
 			})), r.d(t, "z", (function() {
 				return R
+			})), r.d(t, "A", (function() {
+				return E
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				d = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
@@ -314,10 +316,11 @@
 				k = Object(d.a)(n.Zc),
 				C = Object(d.a)(n.hd),
 				w = Object(d.a)(n.nd),
-				I = Object(d.a)(n.rd),
-				S = Object(d.a)(n.qd),
-				M = Object(d.a)(n.Jf),
-				R = Object(d.a)(n.pd)
+				I = Object(d.a)(n.sd),
+				S = Object(d.a)(n.rd),
+				M = Object(d.a)(n.Kf),
+				R = Object(d.a)(n.pd),
+				E = Object(d.a)(n.qd)
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, t, r) {
 			"use strict";
@@ -421,4 +424,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.6ee24af99b618bdf08be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.2c26c7a7f67d90a47198.js.map

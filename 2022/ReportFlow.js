@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.b05424a7ca1910d38c9b.js
-// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.5469f21eee54b93c2f53.js
+// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -2221,7 +2221,7 @@
 						n.name
 					}),
 					isNightmodeOn: M.eb,
-					isTalkReportingAllowed: L.A,
+					isTalkReportingAllowed: L.B,
 					locale: A.i
 				}),
 				z = Object(d.b)(W, (e, t) => {
@@ -4003,12 +4003,14 @@
 				return y
 			})), n.d(t, "y", (function() {
 				return k
-			})), n.d(t, "A", (function() {
+			})), n.d(t, "B", (function() {
 				return I
 			})), n.d(t, "a", (function() {
 				return j
 			})), n.d(t, "z", (function() {
 				return T
+			})), n.d(t, "A", (function() {
+				return F
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
@@ -4035,10 +4037,11 @@
 				E = Object(o.a)(s.Zc),
 				S = Object(o.a)(s.hd),
 				y = Object(o.a)(s.nd),
-				k = Object(o.a)(s.rd),
-				I = Object(o.a)(s.qd),
-				j = Object(o.a)(s.Jf),
-				T = Object(o.a)(s.pd)
+				k = Object(o.a)(s.sd),
+				I = Object(o.a)(s.rd),
+				j = Object(o.a)(s.Kf),
+				T = Object(o.a)(s.pd),
+				F = Object(o.a)(s.qd)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOrError.json": function(e) {
 			e.exports = JSON.parse('{"id":"52e4102ca1f1"}')
@@ -4066,4 +4069,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.b05424a7ca1910d38c9b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.5469f21eee54b93c2f53.js.map
