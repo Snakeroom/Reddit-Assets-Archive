@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.14f744e6513f93b119cc.js
-// Retrieved at 4/21/2022, 6:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.63e9e74a54f95b7c8307.js
+// Retrieved at 4/27/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -1169,9 +1169,9 @@
 						text: r.fbt._("Hidden", null, {
 							hk: "4tUfi0"
 						})
-					})), o.a.createElement(c, null, r.fbt._("Curated by u/ {username}", [r.fbt._param("username", Object(A.i)(i.url))], {
-						hk: "1AxWQt"
-					}), "· ", o.a.createElement(D.d, {
+					})), o.a.createElement(c, null, r.fbt._("Curated by u/{username}.", [r.fbt._param("username", Object(A.i)(i.url))], {
+						hk: "1amskX"
+					}), " ", o.a.createElement(D.d, {
 						seconds: i.created
 					}))) : () => null, m = Object(A.f)(i) && i.description ? () => o.a.createElement(a, null, d ? o.a.createElement($, {
 						onSeeMoreDetails: s
@@ -2570,4 +2570,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.14f744e6513f93b119cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.63e9e74a54f95b7c8307.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.0e6e63c8dcf434ab526a.js
-// Retrieved at 4/27/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.110f48ffd261ba186be4.js
+// Retrieved at 4/27/2022, 11:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -13170,8 +13170,8 @@
 						actionText: a.fbt._("Remove", null, {
 							hk: "3tYl0U"
 						}),
-						modalText: a.fbt._("Are you sure you want to rescind the moderator invite to {username}", [a.fbt._param("username", t.selectedModerator.username)], {
-							hk: "4c5sRy"
+						modalText: a.fbt._("Are you sure you want to rescind the moderator invite to {username}?", [a.fbt._param("username", t.selectedModerator.username)], {
+							hk: "3Z7yAI"
 						}),
 						onConfirm: () => e.removeInvitedModerator(t.selectedModerator.id),
 						toggleModal: this.onToggleRemovalModal,
@@ -23505,4 +23505,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.0e6e63c8dcf434ab526a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.110f48ffd261ba186be4.js.map
