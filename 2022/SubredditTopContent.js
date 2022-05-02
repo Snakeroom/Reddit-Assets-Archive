@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.6044de48fabe02f6027d.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.6d3269de7afded87826b.js
+// Retrieved at 5/2/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -711,7 +711,7 @@
 							searchOptions: o
 						} = this.props;
 						let l;
-						return (l = "subreddit" === t && o ? j.y(o, r, n, i) : i && o ? j.z(o, r, n, i) : j.o(s, a))(e)
+						return (l = "subreddit" === t && o ? j.y(o, r, n, i) : i && o ? j.z(o, r, null, n, i) : j.o(s, a))(e)
 					}, this.renderPost = (e, t) => {
 						const {
 							isMiniCard: s,
@@ -1298,29 +1298,30 @@
 				y = s("./src/reddit/components/PostContainer/index.m.less"),
 				_ = s.n(y);
 			const k = Object(p.a)(() => Object(r.c)({
-				basePixelMetadata: Object(g.a)((e, t) => {
-					let {
-						post: s
-					} = t;
-					return Object(h.b)(e, s.id)
-				}),
-				clickTrackingId: (e, t) => {
-					let {
-						post: s
-					} = t;
-					return s.id
-				},
-				imageGalleryCurrentItem: (e, t) => {
-					let {
-						post: s
-					} = t;
-					return Object(h.i)(e, {
-						postId: s.id
-					})
-				},
-				pageType: e => Object(x.d)(e).pageType
-			}));
-			class v extends n.a.Component {
+					basePixelMetadata: Object(g.a)((e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(h.b)(e, s.id)
+					}),
+					clickTrackingId: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return s.id
+					},
+					imageGalleryCurrentItem: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(h.i)(e, {
+							postId: s.id
+						})
+					},
+					pageType: e => Object(x.d)(e).pageType
+				})),
+				v = "post-container";
+			class E extends n.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -1359,7 +1360,7 @@
 						className: Object(f.a)(_.a.WrappedPost, a, `Post ${d.id}`, {
 							promotedlink: d.isSponsored
 						}),
-						"data-testid": "post-container",
+						"data-testid": v,
 						id: c ? c(d.id) : d.id,
 						tabIndex: -1
 					}, s), k = !!d.media && d.media.type === b.o.VIDEO;
@@ -1371,7 +1372,7 @@
 					}, y) : y
 				}
 			}
-			t.a = k(Object(C.a)(Object(u.c)(v)))
+			t.a = k(Object(C.a)(Object(u.c)(E)))
 		},
 		"./src/reddit/components/PostTitle/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2121,4 +2122,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.6044de48fabe02f6027d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.6d3269de7afded87826b.js.map

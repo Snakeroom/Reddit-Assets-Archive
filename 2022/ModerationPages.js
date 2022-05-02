@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.2de11dfa18a60fd0dd2e.js
-// Retrieved at 5/2/2022, 1:00:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.225f1ab4f25d4dd79946.js
+// Retrieved at 5/2/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -14289,29 +14289,30 @@
 				v = s("./src/reddit/components/PostContainer/index.m.less"),
 				_ = s.n(v);
 			const C = Object(p.a)(() => Object(o.c)({
-				basePixelMetadata: Object(x.a)((e, t) => {
-					let {
-						post: s
-					} = t;
-					return Object(b.b)(e, s.id)
-				}),
-				clickTrackingId: (e, t) => {
-					let {
-						post: s
-					} = t;
-					return s.id
-				},
-				imageGalleryCurrentItem: (e, t) => {
-					let {
-						post: s
-					} = t;
-					return Object(b.i)(e, {
-						postId: s.id
-					})
-				},
-				pageType: e => Object(g.d)(e).pageType
-			}));
-			class k extends a.a.Component {
+					basePixelMetadata: Object(x.a)((e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(b.b)(e, s.id)
+					}),
+					clickTrackingId: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return s.id
+					},
+					imageGalleryCurrentItem: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(b.i)(e, {
+							postId: s.id
+						})
+					},
+					pageType: e => Object(g.d)(e).pageType
+				})),
+				k = "post-container";
+			class y extends a.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -14350,7 +14351,7 @@
 						className: Object(f.a)(_.a.WrappedPost, n, `Post ${c.id}`, {
 							promotedlink: c.isSponsored
 						}),
-						"data-testid": "post-container",
+						"data-testid": k,
 						id: l ? l(c.id) : c.id,
 						tabIndex: -1
 					}, s), C = !!c.media && c.media.type === h.o.VIDEO;
@@ -14362,7 +14363,7 @@
 					}, v) : v
 				}
 			}
-			t.a = C(Object(E.a)(Object(u.c)(k)))
+			t.a = C(Object(E.a)(Object(u.c)(y)))
 		},
 		"./src/reddit/components/PostFollow/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -23506,4 +23507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2de11dfa18a60fd0dd2e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.225f1ab4f25d4dd79946.js.map

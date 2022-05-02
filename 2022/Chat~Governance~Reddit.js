@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.75fd8df9c4e2cb717fff.js
-// Retrieved at 5/2/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.978f095bc25d99f0de2c.js
+// Retrieved at 5/2/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("163825"),
+				buildNumber: Object(r.c)("163835"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1651516502"),
+				buildTimestamp: Object(r.b)("1651521569"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6085,14 +6085,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %ccc444534620243d850721a46551c5f9cd9c40328-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c2e2f1844a97717b8740c7815b727b8a5a76853e8-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "cc444534620243d850721a46551c5f9cd9c40328-production",
+						release: "2e2f1844a97717b8740c7815b727b8a5a76853e8-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6701,7 +6701,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "cc444534620243d850721a46551c5f9cd9c40328-production",
+							releaseClient: "2e2f1844a97717b8740c7815b727b8a5a76853e8-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -27190,32 +27190,34 @@
 				return T
 			})), i.d(t, "e", (function() {
 				return O
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "A", (function() {
 				return I
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "r", (function() {
 				return R
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "k", (function() {
 				return F
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "l", (function() {
 				return C
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "q", (function() {
 				return N
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "p", (function() {
 				return A
-			})), i.d(t, "i", (function() {
+			})), i.d(t, "j", (function() {
 				return j
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "i", (function() {
 				return D
-			})), i.d(t, "f", (function() {
+			})), i.d(t, "t", (function() {
 				return P
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "f", (function() {
 				return x
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "h", (function() {
 				return L
-			})), i.d(t, "o", (function() {
+			})), i.d(t, "n", (function() {
 				return k
-			})), i.d(t, "s", (function() {
+			})), i.d(t, "o", (function() {
 				return B
+			})), i.d(t, "s", (function() {
+				return M
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/reddit/constants/posts.ts"),
@@ -27246,7 +27248,7 @@
 					}
 				},
 				f = (e, t, i, n, r) => s => ({
-					...F({
+					...C({
 						state: s,
 						postId: e,
 						searchOptions: t,
@@ -27271,7 +27273,7 @@
 				}),
 				g = (e, t) => i => ({
 					action: s.c.CLICK,
-					actionInfo: R(i, null, u.b.SearchDropdown, null),
+					actionInfo: F(i, null, u.b.SearchDropdown, null),
 					noun: e,
 					metaSearch: u.C(t),
 					screen: u.Y(i),
@@ -27282,7 +27284,7 @@
 					source: _.SEARCH,
 					action: s.c.CLICK,
 					noun: m.RECENT,
-					actionInfo: R(n, null, u.b.SearchDropdown, i),
+					actionInfo: F(n, null, u.b.SearchDropdown, i),
 					search: {
 						query: e,
 						originPageType: n.platform.currentPage ? u.u(n.platform.currentPage) : void 0,
@@ -27297,7 +27299,7 @@
 						source: _.SEARCH,
 						action: s.c.CLICK,
 						noun: m.TYPEAHEAD,
-						actionInfo: R(r, null, u.b.SearchDropdown, i),
+						actionInfo: F(r, null, u.b.SearchDropdown, i),
 						search: {
 							query: t.displayInfo && t.displayInfo.subredditOrProfileName ? t.displayInfo.subredditOrProfileName : e,
 							originPageType: r.platform.currentPage ? u.u(r.platform.currentPage) : void 0,
@@ -27341,7 +27343,7 @@
 					const r = u.F(i, null);
 					return {
 						action: s.c.CLICK,
-						actionInfo: R(i, null, r, null),
+						actionInfo: F(i, null, r, null),
 						correlationId: Object(o.c)(o.a.SearchResults),
 						noun: e ? n.bc.ToSubreddit : n.bc.ToGlobal,
 						search: u.Z(i, t, d.a.SERP),
@@ -27352,16 +27354,26 @@
 			! function(e) {
 				e.POST = "post", e.POST_AUTHOR = "post_author", e.POST_COMMUNITY = "post_community", e.POST_TIMESTAMP = "post_timestamp"
 			}(O || (O = {}));
-			const I = (e, t, i, n, r, s) => o => F({
+			const I = {
+					body: O.POST,
+					background: O.POST,
+					expando_open: O.POST,
+					image: O.POST,
+					timestamp: O.POST_TIMESTAMP,
+					comments: O.POST,
+					subreddit: O.POST_COMMUNITY,
+					user: O.POST_AUTHOR
+				},
+				R = (e, t, i, n, r, s) => o => C({
 					state: o,
 					postId: e,
 					searchOptions: t,
 					pageLayer: i,
-					originElement: n,
+					originElement: null != n ? n : void 0,
 					key: r,
 					discoveryUnit: s
 				}),
-				R = (e, t, i, n) => {
+				F = (e, t, i, n) => {
 					var r;
 					const s = null !== (r = null != t ? t : e.platform.currentPage) && void 0 !== r ? r : void 0;
 					return {
@@ -27370,7 +27382,7 @@
 						position: n
 					}
 				},
-				F = e => {
+				C = e => {
 					let {
 						state: t,
 						postId: i,
@@ -27386,7 +27398,7 @@
 						source: _.SEARCH,
 						action: s.c.CLICK,
 						noun: "post",
-						actionInfo: R(t, r, c, m),
+						actionInfo: F(t, r, c, m),
 						search: {
 							...u.Z(t, n, d.a.SERP, !0, r || void 0),
 							originElement: o
@@ -27398,7 +27410,7 @@
 						discoveryUnit: l ? u.o(l) : null
 					}
 				},
-				C = (e, t, i, n, r, o) => d => A({
+				N = (e, t, i, n, r, o) => d => j({
 					action: s.c.CLICK,
 					state: d,
 					searchOptions: e,
@@ -27408,7 +27420,7 @@
 					postId: r,
 					discoveryUnit: o
 				}),
-				N = e => {
+				A = e => {
 					let {
 						comment: t,
 						key: i,
@@ -27417,7 +27429,7 @@
 						postId: o,
 						searchOptions: d
 					} = e;
-					return e => j({
+					return e => D({
 						action: s.c.CLICK,
 						comment: t,
 						key: i,
@@ -27428,7 +27440,7 @@
 						state: e
 					})
 				},
-				A = e => {
+				j = e => {
 					let {
 						action: t,
 						state: i,
@@ -27463,11 +27475,11 @@
 							hideNsfw: !i.user.prefs.over18
 						},
 						discoveryUnit: m ? u.o(m) : null,
-						actionInfo: R(i, s, h, f),
+						actionInfo: F(i, s, h, f),
 						post: c ? u.H(i, c) : void 0
 					}
 				},
-				j = e => {
+				D = e => {
 					let {
 						action: t,
 						comment: i,
@@ -27500,15 +27512,15 @@
 						userPreferences: {
 							hideNsfw: !a.user.prefs.over18
 						},
-						actionInfo: R(a, s, b, n ? u.t(a, i.id, n) : null),
+						actionInfo: F(a, s, b, n ? u.t(a, i.id, n) : null),
 						comment: u.i(a, i),
 						profile: u.U(a, i.authorId),
 						post: u.H(a, i.postId),
 						subreddit: u.hb(a, i.subredditId)
 					}
 				},
-				D = (e, t, i, n, r) => o => ({
-					...F({
+				P = (e, t, i, n, r) => o => ({
+					...C({
 						state: o,
 						postId: t,
 						searchOptions: i,
@@ -27518,7 +27530,7 @@
 					}),
 					action: s.c.VIEW
 				}),
-				P = (e, t) => i => ({
+				x = (e, t) => i => ({
 					...h(i, t),
 					source: _.SEARCH,
 					action: e,
@@ -27527,7 +27539,7 @@
 					actionInfo: u.d(i),
 					search: u.Z(i, t, d.a.SERP)
 				}),
-				x = e => ({
+				L = e => ({
 					action: s.c.DISABLE,
 					noun: m.SUBREDDIT_SEARCH,
 					source: _.SEARCH,
@@ -27539,7 +27551,7 @@
 					}
 				});
 
-			function L(e, t) {
+			function k(e, t) {
 				return i => ({
 					...h(i, t),
 					source: _.SEARCH,
@@ -27551,7 +27563,7 @@
 				})
 			}
 
-			function k(e, t, i, n, r) {
+			function B(e, t, i, n, r) {
 				return o => ({
 					...h(o),
 					source: _.SEARCH,
@@ -27562,7 +27574,7 @@
 				})
 			}
 
-			function B(e, t, i, n) {
+			function M(e, t, i, n) {
 				return r => ({
 					...h(r),
 					source: _.SEARCH,
@@ -47265,4 +47277,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.75fd8df9c4e2cb717fff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.978f095bc25d99f0de2c.js.map

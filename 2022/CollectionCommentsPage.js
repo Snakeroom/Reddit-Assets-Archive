@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.bb1b368c6f3dac29d4ab.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.bfaeb3fc77567d9c9b49.js
+// Retrieved at 5/2/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -6318,29 +6318,30 @@
 				v = s("./src/reddit/components/PostContainer/index.m.less"),
 				O = s.n(v);
 			const y = Object(u.a)(() => Object(r.c)({
-				basePixelMetadata: Object(f.a)((e, t) => {
-					let {
-						post: s
-					} = t;
-					return Object(h.b)(e, s.id)
-				}),
-				clickTrackingId: (e, t) => {
-					let {
-						post: s
-					} = t;
-					return s.id
-				},
-				imageGalleryCurrentItem: (e, t) => {
-					let {
-						post: s
-					} = t;
-					return Object(h.i)(e, {
-						postId: s.id
-					})
-				},
-				pageType: e => Object(g.d)(e).pageType
-			}));
-			class E extends o.a.Component {
+					basePixelMetadata: Object(f.a)((e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(h.b)(e, s.id)
+					}),
+					clickTrackingId: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return s.id
+					},
+					imageGalleryCurrentItem: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(h.i)(e, {
+							postId: s.id
+						})
+					},
+					pageType: e => Object(g.d)(e).pageType
+				})),
+				E = "post-container";
+			class j extends o.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -6379,7 +6380,7 @@
 						className: Object(x.a)(O.a.WrappedPost, n, `Post ${l.id}`, {
 							promotedlink: l.isSponsored
 						}),
-						"data-testid": "post-container",
+						"data-testid": E,
 						id: c ? c(l.id) : l.id,
 						tabIndex: -1
 					}, s), y = !!l.media && l.media.type === b.o.VIDEO;
@@ -6391,7 +6392,7 @@
 					}, v) : v
 				}
 			}
-			t.a = y(Object(C.a)(Object(p.c)(E)))
+			t.a = y(Object(C.a)(Object(p.c)(j)))
 		},
 		"./src/reddit/components/PostContent/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -11354,4 +11355,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.bb1b368c6f3dac29d4ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.bfaeb3fc77567d9c9b49.js.map

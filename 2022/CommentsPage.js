@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.f76bbd78db6e1d3fd08b.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.fa4b711ccde6c31e50c0.js
+// Retrieved at 5/2/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -6066,29 +6066,30 @@
 				v = s("./src/reddit/components/PostContainer/index.m.less"),
 				O = s.n(v);
 			const E = Object(u.a)(() => Object(r.c)({
-				basePixelMetadata: Object(f.a)((e, t) => {
-					let {
-						post: s
-					} = t;
-					return Object(h.b)(e, s.id)
-				}),
-				clickTrackingId: (e, t) => {
-					let {
-						post: s
-					} = t;
-					return s.id
-				},
-				imageGalleryCurrentItem: (e, t) => {
-					let {
-						post: s
-					} = t;
-					return Object(h.i)(e, {
-						postId: s.id
-					})
-				},
-				pageType: e => Object(g.d)(e).pageType
-			}));
-			class y extends o.a.Component {
+					basePixelMetadata: Object(f.a)((e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(h.b)(e, s.id)
+					}),
+					clickTrackingId: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return s.id
+					},
+					imageGalleryCurrentItem: (e, t) => {
+						let {
+							post: s
+						} = t;
+						return Object(h.i)(e, {
+							postId: s.id
+						})
+					},
+					pageType: e => Object(g.d)(e).pageType
+				})),
+				y = "post-container";
+			class j extends o.a.Component {
 				constructor() {
 					super(...arguments), this.cancelClick = !1
 				}
@@ -6127,7 +6128,7 @@
 						className: Object(x.a)(O.a.WrappedPost, n, `Post ${l.id}`, {
 							promotedlink: l.isSponsored
 						}),
-						"data-testid": "post-container",
+						"data-testid": y,
 						id: c ? c(l.id) : l.id,
 						tabIndex: -1
 					}, s), E = !!l.media && l.media.type === b.o.VIDEO;
@@ -6139,7 +6140,7 @@
 					}, v) : v
 				}
 			}
-			t.a = E(Object(C.a)(Object(p.c)(y)))
+			t.a = E(Object(C.a)(Object(p.c)(j)))
 		},
 		"./src/reddit/components/PostContent/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -11027,4 +11028,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.f76bbd78db6e1d3fd08b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.fa4b711ccde6c31e50c0.js.map
