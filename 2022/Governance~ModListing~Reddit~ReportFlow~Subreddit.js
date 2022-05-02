@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.6177454934828461f06f.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.d40a33d74eb22796dd07.js
+// Retrieved at 5/2/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -5683,29 +5683,28 @@
 					let {
 						gqlContext: i
 					} = s;
-					var o, d, a, u;
-					const l = n();
-					if (!Object(O.i)(l, e)) return;
-					const b = {
+					var o, d;
+					const a = n();
+					if (!Object(O.i)(a, e)) return;
+					const u = {
 						subredditId: e,
-						userId: t,
-						filter: h.k.All
+						userId: t
 					};
-					if (Object(g.f)(l, t, e)) return;
-					const f = await ((e, t) => Object(c.a)(e, {
+					if (Object(g.g)(a, t, e)) return;
+					const l = await ((e, t) => Object(c.a)(e, {
 						...p,
 						variables: {
 							...t
 						}
-					}))(i(), b);
-					if (f.ok) {
-						const n = null === (o = f.body) || void 0 === o ? void 0 : o.data;
+					}))(i(), u);
+					if (l.ok) {
+						const n = null === (o = l.body) || void 0 === o ? void 0 : o.data;
 						if ("Subreddit" === (null === (d = null == n ? void 0 : n.subredditInfoById) || void 0 === d ? void 0 : d.__typename)) {
-							const s = null === (u = null === (a = null == n ? void 0 : n.subredditInfoById) || void 0 === a ? void 0 : a.modNotes) || void 0 === u ? void 0 : u.totalCount;
+							const s = null == n ? void 0 : n.subredditInfoById;
 							s && r(P({
 								subredditId: e,
 								userId: t,
-								totalCount: s
+								totalCounts: s
 							}))
 						}
 					}
@@ -12362,6 +12361,7 @@
 						return e
 				}
 			};
+			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			const E = {};
 			var T = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : E,
@@ -12370,23 +12370,26 @@
 					case s.Q: {
 						const {
 							subredditId: r,
-							newModNote: n,
-							filter: s
-						} = t.payload, i = Object(o.d)(r, n.user.id, s);
+							newModNote: n
+						} = t.payload, s = Object(o.d)(r, n.user.id, b.k.All);
 						return {
 							...e,
-							[i]: e[i] + 1
+							[s]: {
+								...e[s],
+								[b.k.All]: (e[s][b.k.All] || 0) + 1,
+								[b.k.Note]: (e[s][b.k.Note] || 0) + 1
+							}
 						}
 					}
 					case s.lb: {
 						const {
 							subredditId: r,
 							userId: n,
-							totalCount: s
+							totalCounts: s
 						} = t.payload, i = Object(o.d)(r, n, b.k.All);
 						return {
 							...e,
-							[i]: s
+							[i]: Object.keys(s).reduce((e, t) => (e[t] = s[t].totalCount, e), {})
 						}
 					}
 					case s.R: {
@@ -12397,7 +12400,11 @@
 						return {
 							...e,
 							...void 0 !== e[s] ? {
-								[s]: e[s] - 1
+								[s]: {
+									...e[s],
+									[b.k.All]: (e[s][b.k.All] || 1) - 1,
+									[b.k.Note]: (e[s][b.k.Note] || 1) - 1
+								}
 							} : null
 						}
 					}
@@ -14316,18 +14323,20 @@
 		},
 		"./src/reddit/selectors/modUserNotes.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "e", (function() {
+			r.d(t, "f", (function() {
 				return c
-			})), r.d(t, "d", (function() {
+			})), r.d(t, "e", (function() {
 				return a
-			})), r.d(t, "b", (function() {
-				return u
 			})), r.d(t, "c", (function() {
+				return u
+			})), r.d(t, "d", (function() {
 				return l
-			})), r.d(t, "a", (function() {
+			})), r.d(t, "b", (function() {
 				return b
-			})), r.d(t, "f", (function() {
+			})), r.d(t, "a", (function() {
 				return p
+			})), r.d(t, "g", (function() {
+				return f
 			}));
 			var n = r("./src/lib/objectSelector/index.ts"),
 				s = r("./src/reddit/models/SubredditModeration/index.ts"),
@@ -14376,6 +14385,11 @@
 				p = (e, t, r) => {
 					if (!t || !r) return;
 					return e.features.modUserNotes.totalCount[Object(s.d)(r, t, i.k.All)]
+				},
+				f = (e, t, r, n) => {
+					if (!n) return;
+					const s = p(e, t, r);
+					return s && s[n] || 0
 				}
 		},
 		"./src/reddit/selectors/moderatingComments.ts": function(e, t, r) {
@@ -15037,7 +15051,7 @@
 			e.exports = JSON.parse('{"id":"15c4ad40a0bc"}')
 		},
 		"./src/redditGQL/operations/GetTotalModNoteCount.json": function(e) {
-			e.exports = JSON.parse('{"id":"512416f312ac"}')
+			e.exports = JSON.parse('{"id":"bb325c103c55"}')
 		},
 		"./src/redditGQL/operations/GetTournaments.json": function(e) {
 			e.exports = JSON.parse('{"id":"17f4fcd0e341"}')
@@ -15155,4 +15169,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.6177454934828461f06f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.d40a33d74eb22796dd07.js.map

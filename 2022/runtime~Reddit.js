@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.14981bb7a246266d0a84.js
-// Retrieved at 5/2/2022, 1:00:12 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.889356b28068f844deee.js
+// Retrieved at 5/2/2022, 3:10:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
+		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
 		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
-		for (m && m(o); b.length;) b.shift()();
+		for (m && m(o); P.length;) P.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
@@ -815,7 +815,7 @@
 					"vendors~xml2js": "31d6cfe0d16ae931b73c",
 					SignupUpsell: "08d8bf212b5b02c38c29",
 					NftProfileUnit: "e63ef059af40ab9e91e8",
-					AuthorHovercard: "a4b0fb541b6f6ea5c35a",
+					AuthorHovercard: "6160562957717680a21a",
 					AwardTooltip: "179971181a5dabd27bf9",
 					CustomBadgeHovercardTooltip: "3ed6dc5d02b740fdc998",
 					GovernanceUserPublicPointsDisplay: "bd91d2e1bf782ec87f09",
@@ -977,12 +977,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
 			}
-			var b = document.createElement("link");
-			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
+			var P = document.createElement("link");
+			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
 				var a = o && o.target && o.target.src || d,
 					i = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], b.parentNode.removeChild(b), t(i)
-			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], P.parentNode.removeChild(P), t(i)
+			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
 		})).then((function() {
 			n[e] = 0
 		})));
@@ -1353,8 +1353,8 @@
 						BottomSheetUpsellWrapper: "f44d4330ced2efb8189c",
 						ChangeUsernameModals: "38b098ff7a3e2186d25d",
 						ChangeUsernameTooltip: "ac1f1efe065a4eb82da2",
-						"ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8": "788b9766a9a819fcf0fc",
-						EconTopAwardersModal: "955f3bac9d228d353770",
+						"ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8": "80774ec659c860ae7289",
+						EconTopAwardersModal: "a325c907e5f3d57b3bb8",
 						ClaimFreeAwardModal: "2f14cd6271795a581970",
 						CoinPurchaseModal: "6a6a39060401d544f6bb",
 						Coins: "271314dfb9e4b859a261",
@@ -1382,7 +1382,7 @@
 						CountryPage: "69f27ef301b29d88d9ee",
 						Multireddit: "f5d354e71cebfc80057d",
 						ProfilePosts: "172d6412d18745ce1cee",
-						"ModerationPages~SubredditWiki": "5344b9295e6db12ec79a",
+						"ModerationPages~SubredditWiki": "d0340c5a45c419b08aed",
 						"SubredditWiki~reddit-components-Wiki-ModHubWikiManagement": "7d6e46e91b9a42e197da",
 						SubredditWiki: "0ae11f6f8c0afce45597",
 						"FramedGild~GildModal": "d6d5fdb67518d238a53e",
@@ -1440,7 +1440,7 @@
 						Premium: "0403f50df7765ddcac0f",
 						"reddit-components-Econ-Prediction-PremiumModal": "ce1dfb2021d1d2b9b5a5",
 						ProfileFollowersAction: "cf28590b6946bc3e79fe",
-						ProfileFollowersPage: "cb974ba7f13684bae5b5",
+						ProfileFollowersPage: "d15f012a20a88bc19609",
 						ProfileModeration: "83017ab26a9bd17748ff",
 						Report: "a08226b9f81dcd0a88cb",
 						ReportPage: "1c2427812adb030aa45e",
@@ -1492,7 +1492,7 @@
 						PostCreation: "7d8c2f9d2a7f94d2b397",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "4af28f818270a434061f",
-						Settings: "35eba845ead3ed05f03b",
+						Settings: "437e84cbed62deb783f1",
 						"vendors~ExportTheme~ImportTheme": "4e4dc70c7eeb3e02be12",
 						ExportTheme: "fba93d918b220f151980",
 						ImportTheme: "ffa092f19a1ee16c7439",
@@ -1504,7 +1504,7 @@
 						"vendors~xml2js": "8c40daee6c2bccb14296",
 						SignupUpsell: "4fa9be1d1add02193497",
 						NftProfileUnit: "2cb4e6378903938edae8",
-						AuthorHovercard: "c5c6b680e1ed910bec04",
+						AuthorHovercard: "3ee67bcf55827211d886",
 						AwardTooltip: "4cac3b95134a991067d8",
 						CustomBadgeHovercardTooltip: "6c263613d66c1f55c713",
 						GovernanceUserPublicPointsDisplay: "d63c112ba2dc46b2bc81",
@@ -1722,4 +1722,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.14981bb7a246266d0a84.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.889356b28068f844deee.js.map
