@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.225f1ab4f25d4dd79946.js
-// Retrieved at 5/2/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.d4a3e995fa604914bacd.js
+// Retrieved at 5/2/2022, 5:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -8694,7 +8694,8 @@
 			e.exports = {
 				PencilIcon: "_2no2YPg0_yUhnhUSmNU8Xu",
 				pencilIcon: "_2no2YPg0_yUhnhUSmNU8Xu",
-				noPermissions: "_2L3p28vjPxj-Ab-h1gRXii"
+				noPermissions: "_2L3p28vjPxj-Ab-h1gRXii",
+				helperTitle: "_3qVhi7y_9yxVxxDGEHORe9"
 			}
 		},
 		"./src/reddit/components/ModHub/ApprovedTalkHosts/index.tsx": function(e, t, s) {
@@ -8860,7 +8861,7 @@
 						props: t,
 						state: s
 					} = this, n = t.approvedTalkHosts.length > 0 ? t.approvedTalkHosts[t.approvedTalkHosts.length - 1].redditor.id : void 0, o = null === (e = t.moderatorPermissions) || void 0 === e ? void 0 : e.access;
-					return t.approvedTalkHosts.length ? r.a.createElement(r.a.Fragment, null, r.a.createElement(g.c, null, r.a.createElement(E.l, {
+					return r.a.createElement(r.a.Fragment, null, r.a.createElement(g.c, null, r.a.createElement(E.l, {
 						disabled: !o,
 						onClick: this.approveTalkHost
 					}, a.fbt._("Add Talk Host", null, {
@@ -8869,14 +8870,25 @@
 						className: Object(l.a)(!o && U.a.noPermissions)
 					}, r.a.createElement(g.b, null, a.fbt._("Talk hosts", null, {
 						hk: "3ypfgA"
-					})), r.a.createElement(f.b, {
+					})), r.a.createElement("p", {
+						className: U.a.helperTitle
+					}, a.fbt._("Talk hosts are members who are approved to create Reddit Talk posts.", null, {
+						hk: "2mnjQi"
+					})), t.approvedTalkHostsListPending && r.a.createElement(x.a, null), t.approvedTalkHosts.length > 0 ? r.a.createElement(f.b, {
 						loadMoreToken: n,
 						onLoadMore: this.onLoadMore
 					}, t.approvedTalkHosts.map(e => ({
 						estHeight: B,
 						id: e.redditor.id,
 						render: () => this.renderUser(e)
-					})))), t.isAddApprovedTalkHostModalOpen && this.renderAddApprovedHostModal(), t.isConfirmModalOpen && s.userId && s.username && r.a.createElement(p.a, {
+					}))) : r.a.createElement(b.c, {
+						text: a.fbt._("No approved Talk hosts in {subredditName}", [a.fbt._param("subredditName", t.subredditName)], {
+							hk: "3lDejn"
+						})
+					}, r.a.createElement(v.a, {
+						name: "edit",
+						className: U.a.PencilIcon
+					}))), t.isAddApprovedTalkHostModalOpen && this.renderAddApprovedHostModal(), t.isConfirmModalOpen && s.userId && s.username && r.a.createElement(p.a, {
 						actionText: a.fbt._("Remove", null, {
 							hk: "3tYl0U"
 						}),
@@ -8886,23 +8898,7 @@
 						onConfirm: this.handleRemoveConfirmed,
 						toggleModal: t.toggleRemoveHostModal,
 						withOverlay: !0
-					})) : r.a.createElement(r.a.Fragment, null, r.a.createElement(g.c, null, r.a.createElement(E.l, {
-						disabled: !o,
-						onClick: this.approveTalkHost
-					}, a.fbt._("Add Talk Host", null, {
-						hk: "w94Fa"
-					}))), r.a.createElement(g.a, {
-						className: Object(l.a)(!o && U.a.noPermissions)
-					}, r.a.createElement(g.b, null, a.fbt._("Approved Talk hosts", null, {
-						hk: "4q22YJ"
-					})), t.approvedTalkHostsListPending ? r.a.createElement(x.a, null) : r.a.createElement(b.c, {
-						text: a.fbt._("No approved Talk hosts in {subredditName}", [a.fbt._param("subredditName", t.subredditName)], {
-							hk: "3lDejn"
-						})
-					}, r.a.createElement(v.a, {
-						name: "edit",
-						className: U.a.PencilIcon
-					}))), t.isAddApprovedTalkHostModalOpen && this.renderAddApprovedHostModal())
+					}))
 				}
 			}
 			t.a = W(z)
@@ -23507,4 +23503,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.225f1ab4f25d4dd79946.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d4a3e995fa604914bacd.js.map
