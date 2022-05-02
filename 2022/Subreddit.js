@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.9b8dcb9bf70324298aa0.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.a39aefd528ee6e8ad981.js
+// Retrieved at 5/2/2022, 11:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -6159,7 +6159,7 @@
 					s = {
 						overflow: "hidden"
 					};
-				return s.width = e.width && !e.fullWidth ? `${e.width}px` : "100%", e.showCentered && (s.margin = "0 auto"), e.isListing || (s.maxHeight = `${u.e}px`), void 0 !== e.maxHeight && (s.maxHeight = e.maxHeight || void 0), r.a.createElement("iframe", {
+				return s.width = e.width && !e.fullWidth ? `${e.width}px` : "100%", e.showCentered && (s.margin = "0 auto"), e.isListing || (s.maxHeight = `${u.e}px`), void 0 !== e.maxHeight && (s.maxHeight = e.maxHeight || void 0), e.isTweet || (s.height = "100%"), r.a.createElement("iframe", {
 					className: Object(c.a)(l.a, b.a.embedBox, e.className),
 					height: e.height,
 					width: e.width && !e.fullWidth ? e.width : "100%",
@@ -6354,9 +6354,6 @@
 				const n = {
 						...t ? {
 							maxHeight: `${t}px`
-						} : {},
-						...e.isTweet ? {
-							height: `${e.height}px`
 						} : {},
 						...e.showFull && !e.showCentered ? {
 							maxWidth: `${e.width}px`
@@ -15509,4 +15506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.9b8dcb9bf70324298aa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.a39aefd528ee6e8ad981.js.map

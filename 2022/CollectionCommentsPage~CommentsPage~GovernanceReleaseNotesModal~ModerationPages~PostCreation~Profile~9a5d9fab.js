@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.21d2b4badd3eefd4aa1f.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.e1a648b0f89c5b0bd063.js
+// Retrieved at 5/2/2022, 11:00:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -961,7 +961,6 @@
 				}, [S, t]), o.a.createElement(m.a, x({}, s, {
 					alwaysWrapMedia: !0,
 					height: N + 8,
-					isTweet: !0,
 					showFull: !s.isListing,
 					width: f
 				}), t && o.a.createElement("div", {
@@ -990,6 +989,7 @@
 					height: N,
 					isListing: s.isListing,
 					isResponsive: !0,
+					isTweet: !0,
 					maxHeight: s.isListing ? p.j : null,
 					onLoad: g,
 					showCentered: s.showCentered,
@@ -2160,4 +2160,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.21d2b4badd3eefd4aa1f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.e1a648b0f89c5b0bd063.js.map
