@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.6e5adecd074a37b2c29c.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.0152d78f152c5e5aa147.js
+// Retrieved at 5/2/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -107,17 +107,17 @@
 		"./src/reddit/actions/notifications/index.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "initializeServiceWorkerChannel", (function() {
-				return N
-			})), n.d(t, "requestNotificationsPermissions", (function() {
-				return E
-			})), n.d(t, "subscribeForPNs", (function() {
 				return C
-			})), n.d(t, "unsubscribeFromPNs", (function() {
-				return B
-			})), n.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
+			})), n.d(t, "requestNotificationsPermissions", (function() {
 				return S
-			})), n.d(t, "subscribeToPermissionsChange", (function() {
+			})), n.d(t, "subscribeForPNs", (function() {
 				return P
+			})), n.d(t, "unsubscribeFromPNs", (function() {
+				return T
+			})), n.d(t, "requestBrowserNotificationPermissionPromptByUser", (function() {
+				return L
+			})), n.d(t, "subscribeToPermissionsChange", (function() {
+				return A
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				a = n("./node_modules/lodash/omit.js"),
@@ -132,105 +132,111 @@
 				m = n("./src/reddit/actions/notifications/utils.ts"),
 				b = n("./src/reddit/actions/tabBadging.ts"),
 				h = n("./src/reddit/actions/toaster.ts"),
-				f = n("./src/reddit/helpers/parseUrl.ts"),
-				g = n("./src/reddit/helpers/tabBadging/index.ts"),
-				v = n("./src/reddit/helpers/trackers/notifications.ts"),
-				y = n("./src/reddit/models/Toast/index.ts"),
-				O = n("./src/reddit/constants/experiments.ts"),
-				_ = n("./src/reddit/helpers/chooseVariant/index.ts");
-			const j = e => Object(_.c)(e, {
-				experimentName: O.Ub,
-				experimentEligibilitySelector: _.a
-			}) === O.ud;
-			var I = n("./src/reddit/selectors/meta.ts"),
-				x = n("./src/reddit/selectors/user.ts");
-			let k = !1;
-			const N = async (e, t) => {
-				const n = Object(x.Q)(e);
-				if (k) return;
-				if (k = !0, Object(m.a)(e) !== d.c.NotificationsSupported) return;
+				f = n("./src/reddit/constants/modals.ts"),
+				g = n("./src/reddit/helpers/parseUrl.ts"),
+				v = n("./src/reddit/helpers/tabBadging/index.ts"),
+				y = n("./src/reddit/helpers/trackers/notifications.ts"),
+				O = n("./src/reddit/models/Toast/index.ts"),
+				_ = n("./src/reddit/selectors/activeModal.ts"),
+				j = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
+				I = n("./src/reddit/constants/experiments.ts"),
+				x = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const k = e => Object(x.c)(e, {
+				experimentName: I.Ub,
+				experimentEligibilitySelector: x.a
+			}) === I.ud;
+			var N = n("./src/reddit/selectors/meta.ts"),
+				w = n("./src/reddit/selectors/user.ts");
+			let E = !1;
+			const C = async (e, t) => {
+				const n = Object(w.Q)(e);
+				if (E) return;
+				if (E = !0, Object(m.a)(e) !== d.c.NotificationsSupported) return;
 				await Object(l.a)();
 				navigator.serviceWorker.addEventListener("message", r => {
 					const a = r.data,
 						o = a.command || a.type;
-					if ("registerWithServiceWorker" === o) w(e);
-					else if (o === g.a && n) {
+					if ("registerWithServiceWorker" === o) B(e);
+					else if (o === v.a && n) {
 						const e = s()(a, ["command"]);
 						t(Object(b.f)(e))
 					} else if ("navigate.chat" === o) {
-						const e = Object(f.a)(a.data.href);
+						const e = Object(g.a)(a.data.href);
 						e && e.pathname && t(Object(u.c)(e.pathname))
 					}
-				}), w(e)
-			}, w = e => {
+				}), B(e)
+			}, B = e => {
 				navigator.serviceWorker.controller && navigator.serviceWorker.controller.postMessage({
 					command: "registerClient",
-					v2EventBoilerPlate: v.c(e)
+					v2EventBoilerPlate: y.c(e)
 				})
-			}, E = function(e, t) {
+			}, S = function(e, t) {
 				let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : () => {};
 				return async (r, a, s) => {
 					const i = a(),
-						l = Object(I.f)(i),
-						u = j(i);
+						l = Object(N.f)(i),
+						u = k(i),
+						p = Object(j.e)(i),
+						m = Object(_.c)(f.a.NSFW_BLOCKING_MODAL_V2)(i);
+					if (p || m) return;
 					if (await Object(o.a)() || l) return;
-					await N(i, r);
-					v.k(i), await Object(c.b)(e, t, () => {
-						u || r(Object(d.o)()), r(Object(d.n)()), v.i(i)
+					await C(i, r);
+					y.k(i), await Object(c.b)(e, t, () => {
+						u || r(Object(d.o)()), r(Object(d.n)()), y.i(i)
 					}, (e, t) => {
-						r(Object(d.l)()), r(B(t ? d.a.Denied : d.a.Closed)), e && (t ? v.e(i) : v.f(i))
+						r(Object(d.l)()), r(T(t ? d.a.Denied : d.a.Closed)), e && (t ? y.e(i) : y.f(i))
 					}, e => {
-						r(Object(d.m)()), r(C()), e && v.d(i)
+						r(Object(d.m)()), r(P()), e && y.d(i)
 					}, () => {
 						r(Object(d.k)()), n()
 					})
 				}
-			}, C = e => async (t, n, a) => {
+			}, P = e => async (t, n, a) => {
 				const s = n();
 				try {
 					switch (await Object(i.b)(a.gqlContext)) {
 						case i.a.Success:
-							Object(m.b)(d.a.Granted), v.l(s), e && t(Object(h.f)({
-								kind: y.b.SuccessCommunity,
+							Object(m.b)(d.a.Granted), y.l(s), e && t(Object(h.f)({
+								kind: O.b.SuccessCommunity,
 								text: r.fbt._("Changes saved", null, {
 									hk: "wGH5U"
 								})
 							}));
 							break;
 						case i.a.FailedResponse:
-							v.j(s, "registration_failed_generally");
+							y.j(s, "registration_failed_generally");
 							break;
 						case i.a.FailedGqlReponse:
-							v.j(s, "registration_failed_in_gql")
+							y.j(s, "registration_failed_in_gql")
 					}
 				} catch (o) {
-					v.j(s, "registration_failed_uncaught_exception"), console.error(o)
+					y.j(s, "registration_failed_uncaught_exception"), console.error(o)
 				}
-			}, B = (e, t) => async n => {
+			}, T = (e, t) => async n => {
 				try {
 					Object(m.b)(e);
 					const a = await Object(l.a)();
 					if (a) {
 						const e = await a.pushManager.getSubscription();
 						e && (e.unsubscribe(), t && n(Object(h.f)({
-							kind: y.b.SuccessCommunity,
+							kind: O.b.SuccessCommunity,
 							text: r.fbt._("Changes saved", null, {
 								hk: "wGH5U"
 							})
 						})))
 					}
 				} catch (a) {}
-			}, S = e => async (t, n) => {
+			}, L = e => async (t, n) => {
 				const r = n();
 				if (Object(m.a)(r) === d.c.NotificationsSupported) switch (Object(c.a)()) {
 					case d.a.Default:
 					case d.a.Closed:
-						await t(E(!0, !0));
+						await t(S(!0, !0));
 						break;
 					case d.a.Denied:
 						t(Object(p.h)(e))
 				}
-			}, P = () => async (e, t) => {
+			}, A = () => async (e, t) => {
 				var n;
 				if (!(null === (n = null === navigator || void 0 === navigator ? void 0 : navigator.permissions) || void 0 === n ? void 0 : n.query)) return;
 				const r = t();
@@ -241,13 +247,13 @@
 				a.onchange = () => (t => {
 					switch (t) {
 						case d.a.Denied:
-							e(B(d.a.Denied)), v.e(r);
+							e(T(d.a.Denied)), y.e(r);
 							break;
 						case d.a.Granted:
-							e(C()), v.d(r);
+							e(P()), y.d(r);
 							break;
 						default:
-							e(B(d.a.Default))
+							e(T(d.a.Default))
 					}
 				})(a.state)
 			}
@@ -606,8 +612,8 @@
 			}
 			const H = {},
 				D = "",
-				F = 0,
-				M = "200px",
+				M = 0,
+				F = "200px",
 				z = "250px",
 				W = "270px",
 				G = 100,
@@ -621,7 +627,7 @@
 						notificationHeights: H,
 						currentNotificationCursorIndex: -1
 					}, this.resetOverflowMenu = () => {
-						this.props.activeOverflowMenuId.length > F && this.props.setActiveOverflowMenuId(D)
+						this.props.activeOverflowMenuId.length > M && this.props.setActiveOverflowMenuId(D)
 					}, this.getContainerHeight = () => {
 						const {
 							notificationHeights: e
@@ -632,7 +638,7 @@
 						} = this.props, a = t || n, s = window.innerHeight - V - 2 * Q - (a ? G : 0);
 						let o = 0;
 						for (const i in e) o += e[i];
-						return 0 === o ? a ? z : r ? M : W : (a && (o += G), s < o && (o = s + (a ? G : 0)), o)
+						return 0 === o ? a ? z : r ? F : W : (a && (o += G), s < o && (o = s + (a ? G : 0)), o)
 					}, this.setNotificationHeight = (e, t) => {
 						this.setState(n => ({
 							notificationHeights: {
@@ -713,7 +719,7 @@
 							height: h,
 							maxHeight: h
 						} : {
-							minHeight: M
+							minHeight: F
 						}
 					}, v && s.a.createElement("div", {
 						className: S.a.notificationBannerContainer
@@ -1638,11 +1644,11 @@
 				}).apply(this, arguments)
 			}
 			const D = [E.h.PrivateMessage, E.h.ChatMessage, E.h.ChatRequest, E.h.UsernameMention, E.h.PostReply, E.h.UpvotePost, E.h.UpvoteComment, E.h.CommentReply, E.h.ThreadReplies, E.h.TopLevelComment, E.h.NewPostActivity, E.h.UserNewFollower, E.h.PostFlairAdded, E.h.UserFlairAdded, E.h.NewPinnedPost, E.h.AwardReceived, E.h.PostFollow, E.h.TalkLive, E.h.CommentFollow, E.h.LifecyclePostSuggestions, E.h.BroadcastRecommendation, E.h.SubredditRecommendation, E.h.RedditLore, E.h.OneOff, E.h.CakeDay, E.h.ModeratedSrEngagement];
-			var F;
+			var M;
 			! function(e) {
 				e[e.TURN_ON_PN = 0] = "TURN_ON_PN", e[e.TURN_ON_PN_APP = 1] = "TURN_ON_PN_APP", e[e.VERIFY_EMAIL = 2] = "VERIFY_EMAIL", e[e.TURN_ON_DAYLY_DIGEST = 3] = "TURN_ON_DAYLY_DIGEST", e[e.DONE = 4] = "DONE"
-			}(F || (F = {}));
-			var M = e => {
+			}(M || (M = {}));
+			var F = e => {
 					let {
 						inTooltip: t,
 						isBannerEnabled: n,
@@ -1654,7 +1660,7 @@
 						b = Object(s.e)(R.o),
 						f = Object(s.e)(R.E),
 						y = Object(r.useRef)(b),
-						[O, _] = Object(r.useState)(F.TURN_ON_PN),
+						[O, _] = Object(r.useState)(M.TURN_ON_PN),
 						j = Object(s.e)(e => e.user.accountSettings.changeEmail.api.pending),
 						I = Object(r.useCallback)(() => {
 							m(async (e, t) => {
@@ -1662,28 +1668,28 @@
 								let a = Object(R.gb)(t());
 								a.allIds.length || await e(Object(S.a)(L.a.Email));
 								const s = null === (r = null === (n = (a = Object(R.gb)(t())).byId) || void 0 === n ? void 0 : n.EMAIL_DIGEST) || void 0 === r ? void 0 : r.isEnabled;
-								_(s ? F.DONE : F.TURN_ON_DAYLY_DIGEST)
+								_(s ? M.DONE : M.TURN_ON_DAYLY_DIGEST)
 							})
 						}, [m]),
 						x = Object(r.useCallback)(() => {
-							f ? I() : _(F.VERIFY_EMAIL)
+							f ? I() : _(M.VERIFY_EMAIL)
 						}, [f, I]),
 						k = Object(r.useCallback)(() => {
 							m(async (e, t) => {
 								const n = t();
-								Object(R.ib)(n).allIds.length || await e(Object(S.a)(L.a.Push)), Object(U.c)(t(), D) ? _(F.TURN_ON_PN_APP) : x()
+								Object(R.ib)(n).allIds.length || await e(Object(S.a)(L.a.Push)), Object(U.c)(t(), D) ? _(M.TURN_ON_PN_APP) : x()
 							})
 						}, [m, x]),
 						E = Object(r.useCallback)(() => {
-							(() => Object(N.a)() === w.a.Granted)() ? k(): _(F.TURN_ON_PN)
+							(() => Object(N.a)() === w.a.Granted)() ? k(): _(M.TURN_ON_PN)
 						}, [k]),
-						M = Object(r.useCallback)(() => {
+						F = Object(r.useCallback)(() => {
 							l(o.b.Email_perms)(), t && u && u(), m(Object(C.h)(T.a))
 						}, [m, l, t, u]);
 					if (Object(r.useEffect)(() => {
 							E()
 						}, [E]), Object(r.useEffect)(() => {
-							if (b !== y.current && O === F.VERIFY_EMAIL) {
+							if (b !== y.current && O === M.VERIFY_EMAIL) {
 								const e = Object(P.e)(c.fbt._("Email successfully updated!", null, {
 									hk: "3iPlUp"
 								}), A.b.SuccessCommunityGreen);
@@ -1691,22 +1697,22 @@
 							}
 						}, [b, O, I]), Object(r.useEffect)(() => {
 							j && m(Object(C.g)(T.a))
-						}, [j, m]), O === F.DONE) return a.a.createElement(g, {
+						}, [j, m]), O === M.DONE) return a.a.createElement(g, {
 						isLoggedIn: i,
 						isBannerEnabled: n
 					});
 					const z = {
 							to: "/settings/notifications",
 							kind: p.b.InternalLink,
-							onClick: O === F.TURN_ON_PN_APP ? l(o.b.PN_perms) : l(o.b.Email_perms)
+							onClick: O === M.TURN_ON_PN_APP ? l(o.b.PN_perms) : l(o.b.Email_perms)
 						},
 						W = {
-							onClick: O === F.TURN_ON_PN ? async () => {
+							onClick: O === M.TURN_ON_PN ? async () => {
 								l(o.b.PN_perms)(), t && u && u(), await m(Object(B.requestBrowserNotificationPermissionPromptByUser)(T.f)), E()
-							} : M
+							} : F
 						},
-						G = O === F.TURN_ON_PN || O === F.TURN_ON_PN_APP,
-						q = O === F.TURN_ON_PN_APP || O === F.TURN_ON_DAYLY_DIGEST;
+						G = O === M.TURN_ON_PN || O === M.TURN_ON_PN_APP,
+						q = O === M.TURN_ON_PN_APP || O === M.TURN_ON_DAYLY_DIGEST;
 					return a.a.createElement("div", {
 						className: Object(d.a)(h.a.emptyState, h.a.karmaView, {
 							[h.a.inNotificationsPage]: !t
@@ -1764,7 +1770,7 @@
 				return u || p ? a.a.createElement(k, {
 					inTooltip: r,
 					onBtnClick: l(o.b.Memes)
-				}) : m || b ? a.a.createElement(M, {
+				}) : m || b ? a.a.createElement(F, {
 					isBannerEnabled: t,
 					isLoggedIn: n,
 					inTooltip: r,
@@ -2172,8 +2178,8 @@
 					error: R,
 					pending: H
 				}),
-				F = n("./node_modules/lodash/merge.js"),
-				M = n.n(F),
+				M = n("./node_modules/lodash/merge.js"),
+				F = n.n(M),
 				z = n("./node_modules/lodash/omit.js"),
 				W = n.n(z);
 			const G = {};
@@ -2187,7 +2193,7 @@
 							subredditId: n,
 							flairedUsers: r
 						} = t.payload;
-						return M()({
+						return F()({
 							...e
 						}, {
 							[n]: r
@@ -2381,7 +2387,7 @@
 							const s = {
 								[r]: a
 							};
-							return M()({
+							return F()({
 								...e
 							}, s)
 						}
@@ -2772,7 +2778,7 @@
 				}
 			};
 			const De = {};
-			var Fe = function() {
+			var Me = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : De,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -2791,9 +2797,9 @@
 						return e
 				}
 			};
-			const Me = {};
+			const Fe = {};
 			var ze = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Me,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Fe,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case a.L: {
@@ -2991,7 +2997,7 @@
 					editableUserOrder: Ne,
 					invitedModerators: Le,
 					invitePending: Ue,
-					loadMoreModerators: Fe,
+					loadMoreModerators: Me,
 					loadMoreEditableModerators: He,
 					models: ze,
 					search: Je,
@@ -3358,7 +3364,7 @@
 						return e
 				}
 			};
-			var Ft = function() {
+			var Mt = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -3371,9 +3377,9 @@
 							return e
 					}
 				},
-				Mt = Object(r.c)({
+				Ft = Object(r.c)({
 					error: Dt,
-					pending: Ft
+					pending: Mt
 				});
 			const zt = {};
 			var Wt = function() {
@@ -3422,7 +3428,7 @@
 					}
 				},
 				Kt = Object(r.c)({
-					api: Mt,
+					api: Ft,
 					itemOrder: Wt,
 					loadMore: qt
 				});
@@ -4010,4 +4016,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.6e5adecd074a37b2c29c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.0152d78f152c5e5aa147.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.6d3269de7afded87826b.js
-// Retrieved at 5/2/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.aca4a050e244aecf2788.js
+// Retrieved at 5/2/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -1566,7 +1566,7 @@
 							pageLayer: s
 						})
 					},
-					nsfwBlurSubreddit: F.d,
+					isNsfwBlurSubreddit: F.e,
 					shouldOpenPostInNewTab: W.kb
 				}),
 				J = e => {
@@ -1624,7 +1624,7 @@
 						return e.length >= 250 ? e.slice(0, 250 - "...".length) + "..." : e
 					})(n));
 					const i = e.isCommentsPage ? D.a.PostComments : D.a.PostItem,
-						o = !(!e.nsfwBlurSubreddit || !e.post.isNSFW);
+						o = !(!e.isNsfwBlurSubreddit || !e.post.isNSFW);
 					return r.a.createElement(G, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
@@ -1643,7 +1643,7 @@
 				$ = e => {
 					const {
 						hideSourceLink: t,
-						nsfwBlurSubreddit: s,
+						isNsfwBlurSubreddit: s,
 						post: a
 					} = e, {
 						isSponsored: n
@@ -2122,4 +2122,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.6d3269de7afded87826b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.aca4a050e244aecf2788.js.map

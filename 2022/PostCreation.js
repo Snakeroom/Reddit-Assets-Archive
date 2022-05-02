@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.7d8c2f9d2a7f94d2b397.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.cd7938f415d309a5fb36.js
+// Retrieved at 5/2/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -417,6 +417,23 @@
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
 		},
+		"./src/higherOrderComponents/asModal/helpers.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return r
+			})), n.d(t, "b", (function() {
+				return s
+			}));
+			var o = n("./src/reddit/constants/elementIds.ts");
+			const r = () => {
+					const e = document.getElementById(o.a);
+					e && (e.style.filter = "blur(10px)")
+				},
+				s = () => {
+					const e = document.getElementById(o.a);
+					e && e.style.removeProperty("filter")
+				}
+		},
 		"./src/higherOrderComponents/asModal/index.m.less": function(e, t, n) {
 			e.exports = {
 				overlay: "_1DK52RbaamLOWw5UPaht_S",
@@ -428,21 +445,22 @@
 		"./src/higherOrderComponents/asModal/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return b
+				return f
 			}));
 			var o = n("./node_modules/react/index.js"),
 				r = n.n(o),
-				s = n("./src/lib/classNames/index.ts"),
-				a = n("./src/lib/FocusTrap/index.ts"),
-				i = n("./src/lib/portal/index.tsx"),
-				c = n("./src/reddit/actions/shortcuts/utils.ts"),
-				d = n("./src/reddit/constants/shortcuts.ts"),
-				l = n("./src/reddit/helpers/toggleBodyScroll/index.ts"),
-				u = n("./src/higherOrderComponents/asModal/index.m.less"),
-				m = n.n(u);
+				s = n("./src/higherOrderComponents/asModal/helpers.ts"),
+				a = n("./src/lib/classNames/index.ts"),
+				i = n("./src/lib/FocusTrap/index.ts"),
+				c = n("./src/lib/portal/index.tsx"),
+				d = n("./src/reddit/actions/shortcuts/utils.ts"),
+				l = n("./src/reddit/constants/shortcuts.ts"),
+				u = n("./src/reddit/helpers/toggleBodyScroll/index.ts"),
+				m = n("./src/higherOrderComponents/asModal/index.m.less"),
+				p = n.n(m);
 
-			function p() {
-				return (p = Object.assign || function(e) {
+			function h() {
+				return (h = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -450,22 +468,22 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const h = e => {
+			const b = e => {
 				let {
 					className: t,
-					shouldBlurContent: n,
+					shouldBlurBackground: n,
 					isVisible: o,
-					...a
+					...s
 				} = e;
-				return r.a.createElement("div", p({
-					className: Object(s.a)(m.a.overlay, t, {
-						[m.a.mIsVisible]: o,
-						[m.a.mIsBlurred]: n
+				return r.a.createElement("div", h({
+					className: Object(a.a)(p.a.overlay, t, {
+						[p.a.mIsVisible]: o,
+						[p.a.mIsBlurred]: n
 					})
-				}, a))
+				}, s))
 			};
 
-			function b(e) {
+			function f(e) {
 				class t extends o.Component {
 					constructor(e) {
 						super(e), this.getRef = e => this.ref = e, this.onClick = e => e.stopPropagation(), this.onOverlayClick = e => {
@@ -477,12 +495,12 @@
 					componentDidMount() {
 						this.props.ignoreDefaultFocus || this.ref && this.ref.focus(), this.setState({
 							mounted: !0
-						}), Object(l.a)(), this.ref && (this.focusTrap = new a.b(this.ref), this.focusTrap.activate())
+						}), Object(u.a)(), this.ref && (this.focusTrap = new i.b(this.ref), this.focusTrap.activate()), this.props.shouldBlurBackground && Object(s.a)()
 					}
 					componentWillUnmount() {
 						this.setState({
 							mounted: !1
-						}), Object(l.b)(), Object(c.d)(), this.focusTrap && this.focusTrap.deactivate()
+						}), Object(u.b)(), Object(d.d)(), this.focusTrap && this.focusTrap.deactivate(), this.props.shouldBlurBackground && Object(s.b)()
 					}
 					render() {
 						const {
@@ -490,24 +508,24 @@
 						} = this, {
 							className: n,
 							ignoreDefaultFocus: o,
-							onOverlayClick: a,
-							overlayClassName: c,
-							overlayCustomStyles: l,
-							shouldBlurContent: u,
-							withOverlay: p,
-							...b
-						} = t, f = b;
-						return r.a.createElement(i.a, {
-							container: document.getElementById(d.b)
-						}, r.a.createElement(h, {
-							className: c,
-							isVisible: p,
+							onOverlayClick: s,
+							overlayClassName: i,
+							overlayCustomStyles: d,
+							shouldBlurBackground: u,
+							withOverlay: m,
+							...h
+						} = t, f = h;
+						return r.a.createElement(c.a, {
+							container: document.getElementById(l.b)
+						}, r.a.createElement(b, {
+							className: i,
+							isVisible: m,
 							onClick: this.onOverlayClick,
-							shouldBlurContent: u,
-							style: l
+							shouldBlurBackground: u,
+							style: d
 						}, r.a.createElement("div", {
 							"aria-modal": !0,
-							className: Object(s.a)(m.a.modal, n),
+							className: Object(a.a)(p.a.modal, n),
 							onClick: this.onClick,
 							ref: this.getRef,
 							role: "dialog",
@@ -10399,7 +10417,7 @@
 							pageLayer: n
 						})
 					},
-					nsfwBlurSubreddit: A.d,
+					isNsfwBlurSubreddit: A.e,
 					shouldOpenPostInNewTab: F.kb
 				}),
 				Q = e => {
@@ -10457,7 +10475,7 @@
 						return e.length >= 250 ? e.slice(0, 250 - "...".length) + "..." : e
 					})(r));
 					const a = e.isCommentsPage ? R.a.PostComments : R.a.PostItem,
-						i = !(!e.nsfwBlurSubreddit || !e.post.isNSFW);
+						i = !(!e.isNsfwBlurSubreddit || !e.post.isNSFW);
 					return s.a.createElement(K, {
 						className: e.titleClassName,
 						nowrap: e.nowrap,
@@ -10476,7 +10494,7 @@
 				$ = e => {
 					const {
 						hideSourceLink: t,
-						nsfwBlurSubreddit: n,
+						isNsfwBlurSubreddit: n,
 						post: o
 					} = e, {
 						isSponsored: r
@@ -26228,66 +26246,6 @@
 				experimentEligibilitySelector: r.a
 			}) === o.re.Enabled
 		},
-		"./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return o
-			})), n.d(t, "f", (function() {
-				return p
-			})), n.d(t, "g", (function() {
-				return f
-			})), n.d(t, "c", (function() {
-				return v
-			})), n.d(t, "b", (function() {
-				return _
-			})), n.d(t, "h", (function() {
-				return O
-			})), n.d(t, "e", (function() {
-				return y
-			})), n.d(t, "d", (function() {
-				return k
-			}));
-			var o, r = n("./node_modules/reselect/es/index.js"),
-				s = n("./src/reddit/selectors/subreddit.ts"),
-				a = n("./src/reddit/constants/experiments.ts"),
-				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				c = n("./src/reddit/selectors/experiments/index.ts"),
-				d = n("./src/reddit/selectors/meta.ts");
-			! function(e) {
-				e.Blurred = "blurred", e.NoPreview = "noPreview"
-			}(o || (o = {}));
-			const l = Object(r.a)(d.g, d.d, c.e, (e, t, n) => !e && !t && !n);
-
-			function u(e, t) {
-				return n => Object(i.c)(n, {
-					experimentName: e,
-					experimentEligibilitySelector: l,
-					expEventOverride: t
-				})
-			}
-			const m = u(a.Vb, !0),
-				p = u(a.Vb, !1),
-				h = u(a.Xb, !0),
-				b = (u(a.Xb, !1), u(a.Wb, !0)),
-				f = u(a.Wb, !1),
-				g = u(a.Yb, !0),
-				C = u(a.Yb, !1),
-				x = Object(r.a)(m, h, (e, t) => e === a.vc.Enabled || t === a.wc.Enabled),
-				v = Object(r.a)(b, g, (e, t) => e === a.jb.BlurredPreview || e === a.jb.NoPreview || t === a.jb.BlurredPreview || t === a.jb.NoPreview),
-				_ = Object(r.a)(f, C, (e, t) => e === a.jb.BlurredPreview || t === a.jb.BlurredPreview),
-				E = Object(r.a)(b, g, (e, t) => e === a.jb.NoPreview || t === a.jb.NoPreview),
-				O = Object(r.a)(x, E, _, (e, t, n) => (e || t) && !n),
-				y = e => {
-					const t = _(e),
-						n = O(e);
-					return t ? o.Blurred : n ? o.NoPreview : null
-				},
-				k = e => {
-					const t = _(e),
-						n = Object(s.k)(e);
-					return t && n
-				}
-		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -26856,4 +26814,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.7d8c2f9d2a7f94d2b397.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.cd7938f415d309a5fb36.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.385505db9d5cd4a2d97d.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.bcb97ce40da11fdd8ccd.js
+// Retrieved at 5/2/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/take.js": function(e, t, n) {
@@ -3338,7 +3338,7 @@
 				j = e => {
 					const t = Object(i.d)(),
 						n = Object(h.b)(),
-						r = Object(i.e)(v.e),
+						r = Object(i.e)(v.f),
 						u = Object(a.useCallback)(() => {
 							r === v.a.Blurred && t(Object(p.k)({
 								actionSource: p.a.NsfwBlockingModal
@@ -3437,17 +3437,17 @@
 					}, [t]);
 					const {
 						contentTitle: n
-					} = e, r = Object(i.e)(v.f), s = Object(i.e)(v.g), a = Object(i.e)(v.b), c = Object(i.e)(v.e), l = c === v.a.Blurred ? b.a.White : c === v.a.NoPreview ? b.a.Grey : void 0;
+					} = e, r = Object(i.e)(v.g), s = Object(i.e)(v.h), a = Object(i.e)(v.f), c = a === v.a.Blurred ? b.a.White : a === v.a.NoPreview ? b.a.Grey : void 0;
 					return o.a.createElement("div", {
 						className: O.a.container
 					}, o.a.createElement(j, {
 						contentTitle: n
 					}), o.a.createElement("div", {
 						className: Object(d.a)(O.a.footerWrapper, {
-							[O.a.mIsModal]: a
+							[O.a.mIsModal]: a === v.a.Blurred
 						})
 					}, o.a.createElement(b.b, {
-						textColor: l
+						textColor: c
 					})), o.a.createElement(L, {
 						qrCodeAsset: (() => r === f.vc.Enabled || s === f.jb.BlurredPreview || s === f.jb.NoPreview ? N.d2x_nsfw_signup_blocking_de_v1 : N.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
@@ -4380,4 +4380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.385505db9d5cd4a2d97d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.bcb97ce40da11fdd8ccd.js.map

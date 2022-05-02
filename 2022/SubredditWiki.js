@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.0ae11f6f8c0afce45597.js
-// Retrieved at 5/2/2022, 11:00:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.327525f66300aa3166c4.js
+// Retrieved at 5/2/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -757,8 +757,8 @@
 				oe = s.n(ie);
 			const de = c.a.img("SubredditIcon", oe.a),
 				ae = Object(o.c)({
+					isNsfwBlurSubreddit: ee.e,
 					notificationLevel: se.H,
-					nsfwBlurSubreddit: ee.d,
 					spPollsEnabled: z.d.spPolls,
 					subredditInlineEditingEnabled: (e, t) => {
 						let {
@@ -860,12 +860,12 @@
 					}),
 					I = j ? n.a.createElement(de, {
 						className: Object(d.a)(oe.a.SubredditIconImg, {
-							[oe.a.blur]: e.nsfwBlurSubreddit
+							[oe.a.blur]: e.isNsfwBlurSubreddit
 						}),
 						src: y || void 0
 					}) : n.a.createElement(M.a, {
 						className: Object(d.a)(oe.a.DefaultIcon, {
-							[oe.a.blur]: e.nsfwBlurSubreddit
+							[oe.a.blur]: e.isNsfwBlurSubreddit
 						})
 					}),
 					C = e.spPollsEnabled || e.tournamentsEnabled || e.widget && (e.widget.showWiki || e.widget.data.length > 0),
@@ -892,7 +892,7 @@
 					})
 				}, n.a.createElement("div", {
 					className: Object(d.a)(oe.a.text, {
-						[oe.a.blur]: e.nsfwBlurSubreddit
+						[oe.a.blur]: e.isNsfwBlurSubreddit
 					})
 				}, n.a.createElement("h1", {
 					className: oe.a.title
@@ -5244,4 +5244,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.0ae11f6f8c0afce45597.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.327525f66300aa3166c4.js.map
