@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.d424320817cc11483513.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.4ad75bfc645d41dfc7c9.js
+// Retrieved at 5/2/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit", "reddit-components-BlankPost"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -769,10 +769,10 @@
 				itemWrapper: "_17q-ew4FcK6U0ZiybWkIGG",
 				customFeedIcon: "ENGeNwSHzwN-SV2KTH2s7",
 				icon: "_3HTtcITrR-crvsRovLrijl",
-				favorite: "t2A0mgkgGzc8cAahJsR7a",
 				text: "_2aqH0n-kSzFY7HZZ5GL-Jb",
 				subText: "_2Efd4uMAp4YawdvL9Zhdhv",
 				title: "_1JNAu7U5gWAkRoykwfUWhY",
+				favorite: "t2A0mgkgGzc8cAahJsR7a",
 				mFavorite: "_2cEhEGN_WTLlwspw_bpqTr",
 				relatedSubredditMetaData: "_3P_WRCH8aFjwOFA7B1RlBL",
 				promoted: "bpYVdL9hAnIqOnrKi8PVS"
@@ -3628,4 +3628,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.d424320817cc11483513.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.4ad75bfc645d41dfc7c9.js.map
