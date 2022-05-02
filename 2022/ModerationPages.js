@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.7a1f6d03e933dceeb30f.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.2de11dfa18a60fd0dd2e.js
+// Retrieved at 5/2/2022, 1:00:12 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -5754,17 +5754,18 @@
 					isBroadcastingEnabled: s,
 					settings: n,
 					subredditName: a,
-					update: o
+					subreddit: o,
+					update: i
 				} = e, {
-					allowDiscovery: i,
-					contentVisible: d,
-					crowdControlFilter: c,
-					crowdControlLevel: m,
-					crowdControlChatLevel: u,
-					crowdControlPostLevel: p,
-					excludeBannedModqueue: h,
-					toxicityThresholdChatLevel: b
-				} = n, g = {
+					allowDiscovery: d,
+					contentVisible: c,
+					crowdControlFilter: m,
+					crowdControlLevel: u,
+					crowdControlChatLevel: p,
+					crowdControlPostLevel: h,
+					excludeBannedModqueue: b,
+					toxicityThresholdChatLevel: g
+				} = n, f = {
 					0: {
 						text: "Off",
 						color: "#787C7E"
@@ -5781,7 +5782,7 @@
 						text: "Strict",
 						color: "#EA0027"
 					}
-				}, f = {
+				}, x = {
 					0: "Use Crowd Control to automatically collapse comments from users you’re not sure about.",
 					1: "Comments from users who have negative karma in your community are automatically collapsed.",
 					2: "Comments from new users and users with negative karma in your community are automatically collapsed.",
@@ -5792,8 +5793,8 @@
 				})), r.a.createElement(K.a, null, H.fbt._("Safety", null, {
 					hk: "2QSter"
 				})), r.a.createElement(Q.p, {
-					on: h,
-					onClick: () => o(!h, "excludeBannedModqueue"),
+					on: b,
+					onClick: () => i(!b, "excludeBannedModqueue"),
 					label: H.fbt._("Exclude posts by site-wide banned users", null, {
 						hk: "Kmfy0"
 					}),
@@ -5802,22 +5803,22 @@
 					})
 				}), r.a.createElement(Q.j, {
 					className: Oe.a.crowdControlLevelSetting,
-					ticks: g,
+					ticks: f,
 					min: 0,
-					max: Object.keys(g).length - 1,
+					max: Object.keys(f).length - 1,
 					step: 1,
-					value: m,
-					onChange: e => o(e.target.value, "crowdControlLevel"),
+					value: u,
+					onChange: e => i(e.target.value, "crowdControlLevel"),
 					label: H.fbt._("Adjust Crowd Control for Comments", null, {
 						hk: "4oWV2B"
 					}),
-					subtext: H.fbt._("{subText}", [H.fbt._param("subText", f[m])], {
+					subtext: H.fbt._("{subText}", [H.fbt._param("subText", x[u])], {
 						hk: "3ZFhAV"
 					})
 				}), r.a.createElement(Q.p, {
 					indent: !0,
-					on: c,
-					onClick: () => o(!c, "crowdControlFilter"),
+					on: m,
+					onClick: () => i(!m, "crowdControlFilter"),
 					label: H.fbt._("Hold crowd controlled comments for review", null, {
 						hk: "1c0Z06"
 					}),
@@ -5826,12 +5827,12 @@
 					})
 				}), r.a.createElement(Q.j, {
 					className: Oe.a.crowdControlLevelSetting,
-					ticks: g,
+					ticks: f,
 					min: 0,
-					max: Object.keys(g).length - 1,
+					max: Object.keys(f).length - 1,
 					step: 1,
-					value: p,
-					onChange: e => o(e.target.value, "crowdControlPostLevel"),
+					value: h,
+					onChange: e => i(e.target.value, "crowdControlPostLevel"),
 					label: H.fbt._("Adjust Crowd Control for Posts", null, {
 						hk: "3k9pqR"
 					}),
@@ -5840,26 +5841,26 @@
 						1: "Posts from users who have negative karma in your community are automatically held for review in mod queue.",
 						2: "Posts from new users and users with negative karma in your community are automatically held for review in mod queue.",
 						3: "Posts from users who haven’t joined your community, new users, and users with negative karma in your community are automatically held for review in mod queue."
-					} [p])], {
+					} [h])], {
 						hk: "3ZFhAV"
 					})
 				}), (t || s) && r.a.createElement(r.a.Fragment, null, r.a.createElement(Q.j, {
-					ticks: g,
+					ticks: f,
 					min: 0,
-					max: Object.keys(g).length - 1,
+					max: Object.keys(f).length - 1,
 					step: 1,
-					value: u,
-					onChange: e => o(e.target.value, "crowdControlChatLevel"),
+					value: p,
+					onChange: e => i(e.target.value, "crowdControlChatLevel"),
 					label: H.fbt._("Adjust Crowd Control for Chat Posts", null, {
 						hk: "vTy7k"
 					}),
-					subtext: H.fbt._("{subText}", [H.fbt._param("subText", f[u])], {
+					subtext: H.fbt._("{subText}", [H.fbt._param("subText", x[p])], {
 						hk: "12hf9Y"
 					})
 				}), r.a.createElement(Q.p, {
-					on: !!Number(b),
+					on: !!Number(g),
 					onClick: () => {
-						o(Number(b) ? "0" : "1", "toxicityThresholdChatLevel")
+						i(Number(g) ? "0" : "1", "toxicityThresholdChatLevel")
 					},
 					label: H.fbt._("Collapse Toxic Messages in Chat Post", null, {
 						hk: "1Pk3G5"
@@ -5880,9 +5881,9 @@
 					hk: "3oTITT"
 				})))], {
 					hk: "4nomNH"
-				})), r.a.createElement(Q.p, {
-					on: d,
-					onClick: () => o(!d, "contentVisible"),
+				})), !o.isQuarantined && r.a.createElement(r.a.Fragment, null, r.a.createElement(Q.p, {
+					on: c,
+					onClick: () => i(!c, "contentVisible"),
 					label: H.fbt._("Show up in high-traffic feeds", null, {
 						hk: "3l7KBc"
 					}),
@@ -5890,15 +5891,15 @@
 						hk: "iH0lY"
 					})
 				}), r.a.createElement(Q.p, {
-					on: i,
-					onClick: () => o(!i, "allowDiscovery"),
+					on: d,
+					onClick: () => i(!d, "allowDiscovery"),
 					label: H.fbt._("Get recommended to individual redditors", null, {
 						hk: "4wmaiH"
 					}),
 					subtext: H.fbt._("Let Reddit recommend your community to people who have similar interests.", null, {
 						hk: "487MMM"
 					})
-				}), r.a.createElement(K.a, null, H.fbt._("Advanced Settings", null, {
+				})), r.a.createElement(K.a, null, H.fbt._("Advanced Settings", null, {
 					hk: "3TL9Or"
 				})), r.a.createElement(Q.g, {
 					link: `${B.a.oldRedditUrl}/r/${a}/about/edit`,
@@ -23505,4 +23506,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.7a1f6d03e933dceeb30f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2de11dfa18a60fd0dd2e.js.map
