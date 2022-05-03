@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.f03a67faf257b924e447.js
-// Retrieved at 5/3/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.d278894b696872627940.js
+// Retrieved at 5/3/2022, 3:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -1045,6 +1045,8 @@
 				return S
 			})), r.d(t, "A", (function() {
 				return I
+			})), r.d(t, "C", (function() {
+				return T
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				o = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
@@ -1071,12 +1073,13 @@
 				k = Object(o.a)(n.Zc),
 				y = Object(o.a)(n.hd),
 				N = Object(o.a)(n.nd),
-				P = Object(o.a)(n.sd),
-				C = Object(o.a)(n.rd),
-				M = Object(o.a)(n.Jf),
+				P = Object(o.a)(n.td),
+				C = Object(o.a)(n.sd),
+				M = Object(o.a)(n.Kf),
 				S = Object(o.a)(n.pd),
-				I = Object(o.a)(n.qd)
+				I = Object(o.a)(n.rd),
+				T = Object(o.a)(n.qd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.f03a67faf257b924e447.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.d278894b696872627940.js.map
