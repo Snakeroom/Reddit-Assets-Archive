@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.dc05031a3caae2366a1d.js
-// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.5f522a729e9acc5d9e87.js
+// Retrieved at 5/3/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -135,8 +135,8 @@
 						activeDetails: A || void 0
 					}), [A, w]);
 					if (!t || !c) return null;
-					let N;
-					return N = e.share ? {
+					let T;
+					return T = e.share ? {
 						...h,
 						STRIPE_API_KEY: s.a.stripe.apiKey(m),
 						COPY_SHARE_PARAMS: e.share
@@ -150,7 +150,7 @@
 					}, n.a.createElement(S, {
 						accessToken: t.accessToken,
 						authHeaders: f,
-						config: N,
+						config: T,
 						sendEvent: p.a
 					}, n.a.createElement(M, {
 						navState: L
@@ -185,8 +185,8 @@
 			}));
 			var s = a("./src/reddit/constants/experiments.ts"),
 				r = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(r.a)(s.Uc)
+			const n = Object(r.a)(s.Tc)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.dc05031a3caae2366a1d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.5f522a729e9acc5d9e87.js.map

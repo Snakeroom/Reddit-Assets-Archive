@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/InboxTooltip.38e8e6d2798be7c9facc.js
-// Retrieved at 3/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/InboxTooltip.00bd9db6fe1f63e0f4c0.js
+// Retrieved at 5/3/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["InboxTooltip"], {
 		"./src/reddit/actions/subreddit/notifications.ts": function(t, e, i) {
@@ -118,12 +118,12 @@
 					hasNextPage: h.d,
 					isHotPotatoEnabled: O.a,
 					inboxBadgeCount: x.g,
-					isInboxInfiniteScrollEnabled: m.c,
-					isInboxPolicyBannerEnabled: m.e,
+					isInboxInfiniteScrollEnabled: m.b,
+					isInboxPolicyBannerEnabled: m.d,
 					isInboxPostEmbedEnabled: m.a,
 					isPending: h.e,
 					messagesBadgeCount: x.h,
-					notifications: t => Object(m.c)(t) ? Object(h.f)(t) : Object(h.g)(t)
+					notifications: t => Object(m.b)(t) ? Object(h.f)(t) : Object(h.g)(t)
 				}),
 				S = Object(n.b)(p, (t, e) => {
 					let {
@@ -219,4 +219,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.38e8e6d2798be7c9facc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/InboxTooltip.00bd9db6fe1f63e0f4c0.js.map

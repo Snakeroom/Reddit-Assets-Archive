@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.2de7a1b743b3778b6d95.js
-// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.e02d347a000e01ae3f40.js
+// Retrieved at 5/3/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -142,9 +142,9 @@
 				I = n("./src/reddit/constants/experiments.ts"),
 				x = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const k = e => Object(x.c)(e, {
-				experimentName: I.Ub,
+				experimentName: I.Tb,
 				experimentEligibilitySelector: x.a
-			}) === I.vd;
+			}) === I.ud;
 			var N = n("./src/reddit/selectors/meta.ts"),
 				w = n("./src/reddit/selectors/user.ts");
 			let E = !1;
@@ -3925,35 +3925,35 @@
 			const s = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.Cd.MemesBadge,
+				}) === r.Bd.MemesBadge,
 				o = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.Cd.MemesNoBadge,
+				}) === r.Bd.MemesNoBadge,
 				i = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.Cd.PnEmailBadge,
+				}) === r.Bd.PnEmailBadge,
 				c = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.Cd.PnEmailNoBadge,
+				}) === r.Bd.PnEmailNoBadge,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.Cd.KarmaBadge,
+				}) === r.Bd.KarmaBadge,
 				l = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.Cd.KarmaNoBadge,
+				}) === r.Bd.KarmaNoBadge,
 				u = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.Cd.PopularBadge,
+				}) === r.Bd.PopularBadge,
 				p = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.Cd.PopularNoBadge,
+				}) === r.Bd.PopularNoBadge,
 				m = e => s(e) || i(e) || l(e) || p(e)
 		},
 		"./src/reddit/selectors/muted.ts": function(e, t, n) {
@@ -4016,4 +4016,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.2de7a1b743b3778b6d95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.e02d347a000e01ae3f40.js.map

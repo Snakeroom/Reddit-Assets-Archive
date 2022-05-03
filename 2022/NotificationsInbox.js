@@ -1,42 +1,40 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.571c379e52589a2066cd.js
-// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.982947454aa200198e29.js
+// Retrieved at 5/3/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "notificationsInboxPageRequested", (function() {
-				return f
+				return m
 			}));
-			var i = n("./node_modules/react-router-redux/es/index.js"),
-				s = n("./src/lib/pageTitle/index.ts"),
-				a = n("./src/reddit/actions/modal.ts"),
-				r = n("./src/reddit/actions/notificationsInbox/index.ts"),
-				o = n("./src/reddit/actions/platform.ts"),
-				c = n("./src/reddit/actions/users.ts"),
-				d = n("./src/reddit/helpers/pageActionLoginRedirect.ts"),
-				l = n("./src/reddit/routes/notificationsInbox/index.ts"),
-				u = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
-				m = n("./src/reddit/selectors/notificationsInbox.tsx"),
-				b = n("./src/reddit/selectors/user.ts");
-			const f = () => async (e, t) => {
+			var i = n("./src/lib/pageTitle/index.ts"),
+				s = n("./src/reddit/actions/modal.ts"),
+				a = n("./src/reddit/actions/notificationsInbox/index.ts"),
+				r = n("./src/reddit/actions/platform.ts"),
+				o = n("./src/reddit/actions/users.ts"),
+				c = n("./src/reddit/helpers/pageActionLoginRedirect.ts"),
+				d = n("./src/reddit/routes/notificationsInbox/index.ts"),
+				l = n("./src/reddit/selectors/notificationsInbox.tsx"),
+				u = n("./src/reddit/selectors/user.ts");
+			const m = () => async (e, t) => {
 				const n = t();
-				if (!(Object(b.R)(n) || Object(b.Q)(n))) return Object(d.a)(e, n);
-				Object(u.b)(n) ? (e(p()), e(g()), await e(h())) : e(Object(i.c)("/"))
-			}, p = () => Object(a.k)({
-				actionSource: a.a.NotificationsInbox,
-				redirectUrl: l.b
-			}), g = () => o.m({
-				title: Object(s.h)()
-			}), h = () => async (e, t) => {
+				if (!(Object(u.R)(n) || Object(u.Q)(n))) return Object(c.a)(e, n);
+				e(b()), e(f()), await e(p())
+			}, b = () => Object(s.k)({
+				actionSource: s.a.NotificationsInbox,
+				redirectUrl: d.b
+			}), f = () => r.m({
+				title: Object(i.h)()
+			}), p = () => async (e, t) => {
 				const n = t(),
-					i = Object(m.g)(t()),
+					i = Object(l.g)(t()),
 					s = !(!i || !i.length),
-					a = Object(b.R)(n) || Object(b.Q)(n);
-				if (s || !a || !Object(u.b)(n)) return;
-				const o = {
+					r = Object(u.R)(n) || Object(u.Q)(n);
+				if (s || !r) return;
+				const c = {
 					first: 10
 				};
-				await e(Object(c.t)()), e(Object(r.d)(o))
+				await e(Object(o.t)()), e(Object(a.d)(c))
 			}
 		},
 		"./src/reddit/actions/subreddit/notifications.ts": function(e, t, n) {
@@ -177,28 +175,28 @@
 				C = n.n(x);
 			const {
 				fbt: E
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), _ = u.a.div("BladeContainer", C.a), N = u.a.wrapped(p.a, "CloseIcon", C.a), O = u.a.div("LoadingTitleContainer", C.a), y = u.a.div("LoadingNavContainer", C.a), k = u.a.div("ShortLoadingNav", C.a), S = u.a.wrapped(f.a, "ThemedChevron", C.a), j = e => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), _ = u.a.div("BladeContainer", C.a), N = u.a.wrapped(p.a, "CloseIcon", C.a), y = u.a.div("LoadingTitleContainer", C.a), O = u.a.div("LoadingNavContainer", C.a), k = u.a.div("ShortLoadingNav", C.a), S = u.a.wrapped(f.a, "ThemedChevron", C.a), L = e => {
 				let {
 					...t
 				} = e;
 				return r.a.createElement(_, null, r.a.createElement(N, null), r.a.createElement(b.k, null, r.a.createElement(b.p, null, E._("Back to mod tools", null, {
 					hk: "1YCI0W"
-				})), r.a.createElement(b.o, null, r.a.createElement(O, null, r.a.createElement("div", {
+				})), r.a.createElement(b.o, null, r.a.createElement(y, null, r.a.createElement("div", {
 					className: Object(l.a)(C.a.LoadingTitle, t.isLoading && C.a.loading)
-				})), r.a.createElement(y, null, r.a.createElement("div", {
+				})), r.a.createElement(O, null, r.a.createElement("div", {
 					className: Object(l.a)(C.a.LoadingNav, t.isLoading && C.a.loading)
-				}), r.a.createElement(S, null)), r.a.createElement(y, null, r.a.createElement(k, null), r.a.createElement(S, null)), r.a.createElement(y, null, r.a.createElement("div", {
+				}), r.a.createElement(S, null)), r.a.createElement(O, null, r.a.createElement(k, null), r.a.createElement(S, null)), r.a.createElement(O, null, r.a.createElement("div", {
 					className: Object(l.a)(C.a.LoadingNav, t.isLoading && C.a.loading)
-				}), r.a.createElement(S, null)), r.a.createElement(y, null, r.a.createElement(k, null), r.a.createElement(S, null)), r.a.createElement(y, null, r.a.createElement("div", {
+				}), r.a.createElement(S, null)), r.a.createElement(O, null, r.a.createElement(k, null), r.a.createElement(S, null)), r.a.createElement(O, null, r.a.createElement("div", {
 					className: Object(l.a)(C.a.LoadingNav, t.isLoading && C.a.loading)
 				}), r.a.createElement(S, null)))))
-			}, L = Object(d.a)({
+			}, j = Object(d.a)({
 				getComponent: () => Object(m.a)(() => Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("StructuredStyles")]).then(n.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
-				ErrorComponent: () => r.a.createElement(j, {
+				ErrorComponent: () => r.a.createElement(L, {
 					gradientType: "posts",
 					isLoading: !1
 				}),
-				LoadingComponent: () => r.a.createElement(j, {
+				LoadingComponent: () => r.a.createElement(L, {
 					gradientType: "posts",
 					isLoading: !0
 				})
@@ -211,7 +209,7 @@
 				const t = e.moderatorPermissions && s()(e.moderatorPermissions).some(e => e);
 				return e.moderatorPermissions && t && e.isEditing ? r.a.createElement("div", {
 					className: Object(l.a)(C.a.Container, e.isSubscriptionsPinned && C.a.isSubscriptionPinned)
-				}, e.children, r.a.createElement(L, {
+				}, e.children, r.a.createElement(j, {
 					subredditId: e.subredditId
 				})) : r.a.createElement(a.Fragment, null, e.children)
 			})
@@ -386,8 +384,8 @@
 							return null
 					}
 				},
-				O = () => window.pageYOffset || window.scrollY,
-				y = 75,
+				y = () => window.pageYOffset || window.scrollY,
+				O = 75,
 				k = {
 					paddingLeft: 15,
 					left: 0,
@@ -400,9 +398,9 @@
 			class S extends o.a.Component {
 				constructor(e) {
 					super(e), this.toggleSticky = a()(() => {
-						this.state.sticky || this.forceUnsticky ? O() < y && (this.forceUnsticky = !0, this.wrapperRef.firstElementChild.setAttribute("style", ""), this.setState({
+						this.state.sticky || this.forceUnsticky ? y() < O && (this.forceUnsticky = !0, this.wrapperRef.firstElementChild.setAttribute("style", ""), this.setState({
 							sticky: !1
-						}, () => this.forceUnsticky = !1)) : O() >= y && this.setState({
+						}, () => this.forceUnsticky = !1)) : y() >= O && this.setState({
 							sticky: !0
 						})
 					}, d.L), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
@@ -536,11 +534,11 @@
 				E = n("./src/reddit/components/InboxBanner/PolicyBanner.tsx"),
 				_ = n("./src/reddit/hooks/useInboxPrivacyPolicyBannerSeen.ts"),
 				N = n("./src/reddit/hooks/useIsClient.ts"),
-				O = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
-				y = n("./src/reddit/pages/NotificationsInbox/Content/index.m.less"),
-				k = n.n(y);
+				y = n("./src/reddit/selectors/experiments/inboxRedesign.ts"),
+				O = n("./src/reddit/pages/NotificationsInbox/Content/index.m.less"),
+				k = n.n(O);
 			const S = e => {
-				const t = Object(d.e)(O.e),
+				const t = Object(d.e)(y.d),
 					n = Object(N.a)(),
 					[i, a] = Object(_.a)(e.userId),
 					r = t && !i;
@@ -551,9 +549,9 @@
 					pageType: C.c.Inbox
 				})) : null
 			};
-			var j = n("./src/reddit/pages/NotificationsInbox/Content/EmptyStateViews/EmptyStateComponent.tsx");
+			var L = n("./src/reddit/pages/NotificationsInbox/Content/EmptyStateViews/EmptyStateComponent.tsx");
 			const {
-				fbt: L
+				fbt: j
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = "", w = .5, T = h.a.span("divider", k.a), P = h.a.wrapped(v.a, "NotificationUnit", k.a);
 			class F extends s.a.Component {
 				constructor() {
@@ -582,9 +580,9 @@
 							earlierNotifications: e,
 							todayNotifications: t
 						} = this.props, n = !(!e || !e.length), i = !(!t || !t.length);
-						return s.a.createElement(s.a.Fragment, null, i && s.a.createElement(T, null, L._("Today", null, {
+						return s.a.createElement(s.a.Fragment, null, i && s.a.createElement(T, null, j._("Today", null, {
 							hk: "2FZ72w"
-						})), i && s.a.createElement("ul", null, t.map(this.renderNotificationItem)), n && s.a.createElement(T, null, L._("Earlier", null, {
+						})), i && s.a.createElement("ul", null, t.map(this.renderNotificationItem)), n && s.a.createElement(T, null, j._("Earlier", null, {
 							hk: "1p7PDF"
 						})), n && s.a.createElement("ul", null, e && e.map(this.renderNotificationItem)))
 					}
@@ -607,7 +605,7 @@
 						userId: a
 					}), s.a.createElement("div", {
 						className: k.a.notificationsContainer
-					}, !r && n && s.a.createElement(x.a, null), !r && !n && s.a.createElement(j.a, {
+					}, !r && n && s.a.createElement(x.a, null), !r && !n && s.a.createElement(L.a, {
 						isLoggedIn: !0
 					}), r && this.renderNotifications(), r && !n && e && s.a.createElement(g.a, {
 						onChange: this.fetchNotifications,
@@ -618,18 +616,18 @@
 			}
 			var A = Object(r.c)(F),
 				M = n("./src/reddit/selectors/appBadges.ts"),
-				R = n("./src/reddit/selectors/notificationsInbox.tsx"),
-				U = n("./src/reddit/selectors/tooltip.ts"),
+				U = n("./src/reddit/selectors/notificationsInbox.tsx"),
+				R = n("./src/reddit/selectors/tooltip.ts"),
 				B = n("./src/reddit/selectors/user.ts");
 			const W = Object(l.c)({
-				activeOverflowMenuId: U.a,
-				cursor: R.c,
-				earlierNotifications: R.b,
-				hasNextPage: R.d,
+				activeOverflowMenuId: R.a,
+				cursor: U.c,
+				earlierNotifications: U.b,
+				hasNextPage: U.d,
 				inboxBadgeCount: M.g,
-				isInboxPostEmbedEnabled: O.a,
-				isPending: R.e,
-				todayNotifications: R.i,
+				isInboxPostEmbedEnabled: y.a,
+				isPending: U.e,
+				todayNotifications: U.i,
 				userId: B.Db
 			});
 			var H = Object(d.b)(W, e => ({
@@ -743,4 +741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.571c379e52589a2066cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.982947454aa200198e29.js.map

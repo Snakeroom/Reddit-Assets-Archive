@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.8bd6e838cffb4817692c.js
-// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.7112232493b9e06a38bd.js
+// Retrieved at 5/3/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.Nf)(e.category_name)
+									displayText: Object(u.Lf)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -427,7 +427,7 @@
 					}, n[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.yc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.xc.GreyRereddit ? e.reredditButtons : [];
 					return s.a.createElement(w, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2437,8 +2437,8 @@
 			}
 			var Q = Object(u.c)(z(q)),
 				J = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				U = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
-				K = r.n(U);
+				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
+				U = r.n(K);
 
 			function V() {
 				return (V = Object.assign || function(e) {
@@ -2456,7 +2456,7 @@
 					className: n,
 					isActive: s,
 					tabIndex: a
-				} = e, o = Object(c.a)(K.a.categoryLink, s && K.a.active, n);
+				} = e, o = Object(c.a)(U.a.categoryLink, s && U.a.active, n);
 				return i.a.createElement("li", null, i.a.createElement(J.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
@@ -2510,7 +2510,7 @@
 						onItemClick: l
 					} = this.props, {
 						isExpanded: u
-					} = this.state, m = !u && d && r * d, b = a + (e ? r * e.length : 0), g = Object(c.a)(K.a.categoryList, u && K.a.expanded), h = e => !(!o || o !== Object($.g)(e)), y = i.a.createElement("ul", {
+					} = this.state, m = !u && d && r * d, b = a + (e ? r * e.length : 0), g = Object(c.a)(U.a.categoryList, u && U.a.expanded), h = e => !(!o || o !== Object($.g)(e)), y = i.a.createElement("ul", {
 						className: g,
 						style: {
 							height: m || b
@@ -2527,7 +2527,7 @@
 						}, e.name === p.m ? p.k : e.displayText || e.name)
 					}));
 					return i.a.createElement("div", {
-						className: Object(c.a)(K.a.categoryListContainer, n)
+						className: Object(c.a)(U.a.categoryListContainer, n)
 					}, y)
 				}
 				render() {
@@ -2538,16 +2538,16 @@
 						header: n,
 						headerClassName: s,
 						initialNumberOfCategories: a
-					} = this.props, o = t && a && t.length > a, d = Object(c.a)(r, K.a.container);
+					} = this.props, o = t && a && t.length > a, d = Object(c.a)(r, U.a.container);
 					return i.a.createElement(Y.a, {
 						className: d,
 						contentOnly: !0
 					}, i.a.createElement("div", {
-						className: Object(c.a)(K.a.header, s)
+						className: Object(c.a)(U.a.header, s)
 					}, i.a.createElement("h2", null, n || ee._("Categories", null, {
 						hk: "46zLMb"
 					}))), this.renderCategoryList(), o && i.a.createElement(X.r, {
-						className: Object(c.a)(K.a.button, e),
+						className: Object(c.a)(U.a.button, e),
 						onClick: this.toggleExpanded
 					}, o && !this.state.isExpanded ? ee._("Show More", null, {
 						hk: "1pCiqD"
@@ -2622,7 +2622,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				Ee = Object(m.Mf)(p.i),
+				Ee = Object(m.Kf)(p.i),
 				_e = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2733,11 +2733,11 @@
 				d = r("./node_modules/reselect/es/index.js");
 			const c = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(o.g)(e) && Object(a.f)(e),
-					experimentName: n.bc
+					experimentName: n.ac
 				}), i.a),
 				l = Object(d.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(o.g)(e) && Object(a.f)(e),
-					experimentName: n.ac
+					experimentName: n.Zb
 				}), i.a),
 				u = Object(d.a)(c, l, (e, t) => e || t),
 				m = Object(d.a)(c, l, (e, t) => !(!e && !t))
@@ -2775,4 +2775,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.8bd6e838cffb4817692c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.7112232493b9e06a38bd.js.map
