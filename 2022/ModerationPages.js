@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.49259ae3686187929a22.js
-// Retrieved at 5/3/2022, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.86a1b7406bd9f6334db2.js
+// Retrieved at 5/3/2022, 4:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -8743,9 +8743,10 @@
 					let {
 						subredditId: t,
 						onAddTalkHost: s,
-						toggleModal: n
+						toggleModal: n,
+						sendEventWithName: i
 					} = e;
-					const [i, d] = Object(o.useState)("");
+					const [d, l] = Object(o.useState)("");
 					return r.a.createElement(I.e, null, r.a.createElement(I.i, null, r.a.createElement(P.a, null, r.a.createElement(I.q, null, a.fbt._("Add approved Talk host", null, {
 						hk: "38DcZT"
 					})), r.a.createElement(w.a, {
@@ -8755,9 +8756,9 @@
 							hk: "4DdFFr"
 						}),
 						onChange: e => {
-							d(e.currentTarget.value)
+							l(e.currentTarget.value)
 						},
-						value: i,
+						value: d,
 						autoFocus: !0
 					})), r.a.createElement(I.g, null, r.a.createElement(I.a, {
 						onClick: n,
@@ -8766,10 +8767,10 @@
 						hk: "2TSLl5"
 					})), r.a.createElement(F, {
 						onClick: () => {
-							s(t, i), n()
+							s(t, d), i("add")(), n()
 						},
 						"data-redditstyle": !0,
-						disabled: !Object(M.a)(i)
+						disabled: !Object(M.a)(d)
 					}, a.fbt._("Approve user", null, {
 						hk: "4Awx1T"
 					}))))
@@ -8816,7 +8817,7 @@
 					super(e), this.onLoadMore = () => {
 						this.props.loadMoreToken && this.props.loadMore(this.props.loadMoreToken)
 					}, this.approveTalkHost = () => {
-						this.props.toggleAddApprovedHostModal()
+						this.props.sendEventWithName("open_add_dialog")(), this.props.toggleAddApprovedHostModal()
 					}, this.handleRemoveToggled = (e, t) => {
 						this.setState({
 							userId: e,
@@ -8829,6 +8830,7 @@
 						onAddTalkHost: this.props.addApprovedTalkHost,
 						subredditId: this.props.subredditId,
 						toggleModal: this.props.toggleAddApprovedHostModal,
+						sendEventWithName: this.props.sendEventWithName,
 						withOverlay: !0
 					}), this.renderUser = e => {
 						var t, s, o;
@@ -8897,6 +8899,7 @@
 						}),
 						onConfirm: this.handleRemoveConfirmed,
 						toggleModal: t.toggleRemoveHostModal,
+						trackClick: t.sendEventWithName("remove"),
 						withOverlay: !0
 					}))
 				}
@@ -9622,7 +9625,8 @@
 							return o.a.createElement(b.a, {
 								subredditName: e.subreddit.name,
 								subredditId: e.subreddit.id,
-								moderatorPermissions: e.moderatorPermissions
+								moderatorPermissions: e.moderatorPermissions,
+								sendEventWithName: e.sendEventWithName
 							});
 						default:
 							return Object(r.a)(s)
@@ -22562,7 +22566,7 @@
 			});
 			class Le extends r.a.Component {
 				constructor(e, t) {
-					super(e, t), this.trackClick = e => this.props.sendEvent(C.b(e)), this.trackCommunitySettingsNavItemClick = e => this.props.sendEvent(Object(q.b)(e)), this.onClickAwards = () => this.trackClick("awards"), this.onClickPowerups = () => this.trackClick("powerups"), this.onClickStreaming = () => this.trackClick("streaming"), this.onClickModQueue = () => this.trackClick("mod_queue"), this.onClickReports = () => this.trackClick("reports"), this.onClickSpam = () => this.trackClick("spam"), this.onClickEdited = () => this.trackClick("edited"), this.onClickUnmoderated = () => this.trackClick("unmoderated"), this.onClickBannedUsers = () => this.trackClick("ban_users"), this.onClickMutedUsers = () => this.trackClick("mute_users"), this.onClickApprovedSubmitters = () => this.trackClick("approved_submitters"), this.onClickApprovedTalkHosts = () => this.trackClick("approved_talk_hosts"), this.onClickEmojis = () => this.trackClick("emoji"), this.onClickModerators = () => this.trackClick("moderators"), this.onClickChatSettings = () => this.trackClick("chat_settings"), this.onClickCommunitySettings = () => this.trackClick("community_settings"), this.onClickCommunityAppearance = () => this.trackClick("community_appearance"), this.onClickModMail = () => this.trackClick("mod_mail"), this.onClickRemovalReasons = () => this.trackClick("removal_reasons"), this.onClickRules = () => this.trackClick("rules"), this.onClickPostRequirements = () => this.trackClick("post_requirements"), this.onClickAutomodConfig = () => this.trackClick("automod_config"), this.onClickWikiPages = () => this.trackClick("wiki"), this.onClickTraffic = () => this.trackClick("traffic"), this.onClickModLog = () => this.trackClick("mod_log"), this.onClickModSupport = () => this.trackClick("r_mod_support"), this.onClickModHelp = () => this.trackClick("mod_help"), this.onClickContactReddit = () => this.trackClick("contact_reddit"), this.onClickModGuidelines = () => this.trackClick("mod_guidelines"), this.onClickModHelpCenter = () => this.trackClick("mod_help_center"), this.onClickPostFlair = () => this.trackClick("post_flair"), this.onClickUserFlair = () => this.trackClick("user_flair"), this.onClickGrantUserFlair = () => this.trackClick("grant_user_flair"), this.onClickBadges = () => this.trackClick("badges"), this.onClickEmotes = () => this.trackClick("emotes"), this.onClickScheduledPosts = () => this.props.sendEvent(Object(K.k)()), this.onClickEventPosts = () => this.props.sendEvent(Object(K.f)()), this.onClickPredictions = () => this.trackClick("predictions"), this.onGoToModHub = () => {
+					super(e, t), this.trackClick = e => this.props.sendEvent(C.b(e)), this.trackCommunitySettingsNavItemClick = e => this.props.sendEvent(Object(q.b)(e)), this.onClickAwards = () => this.trackClick("awards"), this.onClickPowerups = () => this.trackClick("powerups"), this.onClickStreaming = () => this.trackClick("streaming"), this.onClickModQueue = () => this.trackClick("mod_queue"), this.onClickReports = () => this.trackClick("reports"), this.onClickSpam = () => this.trackClick("spam"), this.onClickEdited = () => this.trackClick("edited"), this.onClickUnmoderated = () => this.trackClick("unmoderated"), this.onClickBannedUsers = () => this.trackClick("ban_users"), this.onClickMutedUsers = () => this.trackClick("mute_users"), this.onClickApprovedSubmitters = () => this.trackClick("approved_submitters"), this.onClickApprovedTalkHosts = () => this.trackClick("talk_hosts"), this.onClickEmojis = () => this.trackClick("emoji"), this.onClickModerators = () => this.trackClick("moderators"), this.onClickChatSettings = () => this.trackClick("chat_settings"), this.onClickCommunitySettings = () => this.trackClick("community_settings"), this.onClickCommunityAppearance = () => this.trackClick("community_appearance"), this.onClickModMail = () => this.trackClick("mod_mail"), this.onClickRemovalReasons = () => this.trackClick("removal_reasons"), this.onClickRules = () => this.trackClick("rules"), this.onClickPostRequirements = () => this.trackClick("post_requirements"), this.onClickAutomodConfig = () => this.trackClick("automod_config"), this.onClickWikiPages = () => this.trackClick("wiki"), this.onClickTraffic = () => this.trackClick("traffic"), this.onClickModLog = () => this.trackClick("mod_log"), this.onClickModSupport = () => this.trackClick("r_mod_support"), this.onClickModHelp = () => this.trackClick("mod_help"), this.onClickContactReddit = () => this.trackClick("contact_reddit"), this.onClickModGuidelines = () => this.trackClick("mod_guidelines"), this.onClickModHelpCenter = () => this.trackClick("mod_help_center"), this.onClickPostFlair = () => this.trackClick("post_flair"), this.onClickUserFlair = () => this.trackClick("user_flair"), this.onClickGrantUserFlair = () => this.trackClick("grant_user_flair"), this.onClickBadges = () => this.trackClick("badges"), this.onClickEmotes = () => this.trackClick("emotes"), this.onClickScheduledPosts = () => this.props.sendEvent(Object(K.k)()), this.onClickEventPosts = () => this.props.sendEvent(Object(K.f)()), this.onClickPredictions = () => this.trackClick("predictions"), this.onGoToModHub = () => {
 						const e = this.props.moderatorPermissions && this.props.moderatorPermissions.posts,
 							t = `${this.props.subreddit.url}about/`,
 							s = e ? `${t}modqueue` : t;
@@ -23503,4 +23507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.49259ae3686187929a22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.86a1b7406bd9f6334db2.js.map
