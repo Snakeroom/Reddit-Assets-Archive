@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.c44c11fb5f2e9dd71670.js
-// Retrieved at 5/3/2022, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.c78bad249a19ee78e17f.js
+// Retrieved at 5/3/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -259,7 +259,7 @@
 					}
 				},
 				M = r("./src/reddit/actions/inContextModeration.ts");
-			var F = function() {
+			var T = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -269,9 +269,9 @@
 						return e
 				}
 			};
-			const T = {};
+			const F = {};
 			var L = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : T,
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : F,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case C.r: {
@@ -406,7 +406,7 @@
 				Y = Object(y.c)({
 					api: A,
 					fetchedTokens: S,
-					inContext: F,
+					inContext: T,
 					loadMore: L,
 					models: W,
 					search: q,
@@ -796,9 +796,9 @@
 				B = r("./src/lib/localizeCurrency/index.ts"),
 				S = r("./src/reddit/components/Hovercards/AuthorHovercard/UserHovercard.tsx"),
 				M = r("./src/reddit/components/UserIcon/index.tsx"),
-				F = r("./src/reddit/hooks/useLocale.ts"),
-				T = r("./src/reddit/components/Econ/TopAwardersModal/TopAwardersList/Awarder/index.m.less"),
-				L = r.n(T);
+				T = r("./src/reddit/hooks/useLocale.ts"),
+				F = r("./src/reddit/components/Econ/TopAwardersModal/TopAwardersList/Awarder/index.m.less"),
+				L = r.n(F);
 			const {
 				fbt: H
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), R = (e, t) => t ? H._("{userName} (you)", [H._param("userName", e)], {
@@ -815,7 +815,7 @@
 						rank: c,
 						redditor: d,
 						score: l
-					} = t, m = Object(F.a)(), u = !d.profile;
+					} = t, m = Object(T.a)(), u = !d.profile;
 					return n.a.createElement("div", {
 						className: Object(i.a)(L.a.container, r)
 					}, n.a.createElement("div", {
@@ -1018,8 +1018,8 @@
 					B = !i.isGildable || !!A,
 					S = i.topAwardedType === v.a.Active,
 					M = i.topAwardedType === v.a.Inactive,
-					F = !x && !!b && !!b.length,
-					T = !x && b && !b.length && i && S;
+					T = !x && !!b && !!b.length,
+					F = !x && b && !b.length && i && S;
 				return n.a.createElement("div", {
 					className: ee.a.inner
 				}, n.a.createElement("div", {
@@ -1047,17 +1047,17 @@
 				}))), x && n.a.createElement(O.a, {
 					className: ee.a.loader,
 					sizePx: 60
-				}), F && M && o && 1 === o.rank && n.a.createElement("div", {
+				}), T && M && o && 1 === o.rank && n.a.createElement("div", {
 					className: ee.a.youWon
 				}, re._("You won 1st place!", null, {
 					hk: "1MxirM"
 				}), n.a.createElement(P, {
 					className: ee.a.youWonIcon
-				})), F && n.a.createElement(V, {
+				})), T && n.a.createElement(V, {
 					className: ee.a.winners,
 					awarders: b,
 					showScores: M
-				}), F && M && (!o || o && 1 !== o.rank) && n.a.createElement("div", {
+				}), T && M && (!o || o && 1 !== o.rank) && n.a.createElement("div", {
 					className: ee.a.info
 				}, n.a.createElement("h3", {
 					className: ee.a.infoTitle
@@ -1069,7 +1069,7 @@
 					hk: "2U5vPa"
 				})), n.a.createElement(y.a, {
 					className: ee.a.topAwardedIcon
-				})), T && n.a.createElement("div", {
+				})), F && n.a.createElement("div", {
 					className: ee.a.info
 				}, n.a.createElement(y.a, {
 					className: ee.a.topAwardedIcon
@@ -1088,7 +1088,7 @@
 					className: ee.a.giftIcon
 				}), re._("Give Award", null, {
 					hk: "2sa45i"
-				}))), F && i && S && n.a.createElement(K, {
+				}))), T && i && S && n.a.createElement(K, {
 					awarders: b,
 					className: ee.a.list,
 					currentRank: o,
@@ -1222,8 +1222,8 @@
 				B = r("./src/reddit/components/UserIcon/index.tsx"),
 				S = r("./src/reddit/controls/Button/index.tsx"),
 				M = r("./src/reddit/endpoints/profile/info.ts"),
-				F = r("./src/reddit/helpers/trackers/authorHovercard.ts"),
-				T = r("./src/reddit/icons/fonts/Info/index.tsx"),
+				T = r("./src/reddit/helpers/trackers/authorHovercard.ts"),
+				F = r("./src/reddit/icons/fonts/Info/index.tsx"),
 				L = r("./src/reddit/icons/svgs/Admin/index.tsx"),
 				H = r("./src/reddit/icons/svgs/Premium/index.tsx"),
 				R = r("./src/reddit/models/Gold/Award.ts"),
@@ -1273,7 +1273,7 @@
 					}, a ? n.a.createElement(Y.a, {
 						role: "button",
 						onClick: () => {
-							s(this.props.user.id), o(F.e(t))
+							s(this.props.user.id), o(T.e(t))
 						}
 					}, n.a.createElement(X.a, {
 						name: "ban",
@@ -1284,7 +1284,7 @@
 					})) : n.a.createElement(Y.a, {
 						role: "button",
 						onClick: () => {
-							c(), o(F.a(t))
+							c(), o(T.a(t))
 						}
 					}, n.a.createElement(X.a, {
 						name: "ban",
@@ -1294,7 +1294,7 @@
 					})), r && n.a.createElement(Y.a, {
 						role: "button",
 						onClick: () => {
-							i(), o(F.d(t))
+							i(), o(T.d(t))
 						}
 					}, n.a.createElement(X.a, {
 						name: "mod_mute",
@@ -1340,7 +1340,7 @@
 				}))(e => n.a.createElement(Y.a, {
 					role: "button",
 					onClick: () => {
-						e.onToggleUserFlairModal(), e.sendEvent(F.c(e.contextId))
+						e.onToggleUserFlairModal(), e.sendEvent(T.c(e.contextId))
 					}
 				}, n.a.createElement(X.a, {
 					name: "tag",
@@ -1418,7 +1418,7 @@
 						href: R.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, n.a.createElement(T.a, {
+					}, n.a.createElement(F.a, {
 						className: de.a.infoIcon
 					})))), n.a.createElement(Ee, null, n.a.createElement(Ne, null, Object(y.b)(r.fromAwardsGiven)), n.a.createElement(we, null, w.fbt._({
 						"*": "Awarder Karma",
@@ -1429,7 +1429,7 @@
 						href: R.a,
 						target: "_blank",
 						rel: "noopener noreferrer"
-					}, n.a.createElement(T.a, {
+					}, n.a.createElement(F.a, {
 						className: de.a.infoIcon
 					})))))
 				},
@@ -1469,7 +1469,7 @@
 						B = (null == g ? void 0 : g.templateIds) && (null === (t = null == g ? void 0 : g.templateIds) || void 0 === t ? void 0 : t.length) > 0,
 						M = null === (r = null == g ? void 0 : g.displaySettings) || void 0 === r ? void 0 : r.isEnabled,
 						{
-							awardedLastMonth: T
+							awardedLastMonth: F
 						} = I,
 						L = !!I.snoovatarFullBodyAsset,
 						H = I.isNSFW && c;
@@ -1508,8 +1508,8 @@
 						userName: h
 					})), n.a.createElement(Ue, {
 						user: I
-					}), T && n.a.createElement(z.a, {
-						recentAwardings: T,
+					}), F && n.a.createElement(z.a, {
+						recentAwardings: F,
 						topAwardIcon: x,
 						username: h
 					}), d && !j && !E && N && !C && n.a.createElement(pe, {
@@ -1525,7 +1525,7 @@
 							name: e.user.username,
 							type: "profile"
 						},
-						getEventFactory: e => Object(F.h)(e ? "unfollow" : "follow", s),
+						getEventFactory: e => Object(T.h)(e ? "unfollow" : "follow", s),
 						isFullWidth: !0,
 						small: !0
 					})), A && s && !j && v && n.a.createElement(ne, {
@@ -1632,13 +1632,13 @@
 						})
 					}
 				}),
-				Fe = Object(s.b)(Me, (e, t) => ({
+				Te = Object(s.b)(Me, (e, t) => ({
 					onClickSnoovatar: () => e(Object(c.b)({
 						clickSource: "user_hovercard"
 					})),
 					onHideTooltip: () => e(Object(i.i)())
 				}));
-			t.a = Fe(e => e.isModWithUserNotesPermissions ? n.a.createElement(N.b, {
+			t.a = Te(e => e.isModWithUserNotesPermissions ? n.a.createElement(N.b, {
 				activeTooltipId: e.activeTooltipId,
 				contextId: e.contextId,
 				currentUser: e.currentUser,
@@ -2262,9 +2262,9 @@
 					url: S,
 					isHovercard: M
 				} = e;
-				const F = Object(s.e)(e => !N && !!y && Object(m.f)(e)),
-					T = Object(s.e)(u.b),
-					L = y && Object(d.e)(y) && T;
+				const T = Object(s.e)(e => !N && !!y && Object(m.f)(e)),
+					F = Object(s.e)(u.b),
+					L = y && Object(d.e)(y) && F;
 				return n.a.createElement(n.a.Fragment, null, n.a.createElement(f.a, {
 					bannerBackgroundImage: t,
 					editMode: !!x,
@@ -2311,7 +2311,7 @@
 					currentUserHasSnoovatar: a,
 					isOwnProfile: N,
 					onClick: w
-				}), F && n.a.createElement(b.a, {
+				}), T && n.a.createElement(b.a, {
 					username: B,
 					isHovercard: !!M,
 					share: {
@@ -2670,9 +2670,9 @@
 				}) === a.y.Enabled,
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.Sc
-				}) === a.vd
+					experimentName: a.Tc
+				}) === a.wd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.c44c11fb5f2e9dd71670.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.c78bad249a19ee78e17f.js.map
