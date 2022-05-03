@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.91d1f9cc3463f6179fed.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.a41c42439532e2077937.js
+// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-TabBadger-Component"], {
 		"./src/reddit/components/Pill/PillButton/index.m.less": function(t, e, i) {
@@ -58,14 +58,12 @@
 						children: i,
 						className: n,
 						disabled: s = !1,
-						onClick: r,
-						variant: p,
-						...m
+						variant: r,
+						...p
 					} = t;
-					return o.a.createElement("button", d({}, m, {
-						className: Object(l.a)(a.a.primaryButton, c[p], u(e, p), n),
-						disabled: s,
-						onClick: r
+					return o.a.createElement("button", d({}, p, {
+						className: Object(l.a)(a.a.primaryButton, c[r], u(e, r), n),
+						disabled: s
 					}), i)
 				}
 		},
@@ -171,8 +169,8 @@
 					noun: B
 				});
 			var v = i("./src/reddit/components/TabBadger/index.m.less"),
-				C = i.n(v);
-			const T = 12 * r.R,
+				T = i.n(v);
+			const C = 12 * r.R,
 				f = 2 * r.R,
 				j = 5e4;
 			class x extends s.Component {
@@ -187,7 +185,7 @@
 							subredditName: e,
 							subscriberCount: i
 						} = this.props;
-						window.clearTimeout(this.timer), t || e === _.d.All || e === _.d.Popular ? this.timer = window.setTimeout(this.badgeFavicon, f) : i && i > j && (this.timer = window.setTimeout(this.badgeFavicon, T))
+						window.clearTimeout(this.timer), t || e === _.d.All || e === _.d.Popular ? this.timer = window.setTimeout(this.badgeFavicon, f) : i && i > j && (this.timer = window.setTimeout(this.badgeFavicon, C))
 					}, this.unbadgeFavicon = () => !this.props.tabBadged && Object(b.b)(!1), this.hidePill = () => this.setState({
 						isPillHidden: !0
 					}), this.activatePill = () => {
@@ -209,9 +207,9 @@
 				}
 				render() {
 					return o.a.createElement("div", {
-						className: C.a.pillContainer
+						className: T.a.pillContainer
 					}, o.a.createElement(a.a, {
-						className: Object(l.a)(C.a.pill, this.state.isPillHidden && C.a.pillHidden)
+						className: Object(l.a)(T.a.pill, this.state.isPillHidden && T.a.pillHidden)
 					}, o.a.createElement(h, {
 						onClick: this.handlePillClick,
 						onClickClose: this.hidePill
@@ -231,4 +229,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.91d1f9cc3463f6179fed.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-TabBadger-Component.a41c42439532e2077937.js.map

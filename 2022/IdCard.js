@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.f3c5abf69358609db653.js
-// Retrieved at 5/2/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.57ed6a6778ccd786b121.js
+// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3088,7 +3088,7 @@
 						onClick: b ? x : void 0,
 						headerButton: i.a.createElement("div", {
 							className: mt.a.headerButtonsContainer
-						}, !A && v && g && c !== Ae.te.NewModule && i.a.createElement(a.a, {
+						}, !A && v && g && c !== Ae.ue.NewModule && i.a.createElement(a.a, {
 							className: mt.a.ModToolsLink,
 							to: g.posts ? `${v.url}about/modqueue` : `${v.url}about/`,
 							onClick: this.onClickModTools
@@ -5305,4 +5305,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.f3c5abf69358609db653.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.57ed6a6778ccd786b121.js.map

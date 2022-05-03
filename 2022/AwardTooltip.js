@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.4cac3b95134a991067d8.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.165822556f8dc3968bde.js
+// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, r) {
@@ -51,8 +51,8 @@
 				E = r("./src/reddit/icons/svgs/Hide/index.tsx"),
 				j = r("./src/reddit/icons/svgs/Moderate/index.tsx"),
 				N = r("./src/reddit/icons/svgs/Report/index.tsx"),
-				y = r("./src/reddit/icons/fonts/Coin/index.tsx");
-			const I = e => {
+				I = r("./src/reddit/icons/fonts/Coin/index.tsx");
+			const y = e => {
 				const {
 					award: t
 				} = e;
@@ -60,7 +60,7 @@
 					const e = t.description.split("%{coin_symbol}");
 					return n.a.createElement(n.a.Fragment, null, e.map((e, t) => 0 === t ? e : n.a.createElement(n.a.Fragment, {
 						key: e
-					}, n.a.createElement(y.a, null), e)))
+					}, n.a.createElement(I.a, null), e)))
 				}
 				return null
 			};
@@ -69,8 +69,8 @@
 			const k = Object(d.c)({
 					canFlagAwards: e => Object(x.c)(e, {
 						experimentEligibilitySelector: x.a,
-						experimentName: w.Qc
-					}) === w.yd.Enabled,
+						experimentName: w.Rc
+					}) === w.zd.Enabled,
 					currentUser: g.l,
 					moderatorPermissions: (e, t) => {
 						let {
@@ -224,7 +224,7 @@
 						hk: "2QpjYF"
 					})), n.a.createElement("p", {
 						className: L.a.awardDescription
-					}, n.a.createElement(I, {
+					}, n.a.createElement(y, {
 						award: e
 					})), e.awardType === h.f.Community && i && n.a.createElement("div", {
 						className: L.a.subreddit
@@ -553,4 +553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.4cac3b95134a991067d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.165822556f8dc3968bde.js.map

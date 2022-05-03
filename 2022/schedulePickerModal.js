@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/schedulePickerModal.c25d06a8259c36cca30f.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/schedulePickerModal.9f59de93b02a10cb5351.js
+// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["schedulePickerModal"], {
 		"./node_modules/lodash/_baseClamp.js": function(e, t) {
@@ -536,7 +536,7 @@
 				b = n("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				f = n("./src/reddit/helpers/scheduledPosts/index.ts"),
 				_ = n("./src/reddit/helpers/trackers/postEvent.ts"),
-				v = n("./src/reddit/icons/svgs/Clear/index.tsx"),
+				v = n("./src/reddit/icons/svgs/ClearFilled/index.tsx"),
 				C = n("./src/reddit/layout/row/Inline/index.tsx"),
 				y = n("./src/reddit/models/PostCreationForm/index.ts"),
 				g = n("./src/reddit/components/PostCreationForm/SchedulePickerModal/DateInput/index.tsx"),
@@ -934,7 +934,7 @@
 					return !0
 				}
 		},
-		"./src/reddit/icons/svgs/Clear/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/ClearFilled/index.tsx": function(e, t, n) {
 			"use strict";
 			var a = n("./node_modules/react/index.js"),
 				s = n.n(a);
@@ -950,4 +950,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/schedulePickerModal.c25d06a8259c36cca30f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/schedulePickerModal.9f59de93b02a10cb5351.js.map

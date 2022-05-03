@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.c160aaf290482d0d4e75.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.e6248c565177db88c7a9.js
+// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -56,10 +56,10 @@
 				N = n.n(P);
 			const {
 				embed: S,
-				hidden: T
+				hidden: B
 			} = y.b;
 
-			function B(e) {
+			function T(e) {
 				return void 0 !== e ? e : -1
 			}
 			const R = C.a.wrapped(e => a.a.createElement("div", {
@@ -81,16 +81,16 @@
 						ref: n,
 						className: e.className,
 						style: {
-							width: `${B(S.width)}px`,
-							height: `${B(S.height)}px`
+							width: `${T(S.width)}px`,
+							height: `${T(S.height)}px`
 						}
 					}, e.children)
 				}, "EmbedPortalContainer", N.a),
 				D = C.a.wrapped(e => a.a.createElement("div", {
 					className: e.className,
 					style: {
-						width: `${B(T.width)}px`,
-						height: `${B(T.height)}px`
+						width: `${T(B.width)}px`,
+						height: `${T(B.height)}px`
 					}
 				}, e.children), "HiddenPortalContainer", N.a),
 				k = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
@@ -671,27 +671,27 @@
 					experimentName: a.Jb,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				d = Object(s.a)(o, e => e === a.Wd.Enabled),
+				d = Object(s.a)(o, e => e === a.Xd.Enabled),
 				u = Object(s.a)(e => Object(c.c)(e, {
-					experimentName: a.Rd,
+					experimentName: a.Sd,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				l = Object(s.a)(d, u, (e, t) => e && t === a.Vd.Enabled),
+				l = Object(s.a)(d, u, (e, t) => e && t === a.Wd.Enabled),
 				b = Object(s.a)(e => Object(c.c)(e, {
 					experimentName: a.ec,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				m = Object(s.a)(d, b, (e, t) => e && t === a.zc.Enabled),
+				m = Object(s.a)(d, b, (e, t) => e && t === a.Ac.Enabled),
 				h = Object(s.a)(e => Object(c.c)(e, {
 					experimentName: a.Hb,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				g = Object(s.a)(h, e => e === a.Td.ContinuousScroll),
+				g = Object(s.a)(h, e => e === a.Ud.ContinuousScroll),
 				f = Object(s.a)(e => Object(c.c)(e, {
 					experimentName: a.Ib,
 					experimentEligibilitySelector: r.e
 				}), i.a),
-				p = Object(s.a)(f, e => e === a.Ud.Enabled),
+				p = Object(s.a)(f, e => e === a.Vd.Enabled),
 				x = Object(s.a)(e => Object(c.c)(e, {
 					experimentName: a.Sb,
 					experimentEligibilitySelector: () => !0
@@ -703,4 +703,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.c160aaf290482d0d4e75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.e6248c565177db88c7a9.js.map

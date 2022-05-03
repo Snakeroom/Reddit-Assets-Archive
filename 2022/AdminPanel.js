@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.286104d879e39de596d6.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.2dab12fa254712d6b90b.js
+// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -482,7 +482,7 @@
 				ue = n("./node_modules/lodash/isNil.js"),
 				he = n.n(ue),
 				ve = n("./src/reddit/icons/svgs/CheckmarkFitted/index.tsx"),
-				xe = n("./src/reddit/icons/svgs/Clear/index.tsx"),
+				xe = n("./src/reddit/icons/svgs/ClearFilled/index.tsx"),
 				Ee = n("./src/reddit/icons/svgs/Warning/index.tsx"),
 				ge = n("./node_modules/@reddit/event-helpers-typescript/dist/esm/index.js"),
 				be = n("./node_modules/@reddit/event-schema-registry/dist/esm/index.js");
@@ -726,7 +726,7 @@
 			var at = e => {
 					const t = ["control_1", "control_2", ...He.q[e.experimentName]];
 					if (!t) return null;
-					const n = He.vd.has(e.experimentName);
+					const n = He.wd.has(e.experimentName);
 					return a.a.createElement(Q.a, {
 						className: e.className
 					}, a.a.createElement(Xe, null, `${e.experimentName}${n?"*":""}`), a.a.createElement(Ze, {
@@ -1663,7 +1663,7 @@
 				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
 			})))
 		},
-		"./src/reddit/icons/svgs/Clear/index.tsx": function(e, t, n) {
+		"./src/reddit/icons/svgs/ClearFilled/index.tsx": function(e, t, n) {
 			"use strict";
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s);
@@ -1757,4 +1757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.286104d879e39de596d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.2dab12fa254712d6b90b.js.map

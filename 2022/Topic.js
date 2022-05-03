@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.469c2552fb2b99b03400.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.272d6827e80afed4dadd.js
+// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -480,7 +480,7 @@
 				j = Object(b.u)(),
 				L = Object(a.c)({
 					dropdownIsOpen: Object(y.b)(C),
-					postLayout: b.R,
+					postLayout: b.S,
 					redditStyle: b.D
 				}),
 				I = Object(o.b)(L, e => ({
@@ -777,7 +777,7 @@
 					}, r[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.xc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.yc.GreyRereddit ? e.reredditButtons : [];
 					return n.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1619,7 +1619,7 @@
 					isCommentsPage: p.x,
 					isFrontpage: p.A,
 					isProfilePostListing: p.L,
-					isTopicPage: p.Q,
+					isTopicPage: p.R,
 					pageLayer: e => e
 				})
 			}
@@ -1628,7 +1628,7 @@
 					apiError: x.c,
 					apiPending: x.d,
 					measureScrollFPS: f.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.R)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.S)(e, t),
 					loadMore: x.g,
 					postsById: v.S,
 					postIds: Object(i.a)((e, t) => {
@@ -1641,7 +1641,7 @@
 					}),
 					subredditsById: y.bb,
 					viewportDataLoaded: E.a,
-					pageReferrer: p.U,
+					pageReferrer: p.V,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: _.e
 				},
@@ -2390,7 +2390,7 @@
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(we.b)(e, {
 				topicSlug: t.match.params.topicSlug
-			}), O.R, je, e => {
+			}), O.S, je, e => {
 				var t;
 				return null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.status
 			}, (e, t, s, r, n, i, o, a) => ({
@@ -2704,4 +2704,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.469c2552fb2b99b03400.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.272d6827e80afed4dadd.js.map

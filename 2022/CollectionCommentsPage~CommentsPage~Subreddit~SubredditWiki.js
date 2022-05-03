@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0e18557ed6775005e475.js
-// Retrieved at 4/27/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.c028f7ca24ee28c9f0b8.js
+// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -1645,7 +1645,7 @@
 					}, n[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.xc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.yc.GreyRereddit ? e.reredditButtons : [];
 					return s.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2108,7 +2108,7 @@
 				P = r("./src/reddit/hooks/usePageLayer.ts");
 			const {
 				fbt: L
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), R = Object(a.c)({
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), B = Object(a.c)({
 				isActive: (e, t) => {
 					let {
 						subredditId: r
@@ -2124,7 +2124,7 @@
 					})
 				}
 			});
-			var B = Object(i.b)(R, (e, t) => ({
+			var R = Object(i.b)(B, (e, t) => ({
 					onActivate: () => e(Object(T.p)({
 						subredditId: t.subredditId,
 						forceState: !0
@@ -2292,10 +2292,10 @@
 					hk: "1miZk"
 				}))
 			};
-			const le = Object(c.a)("spPolls", B),
+			const le = Object(c.a)("spPolls", R),
 				ue = Object(d.u)(),
 				me = Object(a.c)({
-					layout: d.R,
+					layout: d.S,
 					widget: l.f
 				}),
 				pe = Object(i.b)(me);
@@ -2681,8 +2681,8 @@
 			}
 			const O = 129,
 				C = Object(h.u)({
-					filterName: e => Object(h.W)(e)[b.h],
-					url: e => Object(h.db)(e)
+					filterName: e => Object(h.X)(e)[b.h],
+					url: e => Object(h.eb)(e)
 				}),
 				j = Object(o.c)({
 					subredditId: (e, t) => Object(y.F)(e, t.subredditName)
@@ -3186,8 +3186,8 @@
 				T = r("./src/reddit/controls/TextButton/index.tsx"),
 				P = r("./src/reddit/components/Widgets/Calendar/index.m.less"),
 				L = r.n(P);
-			const R = 100,
-				B = {
+			const B = 100,
+				R = {
 					isExpanded: !1
 				},
 				M = m.a.wrapped(o.a, "RawHTMLDisplay", L.a),
@@ -3203,14 +3203,14 @@
 						this.setState({
 							isExpanded: !this.state.isExpanded
 						})
-					}, this.state = B
+					}, this.state = R
 				}
 				render() {
 					const {
 						props: e,
 						state: t
 					} = this;
-					return e.text.length > R ? s.a.createElement(U, null, t.isExpanded ? e.text : e.text.slice(0, R), s.a.createElement(z, {
+					return e.text.length > B ? s.a.createElement(U, null, t.isExpanded ? e.text : e.text.slice(0, B), s.a.createElement(z, {
 						onClick: this.toggleDescriptionView
 					}, t.isExpanded ? I.fbt._("read less", null, {
 						hk: "2KdNS6"
@@ -3448,8 +3448,8 @@
 				}, s.a.createElement(Te, null, s.a.createElement(Pe, {
 					html: e.widget.textHtml || ""
 				}))),
-				Re = r("./src/reddit/components/Widgets/Base/index.tsx");
-			var Be = e => s.a.createElement(Re.b, null, "This widget hasn't been implemented yet!");
+				Be = r("./src/reddit/components/Widgets/Base/index.tsx");
+			var Re = e => s.a.createElement(Be.b, null, "This widget hasn't been implemented yet!");
 
 			function Me(e) {
 				const t = function(e) {
@@ -3473,7 +3473,7 @@
 						case "post-flair":
 							return Se.a;
 						default:
-							return Be
+							return Re
 					}
 				}(e.widget);
 				return s.a.createElement(t, {
@@ -4141,11 +4141,11 @@
 				s = r("./src/reddit/constants/postLayout.ts"),
 				i = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				a = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => s.e[Object(i.R)(e, {})] === s.d.Card,
+			const o = e => s.e[Object(i.S)(e, {})] === s.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: n.pb
-				}) === n.rc.Treatment
+				}) === n.sc.Treatment
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, r) {
 			"use strict";
@@ -4179,4 +4179,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.0e18557ed6775005e475.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.c028f7ca24ee28c9f0b8.js.map
