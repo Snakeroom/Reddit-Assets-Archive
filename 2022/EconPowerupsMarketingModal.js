@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.34fb8911be8e1db277ea.js
-// Retrieved at 5/4/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.e206007c046065770c44.js
+// Retrieved at 5/4/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -1075,11 +1075,11 @@
 				N = Object(o.a)(n.od),
 				P = Object(o.a)(n.ud),
 				C = Object(o.a)(n.td),
-				M = Object(o.a)(n.Of),
+				M = Object(o.a)(n.Lf),
 				S = Object(o.a)(n.qd),
 				I = Object(o.a)(n.sd),
 				T = Object(o.a)(n.rd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.34fb8911be8e1db277ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.e206007c046065770c44.js.map
