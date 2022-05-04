@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b8d83fdb02d92d1d5794.js
-// Retrieved at 5/4/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.20298ad486c4083146cd.js
+// Retrieved at 5/4/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("164005"),
+				buildNumber: Object(r.c)("164010"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1651681823"),
+				buildTimestamp: Object(r.b)("1651688101"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -5445,6 +5445,8 @@
 					DETAILED_DIFFS: "gql_detaileddiffs",
 					CLIENT_SCREENVIEW: "client-screenview",
 					GENDER_COLLECTION: "genderCollection",
+					ONE_TAP_DISMISSED: "one-tap-dismiss",
+					ONE_TAP_VIEWED: "one-tap-view",
 					REONBOARDING_FLOW: "reonboardingFlow",
 					NSFW_BLOCKING: "nsfwBlocking"
 				},
@@ -6087,14 +6089,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c5ab80ca3041567cea1731bf9c055ef5835d2b308-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %cf0b391597695e71d7337df400a8ee826d5ec0afe-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "5ab80ca3041567cea1731bf9c055ef5835d2b308-production",
+						release: "f0b391597695e71d7337df400a8ee826d5ec0afe-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6703,7 +6705,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "5ab80ca3041567cea1731bf9c055ef5835d2b308-production",
+							releaseClient: "f0b391597695e71d7337df400a8ee826d5ec0afe-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -45679,7 +45681,7 @@
 				s = i("./src/lib/constants/index.ts"),
 				o = i("./src/lib/makeRequest/index.ts");
 			! function(e) {
-				e.ClientIdConsumed = "clientIdConsumed", e.ClientIdRejected = "clientIdRejected", e.NumberOfDiffs = "numberOfDiffs", e.DetailedDiffs = "detailedDiffs", e.ClientScreenview = "client-screenview", e.GenderCollection = "genderCollection", e.ReonboardingFlow = "reonboardingFlow", e.NsfwBlocking = "nsfwBlocking"
+				e.ClientIdConsumed = "clientIdConsumed", e.ClientIdRejected = "clientIdRejected", e.NumberOfDiffs = "numberOfDiffs", e.DetailedDiffs = "detailedDiffs", e.ClientScreenview = "client-screenview", e.GenderCollection = "genderCollection", e.OneTapDismissed = "oneTapDismissed", e.OneTapViewed = "oneTapViewed", e.ReonboardingFlow = "reonboardingFlow", e.NsfwBlocking = "nsfwBlocking"
 			}(n || (n = {}));
 			const d = e => {
 				switch (e) {
@@ -45695,6 +45697,10 @@
 						return s.x.CLIENT_SCREENVIEW;
 					case n.GenderCollection:
 						return s.x.GENDER_COLLECTION;
+					case n.OneTapDismissed:
+						return s.x.ONE_TAP_DISMISSED;
+					case n.OneTapViewed:
+						return s.x.ONE_TAP_VIEWED;
 					case n.NsfwBlocking:
 						return s.x.NSFW_BLOCKING;
 					case n.ReonboardingFlow:
@@ -47293,4 +47299,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b8d83fdb02d92d1d5794.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.20298ad486c4083146cd.js.map
