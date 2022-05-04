@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.20298ad486c4083146cd.js
-// Retrieved at 5/4/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.93b6c274805d3f7513da.js
+// Retrieved at 5/4/2022, 4:00:03 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("164010"),
+				buildNumber: Object(r.c)("164020"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1651688101"),
+				buildTimestamp: Object(r.b)("1651691843"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6089,14 +6089,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cf0b391597695e71d7337df400a8ee826d5ec0afe-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c0ccdf12f9d19f0dc59793a2d40da5b6e2b31f6bc-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "f0b391597695e71d7337df400a8ee826d5ec0afe-production",
+						release: "0ccdf12f9d19f0dc59793a2d40da5b6e2b31f6bc-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6705,7 +6705,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "f0b391597695e71d7337df400a8ee826d5ec0afe-production",
+							releaseClient: "0ccdf12f9d19f0dc59793a2d40da5b6e2b31f6bc-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -18382,6 +18382,7 @@
 					DISMISS: "dismiss",
 					DRAG: "drag",
 					ENABLE: "enable",
+					LEAVE: "leave",
 					RECEIVE: "receive",
 					REJECT: "reject",
 					SELECT: "select",
@@ -18393,6 +18394,8 @@
 					UNDO: "undo"
 				},
 				r = {
+					APP: "app",
+					HEARTBEAT: "heartbeat",
 					POST: "post",
 					SCREEN: "screen"
 				},
@@ -26438,54 +26441,72 @@
 		"./src/reddit/helpers/trackers/global.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "b", (function() {
-				return p
-			})), i.d(t, "a", (function() {
-				return h
-			})), i.d(t, "e", (function() {
-				return f
-			})), i.d(t, "d", (function() {
-				return b
-			})), i.d(t, "c", (function() {
 				return g
+			})), i.d(t, "a", (function() {
+				return w
+			})), i.d(t, "e", (function() {
+				return v
+			})), i.d(t, "d", (function() {
+				return y
+			})), i.d(t, "c", (function() {
+				return E
 			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/lib/makeSearchKey/index.ts"),
-				s = i("./src/reddit/constants/tracking.ts"),
-				o = i("./src/reddit/helpers/search/SearchTelemetrySource.ts"),
-				d = i("./src/reddit/selectors/commentSelector.ts"),
-				a = i("./src/reddit/selectors/profile.ts"),
-				l = i("./src/reddit/selectors/subreddit.ts"),
-				u = i("./src/reddit/selectors/telemetry.ts"),
-				c = i("./src/telemetry/index.ts"),
-				_ = i("./src/telemetry/models/Timer.ts"),
-				m = i("./src/reddit/helpers/trackers/searchResults.ts");
-			const p = e => Object(c.a)({
-					...u.n(e),
+				s = i("./node_modules/lodash/pick.js"),
+				o = i.n(s),
+				d = i("./src/reddit/constants/parameters.ts"),
+				a = i("./src/reddit/constants/tracking.ts"),
+				l = i("./src/reddit/contexts/PageLayer/index.tsx"),
+				u = i("./src/reddit/helpers/search/SearchTelemetrySource.ts"),
+				c = i("./src/reddit/selectors/commentSelector.ts"),
+				_ = i("./src/reddit/selectors/profile.ts"),
+				m = i("./src/reddit/selectors/subreddit.ts"),
+				p = i("./src/reddit/selectors/telemetry.ts"),
+				h = i("./src/telemetry/index.ts"),
+				f = i("./src/telemetry/models/Timer.ts"),
+				b = i("./src/reddit/helpers/trackers/searchResults.ts");
+			const g = e => Object(h.a)({
+					...p.n(e),
 					source: "global",
 					action: "view",
 					noun: "empty"
 				}),
-				h = e => t => ({
-					...u.n(t),
-					action: "leave",
-					actionInfo: u.d(t, {
-						reason: e
-					}),
-					noun: "app",
-					source: "global"
-				}),
-				f = (e, t) => (i, n, r, s) => ({
-					...u.n(i),
+				w = e => t => {
+					var i;
+					const s = t.platform.currentPage,
+						c = (null === (i = null == s ? void 0 : s.meta) || void 0 === i ? void 0 : i.name) === n.Ob.SEARCH_RESULTS;
+					return {
+						...p.n(t),
+						action: a.c.LEAVE,
+						actionInfo: p.d(t, {
+							reason: e
+						}),
+						noun: a.b.APP,
+						source: b.c.GLOBAL,
+						...c ? ((e, t) => {
+							const i = Object(l.X)(t),
+								n = Object(r.e)({
+									...o()(i || {}, d.v)
+								});
+							return {
+								search: p.Z(e, n, u.a.SERP)
+							}
+						})(t, s) : {}
+					}
+				},
+				v = (e, t) => (i, n, r, s) => ({
+					...p.n(i),
 					action: "refocus",
 					actionInfo: {
-						reason: u.d(i, {
+						reason: p.d(i, {
 							reason: e
 						}).reason,
 						pageType: t
 					},
 					noun: "ad",
 					source: "post",
-					post: u.H(i, r),
+					post: p.H(i, r),
 					adClick: {
 						landingPageDuration: n
 					},
@@ -26493,41 +26514,41 @@
 						impressionId: s
 					}
 				}),
-				b = e => t => ({
-					...u.n(t),
+				y = e => t => ({
+					...p.n(t),
 					action: "view",
 					noun: "heartbeat",
 					source: "global",
 					timer: {
-						type: _.TimerType.GoodVisit,
+						type: f.TimerType.GoodVisit,
 						millis: e
 					}
 				}),
-				g = (e, t, i, c, p) => h => {
+				E = (e, t, i, s, o) => d => {
 					const {
-						partialCommentId: f,
-						partialPostId: b,
+						partialCommentId: l,
+						partialPostId: h,
 						profileName: g,
 						subredditName: w
-					} = i.match.params, v = f ? `${n.Jb.Comment}_${f}` : "", y = Object(d.b)(h, {
+					} = i.match.params, v = l ? `${n.Jb.Comment}_${l}` : "", y = Object(c.b)(d, {
 						commentId: v
-					}), E = b ? `${n.Jb.Post}_${b}` : "", S = g ? Object(a.m)(h, g) : "", T = Object(l.F)(h, w), O = n.N.has(t), I = "typeahead" === t ? o.a.Typeahead : o.a.SERP, R = u.F(h, null), F = Object(r.e)((null == p ? void 0 : p.queryParams) || {});
+					}), E = h ? `${n.Jb.Post}_${h}` : "", S = g ? Object(_.m)(d, g) : "", T = Object(m.F)(d, w), O = n.N.has(t), I = "typeahead" === t ? u.a.Typeahead : u.a.SERP, R = p.F(d, null), F = Object(r.e)((null == o ? void 0 : o.queryParams) || {});
 					return {
-						...u.n(h),
-						source: m.c.GLOBAL,
-						action: s.c.VIEW,
-						noun: m.a.HEARTBEAT,
-						actionInfo: Object(m.k)(h, null, R, null),
-						comment: y ? u.i(h, y) : void 0,
-						post: u.H(h, E),
-						profile: u.U(h, S),
-						search: O ? u.Z(h, F, I, !!T) : void 0,
-						subreddit: w ? u.kb(h, T) : void 0,
+						...p.n(d),
+						source: b.c.GLOBAL,
+						action: a.c.VIEW,
+						noun: a.b.HEARTBEAT,
+						actionInfo: Object(b.k)(d, null, R, null),
+						comment: y ? p.i(d, y) : void 0,
+						post: p.H(d, E),
+						profile: p.U(d, S),
+						search: O ? p.Z(d, F, I, !!T) : void 0,
+						subreddit: w ? p.kb(d, T) : void 0,
 						timer: {
-							type: O ? _.TimerType.GoodVisitSearch : _.TimerType.GoodVisitFeed,
+							type: O ? f.TimerType.GoodVisitSearch : f.TimerType.GoodVisitFeed,
 							millis: e,
 							referrer: t,
-							referrerCorrelationId: c
+							referrerCorrelationId: s
 						}
 					}
 				}
@@ -27244,7 +27265,7 @@
 			};
 			var m;
 			! function(e) {
-				e.COMMENT = "comment", e.HEARTBEAT = "heartbeat", e.NSFW = "nsfw", e.PEOPLE = "people", e.RECENT = "recent_search", e.SUBREDDIT = "subreddit", e.TRENDING = "trending_search", e.TYPEAHEAD = "typeahead", e.QUERY_PROMPT = "query_prompt", e.SUBREDDIT_SEARCH = "subreddit_search"
+				e.COMMENT = "comment", e.NSFW = "nsfw", e.PEOPLE = "people", e.RECENT = "recent_search", e.SUBREDDIT = "subreddit", e.TRENDING = "trending_search", e.TYPEAHEAD = "typeahead", e.QUERY_PROMPT = "query_prompt", e.SUBREDDIT_SEARCH = "subreddit_search"
 			}(m || (m = {}));
 			const p = {
 					subreddit: m.SUBREDDIT,
@@ -47299,4 +47320,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.20298ad486c4083146cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.93b6c274805d3f7513da.js.map
