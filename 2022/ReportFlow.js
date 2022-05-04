@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.7586753031c130b789a1.js
-// Retrieved at 5/4/2022, 10:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.e353ac6e26c14107ef7f.js
+// Retrieved at 5/4/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -239,7 +239,7 @@
 					be: ["be-BY"],
 					bg: ["bg-BG"],
 					"bn-IN": ["bn-IN"],
-					"bn-bd": ["bn-bd"],
+					"bn-bd": ["bn", "bn-BD"],
 					bs: ["bs"],
 					ca: ["ca-ES"],
 					cs: ["cs-CZ"],
@@ -269,7 +269,7 @@
 					gd: ["gd"],
 					gl: ["gl-ES"],
 					he: ["he-IL"],
-					hi: ["hi-IN"],
+					hi: ["hi", "hi-IN"],
 					hr: ["hr-HR"],
 					hu: ["hu-HU"],
 					hy: ["hy-AM"],
@@ -4090,4 +4090,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.7586753031c130b789a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.e353ac6e26c14107ef7f.js.map

@@ -1,10 +1,10 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.c827f482951e601de713.js
-// Retrieved at 5/4/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.f608e8356861974e25bb.js
+// Retrieved at 5/4/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
-		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
+		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
 		for (a in s) Object.prototype.hasOwnProperty.call(s, a) && (e[a] = s[a]);
-		for (m && m(o); P.length;) P.shift()();
+		for (m && m(o); b.length;) b.shift()();
 		return i.push.apply(i, c || []), t()
 	}
 
@@ -441,10 +441,12 @@
 					"reddit-components-Econ-Prediction-EndTimeModal": "reddit-components-Econ-Prediction-EndTimeModal",
 					"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "reddit-components-PostCreationForm-PredictionEditor-InactivityModal",
 					"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal",
+					"translations/bn_BD-json": "translations/bn_BD-json",
 					"translations/de_DE-json": "translations/de_DE-json",
 					"translations/es_ES-json": "translations/es_ES-json",
 					"translations/es_MX-json": "translations/es_MX-json",
 					"translations/fr_FR-json": "translations/fr_FR-json",
+					"translations/hi_IN-json": "translations/hi_IN-json",
 					"translations/it_IT-json": "translations/it_IT-json",
 					"translations/pseudo-json": "translations/pseudo-json",
 					"translations/pt_BR-json": "translations/pt_BR-json",
@@ -777,10 +779,12 @@
 					"reddit-components-Econ-Prediction-EndTimeModal": "f3fb44b12b1b03064265",
 					"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "0a2064db403c9a0f4de6",
 					"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "0a2064db403c9a0f4de6",
+					"translations/bn_BD-json": "31d6cfe0d16ae931b73c",
 					"translations/de_DE-json": "31d6cfe0d16ae931b73c",
 					"translations/es_ES-json": "31d6cfe0d16ae931b73c",
 					"translations/es_MX-json": "31d6cfe0d16ae931b73c",
 					"translations/fr_FR-json": "31d6cfe0d16ae931b73c",
+					"translations/hi_IN-json": "31d6cfe0d16ae931b73c",
 					"translations/it_IT-json": "31d6cfe0d16ae931b73c",
 					"translations/pseudo-json": "31d6cfe0d16ae931b73c",
 					"translations/pt_BR-json": "31d6cfe0d16ae931b73c",
@@ -977,12 +981,12 @@
 				var m;
 				if ((c = (m = l[s]).getAttribute("data-href")) === a || c === d) return o()
 			}
-			var P = document.createElement("link");
-			P.rel = "stylesheet", P.type = "text/css", P.onload = o, P.onerror = function(o) {
+			var b = document.createElement("link");
+			b.rel = "stylesheet", b.type = "text/css", b.onload = o, b.onerror = function(o) {
 				var a = o && o.target && o.target.src || d,
 					i = new Error("Loading CSS chunk " + e + " failed.\n(" + a + ")");
-				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], P.parentNode.removeChild(P), t(i)
-			}, P.href = d, document.getElementsByTagName("head")[0].appendChild(P)
+				i.code = "CSS_CHUNK_LOAD_FAILED", i.request = a, delete n[e], b.parentNode.removeChild(b), t(i)
+			}, b.href = d, document.getElementsByTagName("head")[0].appendChild(b)
 		})).then((function() {
 			n[e] = 0
 		})));
@@ -1130,10 +1134,12 @@
 						"reddit-components-Econ-Prediction-EndTimeModal": "reddit-components-Econ-Prediction-EndTimeModal",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "reddit-components-PostCreationForm-PredictionEditor-InactivityModal",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal",
+						"translations/bn_BD-json": "translations/bn_BD-json",
 						"translations/de_DE-json": "translations/de_DE-json",
 						"translations/es_ES-json": "translations/es_ES-json",
 						"translations/es_MX-json": "translations/es_MX-json",
 						"translations/fr_FR-json": "translations/fr_FR-json",
+						"translations/hi_IN-json": "translations/hi_IN-json",
 						"translations/it_IT-json": "translations/it_IT-json",
 						"translations/pseudo-json": "translations/pseudo-json",
 						"translations/pt_BR-json": "translations/pt_BR-json",
@@ -1466,10 +1472,12 @@
 						"reddit-components-Econ-Prediction-EndTimeModal": "9b7a7cd0a0e233e7e5bb",
 						"reddit-components-PostCreationForm-PredictionEditor-InactivityModal": "48433ee0bec18632bd07",
 						"reddit-components-PostCreationForm-PredictionEditor-StartTournamentLimitationModal": "1fc6622939042d0ab702",
+						"translations/bn_BD-json": "e7e49648d569e552b602",
 						"translations/de_DE-json": "d4188c42c0e16e6b0258",
 						"translations/es_ES-json": "6cff7b4a100e5f7b9a9c",
 						"translations/es_MX-json": "57b1ebbfd7fe97834152",
 						"translations/fr_FR-json": "b835d9c3418b12815ae8",
+						"translations/hi_IN-json": "571de5761f9b019f5d30",
 						"translations/it_IT-json": "864a843bf88cd0fd5b7e",
 						"translations/pseudo-json": "42f6813abb0503ff56a3",
 						"translations/pt_BR-json": "a9f4502cdd6ea883e0e5",
@@ -1516,7 +1524,7 @@
 						"reddit-components-LargePost": "f71a065eb4ad18ed1681",
 						CryptoVault: "85ec030247967148d9d9",
 						FeaturedLiveEntrypointLegacyAnnouncement: "e84e7dbd112da7babf9d",
-						ReportFlow: "7586753031c130b789a1",
+						ReportFlow: "e353ac6e26c14107ef7f",
 						IdCard: "6ce41caddd69144fb795",
 						ModModeBanners: "7d6964cbe13341345c86",
 						MuxEmbed: "982b3400754d822142c4",
@@ -1722,4 +1730,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.c827f482951e601de713.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f608e8356861974e25bb.js.map

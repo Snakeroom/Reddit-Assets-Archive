@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.3c34b6fc0f4846d7e836.js
-// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.0e9ede9b8bb7859c3569.js
+// Retrieved at 5/4/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Governance~ModListing~Reddit~Subreddit"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(t, e, r) {
@@ -239,7 +239,7 @@
 					be: ["be-BY"],
 					bg: ["bg-BG"],
 					"bn-IN": ["bn-IN"],
-					"bn-bd": ["bn-bd"],
+					"bn-bd": ["bn", "bn-BD"],
 					bs: ["bs"],
 					ca: ["ca-ES"],
 					cs: ["cs-CZ"],
@@ -269,7 +269,7 @@
 					gd: ["gd"],
 					gl: ["gl-ES"],
 					he: ["he-IL"],
-					hi: ["hi-IN"],
+					hi: ["hi", "hi-IN"],
 					hr: ["hr-HR"],
 					hu: ["hu-HU"],
 					hy: ["hy-AM"],
@@ -6509,4 +6509,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.3c34b6fc0f4846d7e836.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Governance~ModListing~Reddit~Subreddit.0e9ede9b8bb7859c3569.js.map
