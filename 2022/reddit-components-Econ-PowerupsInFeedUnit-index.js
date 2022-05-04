@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.c29d6edf61c52e765c4a.js
-// Retrieved at 5/3/2022, 3:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.e4d91e5fb16721535298.js
+// Retrieved at 5/4/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -587,7 +587,7 @@
 								subredditId: a
 							}),
 							l = Object(b.w)(e) && Object(m.w)(e);
-						return i || o ? c && n && Object(_.h)(e) ? s.UNLOCKED_COMMUNITY_GEAR : l ? s.UNLOCKED_UNAPPLIED_FROM_PREMIUM : s.HIDDEN : d && n && Object(_.h)(e) ? s.POWERUPS_COMMUNITY_GEAR : s.POWERUPS_DEFAULT
+						return i || o ? c && n && Object(_.g)(e) ? s.UNLOCKED_COMMUNITY_GEAR : l ? s.UNLOCKED_UNAPPLIED_FROM_PREMIUM : s.HIDDEN : d && n && Object(_.g)(e) ? s.POWERUPS_COMMUNITY_GEAR : s.POWERUPS_DEFAULT
 					})(e, {
 						subredditId: E.id,
 						subredditName: E.name
@@ -1385,4 +1385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.c29d6edf61c52e765c4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.e4d91e5fb16721535298.js.map

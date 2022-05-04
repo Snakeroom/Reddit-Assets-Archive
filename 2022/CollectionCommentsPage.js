@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.33c40a75c3cdb8e21dd0.js
-// Retrieved at 5/4/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.85dadec57c0976ae2169.js
+// Retrieved at 5/4/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -163,7 +163,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.Nf)(e.category_name)
+									displayText: Object(m.Lf)(e.category_name)
 								};
 								s.push(o.id), t[o.id] = o
 							}), {
@@ -8074,7 +8074,7 @@
 							baseUrl: s.base_url,
 							hostPostId: a,
 							isEligibleForLinkedPosts: o,
-							shouldShowLinkedPosts: o && !Object(f.Of)(t) && !Object(_.a)(t),
+							shouldShowLinkedPosts: o && !Object(f.Mf)(t) && !Object(_.a)(t),
 							subreddit: n
 						}
 					}
@@ -8135,7 +8135,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(f.Of)(c) && !Object(_.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(f.Mf)(c) && !Object(_.a)(c) && !i) return a.a.createElement("div", {
 						className: K.a.smallBanner
 					});
 					const {
@@ -11006,7 +11006,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.Pc
 				});
-				return !(!t || Object(n.Of)(t))
+				return !(!t || Object(n.Mf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -11250,7 +11250,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.Of)(t)
+					return Boolean(t) && !Object(o.Mf)(t)
 				},
 				d = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -11354,4 +11354,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.33c40a75c3cdb8e21dd0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.85dadec57c0976ae2169.js.map

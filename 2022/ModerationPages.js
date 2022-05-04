@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.41aecba9f2d49d81130e.js
-// Retrieved at 5/4/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.ea05842ffc4b5b7f9b87.js
+// Retrieved at 5/4/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -1203,7 +1203,7 @@
 					_e = me || ve;
 				me && !Object(xe.b)(G, me) && await t(Object(A.g)(me));
 				const Ce = !!me && Object(xe.c)(ae, me),
-					ke = Object(ue.z)(G),
+					ke = Object(ue.y)(G),
 					ye = Object(pe.n)(ae, {
 						subredditId: _e
 					}),
@@ -22562,7 +22562,7 @@
 						subredditId: s.id
 					})
 				},
-				isTalkHostsExperimentEnabled: y.z
+				isTalkHostsExperimentEnabled: y.y
 			});
 			class Le extends r.a.Component {
 				constructor(e, t) {
@@ -23072,7 +23072,7 @@
 					return {
 						contentGateInfo: m,
 						isBroadcastingEnabled: !!p && Object(N.c)(c, p.id),
-						isTalkHostsEnabled: Object(y.z)(c),
+						isTalkHostsEnabled: Object(y.y)(c),
 						isContributor: h,
 						isEmployee: t,
 						layout: s,
@@ -23172,7 +23172,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: n.vd
 				});
-				return !(!t || Object(n.Of)(t))
+				return !(!t || Object(n.Mf)(t))
 			}
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
@@ -23507,4 +23507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.41aecba9f2d49d81130e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ea05842ffc4b5b7f9b87.js.map

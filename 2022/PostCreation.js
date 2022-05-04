@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.bf1ad6bcd34228c1cf7f.js
-// Retrieved at 5/4/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.b9f223833ff6dca5af15.js
+// Retrieved at 5/4/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -5886,7 +5886,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(s.e)(a.r) ? r.a.createElement(d, {
+					return Object(s.e)(a.q) ? r.a.createElement(d, {
 						className: t
 					}) : r.a.createElement(i, {
 						className: t
@@ -21306,7 +21306,7 @@
 						subredditName: b
 					} = (null == h ? void 0 : h.urlParams) || {},
 					f = Object(a.e)(e => Object(K.F)(e, b)),
-					g = Object(a.e)(L.m);
+					g = Object(a.e)(L.l);
 				return s.a.createElement(fe.a, {
 					withOverlay: !0,
 					onOverlayClick: t,
@@ -23866,7 +23866,7 @@
 					},
 					allowPolls: F.d,
 					votingLengthDropdownIsOpen: e => e.tooltip.tooltipId === rd,
-					isPredictionCreationTabEnabled: L.m
+					isPredictionCreationTabEnabled: L.l
 				});
 			class cd extends s.a.Component {
 				constructor(e) {
@@ -24341,7 +24341,7 @@
 					rteState: F.gb,
 					shouldAllowBodyText: F.ib,
 					subreddit: H.r,
-					isPredictionCreationTabEnabled: L.m
+					isPredictionCreationTabEnabled: L.l
 				}),
 				il = Object(a.b)(al, (e, t) => {
 					let {
@@ -24788,7 +24788,7 @@
 						subredditId: n
 					} = e;
 					const o = Object(a.d)(),
-						i = Object(a.e)(L.n),
+						i = Object(a.e)(L.m),
 						d = Object(a.e)(e => Object(Rn.b)(e, {
 							subredditId: n
 						})),
@@ -24880,7 +24880,7 @@
 					submissionType: F.a,
 					subreddit: H.r,
 					title: F.rb,
-					isPredictionsCreationTabEnabled: L.m
+					isPredictionsCreationTabEnabled: L.l
 				}),
 				Hl = Object(a.b)(Wl, (e, t) => {
 					let {
@@ -25150,8 +25150,8 @@
 					submissionType: F.a,
 					subreddit: H.r,
 					isImageGalleryCreationEnabled: F.N,
-					isPredictionCreationTabEnabled: L.m,
-					isTalkCreationEnabled: L.y
+					isPredictionCreationTabEnabled: L.l,
+					isTalkCreationEnabled: L.x
 				}),
 				Ou = Object(a.b)(Eu, (e, t) => ({
 					onChange: (n, o) => {
@@ -25367,7 +25367,7 @@
 							subredditId: n.id
 						})
 					},
-					isTalkUserHostingEnabled: L.C
+					isTalkUserHostingEnabled: L.B
 				});
 			class Ru extends s.a.Component {
 				constructor(e) {
@@ -25690,7 +25690,7 @@
 								pageLayer: i
 							})), d = Object(a.e)(e => c && Object(We.h)(e, {
 								subredditId: c.id
-							})), l = Object(a.e)(L.k);
+							})), l = Object(a.e)(L.j);
 							return s.a.useEffect(() => c && c.allowPredictions ? d ? t(!0) : l ? void Promise.resolve(r(Object(In.h)(c.id))).then(e => {
 								t(Boolean(e)), o(Boolean(e))
 							}) : t(!1) : t(!1), [r, c, d, l]), {
@@ -25707,7 +25707,7 @@
 					const t = Object(A.a)(),
 						[n, o] = Object(r.useState)(!1),
 						i = Object(a.e)(e => Object(F.h)(e)),
-						c = Object(a.e)(e => Object(L.y)(e)),
+						c = Object(a.e)(e => Object(L.x)(e)),
 						d = Object(r.useMemo)(() => {
 							var e;
 							return !!(null === (e = i.allowedPostTypes) || void 0 === e ? void 0 : e.talks)
@@ -26466,64 +26466,62 @@
 		},
 		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "g", (function() {
+			n.d(t, "f", (function() {
 				return s
-			})), n.d(t, "r", (function() {
-				return a
-			})), n.d(t, "t", (function() {
-				return i
-			})), n.d(t, "n", (function() {
-				return c
-			})), n.d(t, "m", (function() {
-				return d
-			})), n.d(t, "p", (function() {
-				return l
 			})), n.d(t, "q", (function() {
-				return u
-			})), n.d(t, "w", (function() {
-				return m
-			})), n.d(t, "u", (function() {
-				return p
-			})), n.d(t, "v", (function() {
-				return h
-			})), n.d(t, "o", (function() {
-				return b
-			})), n.d(t, "i", (function() {
-				return f
-			})), n.d(t, "h", (function() {
-				return g
-			})), n.d(t, "e", (function() {
-				return C
-			})), n.d(t, "c", (function() {
-				return x
-			})), n.d(t, "d", (function() {
-				return v
-			})), n.d(t, "f", (function() {
-				return _
-			})), n.d(t, "b", (function() {
-				return E
-			})), n.d(t, "j", (function() {
-				return O
-			})), n.d(t, "k", (function() {
-				return y
-			})), n.d(t, "l", (function() {
-				return k
+				return a
 			})), n.d(t, "s", (function() {
-				return j
-			})), n.d(t, "x", (function() {
-				return w
-			})), n.d(t, "y", (function() {
-				return T
-			})), n.d(t, "B", (function() {
-				return S
+				return i
+			})), n.d(t, "m", (function() {
+				return c
+			})), n.d(t, "l", (function() {
+				return d
+			})), n.d(t, "o", (function() {
+				return l
+			})), n.d(t, "p", (function() {
+				return u
+			})), n.d(t, "v", (function() {
+				return m
+			})), n.d(t, "t", (function() {
+				return p
+			})), n.d(t, "u", (function() {
+				return h
+			})), n.d(t, "n", (function() {
+				return b
+			})), n.d(t, "h", (function() {
+				return f
+			})), n.d(t, "g", (function() {
+				return g
+			})), n.d(t, "d", (function() {
+				return C
+			})), n.d(t, "b", (function() {
+				return x
+			})), n.d(t, "c", (function() {
+				return v
+			})), n.d(t, "e", (function() {
+				return _
 			})), n.d(t, "a", (function() {
+				return E
+			})), n.d(t, "i", (function() {
+				return O
+			})), n.d(t, "j", (function() {
+				return y
+			})), n.d(t, "k", (function() {
+				return k
+			})), n.d(t, "r", (function() {
+				return j
+			})), n.d(t, "w", (function() {
+				return w
+			})), n.d(t, "x", (function() {
+				return T
+			})), n.d(t, "A", (function() {
+				return S
+			})), n.d(t, "y", (function() {
 				return P
 			})), n.d(t, "z", (function() {
 				return I
-			})), n.d(t, "A", (function() {
+			})), n.d(t, "B", (function() {
 				return N
-			})), n.d(t, "C", (function() {
-				return M
 			}));
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
@@ -26552,10 +26550,9 @@
 				w = Object(r.a)(o.od),
 				T = Object(r.a)(o.ud),
 				S = Object(r.a)(o.td),
-				P = Object(r.a)(o.Lf),
-				I = Object(r.a)(o.qd),
-				N = Object(r.a)(o.sd),
-				M = Object(r.a)(o.rd)
+				P = Object(r.a)(o.qd),
+				I = Object(r.a)(o.sd),
+				N = Object(r.a)(o.rd)
 		},
 		"./src/reddit/selectors/experiments/loggedOutOneFeed.ts": function(e, t, n) {
 			"use strict";
@@ -27157,4 +27154,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.bf1ad6bcd34228c1cf7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.b9f223833ff6dca5af15.js.map

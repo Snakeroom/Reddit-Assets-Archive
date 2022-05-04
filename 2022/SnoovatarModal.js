@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.95863adb7555041624cb.js
-// Retrieved at 5/4/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.eec8b17e44fce5b9321a.js
+// Retrieved at 5/4/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -121,7 +121,7 @@
 							expiration: new Date(t.expires).getTime()
 						}), [t]),
 						E = Object(u.a)(),
-						x = Object(o.e)(e => f && Object(v.e)(e));
+						x = Object(o.e)(e => f && Object(v.d)(e));
 					Object(r.useEffect)(() => {
 						(async () => {
 							await a.e(8).then(a.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
@@ -189,4 +189,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.95863adb7555041624cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.eec8b17e44fce5b9321a.js.map

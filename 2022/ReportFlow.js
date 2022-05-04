@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.bc75d8c98388c9673f11.js
-// Retrieved at 5/4/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.9e9af3cd229855f3e999.js
+// Retrieved at 5/4/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -2239,7 +2239,7 @@
 						n.name
 					}),
 					isNightmodeOn: M.eb,
-					isTalkReportingAllowed: L.B,
+					isTalkReportingAllowed: L.A,
 					locale: A.i
 				}),
 				z = Object(d.b)(W, (e, t) => {
@@ -3973,64 +3973,62 @@
 		},
 		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "g", (function() {
+			n.d(t, "f", (function() {
 				return r
-			})), n.d(t, "r", (function() {
-				return a
-			})), n.d(t, "t", (function() {
-				return i
-			})), n.d(t, "n", (function() {
-				return l
-			})), n.d(t, "m", (function() {
-				return d
-			})), n.d(t, "p", (function() {
-				return c
 			})), n.d(t, "q", (function() {
-				return u
-			})), n.d(t, "w", (function() {
-				return p
-			})), n.d(t, "u", (function() {
-				return m
-			})), n.d(t, "v", (function() {
-				return h
-			})), n.d(t, "o", (function() {
-				return b
-			})), n.d(t, "i", (function() {
-				return f
-			})), n.d(t, "h", (function() {
-				return x
-			})), n.d(t, "e", (function() {
-				return _
-			})), n.d(t, "c", (function() {
-				return R
-			})), n.d(t, "d", (function() {
-				return O
-			})), n.d(t, "f", (function() {
-				return g
-			})), n.d(t, "b", (function() {
-				return C
-			})), n.d(t, "j", (function() {
-				return w
-			})), n.d(t, "k", (function() {
-				return v
-			})), n.d(t, "l", (function() {
-				return E
+				return a
 			})), n.d(t, "s", (function() {
-				return S
-			})), n.d(t, "x", (function() {
-				return y
-			})), n.d(t, "y", (function() {
-				return k
-			})), n.d(t, "B", (function() {
-				return I
+				return i
+			})), n.d(t, "m", (function() {
+				return l
+			})), n.d(t, "l", (function() {
+				return d
+			})), n.d(t, "o", (function() {
+				return c
+			})), n.d(t, "p", (function() {
+				return u
+			})), n.d(t, "v", (function() {
+				return p
+			})), n.d(t, "t", (function() {
+				return m
+			})), n.d(t, "u", (function() {
+				return h
+			})), n.d(t, "n", (function() {
+				return b
+			})), n.d(t, "h", (function() {
+				return f
+			})), n.d(t, "g", (function() {
+				return x
+			})), n.d(t, "d", (function() {
+				return _
+			})), n.d(t, "b", (function() {
+				return R
+			})), n.d(t, "c", (function() {
+				return O
+			})), n.d(t, "e", (function() {
+				return g
 			})), n.d(t, "a", (function() {
+				return C
+			})), n.d(t, "i", (function() {
+				return w
+			})), n.d(t, "j", (function() {
+				return v
+			})), n.d(t, "k", (function() {
+				return E
+			})), n.d(t, "r", (function() {
+				return S
+			})), n.d(t, "w", (function() {
+				return y
+			})), n.d(t, "x", (function() {
+				return k
+			})), n.d(t, "A", (function() {
+				return I
+			})), n.d(t, "y", (function() {
 				return j
 			})), n.d(t, "z", (function() {
 				return T
-			})), n.d(t, "A", (function() {
+			})), n.d(t, "B", (function() {
 				return F
-			})), n.d(t, "C", (function() {
-				return N
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
@@ -4059,10 +4057,9 @@
 				y = Object(o.a)(s.od),
 				k = Object(o.a)(s.ud),
 				I = Object(o.a)(s.td),
-				j = Object(o.a)(s.Lf),
-				T = Object(o.a)(s.qd),
-				F = Object(o.a)(s.sd),
-				N = Object(o.a)(s.rd)
+				j = Object(o.a)(s.qd),
+				T = Object(o.a)(s.sd),
+				F = Object(o.a)(s.rd)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOrError.json": function(e) {
 			e.exports = JSON.parse('{"id":"52e4102ca1f1"}')
@@ -4090,4 +4087,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.bc75d8c98388c9673f11.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.9e9af3cd229855f3e999.js.map

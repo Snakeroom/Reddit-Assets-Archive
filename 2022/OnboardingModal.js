@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.8ddb9482a7aaae2fd8f4.js
-// Retrieved at 5/4/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.2cda5533b05ef4577577.js
+// Retrieved at 5/4/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -397,7 +397,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Of)(p),
+						includeInterestTopics: !!p && !Object(b.Mf)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: g && !(null === (r = null === (n = e.user.account) || void 0 === n ? void 0 : n.karma) || void 0 === r ? void 0 : r.total),
@@ -1855,7 +1855,7 @@
 						K(), oe()
 					}, [K, oe]),
 					ie = (() => f === ge.GENDER ? ne : f === ge.INTERESTS ? re : f === ge.COMMUNITIES ? se : ae)(),
-					ce = Object(i.e)(e => f === ge.AVATAR && !p && Object(He.b)(e));
+					ce = Object(i.e)(e => f === ge.AVATAR && !p && Object(He.a)(e));
 				Object(o.useEffect)(() => {
 					f !== ge.AVATAR || ce || oe()
 				}, [ce, f, oe]);
@@ -3984,4 +3984,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.8ddb9482a7aaae2fd8f4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.2cda5533b05ef4577577.js.map

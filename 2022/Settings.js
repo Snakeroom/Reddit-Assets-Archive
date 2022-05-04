@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.1dd48d9c87f1e4bcb51e.js
-// Retrieved at 5/4/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.71d24ad226a4e76e2e31.js
+// Retrieved at 5/4/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -5021,7 +5021,7 @@
 					url: T,
 					isHovercard: B
 				} = e;
-				const L = Object(a.e)(e => !j && !!S && Object(m.f)(e)),
+				const L = Object(a.e)(e => !j && !!S && Object(m.e)(e)),
 					U = Object(a.e)(u.b),
 					F = S && Object(c.e)(S) && U;
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement(h.a, {
@@ -6319,7 +6319,7 @@
 					cancelSubscriptionModalIsOpen: Object(Ce.b)("settings_optout_modal_id"),
 					premiumBenefitsModalIsOpen: Object(Ce.b)("premium_benefits_modal_id"),
 					premiumFeedbackModalIsOpen: Object(Ce.b)("premium_feedback_modal_id"),
-					isPremiumImprovedCancellationEnabled: je.u,
+					isPremiumImprovedCancellationEnabled: je.t,
 					goldExpiration: Ee.s,
 					hasAndroidSubscription: Ee.t,
 					hasIosSubscription: Ee.z,
@@ -14112,4 +14112,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.1dd48d9c87f1e4bcb51e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.71d24ad226a4e76e2e31.js.map

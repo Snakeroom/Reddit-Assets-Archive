@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.503e10005030b3c534d9.js
-// Retrieved at 5/4/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.149f243695fa8ae741aa.js
+// Retrieved at 5/4/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2114,7 +2114,7 @@
 				} = e;
 				const P = Object(f.a)(),
 					x = Object(u.d)(),
-					w = Object(u.e)(m.g),
+					w = Object(u.e)(m.f),
 					E = Object(u.e)(R.a),
 					k = !!n;
 				if (k && !w) {
@@ -4088,4 +4088,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.503e10005030b3c534d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.149f243695fa8ae741aa.js.map

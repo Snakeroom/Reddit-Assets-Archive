@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.0be3a1f588e2c3dc5d44.js
-// Retrieved at 5/4/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.14551bc1f17c0de2370e.js
+// Retrieved at 5/4/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -2808,7 +2808,7 @@
 					let {
 						className: t
 					} = e;
-					return Object(o.e)(a.r) ? r.a.createElement(d, {
+					return Object(o.e)(a.q) ? r.a.createElement(d, {
 						className: t
 					}) : r.a.createElement(i, {
 						className: t
@@ -4256,9 +4256,9 @@
 				let {
 					subredditId: t
 				} = e;
-				const n = Object(o.e)(a.q),
-					s = Object(o.e)(a.p),
-					i = Object(o.e)(a.o);
+				const n = Object(o.e)(a.p),
+					s = Object(o.e)(a.o),
+					i = Object(o.e)(a.n);
 				return r.a.createElement("div", {
 					className: ee.a.container
 				}, n && r.a.createElement(k, {
@@ -13653,7 +13653,7 @@
 				isHotPotatoEmbedEnabled: Pe.c,
 				isBlockingInterstitialEnabled: Ie.b,
 				isBlockingInterstitialV2Enabled: Ie.c,
-				isTalkLiveBarEnabled: ke.A,
+				isTalkLiveBarEnabled: ke.z,
 				interestTopicRecommendations: et.b,
 				reonboardingFlow: Le.b
 			}), kt = () => Object(b.a)(Ke.lb, pt, ht, xt, ft, (e, t) => {
@@ -14802,64 +14802,62 @@
 		},
 		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "g", (function() {
+			n.d(t, "f", (function() {
 				return o
-			})), n.d(t, "r", (function() {
-				return a
-			})), n.d(t, "t", (function() {
-				return i
-			})), n.d(t, "n", (function() {
-				return c
-			})), n.d(t, "m", (function() {
-				return d
-			})), n.d(t, "p", (function() {
-				return l
 			})), n.d(t, "q", (function() {
-				return u
-			})), n.d(t, "w", (function() {
-				return m
-			})), n.d(t, "u", (function() {
-				return p
-			})), n.d(t, "v", (function() {
-				return b
-			})), n.d(t, "o", (function() {
-				return h
-			})), n.d(t, "i", (function() {
-				return f
-			})), n.d(t, "h", (function() {
-				return x
-			})), n.d(t, "e", (function() {
-				return g
-			})), n.d(t, "c", (function() {
-				return v
-			})), n.d(t, "d", (function() {
-				return E
-			})), n.d(t, "f", (function() {
-				return y
-			})), n.d(t, "b", (function() {
-				return O
-			})), n.d(t, "j", (function() {
-				return _
-			})), n.d(t, "k", (function() {
-				return j
-			})), n.d(t, "l", (function() {
-				return C
+				return a
 			})), n.d(t, "s", (function() {
-				return N
-			})), n.d(t, "x", (function() {
-				return k
-			})), n.d(t, "y", (function() {
-				return S
-			})), n.d(t, "B", (function() {
-				return P
+				return i
+			})), n.d(t, "m", (function() {
+				return c
+			})), n.d(t, "l", (function() {
+				return d
+			})), n.d(t, "o", (function() {
+				return l
+			})), n.d(t, "p", (function() {
+				return u
+			})), n.d(t, "v", (function() {
+				return m
+			})), n.d(t, "t", (function() {
+				return p
+			})), n.d(t, "u", (function() {
+				return b
+			})), n.d(t, "n", (function() {
+				return h
+			})), n.d(t, "h", (function() {
+				return f
+			})), n.d(t, "g", (function() {
+				return x
+			})), n.d(t, "d", (function() {
+				return g
+			})), n.d(t, "b", (function() {
+				return v
+			})), n.d(t, "c", (function() {
+				return E
+			})), n.d(t, "e", (function() {
+				return y
 			})), n.d(t, "a", (function() {
+				return O
+			})), n.d(t, "i", (function() {
+				return _
+			})), n.d(t, "j", (function() {
+				return j
+			})), n.d(t, "k", (function() {
+				return C
+			})), n.d(t, "r", (function() {
+				return N
+			})), n.d(t, "w", (function() {
+				return k
+			})), n.d(t, "x", (function() {
+				return S
+			})), n.d(t, "A", (function() {
+				return P
+			})), n.d(t, "y", (function() {
 				return I
 			})), n.d(t, "z", (function() {
 				return w
-			})), n.d(t, "A", (function() {
+			})), n.d(t, "B", (function() {
 				return T
-			})), n.d(t, "C", (function() {
-				return L
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
@@ -14888,10 +14886,9 @@
 				k = Object(r.a)(s.od),
 				S = Object(r.a)(s.ud),
 				P = Object(r.a)(s.td),
-				I = Object(r.a)(s.Lf),
-				w = Object(r.a)(s.qd),
-				T = Object(r.a)(s.sd),
-				L = Object(r.a)(s.rd)
+				I = Object(r.a)(s.qd),
+				w = Object(r.a)(s.sd),
+				T = Object(r.a)(s.rd)
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
 			"use strict";
@@ -15439,4 +15436,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.0be3a1f588e2c3dc5d44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.14551bc1f17c0de2370e.js.map
