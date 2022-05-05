@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.9435ddfefe31bfecf4e2.js
-// Retrieved at 5/5/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.b36d32ded278487a6ca4.js
+// Retrieved at 5/5/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -708,19 +708,19 @@
 				top: "bottom"
 			};
 
-			function Z(e) {
+			function Q(e) {
 				return e.replace(/left|right|bottom|top/g, (function(e) {
 					return J[e]
 				}))
 			}
-			var Q = {
+			var Z = {
 				start: "end",
 				end: "start"
 			};
 
 			function X(e) {
 				return e.replace(/start|end/g, (function(e) {
-					return Q[e]
+					return Z[e]
 				}))
 			}
 
@@ -1041,9 +1041,9 @@
 								n = e.options,
 								s = e.name;
 							if (!t.modifiersData[s]._skip) {
-								for (var o = n.mainAxis, r = void 0 === o || o, a = n.altAxis, i = void 0 === a || a, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, x = V(h), v = c || (x === h || !f ? [Z(h)] : function(e) {
+								for (var o = n.mainAxis, r = void 0 === o || o, a = n.altAxis, i = void 0 === a || a, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, x = V(h), v = c || (x === h || !f ? [Q(h)] : function(e) {
 										if (V(e) === k) return [];
-										var t = Z(e);
+										var t = Q(e);
 										return [X(e), t, X(t)]
 									}(h)), g = [h].concat(v).reduce((function(e, n) {
 										return e.concat(V(n) === k ? function(e, t) {
@@ -1094,8 +1094,8 @@
 											padding: d
 										}),
 										U = R ? B ? j : E : B ? w : y;
-									O[W] > S[W] && (U = Z(U));
-									var z = Z(U),
+									O[W] > S[W] && (U = Q(U));
+									var z = Q(U),
 										q = [];
 									if (r && q.push(D[L] <= 0), i && q.push(D[U] <= 0, D[z] <= 0), q.every((function(e) {
 											return e
@@ -1181,16 +1181,16 @@
 											width: 0,
 											height: 0
 										},
-										Z = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
+										Q = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
 											top: 0,
 											right: 0,
 											bottom: 0,
 											left: 0
 										},
-										Q = Z[T],
-										X = Z[F],
+										Z = Q[T],
+										X = Q[F],
 										Y = oe(0, M[L], J[L]),
-										K = k ? M[L] / 2 - D - Y - Q - A : z - Y - Q - A,
+										K = k ? M[L] / 2 - D - Y - Z - A : z - Y - Z - A,
 										$ = k ? -M[L] / 2 + D + Y + X + A : q + Y + X + A,
 										ee = t.elements.arrow && O(t.elements.arrow),
 										te = ee ? "y" === C ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
@@ -1732,8 +1732,8 @@
 				q = n("./src/reddit/connectors/ClassicPost/index.tsx"),
 				G = n("./src/reddit/constants/postLayout.ts"),
 				J = n("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
-				Z = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
-				Q = n("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				Q = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
+				Z = n("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				X = n("./src/reddit/helpers/localStorage/index.ts"),
 				Y = n("./src/reddit/helpers/search/renderMedia.tsx"),
 				K = n("./src/reddit/helpers/styles/mixins/index.tsx"),
@@ -1798,10 +1798,10 @@
 				}, [h, be, xe.id, Ne]);
 				const Ae = ge ? void 0 : O,
 					Ie = n || void 0,
-					Te = Object(Q.a)(le),
+					Te = Object(Z.a)(le),
 					Fe = Object(J.a)(le),
-					Le = Object(Z.a)(le),
-					Be = ue && Q.a,
+					Le = Object(Q.a)(le),
+					Be = ue && Z.a,
 					Re = Object(P.d)(xe),
 					We = Object(N.c)(xe),
 					De = !!xe.media && xe.media.type === U.o.RTJSON,
@@ -1822,10 +1822,10 @@
 					{
 						source: Je
 					} = Ge,
-					[Ze, Qe] = Object(s.useState)(!1),
+					[Qe, Ze] = Object(s.useState)(!1),
 					Xe = Object(s.useCallback)(() => {
-						Qe(!Ze), Object(X.Mb)(), Pe(Object($.d)(ve))
-					}, [Ze, ve, Pe]);
+						Ze(!Qe), Object(X.Mb)(), Pe(Object($.d)(ve))
+					}, [Qe, ve, Pe]);
 				let Ye = o.a.createElement(z.a, {
 					className: se.a.classicThumbnail,
 					crosspost: Ie && xe,
@@ -1950,7 +1950,7 @@
 						hide: !Be,
 						report: !Be
 					})
-				})), o.a.createElement(_.d, null))), Object(Y.a)(xe, se.a, Oe, h, _e, re), Ee && Ze && o.a.createElement(f.a, {
+				})), o.a.createElement(_.d, null))), Object(Y.a)(xe, se.a, Oe, h, _e, re), Ee && Qe && o.a.createElement(f.a, {
 					className: se.a.creatorStatsContainer,
 					post: xe,
 					subreddit: Ee,
@@ -3267,13 +3267,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.Fe,
+					experimentName: o.Ie,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Ne.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Qe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(a.G, i, (e, t) => c(e, t));
 			Object(s.a)((e, t) => t, i, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.9435ddfefe31bfecf4e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.b36d32ded278487a6ca4.js.map
