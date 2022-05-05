@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.666e4e8894c7bfc0cd47.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.3c22e0a30b4f312ff484.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/reddit/components/AdLinkWrapper/index.m.less": function(e, t, s) {
@@ -137,7 +137,7 @@
 					} = e;
 					const {
 						audioRoom: s
-					} = t, r = () => Math.floor(10 * Math.random() + 1), a = Object(b.e)(C.eb), [d, c] = Object(o.useState)(!1), [l, m] = Object(o.useState)(r());
+					} = t, r = () => Math.floor(10 * Math.random() + 1), a = Object(b.e)(C.db), [d, c] = Object(o.useState)(!1), [l, m] = Object(o.useState)(r());
 					return Object(o.useEffect)(() => {
 						const e = setInterval(() => {
 							c(!0), setTimeout(() => c(!1), 3500), m(r())
@@ -789,7 +789,7 @@
 							commentId: s.postId
 						})
 					},
-					isLoggedIn: te.R,
+					isLoggedIn: te.Q,
 					moderatorPermissions: (e, t) => {
 						let {
 							comment: s
@@ -798,7 +798,7 @@
 							subredditId: s.subredditId
 						})
 					},
-					currentUser: te.l,
+					currentUser: te.k,
 					modModeEnabled: H.U,
 					postIsLocked: (e, t) => {
 						let {
@@ -2253,7 +2253,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: h.l,
 					isExpanded: h.m,
-					isLoggedIn: C.R,
+					isLoggedIn: C.Q,
 					showPromotedCTA: b.a,
 					moderatorPermissions: u.m,
 					modModeEnabled: c.U,
@@ -2635,4 +2635,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.666e4e8894c7bfc0cd47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.3c22e0a30b4f312ff484.js.map

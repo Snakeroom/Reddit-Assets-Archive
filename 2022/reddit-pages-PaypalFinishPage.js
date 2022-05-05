@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.604a6d2f1275f362fcbf.js
-// Retrieved at 5/5/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.822958c3cf8b718dad83.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-PaypalFinishPage"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -525,7 +525,7 @@
 							if (o && o.ok) {
 								const t = o.body.data.createEconPayment;
 								if (null === (p = null == t ? void 0 : t.errors) || void 0 === p ? void 0 : p.length) return e(Object(b.paypalApiError)(P(t.errors))), null;
-								const r = Object(j.l)(s());
+								const r = Object(j.k)(s());
 								if (t.ok) {
 									const {
 										status: e
@@ -1058,4 +1058,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.604a6d2f1275f362fcbf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.822958c3cf8b718dad83.js.map

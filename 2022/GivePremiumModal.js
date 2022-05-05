@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.feb7dfb61cb2f9393d57.js
-// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.15fa3c8bff765b33a20d.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -66,8 +66,8 @@
 				b = n("./src/lib/constants/index.ts"),
 				x = n("./src/lib/makeActionCreator/index.ts"),
 				f = n("./src/reddit/actions/toaster.ts"),
-				O = n("./src/lib/makeApiRequest/index.ts"),
-				g = n("./src/lib/omitHeaders/index.ts"),
+				g = n("./src/lib/makeApiRequest/index.ts"),
+				O = n("./src/lib/omitHeaders/index.ts"),
 				E = n("./src/reddit/constants/headers.ts"),
 				C = n("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			var k = async (e, t, n, s, o, i) => {
@@ -78,7 +78,7 @@
 					message: o,
 					correlation_id: i
 				};
-				return Object(O.a)(Object(g.a)(e, [E.a]), {
+				return Object(g.a)(Object(O.a)(e, [E.a]), {
 					method: b.kb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: c
@@ -151,7 +151,7 @@
 			const K = 10,
 				W = Object(a.c)({
 					coinBalance: F.e,
-					isEmployee: F.O,
+					isEmployee: F.N,
 					isPending: y.b,
 					recipientName: y.d
 				}),
@@ -721,4 +721,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.feb7dfb61cb2f9393d57.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.15fa3c8bff765b33a20d.js.map

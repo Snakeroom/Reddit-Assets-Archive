@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.6bb4215b980ae5e15d5d.js
-// Retrieved at 5/3/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.a748a7662db241c1b02f.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -86,14 +86,14 @@
 						}
 					}, e.children)
 				}, "EmbedPortalContainer", N.a),
-				R = C.a.wrapped(e => a.a.createElement("div", {
+				k = C.a.wrapped(e => a.a.createElement("div", {
 					className: e.className,
 					style: {
 						width: `${S(T.width)}px`,
 						height: `${S(T.height)}px`
 					}
 				}, e.children), "HiddenPortalContainer", N.a),
-				k = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
+				R = C.a.wrapped(w.a, "MinimizedRedesignPortalContainer", N.a),
 				I = A,
 				L = Object(E.a)({
 					container: e => e && e.container && e.container.size
@@ -104,11 +104,11 @@
 					case M.a.EMBED:
 						return a.a.createElement(D, null, e.children);
 					case M.a.HIDDEN:
-						return a.a.createElement(R, null, e.children);
+						return a.a.createElement(k, null, e.children);
 					case M.a.FULL:
 						return a.a.createElement(I, null, e.children);
 					case M.a.MINIMIZED:
-						return a.a.createElement(k, null);
+						return a.a.createElement(R, null);
 					default:
 						return a.a.createElement(D, null, e.children)
 				}
@@ -459,7 +459,7 @@
 				f = () => async (e, t) => {
 					const n = t(),
 						s = Object(c.g)(n, {});
-					if (!(Object(u.Q)(n) || Object(u.R)(n)) || !s) return;
+					if (!(Object(u.P)(n) || Object(u.Q)(n)) || !s) return;
 					const a = Object(d.i)(n);
 					b(a, s), e(m({
 						hasUnreadMessages: !!a
@@ -646,4 +646,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.6bb4215b980ae5e15d5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.a748a7662db241c1b02f.js.map

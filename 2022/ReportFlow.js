@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.80b4ea8ca2515c050c40.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.b885cbc454f56229bfda.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -975,7 +975,7 @@
 					if (!R && !f) return;
 					const g = f ? p.features.comments.models[e] : p.posts.models[e];
 					if (!g) return;
-					if (!Object(_.R)(o())) return s(Object(r.j)()), void s(Object(a.k)({
+					if (!Object(_.Q)(o())) return s(Object(r.j)()), void s(Object(a.k)({
 						actionSource: a.a.Report,
 						redirectUrl: g.permalink,
 						thingId: e
@@ -1146,7 +1146,7 @@
 						apiContext: d
 					} = o;
 					const u = n(),
-						p = Object(c.l)(u),
+						p = Object(c.k)(u),
 						m = p ? p.id : void 0,
 						h = u.user.blocked.data.filter(t => t.name === e)[0];
 					m && (t(C({
@@ -2238,7 +2238,7 @@
 						(r ? r.author : a ? a.author : null) || t.author;
 						n.name
 					}),
-					isNightmodeOn: M.eb,
+					isNightmodeOn: M.db,
 					isTalkReportingAllowed: L.w,
 					locale: A.i
 				}),
@@ -3963,11 +3963,11 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
 			const a = e => s.c.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: r.R,
+					experimentEligibilitySelector: r.Q,
 					experimentName: s.i
 				}),
 				i = e => s.e.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: r.R,
+					experimentEligibilitySelector: r.Q,
 					experimentName: s.n
 				})
 		},
@@ -4075,4 +4075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.80b4ea8ca2515c050c40.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.b885cbc454f56229bfda.js.map

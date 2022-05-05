@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.359b9963456117f8ebe7.js
-// Retrieved at 4/21/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.98e153e7b967be18c728.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, s) {
@@ -28,9 +28,9 @@
 				r = s("./src/reddit/selectors/user.ts"),
 				c = s("./src/reddit/components/Settings/Notifications/NotificationToggles.tsx");
 			const d = Object(i.c)({
-					hasError: r.u,
-					rows: r.gb,
-					sections: r.hb
+					hasError: r.t,
+					rows: r.fb,
+					sections: r.gb
 				}),
 				l = Object(n.b)(d, e => ({
 					fetchNotificationSettings: () => e(Object(a.a)(o.a.Email)),
@@ -164,4 +164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.359b9963456117f8ebe7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.98e153e7b967be18c728.js.map

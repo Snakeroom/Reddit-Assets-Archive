@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.f359d2157aaa02e4089d.js
-// Retrieved at 5/5/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.dc32e6e2a419f9ae6e1e.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal", "GoldPurchasePaymentActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -671,7 +671,7 @@
 							if (o && o.ok) {
 								const t = o.body.data.createEconPayment;
 								if (null === (p = null == t ? void 0 : t.errors) || void 0 === p ? void 0 : p.length) return e(Object(y.paypalApiError)(E(t.errors))), null;
-								const r = Object(h.l)(a());
+								const r = Object(h.k)(a());
 								if (t.ok) {
 									const {
 										status: e
@@ -1604,7 +1604,7 @@
 				let {
 					space: t
 				} = e;
-				const r = Object(i.e)(d.eb),
+				const r = Object(i.e)(d.db),
 					a = t === n.MODAL,
 					u = t === n.INFEED_UNIT;
 				return c.a.createElement("div", {
@@ -2663,4 +2663,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.f359d2157aaa02e4089d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.dc32e6e2a419f9ae6e1e.js.map

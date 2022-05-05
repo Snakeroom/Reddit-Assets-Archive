@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.87264d11754bb045d906.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.76072c06b2132db81bae.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -553,7 +553,7 @@
 					currentSubredditId: t,
 					powerups: r,
 					subreddit: c
-				} = e, i = Object(s.d)(), l = Object(j.a)(), v = Object(s.e)(e => !Object(k.w)(e)), {
+				} = e, i = Object(s.d)(), l = Object(j.a)(), v = Object(s.e)(e => !Object(k.v)(e)), {
 					container: O,
 					isScrollGradientVisible: N,
 					calculateGradientVisibility: P
@@ -740,7 +740,7 @@
 				let {
 					space: t
 				} = e;
-				const r = Object(i.e)(l.eb),
+				const r = Object(i.e)(l.db),
 					a = t === n.MODAL,
 					d = t === n.INFEED_UNIT;
 				return c.a.createElement("div", {
@@ -1067,4 +1067,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.87264d11754bb045d906.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.76072c06b2132db81bae.js.map

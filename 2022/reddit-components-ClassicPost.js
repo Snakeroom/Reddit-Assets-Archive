@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.253568060c1c1f3b004b.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.614f753a67d81018ae2d.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1673,7 +1673,7 @@
 					} = e;
 					const {
 						audioRoom: n
-					} = t, r = () => Math.floor(10 * Math.random() + 1), i = Object(h.e)(x.eb), [c, d] = Object(s.useState)(!1), [l, u] = Object(s.useState)(r());
+					} = t, r = () => Math.floor(10 * Math.random() + 1), i = Object(h.e)(x.db), [c, d] = Object(s.useState)(!1), [l, u] = Object(s.useState)(r());
 					return Object(s.useEffect)(() => {
 						const e = setInterval(() => {
 							d(!0), setTimeout(() => d(!1), 3500), u(r())
@@ -2890,7 +2890,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: b.l,
 					isExpanded: b.m,
-					isLoggedIn: x.R,
+					isLoggedIn: x.Q,
 					showPromotedCTA: h.a,
 					moderatorPermissions: m.m,
 					modModeEnabled: d.U,
@@ -3276,4 +3276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.253568060c1c1f3b004b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.614f753a67d81018ae2d.js.map

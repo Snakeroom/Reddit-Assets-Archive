@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.3db034442174489ab235.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f75d7d389210d0f3c91e.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1032,7 +1032,7 @@
 						postId: r
 					}) : Object(y.b)(e, {
 						commentId: r
-					}), s = Object(S.l)(e), a = e.gild, {
+					}), s = Object(S.k)(e), a = e.gild, {
 						isAnonymous: o
 					} = a, i = !o && s && (s.username || s.displayText) ? s.username || s.displayText : void 0, c = n ? n.author : void 0, d = Object(N.K)(e, {
 						thingId: r
@@ -1051,7 +1051,7 @@
 						} = e,
 						b = Object(E.a)(s, u),
 						h = e.awardKarmaReceived,
-						f = Object(S.l)(s),
+						f = Object(S.k)(s),
 						y = Object(I.b)(s) || Object(F.e)(F.a.GildingFlow, !1);
 					if (Object(I.g)(s)) {
 						const e = "success.gild",
@@ -2795,12 +2795,12 @@
 						})
 					},
 					correlationId: e => Object(S.b)(e) || Object(m.e)(m.a.GildingFlow, !1),
-					currentUser: F.l,
+					currentUser: F.k,
 					errorMessage: S.a,
 					isAnonymous: S.f,
 					iFramed: S.g,
 					isGildPending: S.e,
-					isEmployee: F.O,
+					isEmployee: F.N,
 					isRecommendedCoinPackagePending: M.q,
 					message: S.c,
 					postOrComment: (e, t) => {
@@ -3221,7 +3221,7 @@
 				b = r.n(p);
 			const h = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(a.b)(() => Object(o.c)({
-					isNightmodeOn: m.eb
+					isNightmodeOn: m.db
 				}));
 			t.a = f(e => {
 				const t = {
@@ -3318,7 +3318,7 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(o.b)(() => Object(c.a)(v.F, w.kb, (e, t) => {
+				N = Object(o.b)(() => Object(c.a)(v.F, w.jb, (e, t) => {
 					let {
 						isSponsored: r,
 						postId: n
@@ -5943,4 +5943,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.3db034442174489ab235.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.f75d7d389210d0f3c91e.js.map

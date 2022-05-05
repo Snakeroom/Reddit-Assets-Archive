@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.a04f9f4796e9f4cd80e6.js
-// Retrieved at 4/14/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.9fb063fa0cc68bd1dcaa.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1, "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, n) {
@@ -3786,7 +3786,7 @@
 				createstorefrontorder: "aa5a82dc84bb",
 				getclaimednftdetails: "549dc0fe0c26",
 				generatewalletverificationmessage: "cd3aac87446c",
-				getnftdetails: "2e1c9830ba4c",
+				getnftdetails: "b79525bb760f",
 				getnftsbywalletaddress: "7e0bba436a39",
 				subredditcategoriesquery: "3f71115a1d95",
 				updateprofileimagefromnft: "97097eb25784"
@@ -5450,4 +5450,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.a04f9f4796e9f4cd80e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.9fb063fa0cc68bd1dcaa.js.map

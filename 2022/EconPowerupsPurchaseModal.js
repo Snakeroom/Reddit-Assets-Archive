@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.124ab35ca8adf60f9a9f.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ac7a2cd489c5b8b89cb9.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -679,7 +679,7 @@
 							if (a && a.ok) {
 								const t = a.body.data.createEconPayment;
 								if (null === (m = null == t ? void 0 : t.errors) || void 0 === m ? void 0 : m.length) return e(Object(h.paypalApiError)(C(t.errors))), null;
-								const r = Object(y.l)(s());
+								const r = Object(y.k)(s());
 								if (t.ok) {
 									const {
 										status: e
@@ -1067,7 +1067,7 @@
 			const {
 				fbt: D
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), B = Object(i.c)({
-				currentUser: k.l,
+				currentUser: k.k,
 				isAnonymous: j.d,
 				powerupsCount: j.e,
 				productOffer: x.d,
@@ -1284,7 +1284,7 @@
 						subredditId: r
 					})), m = Object(o.e)(e => Object(x.b)(e, {
 						subredditId: r
-					})), p = Object(o.e)(_.w), f = Object(o.e)(_.m), b = Object(o.e)(k.l), [g, y] = Object(n.useState)(!1), v = f || p;
+					})), p = Object(o.e)(_.w), f = Object(o.e)(_.m), b = Object(o.e)(k.k), [g, y] = Object(n.useState)(!1), v = f || p;
 					return a.a.createElement(R.l, {
 						onClick: async () => {
 							if (!(s && c && u && m)) return;
@@ -1324,7 +1324,7 @@
 				fbt: se
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), ce = 100, ie = Object(i.c)({
 				isAnonymous: j.d,
-				isNightMode: k.eb,
+				isNightMode: k.db,
 				paypalErrorMessage: _.d,
 				powerups: j.k,
 				powerupsCount: j.e,
@@ -1652,7 +1652,7 @@
 				let {
 					space: t
 				} = e;
-				const r = Object(i.e)(d.eb),
+				const r = Object(i.e)(d.db),
 					s = t === n.MODAL,
 					l = t === n.INFEED_UNIT;
 				return c.a.createElement("div", {
@@ -3492,4 +3492,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.124ab35ca8adf60f9a9f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ac7a2cd489c5b8b89cb9.js.map

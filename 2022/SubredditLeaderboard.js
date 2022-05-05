@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.85d01f43f33ff25506f8.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.0770193fbac522c42ef8.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -133,7 +133,7 @@
 				}, f = e => async (t, r) => {
 					await t(Object(s.a)());
 					const n = r(),
-						a = Object(g.S)(n);
+						a = Object(g.R)(n);
 					if (Object(b.a)(n, e)) return;
 					const i = e && Object(p.e)(n, {
 							categoryName: e
@@ -1526,10 +1526,10 @@
 						n = t.redditStyle || Object(h.l)(e, {
 							subredditId: r
 						}),
-						s = Object(y.eb)(e);
+						s = Object(y.db)(e);
 					return n || s
 				},
-				nigtmode: y.eb,
+				nigtmode: y.db,
 				subredditId: u.n,
 				topPostVariant: g.d
 			}));
@@ -2327,8 +2327,8 @@
 				I = r("./src/reddit/components/TopSubredditsWidget/SubredditRankItem.tsx"),
 				F = r("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
 				B = r("./src/reddit/models/GoodContent/index.ts"),
-				D = r("./src/reddit/selectors/platform.ts"),
-				R = r("./src/reddit/selectors/subreddit.ts"),
+				R = r("./src/reddit/selectors/platform.ts"),
+				D = r("./src/reddit/selectors/subreddit.ts"),
 				M = r("./src/reddit/selectors/subredditLeaderboard.ts"),
 				W = r("./src/reddit/selectors/user.ts");
 			const A = 25,
@@ -2346,16 +2346,16 @@
 						} = t;
 						return Object(M.b)(e, r)
 					},
-					isMod: W.S,
+					isMod: W.R,
 					rankings: (e, t) => {
 						let {
 							categoryId: r
 						} = t;
-						return Object(R.P)(e, r)
+						return Object(D.P)(e, r)
 					},
-					subreddits: R.bb,
-					isOnLeaderboardPage: e => !!Object(D.h)(e),
-					isOnFrontpage: e => !!Object(D.g)(e)
+					subreddits: D.bb,
+					isOnLeaderboardPage: e => !!Object(R.h)(e),
+					isOnFrontpage: e => !!Object(R.g)(e)
 				}),
 				z = Object(o.b)(H, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(P.b)(t, r))
@@ -2775,4 +2775,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.85d01f43f33ff25506f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.0770193fbac522c42ef8.js.map

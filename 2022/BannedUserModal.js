@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.3fedaa34d01af1562d33.js
-// Retrieved at 4/26/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.4ebb55fd0b8888196939.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, n) {
@@ -405,7 +405,7 @@
 							await n(Object(l.o)(t.name))
 						}
 					})(), (async () => {
-						const s = Object(k.Bb)(r, {
+						const s = Object(k.Ab)(r, {
 							userName: t
 						});
 						if (!s) return;
@@ -1043,4 +1043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.3fedaa34d01af1562d33.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.4ebb55fd0b8888196939.js.map

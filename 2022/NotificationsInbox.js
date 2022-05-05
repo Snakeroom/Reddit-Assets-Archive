@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.982947454aa200198e29.js
-// Retrieved at 5/3/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.6746bf2516706cb56b98.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -18,7 +18,7 @@
 				u = n("./src/reddit/selectors/user.ts");
 			const m = () => async (e, t) => {
 				const n = t();
-				if (!(Object(u.R)(n) || Object(u.Q)(n))) return Object(c.a)(e, n);
+				if (!(Object(u.Q)(n) || Object(u.P)(n))) return Object(c.a)(e, n);
 				e(b()), e(f()), await e(p())
 			}, b = () => Object(s.k)({
 				actionSource: s.a.NotificationsInbox,
@@ -29,7 +29,7 @@
 				const n = t(),
 					i = Object(l.g)(t()),
 					s = !(!i || !i.length),
-					r = Object(u.R)(n) || Object(u.Q)(n);
+					r = Object(u.Q)(n) || Object(u.P)(n);
 				if (s || !r) return;
 				const c = {
 					first: 10
@@ -617,10 +617,10 @@
 			var A = Object(r.c)(F),
 				M = n("./src/reddit/selectors/appBadges.ts"),
 				U = n("./src/reddit/selectors/notificationsInbox.tsx"),
-				R = n("./src/reddit/selectors/tooltip.ts"),
-				B = n("./src/reddit/selectors/user.ts");
+				B = n("./src/reddit/selectors/tooltip.ts"),
+				R = n("./src/reddit/selectors/user.ts");
 			const W = Object(l.c)({
-				activeOverflowMenuId: R.a,
+				activeOverflowMenuId: B.a,
 				cursor: U.c,
 				earlierNotifications: U.b,
 				hasNextPage: U.d,
@@ -628,7 +628,7 @@
 				isInboxPostEmbedEnabled: y.a,
 				isPending: U.e,
 				todayNotifications: U.i,
-				userId: B.Db
+				userId: R.Cb
 			});
 			var H = Object(d.b)(W, e => ({
 					clearMessageTabBadgeCount: () => e(Object(u.b)()),
@@ -741,4 +741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.982947454aa200198e29.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.6746bf2516706cb56b98.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.05f8f6305fcc5e8f7e69.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.667f687d6f1200a4ef58.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -476,7 +476,7 @@
 						sort: d,
 						t: u,
 						correlationId: m
-					} = t, p = Object(I.b)(e), f = Object(F.ab)(e) || Object(F.R)(e), _ = Object(P.a)(e), y = Object(B.q)(e), v = Object(T.a)(e), E = {
+					} = t, p = Object(I.b)(e), f = Object(F.Z)(e) || Object(F.Q)(e), _ = Object(P.a)(e), y = Object(B.q)(e), v = Object(T.a)(e), E = {
 						adContext: {
 							layout: i ? i.toUpperCase() : h.a.Card,
 							reddaid: e.user.reddaid,
@@ -721,8 +721,8 @@
 					const b = xe()();
 					t.correlationId = b;
 					const h = null === (o = null === (i = Object(B.b)(u)) || void 0 === i ? void 0 : i.routeMatch) || void 0 === o ? void 0 : o.route.chunk,
-						g = Object(F.R)(u),
-						f = await Object(m.i)(() => V(r.gqlContext(), W(u, t), Object(F.ab)(u), t.statsdPathsForExperiments), {
+						g = Object(F.Q)(u),
+						f = await Object(m.i)(() => V(r.gqlContext(), W(u, t), Object(F.Z)(u), t.statsdPathsForExperiments), {
 							name: "fetchFrontpageData",
 							isLoggedIn: g,
 							page: h
@@ -803,7 +803,7 @@
 					const n = t();
 					if (Object(ge.a)(n)) return;
 					const r = null === (a = null === (s = Object(B.b)(t())) || void 0 === s ? void 0 : s.routeMatch) || void 0 === a ? void 0 : a.route.chunk,
-						c = Object(F.R)(n);
+						c = Object(F.Q)(n);
 					return Object(m.i)(() => e(Object(he.d)()), {
 						name: "frontpageLinksRequested",
 						page: r,
@@ -858,7 +858,7 @@
 								t && (b.clickUrl = t)
 							}
 							b.correlationId = i.listings.postOrder.correlationIds[m];
-							const g = () => V(n(), W(i, b), Object(F.ab)(i), l),
+							const g = () => V(n(), W(i, b), Object(F.Z)(i), l),
 								f = await g(),
 								_ = {
 									...f.body,
@@ -2647,13 +2647,13 @@
 			const Ye = "c1020",
 				$e = "videos",
 				et = Object(u.c)({
-					isMod: He.S,
-					isLoggedIn: He.Q,
+					isMod: He.R,
+					isLoggedIn: He.P,
 					isLoggedOutOneFeed: Ve.a,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
-					currentUser: He.l,
+					currentUser: He.k,
 					frontpageLinks: ze.b,
-					isOver18: He.lb,
+					isOver18: He.kb,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return Ze(e) === Re.B.RotateEven
 					},
@@ -2665,7 +2665,7 @@
 							s = !!Object(Ke.P)(e, Ye);
 						return (!t || !s) && function(e) {
 							return Object(De.c)(e, {
-								experimentEligibilitySelector: He.R,
+								experimentEligibilitySelector: He.Q,
 								experimentName: Re.qc
 							}) === Re.sd
 						}(e)
@@ -3993,7 +3993,7 @@
 						listingName: s,
 						pageLayer: a
 					}),
-					r = Object(l.F)(e) || Object(o.a)(e),
+					r = Object(l.E)(e) || Object(o.a)(e),
 					c = Object(i.e)(e);
 				return {
 					canShowAd: n && !r,
@@ -5220,10 +5220,10 @@
 						a = t.redditStyle || Object(g.l)(e, {
 							subredditId: s
 						}),
-						n = Object(f.eb)(e);
+						n = Object(f.db)(e);
 					return a || n
 				},
-				nigtmode: f.eb,
+				nigtmode: f.db,
 				subredditId: u.n,
 				topPostVariant: h.d
 			}));
@@ -6739,7 +6739,7 @@
 				isCommentCountAnimationEnabled: ee.d,
 				isVoteCountAnimationEnabled: ee.h,
 				isCountAnimShadowTestEnabled: ee.e,
-				isLoggedIn: oe.R,
+				isLoggedIn: oe.Q,
 				isLoggedOutOneFeed: Y.a,
 				isPopular: q.F,
 				isRpanDuVisible: e => Object(ie.a)(e, {
@@ -7082,7 +7082,7 @@
 				l = s("./src/reddit/selectors/user.ts"),
 				d = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				u = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const m = Object(a.a)(l.l, l.Ib, (e, t) => {
+			const m = Object(a.a)(l.k, l.Hb, (e, t) => {
 					let {
 						listingName: s
 					} = t;
@@ -7446,7 +7446,7 @@
 
 			function c(e) {
 				return Object(n.c)(e, {
-					experimentEligibilitySelector: r.R,
+					experimentEligibilitySelector: r.Q,
 					experimentName: a.Lc
 				})
 			}
@@ -7454,7 +7454,7 @@
 
 			function o(e) {
 				if (c(e)) return !1;
-				const t = Object(r.l)(e);
+				const t = Object(r.k)(e);
 				if (!t) return !1;
 				const s = (new Date).getTime() / 1e3 - t.created;
 				return s >= i && s <= 1.25 * i
@@ -7663,4 +7663,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.05f8f6305fcc5e8f7e69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.667f687d6f1200a4ef58.js.map

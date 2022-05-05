@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.cdda0d3554a11c68c1e4.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.64daae36ea797091f634.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -46,7 +46,7 @@
 			! function(e) {
 				e.Media = "post-composer-du-media", e.Link = "post-composer-du-link"
 			}(P || (P = {}));
-			const h = e => {
+			const k = e => {
 					switch (e) {
 						case d.Xb.MEDIA:
 							return "?media=true";
@@ -56,7 +56,7 @@
 							return ""
 					}
 				},
-				k = e => {
+				h = e => {
 					switch (e) {
 						case d.Xb.MEDIA:
 							return "media_post";
@@ -67,9 +67,9 @@
 					}
 				},
 				M = Object(a.c)({
-					currentUser: U.l,
+					currentUser: U.k,
 					isPresenceConsumptionExpEnabled: E.c,
-					isPresenceTogglePref: U.W,
+					isPresenceTogglePref: U.V,
 					subreddit: O.z,
 					subredditAboutInfo: O.w
 				}),
@@ -122,7 +122,7 @@
 						i(Object(_.x)({
 							actionInfoType: "du",
 							subredditId: null == a ? void 0 : a.id,
-							noun: k(e)
+							noun: h(e)
 						}))
 					},
 					U = () => {
@@ -158,7 +158,7 @@
 					onClick: () => O(d.Xb.MEDIA),
 					onMouseEnter: () => m(P.Media),
 					onMouseLeave: () => m(P.Media),
-					to: b + h(d.Xb.MEDIA),
+					to: b + k(d.Xb.MEDIA),
 					Icon: Object(f.b)("image_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
@@ -175,7 +175,7 @@
 					onClick: () => O(d.Xb.LINK_ONLY),
 					onMouseEnter: () => m(P.Link),
 					onMouseLeave: () => m(P.Link),
-					to: b + h(d.Xb.LINK_ONLY),
+					to: b + k(d.Xb.LINK_ONLY),
 					Icon: Object(f.b)("link_post"),
 					isSquare: !0
 				}, o.a.createElement(p.c, {
@@ -210,10 +210,10 @@
 				}).apply(this, arguments)
 			}
 			const x = Object(i.c)({
-					currentUser: d.l,
-					isNightMode: d.eb,
-					isPresenceUserPrefEnabled: d.W,
-					shouldHideNSFW: d.G
+					currentUser: d.k,
+					isNightMode: d.db,
+					isPresenceUserPrefEnabled: d.V,
+					shouldHideNSFW: d.F
 				}),
 				_ = Object(c.b)(x);
 			t.a = _(e => {
@@ -281,4 +281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.cdda0d3554a11c68c1e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.64daae36ea797091f634.js.map

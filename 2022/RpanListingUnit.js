@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.4c7478f2d889c2a3e9f8.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.e34f54b0f202d4fa169e.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -706,11 +706,11 @@
 				K = s.n(J);
 			const {
 				fbt: q
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, z = l.sc, $ = l.sc, X = Object(c.a)(j.a, {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, z = l.sc, $ = l.sc, Q = Object(c.a)(j.a, {
 				playerName: "RPAN DU Video Player"
-			}), Q = Object(i.b)(() => Object(o.c)({
+			}), X = Object(i.b)(() => Object(o.c)({
 				autoplay: x.b,
-				isLoggedIn: x.R,
+				isLoggedIn: x.Q,
 				isOverlayOpen: T.i,
 				location: (e, t) => {
 					let {
@@ -1055,7 +1055,7 @@
 					const s = 1e3 * t.broadcast_time,
 						n = t.post.id,
 						i = t.post.title;
-					return r.a.createElement(X, {
+					return r.a.createElement(Q, {
 						url: t.stream.hls_url,
 						autoplay: e,
 						controls: !1,
@@ -1216,7 +1216,7 @@
 						name: "hide"
 					})))
 				};
-			t.default = Q(Object(V.c)(se))
+			t.default = X(Object(V.c)(se))
 		},
 		"./src/reddit/controls/MetaSeparator/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -1871,4 +1871,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.4c7478f2d889c2a3e9f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.e34f54b0f202d4fa169e.js.map

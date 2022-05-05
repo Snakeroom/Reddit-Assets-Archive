@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.9c2d4c5f1c414005c996.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.bb3be7fe8fd70b832ba5.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -710,7 +710,7 @@
 							if (a && a.ok) {
 								const t = a.body.data.createEconPayment;
 								if (null === (m = null == t ? void 0 : t.errors) || void 0 === m ? void 0 : m.length) return e(Object(y.paypalApiError)(j(t.errors))), null;
-								const r = Object(g.l)(c());
+								const r = Object(g.k)(c());
 								if (t.ok) {
 									const {
 										status: e
@@ -1463,7 +1463,7 @@
 				const t = Object(W.a)(),
 					r = Object(H.b)(),
 					n = Object(o.d)(),
-					c = Object(o.e)(C.l),
+					c = Object(o.e)(C.k),
 					s = Object(B.b)(e.total, {
 						locale: r,
 						type: L.b.Real
@@ -1567,14 +1567,14 @@
 						const t = Object(P.a)(e);
 						return null === t ? void 0 : t
 					},
-					nightmode: C.eb,
+					nightmode: C.db,
 					passthrough: v.e,
 					selectedPayment: v.c,
 					stripeErrorMessage: v.j,
 					stripeTokenPending: v.m,
 					paypalErrorMessage: v.d,
 					userName: e => {
-						const t = Object(C.l)(e);
+						const t = Object(C.k)(e);
 						return `u/${Object(g.e)(t)}`
 					},
 					renewInterval: v.p,
@@ -3387,4 +3387,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.9c2d4c5f1c414005c996.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.bb3be7fe8fd70b832ba5.js.map

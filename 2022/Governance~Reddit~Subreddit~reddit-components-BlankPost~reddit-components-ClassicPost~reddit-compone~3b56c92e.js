@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.731d1b51bc890e9df312.js
-// Retrieved at 5/3/2022, 3:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.b0cb8dbe504a91c4a05a.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -356,7 +356,7 @@
 				o = s("./src/reddit/selectors/user.ts");
 			const a = "MOD_PERMS__REQUEST_LOADED",
 				d = (Object(r.a)("MOD_PERMS__REQUEST_PENDING"), Object(r.a)(a), Object(r.a)("MOD_PERMS__REQUEST_FAILED"), () => async (e, t) => {
-					const s = Object(o.l)(t());
+					const s = Object(o.k)(t());
 					if (s) {
 						const t = Object(i.e)(s);
 						await e(Object(n.b)(t))
@@ -924,7 +924,7 @@
 						apiContext: n
 					} = s;
 					const i = t();
-					if (!Object(D.l)(i) || Object(w.b)(i)) return;
+					if (!Object(D.k)(i) || Object(w.b)(i)) return;
 					e(M());
 					const o = await (e => Object(u.a)(Object(l.a)(e, [m.a]), {
 						endpoint: `${e.apiUrl}/api/v1/drafts.json`,
@@ -988,7 +988,7 @@
 							s = Object(C.p)(o, {
 								profileId: e.subredditId
 							}),
-							r = Object(D.l)(o);
+							r = Object(D.k)(o);
 						t ? i = {
 							isProfile: !1,
 							name: t.name
@@ -1112,7 +1112,7 @@
 				f = () => async (e, t) => {
 					const s = t(),
 						r = Object(o.g)(s, {});
-					if (!(Object(u.Q)(s) || Object(u.R)(s)) || !r) return;
+					if (!(Object(u.P)(s) || Object(u.Q)(s)) || !r) return;
 					const n = Object(c.i)(s);
 					p(n, r), e(m({
 						hasUnreadMessages: !!n
@@ -1579,11 +1579,11 @@
 
 			function l() {
 				const e = Object(i.e)(e => ({
-					currentUser: Object(d.l)(e),
+					currentUser: Object(d.k)(e),
 					modModeEnabled: e.modModeEnabled,
-					nightmodeEnabled: Object(d.eb)(e),
+					nightmodeEnabled: Object(d.db)(e),
 					prefs: e.user.prefs,
-					isLoggedIn: Object(d.R)(e)
+					isLoggedIn: Object(d.Q)(e)
 				}));
 				return Object(o.a)(e)
 			}
@@ -2223,4 +2223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.731d1b51bc890e9df312.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.b0cb8dbe504a91c4a05a.js.map

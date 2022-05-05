@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.210386ec55756e4053c4.js
-// Retrieved at 4/19/2022, 3:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.92f19e9a66e4260ef8fd.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsEmotesTooltip"], {
 		"./src/reddit/actions/economics/powerups/constants.ts": function(e, t, o) {
@@ -61,7 +61,7 @@
 						var i;
 						try {
 							const r = s(),
-								a = null === (i = Object(l.l)(r)) || void 0 === i ? void 0 : i.id;
+								a = null === (i = Object(l.k)(r)) || void 0 === i ? void 0 : i.id;
 							if (!a) throw new Error("Failed to get current user during emoji upload");
 							const c = await Object(d.h)(o);
 							if (!c) throw new Error("Cannot determine file mimeType");
@@ -420,8 +420,8 @@
 				f = o("./src/reddit/models/Toast/index.ts"),
 				w = o("./src/reddit/selectors/gold/powerups/index.ts"),
 				I = o("./src/reddit/components/RichTextEditor/emotes/EmoteButton.tsx"),
-				g = o("./src/reddit/components/RichTextEditor/emotes/Powerups/DeleteEmojiModal.tsx"),
-				k = o("./src/reddit/components/RichTextEditor/emotes/Powerups/useEmojiUpload.ts"),
+				k = o("./src/reddit/components/RichTextEditor/emotes/Powerups/DeleteEmojiModal.tsx"),
+				g = o("./src/reddit/components/RichTextEditor/emotes/Powerups/useEmojiUpload.ts"),
 				T = o("./src/reddit/components/RichTextEditor/emotes/Powerups/emotesSection.m.less"),
 				O = o.n(T);
 			const C = e => {
@@ -451,7 +451,7 @@
 						maxEmojisUploaded: A,
 						onFileChange: L,
 						onClickUpload: F
-					} = Object(k.a)(o, v, e => {
+					} = Object(g.a)(o, v, e => {
 						d(Object(b.f)({
 							duration: 5e3,
 							kind: f.b.Error,
@@ -566,7 +566,7 @@
 					priority: _.c.Primary
 				}, l.fbt._("Unlock Emojis", null, {
 					hk: "44jXM7"
-				})), C && n.a.createElement(g.a, {
+				})), C && n.a.createElement(k.a, {
 					emojiUrl: C.emoji.path,
 					onCancel: P,
 					onClose: P,
@@ -808,4 +808,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.210386ec55756e4053c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsEmotesTooltip.92f19e9a66e4260ef8fd.js.map

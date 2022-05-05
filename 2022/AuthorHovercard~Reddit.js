@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.06c54415eb23166717ee.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.56babcb654c643e3d44b.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -149,7 +149,7 @@
 				w = n("./src/reddit/selectors/user.ts");
 			let E = !1;
 			const C = async (e, t) => {
-				const n = Object(w.Q)(e);
+				const n = Object(w.P)(e);
 				if (E) return;
 				if (E = !0, Object(m.a)(e) !== d.c.NotificationsSupported) return;
 				await Object(l.a)();
@@ -610,8 +610,8 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const H = {},
-				D = "",
+			const D = {},
+				H = "",
 				M = 0,
 				F = "200px",
 				z = "250px",
@@ -620,14 +620,14 @@
 				q = .5,
 				K = 5,
 				V = 50,
-				Q = 55;
-			class J extends s.a.Component {
+				J = 55;
+			class Q extends s.a.Component {
 				constructor() {
 					super(...arguments), this.container = s.a.createRef(), this.state = {
-						notificationHeights: H,
+						notificationHeights: D,
 						currentNotificationCursorIndex: -1
 					}, this.resetOverflowMenu = () => {
-						this.props.activeOverflowMenuId.length > M && this.props.setActiveOverflowMenuId(D)
+						this.props.activeOverflowMenuId.length > M && this.props.setActiveOverflowMenuId(H)
 					}, this.getContainerHeight = () => {
 						const {
 							notificationHeights: e
@@ -635,7 +635,7 @@
 							isDNInboxPromptBannerEnabled: t,
 							isInboxPrivacyPolicyBannerEnabled: n,
 							isLoggedIn: r
-						} = this.props, a = t || n, s = window.innerHeight - V - 2 * Q - (a ? G : 0);
+						} = this.props, a = t || n, s = window.innerHeight - V - 2 * J - (a ? G : 0);
 						let o = 0;
 						for (const i in e) o += e[i];
 						return 0 === o ? a ? z : r ? F : W : (a && (o += G), s < o && (o = s + (a ? G : 0)), o)
@@ -875,7 +875,7 @@
 						sendInboxClickSettings: () => t(Object(A.o)(A.c.MiniInbox)),
 						onBarClick: l,
 						isLoggedIn: m
-					}), s.a.createElement(J, ee({}, e, {
+					}), s.a.createElement(Q, ee({}, e, {
 						isPending: a,
 						onItemClick: l,
 						setDesktopNotificationsPromptSeen: g,
@@ -1634,8 +1634,8 @@
 				U = n("./src/reddit/selectors/notificationPrefs.ts"),
 				R = n("./src/reddit/selectors/user.ts");
 
-			function H() {
-				return (H = Object.assign || function(e) {
+			function D() {
+				return (D = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -1643,7 +1643,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const D = [E.h.PrivateMessage, E.h.ChatMessage, E.h.ChatRequest, E.h.UsernameMention, E.h.PostReply, E.h.UpvotePost, E.h.UpvoteComment, E.h.CommentReply, E.h.ThreadReplies, E.h.TopLevelComment, E.h.NewPostActivity, E.h.UserNewFollower, E.h.PostFlairAdded, E.h.UserFlairAdded, E.h.NewPinnedPost, E.h.AwardReceived, E.h.PostFollow, E.h.TalkLive, E.h.CommentFollow, E.h.LifecyclePostSuggestions, E.h.BroadcastRecommendation, E.h.SubredditRecommendation, E.h.RedditLore, E.h.OneOff, E.h.CakeDay, E.h.ModeratedSrEngagement];
+			const H = [E.h.PrivateMessage, E.h.ChatMessage, E.h.ChatRequest, E.h.UsernameMention, E.h.PostReply, E.h.UpvotePost, E.h.UpvoteComment, E.h.CommentReply, E.h.ThreadReplies, E.h.TopLevelComment, E.h.NewPostActivity, E.h.UserNewFollower, E.h.PostFlairAdded, E.h.UserFlairAdded, E.h.NewPinnedPost, E.h.AwardReceived, E.h.PostFollow, E.h.TalkLive, E.h.CommentFollow, E.h.LifecyclePostSuggestions, E.h.BroadcastRecommendation, E.h.SubredditRecommendation, E.h.RedditLore, E.h.OneOff, E.h.CakeDay, E.h.ModeratedSrEngagement];
 			var M;
 			! function(e) {
 				e[e.TURN_ON_PN = 0] = "TURN_ON_PN", e[e.TURN_ON_PN_APP = 1] = "TURN_ON_PN_APP", e[e.VERIFY_EMAIL = 2] = "VERIFY_EMAIL", e[e.TURN_ON_DAYLY_DIGEST = 3] = "TURN_ON_DAYLY_DIGEST", e[e.DONE = 4] = "DONE"
@@ -1657,17 +1657,17 @@
 						hideTooltip: u
 					} = e;
 					const m = Object(s.d)(),
-						b = Object(s.e)(R.o),
-						f = Object(s.e)(R.E),
+						b = Object(s.e)(R.n),
+						f = Object(s.e)(R.D),
 						y = Object(r.useRef)(b),
 						[O, _] = Object(r.useState)(M.TURN_ON_PN),
 						j = Object(s.e)(e => e.user.accountSettings.changeEmail.api.pending),
 						I = Object(r.useCallback)(() => {
 							m(async (e, t) => {
 								var n, r;
-								let a = Object(R.gb)(t());
+								let a = Object(R.fb)(t());
 								a.allIds.length || await e(Object(S.a)(L.a.Email));
-								const s = null === (r = null === (n = (a = Object(R.gb)(t())).byId) || void 0 === n ? void 0 : n.EMAIL_DIGEST) || void 0 === r ? void 0 : r.isEnabled;
+								const s = null === (r = null === (n = (a = Object(R.fb)(t())).byId) || void 0 === n ? void 0 : n.EMAIL_DIGEST) || void 0 === r ? void 0 : r.isEnabled;
 								_(s ? M.DONE : M.TURN_ON_DAYLY_DIGEST)
 							})
 						}, [m]),
@@ -1677,7 +1677,7 @@
 						k = Object(r.useCallback)(() => {
 							m(async (e, t) => {
 								const n = t();
-								Object(R.ib)(n).allIds.length || await e(Object(S.a)(L.a.Push)), Object(U.c)(t(), D) ? _(M.TURN_ON_PN_APP) : x()
+								Object(R.hb)(n).allIds.length || await e(Object(S.a)(L.a.Push)), Object(U.c)(t(), H) ? _(M.TURN_ON_PN_APP) : x()
 							})
 						}, [m, x]),
 						E = Object(r.useCallback)(() => {
@@ -1739,7 +1739,7 @@
 						hk: "1gwnbO"
 					}) : c.fbt._("Stay in the loop on content from communities you love right on your email inbox.", null, {
 						hk: "1rs4kD"
-					})), a.a.createElement(p.t, H({
+					})), a.a.createElement(p.t, D({
 						className: h.a.emptyStateButton
 					}, q ? z : W, {
 						text: c.fbt._("OK", null, {
@@ -2161,7 +2161,7 @@
 						return e
 				}
 			};
-			var H = function() {
+			var D = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -2174,9 +2174,9 @@
 							return e
 					}
 				},
-				D = Object(r.c)({
+				H = Object(r.c)({
 					error: R,
-					pending: H
+					pending: D
 				}),
 				M = n("./node_modules/lodash/merge.js"),
 				F = n.n(M),
@@ -2245,7 +2245,7 @@
 						return e
 				}
 			};
-			var Q = function() {
+			var J = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -2258,7 +2258,7 @@
 						return e
 				}
 			};
-			var J = function() {
+			var Q = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -2272,8 +2272,8 @@
 					}
 				},
 				Y = Object(r.c)({
-					error: Q,
-					pending: J
+					error: J,
+					pending: Q
 				});
 			var Z = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -2341,7 +2341,7 @@
 					}
 				},
 				te = Object(r.c)({
-					api: D,
+					api: H,
 					models: q,
 					pageInfo: V,
 					search: X,
@@ -2758,7 +2758,7 @@
 				}
 			};
 			const Re = {};
-			var He = function() {
+			var De = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Re,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -2777,9 +2777,9 @@
 						return e
 				}
 			};
-			const De = {};
+			const He = {};
 			var Me = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : De,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : He,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case a.L: {
@@ -2857,7 +2857,7 @@
 				}),
 				Ke = n("./node_modules/lodash/isEqual.js"),
 				Ve = n.n(Ke);
-			var Qe = function() {
+			var Je = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -2883,9 +2883,9 @@
 							return e
 					}
 				},
-				Je = Object(r.c)({
+				Qe = Object(r.c)({
 					api: qe,
-					result: Qe
+					result: Je
 				});
 			const Ye = {};
 			var Ze = function() {
@@ -2998,9 +2998,9 @@
 					invitedModerators: Le,
 					invitePending: Ue,
 					loadMoreModerators: Me,
-					loadMoreEditableModerators: He,
+					loadMoreEditableModerators: De,
 					models: ze,
-					search: Je,
+					search: Qe,
 					userOrder: rt
 				}),
 				st = n("./src/reddit/actions/bulkActions/constants.ts");
@@ -3346,12 +3346,12 @@
 							return e
 					}
 				},
-				Ht = Object(r.c)({
+				Dt = Object(r.c)({
 					api: Tt,
 					itemOrder: At,
 					loadMore: Rt
 				});
-			var Dt = function() {
+			var Ht = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -3378,7 +3378,7 @@
 					}
 				},
 				Ft = Object(r.c)({
-					error: Dt,
+					error: Ht,
 					pending: Mt
 				});
 			const zt = {};
@@ -3445,7 +3445,7 @@
 						return e
 				}
 			};
-			var Qt = function() {
+			var Jt = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -3458,9 +3458,9 @@
 							return e
 					}
 				},
-				Jt = Object(r.c)({
+				Qt = Object(r.c)({
 					error: Vt,
-					pending: Qt
+					pending: Jt
 				});
 			const Yt = {};
 			var Zt = function() {
@@ -3509,7 +3509,7 @@
 					}
 				},
 				en = Object(r.c)({
-					api: Jt,
+					api: Qt,
 					itemOrder: Zt,
 					loadMore: $t
 				});
@@ -3598,7 +3598,7 @@
 					bulkAction: ht,
 					edited: It,
 					moderatedCommunitiesOrder: Bt,
-					modqueue: Ht,
+					modqueue: Dt,
 					reports: Kt,
 					spam: en,
 					unmoderated: dn
@@ -3866,7 +3866,7 @@
 						subredditId: n,
 						username: r
 					} = t;
-					const a = Object(o.Bb)(e, {
+					const a = Object(o.Ab)(e, {
 						userName: r
 					});
 					if (!a) return;
@@ -4016,4 +4016,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.06c54415eb23166717ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.56babcb654c643e3d44b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/UserDataRequestPage.655bc0135cc20e80b15d.js
-// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/UserDataRequestPage.f275b7abb84e5aefdf50.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["UserDataRequestPage"], {
 		"./src/reddit/actions/userDataRequest.ts": function(e, t, a) {
@@ -238,7 +238,7 @@
 				v = a("./src/reddit/pages/UserDataRequestPage/index.m.less"),
 				N = a.n(v);
 			const y = Object(q.c)({
-					currentUser: R.l,
+					currentUser: R.k,
 					userDataExportEligibility: _.a,
 					userDataRequestPageLoadingApiState: _.b
 				}),
@@ -539,4 +539,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserDataRequestPage.655bc0135cc20e80b15d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/UserDataRequestPage.f275b7abb84e5aefdf50.js.map

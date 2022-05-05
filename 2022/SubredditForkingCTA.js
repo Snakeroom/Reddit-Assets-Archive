@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.03b34cffa4e3fbd2343a.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.d7085bbf310be8f6cef8.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, _, e) {
@@ -29,8 +29,8 @@
 			const h = "create-community-button",
 				g = y.a.wrapped(c.c, "StyledTooltip", f.a),
 				j = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: t => !Object(b.qb)(t),
-					userIsSuspended: b.Y
+					userDoesNotHaveEnoughExpToCreateCommunity: t => !Object(b.pb)(t),
+					userIsSuspended: b.X
 				});
 			_.a = Object(s.b)(j, (t, _) => {
 				let {
@@ -158,9 +158,9 @@
 			})), e.d(_, "i", (function() {
 				return k
 			})), e.d(_, "q", (function() {
-				return q
-			})), e.d(_, "d", (function() {
 				return z
+			})), e.d(_, "d", (function() {
+				return q
 			})), e.d(_, "l", (function() {
 				return T
 			})), e.d(_, "t", (function() {
@@ -207,8 +207,8 @@
 				w = n.a.label("ModalInputLabel", u.a),
 				v = n.a.footer("ModalFooter", u.a),
 				k = n.a.header("ModalHeader", u.a),
-				q = n.a.div("ModalTitle", u.a),
-				z = n.a.div("ModalAnnotation", u.a),
+				z = n.a.div("ModalTitle", u.a),
+				q = n.a.div("ModalAnnotation", u.a),
 				T = n.a.div("ModalMain", u.a),
 				C = n.a.textarea("TextArea", u.a),
 				F = n.a.wrapped(a.l, "WarningButton", u.a),
@@ -1326,4 +1326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.03b34cffa4e3fbd2343a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.d7085bbf310be8f6cef8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/2.daffd6a0622d58eb9eaa.js
-// Retrieved at 4/27/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/2.135fdfe5641c7f5ef814.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[2], {
 		"./node_modules/@reddit/crypto/react/config/index.es.js": function(t, e, n) {
@@ -2488,4 +2488,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.daffd6a0622d58eb9eaa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/2.135fdfe5641c7f5ef814.js.map

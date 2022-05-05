@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Appeal.d03e791effcd2c953cd2.js
-// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Appeal.f987f957fed8737f9941.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Appeal"], {
 		"./src/lib/validateEmail/index.ts": function(e, a, t) {
@@ -253,7 +253,7 @@
 			const F = "https://www.redditinc.com/policies/content-policy",
 				N = "https://www.reddithelp.com/en/categories/rules-reporting/account-and-community-restrictions/suspensions",
 				S = Object(s.c)({
-					currentUser: v.l
+					currentUser: v.k
 				}),
 				D = Object(i.b)(S, e => ({
 					logoutUser: () => e(Object(p.q)()),
@@ -530,4 +530,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.d03e791effcd2c953cd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Appeal.f987f957fed8737f9941.js.map

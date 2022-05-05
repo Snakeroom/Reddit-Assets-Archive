@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.d403324a3b91ef1a4fc0.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.6dd883ce288575941888.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -261,7 +261,7 @@
 						var o;
 						try {
 							const r = n(),
-								i = null === (o = Object(c.l)(r)) || void 0 === o ? void 0 : o.id;
+								i = null === (o = Object(c.k)(r)) || void 0 === o ? void 0 : o.id;
 							if (!i) throw new Error("Failed to get current user during emoji upload");
 							const d = await Object(l.h)(s);
 							if (!d) throw new Error("Cannot determine file mimeType");
@@ -1106,7 +1106,7 @@
 					if (n) return;
 					a || s && !n || await t(Object(T.subredditDataRequested)(e, k, {}))
 				} else C && await t(Object(P.e)(C));
-				if (!Object(Ee.R)(s()) && _ !== o.hc.SubredditRules && _ !== o.hc.Contributors) return void Object(m.a)(t, s());
+				if (!Object(Ee.Q)(s()) && _ !== o.hc.SubredditRules && _ !== o.hc.Contributors) return void Object(m.a)(t, s());
 				if (Object(p.i)(s(), !0, k, C), !_) return;
 				let K, Q, Y, X, J, Z, $, ee, te, se, ne = !1;
 				switch (_) {
@@ -1192,7 +1192,7 @@
 				}
 				const ae = s(),
 					oe = !!k && Object(ge.jb)(ae),
-					re = Object(Ee.O)(ae),
+					re = Object(Ee.N)(ae),
 					ie = k ? Object(y.X)(ae, {
 						subredditName: k.toLowerCase()
 					}) : Object(fe.q)(ae, {
@@ -2495,7 +2495,7 @@
 					},
 					searchPending: e => !!e.pages.modHub.approvedSubmitters.search.api.pending,
 					searchResult: e => e.pages.modHub.approvedSubmitters.search.result,
-					currentUser: I.l
+					currentUser: I.k
 				}),
 				D = Object(i.b)(F, (e, t) => {
 					let {
@@ -2980,7 +2980,7 @@
 					} = e;
 					const {
 						audioRoom: s
-					} = t, o = () => Math.floor(10 * Math.random() + 1), i = Object(g.e)(f.eb), [d, l] = Object(n.useState)(!1), [c, m] = Object(n.useState)(o());
+					} = t, o = () => Math.floor(10 * Math.random() + 1), i = Object(g.e)(f.db), [d, l] = Object(n.useState)(!1), [c, m] = Object(n.useState)(o());
 					return Object(n.useEffect)(() => {
 						const e = setInterval(() => {
 							l(!0), setTimeout(() => l(!1), 3500), m(o())
@@ -5985,7 +5985,7 @@
 				allowChatPostCreation: (e, t) => Object(M.b)(e, t.subredditId),
 				isBroadcastingEnabled: (e, t) => Object(P.c)(e, t.subredditId),
 				isChatPostsCreationEnabled: (e, t) => Object(M.c)(e, t.subredditId),
-				isEmployee: D.O,
+				isEmployee: D.N,
 				notificationSettings: A.b,
 				restrictions: R.o,
 				settings: (e, t) => Object(R.W)(e, t.subredditId),
@@ -8793,7 +8793,7 @@
 						} = t;
 						return e.pages.modHub.approvedTalkHosts.loadMore[s]
 					},
-					currentUser: S.l,
+					currentUser: S.k,
 					isAddApprovedTalkHostModalOpen: e => "ModerationPage--Modal--AddApprovedTalkHost" === Object(C.a)(e),
 					isConfirmModalOpen: e => "ModerationPage--Modal--RemoveHostConfirmation" === Object(C.a)(e)
 				}),
@@ -13280,7 +13280,7 @@
 					currentPageUrl: v.f
 				}),
 				Be = Object(d.c)({
-					currentUser: N.l,
+					currentUser: N.k,
 					nextAfterToken: j.k,
 					nextAfterEditableToken: j.c,
 					nextBeforeToken: j.l,
@@ -15165,7 +15165,7 @@
 				submitRemovalReason: (t, s, n, a, o) => e(Object(l.submitRemovalReason)(t, s, n, a, o))
 			}), T = Object(r.c)({
 				currentUserName: e => {
-					const t = Object(C.l)(e);
+					const t = Object(C.k)(e);
 					if (t) return t.displayText
 				},
 				isLoading: v.a,
@@ -16817,7 +16817,7 @@
 				ce = f.a.div("TickText", U.a),
 				me = f.a.div("PreSubText", U.a),
 				ue = Object(i.c)({
-					isNightModeOn: D.eb
+					isNightModeOn: D.db
 				}),
 				pe = Object(o.b)(ue)(e => a.a.createElement(Y, {
 					last: e.last,
@@ -18391,10 +18391,10 @@
 					error: B.f,
 					isCreatePending: B.j,
 					isEmailInviteExperimentEnabled: U.a,
-					isEmployee: W.O,
+					isEmployee: W.N,
 					crosspostId: B.i,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(W.qb)(e),
-					userIsSuspended: W.Y,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(W.pb)(e),
+					userIsSuspended: W.X,
 					allTags: H.e,
 					existingTags: H.f,
 					newTags: H.g,
@@ -19754,7 +19754,7 @@
 					isChatPost: u.d,
 					isCurrentUserProfilePost: b.l,
 					isExpanded: b.m,
-					isLoggedIn: f.R,
+					isLoggedIn: f.Q,
 					showPromotedCTA: g.a,
 					moderatorPermissions: p.m,
 					modModeEnabled: l.U,
@@ -23048,7 +23048,7 @@
 						profileName: t.match.params.profileName
 					})
 				}),
-				Xe = Object(i.b)(() => Object(d.a)(qe, T.O, x.S, Ke, T.lb, S.jb, Ye, Qe, Ge, (e, t) => t.match.params.pageName, e => e, (e, t, s, n, a, o, r, i, d, l, c) => {
+				Xe = Object(i.b)(() => Object(d.a)(qe, T.N, x.S, Ke, T.kb, S.jb, Ye, Qe, Ge, (e, t) => t.match.params.pageName, e => e, (e, t, s, n, a, o, r, i, d, l, c) => {
 					let {
 						contentGateInfo: m
 					} = e, {
@@ -23507,4 +23507,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.d403324a3b91ef1a4fc0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.6dd883ce288575941888.js.map

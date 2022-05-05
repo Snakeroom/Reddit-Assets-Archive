@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Geotagging.91fa38239c854d2cb5b5.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Geotagging.f186c62efdd8e6b17941.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Geotagging"], {
 		"./node_modules/p-debounce/index.js": function(e, t, n) {
@@ -950,7 +950,7 @@
 				w = n("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
 				C = n.n(w);
 			const O = Object(h.c)({
-				isLoggedIn: k.R,
+				isLoggedIn: k.Q,
 				subreddit: v.U,
 				subredditAboutInfo: v.v
 			});
@@ -1167,10 +1167,10 @@
 						s = t.redditStyle || Object(g.l)(e, {
 							subredditId: n
 						}),
-						r = Object(f.eb)(e);
+						r = Object(f.db)(e);
 					return s || r
 				},
-				nigtmode: f.eb,
+				nigtmode: f.db,
 				subredditId: u.n,
 				topPostVariant: h.d
 			}));
@@ -1556,13 +1556,13 @@
 					userSubreddit: Object(L.g)(e.modPermissions, e.isSubscribed),
 					actionInfo: R
 				}),
-				D = J("select_location"),
-				W = J("confirm_location"),
-				A = J("undo_location"),
-				H = Q("verify_location"),
-				z = Q("reject_location");
+				D = Q("select_location"),
+				W = Q("confirm_location"),
+				A = Q("undo_location"),
+				H = J("verify_location"),
+				z = J("reject_location");
 
-			function J(e) {
+			function Q(e) {
 				return (t, n) => () => ({
 					source: G,
 					noun: e,
@@ -1576,7 +1576,7 @@
 				})
 			}
 
-			function Q(e) {
+			function J(e) {
 				return (t, n) => () => ({
 					source: G,
 					noun: e,
@@ -1812,4 +1812,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.91fa38239c854d2cb5b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Geotagging.f186c62efdd8e6b17941.js.map

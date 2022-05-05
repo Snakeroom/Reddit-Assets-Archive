@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.40497ee67f9b9f0ff657.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.f9bb5a63f378acfe040d.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
@@ -256,7 +256,7 @@
 			})), n.d(t, "a", (function() {
 				return W
 			})), n.d(t, "b", (function() {
-				return V
+				return G
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/lodash/pick.js"),
@@ -461,7 +461,7 @@
 				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(I.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(g.a)(Object(I.a)(e).post, T.a.black, T.a.white) : e.textColor === O.e.Dark ? T.a.black : T.a.white,
 				W = p.a.wrapped(P, "TextFlair", j.a),
 				Z = p.a.wrapped(A, "RichTextFlair", j.a),
-				G = e => {
+				H = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -471,8 +471,8 @@
 							return Object(i.i)(.1, Object(I.a)(s()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				H = p.a.wrapped(e => {
-					const t = G(e),
+				V = p.a.wrapped(e => {
+					const t = H(e),
 						n = a.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -486,7 +486,7 @@
 					})
 				}, "MetaFlair", j.a);
 
-			function V(e) {
+			function G(e) {
 				const {
 					className: t,
 					disabled: n = !1,
@@ -550,7 +550,7 @@
 						});
 					case O.f.Nsfw:
 					case O.f.Spoiler:
-						return a.a.createElement(H, {
+						return a.a.createElement(V, {
 							className: t,
 							text: o.text,
 							type: o.type
@@ -963,10 +963,10 @@
 				}).apply(this, arguments)
 			}
 			const h = Object(c.c)({
-					currentUser: l.l,
-					isNightMode: l.eb,
-					isPresenceUserPrefEnabled: l.W,
-					shouldHideNSFW: l.G
+					currentUser: l.k,
+					isNightMode: l.db,
+					isPresenceUserPrefEnabled: l.V,
+					shouldHideNSFW: l.F
 				}),
 				E = Object(i.b)(h);
 			t.a = E(e => {
@@ -1395,4 +1395,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.40497ee67f9b9f0ff657.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.f9bb5a63f378acfe040d.js.map

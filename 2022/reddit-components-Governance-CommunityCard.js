@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.96fbf9282af245a69c7c.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.04a5c3164f68e0774448.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-CommunityCard"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -199,9 +199,9 @@
 			})), n.d(t, "d", (function() {
 				return M
 			})), n.d(t, "e", (function() {
-				return R
-			})), n.d(t, "h", (function() {
 				return G
+			})), n.d(t, "h", (function() {
+				return R
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				s = n("./src/lib/makeActionCreator/index.ts"),
@@ -279,7 +279,7 @@
 						pollId: e,
 						error: o.error || o.errors[0].message
 					})), Object(_.a)(n, o.error || o.errors[0].messsage)
-				}, R = (e, t) => async (n, s, a) => {
+				}, G = (e, t) => async (n, s, a) => {
 					let {
 						apiContext: l
 					} = a;
@@ -313,7 +313,7 @@
 					})), t && n(Object(i.f)())) : (n(j({
 						error: p.error
 					})), Object(_.a)(n, p.error))
-				}, G = e => async (t, n, r) => {
+				}, R = e => async (t, n, r) => {
 					let {
 						apiContext: s
 					} = r;
@@ -457,8 +457,8 @@
 				S = n("./src/reddit/contexts/ApiContext.tsx"),
 				L = n("./src/reddit/controls/Dropdown/index.tsx"),
 				M = n("./src/reddit/controls/Dropdown/Row.tsx"),
-				R = n("./src/reddit/endpoints/governance/crypto.ts"),
-				G = n("./src/reddit/helpers/governance/ethereum.ts"),
+				G = n("./src/reddit/endpoints/governance/crypto.ts"),
+				R = n("./src/reddit/helpers/governance/ethereum.ts"),
 				D = n("./src/reddit/icons/svgs/Settings/index.tsx"),
 				U = n("./src/reddit/models/Toast/index.ts"),
 				B = n("./src/reddit/selectors/tooltip.ts"),
@@ -471,7 +471,7 @@
 					super(...arguments), this.onCopyToClipboard = () => {
 						Object(I.a)(this.props.publicAddress || "")
 					}, this.onRemoveMyWallet = async () => {
-						const e = await Object(R.g)(this.props.apiContext(), this.props.points.blockchainProvider, this.props.publicAddress);
+						const e = await Object(G.g)(this.props.apiContext(), this.props.points.blockchainProvider, this.props.publicAddress);
 						e.ok ? this.props.onWalletRemoved() : this.props.onGovernanceError(e.error)
 					}
 				}
@@ -522,7 +522,7 @@
 						}),
 						onClick: () => {
 							var e, t;
-							return Object(G.j)({
+							return Object(R.j)({
 								address: r.contractAddress,
 								symbol: r.symbol,
 								decimals: r.decimals,
@@ -767,7 +767,7 @@
 					} = t;
 					return Object(l.a)(e, n)
 				},
-				isLoggedIn: j.R,
+				isLoggedIn: j.Q,
 				nextAvailableClaim: k.b,
 				isMainnetEnabled: u.a
 			});
@@ -869,7 +869,7 @@
 			}
 			var Le = n("./src/reddit/components/Governance/CommunityCard/index.m.less"),
 				Me = n.n(Le);
-			const Re = Object(b.c)({
+			const Ge = Object(b.c)({
 				isMainnet: u.a,
 				distribution: (e, t) => e.subreddits.gov.distributions[t.subredditId],
 				pointsDetails: (e, t) => {
@@ -881,7 +881,7 @@
 				subreddit: (e, t) => e.subreddits.models[t.subredditId],
 				wallet: m.d
 			});
-			t.default = Object(a.b)(Re)((function(e) {
+			t.default = Object(a.b)(Ge)((function(e) {
 				const {
 					className: t,
 					distribution: n,
@@ -1841,4 +1841,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.96fbf9282af245a69c7c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-CommunityCard.04a5c3164f68e0774448.js.map

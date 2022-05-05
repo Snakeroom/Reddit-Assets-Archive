@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.71f4d51e57df043c2898.js
-// Retrieved at 5/5/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.2acb11b4e8f22a001c9a.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -702,7 +702,7 @@
 							if (a && a.ok) {
 								const t = a.body.data.createEconPayment;
 								if (null === (m = null == t ? void 0 : t.errors) || void 0 === m ? void 0 : m.length) return e(Object(h.paypalApiError)(P(t.errors))), null;
-								const r = Object(y.l)(i());
+								const r = Object(y.k)(i());
 								if (t.ok) {
 									const {
 										status: e
@@ -2200,7 +2200,7 @@
 					className: t,
 					isCompactMode: r = !1
 				} = e;
-				const a = Object(i.e)(O.eb),
+				const a = Object(i.e)(O.db),
 					s = Object(p.a)(),
 					c = Object(i.e)(y.m),
 					b = !!c,
@@ -2276,7 +2276,7 @@
 				const j = Object(u.b)(),
 					k = Object(d.e)(b.l),
 					P = Object(d.e)(f.g);
-				if (Object(d.e)(h.x)) return o.a.createElement("div", {
+				if (Object(d.e)(h.w)) return o.a.createElement("div", {
 					className: Object(i.a)(y.a.buttons, t, {
 						[y.a.hero]: !!r
 					})
@@ -2400,9 +2400,9 @@
 				}),
 				L = Object(d.c)({
 					goldExpiration: e => e.user.account && e.user.account.goldExpiration || 0,
-					isGold: I.w,
-					isPremiumSubscriber: I.x,
-					isLoggedIn: I.R,
+					isGold: I.v,
+					isPremiumSubscriber: I.w,
+					isLoggedIn: I.Q,
 					premiumPackages: N.l,
 					purchaseCatalogPending: N.o
 				}),
@@ -2669,4 +2669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.71f4d51e57df043c2898.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.2acb11b4e8f22a001c9a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.e3747d59fd8e76d1e2b9.js
-// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.19dadca070645254c980.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -1491,7 +1491,7 @@
 				}
 			}
 			const B = Object(u.c)({
-				isNightMode: S.eb
+				isNightMode: S.db
 			});
 			var F = Object(m.b)(B)(L),
 				A = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.m.less"),
@@ -2017,8 +2017,8 @@
 				return t
 			}
 			const Y = 10,
-				J = .9,
 				Q = .9,
+				J = .9,
 				$ = 1.8,
 				ee = 5,
 				te = 1500,
@@ -2181,8 +2181,8 @@
 							if (clearTimeout(this.resetCanFocusTimer), this.cancelPopulateRenderableChildrenWhenIdle(), Object(j.b)() || !this.scrollContainer) return void(this.pendingScollHandlerRead = null);
 							this.updateScrollMetrics();
 							const e = this.getAveragePixelsPerMilliSecond(),
-								t = e < J,
-								s = e < Q,
+								t = e < Q,
+								s = e < J,
 								i = e < $;
 							if (this.scrollContainer && !this.loadMoreFired && this.props.onLoadMore) {
 								let e = !1;
@@ -4175,15 +4175,15 @@
 					title: "Special Membership"
 				}
 			};
-			var J = Object(U.a)(Y, [G.a.Click, G.a.Keydown]),
-				Q = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.tsx"),
+			var Q = Object(U.a)(Y, [G.a.Click, G.a.Keydown]),
+				J = s("./src/reddit/components/RichTextEditor/media/GifTooltip/GifTooltipBody.tsx"),
 				$ = s("./src/reddit/pages/meta/MembershipPaywallPage/Benefits/Toolbar/GifTooltip/index.m.less"),
 				ee = s.n($);
 			var te = Object(U.a)((function(e) {
 					return n.a.createElement("div", {
 						className: Object(l.a)(ee.a.container, e.className),
 						style: e.style
-					}, n.a.createElement(Q.a, {
+					}, n.a.createElement(J.a, {
 						autofocus: !1,
 						correlationId: "",
 						editorState: e.editorState,
@@ -4265,7 +4265,7 @@
 						className: ie.a.reply
 					}, x.fbt._("reply", null, {
 						hk: "RzR8c"
-					})), this.state.emotesOpen && n.a.createElement(J, {
+					})), this.state.emotesOpen && n.a.createElement(Q, {
 						isOpen: !0,
 						className: ie.a.emoteTooltip,
 						editorState: this.props.editorState,
@@ -4950,8 +4950,8 @@
 					style: t
 				}))))
 			}
-			var Je = s("./src/reddit/components/Economics/SubredditPremium/SubredditBrand/index.tsx"),
-				Qe = s("./src/reddit/icons/svgs/Twinkle/index.tsx"),
+			var Qe = s("./src/reddit/components/Economics/SubredditPremium/SubredditBrand/index.tsx"),
+				Je = s("./src/reddit/icons/svgs/Twinkle/index.tsx"),
 				$e = s("./src/reddit/actions/login.ts"),
 				et = s("./src/reddit/components/Economics/Price/index.tsx"),
 				tt = s("./src/reddit/components/Economics/SubredditPremium/BlockchainCheckoutModal/async.tsx"),
@@ -5200,7 +5200,7 @@
 				}
 			}
 			const Ut = Object(o.c)({
-				isLoggedIn: _.R,
+				isLoggedIn: _.Q,
 				membershipProducts: (e, t) => {
 					let {
 						subreddit: s
@@ -5264,7 +5264,7 @@
 				}))
 			}
 
-			function Jt(e) {
+			function Qt(e) {
 				return !e.wallet || new Nt.BigNumber(e.wallet.amount).isLessThan(new Nt.BigNumber(e.tokenPrice)) ? n.a.createElement(Ot.l, {
 					className: Xt.a.notEnoughTokens,
 					disabled: !0
@@ -5284,7 +5284,7 @@
 				})))
 			}
 
-			function Qt(e) {
+			function Jt(e) {
 				const {
 					dollarPrice: t,
 					monthly: s,
@@ -5310,7 +5310,7 @@
 					monthly: s,
 					subredditId: i.id,
 					hideTokenName: !0
-				})), n.a.createElement(Jt, e)), n.a.createElement("div", {
+				})), n.a.createElement(Qt, e)), n.a.createElement("div", {
 					className: Xt.a.paymentContainer
 				}, n.a.createElement("div", {
 					className: Xt.a.paymentAmount
@@ -5319,7 +5319,7 @@
 					monthly: s,
 					subredditId: i.id,
 					hideTokenName: !0
-				})), n.a.createElement(Yt, e))), t && !r && n.a.createElement(Yt, e), r && !t && n.a.createElement(Jt, e))
+				})), n.a.createElement(Yt, e))), t && !r && n.a.createElement(Yt, e), r && !t && n.a.createElement(Qt, e))
 			}
 			var $t, es = s("./src/reddit/components/Economics/SubredditPremium/CheckoutModal/index.m.less"),
 				ts = s.n(es);
@@ -5373,7 +5373,7 @@
 						monthly: m,
 						subredditId: s.id,
 						tokenPrice: l
-					}), n.a.createElement(Qt, {
+					}), n.a.createElement(Jt, {
 						className: ts.a.payment,
 						correlationId: e,
 						dollarPrice: d,
@@ -5580,11 +5580,11 @@
 						className: Object(l.a)(t, ws.a.container)
 					}, n.a.createElement("div", {
 						className: ws.a.logo
-					}, n.a.createElement(Qe.a, {
+					}, n.a.createElement(Je.a, {
 						className: ws.a.radialHighlightInner
-					}), n.a.createElement(Qe.a, {
-						className: ws.a.radialHighlightOuter
 					}), n.a.createElement(Je.a, {
+						className: ws.a.radialHighlightOuter
+					}), n.a.createElement(Qe.a, {
 						size: "large",
 						subreddit: r
 					})), n.a.createElement("header", {
@@ -5853,7 +5853,7 @@
 						className: Ls.a.divider
 					}), n.a.createElement("footer", {
 						className: Ls.a.footer
-					}, n.a.createElement(Je.a, {
+					}, n.a.createElement(Qe.a, {
 						className: Ls.a.brand,
 						size: "large",
 						subreddit: r
@@ -5997,7 +5997,7 @@
 				}))
 			}
 
-			function Js(e) {
+			function Qs(e) {
 				const t = k(e.subreddit.id),
 					s = t.styleBadges && t.emotes && t.gifs;
 				return n.a.createElement("article", {
@@ -6026,8 +6026,8 @@
 					subreddit: e.subreddit
 				})))
 			}
-			var Qs = s("./src/reddit/pages/meta/MembershipPaywallPage/index.m.less"),
-				$s = s.n(Qs);
+			var Js = s("./src/reddit/pages/meta/MembershipPaywallPage/index.m.less"),
+				$s = s.n(Js);
 			class ei extends n.a.Component {
 				constructor(e) {
 					super(e);
@@ -6067,7 +6067,7 @@
 					}, n.a.createElement(js, {
 						correlationId: this.correlationId,
 						subreddit: t
-					})), n.a.createElement(Js, {
+					})), n.a.createElement(Qs, {
 						className: $s.a.whatDoYouGet,
 						correlationId: this.correlationId,
 						subreddit: t
@@ -6121,7 +6121,7 @@
 				}
 			}
 			const ti = Object(o.c)({
-				currentUser: _.l,
+				currentUser: _.k,
 				isOverlay: b.i,
 				subreddit: (e, t) => {
 					let {
@@ -6500,4 +6500,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.e3747d59fd8e76d1e2b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.19dadca070645254c980.js.map

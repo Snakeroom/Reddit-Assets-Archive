@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.30dadfde733d737fd5ab.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.447181160be1aa89f4cb.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -294,7 +294,7 @@
 					const i = t(),
 						o = Object(m.e)(i),
 						d = Object(m.d)(i),
-						p = Object(h.Q)(i);
+						p = Object(h.P)(i);
 					if (o || !d) return;
 					e(f());
 					let x = !1;
@@ -369,7 +369,7 @@
 						a = Object(m.g)(o);
 					if (Object(m.f)(o) || null === a || "client" === a) {
 						const s = null === (n = null === (r = Object(p.b)(t())) || void 0 === r ? void 0 : r.routeMatch) || void 0 === n ? void 0 : n.route.chunk,
-							a = Object(h.R)(o);
+							a = Object(h.Q)(o);
 						return Object(i.i)(() => e(E()), {
 							name: "getFocusedVerticalsRequested",
 							page: s,
@@ -489,7 +489,7 @@
 						tooltipId: C
 					}))
 				}));
-			class R extends i.a.Component {
+			class P extends i.a.Component {
 				constructor() {
 					super(...arguments), this.changeLayout = e => {
 						const {
@@ -563,7 +563,7 @@
 					}), i.a.createElement(g.a.Consumer, null, this.renderDropdown)))
 				}
 			}
-			t.a = j(I(Object(p.c)(Object(l.a)(R))))
+			t.a = j(I(Object(p.c)(Object(l.a)(P))))
 		},
 		"./src/reddit/components/ListingPostList/index.tsx": function(e, t, s) {
 			"use strict";
@@ -1277,7 +1277,7 @@
 				w = s("./src/reddit/components/TopicSidebar/SubredditList/Subreddit/index.m.less"),
 				C = s.n(w);
 			const O = Object(b.c)({
-				isLoggedIn: S.R,
+				isLoggedIn: S.Q,
 				subreddit: T.U,
 				subredditAboutInfo: T.v
 			});
@@ -1359,13 +1359,13 @@
 					}))
 				},
 				I = s("./src/reddit/components/TopicSidebar/SubredditList/index.m.less"),
-				R = s.n(I);
+				P = s.n(I);
 			const {
-				fbt: P
+				fbt: R
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), F = 8, D = Array.from({
 				length: F
 			}).map((e, t) => n.a.createElement(L, {
-				className: R.a.Subreddit,
+				className: P.a.Subreddit,
 				key: t
 			})), W = {
 				enabled: !0,
@@ -1389,26 +1389,26 @@
 						topicUrl: s
 					} = this.props, r = t.slice(0, F);
 					return n.a.createElement(a.a, {
-						className: Object(o.a)(R.a.Container, e)
+						className: Object(o.a)(P.a.Container, e)
 					}, n.a.createElement("div", {
-						className: R.a.Title
+						className: P.a.Title
 					}, n.a.createElement(c.b, {
 						type: c.a.Widget
-					}, P._("Top Communities", null, {
+					}, R._("Top Communities", null, {
 						hk: "46yzcK"
 					}))), n.a.createElement("div", {
-						className: R.a.SubredditList
+						className: P.a.SubredditList
 					}, r.length > 0 ? r.map(e => n.a.createElement(N, {
-						className: R.a.Subreddit,
+						className: P.a.Subreddit,
 						discoveryUnit: W,
 						key: e,
 						subredditId: e
 					})) : D), t.length > F && n.a.createElement(i.a, {
 						to: s
 					}, n.a.createElement(l.r, {
-						className: R.a.SeeMore,
+						className: P.a.SeeMore,
 						onClick: this.onSeeMoreCommunities
-					}, P._("See more", null, {
+					}, R._("See more", null, {
 						hk: "2qkY6H"
 					}))))
 				}
@@ -1494,10 +1494,10 @@
 						r = t.redditStyle || Object(g.l)(e, {
 							subredditId: s
 						}),
-						n = Object(f.eb)(e);
+						n = Object(f.db)(e);
 					return r || n
 				},
-				nigtmode: f.eb,
+				nigtmode: f.db,
 				subredditId: u.n,
 				topPostVariant: b.d
 			}));
@@ -2046,8 +2046,8 @@
 				j = s("./src/reddit/pages/ErrorPages/index.tsx"),
 				L = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				I = s("./src/reddit/controls/Button/index.tsx"),
-				R = s("./src/reddit/pages/Topic/TopicHeader/TopicTab/index.m.less"),
-				P = s.n(R);
+				P = s("./src/reddit/pages/Topic/TopicHeader/TopicTab/index.m.less"),
+				R = s.n(P);
 			class F extends n.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
@@ -2066,8 +2066,8 @@
 						tabs: r
 					} = this.props;
 					return r.includes(s) ? n.a.createElement("div", {
-						className: Object(o.a)(P.a.Tab, {
-							[P.a.ActiveTab]: s === e
+						className: Object(o.a)(R.a.Tab, {
+							[R.a.ActiveTab]: s === e
 						}),
 						onClick: this.onClick
 					}, t) : null
@@ -2218,7 +2218,7 @@
 			const {
 				fbt: ae
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), ce = Object(i.c)({
-				isLoggedIn: ne.R,
+				isLoggedIn: ne.Q,
 				subreddit: re.U,
 				subredditAboutInfo: (e, t) => {
 					let {
@@ -2406,14 +2406,14 @@
 				topicNamePlural: t
 			})), (e, t) => ({
 				onLoadMorePosts: () => e(Object(l.morePostsRequested)(t.match.params))
-			})), Re = (e, t) => e === G.Communities ? C.g.Large : t;
-			class Pe extends n.a.Component {
+			})), Pe = (e, t) => e === G.Communities ? C.g.Large : t;
+			class Re extends n.a.Component {
 				constructor(e) {
 					var t;
 					super(e), t = this, this.openTab = function(e) {
 						let s = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 0;
 						t.setState({
-							activeLayout: Re(e, t.props.layout),
+							activeLayout: Pe(e, t.props.layout),
 							activeRelationshipIndex: s,
 							activeTab: e
 						}), window.scrollTo(0, 0)
@@ -2448,7 +2448,7 @@
 						i = e.tabs[0],
 						o = s || n || i;
 					return {
-						activeLayout: Re(o, e.layout),
+						activeLayout: Pe(o, e.layout),
 						activeRelationship: t.activeRelationshipIndex,
 						activeTab: o
 					}
@@ -2554,7 +2554,7 @@
 					}))
 				}
 			}
-			t.default = Ne(Ie(Pe))
+			t.default = Ne(Ie(Re))
 		},
 		"./src/reddit/selectors/experiments/d2xPdpSideRailRecs.ts": function(e, t, s) {
 			"use strict";
@@ -2681,7 +2681,7 @@
 				x = e => e.focusedVerticals.category,
 				v = e => e.focusedVerticals.lastLoadedEnv,
 				y = e => {
-					const t = Object(a.Q)(e),
+					const t = Object(a.P)(e),
 						s = n.d.geoSubredditRecommendationDULoggedIn(e),
 						r = n.d.geoSubredditRecommendationDULoggedOut(e);
 					return t && s || !t && r
@@ -2704,4 +2704,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.30dadfde733d737fd5ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.447181160be1aa89f4cb.js.map

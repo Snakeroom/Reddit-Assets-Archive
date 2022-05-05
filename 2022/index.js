@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.cfe73be1053fe043f97c.js
-// Retrieved at 5/5/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.ba3b2b30e213f460892d.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -137,7 +137,7 @@
 					audioRoom: n
 				} = t, {
 					recordingStatus: u
-				} = n, [E, f] = Object(a.useState)(new Set), [g, h] = Object(a.useState)(new Set), x = Object(r.e)(l.eb), [O, P] = Object(a.useState)(-1), _ = e => {
+				} = n, [E, f] = Object(a.useState)(new Set), [g, h] = Object(a.useState)(new Set), x = Object(r.e)(l.db), [O, P] = Object(a.useState)(-1), _ = e => {
 					const t = e ? Array.from(g) : Array.from(E);
 					return null == t ? void 0 : t.map((t, n) => {
 						return e ? s.a.createElement("div", {
@@ -375,7 +375,7 @@
 				} = e;
 				const o = Object(b.fb)(),
 					r = Object(b.x)(o),
-					i = Object(s.e)(v.eb);
+					i = Object(s.e)(v.db);
 				return a.a.createElement("div", g({}, n, {
 					className: Object(p.a)(t, f.a.container, {
 						[f.a.commentsPage]: r,
@@ -495,7 +495,7 @@
 					className: o,
 					...r
 				} = e;
-				const i = Object(s.e)(v.eb),
+				const i = Object(s.e)(v.db),
 					c = Math.floor(100 * t / n);
 				return a.a.createElement("div", B({
 					className: Object(p.a)(M.a.container, o, {
@@ -647,7 +647,7 @@
 						post: t,
 						predictions: n
 					} = e;
-					const o = Object(s.e)(v.eb),
+					const o = Object(s.e)(v.db),
 						r = n.reduce((e, t) => {
 							let {
 								userSelection: n
@@ -832,4 +832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.cfe73be1053fe043f97c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.ba3b2b30e213f460892d.js.map

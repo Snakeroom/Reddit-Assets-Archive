@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.5a0d1a380cda70554fdc.js
-// Retrieved at 4/25/2022, 12:50:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.75d34a7c535a97fa6398.js
+// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(e, t, A) {
@@ -623,7 +623,7 @@
 				p = s.cards;
 				const I = Object(n.useRef)(null),
 					[Q, x] = Object(n.useState)(!t),
-					M = Object(o.e)(w.eb),
+					M = Object(o.e)(w.db),
 					b = Object(o.e)(e => Object(m.ab)(e, A)),
 					j = Object(f.a)();
 				Object(n.useEffect)(() => {
@@ -1336,4 +1336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.5a0d1a380cda70554fdc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.75d34a7c535a97fa6398.js.map
