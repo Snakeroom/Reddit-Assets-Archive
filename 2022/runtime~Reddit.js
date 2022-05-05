@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.a6a82cb4c0b8af865f75.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.aad19734ebaeb2700157.js
+// Retrieved at 5/5/2022, 11:20:07 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -1374,8 +1374,8 @@
 						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b": "1a9bd5ee069d9f9736c5",
 						"CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress": "50fef937c9e262b7c82d",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "3b1ff0f837672d62d961",
-						CollectionCommentsPage: "fa1aa542b0dc09ce5037",
-						CommentsPage: "c73932caa8599566e088",
+						CollectionCommentsPage: "32a4e27f675225dfed6f",
+						CommentsPage: "39dafc0142b7609e1f7d",
 						"ProfileComments~ProfileOverview~ProfilePosts": "77896f83e81918a58b0e",
 						"ProfileComments~ProfileOverview~ProfilePrivate": "666e4e8894c7bfc0cd47",
 						ProfileComments: "8da2da870f625b0f1a67",
@@ -1518,7 +1518,7 @@
 						GovernanceUserPublicPointsDisplay: "566f570101f536b66183",
 						SubredditPremiumBadgeHovercardTooltip: "e94e3e95b86f5b6f65b9",
 						gildActions: "e45dc31cf68863b1174e",
-						"reddit-components-MediumPost": "ad8cdecd70feab13ade8",
+						"reddit-components-MediumPost": "fb9beec4dc251c2b176c",
 						"reddit-components-ClassicPost": "253568060c1c1f3b004b",
 						"reddit-components-CompactPost": "a8184d5ac42b68d8c47b",
 						"reddit-components-LargePost": "1205275534b7bd3e33bd",
@@ -1730,4 +1730,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.a6a82cb4c0b8af865f75.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.aad19734ebaeb2700157.js.map

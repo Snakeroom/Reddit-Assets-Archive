@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.ad8cdecd70feab13ade8.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.fb9beec4dc251c2b176c.js
+// Retrieved at 5/5/2022, 11:20:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/react-popper/lib/esm/usePopper.js": function(e, t, n) {
@@ -3066,8 +3066,8 @@
 			var s = n("./src/reddit/constants/thumbnails.ts"),
 				o = n("./src/reddit/models/Media/index.ts");
 
-			function r(e) {
-				return !(!e.thumbnail || !e.thumbnail.url || e.thumbnail.url === s.a.SELF || e.thumbnail.url === s.a.NSFW || e.media && Object(o.E)(e.media))
+			function r(e, t) {
+				return !(!e.thumbnail || !e.thumbnail.url || e.thumbnail.url === s.a.SELF || e.thumbnail.url === s.a.NSFW || e.media && Object(o.E)(e.media) || t)
 			}
 		},
 		"./src/reddit/helpers/graphql/normalizePostsFromGql/index.ts": function(e, t, n) {
@@ -3525,4 +3525,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.ad8cdecd70feab13ade8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.fb9beec4dc251c2b176c.js.map
