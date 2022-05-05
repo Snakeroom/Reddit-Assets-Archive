@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.ae787a5238b52e7af4be.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.6ccd613e0211b1e7bdaa.js
+// Retrieved at 5/5/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -26570,9 +26570,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.fe,
+				experimentName: o.ge,
 				experimentEligibilitySelector: r.a
-			}) === o.oe.Enabled
+			}) === o.pe.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -26584,7 +26584,7 @@
 			const s = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.Ae
+					experimentName: o.Be
 				}) === o.sd
 			}
 		},
@@ -26607,29 +26607,29 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.Ef
+						experimentName: o.Ff
 					}) === o.sd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.Ff
+						experimentName: o.Gf
 					}) === o.sd
 				},
 				d = e => {
 					if (Object(a.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.Df
+						experimentName: o.Ef
 					});
-					return t === o.vf.TypingIndicators || t === o.vf.IndicatorsPlusCTA
+					return t === o.wf.TypingIndicators || t === o.wf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(a.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.Df
+						experimentName: o.Ef
 					});
-					return (null == t ? void 0 : t.variant) === o.vf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.wf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -27142,4 +27142,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.ae787a5238b52e7af4be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6ccd613e0211b1e7bdaa.js.map

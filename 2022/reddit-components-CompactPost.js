@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.a8184d5ac42b68d8c47b.js
-// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.d68862426fea8aee74fa.js
+// Retrieved at 5/5/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -435,10 +435,10 @@
 				I = _.reduce((function(e, t) {
 					return e.concat([t + "-" + C, t + "-" + M])
 				}), []),
-				A = [].concat(_, [k]).reduce((function(e, t) {
+				F = [].concat(_, [k]).reduce((function(e, t) {
 					return e.concat([t, t + "-" + C, t + "-" + M])
 				}), []),
-				F = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
+				A = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
 
 			function L(e) {
 				var t = new Map,
@@ -502,7 +502,7 @@
 								};
 								var s = function(e) {
 									var t = L(e);
-									return F.reduce((function(e, n) {
+									return A.reduce((function(e, n) {
 										return e.concat(t.filter((function(e) {
 											return e.phase === n
 										})))
@@ -841,13 +841,13 @@
 						strategy: "absolute",
 						placement: r
 					}),
-					A = Q(Object.assign(Object.assign({}, j), I)),
-					F = m === T ? A : M,
+					F = Q(Object.assign(Object.assign({}, j), I)),
+					A = m === T ? F : M,
 					L = {
-						top: C.top - F.top + v.top,
-						bottom: F.bottom - C.bottom + v.bottom,
-						left: C.left - F.left + v.left,
-						right: F.right - C.right + v.right
+						top: C.top - A.top + v.top,
+						bottom: A.bottom - C.bottom + v.bottom,
+						left: C.left - A.left + v.left,
+						right: A.right - C.right + v.right
 					},
 					B = e.modifiersData.offset;
 				if (m === T && B) {
@@ -1009,7 +1009,7 @@
 								o = e.name,
 								s = n.offset,
 								r = void 0 === s ? [0, 0] : s,
-								i = A.reduce((function(e, n) {
+								i = F.reduce((function(e, n) {
 									return e[n] = function(e, t, n) {
 										var o = H(e),
 											s = [j, O].indexOf(o) >= 0 ? -1 : 1,
@@ -1055,7 +1055,7 @@
 												i = n.padding,
 												a = n.flipVariations,
 												c = n.allowedAutoPlacements,
-												d = void 0 === c ? A : c,
+												d = void 0 === c ? F : c,
 												l = V(o),
 												p = (l ? a ? I : I.filter((function(e) {
 													return V(e) === l
@@ -1081,13 +1081,13 @@
 											allowedAutoPlacements: b
 										}) : n)
 									}), []), y = t.rects.reference, M = t.rects.popper, P = new Map, S = !0, T = g[0], N = 0; N < g.length; N++) {
-									var F = g[N],
-										L = H(F),
-										B = V(F) === C,
+									var A = g[N],
+										L = H(A),
+										B = V(A) === C,
 										R = [O, E].indexOf(L) >= 0,
 										D = R ? "width" : "height",
 										W = oe(t, {
-											placement: F,
+											placement: A,
 											boundary: l,
 											rootBoundary: p,
 											altBoundary: u,
@@ -1100,10 +1100,10 @@
 									if (r && G.push(W[L] <= 0), a && G.push(W[U] <= 0, W[z] <= 0), G.every((function(e) {
 											return e
 										}))) {
-										T = F, S = !1;
+										T = A, S = !1;
 										break
 									}
-									P.set(F, G)
+									P.set(A, G)
 								}
 								if (S)
 									for (var q = function(e) {
@@ -1167,12 +1167,12 @@
 								};
 							if (P) {
 								if (r) {
-									var A = "y" === _ ? O : j,
-										F = "y" === _ ? E : w,
+									var F = "y" === _ ? O : j,
+										A = "y" === _ ? E : w,
 										L = "y" === _ ? "height" : "width",
 										B = P[_],
-										R = P[_] + x[A],
-										D = P[_] - x[F],
+										R = P[_] + x[F],
+										D = P[_] - x[A],
 										W = m ? -T[L] / 2 : 0,
 										z = g === C ? S[L] : T[L],
 										G = g === C ? -T[L] : -S[L],
@@ -1187,8 +1187,8 @@
 											bottom: 0,
 											left: 0
 										},
-										Y = J[A],
-										X = J[F],
+										Y = J[F],
+										X = J[A],
 										K = se(0, S[L], Z[L]),
 										Q = k ? S[L] / 2 - W - K - Y - N : z - K - Y - N,
 										$ = k ? -S[L] / 2 + W + K + X + N : G + K + X + N,
@@ -1643,8 +1643,8 @@
 				T = n("./src/reddit/components/CommentsLink/index.tsx"),
 				N = n("./src/reddit/components/CompactPost/HorizontalVotes/index.tsx"),
 				I = n("./src/reddit/components/EventPost/EventMetaHeader/index.tsx"),
-				A = n("./src/reddit/components/ExpandoButton/index.tsx"),
-				F = n("./src/reddit/components/Flatlist/index.tsx"),
+				F = n("./src/reddit/components/ExpandoButton/index.tsx"),
+				A = n("./src/reddit/components/Flatlist/index.tsx"),
 				L = n("./src/reddit/components/Flatlist/getFlatlistTooltipId.ts"),
 				B = n("./src/reddit/components/JSAPIContainers/index.tsx"),
 				R = n("./src/reddit/components/ModActionsMenu/index.tsx"),
@@ -1703,7 +1703,7 @@
 						isCompact: t,
 						...n
 					} = e;
-					return r.a.createElement(A.a, ke({
+					return r.a.createElement(F.a, ke({
 						className: Object(l.a)(je.a.responsiveExpandoButton, {
 							[je.a.mHideAboveSmallTablets]: !!t,
 							[je.a.mHideBelowSmallTablets]: !t
@@ -1782,7 +1782,7 @@
 						isOverlay: j,
 						isProfilePostListing: k,
 						inSubredditOrProfile: _ = !1,
-						layout: A,
+						layout: F,
 						moderatorPermissions: X,
 						modModeEnabled: oe,
 						onClickPost: se,
@@ -1801,7 +1801,7 @@
 						sendEvent: Pe,
 						shouldShowGalleryTileOption: Te,
 						showPromotedCTA: Ne
-					} = this.props, Ae = !!be.media && be.media.type === x.o.RTJSON, Fe = xe && Ae, Le = Object(J.b)(be.id, j), Be = Object(me.a)(X), Re = Object(pe.a)(X), De = Object(ue.a)(X), We = `-mod-actions-menu-${be.id}`, He = `voting-arrows-${be.id}`, Ve = !!s && Object(v.e)(s) === be.author, Ue = Object(W.d)(be), ze = Object(V.c)(be), Ge = Object(L.a)("View--Reports", be.id, Me), qe = Object(V.a)(be), Ze = !(j || g || y), Je = be.media && be.media.type === x.o.LIVEVIDEO, Ye = e => Pe(Object(h.h)(be.id, e)), Xe = Object(d.t)(be, p), {
+					} = this.props, Fe = !!be.media && be.media.type === x.o.RTJSON, Ae = xe && Fe, Le = Object(J.b)(be.id, j), Be = Object(me.a)(X), Re = Object(pe.a)(X), De = Object(ue.a)(X), We = `-mod-actions-menu-${be.id}`, He = `voting-arrows-${be.id}`, Ve = !!s && Object(v.e)(s) === be.author, Ue = Object(W.d)(be), ze = Object(V.c)(be), Ge = Object(L.a)("View--Reports", be.id, Me), qe = Object(V.a)(be), Ze = !(j || g || y), Je = be.media && be.media.type === x.o.LIVEVIDEO, Ye = e => Pe(Object(h.h)(be.id, e)), Xe = Object(d.t)(be, p), {
 						source: Ke
 					} = Xe, Qe = r.a.createElement(Z.a, {
 						className: Object(l.a)(Ee.a.compactPostStyles, je.a.postContainer, Object(b.a)(this.props), t),
@@ -1911,7 +1911,7 @@
 					}), r.a.createElement(U.a, {
 						className: je.a.modToolsFlatlist,
 						isOverlay: !1,
-						layout: A,
+						layout: F,
 						modModeEnabled: oe,
 						post: be,
 						sendEvent: Pe,
@@ -1919,7 +1919,7 @@
 					}), Be && r.a.createElement(R.a, {
 						dropdownId: We,
 						onClick: () => Ye("post_mod_action_menu")
-					}, r.a.createElement(F.b, null), r.a.createElement(K.a, {
+					}, r.a.createElement(A.b, null), r.a.createElement(K.a, {
 						canEditFlair: Re && ke,
 						hasModPostPerms: Be,
 						hasModFullPerms: De,
@@ -1946,10 +1946,10 @@
 						isOverlay: !1,
 						isProfilePostListing: k,
 						isRecommendationPost: !!be.recommendationContext,
-						layout: A,
+						layout: F,
 						permalink: be.permalink,
 						sendEvent: Pe,
-						showEditPost: Fe,
+						showEditPost: Ae,
 						showEditFlair: ke,
 						dropdownId: `${be.id}-overflow-menu`,
 						useFlatlistBreakpoints: Object(Q.b)({
@@ -3051,13 +3051,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: s.Ee,
+					experimentName: s.Fe,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === s.Me.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === s.Ne.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(o.a)(i.G, a, (e, t) => c(e, t));
 			Object(o.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.a8184d5ac42b68d8c47b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.d68862426fea8aee74fa.js.map
