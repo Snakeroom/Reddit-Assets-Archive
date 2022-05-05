@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.3e88a7e277fdd418064b.js
-// Retrieved at 5/5/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.adc807eb39f77db1358d.js
+// Retrieved at 5/5/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -6769,7 +6769,7 @@
 					[C, N] = Object(s.useState)(),
 					k = function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
-						e ? (N(e), c(Object(p.u)(null == e ? void 0 : e.topic))) : c(Object(p.s)()), n(Object(a.c)({
+						e ? (N(e), c(Object(p.u)(null == e ? void 0 : e.name, null == e ? void 0 : e.id))) : c(Object(p.s)()), n(Object(a.c)({
 							type: f.c.REONBOARDING,
 							selectedInterests: e ? {
 								[e.id]: []
@@ -11796,40 +11796,44 @@
 					action: s.c.SELECT,
 					noun: i.GENDER
 				}),
-				y = (e, t, n, o) => c => ({
-					...Object(r.n)(c),
+				y = (e, t, n, o, c) => d => ({
+					...Object(r.n)(d),
 					source: a,
 					action: e ? s.c.SELECT : s.c.DESELECT,
 					actionInfo: {
-						...Object(r.d)(c),
-						reason: o
+						...Object(r.d)(d),
+						reason: c
 					},
 					noun: t ? i.CATEGORY : i.SUB_CATEGORY,
 					onboarding: {
-						categoryName: n
+						categoryName: n,
+						categoryId: o
 					}
 				}),
-				O = (e, t, n, o) => c => ({
-					...Object(r.n)(c),
+				O = (e, t, n, o, c, d) => l => ({
+					...Object(r.n)(l),
 					source: a,
 					action: e ? s.c.SELECT : s.c.DESELECT,
 					actionInfo: {
-						...Object(r.d)(c),
-						reason: o
+						...Object(r.d)(l),
+						reason: d
 					},
 					noun: i.SUBREDDIT,
 					onboarding: {
 						categoryName: t,
-						subredditName: n
+						categoryId: n,
+						subredditName: o,
+						subredditId: c
 					}
 				}),
-				_ = e => t => ({
-					...Object(r.n)(t),
+				_ = (e, t) => n => ({
+					...Object(r.n)(n),
 					source: a,
 					action: s.c.CLICK,
 					noun: i.VIEW_MORE,
 					onboarding: {
-						categoryName: e
+						categoryName: e,
+						categoryId: t
 					}
 				}),
 				j = () => e => ({
@@ -11844,13 +11848,14 @@
 					action: s.c.CLICK,
 					noun: i.TOPIC_PREVIEW
 				}),
-				N = e => t => ({
-					...Object(r.n)(t),
+				N = (e, t) => n => ({
+					...Object(r.n)(n),
 					source: "topic_chaining_prompt",
 					action: s.c.SELECT,
 					noun: i.CATEGORY,
 					onboarding: {
-						categoryName: e
+						categoryName: e,
+						categoryId: t
 					}
 				}),
 				k = () => e => ({
@@ -11859,27 +11864,30 @@
 					action: s.c.DISMISS,
 					noun: i.TOPIC_PREVIEW
 				}),
-				S = (e, t) => n => ({
-					...Object(r.n)(n),
+				S = (e, t, n) => o => ({
+					...Object(r.n)(o),
 					source: a,
 					action: s.c.VIEW,
 					noun: e ? i.CATEGORY : i.SUB_CATEGORY,
 					onboarding: {
-						categoryName: t
+						categoryName: t,
+						categoryId: n
 					}
 				}),
-				P = (e, t, n) => o => ({
-					...Object(r.n)(o),
+				P = (e, t, n, o, c) => d => ({
+					...Object(r.n)(d),
 					source: a,
 					action: s.c.VIEW,
 					actionInfo: {
-						...Object(r.d)(o),
-						reason: n
+						...Object(r.d)(d),
+						reason: c
 					},
 					noun: i.SUBREDDIT,
 					onboarding: {
 						categoryName: e,
-						subredditName: t
+						categoryId: n,
+						subredditName: t,
+						subredditId: o
 					}
 				})
 		},
@@ -15420,4 +15428,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.3e88a7e277fdd418064b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.adc807eb39f77db1358d.js.map

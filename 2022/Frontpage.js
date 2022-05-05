@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.b9c5808134fff55e21dc.js
-// Retrieved at 5/5/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.605888f01f88b6a36117.js
+// Retrieved at 5/5/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -3341,7 +3341,7 @@
 					[N, j] = Object(a.useState)(),
 					C = function() {
 						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null;
-						e ? (j(e), o(Object(p.u)(null == e ? void 0 : e.topic))) : o(Object(p.s)()), s(Object(c.c)({
+						e ? (j(e), o(Object(p.u)(null == e ? void 0 : e.name, null == e ? void 0 : e.id))) : o(Object(p.s)()), s(Object(c.c)({
 							type: g.c.REONBOARDING,
 							selectedInterests: e ? {
 								[e.id]: []
@@ -7663,4 +7663,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b9c5808134fff55e21dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.605888f01f88b6a36117.js.map

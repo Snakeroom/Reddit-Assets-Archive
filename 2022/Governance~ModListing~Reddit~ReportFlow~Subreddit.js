@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.b807612e9f18cf5219b9.js
-// Retrieved at 5/5/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.e44a905a7ada3e367d13.js
+// Retrieved at 5/5/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -9475,6 +9475,7 @@
 			"use strict";
 			const n = e => ({
 				id: e.id,
+				name: e.name,
 				topic: e.title,
 				children: e.isRoot ? [] : null
 			});
@@ -9495,7 +9496,8 @@
 								id: o,
 								isRoot: i,
 								parents: s,
-								title: r.topic.title
+								title: r.topic.title,
+								name: r.topic.name
 							};
 						return i ? (e.topics.push(n(d)), e.dict[o] = e.topics.length - 1) : s.forEach(t => {
 							var r;
@@ -15274,4 +15276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.b807612e9f18cf5219b9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.e44a905a7ada3e367d13.js.map

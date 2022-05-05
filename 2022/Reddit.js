@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.2901df83dea1a7e9d96b.js
-// Retrieved at 5/5/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.542ad7463cecde85a9f6.js
+// Retrieved at 5/5/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -15315,40 +15315,44 @@
 					action: s.c.SELECT,
 					noun: i.GENDER
 				}),
-				x = (e, t, n, r) => c => ({
-					...Object(o.n)(c),
+				x = (e, t, n, r, c) => l => ({
+					...Object(o.n)(l),
 					source: a,
 					action: e ? s.c.SELECT : s.c.DESELECT,
 					actionInfo: {
-						...Object(o.d)(c),
-						reason: r
+						...Object(o.d)(l),
+						reason: c
 					},
 					noun: t ? i.CATEGORY : i.SUB_CATEGORY,
 					onboarding: {
-						categoryName: n
+						categoryName: n,
+						categoryId: r
 					}
 				}),
-				y = (e, t, n, r) => c => ({
-					...Object(o.n)(c),
+				y = (e, t, n, r, c, l) => d => ({
+					...Object(o.n)(d),
 					source: a,
 					action: e ? s.c.SELECT : s.c.DESELECT,
 					actionInfo: {
-						...Object(o.d)(c),
-						reason: r
+						...Object(o.d)(d),
+						reason: l
 					},
 					noun: i.SUBREDDIT,
 					onboarding: {
 						categoryName: t,
-						subredditName: n
+						categoryId: n,
+						subredditName: r,
+						subredditId: c
 					}
 				}),
-				E = e => t => ({
-					...Object(o.n)(t),
+				E = (e, t) => n => ({
+					...Object(o.n)(n),
 					source: a,
 					action: s.c.CLICK,
 					noun: i.VIEW_MORE,
 					onboarding: {
-						categoryName: e
+						categoryName: e,
+						categoryId: t
 					}
 				}),
 				P = () => e => ({
@@ -15363,13 +15367,14 @@
 					action: s.c.CLICK,
 					noun: i.TOPIC_PREVIEW
 				}),
-				_ = e => t => ({
-					...Object(o.n)(t),
+				_ = (e, t) => n => ({
+					...Object(o.n)(n),
 					source: "topic_chaining_prompt",
 					action: s.c.SELECT,
 					noun: i.CATEGORY,
 					onboarding: {
-						categoryName: e
+						categoryName: e,
+						categoryId: t
 					}
 				}),
 				S = () => e => ({
@@ -15378,27 +15383,30 @@
 					action: s.c.DISMISS,
 					noun: i.TOPIC_PREVIEW
 				}),
-				k = (e, t) => n => ({
-					...Object(o.n)(n),
+				k = (e, t, n) => r => ({
+					...Object(o.n)(r),
 					source: a,
 					action: s.c.VIEW,
 					noun: e ? i.CATEGORY : i.SUB_CATEGORY,
 					onboarding: {
-						categoryName: t
+						categoryName: t,
+						categoryId: n
 					}
 				}),
-				w = (e, t, n) => r => ({
-					...Object(o.n)(r),
+				w = (e, t, n, r, c) => l => ({
+					...Object(o.n)(l),
 					source: a,
 					action: s.c.VIEW,
 					actionInfo: {
-						...Object(o.d)(r),
-						reason: n
+						...Object(o.d)(l),
+						reason: c
 					},
 					noun: i.SUBREDDIT,
 					onboarding: {
 						categoryName: e,
-						subredditName: t
+						categoryId: n,
+						subredditName: t,
+						subredditId: r
 					}
 				})
 		},
@@ -20160,4 +20168,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.2901df83dea1a7e9d96b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.542ad7463cecde85a9f6.js.map
