@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.67bccb148417472d7917.js
-// Retrieved at 5/2/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.604a6d2f1275f362fcbf.js
+// Retrieved at 5/5/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-pages-PaypalFinishPage"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -573,24 +573,24 @@
 					let {
 						gqlContext: o
 					} = r;
+					var s;
 					e(Object(b.savedCardsPending)());
 					try {
 						const t = await Object(h.l)(o());
-						if (t.ok) {
-							const r = t.body;
-							r.errors && r.errors.length && e(Object(b.stripeApiError)(r.errors[0].message));
-							const {
-								savedStripeCards: n
-							} = r.data.identity, o = n.map(e => a()({
-								...e,
-								cardId: e.id
-							}, "id"));
-							e(Object(b.savedCardsSuccess)(o)), o[0] && e(Object(b.selectSavedCard)(o[0].cardId))
-						} else e(Object(b.stripeApiError)(n.fbt._("Something went wrong getting saved cards", null, {
+						if (t.error) throw e(Object(b.stripeApiError)(n.fbt._("Something went wrong getting saved cards", null, {
 							hk: "3p1Q0C"
-						})))
-					} catch (s) {
-						f.c.captureException(s), e(Object(b.savedCardsSuccess)([]))
+						}))), new Error(t.error.type);
+						const r = t.body;
+						(null === (s = r.errors) || void 0 === s ? void 0 : s.length) && e(Object(b.stripeApiError)(r.errors[0].message));
+						const {
+							savedStripeCards: c
+						} = r.data.identity, i = c.map(e => a()({
+							...e,
+							cardId: e.id
+						}, "id"));
+						e(Object(b.savedCardsSuccess)(i)), i[0] && e(Object(b.selectSavedCard)(i[0].cardId))
+					} catch (c) {
+						f.c.captureException(c), e(Object(b.savedCardsSuccess)([]))
 					}
 				}, I = e => async (t, r, n) => {
 					let {
@@ -1058,4 +1058,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.67bccb148417472d7917.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-pages-PaypalFinishPage.604a6d2f1275f362fcbf.js.map

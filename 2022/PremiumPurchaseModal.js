@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.354140449c1aa62ddc79.js
-// Retrieved at 5/5/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.8cf5437e5bb47367c7d5.js
+// Retrieved at 5/5/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -758,24 +758,24 @@
 					let {
 						gqlContext: a
 					} = r;
+					var c;
 					e(Object(y.savedCardsPending)());
 					try {
 						const t = await Object(C.l)(a());
-						if (t.ok) {
-							const r = t.body;
-							r.errors && r.errors.length && e(Object(y.stripeApiError)(r.errors[0].message));
-							const {
-								savedStripeCards: n
-							} = r.data.identity, a = n.map(e => o()({
-								...e,
-								cardId: e.id
-							}, "id"));
-							e(Object(y.savedCardsSuccess)(a)), a[0] && e(Object(y.selectSavedCard)(a[0].cardId))
-						} else e(Object(y.stripeApiError)(n.fbt._("Something went wrong getting saved cards", null, {
+						if (t.error) throw e(Object(y.stripeApiError)(n.fbt._("Something went wrong getting saved cards", null, {
 							hk: "3p1Q0C"
-						})))
-					} catch (c) {
-						p.c.captureException(c), e(Object(y.savedCardsSuccess)([]))
+						}))), new Error(t.error.type);
+						const r = t.body;
+						(null === (c = r.errors) || void 0 === c ? void 0 : c.length) && e(Object(y.stripeApiError)(r.errors[0].message));
+						const {
+							savedStripeCards: s
+						} = r.data.identity, i = s.map(e => o()({
+							...e,
+							cardId: e.id
+						}, "id"));
+						e(Object(y.savedCardsSuccess)(i)), i[0] && e(Object(y.selectSavedCard)(i[0].cardId))
+					} catch (s) {
+						p.c.captureException(s), e(Object(y.savedCardsSuccess)([]))
 					}
 				}, I = e => async (t, r, n) => {
 					let {
@@ -3387,4 +3387,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.354140449c1aa62ddc79.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.8cf5437e5bb47367c7d5.js.map

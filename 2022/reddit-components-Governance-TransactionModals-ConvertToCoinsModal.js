@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f6fa455f9fe8886f9cea.js
-// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f77415d198906c0d4303.js
+// Retrieved at 5/5/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -613,24 +613,24 @@
 					let {
 						gqlContext: a
 					} = n;
+					var s;
 					e(Object(v.savedCardsPending)());
 					try {
 						const t = await Object(O.l)(a());
-						if (t.ok) {
-							const n = t.body;
-							n.errors && n.errors.length && e(Object(v.stripeApiError)(n.errors[0].message));
-							const {
-								savedStripeCards: r
-							} = n.data.identity, a = r.map(e => c()({
-								...e,
-								cardId: e.id
-							}, "id"));
-							e(Object(v.savedCardsSuccess)(a)), a[0] && e(Object(v.selectSavedCard)(a[0].cardId))
-						} else e(Object(v.stripeApiError)(r.fbt._("Something went wrong getting saved cards", null, {
+						if (t.error) throw e(Object(v.stripeApiError)(r.fbt._("Something went wrong getting saved cards", null, {
 							hk: "3p1Q0C"
-						})))
-					} catch (s) {
-						m.c.captureException(s), e(Object(v.savedCardsSuccess)([]))
+						}))), new Error(t.error.type);
+						const n = t.body;
+						(null === (s = n.errors) || void 0 === s ? void 0 : s.length) && e(Object(v.stripeApiError)(n.errors[0].message));
+						const {
+							savedStripeCards: o
+						} = n.data.identity, i = o.map(e => c()({
+							...e,
+							cardId: e.id
+						}, "id"));
+						e(Object(v.savedCardsSuccess)(i)), i[0] && e(Object(v.selectSavedCard)(i[0].cardId))
+					} catch (o) {
+						m.c.captureException(o), e(Object(v.savedCardsSuccess)([]))
 					}
 				}, I = e => async (t, n, r) => {
 					let {
@@ -2686,4 +2686,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f6fa455f9fe8886f9cea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ConvertToCoinsModal.f77415d198906c0d4303.js.map

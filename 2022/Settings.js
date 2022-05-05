@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.374aa08addbc5baba885.js
-// Retrieved at 5/5/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.2d4ffc3177a688424cfd.js
+// Retrieved at 5/5/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -977,24 +977,24 @@
 					let {
 						gqlContext: r
 					} = n;
+					var o;
 					e(Object(f.savedCardsPending)());
 					try {
 						const t = await Object(x.l)(r());
-						if (t.ok) {
-							const n = t.body;
-							n.errors && n.errors.length && e(Object(f.stripeApiError)(n.errors[0].message));
-							const {
-								savedStripeCards: s
-							} = n.data.identity, r = s.map(e => a()({
-								...e,
-								cardId: e.id
-							}, "id"));
-							e(Object(f.savedCardsSuccess)(r)), r[0] && e(Object(f.selectSavedCard)(r[0].cardId))
-						} else e(Object(f.stripeApiError)(s.fbt._("Something went wrong getting saved cards", null, {
+						if (t.error) throw e(Object(f.stripeApiError)(s.fbt._("Something went wrong getting saved cards", null, {
 							hk: "3p1Q0C"
-						})))
-					} catch (o) {
-						p.c.captureException(o), e(Object(f.savedCardsSuccess)([]))
+						}))), new Error(t.error.type);
+						const n = t.body;
+						(null === (o = n.errors) || void 0 === o ? void 0 : o.length) && e(Object(f.stripeApiError)(n.errors[0].message));
+						const {
+							savedStripeCards: i
+						} = n.data.identity, l = i.map(e => a()({
+							...e,
+							cardId: e.id
+						}, "id"));
+						e(Object(f.savedCardsSuccess)(l)), l[0] && e(Object(f.selectSavedCard)(l[0].cardId))
+					} catch (i) {
+						p.c.captureException(i), e(Object(f.savedCardsSuccess)([]))
 					}
 				}, I = e => async (t, n, s) => {
 					let {
@@ -14112,4 +14112,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.374aa08addbc5baba885.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.2d4ffc3177a688424cfd.js.map

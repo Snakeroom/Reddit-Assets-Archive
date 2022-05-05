@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.8e452b28734ffe62cae2.js
-// Retrieved at 5/5/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.f2fdb1488ba6b1d52049.js
+// Retrieved at 5/5/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -252,24 +252,24 @@
 					let {
 						gqlContext: n
 					} = a;
+					var o;
 					e(Object(g.savedCardsPending)());
 					try {
 						const t = await Object(x.l)(n());
-						if (t.ok) {
-							const a = t.body;
-							a.errors && a.errors.length && e(Object(g.stripeApiError)(a.errors[0].message));
-							const {
-								savedStripeCards: r
-							} = a.data.identity, n = r.map(e => s()({
-								...e,
-								cardId: e.id
-							}, "id"));
-							e(Object(g.savedCardsSuccess)(n)), n[0] && e(Object(g.selectSavedCard)(n[0].cardId))
-						} else e(Object(g.stripeApiError)(r.fbt._("Something went wrong getting saved cards", null, {
+						if (t.error) throw e(Object(g.stripeApiError)(r.fbt._("Something went wrong getting saved cards", null, {
 							hk: "3p1Q0C"
-						})))
-					} catch (o) {
-						p.c.captureException(o), e(Object(g.savedCardsSuccess)([]))
+						}))), new Error(t.error.type);
+						const a = t.body;
+						(null === (o = a.errors) || void 0 === o ? void 0 : o.length) && e(Object(g.stripeApiError)(a.errors[0].message));
+						const {
+							savedStripeCards: c
+						} = a.data.identity, d = c.map(e => s()({
+							...e,
+							cardId: e.id
+						}, "id"));
+						e(Object(g.savedCardsSuccess)(d)), d[0] && e(Object(g.selectSavedCard)(d[0].cardId))
+					} catch (c) {
+						p.c.captureException(c), e(Object(g.savedCardsSuccess)([]))
 					}
 				}, M = e => async (t, a, r) => {
 					let {
@@ -2051,4 +2051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.8e452b28734ffe62cae2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.f2fdb1488ba6b1d52049.js.map

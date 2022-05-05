@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.e12117280e6c2b4d8f5c.js
-// Retrieved at 5/5/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.f3344e52c5329ab86a1b.js
+// Retrieved at 5/5/2022, 10:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1107,24 +1107,24 @@
 					let {
 						gqlContext: a
 					} = r;
+					var o;
 					e(Object(g.savedCardsPending)());
 					try {
 						const t = await Object(C.l)(a());
-						if (t.ok) {
-							const r = t.body;
-							r.errors && r.errors.length && e(Object(g.stripeApiError)(r.errors[0].message));
-							const {
-								savedStripeCards: n
-							} = r.data.identity, a = n.map(e => s()({
-								...e,
-								cardId: e.id
-							}, "id"));
-							e(Object(g.savedCardsSuccess)(a)), a[0] && e(Object(g.selectSavedCard)(a[0].cardId))
-						} else e(Object(g.stripeApiError)(n.fbt._("Something went wrong getting saved cards", null, {
+						if (t.error) throw e(Object(g.stripeApiError)(n.fbt._("Something went wrong getting saved cards", null, {
 							hk: "3p1Q0C"
-						})))
-					} catch (o) {
-						m.c.captureException(o), e(Object(g.savedCardsSuccess)([]))
+						}))), new Error(t.error.type);
+						const r = t.body;
+						(null === (o = r.errors) || void 0 === o ? void 0 : o.length) && e(Object(g.stripeApiError)(r.errors[0].message));
+						const {
+							savedStripeCards: c
+						} = r.data.identity, i = c.map(e => s()({
+							...e,
+							cardId: e.id
+						}, "id"));
+						e(Object(g.savedCardsSuccess)(i)), i[0] && e(Object(g.selectSavedCard)(i[0].cardId))
+					} catch (c) {
+						m.c.captureException(c), e(Object(g.savedCardsSuccess)([]))
 					}
 				}, S = e => async (t, r, n) => {
 					let {
@@ -4088,4 +4088,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.e12117280e6c2b4d8f5c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.f3344e52c5329ab86a1b.js.map
