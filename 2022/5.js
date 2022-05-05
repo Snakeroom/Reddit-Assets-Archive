@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/5.5c7e68e55acefd2650f2.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/5.9848376e73342fb33516.js
+// Retrieved at 5/5/2022, 6:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[5], {
 		"./node_modules/@reddit/crypto/react/nft-product-card/index.es.js": function(e, t, n) {
@@ -6785,20 +6785,21 @@
 				nft: e,
 				isFullWidth: t,
 				cardClassName: n,
-				showCloseOnBack: a
+				showCloseOnBack: a,
+				isControlVisible: s
 			}) => {
-				const s = Object(o.c)(),
-					[l, c] = Object(r.useState)(0),
-					[u, d] = Object(r.useState)(!1),
-					[f, p] = Object(r.useState)(!1),
-					h = Math.max(0, l - 1),
-					m = l,
-					v = 0 === h;
+				const l = Object(o.c)(),
+					[c, u] = Object(r.useState)(0),
+					[d, f] = Object(r.useState)(!1),
+					[p, h] = Object(r.useState)(!1),
+					m = Math.max(0, c - 1),
+					v = c,
+					g = 0 === m;
 				Object(r.useEffect)(() => {
-					d(1 === l || 2 === l)
-				}, [l]);
-				const g = Object(r.useCallback)(e => {
-						c(t => (function(e, t) {
+					f(1 === c || 2 === c)
+				}, [c]);
+				const y = Object(r.useCallback)(e => {
+						u(t => (function(e, t) {
 							switch (e) {
 								case 0:
 									if (t) return 1;
@@ -6809,20 +6810,20 @@
 							return e
 						})(t, e))
 					}, []),
-					y = Object(r.useCallback)(e => {
-						p(!0), c(e => {
+					b = Object(r.useCallback)(e => {
+						h(!0), u(e => {
 							let t = e - 1;
 							return t = t >= 0 ? t : 2
 						})
-					}, [l]),
-					b = Object(r.useCallback)(e => {
-						p(!0), c(e => {
+					}, [c]),
+					k = Object(r.useCallback)(e => {
+						h(!0), u(e => {
 							let t = e + 1;
 							return t = t < 3 ? t : 0
 						})
-					}, [l]),
-					k = Object(r.useCallback)(() => {
-						p(!1)
+					}, [c]),
+					S = Object(r.useCallback)(() => {
+						h(!1)
 					}, []);
 				return i.a.createElement("div", {
 					className: mi(iu.carousel, {
@@ -6830,34 +6831,34 @@
 					})
 				}, i.a.createElement(Ca, {
 					axis: "x",
-					index: h,
+					index: m,
 					className: mi(iu.swiper, !1),
-					onTransitionEnd: k,
+					onTransitionEnd: S,
 					slideClassName: iu.pane,
 					springConfig: {
 						duration: "2s",
 						easeFunction: "cubic-bezier(0.17,0.84,0.44,1)",
 						delay: "0s"
 					},
-					onChangeIndex: c,
+					onChangeIndex: u,
 					enableMouseEvents: !0
 				}, i.a.createElement(i.a.Fragment, null, i.a.createElement(Zc, {
-					animateFlip: v,
-					animateBackground: v,
-					onFlip: g,
-					flipped: u,
+					animateFlip: g,
+					animateBackground: g,
+					onFlip: y,
+					flipped: d,
 					nft: e,
 					className: n,
 					showCloseOnBack: a
-				}), i.a.createElement("p", {
+				}), s && i.a.createElement("p", {
 					className: iu.nftDetailText
-				}, s.inline("A unique user profile card", "Desctiption under the NFT card: different visual representation for the owner"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
+				}, l.inline("A unique user profile card", "Desctiption under the NFT card: different visual representation for the owner"))), i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
 					className: iu.avatarImage,
 					src: e.nftImageUrl,
-					alt: s.inline("NFT image", "alt text for NFT image")
+					alt: l.inline("NFT image", "alt text for NFT image")
 				}), i.a.createElement("p", {
 					className: iu.nftDetailText
-				}, s.inline("One of a kind or limited edition", "Description under the NFT image: exclusive item")))), i.a.createElement(pi, {
+				}, l.inline("One of a kind or limited edition", "Description under the NFT image: exclusive item")))), s && i.a.createElement(pi, {
 					steps: 3,
 					className: iu.stepper,
 					position: "static",
@@ -6867,17 +6868,17 @@
 						dot: iu.dot,
 						dotActive: iu.activeDot
 					},
-					activeStep: m,
+					activeStep: v,
 					nextButton: i.a.createElement(ru, {
 						grey: !0,
 						direction: "right",
-						onClick: b,
+						onClick: k,
 						className: iu.rightArrowButton
 					}),
 					backButton: i.a.createElement(ru, {
 						grey: !0,
 						direction: "left",
-						onClick: y,
+						onClick: b,
 						className: iu.leftArrowButton
 					})
 				}))
@@ -6885,13 +6886,15 @@
 			var ou = "_avatarCard_1eyk7_1";
 			const su = ({
 				nft: e,
-				className: t
+				className: t,
+				isControlVisible: n
 			}) => i.a.createElement("div", {
 				className: t
 			}, i.a.createElement(au, {
 				nft: e,
 				cardClassName: ou,
-				showCloseOnBack: !1
+				showCloseOnBack: !1,
+				isControlVisible: n
 			}));
 			var lu = {
 				kind: "Document",
@@ -7336,11 +7339,11 @@
 						r && n.definitions.push(r)
 					}))
 				}(lu, "getNftDetails");
-			var du = "_container_144be_30",
-				fu = "_section_144be_36",
-				pu = "_panel_144be_39",
-				hu = "_fullView_144be_44",
-				mu = "_background_144be_47";
+			var du = "_container_1x120_30",
+				fu = "_section_1x120_37",
+				pu = "_panel_1x120_40",
+				hu = "_fullView_1x120_45",
+				mu = "_background_1x120_48";
 			const vu = ({
 					className: e,
 					children: t
@@ -7352,13 +7355,12 @@
 					mainContent: t,
 					panelContent: n,
 					className: r,
-					onClose: a,
-					useCloseConfirmation: o = !0
+					onClose: a
 				}) => i.a.createElement("div", {
 					className: mi(du, r, {
 						[hu]: !e
 					})
-				}, a && i.a.createElement(c.b, {
+				}, a && i.a.createElement(c.c, {
 					theme: "light",
 					onClick: a,
 					contained: !0
@@ -7570,112 +7572,116 @@
 					price: u,
 					isCheckoutView: d,
 					onPurchaseClick: f,
-					itemTotalQuantity: p
-				}) => i.a.createElement(gu, {
-					className: mi(xu, {
-						[Eu]: l
-					}),
-					onClose: n,
-					isPanelShowing: o,
-					useCloseConfirmation: !1,
-					mainContent: i.a.createElement(su, {
-						nft: e,
-						className: mi(_u, t)
-					}),
-					panelContent: i.a.createElement("div", {
-						className: Nu
-					}, i.a.createElement("div", {
-						className: Cu
-					}, i.a.createElement("h3", {
-						className: Ou
-					}, e.title), i.a.createElement("div", {
-						className: Pu
-					}, !e.artist && i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
-						src: "https://www.redditstatic.com/crypto-assets/v2/reddit-d9fb338c35.svg",
-						className: ju,
-						alt: "reddit logo"
-					}), i.a.createElement(Ba, {
-						desc: "subtitle: art is made by "
-					}, "by Reddit")), !!e.artist && i.a.createElement(Ba, {
-						desc: "subtitle: art is made by "
-					}, "by", " ", i.a.createElement(Wa, {
-						name: "author of the art"
-					}, e.artist.redditorInfo.displayName)))), i.a.createElement("div", {
-						className: Tu
-					}, i.a.createElement("div", {
-						className: Lu
-					}, e.description), i.a.createElement("div", {
-						className: zu
-					}, i.a.createElement("h3", {
-						className: qu
-					}, i.a.createElement(Ba, {
-						desc: "Header for the table of benefits and features of the NFT item"
-					}, "NFT UTILITY & BENEFITS")), i.a.createElement(od, {
-						isNightMode: l
-					})), i.a.createElement("div", {
-						className: Xu
-					}, i.a.createElement("h3", {
-						className: qu
-					}, i.a.createElement(Ba, {
-						desc: "Header for the section with external links to NFT item details"
-					}, "NFT Details")), i.a.createElement(Ku, {
-						blockchainExplorerUrl: e.blockchainExplorerUrl,
-						ipfsUrl: e.ipfsUrl,
-						metadataUrl: e.metadataUrl
-					})), !!e.artist && i.a.createElement("div", {
-						className: Xu
-					}, i.a.createElement("h3", {
-						className: qu
-					}, i.a.createElement(Ba, {
-						desc: "Header: Artist Details"
-					}, "About this Creator")), i.a.createElement("div", null, e.artist.redditorInfo.profile.publicDescriptionText), i.a.createElement("p", {
-						className: Hu
-					}, i.a.createElement(Ba, {
-						desc: "NFT resale info"
-					}, "Secondary sales of this item will have a 5% royalty fee.", " ", i.a.createElement(c.e, {
-						className: $u,
-						href: ""
-					}, "Learn about our platform fees"))))), s === e.ownerId && i.a.createElement("div", {
-						className: Au
-					}, a ? i.a.createElement(oc, {
-						theme: "blue_inverted",
-						className: Fu,
-						onClick: () => a(e.outfitId)
-					}, i.a.createElement(Ba, {
-						desc: "Button: view the item"
-					}, "View Your NFT")) : i.a.createElement(oc, {
-						theme: "blue_inverted",
-						className: Fu
-					}, i.a.createElement(bu, {
-						className: Du
-					}), i.a.createElement(Ba, {
-						desc: "Button: transfer the item"
-					}, "Transfer")), r && i.a.createElement(oc, {
-						theme: "blue",
-						className: Fu,
-						onClick: () => r(e.outfitId)
-					}, i.a.createElement(Ba, {
-						desc: "Button: equip the item as user avatar"
-					}, "Set as Avatar"))), d && u && i.a.createElement("div", {
-						className: Au
-					}, i.a.createElement("div", {
-						className: Mu
-					}, i.a.createElement("span", {
-						className: Iu
-					}, "$", yu(u)), i.a.createElement("span", {
-						className: Ru
-					}, i.a.createElement(Ba, {
-						desc: "Label: Price"
-					}, "Edition of", " ", i.a.createElement(Wa, {
-						name: "total quantity"
-					}, p)))), i.a.createElement(oc, {
-						theme: "blue",
-						className: Fu,
-						onClick: f
-					}, i.a.createElement(Ba, {
-						desc: "CTA: Buy Now"
-					}, "Buy Now"))))
-				}),
+					itemTotalQuantity: p,
+					isControlVisible: h
+				}) => {
+					var m;
+					return i.a.createElement(gu, {
+						className: mi(xu, {
+							[Eu]: l
+						}),
+						onClose: n,
+						isPanelShowing: o,
+						mainContent: i.a.createElement(su, {
+							nft: e,
+							isControlVisible: h,
+							className: mi(_u, t)
+						}),
+						panelContent: i.a.createElement("div", {
+							className: Nu
+						}, i.a.createElement("div", {
+							className: Cu
+						}, i.a.createElement("h3", {
+							className: Ou
+						}, e.title), i.a.createElement("div", {
+							className: Pu
+						}, !e.artist && i.a.createElement(i.a.Fragment, null, i.a.createElement("img", {
+							src: "https://www.redditstatic.com/crypto-assets/v2/reddit-d9fb338c35.svg",
+							className: ju,
+							alt: "reddit logo"
+						}), i.a.createElement(Ba, {
+							desc: "subtitle: art is made by "
+						}, "by Reddit")), !!e.artist && i.a.createElement(Ba, {
+							desc: "subtitle: art is made by "
+						}, "by", " ", i.a.createElement(Wa, {
+							name: "author of the art"
+						}, e.artist.redditorInfo.displayName)))), i.a.createElement("div", {
+							className: Tu
+						}, i.a.createElement("div", {
+							className: Lu
+						}, e.description), i.a.createElement("div", {
+							className: zu
+						}, i.a.createElement("h3", {
+							className: qu
+						}, i.a.createElement(Ba, {
+							desc: "Header for the table of benefits and features of the NFT item"
+						}, "NFT UTILITY & BENEFITS")), i.a.createElement(od, {
+							isNightMode: l
+						})), i.a.createElement("div", {
+							className: Xu
+						}, i.a.createElement("h3", {
+							className: qu
+						}, i.a.createElement(Ba, {
+							desc: "Header for the section with external links to NFT item details"
+						}, "NFT Details")), i.a.createElement(Ku, {
+							blockchainExplorerUrl: e.blockchainExplorerUrl,
+							ipfsUrl: e.ipfsUrl,
+							metadataUrl: e.metadataUrl
+						})), !!e.artist && i.a.createElement("div", {
+							className: Xu
+						}, !!(null == (m = e.artist.redditorInfo.profile) ? void 0 : m.publicDescriptionText) && i.a.createElement(i.a.Fragment, null, i.a.createElement("h3", {
+							className: qu
+						}, i.a.createElement(Ba, {
+							desc: "Header: Artist Details"
+						}, "About this Creator")), i.a.createElement("div", null, e.artist.redditorInfo.profile.publicDescriptionText)), i.a.createElement("p", {
+							className: Hu
+						}, i.a.createElement(Ba, {
+							desc: "NFT resale info"
+						}, "Secondary sales of this item will have a 5% royalty fee.", " ", i.a.createElement(c.f, {
+							className: $u,
+							href: ""
+						}, "Learn about our platform fees"))))), s === e.ownerId && i.a.createElement("div", {
+							className: Au
+						}, a ? i.a.createElement(oc, {
+							theme: "blue_inverted",
+							className: Fu,
+							onClick: () => a(e.outfitId)
+						}, i.a.createElement(Ba, {
+							desc: "Button: view the item"
+						}, "View Your NFT")) : i.a.createElement(oc, {
+							theme: "blue_inverted",
+							className: Fu
+						}, i.a.createElement(bu, {
+							className: Du
+						}), i.a.createElement(Ba, {
+							desc: "Button: transfer the item"
+						}, "Transfer")), r && i.a.createElement(oc, {
+							theme: "blue",
+							className: Fu,
+							onClick: () => r(e.outfitId)
+						}, i.a.createElement(Ba, {
+							desc: "Button: equip the item as user avatar"
+						}, "Set as Avatar"))), d && u && i.a.createElement("div", {
+							className: Au
+						}, i.a.createElement("div", {
+							className: Mu
+						}, i.a.createElement("span", {
+							className: Iu
+						}, "$", yu(u)), i.a.createElement("span", {
+							className: Ru
+						}, i.a.createElement(Ba, {
+							desc: "Label: Price"
+						}, "Edition of", " ", i.a.createElement(Wa, {
+							name: "total quantity"
+						}, p)))), i.a.createElement(oc, {
+							theme: "blue",
+							className: Fu,
+							onClick: f
+						}, i.a.createElement(Ba, {
+							desc: "CTA: Buy Now"
+						}, "Buy Now"))))
+					})
+				},
 				ld = (cd = e => {
 					var t = e,
 						{
@@ -7723,7 +7729,7 @@
 						className: Ju
 					}, i.a.createElement("div", {
 						className: Qu
-					}, i.a.createElement(c.f, null), m && i.a.createElement(c.c, null))) : i.a.createElement(sd, g({
+					}, i.a.createElement(c.g, null), m && i.a.createElement(c.d, null))) : i.a.createElement(sd, g({
 						nft: u,
 						isPanelShowing: !0,
 						isNightMode: l.nightModeActive()
@@ -7733,4 +7739,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.5c7e68e55acefd2650f2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.9848376e73342fb33516.js.map
