@@ -1,8 +1,8 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.04b90e541c212eeb765e.js
-// Retrieved at 5/4/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.565b61da26a2f40290c2.js
+// Retrieved at 5/5/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
-		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
+		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, r) {
 			e.exports = {
 				Container: "_2jJNpBqXMbbyOiGCElTYxZ",
 				container: "_2jJNpBqXMbbyOiGCElTYxZ",
@@ -17,30 +17,30 @@
 				active: "_191Jmn6u4ejtQPbRj1uMze"
 			}
 		},
-		"./src/reddit/components/InFeedPostCreation/index.tsx": function(e, t, n) {
+		"./src/reddit/components/InFeedPostCreation/index.tsx": function(e, t, r) {
 			"use strict";
-			n.r(t);
-			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/react/index.js"),
-				o = n.n(s),
-				c = n("./node_modules/react-redux/es/index.js"),
-				i = n("./node_modules/react-router-redux/es/index.js"),
-				a = n("./node_modules/reselect/es/index.js"),
-				d = n("./src/lib/constants/index.ts"),
-				l = n("./src/lib/lessComponent.tsx"),
-				u = n("./src/reddit/actions/tooltip.ts"),
-				p = n("./src/reddit/components/InfoTextTooltip/index.tsx"),
-				m = n("./src/reddit/components/TrackingHelper/index.tsx"),
-				b = n("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
-				I = n("./src/reddit/controls/Button/index.tsx"),
-				x = n("./src/reddit/controls/InternalLink/index.tsx"),
-				_ = n("./src/reddit/helpers/trackers/postComposer.ts"),
-				f = n("./src/reddit/icons/fonts/index.tsx"),
-				E = n("./src/reddit/selectors/experiments/onlineIndicator.ts"),
-				O = n("./src/reddit/selectors/subreddit.ts"),
-				U = n("./src/reddit/selectors/user.ts"),
-				N = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
-				j = n.n(N);
+			r.r(t);
+			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
+				s = r("./node_modules/react/index.js"),
+				o = r.n(s),
+				c = r("./node_modules/react-redux/es/index.js"),
+				i = r("./node_modules/react-router-redux/es/index.js"),
+				a = r("./node_modules/reselect/es/index.js"),
+				d = r("./src/lib/constants/index.ts"),
+				l = r("./src/lib/lessComponent.tsx"),
+				u = r("./src/reddit/actions/tooltip.ts"),
+				p = r("./src/reddit/components/InfoTextTooltip/index.tsx"),
+				m = r("./src/reddit/components/TrackingHelper/index.tsx"),
+				b = r("./src/reddit/components/UserIcon/CurrentUserIcon.tsx"),
+				I = r("./src/reddit/controls/Button/index.tsx"),
+				x = r("./src/reddit/controls/InternalLink/index.tsx"),
+				_ = r("./src/reddit/helpers/trackers/postComposer.ts"),
+				f = r("./src/reddit/icons/fonts/index.tsx"),
+				E = r("./src/reddit/selectors/experiments/onlineIndicator.ts"),
+				O = r("./src/reddit/selectors/subreddit.ts"),
+				U = r("./src/reddit/selectors/user.ts"),
+				N = r("./src/reddit/components/InFeedPostCreation/index.m.less"),
+				j = r.n(N);
 			const C = l.a.wrapped(b.a, "CurrentUserIcon", j.a);
 			var P;
 			! function(e) {
@@ -73,22 +73,22 @@
 					subreddit: O.z,
 					subredditAboutInfo: O.w
 				}),
-				v = Object(c.b)(M, e => ({
+				L = Object(c.b)(M, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
 					toggleTooltip: t => e(Object(u.h)({
 						tooltipId: t
 					}))
 				})),
-				L = () => r.fbt._("Create Media Post", null, {
+				g = () => n.fbt._("Create Media Post", null, {
 					hk: "3T3YMO"
 				}),
-				g = () => r.fbt._("Create Link Post", null, {
+				v = () => n.fbt._("Create Link Post", null, {
 					hk: "JUQfs"
 				});
-			t.default = Object(m.c)(v(e => {
+			t.default = Object(m.c)(L(e => {
 				let {
 					currentUser: t,
-					isPresenceConsumptionExpEnabled: n,
+					isPresenceConsumptionExpEnabled: r,
 					isPresenceTogglePref: s,
 					navigateTo: c,
 					sendEvent: i,
@@ -103,19 +103,19 @@
 							link: !0,
 							media: !0
 						};
-						const n = t && t.allowedPostTypes;
-						if (!n) return {
+						const r = t && t.allowedPostTypes;
+						if (!r) return {
 							link: !0,
 							media: !0
 						};
 						const {
-							images: r,
+							images: n,
 							links: s,
 							videos: o
-						} = n;
+						} = r;
 						return {
 							link: s,
-							media: (o || r) && !e.isNSFW
+							media: (o || n) && !e.isNSFW
 						}
 					}(a, l),
 					O = e => {
@@ -128,7 +128,7 @@
 					U = () => {
 						O(d.Xb.POST), c(b)
 					},
-					N = n && s,
+					N = r && s,
 					M = t ? o.a.createElement(x.a, {
 						className: j.a.UserIconWrapper,
 						to: t.url
@@ -144,13 +144,13 @@
 					onChange: U,
 					onClick: U,
 					onKeyPress: U,
-					placeholder: r.fbt._("Create Post", null, {
+					placeholder: n.fbt._("Create Post", null, {
 						hk: "OcnKS"
 					}),
 					type: "text"
 				}), E.media && o.a.createElement(I.t, {
 					className: j.a.Button,
-					"aria-label": L(),
+					"aria-label": g(),
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
@@ -164,13 +164,13 @@
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: P.Media,
-					text: L()
+					text: g()
 				})), E.link && o.a.createElement(I.t, {
 					className: j.a.Button,
 					priority: I.c.Plain,
 					kind: I.b.InternalLink,
 					size: I.d.M,
-					"aria-label": g(),
+					"aria-label": v(),
 					id: P.Link,
 					onClick: () => O(d.Xb.LINK_ONLY),
 					onMouseEnter: () => m(P.Link),
@@ -181,30 +181,30 @@
 				}, o.a.createElement(p.c, {
 					caretOnTop: !0,
 					tooltipId: P.Media,
-					text: L()
+					text: g()
 				})))
 			}))
 		},
-		"./src/reddit/components/UserIcon/CurrentUserIcon.tsx": function(e, t, n) {
+		"./src/reddit/components/UserIcon/CurrentUserIcon.tsx": function(e, t, r) {
 			"use strict";
-			var r = n("./src/lib/classNames/index.ts"),
-				s = n("./node_modules/react/index.js"),
-				o = n.n(s),
-				c = n("./node_modules/react-redux/es/index.js"),
-				i = n("./node_modules/reselect/es/index.js"),
-				a = n("./src/reddit/helpers/userSnoovatar/index.ts"),
-				d = n("./src/reddit/selectors/user.ts"),
-				l = n("./src/reddit/components/UserIcon/PresenceDot.tsx"),
-				u = n("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
-				p = n("./src/reddit/components/UserIcon/UserIcon.tsx"),
-				m = n("./src/reddit/components/UserIcon/UserIcon.m.less"),
-				b = n.n(m);
+			var n = r("./src/lib/classNames/index.ts"),
+				s = r("./node_modules/react/index.js"),
+				o = r.n(s),
+				c = r("./node_modules/react-redux/es/index.js"),
+				i = r("./node_modules/reselect/es/index.js"),
+				a = r("./src/reddit/helpers/userSnoovatar/index.ts"),
+				d = r("./src/reddit/selectors/user.ts"),
+				l = r("./src/reddit/components/UserIcon/PresenceDot.tsx"),
+				u = r("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
+				p = r("./src/reddit/components/UserIcon/UserIcon.tsx"),
+				m = r("./src/reddit/components/UserIcon/UserIcon.m.less"),
+				b = r.n(m);
 
 			function I() {
 				return (I = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
-						var n = arguments[t];
-						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
+						var r = arguments[t];
+						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
 					}
 					return e
 				}).apply(this, arguments)
@@ -219,13 +219,13 @@
 			t.a = _(e => {
 				const {
 					currentUser: t,
-					shouldShowPresenceIndicator: n,
+					shouldShowPresenceIndicator: r,
 					isPresenceUserPrefEnabled: s,
 					wrapperClassName: c,
 					...i
 				} = e, d = Object(a.b)(null == t ? void 0 : t.accountIcon);
 				return o.a.createElement("div", {
-					className: Object(r.a)(b.a.currentUserIconWrapper, c)
+					className: Object(n.a)(b.a.currentUserIconWrapper, c)
 				}, d ? o.a.createElement(u.a, {
 					headshot: t.accountIcon,
 					className: e.className
@@ -233,52 +233,52 @@
 					iconUrl: t ? t.accountIcon : void 0,
 					isCurrentUser: !0,
 					isNSFW: !!t && t.isNSFW
-				})), n && o.a.createElement(l.default, {
+				})), r && o.a.createElement(l.default, {
 					showPresence: !0
 				}))
 			})
 		},
-		"./src/reddit/selectors/experiments/onlineIndicator.ts": function(e, t, n) {
+		"./src/reddit/selectors/experiments/onlineIndicator.ts": function(e, t, r) {
 			"use strict";
-			n.d(t, "d", (function() {
+			r.d(t, "d", (function() {
 				return c
-			})), n.d(t, "c", (function() {
+			})), r.d(t, "c", (function() {
 				return i
-			})), n.d(t, "b", (function() {
+			})), r.d(t, "b", (function() {
 				return a
-			})), n.d(t, "a", (function() {
+			})), r.d(t, "a", (function() {
 				return d
 			}));
-			var r = n("./src/reddit/constants/experiments.ts"),
-				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				o = n("./src/reddit/selectors/experiments/presence.ts");
+			var n = r("./src/reddit/constants/experiments.ts"),
+				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
+				o = r("./src/reddit/selectors/experiments/presence.ts");
 			const c = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Ge
-					}) === r.wd
+						experimentName: n.Be
+					}) === n.rd
 				},
 				i = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.Fe
-					}) === r.wd
+						experimentName: n.Ae
+					}) === n.rd
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.we
-					}) === r.wd
+						experimentName: n.re
+					}) === n.rd
 				},
 				d = e => {
 					if (Object(o.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: r.ve
-					}) === r.wd
+						experimentName: n.qe
+					}) === n.rd
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.04b90e541c212eeb765e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.565b61da26a2f40290c2.js.map

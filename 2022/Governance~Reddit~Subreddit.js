@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.daaf0ebcbf3d3f5d0e74.js
-// Retrieved at 5/4/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.3b594cb67e184767184d.js
+// Retrieved at 5/5/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit", "reddit-components-BlankPost"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -395,8 +395,8 @@
 				j = n("./src/reddit/selectors/appBadges.ts"),
 				v = (n("./src/reddit/selectors/notificationPrefs.ts"), n("./src/reddit/selectors/notificationsInbox.tsx"));
 			const y = Object(o.a)(s.e),
-				P = Object(o.a)(s.b),
-				D = Object(o.a)(s.a),
+				D = Object(o.a)(s.b),
+				P = Object(o.a)(s.a),
 				w = e => async (t, n, r) => {
 					let {
 						gqlContext: o
@@ -409,7 +409,7 @@
 						...p,
 						variables: t
 					}))(o(), e);
-					if (null === (s = null === (i = l.error) || void 0 === i ? void 0 : i.fields) || void 0 === s ? void 0 : s.length) return t(D({
+					if (null === (s = null === (i = l.error) || void 0 === i ? void 0 : i.fields) || void 0 === s ? void 0 : s.length) return t(P({
 						error: l.error
 					})), void t(Object(a.d)());
 					const b = l && l.body,
@@ -418,7 +418,7 @@
 						const e = Object(v.f)(c);
 						t(k(f.nodes, e.length))
 					}
-					t(P(f))
+					t(D(f))
 				}, L = () => async (e, t, n) => {
 					let {
 						gqlContext: r
@@ -1273,11 +1273,11 @@
 					omitResponsivePresenceWrapper: j,
 					onPresenceIndicatorInViewport: v,
 					shouldShowPresenceIndicator: y,
-					user: P,
-					userName: D,
+					user: D,
+					userName: P,
 					isProfileAvatarChangeFixEnabled: w,
 					...L
-				} = e, R = !!s && Object(l.e)(s) === D, U = R ? s : P, k = U && U.accountIcon || c, A = P ? P.isNSFW : g, M = Object(d.b)(k) && !p, B = M ? i.a.createElement(f.a, {
+				} = e, R = !!s && Object(l.e)(s) === P, U = R ? s : D, k = U && U.accountIcon || c, A = D ? D.isNSFW : g, M = Object(d.b)(k) && !p, B = M ? i.a.createElement(f.a, {
 					headshot: k,
 					className: e.className
 				}) : i.a.createElement(m.b, S({}, L, {
@@ -1717,13 +1717,13 @@
 				e.POPULAR_CAROUSEL = "popular_carousel", e.SEARCH_DROPDOWN = "search_dropdown"
 			}(N || (N = {}));
 			const j = e => {
-					Object(I.a)(D({
+					Object(I.a)(P({
 						...e,
 						action: s.c.CLICK
 					}))
 				},
 				v = e => {
-					Object(I.a)(D({
+					Object(I.a)(P({
 						...e,
 						action: s.c.VIEW
 					}))
@@ -1732,11 +1732,11 @@
 					[c.a.Popular]: N.POPULAR_CAROUSEL,
 					[c.a.Typeahead]: N.SEARCH_DROPDOWN
 				},
-				P = {
+				D = {
 					[c.a.Popular]: u.d.tile,
 					[c.a.Typeahead]: u.d.dropdown
 				},
-				D = e => {
+				P = e => {
 					let {
 						action: t,
 						offset: n = 0,
@@ -1745,7 +1745,7 @@
 						trendingSearch: s
 					} = e;
 					const c = y[i],
-						a = P[i],
+						a = D[i],
 						u = Object(m.a)(o, a).filter(e => !e.post || !(e.post.isSponsored && e.post.isBlank)).findIndex(e => e.id === s.id) + n;
 					return {
 						...f.n(o),
@@ -2040,9 +2040,9 @@
 			})), n.d(t, "n", (function() {
 				return y
 			})), n.d(t, "j", (function() {
-				return P
-			})), n.d(t, "i", (function() {
 				return D
+			})), n.d(t, "i", (function() {
+				return P
 			})), n.d(t, "g", (function() {
 				return w
 			}));
@@ -2426,13 +2426,13 @@
 						pageType: i.MiniInbox
 					}
 				}),
-				P = () => e => ({
+				D = () => e => ({
 					...u.n(e),
 					action: d.c.CLICK,
 					noun: "messages",
 					source: s.Inbox
 				}),
-				D = e => {
+				P = e => {
 					let {
 						isMiniInbox: t
 					} = e;
@@ -2468,9 +2468,9 @@
 			})), n.d(t, "q", (function() {
 				return y
 			})), n.d(t, "r", (function() {
-				return P
-			})), n.d(t, "o", (function() {
 				return D
+			})), n.d(t, "o", (function() {
+				return P
 			})), n.d(t, "s", (function() {
 				return w
 			})), n.d(t, "c", (function() {
@@ -2615,7 +2615,7 @@
 								sort: c = i.Fb,
 								t: a = i.Gb
 							} = s;
-							Object(C.a)(P(o, c, n, r, a)(t));
+							Object(C.a)(D(o, c, n, r, a)(t));
 							break
 						}
 						case i.Ob.PROFILE_COMMENTS: {
@@ -2627,7 +2627,7 @@
 								sort: c = i.Fb,
 								t: a = i.Gb
 							} = s;
-							Object(C.a)(D(o, c, n, r, a)(t));
+							Object(C.a)(P(o, c, n, r, a)(t));
 							break
 						}
 						case i.Ob.PROFILE_PRIVATE: {
@@ -2777,7 +2777,7 @@
 						adblock: T.e(i)
 					}
 				},
-				P = (e, t, n, r, o) => i => {
+				D = (e, t, n, r, o) => i => {
 					const s = T.y(i, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
@@ -2799,7 +2799,7 @@
 						adblock: T.e(i)
 					}
 				},
-				D = (e, t, n, r, o) => i => {
+				P = (e, t, n, r, o) => i => {
 					const s = T.T(i, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
@@ -3427,7 +3427,7 @@
 					if (!l(e)) return;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: u,
-						experimentName: i.Pd,
+						experimentName: i.Kd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -3450,9 +3450,9 @@
 				},
 				m = e => !!b(e) && Object(s.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: i.Qd,
+					experimentName: i.Ld,
 					expEventOverride: !1
-				}) !== i.Rd.Readonly
+				}) !== i.Md.Readonly
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -3493,7 +3493,7 @@
 					return r ? r * o.Tb < 1639443600180 ? void 0 : I(e) : void 0
 				},
 				I = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.le,
+					experimentName: i.ge,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3620,4 +3620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.daaf0ebcbf3d3f5d0e74.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.3b594cb67e184767184d.js.map

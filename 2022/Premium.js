@@ -1,23 +1,23 @@
-// https://www.redditstatic.com/desktop2x/Premium.d006e1efe3df9e461051.js
-// Retrieved at 5/4/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.38c4fdb14aa1ce46161b.js
+// Retrieved at 5/5/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
-		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, t, r) {
+		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
 			"use strict";
-			r.d(t, "b", (function() {
-				return c
-			})), r.d(t, "a", (function() {
+			t.d(r, "b", (function() {
 				return s
+			})), t.d(r, "a", (function() {
+				return i
 			}));
-			r("./src/lib/constants/index.ts"), r("./src/lib/makeApiRequest/index.ts");
-			var n = r("./src/lib/makeGqlRequest/index.ts"),
-				d = (r("./src/lib/omitHeaders/index.ts"), r("./src/redditGQL/operations/ClaimAwardOffer.json")),
-				a = r("./src/redditGQL/operations/FetchSpecialEvents.json");
-			r("./src/reddit/constants/headers.ts"), r("./src/reddit/helpers/addRedesignIdentifier/index.ts"), r("./src/reddit/endpoints/gold/purchase.ts");
-			const c = e => Object(n.a)(e, {
+			t("./src/lib/constants/index.ts"), t("./src/lib/makeApiRequest/index.ts");
+			var n = t("./src/lib/makeGqlRequest/index.ts"),
+				d = (t("./src/lib/omitHeaders/index.ts"), t("./src/redditGQL/operations/ClaimAwardOffer.json")),
+				a = t("./src/redditGQL/operations/FetchSpecialEvents.json");
+			t("./src/reddit/constants/headers.ts"), t("./src/reddit/helpers/addRedesignIdentifier/index.ts"), t("./src/reddit/endpoints/gold/purchase.ts");
+			const s = e => Object(n.a)(e, {
 					...a
 				}),
-				s = e => Object(n.a)(e, {
+				i = e => Object(n.a)(e, {
 					...d,
 					variables: {
 						input: {
@@ -26,32 +26,32 @@
 					}
 				})
 		},
-		"./src/reddit/endpoints/gold/purchase.ts": function(e, t, r) {
+		"./src/reddit/endpoints/gold/purchase.ts": function(e, r, t) {
 			"use strict";
-			r.d(t, "a", (function() {
+			t.d(r, "a", (function() {
 				return f
-			})), r.d(t, "d", (function() {
+			})), t.d(r, "d", (function() {
 				return p
-			})), r.d(t, "c", (function() {
+			})), t.d(r, "c", (function() {
 				return b
-			})), r.d(t, "e", (function() {
+			})), t.d(r, "e", (function() {
 				return m
-			})), r.d(t, "f", (function() {
+			})), t.d(r, "f", (function() {
 				return g
-			})), r.d(t, "b", (function() {
+			})), t.d(r, "b", (function() {
 				return h
-			})), r.d(t, "g", (function() {
+			})), t.d(r, "g", (function() {
 				return O
 			}));
-			var n = r("./src/lib/constants/index.ts"),
-				d = r("./src/lib/makeApiRequest/index.ts"),
-				a = r("./src/lib/makeGqlRequest/index.ts"),
-				c = r("./src/lib/omitHeaders/index.ts"),
-				s = r("./src/redditGQL/operations/ChangeStripePaymentMethod.json"),
-				i = r("./src/reddit/constants/headers.ts"),
-				o = r("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
-				u = r("./src/reddit/helpers/genericServerError/index.ts"),
-				l = r("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
+			var n = t("./src/lib/constants/index.ts"),
+				d = t("./src/lib/makeApiRequest/index.ts"),
+				a = t("./src/lib/makeGqlRequest/index.ts"),
+				s = t("./src/lib/omitHeaders/index.ts"),
+				i = t("./src/redditGQL/operations/ChangeStripePaymentMethod.json"),
+				c = t("./src/reddit/constants/headers.ts"),
+				o = t("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				u = t("./src/reddit/helpers/genericServerError/index.ts"),
+				l = t("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			const f = e => e.ok ? e.body.json && e.body.json.errors.length ? {
 					...e,
 					ok: !1,
@@ -64,10 +64,10 @@
 				},
 				p = async e => {
 					let {
-						coins: t,
-						context: r,
+						coins: r,
+						context: t,
 						correlationId: a,
-						offerContext: s,
+						offerContext: i,
 						pennies: u,
 						rememberCard: l,
 						token: p,
@@ -75,26 +75,26 @@
 					} = e;
 					const m = {
 							token: p ? p.id : void 0,
-							coins: t,
-							offer_context: s,
+							coins: r,
+							offer_context: i,
 							pennies: u,
 							remember_card: l,
 							card_id: b,
 							correlation_id: a
 						},
-						g = `${r.apiUrl}/api/v2/gold/stripe/buy_coins`,
+						g = `${t.apiUrl}/api/v2/gold/stripe/buy_coins`,
 						h = Object(o.a)(g);
-					return Object(d.a)(Object(c.a)(r, [i.a]), {
+					return Object(d.a)(Object(s.a)(t, [c.a]), {
 						method: n.kb.POST,
 						endpoint: h,
 						data: m
 					}).then(f)
 				}, b = async e => {
 					let {
-						coins: t,
-						context: r,
+						coins: r,
+						context: t,
 						correlationId: a,
-						gildParams: s,
+						gildParams: i,
 						isOldReddit: u,
 						offerContext: l,
 						pennies: p,
@@ -107,9 +107,9 @@
 						gildType: O,
 						isAnonymous: j,
 						message: P
-					} = s, y = {
+					} = i, y = {
 						token: g ? g.id : void 0,
-						coins: t,
+						coins: r,
 						offer_context: l,
 						pennies: p,
 						thing_id: m,
@@ -119,18 +119,18 @@
 						remember_card: b,
 						card_id: h,
 						correlation_id: a
-					}, _ = `${r.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, x = u ? _ : Object(o.a)(_);
-					return Object(d.a)(Object(c.a)(r, [i.a]), {
+					}, _ = `${t.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, x = u ? _ : Object(o.a)(_);
+					return Object(d.a)(Object(s.a)(t, [c.a]), {
 						method: n.kb.POST,
 						endpoint: x,
 						data: y
 					}).then(f)
 				}, m = async e => {
 					let {
-						context: t,
-						correlationId: r,
+						context: r,
+						correlationId: t,
 						gildParams: a,
-						isOldReddit: s,
+						isOldReddit: i,
 						pennies: u,
 						rememberCard: l,
 						thingId: p,
@@ -150,53 +150,53 @@
 						pennies: u,
 						remember_card: l,
 						card_id: m,
-						correlation_id: r
-					}, P = `${t.apiUrl}/api/v2/gold/stripe/buy_award`, y = s ? P : Object(o.a)(P);
-					return Object(d.a)(Object(c.a)(t, [i.a]), {
+						correlation_id: t
+					}, P = `${r.apiUrl}/api/v2/gold/stripe/buy_award`, y = i ? P : Object(o.a)(P);
+					return Object(d.a)(Object(s.a)(r, [c.a]), {
 						method: n.kb.POST,
 						endpoint: y,
 						data: j
 					}).then(f)
 				}, g = async e => {
 					let {
-						context: t,
-						correlationId: r,
+						context: r,
+						correlationId: t,
 						pennies: a,
-						token: s
+						token: i
 					} = e;
 					const u = {
-							token: s.id,
+							token: i.id,
 							pennies: a,
-							correlation_id: r
+							correlation_id: t
 						},
-						l = `${t.apiUrl}/api/v2/gold/stripe/buy_premium_subscription`,
+						l = `${r.apiUrl}/api/v2/gold/stripe/buy_premium_subscription`,
 						p = Object(o.a)(l);
-					return Object(d.a)(Object(c.a)(t, [i.a]), {
+					return Object(d.a)(Object(s.a)(r, [c.a]), {
 						method: n.kb.POST,
 						endpoint: p,
 						data: u
 					}).then(f)
 				}, h = "paymentInfoUpdated", O = async e => {
 					const {
-						origin: t
-					} = window.location, r = `${t}/settings/premium`, n = new URLSearchParams({
+						origin: r
+					} = window.location, t = `${r}/settings/premium`, n = new URLSearchParams({
 						[h]: "true"
 					}), d = await Object(a.a)(e, {
-						...s,
+						...i,
 						variables: {
-							successUrl: `${r}?${n}`,
-							cancelUrl: `${r}`
+							successUrl: `${t}?${n}`,
+							cancelUrl: `${t}`
 						}
 					});
 					if (!d.ok) throw new Error("Unable to update payment information");
 					return d.body.data.changeStripePaymentMethod.sessionId
 				}
 		},
-		"./src/reddit/helpers/genericServerError/index.ts": function(e, t, r) {
+		"./src/reddit/helpers/genericServerError/index.ts": function(e, r, t) {
 			"use strict";
-			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
-				d = r("./src/lib/constants/index.ts");
-			t.a = () => ({
+			var n = t("./node_modules/fbt/lib/FbtPublic.js"),
+				d = t("./src/lib/constants/index.ts");
+			r.a = () => ({
 				type: d.J.SERVER_ERROR,
 				fields: [{
 					field: "",
@@ -206,168 +206,156 @@
 				}]
 			})
 		},
-		"./src/reddit/selectors/experiments/econ/index.ts": function(e, t, r) {
+		"./src/reddit/selectors/experiments/econ/index.ts": function(e, r, t) {
 			"use strict";
-			r.d(t, "f", (function() {
+			t.d(r, "f", (function() {
 				return a
-			})), r.d(t, "q", (function() {
-				return c
-			})), r.d(t, "s", (function() {
+			})), t.d(r, "m", (function() {
 				return s
-			})), r.d(t, "m", (function() {
+			})), t.d(r, "o", (function() {
 				return i
-			})), r.d(t, "l", (function() {
+			})), t.d(r, "l", (function() {
+				return c
+			})), t.d(r, "k", (function() {
 				return o
-			})), r.d(t, "o", (function() {
+			})), t.d(r, "r", (function() {
 				return u
-			})), r.d(t, "p", (function() {
+			})), t.d(r, "p", (function() {
 				return l
-			})), r.d(t, "v", (function() {
+			})), t.d(r, "q", (function() {
 				return f
-			})), r.d(t, "t", (function() {
+			})), t.d(r, "h", (function() {
 				return p
-			})), r.d(t, "u", (function() {
+			})), t.d(r, "g", (function() {
 				return b
-			})), r.d(t, "n", (function() {
+			})), t.d(r, "d", (function() {
 				return m
-			})), r.d(t, "h", (function() {
+			})), t.d(r, "b", (function() {
 				return g
-			})), r.d(t, "g", (function() {
+			})), t.d(r, "c", (function() {
 				return h
-			})), r.d(t, "d", (function() {
+			})), t.d(r, "e", (function() {
 				return O
-			})), r.d(t, "b", (function() {
+			})), t.d(r, "a", (function() {
 				return j
-			})), r.d(t, "c", (function() {
+			})), t.d(r, "i", (function() {
 				return P
-			})), r.d(t, "e", (function() {
+			})), t.d(r, "j", (function() {
 				return y
-			})), r.d(t, "a", (function() {
+			})), t.d(r, "n", (function() {
 				return _
-			})), r.d(t, "i", (function() {
+			})), t.d(r, "s", (function() {
 				return x
-			})), r.d(t, "j", (function() {
+			})), t.d(r, "t", (function() {
 				return v
-			})), r.d(t, "k", (function() {
+			})), t.d(r, "w", (function() {
 				return k
-			})), r.d(t, "r", (function() {
+			})), t.d(r, "u", (function() {
 				return C
-			})), r.d(t, "w", (function() {
+			})), t.d(r, "v", (function() {
 				return w
-			})), r.d(t, "x", (function() {
+			})), t.d(r, "x", (function() {
 				return I
-			})), r.d(t, "A", (function() {
-				return M
-			})), r.d(t, "y", (function() {
-				return S
-			})), r.d(t, "z", (function() {
-				return R
-			})), r.d(t, "B", (function() {
-				return A
 			}));
-			var n = r("./src/reddit/constants/experiments.ts"),
-				d = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(d.a)(n.jd),
-				c = Object(d.a)(n.hd),
-				s = Object(d.a)(n.kd),
-				i = Object(d.a)(n.cd),
-				o = (Object(d.a)(n.dd), Object(d.a)(n.bd)),
-				u = Object(d.a)(n.fd),
+			var n = t("./src/reddit/constants/experiments.ts"),
+				d = t("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
+			const a = Object(d.a)(n.ed),
+				s = Object(d.a)(n.cd),
+				i = Object(d.a)(n.fd),
+				c = Object(d.a)(n.bd),
+				o = Object(d.a)(n.ad),
+				u = Object(d.a)(n.id),
 				l = Object(d.a)(n.gd),
-				f = Object(d.a)(n.nd),
-				p = Object(d.a)(n.ld),
-				b = Object(d.a)(n.md),
-				m = Object(d.a)(n.ed),
-				g = Object(d.a)(n.Xc),
-				h = Object(d.a)(n.Vc),
-				O = Object(d.a)(n.Oc),
-				j = Object(d.a)(n.Mc),
-				P = Object(d.a)(n.Nc),
-				y = Object(d.a)(n.Qc),
-				_ = Object(d.a)(n.Lc),
-				x = Object(d.a)(n.Yc),
-				v = Object(d.a)(n.Zc),
-				k = Object(d.a)(n.ad),
-				C = Object(d.a)(n.id),
-				w = Object(d.a)(n.od),
-				I = Object(d.a)(n.ud),
-				M = Object(d.a)(n.td),
-				S = Object(d.a)(n.qd),
-				R = Object(d.a)(n.sd),
-				A = Object(d.a)(n.rd)
+				f = Object(d.a)(n.hd),
+				p = Object(d.a)(n.Xc),
+				b = Object(d.a)(n.Vc),
+				m = Object(d.a)(n.Oc),
+				g = Object(d.a)(n.Mc),
+				h = Object(d.a)(n.Nc),
+				O = Object(d.a)(n.Qc),
+				j = Object(d.a)(n.Lc),
+				P = Object(d.a)(n.Yc),
+				y = Object(d.a)(n.Zc),
+				_ = Object(d.a)(n.dd),
+				x = Object(d.a)(n.jd),
+				v = Object(d.a)(n.pd),
+				k = Object(d.a)(n.od),
+				C = Object(d.a)(n.ld),
+				w = Object(d.a)(n.nd),
+				I = Object(d.a)(n.md)
 		},
-		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, t, r) {
+		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, r, t) {
 			"use strict";
-			r.d(t, "q", (function() {
-				return c
-			})), r.d(t, "s", (function() {
+			t.d(r, "q", (function() {
 				return s
-			})), r.d(t, "r", (function() {
+			})), t.d(r, "s", (function() {
 				return i
-			})), r.d(t, "u", (function() {
+			})), t.d(r, "r", (function() {
+				return c
+			})), t.d(r, "u", (function() {
 				return o
-			})), r.d(t, "t", (function() {
+			})), t.d(r, "t", (function() {
 				return u
-			})), r.d(t, "b", (function() {
+			})), t.d(r, "b", (function() {
 				return l
-			})), r.d(t, "p", (function() {
+			})), t.d(r, "p", (function() {
 				return f
-			})), r.d(t, "a", (function() {
+			})), t.d(r, "a", (function() {
 				return p
-			})), r.d(t, "n", (function() {
+			})), t.d(r, "n", (function() {
 				return b
-			})), r.d(t, "o", (function() {
+			})), t.d(r, "o", (function() {
 				return m
-			})), r.d(t, "c", (function() {
+			})), t.d(r, "c", (function() {
 				return g
-			})), r.d(t, "h", (function() {
+			})), t.d(r, "h", (function() {
 				return h
-			})), r.d(t, "l", (function() {
+			})), t.d(r, "l", (function() {
 				return O
-			})), r.d(t, "w", (function() {
+			})), t.d(r, "w", (function() {
 				return j
-			})), r.d(t, "x", (function() {
+			})), t.d(r, "x", (function() {
 				return P
-			})), r.d(t, "v", (function() {
+			})), t.d(r, "v", (function() {
 				return y
-			})), r.d(t, "y", (function() {
+			})), t.d(r, "y", (function() {
 				return _
-			})), r.d(t, "f", (function() {
+			})), t.d(r, "f", (function() {
 				return x
-			})), r.d(t, "g", (function() {
+			})), t.d(r, "g", (function() {
 				return v
-			})), r.d(t, "i", (function() {
+			})), t.d(r, "i", (function() {
 				return k
-			})), r.d(t, "k", (function() {
+			})), t.d(r, "k", (function() {
 				return C
-			})), r.d(t, "j", (function() {
+			})), t.d(r, "j", (function() {
 				return w
-			})), r.d(t, "m", (function() {
+			})), t.d(r, "m", (function() {
 				return I
-			})), r.d(t, "e", (function() {
+			})), t.d(r, "e", (function() {
 				return M
-			})), r.d(t, "d", (function() {
+			})), t.d(r, "d", (function() {
 				return S
 			}));
-			var n = r("./src/reddit/selectors/gold/purchaseCatalog.ts"),
-				d = r("./src/lib/initializeClient/installReducer.ts"),
-				a = r("./src/reddit/reducers/features/goldPurchase/index.ts");
+			var n = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
+				d = t("./src/lib/initializeClient/installReducer.ts"),
+				a = t("./src/reddit/reducers/features/goldPurchase/index.ts");
 			Object(d.a)({
 				features: {
 					goldPurchase: a.a
 				}
 			});
-			const c = e => e.features.goldPurchase.purchaseModal.activePage,
-				s = e => e.features.goldPurchase.purchaseModal.gildThingId || void 0,
-				i = e => e.features.goldPurchase.purchaseModal.correlationId || void 0,
+			const s = e => e.features.goldPurchase.purchaseModal.activePage,
+				i = e => e.features.goldPurchase.purchaseModal.gildThingId || void 0,
+				c = e => e.features.goldPurchase.purchaseModal.correlationId || void 0,
 				o = e => e.features.goldPurchase.purchaseModal.showModal,
 				u = e => e.features.goldPurchase.purchaseModal.packageId,
 				l = e => e.features.goldPurchase.packageOfferModal.packageId,
 				f = e => e.features.goldPurchase.premiumPurchaseModal.renewInterval,
 				p = e => {
-					const t = Object(n.l)(e),
-						r = (e => e.features.goldPurchase.premiumPurchaseModal.packageId)(e);
-					return t.length && r && t.find(e => e.mobileId === r) || null
+					const r = Object(n.l)(e),
+						t = (e => e.features.goldPurchase.premiumPurchaseModal.packageId)(e);
+					return r.length && t && r.find(e => e.mobileId === t) || null
 				},
 				b = e => e.features.goldPurchase.premiumPurchaseModal.activePage,
 				m = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
@@ -398,4 +386,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.d006e1efe3df9e461051.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.38c4fdb14aa1ce46161b.js.map
