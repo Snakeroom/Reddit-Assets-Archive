@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.cf65850a869d904f752b.js
-// Retrieved at 5/5/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.a1e4cf3dc14b7b3d231d.js
+// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -997,7 +997,7 @@
 			const y = Object(p.a)(e => Object(b.c)(e, {
 				experimentEligibilitySelector: h.R,
 				experimentName: f.Qb
-			}), e => e === f.rd);
+			}), e => e === f.sd);
 			var g = n("./src/reddit/actions/toaster.ts");
 			const m = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				v = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -3353,7 +3353,7 @@
 			const w = e => _.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				T = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: f.Ne
+					experimentName: f.Oe
 				}),
 				D = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = () => u(e => p()([w, T, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -4244,7 +4244,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(k)
 						}
-						await t(Object(r.b)(`${n.path}`)), b ? b === p.pe.NewModule && t(Object(i.h)({
+						await t(Object(r.b)(`${n.path}`)), b ? b === p.qe.NewModule && t(Object(i.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(c.h)(f.a.POST_FLOW_UPSELL_MODAL_ID)), Object(D.a)(Object(_.g)()(A))), Object(E.b)(E.a.SubredditCreation), t(Object(P.f)(a, null !== (O = Object(T.cb)(A)) && void 0 !== O ? O : Object(S.i)(A)))
 					} else N.error && Object(D.a)(Object(_.h)(N.error.type, C)(A)), t(U({
@@ -5205,13 +5205,13 @@
 		"./src/reddit/components/SearchDropdown/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return Z
+				return ne
 			})), n.d(t, "a", (function() {
-				return ee
-			})), n.d(t, "d", (function() {
-				return te
-			})), n.d(t, "c", (function() {
 				return re
+			})), n.d(t, "d", (function() {
+				return se
+			})), n.d(t, "c", (function() {
+				return oe
 			}));
 			var r = n("./node_modules/react/index.js"),
 				s = n.n(r),
@@ -5519,65 +5519,75 @@
 				V = n.n(H),
 				W = n("./src/reddit/components/HeaderSubredditSelector/LoadingListSection/index.m.less"),
 				Q = n.n(W),
-				$ = n("./src/lib/constants/index.ts"),
-				K = n("./src/reddit/constants/history.ts"),
-				z = n("./src/reddit/contexts/PageLayer/selectors.ts"),
-				Y = n("./src/reddit/hooks/usePageLayer.ts");
+				$ = n("./node_modules/lodash/pick.js"),
+				K = n.n($),
+				z = n("./src/reddit/constants/history.ts"),
+				Y = n("./src/reddit/constants/parameters.ts"),
+				X = n("./src/reddit/contexts/PageLayer/selectors.ts"),
+				J = n("./src/reddit/hooks/usePageLayer.ts"),
+				Z = n("./src/reddit/selectors/experiments/serpTabPreserved.ts");
 
-			function X(e) {
+			function ee(e) {
 				let {
 					searchOriginPage: t,
 					searchItem: n,
 					position: o,
 					onTriggerSearch: u
 				} = e;
-				var l;
-				const p = (null === (l = n.searchQuery) || void 0 === l ? void 0 : l.trim()) || "",
-					b = Object(_.a)(),
-					y = Object(Y.a)(),
-					v = Object(a.e)(e => Object(z.db)(e, {
-						pageLayer: y
+				var p;
+				const b = (null === (p = n.searchQuery) || void 0 === p ? void 0 : p.trim()) || "",
+					y = Object(_.a)(),
+					v = Object(J.a)(),
+					S = Object(X.Z)(v),
+					w = Object(a.e)(e => Object(X.db)(e, {
+						pageLayer: v
 					})),
-					S = Object(a.e)(e => Object(z.t)(e, {
-						pageLayer: y
+					T = Object(a.e)(e => Object(X.t)(e, {
+						pageLayer: v
 					})),
-					w = Object(a.e)(e => Object(z.e)(e, {
-						pageLayer: y
+					D = Object(a.e)(e => Object(X.e)(e, {
+						pageLayer: v
 					})),
-					T = Object(a.e)(O.lb),
+					P = Object(a.e)(e => Object(Z.a)(e)),
+					A = Object(a.e)(O.lb),
 					{
-						nsfwSessionSetting: D
+						nsfwSessionSetting: C
 					} = Object(h.b)(),
-					{
-						url: P,
-						qs: A
-					} = Object(g.a)({
-						subreddit: S,
-						multireddit: w,
-						searchItem: n,
-						shouldSearchSubreddit: v,
-						includeNsfwResults: T && D
-					}),
-					C = {
-						id: (null == S ? void 0 : S.id) || "",
+					R = Object(l.e)({
+						...K()(S || {}, Y.v),
 						q: n.searchQuery,
-						eventType: v ? "subreddit" : void 0,
-						t: "all",
-						type: v ? [$.dc.Posts] : [$.dc.Posts, $.dc.Subreddits, $.dc.Users],
-						restrict_sr: v ? "1" : ""
+						restrict_sr: w ? "1" : ""
+					}),
+					{
+						url: k,
+						qs: N
+					} = Object(g.a)({
+						subreddit: T,
+						multireddit: D,
+						searchItem: n,
+						...P ? {
+							searchOptions: R
+						} : {},
+						shouldSearchSubreddit: w,
+						includeNsfwResults: A && C
+					}),
+					L = {
+						...R,
+						id: (null == T ? void 0 : T.id) || "",
+						eventType: Boolean(w) ? "subreddit" : void 0
 					};
 				return Object(r.useEffect)(() => {
-					b(Object(E.s)(C, v, o, y || void 0))
+					y(Object(E.s)(L, w, o, v || void 0))
 				}, []), s.a.createElement(i.a, {
 					onClick: function(e) {
-						b(Object(E.o)(I.a.FullSearchButton, C, v, x.a.Typeahead, y || void 0)), u(e)
+						y(Object(E.o)(I.a.FullSearchButton, R, w, x.a.Typeahead, v || void 0)), u(e)
 					},
 					to: {
-						pathname: P,
+						pathname: k,
 						state: {
-							[K.b.SearchOriginPage]: t
+							[z.b.SearchOriginPage]: t
 						},
-						search: A
+						search: N
 					},
 					className: Object(c.a)(j.a.listItem, f.a.item),
 					"data-testid": "search-trigger-item"
@@ -5587,15 +5597,15 @@
 					className: f.a.text
 				}, d.fbt._("Search for “", null, {
 					hk: "28KVrM"
-				}), d.fbt._("{search query}", [d.fbt._param("search query", p)], {
+				}), d.fbt._("{search query}", [d.fbt._param("search query", b)], {
 					hk: "4vP3YT"
 				}), "”"))
 			}
 			const {
-				fbt: J
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Z = "SearchDropdown", ee = "SearchDropdownContent", te = 5, ne = Object(o.a)(q.a);
+				fbt: te
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), ne = "SearchDropdown", re = "SearchDropdownContent", se = 5, ae = Object(o.a)(q.a);
 
-			function re(e) {
+			function oe(e) {
 				let {
 					container: t,
 					trendingItems: n,
@@ -5629,7 +5639,7 @@
 						}, [e]);
 						return Object(r.useLayoutEffect)(s, [s]), Object(r.useEffect)(() => (window.addEventListener("resize", s), () => window.removeEventListener("resize", s)), [s]), t
 					}(t),
-					[M, G] = Object(r.useState)(new Array(te).fill(!1)),
+					[M, G] = Object(r.useState)(new Array(se).fill(!1)),
 					q = !!(null === (A = y.searchQuery) || void 0 === A ? void 0 : A.trim()),
 					H = i || o,
 					W = 0 === p.length && !i && (!q || b >= 0),
@@ -5640,7 +5650,7 @@
 						overflow: "auto"
 					};
 				m && (K.zIndex = B.g), Object(r.useLayoutEffect)(() => {
-					if (!o && d && document.getElementById(ee)) {
+					if (!o && d && document.getElementById(re)) {
 						const e = z();
 						G(e), n.forEach((t, n) => {
 							e[n] && C((e, n) => Object(L.v)({
@@ -5655,8 +5665,8 @@
 					const e = new Array(n.length).fill(!1);
 					return n.forEach((t, n) => {
 						if (t.id) {
-							const r = document.getElementById(`${Z}-${t.id}`),
-								s = document.getElementById(ee);
+							const r = document.getElementById(`${ne}-${t.id}`),
+								s = document.getElementById(re);
 							if (r && s) {
 								const t = r.getBoundingClientRect(),
 									a = s.getBoundingClientRect();
@@ -5665,13 +5675,13 @@
 						}
 					}), e
 				};
-				return s.a.createElement(ne, {
+				return s.a.createElement(ae, {
 					className: Object(c.a)(j.a.dropdown, V.a.listContainer),
-					id: ee,
+					id: re,
 					isFixed: m,
 					isOpen: d,
 					isOverlay: v,
-					tooltipId: Z,
+					tooltipId: ne,
 					noFocus: !0,
 					style: K,
 					onDropdownMounted: () => {
@@ -5717,10 +5727,10 @@
 					className: Object(c.a)(f.a.title, j.a.listItemTitle, {
 						[j.a.mWithBorder]: !!l.length
 					})
-				}, J._("Trending today", null, {
+				}, te._("Trending today", null, {
 					hk: "3nAMpY"
 				})), n.map(e => s.a.createElement(U, {
-					id: `${Z}-${e.id}`,
+					id: `${ne}-${e.id}`,
 					key: e.id,
 					focusedItem: u[b],
 					searchOriginPage: g,
@@ -5751,7 +5761,7 @@
 					nightmode: h,
 					onCloseDropdown: _,
 					searchOriginPage: g
-				})), s.a.createElement(X, {
+				})), s.a.createElement(ee, {
 					key: y.searchQuery,
 					searchOriginPage: g,
 					searchItem: y,
@@ -6742,29 +6752,29 @@
 		"./src/reddit/helpers/getSearchUrl/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return o
+				return c
 			}));
-			var r = n("./src/lib/search/index.ts"),
-				s = n("./src/reddit/constants/parameters.ts"),
-				a = n("./src/reddit/models/Search/index.ts");
+			var r = n("./src/lib/constants/index.ts"),
+				s = n("./src/lib/search/index.ts"),
+				a = n("./src/reddit/constants/parameters.ts"),
+				o = n("./src/reddit/models/Search/index.ts");
 
-			function o(e) {
+			function c(e) {
 				let t, {
 					subreddit: n,
-					multireddit: o,
-					searchItem: c,
-					searchOptions: d,
-					shouldSearchSubreddit: i,
-					includeNsfwResults: u,
-					searchType: l
+					multireddit: c,
+					searchItem: d,
+					searchOptions: i,
+					shouldSearchSubreddit: u,
+					includeNsfwResults: l
 				} = e;
 				const p = [];
-				if (c.isTypeaheadSuggestion) t = `/${c.isProfile?c.searchQuery.replace("u/","user/"):c.searchQuery}`;
+				if (d.isTypeaheadSuggestion) t = `/${d.isProfile?d.searchQuery.replace("u/","user/"):d.searchQuery}`;
 				else {
-					if (p.push(`${s.r}=${Object(r.b)(c.rawQuery||c.searchQuery)}`), t = "/search/", c.section !== a.c.trending && c.section !== a.c.recent || d && d.source && p.push(`source=${d.source}`), n && i ? (t = `/r/${n.name}${t}`, p.push(`${s.u}=1`), p.push(`${s.C}=${n.isNSFW?"1":""}`)) : !n && c.subredditOrProfileRestrictedName && (t = `/${c.subredditOrProfileRestrictedName}${t}`, p.push(`${s.u}=1`)), o) {
-						t = `/user/${o.url.split("/")[2]}/m/${o.name}${t}`, p.push(`${s.u}=1`), p.push(`${s.C}=${o.isNSFW?"1":""}`), p.push(`${s.l}=1`)
+					if (p.push(`${a.r}=${Object(s.b)(d.rawQuery||d.searchQuery)}`), t = "/search/", d.section !== o.c.trending && d.section !== o.c.recent || i && i.source && p.push(`source=${i.source}`), n && u ? (t = `/r/${n.name}${t}`, p.push(`${a.u}=1`), p.push(`${a.C}=${n.isNSFW?"1":""}`)) : !n && d.subredditOrProfileRestrictedName && (t = `/${d.subredditOrProfileRestrictedName}${t}`, p.push(`${a.u}=1`)), c) {
+						t = `/user/${c.url.split("/")[2]}/m/${c.name}${t}`, p.push(`${a.u}=1`), p.push(`${a.C}=${c.isNSFW?"1":""}`), p.push(`${a.l}=1`)
 					}
-					d && d.category && p.push(`${s.c}=${d.category}`), u && p.push(`${s.k}=1`), l && p.push(`${s.F}=${l}`)
+					i && i.category && p.push(`${a.c}=${i.category}`), l && p.push(`${a.k}=1`), (null == i ? void 0 : i.t) && i.t !== r.jc.ALL && p.push(`${a.E}=${i.t}`), (null == i ? void 0 : i.sort) && p.push(`${a.z}=${i.sort}`), (null == i ? void 0 : i.type) && (i.type.includes(r.dc.Posts) || p.push(`${a.F}=${i.type[0]}`))
 				}
 				return {
 					url: t,
@@ -25868,6 +25878,19 @@
 				},
 				g = (e, t) => !!e.emojis.api.list.pending[t]
 		},
+		"./src/reddit/selectors/experiments/serpTabPreserved.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var r = n("./src/reddit/constants/experiments.ts"),
+				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
+				a = n("./node_modules/reselect/es/index.js");
+			const o = Object(a.a)(e => Object(s.c)(e, {
+				experimentEligibilitySelector: s.a,
+				experimentName: r.nc
+			}), e => e === r.sd)
+		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "h", (function() {
@@ -26138,4 +26161,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.cf65850a869d904f752b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a1e4cf3dc14b7b3d231d.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.38c4fdb14aa1ce46161b.js
-// Retrieved at 5/5/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.5d4f64822b3a6705d083.js
+// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -259,30 +259,30 @@
 			}));
 			var n = t("./src/reddit/constants/experiments.ts"),
 				d = t("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(d.a)(n.ed),
-				s = Object(d.a)(n.cd),
-				i = Object(d.a)(n.fd),
-				c = Object(d.a)(n.bd),
-				o = Object(d.a)(n.ad),
-				u = Object(d.a)(n.id),
-				l = Object(d.a)(n.gd),
-				f = Object(d.a)(n.hd),
-				p = Object(d.a)(n.Xc),
-				b = Object(d.a)(n.Vc),
-				m = Object(d.a)(n.Oc),
-				g = Object(d.a)(n.Mc),
-				h = Object(d.a)(n.Nc),
-				O = Object(d.a)(n.Qc),
-				j = Object(d.a)(n.Lc),
-				P = Object(d.a)(n.Yc),
-				y = Object(d.a)(n.Zc),
-				_ = Object(d.a)(n.dd),
-				x = Object(d.a)(n.jd),
-				v = Object(d.a)(n.pd),
-				k = Object(d.a)(n.od),
-				C = Object(d.a)(n.ld),
-				w = Object(d.a)(n.nd),
-				I = Object(d.a)(n.md)
+			const a = Object(d.a)(n.fd),
+				s = Object(d.a)(n.dd),
+				i = Object(d.a)(n.gd),
+				c = Object(d.a)(n.cd),
+				o = Object(d.a)(n.bd),
+				u = Object(d.a)(n.jd),
+				l = Object(d.a)(n.hd),
+				f = Object(d.a)(n.id),
+				p = Object(d.a)(n.Yc),
+				b = Object(d.a)(n.Wc),
+				m = Object(d.a)(n.Pc),
+				g = Object(d.a)(n.Nc),
+				h = Object(d.a)(n.Oc),
+				O = Object(d.a)(n.Rc),
+				j = Object(d.a)(n.Mc),
+				P = Object(d.a)(n.Zc),
+				y = Object(d.a)(n.ad),
+				_ = Object(d.a)(n.ed),
+				x = Object(d.a)(n.kd),
+				v = Object(d.a)(n.qd),
+				k = Object(d.a)(n.pd),
+				C = Object(d.a)(n.md),
+				w = Object(d.a)(n.od),
+				I = Object(d.a)(n.nd)
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, r, t) {
 			"use strict";
@@ -386,4 +386,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.38c4fdb14aa1ce46161b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.5d4f64822b3a6705d083.js.map

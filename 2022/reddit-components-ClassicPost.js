@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.5d20950e14ed30ef5a82.js
-// Retrieved at 5/5/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.253568060c1c1f3b004b.js
+// Retrieved at 5/5/2022, 11:00:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -438,9 +438,9 @@
 				T = [].concat(C, [k]).reduce((function(e, t) {
 					return e.concat([t, t + "-" + _, t + "-" + S])
 				}), []),
-				L = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
+				F = ["beforeRead", "read", "afterRead", "beforeMain", "main", "afterMain", "beforeWrite", "write", "afterWrite"];
 
-			function F(e) {
+			function L(e) {
 				var t = new Map,
 					n = new Set,
 					s = [];
@@ -501,8 +501,8 @@
 									popper: x(t)
 								};
 								var o = function(e) {
-									var t = F(e);
-									return L.reduce((function(e, n) {
+									var t = L(e);
+									return F.reduce((function(e, n) {
 										return e.concat(t.filter((function(e) {
 											return e.phase === n
 										})))
@@ -842,23 +842,23 @@
 						placement: r
 					}),
 					T = K(Object.assign(Object.assign({}, E), I)),
-					L = m === N ? T : S,
-					F = {
-						top: _.top - L.top + v.top,
-						bottom: L.bottom - _.bottom + v.bottom,
-						left: _.left - L.left + v.left,
-						right: L.right - _.right + v.right
+					F = m === N ? T : S,
+					L = {
+						top: _.top - F.top + v.top,
+						bottom: F.bottom - _.bottom + v.bottom,
+						left: _.left - F.left + v.left,
+						right: F.right - _.right + v.right
 					},
 					B = e.modifiersData.offset;
 				if (m === N && B) {
 					var R = B[r];
-					Object.keys(F).forEach((function(e) {
+					Object.keys(L).forEach((function(e) {
 						var t = [j, w].indexOf(e) >= 0 ? 1 : -1,
 							n = [y, w].indexOf(e) >= 0 ? "y" : "x";
-						F[e] += R[n] * t
+						L[e] += R[n] * t
 					}))
 				}
-				return F
+				return L
 			}
 
 			function oe(e, t, n) {
@@ -1081,13 +1081,13 @@
 											allowedAutoPlacements: b
 										}) : n)
 									}), []), O = t.rects.reference, S = t.rects.popper, P = new Map, M = !0, N = g[0], A = 0; A < g.length; A++) {
-									var L = g[A],
-										F = V(L),
-										B = H(L) === _,
-										R = [y, w].indexOf(F) >= 0,
+									var F = g[A],
+										L = V(F),
+										B = H(F) === _,
+										R = [y, w].indexOf(L) >= 0,
 										W = R ? "width" : "height",
 										D = se(t, {
-											placement: L,
+											placement: F,
 											boundary: l,
 											rootBoundary: u,
 											altBoundary: p,
@@ -1097,13 +1097,13 @@
 									O[W] > S[W] && (U = Z(U));
 									var z = Z(U),
 										q = [];
-									if (r && q.push(D[F] <= 0), i && q.push(D[U] <= 0, D[z] <= 0), q.every((function(e) {
+									if (r && q.push(D[L] <= 0), i && q.push(D[U] <= 0, D[z] <= 0), q.every((function(e) {
 											return e
 										}))) {
-										N = L, M = !1;
+										N = F, M = !1;
 										break
 									}
-									P.set(L, q)
+									P.set(F, q)
 								}
 								if (M)
 									for (var G = function(e) {
@@ -1168,14 +1168,14 @@
 							if (P) {
 								if (r) {
 									var T = "y" === C ? y : E,
-										L = "y" === C ? w : j,
-										F = "y" === C ? "height" : "width",
+										F = "y" === C ? w : j,
+										L = "y" === C ? "height" : "width",
 										B = P[C],
 										R = P[C] + x[T],
-										W = P[C] - x[L],
-										D = m ? -N[F] / 2 : 0,
-										z = g === _ ? M[F] : N[F],
-										q = g === _ ? -N[F] : -M[F],
+										W = P[C] - x[F],
+										D = m ? -N[L] / 2 : 0,
+										z = g === _ ? M[L] : N[L],
+										q = g === _ ? -N[L] : -M[L],
 										G = t.elements.arrow,
 										J = m && G ? b(G) : {
 											width: 0,
@@ -1188,10 +1188,10 @@
 											left: 0
 										},
 										Q = Z[T],
-										X = Z[L],
-										Y = oe(0, M[F], J[F]),
-										K = k ? M[F] / 2 - D - Y - Q - A : z - Y - Q - A,
-										$ = k ? -M[F] / 2 + D + Y + X + A : q + Y + X + A,
+										X = Z[F],
+										Y = oe(0, M[L], J[L]),
+										K = k ? M[L] / 2 - D - Y - Q - A : z - Y - Q - A,
+										$ = k ? -M[L] / 2 + D + Y + X + A : q + Y + X + A,
 										ee = t.elements.arrow && O(t.elements.arrow),
 										te = ee ? "y" === C ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][C] : 0,
@@ -1719,8 +1719,8 @@
 				A = n("./src/reddit/components/OneFeed/PostRecommendationContext.tsx"),
 				I = n("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
 				T = n("./src/reddit/components/PostContainer/index.tsx"),
-				L = n("./src/reddit/components/PostMeta/index.tsx"),
-				F = n("./src/reddit/components/PostOverflowMenu/index.tsx"),
+				F = n("./src/reddit/components/PostMeta/index.tsx"),
+				L = n("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				B = n("./src/reddit/components/PostRailAndVotes/index.tsx"),
 				R = n("./src/reddit/components/PostTitle/index.tsx"),
 				W = n("./src/reddit/components/PostTopMeta/index.tsx"),
@@ -1799,8 +1799,8 @@
 				const Ae = ge ? void 0 : O,
 					Ie = n || void 0,
 					Te = Object(Q.a)(le),
-					Le = Object(J.a)(le),
-					Fe = Object(Z.a)(le),
+					Fe = Object(J.a)(le),
+					Le = Object(Z.a)(le),
 					Be = ue && Q.a,
 					Re = Object(P.d)(xe),
 					We = Object(N.c)(xe),
@@ -1900,7 +1900,7 @@
 					isSponsored: xe.isSponsored,
 					postId: xe.id,
 					source: xe.source
-				}, Object(c.a)(xe))), o.a.createElement(L.a, oe({
+				}, Object(c.a)(xe))), o.a.createElement(F.a, oe({
 					key: "PostMeta"
 				}, qe)), ue && Te && Re && o.a.createElement(S.a, {
 					thing: xe
@@ -1931,9 +1931,9 @@
 				}), !xe.isSurveyAd && o.a.createElement(C.c, {
 					className: se.a.flatlist,
 					currentUser: i,
-					hasModFlairPerms: Le,
+					hasModFlairPerms: Fe,
 					hasModPostPerms: Te,
-					hasModFullPerms: Fe,
+					hasModFullPerms: Le,
 					hostPostData: w,
 					isOverlay: !!ie,
 					modModeEnabled: ue,
@@ -1945,7 +1945,7 @@
 					showEditPost: Ve,
 					showEditFlair: we,
 					tooltipType: ie ? W.c.Lightbox : void 0,
-					useFlatlistBreakpoints: Object(F.b)({
+					useFlatlistBreakpoints: Object(L.b)({
 						editPost: !Be,
 						hide: !Be,
 						report: !Be
@@ -3267,13 +3267,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(r.c)(e, {
-					experimentName: o.De,
+					experimentName: o.Ee,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === o.Le.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Me.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(s.a)(a.G, i, (e, t) => c(e, t));
 			Object(s.a)((e, t) => t, i, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.5d20950e14ed30ef5a82.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.253568060c1c1f3b004b.js.map
