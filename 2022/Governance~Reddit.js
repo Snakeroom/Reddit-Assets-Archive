@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.155f582c204e16972299.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.a84a418c7449a9433638.js
+// Retrieved at 5/9/2022, 2:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -5460,14 +5460,13 @@
 				const S = Object(_.a)(),
 					w = !a.isProfile || a.enableFollowers;
 				Object(r.useEffect)(() => {
-					const e = a.isProfile ? E.a.PEOPLE : E.a.SUBREDDIT,
-						t = {
-							displayQuery: a.searchQuery,
-							rawQuery: a.rawQuery || a.searchQuery,
-							searchQuery: a.searchQuery,
-							structureType: I.c.Search
-						};
-					S(Object(E.w)(e, t, o))
+					const e = {
+						displayQuery: a.searchQuery,
+						rawQuery: a.rawQuery || a.searchQuery,
+						searchQuery: a.searchQuery,
+						structureType: I.c.Search
+					};
+					S(Object(E.w)(E.a.TYPEAHEAD, e, o, a))
 				}, []);
 				return s.a.createElement(d.a, {
 					"aria-label": a.searchQuery,
@@ -26210,4 +26209,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.155f582c204e16972299.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.a84a418c7449a9433638.js.map
