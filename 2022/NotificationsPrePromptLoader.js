@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.887e44bc0ef9e04e7c05.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.a166a040a08959533e3e.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
 		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, r) {
@@ -19,19 +19,19 @@
 				a = r("./src/reddit/components/TrackingHelper/index.tsx"),
 				d = r("./src/reddit/helpers/trackers/notifications.ts"),
 				l = r("./src/reddit/constants/experiments.ts"),
-				p = r("./src/reddit/helpers/chooseVariant/index.ts");
+				m = r("./src/reddit/helpers/chooseVariant/index.ts");
 
-			function m(e) {
-				return Object(p.c)(e, {
-					experimentEligibilitySelector: p.a,
+			function u(e) {
+				return Object(m.c)(e, {
+					experimentEligibilitySelector: m.a,
 					experimentName: l.vb
 				}) === l.sd
 			}
-			var u = r("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
-				_ = r.n(u);
+			var p = r("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
+				O = r.n(p);
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function b() {
+				return (b = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var r = arguments[t];
 						for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (e[n] = r[n])
@@ -39,21 +39,26 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const O = Object(o.a)(() => null);
+			const f = Object(o.a)(() => null);
 			t.default = e => {
 				const t = Object(a.b)(),
 					r = Object(i.d)(),
-					n = Object(i.e)(m);
-				return s.a.createElement(O, x({
+					[o, l] = Object(n.useState)(),
+					m = Object(i.e)(u);
+				return Object(n.useEffect)(() => {
+					m && l(setTimeout(() => {
+						r(Object(c.k)()), t(Object(d.g)())
+					}, 3e3))
+				}, [r, m, t]), s.a.createElement(f, b({
 					onOverlayClick: () => {
-						n && (r(Object(c.k)()), t(Object(d.g)()))
+						m && (clearTimeout(Number(o)), r(Object(c.k)()), t(Object(d.h)()))
 					}
 				}, e, {
-					overlayClassName: _.a.overlay,
+					overlayClassName: O.a.overlay,
 					withOverlay: !0
 				}))
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.887e44bc0ef9e04e7c05.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.a166a040a08959533e3e.js.map

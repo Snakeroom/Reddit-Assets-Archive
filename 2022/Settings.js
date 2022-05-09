@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.73ee8f00c6a344670341.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.545a6d12abc23b381254.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1622,7 +1622,7 @@
 					}))
 				})())), await Promise.all(f); {
 					const e = n();
-					if (!Object(C.Q)(e)) return Object(B.a)(t, e)
+					if (!Object(C.P)(e)) return Object(B.a)(t, e)
 				}
 				const {
 					page: v = a.dc.Account
@@ -2075,7 +2075,7 @@
 							await n(Object(c.o)(t.name))
 						}
 					})(), (async () => {
-						const s = Object(k.Ab)(r, {
+						const s = Object(k.zb)(r, {
 							userName: t
 						});
 						if (!s) return;
@@ -2846,7 +2846,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(_.Ab)(e, {
+				user: (e, t) => Object(_.zb)(e, {
 					userName: t.username
 				})
 			});
@@ -3153,7 +3153,7 @@
 			const Be = Object(o.c)({
 					activeTooltipId: v.a,
 					currentUser: _.k,
-					isLoggedIn: _.Q,
+					isLoggedIn: _.P,
 					hideNSFWPref: _.F,
 					moderatorPermissions: (e, t) => {
 						let {
@@ -3181,7 +3181,7 @@
 							minSize: 32
 						})
 					},
-					user: _.Ab,
+					user: _.zb,
 					userFlair: (e, t) => {
 						let {
 							subredditId: n
@@ -3207,7 +3207,7 @@
 						return !!r && Object(u.i)(e, r)
 					},
 					trophyCase: (e, t) => Object(h.r)(e, Object(h.m)(e, t.userName)),
-					isNightMode: _.db,
+					isNightMode: _.cb,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
 						const n = Object(c.a)(t.contextId) ? Object(b.G)(e, {
@@ -3991,7 +3991,7 @@
 					let {
 						profileName: n
 					} = t;
-					return Object(_.Gb)(e, n)
+					return Object(_.Fb)(e, n)
 				}, (e, t) => ({
 					karma: {
 						...p.a,
@@ -4697,7 +4697,7 @@
 						url: "testing" === s ? "https://nft.reddit.com" : `https://nft.reddit.com/n/${n}`,
 						badge: s
 					}
-				})(f), [f]), O = Object(a.e)(c.db);
+				})(f), [f]), O = Object(a.e)(c.cb);
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 					className: Object(i.a)(b.a.container, x)
 				}, r.a.createElement(l.a, {
@@ -7298,7 +7298,7 @@
 				de = g.a.div("TickText", R.a),
 				me = g.a.div("PreSubText", R.a),
 				ue = Object(i.c)({
-					isNightModeOn: U.db
+					isNightModeOn: U.cb
 				}),
 				pe = Object(a.b)(ue)(e => r.a.createElement(V, {
 					last: e.last,
@@ -10359,7 +10359,7 @@
 				se = n("./src/reddit/constants/experiments.ts"),
 				re = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const ae = Object(l.a)(e => Object(re.c)(e, {
-				experimentEligibilitySelector: I.Q,
+				experimentEligibilitySelector: I.P,
 				experimentName: se.L
 			}), e => e === se.U.Enabled);
 			var oe = n("./src/reddit/selectors/meta.ts"),
@@ -10371,8 +10371,8 @@
 						return null === (n = null === (t = null == e ? void 0 : e.user) || void 0 === t ? void 0 : t.account) || void 0 === n ? void 0 : n.gender
 					},
 					hasVerifiedEmail: I.D,
-					isFPR: I.O,
-					language: I.bb,
+					isFPR: I.N,
+					language: I.ab,
 					shouldShowCreatePasswordModal: N.d,
 					availableLocales: te.b,
 					locale: oe.i,
@@ -10788,7 +10788,7 @@
 				}).apply(this, arguments)
 			}
 			const ut = Object(l.c)({
-				isEmployee: I.N
+				isEmployee: I.M
 			});
 			var pt = Object(o.b)(ut)(e => {
 					const t = !e.isEmployee;
@@ -12184,7 +12184,7 @@
 					experimentName: se.h
 				}), e => e === se.b.Enabled),
 				dr = Object(l.a)(e => Object(re.c)(e, {
-					experimentEligibilitySelector: I.Q,
+					experimentEligibilitySelector: I.P,
 					experimentName: se.K
 				}), e => e === se.S.Enabled);
 			var mr = n("./src/lib/hooks/usePrevious.ts"),
@@ -12499,7 +12499,7 @@
 				Mr = n.n(Ar);
 			const {
 				fbt: Tr
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), Br = 30, Fr = 200, Ur = Object(l.a)(I.k, Nr.a, I.Hb, Pr.n, ye.a, (e, t, n, s, r) => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Br = 30, Fr = 200, Ur = Object(l.a)(I.k, Nr.a, I.Gb, Pr.n, ye.a, (e, t, n, s, r) => {
 				const a = e && e.profileId,
 					o = a && s[a] ? s[a].bannerBackgroundImage : void 0;
 				return {
@@ -13923,7 +13923,7 @@
 				a = n("./src/reddit/selectors/user.ts");
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
-				experimentEligibilitySelector: () => Object(a.P)(e)
+				experimentEligibilitySelector: () => Object(a.O)(e)
 			}) === s.sd
 		},
 		"./src/reddit/selectors/experiments/econ/avatarNfts.ts": function(e, t, n) {
@@ -14112,4 +14112,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.73ee8f00c6a344670341.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.545a6d12abc23b381254.js.map

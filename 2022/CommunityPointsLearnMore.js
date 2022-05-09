@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.25e623ca0929f7fd4384.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.8e4c081d014b8bc78986.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityPointsLearnMore"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, o) {
@@ -469,7 +469,7 @@
 					} = e;
 					const n = Object(r.a)(),
 						a = c(n),
-						l = Object(C.e)(S.db);
+						l = Object(C.e)(S.cb);
 					return i.a.createElement("div", {
 						className: Object(s.a)(x.a.container, t)
 					}, i.a.createElement("nav", null, i.a.createElement("ol", null, I.map(e => i.a.createElement("div", {
@@ -1576,7 +1576,7 @@
 				$ = o.n(Z);
 			const ee = () => {
 					const e = Object(C.d)(),
-						t = Object(C.e)(S.db);
+						t = Object(C.e)(S.cb);
 					return i.a.createElement("header", {
 						className: Object(s.a)($.a.container, {
 							[$.a.nightmode]: t
@@ -1665,7 +1665,7 @@
 					onClickExpand: l,
 					onClickHide: u
 				} = e;
-				const c = Object(C.e)(S.db);
+				const c = Object(C.e)(S.cb);
 				return i.a.createElement("div", {
 					className: Object(s.a)(ne.a.container, t, {
 						[ne.a.expanded]: a,
@@ -2653,4 +2653,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.25e623ca0929f7fd4384.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityPointsLearnMore.8e4c081d014b8bc78986.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.f3d7c663428f2322b151.js
-// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.30091c5dbf9692696574.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -128,8 +128,8 @@
 						text: c
 					}))
 				};
-			var P = n("./src/reddit/actions/gold/modals.ts"),
-				M = n("./src/reddit/components/CoinBalance/index.tsx"),
+			var M = n("./src/reddit/actions/gold/modals.ts"),
+				P = n("./src/reddit/components/CoinBalance/index.tsx"),
 				D = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				R = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				A = n("./src/reddit/controls/DropdownSelector/index.tsx"),
@@ -151,12 +151,12 @@
 			const W = 10,
 				H = Object(a.c)({
 					coinBalance: G.e,
-					isEmployee: G.N,
+					isEmployee: G.M,
 					isPending: I.b,
 					recipientName: I.d
 				}),
 				V = Object(c.b)(H, e => ({
-					closeModal: () => e(Object(P.b)()),
+					closeModal: () => e(Object(M.b)()),
 					onGivePremium: (t, n, s, o, i) => {
 						e(((e, t, n, s) => async (o, i, c) => {
 							let {
@@ -254,7 +254,7 @@
 					}), e(Object(h.viewGivePremiumModalEvent)())
 				}
 				componentWillUnmount() {
-					Object(p.yb)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
+					Object(p.wb)(this.state.isAnonymous), document.removeEventListener("keydown", this.handleEscapeKey)
 				}
 				getDropdownMenuItems() {
 					const {
@@ -324,7 +324,7 @@
 						})
 					}))), i.a.createElement(D.g, null, i.a.createElement(U.a, {
 						className: l.a.coinCountSection
-					}, i.a.createElement(M.a, {
+					}, i.a.createElement(P.a, {
 						className: l.a.coinCount,
 						coinBalance: t
 					}), i.a.createElement("div", {
@@ -721,4 +721,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.f3d7c663428f2322b151.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.30091c5dbf9692696574.js.map

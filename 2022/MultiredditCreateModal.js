@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.770cf79a1b566c9c79ea.js
-// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.09f2812b3cf9aefd25c4.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, r) {
@@ -21,9 +21,9 @@
 			})), r.d(t, "createFailure", (function() {
 				return H
 			})), r.d(t, "createPending", (function() {
-				return Q
-			})), r.d(t, "createSuccess", (function() {
 				return K
+			})), r.d(t, "createSuccess", (function() {
+				return Q
 			})), r.d(t, "createRequested", (function() {
 				return $
 			})), r.d(t, "reloadCurrentMultiredditFeedRequested", (function() {
@@ -240,7 +240,7 @@
 							}))
 						}
 					}
-				}, H = Object(c.a)(M.e), Q = Object(c.a)(M.f), K = Object(c.a)(M.g), $ = e => {
+				}, H = Object(c.a)(M.e), K = Object(c.a)(M.f), Q = Object(c.a)(M.g), $ = e => {
 					let {
 						description: t,
 						displayName: r,
@@ -253,7 +253,7 @@
 						const l = d(),
 							m = Object(I.k)(l);
 						if (!m) return;
-						e(Q());
+						e(K());
 						const b = await ((e, t, r) => Object(f.a)(Object(h.a)(e, [x.a]), {
 							endpoint: Object(O.a)(`${e.apiUrl}/api/multi`),
 							data: {
@@ -270,7 +270,7 @@
 							const {
 								id: t
 							} = m;
-							if (await e(K({
+							if (await e(Q({
 									multireddit: N(b.body.data),
 									multiredditsModelsState: l.multireddits.models,
 									userId: t
@@ -504,7 +504,7 @@
 							apiContext: c
 						} = o;
 						const l = n();
-						if (!Object(I.Q)(l)) return;
+						if (!Object(I.P)(l)) return;
 						e(me());
 						const m = await (e => {
 							let {
@@ -1309,4 +1309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.770cf79a1b566c9c79ea.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.09f2812b3cf9aefd25c4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.906ae41f4871d5b31881.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f65001c0dc6fc72d27de.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -93,7 +93,7 @@
 					t(k({
 						categoryId: e,
 						rank: n + 1
-					})), Object(m.lb)(Object(p.d)(r()))
+					})), Object(m.kb)(Object(p.d)(r()))
 				}
 		},
 		"./src/reddit/actions/pages/subredditLeaderboard.ts": function(e, t, r) {
@@ -133,7 +133,7 @@
 				}, f = e => async (t, r) => {
 					await t(Object(s.a)());
 					const n = r(),
-						a = Object(g.R)(n);
+						a = Object(g.Q)(n);
 					if (Object(b.a)(n, e)) return;
 					const i = e && Object(p.e)(n, {
 							categoryName: e
@@ -1526,10 +1526,10 @@
 						n = t.redditStyle || Object(h.l)(e, {
 							subredditId: r
 						}),
-						s = Object(y.db)(e);
+						s = Object(y.cb)(e);
 					return n || s
 				},
-				nigtmode: y.db,
+				nigtmode: y.cb,
 				subredditId: u.n,
 				topPostVariant: g.d
 			}));
@@ -2327,8 +2327,8 @@
 				I = r("./src/reddit/components/TopSubredditsWidget/SubredditRankItem.tsx"),
 				F = r("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
 				B = r("./src/reddit/models/GoodContent/index.ts"),
-				R = r("./src/reddit/selectors/platform.ts"),
-				D = r("./src/reddit/selectors/subreddit.ts"),
+				D = r("./src/reddit/selectors/platform.ts"),
+				R = r("./src/reddit/selectors/subreddit.ts"),
 				M = r("./src/reddit/selectors/subredditLeaderboard.ts"),
 				W = r("./src/reddit/selectors/user.ts");
 			const A = 25,
@@ -2346,21 +2346,21 @@
 						} = t;
 						return Object(M.b)(e, r)
 					},
-					isMod: W.R,
+					isMod: W.Q,
 					rankings: (e, t) => {
 						let {
 							categoryId: r
 						} = t;
-						return Object(D.P)(e, r)
+						return Object(R.P)(e, r)
 					},
-					subreddits: D.bb,
-					isOnLeaderboardPage: e => !!Object(R.h)(e),
-					isOnFrontpage: e => !!Object(R.g)(e)
+					subreddits: R.bb,
+					isOnLeaderboardPage: e => !!Object(D.h)(e),
+					isOnFrontpage: e => !!Object(D.g)(e)
 				}),
 				z = Object(o.b)(H, e => ({
 					fetchMoreSubreddits: (t, r) => e(Object(P.b)(t, r))
 				}));
-			class q extends i.a.Component {
+			class Q extends i.a.Component {
 				constructor() {
 					super(...arguments), this.fetchMoreSubreddits = e => {
 						const t = this.makeFetchVariables(),
@@ -2435,7 +2435,7 @@
 					})))))
 				}
 			}
-			var Q = Object(u.c)(z(q)),
+			var q = Object(u.c)(z(Q)),
 				J = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				U = r.n(K);
@@ -2696,7 +2696,7 @@
 						m = (null === (e = a.find(e => e.id === u)) || void 0 === e ? void 0 : e.displayText) || "";
 					return i.a.createElement(l.a, null, i.a.createElement(k.a, {
 						className: Object(c.a)(t, _.a.mainContent),
-						content: i.a.createElement(Q, {
+						content: i.a.createElement(q, {
 							categoryId: u,
 							categoryName: d,
 							categoryDisplayText: m
@@ -2775,4 +2775,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.906ae41f4871d5b31881.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.f65001c0dc6fc72d27de.js.map

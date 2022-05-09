@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.380966802fd91c08c830.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.d7db8f5225e663741d57.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2200,7 +2200,7 @@
 					className: t,
 					isCompactMode: r = !1
 				} = e;
-				const a = Object(i.e)(j.db),
+				const a = Object(i.e)(j.cb),
 					s = Object(p.a)(),
 					c = Object(i.e)(y.m),
 					b = !!c,
@@ -2402,7 +2402,7 @@
 					goldExpiration: e => e.user.account && e.user.account.goldExpiration || 0,
 					isGold: I.v,
 					isPremiumSubscriber: I.w,
-					isLoggedIn: I.Q,
+					isLoggedIn: I.P,
 					premiumPackages: N.l,
 					purchaseCatalogPending: N.o
 				}),
@@ -2669,4 +2669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.380966802fd91c08c830.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.d7db8f5225e663741d57.js.map

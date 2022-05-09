@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.5d23b6ef182f502eafbc.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.b350e2a2c4cd266cc988.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -476,7 +476,7 @@
 						sort: d,
 						t: u,
 						correlationId: m
-					} = t, p = Object(I.b)(e), f = Object(F.Z)(e) || Object(F.Q)(e), _ = Object(P.a)(e), y = Object(B.q)(e), v = Object(T.a)(e), E = {
+					} = t, p = Object(I.b)(e), f = Object(F.Y)(e) || Object(F.P)(e), _ = Object(P.a)(e), y = Object(B.q)(e), v = Object(T.a)(e), E = {
 						adContext: {
 							layout: i ? i.toUpperCase() : h.a.Card,
 							reddaid: e.user.reddaid,
@@ -721,8 +721,8 @@
 					const b = xe()();
 					t.correlationId = b;
 					const h = null === (o = null === (i = Object(B.b)(u)) || void 0 === i ? void 0 : i.routeMatch) || void 0 === o ? void 0 : o.route.chunk,
-						g = Object(F.Q)(u),
-						f = await Object(m.i)(() => V(r.gqlContext(), W(u, t), Object(F.Z)(u), t.statsdPathsForExperiments), {
+						g = Object(F.P)(u),
+						f = await Object(m.i)(() => V(r.gqlContext(), W(u, t), Object(F.Y)(u), t.statsdPathsForExperiments), {
 							name: "fetchFrontpageData",
 							isLoggedIn: g,
 							page: h
@@ -803,7 +803,7 @@
 					const n = t();
 					if (Object(ge.a)(n)) return;
 					const r = null === (a = null === (s = Object(B.b)(t())) || void 0 === s ? void 0 : s.routeMatch) || void 0 === a ? void 0 : a.route.chunk,
-						c = Object(F.Q)(n);
+						c = Object(F.P)(n);
 					return Object(m.i)(() => e(Object(he.d)()), {
 						name: "frontpageLinksRequested",
 						page: r,
@@ -858,7 +858,7 @@
 								t && (b.clickUrl = t)
 							}
 							b.correlationId = i.listings.postOrder.correlationIds[m];
-							const g = () => V(n(), W(i, b), Object(F.Z)(i), l),
+							const g = () => V(n(), W(i, b), Object(F.Y)(i), l),
 								f = await g(),
 								_ = {
 									...f.body,
@@ -1641,7 +1641,7 @@
 						M === P.Visible && t === f.a.Achievements && C(Object(b.l)())
 					}, [t, M, C]), M === P.Hidden) return null;
 				const B = () => {
-						R(P.Visible), Object(p.kb)(d.a.AVATAR_LISTING_BANNER, !1, u.c)
+						R(P.Visible), Object(p.jb)(d.a.AVATAR_LISTING_BANNER, !1, u.c)
 					},
 					F = () => {
 						C(Object(b.d)(_)), N(Object(o.b)({
@@ -1649,7 +1649,7 @@
 						}))
 					},
 					D = () => {
-						Object(p.kb)(d.a.AVATAR_LISTING_BANNER, !0, u.c), t === f.a.Achievements ? T() : F()
+						Object(p.jb)(d.a.AVATAR_LISTING_BANNER, !0, u.c), t === f.a.Achievements ? T() : F()
 					};
 				if (M === P.Dismissed) return c.a.createElement("div", {
 					className: Object(n.a)(y.a.dismissedContainer, s)
@@ -1738,7 +1738,7 @@
 						[y.a.closeLight]: _
 					}),
 					onClick: () => {
-						R(P.Dismissed), Object(p.kb)(d.a.AVATAR_LISTING_BANNER, !0, u.c), t !== f.a.Achievements && C(Object(b.j)(_)), t === f.a.Achievements && C(Object(b.i)())
+						R(P.Dismissed), Object(p.jb)(d.a.AVATAR_LISTING_BANNER, !0, u.c), t !== f.a.Achievements && C(Object(b.j)(_)), t === f.a.Achievements && C(Object(b.i)())
 					}
 				}), c.a.createElement("div", {
 					className: y.a.contentWrapper
@@ -2252,13 +2252,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = re.cachedData || Object(z.B)(V.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = re.cachedData || Object(z.A)(V.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > ae) {
 						const t = await Y(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(z.Fb)(V.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(z.Db)(V.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return re.cachedData = e, e ? e.subreddits : []
 				}
@@ -2647,13 +2647,13 @@
 			const Ye = "c1020",
 				$e = "videos",
 				et = Object(u.c)({
-					isMod: He.R,
-					isLoggedIn: He.P,
+					isMod: He.Q,
+					isLoggedIn: He.O,
 					isLoggedOutOneFeed: Ve.a,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
 					currentUser: He.k,
 					frontpageLinks: ze.b,
-					isOver18: He.kb,
+					isOver18: He.jb,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return Ze(e) === Re.B.RotateEven
 					},
@@ -2665,7 +2665,7 @@
 							s = !!Object(Ke.P)(e, Ye);
 						return (!t || !s) && function(e) {
 							return Object(De.c)(e, {
-								experimentEligibilitySelector: He.Q,
+								experimentEligibilitySelector: He.P,
 								experimentName: Re.pc
 							}) === Re.sd
 						}(e)
@@ -5220,10 +5220,10 @@
 						a = t.redditStyle || Object(g.l)(e, {
 							subredditId: s
 						}),
-						n = Object(f.db)(e);
+						n = Object(f.cb)(e);
 					return a || n
 				},
-				nigtmode: f.db,
+				nigtmode: f.cb,
 				subredditId: u.n,
 				topPostVariant: h.d
 			}));
@@ -6739,7 +6739,7 @@
 				isCommentCountAnimationEnabled: ee.d,
 				isVoteCountAnimationEnabled: ee.h,
 				isCountAnimShadowTestEnabled: ee.e,
-				isLoggedIn: oe.Q,
+				isLoggedIn: oe.P,
 				isLoggedOutOneFeed: Y.a,
 				isPopular: q.F,
 				isRpanDuVisible: e => Object(ie.a)(e, {
@@ -7082,7 +7082,7 @@
 				l = s("./src/reddit/selectors/user.ts"),
 				d = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				u = s("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const m = Object(a.a)(l.k, l.Hb, (e, t) => {
+			const m = Object(a.a)(l.k, l.Gb, (e, t) => {
 					let {
 						listingName: s
 					} = t;
@@ -7446,7 +7446,7 @@
 
 			function c(e) {
 				return Object(n.c)(e, {
-					experimentEligibilitySelector: r.Q,
+					experimentEligibilitySelector: r.P,
 					experimentName: a.Kc
 				})
 			}
@@ -7663,4 +7663,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.5d23b6ef182f502eafbc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.b350e2a2c4cd266cc988.js.map

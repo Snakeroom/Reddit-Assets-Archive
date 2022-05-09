@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PushNotificationSettings.64e603fddc36f2d03d43.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PushNotificationSettings.6700a50df6d069c0c867.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PushNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, s) {
@@ -82,7 +82,7 @@
 							onClick: () => (s => {
 								if (s.messageType) {
 									const n = e.isEmailSettings;
-									t(n ? Object(l.b)(!s.isEnabled, s.messageType) : Object(l.h)(!s.isEnabled, s.messageType))
+									t(n ? Object(l.b)(!s.isEnabled, s.messageType) : Object(l.i)(!s.isEnabled, s.messageType))
 								}
 								e.updateNotificationPreference({
 									isEnabled: !s.isEnabled,
@@ -138,8 +138,8 @@
 				c = s("./src/reddit/selectors/user.ts");
 			const d = Object(i.c)({
 					hasError: c.u,
-					rows: c.hb,
-					sections: c.ib
+					rows: c.gb,
+					sections: c.hb
 				}),
 				l = Object(n.b)(d, e => ({
 					fetchNotificationSettings: () => e(Object(a.a)(r.a.Push)),
@@ -164,4 +164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.64e603fddc36f2d03d43.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PushNotificationSettings.6700a50df6d069c0c867.js.map

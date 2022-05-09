@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.98e153e7b967be18c728.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailNotificationSettings.822aab75d733b9854ffe.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, s) {
@@ -29,8 +29,8 @@
 				c = s("./src/reddit/components/Settings/Notifications/NotificationToggles.tsx");
 			const d = Object(i.c)({
 					hasError: r.t,
-					rows: r.fb,
-					sections: r.gb
+					rows: r.eb,
+					sections: r.fb
 				}),
 				l = Object(n.b)(d, e => ({
 					fetchNotificationSettings: () => e(Object(a.a)(o.a.Email)),
@@ -102,7 +102,7 @@
 							onClick: () => (s => {
 								if (s.messageType) {
 									const n = e.isEmailSettings;
-									t(n ? Object(l.b)(!s.isEnabled, s.messageType) : Object(l.h)(!s.isEnabled, s.messageType))
+									t(n ? Object(l.b)(!s.isEnabled, s.messageType) : Object(l.i)(!s.isEnabled, s.messageType))
 								}
 								e.updateNotificationPreference({
 									isEnabled: !s.isEnabled,
@@ -164,4 +164,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.98e153e7b967be18c728.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailNotificationSettings.822aab75d733b9854ffe.js.map

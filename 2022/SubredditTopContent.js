@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.8f66f9605d054f54d599.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.e1ad6e6c2c0734dcf9cb.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -882,7 +882,7 @@
 				f = s("./src/reddit/constants/experiments.ts"),
 				g = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				C = s("./src/reddit/selectors/user.ts");
-			const y = e => Object(C.N)(e) || f.sf.ShowTopContent === Object(g.c)(e, {
+			const y = e => Object(C.M)(e) || f.sf.ShowTopContent === Object(g.c)(e, {
 				experimentEligibilitySelector: g.a,
 				experimentName: f.mf
 			});
@@ -1567,7 +1567,7 @@
 						})
 					},
 					isNsfwBlurSubreddit: W.e,
-					shouldOpenPostInNewTab: F.jb
+					shouldOpenPostInNewTab: F.ib
 				}),
 				J = e => {
 					const {
@@ -2122,4 +2122,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.8f66f9605d054f54d599.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.e1ad6e6c2c0734dcf9cb.js.map

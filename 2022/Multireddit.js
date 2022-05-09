@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.0f801fa049f173095b32.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.1eb81090853ece3a4e82.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
@@ -256,7 +256,7 @@
 			})), n.d(t, "a", (function() {
 				return W
 			})), n.d(t, "b", (function() {
-				return G
+				return V
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/lodash/pick.js"),
@@ -471,7 +471,7 @@
 							return Object(i.i)(.1, Object(I.a)(s()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				V = p.a.wrapped(e => {
+				G = p.a.wrapped(e => {
 					const t = H(e),
 						n = a.a.createElement("span", {
 							className: e.className,
@@ -486,7 +486,7 @@
 					})
 				}, "MetaFlair", S.a);
 
-			function G(e) {
+			function V(e) {
 				const {
 					className: t,
 					disabled: n = !1,
@@ -550,7 +550,7 @@
 						});
 					case O.f.Nsfw:
 					case O.f.Spoiler:
-						return a.a.createElement(V, {
+						return a.a.createElement(G, {
 							className: t,
 							text: o.text,
 							type: o.type
@@ -964,8 +964,8 @@
 			}
 			const h = Object(c.c)({
 					currentUser: l.k,
-					isNightMode: l.db,
-					isPresenceUserPrefEnabled: l.V,
+					isNightMode: l.cb,
+					isPresenceUserPrefEnabled: l.U,
 					shouldHideNSFW: l.F
 				}),
 				x = Object(i.b)(h);
@@ -1395,4 +1395,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.0f801fa049f173095b32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.1eb81090853ece3a4e82.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditCreation.eb3fdcbce53551867302.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditCreation.0da6aaf4b8623d1ed5bd.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditCreation"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -251,7 +251,7 @@
 			n.d(t, "n", (function() {
 				return Y
 			})), n.d(t, "k", (function() {
-				return X
+				return q
 			})), n.d(t, "o", (function() {
 				return Z
 			})), n.d(t, "f", (function() {
@@ -339,9 +339,9 @@
 				j = n("./node_modules/lodash/range.js"),
 				B = n.n(j),
 				R = n("./src/reddit/controls/Button/index.tsx"),
-				D = n("./src/reddit/layout/row/Inline/index.tsx"),
-				F = n("./src/reddit/models/Flair/index.ts"),
-				M = n("./src/reddit/selectors/tooltip.ts"),
+				M = n("./src/reddit/layout/row/Inline/index.tsx"),
+				D = n("./src/reddit/models/Flair/index.ts"),
+				F = n("./src/reddit/selectors/tooltip.ts"),
 				L = n("./src/reddit/selectors/user.ts"),
 				P = n("./src/reddit/components/Settings/shared/Widgets.m.less"),
 				A = n.n(P);
@@ -363,7 +363,7 @@
 				Q = C.a.div("ControlContainer", A.a),
 				K = C.a.div("TextContainer", A.a),
 				z = C.a.div("ActionContainer", A.a),
-				X = e => {
+				q = e => {
 					let {
 						className: t,
 						direction: n,
@@ -387,12 +387,12 @@
 						})
 					}))
 				},
-				q = C.a.a("Link", A.a),
-				Z = C.a.wrapped(q, "SubtextLink", A.a),
+				X = C.a.a("Link", A.a),
+				Z = C.a.wrapped(X, "SubtextLink", A.a),
 				U = C.a.wrapped(I.a, "LinkIcon", A.a),
 				$ = C.a.button("LinkButton", A.a),
 				ee = C.a.wrapped(S.a, "ArrowRight", A.a),
-				te = e => r.a.createElement(X, {
+				te = e => r.a.createElement(q, {
 					direction: e.direction,
 					disabled: e.disabled,
 					indent: e.indent,
@@ -406,9 +406,9 @@
 				re = C.a.wrapped(ne, "NSFWFlair", A.a),
 				se = e => {
 					switch (e.flair) {
-						case F.f.Nsfw:
+						case D.f.Nsfw:
 							return r.a.createElement(re, null, "NSFW");
-						case F.f.Spoiler:
+						case D.f.Spoiler:
 							return r.a.createElement(ae, null, "SPOILER");
 						default:
 							return null
@@ -416,12 +416,12 @@
 				},
 				ie = e => {
 					const t = Object(i.a)();
-					return r.a.createElement(X, {
+					return r.a.createElement(q, {
 						className: e.className,
 						disabled: e.disabled,
 						indent: e.indent,
 						last: e.last
-					}, r.a.createElement(K, null, r.a.createElement(D.a, null, r.a.createElement("label", {
+					}, r.a.createElement(K, null, r.a.createElement(M.a, null, r.a.createElement("label", {
 						htmlFor: t
 					}, r.a.createElement(V, null, e.label))), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(Q, null, e.tooltip && r.a.createElement(J, {
 						tooltipContentClass: e.tooltipContentClassName,
@@ -440,9 +440,9 @@
 				de = C.a.div("TickText", A.a),
 				me = C.a.div("PreSubText", A.a),
 				ue = Object(o.c)({
-					isNightModeOn: L.db
+					isNightModeOn: L.cb
 				}),
-				pe = Object(s.b)(ue)(e => r.a.createElement(X, {
+				pe = Object(s.b)(ue)(e => r.a.createElement(q, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled,
@@ -454,7 +454,7 @@
 					style: {
 						flex: 5
 					}
-				}, !e.inModal && r.a.createElement(D.a, null, r.a.createElement(V, null, e.label)), !e.hideSubtext && r.a.createElement(Y, null, " ", r.a.createElement(me, {
+				}, !e.inModal && r.a.createElement(M.a, null, r.a.createElement(V, null, e.label)), !e.hideSubtext && r.a.createElement(Y, null, " ", r.a.createElement(me, {
 					style: {
 						color: e.ticks[e.value].color
 					}
@@ -482,28 +482,28 @@
 						color: t === e.value.toString() ? e.ticks[t].color : "#878A8C"
 					}
 				}, e.ticks[t].text))))))),
-				he = e => r.a.createElement(X, {
+				he = e => r.a.createElement(q, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(K, null, r.a.createElement(D.a, null, r.a.createElement(V, null, e.label)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(Q, null, r.a.createElement(R.o, {
+				}, r.a.createElement(K, null, r.a.createElement(M.a, null, r.a.createElement(V, null, e.label)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(Q, null, r.a.createElement(R.o, {
 					onClick: e.onClick
 				}, e.actionText)))),
-				xe = e => r.a.createElement(X, {
+				xe = e => r.a.createElement(q, {
 					className: e.className,
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(K, null, r.a.createElement(q, {
+				}, r.a.createElement(K, null, r.a.createElement(X, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, r.a.createElement(U, null)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(q, {
+				}, e.label, r.a.createElement(U, null)), r.a.createElement(Y, null, e.subtext)), r.a.createElement(z, null, r.a.createElement(X, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
 				}, r.a.createElement(ee, null)))),
-				be = e => r.a.createElement(X, {
+				be = e => r.a.createElement(q, {
 					className: e.className,
 					disabled: e.disabled,
 					indent: e.indent,
@@ -526,7 +526,7 @@
 					})
 				})))),
 				Ce = Object(o.c)({
-					isOpen: (e, t) => Object(M.b)(t.id)(e)
+					isOpen: (e, t) => Object(F.b)(t.id)(e)
 				}),
 				ve = Object(s.b)(Ce, (e, t) => ({
 					openDropdown: () => {
@@ -534,7 +534,7 @@
 							tooltipId: t.id
 						}))
 					}
-				}))(e => r.a.createElement(X, {
+				}))(e => r.a.createElement(q, {
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
@@ -574,7 +574,7 @@
 						{
 							items: c
 						} = o;
-					return r.a.createElement(X, {
+					return r.a.createElement(q, {
 						disabled: t
 					}, r.a.createElement(K, null, r.a.createElement("label", {
 						htmlFor: o.id
@@ -582,7 +582,7 @@
 						className: o.labelClassname
 					}, o.label)), r.a.createElement(Y, null, o.subtext)), r.a.createElement("div", {
 						className: A.a.Wrapper__LineBreak
-					}), r.a.createElement(X, {
+					}), r.a.createElement(q, {
 						last: n,
 						indent: !0,
 						disabled: t
@@ -603,7 +603,7 @@
 						}, n)
 					}))))
 				},
-				fe = e => r.a.createElement(X, {
+				fe = e => r.a.createElement(q, {
 					className: e.className,
 					direction: e.direction,
 					disabled: e.disabled,
@@ -917,9 +917,9 @@
 				j = n("./src/reddit/icons/svgs/Admin/index.tsx"),
 				B = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				R = n("./src/reddit/icons/svgs/Eye/index.tsx"),
-				D = n("./src/reddit/icons/svgs/Info/index.tsx"),
-				F = n("./src/reddit/icons/svgs/Lock/index.tsx"),
-				M = n("./src/reddit/icons/svgs/User/index.tsx"),
+				M = n("./src/reddit/icons/svgs/Info/index.tsx"),
+				D = n("./src/reddit/icons/svgs/Lock/index.tsx"),
+				F = n("./src/reddit/icons/svgs/User/index.tsx"),
 				L = n("./src/reddit/models/Subreddit/index.ts"),
 				P = n("./src/reddit/models/SubredditRestrictions/index.ts"),
 				A = n("./src/reddit/selectors/experiments/emailInvite.ts"),
@@ -961,13 +961,13 @@
 				Q = n.n(J),
 				K = n("./src/lib/lessComponent.tsx");
 			const z = 21,
-				X = "create-title-info",
-				q = K.a.wrapped(D.a, "Info", Q.a),
+				q = "create-title-info",
+				X = K.a.wrapped(M.a, "Info", Q.a),
 				Z = K.a.wrapped(k.a, "RadioOption", Q.a),
 				U = K.a.wrapped(h.c, "Tooltip", Q.a),
-				$ = K.a.wrapped(M.a, "Public", Q.a),
+				$ = K.a.wrapped(F.a, "Public", Q.a),
 				ee = K.a.wrapped(R.a, "Restricted", Q.a),
-				te = K.a.wrapped(F.a, "Private", Q.a),
+				te = K.a.wrapped(D.a, "Private", Q.a),
 				ne = K.a.wrapped(j.a, "Employee", Q.a),
 				ae = K.a.wrapped(B.a, "CloseButton", Q.a),
 				re = K.a.wrapped(N.b, "ErrorText", Q.a),
@@ -975,10 +975,10 @@
 					error: W.f,
 					isCreatePending: W.j,
 					isEmailInviteExperimentEnabled: A.a,
-					isEmployee: H.N,
+					isEmployee: H.M,
 					crosspostId: W.i,
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(H.pb)(e),
-					userIsSuspended: H.X,
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(H.ob)(e),
+					userIsSuspended: H.W,
 					allTags: G.e,
 					existingTags: G.f,
 					newTags: G.g,
@@ -989,7 +989,7 @@
 					clearErrors: () => e(Object(m.f)()),
 					onCloseModal: () => e(Object(d.g)(g.a.SUBREDDIT_CREATION_MODAL_ID)),
 					onShowTooltip: () => e(Object(u.f)({
-						tooltipId: X
+						tooltipId: q
 					})),
 					onHideTooltip: () => e(Object(u.i)()),
 					validateSubredditName: t => e(Object(m.i)(t))
@@ -1172,14 +1172,14 @@
 						}, a.fbt._("Community names including capitalization cannot be changed.", null, {
 							hk: "VjrZg"
 						}), s.a.createElement("span", {
-							id: X,
+							id: q,
 							onMouseEnter: o,
 							onMouseLeave: i,
 							className: Q.a.info
-						}, s.a.createElement(q, null), s.a.createElement(U, {
+						}, s.a.createElement(X, null), s.a.createElement(U, {
 							className: Q.a.StyledTooltip,
 							caretOnTop: !0,
-							tooltipId: X,
+							tooltipId: q,
 							text: a.fbt._('Names cannot have spaces (e.g., "r/bookclub" not "r/book club"), must be between 3-21 characters, and underscores ("_") are the only special characters allowed. Avoid using solely trademarked names (e.g., "r/FansOfAcme" not "r/Acme").', null, {
 								hk: "3RsycS"
 							})
@@ -1856,4 +1856,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.eb3fdcbce53551867302.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditCreation.0da6aaf4b8623d1ed5bd.js.map

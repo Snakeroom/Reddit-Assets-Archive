@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.80e84bbdc1bddab4d87e.js
-// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.18729442f7b2238b9ac3.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -589,7 +589,7 @@
 					let {
 						apiContext: s
 					} = r;
-					if (!Object(v.Q)(n())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(v.P)(n())) return void t(Object(a.i)(l.a.LOGIN_MODAL_ID));
 					const i = n().features.comments.models[e];
 					if (!i) return;
 					const d = i.isLocked ? m.k : m.e;
@@ -1113,8 +1113,8 @@
 				let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 				return `${e}${t}${n?"inOverlay":""}`
 			};
-			var F = n("./src/reddit/components/Comments/Comment/TopMeta/cakeDay.m.less"),
-				P = n.n(F);
+			var P = n("./src/reddit/components/Comments/Comment/TopMeta/cakeDay.m.less"),
+				F = n.n(P);
 			const D = e => {
 				let {
 					className: t,
@@ -1130,7 +1130,7 @@
 						hk: "1xptSi"
 					});
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement("img", {
-					className: Object(d.a)(P.a.cakedayIcon, t),
+					className: Object(d.a)(F.a.cakedayIcon, t),
 					src: `${R.a.assetPath}/img/powerups/flair_cakeday.png`,
 					alt: m,
 					id: l,
@@ -1546,8 +1546,8 @@
 				Se = n("./src/reddit/components/Comments/Comment/TopMeta/index.m.less"),
 				Be = n.n(Se);
 
-			function Fe() {
-				return (Fe = Object.assign || function(e) {
+			function Pe() {
+				return (Pe = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -1555,7 +1555,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const Pe = c.a.wrapped(f.b, "RightPositionedAuthorFlair", Be.a),
+			const Fe = c.a.wrapped(f.b, "RightPositionedAuthorFlair", Be.a),
 				De = c.a.span("DeletedText", Be.a),
 				Ue = c.a.wrapped(_.a, "MetaSeparator", Be.a),
 				He = Object(i.b)(() => Object(a.c)({
@@ -1641,12 +1641,12 @@
 					renderedInOverlay: A,
 					subredditDisplayText: R
 				}), S);
-				if (i.isDeleted) return s.a.createElement(Ve, Fe({}, e, {
+				if (i.isDeleted) return s.a.createElement(Ve, Pe({}, e, {
 					className: Object(d.a)(n, Be.a.container, {
 						[Be.a.collapsed]: o
 					})
 				}));
-				if (o) return s.a.createElement(ze, Fe({}, e, {
+				if (o) return s.a.createElement(ze, Pe({}, e, {
 					className: Object(d.a)(n, Be.a.container, {
 						[Be.a.collapsed]: o
 					})
@@ -1679,7 +1679,7 @@
 				}), r && s.a.createElement(Y, null), r && s.a.createElement(_.c, {
 					className: Be.a.metaText,
 					key: "crowdControlSeparator"
-				}), u && !B && s.a.createElement(Pe, {
+				}), u && !B && s.a.createElement(Fe, {
 					flair: u,
 					forceSmallEmojis: m
 				}), !m && s.a.createElement(g.a, {
@@ -2469,4 +2469,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.80e84bbdc1bddab4d87e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c.18729442f7b2238b9ac3.js.map

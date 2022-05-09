@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.98038073a1c3812a6eaa.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.5963872c97cba5688ced.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityNotificationSettings"], {
 		"./node_modules/lodash/times.js": function(e, t, n) {
@@ -242,7 +242,7 @@
 					options: N,
 					onSelect: e => {
 						var t;
-						a(Object(f.m)(d, l, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), n(d, e.value)
+						a(Object(f.n)(d, l, null === (t = e.value) || void 0 === t ? void 0 : t.toLowerCase())), n(d, e.value)
 					},
 					buttonClassName: O.a.dropdown,
 					buttonIcon: w
@@ -251,11 +251,11 @@
 			var v = n("./src/reddit/components/Settings/Notifications/LoadingSection.tsx"),
 				_ = n("./src/reddit/selectors/user.ts");
 			const w = Object(o.c)({
-					cursor: _.sb,
-					hasError: _.tb,
-					hasNextPage: _.ub,
-					isPending: _.vb,
-					subreddits: _.wb
+					cursor: _.rb,
+					hasError: _.sb,
+					hasNextPage: _.tb,
+					isPending: _.ub,
+					subreddits: _.vb
 				}),
 				N = Object(d.b)(w, e => ({
 					clearSubscribedSubredditsList: () => e(Object(c.c)()),
@@ -281,7 +281,7 @@
 					clearSubscribedSubredditsList: m
 				} = e;
 				const b = Object(h.a)();
-				Object(a.useEffect)(() => (b(Object(f.n)()), t({
+				Object(a.useEffect)(() => (b(Object(f.o)()), t({
 					first: 20
 				}), () => {
 					m()
@@ -533,4 +533,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.98038073a1c3812a6eaa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityNotificationSettings.5963872c97cba5688ced.js.map

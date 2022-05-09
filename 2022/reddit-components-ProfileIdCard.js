@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.dc9b0a6b560b0c95f218.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.54423ec2487fa27d901f.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -823,7 +823,7 @@
 					let {
 						profileName: r
 					} = t;
-					return Object(x.Gb)(e, r)
+					return Object(x.Fb)(e, r)
 				}, (e, t) => ({
 					karma: {
 						...p.a,
@@ -1558,7 +1558,7 @@
 						url: "testing" === n ? "https://nft.reddit.com" : `https://nft.reddit.com/n/${r}`,
 						badge: n
 					}
-				})(g), [g]), E = Object(a.e)(l.db);
+				})(g), [g]), E = Object(a.e)(l.cb);
 				return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 					className: Object(i.a)(f.a.container, C)
 				}, s.a.createElement(c.a, {
@@ -2026,8 +2026,8 @@
 				z = r("./src/reddit/constants/modals.ts"),
 				Z = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				q = r("./src/reddit/helpers/styles/mixins/loading.ts"),
-				Q = r("./src/reddit/models/Gold/Premium/index.ts"),
-				Y = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
+				Y = r("./src/reddit/models/Gold/Premium/index.ts"),
+				Q = r("./src/reddit/selectors/experiments/chatInviteLinkSharing.ts"),
 				V = r("./src/reddit/selectors/experiments/crisisTextLine.ts"),
 				X = r("./src/reddit/selectors/premium.ts"),
 				J = r("./src/reddit/components/ProfileIdCard/footer.m.less"),
@@ -2047,11 +2047,11 @@
 					coinsToSpend: k.e,
 					givePremiumModalIsOpen: X.c,
 					hasFetchedModerators: _.k,
-					isEmployee: k.N,
-					isLoggedIn: k.Q,
+					isEmployee: k.M,
+					isLoggedIn: k.P,
 					profile: _.j,
 					crisisFlowEnabled: V.b,
-					chatInviteLinkSharing: Y.a
+					chatInviteLinkSharing: Q.a
 				}),
 				re = e => {
 					let {
@@ -2106,7 +2106,7 @@
 							onClickChatInviteLink: f,
 							onClickUnblockUser: b,
 							isUserBlocked: g
-						} = this.props, v = o && Object(Q.d)(n, a).length && !c || a, h = y()([(c || i) && s ? {
+						} = this.props, v = o && Object(Y.d)(n, a).length && !c || a, h = y()([(c || i) && s ? {
 							text: j.fbt._("Profile Moderation", null, {
 								hk: "4x1una"
 							}),
@@ -2331,7 +2331,7 @@
 					let {
 						profileName: r
 					} = t;
-					return Object(k.Bb)(e, {
+					return Object(k.Ab)(e, {
 						userName: r
 					})
 				},
@@ -2339,13 +2339,13 @@
 					let {
 						profileName: r
 					} = t;
-					return Object(k.Ab)(e, {
+					return Object(k.zb)(e, {
 						userName: r
 					})
 				},
 				page: C.b,
 				allowNFTs: N.a,
-				isUserBlocked: k.L
+				isUserBlocked: k.K
 			}), ge = e => {
 				let {
 					username: t,
@@ -2457,7 +2457,7 @@
 					prefShowSnoovatar: M,
 					snoovatarFullBodyAsset: A,
 					username: D
-				} = k, R = !!o && o.id === L, W = !(!o || !o.snoovatarFullBodyAsset), G = C && C.bannerBackgroundImage, H = !!b && b.isNSFW, K = H && c, z = !(!v || !v.userIsSubscriber), Z = `/user/${D}/`, q = E && E.url === Z, Q = !v || v.acceptChats, Y = !v || v.acceptPms, V = P && Object(de.b)(A), X = () => {
+				} = k, R = !!o && o.id === L, W = !(!o || !o.snoovatarFullBodyAsset), G = C && C.bannerBackgroundImage, H = !!b && b.isNSFW, K = H && c, z = !(!v || !v.userIsSubscriber), Z = `/user/${D}/`, q = E && E.url === Z, Y = !v || v.acceptChats, Q = !v || v.acceptPms, V = P && Object(de.b)(A), X = () => {
 					r(e => !e)
 				};
 				return a.a.createElement(a.a.Fragment, null, a.a.createElement(u.a, {
@@ -2500,7 +2500,7 @@
 						isUserBlocked: j,
 						onClickUnblockUser: X,
 						enableFollowers: F
-					}), !!o && !R && !j && Q && he({
+					}), !!o && !R && !j && Y && he({
 						userId: L
 					})),
 					footer: j ? void 0 : a.a.createElement(se, {
@@ -2510,7 +2510,7 @@
 						allowViewSnoovatar: M,
 						profileName: D,
 						sendEvent: I,
-						userAcceptsPms: Y,
+						userAcceptsPms: Q,
 						isUserBlocked: j
 					}),
 					onClickSnoovatar: p,
@@ -2897,7 +2897,7 @@
 					action: "click",
 					noun: "block_user",
 					targetUser: {
-						id: Object(a.Ab)(t, {
+						id: Object(a.zb)(t, {
 							userName: e
 						}).id
 					},
@@ -2908,7 +2908,7 @@
 					action: "click",
 					noun: "unblock_user",
 					targetUser: {
-						id: Object(a.Ab)(t, {
+						id: Object(a.zb)(t, {
 							userName: e
 						}).id
 					},
@@ -3071,7 +3071,7 @@
 				a = r("./src/reddit/selectors/user.ts");
 			const o = e => Object(s.c)(e, {
 				experimentName: n.G,
-				experimentEligibilitySelector: () => Object(a.P)(e)
+				experimentEligibilitySelector: () => Object(a.O)(e)
 			}) === n.sd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
@@ -3085,11 +3085,11 @@
 				s = r("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = r("./src/reddit/selectors/user.ts");
 			const o = e => n.c.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: a.Q,
+					experimentEligibilitySelector: a.P,
 					experimentName: n.i
 				}),
 				i = e => n.e.Enabled === Object(s.c)(e, {
-					experimentEligibilitySelector: a.Q,
+					experimentEligibilitySelector: a.P,
 					experimentName: n.n
 				})
 		},
@@ -3135,4 +3135,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.dc9b0a6b560b0c95f218.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.54423ec2487fa27d901f.js.map

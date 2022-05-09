@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.c07992a6edfd1cb95fa1.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.22ccda5fa0ac4667467e.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-TransferTransactionModal"], {
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
@@ -1365,7 +1365,7 @@
 					recipient: r,
 					subredditId: i,
 					transferAmount: c
-				} = e, B = Object(a.d)(), x = Object(y.a)(), P = Object(a.e)(e => Object(A.Ab)(e, {
+				} = e, B = Object(a.d)(), x = Object(y.a)(), P = Object(a.e)(e => Object(A.zb)(e, {
 					userName: r
 				})), {
 					currentPointsAmount: C,
@@ -1460,4 +1460,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.c07992a6edfd1cb95fa1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.22ccda5fa0ac4667467e.js.map

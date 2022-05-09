@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.2e6d07b154d54cfacd25.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.5335b57030c99fc37caf.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1030,7 +1030,7 @@
 				isChatPost: k.d,
 				isPostSEOEligible: w.e,
 				postPermalink: I.F,
-				shouldOpenPostInNewTab: y.jb,
+				shouldOpenPostInNewTab: y.ib,
 				isBlockingInterstitialEnabled: E.b,
 				isBlockingInterstitialV2Enabled: E.c
 			}));
@@ -1585,7 +1585,7 @@
 					activeModalId: le.a,
 					claimedFreeAward: E.b,
 					layout: U.S,
-					userIsOp: q.Db,
+					userIsOp: q.Cb,
 					subreddit: U.r,
 					isBlockedUserBannerEnabled: (e, t) => {
 						let {
@@ -3187,7 +3187,7 @@
 						} = t;
 						return Object(A.E)(e, {
 							pageLayer: r
-						}) && s && o && Object(re.Bb)(e, {
+						}) && s && o && Object(re.Ab)(e, {
 							userName: n.author
 						})
 					},
@@ -4922,7 +4922,7 @@
 				r = s("./src/reddit/selectors/runTimeEnvVars.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			const a = e => !!Object(r.b)(e) || Object(n.c)(e, {
-				experimentEligibilitySelector: i.Q,
+				experimentEligibilitySelector: i.P,
 				experimentName: o.m
 			}) === o.f.Enabled
 		},
@@ -4936,7 +4936,7 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
-				experimentEligibilitySelector: i.Q,
+				experimentEligibilitySelector: i.P,
 				experimentName: n.nc
 			}), e => e === n.sd)
 		},
@@ -4945,4 +4945,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.2e6d07b154d54cfacd25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.5335b57030c99fc37caf.js.map

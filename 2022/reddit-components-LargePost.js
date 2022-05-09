@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b20408b9e1d870adb4d6.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.76e3f1a8e611e159adc5.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2073,7 +2073,7 @@
 					flairStyleTemplate: ie.W,
 					isBlurredPreview: me.b,
 					isCurrentUserProfilePost: C.l,
-					isLoggedIn: _.Q,
+					isLoggedIn: _.P,
 					isActive: C.j,
 					showPromotedCTA: Oe.a,
 					moderatorPermissions: P.m,
@@ -2180,7 +2180,7 @@
 					}, [He, ve]);
 					Object(v.a)(lt, ut);
 					const [pt, mt] = Object(s.useState)(!1), ft = Object(s.useCallback)(() => {
-						mt(!pt), Object(ce.Mb)(), Ue(Object(ue.d)(We))
+						mt(!pt), Object(ce.Kb)(), Ue(Object(ue.d)(We))
 					}, [pt, Ue, We]), bt = _e.isSponsored && !(_e.media && g.a.has(_e.media.type)) && !Ve, ht = !!(_ && (null == Fe ? void 0 : Fe.isNSFW));
 					return o.a.createElement(x.b, null, o.a.createElement(z.a, {
 						className: Object(S.a)(ke.a.container, r, Ee.a.largeAndMediumPostStyles, Ee.a.largeAndMediumActiveStyles, Object(u.a)(e), {
@@ -2949,7 +2949,7 @@
 					J = V && Object(w.h)(V),
 					Z = Object(i.e)(e => {
 						if (!J) return !0;
-						const t = Object(j.Gb)(e, F.author || "");
+						const t = Object(j.Fb)(e, F.author || "");
 						return !t || t.enableFollowers
 					});
 				return r.a.createElement("div", {
@@ -3373,4 +3373,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.b20408b9e1d870adb4d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.76e3f1a8e611e159adc5.js.map

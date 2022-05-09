@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.de7f604a9429b5fe8af1.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.2ac778dc09f5dd0cf4cc.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -698,7 +698,7 @@
 					hideBolt: t
 				}), l.a.createElement(f, null), l.a.createElement(w, null))
 			}, y = () => {
-				const e = Object(s.e)(d.db);
+				const e = Object(s.e)(d.cb);
 				return l.a.createElement("div", {
 					className: p.a.ctaButtonCirclesAndBolt
 				}, l.a.createElement("div", {
@@ -822,9 +822,9 @@
 				let {
 					openModal: t
 				} = e;
-				const a = Object(i.e)(p.db),
+				const a = Object(i.e)(p.cb),
 					l = Object(i.e)(u.b),
-					h = Object(i.e)(p.Q),
+					h = Object(i.e)(p.P),
 					k = l ? b._("Come together to level up the whole community", null, {
 						hk: "n9eu8"
 					}) : b._("Level up the whole community", null, {
@@ -1303,7 +1303,7 @@
 				tournamentName: "2020 Eurocup"
 			}], L = () => {
 				const e = Object(k.a)(),
-					t = Object(s.e)(W.db),
+					t = Object(s.e)(W.cb),
 					a = Object(T.a)(),
 					r = () => {
 						e((() => e => ({
@@ -1356,9 +1356,9 @@
 			};
 			var U = a("./src/reddit/components/CollapsibleFAQ/index.tsx"),
 				G = a("./src/reddit/pages/Powerups/FaqSection.tsx"),
-				Q = a("./src/reddit/pages/Predictions/FaqSection.m.less"),
-				V = a.n(Q);
-			const K = [{
+				V = a("./src/reddit/pages/Predictions/FaqSection.m.less"),
+				K = a.n(V);
+			const Q = [{
 					prompt: v.fbt._("Where can I find Predictions?", null, {
 						hk: "32ZI7C"
 					}),
@@ -1411,34 +1411,34 @@
 				Z = () => {
 					const e = Object(k.a)();
 					return l.a.createElement("div", {
-						className: V.a.faqSection
+						className: K.a.faqSection
 					}, l.a.createElement("div", {
-						className: Object(i.a)(V.a.faqSectionContent, V.a.contentWrapper)
+						className: Object(i.a)(K.a.faqSectionContent, K.a.contentWrapper)
 					}, l.a.createElement(G.a, {
 						hideBolt: !0
 					}), l.a.createElement("h2", {
-						className: V.a.faqHeading
+						className: K.a.faqHeading
 					}, v.fbt._("Questions about Predictions?", null, {
 						hk: "3e9tVH"
 					})), l.a.createElement("div", {
-						className: V.a.faqs
-					}, K.map((e, t) => {
+						className: K.a.faqs
+					}, Q.map((e, t) => {
 						let {
 							prompt: a,
 							answer: n
 						} = e;
 						return l.a.createElement(U.a, {
-							className: V.a.collapsibleFaq,
+							className: K.a.collapsibleFaq,
 							defaultClosed: !0,
 							question: a,
 							key: t
 						}, n)
 					})), l.a.createElement("h3", {
-						className: V.a.faqMoreQuestionsHeading
+						className: K.a.faqMoreQuestionsHeading
 					}, v.fbt._("Have more questions? We've got answers.", null, {
 						hk: "3Entyj"
 					})), l.a.createElement(y.t, {
-						className: V.a.fullFaqsButton,
+						className: K.a.fullFaqsButton,
 						priority: y.c.Secondary,
 						href: "https://mods.reddithelp.com/hc/en-us/articles/4409834282509",
 						onClick: () => {
@@ -1526,7 +1526,7 @@
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
 			t.default = () => {
 				const e = Object(k.a)(),
-					t = Object(s.e)(W.db),
+					t = Object(s.e)(W.cb),
 					[a, m] = Object(r.useState)(!1);
 				let d = !1;
 				"undefined" != typeof window && void 0 !== window.navigator && (d = Object(o.b)() === o.a), Object(r.useEffect)(() => {
@@ -1692,7 +1692,7 @@
 				}))
 			};
 			const re = () => {
-				const e = Object(s.e)(W.db);
+				const e = Object(s.e)(W.cb);
 				return l.a.createElement("div", {
 					className: ae.a.ctaButtonCirclesAndBolt
 				}, l.a.createElement("div", {
@@ -1715,4 +1715,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.de7f604a9429b5fe8af1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.2ac778dc09f5dd0cf4cc.js.map

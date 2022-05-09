@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.967c9cd336a8982652e1.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.1db867e7f83415a32d37.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -876,13 +876,13 @@
 			function Bt() {
 				const e = Object(u.d)(),
 					[t, n] = Object(s.useState)(""),
-					[r, i] = Object(s.useState)(Object(Pt.P)()),
+					[r, i] = Object(s.useState)(Object(Pt.O)()),
 					c = Object(s.useCallback)(() => {
 						const n = Date.now(),
 							s = t ? n - Number(t) * It : 0;
 						e(Object(At.I)({
 							surveyLastSeenTime: s
-						}, !1)), Object(Pt.Tb)(s)
+						}, !1)), Object(Pt.Rb)(s)
 					}, [e, t]);
 				return Object(s.useEffect)(() => {
 					const e = Object(Tt.h)(),
@@ -909,7 +909,7 @@
 					className: kt.a.Separator
 				}, "-- OR --"), a.a.createElement("div", null, a.a.createElement(fe.t, {
 					priority: fe.c.Secondary,
-					onClick: () => Object(Pt.Tb)(0)
+					onClick: () => Object(Pt.Rb)(0)
 				}, "Clear Timestamp"))))
 			}
 			var Ft = n("./src/reddit/actions/survey/index.ts"),
@@ -940,12 +940,12 @@
 					r = Object(u.e)(Ut.b),
 					i = Object(u.d)(),
 					c = Object(s.useCallback)(() => {
-						i(Object(Ft.a)()), Object(Pt.Tb)(0), i(Object(At.I)({
+						i(Object(Ft.a)()), Object(Pt.Rb)(0), i(Object(At.I)({
 							surveyLastSeenTime: 0
 						}, !1))
 					}, [i]),
 					o = Object(s.useCallback)(e => {
-						i(Object(Ft.b)(e.target.value || null)), Object(Pt.gb)(e.target.value)
+						i(Object(Ft.b)(e.target.value || null)), Object(Pt.fb)(e.target.value)
 					}, [i]),
 					l = Object(s.useCallback)(e => {
 						i(Object(Ft.c)(parseInt(e.target.value) || 1))
@@ -1804,4 +1804,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.967c9cd336a8982652e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.1db867e7f83415a32d37.js.map

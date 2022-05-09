@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.e426e407369c2481469f.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.10a41097b95b94f20219.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -293,14 +293,14 @@
 				c = e => {
 					switch (e) {
 						case a.a.Denied:
-							i.nb(!1), Object(r.c)();
+							i.mb(!1), Object(r.c)();
 							break;
 						case a.a.Default:
 						case a.a.Granted:
-							i.nb(!0), Object(r.c)();
+							i.mb(!0), Object(r.c)();
 							break;
 						case a.a.Closed:
-							i.nb(!0)
+							i.mb(!0)
 					}
 				}
 		},
@@ -707,7 +707,7 @@
 							await n(Object(c.o)(t.name))
 						}
 					})(), (async () => {
-						const r = Object(k.Ab)(a, {
+						const r = Object(k.zb)(a, {
 							userName: t
 						});
 						if (!r) return;
@@ -1404,7 +1404,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(x.Ab)(e, {
+				user: (e, t) => Object(x.zb)(e, {
 					userName: t.username
 				})
 			});
@@ -1711,7 +1711,7 @@
 			const Te = Object(s.c)({
 					activeTooltipId: I.a,
 					currentUser: x.k,
-					isLoggedIn: x.Q,
+					isLoggedIn: x.P,
 					hideNSFWPref: x.F,
 					moderatorPermissions: (e, t) => {
 						let {
@@ -1739,7 +1739,7 @@
 							minSize: 32
 						})
 					},
-					user: x.Ab,
+					user: x.zb,
 					userFlair: (e, t) => {
 						let {
 							subredditId: n
@@ -1765,7 +1765,7 @@
 						return !!a && Object(m.i)(e, a)
 					},
 					trophyCase: (e, t) => Object(f.r)(e, Object(f.m)(e, t.userName)),
-					isNightMode: x.db,
+					isNightMode: x.cb,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
 						const n = Object(c.a)(t.contextId) ? Object(p.G)(e, {
@@ -1952,7 +1952,7 @@
 						subredditId: s,
 						userId: d,
 						thingId: l
-					} = e, [m, b] = Object(r.useState)(), [p, h] = Object(r.useState)(!0), [x, E] = Object(r.useState)(""), [w, M] = Object(r.useState)(!1), A = Object(o.e)(j.db);
+					} = e, [m, b] = Object(r.useState)(), [p, h] = Object(r.useState)(!0), [x, E] = Object(r.useState)(""), [w, M] = Object(r.useState)(!1), A = Object(o.e)(j.cb);
 					Object(r.useEffect)(() => {
 						const e = e => {
 							e.style.height = "inherit";
@@ -1970,13 +1970,13 @@
 						}
 					}, []), Object(r.useEffect)(() => {
 						if (Object(v.a)()) {
-							const e = Object(I.B)("modnote-draft");
+							const e = Object(I.A)("modnote-draft");
 							E(e && e[d] ? e[d] : "")
 						}
 					}, [d]);
 					const T = Object(o.d)(),
 						B = Object(r.useCallback)(e => {
-							E(e), Object(I.Fb)("modnote-draft", {
+							E(e), Object(I.Db)("modnote-draft", {
 								[d]: e
 							})
 						}, [E, d]),
@@ -2399,7 +2399,7 @@
 						onClickLinked: r
 					} = e;
 					var s, i;
-					const d = Object(o.e)(j.db),
+					const d = Object(o.e)(j.cb),
 						l = "label" in n && n.label || k.c,
 						u = "note" in n ? n.note : void 0,
 						m = Object(N.b)(k.e[l || "bot"], {
@@ -2633,7 +2633,7 @@
 					const {
 						modNote: t,
 						subredditId: n
-					} = e, r = Object(o.e)(j.db), s = Object(b.a)(), i = !!t.__typename && ["ModActionNote", "ModActionNotePost", "ModActionNoteComment"].includes(t.__typename);
+					} = e, r = Object(o.e)(j.cb), s = Object(b.a)(), i = !!t.__typename && ["ModActionNote", "ModActionNotePost", "ModActionNoteComment"].includes(t.__typename);
 					return a.a.createElement("div", {
 						className: Object(c.a)(V.a.wrapper, e.className)
 					}, a.a.createElement("div", {
@@ -2732,7 +2732,7 @@
 							userId: i,
 							filter: d
 						} = e,
-						l = Object(o.e)(e => Object(j.zb)(e, {
+						l = Object(o.e)(e => Object(j.yb)(e, {
 							userId: i
 						})),
 						u = Object(o.e)(e => Object(T.U)(e, {
@@ -2813,7 +2813,7 @@
 						subredditId: n,
 						userId: s,
 						filter: d
-					} = e, l = Object(o.d)(), u = Object(o.e)(j.db), [m, b] = Object(r.useState)(!0);
+					} = e, l = Object(o.d)(), u = Object(o.e)(j.cb), [m, b] = Object(r.useState)(!0);
 					Object(r.useEffect)(() => {
 						setTimeout(() => b(!1), 0)
 					}, []);
@@ -2899,7 +2899,7 @@
 						} = e,
 						[I, x] = Object(r.useState)(h || w.k.All),
 						[g, _] = Object(r.useState)(s),
-						O = Object(o.e)(j.db),
+						O = Object(o.e)(j.cb),
 						C = Object(b.a)(),
 						N = e => {
 							t(Object(i.f)({
@@ -3020,7 +3020,7 @@
 						I = Object(o.e)(t => Object(bt.b)(ut.c.access)(t, e)),
 						x = Object(o.e)(t => Object(bt.b)(ut.c.mail)(t, e)),
 						g = Object(o.e)(t => Object(bt.b)(ut.c.flair)(t, e)),
-						_ = Object(o.e)(e => Object(j.Ab)(e, {
+						_ = Object(o.e)(e => Object(j.zb)(e, {
 							userName: u
 						})),
 						O = Object(o.e)(e => !!Object(mt.b)(e, {
@@ -3831,7 +3831,7 @@
 			}(r || (r = {}));
 			t.b = e => {
 				var t, n, r;
-				const o = Object(i.e)(h.db),
+				const o = Object(i.e)(h.cb),
 					{
 						className: v,
 						modNote: x,
@@ -5842,7 +5842,7 @@
 				d = n("./src/reddit/selectors/platform.ts"),
 				c = n("./src/reddit/selectors/user.ts");
 			const l = () => !0,
-				u = Object(r.a)(c.X, c.O, (e, t) => !(e || t)),
+				u = Object(r.a)(c.W, c.N, (e, t) => !(e || t)),
 				m = e => {
 					if (!u(e)) return;
 					const t = Object(s.c)(e, {
@@ -6032,4 +6032,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.e426e407369c2481469f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.10a41097b95b94f20219.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.64ba48698fd829c30310.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.626dfb2023e410e463f6.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit", "reddit-components-BlankPost"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -299,14 +299,14 @@
 				d = e => {
 					switch (e) {
 						case o.a.Denied:
-							c.nb(!1), Object(r.c)();
+							c.mb(!1), Object(r.c)();
 							break;
 						case o.a.Default:
 						case o.a.Granted:
-							c.nb(!0), Object(r.c)();
+							c.mb(!0), Object(r.c)();
 							break;
 						case o.a.Closed:
-							c.nb(!0)
+							c.mb(!0)
 					}
 				}
 		},
@@ -1023,7 +1023,7 @@
 				N = Object(b.u)();
 			t.b = N(e => {
 				var t;
-				const n = Object(c.e)(I.db);
+				const n = Object(c.e)(I.cb);
 				let i, d, u;
 				if (e.subredditOrProfile) {
 					const {
@@ -1250,9 +1250,9 @@
 			const x = () => {},
 				g = Object(c.c)({
 					currentUser: p.k,
-					isNightMode: p.db,
+					isNightMode: p.cb,
 					shouldHideNSFW: p.F,
-					user: p.Ab,
+					user: p.zb,
 					isProfileAvatarChangeFixEnabled: O.a
 				}),
 				h = Object(s.b)(g);
@@ -3422,7 +3422,7 @@
 				a = n("./src/reddit/selectors/platform.ts"),
 				d = n("./src/reddit/selectors/user.ts");
 			const u = () => !0,
-				l = Object(r.a)(d.X, d.O, (e, t) => !(e || t)),
+				l = Object(r.a)(d.W, d.N, (e, t) => !(e || t)),
 				b = e => {
 					if (!l(e)) return;
 					const t = Object(s.c)(e, {
@@ -3481,7 +3481,7 @@
 					if (!Object(u.n)(e, {
 							subredditId: t
 						})) return;
-					if (Object(f.N)(e)) return I(e);
+					if (Object(f.M)(e)) return I(e);
 					const n = Object(b.I)(e, {
 						identifier: {
 							id: t,
@@ -3620,4 +3620,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.64ba48698fd829c30310.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.626dfb2023e410e463f6.js.map

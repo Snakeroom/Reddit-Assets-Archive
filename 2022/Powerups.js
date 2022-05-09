@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.38d0aaadcf1939ef757c.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.04652da918e778f715dc.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -658,7 +658,7 @@
 				let {
 					space: t
 				} = e;
-				const a = Object(i.e)(c.db),
+				const a = Object(i.e)(c.cb),
 					o = t === n.MODAL,
 					d = t === n.INFEED_UNIT;
 				return l.a.createElement("div", {
@@ -1421,7 +1421,7 @@
 					hideBolt: t
 				}), r.a.createElement(w, null), r.a.createElement(_, null))
 			}, v = () => {
-				const e = Object(o.e)(u.db);
+				const e = Object(o.e)(u.cb);
 				return r.a.createElement("div", {
 					className: p.a.ctaButtonCirclesAndBolt
 				}, r.a.createElement("div", {
@@ -1545,9 +1545,9 @@
 				let {
 					openModal: t
 				} = e;
-				const a = Object(l.e)(p.db),
+				const a = Object(l.e)(p.cb),
 					r = Object(l.e)(m.b),
-					h = Object(l.e)(p.Q),
+					h = Object(l.e)(p.P),
 					f = r ? b._("Come together to level up the whole community", null, {
 						hk: "n9eu8"
 					}) : b._("Level up the whole community", null, {
@@ -1739,7 +1739,7 @@
 			const j = k()(["wallstreetbets", "pennystocks", "tiktokcringe", "lgbt", "python", "unexpected", "chloe", "pewdiepiesubmissions", "roastme", "jacksepticeye", "thebachelor", "taylorswift", "bigbrother", "belowdeck", "blackpink"], 3),
 				M = () => {
 					const e = Object(N.a)(),
-						t = Object(r.e)(S.db),
+						t = Object(r.e)(S.cb),
 						a = Object(y.a)(),
 						n = () => {
 							e((() => e => ({
@@ -2193,7 +2193,7 @@
 					}, a))
 				},
 				ie = () => {
-					const e = Object(r.e)(S.db),
+					const e = Object(r.e)(S.cb),
 						t = Object(r.e)(H.b);
 					return s.a.createElement("div", {
 						className: Object(E.a)(se.a.perksSection, {
@@ -2252,7 +2252,7 @@
 			const {
 				fbt: ge
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), be = () => {
-				const e = Object(r.e)(S.db);
+				const e = Object(r.e)(S.cb);
 				return Object(r.e)(H.b) ? s.a.createElement("div", {
 					className: he.a.powerupStepsSection
 				}, s.a.createElement("div", {
@@ -2353,4 +2353,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.38d0aaadcf1939ef757c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.04652da918e778f715dc.js.map

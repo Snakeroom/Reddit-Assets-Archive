@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.f5edcace0c9b7d3a4fee.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.3c7ab0622bc8fc631880.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, s) {
@@ -1755,7 +1755,7 @@
 				b = s.n(p);
 			const h = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				x = Object(o.b)(() => Object(a.c)({
-					isNightmodeOn: u.db
+					isNightmodeOn: u.cb
 				}));
 			t.a = x(e => {
 				const t = {
@@ -1852,7 +1852,7 @@
 						style: t
 					}, e.children)
 				},
-				w = Object(a.b)(() => Object(d.a)(E.F, C.jb, (e, t) => {
+				w = Object(a.b)(() => Object(d.a)(E.F, C.ib, (e, t) => {
 					let {
 						isSponsored: s,
 						postId: n
@@ -4801,10 +4801,10 @@
 						n = t.redditStyle || Object(x.l)(e, {
 							subredditId: s
 						}),
-						r = Object(f.db)(e);
+						r = Object(f.cb)(e);
 					return n || r
 				},
-				nigtmode: f.db,
+				nigtmode: f.cb,
 				subredditId: m.n,
 				topPostVariant: h.d
 			}));
@@ -5757,4 +5757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.f5edcace0c9b7d3a4fee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.3c7ab0622bc8fc631880.js.map

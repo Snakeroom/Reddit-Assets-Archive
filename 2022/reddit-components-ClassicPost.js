@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6c85c97aeecb869e9b8b.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.21b2faebec54e12d6a4f.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -708,19 +708,19 @@
 				top: "bottom"
 			};
 
-			function Q(e) {
+			function Z(e) {
 				return e.replace(/left|right|bottom|top/g, (function(e) {
 					return J[e]
 				}))
 			}
-			var Z = {
+			var Q = {
 				start: "end",
 				end: "start"
 			};
 
 			function X(e) {
 				return e.replace(/start|end/g, (function(e) {
-					return Z[e]
+					return Q[e]
 				}))
 			}
 
@@ -1041,9 +1041,9 @@
 								n = e.options,
 								s = e.name;
 							if (!t.modifiersData[s]._skip) {
-								for (var o = n.mainAxis, r = void 0 === o || o, a = n.altAxis, i = void 0 === a || a, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, x = V(h), v = c || (x === h || !f ? [Q(h)] : function(e) {
+								for (var o = n.mainAxis, r = void 0 === o || o, a = n.altAxis, i = void 0 === a || a, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, x = V(h), v = c || (x === h || !f ? [Z(h)] : function(e) {
 										if (V(e) === k) return [];
-										var t = Q(e);
+										var t = Z(e);
 										return [X(e), t, X(t)]
 									}(h)), g = [h].concat(v).reduce((function(e, n) {
 										return e.concat(V(n) === k ? function(e, t) {
@@ -1094,8 +1094,8 @@
 											padding: d
 										}),
 										U = R ? B ? j : E : B ? w : y;
-									O[W] > S[W] && (U = Q(U));
-									var z = Q(U),
+									O[W] > S[W] && (U = Z(U));
+									var z = Z(U),
 										q = [];
 									if (r && q.push(D[L] <= 0), i && q.push(D[U] <= 0, D[z] <= 0), q.every((function(e) {
 											return e
@@ -1181,16 +1181,16 @@
 											width: 0,
 											height: 0
 										},
-										Q = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
+										Z = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
 											top: 0,
 											right: 0,
 											bottom: 0,
 											left: 0
 										},
-										Z = Q[T],
-										X = Q[F],
+										Q = Z[T],
+										X = Z[F],
 										Y = oe(0, M[L], J[L]),
-										K = k ? M[L] / 2 - D - Y - Z - A : z - Y - Z - A,
+										K = k ? M[L] / 2 - D - Y - Q - A : z - Y - Q - A,
 										$ = k ? -M[L] / 2 + D + Y + X + A : q + Y + X + A,
 										ee = t.elements.arrow && O(t.elements.arrow),
 										te = ee ? "y" === C ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
@@ -1673,7 +1673,7 @@
 					} = e;
 					const {
 						audioRoom: n
-					} = t, r = () => Math.floor(10 * Math.random() + 1), i = Object(h.e)(x.db), [c, d] = Object(s.useState)(!1), [l, u] = Object(s.useState)(r());
+					} = t, r = () => Math.floor(10 * Math.random() + 1), i = Object(h.e)(x.cb), [c, d] = Object(s.useState)(!1), [l, u] = Object(s.useState)(r());
 					return Object(s.useEffect)(() => {
 						const e = setInterval(() => {
 							d(!0), setTimeout(() => d(!1), 3500), u(r())
@@ -1732,8 +1732,8 @@
 				q = n("./src/reddit/connectors/ClassicPost/index.tsx"),
 				G = n("./src/reddit/constants/postLayout.ts"),
 				J = n("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
-				Q = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
-				Z = n("./src/reddit/helpers/hasModPostPermissions/index.ts"),
+				Z = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
+				Q = n("./src/reddit/helpers/hasModPostPermissions/index.ts"),
 				X = n("./src/reddit/helpers/localStorage/index.ts"),
 				Y = n("./src/reddit/helpers/search/renderMedia.tsx"),
 				K = n("./src/reddit/helpers/styles/mixins/index.tsx"),
@@ -1798,10 +1798,10 @@
 				}, [h, be, xe.id, Ne]);
 				const Ae = ge ? void 0 : O,
 					Ie = n || void 0,
-					Te = Object(Z.a)(le),
+					Te = Object(Q.a)(le),
 					Fe = Object(J.a)(le),
-					Le = Object(Q.a)(le),
-					Be = ue && Z.a,
+					Le = Object(Z.a)(le),
+					Be = ue && Q.a,
 					Re = Object(P.d)(xe),
 					We = Object(N.c)(xe),
 					De = !!xe.media && xe.media.type === U.o.RTJSON,
@@ -1822,10 +1822,10 @@
 					{
 						source: Je
 					} = Ge,
-					[Qe, Ze] = Object(s.useState)(!1),
+					[Ze, Qe] = Object(s.useState)(!1),
 					Xe = Object(s.useCallback)(() => {
-						Ze(!Qe), Object(X.Mb)(), Pe(Object($.d)(ve))
-					}, [Qe, ve, Pe]);
+						Qe(!Ze), Object(X.Kb)(), Pe(Object($.d)(ve))
+					}, [Ze, ve, Pe]);
 				let Ye = o.a.createElement(z.a, {
 					className: se.a.classicThumbnail,
 					crosspost: Ie && xe,
@@ -1950,7 +1950,7 @@
 						hide: !Be,
 						report: !Be
 					})
-				})), o.a.createElement(_.d, null))), Object(Y.a)(xe, se.a, Oe, h, _e, re), Ee && Qe && o.a.createElement(f.a, {
+				})), o.a.createElement(_.d, null))), Object(Y.a)(xe, se.a, Oe, h, _e, re), Ee && Ze && o.a.createElement(f.a, {
 					className: se.a.creatorStatsContainer,
 					post: xe,
 					subreddit: Ee,
@@ -2890,7 +2890,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: b.l,
 					isExpanded: b.m,
-					isLoggedIn: x.Q,
+					isLoggedIn: x.P,
 					showPromotedCTA: h.a,
 					moderatorPermissions: m.m,
 					modModeEnabled: d.U,
@@ -3276,4 +3276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6c85c97aeecb869e9b8b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.21b2faebec54e12d6a4f.js.map

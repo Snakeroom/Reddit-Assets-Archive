@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.d6bfa374588419231f86.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a27334fce8986f3cb961.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2800,7 +2800,7 @@
 					isAnonymous: S.f,
 					iFramed: S.g,
 					isGildPending: S.e,
-					isEmployee: F.N,
+					isEmployee: F.M,
 					isRecommendedCoinPackagePending: M.q,
 					message: S.c,
 					postOrComment: (e, t) => {
@@ -2954,7 +2954,7 @@
 					const {
 						isAnonymous: e
 					} = this.props;
-					Object(p.yb)(e)
+					Object(p.wb)(e)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.handleEscapeKey);
@@ -3102,7 +3102,7 @@
 						})
 					})),
 					setIsAnonymous: t => {
-						e(Object(v.setIsAnonymous)(t)), Object(p.yb)(t)
+						e(Object(v.setIsAnonymous)(t)), Object(p.wb)(t)
 					},
 					subredditAboutRequested: t => e(Object(_.u)(t)),
 					subredditLockedCoinsRequested: (t, r) => e(Object(x.a)(t, r)),
@@ -3221,7 +3221,7 @@
 				b = r.n(p);
 			const h = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(a.b)(() => Object(o.c)({
-					isNightmodeOn: m.db
+					isNightmodeOn: m.cb
 				}));
 			t.a = f(e => {
 				const t = {
@@ -3318,7 +3318,7 @@
 						style: t
 					}, e.children)
 				},
-				N = Object(o.b)(() => Object(c.a)(v.F, w.jb, (e, t) => {
+				N = Object(o.b)(() => Object(c.a)(v.F, w.ib, (e, t) => {
 					let {
 						isSponsored: r,
 						postId: n
@@ -5943,4 +5943,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.d6bfa374588419231f86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a27334fce8986f3cb961.js.map

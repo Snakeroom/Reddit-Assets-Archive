@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.0c4641096b390d95eea4.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.4729d3158a33e0d02d38.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/reddit/components/AdLinkWrapper/index.m.less": function(e, t, s) {
@@ -137,7 +137,7 @@
 					} = e;
 					const {
 						audioRoom: s
-					} = t, r = () => Math.floor(10 * Math.random() + 1), a = Object(b.e)(C.db), [d, c] = Object(o.useState)(!1), [l, m] = Object(o.useState)(r());
+					} = t, r = () => Math.floor(10 * Math.random() + 1), a = Object(b.e)(C.cb), [d, c] = Object(o.useState)(!1), [l, m] = Object(o.useState)(r());
 					return Object(o.useEffect)(() => {
 						const e = setInterval(() => {
 							c(!0), setTimeout(() => c(!1), 3500), m(r())
@@ -288,7 +288,7 @@
 					} = Ke,
 					[Ze, qe] = Object(o.useState)(!1),
 					Je = Object(o.useCallback)(() => {
-						qe(!Ze), Object(J.Mb)(), Pe(Object($.d)(ve))
+						qe(!Ze), Object(J.Kb)(), Pe(Object($.d)(ve))
 					}, [Ze, ve, Pe]);
 				let Ye = n.a.createElement(G.a, {
 					className: oe.a.classicThumbnail,
@@ -789,7 +789,7 @@
 							commentId: s.postId
 						})
 					},
-					isLoggedIn: te.Q,
+					isLoggedIn: te.P,
 					moderatorPermissions: (e, t) => {
 						let {
 							comment: s
@@ -2253,7 +2253,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: h.l,
 					isExpanded: h.m,
-					isLoggedIn: C.Q,
+					isLoggedIn: C.P,
 					showPromotedCTA: b.a,
 					moderatorPermissions: u.m,
 					modModeEnabled: c.U,
@@ -2635,4 +2635,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.0c4641096b390d95eea4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.4729d3158a33e0d02d38.js.map

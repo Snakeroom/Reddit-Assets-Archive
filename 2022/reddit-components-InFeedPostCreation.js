@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.11e4a6fc5682cde10313.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.07849f8f0ce1c8d2da96.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -37,8 +37,8 @@
 				_ = n("./src/reddit/helpers/trackers/postComposer.ts"),
 				f = n("./src/reddit/icons/fonts/index.tsx"),
 				E = n("./src/reddit/selectors/experiments/onlineIndicator.ts"),
-				O = n("./src/reddit/selectors/subreddit.ts"),
-				U = n("./src/reddit/selectors/user.ts"),
+				U = n("./src/reddit/selectors/subreddit.ts"),
+				O = n("./src/reddit/selectors/user.ts"),
 				N = n("./src/reddit/components/InFeedPostCreation/index.m.less"),
 				j = n.n(N);
 			const C = l.a.wrapped(b.a, "CurrentUserIcon", j.a);
@@ -67,11 +67,11 @@
 					}
 				},
 				M = Object(a.c)({
-					currentUser: U.k,
+					currentUser: O.k,
 					isPresenceConsumptionExpEnabled: E.c,
-					isPresenceTogglePref: U.V,
-					subreddit: O.z,
-					subredditAboutInfo: O.w
+					isPresenceTogglePref: O.U,
+					subreddit: U.z,
+					subredditAboutInfo: U.w
 				}),
 				v = Object(c.b)(M, e => ({
 					navigateTo: t => e(Object(i.b)(t)),
@@ -118,15 +118,15 @@
 							media: (o || r) && !e.isNSFW
 						}
 					}(a, l),
-					O = e => {
+					U = e => {
 						i(Object(_.x)({
 							actionInfoType: "du",
 							subredditId: null == a ? void 0 : a.id,
 							noun: h(e)
 						}))
 					},
-					U = () => {
-						O(d.Wb.POST), c(b)
+					O = () => {
+						U(d.Wb.POST), c(b)
 					},
 					N = n && s,
 					M = t ? o.a.createElement(x.a, {
@@ -141,9 +141,9 @@
 				}, M, o.a.createElement("input", {
 					name: "createPost",
 					className: j.a.Input,
-					onChange: U,
-					onClick: U,
-					onKeyPress: U,
+					onChange: O,
+					onClick: O,
+					onKeyPress: O,
 					placeholder: r.fbt._("Create Post", null, {
 						hk: "OcnKS"
 					}),
@@ -155,7 +155,7 @@
 					kind: I.b.InternalLink,
 					size: I.d.M,
 					id: P.Media,
-					onClick: () => O(d.Wb.MEDIA),
+					onClick: () => U(d.Wb.MEDIA),
 					onMouseEnter: () => m(P.Media),
 					onMouseLeave: () => m(P.Media),
 					to: b + k(d.Wb.MEDIA),
@@ -172,7 +172,7 @@
 					size: I.d.M,
 					"aria-label": g(),
 					id: P.Link,
-					onClick: () => O(d.Wb.LINK_ONLY),
+					onClick: () => U(d.Wb.LINK_ONLY),
 					onMouseEnter: () => m(P.Link),
 					onMouseLeave: () => m(P.Link),
 					to: b + k(d.Wb.LINK_ONLY),
@@ -211,8 +211,8 @@
 			}
 			const x = Object(i.c)({
 					currentUser: d.k,
-					isNightMode: d.db,
-					isPresenceUserPrefEnabled: d.V,
+					isNightMode: d.cb,
+					isPresenceUserPrefEnabled: d.U,
 					shouldHideNSFW: d.F
 				}),
 				_ = Object(c.b)(x);
@@ -281,4 +281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.11e4a6fc5682cde10313.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.07849f8f0ce1c8d2da96.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.3a718d090913d663d643.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.197520a468e37e97974a.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -541,7 +541,7 @@
 					return async (e, o) => {
 						const s = o();
 						if (!!s.features.comments.drafts[n])
-							if (Object(ee.S)(s) && t) {
+							if (Object(ee.R)(s) && t) {
 								const o = oe({
 									hasFocus: t,
 									draftKey: n
@@ -818,7 +818,7 @@
 					return async (e, s) => {
 						const r = s(),
 							a = Object(i.a)(q.c.replyToComment, n);
-						if (!Object(ee.Q)(s()) && !Object(Y.a)(r)) return e(Object(c.j)()), void e(Object(l.k)({
+						if (!Object(ee.P)(s()) && !Object(Y.a)(r)) return e(Object(c.j)()), void e(Object(l.k)({
 							actionSource: l.a.Reply,
 							redirectUrl: Object(V.m)(s(), {
 								commentId: n
@@ -858,7 +858,7 @@
 								draftType: q.c.replyToComment,
 								rtJson: h,
 								text: ""
-							}, Object(ee.S)(r)) {
+							}, Object(ee.R)(r)) {
 							const o = Ee({
 								parentCommentId: n,
 								commentsPageKey: t,
@@ -1061,7 +1061,7 @@
 								commentId: e,
 								followState: t
 							})).ok) {
-							Object(H.wb)(null !== (m = null === (l = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== m ? m : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
+							Object(H.ub)(null !== (m = null === (l = null === (c = s().pages) || void 0 === c ? void 0 : c.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== m ? m : [], null === (u = s().user.account) || void 0 === u ? void 0 : u.id);
 							const e = r ? o.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : o.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -1306,7 +1306,7 @@
 						}),
 						kind: m.b.SuccessCommunity,
 						text: d
-					})), Object(a.sb)(s + 1)
+					})), Object(a.rb)(s + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(e, t, n) {
@@ -2164,7 +2164,7 @@
 					} = e, m = l ? Object(L.j)(A.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l) : 0, u = c && m < X && s && 0 === d.length, [p, h] = Object(r.useState)(u), b = Object(a.d)();
 					Object(r.useEffect)(() => {
 						p && l && setTimeout(() => {
-							Object(L.T)(A.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l), b(Object(B.f)({
+							Object(L.S)(A.b.EMOJI_PROMO_TOOLTIP_DISPLAY_COUNT_PER_SUBREDDIT, l), b(Object(B.f)({
 								tooltipId: G
 							}))
 						}, J)
@@ -2359,7 +2359,7 @@
 					},
 					draft: Te.i,
 					isCommentBeforeSignUpEnabled: we.a,
-					isLoggedIn: je.Q,
+					isLoggedIn: je.P,
 					isLoginModalOpened: Object(ye.c)(de.a.LOGIN_MODAL_ID),
 					isRegisterModalOpened: Object(ye.c)(de.a.REGISTER_MODAL_ID),
 					userCanUseEmojis: (e, t) => {
@@ -4234,8 +4234,8 @@
 			}
 			const f = Object(a.c)({
 					currentUser: c.k,
-					isNightMode: c.db,
-					isPresenceUserPrefEnabled: c.V,
+					isNightMode: c.cb,
+					isPresenceUserPrefEnabled: c.U,
 					shouldHideNSFW: c.F
 				}),
 				g = Object(i.b)(f);
@@ -4732,7 +4732,7 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
-			const a = Object(o.a)(i.Q, i.P, (e, t) => e || t),
+			const a = Object(o.a)(i.P, i.O, (e, t) => e || t),
 				d = Object(o.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: s.J
@@ -4819,4 +4819,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.3a718d090913d663d643.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.197520a468e37e97974a.js.map

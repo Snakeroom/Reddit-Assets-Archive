@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.9a51baf3c461275fbf18.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.2633936f534d908ab443.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -417,8 +417,8 @@
 					banned: Y
 				}
 			});
-			const Q = Object(o.a)(C.s),
-				X = Object(o.a)(C.r),
+			const X = Object(o.a)(C.s),
+				Q = Object(o.a)(C.r),
 				V = Object(o.a)(C.q),
 				$ = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
@@ -431,13 +431,13 @@
 							i = Object(g.e)(e, c),
 							d = o.features.banned.fetchedTokens[i];
 						if (o.features.banned.api.pending[i] || d) return;
-						r(Q({
+						r(X({
 							subredditId: e,
 							fetchedToken: c
 						}));
 						const l = o.subreddits.models[e].name,
 							m = await h(s(), l, t);
-						m.ok ? r(X({
+						m.ok ? r(Q({
 							...m.body,
 							fetchedToken: c
 						})) : r(V({
@@ -551,7 +551,7 @@
 							await r(Object(d.o)(t.name))
 						}
 					})(), (async () => {
-						const a = Object(O.Ab)(n, {
+						const a = Object(O.zb)(n, {
 							userName: t
 						});
 						if (!a) return;
@@ -916,8 +916,8 @@
 						className: J.a.coinIcon
 					}), r.score))
 				},
-				Q = r("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
-				X = r.n(Q);
+				X = r("./src/reddit/components/Econ/TopAwardersModal/Winners/index.m.less"),
+				Q = r.n(X);
 			var V = function(e) {
 					const {
 						awarders: t,
@@ -927,12 +927,12 @@
 					if (!t.length) return null;
 					const s = [t[0], t[1] || void 0, t[2] || void 0];
 					return n.a.createElement("div", {
-						className: Object(i.a)(r, X.a.container, {
-							[X.a.flexContainer]: s.length < 3
+						className: Object(i.a)(r, Q.a.container, {
+							[Q.a.flexContainer]: s.length < 3
 						})
 					}, s.map((e, t) => n.a.createElement(Y, {
 						showScore: a,
-						className: X.a.winner,
+						className: Q.a.winner,
 						awarder: e,
 						rank: t + 1,
 						key: t
@@ -1236,20 +1236,20 @@
 				Z = r("./src/reddit/actions/subredditModeration/ban.ts"),
 				J = r("./src/reddit/constants/modals.ts"),
 				Y = r("./src/reddit/components/Hovercards/helpers.ts"),
-				Q = r("./src/reddit/icons/fonts/index.tsx"),
-				X = r("./src/reddit/models/ModeratingSubreddits/index.ts"),
+				X = r("./src/reddit/icons/fonts/index.tsx"),
+				Q = r("./src/reddit/models/ModeratingSubreddits/index.ts"),
 				V = r("./src/reddit/selectors/bannedUser.ts"),
 				$ = r("./src/reddit/components/Hovercards/AuthorHovercard/ModActions.m.less"),
 				ee = r.n($);
 			const {
 				fbt: te
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), re = Object(o.c)({
-				hasModMailPermissions: Object(u.b)(X.c.mail),
+				hasModMailPermissions: Object(u.b)(Q.c.mail),
 				isUserBanned: (e, t) => !!Object(V.b)(e, {
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(I.Ab)(e, {
+				user: (e, t) => Object(I.zb)(e, {
 					userName: t.username
 				})
 			});
@@ -1275,7 +1275,7 @@
 						onClick: () => {
 							s(this.props.user.id), o(F.e(t))
 						}
-					}, n.a.createElement(Q.a, {
+					}, n.a.createElement(X.a, {
 						name: "ban",
 						isFilled: !0,
 						className: ee.a.icon
@@ -1286,7 +1286,7 @@
 						onClick: () => {
 							c(), o(F.a(t))
 						}
-					}, n.a.createElement(Q.a, {
+					}, n.a.createElement(X.a, {
 						name: "ban",
 						className: ee.a.icon
 					}), te._("Ban User", null, {
@@ -1296,7 +1296,7 @@
 						onClick: () => {
 							i(), o(F.d(t))
 						}
-					}, n.a.createElement(Q.a, {
+					}, n.a.createElement(X.a, {
 						name: "mod_mute",
 						className: ee.a.icon
 					}), te._("Mute User", null, {
@@ -1342,7 +1342,7 @@
 					onClick: () => {
 						e.onToggleUserFlairModal(), e.sendEvent(F.c(e.contextId))
 					}
-				}, n.a.createElement(Q.a, {
+				}, n.a.createElement(X.a, {
 					name: "tag",
 					className: ee.a.icon
 				}), oe._("Edit user flair", null, {
@@ -1556,7 +1556,7 @@
 			const Me = Object(o.c)({
 					activeTooltipId: h.a,
 					currentUser: I.k,
-					isLoggedIn: I.Q,
+					isLoggedIn: I.P,
 					hideNSFWPref: I.F,
 					moderatorPermissions: (e, t) => {
 						let {
@@ -1584,7 +1584,7 @@
 							minSize: 32
 						})
 					},
-					user: I.Ab,
+					user: I.zb,
 					userFlair: (e, t) => {
 						let {
 							subredditId: r
@@ -1610,7 +1610,7 @@
 						return !!n && Object(u.i)(e, n)
 					},
 					trophyCase: (e, t) => Object(f.r)(e, Object(f.m)(e, t.userName)),
-					isNightMode: I.db,
+					isNightMode: I.cb,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
 						const r = Object(d.a)(t.contextId) ? Object(b.G)(e, {
@@ -2675,4 +2675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.9a51baf3c461275fbf18.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.2633936f534d908ab443.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.880fc4c7a633fb53afd2.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.c379bb7974e5e52261e1.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -305,13 +305,13 @@
 					}
 				}
 				async getSubredditForAdoption() {
-					let e = ae.cachedData || Object(H.B)(q.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
+					let e = ae.cachedData || Object(H.A)(q.b.SUBREDDITS_FOR_ADOPTION_STORE) || null;
 					if (!e || Date.now() - e.fetchedAt > se) {
 						const t = await Y(this.props.apiContext());
 						t.ok && (e = {
 							subreddits: t.body.data.subreddits.map(e => e.name),
 							fetchedAt: Date.now()
-						}, Object(H.Fb)(q.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
+						}, Object(H.Db)(q.b.SUBREDDITS_FOR_ADOPTION_STORE, e))
 					}
 					return ae.cachedData = e, e ? e.subreddits : []
 				}
@@ -700,13 +700,13 @@
 			const Ye = "c1020",
 				$e = "videos",
 				et = Object(u.c)({
-					isMod: Ze.R,
-					isLoggedIn: Ze.P,
+					isMod: Ze.Q,
+					isLoggedIn: Ze.O,
 					isLoggedOutOneFeed: qe.a,
 					shouldShowLocalRecommendations: e => !1 !== e.user.prefs.showLocationBasedRecommendations,
 					currentUser: Ze.k,
 					frontpageLinks: He.b,
-					isOver18: Ze.kb,
+					isOver18: Ze.jb,
 					isInBFFSLeaderboardExperiment: function(e) {
 						return Ge(e) === Ae.B.RotateEven
 					},
@@ -718,7 +718,7 @@
 							n = !!Object(Ke.P)(e, Ye);
 						return (!t || !n) && function(e) {
 							return Object(We.c)(e, {
-								experimentEligibilitySelector: Ze.Q,
+								experimentEligibilitySelector: Ze.P,
 								experimentName: Ae.pc
 							}) === Ae.sd
 						}(e)
@@ -2220,4 +2220,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.880fc4c7a633fb53afd2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.c379bb7974e5e52261e1.js.map

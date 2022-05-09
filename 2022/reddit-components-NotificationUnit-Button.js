@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.96802a26795c0000b8b3.js
-// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e633ebe47cb60ec21143.js
+// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/scroll/index.ts": function(t, e, n) {
@@ -190,7 +190,7 @@
 					return async (t, o) => {
 						const r = o();
 						if (!!r.features.comments.drafts[n])
-							if (Object(tt.S)(r) && e) {
+							if (Object(tt.R)(r) && e) {
 								const o = ot({
 									hasFocus: e,
 									draftKey: n
@@ -467,7 +467,7 @@
 					return async (t, r) => {
 						const i = r(),
 							c = Object(s.a)(G.c.replyToComment, n);
-						if (!Object(tt.Q)(r()) && !Object(Y.a)(i)) return t(Object(d.j)()), void t(Object(l.k)({
+						if (!Object(tt.P)(r()) && !Object(Y.a)(i)) return t(Object(d.j)()), void t(Object(l.k)({
 							actionSource: l.a.Reply,
 							redirectUrl: Object(Q.m)(r(), {
 								commentId: n
@@ -507,7 +507,7 @@
 								draftType: G.c.replyToComment,
 								rtJson: b,
 								text: ""
-							}, Object(tt.S)(i)) {
+							}, Object(tt.R)(i)) {
 							const o = xt({
 								parentCommentId: n,
 								commentsPageKey: e,
@@ -710,7 +710,7 @@
 								commentId: t,
 								followState: e
 							})).ok) {
-							Object(B.wb)(null !== (u = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
+							Object(B.ub)(null !== (u = null === (l = null === (d = r().pages) || void 0 === d ? void 0 : d.comments) || void 0 === l ? void 0 : l.followed) && void 0 !== u ? u : [], null === (m = r().user.account) || void 0 === m ? void 0 : m.id);
 							const t = i ? o.fbt._("Followed! You’ll get updates when there’s new activity.", null, {
 								hk: "2O1Ou3"
 							}) : o.fbt._("Unfollowed. You won’t get updates on this comment anymore.", null, {
@@ -800,7 +800,7 @@
 						}),
 						kind: u.b.SuccessCommunity,
 						text: a
-					})), Object(c.sb)(r + 1)
+					})), Object(c.rb)(r + 1)
 				}
 		},
 		"./src/reddit/actions/publicAccessNetwork/automute.ts": function(t, e, n) {
@@ -2715,4 +2715,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.96802a26795c0000b8b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.e633ebe47cb60ec21143.js.map
