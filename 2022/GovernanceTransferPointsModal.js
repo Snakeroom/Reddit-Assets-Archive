@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.ef2e5aaed9fb7e4184c3.js
-// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.6bd1c602fcf028b3e564.js
+// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal", "CryptoLibEthers"], {
 		"./node_modules/@ethersproject/address/lib.esm/index.js": function(e, t, n) {
@@ -2775,8 +2775,8 @@
 			const a = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.ae
-				}) === r.rd
+					experimentName: r.be
+				}) === r.sd
 			}
 		},
 		"./src/reddit/selectors/gov.ts": function(e, t, n) {
@@ -2833,4 +2833,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.ef2e5aaed9fb7e4184c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.6bd1c602fcf028b3e564.js.map

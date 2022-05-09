@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Avatar.6ca3882bb29476601431.js
-// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Avatar.528d7960d204970f443e.js
+// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Avatar"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, s) {
@@ -117,7 +117,7 @@
 						expiration: new Date(e.expires).getTime()
 					}), [e]),
 					S = Object(u.a)(),
-					A = Object(o.e)(e => h && Object(m.d)(e));
+					A = Object(o.e)(e => h && Object(m.e)(e));
 				if (Object(r.useEffect)(() => {
 						(async () => {
 							await s.e(8).then(s.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
@@ -150,8 +150,8 @@
 			}));
 			var a = s("./src/reddit/constants/experiments.ts"),
 				r = s("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(r.a)(a.Uc)
+			const n = Object(r.a)(a.Vc)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.6ca3882bb29476601431.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Avatar.528d7960d204970f443e.js.map

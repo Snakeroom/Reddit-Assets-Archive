@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.2f1a87a2ea0b0986f904.js
-// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.4baae25146de73ec6474.js
+// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -486,8 +486,8 @@
 				O = n("./src/reddit/hooks/useToast.tsx");
 			var P = n("./src/reddit/actions/economics/helpers/index.ts"),
 				S = n("./src/reddit/helpers/trackers/predictions.ts"),
-				j = n("./src/reddit/hooks/useTracking.ts"),
-				I = n("./src/reddit/models/Prediction/index.ts");
+				I = n("./src/reddit/hooks/useTracking.ts"),
+				j = n("./src/reddit/models/Prediction/index.ts");
 			var M = n("./src/reddit/components/Econ/Prediction/PredictionModal/index.tsx"),
 				k = n("./src/reddit/components/ConfirmUserActionModal/index.tsx");
 			const w = e => {
@@ -535,7 +535,7 @@
 						setVoteOptionId: d,
 						predict: l
 					} = function(e) {
-						const [t, n] = Object(o.useState)(!1), [r, i] = Object(o.useState)(null), a = Object(j.a)(), c = Object(s.e)(m.e), d = Object(O.a)(), l = Object(s.d)(), u = e.options.find(e => {
+						const [t, n] = Object(o.useState)(!1), [r, i] = Object(o.useState)(null), a = Object(I.a)(), c = Object(s.e)(m.e), d = Object(O.a)(), l = Object(s.d)(), u = e.options.find(e => {
 							let {
 								id: t
 							} = e;
@@ -548,7 +548,7 @@
 							predict: async t => {
 								const o = e.id;
 								if (!u) return;
-								if (t.currency === I.a.Coins && t.amount > c) return Object(P.promptUserToBuyMoreCoins)(), void a(S.b);
+								if (t.currency === j.a.Coins && t.amount > c) return Object(P.promptUserToBuyMoreCoins)(), void a(S.b);
 								const r = t.amount;
 								if (e.endsAt < Date.now()) d(C.fbt._("Error: Failed to make prediction. This prediction has already ended", null, {
 									hk: "22UWEr"
@@ -610,7 +610,7 @@
 						upvote: _
 					} = function(e) {
 						const t = Object(s.d)(),
-							n = Object(s.e)(v.j),
+							n = Object(s.e)(v.k),
 							{
 								startDelayedUpvoteAnimation: o
 							} = Object(g.a)(e.id);
@@ -939,7 +939,7 @@
 					subredditId: t,
 					tournamentId: n
 				} = e;
-				const o = Object(j.a)(),
+				const o = Object(I.a)(),
 					i = Object(xe.a)(),
 					a = Object(s.e)(e => Object(Ce.U)(e, {
 						subredditId: t
@@ -983,8 +983,8 @@
 					className: Oe.a.chevron
 				}))
 			}
-			var je = n("./src/reddit/components/Econ/Prediction/index.m.less"),
-				Ie = n.n(je);
+			var Ie = n("./src/reddit/components/Econ/Prediction/index.m.less"),
+				je = n.n(Ie);
 			const Me = Object(i.c)({
 					isEditing: l.M,
 					prediction: d.g,
@@ -1014,9 +1014,9 @@
 						predictionStatus: b
 					} = c, f = u === l, _ = n && !Object(p.a)(b);
 					return r.a.createElement("div", {
-						className: Object(a.a)(t, Ie.a.container, {
-							[Ie.a.forCommentsPage]: n,
-							[Ie.a.isEditing]: n && o
+						className: Object(a.a)(t, je.a.container, {
+							[je.a.forCommentsPage]: n,
+							[je.a.isEditing]: n && o
 						}),
 						onClick: e => {
 							c && e.stopPropagation()
@@ -1121,9 +1121,9 @@
 			})), n.d(t, "d", (function() {
 				return S
 			})), n.d(t, "l", (function() {
-				return j
-			})), n.d(t, "t", (function() {
 				return I
+			})), n.d(t, "t", (function() {
+				return j
 			})), n.d(t, "u", (function() {
 				return M
 			})), n.d(t, "r", (function() {
@@ -1168,8 +1168,8 @@
 				O = r.a.header("ModalHeader", u.a),
 				P = r.a.div("ModalTitle", u.a),
 				S = r.a.div("ModalAnnotation", u.a),
-				j = r.a.div("ModalMain", u.a),
-				I = r.a.textarea("TextArea", u.a),
+				I = r.a.div("ModalMain", u.a),
+				j = r.a.textarea("TextArea", u.a),
 				M = r.a.wrapped(a.l, "WarningButton", u.a),
 				k = r.a.wrapped(a.l, "PrimaryButton", u.a),
 				w = r.a.wrapped(a.o, "CancelButton", u.a),
@@ -1752,9 +1752,9 @@
 			})), n.d(t, "n", (function() {
 				return S
 			})), n.d(t, "e", (function() {
-				return j
-			})), n.d(t, "d", (function() {
 				return I
+			})), n.d(t, "d", (function() {
+				return j
 			})), n.d(t, "j", (function() {
 				return M
 			})), n.d(t, "p", (function() {
@@ -1888,12 +1888,12 @@
 				return f
 			}
 
-			function j(e, t) {
+			function I(e, t) {
 				const n = S(e, t, a.a.Loyalty).find(e => "membership" === e.id);
 				return n ? [].concat(n.locked, n.unlocked).filter(e => e.position).sort((e, t) => e.position - t.position) : f
 			}
 
-			function I(e, t) {
+			function j(e, t) {
 				const n = e.economics.subredditPremium[t];
 				if (n && n.status === u.a.Fetched) {
 					const e = n.data.collections[a.a.Cosmetic];
@@ -2025,4 +2025,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.2f1a87a2ea0b0986f904.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.4baae25146de73ec6474.js.map

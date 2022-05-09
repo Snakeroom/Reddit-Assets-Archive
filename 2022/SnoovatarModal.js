@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.154df955ef75ecc4ca92.js
-// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.2fbb3c47173a34e4dc29.js
+// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -84,10 +84,10 @@
 				b = a("./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx"),
 				f = a("./src/higherOrderComponents/asModal/index.tsx"),
 				E = a("./src/reddit/components/SnoovatarModal/index.m.less"),
-				_ = a.n(E);
+				j = a.n(E);
 
-			function j() {
-				return (j = Object.assign || function(e) {
+			function _() {
+				return (_ = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var a = arguments[t];
 						for (var s in a) Object.prototype.hasOwnProperty.call(a, s) && (e[s] = a[s])
@@ -114,55 +114,59 @@
 					const t = Object(o.e)(e => e.user.session),
 						[c, i] = Object(r.useState)(!1),
 						m = Object(o.e)(O.a),
-						f = Object(r.useMemo)(() => ({
+						f = Object(o.e)(v.d),
+						E = Object(r.useMemo)(() => ({
 							headers: {
 								Authorization: `Bearer ${t.accessToken}`
 							},
 							expiration: new Date(t.expires).getTime()
 						}), [t]),
-						E = Object(u.a)(),
-						x = Object(o.e)(e => f && Object(v.d)(e));
+						x = Object(u.a)(),
+						A = Object(o.e)(e => E && Object(v.e)(e));
 					Object(r.useEffect)(() => {
 						(async () => {
 							await a.e(8).then(a.t.bind(null, "./node_modules/@reddit/avatars/style.css", 7))
-						})(), E(l.q), i(!0)
-					}, [E]);
+						})(), x(l.q), i(!0)
+					}, [x]);
 					const {
-						activeDetails: A,
-						activeTab: w
-					} = e, L = Object(r.useMemo)(() => ({
-						activeTab: w || d.a.EXPLORE,
-						activeDetails: A || void 0
-					}), [A, w]);
+						activeDetails: w,
+						activeTab: L
+					} = e, N = Object(r.useMemo)(() => {
+						const e = f ? d.a.SHOP : d.a.EXPLORE;
+						return {
+							activeTab: L || e,
+							activeDetails: w || void 0
+						}
+					}, [w, L, f]);
 					if (!t || !c) return null;
-					let N;
-					return N = e.share ? {
+					let T;
+					return T = e.share ? {
 						...h,
 						STRIPE_API_KEY: s.a.stripe.apiKey(m),
 						COPY_SHARE_PARAMS: e.share
 					} : {
 						...h,
 						STRIPE_API_KEY: s.a.stripe.apiKey(m)
-					}, x ? n.a.createElement("div", {
-						className: _.a.snoovatarModalBuilderV2
+					}, A ? n.a.createElement("div", {
+						className: j.a.snoovatarModalBuilderV2
 					}, n.a.createElement(r.Suspense, {
 						fallback: n.a.createElement("div", null)
 					}, n.a.createElement(S, {
 						accessToken: t.accessToken,
-						authHeaders: f,
-						config: N,
+						authHeaders: E,
+						config: T,
 						sendEvent: p.a
 					}, n.a.createElement(M, {
-						navState: L
-					})))) : n.a.createElement(b.a, j({
-						className: _.a.snoovatarModalIframeContainer
+						navState: N
+					})))) : n.a.createElement(b.a, _({
+						className: j.a.snoovatarModalIframeContainer
 					}, e))
 				});
 			t.default = () => {
 				const e = Object(o.d)(),
 					t = Object(o.e)(e => Object(m.a)(e));
-				return n.a.createElement(A, j({}, t, {
-					className: _.a.snoovatarModal,
+				return n.a.createElement(A, _({}, t, {
+					className: j.a.snoovatarModal,
 					withOverlay: !0,
 					onOverlayClick: () => e(Object(i.a)())
 				}))
@@ -175,7 +179,7 @@
 					return s
 				})),
 				function(e) {
-					e.EXPLORE = "explore", e.STYLE = "style", e.ME = "me", e.NFT = "nft"
+					e.SHOP = "shop", e.EXPLORE = "explore", e.STYLE = "style", e.ME = "me", e.NFT = "nft"
 				}(s || (s = {}))
 		},
 		"./src/reddit/selectors/experiments/econ/paymentsSandbox.ts": function(e, t, a) {
@@ -185,8 +189,8 @@
 			}));
 			var s = a("./src/reddit/constants/experiments.ts"),
 				r = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(r.a)(s.Uc)
+			const n = Object(r.a)(s.Vc)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.154df955ef75ecc4ca92.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.2fbb3c47173a34e4dc29.js.map

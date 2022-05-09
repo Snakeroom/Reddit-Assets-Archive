@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.255b0a29834c3833a016.js
-// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.cb6b70e8a5f2c9512238.js
+// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -2948,7 +2948,7 @@
 					url: F,
 					isHovercard: M
 				} = e;
-				const A = Object(i.e)(e => !w && !!S && Object(u.e)(e)),
+				const A = Object(i.e)(e => !w && !!S && Object(u.f)(e)),
 					L = Object(i.e)(m.b),
 					U = S && Object(l.e)(S) && L;
 				return n.a.createElement(n.a.Fragment, null, n.a.createElement(b.a, {
@@ -3059,7 +3059,7 @@
 					}
 				}),
 				x = e => {
-					const t = Object(o.e)(e => Object(f.i)(e));
+					const t = Object(o.e)(e => Object(f.j)(e));
 					return i.a.createElement(a.a, {
 						className: e.className
 					}, i.a.createElement(v, {
@@ -6179,8 +6179,8 @@
 				}) === s.y.Enabled,
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.Tc
-				}) === s.rd
+					experimentName: s.Uc
+				}) === s.sd
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, r) {
 			"use strict";
@@ -6231,4 +6231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.255b0a29834c3833a016.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.cb6b70e8a5f2c9512238.js.map

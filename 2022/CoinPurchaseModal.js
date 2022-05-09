@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.f98bdafe3138df2d078a.js
-// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.03a84e31e2f28dcab04a.js
+// Retrieved at 5/9/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -666,8 +666,8 @@
 				D = r("./src/reddit/helpers/awards/message.ts"),
 				F = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				q = r("./src/reddit/helpers/isPost.ts"),
-				U = r("./src/reddit/helpers/trackers/gild.ts"),
-				Q = r("./src/telemetry/index.ts"),
+				Q = r("./src/reddit/helpers/trackers/gild.ts"),
+				U = r("./src/telemetry/index.ts"),
 				H = r("./src/reddit/endpoints/profile/info.ts"),
 				W = r("./src/reddit/actions/gold/awardKarma.ts"),
 				V = r("./src/reddit/actions/gold/constants.ts"),
@@ -829,7 +829,7 @@
 							hk: "2sIK9Y"
 						}),
 						T = b.coinPrice;
-					Object(Q.a)(Object(U.viewKarmaSuccessEvent)({
+					Object(U.a)(Object(Q.viewKarmaSuccessEvent)({
 						award: b,
 						awarderKarmaEarned: f,
 						awardeeKarmaEarned: 0,
@@ -2114,7 +2114,7 @@
 				} = e;
 				const P = Object(f.a)(),
 					x = Object(u.d)(),
-					w = Object(u.e)(m.f),
+					w = Object(u.e)(m.g),
 					E = Object(u.e)(R.a),
 					k = !!n;
 				if (k && !w) {
@@ -2173,9 +2173,9 @@
 			};
 			var F = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				q = r("./src/reddit/hooks/useLocale.ts"),
-				U = r("./src/reddit/icons/fonts/Coin/index.tsx");
+				Q = r("./src/reddit/icons/fonts/Coin/index.tsx");
 			const {
-				fbt: Q
+				fbt: U
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			var H = e => {
 				var t;
@@ -2185,11 +2185,11 @@
 					style: {
 						backgroundImage: `url("${O.a.assetPath}/img/gold/coins-hero.jpg")`
 					}
-				}, o.a.createElement(U.a, {
+				}, o.a.createElement(Q.a, {
 					className: G.a.coinIcon
 				}), o.a.createElement("div", {
 					className: G.a.titleMain
-				}, Q._("Buy {amount}!", [Q._param("amount", Object(l.b)(e.purchasePackage.coins, {
+				}, U._("Buy {amount}!", [U._param("amount", Object(l.b)(e.purchasePackage.coins, {
 					locale: r,
 					type: d.b.Reddit,
 					currency: d.a
@@ -2197,7 +2197,7 @@
 					hk: "3VNw69"
 				})), o.a.createElement("div", {
 					className: G.a.titleDescription
-				}, Q._("You're purchasing Coins for yourself, {userName}!", [Q._param("userName", e.userName)], {
+				}, U._("You're purchasing Coins for yourself, {userName}!", [U._param("userName", e.userName)], {
 					hk: "ZGCBt"
 				})), o.a.createElement("img", {
 					className: G.a.goldPackage,
@@ -3937,7 +3937,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(a.a)(n.Uc)
+			const s = Object(a.a)(n.Vc)
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, r) {
 			"use strict";
@@ -4088,4 +4088,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.f98bdafe3138df2d078a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.03a84e31e2f28dcab04a.js.map
