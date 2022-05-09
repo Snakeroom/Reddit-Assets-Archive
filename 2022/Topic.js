@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.981a5396eb575801f2f7.js
-// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.25cf6bc2a76802c5c984.js
+// Retrieved at 5/9/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -777,7 +777,7 @@
 					}, r[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.xc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.yc.GreyRereddit ? e.reredditButtons : [];
 					return n.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2162,8 +2162,8 @@
 				J = s.n(V);
 			const {
 				fbt: U
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Y = 5;
-			class q extends n.a.Component {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), q = 5;
+			class Y extends n.a.Component {
 				constructor() {
 					super(...arguments), this.onClick = () => {
 						const {
@@ -2179,7 +2179,7 @@
 						relatedTopics: t
 					} = this.props.relationship;
 					return n.a.createElement(y, {
-						limit: Y,
+						limit: q,
 						title: e,
 						topics: t
 					}, this.renderSeeMoreButton())
@@ -2189,7 +2189,7 @@
 						namePlural: e,
 						relatedTopics: t
 					} = this.props.relationship;
-					return t.length < Y ? null : n.a.createElement(L.a, {
+					return t.length < q ? null : n.a.createElement(L.a, {
 						onClick: this.onClick,
 						to: "#"
 					}, n.a.createElement(I.r, {
@@ -2203,7 +2203,7 @@
 					})))
 				}
 			}
-			var K = q,
+			var K = Y,
 				Q = s("./src/lib/prettyPrintNumber/index.ts"),
 				Z = s("./src/reddit/components/Flair/index.tsx"),
 				X = s("./src/reddit/components/SubredditIcon/index.tsx"),
@@ -2571,11 +2571,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(i.f)(e),
-					experimentName: r.Zb
+					experimentName: r.ac
 				}), o.a),
 				l = Object(c.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(i.f)(e),
-					experimentName: r.Yb
+					experimentName: r.Zb
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -2704,4 +2704,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.981a5396eb575801f2f7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.25cf6bc2a76802c5c984.js.map

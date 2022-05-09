@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.b1d571d15f4a94283786.js
-// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.b1375afeaf2ea590999d.js
+// Retrieved at 5/9/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
 		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, r) {
@@ -25,7 +25,7 @@
 				return Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: l.vb
-				}) === l.qd
+				}) === l.rd
 			}
 			var p = r("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
 				O = r.n(p);
@@ -61,4 +61,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.b1d571d15f4a94283786.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.b1375afeaf2ea590999d.js.map
