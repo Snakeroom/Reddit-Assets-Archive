@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.825eb060c84502f0f588.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.69836b8287d562f5105a.js
+// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -58,15 +58,15 @@
 				f = Object(s.a)(o.s),
 				p = e => {
 					switch (e) {
-						case l.b.OFF:
+						case l.c.OFF:
 							return i.fbt._("Unfollowed. You won’t get updates on new activity anymore.", null, {
 								hk: "3e1CJR"
 							});
-						case l.b.FREQUENT:
+						case l.c.FREQUENT:
 							return i.fbt._("Followed! Now you’ll get updates on new activity.", null, {
 								hk: "3JzOOa"
 							});
-						case l.b.LOW:
+						case l.c.LOW:
 							return i.fbt._("Success! You will see fewer notifications from this community in the future.", null, {
 								hk: "4x3TS8"
 							});
@@ -89,15 +89,15 @@
 					e(b());
 					const _ = (e => {
 							switch (e) {
-								case l.b.FREQUENT:
+								case l.c.FREQUENT:
 									return {
 										isSubredditUpdatesInterestingPostEnabled: !0, isUpdateFromSubredditEnabled: !0
 									};
-								case l.b.LOW:
+								case l.c.LOW:
 									return {
 										isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !0
 									};
-								case l.b.OFF:
+								case l.c.OFF:
 								default:
 									return {
 										isSubredditUpdatesInterestingPostEnabled: !1, isUpdateFromSubredditEnabled: !1
@@ -634,7 +634,7 @@
 					clearMessageTabBadgeCount: () => e(Object(u.b)()),
 					decreaseSubredditNotifications: (t, n) => e(Object(b.b)({
 						subredditId: t,
-						notificationLevel: p.b.LOW,
+						notificationLevel: p.c.LOW,
 						undoCallback: n
 					})),
 					disableNotificationUpdates: t => e(Object(m.c)(t)),
@@ -741,4 +741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.825eb060c84502f0f588.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.69836b8287d562f5105a.js.map

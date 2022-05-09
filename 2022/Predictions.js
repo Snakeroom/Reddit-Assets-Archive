@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.2ac778dc09f5dd0cf4cc.js
-// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.0b53b4c4291d2ca0ebec.js
+// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -111,7 +111,7 @@
 						forceDecimals: h,
 						currency: g = t.currency || (t.type ? p(t.type) : l.c),
 						type: b = t.type || (t.currency ? u(t.currency) : l.b.Real)
-					} = t, k = Number(e), f = String(e);
+					} = t, k = Number(e), w = String(e);
 					switch (b) {
 						case l.b.Reddit: {
 							const e = l.e[g],
@@ -123,9 +123,9 @@
 						}
 						case l.b.Crypto: {
 							if (s) {
-								return Object(i.c)(f, m) + " " + g
+								return Object(i.c)(w, m) + " " + g
 							}
-							const e = Number(Object(i.b)(f, m));
+							const e = Number(Object(i.b)(w, m));
 							return Object(o.c)() ? new Intl.NumberFormat(a, {
 								style: "currency",
 								currency: g,
@@ -137,7 +137,7 @@
 						}
 						case l.b.Real:
 						default: {
-							const e = Number(Object(r.a)(f, h));
+							const e = Number(Object(r.a)(w, h));
 							return Object(o.c)() ? new Intl.NumberFormat(a, {
 								style: "currency",
 								currency: g,
@@ -610,7 +610,7 @@
 					className: p.a.faqSection
 				}, l.a.createElement("div", {
 					className: Object(i.a)(p.a.faqSectionContent, p.a.contentWrapper)
-				}, l.a.createElement(k, null), l.a.createElement(f, null), l.a.createElement(w, null), l.a.createElement("h2", {
+				}, l.a.createElement(k, null), l.a.createElement(w, null), l.a.createElement(f, null), l.a.createElement("h2", {
 					className: p.a.faqHeading
 				}, h._("Questions about Powerups", null, {
 					hk: "nzxYw"
@@ -667,7 +667,7 @@
 					className: p.a.boltInCircleFaqYellow,
 					src: `${n.a.assetPath}/img/powerups/bolt.png`
 				})))
-			}, f = () => l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
+			}, w = () => l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
 				className: p.a.circleFaqCyanSmall
 			}), l.a.createElement("div", {
 				className: p.a.circleFaqDotted,
@@ -682,7 +682,7 @@
 				className: p.a.circleFaqOrange
 			}), l.a.createElement("div", {
 				className: p.a.circleFaqYellowHollow
-			})), w = () => l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
+			})), f = () => l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
 				className: Object(i.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkTopLeft)
 			}), l.a.createElement("div", {
 				className: Object(i.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkTopRight)
@@ -696,7 +696,7 @@
 				} = e;
 				return l.a.createElement(l.a.Fragment, null, l.a.createElement(k, {
 					hideBolt: t
-				}), l.a.createElement(f, null), l.a.createElement(w, null))
+				}), l.a.createElement(w, null), l.a.createElement(f, null))
 			}, y = () => {
 				const e = Object(s.e)(d.cb);
 				return l.a.createElement("div", {
@@ -762,7 +762,7 @@
 			a.d(t, "b", (function() {
 				return k
 			})), a.d(t, "a", (function() {
-				return f
+				return w
 			}));
 			var n = a("./src/config.ts"),
 				r = a("./src/lib/classNames/index.ts"),
@@ -830,7 +830,7 @@
 					}) : b._("Level up the whole community", null, {
 						hk: "2kiP2p"
 					}),
-					w = l ? b._("Harness the power of your community to unlock special perks and advanced features.", null, {
+					f = l ? b._("Harness the power of your community to unlock special perks and advanced features.", null, {
 						hk: "1VpJiW"
 					}) : b._("Come together to unlock special perks and advanced features.", null, {
 						hk: "1WTTiK"
@@ -848,7 +848,7 @@
 					});
 				return s.a.createElement("div", {
 					className: g.a.headingSection
-				}, s.a.createElement(f, {
+				}, s.a.createElement(w, {
 					isNightmodeOn: a
 				}), s.a.createElement("div", {
 					className: Object(r.a)(g.a.contentWrapper, g.a.headingContent)
@@ -864,7 +864,7 @@
 					className: g.a.subheading
 				}, k), s.a.createElement("p", {
 					className: Object(r.a)(g.a.description, g.a.bodyText)
-				}, w), l && s.a.createElement("div", {
+				}, f), l && s.a.createElement("div", {
 					className: Object(r.a)(g.a.modWarning, g.a.bodyText)
 				}, s.a.createElement("div", {
 					className: g.a.modWarningTop
@@ -902,7 +902,7 @@
 					className: g.a.fallbackStaticImage,
 					src: `${n.a.assetPath}/img/powerups/powerups-rangers-static.png`
 				}))))))
-			}, f = e => {
+			}, w = e => {
 				let {
 					isNightmodeOn: t,
 					accentDiagonalCustomStyles: a
@@ -1065,10 +1065,10 @@
 				g = a("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				b = a("./src/reddit/selectors/telemetry.ts");
 			var k = a("./src/reddit/hooks/useTracking.ts"),
-				f = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/reddit/models/Subreddit/index.ts")),
-				w = a("./src/reddit/selectors/moderatorPermissions.ts");
+				w = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/reddit/models/Subreddit/index.ts")),
+				f = a("./src/reddit/selectors/moderatorPermissions.ts");
 			const _ = e => {
-				const t = Object(w.l)(e);
+				const t = Object(f.l)(e);
 				return t ? Object.keys(t).reduce((t, a) => {
 					const n = e.subreddits.models[a];
 					if (!n) return t;
@@ -1080,7 +1080,7 @@
 						type: o,
 						url: c
 					} = n;
-					return !r && o === f.f.Public && !s && i >= j && t.push({
+					return !r && o === w.g.Public && !s && i >= j && t.push({
 						id: a,
 						subredditUrl: c,
 						displayText: l
@@ -1715,4 +1715,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.2ac778dc09f5dd0cf4cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.0b53b4c4291d2ca0ebec.js.map

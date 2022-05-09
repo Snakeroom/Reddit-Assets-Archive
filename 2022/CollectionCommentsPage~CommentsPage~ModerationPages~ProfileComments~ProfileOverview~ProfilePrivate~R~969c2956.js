@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.ece65fc5053dbd50143c.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.b6202594af5efaf46144.js
+// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -2558,7 +2558,7 @@
 						subreddit: t,
 						user: s,
 						onHoverActionText: o
-					} = this.props, n = t && Object(E.h)(t) && s ? Object(k.d)(Object(w.e)(s)) : t ? t.displayText : "", r = e.postIds.length;
+					} = this.props, n = t && Object(E.i)(t) && s ? Object(k.d)(Object(w.e)(s)) : t ? t.displayText : "", r = e.postIds.length;
 					return i.a.createElement(M, {
 						onClick: this.onClick,
 						className: T.a.container
@@ -3200,7 +3200,7 @@
 						} = t;
 						if (s.isSponsored) return !1;
 						if (!o) return !1;
-						const n = o.type === $.f.User;
+						const n = o.type === $.g.User;
 						return Object(ue.r)(e, o.name, n)
 					},
 					reportingRevampEnabled: ie.a,
@@ -3396,7 +3396,7 @@
 						toggleAddEventStartTimeModal: C,
 						toggleEditStartTimeModal: v,
 						userIsOp: g
-					} = e, _ = e.currentUser && e.currentUser.isEmployee, j = Object(K.a)(e.post), k = e.post.belongsTo.type === w.a.PROFILE || Object($.g)(e.subredditAboutInfo), E = e.post.belongsTo.type === w.a.PROFILE || Object($.i)(e.subredditAboutInfo), I = t && u.isGildable, y = Object(z.a)(e.post), P = r ? void 0 : d;
+					} = e, _ = e.currentUser && e.currentUser.isEmployee, j = Object(K.a)(e.post), k = e.post.belongsTo.type === w.a.PROFILE || Object($.h)(e.subredditAboutInfo), E = e.post.belongsTo.type === w.a.PROFILE || Object($.j)(e.subredditAboutInfo), I = t && u.isGildable, y = Object(z.a)(e.post), P = r ? void 0 : d;
 					return i.a.createElement("div", null, x && i.a.createElement(ve, {
 						className: this.getBreakpointClass(W.a.Insights),
 						displayText: o.fbt._("Insights", null, {
@@ -3899,7 +3899,7 @@
 						R = Object(n.useCallback)(() => {
 							e.post && (t(Object(b.d)(e.post.id)), t(Object(m.i)(Object(f.a)(e.post.id))))
 						}, [t, e.post]),
-						A = !e.subredditType || e.subredditType === w.f.Public,
+						A = !e.subredditType || e.subredditType === w.g.Public,
 						L = !!e.post && e.post.isCrosspostable && !e.post.isSponsored,
 						B = Object(n.useCallback)(e => {
 							t(Object(p.e)(e)), s(Object(_.a)())
@@ -4945,4 +4945,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.ece65fc5053dbd50143c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.b6202594af5efaf46144.js.map

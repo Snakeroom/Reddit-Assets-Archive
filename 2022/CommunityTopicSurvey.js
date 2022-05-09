@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.5161cf25754e120cd71e.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.f34ea3da54e70d60c2ad.js
+// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommunityTopicSurvey"], {
 		"./node_modules/react-uid/dist/es2015/hooks.js": function(e, t, n) {
@@ -196,7 +196,7 @@
 				return 0 === n.length ? o.a.createElement(o.a.Fragment, null, t) : o.a.createElement(o.a.Fragment, null, n[0], o.a.createElement(N.a, {
 					isFeatureFlagEnabled: !0,
 					isUserInTreatment: !0,
-					userVariant: B.pf.SmIconHc,
+					userVariant: B.rf.SmIconHc,
 					subredditName: n[1].split("/")[1],
 					rtJsonElementProps: {}
 				}), n[2])
@@ -343,7 +343,7 @@
 					u(_(O, t, n))
 				}
 				switch (O.type) {
-					case S.d.Multi:
+					case S.e.Multi:
 						return o.a.createElement(R, {
 							key: O.id,
 							questionId: O.id,
@@ -354,7 +354,7 @@
 							onClose: T,
 							inFeed: a
 						});
-					case S.d.SingleWithSubmit:
+					case S.e.SingleWithSubmit:
 						return o.a.createElement(F, {
 							key: O.id,
 							questionId: O.id,
@@ -365,7 +365,7 @@
 							onClose: T,
 							inFeed: a
 						});
-					case S.d.SingleNoSubmit:
+					case S.e.SingleNoSubmit:
 						return o.a.createElement(F, {
 							key: O.id,
 							questionId: O.id,
@@ -789,12 +789,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case _.pf.SmIcon:
+						case _.rf.SmIcon:
 							return s.a.createElement(b, {
 								subredditName: r,
 								rtJsonElementProps: i
 							});
-						case _.pf.SmIconHc:
+						case _.rf.SmIconHc:
 							return s.a.createElement(b, {
 								subredditName: r,
 								isHoverable: !0,
@@ -1066,12 +1066,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.jf
+						experimentName: r.lf
 					}) || ""
 				},
 				a = e => {
 					const t = c(e);
-					return t === r.pf.SmIcon || t === r.pf.SmIconHc
+					return t === r.rf.SmIcon || t === r.rf.SmIconHc
 				},
 				u = (e, t) => {
 					let {
@@ -1100,4 +1100,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.5161cf25754e120cd71e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommunityTopicSurvey.f34ea3da54e70d60c2ad.js.map

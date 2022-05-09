@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.c0b0f0b86e065c7a0e23.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.ac43bba63bd0cc34952e.js
+// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -487,8 +487,8 @@
 			const v = Object(m.a)(p.d),
 				y = Object(m.a)(p.c),
 				I = Object(m.a)(p.b),
-				N = Object(m.a)(p.a),
-				g = e => async (t, s, n) => {
+				g = Object(m.a)(p.a),
+				N = e => async (t, s, n) => {
 					let {
 						gqlContext: r
 					} = n;
@@ -523,7 +523,7 @@
 							const {
 								data: n
 							} = s.body, r = n.subredditsInfoByNames[0];
-							if (Object(_.j)(r)) {
+							if (Object(_.k)(r)) {
 								const e = Object(x.f)(r);
 								t(v({
 									subreddits: {},
@@ -550,7 +550,7 @@
 					} catch (u) {
 						l = !1
 					}
-					l || t(N({
+					l || t(g({
 						subredditName: e,
 						error: {
 							type: "Subreddit mention experiment GQL API failed or caught by try and catch!!"
@@ -702,7 +702,7 @@
 					isHoverable: n
 				} = t;
 				return {
-					subredditDataRequested: t => e(g(t)),
+					subredditDataRequested: t => e(N(t)),
 					showTooltip: t => {
 						e(Object(T.f)({
 							tooltipId: t
@@ -782,10 +782,10 @@
 						subredditAboutInfo: a,
 						subredditName: c
 					} = this.props;
-					if (!i || !a || Object(_.k)(i)) return this.renderDefault();
+					if (!i || !a || Object(_.l)(i)) return this.renderDefault();
 					const {
 						uniqueId: d
-					} = this.state, l = Object(b.a)(this.props.subredditName, u.W.TOP), m = i.isNSFW && e || i.type === _.f.EmployeesOnly && !t || i.type === _.f.Private && !a.userIsSubscriber, p = m || i.isQuarantined || i.isNSFW;
+					} = this.state, l = Object(b.a)(this.props.subredditName, u.W.TOP), m = i.isNSFW && e || i.type === _.g.EmployeesOnly && !t || i.type === _.g.Private && !a.userIsSubscriber, p = m || i.isQuarantined || i.isNSFW;
 					return o.a.createElement("span", {
 						className: ne.a.subredditMentionContainer,
 						onMouseEnter: this.onShowTooltip,
@@ -1093,7 +1093,7 @@
 					alt: e.alt,
 					className: Object(o.a)(x.a.hiddenImage, e.className)
 				}),
-				N = e => {
+				g = e => {
 					const t = i.a.createRef(),
 						{
 							src: s,
@@ -1123,7 +1123,7 @@
 						className: "hiddenImg"
 					}))
 				},
-				g = e => e.isOutbound ? Object(f.a)(e).button : e.placeholderImage ? "transparent" : Object(f.a)(e).line,
+				N = e => e.isOutbound ? Object(f.a)(e).button : e.placeholderImage ? "transparent" : Object(f.a)(e).line,
 				j = e => {
 					const t = S(e),
 						s = t && {
@@ -1134,7 +1134,7 @@
 						"data-click-id": "image",
 						style: {
 							...s,
-							borderColor: g(e)
+							borderColor: N(e)
 						}
 					}, (!e.placeholderImage || e.showContentType) && i.a.createElement(u.a, {
 						className: Object(o.a)(e.contentTypeClassName, x.a.contentType, {
@@ -1150,7 +1150,7 @@
 						className: e.linkTextClassName
 					}, e.text)))
 				},
-				T = e => i.a.createElement(N, _({}, e, {
+				T = e => i.a.createElement(g, _({}, e, {
 					className: Object(o.a)(x.a.blurredThumbnail, e.className)
 				})),
 				k = Object(a.a)(e => {
@@ -1172,14 +1172,14 @@
 						templatePlaceholderImage: v,
 						text: y,
 						theme: I,
-						usePreview: N
-					} = e, g = !I.subredditContext.shouldShowNSFWContent && (f.isNSFW || !(!a || !a.isNSFW)) && !c, j = S({
+						usePreview: g
+					} = e, N = !I.subredditContext.shouldShowNSFWContent && (f.isNSFW || !(!a || !a.isNSFW)) && !c, j = S({
 						placeholderImage: v,
 						redditStyle: E,
 						theme: I
-					}), T = P(e), k = d ? O.SourceElement.PostImage : O.SourceElement.ListingPostImage, D = L(f, t, j, g, y, I, T, l, C, _, E, u, m, h, r), w = Object(p.D)(f);
+					}), T = P(e), k = d ? O.SourceElement.PostImage : O.SourceElement.ListingPostImage, D = L(f, t, j, N, y, I, T, l, C, _, E, u, m, h, r), w = Object(p.D)(f);
 					return Object(n.a)(w) && !_ && w.indexOf("redditmedia") < 0 ? i.a.createElement("div", {
-						className: Object(o.a)(x.a.container, N ? x.a.usePreview : "", s)
+						className: Object(o.a)(x.a.container, g ? x.a.usePreview : "", s)
 					}, i.a.createElement(b.b, {
 						href: Object(p.D)(f),
 						isSponsored: f.isSponsored,
@@ -1187,7 +1187,7 @@
 						source: f.source,
 						sourceElement: k
 					}, D)) : i.a.createElement("div", {
-						className: Object(o.a)(x.a.container, N ? x.a.usePreview : "", s)
+						className: Object(o.a)(x.a.container, g ? x.a.usePreview : "", s)
 					}, D)
 				}),
 				P = e => {
@@ -1228,7 +1228,7 @@
 							redditStyle: p,
 							text: a,
 							theme: c
-						})) : i.a.createElement(N, _({
+						})) : i.a.createElement(g, _({
 							alt: e.title,
 							className: u,
 							src: l
@@ -1416,7 +1416,7 @@
 			})), s.d(t, "b", (function() {
 				return C
 			})), s.d(t, "u", (function() {
-				return g
+				return N
 			})), s.d(t, "v", (function() {
 				return j
 			})), s.d(t, "A", (function() {
@@ -1540,11 +1540,11 @@
 						structureType: t && t.isSponsored ? m.c.PromotedTrend : m.c.Trending
 					}
 				};
-			var N;
+			var g;
 			! function(e) {
 				e.POPULAR_CAROUSEL = "popular_carousel", e.SEARCH_DROPDOWN = "search_dropdown"
-			}(N || (N = {}));
-			const g = e => {
+			}(g || (g = {}));
+			const N = e => {
 					Object(f.a)(P({
 						...e,
 						action: o.c.CLICK
@@ -1557,8 +1557,8 @@
 					}))
 				},
 				T = {
-					[a.a.Popular]: N.POPULAR_CAROUSEL,
-					[a.a.Typeahead]: N.SEARCH_DROPDOWN
+					[a.a.Popular]: g.POPULAR_CAROUSEL,
+					[a.a.Typeahead]: g.SEARCH_DROPDOWN
 				},
 				k = {
 					[a.a.Popular]: l.d.tile,
@@ -1581,7 +1581,7 @@
 						action: t,
 						noun: n.TRENDING,
 						metaSearch: I(o),
-						discoveryUnit: a === N.POPULAR_CAROUSEL ? {
+						discoveryUnit: a === g.POPULAR_CAROUSEL ? {
 							name: d.k,
 							id: d.k,
 							title: d.k,
@@ -1592,7 +1592,7 @@
 							position: l
 						}),
 						search: {
-							originElement: a === N.SEARCH_DROPDOWN ? "search_dropdown" : void 0,
+							originElement: a === g.SEARCH_DROPDOWN ? "search_dropdown" : void 0,
 							originPageType: r.platform.currentPage ? m.u(r.platform.currentPage) : void 0,
 							query: o.rawQuery,
 							structureType: m.c.Trending,
@@ -1860,4 +1860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.c0b0f0b86e065c7a0e23.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.ac43bba63bd0cc34952e.js.map

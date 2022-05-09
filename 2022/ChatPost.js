@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.4ab7581a6845bf37203e.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.b177c8c3c0f7c5cc9ea4.js
+// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2256,7 +2256,7 @@
 					},
 					comment: K.b,
 					commentPermalink: V.m,
-					errorMsgs: V.G,
+					errorMsgs: V.H,
 					flair: V.e,
 					isActive: (e, t) => {
 						let {
@@ -2691,7 +2691,7 @@
 					chatCommentLinks: V.g,
 					isPending: V.d,
 					liveCommentsWebsocket: vn.E,
-					moreCommentsLink: V.F
+					moreCommentsLink: V.G
 				}),
 				xn = Object(d.b)(_n, (e, t) => ({
 					onLiveCommentsSubscribe: (n, s, o) => e(Z(n, s, o, t.subredditId)),
@@ -3741,4 +3741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.4ab7581a6845bf37203e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.b177c8c3c0f7c5cc9ea4.js.map

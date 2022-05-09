@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.7f34f40aa3a47ef77789.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.7fe584adb9912eafdc89.js
+// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -1848,7 +1848,7 @@
 					} = this, o = n.rulesSequence.getSequence(), a = t.subredditOrProfile ? t.subredditOrProfile.name : "";
 					return r.a.createElement(ae.a, {
 						key: "subreddit_rules_section_key",
-						title: t.subredditOrProfile && t.subredditOrProfile.type === je.f.User ? s.fbt._("It breaks u/{subredditName}'s rules", [s.fbt._param("subredditName", a)], {
+						title: t.subredditOrProfile && t.subredditOrProfile.type === je.g.User ? s.fbt._("It breaks u/{subredditName}'s rules", [s.fbt._param("subredditName", a)], {
 							hk: "QcQnb"
 						}) : s.fbt._("It breaks r/{subredditName}'s rules", [s.fbt._param("subredditName", a)], {
 							hk: "1Qdm9t"
@@ -4078,4 +4078,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.7f34f40aa3a47ef77789.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.7fe584adb9912eafdc89.js.map

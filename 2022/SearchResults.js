@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.c9f7b76f6df7a2971b0b.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.93edcde6a1c432a40cfb.js
+// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -995,7 +995,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(F.C)(e, {
+						return Object(F.D)(e, {
 							commentId: s.id
 						})
 					},
@@ -1057,7 +1057,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(F.I)(e, {
+						return Object(F.J)(e, {
 							commentId: s.id
 						})
 					},
@@ -1092,7 +1092,7 @@
 						let {
 							comment: s
 						} = t;
-						return Object(F.B)(e, {
+						return Object(F.C)(e, {
 							commentId: s.id
 						})
 					}
@@ -1500,7 +1500,7 @@
 					highlightAnimationDisabled: Et.c,
 					isEditing: F.z,
 					isLoggedIn: V.P,
-					isPendingDeletion: F.C,
+					isPendingDeletion: F.D,
 					isPresenceConsumptionExpEnabled: ft.c,
 					moderatorPermissions: (e, t) => {
 						const s = Object(ht.b)(e, t);
@@ -1510,10 +1510,10 @@
 					},
 					prediction: vt.f,
 					modModeEnabled: it.U,
-					errorMsgs: F.G,
-					replyFormOpen: F.J,
+					errorMsgs: F.H,
+					replyFormOpen: F.K,
 					subreddit: it.r,
-					subredditType: F.L,
+					subredditType: F.M,
 					showNftSpecialtyTreatment: wt.b,
 					hasSupporterRing: gt.a,
 					isOnlineConsumptionLoadTest: ft.a,
@@ -1606,7 +1606,7 @@
 						trackCommentClick: ae,
 						userIconSmall: ce,
 						userIsBanned: de
-					} = e, le = m.isDeleted, me = !T && !le && !!f && f.length > 0, ue = Object(l.a)(c.c.edit, m.id), pe = Object(l.a)(c.c.replyToComment, m.id), be = Object(P.a)(U), Ce = Object(Xe.d)(m), he = Object($.c)(m), xe = m.authorIsContractor && ie === ut.f.EmployeesOnly, fe = m.isLocked, ge = be && V, Oe = !T && !le && (F || S), ve = S && !m.unrepliableReason, Ee = !!h && Object(pt.e)(h) === m.author, [ye, je] = Object(r.useState)(null), [_e, ke] = Object(r.useState)(null), we = Object(r.useRef)(null), Se = Object(L.f)(m) || Object(L.g)(m), Ie = Se ? Vt : dt.a, Ne = Object(L.f)(m) ? Wt : Bt;
+					} = e, le = m.isDeleted, me = !T && !le && !!f && f.length > 0, ue = Object(l.a)(c.c.edit, m.id), pe = Object(l.a)(c.c.replyToComment, m.id), be = Object(P.a)(U), Ce = Object(Xe.d)(m), he = Object($.c)(m), xe = m.authorIsContractor && ie === ut.g.EmployeesOnly, fe = m.isLocked, ge = be && V, Oe = !T && !le && (F || S), ve = S && !m.unrepliableReason, Ee = !!h && Object(pt.e)(h) === m.author, [ye, je] = Object(r.useState)(null), [_e, ke] = Object(r.useState)(null), we = Object(r.useRef)(null), Se = Object(L.f)(m) || Object(L.g)(m), Ie = Se ? Vt : dt.a, Ne = Object(L.f)(m) ? Wt : Bt;
 					Object(r.useEffect)(() => {
 						if (!T && !le && (E && je(o.a.createElement(Ge, null)), null !== _)) {
 							if (_.glowHexColor) {
@@ -7439,7 +7439,7 @@
 						M = Object(r.useCallback)(() => {
 							e.post && (t(Object(b.d)(e.post.id)), t(Object(u.i)(Object(x.a)(e.post.id))))
 						}, [t, e.post]),
-						F = !e.subredditType || e.subredditType === k.f.Public,
+						F = !e.subredditType || e.subredditType === k.g.Public,
 						D = !!e.post && e.post.isCrosspostable && !e.post.isSponsored,
 						B = Object(r.useCallback)(e => {
 							t(Object(m.e)(e)), s(Object(E.a)())
@@ -8109,12 +8109,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case C.pf.SmIcon:
+						case C.rf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case C.pf.SmIconHc:
+						case C.rf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -10347,10 +10347,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/posts.ts");
 			const a = e => Object(o.c)(e, {
-					experimentName: r.Ge,
+					experimentName: r.Ie,
 					experimentEligibilitySelector: o.a
 				}),
-				c = (e, t) => t === r.Oe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === r.Qe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(n.a)(i.G, a, (e, t) => c(e, t));
 			Object(n.a)((e, t) => t, a, (e, t) => c(e, t))
 		},
@@ -10377,12 +10377,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.jf
+						experimentName: n.lf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.pf.SmIcon || t === n.pf.SmIconHc
+					return t === n.rf.SmIcon || t === n.rf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -10423,4 +10423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.c9f7b76f6df7a2971b0b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.93edcde6a1c432a40cfb.js.map

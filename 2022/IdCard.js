@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.26c339fc894923fbebef.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.f216b257cd4a8a5f4ea5.js
+// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1226,7 +1226,7 @@
 					subreddit: a
 				} = e;
 				switch (a.type) {
-					case p.f.Restricted:
+					case p.g.Restricted:
 						return i.a.createElement(C, {
 							className: t,
 							icon: i.a.createElement(u.a, {
@@ -1240,7 +1240,7 @@
 							description: Object(b.g)(s),
 							subreddit: a
 						});
-					case p.f.Private:
+					case p.g.Private:
 						return i.a.createElement(C, {
 							className: t,
 							icon: i.a.createElement(u.a, {
@@ -1256,7 +1256,7 @@
 							}),
 							subreddit: a
 						});
-					case p.f.EmployeesOnly:
+					case p.g.EmployeesOnly:
 						return i.a.createElement(C, {
 							className: t,
 							icon: i.a.createElement(u.a, {
@@ -3090,7 +3090,7 @@
 						onClick: b ? x : void 0,
 						headerButton: i.a.createElement("div", {
 							className: pt.a.headerButtonsContainer
-						}, !A && v && g && c !== Ue.se.NewModule && i.a.createElement(a.a, {
+						}, !A && v && g && c !== Ue.ue.NewModule && i.a.createElement(a.a, {
 							className: pt.a.ModToolsLink,
 							to: g.posts ? `${v.url}about/modqueue` : `${v.url}about/`,
 							onClick: this.onClickModTools
@@ -4387,7 +4387,7 @@
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var r = n("./src/reddit/models/Subreddit/index.ts");
 			const s = new Set(["goins", "gold_testing", "inthesoulstone", "lounge", "lssgoldnormal", "maymodsguide1", "maymodsguide2", "megalounge", "pan2", "pan3", "venkman_bookclub", "whatssnoo", "translation_piglatin", "translation_pirate", "translation_initials", "translation_german", "translation_british", "translation_french_fr", "translation_es_mx", "translation_br_pt", "german_translation", "lssgoldnormal_13", "test_automation_001"]),
-				i = new Set([r.f.Private, r.f.User]),
+				i = new Set([r.g.Private, r.g.User]),
 				o = e => !(!e || !e.name) && (!!s.has(e.name.toLowerCase()) || !e.isNSFW && !e.isQuarantined && !i.has(e.type));
 			t.a = o
 		},
@@ -5307,4 +5307,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.26c339fc894923fbebef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.f216b257cd4a8a5f4ea5.js.map

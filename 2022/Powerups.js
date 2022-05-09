@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.04652da918e778f715dc.js
-// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.db44a84e84f73ae72734.js
+// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -1854,8 +1854,8 @@
 				}),
 				A = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/reddit/controls/Button/index.tsx")),
 				W = a("./src/reddit/icons/svgs/SnooFacepalm/index.tsx"),
-				H = a("./src/reddit/selectors/gold/powerups/modSignup.ts"),
-				L = a("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
+				L = a("./src/reddit/selectors/gold/powerups/modSignup.ts"),
+				H = a("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				R = a("./src/reddit/components/PowerupsSignUpModal/MultiSubredditForm.m.less"),
 				D = a.n(R);
 			const {
@@ -1877,7 +1877,7 @@
 						id: t,
 						displayText: a
 					} = e;
-					return s.a.createElement(L.a, {
+					return s.a.createElement(H.a, {
 						className: Object(E.a)(D.a.checkbox, D.a.disabled),
 						key: t,
 						isSelected: !0,
@@ -1891,7 +1891,7 @@
 						displayText: o
 					} = e;
 					const l = a.includes(n);
-					return s.a.createElement(L.a, {
+					return s.a.createElement(H.a, {
 						className: Object(E.a)(D.a.checkbox, {
 							[D.a.disabled]: r
 						}),
@@ -1926,8 +1926,8 @@
 				Y = a("./src/reddit/components/PowerupsSignUpModal/signupButton.m.less"),
 				z = a.n(Y);
 			const {
-				fbt: G
-			} = a("./node_modules/fbt/lib/FbtPublic.js"), Z = e => {
+				fbt: Z
+			} = a("./node_modules/fbt/lib/FbtPublic.js"), J = e => {
 				let {
 					className: t,
 					disabled: a,
@@ -1935,9 +1935,9 @@
 					isLoading: r,
 					wasError: o
 				} = e;
-				const l = o ? G._("Try again", null, {
+				const l = o ? Z._("Try again", null, {
 					hk: "1cKOSe"
-				}) : G._("Turn on Powerups", null, {
+				}) : Z._("Turn on Powerups", null, {
 					hk: "AuDZE"
 				});
 				return s.a.createElement(A.k, {
@@ -1953,8 +1953,8 @@
 					center: !0
 				}) : l)
 			};
-			var J = a("./src/reddit/components/PowerupsSignUpModal/index.m.less"),
-				X = a.n(J);
+			var G = a("./src/reddit/components/PowerupsSignUpModal/index.m.less"),
+				X = a.n(G);
 			const {
 				fbt: K
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), $ = Object(i.a)(e => {
@@ -1964,7 +1964,7 @@
 				var a;
 				const o = Object(w.a)(),
 					i = Object(N.a)(),
-					c = Object(r.e)(H.a),
+					c = Object(r.e)(L.a),
 					m = null !== (a = 1 === (null == c ? void 0 : c.length)) && void 0 !== a && a,
 					p = null == c ? void 0 : c.every(e => {
 						let {
@@ -2062,7 +2062,7 @@
 					className: X.a.errorText
 				}, K._("Something went wrong.", null, {
 					hk: "N6RFp"
-				}))), !k && !p && s.a.createElement(Z, {
+				}))), !k && !p && s.a.createElement(J, {
 					disabled: 0 === g.length,
 					onClick: async () => {
 						i((e => t => ({
@@ -2124,17 +2124,6 @@
 						hk: "OT6Cc"
 					}).toString()
 				}, {
-					title: ae.fbt._("Gifs in Comments", null, {
-						hk: "2FHbsG"
-					}),
-					description: ae.fbt._("When simple words won't do, let members use GIFs too.", null, {
-						hk: "3o4Qbq"
-					}),
-					imageName: "COMMENTS_WITH_GIFS_v3",
-					imageAlt: ae.fbt._("Powerups perk Gifs in Comments", null, {
-						hk: "1060Ho"
-					}).toString()
-				}, {
 					title: ae.fbt._("Custom Emojis", null, {
 						hk: "3bRZHS"
 					}),
@@ -2167,6 +2156,15 @@
 					imageAlt: ae.fbt._("Powerups perk Hero Status", null, {
 						hk: "11Egfw"
 					}).toString()
+				}, {
+					title: ae.fbt._("More to come...", null, {
+						hk: "14pcFR"
+					}),
+					description: "",
+					imageName: "MORE_v3",
+					imageAlt: ae.fbt._("Powerups more to come", null, {
+						hk: "3HZmec"
+					}).toString()
 				}],
 				oe = ae.fbt._("Powerups Bolt", null, {
 					hk: "4wk1W"
@@ -2194,7 +2192,7 @@
 				},
 				ie = () => {
 					const e = Object(r.e)(S.cb),
-						t = Object(r.e)(H.b);
+						t = Object(r.e)(L.b);
 					return s.a.createElement("div", {
 						className: Object(E.a)(se.a.perksSection, {
 							[se.a.isNightmodeOn]: e,
@@ -2231,7 +2229,7 @@
 			const {
 				fbt: ue
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), me = () => {
-				return Object(r.e)(H.b) ? s.a.createElement("div", {
+				return Object(r.e)(L.b) ? s.a.createElement("div", {
 					className: de.a.pioneerSection
 				}, s.a.createElement("div", {
 					className: Object(E.a)(de.a.contentWrapper, de.a.powerupsPioneerContent)
@@ -2253,7 +2251,7 @@
 				fbt: ge
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), be = () => {
 				const e = Object(r.e)(S.cb);
-				return Object(r.e)(H.b) ? s.a.createElement("div", {
+				return Object(r.e)(L.b) ? s.a.createElement("div", {
 					className: he.a.powerupStepsSection
 				}, s.a.createElement("div", {
 					className: Object(E.a)(he.a.powerupStepsSectionContent, he.a.contentWrapper)
@@ -2306,8 +2304,8 @@
 				we = a.n(fe);
 			t.default = () => {
 				const e = Object(N.a)(),
-					t = Object(r.e)(H.a),
-					a = Object(r.e)(H.b),
+					t = Object(r.e)(L.a),
+					a = Object(r.e)(L.b),
 					[l, i] = Object(n.useState)(!1),
 					[c, d] = Object(n.useState)(!1);
 				Object(n.useEffect)(() => {
@@ -2353,4 +2351,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.04652da918e778f715dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.db44a84e84f73ae72734.js.map

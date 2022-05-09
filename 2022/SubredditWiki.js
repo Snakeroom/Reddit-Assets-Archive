@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.1a04bdafe19bb356d441.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.00d1fb9d005464c59982.js
+// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -510,11 +510,11 @@
 				g = s("./src/reddit/models/Subreddit/index.ts");
 			const O = e => {
 					switch (e) {
-						case g.b.FREQUENT:
+						case g.c.FREQUENT:
 							return "notification_frequent";
-						case g.b.OFF:
+						case g.c.OFF:
 							return "notification_off";
-						case g.b.LOW:
+						case g.c.LOW:
 						default:
 							return "notification"
 					}
@@ -561,31 +561,31 @@
 						displayText: E.fbt._("Frequent", null, {
 							hk: "21spt7"
 						}),
-						onClick: () => e.onClick(g.b.FREQUENT),
-						isSelected: e.notificationLevel === g.b.FREQUENT,
+						onClick: () => e.onClick(g.c.FREQUENT),
+						isSelected: e.notificationLevel === g.c.FREQUENT,
 						icon: n.a.createElement(I.a, {
 							name: "notification_frequent",
-							isFilled: e.notificationLevel === g.b.FREQUENT
+							isFilled: e.notificationLevel === g.c.FREQUENT
 						})
 					}, {
 						displayText: E.fbt._("Low", null, {
 							hk: "2uGDVq"
 						}),
-						onClick: () => e.onClick(g.b.LOW),
-						isSelected: e.notificationLevel === g.b.LOW,
+						onClick: () => e.onClick(g.c.LOW),
+						isSelected: e.notificationLevel === g.c.LOW,
 						icon: n.a.createElement(I.a, {
 							name: "notification",
-							isFilled: e.notificationLevel === g.b.LOW
+							isFilled: e.notificationLevel === g.c.LOW
 						})
 					}, {
 						displayText: E.fbt._("Off", null, {
 							hk: "4GiFvg"
 						}),
-						onClick: () => e.onClick(g.b.OFF),
-						isSelected: e.notificationLevel === g.b.OFF,
+						onClick: () => e.onClick(g.c.OFF),
+						isSelected: e.notificationLevel === g.c.OFF,
 						icon: n.a.createElement(I.a, {
 							name: "notification_off",
-							isFilled: e.notificationLevel === g.b.OFF
+							isFilled: e.notificationLevel === g.c.OFF
 						})
 					}].map(e => n.a.createElement(_.b, S({
 						className: Object(d.a)(C.a.notificationDropdown, C.a.notificationRow, {
@@ -645,7 +645,7 @@
 							hk: "3Ntvs6"
 						}),
 						onClick: () => {
-							i(), o(g.b.FREQUENT), d(L(g.b.FREQUENT.toLowerCase()))
+							i(), o(g.c.FREQUENT), d(L(g.c.FREQUENT.toLowerCase()))
 						}
 					})), n.a.createElement("button", {
 						className: C.a.hideButton,
@@ -670,7 +670,7 @@
 						}(e.userId, e.subredditId),
 						l = Object(i.e)(e => !!Object(U.a)(e));
 					Object(r.useEffect)(() => {
-						e.notificationLevel !== g.b.LOW && e.notificationLevel !== g.b.OFF || c()
+						e.notificationLevel !== g.c.LOW && e.notificationLevel !== g.c.OFF || c()
 					}, [e.subredditId]);
 					const h = 2 === a,
 						f = () => {
@@ -692,7 +692,7 @@
 							e.stopPropagation(), o.visible ? f() : E()
 						}, [f, E, o.visible]),
 						S = Object(r.useCallback)(t => {
-							t === g.b.FREQUENT && Object(H.bb)(e.userId, e.subredditId)
+							t === g.c.FREQUENT && Object(H.bb)(e.userId, e.subredditId)
 						}, [e.subredditId, e.userId]),
 						P = Object(r.useCallback)(r => {
 							const {
@@ -809,7 +809,7 @@
 					if (r) return e(Object(u.a)({
 						subredditAboutInfo: {
 							[r]: {
-								notificationLevel: g.b.LOW
+								notificationLevel: g.c.LOW
 							}
 						}
 					}))
@@ -3719,12 +3719,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case h.pf.SmIcon:
+						case h.rf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case h.pf.SmIconHc:
+						case h.rf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -3864,7 +3864,7 @@
 						className: Y.a.metaLine
 					}, r && !!n && d.a.createElement("span", {
 						className: Y.a.meta
-					}, Object(J.h)(n) ? Object(T.d)(n.displayText || n.name) : Object(T.c)(n.displayText || n.name)), d.a.createElement("span", {
+					}, Object(J.i)(n) ? Object(T.d)(n.displayText || n.name) : Object(T.c)(n.displayText || n.name)), d.a.createElement("span", {
 						className: Y.a.meta
 					}, z._({
 						"*": "{score} points",
@@ -4150,7 +4150,7 @@
 						} = t;
 						return Object(Me.c)(e, s)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Fe.a)(e) === Pe.se.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Fe.a)(e) === Pe.ue.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -5213,12 +5213,12 @@
 				a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.jf
+						experimentName: r.lf
 					}) || ""
 				},
 				c = e => {
 					const t = a(e);
-					return t === r.pf.SmIcon || t === r.pf.SmIconHc
+					return t === r.rf.SmIcon || t === r.rf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5244,4 +5244,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.1a04bdafe19bb356d441.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.00d1fb9d005464c59982.js.map
