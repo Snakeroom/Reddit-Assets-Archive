@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.baaac0ccf94969b748b3.js
-// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.4bbdaaa6228e335913fb.js
+// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumNewUserWelcome"], {
 		"./node_modules/lodash/flattenDeep.js": function(e, t, n) {
@@ -255,9 +255,9 @@
 			n.d(t, "a", (function() {
 				return N
 			})), n.d(t, "g", (function() {
-				return S
-			})), n.d(t, "b", (function() {
 				return C
+			})), n.d(t, "b", (function() {
+				return S
 			})), n.d(t, "d", (function() {
 				return v
 			})), n.d(t, "e", (function() {
@@ -314,7 +314,7 @@
 					const t = await Object(i.e)(r(), o);
 					t.ok && e(Object(O.g)(t.body))
 				}
-			}, S = (e, t) => async (n, r, s) => {
+			}, C = (e, t) => async (n, r, s) => {
 				let {
 					apiContext: o
 				} = s;
@@ -325,7 +325,7 @@
 					const t = await Object(d.a)(o(), e, c.id);
 					n(Object(O.i)(t))
 				}
-			}, C = e => async (t, n, r) => {
+			}, S = e => async (t, n, r) => {
 				let {
 					apiContext: s
 				} = r;
@@ -351,11 +351,11 @@
 				let {
 					apiContext: o
 				} = s;
-				await n(S(e, !0));
+				await n(C(e, !0));
 				const c = r().economics.subredditPremium[e];
 				if (c && c.status === _.a.Fetched) {
 					const r = c.data.userOwnedBadges.find(e => e.type === t.id);
-					r && (n(C({
+					r && (n(S({
 						badge: r,
 						subredditId: e,
 						placement: r.placement
@@ -387,7 +387,7 @@
 				let {
 					apiContext: c
 				} = o;
-				if (await r(S(e, !0)), n && t) {
+				if (await r(C(e, !0)), n && t) {
 					const n = s(),
 						o = Object(g.f)(n, e),
 						c = Object(h.a)(n, t);
@@ -396,7 +396,7 @@
 							subredditId: e,
 							badge: c
 						});
-						t && await r(C({
+						t && await r(S({
 							badge: t,
 							subredditId: e
 						}))
@@ -415,7 +415,7 @@
 				} = await Object(i.c)(s(), e);
 				t(Object(O.f)({
 					wallet: o
-				})), await t(S(e.subredditId, !0))
+				})), await t(C(e.subredditId, !0))
 			}
 		},
 		"./src/reddit/actions/governance/constants.ts": function(e, t, n) {
@@ -463,9 +463,9 @@
 			})), n.d(t, "u", (function() {
 				return N
 			})), n.d(t, "v", (function() {
-				return S
-			})), n.d(t, "w", (function() {
 				return C
+			})), n.d(t, "w", (function() {
+				return S
 			})), n.d(t, "x", (function() {
 				return v
 			}));
@@ -490,8 +490,8 @@
 				y = "GOVERNANCE__TRANSFER_PENDING",
 				j = "GOVERNANCE__TRANSFER_SUCCESS",
 				N = "GOVERNANCE__WALLETS_FETCH_FAILURE",
-				S = "GOVERNANCE__WALLETS_FETCH_PENDING",
-				C = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
+				C = "GOVERNANCE__WALLETS_FETCH_PENDING",
+				S = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
 				v = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, n) {
@@ -723,23 +723,23 @@
 				y = n("./node_modules/fbt/lib/FbtPublic.js"),
 				j = n("./src/reddit/icons/svgs/Admin/index.tsx"),
 				N = n("./src/reddit/components/Economics/SubredditPremium/NewUserWelcome/Header/index.m.less"),
-				S = n.n(N);
+				C = n.n(N);
 
-			function C(e) {
+			function S(e) {
 				const {
 					className: t,
 					subreddit: n
 				} = e;
 				return s.a.createElement("header", {
-					className: Object(a.a)(t, S.a.container)
+					className: Object(a.a)(t, C.a.container)
 				}, s.a.createElement("div", {
-					className: S.a.tagline
+					className: C.a.tagline
 				}, s.a.createElement(j.a, {
-					className: S.a.adminIcon
+					className: C.a.adminIcon
 				}), y.fbt._("a note from reddit admins", null, {
 					hk: "3addaI"
 				})), s.a.createElement("div", {
-					className: S.a.title
+					className: C.a.title
 				}, y.fbt._("Welcome to r/{communityName}!", [y.fbt._param("communityName", n.name)], {
 					hk: "2LQnel"
 				})))
@@ -906,7 +906,7 @@
 						subreddit: O.gb(e)
 					}))), s.a.createElement("article", {
 						className: Object(a.a)(Z.a.container, e)
-					}, s.a.createElement(C, {
+					}, s.a.createElement(S, {
 						className: Z.a.header,
 						subreddit: n
 					}), s.a.createElement(w, {
@@ -935,7 +935,7 @@
 						const n = e.user.account,
 							r = Object(p.r)(e, t);
 						if (!n) return !1;
-						if (Object(p.S)(e, t) !== m.g.Large) return !1;
+						if (Object(p.R)(e, t) !== m.g.Large) return !1;
 						if (r) {
 							const t = Object(h.f)(e, r.id)[g.a.Achievement];
 							if (t && t.type === Y) return !1
@@ -2077,9 +2077,9 @@
 			})), n.d(t, "i", (function() {
 				return N
 			})), n.d(t, "q", (function() {
-				return S
-			})), n.d(t, "h", (function() {
 				return C
+			})), n.d(t, "h", (function() {
+				return S
 			})), n.d(t, "z", (function() {
 				return v
 			})), n.d(t, "l", (function() {
@@ -2183,12 +2183,12 @@
 			function N(e, t) {
 				return (null == e ? void 0 : e.length) ? Object(s.a)(e.map(e => t[e]).filter(Boolean)) : g
 			}
-			const S = (e, t, n) => {
+			const C = (e, t, n) => {
 					var s;
 					if (!r.d.spBadges(e)) return g;
 					return N(null === (s = e.users.appliedBadges[n]) || void 0 === s ? void 0 : s[t], e.badges.models)
 				},
-				C = (e, t) => {
+				S = (e, t) => {
 					const n = e.economics.subredditPremium[t.subredditId];
 					if (n && n.status === l.a.Fetched) {
 						const e = n.raw.collections[t.collectionId];
@@ -2397,4 +2397,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.baaac0ccf94969b748b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumNewUserWelcome.4bbdaaa6228e335913fb.js.map

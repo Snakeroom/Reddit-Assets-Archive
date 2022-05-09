@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.30af309c40a93a335e25.js
-// Retrieved at 5/9/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.376cc1da9a8935fceabe.js
+// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -478,7 +478,7 @@
 				I = Object(f.u)(),
 				P = Object(i.c)({
 					dropdownIsOpen: Object(y.b)(v),
-					postLayout: f.S,
+					postLayout: f.R,
 					redditStyle: f.D
 				}),
 				L = Object(a.b)(P, e => ({
@@ -670,19 +670,19 @@
 					}))
 				},
 				F = R.a.div("DropdownRowDisabled", D.a),
-				V = Object(l.u)({
+				G = Object(l.u)({
 					isFrontpage: l.A,
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
-				G = Object(h.c)({
+				V = Object(h.c)({
 					isAwardListingExperimentEnabled: E.a,
 					isBestSortPopularEnabled: N.a,
 					user: P.k,
 					dropdownIsOpen: (e, t) => Object(I.b)(t.dropdownId || W)(e),
 					isPopularPage: l.F
 				}),
-				K = Object(o.b)(G, (e, t) => {
+				K = Object(o.b)(V, (e, t) => {
 					let {
 						dropdownId: n,
 						pageLayer: r
@@ -693,7 +693,7 @@
 						}))
 					}
 				});
-			var q = R.a.wrapped(V(K(Object(d.c)(e => s.a.createElement("div", {
+			var q = R.a.wrapped(G(K(Object(d.c)(e => s.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && s.a.createElement(M, null, w.fbt._("Sort", null, {
@@ -1390,8 +1390,8 @@
 			}
 			var Ue = Be(Object(o.b)(Me)(Object(d.c)(He))),
 				Fe = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				Ve = n.n(Fe);
-			const Ge = Object(l.u)({
+				Ge = n.n(Fe);
+			const Ve = Object(l.u)({
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
@@ -1439,7 +1439,7 @@
 						updateSortPreference: u
 					} = this.props;
 					return s.a.createElement("div", {
-						className: Object(a.a)(Ve.a.Container, t),
+						className: Object(a.a)(Ge.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
 					}, s.a.createElement(Ue, {
@@ -1452,12 +1452,12 @@
 						sortOptions: c,
 						timeSort: l
 					}), !o && s.a.createElement(p.a, {
-						className: Ve.a.LayoutSwitch,
+						className: Ge.a.LayoutSwitch,
 						subredditId: d
 					}))
 				}
 			}
-			t.a = Ge(Ke(Object(d.c)(qe)))
+			t.a = Ve(Ke(Object(d.c)(qe)))
 		},
 		"./src/reddit/components/ListingPostList/index.tsx": function(e, t, n) {
 			"use strict";
@@ -1687,7 +1687,7 @@
 					isCommentsPage: m.x,
 					isFrontpage: m.A,
 					isProfilePostListing: m.L,
-					isTopicPage: m.R,
+					isTopicPage: m.Q,
 					pageLayer: e => e
 				})
 			}
@@ -1696,7 +1696,7 @@
 					apiError: _.c,
 					apiPending: _.d,
 					measureScrollFPS: g.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(m.S)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(m.R)(e, t),
 					loadMore: _.g,
 					postsById: S.S,
 					postIds: Object(o.a)((e, t) => {
@@ -1709,7 +1709,7 @@
 					}),
 					subredditsById: y.bb,
 					viewportDataLoaded: O.a,
-					pageReferrer: m.V,
+					pageReferrer: m.U,
 					postListPlaceholderComponent: () => h.a,
 					isNpsScrollSurveyEnabled: w.e
 				},
@@ -2068,7 +2068,7 @@
 						subredditId: n
 					})),
 					_ = Object(a.e)(m.a),
-					S = _ !== u.ve.NewModule;
+					S = _ !== u.we.NewModule;
 				return (null === (s = null == g ? void 0 : g.cards) || void 0 === s ? void 0 : s.length) > 0 && S ? o.a.createElement(f, {
 					closeModuleOnMount: !!t && t !== p.g.Large,
 					subredditId: n,
@@ -2096,15 +2096,15 @@
 			const a = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.P,
-						experimentName: r.Sc
+						experimentName: r.Tc
 					});
-					return !(!t || Object(r.Nf)(t))
+					return !(!t || Object(r.Of)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.P,
-						experimentName: r.Sc
-					}) === r.wd.ListingEnabled
+						experimentName: r.Tc
+					}) === r.xd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2231,4 +2231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.30af309c40a93a335e25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.376cc1da9a8935fceabe.js.map

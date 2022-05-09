@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.6695d3609f9b62e67c55.js
-// Retrieved at 5/9/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.08bf42d844d00a66af6a.js
+// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -70,8 +70,8 @@
 				C = n("./src/reddit/helpers/name/index.ts"),
 				p = n("./src/reddit/selectors/platform.ts");
 
-			function f() {
-				return (f = Object.assign || function(e) {
+			function g() {
+				return (g = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -80,14 +80,14 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: g
+				fbt: f
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), v = Object(r.a)(e => {
 				const t = Object(d.e)(p.b),
 					n = Object(d.e)(() => t ? Object(b.f)(t) : null),
-					r = Object(d.e)(e => t ? Object(b.hb)(e, {
+					r = Object(d.e)(e => t ? Object(b.gb)(e, {
 						pageLayer: t
 					}) : null),
-					s = Object(d.e)(e => t ? Object(b.Y)(e, {
+					s = Object(d.e)(e => t ? Object(b.X)(e, {
 						pageLayer: t
 					}) : null);
 				return i.a.createElement(m.a, {
@@ -99,7 +99,7 @@
 					})()
 				})
 			});
-			t.default = e => i.a.createElement(v, f({}, e, {
+			t.default = e => i.a.createElement(v, g({}, e, {
 				className: Object(s.a)(e.className, _.a.modal),
 				shouldBlurBackground: !0,
 				onOverlayClick: c.a,
@@ -145,8 +145,8 @@
 				b = n("./src/reddit/components/Footer/index.tsx"),
 				C = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				p = n("./src/reddit/constants/experiments.ts"),
-				f = n("./src/reddit/controls/Button/index.tsx"),
-				g = n("./src/lib/constants/index.ts"),
+				g = n("./src/reddit/controls/Button/index.tsx"),
+				f = n("./src/lib/constants/index.ts"),
 				v = n("./src/lib/sample/index.ts"),
 				x = n("./src/telemetry/helpers/sendCounter.ts");
 			var h;
@@ -201,7 +201,7 @@
 						})))(r === E.a.Blurred);
 					return Object(a.useEffect)(() => {
 						(e => {
-							Object(v.a)(10) && Object(x.b)(g.m.Redesign, {
+							Object(v.a)(10) && Object(x.b)(f.m.Redesign, {
 								type: x.a.NsfwBlocking,
 								data: {
 									variant: e
@@ -218,7 +218,7 @@
 						hk: "3cUxXS"
 					}))()), o.a.createElement("div", {
 						className: w.a.buttonContainer
-					}, o.a.createElement(f.j, {
+					}, o.a.createElement(g.j, {
 						className: Object(d.a)(w.a.logIn),
 						onClick: () => {
 							n((() => e => ({
@@ -230,7 +230,7 @@
 						}
 					}, (() => s.fbt._("Log In", null, {
 						hk: "4BITk"
-					}))()), o.a.createElement(f.j, {
+					}))()), o.a.createElement(g.j, {
 						className: w.a.cancel,
 						onClick: () => {
 							Object(i.b)(), n((() => e => ({
@@ -299,4 +299,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.6695d3609f9b62e67c55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.08bf42d844d00a66af6a.js.map

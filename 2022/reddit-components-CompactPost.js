@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.020902684a135e856069.js
-// Retrieved at 5/9/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.7b8c19d7b4d90f0dd76f.js
+// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -718,13 +718,13 @@
 				end: "start"
 			};
 
-			function X(e) {
+			function K(e) {
 				return e.replace(/start|end/g, (function(e) {
 					return Y[e]
 				}))
 			}
 
-			function K(e, t) {
+			function X(e, t) {
 				var n = Boolean(t.getRootNode && t.getRootNode().host);
 				if (e.contains(t)) return !0;
 				if (n) {
@@ -786,7 +786,7 @@
 						var t = x(e),
 							n = ["absolute", "fixed"].indexOf(u(e).position) >= 0 && c(e) ? y(e) : e;
 						return a(n) ? t.filter((function(e) {
-							return a(e) && K(e, n)
+							return a(e) && X(e, n)
 						})) : []
 					}(e) : [].concat(t),
 					s = [].concat(o, [n]),
@@ -1044,7 +1044,7 @@
 								for (var s = n.mainAxis, r = void 0 === s || s, i = n.altAxis, a = void 0 === i || i, c = n.fallbackPlacements, d = n.padding, l = n.boundary, p = n.rootBoundary, u = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, b = n.allowedAutoPlacements, h = t.options.placement, x = H(h), v = c || (x === h || !f ? [J(h)] : function(e) {
 										if (H(e) === k) return [];
 										var t = J(e);
-										return [X(e), t, X(t)]
+										return [K(e), t, K(t)]
 									}(h)), g = [h].concat(v).reduce((function(e, n) {
 										return e.concat(H(n) === k ? function(e, t) {
 											void 0 === t && (t = {});
@@ -1188,10 +1188,10 @@
 											left: 0
 										},
 										Y = J[A],
-										X = J[F],
-										K = se(0, S[L], Z[L]),
-										Q = k ? S[L] / 2 - W - K - Y - N : z - K - Y - N,
-										$ = k ? -S[L] / 2 + W + K + X + N : G + K + X + N,
+										K = J[F],
+										X = se(0, S[L], Z[L]),
+										Q = k ? S[L] / 2 - W - X - Y - N : z - X - Y - N,
+										$ = k ? -S[L] / 2 + W + X + K + N : G + X + K + N,
 										ee = t.elements.arrow && y(t.elements.arrow),
 										te = ee ? "y" === _ ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][_] : 0,
@@ -1249,7 +1249,7 @@
 								r = void 0 === s ? "[data-popper-arrow]" : s,
 								i = n.padding,
 								a = void 0 === i ? 0 : i;
-							null != r && ("string" != typeof r || (r = t.elements.popper.querySelector(r))) && K(t.elements.popper, r) && (t.elements.arrow = r, t.modifiersData[o + "#persistent"] = {
+							null != r && ("string" != typeof r || (r = t.elements.popper.querySelector(r))) && X(t.elements.popper, r) && (t.elements.arrow = r, t.modifiersData[o + "#persistent"] = {
 								padding: te("number" != typeof a ? a : ne(a, _))
 							})
 						},
@@ -1659,8 +1659,8 @@
 				Z = n("./src/reddit/components/PostContainer/index.tsx"),
 				J = n("./src/reddit/components/PostFlairPicker/index.tsx"),
 				Y = n("./src/reddit/components/PostLeftRail/index.tsx"),
-				X = n("./src/reddit/components/PostMedia/index.tsx"),
-				K = n("./src/reddit/components/PostModModeDropdown/index.tsx"),
+				K = n("./src/reddit/components/PostMedia/index.tsx"),
+				X = n("./src/reddit/components/PostModModeDropdown/index.tsx"),
 				Q = n("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				$ = n("./src/reddit/components/PostTitle/index.tsx"),
 				ee = n("./src/reddit/components/PostTopMeta/index.tsx"),
@@ -1713,11 +1713,11 @@
 				Ce = () => Object(c.c)({
 					activeModalId: w.a,
 					crosspost: _.d,
-					flairStyleTemplate: ae.W,
+					flairStyleTemplate: ae.V,
 					isActive: _.j,
 					isExpanded: _.m,
 					showPromotedCTA: ye.a,
-					layout: ae.S,
+					layout: ae.R,
 					moderatorPermissions: j.m,
 					poll: (e, t) => {
 						const n = e.posts.metaMap[t.postId];
@@ -1783,7 +1783,7 @@
 						isProfilePostListing: k,
 						inSubredditOrProfile: _ = !1,
 						layout: A,
-						moderatorPermissions: X,
+						moderatorPermissions: K,
 						modModeEnabled: oe,
 						onClickPost: se,
 						onFlairChanged: ae,
@@ -1801,9 +1801,9 @@
 						sendEvent: Pe,
 						shouldShowGalleryTileOption: Te,
 						showPromotedCTA: Ne
-					} = this.props, Ae = !!be.media && be.media.type === x.o.RTJSON, Fe = xe && Ae, Le = Object(J.b)(be.id, j), Re = Object(me.a)(X), Be = Object(pe.a)(X), De = Object(ue.a)(X), We = `-mod-actions-menu-${be.id}`, He = `voting-arrows-${be.id}`, Ve = !!s && Object(v.e)(s) === be.author, Ue = Object(W.d)(be), ze = Object(V.c)(be), Ge = Object(L.a)("View--Reports", be.id, Me), qe = Object(V.a)(be), Ze = !(j || g || y), Je = be.media && be.media.type === x.o.LIVEVIDEO, Ye = e => Pe(Object(h.h)(be.id, e)), Xe = Object(d.t)(be, p), {
-						source: Ke
-					} = Xe, Qe = r.a.createElement(Z.a, {
+					} = this.props, Ae = !!be.media && be.media.type === x.o.RTJSON, Fe = xe && Ae, Le = Object(J.b)(be.id, j), Re = Object(me.a)(K), Be = Object(pe.a)(K), De = Object(ue.a)(K), We = `-mod-actions-menu-${be.id}`, He = `voting-arrows-${be.id}`, Ve = !!s && Object(v.e)(s) === be.author, Ue = Object(W.d)(be), ze = Object(V.c)(be), Ge = Object(L.a)("View--Reports", be.id, Me), qe = Object(V.a)(be), Ze = !(j || g || y), Je = be.media && be.media.type === x.o.LIVEVIDEO, Ye = e => Pe(Object(h.h)(be.id, e)), Ke = Object(d.t)(be, p), {
+						source: Xe
+					} = Ke, Qe = r.a.createElement(Z.a, {
 						className: Object(l.a)(Ee.a.compactPostStyles, je.a.postContainer, Object(b.a)(this.props), t),
 						isOverlay: j,
 						style: {
@@ -1919,7 +1919,7 @@
 					}), Re && r.a.createElement(B.a, {
 						dropdownId: We,
 						onClick: () => Ye("post_mod_action_menu")
-					}, r.a.createElement(F.b, null), r.a.createElement(K.a, {
+					}, r.a.createElement(F.b, null), r.a.createElement(X.a, {
 						canEditFlair: Be && ke,
 						hasModPostPerms: Re,
 						hasModFullPerms: De,
@@ -1967,11 +1967,11 @@
 						isExpanded: O,
 						post: be,
 						useMediaIcons: !0
-					}))), Ne && Ke && Ke.url && !be.isSurveyAd && r.a.createElement(C.a, {
+					}))), Ne && Xe && Xe.url && !be.isSurveyAd && r.a.createElement(C.a, {
 						className: je.a.adLinkWrapper
 					}, r.a.createElement(M.a, {
 						post: be,
-						adLinkContent: Xe,
+						adLinkContent: Ke,
 						isCompact: !0
 					})), oe && Re && Ue && r.a.createElement("div", {
 						className: je.a.modModeBannerWrapper
@@ -2003,7 +2003,7 @@
 				}, e.post.crosspostRootId ? r.a.createElement("div", {
 					className: je.a.crosspostMediaWrapper
 				}, Te(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)) : Te(e.post, e.scrollerItemRef, e.shouldShowGalleryTileOption, e.isGalleryTileLayoutDefault)),
-				Te = (e, t, n, o) => r.a.createElement(X.a, {
+				Te = (e, t, n, o) => r.a.createElement(K.a, {
 					isExpando: !0,
 					isGalleryTileLayoutDefault: o,
 					isListing: !0,
@@ -3051,13 +3051,13 @@
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/posts.ts");
 			const a = e => Object(r.c)(e, {
-					experimentName: s.Je,
+					experimentName: s.Ke,
 					experimentEligibilitySelector: r.a
 				}),
-				c = (e, t) => t === s.Re.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === s.Se.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(o.a)(i.G, a, (e, t) => c(e, t));
 			Object(o.a)((e, t) => t, a, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.020902684a135e856069.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.7b8c19d7b4d90f0dd76f.js.map

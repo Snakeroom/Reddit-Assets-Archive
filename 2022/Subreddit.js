@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.5da5068d379ee850af95.js
-// Retrieved at 5/9/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.46c3fc2ce24e9eb22ba0.js
+// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, n) {
@@ -3379,7 +3379,7 @@
 				} = e;
 				var g;
 				const E = Object(b.a)(),
-					y = Object(l.fb)(),
+					y = Object(l.eb)(),
 					O = "true" === (null == y ? void 0 : y.queryParams["top-predictors"]),
 					[_, j, C] = Object(p.a)(O),
 					{
@@ -3764,7 +3764,7 @@
 				}).apply(this, arguments)
 			}
 			t.a = Object(x.a)(e => {
-				const t = Object(v.fb)(),
+				const t = Object(v.eb)(),
 					n = null == t ? void 0 : t.queryParams["prediction-tournament-rank"],
 					s = Object(o.e)(t => Object(O.F)(t, e.listingName)),
 					{
@@ -9140,12 +9140,12 @@
 						rtJsonElementProps: a
 					});
 					switch (o) {
-						case h.sf.SmIcon:
+						case h.tf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: a
 							});
-						case h.sf.SmIconHc:
+						case h.tf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -9607,7 +9607,7 @@
 						} = t;
 						return Object(Be.c)(e, n)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Re.a)(e) === we.ve.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Re.a)(e) === we.we.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -10625,11 +10625,11 @@
 				autoplayPref: b.b,
 				crosspostRoot: p.d,
 				crosspostSubredditOrProfile: p.e,
-				flairStyleTemplate: d.W,
+				flairStyleTemplate: d.V,
 				hideNSFWPref: b.F,
 				isActive: p.j,
 				moderatorPermissions: u.m,
-				modModeEnabled: d.U,
+				modModeEnabled: d.T,
 				showEditFlair: m.a
 			}), (e, t) => {
 				let {
@@ -13066,7 +13066,7 @@
 			const b = Object(d.u)(),
 				h = Object(a.c)({
 					isEditing: l.i,
-					layout: (e, t) => t.forcedLayout || Object(d.S)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(d.R)(e, t)
 				}),
 				f = Object(o.b)(h);
 			t.a = b(f(e => {
@@ -13487,7 +13487,7 @@
 				return !1
 			}), Et = (e, t) => {
 				const n = bt(e),
-					s = Object(ue.S)(e, t),
+					s = Object(ue.R)(e, t),
 					{
 						sort: r
 					} = _t(e, t);
@@ -13565,7 +13565,7 @@
 			}), Nt = Object(b.c)({
 				showCreatePostBanner: vt,
 				contentGateInfo: (e, t) => Object(ze.f)(e, t.match.params.subredditName),
-				layout: ue.S,
+				layout: ue.R,
 				isRpanDuVisible: (e, t) => {
 					let {
 						match: n
@@ -14794,31 +14794,31 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(r.a)(s.ed),
-				a = Object(r.a)(s.cd),
-				i = Object(r.a)(s.fd),
-				c = Object(r.a)(s.bd),
-				d = Object(r.a)(s.ad),
-				l = Object(r.a)(s.id),
-				u = Object(r.a)(s.gd),
-				m = Object(r.a)(s.hd),
-				p = Object(r.a)(s.Xc),
-				b = Object(r.a)(s.Vc),
-				h = Object(r.a)(s.Nc),
-				f = Object(r.a)(s.Oc),
-				x = Object(r.a)(s.Lc),
-				g = Object(r.a)(s.Mc),
-				v = Object(r.a)(s.Qc),
-				E = Object(r.a)(s.Kc),
-				y = Object(r.a)(s.Yc),
-				O = Object(r.a)(s.Zc),
-				_ = Object(r.a)(s.dd),
-				j = Object(r.a)(s.jd),
-				C = Object(r.a)(s.pd),
-				N = Object(r.a)(s.od),
-				k = Object(r.a)(s.ld),
-				S = Object(r.a)(s.nd),
-				P = Object(r.a)(s.md)
+			const o = Object(r.a)(s.fd),
+				a = Object(r.a)(s.dd),
+				i = Object(r.a)(s.gd),
+				c = Object(r.a)(s.cd),
+				d = Object(r.a)(s.bd),
+				l = Object(r.a)(s.jd),
+				u = Object(r.a)(s.hd),
+				m = Object(r.a)(s.id),
+				p = Object(r.a)(s.Yc),
+				b = Object(r.a)(s.Wc),
+				h = Object(r.a)(s.Oc),
+				f = Object(r.a)(s.Pc),
+				x = Object(r.a)(s.Mc),
+				g = Object(r.a)(s.Nc),
+				v = Object(r.a)(s.Rc),
+				E = Object(r.a)(s.Lc),
+				y = Object(r.a)(s.Zc),
+				O = Object(r.a)(s.ad),
+				_ = Object(r.a)(s.ed),
+				j = Object(r.a)(s.kd),
+				C = Object(r.a)(s.qd),
+				N = Object(r.a)(s.pd),
+				k = Object(r.a)(s.md),
+				S = Object(r.a)(s.od),
+				P = Object(r.a)(s.nd)
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
 			"use strict";
@@ -14892,9 +14892,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(r.c)(e, {
-				experimentName: s.ke,
+				experimentName: s.le,
 				experimentEligibilitySelector: r.a
-			}) === s.te.Enabled
+			}) === s.ue.Enabled
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, n) {
 			"use strict";
@@ -14995,8 +14995,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Fe
-				}) === s.rd
+					experimentName: s.Ge
+				}) === s.sd
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, n) {
@@ -15009,8 +15009,8 @@
 				o = n("./src/reddit/selectors/meta.ts");
 			const a = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: s.Ve
-			}) === s.cf.Enabled
+				experimentName: s.We
+			}) === s.df.Enabled
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -15258,12 +15258,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: s.mf
+						experimentName: s.nf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.sf.SmIcon || t === s.sf.SmIconHc
+					return t === s.tf.SmIcon || t === s.tf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -15366,4 +15366,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.5da5068d379ee850af95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.46c3fc2ce24e9eb22ba0.js.map

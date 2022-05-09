@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.58545a5db99846044915.js
-// Retrieved at 5/9/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.d839539bf17e74a834fa.js
+// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -144,7 +144,7 @@
 			const N = e => Object(I.c)(e, {
 				experimentName: k.Tb,
 				experimentEligibilitySelector: I.a
-			}) === k.rd;
+			}) === k.sd;
 			var x = n("./src/reddit/selectors/meta.ts"),
 				E = n("./src/reddit/selectors/user.ts");
 			let w = !1;
@@ -1826,23 +1826,23 @@
 			const V = e => Object(q.c)(e, {
 					experimentEligibilitySelector: q.a,
 					experimentName: G.wb
-				}) === G.yd.MemesNoBadge,
+				}) === G.zd.MemesNoBadge,
 				K = e => Object(q.c)(e, {
 					experimentEligibilitySelector: q.a,
 					experimentName: G.wb
-				}) === G.yd.PnEmailNoBadge,
+				}) === G.zd.PnEmailNoBadge,
 				J = e => Object(q.c)(e, {
 					experimentEligibilitySelector: q.a,
 					experimentName: G.wb
-				}) === G.yd.KarmaNoBadge,
+				}) === G.zd.KarmaNoBadge,
 				Q = e => Object(q.c)(e, {
 					experimentEligibilitySelector: q.a,
 					experimentName: G.wb
-				}) === G.yd.PopularNoBadge,
+				}) === G.zd.PopularNoBadge,
 				Y = e => Object(q.c)(e, {
 					experimentEligibilitySelector: q.a,
 					experimentName: G.wb
-				}) === G.yd.CatsNoBadge;
+				}) === G.zd.CatsNoBadge;
 			t.a = e => {
 				let {
 					isBannerEnabled: t,
@@ -4053,4 +4053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.58545a5db99846044915.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.d839539bf17e74a834fa.js.map

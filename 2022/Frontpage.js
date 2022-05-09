@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.74287710d34243884f93.js
-// Retrieved at 5/9/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.41f4504d247666ecdba4.js
+// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -487,7 +487,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Nf)(p),
+						includeInterestTopics: !!p && !Object(b.Of)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: f && !(null === (a = null === (s = e.user.account) || void 0 === s ? void 0 : s.karma) || void 0 === a ? void 0 : a.total),
@@ -710,7 +710,7 @@
 					var i, o, l, d;
 					const u = n();
 					if (u.listings.postOrder.api.pending[e]) return;
-					const p = ee.e[Object(te.S)(u, {})];
+					const p = ee.e[Object(te.R)(u, {})];
 					t.isMobile = Object(c.e)(u.meta.userAgent), t.recentPostIds = u.posts.recent, t.layout = p, t.useMockData = !!u.platform.currentPage && (!!u.platform.currentPage.queryParams.useMockData && Object(le.b)(u)), s(ke({
 						key: e
 					})); {
@@ -850,7 +850,7 @@
 									limit: o,
 									sort: d,
 									t: Object(ae.a)(d, h),
-									layout: ee.e[Object(te.S)(i, {})],
+									layout: ee.e[Object(te.R)(i, {})],
 									useMockData: e
 								}; {
 								const e = i.platform.lastPage,
@@ -2631,10 +2631,10 @@
 			}
 			var qe = s("./src/reddit/selectors/experiments/utils.ts");
 			const Ue = Object(u.a)(e => Object(De.c)(e, {
-					experimentName: Re.Vd,
+					experimentName: Re.Wd,
 					experimentEligibilitySelector: De.a
 				}), qe.a),
-				We = Object(u.a)(Ue, e => e === Re.Wd.Enabled);
+				We = Object(u.a)(Ue, e => e === Re.Xd.Enabled);
 			var Ve = s("./src/reddit/selectors/experiments/loggedOutOneFeed.ts"),
 				Ge = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				He = s("./src/reddit/selectors/user.ts");
@@ -2667,7 +2667,7 @@
 							return Object(De.c)(e, {
 								experimentEligibilitySelector: He.P,
 								experimentName: Re.pc
-							}) === Re.rd
+							}) === Re.sd
 						}(e)
 					},
 					isNavbarLikeMwebEnabled: d.a,
@@ -6748,7 +6748,7 @@
 				rpanInjectionIndex: e => Object(ie.b)(e, {
 					listingName: de.R
 				}),
-				layout: q.S,
+				layout: q.R,
 				isBlockingInterstitialEnabled: X.b,
 				isBlockingInterstitialV2Enabled: X.c,
 				isTalkLiveBarEnabled: z.w,
@@ -7403,7 +7403,7 @@
 				n = s("./src/reddit/constants/postLayout.ts"),
 				r = s("./src/reddit/contexts/PageLayer/index.tsx"),
 				c = s("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => n.e[Object(r.S)(e, {})] === n.d.Card,
+			const i = e => n.e[Object(r.R)(e, {})] === n.d.Card,
 				o = e => Object(c.c)(e, {
 					experimentEligibilitySelector: i,
 					experimentName: a.pb
@@ -7447,7 +7447,7 @@
 			function c(e) {
 				return Object(n.c)(e, {
 					experimentEligibilitySelector: r.P,
-					experimentName: a.Jc
+					experimentName: a.Kc
 				})
 			}
 			const i = 31536e3;
@@ -7466,9 +7466,9 @@
 				return function(e) {
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: o,
-						experimentName: a.Ic
-					}) === a.td.Enabled
-				}(e) ? l.Achievements : t === a.ud.ControlBanner ? l.CommunitySpacesControl : t === a.ud.EnabledBanner ? l.CommunitySpaces : null
+						experimentName: a.Jc
+					}) === a.ud.Enabled
+				}(e) ? l.Achievements : t === a.vd.ControlBanner ? l.CommunitySpacesControl : t === a.vd.EnabledBanner ? l.CommunitySpaces : null
 			}! function(e) {
 				e.Achievements = "achievements", e.CommunitySpaces = "communitySpaces", e.CommunitySpacesControl = "communitySpaces--control"
 			}(l || (l = {}))
@@ -7484,13 +7484,13 @@
 				const t = (e => {
 						return Object(n.c)(e, {
 							experimentEligibilitySelector: n.a,
-							experimentName: a.Zd
-						}) === a.rd
+							experimentName: a.ae
+						}) === a.sd
 					})(e),
 					s = Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
-						experimentName: a.Yd
-					}) === a.rd;
+						experimentName: a.Zd
+					}) === a.sd;
 				return t && !s
 			}
 		},
@@ -7663,4 +7663,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.74287710d34243884f93.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.41f4504d247666ecdba4.js.map

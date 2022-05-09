@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.722c6d3333c8e6fc3373.js
-// Retrieved at 5/9/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.12bcbc58ebc724eda8d3.js
+// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePosts", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/take.js": function(e, t, n) {
@@ -861,7 +861,7 @@
 				L = Object(h.u)(),
 				T = Object(i.c)({
 					dropdownIsOpen: Object(w.b)(S),
-					postLayout: h.S,
+					postLayout: h.R,
 					redditStyle: h.D
 				}),
 				P = Object(o.b)(T, e => ({
@@ -1868,7 +1868,7 @@
 				b = n("./src/lib/lessComponent.tsx");
 			const h = Object(u.u)(),
 				f = Object(o.c)({
-					layout: u.S
+					layout: u.R
 				}),
 				_ = Object(a.b)(f);
 			class y extends s.a.Component {
@@ -2045,7 +2045,7 @@
 				}).apply(this, arguments)
 			}
 			const I = Object(w.u)({
-					routeName: w.Z,
+					routeName: w.Y,
 					privateListingType: w.j
 				}),
 				B = Object(p.c)({
@@ -4380,4 +4380,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.722c6d3333c8e6fc3373.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.12bcbc58ebc724eda8d3.js.map

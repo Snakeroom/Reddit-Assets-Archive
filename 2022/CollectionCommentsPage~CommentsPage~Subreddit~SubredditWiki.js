@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.cd298c6b628bb533a33f.js
-// Retrieved at 5/9/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.28733c2244fce170928c.js
+// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -2297,7 +2297,7 @@
 			const le = Object(c.a)("spPolls", R),
 				ue = Object(d.u)(),
 				me = Object(a.c)({
-					layout: d.S,
+					layout: d.R,
 					widget: l.f
 				}),
 				pe = Object(i.b)(me);
@@ -2683,8 +2683,8 @@
 			}
 			const O = 129,
 				C = Object(h.u)({
-					filterName: e => Object(h.X)(e)[b.h],
-					url: e => Object(h.eb)(e)
+					filterName: e => Object(h.W)(e)[b.h],
+					url: e => Object(h.db)(e)
 				}),
 				j = Object(o.c)({
 					subredditId: (e, t) => Object(y.F)(e, t.subredditName)
@@ -4143,7 +4143,7 @@
 				s = r("./src/reddit/constants/postLayout.ts"),
 				i = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				a = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const o = e => s.e[Object(i.S)(e, {})] === s.d.Card,
+			const o = e => s.e[Object(i.R)(e, {})] === s.d.Card,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: o,
 					experimentName: n.pb
@@ -4187,8 +4187,8 @@
 				o = e => a.includes(e),
 				d = Object(n.a)(e => Object(i.c)(e, {
 					experimentEligibilitySelector: i.a,
-					experimentName: s.Nd
-				}), e => e === s.rd)
+					experimentName: s.Od
+				}), e => e === s.sd)
 		},
 		"./src/redditGQL/operations/SubredditUserAchievements.json": function(e) {
 			e.exports = JSON.parse('{"id":"92790c69eba6"}')
@@ -4198,4 +4198,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.cd298c6b628bb533a33f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.28733c2244fce170928c.js.map

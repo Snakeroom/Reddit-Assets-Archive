@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.226af619e90b81f3a7dc.js
-// Retrieved at 5/9/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.e49b854b7e6fdfc22546.js
+// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1277,7 +1277,7 @@
 			const oe = Object(ne.a)(e => Object(te.c)(e, {
 				experimentEligibilitySelector: te.a,
 				experimentName: ee.Bb
-			}), e => e === ee.rd);
+			}), e => e === ee.sd);
 			var re = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				se = n("./src/reddit/selectors/platform.ts"),
 				ae = n("./src/reddit/selectors/posts.ts"),
@@ -10677,7 +10677,7 @@
 				}
 			}
 			t.c = s.a.memo((function(e) {
-				const t = Object(m.fb)(),
+				const t = Object(m.eb)(),
 					n = Object(m.w)(t),
 					o = Object(G.a)(),
 					r = Object(a.e)(r => Q(r, {
@@ -18517,7 +18517,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var o = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = o.fb
+			t.a = o.eb
 		},
 		"./src/reddit/hooks/usePostContext.ts": function(e, t, n) {
 			"use strict";
@@ -19637,7 +19637,7 @@
 			const h = Object(d.u)(),
 				b = Object(a.c)({
 					isEditing: l.i,
-					layout: (e, t) => t.forcedLayout || Object(d.S)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(d.R)(e, t)
 				}),
 				f = Object(s.b)(b);
 			t.a = h(f(e => {
@@ -24216,7 +24216,7 @@
 				fbt: Gd
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), zd = () => {
 				const e = Object(a.d)(),
-					t = Object(H.fb)(),
+					t = Object(H.eb)(),
 					n = Object(a.e)(e => Object(H.r)(e, {
 						pageLayer: t
 					})),
@@ -25336,7 +25336,7 @@
 					draftId: H.v,
 					isPostCreationPage: H.G,
 					pageLayer: e => e,
-					sourcePostId: e => Object(H.Y)(e).source_id
+					sourcePostId: e => Object(H.X)(e).source_id
 				}),
 				Du = Object(i.c)({
 					submissionType: F.a,
@@ -25346,7 +25346,7 @@
 						let {
 							pageLayer: n
 						} = t;
-						const o = Object(H.V)(e, {
+						const o = Object(H.U)(e, {
 							pageLayer: n
 						});
 						return !!o && "/" === o[0]
@@ -25703,7 +25703,7 @@
 							isPredictionCreationAllowed: n,
 							isApprovedUser: o
 						} = function() {
-							const [e, t] = s.a.useState(!1), [n, o] = s.a.useState(!1), r = Object(a.d)(), i = Object(H.fb)(), c = Object(a.e)(e => Object(H.r)(e, {
+							const [e, t] = s.a.useState(!1), [n, o] = s.a.useState(!1), r = Object(a.d)(), i = Object(H.eb)(), c = Object(a.e)(e => Object(H.r)(e, {
 								pageLayer: i
 							})), d = Object(a.e)(e => c && Object(We.h)(e, {
 								subredditId: c.id
@@ -26412,7 +26412,7 @@
 			};
 
 			function d() {
-				const e = Object(r.fb)(),
+				const e = Object(r.eb)(),
 					t = Object(o.e)(t => Object(r.r)(t, {
 						pageLayer: e
 					})),
@@ -26536,31 +26536,31 @@
 			}));
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(r.a)(o.ed),
-				a = Object(r.a)(o.cd),
-				i = Object(r.a)(o.fd),
-				c = Object(r.a)(o.bd),
-				d = Object(r.a)(o.ad),
-				l = Object(r.a)(o.id),
-				u = Object(r.a)(o.gd),
-				m = Object(r.a)(o.hd),
-				p = Object(r.a)(o.Xc),
-				h = Object(r.a)(o.Vc),
-				b = Object(r.a)(o.Nc),
-				f = Object(r.a)(o.Oc),
-				g = Object(r.a)(o.Lc),
-				C = Object(r.a)(o.Mc),
-				x = Object(r.a)(o.Qc),
-				v = Object(r.a)(o.Kc),
-				_ = Object(r.a)(o.Yc),
-				E = Object(r.a)(o.Zc),
-				O = Object(r.a)(o.dd),
-				y = Object(r.a)(o.jd),
-				k = Object(r.a)(o.pd),
-				j = Object(r.a)(o.od),
-				w = Object(r.a)(o.ld),
-				T = Object(r.a)(o.nd),
-				S = Object(r.a)(o.md)
+			const s = Object(r.a)(o.fd),
+				a = Object(r.a)(o.dd),
+				i = Object(r.a)(o.gd),
+				c = Object(r.a)(o.cd),
+				d = Object(r.a)(o.bd),
+				l = Object(r.a)(o.jd),
+				u = Object(r.a)(o.hd),
+				m = Object(r.a)(o.id),
+				p = Object(r.a)(o.Yc),
+				h = Object(r.a)(o.Wc),
+				b = Object(r.a)(o.Oc),
+				f = Object(r.a)(o.Pc),
+				g = Object(r.a)(o.Mc),
+				C = Object(r.a)(o.Nc),
+				x = Object(r.a)(o.Rc),
+				v = Object(r.a)(o.Lc),
+				_ = Object(r.a)(o.Zc),
+				E = Object(r.a)(o.ad),
+				O = Object(r.a)(o.ed),
+				y = Object(r.a)(o.kd),
+				k = Object(r.a)(o.qd),
+				j = Object(r.a)(o.pd),
+				w = Object(r.a)(o.md),
+				T = Object(r.a)(o.od),
+				S = Object(r.a)(o.nd)
 		},
 		"./src/reddit/selectors/experiments/loggedOutOneFeed.ts": function(e, t, n) {
 			"use strict";
@@ -26590,9 +26590,9 @@
 			var o = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const s = e => Object(r.c)(e, {
-				experimentName: o.ke,
+				experimentName: o.le,
 				experimentEligibilitySelector: r.a
-			}) === o.te.Enabled
+			}) === o.ue.Enabled
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
 			"use strict";
@@ -26604,8 +26604,8 @@
 			const s = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: o.Fe
-				}) === o.rd
+					experimentName: o.Ge
+				}) === o.sd
 			}
 		},
 		"./src/reddit/selectors/experiments/typingIndicators.ts": function(e, t, n) {
@@ -26627,29 +26627,29 @@
 					if (Object(a.a)(e)) return !1;
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.Jf
-					}) === o.rd
+						experimentName: o.Kf
+					}) === o.sd
 				},
 				c = e => {
 					return Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.Kf
-					}) === o.rd
+						experimentName: o.Lf
+					}) === o.sd
 				},
 				d = e => {
 					if (Object(a.a)(e)) return !1;
 					const t = Object(r.c)(e, {
 						experimentEligibilitySelector: s.e,
-						experimentName: o.If
+						experimentName: o.Jf
 					});
-					return t === o.Af.TypingIndicators || t === o.Af.IndicatorsPlusCTA
+					return t === o.Bf.TypingIndicators || t === o.Bf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(a.a)(e)) return !1;
 					const t = Object(s.d)(e, {
-						experimentName: o.If
+						experimentName: o.Jf
 					});
-					return (null == t ? void 0 : t.variant) === o.Af.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Bf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -27165,4 +27165,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.226af619e90b81f3a7dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.e49b854b7e6fdfc22546.js.map

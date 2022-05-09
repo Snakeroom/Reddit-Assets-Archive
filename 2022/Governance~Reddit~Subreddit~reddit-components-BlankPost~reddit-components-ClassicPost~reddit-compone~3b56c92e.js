@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.0cf36a9f959e5700551f.js
-// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.e4706166b4c8af7998a1.js
+// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -479,7 +479,7 @@
 					}
 					const F = {
 						...n()(e.queryParams, [...g.n, ...g.m, g.j]),
-						layout: Object(O.S)(T, {}).toLowerCase(),
+						layout: Object(O.R)(T, {}).toLowerCase(),
 						sort: y,
 						t: Object(w.a)(y, P)
 					};
@@ -550,7 +550,7 @@
 							sort: b,
 							t: m,
 							...n()(c, g.n),
-							layout: Object(O.S)(a, {}).toLowerCase()
+							layout: Object(O.R)(a, {}).toLowerCase()
 						},
 						_ = await E(r(), p, P),
 						j = _.body,
@@ -2223,4 +2223,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.0cf36a9f959e5700551f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e.e4706166b4c8af7998a1.js.map

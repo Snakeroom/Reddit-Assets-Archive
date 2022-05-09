@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.5e11ec37bd38b62309ce.js
-// Retrieved at 5/9/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.6ca69f16fcbe2e9f26f3.js
+// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -584,7 +584,7 @@
 			const oe = Object(ne.a)(e => Object(te.c)(e, {
 				experimentEligibilitySelector: te.a,
 				experimentName: ee.Bb
-			}), e => e === ee.rd);
+			}), e => e === ee.sd);
 			var se = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				re = n("./src/reddit/selectors/platform.ts"),
 				ie = n("./src/reddit/selectors/posts.ts"),
@@ -2671,7 +2671,7 @@
 						let {
 							pageLayer: n
 						} = t;
-						return Object(ye.db)(e, n, f.e.Comment)
+						return Object(ye.cb)(e, n, f.e.Comment)
 					},
 					postAuthorIsBlocked: Je.w,
 					isTrueblockPCBlockeeEnabled: Xe.d
@@ -4870,29 +4870,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Jf
-					}) === o.rd
+						experimentName: o.Kf
+					}) === o.sd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Kf
-					}) === o.rd
+						experimentName: o.Lf
+					}) === o.sd
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.If
+						experimentName: o.Jf
 					});
-					return t === o.Af.TypingIndicators || t === o.Af.IndicatorsPlusCTA
+					return t === o.Bf.TypingIndicators || t === o.Bf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.If
+						experimentName: o.Jf
 					});
-					return (null == t ? void 0 : t.variant) === o.Af.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Bf.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -4906,4 +4906,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.5e11ec37bd38b62309ce.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.6ca69f16fcbe2e9f26f3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.afdb79612a70bc647df9.js
-// Retrieved at 5/9/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.2442d90859f93051f265.js
+// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -2474,7 +2474,7 @@
 				P = s.n(M);
 			const R = 24,
 				A = Object(T.u)({
-					username: e => Object(T.X)(e).user
+					username: e => Object(T.W)(e).user
 				}),
 				F = Object(d.c)({
 					approvedSubmitters: N,
@@ -6792,11 +6792,11 @@
 				je = () => Object(d.c)({
 					activeModalId: k.a,
 					crosspost: S.d,
-					flairStyleTemplate: ie.W,
+					flairStyleTemplate: ie.V,
 					isActive: S.j,
 					isExpanded: S.m,
 					showPromotedCTA: ve.a,
-					layout: ie.S,
+					layout: ie.R,
 					moderatorPermissions: y.m,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
@@ -12539,7 +12539,7 @@
 				ze = s.n(We);
 			const Ve = Object(He.u)({
 					currentPageUrl: He.f,
-					queryParams: He.X
+					queryParams: He.W
 				}),
 				qe = Object(d.c)({
 					actionsList: W,
@@ -19778,14 +19778,14 @@
 					isLoggedIn: f.P,
 					showPromotedCTA: g.a,
 					moderatorPermissions: p.m,
-					modModeEnabled: l.U,
+					modModeEnabled: l.T,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: b.a,
 					showMedia: l.s,
-					flairStyleTemplate: l.W
+					flairStyleTemplate: l.V
 				},
 				E = Object(n.b)(() => Object(a.c)(x), (e, t) => {
 					let {
@@ -23069,7 +23069,7 @@
 						profileName: t.match.params.profileName
 					})
 				}),
-				Xe = Object(i.b)(() => Object(d.a)(qe, T.M, x.S, Ke, T.jb, S.jb, Ye, Qe, Ge, (e, t) => t.match.params.pageName, e => e, (e, t, s, n, a, o, r, i, d, l, c) => {
+				Xe = Object(i.b)(() => Object(d.a)(qe, T.M, x.R, Ke, T.jb, S.jb, Ye, Qe, Ge, (e, t) => t.match.params.pageName, e => e, (e, t, s, n, a, o, r, i, d, l, c) => {
 					let {
 						contentGateInfo: m
 					} = e, {
@@ -23191,9 +23191,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.qd
+					experimentName: n.rd
 				});
-				return !(!t || Object(n.Nf)(t))
+				return !(!t || Object(n.Of)(t))
 			}
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
@@ -23267,10 +23267,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.Je,
+					experimentName: a.Ke,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.Re.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.Se.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(n.a)(r.G, i, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -23528,4 +23528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.afdb79612a70bc647df9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.2442d90859f93051f265.js.map

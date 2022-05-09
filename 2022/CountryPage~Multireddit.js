@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.0b73514a4111ef54dd82.js
-// Retrieved at 5/9/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.4c504fa87e2ddb10d616.js
+// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1433,7 +1433,7 @@
 				N = Object(b.u)(),
 				I = Object(a.c)({
 					dropdownIsOpen: Object(w.b)(S),
-					postLayout: b.S,
+					postLayout: b.R,
 					redditStyle: b.D
 				}),
 				L = Object(o.b)(I, e => ({
@@ -4702,12 +4702,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.sf.SmIcon:
+						case b.tf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.sf.SmIconHc:
+						case b.tf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -5148,7 +5148,7 @@
 					isCommentsPage: p.x,
 					isFrontpage: p.A,
 					isProfilePostListing: p.L,
-					isTopicPage: p.R,
+					isTopicPage: p.Q,
 					pageLayer: e => e
 				})
 			}
@@ -5157,7 +5157,7 @@
 					apiError: y.c,
 					apiPending: y.d,
 					measureScrollFPS: g.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.S)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.R)(e, t),
 					loadMore: y.g,
 					postsById: _.S,
 					postIds: Object(i.a)((e, t) => {
@@ -5170,7 +5170,7 @@
 					}),
 					subredditsById: w.bb,
 					viewportDataLoaded: E.a,
-					pageReferrer: p.V,
+					pageReferrer: p.U,
 					postListPlaceholderComponent: () => f.a,
 					isNpsScrollSurveyEnabled: x.e
 				},
@@ -6009,7 +6009,7 @@
 				fbt: Ce
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), je = Object(d.c)({
 				isLoggedIn: z.P,
-				layout: (e, t) => M.e[Object(F.S)(e, t)],
+				layout: (e, t) => M.e[Object(F.R)(e, t)],
 				userIsOwner: (e, t) => Object(U.c)(e, t.multireddit.url)
 			}), Te = Object(c.b)(je), Ne = Object(F.u)(), Ie = {};
 			var Le = Ne(Te(e => a.a.createElement("div", {
@@ -6233,15 +6233,15 @@
 			const o = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: i.P,
-						experimentName: r.Sc
+						experimentName: r.Tc
 					});
-					return !(!t || Object(r.Nf)(t))
+					return !(!t || Object(r.Of)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: i.P,
-						experimentName: r.Sc
-					}) === r.wd.ListingEnabled
+						experimentName: r.Tc
+					}) === r.xd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -6374,12 +6374,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.mf
+						experimentName: r.nf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.sf.SmIcon || t === r.sf.SmIconHc
+					return t === r.tf.SmIcon || t === r.tf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6420,4 +6420,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.0b73514a4111ef54dd82.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.4c504fa87e2ddb10d616.js.map

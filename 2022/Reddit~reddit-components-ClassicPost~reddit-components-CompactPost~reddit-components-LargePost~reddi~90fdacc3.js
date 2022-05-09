@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.c4c7b439e9c22cdc4ae6.js
-// Retrieved at 5/9/2022, 5:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.a39b5e45e6477b56525d.js
+// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -2139,7 +2139,7 @@
 				}
 			}
 			t.c = o.a.memo((function(e) {
-				const t = Object(m.fb)(),
+				const t = Object(m.eb)(),
 					n = Object(m.w)(t),
 					r = Object(G.a)(),
 					s = Object(i.e)(s => Z(s, {
@@ -4051,31 +4051,31 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(s.a)(r.ed),
-				i = Object(s.a)(r.cd),
-				a = Object(s.a)(r.fd),
-				c = Object(s.a)(r.bd),
-				d = Object(s.a)(r.ad),
-				l = Object(s.a)(r.id),
-				u = Object(s.a)(r.gd),
-				m = Object(s.a)(r.hd),
-				p = Object(s.a)(r.Xc),
-				b = Object(s.a)(r.Vc),
-				f = Object(s.a)(r.Nc),
-				_ = Object(s.a)(r.Oc),
-				h = Object(s.a)(r.Lc),
-				O = Object(s.a)(r.Mc),
-				E = Object(s.a)(r.Qc),
-				S = Object(s.a)(r.Kc),
-				C = Object(s.a)(r.Yc),
-				v = Object(s.a)(r.Zc),
-				x = Object(s.a)(r.dd),
-				j = Object(s.a)(r.jd),
-				y = Object(s.a)(r.pd),
-				T = Object(s.a)(r.od),
-				g = Object(s.a)(r.ld),
-				I = Object(s.a)(r.nd),
-				k = Object(s.a)(r.md)
+			const o = Object(s.a)(r.fd),
+				i = Object(s.a)(r.dd),
+				a = Object(s.a)(r.gd),
+				c = Object(s.a)(r.cd),
+				d = Object(s.a)(r.bd),
+				l = Object(s.a)(r.jd),
+				u = Object(s.a)(r.hd),
+				m = Object(s.a)(r.id),
+				p = Object(s.a)(r.Yc),
+				b = Object(s.a)(r.Wc),
+				f = Object(s.a)(r.Oc),
+				_ = Object(s.a)(r.Pc),
+				h = Object(s.a)(r.Mc),
+				O = Object(s.a)(r.Nc),
+				E = Object(s.a)(r.Rc),
+				S = Object(s.a)(r.Lc),
+				C = Object(s.a)(r.Zc),
+				v = Object(s.a)(r.ad),
+				x = Object(s.a)(r.ed),
+				j = Object(s.a)(r.kd),
+				y = Object(s.a)(r.qd),
+				T = Object(s.a)(r.pd),
+				g = Object(s.a)(r.md),
+				I = Object(s.a)(r.od),
+				k = Object(s.a)(r.nd)
 		},
 		"./src/reddit/selectors/experiments/loggedOutOneFeed.ts": function(e, t, n) {
 			"use strict";
@@ -4196,8 +4196,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Fe
-				}) === r.rd
+					experimentName: r.Ge
+				}) === r.sd
 			}
 		},
 		"./src/reddit/selectors/gold/awardIcon.ts": function(e, t, n) {
@@ -4385,4 +4385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.c4c7b439e9c22cdc4ae6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.a39b5e45e6477b56525d.js.map
