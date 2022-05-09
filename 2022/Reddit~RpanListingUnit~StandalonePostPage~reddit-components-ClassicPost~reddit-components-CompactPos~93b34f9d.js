@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.0a03aef4fed37e136f06.js
-// Retrieved at 5/5/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.9a893eacf1552d4d20a3.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -359,7 +359,7 @@
 			}));
 			var r = n("./src/lib/constants/index.ts");
 			const o = 16374492e5,
-				s = 45 * r.C;
+				s = 45 * r.B;
 			var a;
 			! function(e) {
 				e.NotAvailableYet = "NotAvailableYet", e.NotAvailable = "NotAvailable", e.Available = "Available", e.Expired = "Expired", e.Quarantined = "Quarantined"
@@ -1684,7 +1684,7 @@
 					const {
 						thingId: n,
 						packageId: l
-					} = t, b = !!n, h = s.b(e), g = h ? Object(u.getAwardTypeFromAward)(h) : null, v = b ? g : c.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, x = n ? Object(p.a)(n) ? "comment" : "post" : void 0, y = l || c.t(e), j = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === y)[0], _ = t.offerContext || (h && 0 === h.coinPrice ? o.a.StorefrontFreeAward : Object(o.d)(j, b)), w = j ? Math.round(1e4 * (j.baselinePennies - j.pennies) / j.baselinePennies) / 100 : 0, C = j ? Math.round(1e4 * (j.coins - j.baselineCoins) / j.coins) / 100 : 0, O = j ? j.baselinePennies !== j.pennies ? `${w}_percent_price` : j.baselineCoins !== j.coins ? `${C}_percent_bonus` : void 0 : void 0, k = v === d.GoldPurchaseType.Premium ? r.zb : j ? j.pennies : void 0;
+					} = t, b = !!n, h = s.b(e), g = h ? Object(u.getAwardTypeFromAward)(h) : null, v = b ? g : c.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, x = n ? Object(p.a)(n) ? "comment" : "post" : void 0, y = l || c.t(e), j = [...Object(a.d)(e), ...Object(a.f)(e)].filter(e => e.mobileId === y)[0], _ = t.offerContext || (h && 0 === h.coinPrice ? o.a.StorefrontFreeAward : Object(o.d)(j, b)), w = j ? Math.round(1e4 * (j.baselinePennies - j.pennies) / j.baselinePennies) / 100 : 0, C = j ? Math.round(1e4 * (j.coins - j.baselineCoins) / j.coins) / 100 : 0, O = j ? j.baselinePennies !== j.pennies ? `${w}_percent_price` : j.baselineCoins !== j.coins ? `${C}_percent_bonus` : void 0 : void 0, k = v === d.GoldPurchaseType.Premium ? r.yb : j ? j.pennies : void 0;
 					return {
 						...i.n(e),
 						comment: n ? i.h(e, n) : null,
@@ -2346,13 +2346,13 @@
 							postId: t
 						}) || Object(a.N)(e))(e, t),
 						experimentName: r.P
-					}) === r.sd
+					}) === r.rd
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a.Q,
-						experimentName: r.He
-					}) === r.sd
+						experimentName: r.Ge
+					}) === r.rd
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -2483,4 +2483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.0a03aef4fed37e136f06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.9a893eacf1552d4d20a3.js.map

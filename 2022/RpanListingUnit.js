@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.f22b80ee9144b0cc48d5.js
-// Retrieved at 5/5/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.ed3a298e2e05f0267fea.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -44,16 +44,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.ee
+					experimentName: u.de
 				});
-				return Object(u.Mf)(t) ? void 0 : t
+				return Object(u.Lf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.fe
+					experimentName: u.ee
 				});
-				return Object(u.Mf)(t) ? void 0 : t
-			}, (e, t) => e === u.ie.Enabled && t === u.ie.Enabled);
+				return Object(u.Lf)(t) ? void 0 : t
+			}, (e, t) => e === u.he.Enabled && t === u.he.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const E = e => {
@@ -90,7 +90,7 @@
 				}).apply(this, arguments)
 			}
 			const C = (e => t => ((e, t) => `${e}(${(e=>e.displayName||e.name||"Component")(t)})`)(e, t))("WithMux"),
-				g = {
+				I = {
 					anonymousUserId: "t2_anonymous",
 					debug: !1,
 					disableCookies: !0,
@@ -111,14 +111,14 @@
 					envKey: m,
 					localStorageSaltKey: _,
 					localStorageViewerUserIdKey: f,
-					playerName: I,
+					playerName: g,
 					playerVersion: y,
 					respectDoNotTrack: D,
 					saltLength: N,
 					saltTimeToLive: T,
 					viewerUserIdLength: A
 				} = {
-					...g,
+					...I,
 					...t
 				};
 				class x extends n.Component {
@@ -268,7 +268,7 @@
 						}
 					}
 				}
-				x.displayName = C(e), x.ANONYMOUS_USER_ID = s, x.DEBUG = d, x.DISABLE_COOKIES = u, x.DURATION_LIVE = 1 / 0, x.ENV_KEY = m, x.LOCAL_STORAGE_SALT_KEY = _, x.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, x.PLAYER_NAME = I, x.PLAYER_VERSION = y, x.RESPECT_DO_NOT_TRACK = D, x.SALT_LENGTH = N, x.SALT_TIME_TO_LIVE = T, x.STREAM_TYPE_LIVE = "live", x.STREAM_TYPE_ON_DEMAND = "on-demand", x.VIEWER_USER_ID_LENGTH = A;
+				x.displayName = C(e), x.ANONYMOUS_USER_ID = s, x.DEBUG = d, x.DISABLE_COOKIES = u, x.DURATION_LIVE = 1 / 0, x.ENV_KEY = m, x.LOCAL_STORAGE_SALT_KEY = _, x.LOCAL_STORAGE_VIEWER_USER_ID_KEY = f, x.PLAYER_NAME = g, x.PLAYER_VERSION = y, x.RESPECT_DO_NOT_TRACK = D, x.SALT_LENGTH = N, x.SALT_TIME_TO_LIVE = T, x.STREAM_TYPE_LIVE = "live", x.STREAM_TYPE_ON_DEMAND = "on-demand", x.VIEWER_USER_ID_LENGTH = A;
 				const L = Object(n.forwardRef)((e, t) => r.a.createElement(x, O({}, e, {
 						forwardedRef: t
 					}))),
@@ -376,9 +376,9 @@
 			})), s.d(t, "c", (function() {
 				return O
 			})), s.d(t, "d", (function() {
-				return g
-			})), s.d(t, "e", (function() {
 				return I
+			})), s.d(t, "e", (function() {
+				return g
 			})), s.d(t, "f", (function() {
 				return y
 			})), s.d(t, "g", (function() {
@@ -516,7 +516,7 @@
 					}
 				})),
 				C = s("./src/reddit/hooks/usePostContext.ts");
-			var g = e => {
+			var I = e => {
 				const t = Object(C.a)(),
 					s = Object(n.useMemo)(() => ({
 						author: null == t ? void 0 : t.post.author,
@@ -550,7 +550,7 @@
 					data: s
 				}) : null
 			};
-			var I = e => {
+			var g = e => {
 				const t = Object(C.a)(),
 					s = Object(n.useMemo)(() => ({
 						author: null == t ? void 0 : t.post.author,
@@ -679,8 +679,8 @@
 				S = s("./src/reddit/constants/postLayout.ts"),
 				O = s("./src/reddit/helpers/localStorage/index.ts"),
 				C = s("./src/reddit/helpers/overlay/index.ts"),
-				g = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
-				I = s("./src/reddit/helpers/trackers/rpan.ts"),
+				I = s("./src/reddit/helpers/publicAccessNetwork/index.ts"),
+				g = s("./src/reddit/helpers/trackers/rpan.ts"),
 				y = s("./src/reddit/models/PublicAccessNetwork/index.ts"),
 				D = s("./src/reddit/models/Vote/index.ts"),
 				N = s("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
@@ -702,11 +702,11 @@
 				B = s("./src/reddit/icons/fonts/index.tsx"),
 				W = s("./src/reddit/helpers/styles/mixins/index.m.less"),
 				G = s.n(W),
-				J = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
-				K = s.n(J);
+				K = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
+				q = s.n(K);
 			const {
-				fbt: q
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, z = l.sc, $ = l.sc, Q = Object(c.a)(j.a, {
+				fbt: Z
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), J = 20, z = l.rc, $ = l.rc, Q = Object(c.a)(j.a, {
 				playerName: "RPAN DU Video Player"
 			}), X = Object(i.b)(() => Object(o.c)({
 				autoplay: x.b,
@@ -721,10 +721,10 @@
 					});
 					let r;
 					if (n) {
-						r = `${Object(g.d)(n)}${Object(v.c)(s)}`
+						r = `${Object(I.d)(n)}${Object(v.c)(s)}`
 					} else {
 						const e = s.replace(/^r\//, "");
-						r = e === b.R ? Object(g.e)() : Object(g.f)(e)
+						r = e === b.R ? Object(I.e)() : Object(I.f)(e)
 					}
 					return r
 				},
@@ -751,12 +751,12 @@
 					pageSize: 1
 				}))
 			})), ee = () => r.a.createElement("h3", {
-				className: K.a.title
-			}, q._("Top livestream", null, {
+				className: q.a.title
+			}, Z._("Top livestream", null, {
 				hk: "4od1tZ"
 			})), te = () => r.a.createElement("p", {
-				className: K.a.description
-			}, q._("Live from the internet, this is RPAN", null, {
+				className: q.a.description
+			}, Z._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
 			}));
 			class se extends n.Component {
@@ -768,7 +768,7 @@
 						if (e) {
 							if (Date.now() - e >= z) {
 								Object(O.Z)();
-								const e = 30 * l.C,
+								const e = 30 * l.B,
 									t = Date.now() - e + $;
 								this.props.onHideRpanUnit(t, {
 									showToast: !1
@@ -793,20 +793,20 @@
 						} = this.props;
 						s(Date.now(), {
 							showToast: !0
-						}), n(Object(I.i)())
+						}), n(Object(g.i)())
 					}, this.onStreamClicked = e => {
 						e.stopPropagation(), e.preventDefault();
 						const {
 							sendEvent: t,
 							stream: s
 						} = this.props;
-						t(s ? Object(I.j)(s, 1) : Object(I.j)()), this.props.inRpanDuTargetingExperiment && this.handleSuccessfulPlayback(), this.openOverlay()
+						t(s ? Object(g.j)(s, 1) : Object(g.j)()), this.props.inRpanDuTargetingExperiment && this.handleSuccessfulPlayback(), this.openOverlay()
 					}, this.onHeaderClicked = e => {
 						e.stopPropagation(), e.preventDefault();
 						const {
 							sendEvent: t
 						} = this.props;
-						t(Object(I.j)()), this.openOverlay()
+						t(Object(g.j)()), this.openOverlay()
 					}, this.handleVisibilityChange = e => {
 						let {
 							documentInFocus: t
@@ -824,10 +824,10 @@
 							streamById: r
 						} = this.props, i = n && n.post.id === t.id ? n : r(t.id);
 						if (!i) return;
-						const o = !s.sessionDurationMs ? I.E : I.A,
+						const o = !s.sessionDurationMs ? g.E : g.A,
 							a = {
 								chatState: f.a.None,
-								playerType: I.a.DU
+								playerType: g.a.DU
 							},
 							c = o(i, {
 								...s,
@@ -869,7 +869,7 @@
 				}
 				endTimeTracker() {
 					if (this.timerId && a.c.has(this.timerId)) {
-						Math.round(a.c.end(this.timerId)) / 1e3 >= Z ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
+						Math.round(a.c.end(this.timerId)) / 1e3 >= J ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
 					}
 				}
 				componentDidMount() {
@@ -899,18 +899,18 @@
 					} = this, v = l && m && !a, _ = !v && b, f = v && !b, S = l && h && !a, O = o ? S && !E : f;
 					(o ? !S && E : _) ? (this.subscribeConfig(), this.subscribeStreams()) : O && (this.unsubscribeConfig(), this.unsubscribeStreams());
 					const C = i && i.post.id,
-						g = C !== (c && c.post.id),
-						I = !!C;
-					g && this.setState({
+						I = C !== (c && c.post.id),
+						g = !!C;
+					I && this.setState({
 						isReady: !1
 					});
-					const y = g && !I || I && f;
-					if (g && I && b || I && _ ? this.subscribeStats() : y && this.unsubscribeStats(), r && n) {
+					const y = I && !g || g && f;
+					if (I && g && b || g && _ ? this.subscribeStats() : y && this.unsubscribeStats(), r && n) {
 						const e = this.getOrCreateVideoSessionManager(n),
 							t = !p && d,
-							r = I && (t && b || _ && d),
-							i = I && f;
-						g && e.endSession(), r ? (e.startSession({
+							r = g && (t && b || _ && d),
+							i = g && f;
+						I && e.endSession(), r ? (e.startSession({
 							id: C
 						}), this.setState({
 							sessionId: (null === (s = null == e ? void 0 : e.sessionStats) || void 0 === s ? void 0 : s.id) || ""
@@ -925,104 +925,104 @@
 						layout: e
 					} = this.props, t = e === S.g.Classic ? this.renderClassicContent() : e === S.g.Compact ? this.renderCompactContent() : this.renderLargeContent();
 					return r.a.createElement("div", {
-						className: Object(d.a)(K.a.container, {
+						className: Object(d.a)(q.a.container, {
 							[G.a.largeAndMediumPostStyles]: e === S.g.Large || e === S.g.Medium,
 							[G.a.classicPostStyles]: e === S.g.Classic,
 							[G.a.compactPostStyles]: e === S.g.Compact,
-							[K.a.large]: e === S.g.Large || e === S.g.Medium,
-							[K.a.classic]: e === S.g.Classic,
-							[K.a.compact]: e === S.g.Compact
+							[q.a.large]: e === S.g.Large || e === S.g.Medium,
+							[q.a.classic]: e === S.g.Classic,
+							[q.a.compact]: e === S.g.Compact
 						}, this.props.className)
 					}, e !== S.g.Large && r.a.createElement(k.b, {
-						className: K.a.leftRail,
+						className: q.a.leftRail,
 						withoutComputedStyles: e === S.g.Compact
 					}, r.a.createElement(ne, {
 						isVertical: !0
 					}), e === S.g.Compact && r.a.createElement(ne, {
 						isVertical: !1
 					})), r.a.createElement(M.a, {
-						className: K.a.backgroundWrapper,
+						className: q.a.backgroundWrapper,
 						onClick: this.onHeaderClicked
 					}, t))
 				}
 				renderTitleAndDescription(e) {
 					return r.a.createElement("div", {
-						className: K.a.titleAndDescriptionContainer
+						className: q.a.titleAndDescriptionContainer
 					}, r.a.createElement(F.a, {
 						to: this.props.location
 					}, r.a.createElement(ee, null), e && r.a.createElement(te, null)))
 				}
 				renderLargeContent() {
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
-						className: K.a.header
+						className: q.a.header
 					}, this.renderTitleAndDescription(), r.a.createElement("div", {
-						className: K.a.flatListContainer
+						className: q.a.flatListContainer
 					}, r.a.createElement(oe, {
 						onClick: this.onHideUnitClicked
 					}))), r.a.createElement("div", {
-						className: K.a.body,
+						className: q.a.body,
 						ref: this.observableElement
 					}, r.a.createElement(F.a, {
 						to: this.props.location,
 						onClick: this.onStreamClicked,
-						className: K.a.previewLink,
+						className: q.a.previewLink,
 						tabIndex: 0
 					}, r.a.createElement("div", {
-						className: K.a.previewContainer
+						className: q.a.previewContainer
 					}, this.renderThumbnail()), this.renderInfo())))
 				}
 				renderClassicContent() {
 					return r.a.createElement("div", {
-						className: K.a.body,
+						className: q.a.body,
 						ref: this.observableElement
 					}, r.a.createElement(F.a, {
 						to: this.props.location,
 						onClick: this.onStreamClicked
 					}, r.a.createElement("div", {
-						className: K.a.thumbnailContainer
+						className: q.a.thumbnailContainer
 					}, this.renderThumbnail())), r.a.createElement("div", {
-						className: K.a.main
+						className: q.a.main
 					}, this.renderLiveStatus(), this.renderTitleAndDescription(!0), r.a.createElement("div", {
-						className: K.a.flatListContainer
+						className: q.a.flatListContainer
 					}, r.a.createElement(re, {
 						onClick: this.onHeaderClicked
 					}), r.a.createElement(R.a, {
-						className: K.a.flatlistSeparator
+						className: q.a.flatlistSeparator
 					}), r.a.createElement("div", null, r.a.createElement(ie, {
 						onClick: this.onHideUnitClicked
 					})))))
 				}
 				renderCompactContent() {
 					return r.a.createElement("div", {
-						className: K.a.body,
+						className: q.a.body,
 						ref: this.observableElement
 					}, r.a.createElement("div", {
-						className: K.a.main
+						className: q.a.main
 					}, r.a.createElement(re, {
 						onClick: this.onHeaderClicked
 					}), this.renderLiveStatus(), this.renderTitleAndDescription(!0), r.a.createElement("div", {
-						className: K.a.flatListContainer
+						className: q.a.flatListContainer
 					}, r.a.createElement(oe, {
 						onClick: this.onHideUnitClicked
 					}))))
 				}
 				renderInfo() {
 					if (this.props.stream && this.state.isReady) return r.a.createElement("div", {
-						className: K.a.infoContainer
+						className: q.a.infoContainer
 					}, this.renderExpandIcon(), this.renderLiveStatus(), this.renderWatcherCount())
 				}
 				renderExpandIcon() {
 					return r.a.createElement("div", {
-						className: K.a.bigExpando
+						className: q.a.bigExpando
 					}, r.a.createElement(B.a, {
 						name: "expand",
-						className: K.a.bigExpandoIcon
+						className: q.a.bigExpandoIcon
 					}))
 				}
 				renderLiveStatus() {
 					return this.isLive ? r.a.createElement("span", {
-						className: Object(d.a)(K.a.liveStatus, {
-							[K.a.compact]: this.props.layout === S.g.Compact
+						className: Object(d.a)(q.a.liveStatus, {
+							[q.a.compact]: this.props.layout === S.g.Compact
 						})
 					}, r.a.createElement(_.g, null)) : null
 				}
@@ -1031,18 +1031,18 @@
 					if (!this.isLive) return null;
 					const t = Math.max(1, (null === (e = this.props.stream) || void 0 === e ? void 0 : e.continuous_watchers) || 0);
 					return r.a.createElement("span", {
-						className: K.a.watchingCount
-					}, q._({
+						className: q.a.watchingCount
+					}, Z._({
 						"*": "{number} watchers",
 						_1: "1 watcher"
-					}, [q._plural(t, "number")], {
+					}, [Z._plural(t, "number")], {
 						hk: "33zJ5F"
 					}))
 				}
 				renderThumbnail() {
 					return r.a.createElement("div", {
-						className: Object(d.a)(K.a.thumbnail, {
-							[K.a.loading]: !this.state.isReady
+						className: Object(d.a)(q.a.thumbnail, {
+							[q.a.loading]: !this.state.isReady
 						})
 					}, this.renderVideo())
 				}
@@ -1157,11 +1157,11 @@
 			}
 			const ne = e => r.a.createElement(L.a, {
 					className: Object(d.a)({
-						[K.a.verticalVotes]: e.isVertical,
-						[K.a.horizontalVotes]: !e.isVertical
+						[q.a.verticalVotes]: e.isVertical,
+						[q.a.horizontalVotes]: !e.isVertical
 					})
 				}, r.a.createElement(Y.a, {
-					className: K.a.score,
+					className: q.a.score,
 					isScoreHidden: !0,
 					score: 0,
 					voteState: D.a.notVoted
@@ -1171,11 +1171,11 @@
 						onClick: t
 					} = e;
 					return r.a.createElement("button", {
-						className: K.a.expandoButton,
+						className: q.a.expandoButton,
 						onClick: t
 					}, r.a.createElement(B.a, {
 						name: "expand",
-						className: K.a.expandoIcon
+						className: q.a.expandoIcon
 					}))
 				},
 				ie = e => {
@@ -1184,7 +1184,7 @@
 						isLoggedIn: s
 					} = e;
 					return r.a.createElement(P.a, {
-						displayText: q._("Show me less of this", null, {
+						displayText: Z._("Show me less of this", null, {
 							hk: "4t8AKC"
 						}),
 						flatlistItem: U.a.Hide,
@@ -1201,16 +1201,16 @@
 						onClick: t
 					} = e;
 					return r.a.createElement(w.b, {
-						className: K.a.overflowMenu,
-						dropdownClassName: K.a.overflowDropdown,
+						className: q.a.overflowMenu,
+						dropdownClassName: q.a.overflowDropdown,
 						dropdownId: "rpan-du-overflow"
 					}, r.a.createElement(H.b, {
-						className: K.a.overflowItem,
-						displayText: q._("Show me less of this", null, {
+						className: q.a.overflowItem,
+						displayText: Z._("Show me less of this", null, {
 							hk: "2c4uFK"
 						}),
-						iconWrapperClassName: K.a.overflowItemIconWrapper,
-						textClassName: K.a.overflowItemText,
+						iconWrapperClassName: q.a.overflowItemIconWrapper,
+						textClassName: q.a.overflowItemText,
 						onClick: t
 					}, r.a.createElement(B.a, {
 						name: "hide"
@@ -1276,23 +1276,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case n.J.NO_STRIPE_SUBSCRIPTION:
-							case n.J.USER_DOESNT_EXIST:
-							case n.J.USER_REQUIRED_ERROR:
-							case n.J.VALIDATION_ERROR:
+							case n.I.NO_STRIPE_SUBSCRIPTION:
+							case n.I.USER_DOESNT_EXIST:
+							case n.I.USER_REQUIRED_ERROR:
+							case n.I.VALIDATION_ERROR:
 								return e;
-							case n.J.NO_USER:
-							case n.J.NO_TEXT:
-							case n.J.NO_URL:
-								return n.J.VALIDATION_ERROR;
-							case n.J.CREDIT_CARD_FAILURE:
-							case n.J.CREDIT_CARD_FAILURE_GENERIC:
-								return n.J.CREDIT_CARD_FAILURE;
+							case n.I.NO_USER:
+							case n.I.NO_TEXT:
+							case n.I.NO_URL:
+								return n.I.VALIDATION_ERROR;
+							case n.I.CREDIT_CARD_FAILURE:
+							case n.I.CREDIT_CARD_FAILURE_GENERIC:
+								return n.I.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return n.J.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return n.I.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return n.J.VALIDATION_ERROR
+					return n.I.VALIDATION_ERROR
 				},
 				i = e => {
 					const t = e.body;
@@ -1405,9 +1405,9 @@
 			})), s.d(t, "g", (function() {
 				return C
 			})), s.d(t, "l", (function() {
-				return g
-			})), s.d(t, "t", (function() {
 				return I
+			})), s.d(t, "t", (function() {
+				return g
 			})), s.d(t, "j", (function() {
 				return y
 			})), s.d(t, "e", (function() {
@@ -1541,13 +1541,13 @@
 					noun: null === e ? "one_time_frequency" : O[e],
 					...i(t)
 				}),
-				g = () => e => ({
+				I = () => e => ({
 					source: "post",
 					action: "click",
 					noun: "start_event_now",
 					...i(e)
 				}),
-				I = (e, t, s) => o => ({
+				g = (e, t, s) => o => ({
 					source: "post",
 					action: "click",
 					noun: Object(n.l)(e),
@@ -1767,9 +1767,9 @@
 			})), s.d(t, "d", (function() {
 				return C
 			})), s.d(t, "m", (function() {
-				return g
-			})), s.d(t, "b", (function() {
 				return I
+			})), s.d(t, "b", (function() {
+				return g
 			})), s.d(t, "l", (function() {
 				return y
 			})), s.d(t, "p", (function() {
@@ -1817,7 +1817,7 @@
 			! function(e) {
 				e.Hourly = "HOURLY", e.Daily = "DAILY", e.Weekly = "WEEKLY", e.Monthly = "MONTHLY"
 			}(C || (C = {}));
-			const g = e => {
+			const I = e => {
 					switch (e) {
 						case C.Hourly:
 						case C.Daily:
@@ -1827,7 +1827,7 @@
 					}
 					return !1
 				},
-				I = "custom",
+				g = "custom",
 				y = e => {
 					switch (e) {
 						case "isNsfw":
@@ -1863,12 +1863,12 @@
 			const o = e => Object(r.c)(e, {
 					experimentName: n.rb,
 					experimentEligibilitySelector: i.e
-				}) === n.sd,
+				}) === n.rd,
 				a = e => Object(r.c)(e, {
-					experimentName: n.bc,
+					experimentName: n.ac,
 					experimentEligibilitySelector: r.a
-				}) === n.sd
+				}) === n.rd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.f22b80ee9144b0cc48d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.ed3a298e2e05f0267fea.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.6d803c244bfb4aa0ecee.js
-// Retrieved at 5/5/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.0cd2cc77489cc57846ed.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -777,7 +777,7 @@
 					}, r[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.zc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.yc.GreyRereddit ? e.reredditButtons : [];
 					return n.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -997,7 +997,7 @@
 						this.windowHeight = window.innerHeight
 					}, this.handleResize = i()(() => {
 						this.updateMeasurements(), this.updateState()
-					}, c.L), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
+					}, c.K), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
 						isFooterSticky: !0
 					}
@@ -2093,7 +2093,7 @@
 			! function(e) {
 				e.Communities = "communities", e.Posts = "posts", e.RelatedTopics = "relatedTopics"
 			}(G || (G = {}));
-			class z extends n.a.Component {
+			class A extends n.a.Component {
 				renderSubtitleContent() {
 					const {
 						parentRelatedTopics: e
@@ -2157,7 +2157,7 @@
 					})))))
 				}
 			}
-			var A = z,
+			var z = A,
 				V = s("./src/reddit/pages/Topic/Relationship/index.m.less"),
 				J = s.n(V);
 			const {
@@ -2379,7 +2379,7 @@
 				Oe = s.n(Ce);
 			const {
 				fbt: ke
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(O.u)(), je = (e, t) => t.match.params.sort || a.Y, Le = e => {
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(O.u)(), je = (e, t) => t.match.params.sort || a.X, Le = e => {
 				const t = [];
 				return e ? (e.hasPosts && t.push(G.Posts), e.hasSubreddits && t.push(G.Communities), e.childRelationships.length && t.push(G.RelatedTopics), t) : t
 			}, Ie = Object(d.b)(() => Object(i.a)((e, t) => Object(we.d)(e, t.match.params.topicSlug), (e, t) => Object(we.e)(e, {
@@ -2543,7 +2543,7 @@
 							className: Oe.a.SidebarRight,
 							listingName: _
 						}, L)],
-						navBar: n.a.createElement(A, {
+						navBar: n.a.createElement(z, {
 							activeTab: f,
 							layout: b,
 							onTabClick: this.openTab,
@@ -2571,11 +2571,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(i.f)(e),
-					experimentName: r.ac
+					experimentName: r.Zb
 				}), o.a),
 				l = Object(c.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(i.f)(e),
-					experimentName: r.Zb
+					experimentName: r.Yb
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -2704,4 +2704,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.6d803c244bfb4aa0ecee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.0cd2cc77489cc57846ed.js.map

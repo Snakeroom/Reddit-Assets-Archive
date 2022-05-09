@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.15fa3c8bff765b33a20d.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.f3d7c663428f2322b151.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -79,7 +79,7 @@
 					correlation_id: i
 				};
 				return Object(g.a)(Object(O.a)(e, [E.a]), {
-					method: b.kb.POST,
+					method: b.jb.POST,
 					endpoint: `${e.apiUrl}/api/v2/gold/give_premium`,
 					data: c
 				}).then(e => e.ok ? {
@@ -88,21 +88,21 @@
 					...e,
 					error: Object(C.a)(e)
 				})
-			}, v = n("./src/reddit/helpers/correlationIdTracker.ts"), _ = n("./src/reddit/models/Toast/index.ts"), y = n("./src/reddit/selectors/premium.ts"), I = n("./src/reddit/actions/gold/constants.ts");
-			Object(x.a)(I.y), Object(x.a)(I.A), Object(x.a)(I.z), Object(x.a)(I.C);
-			const j = Object(x.a)(I.x),
-				w = Object(x.a)(I.w),
+			}, v = n("./src/reddit/helpers/correlationIdTracker.ts"), _ = n("./src/reddit/models/Toast/index.ts"), I = n("./src/reddit/selectors/premium.ts"), y = n("./src/reddit/actions/gold/constants.ts");
+			Object(x.a)(y.y), Object(x.a)(y.A), Object(x.a)(y.z), Object(x.a)(y.C);
+			const j = Object(x.a)(y.x),
+				w = Object(x.a)(y.w),
 				S = e => async (t, n) => {
 					await t(w(e));
-					const o = Object(y.a)(n());
+					const o = Object(I.a)(n());
 					if (o) {
 						const n = ((e, t) => {
 							switch (!0) {
-								case e && e.error && e.error.type && e.error.type === b.J.AUTHENTICATION_ERROR:
+								case e && e.error && e.error.type && e.error.type === b.I.AUTHENTICATION_ERROR:
 									return s.fbt._("There was an authentication error", null, {
 										hk: "12YR0w"
 									});
-								case e && e.error && e.error.type && e.error.type === b.J.INVALID_PREMIUM_AMOUNT:
+								case e && e.error && e.error.type && e.error.type === b.I.INVALID_PREMIUM_AMOUNT:
 									return s.fbt._("That Premium gift amount is invalid.", null, {
 										hk: "3XzSbH"
 									});
@@ -116,9 +116,9 @@
 							text: n
 						}))
 					}
-				}, N = Object(x.a)(I.B), T = e => async (t, n) => {
+				}, N = Object(x.a)(y.B), T = e => async (t, n) => {
 					const o = n(),
-						i = Object(y.d)(o);
+						i = Object(I.d)(o);
 					t(N(e));
 					const c = s.fbt._("Success! You’ve given Premium to {recipient username}!", [s.fbt._param("recipient username", `u/${i}`)], {
 						hk: "3cBrLk"
@@ -135,12 +135,12 @@
 				A = n("./src/reddit/controls/DropdownSelector/index.tsx"),
 				B = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				L = n("./src/reddit/controls/TextButton/index.tsx"),
-				J = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				U = n("./src/reddit/models/Gold/Premium/index.ts"),
-				F = n("./src/reddit/selectors/user.ts");
+				U = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				F = n("./src/reddit/models/Gold/Premium/index.ts"),
+				G = n("./src/reddit/selectors/user.ts");
 
-			function G() {
-				return (G = Object.assign || function(e) {
+			function K() {
+				return (K = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var s in n) Object.prototype.hasOwnProperty.call(n, s) && (e[s] = n[s])
@@ -148,14 +148,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const K = 10,
-				W = Object(a.c)({
-					coinBalance: F.e,
-					isEmployee: F.N,
-					isPending: y.b,
-					recipientName: y.d
+			const W = 10,
+				H = Object(a.c)({
+					coinBalance: G.e,
+					isEmployee: G.N,
+					isPending: I.b,
+					recipientName: I.d
 				}),
-				H = Object(c.b)(W, e => ({
+				V = Object(c.b)(H, e => ({
 					closeModal: () => e(Object(P.b)()),
 					onGivePremium: (t, n, s, o, i) => {
 						e(((e, t, n, s) => async (o, i, c) => {
@@ -176,14 +176,14 @@
 						})(t, n, s, o ? i : ""))
 					}
 				}));
-			class V extends i.a.PureComponent {
+			class X extends i.a.PureComponent {
 				constructor() {
 					super(...arguments), this.state = {
 						includeMessage: !1,
 						isAnonymous: !0,
 						message: "",
 						messageTypeEventSent: !1,
-						selectedPackage: U.a.PREMIUM_1_MONTH
+						selectedPackage: F.a.PREMIUM_1_MONTH
 					}, this.handleEscapeKey = e => {
 						const {
 							closeModal: t
@@ -261,8 +261,8 @@
 						coinBalance: e,
 						isEmployee: t
 					} = this.props;
-					return Object(U.d)(e, t).map(e => ({
-						displayText: Object(U.e)(e),
+					return Object(F.d)(e, t).map(e => ({
+						displayText: Object(F.e)(e),
 						value: e
 					}))
 				}
@@ -277,10 +277,10 @@
 						isAnonymous: a,
 						message: r,
 						selectedPackage: d
-					} = this.state, u = Object(U.e)(d), p = c ? [l.a.messageInputOpen] : "";
+					} = this.state, u = Object(F.e)(d), p = c ? [l.a.messageInputOpen] : "";
 					return i.a.createElement(D.e, {
 						className: e
-					}, i.a.createElement(D.i, null, i.a.createElement(J.a, null, i.a.createElement(D.q, null, s.fbt._("Give Premium", null, {
+					}, i.a.createElement(D.i, null, i.a.createElement(U.a, null, i.a.createElement(D.q, null, s.fbt._("Give Premium", null, {
 						hk: "4APAYj"
 					})), i.a.createElement(L.a, {
 						onClick: this.onClickClose
@@ -322,7 +322,7 @@
 						placeholder: s.fbt._("Type here...", null, {
 							hk: "1O7V4Q"
 						})
-					}))), i.a.createElement(D.g, null, i.a.createElement(J.a, {
+					}))), i.a.createElement(D.g, null, i.a.createElement(U.a, {
 						className: l.a.coinCountSection
 					}, i.a.createElement(M.a, {
 						className: l.a.coinCount,
@@ -340,14 +340,14 @@
 						onClick: this.onGivePremium
 					}, n ? i.a.createElement(B.a, {
 						className: l.a.loadingIcon,
-						sizePx: K
+						sizePx: W
 					}) : s.fbt._("Confirm", null, {
 						hk: "2nHzsu"
 					}))))))
 				}
 			}
-			const X = Object(d.a)(Object(u.c)(V));
-			t.default = H(e => i.a.createElement(X, G({}, e, {
+			const z = Object(d.a)(Object(u.c)(X));
+			t.default = V(e => i.a.createElement(z, K({}, e, {
 				withOverlay: !0,
 				onOverlayClick: e.closeModal
 			})))
@@ -582,23 +582,23 @@
 					for (const t of e) {
 						const e = t[0] || "";
 						switch (e) {
-							case s.J.NO_STRIPE_SUBSCRIPTION:
-							case s.J.USER_DOESNT_EXIST:
-							case s.J.USER_REQUIRED_ERROR:
-							case s.J.VALIDATION_ERROR:
+							case s.I.NO_STRIPE_SUBSCRIPTION:
+							case s.I.USER_DOESNT_EXIST:
+							case s.I.USER_REQUIRED_ERROR:
+							case s.I.VALIDATION_ERROR:
 								return e;
-							case s.J.NO_USER:
-							case s.J.NO_TEXT:
-							case s.J.NO_URL:
-								return s.J.VALIDATION_ERROR;
-							case s.J.CREDIT_CARD_FAILURE:
-							case s.J.CREDIT_CARD_FAILURE_GENERIC:
-								return s.J.CREDIT_CARD_FAILURE;
+							case s.I.NO_USER:
+							case s.I.NO_TEXT:
+							case s.I.NO_URL:
+								return s.I.VALIDATION_ERROR;
+							case s.I.CREDIT_CARD_FAILURE:
+							case s.I.CREDIT_CARD_FAILURE_GENERIC:
+								return s.I.CREDIT_CARD_FAILURE;
 							default:
-								if (e.startsWith("SUBMIT_VALIDATION")) return s.J.SUBMIT_VALIDATION_ERROR
+								if (e.startsWith("SUBMIT_VALIDATION")) return s.I.SUBMIT_VALIDATION_ERROR
 						}
 					}
-					return s.J.VALIDATION_ERROR
+					return s.I.VALIDATION_ERROR
 				},
 				i = e => {
 					const t = e.body;
@@ -721,4 +721,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.15fa3c8bff765b33a20d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.f3d7c663428f2322b151.js.map

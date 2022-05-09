@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.494258c40ba93f6d3b69.js
-// Retrieved at 5/5/2022, 9:50:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.f7fe51a828bdba3c4d2e.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./src/reddit/components/Econ/Prediction/TournamentTokenIcon/index.tsx": function(e, t, a) {
@@ -418,19 +418,19 @@
 					isQueried: A = !1
 				} = e;
 				const k = Object(f.a)(),
-					v = Object(m.a)(),
+					L = Object(m.a)(),
 					{
-						currentRank: L,
+						currentRank: v,
 						topPredictorsRank: P
 					} = a,
 					j = Object(r.e)(e => d ? Object(u.a)(e, d) : null),
 					g = Object(r.e)(e => Object(l.r)(e, {
-						pageLayer: v
+						pageLayer: L
 					}));
 				Object(c.useEffect)(() => {
 					k(d ? Object(i.g)(d, x, A) : Object(i.e)())
 				}, []);
-				const M = L && L.rank > 0;
+				const M = v && v.rank > 0;
 				return n.a.createElement("div", {
 					className: h.a.container
 				}, n.a.createElement("div", {
@@ -449,18 +449,18 @@
 				}, j ? j.name : null == g ? void 0 : g.displayText)), n.a.createElement("div", {
 					className: h.a.listContainer
 				}, n.a.createElement(p.a, {
-					currentRank: L,
+					currentRank: v,
 					topPredictorsRank: P,
 					tokenIcon: b
 				}), M && n.a.createElement("div", {
 					className: h.a.spacer
-				}, " ")), L && L.redditorInfo && M && n.a.createElement(E.a, {
+				}, " ")), v && v.redditorInfo && M && n.a.createElement(E.a, {
 					className: h.a.currentRank,
 					isCurrentUser: !0,
-					rank: L.rank,
-					redditor: L.redditor,
-					redditorInfo: L.redditorInfo,
-					score: L.score,
+					rank: v.rank,
+					redditor: v.redditor,
+					redditorInfo: v.redditorInfo,
+					score: v.score,
 					tokenIcon: b
 				}))
 			}), k = e => n.a.createElement(A, x({
@@ -518,7 +518,7 @@
 						name: A,
 						profile: k
 					} = f || {},
-					v = null != A ? A : E.displayName;
+					L = null != A ? A : E.displayName;
 				return n.a.createElement("div", {
 					className: Object(r.a)(u.a.predictor, t)
 				}, n.a.createElement("div", {
@@ -528,15 +528,15 @@
 					onClick: () => x(Object(i.g)({
 						targetUserId: E.id
 					})),
-					to: `/user/${v}`,
-					disabled: E.displayName === d.G || E.displayName === d.Mb
+					to: `/user/${L}`,
+					disabled: E.displayName === d.F || E.displayName === d.Lb
 				}, n.a.createElement("div", {
 					className: u.a.leaderboardIcon
 				}, n.a.createElement(s.a, {
 					className: Object(r.a)(u.a.userIcon, u.a.avatar),
 					iconUrl: null == _ ? void 0 : _.url,
 					isNSFW: !!(null == k ? void 0 : k.isNsfw),
-					userName: null != v ? v : ""
+					userName: null != L ? L : ""
 				}), n.a.createElement(l.a, {
 					className: u.a.rankBadge,
 					rank: c
@@ -544,7 +544,7 @@
 					className: u.a.name
 				}, n.a.createElement("div", {
 					className: u.a.userName
-				}, v), a && n.a.createElement("div", {
+				}, L), a && n.a.createElement("div", {
 					className: u.a.yourProfile
 				}, p._("Yep, thats you.", null, {
 					hk: "3DqdE1"
@@ -654,8 +654,8 @@
 				var x;
 				const A = Object(p.a)(),
 					k = Object(i.fb)(),
-					v = "true" === (null == k ? void 0 : k.queryParams["top-predictors"]),
-					[L, P, j] = Object(u.a)(v),
+					L = "true" === (null == k ? void 0 : k.queryParams["top-predictors"]),
+					[v, P, j] = Object(u.a)(L),
 					{
 						leaderboard: g,
 						error: M
@@ -695,7 +695,7 @@
 					}
 				}, c.fbt._("See All", null, {
 					hk: "1Ozf02"
-				}))), L && r.a.createElement(h.a, {
+				}))), v && r.a.createElement(h.a, {
 					className: _.a.modal,
 					leaderboard: g,
 					tournamentId: n,
@@ -868,4 +868,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.494258c40ba93f6d3b69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PredictionLeaderboard-Sidebar.f7fe51a828bdba3c4d2e.js.map

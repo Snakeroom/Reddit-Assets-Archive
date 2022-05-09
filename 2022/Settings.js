@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.6aba8dd14b23288d8459.js
-// Retrieved at 5/5/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.69f6939b99caae99dc9d.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -1357,7 +1357,7 @@
 						apiContext: o
 					} = a;
 					const d = Object(h.a)(s()),
-						m = (null == d ? void 0 : d.pennies) || i.zb,
+						m = (null == d ? void 0 : d.pennies) || i.yb,
 						u = Object(b.c)(b.a.GoldPayment);
 					n(Object(c.stripeTokenPending)());
 					const f = await n(Object(c.validateAndCreateStripeToken)(e, t));
@@ -1568,7 +1568,7 @@
 					e(E());
 					const l = await (e => Object(_.a)(e, {
 						endpoint: Object(y.a)(`${v.a.gatewayUrl}/redditmobile/1/push/preferences`),
-						method: a.kb.GET
+						method: a.jb.GET
 					}))(s());
 					if (l.ok) {
 						const t = (e => ({
@@ -1625,11 +1625,11 @@
 					if (!Object(C.Q)(e)) return Object(B.a)(t, e)
 				}
 				const {
-					page: v = a.ec.Account
+					page: v = a.dc.Account
 				} = e.params;
-				if (v === a.ec.Gold) return void t(Object(r.c)("/settings/premium"));
+				if (v === a.dc.Gold) return void t(Object(r.c)("/settings/premium"));
 				const _ = [];
-				v === a.ec.Profile && (_.push(t(Object(N.a)())), _.push(t(Object(I.g)()))), v === a.ec.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === a.ec.Notifications && _.push(t(w())), v !== a.ec.Privacy && v !== a.ec.Messaging || _.push(t(Object(c.b)())), v === a.ec.Premium && (_.push(t(Object(N.a)())), _.push(t(Object(h.o)(!0)))), await Promise.all(_); {
+				v === a.dc.Profile && (_.push(t(Object(N.a)())), _.push(t(Object(I.g)()))), v === a.dc.Account && (_.push(t(Object(b.o)())), _.push(t(Object(d.b)()))), v === a.dc.Notifications && _.push(t(w())), v !== a.dc.Privacy && v !== a.dc.Messaging || _.push(t(Object(c.b)())), v === a.dc.Premium && (_.push(t(Object(N.a)())), _.push(t(Object(h.o)(!0)))), await Promise.all(_); {
 					const e = n(),
 						a = e.platform.currentPage,
 						{
@@ -1703,7 +1703,7 @@
 				g = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const v = (e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
 				endpoint: Object(f.a)(Object(g.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
-				method: u.kb.GET,
+				method: u.jb.GET,
 				data: n
 			});
 			var _ = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -1994,7 +1994,7 @@
 					t.username = Object(_.a)(t.username), r(Object(i.h)(n));
 					const y = await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
-						method: u.kb.POST,
+						method: u.jb.POST,
 						data: {
 							api_type: "json",
 							ban_reason: n.reason,
@@ -2037,7 +2037,7 @@
 					const l = r().subreddits.models[e].url,
 						c = await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
-							method: u.kb.POST,
+							method: u.jb.POST,
 							data: {
 								api_type: "json",
 								id: n,
@@ -3816,13 +3816,13 @@
 				l = n("./src/reddit/controls/Dropdown/index.m.less"),
 				c = n.n(l);
 			const d = {
-				[o.X.BEST]: "best",
-				[o.X.HOT]: "hot",
-				[o.X.NEW]: "new",
-				[o.X.CONTROVERSIAL]: "controversial",
-				[o.X.TOP]: "top",
-				[o.X.RISING]: "rising",
-				[o.X.AWARDED]: "award"
+				[o.W.BEST]: "best",
+				[o.W.HOT]: "hot",
+				[o.W.NEW]: "new",
+				[o.W.CONTROVERSIAL]: "controversial",
+				[o.W.TOP]: "top",
+				[o.W.RISING]: "rising",
+				[o.W.AWARDED]: "award"
 			};
 
 			function m(e) {
@@ -7831,7 +7831,7 @@
 						}, () => this.forceUnsticky = !1)) : E() >= k && this.setState({
 							sticky: !0
 						})
-					}, c.L), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
+					}, c.K), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
 						sticky: !1
 					}
 				}
@@ -7955,25 +7955,25 @@
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./src/lib/constants/index.ts");
 			const a = {
-					[r.X.BEST]: () => s.fbt._("Best", null, {
+					[r.W.BEST]: () => s.fbt._("Best", null, {
 						hk: "dpKzI"
 					}),
-					[r.X.HOT]: () => s.fbt._("Hot", null, {
+					[r.W.HOT]: () => s.fbt._("Hot", null, {
 						hk: "Et75P"
 					}),
-					[r.X.NEW]: () => s.fbt._("New", null, {
+					[r.W.NEW]: () => s.fbt._("New", null, {
 						hk: "CDmNl"
 					}),
-					[r.X.CONTROVERSIAL]: () => s.fbt._("Controversial", null, {
+					[r.W.CONTROVERSIAL]: () => s.fbt._("Controversial", null, {
 						hk: "4dqPOJ"
 					}),
-					[r.X.RISING]: () => s.fbt._("Rising", null, {
+					[r.W.RISING]: () => s.fbt._("Rising", null, {
 						hk: "4gCzg6"
 					}),
-					[r.X.TOP]: () => s.fbt._("Top", null, {
+					[r.W.TOP]: () => s.fbt._("Top", null, {
 						hk: "40Uy9p"
 					}),
-					[r.X.AWARDED]: () => s.fbt._("Awarded", null, {
+					[r.W.AWARDED]: () => s.fbt._("Awarded", null, {
 						hk: "1B7nSa"
 					})
 				},
@@ -7982,22 +7982,22 @@
 					return t && t() || ""
 				},
 				i = {
-					[r.jc.HOUR]: () => s.fbt._("Now", null, {
+					[r.ic.HOUR]: () => s.fbt._("Now", null, {
 						hk: "ZmhY"
 					}),
-					[r.jc.DAY]: () => s.fbt._("Today", null, {
+					[r.ic.DAY]: () => s.fbt._("Today", null, {
 						hk: "40Ugu1"
 					}),
-					[r.jc.WEEK]: () => s.fbt._("This Week", null, {
+					[r.ic.WEEK]: () => s.fbt._("This Week", null, {
 						hk: "14tmoK"
 					}),
-					[r.jc.MONTH]: () => s.fbt._("This Month", null, {
+					[r.ic.MONTH]: () => s.fbt._("This Month", null, {
 						hk: "34dbM3"
 					}),
-					[r.jc.YEAR]: () => s.fbt._("This Year", null, {
+					[r.ic.YEAR]: () => s.fbt._("This Year", null, {
 						hk: "14RJsa"
 					}),
-					[r.jc.ALL]: () => s.fbt._("All Time", null, {
+					[r.ic.ALL]: () => s.fbt._("All Time", null, {
 						hk: "3qt6Ct"
 					})
 				},
@@ -8779,7 +8779,7 @@
 					m = `${n.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					u = Object(i.a)(m);
 				return Object(r.a)(Object(a.a)(n, [o.a]), {
-					method: s.kb.POST,
+					method: s.jb.POST,
 					endpoint: u,
 					data: d
 				}).then(l.a)
@@ -8796,7 +8796,7 @@
 					correlation_id: c
 				};
 				return Object(r.a)(Object(a.a)(t, [o.a]), {
-					method: s.kb.POST,
+					method: s.jb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: d
 				}).then(l.a)
@@ -8815,7 +8815,7 @@
 					thing_id: c
 				};
 				return Object(r.a)(Object(a.a)(t, [o.a]), {
-					method: s.kb.POST,
+					method: s.jb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: m
 				}).then(l.a)
@@ -8836,7 +8836,7 @@
 					correlation_id: m
 				};
 				return Object(r.a)(Object(a.a)(t, [o.a]), {
-					method: s.kb.POST,
+					method: s.jb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: u
 				}).then(l.a)
@@ -8865,7 +8865,7 @@
 					thing_id: h
 				};
 				return Object(r.a)(Object(a.a)(n, [o.a]), {
-					method: s.kb.POST,
+					method: s.jb.POST,
 					endpoint: `${n.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: f
 				}).then(l.a)
@@ -8888,7 +8888,7 @@
 					thing_id: u
 				};
 				return Object(r.a)(Object(a.a)(n, [o.a]), {
-					method: s.kb.POST,
+					method: s.jb.POST,
 					endpoint: `${n.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: p
 				}).then(l.a)
@@ -9044,7 +9044,7 @@
 			function o(e, t) {
 				return Object(a.a)(e, {
 					endpoint: `${s.a.metaUrl}/communities/${t.subredditId}/me`,
-					method: r.kb.GET
+					method: r.jb.GET
 				})
 			}
 		},
@@ -10996,7 +10996,7 @@
 					sendHoverCardEvent: () => {},
 					iconSize: 24
 				}), a.a.createElement(Gt, null, a.a.createElement(Ut.d, {
-					seconds: e.date / u.Tb
+					seconds: e.date / u.Sb
 				})), a.a.createElement(qt, null, a.a.createElement(zt, {
 					disabled: !!e.disabled,
 					onClick: e.onClick
@@ -11343,7 +11343,7 @@
 			}(Tn || (Tn = {}));
 			const Hn = (e, t, n, s) => Object(Un.a)(Object(Ln.a)(e, [Rn.a]), {
 					endpoint: Object(Dn.a)(`${e.apiUrl}/api/dsp_submit`),
-					method: u.kb.POST,
+					method: u.jb.POST,
 					data: {
 						first_name: t,
 						last_name: n,
@@ -11355,11 +11355,11 @@
 				}),
 				Gn = e => Object(Un.a)(Object(Ln.a)(e, [Rn.a]), {
 					endpoint: Object(Dn.a)(`${e.apiUrl}/api/dsp_status`),
-					method: u.kb.GET
+					method: u.jb.GET
 				}),
 				Wn = e => Object(Un.a)(Object(Ln.a)(e, [Rn.a]), {
 					endpoint: Object(Dn.a)(`${e.apiUrl}/api/dsp_details`),
-					method: u.kb.GET
+					method: u.jb.GET
 				});
 			var zn = n("./src/reddit/selectors/telemetry.ts");
 			const qn = () => e => {
@@ -11646,7 +11646,7 @@
 				ss = n("./src/reddit/components/ListingSort/ListingSortIcon.tsx"),
 				rs = n("./src/reddit/components/Settings/shared/Dropdown/index.tsx"),
 				as = n("./src/reddit/constants/listingSorts.ts");
-			const os = [u.X.HOT, u.X.NEW, u.X.TOP, u.X.RISING];
+			const os = [u.W.HOT, u.W.NEW, u.W.TOP, u.W.RISING];
 			var is = e => {
 				const {
 					dropdownId: t
@@ -11664,7 +11664,7 @@
 					selectedKey: e.sort
 				})
 			};
-			const ls = [u.jc.HOUR, u.jc.DAY, u.jc.WEEK, u.jc.MONTH, u.jc.YEAR, u.jc.ALL];
+			const ls = [u.ic.HOUR, u.ic.DAY, u.ic.WEEK, u.ic.MONTH, u.ic.YEAR, u.ic.ALL];
 			var cs = e => {
 					const {
 						dropdownId: t
@@ -12119,22 +12119,22 @@
 				tr = n.n(er);
 			const nr = Se.a.span("CollapseSensitivity", tr.a),
 				sr = () => [{
-					key: u.m.OFF,
+					key: u.l.OFF,
 					displayText: s.fbt._("OFF", null, {
 						hk: "1FXR7S"
 					})
 				}, {
-					key: u.m.LOW,
+					key: u.l.LOW,
 					displayText: s.fbt._("LOW", null, {
 						hk: "4ykiNL"
 					})
 				}, {
-					key: u.m.MEDIUM,
+					key: u.l.MEDIUM,
 					displayText: s.fbt._("MEDIUM", null, {
 						hk: "11N0Ou"
 					})
 				}, {
-					key: u.m.HIGH,
+					key: u.l.HIGH,
 					displayText: s.fbt._("HIGH", null, {
 						hk: "2ryi6r"
 					})
@@ -13312,65 +13312,65 @@
 				lo = n("./src/reddit/pages/Settings/index.m.less"),
 				co = n.n(lo);
 			const mo = (e, t, n, r) => [{
-					key: u.ec.Account,
+					key: u.dc.Account,
 					title: s.fbt._("Account", null, {
 						hk: "kL0Ow"
 					})
 				}, {
-					key: u.ec.Profile,
+					key: u.dc.Profile,
 					title: s.fbt._("Profile", null, {
 						hk: "4AiObW"
 					})
 				}, {
-					key: u.ec.Privacy,
+					key: u.dc.Privacy,
 					title: s.fbt._("Safety & Privacy", null, {
 						hk: "4hchEz"
 					})
 				}, {
-					key: u.ec.Feed,
+					key: u.dc.Feed,
 					title: s.fbt._("Feed Settings", null, {
 						hk: "4Giq2p"
 					})
 				}, {
-					key: u.ec.Notifications,
+					key: u.dc.Notifications,
 					title: s.fbt._("Notifications", null, {
 						hk: "fklVW"
 					})
 				}, {
-					key: u.ec.Premium,
+					key: u.dc.Premium,
 					title: s.fbt._("Subscriptions", null, {
 						hk: "48xste"
 					})
 				}, {
 					className: co.a.CreatorTab,
-					key: u.ec.Creator,
+					key: u.dc.Creator,
 					title: s.fbt._("Reddit Creator", null, {
 						hk: "45BriY"
 					}),
 					disabled: !e
 				}, {
 					className: co.a.PaymentsTab,
-					key: u.ec.Payments,
+					key: u.dc.Payments,
 					title: s.fbt._("Payments", null, {
 						hk: "31LCer"
 					}),
 					disabled: !n.length
 				}, {
 					className: co.a.SpecialMembershipTab,
-					key: u.ec.SpecialMembership,
+					key: u.dc.SpecialMembership,
 					title: s.fbt._("Special Memberships", null, {
 						hk: "3ZoNj3"
 					}),
 					disabled: !t
 				}, {
 					className: co.a.MessagingTab,
-					key: u.ec.Messaging,
+					key: u.dc.Messaging,
 					title: s.fbt._("Chat & Messaging", null, {
 						hk: "3uLoYZ"
 					})
 				}, {
 					className: co.a.MessagingTab,
-					key: u.ec.Dsp,
+					key: u.dc.Dsp,
 					title: s.fbt._("DSP", null, {
 						hk: "zmi11"
 					}),
@@ -13391,9 +13391,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(re.c)(e, {
-							experimentName: se.Jc,
+							experimentName: se.Ic,
 							experimentEligibilitySelector: re.a
-						}) === se.sd
+						}) === se.rd
 					}
 				}),
 				po = Object(ge.u)(),
@@ -13485,7 +13485,7 @@
 						}))
 					}, this.getSource = () => {
 						const e = this.props.match.params.page;
-						return e && e !== u.ec.Account ? `settings_${e}` : "settings"
+						return e && e !== u.dc.Account ? `settings_${e}` : "settings"
 					}, this.getTrackingValue = function(e, n) {
 						let s = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
 						const r = s ? t.props.prefs[e] : n;
@@ -13503,32 +13503,32 @@
 							update: this.update
 						};
 						switch (e) {
-							case u.ec.Account:
+							case u.dc.Account:
 								return a.a.createElement(wt, i);
-							case u.ec.Profile:
+							case u.dc.Profile:
 								return a.a.createElement(ea, i);
-							case u.ec.Premium:
+							case u.dc.Premium:
 								return a.a.createElement(Xs.b, i);
-							case u.ec.Notifications:
+							case u.dc.Notifications:
 								return a.a.createElement(Fs, i);
-							case u.ec.Privacy:
+							case u.dc.Privacy:
 								return a.a.createElement(vr, i);
-							case u.ec.Messaging:
+							case u.dc.Messaging:
 								return a.a.createElement(pn, i);
-							case u.ec.Feed:
+							case u.dc.Feed:
 								return a.a.createElement(ws, i);
-							case u.ec.Payments:
+							case u.dc.Payments:
 								return a.a.createElement(Zs, null);
-							case u.ec.Creator: {
+							case u.dc.Creator: {
 								const e = Object(p.a)(s.search);
 								return r ? a.a.createElement(Mn, {
 									stripeConnectCode: e.get("code"),
 									stripeConnectStateToken: e.get("state")
 								}) : null
 							}
-							case u.ec.SpecialMembership:
+							case u.dc.SpecialMembership:
 								return o ? a.a.createElement(no, null) : null;
-							case u.ec.Dsp:
+							case u.dc.Dsp:
 								return this.state.dspAvailable ? a.a.createElement(ts, null) : null;
 							default:
 								return a.a.createElement(wt, i)
@@ -13537,12 +13537,12 @@
 						e.preventDefault()
 					}, this.onPremiumTabClick = () => {
 						this.props.sendEvent(Object(ao.f)())
-					}, this.getTabClickHandler = e => this.props.isResponsiveSettingsEnabled ? this.preventTabClickEvent : e === u.ec.Premium ? this.onPremiumTabClick : void 0, this.isScrolling = !1, this.resetScrolling = () => {
+					}, this.getTabClickHandler = e => this.props.isResponsiveSettingsEnabled ? this.preventTabClickEvent : e === u.dc.Premium ? this.onPremiumTabClick : void 0, this.isScrolling = !1, this.resetScrolling = () => {
 						this.isScrolling = !1
 					}, this.startScrolling = () => {
 						this.isScrolling = !0
 					}, this.tabTouchEndHandlerCache = {}, this.getTabTouchEndHandler = e => (this.tabTouchEndHandlerCache[e] || (this.tabTouchEndHandlerCache[e] = () => {
-						this.isScrolling || (e === u.ec.Premium && this.onPremiumTabClick(), this.props.changeTab(e))
+						this.isScrolling || (e === u.dc.Premium && this.onPremiumTabClick(), this.props.changeTab(e))
 					}), this.tabTouchEndHandlerCache[e]), this.tabRefCache = {}, this.getTabRef = e => (this.tabRefCache[e] || (this.tabRefCache[e] = a.a.createRef()), this.tabRefCache[e]), this.renderTab = (e, t) => {
 						const {
 							match: {
@@ -13574,7 +13574,7 @@
 						const {
 							match: {
 								params: {
-									page: e = u.ec.Account
+									page: e = u.dc.Account
 								}
 							}
 						} = this.props, t = this.tabRefCache[e];
@@ -13924,7 +13924,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
 				experimentEligibilitySelector: () => Object(a.P)(e)
-			}) === s.sd
+			}) === s.rd
 		},
 		"./src/reddit/selectors/experiments/econ/avatarNfts.ts": function(e, t, n) {
 			"use strict";
@@ -13941,8 +13941,8 @@
 				}) === s.y.Enabled,
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Uc
-				}) === s.sd
+					experimentName: s.Tc
+				}) === s.rd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14112,4 +14112,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.6aba8dd14b23288d8459.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.69f6939b99caae99dc9d.js.map

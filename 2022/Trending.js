@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.69f91ed6754292f2a81f.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.2e6c3dc3046c34355a18.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, s) {
@@ -27,7 +27,7 @@
 				};
 				return Object(o.a)(Object(c.a)(e, [l.a]), {
 					endpoint: `${e.apiUrl}/api/trending_searches_v1.json`,
-					method: a.kb.GET,
+					method: a.jb.GET,
 					data: s
 				})
 			};
@@ -154,20 +154,20 @@
 					showSubredditMeta: P = !0,
 					showSubredditName: w,
 					subredditOrProfile: T
-				} = e, k = h && h.preview && h.preview.url || void 0, N = h && h.isSponsored ? "promoted_trend" : "trending", E = h && Object(l.a)(h.permalink) || "", I = C && E || g && Object(d.a)("/search", {
+				} = e, N = h && h.preview && h.preview.url || void 0, k = h && h.isSponsored ? "promoted_trend" : "trending", E = h && Object(l.a)(h.permalink) || "", I = C && E || g && Object(d.a)("/search", {
 					q: g.rawQuery,
-					source: N
+					source: k
 				}) || E, D = g ? g.subredditInfo && g.subredditInfo.icon : T && T.icon.url, V = g ? g.subredditInfo && g.subredditInfo.displayText : T && (T.displayText || T.name), U = h ? h.flair.filter(v) : [], A = h ? h.score : 0, F = h ? h.numComments : 0, R = h && h.isSponsored, W = Object(O.a)(e).body, L = `linear-gradient(\n      ${Object(n.f)(W,.2)},\n      ${Object(n.f)(W,.3)},\n      ${Object(n.f)(W,.4)},\n      ${Object(n.f)(W,.6)},\n      ${Object(n.f)(W,.8)},\n      ${W}\n    )`, M = a.a.createElement("div", {
 					id: i,
 					className: Object(o.a)(S.a.trendingPost, {
-						[S.a["m-background"]]: !!k
+						[S.a["m-background"]]: !!N
 					})
 				}, a.a.createElement(x.a, {
 					to: I
 				}, a.a.createElement("div", {
 					className: Object(o.a)(S.a.backgroundWrapper, j.a.backgroundWrapper, t),
 					style: {
-						background: Object(f.g)(Object(O.a)(e).body, k || Object(O.a)(e).banner.backgroundImage, "cover"),
+						background: Object(f.g)(Object(O.a)(e).body, N || Object(O.a)(e).banner.backgroundImage, "cover"),
 						"--SearchDiscoveryUnits-TrendingPosts-Post-background": L
 					}
 				}, R && a.a.createElement("div", {
@@ -230,7 +230,7 @@
 		"./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/index.tsx": function(e, t, s) {
 			"use strict";
 			s.r(t), s.d(t, "TRENDING_POSTS_CONTAINER", (function() {
-				return k
+				return N
 			}));
 			var r = s("./node_modules/react/index.js"),
 				n = s.n(r),
@@ -300,7 +300,7 @@
 				v = s("./src/reddit/components/SearchDiscoveryUnits/TrendingPostsDiscoveryUnit/Placeholder/index.tsx");
 			const {
 				fbt: T
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), k = "TrendingPostsContainer", N = Object(i.b)(() => Object(a.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), N = "TrendingPostsContainer", k = Object(i.b)(() => Object(a.c)({
 				trendingItems: e => Object(w.a)(e, j.d.tile)
 			}), e => ({
 				fetchTrendingItems: () => e(Object(d.b)(j.d.tile)),
@@ -349,7 +349,7 @@
 					const {
 						maxItemsCount: e,
 						trendingItems: t
-					} = this.props, s = new Array(e).fill(!1), r = document.getElementById(k), n = r ? r.getBoundingClientRect().bottom : 0;
+					} = this.props, s = new Array(e).fill(!1), r = document.getElementById(N), n = r ? r.getBoundingClientRect().bottom : 0;
 					return t.forEach((e, t) => {
 						const r = e.id ? document.getElementById(`${C}-${e.id}`) : void 0;
 						s[t] = !!r && r.getBoundingClientRect().bottom <= n
@@ -382,7 +382,7 @@
 					});
 					const o = s ? i.slice(0, s) : i;
 					return n.a.createElement(S.a, {
-						id: k,
+						id: N,
 						className: e,
 						header: d,
 						showCardView: r
@@ -395,7 +395,7 @@
 					return n.a.createElement(o.b, null, this.scrollChildForItem())
 				}
 			}
-			t.default = Object(P.b)(N(I))
+			t.default = Object(P.b)(k(I))
 		},
 		"./src/reddit/connectors/miniCardPost.ts": function(e, t, s) {
 			"use strict";
@@ -470,4 +470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.69f91ed6754292f2a81f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.2e6c3dc3046c34355a18.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.e0ca7ac5e7c9d24a9bad.js
-// Retrieved at 5/5/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.78f933f5b1d78ed6c7b2.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -865,8 +865,8 @@
 					pending: E,
 					success: y
 				}),
-				I = n("./src/reddit/actions/platform.ts");
-			var j = function() {
+				j = n("./src/reddit/actions/platform.ts");
+			var I = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -874,7 +874,7 @@
 						return t.payload;
 					case a.c:
 						return !t.payload && e;
-					case I.b:
+					case j.b:
 						return !1;
 					case C.f:
 						return !!t.payload && e;
@@ -890,7 +890,7 @@
 						return t.payload;
 					case a.c:
 						return t.payload ? null : e;
-					case I.b:
+					case j.b:
 						return null;
 					default:
 						return e
@@ -910,7 +910,7 @@
 			};
 			var N = Object(g.c)({
 				api: k,
-				openedFromModalPage: j,
+				openedFromModalPage: I,
 				postOrCommentId: T,
 				userIsMod: F,
 				rulesCategory: function() {
@@ -1031,7 +1031,7 @@
 					if (!t().user) return;
 					const o = await (e => Object(a.a)(Object(i.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/api/sitewide_rules.json`,
-						method: r.kb.GET
+						method: r.jb.GET
 					}))(s());
 					if (o.ok) {
 						const t = o.body,
@@ -1045,7 +1045,7 @@
 					if (!t().user) return;
 					const o = await (e => Object(a.a)(Object(i.a)(e, [l.a]), {
 						endpoint: `${e.apiUrl}/api/livestream_rules.json`,
-						method: r.kb.GET
+						method: r.jb.GET
 					}))(s());
 					if (o.ok) {
 						const t = o.body,
@@ -1513,8 +1513,8 @@
 				S = c.a.div("Description", O.a),
 				y = c.a.wrapped(x.o, "CloseButton", O.a),
 				k = c.a.div("RadioOptionsSectionHeader", O.a),
-				I = c.a.wrapped(R.b, "DropdownRow", O.a),
-				j = c.a.div("PickerWrapper", O.a),
+				j = c.a.wrapped(R.b, "DropdownRow", O.a),
+				I = c.a.div("PickerWrapper", O.a),
 				T = c.a.div("SelectARuleLabel", O.a),
 				F = e => {
 					let {
@@ -1663,7 +1663,7 @@
 						reason: o,
 						rulesSequence: a
 					} = t, i = o.nextStepReasons, l = a.length > e ? a[e] : -1, d = i && l >= 0 ? i[l] : null;
-					return r.a.createElement(j, {
+					return r.a.createElement(I, {
 						onClick: n
 					}, r.a.createElement(P, {
 						displayText: d ? d.reasonTextToShow : "",
@@ -1676,7 +1676,7 @@
 						isFixed: !0,
 						isOpen: t.dropdownIsOpen,
 						tooltipId: pe
-					}, i ? i.map((n, s) => r.a.createElement(I, {
+					}, i ? i.map((n, s) => r.a.createElement(j, {
 						key: n.reasonTextToShow,
 						displayText: n.reasonTextToShow,
 						isSelected: l === s,
@@ -1752,7 +1752,7 @@
 			const ge = "ReportFlow--SubredditRules",
 				Ce = "Custom response",
 				Oe = c.a.wrapped(L, "Dropdown", Re.a),
-				we = c.a.wrapped(I, "DropdownRow", Re.a),
+				we = c.a.wrapped(j, "DropdownRow", Re.a),
 				ve = c.a.wrapped(fe.i, "FreeFormTextArea", Re.a),
 				Ee = Object(i.c)({
 					dropdownIsOpen: Object(ue.b)(ge),
@@ -1780,7 +1780,7 @@
 						props: e,
 						state: t
 					} = this, n = e.chosenRule && e.chosenRule.reasonText && e.subredditRules.includes(e.chosenRule.reasonText) ? e.chosenRule.reasonText : t.dropdownRule ? t.dropdownRule : "";
-					return r.a.createElement("div", null, r.a.createElement(j, {
+					return r.a.createElement("div", null, r.a.createElement(I, {
 						onClick: e.onOpenDropdown
 					}, r.a.createElement(P, {
 						displayText: n,
@@ -1825,9 +1825,9 @@
 					}))
 				}))(Se),
 				ke = n("./src/reddit/models/RulesSequence/index.ts"),
-				Ie = n("./src/reddit/models/Subreddit/index.ts"),
-				je = n("./src/reddit/components/ReportFlow/FirstPage/index.m.less"),
-				Te = n.n(je);
+				je = n("./src/reddit/models/Subreddit/index.ts"),
+				Ie = n("./src/reddit/components/ReportFlow/FirstPage/index.m.less"),
+				Te = n.n(Ie);
 			const Fe = c.a.wrapped(x.l, "SubmitButton", Te.a);
 			class Ne extends r.a.Component {
 				constructor(e) {
@@ -1848,7 +1848,7 @@
 					} = this, o = n.rulesSequence.getSequence(), a = t.subredditOrProfile ? t.subredditOrProfile.name : "";
 					return r.a.createElement(ae.a, {
 						key: "subreddit_rules_section_key",
-						title: t.subredditOrProfile && t.subredditOrProfile.type === Ie.f.User ? s.fbt._("It breaks u/{subredditName}'s rules", [s.fbt._param("subredditName", a)], {
+						title: t.subredditOrProfile && t.subredditOrProfile.type === je.f.User ? s.fbt._("It breaks u/{subredditName}'s rules", [s.fbt._param("subredditName", a)], {
 							hk: "QcQnb"
 						}) : s.fbt._("It breaks r/{subredditName}'s rules", [s.fbt._param("subredditName", a)], {
 							hk: "1Qdm9t"
@@ -2182,8 +2182,8 @@
 				S = n("./src/reddit/endpoints/post/report.ts"),
 				y = n("./src/redditGQL/operations/ReportForm.json");
 			var k = n("./src/reddit/endpoints/talk/index.ts"),
-				I = n("./src/reddit/contexts/ApiContext.tsx"),
-				j = n("./src/reddit/models/Post/index.ts"),
+				j = n("./src/reddit/contexts/ApiContext.tsx"),
+				I = n("./src/reddit/models/Post/index.ts"),
 				T = n("./src/reddit/models/Toast/index.ts"),
 				F = n("./src/reddit/models/WhitelistAndBlocked.ts"),
 				N = n("./src/reddit/selectors/commentSelector.ts"),
@@ -2223,7 +2223,7 @@
 							postId: n
 						} = t;
 						const s = n && e.posts.models[n];
-						return !!s && Object(j.p)(s)
+						return !!s && Object(I.p)(s)
 					},
 					blockUserPending: e => e.user.blocked.api,
 					blockedUser: (e, t) => e.user.blocked.data.find(n => {
@@ -2485,7 +2485,7 @@
 					}))
 				}
 			}
-			t.default = Object(I.b)(z(Object(h.c)(Y)))
+			t.default = Object(j.b)(z(Object(h.c)(Y)))
 		},
 		"./src/reddit/components/ReportFlow/_ReportFlowNewModal.tsx": function(e, t, n) {
 			"use strict";
@@ -3221,7 +3221,7 @@
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
-				method: o.kb.POST
+				method: o.jb.POST
 			}), c = async (e, t, n) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: n,
@@ -3229,22 +3229,22 @@
 					type: "enemy"
 				},
 				endpoint: `${e.apiUrl}/api/unfriend`,
-				method: o.kb.POST
+				method: o.jb.POST
 			}), u = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/add_whitelisted?include_model`,
-				method: o.kb.POST
+				method: o.jb.POST
 			}), p = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/remove_whitelisted`,
-				method: o.kb.POST
+				method: o.jb.POST
 			}), m = async (e, t) => Object(r.a)(Object(a.a)(e, [i.a]), {
 				endpoint: Object(l.a)(`${s.a.oauthUrl}/user/${t}/about`),
-				method: o.kb.GET,
+				method: o.jb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -3258,7 +3258,7 @@
 				a = n("./src/reddit/constants/headers.ts");
 			t.a = async e => Object(o.a)(Object(r.a)(e, [a.a]), {
 				endpoint: `${e.apiUrl}/subreddit_permissions`,
-				method: s.kb.GET,
+				method: s.jb.GET,
 				traceRequestName: "get_subreddit_permissions"
 			})
 		},
@@ -3290,7 +3290,7 @@
 				e.Rule = "rule", e.SiteRule = "siteRule", e.Other = "other", e.FileComplaint = "fileComplaint", e.CrisisTextLine = "crisisTextLine"
 			}(p || (p = {}));
 			const m = (e, t) => Object(o.a)(Object(a.a)(e, [i.a]), {
-					method: s.kb.POST,
+					method: s.jb.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
 					data: h(t)
 				}),
@@ -3323,7 +3323,7 @@
 					}
 				},
 				b = (e, t, n) => Object(o.a)(Object(a.a)(e, [i.a]), {
-					method: s.kb.POST,
+					method: s.jb.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
 					data: f(t, n)
 				}),
@@ -4024,30 +4024,30 @@
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				o = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const r = Object(o.a)(s.fd),
-				a = Object(o.a)(s.dd),
-				i = Object(o.a)(s.gd),
-				l = Object(o.a)(s.cd),
-				d = Object(o.a)(s.bd),
-				c = Object(o.a)(s.jd),
-				u = Object(o.a)(s.hd),
-				p = Object(o.a)(s.id),
-				m = Object(o.a)(s.Yc),
-				h = Object(o.a)(s.Wc),
-				b = Object(o.a)(s.Pc),
-				f = Object(o.a)(s.Nc),
-				x = Object(o.a)(s.Oc),
-				_ = Object(o.a)(s.Rc),
-				R = Object(o.a)(s.Mc),
-				g = Object(o.a)(s.Zc),
-				C = Object(o.a)(s.ad),
-				O = Object(o.a)(s.ed),
-				w = Object(o.a)(s.kd),
-				v = Object(o.a)(s.qd),
-				E = Object(o.a)(s.pd),
-				S = Object(o.a)(s.md),
-				y = Object(o.a)(s.od),
-				k = Object(o.a)(s.nd)
+			const r = Object(o.a)(s.ed),
+				a = Object(o.a)(s.cd),
+				i = Object(o.a)(s.fd),
+				l = Object(o.a)(s.bd),
+				d = Object(o.a)(s.ad),
+				c = Object(o.a)(s.id),
+				u = Object(o.a)(s.gd),
+				p = Object(o.a)(s.hd),
+				m = Object(o.a)(s.Xc),
+				h = Object(o.a)(s.Vc),
+				b = Object(o.a)(s.Oc),
+				f = Object(o.a)(s.Mc),
+				x = Object(o.a)(s.Nc),
+				_ = Object(o.a)(s.Qc),
+				R = Object(o.a)(s.Lc),
+				g = Object(o.a)(s.Yc),
+				C = Object(o.a)(s.Zc),
+				O = Object(o.a)(s.dd),
+				w = Object(o.a)(s.jd),
+				v = Object(o.a)(s.pd),
+				E = Object(o.a)(s.od),
+				S = Object(o.a)(s.ld),
+				y = Object(o.a)(s.nd),
+				k = Object(o.a)(s.md)
 		},
 		"./src/redditGQL/operations/CreateLiveAudioRoomOrError.json": function(e) {
 			e.exports = JSON.parse('{"id":"52e4102ca1f1"}')
@@ -4075,4 +4075,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.e0ca7ac5e7c9d24a9bad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.78f933f5b1d78ed6c7b2.js.map

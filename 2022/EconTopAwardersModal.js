@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.0a7d7def1b5204a32b13.js
-// Retrieved at 5/5/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.842f2463830f6c84a891.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -179,7 +179,7 @@
 				x = r("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const h = (e, t, r) => Object(p.a)(Object(b.a)(e, [f.a]), {
 				endpoint: Object(v.a)(Object(x.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
-				method: u.kb.GET,
+				method: u.jb.GET,
 				data: r
 			});
 			var I = r("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -470,7 +470,7 @@
 					t.username = Object(I.a)(t.username), n(Object(c.h)(r));
 					const g = await ((e, t, r) => Object(p.a)(Object(b.a)(e, [f.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
-						method: u.kb.POST,
+						method: u.jb.POST,
 						data: {
 							api_type: "json",
 							ban_reason: r.reason,
@@ -513,7 +513,7 @@
 					const i = n().subreddits.models[e].url,
 						d = await ((e, t, r) => Object(p.a)(Object(b.a)(e, [f.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
-							method: u.kb.POST,
+							method: u.jb.POST,
 							data: {
 								api_type: "json",
 								id: r,
@@ -2670,9 +2670,9 @@
 				}) === a.y.Enabled,
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.Uc
-				}) === a.sd
+					experimentName: a.Tc
+				}) === a.rd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.0a7d7def1b5204a32b13.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.842f2463830f6c84a891.js.map

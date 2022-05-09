@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.566f570101f536b66183.js
-// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.2ba65f8c70e78b16b307.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceUserPublicPointsDisplay"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -181,8 +181,8 @@
 				P = Object(o.a)(E.s),
 				A = Object(o.a)(E.t),
 				S = Object(o.a)(E.u),
-				k = Object(o.a)(E.v),
-				R = Object(o.a)(E.w),
+				R = Object(o.a)(E.v),
+				k = Object(o.a)(E.w),
 				w = Object(o.a)(E.x),
 				G = (e, t) => async (n, r, o) => {
 					let s, {
@@ -266,9 +266,9 @@
 					let {
 						apiContext: o
 					} = r;
-					t(k());
+					t(R());
 					const s = await Object(p.a)(o(), e);
-					s.ok ? t(R(s.body)) : t(S({
+					s.ok ? t(k(s.body)) : t(S({
 						error: s.error
 					}))
 				}
@@ -696,7 +696,7 @@
 			function i(e, t) {
 				return Object(s.a)(e, {
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: o.kb.GET
+					method: o.jb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -718,7 +718,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${r.a.metaUrl}/wallets/${t.subredditId}`,
-					method: o.kb.POST,
+					method: o.jb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -999,4 +999,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.566f570101f536b66183.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceUserPublicPointsDisplay.2ba65f8c70e78b16b307.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationDropdowns.134b887fa947683e4e9c.js
-// Retrieved at 5/3/2022, 5:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationDropdowns.d23172af7021b987a6dc.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationDropdowns"], {
 		"./src/reddit/actions/economics/predictions/modTools.ts": function(e, t, o) {
@@ -768,8 +768,8 @@
 					sendEvent: y,
 					tooltipId: L
 				} = e;
-				const T = F.distinguishType === i.H.MODERATOR,
-					R = T ? i.H.NONE : i.H.MODERATOR,
+				const T = F.distinguishType === i.G.MODERATOR,
+					R = T ? i.G.NONE : i.G.MODERATOR,
 					W = Object(u.b)(F.id, c);
 				return s.a.createElement(V, {
 					className: A.a.dropdown,
@@ -1171,4 +1171,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.134b887fa947683e4e9c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationDropdowns.d23172af7021b987a6dc.js.map

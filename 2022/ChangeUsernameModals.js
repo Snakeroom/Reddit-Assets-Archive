@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.38b098ff7a3e2186d25d.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChangeUsernameModals.c54b222e6ec7b820b86f.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChangeUsernameModals"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -88,20 +88,20 @@
 				x = n("./src/reddit/constants/headers.ts"),
 				N = n("./src/reddit/components/Settings/SuggestedUsernames/index.m.less"),
 				U = n.n(N);
-			const M = b.a.wrapped(f.a, "refreshIcon", U.a),
-				j = b.a.button("refreshButton", U.a),
+			const j = b.a.wrapped(f.a, "refreshIcon", U.a),
+				M = b.a.button("refreshButton", U.a),
 				k = e => e > 3 ? 3 : e;
-			var w = Object(E.b)(e => {
+			var S = Object(E.b)(e => {
 					const {
 						apiContext: t,
 						onSuggestedUsernameClick: n
 					} = e, [o, c] = Object(a.useState)([0, 0]), [i, l] = Object(a.useState)([]), [d, m] = Object(a.useState)(!1), u = Object(a.useCallback)(async () => {
 						m(!0), setTimeout(() => {
 							m(!1)
-						}, 10 * g.Tb);
+						}, 10 * g.Sb);
 						const e = await (e => Object(v.a)(Object(O.a)(e, [x.a]), {
 							endpoint: `${e.apiUrl}/api/v1/generate_username.json`,
-							method: g.kb.GET
+							method: g.jb.GET
 						}))(t());
 						if (e.ok && e.body) {
 							const {
@@ -133,10 +133,10 @@
 						className: U.a.refreshContainer
 					}, s.fbt._("Can’t think of one? Use one of these:", null, {
 						hk: "23kfek"
-					}), r.a.createElement(j, {
+					}), r.a.createElement(M, {
 						disabled: d,
 						onClick: p
-					}, r.a.createElement(M, null))), r.a.createElement("ul", {
+					}, r.a.createElement(j, null))), r.a.createElement("ul", {
 						className: U.a.suggestedUsernames
 					}, i.slice(...o).map(e => r.a.createElement("li", {
 						className: U.a.suggestedUsername,
@@ -144,7 +144,7 @@
 						onClick: () => n(e)
 					}, e))))
 				}),
-				S = n("./src/reddit/controls/Button/index.tsx"),
+				w = n("./src/reddit/controls/Button/index.tsx"),
 				B = n("./src/reddit/endpoints/usernameAvailable/index.ts"),
 				I = n("./src/reddit/components/Settings/ModalContainer/index.tsx"),
 				y = n("./src/reddit/components/ChangeUsernameTooltip/index.m.less"),
@@ -254,11 +254,11 @@
 						successMessage: c && !i && K() || void 0,
 						value: n,
 						validityState: o || void 0
-					}), r.a.createElement(w, {
+					}), r.a.createElement(S, {
 						onSuggestedUsernameClick: this.onSuggestedUsernameClickHandler
 					}), r.a.createElement("div", {
 						className: T.a.buttonWrapper
-					}, r.a.createElement(S.l, {
+					}, r.a.createElement(w.l, {
 						className: Object(A.a)(T.a.commonBtn, T.a.primaryBtn),
 						disabled: !c,
 						onClick: this.handleContinue
@@ -291,11 +291,11 @@
 					className: T.a.usernamePrefix
 				}, "u/"), e.username), r.a.createElement("div", {
 					className: T.a.buttonWrapper
-				}, r.a.createElement(S.l, {
+				}, r.a.createElement(w.l, {
 					className: Object(A.a)(T.a.commonBtn, T.a.primaryBtn),
 					disabled: e.isSaving,
 					onClick: e.onPrimaryButtonClick
-				}, e.primaryButtonText()), r.a.createElement(S.r, {
+				}, e.primaryButtonText()), r.a.createElement(w.r, {
 					className: Object(A.a)(T.a.commonBtn, T.a.secondaryBtn),
 					disabled: e.isSaving,
 					onClick: e.onSecondaryButtonClick
@@ -384,10 +384,10 @@
 					secondConfirmKeepUsernameModalOpen: C,
 					username: b
 				} = e;
-				const [f, E] = Object(a.useState)(b || ""), [N, U] = Object(a.useState)(!1), M = Object($.a)(), j = Object(a.useCallback)(async () => {
+				const [f, E] = Object(a.useState)(b || ""), [N, U] = Object(a.useState)(!1), j = Object($.a)(), M = Object(a.useCallback)(async () => {
 					U(!0);
 					const e = await ((e, t) => Object(v.a)(Object(O.a)(e, [x.a]), {
-						method: g.kb.POST,
+						method: g.jb.POST,
 						endpoint: `${e.apiUrl}/api/update_name`,
 						data: {
 							api_type: "json",
@@ -395,21 +395,21 @@
 						},
 						type: "form"
 					}))(t(), f);
-					e.ok ? (A(f, b), M(Object(X.j)())) : h(ie(e.error)), U(!1)
-				}, [t, b, M, h, A, f]);
+					e.ok ? (A(f, b), j(Object(X.j)())) : h(ie(e.error)), U(!1)
+				}, [t, b, j, h, A, f]);
 				return r.a.createElement(a.Fragment, null, u && r.a.createElement(q, {
 					description: s.fbt._("Before continuing, confirm that you want to keep this as your Reddit username.", null, {
 						hk: "14rKrO"
 					}),
 					isResponsive: p,
 					onPrimaryButtonClick: () => {
-						c(), M(Object(X.d)(X.a, "change"))
+						c(), j(Object(X.d)(X.a, "change"))
 					},
 					onSecondaryButtonClick: () => {
-						i(), M(Object(X.d)(X.a, "keep"))
+						i(), j(Object(X.d)(X.a, "keep"))
 					},
 					onView: () => {
-						M(Object(X.h)(X.a, !0))
+						j(Object(X.h)(X.a, !0))
 					},
 					primaryButtonText: ne,
 					secondaryButtonText: se,
@@ -423,13 +423,13 @@
 					isSecondConfirm: !0,
 					onClose: o,
 					onPrimaryButtonClick: () => {
-						j(), M(Object(X.c)("keep"))
+						M(), j(Object(X.c)("keep"))
 					},
 					onSecondaryButtonClick: () => {
-						c(), M(Object(X.c)("change"))
+						c(), j(Object(X.c)("change"))
 					},
 					onView: () => {
-						M(Object(X.g)())
+						j(Object(X.g)())
 					},
 					primaryButtonText: N ? re : se,
 					secondaryButtonText: ne,
@@ -439,14 +439,14 @@
 					isResponsive: p,
 					onClose: o,
 					onContinue: () => {
-						d(), M(Object(X.e)())
+						d(), j(Object(X.e)())
 					},
 					onSelect: () => {
-						M(Object(X.f)())
+						j(Object(X.f)())
 					},
 					onUsernameChange: E,
 					onView: () => {
-						M(Object(X.i)())
+						j(Object(X.i)())
 					},
 					title: s.fbt._("Change username", null, {
 						hk: "17XB7v"
@@ -461,13 +461,13 @@
 					isSaving: N,
 					onClose: o,
 					onPrimaryButtonClick: () => {
-						j(), M(Object(X.c)("save"))
+						M(), j(Object(X.c)("save"))
 					},
 					onSecondaryButtonClick: () => {
-						m(), M(Object(X.c)("go_back"))
+						m(), j(Object(X.c)("go_back"))
 					},
 					onView: () => {
-						M(Object(X.g)())
+						j(Object(X.g)())
 					},
 					primaryButtonText: N ? re : ae,
 					secondaryButtonText: oe,
@@ -831,4 +831,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.38b098ff7a3e2186d25d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChangeUsernameModals.c54b222e6ec7b820b86f.js.map

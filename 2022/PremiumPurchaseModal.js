@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.4ca5c78b3aca32ce6703.js
-// Retrieved at 5/5/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.4c35544fea09c4d93418.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -966,7 +966,7 @@
 						apiContext: c
 					} = o;
 					const l = Object(b.a)(n()),
-						u = (null == l ? void 0 : l.pennies) || s.zb,
+						u = (null == l ? void 0 : l.pennies) || s.yb,
 						m = Object(f.c)(f.a.GoldPayment);
 					r(Object(d.stripeTokenPending)());
 					const y = await r(Object(d.validateAndCreateStripeToken)(e, t));
@@ -1484,8 +1484,8 @@
 					}) : E.fbt._("month", null, {
 						hk: "1l20Gw"
 					}),
-					f = e.selectedPayment === l.Ib,
-					b = e.selectedPayment === l.Hb,
+					f = e.selectedPayment === l.Hb,
+					b = e.selectedPayment === l.Gb,
 					y = f ? D.a : U.a;
 				return a.a.createElement(G.Elements, {
 					stripe: t
@@ -1606,8 +1606,8 @@
 						premiumProductOffer: j,
 						premiumPrice: E,
 						onLoadSavedCards: x
-					} = e, w = l.zb, _ = !1;
-					j && E ? (w = E, _ = C === O.b.Year) : o && (w = o ? o.pennies : l.zb, _ = !!o && o.frequency === u.c.Yearly);
+					} = e, w = l.yb, _ = !1;
+					j && E ? (w = E, _ = C === O.b.Year) : o && (w = o ? o.pennies : l.yb, _ = !!o && o.frequency === u.c.Yearly);
 					const k = Object(n.useCallback)(e => {
 						if (27 === e.keyCode) return p()
 					}, [p]);
@@ -2209,7 +2209,7 @@
 					u = `${r.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					m = Object(s.a)(u);
 				return Object(a.a)(Object(o.a)(r, [c.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: m,
 					data: l
 				}).then(i.a)
@@ -2226,7 +2226,7 @@
 					correlation_id: d
 				};
 				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: l
 				}).then(i.a)
@@ -2245,7 +2245,7 @@
 					thing_id: d
 				};
 				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: u
 				}).then(i.a)
@@ -2266,7 +2266,7 @@
 					correlation_id: u
 				};
 				return Object(a.a)(Object(o.a)(t, [c.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: m
 				}).then(i.a)
@@ -2295,7 +2295,7 @@
 					thing_id: b
 				};
 				return Object(a.a)(Object(o.a)(r, [c.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: y
 				}).then(i.a)
@@ -2318,7 +2318,7 @@
 					thing_id: m
 				};
 				return Object(a.a)(Object(o.a)(r, [c.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: p
 				}).then(i.a)
@@ -2948,7 +2948,7 @@
 					const {
 						thingId: r,
 						packageId: l
-					} = t, b = !!r, y = o.b(e), h = y ? Object(u.getAwardTypeFromAward)(y) : null, g = b ? h : s.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, v = r ? Object(p.a)(r) ? "comment" : "post" : void 0, P = l || s.t(e), C = [...Object(c.d)(e), ...Object(c.f)(e)].filter(e => e.mobileId === P)[0], O = t.offerContext || (y && 0 === y.coinPrice ? a.a.StorefrontFreeAward : Object(a.d)(C, b)), j = C ? Math.round(1e4 * (C.baselinePennies - C.pennies) / C.baselinePennies) / 100 : 0, E = C ? Math.round(1e4 * (C.coins - C.baselineCoins) / C.coins) / 100 : 0, x = C ? C.baselinePennies !== C.pennies ? `${j}_percent_price` : C.baselineCoins !== C.coins ? `${E}_percent_bonus` : void 0 : void 0, w = g === d.GoldPurchaseType.Premium ? n.zb : C ? C.pennies : void 0;
+					} = t, b = !!r, y = o.b(e), h = y ? Object(u.getAwardTypeFromAward)(y) : null, g = b ? h : s.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, v = r ? Object(p.a)(r) ? "comment" : "post" : void 0, P = l || s.t(e), C = [...Object(c.d)(e), ...Object(c.f)(e)].filter(e => e.mobileId === P)[0], O = t.offerContext || (y && 0 === y.coinPrice ? a.a.StorefrontFreeAward : Object(a.d)(C, b)), j = C ? Math.round(1e4 * (C.baselinePennies - C.pennies) / C.baselinePennies) / 100 : 0, E = C ? Math.round(1e4 * (C.coins - C.baselineCoins) / C.coins) / 100 : 0, x = C ? C.baselinePennies !== C.pennies ? `${j}_percent_price` : C.baselineCoins !== C.coins ? `${E}_percent_bonus` : void 0 : void 0, w = g === d.GoldPurchaseType.Premium ? n.yb : C ? C.pennies : void 0;
 					return {
 						...i.n(e),
 						comment: r ? i.h(e, r) : null,
@@ -3232,7 +3232,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(a.a)(n.Vc)
+			const o = Object(a.a)(n.Uc)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
 			"use strict";
@@ -3387,4 +3387,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.4ca5c78b3aca32ce6703.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.4c35544fea09c4d93418.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.9fffdc3442f726ad0e86.js
-// Retrieved at 5/5/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.6187c527bd96ce2c0936.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1344,7 +1344,7 @@
 						stripeErrorMessage: u,
 						subredditId: m,
 						userPowerupsData: p
-					} = e, f = Object(o.d)(), [b, j] = Object(n.useState)(v.Ib);
+					} = e, f = Object(o.d)(), [b, j] = Object(n.useState)(v.Hb);
 					Object(n.useEffect)(() => {
 						f(Object(C.e)()), f(Object(O.selectPaymentMethod)(b))
 					}, []);
@@ -1394,11 +1394,11 @@
 						onPaymentSelected: e => {
 							j(e), f(Object(O.selectPaymentMethod)(e))
 						}
-					}), b === v.Hb && u && a.a.createElement("div", {
+					}), b === v.Gb && u && a.a.createElement("div", {
 						className: oe.a.errorMessage
-					}, u), b === v.Ib && c && a.a.createElement("div", {
+					}, u), b === v.Hb && c && a.a.createElement("div", {
 						className: oe.a.errorMessage
-					}, c), b === v.Hb && a.a.createElement(h.ElementsConsumer, null, e => {
+					}, c), b === v.Gb && a.a.createElement(h.ElementsConsumer, null, e => {
 						let {
 							stripe: t
 						} = e;
@@ -1407,10 +1407,10 @@
 							className: oe.a.stripeForm,
 							stripe: t
 						})
-					}), b === v.Ib && a.a.createElement(G, {
+					}), b === v.Hb && a.a.createElement(G, {
 						className: oe.a.button,
 						subredditId: m
-					}), b === v.Hb && a.a.createElement(ne, {
+					}), b === v.Gb && a.a.createElement(ne, {
 						className: oe.a.button,
 						subredditId: m
 					}), a.a.createElement("p", {
@@ -2851,7 +2851,7 @@
 					const {
 						thingId: r,
 						packageId: l
-					} = t, b = !!r, h = o.b(e), g = h ? Object(u.getAwardTypeFromAward)(h) : null, y = b ? g : c.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, v = r ? Object(p.a)(r) ? "comment" : "post" : void 0, P = l || c.t(e), E = [...Object(s.d)(e), ...Object(s.f)(e)].filter(e => e.mobileId === P)[0], w = t.offerContext || (h && 0 === h.coinPrice ? a.a.StorefrontFreeAward : Object(a.d)(E, b)), C = E ? Math.round(1e4 * (E.baselinePennies - E.pennies) / E.baselinePennies) / 100 : 0, O = E ? Math.round(1e4 * (E.coins - E.baselineCoins) / E.coins) / 100 : 0, j = E ? E.baselinePennies !== E.pennies ? `${C}_percent_price` : E.baselineCoins !== E.coins ? `${O}_percent_bonus` : void 0 : void 0, x = y === d.GoldPurchaseType.Premium ? n.zb : E ? E.pennies : void 0;
+					} = t, b = !!r, h = o.b(e), g = h ? Object(u.getAwardTypeFromAward)(h) : null, y = b ? g : c.o(e) ? d.GoldPurchaseType.Premium : d.GoldPurchaseType.Coins, v = r ? Object(p.a)(r) ? "comment" : "post" : void 0, P = l || c.t(e), E = [...Object(s.d)(e), ...Object(s.f)(e)].filter(e => e.mobileId === P)[0], w = t.offerContext || (h && 0 === h.coinPrice ? a.a.StorefrontFreeAward : Object(a.d)(E, b)), C = E ? Math.round(1e4 * (E.baselinePennies - E.pennies) / E.baselinePennies) / 100 : 0, O = E ? Math.round(1e4 * (E.coins - E.baselineCoins) / E.coins) / 100 : 0, j = E ? E.baselinePennies !== E.pennies ? `${C}_percent_price` : E.baselineCoins !== E.coins ? `${O}_percent_bonus` : void 0 : void 0, x = y === d.GoldPurchaseType.Premium ? n.yb : E ? E.pennies : void 0;
 					return {
 						...i.n(e),
 						comment: r ? i.h(e, r) : null,
@@ -3246,7 +3246,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(a.a)(n.Vc)
+			const o = Object(a.a)(n.Uc)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
 			"use strict";
@@ -3492,4 +3492,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.9fffdc3442f726ad0e86.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.6187c527bd96ce2c0936.js.map

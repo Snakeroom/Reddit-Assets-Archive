@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.7682de520f3ea201b7e6.js
-// Retrieved at 5/5/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.f0f6f0487754da84ea1d.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3719,12 +3719,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case h.rf.SmIcon:
+						case h.qf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case h.rf.SmIconHc:
+						case h.qf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -3996,8 +3996,8 @@
 				be = s("./src/reddit/components/TopPostsWidgets/TopWeekPosts/index.m.less"),
 				he = s.n(be);
 			const fe = 10,
-				ve = Object(c.a)((e, t) => t.subredditName, e => Object(I.a)(e, l.X.TOP, {
-					t: l.jc.WEEK
+				ve = Object(c.a)((e, t) => t.subredditName, e => Object(I.a)(e, l.W.TOP, {
+					t: l.ic.WEEK
 				})),
 				xe = Object(c.c)({
 					discoveryUnit: e => Object(me.b)(e, {
@@ -4075,9 +4075,9 @@
 					} = t;
 					return {
 						loadMorePosts: () => e(Object(C.r)({
-							sort: l.X.TOP,
+							sort: l.W.TOP,
 							subredditName: s,
-							t: l.jc.WEEK
+							t: l.ic.WEEK
 						}))
 					}
 				})(Object(ae.c)(ge)),
@@ -4150,7 +4150,7 @@
 						} = t;
 						return Object(Me.c)(e, s)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Fe.a)(e) === Pe.ue.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Fe.a)(e) === Pe.te.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -4238,7 +4238,7 @@
 							listingName: t,
 							placementIndex: u++,
 							position: Le.a.FIRST,
-							sizes: l.i
+							sizes: l.h
 						});
 					return d.a.createElement(Ae, {
 						className: e,
@@ -4301,7 +4301,7 @@
 							listingName: t,
 							placementIndex: u++,
 							position: Le.a.BOTTOM,
-							sizes: l.p
+							sizes: l.o
 						})
 					}))
 				}
@@ -4717,7 +4717,7 @@
 					const {
 						subreddit: t,
 						subredditName: s
-					} = e, r = Object(m.a)(s, u.X.HOT, {});
+					} = e, r = Object(m.a)(s, u.W.HOT, {});
 					return n.a.createElement(p.a, {
 						listingKey: r,
 						listingName: s.toLowerCase(),
@@ -5213,12 +5213,12 @@
 				a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.lf
+						experimentName: r.kf
 					}) || ""
 				},
 				c = e => {
 					const t = a(e);
-					return t === r.rf.SmIcon || t === r.rf.SmIconHc
+					return t === r.qf.SmIcon || t === r.qf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5244,4 +5244,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.7682de520f3ea201b7e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.f0f6f0487754da84ea1d.js.map

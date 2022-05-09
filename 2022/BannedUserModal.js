@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BannedUserModal.4ebb55fd0b8888196939.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BannedUserModal.1921b81c345ac423b799.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BannedUserModal"], {
 		"./src/reddit/actions/subredditModeration/ban.ts": function(e, t, n) {
@@ -33,7 +33,7 @@
 				g = n("./src/reddit/models/RichTextJson/addRTJParam.ts");
 			const x = (e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
 				endpoint: Object(f.a)(Object(g.a)(`${e.apiUrl}/api/v1/${t}/banned`)),
-				method: m.kb.GET,
+				method: m.jb.GET,
 				data: n
 			});
 			var _ = n("./src/reddit/helpers/normalizeUsername/index.tsx"),
@@ -42,18 +42,18 @@
 				S = n("./src/reddit/selectors/activeModalId.ts"),
 				v = n("./src/reddit/selectors/bannedUser.ts"),
 				w = n("./src/reddit/selectors/subreddit.ts"),
-				k = n("./src/reddit/selectors/user.ts"),
-				E = n("./src/reddit/actions/subredditModeration/constants.ts"),
-				M = n("./src/lib/initializeClient/installReducer.ts"),
-				O = n("./node_modules/redux/es/redux.js");
-			var j = function() {
+				E = n("./src/reddit/selectors/user.ts"),
+				k = n("./src/reddit/actions/subredditModeration/constants.ts"),
+				j = n("./src/lib/initializeClient/installReducer.ts"),
+				M = n("./node_modules/redux/es/redux.js");
+			var O = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.s:
-					case E.r:
+					case k.s:
+					case k.r:
 						return null;
-					case E.q:
+					case k.q:
 						return t.payload;
 					default:
 						return e
@@ -64,7 +64,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : R,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.s: {
+						case k.s: {
 							const {
 								subredditId: n,
 								fetchedToken: s
@@ -74,8 +74,8 @@
 								[r]: !0
 							}
 						}
-						case E.r:
-						case E.q: {
+						case k.r:
+						case k.q: {
 							const {
 								subredditId: n,
 								fetchedToken: s
@@ -89,8 +89,8 @@
 							return e
 					}
 				},
-				I = Object(O.c)({
-					error: j,
+				I = Object(M.c)({
+					error: O,
 					pending: L
 				});
 			const B = {};
@@ -98,7 +98,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : B,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.r: {
+						case k.r: {
 							const {
 								fetchedToken: n,
 								subredditId: s
@@ -128,7 +128,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : P,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.r: {
+						case k.r: {
 							const {
 								subredditId: e,
 								after: n
@@ -147,8 +147,8 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : F,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.p:
-					case E.r: {
+					case k.p:
+					case k.r: {
 						const {
 							subredditId: n,
 							bannedUsers: s
@@ -157,7 +157,7 @@
 							[n]: s
 						})
 					}
-					case E.w: {
+					case k.w: {
 						const {
 							subredditId: n,
 							userId: s
@@ -172,10 +172,10 @@
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
-					case E.v:
-					case E.u:
+					case k.v:
+					case k.u:
 						return null;
-					case E.t:
+					case k.t:
 						return t.payload;
 					default:
 						return e
@@ -185,16 +185,16 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.v:
+						case k.v:
 							return !0;
-						case E.u:
-						case E.t:
+						case k.u:
+						case k.t:
 							return !1;
 						default:
 							return e
 					}
 				},
-				X = Object(O.c)({
+				X = Object(M.c)({
 					error: H,
 					pending: W
 				});
@@ -202,10 +202,10 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.v:
-						case E.t:
+						case k.v:
+						case k.t:
 							return null;
-						case E.u: {
+						case k.u: {
 							const e = t.payload.bannedUserIds[0];
 							return e ? t.payload.bannedUsers[e] : null
 						}
@@ -213,7 +213,7 @@
 							return e
 					}
 				},
-				J = Object(O.c)({
+				J = Object(M.c)({
 					api: X,
 					result: G
 				});
@@ -222,7 +222,7 @@
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Z,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
-						case E.r: {
+						case k.r: {
 							const {
 								subredditId: n,
 								bannedUserIds: s
@@ -235,7 +235,7 @@
 								[n]: s
 							}
 						}
-						case E.w: {
+						case k.w: {
 							const {
 								subredditId: n,
 								userId: s
@@ -244,7 +244,7 @@
 								[n]: e[n].filter(e => e !== s)
 							}
 						}
-						case E.p: {
+						case k.p: {
 							const {
 								subredditId: n,
 								bannedUserIds: s
@@ -257,7 +257,7 @@
 							return e
 					}
 				},
-				K = Object(O.c)({
+				K = Object(M.c)({
 					api: I,
 					fetchedTokens: U,
 					inContext: N,
@@ -266,14 +266,14 @@
 					search: J,
 					userOrder: Q
 				});
-			Object(M.a)({
+			Object(j.a)({
 				features: {
 					banned: K
 				}
 			});
-			const z = Object(o.a)(E.s),
-				V = Object(o.a)(E.r),
-				Y = Object(o.a)(E.q),
+			const z = Object(o.a)(k.s),
+				V = Object(o.a)(k.r),
+				Y = Object(o.a)(k.q),
 				$ = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 					return async (n, s, r) => {
@@ -300,9 +300,9 @@
 						}))
 					}
 				},
-				ee = Object(o.a)(E.v),
-				te = Object(o.a)(E.u),
-				ne = Object(o.a)(E.t),
+				ee = Object(o.a)(k.v),
+				te = Object(o.a)(k.u),
+				ne = Object(o.a)(k.t),
 				se = (e, t) => async (n, s, r) => {
 					let {
 						apiContext: a
@@ -314,7 +314,7 @@
 					n(ee());
 					const i = await x(a(), o, d);
 					i.ok ? n(te(i.body)) : n(ne(i.error))
-				}, re = Object(o.a)(E.p), ae = Object(o.a)(E.w), oe = (e, t, n) => async (r, o, i) => {
+				}, re = Object(o.a)(k.p), ae = Object(o.a)(k.w), oe = (e, t, n) => async (r, o, i) => {
 					let {
 						apiContext: l
 					} = i;
@@ -324,7 +324,7 @@
 					t.username = Object(_.a)(t.username), r(Object(d.h)(n));
 					const C = await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
 						endpoint: `${e.apiUrl}${t}api/friend`,
-						method: m.kb.POST,
+						method: m.jb.POST,
 						data: {
 							api_type: "json",
 							ban_reason: n.reason,
@@ -367,7 +367,7 @@
 					const i = r().subreddits.models[e].url,
 						l = await ((e, t, n) => Object(p.a)(Object(b.a)(e, [h.a]), {
 							endpoint: `${e.apiUrl}${t}api/unfriend`,
-							method: m.kb.POST,
+							method: m.jb.POST,
 							data: {
 								api_type: "json",
 								id: n,
@@ -405,7 +405,7 @@
 							await n(Object(l.o)(t.name))
 						}
 					})(), (async () => {
-						const s = Object(k.Ab)(r, {
+						const s = Object(E.Ab)(r, {
 							userName: t
 						});
 						if (!s) return;
@@ -617,19 +617,19 @@
 				S = n("./src/reddit/selectors/apiRequestState.ts"),
 				v = n("./src/reddit/selectors/bannedUser.ts"),
 				w = n("./src/reddit/components/BannedUserList/AddBannedUserModal/DaysInput.tsx"),
-				k = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx"),
-				E = n("./src/reddit/components/BannedUserList/AddBannedUserModal/_AddBannedUserModal.m.less"),
-				M = n.n(E);
-			const O = 300,
-				j = 5e3,
-				R = l.a.wrapped(g.a, "Unban", M.a),
-				L = l.a.wrapped(p.s, "UnbanButton", M.a),
-				I = l.a.wrapped(p.p, "ModalText", M.a),
-				B = l.a.div("DescriptionText", M.a),
-				U = l.a.span("Bullet", M.a),
-				T = l.a.wrapped(B, "VisibilityNote", M.a),
-				N = l.a.wrapped(p.g, "ModalFooter", M.a),
-				P = l.a.div("FooterRow", M.a),
+				E = n("./src/reddit/components/BannedUserList/AddBannedUserModal/RulesDropdown.tsx"),
+				k = n("./src/reddit/components/BannedUserList/AddBannedUserModal/_AddBannedUserModal.m.less"),
+				j = n.n(k);
+			const M = 300,
+				O = 5e3,
+				R = l.a.wrapped(g.a, "Unban", j.a),
+				L = l.a.wrapped(p.s, "UnbanButton", j.a),
+				I = l.a.wrapped(p.p, "ModalText", j.a),
+				B = l.a.div("DescriptionText", j.a),
+				U = l.a.span("Bullet", j.a),
+				T = l.a.wrapped(B, "VisibilityNote", j.a),
+				N = l.a.wrapped(p.g, "ModalFooter", j.a),
+				P = l.a.div("FooterRow", j.a),
 				A = Object(d.c)({
 					apiRequestStates: S.a,
 					user(e, t) {
@@ -668,7 +668,7 @@
 						} = this;
 						e.onUnbanUser && e.onUnbanUser(), e.toggleModal(), e.trackEventWithName("remove")()
 					}, this.onChangeModNote = e => {
-						e.currentTarget.value.length <= O && this.setState({
+						e.currentTarget.value.length <= M && this.setState({
 							modNote: e.currentTarget.value
 						})
 					}, this.onChangeBanDuration = e => {
@@ -676,7 +676,7 @@
 						"number" == typeof t && (t < 0 || t > y.b || this.setState({
 							duration: t
 						}))
-					}, this.canSave = () => !this.isApiRequestInProgress() && (!!this.state.reason && (!!Object(f.a)(this.state.username) && (!(!this.state.durationIsPermanent && !this.state.duration) && !(this.state.banMessage && this.state.banMessage.length > j)))), this.onSubmit = () => {
+					}, this.canSave = () => !this.isApiRequestInProgress() && (!!this.state.reason && (!!Object(f.a)(this.state.username) && (!(!this.state.durationIsPermanent && !this.state.duration) && !(this.state.banMessage && this.state.banMessage.length > O)))), this.onSubmit = () => {
 						const {
 							props: e,
 							state: t
@@ -758,7 +758,7 @@
 						value: t.username
 					})), a.a.createElement(p.h, null, a.a.createElement(p.k, null, s.fbt._("Reason for ban", null, {
 						hk: "dGjdF"
-					})), a.a.createElement(k.a, {
+					})), a.a.createElement(E.a, {
 						onDropdownApi: this.setDropdownApi,
 						onSelectReason: e => this.setState({
 							reason: e
@@ -775,7 +775,7 @@
 						}),
 						value: t.modNote
 					}), a.a.createElement(m.a, {
-						maxChars: O,
+						maxChars: M,
 						text: t.modNote
 					})), a.a.createElement(w.a, {
 						duration: t.duration,
@@ -794,7 +794,7 @@
 						value: t.banMessage,
 						"data-redditstyle": !0
 					})), a.a.createElement(P, null, a.a.createElement(m.a, {
-						maxChars: j,
+						maxChars: O,
 						text: t.banMessage
 					})), a.a.createElement(P, null, e.onUnbanUser ? a.a.createElement(L, {
 						onClick: this.onRemove
@@ -808,7 +808,7 @@
 					}, s.fbt._("Cancel", null, {
 						hk: "2TSLl5"
 					})), a.a.createElement(b.l, {
-						className: M.a.PrimaryButton,
+						className: j.a.PrimaryButton,
 						onClick: this.onSubmit,
 						disabled: !this.canSave(),
 						"data-redditstyle": !0
@@ -1043,4 +1043,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.4ebb55fd0b8888196939.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BannedUserModal.1921b81c345ac423b799.js.map

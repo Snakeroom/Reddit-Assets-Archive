@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.b5790fcdf02f512e4178.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.72baf7b398ac0866698a.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -718,7 +718,7 @@
 						this.props.showTooltip(e), this.props.sendEvent(Object($.f)(this.props.subredditName)), this.props.postIds.map(e => this.props.sendEvent(Object($.g)(this.props.subredditName, e)))
 					}, this.onClickPost = e => {
 						this.props.sendEvent(Object($.b)(this.props.subredditName, e))
-					}, this.handleScroll = r()(() => this.loadSubredditData && this.loadSubredditData(), u.L), this.loadSubredditData = () => {
+					}, this.handleScroll = r()(() => this.loadSubredditData && this.loadSubredditData(), u.K), this.loadSubredditData = () => {
 						const {
 							subreddit: e,
 							subredditAboutInfo: t,
@@ -785,7 +785,7 @@
 					if (!i || !a || Object(_.k)(i)) return this.renderDefault();
 					const {
 						uniqueId: d
-					} = this.state, l = Object(b.a)(this.props.subredditName, u.X.TOP), m = i.isNSFW && e || i.type === _.f.EmployeesOnly && !t || i.type === _.f.Private && !a.userIsSubscriber, p = m || i.isQuarantined || i.isNSFW;
+					} = this.state, l = Object(b.a)(this.props.subredditName, u.W.TOP), m = i.isNSFW && e || i.type === _.f.EmployeesOnly && !t || i.type === _.f.Private && !a.userIsSubscriber, p = m || i.isQuarantined || i.isNSFW;
 					return o.a.createElement("span", {
 						className: ne.a.subredditMentionContainer,
 						onMouseEnter: this.onShowTooltip,
@@ -1860,4 +1860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.b5790fcdf02f512e4178.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.72baf7b398ac0866698a.js.map

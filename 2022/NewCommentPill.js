@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.116e7aaee2c0739fea42.js
-// Retrieved at 5/3/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.75e2656c5d14b78d5c07.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -112,7 +112,7 @@
 						if (!S) return;
 						k(!1), K.current && (clearTimeout(K.current), K.current = null), L.current && (L.current = null), B.current = 2, (() => {
 							const e = new URLSearchParams(location.search);
-							e.get(j.z) !== C.u.NEW && (e.set(j.z, C.u.NEW), z(Object(i.b)(Object(r.c)({
+							e.get(j.z) !== C.t.NEW && (e.set(j.z, C.t.NEW), z(Object(i.b)(Object(r.c)({
 								pathname: location.pathname,
 								search: e.toString()
 							}, {
@@ -120,14 +120,14 @@
 							}))));
 							const n = Object(g.a)(s, t, {
 								hasSortParam: !0,
-								sort: C.u.NEW
+								sort: C.t.NEW
 							});
 							z(Object(l.commentsPageRemoveLoadedFull)({
 								key: n
 							})), z(Object(l.commentsPageDataRequested)(s, t, {
 								hasSortParam: !0,
-								sort: C.u.NEW
-							}, C.u.NEW))
+								sort: C.t.NEW
+							}, C.t.NEW))
 						})(), Object(N.a)(!!v), R.current = setTimeout(() => T({
 							type: "reset"
 						}), 1e3)
@@ -502,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.116e7aaee2c0739fea42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.75e2656c5d14b78d5c07.js.map

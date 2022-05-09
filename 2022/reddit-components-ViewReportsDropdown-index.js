@@ -1,25 +1,25 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.2679f4914fb126a1c3fa.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.74ddfa890f1e2d56998c.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ViewReportsDropdown-index"], {
 		"./src/reddit/actions/comment/moderation.ts": function(e, t, o) {
 			"use strict";
 			o.d(t, "d", (function() {
-				return O
+				return v
 			})), o.d(t, "c", (function() {
-				return w
+				return O
 			})), o.d(t, "f", (function() {
-				return j
+				return w
 			})), o.d(t, "a", (function() {
-				return k
+				return j
 			})), o.d(t, "e", (function() {
-				return _
+				return k
 			})), o.d(t, "g", (function() {
-				return C
+				return _
 			})), o.d(t, "h", (function() {
-				return E
+				return C
 			})), o.d(t, "b", (function() {
-				return S
+				return E
 			}));
 			o("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = o("./node_modules/fbt/lib/FbtPublic.js"),
@@ -35,29 +35,28 @@
 				u = o("./src/reddit/models/Reportable/index.ts"),
 				b = o("./src/reddit/models/Toast/index.ts"),
 				x = o("./src/reddit/selectors/commentSelector.ts"),
-				g = o("./src/reddit/selectors/experiments/d2xGqlDistinguish.ts"),
-				h = o("./src/reddit/selectors/user.ts"),
-				R = o("./src/reddit/actions/comment/index.ts"),
-				f = o("./src/reddit/actions/comment/constants.ts");
-			const v = Object(r.a)(f.n),
-				O = e => async (t, o, s) => {
+				g = o("./src/reddit/selectors/user.ts"),
+				h = o("./src/reddit/actions/comment/index.ts"),
+				R = o("./src/reddit/actions/comment/constants.ts");
+			const f = Object(r.a)(R.n),
+				v = e => async (t, o, s) => {
 					let {
 						apiContext: n
 					} = s;
-					o().features.comments.models[e] && (await Object(p.j)(n(), e)).ok && t((e => async t => {
-						t(v({
+					o().features.comments.models[e] && (await Object(p.i)(n(), e)).ok && t((e => async t => {
+						t(f({
 							commentId: e
 						}))
 					})(e))
-				}, w = e => async (t, o, n) => {
+				}, O = e => async (t, o, n) => {
 					let {
 						apiContext: r
 					} = n;
-					if (!Object(h.Q)(o())) return void t(Object(d.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(g.Q)(o())) return void t(Object(d.i)(l.a.LOGIN_MODAL_ID));
 					const i = o().features.comments.models[e];
 					if (!i) return;
-					const c = i.isLocked ? p.l : p.e;
-					t(Object(R.i)({
+					const c = i.isLocked ? p.k : p.e;
+					t(Object(h.i)({
 						[e]: {
 							isLocked: !i.isLocked
 						}
@@ -68,19 +67,19 @@
 						}) : s.fbt._("comment has been locked", null, {
 							hk: "1pBDQl"
 						})
-					})) : t(Object(R.i)({
+					})) : t(Object(h.i)({
 						[e]: {
 							isLocked: i.isLocked
 						}
 					}))
-				}, j = Object(r.a)(f.G), k = e => async (t, o, n) => {
+				}, w = Object(r.a)(R.G), j = e => async (t, o, n) => {
 					let {
 						apiContext: r
 					} = n;
 					const i = o(),
 						d = i.features.comments.models[e],
 						l = i.user.account ? i.user.account.displayText : null;
-					d && l && (t(Object(R.i)({
+					d && l && (t(Object(h.i)({
 						[e]: {
 							isApproved: !0,
 							approvedBy: l,
@@ -97,7 +96,7 @@
 						text: s.fbt._("comment has been approved", null, {
 							hk: "4GfKQi"
 						})
-					})) : t(Object(R.i)({
+					})) : t(Object(h.i)({
 						[e]: {
 							isApproved: d.isApproved,
 							approvedBy: null,
@@ -110,14 +109,14 @@
 							numReports: d.numReports || null
 						}
 					})), Object(c.d)())
-				}, _ = (e, t) => async (o, n, r) => {
+				}, k = (e, t) => async (o, n, r) => {
 					let {
 						apiContext: i
 					} = r;
 					const d = n(),
 						l = d.features.comments.models[e],
 						m = d.user.account ? d.user.account.displayText : null;
-					l && m && (o(Object(R.i)({
+					l && m && (o(Object(h.i)({
 						[e]: {
 							approvedBy: null,
 							bannedBy: m,
@@ -125,14 +124,14 @@
 							isRemoved: !t,
 							isSpam: t
 						}
-					})), (await Object(p.h)(i(), e, t)).ok ? o(Object(a.f)({
+					})), (await Object(p.g)(i(), e, t)).ok ? o(Object(a.f)({
 						kind: b.b.SuccessMod,
 						text: t ? s.fbt._("comment has been marked as spam", null, {
 							hk: "4fQaFM"
 						}) : s.fbt._("comment has been removed", null, {
 							hk: "1qNTrD"
 						})
-					})) : o(Object(R.i)({
+					})) : o(Object(h.i)({
 						[e]: {
 							approvedBy: l.approvedBy,
 							bannedBy: l.bannedBy,
@@ -141,14 +140,14 @@
 							isSpam: l.isSpam
 						}
 					})), Object(c.d)())
-				}, C = e => async (t, o, n) => {
+				}, _ = e => async (t, o, n) => {
 					let {
 						apiContext: r
 					} = n;
 					const i = o().features.comments.models[e];
 					if (!i) return;
-					const d = i.ignoreReports ? p.k : p.d;
-					t(Object(R.i)({
+					const d = i.ignoreReports ? p.j : p.d;
+					t(Object(h.i)({
 						[e]: {
 							ignoreReports: !i.ignoreReports
 						}
@@ -159,12 +158,12 @@
 						}) : s.fbt._("comment has had its reports ignored", null, {
 							hk: "2q4sCp"
 						})
-					})) : t(Object(R.i)({
+					})) : t(Object(h.i)({
 						[e]: {
 							ignoreReports: i.ignoreReports
 						}
 					}))
-				}, E = (e, t, o) => async (r, i, d) => {
+				}, C = (e, t, o) => async (r, i, d) => {
 					let {
 						gqlContext: c
 					} = d;
@@ -172,7 +171,7 @@
 						commentId: e
 					});
 					if (!l) return;
-					const p = o === n.fc.Snoozed,
+					const p = o === n.ec.Snoozed,
 						g = {
 							itemId: e,
 							reportText: t,
@@ -180,7 +179,7 @@
 						};
 					if ((await Object(m.a)(c(), {
 							input: g
-						})).ok) r(Object(R.i)({
+						})).ok) r(Object(h.i)({
 						[e]: {
 							userReports: Object(u.a)(l.userReports, t, p)
 						}
@@ -191,7 +190,7 @@
 						}), b.b.Error);
 						r(Object(a.f)(e))
 					}
-				}, S = (e, t, o) => async (s, r, d) => {
+				}, E = (e, t, o) => async (s, r, d) => {
 					let {
 						apiContext: c,
 						gqlContext: a
@@ -200,43 +199,37 @@
 						m = l.features.comments.models[e];
 					if (!m) return;
 					const u = m.postId,
-						b = l.postStickiedComments.data[u],
-						x = n.g[t];
-					let h;
-					if (s(Object(R.i)({
-							[e]: {
-								distinguishType: t,
-								isAdmin: t === n.H.ADMIN,
-								isMod: t === n.H.MODERATOR,
-								isStickied: !!o
-							}
-						})), o && b && b !== e && s(Object(R.i)({
-							[b]: {
-								isStickied: !1
-							}
-						})), Object(g.a)(r())) {
-						const s = Object(p.b)(a(), e, t),
-							n = Object(p.c)(a(), e, !!o),
-							r = [s];
-						(o || !o && e === b) && r.push(n), h = {
-							ok: (await Promise.all(r)).every(e => e.ok)
+						b = l.postStickiedComments.data[u];
+					s(Object(h.i)({
+						[e]: {
+							distinguishType: t,
+							isAdmin: t === n.G.ADMIN,
+							isMod: t === n.G.MODERATOR,
+							isStickied: !!o
 						}
-					} else h = await Object(p.g)(c(), e, x, o || null);
-					h.ok ? o && s(j({
+					})), o && b && b !== e && s(Object(h.i)({
+						[b]: {
+							isStickied: !1
+						}
+					}));
+					const x = Object(p.b)(a(), e, t),
+						g = Object(p.c)(a(), e, !!o),
+						R = [x];
+					(o || !o && e === b) && R.push(g), (await Promise.all(R)).every(e => e.ok) ? o && s(w({
 						id: e,
 						postId: u,
 						commentsPageKey: Object(i.a)(u, null, {
-							sort: n.u.CONFIDENCE,
+							sort: n.t.CONFIDENCE,
 							...l.platform.currentPage.queryParams
 						})
-					})) : (s(Object(R.i)({
+					})) : (s(Object(h.i)({
 						[e]: {
 							distinguishType: m.distinguishType,
 							isAdmin: m.isAdmin,
 							isMod: m.isMod,
 							isStickied: m.isStickied
 						}
-					})), s(Object(R.i)({
+					})), s(Object(h.i)({
 						[b]: {
 							isStickied: l.features.comments.models[b].isStickied
 						}
@@ -312,7 +305,7 @@
 			class y extends n.a.Component {
 				constructor() {
 					super(...arguments), this.tooltipTarget = null, this.setTooltipTargetRef = e => this.tooltipTarget = e, this.onSnoozeButtonClick = () => {
-						const e = this.props.isSnoozed ? c.fc.None : c.fc.Snoozed;
+						const e = this.props.isSnoozed ? c.ec.None : c.ec.Snoozed;
 						this.props.toggleSnooze(e);
 						const t = Object(h.l)(Object(g.a)(this.props.reportedThingId), this.props.isSnoozed, this.props.reportedThingId, this.props.reason);
 						this.props.sendEvent(t)
@@ -353,9 +346,9 @@
 					}))))))
 				}
 			}
-			var D = E(Object(u.c)(y)),
-				T = o("./src/reddit/components/Reports/index.m.less"),
-				B = o.n(T);
+			var T = E(Object(u.c)(y)),
+				D = o("./src/reddit/components/Reports/index.m.less"),
+				B = o.n(D);
 			const {
 				fbt: I
 			} = o("./node_modules/fbt/lib/FbtPublic.js"), z = r.a.div("ReportText", B.a), N = r.a.div("ReportsTitle", B.a);
@@ -386,7 +379,7 @@
 					className: B.a.UserReports
 				}, s.map(e => {
 					let [t, o, s, i] = e;
-					return void 0 !== s && i ? n.a.createElement(D, {
+					return void 0 !== s && i ? n.a.createElement(T, {
 						key: `user-${t}`,
 						reason: t,
 						amount: o,
@@ -552,4 +545,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.2679f4914fb126a1c3fa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ViewReportsDropdown-index.74ddfa890f1e2d56998c.js.map

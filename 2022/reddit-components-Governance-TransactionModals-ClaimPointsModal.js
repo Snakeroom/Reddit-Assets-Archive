@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.d5c1bd1c7c89845a4821.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.41da00937c744e9f009c.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Governance-TransactionModals-ClaimPointsModal"], {
 		"./src/lib/bigNumberUtils/percent.ts": function(e, t, n) {
@@ -80,8 +80,8 @@
 				I = Object(r.a)(x.q),
 				T = Object(r.a)(x.r),
 				y = Object(r.a)(x.s),
-				k = Object(r.a)(x.t),
-				M = Object(r.a)(x.u),
+				M = Object(r.a)(x.t),
+				k = Object(r.a)(x.u),
 				S = Object(r.a)(x.v),
 				A = Object(r.a)(x.w),
 				P = Object(r.a)(x.x),
@@ -152,7 +152,7 @@
 						...e,
 						contentId: m
 					});
-					b.ok ? (n(k({
+					b.ok ? (n(M({
 						...b.body,
 						subredditId: e.subredditId
 					})), n(Object(c.f)({
@@ -169,7 +169,7 @@
 					} = s;
 					t(S());
 					const a = await Object(b.a)(r(), e);
-					a.ok ? t(A(a.body)) : t(M({
+					a.ok ? t(A(a.body)) : t(k({
 						error: a.error
 					}))
 				}
@@ -284,8 +284,8 @@
 				I = n("./src/lib/addQueryParams/index.ts"),
 				T = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				y = n("./src/reddit/selectors/user.ts"),
-				k = n("./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx"),
-				M = n("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
+				M = n("./src/reddit/components/Governance/TransactionModals/Common/Bullet.tsx"),
+				k = n("./src/reddit/components/Governance/TransactionModals/Common/QRCode.tsx"),
 				S = n("./src/reddit/components/Governance/TransactionModals/CreateVaultModal/index.m.less"),
 				A = n.n(S);
 			const {
@@ -323,25 +323,25 @@
 						hk: "4DKtAt"
 					})), a.a.createElement("div", {
 						className: A.a.content
-					}, a.a.createElement(k.a, {
+					}, a.a.createElement(M.a, {
 						index: "1"
 					}, P._("Get the official Reddit app for iOS or Android", null, {
 						hk: "420pUH"
-					})), a.a.createElement(k.a, {
+					})), a.a.createElement(M.a, {
 						index: "2"
 					}, P._("Log in to your Reddit account", null, {
 						hk: "3G7IZ2"
-					})), a.a.createElement(k.a, {
+					})), a.a.createElement(M.a, {
 						index: "3"
 					}, P._("Open your Camera, scan the QR code & follow the URL", null, {
 						hk: "FWSNM"
-					})), a.a.createElement(k.a, {
+					})), a.a.createElement(M.a, {
 						index: "4"
 					}, P._("Or, open the Reddit app and tap your profile photo at the top. Then tap Vault, and follow the instructions", null, {
 						hk: "3C5vxO"
 					})))), a.a.createElement("section", {
 						className: A.a.rightSection
-					}, a.a.createElement(M.a, {
+					}, a.a.createElement(k.a, {
 						url: Object(I.a)("http://www.reddit.com/vault/", {
 							u: n
 						}),
@@ -409,7 +409,7 @@
 					y = e => {
 						c(Object(g.c)("points_claim", n, I.displayConversion, e))
 					},
-					k = Object(j.b)(l.pointsToClaim, I.displayConversion);
+					M = Object(j.b)(l.pointsToClaim, I.displayConversion);
 				return a.a.createElement(R.a, {
 					approvalOverview: a.a.createElement(U, {
 						pointsDetails: I,
@@ -436,7 +436,7 @@
 								forceFetch: !0
 							}))
 						}(r, I, e.hash, n, d).then(() => {
-							c(Object(g.d)("points_claim", n, k)), r(function(e) {
+							c(Object(g.d)("points_claim", n, M)), r(function(e) {
 								return Object(v.f)(Object(v.e)(s.fbt._("Your {pointsName} are ready!", [s.fbt._param("pointsName", e)], {
 									hk: "2LpLml"
 								}), w.b.SuccessCommunityGreen))
@@ -824,7 +824,7 @@
 			function o(e, t) {
 				return Object(a.a)(e, {
 					endpoint: `${s.a.metaUrl}/wallets/${t.subredditId}/me`,
-					method: r.kb.GET
+					method: r.jb.GET
 				}).then(e => {
 					if (e.ok) {
 						const n = e.body,
@@ -846,7 +846,7 @@
 						"X-HTTP-Method-Override": "GET"
 					},
 					endpoint: `${s.a.metaUrl}/wallets/${t.subredditId}`,
-					method: r.kb.POST,
+					method: r.jb.POST,
 					data: t.userIds
 				}).then(e => e.ok ? {
 					...e,
@@ -1022,4 +1022,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.d5c1bd1c7c89845a4821.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-ClaimPointsModal.41da00937c744e9f009c.js.map

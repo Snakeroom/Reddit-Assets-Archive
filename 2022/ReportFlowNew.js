@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.0449aa8165eeb5acc40d.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.05948db51560c189270d.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -639,7 +639,7 @@
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/block_user`,
-				method: s.kb.POST
+				method: s.jb.POST
 			}), l = async (e, t, o) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: o,
@@ -647,22 +647,22 @@
 					type: "enemy"
 				},
 				endpoint: `${e.apiUrl}/api/unfriend`,
-				method: s.kb.POST
+				method: s.jb.POST
 			}), u = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/add_whitelisted?include_model`,
-				method: s.kb.POST
+				method: s.jb.POST
 			}), p = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				data: {
 					name: t
 				},
 				endpoint: `${e.apiUrl}/api/remove_whitelisted`,
-				method: s.kb.POST
+				method: s.jb.POST
 			}), m = async (e, t) => Object(n.a)(Object(i.a)(e, [d.a]), {
 				endpoint: Object(c.a)(`${r.a.oauthUrl}/user/${t}/about`),
-				method: s.kb.GET,
+				method: s.jb.GET,
 				data: {
 					raw_json: 1
 				}
@@ -696,7 +696,7 @@
 				e.Rule = "rule", e.SiteRule = "siteRule", e.Other = "other", e.FileComplaint = "fileComplaint", e.CrisisTextLine = "crisisTextLine"
 			}(p || (p = {}));
 			const m = (e, t) => Object(s.a)(Object(i.a)(e, [d.a]), {
-					method: r.kb.POST,
+					method: r.jb.POST,
 					endpoint: Object(c.a)(`${e.apiUrl}/api/report`),
 					data: b(t)
 				}),
@@ -729,7 +729,7 @@
 					}
 				},
 				h = (e, t, o) => Object(s.a)(Object(i.a)(e, [d.a]), {
-					method: r.kb.POST,
+					method: r.jb.POST,
 					endpoint: Object(c.a)(`${e.apiUrl}/api/report`),
 					data: f(t, o)
 				}),
@@ -975,4 +975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.0449aa8165eeb5acc40d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.05948db51560c189270d.js.map

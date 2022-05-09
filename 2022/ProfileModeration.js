@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.2e0fba66348ed8ec1a77.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.b1b30a35a05f961906ed.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -301,7 +301,7 @@
 			})), n.d(t, "k", (function() {
 				return J
 			})), n.d(t, "o", (function() {
-				return K
+				return X
 			})), n.d(t, "f", (function() {
 				return $
 			})), n.d(t, "l", (function() {
@@ -435,8 +435,8 @@
 						})
 					}))
 				},
-				X = x.a.a("Link", D.a),
-				K = x.a.wrapped(X, "SubtextLink", D.a),
+				K = x.a.a("Link", D.a),
+				X = x.a.wrapped(K, "SubtextLink", D.a),
 				Z = x.a.wrapped(R.a, "LinkIcon", D.a),
 				$ = x.a.button("LinkButton", D.a),
 				ee = x.a.wrapped(O.a, "ArrowRight", D.a),
@@ -542,11 +542,11 @@
 					last: e.last,
 					indent: e.indent,
 					disabled: e.disabled
-				}, r.a.createElement(Y, null, r.a.createElement(X, {
+				}, r.a.createElement(Y, null, r.a.createElement(K, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
-				}, e.label, r.a.createElement(Z, null)), r.a.createElement(U, null, e.subtext)), r.a.createElement(Q, null, r.a.createElement(X, {
+				}, e.label, r.a.createElement(Z, null)), r.a.createElement(U, null, e.subtext)), r.a.createElement(Q, null, r.a.createElement(K, {
 					href: e.link,
 					onClick: e.onClick,
 					target: e.openInNewTab ? "_blank" : void 0
@@ -960,7 +960,7 @@
 						}, () => this.forceUnsticky = !1)) : k() >= w && this.setState({
 							sticky: !0
 						})
-					}, c.L), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
+					}, c.K), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
 						sticky: !1
 					}
 				}
@@ -1731,4 +1731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.2e0fba66348ed8ec1a77.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.b1b30a35a05f961906ed.js.map

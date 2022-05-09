@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.0f6fa9549eaa076708cb.js
-// Retrieved at 5/2/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.7133573de934438e2c98.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GoldTargetedOfferModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1360,7 +1360,7 @@
 					u = `${r.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					p = Object(i.a)(u);
 				return Object(o.a)(Object(c.a)(r, [a.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: p,
 					data: l
 				}).then(s.a)
@@ -1377,7 +1377,7 @@
 					correlation_id: d
 				};
 				return Object(o.a)(Object(c.a)(t, [a.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: l
 				}).then(s.a)
@@ -1396,7 +1396,7 @@
 					thing_id: d
 				};
 				return Object(o.a)(Object(c.a)(t, [a.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: u
 				}).then(s.a)
@@ -1417,7 +1417,7 @@
 					correlation_id: u
 				};
 				return Object(o.a)(Object(c.a)(t, [a.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: p
 				}).then(s.a)
@@ -1446,7 +1446,7 @@
 					thing_id: m
 				};
 				return Object(o.a)(Object(c.a)(r, [a.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: y
 				}).then(s.a)
@@ -1469,7 +1469,7 @@
 					thing_id: p
 				};
 				return Object(o.a)(Object(c.a)(r, [a.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: b
 				}).then(s.a)
@@ -1612,4 +1612,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.0f6fa9549eaa076708cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GoldTargetedOfferModal.7133573de934438e2c98.js.map

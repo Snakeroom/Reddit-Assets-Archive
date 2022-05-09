@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.6746bf2516706cb56b98.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.266b7aa4265674ec8214.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -175,7 +175,7 @@
 				C = n.n(x);
 			const {
 				fbt: E
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), _ = u.a.div("BladeContainer", C.a), N = u.a.wrapped(p.a, "CloseIcon", C.a), y = u.a.div("LoadingTitleContainer", C.a), O = u.a.div("LoadingNavContainer", C.a), k = u.a.div("ShortLoadingNav", C.a), S = u.a.wrapped(f.a, "ThemedChevron", C.a), L = e => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), _ = u.a.div("BladeContainer", C.a), N = u.a.wrapped(p.a, "CloseIcon", C.a), y = u.a.div("LoadingTitleContainer", C.a), O = u.a.div("LoadingNavContainer", C.a), k = u.a.div("ShortLoadingNav", C.a), S = u.a.wrapped(f.a, "ThemedChevron", C.a), j = e => {
 				let {
 					...t
 				} = e;
@@ -190,13 +190,13 @@
 				}), r.a.createElement(S, null)), r.a.createElement(O, null, r.a.createElement(k, null), r.a.createElement(S, null)), r.a.createElement(O, null, r.a.createElement("div", {
 					className: Object(l.a)(C.a.LoadingNav, t.isLoading && C.a.loading)
 				}), r.a.createElement(S, null)))))
-			}, j = Object(d.a)({
+			}, L = Object(d.a)({
 				getComponent: () => Object(m.a)(() => Promise.all([n.e("vendors~CryptoHarbergerTaxManageModal~HarbergerTaxManageModal~ModerationPages~PostCreation~Settings~~f8934a85"), n.e("StructuredStyles")]).then(n.bind(null, "./src/reddit/components/StructuredStyles/BladeDrawer/index.tsx"))).then(e => e.default),
-				ErrorComponent: () => r.a.createElement(L, {
+				ErrorComponent: () => r.a.createElement(j, {
 					gradientType: "posts",
 					isLoading: !1
 				}),
-				LoadingComponent: () => r.a.createElement(L, {
+				LoadingComponent: () => r.a.createElement(j, {
 					gradientType: "posts",
 					isLoading: !0
 				})
@@ -209,7 +209,7 @@
 				const t = e.moderatorPermissions && s()(e.moderatorPermissions).some(e => e);
 				return e.moderatorPermissions && t && e.isEditing ? r.a.createElement("div", {
 					className: Object(l.a)(C.a.Container, e.isSubscriptionsPinned && C.a.isSubscriptionPinned)
-				}, e.children, r.a.createElement(j, {
+				}, e.children, r.a.createElement(L, {
 					subredditId: e.subredditId
 				})) : r.a.createElement(a.Fragment, null, e.children)
 			})
@@ -403,7 +403,7 @@
 						}, () => this.forceUnsticky = !1)) : y() >= O && this.setState({
 							sticky: !0
 						})
-					}, d.L), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
+					}, d.K), this.forceUnsticky = !1, this.wrapperRef = null, this.state = {
 						sticky: !1
 					}
 				}
@@ -549,9 +549,9 @@
 					pageType: C.c.Inbox
 				})) : null
 			};
-			var L = n("./src/reddit/pages/NotificationsInbox/Content/EmptyStateViews/EmptyStateComponent.tsx");
+			var j = n("./src/reddit/pages/NotificationsInbox/Content/EmptyStateViews/EmptyStateComponent.tsx");
 			const {
-				fbt: j
+				fbt: L
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), I = "", w = .5, T = h.a.span("divider", k.a), P = h.a.wrapped(v.a, "NotificationUnit", k.a);
 			class F extends s.a.Component {
 				constructor() {
@@ -580,9 +580,9 @@
 							earlierNotifications: e,
 							todayNotifications: t
 						} = this.props, n = !(!e || !e.length), i = !(!t || !t.length);
-						return s.a.createElement(s.a.Fragment, null, i && s.a.createElement(T, null, j._("Today", null, {
+						return s.a.createElement(s.a.Fragment, null, i && s.a.createElement(T, null, L._("Today", null, {
 							hk: "2FZ72w"
-						})), i && s.a.createElement("ul", null, t.map(this.renderNotificationItem)), n && s.a.createElement(T, null, j._("Earlier", null, {
+						})), i && s.a.createElement("ul", null, t.map(this.renderNotificationItem)), n && s.a.createElement(T, null, L._("Earlier", null, {
 							hk: "1p7PDF"
 						})), n && s.a.createElement("ul", null, e && e.map(this.renderNotificationItem)))
 					}
@@ -605,7 +605,7 @@
 						userId: a
 					}), s.a.createElement("div", {
 						className: k.a.notificationsContainer
-					}, !r && n && s.a.createElement(x.a, null), !r && !n && s.a.createElement(L.a, {
+					}, !r && n && s.a.createElement(x.a, null), !r && !n && s.a.createElement(j.a, {
 						isLoggedIn: !0
 					}), r && this.renderNotifications(), r && !n && e && s.a.createElement(g.a, {
 						onChange: this.fetchNotifications,
@@ -658,8 +658,8 @@
 				q = n("./src/reddit/icons/fonts/index.tsx"),
 				Y = n("./src/reddit/pages/NotificationsInbox/NavBar/index.m.less"),
 				X = n.n(Y);
-			const V = h.a.wrapped(G.a, "Badge", X.a),
-				K = h.a.wrapped(Q.a, "Tab", X.a);
+			const K = h.a.wrapped(G.a, "Badge", X.a),
+				V = h.a.wrapped(Q.a, "Tab", X.a);
 			var Z = e => {
 				const {
 					messagesTabBadgeCount: t,
@@ -673,15 +673,15 @@
 					hk: "18kEAD"
 				})), s.a.createElement("nav", {
 					className: X.a.navBar
-				}, s.a.createElement("ul", null, s.a.createElement("li", null, s.a.createElement(K, {
+				}, s.a.createElement("ul", null, s.a.createElement("li", null, s.a.createElement(V, {
 					active: !0,
 					to: "/notifications"
 				}, J.fbt._("Activity", null, {
 					hk: "24wHCv"
-				}), s.a.createElement(V, {
+				}), s.a.createElement(K, {
 					isActive: !!n,
 					unreadCount: n
-				}))), s.a.createElement("li", null, s.a.createElement(K, {
+				}))), s.a.createElement("li", null, s.a.createElement(V, {
 					active: !1,
 					onMouseDown: () => {
 						i(Object(C.u)({
@@ -692,7 +692,7 @@
 					to: a ? "/message/unread" : "/message/messages"
 				}, J.fbt._("Messages", null, {
 					hk: "Xl3Wz"
-				}), s.a.createElement(V, {
+				}), s.a.createElement(K, {
 					isActive: a,
 					unreadCount: t
 				}))), s.a.createElement("li", null, s.a.createElement("button", {
@@ -741,4 +741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.6746bf2516706cb56b98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.266b7aa4265674ec8214.js.map

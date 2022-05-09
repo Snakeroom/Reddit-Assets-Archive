@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments.42c53c81993e5a2aeff8.js
-// Retrieved at 5/5/2022, 12:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments.27da7f476767a134a9a3.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments"], {
 		"./src/reddit/actions/pages/profileComments/index.ts": function(e, t, s) {
@@ -51,7 +51,7 @@
 				return r && (o = Object(j.a)(o)), Object(y.a)(e, {
 					data: s,
 					endpoint: o,
-					method: x.kb.GET
+					method: x.jb.GET
 				})
 			};
 			var E = s("./src/reddit/helpers/getTimeSortForListing/index.ts"),
@@ -557,7 +557,7 @@
 				componentDidMount() {
 					if (this.checkAndSendScreenview(), this.timerId) {
 						const e = g.c.end(this.timerId);
-						setTimeout(() => Object(g.b)(a.n.Redesign, {
+						setTimeout(() => Object(g.b)(a.m.Redesign, {
 							type: "mount",
 							component: "overviewChronoList",
 							duration: e
@@ -571,7 +571,7 @@
 					if (this.checkAndSendScreenview(), this.timerId && g.c.has(this.timerId)) {
 						const e = g.c.end(this.timerId);
 						if (e < 10) return;
-						setTimeout(() => Object(g.b)(a.n.Redesign, {
+						setTimeout(() => Object(g.b)(a.m.Redesign, {
 							duration: e,
 							type: "mount",
 							component: "overviewChronoList"
@@ -990,7 +990,7 @@
 					let {
 						match: s
 					} = t;
-					return Object(te.f)(e, c.lc + s.params.profileName)
+					return Object(te.f)(e, c.kc + s.params.profileName)
 				}, ve.c, (e, t) => {
 					let {
 						match: s
@@ -1091,7 +1091,7 @@
 				const k = {
 					sort: P,
 					baseUrl: I,
-					sortOptions: c.Eb,
+					sortOptions: c.Db,
 					timeSort: j
 				};
 				return i.a.createElement(be.a, {
@@ -1121,4 +1121,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.42c53c81993e5a2aeff8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments.27da7f476767a134a9a3.js.map

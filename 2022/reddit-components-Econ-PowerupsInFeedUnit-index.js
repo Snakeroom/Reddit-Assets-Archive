@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.8f51061a9564098f4b4b.js
-// Retrieved at 5/5/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.131806bce7cbce2a0344.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -43,7 +43,7 @@
 					const f = Object(_.b)(r()),
 						h = await (async (e, t, a, s, r) => Object(c.a)(Object(d.a)(e, [l.a]), {
 							endpoint: `${n.a.snoovatarUrl}/api/snoovatar?skip_telemetry=true`,
-							method: i.kb.POST,
+							method: i.jb.POST,
 							headers: {
 								"Content-Type": "application/json ",
 								"X-CSRF-Token": r || ""
@@ -66,7 +66,7 @@
 					try {
 						const t = await (async e => Object(c.a)(Object(d.a)(e, [l.a]), {
 							endpoint: `${n.a.snoovatarUrl}/api/account`,
-							method: i.kb.GET
+							method: i.jb.GET
 						}))(s());
 						t.ok && e(b(t.body))
 					} catch (r) {
@@ -79,7 +79,7 @@
 					try {
 						const t = await (async e => Object(c.a)(Object(d.a)(e, [l.a]), {
 							endpoint: `${n.a.snoovatarUrl}/api/snoovatars/random:byId`,
-							method: i.kb.GET
+							method: i.jb.GET
 						}))(s());
 						t.ok && e(E(t.body))
 					} catch (r) {
@@ -336,8 +336,8 @@
 				I = a("./src/reddit/icons/svgs/PowerupTier2/index.tsx"),
 				U = a("./src/reddit/components/Econ/PowerupsInFeedUnit/PostUnlock/CommunityGearUnit.m.less"),
 				P = a.n(U),
-				k = a("./src/higherOrderComponents/asModal/index.tsx"),
-				j = a("./src/lib/opener/index.ts"),
+				j = a("./src/higherOrderComponents/asModal/index.tsx"),
+				k = a("./src/lib/opener/index.ts"),
 				A = a("./src/reddit/actions/snoovatar.ts"),
 				M = a("./src/reddit/actions/toaster.ts"),
 				T = a("./src/reddit/actions/urlRequested.ts"),
@@ -354,7 +354,7 @@
 			const {
 				fbt: K
 			} = a("./node_modules/fbt/lib/FbtPublic.js");
-			var Y = Object(k.a)(e => {
+			var Y = Object(j.a)(e => {
 				let {
 					subredditId: t,
 					closeModal: a
@@ -390,9 +390,9 @@
 					className: H.a.legalTextContainer
 				}, o.a.createElement("span", null, b()), o.a.createElement("a", {
 					href: f,
-					target: j.d.BLANK,
+					target: k.d.BLANK,
 					className: H.a.learnMoreLink,
-					rel: j.c
+					rel: k.c
 				}, v()))), o.a.createElement("div", {
 					className: H.a.buttonsRow
 				}, o.a.createElement(N.t, {
@@ -709,9 +709,9 @@
 			})), a.d(t, "u", (function() {
 				return P
 			})), a.d(t, "r", (function() {
-				return k
-			})), a.d(t, "a", (function() {
 				return j
+			})), a.d(t, "a", (function() {
+				return k
 			})), a.d(t, "s", (function() {
 				return A
 			})), a.d(t, "c", (function() {
@@ -753,8 +753,8 @@
 				I = r.a.div("ModalMain", u.a),
 				U = r.a.textarea("TextArea", u.a),
 				P = r.a.wrapped(i.l, "WarningButton", u.a),
-				k = r.a.wrapped(i.l, "PrimaryButton", u.a),
-				j = r.a.wrapped(i.o, "CancelButton", u.a),
+				j = r.a.wrapped(i.l, "PrimaryButton", u.a),
+				k = r.a.wrapped(i.o, "CancelButton", u.a),
 				A = r.a.wrapped(i.r, "RemoveButton", u.a),
 				M = e => {
 					let {
@@ -1386,4 +1386,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.8f51061a9564098f4b4b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.131806bce7cbce2a0344.js.map

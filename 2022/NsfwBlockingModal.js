@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.dda4afe0608f0100b1cf.js
-// Retrieved at 5/5/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NsfwBlockingModal.800d9b457ad5707191d8.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NsfwBlockingModal"], {
 		"./src/reddit/components/Footer/index.m.less": function(e, t, n) {
@@ -92,9 +92,9 @@
 					}) : null);
 				return i.a.createElement(m.a, {
 					contentTitle: (() => {
-						if (n === a.s.COMMENTS_PAGE || n === a.s.SUBREDDIT) {
+						if (n === a.r.COMMENTS_PAGE || n === a.r.SUBREDDIT) {
 							if (r) return Object(C.c)(r)
-						} else if ((n === a.s.PROFILE_COMMENTS || n === a.s.PROFILE_OVERVIEW || n === a.s.PROFILE_POSTS) && s) return Object(C.d)(s);
+						} else if ((n === a.r.PROFILE_COMMENTS || n === a.r.PROFILE_OVERVIEW || n === a.r.PROFILE_POSTS) && s) return Object(C.d)(s);
 						return null
 					})()
 				})
@@ -201,7 +201,7 @@
 						})))(r === E.a.Blurred);
 					return Object(a.useEffect)(() => {
 						(e => {
-							Object(v.a)(10) && Object(x.b)(g.n.Redesign, {
+							Object(v.a)(10) && Object(x.b)(g.m.Redesign, {
 								type: x.a.NsfwBlocking,
 								data: {
 									variant: e
@@ -293,10 +293,10 @@
 					}, o.a.createElement(b.b, {
 						textColor: l
 					})), o.a.createElement(P, {
-						qrCodeAsset: (() => r === p.xc.Enabled || s === p.jb.BlurredPreview || s === p.jb.NoPreview ? N.d2x_nsfw_signup_blocking_de_v1 : N.d2x_nsfw_signup_blocking_non_us_v1)()
+						qrCodeAsset: (() => r === p.wc.Enabled || s === p.jb.BlurredPreview || s === p.jb.NoPreview ? N.d2x_nsfw_signup_blocking_de_v1 : N.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.dda4afe0608f0100b1cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NsfwBlockingModal.800d9b457ad5707191d8.js.map

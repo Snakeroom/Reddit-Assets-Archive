@@ -1,11 +1,11 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.0508b88d2217f8dc79b8.js
-// Retrieved at 5/5/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.d35043c40da62946ed6f.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
 			"use strict";
 			var r = n("./src/lib/constants/index.ts");
-			const a = 120 * r.ib;
+			const a = 120 * r.hb;
 			t.a = async () => {
 				let e = await (async () => await new Promise(e => {
 					const t = window.RequestFileSystem || window.webkitRequestFileSystem;
@@ -142,9 +142,9 @@
 				I = n("./src/reddit/constants/experiments.ts"),
 				x = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const k = e => Object(x.c)(e, {
-				experimentName: I.Tb,
+				experimentName: I.Sb,
 				experimentEligibilitySelector: x.a
-			}) === I.sd;
+			}) === I.rd;
 			var N = n("./src/reddit/selectors/meta.ts"),
 				w = n("./src/reddit/selectors/user.ts");
 			let E = !1;
@@ -3925,35 +3925,35 @@
 			const s = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.zd.MemesBadge,
+				}) === r.yd.MemesBadge,
 				o = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.zd.MemesNoBadge,
+				}) === r.yd.MemesNoBadge,
 				i = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.zd.PnEmailBadge,
+				}) === r.yd.PnEmailBadge,
 				c = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.zd.PnEmailNoBadge,
+				}) === r.yd.PnEmailNoBadge,
 				d = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.zd.KarmaBadge,
+				}) === r.yd.KarmaBadge,
 				l = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.zd.KarmaNoBadge,
+				}) === r.yd.KarmaNoBadge,
 				u = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.zd.PopularBadge,
+				}) === r.yd.PopularBadge,
 				p = e => Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
 					experimentName: r.wb
-				}) === r.zd.PopularNoBadge,
+				}) === r.yd.PopularNoBadge,
 				m = e => s(e) || i(e) || l(e) || p(e)
 		},
 		"./src/reddit/selectors/muted.ts": function(e, t, n) {
@@ -4016,4 +4016,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.0508b88d2217f8dc79b8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.d35043c40da62946ed6f.js.map

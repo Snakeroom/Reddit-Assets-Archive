@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.72ebd023fa17731fccca.js
-// Retrieved at 5/5/2022, 3:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.11ff4bbece567a0f95d7.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -4796,12 +4796,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.rf.SmIcon:
+						case h.qf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.rf.SmIconHc:
+						case h.qf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -4910,7 +4910,7 @@
 					u = `${r.apiUrl}/api/v2/gold/paypal/initiate_premium_payment`,
 					m = Object(i.a)(u);
 				return Object(s.a)(Object(a.a)(r, [o.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: m,
 					data: l
 				}).then(c.a)
@@ -4927,7 +4927,7 @@
 					correlation_id: d
 				};
 				return Object(s.a)(Object(a.a)(t, [o.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_coin_purchase_order`,
 					data: l
 				}).then(c.a)
@@ -4946,7 +4946,7 @@
 					thing_id: d
 				};
 				return Object(s.a)(Object(a.a)(t, [o.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/create_award_purchase_order`,
 					data: u
 				}).then(c.a)
@@ -4967,7 +4967,7 @@
 					correlation_id: u
 				};
 				return Object(s.a)(Object(a.a)(t, [o.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: `${t.apiUrl}/api/v2/gold/paypal/execute_coin_order`,
 					data: m
 				}).then(c.a)
@@ -4996,7 +4996,7 @@
 					thing_id: h
 				};
 				return Object(s.a)(Object(a.a)(r, [o.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_coin_with_gild_order`,
 					data: f
 				}).then(c.a)
@@ -5019,7 +5019,7 @@
 					thing_id: m
 				};
 				return Object(s.a)(Object(a.a)(r, [o.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: `${r.apiUrl}/api/v2/gold/paypal/execute_award_purchase_order`,
 					data: p
 				}).then(c.a)
@@ -5900,12 +5900,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.lf
+						experimentName: n.kf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.rf.SmIcon || t === n.rf.SmIconHc
+					return t === n.qf.SmIcon || t === n.qf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5943,4 +5943,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.72ebd023fa17731fccca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.11ff4bbece567a0f95d7.js.map

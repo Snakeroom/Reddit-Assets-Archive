@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrisisFlow.e8d8c518e2aa4fe51a32.js
-// Retrieved at 4/18/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrisisFlow.ae9dc8bd20a77f858b4b.js
+// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrisisFlow", "reddit-components-CrisisFlow-CrisisFlowPage"], {
 		"./src/reddit/actions/reportFlow/index.ts": function(e, s, t) {
@@ -80,10 +80,10 @@
 				_ = t.n(f);
 			const {
 				fbt: b
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), E = g.a.div("CrisisContent", _.a), v = g.a.div("CrisisImageContainer", x.a), k = g.a.img("CrisisImage", _.a), L = g.a.h2("CrisisTitle", x.a), R = g.a.p("CrisisDescription", x.a);
-			var F = e => r.a.createElement(E, null, r.a.createElement(v, null, r.a.createElement(k, {
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), E = g.a.div("CrisisContent", _.a), v = g.a.div("CrisisImageContainer", x.a), L = g.a.img("CrisisImage", _.a), k = g.a.h2("CrisisTitle", x.a), R = g.a.p("CrisisDescription", x.a);
+			var F = e => r.a.createElement(E, null, r.a.createElement(v, null, r.a.createElement(L, {
 					src: `${h.a.assetPath}/img/crisis-line-icon.png`
-				})), r.a.createElement(L, null, b._("Would you like Reddit to reach out to {username} ?", [b._param("username", r.a.createElement("span", null, "u/", e.username))], {
+				})), r.a.createElement(k, null, b._("Would you like Reddit to reach out to {username} ?", [b._param("username", r.a.createElement("span", null, "u/", e.username))], {
 					hk: "3RFVlj"
 				})), r.a.createElement(R, null, b._("We’ve partnered with {=Crisis Text Line} to provide redditors with support from trained Crisis Counselors, and will reach out (confidentially) to let {username} know that there are people who are here for them.", [b._param("=Crisis Text Line", r.a.createElement(C.a, {
 					href: "https://www.crisistextline.org/",
@@ -382,7 +382,7 @@
 				e.Rule = "rule", e.SiteRule = "siteRule", e.Other = "other", e.FileComplaint = "fileComplaint", e.CrisisTextLine = "crisisTextLine"
 			}(m || (m = {}));
 			const p = (e, s) => Object(r.a)(Object(o.a)(e, [a.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
 					data: C(s)
 				}),
@@ -415,7 +415,7 @@
 					}
 				},
 				h = (e, s, t) => Object(r.a)(Object(o.a)(e, [a.a]), {
-					method: n.kb.POST,
+					method: n.jb.POST,
 					endpoint: Object(l.a)(`${e.apiUrl}/api/report`),
 					data: g(s, t)
 				}),
@@ -636,4 +636,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.e8d8c518e2aa4fe51a32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrisisFlow.ae9dc8bd20a77f858b4b.js.map
