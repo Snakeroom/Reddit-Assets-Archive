@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b80b993163b734027390.js
-// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.d13dda4ca1ff33cf60c2.js
+// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -345,7 +345,7 @@
 				}
 			};
 			const K = {};
-			var G = function() {
+			var q = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : K,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -364,7 +364,7 @@
 							return e
 					}
 				},
-				q = r("./src/lib/omitKey/index.ts");
+				G = r("./src/lib/omitKey/index.ts");
 			const Q = {};
 			var Y = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Q,
@@ -383,7 +383,7 @@
 									dist: s,
 									token: n
 								}
-							} : Object(q.a)(e, r)
+							} : Object(G.a)(e, r)
 						}
 						default:
 							return e
@@ -392,7 +392,7 @@
 				Z = Object(L.c)({
 					api: D,
 					fetchedTokens: V,
-					ids: G,
+					ids: q,
 					loadMore: Y
 				});
 			const J = {};
@@ -1034,13 +1034,13 @@
 							return e
 					}
 				},
-				G = Object(S.c)({
+				q = Object(S.c)({
 					api: V,
 					result: K
 				});
-			const q = {};
+			const G = {};
 			var Q = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : q,
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : G,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case _.r: {
@@ -1084,7 +1084,7 @@
 					inContext: L,
 					loadMore: A,
 					models: W,
-					search: G,
+					search: q,
 					userOrder: Q
 				});
 			Object(j.a)({
@@ -1460,8 +1460,8 @@
 				z = r("./src/reddit/components/ProfileIdCard/AwardedLastMonth.tsx"),
 				V = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.tsx"),
 				K = r("./src/reddit/actions/inContextModeration.ts"),
-				G = r("./src/reddit/actions/modal.ts"),
-				q = r("./src/reddit/actions/subredditModeration/ban.ts"),
+				q = r("./src/reddit/actions/modal.ts"),
+				G = r("./src/reddit/actions/subredditModeration/ban.ts"),
 				Q = r("./src/reddit/constants/modals.ts"),
 				Y = r("./src/reddit/components/Hovercards/helpers.ts"),
 				Z = r("./src/reddit/icons/fonts/index.tsx"),
@@ -1539,8 +1539,8 @@
 						contextId: n
 					} = t;
 					return {
-						onUnbanUser: t => e(Object(q.e)(s, t)),
-						requestUserBanInfo: () => e(Object(q.c)(s, {
+						onUnbanUser: t => e(Object(G.e)(s, t)),
+						requestUserBanInfo: () => e(Object(G.c)(s, {
 							username: r
 						})),
 						toggleBanModal: () => {
@@ -1548,14 +1548,14 @@
 								username: r,
 								subredditId: s,
 								contextId: n
-							})), e(Object(q.a)(s, r))
+							})), e(Object(G.a)(s, r))
 						},
 						toggleMuteModal: () => {
 							e(Object(K.d)({
 								username: r,
 								subredditId: s,
 								contextId: n
-							})), e(Object(G.i)(Q.a.MUTE_USER))
+							})), e(Object(q.i)(Q.a.MUTE_USER))
 						}
 					}
 				})(se),
@@ -3277,8 +3277,8 @@
 				K = Object(m.c)({
 					isOverlayOpen: U.i
 				}),
-				G = Object(c.b)(K),
-				q = {};
+				q = Object(c.b)(K),
+				G = {};
 
 			function Q(e) {
 				return e === document
@@ -3616,8 +3616,8 @@
 					}), this.props.disableScrollCache && !this.props.preventScrollOnMount && Object(_.c)(this.scrollContainer, 0), this.setupScrollHandler(), h.a.write(() => {
 						if (!this.props.disableScrollCache) {
 							const e = this.getCacheKey(),
-								t = q[e];
-							o()(t) || (q[e] = void 0, this.scrollContainer && Object(_.c)(this.scrollContainer, t))
+								t = G[e];
+							o()(t) || (G[e] = void 0, this.scrollContainer && Object(_.c)(this.scrollContainer, t))
 						}
 						this.callOnScrollForItemsChanged(), this.props.onLastVisibleChildRendered && this.props.onLastVisibleChildRendered()
 					}), h.a.read(() => {
@@ -3646,7 +3646,7 @@
 				componentWillUnmount() {
 					if (this.callExitedViewportForUnmount(), this.cleanupScrollHandler(), clearTimeout(this.updateRenderableChildrenHandle), this.cancelPopulateRenderableChildrenWhenIdle(), this.scrollContainer && !this.props.disableScrollCache) {
 						const e = this.getCacheKey();
-						q[e] = this.lastRenderPosition
+						G[e] = this.lastRenderPosition
 					}
 					this.childMap = new j.a("id"), this.itemsInViewport = new j.a("id"), this.wrapperRefFNs = {}, this.childRefFns = {}, this.containerRef = null, this.loadMoreEl = void 0, this.scrollContainer = void 0, this.unmountItemsIdleId && (Object(u.cancelIdleCallback)(this.unmountItemsIdleId), this.unmountItemsIdleId = null)
 				}
@@ -3802,7 +3802,7 @@
 					return void 0 === e.onLoadMore || "loadMoreToken" in e
 				}
 			}
-			t.b = G(Object(L.b)(ce))
+			t.b = q(Object(L.b)(ce))
 		},
 		"./src/reddit/components/Scroller/getDocumentTop.ts": function(e, t, r) {
 			"use strict";
@@ -4044,7 +4044,7 @@
 					}, s[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.yc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.xc.GreyRereddit ? e.reredditButtons : [];
 					return n.a.createElement(j, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -6179,8 +6179,8 @@
 				}) === s.y.Enabled,
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.Uc
-				}) === s.sd
+					experimentName: s.Sc
+				}) === s.qd
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, r) {
 			"use strict";
@@ -6231,4 +6231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.b80b993163b734027390.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.d13dda4ca1ff33cf60c2.js.map

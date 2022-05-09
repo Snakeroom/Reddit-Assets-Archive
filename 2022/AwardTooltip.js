@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardTooltip.f2a7f87243f43944fab8.js
-// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardTooltip.13ed7b7aa20941acc2d1.js
+// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardTooltip"], {
 		"./src/reddit/components/AwardTooltip/index.m.less": function(e, t, r) {
@@ -69,8 +69,8 @@
 			const k = Object(d.c)({
 					canFlagAwards: e => Object(x.c)(e, {
 						experimentEligibilitySelector: x.a,
-						experimentName: w.Sc
-					}) === w.wd.Enabled,
+						experimentName: w.Qc
+					}) === w.ud.Enabled,
 					currentUser: g.k,
 					moderatorPermissions: (e, t) => {
 						let {
@@ -553,4 +553,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.f2a7f87243f43944fab8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardTooltip.13ed7b7aa20941acc2d1.js.map

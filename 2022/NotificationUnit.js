@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationUnit.99471de8df33807489cb.js
-// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationUnit.e5eb678a8eebfb1037da.js
+// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationUnit"], {
 		"./src/reddit/components/NotificationUnit/Avatar.tsx": function(e, t, i) {
@@ -442,9 +442,9 @@
 				w = "",
 				h = .5,
 				y = e => {
-					var t, i, n, s, C, y, S, U, k, j, M, R;
+					var t, i, n, s, C, y, S, U, k, j, M, P;
 					const L = Object(f.a)(),
-						P = Object(E.d)(),
+						R = Object(E.d)(),
 						D = Object(E.e)(g.cb),
 						V = Object(E.e)(O.d),
 						H = Object(E.e)(O.e),
@@ -490,14 +490,14 @@
 					}, ye = ne.messageType === x.a.AwardReceived, Se = me === x.a.LifecyclePostSuggestions, Ue = ye ? null === (C = null == ne ? void 0 : ne.awarding) || void 0 === C ? void 0 : C.id : "", ke = null === (S = null === (y = null == ne ? void 0 : ne.awarding) || void 0 === y ? void 0 : y.target) || void 0 === S ? void 0 : S.permalink, je = null === (k = null === (U = null == ne ? void 0 : ne.awarding) || void 0 === U ? void 0 : U.award) || void 0 === k ? void 0 : k.id;
 					let Me = (null === (j = null == ne ? void 0 : ne.post) || void 0 === j ? void 0 : j.permalink) || oe;
 					ye && ke ? Me = ke : Se && oe && (Me = oe);
-					const Re = null === (R = null === (M = null == ne ? void 0 : ne.awarding) || void 0 === M ? void 0 : M.awarder) || void 0 === R ? void 0 : R.isAcceptingChats,
+					const Pe = null === (P = null === (M = null == ne ? void 0 : ne.awarding) || void 0 === M ? void 0 : M.awarder) || void 0 === P ? void 0 : P.isAcceptingChats,
 						Le = e => {
 							L(Object(m.m)({
 								...he,
 								actionInfoType: e
 							}))
 						},
-						Pe = e => {
+						Re = e => {
 							L(Object(m.z)({
 								...he,
 								actionInfoType: e
@@ -546,7 +546,7 @@
 							className: Object(d.a)(T.a.body, {
 								[T.a.inAppNotification]: G
 							})
-						}, ie), !Q && (Re || we || ye || Te || W && G) && c.a.createElement(A, {
+						}, ie), !Q && (Pe || we || ye || Te || W && G) && c.a.createElement(A, {
 							context: ne,
 							notificationId: le,
 							isUnread: Oe,
@@ -569,7 +569,7 @@
 								[T.a.inAppNotification]: G
 							}),
 							onClick: e => {
-								(null == Ne ? void 0 : Ne.removedByCategory) ? (e.preventDefault(), P(Object(v.f)({
+								(null == Ne ? void 0 : Ne.removedByCategory) ? (e.preventDefault(), R(Object(v.f)({
 									kind: I.b.Error,
 									text: a.fbt._("Sorry, this content is no longer available.", null, {
 										hk: "3sVhIi"
@@ -594,7 +594,7 @@
 					}), He)), G ? null : c.a.createElement(u.a, {
 						decreaseSubUpdates: () => {
 							const t = m.e.DecreaseSubredditUpdates;
-							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(w), Ee && e.decreaseSubredditNotifications && e.decreaseSubredditNotifications(Ee, () => Pe(t)), Le(t)
+							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(w), Ee && e.decreaseSubredditNotifications && e.decreaseSubredditNotifications(Ee, () => Re(t)), Le(t)
 						},
 						disableNotificationUpdates: () => {
 							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(w), e.disableNotificationUpdates && e.disableNotificationUpdates(_e), Le(m.e.HideSubreddit)
@@ -604,7 +604,7 @@
 						},
 						hideSubredditNotifications: () => {
 							const t = m.e.HideSubreddit;
-							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(w), e.hideSubredditNotifications && e.hideSubredditNotifications(Ee, () => Pe(t)), Le(t)
+							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(w), e.hideSubredditNotifications && e.hideSubredditNotifications(Ee, () => Re(t)), Le(t)
 						},
 						blockAwarder: () => {
 							e.isInTooltip && e.setActiveOverflowMenuId && e.setActiveOverflowMenuId(w), e.blockAwarder && e.blockAwarder(Ue), Le(m.e.BlockAwarder)
@@ -1319,12 +1319,12 @@
 					experimentName: o.Fb,
 					experimentEligibilitySelector: c
 				}), s.a),
-				l = Object(n.a)(d, e => e === o.Rd.SeePostCTAs),
-				u = Object(n.a)(d, e => e === o.Rd.ReplyCTAs),
-				p = Object(n.a)(d, e => e === o.Rd.AllCTAs1),
-				b = Object(n.a)(d, e => e === o.Rd.AllCTAs2),
-				m = Object(n.a)(d, e => e === o.Rd.ReplyPc)
+				l = Object(n.a)(d, e => e === o.Pd.SeePostCTAs),
+				u = Object(n.a)(d, e => e === o.Pd.ReplyCTAs),
+				p = Object(n.a)(d, e => e === o.Pd.AllCTAs1),
+				b = Object(n.a)(d, e => e === o.Pd.AllCTAs2),
+				m = Object(n.a)(d, e => e === o.Pd.ReplyPc)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.99471de8df33807489cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationUnit.e5eb678a8eebfb1037da.js.map
