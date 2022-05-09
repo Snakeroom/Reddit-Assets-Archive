@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AdminPanel.472c01d00e4afb7af9bc.js
-// Retrieved at 5/9/2022, 10:40:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AdminPanel.1189a7bb6db798122b14.js
+// Retrieved at 5/9/2022, 11:10:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AdminPanel"], {
 		"./src/reddit/components/AdminPanel/CopyLink/index.m.less": function(e, t, n) {
@@ -187,6 +187,13 @@
 				uid: "pEjqhL11kG7sY-sulhMu4"
 			}
 		},
+		"./src/reddit/components/AdminPanel/Utilities/Canary/index.m.less": function(e, t, n) {
+			e.exports = {
+				row: "TgVyLHtwclbRK105ERJF5",
+				label: "_1Uue6sHHSBq_9ge4yksTM8",
+				buttons: "_2qqQLpIIx9FQahoy-pcSgc"
+			}
+		},
 		"./src/reddit/components/AdminPanel/Utilities/Section.m.less": function(e, t, n) {
 			e.exports = {
 				Title: "e2CkOrLQHSgwcUTeT6iU1",
@@ -238,7 +245,7 @@
 		"./src/reddit/components/AdminPanel/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "default", (function() {
-				return bs
+				return Ns
 			}));
 			var s = n("./node_modules/react/index.js"),
 				a = n.n(s),
@@ -277,10 +284,10 @@
 					}, this.state.displaySuccess ? a.a.createElement(b, null, "Copied!") : this.props.children)
 				}
 			}
-			var _ = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
-				w = n("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
-				f = n("./src/reddit/components/AdminPanel/ObjectViewer/index.m.less"),
-				y = n.n(f),
+			var w = n("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
+				_ = n("./src/reddit/icons/svgs/ChevronUp/index.tsx"),
+				y = n("./src/reddit/components/AdminPanel/ObjectViewer/index.m.less"),
+				f = n.n(y),
 				O = n("./src/lib/classNames/index.ts");
 
 			function N() {
@@ -292,7 +299,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const S = g.a.div("Controls", y.a),
+			const S = g.a.div("Controls", f.a),
 				j = g.a.wrapped(e => {
 					let {
 						className: t,
@@ -301,20 +308,20 @@
 					} = e;
 					return a.a.createElement("button", N({
 						className: Object(O.a)(t, {
-							[y.a.mIsSelected]: n
+							[f.a.mIsSelected]: n
 						})
 					}, s))
-				}, "Button", y.a),
-				k = g.a.wrapped(C, "CopyLink", y.a),
-				A = g.a.div("ViewTypeContainer", y.a),
-				P = g.a.wrapped(_.a, "Expand", y.a),
-				T = g.a.wrapped(w.a, "Collapse", y.a),
-				I = g.a.div("KeyValuePair", y.a),
-				L = g.a.wrapped(I, "CollpasedObjectPreview", y.a),
-				B = g.a.div("Key", y.a),
-				F = g.a.div("Value", y.a),
-				M = g.a.div("PaddingWrapper", y.a),
-				U = g.a.pre("JSONBlock", y.a);
+				}, "Button", f.a),
+				k = g.a.wrapped(C, "CopyLink", f.a),
+				A = g.a.div("ViewTypeContainer", f.a),
+				P = g.a.wrapped(w.a, "Expand", f.a),
+				T = g.a.wrapped(_.a, "Collapse", f.a),
+				I = g.a.div("KeyValuePair", f.a),
+				L = g.a.wrapped(I, "CollpasedObjectPreview", f.a),
+				B = g.a.div("Key", f.a),
+				F = g.a.div("Value", f.a),
+				U = g.a.div("PaddingWrapper", f.a),
+				M = g.a.pre("JSONBlock", f.a);
 			class D extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
@@ -331,7 +338,7 @@
 						onClick: this.toggleCollapse
 					}, a.a.createElement(B, {
 						title: this.props.keyStr
-					}, this.props.keyStr), a.a.createElement(F, null, `{ ${t=e,n="entry",s="entries",s||(s=`${n}s`),1===t?`${t} ${n}`:`${t} ${s}`} }`), this.state.isCollapsed ? a.a.createElement(P, null) : a.a.createElement(T, null)), !this.state.isCollapsed && a.a.createElement(V, {
+					}, this.props.keyStr), a.a.createElement(F, null, `{ ${t=e,n="entry",s="entries",s||(s=`${n}s`),1===t?`${t} ${n}`:`${t} ${s}`} }`), this.state.isCollapsed ? a.a.createElement(P, null) : a.a.createElement(T, null)), !this.state.isCollapsed && a.a.createElement(Q, {
 						obj: this.props.obj
 					}));
 					var t, n, s
@@ -350,7 +357,7 @@
 				render() {
 					return a.a.createElement("div", {
 						className: this.props.className
-					}, a.a.createElement(M, null, this.state.viewingAsJSON ? this.renderJSON() : this.renderTree(), this.props.topLevel && this.renderControls()))
+					}, a.a.createElement(U, null, this.state.viewingAsJSON ? this.renderJSON() : this.renderTree(), this.props.topLevel && this.renderControls()))
 				}
 				renderTree() {
 					return Object.keys(this.props.obj).map(e => {
@@ -361,7 +368,7 @@
 					})
 				}
 				renderJSON() {
-					return a.a.createElement(U, null, JSON.stringify(this.props.obj, null, 4))
+					return a.a.createElement(M, null, JSON.stringify(this.props.obj, null, 4))
 				}
 				renderObject(e, t) {
 					return a.a.createElement(D, {
@@ -392,16 +399,16 @@
 					}, "json"))
 				}
 			}
-			const V = g.a.wrapped(R, "ObjectViewerWithPadding", y.a);
-			var Q = n("./src/reddit/layout/row/Inline/index.tsx"),
+			const Q = g.a.wrapped(R, "ObjectViewerWithPadding", f.a);
+			var V = n("./src/reddit/layout/row/Inline/index.tsx"),
 				K = n("./src/reddit/components/AdminPanel/Event/index.m.less"),
-				G = n.n(K);
-			const H = g.a.wrapped(Q.a, "EventHeader", G.a),
-				z = g.a.wrapped(Q.a, "EventName", G.a),
-				J = g.a.span("AdTitle", G.a),
-				W = g.a.span("Event", G.a),
-				q = g.a.span("Value", G.a);
-			class Y extends a.a.Component {
+				H = n.n(K);
+			const G = g.a.wrapped(V.a, "EventHeader", H.a),
+				z = g.a.wrapped(V.a, "EventName", H.a),
+				J = g.a.span("AdTitle", H.a),
+				q = g.a.span("Event", H.a),
+				W = g.a.span("Value", H.a);
+			class X extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						expanded: !1
@@ -417,17 +424,17 @@
 					} = this.props, {
 						expanded: t
 					} = this.state;
-					return a.a.createElement("div", null, a.a.createElement(H, {
+					return a.a.createElement("div", null, a.a.createElement(G, {
 						onClick: this.toggleCollapse
-					}, a.a.createElement(z, null, a.a.createElement(J, null, e.adTitle), a.a.createElement(W, null, e.event), a.a.createElement(q, null, e.value)), t ? a.a.createElement(T, null) : a.a.createElement(P, null)), t && a.a.createElement(R, {
+					}, a.a.createElement(z, null, a.a.createElement(J, null, e.adTitle), a.a.createElement(q, null, e.event), a.a.createElement(W, null, e.value)), t ? a.a.createElement(T, null) : a.a.createElement(P, null)), t && a.a.createElement(R, {
 						topLevel: !0,
 						obj: e
 					}))
 				}
 			}
-			var X = n("./src/reddit/components/AdminPanel/PanelHeader/index.m.less"),
-				Z = n.n(X);
-			const $ = g.a.wrapped(_.a, "BackButton", Z.a),
+			var Y = n("./src/reddit/components/AdminPanel/PanelHeader/index.m.less"),
+				Z = n.n(Y);
+			const $ = g.a.wrapped(w.a, "BackButton", Z.a),
 				ee = g.a.div("Title", Z.a);
 			var te = g.a.wrapped(e => a.a.createElement("div", {
 					className: e.className
@@ -472,7 +479,7 @@
 						className: this.props.className,
 						title: "Ad Events",
 						onBack: this.props.onBack
-					}, t.map(e => a.a.createElement(Y, {
+					}, t.map(e => a.a.createElement(X, {
 						key: e.adPostId + e.event,
 						adEvent: e
 					})))
@@ -490,18 +497,18 @@
 				e[e.VALID = 0] = "VALID", e[e.INVALID = 1] = "INVALID", e[e.MISSINGSCHEMA = 2] = "MISSINGSCHEMA"
 			}(me || (me = {}));
 			const Ce = new ge.a(be.a),
-				_e = e => {
+				we = e => {
 					const t = {};
 					return Object.keys(e).forEach(n => {
 						const s = e[n];
 						if (!he()(s))
 							if ("object" == typeof s) {
-								const e = _e(s);
+								const e = we(s);
 								Object.keys(e).length && (t[n] = e)
 							} else t[n] = s
 					}), t
 				};
-			class we extends a.a.Component {
+			class _e extends a.a.Component {
 				constructor(e) {
 					super(e), this.state = {
 						expanded: !1
@@ -534,55 +541,55 @@
 						{
 							expanded: t
 						} = this.state,
-						n = _e(JSON.parse(JSON.stringify(e)));
-					return a.a.createElement(a.a.Fragment, null, a.a.createElement(Q.a, {
-						className: Object(O.a)(G.a.EventHeader),
+						n = we(JSON.parse(JSON.stringify(e)));
+					return a.a.createElement(a.a.Fragment, null, a.a.createElement(V.a, {
+						className: Object(O.a)(H.a.EventHeader),
 						onClick: this.toggleCollapse
-					}, a.a.createElement(Q.a, {
-						className: G.a.EventName
-					}, a.a.createElement(Q.a, {
-						className: G.a.tooltip
+					}, a.a.createElement(V.a, {
+						className: H.a.EventName
+					}, a.a.createElement(V.a, {
+						className: H.a.tooltip
 					}, this.eventStatus === me.INVALID && a.a.createElement(a.a.Fragment, null, a.a.createElement(xe.a, {
-						className: Object(O.a)(G.a.icon, G.a.errorIcon)
+						className: Object(O.a)(H.a.icon, H.a.errorIcon)
 					}), a.a.createElement("span", {
-						className: Object(O.a)(G.a.tooltiptext, G.a.error)
+						className: Object(O.a)(H.a.tooltiptext, H.a.error)
 					}, "This event is invalid. ", a.a.createElement("br", null), a.a.createElement("a", {
-						className: G.a.Link,
+						className: H.a.Link,
 						href: this.getUrlToSchema(),
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, this.validationError.message))), this.eventStatus === me.VALID && a.a.createElement(a.a.Fragment, null, a.a.createElement(ve.a, {
-						className: Object(O.a)(G.a.icon, G.a.successIcon)
+						className: Object(O.a)(H.a.icon, H.a.successIcon)
 					}), a.a.createElement("span", {
-						className: Object(O.a)(G.a.tooltiptext, G.a.success)
+						className: Object(O.a)(H.a.tooltiptext, H.a.success)
 					}, "This event matches its schema.", a.a.createElement("a", {
-						className: G.a.Link,
+						className: H.a.Link,
 						href: this.getUrlToSchema(),
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, "View schema."))), this.eventStatus === me.MISSINGSCHEMA && a.a.createElement(a.a.Fragment, null, a.a.createElement(Ee.a, {
-						className: Object(O.a)(G.a.icon, G.a.warningIcon)
+						className: Object(O.a)(H.a.icon, H.a.warningIcon)
 					}), a.a.createElement("span", {
-						className: Object(O.a)(G.a.tooltiptext, G.a.warning)
+						className: Object(O.a)(H.a.tooltiptext, H.a.warning)
 					}, "This event has no schema.", a.a.createElement("a", {
-						className: G.a.Link,
+						className: H.a.Link,
 						href: "https://github.snooguts.net/reddit/event-schema-registry#how-to-register-event-schemas",
 						target: "_blank",
 						rel: "noopener noreferrer"
 					}, "Add one.")))), a.a.createElement("span", {
-						className: G.a.Source
+						className: H.a.Source
 					}, e.source), a.a.createElement("span", {
-						className: G.a.Action
+						className: H.a.Action
 					}, e.action), a.a.createElement("span", {
-						className: G.a.Noun
+						className: H.a.Noun
 					}, e.noun)), t ? a.a.createElement(T, null) : a.a.createElement(P, null)), t && a.a.createElement(R, {
 						topLevel: !0,
 						obj: n
 					}))
 				}
 			}
-			var fe = n("./src/reddit/contexts/AdminEvents.ts"),
-				ye = n("./src/reddit/controls/Button/index.tsx"),
+			var ye = n("./src/reddit/contexts/AdminEvents.ts"),
+				fe = n("./src/reddit/controls/Button/index.tsx"),
 				Oe = n("./src/reddit/controls/Input/index.tsx"),
 				Ne = n("./src/reddit/components/AdminPanel/Events/index.m.less"),
 				Se = n.n(Ne);
@@ -598,7 +605,7 @@
 			}
 			const ke = g.a.div("Actions", Se.a),
 				Ae = g.a.wrapped(Oe.a, "SearchInput", Se.a),
-				Pe = g.a.wrapped(ye.l, "ClearButton", Se.a),
+				Pe = g.a.wrapped(fe.l, "ClearButton", Se.a),
 				Te = Object(h.a)(e => e.length, e => e, (e, t) => {
 					let {
 						search: n
@@ -661,20 +668,20 @@
 					}, "Clear Events"), a.a.createElement(Pe, {
 						disabled: 0 === t.length,
 						onClick: this.dumpEvents
-					}, "Dump events to console")), n.map(e => a.a.createElement(we, {
+					}, "Dump events to console")), n.map(e => a.a.createElement(_e, {
 						key: e.event.uuid,
 						event: e
 					})))
 				}
 			}
-			var Le = e => a.a.createElement(fe.a.Consumer, null, t => a.a.createElement(Ie, je({}, e, {
+			var Le = e => a.a.createElement(ye.a.Consumer, null, t => a.a.createElement(Ie, je({}, e, {
 					events: t
 				}))),
 				Be = n("./src/reddit/actions/experiments.ts"),
 				Fe = n("./src/reddit/actions/post.ts"),
-				Me = n("./node_modules/fbt/lib/FbtPublic.js"),
-				Ue = n("./src/reddit/components/AdminPanel/components/SearchableList/index.m.less"),
-				De = n.n(Ue);
+				Ue = n("./node_modules/fbt/lib/FbtPublic.js"),
+				Me = n("./src/reddit/components/AdminPanel/components/SearchableList/index.m.less"),
+				De = n.n(Me);
 			class Re extends s.Component {
 				constructor() {
 					super(...arguments), this.searchInput = a.a.createRef(), this.state = {
@@ -698,7 +705,7 @@
 					return a.a.createElement("div", null, a.a.createElement("input", {
 						className: De.a.SearchInput,
 						type: "text",
-						placeholder: Me.fbt._("Quick search", null, {
+						placeholder: Ue.fbt._("Quick search", null, {
 							hk: "1sHY11"
 						}),
 						onKeyUp: e => this.onKeyUp(e),
@@ -706,30 +713,30 @@
 					}), this.getItems())
 				}
 			}
-			var Ve = Re,
-				Qe = n("./src/higherOrderComponents/asTooltip.tsx"),
+			var Qe = Re,
+				Ve = n("./src/higherOrderComponents/asTooltip.tsx"),
 				Ke = n("./src/lib/addQueryParams/index.ts"),
-				Ge = n("./src/lib/filterQueryParams/index.ts"),
-				He = n("./src/reddit/constants/experiments.ts"),
+				He = n("./src/lib/filterQueryParams/index.ts"),
+				Ge = n("./src/reddit/constants/experiments.ts"),
 				ze = n("./src/reddit/controls/Dropdown/index.tsx"),
 				Je = n("./src/reddit/controls/Dropdown/Row.tsx"),
-				We = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
-				qe = n("./src/reddit/components/AdminPanel/Experiment/index.m.less"),
-				Ye = n.n(qe);
-			const Xe = g.a.div("Header", Ye.a),
-				Ze = g.a.div("DropdownWrapper", Ye.a),
-				$e = g.a.span("Row", Ye.a),
-				et = g.a.wrapped(We.b, "DropdownTriangle", Ye.a),
-				tt = g.a.wrapped(Object(Qe.a)(ze.a), "Dropdown", Ye.a),
-				nt = g.a.wrapped(Je.b, "DropdownRow", Ye.a),
+				qe = n("./src/reddit/icons/svgs/Dropdown/index.tsx"),
+				We = n("./src/reddit/components/AdminPanel/Experiment/index.m.less"),
+				Xe = n.n(We);
+			const Ye = g.a.div("Header", Xe.a),
+				Ze = g.a.div("DropdownWrapper", Xe.a),
+				$e = g.a.span("Row", Xe.a),
+				et = g.a.wrapped(qe.b, "DropdownTriangle", Xe.a),
+				tt = g.a.wrapped(Object(Ve.a)(ze.a), "Dropdown", Xe.a),
+				nt = g.a.wrapped(Je.b, "DropdownRow", Xe.a),
 				st = e => `experiment-${e}`;
 			var at = e => {
-					const t = ["control_1", "control_2", ...He.q[e.experimentName]];
+					const t = ["control_1", "control_2", ...Ge.q[e.experimentName]];
 					if (!t) return null;
-					const n = He.sd.has(e.experimentName);
-					return a.a.createElement(Q.a, {
+					const n = Ge.sd.has(e.experimentName);
+					return a.a.createElement(V.a, {
 						className: e.className
-					}, a.a.createElement(Xe, null, `${e.experimentName}${n?"*":""}`), a.a.createElement(Ze, {
+					}, a.a.createElement(Ye, null, `${e.experimentName}${n?"*":""}`), a.a.createElement(Ze, {
 						onClick: e.onToggleDropdown
 					}, a.a.createElement($e, {
 						id: st(e.experimentName)
@@ -743,7 +750,7 @@
 						displayText: "None",
 						isSelected: !e.currentVariantName,
 						onClick: () => {
-							e.onSetExperimentOverride(""), window.history.pushState(null, "", Object(Ge.a)(window.location.href, [`experiment_${e.experimentName}`]))
+							e.onSetExperimentOverride(""), window.history.pushState(null, "", Object(He.a)(window.location.href, [`experiment_${e.experimentName}`]))
 						}
 					}), t.map(t => a.a.createElement(nt, {
 						displayText: t,
@@ -758,10 +765,10 @@
 				},
 				rt = n("./src/reddit/components/AdminPanel/Experiments/index.m.less"),
 				it = n.n(rt);
-			const ct = g.a.wrapped(ye.l, "PrimaryButton", it.a),
+			const ct = g.a.wrapped(fe.l, "PrimaryButton", it.a),
 				ot = g.a.wrapped(at, "Experiment", it.a),
 				lt = g.a.div("Footnote", it.a),
-				dt = Object(h.a)(e => e.user.experiments.byName, e => e.experimentOverrides, (e, t) => Object.keys(He.q).reduce((n, s) => {
+				dt = Object(h.a)(e => e.user.experiments.byName, e => e.experimentOverrides, (e, t) => Object.keys(Ge.q).reduce((n, s) => {
 					var a;
 					const r = e[s.toLowerCase()],
 						i = null == r ? void 0 : r.variant;
@@ -808,8 +815,8 @@
 						onBack: this.onBack
 					}, a.a.createElement(ct, {
 						onClick: this.onCopyClick
-					}, "Copy Experiment Config URL"), a.a.createElement(Ve, {
-						items: Object.keys(He.q),
+					}, "Copy Experiment Config URL"), a.a.createElement(Qe, {
+						items: Object.keys(Ge.q),
 						listItem: this.renderExperiment
 					}), a.a.createElement(lt, null, "* Whitelisted for query param override in production"))
 				}
@@ -833,25 +840,25 @@
 					on: e.status,
 					onToggle: e.onToggleStatus || bt
 				})), "Component", xt.a),
-				_t = n("./src/reddit/featureFlags/index.ts"),
-				wt = n("./src/reddit/components/AdminPanel/Features/index.m.less"),
-				ft = n.n(wt);
-			const yt = g.a.wrapped(Ct, "Feature", ft.a),
-				Ot = Object(h.c)(_t.d),
+				wt = n("./src/reddit/featureFlags/index.ts"),
+				_t = n("./src/reddit/components/AdminPanel/Features/index.m.less"),
+				yt = n.n(_t);
+			const ft = g.a.wrapped(Ct, "Feature", yt.a),
+				Ot = Object(h.c)(wt.d),
 				Nt = Object(h.c)({
 					features: Ot
 				});
 			var St = Object(u.b)(Nt, e => ({
-					onToggleFeature: t => e(Object(_t.e)({
+					onToggleFeature: t => e(Object(wt.e)({
 						featureName: t
 					}))
 				}))(e => a.a.createElement(re, {
 					className: e.className,
 					title: "Features",
 					onBack: e.onBack
-				}, a.a.createElement(Ve, {
-					items: Object(_t.f)(Object.keys(e.features)),
-					listItem: t => a.a.createElement(yt, {
+				}, a.a.createElement(Qe, {
+					items: Object(wt.f)(Object.keys(e.features)),
+					listItem: t => a.a.createElement(ft, {
 						featureName: t,
 						key: t,
 						status: e.features[t],
@@ -894,22 +901,22 @@
 					onChange: e => n(e.target.value)
 				}), a.a.createElement("span", {
 					className: kt.a.Label
-				}, "days ago"), a.a.createElement(ye.t, {
+				}, "days ago"), a.a.createElement(fe.t, {
 					className: kt.a.SetButton,
-					priority: ye.c.Secondary,
+					priority: fe.c.Secondary,
 					onClick: c
 				}, "Set")), a.a.createElement("p", {
 					className: kt.a.Separator
-				}, "-- OR --"), a.a.createElement("div", null, a.a.createElement(ye.t, {
-					priority: ye.c.Secondary,
+				}, "-- OR --"), a.a.createElement("div", null, a.a.createElement(fe.t, {
+					priority: fe.c.Secondary,
 					onClick: () => Object(Pt.Tb)(0)
 				}, "Clear Timestamp"))))
 			}
 			var Ft = n("./src/reddit/actions/survey/index.ts"),
-				Mt = n("./src/reddit/selectors/survey.ts");
+				Ut = n("./src/reddit/selectors/survey.ts");
 
-			function Ut(e) {
-				const t = Object(u.e)(Mt.d),
+			function Mt(e) {
+				const t = Object(u.e)(Ut.d),
 					n = Object(u.d)(),
 					r = Object(s.useCallback)(() => n(Object(Ft.e)()), [n]);
 				return a.a.createElement("div", {
@@ -928,9 +935,9 @@
 			}
 
 			function Dt(e) {
-				const t = Object(u.e)(Mt.c),
-					n = Object(u.e)(Mt.a),
-					r = Object(u.e)(Mt.b),
+				const t = Object(u.e)(Ut.c),
+					n = Object(u.e)(Ut.a),
+					r = Object(u.e)(Ut.b),
 					i = Object(u.d)(),
 					c = Object(s.useCallback)(() => {
 						i(Object(Ft.a)()), Object(Pt.Tb)(0), i(Object(At.I)({
@@ -975,47 +982,47 @@
 					className: Object(O.a)(e.className, kt.a.SurveysContainer),
 					title: "Surveys",
 					onBack: e.onBack
-				}, a.a.createElement(Bt, null), a.a.createElement(Dt, null), a.a.createElement(Ut, null))
+				}, a.a.createElement(Bt, null), a.a.createElement(Dt, null), a.a.createElement(Mt, null))
 			}
-			var Vt, Qt = n("./src/reddit/icons/fonts/index.tsx"),
+			var Qt, Vt = n("./src/reddit/icons/fonts/index.tsx"),
 				Kt = n("./src/reddit/icons/svgs/Admin/index.tsx"),
-				Gt = n("./src/reddit/icons/svgs/All/index.tsx"),
-				Ht = n("./src/reddit/icons/svgs/Eye/index.tsx"),
+				Ht = n("./src/reddit/icons/svgs/All/index.tsx"),
+				Gt = n("./src/reddit/icons/svgs/Eye/index.tsx"),
 				zt = n("./src/reddit/icons/svgs/Flag/index.tsx"),
 				Jt = n("./src/reddit/icons/svgs/Pencil/index.tsx"),
-				Wt = n("./src/reddit/icons/svgs/Settings/index.tsx"),
-				qt = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
-				Yt = n("./src/reddit/components/AdminPanel/Toc/index.m.less"),
-				Xt = n.n(Yt),
+				qt = n("./src/reddit/icons/svgs/Settings/index.tsx"),
+				Wt = n("./src/reddit/icons/svgs/Snoo/index.tsx"),
+				Xt = n("./src/reddit/components/AdminPanel/Toc/index.m.less"),
+				Yt = n.n(Xt),
 				Zt = n("./src/lib/opener/index.ts"),
 				$t = n("./src/reddit/routes/econManagement/index.ts"),
 				en = n("./src/reddit/selectors/user.ts");
 			! function(e) {
 				e[e.Toc = 0] = "Toc", e[e.AdEvents = 1] = "AdEvents", e[e.Events = 2] = "Events", e[e.Experiments = 3] = "Experiments", e[e.Features = 4] = "Features", e[e.Surveys = 5] = "Surveys", e[e.Utilities = 6] = "Utilities"
-			}(Vt || (Vt = {}));
-			const tn = [Vt.AdEvents, Vt.Events, Vt.Experiments, Vt.Features, Vt.Surveys, Vt.Utilities],
-				nn = g.a.wrapped(Gt.a, "All", Xt.a),
-				sn = g.a.wrapped(zt.a, "Flag", Xt.a),
-				an = g.a.wrapped(Ht.a, "Eye", Xt.a),
-				rn = g.a.wrapped(Jt.a, "Pencil", Xt.a),
-				cn = g.a.wrapped(qt.a, "Snoo", Xt.a),
-				on = g.a.wrapped(Wt.a, "Settings", Xt.a),
-				ln = g.a.li("TocItem", Xt.a),
-				dn = g.a.div("Header", Xt.a),
-				mn = g.a.span("Uid", Xt.a),
+			}(Qt || (Qt = {}));
+			const tn = [Qt.AdEvents, Qt.Events, Qt.Experiments, Qt.Features, Qt.Surveys, Qt.Utilities],
+				nn = g.a.wrapped(Ht.a, "All", Yt.a),
+				sn = g.a.wrapped(zt.a, "Flag", Yt.a),
+				an = g.a.wrapped(Gt.a, "Eye", Yt.a),
+				rn = g.a.wrapped(Jt.a, "Pencil", Yt.a),
+				cn = g.a.wrapped(Wt.a, "Snoo", Yt.a),
+				on = g.a.wrapped(qt.a, "Settings", Yt.a),
+				ln = g.a.li("TocItem", Yt.a),
+				dn = g.a.div("Header", Yt.a),
+				mn = g.a.span("Uid", Yt.a),
 				pn = e => {
 					switch (e) {
-						case Vt.AdEvents:
+						case Qt.AdEvents:
 							return "Ad Events";
-						case Vt.Events:
+						case Qt.Events:
 							return "Events";
-						case Vt.Experiments:
+						case Qt.Experiments:
 							return "Experiments";
-						case Vt.Features:
+						case Qt.Features:
 							return "Features";
-						case Vt.Surveys:
+						case Qt.Surveys:
 							return "Surveys";
-						case Vt.Utilities:
+						case Qt.Utilities:
 							return "Utilities";
 						default:
 							return ""
@@ -1031,20 +1038,20 @@
 					onClick: () => e.onSelect(t)
 				}, (e => {
 					switch (e) {
-						case Vt.AdEvents:
+						case Qt.AdEvents:
 							return a.a.createElement(nn, null);
-						case Vt.Events:
+						case Qt.Events:
 							return a.a.createElement(an, null);
-						case Vt.Experiments:
+						case Qt.Experiments:
 							return a.a.createElement(rn, null);
-						case Vt.Features:
+						case Qt.Features:
 							return a.a.createElement(sn, null);
-						case Vt.Surveys:
-							return a.a.createElement(Qt.a, {
+						case Qt.Surveys:
+							return a.a.createElement(Vt.a, {
 								name: "poll_post",
-								className: Xt.a.Survey
+								className: Yt.a.Survey
 							});
-						case Vt.Utilities:
+						case Qt.Utilities:
 							return a.a.createElement(on, null);
 						default:
 							return null
@@ -1054,7 +1061,7 @@
 					target: Zt.d.BLANK,
 					rel: Zt.c
 				}, a.a.createElement(ln, null, a.a.createElement(Kt.a, {
-					className: Xt.a.EconAdmin
+					className: Yt.a.EconAdmin
 				}), "Econ Management"))))),
 				vn = n("./src/reddit/actions/users.ts"),
 				xn = n("./src/reddit/components/AdminPanel/Utilities/Section.m.less"),
@@ -1065,14 +1072,14 @@
 				className: e.className
 			}, e.title && a.a.createElement(gn, null, e.title), e.children);
 
-			function _n(e) {
+			function wn(e) {
 				return new Date(1e3 * e).toISOString().split("T")[0]
 			}
 
-			function wn(e) {
+			function _n(e) {
 				return new Date(e).getTime() / 1e3
 			}
-			var fn = () => {
+			var yn, fn = () => {
 					const e = Object(u.e)(en.k),
 						t = Object(u.d)();
 					if (!e) return null;
@@ -1080,25 +1087,65 @@
 						title: "Set Account Creation Date"
 					}, a.a.createElement("input", {
 						type: "date",
-						value: _n(e.created),
+						value: wn(e.created),
 						onChange: n => {
 							t(Object(vn.s)({
 								account: {
 									...e,
-									created: wn(n.target.value)
+									created: _n(n.target.value)
 								}
 							}))
 						}
 					}))
 				},
-				yn = n("./src/reddit/actions/meta.ts"),
-				On = n("./src/reddit/selectors/meta.ts");
-			const Nn = Object(h.c)({
-				city: On.a,
-				country: On.b,
-				region: On.l
+				On = n("./node_modules/js-cookie/src/js.cookie.js"),
+				Nn = n.n(On),
+				Sn = n("./src/reddit/components/AdminPanel/Utilities/Canary/index.m.less"),
+				jn = n.n(Sn);
+			! function(e) {
+				e.Always = "always", e.Never = "never"
+			}(yn || (yn = {}));
+			const kn = {
+				path: "/",
+				domain: "reddit.com"
+			};
+			var An = () => {
+					const [e, t] = Object(s.useState)(() => Nn.a.get("desktopUseCanary")), [n, r] = Object(s.useState)(!1);
+					return Object(s.useEffect)(() => {
+						e ? Nn.a.set("desktopUseCanary", e, kn) : Nn.a.remove("desktopUseCanary", kn)
+					}, [e]), a.a.createElement(Cn, {
+						title: "Use Canary"
+					}, a.a.createElement("div", {
+						className: jn.a.row
+					}, a.a.createElement("label", {
+						className: jn.a.label
+					}, a.a.createElement(ht.a, {
+						on: e === yn.Always,
+						onToggle: () => {
+							t(e => e === yn.Always ? void 0 : yn.Always), r(!0)
+						}
+					}), a.a.createElement("span", null, e || "auto")), a.a.createElement("div", {
+						className: jn.a.buttons
+					}, n && a.a.createElement(fe.t, {
+						size: fe.d.XS,
+						onClick: () => location.reload()
+					}, "Reload"), a.a.createElement(fe.t, {
+						size: fe.d.XS,
+						priority: fe.c.Secondary,
+						kind: fe.b.ExternalLink,
+						href: "https://www.reddit.com/debug/environment",
+						target: Zt.d.BLANK,
+						rel: Zt.c
+					}, "Debug"))))
+				},
+				Pn = n("./src/reddit/actions/meta.ts"),
+				Tn = n("./src/reddit/selectors/meta.ts");
+			const In = Object(h.c)({
+				city: Tn.a,
+				country: Tn.b,
+				region: Tn.l
 			});
-			class Sn extends a.a.Component {
+			class Ln extends a.a.Component {
 				constructor(e) {
 					super(e), this.changeCountry = e => {
 						this.setState({
@@ -1136,36 +1183,36 @@
 					}, a.a.createElement(a.a.Fragment, null, a.a.createElement("input", {
 						value: t,
 						onChange: this.changeCountry,
-						placeholder: Me.fbt._("Country", null, {
+						placeholder: Ue.fbt._("Country", null, {
 							hk: "4DpC5A"
 						})
 					}), a.a.createElement("input", {
 						value: n,
 						onChange: this.changeRegion,
-						placeholder: Me.fbt._("Region", null, {
+						placeholder: Ue.fbt._("Region", null, {
 							hk: "3XMQsm"
 						})
 					}), a.a.createElement("input", {
 						value: e,
 						onChange: this.changeCity,
-						placeholder: Me.fbt._("City", null, {
+						placeholder: Ue.fbt._("City", null, {
 							hk: "4xz4pv"
 						})
-					}), a.a.createElement(ye.o, {
+					}), a.a.createElement(fe.o, {
 						onClick: this.changeGeo
 					}, "Save")))
 				}
 			}
-			var jn = Object(u.b)(Nn, e => ({
-					changeGeo: (t, n, s) => e(Object(yn.h)({
+			var Bn = Object(u.b)(In, e => ({
+					changeGeo: (t, n, s) => e(Object(Pn.h)({
 						city: t,
 						country: n,
 						region: s
 					}))
-				}))(Sn),
-				kn = n("./node_modules/react-router-redux/es/index.js"),
-				An = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
-			class Pn extends a.a.Component {
+				}))(Ln),
+				Fn = n("./node_modules/react-router-redux/es/index.js"),
+				Un = n("./src/reddit/layout/twoCol/ExpandLeft/index.tsx");
+			class Mn extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						text: "/r/funny"
@@ -1179,111 +1226,111 @@
 					} = this.props;
 					return a.a.createElement(Cn, {
 						title: "In app navigation"
-					}, a.a.createElement(An.a, null, a.a.createElement("input", {
+					}, a.a.createElement(Un.a, null, a.a.createElement("input", {
 						value: e,
 						onChange: e => this.setState({
 							text: e.target.value
 						})
-					}), a.a.createElement(ye.r, {
+					}), a.a.createElement(fe.r, {
 						onClick: () => t(e)
 					}, "Go")))
 				}
 			}
-			var Tn = Object(u.b)(void 0, e => ({
-					push: t => e(Object(kn.b)(t))
-				}))(Pn),
-				In = n("./src/reddit/featureFlags/subredditPoints.ts"),
-				Ln = n("./src/reddit/selectors/subreddit.ts"),
-				Bn = n("./src/reddit/contexts/ApiContext.tsx"),
-				Fn = n("./src/reddit/endpoints/economics/banners.ts"),
-				Mn = n("./src/reddit/components/AdminPanel/Utilities/SubredditPremium/index.m.less"),
-				Un = n.n(Mn);
-			const Dn = Object(h.c)({
+			var Dn = Object(u.b)(void 0, e => ({
+					push: t => e(Object(Fn.b)(t))
+				}))(Mn),
+				Rn = n("./src/reddit/featureFlags/subredditPoints.ts"),
+				Qn = n("./src/reddit/selectors/subreddit.ts"),
+				Vn = n("./src/reddit/contexts/ApiContext.tsx"),
+				Kn = n("./src/reddit/endpoints/economics/banners.ts"),
+				Hn = n("./src/reddit/components/AdminPanel/Utilities/SubredditPremium/index.m.less"),
+				Gn = n.n(Hn);
+			const zn = Object(h.c)({
 					subreddit: e => {
 						const t = e.platform.currentPage;
 						if (t && t.meta && "subreddit" === t.meta.name) {
 							const n = t.urlParams.subredditName;
-							return Object(Ln.z)(e, {
+							return Object(Qn.z)(e, {
 								subredditName: n
 							})
 						}
 					}
 				}),
-				Rn = Object(u.b)(Dn);
-			var Vn = Object(Bn.b)(Rn((function(e) {
+				Jn = Object(u.b)(zn);
+			var qn = Object(Vn.b)(Jn((function(e) {
 					const {
 						apiContext: t,
 						subreddit: n
 					} = e;
 					return n ? a.a.createElement("div", {
-						className: Object(O.a)(e.className, Un.a.container)
+						className: Object(O.a)(e.className, Gn.a.container)
 					}, a.a.createElement("div", {
-						className: Un.a.text
-					}, "Upsell Banners"), a.a.createElement(ye.r, {
-						onClick: () => Object(Fn.d)(t(), n.id)
+						className: Gn.a.text
+					}, "Upsell Banners"), a.a.createElement(fe.r, {
+						onClick: () => Object(Kn.d)(t(), n.id)
 					}, "Reset")) : null
 				}))),
-				Qn = n("./src/reddit/endpoints/economics/subredditPremium.ts");
-			const Kn = Object(h.c)({
+				Wn = n("./src/reddit/endpoints/economics/subredditPremium.ts");
+			const Xn = Object(h.c)({
 					subreddit: e => {
 						const t = e.platform.currentPage;
 						if (t && t.meta && "subreddit" === t.meta.name) {
 							const n = t.urlParams.subredditName;
-							return Object(Ln.z)(e, {
+							return Object(Qn.z)(e, {
 								subredditName: n
 							})
 						}
 					}
 				}),
-				Gn = Object(u.b)(Kn);
-			var Hn = Object(Bn.b)(Gn((function(e) {
+				Yn = Object(u.b)(Xn);
+			var Zn = Object(Vn.b)(Yn((function(e) {
 				const {
 					apiContext: t,
 					subreddit: n
 				} = e;
 				return n ? a.a.createElement("div", {
-					className: Object(O.a)(e.className, Un.a.container)
+					className: Object(O.a)(e.className, Gn.a.container)
 				}, a.a.createElement("div", {
-					className: Un.a.text
-				}, "Membership & Badges"), a.a.createElement(ye.r, {
-					onClick: () => Object(Qn.b)(t(), n.id)
+					className: Gn.a.text
+				}, "Membership & Badges"), a.a.createElement(fe.r, {
+					onClick: () => Object(Wn.b)(t(), n.id)
 				}, "Reset")) : null
 			})));
-			const zn = Object(h.c)({
+			const $n = Object(h.c)({
 				subreddit: e => {
 					const t = e.platform.currentPage;
 					if (t && t.meta && "subreddit" === t.meta.name) {
 						const n = t.urlParams.subredditName;
-						return Object(Ln.z)(e, {
+						return Object(Qn.z)(e, {
 							subredditName: n
 						})
 					}
 				}
 			});
-			var Jn = Object(u.b)(zn)((function(e) {
+			var es = Object(u.b)($n)((function(e) {
 					if (!e.subreddit) return null;
 					const t = e.subreddit.name.toLowerCase(),
-						n = In.b.has(t),
-						s = In.b.has(t);
+						n = Rn.b.has(t),
+						s = Rn.b.has(t);
 					return n || s ? a.a.createElement(Cn, {
 						title: "Subreddit Premium"
-					}, a.a.createElement("div", null, n && a.a.createElement(Vn, null), s && a.a.createElement(Hn, null))) : null
+					}, a.a.createElement("div", null, n && a.a.createElement(qn, null), s && a.a.createElement(Zn, null))) : null
 				})),
-				Wn = n("./src/reddit/constants/featureThrottling.ts"),
-				qn = n("./src/reddit/contexts/ThrottlingContext/index.tsx"),
-				Yn = n("./src/reddit/components/AdminPanel/Utilities/Throttling/index.m.less"),
-				Xn = n.n(Yn);
-			const Zn = g.a.wrapped(ye.r, "ResetButton", Xn.a),
-				$n = g.a.div("Feature", Xn.a),
-				es = g.a.div("FeatureName", Xn.a),
-				ts = g.a.div("Footnote", Xn.a);
-			class ns extends a.a.Component {
+				ts = n("./src/reddit/constants/featureThrottling.ts"),
+				ns = n("./src/reddit/contexts/ThrottlingContext/index.tsx"),
+				ss = n("./src/reddit/components/AdminPanel/Utilities/Throttling/index.m.less"),
+				as = n.n(ss);
+			const rs = g.a.wrapped(fe.r, "ResetButton", as.a),
+				is = g.a.div("Feature", as.a),
+				cs = g.a.div("FeatureName", as.a),
+				os = g.a.div("Footnote", as.a);
+			class ls extends a.a.Component {
 				constructor() {
 					super(...arguments), this.renderFeature = e => {
-						const t = qn.a[e];
+						const t = ns.a[e];
 						return a.a.createElement(t.Consumer, {
 							key: e
-						}, t => a.a.createElement($n, null, a.a.createElement(es, null, e, t.isThrottled && "*"), a.a.createElement(Zn, {
+						}, t => a.a.createElement(is, null, a.a.createElement(cs, null, e, t.isThrottled && "*"), a.a.createElement(rs, {
 							onClick: t.resetFeature
 						}, "Reset")))
 					}
@@ -1291,83 +1338,83 @@
 				render() {
 					return a.a.createElement(Cn, {
 						title: "Feature throttling"
-					}, a.a.createElement(a.a.Fragment, null, Object.keys(Wn.a).map(this.renderFeature), a.a.createElement(ts, null, Me.fbt._("* Feature is currently throttled", null, {
+					}, a.a.createElement(a.a.Fragment, null, Object.keys(ts.a).map(this.renderFeature), a.a.createElement(os, null, Ue.fbt._("* Feature is currently throttled", null, {
 						hk: "2ZRuzB"
 					}))))
 				}
 			}
-			var ss = ns;
-			class as extends a.a.Component {
+			var ds = ls;
+			class ms extends a.a.Component {
 				render() {
 					return a.a.createElement(re, {
 						className: this.props.className,
 						title: "Utilities",
 						onBack: this.props.onBack
-					}, a.a.createElement(Tn, null), a.a.createElement(Jn, null), a.a.createElement(ss, null), a.a.createElement(jn, null), a.a.createElement(fn, null))
+					}, a.a.createElement(An, null), a.a.createElement(Dn, null), a.a.createElement(es, null), a.a.createElement(ds, null), a.a.createElement(Bn, null), a.a.createElement(fn, null))
 				}
 			}
-			var rs = n("./src/reddit/components/ThemeProvider/index.tsx"),
-				is = n("./src/reddit/components/AdminPanel/index.m.less"),
-				cs = n.n(is);
-			const os = 340,
-				ls = 48,
-				ds = 112;
-			var ms;
+			var ps = n("./src/reddit/components/ThemeProvider/index.tsx"),
+				us = n("./src/reddit/components/AdminPanel/index.m.less"),
+				hs = n.n(us);
+			const vs = 340,
+				xs = 48,
+				Es = 112;
+			var gs;
 			! function(e) {
 				e[e.Open = 0] = "Open", e[e.Closed = 1] = "Closed", e[e.Minimized = 2] = "Minimized"
-			}(ms || (ms = {}));
-			const ps = g.a.div("Backing", cs.a),
-				us = g.a.div("Content", cs.a),
-				hs = g.a.div("Controls", cs.a),
-				vs = g.a.wrapped(o.a, "Close", cs.a),
-				xs = g.a.wrapped(i.a, "ArrowCollapse", cs.a),
-				Es = g.a.wrapped(c.a, "ArrowExpand", cs.a),
-				gs = e => {
+			}(gs || (gs = {}));
+			const bs = g.a.div("Backing", hs.a),
+				Cs = g.a.div("Content", hs.a),
+				ws = g.a.div("Controls", hs.a),
+				_s = g.a.wrapped(o.a, "Close", hs.a),
+				ys = g.a.wrapped(i.a, "ArrowCollapse", hs.a),
+				fs = g.a.wrapped(c.a, "ArrowExpand", hs.a),
+				Os = e => {
 					switch (e) {
-						case ms.Open:
+						case gs.Open:
 							return [{
 								key: "panel",
 								style: {
 									left: Object(r.spring)(0)
 								}
 							}];
-						case ms.Minimized:
+						case gs.Minimized:
 							return [{
 								key: "panel",
 								style: {
-									left: Object(r.spring)(-os)
+									left: Object(r.spring)(-vs)
 								}
 							}];
 						default:
 							return []
 					}
 				};
-			class bs extends a.a.Component {
+			class Ns extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
-						position: ms.Closed,
-						panel: Vt.Toc
+						position: gs.Closed,
+						panel: Qt.Toc
 					}, this.listenForAdminKey = e => {
-						e.keyCode === ds && this.setState(() => ({
-							position: this.state.position === ms.Closed ? ms.Open : ms.Closed
+						e.keyCode === Es && this.setState(() => ({
+							position: this.state.position === gs.Closed ? gs.Open : gs.Closed
 						}))
 					}, this.close = () => {
 						this.setState(() => ({
-							position: ms.Closed
+							position: gs.Closed
 						}))
 					}, this.open = () => {
 						this.setState(() => ({
-							position: ms.Open
+							position: gs.Open
 						}))
 					}, this.toggleMinimize = () => {
 						this.setState(() => ({
-							position: this.state.position === ms.Open ? ms.Minimized : ms.Open
+							position: this.state.position === gs.Open ? gs.Minimized : gs.Open
 						}))
 					}, this.selectPanel = e => {
 						this.setState(() => ({
 							panel: e
 						}))
-					}, this.selectToc = () => this.selectPanel(Vt.Toc)
+					}, this.selectToc = () => this.selectPanel(Qt.Toc)
 				}
 				componentDidMount() {
 					document.addEventListener("keydown", this.listenForAdminKey)
@@ -1378,50 +1425,50 @@
 				render() {
 					return a.a.createElement(r.TransitionMotion, {
 						defaultStyles: [],
-						styles: gs(this.state.position),
+						styles: Os(this.state.position),
 						willEnter: () => ({
-							left: -os - ls
+							left: -vs - xs
 						}),
 						willLeave: () => ({
-							left: Object(r.spring)(-os - ls)
+							left: Object(r.spring)(-vs - xs)
 						})
-					}, e => a.a.createElement(s.Fragment, null, e.map(e => a.a.createElement(rs.b, {
+					}, e => a.a.createElement(s.Fragment, null, e.map(e => a.a.createElement(ps.b, {
 						key: e.key,
 						subredditName: ""
-					}, a.a.createElement(ps, {
+					}, a.a.createElement(bs, {
 						style: e.style
-					}, a.a.createElement(us, null, this.renderPanel()), a.a.createElement(hs, null, this.state.position === ms.Open ? a.a.createElement(xs, {
+					}, a.a.createElement(Cs, null, this.renderPanel()), a.a.createElement(ws, null, this.state.position === gs.Open ? a.a.createElement(ys, {
 						onClick: this.toggleMinimize
-					}) : a.a.createElement(Es, {
+					}) : a.a.createElement(fs, {
 						onClick: this.toggleMinimize
-					}), a.a.createElement(vs, {
+					}), a.a.createElement(_s, {
 						onClick: this.close
 					})))))))
 				}
 				renderPanel() {
 					switch (this.state.panel) {
-						case Vt.AdEvents:
+						case Qt.AdEvents:
 							return a.a.createElement(pe, {
 								onBack: this.selectToc
 							});
-						case Vt.Events:
+						case Qt.Events:
 							return a.a.createElement(Le, {
 								onBack: this.selectToc
 							});
-						case Vt.Experiments:
+						case Qt.Experiments:
 							return a.a.createElement(ut, {
 								onBack: this.selectToc
 							});
-						case Vt.Features:
+						case Qt.Features:
 							return a.a.createElement(St, {
 								onBack: this.selectToc
 							});
-						case Vt.Surveys:
+						case Qt.Surveys:
 							return a.a.createElement(Rt, {
 								onBack: this.selectToc
 							});
-						case Vt.Utilities:
-							return a.a.createElement(as, {
+						case Qt.Utilities:
+							return a.a.createElement(ms, {
 								onBack: this.selectToc
 							});
 						default:
@@ -1757,4 +1804,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.472c01d00e4afb7af9bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AdminPanel.1189a7bb6db798122b14.js.map
