@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.7cf17e76a39edafea76c.js
-// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.74fc516352a09932e18f.js
+// Retrieved at 5/10/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -1699,7 +1699,8 @@
 					l ? b = [] : c ? b = u.filter(e => e.type === _.f.Nsfw) : m && (b = u.filter(e => !Object(f.q)(e.type)));
 					const h = !n && !a,
 						x = !t && p && p.length > 0 && h,
-						g = !t && b && b.length > 0 && h;
+						g = !t && b && b.length > 0 && h,
+						C = !(null == o ? void 0 : o.removedByCategory);
 					return r.a.createElement("div", {
 						className: Object(d.a)(V.a.Component, e, o.id),
 						ref: this.props.innerRef
@@ -1711,10 +1712,10 @@
 						sendEvent: this.props.sendEvent
 					}), !Object(v.b)(o) && r.a.createElement(J, z({}, this.props, {
 						leftFlair: l ? p : void 0
-					})), i && r.a.createElement(M, {
+					})), C && i && r.a.createElement(M, {
 						className: V.a.pollMeta,
 						pollId: i.id
-					}), r.a.createElement($, this.props), g && r.a.createElement(P.a, {
+					}), C && r.a.createElement($, this.props), g && r.a.createElement(P.a, {
 						isFlairFilter: !0,
 						titleFlair: b,
 						nowrap: !0,
@@ -2122,4 +2123,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.7cf17e76a39edafea76c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.74fc516352a09932e18f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.19440fa2ffc85a6550b7.js
-// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.5fad81e796c799a85c87.js
+// Retrieved at 5/10/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/react-popper/lib/esm/usePopper.js": function(e, t, n) {
@@ -2869,9 +2869,10 @@
 					isCommentsPage: s,
 					pageLayer: c
 				} = e, d = s ? j.SourceElement.PostLink : j.SourceElement.ListingPostLink, {
-					source: l
-				} = n, u = n.isSponsored || Object(r.u)(c), p = Object(v.a)(n);
-				return l ? p ? o.a.createElement(h, {
+					source: l,
+					removedByCategory: u
+				} = n, p = n.isSponsored || Object(r.u)(c), m = Object(v.a)(n);
+				return !l || u ? null : m ? o.a.createElement(h, {
 					sourceUrl: l.url,
 					username: n.author,
 					post: n
@@ -2881,16 +2882,16 @@
 					}, t)
 				}, o.a.createElement(x.a, {
 					href: l.url,
-					isSponsored: u,
+					isSponsored: p,
 					postId: n.id,
 					source: l,
 					sourceElement: d
 				}, Object(a.a)({
 					...n,
-					isSponsored: u
+					isSponsored: p
 				}), o.a.createElement(S, {
 					isFilled: !0
-				}))) : null
+				})))
 			}
 		},
 		"./src/reddit/components/SubscribeButton/Inline.m.less": function(e, t, n) {
@@ -3060,7 +3061,7 @@
 				o = n("./src/reddit/models/Media/index.ts");
 
 			function r(e, t) {
-				return !(!e.thumbnail || !e.thumbnail.url || e.thumbnail.url === s.a.SELF || e.thumbnail.url === s.a.NSFW || e.media && Object(o.E)(e.media) || t)
+				return !(e.removedByCategory || !e.thumbnail || !e.thumbnail.url || e.thumbnail.url === s.a.SELF || e.thumbnail.url === s.a.NSFW || e.media && Object(o.E)(e.media) || t)
 			}
 		},
 		"./src/reddit/helpers/graphql/normalizePostsFromGql/index.ts": function(e, t, n) {
@@ -3518,4 +3519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.19440fa2ffc85a6550b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.5fad81e796c799a85c87.js.map

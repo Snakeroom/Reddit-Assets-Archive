@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.20fa1821f905c863a9a7.js
-// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.94014dff463285429c4c.js
+// Retrieved at 5/10/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -2109,7 +2109,8 @@
 					c ? b = [] : d ? b = m.filter(e => e.type === C.f.Nsfw) : u && (b = m.filter(e => !Object(h.q)(e.type)));
 					const f = !s && !r,
 						_ = !t && p && p.length > 0 && f,
-						O = !t && b && b.length > 0 && f;
+						O = !t && b && b.length > 0 && f,
+						E = !(null == a ? void 0 : a.removedByCategory);
 					return o.a.createElement("div", {
 						className: Object(l.a)(Y.a.Component, e, a.id),
 						ref: this.props.innerRef
@@ -2121,10 +2122,10 @@
 						sendEvent: this.props.sendEvent
 					}), !Object(j.b)(a) && o.a.createElement(X, H({}, this.props, {
 						leftFlair: c ? p : void 0
-					})), i && o.a.createElement(w, {
+					})), E && i && o.a.createElement(w, {
 						className: Y.a.pollMeta,
 						pollId: i.id
-					}), o.a.createElement(J, this.props), O && o.a.createElement(T.a, {
+					}), E && o.a.createElement(J, this.props), O && o.a.createElement(T.a, {
 						isFlairFilter: !0,
 						titleFlair: b,
 						nowrap: !0,
@@ -4384,4 +4385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.20fa1821f905c863a9a7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.94014dff463285429c4c.js.map

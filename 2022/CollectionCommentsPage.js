@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.54c17967b8c2d3fa496f.js
-// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.263e31aa8def24a0cdab.js
+// Retrieved at 5/10/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -7173,11 +7173,7 @@
 						return Tt && n ? i.a.createElement(vt, null) : Ze && ze ? i.a.createElement(Xe, {
 							onBannerClick: () => Qe(!1),
 							isExpandable: Je
-						}) : Me.source && Yt === we.g.Medium && !st ? i.a.createElement(je.a, {
-							post: Me,
-							isCommentsPage: _,
-							pageLayer: Ke
-						}) : Mt && !L && Yt === we.g.Large ? i.a.createElement(fe.a, {
+						}) : Me.removedByCategory || !Me.source || Yt !== we.g.Medium || st ? Mt && !L && Yt === we.g.Large ? i.a.createElement(fe.a, {
 							className: Object(p.a)(yt.a.LargePostMedia, {
 								[yt.a.isCommentsPage]: _
 							}),
@@ -7197,7 +7193,11 @@
 							isExpanded: !!T,
 							post: Me,
 							useMediaIcons: !1
-						}), Vt(e)) : null
+						}), Vt(e)) : null : i.a.createElement(je.a, {
+							post: Me,
+							isCommentsPage: _,
+							pageLayer: Ke
+						})
 					};
 				if (Yt === we.g.Classic) {
 					const e = Object(x.a)(Me, ze);
@@ -7394,7 +7394,7 @@
 					shouldShowFollowButton: Ht,
 					isFollowed: M,
 					onFollowPostClick: qt
-				}), Kt, ((e, t, s, n) => e.source && !t && (s || n))(Me, s, D, _) && !st && i.a.createElement(je.a, {
+				}), Kt, ((e, t, s, n) => !e.removedByCategory && e.source && !t && (s || n))(Me, s, D, _) && !st && i.a.createElement(je.a, {
 					post: Me,
 					isCommentsPage: _,
 					pageLayer: Ke
@@ -11322,4 +11322,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.54c17967b8c2d3fa496f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.263e31aa8def24a0cdab.js.map

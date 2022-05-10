@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.5994b0c0beafa605ac42.js
-// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.f01da7a46e54d0474dec.js
+// Retrieved at 5/10/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1375,11 +1375,11 @@
 						"CollectionCommentsPage~CommentsPage~ModQueuePages~ModerationPages~ProfileComments~ProfileOverview~Pr~d9e7ab4c": "e6e99b3f484fd23ac88e",
 						SearchResults: "546a717702cce2519f58",
 						"CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956": "5fa6f6c0ea51abbf0206",
-						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b": "bc5dae64931c457ef90c",
+						"CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b": "5fa578084c8e16c1c726",
 						"CollectionCommentsPage~CommentsPage~ModProgressModule~NewCommunityProgress": "50fef937c9e262b7c82d",
 						"CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki": "be915b84e0b3fb5acd8a",
-						CollectionCommentsPage: "54c17967b8c2d3fa496f",
-						CommentsPage: "478b12454947ab603454",
+						CollectionCommentsPage: "263e31aa8def24a0cdab",
+						CommentsPage: "48f601d73aaf772ee549",
 						"ProfileComments~ProfileOverview~ProfilePosts": "5585110e62faaa9dd57f",
 						"ProfileComments~ProfileOverview~ProfilePrivate": "8a5563517bd502b36a99",
 						ProfileComments: "bfa01ccdb30f18e0416e",
@@ -1501,7 +1501,7 @@
 						HarbergerTaxManageModal: "0608db6f13b9ff2ac1c8",
 						SubredditPremiumUploadModal: "6fc999822ee11e28b3e4",
 						"vendors~PostCreation~Subreddit": "0bcea02e0168fc22fa2f",
-						PostCreation: "a36cf843cb102b637954",
+						PostCreation: "6611b7ed28278652d9eb",
 						"vendors~ModStatsChart~Settings~ViewsTooltip": "ca7c845d62fd39d960b6",
 						"vendors~Settings": "4af28f818270a434061f",
 						Settings: "92d7d2162da48394bfe0",
@@ -1522,7 +1522,7 @@
 						GovernanceUserPublicPointsDisplay: "667fdbcd0d3dc8cd079e",
 						SubredditPremiumBadgeHovercardTooltip: "95f6833e2f9a58bf2c99",
 						gildActions: "133494d1b8ac1a423560",
-						"reddit-components-MediumPost": "19440fa2ffc85a6550b7",
+						"reddit-components-MediumPost": "5fad81e796c799a85c87",
 						"reddit-components-ClassicPost": "89c4e360370137679b32",
 						"reddit-components-CompactPost": "64f25fee030d5593423c",
 						"reddit-components-LargePost": "5f3d444c6cb24b2894b6",
@@ -1548,7 +1548,7 @@
 						"vendors~dashjs": "5a01e5ebb9c581c55bfe",
 						"ChatMessageInput~ChatPost": "f5bd6db700da8567827c",
 						ChatPost: "ff767a8fc80ddae7a136",
-						"reddit-components-SidebarNativeAd": "b0db26f49779954c401f",
+						"reddit-components-SidebarNativeAd": "c98945cc47e110e0ddc4",
 						CommentsPageNativeAd: "cc3d48858583229c9674",
 						CreatorStats: "06aee353f98028eed16a",
 						CrosspostRecommendationsModal: "a4944d9ad82780a9035b",
@@ -1638,8 +1638,8 @@
 						PushNotificationSettings: "6700a50df6d069c0c867",
 						UpdateCardModal: "881016b0045f8fcc864c",
 						"reddit-components-Settings-CreatePasswordSSOModal": "c7447515d957e79bb3ad",
-						SubredditTopContent: "7cf17e76a39edafea76c",
-						TopWeekPostsDiscoveryUnit: "325d035bd3ae99d37eab",
+						SubredditTopContent: "74fc516352a09932e18f",
+						TopWeekPostsDiscoveryUnit: "6f2792a160723c9773dc",
 						"reddit-components-AdHocMultiredditSidebar": "4311d4bfdad5f078cc0f",
 						FrontpageSidebar: "130750f0b5e044c471bb",
 						RelatedSubredditsCarousel: "5155745628a19a4d1400",
@@ -1735,4 +1735,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.5994b0c0beafa605ac42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f01da7a46e54d0474dec.js.map
