@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.8a5563517bd502b36a99.js
-// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.039cf1c7a68ea7113015.js
+// Retrieved at 5/10/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/reddit/components/AdLinkWrapper/index.m.less": function(e, t, s) {
@@ -1971,12 +1971,12 @@
 						id: c ? c(l.id) : l.id,
 						tabIndex: -1
 					}, s), f = !!l.media && l.media.type === x.o.VIDEO;
-					return l.isSponsored || f ? n.a.createElement(a.a, {
+					return (e => l.media && Object(x.E)(l.media) && E ? n.a.createElement(m, {
+						postId: l.id
+					}, e) : e)((e => l.isSponsored || f ? n.a.createElement(a.a, {
 						post: l,
 						trackDisplay: !0
-					}, O) : l.media && Object(x.E)(l.media) && E ? n.a.createElement(m, {
-						postId: l.id
-					}, O) : O
+					}, e) : e)(O))
 				}
 			}
 			t.a = f(Object(E.a)(Object(p.c)(w)))
@@ -2635,4 +2635,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.8a5563517bd502b36a99.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.039cf1c7a68ea7113015.js.map

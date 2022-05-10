@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.6f2792a160723c9773dc.js
-// Retrieved at 5/10/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.f13426142c24e3924434.js
+// Retrieved at 5/10/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/lib/getShortenedLink.ts": function(e, t, s) {
@@ -1470,12 +1470,12 @@
 						id: l ? l(d.id) : d.id,
 						tabIndex: -1
 					}, s), v = !!d.media && d.media.type === b.o.VIDEO;
-					return d.isSponsored || v ? n.a.createElement(o.a, {
+					return (e => d.media && Object(b.E)(d.media) && C ? n.a.createElement(m, {
+						postId: d.id
+					}, e) : e)((e => d.isSponsored || v ? n.a.createElement(o.a, {
 						post: d,
 						trackDisplay: !0
-					}, y) : d.media && Object(b.E)(d.media) && C ? n.a.createElement(m, {
-						postId: d.id
-					}, y) : y
+					}, e) : e)(y))
 				}
 			}
 			t.a = v(Object(C.a)(Object(u.c)(k)))
@@ -2305,4 +2305,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.6f2792a160723c9773dc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.f13426142c24e3924434.js.map

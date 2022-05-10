@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.546a717702cce2519f58.js
-// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.071fe2259ecfbb7de67e.js
+// Retrieved at 5/10/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -3145,12 +3145,12 @@
 						id: d ? d(l.id) : l.id,
 						tabIndex: -1
 					}, s), E = !!l.media && l.media.type === b.o.VIDEO;
-					return l.isSponsored || E ? r.a.createElement(a.a, {
+					return (e => l.media && Object(b.E)(l.media) && g ? r.a.createElement(m, {
+						postId: l.id
+					}, e) : e)((e => l.isSponsored || E ? r.a.createElement(a.a, {
 						post: l,
 						trackDisplay: !0
-					}, O) : l.media && Object(b.E)(l.media) && g ? r.a.createElement(m, {
-						postId: l.id
-					}, O) : O
+					}, e) : e)(O))
 				}
 			}
 			t.a = E(Object(g.a)(Object(u.c)(j)))
@@ -10423,4 +10423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.546a717702cce2519f58.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.071fe2259ecfbb7de67e.js.map

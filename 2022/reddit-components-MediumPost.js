@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.5fad81e796c799a85c87.js
-// Retrieved at 5/10/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.7d0302c7504ff696f398.js
+// Retrieved at 5/10/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/react-popper/lib/esm/usePopper.js": function(e, t, n) {
@@ -2433,12 +2433,12 @@
 						id: d ? d(l.id) : l.id,
 						tabIndex: -1
 					}, n), E = !!l.media && l.media.type === f.o.VIDEO;
-					return l.isSponsored || E ? o.a.createElement(a.a, {
+					return (e => l.media && Object(f.E)(l.media) && y ? o.a.createElement(u, {
+						postId: l.id
+					}, e) : e)((e => l.isSponsored || E ? o.a.createElement(a.a, {
 						post: l,
 						trackDisplay: !0
-					}, g) : l.media && Object(f.E)(l.media) && y ? o.a.createElement(u, {
-						postId: l.id
-					}, g) : g
+					}, e) : e)(g))
 				}
 			}
 			t.a = E(Object(y.a)(Object(p.c)(S)))
@@ -3519,4 +3519,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.5fad81e796c799a85c87.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.7d0302c7504ff696f398.js.map

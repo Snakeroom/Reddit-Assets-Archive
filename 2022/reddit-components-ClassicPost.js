@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.89c4e360370137679b32.js
-// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.8fbe432d6d35c11a5c8a.js
+// Retrieved at 5/10/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2679,12 +2679,12 @@
 						id: d ? d(l.id) : l.id,
 						tabIndex: -1
 					}, n), w = !!l.media && l.media.type === f.o.VIDEO;
-					return l.isSponsored || w ? o.a.createElement(i.a, {
+					return (e => l.media && Object(f.E)(l.media) && g ? o.a.createElement(u, {
+						postId: l.id
+					}, e) : e)((e => l.isSponsored || w ? o.a.createElement(i.a, {
 						post: l,
 						trackDisplay: !0
-					}, O) : l.media && Object(f.E)(l.media) && g ? o.a.createElement(u, {
-						postId: l.id
-					}, O) : O
+					}, e) : e)(O))
 				}
 			}
 			t.a = w(Object(g.a)(Object(p.c)(E)))
@@ -3276,4 +3276,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.89c4e360370137679b32.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.8fbe432d6d35c11a5c8a.js.map

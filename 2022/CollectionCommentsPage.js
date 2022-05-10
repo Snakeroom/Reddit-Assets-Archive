@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.263e31aa8def24a0cdab.js
-// Retrieved at 5/10/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.eab078be1e7cd4255458.js
+// Retrieved at 5/10/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -6352,12 +6352,12 @@
 						id: c ? c(l.id) : l.id,
 						tabIndex: -1
 					}, s), y = !!l.media && l.media.type === b.o.VIDEO;
-					return l.isSponsored || y ? o.a.createElement(a.a, {
+					return (e => l.media && Object(b.E)(l.media) && C ? o.a.createElement(m, {
+						postId: l.id
+					}, e) : e)((e => l.isSponsored || y ? o.a.createElement(a.a, {
 						post: l,
 						trackDisplay: !0
-					}, v) : l.media && Object(b.E)(l.media) && C ? o.a.createElement(m, {
-						postId: l.id
-					}, v) : v
+					}, e) : e)(v))
 				}
 			}
 			t.a = y(Object(C.a)(Object(p.c)(j)))
@@ -11322,4 +11322,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.263e31aa8def24a0cdab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.eab078be1e7cd4255458.js.map

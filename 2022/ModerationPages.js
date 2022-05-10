@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.893a15f5c7cd261da11a.js
-// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.facdf7446cf3dcf29128.js
+// Retrieved at 5/10/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -14374,12 +14374,12 @@
 						id: l ? l(c.id) : c.id,
 						tabIndex: -1
 					}, s), C = !!c.media && c.media.type === b.o.VIDEO;
-					return c.isSponsored || C ? a.a.createElement(i.a, {
+					return (e => c.media && Object(b.E)(c.media) && E ? a.a.createElement(m, {
+						postId: c.id
+					}, e) : e)((e => c.isSponsored || C ? a.a.createElement(i.a, {
 						post: c,
 						trackDisplay: !0
-					}, v) : c.media && Object(b.E)(c.media) && E ? a.a.createElement(m, {
-						postId: c.id
-					}, v) : v
+					}, e) : e)(v))
 				}
 			}
 			t.a = C(Object(E.a)(Object(u.c)(y)))
@@ -23528,4 +23528,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.893a15f5c7cd261da11a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.facdf7446cf3dcf29128.js.map

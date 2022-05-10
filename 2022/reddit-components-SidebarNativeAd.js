@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c98945cc47e110e0ddc4.js
-// Retrieved at 5/10/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.0a76e3ffa4d878e12ba4.js
+// Retrieved at 5/10/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1331,12 +1331,12 @@
 						id: d ? d(l.id) : l.id,
 						tabIndex: -1
 					}, n), x = !!l.media && l.media.type === f.o.VIDEO;
-					return l.isSponsored || x ? o.a.createElement(a.a, {
+					return (e => l.media && Object(f.E)(l.media) && _ ? o.a.createElement(u, {
+						postId: l.id
+					}, e) : e)((e => l.isSponsored || x ? o.a.createElement(a.a, {
 						post: l,
 						trackDisplay: !0
-					}, y) : l.media && Object(f.E)(l.media) && _ ? o.a.createElement(u, {
-						postId: l.id
-					}, y) : y
+					}, e) : e)(y))
 				}
 			}
 			t.a = x(Object(_.a)(Object(m.c)(E)))
@@ -3748,4 +3748,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c98945cc47e110e0ddc4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.0a76e3ffa4d878e12ba4.js.map

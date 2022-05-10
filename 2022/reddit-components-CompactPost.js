@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.64f25fee030d5593423c.js
-// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.ad8f204cdf06067c3ee4.js
+// Retrieved at 5/10/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CompactPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2660,12 +2660,12 @@
 						id: d ? d(l.id) : l.id,
 						tabIndex: -1
 					}, n), E = !!l.media && l.media.type === f.o.VIDEO;
-					return l.isSponsored || E ? s.a.createElement(a.a, {
+					return (e => l.media && Object(f.E)(l.media) && g ? s.a.createElement(p, {
+						postId: l.id
+					}, e) : e)((e => l.isSponsored || E ? s.a.createElement(a.a, {
 						post: l,
 						trackDisplay: !0
-					}, y) : l.media && Object(f.E)(l.media) && g ? s.a.createElement(p, {
-						postId: l.id
-					}, y) : y
+					}, e) : e)(y))
 				}
 			}
 			t.a = E(Object(g.a)(Object(u.c)(j)))
@@ -3060,4 +3060,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.64f25fee030d5593423c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CompactPost.ad8f204cdf06067c3ee4.js.map
