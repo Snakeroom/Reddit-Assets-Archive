@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.fb78864b906f5230dd25.js
-// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.4c802157b1377bdd52f1.js
+// Retrieved at 5/10/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/scroll/index.ts": function(e, t, n) {
@@ -89,7 +89,7 @@
 			})), n.d(t, "j", (function() {
 				return Ve
 			})), n.d(t, "i", (function() {
-				return Je
+				return We
 			})), n.d(t, "l", (function() {
 				return ze
 			})), n.d(t, "t", (function() {
@@ -234,8 +234,8 @@
 				V = n("./src/reddit/helpers/dom/index.ts"),
 				H = n("./src/reddit/helpers/localStorage/index.ts"),
 				q = n("./src/reddit/helpers/sessionStorage/index.ts"),
-				W = n("./src/reddit/helpers/trackers/commentsPage.ts"),
-				J = n("./src/reddit/models/Comment/index.ts"),
+				J = n("./src/reddit/helpers/trackers/commentsPage.ts"),
+				W = n("./src/reddit/models/Comment/index.ts"),
 				z = n("./src/reddit/models/PostDraft/index.ts"),
 				Q = n("./src/reddit/models/RichTextJson/index.ts"),
 				X = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
@@ -247,8 +247,8 @@
 				ne = n("./node_modules/reselect/es/index.js");
 			const oe = Object(ne.a)(e => Object(te.c)(e, {
 				experimentEligibilitySelector: te.a,
-				experimentName: ee.Bb
-			}), e => e === ee.sd);
+				experimentName: ee.zb
+			}), e => e === ee.qd);
 			var se = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				re = n("./src/reddit/selectors/platform.ts"),
 				ie = n("./src/reddit/selectors/posts.ts"),
@@ -283,7 +283,7 @@
 				fe = async (e, t, n, o) => {
 					const s = o.ok && o.body,
 						r = s && s.comment && s.comment.id;
-					await W.f(e, n, t, r)
+					await J.f(e, n, t, r)
 				}, he = "Toxicity_Warning__Modal", ge = e => async (t, n, o) => {
 					let {
 						gqlContext: s
@@ -377,7 +377,7 @@
 						} else {
 							if (E.error && E.error.type === s.Kb) {
 								const e = t && r ? r : je(l);
-								W.j(y, e, i)
+								J.j(y, e, i)
 							}
 							const n = E.error && E.error.fields && E.error.fields[0] ? E.error.fields[0].msg : o.fbt._("Something went wrong", null, {
 								hk: "LWFS0"
@@ -476,7 +476,7 @@
 							});
 							if (!e) return;
 							const n = t && o ? o : je(f);
-							W.j(g, n, e.postId, m)
+							J.j(g, n, e.postId, m)
 						}
 						r(Oe({
 							draftKey: b,
@@ -630,7 +630,7 @@
 					} = e;
 					return async (e, i) => {
 						const c = i();
-						c.user.account && (W.c(c), e(Le({
+						c.user.account && (J.c(c), e(Le({
 							commentId: t,
 							commentsPageKey: o,
 							draftKey: s,
@@ -659,7 +659,7 @@
 						if (!d.user.account) return;
 						e(Ue({
 							draftKey: r
-						})), W.d(d);
+						})), J.d(d);
 						const l = d.user.account.displayText || "",
 							m = i.commentMode,
 							u = await (async (e, t, n, o, r, i) => {
@@ -715,14 +715,14 @@
 							error: u.error
 						}))
 					}
-				}, He = Object(r.a)(de.A), qe = Object(r.a)(de.z), We = Object(r.a)(de.B), Je = (e, t) => async (n, o, r) => {
+				}, He = Object(r.a)(de.A), qe = Object(r.a)(de.z), Je = Object(r.a)(de.B), We = (e, t) => async (n, o, r) => {
 					let {
 						apiContext: i
 					} = r;
 					const c = o();
 					n(He({
 						id: e
-					})), W.a(e, c);
+					})), J.a(e, c);
 					const a = await ((e, t) => Object(_.a)(Object(y.a)(e, [C.a]), {
 						endpoint: Object(R.a)(`${e.apiUrl}/api/del`),
 						method: s.jb.POST,
@@ -740,7 +740,7 @@
 						...e,
 						error: e.error || Object(v.a)()
 					}))(i(), e);
-					a.ok ? n(We({
+					a.ok ? n(Je({
 						id: e,
 						postId: t
 					})) : n(qe({
@@ -772,7 +772,7 @@
 						hk: "3ebRql"
 					})));
 					else {
-						const r = t === J.a.FOLLOWED,
+						const r = t === W.a.FOLLOWED,
 							c = {
 								id: e,
 								expiresAt: Date.now() + 6048e5
@@ -1393,8 +1393,8 @@
 			var V = n("./src/reddit/helpers/isPost.ts"),
 				H = n("./src/reddit/helpers/r2/normalizeCommentFromR2/index.ts"),
 				q = n("./src/reddit/helpers/routeKey/index.ts"),
-				W = n("./src/reddit/models/ModQueue/index.ts"),
-				J = n("./src/reddit/models/PostDraft/index.ts"),
+				J = n("./src/reddit/models/ModQueue/index.ts"),
+				W = n("./src/reddit/models/PostDraft/index.ts"),
 				z = n("./src/reddit/models/RemovalReason/index.ts"),
 				Q = n("./src/reddit/models/Toast/index.ts"),
 				X = n("./src/reddit/selectors/comments.ts"),
@@ -1549,7 +1549,7 @@
 												sort: R.u,
 												hasSortParam: !0
 											})), u === z.e.Post) {
-											const n = Object(k.a)(J.c.replyToPost, m);
+											const n = Object(k.a)(W.c.replyToPost, m);
 											r(Object(w.q)({
 												...t,
 												headCommentId: Object(X.w)(d, {
@@ -1569,7 +1569,7 @@
 												}
 											}))
 										} else if (u === z.e.Comment) {
-											const e = Object(k.a)(J.c.replyToComment, p.id),
+											const e = Object(k.a)(W.c.replyToComment, p.id),
 												n = Object(X.j)(d, {
 													commentId: m,
 													commentsPageKey: s
@@ -1622,7 +1622,7 @@
 					if (b.ok) {
 						const o = {
 							ids: e,
-							operation: W.a.RemovalReason,
+							operation: J.a.RemovalReason,
 							username: m,
 							options: {
 								modNote: r,
@@ -1800,14 +1800,14 @@
 				V = n.n(G),
 				H = n("./src/reddit/reducers/features/comments/visitHighlightingFilter/index.ts");
 			const q = Object(y.a)(R.a),
-				W = e => e === H.a.First ? o.fbt._("First Visit", null, {
+				J = e => e === H.a.First ? o.fbt._("First Visit", null, {
 					hk: "HdDSr"
 				}) : e === H.a.Last ? o.fbt._("Last Visit", null, {
 					hk: "3ubIq3"
 				}) : o.fbt._("None", null, {
 					hk: "4jwXNg"
 				});
-			class J extends r.a.Component {
+			class W extends r.a.Component {
 				constructor() {
 					super(...arguments), this.track = () => {
 						const {
@@ -1845,7 +1845,7 @@
 					}, r.a.createElement(v.b, {
 						className: Object(a.a)(V.a.HighlightPicker, V.a.Row),
 						textClassName: V.a.SortOptionDropdownText,
-						displayText: `${o.fbt._("Highlight",null,{hk:"2ZiUE8"})}: ${W(s)}`,
+						displayText: `${o.fbt._("Highlight",null,{hk:"2ZiUE8"})}: ${J(s)}`,
 						id: t,
 						noHover: !0,
 						onClick: n
@@ -1857,21 +1857,21 @@
 						renderContentsHidden: !0,
 						tooltipId: t
 					}, r.a.createElement(v.b, {
-						displayText: W(H.a.First),
+						displayText: J(H.a.First),
 						isSelected: s === H.a.First,
 						onClick: this.onDropdownClickFirst
 					}), r.a.createElement(v.b, {
-						displayText: W(H.a.Last),
+						displayText: J(H.a.Last),
 						isSelected: s === H.a.Last,
 						onClick: this.onDropdownClickLast
 					}), r.a.createElement(v.b, {
-						displayText: W(H.a.None),
+						displayText: J(H.a.None),
 						isSelected: s === H.a.None,
 						onClick: this.onDropdownClickNone
 					})))
 				}
 			}
-			var z = J;
+			var z = W;
 			const Q = "CommentSort--SortPicker",
 				X = "CommentSort--HighlightPicker",
 				$ = "CommentSort--Tooltip",
@@ -2754,11 +2754,11 @@
 				l = Object(o.a)(d, e => !!e),
 				m = e => {
 					const t = d(e);
-					return !!t && a(e, t) === s.W.SkipOnboarding
+					return !!t && a(e, t) === s.V.SkipOnboarding
 				},
 				u = e => {
 					const t = d(e);
-					return !!t && a(e, t) === s.W.RegOnboarding
+					return !!t && a(e, t) === s.V.RegOnboarding
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -2772,4 +2772,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.fb78864b906f5230dd25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.4c802157b1377bdd52f1.js.map

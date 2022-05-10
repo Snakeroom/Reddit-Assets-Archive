@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SnoovatarModal.3abd78a6a5c2dabf661b.js
-// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SnoovatarModal.20db163e4856fb82b24a.js
+// Retrieved at 5/10/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SnoovatarModal"], {
 		"./src/reddit/components/SnoovatarModal/SnoovatarIframe.tsx": function(e, t, a) {
@@ -131,7 +131,7 @@
 					const {
 						activeDetails: w,
 						activeTab: L
-					} = e, N = Object(r.useMemo)(() => {
+					} = e, T = Object(r.useMemo)(() => {
 						const e = f ? d.a.SHOP : d.a.EXPLORE;
 						return {
 							activeTab: L || e,
@@ -139,8 +139,8 @@
 						}
 					}, [w, L, f]);
 					if (!t || !c) return null;
-					let T;
-					return T = e.share ? {
+					let N;
+					return N = e.share ? {
 						...h,
 						STRIPE_API_KEY: s.a.stripe.apiKey(m),
 						COPY_SHARE_PARAMS: e.share
@@ -154,10 +154,10 @@
 					}, n.a.createElement(S, {
 						accessToken: t.accessToken,
 						authHeaders: E,
-						config: T,
+						config: N,
 						sendEvent: p.a
 					}, n.a.createElement(M, {
-						navState: N
+						navState: T
 					})))) : n.a.createElement(b.a, _({
 						className: j.a.snoovatarModalIframeContainer
 					}, e))
@@ -189,8 +189,8 @@
 			}));
 			var s = a("./src/reddit/constants/experiments.ts"),
 				r = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const n = Object(r.a)(s.Vc)
+			const n = Object(r.a)(s.Tc)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.3abd78a6a5c2dabf661b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SnoovatarModal.20db163e4856fb82b24a.js.map
