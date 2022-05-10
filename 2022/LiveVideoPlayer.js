@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.51c0acae86d4ab4e76b1.js
-// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/LiveVideoPlayer.fb7c35b6ee06786fd787.js
+// Retrieved at 5/10/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["LiveVideoPlayer"], {
 		"./node_modules/lodash/isUndefined.js": function(e, t) {
@@ -364,8 +364,8 @@
 				_ = s("./src/reddit/helpers/trackers/rpan.ts"),
 				S = s("./src/reddit/selectors/media.ts"),
 				x = s("./src/reddit/selectors/platform.ts"),
-				k = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
-				j = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
+				j = s("./src/reddit/selectors/PublicAccessNetwork/api.ts"),
+				k = s("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
 				I = s("./src/reddit/selectors/user.ts"),
 				M = s("./src/reddit/selectors/video.ts"),
 				N = s("./src/reddit/components/PublicAccessNetwork/LiveVideoPlayer/index.m.less"),
@@ -378,13 +378,13 @@
 				autoplay: I.b,
 				isOverlayOpen: x.i,
 				mutedInFeed: M.i,
-				unavailableVideoUrl: k.o,
+				unavailableVideoUrl: j.o,
 				volumeInFeed: S.f,
 				currentStream: (e, t) => {
 					let {
 						postId: s
 					} = t;
-					return Object(j.l)(e, s)
+					return Object(k.l)(e, s)
 				}
 			}), R = Object(a.b)(A, (e, t) => ({
 				setMutedInFeed: t => e(Object(v.G)(t)),
@@ -869,9 +869,9 @@
 			})), s.d(t, "y", (function() {
 				return x
 			})), s.d(t, "G", (function() {
-				return k
-			})), s.d(t, "t", (function() {
 				return j
+			})), s.d(t, "t", (function() {
+				return k
 			})), s.d(t, "c", (function() {
 				return I
 			})), s.d(t, "n", (function() {
@@ -1098,7 +1098,7 @@
 					playback: c(s, e, t),
 					...d(s)
 				}),
-				k = e => t => ({
+				j = e => t => ({
 					source: "post",
 					action: "view",
 					noun: "post",
@@ -1106,7 +1106,7 @@
 					screen: i.Y(t),
 					...a(t, e)
 				}),
-				j = e => t => {
+				k = e => t => {
 					const s = a(t, e);
 					return {
 						source: "post",
@@ -1334,7 +1334,7 @@
 			})), s.d(t, "m", (function() {
 				return _
 			})), s.d(t, "i", (function() {
-				return k
+				return j
 			})), s.d(t, "d", (function() {
 				return N
 			})), s.d(t, "h", (function() {
@@ -1354,7 +1354,7 @@
 			})), s.d(t, "e", (function() {
 				return U
 			})), s.d(t, "g", (function() {
-				return K
+				return q
 			}));
 			s("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = s("./node_modules/reselect/es/index.js"),
@@ -1498,8 +1498,8 @@
 					});
 					return a ? a.post.id : void 0
 				}),
-				k = Object(r.a)(Object(n.a)(x, E, (e, t) => e ? t[e] : void 0)),
-				j = Object(n.a)((e, t) => {
+				j = Object(r.a)(Object(n.a)(x, E, (e, t) => e ? t[e] : void 0)),
+				k = Object(n.a)((e, t) => {
 					let {
 						streamIdFromPath: s
 					} = t;
@@ -1519,13 +1519,13 @@
 				M = Object(n.a)(v, f, (e, t) => {
 					if (e > 0) return t[e - 1]
 				}),
-				N = Object(r.a)(Object(n.a)(j, E, (e, t) => e ? t[e] : void 0)),
+				N = Object(r.a)(Object(n.a)(k, E, (e, t) => e ? t[e] : void 0)),
 				P = Object(r.a)(Object(n.a)(I, E, (e, t) => e ? t[e] : void 0)),
 				T = Object(r.a)(Object(n.a)(M, E, (e, t) => e ? t[e] : void 0)),
 				V = (Object(r.a)(Object(n.a)(e => e.publicAccessNetwork.preloads.discoveryUnitThumbnails, E, (e, t) => Object.keys(e).filter(e => !!t[e]).map(s => ({
 					...t[s],
 					preloadedPreviewUrl: e[s]
-				})))), Object(n.a)(j, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
+				})))), Object(n.a)(k, e => e.publicAccessNetwork.preloads.streamPreviews, (e, t) => e && t[e])),
 				D = Object(n.a)((e, t) => {
 					let {
 						streamIdFromPath: s
@@ -1545,12 +1545,12 @@
 				};
 				return s[t] >= s[e]
 			}
-			const R = Object(n.a)(j, b, (e, t) => e && t.timestamps[e] || 0);
+			const R = Object(n.a)(k, b, (e, t) => e && t.timestamps[e] || 0);
 			var F;
 			! function(e) {
 				e[e.LIVE = 0] = "LIVE", e[e.VOD = 1] = "VOD", e[e.UNAVAILABLE = 2] = "UNAVAILABLE", e[e.INTRO = 3] = "INTRO"
 			}(F || (F = {}));
-			const B = Object(n.a)(j, E, m.b, (e, t, s) => {
+			const B = Object(n.a)(k, E, m.b, (e, t, s) => {
 					if (s) return F.INTRO;
 					const n = e && t[e];
 					if (!n) return F.UNAVAILABLE;
@@ -1559,7 +1559,7 @@
 				}),
 				H = Object(n.a)(N, B, m.b, c.b, c.o, (e, t, s, n, r) => s ? n : e ? t === F.LIVE || t === F.VOD ? e.stream.hls_url : r : void 0),
 				U = Object(n.a)(N, B, R, (e, t, s) => e ? t === F.LIVE ? e.broadcast_time : t === F.VOD && s < e.broadcast_time ? s : 0 : 0),
-				K = (e, t) => {
+				q = (e, t) => {
 					const s = h(e);
 					return !!s && s[t] && s[t].chat_disabled
 				}
@@ -1592,9 +1592,9 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(n.a)(e => Object(o.c)(e, {
 				experimentEligibilitySelector: i.P,
-				experimentName: r.kc
-			}), e => e === r.pd)
+				experimentName: r.lc
+			}), e => e === r.qd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.51c0acae86d4ab4e76b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/LiveVideoPlayer.fb7c35b6ee06786fd787.js.map
