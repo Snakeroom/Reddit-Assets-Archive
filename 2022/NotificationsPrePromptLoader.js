@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.355d21ce4beda9ddb31a.js
-// Retrieved at 5/10/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.2cbf8ebb723906c67de5.js
+// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsPrePromptLoader"], {
 		"./src/reddit/components/NotificationsPrePrompt/index.m.less": function(e, t, r) {
@@ -21,14 +21,14 @@
 				l = r("./src/reddit/constants/experiments.ts"),
 				m = r("./src/reddit/helpers/chooseVariant/index.ts");
 
-			function u(e) {
+			function p(e) {
 				return Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
 					experimentName: l.tb
-				}) === l.qd
+				}) === l.pd
 			}
-			var p = r("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
-				O = r.n(p);
+			var u = r("./src/reddit/components/NotificationsPrePrompt/index.m.less"),
+				O = r.n(u);
 
 			function b() {
 				return (b = Object.assign || function(e) {
@@ -44,7 +44,7 @@
 				const t = Object(a.b)(),
 					r = Object(i.d)(),
 					[o, l] = Object(n.useState)(),
-					m = Object(i.e)(u);
+					m = Object(i.e)(p);
 				return Object(n.useEffect)(() => {
 					m && l(setTimeout(() => {
 						r(Object(c.k)()), t(Object(d.g)())
@@ -61,4 +61,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.355d21ce4beda9ddb31a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsPrePromptLoader.2cbf8ebb723906c67de5.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.16d0a2cdacbcd6f5b70d.js
-// Retrieved at 5/10/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.20fa1821f905c863a9a7.js
+// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -2779,114 +2779,113 @@
 		"./src/reddit/helpers/trackers/postFlair.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return d
+				return c
 			})), n.d(t, "b", (function() {
-				return l
+				return d
 			})), n.d(t, "f", (function() {
-				return u
+				return l
 			})), n.d(t, "d", (function() {
-				return m
+				return u
 			})), n.d(t, "c", (function() {
-				return p
+				return m
 			})), n.d(t, "e", (function() {
-				return b
+				return p
 			}));
 			var r = n("./src/reddit/helpers/correlationIdTracker.ts"),
 				s = n("./src/reddit/helpers/search/SearchTelemetrySource.ts"),
-				o = n("./src/reddit/selectors/experiments/serpSIIDs.ts"),
-				i = n("./src/reddit/selectors/telemetry.ts"),
-				a = n("./src/reddit/helpers/flair.ts"),
-				c = n("./src/reddit/helpers/search/searchImpressionId.ts");
-			const d = (e, t) => n => {
-					const a = `flair_name:'${t.postFlairName}'`;
+				o = n("./src/reddit/selectors/telemetry.ts"),
+				i = n("./src/reddit/helpers/flair.ts"),
+				a = n("./src/reddit/helpers/search/searchImpressionId.ts");
+			const c = (e, t) => n => {
+					const i = `flair_name:'${t.postFlairName}'`;
 					return {
 						source: "post",
 						action: "click",
 						noun: "post_flair",
-						...i.n(n),
-						actionInfo: i.d(n),
+						...o.n(n),
+						actionInfo: o.d(n),
 						correlationId: Object(r.c)(r.a.SearchResults),
-						post: i.H(n, e),
+						post: o.H(n, e),
 						search: {
-							...i.L(n, t),
-							query: a,
-							queryId: i.ab(n, s.a.SERP),
-							impressionId: Object(o.a)(n) ? c.a.get(s.a.SERP) : void 0
+							...o.L(n, t),
+							query: i,
+							queryId: o.ab(n, s.a.SERP),
+							impressionId: a.a.get(s.a.SERP)
 						},
-						subreddit: i.gb(n)
+						subreddit: o.gb(n)
 					}
 				},
-				l = e => t => ({
+				d = e => t => ({
 					source: "post_flair_widget",
 					action: "click",
 					noun: "post_flair_search",
-					...i.n(t),
-					actionInfo: i.d(t),
+					...o.n(t),
+					actionInfo: o.d(t),
 					correlationId: Object(r.c)(r.a.SearchResults),
-					search: i.L(t, e),
-					subreddit: i.gb(t)
+					search: o.L(t, e),
+					subreddit: o.gb(t)
 				}),
-				u = e => t => {
-					const n = Object(a.g)(e);
+				l = e => t => {
+					const n = Object(i.g)(e);
 					return {
-						...i.n(t),
+						...o.n(t),
 						action: "click",
 						noun: "post_flair",
 						source: "post_flair_widget",
-						subreddit: i.gb(t),
+						subreddit: o.gb(t),
 						postFlair: {
 							id: e.templateId,
 							title: n
 						}
 					}
 				},
-				m = () => e => ({
-					...i.n(e),
+				u = () => e => ({
+					...o.n(e),
 					action: "click",
 					noun: "overflow",
 					source: "post_flair_widget",
-					subreddit: i.gb(e)
+					subreddit: o.gb(e)
 				}),
-				p = e => t => {
-					const n = Object(a.g)(e);
+				m = e => t => {
+					const n = Object(i.g)(e);
 					return {
-						...i.n(t),
+						...o.n(t),
 						action: "click",
 						noun: "clear",
 						source: "post_flair_widget",
-						subreddit: i.gb(t),
+						subreddit: o.gb(t),
 						postFlair: {
 							id: e.templateId,
 							title: n
 						}
 					}
 				},
-				b = (e, t) => n => {
-					const r = Object(a.g)(e),
-						d = i.H(n, t),
-						l = `flair_name:'${r}'`;
+				p = (e, t) => n => {
+					const r = Object(i.g)(e),
+						c = o.H(n, t),
+						d = `flair_name:'${r}'`;
 					return {
-						...i.n(n),
+						...o.n(n),
 						action: "click",
 						noun: "post_flair",
 						source: "post",
-						subreddit: i.gb(n),
+						subreddit: o.gb(n),
 						postFlair: {
 							id: e.templateId,
 							title: r
 						},
-						post: d,
+						post: c,
 						search: {
-							query: l,
-							subredditId: d ? d.subredditId : void 0,
-							subredditName: d ? d.subredditName : void 0,
+							query: d,
+							subredditId: c ? c.subredditId : void 0,
+							subredditName: c ? c.subredditName : void 0,
 							postFlairName: r,
 							originElement: "post_flair",
-							queryId: i.ab(n, s.a.SERP),
-							impressionId: Object(o.a)(n) ? c.a.get(s.a.SERP) : void 0,
-							originPageType: n.platform.currentPage ? i.u(n.platform.currentPage) : void 0
+							queryId: o.ab(n, s.a.SERP),
+							impressionId: a.a.get(s.a.SERP),
+							originPageType: n.platform.currentPage ? o.u(n.platform.currentPage) : void 0
 						},
-						feed: i.q(n)
+						feed: o.q(n)
 					}
 				}
 		},
@@ -4051,31 +4050,31 @@
 			}));
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(s.a)(r.dd),
-				i = Object(s.a)(r.bd),
-				a = Object(s.a)(r.ed),
-				c = Object(s.a)(r.ad),
-				d = Object(s.a)(r.Zc),
-				l = Object(s.a)(r.hd),
-				u = Object(s.a)(r.fd),
-				m = Object(s.a)(r.gd),
-				p = Object(s.a)(r.Wc),
-				b = Object(s.a)(r.Uc),
-				f = Object(s.a)(r.Mc),
-				_ = Object(s.a)(r.Nc),
-				h = Object(s.a)(r.Kc),
-				O = Object(s.a)(r.Lc),
-				E = Object(s.a)(r.Pc),
-				S = Object(s.a)(r.Jc),
-				C = Object(s.a)(r.Xc),
-				v = Object(s.a)(r.Yc),
-				j = Object(s.a)(r.cd),
-				x = Object(s.a)(r.id),
-				y = Object(s.a)(r.od),
-				T = Object(s.a)(r.nd),
-				g = Object(s.a)(r.kd),
-				I = Object(s.a)(r.md),
-				k = Object(s.a)(r.ld)
+			const o = Object(s.a)(r.cd),
+				i = Object(s.a)(r.ad),
+				a = Object(s.a)(r.dd),
+				c = Object(s.a)(r.Zc),
+				d = Object(s.a)(r.Yc),
+				l = Object(s.a)(r.gd),
+				u = Object(s.a)(r.ed),
+				m = Object(s.a)(r.fd),
+				p = Object(s.a)(r.Vc),
+				b = Object(s.a)(r.Tc),
+				f = Object(s.a)(r.Lc),
+				_ = Object(s.a)(r.Mc),
+				h = Object(s.a)(r.Jc),
+				O = Object(s.a)(r.Kc),
+				E = Object(s.a)(r.Oc),
+				S = Object(s.a)(r.Ic),
+				C = Object(s.a)(r.Wc),
+				v = Object(s.a)(r.Xc),
+				j = Object(s.a)(r.bd),
+				x = Object(s.a)(r.hd),
+				y = Object(s.a)(r.nd),
+				T = Object(s.a)(r.md),
+				g = Object(s.a)(r.jd),
+				I = Object(s.a)(r.ld),
+				k = Object(s.a)(r.kd)
 		},
 		"./src/reddit/selectors/experiments/loggedOutOneFeed.ts": function(e, t, n) {
 			"use strict";
@@ -4183,7 +4182,7 @@
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
 						experimentName: r.ac
-					}) === r.xc.Enabled
+					}) === r.wc.Enabled
 				}
 		},
 		"./src/reddit/selectors/experiments/presence.ts": function(e, t, n) {
@@ -4196,8 +4195,8 @@
 			const o = e => {
 				return Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: r.Ee
-				}) === r.qd
+					experimentName: r.De
+				}) === r.pd
 			}
 		},
 		"./src/reddit/selectors/gold/awardIcon.ts": function(e, t, n) {
@@ -4385,4 +4384,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.16d0a2cdacbcd6f5b70d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.20fa1821f905c863a9a7.js.map

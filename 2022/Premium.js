@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.2c4b355c3967d9488d69.js
-// Retrieved at 5/10/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.1be48d411b31fd31952f.js
+// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, t, r) {
@@ -261,31 +261,31 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				d = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(d.a)(n.dd),
-				s = Object(d.a)(n.bd),
-				c = Object(d.a)(n.ed),
-				i = Object(d.a)(n.ad),
-				o = Object(d.a)(n.Zc),
-				u = Object(d.a)(n.hd),
-				l = Object(d.a)(n.fd),
-				f = Object(d.a)(n.gd),
-				p = Object(d.a)(n.Wc),
-				b = Object(d.a)(n.Uc),
-				m = Object(d.a)(n.Mc),
-				g = Object(d.a)(n.Nc),
-				h = Object(d.a)(n.Kc),
-				O = Object(d.a)(n.Lc),
-				j = Object(d.a)(n.Pc),
-				P = Object(d.a)(n.Jc),
-				y = Object(d.a)(n.Xc),
-				_ = Object(d.a)(n.Yc),
-				x = Object(d.a)(n.cd),
-				v = Object(d.a)(n.id),
-				k = Object(d.a)(n.od),
-				C = Object(d.a)(n.nd),
-				I = Object(d.a)(n.kd),
-				w = Object(d.a)(n.md),
-				M = Object(d.a)(n.ld)
+			const a = Object(d.a)(n.cd),
+				s = Object(d.a)(n.ad),
+				c = Object(d.a)(n.dd),
+				i = Object(d.a)(n.Zc),
+				o = Object(d.a)(n.Yc),
+				u = Object(d.a)(n.gd),
+				l = Object(d.a)(n.ed),
+				f = Object(d.a)(n.fd),
+				p = Object(d.a)(n.Vc),
+				b = Object(d.a)(n.Tc),
+				m = Object(d.a)(n.Lc),
+				g = Object(d.a)(n.Mc),
+				h = Object(d.a)(n.Jc),
+				O = Object(d.a)(n.Kc),
+				j = Object(d.a)(n.Oc),
+				P = Object(d.a)(n.Ic),
+				y = Object(d.a)(n.Wc),
+				_ = Object(d.a)(n.Xc),
+				x = Object(d.a)(n.bd),
+				v = Object(d.a)(n.hd),
+				k = Object(d.a)(n.nd),
+				C = Object(d.a)(n.md),
+				I = Object(d.a)(n.jd),
+				w = Object(d.a)(n.ld),
+				M = Object(d.a)(n.kd)
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, t, r) {
 			"use strict";
@@ -389,4 +389,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.2c4b355c3967d9488d69.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.1be48d411b31fd31952f.js.map
