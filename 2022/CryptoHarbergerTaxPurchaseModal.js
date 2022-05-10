@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.7d6d852d73ed31591cba.js
-// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.1a760658dce5687d199a.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -410,7 +410,7 @@
 				}, a.a.createElement(p.a, {
 					className: g.a.token,
 					subredditId: l
-				}), Object(u.a)(Object(b.b)(d, null == c ? void 0 : c.displayConversion))), a.a.createElement(h.l, {
+				}), Object(u.a)(Object(b.c)(d, null == c ? void 0 : c.displayConversion))), a.a.createElement(h.l, {
 					onClick: e.onPurchase
 				}, E._("Proceed to Purchase", null, {
 					hk: "21Rymw"
@@ -645,8 +645,8 @@
 			var B = n("./node_modules/bignumber.js/bignumber.js"),
 				A = n("./src/lib/currency/cleanNumber/index.ts"),
 				H = n("./src/reddit/actions/harbergerTax/actionCreators.ts"),
-				D = n("./src/reddit/actions/toaster.ts"),
-				S = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
+				S = n("./src/reddit/actions/toaster.ts"),
+				D = n("./src/reddit/components/Governance/TokenAmount/index.tsx"),
 				L = n("./src/reddit/controls/FormFields/index.tsx"),
 				F = n("./src/reddit/helpers/governance/ethereum.ts"),
 				G = n("./src/reddit/models/Toast/index.ts"),
@@ -674,7 +674,7 @@
 					className: Y.a.label
 				}, e.label), a.a.createElement("div", {
 					className: Y.a.amount
-				}, Object(u.a)(Object(b.b)(e.amount, e.tokenDisplayConversion))))
+				}, Object(u.a)(Object(b.c)(e.amount, e.tokenDisplayConversion))))
 			}
 			var z = n("./node_modules/fbt/lib/FbtPublic.js");
 			const J = .01;
@@ -736,7 +736,7 @@
 						})
 					}, a.a.createElement("div", {
 						className: q.a.currentPrice
-					}, a.a.createElement(S.a, {
+					}, a.a.createElement(D.a, {
 						amount: l,
 						subredditId: c
 					}), n && a.a.createElement("div", {
@@ -768,7 +768,7 @@
 						}),
 						placeholder: "0",
 						type: "text",
-						value: Object(u.a)(Object(b.b)(this.state.price, i.displayConversion)),
+						value: Object(u.a)(Object(b.c)(this.state.price, i.displayConversion)),
 						onChange: e => this.handlePriceChange(e.currentTarget.value)
 					}), a.a.createElement(p.a, {
 						className: q.a.priceToken,
@@ -813,7 +813,7 @@
 						tokenDisplayConversion: i.displayConversion || "1"
 					}), a.a.createElement("div", {
 						className: q.a.equals
-					}, "="), a.a.createElement(S.a, {
+					}, "="), a.a.createElement(D.a, {
 						className: q.a.prepayTotal,
 						amount: f.toFixed(2),
 						subredditId: c
@@ -823,7 +823,7 @@
 						className: q.a.total
 					}, z.fbt._("Total due", null, {
 						hk: "1MTLwA"
-					})), a.a.createElement(S.a, {
+					})), a.a.createElement(D.a, {
 						amount: v.toFixed(2),
 						subredditId: c
 					})), a.a.createElement(h.l, {
@@ -846,7 +846,7 @@
 				}
 			});
 			var $ = Object(d.b)(K, e => ({
-					onError: t => e(Object(D.f)({
+					onError: t => e(Object(S.f)({
 						duration: 5e3,
 						kind: G.b.Error,
 						text: t || z.fbt._("Something wen't wrong with the purchase. Please try again later.", null, {
@@ -1038,7 +1038,7 @@
 					}),
 					grey: e.grey,
 					subredditId: e.subredditId
-				}), Object(c.a)(Object(d.b)(e.amount, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)), e.additionalText || null)
+				}), Object(c.a)(Object(d.c)(e.amount, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)), e.additionalText || null)
 			}))
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, n) {
@@ -1454,7 +1454,7 @@
 			}
 			const l = 4001;
 			async function d(e, t, r, s) {
-				const [o, i] = await Promise.all([Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				const [o, i] = await Promise.all([n.e(0).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await c();
 				const l = new o.providers.Web3Provider(a()).getSigner(),
 					d = new o.Contract(e, i, l),
@@ -1483,7 +1483,7 @@
 			};
 			const m = 1;
 			async function p(e, t, r, a, s) {
-				const o = await Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+				const o = await n.e(0).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: i
 					} = o,
@@ -1564,12 +1564,14 @@
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "c", (function() {
 				return s
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return o
 			})), n.d(t, "a", (function() {
 				return i
+			})), n.d(t, "b", (function() {
+				return c
 			}));
 			var r = n("./node_modules/bignumber.js/bignumber.js"),
 				a = n("./src/lib/prettyPrintNumber/index.ts");
@@ -1588,6 +1590,12 @@
 				const n = new r.BigNumber(e),
 					a = new r.BigNumber(t || 1);
 				return n.multipliedBy(a).toFixed(0)
+			}
+
+			function c(e) {
+				const t = new r.BigNumber(e),
+					n = new r.BigNumber("1e18");
+				return t.dividedBy(n).toString()
 			}
 		},
 		"./src/reddit/icons/svgs/AddSquare/index.tsx": function(e, t, n) {
@@ -1718,4 +1726,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.7d6d852d73ed31591cba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxPurchaseModal.1a760658dce5687d199a.js.map

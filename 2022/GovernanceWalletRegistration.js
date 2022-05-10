@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.d7efb470ee00ba82c25c.js
-// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.7668400d210763147fda.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceWalletRegistration"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -149,7 +149,7 @@
 			})), n.d(t, "w", (function() {
 				return N
 			})), n.d(t, "x", (function() {
-				return w
+				return O
 			}));
 			const r = "GOVERNANCE__COMMUNITY_DETAILS_SUCCESS",
 				a = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
@@ -174,7 +174,7 @@
 				y = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				k = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				N = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
-				w = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
+				O = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/governance/errorToast.ts": function(e, t, n) {
 			"use strict";
@@ -235,14 +235,14 @@
 				y = (Object(a.a)(C.f), Object(a.a)(C.g), Object(a.a)(C.h)),
 				k = Object(a.a)(C.i),
 				N = Object(a.a)(C.j),
-				w = Object(a.a)(C.k),
-				O = Object(a.a)(C.q),
+				O = Object(a.a)(C.k),
+				w = Object(a.a)(C.q),
 				j = Object(a.a)(C.r),
 				I = Object(a.a)(C.s),
 				M = Object(a.a)(C.t),
-				T = Object(a.a)(C.u),
-				S = Object(a.a)(C.v),
-				A = Object(a.a)(C.w),
+				A = Object(a.a)(C.u),
+				T = Object(a.a)(C.v),
+				S = Object(a.a)(C.w),
 				R = Object(a.a)(C.x),
 				P = (e, t) => async (n, r, a) => {
 					let s, {
@@ -276,7 +276,7 @@
 								optionId: t,
 								options: e
 							}))
-						} else n(w(s.body));
+						} else n(O(s.body));
 						const a = r();
 						if ((p = a.polls.models[e]) && Object(u.d)(p)) {
 							const {
@@ -319,16 +319,16 @@
 						text: r.fbt._("Success! You just transferred {amount} {tokenName} to {recipient}", [r.fbt._param("amount", Object(s.a)(e.amount)), r.fbt._param("tokenName", (null === (u = Object(v.b)(a(), e.subredditId)) || void 0 === u ? void 0 : u.name) || ""), r.fbt._param("recipient", e.recipient)], {
 							hk: "3klrhq"
 						})
-					})), t && n(Object(o.f)())) : (n(O({
+					})), t && n(Object(o.f)())) : (n(w({
 						error: p.error
 					})), Object(g.a)(n, p.error))
 				}, B = e => async (t, n, r) => {
 					let {
 						apiContext: a
 					} = r;
-					t(S());
+					t(T());
 					const s = await Object(p.a)(a(), e);
-					s.ok ? t(A(s.body)) : t(T({
+					s.ok ? t(S(s.body)) : t(A({
 						error: s.error
 					}))
 				}
@@ -679,13 +679,13 @@
 				}
 			}
 			var N = n("./src/chat/icons/svgs/Refresh/index.tsx"),
-				w = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
-				O = n("./src/reddit/icons/svgs/DownvoteCircle/index.tsx"),
+				O = n("./src/reddit/icons/svgs/CircleCheck/index.tsx"),
+				w = n("./src/reddit/icons/svgs/DownvoteCircle/index.tsx"),
 				j = n("./src/reddit/components/Governance/WalletRegistration/Common/pageReload.ts");
 			const {
 				fbt: I
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), M = "https://metamask.io/", T = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn";
-			class S extends a.a.Component {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), M = "https://metamask.io/", A = "https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn";
+			class T extends a.a.Component {
 				constructor() {
 					super(...arguments), this.state = {
 						clickedInstallButton: !1,
@@ -705,7 +705,7 @@
 						className: g.a.header
 					}, I._("Install the MetaMask Browser Extension", null, {
 						hk: "3MOJpi"
-					}), t && a.a.createElement(w.a, {
+					}), t && a.a.createElement(O.a, {
 						className: g.a.installedCheckmark
 					})), a.a.createElement("div", {
 						className: g.a.body
@@ -747,19 +747,19 @@
 						className: g.a.buttonIcon
 					})) : a.a.createElement(f.p, {
 						className: g.a.button,
-						href: T,
+						href: A,
 						target: "_blank",
 						onClick: () => this.setState({
 							clickedInstallButton: !0
 						})
 					}, I._("Get Extension", null, {
 						hk: "ey9hD"
-					}), a.a.createElement(O.a, {
+					}), a.a.createElement(w.a, {
 						className: g.a.buttonIcon
 					}))))
 				}
 			}
-			var A = e => a.a.createElement("svg", {
+			var S = e => a.a.createElement("svg", {
 				className: e.className,
 				viewBox: "0 0 16 16",
 				xmlns: "http://www.w3.org/2000/svg"
@@ -825,7 +825,7 @@
 					hk: "3gEZnQ"
 				}) : R._("Finish", null, {
 					hk: "4kSXmt"
-				}), a.a.createElement(A, {
+				}), a.a.createElement(S, {
 					className: g.a.buttonIcon
 				}))))
 			}
@@ -960,9 +960,9 @@
 					className: g.a.buttonIcon
 				}))))
 			}
-			var J, $ = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
-				Q = n("./src/reddit/components/Governance/WalletRegistration/Common/index.m.less"),
-				Y = n.n(Q);
+			var J, Q = n("./src/reddit/components/Governance/WalletRegistration/Common/Countdown.tsx"),
+				$ = n("./src/reddit/components/Governance/WalletRegistration/Common/index.m.less"),
+				Y = n.n($);
 
 			function Z(e) {
 				const {
@@ -1099,10 +1099,10 @@
 						subredditId: r
 					} = this.props, {
 						activeTab: s
-					} = this.state, i = s === J.About ? x : s === J.MetaMask ? S : s === J.Wallet ? X : s === J.Connect ? k : s === J.Verify ? q : P;
+					} = this.state, i = s === J.About ? x : s === J.MetaMask ? T : s === J.Wallet ? X : s === J.Connect ? k : s === J.Verify ? q : P;
 					return a.a.createElement("article", {
 						className: Object(o.a)(Y.a.container, e)
-					}, a.a.createElement($.a, {
+					}, a.a.createElement(Q.a, {
 						subredditId: r
 					}), a.a.createElement("button", {
 						className: Y.a.closeButton,
@@ -1262,9 +1262,9 @@
 			})), n.d(t, "q", (function() {
 				return N
 			})), n.d(t, "d", (function() {
-				return w
-			})), n.d(t, "l", (function() {
 				return O
+			})), n.d(t, "l", (function() {
+				return w
 			})), n.d(t, "t", (function() {
 				return j
 			})), n.d(t, "u", (function() {
@@ -1272,11 +1272,11 @@
 			})), n.d(t, "r", (function() {
 				return M
 			})), n.d(t, "a", (function() {
-				return T
-			})), n.d(t, "s", (function() {
-				return S
-			})), n.d(t, "c", (function() {
 				return A
+			})), n.d(t, "s", (function() {
+				return T
+			})), n.d(t, "c", (function() {
+				return S
 			}));
 			var r = n("./src/lib/classNames/index.ts"),
 				a = n("./src/lib/lessComponent.tsx"),
@@ -1310,14 +1310,14 @@
 				y = a.a.footer("ModalFooter", u.a),
 				k = a.a.header("ModalHeader", u.a),
 				N = a.a.div("ModalTitle", u.a),
-				w = a.a.div("ModalAnnotation", u.a),
-				O = a.a.div("ModalMain", u.a),
+				O = a.a.div("ModalAnnotation", u.a),
+				w = a.a.div("ModalMain", u.a),
 				j = a.a.textarea("TextArea", u.a),
 				I = a.a.wrapped(i.l, "WarningButton", u.a),
 				M = a.a.wrapped(i.l, "PrimaryButton", u.a),
-				T = a.a.wrapped(i.o, "CancelButton", u.a),
-				S = a.a.wrapped(i.r, "RemoveButton", u.a),
-				A = e => {
+				A = a.a.wrapped(i.o, "CancelButton", u.a),
+				T = a.a.wrapped(i.r, "RemoveButton", u.a),
+				S = e => {
 					let {
 						className: t,
 						...n
@@ -1513,9 +1513,12 @@
 					case r.EthTraderRinkeby:
 						return "https://meta-api.reddit.com/ethereum/rinkeby";
 					case r.ArbitrumRinkeby:
-						return "https://meta-api.reddit.com/ethereum/ethereum:5391184"
+						return "https://meta-api.reddit.com/ethereum/ethereum:5391184";
+					case r.ArbitrumNitroDevnet:
+						return "https://meta-api.reddit.com/ethereum/nitroDevnet";
+					default:
+						return `https://meta-api.reddit.com/ethereum/${e}`
 				}
-				throw new Error(`No JSON RPC url for provider: ${e}`)
 			}
 
 			function c(e) {
@@ -1527,9 +1530,14 @@
 					case r.EthTraderRinkeby:
 						return "rinkeby";
 					case r.ArbitrumRinkeby:
-						return 5391184
+						return 5391184;
+					case r.ArbitrumNitroDevnet:
+						return 421612;
+					default: {
+						const [, t] = e.split(":");
+						return t
+					}
 				}
-				throw new Error(`No ethereum network for provider: ${e}`)
 			}
 
 			function d(e) {
@@ -1558,7 +1566,7 @@
 					endpoint: `${a.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
 			const b = (e, t, n) => ({
 					type: "burn-link",
@@ -1691,7 +1699,7 @@
 			}
 			const d = 4001;
 			async function l(e, t, r, s) {
-				const [o, i] = await Promise.all([Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				const [o, i] = await Promise.all([n.e(0).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await c();
 				const d = new o.providers.Web3Provider(a()).getSigner(),
 					l = new o.Contract(e, i, d),
@@ -1720,7 +1728,7 @@
 			};
 			const m = 1;
 			async function b(e, t, r, a, s) {
-				const o = await Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+				const o = await n.e(0).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: i
 					} = o,
@@ -2116,4 +2124,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.d7efb470ee00ba82c25c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceWalletRegistration.7668400d210763147fda.js.map

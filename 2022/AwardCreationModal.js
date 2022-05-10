@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.5f13eab43a0a8f6cabbe.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.4cd56ec33922cc5f629c.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -107,9 +107,9 @@
 						}
 						case r.b.Crypto: {
 							if (o) {
-								return Object(i.c)(f, d) + " " + g
+								return Object(i.d)(f, d) + " " + g
 							}
-							const e = Number(Object(i.b)(f, d));
+							const e = Number(Object(i.c)(f, d));
 							return Object(l.c)() ? new Intl.NumberFormat(a, {
 								style: "currency",
 								currency: g,
@@ -2142,12 +2142,14 @@
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, a) {
 			"use strict";
-			a.d(t, "b", (function() {
+			a.d(t, "c", (function() {
 				return r
-			})), a.d(t, "c", (function() {
+			})), a.d(t, "d", (function() {
 				return o
 			})), a.d(t, "a", (function() {
 				return i
+			})), a.d(t, "b", (function() {
+				return l
 			}));
 			var n = a("./node_modules/bignumber.js/bignumber.js"),
 				s = a("./src/lib/prettyPrintNumber/index.ts");
@@ -2167,7 +2169,13 @@
 					s = new n.BigNumber(t || 1);
 				return a.multipliedBy(s).toFixed(0)
 			}
+
+			function l(e) {
+				const t = new n.BigNumber(e),
+					a = new n.BigNumber("1e18");
+				return t.dividedBy(a).toString()
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.5f13eab43a0a8f6cabbe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.4cd56ec33922cc5f629c.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.0b53b4c4291d2ca0ebec.js
-// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.bec5c584834f210da1d8.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -123,9 +123,9 @@
 						}
 						case l.b.Crypto: {
 							if (s) {
-								return Object(i.c)(w, m) + " " + g
+								return Object(i.d)(w, m) + " " + g
 							}
-							const e = Number(Object(i.b)(w, m));
+							const e = Number(Object(i.c)(w, m));
 							return Object(o.c)() ? new Intl.NumberFormat(a, {
 								style: "currency",
 								currency: g,
@@ -443,12 +443,14 @@
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, a) {
 			"use strict";
-			a.d(t, "b", (function() {
+			a.d(t, "c", (function() {
 				return l
-			})), a.d(t, "c", (function() {
+			})), a.d(t, "d", (function() {
 				return s
 			})), a.d(t, "a", (function() {
 				return i
+			})), a.d(t, "b", (function() {
+				return o
 			}));
 			var n = a("./node_modules/bignumber.js/bignumber.js"),
 				r = a("./src/lib/prettyPrintNumber/index.ts");
@@ -467,6 +469,12 @@
 				const a = new n.BigNumber(e),
 					r = new n.BigNumber(t || 1);
 				return a.multipliedBy(r).toFixed(0)
+			}
+
+			function o(e) {
+				const t = new n.BigNumber(e),
+					a = new n.BigNumber("1e18");
+				return t.dividedBy(a).toString()
 			}
 		},
 		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, a) {
@@ -1282,8 +1290,8 @@
 				}),
 				q = a("./src/reddit/pages/Powerups/HeadingSection.tsx"),
 				W = a("./src/reddit/selectors/user.ts"),
-				M = a("./node_modules/react-router-dom/esm/react-router-dom.js"),
-				B = a("./src/lib/opener/index.ts"),
+				B = a("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				M = a("./src/lib/opener/index.ts"),
 				T = a("./src/reddit/hooks/useIsClient.ts"),
 				H = a("./src/reddit/pages/Predictions/Communities.m.less"),
 				A = a.n(H);
@@ -1329,12 +1337,12 @@
 						participationCount: a,
 						tournamentName: s
 					} = e;
-					return l.a.createElement(M.a, {
+					return l.a.createElement(B.a, {
 						className: A.a.community,
 						key: t,
 						to: `r/${t}/predictions`,
-						target: B.d.BLANK,
-						rel: B.c,
+						target: M.d.BLANK,
+						rel: M.c,
 						onClick: r
 					}, l.a.createElement("div", {
 						className: A.a.communityIcon,
@@ -1715,4 +1723,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.0b53b4c4291d2ca0ebec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.bec5c584834f210da1d8.js.map

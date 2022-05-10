@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.e5643dceed002d7b5ce0.js
-// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.89d1559e52a7deb146cd.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -467,9 +467,9 @@
 						}
 						case s.b.Crypto: {
 							if (c) {
-								return Object(a.c)(O, l) + " " + f
+								return Object(a.d)(O, l) + " " + f
 							}
-							const e = Number(Object(a.b)(O, l));
+							const e = Number(Object(a.c)(O, l));
 							return Object(i.c)() ? new Intl.NumberFormat(r, {
 								style: "currency",
 								currency: f,
@@ -1765,12 +1765,14 @@
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "b", (function() {
+			r.d(t, "c", (function() {
 				return s
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "d", (function() {
 				return c
 			})), r.d(t, "a", (function() {
 				return a
+			})), r.d(t, "b", (function() {
+				return i
 			}));
 			var n = r("./node_modules/bignumber.js/bignumber.js"),
 				o = r("./src/lib/prettyPrintNumber/index.ts");
@@ -1789,6 +1791,12 @@
 				const r = new n.BigNumber(e),
 					o = new n.BigNumber(t || 1);
 				return r.multipliedBy(o).toFixed(0)
+			}
+
+			function i(e) {
+				const t = new n.BigNumber(e),
+					r = new n.BigNumber("1e18");
+				return t.dividedBy(r).toString()
 			}
 		},
 		"./src/reddit/models/Payments/index.ts": function(e, t, r) {
@@ -1900,4 +1908,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.e5643dceed002d7b5ce0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.89d1559e52a7deb146cd.js.map

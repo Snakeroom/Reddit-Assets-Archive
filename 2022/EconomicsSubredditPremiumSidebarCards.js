@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.d0e7e5a3b1eab0675ba4.js
-// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.5128bdb46054f774e871.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconomicsSubredditPremiumSidebarCards"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, s) {
@@ -2575,9 +2575,12 @@
 					case r.EthTraderRinkeby:
 						return "https://meta-api.reddit.com/ethereum/rinkeby";
 					case r.ArbitrumRinkeby:
-						return "https://meta-api.reddit.com/ethereum/ethereum:5391184"
+						return "https://meta-api.reddit.com/ethereum/ethereum:5391184";
+					case r.ArbitrumNitroDevnet:
+						return "https://meta-api.reddit.com/ethereum/nitroDevnet";
+					default:
+						return `https://meta-api.reddit.com/ethereum/${e}`
 				}
-				throw new Error(`No JSON RPC url for provider: ${e}`)
 			}
 
 			function a(e) {
@@ -2589,9 +2592,14 @@
 					case r.EthTraderRinkeby:
 						return "rinkeby";
 					case r.ArbitrumRinkeby:
-						return 5391184
+						return 5391184;
+					case r.ArbitrumNitroDevnet:
+						return 421612;
+					default: {
+						const [, t] = e.split(":");
+						return t
+					}
 				}
-				throw new Error(`No ethereum network for provider: ${e}`)
 			}
 
 			function c(e) {
@@ -2620,7 +2628,7 @@
 					endpoint: `${n.a.metaUrl}/crypto/${t}/registrations/${s}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
 			const b = (e, t, s) => ({
 					type: "burn-link",
@@ -3689,4 +3697,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.d0e7e5a3b1eab0675ba4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconomicsSubredditPremiumSidebarCards.5128bdb46054f774e871.js.map

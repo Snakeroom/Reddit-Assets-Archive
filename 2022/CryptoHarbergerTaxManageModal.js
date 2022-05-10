@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.4cc9feaf69689dec123f.js
-// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.1b4f630f89c8ac3d2472.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoHarbergerTaxManageModal"], {
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
@@ -365,8 +365,8 @@
 				}))(Object(I.b)(y)),
 				w = n("./src/lib/classNames/index.ts"),
 				T = n("./src/lib/prettyPrintNumber/index.ts"),
-				P = n("./src/reddit/actions/modal.ts"),
-				B = n("./src/reddit/components/Governance/Token/index.tsx"),
+				B = n("./src/reddit/actions/modal.ts"),
+				P = n("./src/reddit/components/Governance/Token/index.tsx"),
 				U = n("./src/reddit/helpers/governance/tokens.ts"),
 				D = n("./src/reddit/selectors/crypto/points.ts"),
 				H = n("./src/reddit/components/Governance/HarbergerTaxWithCrypto/BannerManageModal/Controls/index.m.less"),
@@ -384,7 +384,7 @@
 				wallet: g.d
 			});
 			var L = Object(d.b)(M, e => ({
-					onClose: () => e(Object(P.f)())
+					onClose: () => e(Object(B.f)())
 				}))((function(e) {
 					var t;
 					return o.a.createElement("div", {
@@ -393,11 +393,11 @@
 						className: S.a.wallet
 					}, e.wallet && o.a.createElement(s.Fragment, null, A._("You have", null, {
 						hk: "TlDwo"
-					}), o.a.createElement(B.a, {
+					}), o.a.createElement(P.a, {
 						grey: !0,
 						className: S.a.token,
 						subredditId: e.subredditId
-					}), Object(T.a)(Object(U.b)(e.wallet.amount, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)))), o.a.createElement("div", {
+					}), Object(T.a)(Object(U.c)(e.wallet.amount, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)))), o.a.createElement("div", {
 						className: S.a.buttons
 					}, o.a.createElement(p.o, {
 						className: S.a.button,
@@ -912,12 +912,14 @@
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "c", (function() {
 				return s
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return o
 			})), n.d(t, "a", (function() {
 				return d
+			})), n.d(t, "b", (function() {
+				return i
 			}));
 			var a = n("./node_modules/bignumber.js/bignumber.js"),
 				r = n("./src/lib/prettyPrintNumber/index.ts");
@@ -936,6 +938,12 @@
 				const n = new a.BigNumber(e),
 					r = new a.BigNumber(t || 1);
 				return n.multipliedBy(r).toFixed(0)
+			}
+
+			function i(e) {
+				const t = new a.BigNumber(e),
+					n = new a.BigNumber("1e18");
+				return t.dividedBy(n).toString()
 			}
 		},
 		"./src/reddit/icons/svgs/ImageUpload/index.m.less": function(e, t, n) {
@@ -1017,4 +1025,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.4cc9feaf69689dec123f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoHarbergerTaxManageModal.1b4f630f89c8ac3d2472.js.map

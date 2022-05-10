@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.94c35b4d5a1c9ced179a.js
-// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.4ce0d9560307edfea3ec.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -351,9 +351,9 @@
 					R = j("payment", E),
 					F = j("paymentRequestButton", E),
 					G = j("linkAuthentication", E),
-					L = j("shippingAddress", E),
-					B = j("afterpayClearpayMessage", E);
-				e.AfterpayClearpayMessageElement = B, e.AuBankAccountElement = x, e.CardCvcElement = S, e.CardElement = w, e.CardExpiryElement = k, e.CardNumberElement = _, e.Elements = g, e.ElementsConsumer = P, e.EpsBankElement = M, e.FpxBankElement = N, e.IbanElement = I, e.IdealBankElement = T, e.LinkAuthenticationElement = G, e.P24BankElement = A, e.PaymentElement = R, e.PaymentRequestButtonElement = F, e.ShippingAddressElement = L, e.useElements = function() {
+					B = j("shippingAddress", E),
+					L = j("afterpayClearpayMessage", E);
+				e.AfterpayClearpayMessageElement = L, e.AuBankAccountElement = x, e.CardCvcElement = S, e.CardElement = w, e.CardExpiryElement = k, e.CardNumberElement = _, e.Elements = g, e.ElementsConsumer = P, e.EpsBankElement = M, e.FpxBankElement = N, e.IbanElement = I, e.IdealBankElement = T, e.LinkAuthenticationElement = G, e.P24BankElement = A, e.PaymentElement = R, e.PaymentRequestButtonElement = F, e.ShippingAddressElement = B, e.useElements = function() {
 					return v("calls useElements()").elements
 				}, e.useStripe = function() {
 					return v("calls useStripe()").stripe
@@ -506,9 +506,9 @@
 						}
 						case o.b.Crypto: {
 							if (c) {
-								return Object(s.c)(g, l) + " " + b
+								return Object(s.d)(g, l) + " " + b
 							}
-							const e = Number(Object(s.b)(g, l));
+							const e = Number(Object(s.c)(g, l));
 							return Object(i.c)() ? new Intl.NumberFormat(r, {
 								style: "currency",
 								currency: b,
@@ -566,7 +566,7 @@
 			})), r.d(t, "a", (function() {
 				return F
 			})), r.d(t, "i", (function() {
-				return L
+				return B
 			})), r.d(t, "f", (function() {
 				return D
 			})), r.d(t, "j", (function() {
@@ -827,17 +827,17 @@
 							hk: "4yuT5m"
 						})))
 					}
-				}, G = Object(m.a)(b.S), L = e => async (t, r) => {
+				}, G = Object(m.a)(b.S), B = e => async (t, r) => {
 					t(G(e)), t(Object(v.m)(e.subredditId, {
 						forceLoad: !0,
 						fullData: !1
 					})), t(Object(P.g)(d.a.ECON_POWERUPS_PURCHASE)), t(Object(P.h)(d.a.ECON_POWERUPS_SUCCESS))
-				}, B = Object(m.a)(b.W), D = e => {
+				}, L = Object(m.a)(b.W), D = e => {
 					let {
 						user: t
 					} = e;
 					return async e => {
-						await e(Object(v.o)(!0)), e(B({
+						await e(Object(v.o)(!0)), e(L({
 							user: t
 						}))
 					}
@@ -1424,8 +1424,8 @@
 					}))
 				},
 				G = r("./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js"),
-				L = r("./src/lib/currency/currencies.ts"),
-				B = r("./src/lib/localizeCurrency/index.ts"),
+				B = r("./src/lib/currency/currencies.ts"),
+				L = r("./src/lib/localizeCurrency/index.ts"),
 				D = r("./src/reddit/components/Econ/ProductOfferPurchaseButton/Paypal.tsx"),
 				U = r("./src/reddit/components/Econ/ProductOfferPurchaseButton/Stripe.tsx"),
 				q = r("./src/reddit/components/PaymentMethodSelector/index.tsx"),
@@ -1464,9 +1464,9 @@
 					r = Object(H.b)(),
 					n = Object(o.d)(),
 					c = Object(o.e)(C.k),
-					s = Object(B.b)(e.total, {
+					s = Object(L.b)(e.total, {
 						locale: r,
-						type: L.b.Real
+						type: B.b.Real
 					}),
 					i = Object(o.e)(e => Object(j.f)(e, {
 						provider: V.b.Stripe
@@ -2479,12 +2479,14 @@
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "b", (function() {
+			r.d(t, "c", (function() {
 				return o
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "d", (function() {
 				return c
 			})), r.d(t, "a", (function() {
 				return s
+			})), r.d(t, "b", (function() {
+				return i
 			}));
 			var n = r("./node_modules/bignumber.js/bignumber.js"),
 				a = r("./src/lib/prettyPrintNumber/index.ts");
@@ -2503,6 +2505,12 @@
 				const r = new n.BigNumber(e),
 					a = new n.BigNumber(t || 1);
 				return r.multipliedBy(a).toFixed(0)
+			}
+
+			function i(e) {
+				const t = new n.BigNumber(e),
+					r = new n.BigNumber("1e18");
+				return t.dividedBy(r).toString()
 			}
 		},
 		"./src/reddit/helpers/trackers/communityAwards.ts": function(e, t, r) {
@@ -2689,9 +2697,9 @@
 			})), r.d(t, "clickNextButtonEvent", (function() {
 				return G
 			})), r.d(t, "clickCloseGildModalEvent", (function() {
-				return L
-			})), r.d(t, "viewKarmaSuccessEvent", (function() {
 				return B
+			})), r.d(t, "viewKarmaSuccessEvent", (function() {
+				return L
 			})), r.d(t, "clickFilterEvent", (function() {
 				return D
 			})), r.d(t, "clickNextFiltersEvent", (function() {
@@ -2858,13 +2866,13 @@
 					action: "click",
 					noun: "next"
 				}),
-				L = e => t => ({
+				B = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "close"
 				}),
-				B = e => {
+				L = e => {
 					let {
 						award: t,
 						awardeeKarmaEarned: r,
@@ -3387,4 +3395,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.94c35b4d5a1c9ced179a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.4ce0d9560307edfea3ec.js.map

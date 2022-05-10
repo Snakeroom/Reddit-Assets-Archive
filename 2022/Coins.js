@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.a8a9660f408c630d627f.js
-// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.00b570f47d1ce67d9664.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -349,11 +349,11 @@
 					S = k("p24Bank", C),
 					M = k("epsBank", C),
 					L = k("payment", C),
-					R = k("paymentRequestButton", C),
-					B = k("linkAuthentication", C),
+					B = k("paymentRequestButton", C),
+					R = k("linkAuthentication", C),
 					D = k("shippingAddress", C),
 					G = k("afterpayClearpayMessage", C);
-				e.AfterpayClearpayMessageElement = G, e.AuBankAccountElement = _, e.CardCvcElement = N, e.CardElement = x, e.CardExpiryElement = P, e.CardNumberElement = w, e.Elements = y, e.ElementsConsumer = O, e.EpsBankElement = M, e.FpxBankElement = I, e.IbanElement = T, e.IdealBankElement = A, e.LinkAuthenticationElement = B, e.P24BankElement = S, e.PaymentElement = L, e.PaymentRequestButtonElement = R, e.ShippingAddressElement = D, e.useElements = function() {
+				e.AfterpayClearpayMessageElement = G, e.AuBankAccountElement = _, e.CardCvcElement = N, e.CardElement = x, e.CardExpiryElement = P, e.CardNumberElement = w, e.Elements = y, e.ElementsConsumer = O, e.EpsBankElement = M, e.FpxBankElement = I, e.IbanElement = T, e.IdealBankElement = A, e.LinkAuthenticationElement = R, e.P24BankElement = S, e.PaymentElement = L, e.PaymentRequestButtonElement = B, e.ShippingAddressElement = D, e.useElements = function() {
 					return v("calls useElements()").elements
 				}, e.useStripe = function() {
 					return v("calls useStripe()").stripe
@@ -514,9 +514,9 @@
 						}
 						case c.b.Crypto: {
 							if (s) {
-								return Object(i.c)(y, d) + " " + b
+								return Object(i.d)(y, d) + " " + b
 							}
-							const e = Number(Object(i.b)(y, d));
+							const e = Number(Object(i.c)(y, d));
 							return Object(o.c)() ? new Intl.NumberFormat(n, {
 								style: "currency",
 								currency: b,
@@ -1560,12 +1560,14 @@
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "c", (function() {
 				return c
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return s
 			})), n.d(t, "a", (function() {
 				return i
+			})), n.d(t, "b", (function() {
+				return o
 			}));
 			var r = n("./node_modules/bignumber.js/bignumber.js"),
 				a = n("./src/lib/prettyPrintNumber/index.ts");
@@ -1584,6 +1586,12 @@
 				const n = new r.BigNumber(e),
 					a = new r.BigNumber(t || 1);
 				return n.multipliedBy(a).toFixed(0)
+			}
+
+			function o(e) {
+				const t = new r.BigNumber(e),
+					n = new r.BigNumber("1e18");
+				return t.dividedBy(n).toString()
 			}
 		},
 		"./src/reddit/helpers/styles/mixins/loading.m.less": function(e, t, n) {
@@ -1814,8 +1822,8 @@
 				S = n("./src/reddit/models/Gold/Coins/index.ts"),
 				M = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				L = n("./src/reddit/selectors/user.ts"),
-				R = n("./src/reddit/components/CoinPurchasePackage/index.m.less"),
-				B = n.n(R),
+				B = n("./src/reddit/components/CoinPurchasePackage/index.m.less"),
+				R = n.n(B),
 				D = n("./src/lib/classNames/index.ts"),
 				G = n("./src/lib/currency/currencies.ts"),
 				F = n("./src/lib/localizeCurrency/index.ts"),
@@ -1847,48 +1855,48 @@
 						currency: G.a
 					}), O = s ? null === (t = g.marketing["4x"]) || void 0 === t ? void 0 : t.url : null === (n = g.marketing["2x"]) || void 0 === n ? void 0 : n.url, j = m > 0 && `${Object(F.a)(m,{locale:l})}%`, E = a.fbt._("bonus", null, {
 						hk: "L8mcp"
-					}), k = s ? B.a.large : "", C = d !== p, _ = u !== h;
+					}), k = s ? R.a.large : "", C = d !== p, _ = u !== h;
 					return o.a.createElement("div", {
-						className: Object(D.a)(r, B.a.coinPurchasePackage, k)
+						className: Object(D.a)(r, R.a.coinPurchasePackage, k)
 					}, o.a.createElement("div", {
-						className: B.a.imageContainer
+						className: R.a.imageContainer
 					}, o.a.createElement("img", {
 						src: O
 					}), b && o.a.createElement("div", {
-						className: B.a.badge
+						className: R.a.badge
 					}, b), j && o.a.createElement("div", {
-						className: B.a.stamp
+						className: R.a.stamp
 					}, o.a.createElement(z.a, {
-						className: B.a.stampIcon
+						className: R.a.stampIcon
 					}), o.a.createElement("div", {
-						className: B.a.stampValue
+						className: R.a.stampValue
 					}, j), o.a.createElement("div", {
-						className: B.a.stampText
+						className: R.a.stampText
 					}, E))), o.a.createElement("div", {
-						className: B.a.contentContainer
+						className: R.a.contentContainer
 					}, o.a.createElement("div", {
-						className: B.a.contentText
+						className: R.a.contentText
 					}, o.a.createElement("div", {
-						className: B.a.price
+						className: R.a.price
 					}, o.a.createElement(V.a, {
-						className: B.a.priceCoinIcon
+						className: R.a.priceCoinIcon
 					}), o.a.createElement("div", null, o.a.createElement("div", {
-						className: B.a.priceValue
+						className: R.a.priceValue
 					}, v), C && o.a.createElement("div", {
-						className: Object(D.a)(B.a.priceCurrency, B.a.crossout)
+						className: Object(D.a)(R.a.priceCurrency, R.a.crossout)
 					}, Object(F.b)(d, {
 						locale: l,
 						type: G.b.Reddit,
 						currency: G.a
 					})))), o.a.createElement("div", {
-						className: B.a.description
+						className: R.a.description
 					}, f)), o.a.createElement("div", null, o.a.createElement(q.t, {
 						kind: q.b.Button,
 						priority: q.c.Primary,
-						className: B.a.cta,
+						className: R.a.cta,
 						onClick: i
 					}, y), _ && o.a.createElement("div", {
-						className: B.a.priceCrossout
+						className: R.a.priceCrossout
 					}, Object(F.b)(u, {
 						locale: l
 					})))))
@@ -2309,4 +2317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.a8a9660f408c630d627f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.00b570f47d1ce67d9664.js.map

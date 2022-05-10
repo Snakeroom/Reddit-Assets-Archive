@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ed0e074e48a4004c8fda.js
-// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.370788b8f0a9d626b629.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -475,9 +475,9 @@
 						}
 						case o.b.Crypto: {
 							if (s) {
-								return Object(c.c)(y, l) + " " + b
+								return Object(c.d)(y, l) + " " + b
 							}
-							const e = Number(Object(c.b)(y, l));
+							const e = Number(Object(c.c)(y, l));
 							return Object(i.c)() ? new Intl.NumberFormat(r, {
 								style: "currency",
 								currency: b,
@@ -2382,12 +2382,14 @@
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "b", (function() {
+			r.d(t, "c", (function() {
 				return o
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "d", (function() {
 				return s
 			})), r.d(t, "a", (function() {
 				return c
+			})), r.d(t, "b", (function() {
+				return i
 			}));
 			var n = r("./node_modules/bignumber.js/bignumber.js"),
 				a = r("./src/lib/prettyPrintNumber/index.ts");
@@ -2406,6 +2408,12 @@
 				const r = new n.BigNumber(e),
 					a = new n.BigNumber(t || 1);
 				return r.multipliedBy(a).toFixed(0)
+			}
+
+			function i(e) {
+				const t = new n.BigNumber(e),
+					r = new n.BigNumber("1e18");
+				return t.dividedBy(r).toString()
 			}
 		},
 		"./src/reddit/helpers/trackers/communityAwards.ts": function(e, t, r) {
@@ -3492,4 +3500,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.ed0e074e48a4004c8fda.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.370788b8f0a9d626b629.js.map

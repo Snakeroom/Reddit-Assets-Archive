@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.2e71f68fd202e6c6a18b.js
-// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.01d886e758490eeb7459.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["HarbergerTaxBannerPurchaseCTA"], {
 		"./src/reddit/actions/economics/claims/constants.ts": function(e, t, n) {
@@ -74,7 +74,7 @@
 			})), n.d(t, "w", (function() {
 				return C
 			})), n.d(t, "x", (function() {
-				return T
+				return g
 			}));
 			const r = "GOVERNANCE__COMMUNITY_DETAILS_SUCCESS",
 				i = "GOVERNANCE__NEW_SUBREDDIT_SUGGESTED",
@@ -99,7 +99,7 @@
 				R = "GOVERNANCE__WALLETS_FETCH_FAILURE",
 				y = "GOVERNANCE__WALLETS_FETCH_PENDING",
 				C = "GOVERNANCE__WALLETS_FETCH_SUCCESS",
-				T = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
+				g = "GOVERNANCE__WALLET_REGISTRATION_MODAL_OPENED"
 		},
 		"./src/reddit/actions/harbergerTax/actionCreators.ts": function(e, t, n) {
 			"use strict";
@@ -282,7 +282,7 @@
 				}), s.a.createElement(_.a, {
 					className: v.a.token,
 					subredditId: o.id
-				}), Object(u.a)(Object(O.b)(t, N.displayConversion))), A && s.a.createElement(b.c, {
+				}), Object(u.a)(Object(O.c)(t, N.displayConversion))), A && s.a.createElement(b.c, {
 					tooltipId: h,
 					text: p ? r.fbt._("You must register your wallet address to purchase the banner", null, {
 						hk: "38o58h"
@@ -393,9 +393,12 @@
 					case r.EthTraderRinkeby:
 						return "https://meta-api.reddit.com/ethereum/rinkeby";
 					case r.ArbitrumRinkeby:
-						return "https://meta-api.reddit.com/ethereum/ethereum:5391184"
+						return "https://meta-api.reddit.com/ethereum/ethereum:5391184";
+					case r.ArbitrumNitroDevnet:
+						return "https://meta-api.reddit.com/ethereum/nitroDevnet";
+					default:
+						return `https://meta-api.reddit.com/ethereum/${e}`
 				}
-				throw new Error(`No JSON RPC url for provider: ${e}`)
 			}
 
 			function d(e) {
@@ -407,9 +410,14 @@
 					case r.EthTraderRinkeby:
 						return "rinkeby";
 					case r.ArbitrumRinkeby:
-						return 5391184
+						return 5391184;
+					case r.ArbitrumNitroDevnet:
+						return 421612;
+					default: {
+						const [, t] = e.split(":");
+						return t
+					}
 				}
-				throw new Error(`No ethereum network for provider: ${e}`)
 			}
 
 			function u(e) {
@@ -438,7 +446,7 @@
 					endpoint: `${i.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
 			const b = (e, t, n) => ({
 					type: "burn-link",
@@ -525,7 +533,7 @@
 			}
 			const u = 4001;
 			async function a(e, t, r, s) {
-				const [o, c] = await Promise.all([Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				const [o, c] = await Promise.all([n.e(0).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await d();
 				const u = new o.providers.Web3Provider(i()).getSigner(),
 					a = new o.Contract(e, c, u),
@@ -554,7 +562,7 @@
 			};
 			const _ = 1;
 			async function b(e, t, r, i, s) {
-				const o = await Promise.all([n.e(0), n.e("CryptoLibEthers")]).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+				const o = await n.e(0).then(n.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: c
 					} = o,
@@ -635,12 +643,14 @@
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "c", (function() {
 				return s
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return o
 			})), n.d(t, "a", (function() {
 				return c
+			})), n.d(t, "b", (function() {
+				return d
 			}));
 			var r = n("./node_modules/bignumber.js/bignumber.js"),
 				i = n("./src/lib/prettyPrintNumber/index.ts");
@@ -659,6 +669,12 @@
 				const n = new r.BigNumber(e),
 					i = new r.BigNumber(t || 1);
 				return n.multipliedBy(i).toFixed(0)
+			}
+
+			function d(e) {
+				const t = new r.BigNumber(e),
+					n = new r.BigNumber("1e18");
+				return t.dividedBy(n).toString()
 			}
 		},
 		"./src/reddit/reducers/features/crypto/index.ts": function(e, t, n) {
@@ -904,4 +920,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.2e71f68fd202e6c6a18b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/HarbergerTaxBannerPurchaseCTA.01d886e758490eeb7459.js.map

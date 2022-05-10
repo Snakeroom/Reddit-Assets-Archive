@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4fd7a72407c187d4c0f6.js
-// Retrieved at 5/10/2022, 2:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.708277642807d1817909.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -6156,9 +6156,12 @@
 					case r.EthTraderRinkeby:
 						return "https://meta-api.reddit.com/ethereum/rinkeby";
 					case r.ArbitrumRinkeby:
-						return "https://meta-api.reddit.com/ethereum/ethereum:5391184"
+						return "https://meta-api.reddit.com/ethereum/ethereum:5391184";
+					case r.ArbitrumNitroDevnet:
+						return "https://meta-api.reddit.com/ethereum/nitroDevnet";
+					default:
+						return `https://meta-api.reddit.com/ethereum/${e}`
 				}
-				throw new Error(`No JSON RPC url for provider: ${e}`)
 			}
 
 			function i(e) {
@@ -6170,9 +6173,14 @@
 					case r.EthTraderRinkeby:
 						return "rinkeby";
 					case r.ArbitrumRinkeby:
-						return 5391184
+						return 5391184;
+					case r.ArbitrumNitroDevnet:
+						return 421612;
+					default: {
+						const [, t] = e.split(":");
+						return t
+					}
 				}
-				throw new Error(`No ethereum network for provider: ${e}`)
 			}
 
 			function d(e) {
@@ -6201,7 +6209,7 @@
 					endpoint: `${s.a.metaUrl}/crypto/${t}/registrations/${n}`
 				})
 			}! function(e) {
-				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
+				e.Ethereum = "ethereum:1", e.Rinkeby = "ethereum:4", e.ArbitrumRinkeby = "ethereum:5391184", e.ArbitrumNitroDevnet = "ethereum:421612", e.EthTraderEthereum = "ethereum:1:ethtrader", e.EthTraderRinkeby = "ethereum:4:ethtrader"
 			}(r || (r = {}));
 			const f = (e, t, n) => ({
 					type: "burn-link",
@@ -26210,4 +26218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4fd7a72407c187d4c0f6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.708277642807d1817909.js.map

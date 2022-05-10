@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.3969c40ba62ac779d91f.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.212282c4a598b1dcc623.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium~reddit-components-Econ-Prediction-PremiumModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -498,9 +498,9 @@
 						}
 						case o.b.Crypto: {
 							if (i) {
-								return Object(s.c)(y, l) + " " + b
+								return Object(s.d)(y, l) + " " + b
 							}
-							const e = Number(Object(s.b)(y, l));
+							const e = Number(Object(s.c)(y, l));
 							return Object(c.c)() ? new Intl.NumberFormat(r, {
 								style: "currency",
 								currency: b,
@@ -1847,12 +1847,14 @@
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "b", (function() {
+			r.d(t, "c", (function() {
 				return o
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "d", (function() {
 				return i
 			})), r.d(t, "a", (function() {
 				return s
+			})), r.d(t, "b", (function() {
+				return c
 			}));
 			var n = r("./node_modules/bignumber.js/bignumber.js"),
 				a = r("./src/lib/prettyPrintNumber/index.ts");
@@ -1871,6 +1873,12 @@
 				const r = new n.BigNumber(e),
 					a = new n.BigNumber(t || 1);
 				return r.multipliedBy(a).toFixed(0)
+			}
+
+			function c(e) {
+				const t = new n.BigNumber(e),
+					r = new n.BigNumber("1e18");
+				return t.dividedBy(r).toString()
 			}
 		},
 		"./src/reddit/helpers/trackers/premium.ts": function(e, t, r) {
@@ -2669,4 +2677,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.3969c40ba62ac779d91f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium~reddit-components-Econ-Prediction-PremiumModal.212282c4a598b1dcc623.js.map

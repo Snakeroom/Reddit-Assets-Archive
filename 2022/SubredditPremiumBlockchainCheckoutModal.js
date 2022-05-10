@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.8b38f105bee01709ef44.js
-// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.9d8c013ad32224cf5440.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumBlockchainCheckoutModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -107,12 +107,12 @@
 						grey: !0,
 						className: E.a.token,
 						subredditId: e.subredditId
-					}), Object(b.a)(Object(x.b)(s, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)))
+					}), Object(b.a)(Object(x.c)(s, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)))
 				})),
 				k = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				j = s("./src/reddit/controls/Button/index.tsx"),
-				C = s("./src/reddit/controls/FormFields/index.tsx"),
-				O = s("./src/reddit/controls/LoadingIcon/index.tsx"),
+				O = s("./src/reddit/controls/FormFields/index.tsx"),
+				C = s("./src/reddit/controls/LoadingIcon/index.tsx"),
 				y = s("./src/reddit/featureFlags/component.tsx"),
 				M = s("./src/reddit/helpers/governance/ethereum.ts"),
 				P = s("./src/reddit/models/Toast/index.ts"),
@@ -268,7 +268,7 @@
 						src: S.a
 					}), o.displayText, " ", t.membershipAlt), i.a.createElement("div", {
 						className: Z.a.months
-					}, i.a.createElement(C.c, {
+					}, i.a.createElement(O.c, {
 						className: Z.a.monthsInput,
 						type: "number",
 						label: z._("Months", null, {
@@ -297,7 +297,7 @@
 						onClick: this.onPurchase,
 						"data-redditstyle": !0,
 						disabled: l
-					}, d ? i.a.createElement(O.a, {
+					}, d ? i.a.createElement(C.a, {
 						sizePx: 10
 					}) : z._("Purchase", null, {
 						hk: "1FAV9c"
@@ -440,7 +440,7 @@
 					}),
 					grey: e.grey,
 					subredditId: e.subredditId
-				}), Object(c.a)(Object(l.b)(e.amount, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)), e.additionalText || null)
+				}), Object(c.a)(Object(l.c)(e.amount, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)), e.additionalText || null)
 			}))
 		},
 		"./src/reddit/components/Governance/WalletAmount/index.m.less": function(e, t, s) {
@@ -838,7 +838,7 @@
 			}
 			const d = 4001;
 			async function l(e, t, n, o) {
-				const [a, i] = await Promise.all([Promise.all([s.e(0), s.e("CryptoLibEthers")]).then(s.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
+				const [a, i] = await Promise.all([s.e(0).then(s.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers), t.then(e => e.abi)]);
 				await c();
 				const d = new a.providers.Web3Provider(r()).getSigner(),
 					l = new a.Contract(e, i, d),
@@ -867,7 +867,7 @@
 			};
 			const m = 1;
 			async function p(e, t, n, r, o) {
-				const a = await Promise.all([s.e(0), s.e("CryptoLibEthers")]).then(s.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
+				const a = await s.e(0).then(s.bind(null, "./node_modules/ethers/lib.esm/index.js")).then(e => e.ethers),
 					{
 						BigNumber: i
 					} = a,
@@ -948,12 +948,14 @@
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "b", (function() {
+			s.d(t, "c", (function() {
 				return o
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "d", (function() {
 				return a
 			})), s.d(t, "a", (function() {
 				return i
+			})), s.d(t, "b", (function() {
+				return c
 			}));
 			var n = s("./node_modules/bignumber.js/bignumber.js"),
 				r = s("./src/lib/prettyPrintNumber/index.ts");
@@ -972,6 +974,12 @@
 				const s = new n.BigNumber(e),
 					r = new n.BigNumber(t || 1);
 				return s.multipliedBy(r).toFixed(0)
+			}
+
+			function c(e) {
+				const t = new n.BigNumber(e),
+					s = new n.BigNumber("1e18");
+				return t.dividedBy(s).toString()
 			}
 		},
 		"./src/reddit/icons/svgs/Plus/index.tsx": function(e, t, s) {
@@ -1084,4 +1092,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.8b38f105bee01709ef44.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumBlockchainCheckoutModal.9d8c013ad32224cf5440.js.map

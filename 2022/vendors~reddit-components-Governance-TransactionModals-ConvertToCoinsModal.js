@@ -1,7 +1,367 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.434710ff4fa6215c886f.js
+// https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-ConvertToCoinsModal.987103f31c815cc07845.js
 // Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["reddit-components-Governance-TransactionModals-TransferTransactionModal"], {
+	["vendors~reddit-components-Governance-TransactionModals-ConvertToCoinsModal"], {
+		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
+			! function(e, t) {
+				"use strict";
+				t = t && Object.prototype.hasOwnProperty.call(t, "default") ? t.default : t;
+				var r = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+
+				function n() {}
+
+				function o() {}
+				o.resetWarningCache = n;
+				var i = function(e, t) {
+					return e(t = {
+						exports: {}
+					}, t.exports), t.exports
+				}((function(e) {
+					e.exports = function() {
+						function e(e, t, n, o, i, a) {
+							if (a !== r) {
+								var s = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
+								throw s.name = "Invariant Violation", s
+							}
+						}
+
+						function t() {
+							return e
+						}
+						e.isRequired = e;
+						var i = {
+							array: e,
+							bool: e,
+							func: e,
+							number: e,
+							object: e,
+							string: e,
+							symbol: e,
+							any: e,
+							arrayOf: t,
+							element: e,
+							elementType: e,
+							instanceOf: t,
+							node: e,
+							objectOf: t,
+							oneOf: t,
+							oneOfType: t,
+							shape: t,
+							exact: t,
+							checkPropTypes: o,
+							resetWarningCache: n
+						};
+						return i.PropTypes = i, i
+					}()
+				}));
+
+				function a(e) {
+					return (a = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+						return typeof e
+					} : function(e) {
+						return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
+					})(e)
+				}
+
+				function s(e, t, r) {
+					return t in e ? Object.defineProperty(e, t, {
+						value: r,
+						enumerable: !0,
+						configurable: !0,
+						writable: !0
+					}) : e[t] = r, e
+				}
+
+				function u(e, t) {
+					var r = Object.keys(e);
+					if (Object.getOwnPropertySymbols) {
+						var n = Object.getOwnPropertySymbols(e);
+						t && (n = n.filter((function(t) {
+							return Object.getOwnPropertyDescriptor(e, t).enumerable
+						}))), r.push.apply(r, n)
+					}
+					return r
+				}
+
+				function c(e) {
+					for (var t = 1; t < arguments.length; t++) {
+						var r = null != arguments[t] ? arguments[t] : {};
+						t % 2 ? u(Object(r), !0).forEach((function(t) {
+							s(e, t, r[t])
+						})) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : u(Object(r)).forEach((function(t) {
+							Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
+						}))
+					}
+					return e
+				}
+
+				function l(e, t) {
+					return function(e) {
+						if (Array.isArray(e)) return e
+					}(e) || function(e, t) {
+						if ("undefined" != typeof Symbol && Symbol.iterator in Object(e)) {
+							var r = [],
+								n = !0,
+								o = !1,
+								i = void 0;
+							try {
+								for (var a, s = e[Symbol.iterator](); !(n = (a = s.next()).done) && (r.push(a.value), !t || r.length !== t); n = !0);
+							} catch (u) {
+								o = !0, i = u
+							} finally {
+								try {
+									n || null == s.return || s.return()
+								} finally {
+									if (o) throw i
+								}
+							}
+							return r
+						}
+					}(e, t) || function(e, t) {
+						if (e) {
+							if ("string" == typeof e) return d(e, t);
+							var r = Object.prototype.toString.call(e).slice(8, -1);
+							return "Object" === r && e.constructor && (r = e.constructor.name), "Map" === r || "Set" === r ? Array.from(e) : "Arguments" === r || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(r) ? d(e, t) : void 0
+						}
+					}(e, t) || function() {
+						throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
+					}()
+				}
+
+				function d(e, t) {
+					(null == t || t > e.length) && (t = e.length);
+					for (var r = 0, n = new Array(t); r < t; r++) n[r] = e[r];
+					return n
+				}
+				var f = function(e) {
+						var r = t.useRef(e);
+						return t.useEffect((function() {
+							r.current = e
+						}), [e]), r.current
+					},
+					h = function(e) {
+						return null !== e && "object" === a(e)
+					},
+					p = function(e, t, r) {
+						return h(e) ? Object.keys(e).reduce((function(n, o) {
+							var i = !h(t) || ! function e(t, r) {
+								if (!h(t) || !h(r)) return t === r;
+								var n = Array.isArray(t);
+								if (n !== Array.isArray(r)) return !1;
+								var o = "[object Object]" === Object.prototype.toString.call(t);
+								if (o !== ("[object Object]" === Object.prototype.toString.call(r))) return !1;
+								if (!o && !n) return !1;
+								var i = Object.keys(t),
+									a = Object.keys(r);
+								if (i.length !== a.length) return !1;
+								for (var s = {}, u = 0; u < i.length; u += 1) s[i[u]] = !0;
+								for (var c = 0; c < a.length; c += 1) s[a[c]] = !0;
+								var l = Object.keys(s);
+								if (l.length !== i.length) return !1;
+								var d = t,
+									f = r;
+								return l.every((function(t) {
+									return e(d[t], f[t])
+								}))
+							}(e[o], t[o]);
+							return r.includes(o) ? (i && console.warn("Unsupported prop change: options.".concat(o, " is not a mutable property.")), n) : i ? c(c({}, n || {}), {}, s({}, o, e[o])) : n
+						}), null) : null
+					},
+					g = function(e) {
+						if (null === e || h(t = e) && "function" == typeof t.elements && "function" == typeof t.createToken && "function" == typeof t.createPaymentMethod && "function" == typeof t.confirmCardPayment) return e;
+						var t;
+						throw new Error("Invalid prop `stripe` supplied to `Elements`. We recommend using the `loadStripe` utility from `@stripe/stripe-js`. See https://stripe.com/docs/stripe-js/react#elements-props-stripe for details.")
+					},
+					m = function(e) {
+						if (function(e) {
+								return h(e) && "function" == typeof e.then
+							}(e)) return {
+							tag: "async",
+							stripePromise: Promise.resolve(e).then(g)
+						};
+						var t = g(e);
+						return null === t ? {
+							tag: "empty"
+						} : {
+							tag: "sync",
+							stripe: t
+						}
+					},
+					v = t.createContext(null);
+				v.displayName = "ElementsContext";
+				var y = function(e) {
+					var r = e.stripe,
+						n = e.options,
+						o = e.children,
+						i = t.useRef(!1),
+						a = t.useRef(!0),
+						s = t.useMemo((function() {
+							return m(r)
+						}), [r]),
+						u = l(t.useState((function() {
+							return {
+								stripe: null,
+								elements: null
+							}
+						})), 2),
+						c = u[0],
+						d = u[1],
+						h = f(r);
+					null !== h && h !== r && console.warn("Unsupported prop change on Elements: You cannot change the `stripe` prop after setting it."), i.current || ("sync" === s.tag && (i.current = !0, d({
+						stripe: s.stripe,
+						elements: s.stripe.elements(n)
+					})), "async" === s.tag && (i.current = !0, s.stripePromise.then((function(e) {
+						e && a.current && d({
+							stripe: e,
+							elements: e.elements(n)
+						})
+					}))));
+					var g = f(n);
+					return t.useEffect((function() {
+						if (c.elements) {
+							var e = p(n, g, ["clientSecret", "fonts"]);
+							e && c.elements.update(e)
+						}
+					}), [n, g, c.elements]), t.useEffect((function() {
+						return function() {
+							a.current = !1
+						}
+					}), []), t.useEffect((function() {
+						var e = c.stripe;
+						e && e._registerWrapper && e.registerAppInfo && (e._registerWrapper({
+							name: "react-stripe-js",
+							version: "1.6.0"
+						}), e.registerAppInfo({
+							name: "react-stripe-js",
+							version: "1.6.0",
+							url: "https://stripe.com/docs/stripe-js/react"
+						}))
+					}), [c.stripe]), t.createElement(v.Provider, {
+						value: c
+					}, o)
+				};
+				y.propTypes = {
+					stripe: i.any,
+					options: i.object
+				};
+				var b = function(e) {
+						return function(e, t) {
+							if (!e) throw new Error("Could not find Elements context; You need to wrap the part of your app that ".concat(t, " in an <Elements> provider."));
+							return e
+						}(t.useContext(v), e)
+					},
+					w = function(e) {
+						return (0, e.children)(b("mounts <ElementsConsumer>"))
+					};
+				w.propTypes = {
+					children: i.func.isRequired
+				};
+				var E = function(e) {
+						var r = t.useRef(e);
+						return t.useEffect((function() {
+								r.current = e
+							}), [e]),
+							function() {
+								r.current && r.current.apply(r, arguments)
+							}
+					},
+					_ = function() {},
+					j = function(e, r) {
+						var n, o = "".concat((n = e).charAt(0).toUpperCase() + n.slice(1), "Element"),
+							a = r ? function(e) {
+								b("mounts <".concat(o, ">"));
+								var r = e.id,
+									n = e.className;
+								return t.createElement("div", {
+									id: r,
+									className: n
+								})
+							} : function(r) {
+								var n = r.id,
+									i = r.className,
+									a = r.options,
+									s = void 0 === a ? {} : a,
+									u = r.onBlur,
+									c = void 0 === u ? _ : u,
+									l = r.onFocus,
+									d = void 0 === l ? _ : l,
+									h = r.onReady,
+									g = void 0 === h ? _ : h,
+									m = r.onChange,
+									v = void 0 === m ? _ : m,
+									y = r.onEscape,
+									w = void 0 === y ? _ : y,
+									j = r.onClick,
+									A = void 0 === j ? _ : j,
+									P = b("mounts <".concat(o, ">")).elements,
+									B = t.useRef(null),
+									C = t.useRef(null),
+									R = E(g),
+									T = E(c),
+									q = E(d),
+									I = E(A),
+									S = E(v),
+									M = E(w);
+								t.useLayoutEffect((function() {
+									if (null == B.current && P && null != C.current) {
+										var t = P.create(e, s);
+										B.current = t, t.mount(C.current), t.on("ready", (function() {
+											return R(t)
+										})), t.on("change", S), t.on("blur", T), t.on("focus", q), t.on("escape", M), t.on("click", I)
+									}
+								}));
+								var N = f(s);
+								return t.useEffect((function() {
+									if (B.current) {
+										var e = p(s, N, ["paymentRequest"]);
+										e && B.current.update(e)
+									}
+								}), [s, N]), t.useLayoutEffect((function() {
+									return function() {
+										B.current && B.current.destroy()
+									}
+								}), []), t.createElement("div", {
+									id: n,
+									className: i,
+									ref: C
+								})
+							};
+						return a.propTypes = {
+							id: i.string,
+							className: i.string,
+							onChange: i.func,
+							onBlur: i.func,
+							onFocus: i.func,
+							onReady: i.func,
+							onClick: i.func,
+							options: i.object
+						}, a.displayName = o, a.__elementType = e, a
+					},
+					A = "undefined" == typeof window,
+					P = j("auBankAccount", A),
+					B = j("card", A),
+					C = j("cardNumber", A),
+					R = j("cardExpiry", A),
+					T = j("cardCvc", A),
+					q = j("fpxBank", A),
+					I = j("iban", A),
+					S = j("idealBank", A),
+					M = j("p24Bank", A),
+					N = j("epsBank", A),
+					x = j("payment", A),
+					k = j("paymentRequestButton", A),
+					O = j("linkAuthentication", A),
+					L = j("shippingAddress", A),
+					U = j("afterpayClearpayMessage", A);
+				e.AfterpayClearpayMessageElement = U, e.AuBankAccountElement = P, e.CardCvcElement = T, e.CardElement = B, e.CardExpiryElement = R, e.CardNumberElement = C, e.Elements = y, e.ElementsConsumer = w, e.EpsBankElement = N, e.FpxBankElement = q, e.IbanElement = I, e.IdealBankElement = S, e.LinkAuthenticationElement = O, e.P24BankElement = M, e.PaymentElement = x, e.PaymentRequestButtonElement = k, e.ShippingAddressElement = L, e.useElements = function() {
+					return b("calls useElements()").elements
+				}, e.useStripe = function() {
+					return b("calls useStripe()").stripe
+				}, Object.defineProperty(e, "__esModule", {
+					value: !0
+				})
+			}(t, r("./node_modules/react/index.js"))
+		},
 		"./node_modules/dijkstrajs/dijkstra.js": function(e, t, r) {
 			"use strict";
 			var n = {
@@ -9,12 +369,12 @@
 					var o = {},
 						i = {};
 					i[t] = 0;
-					var s, a, u, c, d, l, f, h = n.PriorityQueue.make();
+					var a, s, u, c, l, d, f, h = n.PriorityQueue.make();
 					for (h.push(t, 0); !h.empty();)
-						for (u in a = (s = h.pop()).value, c = s.cost, d = e[a] || {}) d.hasOwnProperty(u) && (l = c + d[u], f = i[u], (void 0 === i[u] || f > l) && (i[u] = l, h.push(u, l), o[u] = a));
+						for (u in s = (a = h.pop()).value, c = a.cost, l = e[s] || {}) l.hasOwnProperty(u) && (d = c + l[u], f = i[u], (void 0 === i[u] || f > d) && (i[u] = d, h.push(u, d), o[u] = s));
 					if (void 0 !== r && void 0 === i[r]) {
-						var g = ["Could not find a path from ", t, " to ", r, "."].join("");
-						throw new Error(g)
+						var p = ["Could not find a path from ", t, " to ", r, "."].join("");
+						throw new Error(p)
 					}
 					return o
 				},
@@ -53,39 +413,47 @@
 			};
 			e.exports = n
 		},
+		"./node_modules/lodash/uniqueId.js": function(e, t, r) {
+			var n = r("./node_modules/lodash/toString.js"),
+				o = 0;
+			e.exports = function(e) {
+				var t = ++o;
+				return n(e) + t
+			}
+		},
 		"./node_modules/qrcode/lib/browser.js": function(e, t, r) {
 			var n = r("./node_modules/qrcode/lib/can-promise.js"),
 				o = r("./node_modules/qrcode/lib/core/qrcode.js"),
 				i = r("./node_modules/qrcode/lib/renderer/canvas.js"),
-				s = r("./node_modules/qrcode/lib/renderer/svg-tag.js");
+				a = r("./node_modules/qrcode/lib/renderer/svg-tag.js");
 
-			function a(e, t, r, i, s) {
-				var a = [].slice.call(arguments, 1),
-					u = a.length,
-					c = "function" == typeof a[u - 1];
+			function s(e, t, r, i, a) {
+				var s = [].slice.call(arguments, 1),
+					u = s.length,
+					c = "function" == typeof s[u - 1];
 				if (!c && !n()) throw new Error("Callback required as last argument");
 				if (!c) {
 					if (u < 1) throw new Error("Too few arguments provided");
-					return 1 === u ? (r = t, t = i = void 0) : 2 !== u || t.getContext || (i = r, r = t, t = void 0), new Promise((function(n, s) {
+					return 1 === u ? (r = t, t = i = void 0) : 2 !== u || t.getContext || (i = r, r = t, t = void 0), new Promise((function(n, a) {
 						try {
-							var a = o.create(r, i);
-							n(e(a, t, i))
+							var s = o.create(r, i);
+							n(e(s, t, i))
 						} catch (u) {
-							s(u)
+							a(u)
 						}
 					}))
 				}
 				if (u < 2) throw new Error("Too few arguments provided");
-				2 === u ? (s = r, r = t, t = i = void 0) : 3 === u && (t.getContext && void 0 === s ? (s = i, i = void 0) : (s = i, i = r, r = t, t = void 0));
+				2 === u ? (a = r, r = t, t = i = void 0) : 3 === u && (t.getContext && void 0 === a ? (a = i, i = void 0) : (a = i, i = r, r = t, t = void 0));
 				try {
-					var d = o.create(r, i);
-					s(null, e(d, t, i))
-				} catch (l) {
-					s(l)
+					var l = o.create(r, i);
+					a(null, e(l, t, i))
+				} catch (d) {
+					a(d)
 				}
 			}
-			t.create = o.create, t.toCanvas = a.bind(null, i.render), t.toDataURL = a.bind(null, i.renderToDataURL), t.toString = a.bind(null, (function(e, t, r) {
-				return s.render(e, r)
+			t.create = o.create, t.toCanvas = s.bind(null, i.render), t.toDataURL = s.bind(null, i.renderToDataURL), t.toString = s.bind(null, (function(e, t, r) {
+				return a.render(e, r)
 			}))
 		},
 		"./node_modules/qrcode/lib/can-promise.js": function(e, t) {
@@ -97,11 +465,11 @@
 			var n = r("./node_modules/qrcode/lib/core/utils.js").getSymbolSize;
 			t.getRowColCoords = function(e) {
 				if (1 === e) return [];
-				for (var t = Math.floor(e / 7) + 2, r = n(e), o = 145 === r ? 26 : 2 * Math.ceil((r - 13) / (2 * t - 2)), i = [r - 7], s = 1; s < t - 1; s++) i[s] = i[s - 1] - o;
+				for (var t = Math.floor(e / 7) + 2, r = n(e), o = 145 === r ? 26 : 2 * Math.ceil((r - 13) / (2 * t - 2)), i = [r - 7], a = 1; a < t - 1; a++) i[a] = i[a - 1] - o;
 				return i.push(6), i.reverse()
 			}, t.getPositions = function(e) {
 				for (var r = [], n = t.getRowColCoords(e), o = n.length, i = 0; i < o; i++)
-					for (var s = 0; s < o; s++) 0 === i && 0 === s || 0 === i && s === o - 1 || i === o - 1 && 0 === s || r.push([n[i], n[s]]);
+					for (var a = 0; a < o; a++) 0 === i && 0 === a || 0 === i && a === o - 1 || i === o - 1 && 0 === a || r.push([n[i], n[a]]);
 				return r
 			}
 		},
@@ -330,7 +698,7 @@
 				o = 40,
 				i = 10;
 
-			function s(e, r, n) {
+			function a(e, r, n) {
 				switch (e) {
 					case t.Patterns.PATTERN000:
 						return (r + n) % 2 == 0;
@@ -357,11 +725,11 @@
 			}, t.from = function(e) {
 				return t.isValid(e) ? parseInt(e, 10) : void 0
 			}, t.getPenaltyN1 = function(e) {
-				for (var t = e.size, n = 0, o = 0, i = 0, s = null, a = null, u = 0; u < t; u++) {
-					o = i = 0, s = a = null;
+				for (var t = e.size, n = 0, o = 0, i = 0, a = null, s = null, u = 0; u < t; u++) {
+					o = i = 0, a = s = null;
 					for (var c = 0; c < t; c++) {
-						var d = e.get(u, c);
-						d === s ? o++ : (o >= 5 && (n += r + (o - 5)), s = d, o = 1), (d = e.get(c, u)) === a ? i++ : (i >= 5 && (n += r + (i - 5)), a = d, i = 1)
+						var l = e.get(u, c);
+						l === a ? o++ : (o >= 5 && (n += r + (o - 5)), a = l, o = 1), (l = e.get(c, u)) === s ? i++ : (i >= 5 && (n += r + (i - 5)), s = l, i = 1)
 					}
 					o >= 5 && (n += r + (o - 5)), i >= 5 && (n += r + (i - 5))
 				}
@@ -369,14 +737,14 @@
 			}, t.getPenaltyN2 = function(e) {
 				for (var t = e.size, r = 0, o = 0; o < t - 1; o++)
 					for (var i = 0; i < t - 1; i++) {
-						var s = e.get(o, i) + e.get(o, i + 1) + e.get(o + 1, i) + e.get(o + 1, i + 1);
-						4 !== s && 0 !== s || r++
+						var a = e.get(o, i) + e.get(o, i + 1) + e.get(o + 1, i) + e.get(o + 1, i + 1);
+						4 !== a && 0 !== a || r++
 					}
 				return r * n
 			}, t.getPenaltyN3 = function(e) {
-				for (var t = e.size, r = 0, n = 0, i = 0, s = 0; s < t; s++) {
+				for (var t = e.size, r = 0, n = 0, i = 0, a = 0; a < t; a++) {
 					n = i = 0;
-					for (var a = 0; a < t; a++) n = n << 1 & 2047 | e.get(s, a), a >= 10 && (1488 === n || 93 === n) && r++, i = i << 1 & 2047 | e.get(a, s), a >= 10 && (1488 === i || 93 === i) && r++
+					for (var s = 0; s < t; s++) n = n << 1 & 2047 | e.get(a, s), s >= 10 && (1488 === n || 93 === n) && r++, i = i << 1 & 2047 | e.get(s, a), s >= 10 && (1488 === i || 93 === i) && r++
 				}
 				return r * o
 			}, t.getPenaltyN4 = function(e) {
@@ -384,12 +752,12 @@
 				return Math.abs(Math.ceil(100 * t / r / 5) - 10) * i
 			}, t.applyMask = function(e, t) {
 				for (var r = t.size, n = 0; n < r; n++)
-					for (var o = 0; o < r; o++) t.isReserved(o, n) || t.xor(o, n, s(e, o, n))
+					for (var o = 0; o < r; o++) t.isReserved(o, n) || t.xor(o, n, a(e, o, n))
 			}, t.getBestMask = function(e, r) {
-				for (var n = Object.keys(t.Patterns).length, o = 0, i = 1 / 0, s = 0; s < n; s++) {
-					r(s), t.applyMask(s, e);
-					var a = t.getPenaltyN1(e) + t.getPenaltyN2(e) + t.getPenaltyN3(e) + t.getPenaltyN4(e);
-					t.applyMask(s, e), a < i && (i = a, o = s)
+				for (var n = Object.keys(t.Patterns).length, o = 0, i = 1 / 0, a = 0; a < n; a++) {
+					r(a), t.applyMask(a, e);
+					var s = t.getPenaltyN1(e) + t.getPenaltyN2(e) + t.getPenaltyN3(e) + t.getPenaltyN4(e);
+					t.applyMask(a, e), s < i && (i = s, o = a)
 				}
 				return o
 			}
@@ -473,13 +841,13 @@
 				o = r("./node_modules/qrcode/lib/core/galois-field.js");
 			t.mul = function(e, t) {
 				for (var r = n.alloc(e.length + t.length - 1), i = 0; i < e.length; i++)
-					for (var s = 0; s < t.length; s++) r[i + s] ^= o.mul(e[i], t[s]);
+					for (var a = 0; a < t.length; a++) r[i + a] ^= o.mul(e[i], t[a]);
 				return r
 			}, t.mod = function(e, t) {
 				for (var r = n.from(e); r.length - t.length >= 0;) {
-					for (var i = r[0], s = 0; s < t.length; s++) r[s] ^= o.mul(t[s], i);
-					for (var a = 0; a < r.length && 0 === r[a];) a++;
-					r = r.slice(a)
+					for (var i = r[0], a = 0; a < t.length; a++) r[a] ^= o.mul(t[a], i);
+					for (var s = 0; s < r.length && 0 === r[s];) s++;
+					r = r.slice(s)
 				}
 				return r
 			}, t.generateECPolynomial = function(e) {
@@ -491,74 +859,74 @@
 			var n = r("./node_modules/qrcode/lib/utils/typedarray-buffer.js"),
 				o = r("./node_modules/qrcode/lib/core/utils.js"),
 				i = r("./node_modules/qrcode/lib/core/error-correction-level.js"),
-				s = r("./node_modules/qrcode/lib/core/bit-buffer.js"),
-				a = r("./node_modules/qrcode/lib/core/bit-matrix.js"),
+				a = r("./node_modules/qrcode/lib/core/bit-buffer.js"),
+				s = r("./node_modules/qrcode/lib/core/bit-matrix.js"),
 				u = r("./node_modules/qrcode/lib/core/alignment-pattern.js"),
 				c = r("./node_modules/qrcode/lib/core/finder-pattern.js"),
-				d = r("./node_modules/qrcode/lib/core/mask-pattern.js"),
-				l = r("./node_modules/qrcode/lib/core/error-correction-code.js"),
+				l = r("./node_modules/qrcode/lib/core/mask-pattern.js"),
+				d = r("./node_modules/qrcode/lib/core/error-correction-code.js"),
 				f = r("./node_modules/qrcode/lib/core/reed-solomon-encoder.js"),
 				h = r("./node_modules/qrcode/lib/core/version.js"),
-				g = r("./node_modules/qrcode/lib/core/format-info.js"),
-				m = r("./node_modules/qrcode/lib/core/mode.js"),
-				p = r("./node_modules/qrcode/lib/core/segments.js"),
+				p = r("./node_modules/qrcode/lib/core/format-info.js"),
+				g = r("./node_modules/qrcode/lib/core/mode.js"),
+				m = r("./node_modules/qrcode/lib/core/segments.js"),
 				v = r("./node_modules/qrcode/node_modules/isarray/index.js");
 
-			function b(e, t, r) {
+			function y(e, t, r) {
 				var n, o, i = e.size,
-					s = g.getEncodedBits(t, r);
-				for (n = 0; n < 15; n++) o = 1 == (s >> n & 1), n < 6 ? e.set(n, 8, o, !0) : n < 8 ? e.set(n + 1, 8, o, !0) : e.set(i - 15 + n, 8, o, !0), n < 8 ? e.set(8, i - n - 1, o, !0) : n < 9 ? e.set(8, 15 - n - 1 + 1, o, !0) : e.set(8, 15 - n - 1, o, !0);
+					a = p.getEncodedBits(t, r);
+				for (n = 0; n < 15; n++) o = 1 == (a >> n & 1), n < 6 ? e.set(n, 8, o, !0) : n < 8 ? e.set(n + 1, 8, o, !0) : e.set(i - 15 + n, 8, o, !0), n < 8 ? e.set(8, i - n - 1, o, !0) : n < 9 ? e.set(8, 15 - n - 1 + 1, o, !0) : e.set(8, 15 - n - 1, o, !0);
 				e.set(i - 8, 8, 1, !0)
 			}
 
-			function y(e, t, r) {
-				var i = new s;
+			function b(e, t, r) {
+				var i = new a;
 				r.forEach((function(t) {
-					i.put(t.mode.bit, 4), i.put(t.getLength(), m.getCharCountIndicator(t.mode, e)), t.write(i)
+					i.put(t.mode.bit, 4), i.put(t.getLength(), g.getCharCountIndicator(t.mode, e)), t.write(i)
 				}));
-				var a = 8 * (o.getSymbolTotalCodewords(e) - l.getTotalCodewordsCount(e, t));
-				for (i.getLengthInBits() + 4 <= a && i.put(0, 4); i.getLengthInBits() % 8 != 0;) i.putBit(0);
-				for (var u = (a - i.getLengthInBits()) / 8, c = 0; c < u; c++) i.put(c % 2 ? 17 : 236, 8);
+				var s = 8 * (o.getSymbolTotalCodewords(e) - d.getTotalCodewordsCount(e, t));
+				for (i.getLengthInBits() + 4 <= s && i.put(0, 4); i.getLengthInBits() % 8 != 0;) i.putBit(0);
+				for (var u = (s - i.getLengthInBits()) / 8, c = 0; c < u; c++) i.put(c % 2 ? 17 : 236, 8);
 				return function(e, t, r) {
-					for (var i = o.getSymbolTotalCodewords(t), s = l.getTotalCodewordsCount(t, r), a = i - s, u = l.getBlocksCount(t, r), c = u - i % u, d = Math.floor(i / u), h = Math.floor(a / u), g = h + 1, m = d - h, p = new f(m), v = 0, b = new Array(u), y = new Array(u), w = 0, _ = n.from(e.buffer), E = 0; E < u; E++) {
-						var j = E < c ? h : g;
-						b[E] = _.slice(v, v + j), y[E] = p.encode(b[E]), v += j, w = Math.max(w, j)
+					for (var i = o.getSymbolTotalCodewords(t), a = d.getTotalCodewordsCount(t, r), s = i - a, u = d.getBlocksCount(t, r), c = u - i % u, l = Math.floor(i / u), h = Math.floor(s / u), p = h + 1, g = l - h, m = new f(g), v = 0, y = new Array(u), b = new Array(u), w = 0, E = n.from(e.buffer), _ = 0; _ < u; _++) {
+						var j = _ < c ? h : p;
+						y[_] = E.slice(v, v + j), b[_] = m.encode(y[_]), v += j, w = Math.max(w, j)
 					}
-					var A, T, B = n.alloc(i),
-						x = 0;
+					var A, P, B = n.alloc(i),
+						C = 0;
 					for (A = 0; A < w; A++)
-						for (T = 0; T < u; T++) A < b[T].length && (B[x++] = b[T][A]);
-					for (A = 0; A < m; A++)
-						for (T = 0; T < u; T++) B[x++] = y[T][A];
+						for (P = 0; P < u; P++) A < y[P].length && (B[C++] = y[P][A]);
+					for (A = 0; A < g; A++)
+						for (P = 0; P < u; P++) B[C++] = b[P][A];
 					return B
 				}(i, e, t)
 			}
 
 			function w(e, t, r, n) {
 				var i;
-				if (v(e)) i = p.fromArray(e);
+				if (v(e)) i = m.fromArray(e);
 				else {
 					if ("string" != typeof e) throw new Error("Invalid data");
-					var s = t;
-					if (!s) {
-						var l = p.rawSplit(e);
-						s = h.getBestVersionForData(l, r)
+					var a = t;
+					if (!a) {
+						var d = m.rawSplit(e);
+						a = h.getBestVersionForData(d, r)
 					}
-					i = p.fromString(e, s || 40)
+					i = m.fromString(e, a || 40)
 				}
 				var f = h.getBestVersionForData(i, r);
 				if (!f) throw new Error("The amount of data is too big to be stored in a QR Code");
 				if (t) {
 					if (t < f) throw new Error("\nThe chosen QR Code version cannot contain this amount of data.\nMinimum version required to store current data is: " + f + ".\n")
 				} else t = f;
-				var g = y(t, r, i),
-					m = o.getSymbolSize(t),
-					w = new a(m);
+				var p = b(t, r, i),
+					g = o.getSymbolSize(t),
+					w = new s(g);
 				return function(e, t) {
 						for (var r = e.size, n = c.getPositions(t), o = 0; o < n.length; o++)
-							for (var i = n[o][0], s = n[o][1], a = -1; a <= 7; a++)
-								if (!(i + a <= -1 || r <= i + a))
-									for (var u = -1; u <= 7; u++) s + u <= -1 || r <= s + u || (a >= 0 && a <= 6 && (0 === u || 6 === u) || u >= 0 && u <= 6 && (0 === a || 6 === a) || a >= 2 && a <= 4 && u >= 2 && u <= 4 ? e.set(i + a, s + u, !0, !0) : e.set(i + a, s + u, !1, !0))
+							for (var i = n[o][0], a = n[o][1], s = -1; s <= 7; s++)
+								if (!(i + s <= -1 || r <= i + s))
+									for (var u = -1; u <= 7; u++) a + u <= -1 || r <= a + u || (s >= 0 && s <= 6 && (0 === u || 6 === u) || u >= 0 && u <= 6 && (0 === s || 6 === s) || s >= 2 && s <= 4 && u >= 2 && u <= 4 ? e.set(i + s, a + u, !0, !0) : e.set(i + s, a + u, !1, !0))
 					}(w, t),
 					function(e) {
 						for (var t = e.size, r = 8; r < t - 8; r++) {
@@ -568,24 +936,24 @@
 					}(w),
 					function(e, t) {
 						for (var r = u.getPositions(t), n = 0; n < r.length; n++)
-							for (var o = r[n][0], i = r[n][1], s = -2; s <= 2; s++)
-								for (var a = -2; a <= 2; a++) - 2 === s || 2 === s || -2 === a || 2 === a || 0 === s && 0 === a ? e.set(o + s, i + a, !0, !0) : e.set(o + s, i + a, !1, !0)
-					}(w, t), b(w, r, 0), t >= 7 && function(e, t) {
-						for (var r, n, o, i = e.size, s = h.getEncodedBits(t), a = 0; a < 18; a++) r = Math.floor(a / 3), n = a % 3 + i - 8 - 3, o = 1 == (s >> a & 1), e.set(r, n, o, !0), e.set(n, r, o, !0)
+							for (var o = r[n][0], i = r[n][1], a = -2; a <= 2; a++)
+								for (var s = -2; s <= 2; s++) - 2 === a || 2 === a || -2 === s || 2 === s || 0 === a && 0 === s ? e.set(o + a, i + s, !0, !0) : e.set(o + a, i + s, !1, !0)
+					}(w, t), y(w, r, 0), t >= 7 && function(e, t) {
+						for (var r, n, o, i = e.size, a = h.getEncodedBits(t), s = 0; s < 18; s++) r = Math.floor(s / 3), n = s % 3 + i - 8 - 3, o = 1 == (a >> s & 1), e.set(r, n, o, !0), e.set(n, r, o, !0)
 					}(w, t),
 					function(e, t) {
-						for (var r = e.size, n = -1, o = r - 1, i = 7, s = 0, a = r - 1; a > 0; a -= 2)
-							for (6 === a && a--;;) {
+						for (var r = e.size, n = -1, o = r - 1, i = 7, a = 0, s = r - 1; s > 0; s -= 2)
+							for (6 === s && s--;;) {
 								for (var u = 0; u < 2; u++)
-									if (!e.isReserved(o, a - u)) {
+									if (!e.isReserved(o, s - u)) {
 										var c = !1;
-										s < t.length && (c = 1 == (t[s] >>> i & 1)), e.set(o, a - u, c), -1 === --i && (s++, i = 7)
+										a < t.length && (c = 1 == (t[a] >>> i & 1)), e.set(o, s - u, c), -1 === --i && (a++, i = 7)
 									} if ((o += n) < 0 || r <= o) {
 									o -= n, n = -n;
 									break
 								}
 							}
-					}(w, g), isNaN(n) && (n = d.getBestMask(w, b.bind(null, w, r))), d.applyMask(n, w), b(w, r, n), {
+					}(w, p), isNaN(n) && (n = l.getBestMask(w, y.bind(null, w, r))), l.applyMask(n, w), y(w, r, n), {
 						modules: w,
 						version: t,
 						errorCorrectionLevel: r,
@@ -595,8 +963,8 @@
 			}
 			t.create = function(e, t) {
 				if (void 0 === e || "" === e) throw new Error("No input text");
-				var r, n, s = i.M;
-				return void 0 !== t && (s = i.from(t.errorCorrectionLevel, i.M), r = h.from(t.version), n = d.from(t.maskPattern), t.toSJISFunc && o.setToSJISFunction(t.toSJISFunc)), w(e, r, s, n)
+				var r, n, a = i.M;
+				return void 0 !== t && (a = i.from(t.errorCorrectionLevel, i.M), r = h.from(t.version), n = l.from(t.maskPattern), t.toSJISFunc && o.setToSJISFunction(t.toSJISFunc)), w(e, r, a, n)
 			}
 		},
 		"./node_modules/qrcode/lib/core/reed-solomon-encoder.js": function(e, t, r) {
@@ -604,23 +972,23 @@
 				o = r("./node_modules/qrcode/lib/core/polynomial.js"),
 				i = r("./node_modules/buffer/index.js").Buffer;
 
-			function s(e) {
+			function a(e) {
 				this.genPoly = void 0, this.degree = e, this.degree && this.initialize(this.degree)
 			}
-			s.prototype.initialize = function(e) {
+			a.prototype.initialize = function(e) {
 				this.degree = e, this.genPoly = o.generateECPolynomial(this.degree)
-			}, s.prototype.encode = function(e) {
+			}, a.prototype.encode = function(e) {
 				if (!this.genPoly) throw new Error("Encoder not initialized");
 				var t = n.alloc(this.degree),
 					r = i.concat([e, t], e.length + this.degree),
-					s = o.mod(r, this.genPoly),
-					a = this.degree - s.length;
-				if (a > 0) {
+					a = o.mod(r, this.genPoly),
+					s = this.degree - a.length;
+				if (s > 0) {
 					var u = n.alloc(this.degree);
-					return s.copy(u, a), u
+					return a.copy(u, s), u
 				}
-				return s
-			}, e.exports = s
+				return a
+			}, e.exports = a
 		},
 		"./node_modules/qrcode/lib/core/regex.js": function(e, t) {
 			var r = "(?:[u3000-u303F]|[u3040-u309F]|[u30A0-u30FF]|[uFF00-uFFEF]|[u4E00-u9FAF]|[u2605-u2606]|[u2190-u2195]|u203B|[u2010u2015u2018u2019u2025u2026u201Cu201Du2225u2260]|[u0391-u0451]|[u00A7u00A8u00B1u00B4u00D7u00F7])+",
@@ -628,26 +996,26 @@
 			t.KANJI = new RegExp(r, "g"), t.BYTE_KANJI = new RegExp("[^A-Z0-9 $%*+\\-./:]+", "g"), t.BYTE = new RegExp(n, "g"), t.NUMERIC = new RegExp("[0-9]+", "g"), t.ALPHANUMERIC = new RegExp("[A-Z $%*+\\-./:]+", "g");
 			var o = new RegExp("^" + r + "$"),
 				i = new RegExp("^[0-9]+$"),
-				s = new RegExp("^[A-Z0-9 $%*+\\-./:]+$");
+				a = new RegExp("^[A-Z0-9 $%*+\\-./:]+$");
 			t.testKanji = function(e) {
 				return o.test(e)
 			}, t.testNumeric = function(e) {
 				return i.test(e)
 			}, t.testAlphanumeric = function(e) {
-				return s.test(e)
+				return a.test(e)
 			}
 		},
 		"./node_modules/qrcode/lib/core/segments.js": function(e, t, r) {
 			var n = r("./node_modules/qrcode/lib/core/mode.js"),
 				o = r("./node_modules/qrcode/lib/core/numeric-data.js"),
 				i = r("./node_modules/qrcode/lib/core/alphanumeric-data.js"),
-				s = r("./node_modules/qrcode/lib/core/byte-data.js"),
-				a = r("./node_modules/qrcode/lib/core/kanji-data.js"),
+				a = r("./node_modules/qrcode/lib/core/byte-data.js"),
+				s = r("./node_modules/qrcode/lib/core/kanji-data.js"),
 				u = r("./node_modules/qrcode/lib/core/regex.js"),
 				c = r("./node_modules/qrcode/lib/core/utils.js"),
-				d = r("./node_modules/dijkstrajs/dijkstra.js");
+				l = r("./node_modules/dijkstrajs/dijkstra.js");
 
-			function l(e) {
+			function d(e) {
 				return unescape(encodeURIComponent(e)).length
 			}
 
@@ -675,20 +1043,20 @@
 				}))
 			}
 
-			function g(e, t) {
+			function p(e, t) {
 				switch (t) {
 					case n.NUMERIC:
 						return o.getBitsLength(e);
 					case n.ALPHANUMERIC:
 						return i.getBitsLength(e);
 					case n.KANJI:
-						return a.getBitsLength(e);
+						return s.getBitsLength(e);
 					case n.BYTE:
-						return s.getBitsLength(e)
+						return a.getBitsLength(e)
 				}
 			}
 
-			function m(e, t) {
+			function g(e, t) {
 				var r, u = n.getBestModeForData(e);
 				if ((r = n.from(t, u)) !== n.BYTE && r.bit < u.bit) throw new Error('"' + e + '" cannot be encoded with mode ' + n.toString(r) + ".\n Suggested mode is: " + n.toString(u));
 				switch (r !== n.KANJI || c.isKanjiModeEnabled() || (r = n.BYTE), r) {
@@ -697,30 +1065,30 @@
 					case n.ALPHANUMERIC:
 						return new i(e);
 					case n.KANJI:
-						return new a(e);
+						return new s(e);
 					case n.BYTE:
-						return new s(e)
+						return new a(e)
 				}
 			}
 			t.fromArray = function(e) {
 				return e.reduce((function(e, t) {
-					return "string" == typeof t ? e.push(m(t, null)) : t.data && e.push(m(t.data, t.mode)), e
+					return "string" == typeof t ? e.push(g(t, null)) : t.data && e.push(g(t.data, t.mode)), e
 				}), [])
 			}, t.fromString = function(e, r) {
 				for (var o = function(e, t) {
 						for (var r = {}, o = {
 								start: {}
-							}, i = ["start"], s = 0; s < e.length; s++) {
-							for (var a = e[s], u = [], c = 0; c < a.length; c++) {
-								var d = a[c],
-									l = "" + s + c;
-								u.push(l), r[l] = {
-									node: d,
+							}, i = ["start"], a = 0; a < e.length; a++) {
+							for (var s = e[a], u = [], c = 0; c < s.length; c++) {
+								var l = s[c],
+									d = "" + a + c;
+								u.push(d), r[d] = {
+									node: l,
 									lastCount: 0
-								}, o[l] = {};
+								}, o[d] = {};
 								for (var f = 0; f < i.length; f++) {
 									var h = i[f];
-									r[h] && r[h].node.mode === d.mode ? (o[h][l] = g(r[h].lastCount + d.length, d.mode) - g(r[h].lastCount, d.mode), r[h].lastCount += d.length) : (r[h] && (r[h].lastCount = d.length), o[h][l] = g(d.length, d.mode) + 4 + n.getCharCountIndicator(d.mode, t))
+									r[h] && r[h].node.mode === l.mode ? (o[h][d] = p(r[h].lastCount + l.length, l.mode) - p(r[h].lastCount, l.mode), r[h].lastCount += l.length) : (r[h] && (r[h].lastCount = l.length), o[h][d] = p(l.length, l.mode) + 4 + n.getCharCountIndicator(l.mode, t))
 								}
 							}
 							i = u
@@ -756,25 +1124,25 @@
 									t.push([o, {
 										data: o.data,
 										mode: n.BYTE,
-										length: l(o.data)
+										length: d(o.data)
 									}]);
 									break;
 								case n.BYTE:
 									t.push([{
 										data: o.data,
 										mode: n.BYTE,
-										length: l(o.data)
+										length: d(o.data)
 									}])
 							}
 						}
 						return t
-					}(h(e, c.isKanjiModeEnabled())), r), i = d.find_path(o.map, "start", "end"), s = [], a = 1; a < i.length - 1; a++) s.push(o.table[i[a]].node);
+					}(h(e, c.isKanjiModeEnabled())), r), i = l.find_path(o.map, "start", "end"), a = [], s = 1; s < i.length - 1; s++) a.push(o.table[i[s]].node);
 				return t.fromArray(function(e) {
 					return e.reduce((function(e, t) {
 						var r = e.length - 1 >= 0 ? e[e.length - 1] : null;
 						return r && r.mode === t.mode ? (e[e.length - 1].data += t.data, e) : (e.push(t), e)
 					}), [])
-				}(s))
+				}(a))
 			}, t.rawSplit = function(e) {
 				return t.fromArray(h(e, c.isKanjiModeEnabled()))
 			}
@@ -808,38 +1176,38 @@
 			var n = r("./node_modules/qrcode/lib/core/utils.js"),
 				o = r("./node_modules/qrcode/lib/core/error-correction-code.js"),
 				i = r("./node_modules/qrcode/lib/core/error-correction-level.js"),
-				s = r("./node_modules/qrcode/lib/core/mode.js"),
-				a = r("./node_modules/qrcode/lib/core/version-check.js"),
+				a = r("./node_modules/qrcode/lib/core/mode.js"),
+				s = r("./node_modules/qrcode/lib/core/version-check.js"),
 				u = r("./node_modules/qrcode/node_modules/isarray/index.js"),
 				c = n.getBCHDigit(7973);
 
-			function d(e, t) {
-				return s.getCharCountIndicator(e, t) + 4
+			function l(e, t) {
+				return a.getCharCountIndicator(e, t) + 4
 			}
 
-			function l(e, t) {
+			function d(e, t) {
 				var r = 0;
 				return e.forEach((function(e) {
-					var n = d(e.mode, t);
+					var n = l(e.mode, t);
 					r += n + e.getBitsLength()
 				})), r
 			}
 			t.from = function(e, t) {
-				return a.isValid(e) ? parseInt(e, 10) : t
+				return s.isValid(e) ? parseInt(e, 10) : t
 			}, t.getCapacity = function(e, t, r) {
-				if (!a.isValid(e)) throw new Error("Invalid QR Code version");
-				void 0 === r && (r = s.BYTE);
+				if (!s.isValid(e)) throw new Error("Invalid QR Code version");
+				void 0 === r && (r = a.BYTE);
 				var i = 8 * (n.getSymbolTotalCodewords(e) - o.getTotalCodewordsCount(e, t));
-				if (r === s.MIXED) return i;
-				var u = i - d(r, e);
+				if (r === a.MIXED) return i;
+				var u = i - l(r, e);
 				switch (r) {
-					case s.NUMERIC:
+					case a.NUMERIC:
 						return Math.floor(u / 10 * 3);
-					case s.ALPHANUMERIC:
+					case a.ALPHANUMERIC:
 						return Math.floor(u / 11 * 2);
-					case s.KANJI:
+					case a.KANJI:
 						return Math.floor(u / 13);
-					case s.BYTE:
+					case a.BYTE:
 					default:
 						return Math.floor(u / 8)
 				}
@@ -848,7 +1216,7 @@
 				if (u(e)) {
 					if (e.length > 1) return function(e, r) {
 						for (var n = 1; n <= 40; n++) {
-							if (l(e, n) <= t.getCapacity(n, r, s.MIXED)) return n
+							if (d(e, n) <= t.getCapacity(n, r, a.MIXED)) return n
 						}
 					}(e, o);
 					if (0 === e.length) return 1;
@@ -859,7 +1227,7 @@
 						if (r <= t.getCapacity(o, n, e)) return o
 				}(n.mode, n.getLength(), o)
 			}, t.getEncodedBits = function(e) {
-				if (!a.isValid(e) || e < 7) throw new Error("Invalid QR Code version");
+				if (!s.isValid(e) || e < 7) throw new Error("Invalid QR Code version");
 				for (var t = e << 12; n.getBCHDigit(t) - c >= 0;) t ^= 7973 << n.getBCHDigit(t) - c;
 				return e << 12 | t
 			}
@@ -876,20 +1244,20 @@
 						throw new Error("You need to specify a canvas element")
 					}
 				}()), o = n.getOptions(o);
-				var s = n.getImageWidth(e.modules.size, o),
-					a = i.getContext("2d"),
-					u = a.createImageData(s, s);
+				var a = n.getImageWidth(e.modules.size, o),
+					s = i.getContext("2d"),
+					u = s.createImageData(a, a);
 				return n.qrToImageData(u.data, e, o),
 					function(e, t, r) {
 						e.clearRect(0, 0, t.width, t.height), t.style || (t.style = {}), t.height = r, t.width = r, t.style.height = r + "px", t.style.width = r + "px"
-					}(a, i, s), a.putImageData(u, 0, 0), i
+					}(s, i, a), s.putImageData(u, 0, 0), i
 			}, t.renderToDataURL = function(e, r, n) {
 				var o = n;
 				void 0 !== o || r && r.getContext || (o = r, r = void 0), o || (o = {});
 				var i = t.render(e, r, o),
-					s = o.type || "image/png",
-					a = o.rendererOpts || {};
-				return i.toDataURL(s, a.quality)
+					a = o.type || "image/png",
+					s = o.rendererOpts || {};
+				return i.toDataURL(a, s.quality)
 			}
 		},
 		"./node_modules/qrcode/lib/renderer/svg-tag.js": function(e, t, r) {
@@ -906,21 +1274,21 @@
 				return void 0 !== r && (n += " " + r), n
 			}
 			t.render = function(e, t, r) {
-				var s = n.getOptions(t),
-					a = e.modules.size,
+				var a = n.getOptions(t),
+					s = e.modules.size,
 					u = e.modules.data,
-					c = a + 2 * s.margin,
-					d = s.color.light.a ? "<path " + o(s.color.light, "fill") + ' d="M0 0h' + c + "v" + c + 'H0z"/>' : "",
-					l = "<path " + o(s.color.dark, "stroke") + ' d="' + function(e, t, r) {
-						for (var n = "", o = 0, s = !1, a = 0, u = 0; u < e.length; u++) {
+					c = s + 2 * a.margin,
+					l = a.color.light.a ? "<path " + o(a.color.light, "fill") + ' d="M0 0h' + c + "v" + c + 'H0z"/>' : "",
+					d = "<path " + o(a.color.dark, "stroke") + ' d="' + function(e, t, r) {
+						for (var n = "", o = 0, a = !1, s = 0, u = 0; u < e.length; u++) {
 							var c = Math.floor(u % t),
-								d = Math.floor(u / t);
-							c || s || (s = !0), e[u] ? (a++, u > 0 && c > 0 && e[u - 1] || (n += s ? i("M", c + r, .5 + d + r) : i("m", o, 0), o = 0, s = !1), c + 1 < t && e[u + 1] || (n += i("h", a), a = 0)) : o++
+								l = Math.floor(u / t);
+							c || a || (a = !0), e[u] ? (s++, u > 0 && c > 0 && e[u - 1] || (n += a ? i("M", c + r, .5 + l + r) : i("m", o, 0), o = 0, a = !1), c + 1 < t && e[u + 1] || (n += i("h", s), s = 0)) : o++
 						}
 						return n
-					}(u, a, s.margin) + '"/>',
+					}(u, s, a.margin) + '"/>',
 					f = 'viewBox="0 0 ' + c + " " + c + '"',
-					h = '<svg xmlns="http://www.w3.org/2000/svg" ' + (s.width ? 'width="' + s.width + '" height="' + s.width + '" ' : "") + f + ' shape-rendering="crispEdges">' + d + l + "</svg>\n";
+					h = '<svg xmlns="http://www.w3.org/2000/svg" ' + (a.width ? 'width="' + a.width + '" height="' + a.width + '" ' : "") + f + ' shape-rendering="crispEdges">' + l + d + "</svg>\n";
 				return "function" == typeof r && r(null, h), h
 			}
 		},
@@ -963,11 +1331,11 @@
 				var n = t.getScale(e, r);
 				return Math.floor((e + 2 * r.margin) * n)
 			}, t.qrToImageData = function(e, r, n) {
-				for (var o = r.modules.size, i = r.modules.data, s = t.getScale(o, n), a = Math.floor((o + 2 * n.margin) * s), u = n.margin * s, c = [n.color.light, n.color.dark], d = 0; d < a; d++)
-					for (var l = 0; l < a; l++) {
-						var f = 4 * (d * a + l),
+				for (var o = r.modules.size, i = r.modules.data, a = t.getScale(o, n), s = Math.floor((o + 2 * n.margin) * a), u = n.margin * a, c = [n.color.light, n.color.dark], l = 0; l < s; l++)
+					for (var d = 0; d < s; d++) {
+						var f = 4 * (l * s + d),
 							h = n.color.light;
-						if (d >= u && l >= u && d < a - u && l < a - u) h = c[i[Math.floor((d - u) / s) * o + Math.floor((l - u) / s)] ? 1 : 0];
+						if (l >= u && d >= u && l < s - u && d < s - u) h = c[i[Math.floor((l - u) / a) * o + Math.floor((d - u) / a)] ? 1 : 0];
 						e[f++] = h.r, e[f++] = h.g, e[f++] = h.b, e[f] = h.a
 					}
 			}
@@ -1002,20 +1370,20 @@
 						return o
 					}(e, t, r, n);
 					if ("string" == typeof t) return function(e, t) {
-						var r = 0 | l(t),
-							n = a(e, r),
+						var r = 0 | d(t),
+							n = s(e, r),
 							o = n.write(t);
 						o !== r && (n = n.slice(0, o));
 						return n
 					}(e, t);
 					return function(e, t) {
 						if (i.isBuffer(t)) {
-							var r = 0 | s(t.length),
-								n = a(e, r);
+							var r = 0 | a(t.length),
+								n = s(e, r);
 							return 0 === n.length ? n : (t.copy(n, 0, 0, r), n)
 						}
 						if (t) {
-							if ("undefined" != typeof ArrayBuffer && t.buffer instanceof ArrayBuffer || "length" in t) return "number" != typeof t.length || (o = t.length) != o ? a(e, 0) : c(e, t);
+							if ("undefined" != typeof ArrayBuffer && t.buffer instanceof ArrayBuffer || "length" in t) return "number" != typeof t.length || (o = t.length) != o ? s(e, 0) : c(e, t);
 							if ("Buffer" === t.type && Array.isArray(t.data)) return c(e, t.data)
 						}
 						var o;
@@ -1024,39 +1392,39 @@
 				}(this, e, t, r) : new i(e, t, r)
 			}
 
-			function s(e) {
+			function a(e) {
 				if (e >= o) throw new RangeError("Attempt to allocate Buffer larger than maximum size: 0x" + o.toString(16) + " bytes");
 				return 0 | e
 			}
 
-			function a(e, t) {
+			function s(e, t) {
 				var r;
 				return i.TYPED_ARRAY_SUPPORT ? (r = new Uint8Array(t)).__proto__ = i.prototype : (null === (r = e) && (r = new i(t)), r.length = t), r
 			}
 
 			function u(e, t) {
-				var r = a(e, t < 0 ? 0 : 0 | s(t));
+				var r = s(e, t < 0 ? 0 : 0 | a(t));
 				if (!i.TYPED_ARRAY_SUPPORT)
 					for (var n = 0; n < t; ++n) r[n] = 0;
 				return r
 			}
 
 			function c(e, t) {
-				for (var r = t.length < 0 ? 0 : 0 | s(t.length), n = a(e, r), o = 0; o < r; o += 1) n[o] = 255 & t[o];
+				for (var r = t.length < 0 ? 0 : 0 | a(t.length), n = s(e, r), o = 0; o < r; o += 1) n[o] = 255 & t[o];
 				return n
 			}
 
-			function d(e, t) {
+			function l(e, t) {
 				var r;
 				t = t || 1 / 0;
-				for (var n = e.length, o = null, i = [], s = 0; s < n; ++s) {
-					if ((r = e.charCodeAt(s)) > 55295 && r < 57344) {
+				for (var n = e.length, o = null, i = [], a = 0; a < n; ++a) {
+					if ((r = e.charCodeAt(a)) > 55295 && r < 57344) {
 						if (!o) {
 							if (r > 56319) {
 								(t -= 3) > -1 && i.push(239, 191, 189);
 								continue
 							}
-							if (s + 1 === n) {
+							if (a + 1 === n) {
 								(t -= 3) > -1 && i.push(239, 191, 189);
 								continue
 							}
@@ -1087,8 +1455,8 @@
 				return i
 			}
 
-			function l(e) {
-				return i.isBuffer(e) ? e.length : "undefined" != typeof ArrayBuffer && "function" == typeof ArrayBuffer.isView && (ArrayBuffer.isView(e) || e instanceof ArrayBuffer) ? e.byteLength : ("string" != typeof e && (e = "" + e), 0 === e.length ? 0 : d(e).length)
+			function d(e) {
+				return i.isBuffer(e) ? e.length : "undefined" != typeof ArrayBuffer && "function" == typeof ArrayBuffer.isView && (ArrayBuffer.isView(e) || e instanceof ArrayBuffer) ? e.byteLength : ("string" != typeof e && (e = "" + e), 0 === e.length ? 0 : l(e).length)
 			}
 			i.TYPED_ARRAY_SUPPORT && (i.prototype.__proto__ = Uint8Array.prototype, i.__proto__ = Uint8Array, "undefined" != typeof Symbol && Symbol.species && i[Symbol.species] === i && Object.defineProperty(i, Symbol.species, {
 				value: null,
@@ -1103,7 +1471,7 @@
 					return function(e, t, r, n) {
 						for (var o = 0; o < n && !(o + r >= t.length || o >= e.length); ++o) t[o + r] = e[o];
 						return o
-					}(d(t, e.length - r), e, r, n)
+					}(l(t, e.length - r), e, r, n)
 				}(this, e, t, r)
 			}, i.prototype.slice = function(e, t) {
 				var r, n = this.length;
@@ -1111,7 +1479,7 @@
 				else {
 					var o = t - e;
 					r = new i(o, void 0);
-					for (var s = 0; s < o; ++s) r[s] = this[s + e]
+					for (var a = 0; a < o; ++a) r[a] = this[a + e]
 				}
 				return r
 			}, i.prototype.copy = function(e, t, r, n) {
@@ -1121,13 +1489,13 @@
 				if (r < 0 || r >= this.length) throw new RangeError("sourceStart out of bounds");
 				if (n < 0) throw new RangeError("sourceEnd out of bounds");
 				n > this.length && (n = this.length), e.length - t < n - r && (n = e.length - t + r);
-				var o, s = n - r;
+				var o, a = n - r;
 				if (this === e && r < t && t < n)
-					for (o = s - 1; o >= 0; --o) e[o + t] = this[o + r];
-				else if (s < 1e3 || !i.TYPED_ARRAY_SUPPORT)
-					for (o = 0; o < s; ++o) e[o + t] = this[o + r];
-				else Uint8Array.prototype.set.call(e, this.subarray(r, r + s), t);
-				return s
+					for (o = a - 1; o >= 0; --o) e[o + t] = this[o + r];
+				else if (a < 1e3 || !i.TYPED_ARRAY_SUPPORT)
+					for (o = 0; o < a; ++o) e[o + t] = this[o + r];
+				else Uint8Array.prototype.set.call(e, this.subarray(r, r + a), t);
+				return a
 			}, i.prototype.fill = function(e, t, r) {
 				if ("string" == typeof e) {
 					if ("string" == typeof t ? (t = 0, r = this.length) : "string" == typeof r && (r = this.length), 1 === e.length) {
@@ -1141,26 +1509,26 @@
 				if (t >>>= 0, r = void 0 === r ? this.length : r >>> 0, e || (e = 0), "number" == typeof e)
 					for (o = t; o < r; ++o) this[o] = e;
 				else {
-					var s = i.isBuffer(e) ? e : new i(e),
-						a = s.length;
-					for (o = 0; o < r - t; ++o) this[o + t] = s[o % a]
+					var a = i.isBuffer(e) ? e : new i(e),
+						s = a.length;
+					for (o = 0; o < r - t; ++o) this[o + t] = a[o % s]
 				}
 				return this
 			}, i.concat = function(e, t) {
 				if (!n(e)) throw new TypeError('"list" argument must be an Array of Buffers');
-				if (0 === e.length) return a(null, 0);
+				if (0 === e.length) return s(null, 0);
 				var r;
 				if (void 0 === t)
 					for (t = 0, r = 0; r < e.length; ++r) t += e[r].length;
 				var o = u(null, t),
-					s = 0;
+					a = 0;
 				for (r = 0; r < e.length; ++r) {
 					var c = e[r];
 					if (!i.isBuffer(c)) throw new TypeError('"list" argument must be an Array of Buffers');
-					c.copy(o, s), s += c.length
+					c.copy(o, a), a += c.length
 				}
 				return o
-			}, i.byteLength = l, i.prototype._isBuffer = !0, i.isBuffer = function(e) {
+			}, i.byteLength = d, i.prototype._isBuffer = !0, i.isBuffer = function(e) {
 				return !(null == e || !e._isBuffer)
 			}, e.exports.alloc = function(e) {
 				var t = new i(e);
@@ -1174,290 +1542,7 @@
 			e.exports = Array.isArray || function(e) {
 				return "[object Array]" == r.call(e)
 			}
-		},
-		"./src/reddit/actions/util/pollActionForSuccess.ts": function(e, t, r) {
-			"use strict";
-
-			function n(e, t) {
-				let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 3e4,
-					n = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 3e5;
-				return async (o, i, s) => new Promise((a, u) => {
-					const c = Date.now() + n,
-						d = () => {
-							u(new Error("Timed out while polling for success"))
-						},
-						l = async () => {
-							if (Date.now() > c) return d();
-							const n = Date.now();
-							await e(o, i, s);
-							const f = await t(i);
-							if (f) a();
-							else if (!1 === f) u();
-							else {
-								Date.now() + Math.max(r - (Date.now() - n), 0) < c ? setTimeout(l, r) : d()
-							}
-						};
-					l()
-				})
-			}
-			r.d(t, "a", (function() {
-				return n
-			}))
-		},
-		"./src/reddit/components/Governance/TokenAmount/index.m.less": function(e, t, r) {
-			e.exports = {
-				container: "_1_TXyD8cel36iFhXWbXulM",
-				small: "_1MnpXAw_e6q3FjPvZfRITL",
-				token: "_3ugCwJ_lmINM5PwXoNm8XD"
-			}
-		},
-		"./src/reddit/components/Governance/TokenAmount/index.tsx": function(e, t, r) {
-			"use strict";
-			var n = r("./node_modules/react/index.js"),
-				o = r.n(n),
-				i = r("./node_modules/react-redux/es/index.js"),
-				s = r("./node_modules/reselect/es/index.js"),
-				a = r("./src/lib/classNames/index.ts"),
-				u = r("./src/lib/prettyPrintNumber/index.ts"),
-				c = r("./src/reddit/components/Governance/Token/index.tsx"),
-				d = r("./src/reddit/helpers/governance/tokens.ts"),
-				l = r("./src/reddit/selectors/crypto/points.ts"),
-				f = r("./src/reddit/components/Governance/TokenAmount/index.m.less"),
-				h = r.n(f);
-			const g = Object(s.c)({
-				pointsDetails: (e, t) => {
-					let {
-						subredditId: r
-					} = t;
-					return Object(l.b)(e, r)
-				}
-			});
-			t.a = Object(i.b)(g)((function(e) {
-				var t;
-				return o.a.createElement("div", {
-					className: Object(a.a)(h.a.container, e.className, {
-						[h.a.small]: e.small
-					})
-				}, o.a.createElement(c.a, {
-					className: Object(a.a)(h.a.token, {
-						[h.a.small]: e.small
-					}),
-					grey: e.grey,
-					subredditId: e.subredditId
-				}), Object(u.a)(Object(d.c)(e.amount, null === (t = e.pointsDetails) || void 0 === t ? void 0 : t.displayConversion)), e.additionalText || null)
-			}))
-		},
-		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.m.less": function(e, t, r) {
-			e.exports = {
-				overview: "_3vbYFraj9qRr9wXp4mcPUn",
-				description: "_1SZ6yxzmSfQKpV9QOquYaR",
-				grid: "jh8B-AY4740kpxlHw2YDW",
-				descriptionTitle: "iGBU2u1c8RwaU1r6hphWt",
-				amountSubtext: "_28HHYVa7-RIY6X_ZjCpCAb",
-				descriptionSubtitle: "_3nbUm4QjlldCfIOsi_zYWh",
-				amountCell: "ftLHNRLY2TdwcJtKSvldG",
-				amount: "_3sfSvH2g-yH3GQObK-yNFD"
-			}
-		},
-		"./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return u
-			}));
-			var n = r("./node_modules/react/index.js"),
-				o = r.n(n),
-				i = r("./src/reddit/components/Governance/TokenAmount/index.tsx"),
-				s = r("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.m.less"),
-				a = r.n(s);
-
-			function u(e) {
-				return o.a.createElement("div", {
-					className: a.a.overview
-				}, e.image, o.a.createElement("div", {
-					className: a.a.description
-				}, o.a.createElement("div", {
-					className: a.a.grid
-				}, o.a.createElement("div", {
-					className: a.a.descriptionTitle,
-					title: e.title
-				}, e.title), o.a.createElement("div", {
-					className: a.a.amountCell
-				}, o.a.createElement(i.a, {
-					amount: e.pointsAmount,
-					className: a.a.amount,
-					subredditId: e.subredditId
-				})), o.a.createElement("div", {
-					className: a.a.descriptionSubtitle
-				}, e.subtitle), o.a.createElement("div", {
-					className: a.a.amountSubtext
-				}, e.pointsAmountSubtext))))
-			}
-		},
-		"./src/reddit/components/Governance/TransactionModals/TransferTransactionModal/Approval.m.less": function(e, t, r) {
-			e.exports = {
-				userIcon: "_2fcZovMmvKOCI8C6QohBfS"
-			}
-		},
-		"./src/reddit/components/Governance/TransactionModals/TransferTransactionModal/index.tsx": function(e, t, r) {
-			"use strict";
-			r.r(t);
-			var n = r("./node_modules/@ethersproject/address/lib.esm/index.js"),
-				o = r("./node_modules/fbt/lib/FbtPublic.js"),
-				i = r("./node_modules/react/index.js"),
-				s = r.n(i),
-				a = r("./node_modules/react-redux/es/index.js"),
-				u = r("./node_modules/reselect/es/index.js"),
-				c = r("./src/higherOrderComponents/asModal/index.tsx"),
-				d = r("./src/reddit/actions/governance/index.ts"),
-				l = r("./src/reddit/actions/governance/publicWalletsFetched.ts"),
-				f = r("./src/reddit/actions/toaster.ts"),
-				h = r("./src/reddit/actions/util/pollActionForSuccess.ts"),
-				g = r("./src/reddit/endpoints/governance/crypto.ts"),
-				m = r("./src/reddit/helpers/crypto/transactions.ts"),
-				p = r("./src/reddit/helpers/crypto/vaultTransactions.ts"),
-				v = r("./src/reddit/helpers/governance/tokens.ts"),
-				b = r("./src/reddit/helpers/trackers/crypto.ts"),
-				y = r("./src/reddit/hooks/useTracking.ts"),
-				w = r("./src/reddit/models/Toast/index.ts"),
-				_ = r("./src/reddit/selectors/crypto/points.ts"),
-				E = r("./src/reddit/selectors/crypto/wallet.ts"),
-				j = r("./src/reddit/selectors/gov.ts"),
-				A = r("./src/reddit/selectors/user.ts"),
-				T = r("./src/reddit/components/Governance/TransactionModals/VaultTransactionModal/index.tsx"),
-				B = r("./src/reddit/components/UserIcon/index.tsx"),
-				x = r("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Details.tsx"),
-				P = r("./src/reddit/components/Governance/TransactionModals/ApprovalModal/Overview.tsx"),
-				C = r("./src/reddit/components/Governance/TransactionModals/TransferTransactionModal/Approval.m.less"),
-				I = r.n(C);
-			const {
-				fbt: R
-			} = r("./node_modules/fbt/lib/FbtPublic.js");
-
-			function M(e) {
-				const {
-					recipient: t
-				} = e, r = Object(a.e)(A.k);
-				return s.a.createElement(P.a, {
-					subredditId: e.subredditId,
-					image: s.a.createElement(B.a, {
-						className: I.a.userIcon,
-						isNSFW: !1,
-						userName: t
-					}),
-					title: R._("Transfer to {recipient}", [R._param("recipient", t === e.recipientAddress ? t : "u/" + t)], {
-						hk: "xSmPq"
-					}),
-					subtitle: r && r.displayText ? R._("From {currentUsername}", [R._param("currentUsername", "u/" + r.displayText)], {
-						hk: "onO9l"
-					}) : null,
-					pointsAmount: e.transferAmount
-				})
-			}
-			const N = e => s.a.createElement(x.b, {
-				values: [
-					[Object(x.c)(), e.recipientAddress],
-					[Object(x.a)(), e.transaction.contractAddress]
-				]
-			});
-			t.default = Object(c.a)((function(e) {
-				const {
-					onClose: t,
-					recipient: r,
-					subredditId: i,
-					transferAmount: c
-				} = e, B = Object(a.d)(), x = Object(y.a)(), P = Object(a.e)(e => Object(A.zb)(e, {
-					userName: r
-				})), {
-					currentPointsAmount: C,
-					pointsDetails: I,
-					recipientWallet: R
-				} = Object(a.e)(Object(u.c)({
-					currentPointsAmount: t => Object(j.e)(t, e),
-					pointsDetails: t => Object(_.b)(t, e.subredditId),
-					recipientWallet: e => P && Object(E.c)(e, {
-						subredditId: i,
-						userId: P.id
-					})
-				})), q = null == I ? void 0 : I.contractAddress;
-				if (!I || !q) throw new Error("No token contract address");
-				const S = function(e, t) {
-						const r = null == t ? void 0 : t.publicAddress;
-						if (r) return r;
-						try {
-							if (!!Object(n.a)(e)) return e
-						} catch {}
-						throw new Error("No recipient address found for points transfer")
-					}(r, R),
-					O = Object(m.e)(q, S, c),
-					L = Object(v.c)(c, I.displayConversion),
-					k = e => {
-						x(Object(b.c)("transfer", i, L, e))
-					},
-					U = I.name;
-				return s.a.createElement(T.a, {
-					approvalOverview: s.a.createElement(M, {
-						subredditId: i,
-						recipient: r,
-						recipientAddress: S,
-						transferAmount: c
-					}),
-					approvalDetails: s.a.createElement(N, {
-						transaction: O,
-						recipientAddress: S
-					}),
-					onClose: t,
-					onTransactionSuccess: async e => {
-						t(), B(function(e) {
-							return Object(f.f)(Object(f.e)(o.fbt._("Sending your {pointsName}...", [o.fbt._param("pointsName", e)], {
-								hk: "2LuiyB"
-							}), w.b.SuccessCommunity))
-						}(U)), async function(e, t, r, n, o, i) {
-							await Object(p.a)(t, r), await e(Object(h.a)(Object(d.h)({
-								subredditId: n
-							}), async e => {
-								const t = Object(j.e)(e(), {
-									subredditId: n
-								});
-								return o !== t || null
-							})), i && e(Object(l.a)({
-								subredditId: n,
-								userIds: [i]
-							}))
-						}(B, I, e.hash, i, C, null == P ? void 0 : P.id).then(() => {
-							x(Object(b.d)("transfer", i, L)), B(function(e) {
-								return Object(f.f)(Object(f.e)(o.fbt._("Your {pointsName} were sent!", [o.fbt._param("pointsName", e)], {
-									hk: "4yssJA"
-								}), w.b.SuccessCommunityGreen))
-							}(U))
-						}).catch(e => {
-							k(e.toString()), B(function(e) {
-								return Object(f.f)(Object(f.e)(o.fbt._("Failed to send your {pointsName}. Try again later", [o.fbt._param("pointsName", e)], {
-									hk: "yeMQh"
-								}), w.b.Error))
-							}(U))
-						})
-					},
-					onTransactionFailure: k,
-					subredditId: i,
-					transaction: O,
-					transactionIntent: Object(g.f)(i, r, S, c)
-				})
-			}))
-		},
-		"./src/reddit/hooks/useSafeState.ts": function(e, t, r) {
-			"use strict";
-			r.d(t, "a", (function() {
-				return o
-			}));
-			var n = r("./node_modules/react/index.js");
-
-			function o(e, t) {
-				const [r, o] = Object(n.useState)(e);
-				return [r, e => {
-					t.current && o(e)
-				}]
-			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Governance-TransactionModals-TransferTransactionModal.434710ff4fa6215c886f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~reddit-components-Governance-TransactionModals-ConvertToCoinsModal.987103f31c815cc07845.js.map

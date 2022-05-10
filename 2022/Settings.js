@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.92d7d2162da48394bfe0.js
-// Retrieved at 5/10/2022, 1:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.228556ecd6ee1e66abaf.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -424,9 +424,9 @@
 						}
 						case a.b.Crypto: {
 							if (o) {
-								return Object(i.c)(v, d) + " " + h
+								return Object(i.d)(v, d) + " " + h
 							}
-							const e = Number(Object(i.b)(v, d));
+							const e = Number(Object(i.c)(v, d));
 							return Object(l.c)() ? new Intl.NumberFormat(n, {
 								style: "currency",
 								currency: h,
@@ -2399,7 +2399,7 @@
 				} = e, b = Object(u.a)(), g = Object(o.e)(e => Object(p.b)(e, d)), x = e.dollarPrice && Object(l.b)(e.dollarPrice, {
 					locale: b,
 					forceDecimals: !0
-				}), C = e.tokenPrice && g && Object(c.a)(Object(m.b)(e.tokenPrice, null == g ? void 0 : g.displayConversion)) + (n ? "" : " " + g.name);
+				}), C = e.tokenPrice && g && Object(c.a)(Object(m.c)(e.tokenPrice, null == g ? void 0 : g.displayConversion)) + (n ? "" : " " + g.name);
 				if (!x && !C) return null;
 				const j = r ? s.Monthly : s.Once;
 				return a.a.createElement("span", {
@@ -9073,12 +9073,14 @@
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "b", (function() {
+			n.d(t, "c", (function() {
 				return a
-			})), n.d(t, "c", (function() {
+			})), n.d(t, "d", (function() {
 				return o
 			})), n.d(t, "a", (function() {
 				return i
+			})), n.d(t, "b", (function() {
+				return l
 			}));
 			var s = n("./node_modules/bignumber.js/bignumber.js"),
 				r = n("./src/lib/prettyPrintNumber/index.ts");
@@ -9097,6 +9099,12 @@
 				const n = new s.BigNumber(e),
 					r = new s.BigNumber(t || 1);
 				return n.multipliedBy(r).toFixed(0)
+			}
+
+			function l(e) {
+				const t = new s.BigNumber(e),
+					n = new s.BigNumber("1e18");
+				return t.dividedBy(n).toString()
 			}
 		},
 		"./src/reddit/helpers/location.ts": function(e, t, n) {
@@ -14117,4 +14125,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.92d7d2162da48394bfe0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.228556ecd6ee1e66abaf.js.map

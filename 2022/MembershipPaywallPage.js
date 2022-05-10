@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.7c84896cf0dae6e0b9c4.js
-// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MembershipPaywallPage.8fb9220f452d90634aff.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MembershipPaywallPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -415,9 +415,9 @@
 						}
 						case r.b.Crypto: {
 							if (a) {
-								return Object(o.c)(_, l) + " " + b
+								return Object(o.d)(_, l) + " " + b
 							}
-							const e = Number(Object(o.b)(_, l));
+							const e = Number(Object(o.c)(_, l));
 							return Object(c.c)() ? new Intl.NumberFormat(s, {
 								style: "currency",
 								currency: b,
@@ -617,7 +617,7 @@
 				} = e, h = Object(u.a)(), f = Object(a.e)(e => Object(p.b)(e, l)), y = e.dollarPrice && Object(c.b)(e.dollarPrice, {
 					locale: h,
 					forceDecimals: !0
-				}), w = e.tokenPrice && f && Object(d.a)(Object(m.b)(e.tokenPrice, null == f ? void 0 : f.displayConversion)) + (s ? "" : " " + f.name);
+				}), w = e.tokenPrice && f && Object(d.a)(Object(m.c)(e.tokenPrice, null == f ? void 0 : f.displayConversion)) + (s ? "" : " " + f.name);
 				if (!y && !w) return null;
 				const C = n ? i.Monthly : i.Once;
 				return r.a.createElement("span", {
@@ -1118,7 +1118,7 @@
 					const t = this.resolve(e);
 					return !1 !== this.resolved[t] && !!s.m[t]
 				},
-				importAsync: () => Promise.all([s.e(0), s.e("vendors~reddit-components-Governance-TransactionModals-SubscriptionModal"), s.e("reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"), s.e("reddit-components-Governance-TransactionModals-SubscriptionModal")]).then(s.bind(null, "./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.tsx")),
+				importAsync: () => Promise.all([s.e(0), s.e("reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67"), s.e("reddit-components-Governance-TransactionModals-SubscriptionModal")]).then(s.bind(null, "./src/reddit/components/Governance/TransactionModals/SubscriptionModal/index.tsx")),
 				requireAsync(e) {
 					const t = this.resolve(e);
 					return this.resolved[t] = !1, this.importAsync(e).then(e => (this.resolved[t] = !0, e))
@@ -3007,12 +3007,14 @@
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, s) {
 			"use strict";
-			s.d(t, "b", (function() {
+			s.d(t, "c", (function() {
 				return r
-			})), s.d(t, "c", (function() {
+			})), s.d(t, "d", (function() {
 				return a
 			})), s.d(t, "a", (function() {
 				return o
+			})), s.d(t, "b", (function() {
+				return c
 			}));
 			var i = s("./node_modules/bignumber.js/bignumber.js"),
 				n = s("./src/lib/prettyPrintNumber/index.ts");
@@ -3031,6 +3033,12 @@
 				const s = new i.BigNumber(e),
 					n = new i.BigNumber(t || 1);
 				return s.multipliedBy(n).toFixed(0)
+			}
+
+			function c(e) {
+				const t = new i.BigNumber(e),
+					s = new i.BigNumber("1e18");
+				return t.dividedBy(s).toString()
 			}
 		},
 		"./src/reddit/helpers/styles/mixins/loading.m.less": function(e, t, s) {
@@ -6541,4 +6549,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.7c84896cf0dae6e0b9c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MembershipPaywallPage.8fb9220f452d90634aff.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.9d867820b92e541e35e3.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.fc807303af63f208cd64.js
+// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal", "GoldPurchasePaymentActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -467,9 +467,9 @@
 						}
 						case s.b.Crypto: {
 							if (a) {
-								return Object(c.c)(h, u) + " " + b
+								return Object(c.d)(h, u) + " " + b
 							}
-							const e = Number(Object(c.b)(h, u));
+							const e = Number(Object(c.c)(h, u));
 							return Object(i.c)() ? new Intl.NumberFormat(r, {
 								style: "currency",
 								currency: b,
@@ -2181,12 +2181,14 @@
 		},
 		"./src/reddit/helpers/governance/tokens.ts": function(e, t, r) {
 			"use strict";
-			r.d(t, "b", (function() {
+			r.d(t, "c", (function() {
 				return s
-			})), r.d(t, "c", (function() {
+			})), r.d(t, "d", (function() {
 				return a
 			})), r.d(t, "a", (function() {
 				return c
+			})), r.d(t, "b", (function() {
+				return i
 			}));
 			var n = r("./node_modules/bignumber.js/bignumber.js"),
 				o = r("./src/lib/prettyPrintNumber/index.ts");
@@ -2205,6 +2207,12 @@
 				const r = new n.BigNumber(e),
 					o = new n.BigNumber(t || 1);
 				return r.multipliedBy(o).toFixed(0)
+			}
+
+			function i(e) {
+				const t = new n.BigNumber(e),
+					r = new n.BigNumber("1e18");
+				return t.dividedBy(r).toString()
 			}
 		},
 		"./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts": function(e, t, r) {
@@ -2663,4 +2671,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.9d867820b92e541e35e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.fc807303af63f208cd64.js.map
