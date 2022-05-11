@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.98874661365fb7b7cd2d.js
-// Retrieved at 5/9/2022, 4:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.b2b6387a405f747393b5.js
+// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -262,14 +262,17 @@
 		},
 		"./src/reddit/components/CommentsChat/MessageInput/index.m.less": function(e, t, r) {
 			e.exports = {
+				v2: "_1wX7EkMv0Avw75sEfz3Qyx",
 				FormWrapper: "mfKS0B5uqUX6PXcuSjTop",
 				formWrapper: "mfKS0B5uqUX6PXcuSjTop",
+				Form: "_76oPIY5CZD4GaQnn-06zO",
+				form: "_76oPIY5CZD4GaQnn-06zO",
+				RichTextEditor: "_2Zrjn5GTHiDwHULWCseamI",
+				richTextEditor: "_2Zrjn5GTHiDwHULWCseamI",
 				LivestreamingWrapper: "_1xV0i2uW_2xdNlBcbSEjpS",
 				livestreamingWrapper: "_1xV0i2uW_2xdNlBcbSEjpS",
 				inputLine: "_2rpcmnaHqKJnQeHI6-RZU8",
 				submitButton: "_1CLqZSQ6jz0CFFB9he7ZtW",
-				Form: "_76oPIY5CZD4GaQnn-06zO",
-				form: "_76oPIY5CZD4GaQnn-06zO",
 				Editing: "CA5bQ-3lhJvw_xfOAOs4K",
 				editing: "CA5bQ-3lhJvw_xfOAOs4K",
 				SmallChatUserIcon: "_1qnAOkiRLjELVt-lGR1N2O",
@@ -279,8 +282,6 @@
 				LivestreamingChatButton: "_1pWwFWQOxI4UHucSbgy7Yr",
 				livestreamingChatButton: "_1pWwFWQOxI4UHucSbgy7Yr",
 				leftPad: "_2nnsSXE8H28qTe0cmiHlbb",
-				RichTextEditor: "_2Zrjn5GTHiDwHULWCseamI",
-				richTextEditor: "_2Zrjn5GTHiDwHULWCseamI",
 				Livestreaming: "_37GIMhyXqgW50qXsV8kJtg",
 				livestreaming: "_37GIMhyXqgW50qXsV8kJtg",
 				LivestreamingFocusableContent: "_3ICFMFY3nzpQ8TcBKQA6Cq",
@@ -341,8 +342,8 @@
 				M = "chat_submission_from_rte",
 				U = p.a.form("Form", T.a),
 				G = p.a.wrapped(I.e, "ChatButton", T.a),
-				K = p.a.div("CloseIconWrap", T.a),
-				V = p.a.div("Reply", T.a),
+				V = p.a.div("CloseIconWrap", T.a),
+				K = p.a.div("Reply", T.a),
 				H = p.a.div("ReplyAuthor", T.a),
 				W = p.a.div("ReplyComment", T.a),
 				q = p.a.wrapped(v.a, "RichTextEditor", T.a),
@@ -488,56 +489,58 @@
 				}
 				render() {
 					const {
-						errorMsgs: e,
-						isEditing: t,
-						isLivestreaming: r,
-						sendEvent: n,
-						handleGiveAward: i,
-						liveStreamingChatCharacterLimit: o,
-						pending: c,
-						post: u,
-						postId: l,
-						replyComment: p
-					} = this.props, b = r ? s.fbt._("Send message ({characterLimit} character limit)", [s.fbt._param("characterLimit", o.toLocaleString())], {
+						isV2: e,
+						errorMsgs: t,
+						isEditing: r,
+						isLivestreaming: n,
+						sendEvent: i,
+						handleGiveAward: o,
+						liveStreamingChatCharacterLimit: c,
+						pending: u,
+						post: l,
+						postId: p,
+						replyComment: b
+					} = this.props, h = n ? s.fbt._("Send message ({characterLimit} character limit)", [s.fbt._param("characterLimit", c.toLocaleString())], {
 						hk: "RIcb6"
 					}) : s.fbt._("Send a message (use the Enter key)", null, {
 						hk: "3yojgj"
-					}), h = u.isGildable && r && !t, f = r;
+					}), f = l.isGildable && n && !r, g = n;
 					return d.a.createElement("div", {
 						className: Object(m.a)(T.a.FormWrapper, {
-							[T.a.LivestreamingWrapper]: r
+							[T.a.LivestreamingWrapper]: n,
+							[T.a.v2]: e
 						})
-					}, !t && p && d.a.createElement(V, {
+					}, !r && b && d.a.createElement(K, {
 						className: Object(m.a)({
-							[T.a.isLivestreaming]: r
+							[T.a.isLivestreaming]: n
 						})
 					}, d.a.createElement(W, {
 						onClick: this.handleCloseReply
-					}, d.a.createElement(H, null, s.fbt._("Replying to u/ {username}:", [s.fbt._param("username", p.author)], {
+					}, d.a.createElement(H, null, s.fbt._("Replying to u/ {username}:", [s.fbt._param("username", b.author)], {
 						hk: "2YZre5"
 					})), d.a.createElement(_.a, {
 						className: T.a.RichTextJson,
-						key: `rich-text-${p.id}`,
-						content: Object(j.a)(p),
+						key: `rich-text-${b.id}`,
+						content: Object(j.a)(b),
 						rtJsonElementProps: B
-					}), d.a.createElement(K, null, d.a.createElement(A.a, null)))), d.a.createElement("div", {
+					}), d.a.createElement(V, null, d.a.createElement(A.a, null)))), d.a.createElement("div", {
 						className: T.a.inputLine
 					}, d.a.createElement(U, {
 						className: Object(m.a)({
-							[T.a.Editing]: t
+							[T.a.Editing]: r
 						}),
 						onSubmit: this.handleSubmit,
 						onReset: this.handleCancel
-					}, d.a.createElement(Z, {
-						isEditing: !!t,
-						isLivestreaming: !!r
+					}, !e && d.a.createElement(z, {
+						isEditing: !!r,
+						isLivestreaming: !!n
 					}), d.a.createElement(q, {
 						className: Object(m.a)(T.a.RichTextEditor, {
-							[T.a.Livestreaming]: r && !t,
-							[T.a.Editing]: !r && t
+							[T.a.Livestreaming]: n && !r,
+							[T.a.Editing]: !n && r
 						}),
 						focusableContentRTEClassName: Object(m.a)({
-							[T.a.LivestreamingFocusableContent]: r && !t
+							[T.a.LivestreamingFocusableContent]: n && !r
 						}),
 						dataTestId: M,
 						editorType: w.a.Comment,
@@ -548,40 +551,40 @@
 						onChange: this.handleChange,
 						onFocus: this.handleFocus,
 						onSubmit: this.onSubmit,
-						placeholderText: b,
-						readOnly: c,
-						showSubmitButton: f && !this.state.showError,
+						placeholderText: h,
+						readOnly: u,
+						showSubmitButton: g && !this.state.showError,
 						submitButtonClassName: Object(m.a)(T.a.insetSubmitButton, T.a.submitButton),
 						submitOnEnter: !0,
 						trackToolbarClick: a.a,
 						hideToolbar: !0,
 						noBorder: !0,
 						isChatPost: !0
-					}), t && d.a.createElement(G, {
+					}), r && d.a.createElement(G, {
 						className: Object(m.a)(T.a.ChatButton, {
-							[T.a.LivestreamingResetButton]: r
+							[T.a.LivestreamingResetButton]: n
 						}),
 						type: "reset"
-					}, d.a.createElement(A.a, null)), !f && d.a.createElement(G, {
+					}, d.a.createElement(A.a, null)), !g && d.a.createElement(G, {
 						className: Object(m.a)(T.a.ChatButton, {
-							[T.a.LivestreamingChatButton]: r && !t,
-							[T.a.LivestreamingResetButton]: r && t
+							[T.a.LivestreamingChatButton]: n && !r,
+							[T.a.LivestreamingResetButton]: n && r
 						}),
 						type: "submit",
 						disabled: !this.canSubmit(),
 						"aria-label": s.fbt._("send a message", null, {
 							hk: "4bL65Y"
 						})
-					}, d.a.createElement(k.a, null))), h && d.a.createElement(F.a, {
-						showSubmitInsideTextArea: f,
-						isLivestreaming: r,
-						sendEvent: n,
-						postId: l,
-						handleGiveAward: i
-					})), this.state.showError && Object(O.c)(e.length ? e : [`Input text must be less than ${o} characters`]))
+					}, d.a.createElement(k.a, null))), f && d.a.createElement(F.a, {
+						showSubmitInsideTextArea: g,
+						isLivestreaming: n,
+						sendEvent: i,
+						postId: p,
+						handleGiveAward: o
+					})), this.state.showError && Object(O.c)(t.length ? t : [`Input text must be less than ${c} characters`]))
 				}
 			}
-			const Z = e => {
+			const z = e => {
 				let {
 					isEditing: t,
 					isLivestreaming: r
@@ -702,7 +705,7 @@
 			})), r.d(t, "g", (function() {
 				return G
 			})), r.d(t, "h", (function() {
-				return K
+				return V
 			}));
 			var s, n = r("./src/reddit/constants/chat.ts"),
 				a = r("./src/reddit/selectors/PublicAccessNetwork/streams.ts"),
@@ -1006,7 +1009,7 @@
 					...o(r, t),
 					...d(r)
 				}),
-				K = (e, t) => r => ({
+				V = (e, t) => r => ({
 					source: "rpanstudio_modal",
 					action: "click",
 					noun: e,
@@ -1086,9 +1089,9 @@
 			})), r.d(t, "b", (function() {
 				return G
 			})), r.d(t, "e", (function() {
-				return K
-			})), r.d(t, "g", (function() {
 				return V
+			})), r.d(t, "g", (function() {
+				return K
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var s = r("./node_modules/reselect/es/index.js"),
@@ -1292,8 +1295,8 @@
 					return n === i.a.IS_LIVE || n === i.a.DISCONNECTED ? M.LIVE : n === i.a.ENDED && s.stream.vod_accessible ? M.VOD : M.UNAVAILABLE
 				}),
 				G = Object(s.a)(L, U, m.b, c.b, c.o, (e, t, r, s, n) => r ? s : e ? t === M.LIVE || t === M.VOD ? e.stream.hls_url : n : void 0),
-				K = Object(s.a)(L, U, R, (e, t, r) => e ? t === M.LIVE ? e.broadcast_time : t === M.VOD && r < e.broadcast_time ? r : 0 : 0),
-				V = (e, t) => {
+				V = Object(s.a)(L, U, R, (e, t, r) => e ? t === M.LIVE ? e.broadcast_time : t === M.VOD && r < e.broadcast_time ? r : 0 : 0),
+				K = (e, t) => {
 					const r = p(e);
 					return !!r && r[t] && r[t].chat_disabled
 				}
@@ -1360,9 +1363,9 @@
 			})), r.d(t, "b", (function() {
 				return G
 			})), r.d(t, "w", (function() {
-				return K
-			})), r.d(t, "s", (function() {
 				return V
+			})), r.d(t, "s", (function() {
+				return K
 			})), r.d(t, "t", (function() {
 				return H
 			})), r.d(t, "g", (function() {
@@ -1577,11 +1580,11 @@
 					if (!r) return;
 					return e.economics.emotes[r]
 				},
-				K = (e, t) => {
+				V = (e, t) => {
 					const r = t && e.economics.gifs[t];
 					return !!r && r.hasGifProduct
 				},
-				V = (e, t, r) => {
+				K = (e, t, r) => {
 					if (Object(h.r)(e, {
 							subredditId: t
 						})) return !0;
@@ -1605,7 +1608,7 @@
 					});
 					if (n && Object(a.b)(n)) return !0;
 					const i = s.d.spGiphy(e),
-						o = K(e, t);
+						o = V(e, t);
 					return !(!i || !o) || i && o
 				},
 				W = (e, t, r) => {
@@ -1618,4 +1621,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.98874661365fb7b7cd2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.b2b6387a405f747393b5.js.map

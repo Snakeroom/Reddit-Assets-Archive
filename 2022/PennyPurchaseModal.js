@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.81ff1a5cbd308131d760.js
-// Retrieved at 5/10/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PennyPurchaseModal.0c34e46c97d40ade6fe1.js
+// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PennyPurchaseModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, a) {
@@ -2014,7 +2014,7 @@
 			}));
 			var r = a("./src/reddit/constants/experiments.ts"),
 				n = a("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(n.a)(r.Tc)
+			const s = Object(n.a)(r.Uc)
 		},
 		"./src/redditGQL/operations/CancelEconRecurringPayment.json": function(e) {
 			e.exports = JSON.parse('{"id":"ac36f7489268"}')
@@ -2051,4 +2051,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.81ff1a5cbd308131d760.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PennyPurchaseModal.0c34e46c97d40ade6fe1.js.map

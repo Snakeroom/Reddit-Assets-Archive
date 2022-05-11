@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostDraft.646be1d3c953f35e799e.js
-// Retrieved at 5/10/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostDraft.b21c9a0a6f7dade540dd.js
+// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostDraft"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2857,7 +2857,7 @@
 					}, s[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.wc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.xc.GreyRereddit ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3085,12 +3085,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case b.rf.SmIcon:
+						case b.sf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case b.rf.SmIconHc:
+						case b.sf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -4722,11 +4722,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(o.f)(e),
-					experimentName: s.Zb
+					experimentName: s.ac
 				}), i.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(o.f)(e),
-					experimentName: s.Yb
+					experimentName: s.Zb
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -4754,12 +4754,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.lf
+						experimentName: s.mf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.rf.SmIcon || t === s.rf.SmIconHc
+					return t === s.sf.SmIcon || t === s.sf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -4785,4 +4785,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.646be1d3c953f35e799e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostDraft.b21c9a0a6f7dade540dd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.8357937b5ee83c4f47e2.js
-// Retrieved at 5/10/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.1120509af8f1f6fa9e5f.js
+// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -2886,8 +2886,8 @@
 					showContributorRequestFlow: e => Object(ne.t)(e, tt.e.Post),
 					showCreatePollButton: e => (e => Object(rt.c)(e, {
 						experimentEligibilitySelector: rt.a,
-						experimentName: Ue.O
-					}) === Ue.V.Treatment)(e) && !Object(Qe.g)(),
+						experimentName: Ue.P
+					}) === Ue.W.Treatment)(e) && !Object(Qe.g)(),
 					shouldShowFlairPreview: (e, t) => {
 						let {
 							listingName: n
@@ -3090,7 +3090,7 @@
 						onClick: b ? x : void 0,
 						headerButton: i.a.createElement("div", {
 							className: pt.a.headerButtonsContainer
-						}, !A && v && g && c !== Ue.ue.NewModule && i.a.createElement(a.a, {
+						}, !A && v && g && c !== Ue.ve.NewModule && i.a.createElement(a.a, {
 							className: pt.a.ModToolsLink,
 							to: g.posts ? `${v.url}about/modqueue` : `${v.url}about/`,
 							onClick: this.onClickModTools
@@ -5153,29 +5153,29 @@
 				i = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				o = n("./src/reddit/selectors/experiments/index.ts");
 			const a = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Jb,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.Y.Enabled),
-				d = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Kb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.Z.Enabled),
-				c = Object(r.a)(e => Object(i.c)(e, {
+				d = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Lb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.ab.Enabled),
-				l = Object(r.a)(e => Object(i.c)(e, {
+				c = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Mb,
 					experimentEligibilitySelector: o.e
 				}), e => e === s.bb.Enabled),
-				u = Object(r.a)(e => Object(i.c)(e, {
-					experimentName: s.Ob,
-					experimentEligibilitySelector: o.e
-				}), e => e === s.db.Enabled),
-				m = Object(r.a)(e => Object(i.c)(e, {
+				l = Object(r.a)(e => Object(i.c)(e, {
 					experimentName: s.Nb,
 					experimentEligibilitySelector: o.e
-				}), e => e === s.cb.Enabled)
+				}), e => e === s.cb.Enabled),
+				u = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.Pb,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.eb.Enabled),
+				m = Object(r.a)(e => Object(i.c)(e, {
+					experimentName: s.Ob,
+					experimentEligibilitySelector: o.e
+				}), e => e === s.db.Enabled)
 		},
 		"./src/reddit/selectors/gold/powerups/flairs.ts": function(e, t, n) {
 			"use strict";
@@ -5307,4 +5307,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.8357937b5ee83c4f47e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.1120509af8f1f6fa9e5f.js.map

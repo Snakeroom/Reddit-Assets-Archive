@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.2346c834d46c962d98be.js
-// Retrieved at 5/10/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.afe332bfd4f1ea0f1a2f.js
+// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/scroll/index.ts": function(t, e, n) {
@@ -76,9 +76,9 @@
 			})), n.d(e, "i", (function() {
 				return Jt
 			})), n.d(e, "l", (function() {
-				return Qt
-			})), n.d(e, "t", (function() {
 				return Xt
+			})), n.d(e, "t", (function() {
+				return Qt
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -221,8 +221,8 @@
 				G = n("./src/reddit/helpers/sessionStorage/index.ts"),
 				q = n("./src/reddit/helpers/trackers/commentsPage.ts"),
 				J = n("./src/reddit/models/Comment/index.ts"),
-				Q = n("./src/reddit/models/PostDraft/index.ts"),
-				X = n("./src/reddit/models/RichTextJson/index.ts"),
+				X = n("./src/reddit/models/PostDraft/index.ts"),
+				Q = n("./src/reddit/models/RichTextJson/index.ts"),
 				z = n("./src/reddit/models/RichTextJson/nodeMakers.ts"),
 				Y = n("./src/reddit/models/Toast/index.ts"),
 				$ = n("./src/reddit/selectors/comments.ts"),
@@ -232,8 +232,8 @@
 				nt = n("./node_modules/reselect/es/index.js");
 			const ot = Object(nt.a)(t => Object(et.c)(t, {
 				experimentEligibilitySelector: et.a,
-				experimentName: tt.Ab
-			}), t => t === tt.qd);
+				experimentName: tt.Bb
+			}), t => t === tt.rd);
 			var rt = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				it = n("./src/reddit/selectors/platform.ts"),
 				st = n("./src/reddit/selectors/posts.ts"),
@@ -496,10 +496,10 @@
 						apiContext: c
 					} = s;
 					const a = t === v.i.RICH_TEXT;
-					if (!e || "object" == typeof e && Object(X.G)(e)) r(Nt({
+					if (!e || "object" == typeof e && Object(Q.G)(e)) r(Nt({
 						editorMode: t,
 						draftKey: n,
-						content: a ? X.i : ""
+						content: a ? Q.i : ""
 					})), r(Object(p.c)(t));
 					else {
 						r(Object(p.b)(n));
@@ -527,7 +527,7 @@
 					} = t;
 					return async (t, r) => {
 						const i = r(),
-							c = Object(s.a)(Q.c.replyToComment, n);
+							c = Object(s.a)(X.c.replyToComment, n);
 						if (!Object(ct.P)(r()) && !Object(rt.a)(i)) return t(Object(d.j)()), void t(Object(l.k)({
 							actionSource: l.a.Reply,
 							redirectUrl: Object($.m)(r(), {
@@ -560,12 +560,12 @@
 						let g;
 						if (g = O ? {
 								commentMode: f,
-								draftType: Q.c.replyToComment,
+								draftType: X.c.replyToComment,
 								rtJson: b,
 								text: `${p}\n`
 							} : h || {
 								commentMode: f,
-								draftType: Q.c.replyToComment,
+								draftType: X.c.replyToComment,
 								rtJson: b,
 								text: ""
 							}, Object(ct.R)(i)) {
@@ -623,7 +623,7 @@
 								text: i,
 								commentMode: n,
 								rteState: null,
-								draftType: Q.c.edit,
+								draftType: X.c.edit,
 								hasFocus: !0
 							}
 						})))
@@ -732,7 +732,7 @@
 						id: t,
 						error: a.error
 					}))
-				}, Qt = t => async (e, n, o) => {
+				}, Xt = t => async (e, n, o) => {
 					let {
 						apiContext: r
 					} = o;
@@ -746,7 +746,7 @@
 							sendReplies: !i
 						}
 					}))
-				}, Xt = (t, e) => async (n, r, i) => {
+				}, Qt = (t, e) => async (n, r, i) => {
 					let {
 						gqlContext: s
 					} = i;
@@ -995,7 +995,7 @@
 		"./src/reddit/components/CommentSort/index.tsx": function(t, e, n) {
 			"use strict";
 			n.d(e, "a", (function() {
-				return X
+				return Q
 			}));
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -1179,8 +1179,8 @@
 					})))
 				}
 			}
-			var Q = J;
-			const X = "CommentSort--SortPicker",
+			var X = J;
+			const Q = "CommentSort--SortPicker",
 				z = "CommentSort--HighlightPicker",
 				Y = "CommentSort--Tooltip",
 				$ = Object(I.a)(S.a),
@@ -1194,7 +1194,7 @@
 						})
 					},
 					contestModeModalIsOpen: Object(M.b)("CommentSort--ContestMode--Modal"),
-					dropdownIsOpen: Object(K.b)(X),
+					dropdownIsOpen: Object(K.b)(Q),
 					highlightIsOpen: Object(K.b)(z),
 					hasModeratorPostPermissions: (t, e) => {
 						let {
@@ -1231,7 +1231,7 @@
 							sort: e
 						})),
 						onOpenDropdown: () => t(Object(l.h)({
-							tooltipId: X
+							tooltipId: Q
 						})),
 						onOpenHighlightDropdown: e => {
 							t(Object(l.h)({
@@ -1314,7 +1314,7 @@
 						className: Object(a.a)(V.a.SortPicker, V.a.Row),
 						textClassName: V.a.SortOptionDropdownText,
 						displayText: `${o.fbt._("Sort by",null,{hk:"E6T9r"})}: ${U}`,
-						id: X,
+						id: Q,
 						noHover: !0,
 						skipRoleAttr: !0,
 						onClick: this.onOpenDropdownClick
@@ -1323,7 +1323,7 @@
 						onClick: this.onOpenDropdownClick
 					})), i.a.createElement($, {
 						isOpen: s,
-						tooltipId: X
+						tooltipId: Q
 					}, [d.t.CONFIDENCE, d.t.TOP, d.t.NEW, d.t.CONTROVERSIAL, d.t.OLD, d.t.QA].map(t => {
 						const e = n || O,
 							o = Object(E.b)(e),
@@ -1378,7 +1378,7 @@
 						on: v
 					}))), g && i.a.createElement("div", {
 						className: V.a.containerRow
-					}, i.a.createElement(Q, {
+					}, i.a.createElement(X, {
 						changeHighlightSort: t,
 						highlightIsOpen: u,
 						id: z,
@@ -1581,8 +1581,8 @@
 					G = W === h.a.CommentReply,
 					q = W === h.a.SubredditRecommendation,
 					J = W === h.a.LifecyclePostSuggestions,
-					Q = null === (e = null == N ? void 0 : N.post) || void 0 === e ? void 0 : e.permalink;
-				let X = null === (n = null == N ? void 0 : N.comment) || void 0 === n ? void 0 : n.id,
+					X = null === (e = null == N ? void 0 : N.post) || void 0 === e ? void 0 : e.permalink;
+				let Q = null === (n = null == N ? void 0 : N.comment) || void 0 === n ? void 0 : n.id,
 					z = (null === (o = null == N ? void 0 : N.post) || void 0 === o ? void 0 : o.id) || (null === (x = null === (g = null == N ? void 0 : N.comment) || void 0 === g ? void 0 : g.postInfo) || void 0 === x ? void 0 : x.id);
 				const Y = null === (j = null == N ? void 0 : N.subreddit) || void 0 === j ? void 0 : j.id,
 					$ = null === (T = null === (S = null == N ? void 0 : N.awarding) || void 0 === S ? void 0 : S.award) || void 0 === T ? void 0 : T.id,
@@ -1599,13 +1599,13 @@
 						const [r, i, s, c] = o.slice(1);
 						return i && "r" === r && (e.subredditName = i), s && (e.postId = `${u.b}${s}`), c && (e.commentId = `${u.a}${c}`), e
 					})(R);
-					z = t.postId, X = t.commentId
-				} else W !== h.a.PostReply && W !== h.a.LifecyclePostSuggestions || (X = L);
+					z = t.postId, Q = t.commentId
+				} else W !== h.a.PostReply && W !== h.a.LifecyclePostSuggestions || (Q = L);
 				const tt = t => {
-					if (z && X) {
-						const t = Object(c.a)(z, X, Object(b.c)(R)),
+					if (z && Q) {
+						const t = Object(c.a)(z, Q, Object(b.c)(R)),
 							e = {
-								parentCommentId: X,
+								parentCommentId: Q,
 								commentsPageKey: t
 							};
 						v(Object(a.g)(e)), U({
@@ -1622,7 +1622,7 @@
 								e = J;
 							if (!F && !K && !H && !V && !t && !e && (!w || !D) || B) return null;
 							const n = t => {
-									Q || (V || F) && z ? ((V || F) && z && v(Object(a.h)({
+									X || (V || F) && z ? ((V || F) && z && v(Object(a.h)({
 										postId: z
 									})), U({
 										position: f.d.SECOND,
@@ -2782,11 +2782,11 @@
 				l = Object(o.a)(d, t => !!t),
 				u = t => {
 					const e = d(t);
-					return !!e && a(t, e) === r.W.SkipOnboarding
+					return !!e && a(t, e) === r.X.SkipOnboarding
 				},
 				m = t => {
 					const e = d(t);
-					return !!e && a(t, e) === r.W.RegOnboarding
+					return !!e && a(t, e) === r.X.RegOnboarding
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(t) {
@@ -2800,4 +2800,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.2346c834d46c962d98be.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.afe332bfd4f1ea0f1a2f.js.map

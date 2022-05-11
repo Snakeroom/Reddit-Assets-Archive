@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.4a8330d72af0972806db.js
-// Retrieved at 5/10/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.4ec8fa6fd03e253a36c1.js
+// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, _, e) {
@@ -158,9 +158,9 @@
 			})), e.d(_, "i", (function() {
 				return k
 			})), e.d(_, "q", (function() {
-				return q
-			})), e.d(_, "d", (function() {
 				return z
+			})), e.d(_, "d", (function() {
+				return q
 			})), e.d(_, "l", (function() {
 				return T
 			})), e.d(_, "t", (function() {
@@ -207,8 +207,8 @@
 				w = n.a.label("ModalInputLabel", u.a),
 				v = n.a.footer("ModalFooter", u.a),
 				k = n.a.header("ModalHeader", u.a),
-				q = n.a.div("ModalTitle", u.a),
-				z = n.a.div("ModalAnnotation", u.a),
+				z = n.a.div("ModalTitle", u.a),
+				q = n.a.div("ModalAnnotation", u.a),
 				T = n.a.div("ModalMain", u.a),
 				C = n.a.textarea("TextArea", u.a),
 				F = n.a.wrapped(a.l, "WarningButton", u.a),
@@ -245,10 +245,10 @@
 				m = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = e("./src/reddit/selectors/experiments/utils.ts");
 			const b = Object(u.a)(t => Object(m.c)(t, {
-					experimentName: l.kf,
+					experimentName: l.lf,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				x = Object(u.a)(b, t => t === l.qf.Enabled);
+				x = Object(u.a)(b, t => t === l.rf.Enabled);
 			var f = e("./src/reddit/selectors/posts.ts"),
 				y = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				h = e("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1326,4 +1326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.4a8330d72af0972806db.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.4ec8fa6fd03e253a36c1.js.map

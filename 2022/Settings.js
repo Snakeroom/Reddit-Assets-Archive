@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.0bbf56ee0b8d9676b878.js
-// Retrieved at 5/10/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.761dfd230460450b7e6a.js
+// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -10360,8 +10360,8 @@
 				re = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const ae = Object(c.a)(e => Object(re.c)(e, {
 				experimentEligibilitySelector: I.P,
-				experimentName: se.L
-			}), e => e === se.U.Enabled);
+				experimentName: se.M
+			}), e => e === se.V.Enabled);
 			var oe = n("./src/reddit/selectors/meta.ts"),
 				ie = n("./src/reddit/components/Settings/AccountPrefsSection/index.m.less"),
 				ce = n.n(ie);
@@ -12185,8 +12185,8 @@
 				}), e => e === se.c.Enabled),
 				dr = Object(c.a)(e => Object(re.c)(e, {
 					experimentEligibilitySelector: I.P,
-					experimentName: se.K
-				}), e => e === se.S.Enabled);
+					experimentName: se.L
+				}), e => e === se.T.Enabled);
 			var mr = n("./src/lib/hooks/usePrevious.ts"),
 				ur = n("./src/telemetry/models/Event.ts");
 			const pr = Se.a.span("SubheaderLink", an.a),
@@ -13391,9 +13391,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(re.c)(e, {
-							experimentName: se.Gc,
+							experimentName: se.Hc,
 							experimentEligibilitySelector: re.a
-						}) === se.qd
+						}) === se.rd
 					}
 				}),
 				po = Object(ge.u)(),
@@ -13929,7 +13929,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
 				experimentEligibilitySelector: () => Object(a.O)(e)
-			}) === s.qd
+			}) === s.rd
 		},
 		"./src/reddit/selectors/experiments/econ/avatarNfts.ts": function(e, t, n) {
 			"use strict";
@@ -13946,8 +13946,8 @@
 				}) === s.y.Enabled,
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Sc
-				}) === s.qd
+					experimentName: s.Tc
+				}) === s.rd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14117,4 +14117,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.0bbf56ee0b8d9676b878.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.761dfd230460450b7e6a.js.map

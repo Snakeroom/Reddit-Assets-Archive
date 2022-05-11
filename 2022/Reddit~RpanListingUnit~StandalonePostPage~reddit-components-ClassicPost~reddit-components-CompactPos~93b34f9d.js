@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.b0f493f241c6bb562761.js
-// Retrieved at 5/10/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.587f94b9babf7828ee4e.js
+// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -281,14 +281,14 @@
 						} = e, r = 1 !== n;
 						t ? B(!0) : r && B(!1)
 					})
-				}, []), q = Object(r.useRef)({
+				}, []), U = Object(r.useRef)({
 					rootMargin: "2000px 0px 2000px 0px"
 				});
-				Object(c.a)(E, H, q.current);
-				const U = Object(s.a)(t);
+				Object(c.a)(E, H, U.current);
+				const q = Object(s.a)(t);
 				Object(r.useEffect)(() => {
-					if (void 0 !== U && U !== t) {
-						const e = t - U;
+					if (void 0 !== q && q !== t) {
+						const e = t - q;
 						D.current ? S.current(e) : R.current += e
 					}
 					return () => {
@@ -1433,7 +1433,7 @@
 			})), n.d(t, "clickNextFiltersEvent", (function() {
 				return H
 			})), n.d(t, "clickPreviousFiltersEvent", (function() {
-				return q
+				return U
 			}));
 			var r = n("./src/reddit/models/Gold/Award.ts"),
 				o = n("./src/reddit/selectors/telemetry.ts"),
@@ -1638,7 +1638,7 @@
 					action: "click",
 					noun: "next_filters"
 				}),
-				q = () => e => ({
+				U = () => e => ({
 					...u(e),
 					source: "give_gold",
 					action: "click",
@@ -2345,14 +2345,14 @@
 						}) || !!Object(s.m)(e, {
 							postId: t
 						}) || Object(a.M)(e))(e, t),
-						experimentName: r.P
-					}) === r.qd
+						experimentName: r.Q
+					}) === r.rd
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a.P,
-						experimentName: r.He
-					}) === r.qd
+						experimentName: r.Ie
+					}) === r.rd
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -2483,4 +2483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.b0f493f241c6bb562761.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.587f94b9babf7828ee4e.js.map
