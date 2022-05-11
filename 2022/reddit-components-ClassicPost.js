@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e8c4f7cd5c8f9d7f3cfe.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.40b1af17022a49e8f622.js
+// Retrieved at 5/11/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1802,7 +1802,7 @@
 					Fe = Object(J.a)(le),
 					Le = Object(Z.a)(le),
 					Be = ue && Q.a,
-					Re = Object(P.d)(xe),
+					Re = Object(P.a)(xe),
 					We = Object(N.c)(xe),
 					De = !!xe.media && xe.media.type === U.o.RTJSON,
 					Ve = Ce && De,
@@ -2391,18 +2391,9 @@
 			"use strict";
 			n.d(t, "a", (function() {
 				return o
-			})), n.d(t, "b", (function() {
-				return r
-			})), n.d(t, "c", (function() {
-				return a
-			})), n.d(t, "d", (function() {
-				return i
 			}));
 			var s = n("./src/reddit/models/ModQueueTrigger/index.ts");
-			const o = e => !e.isApproved && !!Object(s.b)(e, s.a.AUTOMOD),
-				r = e => !e.isApproved && !!Object(s.b)(e, s.a.CROWD_CONTROL),
-				a = e => !e.isApproved && !!Object(s.b)(e, s.a.HATEFUL_CONTENT),
-				i = e => o(e) || r(e) || a(e)
+			const o = e => (e => !e.isApproved && !!Object(s.b)(e, s.a.AUTOMOD))(e) || (e => !e.isApproved && !!Object(s.b)(e, s.a.BAN_EVASION))(e) || (e => !e.isApproved && !!Object(s.b)(e, s.a.CROWD_CONTROL))(e) || (e => !e.isApproved && !!Object(s.b)(e, s.a.HATEFUL_CONTENT))(e)
 		},
 		"./src/reddit/components/ModModeFilteredReason/index.tsx": function(e, t, n) {
 			"use strict";
@@ -3254,7 +3245,7 @@
 					return o
 				})),
 				function(e) {
-					e.USER_REPORTS = "USER_REPORTS", e.AUTOMOD = "AUTOMOD", e.MOD = "MOD", e.ADMIN = "ADMIN", e.SHADOWBANNED_SUBMITTER = "SHADOWBANNED_SUBMITTER", e.HATEFUL_CONTENT = "HATEFUL_CONTENT", e.CROWD_CONTROL = "CROWD_CONTROL"
+					e.USER_REPORTS = "USER_REPORTS", e.AUTOMOD = "AUTOMOD", e.MOD = "MOD", e.ADMIN = "ADMIN", e.SHADOWBANNED_SUBMITTER = "SHADOWBANNED_SUBMITTER", e.HATEFUL_CONTENT = "HATEFUL_CONTENT", e.CROWD_CONTROL = "CROWD_CONTROL", e.BAN_EVASION = "BAN_EVASION"
 				}(s || (s = {}))
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, n) {
@@ -3276,4 +3267,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e8c4f7cd5c8f9d7f3cfe.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.40b1af17022a49e8f622.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueuePages.be0f69fe40b4922d7244.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueuePages.3a04431c2ea107c82e6c.js
+// Retrieved at 5/11/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueuePages"], {
 		"./node_modules/lodash/includes.js": function(e, t, s) {
@@ -1300,7 +1300,7 @@
 					subreddit: C,
 					showBulkActionCheckbox: j,
 					toggleCheckbox: k
-				} = e, v = Object(x.d)(s);
+				} = e, v = Object(x.a)(s);
 				return r.a.createElement(m.a, {
 					className: t,
 					clickTrackingId: s.id,
@@ -2738,7 +2738,7 @@
 						subreddit: l,
 						showBulkActionCheckbox: m,
 						toggleCheckbox: u
-					} = e, p = Object(B.d)(s), b = Object(h.c)(s);
+					} = e, p = Object(B.a)(s), b = Object(h.c)(s);
 					return d.a.createElement(R.a, {
 						className: Object(f.a)(t, G.a.Component, G.a.UnthreadedCommentContainer, {
 							[G.a.isBanned]: !!s.bannedBy,
@@ -2804,7 +2804,7 @@
 						subreddit: m,
 						showBulkActionCheckbox: u,
 						toggleCheckbox: p
-					} = e, b = Object(B.d)(s);
+					} = e, b = Object(B.a)(s);
 					return d.a.createElement(R.a, {
 						className: t,
 						clickTrackingId: s.id,
@@ -5757,4 +5757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.be0f69fe40b4922d7244.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueuePages.3a04431c2ea107c82e6c.js.map

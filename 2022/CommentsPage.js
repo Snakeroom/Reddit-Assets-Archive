@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.38b139dad827ed22b7cf.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.d3fae4df5f86bcbe045b.js
+// Retrieved at 5/11/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2551,7 +2551,7 @@
 						trackCommentClick: ae,
 						userIconSmall: de,
 						userIsBanned: ce
-					} = e, le = m.isDeleted, me = !N && !le && !!f && f.length > 0, pe = Object(l.a)(d.c.edit, m.id), ue = Object(l.a)(d.c.replyToComment, m.id), be = Object(L.a)(U), he = Object(Ze.d)(m), xe = Object($.c)(m), ge = m.authorIsContractor && ie === pt.g.EmployeesOnly, fe = m.isLocked, Ce = be && W, ve = !N && !le && (F || _), Oe = _ && !m.unrepliableReason, Ee = !!x && Object(ut.e)(x) === m.author, [ye, je] = Object(o.useState)(null), [ke, Pe] = Object(o.useState)(null), Ie = Object(o.useRef)(null), _e = Object(M.f)(m) || Object(M.g)(m), we = _e ? Wt : ct.a, Se = Object(M.f)(m) ? Ht : Bt;
+					} = e, le = m.isDeleted, me = !N && !le && !!f && f.length > 0, pe = Object(l.a)(d.c.edit, m.id), ue = Object(l.a)(d.c.replyToComment, m.id), be = Object(L.a)(U), he = Object(Ze.a)(m), xe = Object($.c)(m), ge = m.authorIsContractor && ie === pt.g.EmployeesOnly, fe = m.isLocked, Ce = be && W, ve = !N && !le && (F || _), Oe = _ && !m.unrepliableReason, Ee = !!x && Object(ut.e)(x) === m.author, [ye, je] = Object(o.useState)(null), [ke, Pe] = Object(o.useState)(null), Ie = Object(o.useRef)(null), _e = Object(M.f)(m) || Object(M.g)(m), we = _e ? Wt : ct.a, Se = Object(M.f)(m) ? Ht : Bt;
 					Object(o.useEffect)(() => {
 						if (!N && !le && (E && je(r.a.createElement(Ke, null)), null !== k)) {
 							if (k.glowHexColor) {
@@ -6869,7 +6869,7 @@
 					})(n, bt, Me),
 					gt = !!Me.media && (Me.media.type === R.o.RTJSON || Me.media.type === R.o.TEXT),
 					ft = Ke && gt,
-					Ct = Object(ae.d)(Me),
+					Ct = Object(ae.a)(Me),
 					Ot = Object(ce.c)(Me);
 				let yt;
 				const Pt = !(le && it),
@@ -10995,4 +10995,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.38b139dad827ed22b7cf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.d3fae4df5f86bcbe045b.js.map

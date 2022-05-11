@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.c81cbb5b77dbe17d2602.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.71308558d358d70777ec.js
+// Retrieved at 5/11/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -3109,7 +3109,7 @@
 					Ae = Object(K.a)(ce),
 					Fe = Object(Q.a)(ce),
 					De = me && Y.a,
-					Le = Object(I.d)(fe),
+					Le = Object(I.a)(fe),
 					Ue = Object(T.c)(fe),
 					Be = !!fe.media && fe.media.type === z.o.RTJSON,
 					He = Se && Be,
@@ -3359,7 +3359,7 @@
 					subreddit: C,
 					showBulkActionCheckbox: k,
 					toggleCheckbox: y
-				} = e, O = Object(g.d)(s);
+				} = e, O = Object(g.a)(s);
 				return a.a.createElement(m.a, {
 					className: t,
 					clickTrackingId: s.id,
@@ -6880,7 +6880,7 @@
 						sendEvent: Ie,
 						shouldShowGalleryTileOption: Te,
 						showPromotedCTA: Me
-					} = this.props, Re = !!he.media && he.media.type === f.o.RTJSON, Ae = fe && Re, Fe = Object(Q.b)(he.id, y), De = Object(pe.a)(X), Le = Object(me.a)(X), Ue = Object(ue.a)(X), Be = `-mod-actions-menu-${he.id}`, He = `voting-arrows-${he.id}`, We = !!a && Object(x.e)(a) === he.author, ze = Object(B.d)(he), Ve = Object(W.c)(he), qe = Object(F.a)("View--Reports", he.id, Ne), Ge = Object(W.a)(he), Ke = !(y || E || v), Qe = he.media && he.media.type === f.o.LIVEVIDEO, Ye = e => Ie(Object(g.h)(he.id, e)), Xe = Object(l.t)(he, m), {
+					} = this.props, Re = !!he.media && he.media.type === f.o.RTJSON, Ae = fe && Re, Fe = Object(Q.b)(he.id, y), De = Object(pe.a)(X), Le = Object(me.a)(X), Ue = Object(ue.a)(X), Be = `-mod-actions-menu-${he.id}`, He = `voting-arrows-${he.id}`, We = !!a && Object(x.e)(a) === he.author, ze = Object(B.a)(he), Ve = Object(W.c)(he), qe = Object(F.a)("View--Reports", he.id, Ne), Ge = Object(W.a)(he), Ke = !(y || E || v), Qe = he.media && he.media.type === f.o.LIVEVIDEO, Ye = e => Ie(Object(g.h)(he.id, e)), Xe = Object(l.t)(he, m), {
 						source: Je
 					} = Xe, Ze = o.a.createElement(K.a, {
 						className: Object(c.a)(Ce.a.compactPostStyles, ye.a.postContainer, Object(h.a)(this.props), t),
@@ -23562,4 +23562,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.c81cbb5b77dbe17d2602.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.71308558d358d70777ec.js.map

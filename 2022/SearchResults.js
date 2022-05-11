@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.6a49099ff3c04f326795.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.8d1d79e538544915f9e1.js
+// Retrieved at 5/11/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1606,7 +1606,7 @@
 						trackCommentClick: ae,
 						userIconSmall: ce,
 						userIsBanned: de
-					} = e, le = m.isDeleted, me = !T && !le && !!f && f.length > 0, ue = Object(l.a)(c.c.edit, m.id), pe = Object(l.a)(c.c.replyToComment, m.id), be = Object(P.a)(U), Ce = Object(Qe.d)(m), he = Object($.c)(m), xe = m.authorIsContractor && ie === ut.g.EmployeesOnly, fe = m.isLocked, ge = be && V, Oe = !T && !le && (F || S), ve = S && !m.unrepliableReason, Ee = !!h && Object(pt.e)(h) === m.author, [ye, je] = Object(r.useState)(null), [_e, ke] = Object(r.useState)(null), we = Object(r.useRef)(null), Se = Object(L.f)(m) || Object(L.g)(m), Ie = Se ? Vt : dt.a, Ne = Object(L.f)(m) ? Wt : Bt;
+					} = e, le = m.isDeleted, me = !T && !le && !!f && f.length > 0, ue = Object(l.a)(c.c.edit, m.id), pe = Object(l.a)(c.c.replyToComment, m.id), be = Object(P.a)(U), Ce = Object(Qe.a)(m), he = Object($.c)(m), xe = m.authorIsContractor && ie === ut.g.EmployeesOnly, fe = m.isLocked, ge = be && V, Oe = !T && !le && (F || S), ve = S && !m.unrepliableReason, Ee = !!h && Object(pt.e)(h) === m.author, [ye, je] = Object(r.useState)(null), [_e, ke] = Object(r.useState)(null), we = Object(r.useRef)(null), Se = Object(L.f)(m) || Object(L.g)(m), Ie = Se ? Vt : dt.a, Ne = Object(L.f)(m) ? Wt : Bt;
 					Object(r.useEffect)(() => {
 						if (!T && !le && (E && je(o.a.createElement(Ge, null)), null !== _)) {
 							if (_.glowHexColor) {
@@ -4726,7 +4726,7 @@
 						showBulkActionCheckbox: G,
 						subredditOrProfile: K,
 						title: Y
-					} = e, q = V ? void 0 : E, z = s || void 0, Z = Object(L.a)(_), J = Object(m.d)(A), Q = Object(p.c)(A), X = Object(O.b)({
+					} = e, q = V ? void 0 : E, z = s || void 0, Z = Object(L.a)(_), J = Object(m.a)(A), Q = Object(p.c)(A), X = Object(O.b)({
 						crosspost: s,
 						post: A,
 						url: void 0,
@@ -10423,4 +10423,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.6a49099ff3c04f326795.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.8d1d79e538544915f9e1.js.map
