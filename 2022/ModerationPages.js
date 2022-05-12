@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.71308558d358d70777ec.js
-// Retrieved at 5/11/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.ad98907fececc80192ba.js
+// Retrieved at 5/12/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -8748,17 +8748,18 @@
 				return e.pages.modHub.approvedTalkHosts.models[s] || y.a
 			});
 			var S = s("./src/reddit/selectors/user.ts"),
-				j = s("./src/higherOrderComponents/asModal/index.tsx"),
-				N = s("./src/lib/lessComponent.tsx"),
-				I = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
-				w = s("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
-				T = s("./src/reddit/controls/TextButton/index.tsx"),
-				M = s("./src/reddit/helpers/isValidUsername/index.tsx"),
-				P = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
-				R = s("./src/reddit/components/ModHub/ApprovedTalkHosts/AddApprovedTalkHostModal.m.less"),
-				A = s.n(R);
-			const F = N.a.wrapped(E.l, "PrimaryButton", A.a);
-			var D = Object(j.a)(e => {
+				j = s("./src/reddit/components/ModHub/InfoLink/index.tsx"),
+				N = s("./src/higherOrderComponents/asModal/index.tsx"),
+				I = s("./src/lib/lessComponent.tsx"),
+				w = s("./src/reddit/components/ModalStyledComponents/index.tsx"),
+				T = s("./src/reddit/components/StructuredStyles/StyledComponents/inputs.ts"),
+				M = s("./src/reddit/controls/TextButton/index.tsx"),
+				P = s("./src/reddit/helpers/isValidUsername/index.tsx"),
+				R = s("./src/reddit/layout/twoCol/ExpandLeft/index.tsx"),
+				A = s("./src/reddit/components/ModHub/ApprovedTalkHosts/AddApprovedTalkHostModal.m.less"),
+				F = s.n(A);
+			const D = I.a.wrapped(E.l, "PrimaryButton", F.a);
+			var L = Object(N.a)(e => {
 					let {
 						subredditId: t,
 						onAddTalkHost: s,
@@ -8766,11 +8767,11 @@
 						sendEventWithName: i
 					} = e;
 					const [d, l] = Object(o.useState)("");
-					return r.a.createElement(I.e, null, r.a.createElement(I.i, null, r.a.createElement(P.a, null, r.a.createElement(I.q, null, a.fbt._("Add approved Talk host", null, {
+					return r.a.createElement(w.e, null, r.a.createElement(w.i, null, r.a.createElement(R.a, null, r.a.createElement(w.q, null, a.fbt._("Add approved Talk host", null, {
 						hk: "38DcZT"
-					})), r.a.createElement(T.a, {
+					})), r.a.createElement(M.a, {
 						onClick: n
-					}, r.a.createElement(I.b, null)))), r.a.createElement(I.l, null, r.a.createElement(w.d, {
+					}, r.a.createElement(w.b, null)))), r.a.createElement(w.l, null, r.a.createElement(T.d, {
 						placeholder: a.fbt._("Enter username", null, {
 							hk: "4DdFFr"
 						}),
@@ -8779,25 +8780,25 @@
 						},
 						value: d,
 						autoFocus: !0
-					})), r.a.createElement(I.g, null, r.a.createElement(I.a, {
+					})), r.a.createElement(w.g, null, r.a.createElement(w.a, {
 						onClick: n,
 						"data-redditstyle": !0
 					}, a.fbt._("Cancel", null, {
 						hk: "2TSLl5"
-					})), r.a.createElement(F, {
+					})), r.a.createElement(D, {
 						onClick: () => {
 							s(t, d), i("add")(), n()
 						},
 						"data-redditstyle": !0,
-						disabled: !Object(M.a)(d)
+						disabled: !Object(P.a)(d)
 					}, a.fbt._("Approve user", null, {
 						hk: "4Awx1T"
 					}))))
 				}),
-				L = s("./src/reddit/components/ModHub/ApprovedTalkHosts/index.m.less"),
-				U = s.n(L);
-			const B = 24,
-				H = Object(d.c)({
+				U = s("./src/reddit/components/ModHub/ApprovedTalkHosts/index.m.less"),
+				B = s.n(U);
+			const H = 24,
+				W = Object(d.c)({
 					approvedTalkHosts: O,
 					approvedTalkHostsListPending: (e, t) => {
 						let {
@@ -8816,7 +8817,7 @@
 					isAddApprovedTalkHostModalOpen: e => "ModerationPage--Modal--AddApprovedTalkHost" === Object(C.a)(e),
 					isConfirmModalOpen: e => "ModerationPage--Modal--RemoveHostConfirmation" === Object(C.a)(e)
 				}),
-				W = Object(i.b)(H, (e, t) => {
+				z = Object(i.b)(W, (e, t) => {
 					let {
 						subredditId: s
 					} = t;
@@ -8831,7 +8832,7 @@
 						removeApprovedTalkHost: (t, s) => e(Object(u.c)(t, s))
 					}
 				});
-			class z extends r.a.Component {
+			class V extends r.a.Component {
 				constructor(e) {
 					super(e), this.onLoadMore = () => {
 						this.props.loadMoreToken && this.props.loadMore(this.props.loadMoreToken)
@@ -8844,7 +8845,7 @@
 						}), this.props.toggleRemoveHostModal()
 					}, this.handleRemoveConfirmed = () => {
 						this.state.userId && this.props.removeApprovedTalkHost(this.props.subredditId, this.state.userId)
-					}, this.renderAddApprovedHostModal = () => r.a.createElement(D, {
+					}, this.renderAddApprovedHostModal = () => r.a.createElement(L, {
 						ignoreDefaultFocus: !0,
 						onAddTalkHost: this.props.addApprovedTalkHost,
 						subredditId: this.props.subredditId,
@@ -8881,25 +8882,27 @@
 					const {
 						props: t,
 						state: s
-					} = this, n = t.approvedTalkHosts.length > 0 ? t.approvedTalkHosts[t.approvedTalkHosts.length - 1].redditor.id : void 0, o = null === (e = t.moderatorPermissions) || void 0 === e ? void 0 : e.access;
+					} = this, o = t.approvedTalkHosts.length > 0 ? t.approvedTalkHosts[t.approvedTalkHosts.length - 1].redditor.id : void 0, i = null === (e = t.moderatorPermissions) || void 0 === e ? void 0 : e.access;
 					return r.a.createElement(r.a.Fragment, null, r.a.createElement(g.c, null, r.a.createElement(E.l, {
-						disabled: !o,
+						disabled: !i,
 						onClick: this.approveTalkHost
 					}, a.fbt._("Add Talk Host", null, {
 						hk: "w94Fa"
 					}))), r.a.createElement(g.a, {
-						className: Object(l.a)(!o && U.a.noPermissions)
+						className: Object(l.a)(!i && B.a.noPermissions)
 					}, r.a.createElement(g.b, null, a.fbt._("Talk hosts", null, {
 						hk: "3ypfgA"
+					}), r.a.createElement(j.a, {
+						linkUrl: `${n.a.redditModHelpUrl}/hc/en-us/articles/4411156549389`
 					})), r.a.createElement("p", {
-						className: U.a.helperTitle
+						className: B.a.helperTitle
 					}, a.fbt._("Talk hosts are members who are approved to create Reddit Talk posts.", null, {
 						hk: "2mnjQi"
 					})), t.approvedTalkHostsListPending && r.a.createElement(x.a, null), t.approvedTalkHosts.length > 0 ? r.a.createElement(f.b, {
-						loadMoreToken: n,
+						loadMoreToken: o,
 						onLoadMore: this.onLoadMore
 					}, t.approvedTalkHosts.map(e => ({
-						estHeight: B,
+						estHeight: H,
 						id: e.redditor.id,
 						render: () => this.renderUser(e)
 					}))) : r.a.createElement(h.c, {
@@ -8908,7 +8911,7 @@
 						})
 					}, r.a.createElement(v.a, {
 						name: "edit",
-						className: U.a.PencilIcon
+						className: B.a.PencilIcon
 					}))), t.isAddApprovedTalkHostModalOpen && this.renderAddApprovedHostModal(), t.isConfirmModalOpen && s.userId && s.username && r.a.createElement(p.a, {
 						actionText: a.fbt._("Remove", null, {
 							hk: "3tYl0U"
@@ -8923,7 +8926,7 @@
 					}))
 				}
 			}
-			t.a = W(z)
+			t.a = z(V)
 		},
 		"./src/reddit/components/ModHub/BadgesAndEmotes/EmptyState/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -23562,4 +23565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.71308558d358d70777ec.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ad98907fececc80192ba.js.map
