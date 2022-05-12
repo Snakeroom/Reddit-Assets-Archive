@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.b7a7647db690025df1cc.js
-// Retrieved at 5/12/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d21f2febb410306b7310.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ProfileIdCard"], {
 		"./node_modules/lodash/compact.js": function(e, t) {
@@ -2106,7 +2106,7 @@
 							onClickGivePremium: e,
 							sendEvent: t
 						} = this.props;
-						e(Object(Z.e)(Z.a.GiftPremiumFlow));
+						e(Object(Z.d)(Z.a.GiftPremiumFlow));
 						const {
 							clickGivePremiumEvent: n
 						} = await r.e("givePremiumTrackers").then(r.bind(null, "./src/reddit/helpers/trackers/givePremium.ts"));
@@ -2902,7 +2902,7 @@
 					source: "user_dropdown",
 					action: "click",
 					noun: "powerups",
-					correlationId: Object(n.e)(n.a.PowerupsFlow, !1),
+					correlationId: Object(n.d)(n.a.PowerupsFlow, !1),
 					...o(e)
 				}),
 				m = () => e => ({
@@ -3070,7 +3070,7 @@
 			const o = e => Object(s.c)(e, {
 				experimentName: n.G,
 				experimentEligibilitySelector: () => Object(a.O)(e)
-			}) === n.rd
+			}) === n.pd
 		},
 		"./src/reddit/selectors/experiments/crisisTextLine.ts": function(e, t, r) {
 			"use strict";
@@ -3106,8 +3106,8 @@
 				}) === n.y.Enabled,
 				o = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Tc
-				}) === n.rd
+					experimentName: n.Rc
+				}) === n.pd
 		},
 		"./src/reddit/selectors/premium.ts": function(e, t, r) {
 			"use strict";
@@ -3133,4 +3133,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.b7a7647db690025df1cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ProfileIdCard.d21f2febb410306b7310.js.map

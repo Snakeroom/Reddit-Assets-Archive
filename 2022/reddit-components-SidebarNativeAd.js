@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4a913a6f4ff2383579f1.js
-// Retrieved at 5/12/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.b439efeb68cdafe8210d.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -2327,7 +2327,7 @@
 				u = (e, t) => ({
 					...o.n(e),
 					comment: t ? o.h(e, t) : void 0,
-					correlationId: Object(c.b)(e) || Object(i.e)(i.a.GildingFlow, !1),
+					correlationId: Object(c.b)(e) || Object(i.d)(i.a.GildingFlow, !1),
 					post: t ? o.H(e, t) : void 0,
 					screen: o.Y(e),
 					subreddit: o.gb(e),
@@ -2562,7 +2562,7 @@
 					return {
 						...c.n(e),
 						comment: n ? c.h(e, n) : null,
-						correlationId: a.r(e) || Object(m.e)(m.a.GoldPayment, !1),
+						correlationId: a.r(e) || Object(m.d)(m.a.GoldPayment, !1),
 						post: n ? c.H(e, n) : null,
 						screen: c.Y(e),
 						subreddit: n ? c.gb(e) : null,
@@ -3757,4 +3757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4a913a6f4ff2383579f1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.b439efeb68cdafe8210d.js.map

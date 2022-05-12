@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Coins.00b570f47d1ce67d9664.js
-// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Coins.0fe5fd5394fa5cd67a7f.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Coins"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, n) {
@@ -655,7 +655,7 @@
 							coins: u,
 							pennies: m
 						} = n,
-						b = Object(O.r)(d) || Object(f.e)(f.a.GoldPayment, !1);
+						b = Object(O.r)(d) || Object(f.d)(f.a.GoldPayment, !1);
 					let g, y;
 					c(Object(o.stripeTokenPending)());
 					const v = Object(O.y)(d);
@@ -696,7 +696,7 @@
 							coins: y,
 							pennies: v
 						} = c,
-						j = Object(O.r)(m) || Object(f.e)(f.a.GoldPayment, !1);
+						j = Object(O.r)(m) || Object(f.d)(f.a.GoldPayment, !1);
 					let E, k;
 					i(Object(o.stripeTokenPending)());
 					const C = Object(O.y)(m);
@@ -804,7 +804,7 @@
 						apiContext: i
 					} = c;
 					const l = r(),
-						d = Object(O.r)(l) || Object(f.e)(f.a.GoldPayment, !1),
+						d = Object(O.r)(l) || Object(f.d)(f.a.GoldPayment, !1),
 						{
 							coins: u,
 							pennies: p
@@ -840,7 +840,7 @@
 						apiContext: d
 					} = l;
 					const u = i(),
-						p = Object(O.r)(u) || Object(f.e)(f.a.GoldPayment, !1),
+						p = Object(O.r)(u) || Object(f.d)(f.a.GoldPayment, !1),
 						{
 							coins: y,
 							pennies: v
@@ -1785,7 +1785,7 @@
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 					return {
 						...Object(g.h)(e, t),
-						correlationId: Object(b.e)(b.a.GoldPayment, !1)
+						correlationId: Object(b.d)(b.a.GoldPayment, !1)
 					}
 				},
 				v = () => e => ({
@@ -2048,7 +2048,7 @@
 				}));
 			class fe extends o.a.Component {
 				constructor() {
-					super(...arguments), this.correlationId = Object(b.e)(b.a.GoldPayment, !1), this.purchaseSection = o.a.createRef(), this.perksSection = o.a.createRef(), this.onClickGetCoins = () => {
+					super(...arguments), this.correlationId = Object(b.d)(b.a.GoldPayment, !1), this.purchaseSection = o.a.createRef(), this.perksSection = o.a.createRef(), this.onClickGetCoins = () => {
 						this.props.sendEvent(v()), this.purchaseSection.current && window.scrollTo({
 							behavior: "smooth",
 							top: this.purchaseSection.current.offsetTop - 50
@@ -2317,4 +2317,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.00b570f47d1ce67d9664.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Coins.0fe5fd5394fa5cd67a7f.js.map

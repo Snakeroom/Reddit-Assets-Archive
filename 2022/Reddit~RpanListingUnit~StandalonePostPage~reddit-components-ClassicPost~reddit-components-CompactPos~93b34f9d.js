@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.587f94b9babf7828ee4e.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.bce771094cd3cfee6f98.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -1453,7 +1453,7 @@
 				u = (e, t) => ({
 					...o.n(e),
 					comment: t ? o.h(e, t) : void 0,
-					correlationId: Object(i.b)(e) || Object(a.e)(a.a.GildingFlow, !1),
+					correlationId: Object(i.b)(e) || Object(a.d)(a.a.GildingFlow, !1),
 					post: t ? o.H(e, t) : void 0,
 					screen: o.Y(e),
 					subreddit: o.gb(e),
@@ -1688,7 +1688,7 @@
 					return {
 						...i.n(e),
 						comment: n ? i.h(e, n) : null,
-						correlationId: c.r(e) || Object(m.e)(m.a.GoldPayment, !1),
+						correlationId: c.r(e) || Object(m.d)(m.a.GoldPayment, !1),
 						post: n ? i.H(e, n) : null,
 						screen: i.Y(e),
 						subreddit: n ? i.gb(e) : null,
@@ -2346,13 +2346,13 @@
 							postId: t
 						}) || Object(a.M)(e))(e, t),
 						experimentName: r.Q
-					}) === r.rd
+					}) === r.pd
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a.P,
-						experimentName: r.Ie
-					}) === r.rd
+						experimentName: r.Ge
+					}) === r.pd
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -2483,4 +2483,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.587f94b9babf7828ee4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.bce771094cd3cfee6f98.js.map

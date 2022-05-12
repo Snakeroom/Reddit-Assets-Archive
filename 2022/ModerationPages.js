@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.ad98907fececc80192ba.js
-// Retrieved at 5/12/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.727730e8f45a531b5b85.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -697,7 +697,7 @@
 					const b = o(),
 						h = Object(I.f)(b),
 						f = b.user.account && b.user.account.displayText;
-					Object(u.e)(u.a.ModQueue);
+					Object(u.d)(u.a.ModQueue);
 					const x = Object(u.c)(u.a.ModQueue);
 					Object(M.a)({
 						source: "bulk_mod_action_menu",
@@ -3909,12 +3909,12 @@
 			class oe extends o.a.Component {
 				constructor(e) {
 					super(e), this.openAddAwardModal = (e, t) => {
-						Object(b.e)(b.a.AwardCreationFlow), this.props.sendEvent(Object(h.e)()), this.setState({
+						Object(b.d)(b.a.AwardCreationFlow), this.props.sendEvent(Object(h.e)()), this.setState({
 							selectedCoinPrice: e,
 							selectedModOnly: t
 						}, this.props.toggleAddAwardModal)
 					}, this.openDeleteAwardModal = e => {
-						Object(b.e)(b.a.AwardDeletionFlow), this.props.toggleConfirmModal(), this.setState({
+						Object(b.d)(b.a.AwardDeletionFlow), this.props.toggleConfirmModal(), this.setState({
 							awardId: e
 						})
 					}, this.confirmDeleteAward = () => {
@@ -21273,7 +21273,7 @@
 					...a.n(t),
 					subreddit: a.gb(t),
 					actionInfo: a.d(t),
-					correlationId: Object(n.e)(n.a.SubredditCreation, !1)
+					correlationId: Object(n.d)(n.a.SubredditCreation, !1)
 				}),
 				r = () => e => ({
 					source: "email_invite_painted_door",
@@ -23228,9 +23228,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.qd
+					experimentName: n.od
 				});
-				return !(!t || Object(n.Nf)(t))
+				return !(!t || Object(n.Lf)(t))
 			}
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, s) {
@@ -23304,10 +23304,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.Je,
+					experimentName: a.He,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.Re.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.Pe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(n.a)(r.G, i, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -23565,4 +23565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.ad98907fececc80192ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.727730e8f45a531b5b85.js.map

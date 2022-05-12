@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.4c57042e1a0d6770a2b2.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.d6ca43ea097c4644e92f.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2628,7 +2628,7 @@
 				u = (e, t) => ({
 					...a.n(e),
 					comment: t ? a.h(e, t) : void 0,
-					correlationId: Object(i.b)(e) || Object(s.e)(s.a.GildingFlow, !1),
+					correlationId: Object(i.b)(e) || Object(s.d)(s.a.GildingFlow, !1),
 					post: t ? a.H(e, t) : void 0,
 					screen: a.Y(e),
 					subreddit: a.gb(e),
@@ -2863,7 +2863,7 @@
 					return {
 						...i.n(e),
 						comment: r ? i.h(e, r) : null,
-						correlationId: c.r(e) || Object(m.e)(m.a.GoldPayment, !1),
+						correlationId: c.r(e) || Object(m.d)(m.a.GoldPayment, !1),
 						post: r ? i.H(e, r) : null,
 						screen: i.Y(e),
 						subreddit: r ? i.gb(e) : null,
@@ -3254,7 +3254,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(a.a)(n.Uc)
+			const o = Object(a.a)(n.Sc)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
 			"use strict";
@@ -3500,4 +3500,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.4c57042e1a0d6770a2b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.d6ca43ea097c4644e92f.js.map

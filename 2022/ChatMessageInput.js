@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput.b2b6387a405f747393b5.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput.88eed837a04eb416be9e.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput"], {
 		"./node_modules/shallowequal/index.js": function(e, t) {
@@ -247,7 +247,7 @@
 					}),
 					onClick: async e => {
 						e.stopPropagation();
-						const s = Object(c.e)(c.a.GildingFlow, !0);
+						const s = Object(c.d)(c.a.GildingFlow, !0);
 						u(s);
 						const {
 							clickGildEvent: n,
@@ -437,7 +437,7 @@
 							postId: n,
 							sendEvent: a
 						} = this.props;
-						t(Object(E.e)(E.a.GildingFlow, !0));
+						t(Object(E.d)(E.a.GildingFlow, !0));
 						const {
 							clickGildEvent: i,
 							clickRpanGiveAward: o
@@ -1621,4 +1621,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.b2b6387a405f747393b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput.88eed837a04eb416be9e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.fc807303af63f208cd64.js
-// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.d642697acae24f4070d7.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PowerupsPremiumUpsellModal", "GoldPurchasePaymentActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1404,7 +1404,7 @@
 						const u = null === (e = Object(I.l)(a, x.b.Month)) || void 0 === e ? void 0 : e[0],
 							l = null === (t = Object(I.l)(a, x.b.Year)) || void 0 === t ? void 0 : t[0];
 						return u && l ? {
-							correlationId: Object(C.e)(C.a.GoldPayment, !1),
+							correlationId: Object(C.d)(C.a.GoldPayment, !1),
 							premiumMonthly: {
 								price: u.price,
 								packageId: i.mobileId
@@ -2671,4 +2671,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.fc807303af63f208cd64.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PowerupsPremiumUpsellModal.d642697acae24f4070d7.js.map

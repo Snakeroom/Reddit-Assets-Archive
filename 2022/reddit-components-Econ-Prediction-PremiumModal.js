@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.ce1dfb2021d1d2b9b5a5.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.1106442aee2524c201a9.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction-PremiumModal"], {
 		"./src/reddit/components/Econ/Prediction/PremiumModal/index.m.less": function(e, t, a) {
@@ -64,7 +64,7 @@
 					N = Object(_.a)(),
 					M = Object(c.e)(C.l),
 					I = Object(c.e)(C.o),
-					y = Object(P.e)(P.a.GoldPayment, !1);
+					y = Object(P.d)(P.a.GoldPayment, !1);
 				Object(f.a)(p.a), Object(i.useEffect)(() => {
 					M.length || I || d(Object(g.b)({
 						correlationId: y
@@ -187,4 +187,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.ce1dfb2021d1d2b9b5a5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction-PremiumModal.1106442aee2524c201a9.js.map

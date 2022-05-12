@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.fc05f45c64c53f3c506a.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.403af48e0487d26f9126.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -666,8 +666,8 @@
 				D = r("./src/reddit/helpers/awards/message.ts"),
 				F = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				q = r("./src/reddit/helpers/isPost.ts"),
-				U = r("./src/reddit/helpers/trackers/gild.ts"),
-				Q = r("./src/telemetry/index.ts"),
+				Q = r("./src/reddit/helpers/trackers/gild.ts"),
+				U = r("./src/telemetry/index.ts"),
 				H = r("./src/reddit/endpoints/profile/info.ts"),
 				W = r("./src/reddit/actions/gold/awardKarma.ts"),
 				V = r("./src/reddit/actions/gold/constants.ts"),
@@ -780,7 +780,7 @@
 						b = Object(x.a)(a, u),
 						f = e.awardKarmaReceived,
 						g = Object(S.k)(a),
-						P = Object(w.b)(a) || Object(F.e)(F.a.GildingFlow, !1);
+						P = Object(w.b)(a) || Object(F.d)(F.a.GildingFlow, !1);
 					if (Object(w.g)(a)) {
 						const e = "success.gild",
 							t = {},
@@ -829,7 +829,7 @@
 							hk: "2sIK9Y"
 						}),
 						T = b.coinPrice;
-					Object(Q.a)(Object(U.viewKarmaSuccessEvent)({
+					Object(U.a)(Object(Q.viewKarmaSuccessEvent)({
 						award: b,
 						awarderKarmaEarned: f,
 						awardeeKarmaEarned: 0,
@@ -1292,7 +1292,7 @@
 							coins: u,
 							pennies: p
 						} = r,
-						f = Object(O.r)(l) || Object(b.e)(b.a.GoldPayment, !1);
+						f = Object(O.r)(l) || Object(b.d)(b.a.GoldPayment, !1);
 					let g, y;
 					s(Object(i.stripeTokenPending)());
 					const j = Object(O.y)(l);
@@ -1333,7 +1333,7 @@
 							coins: y,
 							pennies: j
 						} = s,
-						C = Object(O.r)(p) || Object(b.e)(b.a.GoldPayment, !1);
+						C = Object(O.r)(p) || Object(b.d)(b.a.GoldPayment, !1);
 					let v, P;
 					c(Object(i.stripeTokenPending)());
 					const x = Object(O.y)(p);
@@ -1441,7 +1441,7 @@
 						apiContext: c
 					} = s;
 					const d = n(),
-						l = Object(O.r)(d) || Object(b.e)(b.a.GoldPayment, !1),
+						l = Object(O.r)(d) || Object(b.d)(b.a.GoldPayment, !1),
 						{
 							coins: u,
 							pennies: m
@@ -1477,7 +1477,7 @@
 						apiContext: l
 					} = d;
 					const u = c(),
-						m = Object(O.r)(u) || Object(b.e)(b.a.GoldPayment, !1),
+						m = Object(O.r)(u) || Object(b.d)(b.a.GoldPayment, !1),
 						{
 							coins: y,
 							pennies: j
@@ -2173,9 +2173,9 @@
 			};
 			var F = r("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				q = r("./src/reddit/hooks/useLocale.ts"),
-				U = r("./src/reddit/icons/fonts/Coin/index.tsx");
+				Q = r("./src/reddit/icons/fonts/Coin/index.tsx");
 			const {
-				fbt: Q
+				fbt: U
 			} = r("./node_modules/fbt/lib/FbtPublic.js");
 			var H = e => {
 				var t;
@@ -2185,11 +2185,11 @@
 					style: {
 						backgroundImage: `url("${O.a.assetPath}/img/gold/coins-hero.jpg")`
 					}
-				}, o.a.createElement(U.a, {
+				}, o.a.createElement(Q.a, {
 					className: G.a.coinIcon
 				}), o.a.createElement("div", {
 					className: G.a.titleMain
-				}, Q._("Buy {amount}!", [Q._param("amount", Object(l.b)(e.purchasePackage.coins, {
+				}, U._("Buy {amount}!", [U._param("amount", Object(l.b)(e.purchasePackage.coins, {
 					locale: r,
 					type: d.b.Reddit,
 					currency: d.a
@@ -2197,7 +2197,7 @@
 					hk: "3VNw69"
 				})), o.a.createElement("div", {
 					className: G.a.titleDescription
-				}, Q._("You're purchasing Coins for yourself, {userName}!", [Q._param("userName", e.userName)], {
+				}, U._("You're purchasing Coins for yourself, {userName}!", [U._param("userName", e.userName)], {
 					hk: "ZGCBt"
 				})), o.a.createElement("img", {
 					className: G.a.goldPackage,
@@ -2464,7 +2464,7 @@
 					},
 					coinBalance: E.e,
 					coinPackages: P.d,
-					correlationId: e => Object(x.r)(e) || Object(h.e)(h.a.GoldPayment, !1),
+					correlationId: e => Object(x.r)(e) || Object(h.d)(h.a.GoldPayment, !1),
 					dealCoinPackages: P.f,
 					gildThingId: x.s,
 					isIframed: C.g,
@@ -2535,7 +2535,7 @@
 						gildThingId: e,
 						sendEvent: t
 					} = this.props;
-					Object(h.e)(h.a.GoldPayment, !1), t(Object(y.i)(e))
+					Object(h.d)(h.a.GoldPayment, !1), t(Object(y.i)(e))
 				}
 				componentDidUpdate(e) {
 					if (this.props.stripeErrorMessage && !e.stripeErrorMessage) {
@@ -3945,7 +3945,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(a.a)(n.Uc)
+			const s = Object(a.a)(n.Sc)
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, r) {
 			"use strict";
@@ -4096,4 +4096,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.fc05f45c64c53f3c506a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.403af48e0487d26f9126.js.map

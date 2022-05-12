@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.89d1559e52a7deb146cd.js
-// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.c53b9b8a586a65ec6b7f.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-CoinPurchaseDropdown"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -608,7 +608,7 @@
 							coins: u,
 							pennies: p
 						} = r,
-						f = Object(j.r)(l) || Object(b.e)(b.a.GoldPayment, !1);
+						f = Object(j.r)(l) || Object(b.d)(b.a.GoldPayment, !1);
 					let y, O;
 					s(Object(i.stripeTokenPending)());
 					const g = Object(j.y)(l);
@@ -649,7 +649,7 @@
 							coins: O,
 							pennies: g
 						} = s,
-						C = Object(j.r)(p) || Object(b.e)(b.a.GoldPayment, !1);
+						C = Object(j.r)(p) || Object(b.d)(b.a.GoldPayment, !1);
 					let v, P;
 					a(Object(i.stripeTokenPending)());
 					const x = Object(j.y)(p);
@@ -757,7 +757,7 @@
 						apiContext: a
 					} = s;
 					const d = n(),
-						l = Object(j.r)(d) || Object(b.e)(b.a.GoldPayment, !1),
+						l = Object(j.r)(d) || Object(b.d)(b.a.GoldPayment, !1),
 						{
 							coins: u,
 							pennies: m
@@ -793,7 +793,7 @@
 						apiContext: l
 					} = d;
 					const u = a(),
-						m = Object(j.r)(u) || Object(b.e)(b.a.GoldPayment, !1),
+						m = Object(j.r)(u) || Object(b.d)(b.a.GoldPayment, !1),
 						{
 							coins: O,
 							pennies: g
@@ -1434,7 +1434,7 @@
 								hk: "1XFIa6"
 							})
 						}) : null
-					}, this.correlationId = Object(F.e)(F.a.GoldPayment, !1), e.coinPackages.length || e.purchaseCatalogPending || e.requestPurchaseCatalog(this.correlationId)
+					}, this.correlationId = Object(F.d)(F.a.GoldPayment, !1), e.coinPackages.length || e.purchaseCatalogPending || e.requestPurchaseCatalog(this.correlationId)
 				}
 				packageDetailsAsListItem(e) {
 					const {
@@ -1908,4 +1908,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.89d1559e52a7deb146cd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-CoinPurchaseDropdown.c53b9b8a586a65ec6b7f.js.map

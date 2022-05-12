@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.133494d1b8ac1a423560.js
-// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.bf16b60374cbff4034c8.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -235,7 +235,7 @@
 						g = Object(A.a)(d, u),
 						f = e.awardKarmaReceived,
 						w = Object(L.k)(d),
-						k = Object(x.b)(d) || Object(q.e)(q.a.GildingFlow, !1);
+						k = Object(x.b)(d) || Object(q.d)(q.a.GildingFlow, !1);
 					if (Object(x.g)(d)) {
 						const e = "success.gild",
 							t = {},
@@ -440,4 +440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.133494d1b8ac1a423560.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.bf16b60374cbff4034c8.js.map

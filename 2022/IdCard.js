@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.1120509af8f1f6fa9e5f.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.2263cc422a629ec8665c.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3090,7 +3090,7 @@
 						onClick: b ? x : void 0,
 						headerButton: i.a.createElement("div", {
 							className: pt.a.headerButtonsContainer
-						}, !A && v && g && c !== Ue.ve.NewModule && i.a.createElement(a.a, {
+						}, !A && v && g && c !== Ue.te.NewModule && i.a.createElement(a.a, {
 							className: pt.a.ModToolsLink,
 							to: g.posts ? `${v.url}about/modqueue` : `${v.url}about/`,
 							onClick: this.onClickModTools
@@ -4662,7 +4662,7 @@
 					actionInfo: s.d(t, {
 						settingValue: t.user.account && t.user.account.isMod ? "existing_mod" : "new_mod"
 					}),
-					correlationId: Object(r.e)(r.a.SubredditCreation, !0)
+					correlationId: Object(r.d)(r.a.SubredditCreation, !0)
 				}),
 				o = (e, t, n) => i => ({
 					source: "community_form",
@@ -5307,4 +5307,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.1120509af8f1f6fa9e5f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.2263cc422a629ec8665c.js.map

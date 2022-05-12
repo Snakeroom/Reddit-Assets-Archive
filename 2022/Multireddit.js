@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.d954cb7efc2b1e28d325.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.6148f9e6d6575c61f865.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
@@ -1116,7 +1116,7 @@
 					actionInfo: o.d(t, {
 						settingValue: t.user.account && t.user.account.isMod ? "existing_mod" : "new_mod"
 					}),
-					correlationId: Object(r.e)(r.a.SubredditCreation, !0)
+					correlationId: Object(r.d)(r.a.SubredditCreation, !0)
 				}),
 				i = (e, t, n) => s => ({
 					source: "community_form",
@@ -1330,4 +1330,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.d954cb7efc2b1e28d325.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.6148f9e6d6575c61f865.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.434c5b7dabfb6b7b04bb.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.45c365b6c894339e9a6c.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1687,7 +1687,7 @@
 						shouldShowInsightsButton: Ne,
 						isTrueblockPCBlockeeEnabled: Me
 					} = e, Fe = Object(n.useCallback)(async () => {
-						const e = Object(J.e)(J.a.GildingFlow, !0);
+						const e = Object(J.d)(J.a.GildingFlow, !0);
 						_e(e, null == ke ? void 0 : ke.id);
 						const {
 							clickGildEvent: t
@@ -3270,7 +3270,7 @@
 						this.handlePostEvent("edit"), this.props.onEdit()
 					}, this.handleGild = async () => {
 						var e;
-						const t = Object(q.e)(q.a.GildingFlow, !0);
+						const t = Object(q.d)(q.a.GildingFlow, !0);
 						this.props.onGildClick(t, null === (e = this.props.claimedFreeAward) || void 0 === e ? void 0 : e.id);
 						const {
 							clickGildEvent: o
@@ -4310,7 +4310,7 @@
 					...Object(n.h)(e, {
 						offerContext: r.a.StorefrontFreeAward
 					}),
-					correlationId: Object(o.e)(o.a.GoldPayment, !1),
+					correlationId: Object(o.d)(o.a.GoldPayment, !1),
 					profile: i.Q(e),
 					subreddit: i.gb(e)
 				}),
@@ -4937,12 +4937,12 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: i.P,
-				experimentName: n.mc
-			}), e => e === n.rd)
+				experimentName: n.lc
+			}), e => e === n.pd)
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
 			e.exports = JSON.parse('{"id":"5ee520f9aa60"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.434c5b7dabfb6b7b04bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.45c365b6c894339e9a6c.js.map

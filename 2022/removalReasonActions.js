@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.57699c09fcba532616b2.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.96e1f23b8ea3d1fede59.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/scroll/index.ts": function(e, t, n) {
@@ -248,7 +248,7 @@
 			const oe = Object(ne.a)(e => Object(te.c)(e, {
 				experimentEligibilitySelector: te.a,
 				experimentName: ee.Bb
-			}), e => e === ee.rd);
+			}), e => e === ee.pd);
 			var se = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				re = n("./src/reddit/selectors/platform.ts"),
 				ie = n("./src/reddit/selectors/posts.ts"),
@@ -2772,4 +2772,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.57699c09fcba532616b2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.96e1f23b8ea3d1fede59.js.map

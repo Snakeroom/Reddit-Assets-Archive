@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ba5a3b5fdf964e128124.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5fafa5fb121f7c3cfd22.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1052,7 +1052,7 @@
 						b = Object(E.a)(s, u),
 						h = e.awardKarmaReceived,
 						f = Object(S.k)(s),
-						y = Object(I.b)(s) || Object(F.e)(F.a.GildingFlow, !1);
+						y = Object(I.b)(s) || Object(F.d)(F.a.GildingFlow, !1);
 					if (Object(I.g)(s)) {
 						const e = "success.gild",
 							t = {},
@@ -1287,7 +1287,7 @@
 							coins: u,
 							pennies: m
 						} = r,
-						h = Object(x.r)(l) || Object(b.e)(b.a.GoldPayment, !1);
+						h = Object(x.r)(l) || Object(b.d)(b.a.GoldPayment, !1);
 					let f, O;
 					a(Object(c.stripeTokenPending)());
 					const v = Object(x.y)(l);
@@ -1328,7 +1328,7 @@
 							coins: O,
 							pennies: v
 						} = a,
-						j = Object(x.r)(m) || Object(b.e)(b.a.GoldPayment, !1);
+						j = Object(x.r)(m) || Object(b.d)(b.a.GoldPayment, !1);
 					let w, y;
 					i(Object(c.stripeTokenPending)());
 					const E = Object(x.y)(m);
@@ -1436,7 +1436,7 @@
 						apiContext: i
 					} = a;
 					const d = n(),
-						l = Object(x.r)(d) || Object(b.e)(b.a.GoldPayment, !1),
+						l = Object(x.r)(d) || Object(b.d)(b.a.GoldPayment, !1),
 						{
 							coins: u,
 							pennies: p
@@ -1472,7 +1472,7 @@
 						apiContext: l
 					} = d;
 					const u = i(),
-						p = Object(x.r)(u) || Object(b.e)(b.a.GoldPayment, !1),
+						p = Object(x.r)(u) || Object(b.d)(b.a.GoldPayment, !1),
 						{
 							coins: O,
 							pennies: v
@@ -2794,7 +2794,7 @@
 							thingId: r
 						})
 					},
-					correlationId: e => Object(S.b)(e) || Object(m.e)(m.a.GildingFlow, !1),
+					correlationId: e => Object(S.b)(e) || Object(m.d)(m.a.GildingFlow, !1),
 					currentUser: F.k,
 					errorMessage: S.a,
 					isAnonymous: S.f,
@@ -2980,7 +2980,7 @@
 						thingId: y,
 						displayUnusableAwardError: E
 					} = this.props;
-					r || Object(m.e)(m.a.GildingFlow, !1), u(Object(b.viewGildModalEvent)(l.id, n, y)), g(!s && Object(p.q)());
+					r || Object(m.d)(m.a.GildingFlow, !1), u(Object(b.viewGildModalEvent)(l.id, n, y)), g(!s && Object(p.q)());
 					const I = O ? O.id : x || (o && o.belongsTo ? o.belongsTo.id : void 0);
 					if (I && t(I), Ve(e, l) && (E(), d(h.n)), O || w) {
 						v(O ? O.name : w)
@@ -4796,12 +4796,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.sf.SmIcon:
+						case h.qf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.sf.SmIconHc:
+						case h.qf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5908,12 +5908,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.mf
+						experimentName: n.kf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.sf.SmIcon || t === n.sf.SmIconHc
+					return t === n.qf.SmIcon || t === n.qf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5951,4 +5951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.ba5a3b5fdf964e128124.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.5fafa5fb121f7c3cfd22.js.map

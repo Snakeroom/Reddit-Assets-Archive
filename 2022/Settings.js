@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.86a5fd149dcf03d6ce78.js
-// Retrieved at 5/12/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.e0c24641df2f51eba4b0.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -6466,7 +6466,7 @@
 							onPurchasePremium: s,
 							onSetPremiumRenewalInterval: r,
 							sendEvent: a
-						} = this.props, o = Object(ge.e)(ge.a.GoldPayment, !1);
+						} = this.props, o = Object(ge.d)(ge.a.GoldPayment, !1);
 						r(n), s(e, o), a(t({
 							renewInterval: n
 						}))
@@ -13391,9 +13391,9 @@
 					},
 					isDspEnabled: e => {
 						return Object(re.c)(e, {
-							experimentName: se.Hc,
+							experimentName: se.Fc,
 							experimentEligibilitySelector: re.a
-						}) === se.rd
+						}) === se.pd
 					}
 				}),
 				po = Object(ge.u)(),
@@ -13566,7 +13566,7 @@
 					}
 				}
 				componentDidMount() {
-					Object(ro.e)(ro.a.PremiumSettings), this.props.onPageViewed(), this.props.isResponsiveSettingsEnabled && this.scrollToActivePage(), this.getIsDspShown()
+					Object(ro.d)(ro.a.PremiumSettings), this.props.onPageViewed(), this.props.isResponsiveSettingsEnabled && this.scrollToActivePage(), this.getIsDspShown()
 				}
 				scrollToActivePage() {
 					b.a.read(() => {
@@ -13929,7 +13929,7 @@
 			const o = e => Object(r.c)(e, {
 				experimentName: s.G,
 				experimentEligibilitySelector: () => Object(a.O)(e)
-			}) === s.rd
+			}) === s.pd
 		},
 		"./src/reddit/selectors/experiments/econ/avatarNfts.ts": function(e, t, n) {
 			"use strict";
@@ -13946,8 +13946,8 @@
 				}) === s.y.Enabled,
 				o = e => Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.Tc
-				}) === s.rd
+					experimentName: s.Rc
+				}) === s.pd
 		},
 		"./src/reddit/selectors/gold/productOffers.ts": function(e, t, n) {
 			"use strict";
@@ -14117,4 +14117,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.86a5fd149dcf03d6ce78.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.e0c24641df2f51eba4b0.js.map

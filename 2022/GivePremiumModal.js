@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.aff930127daad29707a1.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.6ea9d808cf6ab99605f8.js
+// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -643,7 +643,7 @@
 				i = n("./src/reddit/selectors/gild.ts");
 			const c = e => ({
 					...s.n(e),
-					correlationId: Object(i.b)(e) || Object(o.e)(o.a.GiftPremiumFlow, !1),
+					correlationId: Object(i.b)(e) || Object(o.d)(o.a.GiftPremiumFlow, !1),
 					screen: s.Y(e),
 					subreddit: s.gb(e)
 				}),
@@ -721,4 +721,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.aff930127daad29707a1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.6ea9d808cf6ab99605f8.js.map
