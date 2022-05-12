@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.086a7db122f36e41c9c5.js
-// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.8cdbce96dbf23a9b3912.js
+// Retrieved at 5/12/2022, 4:10:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -9034,7 +9034,7 @@
 				return Object(l.b)({
 					endpoint: `${g()}${s}`,
 					method: c.jb.GET,
-					headers: i()(e.headers(), [a.d, a.c])
+					headers: i()(e.headers(), [a.d, a.c, a.a])
 				}).then(C)
 			}, E = async e => Object(l.b)({
 				endpoint: `${g()}/recommended_viewer_subreddits`,
@@ -9043,7 +9043,7 @@
 			}).then(C), T = async (e, t, r) => Object(l.b)({
 				endpoint: `${g()}/videos/${t}/vote/${N(r)}`,
 				method: c.jb.POST,
-				headers: i()(e.headers, [a.d, a.c])
+				headers: i()(e.headers, [a.d, a.c, a.a])
 			}).then(C), v = async (e, t) => Object(l.b)({
 				endpoint: `${g()}/videos/${t}/heartbeat`,
 				method: c.jb.POST,
@@ -15293,4 +15293,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.086a7db122f36e41c9c5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.8cdbce96dbf23a9b3912.js.map
