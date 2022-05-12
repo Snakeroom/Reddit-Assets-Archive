@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.a2911a110eba041e8060.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.d27132ab1656c7e3009a.js
+// Retrieved at 5/12/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -411,7 +411,7 @@
 							o = (null == e ? void 0 : e.accessories) || [],
 							n = Object(F.a)(o, [L.d[t]]).map(e => e.id);
 						try {
-							_(!0), s(Object(B.e)("powerups_post_upsell"));
+							_(!0), s(Object(B.f)("powerups_post_upsell"));
 							const e = await i(Object(A.e)(n, r, {
 								set_avatar_to_profile: !0,
 								source: "powerups_post_upsell"
@@ -848,40 +848,42 @@
 		},
 		"./src/reddit/helpers/trackers/snoovatar.ts": function(e, t, a) {
 			"use strict";
-			a.d(t, "f", (function() {
+			a.d(t, "g", (function() {
 				return c
-			})), a.d(t, "g", (function() {
-				return d
 			})), a.d(t, "h", (function() {
-				return l
-			})), a.d(t, "q", (function() {
-				return u
-			})), a.d(t, "k", (function() {
-				return _
-			})), a.d(t, "m", (function() {
-				return p
-			})), a.d(t, "e", (function() {
-				return m
-			})), a.d(t, "p", (function() {
-				return v
-			})), a.d(t, "d", (function() {
-				return E
-			})), a.d(t, "j", (function() {
-				return f
-			})), a.d(t, "l", (function() {
-				return w
+				return d
 			})), a.d(t, "i", (function() {
-				return O
-			})), a.d(t, "b", (function() {
-				return g
-			})), a.d(t, "o", (function() {
-				return C
-			})), a.d(t, "c", (function() {
-				return x
-			})), a.d(t, "a", (function() {
-				return I
+				return l
+			})), a.d(t, "r", (function() {
+				return u
+			})), a.d(t, "l", (function() {
+				return _
 			})), a.d(t, "n", (function() {
+				return p
+			})), a.d(t, "c", (function() {
+				return m
+			})), a.d(t, "f", (function() {
+				return b
+			})), a.d(t, "q", (function() {
+				return E
+			})), a.d(t, "e", (function() {
+				return f
+			})), a.d(t, "k", (function() {
+				return h
+			})), a.d(t, "m", (function() {
+				return O
+			})), a.d(t, "j", (function() {
+				return g
+			})), a.d(t, "b", (function() {
+				return y
+			})), a.d(t, "p", (function() {
+				return x
+			})), a.d(t, "d", (function() {
+				return N
+			})), a.d(t, "a", (function() {
 				return U
+			})), a.d(t, "o", (function() {
+				return P
 			}));
 			var s = a("./src/reddit/models/Gold/ProductOffer.ts"),
 				r = a("./src/reddit/selectors/avatarMarketing.ts"),
@@ -948,7 +950,14 @@
 					...o.n(e),
 					...i
 				}),
-				m = e => t => ({
+				m = e => ({
+					source: "nav",
+					action: "click",
+					noun: "avatar_marketing",
+					...o.n(e),
+					...i
+				}),
+				b = e => t => ({
 					...o.n(t),
 					source: "snoovatar",
 					action: "set_to_profile",
@@ -957,7 +966,7 @@
 						userGeneratedSource: e
 					}
 				}),
-				b = e => t => a => ({
+				v = e => t => a => ({
 					source: "avatar",
 					action: e,
 					noun: "community_spaces",
@@ -967,28 +976,28 @@
 						paneName: "avatar_community_spaces" + (t ? "_control" : "")
 					}
 				}),
-				v = b("view"),
-				E = b("click"),
-				f = b("dismiss"),
-				h = (e, t, a) => () => s => ({
+				E = v("view"),
+				f = v("click"),
+				h = v("dismiss"),
+				w = (e, t, a) => () => s => ({
 					source: e,
 					action: t,
 					noun: a,
 					...o.n(s),
 					snoovatar: o.eb(s)
 				}),
-				w = h("anniversary_achievement", "view", "anniversary_achievement"),
-				O = h("anniversary_achievement", "click", "close"),
-				g = h("anniversary_achievement", "click", "equip"),
-				y = e => () => t => ({
+				O = w("anniversary_achievement", "view", "anniversary_achievement"),
+				g = w("anniversary_achievement", "click", "close"),
+				y = w("anniversary_achievement", "click", "equip"),
+				C = e => () => t => ({
 					...o.n(t),
 					source: "gold_top_nav",
 					action: e,
 					noun: "quick_create_cta"
 				}),
-				C = y("view"),
-				x = y("click"),
-				N = (e, t, a) => s => ({
+				x = C("view"),
+				N = C("click"),
+				I = (e, t, a) => s => ({
 					source: e,
 					action: t,
 					noun: a,
@@ -998,8 +1007,8 @@
 					},
 					snoovatar: o.eb(s)
 				}),
-				I = e => N("onboarding", "click", e),
-				U = () => N("avatar", "view", "onboarding")
+				U = e => I("onboarding", "click", e),
+				P = () => I("avatar", "view", "onboarding")
 		},
 		"./src/reddit/models/Avatar/accessories.ts": function(e, t, a) {
 			"use strict";
@@ -1386,4 +1395,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.a2911a110eba041e8060.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.d27132ab1656c7e3009a.js.map

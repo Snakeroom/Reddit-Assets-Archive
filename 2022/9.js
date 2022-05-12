@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/9.34bf73cb9e54037c589e.js
-// Retrieved at 4/27/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/9.c4f0d1e22a5b0faddfd8.js
+// Retrieved at 5/12/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[9], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -222,8 +222,8 @@
 					...S,
 					variables: t
 				}),
-				I = n("./src/reddit/helpers/trackers/contentTag.ts"),
-				A = n("./src/reddit/hooks/useTracking.ts");
+				A = n("./src/reddit/helpers/trackers/contentTag.ts"),
+				I = n("./src/reddit/hooks/useTracking.ts");
 			! function(e) {
 				e.Accepted = "ACCEPTED", e.Pending = "PENDING"
 			}(L || (L = {}));
@@ -301,17 +301,17 @@
 				}, {
 					surveyState: W.Intro,
 					activeSlide: 0
-				}), E = y[w - 1], _ = Object(A.a)();
+				}), E = y[w - 1], _ = Object(I.a)();
 				Object(i.useEffect)(() => {
 					switch (w) {
 						case 0:
-							return _(Object(I.c)());
+							return _(Object(A.c)());
 						case 1:
-							return _(Object(I.e)());
+							return _(Object(A.e)());
 						case y.length + 1:
-							return _(Object(I.n)())
+							return _(Object(A.n)())
 					}
-					if (E) return _(Object(I.j)(E.pageType))
+					if (E) return _(Object(A.j)(E.pageType))
 				}, [w, _]);
 				const [k, {
 					pending: M,
@@ -327,7 +327,7 @@
 				if (!r.isEligible) return null;
 
 				function F(e, t) {
-					f(Object(a.setIn)(u, [e], t)), _(Object(I.a)(E.pageType))
+					f(Object(a.setIn)(u, [e], t)), _(Object(A.a)(E.pageType))
 				}
 				const Z = null !== (t = u[null == E ? void 0 : E.id]) && void 0 !== t ? t : {},
 					R = (null !== (n = null == E ? void 0 : E.answerOptions) && void 0 !== n ? n : []).map(e => e.id).some(e => Z[e]),
@@ -359,7 +359,7 @@
 								}
 							}(r, u)), C === W.Tag) {
 							if (M) return;
-							return _(Object(I.m)()), await k({
+							return _(Object(A.m)()), await k({
 								input: {
 									subredditId: s,
 									version: r.version,
@@ -378,10 +378,10 @@
 								}
 							}), void(j || o())
 						}
-						b("forward"), E ? _(Object(I.i)(E.pageType, D(E, u).map(e => e.id))) : 0 === w && _(Object(I.l)())
+						b("forward"), E ? _(Object(A.i)(E.pageType, D(E, u).map(e => e.id))) : 0 === w && _(Object(A.l)())
 					},
 					goBack: function() {
-						b("back"), E && _(Object(I.b)(E.pageType))
+						b("back"), E && _(Object(A.b)(E.pageType))
 					},
 					onClose: o,
 					progressCurrent: P ? w - 1 : 0,
@@ -602,7 +602,7 @@
 			})), n.d(t, "s", (function() {
 				return T
 			})), n.d(t, "c", (function() {
-				return I
+				return A
 			}));
 			var a = n("./src/lib/classNames/index.ts"),
 				s = n("./src/lib/lessComponent.tsx"),
@@ -643,7 +643,7 @@
 				O = s.a.wrapped(c.l, "PrimaryButton", u.a),
 				L = s.a.wrapped(c.o, "CancelButton", u.a),
 				T = s.a.wrapped(c.r, "RemoveButton", u.a),
-				I = e => {
+				A = e => {
 					let {
 						className: t,
 						...n
@@ -1105,21 +1105,21 @@
 					viewBox: "0 0 12 12"
 				}, s.a.createElement("path", {
 					d: "M6.47.828a.5.5 0 00-.94 0L4.268 4.267.827 5.53a.5.5 0 000 .938l3.44 1.264 1.264 3.44a.5.5 0 00.938 0l1.264-3.44 3.44-1.264a.5.5 0 000-.938l-3.44-1.264L6.47.827z",
-					fill: "url(#orangeYellowGradient)",
+					fill: "url(#bluePinkGradient)",
 					stroke: "#fff",
 					strokeLinejoin: "round"
 				}), s.a.createElement("defs", null, s.a.createElement("linearGradient", {
-					id: "orangeYellowGradient",
+					id: "bluePinkGradient",
 					x1: "1",
 					y1: "11",
 					x2: "11.01",
 					y2: "10.99",
 					gradientUnits: "userSpaceOnUse"
 				}, s.a.createElement("stop", {
-					stopColor: "#EC0623"
+					stopColor: "#6A5CFF"
 				}), s.a.createElement("stop", {
 					offset: "1",
-					stopColor: "#FF8717"
+					stopColor: "#E4ABFF"
 				}))))
 			}
 		},
@@ -1207,4 +1207,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/9.34bf73cb9e54037c589e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/9.c4f0d1e22a5b0faddfd8.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.6882e4ee245be2a7e991.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.a60be9492403cb7e47fa.js
+// Retrieved at 5/12/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -3950,7 +3950,7 @@
 				d = n("./src/telemetry/index.ts");
 			const l = () => async (e, t) => {
 				const n = t();
-				Object(d.a)(Object(i.k)(n)), e(Object(s.t)({
+				Object(d.a)(Object(i.l)(n)), e(Object(s.t)({
 					forceFetch: !0
 				})), await e(Object(r.g)(a.a.SNOOVATAR_MODAL))
 			};
@@ -3965,7 +3965,7 @@
 						activeTab: m,
 						activeDetails: p
 					} = e, h = n();
-					s && Object(d.a)(Object(i.f)(s)(h)), Object(c.P)(h) ? await t(Object(r.h)(a.a.SNOOVATAR_MODAL, {
+					s && Object(d.a)(Object(i.g)(s)(h)), Object(c.P)(h) ? await t(Object(r.h)(a.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u,
 						activeTab: m,
@@ -18158,40 +18158,42 @@
 		},
 		"./src/reddit/helpers/trackers/snoovatar.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "f", (function() {
+			n.d(t, "g", (function() {
 				return c
-			})), n.d(t, "g", (function() {
-				return d
 			})), n.d(t, "h", (function() {
-				return l
-			})), n.d(t, "q", (function() {
-				return u
-			})), n.d(t, "k", (function() {
-				return m
-			})), n.d(t, "m", (function() {
-				return p
-			})), n.d(t, "e", (function() {
-				return h
-			})), n.d(t, "p", (function() {
-				return f
-			})), n.d(t, "d", (function() {
-				return g
-			})), n.d(t, "j", (function() {
-				return C
-			})), n.d(t, "l", (function() {
-				return v
+				return d
 			})), n.d(t, "i", (function() {
-				return _
-			})), n.d(t, "b", (function() {
-				return E
-			})), n.d(t, "o", (function() {
-				return y
-			})), n.d(t, "c", (function() {
-				return k
-			})), n.d(t, "a", (function() {
-				return w
+				return l
+			})), n.d(t, "r", (function() {
+				return u
+			})), n.d(t, "l", (function() {
+				return m
 			})), n.d(t, "n", (function() {
+				return p
+			})), n.d(t, "c", (function() {
+				return h
+			})), n.d(t, "f", (function() {
+				return b
+			})), n.d(t, "q", (function() {
+				return g
+			})), n.d(t, "e", (function() {
+				return C
+			})), n.d(t, "k", (function() {
+				return x
+			})), n.d(t, "m", (function() {
+				return _
+			})), n.d(t, "j", (function() {
+				return E
+			})), n.d(t, "b", (function() {
+				return O
+			})), n.d(t, "p", (function() {
+				return k
+			})), n.d(t, "d", (function() {
+				return j
+			})), n.d(t, "a", (function() {
 				return T
+			})), n.d(t, "o", (function() {
+				return S
 			}));
 			var o = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				r = n("./src/reddit/selectors/avatarMarketing.ts"),
@@ -18258,7 +18260,14 @@
 					...s.n(e),
 					...i
 				}),
-				h = e => t => ({
+				h = e => ({
+					source: "nav",
+					action: "click",
+					noun: "avatar_marketing",
+					...s.n(e),
+					...i
+				}),
+				b = e => t => ({
 					...s.n(t),
 					source: "snoovatar",
 					action: "set_to_profile",
@@ -18267,7 +18276,7 @@
 						userGeneratedSource: e
 					}
 				}),
-				b = e => t => n => ({
+				f = e => t => n => ({
 					source: "avatar",
 					action: e,
 					noun: "community_spaces",
@@ -18277,28 +18286,28 @@
 						paneName: "avatar_community_spaces" + (t ? "_control" : "")
 					}
 				}),
-				f = b("view"),
-				g = b("click"),
-				C = b("dismiss"),
-				x = (e, t, n) => () => o => ({
+				g = f("view"),
+				C = f("click"),
+				x = f("dismiss"),
+				v = (e, t, n) => () => o => ({
 					source: e,
 					action: t,
 					noun: n,
 					...s.n(o),
 					snoovatar: s.eb(o)
 				}),
-				v = x("anniversary_achievement", "view", "anniversary_achievement"),
-				_ = x("anniversary_achievement", "click", "close"),
-				E = x("anniversary_achievement", "click", "equip"),
-				O = e => () => t => ({
+				_ = v("anniversary_achievement", "view", "anniversary_achievement"),
+				E = v("anniversary_achievement", "click", "close"),
+				O = v("anniversary_achievement", "click", "equip"),
+				y = e => () => t => ({
 					...s.n(t),
 					source: "gold_top_nav",
 					action: e,
 					noun: "quick_create_cta"
 				}),
-				y = O("view"),
-				k = O("click"),
-				j = (e, t, n) => o => ({
+				k = y("view"),
+				j = y("click"),
+				w = (e, t, n) => o => ({
 					source: e,
 					action: t,
 					noun: n,
@@ -18308,8 +18317,8 @@
 					},
 					snoovatar: s.eb(o)
 				}),
-				w = e => j("onboarding", "click", e),
-				T = () => j("avatar", "view", "onboarding")
+				T = e => w("onboarding", "click", e),
+				S = () => w("avatar", "view", "onboarding")
 		},
 		"./src/reddit/helpers/trackers/userFlair.ts": function(e, t, n) {
 			"use strict";
@@ -27181,4 +27190,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6882e4ee245be2a7e991.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.a60be9492403cb7e47fa.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.37e0722a3f682b0c0bee.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.333b8e0aa41db2f86350.js
+// Retrieved at 5/12/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1625,7 +1625,7 @@
 								i = Object(k.a)(r, [O.c, O.a, O.b]).map(e => e.id);
 							c(Object(b.b)());
 							try {
-								n(!0), t(Object(x.f)(A)), c(Object(b.e)("anniversary_achievement")), await t(Object(E.e)(i, a, {
+								n(!0), t(Object(x.f)(A)), c(Object(b.f)("anniversary_achievement")), await t(Object(E.e)(i, a, {
 									set_avatar_to_profile: !0,
 									source: "anniversary_achievement"
 								}))
@@ -1636,15 +1636,15 @@
 					}, a]
 				})(t), L = Object(p.f)(d.a.AVATAR_LISTING_BANNER, u.c), [M, R] = Object(r.useState)(L ? P.Hidden : P.Visible);
 				if (Object(r.useEffect)(() => {
-						M === P.Visible && t !== f.a.Achievements && C(Object(b.p)(_))
+						M === P.Visible && t !== f.a.Achievements && C(Object(b.q)(_))
 					}, [t, M, C, _]), Object(r.useEffect)(() => {
-						M === P.Visible && t === f.a.Achievements && C(Object(b.l)())
+						M === P.Visible && t === f.a.Achievements && C(Object(b.m)())
 					}, [t, M, C]), M === P.Hidden) return null;
 				const B = () => {
 						R(P.Visible), Object(p.jb)(d.a.AVATAR_LISTING_BANNER, !1, u.c)
 					},
 					F = () => {
-						C(Object(b.d)(_)), N(Object(o.b)({
+						C(Object(b.e)(_)), N(Object(o.b)({
 							source: _ ? "community_spaces_control" : "community_spaces"
 						}))
 					},
@@ -1738,7 +1738,7 @@
 						[y.a.closeLight]: _
 					}),
 					onClick: () => {
-						R(P.Dismissed), Object(p.jb)(d.a.AVATAR_LISTING_BANNER, !0, u.c), t !== f.a.Achievements && C(Object(b.j)(_)), t === f.a.Achievements && C(Object(b.i)())
+						R(P.Dismissed), Object(p.jb)(d.a.AVATAR_LISTING_BANNER, !0, u.c), t !== f.a.Achievements && C(Object(b.k)(_)), t === f.a.Achievements && C(Object(b.j)())
 					}
 				}), c.a.createElement("div", {
 					className: y.a.contentWrapper
@@ -7663,4 +7663,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.37e0722a3f682b0c0bee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.333b8e0aa41db2f86350.js.map

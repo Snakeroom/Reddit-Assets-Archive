@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.0a76e3ffa4d878e12ba4.js
-// Retrieved at 5/10/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4a913a6f4ff2383579f1.js
+// Retrieved at 5/12/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -923,7 +923,7 @@
 				d = n("./src/telemetry/index.ts");
 			const l = () => async (e, t) => {
 				const n = t();
-				Object(d.a)(Object(a.k)(n)), e(Object(s.t)({
+				Object(d.a)(Object(a.l)(n)), e(Object(s.t)({
 					forceFetch: !0
 				})), await e(Object(o.g)(i.a.SNOOVATAR_MODAL))
 			};
@@ -938,7 +938,7 @@
 						activeTab: m,
 						activeDetails: p
 					} = e, f = n();
-					s && Object(d.a)(Object(a.f)(s)(f)), Object(c.P)(f) ? await t(Object(o.h)(i.a.SNOOVATAR_MODAL, {
+					s && Object(d.a)(Object(a.g)(s)(f)), Object(c.P)(f) ? await t(Object(o.h)(i.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u,
 						activeTab: m,
@@ -2683,40 +2683,42 @@
 		},
 		"./src/reddit/helpers/trackers/snoovatar.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "f", (function() {
+			n.d(t, "g", (function() {
 				return c
-			})), n.d(t, "g", (function() {
-				return d
 			})), n.d(t, "h", (function() {
-				return l
-			})), n.d(t, "q", (function() {
-				return u
-			})), n.d(t, "k", (function() {
-				return m
-			})), n.d(t, "m", (function() {
-				return p
-			})), n.d(t, "e", (function() {
-				return f
-			})), n.d(t, "p", (function() {
-				return h
-			})), n.d(t, "d", (function() {
-				return v
-			})), n.d(t, "j", (function() {
-				return g
-			})), n.d(t, "l", (function() {
-				return y
+				return d
 			})), n.d(t, "i", (function() {
-				return w
-			})), n.d(t, "b", (function() {
-				return x
-			})), n.d(t, "o", (function() {
-				return E
-			})), n.d(t, "c", (function() {
-				return C
-			})), n.d(t, "a", (function() {
-				return I
+				return l
+			})), n.d(t, "r", (function() {
+				return u
+			})), n.d(t, "l", (function() {
+				return m
 			})), n.d(t, "n", (function() {
+				return p
+			})), n.d(t, "c", (function() {
+				return f
+			})), n.d(t, "f", (function() {
+				return b
+			})), n.d(t, "q", (function() {
+				return v
+			})), n.d(t, "e", (function() {
+				return g
+			})), n.d(t, "k", (function() {
+				return _
+			})), n.d(t, "m", (function() {
+				return w
+			})), n.d(t, "j", (function() {
+				return x
+			})), n.d(t, "b", (function() {
+				return O
+			})), n.d(t, "p", (function() {
+				return C
+			})), n.d(t, "d", (function() {
+				return k
+			})), n.d(t, "a", (function() {
 				return j
+			})), n.d(t, "o", (function() {
+				return S
 			}));
 			var r = n("./src/reddit/models/Gold/ProductOffer.ts"),
 				o = n("./src/reddit/selectors/avatarMarketing.ts"),
@@ -2783,7 +2785,14 @@
 					...s.n(e),
 					...a
 				}),
-				f = e => t => ({
+				f = e => ({
+					source: "nav",
+					action: "click",
+					noun: "avatar_marketing",
+					...s.n(e),
+					...a
+				}),
+				b = e => t => ({
 					...s.n(t),
 					source: "snoovatar",
 					action: "set_to_profile",
@@ -2792,7 +2801,7 @@
 						userGeneratedSource: e
 					}
 				}),
-				b = e => t => n => ({
+				h = e => t => n => ({
 					source: "avatar",
 					action: e,
 					noun: "community_spaces",
@@ -2802,28 +2811,28 @@
 						paneName: "avatar_community_spaces" + (t ? "_control" : "")
 					}
 				}),
-				h = b("view"),
-				v = b("click"),
-				g = b("dismiss"),
-				_ = (e, t, n) => () => r => ({
+				v = h("view"),
+				g = h("click"),
+				_ = h("dismiss"),
+				y = (e, t, n) => () => r => ({
 					source: e,
 					action: t,
 					noun: n,
 					...s.n(r),
 					snoovatar: s.eb(r)
 				}),
-				y = _("anniversary_achievement", "view", "anniversary_achievement"),
-				w = _("anniversary_achievement", "click", "close"),
-				x = _("anniversary_achievement", "click", "equip"),
-				O = e => () => t => ({
+				w = y("anniversary_achievement", "view", "anniversary_achievement"),
+				x = y("anniversary_achievement", "click", "close"),
+				O = y("anniversary_achievement", "click", "equip"),
+				E = e => () => t => ({
 					...s.n(t),
 					source: "gold_top_nav",
 					action: e,
 					noun: "quick_create_cta"
 				}),
-				E = O("view"),
-				C = O("click"),
-				k = (e, t, n) => r => ({
+				C = E("view"),
+				k = E("click"),
+				I = (e, t, n) => r => ({
 					source: e,
 					action: t,
 					noun: n,
@@ -2833,8 +2842,8 @@
 					},
 					snoovatar: s.eb(r)
 				}),
-				I = e => k("onboarding", "click", e),
-				j = () => k("avatar", "view", "onboarding")
+				j = e => I("onboarding", "click", e),
+				S = () => I("avatar", "view", "onboarding")
 		},
 		"./src/reddit/helpers/truncateStringWithEllipsis.ts": function(e, t, n) {
 			"use strict";
@@ -3748,4 +3757,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.0a76e3ffa4d878e12ba4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.4a913a6f4ff2383579f1.js.map

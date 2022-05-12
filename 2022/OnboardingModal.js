@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OnboardingModal.17089d1fd0794584071d.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OnboardingModal.fb8d03feaa13b434aa07.js
+// Retrieved at 5/12/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OnboardingModal"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -1020,7 +1020,7 @@
 						}, [t]),
 						a = Object(o.useCallback)(async () => {
 							if (n(Object(g.a)("save_and_continue")), e && r) {
-								n(Object(g.e)("onboarding"));
+								n(Object(g.f)("onboarding"));
 								try {
 									return await t(Object(h.e)(r.accessoryIds, {}, {
 										set_avatar_to_profile: !0,
@@ -1163,7 +1163,7 @@
 					} = e;
 					const r = Object(x.a)();
 					Object(o.useEffect)(() => {
-						r(Object(g.n)())
+						r(Object(g.o)())
 					}, [r]);
 					const s = Object(o.useCallback)(() => {
 							r(Object(g.a)("randomize")), n()
@@ -3996,4 +3996,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.17089d1fd0794584071d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OnboardingModal.fb8d03feaa13b434aa07.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.a59eecc456c42dad090c.js
-// Retrieved at 5/11/2022, 2:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.4f6fea1cd9eb32a0e82c.js
+// Retrieved at 5/12/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-MediumPost"], {
 		"./node_modules/react-popper/lib/esm/usePopper.js": function(e, t, n) {
@@ -2749,10 +2749,10 @@
 					E = b && b.voteState;
 				let j = null;
 				O || (j = t ? "user_hovercard" : "profile_overview");
-				const S = Object(o.useCallback)(() => y(Object(p.g)(t ? "user_hovercard" : "profile_overview", n)), [t, y, n]);
+				const S = Object(o.useCallback)(() => y(Object(p.h)(t ? "user_hovercard" : "profile_overview", n)), [t, y, n]);
 				return r.a.createElement(u.t, {
 					onClick: () => {
-						a ? (y(p.h), O && E === f.a.notVoted && g(Object(c.kb)(O))) : S();
+						a ? (y(p.i), O && E === f.a.notVoted && g(Object(c.kb)(O))) : S();
 						const e = a ? "postify" : "copy";
 						g(Object(d.b)({
 							clickSource: j,
@@ -3510,4 +3510,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.a59eecc456c42dad090c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-MediumPost.4f6fea1cd9eb32a0e82c.js.map

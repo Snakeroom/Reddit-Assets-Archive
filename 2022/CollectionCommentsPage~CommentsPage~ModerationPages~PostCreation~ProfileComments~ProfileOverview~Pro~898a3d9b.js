@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.78233c1018d893cf6610.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.c5252c478eebb36dac1e.js
+// Retrieved at 5/12/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -1129,10 +1129,10 @@
 					O = h && h.voteState;
 				let j = null;
 				g || (j = t ? "user_hovercard" : "profile_overview");
-				const y = Object(r.useCallback)(() => v(Object(m.g)(t ? "user_hovercard" : "profile_overview", s)), [t, v, s]);
+				const y = Object(r.useCallback)(() => v(Object(m.h)(t ? "user_hovercard" : "profile_overview", s)), [t, v, s]);
 				return o.a.createElement(u.t, {
 					onClick: () => {
-						a ? (v(m.h), g && O === b.a.notVoted && _(Object(c.kb)(g))) : y();
+						a ? (v(m.i), g && O === b.a.notVoted && _(Object(c.kb)(g))) : y();
 						const e = a ? "postify" : "copy";
 						_(Object(d.b)({
 							clickSource: j,
@@ -2941,4 +2941,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.78233c1018d893cf6610.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.c5252c478eebb36dac1e.js.map

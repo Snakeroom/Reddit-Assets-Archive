@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.6718818190b60b975d22.js
-// Retrieved at 5/11/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.395deeac062490b40432.js
+// Retrieved at 5/12/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -1950,10 +1950,10 @@
 					N = f && f.voteState;
 				let E = null;
 				_ || (E = t ? "user_hovercard" : "profile_overview");
-				const w = Object(n.useCallback)(() => I(Object(u.g)(t ? "user_hovercard" : "profile_overview", r)), [t, I, r]);
+				const w = Object(n.useCallback)(() => I(Object(u.h)(t ? "user_hovercard" : "profile_overview", r)), [t, I, r]);
 				return s.a.createElement(m.t, {
 					onClick: () => {
-						c ? (I(u.h), _ && N === b.a.notVoted && g(Object(i.kb)(_))) : w();
+						c ? (I(u.i), _ && N === b.a.notVoted && g(Object(i.kb)(_))) : w();
 						const e = c ? "postify" : "copy";
 						g(Object(d.b)({
 							clickSource: E,
@@ -2675,4 +2675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.6718818190b60b975d22.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.395deeac062490b40432.js.map

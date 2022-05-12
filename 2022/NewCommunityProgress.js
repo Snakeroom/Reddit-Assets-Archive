@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.12b519b54fc33693f5c7.js
-// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.bb2929c8b60597f2c419.js
+// Retrieved at 5/12/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(e, t, A) {
@@ -1222,21 +1222,21 @@
 					viewBox: "0 0 12 12"
 				}, a.a.createElement("path", {
 					d: "M6.47.828a.5.5 0 00-.94 0L4.268 4.267.827 5.53a.5.5 0 000 .938l3.44 1.264 1.264 3.44a.5.5 0 00.938 0l1.264-3.44 3.44-1.264a.5.5 0 000-.938l-3.44-1.264L6.47.827z",
-					fill: "url(#orangeYellowGradient)",
+					fill: "url(#bluePinkGradient)",
 					stroke: "#fff",
 					strokeLinejoin: "round"
 				}), a.a.createElement("defs", null, a.a.createElement("linearGradient", {
-					id: "orangeYellowGradient",
+					id: "bluePinkGradient",
 					x1: "1",
 					y1: "11",
 					x2: "11.01",
 					y2: "10.99",
 					gradientUnits: "userSpaceOnUse"
 				}, a.a.createElement("stop", {
-					stopColor: "#EC0623"
+					stopColor: "#6A5CFF"
 				}), a.a.createElement("stop", {
 					offset: "1",
-					stopColor: "#FF8717"
+					stopColor: "#E4ABFF"
 				}))))
 			}
 		},
@@ -1336,4 +1336,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.12b519b54fc33693f5c7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.bb2929c8b60597f2c419.js.map
