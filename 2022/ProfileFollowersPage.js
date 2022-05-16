@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3233c0e2d1c2a2c68785.js
-// Retrieved at 5/16/2022, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.595b16021aeb688aa695.js
+// Retrieved at 5/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -2823,7 +2823,7 @@
 				a = r("./src/lib/classNames/index.ts"),
 				d = r("./src/reddit/components/Econ/Marketplace/NftProfileUnit/async.ts"),
 				l = r("./src/reddit/helpers/userSnoovatar/index.ts"),
-				c = r("./src/reddit/selectors/experiments/econ/avatarNfts.ts"),
+				c = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
 				u = (r("./node_modules/core-js/modules/web.dom.iterable.js"), r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.m.less")),
 				m = r.n(u);
 			const p = 25;
@@ -6184,7 +6184,7 @@
 				u = Object(d.a)(l, c, (e, t) => e || t),
 				m = Object(d.a)(l, c, (e, t) => !(!e && !t))
 		},
-		"./src/reddit/selectors/experiments/econ/avatarNfts.ts": function(e, t, r) {
+		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
 				return i
@@ -6193,14 +6193,16 @@
 			}));
 			var s = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const i = e => Object(n.c)(e, {
-					experimentEligibilitySelector: n.a,
-					experimentName: s.w
-				}) === s.y.Enabled,
+			const i = e => {
+					return !(Object(n.c)(e, {
+						experimentEligibilitySelector: n.a,
+						experimentName: s.Vd
+					}) === s.od)
+				},
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: s.Rc
-				}) === s.pd
+					experimentName: s.Wd
+				}) === s.od
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, r) {
 			"use strict";
@@ -6251,4 +6253,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3233c0e2d1c2a2c68785.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.595b16021aeb688aa695.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.bb6c04ade82e56ccb152.js
-// Retrieved at 5/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.57a502da06cfe0ec98ac.js
+// Retrieved at 5/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -2346,13 +2346,13 @@
 							postId: t
 						}) || Object(a.M)(e))(e, t),
 						experimentName: r.Q
-					}) === r.pd
+					}) === r.od
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a.P,
-						experimentName: r.Ge
-					}) === r.pd
+						experimentName: r.Fe
+					}) === r.od
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -2589,4 +2589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.bb6c04ade82e56ccb152.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.57a502da06cfe0ec98ac.js.map

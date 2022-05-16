@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.c0366d1a9a39ab1733e2.js
-// Retrieved at 5/16/2022, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.8c41adc00d9043a72de7.js
+// Retrieved at 5/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -2137,7 +2137,7 @@
 				c = r("./src/lib/classNames/index.ts"),
 				i = r("./src/reddit/components/Econ/Marketplace/NftProfileUnit/async.ts"),
 				d = r("./src/reddit/helpers/userSnoovatar/index.ts"),
-				l = r("./src/reddit/selectors/experiments/econ/avatarNfts.ts"),
+				l = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
 				m = (r("./node_modules/core-js/modules/web.dom.iterable.js"), r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.m.less")),
 				u = r.n(m);
 			const p = 25;
@@ -2690,7 +2690,7 @@
 				})))
 			}
 		},
-		"./src/reddit/selectors/experiments/econ/avatarNfts.ts": function(e, t, r) {
+		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
 				return s
@@ -2699,15 +2699,17 @@
 			}));
 			var a = r("./src/reddit/constants/experiments.ts"),
 				n = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const s = e => Object(n.c)(e, {
-					experimentEligibilitySelector: n.a,
-					experimentName: a.w
-				}) === a.y.Enabled,
+			const s = e => {
+					return !(Object(n.c)(e, {
+						experimentEligibilitySelector: n.a,
+						experimentName: a.Vd
+					}) === a.od)
+				},
 				o = e => Object(n.c)(e, {
 					experimentEligibilitySelector: n.a,
-					experimentName: a.Rc
-				}) === a.pd
+					experimentName: a.Wd
+				}) === a.od
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.c0366d1a9a39ab1733e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.8c41adc00d9043a72de7.js.map

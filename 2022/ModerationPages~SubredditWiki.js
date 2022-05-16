@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.1317fd57e83e6789cdf1.js
-// Retrieved at 5/16/2022, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.c5d9a332f418eab5adbc.js
+// Retrieved at 5/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -4008,7 +4008,7 @@
 				o = r("./src/lib/classNames/index.ts"),
 				d = r("./src/reddit/components/Econ/Marketplace/NftProfileUnit/async.ts"),
 				c = r("./src/reddit/helpers/userSnoovatar/index.ts"),
-				l = r("./src/reddit/selectors/experiments/econ/avatarNfts.ts"),
+				l = r("./src/reddit/selectors/experiments/econ/marketplace.ts"),
 				u = (r("./node_modules/core-js/modules/web.dom.iterable.js"), r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.m.less")),
 				m = r.n(u);
 			const b = 25;
@@ -4500,7 +4500,7 @@
 				stopColor: "#FF8717"
 			}))))
 		},
-		"./src/reddit/selectors/experiments/econ/avatarNfts.ts": function(e, t, r) {
+		"./src/reddit/selectors/experiments/econ/marketplace.ts": function(e, t, r) {
 			"use strict";
 			r.d(t, "a", (function() {
 				return a
@@ -4509,14 +4509,16 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				s = r("./src/reddit/helpers/chooseVariant/index.ts");
-			const a = e => Object(s.c)(e, {
-					experimentEligibilitySelector: s.a,
-					experimentName: n.w
-				}) === n.y.Enabled,
+			const a = e => {
+					return !(Object(s.c)(e, {
+						experimentEligibilitySelector: s.a,
+						experimentName: n.Vd
+					}) === n.od)
+				},
 				i = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Rc
-				}) === n.pd
+					experimentName: n.Wd
+				}) === n.od
 		},
 		"./src/reddit/selectors/subredditWiki.ts": function(e, t, r) {
 			"use strict";
@@ -4684,4 +4686,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.1317fd57e83e6789cdf1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.c5d9a332f418eab5adbc.js.map

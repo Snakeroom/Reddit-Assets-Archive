@@ -1,28 +1,29 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.c3642d36656d9a56e16e.js
-// Retrieved at 5/12/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.67b1e84c380b84bf942b.js
+// Retrieved at 5/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return l
+				return u
 			}));
 			var r = n("./node_modules/@reddit/crypto/react/config/index.es.js"),
 				o = n("./node_modules/react/index.js"),
 				s = n.n(o),
 				c = n("./node_modules/react-redux/es/index.js"),
 				a = n("./src/reddit/hooks/useTracking.ts"),
+				i = n("./src/reddit/selectors/telemetry.ts"),
 				d = n("./src/reddit/selectors/user.ts"),
-				i = n("./src/config.ts");
-			const l = e => {
+				l = n("./src/config.ts");
+			const u = e => {
 				let {
 					children: t
 				} = e;
 				const n = function() {
-					const e = Object(c.e)(m),
+					const e = Object(c.e)(f),
 						t = Object(c.e)(d.cb),
 						n = Object(a.a)();
-					u || (u = function(e, t, n) {
+					m || (m = function(e, t, n) {
 						return {
 							api: {
 								accessToken: e
@@ -34,7 +35,7 @@
 								plural: (e, t) => s.a.createElement(s.a.Fragment, null, e)
 							},
 							gql: {
-								host: i.a.gqlUrl,
+								host: l.a.gqlUrl,
 								fetchOptions: {
 									headers: {
 										Authorization: `Bearer ${e}`
@@ -42,18 +43,30 @@
 								}
 							},
 							nightModeActive: () => t,
-							sendEvent: () => n
+							sendEvent(e) {
+								n(t => {
+									const n = Object(i.n)(t);
+									return {
+										...n,
+										...e,
+										actionInfo: {
+											...n.actionInfo,
+											...e.actionInfo
+										}
+									}
+								})
+							}
 						}
 					}(e, t, n));
-					return u
+					return m
 				}();
 				return s.a.createElement(r.a, {
 					value: n
 				}, t)
 			};
-			let u = null;
+			let m = null;
 
-			function m(e) {
+			function f(e) {
 				var t;
 				return (null === (t = e.user.session) || void 0 === t ? void 0 : t.accessToken) || ""
 			}
@@ -71,12 +84,12 @@
 				s = n("./node_modules/react-redux/es/index.js"),
 				c = n("./node_modules/@reddit/crypto/react/nft-treatment/index.es.js"),
 				a = n("./src/reddit/actions/modal.ts"),
-				d = n("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
-				i = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
+				i = n("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
+				d = n("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				l = n("./src/reddit/components/GlobalModalContainer/registry.ts"),
 				u = n("./src/reddit/constants/modals.ts");
 			const m = () => Promise.all([n.e(0), n.e(4), n.e("NftProductDetailsModal")]).then(n.bind(null, "./src/reddit/components/Econ/Marketplace/NftProductDetails/index.tsx")),
-				f = Object(i.a)(m, {
+				f = Object(d.a)(m, {
 					ssr: !1
 				});
 			Object(l.b)(u.a.ECON_NFT_PRODUCT_DETAILS, e => o.a.createElement(f, {
@@ -93,16 +106,16 @@
 				} = e;
 				const r = Object(s.d)();
 				Object(_.a)(m);
-				const i = Object(c.c)(n);
-				return i ? o.a.createElement("div", {
+				const d = Object(c.c)(n);
+				return d ? o.a.createElement("div", {
 					className: t
-				}, o.a.createElement(d.a, null, o.a.createElement(c.b, {
+				}, o.a.createElement(i.a, null, o.a.createElement(c.b, {
 					imageUrl: n
 				}), o.a.createElement(c.a, {
 					className: E.a.detailsButton,
 					onClick: () => {
 						r(Object(a.h)(u.a.ECON_NFT_PRODUCT_DETAILS, {
-							itemId: i
+							itemId: d
 						}))
 					}
 				}))) : null
@@ -142,4 +155,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.c3642d36656d9a56e16e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.67b1e84c380b84bf942b.js.map

@@ -1,7 +1,7 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.4d0b02e34d15530afbe0.js
-// Retrieved at 5/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.8b3022c846f01d012bf0.js
+// Retrieved at 5/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
-	["Governance~Reddit~Subreddit", "reddit-components-BlankPost"], {
+	["Governance~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -141,7 +141,7 @@
 			})), n.d(t, "c", (function() {
 				return N
 			})), n.d(t, "b", (function() {
-				return C
+				return j
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./src/lib/makeActionCreator/index.ts"),
@@ -257,7 +257,7 @@
 				h = Object(o.a)(i.i),
 				N = Object(o.a)(i.k),
 				T = Object(o.a)(i.h),
-				C = e => async (t, n, r) => {
+				j = e => async (t, n, r) => {
 					let {
 						gqlContext: o
 					} = r;
@@ -391,12 +391,12 @@
 				h = n("./src/reddit/helpers/trackers/inbox.ts"),
 				N = n("./src/reddit/models/Badge/index.ts"),
 				T = n("./src/reddit/models/NotificationInbox/index.ts"),
-				C = n("./src/reddit/models/Toast/index.ts"),
-				j = n("./src/reddit/selectors/appBadges.ts"),
+				j = n("./src/reddit/models/Toast/index.ts"),
+				C = n("./src/reddit/selectors/appBadges.ts"),
 				v = (n("./src/reddit/selectors/notificationPrefs.ts"), n("./src/reddit/selectors/notificationsInbox.tsx"));
 			const y = Object(o.a)(s.e),
-				P = Object(o.a)(s.b),
-				D = Object(o.a)(s.a),
+				D = Object(o.a)(s.b),
+				P = Object(o.a)(s.a),
 				w = e => async (t, n, r) => {
 					let {
 						gqlContext: o
@@ -409,7 +409,7 @@
 						...p,
 						variables: t
 					}))(o(), e);
-					if (null === (s = null === (i = l.error) || void 0 === i ? void 0 : i.fields) || void 0 === s ? void 0 : s.length) return t(D({
+					if (null === (s = null === (i = l.error) || void 0 === i ? void 0 : i.fields) || void 0 === s ? void 0 : s.length) return t(P({
 						error: l.error
 					})), void t(Object(a.d)());
 					const b = l && l.body,
@@ -418,7 +418,7 @@
 						const e = Object(v.f)(c);
 						t(k(f.nodes, e.length))
 					}
-					t(P(f))
+					t(D(f))
 				}, L = () => async (e, t, n) => {
 					let {
 						gqlContext: r
@@ -496,10 +496,10 @@
 						const o = Object(v.f)(n());
 						t(k(o)), t(Object(a.f)(Object(a.e)(r.fbt._("Notification hidden", null, {
 							hk: "1jfPqO"
-						}), C.b.SuccessCommunityGreen)))
+						}), j.b.SuccessCommunityGreen)))
 					} else t(Object(a.f)(Object(a.e)(r.fbt._("Failed to hide notification, please try again.", null, {
 						hk: "fL7uB"
-					}), C.b.Error)))
+					}), j.b.Error)))
 				}, F = (e, t) => async (n, o, i) => {
 					let {
 						gqlContext: s
@@ -510,9 +510,9 @@
 						isUpdateFromSubredditEnabled: !0
 					})).ok ? (t && t(), n(Object(a.f)(Object(a.e)(r.fbt._("Success! Undone hiding notifications from this community.", null, {
 						hk: "1na0NP"
-					}), C.b.SuccessCommunityGreen)))) : n(Object(a.f)(Object(a.e)(r.fbt._("Failed to undo hiding notifications, please try again.", null, {
+					}), j.b.SuccessCommunityGreen)))) : n(Object(a.f)(Object(a.e)(r.fbt._("Failed to undo hiding notifications, please try again.", null, {
 						hk: "4jo7Pf"
-					}), C.b.Error)))
+					}), j.b.Error)))
 				}, H = (e, t) => async (n, o, i) => {
 					let {
 						gqlContext: s
@@ -525,12 +525,12 @@
 						const n = r.fbt._("Success! You won't see notifications from this community in the future.", null, {
 							hk: "2tkhbk"
 						});
-						return Object(a.f)(Object(a.e)(n, C.b.Undo, r.fbt._("Undo", null, {
+						return Object(a.f)(Object(a.e)(n, j.b.Undo, r.fbt._("Undo", null, {
 							hk: "4zFGDk"
 						}), F(e, t)))
 					})()) : n(Object(a.f)(Object(a.e)(r.fbt._("Failed to hide notifications, please try again.", null, {
 						hk: "KEGcB"
-					}), C.b.Error)))
+					}), j.b.Error)))
 				}, G = e => async (t, n, o) => {
 					let {
 						apiContext: i
@@ -544,9 +544,9 @@
 						}
 					}))(i(), e)).ok ? t(Object(a.f)(Object(a.e)(r.fbt._("Success! You won't see updates on this in the future", null, {
 						hk: "wtDa4"
-					}), C.b.SuccessCommunityGreen))) : t(Object(a.f)(Object(a.e)(r.fbt._("Failed to turn off updates on this, please try again", null, {
+					}), j.b.SuccessCommunityGreen))) : t(Object(a.f)(Object(a.e)(r.fbt._("Failed to turn off updates on this, please try again", null, {
 						hk: "1zhpEy"
-					}), C.b.Error)))
+					}), j.b.Error)))
 				}, V = e => async (t, n, o) => {
 					let {
 						gqlContext: i
@@ -556,9 +556,9 @@
 						awardingId: e
 					})).ok ? t(Object(a.f)(Object(a.e)(r.fbt._("Success! Awarder has been blocked", null, {
 						hk: "2D5PUk"
-					}), C.b.SuccessCommunityGreen))) : t(Object(a.f)(Object(a.e)(r.fbt._("Failed to block awarder, please try again", null, {
+					}), j.b.SuccessCommunityGreen))) : t(Object(a.f)(Object(a.e)(r.fbt._("Failed to block awarder, please try again", null, {
 						hk: "2dxeA8"
-					}), C.b.Error)))
+					}), j.b.Error)))
 				}, W = Object(o.a)(s.d), q = (e, t) => async (n, r, o) => {
 					let s, {
 						apiContext: a
@@ -571,7 +571,7 @@
 									id: t
 								}
 							}))(a(), e)).ok) {
-							let e = Object(j.a)(r());
+							let e = Object(C.a)(r());
 							if (e > 0) {
 								e--;
 								const t = Object(i.e)({
@@ -646,7 +646,7 @@
 							}))
 						} else e(Object(a.f)(Object(a.e)(r.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
 							hk: "VW7c3"
-						}), C.b.Error)))
+						}), j.b.Error)))
 					}
 				}
 		},
@@ -1269,15 +1269,15 @@
 					shouldUseOnlineOverride: h,
 					isOnlineOverrideValue: N,
 					isOnlineStatusLoadTest: T,
-					isProfileIcon: C,
-					omitResponsivePresenceWrapper: j,
+					isProfileIcon: j,
+					omitResponsivePresenceWrapper: C,
 					onPresenceIndicatorInViewport: v,
 					shouldShowPresenceIndicator: y,
-					user: P,
-					userName: D,
+					user: D,
+					userName: P,
 					isProfileAvatarChangeFixEnabled: w,
 					...L
-				} = e, R = !!s && Object(l.e)(s) === D, U = R ? s : P, k = U && U.accountIcon || c, A = P ? P.isNSFW : g, M = Object(d.b)(k) && !p, B = M ? i.a.createElement(f.a, {
+				} = e, R = !!s && Object(l.e)(s) === P, U = R ? s : D, k = U && U.accountIcon || c, A = D ? D.isNSFW : g, M = Object(d.b)(k) && !p, B = M ? i.a.createElement(f.a, {
 					headshot: k,
 					className: e.className
 				}) : i.a.createElement(m.b, S({}, L, {
@@ -1308,11 +1308,11 @@
 				}, []), Q = Object(o.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(u.a)(W, Y, Q.current), j ? B : i.a.createElement("div", {
+				return Object(u.a)(W, Y, Q.current), C ? B : i.a.createElement("div", {
 					className: Object(r.a)(E.a.userIconWrapper, {
 						[E.a.nftUserIcon]: _,
 						[E.a.hasHeadShotWrapper]: M,
-						[E.a.isProfileIcon]: C && w
+						[E.a.isProfileIcon]: j && w
 					}),
 					ref: W
 				}, _ && i.a.createElement(I.a, {
@@ -1588,11 +1588,11 @@
 			})), n.d(t, "b", (function() {
 				return x
 			})), n.d(t, "u", (function() {
-				return C
-			})), n.d(t, "v", (function() {
 				return j
+			})), n.d(t, "v", (function() {
+				return C
 			})), n.d(t, "A", (function() {
-				return D
+				return P
 			})), n.d(t, "s", (function() {
 				return w
 			})), n.d(t, "t", (function() {
@@ -1715,14 +1715,14 @@
 			! function(e) {
 				e.POPULAR_CAROUSEL = "popular_carousel", e.SEARCH_DROPDOWN = "search_dropdown"
 			}(T || (T = {}));
-			const C = e => {
-					Object(p.a)(P({
+			const j = e => {
+					Object(p.a)(D({
 						...e,
 						action: s.c.CLICK
 					}))
 				},
-				j = e => {
-					Object(p.a)(P({
+				C = e => {
+					Object(p.a)(D({
 						...e,
 						action: s.c.VIEW
 					}))
@@ -1735,7 +1735,7 @@
 					[c.a.Popular]: u.d.tile,
 					[c.a.Typeahead]: u.d.dropdown
 				},
-				P = e => {
+				D = e => {
 					let {
 						action: t,
 						offset: n = 0,
@@ -1772,7 +1772,7 @@
 						}
 					}
 				},
-				D = (e, t, n, r, o, i, c) => {
+				P = (e, t, n, r, o, i, c) => {
 					Object(p.a)({
 						...b.n(e),
 						...Object(a.l)({
@@ -2031,17 +2031,17 @@
 			})), n.d(t, "m", (function() {
 				return T
 			})), n.d(t, "z", (function() {
-				return C
-			})), n.d(t, "q", (function() {
 				return j
+			})), n.d(t, "q", (function() {
+				return C
 			})), n.d(t, "o", (function() {
 				return v
 			})), n.d(t, "n", (function() {
 				return y
 			})), n.d(t, "j", (function() {
-				return P
-			})), n.d(t, "i", (function() {
 				return D
+			})), n.d(t, "i", (function() {
+				return P
 			})), n.d(t, "g", (function() {
 				return w
 			}));
@@ -2363,7 +2363,7 @@
 						}
 					})
 				},
-				C = e => {
+				j = e => {
 					let {
 						actionInfoType: t,
 						id: n,
@@ -2390,7 +2390,7 @@
 						}
 					})
 				},
-				j = e => {
+				C = e => {
 					let {
 						actionInfoType: t
 					} = e;
@@ -2425,13 +2425,13 @@
 						pageType: i.MiniInbox
 					}
 				}),
-				P = () => e => ({
+				D = () => e => ({
 					...u.n(e),
 					action: d.c.CLICK,
 					noun: "messages",
 					source: s.Inbox
 				}),
-				D = e => {
+				P = e => {
 					let {
 						isMiniInbox: t
 					} = e;
@@ -2461,15 +2461,15 @@
 		"./src/reddit/helpers/trackers/screenview.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "k", (function() {
-				return C
+				return j
 			})), n.d(t, "f", (function() {
 				return v
 			})), n.d(t, "q", (function() {
 				return y
 			})), n.d(t, "r", (function() {
-				return P
-			})), n.d(t, "o", (function() {
 				return D
+			})), n.d(t, "o", (function() {
+				return P
 			})), n.d(t, "s", (function() {
 				return w
 			})), n.d(t, "c", (function() {
@@ -2532,7 +2532,7 @@
 				h = n("./src/reddit/selectors/postDraft.ts"),
 				N = n("./src/reddit/selectors/telemetry.ts"),
 				T = n("./src/telemetry/index.ts");
-			const C = (e, t, n, r, a, l) => {
+			const j = (e, t, n, r, a, l) => {
 					const {
 						route: I
 					} = e, {
@@ -2614,7 +2614,7 @@
 								sort: c = i.Eb,
 								t: a = i.Fb
 							} = s;
-							Object(T.a)(P(o, c, n, r, a)(t));
+							Object(T.a)(D(o, c, n, r, a)(t));
 							break
 						}
 						case i.Nb.PROFILE_COMMENTS: {
@@ -2626,7 +2626,7 @@
 								sort: c = i.Eb,
 								t: a = i.Fb
 							} = s;
-							Object(T.a)(D(o, c, n, r, a)(t));
+							Object(T.a)(P(o, c, n, r, a)(t));
 							break
 						}
 						case i.Nb.PROFILE_PRIVATE: {
@@ -2707,7 +2707,7 @@
 							l && re(t, !0)
 					}
 				},
-				j = e => ({
+				C = e => ({
 					...N.n(e),
 					userPreferences: N.pb(e)
 				}),
@@ -2732,7 +2732,7 @@
 							source: "global",
 							action: "view",
 							noun: "screen",
-							...j(e),
+							...C(e),
 							actionInfo: N.d(e, {
 								success: d,
 								...u
@@ -2764,7 +2764,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...j(i),
+						...C(i),
 						actionInfo: N.d(i, {
 							success: a
 						}),
@@ -2776,7 +2776,7 @@
 						adblock: N.e(i)
 					}
 				},
-				P = (e, t, n, r, o) => i => {
+				D = (e, t, n, r, o) => i => {
 					const s = N.y(i, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
@@ -2787,7 +2787,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...j(i),
+						...C(i),
 						actionInfo: N.d(i, {
 							success: a
 						}),
@@ -2798,7 +2798,7 @@
 						adblock: N.e(i)
 					}
 				},
-				D = (e, t, n, r, o) => i => {
+				P = (e, t, n, r, o) => i => {
 					const s = N.T(i, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
@@ -2809,7 +2809,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...j(i),
+						...C(i),
 						actionInfo: N.d(i, {
 							success: a
 						}),
@@ -2826,7 +2826,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...j(r),
+						...C(r),
 						actionInfo: N.d(r, {
 							success: o
 						}),
@@ -2844,7 +2844,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...j(s),
+						...C(s),
 						actionInfo: N.d(s, {
 							success: a
 						}),
@@ -2873,7 +2873,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...j(r),
+						...C(r),
 						actionInfo: N.d(r, {
 							success: o
 						}),
@@ -2889,7 +2889,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...j(e),
+						...C(e),
 						actionInfo: N.d(e, {
 							success: t
 						})
@@ -2900,7 +2900,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...j(e),
+						...C(e),
 						actionInfo: N.d(e, {
 							success: t
 						}),
@@ -2915,7 +2915,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...j(e),
+						...C(e),
 						profile: N.R(e, Object(I.m)(e, n)),
 						subreddit: N.hb(e, Object(O.F)(e, t)),
 						userSubreddit: N.qb(e),
@@ -2927,7 +2927,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...j(e),
+						...C(e),
 						actionInfo: N.d(e)
 					})
 				},
@@ -2936,7 +2936,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...j(e),
+						...C(e),
 						actionInfo: N.d(e)
 					})
 				},
@@ -2948,7 +2948,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...j(e),
+						...C(e),
 						actionInfo: N.d(e, {
 							success: s
 						}),
@@ -2964,7 +2964,7 @@
 					action: "view",
 					noun: "page",
 					correlationId: Object(S.c)(S.a.GoldPayment),
-					...j(n),
+					...C(n),
 					timer: N.mb(e, t),
 					adblock: N.e(n)
 				}),
@@ -2972,14 +2972,14 @@
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...j(e)
+					...C(e)
 				}),
 				V = (e, t) => n => ({
 					source: "premium_marketing",
 					action: "view",
 					noun: "page",
 					correlationId: Object(S.c)(S.a.GoldPayment),
-					...j(n),
+					...C(n),
 					timer: N.mb(e, t),
 					adblock: N.e(n)
 				}),
@@ -2987,20 +2987,20 @@
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...j(e)
+					...C(e)
 				}),
 				q = (e, t) => n => ({
 					source: "appeal",
 					action: "view",
 					noun: "page",
-					...j(n),
+					...C(n),
 					timer: N.mb(e, t)
 				}),
 				K = (e, t) => n => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...j(n),
+					...C(n),
 					timer: N.mb(e, t)
 				}),
 				Y = () => e => ({
@@ -3008,25 +3008,25 @@
 					action: "view",
 					noun: "screen",
 					subreddit: N.gb(e),
-					...j(e)
+					...C(e)
 				}),
 				Q = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...j(e)
+					...C(e)
 				}),
 				z = () => e => ({
 					action: "view",
 					source: "global",
 					noun: "screen",
-					...j(e)
+					...C(e)
 				}),
 				X = (e, t) => n => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...j(n),
+					...C(n),
 					customFeed: N.l(n),
 					subreddit: N.gb(n),
 					timer: N.mb(e, t),
@@ -3037,7 +3037,7 @@
 					source: "global",
 					action: "view",
 					noun: "screen",
-					...j(e)
+					...C(e)
 				}),
 				Z = {
 					source: "global",
@@ -3099,7 +3099,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...j(e),
+						...C(e),
 						actionInfo: N.d(e, {
 							success: t
 						})
@@ -3110,7 +3110,7 @@
 						source: "global",
 						action: "view",
 						noun: "screen",
-						...j(e),
+						...C(e),
 						actionInfo: N.d(e, {
 							success: t
 						})
@@ -3426,7 +3426,7 @@
 					if (!l(e)) return;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: u,
-						experimentName: i.Id,
+						experimentName: i.Hd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -3449,9 +3449,9 @@
 				},
 				m = e => !!b(e) && Object(s.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: i.Jd,
+					experimentName: i.Id,
 					expEventOverride: !1
-				}) !== i.Kd.Readonly
+				}) !== i.Jd.Readonly
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -3492,7 +3492,7 @@
 					return r ? r * o.Sb < 1639443600180 ? void 0 : I(e) : void 0
 				},
 				I = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.ke,
+					experimentName: i.je,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3619,4 +3619,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.4d0b02e34d15530afbe0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.8b3022c846f01d012bf0.js.map
