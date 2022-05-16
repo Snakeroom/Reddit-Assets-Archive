@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.38846362647c451568dd.js
-// Retrieved at 5/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.fe847a54a51f91a47d1a.js
+// Retrieved at 5/16/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -25899,55 +25899,6 @@
 				experimentName: r.kc
 			}), e => e === r.pd)
 		},
-		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "a", (function() {
-				return p
-			})), n.d(t, "b", (function() {
-				return f
-			})), n.d(t, "c", (function() {
-				return b
-			}));
-			n("./node_modules/core-js/modules/web.dom.iterable.js");
-			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/reselect/es/index.js"),
-				a = n("./src/reddit/helpers/getPostFromRouteMatch/index.ts"),
-				o = n("./src/reddit/helpers/getRichTextContent/index.ts"),
-				c = n("./src/reddit/models/Media/index.ts"),
-				i = n("./src/reddit/models/Post/index.ts"),
-				d = n("./src/reddit/selectors/user.ts");
-			const u = new Set([i.g.AntiEvilOps, i.g.AutomodFiltered, i.g.CommunityOps, i.g.ContentTakedown, i.g.CopyrightTakedown, i.g.Moderator, i.g.Reddit]),
-				l = new Set([i.g.Author, i.g.AuthorDeleted]),
-				p = Object(s.a)(a.a, e => {
-					var t;
-					if (!e) return !1;
-					if (e.removedByCategory) {
-						const t = e.removedByCategory;
-						return u.has(t)
-					}
-					if (e.created > Date.UTC(2019, 0)) return !1;
-					const n = r.fbt._("[removed]", null, {
-						hk: "2CBRa4"
-					}).toString();
-					let s = Object(o.b)(e);
-					return s || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== c.o.TEXT || (s = e.media.markdownContent), s === n
-				}),
-				f = Object(s.a)(a.a, e => {
-					var t;
-					if (!e) return !1;
-					if (e.removedByCategory) {
-						const t = e.removedByCategory;
-						return l.has(t)
-					}
-					if (e.created > Date.UTC(2019, 0)) return !1;
-					const n = r.fbt._("[deleted]", null, {
-						hk: "12mOne"
-					}).toString();
-					let s = Object(o.b)(e);
-					return s || (null === (t = e.media) || void 0 === t ? void 0 : t.type) !== c.o.TEXT || (s = e.media.markdownContent), s === n
-				}),
-				b = Object(s.a)(d.k, a.a, (e, t) => !!((null == e ? void 0 : e.id) && (null == t ? void 0 : t.authorId)) && e.id === t.authorId)
-		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "h", (function() {
@@ -26218,4 +26169,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.38846362647c451568dd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.fe847a54a51f91a47d1a.js.map

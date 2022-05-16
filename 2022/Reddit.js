@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.8e2447ed6970816fe3ab.js
-// Retrieved at 5/16/2022, 1:50:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.823a60f897b23bdc4b1c.js
+// Retrieved at 5/16/2022, 2:50:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -16729,16 +16729,16 @@
 				Gt = n("./src/reddit/helpers/getSubredditErrorProps/index.ts"),
 				qt = n("./src/reddit/selectors/platform.ts"),
 				Ht = n("./src/reddit/helpers/chooseVariant/index.ts"),
-				Wt = n("./src/reddit/models/Post/index.ts"),
-				Vt = n("./src/reddit/selectors/removedPosts.ts"),
-				zt = n("./src/reddit/models/Subreddit/index.ts");
-			const Qt = Object(X.a)(Vt.b, e => !!e),
-				Kt = (e, t) => (e => e && (e === Wt.g.AuthorDeleted || e === Wt.g.Author))(null == t ? void 0 : t.removedByCategory) && ((e, t) => {
+				Wt = n("./src/reddit/selectors/removedPosts.ts"),
+				Vt = n("./src/reddit/models/Subreddit/index.ts"),
+				zt = n("./src/reddit/models/Post/index.ts");
+			const Qt = Object(X.a)(Wt.b, e => !!e),
+				Kt = (e, t) => Object(Wt.b)(e) && ((e, t) => {
 					var n, s, r, o;
 					const a = "subreddit" === (null === (n = null == t ? void 0 : t.belongsTo) || void 0 === n ? void 0 : n.type) ? null === (s = null == t ? void 0 : t.belongsTo) || void 0 === s ? void 0 : s.id : null;
 					if (!a) return !1;
 					const i = null === (o = null === (r = e.subreddits) || void 0 === r ? void 0 : r.models) || void 0 === o ? void 0 : o[a];
-					return !!i && ((null == i ? void 0 : i.type) !== zt.g.Private && (null == i || !i.isQuarantined))
+					return !!i && ((null == i ? void 0 : i.type) !== Vt.g.Private && (null == i || !i.isQuarantined))
 				})(e, t) && (e => !!(e && e >= 5))(null == t ? void 0 : t.numComments),
 				Jt = (e, t) => {
 					const n = Object(Ht.b)(e, {
@@ -16759,9 +16759,9 @@
 						const {
 							currentPage: r
 						} = e.platform;
-						if (!0 === (null == r ? void 0 : r.isRobotIndexable)) return !1;
+						if (!Object(Wt.c)(e)) return !1;
 						const o = null === (t = null == r ? void 0 : r.urlParams) || void 0 === t ? void 0 : t.partialPostId,
-							a = o && Object(Wt.t)(o),
+							a = o && Object(zt.t)(o),
 							i = a && (null === (s = null === (n = e.posts) || void 0 === n ? void 0 : n.models) || void 0 === s ? void 0 : s[a]);
 						if (!i) return !1;
 						if (!Kt(e, i)) return !1;
@@ -20430,4 +20430,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "Governance~Reddit~Subreddit~reddit-components-BlankPost~reddit-components-ClassicPost~reddit-compone~3b56c92e", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.8e2447ed6970816fe3ab.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.823a60f897b23bdc4b1c.js.map
