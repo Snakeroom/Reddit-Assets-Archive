@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b3e587aff19f92a107bc.js
-// Retrieved at 5/16/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.921c989ac0947d7980a8.js
+// Retrieved at 5/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("164834"),
+				buildNumber: Object(r.c)("164841"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1652710373"),
+				buildTimestamp: Object(r.b)("1652712912"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6076,14 +6076,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c37bd3ac8744bb820cd15fe5f42f9bcc7ced3f784-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c1d1093a3b0de6e0cb1809449db9961f76fd16726-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "37bd3ac8744bb820cd15fe5f42f9bcc7ced3f784-production",
+						release: "1d1093a3b0de6e0cb1809449db9961f76fd16726-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6692,7 +6692,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "37bd3ac8744bb820cd15fe5f42f9bcc7ced3f784-production",
+							releaseClient: "1d1093a3b0de6e0cb1809449db9961f76fd16726-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -16707,7 +16707,7 @@
 				xi = "mweb3x_index_deleted_posts_2021_now_exp",
 				Li = "mic_m1_web_mod_giphy",
 				Bi = "mic_m1_web_giphy",
-				ki = "d2x_gql_comment_submit",
+				ki = "d2x_gql_comment_save",
 				Mi = "d2x_chat_livepost_comment_v2";
 			var Ui, Gi;
 			! function(e) {
@@ -22131,22 +22131,27 @@
 		},
 		"./src/reddit/helpers/graphql/helpers.ts": function(e, t, i) {
 			"use strict";
-			i.d(t, "f", (function() {
-				return r
-			})), i.d(t, "d", (function() {
+			i.d(t, "h", (function() {
 				return s
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "d", (function() {
 				return o
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "b", (function() {
 				return d
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "a", (function() {
 				return a
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "g", (function() {
 				return l
+			})), i.d(t, "c", (function() {
+				return u
+			})), i.d(t, "f", (function() {
+				return c
+			})), i.d(t, "e", (function() {
+				return _
 			}));
 			i("./node_modules/core-js/modules/web.dom.iterable.js");
-			var n = i("./src/reddit/models/Gold/Award.ts");
-			const r = function(e) {
+			var n = i("./src/lib/constants/index.ts"),
+				r = i("./src/reddit/models/Gold/Award.ts");
+			const s = function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
 					try {
 						return JSON.parse(e)
@@ -22154,7 +22159,7 @@
 						return t
 					}
 				},
-				s = e => {
+				o = e => {
 					switch (e) {
 						case "UP":
 							return 1;
@@ -22164,28 +22169,28 @@
 							return 0
 					}
 				},
-				o = e => e.reduce((e, t) => {
+				d = e => e.reduce((e, t) => {
 					let {
 						award: i,
-						total: r
+						total: n
 					} = t;
 					if (void 0 !== i.icon) {
-						const t = Object(n.i)(i, r);
+						const t = Object(r.i)(i, n);
 						e.push(t)
 					}
 					return e
 				}, []);
-			var d;
+			var a;
 			! function(e) {
 				e[e.Seconds = 3] = "Seconds", e[e.Millis = 0] = "Millis"
-			}(d || (d = {}));
-			const a = function(e) {
-					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : d.Seconds;
+			}(a || (a = {}));
+			const l = function(e) {
+					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : a.Seconds;
 					if (!e) return 0;
 					let i = Date.parse(e);
 					return Number.isNaN(i) && (i = Date.parse(e.replace("+0000", "Z"))), Number.isNaN(i) || i <= 0 ? 0 : i - i % Math.pow(10, t)
 				},
-				l = e => {
+				u = e => {
 					const t = {},
 						i = e.split("?")[1];
 					if (!i) return t;
@@ -22196,7 +22201,27 @@
 					}
 					return t
 				};
-			window.URL
+			window.URL;
+
+			function c(e) {
+				return {
+					type: n.I.SERVER_ERROR,
+					fields: e.map(e => ({
+						field: "",
+						msg: e.message
+					}))
+				}
+			}
+
+			function _(e) {
+				return {
+					type: n.I.VALIDATION_ERROR,
+					fields: e.map(e => ({
+						field: e.field,
+						msg: e.message
+					}))
+				}
+			}
 		},
 		"./src/reddit/helpers/graphql/normalizeAllowedPostTypesFromGql/index.ts": function(e, t, i) {
 			"use strict";
@@ -22227,6 +22252,9 @@
 		},
 		"./src/reddit/helpers/graphql/normalizeCommentFromGql/index.ts": function(e, t, i) {
 			"use strict";
+			i.d(t, "b", (function() {
+				return h
+			}));
 			var n = i("./src/lib/constants/index.ts"),
 				r = i("./src/reddit/helpers/graphql/helpers.ts"),
 				s = i("./src/reddit/helpers/graphql/normalizeModeratorPartFromGql/index.ts"),
@@ -22237,17 +22265,23 @@
 				u = i("./src/reddit/models/User/index.ts"),
 				c = i("./src/reddit/reducers/posts/models/helpers.ts");
 			const _ = e => ({
-					richtextContent: e.content && e.content.richtext ? Object(r.f)(e.content.richtext) : {},
+					richtextContent: e && e.richtext ? Object(r.h)(e.richtext) : {},
 					type: "rtjson",
 					rteMode: l.i.RICH_TEXT
 				}),
 				m = (e, t) => !(!e || !t || Object(o.e)(t) || !t.authorInfo) && Object(d.b)(e) === Object(d.b)(t.authorInfo),
-				p = e => e && !Object(o.e)(e) && e.authorInfo ? Object(d.b)(e.authorInfo) : null;
+				p = e => e && !Object(o.e)(e) && e.authorInfo ? Object(d.b)(e.authorInfo) : null,
+				h = e => ({
+					body: e && e.html || "",
+					bodyMD: e && e.markdown || "",
+					markdown: e && e.markdown || "",
+					media: _(e)
+				});
 			t.a = e => {
 				var t, i, o;
 				const {
 					associatedAward: l,
-					authorInfo: h,
+					authorInfo: _,
 					awardings: f,
 					content: b,
 					createdAt: g,
@@ -22264,45 +22298,43 @@
 					postInfo: N,
 					score: C,
 					voteState: A
-				} = e, j = "ADMIN" === w, P = "MODERATOR" === w, D = f ? Object(r.b)(f) : void 0, x = h && h.__typename === u.c.AvailableRedditor && h.isCakeDayNow || !1, L = h && h.__typename === u.c.AvailableRedditor && h.isPremiumMember || !1, B = {
+				} = e, j = "ADMIN" === w, P = "MODERATOR" === w, D = f ? Object(r.b)(f) : void 0, x = _ && _.__typename === u.c.AvailableRedditor && _.isCakeDayNow || !1, L = _ && _.__typename === u.c.AvailableRedditor && _.isPremiumMember || !1, B = {
 					allAwardings: D,
 					awardCountsById: Object(c.g)(D),
 					associatedAward: l,
-					author: h && Object(d.b)(h) || n.E,
-					authorId: h && h.id || "",
-					body: b && b.html || "",
-					bodyMD: b && b.markdown || "",
-					created: Object(r.e)(g) / 1e3,
+					author: _ && Object(d.b)(_) || n.E,
+					authorId: _ && _.id || "",
+					created: Object(r.g)(g) / 1e3,
 					distinguishType: w || "",
-					editedAt: Object(r.e)(v) / 1e3 || null,
+					editedAt: Object(r.g)(v) / 1e3 || null,
 					id: y,
 					isAdmin: j,
 					isAuthorCakeday: x,
 					isAuthorPremium: L,
 					isGildable: E,
 					isMod: P,
-					isOp: m(h, N),
+					isOp: m(_, N),
 					isSaved: O,
 					isScoreHidden: S,
 					isStickied: T,
-					markdown: b && b.markdown || "",
-					media: _(e),
 					parentId: I && I.id,
 					permalink: `https://www.reddit.com${R}`,
 					postAuthor: p(N),
 					postId: N && N.id || "",
 					postTitle: N && N.title || null,
-					profileImage: null === (o = null === (i = null === (t = null == h ? void 0 : h.profile) || void 0 === t ? void 0 : t.styles) || void 0 === i ? void 0 : i.legacyIcon) || void 0 === o ? void 0 : o.url,
+					profileImage: null === (o = null === (i = null === (t = null == _ ? void 0 : _.profile) || void 0 === t ? void 0 : t.styles) || void 0 === i ? void 0 : i.legacyIcon) || void 0 === o ? void 0 : o.url,
 					score: C || 0,
 					subredditId: "",
 					voteState: Object(r.d)(A),
-					modReports: [],
-					userReports: [],
-					...Object(s.a)(e),
-					collapsed: !1,
+					...Object(s.a)(e) || {
+						collapsedBecauseCrowdControl: !1,
+						modReports: [],
+						userReports: []
+					},
+					...h(b),
+					collapsed: e.isInitiallyCollapsed,
 					collapsedReason: null,
-					collapsedBecauseCrowdControl: !1,
-					collapsedReasonCode: null,
+					collapsedReasonCode: e.initiallyCollapsedReason,
 					isDeleted: !1,
 					isLocked: F,
 					deletedBy: null,
@@ -22339,7 +22371,7 @@
 					const d = [];
 					return o === n.f.Richtext ? (d.push({
 						type: o,
-						richtext: Object(r.f)(s, []) || [],
+						richtext: Object(r.h)(s, []) || [],
 						...e
 					}), t && d.push({
 						type: n.f.Text,
@@ -22418,7 +22450,7 @@
 						var t;
 						return (null === (t = null == e ? void 0 : e.verdictBy) || void 0 === t ? void 0 : t.name) || null
 					})(t),
-					d = (e => e && Object(n.e)(e.verdictAt) || null)(t),
+					d = (e => e && Object(n.g)(e.verdictAt) || null)(t),
 					a = r(t, "spammed"),
 					l = r(t, "approved"),
 					u = r(t, "removed"),
@@ -22504,7 +22536,7 @@
 					url: r,
 					visibility: e.visibility && e.visibility.toLowerCase() || m.e.Private
 				};
-				if (s.created = Object(l.e)(e.createdAt) / 1e3, e.sources) {
+				if (s.created = Object(l.g)(e.createdAt) / 1e3, e.sources) {
 					s.subredditIds = [], s.profileIds = [];
 					for (const {
 							node: i
@@ -22556,7 +22588,7 @@
 					voteUpdatesRemained: a
 				} = e;
 				return {
-					endsAt: Object(n.e)(o),
+					endsAt: Object(n.g)(o),
 					options: i.map(e => {
 						let {
 							redditorStakeAmount: t,
@@ -22604,7 +22636,7 @@
 					totalVoteCount: o,
 					userSelection: s,
 					voteUpdatesRemained: d,
-					votingEndTimestamp: Object(n.e)(a),
+					votingEndTimestamp: Object(n.g)(a),
 					totalStakeAmount: l,
 					tournamentId: u,
 					userWonAmount: c,
@@ -22810,7 +22842,7 @@
 						...n
 					} = e;
 					if (Object(p.h)(n) || !n.isSelfPost && !(e => u.test(e))(t || "")) {
-						const e = n.outboundLink && n.outboundLink.expiresAt && Object(g.e)(n.outboundLink.expiresAt);
+						const e = n.outboundLink && n.outboundLink.expiresAt && Object(g.g)(n.outboundLink.expiresAt);
 						return {
 							displayText: t || "",
 							url: i || "",
@@ -22864,7 +22896,7 @@
 				},
 				C = e => Object.keys(I).reduce((t, i) => N(t, i, e), []),
 				A = e => Object.keys(R).reduce((t, i) => N(t, i, e), []),
-				j = e => Object(g.f)(e, f.i),
+				j = e => Object(g.h)(e, f.i),
 				P = e => {
 					const {
 						media: t,
@@ -23167,7 +23199,7 @@
 							type: "subreddit"
 						},
 						contestMode: v,
-						created: Object(g.e)(u),
+						created: Object(g.g)(u),
 						crosspostParentId: oe,
 						crosspostRootId: oe,
 						discussionType: m,
@@ -23511,7 +23543,7 @@
 							allowedPostTypes: s,
 							allowChatPostCreation: e.isChatPostCreationAllowed,
 							coins: o,
-							created: Object(n.e)(e.createdAt) / 1e3,
+							created: Object(n.g)(e.createdAt) / 1e3,
 							disableContributorRequests: !1,
 							emojisEnabled: !0,
 							isChatPostFeatureEnabled: e.isChatPostFeatureEnabled,
@@ -23720,7 +23752,7 @@
 					descriptionRichText: e.content.richtext,
 					shortName: e.name,
 					violationReason: e.violationReason || "",
-					createdUtc: Object(n.e)(e.createdAt, n.a.Millis),
+					createdUtc: Object(n.g)(e.createdAt, n.a.Millis),
 					priority: e.priority
 				}))
 			})
@@ -24078,8 +24110,8 @@
 			var n = i("./src/reddit/endpoints/profile/info.ts"),
 				r = i("./src/reddit/models/User/index.ts"),
 				s = i("./src/reddit/helpers/graphql/helpers.ts");
-			const o = e => e && e.expiresAt && Object(s.e)(e.expiresAt, s.a.Seconds) / 1e3 || null,
-				d = e => e && Object(s.e)(e, s.a.Seconds) / 1e3,
+			const o = e => e && e.expiresAt && Object(s.g)(e.expiresAt, s.a.Seconds) / 1e3 || null,
+				d = e => e && Object(s.g)(e, s.a.Seconds) / 1e3,
 				a = e => e && e.unreadCount ? e.unreadCount : 0,
 				l = /^u\//,
 				u = e => e.replace(l, "/user/"),
@@ -24133,7 +24165,7 @@
 					...f,
 					canCreateSubreddit: !!m.isSubredditCreationAllowed,
 					coins: _,
-					created: Object(s.e)(m.createdAt, s.a.Seconds) / 1e3,
+					created: Object(s.g)(m.createdAt, s.a.Seconds) / 1e3,
 					goldExpiration: o(l),
 					hasUnreadMail: a(i) > 0,
 					hasUnreadModmail: !!g && g.isUnread,
@@ -47277,4 +47309,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.b3e587aff19f92a107bc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.921c989ac0947d7980a8.js.map

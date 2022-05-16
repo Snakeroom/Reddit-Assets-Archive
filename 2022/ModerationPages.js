@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.36726782e005b321f601.js
-// Retrieved at 5/12/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.070efd64fe90f7d4d4cf.js
+// Retrieved at 5/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -990,16 +990,16 @@
 					total: new Array(e).fill(0)
 				}),
 				se = (e, t) => {
-					return Object($.e)(e.startsAt) > Object($.e)(t.startsAt) ? 1 : -1
+					return Object($.g)(e.startsAt) > Object($.g)(t.startsAt) ? 1 : -1
 				},
 				ne = (e, t, s) => {
 					const n = {
 							pageViews: te(t),
 							uniqueUsers: te(t)
 						},
-						a = Object($.e)(e[0].startsAt);
+						a = Object($.g)(e[0].startsAt);
 					return e.map(e => {
-						const o = Object($.e)(e.startsAt),
+						const o = Object($.g)(e.startsAt),
 							r = new Date(o),
 							i = t === ee.c ? r.getMonth() : Math.round((o - a) / s) % t,
 							d = ee.d[e.client];
@@ -1663,7 +1663,7 @@
 							if (r.ok) {
 								if (n === Q.f.Public) {
 									if (o(_e()), r.body) {
-										const e = Object(V.a)(r.body, c),
+										const e = Object(V.a)(r.body),
 											t = {
 												comment: e,
 												parentId: m
@@ -20687,7 +20687,7 @@
 						} = s, m = {
 							action: e,
 							actionNotes: a,
-							createdAt: Object(n.e)(o),
+							createdAt: Object(n.g)(o),
 							details: r,
 							id: i,
 							moderator: d,
@@ -23565,4 +23565,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.36726782e005b321f601.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.070efd64fe90f7d4d4cf.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.8cdbce96dbf23a9b3912.js
-// Retrieved at 5/12/2022, 4:10:08 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.a8c16bff376c841c4391.js
+// Retrieved at 5/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -9057,7 +9057,7 @@
 					body: {
 						parentId: t,
 						comment: {
-							...Object(m.a)(e.body.data.r2_comment, n),
+							...Object(m.a)(e.body.data.r2_comment),
 							media: k(s)
 						},
 						automuteLevel: e.body.data.auto_mute_status.level
@@ -9673,10 +9673,10 @@
 							quarantineRequiresEmailOptin: s,
 							...r ? {
 								quarantineMessage: r.markdown,
-								quarantineMessageRTJson: Object(x.f)(r.richtext, c.i)
+								quarantineMessageRTJson: Object(x.h)(r.richtext, c.i)
 							} : {},
 							interstitialWarningMessage: null == i ? void 0 : i.markdown,
-							interstitialWarningMessageRTJson: Object(x.f)(null == i ? void 0 : i.richtext, c.i)
+							interstitialWarningMessageRTJson: Object(x.h)(null == i ? void 0 : i.richtext, c.i)
 						}
 					}
 				}
@@ -10003,8 +10003,8 @@
 				o = r("./src/reddit/models/Vote/index.ts"),
 				d = e => !0 === e ? o.a.upvoted : !1 === e ? o.a.downvoted : o.a.notVoted,
 				c = r("./src/reddit/models/Comment/index.ts");
-			t.a = (e, t) => {
-				const r = {
+			t.a = e => {
+				const t = {
 					approvedAtUTC: e.approved_at_utc,
 					approvedBy: e.approved_by,
 					author: e.author,
@@ -10061,7 +10061,7 @@
 					userReportsDismissed: e.user_reports_dismissed,
 					voteState: d(e.likes)
 				};
-				return e.all_awardings && (r.allAwardings = Object(i.a)(e.all_awardings)), e.awarders && (r.awarders = e.awarders), e.associated_award && (r.associatedAwardId = e.associated_award.id, r.associatedAward = Object(i.b)(e.associated_award)), r
+				return e.all_awardings && (t.allAwardings = Object(i.a)(e.all_awardings)), e.awarders && (t.awarders = e.awarders), e.associated_award && (t.associatedAwardId = e.associated_award.id, t.associatedAward = Object(i.b)(e.associated_award)), t
 			};
 			const a = e => "string" == typeof e ? JSON.parse(e) : e,
 				u = e => e.author !== n.E ? null : e.body === n.F ? c.c.User : e.body === n.Lb ? c.c.Moderator : null
@@ -15190,7 +15190,7 @@
 			e.exports = JSON.parse('{"id":"023547ccdaf6"}')
 		},
 		"./src/redditGQL/operations/ModQueueItems.json": function(e) {
-			e.exports = JSON.parse('{"id":"cea01edf3e6c"}')
+			e.exports = JSON.parse('{"id":"e567c08f47be"}')
 		},
 		"./src/redditGQL/operations/ModQueueTriggers.json": function(e) {
 			e.exports = JSON.parse('{"id":"de8696c3b5fd"}')
@@ -15293,4 +15293,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.8cdbce96dbf23a9b3912.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.a8c16bff376c841c4391.js.map
