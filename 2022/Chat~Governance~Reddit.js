@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.921c989ac0947d7980a8.js
-// Retrieved at 5/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.112bb3f82d79947f1123.js
+// Retrieved at 5/16/2022, 12:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("164841"),
+				buildNumber: Object(r.c)("164846"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1652712912"),
+				buildTimestamp: Object(r.b)("1652714462"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6076,14 +6076,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c1d1093a3b0de6e0cb1809449db9961f76fd16726-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c917dc5bdc40cd000901ee6d5f5f1701a76730b74-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "1d1093a3b0de6e0cb1809449db9961f76fd16726-production",
+						release: "917dc5bdc40cd000901ee6d5f5f1701a76730b74-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6692,7 +6692,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "1d1093a3b0de6e0cb1809449db9961f76fd16726-production",
+							releaseClient: "917dc5bdc40cd000901ee6d5f5f1701a76730b74-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -8113,255 +8113,256 @@
 		"./src/lib/timeAgo/index.ts": function(e, t, i) {
 			"use strict";
 			i.d(t, "d", (function() {
-				return _
-			})), i.d(t, "e", (function() {
 				return m
-			})), i.d(t, "c", (function() {
+			})), i.d(t, "e", (function() {
 				return p
-			})), i.d(t, "a", (function() {
+			})), i.d(t, "c", (function() {
 				return h
-			})), i.d(t, "b", (function() {
+			})), i.d(t, "a", (function() {
 				return f
+			})), i.d(t, "b", (function() {
+				return b
 			}));
-			var n = i("./node_modules/fbt/lib/FbtPublic.js"),
-				r = i("./src/lib/constants/index.ts"),
-				s = i("./src/reddit/constants/intlSupport.ts");
-			const o = {
-					[r.kb]: r.Sb,
-					[r.Q]: r.kb,
-					[r.B]: r.Q,
-					[r.pb]: r.B,
-					[r.sc]: r.pb
+			var n = i("./node_modules/@reddit/i18n-tools/runtime/helpers/locale/constants.js"),
+				r = i("./node_modules/fbt/lib/FbtPublic.js"),
+				s = i("./src/lib/constants/index.ts"),
+				o = i("./src/reddit/constants/intlSupport.ts");
+			const d = {
+					[s.kb]: s.Sb,
+					[s.Q]: s.kb,
+					[s.B]: s.Q,
+					[s.pb]: s.B,
+					[s.sc]: s.pb
 				},
-				d = {
-					[r.Sb]: e => n.fbt._({
+				a = {
+					[s.Sb]: e => r.fbt._({
 						"*": "{number} seconds",
 						_1: "1 second"
-					}, [n.fbt._plural(e, "number")], {
+					}, [r.fbt._plural(e, "number")], {
 						hk: "1Z9CfH"
 					}),
-					[r.kb]: e => n.fbt._({
+					[s.kb]: e => r.fbt._({
 						"*": "{number} minutes",
 						_1: "1 minute"
-					}, [n.fbt._plural(e, "number")], {
+					}, [r.fbt._plural(e, "number")], {
 						hk: "3FAWqJ"
 					}),
-					[r.Q]: e => n.fbt._({
+					[s.Q]: e => r.fbt._({
 						"*": "{number} hours",
 						_1: "1 hour"
-					}, [n.fbt._plural(e, "number")], {
+					}, [r.fbt._plural(e, "number")], {
 						hk: "2EMZXz"
 					}),
-					[r.B]: e => n.fbt._({
+					[s.B]: e => r.fbt._({
 						"*": "{number} days",
 						_1: "1 day"
-					}, [n.fbt._plural(e, "number")], {
+					}, [r.fbt._plural(e, "number")], {
 						hk: "4feu1g"
 					}),
-					[r.pb]: e => n.fbt._({
+					[s.pb]: e => r.fbt._({
 						"*": "{number} months",
 						_1: "1 month"
-					}, [n.fbt._plural(e, "number")], {
+					}, [r.fbt._plural(e, "number")], {
 						hk: "2jqQGm"
 					}),
-					[r.sc]: e => n.fbt._({
+					[s.sc]: e => r.fbt._({
 						"*": "{number} years",
 						_1: "1 year"
-					}, [n.fbt._plural(e, "number")], {
+					}, [r.fbt._plural(e, "number")], {
 						hk: "3rMhN9"
 					})
 				},
-				a = {
-					[r.Sb]: e => n.fbt._({
+				l = {
+					[s.Sb]: e => r.fbt._({
 						"*": "{number} seconds ago",
 						_1: "1 second ago"
-					}, [n.fbt._plural(e, "number")], {
+					}, [r.fbt._plural(e, "number")], {
 						hk: "rJZ1O"
 					}),
-					[r.kb]: e => n.fbt._({
+					[s.kb]: e => r.fbt._({
 						"*": "{number} minutes ago",
 						_1: "1 minute ago"
-					}, [n.fbt._plural(e, "number")], {
+					}, [r.fbt._plural(e, "number")], {
 						hk: "4yGI4N"
 					}),
-					[r.Q]: e => n.fbt._({
+					[s.Q]: e => r.fbt._({
 						"*": "{number} hours ago",
 						_1: "1 hour ago"
-					}, [n.fbt._plural(e, "number")], {
+					}, [r.fbt._plural(e, "number")], {
 						hk: "1Fr9Xx"
 					}),
-					[r.B]: e => n.fbt._({
+					[s.B]: e => r.fbt._({
 						"*": "{number} days ago",
 						_1: "1 day ago"
-					}, [n.fbt._plural(e, "number")], {
+					}, [r.fbt._plural(e, "number")], {
 						hk: "4lK3UT"
 					}),
-					[r.pb]: e => n.fbt._({
+					[s.pb]: e => r.fbt._({
 						"*": "{number} months ago",
 						_1: "1 month ago"
-					}, [n.fbt._plural(e, "number")], {
+					}, [r.fbt._plural(e, "number")], {
 						hk: "32PB2y"
 					}),
-					[r.sc]: e => n.fbt._({
+					[s.sc]: e => r.fbt._({
 						"*": "{number} years ago",
 						_1: "1 year ago"
-					}, [n.fbt._plural(e, "number")], {
+					}, [r.fbt._plural(e, "number")], {
 						hk: "S0Gnf"
 					})
 				},
-				l = {
-					[r.Sb]: e => n.fbt._("{amount}s", [n.fbt._param("amount", String(e))], {
+				u = {
+					[s.Sb]: e => r.fbt._("{amount}s", [r.fbt._param("amount", String(e))], {
 						hk: "1wpxaX"
 					}),
-					[r.kb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+					[s.kb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "3XgTJP"
 					}),
-					[r.Q]: e => n.fbt._("{amount}h", [n.fbt._param("amount", String(e))], {
+					[s.Q]: e => r.fbt._("{amount}h", [r.fbt._param("amount", String(e))], {
 						hk: "2e5Zug"
 					}),
-					[r.B]: e => n.fbt._("{amount}d", [n.fbt._param("amount", String(e))], {
+					[s.B]: e => r.fbt._("{amount}d", [r.fbt._param("amount", String(e))], {
 						hk: "1M1jhY"
 					}),
-					[r.pb]: e => n.fbt._("{amount}m", [n.fbt._param("amount", String(e))], {
+					[s.pb]: e => r.fbt._("{amount}m", [r.fbt._param("amount", String(e))], {
 						hk: "3cNGfu"
 					}),
-					[r.sc]: e => n.fbt._("{amount}y", [n.fbt._param("amount", String(e))], {
+					[s.sc]: e => r.fbt._("{amount}y", [r.fbt._param("amount", String(e))], {
 						hk: "8gNOa"
 					})
 				},
-				u = {
-					[r.Sb]: e => n.fbt._("{amount}s ago", [n.fbt._param("amount", String(e))], {
+				c = {
+					[s.Sb]: e => r.fbt._("{amount}s ago", [r.fbt._param("amount", String(e))], {
 						hk: "g6jbi"
 					}),
-					[r.kb]: e => n.fbt._("{amount}m ago", [n.fbt._param("amount", String(e))], {
+					[s.kb]: e => r.fbt._("{amount}m ago", [r.fbt._param("amount", String(e))], {
 						hk: "3fMUq7"
 					}),
-					[r.Q]: e => n.fbt._("{amount}h ago", [n.fbt._param("amount", String(e))], {
+					[s.Q]: e => r.fbt._("{amount}h ago", [r.fbt._param("amount", String(e))], {
 						hk: "1HZHiX"
 					}),
-					[r.B]: e => n.fbt._("{amount}d ago", [n.fbt._param("amount", String(e))], {
+					[s.B]: e => r.fbt._("{amount}d ago", [r.fbt._param("amount", String(e))], {
 						hk: "3WIJYN"
 					}),
-					[r.pb]: e => n.fbt._("{amount}m ago", [n.fbt._param("amount", String(e))], {
+					[s.pb]: e => r.fbt._("{amount}m ago", [r.fbt._param("amount", String(e))], {
 						hk: "7g1Ut"
 					}),
-					[r.sc]: e => n.fbt._("{amount}y ago", [n.fbt._param("amount", String(e))], {
+					[s.sc]: e => r.fbt._("{amount}y ago", [r.fbt._param("amount", String(e))], {
 						hk: "4piT6o"
 					})
 				},
-				c = {
-					[r.Sb]: e => n.fbt._("{amount}s left", [n.fbt._param("amount", String(e))], {
+				_ = {
+					[s.Sb]: e => r.fbt._("{amount}s left", [r.fbt._param("amount", String(e))], {
 						hk: "1ZSXLq"
 					}),
-					[r.kb]: e => n.fbt._("{amount}m left", [n.fbt._param("amount", String(e))], {
+					[s.kb]: e => r.fbt._("{amount}m left", [r.fbt._param("amount", String(e))], {
 						hk: "1Oe8PO"
 					}),
-					[r.Q]: e => n.fbt._("{amount}h left", [n.fbt._param("amount", String(e))], {
+					[s.Q]: e => r.fbt._("{amount}h left", [r.fbt._param("amount", String(e))], {
 						hk: "1z3Oub"
 					}),
-					[r.B]: e => n.fbt._("{amount}d left", [n.fbt._param("amount", String(e))], {
+					[s.B]: e => r.fbt._("{amount}d left", [r.fbt._param("amount", String(e))], {
 						hk: "3d5R8E"
 					})
 				};
 
-			function _(e) {
+			function m(e) {
 				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-				return !e || isNaN(e) ? "" : s.b && Object(s.c)() && Object(s.d)(t.locale) ? function(e) {
+				return !e || isNaN(e) ? "" : o.b && Object(o.c)() && Object(o.d)(t.locale) ? function(e) {
 					let {
 						shortenedUnit: t,
 						noPostfix: i,
-						locale: s = r.D
+						locale: o = n.DEFAULT_LOCALE
 					} = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-					const o = Date.now(),
-						d = e * r.Sb - o,
-						a = Math.abs(d);
-					if (Math.abs(d) < r.kb) return n.fbt._("just now", null, {
+					const d = Date.now(),
+						a = e * s.Sb - d,
+						l = Math.abs(a);
+					if (Math.abs(a) < s.kb) return r.fbt._("just now", null, {
 						hk: "WMsPx"
 					}).toString();
-					let l, u;
-					const c = t ? i ? "narrow" : "short" : "long";
-					if (Math.round(a / r.kb) < 60 ? (u = d / r.kb, l = "minute") : Math.round(a / r.Q) < 24 ? (u = d / r.Q, l = "hour") : Math.round(a / r.B) < 29 ? (u = d / r.B, l = "day") : Math.round(a / r.pb) < 12 ? (u = d / r.pb, l = "month") : (u = d / r.sc, l = "year"), u = Math.round(u), i) {
-						return new Intl.NumberFormat(s, {
+					let u, c;
+					const _ = t ? i ? "narrow" : "short" : "long";
+					if (Math.round(l / s.kb) < 60 ? (c = a / s.kb, u = "minute") : Math.round(l / s.Q) < 24 ? (c = a / s.Q, u = "hour") : Math.round(l / s.B) < 29 ? (c = a / s.B, u = "day") : Math.round(l / s.pb) < 12 ? (c = a / s.pb, u = "month") : (c = a / s.sc, u = "year"), c = Math.round(c), i) {
+						return new Intl.NumberFormat(o, {
 							style: "unit",
-							unit: l,
-							unitDisplay: c
-						}).format(Math.abs(u))
+							unit: u,
+							unitDisplay: _
+						}).format(Math.abs(c))
 					}
-					return new Intl.RelativeTimeFormat(s, {
+					return new Intl.RelativeTimeFormat(o, {
 						localeMatcher: "best fit",
 						numeric: "always",
-						style: c
-					}).format(u, l)
+						style: _
+					}).format(c, u)
 				}(e, t) : function(e) {
 					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
 					const i = Date.now(),
-						s = Math.abs(i - 1e3 * e);
-					if (s < r.kb) return n.fbt._("just now", null, {
+						n = Math.abs(i - 1e3 * e);
+					if (n < s.kb) return r.fbt._("just now", null, {
 						hk: "WMsPx"
 					}).toString();
-					let c = a;
-					t.noPostfix && t.shortenedUnit ? c = l : t.noPostfix ? c = d : t.shortenedUnit && (c = u);
-					for (const n of [r.Q, r.B, r.pb, r.sc])
-						if (s < n) {
-							const e = Math.floor(s / o[n]);
-							return (0, c[o[n]])(e).toString()
-						} const _ = Math.floor(s / r.sc);
-					return c[r.sc](_).toString()
+					let o = l;
+					t.noPostfix && t.shortenedUnit ? o = u : t.noPostfix ? o = a : t.shortenedUnit && (o = c);
+					for (const r of [s.Q, s.B, s.pb, s.sc])
+						if (n < r) {
+							const e = Math.floor(n / d[r]);
+							return (0, o[d[r]])(e).toString()
+						} const _ = Math.floor(n / s.sc);
+					return o[s.sc](_).toString()
 				}(e, t)
-			}
-
-			function m(e) {
-				const t = Date.now(),
-					i = "number" == typeof e ? e : new Date(e).valueOf();
-				return Math.trunc(Math.abs(t - i) / r.Q)
 			}
 
 			function p(e) {
 				const t = Date.now(),
+					i = "number" == typeof e ? e : new Date(e).valueOf();
+				return Math.trunc(Math.abs(t - i) / s.Q)
+			}
+
+			function h(e) {
+				const t = Date.now(),
 					i = "number" == typeof e ? e : new Date(e).valueOf(),
 					n = Math.abs(t - 1e3 * i);
-				return Math.floor(n / r.B)
+				return Math.floor(n / s.B)
 			}
 
-			function h(e, t) {
+			function f(e, t) {
 				const i = Date.now(),
-					s = Math.abs(i - 1e3 * e),
-					d = new Date(1e3 * e),
+					n = Math.abs(i - 1e3 * e),
+					o = new Date(1e3 * e),
 					a = new Date(i);
-				if (s < r.kb) return n.fbt._("now", null, {
+				if (n < s.kb) return r.fbt._("now", null, {
 					hk: "1hZvPT"
 				}).toString();
-				if (s < r.rc)
-					for (const n of [r.Q, r.B, r.pb])
-						if (s < n) {
-							const e = Math.floor(s / o[n]);
-							return (t ? l : u)[o[n]](e).toString()
-						} return d.getFullYear() !== a.getFullYear() ? d.toLocaleDateString() : new Intl.DateTimeFormat("default", {
+				if (n < s.rc)
+					for (const r of [s.Q, s.B, s.pb])
+						if (n < r) {
+							const e = Math.floor(n / d[r]);
+							return (t ? u : c)[d[r]](e).toString()
+						} return o.getFullYear() !== a.getFullYear() ? o.toLocaleDateString() : new Intl.DateTimeFormat("default", {
 					month: "short",
 					day: "numeric"
-				}).format(d)
+				}).format(o)
 			}
 
-			function f(e) {
+			function b(e) {
 				const t = Date.now(),
 					i = Math.abs(1e3 * e - t),
-					s = new Date(1e3 * e),
-					d = new Date(t);
-				if (i < r.pb)
-					for (const n of [r.Q, r.B, r.pb])
-						if (i < n) {
-							const e = Math.floor(i / o[n]);
-							return c[o[n]](e).toString()
-						} if (s.getFullYear() !== d.getFullYear()) {
-					const e = s.toLocaleDateString();
-					return n.fbt._("Expires {Expiration date}", [n.fbt._param("Expiration date", e)], {
+					n = new Date(1e3 * e),
+					o = new Date(t);
+				if (i < s.pb)
+					for (const r of [s.Q, s.B, s.pb])
+						if (i < r) {
+							const e = Math.floor(i / d[r]);
+							return _[d[r]](e).toString()
+						} if (n.getFullYear() !== o.getFullYear()) {
+					const e = n.toLocaleDateString();
+					return r.fbt._("Expires {Expiration date}", [r.fbt._param("Expiration date", e)], {
 						hk: "4nE1rV"
 					}).toString()
 				}
 				return new Intl.DateTimeFormat("default", {
 					month: "short",
 					day: "numeric"
-				}).format(s)
+				}).format(n)
 			}
 		},
 		"./src/lib/timezone/index.ts": function(e, t, i) {
@@ -47309,4 +47310,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.921c989ac0947d7980a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.112bb3f82d79947f1123.js.map
