@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.36fd50fdd2e7ee995c7f.js
-// Retrieved at 5/16/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.c0366d1a9a39ab1733e2.js
+// Retrieved at 5/16/2022, 1:50:08 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -2125,6 +2125,89 @@
 				settingsIcon: "A4Iifg_NCOrfabq0ON3mW"
 			}
 		},
+		"./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/AvatarImage.tsx": function(e, t, r) {
+			"use strict";
+			r.d(t, "a", (function() {
+				return N
+			}));
+			var a = r("./node_modules/fbt/lib/FbtPublic.js"),
+				n = r("./node_modules/react/index.js"),
+				s = r.n(n),
+				o = r("./node_modules/react-redux/es/index.js"),
+				c = r("./src/lib/classNames/index.ts"),
+				i = r("./src/reddit/components/Econ/Marketplace/NftProfileUnit/async.ts"),
+				d = r("./src/reddit/helpers/userSnoovatar/index.ts"),
+				l = r("./src/reddit/selectors/experiments/econ/avatarNfts.ts"),
+				m = (r("./node_modules/core-js/modules/web.dom.iterable.js"), r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.m.less")),
+				u = r.n(m);
+			const p = 25;
+
+			function b(e, t) {
+				return Object.keys(t).filter(t => 0 === t.indexOf(e)).map(e => t[e])
+			}
+
+			function f(e) {
+				return e[Math.floor(Math.random() * e.length)]
+			}
+			const v = b("particleDelay", u.a),
+				x = b("particleX", u.a),
+				h = b("particleFloat", u.a),
+				I = () => {
+					const e = f(x),
+						t = f(h),
+						r = f(v);
+					return Object(c.a)(u.a.particle, e, t, r)
+				};
+			class g extends s.a.Component {
+				shouldComponentUpdate() {
+					return !1
+				}
+				render() {
+					const e = [];
+					for (let t = 0; t < p; t++) e.push(this.createParticle(t));
+					return s.a.createElement("div", {
+						role: "presentation",
+						className: u.a.particleWrapper
+					}, e)
+				}
+				createParticle(e) {
+					return s.a.createElement("div", {
+						key: e,
+						className: `${I()}`
+					})
+				}
+			}
+			var _ = g;
+			const N = e => {
+				let {
+					className: t,
+					isGold: r,
+					snoovatarUrl: n,
+					prefersReducedAnimations: m
+				} = e;
+				const p = Object(o.e)(l.b);
+				return n && Object(d.e)(n) && p ? s.a.createElement("div", {
+					className: u.a.nftProfileUnitContainer
+				}, s.a.createElement(i.a, {
+					className: u.a.nftProfileUnit,
+					imageUrl: n
+				})) : s.a.createElement("div", {
+					className: Object(c.a)(u.a.snoovatarContainer, t)
+				}, r && s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
+					className: u.a.topGlow
+				}), s.a.createElement("div", {
+					className: u.a.bottomGlow
+				}), !m && s.a.createElement(_, null)), s.a.createElement("img", {
+					className: Object(c.a)(u.a.snoovatar, {
+						[u.a.premiumGlow]: r
+					}),
+					src: n,
+					alt: a.fbt._("User Avatar", null, {
+						hk: "3aQoRV"
+					})
+				}))
+			}
+		},
 		"./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx": function(e, t, r) {
 			"use strict";
 			var a = r("./src/config.ts"),
@@ -2213,135 +2296,80 @@
 			var a = r("./node_modules/react/index.js"),
 				n = r.n(a),
 				s = r("./node_modules/react-redux/es/index.js"),
-				o = r("./src/lib/classNames/index.ts"),
-				c = r("./src/reddit/components/Econ/Marketplace/NftProfileUnit/async.ts"),
-				i = r("./src/reddit/controls/InternalLink/index.tsx"),
-				d = r("./src/reddit/helpers/userSnoovatar/index.ts"),
-				l = r("./src/reddit/icons/fonts/index.tsx"),
-				m = r("./src/reddit/selectors/experiments/econ/index.ts"),
-				u = r("./src/reddit/selectors/experiments/econ/avatarNfts.ts"),
-				p = r("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.tsx"),
-				b = r("./src/reddit/components/ProfileIdCard/SnoovatarButton/TryItOn.tsx"),
-				f = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserBanner/index.tsx"),
-				v = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserName.tsx"),
-				x = (r("./node_modules/core-js/modules/web.dom.iterable.js"), r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.m.less")),
-				h = r.n(x);
-			const I = 25;
-
-			function g(e, t) {
-				return Object.keys(t).filter(t => 0 === t.indexOf(e)).map(e => t[e])
-			}
-
-			function _(e) {
-				return e[Math.floor(Math.random() * e.length)]
-			}
-			const N = g("particleDelay", h.a),
-				E = g("particleX", h.a),
-				w = g("particleFloat", h.a),
-				O = () => {
-					const e = _(E),
-						t = _(w),
-						r = _(N);
-					return Object(o.a)(h.a.particle, e, t, r)
-				};
-			class j extends n.a.Component {
-				shouldComponentUpdate() {
-					return !1
-				}
-				render() {
-					const e = [];
-					for (let t = 0; t < I; t++) e.push(this.createParticle(t));
-					return n.a.createElement("div", {
-						role: "presentation",
-						className: h.a.particleWrapper
-					}, e)
-				}
-				createParticle(e) {
-					return n.a.createElement("div", {
-						key: e,
-						className: `${O()}`
-					})
-				}
-			}
-			var y = j,
-				C = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserProfile.m.less"),
-				P = r.n(C),
-				U = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx");
+				o = r("./src/reddit/controls/InternalLink/index.tsx"),
+				c = r("./src/reddit/icons/fonts/index.tsx"),
+				i = r("./src/reddit/selectors/experiments/econ/index.ts"),
+				d = r("./src/reddit/components/ProfileIdCard/SnoovatarButton/index.tsx"),
+				l = r("./src/reddit/components/ProfileIdCard/SnoovatarButton/TryItOn.tsx"),
+				m = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserBanner/index.tsx"),
+				u = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserName.tsx"),
+				p = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/index.m.less"),
+				b = r.n(p),
+				f = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserProfile.m.less"),
+				v = r.n(f),
+				x = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/AvatarImage.tsx"),
+				h = r("./src/reddit/components/ProfileIdCard/UserProfileOverview/UserSnoovatar/UserInformation.tsx");
 			t.a = e => {
 				let {
 					bannerBackgroundImage: t,
 					compact: r,
 					currentUserHasSnoovatar: a,
-					editMode: x,
-					isDeletingBanner: I,
-					isEmployee: g,
-					isGold: _,
-					isNSFW: N,
-					isOwnProfile: E,
-					onClickSnoovatar: w,
-					onDeleteBanner: O,
-					prefersReducedAnimations: j,
-					snoovatarUrl: C,
-					title: k,
-					userCreated: A,
-					username: S,
-					url: B,
-					isHovercard: M
+					editMode: p,
+					isDeletingBanner: f,
+					isEmployee: I,
+					isGold: g,
+					isNSFW: _,
+					isOwnProfile: N,
+					onClickSnoovatar: E,
+					onDeleteBanner: w,
+					prefersReducedAnimations: O,
+					snoovatarUrl: j,
+					title: y,
+					userCreated: C,
+					username: P,
+					url: U,
+					isHovercard: k
 				} = e;
-				const F = Object(s.e)(e => !E && !!C && Object(m.f)(e)),
-					T = Object(s.e)(u.b),
-					L = C && Object(d.e)(C) && T;
-				return n.a.createElement(n.a.Fragment, null, n.a.createElement(f.a, {
+				const A = Object(s.e)(e => !N && !!j && Object(i.f)(e));
+				return n.a.createElement(n.a.Fragment, null, n.a.createElement(m.a, {
 					bannerBackgroundImage: t,
-					editMode: !!x,
-					isNSFW: N,
-					username: S,
-					isDeletingBanner: !!I,
-					onDeleteBanner: O
-				}), L ? n.a.createElement("div", {
-					className: h.a.nftProfileUnitContainer
-				}, n.a.createElement(c.a, {
-					className: h.a.nftProfileUnit,
-					imageUrl: C
-				})) : n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-					className: h.a.snoovatarContainer
-				}, _ && n.a.createElement(n.a.Fragment, null, n.a.createElement("div", {
-					className: h.a.topGlow
-				}), n.a.createElement("div", {
-					className: h.a.bottomGlow
-				}), !j && n.a.createElement(y, null)), n.a.createElement("img", {
-					className: Object(o.a)(h.a.snoovatar, {
-						[h.a.premiumGlow]: _
-					}),
-					src: C || void 0
-				})), !x && E && n.a.createElement(i.a, {
+					editMode: !!p,
+					isNSFW: _,
+					username: P,
+					isDeletingBanner: !!f,
+					onDeleteBanner: w
+				}), n.a.createElement(n.a.Fragment, null, n.a.createElement(x.a, {
+					isGold: g,
+					snoovatarUrl: j,
+					prefersReducedAnimations: O
+				}), !p && N && n.a.createElement(o.a, {
 					to: "/settings/profile",
-					className: h.a.snoovatarSettingsLink
-				}, n.a.createElement(l.a, {
+					className: b.a.snoovatarSettingsLink
+				}, n.a.createElement(c.a, {
 					name: "settings",
-					className: P.a.settingsIcon
-				}))), n.a.createElement(U.a, {
-					isEmployee: g,
-					isGold: _,
-					isNSFW: N,
-					title: k,
-					username: S
-				}), n.a.createElement(v.a, {
-					className: h.a.snoovatarUserName,
+					className: v.a.settingsIcon
+				}))), n.a.createElement(h.a, {
+					isEmployee: I,
+					isGold: g,
+					isNSFW: _,
+					title: y,
+					username: P
+				}), n.a.createElement(u.a, {
+					className: b.a.snoovatarUserName,
 					shouldDisplaySnoovatar: !0,
-					username: S,
-					userCreated: A,
-					url: B
-				}), (E || !a && !!C) && n.a.createElement(p.a, {
+					username: P,
+					userCreated: C,
+					url: U
+				}), (N || !a && !!j) && n.a.createElement(d.a, {
 					compact: r,
 					currentUserHasSnoovatar: a,
-					isOwnProfile: E,
-					onClick: w
-				}), F && n.a.createElement(b.a, {
-					username: S,
-					isHovercard: !!M,
+					isOwnProfile: N,
+					onClick: E
+				}), A && n.a.createElement(l.a, {
+					username: P,
+					isHovercard: !!k,
 					share: {
-						username: S
+						username: P
 					}
 				}))
 			}
@@ -2682,4 +2710,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.36fd50fdd2e7ee995c7f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.c0366d1a9a39ab1733e2.js.map
