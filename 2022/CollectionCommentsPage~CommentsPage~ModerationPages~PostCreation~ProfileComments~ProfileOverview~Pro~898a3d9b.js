@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.deb68c52a2a38401a515.js
-// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.7c08436d595870b6138f.js
+// Retrieved at 5/16/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -904,8 +904,8 @@
 					Y = D("Remove", A.id, W),
 					z = D("Report", A.id, W),
 					Z = D("Spam", A.id, W),
-					$ = D("Sticky", A.id, W),
-					Q = D("Pinned", A.id, W);
+					Q = D("Sticky", A.id, W),
+					$ = D("Pinned", A.id, W);
 				return o.a.createElement("div", {
 					className: t
 				}, a && s && A.distinguishType === d.G.MODERATOR && o.a.createElement(r.Fragment, null, o.a.createElement(E.a, {
@@ -939,21 +939,21 @@
 					isFilled: !0,
 					className: Object(c.a)(I.a.icon, I.a.stickyIcon),
 					desc: R(),
-					id: $,
-					onMouseEnter: U($),
-					onMouseLeave: F
-				}), o.a.createElement(u.c, L({
-					tooltipId: $,
-					text: R()
-				}, J))), k && b && o.a.createElement(r.Fragment, null, o.a.createElement(S.a, {
-					isFilled: !0,
-					className: Object(c.a)(I.a.icon, I.a.stickyIcon),
-					desc: B(),
 					id: Q,
 					onMouseEnter: U(Q),
 					onMouseLeave: F
 				}), o.a.createElement(u.c, L({
 					tooltipId: Q,
+					text: R()
+				}, J))), k && b && o.a.createElement(r.Fragment, null, o.a.createElement(S.a, {
+					isFilled: !0,
+					className: Object(c.a)(I.a.icon, I.a.stickyIcon),
+					desc: B(),
+					id: $,
+					onMouseEnter: U($),
+					onMouseLeave: F
+				}), o.a.createElement(u.c, L({
+					tooltipId: $,
 					text: B()
 				}, J))), (A.isApproved || A.approvedBy) && o.a.createElement(r.Fragment, null, o.a.createElement(v.a, {
 					isFilled: !0,
@@ -2811,18 +2811,6 @@
 				onMouseLeave: e.onMouseLeave
 			}, r.a.createElement(i.a, null, e.desc))
 		},
-		"./src/reddit/icons/fonts/Gift/index.tsx": function(e, t, s) {
-			"use strict";
-			var n = s("./node_modules/react/index.js"),
-				r = s.n(n),
-				o = s("./src/reddit/icons/fonts/helpers.tsx");
-			t.a = e => r.a.createElement("i", {
-				className: `${Object(o.b)("award",e.isFilled)} ${e.className}`,
-				id: e.id,
-				onMouseEnter: e.onMouseEnter,
-				onMouseLeave: e.onMouseLeave
-			}, r.a.createElement(o.a, null, e.desc))
-		},
 		"./src/reddit/icons/fonts/Lock/index.tsx": function(e, t, s) {
 			"use strict";
 			var n = s("./node_modules/react/index.js"),
@@ -2941,4 +2929,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.deb68c52a2a38401a515.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.7c08436d595870b6138f.js.map

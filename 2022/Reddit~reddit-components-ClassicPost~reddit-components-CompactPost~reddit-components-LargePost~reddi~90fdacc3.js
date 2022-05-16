@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.3ea7692704f87e81eaca.js
-// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.295ed1948048d2f42ea2.js
+// Retrieved at 5/16/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -445,9 +445,9 @@
 			})), n.d(t, "j", (function() {
 				return F
 			})), n.d(t, "g", (function() {
-				return M
-			})), n.d(t, "i", (function() {
 				return U
+			})), n.d(t, "i", (function() {
+				return M
 			})), n.d(t, "h", (function() {
 				return Y
 			}));
@@ -554,7 +554,7 @@
 						n(Object(a.f)(s))
 					}
 					return _
-				}, M = (e, t) => async (n, s, o) => {
+				}, U = (e, t) => async (n, s, o) => {
 					let {
 						apiContext: i
 					} = o;
@@ -577,10 +577,10 @@
 							hk: "1nwT0G"
 						}), u.b.Error, r.fbt._("Retry", null, {
 							hk: "1XMjgA"
-						}), M(e, t));
+						}), U(e, t));
 						n(Object(a.f)(s))
 					}
-				}, U = (e, t) => async (n, s, o) => {
+				}, M = (e, t) => async (n, s, o) => {
 					let {
 						apiContext: i
 					} = o;
@@ -609,7 +609,7 @@
 							hk: "4ohwNd"
 						}), u.b.Error, r.fbt._("Retry", null, {
 							hk: "1XMjgA"
-						}), U(e, t));
+						}), M(e, t));
 						n(Object(a.f)(s))
 					}
 				}, Y = e => {
@@ -1150,8 +1150,8 @@
 					})
 				}
 			}
-			const M = Object(m.a)(F),
-				U = Object(m.a)(e => {
+			const U = Object(m.a)(F),
+				M = Object(m.a)(e => {
 					let t = "",
 						n = !1;
 					const r = e.richtext.map((r, s) => {
@@ -1205,9 +1205,9 @@
 					})
 				}),
 				Y = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(T.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(x.a)(Object(T.a)(e).post, S.a.black, S.a.white) : e.textColor === y.e.Dark ? S.a.black : S.a.white,
-				V = p.a.wrapped(M, "TextFlair", k.a),
-				B = p.a.wrapped(U, "RichTextFlair", k.a),
-				G = e => {
+				V = p.a.wrapped(U, "TextFlair", k.a),
+				B = p.a.wrapped(M, "RichTextFlair", k.a),
+				W = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -1217,8 +1217,8 @@
 							return Object(i.i)(.1, Object(T.a)(o()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				W = p.a.wrapped(e => {
-					const t = G(e),
+				G = p.a.wrapped(e => {
+					const t = W(e),
 						n = c.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -1296,7 +1296,7 @@
 						});
 					case y.f.Nsfw:
 					case y.f.Spoiler:
-						return c.a.createElement(W, {
+						return c.a.createElement(G, {
 							className: t,
 							text: s.text,
 							type: s.type
@@ -1872,13 +1872,13 @@
 				w = n("./src/reddit/components/SEOTitle/index.tsx"),
 				R = n("./src/reddit/selectors/experiments/loggedOutBlockingInterstitial.ts"),
 				F = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
-				M = n("./src/reddit/selectors/user.ts"),
-				U = n("./src/reddit/components/PostTitle/index.m.less"),
-				Y = n.n(U),
+				U = n("./src/reddit/selectors/user.ts"),
+				M = n("./src/reddit/components/PostTitle/index.m.less"),
+				Y = n.n(M),
 				V = n("./src/config.ts"),
 				B = n("./src/reddit/hooks/useClickSourceData.ts"),
-				G = n("./src/reddit/hooks/usePostContext.ts"),
-				W = n("./src/reddit/hooks/useTheme.ts"),
+				W = n("./src/reddit/hooks/usePostContext.ts"),
+				G = n("./src/reddit/hooks/useTheme.ts"),
 				q = n("./src/telemetry/models/Outbound.ts");
 
 			function H() {
@@ -1903,7 +1903,7 @@
 						redditStyle: c,
 						shouldBlurTitle: d
 					} = e;
-					const u = Object(W.a)();
+					const u = Object(G.a)();
 					let m = "";
 					switch (t) {
 						case L.ExtraLarge:
@@ -1977,7 +1977,7 @@
 						})
 					},
 					isNsfwBlurSubreddit: F.e,
-					shouldOpenPostInNewTab: M.ib
+					shouldOpenPostInNewTab: U.ib
 				}),
 				X = e => {
 					const {
@@ -2142,14 +2142,14 @@
 			t.c = o.a.memo((function(e) {
 				const t = Object(m.eb)(),
 					n = Object(m.w)(t),
-					r = Object(G.a)(),
+					r = Object(W.a)(),
 					s = Object(i.e)(s => Z(s, {
 						...r,
 						...e,
 						isCommentPermalink: n,
 						pageLayer: t
 					})),
-					a = Object(W.a)(),
+					a = Object(G.a)(),
 					c = Object(u.b)();
 				return r ? o.a.createElement(ee, H({
 					pageLayer: t,
@@ -4209,112 +4209,6 @@
 				}) === r.pd
 			}
 		},
-		"./src/reddit/selectors/gold/awardIcon.ts": function(e, t, n) {
-			"use strict";
-			n.d(t, "c", (function() {
-				return m
-			})), n.d(t, "b", (function() {
-				return p
-			})), n.d(t, "a", (function() {
-				return b
-			})), n.d(t, "e", (function() {
-				return f
-			})), n.d(t, "d", (function() {
-				return _
-			}));
-			var r = n("./src/lib/objectSelector/index.ts"),
-				s = n("./src/reddit/models/Gold/Award.ts"),
-				o = n("./src/reddit/selectors/commentSelector.ts"),
-				i = n("./src/reddit/selectors/gold/giveAwards.ts"),
-				a = n("./src/reddit/selectors/posts.ts"),
-				c = n("./src/reddit/selectors/user.ts"),
-				d = n("./src/reddit/selectors/userPrefs.ts");
-			const l = [32, 48, 64, 128],
-				u = (e, t, n) => {
-					const r = t ? e[`staticIcon${n}`] : e[`icon${n}`];
-					return (null == r ? void 0 : r.url) ? r.url : t ? e.staticIcon.url : e.icon.url
-				},
-				m = e => {
-					let {
-						award: t,
-						size: n,
-						prefersReducedMotion: r,
-						postOrComment: o
-					} = e;
-					return t.awardSubType === s.d.Group ? (e => {
-						let {
-							award: t,
-							size: n,
-							prefersReducedMotion: r,
-							postOrComment: s
-						} = e, o = t;
-						if ((null == s ? void 0 : s.awardCountsById) && s.awardCountsById[t.id] && t.tiers) {
-							const e = s.awardCountsById[t.id];
-							o = t.tiers.reduce((t, n) => e >= n.awardingsRequired ? n : t)
-						}
-						return u(o, r, n)
-					})({
-						award: t,
-						size: n,
-						prefersReducedMotion: r,
-						postOrComment: o
-					}) : u(t, r, n)
-				},
-				p = Object(r.a)((e, t) => {
-					let {
-						awards: n,
-						minSize: r,
-						postOrCommentId: s
-					} = t;
-					const i = Object(d.c)(e),
-						c = l.find(e => e >= r),
-						u = s ? Object(a.G)(e, {
-							postId: s
-						}) || Object(o.b)(e, {
-							commentId: s
-						}) : void 0;
-					return n.reduce((e, t) => (t && (e[t.id] = m({
-						award: t,
-						size: c,
-						prefersReducedMotion: i,
-						postOrComment: u
-					})), e), {})
-				}),
-				b = (e, t) => {
-					let {
-						award: n,
-						minSize: r,
-						postOrCommentId: s
-					} = t;
-					return n ? p(e, {
-						awards: [n],
-						minSize: r,
-						postOrCommentId: s
-					})[n.id] : void 0
-				},
-				f = (e, t) => {
-					let {
-						minSize: n,
-						userName: r
-					} = t;
-					const s = Object(c.zb)(e, {
-						userName: r
-					});
-					if (s && s.awardedLastMonth && s.awardedLastMonth.topAward) return b(e, {
-						award: s.awardedLastMonth.topAward,
-						minSize: n
-					})
-				},
-				_ = e => {
-					const t = Object(i.b)(e),
-						n = Object(i.a)(e);
-					return b(e, {
-						award: t,
-						postOrCommentId: n || void 0,
-						minSize: 512
-					})
-				}
-		},
 		"./src/reddit/selectors/userPrefs.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
@@ -4394,4 +4288,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.3ea7692704f87e81eaca.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.295ed1948048d2f42ea2.js.map
