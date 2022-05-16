@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/5.43a95b515a599e1b394a.js
-// Retrieved at 5/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/5.6cd6031bfdbe4acf264f.js
+// Retrieved at 5/16/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[5], {
 		"./node_modules/@apollo/client/cache/inmemory/types.js": function(e, t) {},
@@ -21038,7 +21038,7 @@
 				}()
 			}(ne);
 			var re, ie, ae, oe, se, ce, le, ue, de, fe = ne.exports;
-			(re || (re = {})).Marketplace = "marketplace", (ae = ie || (ie = {})).View = "view", ae.Click = "click", ae.Create = "create", ae.Secure = "secure", ae.Paid = "paid", (se = oe || (oe = {})).ClaimPostUnit = "claim_post_unit", se.ClaimNft = "claim_nft", se.Vault = "vault", se.CreateVault = "create_vault", se.SecureVault = "secure_vault", se.PaymentError = "payment_error", se.ListingFe = "listing_fe", se.NftDetails = "nft_details", se.PdpDynamicCta = "pdp_dynamic_cta", se.VaultConfirmation = "vault_confirmation", se.CompleteTransaction = "complete_transaction", (le = ce || (ce = {})).ClaimFlow = "claim_flow", le.Purchase = "purchase", (ue || (ue = {})).ProductDetailPage = "product_detail_page", (de || (de = {})).Password = "password";
+			(re || (re = {})).Marketplace = "marketplace", (ae = ie || (ie = {})).Click = "click", ae.Create = "create", ae.Secure = "secure", ae.Paid = "paid", ae.View = "view", (se = oe || (oe = {})).ClaimPostUnit = "claim_post_unit", se.ClaimNft = "claim_nft", se.CreateVault = "create_vault", se.CompleteTransaction = "complete_transaction", se.ListingFe = "listing_fe", se.NftDetails = "nft_details", se.PaymentError = "payment_error", se.ProductDetailPage = "product_detail_page", se.PdpDynamicCta = "pdp_dynamic_cta", se.SecureVault = "secure_vault", se.Vault = "vault", se.VaultConfirmation = "vault_confirmation", (le = ce || (ce = {})).ClaimFlow = "claim_flow", le.Purchase = "purchase", le.SetAvatar = "set_avatar", le.Transfer = "transfer", le.ViewNft = "view_nft", (ue || (ue = {})).ProductDetailPage = "product_detail_page", (de || (de = {})).Password = "password";
 			const pe = ({
 					children: e,
 					desc: t
@@ -36665,4 +36665,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.43a95b515a599e1b394a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/5.6cd6031bfdbe4acf264f.js.map

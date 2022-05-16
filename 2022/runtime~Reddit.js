@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.db247bcec1e69142f960.js
-// Retrieved at 5/16/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.886c11361508b6a72b1f.js
+// Retrieved at 5/16/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -1333,13 +1333,13 @@
 						1: "21f3f349e20118a30b2d",
 						2: "06ee896472e56277993e",
 						3: "4f633f9352884ad71cd8",
-						4: "e532eeaf93f4a1ed896d",
-						5: "43a95b515a599e1b394a",
+						4: "e5b533e79beb635f4336",
+						5: "6cd6031bfdbe4acf264f",
 						6: "503dd42562079224a26e",
 						7: "1f17a6ccfff8b0ad21cd",
 						8: "676efd471c8f242d65a1",
 						9: "def4575c95044fc8913f",
-						"vendors~MarketplaceClaimModal~MarketplaceInFeedUnit": "40db9d608ed1231f6325",
+						"vendors~MarketplaceClaimModal~MarketplaceInFeedUnit": "19befbebba1ac3e4ca8f",
 						MarketplaceClaimModal: "8b3887ba0923680c5818",
 						GovernanceTransferPointsModal: "b382d5721a5ea5816ad9",
 						"reddit-components-Governance-TransactionModals-BurnPointsModal~reddit-components-Governance-Transact~8f11de67": "3633eb209dc05f93ba5b",
@@ -1513,7 +1513,7 @@
 						"vendors~xml2js": "8c40daee6c2bccb14296",
 						"reddit-components-Governance-TransactionModals-TransferTransactionModal": "434710ff4fa6215c886f",
 						SignupUpsell: "d9de64812c88e91ebf81",
-						"vendors~NftProfileUnit": "86353f85ab89b3015a6e",
+						"vendors~NftProfileUnit": "774b0dc87239afa5b524",
 						NftProfileUnit: "67b1e84c380b84bf942b",
 						AuthorHovercard: "afa5f4f5eeb9cc0a64b5",
 						AwardTooltip: "0ebb3db8bf6d81522152",
@@ -1730,4 +1730,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.db247bcec1e69142f960.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.886c11361508b6a72b1f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~NftProfileUnit.86353f85ab89b3015a6e.js
-// Retrieved at 5/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~NftProfileUnit.774b0dc87239afa5b524.js
+// Retrieved at 5/16/2022, 6:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~NftProfileUnit"], {
 		"./node_modules/@reddit/crypto/react/nft-treatment/index.es.js": function(e, t, n) {
@@ -1665,7 +1665,7 @@
 					var e, t;
 					const n = null == (t = null == (e = null == f ? void 0 : f.inventoryItems) ? void 0 : e.edges[0]) ? void 0 : t.node;
 					n && a(function(e) {
-						var t, n;
+						var t, n, r, i;
 						return {
 							title: e.nft.title,
 							description: e.nft.description,
@@ -1682,12 +1682,12 @@
 							ipfsUrl: e.nft.imageUrl,
 							metadataUrl: e.nft.tokenUrl,
 							mintDate: e.nft.mintedAt,
-							isMinting: e.tags.includes($.MINTING),
-							isMinted: e.tags.includes($.MINTED),
+							isMinting: (null == (t = null == e ? void 0 : e.tags) ? void 0 : t.includes($.MINTING)) || !1,
+							isMinted: (null == (n = null == e ? void 0 : e.tags) ? void 0 : n.includes($.MINTED)) || !1,
 							soldFor: null,
 							currentPrice: null,
 							vendor: e.nft.vendor,
-							ownerId: null != (n = null == (t = e.owner) ? void 0 : t.id) ? n : ""
+							ownerId: null != (i = null == (r = e.owner) ? void 0 : r.id) ? i : ""
 						}
 					}(n))
 				}, [f]);
@@ -1911,4 +1911,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~NftProfileUnit.86353f85ab89b3015a6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~NftProfileUnit.774b0dc87239afa5b524.js.map
