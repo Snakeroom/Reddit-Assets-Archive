@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileOverview.966c6ae6ce40f9222044.js
-// Retrieved at 5/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileOverview.503a7014b78bc5767a31.js
+// Retrieved at 5/16/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileOverview"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, s) {
@@ -1456,7 +1456,7 @@
 						className: Ie.a.creatorStatsContainer,
 						post: Se,
 						subreddit: Ae,
-						isProfileStats: !0
+						isOwnProfileStats: !0
 					})), Z && r.a.createElement(T.a, {
 						post: Se,
 						postIds: null != Ue ? Ue : [],
@@ -2874,7 +2874,14 @@
 				},
 				Wt = Object(p.u)(),
 				Dt = Object(d.c)({
-					isProfileCreatorStatsEnabled: At.b,
+					isProfileCreatorStatsEnabled: (e, t) => {
+						let {
+							pageLayer: s
+						} = t;
+						return Object(p.E)(e, {
+							pageLayer: s
+						}) && Object(At.b)(e)
+					},
 					isOwnProfile: p.E,
 					over18Prefs: at.jb,
 					layout: p.R
@@ -3267,4 +3274,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.966c6ae6ce40f9222044.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileOverview.503a7014b78bc5767a31.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e10574efb1a669b1d7cb.js
-// Retrieved at 5/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.c466964dfe9a13221611.js
+// Retrieved at 5/16/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2186,7 +2186,7 @@
 					className: oe.a.creatorStatsContainer,
 					post: ve,
 					subreddit: Ee,
-					isProfileStats: !0
+					isOwnProfileStats: !0
 				})));
 				return r.a.createElement(D.b, null, Ke)
 			});
@@ -3392,6 +3392,8 @@
 						case o.b.NotAvailable:
 						case o.b.Expired:
 							return "no_data";
+						case o.b.Quarantined:
+							return "quarantined";
 						default:
 							return ""
 					}
@@ -3409,11 +3411,10 @@
 				}),
 				u = (e, t, n) => o => ({
 					...Object(s.n)(o),
-					action: r.c.VIEW,
-					noun: r.b.SCREEN,
-					source: "global",
+					action: r.c.LOAD,
+					noun: "insights",
+					source: "post_stats",
 					actionInfo: Object(s.d)(o, {
-						pageType: "post_stats",
 						reason: d(t)
 					}),
 					post: Object(s.H)(o, e, void 0, n)
@@ -3499,4 +3500,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.e10574efb1a669b1d7cb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.c466964dfe9a13221611.js.map

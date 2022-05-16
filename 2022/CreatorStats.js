@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatorStats.06aee353f98028eed16a.js
-// Retrieved at 5/9/2022, 3:20:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatorStats.18d3b1068c74063163c6.js
+// Retrieved at 5/16/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatorStats"], {
 		"./src/reddit/components/CreatorStats/Stats.tsx": function(t, e, s) {
@@ -21,8 +21,8 @@
 				v = s("./src/reddit/components/CreatorStats/index.m.less"),
 				C = s.n(v);
 
-			function _() {
-				return (_ = Object.assign || function(t) {
+			function O() {
+				return (O = Object.assign || function(t) {
 					for (var e = 1; e < arguments.length; e++) {
 						var s = arguments[e];
 						for (var o in s) Object.prototype.hasOwnProperty.call(s, o) && (t[o] = s[o])
@@ -30,7 +30,7 @@
 					return t
 				}).apply(this, arguments)
 			}
-			const S = Object(f.a)({
+			const _ = Object(f.a)({
 					resolved: {},
 					chunkName: () => "ViewsTooltip",
 					isReady(t) {
@@ -52,7 +52,7 @@
 				}, {
 					ssr: !1
 				}),
-				O = Object(f.a)({
+				S = Object(f.a)({
 					resolved: {},
 					chunkName: () => "CrosspostsStat",
 					isReady(t) {
@@ -98,7 +98,7 @@
 						tooltipTitleClassName: m,
 						tooltipTitleText: f,
 						tooltipDescriptionText: v,
-						tooltipExtra: S
+						tooltipExtra: _
 					} = t;
 					return l.a.createElement("div", {
 						className: Object(c.a)(C.a.singleStat, e),
@@ -115,13 +115,13 @@
 					}, i && l.a.createElement(h.a, {
 						name: i,
 						className: C.a.icon
-					}), n), s && l.a.createElement(p.a, _({}, s, {
+					}), n), s && l.a.createElement(p.a, O({}, s, {
 						className: Object(c.a)(C.a.hoverTooltip, b)
 					}), f && l.a.createElement("div", {
 						className: Object(c.a)(C.a.tooltipTitle, m)
 					}, f), v && l.a.createElement("div", {
 						className: C.a.tooltipDescription
-					}, v), S))
+					}, v), _))
 				},
 				k = t => {
 					let {
@@ -150,18 +150,18 @@
 					const p = Object(u.b)(j),
 						h = Object(m.a)(),
 						[f, v] = Object(i.useState)(!1),
-						_ = Object(i.useRef)(null),
+						O = Object(i.useRef)(null),
 						w = Object(i.useCallback)(t => {
 							t.stopPropagation(), v(!0)
 						}, []),
 						T = Object(i.useCallback)(() => {
-							h.show(), _.current && clearTimeout(_.current)
+							h.show(), O.current && clearTimeout(O.current)
 						}, [h]),
-						y = Object(i.useCallback)(() => _.current = setTimeout(() => {
+						y = Object(i.useCallback)(() => O.current = setTimeout(() => {
 							v(!1), h.hide()
 						}, 300), [h]);
 					return Object(i.useEffect)(() => () => {
-						_.current && clearTimeout(_.current)
+						O.current && clearTimeout(O.current)
 					}, []), l.a.createElement("div", {
 						className: C.a.statsContainer
 					}, (null === (e = t.postStats.viewCountTotals) || void 0 === e ? void 0 : e.totalCount) && (null === (s = t.postStats.viewCountTrends) || void 0 === s ? void 0 : s.data) && (null === (o = t.postStats.viewCountTrends) || void 0 === o ? void 0 : o.data.length) > 0 && l.a.createElement(N, {
@@ -173,7 +173,7 @@
 						}),
 						iconName: d.a.show,
 						tooltipClassName: C.a.statsTooltip,
-						tooltipExtra: l.a.createElement(S, {
+						tooltipExtra: l.a.createElement(_, {
 							totalCount: t.postStats.viewCountTotals.totalCount,
 							viewsData: t.postStats.viewCountTrends.data
 						})
@@ -242,7 +242,7 @@
 						tooltipTitleClassName: C.a.crosspostsStatTooltipTitle,
 						tooltipExtra: l.a.createElement(k, {
 							className: f ? C.a.twoRowContainer : void 0,
-							leftStatNumber: t.postOtherDiscussions && 0 !== Object.keys(t.postOtherDiscussions).length ? l.a.createElement(O, {
+							leftStatNumber: t.postOtherDiscussions && 0 !== Object.keys(t.postOtherDiscussions).length ? l.a.createElement(S, {
 								crosspostedDestinations: t.postOtherDiscussions,
 								onClick: w,
 								isExpanded: f,
@@ -313,14 +313,14 @@
 				f = s("./src/reddit/selectors/subreddit.ts"),
 				v = s("./src/reddit/selectors/user.ts"),
 				C = s("./src/reddit/actions/creatorStats/constants.ts"),
-				_ = s("./src/lib/initializeClient/installReducer.ts"),
-				S = s("./src/reddit/reducers/features/creatorStats/index.ts");
-			Object(_.a)({
+				O = s("./src/lib/initializeClient/installReducer.ts"),
+				_ = s("./src/reddit/reducers/features/creatorStats/index.ts");
+			Object(O.a)({
 				features: {
-					creatorStats: S.a
+					creatorStats: _.a
 				}
 			});
-			const O = Object(c.a)(C.b),
+			const S = Object(c.a)(C.b),
 				j = Object(c.a)(C.a),
 				N = (t, e, s) => {
 					var o, a;
@@ -343,7 +343,7 @@
 							});
 						if (!(c && Object(d.d)(c.created))) return;
 						if (null === (i = null === (n = o().features) || void 0 === n ? void 0 : n.creatorStats) || void 0 === i ? void 0 : i.postStats[e]) return;
-						t(O());
+						t(S());
 						const p = await (async (t, e) => {
 							return await Object(u.a)(t, {
 								...b,
@@ -406,7 +406,7 @@
 				y = s("./src/reddit/hooks/useTracking.ts"),
 				I = s("./src/reddit/components/CreatorStats/index.m.less"),
 				E = s.n(I),
-				g = s("./src/reddit/components/CreatorStats/Stats.tsx");
+				x = s("./src/reddit/components/CreatorStats/Stats.tsx");
 			e.default = t => {
 				const e = Object(y.a)(),
 					s = Object(l.d)(),
@@ -414,7 +414,7 @@
 				Object(n.useEffect)(() => {
 					const e = t.post.id,
 						o = t.subreddit.id;
-					t.isProfileStats ? s((t => {
+					t.isOwnProfileStats ? s((t => {
 						let {
 							postId: e,
 							subredditId: s
@@ -449,24 +449,24 @@
 						postId: e,
 						subredditId: o
 					}))
-				}, [t.post.id, t.subreddit.id, s]);
+				}, [t.isOwnProfileStats, t.post.id, t.subreddit.id, s]);
 				const b = Object(l.e)(e => Object(p.b)(e, t.post.id)),
 					h = Object(l.e)(e => Object(p.c)(e, t.post.id)),
 					C = Object(l.e)(e => Object(p.d)(e, t.subreddit.id)),
-					_ = Object(l.e)(e => Object(v.Cb)(e, {
+					O = Object(l.e)(e => Object(v.Cb)(e, {
 						postId: t.post.id
 					}));
 				Object(n.useEffect)(() => {
-					const e = Object(d.c)(t.post, h, t.isProfileStats, t.subreddit.isQuarantined);
+					const e = Object(d.c)(t.post, h, t.isOwnProfileStats, t.subreddit.isQuarantined);
 					u(e)
-				}, [t.post, h, t.isProfileStats, t.subreddit.isQuarantined]), Object(n.useEffect)(() => {
+				}, [t.post, h, t.isOwnProfileStats, t.subreddit.isQuarantined]), Object(n.useEffect)(() => {
 					var s;
-					if (t.isProfileStats) {
+					if (t.isOwnProfileStats) {
 						const o = (null === (s = null == h ? void 0 : h.viewCountTotals) || void 0 === s ? void 0 : s.totalCount) || 0;
 						e(Object(T.e)(t.post.id, c, o))
 					} else e(Object(T.f)(t.post.id, c))
-				}, [e, t.post.id, c, h, t.isProfileStats]);
-				const S = Object(n.useCallback)(() => {
+				}, [e, t.post.id, c, h, t.isOwnProfileStats]);
+				const _ = Object(n.useCallback)(() => {
 					var s;
 					const o = (null === (s = null == h ? void 0 : h.viewCountTotals) || void 0 === s ? void 0 : s.totalCount) || 0;
 					e(Object(T.c)(t.post.id, c, o))
@@ -540,10 +540,10 @@
 						default:
 							return ""
 					}
-				})(c, t.post, t.subreddit, _, s => e(Object(T.b)(s, t.post.id)), t.isProfileStats ? S : void 0))), c === d.b.Available && h && i.a.createElement(g.a, {
-					isUserOp: _,
+				})(c, t.post, t.subreddit, O, s => e(Object(T.b)(s, t.post.id)), t.isOwnProfileStats ? _ : void 0))), c === d.b.Available && h && i.a.createElement(x.a, {
+					isUserOp: O,
 					upvoteRatio: t.post.upvoteRatio || void 0,
-					postOtherDiscussions: t.isProfileStats ? b : void 0,
+					postOtherDiscussions: t.isOwnProfileStats ? b : void 0,
 					postStats: h,
 					numCrossposts: t.post.numCrossposts,
 					subredditKarma: C
@@ -612,6 +612,8 @@
 						case o.b.NotAvailable:
 						case o.b.Expired:
 							return "no_data";
+						case o.b.Quarantined:
+							return "quarantined";
 						default:
 							return ""
 					}
@@ -629,11 +631,10 @@
 				}),
 				u = (t, e, s) => o => ({
 					...Object(r.n)(o),
-					action: a.c.VIEW,
-					noun: a.b.SCREEN,
-					source: "global",
+					action: a.c.LOAD,
+					noun: "insights",
+					source: "post_stats",
 					actionInfo: Object(r.d)(o, {
-						pageType: "post_stats",
 						reason: c(e)
 					}),
 					post: Object(r.H)(o, t, void 0, s)
@@ -674,4 +675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.06aee353f98028eed16a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.18d3b1068c74063163c6.js.map

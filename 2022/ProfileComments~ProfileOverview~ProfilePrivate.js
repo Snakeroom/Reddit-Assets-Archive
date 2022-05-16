@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.9c36bcb6daafb9bb2072.js
-// Retrieved at 5/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.2c646784cc429c3367aa.js
+// Retrieved at 5/16/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePrivate"], {
 		"./src/reddit/components/AdLinkWrapper/index.m.less": function(e, t, s) {
@@ -182,8 +182,8 @@
 				S = s("./src/reddit/components/ModModeReports/helpers.ts"),
 				T = s("./src/reddit/components/OneFeed/PostRecommendationContext.tsx"),
 				N = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
-				R = s("./src/reddit/components/PostContainer/index.tsx"),
-				D = s("./src/reddit/components/PostMeta/index.tsx"),
+				D = s("./src/reddit/components/PostContainer/index.tsx"),
+				R = s("./src/reddit/components/PostMeta/index.tsx"),
 				L = s("./src/reddit/components/PostOverflowMenu/index.tsx"),
 				A = s("./src/reddit/components/PostRailAndVotes/index.tsx"),
 				F = s("./src/reddit/components/PostTitle/index.tsx"),
@@ -262,8 +262,8 @@
 				}, [b, he, Ce.id, Se]);
 				const Te = Ee ? void 0 : O,
 					Ne = s || void 0,
-					Re = Object(q.a)(le),
-					De = Object(Q.a)(le),
+					De = Object(q.a)(le),
+					Re = Object(Q.a)(le),
 					Le = Object(Z.a)(le),
 					Ae = me && q.a,
 					Fe = Object(P.a)(Ce),
@@ -302,7 +302,7 @@
 				Object(H.b)(Ce) && (Ye = n.a.createElement(k, {
 					post: Ce
 				}));
-				const Xe = n.a.createElement(R.a, {
+				const Xe = n.a.createElement(D.a, {
 					className: Object(i.a)(te.a.classicPostStyles, oe.a.postContainer, Object(X.a)(e), {
 						[oe.a.mFirst]: E,
 						[oe.a.shouldShowOverflow]: Me
@@ -364,11 +364,11 @@
 					isSponsored: Ce.isSponsored,
 					postId: Ce.id,
 					source: Ce.source
-				}, Object(d.a)(Ce))), n.a.createElement(D.a, ne({
+				}, Object(d.a)(Ce))), n.a.createElement(R.a, ne({
 					key: "PostMeta"
-				}, ze)), me && Re && Fe && n.a.createElement(I.a, {
+				}, ze)), me && De && Fe && n.a.createElement(I.a, {
 					thing: Ce
-				}), me && Re && Be && n.a.createElement(M.a, {
+				}), me && De && Be && n.a.createElement(M.a, {
 					onIgnoreReports: ue,
 					reportable: Ce
 				}), Ie && Qe && Qe.url && !Ce.isSurveyAd && n.a.createElement(m.a, {
@@ -395,8 +395,8 @@
 				}), !Ce.isSurveyAd && n.a.createElement(_.c, {
 					className: oe.a.flatlist,
 					currentUser: a,
-					hasModFlairPerms: De,
-					hasModPostPerms: Re,
+					hasModFlairPerms: Re,
+					hasModPostPerms: De,
 					hasModFullPerms: Le,
 					hostPostData: f,
 					isOverlay: !!ae,
@@ -418,7 +418,7 @@
 					className: oe.a.creatorStatsContainer,
 					post: Ce,
 					subreddit: we,
-					isProfileStats: !0
+					isOwnProfileStats: !0
 				})));
 				return n.a.createElement(W.b, null, Xe)
 			});
@@ -723,8 +723,8 @@
 				S = s("./src/reddit/actions/tooltip.ts"),
 				T = s("./src/reddit/components/CommentModModeDropdown/index.tsx"),
 				N = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/index.tsx"),
-				R = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/RestrictedButton.tsx"),
-				D = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+				D = s("./src/reddit/components/Comments/Comment/ModToolsFlatlist/RestrictedButton.tsx"),
+				R = s("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
 				L = s("./src/reddit/components/DistinguishCommentDropdown/index.tsx"),
 				A = s("./src/reddit/components/ModActionsMenu/index.tsx"),
 				F = s("./src/reddit/components/ModModeReports/helpers.ts"),
@@ -892,7 +892,7 @@
 						modModeEnabled: t,
 						showModTools: s
 					} = this.props, o = Object(F.a)(e);
-					if (s && Object(F.c)(e) && !t) return n.a.createElement(R.a, {
+					if (s && Object(F.c)(e) && !t) return n.a.createElement(D.a, {
 						text: `${o}`,
 						onClick: this.handleRestrictedButtonClick,
 						selected: this.props.activeTooltipId === Pe(e.id),
@@ -912,7 +912,7 @@
 						onDistinguishComment: r,
 						showModTools: i
 					} = this.props, a = Object(U.a)(s), d = !!t && t.displayText === e.author, c = !!t && t.isEmployee;
-					if (i && d && !e.bannedBy && (c || a && !o)) return n.a.createElement(R.a, {
+					if (i && d && !e.bannedBy && (c || a && !o)) return n.a.createElement(D.a, {
 						onClick: this.handleDistinguishToggle,
 						selected: this.props.activeTooltipId === ye(e.id)
 					}, n.a.createElement(ve.a, null), n.a.createElement(L.a, {
@@ -1000,7 +1000,7 @@
 						onClick: this.handleDelete
 					}, n.a.createElement(Ce.a, {
 						name: he.a.delete
-					}))), this.props.isConfirmModalOpen && n.a.createElement(D.a, {
+					}))), this.props.isConfirmModalOpen && n.a.createElement(R.a, {
 						actionText: O.fbt._("Delete", null, {
 							hk: "3hQAl"
 						}),
@@ -1069,8 +1069,8 @@
 					}
 				})(Object(ie.c)(Object(W.b)(Se)))),
 				Ne = s("./src/reddit/components/Comments/Comment/TopMeta/index.tsx"),
-				Re = s("./src/reddit/components/RichTextJson/index.tsx"),
-				De = s("./src/reddit/helpers/getRichTextContent/index.ts"),
+				De = s("./src/reddit/components/RichTextJson/index.tsx"),
+				Re = s("./src/reddit/helpers/getRichTextContent/index.ts"),
 				Le = s("./src/reddit/selectors/commentSelector.ts"),
 				Ae = s("./src/reddit/components/Comments/ProfileComment/index.m.less"),
 				Fe = s.n(Ae);
@@ -1092,9 +1092,9 @@
 					isExpanded: r,
 					showFlatlist: i,
 					showModTools: c
-				} = e, l = s => n.a.createElement(Re.a, {
+				} = e, l = s => n.a.createElement(De.a, {
 					className: s,
-					content: Object(De.a)(t),
+					content: Object(Re.a)(t),
 					mediaMetadata: t.media && t.media.mediaMetadata,
 					rtJsonElementProps: Ue(e)
 				});
@@ -1747,7 +1747,7 @@
 				w = s.n(k);
 			const {
 				fbt: j
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), _ = c.a.wrapped(b.a, "InternalLink", w.a), y = c.a.div("Wrapper", w.a), I = c.a.div("Row", w.a), P = c.a.wrapped(O.a, "CommentIcon", w.a), M = c.a.div("TitleContainer", w.a), S = c.a.div("PostTitleContainer", w.a), T = c.a.wrapped(p.c, "PostTitle", w.a), N = c.a.wrapped(u.d, "PostTopMeta", w.a), R = c.a.wrapped(u.a, "MetaSeparator", w.a), D = Object(r.b)(() => Object(i.c)({
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), _ = c.a.wrapped(b.a, "InternalLink", w.a), y = c.a.div("Wrapper", w.a), I = c.a.div("Row", w.a), P = c.a.wrapped(O.a, "CommentIcon", w.a), M = c.a.div("TitleContainer", w.a), S = c.a.div("PostTitleContainer", w.a), T = c.a.wrapped(p.c, "PostTitle", w.a), N = c.a.wrapped(u.d, "PostTopMeta", w.a), D = c.a.wrapped(u.a, "MetaSeparator", w.a), R = Object(r.b)(() => Object(i.c)({
 				comment: g.b,
 				isBlockingInterstitialEnabled: f.b,
 				isBlockingInterstitialV2Enabled: f.b
@@ -1758,7 +1758,7 @@
 					post: t,
 					subredditOrProfile: s
 				} = e;
-				if (s) return n.a.createElement(o.Fragment, null, n.a.createElement(R, null), n.a.createElement(N, {
+				if (s) return n.a.createElement(o.Fragment, null, n.a.createElement(D, null), n.a.createElement(N, {
 					metaSeparatorClassName: w.a.postTopMetaMetaSeparator,
 					post: t,
 					showSub: !0,
@@ -1784,7 +1784,7 @@
 					}
 				}, a)
 			};
-			t.a = Object(d.a)(Object(h.b)(D(Object(x.c)(e => {
+			t.a = Object(d.a)(Object(h.b)(R(Object(x.c)(e => {
 				const {
 					className: t,
 					eventFactory: s,
@@ -2512,6 +2512,8 @@
 						case o.b.NotAvailable:
 						case o.b.Expired:
 							return "no_data";
+						case o.b.Quarantined:
+							return "quarantined";
 						default:
 							return ""
 					}
@@ -2529,11 +2531,10 @@
 				}),
 				m = (e, t, s) => o => ({
 					...Object(r.n)(o),
-					action: n.c.VIEW,
-					noun: n.b.SCREEN,
-					source: "global",
+					action: n.c.LOAD,
+					noun: "insights",
+					source: "post_stats",
 					actionInfo: Object(r.d)(o, {
-						pageType: "post_stats",
 						reason: c(t)
 					}),
 					post: Object(r.H)(o, e, void 0, s)
@@ -2635,4 +2636,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.9c36bcb6daafb9bb2072.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePrivate.2c646784cc429c3367aa.js.map
