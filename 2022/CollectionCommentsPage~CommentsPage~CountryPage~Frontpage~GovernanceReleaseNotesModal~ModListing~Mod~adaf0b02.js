@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.8b955a4c68bc48d83034.js
-// Retrieved at 5/17/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.ebebbafb5d791bed0917.js
+// Retrieved at 5/17/2022, 12:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -2019,10 +2019,10 @@
 			var i = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				n = s("./node_modules/react/index.js"),
 				o = s.n(n),
-				r = s("./src/lib/logs/console.ts"),
-				a = s("./src/reddit/constants/postLayout.ts"),
-				l = s("./src/reddit/models/Media/index.ts"),
-				d = s("./src/reddit/models/Post/index.ts");
+				r = s("./src/lib/isUrl/index.ts"),
+				a = s("./src/lib/logs/console.ts"),
+				l = s("./src/reddit/constants/postLayout.ts"),
+				d = s("./src/reddit/models/Media/index.ts");
 			const c = Object(i.a)({
 					resolved: {},
 					chunkName: () => "reddit-components-BlankPost",
@@ -2124,23 +2124,23 @@
 					}
 				}),
 				b = {
-					[a.g.Large]: p,
-					[a.g.Medium]: u,
-					[a.g.Classic]: h,
-					[a.g.Compact]: m
+					[l.g.Large]: p,
+					[l.g.Medium]: u,
+					[l.g.Classic]: h,
+					[l.g.Compact]: m
 				},
 				g = e => o.a.createElement(c, e),
 				f = ["https://www.mcdonalds.com", "https://d2n94wep25xhn0.cloudfront.net", "https://d4wggo22afv97.cloudfront.net", "https://www.dyson.com", "https://dyson.com", "https://www.bestbuy.com", "https://www.goarmy.com", "https://www.samsung.com", "https://www.cyberpunk.net", "https://www.mms.com"],
 				C = e => e.source && e.source.url && e.isSponsored && f.some(t => e.source.url.startsWith(t)),
-				v = e => !e.media || e.media.type === l.o.EMBED && !e.isSurveyAd && !(l.b.has(e.media.provider) || C(e)),
+				v = e => !e.media || e.media.type === d.o.EMBED && !e.isSurveyAd && !(d.b.has(e.media.provider) || C(e)),
 				P = (e, t) => {
 					if (e.isBlank) return 0;
 					switch (t) {
-						case a.g.Medium:
+						case l.g.Medium:
 							return 188;
-						case a.g.Classic:
+						case l.g.Classic:
 							return 96;
-						case a.g.Compact:
+						case l.g.Compact:
 							return 32;
 						default:
 							return 200
@@ -2154,11 +2154,11 @@
 					post: i
 				} = e;
 				if (i.isBlank) return g;
-				const n = Object(d.p)(i),
+				const n = !i.media && !!i.source && Object(r.a)(i.source.url),
 					o = t && n;
-				s !== a.g.Large || !v(i) || o || i.predictionTournament || (s = a.g.Medium);
-				const l = b[s];
-				return void 0 === l ? (Object(r.a)(void 0, `Could not find component for layout ${s}.`), g) : l
+				s !== l.g.Large || !v(i) || o || i.predictionTournament || (s = l.g.Medium);
+				const d = b[s];
+				return void 0 === d ? (Object(a.a)(void 0, `Could not find component for layout ${s}.`), g) : d
 			}
 		},
 		"./src/reddit/helpers/styles/mixins/index.m.less": function(e, t, s) {
@@ -2191,4 +2191,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.8b955a4c68bc48d83034.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.ebebbafb5d791bed0917.js.map

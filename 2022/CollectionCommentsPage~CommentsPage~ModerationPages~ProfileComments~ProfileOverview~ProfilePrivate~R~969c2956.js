@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.4be713bd44bfec39da4d.js
-// Retrieved at 5/17/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.fcde8674181af366882e.js
+// Retrieved at 5/17/2022, 12:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -3473,7 +3473,7 @@
 								permalink: t,
 								post: s
 							} = e;
-							s && Object(Y.q)(s) ? (e.onToggleVideoShareModal(), this.handlePostEvent("share")) : (this.handlePostEvent("share_copy"), e.onCopyLink(t))
+							s && Object(Y.p)(s) ? (e.onToggleVideoShareModal(), this.handlePostEvent("share")) : (this.handlePostEvent("share_copy"), e.onCopyLink(t))
 						}
 					}, i.a.createElement(N.a, {
 						name: "link_post",
@@ -3952,7 +3952,7 @@
 								permalink: t,
 								post: s
 							} = e;
-							if (s && Object(E.q)(s)) e.sendEventWithName("share_copy", {
+							if (s && Object(E.p)(s)) e.sendEventWithName("share_copy", {
 								referralId: F
 							}), R();
 							else {
@@ -4986,12 +4986,12 @@
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
 				experimentEligibilitySelector: i.P,
-				experimentName: n.mc
-			}), e => e === n.pd)
+				experimentName: n.lc
+			}), e => e === n.od)
 		},
 		"./src/redditGQL/operations/EventPostsBySubredditName.json": function(e) {
 			e.exports = JSON.parse('{"id":"5ee520f9aa60"}')
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.4be713bd44bfec39da4d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.fcde8674181af366882e.js.map

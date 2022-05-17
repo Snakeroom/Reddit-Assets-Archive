@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/BottomCellWrapper.fd3aece0ce236009f3b1.js
-// Retrieved at 5/17/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/BottomCellWrapper.fe4a7c57c415d575c02d.js
+// Retrieved at 5/17/2022, 12:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["BottomCellWrapper", "SignupUpsell"], {
 		"./src/reddit/components/ErrorBoundary/index.tsx": function(e, t, s) {
@@ -46,8 +46,8 @@
 			var n = s("./node_modules/react/index.js"),
 				o = s("./src/lib/classNames/index.ts"),
 				l = s("./src/reddit/components/ErrorBoundary/index.tsx"),
-				i = s("./src/reddit/components/Upsell/SignupUpsell/index.tsx"),
-				r = s("./src/reddit/constants/promo.ts"),
+				r = s("./src/reddit/components/Upsell/SignupUpsell/index.tsx"),
+				i = s("./src/reddit/constants/promo.ts"),
 				c = s("./src/reddit/hooks/promo/useIsPromoShown.ts"),
 				a = s("./src/reddit/hooks/usePromoContext.ts"),
 				d = s("./src/reddit/components/Upsell/BottomCellWrapper/index.m.less"),
@@ -65,11 +65,11 @@
 			t.default = function() {
 				const {
 					dismissPromo: e
-				} = Object(a.a)(), t = Object(c.a)(r.b.SignupUpsellCell), s = Object(c.a)(r.b.SignupUpsellCellDismissible);
-				return t ? n.createElement(p, null, n.createElement(i.default, {
+				} = Object(a.a)(), t = Object(c.a)(i.b.SignupUpsellCell), s = Object(c.a)(i.b.SignupUpsellCellDismissible);
+				return t ? n.createElement(p, null, n.createElement(r.default, {
 					size: "small"
-				})) : s ? n.createElement(p, null, n.createElement(i.default, {
-					onDismiss: () => e(r.b.SignupUpsellCellDismissible),
+				})) : s ? n.createElement(p, null, n.createElement(r.default, {
+					onDismiss: () => e(i.b.SignupUpsellCellDismissible),
 					size: "small"
 				})) : null
 			}
@@ -106,8 +106,8 @@
 			var n = s("./src/config.ts"),
 				o = s("./node_modules/fbt/lib/FbtPublic.js"),
 				l = s("./node_modules/react/index.js"),
-				i = s("./node_modules/react-redux/es/index.js"),
-				r = s("./src/reddit/actions/login.ts"),
+				r = s("./node_modules/react-redux/es/index.js"),
+				i = s("./src/reddit/actions/login.ts"),
 				c = s("./src/reddit/actions/modal.ts"),
 				a = s("./src/reddit/components/TrackingHelper/index.tsx"),
 				d = s("./src/lib/classNames/index.ts"),
@@ -120,13 +120,13 @@
 						children: s,
 						onClick: n,
 						size: o,
-						iconClassName: i,
-						className: r
+						iconClassName: r,
+						className: i
 					} = e;
 					return l.createElement(u.t, {
-						className: Object(d.a)(m.a.button, r),
+						className: Object(d.a)(m.a.button, i),
 						Icon: t,
-						iconClassName: Object(d.a)(m.a.icon, i),
+						iconClassName: Object(d.a)(m.a.icon, r),
 						iconPosition: u.h.L,
 						isFullWidth: !0,
 						onClick: n,
@@ -200,25 +200,25 @@
 				l.useEffect(() => {
 					p(C())
 				}, [p]);
-				const m = Object(i.d)(),
+				const m = Object(r.d)(),
 					g = () => {
 						m(Object(c.k)({
 							actionSource: c.a.GeoSignupUpsell
 						}))
 					},
 					x = () => {
-						g(), m(Object(r.j)())
+						g(), m(Object(i.j)())
 					},
 					S = function() {
-						const e = Object(i.e)(w.b),
-							t = Object(i.e)(w.d),
-							s = Object(i.e)(w.f),
-							o = Object(O.a)(b.sc.Bottom_sheet),
-							l = Object(O.a)(b.sc.Bottom_cell),
-							r = Object(O.a)(b.sc.Bottom_cell_dismissible),
-							c = Object(O.a)(b.sc.Bottom_cell_dismissible_immediate_trigger),
-							a = Object(O.a)(b.sc.Bottom_cell_signup_upsell_copy),
-							d = Object(O.a)(b.sc.Bottom_cell_surprise_install_copy);
+						const e = Object(r.e)(w.b),
+							t = Object(r.e)(w.d),
+							s = Object(r.e)(w.f),
+							o = Object(O.a)(b.rc.Bottom_sheet),
+							l = Object(O.a)(b.rc.Bottom_cell),
+							i = Object(O.a)(b.rc.Bottom_cell_dismissible),
+							c = Object(O.a)(b.rc.Bottom_cell_dismissible_immediate_trigger),
+							a = Object(O.a)(b.rc.Bottom_cell_signup_upsell_copy),
+							d = Object(O.a)(b.rc.Bottom_cell_surprise_install_copy);
 						let u;
 						if (e) u = I;
 						else if (t) u = U;
@@ -229,14 +229,14 @@
 						const p = `${n.a.assetPath}/img/upsell/appQrCode/${u}/`;
 						if (o) return `${p}bottom_sheet.png`;
 						if (l) return `${p}bottom_cell.png`;
-						if (r) return `${p}bottom_cell_dismissible.png`;
+						if (i) return `${p}bottom_cell_dismissible.png`;
 						if (e && c) return `${p}bottom_cell_immediate_trigger_dismissible.png`;
 						if (e && a) return `${p}bottom_cell_signup_upsell_copy.png`;
 						if (e && d) return `${p}bottom_cell_surprise_install_copy.png`;
 						throw new Error("Invalid variant for signup upsell")
 					}(),
-					y = Object(O.a)(b.sc.Bottom_cell_signup_upsell_copy),
-					A = Object(O.a)(b.sc.Bottom_cell_surprise_install_copy),
+					y = Object(O.a)(b.rc.Bottom_cell_signup_upsell_copy),
+					A = Object(O.a)(b.rc.Bottom_cell_surprise_install_copy),
 					H = y ? o.fbt._("Come join us, we have snacks", null, {
 						hk: "1LUl2W"
 					}) : o.fbt._("Log in or sign up for the best experience", null, {
@@ -300,7 +300,7 @@
 				})), l.createElement(u.j, {
 					className: k.a.linkButton,
 					onClick: () => {
-						g(), m(Object(r.i)()), p(E())
+						g(), m(Object(i.i)()), p(E())
 					},
 					redditStyle: !0,
 					size: u.d.XS
@@ -421,18 +421,18 @@
 			var n = s("./node_modules/reselect/es/index.js"),
 				o = s("./src/reddit/constants/experiments.ts"),
 				l = s("./src/reddit/helpers/chooseVariant/index.ts"),
-				i = s("./src/reddit/selectors/meta.ts"),
-				r = s("./src/reddit/selectors/experiments/index.ts");
-			const c = Object(n.a)(i.g, i.d, r.e, (e, t, s) => !e && !t && !s);
+				r = s("./src/reddit/selectors/meta.ts"),
+				i = s("./src/reddit/selectors/experiments/index.ts");
+			const c = Object(n.a)(r.g, r.d, i.e, (e, t, s) => !e && !t && !s);
 
 			function a(e, t) {
 				return s => Object(l.c)(s, {
 					experimentName: e,
 					experimentEligibilitySelector: c,
 					throttledVariants: {
-						[o.sc.Bottom_cell_dismissible]: e,
-						[o.sc.Bottom_cell_dismissible_immediate_trigger]: e,
-						[o.sc.Bottom_sheet]: e
+						[o.rc.Bottom_cell_dismissible]: e,
+						[o.rc.Bottom_cell_dismissible_immediate_trigger]: e,
+						[o.rc.Bottom_sheet]: e
 					},
 					expEventOverride: t
 				})
@@ -446,4 +446,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.fd3aece0ce236009f3b1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/BottomCellWrapper.fe4a7c57c415d575c02d.js.map
