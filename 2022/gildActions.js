@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/gildActions.2c7f36e55d7305115c3c.js
-// Retrieved at 5/17/2022, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/gildActions.2fb55afea3105ab565e6.js
+// Retrieved at 5/17/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["gildActions"], {
 		"./src/reddit/actions/gold/econPurchase.ts": function(e, t, s) {
@@ -118,8 +118,8 @@
 					query: s ? {} : Object(K.b)()
 				});
 			var T = s("./src/reddit/helpers/awards/getAwardItemId.ts"),
-				M = s("./src/reddit/helpers/awards/message.ts"),
-				q = s("./src/reddit/helpers/correlationIdTracker.ts"),
+				q = s("./src/reddit/helpers/awards/message.ts"),
+				M = s("./src/reddit/helpers/correlationIdTracker.ts"),
 				F = s("./src/reddit/helpers/isPost.ts"),
 				Q = s("./src/reddit/helpers/trackers/gild.ts"),
 				z = s("./src/telemetry/index.ts"),
@@ -138,7 +138,7 @@
 						o = Object(P.G)(n, {
 							postId: e
 						}),
-						l = Object(F.a)(e) && !!o && Object(h.p)(o),
+						l = Object(F.a)(e) && !!o && Object(h.q)(o),
 						{
 							isOldReddit: u
 						} = t;
@@ -148,7 +148,7 @@
 								gildingTypeId: c.selectedAward.id,
 								isAnonymous: c.isAnonymous,
 								isGildFunded: !1,
-								message: Object(M.d)(c.message, c.selectedAward, l),
+								message: Object(q.d)(c.message, c.selectedAward, l),
 								nodeId: e
 							},
 							d = Object(F.a)(e) ? D : E,
@@ -196,7 +196,7 @@
 							});
 						await s(te(t))
 					} finally {
-						Object(q.b)(q.a.GildingFlow)
+						Object(M.b)(M.a.GildingFlow)
 					}
 				}, X = Object(d.a)(Y.u), V = Object(d.a)(Y.q), W = () => async (e, t) => {
 					e(V()), window.setTimeout(() => {
@@ -235,7 +235,7 @@
 						g = Object(A.a)(d, u),
 						f = e.awardKarmaReceived,
 						w = Object(L.k)(d),
-						k = Object(x.b)(d) || Object(q.d)(q.a.GildingFlow, !1);
+						k = Object(x.b)(d) || Object(M.d)(M.a.GildingFlow, !1);
 					if (Object(x.g)(d)) {
 						const e = "success.gild",
 							t = {},
@@ -318,7 +318,7 @@
 						if (e.length) {
 							const s = Math.max(900 - D, 10),
 								r = Math.max(300 - D, 10),
-								a = Object(F.a)(b) && Object(h.p)(Object(P.G)(d, {
+								a = Object(F.a)(b) && Object(h.q)(Object(P.G)(d, {
 									postId: b
 								}));
 							setTimeout(() => t(Object(n.e)({
@@ -440,4 +440,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.2c7f36e55d7305115c3c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/gildActions.2fb55afea3105ab565e6.js.map

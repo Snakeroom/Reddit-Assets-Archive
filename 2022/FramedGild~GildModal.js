@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b4ba719a26e7c9f5eb73.js
-// Retrieved at 5/17/2022, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e9e1ffe79b9083a401c5.js
+// Retrieved at 5/17/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -955,7 +955,7 @@
 						d = Object(P.G)(i, {
 							postId: e
 						}),
-						l = Object(U.a)(e) && !!d && Object(x.p)(d),
+						l = Object(U.a)(e) && !!d && Object(x.q)(d),
 						{
 							isOldReddit: u
 						} = t;
@@ -1135,7 +1135,7 @@
 						if (e.length) {
 							const r = Math.max(900 - B, 10),
 								n = Math.max(300 - B, 10),
-								a = Object(U.a)(m) && Object(x.p)(Object(P.G)(s, {
+								a = Object(U.a)(m) && Object(x.q)(Object(P.G)(s, {
 									postId: m
 								}));
 							setTimeout(() => t(Object(i.e)({
@@ -4796,12 +4796,12 @@
 						rtJsonElementProps: o
 					});
 					switch (a) {
-						case h.pf.SmIcon:
+						case h.qf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: o
 							});
-						case h.pf.SmIconHc:
+						case h.qf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -5908,12 +5908,12 @@
 				c = e => {
 					return Object(a.c)(e, {
 						experimentEligibilitySelector: i,
-						experimentName: n.jf
+						experimentName: n.kf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.pf.SmIcon || t === n.pf.SmIconHc
+					return t === n.qf.SmIcon || t === n.qf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5951,4 +5951,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.b4ba719a26e7c9f5eb73.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e9e1ffe79b9083a401c5.js.map

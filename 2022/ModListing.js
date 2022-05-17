@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.02f20c3dd63c9ed09714.js
-// Retrieved at 5/17/2022, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.00cfeee5c73f3715a6ba.js
+// Retrieved at 5/17/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1785,7 +1785,7 @@
 					}, r[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.wc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.xc.GreyRereddit ? e.reredditButtons : [];
 					return s.a.createElement(C, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -3366,7 +3366,7 @@
 							const {
 								partialCommentId: s,
 								partialPostId: o
-							} = e.match.params, i = Object(h.t)(o), a = Object(l.a)(e, t, t.posts.models[i]);
+							} = e.match.params, i = Object(h.u)(o), a = Object(l.a)(e, t, t.posts.models[i]);
 							if (!a) return;
 							const c = s && Object(p.h)(s),
 								{
@@ -4652,7 +4652,7 @@
 				className: S.a.loadingBar
 			})), M = Object(c.c)({
 				isModalOpen: Object(I.b)("MOD_LISTING_FEED_DETAILS_MODAL_ID"),
-				moderatedCommunitiesIds: C.e
+				moderatedCommunitiesIds: C.f
 			});
 			var L = Object(a.b)(M, (e, t) => {
 					let {} = t;
@@ -7030,11 +7030,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(o.f)(e),
-					experimentName: r.ac
+					experimentName: r.bc
 				}), i.a),
 				l = Object(c.a)(e => Object(s.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(o.f)(e),
-					experimentName: r.Zb
+					experimentName: r.ac
 				}), i.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -7047,9 +7047,9 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: r.he,
+				experimentName: r.ie,
 				experimentEligibilitySelector: s.a
-			}) === r.qe.Enabled
+			}) === r.re.Enabled
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -7090,7 +7090,7 @@
 					return r ? r * s.Sb < 1639443600180 ? void 0 : f(e) : void 0
 				},
 				f = Object(r.a)(e => Object(a.c)(e, {
-					experimentName: o.je,
+					experimentName: o.ke,
 					experimentEligibilitySelector: c.e
 				}), d.a)
 		},
@@ -7138,65 +7138,72 @@
 		},
 		"./src/reddit/selectors/modQueue.ts": function(e, t, n) {
 			"use strict";
-			n.d(t, "c", (function() {
-				return d
-			})), n.d(t, "b", (function() {
+			n.d(t, "d", (function() {
 				return l
-			})), n.d(t, "d", (function() {
+			})), n.d(t, "c", (function() {
 				return u
-			})), n.d(t, "f", (function() {
-				return m
-			})), n.d(t, "a", (function() {
-				return p
 			})), n.d(t, "e", (function() {
+				return m
+			})), n.d(t, "g", (function() {
+				return p
+			})), n.d(t, "a", (function() {
 				return h
+			})), n.d(t, "f", (function() {
+				return b
+			})), n.d(t, "b", (function() {
+				return f
 			}));
-			n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/lib/constants/index.ts");
-			var r = n("./src/reddit/helpers/makeModQueueListingKey/index.ts"),
-				s = n("./src/lib/objectSelector/index.ts"),
-				o = n("./src/lib/initializeClient/installReducer.ts"),
-				i = n("./src/reddit/reducers/features/comments/index.ts"),
-				a = n("./src/reddit/reducers/pages/modHub/index.ts");
-			Object(o.a)({
+			n("./node_modules/core-js/modules/web.dom.iterable.js");
+			var r = n("./src/lib/constants/index.ts"),
+				s = n("./src/reddit/helpers/makeModQueueListingKey/index.ts"),
+				o = n("./src/lib/objectSelector/index.ts"),
+				i = n("./src/lib/initializeClient/installReducer.ts"),
+				a = n("./src/reddit/reducers/features/comments/index.ts"),
+				c = n("./src/reddit/reducers/pages/modHub/index.ts");
+			Object(i.a)({
 				features: {
-					comments: i.a
+					comments: a.a
 				},
 				pages: {
-					modHub: a.a
+					modHub: c.a
 				}
 			});
-			const c = (e, t) => Object(r.a)({
+			const d = (e, t) => Object(s.a)({
 					onlyOfType: t.queryParams.only,
 					profile: t.profileName,
 					sort: t.queryParams.sort,
 					subreddit: t.subredditName
 				}),
-				d = Object(s.a)((e, t) => {
+				l = Object(o.a)((e, t) => {
 					var n, r, s;
 					const {
 						pageName: o,
 						page: i
-					} = t, a = c(0, t);
+					} = t, a = d(0, t);
 					if (!(null === (s = null === (r = null === (n = e.pages.modHub.modQueue[o]) || void 0 === n ? void 0 : n.itemOrder) || void 0 === r ? void 0 : r[a]) || void 0 === s ? void 0 : s[i])) return;
-					const d = e.pages.modHub.modQueue[o].itemOrder[a][i];
-					return d ? d.map(t => e.posts.models[t] || e.features.comments.models[t]) : []
+					const c = e.pages.modHub.modQueue[o].itemOrder[a][i];
+					return c ? c.map(t => e.posts.models[t] || e.features.comments.models[t]) : []
 				}),
-				l = (e, t) => {
+				u = (e, t) => {
 					var n;
 					const {
 						pageName: r
 					} = t;
 					return null === (n = e.pages.modHub.modQueue[r]) || void 0 === n || !n.api || e.pages.modHub.modQueue[r].api.pending
 				},
-				u = (e, t) => {
+				m = (e, t) => {
 					var n;
-					const r = c(0, t);
+					const r = d(0, t);
 					return null === (n = e.pages.modHub.modQueue[t.pageName]) || void 0 === n ? void 0 : n.loadMore[r]
 				},
-				m = e => Object.keys(e.pages.modHub.modQueue.bulkAction.selectedItems),
-				p = e => e.pages.modHub.modQueue.bulkAction.api.pending,
-				h = e => e.pages.modHub.modQueue.moderatedCommunitiesOrder.data
+				p = e => Object.keys(e.pages.modHub.modQueue.bulkAction.selectedItems),
+				h = e => e.pages.modHub.modQueue.bulkAction.api.pending,
+				b = e => e.pages.modHub.modQueue.moderatedCommunitiesOrder.data,
+				f = e => {
+					const t = e.platform && e.platform.currentPage;
+					return t && t.meta && (t.meta.name === r.Nb.MODERATION_PAGES || t.meta.name === r.Nb.MODQUEUE_PAGES)
+				}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.02f20c3dd63c9ed09714.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.00cfeee5c73f3715a6ba.js.map

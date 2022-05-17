@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.1004713f926ee201a14e.js
-// Retrieved at 5/17/2022, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.77a47540d6b541d8e8ab.js
+// Retrieved at 5/17/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -720,8 +720,8 @@
 			}), u = n("./node_modules/fbt/lib/FbtPublic.js"), l = n("./src/reddit/models/Toast/index.ts"), p = n("./node_modules/reselect/es/index.js"), b = n("./src/reddit/constants/experiments.ts"), f = n("./src/reddit/helpers/chooseVariant/index.ts"), h = n("./src/reddit/selectors/user.ts");
 			const y = Object(p.a)(e => Object(f.c)(e, {
 				experimentEligibilitySelector: h.P,
-				experimentName: b.Qb
-			}), e => e === b.od);
+				experimentName: b.Rb
+			}), e => e === b.pd);
 			var g = n("./src/reddit/actions/toaster.ts");
 			const m = "SUBREDDIT_COUNTRY_SITE__LOADED",
 				v = "SUBREDDIT_COUNTRY_SITE__CHANGED",
@@ -2598,6 +2598,7 @@
 							})
 						}));
 						f.some(e => Object(g.m)(e.type)) && n(Object(i.f)({
+							duration: i.a,
 							kind: j.b.Error,
 							text: r.fbt._("Videos aren’t supported within galleries...yet", null, {
 								hk: "9Cl20"
@@ -2876,7 +2877,7 @@
 						e.type === r.I.BAD_CAPTCHA_ERROR ? t(H()) : e.type === r.I.VALIDATION_ERROR ? t(B(e)) : e.type === r.I.SUBMIT_VALIDATION_ERROR ? t(q(e)) : t(G(e))
 					}
 					const I = Object(L.o)(u.kind),
-						S = O.ok && O.body && O.body.id && Object(R.t)(O.body.id),
+						S = O.ok && O.body && O.body.id && Object(R.u)(O.body.id),
 						P = n();
 					_.B(P, I, S, e.correlationId)
 				}
@@ -3077,7 +3078,7 @@
 			const w = e => _.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				T = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: b.Qe
+					experimentName: b.Re
 				}),
 				D = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = () => u(e => p()([w, T, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -3968,7 +3969,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(N)
 						}
-						await t(Object(r.b)(`${n.path}`)), f ? f === p.se.NewModule && t(Object(i.h)({
+						await t(Object(r.b)(`${n.path}`)), f ? f === p.te.NewModule && t(Object(i.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(c.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(D.a)(Object(_.g)()(A))), Object(E.b)(E.a.SubredditCreation), t(Object(P.f)(a, null !== (O = Object(T.ab)(A)) && void 0 !== O ? O : Object(S.i)(A)))
 					} else k.error && Object(D.a)(Object(_.h)(k.error.type, C)(A)), t(U({
@@ -16430,7 +16431,7 @@
 								r = Nr(t);
 							if (n && n.instanceId && r && r.partialPostId) {
 								const t = n.instanceId,
-									s = Object(pb.t)(r.partialPostId);
+									s = Object(pb.u)(r.partialPostId);
 								if (e[s] && e[t]) return {
 									...e,
 									[s]: Object(Xl.c)(e[s], e[t])
@@ -25620,8 +25621,8 @@
 				a = n("./node_modules/reselect/es/index.js");
 			const o = Object(a.a)(e => Object(s.c)(e, {
 				experimentEligibilitySelector: s.a,
-				experimentName: r.kc
-			}), e => e === r.od)
+				experimentName: r.lc
+			}), e => e === r.pd)
 		},
 		"./src/reddit/selectors/scheduledPosts/index.ts": function(e, t, n) {
 			"use strict";
@@ -25893,4 +25894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.1004713f926ee201a14e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.77a47540d6b541d8e8ab.js.map

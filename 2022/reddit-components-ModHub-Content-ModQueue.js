@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.419fa226127b4430577f.js
-// Retrieved at 5/17/2022, 12:10:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.ad624b35a534331bee28.js
+// Retrieved at 5/17/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -897,7 +897,7 @@
 					}) : void 0
 				}, e.buttonText),
 				it = Object(c.c)({
-					selectedItems: Ee.f
+					selectedItems: Ee.g
 				}),
 				dt = Object(l.b)(it, e => ({
 					onIgnoreReports: () => e(Object(u.f)(Ce.a.IgnoreReports)),
@@ -1001,7 +1001,7 @@
 					isApiPending: Ee.a,
 					moderatorPermissions: $e.n,
 					posts: tt.J,
-					selectedItems: Ee.f
+					selectedItems: Ee.g
 				}),
 				kt = Object(l.b)(Ct, e => ({
 					onApprove: () => e(Object(u.f)(Ce.a.Approve)),
@@ -1184,11 +1184,11 @@
 				}),
 				Lt = Object(c.c)({
 					currentPage: e => e.platform.currentPage,
-					isModQueueListingPending: Ee.b,
-					loadMore: Ee.d,
-					modQueueListingItems: Ee.c,
+					isModQueueListingPending: Ee.c,
+					loadMore: Ee.e,
+					modQueueListingItems: Ee.d,
 					origin: ke.j,
-					selectedItems: Ee.f,
+					selectedItems: Ee.g,
 					subredditId: (e, t) => t.subredditName ? Object(Oe.F)(e, t.subredditName) : null
 				}),
 				Tt = Object(l.b)(Lt, e => ({
@@ -1408,4 +1408,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.419fa226127b4430577f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.ad624b35a534331bee28.js.map
