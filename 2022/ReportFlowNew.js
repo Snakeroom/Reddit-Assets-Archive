@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.9564e08fc25bb7bd920f.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.fdf45826989b668e75df.js
+// Retrieved at 5/17/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -309,8 +309,8 @@
 				A = o("./src/reddit/selectors/commentSelector.ts"),
 				T = o("./src/reddit/selectors/experiments/econ/index.ts"),
 				N = o("./src/reddit/selectors/meta.ts"),
-				P = o("./src/reddit/selectors/posts.ts"),
-				q = o("./src/reddit/selectors/user.ts"),
+				q = o("./src/reddit/selectors/posts.ts"),
+				P = o("./src/reddit/selectors/user.ts"),
 				B = o("./src/lib/lessComponent.tsx"),
 				U = o("./src/reddit/components/ReportFlow/index.m.less"),
 				D = o.n(U);
@@ -326,7 +326,7 @@
 						let {
 							postId: o
 						} = t;
-						return o ? Object(P.G)(e, {
+						return o ? Object(q.G)(e, {
 							postId: o
 						}) : null
 					},
@@ -343,7 +343,7 @@
 							postId: o
 						} = t;
 						const r = o && e.posts.models[o];
-						return !!r && Object(I.p)(r)
+						return !!r && Object(I.q)(r)
 					},
 					blockUserPending: e => e.user.blocked.api,
 					blockedUser: (e, t) => e.user.blocked.data.find(o => {
@@ -352,13 +352,13 @@
 							postId: s
 						} = t, n = r ? Object(A.b)(e, {
 							commentId: r
-						}) : null, i = s ? Object(P.G)(e, {
+						}) : null, i = s ? Object(q.G)(e, {
 							postId: s
 						}) : null;
 						(n ? n.author : i ? i.author : null) || t.author;
 						o.name
 					}),
-					isNightmodeOn: q.cb,
+					isNightmodeOn: P.cb,
 					isTalkReportingAllowed: T.x,
 					locale: N.i
 				}),
@@ -975,4 +975,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.9564e08fc25bb7bd920f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.fdf45826989b668e75df.js.map

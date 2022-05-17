@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.1b130538d29b84810a96.js
-// Retrieved at 5/17/2022, 10:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinPurchaseModal.e09aba6ef1dabf47b1a9.js
+// Retrieved at 5/17/2022, 12:00:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinPurchaseModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -683,7 +683,7 @@
 						d = Object(I.G)(c, {
 							postId: e
 						}),
-						l = Object(q.a)(e) && !!d && Object(O.p)(d),
+						l = Object(q.a)(e) && !!d && Object(O.q)(d),
 						{
 							isOldReddit: u
 						} = t;
@@ -863,7 +863,7 @@
 						if (e.length) {
 							const r = Math.max(900 - B, 10),
 								n = Math.max(300 - B, 10),
-								s = Object(q.a)(p) && Object(O.p)(Object(I.G)(a, {
+								s = Object(q.a)(p) && Object(O.q)(Object(I.G)(a, {
 									postId: p
 								}));
 							setTimeout(() => t(Object(c.e)({
@@ -3945,7 +3945,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(a.a)(n.Rc)
+			const s = Object(a.a)(n.Sc)
 		},
 		"./src/reddit/selectors/gold/econPurchase.ts": function(e, t, r) {
 			"use strict";
@@ -4096,4 +4096,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.1b130538d29b84810a96.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinPurchaseModal.e09aba6ef1dabf47b1a9.js.map
