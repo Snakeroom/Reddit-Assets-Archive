@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AwardCreationModal.4cd56ec33922cc5f629c.js
-// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AwardCreationModal.7b2e09f63dd7f3f202c7.js
+// Retrieved at 5/17/2022, 10:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AwardCreationModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -1596,8 +1596,8 @@
 				}).apply(this, arguments)
 			}
 			const Je = Object(o.c)({
-					awards: m.e,
-					isPending: m.c,
+					awards: m.f,
+					isPending: m.d,
 					isEligibleForGlobalAwards: (e, t) => {
 						let {
 							subredditId: a
@@ -2178,4 +2178,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.4cd56ec33922cc5f629c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AwardCreationModal.7b2e09f63dd7f3f202c7.js.map

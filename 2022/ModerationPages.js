@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.f108a6b35453cb1e9e2d.js
-// Retrieved at 5/16/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.f02b16b1fd1f4498ac3e.js
+// Retrieved at 5/17/2022, 10:30:07 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -3822,10 +3822,10 @@
 					} = e;
 					const a = Object(r.d)(),
 						i = Object(G.a)(),
-						l = Object(r.e)(e => Object(K.f)(e, {
+						l = Object(r.e)(e => Object(K.g)(e, {
 							subredditOrProfileId: s
 						})),
-						c = Object(r.e)(e => Object(K.d)(e, {
+						c = Object(r.e)(e => Object(K.e)(e, {
 							subredditOrProfileId: s
 						})),
 						m = Object(r.e)(e => Object(Q.b)(e, {
@@ -3874,7 +3874,7 @@
 						let {
 							subredditOrProfileId: s
 						} = t;
-						const n = Object(K.e)(e, {
+						const n = Object(K.f)(e, {
 							subredditOrProfileId: s
 						});
 						return Object(Q.b)(e, {
@@ -3882,9 +3882,9 @@
 							minSize: 32
 						})
 					},
-					awards: K.e,
-					awardsPending: K.d,
-					communityAwardsDisabled: K.b,
+					awards: K.f,
+					awardsPending: K.e,
+					communityAwardsDisabled: K.c,
 					isAddAwardModalOpen: e => Object(O.a)(e) === m.a,
 					isConfirmModalOpen: e => Object(O.a)(e) === m.b
 				}),
@@ -23566,4 +23566,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f108a6b35453cb1e9e2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.f02b16b1fd1f4498ac3e.js.map
