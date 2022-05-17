@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-FormBuilder.19ba6c38d38f942e53a8.js
-// Retrieved at 3/10/2022, 11:20:03 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-FormBuilder.99f79bc75cf7ad5e8e31.js
+// Retrieved at 5/17/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-FormBuilder"], {
 		"./src/reddit/components/FormBuilder/FormBuilderHeader/index.m.less": function(e, t, n) {
@@ -104,7 +104,8 @@
 		"./src/reddit/components/FormBuilder/helpers/index.m.less": function(e, t, n) {
 			e.exports = {
 				"textEmphasis-color": "_3wlf5po8rNsJA5mjxQI47x",
-				textEmphasisColor: "_3wlf5po8rNsJA5mjxQI47x"
+				textEmphasisColor: "_3wlf5po8rNsJA5mjxQI47x",
+				link: "o1ov2mzLxTFAFP-O4Uv8I"
 			}
 		},
 		"./src/reddit/components/FormBuilder/index.m.less": function(e, t, n) {
@@ -130,11 +131,11 @@
 				c = n("./src/reddit/icons/svgs/ArrowLeft/index.tsx"),
 				p = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				u = n("./src/lib/lessComponent.tsx"),
-				d = n("./src/reddit/components/FormBuilder/FormBuilderHeader/index.m.less"),
-				m = n.n(d);
+				m = n("./src/reddit/components/FormBuilder/FormBuilderHeader/index.m.less"),
+				d = n.n(m);
 			const {
 				fbt: f
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), C = u.a.div("FormBuilderHeaderWrapper", m.a), h = u.a.wrapped(p.a, "Close", m.a), v = u.a.wrapped(c.a, "ArrowLeft", m.a);
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), C = u.a.div("FormBuilderHeaderWrapper", d.a), h = u.a.wrapped(p.a, "Close", d.a), v = u.a.wrapped(c.a, "ArrowLeft", d.a);
 
 			function x(e) {
 				const {
@@ -144,7 +145,7 @@
 					headerTitle: o
 				} = e;
 				return l.a.createElement(C, null, t.screenSequence.length > 1 && !t.formSubmitted && l.a.createElement(v, {
-					className: m.a.backButton,
+					className: d.a.backButton,
 					onClick: () => {
 						const e = t.screenSequence.slice(0, t.screenSequence.length);
 						e.pop(), n("screenSequence", e), n("screenId", e[e.length - 1])
@@ -249,9 +250,9 @@
 							return "ref" === l.$type ? t.setFieldValue(a, S()(t.values, l.ref)) : b()(l) ? t.setFieldValue(a, l) : void 0
 					}
 				};
-			var y = n("./src/reddit/components/FormBuilder/components/Button/index.m.less"),
-				L = n.n(y);
-			const A = u.a.button("ButtonWrapper", L.a);
+			var L = n("./src/reddit/components/FormBuilder/components/Button/index.m.less"),
+				y = n.n(L);
+			const A = u.a.button("ButtonWrapper", y.a);
 
 			function R(e) {
 				const {
@@ -264,15 +265,15 @@
 					onSubmitDataUpdate: i,
 					onOpenCtlFlow: c,
 					onBlockAuthor: p
-				} = e, u = !s || k(s, o.values), d = !0 === r || !!r && k(T(r, o), o.values), m = n ? D(n, o) : null, f = w(t, o);
+				} = e, u = !s || k(s, o.values), m = !0 === r || !!r && k(T(r, o), o.values), d = n ? D(n, o) : null, f = w(t, o);
 				return u ? l.a.createElement(A, {
 					type: "button",
 					onClick: () => {
 						if (!n) return;
-						const e = I(m, o);
+						const e = I(d, o);
 						(null == e ? void 0 : e.formClose) ? ((null == e ? void 0 : e.blockAuthor) && p && p(), a()) : (null == e ? void 0 : e.formSubmit) && i ? i(e.data, o.submitForm) : (null == e ? void 0 : e.openCtlFlow) && c && c()
 					},
-					disabled: d
+					disabled: m
 				}, f) : null
 			}
 			var U = n("./src/reddit/components/FormBuilder/components/ButtonBar/index.m.less"),
@@ -393,9 +394,9 @@
 				}
 				return l.a.createElement(pe, null, t)
 			}
-			var de = n("./src/reddit/components/FormBuilder/components/ScreenTitle/index.m.less"),
-				me = n.n(de);
-			const fe = u.a.div("ScreenTitleWrapper", me.a);
+			var me = n("./src/reddit/components/FormBuilder/components/ScreenTitle/index.m.less"),
+				de = n.n(me);
+			const fe = u.a.div("ScreenTitleWrapper", de.a);
 
 			function Ce(e) {
 				return l.a.createElement(fe, null, _(e.textContent))
@@ -470,8 +471,8 @@
 			var De = n("./src/reddit/icons/svgs/UserBlocked/index.tsx"),
 				Te = n("./src/reddit/components/FormBuilder/components/ToggleSwitch/index.m.less"),
 				Ie = n.n(Te);
-			const ye = u.a.div("ToggleSwitchWrapper", Ie.a),
-				Le = u.a.div("ToggleSwitchContent", Ie.a),
+			const Le = u.a.div("ToggleSwitchWrapper", Ie.a),
+				ye = u.a.div("ToggleSwitchContent", Ie.a),
 				Ae = u.a.div("ControlWrapper", Ie.a);
 
 			function Re(e) {
@@ -488,7 +489,7 @@
 					default:
 						i = l.a.createElement(De.a, null)
 				}
-				return l.a.createElement(ye, null, i, l.a.createElement(Le, null, l.a.createElement("h4", null, n), l.a.createElement("p", null, o)), l.a.createElement(Ae, {
+				return l.a.createElement(Le, null, i, l.a.createElement(ye, null, l.a.createElement("h4", null, n), l.a.createElement("p", null, o)), l.a.createElement(Ae, {
 					className: Ie.a[s.componentType]
 				}, l.a.createElement(r.a, {
 					type: "RadioSlide" === s.componentType ? "radio" : "checkbox",
@@ -768,4 +769,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-FormBuilder.19ba6c38d38f942e53a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-FormBuilder.99f79bc75cf7ad5e8e31.js.map

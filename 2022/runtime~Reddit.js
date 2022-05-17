@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.f6c8fe36e9ce936e836d.js
-// Retrieved at 5/17/2022, 10:30:07 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.d409a21e28372f602ce9.js
+// Retrieved at 5/17/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, P = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && P.push(d[n][0]), d[n] = 0;
@@ -956,7 +956,7 @@
 					"Download OBS Modal": "31d6cfe0d16ae931b73c",
 					NftProductDetailsModal: "1ce8e1195db4309309a0",
 					"vendors~chat-components-OverlayReport-FormBuilder~reddit-components-FormBuilder": "31d6cfe0d16ae931b73c",
-					"reddit-components-FormBuilder": "04e50804068ee10410c9",
+					"reddit-components-FormBuilder": "c766121090bf866dfd9f",
 					AdminCommunityTopics: "d4be031ee24a09e79397",
 					CreatePollButton: "f61ace8b0ca14a98ed44",
 					SubredditInlineEditing: "6ce4c83bf9a60786dc02",
@@ -1648,7 +1648,7 @@
 						"Download OBS Modal": "cabe92c1fd8cfddf7b9a",
 						NftProductDetailsModal: "26253e6acd6a80075a2d",
 						"vendors~chat-components-OverlayReport-FormBuilder~reddit-components-FormBuilder": "cca0b8e181c976b99176",
-						"reddit-components-FormBuilder": "19ba6c38d38f942e53a8",
+						"reddit-components-FormBuilder": "99f79bc75cf7ad5e8e31",
 						AdminCommunityTopics: "1f3b91c6208691dc71b6",
 						CreatePollButton: "31a0fb9adbd81e661daa",
 						SubredditInlineEditing: "4bed5dd81a4288630f16",
@@ -1730,4 +1730,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.f6c8fe36e9ce936e836d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.d409a21e28372f602ce9.js.map
