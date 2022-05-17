@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.43dc08cfe5e1f3faf701.js
-// Retrieved at 5/17/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.2816fea68e4bc293b555.js
+// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -91,12 +91,12 @@
 			}
 			var _ = ["root", "rootMargin", "threshold"],
 				g = ["root", "rootMargin", "threshold", "disabled"],
-				x = Object.prototype,
-				E = x.hasOwnProperty,
-				j = x.toString,
+				E = Object.prototype,
+				x = E.hasOwnProperty,
+				j = E.toString,
 				O = function(e) {
 					return _.reduce((function(t, r) {
-						if (E.call(e, r)) {
+						if (x.call(e, r)) {
 							var n = "root" === r && "[object String]" === j.call(e[r]);
 							t[r] = n ? document.querySelector(e[r]) : e[r]
 						}
@@ -303,7 +303,7 @@
 				} = d, v = f[1].powerupsCost, _ = b >= 2, g = (null == p ? void 0 : p.filter(e => {
 					var t;
 					return !!(null === (t = e.supporterInfo) || void 0 === t ? void 0 : t.displayName)
-				}).slice(0, 2)) || [], x = Math.min(h, v) / v, E = v - h;
+				}).slice(0, 2)) || [], E = Math.min(h, v) / v, x = v - h;
 				return o.a.createElement("div", {
 					className: Object(a.a)(u.a.container, t, {
 						[u.a.containerClickable]: !!n
@@ -343,11 +343,11 @@
 				}) : m._({
 					"*": "{powerups needed} more Powerups will unlock perks for the community",
 					_1: "{powerups needed} more Powerup will unlock perks for the community"
-				}, [m._param("powerups needed", E), m._plural(E)], {
+				}, [m._param("powerups needed", x), m._plural(x)], {
 					hk: "2aHf4k"
 				})), o.a.createElement(c.a, {
 					className: u.a.progressBar,
-					progress: x
+					progress: E
 				}))
 			}
 		},
@@ -488,8 +488,8 @@
 				v = r("./src/reddit/contexts/PageLayer/index.tsx"),
 				_ = r("./src/reddit/controls/Button/index.tsx"),
 				g = r("./src/reddit/helpers/localStorage/index.ts"),
-				x = r("./src/reddit/helpers/trackers/powerups.ts"),
-				E = r("./src/reddit/hooks/useScrollGradient.ts"),
+				E = r("./src/reddit/helpers/trackers/powerups.ts"),
+				x = r("./src/reddit/hooks/useScrollGradient.ts"),
 				j = r("./src/reddit/hooks/useTracking.ts"),
 				O = r("./src/reddit/selectors/gold/powerups/index.ts"),
 				k = r("./src/reddit/selectors/user.ts"),
@@ -512,7 +512,7 @@
 					const {
 						className: t
 					} = e, r = Object(j.a)(), n = Object(s.e)(I), a = A(n).map(P.b), c = e => {
-						r(Object(x.g)(e.telemetryTag))
+						r(Object(E.g)(e.telemetryTag))
 					};
 					return o.a.createElement("div", {
 						className: Object(d.a)(L.a.container, t)
@@ -557,7 +557,7 @@
 					container: O,
 					isScrollGradientVisible: N,
 					calculateGradientVisibility: P
-				} = Object(E.b)(!0);
+				} = Object(x.b)(!0);
 				Object(n.useEffect)(() => {
 					v ? Object(y.a)() : Object(h.a)(), t && i(Object(u.m)(t, {
 						fullData: !0
@@ -619,7 +619,7 @@
 					className: D.a.joinHeroes,
 					subredditId: t,
 					onClick: e => {
-						l(Object(x.e)("powerups_modal")), e ? i(Object(u.i)(c.id)) : M()
+						l(Object(E.e)("powerups_modal")), e ? i(Object(u.i)(c.id)) : M()
 					}
 				})), o.a.createElement("li", {
 					className: D.a.howItWorksStep
@@ -1022,23 +1022,19 @@
 			})), r.d(t, "a", (function() {
 				return g
 			})), r.d(t, "j", (function() {
-				return x
-			})), r.d(t, "k", (function() {
 				return E
+			})), r.d(t, "k", (function() {
+				return x
 			})), r.d(t, "o", (function() {
 				return j
 			})), r.d(t, "t", (function() {
 				return O
 			})), r.d(t, "u", (function() {
 				return k
-			})), r.d(t, "x", (function() {
-				return y
 			})), r.d(t, "v", (function() {
-				return N
+				return y
 			})), r.d(t, "w", (function() {
-				return P
-			})), r.d(t, "y", (function() {
-				return C
+				return N
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				o = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
@@ -1058,16 +1054,14 @@
 				v = Object(o.a)(n.Lc),
 				_ = Object(o.a)(n.Pc),
 				g = Object(o.a)(n.Jc),
-				x = Object(o.a)(n.Wc),
-				E = Object(o.a)(n.Xc),
+				E = Object(o.a)(n.Wc),
+				x = Object(o.a)(n.Xc),
 				j = Object(o.a)(n.bd),
 				O = Object(o.a)(n.hd),
-				k = Object(o.a)(n.nd),
-				y = Object(o.a)(n.md),
-				N = Object(o.a)(n.jd),
-				P = Object(o.a)(n.ld),
-				C = Object(o.a)(n.kd)
+				k = Object(o.a)(n.jd),
+				y = Object(o.a)(n.ld),
+				N = Object(o.a)(n.kd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.43dc08cfe5e1f3faf701.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.2816fea68e4bc293b555.js.map

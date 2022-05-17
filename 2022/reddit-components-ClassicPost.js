@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3c683f757448f43bfe4e.js
-// Retrieved at 5/17/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.2747ff8e232c1f1f19db.js
+// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -660,8 +660,8 @@
 				_ = [O, w, j, E],
 				I = "start",
 				C = "end",
-				P = "clippingParents",
-				S = "viewport",
+				S = "clippingParents",
+				P = "viewport",
 				M = "popper",
 				N = "reference",
 				T = _.reduce((function(e, t) {
@@ -979,7 +979,7 @@
 			}
 
 			function $(e, t) {
-				return t === S ? Y(function(e) {
+				return t === P ? Y(function(e) {
 					var t = s(e),
 						n = l(e),
 						r = t.visualViewport,
@@ -1051,9 +1051,9 @@
 					r = n.placement,
 					s = void 0 === r ? e.placement : r,
 					a = n.boundary,
-					c = void 0 === a ? P : a,
+					c = void 0 === a ? S : a,
 					d = n.rootBoundary,
-					u = void 0 === d ? S : d,
+					u = void 0 === d ? P : d,
 					p = n.elementContext,
 					m = void 0 === p ? M : p,
 					f = n.altBoundary,
@@ -1312,7 +1312,7 @@
 											flipVariations: f,
 											allowedAutoPlacements: h
 										}) : n)
-									}), []), x = t.rects.reference, C = t.rects.popper, P = new Map, S = !0, M = y[0], N = 0; N < y.length; N++) {
+									}), []), x = t.rects.reference, C = t.rects.popper, S = new Map, P = !0, M = y[0], N = 0; N < y.length; N++) {
 									var L = y[N],
 										F = U(L),
 										R = V(L) === I,
@@ -1332,15 +1332,15 @@
 									if (s && z.push(W[F] <= 0), i && z.push(W[H] <= 0, W[q] <= 0), z.every((function(e) {
 											return e
 										}))) {
-										M = L, S = !1;
+										M = L, P = !1;
 										break
 									}
-									P.set(L, z)
+									S.set(L, z)
 								}
-								if (S)
+								if (P)
 									for (var G = function(e) {
 											var t = y.find((function(t) {
-												var n = P.get(t);
+												var n = S.get(t);
 												if (n) return n.slice(0, e).every((function(e) {
 													return e
 												}))
@@ -1387,8 +1387,8 @@
 								k = !y,
 								_ = H(g),
 								C = "x" === _ ? "y" : "x",
-								P = t.modifiersData.popperOffsets,
-								S = t.rects.reference,
+								S = t.modifiersData.popperOffsets,
+								P = t.rects.reference,
 								M = t.rects.popper,
 								N = "function" == typeof b ? b(Object.assign(Object.assign({}, t.rects), {}, {
 									placement: t.placement
@@ -1397,17 +1397,17 @@
 									x: 0,
 									y: 0
 								};
-							if (P) {
+							if (S) {
 								if (s) {
 									var A = "y" === _ ? O : E,
 										L = "y" === _ ? w : j,
 										F = "y" === _ ? "height" : "width",
-										R = P[_],
-										B = P[_] + v[A],
-										D = P[_] - v[L],
+										R = S[_],
+										B = S[_] + v[A],
+										D = S[_] - v[L],
 										W = m ? -M[F] / 2 : 0,
-										q = y === I ? S[F] : M[F],
-										z = y === I ? -M[F] : -S[F],
+										q = y === I ? P[F] : M[F],
+										z = y === I ? -M[F] : -P[F],
 										G = t.elements.arrow,
 										K = m && G ? h(G) : {
 											width: 0,
@@ -1421,23 +1421,23 @@
 										},
 										J = Z[A],
 										Q = Z[L],
-										X = oe(0, S[F], K[F]),
-										Y = k ? S[F] / 2 - W - X - J - N : q - X - J - N,
-										$ = k ? -S[F] / 2 + W + X + Q + N : z + X + Q + N,
+										X = oe(0, P[F], K[F]),
+										Y = k ? P[F] / 2 - W - X - J - N : q - X - J - N,
+										$ = k ? -P[F] / 2 + W + X + Q + N : z + X + Q + N,
 										ee = t.elements.arrow && x(t.elements.arrow),
 										te = ee ? "y" === _ ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][_] : 0,
-										se = P[_] + Y - ne - te,
-										ae = P[_] + $ - ne,
+										se = S[_] + Y - ne - te,
+										ae = S[_] + $ - ne,
 										ie = oe(m ? Math.min(B, se) : B, R, m ? Math.max(D, ae) : D);
-									P[_] = ie, T[_] = ie - R
+									S[_] = ie, T[_] = ie - R
 								}
 								if (i) {
 									var ce = "x" === _ ? O : E,
 										de = "x" === _ ? w : j,
-										le = P[C],
+										le = S[C],
 										ue = oe(le + v[ce], le, le - v[de]);
-									P[C] = ue, T[C] = ue - le
+									S[C] = ue, T[C] = ue - le
 								}
 								t.modifiersData[r] = T
 							}
@@ -1972,8 +1972,8 @@
 				_ = n("./src/reddit/components/Flatlist/index.tsx"),
 				I = n("./src/reddit/components/JSAPIContainers/index.tsx"),
 				C = n("./src/reddit/components/ModModeFilteredReason/index.tsx"),
-				P = n("./src/reddit/components/ModModeFilteredReason/helpers.ts"),
-				S = n("./src/reddit/components/ModModeReports/index.tsx"),
+				S = n("./src/reddit/components/ModModeFilteredReason/helpers.ts"),
+				P = n("./src/reddit/components/ModModeReports/index.tsx"),
 				M = n("./src/reddit/components/ModModeReports/helpers.ts"),
 				N = n("./src/reddit/components/OneFeed/PostRecommendationContext.tsx"),
 				T = n("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
@@ -2051,7 +2051,7 @@
 					userIsOp: _e,
 					shouldShowGalleryTileOption: Ie,
 					showPromotedCTA: Ce
-				} = e, Pe = Object(l.a)(), Se = _e && ce, Me = Object(d.a)(b);
+				} = e, Se = Object(l.a)(), Pe = _e && ce, Me = Object(d.a)(b);
 				Object(r.useEffect)(() => {
 					he && Me !== b && he(ve.id)
 				}, [b, he, ve.id, Me]);
@@ -2061,7 +2061,7 @@
 					Le = Object(K.a)(le),
 					Fe = Object(Z.a)(le),
 					Re = ue && J.a,
-					Be = Object(P.a)(ve),
+					Be = Object(S.a)(ve),
 					De = Object(M.c)(ve),
 					We = !!ve.media && ve.media.type === H.o.RTJSON,
 					Ue = _e && We,
@@ -2083,8 +2083,8 @@
 					} = Ge,
 					[Ze, Je] = Object(r.useState)(!1),
 					Qe = Object(r.useCallback)(() => {
-						Je(!Ze), Object(Q.Kb)(), Pe(Object($.d)(ge))
-					}, [Ze, ge, Pe]);
+						Je(!Ze), Object(Q.Kb)(), Se(Object($.d)(ge))
+					}, [Ze, ge, Se]);
 				let Xe = o.a.createElement(q.a, {
 					className: re.a.classicThumbnail,
 					crosspost: Te && ve,
@@ -2100,7 +2100,7 @@
 				const Ye = o.a.createElement(A.a, {
 					className: Object(a.a)(te.a.classicPostStyles, re.a.postContainer, Object(Y.a)(e), {
 						[re.a.mFirst]: y,
-						[re.a.shouldShowOverflow]: Se
+						[re.a.shouldShowOverflow]: Pe
 					}, t),
 					isOverlay: ie,
 					style: {
@@ -2120,7 +2120,7 @@
 					redditStyle: ye,
 					postId: ge
 				}), o.a.createElement(T.a, {
-					className: Se ? re.a.shouldUseRoundedBorder : void 0,
+					className: Pe ? re.a.shouldUseRoundedBorder : void 0,
 					"data-click-id": "background",
 					flairStyleTemplate: Ne
 				}, o.a.createElement(E.a, {
@@ -2163,7 +2163,7 @@
 					key: "PostMeta"
 				}, ze)), ue && Ae && Be && o.a.createElement(C.a, {
 					thing: ve
-				}), ue && Ae && De && o.a.createElement(S.a, {
+				}), ue && Ae && De && o.a.createElement(P.a, {
 					onIgnoreReports: me,
 					reportable: ve
 				}), Ce && Ke && Ke.url && !ve.isSurveyAd && o.a.createElement(u.a, {
@@ -2200,7 +2200,7 @@
 					onIgnoreReports: me,
 					onOpenReportsDropdown: fe,
 					post: ve,
-					shouldShowInsightsButton: Se,
+					shouldShowInsightsButton: Pe,
 					showEditPost: Ue,
 					showEditFlair: we,
 					tooltipType: ie ? D.c.Lightbox : void 0,
@@ -2591,7 +2591,7 @@
 					useMediaIcons: O
 				} = e, j = n || h, E = Object(a.e)(v.b), k = Object(a.e)(v.c), _ = t => {
 					(E || k) && (t.preventDefault(), e.showModalOnPostLinkClick(j))
-				}, I = j.media, C = Object(b.p)(h), P = o && !!n;
+				}, I = j.media, C = Object(b.p)(h), S = o && !!n;
 				return I && !C && !(("rtjson" === I.type || "text" === I.type || "liveaudio" === I.type) && !Object(m.a)(j)) || !!h.pollData ? s.a.createElement("button", {
 					"aria-expanded": !!p,
 					"aria-haspopup": !0,
@@ -2604,7 +2604,7 @@
 				}, p ? s.a.createElement(f.a, {
 					name: "collapse",
 					className: x.a.icon
-				}) : O ? s.a.createElement(s.a.Fragment, null, w(j.media && j.media.type, P, h), s.a.createElement(f.a, {
+				}) : O ? s.a.createElement(s.a.Fragment, null, w(j.media && j.media.type, S, h), s.a.createElement(f.a, {
 					name: "expand",
 					className: Object(c.a)(x.a.icon, x.a.showOnHover)
 				})) : s.a.createElement(f.a, {
@@ -3768,9 +3768,9 @@
 					error: k,
 					pending: I
 				});
-			const P = {};
-			var S = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : P,
+			const S = {};
+			var P = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : S,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case o.m: {
@@ -3835,7 +3835,7 @@
 				},
 				L = Object(r.c)({
 					api: C,
-					fetchedTokens: S,
+					fetchedTokens: P,
 					loadMore: N,
 					models: A
 				}),
@@ -4338,13 +4338,13 @@
 							return e
 					}
 				},
-				Pe = Object(r.c)({
+				Se = Object(r.c)({
 					error: Ie,
 					pending: Ce
 				});
-			const Se = {};
+			const Pe = {};
 			var Me = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Se,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Pe,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case o.E: {
@@ -4418,7 +4418,7 @@
 					}
 				},
 				Ae = Object(r.c)({
-					api: Pe,
+					api: Se,
 					models: Me,
 					userOrder: Te
 				});
@@ -4944,7 +4944,7 @@
 						return e
 				}
 			};
-			var Pt = function() {
+			var St = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -4956,11 +4956,11 @@
 							return e
 					}
 				},
-				St = Object(r.c)({
+				Pt = Object(r.c)({
 					after: kt,
 					data: It,
 					loaded: Ct,
-					pending: Pt
+					pending: St
 				});
 			var Mt = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -5289,7 +5289,7 @@
 				ln = Object(r.c)({
 					bulkAction: ht,
 					edited: jt,
-					moderatedCommunitiesOrder: St,
+					moderatedCommunitiesOrder: Pt,
 					modqueue: Bt,
 					reports: Gt,
 					spam: en,
@@ -5466,7 +5466,7 @@
 					result: _n
 				});
 			const Cn = {};
-			var Pn = function() {
+			var Sn = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Cn,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -5505,14 +5505,14 @@
 							return e
 					}
 				},
-				Sn = Object(r.c)({
+				Pn = Object(r.c)({
 					api: fn,
 					fetchedTokens: bn,
 					inContext: gn,
 					loadMore: xn,
 					models: wn,
 					search: In,
-					userOrder: Pn
+					userOrder: Sn
 				});
 			t.a = Object(r.c)({
 				approvedSubmitters: E,
@@ -5521,7 +5521,7 @@
 				moderationLog: be,
 				moderators: ot,
 				modQueue: ln,
-				muted: Sn
+				muted: Pn
 			})
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, n) {
@@ -5534,13 +5534,13 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(s.c)(e, {
-					experimentName: o.He,
+					experimentName: o.Fe,
 					experimentEligibilitySelector: s.a
 				}),
-				c = (e, t) => t === o.Pe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Ne.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(r.a)(a.G, i, (e, t) => c(e, t));
 			Object(r.a)((e, t) => t, i, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.3c683f757448f43bfe4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.2747ff8e232c1f1f19db.js.map

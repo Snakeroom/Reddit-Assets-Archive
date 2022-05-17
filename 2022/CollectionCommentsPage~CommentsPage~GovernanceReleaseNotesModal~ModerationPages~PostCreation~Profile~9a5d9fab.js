@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.488b53ac2fcde1b25f13.js
-// Retrieved at 5/17/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.85155426b4544b1d366f.js
+// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab"], {
 		"./src/higherOrderComponents/withClickTracking/index.tsx": function(e, t, s) {
@@ -85,16 +85,16 @@
 			const p = Object(r.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.de
+					experimentName: u.be
 				});
-				return Object(u.Lf)(t) ? void 0 : t
+				return Object(u.Jf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.ee
+					experimentName: u.ce
 				});
-				return Object(u.Lf)(t) ? void 0 : t
-			}, (e, t) => e === u.he.Enabled && t === u.he.Enabled);
+				return Object(u.Jf)(t) ? void 0 : t
+			}, (e, t) => e === u.fe.Enabled && t === u.fe.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const g = e => {
@@ -2278,7 +2278,7 @@
 					return Object(n.c)(e, {
 						experimentEligibilitySelector: n.a,
 						experimentName: i.Jb
-					}) === i.pd
+					}) === i.nd
 				})(e);
 				if (!d) return !1;
 				const l = Object(a.f)(e),
@@ -2356,4 +2356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.488b53ac2fcde1b25f13.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~GovernanceReleaseNotesModal~ModerationPages~PostCreation~Profile~9a5d9fab.85155426b4544b1d366f.js.map

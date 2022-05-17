@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.00cfeee5c73f3715a6ba.js
-// Retrieved at 5/17/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.046e61e19825c47adfdf.js
+// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -7039,6 +7039,21 @@
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
 		},
+		"./src/reddit/selectors/experiments/econ/simpleExperiment.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var r = n("./src/reddit/constants/experiments.ts"),
+				s = n("./src/reddit/helpers/chooseVariant/index.ts");
+			const o = e => t => {
+				const n = Object(s.c)(t, {
+					experimentEligibilitySelector: s.a,
+					experimentName: e
+				});
+				return !(!n || Object(r.Jf)(n))
+			}
+		},
 		"./src/reddit/selectors/experiments/navbarLikeMweb.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -7047,9 +7062,9 @@
 			var r = n("./src/reddit/constants/experiments.ts"),
 				s = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(s.c)(e, {
-				experimentName: r.ie,
+				experimentName: r.ge,
 				experimentEligibilitySelector: s.a
-			}) === r.re.Enabled
+			}) === r.pe.Enabled
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -7090,7 +7105,7 @@
 					return r ? r * s.Sb < 1639443600180 ? void 0 : f(e) : void 0
 				},
 				f = Object(r.a)(e => Object(a.c)(e, {
-					experimentName: o.ke,
+					experimentName: o.ie,
 					experimentEligibilitySelector: c.e
 				}), d.a)
 		},
@@ -7206,4 +7221,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.00cfeee5c73f3715a6ba.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.046e61e19825c47adfdf.js.map

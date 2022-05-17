@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.253cdc8fbc7bc052f771.js
-// Retrieved at 5/17/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.fc5cb972bd555430e9a8.js
+// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -8113,12 +8113,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.qf.SmIcon:
+						case h.of.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.qf.SmIconHc:
+						case h.of.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8580,7 +8580,7 @@
 						} = t;
 						return Object(Ae.c)(e, n)
 					},
-					isInNewModuleNCPV3Experiment: e => Object(Re.a)(e) === Ie.te.NewModule,
+					isInNewModuleNCPV3Experiment: e => Object(Re.a)(e) === Ie.re.NewModule,
 					showGovernance: Te.d.spPoints,
 					showLeaderboard: Te.d.spLeaderboard,
 					showPredictionsLeaderboard: (e, t) => {
@@ -12091,7 +12091,7 @@
 				isHotPotatoEmbedEnabled: Se.c,
 				isBlockingInterstitialEnabled: we.b,
 				isBlockingInterstitialV2Enabled: we.c,
-				isTalkLiveBarEnabled: Pe.w,
+				isTalkLiveBarEnabled: Pe.v,
 				interestTopicRecommendations: $e.b,
 				reonboardingFlow: Le.b
 			}), Nt = () => Object(b.a)(Ke.jb, mt, bt, ft, ht, (e, t) => {
@@ -13280,14 +13280,10 @@
 				return j
 			})), n.d(t, "u", (function() {
 				return C
-			})), n.d(t, "x", (function() {
-				return N
 			})), n.d(t, "v", (function() {
-				return P
+				return N
 			})), n.d(t, "w", (function() {
-				return k
-			})), n.d(t, "y", (function() {
-				return S
+				return P
 			}));
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
@@ -13311,11 +13307,9 @@
 				_ = Object(r.a)(s.Xc),
 				O = Object(r.a)(s.bd),
 				j = Object(r.a)(s.hd),
-				C = Object(r.a)(s.nd),
-				N = Object(r.a)(s.md),
-				P = Object(r.a)(s.jd),
-				k = Object(r.a)(s.ld),
-				S = Object(r.a)(s.kd)
+				C = Object(r.a)(s.jd),
+				N = Object(r.a)(s.ld),
+				P = Object(r.a)(s.kd)
 		},
 		"./src/reddit/selectors/experiments/joinOptimizations.ts": function(e, t, n) {
 			"use strict";
@@ -13389,9 +13383,9 @@
 			var s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = e => Object(r.c)(e, {
-				experimentName: s.ie,
+				experimentName: s.ge,
 				experimentEligibilitySelector: r.a
-			}) === s.re.Enabled
+			}) === s.pe.Enabled
 		},
 		"./src/reddit/selectors/experiments/postActionBarAnimation.ts": function(e, t, n) {
 			"use strict";
@@ -13492,8 +13486,8 @@
 			const o = e => {
 				return Object(r.c)(e, {
 					experimentEligibilitySelector: r.a,
-					experimentName: s.De
-				}) === s.pd
+					experimentName: s.Be
+				}) === s.nd
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, n) {
@@ -13506,8 +13500,8 @@
 				o = n("./src/reddit/selectors/meta.ts");
 			const i = e => Object(r.c)(e, {
 				experimentEligibilitySelector: e => !Object(o.d)(e) && "US" === Object(o.b)(e),
-				experimentName: s.Te
-			}) === s.af.Enabled
+				experimentName: s.Re
+			}) === s.Ye.Enabled
 		},
 		"./src/reddit/selectors/experiments/signupUpsellExperiment.ts": function(e, t, n) {
 			"use strict";
@@ -13755,12 +13749,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.kf
+						experimentName: s.if
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.qf.SmIcon || t === s.qf.SmIconHc
+					return t === s.of.SmIcon || t === s.of.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -13863,4 +13857,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.253cdc8fbc7bc052f771.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.fc5cb972bd555430e9a8.js.map

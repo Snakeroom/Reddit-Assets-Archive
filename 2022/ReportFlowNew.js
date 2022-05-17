@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlowNew.fdf45826989b668e75df.js
-// Retrieved at 5/17/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlowNew.fda54a9384dff02e9f0b.js
+// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlowNew"], {
 		"./src/reddit/actions/blockedRedditors.ts": function(e, t, o) {
@@ -19,7 +19,7 @@
 			})), o.d(t, "h", (function() {
 				return b
 			})), o.d(t, "g", (function() {
-				return w
+				return O
 			}));
 			var r = o("./src/lib/makeActionCreator/index.ts"),
 				s = o("./src/lib/makeGqlRequest/index.ts"),
@@ -41,7 +41,7 @@
 				h = Object(r.a)(l),
 				f = Object(r.a)(u),
 				_ = Object(r.a)(p),
-				w = () => async (e, t, o) => {
+				O = () => async (e, t, o) => {
 					let {
 						gqlContext: r
 					} = o;
@@ -111,13 +111,13 @@
 			})), o.d(t, "h", (function() {
 				return _
 			})), o.d(t, "b", (function() {
-				return w
-			})), o.d(t, "c", (function() {
 				return O
+			})), o.d(t, "c", (function() {
+				return w
 			})), o.d(t, "a", (function() {
 				return R
 			})), o.d(t, "g", (function() {
-				return j
+				return k
 			}));
 			var r = o("./node_modules/fbt/lib/FbtPublic.js"),
 				s = o("./src/lib/makeActionCreator/index.ts"),
@@ -175,7 +175,7 @@
 							buttonAction: _(e)
 						}))
 					}
-				}, w = "USER_UNBLOCK__PENDING", O = "USER_UNBLOCK__SUCCESS", R = "USER_UNBLOCK__FAILED", x = Object(s.a)(w), g = Object(s.a)(O), k = Object(s.a)(R), j = e => async (t, o, s) => {
+				}, O = "USER_UNBLOCK__PENDING", w = "USER_UNBLOCK__SUCCESS", R = "USER_UNBLOCK__FAILED", x = Object(s.a)(O), g = Object(s.a)(w), j = Object(s.a)(R), k = e => async (t, o, s) => {
 					let {
 						apiContext: a
 					} = s;
@@ -197,7 +197,7 @@
 						text: r.fbt._("An error has occured. Please try again later", null, {
 							hk: "2FpsLy"
 						})
-					})), t(k({
+					})), t(j({
 						name: e
 					}))))
 				}
@@ -260,7 +260,7 @@
 		"./src/reddit/components/ReportFlow/_ReportFlowNew.tsx": function(e, t, o) {
 			"use strict";
 			o.r(t), o.d(t, "ValidThingReportTypes", (function() {
-				return M
+				return K
 			}));
 			var r = o("./src/config.ts"),
 				s = o("./node_modules/fbt/lib/FbtPublic.js"),
@@ -285,17 +285,17 @@
 				},
 				...h.n(t)
 			});
-			var w = o("./src/reddit/components/FormBuilder/async.tsx"),
-				O = o("./src/reddit/actions/userBlocks.ts"),
+			var O = o("./src/reddit/components/FormBuilder/async.tsx"),
+				w = o("./src/reddit/actions/userBlocks.ts"),
 				R = o("./src/lib/makeGqlRequest/index.ts"),
 				x = o("./src/redditGQL/operations/ReportComment.json");
 			const g = (e, t) => Object(R.a)(e, {
 				...x,
 				variables: t
 			});
-			var k = o("./src/redditGQL/operations/ReportLiveStream.json");
-			const j = (e, t) => Object(R.a)(e, {
-				...k,
+			var j = o("./src/redditGQL/operations/ReportLiveStream.json");
+			const k = (e, t) => Object(R.a)(e, {
+				...j,
 				variables: t
 			});
 			var v = o("./src/reddit/endpoints/messages/index.ts"),
@@ -307,26 +307,25 @@
 				E = o("./src/reddit/models/Toast/index.ts"),
 				F = o("./src/reddit/models/WhitelistAndBlocked.ts"),
 				A = o("./src/reddit/selectors/commentSelector.ts"),
-				T = o("./src/reddit/selectors/experiments/econ/index.ts"),
-				N = o("./src/reddit/selectors/meta.ts"),
-				q = o("./src/reddit/selectors/posts.ts"),
-				P = o("./src/reddit/selectors/user.ts"),
-				B = o("./src/lib/lessComponent.tsx"),
-				U = o("./src/reddit/components/ReportFlow/index.m.less"),
-				D = o.n(U);
-			const G = B.a.div("ReportLoaderWrapper", D.a),
-				$ = B.a.img("LoadingIcon", D.a),
-				K = "2.1";
-			var M;
+				T = o("./src/reddit/selectors/meta.ts"),
+				N = o("./src/reddit/selectors/posts.ts"),
+				q = o("./src/reddit/selectors/user.ts"),
+				P = o("./src/lib/lessComponent.tsx"),
+				B = o("./src/reddit/components/ReportFlow/index.m.less"),
+				U = o.n(B);
+			const D = P.a.div("ReportLoaderWrapper", U.a),
+				G = P.a.img("LoadingIcon", U.a),
+				$ = "2.1";
+			var K;
 			! function(e) {
 				e.Post = "post", e.Comment = "comment", e.Message = "message"
-			}(M || (M = {}));
-			const Q = Object(l.c)({
+			}(K || (K = {}));
+			const M = Object(l.c)({
 					post: (e, t) => {
 						let {
 							postId: o
 						} = t;
-						return o ? Object(q.G)(e, {
+						return o ? Object(N.G)(e, {
 							postId: o
 						}) : null
 					},
@@ -352,17 +351,16 @@
 							postId: s
 						} = t, n = r ? Object(A.b)(e, {
 							commentId: r
-						}) : null, i = s ? Object(q.G)(e, {
+						}) : null, i = s ? Object(N.G)(e, {
 							postId: s
 						}) : null;
 						(n ? n.author : i ? i.author : null) || t.author;
 						o.name
 					}),
-					isNightmodeOn: P.cb,
-					isTalkReportingAllowed: T.x,
-					locale: N.i
+					isNightmodeOn: q.cb,
+					locale: T.i
 				}),
-				J = Object(a.b)(Q, (e, t) => {
+				Q = Object(a.b)(M, (e, t) => {
 					let {
 						timestamp: o
 					} = t;
@@ -371,7 +369,7 @@
 							e(Object(u.b)())
 						},
 						onBlockUser: t => {
-							e(Object(O.h)(t))
+							e(Object(w.h)(t))
 						},
 						showFailToast: () => e(Object(p.f)({
 							kind: E.b.Error,
@@ -381,7 +379,7 @@
 						}))
 					}
 				}),
-				H = async (e, t, o, r, s) => {
+				J = async (e, t, o, r, s) => {
 					var n;
 					const i = await ((e, t) => {
 						let {
@@ -410,7 +408,7 @@
 						return e ? JSON.parse(e) : null
 					}
 				};
-			class Y extends c.a.Component {
+			class H extends c.a.Component {
 				constructor(e) {
 					super(e), this.getItemMetadata = () => {
 						const {
@@ -419,11 +417,11 @@
 							messageId: o
 						} = this.props;
 						let r, s, n, i;
-						if (this.props.author && (n = this.props.author), t) r = t, s = M.Comment, this.props.comment && !n && (n = this.props.comment.author, i = this.props.comment.authorId);
-						else if (e) r = e, s = M.Post, this.props.post && !n && (n = this.props.post.author, i = this.props.post.authorId);
+						if (this.props.author && (n = this.props.author), t) r = t, s = K.Comment, this.props.comment && !n && (n = this.props.comment.author, i = this.props.comment.authorId);
+						else if (e) r = e, s = K.Post, this.props.post && !n && (n = this.props.post.author, i = this.props.post.authorId);
 						else {
 							if (!o) throw new Error("Invalid object type passed to reporting flow");
-							r = o, s = M.Message
+							r = o, s = K.Message
 						}
 						return {
 							itemId: r,
@@ -456,87 +454,86 @@
 								showFailToast: s,
 								hostAppName: n,
 								isLiveStreaming: d,
-								isTalkReportingAllowed: c,
-								timestamp: a
+								timestamp: c
 							}
 						} = this, {
-							itemId: l,
-							itemType: u
+							itemId: a,
+							itemType: l
 						} = this.getItemMetadata();
 						if (!e) throw new Error("Report data not provided");
 						const {
-							ruleId: p,
-							ruleType: m,
-							customRule: b
-						} = e, h = {
+							ruleId: u,
+							ruleType: p,
+							customRule: m
+						} = e, b = {
 							fromHelpDesk: !1,
 							hostAppName: n
 						};
-						switch (m) {
+						switch (p) {
 							case "site":
-								h.siteRule = i()(t, p.ref).value || i()(t, p.ref);
+								b.siteRule = i()(t, u.ref).value || i()(t, u.ref);
 								break;
 							case "subreddit":
 							default:
-								const e = i()(t, p.ref);
-								"other" === e && b ? h.customRule = i()(t, b.ref) : h.subredditRule = e
+								const e = i()(t, u.ref);
+								"other" === e && m ? b.customRule = i()(t, m.ref) : b.subredditRule = e
 						}
-						let f;
-						switch (u) {
-							case M.Post:
-								if (c && (null === (o = this.props.post) || void 0 === o ? void 0 : o.audioRoom)) {
+						let h;
+						switch (l) {
+							case K.Post:
+								if (null === (o = this.props.post) || void 0 === o ? void 0 : o.audioRoom) {
 									const e = new URLSearchParams(window.location.href),
 										t = parseInt(e.get("reportedTimeInSeconds") || "0", 10),
 										o = {
 											reportedAt: isNaN(t) ? 0 : t,
-											postId: l,
-											...h
+											postId: a,
+											...b
 										};
-									f = () => Object(L.f)(r(), {
+									h = () => Object(L.f)(r(), {
 										input: o
 									});
 									break
 								}
-								if (d && a) {
+								if (d && c) {
 									const e = {
-										postId: l,
-										relativeReportTimeSec: a,
-										...h
+										postId: a,
+										relativeReportTimeSec: c,
+										...b
 									};
-									f = () => j(r(), {
+									h = () => k(r(), {
 										input: e
 									});
 									break
 								}
 								const e = {
-									postId: l,
-									...h
+									postId: a,
+									...b
 								};
-								f = () => Object(y.d)(r(), {
+								h = () => Object(y.d)(r(), {
 									input: e
 								});
 								break;
-							case M.Comment:
+							case K.Comment:
 								const t = {
-									commentId: l,
-									...h
+									commentId: a,
+									...b
 								};
-								f = () => g(r(), {
+								h = () => g(r(), {
 									input: t
 								});
 								break;
-							case M.Message:
+							case K.Message:
 								const s = {
-									messageId: l,
-									...h
+									messageId: a,
+									...b
 								};
-								f = () => Object(v.a)(r(), {
+								h = () => Object(v.a)(r(), {
 									input: s
 								});
 								break;
 							default:
 								throw new Error("Unsupported item type provided")
-						}(await f()).ok || s()
+						}(await h()).ok || s()
 					}, this.state = {
 						ctlFlowOpened: !1,
 						hasLoaded: !1
@@ -553,7 +550,7 @@
 						gqlContext: o,
 						hostAppName: r
 					} = this.props;
-					H(o(), e, K, r, t).then(e => {
+					J(o(), e, $, r, t).then(e => {
 						e && this.setState({
 							formComponent: e.component,
 							formState: e.state,
@@ -586,7 +583,7 @@
 						fromUserProfile: !b,
 						onCloseCrisisModal: this.handleReportFlowClose,
 						thingId: b
-					}) : i && d && l ? c.a.createElement(w.a, {
+					}) : i && d && l ? c.a.createElement(O.a, {
 						formComponent: i,
 						formState: d,
 						onCloseClick: this.handleReportFlowClose,
@@ -597,7 +594,7 @@
 						onOpenCtlFlow: this.onOpenCtlFlow,
 						onBlockAuthor: () => this.onBlockAuthor(u, p),
 						onResize: this.props.onResize
-					}) : c.a.createElement(G, null, c.a.createElement($, {
+					}) : c.a.createElement(D, null, c.a.createElement(G, {
 						src: e ? `${r.a.assetPath}/img/loader_2orbit_loop_nightmode.gif` : `${r.a.assetPath}/img/loader_2orbit_loop.gif`,
 						alt: s.fbt._("Loading", null, {
 							hk: "wiY7"
@@ -605,7 +602,7 @@
 					}))
 				}
 			}
-			t.default = Object(C.b)(J(Object(b.c)(Y)))
+			t.default = Object(C.b)(Q(Object(b.c)(H)))
 		},
 		"./src/reddit/components/ReportFlow/index.m.less": function(e, t, o) {
 			e.exports = {
@@ -848,22 +845,22 @@
 							e && e.length > 1 && (f = e[1])
 						}
 					}
-					const w = new RegExp(m),
-						O = new RegExp(b),
+					const O = new RegExp(m),
+						w = new RegExp(b),
 						R = [];
 					let x;
 					if (e.subredditName) {
 						const t = e.subredditName.trim();
-						if (O.test(t)) {
-							const e = O.exec(t);
+						if (w.test(t)) {
+							const e = w.exec(t);
 							e && e.length > 1 && (x = e[1])
 						}
 					}
 					if (e.usernames && e.usernames.length)
 						for (let i = 0; i < e.usernames.length; i++) {
 							const t = e.usernames[i].trim();
-							if (w.test(t)) {
-								const e = w.exec(t);
+							if (O.test(t)) {
+								const e = O.exec(t);
 								e && e.length > 1 && R.push(e[1])
 							}
 						}
@@ -975,4 +972,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.fdf45826989b668e75df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlowNew.fda54a9384dff02e9f0b.js.map

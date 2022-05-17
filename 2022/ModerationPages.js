@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.fa5259f49b5daca030ad.js
-// Retrieved at 5/17/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.abba387ef7858af3c07b.js
+// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -1203,7 +1203,7 @@
 					_e = me || ve;
 				me && !Object(xe.b)(G, me) && await t(Object(A.g)(me));
 				const Ce = !!me && Object(xe.c)(ae, me),
-					ke = Object(ue.v)(G),
+					ke = Object(ue.u)(G),
 					ye = Object(pe.n)(ae, {
 						subredditId: _e
 					}),
@@ -22555,7 +22555,7 @@
 						subredditId: s.id
 					})
 				},
-				isTalkHostsExperimentEnabled: y.v
+				isTalkHostsExperimentEnabled: y.u
 			});
 			class Le extends r.a.Component {
 				constructor(e, t) {
@@ -23065,7 +23065,7 @@
 					return {
 						contentGateInfo: m,
 						isBroadcastingEnabled: !!p && Object(N.c)(c, p.id),
-						isTalkHostsEnabled: Object(y.v)(c),
+						isTalkHostsEnabled: Object(y.u)(c),
 						isContributor: b,
 						isEmployee: t,
 						layout: s,
@@ -23163,9 +23163,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.od
+					experimentName: n.md
 				});
-				return !(!t || Object(n.Lf)(t))
+				return !(!t || Object(n.Jf)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -23178,10 +23178,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.He,
+					experimentName: a.Fe,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.Pe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.Ne.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(n.a)(r.G, i, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -23439,4 +23439,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.fa5259f49b5daca030ad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.abba387ef7858af3c07b.js.map
