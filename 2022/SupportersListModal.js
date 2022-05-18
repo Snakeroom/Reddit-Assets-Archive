@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SupportersListModal.d2b355ef0a2572b48dff.js
-// Retrieved at 5/18/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SupportersListModal.f309bff952d51ccfc146.js
+// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SupportersListModal"], {
 		"./src/reddit/components/Econ/Common/ModalCloseButton/index.m.less": function(e, t, s) {
@@ -134,7 +134,7 @@
 					});
 				return n.a.createElement("div", {
 					className: Object(a.a)(r, m.a.container)
-				}, b ? n.a.createElement(i.default, {
+				}, b ? n.a.createElement(i.a, {
 					className: m.a.user,
 					to: `/user/${f}/`,
 					onClick: () => {
@@ -314,7 +314,7 @@
 				hk: "3foyZr"
 			}))), g = e => e.isAnonymousUser ? n.a.createElement("div", {
 				className: e.className
-			}, e.children) : n.a.createElement(E.default, {
+			}, e.children) : n.a.createElement(E.a, {
 				className: e.className,
 				to: `/user/${e.name}/`,
 				onClick: e.onClick
@@ -655,4 +655,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.d2b355ef0a2572b48dff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SupportersListModal.f309bff952d51ccfc146.js.map

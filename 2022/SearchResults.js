@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.d4e7f2207cd168bf394a.js
-// Retrieved at 5/18/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.0863c9b8a96927d18bf1.js
+// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1589,7 +1589,7 @@
 						trackCommentClick: ae,
 						userIconSmall: ce,
 						userIsBanned: de
-					} = e, le = m.isDeleted, me = !N && !le && !!f && f.length > 0, ue = Object(l.a)(c.c.edit, m.id), pe = Object(l.a)(c.c.replyToComment, m.id), be = Object(P.a)(U), Ce = Object(Ye.a)(m), he = Object($.c)(m), xe = m.authorIsContractor && ie === ct.g.EmployeesOnly, fe = m.isLocked, ge = be && V, Oe = !N && !le && (F || S), ve = S && !m.unrepliableReason, Ee = !!h && Object(dt.e)(h) === m.author, [ye, je] = Object(r.useState)(null), [_e, ke] = Object(r.useState)(null), we = Object(r.useRef)(null), Se = Object(L.f)(m) || Object(L.g)(m), Ie = Se ? Bt : ot.default, Te = Object(L.f)(m) ? At : Lt;
+					} = e, le = m.isDeleted, me = !N && !le && !!f && f.length > 0, ue = Object(l.a)(c.c.edit, m.id), pe = Object(l.a)(c.c.replyToComment, m.id), be = Object(P.a)(U), Ce = Object(Ye.a)(m), he = Object($.c)(m), xe = m.authorIsContractor && ie === ct.g.EmployeesOnly, fe = m.isLocked, ge = be && V, Oe = !N && !le && (F || S), ve = S && !m.unrepliableReason, Ee = !!h && Object(dt.e)(h) === m.author, [ye, je] = Object(r.useState)(null), [_e, ke] = Object(r.useState)(null), we = Object(r.useRef)(null), Se = Object(L.f)(m) || Object(L.g)(m), Ie = Se ? Bt : ot.a, Te = Object(L.f)(m) ? At : Lt;
 					Object(r.useEffect)(() => {
 						if (!N && !le && (E && je(o.a.createElement(He, null)), null !== _)) {
 							if (_.glowHexColor) {
@@ -5338,7 +5338,7 @@
 							},
 							priority: R.c.Tertiary
 						});
-					return i.a.createElement(ie.default, {
+					return i.a.createElement(ie.a, {
 						"data-testid": `${n.type}-link`,
 						className: Object(_.a)(pe.a.container, d && pe.a.sidebar, s ? pe.a.mFirst : void 0, t),
 						onClick: O,
@@ -6667,7 +6667,7 @@
 						text: r,
 						contentType: c
 					} = e;
-					return a.a.createElement(p.default, {
+					return a.a.createElement(p.a, {
 						key: n,
 						"data-testid": n,
 						to: Object(b.b)({
@@ -6865,7 +6865,7 @@
 						listingKey: m,
 						searchOptions: h,
 						sidebar: !0
-					}), T && o.a.createElement(w.default, {
+					}), T && o.a.createElement(w.a, {
 						to: Object(S.b)({
 							searchType: c.cc.Subreddits,
 							pageLayer: R
@@ -6891,7 +6891,7 @@
 						listingKey: m,
 						searchOptions: h,
 						sidebar: !0
-					}), N && o.a.createElement(w.default, {
+					}), N && o.a.createElement(w.a, {
 						to: Object(S.b)({
 							searchType: c.cc.Users,
 							pageLayer: R
@@ -7364,7 +7364,7 @@
 					})))], {
 						hk: "2NDUqb"
 					}));
-					return r.a.createElement(p.default, {
+					return r.a.createElement(p.a, {
 						className: Object(a.a)(f.a.searchSwitcher, e && f.a.redesign, n),
 						"data-testid": "search-switcher-link",
 						onClick: this.onClick,
@@ -8123,12 +8123,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case C.rf.SmIcon:
+						case C.pf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case C.rf.SmIconHc:
+						case C.pf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -10398,12 +10398,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.lf
+						experimentName: n.jf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.rf.SmIcon || t === n.rf.SmIconHc
+					return t === n.pf.SmIcon || t === n.pf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -10444,4 +10444,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.d4e7f2207cd168bf394a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.0863c9b8a96927d18bf1.js.map

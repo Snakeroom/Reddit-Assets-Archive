@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.1a669b7e71f5f4888471.js
-// Retrieved at 5/18/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.78ca895bbb2da5a27d2d.js
+// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2958,7 +2958,7 @@
 					className: Object(o.a)(p.a.predictor, t)
 				}, r.a.createElement("div", {
 					className: p.a.rank
-				}, s), r.a.createElement(d.default, {
+				}, s), r.a.createElement(d.a, {
 					className: p.a.userLink,
 					onClick: () => x(Object(l.g)({
 						targetUserId: h.id
@@ -3449,7 +3449,7 @@
 						rank: s
 					} = e;
 					var o, i, a, c;
-					return r.a.createElement(V.default, {
+					return r.a.createElement(V.a, {
 						key: n.id,
 						className: G.a.user,
 						to: `/user/${null==t?void 0:t.name}`,
@@ -3687,7 +3687,7 @@
 					rank: x,
 					score: v
 				} = n, E = null !== (i = null == f ? void 0 : f.name) && void 0 !== i ? i : null == g ? void 0 : g.displayName;
-				return r.a.createElement(m.default, {
+				return r.a.createElement(m.a, {
 					className: Object(a.a)(t, {
 						[b.a.first]: 1 === x,
 						[b.a.third]: 3 === x
@@ -3854,7 +3854,7 @@
 				}, r.a.createElement(l.a, {
 					className: M.a.rank,
 					rank: o
-				}), r.a.createElement(m.default, {
+				}), r.a.createElement(m.a, {
 					className: M.a.userLink,
 					onClick: () => s(Object(A.g)({
 						targetUserId: c.id
@@ -3995,7 +3995,7 @@
 						steps: J
 					}), r.a.createElement("div", {
 						className: z.a.learnMoreWrapper
-					}, r.a.createElement(m.default, {
+					}, r.a.createElement(m.a, {
 						to: "/predictions",
 						onMouseDown: () => e(Object(A.f)())
 					}, r.a.createElement(v.t, {
@@ -4719,7 +4719,7 @@
 					}), ": ", r ? o.a.createElement(c.a, {
 						className: h.a.rawHtmlDisplay,
 						html: r
-					}) : i, " ", o.a.createElement(l.default, {
+					}) : i, " ", o.a.createElement(l.a, {
 						className: h.a.link,
 						to: "/"
 					}, s.fbt._("Click to return home.", null, {
@@ -7398,7 +7398,7 @@
 					className: Object(c.a)(N.a.trendingPost, {
 						[N.a["m-background"]]: !!S
 					})
-				}, i.a.createElement(g.default, {
+				}, i.a.createElement(g.a, {
 					to: T
 				}, i.a.createElement("div", {
 					className: Object(c.a)(N.a.backgroundWrapper, j.a.backgroundWrapper, t),
@@ -8113,12 +8113,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.rf.SmIcon:
+						case h.pf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: s,
 								rtJsonElementProps: i
 							});
-						case h.rf.SmIconHc:
+						case h.pf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: s,
 								isHoverable: !0,
@@ -8361,7 +8361,7 @@
 							containerOnClick: n,
 							postId: e.id,
 							redditStyle: r,
-							showSubredditName: Object(g.a)(Object(T.h)(t)),
+							showSubredditName: Object(g.a)(Object(T.g)(t)),
 							thumbnailOnClick: n
 						}))
 					}
@@ -8404,7 +8404,7 @@
 						"data-redditstyle": i,
 						onPostClick: this.openLargePost,
 						showSubredditMeta: !1,
-						showSubredditName: Object(g.a)(Object(T.h)(n)),
+						showSubredditName: Object(g.a)(Object(T.g)(n)),
 						trendingPost: f
 					})), v.map(this.renderSmallPost), e, E.map(this.renderSmallPost), c && a.a.createElement(I.r, {
 						className: ee.a.SeeMore,
@@ -9810,7 +9810,7 @@
 				r = n("./src/reddit/controls/InternalLink/index.tsx"),
 				o = n("./src/reddit/controls/UnstyledInternalLink/index.m.less"),
 				i = n.n(o);
-			t.a = s.a.wrapped(r.default, "unstyledInternalLink", i.a)
+			t.a = s.a.wrapped(r.a, "unstyledInternalLink", i.a)
 		},
 		"./src/reddit/controls/Upvote/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -13752,12 +13752,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: s.lf
+						experimentName: s.jf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === s.rf.SmIcon || t === s.rf.SmIconHc
+					return t === s.pf.SmIcon || t === s.pf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -13860,4 +13860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1a669b7e71f5f4888471.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.78ca895bbb2da5a27d2d.js.map

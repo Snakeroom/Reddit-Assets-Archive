@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.444b4444222e5259cf25.js
-// Retrieved at 5/18/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.1aa72ce707f75ae6fe89.js
+// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -487,7 +487,7 @@
 						},
 						forceGeopopular: !0,
 						includeCommunityDUs: !1,
-						includeInterestTopics: !!p && !Object(b.Mf)(p),
+						includeInterestTopics: !!p && !Object(b.Kf)(p),
 						includeFeaturedAnnouncements: !0,
 						includeLiveEvents: !0,
 						includeIdentity: f && !(null === (a = null === (s = e.user.account) || void 0 === s ? void 0 : s.karma) || void 0 === a ? void 0 : a.total),
@@ -2113,7 +2113,7 @@
 					return o.a.createElement(C.a, {
 						subredditName: s,
 						tooltipPosition: ["right", "top"]
-					}, o.a.createElement(A.default, {
+					}, o.a.createElement(A.a, {
 						className: P.a.Link,
 						to: t,
 						title: s
@@ -5050,7 +5050,7 @@
 				};
 
 			function S(e, t) {
-				return t || `${g.g}${Object(y.h)(e)}/`
+				return t || `${g.g}${Object(y.g)(e)}/`
 			}
 			const w = e => {
 				return l.a.createElement("div", {
@@ -7669,4 +7669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.444b4444222e5259cf25.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.1aa72ce707f75ae6fe89.js.map

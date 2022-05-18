@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileModeration.ebe4061ddad11508e045.js
-// Retrieved at 5/18/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileModeration.ff837230791448be7717.js
+// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileModeration"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -924,7 +924,7 @@
 						enabled: a,
 						...r
 					} = e;
-					return i.a.createElement(p.default, x({}, r, {
+					return i.a.createElement(p.a, x({}, r, {
 						"aria-selected": t,
 						className: Object(l.a)(r.className, {
 							[b.a.mIsActive]: t,
@@ -1731,4 +1731,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.ebe4061ddad11508e045.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileModeration.ff837230791448be7717.js.map

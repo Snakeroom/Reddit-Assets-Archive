@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.77c0919c1b52d33dc58c.js
-// Retrieved at 5/18/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.c90f7445d2489449f803.js
+// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.Lf)(e.category_name)
+									displayText: Object(u.Jf)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -1404,7 +1404,7 @@
 				};
 
 			function j(e, t) {
-				return t || `${h.g}${Object(k.h)(e)}/`
+				return t || `${h.g}${Object(k.g)(e)}/`
 			}
 			const T = e => {
 				return c.a.createElement("div", {
@@ -1958,7 +1958,7 @@
 			}));
 			var n = r("./src/reddit/helpers/name/index.ts");
 			const s = (e, t) => t.map(t => {
-					const r = Object(n.h)(t.name),
+					const r = Object(n.g)(t.name),
 						s = r.split(" & ").join("_and_");
 					return {
 						...t,
@@ -1966,7 +1966,7 @@
 						path: t.path || `${e}${s}/`
 					}
 				}),
-				a = e => Object(n.h)(e).split("_and_").join(" & ")
+				a = e => Object(n.g)(e).split("_and_").join(" & ")
 		},
 		"./src/reddit/helpers/graphql/normalizeTopSubredditsFromGql/index.ts": function(e, t, r) {
 			"use strict";
@@ -2442,8 +2442,8 @@
 					})))))
 				}
 			}
-			var q = Object(u.c)(z(Q)),
-				J = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
+			var J = Object(u.c)(z(Q)),
+				q = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				U = r.n(K);
 
@@ -2464,7 +2464,7 @@
 					isActive: s,
 					tabIndex: a
 				} = e, o = Object(c.a)(U.a.categoryLink, s && U.a.active, n);
-				return i.a.createElement("li", null, i.a.createElement(J.a, V({}, t.anchorProps, {
+				return i.a.createElement("li", null, i.a.createElement(q.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2517,7 +2517,7 @@
 						onItemClick: l
 					} = this.props, {
 						isExpanded: u
-					} = this.state, m = !u && d && r * d, b = a + (e ? r * e.length : 0), g = Object(c.a)(U.a.categoryList, u && U.a.expanded), h = e => !(!o || o !== Object($.h)(e)), y = i.a.createElement("ul", {
+					} = this.state, m = !u && d && r * d, b = a + (e ? r * e.length : 0), g = Object(c.a)(U.a.categoryList, u && U.a.expanded), h = e => !(!o || o !== Object($.g)(e)), y = i.a.createElement("ul", {
 						className: g,
 						style: {
 							height: m || b
@@ -2592,7 +2592,7 @@
 				pe = r("./src/reddit/components/SidebarStickyBottom/index.tsx"),
 				be = r("./src/reddit/components/TopSubredditsWidget/Container.tsx");
 			const ge = e => {
-					const t = e.categoryName && Object($.h)(e.categoryName);
+					const t = e.categoryName && Object($.g)(e.categoryName);
 					return i.a.createElement("div", {
 						className: _.a.SidebarLeft
 					}, i.a.createElement(ue.a, null, i.a.createElement(ne, {
@@ -2629,7 +2629,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				Ee = Object(m.Kf)(p.i),
+				Ee = Object(m.If)(p.i),
 				_e = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2703,7 +2703,7 @@
 						m = (null === (e = a.find(e => e.id === u)) || void 0 === e ? void 0 : e.displayText) || "";
 					return i.a.createElement(l.a, null, i.a.createElement(k.a, {
 						className: Object(c.a)(t, _.a.mainContent),
-						content: i.a.createElement(q, {
+						content: i.a.createElement(J, {
 							categoryId: u,
 							categoryName: d,
 							categoryDisplayText: m
@@ -2782,4 +2782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.77c0919c1b52d33dc58c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.c90f7445d2489449f803.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FrontpageSidebar.ea3eb5a2f2c2b3f32fb3.js
-// Retrieved at 5/18/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FrontpageSidebar.dda41a8edaf83884a600.js
+// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FrontpageSidebar"], {
 		"./node_modules/lodash/_arrayShuffle.js": function(e, t, n) {
@@ -166,7 +166,7 @@
 					return d.a.createElement(j.a, {
 						subredditName: n,
 						tooltipPosition: ["right", "top"]
-					}, d.a.createElement(T.default, {
+					}, d.a.createElement(T.a, {
 						className: F.a.Link,
 						to: t,
 						title: n
@@ -1564,7 +1564,7 @@
 				};
 
 			function C(e, t) {
-				return t || `${h.g}${Object(f.h)(e)}/`
+				return t || `${h.g}${Object(f.g)(e)}/`
 			}
 			const w = e => {
 				return c.a.createElement("div", {
@@ -2220,4 +2220,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.ea3eb5a2f2c2b3f32fb3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FrontpageSidebar.dda41a8edaf83884a600.js.map

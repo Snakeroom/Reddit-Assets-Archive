@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NotificationsInbox.d1bcb0679c7a90c5187d.js
-// Retrieved at 5/18/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NotificationsInbox.7f9c516d4e8d483c4465.js
+// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NotificationsInbox"], {
 		"./src/reddit/actions/pages/notificationsInbox.ts": function(e, t, n) {
@@ -367,7 +367,7 @@
 						enabled: i,
 						...s
 					} = e;
-					return o.a.createElement(b.default, h({}, s, {
+					return o.a.createElement(b.a, h({}, s, {
 						"aria-selected": t,
 						className: Object(c.a)(s.className, {
 							[g.a.mIsActive]: t,
@@ -707,7 +707,7 @@
 					className: X.a.icon
 				}), J.fbt._("Mark as read", null, {
 					hk: "3IycES"
-				}))), s.a.createElement("li", null, s.a.createElement(Q.default, {
+				}))), s.a.createElement("li", null, s.a.createElement(Q.a, {
 					className: X.a.navLink,
 					onClick: () => i(Object(C.o)(C.c.Inbox)),
 					to: "/settings/notifications"
@@ -741,4 +741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.d1bcb0679c7a90c5187d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NotificationsInbox.7f9c516d4e8d483c4465.js.map

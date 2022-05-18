@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.96b3619404739caa455c.js
-// Retrieved at 5/18/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.a20467e23d632e8f6968.js
+// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -6198,7 +6198,7 @@
 					e(Object(l.i)()), Object(p.yb)()
 				},
 				onViewTooltip: () => {
-					Object(p.Ub)()
+					Object(p.Tb)()
 				}
 			}))(Object(m.c)(x));
 			const v = "editable-primary-topic-idcard";
@@ -8332,7 +8332,7 @@
 						className: Object(v.a)(se.a.row, t ? se.a.hasError : null)
 					}, d.a.createElement("div", {
 						className: se.a.errorIndicator
-					}, d.a.createElement(y.a, null)), d.a.createElement(ye.default, {
+					}, d.a.createElement(y.a, null)), d.a.createElement(ye.a, {
 						className: se.a.userLink,
 						to: `/user/${e.username}`
 					}, d.a.createElement(ke.a, {
@@ -11020,7 +11020,7 @@
 			}, e.label, o.a.createElement(d.a, {
 				name: "external_link",
 				className: c.a.outboundLinkIcon
-			})) : o.a.createElement(i.default, {
+			})) : o.a.createElement(i.a, {
 				className: Object(r.a)(c.a.navLinkStyles, {
 					[c.a.activeLink]: !!e.isActive
 				}),
@@ -11130,12 +11130,12 @@
 				l = s.n(d);
 			t.a = e => a.a.createElement("div", {
 				className: l.a.container
-			}, e.prevButtonEnabled && a.a.createElement(r.default, {
+			}, e.prevButtonEnabled && a.a.createElement(r.a, {
 				to: e.prevTo,
 				onClick: e.prevButtonOnClick
 			}, a.a.createElement(i.a, {
 				className: Object(o.a)(l.a.iconStyles, l.a.arrowLeft)
-			})), e.nextButtonEnabled && a.a.createElement(r.default, {
+			})), e.nextButtonEnabled && a.a.createElement(r.a, {
 				to: e.nextTo,
 				onClick: e.nextButtonOnClick
 			}, a.a.createElement(i.a, {
@@ -11899,7 +11899,7 @@
 						}),
 						onChange: this.onChangeFilterText,
 						onKeyDown: this.onKeyDown
-					}), t.map(e => r.a.createElement(O.default, {
+					}), t.map(e => r.a.createElement(O.a, {
 						className: F.a.dropdownRow,
 						onClick: () => this.onActionClick(e),
 						to: this.buildModLogUrlForAction(e)
@@ -11930,7 +11930,7 @@
 						name: t,
 						urlPath: s
 					} = e;
-					return r.a.createElement(O.default, {
+					return r.a.createElement(O.a, {
 						className: F.a.dropdownRow,
 						to: s
 					}, t)
@@ -12365,7 +12365,7 @@
 							})
 					}
 					const d = _[t.action];
-					return r.a.createElement(O.default, {
+					return r.a.createElement(O.a, {
 						className: Ie.a.actionLink,
 						to: s
 					}, r.a.createElement("span", {
@@ -15241,7 +15241,7 @@
 						subredditRemovalReasons: e.removalReasons
 					}) : a.a.createElement(P, null, S._("You don't have any removal reasons yet", null, {
 						hk: "2cPgPy"
-					}), a.a.createElement(p.default, {
+					}), a.a.createElement(p.a, {
 						to: `/r/${e.subredditName}/about/removal`,
 						target: "_blank"
 					}, a.a.createElement(u.r, {
@@ -19665,7 +19665,7 @@
 				m = s.n(c);
 			const u = r.a.span("UserIconContainer", m.a),
 				p = r.a.wrapped(d.a, "UserIcon", m.a),
-				b = r.a.wrapped(l.default, "UserLink", m.a);
+				b = r.a.wrapped(l.a, "UserLink", m.a);
 			t.a = e => o.a.createElement(b, {
 				className: e.className,
 				to: `${n.a.redditUrl}/user/${e.username}`
@@ -22025,7 +22025,7 @@
 				}, a.a.createElement(i.b, {
 					className: r.a.subredditIcon,
 					subredditOrProfile: e.subredditOrProfile
-				}), a.a.createElement(d.default, {
+				}), a.a.createElement(d.a, {
 					className: r.a.subredditLink,
 					to: (null === (t = e.subredditOrProfile) || void 0 === t ? void 0 : t.url) || "",
 					onClick: e.onClick
@@ -22436,7 +22436,7 @@
 						className: Me.a.contentTree
 					}, n.map(s => {
 						const n = s.path === e;
-						return r.a.createElement(Te.default, {
+						return r.a.createElement(Te.a, {
 							key: s.path,
 							className: Me.a.pageNavLink,
 							to: `${t}/${s.path}`
@@ -23165,7 +23165,7 @@
 					experimentEligibilitySelector: a.a,
 					experimentName: n.nd
 				});
-				return !(!t || Object(n.Mf)(t))
+				return !(!t || Object(n.Kf)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -23439,4 +23439,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.96b3619404739caa455c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.a20467e23d632e8f6968.js.map

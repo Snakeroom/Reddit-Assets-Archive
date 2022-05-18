@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.926e244dbde435562044.js
-// Retrieved at 5/18/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.cb2732ef2db8378e848d.js
+// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -2110,7 +2110,7 @@
 					noPostfix: !0,
 					shortenedUnit: !0
 				})) : `u/${d}`;
-				return a ? n.a.createElement(s.default, c({}, l, {
+				return a ? n.a.createElement(s.a, c({}, l, {
 					className: t,
 					to: a
 				}), m) : n.a.createElement("span", c({}, l, {
@@ -2342,7 +2342,7 @@
 					isGold: g,
 					snoovatarUrl: j,
 					prefersReducedAnimations: O
-				}), !p && N && n.a.createElement(o.default, {
+				}), !p && N && n.a.createElement(o.a, {
 					to: "/settings/profile",
 					className: b.a.snoovatarSettingsLink
 				}, n.a.createElement(c.a, {
@@ -2712,4 +2712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.926e244dbde435562044.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.cb2732ef2db8378e848d.js.map

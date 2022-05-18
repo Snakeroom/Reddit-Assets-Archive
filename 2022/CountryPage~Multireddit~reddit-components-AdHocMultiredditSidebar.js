@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.ce8c6324cda6a8a58954.js
-// Retrieved at 5/18/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.e2ceb72f2b4bceedfe50.js
+// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -812,7 +812,7 @@
 						let {
 							gqlContext: n
 						} = s;
-						const o = Object(c.h)(e);
+						const o = Object(c.g)(e);
 						if (!o) return;
 						const u = r(),
 							h = u.subredditAutocomplete;
@@ -1374,7 +1374,7 @@
 									query: e
 								} = this.state;
 								if (e.length) {
-									const t = Object(me.i)(e),
+									const t = Object(me.h)(e),
 										i = t.startsWith(de.kc) ? "profile" : "subreddit",
 										r = "profile" === i ? t.substring(2) : t;
 									this.props.addSubredditRequested({
@@ -2570,4 +2570,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.ce8c6324cda6a8a58954.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.e2ceb72f2b4bceedfe50.js.map

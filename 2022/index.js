@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/index.c36dd162c3b49162c3d2.js
-// Retrieved at 5/18/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/index.85d30994307cf33620ce.js
+// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["index"], {
 		"./src/reddit/components/Econ/Audio/MuteIcon.tsx": function(e, t, n) {
@@ -112,7 +112,7 @@
 		"./src/reddit/components/Econ/Audio/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "AudioPostBody", (function() {
-				return f
+				return E
 			}));
 			n("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = n("./src/config.ts"),
@@ -129,7 +129,7 @@
 				b = n("./src/reddit/components/Econ/Audio/SpeakerRings.tsx");
 			const {
 				fbt: v
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), f = e => {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), E = e => {
 				let {
 					post: t
 				} = e;
@@ -137,8 +137,8 @@
 					audioRoom: n
 				} = t, {
 					recordingStatus: u
-				} = n, [f, E] = Object(a.useState)(new Set), [g, h] = Object(a.useState)(new Set), x = Object(r.e)(l.cb), [O, P] = Object(a.useState)(-1), _ = e => {
-					const t = e ? Array.from(g) : Array.from(f);
+				} = n, [E, f] = Object(a.useState)(new Set), [g, h] = Object(a.useState)(new Set), x = Object(r.e)(l.cb), [O, P] = Object(a.useState)(-1), _ = e => {
+					const t = e ? Array.from(g) : Array.from(E);
 					return null == t ? void 0 : t.map((t, n) => {
 						return e ? s.a.createElement("div", {
 							key: `audioPostAvatar--${t}`,
@@ -173,10 +173,10 @@
 					const e = new Set;
 					for (; e.size < 13;) {
 						const t = j();
-						e.has(t) || (f.size < 6 ? f.add(t) : g.size < 7 && g.add(t), e.add(t))
+						e.has(t) || (E.size < 6 ? E.add(t) : g.size < 7 && g.add(t), e.add(t))
 					}
-					E(f), h(g)
-				}, [f, g]), Object(a.useEffect)(() => {
+					f(E), h(g)
+				}, [E, g]), Object(a.useEffect)(() => {
 					const e = setInterval(() => {
 						const e = Math.floor(6 * Math.random());
 						P(e), setTimeout(() => P(-1), 3500)
@@ -230,7 +230,7 @@
 					}))))
 				})()
 			};
-			t.default = f
+			t.default = E
 		},
 		"./src/reddit/components/Econ/Prediction/Confetti/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -356,8 +356,8 @@
 				p = n("./src/lib/classNames/index.ts"),
 				b = n("./src/reddit/contexts/PageLayer/index.tsx"),
 				v = n("./src/reddit/selectors/user.ts"),
-				f = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less"),
-				E = n.n(f);
+				E = n("./src/reddit/components/Econ/Prediction/TournamentPostBody/PredictionContainer/index.m.less"),
+				f = n.n(E);
 
 			function g() {
 				return (g = Object.assign || function(e) {
@@ -377,9 +377,9 @@
 					r = Object(b.x)(o),
 					i = Object(s.e)(v.cb);
 				return a.a.createElement("div", g({}, n, {
-					className: Object(p.a)(t, E.a.container, {
-						[E.a.commentsPage]: r,
-						[E.a.isNightMode]: i
+					className: Object(p.a)(t, f.a.container, {
+						[f.a.commentsPage]: r,
+						[f.a.isNightMode]: i
 					}),
 					onClick: e => {
 						e.stopPropagation()
@@ -402,7 +402,7 @@
 					r = Object(s.e)(e => Object(P.U)(e, {
 						postId: n
 					}));
-				return a.a.createElement(O.default, {
+				return a.a.createElement(O.a, {
 					className: Object(p.a)(j.a.viewTournament, t),
 					to: `${null==r?void 0:r.url}predictions/`,
 					onClick: () => o((e => t => ({
@@ -451,7 +451,7 @@
 					description: C._("Your destiny has been decided", null, {
 						hk: "vGyB7"
 					}),
-					cta: a.a.createElement(O.default, {
+					cta: a.a.createElement(O.a, {
 						className: w.a.cta,
 						to: `${null==n?void 0:n.url}predictions/`
 					}, C._("View Results", null, {
@@ -566,10 +566,10 @@
 						{
 							id: p,
 							endsAt: b,
-							options: f
+							options: E
 						} = t,
 						{
-							id: E,
+							id: f,
 							voteState: g
 						} = n,
 						h = t.userSelection,
@@ -580,7 +580,7 @@
 					return {
 						isLoading: x,
 						isShowingVoteAnimation: j,
-						selectedOption: f.find(e => {
+						selectedOption: E.find(e => {
 							let {
 								id: t
 							} = e;
@@ -607,7 +607,7 @@
 									pollId: p,
 									tournamentId: e,
 									tournamentPostId: n.id
-								})), i && g < Z.a.upvoted && (o(Object(H.kb)(E)), o(Object(H.kb)(p)), m()), O(!1), _(null), y(!0)
+								})), i && g < Z.a.upvoted && (o(Object(H.kb)(f)), o(Object(H.kb)(p)), m()), O(!1), _(null), y(!0)
 							} catch (a) {
 								O(!1), _(null), u(K._("Error: Failed to make prediction, please try again later", null, {
 									hk: "1tECsx"
@@ -660,7 +660,7 @@
 							isFirstSlide: u,
 							isLastSlide: m,
 							nextSlide: b,
-							prevSlide: f
+							prevSlide: E
 						} = function(e) {
 							const [t, n] = a.a.useState(0), o = 0 === t, s = t === e - 1;
 							return {
@@ -693,7 +693,7 @@
 								source: "predictions",
 								action: "click",
 								noun: "previous_post"
-							}))(t.id)), f()
+							}))(t.id)), E()
 						}
 					}, a.a.createElement(D.a, {
 						name: "caret_left",
@@ -832,4 +832,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.c36dd162c3b49162c3d2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/index.85d30994307cf33620ce.js.map

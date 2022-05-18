@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.6f4620dd110d7690391c.js
-// Retrieved at 5/18/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.ad624b35a534331bee28.js
+// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-Content-ModQueue"], {
 		"./src/reddit/components/Comments/CompactUnthreadedComment/index.m.less": function(e, t, s) {
@@ -347,7 +347,7 @@
 					currentPage: e => e.platform.currentPage,
 					origin: I.j
 				});
-			var L = Object(i.b)(P)(e => a.a.createElement("div", null, a.a.createElement(_.default, {
+			var L = Object(i.b)(P)(e => a.a.createElement("div", null, a.a.createElement(_.a, {
 					onClick: e.sendEventWithName("content_type_both"),
 					to: Object(O.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "only", "page"])
 				}, a.a.createElement(w, {
@@ -355,7 +355,7 @@
 						hk: "1ypCik"
 					}),
 					isSelected: !e.postTypeFilter
-				})), a.a.createElement(_.default, {
+				})), a.a.createElement(_.a, {
 					onClick: e.sendEventWithName("content_type_post"),
 					to: Object(E.a)(Object(O.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page"]), {
 						only: o.Posts
@@ -365,7 +365,7 @@
 						hk: "r23OU"
 					}),
 					isSelected: e.postTypeFilter === o.Posts
-				})), a.a.createElement(_.default, {
+				})), a.a.createElement(_.a, {
 					onClick: e.sendEventWithName("content_type_comment"),
 					to: Object(E.a)(Object(O.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page"]), {
 						only: o.Comments
@@ -434,7 +434,7 @@
 							hk: "1o7zy2"
 						}),
 						value: t.search
-					})), a.a.createElement(_.default, {
+					})), a.a.createElement(_.a, {
 						to: Object(O.a)(`${e.origin}${e.currentPageUrl}`, ["after", "before", "page", "profile", "subreddit"])
 					}, a.a.createElement(A, {
 						displayText: n.fbt._("All subreddits", null, {
@@ -443,7 +443,7 @@
 						isSelected: !e.subredditName && !e.profileName
 					})), this.filteredSubreddits.map(t => {
 						const s = U(t);
-						return a.a.createElement(_.default, {
+						return a.a.createElement(_.a, {
 							key: t.id,
 							to: Object(E.a)(Object(O.a)(`${e.origin}${e.currentPageUrl}`, ["after", "before", "page", "profile", "subreddit"]), s)
 						}, a.a.createElement(A, {
@@ -1408,4 +1408,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.6f4620dd110d7690391c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-Content-ModQueue.ad624b35a534331bee28.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EmailVerificationModals.f6009266ab38cedc63e4.js
-// Retrieved at 5/18/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EmailVerificationModals.de9ac091900cd4433a33.js
+// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EmailVerificationModals"], {
 		"./src/lib/colors/constants.ts": function(e, t, a) {
@@ -405,7 +405,7 @@
 							hk: "1taLkO"
 						}), !t && o.a.createElement("span", {
 							className: q.a.reviewSettings
-						}, ` ${n.fbt._("You can also",null,{hk:"14h75w"})} `, o.a.createElement(U.default, {
+						}, ` ${n.fbt._("You can also",null,{hk:"14h75w"})} `, o.a.createElement(U.a, {
 							className: q.a.settingsLink,
 							onMouseDown: this.trackEmailSettingsLinkClick,
 							to: "/settings"
@@ -1079,4 +1079,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.f6009266ab38cedc63e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EmailVerificationModals.de9ac091900cd4433a33.js.map
