@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.843b74e09a2f03e3d70e.js
-// Retrieved at 5/17/2022, 8:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ca0076079ba157b26f0b.js
+// Retrieved at 5/18/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -3044,7 +3044,11 @@
 				CloseIconWrap: "_3SwwKU0q7pRO0pohludkXl",
 				closeIconWrap: "_3SwwKU0q7pRO0pohludkXl",
 				ReplyAuthor: "_11cxPUL8P03UB2QLjnVQA1",
-				replyAuthor: "_11cxPUL8P03UB2QLjnVQA1"
+				replyAuthor: "_11cxPUL8P03UB2QLjnVQA1",
+				isLivePostCommentV2: "_2XKKoOyCjVl8x5yDW_X0jG",
+				ReplyAvatar: "YyoT3oARMLSlanYs7VFpr",
+				replyAvatar: "YyoT3oARMLSlanYs7VFpr",
+				icon: "PcmnI5P64G9FEvzKigvkP"
 			}
 		},
 		"./src/reddit/components/OverflowMenu/index.m.less": function(e, t, s) {
@@ -7920,4 +7924,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.843b74e09a2f03e3d70e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.ca0076079ba157b26f0b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/6.503dd42562079224a26e.js
-// Retrieved at 5/16/2022, 12:30:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/6.6d25e0baf0b4ac9c02cb.js
+// Retrieved at 5/18/2022, 9:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[6], {
 		"./src/reddit/icons/svgs/AddCollection/index.tsx": function(e, s, t) {
@@ -474,6 +474,28 @@
 				fillRule: "evenodd",
 				clipRule: "evenodd",
 				d: "M11.901 11.809C11.803 11.909 11.673 11.959 11.543 11.959C11.417 11.959 11.291 11.913 11.194 11.817L7.651 8.358C7.554 8.264 7.5 8.135 7.5 8V3C7.5 2.724 7.724 2.5 8 2.5C8.276 2.5 8.5 2.724 8.5 3V7.789L11.892 11.102C12.09 11.294 12.094 11.611 11.901 11.809ZM8 0C3.589 0 0 3.589 0 8C0 12.412 3.589 16 8 16C12.411 16 16 12.412 16 8C16 3.589 12.411 0 8 0Z",
+				fill: "inherit"
+			}))
+		},
+		"./src/reddit/icons/svgs/CloseV2/index.tsx": function(e, s, t) {
+			"use strict";
+			var n = t("./node_modules/react/index.js"),
+				a = t.n(n);
+
+			function c() {
+				return (c = Object.assign || function(e) {
+					for (var s = 1; s < arguments.length; s++) {
+						var t = arguments[s];
+						for (var n in t) Object.prototype.hasOwnProperty.call(t, n) && (e[n] = t[n])
+					}
+					return e
+				}).apply(this, arguments)
+			}
+			s.a = e => a.a.createElement("svg", c({
+				viewBox: "0 0 12 12",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, e), a.a.createElement("path", {
+				d: "M11.065 1.46521L10.5346 0.934814L5.99977 5.46961L1.46497 0.934814L0.93457 1.46521L5.46937 6.00001L0.93457 10.5348L1.46497 11.0652L5.99977 6.53041L10.5346 11.0652L11.065 10.5348L6.53017 6.00001L11.065 1.46521Z",
 				fill: "inherit"
 			}))
 		},
@@ -4002,7 +4024,7 @@
 			t("./src/reddit/icons/svgs/CheckboxSelected/index.tsx"), t("./src/reddit/icons/svgs/Checkmark/index.tsx"), t("./src/reddit/icons/svgs/CheckmarkFitted/index.tsx"), t("./src/reddit/icons/svgs/Chevron/index.tsx");
 			var i = t("./src/reddit/icons/svgs/ChevronDown/index.tsx"),
 				r = t("./src/reddit/icons/svgs/ChevronUp/index.tsx");
-			t("./src/reddit/icons/svgs/Circle/index.tsx"), t("./src/reddit/icons/svgs/CircleCheck/index.tsx"), t("./src/reddit/icons/svgs/CircleCheckLight/index.tsx"), t("./src/reddit/icons/svgs/CircledPlanet/index.tsx"), t("./src/reddit/icons/svgs/CirclePost/index.tsx"), t("./src/reddit/icons/svgs/ClearFilled/index.tsx"), t("./src/reddit/icons/svgs/Clock/index.tsx"), t("./src/reddit/icons/svgs/ClockFilled/index.tsx"), t("./src/reddit/icons/svgs/Close/index.tsx"), t("./src/reddit/icons/svgs/Coin/index.tsx"), t("./src/reddit/icons/svgs/CoinV2/index.tsx"), t("./src/reddit/icons/svgs/Collection/index.tsx"), t("./src/reddit/icons/svgs/Comments/index.tsx"), t("./src/reddit/icons/svgs/Controller/index.tsx");
+			t("./src/reddit/icons/svgs/Circle/index.tsx"), t("./src/reddit/icons/svgs/CircleCheck/index.tsx"), t("./src/reddit/icons/svgs/CircleCheckLight/index.tsx"), t("./src/reddit/icons/svgs/CircledPlanet/index.tsx"), t("./src/reddit/icons/svgs/CirclePost/index.tsx"), t("./src/reddit/icons/svgs/ClearFilled/index.tsx"), t("./src/reddit/icons/svgs/Clock/index.tsx"), t("./src/reddit/icons/svgs/ClockFilled/index.tsx"), t("./src/reddit/icons/svgs/Close/index.tsx"), t("./src/reddit/icons/svgs/CloseV2/index.tsx"), t("./src/reddit/icons/svgs/Coin/index.tsx"), t("./src/reddit/icons/svgs/CoinV2/index.tsx"), t("./src/reddit/icons/svgs/Collection/index.tsx"), t("./src/reddit/icons/svgs/Comments/index.tsx"), t("./src/reddit/icons/svgs/Controller/index.tsx");
 			t("./src/reddit/icons/svgs/Crosspost/index.tsx"), t("./src/reddit/icons/svgs/Crown/index.tsx");
 			t("./src/reddit/icons/svgs/DiscoveryUnitArrow/Left/index.tsx"), t("./src/reddit/icons/svgs/DiscoveryUnitArrow/Right/index.tsx"), t("./src/reddit/icons/svgs/DizzySnoo/index.tsx");
 			t("./src/reddit/icons/svgs/DownvoteCircle/index.tsx"), t("./src/reddit/icons/svgs/Dropdown/index.tsx"), t("./src/reddit/icons/svgs/DynamicThreshold/index.tsx"), t("./src/reddit/icons/svgs/Edit/index.tsx");
@@ -4066,4 +4088,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/6.503dd42562079224a26e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/6.6d25e0baf0b4ac9c02cb.js.map
