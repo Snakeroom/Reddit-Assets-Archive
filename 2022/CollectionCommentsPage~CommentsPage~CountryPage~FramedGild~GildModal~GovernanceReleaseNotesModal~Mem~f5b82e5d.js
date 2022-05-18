@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.6d26919fca18667e7637.js
-// Retrieved at 5/18/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.61b4d768f278a62c439e.js
+// Retrieved at 5/18/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -1468,6 +1468,13 @@
 						}, e)
 					}, this.exitHandler = () => {
 						this.state.videoFullScreen && !Object(v.b)() && this.exitFullScreen()
+					}, this.createFakeThumbnail = async () => {
+						const e = this.HTML5StreamPlayerVideo;
+						if (e) try {
+							this.setVideoMute(!0, !1), await e.play(), await e.pause()
+						} catch (t) {
+							x.c.captureMessage(`Error creating thumbnail: ${t}`)
+						}
 					}, this.playPauseVideo = e => {
 						const t = this.HTML5StreamPlayerVideo;
 						t && this.state.videoLoaded && (t.paused && this.state.videoPaused ? (this.playVideo(), this.sendEvent("click", "play"), this.setState({
@@ -1475,27 +1482,30 @@
 						})) : (this.pauseVideo(), this.sendEvent("click", "pause"), this.setState({
 							videoManualPaused: !0
 						})))
-					}, this.playVideo = async () => {
-						const e = this.HTML5StreamPlayerVideo;
-						if (e) try {
-							this.setVideoMute(this.state.isMuted, !1), await e.play(), e.currentTime < 1 && this.props.onVideoStarted(), this.setState({
+					}, this.playVideo = async function() {
+						let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 3;
+						const s = t.HTML5StreamPlayerVideo;
+						if (s) try {
+							t.setVideoMute(t.state.isMuted, !1), await s.play(), s.currentTime < 1 && t.props.onVideoStarted(), t.setState({
 								videoStarted: !0,
 								videoEnded: !1,
 								videoPaused: !1,
 								isHovered: !0
-							}), this.hoverTimeout = window.setTimeout(() => {
-								this.setState({
+							}), t.hoverTimeout = window.setTimeout(() => {
+								t.setState({
 									isHovered: !1
-								}), window.clearTimeout(this.hoverTimeout), this.hoverTimeout = void 0
+								}), window.clearTimeout(t.hoverTimeout), t.hoverTimeout = void 0
 							}, b.n)
-						} catch (t) {}
+						} catch (i) {
+							e > 0 ? t.playVideo(e - 1) : x.c.captureMessage(`Error playing video ${t.props.postId}: ${i}`)
+						}
 					}, this.pauseVideo = () => {
 						const e = this.HTML5StreamPlayerVideo;
 						e && (e.pause(), this.state.videoPaused || this.setState({
 							videoPaused: !0
 						}))
 					}, this.resetVideo = e => {
-						this.isUnobscured && this.state.videoEnded && (this.resetVideoWithRetry(), this.sendEvent("click", "replay"), this.setState({
+						this.isUnobscured() && this.state.videoEnded && (this.resetVideoWithRetry(), this.sendEvent("click", "replay"), this.setState({
 							ignoreUnderrunsUntil: Date.now() + tt,
 							videoEnded: !1,
 							videoManualPaused: !1
@@ -1723,7 +1733,7 @@
 								return
 							}
 							null != this.props.postId && this.props.onLoadStarted(performance.now()), this.dashPlayer.on(e.MediaPlayer.events.STREAM_INITIALIZED, () => {
-								this.getVideoQualityList(), this.getAudioInfo(), null != this.props.postId && this.props.onPlayable(performance.now()), this.controlBarApi && !this.state.hideControlBar && this.controlBarApi.setCurrentTime(0)
+								this.getVideoQualityList(), this.getAudioInfo(), null != this.props.postId && this.props.onPlayable(performance.now()), this.controlBarApi && !this.state.hideControlBar && this.controlBarApi.setCurrentTime(0), this.props.shouldCreateFakeThumbnail && this.createFakeThumbnail()
 							}), this.dashPlayer.on(e.MediaPlayer.events.BUFFER_EMPTY, e => {
 								if (null != this.props.postId && Date.now() > this.state.ignoreUnderrunsUntil) {
 									const e = N.c(this.props.postId);
@@ -2689,4 +2699,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.6d26919fca18667e7637.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.61b4d768f278a62c439e.js.map
