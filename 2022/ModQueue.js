@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModQueue.f32ec3a048942350fab2.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModQueue.cf1615e020ec8c0814b4.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModQueue"], {
 		"./src/reddit/actions/bulkActions/index.ts": function(e, t, s) {
@@ -1356,7 +1356,7 @@
 				h = Object(d.b)(_);
 			t.b = h(e => a.a.createElement("div", {
 				className: e.className
-			}, a.a.createElement(b.a, {
+			}, a.a.createElement(b.default, {
 				onClick: e.sendEventWithName("modqueue_sort_newest"),
 				to: Object(u.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page", "sort"])
 			}, a.a.createElement(j, {
@@ -1364,7 +1364,7 @@
 					hk: "4buqk8"
 				}),
 				isSelected: !e.postSort
-			})), a.a.createElement(b.a, {
+			})), a.a.createElement(b.default, {
 				onClick: e.sendEventWithName("modqueue_sort_oldest"),
 				to: Object(i.a)(Object(u.a)(`${e.origin}${e.currentPage.url}`, ["after", "before", "page"]), {
 					sort: o.OldestFirst
@@ -1499,4 +1499,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.f32ec3a048942350fab2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModQueue.cf1615e020ec8c0814b4.js.map

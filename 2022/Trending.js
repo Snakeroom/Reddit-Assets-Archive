@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Trending.c8a6e0e99ef9eb80c7af.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Trending.0d325bbc175553653770.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Trending"], {
 		"./src/reddit/actions/search/trending.ts": function(e, t, s) {
@@ -162,7 +162,7 @@
 					className: Object(o.a)(S.a.trendingPost, {
 						[S.a["m-background"]]: !!N
 					})
-				}, a.a.createElement(x.a, {
+				}, a.a.createElement(x.default, {
 					to: I
 				}, a.a.createElement("div", {
 					className: Object(o.a)(S.a.backgroundWrapper, j.a.backgroundWrapper, t),
@@ -470,4 +470,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.c8a6e0e99ef9eb80c7af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Trending.0d325bbc175553653770.js.map

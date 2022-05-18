@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.185300964732b53fe66e.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.85bb9e0be6932ef994f3.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-Prediction"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -955,7 +955,7 @@
 					name: p,
 					totalParticipantsCount: b
 				} = d;
-				return s.a.createElement(ge.a, {
+				return s.a.createElement(ge.default, {
 					className: Pe.a.tournamentLink,
 					to: `${a.url}predictions/`,
 					onClick: () => {
@@ -1965,4 +1965,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.185300964732b53fe66e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-Prediction.85bb9e0be6932ef994f3.js.map

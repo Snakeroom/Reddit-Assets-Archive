@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.e9c6c1a3b36a57f37da4.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.c2caa5c6520b012b5032.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -387,7 +387,7 @@
 					onClick: x
 				}), e.children) : e.isAuthorDeleted ? n.a.createElement("span", {
 					className: Object(o.a)(p.a.deletedAuthorLink, e.className)
-				}, e.children) : n.a.createElement(c.a, b({}, null !== (s = e.linkProps) && void 0 !== s ? s : {}, {
+				}, e.children) : n.a.createElement(c.default, b({}, null !== (s = e.linkProps) && void 0 !== s ? s : {}, {
 					className: r,
 					style: e.style,
 					to: {
@@ -3286,7 +3286,7 @@
 					className: Object(a.a)(I.a.trendingPost, {
 						[I.a["m-background"]]: !!S
 					})
-				}, o.a.createElement(v.a, {
+				}, o.a.createElement(v.default, {
 					to: T
 				}, o.a.createElement("div", {
 					className: Object(a.a)(I.a.backgroundWrapper, w.a.backgroundWrapper, t),
@@ -3719,12 +3719,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case h.pf.SmIcon:
+						case h.rf.SmIcon:
 							return n.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case h.pf.SmIconHc:
+						case h.rf.SmIconHc:
 							return n.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -3931,7 +3931,7 @@
 							containerOnClick: s,
 							postId: e.id,
 							redditStyle: n,
-							showSubredditName: Object(v.a)(Object(T.g)(t)),
+							showSubredditName: Object(v.a)(Object(T.h)(t)),
 							thumbnailOnClick: s
 						}))
 					}
@@ -3974,7 +3974,7 @@
 						"data-redditstyle": o,
 						onPostClick: this.openLargePost,
 						showSubredditMeta: !1,
-						showSubredditName: Object(v.a)(Object(T.g)(s)),
+						showSubredditName: Object(v.a)(Object(T.h)(s)),
 						trendingPost: f
 					})), g.map(this.renderSmallPost), e, O.map(this.renderSmallPost), a && d.a.createElement(P.r, {
 						className: ee.a.SeeMore,
@@ -5213,12 +5213,12 @@
 				a = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: d,
-						experimentName: r.jf
+						experimentName: r.lf
 					}) || ""
 				},
 				c = e => {
 					const t = a(e);
-					return t === r.pf.SmIcon || t === r.pf.SmIconHc
+					return t === r.rf.SmIcon || t === r.rf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -5244,4 +5244,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.e9c6c1a3b36a57f37da4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.c2caa5c6520b012b5032.js.map

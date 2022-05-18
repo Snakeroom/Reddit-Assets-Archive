@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.399f903f3379484fbb68.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.e07716cf53500f5f2ef5.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -6154,7 +6154,7 @@
 					}
 				},
 				v = e => {
-					const t = Object(u.g)(e.destSubreddit.name);
+					const t = Object(u.h)(e.destSubreddit.name);
 					return {
 						...e.destSubreddit.isProfile ? {
 							sr: `u_${t}`,
@@ -7271,7 +7271,7 @@
 							if (m()(n)) return e;
 							const r = {};
 							return S()(n, e => {
-								r[Object(j.g)(e.name)] = e.id
+								r[Object(j.h)(e.name)] = e.id
 							}), {
 								...e,
 								...r
@@ -10981,7 +10981,7 @@
 							if (ua()(n)) return e;
 							const r = {};
 							return fa()(n, e => {
-								r[Object(ha.g)(e.unitName)] = e.id
+								r[Object(ha.h)(e.unitName)] = e.id
 							}), {
 								...e,
 								...r
@@ -25894,4 +25894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.399f903f3379484fbb68.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.e07716cf53500f5f2ef5.js.map

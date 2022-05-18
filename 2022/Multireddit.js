@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.8a695cdd0cb53d001012.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.dab8451249c5f674376e.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
@@ -346,10 +346,10 @@
 						[D.u]: t ? "1" : ""
 					})
 				},
-				F = e => e.isFlairFilter ? a.a.createElement(C.a, {
+				F = e => e.isFlairFilter ? a.a.createElement(C.default, {
 					onMouseDown: e.onMouseDown,
 					to: e.to || ""
-				}, e.flair) : e.onClick ? a.a.createElement(C.a, {
+				}, e.flair) : e.onClick ? a.a.createElement(C.default, {
 					onClick: () => e.onClick(e.searchableTerm),
 					to: w(e.searchableTerm, e.subredditName)
 				}, e.flair) : e.flair;
@@ -1332,4 +1332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.8a695cdd0cb53d001012.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.dab8451249c5f674376e.js.map

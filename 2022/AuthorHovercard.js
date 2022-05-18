@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.f1ec9e3e72c0a78076a0.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.a24fa508949980ea53cb.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -2393,7 +2393,7 @@
 					}).format(new Date(s.createdAt)), E = s.itemType === w.l.Note;
 					return a.a.createElement("div", {
 						className: Object(c.a)(t, ae.a.metadata)
-					}, s.operator && a.a.createElement(ne.a, {
+					}, s.operator && a.a.createElement(ne.default, {
 						className: ae.a.operator,
 						to: `/user/${s.operator.displayName}/`,
 						onClick: d
@@ -3407,7 +3407,7 @@
 				}))), a.a.createElement(jt, {
 					user: v,
 					userName: h
-				}), a.a.createElement(ne.a, {
+				}), a.a.createElement(ne.default, {
 					className: kt.a.profileLink,
 					to: `/user/${h}/`
 				}, f.fbt._("View full profile", null, {
@@ -3920,7 +3920,7 @@
 					})
 				}, N), s.a.createElement("div", {
 					className: x.a.metadata
-				}, s.a.createElement(m.a, {
+				}, s.a.createElement(m.default, {
 					className: x.a.operatorBlock,
 					onClick: e => {
 						e.stopPropagation(), (() => {
@@ -4371,7 +4371,7 @@
 					noPostfix: !0,
 					shortenedUnit: !0
 				})) : `u/${c}`;
-				return r ? a.a.createElement(o.a, i({}, l, {
+				return r ? a.a.createElement(o.default, i({}, l, {
 					className: t,
 					to: r
 				}), u) : a.a.createElement("span", i({}, l, {
@@ -4603,7 +4603,7 @@
 					isGold: _,
 					snoovatarUrl: j,
 					prefersReducedAnimations: k
-				}), !b && g && a.a.createElement(s.a, {
+				}), !b && g && a.a.createElement(s.default, {
 					to: "/settings/profile",
 					className: p.a.snoovatarSettingsLink
 				}, a.a.createElement(i.a, {
@@ -6053,4 +6053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.f1ec9e3e72c0a78076a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.a24fa508949980ea53cb.js.map

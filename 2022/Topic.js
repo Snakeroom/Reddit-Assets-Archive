@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.90689162084476aa5c95.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.f1d6ab7017e54ca6eaf9.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -1315,7 +1315,7 @@
 						subredditOrProfile: s
 					}), n.a.createElement("div", {
 						className: C.a.Text
-					}, n.a.createElement(v.a, {
+					}, n.a.createElement(v.default, {
 						className: C.a.Link,
 						onMouseDown: this.trackSubredditClick,
 						to: s.url
@@ -2007,7 +2007,7 @@
 					} = e;
 					return n.a.createElement("span", {
 						className: b.a.Container
-					}, n.a.createElement(m.a, {
+					}, n.a.createElement(m.default, {
 						className: b.a.Link,
 						title: t.name,
 						to: t.url
@@ -2114,7 +2114,7 @@
 						} = e;
 						return n.a.createElement("li", {
 							key: t
-						}, n.a.createElement(m.a, {
+						}, n.a.createElement(m.default, {
 							className: B.a.link,
 							to: r
 						}, s))
@@ -2251,7 +2251,7 @@
 						subredditOrProfile: r
 					}), n.a.createElement("div", {
 						className: oe.a.Text
-					}, n.a.createElement(m.a, {
+					}, n.a.createElement(m.default, {
 						className: oe.a.Link,
 						to: r.url
 					}, n.a.createElement("div", {
@@ -2271,7 +2271,7 @@
 						className: oe.a.About
 					}, i.publicDescription || ae._("Welcome to {subreddit name}", [ae._param("subreddit name", a)], {
 						hk: "vZ7VH"
-					})), n.a.createElement(m.a, {
+					})), n.a.createElement(m.default, {
 						className: oe.a.VisitLink,
 						to: r.url
 					}, ae._("Visit", null, {
@@ -2711,4 +2711,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.90689162084476aa5c95.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.f1d6ab7017e54ca6eaf9.js.map

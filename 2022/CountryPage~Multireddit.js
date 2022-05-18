@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.3b81d465cc8331718e1a.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.d58c321f953e4dc663ba.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -4709,12 +4709,12 @@
 						rtJsonElementProps: o
 					});
 					switch (i) {
-						case b.pf.SmIcon:
+						case b.rf.SmIcon:
 							return s.a.createElement(p, {
 								subredditName: r,
 								rtJsonElementProps: o
 							});
-						case b.pf.SmIconHc:
+						case b.rf.SmIconHc:
 							return s.a.createElement(p, {
 								subredditName: r,
 								isHoverable: !0,
@@ -6053,7 +6053,7 @@
 					hk: "12Ej7M"
 				}), a.a.createElement("span", null, " • "), e.userIsOwner ? a.a.createElement(P, {
 					multireddit: e.multireddit
-				}) : a.a.createElement(a.a.Fragment, null, Se._("Curated by {multiredditFeedAuthorLink}", [Se._param("multiredditFeedAuthorLink", a.a.createElement(F.a, {
+				}) : a.a.createElement(a.a.Fragment, null, Se._("Curated by {multiredditFeedAuthorLink}", [Se._param("multiredditFeedAuthorLink", a.a.createElement(F.default, {
 					className: Oe.a.usernameLink,
 					to: `/${Object(H.d)(Object(j.i)(e.multireddit.url))}`
 				}, Object(H.d)(Object(j.i)(e.multireddit.url))))], {
@@ -6248,7 +6248,7 @@
 						experimentEligibilitySelector: i.P,
 						experimentName: r.Sc
 					});
-					return !(!t || Object(r.Kf)(t))
+					return !(!t || Object(r.Mf)(t))
 				},
 				a = e => {
 					return Object(s.c)(e, {
@@ -6387,12 +6387,12 @@
 				c = e => {
 					return Object(i.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: r.jf
+						experimentName: r.lf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === r.pf.SmIcon || t === r.pf.SmIconHc
+					return t === r.rf.SmIcon || t === r.rf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -6433,4 +6433,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.3b81d465cc8331718e1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.d58c321f953e4dc663ba.js.map

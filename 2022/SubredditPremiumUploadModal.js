@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.6fc999822ee11e28b3e4.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.43bbcfdcdb286e94a441.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditPremiumUploadModal"], {
 		"./src/reddit/components/Economics/SubredditPremium/UploadModal/ImageUpload/index.m.less": function(e, t, a) {
@@ -320,7 +320,7 @@
 					}
 				}, s))) : r.a.createElement(r.a.Fragment, null, H._("Follow this", null, {
 					hk: "3w0v6n"
-				}), " ", r.a.createElement(L.a, {
+				}), " ", r.a.createElement(L.default, {
 					className: F.a.link,
 					to: "https://www.reddit.com/r/FortNiteBR/wiki/badgeemojiguide"
 				}, H._("artistic guide", null, {
@@ -1118,4 +1118,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.6fc999822ee11e28b3e4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditPremiumUploadModal.43bbcfdcdb286e94a441.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.0d41b311283a9f611d83.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.f2ac890dcb20f436da74.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -516,7 +516,7 @@
 					}, [t, o]);
 				return s.a.createElement("div", {
 					className: Object(c.a)(f.a.banner, f.a.hotPotatoBanner)
-				}, s.a.createElement(O.a, {
+				}, s.a.createElement(O.default, {
 					to: `/r/${n}`,
 					className: f.a.bannerContainer,
 					onClick: i
@@ -785,7 +785,7 @@
 						className: B.a.topNavLinks
 					}, s.a.createElement("span", {
 						className: B.a.messagesLinkContainer
-					}, s.a.createElement(O.a, {
+					}, s.a.createElement(O.default, {
 						className: Object(c.a)(B.a.messagesLink, {
 							[B.a.mActive]: p
 						}),
@@ -803,7 +803,7 @@
 					}, s.a.createElement(k.a, {
 						name: "mark_read",
 						className: B.a.icon
-					})), s.a.createElement(O.a, {
+					})), s.a.createElement(O.default, {
 						className: B.a.navLink,
 						onClick: b,
 						to: "/settings/notifications"
@@ -814,7 +814,7 @@
 				},
 				ae = e => s.a.createElement("div", {
 					className: B.a.bottomBar
-				}, s.a.createElement(O.a, {
+				}, s.a.createElement(O.default, {
 					className: B.a.bottomLink,
 					onClick: () => {
 						e.sendInboxClickSeeAll(), e.onBarClick()
@@ -1589,7 +1589,7 @@
 						to: o,
 						kind: u.b.InternalLink
 					},
-					p = a.a.createElement(_.a, {
+					p = a.a.createElement(_.default, {
 						to: o,
 						target: "_blank",
 						rel: "noopener noreferrer",
@@ -4053,4 +4053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.0d41b311283a9f611d83.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.f2ac890dcb20f436da74.js.map

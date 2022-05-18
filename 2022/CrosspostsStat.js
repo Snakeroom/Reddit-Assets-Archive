@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CrosspostsStat.cd9a9a72fad3e736fbe9.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CrosspostsStat.1433ff30c82a1d6d8ebb.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CrosspostsStat"], {
 		"./src/reddit/components/CreatorStats/CrosspostsStat.m.less": function(e, t, s) {
@@ -91,9 +91,9 @@
 			})), s.d(t, "e", (function() {
 				return v
 			})), s.d(t, "b", (function() {
-				return I
-			})), s.d(t, "a", (function() {
 				return h
+			})), s.d(t, "a", (function() {
+				return I
 			}));
 			var r = s("./node_modules/node-libs-browser/node_modules/url/url.js"),
 				n = s("./src/lib/constants/index.ts"),
@@ -168,7 +168,7 @@
 					}
 				},
 				S = e => {
-					const t = Object(l.g)(e.destSubreddit.name);
+					const t = Object(l.h)(e.destSubreddit.name);
 					return {
 						...e.destSubreddit.isProfile ? {
 							sr: `u_${t}`,
@@ -255,12 +255,12 @@
 							draftsCount: d
 						}
 					}
-				}, I = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
+				}, h = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
 					endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit_poll_post.json?resubmit=true`)),
 					method: n.jb.POST,
 					data: S(t),
 					type: "json"
-				}).then(e => v(e, t)), h = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
+				}).then(e => v(e, t)), I = (e, t) => Object(o.a)(Object(a.a)(e, [d.a]), {
 					endpoint: Object(_.a)(Object(i.a)(`${e.apiUrl}/api/submit_gallery_post.json?resubmit=true`)),
 					method: n.jb.POST,
 					data: {
@@ -281,4 +281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.cd9a9a72fad3e736fbe9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CrosspostsStat.1433ff30c82a1d6d8ebb.js.map

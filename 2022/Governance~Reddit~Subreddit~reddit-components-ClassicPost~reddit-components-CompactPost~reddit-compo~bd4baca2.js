@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.41f7d9d61a1a108c50d9.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.616a5886bbfda860e37d.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2"], {
 		"./src/lib/addAllowQuarantinedParam/index.ts": function(e, t, s) {
@@ -745,7 +745,7 @@
 				});
 				return t = e.subreddits.reduce((e, t) => {
 					if (t.subreddit_type === g.g.User) {
-						const s = Object(f.a)(t, Object(p.g)(t.display_name_prefixed));
+						const s = Object(f.a)(t, Object(p.h)(t.display_name_prefixed));
 						e.profiles[s.id] = s
 					} else {
 						const s = Object(O.a)(t);
@@ -1779,10 +1779,10 @@
 						[y.u]: t ? "1" : ""
 					})
 				},
-				F = e => e.isFlairFilter ? c.a.createElement(T.a, {
+				F = e => e.isFlairFilter ? c.a.createElement(T.default, {
 					onMouseDown: e.onMouseDown,
 					to: e.to || ""
-				}, e.flair) : e.onClick ? c.a.createElement(T.a, {
+				}, e.flair) : e.onClick ? c.a.createElement(T.default, {
 					onClick: () => e.onClick(e.searchableTerm),
 					to: L(e.searchableTerm, e.subredditName)
 				}, e.flair) : e.flair;
@@ -3723,4 +3723,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.41f7d9d61a1a108c50d9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2.616a5886bbfda860e37d.js.map

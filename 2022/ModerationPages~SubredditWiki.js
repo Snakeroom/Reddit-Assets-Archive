@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.6470b8d467934b5507c4.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.c02eca940731173d0331.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -3981,7 +3981,7 @@
 					noPostfix: !0,
 					shortenedUnit: !0
 				})) : `u/${c}`;
-				return n ? s.a.createElement(a.a, o({}, l, {
+				return n ? s.a.createElement(a.default, o({}, l, {
 					className: t,
 					to: n
 				}), u) : s.a.createElement("span", o({}, l, {
@@ -4213,7 +4213,7 @@
 					isGold: x,
 					snoovatarUrl: j,
 					prefersReducedAnimations: I
-				}), !b && w && s.a.createElement(i.a, {
+				}), !b && w && s.a.createElement(i.default, {
 					to: "/settings/profile",
 					className: p.a.snoovatarSettingsLink
 				}, s.a.createElement(o.a, {
@@ -4686,4 +4686,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.6470b8d467934b5507c4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.c02eca940731173d0331.js.map

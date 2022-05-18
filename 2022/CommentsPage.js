@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.0c127781324352b83dfa.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.c1a841eb13afef7283d4.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/classnames/index.js": function(e, t, s) {
@@ -185,7 +185,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(m.Jf)(e.category_name)
+									displayText: Object(m.Lf)(e.category_name)
 								};
 								s.push(o.id), t[o.id] = o
 							}), {
@@ -2570,7 +2570,7 @@
 						trackCommentClick: ae,
 						userIconSmall: de,
 						userIsBanned: ce
-					} = e, le = m.isDeleted, me = !N && !le && !!f && f.length > 0, pe = Object(l.a)(d.c.edit, m.id), ue = Object(l.a)(d.c.replyToComment, m.id), be = Object(L.a)(V), he = Object(Ye.a)(m), xe = Object($.c)(m), ge = m.authorIsContractor && ie === dt.g.EmployeesOnly, fe = m.isLocked, Ce = be && U, ve = !N && !le && (F || I), Oe = I && !m.unrepliableReason, Ee = !!x && Object(ct.e)(x) === m.author, [ye, je] = Object(o.useState)(null), [ke, Pe] = Object(o.useState)(null), _e = Object(o.useRef)(null), Ie = Object(R.f)(m) || Object(R.g)(m), we = Ie ? Bt : rt.a, Se = Object(R.f)(m) ? Dt : Rt;
+					} = e, le = m.isDeleted, me = !N && !le && !!f && f.length > 0, pe = Object(l.a)(d.c.edit, m.id), ue = Object(l.a)(d.c.replyToComment, m.id), be = Object(L.a)(V), he = Object(Ye.a)(m), xe = Object($.c)(m), ge = m.authorIsContractor && ie === dt.g.EmployeesOnly, fe = m.isLocked, Ce = be && U, ve = !N && !le && (F || I), Oe = I && !m.unrepliableReason, Ee = !!x && Object(ct.e)(x) === m.author, [ye, je] = Object(o.useState)(null), [ke, Pe] = Object(o.useState)(null), _e = Object(o.useRef)(null), Ie = Object(R.f)(m) || Object(R.g)(m), we = Ie ? Bt : rt.default, Se = Object(R.f)(m) ? Dt : Rt;
 					Object(o.useEffect)(() => {
 						if (!N && !le && (E && je(r.a.createElement(We, null)), null !== k)) {
 							if (k.glowHexColor) {
@@ -4947,7 +4947,7 @@
 					}), ": ", o ? r.a.createElement(d.a, {
 						className: h.a.rawHtmlDisplay,
 						html: o
-					}) : i, " ", r.a.createElement(l.a, {
+					}) : i, " ", r.a.createElement(l.default, {
 						className: h.a.link,
 						to: "/"
 					}, n.fbt._("Click to return home.", null, {
@@ -6373,14 +6373,14 @@
 			const He = e => {
 					return Object(Ve.c)(e, {
 						experimentEligibilitySelector: Ve.a,
-						experimentName: We.Ef
+						experimentName: We.Gf
 					}) === We.od
 				},
 				Ke = e => {
 					if (Object(Ue.a)(e)) return !1;
 					return Object(Ve.c)(e, {
 						experimentEligibilitySelector: Ve.a,
-						experimentName: We.Df
+						experimentName: We.Ff
 					}) === We.od
 				},
 				Ge = (e, t) => {
@@ -6392,7 +6392,7 @@
 					});
 					return !(Object(Ue.a)(e) || !n || n.isSponsored) && Object(Ve.c)(e, {
 						experimentEligibilitySelector: Ve.a,
-						experimentName: We.Cf
+						experimentName: We.Ef
 					}) === We.od
 				};
 			var qe = s("./src/reddit/selectors/experiments/typingIndicators.ts"),
@@ -7787,7 +7787,7 @@
 						hk: "pLxW5"
 					}) : V._("Continue browsing in {subredditName}", [V._param("subredditName", r.displayText)], {
 						hk: "2gUyTU"
-					}), a.a.createElement(F.a, {
+					}), a.a.createElement(F.default, {
 						className: Object(R.a)(W.a.footer, t),
 						onMouseDown: s,
 						to: c,
@@ -7845,7 +7845,7 @@
 							baseUrl: n.base_url,
 							hostPostId: r,
 							isEligibleForLinkedPosts: t,
-							shouldShowLinkedPosts: t && !Object(f.Kf)(s) && !Object(w.a)(s),
+							shouldShowLinkedPosts: t && !Object(f.Mf)(s) && !Object(w.a)(s),
 							subreddit: o
 						}
 					}
@@ -7908,7 +7908,7 @@
 						hostPostData: d,
 						listingBelowVariant: c
 					} = e;
-					if (c && !Object(f.Kf)(c) && !Object(w.a)(c) && !i) return a.a.createElement("div", {
+					if (c && !Object(f.Mf)(c) && !Object(w.a)(c) && !i) return a.a.createElement("div", {
 						className: G.a.smallBanner
 					});
 					const {
@@ -10916,7 +10916,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: n.Pc
 				});
-				return !(!t || Object(n.Kf)(t))
+				return !(!t || Object(n.Mf)(t))
 			}
 		},
 		"./src/reddit/selectors/experiments/resonatePilot.ts": function(e, t, s) {
@@ -10986,13 +10986,13 @@
 			const i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: o.a,
-						experimentName: n.hf
+						experimentName: n.jf
 					}) === n.od
 				},
 				a = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.gf
+						experimentName: n.if
 					}) === n.od
 				}
 		},
@@ -11015,29 +11015,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.Gf
+						experimentName: n.If
 					}) === n.od
 				},
 				d = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.Hf
+						experimentName: n.Jf
 					}) === n.od
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: n.Ff
+						experimentName: n.Hf
 					});
-					return t === n.xf.TypingIndicators || t === n.xf.IndicatorsPlusCTA
+					return t === n.zf.TypingIndicators || t === n.zf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: n.Ff
+						experimentName: n.Hf
 					});
-					return (null == t ? void 0 : t.variant) === n.xf.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === n.zf.IndicatorsPlusCTA
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, s) {
@@ -11160,7 +11160,7 @@
 				i = s("./src/reddit/selectors/experiments/nsfwListingBelow.ts");
 			const a = e => {
 					const t = Object(i.a)(e);
-					return Boolean(t) && !Object(o.Kf)(t)
+					return Boolean(t) && !Object(o.Mf)(t)
 				},
 				d = Object(n.a)(a, r.d, (e, t) => e && !t)
 		},
@@ -11264,4 +11264,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.0c127781324352b83dfa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.c1a841eb13afef7283d4.js.map

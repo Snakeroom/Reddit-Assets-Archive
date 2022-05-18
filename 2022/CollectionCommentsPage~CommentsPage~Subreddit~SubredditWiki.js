@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.677c23a08a484c44c180.js
-// Retrieved at 5/18/2022, 11:30:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.fb2d35f88f3456a1e3de.js
+// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -1022,7 +1022,7 @@
 					});
 				return s.a.createElement("div", {
 					className: Object(i.a)(n, m.a.container)
-				}, b ? s.a.createElement(d.a, {
+				}, b ? s.a.createElement(d.default, {
 					className: m.a.user,
 					to: `/user/${h}/`,
 					onClick: () => {
@@ -3379,7 +3379,7 @@
 					type: e.authorFlairType
 				},
 				Ee = e => s.a.createElement(ye, null, `u/${e}`),
-				ke = m.a.wrapped(me.a, "InternalLink", fe.a),
+				ke = m.a.wrapped(me.default, "InternalLink", fe.a),
 				Oe = m.a.div("LinkContainer", fe.a),
 				Ce = Object(a.c)({
 					userIsBanned: he.eb,
@@ -4205,4 +4205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.677c23a08a484c44c180.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.fb2d35f88f3456a1e3de.js.map
