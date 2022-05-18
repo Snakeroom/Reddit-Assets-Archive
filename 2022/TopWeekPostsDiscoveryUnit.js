@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.aeb3847c798dec99ab00.js
-// Retrieved at 5/17/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.e09d7e2b01dc638c195b.js
+// Retrieved at 5/18/2022, 11:10:06 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["TopWeekPostsDiscoveryUnit"], {
 		"./src/reddit/components/DiscoveryUnit/InFeedChaining/Post/Body/index.m.less": function(e, t, s) {
@@ -202,7 +202,7 @@
 					} = e, c = Object(P.i)(o) ? J.a.PROFILE : J.a.SUBREDDIT;
 					return n.a.createElement("div", {
 						className: Object(a.a)(Q.a.header, t)
-					}, n.a.createElement(q.a, {
+					}, n.a.createElement(q.default, {
 						className: Q.a.iconLink,
 						"data-redditstyle": !0,
 						to: o.url,
@@ -212,7 +212,7 @@
 						subredditOrProfile: o
 					})), n.a.createElement("div", {
 						className: Q.a.name
-					}, n.a.createElement(q.a, {
+					}, n.a.createElement(q.default, {
 						className: Q.a.link,
 						"data-redditstyle": !0,
 						to: o.url,
@@ -495,4 +495,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.aeb3847c798dec99ab00.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/TopWeekPostsDiscoveryUnit.e09d7e2b01dc638c195b.js.map
