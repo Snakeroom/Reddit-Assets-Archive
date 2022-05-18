@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.9e1badc5ff3693f8a7e6.js
-// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.438aff2d44520d3dec5e.js
+// Retrieved at 5/18/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -44,16 +44,16 @@
 			const p = Object(o.a)(e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.be
+					experimentName: u.ce
 				});
-				return Object(u.Jf)(t) ? void 0 : t
+				return Object(u.Kf)(t) ? void 0 : t
 			}, e => {
 				const t = Object(m.c)(e, {
 					experimentEligibilitySelector: m.a,
-					experimentName: u.ce
+					experimentName: u.de
 				});
-				return Object(u.Jf)(t) ? void 0 : t
-			}, (e, t) => e === u.fe.Enabled && t === u.fe.Enabled);
+				return Object(u.Kf)(t) ? void 0 : t
+			}, (e, t) => e === u.ge.Enabled && t === u.ge.Enabled);
 			var h = s("./src/config.ts");
 			var b = s("./src/reddit/selectors/user.ts");
 			const E = e => {
@@ -705,8 +705,8 @@
 				K = s("./src/reddit/components/PublicAccessNetwork/ListingUnit/index.m.less"),
 				q = s.n(K);
 			const {
-				fbt: J
-			} = s("./node_modules/fbt/lib/FbtPublic.js"), Z = 20, z = l.rc, $ = l.rc, X = Object(c.a)(j.a, {
+				fbt: Z
+			} = s("./node_modules/fbt/lib/FbtPublic.js"), J = 20, z = l.rc, $ = l.rc, X = Object(c.a)(j.a, {
 				playerName: "RPAN DU Video Player"
 			}), Q = Object(i.b)(() => Object(o.c)({
 				autoplay: x.b,
@@ -752,11 +752,11 @@
 				}))
 			})), ee = () => r.a.createElement("h3", {
 				className: q.a.title
-			}, J._("Top livestream", null, {
+			}, Z._("Top livestream", null, {
 				hk: "4od1tZ"
 			})), te = () => r.a.createElement("p", {
 				className: q.a.description
-			}, J._("Live from the internet, this is RPAN", null, {
+			}, Z._("Live from the internet, this is RPAN", null, {
 				hk: "Bnxtg"
 			}));
 			class se extends n.Component {
@@ -869,7 +869,7 @@
 				}
 				endTimeTracker() {
 					if (this.timerId && a.c.has(this.timerId)) {
-						Math.round(a.c.end(this.timerId)) / 1e3 >= Z ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
+						Math.round(a.c.end(this.timerId)) / 1e3 >= J ? this.handleSuccessfulPlayback() : this.handleUnsuccessfulPlayback()
 					}
 				}
 				componentDidMount() {
@@ -1032,10 +1032,10 @@
 					const t = Math.max(1, (null === (e = this.props.stream) || void 0 === e ? void 0 : e.continuous_watchers) || 0);
 					return r.a.createElement("span", {
 						className: q.a.watchingCount
-					}, J._({
+					}, Z._({
 						"*": "{number} watchers",
 						_1: "1 watcher"
-					}, [J._plural(t, "number")], {
+					}, [Z._plural(t, "number")], {
 						hk: "33zJ5F"
 					}))
 				}
@@ -1184,7 +1184,7 @@
 						isLoggedIn: s
 					} = e;
 					return r.a.createElement(U.a, {
-						displayText: J._("Show me less of this", null, {
+						displayText: Z._("Show me less of this", null, {
 							hk: "4t8AKC"
 						}),
 						flatlistItem: P.a.Hide,
@@ -1206,7 +1206,7 @@
 						dropdownId: "rpan-du-overflow"
 					}, r.a.createElement(H.b, {
 						className: q.a.overflowItem,
-						displayText: J._("Show me less of this", null, {
+						displayText: Z._("Show me less of this", null, {
 							hk: "2c4uFK"
 						}),
 						iconWrapperClassName: q.a.overflowItemIconWrapper,
@@ -1861,14 +1861,14 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/experiments/index.ts");
 			const o = e => Object(r.c)(e, {
-					experimentName: n.rb,
+					experimentName: n.sb,
 					experimentEligibilitySelector: i.e
-				}) === n.nd,
+				}) === n.od,
 				a = e => Object(r.c)(e, {
-					experimentName: n.cc,
+					experimentName: n.dc,
 					experimentEligibilitySelector: r.a
-				}) === n.nd
+				}) === n.od
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.9e1badc5ff3693f8a7e6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.438aff2d44520d3dec5e.js.map

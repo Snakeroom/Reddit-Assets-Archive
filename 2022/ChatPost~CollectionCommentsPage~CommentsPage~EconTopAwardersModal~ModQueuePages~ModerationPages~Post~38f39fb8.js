@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.4aab642b3e5867e43f4a.js
-// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.e697f9ebd2c8017f147b.js
+// Retrieved at 5/18/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8"], {
 		"./src/reddit/actions/economics/subredditPremium/actionCreators.ts": function(e, t, r) {
@@ -387,8 +387,8 @@
 				Q = r("./src/reddit/components/AwardBadges/AwardPill/index.m.less"),
 				V = r.n(Q);
 			const J = 3500,
-				Y = 500;
-			class K extends n.a.PureComponent {
+				K = 500;
+			class Y extends n.a.PureComponent {
 				constructor(e) {
 					super(e), this.imageRef = n.a.createRef(), this.triggerAnimation = () => {
 						const {
@@ -420,7 +420,7 @@
 							e(t), this.setState({
 								hoverStateTriggered: !0
 							})
-						}, Y)
+						}, K)
 					}, this.handleMouseLeave = () => {
 						const {
 							onHideTooltip: e
@@ -502,7 +502,7 @@
 					}))
 				}
 			}
-			var $ = K,
+			var $ = Y,
 				X = r("./src/reddit/icons/svgs/Chevron/index.tsx"),
 				Z = r("./src/reddit/components/AwardBadges/AwardPlaqueScrollButton/index.m.less"),
 				ee = r.n(Z);
@@ -2363,10 +2363,10 @@
 				Q = r("./src/reddit/helpers/styles/smartTextColor.ts"),
 				V = r("./src/reddit/hooks/useClickSourceData.ts"),
 				J = r("./src/reddit/icons/fonts/helpers.tsx"),
-				Y = r("./src/reddit/icons/fonts/commonStyles.m.less"),
-				K = r.n(Y);
+				K = r("./src/reddit/icons/fonts/commonStyles.m.less"),
+				Y = r.n(K);
 			var $ = e => o.a.createElement("i", {
-					className: Object(i.a)(Object(J.b)("admin", e.isFilled), K.a.adminIcon, e.className),
+					className: Object(i.a)(Object(J.b)("admin", e.isFilled), Y.a.adminIcon, e.className),
 					id: e.id,
 					onMouseEnter: e.onMouseEnter,
 					onMouseLeave: e.onMouseLeave
@@ -2464,7 +2464,7 @@
 						showTimestamp: U = !0,
 						subredditOrProfile: G,
 						tooltipType: W
-					} = e, q = Object(n.d)(), Q = Object(v.a)(), J = Object(n.e)(de.d), Y = Object(n.e)(de.g) || ["popular", "all"].includes(J || ""), K = Object(n.e)(ae.b), $ = Object(n.e)(ae.c), re = E.isSponsored || Object(a.u)(j);
+					} = e, q = Object(n.d)(), Q = Object(v.a)(), J = Object(n.e)(de.d), K = Object(n.e)(de.g) || ["popular", "all"].includes(J || ""), Y = Object(n.e)(ae.b), $ = Object(n.e)(ae.c), re = E.isSponsored || Object(a.u)(j);
 					Object(s.useEffect)(() => {
 						re && q(Object(p.d)(E.author))
 					}, [re, q, E.author]);
@@ -2502,8 +2502,8 @@
 							pageLayer: j
 						})),
 						He = Z.e[Le] === Z.d.Card,
-						Fe = Y && He || !!_e,
-						Re = re && (Y || !!_e),
+						Fe = K && He || !!_e,
+						Re = re && (K || !!_e),
 						De = o.a.createElement(o.a.Fragment, null, we && Ne && o.a.createElement("div", {
 							className: ue.a.flairContainer
 						}, o.a.createElement(T.b, {
@@ -2631,7 +2631,7 @@
 						target: "_blank",
 						rel: "nofollow noopener noreferrer",
 						onClick: e => {
-							null == x || x(e), (K || $) && (e.preventDefault(), q(Object(m.bb)(E.permalink, E.id)))
+							null == x || x(e), (Y || $) && (e.preventDefault(), q(Object(m.bb)(E.permalink, E.id)))
 						}
 					}, o.a.createElement(S.d, {
 						seconds: E.created / d.Sb
@@ -3682,15 +3682,15 @@
 			const a = e => {
 					const t = Object(o.c)(e, {
 						experimentEligibilitySelector: n.P,
-						experimentName: s.Rc
+						experimentName: s.Sc
 					});
-					return !(!t || Object(s.Jf)(t))
+					return !(!t || Object(s.Kf)(t))
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: n.P,
-						experimentName: s.Rc
-					}) === s.sd.ListingEnabled
+						experimentName: s.Sc
+					}) === s.td.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/gold/topAwarded.ts": function(e, t, r) {
@@ -3750,4 +3750,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.4aab642b3e5867e43f4a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost~CollectionCommentsPage~CommentsPage~EconTopAwardersModal~ModQueuePages~ModerationPages~Post~38f39fb8.e697f9ebd2c8017f147b.js.map
