@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage.734beb934a5a785abf3f.js
-// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage.29a442ec8c929809fb7b.js
+// Retrieved at 5/17/2022, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -4309,6 +4309,8 @@
 				container: "_1oRQu-aolgpPPJDblUGTw5",
 				BackToTop: "_3Tc8YYRhVDX9vlR0XePZfH",
 				backToTop: "_3Tc8YYRhVDX9vlR0XePZfH",
+				BottomStickyStyles: "xTKAJNhaO7iI3cnAQ1PpJ",
+				bottomStickyStyles: "xTKAJNhaO7iI3cnAQ1PpJ",
 				StickyStyles: "_1vYrJH5uc57mZQJPN4l34E",
 				stickyStyles: "_1vYrJH5uc57mZQJPN4l34E",
 				StickyStylesFakeOverlay: "_2s8GkMW_LrglF6lvNpBQgE",
@@ -4393,12 +4395,14 @@
 						children: t,
 						className: s,
 						isFakeOverlay: n,
-						isSticky: r
+						isSticky: r,
+						shouldStickToBottom: c
 					} = e;
 					return i.a.createElement("div", {
 						className: Object(a.a)(s, {
-							[v.a.StickyStyles]: r && !n,
-							[v.a.StickyStylesFakeOverlay]: !!n
+							[v.a.BottomStickyStyles]: c,
+							[v.a.StickyStyles]: !c && r && !n,
+							[v.a.StickyStylesFakeOverlay]: !c && !!n
 						})
 					}, t)
 				};
@@ -4423,6 +4427,7 @@
 						this.updateMeasurements(), this.updateState()
 					}, o.K), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
+						isBottomSticky: !1,
 						isFooterSticky: !0
 					}
 				}
@@ -4445,18 +4450,20 @@
 							className: n,
 							hideFooter: r,
 							pageLayer: c,
-							reredditButtons: o
+							recommendationsComponent: o,
+							reredditButtons: l
 						}
-					} = this, l = this.state.isAdSticky && !(!t && !a);
+					} = this, d = this.state.isAdSticky && !(!t && !a), u = this.state.isBottomSticky;
 					return i.a.createElement(C, {
 						className: n,
 						innerRef: this.setWrapperRef
 					}, i.a.createElement(S, {
 						isFakeOverlay: s,
-						isSticky: l
-					}, t, a, !r && i.a.createElement(g.a, {
-						reredditButtons: o
-					})), !this.props.hideBackToTop && i.a.createElement(A, {
+						isSticky: d,
+						shouldStickToBottom: u
+					}, t, a, o, !r && i.a.createElement(g.a, {
+						reredditButtons: l
+					})), !o && !this.props.hideBackToTop && i.a.createElement(A, {
 						isOverlay: !!(null === (e = null == c ? void 0 : c.locationState) || void 0 === e ? void 0 : e.isOverlay)
 					}))
 				}
@@ -7662,4 +7669,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.734beb934a5a785abf3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage.29a442ec8c929809fb7b.js.map

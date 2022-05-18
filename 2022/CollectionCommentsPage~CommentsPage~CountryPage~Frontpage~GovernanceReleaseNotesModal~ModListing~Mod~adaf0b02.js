@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.8b955a4c68bc48d83034.js
-// Retrieved at 5/17/2022, 1:20:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.6afad18d9e03f320cf40.js
+// Retrieved at 5/17/2022, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02"], {
 		"./src/lib/intersectionObserver/index.ts": function(e, t, s) {
@@ -396,12 +396,12 @@
 						key: "d"
 					}, t)))
 				},
-				L = e => l.a.createElement("div", O({
+				T = e => l.a.createElement("div", O({
 					className: Object(g.a)(R.a.subredditIcon, Object(P.a)({
 						isLoading: !0
 					}))
 				}, e));
-			var T = S(j(e => {
+			var L = S(j(e => {
 					let {
 						className: t,
 						dispatch: s,
@@ -418,7 +418,7 @@
 					}, l.a.createElement("div", {
 						className: R.a.topLine,
 						key: "ba"
-					}, n.isFakeSubreddit && l.a.createElement(L, {
+					}, n.isFakeSubreddit && l.a.createElement(T, {
 						key: "baa"
 					}), l.a.createElement("div", {
 						key: "bab",
@@ -446,7 +446,7 @@
 				k = s("./src/reddit/components/SearchPost/placeholder.m.less"),
 				_ = s.n(k);
 			const V = {
-				[p.g.Large]: [T, 2],
+				[p.g.Large]: [L, 2],
 				[p.g.Classic]: [u.b, 10],
 				[p.g.Compact]: [b.a, 30],
 				[p.g.Search]: [e => l.a.createElement("div", {
@@ -621,7 +621,7 @@
 						}
 					}
 				}),
-				L = (e, t) => j(e(), {
+				T = (e, t) => j(e(), {
 					input: {
 						dislikedSubredditPreference: {
 							action: i.ADD,
@@ -629,7 +629,7 @@
 						}
 					}
 				});
-			var T = s("./src/reddit/helpers/trackers/post.ts"),
+			var L = s("./src/reddit/helpers/trackers/post.ts"),
 				k = s("./src/reddit/hooks/useRecommendationPostContext.ts"),
 				_ = s("./src/reddit/hooks/useTracking.ts"),
 				V = s("./src/reddit/icons/fonts/index.tsx"),
@@ -645,7 +645,7 @@
 					similar: n,
 					subredditId: o
 				} = e;
-				const r = n ? M : L;
+				const r = n ? M : T;
 				try {
 					if (!0 === (await r(s, o)).ok) return void i(x.a.ThankYouView);
 					t(Object(I.d)())
@@ -728,7 +728,7 @@
 						}
 					}, [o, l, u, d]);
 					const C = Object(h.useCallback)(() => {
-							a.current = !0, c(x.a.ThankYouView), r(Object(T.j)(u))
+							a.current = !0, c(x.a.ThankYouView), r(Object(L.j)(u))
 						}, [u, r, c]),
 						v = Object(h.useCallback)(() => {
 							H({
@@ -737,7 +737,7 @@
 								setRecommendationFooterView: c,
 								similar: !1,
 								subredditId: p
-							}), a.current = !0, r(Object(T.a)(u))
+							}), a.current = !0, r(Object(L.a)(u))
 						}, [o, t, u, r, c, p]),
 						P = Object(h.useCallback)(() => {
 							b && (H({
@@ -746,7 +746,7 @@
 								setRecommendationFooterView: c,
 								similar: !0,
 								subredditId: b
-							}), a.current = !0, r(Object(T.m)(u)))
+							}), a.current = !0, r(Object(L.m)(u)))
 						}, [o, t, u, b, r, c]);
 					return d && d !== x.a.None ? m.a.createElement("div", {
 						className: Object(g.a)(N.a.Footer, {
@@ -1015,10 +1015,10 @@
 						triggerNewPostPill: S,
 						postIds: E
 					} = this.props, j = 0 === t, M = `post-${i}-${e}-${t}-${s?"last-index":""}-${y}-${v}-${I}`;
-					let L;
-					if (void 0 === (L = this.scrollChildCache.get(M))) {
+					let T;
+					if (void 0 === (T = this.scrollChildCache.get(M))) {
 						const {
-							inSubredditOrProfile: T,
+							inSubredditOrProfile: L,
 							postsById: k
 						} = this.props, _ = k[e], V = _.crosspostRootId && k[_.crosspostRootId] ? k[_.crosspostRootId] : _;
 						_.crosspostRootId && !k[_.crosspostRootId] && P.c.withScope(e => {
@@ -1038,7 +1038,7 @@
 							K = u && !_.isSponsored,
 							z = b && !_.isSponsored && !_.isScoreHidden,
 							q = !!(null == _ ? void 0 : _.recommendationContext);
-						L = {
+						T = {
 							estHeight: Object(J.c)(_, i),
 							id: e,
 							isFocusable: !(!V.media || !(i === R.g.Large || i === R.g.Classic && Object($.H)(V.media))) && ($.d.has(V.media.type) && (!B || !$.s.has(B)) && !V.isSpoiler),
@@ -1064,7 +1064,7 @@
 									first: j,
 									forceLoadMedia: M,
 									hostPostData: o,
-									inSubredditOrProfile: T,
+									inSubredditOrProfile: L,
 									isCommentCountAnimationEnabled: K,
 									isCommentPermalink: r,
 									isCommentsPage: a,
@@ -1095,9 +1095,9 @@
 									layout: i
 								}))
 							}
-						}, this.scrollChildCache.set(M, L)
+						}, this.scrollChildCache.set(M, T)
 					}
-					return L
+					return T
 				}
 				render() {
 					return this.hasPosts() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !1, this.renderList()) : this.showPlaceholder() ? (this.renderingEmpty = !1, this.renderingPlaceholder = !0, this.renderPlaceholder()) : (this.renderingEmpty = !0, this.renderingPlaceholder = !1, this.renderEmpty())
@@ -1159,20 +1159,33 @@
 						layout: r,
 						location: a,
 						loadMore: l,
-						postIds: d,
-						postsById: c,
-						onLoadMore: p
+						onLoadMore: d,
+						postIds: c,
+						postsById: p,
+						skipSubredditPosts: u
 					} = this.props;
-					let u = d.filter(e => Boolean(c[e])).map((e, t, s) => {
+					let b = c.filter(e => Boolean(p[e]));
+					if (u) {
+						const e = [];
+						let t = 0,
+							s = 0;
+						for (; s < b.length;) {
+							const i = b[s++],
+								n = p[i];
+							t >= u && !n.belongsTo || "subreddit" !== n.belongsTo.type ? e.push(i) : t < u && "subreddit" === n.belongsTo.type ? t += 1 : e.push(i)
+						}
+						b = e
+					}
+					let f = b.map((e, t, s) => {
 						const i = t === s.length - 1;
 						return this.scrollChildForPost(e, t, i, r)
 					});
-					i && (u = fe(u, i()));
-					const b = this.props.measureScrollFPS ? `post-listings-${r}` : void 0,
-						f = (a ? Object(n.e)(a) : null) || o;
+					i && (f = fe(f, i()));
+					const C = this.props.measureScrollFPS ? `post-listings-${r}` : void 0,
+						v = (a ? Object(n.e)(a) : null) || o;
 					return m.a.createElement(h.Fragment, null, m.a.createElement(q.b, {
 						innerRef: this.updateScrollerRef,
-						className: f ? re.a.truncatedPostList : Object(g.a)(re.a.postList, this.props.className),
+						className: v ? re.a.truncatedPostList : Object(g.a)(re.a.postList, this.props.className),
 						contentContainerRef: e,
 						dataKey: this.props.listingKey,
 						disableScrollCache: !0,
@@ -1182,12 +1195,12 @@
 						layoutKey: this.props.layout,
 						loadMoreToken: l && l.token ? l.token : void 0,
 						onLastVisibleChildRendered: this.setLastVisibleChildRendered,
-						onLoadMore: p,
+						onLoadMore: d,
 						onScroll: this.onScrollPause,
 						preventScrollOnMount: this.props.preventScrollOnMount,
-						trackingName: b,
+						trackingName: C,
 						viewportTopPadding: Q.f
-					}, u), this.isLoadingMore() && this.renderLoadMore())
+					}, f), this.isLoadingMore() && this.renderLoadMore())
 				}
 			}
 			Ce.defaultProps = {
@@ -1328,7 +1341,7 @@
 				}
 			}
 			var M = s("./src/reddit/components/Scroller/getDocumentTop.ts");
-			class L {
+			class T {
 				constructor(e) {
 					let {
 						top: t,
@@ -1356,7 +1369,7 @@
 					return e.bottom < this.top
 				}
 			}
-			const T = function() {
+			const L = function() {
 				let {
 					buffer: e,
 					container: t
@@ -1364,12 +1377,12 @@
 				const s = r()(e) ? 1e3 : e;
 				if ("undefined" != typeof window && t) {
 					const e = t === document ? Object(M.a)() : t.scrollTop;
-					return new L({
+					return new T({
 						top: e,
 						height: window.innerHeight
 					})
 				}
-				return new L({
+				return new T({
 					top: 0,
 					height: s
 				})
@@ -1548,7 +1561,7 @@
 						}
 						const s = t.offsetTop + this.parentOffsetTop,
 							i = t.getBoundingClientRect().height,
-							n = new L({
+							n = new T({
 								top: s,
 								height: i,
 								heightWithSuffix: `${i}px`
@@ -1801,19 +1814,19 @@
 				}
 				updateViewportInfo() {
 					if (this.scrollContainer) {
-						this.viewport = T({
+						this.viewport = L({
 							buffer: 0,
 							container: this.scrollContainer
 						});
 						const {
 							viewportTopPadding: e = 0
 						} = this.props, t = window.innerHeight - e, s = 2 * t;
-						this.mountableViewport = new L({
+						this.mountableViewport = new T({
 							top: this.viewport.top - s,
 							height: this.viewport.height + 2 * s
 						});
 						const i = 4 * t;
-						this.renderableViewport = new L({
+						this.renderableViewport = new T({
 							top: this.viewport.top - i,
 							height: this.viewport.height + 2 * i
 						})
@@ -2191,4 +2204,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.8b955a4c68bc48d83034.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~Frontpage~GovernanceReleaseNotesModal~ModListing~Mod~adaf0b02.6afad18d9e03f320cf40.js.map

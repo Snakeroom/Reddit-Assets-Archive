@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.f74b92182ef44fa96407.js
-// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.10b92f744cd0d7517f98.js
+// Retrieved at 5/17/2022, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./node_modules/lodash/take.js": function(e, t, s) {
@@ -1868,6 +1868,8 @@
 				container: "_1oRQu-aolgpPPJDblUGTw5",
 				BackToTop: "_3Tc8YYRhVDX9vlR0XePZfH",
 				backToTop: "_3Tc8YYRhVDX9vlR0XePZfH",
+				BottomStickyStyles: "xTKAJNhaO7iI3cnAQ1PpJ",
+				bottomStickyStyles: "xTKAJNhaO7iI3cnAQ1PpJ",
 				StickyStyles: "_1vYrJH5uc57mZQJPN4l34E",
 				stickyStyles: "_1vYrJH5uc57mZQJPN4l34E",
 				StickyStylesFakeOverlay: "_2s8GkMW_LrglF6lvNpBQgE",
@@ -1952,12 +1954,14 @@
 						children: t,
 						className: s,
 						isFakeOverlay: r,
-						isSticky: n
+						isSticky: n,
+						shouldStickToBottom: o
 					} = e;
 					return d.a.createElement("div", {
 						className: Object(i.a)(s, {
-							[x.a.StickyStyles]: n && !r,
-							[x.a.StickyStylesFakeOverlay]: !!r
+							[x.a.BottomStickyStyles]: o,
+							[x.a.StickyStyles]: !o && n && !r,
+							[x.a.StickyStylesFakeOverlay]: !o && !!r
 						})
 					}, t)
 				};
@@ -1982,6 +1986,7 @@
 						this.updateMeasurements(), this.updateState()
 					}, a.K), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
+						isBottomSticky: !1,
 						isFooterSticky: !0
 					}
 				}
@@ -2004,18 +2009,20 @@
 							className: r,
 							hideFooter: n,
 							pageLayer: o,
-							reredditButtons: a
+							recommendationsComponent: a,
+							reredditButtons: l
 						}
-					} = this, l = this.state.isAdSticky && !(!t && !i);
+					} = this, c = this.state.isAdSticky && !(!t && !i), m = this.state.isBottomSticky;
 					return d.a.createElement(S, {
 						className: r,
 						innerRef: this.setWrapperRef
 					}, d.a.createElement(P, {
 						isFakeOverlay: s,
-						isSticky: l
-					}, t, i, !n && d.a.createElement(g.a, {
-						reredditButtons: a
-					})), !this.props.hideBackToTop && d.a.createElement(j, {
+						isSticky: c,
+						shouldStickToBottom: m
+					}, t, i, a, !n && d.a.createElement(g.a, {
+						reredditButtons: l
+					})), !a && !this.props.hideBackToTop && d.a.createElement(j, {
 						isOverlay: !!(null === (e = null == o ? void 0 : o.locationState) || void 0 === e ? void 0 : e.isOverlay)
 					}))
 				}
@@ -3631,9 +3638,9 @@
 						return t[s] = i, t
 					}, {})
 				}),
+				J = Object(C.u)(),
 				Y = Object(C.u)(),
-				Z = Object(C.u)(),
-				J = {
+				Z = {
 					apiError: Q,
 					apiPending: V,
 					layout: C.R,
@@ -3653,7 +3660,7 @@
 					viewportDataLoaded: (e, t) => !V(e, t) && !Q(e, t)
 				},
 				$ = Object(o.c)({
-					...J,
+					...Z,
 					currentUser: W.k,
 					commentsById: e => e.features.comments.models,
 					itemIds: (e, t) => {
@@ -3666,7 +3673,7 @@
 					estimateItemHeight: U
 				}),
 				ee = Object(o.c)({
-					...J,
+					...Z,
 					measureScrollFPS: K.d.measureScrollFPS,
 					postIds: (e, t) => {
 						let {
@@ -3715,8 +3722,8 @@
 				ce = Object(n.b)(le, (e, t) => ({
 					onLoadMore: () => e(Object(d.moreProfilePrivateRequested)(t.match.params.listingType))
 				})),
-				me = (e => Object(v.c)(Y(se(e))))(u.a),
-				ue = (e => Object(v.c)(Z(ie(e))))(m.a);
+				me = (e => Object(v.c)(J(se(e))))(u.a),
+				ue = (e => Object(v.c)(Y(ie(e))))(m.a);
 			class pe extends r.a.Component {
 				constructor() {
 					super(...arguments), this.onLoadMore = () => this.props.onLoadMore()
@@ -3827,4 +3834,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.f74b92182ef44fa96407.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.10b92f744cd0d7517f98.js.map

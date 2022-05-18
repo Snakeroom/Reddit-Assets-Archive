@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.8740e4fa81aa889472da.js
-// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.9710cdc0524e1891c6c4.js
+// Retrieved at 5/17/2022, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -885,6 +885,8 @@
 				container: "_1oRQu-aolgpPPJDblUGTw5",
 				BackToTop: "_3Tc8YYRhVDX9vlR0XePZfH",
 				backToTop: "_3Tc8YYRhVDX9vlR0XePZfH",
+				BottomStickyStyles: "xTKAJNhaO7iI3cnAQ1PpJ",
+				bottomStickyStyles: "xTKAJNhaO7iI3cnAQ1PpJ",
 				StickyStyles: "_1vYrJH5uc57mZQJPN4l34E",
 				stickyStyles: "_1vYrJH5uc57mZQJPN4l34E",
 				StickyStylesFakeOverlay: "_2s8GkMW_LrglF6lvNpBQgE",
@@ -969,12 +971,14 @@
 						children: t,
 						className: s,
 						isFakeOverlay: n,
-						isSticky: i
+						isSticky: i,
+						shouldStickToBottom: o
 					} = e;
 					return a.a.createElement("div", {
 						className: Object(r.a)(s, {
-							[v.a.StickyStyles]: i && !n,
-							[v.a.StickyStylesFakeOverlay]: !!n
+							[v.a.BottomStickyStyles]: o,
+							[v.a.StickyStyles]: !o && i && !n,
+							[v.a.StickyStylesFakeOverlay]: !o && !!n
 						})
 					}, t)
 				};
@@ -999,6 +1003,7 @@
 						this.updateMeasurements(), this.updateState()
 					}, c.K), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
+						isBottomSticky: !1,
 						isFooterSticky: !0
 					}
 				}
@@ -1021,18 +1026,20 @@
 							className: n,
 							hideFooter: i,
 							pageLayer: o,
-							reredditButtons: c
+							recommendationsComponent: c,
+							reredditButtons: d
 						}
-					} = this, d = this.state.isAdSticky && !(!t && !r);
+					} = this, l = this.state.isAdSticky && !(!t && !r), u = this.state.isBottomSticky;
 					return a.a.createElement(O, {
 						className: n,
 						innerRef: this.setWrapperRef
 					}, a.a.createElement(N, {
 						isFakeOverlay: s,
-						isSticky: d
-					}, t, r, !i && a.a.createElement(g.a, {
-						reredditButtons: c
-					})), !this.props.hideBackToTop && a.a.createElement(k, {
+						isSticky: l,
+						shouldStickToBottom: u
+					}, t, r, c, !i && a.a.createElement(g.a, {
+						reredditButtons: d
+					})), !c && !this.props.hideBackToTop && a.a.createElement(k, {
 						isOverlay: !!(null === (e = null == o ? void 0 : o.locationState) || void 0 === e ? void 0 : e.isOverlay)
 					}))
 				}
@@ -1376,7 +1383,7 @@
 				unitType: m.e.SubredditListing,
 				url: ""
 			};
-			class M extends n.a.Component {
+			class B extends n.a.Component {
 				constructor() {
 					super(...arguments), this.onSeeMoreCommunities = () => {
 						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.w)(W)), this.props.onSeeMoreCommunities())
@@ -1413,7 +1420,7 @@
 					}))))
 				}
 			}
-			t.a = Object(d.c)(M)
+			t.a = Object(d.c)(B)
 		},
 		"./src/reddit/components/TopicSidebar/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2075,10 +2082,10 @@
 			}
 			var D = F,
 				W = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
-				M = s.n(W);
+				B = s.n(W);
 
-			function H() {
-				return (H = Object.assign || function(e) {
+			function M() {
+				return (M = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var s = arguments[t];
 						for (var r in s) Object.prototype.hasOwnProperty.call(s, r) && (e[r] = s[r])
@@ -2087,19 +2094,19 @@
 				}).apply(this, arguments)
 			}
 			const {
-				fbt: B
+				fbt: H
 			} = s("./node_modules/fbt/lib/FbtPublic.js");
-			var G;
+			var A;
 			! function(e) {
 				e.Communities = "communities", e.Posts = "posts", e.RelatedTopics = "relatedTopics"
-			}(G || (G = {}));
-			class A extends n.a.Component {
+			}(A || (A = {}));
+			class G extends n.a.Component {
 				renderSubtitleContent() {
 					const {
 						parentRelatedTopics: e
 					} = this.props;
 					return e.length ? n.a.createElement("ul", {
-						className: M.a.parentRelatedTopics
+						className: B.a.parentRelatedTopics
 					}, e.map((e, t) => {
 						let {
 							namePlural: s,
@@ -2108,10 +2115,10 @@
 						return n.a.createElement("li", {
 							key: t
 						}, n.a.createElement(m.a, {
-							className: M.a.link,
+							className: B.a.link,
 							to: r
 						}, s))
-					})) : B._("Topic on Reddit", null, {
+					})) : H._("Topic on Reddit", null, {
 						hk: "3gTFev"
 					})
 				}
@@ -2129,35 +2136,35 @@
 						tabs: i
 					};
 					return n.a.createElement("div", {
-						className: Object(o.a)(M.a.Container, t)
+						className: Object(o.a)(B.a.Container, t)
 					}, n.a.createElement("div", {
-						className: Object(o.a)(M.a.Content, s === C.g.Large ? M.a.cardWidth : M.a.fullWidth)
+						className: Object(o.a)(B.a.Content, s === C.g.Large ? B.a.cardWidth : B.a.fullWidth)
 					}, n.a.createElement("div", {
-						className: M.a.Header
+						className: B.a.Header
 					}, n.a.createElement("div", {
-						className: M.a.Title
+						className: B.a.Title
 					}, n.a.createElement(f.b, {
 						type: f.a.TopicHeader
 					}, a)), n.a.createElement("div", {
-						className: M.a.Subtitle
+						className: B.a.Subtitle
 					}, this.renderSubtitleContent())), n.a.createElement("div", {
-						className: M.a.Tabs
-					}, n.a.createElement(D, H({
-						tab: G.Posts
-					}, c), B._("Posts", null, {
+						className: B.a.Tabs
+					}, n.a.createElement(D, M({
+						tab: A.Posts
+					}, c), H._("Posts", null, {
 						hk: "3RLrle"
-					})), n.a.createElement(D, H({
-						tab: G.Communities
-					}, c), B._("Communities", null, {
+					})), n.a.createElement(D, M({
+						tab: A.Communities
+					}, c), H._("Communities", null, {
 						hk: "KIwd1"
-					})), n.a.createElement(D, H({
-						tab: G.RelatedTopics
-					}, c), B._("Related Topics", null, {
+					})), n.a.createElement(D, M({
+						tab: A.RelatedTopics
+					}, c), H._("Related Topics", null, {
 						hk: "4go2cr"
 					})))))
 				}
 			}
-			var z = A,
+			var z = G,
 				V = s("./src/reddit/pages/Topic/Relationship/index.m.less"),
 				J = s.n(V);
 			const {
@@ -2170,7 +2177,7 @@
 							openTab: e,
 							relationshipIndex: t
 						} = this.props;
-						e(G.RelatedTopics, t)
+						e(A.RelatedTopics, t)
 					}
 				}
 				render() {
@@ -2305,7 +2312,7 @@
 							index: e,
 							onTabClick: t
 						} = this.props;
-						t(G.RelatedTopics, e)
+						t(A.RelatedTopics, e)
 					}
 				}
 				render() {
@@ -2349,9 +2356,9 @@
 							activeTab: e,
 							topicNamePlural: t
 						} = this.props;
-						return e === G.Posts ? Ee._("Posts about {topic name}", [Ee._param("topic name", t)], {
+						return e === A.Posts ? Ee._("Posts about {topic name}", [Ee._param("topic name", t)], {
 							hk: "3AGfU"
-						}) : e === G.Communities ? Ee._("Communities related to {topic name}", [Ee._param("topic name", t)], {
+						}) : e === A.Communities ? Ee._("Communities related to {topic name}", [Ee._param("topic name", t)], {
 							hk: "jKM0V"
 						}) : null
 					}
@@ -2360,8 +2367,8 @@
 					const {
 						activeLayout: e,
 						activeTab: t
-					} = this.props, s = t === G.Posts;
-					return t === G.RelatedTopics ? this.renderRelatedTopicsHeader() : n.a.createElement("div", {
+					} = this.props, s = t === A.Posts;
+					return t === A.RelatedTopics ? this.renderRelatedTopicsHeader() : n.a.createElement("div", {
 						className: ye.a.TabHeader
 					}, n.a.createElement("div", {
 						className: ye.a.TabTitle
@@ -2381,7 +2388,7 @@
 				fbt: ke
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), Ne = Object(O.u)(), je = (e, t) => t.match.params.sort || a.X, Le = e => {
 				const t = [];
-				return e ? (e.hasPosts && t.push(G.Posts), e.hasSubreddits && t.push(G.Communities), e.childRelationships.length && t.push(G.RelatedTopics), t) : t
+				return e ? (e.hasPosts && t.push(A.Posts), e.hasSubreddits && t.push(A.Communities), e.childRelationships.length && t.push(A.RelatedTopics), t) : t
 			}, Ie = Object(d.b)(() => Object(i.a)((e, t) => Object(we.d)(e, t.match.params.topicSlug), (e, t) => Object(we.e)(e, {
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(we.c)(e, {
@@ -2406,7 +2413,7 @@
 				topicNamePlural: t
 			})), (e, t) => ({
 				onLoadMorePosts: () => e(Object(l.morePostsRequested)(t.match.params))
-			})), Pe = (e, t) => e === G.Communities ? C.g.Large : t;
+			})), Pe = (e, t) => e === A.Communities ? C.g.Large : t;
 			class Re extends n.a.Component {
 				constructor(e) {
 					var t;
@@ -2418,7 +2425,7 @@
 							activeTab: e
 						}), window.scrollTo(0, 0)
 					}, this.openCommunitiesTab = () => {
-						this.openTab(G.Communities)
+						this.openTab(A.Communities)
 					}, this.onViewed = (e, t) => {
 						var s;
 						return Object(k.f)({
@@ -2496,15 +2503,15 @@
 							topicNamePlural: m
 						}), n.a.createElement("div", {
 							className: Object(o.a)(Oe.a.TopicTab, {
-								[Oe.a.active]: f === G.Communities
+								[Oe.a.active]: f === A.Communities
 							})
 						}, n.a.createElement(he, {
 							subredditIds: d.subredditIds
 						})), n.a.createElement("div", {
 							className: Object(o.a)(Oe.a.TopicTab, {
-								[Oe.a.active]: f === G.Posts
+								[Oe.a.active]: f === A.Posts
 							})
-						}, f === G.Posts && n.a.createElement(u.a, {
+						}, f === A.Posts && n.a.createElement(u.a, {
 							forcedLayout: b,
 							listingKey: h,
 							listingName: _,
@@ -2513,13 +2520,13 @@
 							onLoadMore: this.props.onLoadMorePosts
 						})), n.a.createElement("div", {
 							className: Object(o.a)(Oe.a.TopicTab, {
-								[Oe.a.active]: f === G.RelatedTopics
+								[Oe.a.active]: f === A.RelatedTopics
 							})
 						}, n.a.createElement(y, {
 							topics: v
 						}))),
-						O = f !== G.RelatedTopics,
-						k = f !== G.Communities && a.includes(G.Communities),
+						O = f !== A.RelatedTopics,
+						k = f !== A.Communities && a.includes(A.Communities),
 						L = n.a.createElement("div", {
 							className: Oe.a.WidgetsContainer
 						}, k && n.a.createElement(S.a, {
@@ -2704,4 +2711,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.8740e4fa81aa889472da.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.9710cdc0524e1891c6c4.js.map

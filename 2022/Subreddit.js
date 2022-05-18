@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.fc5cb972bd555430e9a8.js
-// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.e04448bc1875a9ed84bf.js
+// Retrieved at 5/17/2022, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -9233,7 +9233,7 @@
 					} = e;
 					return !1 !== t
 				}, v);
-			var _ = e => r.a.createElement(f.a, {
+			var _ = e => r.a.createElement(f.b, {
 					className: y(e),
 					compact: e.compact,
 					isFilled: E(e)
@@ -11314,6 +11314,9 @@
 		},
 		"./src/reddit/icons/fonts/Upvote/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return l
+			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				o = n("./src/lib/classNames/index.ts"),
@@ -11333,7 +11336,7 @@
 			const l = e => r.a.createElement("i", {
 				className: Object(o.a)(Object(i.b)("upvote", e.isFilled), c.a.upvote, e.className)
 			});
-			t.a = e => {
+			t.b = e => {
 				let {
 					compact: t,
 					isFilled: n,
@@ -13857,4 +13860,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.fc5cb972bd555430e9a8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.e04448bc1875a9ed84bf.js.map

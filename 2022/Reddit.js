@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.7c7dae3402984714afad.js
-// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.525b1e97bc704b49736b.js
+// Retrieved at 5/17/2022, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -13544,7 +13544,7 @@
 					} = e;
 					return !1 !== t
 				}, O);
-			var y = e => r.a.createElement(g.a, {
+			var y = e => r.a.createElement(g.b, {
 					className: x(e),
 					compact: e.compact,
 					isFilled: C(e)
@@ -15766,6 +15766,9 @@
 		},
 		"./src/reddit/icons/fonts/Upvote/index.tsx": function(e, t, n) {
 			"use strict";
+			n.d(t, "a", (function() {
+				return d
+			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
 				o = n("./src/lib/classNames/index.ts"),
@@ -15785,7 +15788,7 @@
 			const d = e => r.a.createElement("i", {
 				className: Object(o.a)(Object(a.b)("upvote", e.isFilled), c.a.upvote, e.className)
 			});
-			t.a = e => {
+			t.b = e => {
 				let {
 					compact: t,
 					isFilled: n,
@@ -20242,4 +20245,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "vendors~Reddit", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.7c7dae3402984714afad.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.525b1e97bc704b49736b.js.map

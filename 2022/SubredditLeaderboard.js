@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.36f64776f4292a7d7080.js
-// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3622130ebce5844f0250.js
+// Retrieved at 5/17/2022, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -548,6 +548,8 @@
 				container: "_1oRQu-aolgpPPJDblUGTw5",
 				BackToTop: "_3Tc8YYRhVDX9vlR0XePZfH",
 				backToTop: "_3Tc8YYRhVDX9vlR0XePZfH",
+				BottomStickyStyles: "xTKAJNhaO7iI3cnAQ1PpJ",
+				bottomStickyStyles: "xTKAJNhaO7iI3cnAQ1PpJ",
 				StickyStyles: "_1vYrJH5uc57mZQJPN4l34E",
 				stickyStyles: "_1vYrJH5uc57mZQJPN4l34E",
 				StickyStylesFakeOverlay: "_2s8GkMW_LrglF6lvNpBQgE",
@@ -632,12 +634,14 @@
 						children: t,
 						className: r,
 						isFakeOverlay: s,
-						isSticky: a
+						isSticky: a,
+						shouldStickToBottom: i
 					} = e;
 					return o.a.createElement("div", {
 						className: Object(n.a)(r, {
-							[x.a.StickyStyles]: a && !s,
-							[x.a.StickyStylesFakeOverlay]: !!s
+							[x.a.BottomStickyStyles]: i,
+							[x.a.StickyStyles]: !i && a && !s,
+							[x.a.StickyStylesFakeOverlay]: !i && !!s
 						})
 					}, t)
 				};
@@ -662,6 +666,7 @@
 						this.updateMeasurements(), this.updateState()
 					}, d.K), this.setWrapperRef = e => this.containerEl = e || null, this.state = {
 						isAdSticky: !0,
+						isBottomSticky: !1,
 						isFooterSticky: !0
 					}
 				}
@@ -684,18 +689,20 @@
 							className: s,
 							hideFooter: a,
 							pageLayer: i,
-							reredditButtons: d
+							recommendationsComponent: d,
+							reredditButtons: c
 						}
-					} = this, c = this.state.isAdSticky && !(!t && !n);
+					} = this, l = this.state.isAdSticky && !(!t && !n), u = this.state.isBottomSticky;
 					return o.a.createElement(w, {
 						className: s,
 						innerRef: this.setWrapperRef
 					}, o.a.createElement(j, {
 						isFakeOverlay: r,
-						isSticky: c
-					}, t, n, !a && o.a.createElement(h.a, {
-						reredditButtons: d
-					})), !this.props.hideBackToTop && o.a.createElement(N, {
+						isSticky: l,
+						shouldStickToBottom: u
+					}, t, n, d, !a && o.a.createElement(h.a, {
+						reredditButtons: c
+					})), !d && !this.props.hideBackToTop && o.a.createElement(N, {
 						isOverlay: !!(null === (e = null == i ? void 0 : i.locationState) || void 0 === e ? void 0 : e.isOverlay)
 					}))
 				}
@@ -2325,8 +2332,8 @@
 				L = r("./src/reddit/actions/pages/subredditLeaderboard.ts"),
 				P = r("./src/reddit/actions/subreddit/topSubreddits.ts"),
 				I = r("./src/reddit/components/TopSubredditsWidget/SubredditRankItem.tsx"),
-				F = r("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
-				B = r("./src/reddit/models/GoodContent/index.ts"),
+				B = r("./src/reddit/components/TopSubredditsWidget/SubredditRankItemPlaceholder.tsx"),
+				F = r("./src/reddit/models/GoodContent/index.ts"),
 				D = r("./src/reddit/selectors/platform.ts"),
 				R = r("./src/reddit/selectors/subreddit.ts"),
 				M = r("./src/reddit/selectors/subredditLeaderboard.ts"),
@@ -2366,7 +2373,7 @@
 						const t = this.makeFetchVariables(),
 							r = Object(M.d)(this.props.categoryId, this.props.categoryName);
 						e.isIntersecting && t.after && this.props.fetchMoreSubreddits(t, r)
-					}, this.sendLeaderboardSubredditEventClick = e => this.props.sendEvent(Object(y.f)(e, this.props.categoryName || p.e)), this.renderSubredditRankItemPlaceholders = () => i.a.createElement(i.a.Fragment, null, N()(5, e => i.a.createElement(F.a, {
+					}, this.sendLeaderboardSubredditEventClick = e => this.props.sendEvent(Object(y.f)(e, this.props.categoryName || p.e)), this.renderSubredditRankItemPlaceholders = () => i.a.createElement(i.a.Fragment, null, N()(5, e => i.a.createElement(B.a, {
 						key: e,
 						large: !0
 					}))), this.renderSubredditRankItems = e => this.props.rankings.map((t, r) => {
@@ -2394,7 +2401,7 @@
 					return {
 						after: a,
 						categoryId: e === p.c ? p.f : e,
-						filter: B.a,
+						filter: F.a,
 						first: A,
 						isOnlyModIncluded: i
 					}
@@ -2430,7 +2437,7 @@
 						onChange: this.fetchMoreSubreddits,
 						threshold: G,
 						rootMargin: "0px 0px 0px 0px"
-					}, i.a.createElement("li", null, i.a.createElement(F.a, {
+					}, i.a.createElement("li", null, i.a.createElement(B.a, {
 						large: !0
 					})))))
 				}
@@ -2775,4 +2782,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.36f64776f4292a7d7080.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.3622130ebce5844f0250.js.map

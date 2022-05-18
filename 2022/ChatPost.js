@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatPost.a4b949d08684fe4fcea9.js
-// Retrieved at 5/17/2022, 4:00:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatPost.a7814946b16ae5b86da3.js
+// Retrieved at 5/17/2022, 8:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatPost"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1149,7 +1149,7 @@
 				P = d.a.div("Avatar", E.a),
 				B = d.a.div("VoteColumn", E.a),
 				F = d.a.div("TextColumn", E.a),
-				D = d.a.wrapped(g.a, "Upvote", E.a),
+				D = d.a.wrapped(g.b, "Upvote", E.a),
 				U = d.a.wrapped(v.a, "Downvote", E.a),
 				H = () => i.a.createElement("div", {
 					className: Object(l.a)(E.a.TopMetaPlaceholder, Object(C.a)({
@@ -4015,4 +4015,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.a4b949d08684fe4fcea9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatPost.a7814946b16ae5b86da3.js.map
