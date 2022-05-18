@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.f62e04574fa377549acf.js
-// Retrieved at 5/18/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.0c4d01884f557c77b800.js
+// Retrieved at 5/18/2022, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -4209,17 +4209,17 @@
 					username: C,
 					isDeletingBanner: !!f,
 					onDeleteBanner: O
-				}), s.a.createElement(s.a.Fragment, null, s.a.createElement(g.a, {
-					isGold: x,
-					snoovatarUrl: j,
-					prefersReducedAnimations: I
 				}), !b && w && s.a.createElement(i.default, {
 					to: "/settings/profile",
 					className: p.a.snoovatarSettingsLink
 				}, s.a.createElement(o.a, {
 					name: "settings",
 					className: h.a.settingsIcon
-				}))), s.a.createElement(v.a, {
+				})), s.a.createElement(g.a, {
+					isGold: x,
+					snoovatarUrl: j,
+					prefersReducedAnimations: I
+				}), s.a.createElement(v.a, {
 					isEmployee: k,
 					isGold: x,
 					isNSFW: _,
@@ -4686,4 +4686,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.f62e04574fa377549acf.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.0c4d01884f557c77b800.js.map

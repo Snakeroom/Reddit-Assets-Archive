@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard.ac84b8006f2854f4b84f.js
-// Retrieved at 5/18/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard.70910e6eaa7e5d2affdb.js
+// Retrieved at 5/18/2022, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard"], {
 		"./src/lib/constants/colors.ts": function(e, t, n) {
@@ -4599,17 +4599,17 @@
 					username: w,
 					isDeletingBanner: !!f,
 					onDeleteBanner: N
-				}), a.a.createElement(a.a.Fragment, null, a.a.createElement(v.a, {
-					isGold: _,
-					snoovatarUrl: j,
-					prefersReducedAnimations: k
 				}), !b && g && a.a.createElement(s.default, {
 					to: "/settings/profile",
 					className: p.a.snoovatarSettingsLink
 				}, a.a.createElement(i.a, {
 					name: "settings",
 					className: h.a.settingsIcon
-				}))), a.a.createElement(x.a, {
+				})), a.a.createElement(v.a, {
+					isGold: _,
+					snoovatarUrl: j,
+					prefersReducedAnimations: k
+				}), a.a.createElement(x.a, {
 					isEmployee: I,
 					isGold: _,
 					isNSFW: O,
@@ -6053,4 +6053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.ac84b8006f2854f4b84f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard.70910e6eaa7e5d2affdb.js.map

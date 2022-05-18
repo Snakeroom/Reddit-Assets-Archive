@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.c1d5faaea8fd89e26048.js
-// Retrieved at 5/18/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.81ddbafc9475f6b1eda0.js
+// Retrieved at 5/18/2022, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -5103,17 +5103,17 @@
 					username: P,
 					isDeletingBanner: !!h,
 					onDeleteBanner: k
-				}), r.a.createElement(r.a.Fragment, null, r.a.createElement(g.a, {
-					isGold: y,
-					snoovatarUrl: O,
-					prefersReducedAnimations: E
 				}), !p && C && r.a.createElement(o.default, {
 					to: "/settings/profile",
 					className: b.a.snoovatarSettingsLink
 				}, r.a.createElement(i.a, {
 					name: "settings",
 					className: f.a.settingsIcon
-				}))), r.a.createElement(v.a, {
+				})), r.a.createElement(g.a, {
+					isGold: y,
+					snoovatarUrl: O,
+					prefersReducedAnimations: E
+				}), r.a.createElement(v.a, {
 					isEmployee: _,
 					isGold: y,
 					isNSFW: x,
@@ -14195,4 +14195,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.c1d5faaea8fd89e26048.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.81ddbafc9475f6b1eda0.js.map

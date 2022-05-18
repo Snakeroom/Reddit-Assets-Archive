@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.514f92e341d2e4d4656c.js
-// Retrieved at 5/18/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.e48f477245811eab3aae.js
+// Retrieved at 5/18/2022, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -2338,17 +2338,17 @@
 					username: P,
 					isDeletingBanner: !!f,
 					onDeleteBanner: w
-				}), n.a.createElement(n.a.Fragment, null, n.a.createElement(x.a, {
-					isGold: g,
-					snoovatarUrl: j,
-					prefersReducedAnimations: O
 				}), !p && N && n.a.createElement(o.default, {
 					to: "/settings/profile",
 					className: b.a.snoovatarSettingsLink
 				}, n.a.createElement(c.a, {
 					name: "settings",
 					className: v.a.settingsIcon
-				}))), n.a.createElement(h.a, {
+				})), n.a.createElement(x.a, {
+					isGold: g,
+					snoovatarUrl: j,
+					prefersReducedAnimations: O
+				}), n.a.createElement(h.a, {
 					isEmployee: I,
 					isGold: g,
 					isNSFW: _,
@@ -2712,4 +2712,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.514f92e341d2e4d4656c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.e48f477245811eab3aae.js.map

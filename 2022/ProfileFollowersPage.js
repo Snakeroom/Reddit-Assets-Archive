@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.4fceabccc7246f7d23f8.js
-// Retrieved at 5/18/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3df15c4da61c7711a031.js
+// Retrieved at 5/18/2022, 3:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -3256,17 +3256,17 @@
 					username: j,
 					isDeletingBanner: !!b,
 					onDeleteBanner: O
-				}), s.a.createElement(s.a.Fragment, null, s.a.createElement(v.a, {
-					isGold: y,
-					snoovatarUrl: E,
-					prefersReducedAnimations: _
 				}), !p && w && s.a.createElement(o.default, {
 					to: "/settings/profile",
 					className: h.a.snoovatarSettingsLink
 				}, s.a.createElement(a.a, {
 					name: "settings",
 					className: f.a.settingsIcon
-				}))), s.a.createElement(x.a, {
+				})), s.a.createElement(v.a, {
+					isGold: y,
+					snoovatarUrl: E,
+					prefersReducedAnimations: _
+				}), s.a.createElement(x.a, {
 					isEmployee: g,
 					isGold: y,
 					isNSFW: C,
@@ -6721,4 +6721,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.4fceabccc7246f7d23f8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.3df15c4da61c7711a031.js.map
