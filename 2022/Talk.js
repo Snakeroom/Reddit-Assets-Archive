@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.0c00485232b5d53505f3.js
-// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.bb346796649337b86741.js
+// Retrieved at 5/19/2022, 10:50:10 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -231,7 +231,7 @@
 				circleFaqYellowSmall: "mRtebAowCzdqqTKm0JkPf",
 				circleFaqCyanBig: "-ssg1aN2xsMpsKW5Zrd8K",
 				circleFaqOrange: "_1GA86_fH17za4zR49nrOMr",
-				circleFaqBlueHollow: "_1dTFkTyjoesnGpd4KLG0a9",
+				circleFaqOrangeHollow: "_3PdastUA7SlA2Iy_JHL0Jc",
 				faqQuestionMark: "LnGnnsAfL_jQ93L06GAUG",
 				faqQuestionMarkTopLeft: "_1ikrEVb90scV3Qe9JuHjyo",
 				faqQuestionMarkTopRight: "_3Fb8AcEBI3_Amueni2UwK",
@@ -349,7 +349,7 @@
 				headingSectionGridBg: "_2qyGBzdWjAiAhltiiN96D9",
 				circleYellowBig: "x6PeFxp8aLyR5ujV_0R-P",
 				circleOrangeTop: "_1IlQRONcrrQZPw_o960onQ",
-				circleBlue: "xgvVp59bVs__21yD_0TAM",
+				circleOrangeBottom: "_1zEgjZulWHFOuXtKkDtXa4",
 				radialCircleTopRight: "PKATUiDk5ZNC5xzDX1U7W",
 				radialCircleBottomRight: "_2dde1W6-l705juJqUW9TlT",
 				radialCircleBottomLeft: "_2BSx5T85Wbw4ApDLID1ctZ",
@@ -533,7 +533,7 @@
 				})))), r.a.createElement("div", {
 					className: f.a.faqTryOutSection
 				}, r.a.createElement("div", {
-					className: Object(i.a)(f.a.faqSectionContent, f.a.contentWrapper)
+					className: f.a.contentWrapper
 				}, r.a.createElement("h2", {
 					className: f.a.faqTryOutHeading
 				}, v._("Become a Reddit Talk host now", null, {
@@ -568,7 +568,7 @@
 			}), r.a.createElement("div", {
 				className: f.a.circleFaqOrange
 			}), r.a.createElement("div", {
-				className: f.a.circleFaqBlueHollow
+				className: f.a.circleFaqOrangeHollow
 			})), x = () => r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 				className: Object(i.a)(f.a.faqQuestionMark, f.a.faqQuestionMarkTopLeft)
 			}), r.a.createElement("div", {
@@ -593,55 +593,55 @@
 			var F = t("./src/reddit/pages/Talk/HostProgramPerks.m.less"),
 				I = t.n(F);
 			const {
-				fbt: B
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), A = [I.a.circleOrange, I.a.circleBlue, I.a.circleYellow], R = [{
+				fbt: A
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), B = [I.a.circleOrange, I.a.circleBlue, I.a.circleYellow], H = [{
 				key: "homepage-discovery",
-				title: B._("Get discovered on the Reddit home page", null, {
+				title: A._("Get discovered on the Reddit home page", null, {
 					hk: "2wjYDH"
 				}),
-				description: B._("Your talks wlll be promoted to relevant audiences right at the top of Reddit, and you may get shared on Reddit's social channels.", null, {
+				description: A._("Your talks wlll be promoted to relevant audiences right at the top of Reddit, and you may get shared on Reddit's social channels.", null, {
 					hk: "3GHikM"
 				}),
 				images: [{
 					imageName: "homepage-discovery",
-					imageAlt: B._("Talk highlighted on Reddit homepage", null, {
+					imageAlt: A._("Talk highlighted on Reddit homepage", null, {
 						hk: "Qo9a3"
 					})
 				}]
 			}, {
 				key: "awards",
-				title: B._("Win awesome digital and IRL awards", null, {
+				title: A._("Win awesome digital and IRL awards", null, {
 					hk: "LODni"
 				}),
-				description: B._("You may get exclusive swag like Reddit hoodies and mics, and get a special talk trophy on your Reddit profile.", null, {
+				description: A._("You may get exclusive swag like Reddit hoodies and mics, and get a special talk trophy on your Reddit profile.", null, {
 					hk: "lKJwv"
 				}),
 				images: [{
 					imageName: "awards-mic-drop",
-					imageAlt: B._("Reddit Talk Host Program digital award example", null, {
+					imageAlt: A._("Reddit Talk Host Program digital award example", null, {
 						hk: "4wjpp6"
 					})
 				}, {
 					imageName: "awards-swag",
-					imageAlt: B._("Reddit Talk Host Program IRL award example", null, {
+					imageAlt: A._("Reddit Talk Host Program IRL award example", null, {
 						hk: "2yDOGH"
 					})
 				}]
 			}, {
 				key: "connect-hosts",
-				title: B._("Connect with other hosts", null, {
+				title: A._("Connect with other hosts", null, {
 					hk: "1Ou7bx"
 				}),
-				description: B._("You'll gain access to an exclusive community where you can chat with other hosts and the Reddit Talk product team.", null, {
+				description: A._("You'll gain access to an exclusive community where you can chat with other hosts and the Reddit Talk product team.", null, {
 					hk: "23p503"
 				}),
 				images: [{
 					imageName: "connect-hosts",
-					imageAlt: B._("Community with talk hosts", null, {
+					imageAlt: A._("Community with talk hosts", null, {
 						hk: "3M08CD"
 					})
 				}]
-			}], H = () => r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
+			}], R = () => r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 				className: I.a.circleBlueHollow
 			}), r.a.createElement("div", {
 				className: I.a.circleYellowHollow
@@ -685,7 +685,7 @@
 				className: I.a.hostProgramPerksSection
 			}, r.a.createElement("div", {
 				className: I.a.perksSectionContent
-			}, R.map((e, a) => {
+			}, H.map((e, a) => {
 				let {
 					key: t,
 					title: l,
@@ -698,38 +698,38 @@
 					description: n,
 					images: s,
 					imageRight: a % 2 != 0,
-					backgroundCircle: A[a]
+					backgroundCircle: B[a]
 				})
-			}), r.a.createElement(H, null)));
+			}), r.a.createElement(R, null)));
 			var L = t("./src/reddit/pages/Talk/HostProgramSteps.m.less"),
 				Q = t.n(L);
 			const {
-				fbt: M
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), Y = [{
-				title: M._("Apply to be a host", null, {
+				fbt: Y
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), M = [{
+				title: Y._("Apply to be a host", null, {
 					hk: "2xfnbi"
 				}),
-				description: M._("If you're interested in becoming a member of the program and don't have access to Reddit Talk currently, apply now!", null, {
+				description: Y._("If you're interested in becoming a member of the program and don't have access to Reddit Talk currently, apply now!", null, {
 					hk: "26puiF"
 				})
 			}, {
-				title: M._("Host 4 talks every 30 days", null, {
+				title: Y._("Host 4 talks every 30 days", null, {
 					hk: "1PmoQp"
 				}),
-				description: M._("Host 4 talks every 30 days between June 15 and September 15. Two hosts per community can team up to reach this goal.", null, {
+				description: Y._("Host 4 talks every 30 days between June 15 and September 15. Two hosts per community can team up to reach this goal.", null, {
 					hk: "1wjkOo"
 				}),
 				link: {
-					text: M._("see details", null, {
+					text: Y._("see details", null, {
 						hk: "3YjTbA"
 					}),
 					url: k
 				}
 			}, {
-				title: M._("Keep talking", null, {
+				title: Y._("Keep talking", null, {
 					hk: "2f2KZF"
 				}),
-				description: M._("Each talk must last at least 30 minutes.", null, {
+				description: Y._("Each talk must last at least 30 minutes.", null, {
 					hk: "3GGDq8"
 				})
 			}], D = e => {
@@ -755,7 +755,7 @@
 					target: "_blank",
 					rel: "noopener noreferrer"
 				}, l.text), ")"))))
-			}, G = e => {
+			}, K = e => {
 				let {
 					ctaButton: a
 				} = e;
@@ -768,11 +768,11 @@
 					className: Q.a.stepsSectionContent
 				}, r.a.createElement("h2", {
 					className: Q.a.subheading
-				}, M._("How to join the Reddit Talk Host Program", null, {
+				}, Y._("How to join the Reddit Talk Host Program", null, {
 					hk: "1um7kS"
 				})), r.a.createElement("div", {
 					className: Q.a.stepsContainer
-				}, Y.map((e, a) => {
+				}, M.map((e, a) => {
 					let {
 						title: t,
 						description: l,
@@ -787,28 +787,28 @@
 					})
 				})), a(Q.a.ctaButtonContainer)))
 			};
-			var K = t("./src/reddit/pages/Talk/index.m.less"),
-				W = t.n(K),
+			var G = t("./src/reddit/pages/Talk/index.m.less"),
+				W = t.n(G),
 				z = t("./src/reddit/pages/Talk/QuotesFromHosts.m.less"),
 				U = t.n(z);
 			const {
-				fbt: V
-			} = t("./node_modules/fbt/lib/FbtPublic.js"), J = [{
-				quote: V._("This makes our large sub feel more like a {=community} again!", [V._param("=community", r.a.createElement("strong", null, V._("community", null, {
+				fbt: J
+			} = t("./node_modules/fbt/lib/FbtPublic.js"), V = [{
+				quote: J._("This makes our large sub feel more like a {=community} again!", [J._param("=community", r.a.createElement("strong", null, J._("community", null, {
 					hk: "2b3lFN"
 				})))], {
 					hk: "4mNP7J"
 				}),
 				avatar: "24"
 			}, {
-				quote: V._("This was an amazing {=bonding experience.} I loved it.", [V._param("=bonding experience.", r.a.createElement("strong", null, V._("bonding experience.", null, {
+				quote: J._("This was an amazing {=bonding experience.} I loved it.", [J._param("=bonding experience.", r.a.createElement("strong", null, J._("bonding experience.", null, {
 					hk: "3GMiYK"
 				})))], {
 					hk: "2ANXtd"
 				}),
 				avatar: "7"
 			}, {
-				quote: V._("Our talks have been attracting {=thousands of listeners.}", [V._param("=thousands of listeners.", r.a.createElement("strong", null, V._("thousands of listeners.", null, {
+				quote: J._("Our talks have been attracting {=thousands of listeners.}", [J._param("=thousands of listeners.", r.a.createElement("strong", null, J._("thousands of listeners.", null, {
 					hk: "2FsHju"
 				})))], {
 					hk: "1eVyVp"
@@ -836,7 +836,7 @@
 				}, r.a.createElement("img", {
 					className: U.a.hostAvatar,
 					src: `${l.a.assetPath}/img/talk/avatars/${t}.png`,
-					alt: V._("Avatar of a talk host", null, {
+					alt: J._("Avatar of a talk host", null, {
 						hk: "mrtmQ"
 					})
 				}))))
@@ -852,16 +852,16 @@
 					className: U.a.quoteSectionIcon
 				}, r.a.createElement("img", {
 					src: `${l.a.assetPath}/img/talk/comment-bubble.png`,
-					alt: V._("Comment bubble icon", null, {
+					alt: J._("Comment bubble icon", null, {
 						hk: "2scKvR"
 					})
 				})), r.a.createElement("h2", {
 					className: U.a.subheading
-				}, V._("Quotes from Reddit Talk hosts", null, {
+				}, J._("Quotes from Reddit Talk hosts", null, {
 					hk: "1nzsM4"
 				})), r.a.createElement("div", {
 					className: U.a.quotesContainer
-				}, J.map((e, a) => {
+				}, V.map((e, a) => {
 					let {
 						quote: t,
 						avatar: l
@@ -876,7 +876,7 @@
 					className: U.a.hostsWithSnoo
 				}, r.a.createElement("img", {
 					src: `${l.a.assetPath}/img/talk/snoo-mic.png`,
-					alt: V._("Snoo speaking on the mic", null, {
+					alt: J._("Snoo speaking on the mic", null, {
 						hk: "3OrNuX"
 					})
 				}))))
@@ -942,7 +942,7 @@
 				}), r.a.createElement(N, {
 					className: W.a.radialCircleTopLeft
 				}), r.a.createElement("div", {
-					className: Object(i.a)(W.a.circle, W.a.circleBlue)
+					className: Object(i.a)(W.a.circle, W.a.circleOrangeBottom)
 				})), r.a.createElement("div", {
 					className: Object(i.a)(W.a.contentWrapper, W.a.headingContent)
 				}, r.a.createElement("div", {
@@ -992,7 +992,7 @@
 					hk: "1clBSx"
 				})))], {
 					hk: "4DbiH7"
-				}))), r.a.createElement(S, null), r.a.createElement(G, {
+				}))), r.a.createElement(S, null), r.a.createElement(K, {
 					ctaButton: k
 				}), r.a.createElement(Z, null), r.a.createElement(C, null), r.a.createElement(o.a, {
 					className: W.a.footer
@@ -1001,4 +1001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.0c00485232b5d53505f3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.bb346796649337b86741.js.map

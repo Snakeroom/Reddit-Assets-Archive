@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/runtime~Reddit.462a069f657285503daa.js
-// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/runtime~Reddit.2fc1027f1587525d3074.js
+// Retrieved at 5/19/2022, 10:50:10 AM by Reddit Dataminer v1.0.0
 ! function(e) {
 	function o(o) {
 		for (var a, n, r = o[0], s = o[1], c = o[2], l = 0, b = []; l < r.length; l++) n = r[l], Object.prototype.hasOwnProperty.call(d, n) && d[n] && b.push(d[n][0]), d[n] = 0;
@@ -777,7 +777,7 @@
 					SubredditPremiumBadgeManagement: "b023aa0bce804c1c0c1e",
 					SupportersListModal: "fa7622c36cf6eae35332",
 					SurveyAsync: "b7898fe8c01564ff1539",
-					Talk: "ef19f1f040908cc2a8b8",
+					Talk: "a14b8998eab46d5f8d2d",
 					UserDataRequestPage: "9c903d1c7094af13c2db",
 					UserZoomIntegration: "31d6cfe0d16ae931b73c",
 					"css-vars-ponyfill": "31d6cfe0d16ae931b73c",
@@ -1477,7 +1477,7 @@
 						SubredditPremiumBadgeManagement: "f056d3cea29624461a65",
 						SupportersListModal: "d2b355ef0a2572b48dff",
 						SurveyAsync: "094b8eccb6f07a9a83fa",
-						Talk: "0c00485232b5d53505f3",
+						Talk: "bb346796649337b86741",
 						UserDataRequestPage: "0c6f4c1aef4a8d10702e",
 						UserZoomIntegration: "e14a378bfc910ff0887f",
 						"css-vars-ponyfill": "8e6cec8301d069e523d7",
@@ -1750,4 +1750,4 @@
 	var m = c;
 	t()
 }([]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.462a069f657285503daa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/runtime~Reddit.2fc1027f1587525d3074.js.map
