@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.d17539f7fedb87eca51a.js
-// Retrieved at 5/18/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.074c5bceb0e0decd41ab.js
+// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -257,29 +257,29 @@
 			}));
 			var n = t("./src/reddit/constants/experiments.ts"),
 				d = t("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(d.a)(n.dd),
-				s = Object(d.a)(n.bd),
-				i = Object(d.a)(n.ed),
-				c = Object(d.a)(n.ad),
-				o = Object(d.a)(n.Zc),
-				u = Object(d.a)(n.hd),
-				l = Object(d.a)(n.fd),
-				f = Object(d.a)(n.gd),
-				p = Object(d.a)(n.Wc),
-				m = Object(d.a)(n.Uc),
-				b = Object(d.a)(n.Nc),
-				g = Object(d.a)(n.Oc),
-				h = Object(d.a)(n.Lc),
-				O = Object(d.a)(n.Mc),
-				j = Object(d.a)(n.Qc),
-				P = Object(d.a)(n.Kc),
-				y = Object(d.a)(n.Xc),
-				_ = Object(d.a)(n.Yc),
-				x = Object(d.a)(n.cd),
-				v = Object(d.a)(n.id),
-				k = Object(d.a)(n.kd),
-				C = Object(d.a)(n.md),
-				I = Object(d.a)(n.ld)
+			const a = Object(d.a)(n.fd),
+				s = Object(d.a)(n.dd),
+				i = Object(d.a)(n.gd),
+				c = Object(d.a)(n.cd),
+				o = Object(d.a)(n.bd),
+				u = Object(d.a)(n.jd),
+				l = Object(d.a)(n.hd),
+				f = Object(d.a)(n.id),
+				p = Object(d.a)(n.Yc),
+				m = Object(d.a)(n.Wc),
+				b = Object(d.a)(n.Pc),
+				g = Object(d.a)(n.Qc),
+				h = Object(d.a)(n.Nc),
+				O = Object(d.a)(n.Oc),
+				j = Object(d.a)(n.Sc),
+				P = Object(d.a)(n.Mc),
+				y = Object(d.a)(n.Zc),
+				_ = Object(d.a)(n.ad),
+				x = Object(d.a)(n.ed),
+				v = Object(d.a)(n.kd),
+				k = Object(d.a)(n.md),
+				C = Object(d.a)(n.od),
+				I = Object(d.a)(n.nd)
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, r, t) {
 			"use strict";
@@ -330,9 +330,9 @@
 			})), t.d(r, "m", (function() {
 				return w
 			})), t.d(r, "e", (function() {
-				return M
-			})), t.d(r, "d", (function() {
 				return S
+			})), t.d(r, "d", (function() {
+				return M
 			}));
 			var n = t("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				d = t("./src/lib/initializeClient/installReducer.ts"),
@@ -369,8 +369,8 @@
 				C = e => e.features.goldPurchase.payment.cardValidation.nameOnCard,
 				I = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
 				w = e => e.features.goldPurchase.payment.stripeToken.pending,
-				M = e => e.features.goldPurchase.payment.paypal.passthrough,
-				S = e => e.features.goldPurchase.payment.paypal.errorMessage
+				S = e => e.features.goldPurchase.payment.paypal.passthrough,
+				M = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/redditGQL/operations/ChangeStripePaymentMethod.json": function(e) {
 			e.exports = JSON.parse('{"id":"ce700fb9b230"}')
@@ -383,4 +383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.d17539f7fedb87eca51a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.074c5bceb0e0decd41ab.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.b5e620b1d93ae50101a0.js
-// Retrieved at 5/16/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.0c00485232b5d53505f3.js
+// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -219,20 +219,6 @@
 			}, c._("© {year} Reddit, Inc. All rights reserved", [c._param("year", (new Date).getFullYear().toString())], {
 				hk: "23FUx6"
 			})))))
-		},
-		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, a, t) {
-			"use strict";
-			var l = t("./node_modules/react/index.js"),
-				n = t.n(l);
-			a.a = e => n.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 12 12",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, n.a.createElement("g", null, n.a.createElement("polygon", {
-				fill: "inherit",
-				transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
-				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
-			})))
 		},
 		"./src/reddit/pages/Talk/FaqSection.m.less": function(e, a, t) {
 			e.exports = {
@@ -1015,4 +1001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.b5e620b1d93ae50101a0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.0c00485232b5d53505f3.js.map

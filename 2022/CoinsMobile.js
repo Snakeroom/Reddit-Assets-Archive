@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CoinsMobile.21f15d0660d45953a94d.js
-// Retrieved at 5/12/2022, 3:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CoinsMobile.cc82546a596534ed2f1a.js
+// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CoinsMobile"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, t, a) {
@@ -114,20 +114,6 @@
 				}, e))
 			}
 		},
-		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, a) {
-			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				s = a.n(n);
-			t.a = e => s.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 12 12",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, s.a.createElement("g", null, s.a.createElement("polygon", {
-				fill: "inherit",
-				transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
-				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
-			})))
-		},
 		"./src/reddit/pages/CoinsMobilePage/index.m.less": function(e, t, a) {
 			e.exports = {
 				wrapper: "_1btvg1SigTazjp9DWDlVrm",
@@ -155,12 +141,12 @@
 				m = a("./src/telemetry/models/Timer.ts"),
 				u = a("./src/reddit/pages/CoinsMobilePage/index.m.less"),
 				b = a.n(u),
-				g = a("./src/reddit/helpers/createEmojiText/index.tsx"),
-				h = a("./src/reddit/models/Gold/Award.ts"),
+				h = a("./src/reddit/helpers/createEmojiText/index.tsx"),
+				g = a("./src/reddit/models/Gold/Award.ts"),
 				f = a("./src/reddit/models/Gold/Coins/index.ts"),
-				x = a("./src/reddit/components/CollapsibleFAQ/index.tsx"),
-				_ = a("./src/reddit/components/GildMarketingDescription/index.tsx"),
-				E = a("./src/reddit/icons/fonts/Coin/index.tsx");
+				_ = a("./src/reddit/components/CollapsibleFAQ/index.tsx"),
+				E = a("./src/reddit/components/GildMarketingDescription/index.tsx"),
+				x = a("./src/reddit/icons/fonts/Coin/index.tsx");
 			class C extends r.a.Component {
 				componentDidMount() {
 					Object(o.d)(o.a.GoldPayment, !1);
@@ -186,7 +172,7 @@
 						hk: "2phDYF"
 					})), r.a.createElement("div", {
 						className: b.a.gridContainer
-					}, r.a.createElement(_.a, {
+					}, r.a.createElement(E.a, {
 						className: b.a.gridItem,
 						icon: r.a.createElement("img", {
 							src: `${n.a.assetPath}/img/gold/badges/award-silver-large.png`
@@ -195,13 +181,13 @@
 						title: s.fbt._("Silver Award", null, {
 							hk: "2h79np"
 						})
-					}, Object(g.a)(s.fbt._("Shows a Silver Award on the post or comment and ... that’s it. You’ll need {Coin price placeholder} Coins.", [s.fbt._param("Coin price placeholder", ":coin_price:")], {
+					}, Object(h.a)(s.fbt._("Shows a Silver Award on the post or comment and ... that’s it. You’ll need {Coin price placeholder} Coins.", [s.fbt._param("Coin price placeholder", ":coin_price:")], {
 						hk: "zIrMH"
 					}), {
 						":coin_price:": r.a.createElement("span", {
 							className: b.a.nowrap
-						}, r.a.createElement(E.a, null), h.q.coinPrice)
-					})), r.a.createElement(_.a, {
+						}, r.a.createElement(x.a, null), g.q.coinPrice)
+					})), r.a.createElement(E.a, {
 						className: b.a.gridItem,
 						icon: r.a.createElement("img", {
 							src: `${n.a.assetPath}/img/gold/badges/award-gold-large.png`
@@ -210,16 +196,16 @@
 						title: s.fbt._("Gold Award", null, {
 							hk: "1oYdz0"
 						})
-					}, Object(g.a)(s.fbt._("Gives {Coin benefit placeholder} Reddit Coins and a week of r/lounge access and ad-free browsing. You’ll need {Coin price placeholder} Coins.", [s.fbt._param("Coin benefit placeholder", ":coin_benefit:"), s.fbt._param("Coin price placeholder", ":coin_price:")], {
+					}, Object(h.a)(s.fbt._("Gives {Coin benefit placeholder} Reddit Coins and a week of r/lounge access and ad-free browsing. You’ll need {Coin price placeholder} Coins.", [s.fbt._param("Coin benefit placeholder", ":coin_benefit:"), s.fbt._param("Coin price placeholder", ":coin_price:")], {
 						hk: "rZ9s8"
 					}), {
 						":coin_benefit:": r.a.createElement("span", {
 							className: b.a.nowrap
-						}, r.a.createElement(E.a, null), "100"),
+						}, r.a.createElement(x.a, null), "100"),
 						":coin_price:": r.a.createElement("span", {
 							className: b.a.nowrap
-						}, r.a.createElement(E.a, null), h.n.coinPrice)
-					})), r.a.createElement(_.a, {
+						}, r.a.createElement(x.a, null), g.n.coinPrice)
+					})), r.a.createElement(E.a, {
 						className: b.a.gridItem,
 						icon: r.a.createElement("img", {
 							src: `${n.a.assetPath}/img/gold/badges/award-platinum-large.png`
@@ -228,15 +214,15 @@
 						title: s.fbt._("Platinum Award", null, {
 							hk: "3nCEqM"
 						})
-					}, Object(g.a)(s.fbt._("Gives a month of r/lounge access and ad-free browsing, and {Coin benefit placeholder} Reddit Coins for that month. You’ll need {Coin price placeholder} Coins.", [s.fbt._param("Coin benefit placeholder", ":coin_benefit:"), s.fbt._param("Coin price placeholder", ":coin_price:")], {
+					}, Object(h.a)(s.fbt._("Gives a month of r/lounge access and ad-free browsing, and {Coin benefit placeholder} Reddit Coins for that month. You’ll need {Coin price placeholder} Coins.", [s.fbt._param("Coin benefit placeholder", ":coin_benefit:"), s.fbt._param("Coin price placeholder", ":coin_price:")], {
 						hk: "1JTJWQ"
 					}), {
 						":coin_benefit:": r.a.createElement("span", {
 							className: b.a.nowrap
-						}, r.a.createElement(E.a, null), "700"),
+						}, r.a.createElement(x.a, null), "700"),
 						":coin_price:": r.a.createElement("span", {
 							className: b.a.nowrap
-						}, r.a.createElement(E.a, null), h.p.coinPrice)
+						}, r.a.createElement(x.a, null), g.p.coinPrice)
 					}))))
 				}
 				renderFAQSection() {
@@ -248,7 +234,7 @@
 						hk: "21x0aE"
 					})), r.a.createElement("div", {
 						className: b.a.faqs
-					}, f.b.map((e, t) => r.a.createElement(x.a, {
+					}, f.b.map((e, t) => r.a.createElement(_.a, {
 						defaultClosed: !0,
 						question: e.prompt(),
 						key: t
@@ -262,4 +248,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinsMobile.21f15d0660d45953a94d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CoinsMobile.cc82546a596534ed2f1a.js.map

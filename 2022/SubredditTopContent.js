@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditTopContent.969b2bc801b95a4a9701.js
-// Retrieved at 5/18/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditTopContent.3a7b1e770dcde2494c57.js
+// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditTopContent"], {
 		"./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less": function(e, t, n) {
@@ -19,25 +19,25 @@
 			"use strict";
 			n.r(t);
 			var o = n("./node_modules/fbt/lib/FbtPublic.js"),
-				s = n("./node_modules/lodash/memoize.js"),
-				r = n.n(s),
+				r = n("./node_modules/lodash/memoize.js"),
+				s = n.n(r),
 				a = n("./node_modules/react/index.js"),
 				d = n.n(a),
 				i = n("./node_modules/react-redux/es/index.js"),
 				c = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				l = n("./node_modules/reselect/es/index.js"),
 				u = n("./src/lib/constants/index.ts"),
-				m = n("./src/reddit/components/DiscoveryUnit/Layout/index.tsx"),
-				p = n("./src/reddit/components/DiscoveryUnit/Layout/PostsCarousel/index.tsx"),
+				p = n("./src/reddit/components/DiscoveryUnit/Layout/index.tsx"),
+				m = n("./src/reddit/components/DiscoveryUnit/Layout/PostsCarousel/index.tsx"),
 				x = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				_ = n("./src/reddit/components/Widgets/Base/index.tsx"),
 				f = n("./src/reddit/helpers/trackers/discoveryUnit.ts"),
 				y = n("./src/reddit/constants/experiments.ts"),
 				C = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				h = n("./src/reddit/selectors/user.ts");
-			const T = e => Object(h.M)(e) || y.sf.ShowTopContent === Object(C.c)(e, {
+			const T = e => Object(h.M)(e) || y.uf.ShowTopContent === Object(C.c)(e, {
 				experimentEligibilitySelector: C.a,
-				experimentName: y.mf
+				experimentName: y.of
 			});
 			var v = n("./src/reddit/selectors/subreddit.ts"),
 				M = n("./src/reddit/components/DiscoveryUnit/SubredditTopContentDiscoveryUnit/index.m.less"),
@@ -48,7 +48,7 @@
 			}), e => ({
 				trackDiscoveryUnitView: t => e((e, n) => f.a(n(), t)),
 				trackDismissClick: t => e((e, n) => f.c(n(), t)),
-				trackPostView: r()((t, n, o) => e((e, s) => f.s(s(), t, n, o)), (e, t) => {
+				trackPostView: s()((t, n, o) => e((e, r) => f.s(r(), t, n, o)), (e, t) => {
 					let {
 						id: n
 					} = e;
@@ -81,9 +81,9 @@
 					} = this.props;
 					if (!e || !n) return null;
 					const {
-						postIds: s,
-						range: r
-					} = n, a = `${t}${u.W.TOP}?t=${r}`, i = d.a.createElement(_.a, {
+						postIds: r,
+						range: s
+					} = n, a = `${t}${u.W.TOP}?t=${s}`, i = d.a.createElement(_.a, {
 						className: b.a.widgetHeader
 					}, d.a.createElement("button", {
 						className: b.a.closeButton,
@@ -94,21 +94,21 @@
 					})), d.a.createElement(c.a, {
 						className: b.a.headerLink,
 						to: a
-					}, o.fbt._("Top posts from the past {range}", [o.fbt._param("range", r)], {
+					}, o.fbt._("Top posts from the past {range}", [o.fbt._param("range", s)], {
 						hk: "xhJKf"
 					})));
 					return d.a.createElement("div", {
 						className: this.props.className
-					}, d.a.createElement(m.a, {
+					}, d.a.createElement(p.a, {
 						className: b.a.layout,
 						header: i,
 						hidePadding: !0
-					}, d.a.createElement(p.a, {
+					}, d.a.createElement(m.a, {
 						discoveryUnit: this.props.discoveryUnit,
 						searchDiscoveryUnit: this.props.searchDiscoveryUnit,
 						isLoading: !1,
 						isMiniCard: !1,
-						items: s,
+						items: r,
 						searchOptions: this.props.searchOptions,
 						showSubreddit: !0,
 						showTopPosts: !0,
@@ -168,7 +168,7 @@
 		"./src/reddit/components/ModalStyledComponents/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return p
+				return m
 			})), n.d(t, "e", (function() {
 				return x
 			})), n.d(t, "n", (function() {
@@ -211,17 +211,17 @@
 				return I
 			}));
 			var o = n("./src/lib/classNames/index.ts"),
-				s = n("./src/lib/lessComponent.tsx"),
-				r = n("./node_modules/react/index.js"),
-				a = n.n(r),
+				r = n("./src/lib/lessComponent.tsx"),
+				s = n("./node_modules/react/index.js"),
+				a = n.n(s),
 				d = n("./src/reddit/controls/Button/index.tsx"),
 				i = n("./src/reddit/controls/Input/ModalInput.tsx"),
 				c = n("./src/reddit/icons/svgs/Close/index.tsx"),
 				l = n("./src/reddit/components/ModalStyledComponents/index.m.less"),
 				u = n.n(l);
 
-			function m() {
-				return (m = Object.assign || function(e) {
+			function p() {
+				return (p = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var o in n) Object.prototype.hasOwnProperty.call(n, o) && (e[o] = n[o])
@@ -229,32 +229,32 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const p = s.a.wrapped(c.a, "CloseIcon", u.a),
-				x = s.a.section("ModalBody", u.a),
-				_ = s.a.section("ModalPostPreview", u.a),
-				f = s.a.p("ModalText", u.a),
-				y = s.a.div("ModalSmallText", u.a),
-				C = s.a.div("ModalDescriptionText", u.a),
-				h = s.a.div("ModalMetaText", u.a),
-				T = s.a.label("ModalFormItem", u.a),
-				v = s.a.wrapped(i.a, "ModalInput", u.a),
-				M = s.a.label("ModalInputLabel", u.a),
-				b = s.a.footer("ModalFooter", u.a),
-				U = s.a.header("ModalHeader", u.a),
-				S = s.a.div("ModalTitle", u.a),
-				w = s.a.div("ModalAnnotation", u.a),
-				D = s.a.div("ModalMain", u.a),
-				g = s.a.textarea("TextArea", u.a),
-				B = s.a.wrapped(d.l, "WarningButton", u.a),
-				j = s.a.wrapped(d.l, "PrimaryButton", u.a),
-				P = s.a.wrapped(d.o, "CancelButton", u.a),
-				k = s.a.wrapped(d.r, "RemoveButton", u.a),
+			const m = r.a.wrapped(c.a, "CloseIcon", u.a),
+				x = r.a.section("ModalBody", u.a),
+				_ = r.a.section("ModalPostPreview", u.a),
+				f = r.a.p("ModalText", u.a),
+				y = r.a.div("ModalSmallText", u.a),
+				C = r.a.div("ModalDescriptionText", u.a),
+				h = r.a.div("ModalMetaText", u.a),
+				T = r.a.label("ModalFormItem", u.a),
+				v = r.a.wrapped(i.a, "ModalInput", u.a),
+				M = r.a.label("ModalInputLabel", u.a),
+				b = r.a.footer("ModalFooter", u.a),
+				U = r.a.header("ModalHeader", u.a),
+				S = r.a.div("ModalTitle", u.a),
+				w = r.a.div("ModalAnnotation", u.a),
+				D = r.a.div("ModalMain", u.a),
+				g = r.a.textarea("TextArea", u.a),
+				B = r.a.wrapped(d.l, "WarningButton", u.a),
+				j = r.a.wrapped(d.l, "PrimaryButton", u.a),
+				P = r.a.wrapped(d.o, "CancelButton", u.a),
+				k = r.a.wrapped(d.r, "RemoveButton", u.a),
 				I = e => {
 					let {
 						className: t,
 						...n
 					} = e;
-					return a.a.createElement(d.t, m({
+					return a.a.createElement(d.t, p({
 						kind: d.b.Button,
 						priority: d.c.Primary,
 						className: Object(o.a)(u.a.ConfirmButton, t)
@@ -264,8 +264,8 @@
 		"./src/reddit/controls/Input/ModalInput.tsx": function(e, t, n) {
 			"use strict";
 			var o = n("./node_modules/react/index.js"),
-				s = n.n(o),
-				r = n("./node_modules/react-redux/es/index.js"),
+				r = n.n(o),
+				s = n("./node_modules/react-redux/es/index.js"),
 				a = n("./src/lib/classNames/index.ts"),
 				d = n("./src/reddit/actions/modal.ts"),
 				i = n("./src/reddit/constants/keycodes.ts"),
@@ -281,7 +281,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			class m extends s.a.Component {
+			class p extends r.a.Component {
 				constructor() {
 					super(...arguments), this.handleKeyDown = e => {
 						let {
@@ -296,15 +296,15 @@
 						closeModal: t,
 						...n
 					} = this.props;
-					return s.a.createElement("input", u({
+					return r.a.createElement("input", u({
 						className: Object(a.a)(l.a.input, e),
 						onKeyDown: this.handleKeyDown
 					}, n))
 				}
 			}
-			t.a = Object(r.b)(null, {
+			t.a = Object(s.b)(null, {
 				closeModal: d.f
-			})(m)
+			})(p)
 		},
 		"./src/reddit/controls/Input/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -313,4 +313,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.969b2bc801b95a4a9701.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditTopContent.3a7b1e770dcde2494c57.js.map

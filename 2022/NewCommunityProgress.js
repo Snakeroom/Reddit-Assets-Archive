@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommunityProgress.bb2929c8b60597f2c419.js
-// Retrieved at 5/12/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommunityProgress.ac71e51d5badd4b841b7.js
+// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommunityProgress"], {
 		"./src/lib/colors/constants.ts": function(e, t, A) {
@@ -189,9 +189,9 @@
 			})), A.d(t, "a", (function() {
 				return O
 			})), A.d(t, "s", (function() {
-				return H
-			})), A.d(t, "c", (function() {
 				return N
+			})), A.d(t, "c", (function() {
+				return H
 			}));
 			var n = A("./src/lib/classNames/index.ts"),
 				a = A("./src/lib/lessComponent.tsx"),
@@ -231,8 +231,8 @@
 				j = a.a.wrapped(r.l, "WarningButton", g.a),
 				h = a.a.wrapped(r.l, "PrimaryButton", g.a),
 				O = a.a.wrapped(r.o, "CancelButton", g.a),
-				H = a.a.wrapped(r.r, "RemoveButton", g.a),
-				N = e => {
+				N = a.a.wrapped(r.r, "RemoveButton", g.a),
+				H = e => {
 					let {
 						className: t,
 						...A
@@ -278,10 +278,10 @@
 				j = A("./src/reddit/controls/TextButton/index.tsx"),
 				h = A("./src/reddit/icons/fonts/index.tsx"),
 				O = A("./src/reddit/models/Toast/index.ts"),
-				H = A("./src/reddit/components/NewCommunityProgress/icons/index.tsx");
+				N = A("./src/reddit/components/NewCommunityProgress/icons/index.tsx");
 
-			function N() {
-				return (N = Object.assign || function(e) {
+			function H() {
+				return (H = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var A = arguments[t];
 						for (var n in A) Object.prototype.hasOwnProperty.call(A, n) && (e[n] = A[n])
@@ -354,8 +354,8 @@
 					var X, U;
 					const R = Object(o.d)(),
 						z = Object(f.a)(),
-						J = H.b[l],
-						K = J ? Object(h.b)(J) : null !== (X = H.a[l]) && void 0 !== X ? X : Object(h.b)("best"),
+						J = N.b[l],
+						K = J ? Object(h.b)(J) : null !== (X = N.a[l]) && void 0 !== X ? X : Object(h.b)("best"),
 						V = m ? p.h : p.g,
 						S = null !== (U = V[d]) && void 0 !== U ? U : V.downvote;
 
@@ -366,7 +366,7 @@
 					}
 					const Z = (null == Y ? void 0 : Y.done) / (null == Y ? void 0 : Y.total) * 100 || 0,
 						W = T(D, w);
-					return a.a.createElement("a", N({
+					return a.a.createElement("a", H({
 						className: Object(c.a)(r.a.ncpCard, {
 							[r.a.v2]: !i,
 							[r.a.isCompleted]: G === u.a.COMPLETED,
@@ -453,15 +453,15 @@
 								style: A
 							},
 							o = !!(null == t ? void 0 : t.startsWith(E.a.redditUrl));
-						return t ? o ? a.a.createElement(b.t, N({}, n, {
+						return t ? o ? a.a.createElement(b.t, H({}, n, {
 							key: e.buttonText,
 							kind: b.b.InternalLink,
 							to: t
-						}), e.buttonText) : a.a.createElement(b.t, N({}, n, {
+						}), e.buttonText) : a.a.createElement(b.t, H({}, n, {
 							key: e.buttonText,
 							kind: b.b.ExternalLink,
 							href: t
-						}), e.buttonText) : a.a.createElement(b.t, N({}, n, {
+						}), e.buttonText) : a.a.createElement(b.t, H({}, n, {
 							key: e.buttonText
 						}), e.buttonText)
 					}))))
@@ -630,8 +630,8 @@
 					j(Object(C.g)(s, Q ? "expanded_module" : "collapses_module"))
 				}, [Q]);
 				const [h] = Object(l.a)(d.d), O = Object(o.d)();
-				const [H] = Object(l.a)(d.e);
-				const [N, L] = Object(n.useState)(void 0), [T] = Object(l.a)(d.a);
+				const [N] = Object(l.a)(d.e);
+				const [H, L] = Object(n.useState)(void 0), [T] = Object(l.a)(d.a);
 				const y = Object(o.e)(v.a) === W;
 				async function k() {
 					y && L(void 0), O(Object(i.i)(W))
@@ -731,22 +731,22 @@
 					ref: R
 				}))), y && a.a.createElement(U, {
 					onCloseModal: k,
-					onCompleteCard: () => N && async function(e) {
+					onCompleteCard: () => H && async function(e) {
 						await T({
 							input: {
 								subredditId: A,
 								cardId: e
 							}
 						}), j(Object(C.d)(s, e)), O(Object(g.b)(A)), y && k()
-					}(N),
-					onDismissCard: () => N && async function(e) {
-						await H({
+					}(H),
+					onDismissCard: () => H && async function(e) {
+						await N({
 							input: {
 								subredditId: A,
 								cardId: e
 							}
 						}), j(Object(C.e)(s, e)), O(Object(g.b)(A)), y && k()
-					}(N),
+					}(H),
 					withOverlay: !0
 				}))
 			}
@@ -971,6 +971,20 @@
 				onClick: e.onClick
 			}, a.a.createElement("g", null, a.a.createElement("polygon", {
 				fill: "inherit",
+				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
+			})))
+		},
+		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, A) {
+			"use strict";
+			var n = A("./node_modules/react/index.js"),
+				a = A.n(n);
+			t.a = e => a.a.createElement("svg", {
+				className: e.className,
+				viewBox: "0 0 12 12",
+				xmlns: "http://www.w3.org/2000/svg"
+			}, a.a.createElement("g", null, a.a.createElement("polygon", {
+				fill: "inherit",
+				transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
 				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
 			})))
 		},
@@ -1336,4 +1350,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.bb2929c8b60597f2c419.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommunityProgress.ac71e51d5badd4b841b7.js.map

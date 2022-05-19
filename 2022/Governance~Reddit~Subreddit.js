@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.b050f009d636f7a3c116.js
-// Retrieved at 5/18/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.a0e804c63faf1d167233.js
+// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -395,8 +395,8 @@
 				C = n("./src/reddit/selectors/appBadges.ts"),
 				v = (n("./src/reddit/selectors/notificationPrefs.ts"), n("./src/reddit/selectors/notificationsInbox.tsx"));
 			const y = Object(o.a)(s.e),
-				D = Object(o.a)(s.b),
-				P = Object(o.a)(s.a),
+				P = Object(o.a)(s.b),
+				D = Object(o.a)(s.a),
 				w = e => async (t, n, r) => {
 					let {
 						gqlContext: o
@@ -409,7 +409,7 @@
 						...p,
 						variables: t
 					}))(o(), e);
-					if (null === (s = null === (i = l.error) || void 0 === i ? void 0 : i.fields) || void 0 === s ? void 0 : s.length) return t(P({
+					if (null === (s = null === (i = l.error) || void 0 === i ? void 0 : i.fields) || void 0 === s ? void 0 : s.length) return t(D({
 						error: l.error
 					})), void t(Object(a.d)());
 					const b = l && l.body,
@@ -418,7 +418,7 @@
 						const e = Object(v.f)(c);
 						t(k(f.nodes, e.length))
 					}
-					t(D(f))
+					t(P(f))
 				}, L = () => async (e, t, n) => {
 					let {
 						gqlContext: r
@@ -1273,11 +1273,11 @@
 					omitResponsivePresenceWrapper: C,
 					onPresenceIndicatorInViewport: v,
 					shouldShowPresenceIndicator: y,
-					user: D,
-					userName: P,
+					user: P,
+					userName: D,
 					isProfileAvatarChangeFixEnabled: w,
 					...L
-				} = e, R = !!s && Object(l.e)(s) === P, U = R ? s : D, k = U && U.accountIcon || c, A = D ? D.isNSFW : g, M = Object(d.b)(k) && !p, B = M ? i.a.createElement(f.a, {
+				} = e, R = !!s && Object(l.e)(s) === D, U = R ? s : P, k = U && U.accountIcon || c, A = P ? P.isNSFW : g, M = Object(d.b)(k) && !p, B = M ? i.a.createElement(f.a, {
 					headshot: k,
 					className: e.className
 				}) : i.a.createElement(m.b, S({}, L, {
@@ -1592,7 +1592,7 @@
 			})), n.d(t, "v", (function() {
 				return C
 			})), n.d(t, "A", (function() {
-				return P
+				return D
 			})), n.d(t, "s", (function() {
 				return w
 			})), n.d(t, "t", (function() {
@@ -1716,13 +1716,13 @@
 				e.POPULAR_CAROUSEL = "popular_carousel", e.SEARCH_DROPDOWN = "search_dropdown"
 			}(T || (T = {}));
 			const j = e => {
-					Object(p.a)(D({
+					Object(p.a)(P({
 						...e,
 						action: s.c.CLICK
 					}))
 				},
 				C = e => {
-					Object(p.a)(D({
+					Object(p.a)(P({
 						...e,
 						action: s.c.VIEW
 					}))
@@ -1735,7 +1735,7 @@
 					[c.a.Popular]: u.d.tile,
 					[c.a.Typeahead]: u.d.dropdown
 				},
-				D = e => {
+				P = e => {
 					let {
 						action: t,
 						offset: n = 0,
@@ -1772,7 +1772,7 @@
 						}
 					}
 				},
-				P = (e, t, n, r, o, i, c) => {
+				D = (e, t, n, r, o, i, c) => {
 					Object(p.a)({
 						...b.n(e),
 						...Object(a.l)({
@@ -2039,9 +2039,9 @@
 			})), n.d(t, "n", (function() {
 				return y
 			})), n.d(t, "j", (function() {
-				return D
-			})), n.d(t, "i", (function() {
 				return P
+			})), n.d(t, "i", (function() {
+				return D
 			})), n.d(t, "g", (function() {
 				return w
 			}));
@@ -2425,13 +2425,13 @@
 						pageType: i.MiniInbox
 					}
 				}),
-				D = () => e => ({
+				P = () => e => ({
 					...u.n(e),
 					action: d.c.CLICK,
 					noun: "messages",
 					source: s.Inbox
 				}),
-				P = e => {
+				D = e => {
 					let {
 						isMiniInbox: t
 					} = e;
@@ -2467,9 +2467,9 @@
 			})), n.d(t, "q", (function() {
 				return y
 			})), n.d(t, "r", (function() {
-				return D
-			})), n.d(t, "o", (function() {
 				return P
+			})), n.d(t, "o", (function() {
+				return D
 			})), n.d(t, "s", (function() {
 				return w
 			})), n.d(t, "c", (function() {
@@ -2614,7 +2614,7 @@
 								sort: c = i.Eb,
 								t: a = i.Fb
 							} = s;
-							Object(T.a)(D(o, c, n, r, a)(t));
+							Object(T.a)(P(o, c, n, r, a)(t));
 							break
 						}
 						case i.Nb.PROFILE_COMMENTS: {
@@ -2626,7 +2626,7 @@
 								sort: c = i.Eb,
 								t: a = i.Fb
 							} = s;
-							Object(T.a)(P(o, c, n, r, a)(t));
+							Object(T.a)(D(o, c, n, r, a)(t));
 							break
 						}
 						case i.Nb.PROFILE_PRIVATE: {
@@ -2776,7 +2776,7 @@
 						adblock: N.e(i)
 					}
 				},
-				D = (e, t, n, r, o) => i => {
+				P = (e, t, n, r, o) => i => {
 					const s = N.y(i, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
@@ -2798,7 +2798,7 @@
 						adblock: N.e(i)
 					}
 				},
-				P = (e, t, n, r, o) => i => {
+				D = (e, t, n, r, o) => i => {
 					const s = N.T(i, e);
 					s && (s.sort = t, o && (s.sortTime = o));
 					const {
@@ -3416,7 +3416,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: e
 				});
-				return !(!n || Object(r.Nf)(n))
+				return !(!n || Object(r.Pf)(n))
 			}
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
@@ -3441,7 +3441,7 @@
 					if (!l(e)) return;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: u,
-						experimentName: i.Hd,
+						experimentName: i.Jd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -3464,9 +3464,9 @@
 				},
 				m = e => !!b(e) && Object(s.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: i.Id,
+					experimentName: i.Kd,
 					expEventOverride: !1
-				}) !== i.Jd.Readonly
+				}) !== i.Ld.Readonly
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -3507,7 +3507,7 @@
 					return r ? r * o.Sb < 1639443600180 ? void 0 : I(e) : void 0
 				},
 				I = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.je,
+					experimentName: i.le,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3634,4 +3634,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.b050f009d636f7a3c116.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.a0e804c63faf1d167233.js.map

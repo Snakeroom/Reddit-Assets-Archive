@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.bec5c584834f210da1d8.js
-// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.00421374140ad4ae0739.js
+// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -111,7 +111,7 @@
 						forceDecimals: h,
 						currency: g = t.currency || (t.type ? p(t.type) : l.c),
 						type: b = t.type || (t.currency ? u(t.currency) : l.b.Real)
-					} = t, k = Number(e), w = String(e);
+					} = t, k = Number(e), f = String(e);
 					switch (b) {
 						case l.b.Reddit: {
 							const e = l.e[g],
@@ -123,9 +123,9 @@
 						}
 						case l.b.Crypto: {
 							if (s) {
-								return Object(i.d)(w, m) + " " + g
+								return Object(i.d)(f, m) + " " + g
 							}
-							const e = Number(Object(i.c)(w, m));
+							const e = Number(Object(i.c)(f, m));
 							return Object(o.c)() ? new Intl.NumberFormat(a, {
 								style: "currency",
 								currency: g,
@@ -137,7 +137,7 @@
 						}
 						case l.b.Real:
 						default: {
-							const e = Number(Object(r.a)(w, h));
+							const e = Number(Object(r.a)(f, h));
 							return Object(o.c)() ? new Intl.NumberFormat(a, {
 								style: "currency",
 								currency: g,
@@ -477,20 +477,6 @@
 				return t.dividedBy(a).toString()
 			}
 		},
-		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, t, a) {
-			"use strict";
-			var n = a("./node_modules/react/index.js"),
-				r = a.n(n);
-			t.a = e => r.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 12 12",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, r.a.createElement("g", null, r.a.createElement("polygon", {
-				fill: "inherit",
-				transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
-				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
-			})))
-		},
 		"./src/reddit/pages/Powerups/FaqSection.m.less": function(e, t, a) {
 			e.exports = {
 				faqSection: "_3jsS_1eJLc5H9_KZoN4bjn",
@@ -618,7 +604,7 @@
 					className: p.a.faqSection
 				}, l.a.createElement("div", {
 					className: Object(i.a)(p.a.faqSectionContent, p.a.contentWrapper)
-				}, l.a.createElement(k, null), l.a.createElement(w, null), l.a.createElement(f, null), l.a.createElement("h2", {
+				}, l.a.createElement(k, null), l.a.createElement(f, null), l.a.createElement(w, null), l.a.createElement("h2", {
 					className: p.a.faqHeading
 				}, h._("Questions about Powerups", null, {
 					hk: "nzxYw"
@@ -675,7 +661,7 @@
 					className: p.a.boltInCircleFaqYellow,
 					src: `${n.a.assetPath}/img/powerups/bolt.png`
 				})))
-			}, w = () => l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
+			}, f = () => l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
 				className: p.a.circleFaqCyanSmall
 			}), l.a.createElement("div", {
 				className: p.a.circleFaqDotted,
@@ -690,7 +676,7 @@
 				className: p.a.circleFaqOrange
 			}), l.a.createElement("div", {
 				className: p.a.circleFaqYellowHollow
-			})), f = () => l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
+			})), w = () => l.a.createElement(l.a.Fragment, null, l.a.createElement("div", {
 				className: Object(i.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkTopLeft)
 			}), l.a.createElement("div", {
 				className: Object(i.a)(p.a.faqQuestionMark, p.a.faqQuestionMarkTopRight)
@@ -704,7 +690,7 @@
 				} = e;
 				return l.a.createElement(l.a.Fragment, null, l.a.createElement(k, {
 					hideBolt: t
-				}), l.a.createElement(w, null), l.a.createElement(f, null))
+				}), l.a.createElement(f, null), l.a.createElement(w, null))
 			}, y = () => {
 				const e = Object(s.e)(d.cb);
 				return l.a.createElement("div", {
@@ -770,7 +756,7 @@
 			a.d(t, "b", (function() {
 				return k
 			})), a.d(t, "a", (function() {
-				return w
+				return f
 			}));
 			var n = a("./src/config.ts"),
 				r = a("./src/lib/classNames/index.ts"),
@@ -838,7 +824,7 @@
 					}) : b._("Level up the whole community", null, {
 						hk: "2kiP2p"
 					}),
-					f = l ? b._("Harness the power of your community to unlock special perks and advanced features.", null, {
+					w = l ? b._("Harness the power of your community to unlock special perks and advanced features.", null, {
 						hk: "1VpJiW"
 					}) : b._("Come together to unlock special perks and advanced features.", null, {
 						hk: "1WTTiK"
@@ -856,7 +842,7 @@
 					});
 				return s.a.createElement("div", {
 					className: g.a.headingSection
-				}, s.a.createElement(w, {
+				}, s.a.createElement(f, {
 					isNightmodeOn: a
 				}), s.a.createElement("div", {
 					className: Object(r.a)(g.a.contentWrapper, g.a.headingContent)
@@ -872,7 +858,7 @@
 					className: g.a.subheading
 				}, k), s.a.createElement("p", {
 					className: Object(r.a)(g.a.description, g.a.bodyText)
-				}, f), l && s.a.createElement("div", {
+				}, w), l && s.a.createElement("div", {
 					className: Object(r.a)(g.a.modWarning, g.a.bodyText)
 				}, s.a.createElement("div", {
 					className: g.a.modWarningTop
@@ -910,7 +896,7 @@
 					className: g.a.fallbackStaticImage,
 					src: `${n.a.assetPath}/img/powerups/powerups-rangers-static.png`
 				}))))))
-			}, w = e => {
+			}, f = e => {
 				let {
 					isNightmodeOn: t,
 					accentDiagonalCustomStyles: a
@@ -1073,10 +1059,10 @@
 				g = a("./src/reddit/controls/RadioInput/RadioOption/index.tsx"),
 				b = a("./src/reddit/selectors/telemetry.ts");
 			var k = a("./src/reddit/hooks/useTracking.ts"),
-				w = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/reddit/models/Subreddit/index.ts")),
-				f = a("./src/reddit/selectors/moderatorPermissions.ts");
+				f = (a("./node_modules/core-js/modules/web.dom.iterable.js"), a("./src/reddit/models/Subreddit/index.ts")),
+				w = a("./src/reddit/selectors/moderatorPermissions.ts");
 			const _ = e => {
-				const t = Object(f.l)(e);
+				const t = Object(w.l)(e);
 				return t ? Object.keys(t).reduce((t, a) => {
 					const n = e.subreddits.models[a];
 					if (!n) return t;
@@ -1088,7 +1074,7 @@
 						type: o,
 						url: c
 					} = n;
-					return !r && o === w.g.Public && !s && i >= j && t.push({
+					return !r && o === f.g.Public && !s && i >= j && t.push({
 						id: a,
 						subredditUrl: c,
 						displayText: l
@@ -1189,7 +1175,7 @@
 					}
 				}), t)
 			};
-			var x = e => {
+			var I = e => {
 				let {
 					children: t,
 					onClose: a
@@ -1219,7 +1205,7 @@
 				}, t))
 			};
 			const {
-				fbt: I
+				fbt: x
 			} = a("./node_modules/fbt/lib/FbtPublic.js"), j = 1e4;
 			var F = Object(m.a)(e => {
 					let {
@@ -1238,14 +1224,14 @@
 						}))())
 					}, [n]);
 					const m = Boolean(null == i ? void 0 : i.length),
-						d = m ? I._("Start a Tournament", null, {
+						d = m ? x._("Start a Tournament", null, {
 							hk: "329F3U"
-						}) : I._("Only moderators of communities that have at least {Minimum subscribers required to enable Prediction} members can turn on predictions.", [I._param("Minimum subscribers required to enable Prediction", l.a.createElement(p, {
+						}) : x._("Only moderators of communities that have at least {Minimum subscribers required to enable Prediction} members can turn on predictions.", [x._param("Minimum subscribers required to enable Prediction", l.a.createElement(p, {
 							num: j
 						}))], {
 							hk: "3VaFr8"
 						});
-					return l.a.createElement(x, {
+					return l.a.createElement(I, {
 						onClose: t
 					}, l.a.createElement("div", {
 						className: S.a.titleContainer
@@ -1253,12 +1239,12 @@
 						className: S.a.titleText
 					}, d), m && l.a.createElement("h2", {
 						className: S.a.subtitleText
-					}, I._("Choose the community where you’d like to turn on Predictions", null, {
+					}, x._("Choose the community where you’d like to turn on Predictions", null, {
 						hk: "1aaKTn"
 					}))), m && l.a.createElement("div", {
 						className: S.a.radioContainer
 					}, l.a.createElement(h.a, {
-						name: I._("subreddit", null, {
+						name: x._("subreddit", null, {
 							hk: "sueo0"
 						}),
 						value: o,
@@ -1279,7 +1265,7 @@
 						}, n)
 					}))), !m && l.a.createElement("h3", {
 						className: S.a.disclaimer
-					}, I._("Predictions creation is only available on Web and iOS at this time.", null, {
+					}, x._("Predictions creation is only available on Web and iOS at this time.", null, {
 						hk: "J1xBl"
 					})), l.a.createElement(N, {
 						isEligibleMod: m,
@@ -1723,4 +1709,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.bec5c584834f210da1d8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.00421374140ad4ae0739.js.map

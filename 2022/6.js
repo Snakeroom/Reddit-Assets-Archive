@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/6.7db94d9862849faeaab7.js
-// Retrieved at 5/18/2022, 10:40:05 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/6.ae001afcd125b5ee1e38.js
+// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[6], {
 		"./src/reddit/icons/svgs/AddCollection/index.tsx": function(e, s, t) {
@@ -297,20 +297,6 @@
 			}), a.a.createElement("polygon", {
 				fill: "inherit",
 				points: "7.47566213 3 14.4756621 10 7.47566213 17 6 15.5239203 11.5239203 10 6 4.47566213"
-			})))
-		},
-		"./src/reddit/icons/svgs/ChevronUp/index.tsx": function(e, s, t) {
-			"use strict";
-			var n = t("./node_modules/react/index.js"),
-				a = t.n(n);
-			s.a = e => a.a.createElement("svg", {
-				className: e.className,
-				viewBox: "0 0 12 12",
-				xmlns: "http://www.w3.org/2000/svg"
-			}, a.a.createElement("g", null, a.a.createElement("polygon", {
-				fill: "inherit",
-				transform: "translate(6.029200, 6.044700) scale(1, -1) translate(-6.029200, -6.044700)",
-				points: "11.0584 4.0602 6.0292 9.0894 1 4.0602 2.0608 3 6.0292 6.9684 9.9982 3"
 			})))
 		},
 		"./src/reddit/icons/svgs/Circle/index.m.less": function(e, s, t) {
@@ -4163,4 +4149,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/6.7db94d9862849faeaab7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/6.ae001afcd125b5ee1e38.js.map
