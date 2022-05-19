@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePosts.79137e6e1b47ae04b061.js
-// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePosts.cce0c9242bf1ab6014fd.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePosts"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, r) {
@@ -2815,7 +2815,7 @@
 					isCommentsPage: p.x,
 					isFrontpage: p.A,
 					isProfilePostListing: p.L,
-					isTopicPage: p.Q,
+					isTopicPage: p.R,
 					pageLayer: e => e
 				})
 			}
@@ -2824,7 +2824,7 @@
 					apiError: v.c,
 					apiPending: v.d,
 					measureScrollFPS: g.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.R)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.S)(e, t),
 					loadMore: v.g,
 					postsById: y.S,
 					postIds: Object(i.a)((e, t) => {
@@ -2837,7 +2837,7 @@
 					}),
 					subredditsById: O.bb,
 					viewportDataLoaded: j.a,
-					pageReferrer: p.U,
+					pageReferrer: p.V,
 					postListPlaceholderComponent: () => f.a,
 					isNpsScrollSurveyEnabled: x.e
 				},
@@ -3288,7 +3288,7 @@
 						location: r
 					} = t;
 					return n()([...Object(l.a)(r.search)])
-				}, w.R, (e, t) => {
+				}, w.S, (e, t) => {
 					let {
 						match: r
 					} = t;
@@ -3662,4 +3662,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.79137e6e1b47ae04b061.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePosts.cce0c9242bf1ab6014fd.js.map

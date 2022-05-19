@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.6029b39d0bdccaf3f02e.js
-// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.a9b20126d2952b799a33.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~ModListing~Reddit~ReportFlow~Subreddit"], {
 		"./src/lib/assertNever.ts": function(e, t, r) {
@@ -3502,7 +3502,7 @@
 						...r,
 						recentPostIds: ue.posts.recent
 					} : r;
-				Ue.layout = be.e[Object(pe.R)(ue, {})], Le && (Ue.forceGeopopular = !0), o(ot({
+				Ue.layout = be.e[Object(pe.S)(ue, {})], Le && (Ue.forceGeopopular = !0), o(ot({
 					key: e
 				}));
 				const Me = !Re && Object(te.l)(ue) && Object(Be.b)(ue);
@@ -5105,7 +5105,7 @@
 							after: T.token,
 							dist: T.dist,
 							forceGeopopular: l === I.d.Popular,
-							layout: y.e[Object(S.R)(f, {})],
+							layout: y.e[Object(S.S)(f, {})],
 							sort: w,
 							t: p,
 							...i()(O, [...h.n, h.j])
@@ -13819,7 +13819,7 @@
 				let {
 					pageLayer: r
 				} = t;
-				return Object(n.N)(r) && !!Object(s.n)(e) && !Object(s.D)(e) && Object(s.P)(e) && !Object(s.N)(e)
+				return Object(n.O)(r) && !!Object(s.n)(e) && !Object(s.D)(e) && Object(s.P)(e) && !Object(s.N)(e)
 			}
 		},
 		"./src/reddit/selectors/experiments/autosubscribeLinks.ts": function(e, t, r) {
@@ -14240,7 +14240,7 @@
 					let {
 						pageLayer: r
 					} = t;
-					return Object(i.N)(r)
+					return Object(i.O)(r)
 				}, (e, t, r) => !e && !t && r),
 				a = Object(n.a)((e, t) => Object(o.c)(e, {
 					experimentName: s.Ic,
@@ -15364,4 +15364,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.6029b39d0bdccaf3f02e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~ModListing~Reddit~ReportFlow~Subreddit.a9b20126d2952b799a33.js.map

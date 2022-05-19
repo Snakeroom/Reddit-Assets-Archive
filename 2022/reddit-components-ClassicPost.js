@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6584eb83e3467e3a091a.js
-// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.9bfc961ede022f27435b.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -3144,14 +3144,14 @@
 					isLoggedIn: v.P,
 					showPromotedCTA: b.a,
 					moderatorPermissions: m.m,
-					modModeEnabled: d.T,
+					modModeEnabled: d.U,
 					poll: (e, t) => {
 						const n = e.posts.metaMap[t.postId];
 						return n ? e.polls.models[n] : null
 					},
 					showEditFlair: f.a,
 					showMedia: d.s,
-					flairStyleTemplate: d.V
+					flairStyleTemplate: d.W
 				},
 				y = Object(r.b)(() => Object(o.c)(g), (e, t) => {
 					let {
@@ -5543,4 +5543,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.6584eb83e3467e3a091a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.9bfc961ede022f27435b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7f1324b3492f367be116.js
-// Retrieved at 5/19/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c90ee74d71aa1f1f7582.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -796,7 +796,7 @@
 						profileName: p
 					} = c;
 					let h = !1;
-					const b = f.e[Object(x.R)(r(), {})],
+					const b = f.e[Object(x.S)(r(), {})],
 						g = p.toLowerCase(),
 						w = {
 							...s()(e.queryParams, v.n),
@@ -6399,7 +6399,7 @@
 					g = Object(o.e)(v.e),
 					y = Object(o.e)(v.c),
 					C = Object(o.e)(v.d),
-					w = Object(p.eb)(),
+					w = Object(p.fb)(),
 					I = Object(o.e)(e => Object(p.E)(e, {
 						pageLayer: w
 					})),
@@ -6776,4 +6776,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.7f1324b3492f367be116.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c90ee74d71aa1f1f7582.js.map

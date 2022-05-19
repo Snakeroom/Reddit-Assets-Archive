@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditWiki.c6bb2901c8fd599f3290.js
-// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditWiki.140d0f1a8500c29b2732.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditWiki"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -4344,11 +4344,11 @@
 				autoplayPref: b.b,
 				crosspostRoot: p.d,
 				crosspostSubredditOrProfile: p.e,
-				flairStyleTemplate: c.V,
+				flairStyleTemplate: c.W,
 				hideNSFWPref: b.F,
 				isActive: p.j,
 				moderatorPermissions: u.m,
-				modModeEnabled: c.T,
+				modModeEnabled: c.U,
 				showEditFlair: m.a
 			}), (e, t) => {
 				let {
@@ -4820,7 +4820,7 @@
 						} = t;
 						return Object(D.f)(e, s.params.subredditName)
 					},
-					layout: O.R,
+					layout: O.S,
 					over18Pref: D.jb,
 					subreddit: (e, t) => {
 						let {
@@ -5245,4 +5245,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.c6bb2901c8fd599f3290.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditWiki.140d0f1a8500c29b2732.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.9c413934a4c928798036.js
-// Retrieved at 5/19/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.99627b271c93059bfcfd.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -3560,7 +3560,7 @@
 					} = t;
 					const s = !!e.user.account,
 						r = Object(bs.a)(e),
-						o = Object(It.Y)(n);
+						o = Object(It.Z)(n);
 					switch (o) {
 						case "avatar":
 							return {
@@ -3665,7 +3665,7 @@
 								type: Jn.Settings, model: a
 							}
 					}
-					const i = Object(It.S)(e, {
+					const i = Object(It.T)(e, {
 						pageLayer: n
 					});
 					if ("all" === i) return {
@@ -6343,8 +6343,8 @@
 				} = e;
 				var n;
 				const s = Object(Fo.a)(),
-					r = Object(It.Z)(s),
-					o = Object(It.W)(s),
+					r = Object(It.ab)(s),
+					o = Object(It.X)(s),
 					{
 						nsfwSessionSetting: a,
 						refreshNsfwSessionSettingExpiryTime: i
@@ -6368,7 +6368,7 @@
 					L = Object(p.e)(qo.r),
 					D = Object(p.e)(at.cb),
 					F = Object(p.e)(xt.r),
-					U = Object(p.e)(e => Object(It.ab)(e, {
+					U = Object(p.e)(e => Object(It.bb)(e, {
 						pageLayer: s
 					})),
 					B = Object(p.e)(e => Object(It.r)(e, {
@@ -7352,7 +7352,7 @@
 					var s;
 					const o = Object(p.d)(),
 						a = Object(Da.a)(),
-						i = Object(It.eb)(),
+						i = Object(It.fb)(),
 						c = Object(p.e)(e => e.user.account),
 						l = Object(p.e)(ss.c),
 						d = Object(p.e)(Di.b),
@@ -9640,7 +9640,7 @@
 					isFPR: at.N,
 					posts: lp.J,
 					profileCollectionsEnabled: jm.a,
-					showEmailCollectionBanner: e => !Object(It.M)(e.platform.currentPage) && gp(e),
+					showEmailCollectionBanner: e => !Object(It.N)(e.platform.currentPage) && gp(e),
 					signUpModalIsOpen: Object(hi.c)(Fe.a.REGISTER_MODAL_ID),
 					suspensionDaysLeft: at.wb
 				}), e => ({
@@ -9815,8 +9815,8 @@
 			}
 			Op.contextType = x.a;
 			const Cp = Object(A.c)(e => {
-					const t = Object(It.eb)(),
-						n = Object(Xm.db)(t),
+					const t = Object(It.fb)(),
+						n = Object(Xm.eb)(t),
 						s = Object(u.useContext)(g.a),
 						{
 							browserInfo: r,
@@ -14610,7 +14610,7 @@
 				l = n("./src/reddit/selectors/user.ts");
 
 			function d(e) {
-				return Object(i.R)(e, {}) === o.g.Large && !Object(l.O)(e) && !Object(c.d)(e)
+				return Object(i.S)(e, {}) === o.g.Large && !Object(l.O)(e) && !Object(c.d)(e)
 			}
 
 			function u(e) {
@@ -17501,7 +17501,7 @@
 			const b = Object(l.u)(),
 				h = Object(a.c)({
 					isEditing: d.i,
-					layout: (e, t) => t.forcedLayout || Object(l.R)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(l.S)(e, t)
 				}),
 				g = Object(o.b)(h);
 			t.a = b(g(e => {
@@ -17520,7 +17520,7 @@
 				} = e;
 				return r.a.createElement("div", p({
 					className: Object(i.a)(t, m.a.styledContent, {
-						[m.a.mLargePostLayout]: h === c.g.Large || Object(l.O)(g),
+						[m.a.mLargePostLayout]: h === c.g.Large || Object(l.P)(g),
 						[m.a.mDisableFullScreen]: s && !u,
 						[m.a.mClassicWidth]: u,
 						[m.a.mIsEditing]: !!b,
@@ -20285,4 +20285,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "vendors~Reddit", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.9c413934a4c928798036.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.99627b271c93059bfcfd.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CryptoPurchaseEth.b59aa1f8cea38284644e.js
-// Retrieved at 5/10/2022, 2:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CryptoPurchaseEth.9ca9400f5f7ad998c78c.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CryptoPurchaseEth"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -94,7 +94,7 @@
 				u = n("./src/reddit/components/Governance/TransferPointsModal/MoonPay/index.tsx");
 			t.default = Object(o.a)((function() {
 				const e = Object(r.d)(),
-					t = Object(l.eb)(),
+					t = Object(l.fb)(),
 					n = null == t ? void 0 : t.urlParams.subredditName,
 					a = Object(r.e)(e => Object(d.z)(e, {
 						subredditName: n || ""
@@ -717,4 +717,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoPurchaseEth.b59aa1f8cea38284644e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CryptoPurchaseEth.9ca9400f5f7ad998c78c.js.map

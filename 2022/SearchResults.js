@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.6845b5775564bf5bc351.js
-// Retrieved at 5/19/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.5ce9cefb0704b4a0c70c.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -1492,7 +1492,7 @@
 						}) : null
 					},
 					prediction: ft.f,
-					modModeEnabled: st.T,
+					modModeEnabled: st.U,
 					errorMsgs: F.H,
 					replyFormOpen: F.K,
 					subreddit: st.r,
@@ -4687,10 +4687,10 @@
 					isActive: S.j,
 					isLoggedIn: I.P,
 					moderatorPermissions: _.m,
-					modModeEnabled: j.T,
+					modModeEnabled: j.U,
 					poll: k.e,
 					showEditFlair: w.a,
-					flairStyleTemplate: j.V
+					flairStyleTemplate: j.W
 				},
 				N = () => Object(E.c)(T);
 			var P = s("./src/reddit/contexts/Post/index.tsx"),
@@ -4827,7 +4827,7 @@
 					return r.a.createElement(x.b, null, oe)
 				}),
 				W = Object(P.b)((e => t => {
-					const s = Object(j.eb)(),
+					const s = Object(j.fb)(),
 						n = ((e, t) => {
 							let {
 								postId: s
@@ -4838,7 +4838,7 @@
 						})(Object(v.d)(), {
 							...t
 						}),
-						o = Object(j.Z)(s),
+						o = Object(j.ab)(s),
 						i = Object(v.e)(N),
 						a = {
 							...t,
@@ -5255,7 +5255,7 @@
 						listingKey: r,
 						searchOptions: c,
 						sidebar: d
-					} = e, l = Object(C.eb)(), m = Object(B.a)(), u = Object(D.a)(), {
+					} = e, l = Object(C.fb)(), m = Object(B.a)(), u = Object(D.a)(), {
 						isBlockingInterstitialEnabled: p,
 						isBlockingInterstitialV2Enabled: b,
 						hideNSFWPref: h,
@@ -5406,7 +5406,7 @@
 								listingKey: s,
 								searchOptions: n
 							} = e;
-							const r = Object(C.eb)(),
+							const r = Object(C.fb)(),
 								o = Object(B.a)(),
 								c = Object(a.d)(),
 								d = Object(a.e)(e => Object(H.b)(e, {
@@ -5541,7 +5541,7 @@
 				const c = new m.a(250),
 					x = Object(o.useRef)(),
 					f = Object(o.useRef)(null),
-					v = Object(C.eb)(),
+					v = Object(C.fb)(),
 					E = Object(b.b)(),
 					y = Object(a.d)(),
 					{
@@ -5773,7 +5773,7 @@
 			} = s("./node_modules/fbt/lib/FbtPublic.js"), $ = `${p.a.assetPath}/img/link-placeholder.png`, ee = Object(B.c)({
 				autoplayPref: D.b,
 				showPromotedCTA: F.a,
-				flairStyleTemplate: k.V
+				flairStyleTemplate: k.W
 			});
 
 			function te(e) {
@@ -5789,7 +5789,7 @@
 					showPromotedCTA: D
 				} = Object(i.e)(t => ee(t, e)), B = Object(i.e)(e => Object(M.d)(e, {
 					postId: s
-				})), J = Object(i.e)(Z.b), te = Object(i.e)(Z.c), se = Object(k.eb)(), ne = Object(j.b)(), re = Object(i.d)(), oe = Object(z.a)(), {
+				})), J = Object(i.e)(Z.b), te = Object(i.e)(Z.c), se = Object(k.fb)(), ne = Object(j.b)(), re = Object(i.d)(), oe = Object(z.a)(), {
 					post: ie,
 					subredditOrProfile: ae
 				} = Object(w.d)(s), ce = Object(r.useCallback)((e, t) => {
@@ -6617,7 +6617,7 @@
 				const i = Object(h.a)(),
 					v = Object(c.e)(g.jb),
 					E = Object(c.e)(f.w),
-					y = Object(u.eb)(),
+					y = Object(u.fb)(),
 					j = E === x.c.Trending,
 					_ = {
 						condition: !0,
@@ -7279,7 +7279,7 @@
 				pe = e => {
 					const {
 						subreddit: t
-					} = Object(o.e)(t => ue(t, e)), s = Object(c.eb)(), n = Object(c.W)(s), i = Object(c.db)(s), l = t && !!e.searchOptions.restrict_sr && !e.shouldHideGlobalSearchLink;
+					} = Object(o.e)(t => ue(t, e)), s = Object(c.fb)(), n = Object(c.X)(s), i = Object(c.eb)(s), l = t && !!e.searchOptions.restrict_sr && !e.shouldHideGlobalSearchLink;
 					return r.a.createElement(d.a, {
 						className: Object(a.a)(me.a.ComponentRedesign),
 						"data-testid": "search-results-subnav"
@@ -8229,8 +8229,8 @@
 			}
 			const _ = 129,
 				k = Object(C.u)({
-					filterName: e => Object(C.W)(e)[b.h],
-					url: e => Object(C.db)(e)
+					filterName: e => Object(C.X)(e)[b.h],
+					url: e => Object(C.eb)(e)
 				}),
 				w = Object(a.c)({
 					subredditId: (e, t) => Object(v.F)(e, t.subredditName)
@@ -8539,7 +8539,7 @@
 					isCommentsPage: p.x,
 					isFrontpage: p.A,
 					isProfilePostListing: p.L,
-					isTopicPage: p.Q,
+					isTopicPage: p.R,
 					pageLayer: e => e
 				})
 			}
@@ -8548,7 +8548,7 @@
 					apiError: g.c,
 					apiPending: g.d,
 					measureScrollFPS: x.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.R)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.S)(e, t),
 					loadMore: g.g,
 					postsById: O.S,
 					postIds: Object(o.a)((e, t) => {
@@ -8561,7 +8561,7 @@
 					}),
 					subredditsById: v.bb,
 					viewportDataLoaded: E.a,
-					pageReferrer: p.U,
+					pageReferrer: p.V,
 					postListPlaceholderComponent: () => h.a,
 					isNpsScrollSurveyEnabled: f.e
 				},
@@ -10034,7 +10034,7 @@
 					match: s
 				} = e;
 				const n = Object(c.d)(),
-					r = Object(w.eb)(),
+					r = Object(w.fb)(),
 					u = Object(y.b)(),
 					V = Object(F.a)(),
 					G = Object(i.useRef)(!1),
@@ -10051,8 +10051,8 @@
 					{
 						searchQueryId: ee
 					} = Object(c.e)(e => Object(H.a)(e)),
-					te = Object(w.W)(r),
-					se = Object(w.bb)(r),
+					te = Object(w.X)(r),
+					se = Object(w.cb)(r),
 					[ne, re] = Object(i.useState)(!1),
 					oe = Object(l.a)(te) || null;
 				Object(M.c)(), Object(i.useEffect)((function() {
@@ -10095,7 +10095,7 @@
 						searchOptions: de
 					};
 				let he;
-				Object(w.P)(r) || Object(w.C)(r) ? he = a.a.createElement(E.a, Y({}, Ce, {
+				Object(w.Q)(r) || Object(w.C)(r) ? he = a.a.createElement(E.a, Y({}, Ce, {
 					url: Object(R.a)(te)
 				})) : X && $ && (he = a.a.createElement(E.a, Y({}, Ce, {
 					subreddit: X,
@@ -10446,4 +10446,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.6845b5775564bf5bc351.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.5ce9cefb0704b4a0c70c.js.map

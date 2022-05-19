@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.21e1f98b3f63120476d5.js
-// Retrieved at 5/19/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.f5edc0e6373374854a06.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -4515,7 +4515,7 @@
 			const h = Object(d.u)(),
 				b = Object(i.c)({
 					isEditing: l.i,
-					layout: (e, t) => t.forcedLayout || Object(d.R)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(d.S)(e, t)
 				}),
 				f = Object(o.b)(b);
 			t.a = h(f(e => {
@@ -4534,7 +4534,7 @@
 				} = e;
 				return s.a.createElement("div", p({
 					className: Object(a.a)(t, m.a.styledContent, {
-						[m.a.mLargePostLayout]: b === c.g.Large || Object(d.O)(f),
+						[m.a.mLargePostLayout]: b === c.g.Large || Object(d.P)(f),
 						[m.a.mDisableFullScreen]: r && !u,
 						[m.a.mClassicWidth]: u,
 						[m.a.mIsEditing]: !!h,
@@ -7356,4 +7356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.21e1f98b3f63120476d5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.f5edc0e6373374854a06.js.map

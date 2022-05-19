@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.20f3e03e5705cc5b3588.js
-// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.7b225da279a513dea6e1.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -1433,7 +1433,7 @@
 				N = Object(b.u)(),
 				I = Object(a.c)({
 					dropdownIsOpen: Object(w.b)(S),
-					postLayout: b.R,
+					postLayout: b.S,
 					redditStyle: b.D
 				}),
 				L = Object(o.b)(I, e => ({
@@ -5156,7 +5156,7 @@
 					isCommentsPage: p.x,
 					isFrontpage: p.A,
 					isProfilePostListing: p.L,
-					isTopicPage: p.Q,
+					isTopicPage: p.R,
 					pageLayer: e => e
 				})
 			}
@@ -5165,7 +5165,7 @@
 					apiError: y.c,
 					apiPending: y.d,
 					measureScrollFPS: g.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.R)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.S)(e, t),
 					loadMore: y.g,
 					postsById: _.S,
 					postIds: Object(i.a)((e, t) => {
@@ -5178,7 +5178,7 @@
 					}),
 					subredditsById: w.bb,
 					viewportDataLoaded: E.a,
-					pageReferrer: p.U,
+					pageReferrer: p.V,
 					postListPlaceholderComponent: () => f.a,
 					isNpsScrollSurveyEnabled: x.e
 				},
@@ -6023,7 +6023,7 @@
 				fbt: Se
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), Ce = Object(d.c)({
 				isLoggedIn: U.P,
-				layout: (e, t) => B.e[Object(M.R)(e, t)],
+				layout: (e, t) => B.e[Object(M.S)(e, t)],
 				userIsOwner: (e, t) => Object(W.c)(e, t.multireddit.url)
 			}), je = Object(c.b)(Ce), Te = Object(M.u)(), Ne = {};
 			var Ie = Te(je(e => a.a.createElement("div", {
@@ -6434,4 +6434,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.20f3e03e5705cc5b3588.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.7b225da279a513dea6e1.js.map

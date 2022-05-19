@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPage.a9465ab9faf9e03d3e94.js
-// Retrieved at 5/19/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPage.9a98340bb2a8a88a9dd7.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2443,7 +2443,7 @@
 						}) : null
 					},
 					prediction: ft.f,
-					modModeEnabled: st.T,
+					modModeEnabled: st.U,
 					errorMsgs: F.H,
 					replyFormOpen: F.K,
 					subreddit: st.r,
@@ -6688,7 +6688,7 @@
 				pageLayer: e => e
 			}), Tt = Object(a.b)(() => Object(l.c)({
 				activeModalId: B.a,
-				flairStyleTemplate: Le.V,
+				flairStyleTemplate: Le.W,
 				currentUser: q.k,
 				crosspost: K.d,
 				hideNSFWPref: q.F,
@@ -6709,7 +6709,7 @@
 				showPromotedCTA: G.a,
 				post: K.G,
 				moderatorPermissions: U.m,
-				modModeEnabled: Le.T,
+				modModeEnabled: Le.U,
 				shouldTryToShowCrosspostModal: xt.e,
 				showAwardsPlaque: D.a,
 				showEditFlair: Fe.a,
@@ -8731,7 +8731,7 @@
 					isCommentsPage: u.x,
 					isFrontpage: u.A,
 					isProfilePostListing: u.L,
-					isTopicPage: u.Q,
+					isTopicPage: u.R,
 					pageLayer: e => e
 				})
 			}
@@ -8740,7 +8740,7 @@
 					apiError: C.c,
 					apiPending: C.d,
 					measureScrollFPS: g.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(u.R)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(u.S)(e, t),
 					loadMore: C.g,
 					postsById: v.S,
 					postIds: Object(r.a)((e, t) => {
@@ -8753,7 +8753,7 @@
 					}),
 					subredditsById: O.bb,
 					viewportDataLoaded: E.a,
-					pageReferrer: u.U,
+					pageReferrer: u.V,
 					postListPlaceholderComponent: () => x.a,
 					isNpsScrollSurveyEnabled: f.e
 				},
@@ -11242,4 +11242,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.a9465ab9faf9e03d3e94.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPage.9a98340bb2a8a88a9dd7.js.map

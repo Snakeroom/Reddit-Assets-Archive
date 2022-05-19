@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.ce8c6324cda6a8a58954.js
-// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.d03c34e750c1f69d13df.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -670,7 +670,7 @@
 					if (p.listings.postOrder.api.pending[e]) return;
 					d(M({
 						key: e
-					})), s.layout = h.e[Object(f.R)(p, {})];
+					})), s.layout = h.e[Object(f.S)(p, {})];
 					const x = {
 							path: Object(O.h)(t, i).replace(/\/$/, ""),
 							includeIdentity: !0,
@@ -2570,4 +2570,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.ce8c6324cda6a8a58954.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.d03c34e750c1f69d13df.js.map

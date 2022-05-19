@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.11279c0efd117a00eea7.js
-// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.63d81cb160ac07dda379.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -480,7 +480,7 @@
 				j = Object(b.u)(),
 				L = Object(a.c)({
 					dropdownIsOpen: Object(y.b)(C),
-					postLayout: b.R,
+					postLayout: b.S,
 					redditStyle: b.D
 				}),
 				I = Object(o.b)(L, e => ({
@@ -1626,7 +1626,7 @@
 					isCommentsPage: p.x,
 					isFrontpage: p.A,
 					isProfilePostListing: p.L,
-					isTopicPage: p.Q,
+					isTopicPage: p.R,
 					pageLayer: e => e
 				})
 			}
@@ -1635,7 +1635,7 @@
 					apiError: x.c,
 					apiPending: x.d,
 					measureScrollFPS: f.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(p.R)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(p.S)(e, t),
 					loadMore: x.g,
 					postsById: v.S,
 					postIds: Object(i.a)((e, t) => {
@@ -1648,7 +1648,7 @@
 					}),
 					subredditsById: y.bb,
 					viewportDataLoaded: E.a,
-					pageReferrer: p.U,
+					pageReferrer: p.V,
 					postListPlaceholderComponent: () => g.a,
 					isNpsScrollSurveyEnabled: _.e
 				},
@@ -2397,7 +2397,7 @@
 				topicSlug: t.match.params.topicSlug
 			}), (e, t) => Object(we.b)(e, {
 				topicSlug: t.match.params.topicSlug
-			}), O.R, je, e => {
+			}), O.S, je, e => {
 				var t;
 				return null === (t = e.platform.currentPage) || void 0 === t ? void 0 : t.status
 			}, (e, t, s, r, n, i, o, a) => ({
@@ -2711,4 +2711,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.11279c0efd117a00eea7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.63d81cb160ac07dda379.js.map

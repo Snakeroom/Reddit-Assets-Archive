@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.cc3d48858583229c9674.js
-// Retrieved at 5/10/2022, 12:20:07 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.645810b45d55b8933cea.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CommentsPageNativeAd"], {
 		"./src/reddit/components/CommentsPageNativeAd/index.m.less": function(e, t, s) {
@@ -149,7 +149,7 @@
 					usePreview: u
 				})
 			};
-			var V = e => {
+			var F = e => {
 					const {
 						isVideo: t,
 						className: s,
@@ -168,7 +168,7 @@
 						onClick: () => o(!0)
 					}))
 				},
-				F = s("./src/reddit/connectors/ClassicPost/index.tsx"),
+				V = s("./src/reddit/connectors/ClassicPost/index.tsx"),
 				D = s("./src/reddit/helpers/path/index.ts"),
 				Z = s("./src/reddit/selectors/profile.ts");
 			const z = Object(n.b)(() => Object(d.c)({
@@ -250,7 +250,7 @@
 						className: Object(l.a)(L.a.contentRow, {
 							[L.a.contentRowExpanded]: this.state.mediaExpanded
 						})
-					}, !(n && !_) && r.a.createElement(V, {
+					}, !(n && !_) && r.a.createElement(F, {
 						isMeta: p.isMeta,
 						post: p,
 						redditStyle: h,
@@ -297,7 +297,7 @@
 				}
 			}
 			const G = Object(m.a)(B);
-			t.default = Object(F.a)(z(G))
+			t.default = Object(V.a)(z(G))
 		},
 		"./src/reddit/connectors/ClassicPost/index.tsx": function(e, t, s) {
 			"use strict";
@@ -327,14 +327,14 @@
 					isLoggedIn: E.P,
 					showPromotedCTA: b.a,
 					moderatorPermissions: u.m,
-					modModeEnabled: c.T,
+					modModeEnabled: c.U,
 					poll: (e, t) => {
 						const s = e.posts.metaMap[t.postId];
 						return s ? e.polls.models[s] : null
 					},
 					showEditFlair: x.a,
 					showMedia: c.s,
-					flairStyleTemplate: c.V
+					flairStyleTemplate: c.W
 				},
 				C = Object(a.b)(() => Object(o.c)(v), (e, t) => {
 					let {
@@ -385,4 +385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.cc3d48858583229c9674.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CommentsPageNativeAd.645810b45d55b8933cea.js.map

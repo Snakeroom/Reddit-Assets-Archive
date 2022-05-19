@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.950553d5055bec9342d7.js
-// Retrieved at 5/19/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.0602fc0627716df39c85.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -10751,7 +10751,7 @@
 				}
 			}
 			t.c = s.a.memo((function(e) {
-				const t = Object(m.eb)(),
+				const t = Object(m.fb)(),
 					n = Object(m.w)(t),
 					o = Object(z.a)(),
 					r = Object(a.e)(r => Z(r, {
@@ -18624,7 +18624,7 @@
 		"./src/reddit/hooks/usePageLayer.ts": function(e, t, n) {
 			"use strict";
 			var o = n("./src/reddit/contexts/PageLayer/index.tsx");
-			t.a = o.eb
+			t.a = o.fb
 		},
 		"./src/reddit/hooks/usePostContext.ts": function(e, t, n) {
 			"use strict";
@@ -19766,7 +19766,7 @@
 			const h = Object(d.u)(),
 				b = Object(a.c)({
 					isEditing: l.i,
-					layout: (e, t) => t.forcedLayout || Object(d.R)(e, t)
+					layout: (e, t) => t.forcedLayout || Object(d.S)(e, t)
 				}),
 				f = Object(s.b)(b);
 			t.a = h(f(e => {
@@ -19785,7 +19785,7 @@
 				} = e;
 				return r.a.createElement("div", p({
 					className: Object(i.a)(t, m.a.styledContent, {
-						[m.a.mLargePostLayout]: b === c.g.Large || Object(d.O)(f),
+						[m.a.mLargePostLayout]: b === c.g.Large || Object(d.P)(f),
 						[m.a.mDisableFullScreen]: o && !u,
 						[m.a.mClassicWidth]: u,
 						[m.a.mIsEditing]: !!h,
@@ -24374,7 +24374,7 @@
 				fbt: Gd
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), zd = () => {
 				const e = Object(a.d)(),
-					t = Object(W.eb)(),
+					t = Object(W.fb)(),
 					n = Object(a.e)(e => Object(W.r)(e, {
 						pageLayer: t
 					})),
@@ -25492,7 +25492,7 @@
 					draftId: W.v,
 					isPostCreationPage: W.G,
 					pageLayer: e => e,
-					sourcePostId: e => Object(W.X)(e).source_id
+					sourcePostId: e => Object(W.Y)(e).source_id
 				}),
 				Du = Object(i.c)({
 					submissionType: L.a,
@@ -25502,7 +25502,7 @@
 						let {
 							pageLayer: n
 						} = t;
-						const o = Object(W.U)(e, {
+						const o = Object(W.V)(e, {
 							pageLayer: n
 						});
 						return !!o && "/" === o[0]
@@ -25859,7 +25859,7 @@
 							isPredictionCreationAllowed: n,
 							isApprovedUser: o
 						} = function() {
-							const [e, t] = s.a.useState(!1), [n, o] = s.a.useState(!1), r = Object(a.d)(), i = Object(W.eb)(), c = Object(a.e)(e => Object(W.r)(e, {
+							const [e, t] = s.a.useState(!1), [n, o] = s.a.useState(!1), r = Object(a.d)(), i = Object(W.fb)(), c = Object(a.e)(e => Object(W.r)(e, {
 								pageLayer: i
 							})), d = Object(a.e)(e => c && Object(We.h)(e, {
 								subredditId: c.id
@@ -28582,7 +28582,7 @@
 			};
 
 			function d() {
-				const e = Object(r.eb)(),
+				const e = Object(r.fb)(),
 					t = Object(o.e)(t => Object(r.r)(t, {
 						pageLayer: e
 					})),
@@ -29385,4 +29385,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.950553d5055bec9342d7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.0602fc0627716df39c85.js.map

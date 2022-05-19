@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.e32a799a43918e11fd5d.js
-// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.5e64ed24cc69ff309be3.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -479,7 +479,7 @@
 					}
 					const F = {
 						...n()(e.queryParams, [...g.n, ...g.m, g.j]),
-						layout: Object(O.R)(T, {}).toLowerCase(),
+						layout: Object(O.S)(T, {}).toLowerCase(),
 						sort: y,
 						t: Object(w.a)(y, P)
 					};
@@ -550,7 +550,7 @@
 							sort: b,
 							t: m,
 							...n()(c, g.n),
-							layout: Object(O.R)(a, {}).toLowerCase()
+							layout: Object(O.S)(a, {}).toLowerCase()
 						},
 						_ = await E(r(), p, P),
 						j = _.body,
@@ -2249,4 +2249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.e32a799a43918e11fd5d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.5e64ed24cc69ff309be3.js.map

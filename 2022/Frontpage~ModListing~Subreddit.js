@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.ad68fe4b789262df0220.js
-// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.88b65195413e40a3f3aa.js
+// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -478,7 +478,7 @@
 				I = Object(f.u)(),
 				P = Object(i.c)({
 					dropdownIsOpen: Object(y.b)(v),
-					postLayout: f.R,
+					postLayout: f.S,
 					redditStyle: f.D
 				}),
 				L = Object(a.b)(P, e => ({
@@ -670,19 +670,19 @@
 					}))
 				},
 				F = R.a.div("DropdownRowDisabled", D.a),
-				G = Object(l.u)({
+				V = Object(l.u)({
 					isFrontpage: l.A,
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
-				V = Object(h.c)({
+				G = Object(h.c)({
 					isAwardListingExperimentEnabled: E.a,
 					isBestSortPopularEnabled: N.a,
 					user: P.k,
 					dropdownIsOpen: (e, t) => Object(I.b)(t.dropdownId || W)(e),
 					isPopularPage: l.F
 				}),
-				K = Object(o.b)(V, (e, t) => {
+				K = Object(o.b)(G, (e, t) => {
 					let {
 						dropdownId: n,
 						pageLayer: r
@@ -693,7 +693,7 @@
 						}))
 					}
 				});
-			var q = R.a.wrapped(G(K(Object(d.c)(e => s.a.createElement("div", {
+			var q = R.a.wrapped(V(K(Object(d.c)(e => s.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && s.a.createElement(M, null, w.fbt._("Sort", null, {
@@ -1390,8 +1390,8 @@
 			}
 			var He = Be(Object(o.b)(Me)(Object(d.c)(Ue))),
 				Fe = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
-				Ge = n.n(Fe);
-			const Ve = Object(l.u)({
+				Ve = n.n(Fe);
+			const Ge = Object(l.u)({
 					isProfilePage: l.J,
 					pageLayer: e => e
 				}),
@@ -1439,7 +1439,7 @@
 						updateSortPreference: u
 					} = this.props;
 					return s.a.createElement("div", {
-						className: Object(a.a)(Ge.a.Container, t),
+						className: Object(a.a)(Ve.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
 					}, s.a.createElement(He, {
@@ -1452,12 +1452,12 @@
 						sortOptions: c,
 						timeSort: l
 					}), !o && s.a.createElement(p.a, {
-						className: Ge.a.LayoutSwitch,
+						className: Ve.a.LayoutSwitch,
 						subredditId: d
 					}))
 				}
 			}
-			t.a = Ve(Ke(Object(d.c)(qe)))
+			t.a = Ge(Ke(Object(d.c)(qe)))
 		},
 		"./src/reddit/components/ListingPostList/index.tsx": function(e, t, n) {
 			"use strict";
@@ -1687,7 +1687,7 @@
 					isCommentsPage: m.x,
 					isFrontpage: m.A,
 					isProfilePostListing: m.L,
-					isTopicPage: m.Q,
+					isTopicPage: m.R,
 					pageLayer: e => e
 				})
 			}
@@ -1696,7 +1696,7 @@
 					apiError: _.c,
 					apiPending: _.d,
 					measureScrollFPS: g.d.measureScrollFPS,
-					layout: (e, t) => t.forcedLayout || Object(m.R)(e, t),
+					layout: (e, t) => t.forcedLayout || Object(m.S)(e, t),
 					loadMore: _.g,
 					postsById: S.S,
 					postIds: Object(o.a)((e, t) => {
@@ -1709,7 +1709,7 @@
 					}),
 					subredditsById: y.bb,
 					viewportDataLoaded: O.a,
-					pageReferrer: m.U,
+					pageReferrer: m.V,
 					postListPlaceholderComponent: () => h.a,
 					isNpsScrollSurveyEnabled: w.e
 				},
@@ -2231,4 +2231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.ad68fe4b789262df0220.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.88b65195413e40a3f3aa.js.map
