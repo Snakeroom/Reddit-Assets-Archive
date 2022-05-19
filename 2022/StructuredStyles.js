@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.ab789308e4a19b8d835d.js
-// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.586c4db7dfa2064fe7de.js
+// Retrieved at 5/19/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -6907,7 +6907,7 @@
 					isPresenceUserPrefEnabled: r,
 					wrapperClassName: i,
 					...l
-				} = e, d = Object(o.b)(null == t ? void 0 : t.accountIcon);
+				} = e, d = Object(o.a)(null == t ? void 0 : t.accountIcon);
 				return s.a.createElement("div", {
 					className: Object(a.a)(p.a.currentUserIconWrapper, i)
 				}, d ? s.a.createElement(u.a, {
@@ -9286,4 +9286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.ab789308e4a19b8d835d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.586c4db7dfa2064fe7de.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.4311d4bfdad5f078cc0f.js
-// Retrieved at 5/9/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.c2ec9f5e0b8ee722edd3.js
+// Retrieved at 5/19/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-AdHocMultiredditSidebar"], {
 		"./src/reddit/actions/multireddit/constants.ts": function(e, t, n) {
@@ -304,7 +304,7 @@
 					isPresenceUserPrefEnabled: o,
 					wrapperClassName: a,
 					...d
-				} = e, c = Object(i.b)(null == t ? void 0 : t.accountIcon);
+				} = e, c = Object(i.a)(null == t ? void 0 : t.accountIcon);
 				return s.a.createElement("div", {
 					className: Object(r.a)(T.a.currentUserIconWrapper, a)
 				}, c ? s.a.createElement(l.a, {
@@ -433,4 +433,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.4311d4bfdad5f078cc0f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.c2ec9f5e0b8ee722edd3.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModListing.f8eca4207ff540f48281.js
-// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.21e1f98b3f63120476d5.js
+// Retrieved at 5/19/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
 		"./node_modules/classnames/index.js": function(e, t, n) {
@@ -2281,10 +2281,13 @@
 				let {
 					backgroundClassName: t,
 					className: n,
-					headshot: s
+					headshot: s,
+					hasNftBorder: a
 				} = e;
 				return o.a.createElement("div", {
-					className: Object(i.a)(c.a.snoovatarWrapper, n)
+					className: Object(i.a)(c.a.snoovatarWrapper, n, {
+						[c.a.hasNftBorder]: Boolean(a)
+					})
 				}, o.a.createElement("div", {
 					className: Object(i.a)(c.a.snoovatarBackground, t)
 				}), o.a.createElement("div", {
@@ -2307,11 +2310,13 @@
 				defaultUserIcon: "_3utuhrSAkEkzgaswqglvpN",
 				UserIcon: "_2TN8dEgAQbSyKntWpSPYM7",
 				userIcon: "_2TN8dEgAQbSyKntWpSPYM7",
-				withoutBorder: "_1cG4OXwlWElX_dWTGCA2ew",
 				mNightmode: "_2aVSEFJsIE0M-4uRE-U24H",
 				nftAnimation: "_3fhlcUDP9SJN47QMfuzW_j",
+				nftBackground: "_3ppYbU2ZS369JSNSb8585I",
+				nftBorder: "_1AX7t-EP7R4ZoVC41DG-Jx",
 				snoovatarWrapper: "_1cyAeeYDGrx7MPL_jRwKZ",
 				snoovatarBackground: "_2_QqG5dG916znjlVV8ZCbw",
+				hasNftBorder: "_3Bn5QwbgKslkdt4UwkP9r9",
 				snoovatarHeadshotContainer: "_1XJXnCAngvZLEeLpB3oa4L",
 				snoovatarHeadshot: "ScrrUjzznpAqm92uwgnvO",
 				presenceDot: "_2dn5Ncenn0BSD4tCSmxQhA",
@@ -2372,17 +2377,72 @@
 				d = n("./src/reddit/helpers/userSnoovatar/index.ts"),
 				l = n("./src/reddit/hooks/useIntersectionObserver.ts"),
 				u = n("./src/reddit/models/User/index.ts"),
-				m = n("./src/reddit/components/UserIcon/PresenceDot.tsx"),
-				p = n("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
-				h = n("./src/reddit/components/UserIcon/UserIcon.tsx"),
-				b = n("./src/reddit/selectors/user.ts"),
-				f = n("./src/reddit/components/LottieAnimation/index.tsx"),
-				g = n("./src/reddit/selectors/experiments/profileAvatarChangeFix.ts"),
-				v = n("./src/reddit/components/UserIcon/UserIcon.m.less"),
-				y = n.n(v);
+				m = n("./src/config.ts"),
+				p = n("./src/reddit/components/LottieAnimation/index.tsx");
+			var h = e => {
+					let {
+						className: t
+					} = e;
+					return o.a.createElement("svg", {
+						className: t,
+						viewBox: "0 0 32 32",
+						fill: "none",
+						xmlns: "http://www.w3.org/2000/svg"
+					}, o.a.createElement("path", {
+						d: "M17.3549 1.11694L29.9174 7.58431C30.7466 8.01123 31.2051 8.76743 31.2051 9.53214V22.4669C31.2051 23.2316 30.7466 23.9878 29.9174 24.4147L17.3549 30.8821C16.5197 31.3121 15.4803 31.3121 14.6451 30.8821L2.08264 24.4147C1.2534 23.9878 0.794926 23.2316 0.794926 22.4669V9.53214C0.794926 8.76743 1.25339 8.01123 2.08264 7.58431L14.6451 1.11694C15.4803 0.686936 16.5197 0.686936 17.3549 1.11694Z",
+						stroke: "url(#paint0_diamond_328_99361)",
+						strokeWidth: "1.58985",
+						strokeLinejoin: "round"
+					}), o.a.createElement("defs", null, o.a.createElement("radialGradient", {
+						id: "paint0_diamond_328_99361",
+						cx: "0",
+						cy: "0",
+						r: "1",
+						gradientUnits: "userSpaceOnUse",
+						gradientTransform: "translate(-3.29987 11.5994) rotate(15.9097) scale(22.2525 10703.3)"
+					}, o.a.createElement("stop", {
+						stopColor: "#1185B5"
+					}), o.a.createElement("stop", {
+						offset: "0.29452",
+						stopColor: "#D7F7FF"
+					}), o.a.createElement("stop", {
+						offset: "0.526042",
+						stopColor: "#5EF6D8"
+					}), o.a.createElement("stop", {
+						offset: "0.838434",
+						stopColor: "#5EF6D8"
+					}), o.a.createElement("stop", {
+						offset: "0.867246",
+						stopColor: "#1990B9"
+					}), o.a.createElement("stop", {
+						offset: "1",
+						stopColor: "#3F9FC6"
+					}))))
+				},
+				b = n("./src/reddit/components/UserIcon/UserIcon.m.less"),
+				f = n.n(b);
+			var g = e => {
+					let {
+						iconUrl: t
+					} = e;
+					return Object(d.c)(t) ? o.a.createElement(p.a, {
+						className: f.a.nftAnimation,
+						assetUrl: `${m.a.assetPath}/img/snoovatars/comment-animations/nft_comment_animation.json`,
+						loop: !0
+					}) : o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+						className: f.a.nftBackground
+					}), o.a.createElement(h, {
+						className: f.a.nftBorder
+					}))
+				},
+				v = n("./src/reddit/components/UserIcon/PresenceDot.tsx"),
+				y = n("./src/reddit/components/UserIcon/SnoovatarHeadshot.tsx"),
+				x = n("./src/reddit/components/UserIcon/UserIcon.tsx"),
+				O = n("./src/reddit/selectors/user.ts"),
+				_ = n("./src/reddit/selectors/experiments/profileAvatarChangeFix.ts");
 
-			function x() {
-				return (x = Object.assign || function(e) {
+			function E() {
+				return (E = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -2390,27 +2450,27 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const O = () => {},
-				_ = Object(a.c)({
-					currentUser: b.k,
-					isNightMode: b.cb,
-					shouldHideNSFW: b.F,
-					user: b.zb,
-					isProfileAvatarChangeFixEnabled: g.a
+			const w = () => {},
+				j = Object(a.c)({
+					currentUser: O.k,
+					isNightMode: O.cb,
+					shouldHideNSFW: O.F,
+					user: O.zb,
+					isProfileAvatarChangeFixEnabled: _.a
 				}),
-				E = Object(i.b)(_);
-			t.a = E(e => {
+				I = Object(i.b)(j);
+			t.a = I(e => {
 				const {
 					authorId: t,
 					collapsed: n,
 					currentUser: i,
 					iconUrl: a,
-					isCommentAuthorBlocked: b,
-					isHighlighted: g,
-					isNft: v,
-					isNSFW: _,
-					shouldUseOnlineOverride: E,
-					isOnlineOverrideValue: w,
+					isCommentAuthorBlocked: m,
+					isHighlighted: p,
+					isNft: h,
+					isNSFW: b,
+					shouldUseOnlineOverride: O,
+					isOnlineOverrideValue: _,
 					isOnlineStatusLoadTest: j,
 					isProfileIcon: I,
 					omitResponsivePresenceWrapper: C,
@@ -2420,11 +2480,12 @@
 					userName: T,
 					isProfileAvatarChangeFixEnabled: P,
 					...M
-				} = e, L = !!i && Object(u.e)(i) === T, R = L ? i : N, D = R && R.accountIcon || a, B = N ? N.isNSFW : _, F = Object(d.b)(D) && !b, A = F ? o.a.createElement(p.a, {
+				} = e, L = !!i && Object(u.e)(i) === T, R = L ? i : N, D = R && R.accountIcon || a, B = N ? N.isNSFW : b, F = Object(d.a)(D) && !m, A = F ? o.a.createElement(y.a, {
 					headshot: D,
-					className: e.className
-				}) : o.a.createElement(h.b, x({}, M, {
-					iconUrl: b && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : D,
+					className: e.className,
+					hasNftBorder: h && Object(d.d)(a)
+				}) : o.a.createElement(x.b, E({}, M, {
+					iconUrl: m && n ? "https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png" : D,
 					isCurrentUser: L,
 					isNSFW: B
 				})), [U, H] = Object(s.useState)(!1), W = Object(s.useMemo)(() => ({
@@ -2452,25 +2513,20 @@
 					rootMargin: "750px 0px 1000px 0px"
 				});
 				return Object(l.a)(G, z, Q.current), C ? A : o.a.createElement("div", {
-					className: Object(r.a)(y.a.userIconWrapper, {
-						[y.a.nftUserIcon]: v,
-						[y.a.hasHeadShotWrapper]: F,
-						[y.a.isProfileIcon]: I && P
+					className: Object(r.a)(f.a.userIconWrapper, {
+						[f.a.hasHeadShotWrapper]: F,
+						[f.a.isProfileIcon]: I && P
 					}),
 					ref: G
-				}, v && o.a.createElement(f.a, {
-					className: Object(r.a)(y.a.nftAnimation, {
-						[y.a.withoutBorder]: Object(d.f)(a)
-					}),
-					assetUrl: Object(d.a)(a),
-					loop: !0
-				}), A, S && (U || E && w) && o.a.createElement(m.default, {
+				}, h && o.a.createElement(g, {
+					iconUrl: a
+				}), A, S && (U || O && _) && o.a.createElement(v.default, {
 					showPresence: !0,
-					isHighlighted: g,
+					isHighlighted: p,
 					onceInViewport: k
-				}), (S || j) && !E && K && o.a.createElement(c.a, {
+				}), (S || j) && !O && K && o.a.createElement(c.a, {
 					variables: W,
-					onData: S ? q : O,
+					onData: S ? q : w,
 					queryKey: "isUserOnline"
 				}))
 			})
@@ -7300,4 +7356,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.f8eca4207ff540f48281.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.21e1f98b3f63120476d5.js.map

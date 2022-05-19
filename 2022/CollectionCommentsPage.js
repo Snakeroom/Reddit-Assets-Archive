@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.556d0f82664d4b7767a4.js
-// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.cc8e175470f819e1eca4.js
+// Retrieved at 5/19/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -2014,8 +2014,8 @@
 				supporterRing: "_2I86011VPvZ-uDOUp1zvd-",
 				UserIcon: "_13ScjOmi6dGdJw0JAonQEr",
 				userIcon: "_13ScjOmi6dGdJw0JAonQEr",
-				UserIconNft: "_20ZyBb8T475h1qmXRBEL6-",
-				userIconNft: "_20ZyBb8T475h1qmXRBEL6-",
+				V1NftTreatment: "_3yYNickUtSp9utejxh7dFL",
+				v1NftTreatment: "_3yYNickUtSp9utejxh7dFL",
 				topSupporterIcon: "PjnQ0fgBT0oSZ9nR8HeaJ",
 				VerticalVotes: "kB7GZ7EzNg1Msq-nEnY0z",
 				verticalVotes: "kB7GZ7EzNg1Msq-nEnY0z",
@@ -2822,7 +2822,8 @@
 						}, [m.id, Q, Te, V, Ee]),
 						Re = Object(et.a)(m),
 						Me = !!x && Object(ct.e)(x) === m.author ? null == x ? void 0 : x.accountIcon : m.profileImage,
-						Fe = !(!Object(jt.d)(Me) && !oe) && Object(jt.c)(Me);
+						Fe = Object(jt.c)(Me),
+						Be = !(!Fe && !oe) && Object(jt.b)(Me);
 					return r.a.createElement("div", {
 						key: `comment-${m.id}`,
 						className: Object(c.a)(`Comment ${m.id}`, Et.a.CommentWrapper, {
@@ -2861,12 +2862,12 @@
 						"data-testid": _e ? void 0 : "comment_author_icon",
 						onClick: _e ? void 0 : K,
 						to: `/user/${m.author}/`
-					}, Ne ? r.a.createElement(r.a.Fragment, null, y && !Fe && r.a.createElement("div", {
+					}, Ne ? r.a.createElement(r.a.Fragment, null, y && !Be && r.a.createElement("div", {
 						className: Et.a.supporterRing
 					}), r.a.createElement(Xe.a, {
-						isNft: Fe,
+						isNft: Be,
 						className: Object(c.a)(Et.a.UserIcon, {
-							[Et.a.UserIconNft]: Fe && !Object(jt.f)(Me)
+							[Et.a.v1NftTreatment]: Fe
 						}),
 						iconUrl: Me,
 						isNSFW: m.profileOver18 || !1,
@@ -2894,7 +2895,7 @@
 					}, r.a.createElement(it.a, null, n.fbt._("level {depth}", [n.fbt._param("depth", g + 1)], {
 						hk: "2XnyAV"
 					})), r.a.createElement(Tt, {
-						userHasNft: Fe,
+						userHasNft: Be,
 						childrenInfo: t,
 						className: Object(c.a)({
 							[Et.a.collapsed]: i,
@@ -11568,4 +11569,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.556d0f82664d4b7767a4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.cc8e175470f819e1eca4.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.b14ffbf63ae3f9bc79d4.js
-// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.7e16c6a175ab24c7ed9b.js
+// Retrieved at 5/19/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-InFeedPostCreation"], {
 		"./src/reddit/components/InFeedPostCreation/index.m.less": function(e, t, n) {
@@ -223,7 +223,7 @@
 					isPresenceUserPrefEnabled: s,
 					wrapperClassName: c,
 					...i
-				} = e, d = Object(a.b)(null == t ? void 0 : t.accountIcon);
+				} = e, d = Object(a.a)(null == t ? void 0 : t.accountIcon);
 				return o.a.createElement("div", {
 					className: Object(r.a)(b.a.currentUserIconWrapper, c)
 				}, d ? o.a.createElement(u.a, {
@@ -281,4 +281,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.b14ffbf63ae3f9bc79d4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-InFeedPostCreation.7e16c6a175ab24c7ed9b.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/1.21f3f349e20118a30b2d.js
-// Retrieved at 5/12/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/1.b364299aea4cfb279b4a.js
+// Retrieved at 5/19/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	[1], {
 		"./node_modules/@reddit/crypto/react/config/index.es.js": function(e, t, n) {
@@ -355,7 +355,7 @@
 				},
 				OperationDefinition: {
 					leave(e) {
-						const t = J("(", Y(e.variableDefinitions, ", "), ")"),
+						const t = $("(", Y(e.variableDefinitions, ", "), ")"),
 							n = Y([e.operation, Y([e.name, t]), Y(e.directives, " ")], " ");
 						return ("query" === n ? "" : n + " ") + e.selectionSet
 					}
@@ -366,12 +366,12 @@
 						type: t,
 						defaultValue: n,
 						directives: i
-					}) => e + ": " + t + J(" = ", n) + J(" ", Y(i, " "))
+					}) => e + ": " + t + $(" = ", n) + $(" ", Y(i, " "))
 				},
 				SelectionSet: {
 					leave: ({
 						selections: e
-					}) => $(e)
+					}) => z(e)
 				},
 				Field: {
 					leave({
@@ -381,9 +381,9 @@
 						directives: i,
 						selectionSet: r
 					}) {
-						const o = J("", e, ": ") + t;
-						let s = o + J("(", Y(n, ", "), ")");
-						return s.length > 80 && (s = o + J("(\n", z(Y(n, "\n")), "\n)")), Y([s, Y(i, " "), r], " ")
+						const o = $("", e, ": ") + t;
+						let s = o + $("(", Y(n, ", "), ")");
+						return s.length > 80 && (s = o + $("(\n", J(Y(n, "\n")), "\n)")), Y([s, Y(i, " "), r], " ")
 					}
 				},
 				Argument: {
@@ -396,14 +396,14 @@
 					leave: ({
 						name: e,
 						directives: t
-					}) => "..." + e + J(" ", Y(t, " "))
+					}) => "..." + e + $(" ", Y(t, " "))
 				},
 				InlineFragment: {
 					leave: ({
 						typeCondition: e,
 						directives: t,
 						selectionSet: n
-					}) => Y(["...", J("on ", e), Y(t, " "), n], " ")
+					}) => Y(["...", $("on ", e), Y(t, " "), n], " ")
 				},
 				FragmentDefinition: {
 					leave: ({
@@ -412,7 +412,7 @@
 						variableDefinitions: n,
 						directives: i,
 						selectionSet: r
-					}) => `fragment ${e}${J("(",Y(n,", "),")")} on ${t} ${J("",Y(i," ")," ")}` + r
+					}) => `fragment ${e}${$("(",Y(n,", "),")")} on ${t} ${$("",Y(i," ")," ")}` + r
 				},
 				IntValue: {
 					leave: ({
@@ -478,7 +478,7 @@
 					leave: ({
 						name: e,
 						arguments: t
-					}) => "@" + e + J("(", Y(t, ", "), ")")
+					}) => "@" + e + $("(", Y(t, ", "), ")")
 				},
 				NamedType: {
 					leave: ({
@@ -500,7 +500,7 @@
 						description: e,
 						directives: t,
 						operationTypes: n
-					}) => J("", e, "\n") + Y(["schema", Y(t, " "), $(n)], " ")
+					}) => $("", e, "\n") + Y(["schema", Y(t, " "), z(n)], " ")
 				},
 				OperationTypeDefinition: {
 					leave: ({
@@ -513,7 +513,7 @@
 						description: e,
 						name: t,
 						directives: n
-					}) => J("", e, "\n") + Y(["scalar", t, Y(n, " ")], " ")
+					}) => $("", e, "\n") + Y(["scalar", t, Y(n, " ")], " ")
 				},
 				ObjectTypeDefinition: {
 					leave: ({
@@ -522,7 +522,7 @@
 						interfaces: n,
 						directives: i,
 						fields: r
-					}) => J("", e, "\n") + Y(["type", t, J("implements ", Y(n, " & ")), Y(i, " "), $(r)], " ")
+					}) => $("", e, "\n") + Y(["type", t, $("implements ", Y(n, " & ")), Y(i, " "), z(r)], " ")
 				},
 				FieldDefinition: {
 					leave: ({
@@ -531,7 +531,7 @@
 						arguments: n,
 						type: i,
 						directives: r
-					}) => J("", e, "\n") + t + (Q(n) ? J("(\n", z(Y(n, "\n")), "\n)") : J("(", Y(n, ", "), ")")) + ": " + i + J(" ", Y(r, " "))
+					}) => $("", e, "\n") + t + (Q(n) ? $("(\n", J(Y(n, "\n")), "\n)") : $("(", Y(n, ", "), ")")) + ": " + i + $(" ", Y(r, " "))
 				},
 				InputValueDefinition: {
 					leave: ({
@@ -540,7 +540,7 @@
 						type: n,
 						defaultValue: i,
 						directives: r
-					}) => J("", e, "\n") + Y([t + ": " + n, J("= ", i), Y(r, " ")], " ")
+					}) => $("", e, "\n") + Y([t + ": " + n, $("= ", i), Y(r, " ")], " ")
 				},
 				InterfaceTypeDefinition: {
 					leave: ({
@@ -549,7 +549,7 @@
 						interfaces: n,
 						directives: i,
 						fields: r
-					}) => J("", e, "\n") + Y(["interface", t, J("implements ", Y(n, " & ")), Y(i, " "), $(r)], " ")
+					}) => $("", e, "\n") + Y(["interface", t, $("implements ", Y(n, " & ")), Y(i, " "), z(r)], " ")
 				},
 				UnionTypeDefinition: {
 					leave: ({
@@ -557,7 +557,7 @@
 						name: t,
 						directives: n,
 						types: i
-					}) => J("", e, "\n") + Y(["union", t, Y(n, " "), J("= ", Y(i, " | "))], " ")
+					}) => $("", e, "\n") + Y(["union", t, Y(n, " "), $("= ", Y(i, " | "))], " ")
 				},
 				EnumTypeDefinition: {
 					leave: ({
@@ -565,14 +565,14 @@
 						name: t,
 						directives: n,
 						values: i
-					}) => J("", e, "\n") + Y(["enum", t, Y(n, " "), $(i)], " ")
+					}) => $("", e, "\n") + Y(["enum", t, Y(n, " "), z(i)], " ")
 				},
 				EnumValueDefinition: {
 					leave: ({
 						description: e,
 						name: t,
 						directives: n
-					}) => J("", e, "\n") + Y([t, Y(n, " ")], " ")
+					}) => $("", e, "\n") + Y([t, Y(n, " ")], " ")
 				},
 				InputObjectTypeDefinition: {
 					leave: ({
@@ -580,7 +580,7 @@
 						name: t,
 						directives: n,
 						fields: i
-					}) => J("", e, "\n") + Y(["input", t, Y(n, " "), $(i)], " ")
+					}) => $("", e, "\n") + Y(["input", t, Y(n, " "), z(i)], " ")
 				},
 				DirectiveDefinition: {
 					leave: ({
@@ -589,13 +589,13 @@
 						arguments: n,
 						repeatable: i,
 						locations: r
-					}) => J("", e, "\n") + "directive @" + t + (Q(n) ? J("(\n", z(Y(n, "\n")), "\n)") : J("(", Y(n, ", "), ")")) + (i ? " repeatable" : "") + " on " + Y(r, " | ")
+					}) => $("", e, "\n") + "directive @" + t + (Q(n) ? $("(\n", J(Y(n, "\n")), "\n)") : $("(", Y(n, ", "), ")")) + (i ? " repeatable" : "") + " on " + Y(r, " | ")
 				},
 				SchemaExtension: {
 					leave: ({
 						directives: e,
 						operationTypes: t
-					}) => Y(["extend schema", Y(e, " "), $(t)], " ")
+					}) => Y(["extend schema", Y(e, " "), z(t)], " ")
 				},
 				ScalarTypeExtension: {
 					leave: ({
@@ -609,7 +609,7 @@
 						interfaces: t,
 						directives: n,
 						fields: i
-					}) => Y(["extend type", e, J("implements ", Y(t, " & ")), Y(n, " "), $(i)], " ")
+					}) => Y(["extend type", e, $("implements ", Y(t, " & ")), Y(n, " "), z(i)], " ")
 				},
 				InterfaceTypeExtension: {
 					leave: ({
@@ -617,28 +617,28 @@
 						interfaces: t,
 						directives: n,
 						fields: i
-					}) => Y(["extend interface", e, J("implements ", Y(t, " & ")), Y(n, " "), $(i)], " ")
+					}) => Y(["extend interface", e, $("implements ", Y(t, " & ")), Y(n, " "), z(i)], " ")
 				},
 				UnionTypeExtension: {
 					leave: ({
 						name: e,
 						directives: t,
 						types: n
-					}) => Y(["extend union", e, Y(t, " "), J("= ", Y(n, " | "))], " ")
+					}) => Y(["extend union", e, Y(t, " "), $("= ", Y(n, " | "))], " ")
 				},
 				EnumTypeExtension: {
 					leave: ({
 						name: e,
 						directives: t,
 						values: n
-					}) => Y(["extend enum", e, Y(t, " "), $(n)], " ")
+					}) => Y(["extend enum", e, Y(t, " "), z(n)], " ")
 				},
 				InputObjectTypeExtension: {
 					leave: ({
 						name: e,
 						directives: t,
 						fields: n
-					}) => Y(["extend input", e, Y(t, " "), $(n)], " ")
+					}) => Y(["extend input", e, Y(t, " "), z(n)], " ")
 				}
 			};
 
@@ -647,16 +647,16 @@
 				return null !== (n = null == e ? void 0 : e.filter(e => e).join(t)) && void 0 !== n ? n : ""
 			}
 
-			function $(e) {
-				return J("{\n", z(Y(e, "\n")), "\n}")
+			function z(e) {
+				return $("{\n", J(Y(e, "\n")), "\n}")
 			}
 
-			function J(e, t, n = "") {
+			function $(e, t, n = "") {
 				return null != t && "" !== t ? e + t + n : ""
 			}
 
-			function z(e) {
-				return J("  ", e.replace(/\n/g, "\n  "))
+			function J(e) {
+				return $("  ", e.replace(/\n/g, "\n  "))
 			}
 
 			function Q(e) {
@@ -1974,7 +1974,7 @@
 				}
 			}
 
-			function $e(e) {
+			function ze(e) {
 				return function(t) {
 					let n = Re,
 						i = !1;
@@ -1991,7 +1991,7 @@
 				}
 			}
 
-			function Je(e) {
+			function $e(e) {
 				return function(t) {
 					return function(n) {
 						return t((function(t) {
@@ -2001,7 +2001,7 @@
 				}
 			}
 
-			function ze(e) {
+			function Je(e) {
 				return Me(je)(Le(e))
 			}
 
@@ -2286,7 +2286,7 @@
 			function xt(e, t, n) {
 				var i = "manual" === n.redirect ? 400 : 300,
 					r = e.context.fetch;
-				return $e((function(o) {
+				return ze((function(o) {
 					var s = o.next,
 						a = o.complete,
 						c = "undefined" != typeof AbortController ? new AbortController : null;
@@ -2463,7 +2463,7 @@
 				}
 				return function(e) {
 					var a = We(e),
-						c = Je((function(e) {
+						c = $e((function(e) {
 							var t = i.get(e.key),
 								r = ht({}, t, {
 									operation: Ct(e, {
@@ -2499,16 +2499,16 @@
 							}
 						}))(t(Ge((function(e) {
 							return "query" !== e.kind || "cache-only" !== e.context.requestPolicy
-						}))(Je((function(e) {
+						}))($e((function(e) {
 							return Ct(e, {
 								cacheOutcome: "miss"
 							})
-						}))(ze([Je(o)(Ge((function(e) {
+						}))(Je([$e(o)(Ge((function(e) {
 							return !Rt(e) && !s(e)
 						}))(a)), Ge((function(e) {
 							return Rt(e)
 						}))(a)])))));
-					return ze([c, u])
+					return Je([c, u])
 				}
 			}
 
@@ -2546,7 +2546,7 @@
 				return e.dispatchDebug,
 					function(e) {
 						var n = We(e);
-						return ze([Me((function(e) {
+						return Je([Me((function(e) {
 							var t = e.key,
 								i = Ge((function(e) {
 									return "teardown" === e.kind && e.key === t
@@ -2618,7 +2618,7 @@
 						var t = Ge((function(t) {
 							return t.operation.kind === e.kind && t.operation.key === e.key
 						}))(d);
-						return p.maskTypename && (t = Je((function(e) {
+						return p.maskTypename && (t = $e((function(e) {
 							return ht({}, e, {
 								data: Dt(e.data)
 							})
@@ -2652,7 +2652,7 @@
 								}
 							}
 						}((function(t) {
-							return "query" !== e.kind || t.stale ? Ye(t) : ze([Ye(t), Je((function() {
+							return "query" !== e.kind || t.stale ? Ye(t) : Je([Ye(t), $e((function() {
 								return ht({}, t, {
 									stale: !0
 								})
@@ -2695,7 +2695,7 @@
 								}(t.query), wt(e, t, p.createOperationContext(n))
 							},
 							executeRequestOperation: function(e) {
-								return "mutation" === e.kind ? l(e) : $e((function(t) {
+								return "mutation" === e.kind ? l(e) : ze((function(t) {
 									var r = i.get(e.key);
 									r || i.set(e.key, r = l(e));
 									var o = "cache-and-network" === e.context.requestPolicy || "network-only" === e.context.requestPolicy;
@@ -2771,8 +2771,8 @@
 				return Object(i.useContext)(Kt)
 			}
 
-			function $t() {
-				return ($t = Object.assign || function(e) {
+			function zt() {
+				return (zt = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (e[i] = n[i])
@@ -2781,7 +2781,7 @@
 				}).apply(this, arguments)
 			}
 			Kt.Consumer, Kt.displayName = "UrqlContext";
-			var Jt = {
+			var $t = {
 				fetching: !1,
 				stale: !1,
 				error: void 0,
@@ -2790,8 +2790,8 @@
 				operation: void 0
 			};
 
-			function zt(e, t) {
-				var n = $t({}, e, t, {
+			function Jt(e, t) {
+				var n = zt({}, e, t, {
 					fetching: !!t.fetching,
 					stale: !!t.stale
 				});
@@ -2808,11 +2808,11 @@
 			function Qt(e) {
 				var t = Object(i.useRef)(!0),
 					n = Yt(),
-					r = Object(i.useState)(Jt),
+					r = Object(i.useState)($t),
 					o = r[0],
 					s = r[1],
 					a = Object(i.useCallback)((function(i, r) {
-						return s($t({}, Jt, {
+						return s(zt({}, $t, {
 							fetching: !0
 						})), tt(n.executeMutation(ft(e, i), r || {})).then((function(e) {
 							return t.current && s({
@@ -2865,7 +2865,7 @@
 					}(e.query, e.variables),
 					c = Object(i.useMemo)((function() {
 						if (e.pause) return null;
-						var t = r.executeQuery(a, $t({}, {
+						var t = r.executeQuery(a, zt({}, {
 							requestPolicy: e.requestPolicy
 						}, e.context));
 						return s ? Be((function(e) {
@@ -2911,7 +2911,7 @@
 					p = Object(i.useState)((function() {
 						Xt = !0;
 						try {
-							return [c, zt(Jt, u(c, s)), l]
+							return [c, Jt($t, u(c, s)), l]
 						} finally {
 							Xt = !1
 						}
@@ -2923,14 +2923,14 @@
 					for (var n = 0, i = t.length; n < i; n++)
 						if (e[n] !== t[n]) return !0;
 					return !1
-				}(f[2], l) && d([c, h = zt(f[1], u(c, s)), l]), Object(i.useEffect)((function() {
+				}(f[2], l) && d([c, h = Jt(f[1], u(c, s)), l]), Object(i.useEffect)((function() {
 					var e = f[0],
 						t = f[2][1],
 						n = !1;
 
 					function i(e) {
 						n = !0, Xt || d((function(t) {
-							var n = zt(t[1], e);
+							var n = Jt(t[1], e);
 							return t[1] !== n ? [t[0], n, t[2]] : t
 						}))
 					}
@@ -2951,7 +2951,7 @@
 						fetching: !1
 					})
 				}), [o, f[0], f[2][1]]), [h, Object(i.useCallback)((function(t) {
-					var n = $t({}, {
+					var n = zt({}, {
 						requestPolicy: e.requestPolicy
 					}, e.context, t);
 					d((function(e) {
@@ -2979,7 +2979,7 @@
 				dispatchDebug: t
 			}) => t => {
 				const n = We(t);
-				return ze([He(n, Ge(e => "query" === e.kind || "mutation" === e.kind), Me(e => (function(e, t, n) {
+				return Je([He(n, Ge(e => "query" === e.kind || "mutation" === e.kind), Me(e => (function(e, t, n) {
 					const i = He(n, Ge(e => "teardown" === e.kind && e.key === t.key)),
 						r = Et(t),
 						o = r.operationName ? r.operationName.toLowerCase() : "",
@@ -3114,17 +3114,17 @@
 			n.d(t, "a", (function() {
 				return g
 			})), n.d(t, "b", (function() {
-				return Di
+				return Si
 			})), n.d(t, "c", (function() {
 				return k
 			})), n.d(t, "d", (function() {
 				return K
 			})), n.d(t, "e", (function() {
-				return Si
+				return wi
 			})), n.d(t, "f", (function() {
-				return z
-			})), n.d(t, "g", (function() {
 				return J
+			})), n.d(t, "g", (function() {
+				return $
 			})), n.d(t, "h", (function() {
 				return V
 			})), n.d(t, "i", (function() {
@@ -3190,17 +3190,17 @@
 			}(m);
 			var y = m.exports;
 			var E = {
-				button: "_button_6do52_30",
-				loadingButton: "_loadingButton_6do52_40",
-				greyTheme: "_greyTheme_6do52_45",
-				whiteTheme: "_whiteTheme_6do52_48",
-				outlinedTheme: "_outlinedTheme_6do52_52",
-				whiteInvertedTheme: "_whiteInvertedTheme_6do52_55",
-				orangeTheme: "_orangeTheme_6do52_70",
-				largeOrangeTheme: "_largeOrangeTheme_6do52_71",
-				blueTheme: "_blueTheme_6do52_85",
-				blueInvertedTheme: "_blueInvertedTheme_6do52_86",
-				disabled: "_disabled_6do52_100"
+				button: "_button_1qbc9_42",
+				loadingButton: "_loadingButton_1qbc9_52",
+				greyTheme: "_greyTheme_1qbc9_57",
+				whiteTheme: "_whiteTheme_1qbc9_60",
+				outlinedTheme: "_outlinedTheme_1qbc9_64",
+				whiteInvertedTheme: "_whiteInvertedTheme_1qbc9_67",
+				orangeTheme: "_orangeTheme_1qbc9_82",
+				largeOrangeTheme: "_largeOrangeTheme_1qbc9_83",
+				blueTheme: "_blueTheme_1qbc9_97",
+				blueInvertedTheme: "_blueInvertedTheme_1qbc9_98",
+				disabled: "_disabled_1qbc9_112"
 			};
 			const g = ({
 				className: e,
@@ -3216,7 +3216,7 @@
 					[E.loadingButton]: s,
 					[E.disabled]: n
 				})
-			}, s ? r.a.createElement(J, {
+			}, s ? r.a.createElement($, {
 				className: E.loadingImage
 			}) : r.a.createElement(r.a.Fragment, null, o));
 
@@ -3243,9 +3243,9 @@
 			var N = "https://www.redditstatic.com/crypto-assets/v2/close-contained-4d7c7d218a.svg",
 				T = "https://www.redditstatic.com/crypto-assets/v2/close-dark-f5902178f9.svg",
 				b = "https://www.redditstatic.com/crypto-assets/v2/close-1a7014e63e.svg";
-			var O = "_closeButton_8wmcj_1",
-				x = "_contained_8wmcj_13",
-				I = "_closeIcon_8wmcj_22";
+			var O = "_closeButton_bz0xz_1",
+				x = "_contained_bz0xz_13",
+				I = "_closeIcon_bz0xz_22";
 			const k = ({
 				contained: e,
 				theme: t,
@@ -3440,7 +3440,7 @@
 			}(L.Component);
 			D.default = P;
 			var M = {
-				container: "_container_s2nn9_30"
+				container: "_container_1cw7m_42"
 			};
 			const j = ({
 				value: e,
@@ -3466,18 +3466,18 @@
 				return r.a.createElement(r.a.Fragment, null, n.singular(e, t))
 			};
 			var U = {
-				container: "_container_jucc0_30",
-				toast: "_toast_jucc0_42",
-				bar: "_bar_jucc0_56",
-				errorKind: "_errorKind_jucc0_59",
-				successKind: "_successKind_jucc0_62",
-				image: "_image_jucc0_65",
-				content: "_content_jucc0_69",
-				close: "_close_jucc0_76",
-				entering: "_entering_jucc0_91",
-				fadeIn: "_fadeIn_jucc0_1",
-				leaving: "_leaving_jucc0_94",
-				fadeOut: "_fadeOut_jucc0_1"
+				container: "_container_9znh3_42",
+				toast: "_toast_9znh3_54",
+				bar: "_bar_9znh3_68",
+				errorKind: "_errorKind_9znh3_71",
+				successKind: "_successKind_9znh3_74",
+				image: "_image_9znh3_77",
+				content: "_content_9znh3_81",
+				close: "_close_9znh3_88",
+				entering: "_entering_9znh3_103",
+				fadeIn: "_fadeIn_9znh3_1",
+				leaving: "_leaving_9znh3_106",
+				fadeOut: "_fadeOut_9znh3_1"
 			};
 			const V = ({
 					className: e,
@@ -3545,8 +3545,8 @@
 				let e = document.getElementById(G);
 				return e || ((e = document.createElement("div")).id = G, e.className = U.container, document.body.appendChild(e)), e
 			}
-			var $ = "_container_10e6p_1";
-			const J = ({
+			var z = "_container_10e6p_1";
+			const $ = ({
 				className: e
 			}) => r.a.createElement("svg", {
 				width: "24",
@@ -3554,7 +3554,7 @@
 				viewBox: "0 0 24 24",
 				fill: "none",
 				xmlns: "http://www.w3.org/2000/svg",
-				className: y(e, $)
+				className: y(e, z)
 			}, r.a.createElement("g", {
 				clipPath: "url(#clip0_1524_96476)"
 			}, r.a.createElement("path", {
@@ -3569,7 +3569,7 @@
 				height: "24",
 				fill: "white"
 			}))));
-			const z = ({
+			const J = ({
 				href: e,
 				className: t,
 				children: n
@@ -3790,15 +3790,15 @@
 				e.preventDefault(), t && (e.stopPropagation(), e.stopImmediatePropagation())
 			}
 
-			function $e(e, t) {
+			function ze(e, t) {
 				return e && e.querySelector(t)
 			}
 
-			function Je(e, t) {
+			function $e(e, t) {
 				return t ? oe(e.querySelectorAll(t)) : []
 			}
 
-			function ze(e, t) {
+			function Je(e, t) {
 				Te(e, t, !1)
 			}
 
@@ -3980,9 +3980,9 @@
 			}
 			var Gt = "ArrowLeft",
 				Yt = "ArrowRight",
-				$t = "rtl",
-				Jt = "ttb",
-				zt = {
+				zt = "rtl",
+				$t = "ttb",
+				Jt = {
 					width: ["height"],
 					left: ["top", "right"],
 					right: ["bottom", "left"],
@@ -4065,7 +4065,7 @@
 					g = Ue(i, en),
 					_ = n > -1,
 					N = Ae(i, "." + hn),
-					T = Je(i, p.focusableNodes || "");
+					T = $e(i, p.focusableNodes || "");
 
 				function b() {
 					var r = e.splides.map((function(e) {
@@ -4119,7 +4119,7 @@
 						_ || (i.id = l.id + "-slide" + lt(t + 1), Fe(i, Qt, v ? "tabpanel" : "group"), Fe(i, on, h.slide), Fe(i, en, g || ut(h.slideLabel, [t + 1, e.length]))), c(i, "click", se(a, yt, k)), c(i, "keydown", se(a, Tt, k)), s([vt, mt, wt], x), s(Mt, b), d && s(ht, O)
 					},
 					destroy: function() {
-						r = !0, o.destroy(), ze(i, Sn), Re(i, cn), Fe(i, "style", E), Fe(i, en, g || "")
+						r = !0, o.destroy(), Je(i, Sn), Re(i, cn), Fe(i, "style", E), Fe(i, en, g || "")
 					},
 					update: x,
 					style: function(e, t, n) {
@@ -4137,9 +4137,9 @@
 				Kn = "m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z",
 				Gn = 40;
 			var Yn = We + "-interval";
-			var $n = 10,
-				Jn = 600,
-				zn = .6,
+			var zn = 10,
+				$n = 600,
+				Jn = .6,
 				Qn = 1.5,
 				Xn = 800;
 			var Hn = {
@@ -4211,14 +4211,14 @@
 					Direction: function(e, t, n) {
 						return {
 							resolve: function(e, t, i) {
-								var r = (i = i || n.direction) !== $t || t ? i === Jt ? 0 : -1 : 1;
-								return zt[e] && zt[e][r] || e.replace(/width|left|right/i, (function(e, t) {
-									var n = zt[e.toLowerCase()][r] || e;
+								var r = (i = i || n.direction) !== zt || t ? i === $t ? 0 : -1 : 1;
+								return Jt[e] && Jt[e][r] || e.replace(/width|left|right/i, (function(e, t) {
+									var n = Jt[e.toLowerCase()][r] || e;
 									return t > 0 ? n.charAt(0).toUpperCase() + n.slice(1) : n
 								}))
 							},
 							orient: function(e) {
-								return e * (n.direction === $t ? 1 : -1)
+								return e * (n.direction === zt ? 1 : -1)
 							}
 						}
 					},
@@ -4260,15 +4260,15 @@
 
 						function m(e) {
 							var t = cn.concat("style");
-							re(f), ze(u, d), ze(i, h), Re([i, r], t), Re(u, e ? t : ["style", on])
+							re(f), Je(u, d), Je(i, h), Re([i, r], t), Re(u, e ? t : ["style", on])
 						}
 
 						function y() {
-							ze(u, d), ze(i, h), d = g(un), h = g(ln), be(u, d), be(i, h), Fe(u, en, n.label), Fe(u, tn, n.labelledby)
+							Je(u, d), Je(i, h), d = g(un), h = g(ln), be(u, d), be(i, h), Fe(u, en, n.label), Fe(u, tn, n.labelledby)
 						}
 
 						function E(e) {
-							var t = $e(u, e);
+							var t = ze(u, e);
 							return t && function(e, t) {
 								if (de(e.closest)) return e.closest(t);
 								for (var n = e; n && 1 === n.nodeType && !Ie(n, t);) n = n.parentElement;
@@ -4366,7 +4366,7 @@
 								ge(e, (function(e) {
 									if (he(e) && (e = Ge(e)), ye(e)) {
 										var i = c[t];
-										i ? xe(e, i) : Oe(u, e), be(e, n.classes.slide), r = e, a = se(o, xt), l = Je(r, "img"), (p = l.length) ? l.forEach((function(e) {
+										i ? xe(e, i) : Oe(u, e), be(e, n.classes.slide), r = e, a = se(o, xt), l = $e(r, "img"), (p = l.length) ? l.forEach((function(e) {
 											s(e, "load error", (function() {
 												--p || a()
 											}))
@@ -4410,7 +4410,7 @@
 							m = u.style;
 
 						function y() {
-							r = null, i = n.direction === Jt, Me(f, "maxWidth", Xe(n.width)), Me(d, l("paddingLeft"), g(!1)), Me(d, l("paddingRight"), g(!0)), E()
+							r = null, i = n.direction === $t, Me(f, "maxWidth", Xe(n.width)), Me(d, l("paddingLeft"), g(!1)), Me(d, l("paddingRight"), g(!0)), E()
 						}
 
 						function E() {
@@ -4778,7 +4778,7 @@
 						}
 
 						function N() {
-							o.destroy(), ze(v, r), i ? (Ke(d ? [m, y] : v), m = y = null) : Re([m, y], cn)
+							o.destroy(), Je(v, r), i ? (Ke(d ? [m, y] : v), m = y = null) : Re([m, y], cn)
 						}
 
 						function T(e) {
@@ -4911,7 +4911,7 @@
 						function y(t, i, r, o) {
 							var s, a, c = l(),
 								u = (t + (i - t) * (s = o, (a = n.easingFunc) ? a(s) : 1 - Math.pow(1 - s, 4)) - c) * h;
-							d(c + u), e.is(Mn) && !r && f() && (h *= zn, rt(u) < $n && v(p(f(!0)), Jn, !1, void 0, !0))
+							d(c + u), e.is(Mn) && !r && f() && (h *= Jn, rt(u) < zn && v(p(f(!0)), $n, !1, void 0, !0))
 						}
 
 						function E() {
@@ -5093,7 +5093,7 @@
 
 						function p() {
 							re(l), t.Slides.forEach((function(e) {
-								Je(e.slide, ii).forEach((function(t) {
+								$e(e.slide, ii).forEach((function(t) {
 									var i = Ue(t, ti),
 										r = Ue(t, ni);
 									if (i !== t.src || r !== t.srcset) {
@@ -5121,7 +5121,7 @@
 						function h(e, t) {
 							var n = e[0],
 								i = e[1];
-							ze(i.slide, An), "error" !== t.type && (Ke(e[2]), je(n, ""), a(Vt, n, i), a(xt)), c && v()
+							Je(i.slide, An), "error" !== t.type && (Ke(e[2]), je(n, ""), a(Vt, n, i), a(xt)), c && v()
 						}
 
 						function v() {
@@ -5149,7 +5149,7 @@
 							m = [];
 
 						function y() {
-							i && (Ke(l.pagination ? oe(i.children) : i), ze(i, r), re(m), i = null), o.destroy()
+							i && (Ke(l.pagination ? oe(i.children) : i), Je(i, r), re(m), i = null), o.destroy()
 						}
 
 						function E(e) {
@@ -5179,7 +5179,7 @@
 								t = N(d());
 							if (e) {
 								var n = e.button;
-								ze(n, On), Re(n, Zt), Fe(n, Xt, -1)
+								Je(n, On), Re(n, Zt), Fe(n, Xt, -1)
 							}
 							if (t) {
 								var r = t.button;
@@ -5199,7 +5199,7 @@
 										s = n.i18n,
 										a = n.perPage,
 										p = f() ? t : it(t / a);
-									be(i = l.pagination || Pe("ul", o.pagination, l.track.parentElement), r = gn + "--" + _()), Fe(i, Qt, "tablist"), Fe(i, en, s.select), Fe(i, rn, _() === Jt ? "vertical" : "");
+									be(i = l.pagination || Pe("ul", o.pagination, l.track.parentElement), r = gn + "--" + _()), Fe(i, Qt, "tablist"), Fe(i, en, s.select), Fe(i, rn, _() === $t ? "vertical" : "");
 									for (var d = 0; d < p; d++) {
 										var h = Pe("li", null, i),
 											v = Pe("button", {
@@ -5252,7 +5252,7 @@
 						}
 
 						function u() {
-							Fe(t.Elements.list, rn, n.direction === Jt ? "vertical" : "")
+							Fe(t.Elements.list, rn, n.direction === $t ? "vertical" : "")
 						}
 
 						function l(t) {
@@ -5424,7 +5424,7 @@
 							return _e(Ee(e), i)
 						}
 					}), this.splides = [], this._o = {}, this._E = {};
-					var r = he(t) ? $e(document, t) : t;
+					var r = he(t) ? ze(document, t) : t;
 					Ze(r, r + " is invalid."), this.root = r, n = Ce({
 						label: Ue(r, en) || "",
 						labelledby: Ue(r, tn) || ""
@@ -5659,19 +5659,20 @@
 						className: pi("splide__slide", i)
 					}, o), n)
 				};
-			var yi = "_carousel_1k560_1",
-				Ei = "_slide_1k560_9",
-				gi = "_slideImage_1k560_15",
-				_i = "_isVisible_1k560_20",
-				Ni = "_isActiveSlide_1k560_23",
-				Ti = "_arrow_1k560_27",
-				bi = "_disabledArrow_1k560_44",
-				Oi = "_chevron_1k560_47",
-				xi = "_prev_1k560_50",
-				Ii = "_dots_1k560_53",
-				ki = "_dot_1k560_53",
-				Ai = "_isActiveDot_1k560_70";
-			const Di = ({
+			var yi = "_carousel_enqhw_7",
+				Ei = "_slide_enqhw_15",
+				gi = "_slideImage_enqhw_25",
+				_i = "_isVisible_enqhw_31",
+				Ni = "_isActiveSlide_enqhw_34",
+				Ti = "_arrow_enqhw_39",
+				bi = "_disabledArrow_enqhw_60",
+				Oi = "_chevron_enqhw_63",
+				xi = "_prev_enqhw_66",
+				Ii = "_next_enqhw_73",
+				ki = "_dots_enqhw_79",
+				Ai = "_dot_enqhw_79",
+				Di = "_isActiveDot_enqhw_97";
+			const Si = ({
 				factions: e,
 				onChange: t
 			}) => {
@@ -5679,10 +5680,10 @@
 					o = Object(c.c)(),
 					[s, u] = Object(i.useState)(0);
 				return Object(i.useEffect)(() => {
-					const e = document.querySelectorAll(`.${Ai}`);
-					e.length && e.forEach(e => e.classList.remove(`.${Ai}`));
+					const e = document.querySelectorAll(`.${Di}`);
+					e.length && e.forEach(e => e.classList.remove(`.${Di}`));
 					const t = document.querySelectorAll(".splide__pagination__page.is-active");
-					t.length && t[0].classList.add(`.${Ai}`)
+					t.length && t[0].classList.add(`.${Di}`)
 				}, [s]), r.a.createElement(vi, {
 					ref: n,
 					hasTrack: !1,
@@ -5691,14 +5692,14 @@
 						type: "slide",
 						perMove: 1,
 						drag: !1,
-						width: "calc(100% - 48px)",
-						fixedWidth: "172px",
+						width: "calc(100% - 90px)",
+						fixedWidth: "202px",
 						focus: "center",
 						trimSpace: !1,
 						speed: 600,
 						classes: {
-							pagination: `splide__pagination ${Ii}`,
-							page: `splide__pagination__page ${ki}`
+							pagination: `splide__pagination ${ki}`,
+							page: `splide__pagination__page ${Ai}`
 						}
 					},
 					onMove: (e, n) => {
@@ -5721,15 +5722,15 @@
 				})))), r.a.createElement("div", {
 					className: "splide__arrows"
 				}, r.a.createElement("button", {
-					className: y("splide__arrow splide__arrow--prev", Ti, {
+					className: y("splide__arrow splide__arrow--prev", Ti, xi, {
 						[bi]: 0 === s
 					}),
 					disabled: 0 === s
 				}, r.a.createElement("img", {
 					src: a.e.Chevron,
-					className: y(Oi, xi)
+					className: Oi
 				})), r.a.createElement("button", {
-					className: y("splide__arrow splide__arrow--next", Ti, {
+					className: y("splide__arrow splide__arrow--next", Ti, Ii, {
 						[bi]: s === e.length - 1
 					}),
 					disabled: s === e.length - 1
@@ -5738,7 +5739,7 @@
 					className: Oi
 				}))))
 			};
-			const Si = {
+			const wi = {
 				CheckmarkGreen: "https://www.redditstatic.com/crypto-assets/v2/checkmark-green-7355fd2559.svg",
 				CheckmarkGrey: "https://www.redditstatic.com/crypto-assets/v2/checkmark-grey-1978f4add3.svg",
 				Chevron: "https://www.redditstatic.com/crypto-assets/v2/chevron-ca25b73dda.svg",
@@ -7272,4 +7273,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.21f3f349e20118a30b2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/1.b364299aea4cfb279b4a.js.map

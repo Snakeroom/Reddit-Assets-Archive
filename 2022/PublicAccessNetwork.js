@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b73eaf7238c46af7db8a.js
-// Retrieved at 5/19/2022, 10:20:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c585918888dd6a8dbec5.js
+// Retrieved at 5/19/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PublicAccessNetwork"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, s) {
@@ -2753,7 +2753,7 @@
 					className: b.a.TrashIcon
 				}));
 				const S = t && t.id === h ? t.accountIcon : i ? l.a : null != n ? n : void 0;
-				return Object(m.b)(S) ? r.a.createElement("div", {
+				return Object(m.a)(S) ? r.a.createElement("div", {
 					className: s,
 					style: O
 				}, r.a.createElement(c.a, {
@@ -7924,4 +7924,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.b73eaf7238c46af7db8a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PublicAccessNetwork.c585918888dd6a8dbec5.js.map

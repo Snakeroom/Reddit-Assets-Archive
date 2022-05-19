@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.67b1e84c380b84bf942b.js
-// Retrieved at 5/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.0a94f990ed9ec7105ac8.js
+// Retrieved at 5/19/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx": function(e, t, n) {
@@ -96,26 +96,30 @@
 				onClose: e,
 				onOverlayClick: e
 			}));
-			var _ = n("./src/reddit/hooks/usePreloadModal.ts"),
-				p = n("./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.m.less"),
-				E = n.n(p);
+			var p = n("./src/reddit/helpers/trackers/marketplace/claims.ts"),
+				_ = n("./src/reddit/hooks/usePreloadModal.ts"),
+				E = n("./src/reddit/hooks/useTracking.ts"),
+				O = n("./src/reddit/components/Econ/Marketplace/NftProfileUnit/index.m.less"),
+				b = n.n(O);
 			t.default = e => {
 				let {
 					className: t,
-					imageUrl: n
+					imageUrl: n,
+					origin: r
 				} = e;
-				const r = Object(s.d)();
+				const d = Object(s.d)(),
+					l = Object(E.a)();
 				Object(_.a)(m);
-				const d = Object(c.c)(n);
-				return d ? o.a.createElement("div", {
+				const f = Object(c.c)(n);
+				return f ? o.a.createElement("div", {
 					className: t
 				}, o.a.createElement(i.a, null, o.a.createElement(c.b, {
 					imageUrl: n
 				}), o.a.createElement(c.a, {
-					className: E.a.detailsButton,
+					className: b.a.detailsButton,
 					onClick: () => {
-						r(Object(a.h)(u.a.ECON_NFT_PRODUCT_DETAILS, {
-							itemId: d
+						l(Object(p.e)(r)), d(Object(a.h)(u.a.ECON_NFT_PRODUCT_DETAILS, {
+							itemId: f
 						}))
 					}
 				}))) : null
@@ -155,4 +159,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.67b1e84c380b84bf942b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.0a94f990ed9ec7105ac8.js.map
