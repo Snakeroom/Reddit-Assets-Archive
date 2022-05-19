@@ -1,7 +1,37 @@
-// https://www.redditstatic.com/desktop2x/ModListing.74b013fbf1c081db2835.js
-// Retrieved at 5/18/2022, 1:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModListing.32956d4aa57bc1ebebcb.js
+// Retrieved at 5/18/2022, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModListing"], {
+		"./node_modules/classnames/index.js": function(e, t, n) {
+			var r;
+			! function() {
+				"use strict";
+				var n = {}.hasOwnProperty;
+
+				function s() {
+					for (var e = [], t = 0; t < arguments.length; t++) {
+						var r = arguments[t];
+						if (r) {
+							var o = typeof r;
+							if ("string" === o || "number" === o) e.push(r);
+							else if (Array.isArray(r)) {
+								if (r.length) {
+									var i = s.apply(null, r);
+									i && e.push(i)
+								}
+							} else if ("object" === o)
+								if (r.toString === Object.prototype.toString)
+									for (var a in r) n.call(r, a) && r[a] && e.push(a);
+								else e.push(r.toString())
+						}
+					}
+					return e.join(" ")
+				}
+				e.exports ? (s.default = s, e.exports = s) : void 0 === (r = function() {
+					return s
+				}.apply(t, [])) || (e.exports = r)
+			}()
+		},
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
 			! function(e, t) {
 				"use strict";
@@ -886,6 +916,16 @@
 						listingName: t
 					}))
 				}
+		},
+		"./src/reddit/components/BackToSubreddit/index.m.less": function(e, t, n) {
+			e.exports = {
+				backToSubreddit: "_3aAvvioBKBNnlJqKytAVAd",
+				innerContainer: "_3aVffPeM6Nkqs7D0RJ5FBs",
+				back: "_17MxNCYEMmDof9NnT6ffxl",
+				title: "_2VB8YvVdvxx0h0VGYVrpBX",
+				subredditIcon: "_2Aw3HO2EUDcP7F481ZxyYl",
+				content: "uhMLc-O1VODjzminrp8py"
+			}
 		},
 		"./src/reddit/components/BackToTop/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -4472,75 +4512,104 @@
 				d = n("./src/reddit/constants/elementClassNames.ts"),
 				l = n("./src/reddit/constants/screenWidths.ts"),
 				u = n("./src/reddit/contexts/NavbarExp.ts"),
-				m = n("./src/reddit/components/StructuredStyles/BladeManager/index.tsx"),
-				p = n("./src/reddit/layout/page/Listing/index.m.less"),
-				h = n.n(p);
+				m = n("./node_modules/classnames/index.js"),
+				p = n.n(m),
+				h = n("./node_modules/react-router-dom/esm/react-router-dom.js"),
+				b = n("./src/lib/constants/icons.ts"),
+				f = n("./src/reddit/components/SubredditIcon/index.tsx"),
+				g = n("./src/reddit/icons/fonts/index.tsx"),
+				v = n("./src/reddit/components/BackToSubreddit/index.m.less"),
+				y = n.n(v);
+			var x = e => {
+					const {
+						subredditName: t
+					} = e, n = `/${t}`;
+					return s.a.createElement(h.a, {
+						className: y.a.backToSubreddit,
+						to: n
+					}, s.a.createElement("div", {
+						className: y.a.innerContainer
+					}, s.a.createElement(g.a, {
+						name: b.a.back,
+						className: p()(y.a.content, y.a.back)
+					}), s.a.createElement(f.b, {
+						className: p()(y.a.content, y.a.subredditIcon)
+					}), s.a.createElement("span", {
+						className: p()(y.a.content, y.a.title)
+					}, t)))
+				},
+				O = n("./src/reddit/components/StructuredStyles/BladeManager/index.tsx"),
+				_ = n("./src/reddit/layout/page/Listing/index.m.less"),
+				E = n.n(_);
 			t.a = e => {
 				const {
 					backgroundColor: t,
-					className: n,
+					backToSubredditName: n,
+					className: m,
 					containerRef: p,
-					content: b,
-					contentBanner: f,
-					contentClassName: g,
-					contentNavBar: v,
-					disableFullscreen: y,
-					fitPageToContent: x,
-					forcedLayout: O,
-					hideOnlyChildMargin: _,
-					isCollectionLayout: E,
-					isPageSwapped: w,
-					maxWidth: j,
-					navBar: I,
-					redditStyle: C,
-					sidebar: k,
-					sidebars: S,
-					trendingUnit: N,
-					subredditId: T
-				} = e, P = N ? "28px" : "0", M = w ? {
+					content: h,
+					contentBanner: b,
+					contentClassName: f,
+					contentNavBar: g,
+					disableFullscreen: v,
+					fitPageToContent: y,
+					forcedLayout: _,
+					hideOnlyChildMargin: w,
+					isCollectionLayout: j,
+					isPageSwapped: I,
+					maxWidth: C,
+					navBar: k,
+					redditStyle: S,
+					sidebar: N,
+					sidebars: T,
+					trendingUnit: P,
+					subredditId: M
+				} = e, L = P ? "28px" : "0", R = I ? {
 					marginRight: `${c.q}px`,
-					marginTop: P
+					marginTop: L
 				} : {
 					marginLeft: `${c.q}px`,
-					marginTop: P
-				}, L = k && s.a.createElement("div", {
-					className: Object(a.a)(h.a.sidebar, E ? h.a["m-collectionLayout"] : h.a.defaultLayout),
-					style: M
-				}, k), R = s.a.createElement(i.a, {
-					hideOnlyChildMargin: _,
-					className: g,
-					disableFullscreen: y,
-					fitPageToContent: x,
-					forcedLayout: O,
-					isCollectionLayout: E
-				}, f, b);
-				let D;
-				D = S ? s.a.createElement(s.a.Fragment, null, S[0], R, S[1]) : w ? s.a.createElement(s.a.Fragment, null, L, R) : s.a.createElement(s.a.Fragment, null, R, L);
-				const B = y ? `${j||l.a+2*c.m}px` : "100%",
-					F = Object(r.useContext)(u.a);
-				return s.a.createElement(m.a, {
-					subredditId: T
+					marginTop: L
+				}, D = N && s.a.createElement("div", {
+					className: Object(a.a)(E.a.sidebar, j ? E.a["m-collectionLayout"] : E.a.defaultLayout),
+					style: R
+				}, N), B = s.a.createElement(i.a, {
+					hideOnlyChildMargin: w,
+					className: f,
+					disableFullscreen: v,
+					fitPageToContent: y,
+					forcedLayout: _,
+					isCollectionLayout: j
+				}, b, n && s.a.createElement(x, {
+					subredditName: n
+				}), h);
+				let F;
+				F = T ? s.a.createElement(s.a.Fragment, null, T[0], B, T[1]) : I ? s.a.createElement(s.a.Fragment, null, D, B) : s.a.createElement(s.a.Fragment, null, B, D);
+				const A = v ? `${C||l.a+2*c.m}px` : "100%",
+					U = Object(r.useContext)(u.a);
+				return s.a.createElement(O.a, {
+					subredditId: M
 				}, s.a.createElement("div", {
-					className: Object(a.a)(h.a.outerContainer, d.i, n, {
-						[h.a.outerContainerExp]: F
+					className: Object(a.a)(E.a.outerContainer, d.i, m, {
+						[E.a.outerContainerExp]: U
 					}),
 					ref: p
 				}, s.a.createElement(o.a, {
 					className: d.h,
-					redditStyle: C,
+					redditStyle: S,
 					backgroundColor: t
 				}), s.a.createElement("div", {
-					className: h.a.innerContainer
-				}, I, v, (e => e.hero ? s.a.createElement(s.a.Fragment, null, e.hero) : null)(e), s.a.createElement("div", {
+					className: E.a.innerContainer
+				}, k, g, (e => e.hero ? s.a.createElement(s.a.Fragment, null, e.hero) : null)(e), s.a.createElement("div", {
 					style: {
-						maxWidth: B
+						maxWidth: A
 					}
-				}, N), s.a.createElement("div", {
-					className: h.a.body,
+				}, P), s.a.createElement("div", {
+					className: E.a.body,
 					style: {
-						maxWidth: B
+						maxWidth: A
 					}
-				}, D))))
+				}, F))))
 			}
 		},
 		"./src/reddit/layout/row/Inline/index.m.less": function(e, t, n) {
@@ -7231,4 +7300,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.74b013fbf1c081db2835.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModListing.32956d4aa57bc1ebebcb.js.map

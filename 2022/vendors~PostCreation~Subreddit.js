@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~PostCreation~Subreddit.0bcea02e0168fc22fa2f.js
-// Retrieved at 4/5/2022, 2:40:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~PostCreation~Subreddit.06415662ca33bfde710e.js
+// Retrieved at 5/18/2022, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~PostCreation~Subreddit", "vendors~Reddit~StandalonePostPage"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -251,6 +251,36 @@
 					return !s(e, t, n)
 				}, n._detect = t, n.detect = t, n
 			}, e.exports ? e.exports = r() : n("./node_modules/webpack/buildin/amd-define.js")("bowser", r)
+		},
+		"./node_modules/classnames/index.js": function(e, t, n) {
+			var r;
+			! function() {
+				"use strict";
+				var n = {}.hasOwnProperty;
+
+				function o() {
+					for (var e = [], t = 0; t < arguments.length; t++) {
+						var r = arguments[t];
+						if (r) {
+							var i = typeof r;
+							if ("string" === i || "number" === i) e.push(r);
+							else if (Array.isArray(r)) {
+								if (r.length) {
+									var s = o.apply(null, r);
+									s && e.push(s)
+								}
+							} else if ("object" === i)
+								if (r.toString === Object.prototype.toString)
+									for (var a in r) n.call(r, a) && r[a] && e.push(a);
+								else e.push(r.toString())
+						}
+					}
+					return e.join(" ")
+				}
+				e.exports ? (o.default = o, e.exports = o) : void 0 === (r = function() {
+					return o
+				}.apply(t, [])) || (e.exports = r)
+			}()
 		},
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
 			! function(e, t) {
@@ -2446,4 +2476,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation~Subreddit.0bcea02e0168fc22fa2f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~PostCreation~Subreddit.06415662ca33bfde710e.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/vendors~Reddit.70a0c6ef2d28bd45aaa0.js
-// Retrieved at 5/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/vendors~Reddit.651d232f7909988774c1.js
+// Retrieved at 5/18/2022, 8:10:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["vendors~Reddit"], {
 		"./node_modules/@r/frames/compiled.js": function(e, o, r) {
@@ -90,7 +90,7 @@
 					m(e) ? d = [t] : -1 === d.indexOf(e) && (y(t), d.push(e), l = u(d))
 				};
 
-				function E(o) {
+				function w(o) {
 					if (o.origin === e.location.origin || l.test(o.origin) || "null" === o.origin) {
 						var r = {};
 						try {
@@ -109,13 +109,13 @@
 						}
 					}
 				}
-				var w = o.listen = function(e) {
-					-1 === c.indexOf(e) && (c.push(e), f = i(c)), v || (h("message", E), v = !0)
+				var E = o.listen = function(e) {
+					-1 === c.indexOf(e) && (c.push(e), f = i(c)), v || (h("message", w), v = !0)
 				};
 				o.stopListening = function(e) {
-					var o = c.indexOf(e); - 1 !== o && (c.splice(o, 1), c.length ? f = i(c) : (g("message", E), v = !1))
+					var o = c.indexOf(e); - 1 !== o && (c.splice(o, 1), c.length ? f = i(c) : (g("message", w), v = !1))
 				}, o.proxy = function(e, o) {
-					w(e), Array.isArray(o) || (o = [o]);
+					E(e), Array.isArray(o) || (o = [o]);
 					var r = p[e];
 					r ? r.targets = [].concat(r.targets, o) : r = {
 						targets: o
@@ -359,11 +359,11 @@
 				y = ["root", "rootMargin", "threshold", "disabled"],
 				j = Object.prototype,
 				O = j.hasOwnProperty,
-				E = j.toString,
-				w = function(e) {
+				w = j.toString,
+				E = function(e) {
 					return b.reduce((function(o, r) {
 						if (O.call(e, r)) {
-							var t = "root" === r && "[object String]" === E.call(e[r]);
+							var t = "root" === r && "[object String]" === w.call(e[r]);
 							o[r] = t ? document.querySelector(e[r]) : e[r]
 						}
 						return o
@@ -384,7 +384,7 @@
 							}
 							o.targetNode = e && Object(s.findDOMNode)(e)
 						})), _(m(o), "observe", (function() {
-							return null != o.props.children && !o.props.disabled && (o.targetNode ? (o.observer = f(w(o.props)), o.target = o.targetNode, e = m(o), u.has(e.observer) || u.set(e.observer, new Set), u.get(e.observer).add(e), e.observer.observe(e.target), !0) : (g.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
+							return null != o.props.children && !o.props.disabled && (o.targetNode ? (o.observer = f(E(o.props)), o.target = o.targetNode, e = m(o), u.has(e.observer) || u.set(e.observer, new Set), u.get(e.observer).add(e), e.observer.observe(e.target), !0) : (g.errorReporter("ReactIntersectionObserver: Can't find DOM node in the provided children. Make sure to render at least one DOM node in the tree."), !1));
 							var e
 						})), _(m(o), "unobserve", (function(e) {
 							! function(e, o) {
@@ -472,6 +472,36 @@
 		"./node_modules/@researchgate/react-intersection-observer/node_modules/prop-types/lib/ReactPropTypesSecret.js": function(e, o, r) {
 			"use strict";
 			e.exports = "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED"
+		},
+		"./node_modules/classnames/index.js": function(e, o, r) {
+			var t;
+			! function() {
+				"use strict";
+				var r = {}.hasOwnProperty;
+
+				function n() {
+					for (var e = [], o = 0; o < arguments.length; o++) {
+						var t = arguments[o];
+						if (t) {
+							var s = typeof t;
+							if ("string" === s || "number" === s) e.push(t);
+							else if (Array.isArray(t)) {
+								if (t.length) {
+									var a = n.apply(null, t);
+									a && e.push(a)
+								}
+							} else if ("object" === s)
+								if (t.toString === Object.prototype.toString)
+									for (var i in t) r.call(t, i) && t[i] && e.push(i);
+								else e.push(t.toString())
+						}
+					}
+					return e.join(" ")
+				}
+				e.exports ? (n.default = n, e.exports = n) : void 0 === (t = function() {
+					return n
+				}.apply(o, [])) || (e.exports = t)
+			}()
 		},
 		"./node_modules/lodash/_arrayEvery.js": function(e, o) {
 			e.exports = function(e, o) {
@@ -700,4 +730,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit.70a0c6ef2d28bd45aaa0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/vendors~Reddit.651d232f7909988774c1.js.map
