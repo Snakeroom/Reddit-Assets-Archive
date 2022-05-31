@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.d0c2edce301fb152f229.js
-// Retrieved at 5/31/2022, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.1edc6cf7b93208d33901.js
+// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -2148,9 +2148,9 @@
 					}, this.redirectTo = function(t) {
 						let n = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
 						const s = {
-							[j.q]: "true"
+							[j.o]: "true"
 						};
-						n && (e.props.isCommentBeforeSignUpEnabled ? e.props.isRegularOnboardingEnabled && (s[j.x] = "true") : s[j.x] = "true"), e.isSignupModalSuccessful && (s[j.y] = "true"), window.location.replace(Object(d.a)(t, s))
+						n && (e.props.isCommentBeforeSignUpEnabled ? e.props.isRegularOnboardingEnabled && (s[j.v] = "true") : s[j.v] = "true"), e.isSignupModalSuccessful && (s[j.w] = "true"), window.location.replace(Object(d.a)(t, s))
 					}, this.closedByUser = () => {
 						const {
 							actionSource: e,
@@ -6390,7 +6390,7 @@
 					Z = w ? Object(ot.u)(w) : s ? Object(ot.u)(s) : void 0,
 					$ = O[Y],
 					ee = Object(Oo.e)({
-						...ho()(o || {}, Mo.v),
+						...ho()(o || {}, Mo.t),
 						q: Y
 					});
 				Object(u.useEffect)(() => {
@@ -7082,7 +7082,7 @@
 				},
 				wi = e => {
 					const t = Object(xt.q)(e);
-					return Boolean((null == t ? void 0 : t[Mo.w]) && Object(ji.a)(t[Mo.w]))
+					return Boolean((null == t ? void 0 : t[Mo.u]) && Object(ji.a)(t[Mo.u]))
 				},
 				Ni = (e, t, n) => {
 					var s;
@@ -9746,7 +9746,7 @@
 					const j = Object(P.a)(this.previousLocation, b),
 						S = E || j ? this.previousLocation : b,
 						_ = E || j ? this.previousPage : t,
-						w = !(!(_ && _.meta && _.meta.name === O.Nb.SEARCH_RESULTS && _ && _.queryParams) || _.queryParams[Mo.u]),
+						w = !(!(_ && _.meta && _.meta.name === O.Nb.SEARCH_RESULTS && _ && _.queryParams) || _.queryParams[Mo.s]),
 						N = !(!_ || !_.meta || _.meta.name !== O.Nb.MODERATION_PAGES),
 						M = Object(It.x)(_),
 						I = this.getIsPostCollection(),
@@ -17214,8 +17214,8 @@
 						currentPage: d
 					} = o.platform;
 					if (d) {
-						const e = [ct.i];
-						if (Object(qt.j)(o) && e.push(ct.f), e.length > 0) {
+						const e = [ct.g];
+						if (Object(qt.j)(o) && e.push(ct.d), e.length > 0) {
 							const t = Object(w.a)(d.url, e);
 							t !== d.url && s.dispatch(Object(p.c)(t))
 						}
@@ -17286,7 +17286,7 @@
 						advertiserCategory: v
 					}), l.dispatch(Cs({
 						localStorageData: d
-					})), Object(cs.c)(p) && (l.dispatch(ae()), history.replaceState(history.state, "", Object(w.a)(window.location.href, [ct.x]))), l.dispatch(ys()), window.addEventListener("load", () => {
+					})), Object(cs.c)(p) && (l.dispatch(ae()), history.replaceState(history.state, "", Object(w.a)(window.location.href, [ct.v]))), l.dispatch(ys()), window.addEventListener("load", () => {
 						const e = l.getState(),
 							{
 								currentPage: r
@@ -17319,19 +17319,19 @@
 							const i = A.a.timing.domInteractive - A.a.timing.navigationStart;
 							Object(Pn.k)(r.routeMatch, l.getState(), H.TimerType.Initial, i, r.urlParams);
 							const d = Object(k.a)(window.location.href);
-							d && d.get(ct.a) && history.replaceState(history.state, "", Object(w.a)(window.location.href, [ct.a])), Object(L.a)(d.get(ct.G)) && l.dispatch(Object(pe.f)({
+							d && d.get(ct.a) && history.replaceState(history.state, "", Object(w.a)(window.location.href, [ct.a])), Object(L.a)(d.get(ct.E)) && l.dispatch(Object(pe.f)({
 								kind: Xn.b.SuccessCommunity,
 								text: s.fbt._("Email verification complete", null, {
 									hk: "bqMP6"
 								})
-							})), d.get(ct.H) && (l.dispatch(Object(z.a)(d.get(ct.H))), history.replaceState(history.state, "", Object(w.a)(window.location.href, [ct.H])));
+							})), d.get(ct.F) && (l.dispatch(Object(z.a)(d.get(ct.F))), history.replaceState(history.state, "", Object(w.a)(window.location.href, [ct.F])));
 							let u = !1;
 							const m = Object(O.S)(e);
 							(Object(xn.b)(at.b.JustLoggedIn) || m) && (l.dispatch(Object(pe.f)({
 								text: s.fbt._("Successfully logged in!", null, {
 									hk: "2POUVB"
 								})
-							})), u = !0, Object(xn.c)(at.b.JustLoggedIn), history.replaceState(history.state, "", Object(w.a)(window.location.href, [ct.q]))), Object(xn.b)(at.b.JustLoggedOut) && (u = !0, Object(xn.c)(at.b.JustLoggedOut)), re().then(e => {
+							})), u = !0, Object(xn.c)(at.b.JustLoggedIn), history.replaceState(history.state, "", Object(w.a)(window.location.href, [ct.o]))), Object(xn.b)(at.b.JustLoggedOut) && (u = !0, Object(xn.c)(at.b.JustLoggedOut)), re().then(e => {
 								let {
 									subscribeToPermissionsChange: t
 								} = e;
@@ -20285,4 +20285,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "vendors~Reddit", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.d0c2edce301fb152f229.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.1edc6cf7b93208d33901.js.map

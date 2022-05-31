@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.ece4fcaae286d80fd165.js
-// Retrieved at 5/31/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.9c49d90d6e42cebc032a.js
+// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -5309,7 +5309,7 @@
 						nsfwSessionSetting: R
 					} = Object(h.b)(),
 					N = Object(l.e)({
-						...ae()(w || {}, ce.v),
+						...ae()(w || {}, ce.t),
 						q: o.searchQuery,
 						restrict_sr: T ? "1" : ""
 					}),
@@ -6609,10 +6609,10 @@
 				const p = [];
 				if (d.isTypeaheadSuggestion) t = `/${d.isProfile?d.searchQuery.replace("u/","user/"):d.searchQuery}`;
 				else {
-					if (p.push(`${a.r}=${Object(s.b)(d.rawQuery||d.searchQuery)}`), t = "/search/", d.section !== o.c.trending && d.section !== o.c.recent || i && i.source && p.push(`source=${i.source}`), n && u ? (t = `/r/${n.name}${t}`, p.push(`${a.u}=1`), p.push(`${a.C}=${n.isNSFW?"1":""}`)) : !n && d.subredditOrProfileRestrictedName && (t = `/${d.subredditOrProfileRestrictedName}${t}`, p.push(`${a.u}=1`)), c) {
-						t = `/user/${c.url.split("/")[2]}/m/${c.name}${t}`, p.push(`${a.u}=1`), p.push(`${a.C}=${c.isNSFW?"1":""}`), p.push(`${a.l}=1`)
+					if (p.push(`${a.p}=${Object(s.b)(d.rawQuery||d.searchQuery)}`), t = "/search/", d.section !== o.c.trending && d.section !== o.c.recent || i && i.source && p.push(`source=${i.source}`), n && u ? (t = `/r/${n.name}${t}`, p.push(`${a.s}=1`), p.push(`${a.A}=${n.isNSFW?"1":""}`)) : !n && d.subredditOrProfileRestrictedName && (t = `/${d.subredditOrProfileRestrictedName}${t}`, p.push(`${a.s}=1`)), c) {
+						t = `/user/${c.url.split("/")[2]}/m/${c.name}${t}`, p.push(`${a.s}=1`), p.push(`${a.A}=${c.isNSFW?"1":""}`), p.push(`${a.j}=1`)
 					}
-					i && i.category && p.push(`${a.c}=${i.category}`), l && p.push(`${a.k}=1`), (null == i ? void 0 : i.t) && i.t !== r.ic.ALL && p.push(`${a.E}=${i.t}`), (null == i ? void 0 : i.sort) && p.push(`${a.z}=${i.sort}`), (null == i ? void 0 : i.type) && (i.type.includes(r.cc.Posts) || p.push(`${a.F}=${i.type[0]}`))
+					l && p.push(`${a.i}=1`), (null == i ? void 0 : i.t) && i.t !== r.ic.ALL && p.push(`${a.C}=${i.t}`), (null == i ? void 0 : i.sort) && p.push(`${a.x}=${i.sort}`), (null == i ? void 0 : i.type) && (i.type.includes(r.cc.Posts) || p.push(`${a.D}=${i.type[0]}`))
 				}
 				return {
 					url: t,
@@ -26028,4 +26028,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.ece4fcaae286d80fd165.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.9c49d90d6e42cebc032a.js.map

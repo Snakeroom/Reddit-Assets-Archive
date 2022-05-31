@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5c94208c8fdc1586f3b5.js
-// Retrieved at 5/31/2022, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5e794868131f9d26fe91.js
+// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage", "CommentsPage"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -474,7 +474,7 @@
 					}, k = v.b[l] === v.a.PROFILE, {
 						hasSortParam: P,
 						sortToUse: I
-					} = Object(S.a)(E, x), w = ["context", "depth", "limit", f.g].reduce((e, t) => {
+					} = Object(S.a)(E, x), w = ["context", "depth", "limit", f.e].reduce((e, t) => {
 						const s = parseInt(O[t]);
 						return isNaN(s) || (e[t] = s), e
 					}, {
@@ -1076,7 +1076,7 @@
 					} = x, {
 						hasSortParam: w,
 						sortToUse: N
-					} = Object(A.a)(s(), u), L = null === (a = null === (i = Object(J.b)(s())) || void 0 === i ? void 0 : i.routeMatch) || void 0 === a ? void 0 : a.route.chunk, F = ["context", "depth", "limit", R.g].reduce((e, t) => {
+					} = Object(A.a)(s(), u), L = null === (a = null === (i = Object(J.b)(s())) || void 0 === i ? void 0 : i.routeMatch) || void 0 === a ? void 0 : a.route.chunk, F = ["context", "depth", "limit", R.e].reduce((e, t) => {
 						const s = parseInt(x[t]);
 						return isNaN(s) || (e[t] = s), e
 					}, {
@@ -11572,4 +11572,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5c94208c8fdc1586f3b5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage.5e794868131f9d26fe91.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e86d84d10abd8d4ebe21.js
-// Retrieved at 5/31/2022, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.edfd2751c081e1fce6df.js
+// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("165535"),
+				buildNumber: Object(r.c)("165538"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1654023053"),
+				buildTimestamp: Object(r.b)("1654025366"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -6076,14 +6076,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %cfdaf48a09bd0ab42665e99d0b6591b34939a1251-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c982396da965b94f56131c1d318505d5f0f4787df-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "fdaf48a09bd0ab42665e99d0b6591b34939a1251-production",
+						release: "982396da965b94f56131c1d318505d5f0f4787df-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6692,7 +6692,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "fdaf48a09bd0ab42665e99d0b6591b34939a1251-production",
+							releaseClient: "982396da965b94f56131c1d318505d5f0f4787df-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -7262,14 +7262,14 @@
 							t: i,
 							type: n
 						};
-					return void 0 !== e.include_over_18 && (o.include_over_18 = u(l(e.include_over_18))), void 0 !== e.restrict_sr && (o.restrict_sr = u(l(e.restrict_sr))), void 0 !== e.sr_nsfw && (o.sr_nsfw = u(l(e.sr_nsfw))), e.is_multi && (o.is_multi = u(l(e.is_multi))), e.category && (o.category = e.category), e[s.d] && (o.category_name = e.category_name), e[s.A] && (o.source = e.source), o
+					return void 0 !== e.include_over_18 && (o.include_over_18 = u(l(e.include_over_18))), void 0 !== e.restrict_sr && (o.restrict_sr = u(l(e.restrict_sr))), void 0 !== e.sr_nsfw && (o.sr_nsfw = u(l(e.sr_nsfw))), e.is_multi && (o.is_multi = u(l(e.is_multi))), e[s.y] && (o.source = e.source), o
 				},
 				_ = (e, t) => {
 					const i = e.f;
 					if (i) return {
-						[s.r]: i,
-						[s.u]: "1",
-						[s.k]: t ? "1" : "",
+						[s.p]: i,
+						[s.s]: "1",
+						[s.i]: t ? "1" : "",
 						sort: r.Zb.New,
 						type: r.cc.Posts
 					}
@@ -7281,7 +7281,7 @@
 			t.b = function(e, t) {
 				let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
 					n = e || "!";
-				return t && (n = `${n}--[user:${t}]`), i.include_over_18 && (n = `${n}--[include_over_18:${i.include_over_18}]`), i.q && (n = `${n}--[q:${i.q}]`), i.restrict_sr && (n = `${n}--[restrict_sr:${i.restrict_sr}]`), i.sort && (n = `${n}--[sort:${i.sort}]`), i.t && (n = `${n}--[t:${i.t}]`), i.category && (n = `${n}--[c:${i.category}]`), i.type && (n = `${n}--[type:${o(i.type)}]`), n.toLowerCase()
+				return t && (n = `${n}--[user:${t}]`), i.include_over_18 && (n = `${n}--[include_over_18:${i.include_over_18}]`), i.q && (n = `${n}--[q:${i.q}]`), i.restrict_sr && (n = `${n}--[restrict_sr:${i.restrict_sr}]`), i.sort && (n = `${n}--[sort:${i.sort}]`), i.t && (n = `${n}--[t:${i.t}]`), i.type && (n = `${n}--[type:${o(i.type)}]`), n.toLowerCase()
 			}
 		},
 		"./src/lib/mapToObject/index.ts": function(e, t, i) {
@@ -13210,7 +13210,7 @@
 						dist: O.dist,
 						sort: v,
 						t: y,
-						...o()(f, u.n)
+						...o()(f, u.l)
 					});
 					if (j.ok) {
 						const t = a.listings.postOrder.ids[T],
@@ -13527,11 +13527,10 @@
 						} = w.platform.currentPage.urlParams;
 					let O;
 					T && E && (O = Object(h.h)(T, E));
-					const N = y || s()(v, u.v),
+					const N = y || s()(v, u.t),
 						C = Object(a.e)(N),
 						P = {
 							...C,
-							t: C.category ? o.ic.DAY : C.t,
 							type: e
 						},
 						D = Object(a.b)(S || E, T, P);
@@ -14338,7 +14337,7 @@
 					}, !1))
 				}, O = Object(n.a)(_.a), I = Object(n.a)(_.k), R = Object(n.a)(_.e), F = Object(n.a)(_.l), N = () => async (e, t) => {
 					const i = Object(c.q)(t());
-					!!i && "true" === i[d.y] && (e(F()), s(window.location.href, [d.y]))
+					!!i && "true" === i[d.w] && (e(F()), s(window.location.href, [d.w]))
 				}, C = () => async (e, t, i) => {
 					let {
 						gqlContext: n
@@ -18089,116 +18088,110 @@
 			"use strict";
 			i.d(t, "a", (function() {
 				return n
-			})), i.d(t, "c", (function() {
-				return r
 			})), i.d(t, "d", (function() {
-				return s
+				return r
 			})), i.d(t, "f", (function() {
+				return s
+			})), i.d(t, "i", (function() {
 				return o
-			})), i.d(t, "h", (function() {
+			})), i.d(t, "j", (function() {
 				return d
-			})), i.d(t, "k", (function() {
+			})), i.d(t, "m", (function() {
 				return a
-			})), i.d(t, "l", (function() {
+			})), i.d(t, "n", (function() {
 				return l
 			})), i.d(t, "o", (function() {
 				return u
-			})), i.d(t, "p", (function() {
+			})), i.d(t, "v", (function() {
 				return c
-			})), i.d(t, "q", (function() {
+			})), i.d(t, "p", (function() {
 				return _
-			})), i.d(t, "x", (function() {
+			})), i.d(t, "c", (function() {
 				return m
-			})), i.d(t, "r", (function() {
+			})), i.d(t, "q", (function() {
 				return p
-			})), i.d(t, "e", (function() {
+			})), i.d(t, "r", (function() {
 				return h
 			})), i.d(t, "s", (function() {
 				return f
-			})), i.d(t, "t", (function() {
+			})), i.d(t, "A", (function() {
 				return b
-			})), i.d(t, "u", (function() {
+			})), i.d(t, "x", (function() {
 				return g
 			})), i.d(t, "C", (function() {
 				return w
-			})), i.d(t, "z", (function() {
+			})), i.d(t, "B", (function() {
 				return v
-			})), i.d(t, "E", (function() {
-				return y
 			})), i.d(t, "D", (function() {
+				return y
+			})), i.d(t, "h", (function() {
 				return E
-			})), i.d(t, "F", (function() {
+			})), i.d(t, "E", (function() {
 				return S
-			})), i.d(t, "j", (function() {
+			})), i.d(t, "F", (function() {
 				return T
-			})), i.d(t, "G", (function() {
+			})), i.d(t, "y", (function() {
 				return O
-			})), i.d(t, "H", (function() {
+			})), i.d(t, "G", (function() {
 				return I
-			})), i.d(t, "A", (function() {
+			})), i.d(t, "H", (function() {
 				return R
 			})), i.d(t, "I", (function() {
 				return F
-			})), i.d(t, "J", (function() {
-				return N
-			})), i.d(t, "K", (function() {
-				return C
-			})), i.d(t, "y", (function() {
-				return A
-			})), i.d(t, "i", (function() {
-				return j
-			})), i.d(t, "B", (function() {
-				return P
-			})), i.d(t, "b", (function() {
-				return D
 			})), i.d(t, "w", (function() {
-				return x
+				return N
 			})), i.d(t, "g", (function() {
+				return C
+			})), i.d(t, "z", (function() {
+				return A
+			})), i.d(t, "b", (function() {
+				return j
+			})), i.d(t, "u", (function() {
+				return P
+			})), i.d(t, "e", (function() {
+				return D
+			})), i.d(t, "l", (function() {
+				return x
+			})), i.d(t, "k", (function() {
 				return L
-			})), i.d(t, "n", (function() {
+			})), i.d(t, "t", (function() {
 				return B
-			})), i.d(t, "m", (function() {
-				return k
-			})), i.d(t, "v", (function() {
-				return M
 			}));
 			const n = "ampcid",
-				r = "category",
-				s = "category_name",
-				o = "draft",
-				d = "f",
-				a = "include_over_18",
-				l = "is_multi",
-				u = "moderator",
-				c = "action",
-				_ = "newUser",
-				m = "showOnboarding",
-				p = "q",
-				h = "connected_account",
-				f = "ref",
-				b = "related",
-				g = "restrict_sr",
-				w = "sr_nsfw",
-				v = "sort",
-				y = "t",
-				E = "ts",
-				S = "type",
-				T = "geo_filter",
-				O = "verified",
-				I = "verifiedEmail",
-				R = "source",
-				F = "v",
-				N = "v2",
-				C = "show_source",
-				A = "signup_survey",
-				j = "force_seo",
-				P = "sub",
-				D = "autosub",
-				x = "showAvatarQuickCreate",
-				L = "feature",
-				B = ["ad", "adHash", "clickUrl", y, L, "consent"],
-				k = ["after", "before"],
-				M = ["ad", a, p, g, v, y, S, L, l, r, s, R, w]
+				r = "draft",
+				s = "f",
+				o = "include_over_18",
+				d = "is_multi",
+				a = "moderator",
+				l = "action",
+				u = "newUser",
+				c = "showOnboarding",
+				_ = "q",
+				m = "connected_account",
+				p = "ref",
+				h = "related",
+				f = "restrict_sr",
+				b = "sr_nsfw",
+				g = "sort",
+				w = "t",
+				v = "ts",
+				y = "type",
+				E = "geo_filter",
+				S = "verified",
+				T = "verifiedEmail",
+				O = "source",
+				I = "v",
+				R = "v2",
+				F = "show_source",
+				N = "signup_survey",
+				C = "force_seo",
+				A = "sub",
+				j = "autosub",
+				P = "showAvatarQuickCreate",
+				D = "feature",
+				x = ["ad", "adHash", "clickUrl", w, D, "consent"],
+				L = ["after", "before"],
+				B = ["ad", o, _, f, g, w, y, D, d, O, b]
 		},
 		"./src/reddit/constants/postCollection.ts": function(e, t, i) {
 			"use strict";
@@ -19125,7 +19118,7 @@
 				Ie = e => e ? e.queryParams : {},
 				Re = e => {
 					const t = $(e);
-					if (e && t && t === o.Nb.SEARCH_RESULTS) return e.queryParams[m.d] ? Object(l.a)(e.queryParams[m.d]) : Object(l.a)(e.queryParams[m.r])
+					if (e && t && t === o.Nb.SEARCH_RESULTS) return Object(l.a)(e.queryParams[m.p])
 				},
 				Fe = e => e ? e.url : "",
 				Ne = (e, t) => {
@@ -21852,7 +21845,7 @@
 						const t = e.platform.currentPage && e.platform.currentPage.url;
 						return t && o()([...Object(r.a)(t)]) || new Set([])
 					})(e),
-					b = d.z in f ? f[d.z] : "";
+					b = d.x in f ? f[d.x] : "";
 				return (n.mc.has(b) ? b : p) === b && (p = b), b && (h = !0), Object(a.d)(e, {
 					postId: t
 				}) && (p = n.t.CHAT, h = !1), {
@@ -26001,7 +25994,7 @@
 						subredditName: o
 					} = i.params, {
 						username: d
-					} = i.params, a = Object(l.e)(r()(i.queryParams, m.v));
+					} = i.params, a = Object(l.e)(r()(i.queryParams, m.t));
 					return Object(l.b)(o, d, a)
 				},
 				P = (e, t, i) => {
@@ -26585,7 +26578,7 @@
 						...c ? ((e, t) => {
 							const i = Object(l.X)(t),
 								n = Object(r.e)({
-									...o()(i || {}, d.v)
+									...o()(i || {}, d.t)
 								});
 							return {
 								search: p.Z(e, n, u.a.SERP)
@@ -41867,7 +41860,7 @@
 				},
 				Ce = e => {
 					const t = Object(v.q)(e);
-					return Boolean((null == t ? void 0 : t[b.q]) && Object(h.a)(t[b.q]))
+					return Boolean((null == t ? void 0 : t[b.o]) && Object(h.a)(t[b.o]))
 				},
 				Ae = e => t => {
 					const i = (e => e.user.account ? 1e3 * e.user.account.created : void 0)(t);
@@ -47532,4 +47525,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.e86d84d10abd8d4ebe21.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.edfd2751c081e1fce6df.js.map

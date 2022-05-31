@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.53c2583408ccfc0aed42.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MultiredditCreateModal.7f75e3c29778d9e16364.js
+// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MultiredditCreateModal"], {
 		"./src/reddit/actions/multireddit/index.ts": function(e, t, r) {
@@ -307,12 +307,12 @@
 							queryParams: O
 						} = c,
 						j = Object(l.a)(x, p, O),
-						g = b.E in O && O[b.E].toUpperCase() || "",
+						g = b.C in O && O[b.C].toUpperCase() || "",
 						y = a.ic[g] || !1,
 						_ = Object(I.k)(s);
 					(h || _ && _.displayText) && await e(Object(m.multiredditFeedRequested)(j, (h || _.displayText).toLowerCase(), f.toLowerCase(), {
-						...d()(O, b.n),
-						...d()(O, b.m),
+						...d()(O, b.l),
+						...d()(O, b.k),
 						sort: p,
 						t: Object(L.a)(p, y)
 					}))
@@ -711,14 +711,14 @@
 						g = f.listings.postOrder.ids[O],
 						C = f.listings.postOrder.api.error[O],
 						k = f.listings.postOrder.api.pending[O],
-						N = b.E in e.queryParams && e.queryParams[b.E].toUpperCase() || "",
+						N = b.C in e.queryParams && e.queryParams[b.C].toUpperCase() || "",
 						E = N in l.ic && l.ic[N];
 					if (k || g && !C && !t) return void(g && (r(u.m({
 						title: Object(_.f)(i(), m)
 					})), f.sidebarPromotedPosts.firstFetch || r(Object(v.b)(T.a.MULTIREDDIT))));
 					await r(I(O, o, s, {
-						...d()(e.queryParams, b.n),
-						...d()(e.queryParams, b.m),
+						...d()(e.queryParams, b.l),
+						...d()(e.queryParams, b.k),
 						sort: c,
 						t: Object(x.a)(c, E)
 					}, !0));
@@ -1309,4 +1309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.53c2583408ccfc0aed42.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MultiredditCreateModal.7f75e3c29778d9e16364.js.map

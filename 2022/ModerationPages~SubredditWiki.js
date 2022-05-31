@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.97edadb90b8277fbd0ee.js
-// Retrieved at 5/31/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.f29d350910bc0c95fdfb.js
+// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages~SubredditWiki", "reddit-components-ContentGate"], {
 		"./node_modules/lodash/_baseRange.js": function(e, t) {
@@ -977,7 +977,7 @@
 							subredditName: d = P.e,
 							wikiPageName: c,
 							wikiSubRoute: l
-						} = e, u = t[S.I], m = t[S.J], b = u ? Object(x.a)(u) : void 0, p = m ? Object(x.a)(m) : void 0, f = c === P.j, k = l === P.m.Revisions;
+						} = e, u = t[S.G], m = t[S.H], b = u ? Object(x.a)(u) : void 0, p = m ? Object(x.a)(m) : void 0, f = c === P.j, k = l === P.m.Revisions;
 						let _ = !1,
 							w = !1;
 						if (r) {
@@ -2630,7 +2630,7 @@
 				} = e, D = async () => {
 					if (o ? await S() : await Object(m.n)(), l) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(_.i, "1"), window.location.href = e.href
+						e.searchParams.set(_.g, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (r) {
@@ -4741,4 +4741,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.97edadb90b8277fbd0ee.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages~SubredditWiki.f29d350910bc0c95fdfb.js.map

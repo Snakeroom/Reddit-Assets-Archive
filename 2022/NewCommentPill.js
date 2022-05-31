@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NewCommentPill.cb85e9e9c7645397f10a.js
-// Retrieved at 5/9/2022, 3:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NewCommentPill.12ae2c7d76abfc803282.js
+// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NewCommentPill"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, s) {
@@ -67,8 +67,8 @@
 				C = s("./src/lib/constants/index.ts"),
 				g = s("./src/lib/makeCommentsPageKey/index.ts"),
 				N = s("./src/lib/scroll/index.ts"),
-				y = s("./src/reddit/components/NewCommentPill/index.m.less"),
-				x = s.n(y);
+				x = s("./src/reddit/components/NewCommentPill/index.m.less"),
+				y = s.n(x);
 			const E = (e, t) => {
 				let {
 					type: s,
@@ -80,7 +80,7 @@
 				let {
 					commentId: t,
 					postId: s,
-					isNightMode: y,
+					isNightMode: x,
 					isOverlay: v
 				} = e;
 				const R = Object(o.useRef)(null),
@@ -112,7 +112,7 @@
 						if (!S) return;
 						k(!1), K.current && (clearTimeout(K.current), K.current = null), L.current && (L.current = null), B.current = 2, (() => {
 							const e = new URLSearchParams(location.search);
-							e.get(j.z) !== C.t.NEW && (e.set(j.z, C.t.NEW), z(Object(i.b)(Object(r.c)({
+							e.get(j.x) !== C.t.NEW && (e.set(j.x, C.t.NEW), z(Object(i.b)(Object(r.c)({
 								pathname: location.pathname,
 								search: e.toString()
 							}, {
@@ -156,31 +156,31 @@
 					onData: J,
 					queryKey: "topLevelCommentCountChange"
 				}), a.a.createElement("div", {
-					className: Object(I.a)(x.a.wrapper, {
-						[x.a.isOverlayWrapper]: v,
-						[x.a.wrapperVisible]: A,
-						[x.a.joinOptimizationsM2]: !v && w && U
+					className: Object(I.a)(y.a.wrapper, {
+						[y.a.isOverlayWrapper]: v,
+						[y.a.wrapperVisible]: A,
+						[y.a.joinOptimizationsM2]: !v && w && U
 					})
 				}, a.a.createElement(u.a, {
-					className: x.a.pillContainer
+					className: y.a.pillContainer
 				}, a.a.createElement(m.a, {
-					className: Object(I.a)(x.a.pillButton, {
-						[x.a.isNightMode]: y
+					className: Object(I.a)(y.a.pillButton, {
+						[y.a.isNightMode]: x
 					}),
 					onClick: q,
 					variant: m.b.BUTTON
 				}, a.a.createElement(p.a, {
 					iconsKey: s,
 					shouldShowPresenceDot: !0,
-					memberIconClassName: Object(I.a)(x.a.memberIcon, {
-						[x.a.isNightMode]: y
+					memberIconClassName: Object(I.a)(y.a.memberIcon, {
+						[y.a.isNightMode]: x
 					}),
-					presenceDotOutlineClassName: Object(I.a)(x.a.presenceDotOutlineClass, {
-						[x.a.isNightMode]: y
+					presenceDotOutlineClassName: Object(I.a)(y.a.presenceDotOutlineClass, {
+						[y.a.isNightMode]: x
 					})
 				}), a.a.createElement("span", {
-					className: Object(I.a)(x.a.newCommentsText, {
-						[x.a.isNightMode]: y
+					className: Object(I.a)(y.a.newCommentsText, {
+						[y.a.isNightMode]: x
 					})
 				}, D > 1 ? n.fbt._("{number of new comments} new comments", [n.fbt._param("number of new comments", Object(f.formatPresenceNumber)(D))], {
 					hk: "2jSNSA"
@@ -365,8 +365,8 @@
 							}
 						}
 					}), [d]),
-					[N, y] = Object(u.useState)(0),
-					[x, E] = Object(u.useState)(0),
+					[N, x] = Object(u.useState)(0),
+					[y, E] = Object(u.useState)(0),
 					v = Object(u.useCallback)(a()(e => {
 						e(0), P(null)
 					}, j.e), []),
@@ -378,24 +378,24 @@
 							numUsers: t,
 							__typename: s
 						} = e.subscribe.data;
-						R(t, "PostReadingCountMessageData" === s ? y : E)
+						R(t, "PostReadingCountMessageData" === s ? x : E)
 					}, []),
 					D = Object(u.useRef)(""),
 					[T, P] = Object(u.useState)(null),
 					w = Object(u.useRef)(null);
 				Object(u.useEffect)(() => {
 					if (!t && !o) return void(T && P(null));
-					if (N >= j.a || x >= j.b) return D.current = ((e, t) => {
+					if (N >= j.a || y >= j.b) return D.current = ((e, t) => {
 						return t >= j.b ? n.fbt._("{number of people typing} people typing...", [n.fbt._param("number of people typing", h(t))], {
 							hk: "31RibC"
 						}) : n.fbt._("{number of users reading} people here", [n.fbt._param("number of users reading", h(e))], {
 							hk: "3foy5g"
 						})
-					})(N, x), void(T || P(Date.now()));
+					})(N, y), void(T || P(Date.now()));
 					if (!T) return;
 					const e = Date.now() - T;
 					e >= j.f ? P(null) : w.current = setTimeout(() => P(null), j.f - e)
-				}, [T, t, o, N, x]);
+				}, [T, t, o, N, y]);
 				const {
 					className: U,
 					shouldMount: M,
@@ -502,4 +502,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.cb85e9e9c7645397f10a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NewCommentPill.12ae2c7d76abfc803282.js.map

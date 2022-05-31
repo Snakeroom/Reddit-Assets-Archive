@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.a63c29496fe39d493d45.js
-// Retrieved at 5/31/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.1f53212b5ab24503a6ad.js
+// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -1685,7 +1685,7 @@
 				} = e, D = async () => {
 					if (i ? await w() : await Object(m.n)(), l) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(y.i, "1"), window.location.href = e.href
+						e.searchParams.set(y.g, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (n) {
@@ -12045,7 +12045,7 @@
 				inAwardListingExperiment: ke.a,
 				isPopular: ue.F
 			}), yt = e => {
-				const t = de.E in e && e[de.E].toUpperCase();
+				const t = de.C in e && e[de.C].toUpperCase();
 				if ("string" == typeof t && t in g.ic) return g.ic[t]
 			}, _t = Object(j.a)((e, t) => {
 				const {
@@ -12182,7 +12182,7 @@
 					isNsfwBlurSubreddit: I,
 					searchResultsServerQueryId: T
 				} = l;
-				const L = t && de.j in t ? t[de.j].toUpperCase() : c,
+				const L = t && de.h in t ? t[de.h].toUpperCase() : c,
 					B = !!t.hasOwnProperty("f");
 				return {
 					countrySiteUrlParams: g,
@@ -13902,4 +13902,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.a63c29496fe39d493d45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.1f53212b5ab24503a6ad.js.map

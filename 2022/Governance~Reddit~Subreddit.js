@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.f8a359abecb2e476f90a.js
-// Retrieved at 5/31/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.e619ca9fcc82d8ef0b3f.js
+// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -2747,7 +2747,7 @@
 							if (l) {
 								const i = Object(u.e)(e);
 								if (!i) return;
-								Object(C.a)(ee(i, Object(E.e)(o()(S && S.queryParams || {}, c.v)), n, r, S)(t))
+								Object(C.a)(ee(i, Object(E.e)(o()(S && S.queryParams || {}, c.t)), n, r, S)(t))
 							}
 							break;
 						case i.Nb.PUBLIC_ACCESS_NETWORK:
@@ -3690,4 +3690,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.f8a359abecb2e476f90a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.e619ca9fcc82d8ef0b3f.js.map

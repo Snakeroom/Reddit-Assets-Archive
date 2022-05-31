@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.e8e060c005b0aa491d24.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.f7bd14719a2bc46e68da.js
+// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ContentGate"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -205,7 +205,7 @@
 				} = e, M = async () => {
 					if (s ? await j() : await Object(m.n)(), u) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(S.i, "1"), window.location.href = e.href
+						e.searchParams.set(S.g, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (n) {
@@ -617,4 +617,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.e8e060c005b0aa491d24.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ContentGate.f7bd14719a2bc46e68da.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.de05711561419d62e551.js
-// Retrieved at 5/31/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.08d43f89a1b1d960af9e.js
+// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit", "reddit-components-ContentGate"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -911,7 +911,7 @@
 				} = e, F = async () => {
 					if (a ? await N() : await Object(m.n)(), l) {
 						const e = new URL(window.location.href);
-						e.searchParams.set(w.i, "1"), window.location.href = e.href
+						e.searchParams.set(w.g, "1"), window.location.href = e.href
 					} else window.location.reload()
 				};
 				switch (n) {
@@ -1909,7 +1909,7 @@
 					}
 				}));
 			var de = D.a.wrapped(oe(ce(e => {
-				const t = `${e.baseUrl}?${Y.j}=${h.z.UnitedStates}`;
+				const t = `${e.baseUrl}?${Y.h}=${h.z.UnitedStates}`;
 				return s.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
@@ -2080,7 +2080,7 @@
 				}))(e => {
 					const t = se(e.sort),
 						n = re(e.sort),
-						r = `${e.baseUrl}?${Y.j}=`;
+						r = `${e.baseUrl}?${Y.h}=`;
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 						className: Object(o.a)(me.a.countrySort, e.className),
 						onClick: () => e.dropdownIsOpen ? e.onCloseDropdown(he) : e.onOpenDropdown(he)
@@ -2166,7 +2166,7 @@
 							return e.urlParams.sort || Object(l.J)(e) || (n = ye.a.join(n, t)), n
 						})(e.pageLayer, e.listingSort),
 						r = Object(p.a)(n, {
-							[Y.E]: t
+							[Y.C]: t
 						}),
 						i = r.split("?")[0],
 						a = `${r.replace(i+"?","")}`;
@@ -6128,7 +6128,7 @@
 				},
 				ze = Object(d.a)(Ae, We, Ue, (e, t, n) => Object(m.a)(n, e, t)),
 				Ge = Object(d.a)(We, e => {
-					const t = h.E in e && e[h.E].toUpperCase();
+					const t = h.C in e && e[h.C].toUpperCase();
 					return "string" == typeof t && t in l.ic ? l.ic[t] : l.jc
 				}),
 				Ve = Object(d.c)({
@@ -6435,4 +6435,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.de05711561419d62e551.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit.08d43f89a1b1d960af9e.js.map

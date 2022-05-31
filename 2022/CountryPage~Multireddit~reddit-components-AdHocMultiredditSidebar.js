@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.d03c34e750c1f69d13df.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.a0d8b4e3da554a7c768d.js
+// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar"], {
 		"./node_modules/lodash/take.js": function(e, t, i) {
@@ -344,12 +344,12 @@
 							queryParams: y
 						} = c,
 						O = Object(l.a)(x, b, y),
-						g = p.E in y && y[p.E].toUpperCase() || "",
+						g = p.C in y && y[p.C].toUpperCase() || "",
 						S = o.ic[g] || !1,
 						j = Object(T.k)(s);
 					(f || j && j.displayText) && await e(Object(m.multiredditFeedRequested)(O, (f || j.displayText).toLowerCase(), h.toLowerCase(), {
-						...n()(y, p.n),
-						...n()(y, p.m),
+						...n()(y, p.l),
+						...n()(y, p.k),
 						sort: b,
 						t: Object(F.a)(b, S)
 					}))
@@ -748,14 +748,14 @@
 						g = h.listings.postOrder.ids[y],
 						E = h.listings.postOrder.api.error[y],
 						C = h.listings.postOrder.api.pending[y],
-						_ = p.E in e.queryParams && e.queryParams[p.E].toUpperCase() || "",
+						_ = p.C in e.queryParams && e.queryParams[p.C].toUpperCase() || "",
 						P = _ in l.ic && l.ic[_];
 					if (C || g && !E && !t) return void(g && (i(u.m({
 						title: Object(j.f)(r(), m)
 					})), h.sidebarPromotedPosts.firstFetch || i(Object(v.b)(I.a.MULTIREDDIT))));
 					await i(T(y, a, s, {
-						...n()(e.queryParams, p.n),
-						...n()(e.queryParams, p.m),
+						...n()(e.queryParams, p.l),
+						...n()(e.queryParams, p.k),
 						sort: c,
 						t: Object(x.a)(c, P)
 					}, !0));
@@ -2570,4 +2570,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.d03c34e750c1f69d13df.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CountryPage~Multireddit~reddit-components-AdHocMultiredditSidebar.a0d8b4e3da554a7c768d.js.map

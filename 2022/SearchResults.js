@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.e6d40d1b3b63dde16f06.js
-// Retrieved at 5/31/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.ebc1a8e505de725b6fd4.js
+// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -208,7 +208,7 @@
 				}),
 				O = e => async (t, s) => {
 					const n = s(),
-						r = Object(a.e)(o()(e.queryParams, p.v)),
+						r = Object(a.e)(o()(e.queryParams, p.t)),
 						{
 							multiredditName: d,
 							subredditName: C,
@@ -6588,7 +6588,7 @@
 						} = (null == m ? void 0 : m.queryParams) || {}, i = (null === (e = null == m ? void 0 : m.routeMatch) || void 0 === e ? void 0 : e.match.url) || b.a, a = {
 							...o,
 							...n && {
-								[w.k]: "1"
+								[w.i]: "1"
 							}
 						}, c = {
 							pathname: i,
@@ -7210,7 +7210,7 @@
 							options: t,
 							optionLabels: s,
 							value: n
-						} = C(e.queryParams, e.url, p.z, q, m.Qb, z), o = {
+						} = C(e.queryParams, e.url, p.x, q, m.Qb, z), o = {
 							"data-testid": "search-results-filter-sort",
 							options: t,
 							optionLabels: s,
@@ -7219,8 +7219,8 @@
 							value: n
 						};
 						return r.a.createElement(Y, J({}, o, {
-							active: Boolean(e.queryParams[p.z]),
-							label: e.queryParams[p.z] ? s[n] : u.fbt._("Sort", null, {
+							active: Boolean(e.queryParams[p.x]),
+							label: e.queryParams[p.x] ? s[n] : u.fbt._("Sort", null, {
 								hk: "2COMme"
 							}),
 							type: m.Yb.Sort
@@ -7231,7 +7231,7 @@
 							options: t,
 							optionLabels: s,
 							value: n
-						} = C(e.queryParams, e.url, p.E, Z.slice().reverse(), m.Rb, Q);
+						} = C(e.queryParams, e.url, p.C, Z.slice().reverse(), m.Rb, Q);
 						if (!e.searchOptions || e.searchOptions.sort === m.W.NEW || e.searchOptions.sort === m.W.HOT) return null;
 						const o = {
 							"data-testid": "search-results-filter-time",
@@ -7242,8 +7242,8 @@
 							value: n
 						};
 						return r.a.createElement(Y, X({}, o, {
-							active: Boolean(e.queryParams[p.E]),
-							label: e.queryParams[p.E] ? s[n] : u.fbt._("Time", null, {
+							active: Boolean(e.queryParams[p.C]),
+							label: e.queryParams[p.C] ? s[n] : u.fbt._("Time", null, {
 								hk: "3hL0P3"
 							}),
 							type: m.Yb.Filter
@@ -7540,7 +7540,7 @@
 							}), N(t)), M()
 						},
 						url: Object(l.a)(Object(v.a)(e.post.id), {
-							[f.s]: L,
+							[f.q]: L,
 							utm_source: "share",
 							utm_medium: "web2x",
 							utm_content: "rpan_stream"
@@ -8235,7 +8235,7 @@
 			}
 			const _ = 129,
 				k = Object(C.u)({
-					filterName: e => Object(C.X)(e)[b.h],
+					filterName: e => Object(C.X)(e)[b.f],
 					url: e => Object(C.eb)(e)
 				}),
 				w = Object(a.c)({
@@ -9000,12 +9000,12 @@
 			function o(e, t) {
 				let s = "/search/",
 					o = "",
-					i = e && e[r.r] || "";
+					i = e && e[r.p] || "";
 				return t ? (i = i.replace("flair:", "flair_name:"), s = `/r/${t}/search`, o = "1", Object(n.a)(s, {
-					[r.r]: i,
-					[r.u]: o
+					[r.p]: i,
+					[r.s]: o
 				})) : (i = i.replace("flair_name:", "flair:"), Object(n.a)(s, {
-					[r.r]: i
+					[r.p]: i
 				}))
 			}
 		},
@@ -10071,7 +10071,7 @@
 						Object(S.b)(S.a.SearchResults), window.clearTimeout(e)
 					}
 				}, []), Object(i.useEffect)(() => {
-					te !== oe && (G.current = !1, re(!1)), te && oe && te[k.r] !== oe[k.r] && (Object(S.b)(S.a.SearchResults), Object(S.d)(S.a.SearchResults))
+					te !== oe && (G.current = !1, re(!1)), te && oe && te[k.p] !== oe[k.p] && (Object(S.b)(S.a.SearchResults), Object(S.d)(S.a.SearchResults))
 				}, [te, oe]), Object(i.useEffect)(() => {
 					const e = {
 							...te,
@@ -10086,7 +10086,7 @@
 				const ie = s.params.multiredditName,
 					ae = s.params.subredditName || ie || "",
 					ce = s.params.username,
-					de = Object(m.e)(o()(te || {}, k.v)),
+					de = Object(m.e)(o()(te || {}, k.t)),
 					le = Object(m.b)(ae, ce, de);
 				ee && (T.a.set(P.a.SERP, le, ee), n(Object(b.c)()));
 				const me = Q && de.restrict_sr,
@@ -10126,7 +10126,7 @@
 				}, [xe]), a.a.createElement(D.a, {
 					backgroundColor: Oe.canvas,
 					content: a.a.createElement(a.a.Fragment, null, a.a.createElement(h.a, null), se && !ne && (() => {
-						const e = e => u(Object(L.f)(e, Object(m.e)(o()(te || {}, k.v))));
+						const e = e => u(Object(L.f)(e, Object(m.e)(o()(te || {}, k.t))));
 						return G.current || (e("view"), G.current = !0), a.a.createElement(z, {
 							announcement: j.a,
 							className: K.a.announcement,
@@ -10452,4 +10452,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.e6d40d1b3b63dde16f06.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.ebc1a8e505de725b6fd4.js.map
