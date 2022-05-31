@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.c9046f27cd3e2bee3613.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.f7145c4d3d644af03d16.js
+// Retrieved at 5/31/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceReleaseNotesModal"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -34,7 +34,7 @@
 						v = n(/version\/(\d+(\.\d+)?)/i),
 						_ = /tablet/i.test(t) && !/tablet pc/i.test(t),
 						E = !_ && /[^-]mobi/i.test(t),
-						w = /xbox/i.test(t);
+						y = /xbox/i.test(t);
 					/opera/i.test(t) ? r = {
 						name: "Opera",
 						opera: e,
@@ -174,9 +174,9 @@
 					} : {
 						name: n(/^(.*)\/(.*) /),
 						version: s(/^(.*)\/(.*) /)
-					}, !r.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (r.name = r.name || "Blink", r.blink = e) : (r.name = r.name || "Webkit", r.webkit = e), !r.version && v && (r.version = v)) : !r.opera && /gecko\//i.test(t) && (r.name = r.name || "Gecko", r.gecko = e, r.version = r.version || n(/gecko\/(\d+(\.\d+)?)/i)), r.windowsphone || !i && !r.silk ? !r.windowsphone && o ? (r[o] = e, r.ios = e, r.osname = "iOS") : f ? (r.mac = e, r.osname = "macOS") : w ? (r.xbox = e, r.osname = "Xbox") : b ? (r.windows = e, r.osname = "Windows") : x && (r.linux = e, r.osname = "Linux") : (r.android = e, r.osname = "Android");
-					var y = "";
-					r.windows ? y = function(e) {
+					}, !r.msedge && /(apple)?webkit/i.test(t) ? (/(apple)?webkit\/537\.36/i.test(t) ? (r.name = r.name || "Blink", r.blink = e) : (r.name = r.name || "Webkit", r.webkit = e), !r.version && v && (r.version = v)) : !r.opera && /gecko\//i.test(t) && (r.name = r.name || "Gecko", r.gecko = e, r.version = r.version || n(/gecko\/(\d+(\.\d+)?)/i)), r.windowsphone || !i && !r.silk ? !r.windowsphone && o ? (r[o] = e, r.ios = e, r.osname = "iOS") : f ? (r.mac = e, r.osname = "macOS") : y ? (r.xbox = e, r.osname = "Xbox") : b ? (r.windows = e, r.osname = "Windows") : x && (r.linux = e, r.osname = "Linux") : (r.android = e, r.osname = "Android");
+					var w = "";
+					r.windows ? w = function(e) {
 						switch (e) {
 							case "NT":
 								return "NT";
@@ -201,8 +201,8 @@
 							default:
 								return
 						}
-					}(n(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : r.windowsphone ? y = n(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : r.mac ? y = (y = n(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : o ? y = (y = n(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : i ? y = n(/android[ \/-](\d+(\.\d+)*)/i) : r.webos ? y = n(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : r.blackberry ? y = n(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : r.bada ? y = n(/bada\/(\d+(\.\d+)*)/i) : r.tizen && (y = n(/tizen[\/\s](\d+(\.\d+)*)/i)), y && (r.osversion = y);
-					var j = !r.windows && y.split(".")[0];
+					}(n(/Windows ((NT|XP)( \d\d?.\d)?)/i)) : r.windowsphone ? w = n(/windows phone (?:os)?\s?(\d+(\.\d+)*)/i) : r.mac ? w = (w = n(/Mac OS X (\d+([_\.\s]\d+)*)/i)).replace(/[_\s]/g, ".") : o ? w = (w = n(/os (\d+([_\s]\d+)*) like mac os x/i)).replace(/[_\s]/g, ".") : i ? w = n(/android[ \/-](\d+(\.\d+)*)/i) : r.webos ? w = n(/(?:web|hpw)os\/(\d+(\.\d+)*)/i) : r.blackberry ? w = n(/rim\stablet\sos\s(\d+(\.\d+)*)/i) : r.bada ? w = n(/bada\/(\d+(\.\d+)*)/i) : r.tizen && (w = n(/tizen[\/\s](\d+(\.\d+)*)/i)), w && (r.osversion = w);
+					var j = !r.windows && w.split(".")[0];
 					return _ || c || "ipad" == o || i && (3 == j || j >= 4 && !E) || r.silk ? r.tablet = e : (E || "iphone" == o || "ipod" == o || i || a || r.blackberry || r.webos || r.bada) && (r.mobile = e), r.msedge || r.msie && r.version >= 10 || r.yandexbrowser && r.version >= 15 || r.vivaldi && r.version >= 1 || r.chrome && r.version >= 20 || r.samsungBrowser && r.version >= 4 || r.firefox && r.version >= 20 || r.safari && r.version >= 6 || r.opera && r.version >= 10 || r.ios && r.osversion && r.osversion.split(".")[0] >= 6 || r.blackberry && r.version >= 10.1 || r.chromium && r.version >= 20 ? r.a = e : r.msie && r.version < 10 || r.chrome && r.version < 20 || r.firefox && r.version < 20 || r.safari && r.version < 6 || r.opera && r.version < 10 || r.ios && r.osversion && r.osversion.split(".")[0] < 6 || r.chromium && r.version < 20 ? r.c = e : r.x = e, r
 				}
 				var n = t("undefined" != typeof navigator && navigator.userAgent || "");
@@ -697,9 +697,9 @@
 				}(new Date(e.date)))
 			}
 			var E = n("./src/reddit/components/Media/index.tsx"),
-				w = n("./src/reddit/components/RichTextJson/index.tsx"),
-				y = n("./src/reddit/components/Governance/ReleaseNotesModal/Slide/index.m.less"),
-				j = n.n(y);
+				y = n("./src/reddit/components/RichTextJson/index.tsx"),
+				w = n("./src/reddit/components/Governance/ReleaseNotesModal/Slide/index.m.less"),
+				j = n.n(w);
 			const O = {};
 
 			function I(e) {
@@ -709,7 +709,7 @@
 					className: j.a.title
 				}, e.releaseNote.title), e.releaseNote.media && "rtjson" === e.releaseNote.media.type ? o.a.createElement("div", {
 					className: j.a.text
-				}, o.a.createElement(w.a, {
+				}, o.a.createElement(y.a, {
 					content: e.releaseNote.media.richtextContent,
 					mediaMetadata: e.releaseNote.media.mediaMetadata,
 					rtJsonElementProps: O
@@ -991,8 +991,8 @@
 				v = n("./src/reddit/models/Media/index.ts"),
 				_ = n("./src/reddit/selectors/posts.ts"),
 				E = n("./src/reddit/selectors/telemetry.ts"),
-				w = n("./src/reddit/selectors/user.ts"),
-				y = n("./src/reddit/constants/tracking.ts"),
+				y = n("./src/reddit/selectors/user.ts"),
+				w = n("./src/reddit/constants/tracking.ts"),
 				j = n("./src/reddit/components/Media/ImageBox/index.m.less"),
 				O = n.n(j);
 
@@ -1028,7 +1028,7 @@
 						style: t
 					}, e.children)
 				},
-				S = Object(i.b)(() => Object(c.a)(_.F, w.ib, (e, t) => {
+				S = Object(i.b)(() => Object(c.a)(_.F, y.ib, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: s
@@ -1062,7 +1062,7 @@
 			const N = (e, t) => o.a.createElement(k, {
 					altText: t.altText,
 					className: Object(d.a)(t.imageClassName, {
-						[y.a]: !e
+						[w.a]: !e
 					}),
 					height: t.height,
 					isExpando: !!t.isExpando,
@@ -1084,7 +1084,7 @@
 					const r = Object(v.L)(n.height, n.width),
 						i = T(n.height) && r;
 					return o.a.createElement(C, I({}, n, {
-						className: `${r?`${y.a} `:""}${n.className||""}`
+						className: `${r?`${w.a} `:""}${n.className||""}`
 					}), n.isListing ? o.a.createElement("div", {
 						className: n.contentImageClassName
 					}, N(r, n)) : o.a.createElement("a", {
@@ -1276,8 +1276,8 @@
 					src: Object(g.a)(u || "")
 				}))
 			}
-			var w = n("./src/reddit/components/Media/VideoBox/index.m.less"),
-				y = n.n(w);
+			var y = n("./src/reddit/components/Media/VideoBox/index.m.less"),
+				w = n.n(y);
 			const j = Object(c.c)({
 				autoplayPref: p.b,
 				consumed: b.a,
@@ -1301,7 +1301,7 @@
 					isNotCardView: g,
 					showFull: v,
 					shouldPause: _,
-					width: w,
+					width: y,
 					isListing: O,
 					className: I,
 					showCentered: T,
@@ -1361,7 +1361,7 @@
 					const e = {};
 					return T && (e.margin = "0 auto"), O || (e.maxHeight = `${h.e}px`), i.a.createElement(E, {
 						autoplay: S,
-						className: Object(l.a)(m.a, y.a.styledVideo),
+						className: Object(l.a)(m.a, w.a.styledVideo),
 						height: x,
 						isListing: O,
 						isNotCardView: g,
@@ -1380,12 +1380,12 @@
 						showFull: v,
 						source: f,
 						style: e,
-						width: w
+						width: y
 					})
 				}
 				return O ? A() : i.a.createElement("div", {
-					className: Object(l.a)(y.a.container, I, {
-						[y.a.centered]: T
+					className: Object(l.a)(w.a.container, I, {
+						[w.a.centered]: T
 					})
 				}, i.a.createElement("a", {
 					href: k,
@@ -1645,9 +1645,9 @@
 			})), n.d(t, "u", (function() {
 				return E
 			})), n.d(t, "d", (function() {
-				return w
-			})), n.d(t, "l", (function() {
 				return y
+			})), n.d(t, "l", (function() {
+				return w
 			})), n.d(t, "m", (function() {
 				return j
 			})), n.d(t, "n", (function() {
@@ -1688,8 +1688,8 @@
 				v = c.a.strong("B", a.a),
 				_ = c.a.em("I", a.a),
 				E = c.a.span("U", a.a),
-				w = e => r.a.createElement("del", e),
-				y = c.a.sub("Sub", a.a),
+				y = e => r.a.createElement("del", e),
+				w = c.a.sub("Sub", a.a),
 				j = c.a.sup("Sup", a.a),
 				O = c.a.table("Table", a.a),
 				I = c.a.tr("Tr", a.a),
@@ -1746,7 +1746,7 @@
 				}).apply(this, arguments)
 			}
 			const E = n("./src/lib/lessComponent.tsx").a.div("Container", v.a),
-				w = Object(d.a)(e => {
+				y = Object(d.a)(e => {
 					let {
 						flairStyleTemplate: t,
 						theme: n,
@@ -1762,9 +1762,9 @@
 						}
 					}))
 				}),
-				y = e => e.e === b.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== b.u || !!e.c && !e.c.every(e => e.e === b.A && !e.t),
-				j = e => o()(e, y),
-				O = e => e.findIndex(y),
+				w = e => e.e === b.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== b.u || !!e.c && !e.c.every(e => e.e === b.A && !e.t),
+				j = e => o()(e, w),
+				O = e => e.findIndex(w),
 				I = e => {
 					const {
 						altText: t,
@@ -1779,9 +1779,9 @@
 						renderMediaAsLinks: p,
 						rtJsonElementProps: g,
 						useExplicitTextColor: _,
-						shouldBlur: y
+						shouldBlur: w
 					} = e, I = s.document, T = [], k = e.mediaMetadata || null, C = O(I), S = j(I);
-					if (y && !r && !i) return a.a.createElement(E, {
+					if (w && !r && !i) return a.a.createElement(E, {
 						className: Object(c.a)(m.j, n)
 					}, a.a.createElement("div", {
 						className: v.a.unblurButtonContainer
@@ -1825,9 +1825,10 @@
 						}
 					return _ ? a.a.createElement(E, {
 						className: Object(c.a)(m.j, n)
-					}, T) : a.a.createElement(w, {
+					}, T) : a.a.createElement(y, {
 						className: Object(c.a)(m.j, n),
-						flairStyleTemplate: e.flairStyleTemplate
+						flairStyleTemplate: e.flairStyleTemplate,
+						redditStyle: e.redditStyle
 					}, T)
 				};
 			class T extends a.a.Component {
@@ -1913,8 +1914,8 @@
 			}
 			const _ = /\/(\w+)\/asset\/(\w+)\//,
 				E = g.a.wrapped(b.a, "A", x.a),
-				w = g.a.wrapped(l.a, "ImageBox", x.a),
-				y = g.a.wrapped(e => o.a.createElement("p", e), "Caption", x.a),
+				y = g.a.wrapped(l.a, "ImageBox", x.a),
+				w = g.a.wrapped(e => o.a.createElement("p", e), "Caption", x.a),
 				j = g.a.div("Placeholder", x.a),
 				O = g.a.wrapped(e => {
 					let {
@@ -1990,7 +1991,7 @@
 							showCentered: !0,
 							showFull: !0,
 							width: a.x
-						}, o.a.createElement(w, {
+						}, o.a.createElement(y, {
 							altText: s,
 							originalSource: a.u,
 							postId: r,
@@ -2086,7 +2087,7 @@
 					})(d, t, !!e.c, r)) : l.push(((e, t) => o.a.createElement(O, {
 						e,
 						key: t
-					}))(e.e, t)), e.c && l.push(((e, t) => o.a.createElement(y, {
+					}))(e.e, t)), e.c && l.push(((e, t) => o.a.createElement(w, {
 						key: t
 					}, e))(e.c, `caption${t}`)), l
 				}
@@ -2138,7 +2139,7 @@
 			! function(e) {
 				e[e.Inside = 0] = "Inside", e[e.Outside = 1] = "Outside"
 			}(E || (E = {}));
-			class w extends a.a.Component {
+			class y extends a.a.Component {
 				constructor() {
 					super(...arguments), this.mouseLocation = E.Outside, this.state = {
 						tooltipOpen: !1
@@ -2199,7 +2200,7 @@
 					})) : null
 				}
 			}
-			var y = Object(u.c)(w),
+			var w = Object(u.c)(y),
 				j = n("./src/reddit/components/RichTextJson/media.tsx"),
 				O = n("./src/reddit/components/RichTextJson/SpoilerText.tsx"),
 				I = n("./src/reddit/components/SubredditMention/index.tsx"),
@@ -2340,7 +2341,7 @@
 						else if (r.e === h.m || r.e === h.a) {
 							if (r.id.startsWith("emote|")) {
 								const e = h.E(t, r.id);
-								e && s.push(a.a.createElement(y, {
+								e && s.push(a.a.createElement(w, {
 									key: o,
 									node: r,
 									media: e
@@ -2479,7 +2480,7 @@
 		"./src/reddit/components/SubredditMention/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return w
+				return y
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -2542,7 +2543,7 @@
 					userVariant: x.a
 				}),
 				E = Object(o.b)(_),
-				w = e => {
+				y = e => {
 					let {
 						isFeatureFlagEnabled: t,
 						isUserInTreatment: n,
@@ -2573,7 +2574,7 @@
 							})
 					}
 				};
-			t.b = E(w)
+			t.b = E(y)
 		},
 		"./src/reddit/featureFlags/component.tsx": function(e, t, n) {
 			"use strict";
@@ -2673,7 +2674,7 @@
 			})), n.d(t, "d", (function() {
 				return E
 			})), n.d(t, "e", (function() {
-				return w
+				return y
 			}));
 			var s, r, o = n("./src/reddit/constants/tracking.ts"),
 				i = n("./src/reddit/helpers/isComment.ts"),
@@ -2791,7 +2792,7 @@
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
-				w = e => t => ({
+				y = e => t => ({
 					...h(t),
 					subreddit: u.hb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
@@ -2944,4 +2945,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.c9046f27cd3e2bee3613.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceReleaseNotesModal.f7145c4d3d644af03d16.js.map

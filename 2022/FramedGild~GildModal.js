@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e8bb3cdd377538069158.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.eb25f1d345f0589b7e06.js
+// Retrieved at 5/31/2022, 11:30:05 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -4069,7 +4069,8 @@
 						className: Object(c.a)(m.j, r)
 					}, C) : i.a.createElement(w, {
 						className: Object(c.a)(m.j, r),
-						flairStyleTemplate: e.flairStyleTemplate
+						flairStyleTemplate: e.flairStyleTemplate,
+						redditStyle: e.redditStyle
 					}, C)
 				};
 			class C extends i.a.Component {
@@ -5952,4 +5953,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.e8bb3cdd377538069158.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.eb25f1d345f0589b7e06.js.map
