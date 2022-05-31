@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.97402fba07a27cfcc32c.js
-// Retrieved at 5/31/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.0c3d2d0f5af77f9acc51.js
+// Retrieved at 5/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -33,9 +33,9 @@
 			})), t.d(r, "d", (function() {
 				return p
 			})), t.d(r, "c", (function() {
-				return b
-			})), t.d(r, "e", (function() {
 				return m
+			})), t.d(r, "e", (function() {
+				return b
 			})), t.d(r, "f", (function() {
 				return g
 			})), t.d(r, "b", (function() {
@@ -48,8 +48,8 @@
 				a = t("./src/lib/makeGqlRequest/index.ts"),
 				s = t("./src/lib/omitHeaders/index.ts"),
 				i = t("./src/redditGQL/operations/ChangeStripePaymentMethod.json"),
-				o = t("./src/reddit/constants/headers.ts"),
-				c = t("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
+				c = t("./src/reddit/constants/headers.ts"),
+				o = t("./src/reddit/helpers/addRedesignIdentifier/index.ts"),
 				u = t("./src/reddit/helpers/genericServerError/index.ts"),
 				l = t("./src/reddit/helpers/r2/normalizeR2APIErrors/index.ts");
 			const f = e => e.ok ? e.body.json && e.body.json.errors.length ? {
@@ -71,25 +71,25 @@
 						pennies: u,
 						rememberCard: l,
 						token: p,
-						savedCardId: b
+						savedCardId: m
 					} = e;
-					const m = {
+					const b = {
 							token: p ? p.id : void 0,
 							coins: r,
 							offer_context: i,
 							pennies: u,
 							remember_card: l,
-							card_id: b,
+							card_id: m,
 							correlation_id: a
 						},
 						g = `${t.apiUrl}/api/v2/gold/stripe/buy_coins`,
-						h = Object(c.a)(g);
-					return Object(d.a)(Object(s.a)(t, [o.a]), {
+						h = Object(o.a)(g);
+					return Object(d.a)(Object(s.a)(t, [c.a]), {
 						method: n.jb.POST,
 						endpoint: h,
-						data: m
+						data: b
 					}).then(f)
-				}, b = async e => {
+				}, m = async e => {
 					let {
 						coins: r,
 						context: t,
@@ -98,8 +98,8 @@
 						isOldReddit: u,
 						offerContext: l,
 						pennies: p,
-						rememberCard: b,
-						thingId: m,
+						rememberCard: m,
+						thingId: b,
 						token: g,
 						savedCardId: h
 					} = e;
@@ -112,20 +112,20 @@
 						coins: r,
 						offer_context: l,
 						pennies: p,
-						thing_id: m,
+						thing_id: b,
 						gild_type: O,
 						message: P ? P.trim() : "",
 						is_anonymous: j,
-						remember_card: b,
+						remember_card: m,
 						card_id: h,
 						correlation_id: a
-					}, _ = `${t.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, x = u ? _ : Object(c.a)(_);
-					return Object(d.a)(Object(s.a)(t, [o.a]), {
+					}, _ = `${t.apiUrl}/api/v2/gold/stripe/buy_coins_and_gild`, x = u ? _ : Object(o.a)(_);
+					return Object(d.a)(Object(s.a)(t, [c.a]), {
 						method: n.jb.POST,
 						endpoint: x,
 						data: y
 					}).then(f)
-				}, m = async e => {
+				}, b = async e => {
 					let {
 						context: r,
 						correlationId: t,
@@ -134,25 +134,25 @@
 						pennies: u,
 						rememberCard: l,
 						thingId: p,
-						token: b,
-						savedCardId: m
+						token: m,
+						savedCardId: b
 					} = e;
 					const {
 						gildType: g,
 						isAnonymous: h,
 						message: O
 					} = a, j = {
-						token: b ? b.id : void 0,
+						token: m ? m.id : void 0,
 						thing_id: p,
 						award_id: g,
 						message: O ? O.trim() : "",
 						is_anonymous: h,
 						pennies: u,
 						remember_card: l,
-						card_id: m,
+						card_id: b,
 						correlation_id: t
-					}, P = `${r.apiUrl}/api/v2/gold/stripe/buy_award`, y = i ? P : Object(c.a)(P);
-					return Object(d.a)(Object(s.a)(r, [o.a]), {
+					}, P = `${r.apiUrl}/api/v2/gold/stripe/buy_award`, y = i ? P : Object(o.a)(P);
+					return Object(d.a)(Object(s.a)(r, [c.a]), {
 						method: n.jb.POST,
 						endpoint: y,
 						data: j
@@ -170,8 +170,8 @@
 							correlation_id: t
 						},
 						l = `${r.apiUrl}/api/v2/gold/stripe/buy_premium_subscription`,
-						p = Object(c.a)(l);
-					return Object(d.a)(Object(s.a)(r, [o.a]), {
+						p = Object(o.a)(l);
+					return Object(d.a)(Object(s.a)(r, [c.a]), {
 						method: n.jb.POST,
 						endpoint: p,
 						data: u
@@ -215,9 +215,9 @@
 			})), t.d(r, "p", (function() {
 				return i
 			})), t.d(r, "m", (function() {
-				return o
-			})), t.d(r, "l", (function() {
 				return c
+			})), t.d(r, "l", (function() {
+				return o
 			})), t.d(r, "s", (function() {
 				return u
 			})), t.d(r, "q", (function() {
@@ -227,9 +227,9 @@
 			})), t.d(r, "i", (function() {
 				return p
 			})), t.d(r, "h", (function() {
-				return b
-			})), t.d(r, "e", (function() {
 				return m
+			})), t.d(r, "e", (function() {
+				return b
 			})), t.d(r, "d", (function() {
 				return g
 			})), t.d(r, "b", (function() {
@@ -257,29 +257,29 @@
 			}));
 			var n = t("./src/reddit/constants/experiments.ts"),
 				d = t("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const a = Object(d.a)(n.gd),
-				s = Object(d.a)(n.ed),
-				i = Object(d.a)(n.hd),
-				o = Object(d.a)(n.dd),
+			const a = Object(d.a)(n.fd),
+				s = Object(d.a)(n.dd),
+				i = Object(d.a)(n.gd),
 				c = Object(d.a)(n.cd),
-				u = Object(d.a)(n.kd),
-				l = Object(d.a)(n.id),
-				f = Object(d.a)(n.jd),
-				p = Object(d.a)(n.Zc),
-				b = Object(d.a)(n.Xc),
-				m = Object(d.a)(n.Qc),
-				g = Object(d.a)(n.Rc),
-				h = Object(d.a)(n.Oc),
-				O = Object(d.a)(n.Pc),
-				j = Object(d.a)(n.Tc),
-				P = Object(d.a)(n.Nc),
-				y = Object(d.a)(n.ad),
-				_ = Object(d.a)(n.bd),
-				x = Object(d.a)(n.fd),
-				v = Object(d.a)(n.ld),
-				k = Object(d.a)(n.nd),
-				C = Object(d.a)(n.pd),
-				I = Object(d.a)(n.od)
+				o = Object(d.a)(n.bd),
+				u = Object(d.a)(n.jd),
+				l = Object(d.a)(n.hd),
+				f = Object(d.a)(n.id),
+				p = Object(d.a)(n.Yc),
+				m = Object(d.a)(n.Wc),
+				b = Object(d.a)(n.Pc),
+				g = Object(d.a)(n.Qc),
+				h = Object(d.a)(n.Nc),
+				O = Object(d.a)(n.Oc),
+				j = Object(d.a)(n.Sc),
+				P = Object(d.a)(n.Mc),
+				y = Object(d.a)(n.Zc),
+				_ = Object(d.a)(n.ad),
+				x = Object(d.a)(n.ed),
+				v = Object(d.a)(n.kd),
+				k = Object(d.a)(n.md),
+				C = Object(d.a)(n.od),
+				I = Object(d.a)(n.nd)
 		},
 		"./src/reddit/selectors/goldPurchaseModals.ts": function(e, r, t) {
 			"use strict";
@@ -288,9 +288,9 @@
 			})), t.d(r, "s", (function() {
 				return i
 			})), t.d(r, "r", (function() {
-				return o
-			})), t.d(r, "u", (function() {
 				return c
+			})), t.d(r, "u", (function() {
+				return o
 			})), t.d(r, "t", (function() {
 				return u
 			})), t.d(r, "b", (function() {
@@ -300,9 +300,9 @@
 			})), t.d(r, "a", (function() {
 				return p
 			})), t.d(r, "n", (function() {
-				return b
-			})), t.d(r, "o", (function() {
 				return m
+			})), t.d(r, "o", (function() {
+				return b
 			})), t.d(r, "c", (function() {
 				return g
 			})), t.d(r, "h", (function() {
@@ -344,8 +344,8 @@
 			});
 			const s = e => e.features.goldPurchase.purchaseModal.activePage,
 				i = e => e.features.goldPurchase.purchaseModal.gildThingId || void 0,
-				o = e => e.features.goldPurchase.purchaseModal.correlationId || void 0,
-				c = e => e.features.goldPurchase.purchaseModal.showModal,
+				c = e => e.features.goldPurchase.purchaseModal.correlationId || void 0,
+				o = e => e.features.goldPurchase.purchaseModal.showModal,
 				u = e => e.features.goldPurchase.purchaseModal.packageId,
 				l = e => e.features.goldPurchase.packageOfferModal.packageId,
 				f = e => e.features.goldPurchase.premiumPurchaseModal.renewInterval,
@@ -354,8 +354,8 @@
 						t = (e => e.features.goldPurchase.premiumPurchaseModal.packageId)(e);
 					return r.length && t && r.find(e => e.mobileId === t) || null
 				},
-				b = e => e.features.goldPurchase.premiumPurchaseModal.activePage,
-				m = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
+				m = e => e.features.goldPurchase.premiumPurchaseModal.activePage,
+				b = e => e.features.goldPurchase.premiumPurchaseModal.showModal,
 				g = e => e.features.goldPurchase.payment.paymentMethod,
 				h = e => e.features.goldPurchase.payment.cardName,
 				O = e => e.features.goldPurchase.payment.postalCode,
@@ -383,4 +383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.97402fba07a27cfcc32c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.0c3d2d0f5af77f9acc51.js.map

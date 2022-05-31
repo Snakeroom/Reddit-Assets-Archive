@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.e619ca9fcc82d8ef0b3f.js
-// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.2c15d0f5e58533dedb3e.js
+// Retrieved at 5/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -359,7 +359,7 @@
 			})), n.d(t, "j", (function() {
 				return K
 			})), n.d(t, "g", (function() {
-				return Y
+				return Q
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./src/lib/makeActionCreator/index.ts"),
@@ -613,7 +613,7 @@
 							n = t && t.data && t.data.updateInboxActivitySeenState && t.data.updateInboxActivitySeenState.badgeIndicators;
 						n && (e(Object(i.a)(n)), e(Object(c.d)()))
 					}
-				}, Q = Object(o.a)(s.c), Y = () => async (e, t, n) => {
+				}, Y = Object(o.a)(s.c), Q = () => async (e, t, n) => {
 					let {
 						apiContext: o
 					} = n;
@@ -641,7 +641,7 @@
 							e(Object(i.a)({
 								...t,
 								...n
-							})), e(Q({
+							})), e(Y({
 								now: c.toISOString()
 							}))
 						} else e(Object(a.f)(Object(a.e)(r.fbt._("Sorry, we had trouble doing that. Please try again.", null, {
@@ -1358,7 +1358,7 @@
 						isOnline: t
 					} = e.subscribe.data;
 					H(t)
-				}, []), W = Object(o.useRef)(null), [q, K] = Object(o.useState)(!1), Q = Object(o.useCallback)(e => {
+				}, []), W = Object(o.useRef)(null), [q, K] = Object(o.useState)(!1), Y = Object(o.useCallback)(e => {
 					e.forEach(e => {
 						const {
 							isIntersecting: t,
@@ -1366,10 +1366,10 @@
 						} = e, r = 1 !== n;
 						t ? K(!0) : r && K(!1)
 					})
-				}, []), Y = Object(o.useRef)({
+				}, []), Q = Object(o.useRef)({
 					rootMargin: "750px 0px 1000px 0px"
 				});
-				return Object(u.a)(W, Q, Y.current), j ? M : i.a.createElement("div", {
+				return Object(u.a)(W, Y, Q.current), j ? M : i.a.createElement("div", {
 					className: Object(r.a)(I.a.userIconWrapper, {
 						[I.a.hasHeadShotWrapper]: B,
 						[I.a.isProfileIcon]: T && w
@@ -1674,9 +1674,9 @@
 			})), n.d(t, "g", (function() {
 				return K
 			})), n.d(t, "l", (function() {
-				return Q
-			})), n.d(t, "e", (function() {
 				return Y
+			})), n.d(t, "e", (function() {
+				return Q
 			})), n.d(t, "f", (function() {
 				return z
 			})), n.d(t, "h", (function() {
@@ -1941,7 +1941,7 @@
 						actionInfo: W(e, 0, n)
 					})
 				},
-				Q = (e, t, n) => {
+				Y = (e, t, n) => {
 					const o = V();
 					return e => ({
 						..._(e, o),
@@ -1952,7 +1952,7 @@
 						noun: r.ITEM_SUBREDDIT
 					})
 				},
-				Y = (e, t, n) => {
+				Q = (e, t, n) => {
 					const o = V();
 					return e => ({
 						..._(e, o),
@@ -2549,9 +2549,9 @@
 			})), n.d(t, "m", (function() {
 				return W
 			})), n.d(t, "t", (function() {
-				return Q
-			})), n.d(t, "x", (function() {
 				return Y
+			})), n.d(t, "x", (function() {
+				return Q
 			})), n.d(t, "e", (function() {
 				return z
 			})), n.d(t, "d", (function() {
@@ -2751,13 +2751,13 @@
 							}
 							break;
 						case i.Nb.PUBLIC_ACCESS_NETWORK:
-							l && Object(C.a)(Q()(t));
+							l && Object(C.a)(Y()(t));
 							break;
 						case i.Nb.GEOTAGGING:
 							l && Object(C.a)(J()(t));
 							break;
 						case i.Nb.SUBREDDIT_CREATION:
-							l && Object(C.a)(Y()(t));
+							l && Object(C.a)(Q()(t));
 							break;
 						case i.Nb.MOD_LISTING:
 							l && re(t, !0)
@@ -3059,14 +3059,14 @@
 					...j(n),
 					timer: N.mb(e, t)
 				}),
-				Q = () => e => ({
+				Y = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
 					subreddit: N.gb(e),
 					...j(e)
 				}),
-				Y = () => e => ({
+				Q = () => e => ({
 					source: "global",
 					action: "view",
 					noun: "screen",
@@ -3472,7 +3472,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: e
 				});
-				return !(!n || Object(r.Qf)(n))
+				return !(!n || Object(r.Pf)(n))
 			}
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
@@ -3497,7 +3497,7 @@
 					if (!l(e)) return;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: u,
-						experimentName: i.Kd,
+						experimentName: i.Jd,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -3520,9 +3520,9 @@
 				},
 				m = e => !!b(e) && Object(s.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: i.Ld,
+					experimentName: i.Kd,
 					expEventOverride: !1
-				}) !== i.Md.Readonly
+				}) !== i.Ld.Readonly
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -3563,7 +3563,7 @@
 					return r ? r * o.Sb < 1639443600180 ? void 0 : I(e) : void 0
 				},
 				I = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.me,
+					experimentName: i.le,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3690,4 +3690,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.e619ca9fcc82d8ef0b3f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.2c15d0f5e58533dedb3e.js.map

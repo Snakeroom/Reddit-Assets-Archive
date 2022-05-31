@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.c2b33181ab92843cf756.js
-// Retrieved at 5/31/2022, 3:30:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.5387aa5d23b217a68b31.js
+// Retrieved at 5/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d"], {
 		"./src/lib/colors/constants.ts": function(e, t, s) {
@@ -340,17 +340,17 @@
 			}
 			var R = s("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				H = s("./src/reddit/icons/svgs/VideoSnoo/index.tsx"),
-				A = s("./src/reddit/components/HTML5StreamPlayer/SnooButton/index.m.less"),
-				I = s.n(A);
+				I = s("./src/reddit/components/HTML5StreamPlayer/SnooButton/index.m.less"),
+				A = s.n(I);
 			const O = () => n.a.createElement("div", {
-				className: I.a.icon
+				className: A.a.icon
 			}, n.a.createElement(H.a, null));
 			var j = e => "string" == typeof e.postUrl ? n.a.createElement("a", {
 					href: e.postUrl,
-					className: I.a.button
+					className: A.a.button
 				}, n.a.createElement(O, null)) : n.a.createElement(R.a, {
 					to: e.postUrl,
-					className: I.a.button
+					className: A.a.button
 				}, n.a.createElement(O, null)),
 				D = s("./src/reddit/components/HTML5StreamPlayer/Tooltip/index.tsx"),
 				U = s("./src/reddit/components/HTML5StreamPlayer/VolumeControl/index.m.less"),
@@ -906,8 +906,8 @@
 				N = s("./src/reddit/helpers/trackers/media.ts"),
 				R = s("./src/reddit/helpers/trackers/react.ts"),
 				H = s("./src/reddit/selectors/experiments/adblockAcceptableAdsMitigationExperiment.ts"),
-				A = s("./src/reddit/selectors/experiments/videoReactions.ts"),
-				I = s("./src/reddit/selectors/media.ts"),
+				I = s("./src/reddit/selectors/experiments/videoReactions.ts"),
+				A = s("./src/reddit/selectors/media.ts"),
 				O = s("./src/reddit/selectors/platform.ts"),
 				j = s("./src/reddit/selectors/posts.ts"),
 				D = s("./src/reddit/selectors/user.ts"),
@@ -1154,8 +1154,8 @@
 				Ne = s("./src/reddit/icons/svgs/VideoReplay/index.tsx"),
 				Re = s("./src/reddit/components/HTML5StreamPlayer/ReplayVideo/index.m.less"),
 				He = s.n(Re);
-			const Ae = G.a.div("Centered", He.a),
-				Ie = G.a.div("EndedOverlay", He.a),
+			const Ie = G.a.div("Centered", He.a),
+				Ae = G.a.div("EndedOverlay", He.a),
 				Oe = G.a.span("ReplayText", He.a),
 				je = G.a.button("ReplayButton", He.a);
 			var De = e => {
@@ -1165,9 +1165,9 @@
 						callToAction: i,
 						postId: a
 					} = e;
-					return c.a.createElement(Ie, {
+					return c.a.createElement(Ae, {
 						onClick: t
-					}, c.a.createElement(Ae, null, c.a.createElement(je, null, c.a.createElement(Ne.a, null), c.a.createElement(Oe, {
+					}, c.a.createElement(Ie, null, c.a.createElement(je, null, c.a.createElement(Ne.a, null), c.a.createElement(Oe, {
 						className: "replay-video"
 					}, E.fbt._("Replay Video", null, {
 						hk: "1iD2Wj"
@@ -1226,8 +1226,8 @@
 					mutedInFeed: U.i,
 					postUrl: j.I,
 					started: U.k,
-					volume: I.f,
-					isReactionPillKillswitchEnabled: A.b,
+					volume: A.f,
+					isReactionPillKillswitchEnabled: I.b,
 					isAdblockAAMitigationEnabled: H.a
 				}), (e, t) => {
 					let {
@@ -2666,10 +2666,10 @@
 				a = s("./src/reddit/constants/experiments.ts"),
 				n = s("./src/reddit/helpers/chooseVariant/index.ts");
 			const o = Object(i.a)(e => Object(n.c)(e, {
-					experimentName: a.Hf,
+					experimentName: a.Gf,
 					experimentEligibilitySelector: n.a
 				}), e => e),
-				r = Object(i.a)(o, e => e === a.Af)
+				r = Object(i.a)(o, e => e === a.zf)
 		},
 		"./src/reddit/selectors/experiments/videoReactions.ts": function(e, t, s) {
 			"use strict";
@@ -2684,12 +2684,12 @@
 			const o = e => Object(a.c)(e, {
 					experimentName: i.sb,
 					experimentEligibilitySelector: n.e
-				}) === i.rd,
+				}) === i.qd,
 				r = e => Object(a.c)(e, {
 					experimentName: i.fc,
 					experimentEligibilitySelector: a.a
-				}) === i.rd
+				}) === i.qd
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.c2b33181ab92843cf756.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~CountryPage~FramedGild~GildModal~GovernanceReleaseNotesModal~Mem~f5b82e5d.5387aa5d23b217a68b31.js.map
