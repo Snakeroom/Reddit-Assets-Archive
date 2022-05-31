@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.88b65195413e40a3f3aa.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.0dcc07d8f06f2c4b5e02.js
+// Retrieved at 5/31/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -654,11 +654,11 @@
 				z = Object(_.a)(R.a.wrapped(x.a, "Dropdown", D.a)),
 				B = R.a.wrapped(L.a, "ListingSortIcon", D.a),
 				M = (R.a.wrapped(j.b, "DropdownTriangle", D.a), R.a.div("Title", D.a)),
-				U = R.a.wrapped(e => s.a.createElement(k.b, A({}, e, {
+				H = R.a.wrapped(e => s.a.createElement(k.b, A({}, e, {
 					noHover: !0,
 					isSelected: !1
 				})), "Row", D.a),
-				H = e => {
+				U = e => {
 					let {
 						disabled: t,
 						...n
@@ -698,9 +698,9 @@
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && s.a.createElement(M, null, w.fbt._("Sort", null, {
 					hk: "2BfINq"
-				})), s.a.createElement(H, {
+				})), s.a.createElement(U, {
 					disabled: e.disabled
-				}, e.children || s.a.createElement(U, {
+				}, e.children || s.a.createElement(H, {
 					className: e.buttonClassName,
 					displayText: Object(y.a)(e.sort),
 					id: e.dropdownId || W,
@@ -958,10 +958,10 @@
 				return s.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, s.a.createElement(H, {
+				}, s.a.createElement(U, {
 					className: e.wrapperClassName,
 					disabled: e.disabled
-				}, s.a.createElement(U, {
+				}, s.a.createElement(H, {
 					className: e.buttonClassName,
 					displayText: e.showStateAbbreviations && e.sort ? e.sort : Q(e.sort),
 					id: "StateSort--StateSortPicker",
@@ -1129,10 +1129,10 @@
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 						className: Object(a.a)(pe.a.countrySort, e.className),
 						onClick: () => e.dropdownIsOpen ? e.onCloseDropdown(be) : e.onOpenDropdown(be)
-					}, s.a.createElement(H, {
+					}, s.a.createElement(U, {
 						className: e.wrapperClassName,
 						disabled: e.disabled
-					}, s.a.createElement(U, {
+					}, s.a.createElement(H, {
 						className: e.buttonClassName,
 						displayText: (() => t in le ? le[t]() : le[b.z.Everywhere]())(),
 						id: be,
@@ -1193,10 +1193,10 @@
 				}))(Object(d.c)(e => s.a.createElement(ke, {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, s.a.createElement(H, {
+				}, s.a.createElement(U, {
 					className: e.wrapperClassName,
 					disabled: !1
-				}, s.a.createElement(U, {
+				}, s.a.createElement(H, {
 					className: e.buttonClassName,
 					displayText: Object(y.b)(e.timeSort),
 					id: "TimeSort--SortPicker",
@@ -1270,7 +1270,7 @@
 						locale: a
 					}
 				});
-			class Ue extends s.a.Component {
+			class He extends s.a.Component {
 				constructor() {
 					super(...arguments), this.changeSort = e => {
 						this.props.onChange(e), this.props.sendEvent(Object(v.b)(e))
@@ -1388,7 +1388,7 @@
 					}))))
 				}
 			}
-			var He = Be(Object(o.b)(Me)(Object(d.c)(Ue))),
+			var Ue = Be(Object(o.b)(Me)(Object(d.c)(He))),
 				Fe = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				Ve = n.n(Fe);
 			const Ge = Object(l.u)({
@@ -1442,7 +1442,7 @@
 						className: Object(a.a)(Ve.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
-					}, s.a.createElement(He, {
+					}, s.a.createElement(Ue, {
 						baseUrl: e,
 						disabled: r,
 						geopopularSort: n,
@@ -2068,7 +2068,7 @@
 						subredditId: n
 					})),
 					_ = Object(a.e)(m.a),
-					S = _ !== u.ue.NewModule;
+					S = _ !== u.ve.NewModule;
 				return (null === (s = null == g ? void 0 : g.cards) || void 0 === s ? void 0 : s.length) > 0 && S ? o.a.createElement(f, {
 					closeModuleOnMount: !!t && t !== p.g.Large,
 					subredditId: n,
@@ -2096,15 +2096,15 @@
 			const a = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.P,
-						experimentName: r.Uc
+						experimentName: r.Vc
 					});
-					return !(!t || Object(r.Pf)(t))
+					return !(!t || Object(r.Qf)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.P,
-						experimentName: r.Uc
-					}) === r.vd.ListingEnabled
+						experimentName: r.Vc
+					}) === r.wd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2231,4 +2231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.88b65195413e40a3f3aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.0dcc07d8f06f2c4b5e02.js.map

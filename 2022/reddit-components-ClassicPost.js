@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.9bfc961ede022f27435b.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.57d98f7287601683207f.js
+// Retrieved at 5/31/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ClassicPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -940,7 +940,7 @@
 				top: "bottom"
 			};
 
-			function Q(e) {
+			function J(e) {
 				return e.replace(/left|right|bottom|top/g, (function(e) {
 					return K[e]
 				}))
@@ -950,7 +950,7 @@
 				end: "start"
 			};
 
-			function J(e) {
+			function Q(e) {
 				return e.replace(/start|end/g, (function(e) {
 					return Z[e]
 				}))
@@ -1273,10 +1273,10 @@
 								n = e.options,
 								r = e.name;
 							if (!t.modifiersData[r]._skip) {
-								for (var o = n.mainAxis, s = void 0 === o || o, a = n.altAxis, i = void 0 === a || a, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, h = n.allowedAutoPlacements, b = t.options.placement, v = U(b), g = c || (v === b || !f ? [Q(b)] : function(e) {
+								for (var o = n.mainAxis, s = void 0 === o || o, a = n.altAxis, i = void 0 === a || a, c = n.fallbackPlacements, d = n.padding, l = n.boundary, u = n.rootBoundary, p = n.altBoundary, m = n.flipVariations, f = void 0 === m || m, h = n.allowedAutoPlacements, b = t.options.placement, v = U(b), g = c || (v === b || !f ? [J(b)] : function(e) {
 										if (U(e) === k) return [];
-										var t = Q(e);
-										return [J(e), t, J(t)]
+										var t = J(e);
+										return [Q(e), t, Q(t)]
 									}(b)), y = [b].concat(g).reduce((function(e, n) {
 										return e.concat(U(n) === k ? function(e, t) {
 											void 0 === t && (t = {});
@@ -1326,8 +1326,8 @@
 											padding: d
 										}),
 										H = B ? R ? j : E : R ? w : O;
-									x[D] > C[D] && (H = Q(H));
-									var q = Q(H),
+									x[D] > C[D] && (H = J(H));
+									var q = J(H),
 										z = [];
 									if (s && z.push(W[F] <= 0), i && z.push(W[H] <= 0, W[q] <= 0), z.every((function(e) {
 											return e
@@ -1413,17 +1413,17 @@
 											width: 0,
 											height: 0
 										},
-										Q = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
+										J = t.modifiersData["arrow#persistent"] ? t.modifiersData["arrow#persistent"].padding : {
 											top: 0,
 											right: 0,
 											bottom: 0,
 											left: 0
 										},
-										Z = Q[A],
-										J = Q[L],
+										Z = J[A],
+										Q = J[L],
 										X = oe(0, P[F], K[F]),
 										Y = k ? P[F] / 2 - W - X - Z - N : q - X - Z - N,
-										$ = k ? -P[F] / 2 + W + X + J + N : z + X + J + N,
+										$ = k ? -P[F] / 2 + W + X + Q + N : z + X + Q + N,
 										ee = t.elements.arrow && x(t.elements.arrow),
 										te = ee ? "y" === _ ? ee.clientTop || 0 : ee.clientLeft || 0 : 0,
 										ne = t.modifiersData.offset ? t.modifiersData.offset[t.placement][_] : 0,
@@ -1991,9 +1991,9 @@
 				z = n("./src/reddit/connectors/ClassicPost/index.tsx"),
 				G = n("./src/reddit/constants/postLayout.ts"),
 				K = n("./src/reddit/helpers/hasModFlairPermissions/index.ts"),
-				Q = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
+				J = n("./src/reddit/helpers/hasModFullPermissions/index.ts"),
 				Z = n("./src/reddit/helpers/hasModPostPermissions/index.ts"),
-				J = n("./src/reddit/helpers/localStorage/index.ts"),
+				Q = n("./src/reddit/helpers/localStorage/index.ts"),
 				X = n("./src/reddit/helpers/search/renderMedia.tsx"),
 				Y = n("./src/reddit/helpers/styles/mixins/index.tsx"),
 				$ = n("./src/reddit/helpers/trackers/creatorStats.ts"),
@@ -2059,7 +2059,7 @@
 					Te = n || void 0,
 					Ae = Object(Z.a)(le),
 					Le = Object(K.a)(le),
-					Fe = Object(Q.a)(le),
+					Fe = Object(J.a)(le),
 					Re = ue && Z.a,
 					Be = Object(S.a)(ve),
 					De = Object(M.c)(ve),
@@ -2081,10 +2081,10 @@
 					{
 						source: Ke
 					} = Ge,
-					[Qe, Ze] = Object(r.useState)(!1),
-					Je = Object(r.useCallback)(() => {
-						Ze(!Qe), Object(J.Kb)(), Se(Object($.d)(ge))
-					}, [Qe, ge, Se]);
+					[Je, Ze] = Object(r.useState)(!1),
+					Qe = Object(r.useCallback)(() => {
+						Ze(!Je), Object(Q.Kb)(), Se(Object($.d)(ge))
+					}, [Je, ge, Se]);
 				let Xe = o.a.createElement(q.a, {
 					className: re.a.classicThumbnail,
 					crosspost: Te && ve,
@@ -2196,7 +2196,7 @@
 					hostPostData: w,
 					isOverlay: !!ie,
 					modModeEnabled: ue,
-					onClickInsightsButton: Je,
+					onClickInsightsButton: Qe,
 					onIgnoreReports: me,
 					onOpenReportsDropdown: fe,
 					post: ve,
@@ -2209,7 +2209,7 @@
 						hide: !Re,
 						report: !Re
 					})
-				})), o.a.createElement(I.d, null))), Object(X.a)(ve, re.a, xe, b, Ie, se), Ee && Qe && o.a.createElement(f.a, {
+				})), o.a.createElement(I.d, null))), Object(X.a)(ve, re.a, xe, b, Ie, se), Ee && Je && o.a.createElement(f.a, {
 					className: re.a.creatorStatsContainer,
 					post: ve,
 					subreddit: Ee,
@@ -3937,7 +3937,7 @@
 						return e
 				}
 			};
-			var Q = function() {
+			var J = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -3963,8 +3963,8 @@
 							return e
 					}
 				},
-				J = Object(r.c)({
-					error: Q,
+				Q = Object(r.c)({
+					error: J,
 					pending: Z
 				});
 			var X = function() {
@@ -3988,7 +3988,7 @@
 					}
 				},
 				Y = Object(r.c)({
-					api: J,
+					api: Q,
 					result: X
 				});
 			const $ = {};
@@ -4549,7 +4549,7 @@
 				}),
 				Ge = n("./node_modules/lodash/isEqual.js"),
 				Ke = n.n(Ge);
-			var Qe = function() {
+			var Je = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -4577,11 +4577,11 @@
 				},
 				Ze = Object(r.c)({
 					api: ze,
-					result: Qe
+					result: Je
 				});
-			const Je = {};
+			const Qe = {};
 			var Xe = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Je,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Qe,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case o.M:
@@ -5137,7 +5137,7 @@
 						return e
 				}
 			};
-			var Qt = function() {
+			var Jt = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -5152,11 +5152,11 @@
 				},
 				Zt = Object(r.c)({
 					error: Kt,
-					pending: Qt
+					pending: Jt
 				});
-			const Jt = {};
+			const Qt = {};
 			var Xt = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Jt,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Qt,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case it.p: {
@@ -5534,13 +5534,13 @@
 				s = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				a = n("./src/reddit/selectors/posts.ts");
 			const i = e => Object(s.c)(e, {
-					experimentName: o.Ie,
+					experimentName: o.Je,
 					experimentEligibilitySelector: s.a
 				}),
-				c = (e, t) => t === o.Qe.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				c = (e, t) => t === o.Re.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				d = Object(r.a)(a.G, i, (e, t) => c(e, t));
 			Object(r.a)((e, t) => t, i, (e, t) => c(e, t))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.9bfc961ede022f27435b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ClassicPost.57d98f7287601683207f.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Topic.63d81cb160ac07dda379.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Topic.5292d6a58b26e7dbd898.js
+// Retrieved at 5/31/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Topic"], {
 		"./node_modules/intersection-observer/intersection-observer.js": function(e, t) {
@@ -777,7 +777,7 @@
 					}, r[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Ac.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Bc.GreyRereddit ? e.reredditButtons : [];
 					return n.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -1374,7 +1374,7 @@
 			}).map((e, t) => n.a.createElement(L, {
 				className: P.a.Subreddit,
 				key: t
-			})), W = {
+			})), B = {
 				enabled: !0,
 				id: "xd_103",
 				layout: m.c.Large,
@@ -1383,10 +1383,10 @@
 				unitType: m.e.SubredditListing,
 				url: ""
 			};
-			class B extends n.a.Component {
+			class W extends n.a.Component {
 				constructor() {
 					super(...arguments), this.onSeeMoreCommunities = () => {
-						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.w)(W)), this.props.onSeeMoreCommunities())
+						this.props.onSeeMoreCommunities && (this.props.sendEvent(Object(u.w)(B)), this.props.onSeeMoreCommunities())
 					}
 				}
 				render() {
@@ -1407,7 +1407,7 @@
 						className: P.a.SubredditList
 					}, r.length > 0 ? r.map(e => n.a.createElement(N, {
 						className: P.a.Subreddit,
-						discoveryUnit: W,
+						discoveryUnit: B,
 						key: e,
 						subredditId: e
 					})) : D), t.length > F && n.a.createElement(i.a, {
@@ -1420,7 +1420,7 @@
 					}))))
 				}
 			}
-			t.a = Object(d.c)(B)
+			t.a = Object(d.c)(W)
 		},
 		"./src/reddit/components/TopicSidebar/index.m.less": function(e, t, s) {
 			e.exports = {
@@ -2081,8 +2081,8 @@
 				}
 			}
 			var D = F,
-				W = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
-				B = s.n(W);
+				B = s("./src/reddit/pages/Topic/TopicHeader/index.m.less"),
+				W = s.n(B);
 
 			function M() {
 				return (M = Object.assign || function(e) {
@@ -2106,7 +2106,7 @@
 						parentRelatedTopics: e
 					} = this.props;
 					return e.length ? n.a.createElement("ul", {
-						className: B.a.parentRelatedTopics
+						className: W.a.parentRelatedTopics
 					}, e.map((e, t) => {
 						let {
 							namePlural: s,
@@ -2115,7 +2115,7 @@
 						return n.a.createElement("li", {
 							key: t
 						}, n.a.createElement(m.default, {
-							className: B.a.link,
+							className: W.a.link,
 							to: r
 						}, s))
 					})) : H._("Topic on Reddit", null, {
@@ -2136,19 +2136,19 @@
 						tabs: i
 					};
 					return n.a.createElement("div", {
-						className: Object(o.a)(B.a.Container, t)
+						className: Object(o.a)(W.a.Container, t)
 					}, n.a.createElement("div", {
-						className: Object(o.a)(B.a.Content, s === C.g.Large ? B.a.cardWidth : B.a.fullWidth)
+						className: Object(o.a)(W.a.Content, s === C.g.Large ? W.a.cardWidth : W.a.fullWidth)
 					}, n.a.createElement("div", {
-						className: B.a.Header
+						className: W.a.Header
 					}, n.a.createElement("div", {
-						className: B.a.Title
+						className: W.a.Title
 					}, n.a.createElement(f.b, {
 						type: f.a.TopicHeader
 					}, a)), n.a.createElement("div", {
-						className: B.a.Subtitle
+						className: W.a.Subtitle
 					}, this.renderSubtitleContent())), n.a.createElement("div", {
-						className: B.a.Tabs
+						className: W.a.Tabs
 					}, n.a.createElement(D, M({
 						tab: A.Posts
 					}, c), H._("Posts", null, {
@@ -2578,11 +2578,11 @@
 				c = s("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(i.f)(e),
-					experimentName: r.dc
+					experimentName: r.ec
 				}), o.a),
 				l = Object(c.a)(e => Object(n.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(i.f)(e),
-					experimentName: r.cc
+					experimentName: r.dc
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -2711,4 +2711,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.63d81cb160ac07dda379.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Topic.5292d6a58b26e7dbd898.js.map

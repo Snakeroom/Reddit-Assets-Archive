@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.fb745721afc7870da6b3.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.8716341c0c2f34184736.js
+// Retrieved at 5/31/2022, 1:30:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -504,9 +504,9 @@
 					return e || (r = r.filter(e => e !== P.a.PowerupsAward)), t || (r = r.filter(e => e !== P.a.CommunityGear)), r
 				});
 			var T = r("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
-				L = r.n(T);
+				R = r.n(T);
 			const {
-				fbt: R
+				fbt: L
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), A = e => e.length % 2 == 1 ? [...e, P.a.More] : e;
 			var B = function(e) {
 					const {
@@ -515,9 +515,9 @@
 						r(Object(E.g)(e.telemetryTag))
 					};
 					return o.a.createElement("div", {
-						className: Object(d.a)(L.a.container, t)
+						className: Object(d.a)(R.a.container, t)
 					}, a.map(e => e.title && o.a.createElement(N.a, {
-						className: L.a.benefit,
+						className: R.a.benefit,
 						benefit: e,
 						key: e.key,
 						onClick: c
@@ -1038,30 +1038,30 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				o = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(o.a)(n.fd),
-				a = Object(o.a)(n.dd),
-				c = Object(o.a)(n.gd),
-				i = Object(o.a)(n.cd),
-				l = Object(o.a)(n.bd),
-				d = Object(o.a)(n.jd),
-				u = Object(o.a)(n.hd),
-				m = Object(o.a)(n.id),
-				p = Object(o.a)(n.Yc),
-				b = Object(o.a)(n.Wc),
-				h = Object(o.a)(n.Pc),
-				f = Object(o.a)(n.Qc),
-				w = Object(o.a)(n.Nc),
-				v = Object(o.a)(n.Oc),
-				_ = Object(o.a)(n.Sc),
-				g = Object(o.a)(n.Mc),
-				E = Object(o.a)(n.Zc),
-				x = Object(o.a)(n.ad),
-				j = Object(o.a)(n.ed),
-				O = Object(o.a)(n.kd),
-				k = Object(o.a)(n.md),
-				y = Object(o.a)(n.od),
-				N = Object(o.a)(n.nd)
+			const s = Object(o.a)(n.gd),
+				a = Object(o.a)(n.ed),
+				c = Object(o.a)(n.hd),
+				i = Object(o.a)(n.dd),
+				l = Object(o.a)(n.cd),
+				d = Object(o.a)(n.kd),
+				u = Object(o.a)(n.id),
+				m = Object(o.a)(n.jd),
+				p = Object(o.a)(n.Zc),
+				b = Object(o.a)(n.Xc),
+				h = Object(o.a)(n.Qc),
+				f = Object(o.a)(n.Rc),
+				w = Object(o.a)(n.Oc),
+				v = Object(o.a)(n.Pc),
+				_ = Object(o.a)(n.Tc),
+				g = Object(o.a)(n.Nc),
+				E = Object(o.a)(n.ad),
+				x = Object(o.a)(n.bd),
+				j = Object(o.a)(n.fd),
+				O = Object(o.a)(n.ld),
+				k = Object(o.a)(n.nd),
+				y = Object(o.a)(n.pd),
+				N = Object(o.a)(n.od)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.fb745721afc7870da6b3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.8716341c0c2f34184736.js.map
