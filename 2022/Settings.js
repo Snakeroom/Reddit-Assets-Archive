@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Settings.16541bd6f50fea9409cc.js
-// Retrieved at 6/1/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Settings.3febaa2ef88681915c80.js
+// Retrieved at 6/1/2022, 1:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Settings"], {
 		"./node_modules/moment/locale sync recursive ^\\.\\/.*$": function(e, t, n) {
@@ -6546,7 +6546,7 @@
 							highlightComments: g,
 							hideAds: v
 						}
-					} = this.props, _ = Boolean(u), y = r || o, x = a()(null == u ? void 0 : u.expiresAt).format("MMMM DD, YYYY.");
+					} = this.props, _ = Boolean(u), y = p, x = r || o, C = a()(null == u ? void 0 : u.expiresAt).format("MMMM DD, YYYY.");
 					return i.a.createElement(ce.a, null, i.a.createElement(ie.b, {
 						className: Oe.a.premiumHeading,
 						isResponsiveSettingsEnabled: b
@@ -6560,9 +6560,9 @@
 						hk: "1tsk15"
 					})), i.a.createElement(ie.a, {
 						className: Oe.a.premiumExpirationString
-					}, d ? Ne(_, x, p) : s.fbt._("Get Reddit Premium and help support Reddit.", null, {
+					}, d ? Ne(_, C, p) : s.fbt._("Get Reddit Premium and help support Reddit.", null, {
 						hk: "MOt6K"
-					})), (!_ || p) && i.a.createElement(de.g, {
+					})), !_ && i.a.createElement(de.g, {
 						label: d ? s.fbt._("Subscribe", null, {
 							hk: "4d4vP7"
 						}) : s.fbt._("Get Premium", null, {
@@ -6571,7 +6571,7 @@
 						link: "/premium",
 						onClick: this.onGoldLinkClick,
 						last: !0
-					}), i.a.createElement(i.a.Fragment, null, i.a.createElement(le.a, null, s.fbt._("resubscribe", null, {
+					}), y && i.a.createElement(i.a.Fragment, null, i.a.createElement(le.a, null, s.fbt._("resubscribe", null, {
 						hk: "1lySF"
 					})), i.a.createElement("div", {
 						className: Oe.a.resubscribeButtons
@@ -6588,7 +6588,7 @@
 							hk: "140EzB"
 						}),
 						link: "https://www.paypal.com/cgi-bin/webscr?cmd=_subscr-find&alias=912@reddit.com"
-					}), m && !y && !p && i.a.createElement(de.a, {
+					}), m && !x && !p && i.a.createElement(de.a, {
 						label: s.fbt._("Cancel subscription", null, {
 							hk: "iGZ0U"
 						}),
@@ -14250,4 +14250,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.16541bd6f50fea9409cc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Settings.3febaa2ef88681915c80.js.map
