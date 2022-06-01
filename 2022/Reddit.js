@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit.cda8f5197e55a9a2ed47.js
-// Retrieved at 6/1/2022, 2:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit.814f5248707c7ec834f2.js
+// Retrieved at 6/1/2022, 5:00:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit"], {
 		"./assets/fonts/BentonSans/font.less": function(e, t, n) {},
@@ -16597,11 +16597,11 @@
 						broadcaster: t,
 						middleware: n => {
 							const s = n.getState();
-							return (Object(Ct.b)(s) || Object(O.M)(s)) && (e = !0, Object(G.e)(t)), s => r => {
+							return (Object(Ct.b)(s) || Object(O.M)(s) || Object(O.L)(s)) && (e = !0, Object(G.e)(t)), s => r => {
 								const o = s(r),
 									a = n.getState();
 								if (!Object(Ct.b)(a)) {
-									const n = Object(O.M)(a);
+									const n = Object(O.M)(a) || Object(O.L)(a);
 									e && !n ? (e = !1, Object(G.e)(void 0), t.setState([])) : n && !e && (t.setState([]), Object(G.e)(t), e = !0)
 								}
 								return o
@@ -20384,4 +20384,4 @@
 		["./src/reddit/index.tsx", "runtime~Reddit", "vendors~Governance~ModListing~Reddit~Subreddit", "vendors~Chat~Governance~Reddit", "vendors~Reddit~StandalonePostPage", "vendors~Reddit", "Governance~Reddit~Subreddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-compo~bd4baca2", "Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d", "Governance~ModListing~Reddit~ReportFlow~Subreddit", "Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3", "Chat~Governance~Reddit", "Governance~Reddit~Subreddit", "Governance~Reddit", "AuthorHovercard~Reddit"]
 	]
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.cda8f5197e55a9a2ed47.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit.814f5248707c7ec834f2.js.map
