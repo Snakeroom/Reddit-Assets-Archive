@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Premium.0c3d2d0f5af77f9acc51.js
-// Retrieved at 5/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Premium.67ba116b7d59cd6ac000.js
+// Retrieved at 6/1/2022, 10:00:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Premium"], {
 		"./src/reddit/endpoints/gold/productCatalog/old.index.ts": function(e, r, t) {
@@ -383,4 +383,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.0c3d2d0f5af77f9acc51.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Premium.67ba116b7d59cd6ac000.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.82534d7ea3e9288e0a1a.js
-// Retrieved at 5/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.699cc0c8be0cf5962a1e.js
+// Retrieved at 6/1/2022, 10:00:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b"], {
 		"./src/lib/unicodeUtils/index.ts": function(e, t, s) {
@@ -896,8 +896,8 @@
 				const J = {
 						caretOnTop: !1
 					},
-					G = A.isRemoved && !A.modRemovalReason && !A.modNote && A.belongsTo.type === p.a.SUBREDDIT,
-					V = D("Approve", A.id, W),
+					V = A.isRemoved && !A.modRemovalReason && !A.modNote && A.belongsTo.type === p.a.SUBREDDIT,
+					G = D("Approve", A.id, W),
 					X = D("Archived", A.id, W),
 					q = D("Lock", A.id, W),
 					K = D("Mod", A.id, W),
@@ -959,11 +959,11 @@
 					isFilled: !0,
 					className: Object(c.a)(I.a.icon, I.a.approveIcon),
 					desc: Object(x.a)(A),
-					id: V,
-					onMouseEnter: U(V),
+					id: G,
+					onMouseEnter: U(G),
 					onMouseLeave: F
 				}), o.a.createElement(u.c, L({
-					tooltipId: V,
+					tooltipId: G,
 					text: Object(x.a)(A)
 				}, J))), Object(h.a)(A) && o.a.createElement(r.Fragment, null, o.a.createElement(O.a, {
 					isFilled: !0,
@@ -972,7 +972,7 @@
 					id: Y,
 					onMouseEnter: U(Y),
 					onMouseLeave: F
-				}), G && o.a.createElement(m.a, {
+				}), V && o.a.createElement(m.a, {
 					className: I.a.addRemovalReason,
 					onClick: H,
 					text: n.fbt._("Add a removal reason", null, {
@@ -2050,7 +2050,7 @@
 							{
 								H: n,
 								D: r
-							} = V(e.a),
+							} = G(e.a),
 							{
 								c: i = []
 							} = e;
@@ -2161,16 +2161,16 @@
 						f: s,
 						t: r
 					} = e, o = [];
-					if (!s) return G(0, r, t);
+					if (!s) return V(0, r, t);
 					const i = Object(n.a)(r);
 					let a = 0,
 						c = 0;
 					const d = s.length;
 					for (; a < d; a++) {
 						const [e, t, n] = s[a], d = t + n, l = i[t], u = i[d] - l;
-						l > c && o.push(G(0, r.substr(c, l - c), `between${a}`)), o.push(G(e, r.substr(l, u), a)), c = l + u
+						l > c && o.push(V(0, r.substr(c, l - c), `between${a}`)), o.push(V(e, r.substr(l, u), a)), c = l + u
 					}
-					return c < r.length && o.push(G(0, r.substr(c), `remaining${a}`)), o
+					return c < r.length && o.push(V(0, r.substr(c), `remaining${a}`)), o
 				},
 				J = {
 					[p.j.monospace]: c.h,
@@ -2181,13 +2181,13 @@
 					[p.j.subscript]: c.l,
 					[p.j.superscript]: c.m
 				},
-				G = (e, t, s) => {
+				V = (e, t, s) => {
 					let n = t;
 					return n = o()(J, (t, n, r) => e & parseInt(r, 10) ? a.a.createElement(n, {
 						key: s
 					}, t) : t, n)
 				},
-				V = e => {
+				G = e => {
 					switch (e) {
 						case p.f:
 							return {
@@ -2416,12 +2416,12 @@
 						rtJsonElementProps: i
 					});
 					switch (o) {
-						case h.tf.SmIcon:
+						case h.vf.SmIcon:
 							return r.a.createElement(p, {
 								subredditName: n,
 								rtJsonElementProps: i
 							});
-						case h.tf.SmIconHc:
+						case h.vf.SmIconHc:
 							return r.a.createElement(p, {
 								subredditName: n,
 								isHoverable: !0,
@@ -2527,18 +2527,20 @@
 							doNotHideOtherSubscribeButtons: m,
 							getEventFactory: p,
 							onSubscriptionsRequested: b,
-							...h
-						} = this.props, x = Object(c.a)({
+							toggleEmailVerificationTooltip: h,
+							emailEnablementJoinFollowVoteVariant: x,
+							...f
+						} = this.props, E = Object(c.a)({
 							type: t.type,
 							key: "subscribe"
 						});
 						return r.a.createElement(a.t, u({
 							className: e,
-							priority: h.shouldReverseColor ? a.c.Secondary : a.c.Primary,
+							priority: f.shouldReverseColor ? a.c.Secondary : a.c.Primary,
 							size: a.d.XSP,
-							text: x,
+							text: E,
 							onClick: this.onClick
-						}, h, {
+						}, f, {
 							id: `subscribe-button-${o}`,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave
@@ -2900,12 +2902,12 @@
 				c = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a,
-						experimentName: n.nf
+						experimentName: n.pf
 					}) || ""
 				},
 				d = e => {
 					const t = c(e);
-					return t === n.tf.SmIcon || t === n.tf.SmIconHc
+					return t === n.vf.SmIcon || t === n.vf.SmIconHc
 				},
 				l = (e, t) => {
 					let {
@@ -2931,4 +2933,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.82534d7ea3e9288e0a1a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~PostCreation~ProfileComments~ProfileOverview~Pro~898a3d9b.699cc0c8be0cf5962a1e.js.map

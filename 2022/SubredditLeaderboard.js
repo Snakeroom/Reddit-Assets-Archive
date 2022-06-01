@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.95167d415a245be3444a.js
-// Retrieved at 5/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditLeaderboard.753547e20e8254ee99f8.js
+// Retrieved at 6/1/2022, 10:00:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditLeaderboard"], {
 		"./node_modules/lodash/times.js": function(e, t, r) {
@@ -73,7 +73,7 @@
 									icon: e.category_icon,
 									id: e.category_id,
 									name: e.category_name,
-									displayText: Object(u.Of)(e.category_name)
+									displayText: Object(u.Qf)(e.category_name)
 								};
 								r.push(s.id), t[s.id] = s
 							}), {
@@ -979,18 +979,20 @@
 							doNotHideOtherSubscribeButtons: m,
 							getEventFactory: p,
 							onSubscriptionsRequested: b,
-							...g
-						} = this.props, h = Object(d.a)({
+							toggleEmailVerificationTooltip: g,
+							emailEnablementJoinFollowVoteVariant: h,
+							...y
+						} = this.props, f = Object(d.a)({
 							type: t.type,
 							key: "subscribe"
 						});
 						return s.a.createElement(o.t, u({
 							className: e,
-							priority: g.shouldReverseColor ? o.c.Secondary : o.c.Primary,
+							priority: y.shouldReverseColor ? o.c.Secondary : o.c.Primary,
 							size: o.d.XSP,
-							text: h,
+							text: f,
 							onClick: this.onClick
-						}, g, {
+						}, y, {
 							id: `subscribe-button-${a}`,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave
@@ -2442,8 +2444,8 @@
 					})))))
 				}
 			}
-			var q = Object(u.c)(z(Q)),
-				J = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
+			var J = Object(u.c)(z(Q)),
+				q = r("./node_modules/react-router-dom/esm/react-router-dom.js"),
 				K = r("./src/reddit/components/CategoryPickerWidget/index.m.less"),
 				U = r.n(K);
 
@@ -2464,7 +2466,7 @@
 					isActive: s,
 					tabIndex: a
 				} = e, o = Object(c.a)(U.a.categoryLink, s && U.a.active, n);
-				return i.a.createElement("li", null, i.a.createElement(J.a, V({}, t.anchorProps, {
+				return i.a.createElement("li", null, i.a.createElement(q.a, V({}, t.anchorProps, {
 					className: o,
 					"data-active": s,
 					onMouseDown: () => e.onSendEventClick(t.name),
@@ -2629,7 +2631,7 @@
 					} = t;
 					return Object(g.b)(r.params.categoryName || "")
 				},
-				Ee = Object(m.Nf)(p.i),
+				Ee = Object(m.Pf)(p.i),
 				_e = Object(d.c)({
 					categories: e => Object(ye.b)(e, {
 						categoriesOrder: Ee
@@ -2703,7 +2705,7 @@
 						m = (null === (e = a.find(e => e.id === u)) || void 0 === e ? void 0 : e.displayText) || "";
 					return i.a.createElement(l.a, null, i.a.createElement(k.a, {
 						className: Object(c.a)(t, _.a.mainContent),
-						content: i.a.createElement(q, {
+						content: i.a.createElement(J, {
 							categoryId: u,
 							categoryName: d,
 							categoryDisplayText: m
@@ -2782,4 +2784,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.95167d415a245be3444a.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditLeaderboard.753547e20e8254ee99f8.js.map

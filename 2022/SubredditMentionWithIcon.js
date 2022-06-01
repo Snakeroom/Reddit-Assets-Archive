@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.91d1c15cf53ecbe0d0fc.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.ef9239b7976a2dd3ffbb.js
+// Retrieved at 6/1/2022, 10:00:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditMentionWithIcon"], {
 		"./src/reddit/actions/subredditMention/constants.ts": function(e, t, s) {
@@ -635,16 +635,16 @@
 					})))
 				}
 			}
-			var W = Object(a.b)(H, (e, t) => ({
+			var V = Object(a.b)(H, (e, t) => ({
 					openLightbox: t => e(Object(R.a)(t.permalink))
 				}))(q),
-				K = s("./src/reddit/contexts/PageLayer/index.tsx"),
-				V = s("./src/reddit/helpers/styles/mixins/loading.ts"),
+				W = s("./src/reddit/contexts/PageLayer/index.tsx"),
+				K = s("./src/reddit/helpers/styles/mixins/loading.ts"),
 				G = s("./src/reddit/components/SubredditMention/MiniPost/Placeholder.m.less"),
 				Q = s.n(G);
-			const z = Object(K.u)(),
+			const z = Object(W.u)(),
 				J = Object(c.c)({
-					isFakeSubreddit: K.z
+					isFakeSubreddit: W.z
 				});
 			var Y = z(Object(a.b)(J)(e => {
 					let {
@@ -652,7 +652,7 @@
 						showSubreddit: s,
 						...n
 					} = e;
-					const i = Object(V.a)(n);
+					const i = Object(K.a)(n);
 					return o.a.createElement("div", {
 						className: Object(D.a)(U.a.container, t)
 					}, o.a.createElement("div", {
@@ -823,7 +823,7 @@
 						className: ne.a.top
 					}), ie._("Top posts of the last week", null, {
 						hk: "37poFw"
-					})), n.length > 0 ? n.map(e => o.a.createElement(W, {
+					})), n.length > 0 ? n.map(e => o.a.createElement(V, {
 						containerOnClick: this.onClickPost,
 						key: e,
 						postId: e,
@@ -944,18 +944,20 @@
 							doNotHideOtherSubscribeButtons: b,
 							getEventFactory: m,
 							onSubscriptionsRequested: p,
-							...h
-						} = this.props, f = Object(c.a)({
+							toggleEmailVerificationTooltip: h,
+							emailEnablementJoinFollowVoteVariant: f,
+							...O
+						} = this.props, E = Object(c.a)({
 							type: t.type,
 							key: "subscribe"
 						});
 						return i.a.createElement(a.t, u({
 							className: e,
-							priority: h.shouldReverseColor ? a.c.Secondary : a.c.Primary,
+							priority: O.shouldReverseColor ? a.c.Secondary : a.c.Primary,
 							size: a.d.XSP,
-							text: f,
+							text: E,
 							onClick: this.onClick
-						}, h, {
+						}, O, {
 							id: `subscribe-button-${r}`,
 							onMouseEnter: this.onMouseEnter,
 							onMouseLeave: this.onMouseLeave
@@ -1265,18 +1267,22 @@
 			"use strict";
 			var n = s("./node_modules/react-redux/es/index.js"),
 				i = s("./node_modules/reselect/es/index.js"),
-				r = s("./src/reddit/actions/subscription/index.ts"),
-				o = s("./src/reddit/selectors/subreddit.ts");
+				r = s("./src/reddit/actions/emailVerificationTooltip.ts"),
+				o = s("./src/reddit/actions/subscription/index.ts"),
+				a = s("./src/reddit/selectors/experiments/emailEnablement.ts"),
+				c = s("./src/reddit/selectors/subreddit.ts");
 			t.a = Object(n.b)(() => Object(i.c)({
-				userIsSubscriber: o.gb
+				userIsSubscriber: c.gb,
+				emailEnablementJoinFollowVoteVariant: a.a
 			}), (e, t) => {
 				let {
 					identifier: s
 				} = t;
 				return {
-					onSubscribe: () => e(r.d([s], !0)),
-					onSubscriptionsRequested: () => e(r.f()),
-					onUnsubscribe: () => e(r.d([s], !1))
+					onSubscribe: () => e(o.d([s], !0)),
+					onSubscriptionsRequested: () => e(o.f()),
+					onUnsubscribe: () => e(o.d([s], !1)),
+					toggleEmailVerificationTooltip: () => e(Object(r.c)("user_follow"))
 				}
 			})
 		},
@@ -1442,7 +1448,7 @@
 			})), s.d(t, "r", (function() {
 				return H
 			})), s.d(t, "m", (function() {
-				return V
+				return K
 			})), s.d(t, "g", (function() {
 				return G
 			})), s.d(t, "l", (function() {
@@ -1684,7 +1690,7 @@
 						post: b.H(i, t)
 					}
 				},
-				W = () => ({
+				V = () => ({
 					id: "xd_focus_verticals",
 					unitType: d.e.Listing,
 					experiment: "",
@@ -1695,29 +1701,29 @@
 					surface: d.d.Frontpage,
 					url: "gql.reddit.com"
 				}),
-				K = (e, t, s) => b.d(e, {
+				W = (e, t, s) => b.d(e, {
 					position: s
 				}),
-				V = (e, t, s) => {
-					const n = W();
+				K = (e, t, s) => {
+					const n = V();
 					return e => ({
 						...x(e, n),
-						actionInfo: K(e, 0, s),
+						actionInfo: W(e, 0, s),
 						subreddit: b.hb(e, t)
 					})
 				},
 				G = (e, t, s) => {
-					const n = W();
+					const n = V();
 					return e => ({
 						...v(e, n, t),
-						actionInfo: K(e, 0, s)
+						actionInfo: W(e, 0, s)
 					})
 				},
 				Q = (e, t, s) => {
-					const i = W();
+					const i = V();
 					return e => ({
 						...E(e, i),
-						actionInfo: K(e, 0, s),
+						actionInfo: W(e, 0, s),
 						subreddit: b.hb(e, t) || null,
 						source: O,
 						action: o.c.VIEW,
@@ -1725,10 +1731,10 @@
 					})
 				},
 				z = (e, t, s) => {
-					const i = W();
+					const i = V();
 					return e => ({
 						...E(e, i),
-						actionInfo: K(e, 0, s),
+						actionInfo: W(e, 0, s),
 						post: b.H(e, t) || null,
 						source: O,
 						action: o.c.CLICK,
@@ -1736,10 +1742,10 @@
 					})
 				},
 				J = (e, t, s, i) => {
-					const r = W();
+					const r = V();
 					return e => ({
 						...E(e, r),
-						actionInfo: K(e, 0, i),
+						actionInfo: W(e, 0, i),
 						subreddit: b.hb(e, s) || null,
 						post: b.H(e, t) || null,
 						source: O,
@@ -1748,10 +1754,10 @@
 					})
 				},
 				Y = (e, t, s) => {
-					const i = W();
+					const i = V();
 					return e => ({
 						...E(e, i),
-						actionInfo: K(e, 0, s),
+						actionInfo: W(e, 0, s),
 						subreddit: b.hb(e, t) || null,
 						source: O,
 						action: o.c.CLICK,
@@ -1759,10 +1765,10 @@
 					})
 				},
 				X = (e, t, s, i) => {
-					const r = W();
+					const r = V();
 					return e => ({
 						...E(e, r),
-						actionInfo: K(e, 0, s),
+						actionInfo: W(e, 0, s),
 						subreddit: b.hb(e, t) || null,
 						post: i ? b.H(e, i) : null,
 						source: O,
@@ -1771,10 +1777,10 @@
 					})
 				},
 				Z = (e, t, s, i) => {
-					const r = W();
+					const r = V();
 					return e => ({
 						...E(e, r),
-						actionInfo: K(e, 0, s),
+						actionInfo: W(e, 0, s),
 						subreddit: b.hb(e, t) || null,
 						post: i ? b.H(e, i) : null,
 						source: O,
@@ -1783,10 +1789,10 @@
 					})
 				},
 				$ = (e, t, s) => {
-					const i = W();
+					const i = V();
 					return e => ({
 						...E(e, i),
-						actionInfo: K(e, 0, s),
+						actionInfo: W(e, 0, s),
 						subreddit: b.hb(e, t) || null,
 						source: O,
 						action: o.c.CLICK,
@@ -1794,10 +1800,10 @@
 					})
 				},
 				ee = (e, t, s) => {
-					const i = W();
+					const i = V();
 					return e => ({
 						...E(e, i),
-						actionInfo: K(e, 0, s),
+						actionInfo: W(e, 0, s),
 						subreddit: b.hb(e, t) || null,
 						source: O,
 						action: o.c.CLICK,
@@ -1859,4 +1865,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.91d1c15cf53ecbe0d0fc.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditMentionWithIcon.ef9239b7976a2dd3ffbb.js.map

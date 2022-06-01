@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.f15d2e3a6b9893fd3b55.js
-// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersAction.e78cf483e909db241c84.js
+// Retrieved at 6/1/2022, 10:00:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersAction"], {
 		"./src/lib/makeOverviewConversationsItemKey/index.ts": function(e, t, r) {
@@ -33,35 +33,36 @@
 		"./src/reddit/actions/pages/followers/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "profileFollowersPageLoaded", (function() {
-				return y
-			})), r.d(t, "moreProfileFollowersLoaded", (function() {
-				return m
-			})), r.d(t, "profileFollowersSearchLoaded", (function() {
 				return O
-			})), r.d(t, "profileFollowersRequestPending", (function() {
-				return g
-			})), r.d(t, "profileFollowersPageFailed", (function() {
-				return h
-			})), r.d(t, "DEFAULT_VARIABLES", (function() {
+			})), r.d(t, "moreProfileFollowersLoaded", (function() {
 				return w
-			})), r.d(t, "followersPageRequested", (function() {
+			})), r.d(t, "profileFollowersSearchLoaded", (function() {
+				return g
+			})), r.d(t, "profileFollowersRequestPending", (function() {
+				return h
+			})), r.d(t, "profileFollowersPageFailed", (function() {
 				return j
-			})), r.d(t, "followersRequested", (function() {
+			})), r.d(t, "DEFAULT_VARIABLES", (function() {
 				return x
-			})), r.d(t, "followUserToggled", (function() {
+			})), r.d(t, "followersPageRequested", (function() {
 				return I
-			})), r.d(t, "toggleFollowUser", (function() {
+			})), r.d(t, "followersRequested", (function() {
 				return _
+			})), r.d(t, "followUserToggled", (function() {
+				return k
+			})), r.d(t, "toggleFollowUser", (function() {
+				return C
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var o = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./src/lib/constants/index.ts"),
 				n = r("./src/lib/makeActionCreator/index.ts"),
-				i = (r("./src/reddit/actions/pages/profileOverview/index.ts"), r("./src/reddit/actions/toaster.ts")),
-				d = r("./src/lib/makeGqlRequest/index.ts"),
-				a = r("./src/redditGQL/operations/ProfileFollowers.json");
-			var c = r("./src/reddit/endpoints/subreddit/subscriptions.ts");
-			var l = e => {
+				i = r("./src/reddit/actions/emailVerificationTooltip.ts"),
+				d = (r("./src/reddit/actions/pages/profileOverview/index.ts"), r("./src/reddit/actions/toaster.ts")),
+				a = r("./src/lib/makeGqlRequest/index.ts"),
+				c = r("./src/redditGQL/operations/ProfileFollowers.json");
+			var l = r("./src/reddit/endpoints/subreddit/subscriptions.ts");
+			var u = e => {
 					var t, r;
 					if (!e.identity || !e.identity.followedByRedditorsInfo) return;
 					const o = {},
@@ -91,96 +92,98 @@
 							c.push(e), l[e] = u.node
 						} return o.followerUserIds = c, o.followers = l, o
 				},
-				u = r("./src/reddit/models/Toast/index.ts"),
-				f = r("./src/reddit/actions/pages/followers/constants.ts"),
-				p = r("./src/lib/initializeClient/installReducer.ts"),
-				v = r("./src/reddit/reducers/pages/followers/index.ts"),
-				b = r("./src/reddit/selectors/followers.ts");
-			Object(p.a)({
+				f = r("./src/reddit/models/Toast/index.ts"),
+				p = r("./src/reddit/selectors/experiments/emailEnablement.ts"),
+				v = r("./src/reddit/actions/pages/followers/constants.ts"),
+				b = r("./src/lib/initializeClient/installReducer.ts"),
+				y = r("./src/reddit/reducers/pages/followers/index.ts"),
+				m = r("./src/reddit/selectors/followers.ts");
+			Object(b.a)({
 				pages: {
-					followers: v.a
+					followers: y.a
 				}
 			});
-			const y = Object(n.a)(f.b),
-				m = Object(n.a)(f.a),
-				O = Object(n.a)(f.e),
-				g = Object(n.a)(f.d),
-				h = Object(n.a)(f.c),
-				w = {
+			const O = Object(n.a)(v.b),
+				w = Object(n.a)(v.a),
+				g = Object(n.a)(v.e),
+				h = Object(n.a)(v.d),
+				j = Object(n.a)(v.c),
+				x = {
 					includeIdentity: !1,
 					first: null,
 					after: null,
 					searchQuery: null
 				},
-				j = e => async (e, t, r) => {
+				I = e => async (e, t, r) => {
 					let {
 						gqlContext: o
 					} = r;
 					var s;
 					const n = [];
-					(null === (s = Object(b.a)(t())) || void 0 === s ? void 0 : s.length) || n.push(e(x(w))), await Promise.all(n)
-				}, x = e => async (t, r, o) => {
+					(null === (s = Object(m.a)(t())) || void 0 === s ? void 0 : s.length) || n.push(e(_(x))), await Promise.all(n)
+				}, _ = e => async (t, r, o) => {
 					let {
 						gqlContext: s
 					} = o;
 					const n = !r().user.account,
-						c = {
-							...w,
+						i = {
+							...x,
 							...e,
 							includeIdentity: n
 						};
-					t(g());
-					const u = await (async (e, t) => {
-						return await Object(d.a)(e, {
-							...a,
+					t(h());
+					const l = await (async (e, t) => {
+						return await Object(a.a)(e, {
+							...c,
 							variables: t
 						})
-					})(s(), c);
-					if (u.ok && u.body) {
+					})(s(), i);
+					if (l.ok && l.body) {
 						const {
 							data: r
-						} = u.body, o = l(r);
-						if (!o) return t(Object(i.d)()), void t(h());
-						(null == e ? void 0 : e.searchQuery) ? t(O(o)): (null == e ? void 0 : e.after) ? t(m(o)) : (null == e ? void 0 : e.after) || (null == e ? void 0 : e.searchQuery) || t(y(o))
+						} = l.body, o = u(r);
+						if (!o) return t(Object(d.d)()), void t(j());
+						(null == e ? void 0 : e.searchQuery) ? t(g(o)): (null == e ? void 0 : e.after) ? t(w(o)) : (null == e ? void 0 : e.after) || (null == e ? void 0 : e.searchQuery) || t(O(o))
 					}
-					u.ok || (t(Object(i.d)()), t(h()))
-				}, I = Object(n.a)(f.f), _ = (e, t) => async (r, n, d) => {
+					l.ok || (t(Object(d.d)()), t(j()))
+				}, k = Object(n.a)(v.f), C = (e, t) => async (r, n, a) => {
 					let {
-						apiContext: a
-					} = d;
-					var l, f;
-					const p = null === (f = null === (l = n().pages) || void 0 === l ? void 0 : l.followers) || void 0 === f ? void 0 : f.models[e];
-					if (!p) return;
-					r(I({
+						apiContext: c
+					} = a;
+					var u, v;
+					const b = n(),
+						y = null === (v = null === (u = b.pages) || void 0 === u ? void 0 : u.followers) || void 0 === v ? void 0 : v.models[e];
+					if (!y) return;
+					r(k({
 						userId: e,
 						isFollowed: t
 					}));
-					const v = p.name;
-					if ((await Object(c.c)(a(), {
-							subredditNames: [`${s.kc}${p.name}`],
+					const m = y.name;
+					if ((await Object(l.c)(c(), {
+							subredditNames: [`${s.kc}${y.name}`],
 							subscribe: t
 						})).ok) {
-						r(I({
+						r(k({
 							userId: e,
 							isFollowed: t
 						}));
-						const s = o.fbt._("Sucсessfully followed {userName}", [o.fbt._param("userName", v)], {
-								hk: "1AYBqL"
+						const s = o.fbt._("Successfully followed {userName}", [o.fbt._param("userName", m)], {
+								hk: "nYw1y"
 							}),
-							n = o.fbt._("Sucсessfully unfollowed {userName}", [o.fbt._param("userName", v)], {
-								hk: "4F2yCK"
+							n = o.fbt._("Successfully unfollowed {userName}", [o.fbt._param("userName", m)], {
+								hk: "1ki3kp"
 							});
-						r(Object(i.f)({
+						r(Object(d.f)({
 							text: t ? s : n
-						}))
+						})), Object(p.a)(b) && r(Object(i.c)("user_follow"))
 					} else {
 						const s = o.fbt._("Something went wrong", null, {
 							hk: "3i6szH"
 						});
-						r(I({
+						r(k({
 							userId: e,
 							isFollowed: !t
-						})), r(Object(i.f)(Object(i.e)(s, u.b.Error)))
+						})), r(Object(d.f)(Object(d.e)(s, f.b.Error)))
 					}
 				}
 		},
@@ -189,11 +192,11 @@
 			r.r(t), r.d(t, "profileOverviewConversationsPending", (function() {
 				return _e
 			})), r.d(t, "profileOverviewConversationsLoaded", (function() {
-				return Ce
-			})), r.d(t, "profileOverviewConversationsFailed", (function() {
-				return Le
-			})), r.d(t, "profileOverviewChronoPending", (function() {
 				return ke
+			})), r.d(t, "profileOverviewConversationsFailed", (function() {
+				return Ce
+			})), r.d(t, "profileOverviewChronoPending", (function() {
+				return Le
 			})), r.d(t, "profileOverviewChronoLoaded", (function() {
 				return Pe
 			})), r.d(t, "profileOverviewChronoFailed", (function() {
@@ -220,16 +223,16 @@
 				y = r("./src/reddit/constants/postLayout.ts"),
 				m = r("./src/reddit/constants/parameters.ts"),
 				O = r("./src/reddit/contexts/PageLayer/index.tsx"),
-				g = r("./src/reddit/selectors/listings.ts"),
-				h = r("./src/reddit/selectors/profile.ts"),
-				w = r("./src/reddit/selectors/user.ts"),
+				w = r("./src/reddit/selectors/listings.ts"),
+				g = r("./src/reddit/selectors/profile.ts"),
+				h = r("./src/reddit/selectors/user.ts"),
 				j = r("./src/lib/makeActionCreator/index.ts"),
 				x = r("./src/reddit/actions/changeUsername.ts"),
 				I = r("./src/reddit/actions/contentGate.ts"),
 				_ = r("./src/reddit/actions/externalAccount.ts"),
-				C = r("./src/reddit/actions/gold/powerups.ts"),
-				L = r("./src/reddit/actions/pinnedPost.ts"),
-				k = r("./src/reddit/actions/platform.ts"),
+				k = r("./src/reddit/actions/gold/powerups.ts"),
+				C = r("./src/reddit/actions/pinnedPost.ts"),
+				L = r("./src/reddit/actions/platform.ts"),
 				P = r("./src/reddit/actions/profile/index.ts"),
 				R = r("./src/reddit/actions/trophyCase.ts"),
 				E = r("./src/reddit/constants/errors.ts"),
@@ -306,9 +309,9 @@
 					error: U,
 					pending: Q
 				});
-			const B = {};
-			var W = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : B,
+			const W = {};
+			var $ = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : W,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case A.b: {
@@ -337,9 +340,9 @@
 						return e
 				}
 			};
-			const $ = {};
-			var z = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : $,
+			const z = {};
+			var B = function() {
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : z,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case A.b:
@@ -384,8 +387,8 @@
 				},
 				M = Object(q.c)({
 					api: G,
-					fetchedTokens: W,
-					ids: z,
+					fetchedTokens: $,
+					ids: B,
 					loadMore: V
 				});
 			const Y = {};
@@ -657,9 +660,9 @@
 						return e
 				}
 			};
-			const ge = {};
-			var he = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : ge,
+			const we = {};
+			var ge = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : we,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case A.e:
@@ -681,9 +684,9 @@
 						return e
 				}
 			};
-			const we = {};
+			const he = {};
 			var je = function() {
-					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : we,
+					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : he,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
 						case A.e:
@@ -708,7 +711,7 @@
 					api: te,
 					extraComments: le,
 					keyToCommentThreadLinkSets: Oe,
-					keyToHeadCommentId: he,
+					keyToHeadCommentId: ge,
 					keyToPostId: je
 				}),
 				Ie = Object(q.c)({
@@ -721,18 +724,18 @@
 				}
 			});
 			const _e = Object(j.a)(A.f),
-				Ce = Object(j.a)(A.e),
-				Le = Object(j.a)(A.d),
-				ke = Object(j.a)(A.c),
+				ke = Object(j.a)(A.e),
+				Ce = Object(j.a)(A.d),
+				Le = Object(j.a)(A.c),
 				Pe = Object(j.a)(A.b),
 				Re = Object(j.a)(A.a),
 				Ee = (e, t, r, o) => async (o, s, i) => {
 					const d = s(),
 						a = !!d.listings.postOrder.ids[e],
-						y = !!Object(g.c)(d, {
+						y = !!Object(w.c)(d, {
 							listingKey: e
 						});
-					if (!!Object(g.d)(d, {
+					if (!!Object(w.d)(d, {
 							listingKey: e
 						}) || a && !y) return;
 					o(_e({
@@ -753,23 +756,23 @@
 						O = m.body;
 					await Object(b.a)(i.gqlContext, O.posts).then(e => O.posts = e);
 					const {
-						pinned: w,
+						pinned: h,
 						postIds: j
 					} = O;
 					if (m.ok) {
-						o(Ce({
+						o(ke({
 							key: e,
 							meta: d.meta,
 							profileName: t,
 							...O,
 							postIds: j
 						}));
-						const r = Object(h.m)(s(), t);
-						o(Object(L.h)({
+						const r = Object(g.m)(s(), t);
+						o(Object(C.h)({
 							profileId: r,
-							pinned: w
+							pinned: h
 						}))
-					} else o(Le({
+					} else o(Ce({
 						account: m.body.data ? m.body.data.account : null,
 						error: m.body.reason ? {
 							type: m.body.reason
@@ -777,7 +780,7 @@
 						key: e
 					})), m.body.reason === E.a.DeletedProfile && o(Object(I.s)({
 						profileName: t
-					})), o(Object(k.n)(m.status))
+					})), o(Object(L.n)(m.status))
 				}, Fe = e => async (t, r, o) => {
 					const {
 						queryParams: c,
@@ -790,29 +793,29 @@
 					} = l;
 					let v = !1;
 					const b = y.e[Object(O.S)(r(), {})],
-						g = p.toLowerCase(),
+						w = p.toLowerCase(),
 						j = {
 							...s()(e.queryParams, m.l),
 							sort: u,
 							layout: b,
 							t: f
 						},
-						I = [t(P.d(g))],
-						L = Object(F.a)(g, n.ub, u, e.queryParams);
-					if (r().listings.postOrder.ids[L] && !r().listings.postOrder.api.error[L] ? v = !0 : I.push(t(Ee(L, g, j, !0))), I.push(t(Object(i.b)())), await Promise.all(I), v) return;
+						I = [t(P.d(w))],
+						C = Object(F.a)(w, n.ub, u, e.queryParams);
+					if (r().listings.postOrder.ids[C] && !r().listings.postOrder.api.error[C] ? v = !0 : I.push(t(Ee(C, w, j, !0))), I.push(t(Object(i.b)())), await Promise.all(I), v) return;
 					const E = r();
 					if (!E.platform.currentPage) return;
 					if (200 !== E.platform.currentPage.status) return;
-					const S = Object(h.m)(r(), g),
-						A = Object(w.zb)(E, {
+					const S = Object(g.m)(r(), w),
+						A = Object(h.zb)(E, {
 							userName: p
 						}).id;
-					t(k.m({
+					t(L.m({
 						title: Se(r(), p)
-					})), Object(w.R)(E) && Object(w.V)(E, p) && t(Object(x.f)());
-					const N = [t(Object(a.q)()), t(R.b(g, S)), t(P.b(g)), t(_.o(p)), t(P.g(p)), t(C.l(p, A))];
+					})), Object(h.R)(E) && Object(h.V)(E, p) && t(Object(x.f)());
+					const N = [t(Object(a.q)()), t(R.b(w, S)), t(P.b(w)), t(_.o(p)), t(P.g(p)), t(k.l(p, A))];
 					await Promise.all(N)
-				}, Se = (e, t) => Object(h.q)(e, {
+				}, Se = (e, t) => Object(g.q)(e, {
 					profileName: t
 				})
 		},
@@ -979,4 +982,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.f15d2e3a6b9893fd3b55.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersAction.e78cf483e909db241c84.js.map

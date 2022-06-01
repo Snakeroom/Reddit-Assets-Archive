@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.e34ba925bb3170bd82e2.js
-// Retrieved at 5/31/2022, 4:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c8d97cb6a793c6c6b98a.js
+// Retrieved at 6/1/2022, 10:00:11 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileFollowersPage", "ProfileFollowersAction"], {
 		"./node_modules/lodash/take.js": function(e, t, r) {
@@ -40,35 +40,36 @@
 		"./src/reddit/actions/pages/followers/index.ts": function(e, t, r) {
 			"use strict";
 			r.r(t), r.d(t, "profileFollowersPageLoaded", (function() {
-				return f
-			})), r.d(t, "moreProfileFollowersLoaded", (function() {
-				return v
-			})), r.d(t, "profileFollowersSearchLoaded", (function() {
 				return x
-			})), r.d(t, "profileFollowersRequestPending", (function() {
+			})), r.d(t, "moreProfileFollowersLoaded", (function() {
 				return g
-			})), r.d(t, "profileFollowersPageFailed", (function() {
+			})), r.d(t, "profileFollowersSearchLoaded", (function() {
 				return y
-			})), r.d(t, "DEFAULT_VARIABLES", (function() {
+			})), r.d(t, "profileFollowersRequestPending", (function() {
 				return C
-			})), r.d(t, "followersPageRequested", (function() {
+			})), r.d(t, "profileFollowersPageFailed", (function() {
 				return w
-			})), r.d(t, "followersRequested", (function() {
+			})), r.d(t, "DEFAULT_VARIABLES", (function() {
 				return I
-			})), r.d(t, "followUserToggled", (function() {
+			})), r.d(t, "followersPageRequested", (function() {
 				return O
-			})), r.d(t, "toggleFollowUser", (function() {
+			})), r.d(t, "followersRequested", (function() {
 				return _
+			})), r.d(t, "followUserToggled", (function() {
+				return E
+			})), r.d(t, "toggleFollowUser", (function() {
+				return k
 			}));
 			r("./node_modules/core-js/modules/web.dom.iterable.js");
 			var n = r("./node_modules/fbt/lib/FbtPublic.js"),
 				s = r("./src/lib/constants/index.ts"),
 				i = r("./src/lib/makeActionCreator/index.ts"),
-				o = (r("./src/reddit/actions/pages/profileOverview/index.ts"), r("./src/reddit/actions/toaster.ts")),
-				a = r("./src/lib/makeGqlRequest/index.ts"),
-				d = r("./src/redditGQL/operations/ProfileFollowers.json");
-			var l = r("./src/reddit/endpoints/subreddit/subscriptions.ts");
-			var c = e => {
+				o = r("./src/reddit/actions/emailVerificationTooltip.ts"),
+				a = (r("./src/reddit/actions/pages/profileOverview/index.ts"), r("./src/reddit/actions/toaster.ts")),
+				d = r("./src/lib/makeGqlRequest/index.ts"),
+				l = r("./src/redditGQL/operations/ProfileFollowers.json");
+			var c = r("./src/reddit/endpoints/subreddit/subscriptions.ts");
+			var u = e => {
 					var t, r;
 					if (!e.identity || !e.identity.followedByRedditorsInfo) return;
 					const n = {},
@@ -98,96 +99,98 @@
 							l.push(e), c[e] = u.node
 						} return n.followerUserIds = l, n.followers = c, n
 				},
-				u = r("./src/reddit/models/Toast/index.ts"),
-				m = r("./src/reddit/actions/pages/followers/constants.ts"),
-				p = r("./src/lib/initializeClient/installReducer.ts"),
-				h = r("./src/reddit/reducers/pages/followers/index.ts"),
-				b = r("./src/reddit/selectors/followers.ts");
-			Object(p.a)({
+				m = r("./src/reddit/models/Toast/index.ts"),
+				p = r("./src/reddit/selectors/experiments/emailEnablement.ts"),
+				h = r("./src/reddit/actions/pages/followers/constants.ts"),
+				b = r("./src/lib/initializeClient/installReducer.ts"),
+				f = r("./src/reddit/reducers/pages/followers/index.ts"),
+				v = r("./src/reddit/selectors/followers.ts");
+			Object(b.a)({
 				pages: {
-					followers: h.a
+					followers: f.a
 				}
 			});
-			const f = Object(i.a)(m.b),
-				v = Object(i.a)(m.a),
-				x = Object(i.a)(m.e),
-				g = Object(i.a)(m.d),
-				y = Object(i.a)(m.c),
-				C = {
+			const x = Object(i.a)(h.b),
+				g = Object(i.a)(h.a),
+				y = Object(i.a)(h.e),
+				C = Object(i.a)(h.d),
+				w = Object(i.a)(h.c),
+				I = {
 					includeIdentity: !1,
 					first: null,
 					after: null,
 					searchQuery: null
 				},
-				w = e => async (e, t, r) => {
+				O = e => async (e, t, r) => {
 					let {
 						gqlContext: n
 					} = r;
 					var s;
 					const i = [];
-					(null === (s = Object(b.a)(t())) || void 0 === s ? void 0 : s.length) || i.push(e(I(C))), await Promise.all(i)
-				}, I = e => async (t, r, n) => {
+					(null === (s = Object(v.a)(t())) || void 0 === s ? void 0 : s.length) || i.push(e(_(I))), await Promise.all(i)
+				}, _ = e => async (t, r, n) => {
 					let {
 						gqlContext: s
 					} = n;
 					const i = !r().user.account,
-						l = {
-							...C,
+						o = {
+							...I,
 							...e,
 							includeIdentity: i
 						};
-					t(g());
-					const u = await (async (e, t) => {
-						return await Object(a.a)(e, {
-							...d,
+					t(C());
+					const c = await (async (e, t) => {
+						return await Object(d.a)(e, {
+							...l,
 							variables: t
 						})
-					})(s(), l);
-					if (u.ok && u.body) {
+					})(s(), o);
+					if (c.ok && c.body) {
 						const {
 							data: r
-						} = u.body, n = c(r);
-						if (!n) return t(Object(o.d)()), void t(y());
-						(null == e ? void 0 : e.searchQuery) ? t(x(n)): (null == e ? void 0 : e.after) ? t(v(n)) : (null == e ? void 0 : e.after) || (null == e ? void 0 : e.searchQuery) || t(f(n))
+						} = c.body, n = u(r);
+						if (!n) return t(Object(a.d)()), void t(w());
+						(null == e ? void 0 : e.searchQuery) ? t(y(n)): (null == e ? void 0 : e.after) ? t(g(n)) : (null == e ? void 0 : e.after) || (null == e ? void 0 : e.searchQuery) || t(x(n))
 					}
-					u.ok || (t(Object(o.d)()), t(y()))
-				}, O = Object(i.a)(m.f), _ = (e, t) => async (r, i, a) => {
+					c.ok || (t(Object(a.d)()), t(w()))
+				}, E = Object(i.a)(h.f), k = (e, t) => async (r, i, d) => {
 					let {
-						apiContext: d
-					} = a;
-					var c, m;
-					const p = null === (m = null === (c = i().pages) || void 0 === c ? void 0 : c.followers) || void 0 === m ? void 0 : m.models[e];
-					if (!p) return;
-					r(O({
+						apiContext: l
+					} = d;
+					var u, h;
+					const b = i(),
+						f = null === (h = null === (u = b.pages) || void 0 === u ? void 0 : u.followers) || void 0 === h ? void 0 : h.models[e];
+					if (!f) return;
+					r(E({
 						userId: e,
 						isFollowed: t
 					}));
-					const h = p.name;
-					if ((await Object(l.c)(d(), {
-							subredditNames: [`${s.kc}${p.name}`],
+					const v = f.name;
+					if ((await Object(c.c)(l(), {
+							subredditNames: [`${s.kc}${f.name}`],
 							subscribe: t
 						})).ok) {
-						r(O({
+						r(E({
 							userId: e,
 							isFollowed: t
 						}));
-						const s = n.fbt._("Sucсessfully followed {userName}", [n.fbt._param("userName", h)], {
-								hk: "1AYBqL"
+						const s = n.fbt._("Successfully followed {userName}", [n.fbt._param("userName", v)], {
+								hk: "nYw1y"
 							}),
-							i = n.fbt._("Sucсessfully unfollowed {userName}", [n.fbt._param("userName", h)], {
-								hk: "4F2yCK"
+							i = n.fbt._("Successfully unfollowed {userName}", [n.fbt._param("userName", v)], {
+								hk: "1ki3kp"
 							});
-						r(Object(o.f)({
+						r(Object(a.f)({
 							text: t ? s : i
-						}))
+						})), Object(p.a)(b) && r(Object(o.c)("user_follow"))
 					} else {
 						const s = n.fbt._("Something went wrong", null, {
 							hk: "3i6szH"
 						});
-						r(O({
+						r(E({
 							userId: e,
 							isFollowed: !t
-						})), r(Object(o.f)(Object(o.e)(s, u.b.Error)))
+						})), r(Object(a.f)(Object(a.e)(s, m.b.Error)))
 					}
 				}
 		},
@@ -6707,13 +6710,13 @@
 			const i = e => {
 					return !(Object(s.c)(e, {
 						experimentEligibilitySelector: s.a,
-						experimentName: n.Xd
-					}) === n.qd)
+						experimentName: n.Zd
+					}) === n.rd)
 				},
 				o = e => Object(s.c)(e, {
 					experimentEligibilitySelector: s.a,
-					experimentName: n.Yd
-				}) === n.qd
+					experimentName: n.ae
+				}) === n.rd
 		},
 		"./src/reddit/selectors/followers.ts": function(e, t, r) {
 			"use strict";
@@ -6776,4 +6779,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.e34ba925bb3170bd82e2.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileFollowersPage.c8d97cb6a793c6c6b98a.js.map
