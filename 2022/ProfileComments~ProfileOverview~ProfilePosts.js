@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.1e0ac00987da808947aa.js
-// Retrieved at 6/1/2022, 10:00:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.a0b5b7ec9086f8976566.js
+// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePosts", "reddit-components-ContentGate"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -1956,7 +1956,7 @@
 		"./src/reddit/components/Upsell/NsfwBlocking/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return P
+				return N
 			}));
 			var a = n("./src/config.ts"),
 				r = n("./node_modules/fbt/lib/FbtPublic.js"),
@@ -1973,16 +1973,10 @@
 				b = n("./src/reddit/components/TrackingHelper/index.tsx"),
 				f = n("./src/reddit/constants/experiments.ts"),
 				_ = n("./src/reddit/controls/Button/index.tsx"),
-				w = n("./src/lib/constants/index.ts"),
-				k = n("./src/lib/sample/index.ts"),
-				g = n("./src/telemetry/helpers/sendCounter.ts");
-			var C;
-			! function(e) {
-				e.FullPage = "FullPage", e.Modal = "Modal"
-			}(C || (C = {}));
-			var S = n("./src/reddit/selectors/telemetry.ts");
-			const y = "nsfw_dialog";
-			var E = e => s.a.createElement("svg", {
+				w = n("./src/reddit/helpers/counters/nsfwblocking.ts"),
+				k = n("./src/reddit/selectors/telemetry.ts");
+			const g = "nsfw_dialog";
+			var C = e => s.a.createElement("svg", {
 					className: e.className,
 					fill: "none",
 					height: "60",
@@ -1999,128 +1993,121 @@
 					d: "M54.52 20.1902L39.31 4.9802C38.0246 3.68674 36.4962 2.66024 34.8126 1.95977C33.129 1.25929 31.3235 0.898682 29.5 0.898682C27.6765 0.898682 25.871 1.25929 24.1874 1.95977C22.5038 2.66024 20.9753 3.68674 19.69 4.9802L4.47996 20.1902C3.1865 21.4756 2.16 23.004 1.45952 24.6876C0.75905 26.3712 0.398438 28.1767 0.398438 30.0002C0.398438 31.8237 0.75905 33.6292 1.45952 35.3128C2.16 36.9964 3.1865 38.5249 4.47996 39.8102L19.69 55.0202C20.9753 56.3137 22.5038 57.3402 24.1874 58.0406C25.871 58.7411 27.6765 59.1017 29.5 59.1017C31.3235 59.1017 33.129 58.7411 34.8126 58.0406C36.4962 57.3402 38.0246 56.3137 39.31 55.0202L54.52 39.8102C55.8134 38.5249 56.8399 36.9964 57.5404 35.3128C58.2409 33.6292 58.6015 31.8237 58.6015 30.0002C58.6015 28.1767 58.2409 26.3712 57.5404 24.6876C56.8399 23.004 55.8134 21.4756 54.52 20.1902ZM23.92 43.5002H18.19V24.8402L13.27 27.0002V21.6602L22.27 17.5802H23.95L23.92 43.5002ZM44.92 40.1102C44.0432 41.3133 42.8485 42.2483 41.47 42.8102C39.9566 43.453 38.3292 43.7843 36.685 43.7843C35.0407 43.7843 33.4133 43.453 31.9 42.8102C30.5371 42.2355 29.3552 41.3025 28.48 40.1102C27.651 38.9798 27.2091 37.612 27.22 36.2102C27.2015 34.9552 27.5565 33.723 28.24 32.6702C28.9308 31.5703 29.8778 30.6542 31 30.0002C30.1811 29.3345 29.5237 28.4921 29.0768 27.5361C28.63 26.5801 28.4054 25.5354 28.42 24.4802C28.3942 23.1593 28.7708 21.8619 29.5 20.7602C30.2375 19.6425 31.2781 18.758 32.5 18.2102C33.8234 17.6075 35.2607 17.2956 36.715 17.2956C38.1692 17.2956 39.6065 17.6075 40.93 18.2102C42.1475 18.765 43.1863 19.648 43.93 20.7602C44.6492 21.8441 45.0255 23.1195 45.01 24.4202C45.0008 25.4585 44.7654 26.4823 44.32 27.4202C43.8573 28.3643 43.2034 29.202 42.4 29.8802C43.5275 30.5247 44.4842 31.43 45.19 32.5202C45.8864 33.5797 46.2519 34.8224 46.24 36.0902C46.2595 37.5496 45.7717 38.9705 44.86 40.1102H44.92Z",
 					fill: "#FF585B"
 				})),
-				x = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
-				v = n("./src/reddit/components/Upsell/NsfwBlocking/index.m.less"),
-				O = n.n(v);
-			const N = {
+				S = n("./src/reddit/selectors/experiments/nsfwBlockingExperiment.ts"),
+				y = n("./src/reddit/components/Upsell/NsfwBlocking/index.m.less"),
+				E = n.n(y);
+			const x = {
 					d2x_nsfw_signup_blocking_de_v1: `${a.a.assetPath}/img/nsfw-blocking-promo/d2x_nsfw_signup_blocking_de_v1_QR-code.jpeg`,
 					d2x_nsfw_signup_blocking_non_us_v1: `${a.a.assetPath}/img/nsfw-blocking-promo/d2x_nsfw_signup_blocking_de_v1_QR-code.jpeg`
 				},
-				j = e => {
+				v = e => {
 					const t = Object(i.d)(),
 						n = Object(b.b)(),
-						a = Object(i.e)(x.f),
+						a = Object(i.e)(S.f),
 						u = Object(o.useCallback)(() => {
-							a === x.a.Blurred && t(Object(p.k)({
+							a === S.a.Blurred && t(Object(p.k)({
 								actionSource: p.a.NsfwBlockingModal
 							}))
 						}, [t, a]),
 						h = (e => e ? s.a.createElement("div", {
-							className: O.a.cta
+							className: E.a.cta
 						}, r.fbt._("To show mature content,", null, {
 							hk: "5xfDy"
 						}), s.a.createElement("br", null), r.fbt._("log in to confirm you're over 18", null, {
 							hk: "29imoi"
 						})) : s.a.createElement("div", {
-							className: O.a.cta
+							className: E.a.cta
 						}, r.fbt._("Log in to confirm you're over 18", null, {
 							hk: "RUR2Z"
-						})))(a === x.a.Blurred);
+						})))(a === S.a.Blurred);
 					return Object(o.useEffect)(() => {
-						(e => {
-							Object(k.a)(10) && Object(g.b)(w.m.Redesign, {
-								type: g.a.NsfwBlocking,
-								data: {
-									variant: e
-								}
-							})
-						})(a)
+						Object(w.c)(a)
 					}, [a]), s.a.createElement("div", {
-						className: Object(d.a)(O.a.mainCta)
-					}, s.a.createElement(E, null), h, s.a.createElement("div", {
-						className: O.a.contentTitle
+						className: Object(d.a)(E.a.mainCta)
+					}, s.a.createElement(C, null), h, s.a.createElement("div", {
+						className: E.a.contentTitle
 					}, e.contentTitle), s.a.createElement("div", {
-						className: O.a.warning
+						className: E.a.warning
 					}, (() => r.fbt._("This page may contain sensitive or adult content that's not for everyone. To view it, confirm your age.", null, {
 						hk: "3cUxXS"
 					}))()), s.a.createElement("div", {
-						className: O.a.buttonContainer
+						className: E.a.buttonContainer
 					}, s.a.createElement(_.j, {
-						className: Object(d.a)(O.a.logIn),
+						className: Object(d.a)(E.a.logIn),
 						onClick: () => {
 							n((() => e => ({
-								...Object(S.n)(e),
+								...Object(k.n)(e),
 								source: "xpromo",
 								action: "click",
-								noun: y
-							}))()), u(), t(Object(m.i)())
+								noun: g
+							}))()), u(), Object(w.b)(w.a.Login), t(Object(m.i)())
 						}
 					}, (() => r.fbt._("Log In", null, {
 						hk: "4BITk"
 					}))()), s.a.createElement(_.j, {
-						className: O.a.cancel,
+						className: E.a.cancel,
 						onClick: () => {
 							Object(c.b)(), n((() => e => ({
-								...Object(S.n)(e),
+								...Object(k.n)(e),
 								source: "xpromo",
 								action: "dismiss",
-								noun: y
-							}))()), t(Object(l.b)("/"))
+								noun: g
+							}))()), Object(w.b)(w.a.Dismiss), t(Object(l.b)("/"))
 						}
 					}, (() => r.fbt._("I'm not over 18", null, {
 						hk: "11UX9Q"
 					}))())))
 				},
-				L = Object(u.a)(e => {
+				O = Object(u.a)(e => {
 					const t = `${a.a.assetPath}/img/nsfw-blocking-promo/snoovatar_anonymous_cropped.png`;
 					return s.a.createElement("div", {
-						className: O.a.qrCodeOuter
+						className: E.a.qrCodeOuter
 					}, s.a.createElement("div", {
-						className: O.a.qrCodeInner
+						className: E.a.qrCodeInner
 					}, s.a.createElement("img", {
-						className: O.a.qrCode,
+						className: E.a.qrCode,
 						alt: r.fbt._("QR Code to get the Reddit app", null, {
 							hk: "2uYhIL"
 						}),
 						src: e.qrCodeAsset
 					}), s.a.createElement("div", {
-						className: O.a.copyLine1
+						className: E.a.copyLine1
 					}, (() => r.fbt._("Download the app to use", null, {
 						hk: "4i9ZxV"
 					}))()), s.a.createElement("div", {
-						className: O.a.copyLine2
+						className: E.a.copyLine2
 					}, (() => r.fbt._("Anonymous Browsing", null, {
 						hk: "rTJ9j"
 					}))()), s.a.createElement("img", {
-						className: O.a.sneakySnoo,
+						className: E.a.sneakySnoo,
 						src: t
 					})))
 				}),
-				P = e => {
+				N = e => {
 					const t = Object(b.b)();
 					s.a.useEffect(() => {
 						t((() => e => ({
-							...Object(S.n)(e),
+							...Object(k.n)(e),
 							source: "xpromo",
 							action: "view",
-							noun: y
+							noun: g
 						}))())
 					}, [t]);
 					const {
 						contentTitle: n
-					} = e, a = Object(i.e)(x.g), r = Object(i.e)(x.h), o = Object(i.e)(x.f), l = o === x.a.Blurred ? h.a.White : o === x.a.NoPreview ? h.a.Grey : void 0;
+					} = e, a = Object(i.e)(S.g), r = Object(i.e)(S.h), o = Object(i.e)(S.f), l = o === S.a.Blurred ? h.a.White : o === S.a.NoPreview ? h.a.Grey : void 0;
 					return s.a.createElement("div", {
-						className: O.a.container
-					}, s.a.createElement(j, {
+						className: E.a.container
+					}, s.a.createElement(v, {
 						contentTitle: n
 					}), s.a.createElement("div", {
-						className: Object(d.a)(O.a.footerWrapper, {
-							[O.a.mIsModal]: o === x.a.Blurred
+						className: Object(d.a)(E.a.footerWrapper, {
+							[E.a.mIsModal]: o === S.a.Blurred
 						})
 					}, s.a.createElement(h.b, {
 						textColor: l
-					})), s.a.createElement(L, {
-						qrCodeAsset: (() => a === f.xc.Enabled || r === f.lb.BlurredPreview || r === f.lb.NoPreview ? N.d2x_nsfw_signup_blocking_de_v1 : N.d2x_nsfw_signup_blocking_non_us_v1)()
+					})), s.a.createElement(O, {
+						qrCodeAsset: (() => a === f.yc.Enabled || r === f.lb.BlurredPreview || r === f.lb.NoPreview ? x.d2x_nsfw_signup_blocking_de_v1 : x.d2x_nsfw_signup_blocking_non_us_v1)()
 					}))
 				}
 		},
@@ -2414,4 +2401,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.1e0ac00987da808947aa.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.a0b5b7ec9086f8976566.js.map
