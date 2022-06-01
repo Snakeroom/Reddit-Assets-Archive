@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a65b16b7981af087a858.js
-// Retrieved at 6/1/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.990d95cb1bb7e54369ec.js
+// Retrieved at 6/1/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Chat~Governance~Reddit"], {
 		"./assets/fonts/IBMPlexSans/font.less": function(e, t, i) {},
@@ -3467,11 +3467,11 @@
 				apiPassThroughHeaders: Object(r.e)({}.API_PASS_THROUGH_HEADERS || ""),
 				appName: {}.APP_NAME || "desktop2x",
 				assetPath: "https://www.redditstatic.com/desktop2x",
-				buildNumber: Object(r.c)("165661"),
+				buildNumber: Object(r.c)("165666"),
 				chatHelpUrl: {}.CHAT_HELP_URL || "https://reddit.zendesk.com/hc/en-us/sections/360008805652-Chat",
 				hlsVersion: "hls 0.12.4",
 				dashVersion: "dash 3.2.0",
-				buildTimestamp: Object(r.b)("1654121819"),
+				buildTimestamp: Object(r.b)("1654123740"),
 				cookieDomain: ".reddit.com",
 				giphyApiKey: "k2kwyMA6VeyHM6ZRT96OXDGaersnx73Z",
 				mediaUrl: "https://www.redditmedia.com",
@@ -4450,7 +4450,7 @@
 							const t = a(e);
 							switch (t) {
 								case 401:
-									return Object(r.a)(5);
+									return Object(r.b)(5);
 								case 403:
 								case 404: {
 									const t = e.body && e.body.reason;
@@ -5435,6 +5435,8 @@
 					ONE_TAP_DISMISSED: "one-tap-dismiss",
 					ONE_TAP_VIEWED: "one-tap-view",
 					REONBOARDING_FLOW: "reonboardingFlow",
+					LOGGEDOUT_FRONTPAGE_FAILED: "loggedOutFrontPageFailed",
+					LOGGEDOUT_MENU_RENDERED: "loggedOutMenuRendered",
 					NSFW_BLOCKING: "nsfwBlocking"
 				},
 				Tt = " …",
@@ -6048,7 +6050,7 @@
 			const q = !1;
 
 			function W(e) {
-				return "ChunkLoadError" !== e.type || Object(x.a)(1)
+				return "ChunkLoadError" !== e.type || Object(x.b)(1)
 			}
 			m.a.polyfill();
 			const K = () => {
@@ -6076,14 +6078,14 @@
 					}))
 				},
 				Y = (e, t, i) => {
-					console.log("%cStarting Raven %crelease %c174c5ddc69a3aa0fbe194597a74807219715490f-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
+					console.log("%cStarting Raven %crelease %c63c6a1ad1b04959ed18a6c1d20bcba457e55445e-production" + ` %cpublic url %c${y.a.sentryClientPublicURL}`, "color: #7E53C1", "color: #7E53C1", "color: #FFB000", "color: #7E53C1", "color: #FFB000");
 					let n = [];
 					n = [new RegExp(`^${y.a.assetPath}`, "i")];
 					o.e({
 						attachStacktrace: !0,
 						dsn: y.a.sentryClientPublicURL,
 						whitelistUrls: n,
-						release: "174c5ddc69a3aa0fbe194597a74807219715490f-production",
+						release: "63c6a1ad1b04959ed18a6c1d20bcba457e55445e-production",
 						environment: "production",
 						ignoreErrors: ["$ is not defined"],
 						integrations: [...Object(L.d)(), new d.Integrations.Breadcrumbs({
@@ -6692,7 +6694,7 @@
 							settings: r,
 							statusCode: s,
 							type: o,
-							releaseClient: "174c5ddc69a3aa0fbe194597a74807219715490f-production",
+							releaseClient: "63c6a1ad1b04959ed18a6c1d20bcba457e55445e-production",
 							appName: t.statsAppName,
 							error: n ? JSON.parse(Object(l.a)(n)) : void 0
 						},
@@ -7954,13 +7956,25 @@
 		},
 		"./src/lib/sample/index.ts": function(e, t, i) {
 			"use strict";
+			(function(e) {
+				i.d(t, "b", (function() {
+					return n
+				})), i.d(t, "a", (function() {
+					return r
+				}));
+				i("./node_modules/crypto-browserify/index.js");
 
-			function n(e) {
-				return !(e <= 0) && (e >= 100 || 100 * Math.random() <= e)
-			}
-			i.d(t, "a", (function() {
-				return n
-			}))
+				function n(e) {
+					return !(e <= 0) && (e >= 100 || 100 * Math.random() <= e)
+				}
+				const r = (e, t) => {
+					let {
+						rate: i
+					} = t;
+					if (i < 0 || i > 100) throw new Error("Sampling rate should be greater than or equal to 0 and less than or equal to 1");
+					return 100 === i || i > 0 && e.meta.samplingBucket < i
+				}
+			}).call(this, i("./node_modules/buffer/index.js").Buffer)
 		},
 		"./src/lib/scheduler/index.ts": function(e, t, i) {
 			"use strict";
@@ -8080,7 +8094,7 @@
 				return function(e) {
 					var t;
 					const i = e.level ? e.level : s.a.Fatal;
-					return !(!_.has(i) || (null === (t = e.extra) || void 0 === t ? void 0 : t.bypassSampling)) && Object(o.a)(m)
+					return !(!_.has(i) || (null === (t = e.extra) || void 0 === t ? void 0 : t.bypassSampling)) && Object(o.b)(m)
 				}(e)
 			}
 		},
@@ -43257,7 +43271,7 @@
 								const r = u[a.b],
 									s = c(r, S);
 								v(e, a.b, r, O, n.statsAppName), t.dispatch(i.loidReceived(s))
-							} else g || Object(m.a)(h.a.logSample.failToSetLOID) && p.c.captureMessage("LOID failing to be set on user without LOID");
+							} else g || Object(m.b)(h.a.logSample.failToSetLOID) && p.c.captureMessage("LOID failing to be set on user without LOID");
 						if (a.g in u) {
 							const r = u[a.g];
 							if (r !== w) {
@@ -46000,7 +46014,7 @@
 				s = i("./src/lib/constants/index.ts"),
 				o = i("./src/lib/makeRequest/index.ts");
 			! function(e) {
-				e.ClientIdConsumed = "clientIdConsumed", e.ClientIdRejected = "clientIdRejected", e.NumberOfDiffs = "numberOfDiffs", e.DetailedDiffs = "detailedDiffs", e.ClientScreenview = "client-screenview", e.GenderCollection = "genderCollection", e.OneTapDismissed = "oneTapDismissed", e.OneTapViewed = "oneTapViewed", e.ReonboardingFlow = "reonboardingFlow", e.NsfwBlocking = "nsfwBlocking"
+				e.ClientIdConsumed = "clientIdConsumed", e.ClientIdRejected = "clientIdRejected", e.NumberOfDiffs = "numberOfDiffs", e.DetailedDiffs = "detailedDiffs", e.ClientScreenview = "client-screenview", e.GenderCollection = "genderCollection", e.OneTapDismissed = "oneTapDismissed", e.OneTapViewed = "oneTapViewed", e.ReonboardingFlow = "reonboardingFlow", e.LoggedOutFrontPageFailed = "loggedOutFrontPageFailed", e.LoggedOutMenuRendered = "loggedOutMenuRendered", e.NsfwBlocking = "nsfwBlocking"
 			}(n || (n = {}));
 			const d = e => {
 				switch (e) {
@@ -46016,6 +46030,10 @@
 						return s.w.CLIENT_SCREENVIEW;
 					case n.GenderCollection:
 						return s.w.GENDER_COLLECTION;
+					case n.LoggedOutFrontPageFailed:
+						return s.w.LOGGEDOUT_FRONTPAGE_FAILED;
+					case n.LoggedOutMenuRendered:
+						return s.w.LOGGEDOUT_MENU_RENDERED;
 					case n.OneTapDismissed:
 						return s.w.ONE_TAP_DISMISSED;
 					case n.OneTapViewed:
@@ -47664,4 +47682,4 @@
 		"ignored /drone/src/node_modules/readable-stream/lib/internal/streams util": function(e, t) {}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.a65b16b7981af087a858.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Chat~Governance~Reddit.990d95cb1bb7e54369ec.js.map
