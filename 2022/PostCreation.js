@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.dfe89ee8f4c691762125.js
-// Retrieved at 6/1/2022, 10:00:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.32cdd312d145d8ba6349.js
+// Retrieved at 6/1/2022, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -4027,13 +4027,15 @@
 						share: l,
 						source: u,
 						activeTab: m,
-						activeDetails: p
-					} = e, h = n();
-					s && Object(d.a)(Object(i.g)(s)(h)), Object(c.P)(h) ? await t(Object(r.h)(a.a.SNOOVATAR_MODAL, {
+						activeMeSubpage: p,
+						activeDetails: h
+					} = e, b = n();
+					s && Object(d.a)(Object(i.g)(s)(b)), Object(c.P)(b) ? await t(Object(r.h)(a.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u,
 						activeTab: m,
-						activeDetails: p
+						activeMeSubpage: p,
+						activeDetails: h
 					})) : await t(Object(o.i)())
 				}
 			}
@@ -29402,4 +29404,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.dfe89ee8f4c691762125.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.32cdd312d145d8ba6349.js.map

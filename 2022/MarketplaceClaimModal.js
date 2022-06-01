@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.8b3887ba0923680c5818.js
-// Retrieved at 5/16/2022, 4:10:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.303cbda5d7121dd753b7.js
+// Retrieved at 6/1/2022, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, n) {
@@ -104,8 +104,8 @@
 			var m = n("./src/reddit/actions/snoovatarModal.ts"),
 				p = n("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
 				E = n("./src/reddit/helpers/avatarRouting.ts"),
-				v = n("./src/reddit/selectors/activeModal.ts"),
-				_ = n("./src/reddit/selectors/user.ts"),
+				_ = n("./src/reddit/selectors/activeModal.ts"),
+				v = n("./src/reddit/selectors/user.ts"),
 				O = n("./src/reddit/components/Econ/Marketplace/ClaimModal/index.m.less"),
 				f = n.n(O);
 
@@ -122,10 +122,10 @@
 					let {
 						onClose: t
 					} = e;
-					const n = Object(c.e)(_.Bb),
+					const n = Object(c.e)(v.Bb),
 						r = Object(c.e)(e => {
 							var t;
-							return null === (t = Object(v.a)(e)) || void 0 === t ? void 0 : t.claimId
+							return null === (t = Object(_.a)(e)) || void 0 === t ? void 0 : t.claimId
 						}),
 						a = Object(c.d)();
 					if (!n || !r) return null;
@@ -134,17 +134,16 @@
 					}, s.a.createElement(p.a, null, s.a.createElement(o.b, {
 						onClose: t,
 						userId: n,
-						onViewAvatar: e => {
+						onViewAvatar: () => {
 							t(), a(Object(m.b)({
 								activeTab: E.a.ME,
-								activeDetails: {
-									id: e
-								}
+								activeMeSubpage: "MY_STUFF"
 							}))
 						},
 						onSetAsAvatar: e => {
 							t(), a(Object(m.b)({
 								activeTab: E.a.ME,
+								activeMeSubpage: "MY_STUFF",
 								activeDetails: {
 									id: e,
 									equip: !0,
@@ -171,14 +170,17 @@
 		},
 		"./src/reddit/helpers/avatarRouting.ts": function(e, t, n) {
 			"use strict";
-			var r;
+			var r, a;
 			n.d(t, "a", (function() {
-					return r
+					return a
 				})),
 				function(e) {
+					e.BODY = "body", e.EYES = "eyes", e.HAIR = "hair", e.EXPRESSION = "expression", e.FACIAL_HAIR = "facial hair"
+				}(r || (r = {})),
+				function(e) {
 					e.SHOP = "shop", e.EXPLORE = "explore", e.STYLE = "style", e.ME = "me", e.NFT = "nft"
-				}(r || (r = {}))
+				}(a || (a = {}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.8b3887ba0923680c5818.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.303cbda5d7121dd753b7.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.26253e6acd6a80075a2d.js
-// Retrieved at 5/12/2022, 8:00:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProductDetailsModal.3996cafd62fbbd75a114.js
+// Retrieved at 6/1/2022, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProductDetailsModal"], {
 		"./node_modules/@reddit/crypto/core/wallets/index.es.js": function(e, t, r) {
@@ -45,8 +45,8 @@
 				l = r("./src/reddit/helpers/avatarRouting.ts"),
 				u = r("./src/reddit/selectors/activeModal.ts"),
 				p = r("./src/reddit/selectors/user.ts"),
-				m = r("./src/reddit/components/Econ/Marketplace/NftProductDetails/index.m.less"),
-				h = r.n(m);
+				h = r("./src/reddit/components/Econ/Marketplace/NftProductDetails/index.m.less"),
+				m = r.n(h);
 
 			function v() {
 				return (v = Object.assign || function(e) {
@@ -69,7 +69,7 @@
 						a = Object(o.d)();
 					if (!r || !s) return null;
 					return n.a.createElement("div", {
-						className: h.a.container
+						className: m.a.container
 					}, n.a.createElement(i.a, null, n.a.createElement(c.a, {
 						itemId: s,
 						onClose: t,
@@ -77,14 +77,13 @@
 						onViewAvatar: e => {
 							t(), a(Object(d.b)({
 								activeTab: l.a.ME,
-								activeDetails: {
-									id: e
-								}
+								activeMeSubpage: "MY_STUFF"
 							}))
 						},
 						onSetAsAvatar: e => {
 							t(), a(Object(d.b)({
 								activeTab: l.a.ME,
+								activeMeSubpage: "MY_STUFF",
 								activeDetails: {
 									id: e,
 									equip: !0,
@@ -97,19 +96,22 @@
 				_ = Object(s.a)(f);
 			t.default = e => n.a.createElement(_, v({
 				withOverlay: !0,
-				className: h.a.modal
+				className: m.a.modal
 			}, e))
 		},
 		"./src/reddit/helpers/avatarRouting.ts": function(e, t, r) {
 			"use strict";
-			var s;
+			var s, a;
 			r.d(t, "a", (function() {
-					return s
+					return a
 				})),
 				function(e) {
+					e.BODY = "body", e.EYES = "eyes", e.HAIR = "hair", e.EXPRESSION = "expression", e.FACIAL_HAIR = "facial hair"
+				}(s || (s = {})),
+				function(e) {
 					e.SHOP = "shop", e.EXPLORE = "explore", e.STYLE = "style", e.ME = "me", e.NFT = "nft"
-				}(s || (s = {}))
+				}(a || (a = {}))
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.26253e6acd6a80075a2d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProductDetailsModal.3996cafd62fbbd75a114.js.map

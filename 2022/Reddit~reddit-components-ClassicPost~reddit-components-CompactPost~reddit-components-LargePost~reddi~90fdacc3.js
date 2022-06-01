@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.51ecf55a30becf730932.js
-// Retrieved at 6/1/2022, 10:00:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.e2ea8097e4154b624094.js
+// Retrieved at 6/1/2022, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -456,13 +456,15 @@
 						share: u,
 						source: l,
 						activeTab: m,
-						activeDetails: p
-					} = e, b = n();
-					o && Object(d.a)(Object(c.g)(o)(b)), Object(a.P)(b) ? await t(Object(s.h)(i.a.SNOOVATAR_MODAL, {
+						activeMeSubpage: p,
+						activeDetails: b
+					} = e, f = n();
+					o && Object(d.a)(Object(c.g)(o)(f)), Object(a.P)(f) ? await t(Object(s.h)(i.a.SNOOVATAR_MODAL, {
 						share: u,
 						source: l,
 						activeTab: m,
-						activeDetails: p
+						activeMeSubpage: p,
+						activeDetails: b
 					})) : await t(Object(r.i)())
 				}
 			}
@@ -2619,4 +2621,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.51ecf55a30becf730932.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.e2ea8097e4154b624094.js.map

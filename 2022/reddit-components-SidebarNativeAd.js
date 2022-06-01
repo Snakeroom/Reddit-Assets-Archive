@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.8f8d59a8a74bc4cbb164.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.48ee222ce527f8e45e98.js
+// Retrieved at 6/1/2022, 12:40:06 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -963,13 +963,15 @@
 						share: l,
 						source: u,
 						activeTab: m,
-						activeDetails: p
-					} = e, f = n();
-					s && Object(d.a)(Object(i.g)(s)(f)), Object(c.P)(f) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL, {
+						activeMeSubpage: p,
+						activeDetails: f
+					} = e, h = n();
+					s && Object(d.a)(Object(i.g)(s)(h)), Object(c.P)(h) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u,
 						activeTab: m,
-						activeDetails: p
+						activeMeSubpage: p,
+						activeDetails: f
 					})) : await t(Object(r.i)())
 				}
 			}
@@ -1149,9 +1151,9 @@
 			})), n.d(t, "u", (function() {
 				return T
 			})), n.d(t, "r", (function() {
-				return P
-			})), n.d(t, "a", (function() {
 				return M
+			})), n.d(t, "a", (function() {
+				return P
 			})), n.d(t, "s", (function() {
 				return S
 			})), n.d(t, "c", (function() {
@@ -1193,8 +1195,8 @@
 				C = o.a.div("ModalMain", u.a),
 				E = o.a.textarea("TextArea", u.a),
 				T = o.a.wrapped(i.l, "WarningButton", u.a),
-				P = o.a.wrapped(i.l, "PrimaryButton", u.a),
-				M = o.a.wrapped(i.o, "CancelButton", u.a),
+				M = o.a.wrapped(i.l, "PrimaryButton", u.a),
+				P = o.a.wrapped(i.o, "CancelButton", u.a),
 				S = o.a.wrapped(i.r, "RemoveButton", u.a),
 				A = e => {
 					let {
@@ -1458,8 +1460,8 @@
 				C = n("./node_modules/fbt/lib/FbtPublic.js"),
 				E = n("./src/lib/prettyPrintNumber/index.ts"),
 				T = n("./src/reddit/components/Poll/PollExpiry/index.tsx"),
-				P = n("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
-				M = n.n(P),
+				M = n("./src/reddit/components/Poll/PostTitleMetaData/index.m.less"),
+				P = n.n(M),
 				S = n("./src/reddit/hooks/useIsRemovedOrDeletedPost.ts");
 			const A = Object(c.c)({
 				poll: (e, t) => e.polls.models[t.pollId],
@@ -1471,14 +1473,14 @@
 						resultsByVoters: n
 					} = e, r = n ? n.totalVotes : "0";
 					return Object(S.a)() ? null : s.a.createElement("div", {
-						className: Object(l.a)(e.className, M.a.proposalMetaData)
+						className: Object(l.a)(e.className, P.a.proposalMetaData)
 					}, s.a.createElement("span", null, C.fbt._({
 						"*": "{count} votes",
 						_1: "{count} vote"
 					}, [C.fbt._param("count", Object(E.a)(r)), C.fbt._plural(parseInt(r))], {
 						hk: "4rP1VK"
 					})), t && s.a.createElement(T.a, {
-						className: M.a.proposalExpiry,
+						className: P.a.proposalExpiry,
 						poll: t
 					}))
 				})),
@@ -1876,9 +1878,9 @@
 				C = n("./src/reddit/models/Theme/index.ts"),
 				E = n("./src/reddit/models/Theme/NewColorSystem/index.ts"),
 				T = n("./src/lib/constants/index.ts"),
-				P = n("./src/reddit/models/Media/index.ts"),
-				M = n("./src/reddit/components/NativeBannerAd/index.m.less"),
-				S = n.n(M);
+				M = n("./src/reddit/models/Media/index.ts"),
+				P = n("./src/reddit/components/NativeBannerAd/index.m.less"),
+				S = n.n(P);
 			const A = m.a.wrapped(e => s.a.createElement("img", {
 				className: e.className,
 				src: e.src
@@ -1889,7 +1891,7 @@
 						post: e
 					} = this.props;
 					if (!e.media) return null;
-					const t = !e.media || Object(P.N)(e.media) || Object(P.G)(e.media) || Object(P.H)(e.media) ? "" : e.media.content,
+					const t = !e.media || Object(M.N)(e.media) || Object(M.G)(e.media) || Object(M.H)(e.media) ? "" : e.media.content,
 						{
 							type: n
 						} = e.media;
@@ -2311,9 +2313,9 @@
 			})), n.d(t, "triggerAnonymousEvent", (function() {
 				return T
 			})), n.d(t, "clickMessageInputEvent", (function() {
-				return P
-			})), n.d(t, "typeMessageInputEvent", (function() {
 				return M
+			})), n.d(t, "typeMessageInputEvent", (function() {
+				return P
 			})), n.d(t, "clickLearnMoreLinkEvent", (function() {
 				return S
 			})), n.d(t, "clickQuestionMarkEvent", (function() {
@@ -2440,13 +2442,13 @@
 					action: e,
 					noun: "anonymous"
 				}),
-				P = e => t => ({
+				M = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "click",
 					noun: "message_input"
 				}),
-				M = e => t => ({
+				P = e => t => ({
 					...u(t, e),
 					source: "give_gold",
 					action: "type",
@@ -3751,7 +3753,7 @@
 					pending: C
 				});
 			const T = {};
-			var P = function() {
+			var M = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : T,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -3769,9 +3771,9 @@
 						return e
 				}
 			};
-			const M = {};
+			const P = {};
 			var S = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : M,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : P,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case o.m: {
@@ -3817,7 +3819,7 @@
 				},
 				R = Object(r.c)({
 					api: E,
-					fetchedTokens: P,
+					fetchedTokens: M,
 					loadMore: S,
 					models: N
 				}),
@@ -4324,9 +4326,9 @@
 					error: Ce,
 					pending: Ee
 				});
-			const Pe = {};
-			var Me = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Pe,
+			const Me = {};
+			var Pe = function() {
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Me,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case o.E: {
@@ -4401,7 +4403,7 @@
 				},
 				Ne = Object(r.c)({
 					api: Te,
-					models: Me,
+					models: Pe,
 					userOrder: Ae
 				});
 			const Re = {};
@@ -4938,13 +4940,13 @@
 							return e
 					}
 				},
-				Pt = Object(r.c)({
+				Mt = Object(r.c)({
 					after: jt,
 					data: Ct,
 					loaded: Et,
 					pending: Tt
 				});
-			var Mt = function() {
+			var Pt = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -4971,7 +4973,7 @@
 					}
 				},
 				At = Object(r.c)({
-					error: Mt,
+					error: Pt,
 					pending: St
 				});
 			const Nt = {};
@@ -5271,7 +5273,7 @@
 				ln = Object(r.c)({
 					bulkAction: ht,
 					edited: xt,
-					moderatedCommunitiesOrder: Pt,
+					moderatedCommunitiesOrder: Mt,
 					modqueue: Ft,
 					reports: Ht,
 					spam: en,
@@ -5487,7 +5489,7 @@
 							return e
 					}
 				},
-				Pn = Object(r.c)({
+				Mn = Object(r.c)({
 					api: fn,
 					fetchedTokens: bn,
 					inContext: gn,
@@ -5503,7 +5505,7 @@
 				moderationLog: be,
 				moderators: ot,
 				modQueue: ln,
-				muted: Pn
+				muted: Mn
 			})
 		},
 		"./src/reddit/selectors/authorFlair.ts": function(e, t, n) {
@@ -5786,7 +5788,7 @@
 			})), n.d(t, "e", (function() {
 				return T
 			})), n.d(t, "d", (function() {
-				return P
+				return M
 			}));
 			var r = n("./src/reddit/selectors/gold/purchaseCatalog.ts"),
 				o = n("./src/lib/initializeClient/installReducer.ts"),
@@ -5824,7 +5826,7 @@
 				C = e => e.features.goldPurchase.payment.stripeToken.errorMessage,
 				E = e => e.features.goldPurchase.payment.stripeToken.pending,
 				T = e => e.features.goldPurchase.payment.paypal.passthrough,
-				P = e => e.features.goldPurchase.payment.paypal.errorMessage
+				M = e => e.features.goldPurchase.payment.paypal.errorMessage
 		},
 		"./src/reddit/selectors/removedPosts.ts": function(e, t, n) {
 			"use strict";
@@ -5881,4 +5883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.8f8d59a8a74bc4cbb164.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.48ee222ce527f8e45e98.js.map
