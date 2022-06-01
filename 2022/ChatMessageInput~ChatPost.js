@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.274a3b3ce1dcdc2a83af.js
-// Retrieved at 6/1/2022, 10:00:11 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.887aa83b77178e98c76f.js
+// Retrieved at 6/1/2022, 11:20:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ChatMessageInput~ChatPost"], {
 		"./node_modules/lodash/_baseReduce.js": function(e, t) {
@@ -359,7 +359,7 @@
 		"./src/reddit/components/Media/ImageBox/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "b", (function() {
-				return T
+				return I
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -380,8 +380,8 @@
 				E = n("./src/reddit/models/Media/index.ts"),
 				_ = n("./src/reddit/selectors/posts.ts"),
 				j = n("./src/reddit/selectors/telemetry.ts"),
-				C = n("./src/reddit/selectors/user.ts"),
-				O = n("./src/reddit/constants/tracking.ts"),
+				O = n("./src/reddit/selectors/user.ts"),
+				C = n("./src/reddit/constants/tracking.ts"),
 				v = n("./src/reddit/components/Media/ImageBox/index.m.less"),
 				y = n.n(v);
 
@@ -394,14 +394,14 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const T = e => e > 2 * E.e,
-				I = e => {
+			const I = e => e > 2 * E.e,
+				T = e => {
 					const t = Object(d.a)(y.a.image, b.g, e.className, {
 							[y.a.mShowCentered]: e.showCentered,
 							[y.a.mShowBlurred]: e.shouldBlur
 						}),
 						n = {};
-					return e.showFull || e.isTall || (n.maxHeight = `${E.j}px`), e.isListing || e.isTall && T(e.height) || (n.maxHeight = `${E.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`), o.a.createElement("img", {
+					return e.showFull || e.isTall || (n.maxHeight = `${E.j}px`), e.isListing || e.isTall && I(e.height) || (n.maxHeight = `${E.e}px`), e.isExpando && e.maxHeight && (n.maxHeight = `${e.maxHeight}px`), e.isExpando && e.maxWidth && (n.maxWidth = `${e.maxWidth}px`), o.a.createElement("img", {
 						alt: e.altText || s.fbt._("Post image", null, {
 							hk: "3KfCgs"
 						}),
@@ -417,7 +417,7 @@
 						style: t
 					}, e.children)
 				},
-				S = Object(i.b)(() => Object(c.a)(_.F, C.ib, (e, t) => {
+				S = Object(i.b)(() => Object(c.a)(_.F, O.ib, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: s
@@ -448,10 +448,10 @@
 					onClick: e.onPostMediaClick
 				}, L(e)) : L(e)
 			});
-			const N = (e, t) => o.a.createElement(I, {
+			const N = (e, t) => o.a.createElement(T, {
 					altText: t.altText,
 					className: Object(d.a)(t.imageClassName, {
-						[O.a]: !e
+						[C.a]: !e
 					}),
 					height: t.height,
 					isExpando: !!t.isExpando,
@@ -471,9 +471,9 @@
 						...n
 					} = e;
 					const r = Object(E.L)(n.height, n.width),
-						i = T(n.height) && r;
+						i = I(n.height) && r;
 					return o.a.createElement(k, w({}, n, {
-						className: `${r?`${O.a} `:""}${n.className||""}`
+						className: `${r?`${C.a} `:""}${n.className||""}`
 					}), n.isListing ? o.a.createElement("div", {
 						className: n.contentImageClassName
 					}, N(r, n)) : o.a.createElement("a", {
@@ -665,8 +665,8 @@
 					src: Object(g.a)(u || "")
 				}))
 			}
-			var C = n("./src/reddit/components/Media/VideoBox/index.m.less"),
-				O = n.n(C);
+			var O = n("./src/reddit/components/Media/VideoBox/index.m.less"),
+				C = n.n(O);
 			const v = Object(c.c)({
 				autoplayPref: p.b,
 				consumed: b.a,
@@ -690,11 +690,11 @@
 					isNotCardView: g,
 					showFull: E,
 					shouldPause: _,
-					width: C,
+					width: O,
 					isListing: y,
 					className: w,
-					showCentered: T,
-					originalSource: I,
+					showCentered: I,
+					originalSource: T,
 					isPromoted: k
 				} = e, S = t && !(k && Object(d.hasAcceptableAds)()), N = Object(a.d)();
 
@@ -748,9 +748,9 @@
 
 				function A() {
 					const e = {};
-					return T && (e.margin = "0 auto"), y || (e.maxHeight = `${h.e}px`), i.a.createElement(j, {
+					return I && (e.margin = "0 auto"), y || (e.maxHeight = `${h.e}px`), i.a.createElement(j, {
 						autoplay: S,
-						className: Object(l.a)(m.a, O.a.styledVideo),
+						className: Object(l.a)(m.a, C.a.styledVideo),
 						height: f,
 						isListing: y,
 						isNotCardView: g,
@@ -765,19 +765,19 @@
 						onTimeUpdate: D,
 						shouldLoad: b,
 						shouldPause: _,
-						showCentered: T,
+						showCentered: I,
 						showFull: E,
 						source: x,
 						style: e,
-						width: C
+						width: O
 					})
 				}
 				return y ? A() : i.a.createElement("div", {
-					className: Object(l.a)(O.a.container, w, {
-						[O.a.centered]: T
+					className: Object(l.a)(C.a.container, w, {
+						[C.a.centered]: I
 					})
 				}, i.a.createElement("a", {
-					href: I,
+					href: T,
 					target: "_blank",
 					rel: "noopener noreferrer"
 				}, A()))
@@ -986,9 +986,9 @@
 			})), n.d(t, "u", (function() {
 				return j
 			})), n.d(t, "d", (function() {
-				return C
-			})), n.d(t, "l", (function() {
 				return O
+			})), n.d(t, "l", (function() {
+				return C
 			})), n.d(t, "m", (function() {
 				return v
 			})), n.d(t, "n", (function() {
@@ -996,9 +996,9 @@
 			})), n.d(t, "t", (function() {
 				return w
 			})), n.d(t, "p", (function() {
-				return T
-			})), n.d(t, "o", (function() {
 				return I
+			})), n.d(t, "o", (function() {
+				return T
 			})), n.d(t, "q", (function() {
 				return k
 			})), n.d(t, "s", (function() {
@@ -1029,13 +1029,13 @@
 				E = c.a.strong("B", a.a),
 				_ = c.a.em("I", a.a),
 				j = c.a.span("U", a.a),
-				C = e => r.a.createElement("del", e),
-				O = c.a.sub("Sub", a.a),
+				O = e => r.a.createElement("del", e),
+				C = c.a.sub("Sub", a.a),
 				v = c.a.sup("Sup", a.a),
 				y = c.a.table("Table", a.a),
 				w = c.a.tr("Tr", a.a),
-				T = c.a.td("Tdl", a.a),
-				I = c.a.td("Tdc", a.a),
+				I = c.a.td("Tdl", a.a),
+				T = c.a.td("Tdc", a.a),
 				k = c.a.td("Tdr", a.a),
 				S = c.a.th("Thl", a.a),
 				N = c.a.th("Thc", a.a),
@@ -1057,7 +1057,7 @@
 			})), n.d(t, "b", (function() {
 				return y
 			})), n.d(t, "a", (function() {
-				return T
+				return I
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/lodash/findLastIndex.js"),
@@ -1087,7 +1087,7 @@
 				}).apply(this, arguments)
 			}
 			const j = n("./src/lib/lessComponent.tsx").a.div("Container", E.a),
-				C = Object(d.a)(e => {
+				O = Object(d.a)(e => {
 					let {
 						flairStyleTemplate: t,
 						theme: n,
@@ -1103,9 +1103,9 @@
 						}
 					}))
 				}),
-				O = e => e.e === b.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== b.u || !!e.c && !e.c.every(e => e.e === b.A && !e.t),
-				v = e => o()(e, O),
-				y = e => e.findIndex(O),
+				C = e => e.e === b.k ? !!e.c && !e.c.every(e => !e.t) : e.e !== b.u || !!e.c && !e.c.every(e => e.e === b.A && !e.t),
+				v = e => o()(e, C),
+				y = e => e.findIndex(C),
 				w = e => {
 					const {
 						altText: t,
@@ -1120,9 +1120,9 @@
 						renderMediaAsLinks: p,
 						rtJsonElementProps: g,
 						useExplicitTextColor: _,
-						shouldBlur: O
-					} = e, w = s.document, T = [], I = e.mediaMetadata || null, k = y(w), S = v(w);
-					if (O && !r && !i) return a.a.createElement(j, {
+						shouldBlur: C
+					} = e, w = s.document, I = [], T = e.mediaMetadata || null, k = y(w), S = v(w);
+					if (C && !r && !i) return a.a.createElement(j, {
 						className: Object(c.a)(m.j, n)
 					}, a.a.createElement("div", {
 						className: E.a.unblurButtonContainer
@@ -1135,44 +1135,44 @@
 							const e = w[a];
 							switch (e.e) {
 								case b.k:
-									T.push(f.c(e, g, a));
+									I.push(f.c(e, g, a));
 									break;
 								case b.l:
-									T.push(f.d(a));
+									I.push(f.d(a));
 									break;
 								case b.b:
-									T.push(f.a(e, I, g, a));
+									I.push(f.a(e, T, g, a));
 									break;
 								case b.c:
-									T.push(f.b(e, a));
+									I.push(f.b(e, a));
 									break;
 								case b.p:
-									T.push(f.f(e, I, g, a));
+									I.push(f.f(e, T, g, a));
 									break;
 								case b.z:
-									T.push(f.h(e, I, g, a));
+									I.push(f.h(e, T, g, a));
 									break;
 								case b.u:
-									T.push(f.g(e, I, g, a));
+									I.push(f.g(e, T, g, a));
 									break;
 								case b.h:
-									T.push(Object(x.a)(e, a));
+									I.push(Object(x.a)(e, a));
 									break;
 								case b.m:
 								case b.a:
 								case b.D:
-									T.push(...Object(x.b)(e, a, I, p, h, t))
+									I.push(...Object(x.b)(e, a, T, p, h, t))
 							}
 						}
 					return _ ? a.a.createElement(j, {
 						className: Object(c.a)(m.j, n)
-					}, T) : a.a.createElement(C, {
+					}, I) : a.a.createElement(O, {
 						className: Object(c.a)(m.j, n),
 						flairStyleTemplate: e.flairStyleTemplate,
 						redditStyle: e.redditStyle
-					}, T)
+					}, I)
 				};
-			class T extends a.a.Component {
+			class I extends a.a.Component {
 				constructor() {
 					super(...arguments), this.hasError = !1, this.state = {
 						hasError: !1
@@ -1225,7 +1225,7 @@
 			n.d(t, "a", (function() {
 				return w
 			})), n.d(t, "b", (function() {
-				return I
+				return T
 			}));
 			var s = n("./node_modules/fbt/lib/FbtPublic.js"),
 				r = n("./node_modules/react/index.js"),
@@ -1255,8 +1255,8 @@
 			}
 			const _ = /\/(\w+)\/asset\/(\w+)\//,
 				j = g.a.wrapped(b.a, "A", f.a),
-				C = g.a.wrapped(l.a, "ImageBox", f.a),
-				O = g.a.wrapped(e => o.a.createElement("p", e), "Caption", f.a),
+				O = g.a.wrapped(l.a, "ImageBox", f.a),
+				C = g.a.wrapped(e => o.a.createElement("p", e), "Caption", f.a),
 				v = g.a.div("Placeholder", f.a),
 				y = g.a.wrapped(e => {
 					let {
@@ -1300,7 +1300,7 @@
 						showFull: !0
 					})))
 				},
-				T = (e, t, n) => {
+				I = (e, t, n) => {
 					const s = e.c;
 					let r = "";
 					return n && (n.e === p.s ? r = n.s.u : n.e === p.r ? r = n.s.gif : n.e === p.t && (r = (e => {
@@ -1312,9 +1312,9 @@
 						title: s
 					}, s || r) : null
 				},
-				I = (e, t, n, s, r, a) => {
+				T = (e, t, n, s, r, a) => {
 					const d = p.E(n, e.id);
-					if (s) return [T(e, t, d)];
+					if (s) return [I(e, t, d)];
 					const l = [];
 					return d ? d.e === p.s ? l.push(((e, t, n, s) => {
 						let {
@@ -1332,7 +1332,7 @@
 							showCentered: !0,
 							showFull: !0,
 							width: a.x
-						}, o.a.createElement(C, {
+						}, o.a.createElement(O, {
 							altText: s,
 							originalSource: a.u,
 							postId: r,
@@ -1428,7 +1428,7 @@
 					})(d, t, !!e.c, r)) : l.push(((e, t) => o.a.createElement(y, {
 						e,
 						key: t
-					}))(e.e, t)), e.c && l.push(((e, t) => o.a.createElement(O, {
+					}))(e.e, t)), e.c && l.push(((e, t) => o.a.createElement(C, {
 						key: t
 					}, e))(e.c, `caption${t}`)), l
 				}
@@ -1480,7 +1480,7 @@
 			! function(e) {
 				e[e.Inside = 0] = "Inside", e[e.Outside = 1] = "Outside"
 			}(j || (j = {}));
-			class C extends a.a.Component {
+			class O extends a.a.Component {
 				constructor() {
 					super(...arguments), this.mouseLocation = j.Outside, this.state = {
 						tooltipOpen: !1
@@ -1541,12 +1541,12 @@
 					})) : null
 				}
 			}
-			var O = Object(u.c)(C),
+			var C = Object(u.c)(O),
 				v = n("./src/reddit/components/RichTextJson/media.tsx"),
 				y = n("./src/reddit/components/RichTextJson/SpoilerText.tsx"),
 				w = n("./src/reddit/components/SubredditMention/index.tsx"),
-				T = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
-				I = n("./src/reddit/helpers/isComment.ts"),
+				I = n("./src/reddit/helpers/crypto/vaultActionLink.ts"),
+				T = n("./src/reddit/helpers/isComment.ts"),
 				k = n("./src/reddit/helpers/isPost.ts"),
 				S = n("./src/reddit/helpers/richTextJson/index.ts"),
 				N = n("./src/reddit/helpers/trackers/getRichTextSourceElement.ts");
@@ -1682,7 +1682,7 @@
 						else if (r.e === h.m || r.e === h.a) {
 							if (r.id.startsWith("emote|")) {
 								const e = h.E(t, r.id);
-								e && s.push(a.a.createElement(O, {
+								e && s.push(a.a.createElement(C, {
 									key: o,
 									node: r,
 									media: e
@@ -1699,7 +1699,7 @@
 								t: e.t,
 								f: e.f
 							}, 0);
-							if (Object(T.b)(e.u)) return a.a.createElement(c.w, {
+							if (Object(I.b)(e.u)) return a.a.createElement(c.w, {
 								to: e.u,
 								key: n,
 								title: e.a
@@ -1707,7 +1707,7 @@
 							let r, o;
 							const i = Object(N.a)(t),
 								d = t.renderingObjectInfo;
-							return d && Object(k.b)(d) && (r = d.postId), d && Object(I.b)(d) && (o = d.id, r = d.postId), a.a.createElement(c.a, {
+							return d && Object(k.b)(d) && (r = d.postId), d && Object(T.b)(d) && (o = d.id, r = d.postId), a.a.createElement(c.a, {
 								href: e.u,
 								key: n,
 								title: e.a,
@@ -1896,7 +1896,7 @@
 		"./src/reddit/components/SubredditMention/index.tsx": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return C
+				return O
 			}));
 			var s = n("./node_modules/react/index.js"),
 				r = n.n(s),
@@ -1959,7 +1959,7 @@
 					userVariant: f.a
 				}),
 				j = Object(o.b)(_),
-				C = e => {
+				O = e => {
 					let {
 						isFeatureFlagEnabled: t,
 						isUserInTreatment: n,
@@ -1990,7 +1990,7 @@
 							})
 					}
 				};
-			t.b = j(C)
+			t.b = j(O)
 		},
 		"./src/reddit/controls/ErrorText/SeeAllTextModal/index.m.less": function(e, t, n) {
 			e.exports = {
@@ -2185,6 +2185,87 @@
 				},
 				a = e => Object(s.a)(o.a.loadingBar, i(e))
 		},
+		"./src/reddit/helpers/trackers/commentsChat.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "e", (function() {
+				return c
+			})), n.d(t, "d", (function() {
+				return d
+			})), n.d(t, "b", (function() {
+				return l
+			})), n.d(t, "c", (function() {
+				return u
+			})), n.d(t, "a", (function() {
+				return m
+			}));
+			var s = n("./src/reddit/constants/tracking.ts"),
+				r = n("./src/reddit/selectors/comments.ts"),
+				o = n("./src/reddit/selectors/telemetry.ts"),
+				i = n("./src/telemetry/models/Event.ts");
+			const a = (e, t) => ({
+					...Object(o.n)(e),
+					subreddit: Object(o.gb)(e),
+					profile: Object(o.Q)(e),
+					post: Object(o.H)(e, t),
+					comment: Object(o.h)(e, t)
+				}),
+				c = (e, t) => n => ({
+					action: "load",
+					noun: e,
+					post: Object(o.H)(n, t),
+					source: i.b.ChatView,
+					subreddit: Object(o.gb)(n)
+				}),
+				d = (e, t, n) => i => {
+					const c = {
+							commentId: t,
+							commentsPageKey: n
+						},
+						d = t && n && Object(r.j)(i, c) || 0;
+					return {
+						...a(i, t),
+						source: "live_post",
+						action: s.c.CLICK,
+						noun: e,
+						actionInfo: {
+							reason: "live_post",
+							pageType: "actions_menu"
+						},
+						listing: Object(o.y)(i, void 0, {
+							depth: d
+						})
+					}
+				},
+				l = e => t => ({
+					...a(t, e),
+					source: "chat_post",
+					action: s.c.VIEW,
+					noun: "last_message"
+				}),
+				u = e => t => ({
+					...a(t, e),
+					source: "chat_post",
+					action: s.c.SUBMIT,
+					noun: "reply",
+					post: Object(o.H)(t, e),
+					comment: Object(o.h)(t, e),
+					actionInfo: Object(o.d)(t, {
+						reason: "live_post",
+						type: "live_post"
+					})
+				}),
+				m = e => t => ({
+					...a(t, e),
+					source: "chat_post",
+					action: s.c.CLICK,
+					noun: "comment",
+					actionInfo: Object(o.d)(t, {
+						pageType: "user_mention",
+						reason: "live_post",
+						type: "live_post"
+					})
+				})
+		},
 		"./src/reddit/helpers/trackers/getRichTextSourceElement.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
@@ -2217,7 +2298,7 @@
 			})), n.d(t, "d", (function() {
 				return j
 			})), n.d(t, "e", (function() {
-				return C
+				return O
 			}));
 			var s, r, o = n("./src/reddit/constants/tracking.ts"),
 				i = n("./src/reddit/helpers/isComment.ts"),
@@ -2335,7 +2416,7 @@
 					action: o.c.CLICK,
 					noun: s.HEADER_SUBREDDIT_SUBSCRIBE
 				}),
-				C = e => t => ({
+				O = e => t => ({
 					...h(t),
 					subreddit: u.hb(t, e) || null,
 					source: r.DISCOVERY_UNIT,
@@ -2409,4 +2490,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.274a3b3ce1dcdc2a83af.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ChatMessageInput~ChatPost.887aa83b77178e98c76f.js.map
