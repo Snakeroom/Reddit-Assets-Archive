@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.e1c92b84cda2bb99800f.js
-// Retrieved at 4/27/2022, 12:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.995532cb66fbe7354bc0.js
+// Retrieved at 6/1/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-ModHub-ContentControls"], {
 		"./src/reddit/components/ModHub/ContentControls/FormPlaceholder/index.m.less": function(e, t, n) {
@@ -586,8 +586,8 @@
 			}
 			var Re = n("./node_modules/lodash/difference.js"),
 				ve = n.n(Re),
-				_e = n("./src/reddit/helpers/chooseVariant/index.ts");
-			var qe = n("./src/reddit/hooks/useTracking.ts"),
+				_e = n("./src/reddit/hooks/useExperimentVariant.ts"),
+				qe = n("./src/reddit/hooks/useTracking.ts"),
 				we = (n("./node_modules/core-js/modules/web.dom.iterable.js"), n("./src/lib/memoizeByReference/index.ts")),
 				Te = n("./src/reddit/components/MultiOptionSelect/index.tsx"),
 				Be = n("./src/reddit/components/ModHub/ContentControls/MultiStringsInput/index.m.less"),
@@ -848,13 +848,7 @@
 				const {
 					formState: t,
 					onChange: n
-				} = e, i = "enabled" === function(e) {
-					let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : _e.a;
-					return Object(c.e)(n => Object(_e.c)(n, {
-						experimentName: e,
-						experimentEligibilitySelector: t
-					}))
-				}("automated_reporting_wordlist"), o = Object(qe.a)();
+				} = e, i = "enabled" === Object(_e.a)("automated_reporting_wordlist"), o = Object(qe.a)();
 				return d.a.createElement("fieldset", null, d.a.createElement("legend", {
 					className: at.a.title
 				}, s.fbt._("Automated Filtering", null, {
@@ -1779,7 +1773,23 @@
 				bars: "_33xYQEVEBWja4Lcl2AqexN",
 				thumbRail: "_14n6xNgIdrQJj4PhadXZYO"
 			}
+		},
+		"./src/reddit/hooks/useExperimentVariant.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return o
+			}));
+			var s = n("./node_modules/react-redux/es/index.js"),
+				i = n("./src/reddit/helpers/chooseVariant/index.ts");
+
+			function o(e) {
+				let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : i.a;
+				return Object(s.e)(n => Object(i.c)(n, {
+					experimentName: e,
+					experimentEligibilitySelector: t
+				}))
+			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.e1c92b84cda2bb99800f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-ModHub-ContentControls.995532cb66fbe7354bc0.js.map

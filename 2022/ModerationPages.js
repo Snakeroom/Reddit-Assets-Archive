@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ModerationPages.68f7473449b074d0556b.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ModerationPages.e6b7c662389912322628.js
+// Retrieved at 6/1/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ModerationPages"], {
 		"./node_modules/lodash/_arrayAggregator.js": function(e, t) {
@@ -7806,31 +7806,32 @@
 		"./src/reddit/components/GeoForm/GeoForm.tsx": function(e, t, s) {
 			"use strict";
 			s.d(t, "a", (function() {
-				return S
+				return j
 			}));
-			var n = s("./node_modules/fbt/lib/FbtPublic.js"),
-				a = s("./node_modules/react/index.js"),
-				o = s.n(a),
-				r = s("./node_modules/uuid/v4.js"),
-				i = s.n(r),
-				d = s("./src/lib/classNames/index.ts"),
-				l = s("./src/reddit/controls/Button/index.tsx");
-			var c, m = s("./node_modules/p-debounce/index.js"),
-				u = s.n(m),
-				p = s("./src/lib/hooks/useOnClickOutside.ts"),
-				b = s("./src/reddit/constants/keycodes.ts"),
-				h = s("./src/lib/makeGqlRequest/index.ts"),
-				g = s("./src/lib/sentry/index.ts"),
-				f = s("./src/redditGQL/operations/GeoPlaceAutocomplete.json");
+			var n, a = s("./node_modules/fbt/lib/FbtPublic.js"),
+				o = s("./node_modules/react/index.js"),
+				r = s.n(o),
+				i = s("./node_modules/uuid/v4.js"),
+				d = s.n(i),
+				l = s("./src/lib/classNames/index.ts"),
+				c = s("./src/reddit/controls/Button/index.tsx"),
+				m = s("./src/reddit/hooks/useMounted.ts"),
+				u = s("./node_modules/p-debounce/index.js"),
+				p = s.n(u),
+				b = s("./src/lib/hooks/useOnClickOutside.ts"),
+				h = s("./src/reddit/constants/keycodes.ts"),
+				g = s("./src/lib/makeGqlRequest/index.ts"),
+				f = s("./src/lib/sentry/index.ts"),
+				x = s("./src/redditGQL/operations/GeoPlaceAutocomplete.json");
 			! function(e) {
 				e.GoogleMaps = "GOOGLE_MAPS", e.Geonames = "GEONAMES"
-			}(c || (c = {}));
-			const x = (e, t) => async s => {
+			}(n || (n = {}));
+			const E = (e, t) => async s => {
 				let n;
 				try {
 					n = await async function(e, t) {
-						return Object(h.a)(e, {
-							...f,
+						return Object(g.a)(e, {
+							...x,
 							variables: t
 						})
 					}(e(), {
@@ -7838,150 +7839,147 @@
 						sessionId: t
 					})
 				} catch (a) {
-					return g.c.captureException(a), []
+					return f.c.captureException(a), []
 				}
 				return n.body.data.geoPlaceAutocomplete || []
 			};
-			var E = s("./src/reddit/hooks/useGqlContext.ts"),
-				v = s("./src/reddit/icons/svgs/Location/index.tsx"),
-				_ = s("./src/reddit/components/GeoForm/index.m.less"),
-				C = s.n(_);
+			var v = s("./src/reddit/hooks/useGqlContext.ts"),
+				_ = s("./src/reddit/icons/svgs/Location/index.tsx"),
+				C = s("./src/reddit/components/GeoForm/index.m.less"),
+				k = s.n(C);
 
-			function k(e) {
+			function y(e) {
 				const {
 					value: t,
 					setValue: s,
-					setPlace: r,
+					setPlace: n,
 					disabled: i,
-					onFocus: l,
+					onFocus: d,
 					sessionId: c,
 					className: m
-				} = e, p = Object(E.a)(), [h, g] = Object(a.useState)(!1), f = function(e, t, s) {
-					const [n, o] = Object(a.useState)([]), r = Object(a.useMemo)(() => u()(s, 300), [s]);
-					return Object(a.useEffect)(() => {
+				} = e, u = Object(v.a)(), [b, g] = Object(o.useState)(!1), f = function(e, t, s) {
+					const [n, a] = Object(o.useState)([]), r = Object(o.useMemo)(() => p()(s, 300), [s]);
+					return Object(o.useEffect)(() => {
 						e && t && r(e).then(e => {
-							o(e)
-						}).catch(() => o([]))
+							a(e)
+						}).catch(() => a([]))
 					}, [e]), n
-				}(t, h, x(p, c)), {
-					highlightValue: _,
-					selectedIndex: k,
-					onKeyDown: O,
+				}(t, b, E(u, c)), {
+					highlightValue: x,
+					selectedIndex: C,
+					onKeyDown: y,
 					isClosed: S,
 					setClosed: j
 				} = function(e, t, s) {
-					const [n, o] = Object(a.useState)(-1), [r, i] = Object(a.useState)(!!e.length), [d, l] = Object(a.useState)(void 0);
+					const [n, a] = Object(o.useState)(-1), [r, i] = Object(o.useState)(!!e.length), [d, l] = Object(o.useState)(void 0);
 					return {
 						highlightValue: d,
 						selectedIndex: n,
-						onKeyDown: a => {
-							if (a.key === b.b.ArrowDown) {
+						onKeyDown: o => {
+							if (o.key === h.b.ArrowDown) {
 								const t = Math.min(n + 1, e.length - 1);
-								o(t), l(e[t])
-							} else if (a.key === b.b.ArrowUp) {
+								a(t), l(e[t])
+							} else if (o.key === h.b.ArrowUp) {
 								const t = Math.max(n - 1, -1);
-								o(t), l(e[t])
-							} else a.key === b.b.Enter && n > -1 ? (o(-1), t(e[n].name), s(e[n]), i(!0), a.preventDefault()) : a.key === b.b.Escape ? (o(-1), i(!0)) : l(void 0)
+								a(t), l(e[t])
+							} else o.key === h.b.Enter && n > -1 ? (a(-1), t(e[n].name), s(e[n]), i(!0), o.preventDefault()) : o.key === h.b.Escape ? (a(-1), i(!0)) : l(void 0)
 						},
 						isClosed: r,
 						setClosed: i
 					}
-				}(f, s, r), N = `location-input-${c}`;
-				return o.a.createElement("div", {
-					className: C.a.autocompleteInput
-				}, o.a.createElement("label", {
-					className: C.a.geoLabel,
+				}(f, s, n), N = `location-input-${c}`;
+				return r.a.createElement("div", {
+					className: k.a.autocompleteInput
+				}, r.a.createElement("label", {
+					className: k.a.geoLabel,
 					htmlFor: N
-				}, o.a.createElement(v.a, {
-					className: C.a.locationIcon
-				})), o.a.createElement("input", {
-					className: Object(d.a)(C.a.geoInput, m),
+				}, r.a.createElement(_.a, {
+					className: k.a.locationIcon
+				})), r.a.createElement("input", {
+					className: Object(l.a)(k.a.geoInput, m),
 					name: N,
 					disabled: i,
-					onKeyDown: O,
-					value: _ && _.name || t,
-					placeholder: n.fbt._("Add location", null, {
+					onKeyDown: y,
+					value: x && x.name || t,
+					placeholder: a.fbt._("Add location", null, {
 						hk: "1BaqFd"
 					}),
 					onChange: e => {
-						s(e.currentTarget.value), r(void 0), j(!1)
+						s(e.currentTarget.value), n(void 0), j(!1)
 					},
 					onFocus: () => {
-						g(!0), l()
+						g(!0), d()
 					},
 					onBlur: () => g(!1)
-				}), f.length && !S ? o.a.createElement(y, {
+				}), f.length && !S ? r.a.createElement(O, {
 					id: c,
 					items: f.map(e => e.name),
-					selectedIndex: k,
+					selectedIndex: C,
 					selectValue: e => {
-						s(f[e].name), r(f[e]), j(!0)
+						s(f[e].name), n(f[e]), j(!0)
 					},
 					onClickOutside: () => j(!0)
 				}) : null)
 			}
 
-			function y(e) {
+			function O(e) {
 				const {
 					id: t,
 					items: s,
 					selectedIndex: n,
 					selectValue: a,
-					onClickOutside: r
+					onClickOutside: o
 				} = e;
-				return Object(p.a)(`autocomplete-dropdown-${t}`, r), o.a.createElement("ul", {
-					className: C.a.autocompleteDropdown,
+				return Object(b.a)(`autocomplete-dropdown-${t}`, o), r.a.createElement("ul", {
+					className: k.a.autocompleteDropdown,
 					id: `autocomplete-dropdown-${t}`
-				}, s.map((e, t) => o.a.createElement("li", {
+				}, s.map((e, t) => r.a.createElement("li", {
 					key: `${e}${t}`,
 					onClick: () => a(t),
-					className: Object(d.a)({
-						[C.a.highlight]: t === n
+					className: Object(l.a)({
+						[k.a.highlight]: t === n
 					})
 				}, e)))
 			}
-			const O = () => {};
+			const S = () => {};
 
-			function S(e) {
+			function j(e) {
 				const {
 					className: t,
 					initialValue: s,
-					initialPlace: r,
-					disabled: c = !1,
-					onFocus: m = O,
-					onPlace: u = O,
-					onValue: p = O,
-					inputClassName: b
-				} = e, h = function() {
-					const [e, t] = Object(a.useState)(!1);
-					return Object(a.useEffect)(() => t(!0), []), e
-				}(), [g] = Object(a.useState)(() => i()()), [f, x] = Object(a.useState)(s || ""), [E, v] = Object(a.useState)(r);
-				return h ? o.a.createElement("form", {
-					className: Object(d.a)(C.a.geoForm, t),
+					initialPlace: n,
+					disabled: i = !1,
+					onFocus: u = S,
+					onPlace: p = S,
+					onValue: b = S,
+					inputClassName: h
+				} = e, g = Object(m.a)(), [f] = Object(o.useState)(() => d()()), [x, E] = Object(o.useState)(s || ""), [v, _] = Object(o.useState)(n);
+				return g ? r.a.createElement("form", {
+					className: Object(l.a)(k.a.geoForm, t),
 					onSubmit: t => {
-						t.preventDefault(), (null == r ? void 0 : r.id) !== (null == E ? void 0 : E.id) && e.onSubmit({
-							name: f,
-							place: E,
-							sessionId: g
+						t.preventDefault(), (null == n ? void 0 : n.id) !== (null == v ? void 0 : v.id) && e.onSubmit({
+							name: x,
+							place: v,
+							sessionId: f
 						})
 					}
-				}, o.a.createElement(k, {
-					className: b,
-					value: f,
-					sessionId: g,
+				}, r.a.createElement(y, {
+					className: h,
+					value: x,
+					sessionId: f,
 					setValue: e => {
-						x(e), p(e)
+						E(e), b(e)
 					},
 					setPlace: e => {
-						v(e), u(e)
+						_(e), p(e)
 					},
-					disabled: c,
-					onFocus: m
-				}), E && E.id !== (null == r ? void 0 : r.id) && o.a.createElement(l.o, {
-					className: C.a.submitButton,
+					disabled: i,
+					onFocus: u
+				}), v && v.id !== (null == n ? void 0 : n.id) && r.a.createElement(c.o, {
+					className: k.a.submitButton,
 					type: "submit",
-					disabled: c
-				}, n.fbt._("Submit", null, {
+					disabled: i
+				}, a.fbt._("Submit", null, {
 					hk: "4aU3dh"
 				}))) : null
 			}
@@ -21330,6 +21328,18 @@
 				}) : void 0
 			}
 		},
+		"./src/reddit/hooks/useMounted.ts": function(e, t, s) {
+			"use strict";
+			s.d(t, "a", (function() {
+				return a
+			}));
+			var n = s("./node_modules/react/index.js");
+
+			function a() {
+				const [e, t] = Object(n.useState)(!1);
+				return Object(n.useEffect)(() => t(!0), []), e
+			}
+		},
 		"./src/reddit/icons/fonts/Expandos/Arrows/Collapse/index.m.less": function(e, t, s) {
 			e.exports = {
 				CollapseIcon: "_3D7Ev4BX__nKnbqb-KPpvI",
@@ -23149,9 +23159,9 @@
 			const o = e => {
 				const t = Object(a.c)(e, {
 					experimentEligibilitySelector: a.a,
-					experimentName: n.rd
+					experimentName: n.sd
 				});
-				return !(!t || Object(n.Sf)(t))
+				return !(!t || Object(n.Tf)(t))
 			}
 		},
 		"./src/reddit/selectors/showPromotedCTA.ts": function(e, t, s) {
@@ -23164,10 +23174,10 @@
 				o = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = s("./src/reddit/selectors/posts.ts");
 			const i = e => Object(o.c)(e, {
-					experimentName: a.Le,
+					experimentName: a.Me,
 					experimentEligibilitySelector: o.a
 				}),
-				d = (e, t) => t === a.Te.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
+				d = (e, t) => t === a.Ue.Enabled && (null == e ? void 0 : e.isCreatedFromAdsUi) || (null == e ? void 0 : e.isSponsored),
 				l = Object(n.a)(r.G, i, (e, t) => d(e, t));
 			Object(n.a)((e, t) => t, i, (e, t) => d(e, t))
 		},
@@ -23425,4 +23435,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.68f7473449b074d0556b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ModerationPages.e6b7c662389912322628.js.map

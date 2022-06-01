@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.63c3575b0412e0a6c30c.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SubredditForkingCTA.56c93d147c0ea9a0cceb.js
+// Retrieved at 6/1/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SubredditForkingCTA"], {
 		"./src/reddit/components/CreateCommunityButton/index.m.less": function(t, _, e) {
@@ -158,9 +158,9 @@
 			})), e.d(_, "i", (function() {
 				return k
 			})), e.d(_, "q", (function() {
-				return z
-			})), e.d(_, "d", (function() {
 				return q
+			})), e.d(_, "d", (function() {
+				return z
 			})), e.d(_, "l", (function() {
 				return T
 			})), e.d(_, "t", (function() {
@@ -207,8 +207,8 @@
 				w = n.a.label("ModalInputLabel", u.a),
 				v = n.a.footer("ModalFooter", u.a),
 				k = n.a.header("ModalHeader", u.a),
-				z = n.a.div("ModalTitle", u.a),
-				q = n.a.div("ModalAnnotation", u.a),
+				q = n.a.div("ModalTitle", u.a),
+				z = n.a.div("ModalAnnotation", u.a),
 				T = n.a.div("ModalMain", u.a),
 				C = n.a.textarea("TextArea", u.a),
 				F = n.a.wrapped(a.l, "WarningButton", u.a),
@@ -245,10 +245,10 @@
 				m = e("./src/reddit/helpers/chooseVariant/index.ts"),
 				p = e("./src/reddit/selectors/experiments/utils.ts");
 			const b = Object(u.a)(t => Object(m.c)(t, {
-					experimentName: l.pf,
+					experimentName: l.qf,
 					experimentEligibilitySelector: m.a
 				}), p.a),
-				x = Object(u.a)(b, t => t === l.vf.Enabled);
+				x = Object(u.a)(b, t => t === l.wf.Enabled);
 			var f = e("./src/reddit/selectors/posts.ts"),
 				y = e("./src/reddit/components/CreateCommunityButton/index.tsx"),
 				h = e("./src/reddit/components/TrackingHelper/index.tsx");
@@ -1326,4 +1326,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.63c3575b0412e0a6c30c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SubredditForkingCTA.56c93d147c0ea9a0cceb.js.map
