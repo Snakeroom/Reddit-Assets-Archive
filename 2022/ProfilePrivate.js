@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfilePrivate.d56c3a8f91f9e6141ee4.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfilePrivate.11d0a6d3e70e148edf78.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfilePrivate"], {
 		"./src/reddit/actions/pages/profilePrivate/index.ts": function(e, t, s) {
@@ -395,7 +395,7 @@
 					} = e;
 					const {
 						audioRoom: s
-					} = t, i = () => Math.floor(10 * Math.random() + 1), d = Object(x.e)(g.cb), [a, l] = Object(o.useState)(!1), [c, m] = Object(o.useState)(i());
+					} = t, i = () => Math.floor(10 * Math.random() + 1), d = Object(x.e)(g.db), [a, l] = Object(o.useState)(!1), [c, m] = Object(o.useState)(i());
 					return Object(o.useEffect)(() => {
 						const e = setInterval(() => {
 							l(!0), setTimeout(() => l(!1), 3500), m(i())
@@ -1047,7 +1047,7 @@
 							commentId: s.postId
 						})
 					},
-					isLoggedIn: te.P,
+					isLoggedIn: te.Q,
 					moderatorPermissions: (e, t) => {
 						let {
 							comment: s
@@ -2112,7 +2112,7 @@
 						return s && s.coinPrice >= a.g
 					})
 				},
-				isNightmodeOn: v.cb
+				isNightmodeOn: v.db
 			}), e => ({
 				openPost: t => e(Object(m.L)(t))
 			}));
@@ -3037,7 +3037,7 @@
 					isChatPost: p.d,
 					isCurrentUserProfilePost: b.l,
 					isExpanded: b.m,
-					isLoggedIn: g.P,
+					isLoggedIn: g.Q,
 					showPromotedCTA: x.a,
 					moderatorPermissions: u.m,
 					modModeEnabled: l.U,
@@ -4494,4 +4494,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.d56c3a8f91f9e6141ee4.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfilePrivate.11d0a6d3e70e148edf78.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Talk.bb346796649337b86741.js
-// Retrieved at 5/19/2022, 10:50:10 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Talk.e16005f6d4cb8a5a54dc.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Talk"], {
 		"./src/reddit/components/CollapsibleFAQ/index.m.less": function(e, a, t) {
@@ -495,7 +495,7 @@
 					}, "here"), "."))
 				}
 			}], C = () => {
-				const e = Object(s.e)(g.cb);
+				const e = Object(s.e)(g.db);
 				return r.a.createElement(r.a.Fragment, null, r.a.createElement("div", {
 					className: Object(i.a)(f.a.faqSection, {
 						[f.a.isNightmodeOn]: e
@@ -759,7 +759,7 @@
 				let {
 					ctaButton: a
 				} = e;
-				const t = Object(s.e)(g.cb);
+				const t = Object(s.e)(g.db);
 				return r.a.createElement("div", {
 					className: Object(i.a)(Q.a.hostProgramStepsSection, {
 						[Q.a.isNightmodeOn]: t
@@ -841,7 +841,7 @@
 					})
 				}))))
 			}, Z = () => {
-				const e = Object(s.e)(g.cb);
+				const e = Object(s.e)(g.db);
 				return r.a.createElement("div", {
 					className: Object(i.a)(U.a.quotesFromHostsSection, {
 						[U.a.isNightmodeOn]: e
@@ -885,7 +885,7 @@
 			} = t("./node_modules/fbt/lib/FbtPublic.js");
 			a.default = () => {
 				const e = Object(h.a)(),
-					a = Object(s.e)(g.cb);
+					a = Object(s.e)(g.db);
 				Object(n.useEffect)(() => {
 					e((() => e => ({
 						...u.n(e),
@@ -1001,4 +1001,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.bb346796649337b86741.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Talk.e16005f6d4cb8a5a54dc.js.map

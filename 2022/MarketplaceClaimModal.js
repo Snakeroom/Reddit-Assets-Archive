@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.303cbda5d7121dd753b7.js
-// Retrieved at 6/1/2022, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.8a72625659564b851310.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceClaimModal"], {
 		"./src/reddit/actions/economics/marketplace/constants.ts": function(e, t, n) {
@@ -20,8 +20,8 @@
 			var r = n("./node_modules/@reddit/crypto/react/config/index.es.js"),
 				a = n("./node_modules/react/index.js"),
 				s = n.n(a),
-				c = n("./node_modules/react-redux/es/index.js"),
-				o = n("./src/reddit/hooks/useTracking.ts"),
+				o = n("./node_modules/react-redux/es/index.js"),
+				c = n("./src/reddit/hooks/useTracking.ts"),
 				i = n("./src/reddit/selectors/telemetry.ts"),
 				d = n("./src/reddit/selectors/user.ts"),
 				l = n("./src/config.ts");
@@ -30,9 +30,9 @@
 					children: t
 				} = e;
 				const n = function() {
-					const e = Object(c.e)(p),
-						t = Object(c.e)(d.cb),
-						n = Object(o.a)();
+					const e = Object(o.e)(p),
+						t = Object(o.e)(d.db),
+						n = Object(c.a)();
 					m || (m = function(e, t, n) {
 						return {
 							api: {
@@ -95,8 +95,8 @@
 			var r = n("./src/higherOrderComponents/asModal/index.tsx"),
 				a = n("./node_modules/react/index.js"),
 				s = n.n(a),
-				c = n("./node_modules/react-redux/es/index.js"),
-				o = n("./node_modules/@reddit/crypto/react/nft-claim/index.es.js"),
+				o = n("./node_modules/react-redux/es/index.js"),
+				c = n("./node_modules/@reddit/crypto/react/nft-claim/index.es.js"),
 				i = n("./src/lib/makeActionCreator/index.ts"),
 				d = n("./src/reddit/actions/economics/marketplace/constants.ts");
 			const l = Object(i.a)(d.b),
@@ -122,16 +122,16 @@
 					let {
 						onClose: t
 					} = e;
-					const n = Object(c.e)(v.Bb),
-						r = Object(c.e)(e => {
+					const n = Object(o.e)(v.Cb),
+						r = Object(o.e)(e => {
 							var t;
 							return null === (t = Object(_.a)(e)) || void 0 === t ? void 0 : t.claimId
 						}),
-						a = Object(c.d)();
+						a = Object(o.d)();
 					if (!n || !r) return null;
 					return s.a.createElement("div", {
 						className: f.a.container
-					}, s.a.createElement(p.a, null, s.a.createElement(o.b, {
+					}, s.a.createElement(p.a, null, s.a.createElement(c.b, {
 						onClose: t,
 						userId: n,
 						onViewAvatar: () => {
@@ -183,4 +183,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.303cbda5d7121dd753b7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceClaimModal.8a72625659564b851310.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Subreddit.cad018b3a6ad3ed1aa6e.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Subreddit.ec8211670683283ad360.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Subreddit", "reddit-components-ContentGate", "reddit-components-Econ-PredictionLeaderboard-Sidebar"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -794,7 +794,7 @@
 				const n = t();
 				if (e(Object(o.m)({
 						title: Object(s.i)()
-					})), await e(Object(c.t)()), !Object(m.P)(n)) return;
+					})), await e(Object(c.t)()), !Object(m.Q)(n)) return;
 				await e(Object(i.q)());
 				const p = Object(d.b)(n),
 					b = Object(l.a)(n);
@@ -1625,11 +1625,11 @@
 			const {
 				fbt: B
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), A = l.a.wrapped(N, "PrivateKey", L.a), R = l.a.div("ButtonsContainer", L.a), M = l.a.div("Container", L.a), D = l.a.div("ContainerExp", L.a), F = l.a.div("Description", L.a), U = l.a.div("PrivateSubredditDetails", L.a), W = l.a.div("PrivateSubredditDescription", L.a), H = l.a.h3("PrivateSubredditName", L.a), V = l.a.a("Link", L.a), q = l.a.wrapped(O.n, "LinkRouterButton", L.a), G = l.a.wrapped(O.m, "LinkButton", L.a), K = l.a.wrapped(O.q, "SecondaryLinkRouterButton", L.a), z = l.a.wrapped(O.p, "SecondaryLinkButton", L.a), J = l.a.wrapped(q, "GoHomeLinkButton", L.a), Q = l.a.wrapped(h.a, "CreateCommunityButton", L.a), Y = l.a.img("Image", L.a), Z = l.a.img("ImagePlaceholder", L.a), X = l.a.wrapped(q, "LeftLinkRouterButton", L.a), $ = l.a.wrapped(G, "LeftLinkButton", L.a), ee = l.a.wrapped(z, "SecondaryLeftLinkButton", L.a), te = l.a.wrapped(K, "SecondaryLeftLinkRouterButton", L.a), ne = l.a.h3("Title", L.a), se = l.a.div("PageBody", L.a), re = l.a.div("InterstitialMessageWrapper", L.a), oe = Object(d.c)({
-				isLoggedIn: w.O,
+				isLoggedIn: w.P,
 				origin: I.j,
 				user: w.k,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(w.P)(e)) return !1;
+					if (!Object(w.Q)(e)) return !1;
 					const t = Object(S.d)(e);
 					if (!t) return !1;
 					const n = Object(w.f)(e, t);
@@ -2003,8 +2003,8 @@
 			const v = "create-community-button",
 				E = x.a.wrapped(l.c, "StyledTooltip", g.a),
 				y = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.ob)(e),
-					userIsSuspended: h.W
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.pb)(e),
+					userIsSuspended: h.X
 				});
 			t.a = Object(i.b)(y, (e, t) => {
 				let {
@@ -4384,7 +4384,7 @@
 				isTooltipOpened: e => Boolean(e.tooltip.tooltipId),
 				isSearchDropdownOpened: e => e.search.isDropdownOpen,
 				isHeaderDropdownOpened: e => e.header.isSubscriptionsDropdownOpen,
-				isLoggedIn: I.P
+				isLoggedIn: I.Q
 			}), R = Object(i.b)(A, e => ({
 				closeSearchDropdown: () => e(Object(m.k)()),
 				closeHeaderDropdown: () => e(Object(l.f)()),
@@ -5179,7 +5179,7 @@
 				b = n.n(p);
 			const h = ["allow-forms", "allow-orientation-lock", "allow-popups", "allow-popups-to-escape-sandbox", "allow-presentation", "allow-same-origin", "allow-scripts", "allow-top-navigation-by-user-activation"].join(" "),
 				f = Object(o.b)(() => Object(i.c)({
-					isNightmodeOn: m.cb
+					isNightmodeOn: m.db
 				}));
 			t.a = f(e => {
 				const t = {
@@ -5276,7 +5276,7 @@
 						style: t
 					}, e.children)
 				},
-				w = Object(i.b)(() => Object(c.a)(E.F, _.ib, (e, t) => {
+				w = Object(i.b)(() => Object(c.a)(E.F, _.jb, (e, t) => {
 					let {
 						isSponsored: n,
 						postId: s
@@ -12019,7 +12019,7 @@
 				} = t;
 				return n.search
 			}, e => o()([...Object(v.a)(e)]))), pt = e => Object(De.a)(e) || "", bt = Object(b.c)({
-				isTopContentDismissed: Ke.X
+				isTopContentDismissed: Ke.Y
 			}), ht = Object(b.c)({
 				subreddit: (e, t) => Object(Ge.z)(e, {
 					subredditName: t.match.params.subredditName
@@ -12034,7 +12034,7 @@
 					}))
 				}
 			}), gt = Object(b.c)({
-				isLoggedIn: Ke.P
+				isLoggedIn: Ke.Q
 			}), xt = Object(j.a)((e, t) => {
 				const {
 					subreddit: n
@@ -12164,7 +12164,7 @@
 				isTalkLiveBarEnabled: ke.v,
 				interestTopicRecommendations: $e.b,
 				reonboardingFlow: Le.c
-			}), Nt = () => Object(b.a)(Ke.jb, mt, bt, ft, ht, (e, t) => {
+			}), Nt = () => Object(b.a)(Ke.kb, mt, bt, ft, ht, (e, t) => {
 				let {
 					match: n
 				} = t;
@@ -12994,7 +12994,7 @@
 				d = n("./src/reddit/selectors/user.ts"),
 				l = n("./src/reddit/selectors/experiments/publicAccessNetwork.ts"),
 				u = n("./src/reddit/selectors/PublicAccessNetwork/api.ts");
-			const m = Object(s.a)(d.k, d.Gb, (e, t) => {
+			const m = Object(s.a)(d.k, d.Hb, (e, t) => {
 					let {
 						listingName: n
 					} = t;
@@ -13751,7 +13751,7 @@
 			const c = e => {
 					const t = Object(r.a)(e);
 					if (!t) return null;
-					const n = Object(o.M)(e),
+					const n = Object(o.N)(e),
 						i = [];
 					for (const r of t) {
 						const t = e.subreddits.models[r];
@@ -13778,7 +13778,7 @@
 				r = n("./src/reddit/constants/postLayout.ts"),
 				o = n("./src/reddit/selectors/posts.ts"),
 				i = n("./src/reddit/selectors/user.ts");
-			const a = (e, t) => Object(i.O)(e) && ((e, t) => {
+			const a = (e, t) => Object(i.P)(e) && ((e, t) => {
 				const {
 					layout: n,
 					sort: i,
@@ -13927,4 +13927,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.cad018b3a6ad3ed1aa6e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Subreddit.ec8211670683283ad360.js.map

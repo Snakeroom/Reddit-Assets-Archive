@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.64da9d90ba0bd97cf22b.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.c974ec65f261ce2cda95.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1324,7 +1324,7 @@
 				fbt: se
 			} = r("./node_modules/fbt/lib/FbtPublic.js"), ce = 100, ie = Object(i.c)({
 				isAnonymous: j.d,
-				isNightMode: k.cb,
+				isNightMode: k.db,
 				paypalErrorMessage: _.d,
 				powerups: j.k,
 				powerupsCount: j.e,
@@ -1652,7 +1652,7 @@
 				let {
 					space: t
 				} = e;
-				const r = Object(i.e)(d.cb),
+				const r = Object(i.e)(d.db),
 					s = t === n.MODAL,
 					l = t === n.INFEED_UNIT;
 				return c.a.createElement("div", {
@@ -3500,4 +3500,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.64da9d90ba0bd97cf22b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsPurchaseModal.c974ec65f261ce2cda95.js.map

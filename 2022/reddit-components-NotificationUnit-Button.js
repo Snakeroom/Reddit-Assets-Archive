@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.ab8d699bdad160c29f27.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.6a0eae0f04b1b3055875.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-NotificationUnit-Button"], {
 		"./src/lib/scroll/index.ts": function(t, e, n) {
@@ -244,7 +244,7 @@
 					return async (t, o) => {
 						const r = o();
 						if (!!r.features.comments.drafts[n])
-							if (Object(ut.R)(r) && e) {
+							if (Object(ut.S)(r) && e) {
 								const o = bt({
 									hasFocus: e,
 									draftKey: n
@@ -528,7 +528,7 @@
 					return async (t, r) => {
 						const i = r(),
 							c = Object(s.a)(Y.c.replyToComment, n);
-						if (!Object(ut.P)(r()) && !Object(ct.a)(i)) return t(Object(l.j)()), void t(Object(u.k)({
+						if (!Object(ut.Q)(r()) && !Object(ct.a)(i)) return t(Object(l.j)()), void t(Object(u.k)({
 							actionSource: u.a.Reply,
 							redirectUrl: Object(et.m)(r(), {
 								commentId: n
@@ -568,7 +568,7 @@
 								draftType: Y.c.replyToComment,
 								rtJson: b,
 								text: ""
-							}, Object(ut.R)(i)) {
+							}, Object(ut.S)(i)) {
 							const o = Rt({
 								parentCommentId: n,
 								commentsPageKey: e,
@@ -2838,4 +2838,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.ab8d699bdad160c29f27.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-NotificationUnit-Button.6a0eae0f04b1b3055875.js.map

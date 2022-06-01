@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/removalReasonActions.99a32b76fd4c532910c9.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/removalReasonActions.67a3044f878d1a919ba4.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["removalReasonActions"], {
 		"./src/lib/scroll/index.ts": function(e, t, o) {
@@ -87,7 +87,7 @@
 			})), o.d(t, "c", (function() {
 				return We
 			})), o.d(t, "j", (function() {
-				return ze
+				return Qe
 			})), o.d(t, "i", (function() {
 				return Ye
 			})), o.d(t, "l", (function() {
@@ -227,8 +227,8 @@
 				q = o("./src/reddit/helpers/correlationIdTracker.ts"),
 				J = o("./src/reddit/helpers/dom/index.ts"),
 				W = o("./src/reddit/helpers/localStorage/index.ts"),
-				z = o("./src/reddit/helpers/sessionStorage/index.ts"),
-				Q = o("./src/reddit/helpers/trackers/commentsPage.ts"),
+				Q = o("./src/reddit/helpers/sessionStorage/index.ts"),
+				z = o("./src/reddit/helpers/trackers/commentsPage.ts"),
 				X = o("./src/reddit/models/Comment/index.ts"),
 				$ = o("./src/reddit/models/PostDraft/index.ts"),
 				Y = o("./src/reddit/models/RichTextJson/index.ts"),
@@ -259,7 +259,7 @@
 					return async (e, n) => {
 						const s = n();
 						if (!!s.features.comments.drafts[o])
-							if (Object(me.R)(s) && t) {
+							if (Object(me.S)(s) && t) {
 								const n = be({
 									hasFocus: t,
 									draftKey: o
@@ -278,7 +278,7 @@
 				Se = async (e, t, o, n) => {
 					const s = n.ok && n.body,
 						r = s && s.comment && s.comment.id;
-					await Q.f(e, o, t, r)
+					await z.f(e, o, t, r)
 				}, _e = "Toxicity_Warning__Modal", xe = e => async (t, o, n) => {
 					let {
 						gqlContext: s
@@ -310,7 +310,7 @@
 							n = ye(e.formData);
 						t(Object(m.k)({
 							actionSource: m.a.Reply
-						})), t(Object(l.j)()), Object(z.d)({
+						})), t(Object(l.j)()), Object(Q.d)({
 							comment: {
 								...e,
 								richTextJSONData: o,
@@ -377,7 +377,7 @@
 						} else {
 							if (k.error && k.error.type === s.Kb) {
 								const e = t && r ? r : ye(l);
-								Q.j(y, e, i)
+								z.j(y, e, i)
 							}
 							const o = k.error && k.error.fields && k.error.fields[0] ? k.error.fields[0].msg : n.fbt._("Something went wrong", null, {
 								hk: "LWFS0"
@@ -391,7 +391,7 @@
 								text: o
 							}))
 						}
-						Se(g(), a, m, k).then(() => k.ok && m === T.i.RICH_TEXT ? Object(q.b)(q.a.CommentComposer) : void 0), u || Object(f.d)(), t && Object(z.a)()
+						Se(g(), a, m, k).then(() => k.ok && m === T.i.RICH_TEXT ? Object(q.b)(q.a.CommentComposer) : void 0), u || Object(f.d)(), t && Object(Q.a)()
 					}
 				},
 				Ee = e => async (t, o, n) => {
@@ -428,7 +428,7 @@
 							n = ye(e.formData);
 						t(Object(m.k)({
 							actionSource: m.a.Reply
-						})), t(Object(l.j)()), Object(z.d)({
+						})), t(Object(l.j)()), Object(Q.d)({
 							comment: {
 								...e,
 								richTextJSONData: o,
@@ -476,16 +476,16 @@
 							});
 							if (!e) return;
 							const o = t && n ? n : ye(O);
-							Q.j(g, o, e.postId, m)
+							z.j(g, o, e.postId, m)
 						}
 						r(je({
 							draftKey: b,
 							error: x.error
 						}))
 					}
-					Se(i(), u, h, x), Object(f.d)(), t && Object(z.a)()
+					Se(i(), u, h, x), Object(f.d)(), t && Object(Q.a)()
 				}, we = () => async e => {
-					const t = Object(z.b)();
+					const t = Object(Q.b)();
 					if (t) {
 						const {
 							comment: {
@@ -543,7 +543,7 @@
 					return async (e, s) => {
 						const r = s(),
 							c = Object(i.a)($.c.replyToComment, o);
-						if (!Object(me.P)(s()) && !Object(ce.a)(r)) return e(Object(l.j)()), void e(Object(m.k)({
+						if (!Object(me.Q)(s()) && !Object(ce.a)(r)) return e(Object(l.j)()), void e(Object(m.k)({
 							actionSource: m.a.Reply,
 							redirectUrl: Object(te.m)(s(), {
 								commentId: o
@@ -583,7 +583,7 @@
 								draftType: $.c.replyToComment,
 								rtJson: b,
 								text: ""
-							}, Object(me.R)(r)) {
+							}, Object(me.S)(r)) {
 							const n = Ae({
 								parentCommentId: o,
 								commentsPageKey: t,
@@ -630,7 +630,7 @@
 					} = e;
 					return async (e, i) => {
 						const c = i();
-						c.user.account && (Q.c(c), e(Ge({
+						c.user.account && (z.c(c), e(Ge({
 							commentId: t,
 							commentsPageKey: n,
 							draftKey: s,
@@ -643,7 +643,7 @@
 							}
 						})))
 					}
-				}, Ve = Object(r.a)(pe.D), qe = Object(r.a)(pe.C), Je = Object(r.a)(pe.E), We = Object(r.a)(pe.h), ze = e => {
+				}, Ve = Object(r.a)(pe.D), qe = Object(r.a)(pe.C), Je = Object(r.a)(pe.E), We = Object(r.a)(pe.h), Qe = e => {
 					let {
 						id: t,
 						commentsPageKey: o,
@@ -659,7 +659,7 @@
 						if (!l.user.account) return;
 						e(Ve({
 							draftKey: n
-						})), Q.d(l);
+						})), z.d(l);
 						const m = Ce(r),
 							u = r.commentMode;
 						let p;
@@ -749,14 +749,14 @@
 							error: p.error
 						}))
 					}
-				}, Qe = Object(r.a)(pe.A), Xe = Object(r.a)(pe.z), $e = Object(r.a)(pe.B), Ye = (e, t) => async (o, n, r) => {
+				}, ze = Object(r.a)(pe.A), Xe = Object(r.a)(pe.z), $e = Object(r.a)(pe.B), Ye = (e, t) => async (o, n, r) => {
 					let {
 						apiContext: i
 					} = r;
 					const c = n();
-					o(Qe({
+					o(ze({
 						id: e
-					})), Q.a(e, c);
+					})), z.a(e, c);
 					const a = await ((e, t) => Object(x.a)(Object(C.a)(e, [v.a]), {
 						endpoint: Object(R.a)(`${e.apiUrl}/api/del`),
 						method: s.jb.POST,
@@ -887,7 +887,7 @@
 					let {
 						apiContext: r
 					} = s;
-					if (!Object(f.P)(o())) return void t(Object(c.i)(l.a.LOGIN_MODAL_ID));
+					if (!Object(f.Q)(o())) return void t(Object(c.i)(l.a.LOGIN_MODAL_ID));
 					const i = o().features.comments.models[e];
 					if (!i) return;
 					const a = i.isLocked ? m.k : m.e;
@@ -1430,8 +1430,8 @@
 				q = o("./src/reddit/helpers/routeKey/index.ts"),
 				J = o("./src/reddit/models/ModQueue/index.ts"),
 				W = o("./src/reddit/models/PostDraft/index.ts"),
-				z = o("./src/reddit/models/RemovalReason/index.ts"),
-				Q = o("./src/reddit/models/Toast/index.ts"),
+				Q = o("./src/reddit/models/RemovalReason/index.ts"),
+				z = o("./src/reddit/models/Toast/index.ts"),
 				X = o("./src/reddit/selectors/comments.ts"),
 				$ = o("./src/reddit/selectors/platform.ts");
 			Object(s.a)({
@@ -1478,7 +1478,7 @@
 							subredditId: e,
 							reason: r
 						})), o(Object(D.f)({
-							kind: Q.b.SuccessMod,
+							kind: z.b.SuccessMod,
 							text: n.fbt._("Removal reason added!", null, {
 								hk: "2WSh8N"
 							})
@@ -1502,7 +1502,7 @@
 						subredditId: e,
 						reason: t
 					})), o(Object(D.f)({
-						kind: Q.b.SuccessMod,
+						kind: z.b.SuccessMod,
 						text: n.fbt._("Removal reason saved", null, {
 							hk: "28ScuL"
 						})
@@ -1521,7 +1521,7 @@
 						subredditId: e,
 						reasonId: t
 					})), o(Object(D.f)({
-						kind: Q.b.SuccessMod,
+						kind: z.b.SuccessMod,
 						text: n.fbt._("Removal reason deleted", null, {
 							hk: "4xzgsa"
 						})
@@ -1542,9 +1542,9 @@
 					const d = i(),
 						l = d.user.account && d.user.account.displayText,
 						m = e[0],
-						u = Object(H.a)(m) ? z.e.Post : z.e.Comment,
-						p = u === z.e.Post ? d.posts.models[m] : d.features.comments.models[m],
-						b = u === z.e.Post ? M.S : T.i;
+						u = Object(H.a)(m) ? Q.e.Post : Q.e.Comment,
+						p = u === Q.e.Post ? d.posts.models[m] : d.features.comments.models[m],
+						b = u === Q.e.Post ? M.S : T.i;
 					if (!p || !l) return !1;
 					r(fe()), r(b({
 						[m]: {
@@ -1568,9 +1568,9 @@
 									title: t.title,
 									type: n
 								},
-								i = await G(a(), Object(z.h)(s, u), u);
+								i = await G(a(), Object(Q.h)(s, u), u);
 							if (i.ok) {
-								if (n === z.f.Public) {
+								if (n === Q.f.Public) {
 									if (r(_e()), i.body) {
 										const e = Object(V.a)(i.body),
 											t = {
@@ -1583,7 +1583,7 @@
 										if (s || (s = Object(k.a)(e.postId, null, {
 												sort: v.u,
 												hasSortParam: !0
-											})), u === z.e.Post) {
+											})), u === Q.e.Post) {
 											const o = Object(E.a)(W.c.replyToPost, m);
 											r(Object(w.q)({
 												...t,
@@ -1603,7 +1603,7 @@
 													isStickied: !1
 												}
 											}))
-										} else if (u === z.e.Comment) {
+										} else if (u === Q.e.Comment) {
 											const e = Object(E.a)(W.c.replyToComment, p.id),
 												o = Object(X.j)(d, {
 													commentId: m,
@@ -1640,7 +1640,7 @@
 					if (!m) return;
 					i(fe());
 					const u = Object(D.f)({
-							kind: Q.b.SuccessMod,
+							kind: z.b.SuccessMod,
 							text: n.fbt._({
 								"*": "Added removal reason for {number} posts/comments",
 								_1: "Added removal reason for 1 post/comment"
@@ -1671,7 +1671,7 @@
 									title: t.title,
 									type: s
 								},
-								r = await G(d(), Object(z.h)(n, z.e.Bulk), z.e.Bulk);
+								r = await G(d(), Object(Q.h)(n, Q.e.Bulk), Q.e.Bulk);
 							r.ok ? (i(Se()), i(u)) : i(xe(r.error))
 						} else i(u)
 					} else i(ge(b.error))
@@ -1722,7 +1722,7 @@
 		"./src/reddit/components/CommentSort/index.tsx": function(e, t, o) {
 			"use strict";
 			o.d(t, "a", (function() {
-				return Q
+				return z
 			}));
 			var n = o("./node_modules/fbt/lib/FbtPublic.js"),
 				s = o("./node_modules/react/index.js"),
@@ -1906,8 +1906,8 @@
 					})))
 				}
 			}
-			var z = W;
-			const Q = "CommentSort--SortPicker",
+			var Q = W;
+			const z = "CommentSort--SortPicker",
 				X = "CommentSort--HighlightPicker",
 				$ = "CommentSort--Tooltip",
 				Y = Object(y.a)(v.a),
@@ -1921,7 +1921,7 @@
 						})
 					},
 					contestModeModalIsOpen: Object(P.b)("CommentSort--ContestMode--Modal"),
-					dropdownIsOpen: Object(B.b)(Q),
+					dropdownIsOpen: Object(B.b)(z),
 					highlightIsOpen: Object(B.b)(X),
 					hasModeratorPostPermissions: (e, t) => {
 						let {
@@ -1958,7 +1958,7 @@
 							sort: t
 						})),
 						onOpenDropdown: () => e(Object(l.h)({
-							tooltipId: Q
+							tooltipId: z
 						})),
 						onOpenHighlightDropdown: t => {
 							e(Object(l.h)({
@@ -2041,7 +2041,7 @@
 						className: Object(a.a)(H.a.SortPicker, H.a.Row),
 						textClassName: H.a.SortOptionDropdownText,
 						displayText: `${n.fbt._("Sort by",null,{hk:"E6T9r"})}: ${K}`,
-						id: Q,
+						id: z,
 						noHover: !0,
 						skipRoleAttr: !0,
 						onClick: this.onOpenDropdownClick
@@ -2050,7 +2050,7 @@
 						onClick: this.onOpenDropdownClick
 					})), r.a.createElement(Y, {
 						isOpen: i,
-						tooltipId: Q
+						tooltipId: z
 					}, [d.t.CONFIDENCE, d.t.TOP, d.t.NEW, d.t.CONTROVERSIAL, d.t.OLD, d.t.QA].map(e => {
 						const t = o || f,
 							n = Object(E.b)(t),
@@ -2105,7 +2105,7 @@
 						on: I
 					}))), g && r.a.createElement("div", {
 						className: H.a.containerRow
-					}, r.a.createElement(z, {
+					}, r.a.createElement(Q, {
 						changeHighlightSort: e,
 						highlightIsOpen: m,
 						id: X,
@@ -2810,4 +2810,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.99a32b76fd4c532910c9.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/removalReasonActions.67a3044f878d1a919ba4.js.map

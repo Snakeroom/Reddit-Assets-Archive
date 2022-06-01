@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/IdCard.3fa19a87001840ba8ab7.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/IdCard.a7c897ea4fa9aaeaedbe.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["IdCard", "AchievementsActions", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -1376,8 +1376,8 @@
 			const _ = "create-community-button",
 				v = x.a.wrapped(l.c, "StyledTooltip", g.a),
 				y = Object(a.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.ob)(e),
-					userIsSuspended: h.W
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(h.pb)(e),
+					userIsSuspended: h.X
 				});
 			t.a = Object(o.b)(y, (e, t) => {
 				let {
@@ -2269,7 +2269,7 @@
 				}).apply(this, arguments)
 			}
 			const B = Object(m.c)({
-				isLoggedIn: F.P
+				isLoggedIn: F.Q
 			});
 			var R = Object(o.b)(B, e => ({
 					openLoginModal: () => {
@@ -2319,8 +2319,8 @@
 				G = n.n(V);
 			const {
 				fbt: J
-			} = n("./node_modules/fbt/lib/FbtPublic.js"), K = z.a.div("DescriptionContainer", G.a);
-			class Q extends i.a.Component {
+			} = n("./node_modules/fbt/lib/FbtPublic.js"), Q = z.a.div("DescriptionContainer", G.a);
+			class K extends i.a.Component {
 				constructor(e) {
 					super(e), this.containerRef = null, this.textRef = null, this.showFullDescription = e => {
 						e.preventDefault(), e.stopPropagation(), this.setState({
@@ -2349,7 +2349,7 @@
 					} = this.state, o = n ? J._("Welcome to {subredditName}", [J._param("subredditName", n.name)], {
 						hk: "1dVVp0"
 					}) : "";
-					return i.a.createElement(K, {
+					return i.a.createElement(Q, {
 						className: Object(p.a)(G.a.descriptionContainer, s && G.a.truncated),
 						"data-redditstyle": !0,
 						innerRef: this.setContainerRef,
@@ -2367,7 +2367,7 @@
 					}))))
 				}
 			}
-			var X = Q,
+			var X = K,
 				Y = n("./src/reddit/components/SubredditUnsavedChangesModal/index.tsx"),
 				Z = n("./src/reddit/controls/LoadingIcon/index.tsx"),
 				$ = n("./src/reddit/helpers/trackers/inlineSubredditEditing.ts"),
@@ -2617,8 +2617,8 @@
 				Ve = n("./src/reddit/controls/ImageInput/index.tsx"),
 				Ge = n("./src/reddit/featureFlags/index.ts"),
 				Je = n("./src/reddit/helpers/awards/isEligibleForCommunityAwards.ts"),
-				Ke = n("./src/reddit/helpers/getFakeUserIcons.ts"),
-				Qe = n("./src/reddit/helpers/localStorage/index.ts"),
+				Qe = n("./src/reddit/helpers/getFakeUserIcons.ts"),
+				Ke = n("./src/reddit/helpers/localStorage/index.ts"),
 				Xe = n("./src/reddit/helpers/trackers/communityTopics.ts"),
 				Ye = n("./src/reddit/helpers/trackers/lightbox.ts"),
 				Ze = n("./src/reddit/helpers/trackers/modHub.ts"),
@@ -2655,8 +2655,8 @@
 				_t = n.n(xt);
 			const vt = z.a.wrapped(S.t, "TertiaryButton", _t.a),
 				yt = Object(m.c)({
-					stylesDisabledForSubreddit: F.pb,
-					stylesDisabledGlobally: F.qb
+					stylesDisabledForSubreddit: F.qb,
+					stylesDisabledGlobally: F.rb
 				});
 			class Ct extends i.a.Component {
 				constructor(e) {
@@ -2875,8 +2875,8 @@
 						subredditName: t.listingName
 					}),
 					isContributorRequestPending: e => Object(ne.e)(e, tt.e.Post),
-					isGQLLoggedIn: F.O,
-					isLoggedIn: F.P,
+					isGQLLoggedIn: F.P,
+					isLoggedIn: F.Q,
 					isNsfwBlurSubreddit: ot.e,
 					moderatorPermissions: (e, t) => {
 						const n = Object(ne.F)(e, t.listingName);
@@ -2889,7 +2889,7 @@
 					showCreatePollButton: e => (e => Object(rt.c)(e, {
 						experimentEligibilitySelector: rt.a,
 						experimentName: Ae.Q
-					}) === Ae.X.Treatment)(e) && !Object(Qe.g)(),
+					}) === Ae.X.Treatment)(e) && !Object(Ke.g)(),
 					shouldShowFlairPreview: (e, t) => {
 						let {
 							listingName: n
@@ -3077,7 +3077,7 @@
 						idCardWidget: n
 					}), L = S || b || f, A = !S && _.id ? _.id : "", U = v && v.created, H = r.fbt._("Cake Day", null, {
 						hk: "gZ29b"
-					}), q = `IdCard--Subscribers--${b}--${A}`, W = `IdCard--CurrentlyViewing--${b}--${A}`, z = `IdCard--CakeDay--${b}--${A}`, V = `IdCard--CoinCoint--${b}--${A}`, G = u && !b, J = !S && !l && !d, K = !S && !b && j && !f, Q = K && !c ? i.a.createElement(ae, {
+					}), q = `IdCard--Subscribers--${b}--${A}`, W = `IdCard--CurrentlyViewing--${b}--${A}`, z = `IdCard--CakeDay--${b}--${A}`, V = `IdCard--CoinCoint--${b}--${A}`, G = u && !b, J = !S && !l && !d, Q = !S && !b && j && !f, K = Q && !c ? i.a.createElement(ae, {
 						description: P,
 						shouldTruncateDescription: !1,
 						isCommentsPage: !!s,
@@ -3134,13 +3134,13 @@
 						isTargetBlank: f,
 						linkUrl: S ? void 0 : D,
 						subredditIcon: C,
-						canEditIcon: K,
+						canEditIcon: Q,
 						subreddit: _,
 						titleText: M,
 						onOpenFilePicker: this.openIconFilePicker,
 						isInNCPV3Experiment: c,
 						shouldBlurSubredditIcon: m
-					}) : null, Q, !S && !G && Wt(B, R, q, k, F, W, U, H, z, T), J && i.a.createElement(Mt.a, {
+					}) : null, K, !S && !G && Wt(B, R, q, k, F, W, U, H, z, T), J && i.a.createElement(Mt.a, {
 						subredditId: A
 					}), !S && i.a.createElement("div", {
 						className: pt.a.CommunityTypeContainer
@@ -3172,7 +3172,7 @@
 						className: pt.a.coinsTooltipContent
 					}, r.fbt._("The community gets Coins from Awards given by members", null, {
 						hk: "3j3NSH"
-					}))))), (c ? K && B > 100 : K) && i.a.createElement(me, {
+					}))))), (c ? Q && B > 100 : Q) && i.a.createElement(me, {
 						context: Xe.a.idCard,
 						subredditId: A
 					}), !S && G && qt(_, B, k), this.renderButtons(), !S && l && i.a.createElement(i.a.Fragment, null, i.a.createElement(Et, {
@@ -3180,7 +3180,7 @@
 						isSubmissionPage: f,
 						sendEvent: this.props.sendEvent,
 						subredditId: _.id
-					})), K && i.a.createElement(Ve.a, {
+					})), Q && i.a.createElement(Ve.a, {
 						key: "icon-file-picker",
 						className: pt.a.iconFilePicker,
 						inputRef: this.setIconFilePickerRef,
@@ -3193,7 +3193,7 @@
 				}
 			}
 			const qt = (e, t, n) => {
-					const s = Object(Ke.a)(e.name);
+					const s = Object(Qe.a)(e.name);
 					return i.a.createElement("span", {
 						className: pt.a.metaTextContainer
 					}, s.map((e, t) => {
@@ -5309,4 +5309,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.3fa19a87001840ba8ab7.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/IdCard.a7c897ea4fa9aaeaedbe.js.map

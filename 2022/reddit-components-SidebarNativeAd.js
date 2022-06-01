@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.48ee222ce527f8e45e98.js
-// Retrieved at 6/1/2022, 12:40:06 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c207e619ddb6b5f7a801.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -966,7 +966,7 @@
 						activeMeSubpage: p,
 						activeDetails: f
 					} = e, h = n();
-					s && Object(d.a)(Object(i.g)(s)(h)), Object(c.P)(h) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL, {
+					s && Object(d.a)(Object(i.g)(s)(h)), Object(c.Q)(h) ? await t(Object(o.h)(a.a.SNOOVATAR_MODAL, {
 						share: l,
 						source: u,
 						activeTab: m,
@@ -1493,8 +1493,8 @@
 				q = n("./src/config.ts"),
 				V = n("./src/reddit/hooks/useClickSourceData.ts"),
 				W = n("./src/reddit/hooks/usePostContext.ts"),
-				z = n("./src/reddit/hooks/useTheme.ts"),
-				H = n("./src/telemetry/models/Outbound.ts");
+				H = n("./src/reddit/hooks/useTheme.ts"),
+				z = n("./src/telemetry/models/Outbound.ts");
 
 			function K() {
 				return (K = Object.assign || function(e) {
@@ -1518,7 +1518,7 @@
 						redditStyle: c,
 						shouldBlurTitle: d
 					} = e;
-					const u = Object(z.a)();
+					const u = Object(H.a)();
 					let m = "";
 					switch (t) {
 						case N.ExtraLarge:
@@ -1592,7 +1592,7 @@
 						})
 					},
 					isNsfwBlurSubreddit: F.e,
-					shouldOpenPostInNewTab: D.ib
+					shouldOpenPostInNewTab: D.jb
 				}),
 				Z = e => {
 					const {
@@ -1672,7 +1672,7 @@
 						post: r
 					} = e, {
 						isSponsored: o
-					} = r, a = e.isCommentsPage ? H.SourceElement.PostLink : H.SourceElement.ListingPostLink;
+					} = r, a = e.isCommentsPage ? z.SourceElement.PostLink : z.SourceElement.ListingPostLink;
 					if (Object(S.a)()) return null;
 					if (n && r.isNSFW) return null;
 					const i = !t && !e.isCrosspost && e.size !== N.Large && !r.isSponsored && !(r.media && Object(w.H)(r.media)) && (r.source || r.media && (r.media.type === w.o.GIFVIDEO || r.media.type === w.o.IMAGE || r.media.type === w.o.EMBED));
@@ -1764,7 +1764,7 @@
 						isCommentPermalink: n,
 						pageLayer: t
 					})),
-					i = Object(z.a)(),
+					i = Object(H.a)(),
 					c = Object(u.b)();
 				return r ? s.a.createElement(te, K({
 					pageLayer: t,
@@ -1921,8 +1921,8 @@
 				q = m.a.div("SourceLinkWrapper", L.a),
 				V = m.a.div("TopLine", L.a),
 				W = m.a.wrapped(c.c, "PostTitle", L.a),
-				z = m.a.div("PostMediaWrapper", L.a),
-				H = m.a.div("BackgroundWrapper", L.a),
+				H = m.a.div("PostMediaWrapper", L.a),
+				z = m.a.div("BackgroundWrapper", L.a),
 				K = m.a.wrapped(b.a, "PostContainer", L.a),
 				Y = 640,
 				Q = e => Object(I.a)(e.title, 100),
@@ -1966,7 +1966,7 @@
 						})
 					}, l = s.a.createElement(N, {
 						post: e
-					})) : (a = U, l = s.a.createElement(H, {
+					})) : (a = U, l = s.a.createElement(z, {
 						style: J(this.props)
 					}, s.a.createElement(V, null, s.a.createElement(B, {
 						tooltipType: o ? d.c.Lightbox : void 0,
@@ -1981,7 +1981,7 @@
 						isSponsored: !0,
 						postId: e.id,
 						source: e.source
-					}, Object(u.a)(e), s.a.createElement(G, null))), s.a.createElement(z, null, e.media && s.a.createElement(i.a, {
+					}, Object(u.a)(e), s.a.createElement(G, null))), s.a.createElement(H, null, e.media && s.a.createElement(i.a, {
 						isListing: !0,
 						isNotCardView: !0,
 						showCentered: !0,
@@ -2771,7 +2771,7 @@
 				d = (e, t) => n => {
 					const {
 						id: r
-					} = Object(a.zb)(n, {
+					} = Object(a.Ab)(n, {
 						userName: t
 					});
 					return {
@@ -3859,7 +3859,7 @@
 				q = n("./node_modules/lodash/omit.js"),
 				V = n.n(q);
 			const W = {};
-			var z = function() {
+			var H = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : W,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
@@ -3902,9 +3902,9 @@
 						return e
 				}
 			};
-			const H = {};
+			const z = {};
 			var K = function() {
-				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : H,
+				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : z,
 					t = arguments.length > 1 ? arguments[1] : void 0;
 				switch (t.type) {
 					case L.g: {
@@ -4018,7 +4018,7 @@
 				},
 				te = Object(r.c)({
 					api: D,
-					models: z,
+					models: H,
 					pageInfo: K,
 					search: Z,
 					userOrder: ee
@@ -4527,12 +4527,12 @@
 							return e
 					}
 				},
-				ze = Object(r.c)({
+				He = Object(r.c)({
 					error: Ve,
 					pending: We
 				}),
-				He = n("./node_modules/lodash/isEqual.js"),
-				Ke = n.n(He);
+				ze = n("./node_modules/lodash/isEqual.js"),
+				Ke = n.n(ze);
 			var Ye = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
 						t = arguments.length > 1 ? arguments[1] : void 0;
@@ -4560,7 +4560,7 @@
 					}
 				},
 				Qe = Object(r.c)({
-					api: ze,
+					api: He,
 					result: Ye
 				});
 			const Xe = {};
@@ -5083,7 +5083,7 @@
 				}
 			};
 			const Wt = {};
-			var zt = function() {
+			var Ht = function() {
 					let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : Wt,
 						t = arguments.length > 1 ? arguments[1] : void 0;
 					switch (t.type) {
@@ -5103,10 +5103,10 @@
 							return e
 					}
 				},
-				Ht = Object(r.c)({
+				zt = Object(r.c)({
 					api: Gt,
 					itemOrder: Vt,
-					loadMore: zt
+					loadMore: Ht
 				});
 			var Kt = function() {
 				let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
@@ -5275,7 +5275,7 @@
 					edited: xt,
 					moderatedCommunitiesOrder: Mt,
 					modqueue: Ft,
-					reports: Ht,
+					reports: zt,
 					spam: en,
 					unmoderated: dn
 				});
@@ -5709,7 +5709,7 @@
 						minSize: n,
 						userName: r
 					} = t;
-					const o = Object(c.zb)(e, {
+					const o = Object(c.Ab)(e, {
 						userName: r
 					});
 					if (o && o.awardedLastMonth && o.awardedLastMonth.topAward) return f(e, {
@@ -5883,4 +5883,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.48ee222ce527f8e45e98.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.c207e619ddb6b5f7a801.js.map

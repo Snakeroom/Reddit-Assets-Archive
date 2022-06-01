@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.0356253dd4479ae1014d.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.d37750171c99430f3213.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, s) {
@@ -1030,7 +1030,7 @@
 				isChatPost: k.d,
 				isPostSEOEligible: w.e,
 				postPermalink: I.F,
-				shouldOpenPostInNewTab: y.ib,
+				shouldOpenPostInNewTab: y.jb,
 				isBlockingInterstitialEnabled: E.b,
 				isBlockingInterstitialV2Enabled: E.c
 			}));
@@ -1616,7 +1616,7 @@
 					activeModalId: pe.a,
 					claimedFreeAward: E.b,
 					layout: G.S,
-					userIsOp: q.Cb,
+					userIsOp: q.Db,
 					subreddit: G.r,
 					isBlockedUserBannerEnabled: (e, t) => {
 						let {
@@ -3217,7 +3217,7 @@
 						} = t;
 						return Object(A.E)(e, {
 							pageLayer: r
-						}) && s && o && Object(re.Ab)(e, {
+						}) && s && o && Object(re.Bb)(e, {
 							userName: n.author
 						})
 					},
@@ -4971,7 +4971,7 @@
 				r = s("./src/reddit/selectors/runTimeEnvVars.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			const a = e => !!Object(r.b)(e) || Object(n.c)(e, {
-				experimentEligibilitySelector: i.P,
+				experimentEligibilitySelector: i.Q,
 				experimentName: o.n
 			}) === o.g.Enabled
 		},
@@ -4985,7 +4985,7 @@
 				r = s("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = s("./src/reddit/selectors/user.ts");
 			const a = Object(o.a)(e => Object(r.c)(e, {
-				experimentEligibilitySelector: i.P,
+				experimentEligibilitySelector: i.Q,
 				experimentName: n.pc
 			}), e => e === n.sd)
 		},
@@ -4994,4 +4994,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.0356253dd4479ae1014d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~ModerationPages~ProfileComments~ProfileOverview~ProfilePrivate~R~969c2956.d37750171c99430f3213.js.map

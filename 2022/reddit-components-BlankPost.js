@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.e5b0df58aa5e7bb25793.js
-// Retrieved at 5/31/2022, 4:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.66ce540673086ec3e810.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-BlankPost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, s) {
@@ -931,7 +931,7 @@
 						method: r.jb.GET
 					}))(n());
 					o.ok ? e(R(v(o.body))) : e(N(o.error))
-				}, F = "POST_DRAFT__SAVE_DRAFT_PENDING", L = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", V = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(i.a)(F), W = Object(i.a)(L), $ = Object(i.a)(V), z = Object(i.a)(U), Q = Object(i.a)(G), K = Object(i.a)(B), X = Object(i.a)(q), Y = e => async (t, s, i) => {
+				}, F = "POST_DRAFT__SAVE_DRAFT_PENDING", L = "POST_DRAFT__SAVE_DRAFT_SUCCEEDED", V = "POST_DRAFT__SAVE_DRAFT_FAILED", U = "POST_DRAFT__SAVE_DRAFT_VALIDATION_FAILED", G = "POST_DRAFT__SAVE_DRAFT_SUBMIT_VALIDATION_FAILED", B = "POST_DRAFT__SAVE_DRAFT_CAPTCHA_REQUIRED", q = "POST_CREATION__TOGGLE_DRAFT_IS_PUBLIC", H = Object(i.a)(F), W = Object(i.a)(L), $ = Object(i.a)(V), Q = Object(i.a)(U), z = Object(i.a)(G), K = Object(i.a)(B), X = Object(i.a)(q), Y = e => async (t, s, i) => {
 					let {
 						apiContext: o
 					} = i;
@@ -968,7 +968,7 @@
 						})), e || t(Object(a.a)(h.destSubreddit, s, !1))
 					} else {
 						const e = f.error;
-						e.type === r.I.BAD_CAPTCHA_ERROR ? t(K()) : e.type === r.I.VALIDATION_ERROR ? t(z(e)) : e.type === r.I.SUBMIT_VALIDATION_ERROR ? t(Q(e)) : t($(e)), t(Object(d.f)({
+						e.type === r.I.BAD_CAPTCHA_ERROR ? t(K()) : e.type === r.I.VALIDATION_ERROR ? t(Q(e)) : e.type === r.I.SUBMIT_VALIDATION_ERROR ? t(z(e)) : t($(e)), t(Object(d.f)({
 							duration: d.a,
 							kind: j.b.Error,
 							text: Object(n.a)(e)
@@ -1112,7 +1112,7 @@
 				f = () => async (e, t) => {
 					const s = t(),
 						r = Object(o.g)(s, {});
-					if (!(Object(u.O)(s) || Object(u.P)(s)) || !r) return;
+					if (!(Object(u.P)(s) || Object(u.Q)(s)) || !r) return;
 					const n = Object(c.i)(s);
 					p(n, r), e(m({
 						hasUnreadMessages: !!n
@@ -1607,9 +1607,9 @@
 				const e = Object(i.e)(e => ({
 					currentUser: Object(d.k)(e),
 					modModeEnabled: e.modModeEnabled,
-					nightmodeEnabled: Object(d.cb)(e),
+					nightmodeEnabled: Object(d.db)(e),
 					prefs: e.user.prefs,
-					isLoggedIn: Object(d.P)(e)
+					isLoggedIn: Object(d.Q)(e)
 				}));
 				return Object(o.a)(e)
 			}
@@ -2249,4 +2249,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.e5b0df58aa5e7bb25793.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-BlankPost.66ce540673086ec3e810.js.map

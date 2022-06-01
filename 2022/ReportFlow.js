@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ReportFlow.ec369b43e686976b9782.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ReportFlow.41d44739addf3b21c374.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ReportFlow", "ReportFlowNew"], {
 		"./node_modules/@reddit/i18n-tools/runtime/helpers/locale/index.js": function(e, t, n) {
@@ -975,7 +975,7 @@
 					if (!R && !f) return;
 					const g = f ? p.features.comments.models[e] : p.posts.models[e];
 					if (!g) return;
-					if (!Object(_.P)(o())) return s(Object(r.j)()), void s(Object(a.k)({
+					if (!Object(_.Q)(o())) return s(Object(r.j)()), void s(Object(a.k)({
 						actionSource: a.a.Report,
 						redirectUrl: g.permalink,
 						thingId: e
@@ -2237,7 +2237,7 @@
 						(r ? r.author : a ? a.author : null) || t.author;
 						n.name
 					}),
-					isNightmodeOn: P.cb,
+					isNightmodeOn: P.db,
 					locale: L.i
 				}),
 				W = Object(d.b)(G, (e, t) => {
@@ -3960,11 +3960,11 @@
 				o = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				r = n("./src/reddit/selectors/user.ts");
 			const a = e => s.d.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: r.P,
+					experimentEligibilitySelector: r.Q,
 					experimentName: s.j
 				}),
 				i = e => s.f.Enabled === Object(o.c)(e, {
-					experimentEligibilitySelector: r.P,
+					experimentEligibilitySelector: r.Q,
 					experimentName: s.o
 				})
 		},
@@ -3994,4 +3994,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.ec369b43e686976b9782.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ReportFlow.41d44739addf3b21c374.js.map

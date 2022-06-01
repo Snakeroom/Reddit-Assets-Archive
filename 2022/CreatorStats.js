@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CreatorStats.18d3b1068c74063163c6.js
-// Retrieved at 5/16/2022, 4:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CreatorStats.5f6cc237a44d51624a00.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CreatorStats"], {
 		"./src/reddit/components/CreatorStats/Stats.tsx": function(t, e, s) {
@@ -19,10 +19,10 @@
 				h = s("./src/reddit/icons/fonts/index.tsx"),
 				f = s("./node_modules/@loadable/component/dist/loadable.esm.js"),
 				v = s("./src/reddit/components/CreatorStats/index.m.less"),
-				C = s.n(v);
+				O = s.n(v);
 
-			function O() {
-				return (O = Object.assign || function(t) {
+			function C() {
+				return (C = Object.assign || function(t) {
 					for (var e = 1; e < arguments.length; e++) {
 						var s = arguments[e];
 						for (var o in s) Object.prototype.hasOwnProperty.call(s, o) && (t[o] = s[o])
@@ -101,26 +101,26 @@
 						tooltipExtra: _
 					} = t;
 					return l.a.createElement("div", {
-						className: Object(c.a)(C.a.singleStat, e),
+						className: Object(c.a)(O.a.singleStat, e),
 						onMouseEnter: d || s && s.show,
 						onMouseLeave: u || s && s.hide,
 						ref: s && s.target.ref
 					}, l.a.createElement("div", {
-						className: Object(c.a)(C.a.statNumber, a)
+						className: Object(c.a)(O.a.statNumber, a)
 					}, o, r && l.a.createElement(h.a, {
 						name: r,
-						className: C.a.statNumberIcon
+						className: O.a.statNumberIcon
 					})), l.a.createElement("div", {
-						className: C.a.statDescription
+						className: O.a.statDescription
 					}, i && l.a.createElement(h.a, {
 						name: i,
-						className: C.a.icon
-					}), n), s && l.a.createElement(p.a, O({}, s, {
-						className: Object(c.a)(C.a.hoverTooltip, b)
+						className: O.a.icon
+					}), n), s && l.a.createElement(p.a, C({}, s, {
+						className: Object(c.a)(O.a.hoverTooltip, b)
 					}), f && l.a.createElement("div", {
-						className: Object(c.a)(C.a.tooltipTitle, m)
+						className: Object(c.a)(O.a.tooltipTitle, m)
 					}, f), v && l.a.createElement("div", {
-						className: C.a.tooltipDescription
+						className: O.a.tooltipDescription
 					}, v), _))
 				},
 				k = t => {
@@ -132,16 +132,16 @@
 						rightStatDescription: r
 					} = t;
 					return l.a.createElement("div", {
-						className: Object(c.a)(C.a.twoColumnContainer, e)
+						className: Object(c.a)(O.a.twoColumnContainer, e)
 					}, l.a.createElement(N, {
-						className: C.a.twoColumnSingleStat,
+						className: O.a.twoColumnSingleStat,
 						statNumber: s,
-						statNumberClassName: C.a.twoColumnStatNumber,
+						statNumberClassName: O.a.twoColumnStatNumber,
 						statDescription: o
 					}), l.a.createElement(N, {
-						className: C.a.twoColumnSingleStat,
+						className: O.a.twoColumnSingleStat,
 						statNumber: a,
-						statNumberClassName: C.a.twoColumnStatNumber,
+						statNumberClassName: O.a.twoColumnStatNumber,
 						statDescription: r
 					}))
 				},
@@ -150,20 +150,20 @@
 					const p = Object(u.b)(j),
 						h = Object(m.a)(),
 						[f, v] = Object(i.useState)(!1),
-						O = Object(i.useRef)(null),
+						C = Object(i.useRef)(null),
 						w = Object(i.useCallback)(t => {
 							t.stopPropagation(), v(!0)
 						}, []),
 						T = Object(i.useCallback)(() => {
-							h.show(), O.current && clearTimeout(O.current)
+							h.show(), C.current && clearTimeout(C.current)
 						}, [h]),
-						y = Object(i.useCallback)(() => O.current = setTimeout(() => {
+						y = Object(i.useCallback)(() => C.current = setTimeout(() => {
 							v(!1), h.hide()
 						}, 300), [h]);
 					return Object(i.useEffect)(() => () => {
-						O.current && clearTimeout(O.current)
+						C.current && clearTimeout(C.current)
 					}, []), l.a.createElement("div", {
-						className: C.a.statsContainer
+						className: O.a.statsContainer
 					}, (null === (e = t.postStats.viewCountTotals) || void 0 === e ? void 0 : e.totalCount) && (null === (s = t.postStats.viewCountTrends) || void 0 === s ? void 0 : s.data) && (null === (o = t.postStats.viewCountTrends) || void 0 === o ? void 0 : o.data.length) > 0 && l.a.createElement(N, {
 						hoverTooltip: p,
 						statNumber: Object(b.b)(t.postStats.viewCountTotals.totalCount),
@@ -172,7 +172,7 @@
 							hk: "2xi7om"
 						}),
 						iconName: d.a.show,
-						tooltipClassName: C.a.statsTooltip,
+						tooltipClassName: O.a.statsTooltip,
 						tooltipExtra: l.a.createElement(_, {
 							totalCount: t.postStats.viewCountTotals.totalCount,
 							viewsData: t.postStats.viewCountTrends.data
@@ -232,16 +232,16 @@
 						iconName: d.a.share_ios,
 						onStartHover: T,
 						onStopHover: y,
-						tooltipClassName: C.a.crosspostsHoverTooltip,
+						tooltipClassName: O.a.crosspostsHoverTooltip,
 						tooltipTitleText: r.fbt._({
 							"*": "{post ownership} post was shared {number} times",
 							_1: "{post ownership} post was shared 1 time"
 						}, [r.fbt._param("post ownership", t.isUserOp ? "Your" : "This"), r.fbt._plural(parseInt(Object(b.b)(t.postStats.shareAllCountTotals.totalCount)), "number")], {
 							hk: "22iJcd"
 						}),
-						tooltipTitleClassName: C.a.crosspostsStatTooltipTitle,
+						tooltipTitleClassName: O.a.crosspostsStatTooltipTitle,
 						tooltipExtra: l.a.createElement(k, {
-							className: f ? C.a.twoRowContainer : void 0,
+							className: f ? O.a.twoRowContainer : void 0,
 							leftStatNumber: t.postOtherDiscussions && 0 !== Object.keys(t.postOtherDiscussions).length ? l.a.createElement(S, {
 								crosspostedDestinations: t.postOtherDiscussions,
 								onClick: w,
@@ -312,16 +312,16 @@
 				h = s("./src/reddit/selectors/posts.ts"),
 				f = s("./src/reddit/selectors/subreddit.ts"),
 				v = s("./src/reddit/selectors/user.ts"),
-				C = s("./src/reddit/actions/creatorStats/constants.ts"),
-				O = s("./src/lib/initializeClient/installReducer.ts"),
+				O = s("./src/reddit/actions/creatorStats/constants.ts"),
+				C = s("./src/lib/initializeClient/installReducer.ts"),
 				_ = s("./src/reddit/reducers/features/creatorStats/index.ts");
-			Object(O.a)({
+			Object(C.a)({
 				features: {
 					creatorStats: _.a
 				}
 			});
-			const S = Object(c.a)(C.b),
-				j = Object(c.a)(C.a),
+			const S = Object(c.a)(O.b),
+				j = Object(c.a)(O.a),
 				N = (t, e, s) => {
 					var o, a;
 					if (!(s in t)) return !1;
@@ -421,7 +421,7 @@
 						} = t;
 						return async (t, o) => {
 							const a = o();
-							Object(m.b)(a) && Object(v.Cb)(a, {
+							Object(m.b)(a) && Object(v.Db)(a, {
 								postId: e
 							}) && (Object(f.U)(a, {
 								subredditId: s
@@ -452,8 +452,8 @@
 				}, [t.isOwnProfileStats, t.post.id, t.subreddit.id, s]);
 				const b = Object(l.e)(e => Object(p.b)(e, t.post.id)),
 					h = Object(l.e)(e => Object(p.c)(e, t.post.id)),
-					C = Object(l.e)(e => Object(p.d)(e, t.subreddit.id)),
-					O = Object(l.e)(e => Object(v.Cb)(e, {
+					O = Object(l.e)(e => Object(p.d)(e, t.subreddit.id)),
+					C = Object(l.e)(e => Object(v.Db)(e, {
 						postId: t.post.id
 					}));
 				Object(n.useEffect)(() => {
@@ -540,13 +540,13 @@
 						default:
 							return ""
 					}
-				})(c, t.post, t.subreddit, O, s => e(Object(T.b)(s, t.post.id)), t.isOwnProfileStats ? _ : void 0))), c === d.b.Available && h && i.a.createElement(x.a, {
-					isUserOp: O,
+				})(c, t.post, t.subreddit, C, s => e(Object(T.b)(s, t.post.id)), t.isOwnProfileStats ? _ : void 0))), c === d.b.Available && h && i.a.createElement(x.a, {
+					isUserOp: C,
 					upvoteRatio: t.post.upvoteRatio || void 0,
 					postOtherDiscussions: t.isOwnProfileStats ? b : void 0,
 					postStats: h,
 					numCrossposts: t.post.numCrossposts,
-					subredditKarma: C
+					subredditKarma: O
 				}))
 			}
 		},
@@ -675,4 +675,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.18d3b1068c74063163c6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CreatorStats.5f6cc237a44d51624a00.js.map

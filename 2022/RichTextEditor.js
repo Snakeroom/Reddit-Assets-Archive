@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.d682c8ca7a9ee8c7f0ef.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.fe6445a6932a5f91ef29.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -595,7 +595,7 @@
 					return async (e, o) => {
 						const s = o();
 						if (!!s.features.comments.drafts[n])
-							if (Object(me.R)(s) && t) {
+							if (Object(me.S)(s) && t) {
 								const o = he({
 									hasFocus: t,
 									draftKey: n
@@ -879,7 +879,7 @@
 					return async (e, s) => {
 						const r = s(),
 							a = Object(i.a)(Y.c.replyToComment, n);
-						if (!Object(me.P)(s()) && !Object(ae.a)(r)) return e(Object(l.j)()), void e(Object(m.k)({
+						if (!Object(me.Q)(s()) && !Object(ae.a)(r)) return e(Object(l.j)()), void e(Object(m.k)({
 							actionSource: m.a.Reply,
 							redirectUrl: Object(te.m)(s(), {
 								commentId: n
@@ -919,7 +919,7 @@
 								draftType: Y.c.replyToComment,
 								rtJson: h,
 								text: ""
-							}, Object(me.R)(r)) {
+							}, Object(me.S)(r)) {
 							const o = Ie({
 								parentCommentId: n,
 								commentsPageKey: t,
@@ -2459,7 +2459,7 @@
 					},
 					draft: te.i,
 					isCommentBeforeSignUpEnabled: Se.a,
-					isLoggedIn: Re.P,
+					isLoggedIn: Re.Q,
 					isLoginModalOpened: Object(Te.c)(me.a.LOGIN_MODAL_ID),
 					isRegisterModalOpened: Object(Te.c)(me.a.REGISTER_MODAL_ID),
 					userCanUseEmojis: (e, t) => {
@@ -4334,8 +4334,8 @@
 			}
 			const f = Object(a.c)({
 					currentUser: c.k,
-					isNightMode: c.cb,
-					isPresenceUserPrefEnabled: c.U,
+					isNightMode: c.db,
+					isPresenceUserPrefEnabled: c.V,
 					shouldHideNSFW: c.F
 				}),
 				g = Object(i.b)(f);
@@ -4853,7 +4853,7 @@
 				s = n("./src/reddit/constants/experiments.ts"),
 				r = n("./src/reddit/helpers/chooseVariant/index.ts"),
 				i = n("./src/reddit/selectors/user.ts");
-			const a = Object(o.a)(i.P, i.O, (e, t) => e || t),
+			const a = Object(o.a)(i.Q, i.P, (e, t) => e || t),
 				d = Object(o.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: a,
 					experimentName: s.L
@@ -4946,4 +4946,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.d682c8ca7a9ee8c7f0ef.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.fe6445a6932a5f91ef29.js.map

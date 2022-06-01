@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.8c7a15c900d21b160e72.js
-// Retrieved at 5/19/2022, 11:10:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.97854b1500a70b787c97.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
 		"./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx": function(e, t, n) {
@@ -21,7 +21,7 @@
 				} = e;
 				const n = function() {
 					const e = Object(a.e)(p),
-						t = Object(a.e)(l.cb),
+						t = Object(a.e)(l.db),
 						n = Object(s.a)();
 					m || (m = function(e, t, n) {
 						return {
@@ -246,4 +246,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.8c7a15c900d21b160e72.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.97854b1500a70b787c97.js.map

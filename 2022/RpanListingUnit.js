@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RpanListingUnit.ca6bd74a81d1a597c085.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RpanListingUnit.b6eaa30f57e85e90fc02.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RpanListingUnit"], {
 		"./node_modules/lodash/_arrayEvery.js": function(e, t) {
@@ -689,8 +689,8 @@
 				x = s("./src/reddit/selectors/user.ts"),
 				L = s("./src/reddit/components/ClassicPost/Placeholder.tsx"),
 				R = s("./src/reddit/components/Flatlist/index.tsx"),
-				P = s("./src/reddit/components/Flatlist/constants.ts"),
-				U = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
+				U = s("./src/reddit/components/Flatlist/constants.ts"),
+				P = s("./src/reddit/components/Flatlist/ResponsiveRow.tsx"),
 				j = s("./src/reddit/components/HlsVideo/index.tsx"),
 				w = s("./src/reddit/components/OverflowMenu/index.tsx"),
 				M = s("./src/reddit/components/PostBackgroundWrapper/index.tsx"),
@@ -710,7 +710,7 @@
 				playerName: "RPAN DU Video Player"
 			}), Q = Object(i.b)(() => Object(o.c)({
 				autoplay: x.b,
-				isLoggedIn: x.P,
+				isLoggedIn: x.Q,
 				isOverlayOpen: T.i,
 				location: (e, t) => {
 					let {
@@ -1183,11 +1183,11 @@
 						onClick: t,
 						isLoggedIn: s
 					} = e;
-					return r.a.createElement(U.a, {
+					return r.a.createElement(P.a, {
 						displayText: Z._("Show me less of this", null, {
 							hk: "4t8AKC"
 						}),
-						flatlistItem: P.a.Hide,
+						flatlistItem: U.a.Hide,
 						isLoggedIn: !!s,
 						isUserOp: !1,
 						onClick: t,
@@ -1871,4 +1871,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.ca6bd74a81d1a597c085.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RpanListingUnit.b6eaa30f57e85e90fc02.js.map

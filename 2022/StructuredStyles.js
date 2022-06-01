@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/StructuredStyles.fce78ead2369797374e1.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/StructuredStyles.d8202f792cdca4036e27.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["StructuredStyles"], {
 		"./node_modules/lodash/union.js": function(e, t, n) {
@@ -6895,8 +6895,8 @@
 			}
 			const b = Object(l.c)({
 					currentUser: d.k,
-					isNightMode: d.cb,
-					isPresenceUserPrefEnabled: d.U,
+					isNightMode: d.db,
+					isPresenceUserPrefEnabled: d.V,
 					shouldHideNSFW: d.F
 				}),
 				E = Object(i.b)(b);
@@ -8472,7 +8472,7 @@
 						includeUserProfile: a,
 						substring: r.rawString
 					})
-				}, e => Object(J.ob)(e) && Object(z.j)(e), (e, t, n) => {
+				}, e => Object(J.pb)(e) && Object(z.j)(e), (e, t, n) => {
 					const {
 						suggestedItems: a,
 						fallbackItems: r,
@@ -9286,4 +9286,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.fce78ead2369797374e1.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/StructuredStyles.d8202f792cdca4036e27.js.map

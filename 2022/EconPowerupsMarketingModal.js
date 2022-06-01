@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.8f9d4bc470a552162c2c.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.60e346d203fd99f64b4b.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -740,7 +740,7 @@
 				let {
 					space: t
 				} = e;
-				const r = Object(i.e)(l.cb),
+				const r = Object(i.e)(l.db),
 					a = t === n.MODAL,
 					d = t === n.INFEED_UNIT;
 				return c.a.createElement("div", {
@@ -1064,4 +1064,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.8f9d4bc470a552162c2c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.60e346d203fd99f64b4b.js.map

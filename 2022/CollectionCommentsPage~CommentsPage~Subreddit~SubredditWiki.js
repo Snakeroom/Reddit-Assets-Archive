@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.861ca09b52c0452d356d.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.c88b22b4d39efd84ee00.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki"], {
 		"./node_modules/lodash/random.js": function(e, t, r) {
@@ -864,7 +864,7 @@
 				let {
 					space: t
 				} = e;
-				const r = Object(d.e)(c.cb),
+				const r = Object(d.e)(c.db),
 					a = t === n.MODAL,
 					l = t === n.INFEED_UNIT;
 				return o.a.createElement("div", {
@@ -2480,7 +2480,7 @@
 				}, e.bottomButtonText)))),
 				S = Object(d.c)({
 					hideNSFWPref: v.F,
-					nightmode: v.cb
+					nightmode: v.db
 				}),
 				j = Object(a.b)(S)(e => i.a.createElement("div", {
 					className: Object(c.a)(k.a.communityItemContainer, {
@@ -2994,10 +2994,10 @@
 						n = t.redditStyle || Object(g.l)(e, {
 							subredditId: r
 						}),
-						s = Object(f.cb)(e);
+						s = Object(f.db)(e);
 					return n || s
 				},
-				nigtmode: f.cb,
+				nigtmode: f.db,
 				subredditId: u.n,
 				topPostVariant: h.d
 			}));
@@ -3177,7 +3177,7 @@
 				j = m.a.wrapped(o.a, "RawHTMLDisplay", _.a);
 			var N = Object(i.b)(() => Object(a.c)({
 					forceRedditStyle: x.l,
-					isNightmodeOn: w.cb
+					isNightmodeOn: w.db
 				}))(e => s.a.createElement(d.a, {
 					styles: e.widget.styles,
 					title: e.widget.shortName,
@@ -3383,7 +3383,7 @@
 				Oe = m.a.div("LinkContainer", fe.a),
 				Ce = Object(a.c)({
 					userIsBanned: he.eb,
-					userIsLoggedIn: w.P
+					userIsLoggedIn: w.Q
 				});
 			var Se = Object(i.b)(Ce)(e => {
 					const {
@@ -4205,4 +4205,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.861ca09b52c0452d356d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/CollectionCommentsPage~CommentsPage~Subreddit~SubredditWiki.c88b22b4d39efd84ee00.js.map

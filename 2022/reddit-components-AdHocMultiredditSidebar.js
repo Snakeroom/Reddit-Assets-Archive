@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.9db5c35227cf23fce797.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.30428c9450ad7cb978bb.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-AdHocMultiredditSidebar"], {
 		"./src/reddit/actions/multireddit/constants.ts": function(e, t, n) {
@@ -292,8 +292,8 @@
 			}
 			const E = Object(d.c)({
 					currentUser: c.k,
-					isNightMode: c.cb,
-					isPresenceUserPrefEnabled: c.U,
+					isNightMode: c.db,
+					isPresenceUserPrefEnabled: c.V,
 					shouldHideNSFW: c.F
 				}),
 				m = Object(a.b)(E);
@@ -433,4 +433,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.9db5c35227cf23fce797.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-AdHocMultiredditSidebar.30428c9450ad7cb978bb.js.map

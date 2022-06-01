@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.0cd4f5dec655da7e84bb.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconTopAwardersModal.8653f53f165b170ec40d.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconTopAwardersModal"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, r) {
@@ -551,7 +551,7 @@
 							await r(Object(d.o)(t.name))
 						}
 					})(), (async () => {
-						const n = Object(O.zb)(a, {
+						const n = Object(O.Ab)(a, {
 							userName: t
 						});
 						if (!n) return;
@@ -1286,7 +1286,7 @@
 					subredditId: t.subredditId,
 					username: t.username
 				}),
-				user: (e, t) => Object(I.zb)(e, {
+				user: (e, t) => Object(I.Ab)(e, {
 					userName: t.username
 				})
 			});
@@ -1588,7 +1588,7 @@
 			const Me = Object(o.c)({
 					activeTooltipId: h.a,
 					currentUser: I.k,
-					isLoggedIn: I.P,
+					isLoggedIn: I.Q,
 					hideNSFWPref: I.F,
 					moderatorPermissions: (e, t) => {
 						let {
@@ -1616,7 +1616,7 @@
 							minSize: 32
 						})
 					},
-					user: I.zb,
+					user: I.Ab,
 					userFlair: (e, t) => {
 						let {
 							subredditId: r
@@ -1642,7 +1642,7 @@
 						return !!a && Object(u.i)(e, a)
 					},
 					trophyCase: (e, t) => Object(f.r)(e, Object(f.m)(e, t.userName)),
-					isNightMode: I.cb,
+					isNightMode: I.db,
 					lastAuthorModNote: (e, t) => {
 						if (!t.contextId) return;
 						const r = Object(d.a)(t.contextId) ? Object(b.G)(e, {
@@ -2767,4 +2767,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.0cd4f5dec655da7e84bb.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconTopAwardersModal.8653f53f165b170ec40d.js.map

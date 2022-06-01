@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.a0b5b7ec9086f8976566.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.477cff912b8711023a2c.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePosts", "reddit-components-ContentGate"], {
 		"./src/chat/controls/Svg/index.m.less": function(e, t, n) {
@@ -155,11 +155,11 @@
 			const {
 				fbt: I
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), B = d.a.wrapped(v, "PrivateKey", D.a), R = d.a.div("ButtonsContainer", D.a), W = d.a.div("Container", D.a), A = d.a.div("ContainerExp", D.a), z = d.a.div("Description", D.a), F = d.a.div("PrivateSubredditDetails", D.a), H = d.a.div("PrivateSubredditDescription", D.a), U = d.a.h3("PrivateSubredditName", D.a), q = d.a.a("Link", D.a), M = d.a.wrapped(y.n, "LinkRouterButton", D.a), G = d.a.wrapped(y.m, "LinkButton", D.a), Y = d.a.wrapped(y.q, "SecondaryLinkRouterButton", D.a), Z = d.a.wrapped(y.p, "SecondaryLinkButton", D.a), K = d.a.wrapped(M, "GoHomeLinkButton", D.a), V = d.a.wrapped(b.a, "CreateCommunityButton", D.a), J = d.a.img("Image", D.a), Q = d.a.img("ImagePlaceholder", D.a), X = d.a.wrapped(M, "LeftLinkRouterButton", D.a), $ = d.a.wrapped(G, "LeftLinkButton", D.a), ee = d.a.wrapped(Z, "SecondaryLeftLinkButton", D.a), te = d.a.wrapped(Y, "SecondaryLeftLinkRouterButton", D.a), ne = d.a.h3("Title", D.a), ae = d.a.div("PageBody", D.a), re = d.a.div("InterstitialMessageWrapper", D.a), oe = Object(c.c)({
-				isLoggedIn: L.O,
+				isLoggedIn: L.P,
 				origin: P.j,
 				user: L.k,
 				isPrivateSubredditContributorRequestPending: e => (e => {
-					if (!Object(L.P)(e)) return !1;
+					if (!Object(L.Q)(e)) return !1;
 					const t = Object(j.d)(e);
 					if (!t) return !1;
 					const n = Object(L.f)(e, t);
@@ -538,8 +538,8 @@
 			const k = "create-community-button",
 				g = w.a.wrapped(d.c, "StyledTooltip", _.a),
 				C = Object(i.c)({
-					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.ob)(e),
-					userIsSuspended: b.W
+					userDoesNotHaveEnoughExpToCreateCommunity: e => !Object(b.pb)(e),
+					userIsSuspended: b.X
 				});
 			t.a = Object(s.b)(C, (e, t) => {
 				let {
@@ -2401,4 +2401,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.a0b5b7ec9086f8976566.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts.477cff912b8711023a2c.js.map

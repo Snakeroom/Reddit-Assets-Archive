@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RedesignChat.1a6a7d7777338f6e981b.js
-// Retrieved at 5/19/2022, 5:40:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RedesignChat.d794d7c248b1c88ca4f2.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RedesignChat"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -122,8 +122,8 @@
 				W = n("./src/chat/customMiddleware/lastSelectedChannel.ts"),
 				K = n("./src/chat/customMiddleware/loggedOutPreferencesSync.ts"),
 				Y = n("./src/chat/customMiddleware/sendbirdToken.ts"),
-				V = n("./src/chat/customMiddleware/settings.ts"),
-				Q = n("./src/chat/customMiddleware/title.ts"),
+				Q = n("./src/chat/customMiddleware/settings.ts"),
+				V = n("./src/chat/customMiddleware/title.ts"),
 				J = n("./src/chat/customMiddleware/tokenRefresher.ts"),
 				X = n("./src/chat/customMiddleware/tracking.ts"),
 				Z = n("./src/chat/customMiddleware/unreadMessageCount.ts"),
@@ -272,7 +272,7 @@
 						routes: ge.a,
 						apiContext: fe.apiContext,
 						gqlContext: pe.gqlContext
-					}), fe.middleware, J.a, V.a, Y.a, $.a, K.a, Object(X.a)(t), H.a, z.a, q.a, F.a, Z.a, W.a, Q.a, ee.a, G.a],
+					}), fe.middleware, J.a, Q.a, Y.a, $.a, K.a, Object(X.a)(t), H.a, z.a, q.a, F.a, Z.a, W.a, V.a, ee.a, G.a],
 					modifyInitialData: t => {
 						let {
 							initialData: n,
@@ -459,7 +459,7 @@
 				f = () => async (e, t) => {
 					const n = t(),
 						s = Object(c.g)(n, {});
-					if (!(Object(u.O)(n) || Object(u.P)(n)) || !s) return;
+					if (!(Object(u.P)(n) || Object(u.Q)(n)) || !s) return;
 					const a = Object(d.i)(n);
 					b(a, s), e(m({
 						hasUnreadMessages: !!a
@@ -646,4 +646,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.1a6a7d7777338f6e981b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RedesignChat.d794d7c248b1c88ca4f2.js.map

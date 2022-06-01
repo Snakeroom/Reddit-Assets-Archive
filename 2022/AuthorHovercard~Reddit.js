@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.7eb956e0cd7effc8446f.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.899fab213097ee1a1b1e.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["AuthorHovercard~Reddit"], {
 		"./src/lib/browser/isIncognito.ts": function(e, t, n) {
@@ -149,7 +149,7 @@
 				E = n("./src/reddit/selectors/user.ts");
 			let w = !1;
 			const C = async (e, t) => {
-				const n = Object(E.O)(e);
+				const n = Object(E.P)(e);
 				if (w) return;
 				if (w = !0, Object(m.a)(e) !== l.c.NotificationsSupported) return;
 				await Object(d.a)();
@@ -1739,9 +1739,9 @@
 						k = Object(r.useCallback)(() => {
 							h(async (e, t) => {
 								var n, r;
-								let a = Object(D.eb)(t());
+								let a = Object(D.fb)(t());
 								a.allIds.length || await e(Object(T.a)(U.a.Email));
-								const s = null === (r = null === (n = (a = Object(D.eb)(t())).byId) || void 0 === n ? void 0 : n.EMAIL_DIGEST) || void 0 === r ? void 0 : r.isEnabled;
+								const s = null === (r = null === (n = (a = Object(D.fb)(t())).byId) || void 0 === n ? void 0 : n.EMAIL_DIGEST) || void 0 === r ? void 0 : r.isEnabled;
 								_(s ? z.DONE : z.TURN_ON_DAYLY_DIGEST)
 							})
 						}, [h]),
@@ -1751,7 +1751,7 @@
 						N = Object(r.useCallback)(() => {
 							h(async (e, t) => {
 								const n = t();
-								Object(D.gb)(n).allIds.length || await e(Object(T.a)(U.a.Push)), Object(H.c)(t(), M) ? _(z.TURN_ON_PN_APP) : I()
+								Object(D.hb)(n).allIds.length || await e(Object(T.a)(U.a.Push)), Object(H.c)(t(), M) ? _(z.TURN_ON_PN_APP) : I()
 							})
 						}, [h, I]),
 						x = Object(r.useCallback)(() => {
@@ -3960,7 +3960,7 @@
 						subredditId: n,
 						username: r
 					} = t;
-					const a = Object(o.zb)(e, {
+					const a = Object(o.Ab)(e, {
 						userName: r
 					});
 					if (!a) return;
@@ -4053,4 +4053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.7eb956e0cd7effc8446f.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/AuthorHovercard~Reddit.899fab213097ee1a1b1e.js.map

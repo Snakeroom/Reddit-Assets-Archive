@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GivePremiumModal.720a7e2a9d2bdc1a5ce6.js
-// Retrieved at 5/18/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GivePremiumModal.0fbdfc771bf4f3547900.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GivePremiumModal", "givePremiumTrackers"], {
 		"./src/reddit/components/CoinBalance/index.m.less": function(e, t, n) {
@@ -128,8 +128,8 @@
 						text: c
 					}))
 				};
-			var M = n("./src/reddit/actions/gold/modals.ts"),
-				P = n("./src/reddit/components/CoinBalance/index.tsx"),
+			var P = n("./src/reddit/actions/gold/modals.ts"),
+				M = n("./src/reddit/components/CoinBalance/index.tsx"),
 				D = n("./src/reddit/components/ModalStyledComponents/index.tsx"),
 				R = n("./src/reddit/controls/CheckboxWithLabel/index.tsx"),
 				A = n("./src/reddit/controls/DropdownSelector/index.tsx"),
@@ -151,12 +151,12 @@
 			const W = 10,
 				H = Object(a.c)({
 					coinBalance: G.e,
-					isEmployee: G.M,
+					isEmployee: G.N,
 					isPending: I.b,
 					recipientName: I.d
 				}),
 				V = Object(c.b)(H, e => ({
-					closeModal: () => e(Object(M.b)()),
+					closeModal: () => e(Object(P.b)()),
 					onGivePremium: (t, n, s, o, i) => {
 						e(((e, t, n, s) => async (o, i, c) => {
 							let {
@@ -324,7 +324,7 @@
 						})
 					}))), i.a.createElement(D.g, null, i.a.createElement(U.a, {
 						className: l.a.coinCountSection
-					}, i.a.createElement(P.a, {
+					}, i.a.createElement(M.a, {
 						className: l.a.coinCount,
 						coinBalance: t
 					}), i.a.createElement("div", {
@@ -721,4 +721,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.720a7e2a9d2bdc1a5ce6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GivePremiumModal.0fbdfc771bf4f3547900.js.map

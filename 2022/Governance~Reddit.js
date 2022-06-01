@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4890e3dc78e59f476c76.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.0bbe12ddea06e7ab9f26.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -662,7 +662,7 @@
 						gqlRealtime2Context: r
 					} = n;
 					const s = t(),
-						a = Object(d.P)(s),
+						a = Object(d.Q)(s),
 						i = !!Object(c.b)(s),
 						{
 							expiresAt: u,
@@ -719,7 +719,7 @@
 				variables: d(t)
 			}), u = n("./node_modules/fbt/lib/FbtPublic.js"), l = n("./src/reddit/models/Toast/index.ts"), p = n("./node_modules/reselect/es/index.js"), b = n("./src/reddit/constants/experiments.ts"), f = n("./src/reddit/helpers/chooseVariant/index.ts"), h = n("./src/reddit/selectors/user.ts");
 			const y = Object(p.a)(e => Object(f.c)(e, {
-				experimentEligibilitySelector: h.P,
+				experimentEligibilitySelector: h.Q,
 				experimentName: b.Ub
 			}), e => e === b.sd);
 			var g = n("./src/reddit/actions/toaster.ts");
@@ -1947,15 +1947,15 @@
 				const n = t();
 				e(i.m({
 					title: o.b()
-				})), Object(m.P)(n) || await e(g.t())
+				})), Object(m.Q)(n) || await e(g.t())
 			}, j = () => async e => e(i.m({
 				title: o.b()
 			})), w = e => async (t, r) => {
 				const s = r();
 				t(i.m({
 					title: o.k()
-				})), Object(m.P)(s) || await t(g.t());
-				const a = Object(m.P)(s);
+				})), Object(m.Q)(s) || await t(g.t());
+				const a = Object(m.Q)(s);
 				if (e.queryParams.thanks && a) {
 					const e = await n.e("GoldPurchasePaymentActions").then(n.bind(null, "./src/reddit/actions/goldPurchaseModals/payment.ts")).then(e => e.paymentCompleted),
 						r = await n.e("GoldPurchasePaymentActions").then(n.bind(null, "./src/reddit/actions/goldPurchaseModals/premiumPurchaseModal.ts")).then(e => e.openPremiumPurchaseModal);
@@ -3971,7 +3971,7 @@
 						}
 						await t(Object(r.b)(`${n.path}`)), f ? f === p.xe.NewModule && t(Object(i.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
-						})) : (t(Object(c.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(D.a)(Object(_.g)()(A))), Object(E.b)(E.a.SubredditCreation), t(Object(P.f)(a, null !== (O = Object(T.ab)(A)) && void 0 !== O ? O : Object(S.i)(A)))
+						})) : (t(Object(c.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(D.a)(Object(_.g)()(A))), Object(E.b)(E.a.SubredditCreation), t(Object(P.f)(a, null !== (O = Object(T.bb)(A)) && void 0 !== O ? O : Object(S.i)(A)))
 					} else k.error && Object(D.a)(Object(_.h)(k.error.type, C)(A)), t(U({
 						subredditName: C,
 						error: k.error
@@ -4989,7 +4989,7 @@
 						nsfwSessionSetting: x,
 						refreshNsfwSessionSettingExpiryTime: L
 					} = Object(h.b)(),
-					U = Object(a.e)(O.jb);
+					U = Object(a.e)(O.kb);
 				Object(r.useEffect)(() => {
 					const e = {
 						displayQuery: f.searchQuery,
@@ -5306,7 +5306,7 @@
 						pageLayer: S
 					})),
 					A = Object(a.e)(e => Object(ue.a)(e)),
-					C = Object(a.e)(O.jb),
+					C = Object(a.e)(O.kb),
 					{
 						nsfwSessionSetting: R
 					} = Object(h.b)(),
@@ -5376,7 +5376,7 @@
 				} = e;
 				const f = Object(_.a)(),
 					h = Object(r.useMemo)(() => t.filter(e => e.isSubreddit), [t]),
-					y = Object(a.e)(O.jb),
+					y = Object(a.e)(O.kb),
 					g = Object(a.e)(K),
 					{
 						nsfwTypeaheadExpanded: m,
@@ -5700,7 +5700,7 @@
 				},
 				S = (e, t) => {
 					var n;
-					if (!Object(b.P)(e)) return !1;
+					if (!Object(b.Q)(e)) return !1;
 					if (null === (n = Object(h.b)(E)) || void 0 === n ? void 0 : n[t.postId]) return !1;
 					const r = Object(p.G)(e, t),
 						s = Object(p.U)(e, {
@@ -6851,7 +6851,7 @@
 				if (`${c}//${r}` === a.a.gatewayUrl) {
 					const r = {},
 						s = e.getState();
-					Object(f.jb)(s) && (r.allow_over18 = 1), Object(f.o)(s) && (r.gated_optin = 1), Object(f.mb)(s) && (r.quarantine_optin = 1), r.include = b(e.getState(), n, t), t.endpoint = Object(o.a)(t.endpoint, r)
+					Object(f.kb)(s) && (r.allow_over18 = 1), Object(f.o)(s) && (r.gated_optin = 1), Object(f.nb)(s) && (r.quarantine_optin = 1), r.include = b(e.getState(), n, t), t.endpoint = Object(o.a)(t.endpoint, r)
 				}
 			}
 		},
@@ -25962,7 +25962,7 @@
 				u = 6 * r.pb,
 				l = (e, t) => {
 					const n = Object(o.G)(e, t),
-						r = Object(c.O)(e);
+						r = Object(c.P)(e);
 					let d = !1;
 					const i = Object(c.k)(e);
 					if (i) {
@@ -26041,4 +26041,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4890e3dc78e59f476c76.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.0bbe12ddea06e7ab9f26.js.map

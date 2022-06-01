@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.11b85faf54c14ceb205c.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.369b5c428802f2b7b26a.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["GovernanceTransferPointsModal"], {
 		"./node_modules/lodash/uniqueId.js": function(e, t, n) {
@@ -1078,10 +1078,10 @@
 				s.length <= Ie.a ? (a(Ge.Searching), n(((e, t) => async (n, a, s) => {
 					let {
 						apiContext: r
-					} = s, o = a(), i = Object(Te.zb)(o, {
+					} = s, o = a(), i = Object(Te.Ab)(o, {
 						userName: e
 					});
-					if (!(i || (await n(Object(Oe.B)(e)), o = a(), i = Object(Te.zb)(o, {
+					if (!(i || (await n(Object(Oe.B)(e)), o = a(), i = Object(Te.Ab)(o, {
 							userName: e
 						})))) return {
 						userId: null,
@@ -2218,4 +2218,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.11b85faf54c14ceb205c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/GovernanceTransferPointsModal.369b5c428802f2b7b26a.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.e2ad942fe199b600ecd8.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-LargePost.021cbcb8b2e02b89cdb9.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-LargePost"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, n) {
@@ -2332,7 +2332,7 @@
 					flairStyleTemplate: ie.W,
 					isBlurredPreview: me.b,
 					isCurrentUserProfilePost: P.l,
-					isLoggedIn: k.P,
+					isLoggedIn: k.Q,
 					isActive: P.j,
 					showPromotedCTA: Oe.a,
 					moderatorPermissions: _.m,
@@ -3199,7 +3199,7 @@
 					J = H && Object(w.i)(H),
 					Z = Object(i.e)(e => {
 						if (!J) return !0;
-						const t = Object(j.Fb)(e, F.author || "");
+						const t = Object(j.Gb)(e, F.author || "");
 						return !t || t.enableFollowers
 					});
 				return s.a.createElement("div", {
@@ -5639,4 +5639,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.e2ad942fe199b600ecd8.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-LargePost.021cbcb8b2e02b89cdb9.js.map

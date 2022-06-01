@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/NftProfileUnit.10fca761281b718bc5e3.js
-// Retrieved at 6/1/2022, 11:50:04 AM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/NftProfileUnit.278b745d56e39a26431d.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["NftProfileUnit"], {
 		"./node_modules/classnames/index.js": function(t, e, n) {
@@ -222,7 +222,7 @@
 				} = t;
 				const n = function() {
 					const t = Object(s.e)(p),
-						e = Object(s.e)(f.cb),
+						e = Object(s.e)(f.db),
 						n = Object(a.a)();
 					h || (h = function(t, e, n) {
 						return {
@@ -1697,4 +1697,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.10fca761281b718bc5e3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/NftProfileUnit.278b745d56e39a26431d.js.map

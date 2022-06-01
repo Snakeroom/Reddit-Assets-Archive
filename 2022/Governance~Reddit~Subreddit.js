@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.4a20ad4941984fceb428.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.2385d812e035a3028022.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -1023,7 +1023,7 @@
 				N = Object(b.u)();
 			t.b = N(e => {
 				var t;
-				const n = Object(c.e)(I.cb);
+				const n = Object(c.e)(I.db);
 				let i, d, u;
 				if (e.subredditOrProfile) {
 					const {
@@ -1310,9 +1310,9 @@
 			const N = () => {},
 				C = Object(c.c)({
 					currentUser: x.k,
-					isNightMode: x.cb,
+					isNightMode: x.db,
 					shouldHideNSFW: x.F,
-					user: x.zb,
+					user: x.Ab,
 					isProfileAvatarChangeFixEnabled: g.a
 				}),
 				T = Object(s.b)(C);
@@ -3492,7 +3492,7 @@
 				a = n("./src/reddit/selectors/platform.ts"),
 				d = n("./src/reddit/selectors/user.ts");
 			const u = () => !0,
-				l = Object(r.a)(d.W, d.N, (e, t) => !(e || t)),
+				l = Object(r.a)(d.X, d.O, (e, t) => !(e || t)),
 				b = e => {
 					if (!l(e)) return;
 					const t = Object(s.c)(e, {
@@ -3551,7 +3551,7 @@
 					if (!Object(u.n)(e, {
 							subredditId: t
 						})) return;
-					if (Object(f.M)(e)) return I(e);
+					if (Object(f.N)(e)) return I(e);
 					const n = Object(b.I)(e, {
 						identifier: {
 							id: t,
@@ -3690,4 +3690,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.4a20ad4941984fceb428.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.2385d812e035a3028022.js.map

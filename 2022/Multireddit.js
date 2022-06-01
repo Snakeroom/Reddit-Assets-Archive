@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Multireddit.00ee6774d0b463efa4f5.js
-// Retrieved at 6/1/2022, 5:40:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Multireddit.4bc5a18af1e22a2f23fc.js
+// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Multireddit"], {
 		"./src/lib/forceHttps/index.ts": function(e, t, n) {
@@ -257,7 +257,7 @@
 			})), n.d(t, "a", (function() {
 				return W
 			})), n.d(t, "b", (function() {
-				return V
+				return G
 			}));
 			var r = n("./node_modules/fbt/lib/FbtPublic.js"),
 				o = n("./node_modules/lodash/pick.js"),
@@ -318,8 +318,8 @@
 			}
 			const L = Object(_.a)(x.b),
 				k = p.a.div("FlairWrapper", y.a),
-				U = p.a.wrapped(l.a, "CloseButton", y.a),
-				N = p.a.wrapped(Object(m.a)(e => {
+				N = p.a.wrapped(l.a, "CloseButton", y.a),
+				U = p.a.wrapped(Object(m.a)(e => {
 					let {
 						forceSmallEmojis: t,
 						theme: n,
@@ -379,7 +379,7 @@
 							backgroundColor: this.props.backgroundColor || Object(S.a)(this.props).flair,
 							color: `${B(this.props)}`
 						}
-					}, this.props.text, this.props.isSelected && a.a.createElement(U, {
+					}, this.props.text, this.props.isSelected && a.a.createElement(N, {
 						to: "./",
 						onClick: this.props.onCloseClick
 					}, a.a.createElement(g.a, {
@@ -412,7 +412,7 @@
 					const r = e.richtext.map((r, o) => {
 						if (r.e === I.c.Emoji) {
 							const s = r;
-							return t += s.a, n = !0, a.a.createElement(N, {
+							return t += s.a, n = !0, a.a.createElement(U, {
 								forceSmallEmojis: e.forceSmallEmojis,
 								backgroundImage: s.u,
 								key: o,
@@ -438,7 +438,7 @@
 							backgroundColor: e.backgroundColor || Object(S.a)(e).flair,
 							color: `${B(e)}`
 						}
-					}, r, e.isSelected && a.a.createElement(U, {
+					}, r, e.isSelected && a.a.createElement(N, {
 						to: "./",
 						onClick: e.onCloseClick
 					}, a.a.createElement(g.a, {
@@ -462,7 +462,7 @@
 				B = e => !e.textColor || e.textColor && !e.backgroundColor ? Object(S.a)(e).postFlairText : "transparent" === e.backgroundColor ? Object(O.a)(Object(S.a)(e).post, T.a.black, T.a.white) : e.textColor === I.e.Dark ? T.a.black : T.a.white,
 				W = p.a.wrapped(A, "TextFlair", y.a),
 				H = p.a.wrapped(P, "RichTextFlair", y.a),
-				Z = e => {
+				V = e => {
 					switch (e.type) {
 						case "spoiler":
 							return "#A4A7A8";
@@ -472,8 +472,8 @@
 							return Object(i.i)(.1, Object(S.a)(s()(e, "theme", "redditStyle", "data-redditstyle")).button)
 					}
 				},
-				G = p.a.wrapped(e => {
-					const t = Z(e),
+				Z = p.a.wrapped(e => {
+					const t = V(e),
 						n = a.a.createElement("span", {
 							className: e.className,
 							style: {
@@ -487,7 +487,7 @@
 					})
 				}, "MetaFlair", y.a);
 
-			function V(e) {
+			function G(e) {
 				const {
 					className: t,
 					disabled: n = !1,
@@ -551,7 +551,7 @@
 						});
 					case I.f.Nsfw:
 					case I.f.Spoiler:
-						return a.a.createElement(G, {
+						return a.a.createElement(Z, {
 							className: t,
 							text: o.text,
 							type: o.type
@@ -966,8 +966,8 @@
 			}
 			const E = Object(c.c)({
 					currentUser: l.k,
-					isNightMode: l.cb,
-					isPresenceUserPrefEnabled: l.U,
+					isNightMode: l.db,
+					isPresenceUserPrefEnabled: l.V,
 					shouldHideNSFW: l.F
 				}),
 				h = Object(i.b)(E);
@@ -1332,4 +1332,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.00ee6774d0b463efa4f5.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Multireddit.4bc5a18af1e22a2f23fc.js.map
