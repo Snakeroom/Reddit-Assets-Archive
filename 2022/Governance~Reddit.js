@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit.4fa709e3b802435d45d6.js
-// Retrieved at 6/1/2022, 7:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit.2b2db411ced6ac391667.js
+// Retrieved at 6/2/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit"], {
 		"./assets/fonts/NotoMono/font.less": function(e, t, n) {},
@@ -3078,7 +3078,7 @@
 			const w = e => _.d.reCaptchaEnterprise(e) && !Object(j.d)(e),
 				T = e => !!Object(S.c)(e, {
 					experimentEligibilitySelector: Object(I.d)(Object(I.b)(...a.d)),
-					experimentName: b.We
+					experimentName: b.Xe
 				}),
 				D = Object(r.b)("LOAD_RECAPTCHA_ENTERPRISE"),
 				P = () => u(e => p()([w, T, e => e.tracking.reCaptchaEnterprise.load === r.a.New], t => t(e)))(async e => {
@@ -3969,7 +3969,7 @@
 								postFieldValidationPending: Promise.resolve()
 							})), Object(l.b)(N)
 						}
-						await t(Object(r.b)(`${n.path}`)), f ? f === p.ye.NewModule && t(Object(i.h)({
+						await t(Object(r.b)(`${n.path}`)), f ? f === p.ze.NewModule && t(Object(i.h)({
 							tooltipId: u.MOD_WELCOME_TOOLTIP_ID
 						})) : (t(Object(c.h)(b.a.POST_FLOW_UPSELL_MODAL_ID)), Object(D.a)(Object(_.g)()(A))), Object(E.b)(E.a.SubredditCreation), t(Object(P.f)(a, null !== (O = Object(T.bb)(A)) && void 0 !== O ? O : Object(S.i)(A)))
 					} else k.error && Object(D.a)(Object(_.h)(k.error.type, C)(A)), t(U({
@@ -6748,6 +6748,16 @@
 			t.a = (e, t) => {
 				const n = o()(e, t, s.a);
 				return !(!n || 0 !== n.length)
+			}
+		},
+		"./src/reddit/helpers/isRobotIndexableMeta.ts": function(e, t, n) {
+			"use strict";
+			n.d(t, "a", (function() {
+				return r
+			}));
+			const r = (e, t) => {
+				const n = e && e[t];
+				return !n || n.isRobotIndexable
 			}
 		},
 		"./src/reddit/helpers/loadThirdPartyScript.ts": function(e, t, n) {
@@ -15257,6 +15267,7 @@
 				}),
 				Ml = n("./node_modules/history/esm/history.js"),
 				Gl = n("./src/reddit/constants/history.ts");
+			n("./src/reddit/helpers/isRobotIndexableMeta.ts");
 			const Fl = {
 					allowNavigationCallback: null,
 					currentPage: null,
@@ -26042,4 +26053,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.4fa709e3b802435d45d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit.2b2db411ced6ac391667.js.map
