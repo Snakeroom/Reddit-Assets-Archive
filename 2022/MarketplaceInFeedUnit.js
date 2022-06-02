@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.97854b1500a70b787c97.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.2c34d70c101e76a31e23.js
+// Retrieved at 6/2/2022, 1:10:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["MarketplaceInFeedUnit"], {
 		"./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx": function(e, t, n) {
@@ -7,9 +7,9 @@
 			n.d(t, "a", (function() {
 				return u
 			}));
-			var c = n("./node_modules/@reddit/crypto/react/config/index.es.js"),
-				r = n("./node_modules/react/index.js"),
-				o = n.n(r),
+			var r = n("./node_modules/@reddit/crypto/react/config/index.es.js"),
+				c = n("./node_modules/react/index.js"),
+				o = n.n(c),
 				a = n("./node_modules/react-redux/es/index.js"),
 				s = n("./src/reddit/hooks/useTracking.ts"),
 				i = n("./src/reddit/selectors/telemetry.ts"),
@@ -60,7 +60,7 @@
 					}(e, t, n));
 					return m
 				}();
-				return o.a.createElement(c.a, {
+				return o.a.createElement(r.a, {
 					value: n
 				}, t)
 			};
@@ -86,26 +86,27 @@
 		"./src/reddit/components/Econ/Marketplace/InFeedUnit/index.tsx": function(e, t, n) {
 			"use strict";
 			n.r(t), n.d(t, "MarketplaceInFeedUnit", (function() {
-				return v
+				return I
 			}));
-			var c = n("./src/lib/classNames/index.ts"),
-				r = n("./node_modules/react/index.js"),
-				o = n.n(r),
-				a = n("./node_modules/react-redux/es/index.js"),
-				s = n("./node_modules/@reddit/crypto/react/nft-claim/index.es.js"),
-				i = n("./src/reddit/actions/modal.ts"),
-				l = n("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
-				d = n("./src/reddit/components/Econ/Marketplace/ClaimModal/async.tsx"),
-				u = n("./src/reddit/constants/modals.ts"),
-				m = n("./src/reddit/constants/postLayout.ts"),
-				p = n("./src/reddit/helpers/trackers/marketplace/claims.ts"),
-				f = n("./src/reddit/hooks/useLocalStorage.ts"),
-				k = n("./src/reddit/hooks/usePreloadModal.ts"),
-				_ = n("./src/reddit/hooks/useTracking.ts"),
-				b = n("./src/reddit/selectors/gold/marketplace/claimFlow.ts"),
-				O = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
-				j = n("./src/reddit/components/Econ/Marketplace/InFeedUnit/confirmDismissModalStyles.m.less"),
-				x = n.n(j);
+			var r = n("./node_modules/@researchgate/react-intersection-observer/lib/es/index.js"),
+				c = n("./src/lib/classNames/index.ts"),
+				o = n("./node_modules/react/index.js"),
+				a = n.n(o),
+				s = n("./node_modules/react-redux/es/index.js"),
+				i = n("./node_modules/@reddit/crypto/react/nft-claim/index.es.js"),
+				l = n("./src/reddit/actions/modal.ts"),
+				d = n("./src/reddit/components/Crypto/CryptoComponentsConfigProvider.tsx"),
+				u = n("./src/reddit/components/Econ/Marketplace/ClaimModal/async.tsx"),
+				m = n("./src/reddit/constants/modals.ts"),
+				p = n("./src/reddit/constants/postLayout.ts"),
+				f = n("./src/reddit/helpers/trackers/marketplace/claims.ts"),
+				k = n("./src/reddit/hooks/useLocalStorage.ts"),
+				_ = n("./src/reddit/hooks/usePreloadModal.ts"),
+				b = n("./src/reddit/hooks/useTracking.ts"),
+				O = n("./src/reddit/selectors/gold/marketplace/claimFlow.ts"),
+				j = n("./src/reddit/components/ConfirmUserActionModal/index.tsx"),
+				h = n("./src/reddit/components/Econ/Marketplace/InFeedUnit/confirmDismissModalStyles.m.less"),
+				x = n.n(h);
 			const {
 				fbt: C
 			} = n("./node_modules/fbt/lib/FbtPublic.js"), E = e => {
@@ -113,14 +114,14 @@
 					onDismiss: t,
 					onGoBack: n
 				} = e;
-				return o.a.createElement(O.a, {
+				return a.a.createElement(j.a, {
 					onConfirm: n,
 					onCancel: t,
 					onClose: n,
 					headerText: C._("Are you sure? This is your only chance to collect this avatar.", null, {
 						hk: "237ii3"
 					}),
-					modalText: C._("{=WARNING:} You won't have another opportunity to collect your free avatar. Seriously.", [C._param("=WARNING:", o.a.createElement("span", {
+					modalText: C._("{=WARNING:} You won't have another opportunity to collect your free avatar. Seriously.", [C._param("=WARNING:", a.a.createElement("span", {
 						className: x.a.warning
 					}, C._("WARNING:", null, {
 						hk: "2mCuMr"
@@ -136,54 +137,60 @@
 					withOverlay: !0
 				})
 			};
-			var h = n("./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less"),
-				g = n.n(h);
-			const v = e => {
+			var g = n("./src/reddit/components/Econ/Marketplace/InFeedUnit/index.m.less"),
+				v = n.n(g);
+			const I = e => {
 				let {
 					layout: t
 				} = e;
-				const n = Object(a.d)(),
-					O = Object(_.a)(),
-					j = Object(a.e)(b.a),
-					[x, C] = Object(r.useState)(!1);
-				Object(k.a)(d.a);
-				const [h, v] = Object(f.a)("marketplaceClaimInFeedUnitDismissed", !1), [I, y] = Object(f.a)("marketplaceClaimInFeedUnitLoadCount", 0), A = Object(r.useRef)(I), M = A.current % 2 == 0;
-				if (Object(r.useEffect)(() => {
-						M && O(Object(p.d)()), h || y(A.current + 1)
-					}, [y, A, O, M, h]), !(null == j ? void 0 : j.id) || h || !M) return null;
-				const N = t !== m.g.Large;
-				return o.a.createElement(o.a.Fragment, null, o.a.createElement("div", {
+				const n = Object(s.d)(),
+					j = Object(b.a)(),
+					h = Object(s.e)(O.a),
+					[x, C] = Object(o.useState)(!1),
+					[g, I] = Object(o.useState)(!1);
+				Object(_.a)(u.a);
+				const [y, A] = Object(k.a)("marketplaceClaimInFeedUnitDismissed", !1), [M, N] = Object(k.a)("marketplaceClaimInFeedUnitLoadCount", 0), L = Object(o.useRef)(M), F = L.current % 2 == 0;
+				if (Object(o.useEffect)(() => {
+						y || N(L.current + 1)
+					}, [N, L, j, F, y]), !(null == h ? void 0 : h.id) || y || !F) return null;
+				const w = t !== p.g.Large;
+				return a.a.createElement(a.a.Fragment, null, a.a.createElement(r.a, {
+					onChange: e => {
+						g || e.intersectionRatio < .75 || (j(Object(f.d)()), I(!0))
+					},
+					threshold: .75
+				}, a.a.createElement("div", {
 					"data-testid": "marketplace-claim-infeed-unit",
-					className: Object(c.a)(g.a.container, {
-						[g.a.isNotLarge]: N
+					className: Object(c.a)(v.a.container, {
+						[v.a.isNotLarge]: w
 					})
-				}, o.a.createElement(l.a, null, o.a.createElement(s.a, {
-					className: Object(c.a)(g.a.feedUnit, {
-						[g.a.isNotLarge]: N
+				}, a.a.createElement(d.a, null, a.a.createElement(i.a, {
+					className: Object(c.a)(v.a.feedUnit, {
+						[v.a.isNotLarge]: w
 					}),
 					onClickCta: () => {
-						O(Object(p.b)()), n(Object(i.h)(u.a.ECON_MARKETPLACE_CLAIM, {
-							claimId: j.id
+						j(Object(f.b)()), n(Object(l.h)(m.a.ECON_MARKETPLACE_CLAIM, {
+							claimId: h.id
 						}))
 					},
 					onClose: () => C(!0),
-					title: j.title,
-					description: j.description,
-					ctaText: j.buttonCtaText,
-					isNotCardLayout: N
-				}))), x && o.a.createElement(E, {
+					title: h.title,
+					description: h.description,
+					ctaText: h.buttonCtaText,
+					isNotCardLayout: w
+				})))), x && a.a.createElement(E, {
 					onGoBack: () => C(!1),
 					onDismiss: () => {
-						O(Object(p.c)()), v(!0)
+						j(Object(f.c)()), A(!0)
 					}
 				}))
 			};
-			t.default = v
+			t.default = I
 		},
 		"./src/reddit/helpers/trackers/marketplace/claims.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "d", (function() {
-				return r
+				return c
 			})), n.d(t, "b", (function() {
 				return o
 			})), n.d(t, "c", (function() {
@@ -193,21 +200,21 @@
 			})), n.d(t, "e", (function() {
 				return i
 			}));
-			var c = n("./src/reddit/selectors/telemetry.ts");
-			const r = () => e => ({
-					...Object(c.n)(e),
+			var r = n("./src/reddit/selectors/telemetry.ts");
+			const c = () => e => ({
+					...Object(r.n)(e),
 					source: "marketplace",
 					action: "view",
 					noun: "claim_post_unit"
 				}),
 				o = () => e => ({
-					...Object(c.n)(e),
+					...Object(r.n)(e),
 					source: "marketplace",
 					action: "click",
 					noun: "claim_post_unit"
 				}),
 				a = () => e => ({
-					...Object(c.n)(e),
+					...Object(r.n)(e),
 					source: "marketplace",
 					action: "close",
 					noun: "claim_post_unit"
@@ -217,7 +224,7 @@
 				e.Profile = "profile", e.Hovercard = "hovercard"
 			}(s || (s = {}));
 			const i = e => t => {
-				const n = Object(c.n)(t);
+				const n = Object(r.n)(t);
 				return {
 					...n,
 					source: "marketplace",
@@ -234,16 +241,16 @@
 		"./src/reddit/hooks/usePreloadModal.ts": function(e, t, n) {
 			"use strict";
 			n.d(t, "a", (function() {
-				return r
+				return c
 			}));
-			var c = n("./node_modules/react/index.js");
+			var r = n("./node_modules/react/index.js");
 
-			function r(e) {
-				Object(c.useEffect)(() => {
+			function c(e) {
+				Object(r.useEffect)(() => {
 					e()
 				}, [e])
 			}
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.97854b1500a70b787c97.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/MarketplaceInFeedUnit.2c34d70c101e76a31e23.js.map
