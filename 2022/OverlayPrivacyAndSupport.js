@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/OverlayPrivacyAndSupport.e100b118be7091c1e6f0.js
-// Retrieved at 3/28/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/OverlayPrivacyAndSupport.47c5edfc27c061442cf2.js
+// Retrieved at 6/2/2022, 10:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["OverlayPrivacyAndSupport"], {
 		"./src/chat/components/OverlayPrivacyAndSupport/index.m.less": function(e, t, a) {
@@ -43,8 +43,8 @@
 				m = a("./src/chat/actions/sendbird/index.ts"),
 				u = a("./src/chat/actions/user.ts"),
 				p = a("./src/chat/actions/whiteList/index.ts"),
-				x = a("./src/chat/components/OverlayNav/index.tsx"),
-				b = a("./src/chat/components/Scroller/index.tsx"),
+				b = a("./src/chat/components/OverlayNav/index.tsx"),
+				x = a("./src/chat/components/Scroller/index.tsx"),
 				f = a("./src/chat/components/SearchBar/index.tsx"),
 				_ = a("./src/chat/components/SelectableUser/index.tsx"),
 				S = a("./src/chat/controls/Dropdown/Row.tsx"),
@@ -52,8 +52,8 @@
 				y = a("./src/chat/controls/Settings/SectionItem/index.tsx"),
 				g = a("./src/chat/controls/Settings/SectionTitle/index.tsx"),
 				j = a("./src/chat/controls/TooltipHooked/TooltipConfig.ts"),
-				N = a("./src/chat/controls/TooltipHooked/TooltipHooked.tsx"),
-				O = a("./src/chat/icons/svgs/CaretDown/index.tsx"),
+				O = a("./src/chat/controls/TooltipHooked/TooltipHooked.tsx"),
+				N = a("./src/chat/icons/svgs/CaretDown/index.tsx"),
 				v = a("./src/chat/models/InvitePolicy/index.ts"),
 				I = a("./src/chat/selectors/contacts.ts"),
 				w = a("./src/chat/selectors/user.ts"),
@@ -94,7 +94,7 @@
 				return c.a.createElement(E.a, {
 					isSettings: !0,
 					innerContent: !0
-				}, c.a.createElement(x.a, {
+				}, c.a.createElement(b.a, {
 					showMenu: !0,
 					title: n.fbt._("Privacy & support", null, {
 						hk: "1yDy8"
@@ -121,9 +121,9 @@
 					className: B.a.OptionValue
 				}, Object(v.c)(D), c.a.createElement("span", {
 					ref: P.target.ref
-				}, c.a.createElement(O.a, {
+				}, c.a.createElement(N.a, {
 					className: B.a.OptionValueIcon
-				})))), c.a.createElement(N.default, {
+				})))), c.a.createElement(O.default, {
 					arrowProps: P.arrowProps,
 					popperProps: P.popperProps,
 					visible: P.visible,
@@ -136,7 +136,7 @@
 					id: "DROPDOWN_ID"
 				}, v.d.map(t => c.a.createElement(S.a, {
 					key: t,
-					displayText: t,
+					displayText: Object(v.c)(t),
 					onClick: () => (t => {
 						P.hide(), e(Object(d.d)(t))
 					})(t),
@@ -176,7 +176,7 @@
 					className: B.a.Error
 				}, n.fbt._("User doesn't exist", null, {
 					hk: "2nKv7P"
-				})), c.a.createElement(b.a, {
+				})), c.a.createElement(x.a, {
 					className: B.a.Scroller
 				}, (() => t ? L.filter(e => F(e.name).includes(F(t)) && !e.isBlocked).sort(e => e.name === t ? -1 : 0) : L)().map(t => c.a.createElement("div", {
 					className: B.a.ListItem,
@@ -234,7 +234,7 @@
 					return e
 				}).apply(this, arguments)
 			}
-			var x = e => o.a.createElement(u.a, p({}, e, {
+			var b = e => o.a.createElement(u.a, p({}, e, {
 					viewBox: "0 0 20 20"
 				}), o.a.createElement("rect", {
 					x: "1",
@@ -305,7 +305,7 @@
 					height: "1.25",
 					transform: "translate(3.338 13.658) rotate(-59.989)"
 				})),
-				b = a("./src/chat/icons/svgs/Search/index.tsx"),
+				x = a("./src/chat/icons/svgs/Search/index.tsx"),
 				f = a("./src/chat/components/SearchBar/index.m.less"),
 				_ = a.n(f),
 				S = a("./src/lib/combineRefs/index.tsx");
@@ -384,9 +384,9 @@
 					return o.a.createElement(h.a, {
 						autoScrollBottom: !0,
 						className: Object(i.a)(_.a.SearchBarWrapper, r)
-					}, s.length ? null : e ? o.a.createElement(x, {
+					}, s.length ? null : e ? o.a.createElement(b, {
 						className: _.a.LoadIcon
-					}) : o.a.createElement(b.a, {
+					}) : o.a.createElement(x.a, {
 						className: _.a.SearchIcon
 					}), o.a.createElement(y, null, s && s.length > 0 && s.map((e, t) => o.a.createElement(E, {
 						key: `selected-contact-${t}`,
@@ -549,4 +549,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayPrivacyAndSupport.e100b118be7091c1e6f0.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/OverlayPrivacyAndSupport.47c5edfc27c061442cf2.js.map
