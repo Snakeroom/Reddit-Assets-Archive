@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a7b7e9a21a26311ec69c.js
-// Retrieved at 6/1/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/FramedGild~GildModal.6bce41d14c2caf482380.js
+// Retrieved at 6/2/2022, 11:40:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["FramedGild~GildModal", "gildActions"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -2002,7 +2002,7 @@
 				d = r("./src/lib/opener/index.ts"),
 				l = r("./src/reddit/helpers/isPost.ts");
 			var u = (e, t) => {
-					return Object(l.a)(t.id) ? e.filter(e => !(e => e.some(e => e.startsWith("econ:transferable:econ:render:")))(e.award.tags || [])) : e
+					return Object(l.a)(t) ? e.filter(e => !(e => e.some(e => e.startsWith("econ:transferable:econ:render:")))(e.award.tags || [])) : e
 				},
 				m = r("./src/reddit/helpers/correlationIdTracker.ts"),
 				p = r("./src/reddit/helpers/localStorage/index.ts"),
@@ -2750,13 +2750,14 @@
 							subredditId: n
 						} = t;
 						const s = ze(e, {
-							thingId: r,
-							subredditId: n
-						});
-						return s ? Object(P.i)(e, {
-							subredditId: s,
-							thingId: r
-						}) : []
+								thingId: r,
+								subredditId: n
+							}),
+							a = s ? Object(P.i)(e, {
+								subredditId: s,
+								thingId: r
+							}) : [];
+						return u(a, r)
 					},
 					awardIcons: (e, t) => {
 						let {
@@ -2874,25 +2875,23 @@
 					}
 				}), e => {
 					const {
-						awardings: t,
-						isEmployee: r,
-						postOrComment: n,
-						selectedAward: s,
-						subredditCoins: a,
-						userCoins: o,
-						isChatDisabled: i
+						isEmployee: t,
+						postOrComment: r,
+						selectedAward: n,
+						subredditCoins: s,
+						userCoins: a,
+						isChatDisabled: o
 					} = e, {
-						awardType: c,
-						coinPrice: d,
-						pennyPrice: l
-					} = s, m = c === h.f.Moderator, p = !!l || ((m ? a : o) || 0) < d && !(r && !m), b = n && n.media && "rpan" === n.media.type, f = n ? u(t, n) : t;
+						awardType: i,
+						coinPrice: c,
+						pennyPrice: d
+					} = n, l = i === h.f.Moderator, u = !!d || ((l ? s : a) || 0) < c && !(t && !l), m = r && r.media && "rpan" === r.media.type;
 					return {
 						...e,
-						awardings: f,
-						needPayment: p,
-						cost: l || d,
-						isRpanPost: !!b,
-						isChatDisabled: !!b && i
+						needPayment: u,
+						cost: d || c,
+						isRpanPost: !!m,
+						isChatDisabled: !!m && o
 					}
 				});
 			class Ye extends s.a.Component {
@@ -5953,4 +5952,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.a7b7e9a21a26311ec69c.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/FramedGild~GildModal.6bce41d14c2caf482380.js.map
