@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.220714bb54a64d4a9936.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.9486e96b873396d0f15a.js
+// Retrieved at 6/2/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-Econ-PowerupsInFeedUnit-index"], {
 		"./src/reddit/actions/snoovatar.ts": function(e, t, a) {
@@ -1264,32 +1264,33 @@
 				if (!e) return d;
 				const t = d;
 				return e.forEach(e => {
+					var a;
 					const {
-						startsAt: a,
-						endsAt: s,
-						webAssetUrls: r,
-						tags: o
-					} = e, n = a && new Date(a) <= new Date, i = !!s && new Date(s) < new Date, c = !!n && !i, d = o.includes(_);
-					if (o && o.includes(l) && !d) {
+						startsAt: s,
+						endsAt: r,
+						webAssetUrls: o,
+						tags: n
+					} = e, i = s && new Date(s) <= new Date, c = !!r && new Date(r) < new Date, d = !!i && !c, m = (n || []).includes(_);
+					if (n && n.includes(l) && !m) {
 						const {
 							text: a,
 							id: s
-						} = e, n = r || null, i = p(o);
+						} = e, r = o || null, i = p(n);
 						t && (t.quickCreateV1 = {
 							...i,
 							id: s,
 							text: a,
-							active: c && !!n,
-							webAssetUrls: n
+							active: d && !!r,
+							webAssetUrls: r
 						})
 					}
-					if (o && o.includes(u) && !d) {
-						const e = r || null,
-							a = o.find(e => e.startsWith("feature:") && e.includes("web")) || null;
+					if (n && n.includes(u) && !m) {
+						const e = o || null,
+							s = (null === (a = n.find(e => e.startsWith("feature:") && e.includes("web"))) || void 0 === a ? void 0 : a.split("feature:")[1]) || null;
 						t && (t.marketingEvent = {
-							active: c && !!e,
+							active: d && !!e,
 							assetUrls: e,
-							experimentRequired: a
+							experimentRequired: s
 						})
 					}
 				}), t
@@ -1395,4 +1396,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.220714bb54a64d4a9936.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-Econ-PowerupsInFeedUnit-index.9486e96b873396d0f15a.js.map

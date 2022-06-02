@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.942622ad69673cd92b3b.js
-// Retrieved at 6/2/2022, 12:20:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.fc594c6cf71dfaf56f04.js
+// Retrieved at 6/2/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["reddit-components-SidebarNativeAd"], {
 		"./node_modules/bowser/src/bowser.js": function(e, t, n) {
@@ -3420,32 +3420,33 @@
 				if (!e) return d;
 				const t = d;
 				return e.forEach(e => {
+					var n;
 					const {
-						startsAt: n,
-						endsAt: r,
-						webAssetUrls: o,
-						tags: s
-					} = e, a = n && new Date(n) <= new Date, i = !!r && new Date(r) < new Date, c = !!a && !i, d = s.includes(m);
-					if (s && s.includes(l) && !d) {
+						startsAt: r,
+						endsAt: o,
+						webAssetUrls: s,
+						tags: a
+					} = e, i = r && new Date(r) <= new Date, c = !!o && new Date(o) < new Date, d = !!i && !c, f = (a || []).includes(m);
+					if (a && a.includes(l) && !f) {
 						const {
 							text: n,
 							id: r
-						} = e, a = o || null, i = p(s);
+						} = e, o = s || null, i = p(a);
 						t && (t.quickCreateV1 = {
 							...i,
 							id: r,
 							text: n,
-							active: c && !!a,
-							webAssetUrls: a
+							active: d && !!o,
+							webAssetUrls: o
 						})
 					}
-					if (s && s.includes(u) && !d) {
-						const e = o || null,
-							n = s.find(e => e.startsWith("feature:") && e.includes("web")) || null;
+					if (a && a.includes(u) && !f) {
+						const e = s || null,
+							r = (null === (n = a.find(e => e.startsWith("feature:") && e.includes("web"))) || void 0 === n ? void 0 : n.split("feature:")[1]) || null;
 						t && (t.marketingEvent = {
-							active: c && !!e,
+							active: d && !!e,
 							assetUrls: e,
-							experimentRequired: n
+							experimentRequired: r
 						})
 					}
 				}), t
@@ -5893,4 +5894,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.942622ad69673cd92b3b.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/reddit-components-SidebarNativeAd.fc594c6cf71dfaf56f04.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PostCreation.d56f179d551a1b95d9d6.js
-// Retrieved at 6/2/2022, 3:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PostCreation.6cbc599264486893dcc9.js
+// Retrieved at 6/2/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PostCreation", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -26281,32 +26281,33 @@
 				if (!e) return d;
 				const t = d;
 				return e.forEach(e => {
+					var n;
 					const {
-						startsAt: n,
-						endsAt: o,
-						webAssetUrls: r,
-						tags: s
-					} = e, a = n && new Date(n) <= new Date, i = !!o && new Date(o) < new Date, c = !!a && !i, d = s.includes(m);
-					if (s && s.includes(l) && !d) {
+						startsAt: o,
+						endsAt: r,
+						webAssetUrls: s,
+						tags: a
+					} = e, i = o && new Date(o) <= new Date, c = !!r && new Date(r) < new Date, d = !!i && !c, h = (a || []).includes(m);
+					if (a && a.includes(l) && !h) {
 						const {
 							text: n,
 							id: o
-						} = e, a = r || null, i = p(s);
+						} = e, r = s || null, i = p(a);
 						t && (t.quickCreateV1 = {
 							...i,
 							id: o,
 							text: n,
-							active: c && !!a,
-							webAssetUrls: a
+							active: d && !!r,
+							webAssetUrls: r
 						})
 					}
-					if (s && s.includes(u) && !d) {
-						const e = r || null,
-							n = s.find(e => e.startsWith("feature:") && e.includes("web")) || null;
+					if (a && a.includes(u) && !h) {
+						const e = s || null,
+							o = (null === (n = a.find(e => e.startsWith("feature:") && e.includes("web"))) || void 0 === n ? void 0 : n.split("feature:")[1]) || null;
 						t && (t.marketingEvent = {
-							active: c && !!e,
+							active: d && !!e,
 							assetUrls: e,
-							experimentRequired: n
+							experimentRequired: o
 						})
 					}
 				}), t
@@ -29414,4 +29415,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.d56f179d551a1b95d9d6.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PostCreation.6cbc599264486893dcc9.js.map

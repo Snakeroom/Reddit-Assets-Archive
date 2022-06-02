@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.7be6ac3fa57f17d85912.js
-// Retrieved at 6/2/2022, 3:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.ff1ba1c187e27dc46739.js
+// Retrieved at 6/2/2022, 6:50:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3"], {
 		"./src/lib/constants/specialMembership.ts": function(e, t, n) {
@@ -2130,32 +2130,33 @@
 				if (!e) return d;
 				const t = d;
 				return e.forEach(e => {
+					var n;
 					const {
-						startsAt: n,
-						endsAt: r,
-						webAssetUrls: s,
-						tags: o
-					} = e, i = n && new Date(n) <= new Date, c = !!r && new Date(r) < new Date, a = !!i && !c, d = o.includes(m);
-					if (o && o.includes(u) && !d) {
+						startsAt: r,
+						endsAt: s,
+						webAssetUrls: o,
+						tags: i
+					} = e, c = r && new Date(r) <= new Date, a = !!s && new Date(s) < new Date, d = !!c && !a, b = (i || []).includes(m);
+					if (i && i.includes(u) && !b) {
 						const {
 							text: n,
 							id: r
-						} = e, i = s || null, c = p(o);
+						} = e, s = o || null, c = p(i);
 						t && (t.quickCreateV1 = {
 							...c,
 							id: r,
 							text: n,
-							active: a && !!i,
-							webAssetUrls: i
+							active: d && !!s,
+							webAssetUrls: s
 						})
 					}
-					if (o && o.includes(l) && !d) {
-						const e = s || null,
-							n = o.find(e => e.startsWith("feature:") && e.includes("web")) || null;
+					if (i && i.includes(l) && !b) {
+						const e = o || null,
+							r = (null === (n = i.find(e => e.startsWith("feature:") && e.includes("web"))) || void 0 === n ? void 0 : n.split("feature:")[1]) || null;
 						t && (t.marketingEvent = {
-							active: a && !!e,
+							active: d && !!e,
 							assetUrls: e,
-							experimentRequired: n
+							experimentRequired: r
 						})
 					}
 				}), t
@@ -2631,4 +2632,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.7be6ac3fa57f17d85912.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~reddit-components-ClassicPost~reddit-components-CompactPost~reddit-components-LargePost~reddi~90fdacc3.ff1ba1c187e27dc46739.js.map
