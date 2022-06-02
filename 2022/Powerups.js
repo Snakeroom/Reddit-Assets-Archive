@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Powerups.83bfdfbe54a65eddd80d.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Powerups.6764eb4e4b24fe97c933.js
+// Retrieved at 6/2/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Powerups"], {
 		"./node_modules/lodash/_arraySampleSize.js": function(e, t, a) {
@@ -1613,11 +1613,12 @@
 				}, o.a.createElement("picture", {
 					className: g.a.powerupsMarketingImage
 				}, o.a.createElement("source", {
-					srcSet: `${n.a.assetPath}/img/powerups/powerups-rangers.webp`,
-					type: "image/webp"
-				}), o.a.createElement("source", {
+					media: "(prefers-reduced-motion: reduce)",
 					srcSet: `${n.a.assetPath}/img/powerups/powerups-rangers-static.png`,
 					type: "image/png"
+				}), o.a.createElement("source", {
+					srcSet: `${n.a.assetPath}/img/powerups/powerups-rangers.webp`,
+					type: "image/webp"
 				}), o.a.createElement("img", {
 					alt: b._("Powerups heroes", null, {
 						hk: "3kHkNJ"
@@ -2351,4 +2352,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.83bfdfbe54a65eddd80d.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Powerups.6764eb4e4b24fe97c933.js.map

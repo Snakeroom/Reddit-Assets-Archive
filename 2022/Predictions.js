@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Predictions.b26cd2452e2a38d36393.js
-// Retrieved at 6/1/2022, 6:10:04 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Predictions.acba22025fc49e38c17a.js
+// Retrieved at 6/2/2022, 9:50:04 AM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Predictions"], {
 		"./src/lib/currency/centsToDollars/index.ts": function(e, t, a) {
@@ -884,11 +884,12 @@
 				}, s.a.createElement("picture", {
 					className: g.a.powerupsMarketingImage
 				}, s.a.createElement("source", {
-					srcSet: `${n.a.assetPath}/img/powerups/powerups-rangers.webp`,
-					type: "image/webp"
-				}), s.a.createElement("source", {
+					media: "(prefers-reduced-motion: reduce)",
 					srcSet: `${n.a.assetPath}/img/powerups/powerups-rangers-static.png`,
 					type: "image/png"
+				}), s.a.createElement("source", {
+					srcSet: `${n.a.assetPath}/img/powerups/powerups-rangers.webp`,
+					type: "image/webp"
 				}), s.a.createElement("img", {
 					alt: b._("Powerups heroes", null, {
 						hk: "3kHkNJ"
@@ -1709,4 +1710,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.b26cd2452e2a38d36393.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Predictions.acba22025fc49e38c17a.js.map
