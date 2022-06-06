@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/SearchResults.8d3edf6e9288062cafc3.js
-// Retrieved at 6/2/2022, 3:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/SearchResults.991d00a1094335350630.js
+// Retrieved at 6/6/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["SearchResults"], {
 		"./node_modules/lodash/_baseDelay.js": function(e, t) {
@@ -5808,7 +5808,7 @@
 				}, [re]), de = !!ie.source && !B;
 				if (Object(r.useEffect)(() => (l.current && Object(b.a)(l.current, (e, t) => {
 						m.current && (t ? m.current.focusContent() : m.current.pauseContent())
-					}), Object(R.u)(a, ie.id, c, se, d), () => {
+					}), Object(R.v)(a, ie.id, c, se, d), () => {
 						l.current && Object(b.b)(l.current), m.current && m.current.stopContent(), l.current = null, m.current = null
 					}), []), !ie) return null;
 				const {
@@ -5824,7 +5824,7 @@
 
 				function be(e) {
 					ie.isSponsored && ue || pe(e), ie.isSponsored && function(e) {
-						ue || (e.stopPropagation(), e.preventDefault()), ne(Object(R.v)(ie.id, c, d, a, se))
+						ue || (e.stopPropagation(), e.preventDefault()), ne(Object(R.w)(ie.id, c, d, a, se))
 					}(e)
 				}
 				return ie.isBlank ? o.a.createElement(f.BlankPost, {
@@ -5839,7 +5839,7 @@
 						var s;
 						let n = null,
 							r = P.x;
-						return ie.isSponsored || (r = P.z, n = null !== (s = R.B[t]) && void 0 !== s ? s : R.e.POST), r(c, se, n, a, d)(e)
+						return ie.isSponsored || (r = P.z, n = null !== (s = R.C[t]) && void 0 !== s ? s : R.e.POST), r(c, se, n, a, d)(e)
 					},
 					onClick: pe,
 					post: ie,
@@ -6263,12 +6263,12 @@
 						...o,
 						id: e,
 						eventType: "post"
-					}, i, R.B[t], r, a)), Object(We.h)(e, t)
+					}, i, R.C[t], r, a)), Object(We.h)(e, t)
 				},
 				Je = Object(i.b)(Ye, (e, t) => ({
 					...Object(Ke.b)(e),
 					trackOnPostEnteredViewport: e => {
-						t.sendEvent(Object(R.u)(t.listingKey, e, {
+						t.sendEvent(Object(R.v)(t.listingKey, e, {
 							...t.searchOptions,
 							id: e,
 							eventType: "post"
@@ -7390,7 +7390,7 @@
 							sendEvent: t,
 							subreddit: s
 						} = this.props;
-						t(Object(C.z)(!!s, e))
+						t(Object(C.A)(!!s, e))
 					}
 				}
 				render() {
@@ -10499,4 +10499,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.8d3edf6e9288062cafc3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/SearchResults.991d00a1094335350630.js.map
