@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.af5fdaf08e0192cffedd.js
-// Retrieved at 6/2/2022, 3:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a49173377b7a1ff7ccce.js
+// Retrieved at 6/6/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["PremiumPurchaseModal"], {
 		"./node_modules/@stripe/react-stripe-js/dist/react-stripe.umd.js": function(e, t, r) {
@@ -1581,13 +1581,13 @@
 					premiumProductOffer: j.g,
 					premiumPrice: j.e
 				}),
-				X = Object(o.b)($, (e, t) => ({
+				z = Object(o.b)($, (e, t) => ({
 					closeModal: () => e(Object(f.closePremiumPurchaseModal)()),
 					onCloseModalClick: () => e(Object(f.closePremiumPurchaseModal)()),
 					onPaymentSelected: t => e(Object(p.selectPaymentMethod)(t)),
 					onLoadSavedCards: () => e(Object(m.e)())
 				})),
-				z = Object(i.a)(e => {
+				X = Object(i.a)(e => {
 					let {
 						sendEvent: t,
 						activePage: r,
@@ -1635,7 +1635,7 @@
 						onCloseClick: p
 					}))
 				});
-			t.default = X(Object(b.c)(class extends a.a.PureComponent {
+			t.default = z(Object(b.c)(class extends a.a.PureComponent {
 				constructor() {
 					super(...arguments), this.onTryCloseModal = () => {
 						const {
@@ -1647,7 +1647,7 @@
 					}
 				}
 				render() {
-					return a.a.createElement(z, K({}, this.props, {
+					return a.a.createElement(X, K({}, this.props, {
 						className: Object(d.a)(this.props.className, R.a.premiumPurchaseModal),
 						onCloseModal: this.onCloseModal,
 						onOverlayClick: this.onTryCloseModal,
@@ -3240,7 +3240,7 @@
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				a = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const o = Object(a.a)(n.Xc)
+			const o = Object(a.a)(n.Vc)
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, r) {
 			"use strict";
@@ -3395,4 +3395,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.af5fdaf08e0192cffedd.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/PremiumPurchaseModal.a49173377b7a1ff7ccce.js.map

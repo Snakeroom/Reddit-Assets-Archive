@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.af4f47cb42bb9a350eff.js
-// Retrieved at 6/6/2022, 1:00:05 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.2dba0817c4b0ebfccb0a.js
+// Retrieved at 6/6/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Governance~Reddit~Subreddit"], {
 		"./src/lib/CSSVariableProvider/withTheme.tsx": function(e, t, n) {
@@ -3472,7 +3472,7 @@
 					experimentEligibilitySelector: o.a,
 					experimentName: e
 				});
-				return !(!n || Object(r.Wf)(n))
+				return !(!n || Object(r.Uf)(n))
 			}
 		},
 		"./src/reddit/selectors/experiments/hotPotato.ts": function(e, t, n) {
@@ -3497,7 +3497,7 @@
 					if (!l(e)) return;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: u,
-						experimentName: i.Nd,
+						experimentName: i.Ld,
 						expEventOverride: !1
 					});
 					return null == t ? void 0 : t.toLocaleLowerCase()
@@ -3520,9 +3520,9 @@
 				},
 				m = e => !!b(e) && Object(s.c)(e, {
 					experimentEligibilitySelector: l,
-					experimentName: i.Od,
+					experimentName: i.Md,
 					expEventOverride: !1
-				}) !== i.Pd.Readonly
+				}) !== i.Nd.Readonly
 		},
 		"./src/reddit/selectors/experiments/newCommunityProgressV3.ts": function(e, t, n) {
 			"use strict";
@@ -3563,7 +3563,7 @@
 					return r ? r * o.Sb < 1639443600180 ? void 0 : I(e) : void 0
 				},
 				I = Object(r.a)(e => Object(c.c)(e, {
-					experimentName: i.qe,
+					experimentName: i.oe,
 					experimentEligibilitySelector: a.e
 				}), d.a)
 		},
@@ -3690,4 +3690,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.af4f47cb42bb9a350eff.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Governance~Reddit~Subreddit.2dba0817c4b0ebfccb0a.js.map

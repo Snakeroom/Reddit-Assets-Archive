@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate~ProfileSnoobuilder.38bd35a3947b26e245c3.js
-// Retrieved at 6/2/2022, 3:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate~ProfileSnoobuilder.c06fcbe57064bb4bc965.js
+// Retrieved at 6/6/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate~ProfileSnoobuilder"], {
 		"./node_modules/lodash/take.js": function(e, t, n) {
@@ -407,8 +407,8 @@
 				}),
 				M = Object(h.a)(_.a),
 				B = "profile-nav-menu-tooltip",
-				F = g.g + g.r + g.q;
-			var A;
+				A = g.g + g.r + g.q;
+			var F;
 			t.a = I(Object(u.b)(R, e => ({
 					toggleTooltip: t => e(Object(y.h)({
 						tooltipId: t
@@ -435,20 +435,20 @@
 							isSnoovatar30Enabled: m,
 							viewBlockedConsent: b
 						});
-						_(e.filter(e => e.position === A.MENU));
+						_(e.filter(e => e.position === F.MENU));
 						const t = [],
 							d = c()(() => {
 								const n = document.documentElement.clientWidth - 2 * g.q,
-									s = n > F ? F : n;
+									s = n > A ? A : n;
 								let r = 42;
 								t.forEach(t => {
 									r += t.offsetWidth;
 									const n = e.find(e => e.text.toString().toLowerCase() === t.text);
-									n.position = r > s ? A.DROPDOWN : A.MENU
+									n.position = r > s ? F.DROPDOWN : F.MENU
 								});
-								const i = e.filter(e => e.position === A.MENU);
+								const i = e.filter(e => e.position === F.MENU);
 								_(e => o()(i, e) ? e : i);
-								const a = e.filter(e => e.position === A.DROPDOWN);
+								const a = e.filter(e => e.position === F.DROPDOWN);
 								S(e => o()(a, e) ? e : a), x(a.length > 0)
 							}, 50);
 						return r.a.read(() => {
@@ -489,7 +489,7 @@
 				})),
 				function(e) {
 					e.MENU = "menu", e.DROPDOWN = "dropdown"
-				}(A || (A = {}));
+				}(F || (F = {}));
 			const D = e => {
 					let {
 						isActive: t,
@@ -548,7 +548,7 @@
 							hk: "2w1YRh"
 						}),
 						url: `/user/${t}/saved/`,
-						position: A.MENU
+						position: F.MENU
 					}, {
 						internal: !0,
 						isActive: r === x.Nb.PROFILE_PRIVATE && i === S.b.Hidden,
@@ -557,7 +557,7 @@
 							hk: "225tka"
 						}),
 						url: `/user/${t}/hidden/`,
-						position: A.MENU
+						position: F.MENU
 					}, {
 						internal: !0,
 						isActive: r === x.Nb.PROFILE_PRIVATE && i === S.b.Upvoted,
@@ -566,7 +566,7 @@
 							hk: "RKwFZ"
 						}),
 						url: `/user/${t}/upvoted/`,
-						position: A.MENU
+						position: F.MENU
 					}, {
 						internal: !0,
 						isActive: r === x.Nb.PROFILE_PRIVATE && i === S.b.Downvoted,
@@ -575,7 +575,7 @@
 							hk: "2F9IL4"
 						}),
 						url: `/user/${t}/downvoted/`,
-						position: A.MENU
+						position: F.MENU
 					}] : [];
 					n ? (c.push({
 						internal: !0,
@@ -585,7 +585,7 @@
 							hk: "iwLBV"
 						}),
 						url: `/user/${t}/gilded/`,
-						position: A.MENU
+						position: F.MENU
 					}), c.push({
 						internal: !0,
 						isActive: r === x.Nb.PROFILE_PRIVATE && i === S.b.GivenGildings,
@@ -594,7 +594,7 @@
 							hk: "2UPYZc"
 						}),
 						url: `/user/${t}/gilded/given/`,
-						position: A.MENU
+						position: F.MENU
 					})) : c.push({
 						internal: !1,
 						isActive: !1,
@@ -603,7 +603,7 @@
 							hk: "1YgfYU"
 						}),
 						url: `${b.a.oldRedditUrl}/user/${t}/gilded/`,
-						position: A.MENU
+						position: F.MENU
 					});
 					const d = o ? [{
 							internal: !0,
@@ -613,7 +613,7 @@
 								hk: "3SSKff"
 							}),
 							url: `/user/${t}/snoo/`,
-							position: A.MENU
+							position: F.MENU
 						}] : [],
 						l = a ? "?consent=true" : "";
 					return [{
@@ -624,7 +624,7 @@
 							hk: "2IBbqy"
 						}),
 						url: `/user/${t}/${l}`,
-						position: A.MENU
+						position: F.MENU
 					}, {
 						internal: !0,
 						isActive: r === x.Nb.PROFILE_POSTS,
@@ -633,7 +633,7 @@
 							hk: "a1BoF"
 						}),
 						url: `/user/${t}/posts/${l}`,
-						position: A.MENU
+						position: F.MENU
 					}, {
 						internal: !0,
 						isActive: r === x.Nb.PROFILE_COMMENTS,
@@ -642,7 +642,7 @@
 							hk: "2VwjOc"
 						}),
 						url: `/user/${t}/comments/${l}`,
-						position: A.MENU
+						position: F.MENU
 					}, ...d, ...c]
 				}
 		},
@@ -952,7 +952,7 @@
 					}, s[t]) : null
 				};
 				if (e.isD2xPdpSideRailRecsEnabled) {
-					const t = e.d2xPdpSideRailRecsVariant === u.Cc.GreyRereddit ? e.reredditButtons : [];
+					const t = e.d2xPdpSideRailRecsVariant === u.Ac.GreyRereddit ? e.reredditButtons : [];
 					return r.a.createElement(O, {
 						reredditContent: t,
 						countryCode: e.countryCode
@@ -2415,11 +2415,11 @@
 				c = n("./node_modules/reselect/es/index.js");
 			const d = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => Object(a.g)(e) && Object(i.f)(e),
-					experimentName: s.gc
+					experimentName: s.fc
 				}), o.a),
 				l = Object(c.a)(e => Object(r.c)(e, {
 					experimentEligibilitySelector: e => !Object(a.g)(e) && Object(i.f)(e),
-					experimentName: s.fc
+					experimentName: s.ec
 				}), o.a),
 				u = Object(c.a)(d, l, (e, t) => e || t),
 				m = Object(c.a)(d, l, (e, t) => !(!e && !t))
@@ -2438,4 +2438,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate~ProfileSnoobuilder.38bd35a3947b26e245c3.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/ProfileComments~ProfileOverview~ProfilePosts~ProfilePrivate~ProfileSnoobuilder.c06fcbe57064bb4bc965.js.map

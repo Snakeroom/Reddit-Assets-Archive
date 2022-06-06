@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.3ecdd3c70bb4f84a1ead.js
-// Retrieved at 6/2/2022, 3:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.38a91bca3c2326889a24.js
+// Retrieved at 6/6/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Frontpage~ModListing~Subreddit"], {
 		"./src/reddit/actions/focusedVerticals/index.ts": function(e, t, n) {
@@ -641,8 +641,8 @@
 				D = n.n(T),
 				R = n("./src/lib/lessComponent.tsx");
 
-			function W() {
-				return (W = Object.assign || function(e) {
+			function A() {
+				return (A = Object.assign || function(e) {
 					for (var t = 1; t < arguments.length; t++) {
 						var n = arguments[t];
 						for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -650,20 +650,20 @@
 					return e
 				}).apply(this, arguments)
 			}
-			const A = "ListingSort--SortPicker",
+			const W = "ListingSort--SortPicker",
 				z = Object(_.a)(R.a.wrapped(x.a, "Dropdown", D.a)),
 				B = R.a.wrapped(L.a, "ListingSortIcon", D.a),
 				M = (R.a.wrapped(j.b, "DropdownTriangle", D.a), R.a.div("Title", D.a)),
-				H = R.a.wrapped(e => s.a.createElement(k.b, W({}, e, {
+				U = R.a.wrapped(e => s.a.createElement(k.b, A({}, e, {
 					noHover: !0,
 					isSelected: !1
 				})), "Row", D.a),
-				U = e => {
+				H = e => {
 					let {
 						disabled: t,
 						...n
 					} = e;
-					return s.a.createElement("div", W({}, n, {
+					return s.a.createElement("div", A({}, n, {
 						className: Object(a.a)(D.a.SortWrapper, n.className, {
 							[D.a.isDisabled]: t
 						})
@@ -679,7 +679,7 @@
 					isAwardListingExperimentEnabled: E.a,
 					isBestSortPopularEnabled: N.a,
 					user: P.k,
-					dropdownIsOpen: (e, t) => Object(I.b)(t.dropdownId || A)(e),
+					dropdownIsOpen: (e, t) => Object(I.b)(t.dropdownId || W)(e),
 					isPopularPage: l.F
 				}),
 				K = Object(o.b)(G, (e, t) => {
@@ -689,7 +689,7 @@
 					} = t;
 					return {
 						onOpenDropdown: () => e(Object(g.h)({
-							tooltipId: n || A
+							tooltipId: n || W
 						}))
 					}
 				});
@@ -698,19 +698,19 @@
 					onClick: e.onOpenDropdown
 				}, !1 !== e.showTitle && s.a.createElement(M, null, w.fbt._("Sort", null, {
 					hk: "2BfINq"
-				})), s.a.createElement(U, {
+				})), s.a.createElement(H, {
 					disabled: e.disabled
-				}, e.children || s.a.createElement(H, {
+				}, e.children || s.a.createElement(U, {
 					className: e.buttonClassName,
 					displayText: Object(y.a)(e.sort),
-					id: e.dropdownId || A,
+					id: e.dropdownId || W,
 					showDropdownTriangle: !0
 				}, s.a.createElement(B, {
 					sort: e.sort
-				}))), s.a.createElement(O.a.Consumer, null, t => s.a.createElement(z, W({
+				}))), s.a.createElement(O.a.Consumer, null, t => s.a.createElement(z, A({
 					className: e.dropdownClassName,
 					isOpen: e.dropdownIsOpen,
-					tooltipId: e.dropdownId || A
+					tooltipId: e.dropdownId || W
 				}, t, {
 					renderContentsHidden: !0
 				}), e.disabled ? s.a.createElement(F, null, w.fbt._("Coming soon", null, {
@@ -958,10 +958,10 @@
 				return s.a.createElement("div", {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, s.a.createElement(U, {
+				}, s.a.createElement(H, {
 					className: e.wrapperClassName,
 					disabled: e.disabled
-				}, s.a.createElement(H, {
+				}, s.a.createElement(U, {
 					className: e.buttonClassName,
 					displayText: e.showStateAbbreviations && e.sort ? e.sort : Q(e.sort),
 					id: "StateSort--StateSortPicker",
@@ -1129,10 +1129,10 @@
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement("div", {
 						className: Object(a.a)(pe.a.countrySort, e.className),
 						onClick: () => e.dropdownIsOpen ? e.onCloseDropdown(be) : e.onOpenDropdown(be)
-					}, s.a.createElement(U, {
+					}, s.a.createElement(H, {
 						className: e.wrapperClassName,
 						disabled: e.disabled
-					}, s.a.createElement(H, {
+					}, s.a.createElement(U, {
 						className: e.buttonClassName,
 						displayText: (() => t in le ? le[t]() : le[b.z.Everywhere]())(),
 						id: be,
@@ -1193,10 +1193,10 @@
 				}))(Object(d.c)(e => s.a.createElement(ke, {
 					className: e.className,
 					onClick: e.onOpenDropdown
-				}, s.a.createElement(U, {
+				}, s.a.createElement(H, {
 					className: e.wrapperClassName,
 					disabled: !1
-				}, s.a.createElement(H, {
+				}, s.a.createElement(U, {
 					className: e.buttonClassName,
 					displayText: Object(y.b)(e.timeSort),
 					id: "TimeSort--SortPicker",
@@ -1249,8 +1249,8 @@
 				}).apply(this, arguments)
 			}
 			const Re = new Set([b.W.CONTROVERSIAL, b.W.TOP]),
-				We = new Set([b.W.CONTROVERSIAL, b.W.RISING]),
-				Ae = new Set([b.W.CONTROVERSIAL]),
+				Ae = new Set([b.W.CONTROVERSIAL, b.W.RISING]),
+				We = new Set([b.W.CONTROVERSIAL]),
 				ze = "ListingSort--Overflow",
 				Be = Object(l.u)({
 					isFrontpage: l.A,
@@ -1270,7 +1270,7 @@
 						locale: a
 					}
 				});
-			class He extends s.a.Component {
+			class Ue extends s.a.Component {
 				constructor() {
 					super(...arguments), this.changeSort = e => {
 						this.props.onChange(e), this.props.sendEvent(Object(v.b)(e))
@@ -1338,10 +1338,10 @@
 					const {
 						sort: t
 					} = this.props, n = new Set([b.W.TOP, b.W.NEW]);
-					return Ae.has(t) && n.has(e)
+					return We.has(t) && n.has(e)
 				}
 				isOverflowSort(e) {
-					return We.has(e) || this.isLocaleDependentOverflowSort(e) || this.isWideSortCurrentSelected(e)
+					return Ae.has(e) || this.isLocaleDependentOverflowSort(e) || this.isWideSortCurrentSelected(e)
 				}
 				render() {
 					const {
@@ -1351,7 +1351,7 @@
 						sort: r,
 						sortOptions: o,
 						timeSort: i
-					} = this.props, c = !t && Re.has(r), d = We.has(r), l = o.filter(e => !this.isOverflowSort(e)), u = o.filter(e => this.isOverflowSort(e) && e !== r);
+					} = this.props, c = !t && Re.has(r), d = Ae.has(r), l = o.filter(e => !this.isOverflowSort(e)), u = o.filter(e => this.isOverflowSort(e) && e !== r);
 					return s.a.createElement(s.a.Fragment, null, s.a.createElement(q, De({}, this.props, {
 						buttonClassName: Te.a.DropdownButton,
 						className: Object(a.a)(Te.a.SortDropdown, e),
@@ -1388,7 +1388,7 @@
 					}))))
 				}
 			}
-			var Ue = Be(Object(o.b)(Me)(Object(d.c)(He))),
+			var He = Be(Object(o.b)(Me)(Object(d.c)(Ue))),
 				Fe = n("./src/reddit/components/GeneralCleanup/SortViewBar/index.m.less"),
 				Ve = n.n(Fe);
 			const Ge = Object(l.u)({
@@ -1442,7 +1442,7 @@
 						className: Object(a.a)(Ve.a.Container, t),
 						onBlur: this.blurListingBroadcast,
 						onFocus: this.focusListingBroadcast
-					}, s.a.createElement(Ue, {
+					}, s.a.createElement(He, {
 						baseUrl: e,
 						disabled: r,
 						geopopularSort: n,
@@ -2068,7 +2068,7 @@
 						subredditId: n
 					})),
 					_ = Object(a.e)(m.a),
-					S = _ !== u.ze.NewModule;
+					S = _ !== u.xe.NewModule;
 				return (null === (s = null == g ? void 0 : g.cards) || void 0 === s ? void 0 : s.length) > 0 && S ? o.a.createElement(f, {
 					closeModuleOnMount: !!t && t !== p.g.Large,
 					subredditId: n,
@@ -2096,15 +2096,15 @@
 			const a = e => {
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: r.Wc
+						experimentName: r.Uc
 					});
-					return !(!t || Object(r.Wf)(t))
+					return !(!t || Object(r.Uf)(t))
 				},
 				i = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: o.Q,
-						experimentName: r.Wc
-					}) === r.yd.ListingEnabled
+						experimentName: r.Uc
+					}) === r.wd.ListingEnabled
 				}
 		},
 		"./src/reddit/selectors/focusedVerticalSuggestion.ts": function(e, t, n) {
@@ -2231,4 +2231,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.3ecdd3c70bb4f84a1ead.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Frontpage~ModListing~Subreddit.38a91bca3c2326889a24.js.map

@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.c426fae5830b5c780593.js
-// Retrieved at 6/2/2022, 3:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.849e81616233c9d13dc1.js
+// Retrieved at 6/6/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["EconPowerupsMarketingModal"], {
 		"./node_modules/@researchgate/react-intersection-observer/lib/es/index.js": function(e, t, r) {
@@ -494,30 +494,30 @@
 				O = r("./src/reddit/selectors/gold/powerups/index.ts"),
 				k = r("./src/reddit/selectors/user.ts"),
 				y = r("./src/reddit/components/Econ/PowerupsPremiumUpsellModal/async.tsx"),
-				P = r("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
-				N = r("./src/reddit/models/Gold/Powerups/index.ts"),
+				N = r("./src/reddit/components/Econ/Common/BenefitTile/index.tsx"),
+				P = r("./src/reddit/models/Gold/Powerups/index.ts"),
 				C = r("./src/reddit/selectors/experiments/econ/index.ts"),
 				M = r("./src/reddit/selectors/experiments/econ/powerupsAward.ts");
-			const S = [N.a.CommentRecognition, N.a.PowerupsAward, N.a.CommunityGear, N.a.CommentsWithEmoji, N.a.Achievements, N.a.HeroStatus, N.a.HdVideo],
+			const S = [P.a.CommentRecognition, P.a.PowerupsAward, P.a.CommunityGear, P.a.CommentsWithEmoji, P.a.Achievements, P.a.HeroStatus, P.a.HdVideo],
 				I = Object(i.a)([M.b, C.h], (e, t) => {
 					let r = S;
-					return e || (r = r.filter(e => e !== N.a.PowerupsAward)), t || (r = r.filter(e => e !== N.a.CommunityGear)), r
+					return e || (r = r.filter(e => e !== P.a.PowerupsAward)), t || (r = r.filter(e => e !== P.a.CommunityGear)), r
 				});
 			var T = r("./src/reddit/components/Econ/PowerupsMarketingModal/Benefits/index.m.less"),
-				R = r.n(T);
+				L = r.n(T);
 			const {
-				fbt: L
-			} = r("./node_modules/fbt/lib/FbtPublic.js"), A = e => e.length % 2 == 1 ? [...e, N.a.More] : e;
+				fbt: R
+			} = r("./node_modules/fbt/lib/FbtPublic.js"), A = e => e.length % 2 == 1 ? [...e, P.a.More] : e;
 			var B = function(e) {
 					const {
 						className: t
-					} = e, r = Object(j.a)(), n = Object(s.e)(I), a = A(n).map(N.b), c = e => {
+					} = e, r = Object(j.a)(), n = Object(s.e)(I), a = A(n).map(P.b), c = e => {
 						r(Object(E.g)(e.telemetryTag))
 					};
 					return o.a.createElement("div", {
-						className: Object(d.a)(R.a.container, t)
-					}, a.map(e => e.title && o.a.createElement(P.a, {
-						className: R.a.benefit,
+						className: Object(d.a)(L.a.container, t)
+					}, a.map(e => e.title && o.a.createElement(N.a, {
+						className: L.a.benefit,
 						benefit: e,
 						key: e.key,
 						onClick: c
@@ -555,15 +555,15 @@
 					subreddit: c
 				} = e, i = Object(s.d)(), l = Object(j.a)(), v = Object(s.e)(e => !Object(k.v)(e)), {
 					container: O,
-					isScrollGradientVisible: P,
-					calculateGradientVisibility: N
+					isScrollGradientVisible: N,
+					calculateGradientVisibility: P
 				} = Object(x.b)(!0);
 				Object(n.useEffect)(() => {
 					v ? Object(y.a)() : Object(h.a)(), t && i(Object(u.m)(t, {
 						fullData: !0
 					}))
 				}, [v, t, i]), Object(n.useLayoutEffect)(() => {
-					N()
+					P()
 				});
 				const C = () => i(Object(m.g)(w.a.ECON_POWERUPS_MARKETING)),
 					M = () => {
@@ -580,7 +580,7 @@
 				}, o.a.createElement("div", {
 					className: Object(d.a)(D.a.main),
 					ref: O,
-					onScroll: N
+					onScroll: P
 				}, o.a.createElement(b.a, {
 					onClick: C,
 					highContrast: !0
@@ -641,7 +641,7 @@
 					hk: "3gjy90"
 				})), o.a.createElement(f.a, {
 					className: D.a.scrollGradient,
-					isVisible: P
+					isVisible: N
 				})), o.a.createElement(a.a, {
 					space: a.b.MODAL
 				})))
@@ -1034,34 +1034,34 @@
 			})), r.d(t, "v", (function() {
 				return y
 			})), r.d(t, "w", (function() {
-				return P
+				return N
 			}));
 			var n = r("./src/reddit/constants/experiments.ts"),
 				o = r("./src/reddit/selectors/experiments/econ/simpleExperiment.ts");
-			const s = Object(o.a)(n.hd),
-				a = Object(o.a)(n.fd),
-				c = Object(o.a)(n.id),
-				i = Object(o.a)(n.ed),
-				l = Object(o.a)(n.dd),
-				d = Object(o.a)(n.ld),
-				u = Object(o.a)(n.jd),
-				m = Object(o.a)(n.kd),
-				p = Object(o.a)(n.ad),
-				b = Object(o.a)(n.Yc),
-				h = Object(o.a)(n.Rc),
-				f = Object(o.a)(n.Sc),
-				w = Object(o.a)(n.Pc),
-				v = Object(o.a)(n.Qc),
-				_ = Object(o.a)(n.Uc),
-				g = Object(o.a)(n.Oc),
-				E = Object(o.a)(n.bd),
-				x = Object(o.a)(n.cd),
-				j = Object(o.a)(n.gd),
-				O = Object(o.a)(n.md),
-				k = Object(o.a)(n.od),
-				y = Object(o.a)(n.qd),
-				P = Object(o.a)(n.pd)
+			const s = Object(o.a)(n.fd),
+				a = Object(o.a)(n.dd),
+				c = Object(o.a)(n.gd),
+				i = Object(o.a)(n.cd),
+				l = Object(o.a)(n.bd),
+				d = Object(o.a)(n.jd),
+				u = Object(o.a)(n.hd),
+				m = Object(o.a)(n.id),
+				p = Object(o.a)(n.Yc),
+				b = Object(o.a)(n.Wc),
+				h = Object(o.a)(n.Pc),
+				f = Object(o.a)(n.Qc),
+				w = Object(o.a)(n.Nc),
+				v = Object(o.a)(n.Oc),
+				_ = Object(o.a)(n.Sc),
+				g = Object(o.a)(n.Mc),
+				E = Object(o.a)(n.Zc),
+				x = Object(o.a)(n.ad),
+				j = Object(o.a)(n.ed),
+				O = Object(o.a)(n.kd),
+				k = Object(o.a)(n.md),
+				y = Object(o.a)(n.od),
+				N = Object(o.a)(n.nd)
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.c426fae5830b5c780593.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/EconPowerupsMarketingModal.849e81616233c9d13dc1.js.map

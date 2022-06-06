@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/RichTextEditor.b8f6e722a1614d712e4e.js
-// Retrieved at 6/2/2022, 3:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/RichTextEditor.56b476a02b1f104f7226.js
+// Retrieved at 6/6/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["RichTextEditor", "ContributorRequestButton"], {
 		"./node_modules/autosize/dist/autosize.js": function(e, t, n) {
@@ -577,8 +577,8 @@
 				re = n("./node_modules/reselect/es/index.js");
 			const ie = Object(re.a)(e => Object(se.c)(e, {
 				experimentEligibilitySelector: se.a,
-				experimentName: oe.Eb
-			}), e => e === oe.td);
+				experimentName: oe.Db
+			}), e => e === oe.rd);
 			var ae = n("./src/reddit/selectors/experiments/contributeBeforeSignUp.ts"),
 				de = n("./src/reddit/selectors/experiments/emailEnablement.ts"),
 				ce = n("./src/reddit/selectors/platform.ts"),
@@ -4907,29 +4907,29 @@
 					if (Object(i.a)(e)) return !1;
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Sf
-					}) === o.td
+						experimentName: o.Qf
+					}) === o.rd
 				},
 				d = e => {
 					return Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Tf
-					}) === o.td
+						experimentName: o.Rf
+					}) === o.rd
 				},
 				c = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(s.c)(e, {
 						experimentEligibilitySelector: r.e,
-						experimentName: o.Rf
+						experimentName: o.Pf
 					});
-					return t === o.If.TypingIndicators || t === o.If.IndicatorsPlusCTA
+					return t === o.Gf.TypingIndicators || t === o.Gf.IndicatorsPlusCTA
 				},
 				l = e => {
 					if (Object(i.a)(e)) return !1;
 					const t = Object(r.d)(e, {
-						experimentName: o.Rf
+						experimentName: o.Pf
 					});
-					return (null == t ? void 0 : t.variant) === o.If.IndicatorsPlusCTA
+					return (null == t ? void 0 : t.variant) === o.Gf.IndicatorsPlusCTA
 				}
 		},
 		"./src/redditGQL/operations/CommentToxicity.json": function(e) {
@@ -4946,4 +4946,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.b8f6e722a1614d712e4e.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/RichTextEditor.56b476a02b1f104f7226.js.map

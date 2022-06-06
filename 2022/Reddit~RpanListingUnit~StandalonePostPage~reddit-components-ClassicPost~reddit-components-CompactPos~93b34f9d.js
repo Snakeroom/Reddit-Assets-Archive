@@ -1,5 +1,5 @@
-// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.d7c465b946af81f48e45.js
-// Retrieved at 6/2/2022, 3:10:03 PM by Reddit Dataminer v1.0.0
+// https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.b94e28e6f52bbed33587.js
+// Retrieved at 6/6/2022, 2:30:04 PM by Reddit Dataminer v1.0.0
 (window.__LOADABLE_LOADED_CHUNKS__ = window.__LOADABLE_LOADED_CHUNKS__ || []).push([
 	["Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d"], {
 		"./src/lib/memoizeByReference/index.ts": function(e, t, n) {
@@ -295,9 +295,9 @@
 						clearTimeout(N.current), clearTimeout(F.current), clearTimeout(A.current)
 					}
 				}, [t]);
-				const z = Object(r.useCallback)(() => C(!0), [C]),
-					K = 0 === _.length,
-					W = j || K,
+				const K = Object(r.useCallback)(() => C(!0), [C]),
+					z = 0 === _.length,
+					W = j || z,
 					V = Object(r.useRef)(((e, t) => `${t}_${e}_count_anim`)(h, n));
 				return o.a.createElement(o.a.Fragment, null, !f && o.a.createElement("div", {
 					className: l.a.countAnimation
@@ -315,7 +315,7 @@
 						"aria-hidden": !0,
 						className: l.a.digitDeltaWrapper,
 						key: t,
-						onTransitionEnd: z,
+						onTransitionEnd: K,
 						style: y && _.length > 0 && !j ? {
 							transform: `translateY(-${x&&n.length>1?100:100*(n.length-1)}%)`,
 							transitionDuration: `${(x?500:750)/1e3}s`
@@ -2346,13 +2346,13 @@
 							postId: t
 						}) || Object(a.N)(e))(e, t),
 						experimentName: r.R
-					}) === r.td
+					}) === r.rd
 				},
 				i = e => {
 					return Object(o.c)(e, {
 						experimentEligibilitySelector: a.Q,
-						experimentName: r.Me
-					}) === r.td
+						experimentName: r.Ke
+					}) === r.rd
 				}
 		},
 		"./src/reddit/selectors/gild.ts": function(e, t, n) {
@@ -2589,4 +2589,4 @@
 		}
 	}
 ]);
-//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.d7c465b946af81f48e45.js.map
+//# sourceMappingURL=https://www.redditstatic.com/desktop2x/Reddit~RpanListingUnit~StandalonePostPage~reddit-components-ClassicPost~reddit-components-CompactPos~93b34f9d.b94e28e6f52bbed33587.js.map
